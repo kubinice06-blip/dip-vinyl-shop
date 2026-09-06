@@ -23,25 +23,6 @@
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "喝采 Kassai；Kassai；Naomi Chiaki 喝采",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "ちあきなおみ",
-  "album": "喝采",
-  "year": 1972,
-  "genres": [
-   "pop"
-  ],
-  "label": "日本コロムビア（catno JDX-87）",
-  "why": "盤名取自 1972-09-10 的單曲「喝采」（吉田旺作詞・中村泰士作曲），該曲拿下第 14 回日本レコード大賞，發售三個月就得獎在當時是史上第二快的紀錄，單曲賣約 80 萬張。這張同名專輯是那首歌的初出專輯。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。ちあきなおみ 池中 0 張；她是 1970 年代歌謡曲最被樂評推崇的歌手之一，這一張是整批最不能少的一枚。",
-  "risk": "⚠ MB 的 RG 標題是「喝采 Kassai」（帶羅馬拼音副標），卡片取《喝采》，兩種寫法都進 queryAlias 否則 grep 去重會漏。⚠ 同名雙胞胎：她名下另有 62434361-6711-4e61-9dc9-f2adfe289d35《喝采〜紅とんぼ・吉田旺 参分劇》（1989，重新編曲的鋼琴版本），盤名前綴相同，釘位絕不能取那一筆。掛名見同組第一張的說明（MB 這筆 credit 是「Naomi Chiaki」）。店面 jp。",
-  "mbNote": "釘 release-group bc0fa382-8f9d-4cfa-bb09-462eb6b73c83。回問確認：title「喝采 Kassai」、artist-credit「Naomi Chiaki」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：62434361-6711-4e61-9dc9-f2adfe289d35《喝采〜紅とんぼ・吉田旺 参分劇》（1989 重編版，同前綴）、61f1fbe6-3c3f-4b6c-b329-1c0449737f88《喝采 / 雨に濡れた慕情》（2005 Single）、cfebe535-c446-489b-ba92-102f6abe701a《ちあきなおみの喝采…》（2013 後世整編）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
   "queryAlias": "Mou Hitori no Watashi；もうひとりの私",
   "reissuedBy": "",
   "g": "b",
@@ -94,25 +75,6 @@
   "why": "青江三奈 1966 年以「恍惚のブルース」出道（約 80 萬張），1968 年「伊勢佐木町ブルース」破百萬並拿下第 10 回日本レコード大賞歌唱賞。這張 1968 年的盤把她的「ブルース」路線整理成一張，是 MB 上她最早的兩筆專輯之一。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。青江三奈 池中 0 張。ムード歌謡（夜の盛り場題材）這個次類在池中完全不存在，本批 b 組替它補上青江三奈 3 張、内山田洋とクール・ファイブ 1 張、西田佐知子 2 張、フランク永井 1 張。",
   "risk": "曲風給 pop＋blues 是依日本「歌謡ブルース」這個商品分類（盤名即為此），不是美國 blues 樂種，行文不得混為一談。盤名以藝人名開頭（「青江三奈ブルースを唄う」），與同組《池袋の夜・青江三奈のすべて》共用「青江三奈」字串，子字串去重會誤報，要用完整盤名。掛名《青江三奈》。店面 jp。",
   "mbNote": "釘 release-group 80987f34-9ef3-41d5-8a8c-4b1baec08904。回問確認：title「青江三奈ブルースを唄う」、artist-credit「青江三奈」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 9bdaaa56-e3d8-44e8-bdc2-ebe758f69493，分頁全列僅 10 個 RG。刻意不釘：559be5b4-c677-40e2-8a84-5d31a085ff78《夜と恍惚とため息と》（1968-02-05，secondary-types 含 Compilation，且該 RG 同時掛森進一，是兩人共用的拼盤）、3cda9752-9ec2-4007-aa31-af9c8b094b37《ベスト＆ベスト》（2003 精選）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "池袋の夜；青江三奈のすべて；Ikebukuro no Yoru",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "青江三奈",
-  "album": "池袋の夜・青江三奈のすべて",
-  "year": 1968,
-  "genres": [
-   "pop"
-  ],
-  "label": "日本ビクター（catno SJV-436-7）",
-  "why": "盤名取自「池袋の夜」——該曲 1969 年賣約 150 萬張，讓她在 1968、1969 連兩年拿日本レコード大賞相關獎項，在當年是罕見的紀錄。這張 1968 年的盤是那首歌前後的企劃輯。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。青江三奈 池中 0 張；她 MB 名下只有 10 個 RG，primary-type=Album 且 secondary-types 為空的只有 7 筆，本批取其中三筆（1968×2、1969）。",
-  "risk": "⚠ 盤名同時含「池袋の夜」與「青江三奈のすべて」兩個常見片語，跟同組另兩張的子字串重疊度高，去重必須用完整盤名。MB first-release-date 只到年份（1968），與同組《青江三奈ブルースを唄う》同年同精度，兩張的先後順序不可從 MB 推定，行文不得斷言哪張在前。掛名《青江三奈》。店面 jp。",
-  "mbNote": "釘 release-group b08f8309-910f-4839-9414-b486dfcdd3d6。回問確認：title「池袋の夜・青江三奈のすべて」、artist-credit「青江三奈」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：80987f34-9ef3-41d5-8a8c-4b1baec08904《青江三奈ブルースを唄う》（同年另一張，本批另收一卡）、06c9a55e-ad69-4cb2-a500-5238c0f5a1e0《グッド・ナイト》（1969-07）。"
  },
  {
   "releaseType": "Album",
@@ -235,26 +197,6 @@
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "Yadokari；やどかり 梶芽衣子",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "梶芽衣子",
-  "album": "やどかり",
-  "year": 1973,
-  "genres": [
-   "pop",
-   "rock"
-  ],
-  "label": "テイチク",
-  "why": "1973-10-25 的第三張專輯，距前一張《はじき詩集》只有四個多月——1973 年她一年出兩張，是她唱片產量的高點，也對應她在東映的主演密度最高的那一年。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。梶芽衣子 池中 0 張；本批三張（1972、1973-06、1973-10）覆蓋的正是她連續產出的那 16 個月。",
-  "risk": "⚠ 盤名三個假名「やどかり」，跨文字系統比對（第 49 條）與短字串誤配風險都高，去重必須連藝人一起比。轄下 5 個 release 裡有 Pseudo-Release 與 country 未填的條目，只有 JP／Official 與 FR／Official 可用。掛名《梶芽衣子》。店面 jp／fr。",
-  "mbNote": "釘 release-group ada89109-f90a-4a3d-8376-30b08c74b88b。回問確認：title「やどかり」、artist-credit「梶芽衣子」、first-release-date 1973-10-25、primary-type Album、secondary-types 空、轄下 5 個 release（JP／Official、FR／Official、XW／Official、country 未填／Official、null／Pseudo-Release）。藝人 MBID fb5280b5-9e0c-439d-b275-2d8b5bffc19a，以 release-group?artist=…&limit=100&offset= 分頁全列 44 個 RG。刻意不釘：314b95c0-953e-4409-8519-443a8e9c0d11《去れよ、去れよ、悲しみの調べ》（1974-11-05）、eed16948-003f-477e-bb2d-273e3b8a676b《きょうの我が身は……》（1975-12）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
   "selfTitled": true,
   "queryAlias": "内山田洋とクールファイブ；クール・ファイブ；Cool Five；前川清",
   "reissuedBy": "",
@@ -269,25 +211,6 @@
   "why": "樂團 1967 年 9 月成軍於長崎的夜總會「銀馬車」，1969 年 2 月以「長崎は今日も雨だった」在 RCA 出道。這張 1969 年的同名首張專輯售出逾三十萬張，是ムード歌謡（樂隊編制＋主唱前川清）這個形態最早的暢銷專輯之一。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。内山田洋とクール・ファイブ 池中 0 張，主唱前川清的個人名義也是 0。ムード歌謡在池中完全缺席，這張是該次類最該有的第一張。",
   "risk": "⚠ 同名盤（selfTitled=true）：盤名與掛名完全相同，撞卡比對的 key 會變成「藝人|藝人」，任何以盤名為主的模糊搜尋都會回到藝人頁而不是這張碟，配對要用 collectionId 直查。掛名寫全稱《内山田洋とクール・ファイブ》——「内山田洋」是漢字，屬混漢字，不羅馬化；片假名「クール・ファイブ」保留中黑點（U+30FB，不是連字號）。另有簡寫「内山田洋とクールファイブ」（無中黑點）的寫法在 MB 其他 RG 出現，已進 queryAlias。店面 jp。",
   "mbNote": "釘 release-group ce7315d9-3b94-44c5-99d9-0a6ed174b917。回問確認：title「内山田洋とクール・ファイブ」、artist-credit「内山田洋とクール・ファイブ」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release（皆 JP／Official）。藝人 MBID bd484fce-8a10-4925-9a6f-1bd191bf7b85（Group，1967-09 成軍），分頁全列 9 個 RG。刻意不釘：356a7c65-0267-49b2-acde-ae33eaf217b2《ゴールデン★ベスト》（2005 精選）、89150e3f-2804-493a-af28-6c333be51bc3《内山田洋とクールファイブ スーパーベスト》（2005，掛名少了中黑點的那一筆）、cfc9ac76-1065-47d5-8915-87f6bed4632a《A面ヒット全曲集 ゴールデン☆ベスト デラックス》（2010）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "東京ブルース Tokyo Blues；Tokyo Blues 西田佐知子；Sachiko Nishida",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "西田佐知子",
-  "album": "東京ブルース",
-  "year": 1964,
-  "genres": [
-   "pop"
-  ],
-  "label": "ポリドール（catno LP JM-7）",
-  "why": "西田佐知子 1960 年以「アカシアの雨がやむとき」成名，這張 1964-06 的盤名取自同年的單曲「東京ブルース」。她的唱法是ムード歌謡裡最冷的一種——不哭腔、幾乎不加裝飾，與同期青江三奈的濃度剛好相反，兩位並收才看得出這個次類的兩端。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。西田佐知子 池中 0 張。本批替她補 1964 與 1970 兩張。",
-  "risk": "⚠ MB 的 RG 標題帶英文副標「東京ブルース Tokyo Blues」，卡片取《東京ブルース》，兩種寫法都進 queryAlias。⚠ 盤名撞卡面極大：「東京ブルース／Tokyo Blues」是通用曲名，同批與池中的爵士卡（Tokyo Blues 這個英文標題在爵士目錄常見）正規化後會碰撞，去重必須連藝人一起比。掛名《西田佐知子》。廠牌已回問 release 端點的 label-info 確認為**ポリドール（LP JM-7）**。店面 jp。",
-  "mbNote": "釘 release-group d2ae8298-acff-4d2d-83a9-4e125741a53e。回問確認：title「東京ブルース Tokyo Blues」、artist-credit「西田佐知子」、first-release-date 1964-06、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 144d8a18-8c89-4828-bb37-46a98061f95b，分頁全列 25 個 RG。刻意不釘：a19602a4-29d1-4174-a7d6-4161344cde0c《さっちゃんのヒット・アルバム》（1964-02，同年前一張）、6e0b9d60-b1aa-4e19-917b-54bab5a88028《アカシアの雨がやむとき》（1993，以她 1960 年成名曲為名的後世企劃）。"
  },
  {
   "releaseType": "Album",

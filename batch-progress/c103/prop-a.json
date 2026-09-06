@@ -400,24 +400,5 @@
   "why": "盤名取自 1979 年那首讓她在出道十五年後翻身的「おもいで酒」——她 1964 年就以童星出道，長年沒有代表作，這首歌把她推回主線。這張 1979-07-25 的專輯是 MB 上她 primary-type=Album 最早的一筆。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。小林幸子 池中 0 張。MB 上她名下只有 13 個 RG、primary-type=Album 僅 3 筆（1979／1994／2015），這張是唯一的 1970 年代作品。",
   "risk": "MB 轄下有 3 個 release，其中一筆 country 未填且 status 是 Pseudo-Release（第 43／57／65／78 條：Pseudo-Release 不算再發背書，配對時要避開）；另兩筆 JP／Official 與 XW／Official 才是可用的。盤名與同名單曲同形，Apple 搜尋會回大量翻唱與精選，配對用 collectionId 直查。掛名《小林幸子》。店面 jp。",
   "mbNote": "釘 release-group f0e98338-3fc2-49af-9218-b4ff08046b99。回問確認：title「おもいで酒」、artist-credit「小林幸子」、first-release-date 1979-07-25、primary-type Album、secondary-types 空、轄下 3 個 release（JP／Official、XW／Official、country 未填／Pseudo-Release）。藝人 MBID 29b8b5ea-9b2e-45d6-aa2e-afccf53405f2，分頁全列 13 個 RG。刻意不釘：36123eb7-dcc0-4a85-8b2c-32b3c0f65445《小林幸子全曲集 ～雨の屋台酒》（1994 全曲集）、d620a6f7-6ba6-4098-9323-54d648c83e4b《さちへんげ》（2015）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "都はるみ BIRTHDAY；Miyako Harumi Birthday",
-  "reissuedBy": "",
-  "g": "a",
-  "artist": "都はるみ",
-  "album": "BIRTHDAY",
-  "year": 1991,
-  "genres": [
-   "pop"
-  ],
-  "label": "日本コロムビア（catno COCA-7381）",
-  "why": "都はるみ 1964 年以「アンコ椿は恋の花」出道，1984 年宣布引退、1990 年復出；這張 1991-06-21 的《BIRTHDAY》就是復出後的第一張正規專輯，也是 MB 上她名下唯一一筆 primary-type=Album 且 secondary-types 為空的條目——其餘四筆全是後世精選（見 mbNote 的刻意不釘）。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。都はるみ 池中 0 張。她在 MB 的建檔極薄（名下僅 5 個 RG），這是唯一釘得住的原盤，其餘代表作只能進 c-115 §1 補遺（見 to-c115.md）。",
-  "risk": "⚠ 盤名是全英文大寫「BIRTHDAY」，撞卡比對正規化後會與大量同名碟碰撞（Beatles 曲名、其他藝人同名盤），去重**必須**連藝人一起比，只比盤名一定誤報。掛名《都はるみ》（「都」是漢字，屬混漢字，不羅馬化）。MB 有 2 個 release（JP／Official 與 XW／Official），XW 那筆是數位版，封面配對優先取 JP。店面 jp。",
-  "mbNote": "釘 release-group 9e3d83b6-8b27-41c2-ae26-bfbbd9c6666c。回問確認：title「BIRTHDAY」、artist-credit「都はるみ」、first-release-date 1991-06-21、primary-type Album、secondary-types 空、轄下 2 個 release（JP／Official、XW／Official）。藝人 MBID 601cf2a4-f817-4d6f-ab8f-74f891265edf，分頁全列僅 5 個 RG。刻意不釘：2fe7e5f8-59a0-4c37-9bdf-008aa270e783《スーパー・ツインDX 小樽運河／千年の古都》（1990 二片裝精選）、f39c82dc-5f50-43ba-8764-570f801b1632《古賀メロディ～誕生７０周年記念～》（1998 歌集精選）、1d063b48-e6b1-4daa-9525-74d10d1e6f22《オリジナル大全集～デビュー40周年記念》（2003）、c5b8060c-9340-4b8f-b650-c267cf1bd19e《スペシャルベスト》（2005）——四筆 secondary-types 都含 Compilation。"
  }
 ]

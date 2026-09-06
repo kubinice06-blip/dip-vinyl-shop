@@ -805,7 +805,7 @@
    },
    {
     "f": "那筆 release（9a85866a）的規格、廠牌與逐軌長度：**CD、12 軌**，Toshiba Records／catno **CT32-5170**。1〈祝い酒〉4:07、2〈憂き世川〉4:28、3〈春の雨〉4:41、4〈帰りの連絡船〉4:03、5〈冬の蝶〉4:03、6〈北のおんな唄〉3:52、7〈花の勝負師〉3:56、8〈無錫旅情〉4:11、9〈雨あがり〉4:28、10〈しのび恋〉4:11、11〈人生いろいろ〉3:49、12〈角番〉4:03。**十二軌全部落在 3:49 到 4:41 之間**，第 4 軌〈帰りの連絡船〉正是同名單曲的 B 面。",
-    "src": "https://musicbrainz.org/ws/2/release?release-group=ebe4941e-ed5c-40ae-ba51-d8a87ef020a1?fmt=json&inc=media+labels+recordings&limit=100"
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ebe4941e-ed5c-40ae-ba51-d8a87ef020a1&fmt=json&inc=media+labels+recordings&limit=100"
    },
    {
     "f": "日文維基〈坂本冬美〉的專輯表把這張編為**第 3 號**，記「**祝い酒／1988年4月29日／CD CT32-5170／CT ZT28-5170**」。同表第 2 號是 1987 年 11 月 25 日《あばれ太鼓 〜無法一代入り〜》（CT32-5067），第 4 號是 1989 年 4 月 12 日《男の情話》。**MB 的 first-release-date 與維基的發行日、catno 逐日逐號相符。**",
@@ -875,50 +875,5 @@
   "status": "partial",
   "yearVerified": "1979 ✓。MB first-release-date 1979-07-25、原盤 release 同日；日文維基〈小林幸子〉專輯表記 1979 年 7 月 25 日，**逐日相符**。**同名單曲是同年 1 月 25 日**（單曲條目），比 LP 早半年，兩個日期不可混用。",
   "notes": "partial。MB 有三筆 release（1979 原盤、2023 數位、羅馬字 Pseudo-Release），**逐軌長度只有 2023 數位版才有**，行文若引長度應說是後來的數位版。**內容性質**：十二軌只有第一軌是本人曲目，其餘為同期暢銷曲重唱，行文不可寫成原創專輯。單曲的 A／B 面對調故事是這張最好用的一段實料。**日本レコード大賞最優秀歌唱賞與有線放送大賞グランプリ都是頒給單曲、不是頒給這張 LP。** label 欄與查到的 WARNER‐PIONEER／L-10148W 相符（MB 那筆的廠牌名用的是半形連字號變體）。Apple 無可用 collectionId（561332968 是 2012 年三人合唱的企劃單曲）。"
- },
- {
-  "key": "desc4:都はるみ|BIRTHDAY",
-  "artist": "都はるみ",
-  "album": "BIRTHDAY",
-  "facts": [
-   {
-    "f": "MusicBrainz release-group 9e3d83b6 的欄位：title「BIRTHDAY」、artist-credit「都はるみ」（藝人實體 601cf2a4，JP／Person）、first-release-date **1991-06-21**、primary-type Album、secondary-types **空**。**轄下 2 個 release，兩筆同日、同 barcode 4988001076070**：一筆是 JP 的 CD（Columbia／COCA-7381）題《BIRTHDAY》，另一筆是 XW 的 Digital Media（NIPPONOPHONE）題「**都はるみ特選集 BIRTHDAY**」——**同一張盤在數位版上的標題多了「特選集」三個字**。",
-    "src": "https://musicbrainz.org/ws/2/release-group/9e3d83b6-8b27-41c2-ae26-bfbbd9c6666c?fmt=json&inc=artist-credits+releases"
-   },
-   {
-    "f": "那兩筆 release（34600a36 與 854897d2）的規格與逐軌長度：**14 軌**（CD 版與數位版曲序、長度完全一致）。1〈Birthday〉5:16、2〈小樽運河〉4:25、3〈忘れていいの〉4:57、4〈Zutto〉5:00、5〈愛より青い海〉4:47、6〈蛍〉4:43、7〈王将一代小春しぐれ(浪曲歌謡篇)〉**8:59**、8〈北の宿から〉3:53、9〈大阪しぐれ〉4:01、10〈花あやめ〉4:48、11〈浮草ぐらし〉3:39、12〈みちのく風の宿〉4:27、13〈夫婦坂〉4:35、14〈千年の古都〉5:25。**第 7 軌近九分鐘，是全盤最長的一軌**；〈北の宿から〉〈大阪しぐれ〉〈夫婦坂〉〈小樽運河〉都是她 1970–80 年代的舊曲。",
-    "src": "https://musicbrainz.org/ws/2/release?release-group=9e3d83b6-8b27-41c2-ae26-bfbbd9c6666c&fmt=json&inc=media+labels+recordings&limit=100"
-   },
-   {
-    "f": "日文維基〈都はるみ〉的專輯表把這張記成「**1991年6月21日 特選集 BIRTHDAY COCA-7381**」——**維基版的正式盤名就叫《特選集 BIRTHDAY》**，發行日與 catno 與 MB 逐日逐號相符。同表前後兩筆是 1990 年 11 月 21 日《全曲集 小樽運河・千年の古都》（COCA-6720）、1991 年 11 月 21 日《全曲集 夢でもいいから》（COCA-9135）——**它落在一整排「全曲集」之間**。",
-    "src": "https://ja.wikipedia.org/wiki/%E9%83%BD%E3%81%AF%E3%82%8B%E3%81%BF"
-   },
-   {
-    "f": "同一條目的單曲表記**單曲〈BIRTHDAY〉的發行日為 1991 年 2 月 21 日**（第 01 曲），並記 1991 年〈BIRTHDAY〉是日産自動車的 CM ソング（日産ビジネスカー，1990–1991 年起用單曲〈BIRTHDAY〉）。**單曲比這張盤早四個月。**",
-    "src": "https://ja.wikipedia.org/wiki/%E9%83%BD%E3%81%AF%E3%82%8B%E3%81%BF"
-   },
-   {
-    "f": "Apple jp 店面的藝人頁目錄端點（artistId 396823577）攤開後有 collectionId **1723353981**「Birthday / Oriental Moon - EP」（artistName 都 はるみ，releaseDate **1991-02-21**，**4 軌**）——**那是同名單曲側的數位條目，日期正好對上維基的單曲發行日，不是這張 14 軌的盤**；以盤名在 jp／us 兩店面 search，沒有 14 軌版本的 collectionName。**不採為本張的 collectionId。**",
-    "src": "https://itunes.apple.com/lookup?id=396823577&country=jp&entity=album&limit=200"
-   },
-   {
-    "f": "以 release-group?artist=601cf2a4&limit=100&offset= 全列都はるみ名下**只有 5 個 release-group**，其中 primary-type=Album 且 secondary-types 為空的**就只有本張這一筆**，另外 4 筆全部標了 Compilation。**MB 對她的收錄近乎空白**，這一筆的 secondary-types 之所以是空的，不代表 MB 判定它是原創專輯。",
-    "src": "https://musicbrainz.org/ws/2/release-group?artist=601cf2a4-f817-4d6f-ab8f-74f891265edf&fmt=json&limit=100&offset=0"
-   }
-  ],
-  "hookCandidates": [
-   "第七軌〈王将一代小春しぐれ〉近九分鐘，是十四軌裡唯一破八分的一段浪曲歌謡",
-   "同一張盤，CD 上題《BIRTHDAY》，數位版上題《都はるみ特選集 BIRTHDAY》"
-  ],
-  "sound": "1991 年日本コロムビア CD，十四軌、總長偏長（單軌 3:39 到 8:59）。以同名新曲〈Birthday〉起，其後把〈小樽運河〉〈北の宿から〉〈大阪しぐれ〉〈夫婦坂〉〈千年の古都〉這些她 1970–80 年代的曲目重新排在一起，中段放進近九分鐘的浪曲歌謡〈王将一代小春しぐれ〉。1990 年代初的錄音室歌謡編制。",
-  "keyTracks": [
-   "Birthday",
-   "王将一代小春しぐれ",
-   "北の宿から",
-   "千年の古都"
-  ],
-  "status": "partial",
-  "yearVerified": "1991 ✓。MB first-release-date 1991-06-21、兩筆 release 同日；日文維基〈都はるみ〉專輯表記 1991 年 6 月 21 日 COCA-7381，**逐日逐號相符**。同名單曲為同年 2 月 21 日（維基單曲表；Apple 那筆 4 軌 EP 1723353981 的 releaseDate 也是 1991-02-21），兩個日期不可混用。",
-  "notes": "**⚠ 收錄基準要注意：這張很可能不符合『只收 secondary-types 為空的原盤』的精神。** 三處證據指向它是**特選集（自選輯）而非原創專輯**：(1) 日文維基〈都はるみ〉的專輯表把盤名記成《**特選集** BIRTHDAY》，並把它排在《全曲集 小樽運河・千年の古都》與《全曲集 夢でもいいから》之間；(2) MB 那筆 XW 數位 release 的標題就是「**都はるみ特選集 BIRTHDAY**」；(3) 十四軌裡除同名新曲外，〈北の宿から〉〈大阪しぐれ〉〈夫婦坂〉〈小樽運河〉〈千年の古都〉都是她既有的舊曲。MB 的 secondary-types 之所以是空的，只是因為 MB 對她整體收錄近乎空白（名下僅 5 筆 RG）。**建議策展層複核是否改收她真正的原創專輯**；若仍保留，行文必須寫成「以新曲〈Birthday〉為軸重編的自選輯」，**不得寫成原創專輯、不得寫序數**。label 欄與查到的 Columbia／COCA-7381 相符。Apple 無可用 collectionId（1723353981 是 4 軌的單曲側條目）。"
  }
 ]
