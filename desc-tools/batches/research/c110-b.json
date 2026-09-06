@@ -658,5 +658,137 @@
   "status": "full",
   "yearVerified": "一致，1981。所釘 release-group 的 first-release-date 是 **1981-06**、轄下 IT 原盤標同月（EMI 3C 064 18550），義大利文條目寫 1981 年六月由 EMI Italiana 發行，德國店面 id 1554178612 的 releaseDate 標 1981-01-01（只到年）、℗ 標「1981, 2021」。四處同年，取 **1981**。同名先行單曲：無；名下 61 個 release-group 沒有第二筆同名專輯條目（最像的是店面上那張現場盤《Tutta n'ata storia (Vai mo' - Live in Napoli)》，盤名含本卡盤名）。",
   "notes": "**探測層 ready 覆核通過**：de 1554178612，11 軌全有 previewUrl，`trackCount` 與曲目列都是 11，**與原盤軌數一致**。\\n**撇號（策展層裁定第 5 條）**：卡片取 **ASCII 撇號**「Vai mo'」。**本層實查佐證：1981 IT 原盤 release 的標題本身就是 ASCII 撇號，店面那筆也是 ASCII，只有 release-group 標題與 2018 年那筆再發用 U+2019。** 策展層說法屬實。\\n**曲名的兩種寫法**：第 11 軌所釘條目作〈È sempre sera〉、義大利文條目作〈È sempe sera〉（少一個 r）。**行文若要提這首，兩種都可查到，建議照原盤曲目列的寫法。**\\n策展層說法逐條查證：61 個 release-group、23 張純 Album、本張是第四張、EMI、11 軌、5 筆 release 全 Official——**全部屬實**。\\n**跨卡連結（同組第 35 張）**：同一位藝人的《Terra mia》(1977) 也在本批。**「拿坡里方言＋藍調」這條線只能寫一次**，建議留給首作，本張寫班底與編制的擴張。\\n**題材處理**：Pino Daniele 2015 年辭世屬「與作品無關的後續生平事件」，**本張不得觸及**。\\n**未寫進 facts 的**：本張的義大利文條目有 Classifiche 節但無內容，未查到可寫的榜單資料（依派工信本來也不寫）。"
+ },
+ {
+  "key": "desc2:Rino Gaetano|Mio fratello è figlio unico",
+  "artist": "Rino Gaetano",
+  "album": "Mio fratello è figlio unico",
+  "facts": [
+   {
+    "f": "所釘 release-group e6ce7c31 的欄位：title「Mio fratello è figlio unico」、artist-credit「Rino Gaetano」（藝人實體 5a78419b）、first-release-date 1976、primary-type Album、secondary-types **空**。轄下只有 3 筆 release、**全部 IT、全部 8 軌**：1976 的 12\" Vinyl（廠牌 **It**，catno ZSLT 70029）、1994 的 CD（RCA 74321149702）、**2007 一筆 Promotion**（RCA RG 07 03，隨雜誌附送）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e6ce7c31-79ab-3d7d-bae1-fd9a9104dd73?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1976 IT 原盤（It ZSLT 70029）的逐軌：A 面〈Mio fratello è figlio unico〉3:20、〈Sfiorivano le viole〉5:02、〈Glu glu〉2:38、〈Cogli la mia rosa d'amore〉4:03；B 面〈Berta filava〉3:41、〈Rosita〉3:54、〈Al compleanno della zia Rosina〉3:51、**〈La zappa... il tridente, il rastrello, la forca, l'aratro, il falcetto, il crivello, la vanga〉4:28**。**八軌、約三十一分鐘，兩面各四首；收尾那首的曲名把八種農具一字排開。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e6ce7c31-79ab-3d7d-bae1-fd9a9104dd73&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Mio fratello è figlio unico (album)〉：這是 Rino Gaetano 的第二張錄音室專輯，1976 年由廠牌 It 發行。**原始版本裡沒有印歌詞，只印了一段他慣常寫在自己唱片上的那種怪獨白。**〈Formazione〉節列的班底：Rino Gaetano（人聲）、**Gaio Chiocchio（西塔琴）**、Arturo Stalteri（鋼琴、Hammond 風琴、大鍵琴、eminent、合成器）、Piero Ricci（貝斯）、Massimo Buzzi（鼓與各種敲擊物）、Luciano Ciccaglioni（吉他、班鳩、曼陀林）、Michelangelo Piazza（小號）、Tony Formichella 與 Rodolfo Bianchi（薩克斯風）、Baba Yaga（和聲）。",
+    "src": "https://it.wikipedia.org/wiki/Mio_fratello_%C3%A8_figlio_unico_(album)"
+   },
+   {
+    "f": "同一條目：這張收了他兩首最為人知的歌——〈Berta filava〉與同名曲。**同名曲後來被 Guido Chiesa 2004 年的電影《Lavorare con lentezza》拿去當配樂，也是 Daniele Luchetti 2007 年那部同名電影片名的由來**（該片由 Elio Germano 與 Riccardo Scamarcio 主演）。",
+    "src": "https://it.wikipedia.org/wiki/Mio_fratello_%C3%A8_figlio_unico_(album)"
+   },
+   {
+    "f": "德國店面 id 269002720：標題**「Mio Fratello E' Figlio Unico」——把 è 寫成 ASCII 的「E'」**、掛名「Rino Gaetano」、releaseDate 1976-01-01、℗ 1976、`trackCount` 8。攤開的曲目列 **8 軌、8 軌全部有試聽**，曲名與曲序與 1976 原盤**逐位置相符**。**軌數與原盤相同，不是加曲版。**",
+    "src": "https://itunes.apple.com/lookup?id=269002720&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 5a78419b 名下 31 個 release-group，其中 primary-type=Album 且 secondary-types 空的**只有 6 張**：《Ingresso libero》1974-07、**《Mio fratello è figlio unico》1976**、《Aida》1977、《Nuntereggae più》1978、《Resta vile maschio, dove vai?》1979、《E io ci sto》1980。**本張是第二張**；31 筆裡沒有第二筆與本張同名的專輯條目（另有兩筆同名的 45 轉單曲條目），primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5a78419b-a191-4423-adc9-95caebba6c1f&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "原始版本沒有印歌詞，只印了他寫在唱片上的一段怪獨白",
+   "收尾那首的曲名把鋤頭、三齒耙、耙子、乾草叉、犁、小鐮刀、篩子、鏟子八樣農具一字排開"
+  ],
+  "sound": "1976 原盤八軌、約三十一分鐘，單軌 2:38 到 5:02。編制比一般 cantautore 的碟熱鬧得多：鋼琴、Hammond 風琴、大鍵琴與合成器都在，加上小號與兩支薩克斯風，甚至有一把西塔琴；節奏偏輕快、常帶進行曲或民謠舞曲的擺動。Rino Gaetano 的義大利語唱法帶鼻音、句尾常刻意走音，歌詞把政治諷刺、人名與日常瑣事混在一起唱得像兒歌。",
+  "keyTracks": [
+   "Berta filava",
+   "Mio fratello è figlio unico",
+   "Sfiorivano le viole"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976。所釘 release-group 的 first-release-date 是 **1976**（只到年）、轄下原盤標 1976 IT（It ZSLT 70029），義大利文條目寫 1976 年由 It 發行，德國店面 id 269002720 的 releaseDate 標 1976-01-01（只到年）、℗ 1976。三處同年，取 **1976**。同名先行單曲：**名下有兩筆 45 轉單曲條目的標題含本卡盤名**（〈Mio fratello è figlio unico〉／〈Sfiorivano le viole〉與〈Berta filava〉／〈Mio fratello è figlio unico〉），**但那是單曲不是專輯**；沒有第二筆同名的專輯條目。",
+  "notes": "**探測層原判 ready 但盤名對不上，本層確認命中**：de **269002720**，8 軌全有 previewUrl，`trackCount` 與曲目列都是 8，**與原盤軌數一致**。\\n**成因是正字（裁定 173）**：店面把 **è 寫成 ASCII 的「E'」**（「Mio Fratello E' Figlio Unico」），用帶重音的盤名去搜會落空。**策展層說法屬實，本層獨立重現。**\\n**status（裁定 167 附帶）**：3 筆裡 1 筆 Promotion，不採為背書。\\n策展層說法逐條查證：31 個 release-group、6 張純 Album、本張是第二張、廠牌 It、8 軌——**全部屬實**。\\n**跨卡連結（同組第 22 張）**：本張的吉他手 **Luciano Ciccaglioni** 與和聲團 **Baba Yaga** 同時出現在 Lucio Dalla《Come è profondo il mare》(1977) 的班底裡——**這條羅馬錄音室的人脈只能寫一次**。\\n**題材處理**：Rino Gaetano 1981 年車禍身故屬「與作品無關的後續生平事件」，**本張不得觸及**。\\n**未寫進 facts 的**：Rolling Stone Italia 百大名次，依派工信不寫。"
+ },
+ {
+  "key": "desc2:Francesco Guccini|Radici",
+  "artist": "Francesco Guccini",
+  "album": "Radici",
+  "facts": [
+   {
+    "f": "所釘 release-group 0345ed75 的欄位：title「Radici」、artist-credit「Francesco Guccini」（藝人實體 04aab033）、first-release-date 1972、primary-type Album、secondary-types **空**。轄下 7 筆 release、**全部 IT、全部 7 軌**：1972 的 12\" Vinyl 與卡帶（Columbia Records 3C064-17825／3C 264 17825）、1996 與 2007 的 CD、2013 的黑膠再發、2022-12-02 的《Radici (50th Anniversary)》CD、以及一筆 EMI／La voce del padrone 的 CD。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0345ed75-37b8-3645-be6e-dd5e4436d71a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972 IT 原盤（Columbia 3C064-17825）的逐軌：A 面〈Radici〉**7:12**、〈La locomotiva〉**8:18**、〈Piccola città〉4:38；B 面〈Incontro〉3:38、〈Canzone dei dodici mesi〉7:04、〈Canzone della bambina portoghese〉5:34、〈Il vecchio e il bambino〉4:20。**只有七軌，卻長四十分鐘——三首超過七分鐘，A 面前兩首加起來就快十六分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0345ed75-37b8-3645-be6e-dd5e4436d71a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Radici (album)〉：這是 Francesco Guccini 的第四張專輯，1972 年由 Columbia 發行；全碟詞曲都出自他本人，錄音師是 Ezio De Rosa。**封面拍的是 Guccini 的曾祖父母、祖父與伯叔祖們，背景是山上老家的院子。**〈Radici〉這首獻給 Pàvana——托斯卡尼與艾米利亞交界的亞平寧山區小村，他人生大半時間在那裡度過；〈Piccola città〉則獻給他的出生地 Modena。",
+    "src": "https://it.wikipedia.org/wiki/Radici_(album)"
+   },
+   {
+    "f": "同一條目的〈La locomotiva〉小節：這首八分十八秒的歌**大概是 Guccini 最有名的一首，而且從寫出來之後，他每一場演唱會都用它收尾**。歌詞用詩的方式講 1893-07-20 那樁事：無政府主義的火車司機 Pietro Rigosi（歌裡沒有指名，只寫成一個相貌端正的無名年輕人）當時二十八歲，把一輛從貨運列車上解掛的火車頭開向波隆納車站，速度達到在當時相當驚人的每小時五十公里；列車後來被轉進一條死路，**Rigosi 從撞擊中活了下來，但被截去一條腿、臉也毀了**。**Guccini 多次說過，這首的歌詞他大約二十分鐘就寫完了。**",
+    "src": "https://it.wikipedia.org/wiki/Radici_(album)"
+   },
+   {
+    "f": "德國店面 id 714274303：標題「Radici (Remastered)」、掛名「Francesco Guccini」、releaseDate 1972-01-01、℗ 2007 EMI Music Italy、`trackCount` 7。攤開的曲目列 **7 軌、7 軌全部有試聽**，曲名與曲序與 1972 原盤**逐位置相符**。**軌數與原盤相同，不是加曲版**；同店面另有一筆 7 軌的 1656949152《Radici (Remastered 2022)》，releaseDate 標 1972-07-01——**軌數相同、年份相同，只有盤名裡的年份分得出來**。",
+    "src": "https://itunes.apple.com/lookup?id=714274303&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 04aab033 名下 35 個 release-group，其中 primary-type=Album 且 secondary-types 空的 19 張。依 first-release-date 排，本張 1972 前面是《Folk Beat n. 1》1967、《Due anni dopo》1970-01、《L'isola non trovata》1970-12——**本張正是第四張，與條目說法相符**；下一張是 1973 的《Opera buffa》。35 筆裡沒有第二筆叫《Radici》的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=04aab033-628a-48b8-9d70-fc9b10761932&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "封面是他曾祖父母那一輩在山上老家院子裡的照片",
+   "八分多鐘的〈La locomotiva〉他說二十分鐘就寫完，之後每一場演唱會都用它收尾"
+  ],
+  "sound": "1972 原盤七軌、約四十分鐘，單軌 3:38 到 8:18——三首超過七分鐘，是本批平均曲長最長的一張。編制以木吉他與人聲為核心，加上鋼琴、貝斯與克制的鼓，偶爾有絃樂；當時的前衛搖滾風氣在編曲上留了痕跡（段落多、器樂間奏長），但骨架仍是 cantautore 的敘事歌。Guccini 的義大利語低沉、咬字重，長段歌詞幾乎不重複，靠語言本身推進而不是靠副歌。",
+  "keyTracks": [
+   "La locomotiva",
+   "Il vecchio e il bambino",
+   "Radici"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。所釘 release-group 的 first-release-date 是 **1972**（只到年）、轄下原盤黑膠與卡帶都標 1972 IT（Columbia 3C064-17825），義大利文條目寫 1972 年由 Columbia 發行，德國店面 id 714274303 的 releaseDate 標 1972-01-01（只到年）。三處同年，取 **1972**；**℗ 2007 是重製版標記、不是原盤年**。同名先行單曲：無；名下 35 個 release-group 沒有第二筆叫《Radici》的條目。",
+  "notes": "**探測層 ready 覆核通過**：de 714274303，7 軌全有 previewUrl，`trackCount` 與曲目列都是 7，**與原盤軌數一致**。\\n**⚠ 同店面的假陽性**：1656949152《Radici (Remastered 2022)》同樣 7 軌、releaseDate 標 1972-07-01。**軌數與年份雙重比對在這張會失效，只能看盤名。**\\n策展層說法逐條查證：35 個 release-group、19 張純 Album、本張是第四張、Columbia、7 軌、7 筆 release 全 Official——**全部屬實**。\\n**題材處理**：〈La locomotiva〉講的 1893 年火車頭事件有明確史料（人名、日期、後果），**依「題材無禁區」照寫；但不逐字引歌詞**。Rigosi 受傷的細節條目寫得很清楚，本稿保留到「截肢與毀容」這一層，寫作層不要再往下渲染。\\n**未寫進 facts 的**：本張未查到榜單資料。\\n**跨卡連結**：本批 b 組的 cantautore 線另有 De Gregori《Rimmel》(1975) 與 Venditti《Sotto il segno dei pesci》(1978)。**「義大利創作歌手傳統」這個大背景只能寫一次**，本張的切入面向是曲長與敘事密度。"
+ },
+ {
+  "key": "desc2:Francesco De Gregori|Rimmel",
+  "artist": "Francesco De Gregori",
+  "album": "Rimmel",
+  "facts": [
+   {
+    "f": "所釘 release-group f33c2a84 的欄位：title「Rimmel」、artist-credit「Francesco De Gregori」（藝人實體 9128bb19）、first-release-date **1975-01**、primary-type Album、secondary-types **空**。轄下 6 筆 release、**全部 9 軌**：1975-01 的 IT 原盤（RCA TPL 1-1107）、1985 與 1998 的 IT CD、2015 的 XE 黑膠再發、**另有兩筆 Promotion**（2003 的 Sorrisi e Canzoni TV 版與一筆 Panorama 版）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f33c2a84-99d9-3b46-8667-d272b3e330f3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1975-01 IT 原盤（RCA TPL 1-1107）的逐軌：A 面〈Rimmel〉3:44、〈Pezzi di vetro〉3:11、〈Il signor Hood (a M., con autonomia)〉3:14、〈Pablo〉4:25、**〈Buonanotte fiorellino〉2:06**；B 面〈Le storie di ieri〉4:11、〈Quattro cani〉3:19、〈Piccola mela〉2:48、〈Piano bar〉2:44。**九軌、約三十分鐘，沒有一首超過四分半**——與同組 Guccini 那張動輒七八分鐘的碟正好相反。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f33c2a84-99d9-3b46-8667-d272b3e330f3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Rimmel (album)〉：這是 Francesco De Gregori 的第四張錄音室專輯，1975 年由 RCA Italiana 發行，**錄音與混音都由 Ubaldo Consoli 在羅馬的 RCA 錄音室完成**。**全碟的木吉他都是 Renzo Zenobi 彈的**，其餘樂器由樂團 Cyan 演奏。盤名取自同名曲，指的是化眼妝用的睫毛膏。**第一版唱片裡附了一張海報，上面是他兩張舊照，後來的再版都沒有再放**——兩張照片的作者是他的朋友、同樣是創作歌手的 Giorgio Lo Cascio。",
+    "src": "https://it.wikipedia.org/wiki/Rimmel_(album)"
+   },
+   {
+    "f": "同一條目的〈Brani〉節：〈Il signor Hood〉獻給 Marco Pannella——**封底那個括號裡的副標「a M., con autonomia」就是指他**；不過 De Gregori 也說過，「Hood 先生」指的是所有真正的「不同聲音」。**〈Pablo〉是全碟唯一一首由 De Gregori 與 Lucio Dalla 共同作曲的歌**，歌詞講的是一名移居瑞士的西班牙勞工之死。〈Pezzi di vetro〉是只有 Zenobi 一人伴奏的情歌。這張賣出超過四十萬張。",
+    "src": "https://it.wikipedia.org/wiki/Rimmel_(album)"
+   },
+   {
+    "f": "德國店面 id 259987937：標題「Rimmel」、掛名「Francesco De Gregori」、releaseDate 1975-01-01、℗ 1975、`trackCount` 9。攤開的曲目列 **9 軌、9 軌全部有試聽**，曲名與曲序與 1975 原盤**逐位置相符**。**軌數與原盤相同，不是加曲版**；同店面另有一筆 618113254《Rimmel (Instrumental version) [Originally by Francesco De Gregori]》，是別人做的伴唱帶單曲。",
+    "src": "https://itunes.apple.com/lookup?id=259987937&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 9128bb19 名下 68 個 release-group，其中 primary-type=Album 且 secondary-types 空的 24 張。依 first-release-date 排，本張 1975-01 前面是《Theorius Campus》1972-07-21、《Alice non lo sa》1973-04、《Francesco De Gregori》1974——**本張正是第四張，與條目說法相符**；下一張是 1976-04 的《Bufalo Bill》。68 筆裡沒有第二筆叫《Rimmel》的專輯條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9128bb19-1bb7-4f20-9e42-7cd9979a6792&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第一版裡夾了一張海報，印著他兩張舊照，之後的再版全部拿掉了",
+   "九首歌沒有一首超過四分半，盤名指的是睫毛膏"
+  ],
+  "sound": "1975 原盤九軌、約三十分鐘，單軌 2:06 到 4:25。編制乾淨：木吉他由一位客席樂手全碟包辦，其餘由一支樂團負責，鋼琴、貝斯與輕描的鼓撐著，弦樂只在少數幾首出現。De Gregori 的義大利語唱得平、幾乎不使力，旋律短句反覆；〈Buonanotte fiorellino〉2:06 是全碟最短也最簡單的一首，〈Pezzi di vetro〉只有一把木吉他伴奏。",
+  "keyTracks": [
+   "Rimmel",
+   "Buonanotte fiorellino",
+   "Pablo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975。所釘 release-group 的 first-release-date 是 **1975-01**、轄下原盤標同月（IT，RCA TPL 1-1107），義大利文條目寫 1975 年由 RCA Italiana 發行，德國店面 id 259987937 的 releaseDate 標 1975-01-01、℗ 1975。四處同年，取 **1975**。同名先行單曲：無；名下 68 個 release-group 沒有第二筆叫《Rimmel》的專輯條目。",
+  "notes": "**探測層 ready 覆核通過**：de 259987937，9 軌全有 previewUrl，`trackCount` 與曲目列都是 9，**與原盤軌數一致**。\\n**status（裁定 167 附帶）**：6 筆裡 **2 筆 Promotion**，兩筆都不採為背書——與策展層說法（「De Gregori《Rimmel》含 2 筆 Promotion」）相符。\\n策展層其餘說法逐條查證：68 個 release-group、24 張純 Album、本張是第四張、RCA TPL 1-1107、9 軌——**全部屬實**。\\n**跨卡連結（同組第 23 張）**：〈Pablo〉是他與 **Lucio Dalla** 共同作曲的唯一一首；而 Dalla《Lucio Dalla》(1979) 裡的〈Cosa sarà〉又是兩人對唱的。**這條關係只能寫一次**——建議留給本張（這裡是作曲層級的合作），Dalla 那張寫別的。\\n**未寫進 facts 的**：專輯榜名次與在榜週數、Rolling Stone Italia 百大名次、以及當年樂評筆戰的引句（「De Gregori non è Nobel, è Rimmel」那句），**依派工信一律不寫**；四十萬張的銷量本身可寫，已進 facts。"
  }
 ]

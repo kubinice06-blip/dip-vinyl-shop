@@ -1,0 +1,192 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "GISM Detestation；G.I.S.M. デテステーション；ガイズム",
+  "reissuedBy": "Relapse Records（2020，RR466／US、XW）",
+  "g": "a",
+  "artist": "G.I.S.M.",
+  "album": "DETESTATION",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dogma Records（catno DOG-1，JP 1983）",
+  "why": "ジャパコア第一世代唯一一張在 1983 年就以 LP 形態問世的專輯，也是 Dogma Records 的創廠盤 DOG-1；同廠第二號 DOG 2 就是 The Comes《No Side》，兩張構成這條線最早的唱片實體。實掃 seed_cards.json 全 14,424 列：日本 hardcore 這一區池中只有 4 張（ザ・スターリン 2、Gauze 1、Lip Cream 1，皆由 c-70 new wave 批帶進），G.I.S.M. 是 0 張——本批要補的第一張就是它。2020 年 Relapse Records 取得授權重發（RR466），是這張碟第一次有非日本廠牌的正式版本。來源：Relapse 官方商品頁、MB release-group 913ed1fd 轄下 4 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池，G.I.S.M. 0 張，《DETESTATION》不在池中。掛名有 GISM／G.I.S.M. 兩種寫法，MB 實體主名與 artist-credit 皆為 G.I.S.M.（含點），queryAlias 已補無點形（裁定 204 的同族形狀：分寫與連寫都要查）。年份分歧：MB first-release-date 1983（Dogma JP 首版），Apple 兩店把年份記成 2020（Relapse 再發），依裁定 91／95 以 MB 為身分鍵、年份取 1983。再發 status：4 個 release 皆 Official，無 Bootleg。Apple：藝人目錄 lookup（jp／us 兩店，裁定 173／185）命中 collectionId 1532490336（jp 店的 artistName 顯示為 G-ism、us 店顯示 G.I.S.M.，同一個 collectionId），試聽可期。封面 CAA：release-group/913ed1fd 回 200。",
+  "mbNote": "釘 release-group 913ed1fd-2519-3197-8645-1409753c1a67。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「DETESTATION」、artist-credit「G.I.S.M.」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1983 Dogma DOG-1／JP 1992 BEAST ARTS VID 113／US 2020 Relapse RR466／XW 2020 Relapse，全數 Official）。藝人 MBID 0a44e3c3-6475-48b3-9e45-5927111c91a2（Group／Japan／1980／disambiguation「Japanese hardcore band」，裁定 179 的回問已做），以 release-group?artist=…&limit=100&offset= 分頁全列 11 個 RG。刻意不釘：4f8688f7-b72c-4cff-aee6-ecdddc2ac14e《Detestation / M.A.N.》（2013，Album+Compilation，兩張 LP 的合體再發包）、89133af0-07ca-426f-84ae-895ba051e826《Document One 1982-1984》（primary-type Other）、4ece7449-0900-34ab-8728-a2b4ea90d217《Performance of War》（Album+Compilation）、e632488f-3c8c-3b48-8d7c-b851abdd2129《Anarchy Violence》（EP）、f419dd94-9141-43e1-8b21-72117e1f626b《+R, Regicide Reverberation》與 ad5601c5-9599-4815-bf0b-67e77d9ea95b《Rituals for the Blind Dead》（Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "GISM Military Affairs Neurotic；M.A.N.；ガイズム 軍事的神経症",
+  "reissuedBy": "Relapse Records（2023，RR7517／US、XW）",
+  "g": "a",
+  "artist": "G.I.S.M.",
+  "album": "Military Affairs Neurotic",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "BEAST ARTS（JP 1987-05-15）",
+  "why": "G.I.S.M. 第二張專輯，出在《DETESTATION》四年之後，改由樂團自己的 BEAST ARTS 發行，是這支樂團從 Dogma 的場景廠牌轉為自營發行的分界。2023 年 Relapse Records 以 RR7517 重發，與 2020 年的《DETESTATION》構成同一套授權再發。實掃 seed_cards.json 全 14,424 列，G.I.S.M. 池中 0 張；這張與《DETESTATION》一起收，才能讓池中同時有這支樂團 Dogma 期與自營期各一張。來源：Relapse 官方商品頁、MB release-group 7aecc6da 轄下 4 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池 0 張，不撞。⚠ 這個 RG 轄下有一筆 2007 年 DIG WORKER（DWCD 9 09236 2）標 Bootleg，依裁定 43／57／65／78 不採為背書，採 1987-05-15 的 JP／Official 首版（BEAST ARTS）與 2023 的 Relapse US／Official。年份取 MB first-release-date 1987，Apple 條目年份欄記 2022，不採。掛名同上一張，GISM／G.I.S.M. 兩形都要查。Apple：藝人目錄 lookup 命中 collectionId 1656815632（jp／us 兩店，盤名帶「(Reissue)」尾綴，裁定 45 的再發名情形，卡片盤名仍取 MB 的《Military Affairs Neurotic》）。封面 CAA：release-group/7aecc6da 回 200。",
+  "mbNote": "釘 release-group 7aecc6da-e9bc-3c2f-bf68-d5263cb7a535。回問確認：title「Military Affairs Neurotic」、artist-credit「G.I.S.M.」、first-release-date 1987-05-15、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1987 BEAST ARTS／JP 2007 DIG WORKER Bootleg／US 2023 Relapse RR7517／XW 2023 Relapse）。藝人 MBID 0a44e3c3-6475-48b3-9e45-5927111c91a2，名下 11 個 RG。刻意不釘：913ed1fd-2519-3197-8645-1409753c1a67《DETESTATION》（本批另收，不重複釘）、c1020a29-9454-4edc-902a-bc1c54252406《NIH Nightmare》（1995）、57ad952b-cadf-31de-b987-0dc5554a6b8a《SoniCRIME TheRapy》（1998）、4f8688f7-b72c-4cff-aee6-ecdddc2ac14e《Detestation / M.A.N.》（Album+Compilation，與本張曲目重疊）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gauze Equalizing Distort；ガーゼ イコライジング・ディストート",
+  "reissuedBy": "XXX Records（1997，XXX-9）",
+  "g": "a",
+  "artist": "Gauze",
+  "album": "EQUALIZING DISTORT",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Selfish Records 系（catno BELCD-12002，JP 1990-06-15）",
+  "why": "Gauze 第二張專輯，距首張《FUCK HEADS》(1984) 六年，之後樂團又隔七年才出第三張——這支樂團一輩子只出四張 LP，每一張都隔數年，補目錄時四張要當成四個節點看。實掃 seed_cards.json 全 14,424 列：Gauze 池中只有 1 張《Fuck Heads》(卡片年份記 1985，由 c-70 new wave 批帶進)，本批補的是它後面那一張。1997 年由 XXX Records 以 XXX-9 重發。來源：MB release-group fd66c5e6 轄下 3 個 release 的 label-info、Discogs Gauze 藝人頁。",
+  "risk": "撞卡：實掃全池，Gauze 只有《Fuck Heads》1 張，本張不撞。⚠ 掛名 Gauze 是同名實體極多的短掛名（裁定 179）：MB 搜尋前六名裡有澳洲 Newcastle 的 gauze、美國 G4UZ3、Washington 的 Astral Gauze、愛爾蘭 Primitive Gauze、以及池中已有 1 張的 Muslimgauze——已回問藝人端點的 area／type／disambiguation，確認取 Group／Japan 的 3e1caa06。Muslimgauze《Kabul》在池中，撞卡比對用的是 artist 全字串，不會誤撞。年份：MB first-release-date 1990-06-15；1997 XXX 版是再發。轄下 3 個 release 中一筆無國別無 status，其餘 2 筆 JP／Official。Apple：藝人目錄 lookup（jp／us）只回三張同名他人的單曲（Jungian Ping Pong 等），本張兩店皆無，預估走「無來源」試聽（裁定 195：CAA 有封面即收）。封面 CAA：release-group/fd66c5e6 回 200。",
+  "mbNote": "釘 release-group fd66c5e6-78de-4035-91e3-1b251a044add。回問確認：title「EQUALIZING DISTORT」、artist-credit「Gauze」、first-release-date 1990-06-15、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1990 BELCD-12002 Official／JP 1997 XXX-9 Official／一筆無日期無國別）。藝人 MBID 3e1caa06-ee31-4a5c-b28f-774232d79340（Group／Japan；裁定 179 的 area／type 回問已做），名下 7 個 RG 全列。刻意不釘：2f67baf0-fd42-32a5-be2b-9adb6fd19935《FUCK HEADS》（1984，池中已有）、b34e8ce9-2a40-45b3-9bb2-f536da32376d《Gauze》（EP，非白名單曲風不可收）、f59eeaa9-a096-4a8c-808b-4dab83cb87ea《面を洗って出直して来い》（1997，本批另收其前一張，避免同一藝人一次塞四張）、cf90a79c-d446-4c8a-bfa5-b6453144e58e《貧乏ゆすりのリズムに乗って》（2007）、efe0bf47-0a9f-4bdf-bc26-4ecb2190e215《言いたかねえけど目糞鼻糞》（2021）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gauze Genkai wa Doko da；ガーゼ 限界は何処だ；Gauze 限界は何処だ",
+  "reissuedBy": "XXX Records（1997，XXX-10）",
+  "g": "a",
+  "artist": "Gauze",
+  "album": "限界は何処だ",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Selfish Records（catno BELCD-12040，JP 1990-10）",
+  "why": "與《EQUALIZING DISTORT》同一年（相隔四個月）發行的第三張，兩張分屬不同編號系列（BELCD-12002 與 BELCD-12040），是 Gauze 目錄裡唯一連著出的兩張。發行方 Selfish Records 是 DEATH SIDE《Wasted Dream》《BET ON THE POSSIBILITY》與 Lip Cream《9 Shocks Terror》的同一家廠牌，本批 a 組因此有四張出自這一家。實掃 seed_cards.json 全 14,424 列：Gauze 池中僅《Fuck Heads》1 張。來源：MB release-group 24cb6c0f 轄下 4 個 release 的 label-info、Discogs Selfish Records 廠牌頁。",
+  "risk": "撞卡：實掃全池不撞（Gauze 僅《Fuck Heads》）。⚠ 短掛名 Gauze 的同名實體處理同上一張，已回問 area／type／disambiguation。盤名是純漢字＋假名，依裁定 185，Apple 的 search 端點對非拉丁盤名回 0 不能當成沒上架——已改走藝人目錄 lookup（jp／us），Gauze 的 Apple 藝人目錄只有三張同名他人的單曲，本張確實兩店皆無。⚠ 轄下 4 個 release 有 2 筆 status 為 null（1990-10 JP BELCD-12040、1997 JP XXX-10），另 2 筆 JP／Official（1990-10-05、1997-10-10），以 Official 那兩筆為背書。年份取 MB first-release-date 1990-10-05。封面 CAA：release-group/24cb6c0f 回 200。",
+  "mbNote": "釘 release-group 24cb6c0f-7ac9-4c41-82de-253646fb8d89。回問確認：title「限界は何処だ」、artist-credit「Gauze」、first-release-date 1990-10-05、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1990 Selfish BELCD-12040、JP 1997 XXX Records XXX-10，各有 Official 與 null 兩筆並存）。藝人 MBID 3e1caa06-ee31-4a5c-b28f-774232d79340，名下 7 個 RG。刻意不釘：2f67baf0-fd42-32a5-be2b-9adb6fd19935《FUCK HEADS》（池中已有）、b34e8ce9-2a40-45b3-9bb2-f536da32376d《Gauze》（EP）、f59eeaa9-a096-4a8c-808b-4dab83cb87ea《面を洗って出直して来い》、cf90a79c-d446-4c8a-bfa5-b6453144e58e《貧乏ゆすりのリズムに乗って》、efe0bf47-0a9f-4bdf-bc26-4ecb2190e215《言いたかねえけど目糞鼻糞》。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Death Side Wasted Dream；デス・サイド ウェイステッド・ドリーム",
+  "reissuedBy": "Nucleus/R（2002，DS-03）",
+  "g": "a",
+  "artist": "DEATH SIDE",
+  "album": "Wasted Dream",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "Selfish Records（catno BEL-12036，JP 1989）",
+  "why": "DEATH SIDE 首張專輯，在 1988 年的 7 吋《Satisfy the Instinct》之後、由吉他手 Chelsea 所屬場景的 Selfish Records 發行；這家廠牌同年前後也發 Gauze《限界は何処だ》與 Lip Cream《9 Shocks Terror》，是 1980 年代末東京 hardcore 的主要出口。實掃 seed_cards.json 全 14,424 列：DEATH SIDE 池中 0 張，這支樂團在池中完全不存在。2002 年由 Nucleus/R 重發（DS-03）。來源：MB release-group d533c1f7 轄下 3 個 release 的 label-info、Discogs Selfish Records 廠牌頁。",
+  "risk": "撞卡：實掃全池 0 張。⚠ 掛名在 MB 內部就分裂（裁定 187 的同形）：同一個 artist MBID 之下，本張的 artist-credit 是「Death Side」，而《BET ON THE POSSIBILITY》的 artist-credit 是「DEATH SIDE」，MB 藝人實體主名為「DEATH SIDE」。本批兩張一律採實體主名 DEATH SIDE（`chk-prop` 的 k() 會摺大小寫，不會生出兩個鍵，但卡池顯示要一致）。⚠ 短掛名回問已做：MB 搜尋 Death Side 的第二到第六名是 US death metal 的 Death、Napalm Death、Christian Death 等，取 Group／Japan／1983 的 b5b08922。轄下 3 個 release：JP 1989 Selfish BEL-12036 Official、JP 1991 Selfish BELCD-12021/36 Official、JP 2002 Nucleus/R status null。Apple：藝人目錄 lookup（jp／us）只有 2021 的《Unreleased Tracks - EP》與 2025 的《The Will Never Die》，本張兩店皆無。封面 CAA：release-group/d533c1f7 回 200。",
+  "mbNote": "釘 release-group d533c1f7-2097-3026-a3e1-fcfac9ca71e4。回問確認：title「Wasted Dream」、artist-credit「Death Side」（MB 內部大小寫分裂，見 risk）、first-release-date 1989、primary-type Album、secondary-types 空、轄下 3 個 release。藝人 MBID b5b08922-a896-4c18-9c8a-5ccda79dfe03（Group／Japan／1983），名下 9 個 RG 全列。刻意不釘：64c07d9b-292e-49bf-9cd7-3ddce7cc8c7e《Satisfy the Instinct》、79996b6d-51ac-4d7b-8331-5f25b29a9009《The Will Never Die》與 ab78caef-1d91-41c3-912c-902c3035d340《All Is Here Now》、80316310-99dc-4d07-aee4-e9eb13bc5d39《Unreleased Tracks & Video Archives》（皆 EP，hardcore 不在 §5.5 白名單）、9b2eb240-cc5c-3c9f-843a-e29ce6fb9fe4《The Will Never Die》（1999，Album+Compilation，與 EP 同名的雙胞胎）、50d52e72-5d10-4eea-9c64-7d8e2c5cd756《1987-1994 Discography》（primary-type Other）、5fcba3e5-a88e-4388-ba11-80c62c061f0d《Death Side / Chaos UK》（split）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Death Side Bet on the Possibility；デス・サイド",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "DEATH SIDE",
+  "album": "BET ON THE POSSIBILITY",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "Selfish Records（catno BELCD-12046，JP 1991）",
+  "why": "DEATH SIDE 第二張專輯，仍在 Selfish Records，是這支樂團 1989–1994 三張 LP 的中間一張，也是他們唯一一張只有單一實體版本、沒有再發的專輯。實掃 seed_cards.json 全 14,424 列，DEATH SIDE 池中 0 張；與《Wasted Dream》一起補，池中才會有這支樂團完整的前兩張。1994 年吉他手 Chelsea 過世後樂團解散，後續的《The Will Never Die》是同名 EP 與整編輯兩種形態並存，不取。來源：MB release-group c0a784a1 轄下 release 的 label-info、Discogs Selfish Records 廠牌頁。",
+  "risk": "撞卡：實掃全池 0 張。掛名採 MB 藝人實體主名 DEATH SIDE（本 RG 的 artist-credit 即為 DEATH SIDE，與《Wasted Dream》的 Death Side 是同一實體的大小寫分裂，見該卡 risk）。⚠ 轄下 3 個 release 中有 2 筆是 Pseudo-Release（無國別、無廠牌），只有 1 筆 JP 1991 Selfish BELCD-12046 標 Official，背書取那一筆。Apple：藝人目錄 lookup（jp／us）兩店皆無本張。⚠ 盤名全大寫，若下游要做 Apple 反查要一併試 title case。封面 CAA：release-group/c0a784a1 回 200。",
+  "mbNote": "釘 release-group c0a784a1-cece-4d38-bf47-06c58799fc03。回問確認：title「BET ON THE POSSIBILITY」、artist-credit「DEATH SIDE」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1991 Selfish BELCD-12046 Official＋2 筆 Pseudo-Release）。藝人 MBID b5b08922-a896-4c18-9c8a-5ccda79dfe03，名下 9 個 RG。刻意不釘：d533c1f7-2097-3026-a3e1-fcfac9ca71e4《Wasted Dream》（本批另收）、9b2eb240-cc5c-3c9f-843a-e29ce6fb9fe4《The Will Never Die》（Album+Compilation，與 79996b6d 的同名 EP 是雙胞胎）、5fcba3e5-a88e-4388-ba11-80c62c061f0d《Death Side / Chaos UK》（split）、50d52e72-5d10-4eea-9c64-7d8e2c5cd756《1987-1994 Discography》（Other）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Comes No Side；ザ・コムズ ノー・サイド；COMES No Side",
+  "reissuedBy": "La Vida Es Un Mus（2019，MUS200／GB、XW）；No Side Records（2008，NSCD-001）",
+  "g": "a",
+  "artist": "The Comes",
+  "album": "No Side",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dogma Records（catno DOG 2，JP 1983-11）",
+  "why": "Dogma Records 的第二號發行（DOG 2），緊接在 G.I.S.M.《DETESTATION》(DOG-1) 之後，兩張是同一家廠牌同一年的一號與二號，本批把它們一起收就補上了 Dogma 的完整起點。The Comes 由女聲主唱 Chitose 領軍，是 1980 年代初東京 hardcore 少數女聲在前的編制。2019 年由倫敦的 La Vida Es Un Mus 重發（MUS200），是這張碟第一次有歐洲正式版本。實掃 seed_cards.json 全 14,424 列，The Comes 池中 0 張。來源：La Vida Es Un Mus 官方商品頁、MB release-group 78051094 轄下 5 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池 0 張。⚠ 短掛名（裁定 179）：MB 搜尋 Comes 的第二名是 disambiguation「house」的 Comes、還有 DREAMS COME TRUE 與 Here Come the Mummies 混進來；已回問確認取 Group／Tokyo／disambiguation「Japanese Hardcore」的 3609887c。盤名《No Side》是英式橄欖球用語，同名碟極多，撞卡比對務必連掛名一起看。⚠ 轄下 5 個 release 中，1983-11 JP 有 Official 與 Pseudo-Release 各一筆，2008 JP No Side Records 與 2019 GB La Vida Es Un Mus 的 status 為 null，另有一筆 XW 2019 Official。以 1983 JP Dogma DOG 2 的 Official 為背書。Apple：藝人目錄 lookup 命中 collectionId 1475643012（jp／us 兩店，artistName「THE COMES」，Apple 年份欄記 1985 與 MB 的 1983-11 不一致，依裁定 91／95 年份取 MB）。封面 CAA：release-group/78051094 回 200。",
+  "mbNote": "釘 release-group 78051094-058b-4fae-98ba-8047ad279127。回問確認：title「No Side」、artist-credit「The Comes」、first-release-date 1983-11、primary-type Album、secondary-types 空、轄下 5 個 release（JP 1983 Dogma DOG 2 Official／JP 1983 Pseudo-Release／JP 2008 No Side Records NSCD-001／GB 2019 La vida es un mus MUS200／XW 2019 Official）。藝人 MBID 3609887c-58ad-4db7-9ae4-cf1271c4e9a7（Group／Tokyo／「Japanese Hardcore」），名下 5 個 RG 全列。刻意不釘：d1d8c74b-c01f-42b6-8b57-1acc8f15408b《Power Never Die》（本批另收）、082c26fe-c57a-4ba8-8aec-051c694ac98b《Live 1982-1984》、f849d86e-e466-4198-8dc4-a79873a2f8a6《Live 1985-1986》與 fcab1adf-5923-473a-bf9b-5136d72cdefe《Live1985-1986》（三張皆 Album+Compilation+Live，且後兩者是同一張碟寫法不同的雙胞胎，裁定 126）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Comes Power Never Die；ザ・コムズ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "The Comes",
+  "album": "Power Never Die",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Captain Records（catno CAP-0033-M，JP 1986）",
+  "why": "The Comes 第二張也是最後一張錄音室專輯，距《No Side》三年，改掛 Captain Records；這支樂團名下只有兩張正規專輯，其餘三筆全是後世的 Live 整編輯，兩張一起收就等於補完了整個目錄。實掃 seed_cards.json 全 14,424 列，The Comes 池中 0 張。Captain Records 是 1980 年代日本獨立場景的另一條出口，與 Dogma 屬不同系統。來源：MB release-group d1d8c74b 轄下 release 的 label-info、Discogs The Comes 藝人頁。",
+  "risk": "撞卡：實掃全池 0 張。短掛名 Comes 的同名實體處理同《No Side》，已回問 area／type／disambiguation。⚠ 這個 RG 只有 1 個 release（JP 1986 Captain CAP-0033-M，Official），沒有再發，Apple 兩店（jp／us）藝人目錄 lookup 只有《No Side》一張，本張兩店皆無，預估走「無來源」試聽。年份取 MB first-release-date 1986。封面 CAA：release-group/d1d8c74b 回 200。",
+  "mbNote": "釘 release-group d1d8c74b-c01f-42b6-8b57-1acc8f15408b。回問確認：title「Power Never Die」、artist-credit「The Comes」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Captain Records CAP-0033-M）。藝人 MBID 3609887c-58ad-4db7-9ae4-cf1271c4e9a7，名下 5 個 RG。刻意不釘：78051094-058b-4fae-98ba-8047ad279127《No Side》（本批另收）、082c26fe-c57a-4ba8-8aec-051c694ac98b《Live 1982-1984》、f849d86e-e466-4198-8dc4-a79873a2f8a6 與 fcab1adf-5923-473a-bf9b-5136d72cdefe《Live 1985-1986》（同一張的兩筆重複建檔）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Confuse Indignation；コンフューズ；Confuse Indignation of Nuclear Nonsense",
+  "reissuedBy": "Anarchy Centre／Confuse Records（1997，CHAOTIC:LP-008）",
+  "g": "a",
+  "artist": "Confuse",
+  "album": "Indignation",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Violent Party Records（JP 1984，無編號）",
+  "why": "九州（福岡）ノイズコア 一線的代表盤，出在 Violent Party Records——同一家廠牌隔年也發 Gai《1981-1985》，本批兩張一起收就把這條九州支線的兩個名字同時補上。Confuse 名下只有兩筆 primary-type=Album 的原盤與三筆後世整編輯，這張是其中最早的一筆。1997 年由 Anarchy Centre 與樂團自營的 Confuse Records 聯名重發（CHAOTIC:LP-008／Chaotic CD:008）。實掃 seed_cards.json 全 14,424 列，Confuse 池中 0 張。來源：MB release-group 9542baa9 轄下 3 個 release 的 label-info、Discogs Violent Party Records 廠牌頁。",
+  "risk": "撞卡：實掃全池 0 張。⚠ 短掛名（裁定 179）：MB 搜尋 Confuse 回 Mr. Confuse、Chris Confuse（德國饒舌）、法國 Dona Confuse、義大利 Idee confuse、比利時 Confuse the Cat；已回問確認取 Group／Japan／1983／disambiguation「Japanese punk」的 7349f02d。Apple：藝人目錄 lookup（jp／us）四個同名 artistId 共 40 張，逐筆比對無《Indignation》，兩店皆無。轄下 3 個 release 全數 JP／Official。年份取 MB first-release-date 1984。封面 CAA：release-group/9542baa9 回 200。",
+  "mbNote": "釘 release-group 9542baa9-9056-4802-abf1-790c11b16eaf。回問確認：title「Indignation」、artist-credit「Confuse」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1984 Violent Party Official／JP 1997 Anarchy Centre Chaotic CD:008 Official／JP 1997 CHAOTIC:LP-008 Official）。藝人 MBID 7349f02d-3be4-435b-af69-55742979ca67（Group／Japan／1983／「Japanese punk」），名下 9 個 RG 全列。刻意不釘：8ced00a9-0fce-4327-885b-57e0282c52a4《Old Master》（1989，Album+Compilation）、84c5fa3d-2d1c-3f0d-83e4-0b435b9704cb《Confuse》（1995，Album+Compilation，同名整編輯）、18a7d2f4-582d-407e-b60b-a969349b6ae8《Old God Meet New God》（無日期，Album+Compilation）、a8416bf6-360f-4c5e-a222-0f7bf3bc79b1《Nuclear Addicts E.P》、056cd9f7-d56d-45a4-b233-506bd62f0343《Contempt for the Authority》、f6c9c156-306f-330a-9afb-29c778e21ee6《Spending Loud Night》、f0761875-03bb-4ef1-8308-e7ebcf89c8c1《Atrocious Madness》、c9ab7655-d177-40fd-8515-10212d977eb2《Stupid Life》（五筆皆 EP）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gai 1981-1985；ガイ 1981-1985；GAI Japan punk",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Gai",
+  "album": "1981-1985",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Violent Party Records（JP 1985）",
+  "why": "Gai 名下唯一一張 1980 年代出版的 LP，把樂團 1981 至 1985 年散在卡帶與 7 吋上的錄音收成一張，發行方是與 Confuse《Indignation》同一家的 Violent Party Records。這支樂團後來的三張（1996《Damaging Noise》、1997《Damnation》《Total Control》）都是九〇年代才做的整理盤，1985 這張是當年就存在的實體。實掃 seed_cards.json 全 14,424 列，Gai 池中 0 張。來源：MB release-group 322bdced 的 label-info、Discogs Violent Party Records 廠牌頁。",
+  "risk": "撞卡：實掃全池 0 張。⚠ 短掛名是本批最危險的一個（裁定 179）：MB 搜尋 GAI 回同為日本的 hip-hop 藝人 Gai（6650b6a2）score 95、義大利 Gai Barone、義大利民謠團 Gai Saber、威爾斯 Gai Toms、以及中國的杭盖乐队；已回問 area／type／disambiguation，確認取 Group／Japan／disambiguation「Japanese punk band」的 b9298324。Apple 藝人目錄 lookup 因此也是雷區：四個同名 artistId 共 171 張，逐筆比對無本張，兩店皆無。⚠ 盤名「1981-1985」是純數字帶連字號，`chk-prop` 的非 ASCII 連字號檢查已確認用的是 ASCII hyphen-minus。⚠ MB 這一筆 secondary-types 含 Compilation，但 primary-type 是 Album，依裁定 167／190 照一般 Album 寫，不填例外欄位。年份取 MB first-release-date 1985（該批錄音的整輯首次出版年）。封面 CAA：release-group/322bdced 回 200。",
+  "mbNote": "釘 release-group 322bdced-afe2-4f0f-aa04-3f16d08fba40。回問確認：title「1981-1985」、artist-credit「Gai」、first-release-date 1985、primary-type Album、secondary-types [\"Compilation\"]（依裁定 167 照一般 Album 寫）、轄下 1 個 release（JP 1985 Violent Party Records，Official）。藝人 MBID b9298324-d193-4921-9265-9847e18faf4c（Group／Japan／「Japanese punk band」），名下 5 個 RG 全列。刻意不釘：8673de34-1494-366d-b1a4-229e3add6355《Extermination》（EP）、ea3490eb-12fd-4d5f-8efb-2aa79538839c《Damaging Noise》（1996）、d1bcc9b1-5cff-46b4-9caa-bf4020ffb40b《Damnation》（1997）、ff8353bb-6cf4-4c09-8a16-b36e897fb47e《Total Control》（1997）——後三張都是九〇年代重編的同一批錄音，與本張重疊。"
+ }
+]
