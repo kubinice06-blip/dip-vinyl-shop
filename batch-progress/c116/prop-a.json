@@ -188,5 +188,100 @@
   "why": "Gai 名下唯一一張 1980 年代出版的 LP，把樂團 1981 至 1985 年散在卡帶與 7 吋上的錄音收成一張，發行方是與 Confuse《Indignation》同一家的 Violent Party Records。這支樂團後來的三張（1996《Damaging Noise》、1997《Damnation》《Total Control》）都是九〇年代才做的整理盤，1985 這張是當年就存在的實體。實掃 seed_cards.json 全 14,424 列，Gai 池中 0 張。來源：MB release-group 322bdced 的 label-info、Discogs Violent Party Records 廠牌頁。",
   "risk": "撞卡：實掃全池 0 張。⚠ 短掛名是本批最危險的一個（裁定 179）：MB 搜尋 GAI 回同為日本的 hip-hop 藝人 Gai（6650b6a2）score 95、義大利 Gai Barone、義大利民謠團 Gai Saber、威爾斯 Gai Toms、以及中國的杭盖乐队；已回問 area／type／disambiguation，確認取 Group／Japan／disambiguation「Japanese punk band」的 b9298324。Apple 藝人目錄 lookup 因此也是雷區：四個同名 artistId 共 171 張，逐筆比對無本張，兩店皆無。⚠ 盤名「1981-1985」是純數字帶連字號，`chk-prop` 的非 ASCII 連字號檢查已確認用的是 ASCII hyphen-minus。⚠ MB 這一筆 secondary-types 含 Compilation，但 primary-type 是 Album，依裁定 167／190 照一般 Album 寫，不填例外欄位。年份取 MB first-release-date 1985（該批錄音的整輯首次出版年）。封面 CAA：release-group/322bdced 回 200。",
   "mbNote": "釘 release-group 322bdced-afe2-4f0f-aa04-3f16d08fba40。回問確認：title「1981-1985」、artist-credit「Gai」、first-release-date 1985、primary-type Album、secondary-types [\"Compilation\"]（依裁定 167 照一般 Album 寫）、轄下 1 個 release（JP 1985 Violent Party Records，Official）。藝人 MBID b9298324-d193-4921-9265-9847e18faf4c（Group／Japan／「Japanese punk band」），名下 5 個 RG 全列。刻意不釘：8673de34-1494-366d-b1a4-229e3add6355《Extermination》（EP）、ea3490eb-12fd-4d5f-8efb-2aa79538839c《Damaging Noise》（1996）、d1bcc9b1-5cff-46b4-9caa-bf4020ffb40b《Damnation》（1997）、ff8353bb-6cf4-4c09-8a16-b36e897fb47e《Total Control》（1997）——後三張都是九〇年代重編的同一批錄音，與本張重疊。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Swankys The Very Best of Hero；ザ・スワンキーズ；Swankys Hero",
+  "reissuedBy": "General Speech／Kings World Records（2024，GS-28／KWLP-6000，US）",
+  "g": "a",
+  "artist": "The Swankys",
+  "album": "The Very Best Of Hero",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dogma Records（catno DOG-10，JP 1985）",
+  "why": "九州（福岡）場景的代表盤，出在 Dogma Records 的 DOG-10——本批 a 組因此有三張 Dogma：DOG-1 G.I.S.M.《DETESTATION》、DOG 2 The Comes《No Side》、DOG-10 本張，等於把這家廠牌的三個編號節點一起補進池中。2024 年由美國的 General Speech 與 Kings World Records 聯名重發（GS-28／KWLP-6000），是這張碟第一次有美國版本。實掃 seed_cards.json 全 14,424 列，The Swankys 池中 0 張。來源：General Speech 官方商品頁、MB release-group 5a7d13e1 轄下 2 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池 0 張。掛名 The Swankys／Swankys 兩形都要查（裁定 204 的連寫分寫同族），MB 實體主名為 The Swankys（d926690c，Group／Japan），另有一個無 area 的 Person「Swankys」（9bd53ed3）是不同實體，已排除。⚠ 轄下 2 個 release：JP 1985 Dogma DOG-10 標 Official，US 2024 General Speech status 為 null，背書取 1985 那筆。Apple：藝人目錄 lookup 命中 collectionId 1881488075（jp／us 兩店，artistName「THE SWANKY'S」帶所有格撇號、盤名全大寫「THE VERY BEST OF HERO」，卡片掛名與盤名取 MB 實體的文字，依裁定 6／70／120）。⚠ Apple 那個掛名含直撇號，若下游做藝人比對閘要注意（裁定 194 的同形）。封面 CAA：release-group/5a7d13e1 回 200。",
+  "mbNote": "釘 release-group 5a7d13e1-4334-4f8e-8f4d-44b5053d18d8。回問確認：title「The Very Best Of Hero」、artist-credit「The Swankys」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1985 Dogma DOG-10 Official／US 2024 General Speech GS-28＋Kings World KWLP-6000，status null）。藝人 MBID d926690c-5e10-4195-8658-3bc9ecfd734d（Group／Japan），名下 9 個 RG 全列。刻意不釘：35900f09-5fc4-332a-91e6-39f6ab7bbc70《Never Can Eat Swank Dinner》（1987，同樣是 Album，本批只取一張以免單一藝人塞滿）、c0da59e8-82bf-3ffe-be40-981b293635d1《Tokyo》（1990）、2f6b9fab-9073-4181-9531-5b23cfcd866f《Period The Noise Tour 1985 Lives》（1997）、baba5b44-4882-4f8d-b508-4109c394e830《Best Of Life Style!》（primary-type 空＋Compilation）、251ec62f-dee3-4536-8804-b33629da0deb《Original Swankys》與 86c864a2-dbef-4425-8878-6c9439ad3c66《Never Hero》（primary-type 空）、be5e5b46-462b-4149-83b7-5262cd5dbaef《This Is My Lifestyle!》（EP）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "あぶらだこ 木盤；Aburadako；あぶらだこ 1984；Aburadako Kiban",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "あぶらだこ",
+  "album": "あぶらだこ",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "ADK Records（catno ADK-17A，JP 1984-09）",
+  "why": "あぶらだこ 的第一張 LP，出在 ADK Records（ADK-17A）——這家廠牌就是《ADK Omnibus》系列的東家，是東京西郊 hardcore 的自主出口。這支樂團把名下九張專輯全部命名為《あぶらだこ》，坊間以封面顏色分稱「木盤」「青盤」「亀盤」等，本張即通稱的木盤。實掃 seed_cards.json 全 14,424 列，あぶらだこ 池中 0 張；同名專輯有九張，池中一次只能放一張（撞卡鍵是掛名＋盤名），因此取最早的這一張。來源：MB release-group 5b52575e 的 label-info（ADK Records ADK-17A）、Apple jp 店 collectionId 1007931802 的《あぶらだこ (木盤)》條目。",
+  "risk": "⚠ 這張的最大風險是同名：MB 上 あぶらだこ 名下有九筆 primary-type=Album 的 release-group 全部題為《あぶらだこ》，撞卡鍵 k(artist)+'|'+k(album) 對它們完全相同——本批只能收一張，往後任何一批要再補這支樂團，盤名必須帶顏色後綴（如「あぶらだこ（木盤）」）否則會直接撞上這張。撞卡：實掃全池 0 張，不撞。掛名：あぶらだこ 是全平假名，依裁定 189，只有藝人自己有正式羅馬字名才羅馬化——MB 實體主名即為假名 あぶらだこ，池中無此掛名，依裁定 177 第二步取 MB artist-credit，保留假名。Apple：藝人目錄 lookup（jp／us）命中 13 張，其中 collectionId 1007931802《あぶらだこ (木盤)》(2015 數位再發) 對應本張，另有 1008014768 青盤、1008040752 亀盤；⚠ Apple 的年份欄記 2015（數位上架年），依裁定 91／95 卡片年份取 MB 的 1984-09。轄下只有 1 個 release（JP Official）。封面 CAA：release-group/5b52575e 回 200。",
+  "mbNote": "釘 release-group 5b52575e-131a-369a-ac7e-25cad0dbe819。回問確認：title「あぶらだこ」、artist-credit「あぶらだこ」、first-release-date 1984-09、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，ADK Records ADK-17A）。藝人 MBID b0262450-a2c3-4519-a6e0-07fa2b7b7144（Group／Japan／1983），以 release-group?artist=…&limit=100&offset= 分頁全列 13 個 RG。刻意不釘（同名 Album 八張，全部與本張撞鍵）：1957121d-9251-3726-a4aa-6d9de7b6148c（1985-08）、884bd589-696e-3040-a8e6-b8f1b86836c7（1986-12）、1487b682-58c7-32c7-a9a4-b5eefcdece55（1989-04-10）、f5c8e272-d488-393a-833f-c869f88a4991（1996-01-01）、6a2e9ec2-0584-3cd0-963b-3003768a4a0e（1999-12-01）、60dbbcc5-dea5-34c2-a1ec-09afab3fcf88（2000-10-25）、6e7837a3-0805-3e23-8c81-7617bcf1afdb（2004-05-04）、6438e6c6-3899-41eb-b8f0-330483893aa8（2008-06-06）；另 adf6ad1e-4092-4304-82eb-1257f4f38a59《ADK Years 1983-1985》（Album+Compilation）、9aa497db-749d-3935-b308-00367f4f6933 與 cb6c76d3-906a-4f6b-bc17-1a493b85fdbd（EP）、c679b971-a26b-344d-acf3-13bb3a6797a0《翌日》（Single）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lip Cream 9 Shocks Terror；リップ・クリーム ナイン・ショックス・テラー",
+  "reissuedBy": "Relapse Records／Dynamite Records（2025，RR7611／DONDON-002，US）",
+  "g": "a",
+  "artist": "Lip Cream",
+  "album": "9 Shocks Terror",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "Selfish Records／Dynamite Records（catno BEL-12013／Dondon-005，JP 1987）",
+  "why": "Lip Cream 的第二張專輯，接在池中已有的《Kill Ugly Pop》(1986) 後面，同樣掛 Selfish Records 與樂團自營的 Dynamite Records 雙編號。實掃 seed_cards.json 全 14,424 列：Lip Cream 池中只有 1 張《Kill Ugly Pop》（由 c-70 new wave 批帶進），本批補的《9 Shocks Terror》與《Close to the Edge 危機》正好是它後面連著的兩張，補完這支樂團 1986–1988 的三連發。2025 年 Relapse Records 與 Dynamite 聯名在美國重發。來源：Relapse 官方商品頁、MB release-group 4b12f5f8 轄下 3 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池，Lip Cream 只有《Kill Ugly Pop》1 張，本張不撞。⚠ 掛名同名實體：MB 另有一個無 area 的 Lip Cream（938c5904，disambiguation「Grindcore」），已回問排除，取 Group／Japan／1984／「hardcore punk band from Japan, 1983-1990」的 14bef585。⚠ 盤名以數字開頭，Apple search 對數字開頭盤名常失手，已改走藝人目錄 lookup（裁定 173／185）並命中 collectionId 1846922930（jp／us 兩店，年份欄 1987 與 MB 一致）。轄下 3 個 release：JP 1987 Official、一筆無國別 Official、US 2025 status null。年份取 MB first-release-date 1987。封面 CAA：release-group/4b12f5f8 回 200。",
+  "mbNote": "釘 release-group 4b12f5f8-eec7-34c6-bbe3-c1d038655260。回問確認：title「9 Shocks Terror」、artist-credit「Lip Cream」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1987 Selfish BEL-12013＋Dynamite Dondon-005 Official／1996 無國別 Official／US 2025 Relapse RR7611＋Dynamite DONDON-002）。藝人 MBID 14bef585-e0ed-49e7-903a-b4349f1b08ee，名下 12 個 RG 全列。刻意不釘：55ddde5a-a73f-38c8-a5ec-cee2cd3c04c8《Kill Ugly Pop》（1986，池中已有）、79bd7d43-169d-315e-9ff4-4e970c5f2593《Close to the Edge 危機》（本批另收）、3bcf8082-fd24-4568-9818-1690a4be0cb6《Lip Cream》（1989，同名專輯）、5b21876a-3c2e-4630-8bc1-868ab5ac3c9a《Kill the IBM》（Album+Demo）、efdb6eae-9b93-4dfc-809c-65c6a56cb9c7《Shocking Disc Terror》（Album+Compilation，盤名與本張近似，最容易誤釘）、c6389b48-ac91-49d2-83bf-c414ae588ea7《Kill The I.B.M.》（primary-type 空＋Compilation）、9f3f866c-5896-474f-9bdd-4ff7a66cd9c8《スラッシュ・ティル・デス》與 b15392a6-f76b-40fc-8e6c-d496837954f6《Lip Cream's Thrash Til Death》（同一批錄音的兩種寫法）、08aff3a4／99e4a297／b77fab11（三筆 EP）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lip Cream Close to the Edge；リップ・クリーム 危機；Lip Cream Kiki",
+  "reissuedBy": "ONI（2010，ONI-5，JP）",
+  "g": "a",
+  "artist": "Lip Cream",
+  "album": "Close to the Edge 危機",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "（MB 該 release 未填廠牌；2010 再發為 ONI-5，JP）",
+  "why": "Lip Cream 的第三張專輯，盤名同時掛英文與漢字，是這支樂團解散（1990）前最後一張錄音室作。與《9 Shocks Terror》一起收，池中的 Lip Cream 就從 1 張《Kill Ugly Pop》變成 1986–1988 連續三張。2010 年在日本以 ONI-5 重發。實掃 seed_cards.json 全 14,424 列，本張不在池中。來源：MB release-group 79bd7d43 轄下 3 個 release 的 label-info、Apple jp／us 店 collectionId 1846930003 條目。",
+  "risk": "撞卡：實掃全池不撞。⚠ 盤名同時含拉丁字與漢字，這是裁定 193 的形狀（MB 取一種、Apple 取另一種）：Apple 的 collectionId 1846930003 盤名是《Close to the Edge》不帶「危機」，卡片盤名照 MB 實體文字寫成《Close to the Edge 危機》，queryAlias 已把兩種寫法都補上。⚠ 另一個同名風險：Yes 的《Close to the Edge》(1972) 是搖滾正典，撞卡與封面反查都要連掛名一起看；實掃確認池中無 Yes 的同名卡與本張同鍵。⚠ 轄下 3 個 release 有 2 筆無國別（一筆 Official、一筆 Pseudo-Release，且 label 標為 [no label]），僅 2010 JP ONI-5 標 Official——1988 首版在 MB 上沒有帶廠牌的 release 條目，本機建卡時 label 欄宜留白或註明未確認。年份取 MB first-release-date 1988。Apple 命中 jp／us 兩店（年份欄 1988，與 MB 一致）。封面 CAA：release-group/79bd7d43 回 200。",
+  "mbNote": "釘 release-group 79bd7d43-169d-315e-9ff4-4e970c5f2593。回問確認：title「Close to the Edge 危機」、artist-credit「Lip Cream」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（JP 2010 ONI-5 Official／1988 無國別 Official／1988 無國別 Pseudo-Release）。藝人 MBID 14bef585-e0ed-49e7-903a-b4349f1b08ee，名下 12 個 RG。刻意不釘：55ddde5a-a73f-38c8-a5ec-cee2cd3c04c8《Kill Ugly Pop》（池中已有）、4b12f5f8-eec7-34c6-bbe3-c1d038655260《9 Shocks Terror》（本批另收）、3bcf8082-fd24-4568-9818-1690a4be0cb6《Lip Cream》（1989 同名專輯）、efdb6eae-9b93-4dfc-809c-65c6a56cb9c7《Shocking Disc Terror》（Album+Compilation）、5b21876a-3c2e-4630-8bc1-868ab5ac3c9a《Kill the IBM》（Album+Demo）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ザ・スターリン 虫；The Stalin Mushi；STALIN 虫；ザ・スターリン Mushi",
+  "reissuedBy": "（1998 TKCA-71508／2003 TKCA-72603／2015 リマスター，皆 JP）",
+  "g": "a",
+  "artist": "ザ・スターリン",
+  "album": "虫",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Climax Records（catno CMC-2512，JP 1983-04-25）",
+  "why": "ザ・スターリン 從自主場景轉進較大流通後的第三張，出在 Climax Records（CMC-2512），是《STOP JAP》(1982) 的下一張。實掃 seed_cards.json 全 14,424 列：ザ・スターリン 池中有 2 張——《trash》(1981) 與《STOP JAP》(1982)，兩張都由 c-70 new wave 批帶進，時間軸停在 1982；本批補的《虫》與《Fish Inn》正好把 1983–1984 這一段接上。這張後來在 1998、2003、2015 三度以不同編號再發，是遠藤ミチロウ 目錄裡再發次數最多的一張。來源：MB release-group bf99d287 轄下 4 個 release 的 label-info、Apple jp 店 collectionId 990142158／219988005 條目。",
+  "risk": "撞卡：實掃全池，ザ・スターリン 池中 2 張（trash、STOP JAP），本張不撞。⚠ 掛名分裂：MB 藝人實體主名是片假名 ザ・スターリン（acf084a3），但同名的還有德國 alt/electronic 的 Stalin、美國饒舌 J. Stalin，以及一個 disambiguation 寫「スターリン」的 Stalin（d3e79013）——已回問 area／type 確認取 Group／Japan／1980-06-06。池中既有兩張就掛在 ザ・スターリン 下，依裁定 177 第一步沿用池中寫法。⚠ 盤名是單一漢字「虫」，這是裁定 185 的極端形狀，Apple search 不可信；已走藝人目錄與盤名反查，jp 店有 collectionId 990142158（2015 リマスター・バージョン）與 219988005（2003 版），us 店無。年份取 MB first-release-date 1983-04-25。轄下 4 個 release 中 1 筆 Pseudo-Release，其餘 JP／Official。封面 CAA：release-group/bf99d287 回 200。",
+  "mbNote": "釘 release-group bf99d287-7f53-439f-9f04-29fd9cdd1049。回問確認：title「虫」、artist-credit「ザ・スターリン」、first-release-date 1983-04-25、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1983 Climax CMC-2512 Official／JP 1998 TKCA-71508 Official／JP 2003 TKCA-72603 Official／1 筆 Pseudo-Release）。藝人 MBID acf084a3-c550-45fa-8272-869e1fecbdad，名下 31 個 RG 全列。刻意不釘：63d6547a-7ff9-351a-9c4e-07e1cf21a04d《trash》與 0b68f4c8-c6ba-4170-b701-c0294fd180bb《STOP JAP》（池中已有）、38234e5a-4efc-31d9-854a-f74e9e116b04《Fish Inn》（本批另收）、127fa455-23c4-3e0a-be0f-4e32d02756dd《STOP JAP + GO GO STALIN》（合體再發）、d6543e18-3b30-498f-8722-4f067a5827cf《STOP JAP NAKED》與 075b3722-3b89-4ba6-855f-bd6416e68b9a《STALINISM NAKED》（未混音版）、dbbc634c／7b9fc18b／966b5f10／ce8910b6（Album+Compilation 的四張精選）、92521b4b／e2009b31／6c6e32d3（Live）、12ae0f61-d11d-4d25-b75e-b085fffc14e4《THE STALIN BEST》與 8f235607-27bd-4dac-94a1-2c18b8dc6f50《ザ・スターリン・ベスト》（無日期的精選雙胞胎）。"
  }
 ]
