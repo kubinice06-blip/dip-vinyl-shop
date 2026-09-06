@@ -1,0 +1,193 @@
+[
+ {
+  "artist": "H.O.T.",
+  "album": "Wolf and Sheep",
+  "year": 1997,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno SSM-20）",
+  "why": "H.O.T. 1996 年出道盤《We Hate all Kinds of violence...》之後隔年推出的第二張正規盤；Apple Music 美國店面的 H.O.T. 目錄把這一筆標成「Wolf & Sheeps - The 2nd Album」（collectionId 1060461243），MB 的 release-group 則以《Wolf and Sheep》建檔、轄下兩筆 KR release 皆為 Official（1997-07-01 與 1997，SM Entertainment，catno SSM-20）。實掃 seed_cards.json 全 14,424 列，H.O.T. 池中只有 1996 年那張出道盤一筆，1997–2000 年四張正規盤全無；這張補在出道盤旁邊，是把 90 年代後半韓國偶像工業起點那條線接上第二格。",
+  "risk": "盤名三種寫法：MB 作《Wolf and Sheep》、Apple 作《Wolf & Sheeps》（複數 s）、韓文原題〈늑대와 양〉，& 與 and 的分裂在既有正規化下不會相等（2026-09-06 稽核型態三的同一形狀），三種都要進 queryAlias。掛名 H.O.T. 與英國 Hot Chocolate、Hot Chip 等在 MB 搜尋分數上相鄰，藝人實體須釘 c4f88022-c899-46cd-81b9-6e0c3409b60b（KR、Group）。封面：CAA release-group 端點回 200（實測）。試聽：Apple 店面 us 有 1060461243 與 648201500 兩筆同碟條目（皆 9 軌），店面 kr 對 search 端點回 200＋0 筆（本批 47 次查詢全空，見 rulings 第 3 條），韓國卡一律改用 us。",
+  "mbNote": "釘 release-group 6046685a-5865-314a-9b74-dd0f2ee47791。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Wolf and Sheep」、artist-credit「H.O.T.」、first-release-date 1997-07-01、primary-type Album、secondary-types 空、轄下 3 個 release（KR/Official 2、XW/Official 1）。刻意不釘：a40e8938-a392-4737-953c-cc6ce5cf57c4《Greatest H.O.T. Hits-Song Collection Live Album》（1999 精選＋Live）、229bcae2-a5b7-4a77-b8f0-1d2a38bee44b《99 LIVE IN SEOUL (Live)》（Live）、09a65968-aa20-320a-a0b7-6ac189091d34《Age of Peace: The Original Soundtrack》（2000 電影原聲）、431bc694-e822-482f-9694-dd4879aeec07《I Yah!》（2000 單曲，與 1999 同名正規盤 fb4f8929 易混）。藝人 MBID c4f88022-c899-46cd-81b9-6e0c3409b60b，以 release-group?artist=…&limit=100&offset= 分頁全列，名下 10 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wolf & Sheeps；Wolf & Sheeps - The 2nd Album；늑대와 양；H.O.T 2집",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "H.O.T.",
+  "album": "Resurrection",
+  "year": 1998,
+  "genres": [
+   "pop"
+  ],
+  "label": "SynNara music／SM Entertainment（catno KSC-8060／SSM-025）",
+  "why": "H.O.T. 的第三張正規盤（Apple Music 美國店面該團目錄把這一筆標成「Resurretion - The 3rd Album」，collectionId 1060407199，拼寫少一個 c；同店另有 648204908《Resurrection》14 軌一筆）。MB 的 release-group first-release-date 記 1998-09-24，轄下兩筆 KR release 皆 Official，發行掛 SynNara music（KSC-8060）與 SM Entertainment（SSM-025）兩家、屬廠牌與流通代理的分工。實掃 seed_cards.json 全檔，H.O.T. 池中僅 1996 年出道盤一張；本批同時補 1997 年《Wolf and Sheep》與這張 1998 年盤，讓該團在池中形成 1996–1998 連續三格，而不是孤立一張出道盤。",
+  "risk": "Apple 的條目標題有拼寫錯誤（Resurretion），字串比對會落空，須把兩種拼法都放進 queryAlias（裁定第 117 條的同型問題）。同名別碟風險高：Apple us 另有 1583075173「H.O.T | Resurrection - Single」（2021、1 軌、掛名少一個點），與本卡不是同一物。廠牌兩說如 why 所述，行文不得斷言單一發行方。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 兩筆皆 14 軌，須以逐軌長度而非軌數辨版（裁定第 174 條）；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 6fa7090d-711a-3471-a100-49e4c228eda4。回問確認：title「Resurrection」、artist-credit「H.O.T.」、first-release-date 1998-09-24、primary-type Album、secondary-types 空、轄下 3 個 release（KR/Official 2、XW/Official 1；KR 兩筆 label-info 為 SynNara music KSC-8060 與 SM Entertainment SSM-025）。刻意不釘：a40e8938-a392-4737-953c-cc6ce5cf57c4《Greatest H.O.T. Hits-Song Collection Live Album》（1999 精選＋Live）、cc0c26d1-ddb1-4c66-b8e8-8b5f4d30d5b1《H.O.T. Forever 2001 Live Concert》（Live）、fb4f8929-2f27-3e8e-a194-b735168b4a95《I yah!》（1999 第四張正規盤，非本卡）。藝人 MBID c4f88022-c899-46cd-81b9-6e0c3409b60b。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Resurretion；Resurretion - The 3rd Album；H.O.T 3집；희망의 시대",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "S.E.S.",
+  "album": "S.E.S.",
+  "year": 1997,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno KSC-9019）",
+  "why": "S.E.S. 的出道正規盤，Apple Music 美國店面該團目錄把這一筆標成「S.E.S. - The 1st Album」（collectionId 1060481631、10 軌），MB 的 release-group first-release-date 記 1997-11、轄下 KR release 為 Official（SM Entertainment，catno KSC-9019），另有一筆 JP release 屬同一 release-group。實掃 seed_cards.json 全 14,424 列，S.E.S. 池中 0 張，同期的 Fin.K.L 與 신화 也都是 0；這條 1997–1999 年 SM 與 DSP 女團／男團並起的線在池中整段空白，本批以出道盤與第二張正規盤各補一格。",
+  "risk": "盤名與掛名同形（自我同名卡），撞卡與試聽配對都容易吃到別的東西：MB 上另有一個同名實體 8f8be890-e7cd-434a-a571-6b77c68db9a0（jungle，非本團），釘的必須是 KR 的 62814dab-64fe-4b70-b870-81c0145ba552。這張的主打曲題〈I'm Your Girl〉在 Apple us 另有 1696914631「I'm Your Girl - Single」（2 軌）一筆，不是本專輯。日版目錄極厚（MB 名下 25 個 release-group 內含大量日文單曲），釘位須以 KR release 為準。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1060481631；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 3321dd33-9e75-3bdb-86d8-cb8d814fef67。回問確認：title「S.E.S.」、artist-credit「S.E.S.」、first-release-date 1997-11、primary-type Album、secondary-types 空、轄下 2 個 release（KR/Official 1、JP/Official 1；KR 筆 label-info SM Entertainment KSC-9019）。刻意不釘（皆日版或日版精選）：39277576-f7bd-3bac-b7fe-7fb1b2ed8cfa《REACH OUT》（1999 日版正規）、855d16e2-4296-394b-a812-ba1b1f2de625《Be Ever Wonderful》（2000 日版正規）、f4fa011b-e26d-370a-89c1-22640997e889《PRIME -S.E.S. the best-》（2000 日版精選）、236e3ec5-55c9-3879-a663-08e3f0fc9436《I'm Your Girl》（1998 日版單曲）。藝人 MBID 62814dab-64fe-4b70-b870-81c0145ba552，名下 25 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "S.E.S. - The 1st Album；I'm Your Girl；에스이에스 1집",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "S.E.S.",
+  "album": "Sea & Eugene & Shoo",
+  "year": 1998,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno KSC-8087）",
+  "why": "S.E.S. 的第二張正規盤（Apple Music 美國店面標作「Sea & Eugene & Shoo - The 2nd Album」，collectionId 1060484503、10 軌；英文維基另有專條 Sea & Eugene & Shoo）。MB 的 release-group first-release-date 記 1998-11-11，轄下四筆 KR release 全為 Official，其中三筆標題分別作「Dreams Come True」「Sea & Eugene & Shoo」「S.E.S. 2」——同一張碟在韓國市場以主打曲名、成員名串接與集數三種封面標題流通。實掃 seed_cards.json 全檔，S.E.S. 池中 0 張，本批以 1997 年出道盤與這張 1998 年盤各補一格。",
+  "risk": "盤名在同一 release-group 內就有三種（Sea & Eugene & Shoo／Dreams Come True／S.E.S. 2），跨字串去重完全看不見，三種都要進 queryAlias。「&」與「and」的分裂會讓比對落空（2026-09-06 稽核型態三）。掛名同 S.E.S. 出道盤，須避開 MB 上的同名 jungle 實體 8f8be890。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1060484503（同店另有 1060485551《Shoo. Eugene. Sea - Friend》2002，是別碟）；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 1a23186a-7fa6-4b2f-976a-f5aa60548538。回問確認：title「Sea & Eugene & Shoo」、artist-credit「S.E.S.」、first-release-date 1998-11-11、primary-type Album、secondary-types 空、轄下 5 個 release（KR/Official 4、JP/Official 1；KR 首筆 label-info SM Entertainment KSC-8087）。刻意不釘（皆日版或後期精選）：39277576-f7bd-3bac-b7fe-7fb1b2ed8cfa《REACH OUT》（1999 日版正規）、83979ab8-231d-3baa-837e-ae8818dd1c3f《HERE & THERE》（2001 精選）、fafe8cb7-38c0-346e-a8b1-268386a546f3《Friend》（2002 精選）、521f2118-62c0-3996-8a87-1bac0a395639《Best》（2002 日版精選）。藝人 MBID 62814dab-64fe-4b70-b870-81c0145ba552。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dreams Come True；S.E.S. 2；Sea & Eugene & Shoo - The 2nd Album；Sea and Eugene and Shoo",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Fin.K.L",
+  "album": "Blue Rain",
+  "year": 1998,
+  "genres": [
+   "pop"
+  ],
+  "label": "DSP 系統下發行；MB 的 KR release 未填廠牌（Apple 條目題名 Fine Killing Liberty : Blue Rain）",
+  "why": "Fin.K.L 的出道正規盤。Apple Music 美國店面把這一筆題成「Fine Killing Liberty : Blue Rain」（collectionId 1456211552、11 軌），Fine Killing Liberty 是團名 Fin.K.L 的全稱；MB 的 release-group first-release-date 記 1998、轄下 KR release 一筆 Official 一筆 Pseudo-Release。實掃 seed_cards.json 全 14,424 列，Fin.K.L 池中 0 張。1997–1999 這三年是韓國偶像團體制度成形的區段，池中目前只有 H.O.T. 1996 年那一張；本批把 S.E.S.、Fin.K.L、신화、G.O.D 四組的出道與代表盤一起補上，這張是其中的 DSP 女團起點。",
+  "risk": "MB 的 KR release 未填 label-info，廠牌名不得斷言，行文只能引 Apple 的題名與 MB 的日期。同 release-group 內另有一筆 KR Pseudo-Release，釘位與封面都要走 Official 那筆。盤名兩種寫法（Blue Rain／Fine Killing Liberty : Blue Rain），全稱那種帶冒號，字串比對會落空。年份 MB 只記到 1998 年（無月日）。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1456211552；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 6f01605e-f27f-31c0-af41-466f27bbccdb。回問確認：title「Blue Rain」、artist-credit「Fin.K.L」、first-release-date 1998、primary-type Album、secondary-types 空、轄下 2 個 release（KR/Official 1、KR/Pseudo-Release 1；Official 筆 label-info 為空陣列）。刻意不釘：fa9c900e-3d3d-448d-8cfb-66d9e365e1be《HISTORY》（2001 精選）、3f69ec79-0186-4b14-ae2f-b1d7c9b9ee2b《FIN.K.L Best Album》（2019 精選）、f99ef61b-dd9d-3886-a242-b0b4861a6561《Fine Killing Liberty》（2005 單曲，盤名與本卡的 Apple 題名同源、是本張最像的假陽性）。藝人 MBID 9c85e09b-7eed-43af-bc05-e6a726c9451a，名下 9 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fine Killing Liberty : Blue Rain；Fine Killing Liberty；핑클 1집",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Fin.K.L",
+  "album": "White",
+  "year": 1999,
+  "genres": [
+   "pop"
+  ],
+  "label": "DAEYOUNG AV（catno DYCD-1085）",
+  "why": "Fin.K.L 前一年出道盤《Blue Rain》之後的第二張正規盤。MB 的 release-group first-release-date 記 1999-05-01，轄下三筆 KR release（兩筆 Official、一筆 Pseudo-Release），Official 那筆 label-info 為 DAEYOUNG AV、catno DYCD-1085——與出道盤 MB 未填廠牌的情形不同，這張的發行方在資料庫裡查得到。Apple Music 美國店面有對應條目 1456207540（1999、12 軌）。實掃 seed_cards.json 全 14,424 列，Fin.K.L 池中 0 張；本批把出道盤與這張並排補上，讓池中的 90 年代末韓國女團不是只靠 S.E.S. 一組代表。",
+  "risk": "盤名《White》是極常見的英文單字，跨藝人撞卡與試聽誤配風險都高（Apple us 同字串搜尋回到 Dua Lipa、Jackson 5、Relient K 的耶誕盤），配對一律以 collectionId 1456207540 直查而非字串比對。同 release-group 內另有一筆 KR Pseudo-Release，釘位與封面走 Official 那筆。MB 記的 1999-05-01 與 Apple 的 1999 年份一致。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1456207540；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 4e4f0fd0-ecd6-3213-b0cb-67954cbff35a。回問確認：title「White」、artist-credit「Fin.K.L」、first-release-date 1999-05-01、primary-type Album、secondary-types 空、轄下 3 個 release（KR/Official 2、KR/Pseudo-Release 1；Official 首筆 label-info DAEYOUNG AV DYCD-1085）。刻意不釘：835dc5ea-692d-356c-8789-98fd6f22f097《S.P.E.C.I.A.L》（1999-11-26 特別盤，與本張同年、最像的假陽性）、fa9c900e-3d3d-448d-8cfb-66d9e365e1be《HISTORY》（2001 精選）、3f69ec79-0186-4b14-ae2f-b1d7c9b9ee2b《FIN.K.L Best Album》（2019 精選）、e7400092-fff9-3148-81d1-ae885ab80979《Now》（2000 第三張正規盤，非本卡）。藝人 MBID 9c85e09b-7eed-43af-bc05-e6a726c9451a。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fin.K.L White；핑클 2집；Fine Killing Liberty",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "G.O.D",
+  "album": "Chapter 1",
+  "year": 1998,
+  "genres": [
+   "pop"
+  ],
+  "label": "SynNara music",
+  "why": "G.O.D（Groove Over Dose）的出道正規盤，也是該團「Chapter」編號系列的起點：MB 名下九個 release-group 裡有八張以 Chapter 為題、從 1998 年的 Chapter 1 排到 2014 年的 Chapter 8。這一筆 MB first-release-date 記 1998-12-15、轄下一筆 KR release 為 Official、發行掛 SynNara music；Apple Music 美國店面對應條目 1671479286（掛名寫小寫 god、10 軌、releaseDate 記 1999）。實掃 seed_cards.json 全 14,424 列，G.O.D 池中 0 張。這條線與同期 H.O.T.、S.E.S.、Fin.K.L 三組並行，池中原本只有 H.O.T. 一張，本批四組一起補。",
+  "risk": "掛名是本批最容易誤配的一個：MB 上以 god／G.O.D 為名的實體至少五個（德國的 Garden of Delight 別名 G.O.D.、荷蘭 God Dethroned、韓國另有 Glory of God 等），藝人實體必須釘 6e0920b3-6508-4ad4-b067-ee7d274c90ce（KR、Group、disambiguation 記 Groove Over Dose）。Apple 的掛名寫小寫 god、releaseDate 記 1999，與 MB 的 1998-12-15 差一年；依裁定第 77 條，Apple 日期只當訊號、卡單年份採 MB 的 1998。盤名《Chapter 1》同樣是通用字串（Apple us 同字串會回到 Kane Brown 的 EP），配對走 collectionId 1671479286。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 6c17a873-1c23-3b21-9c7c-2c047abd9416。回問確認：title「Chapter 1」、artist-credit「G.O.D」、first-release-date 1998-12-15、primary-type Album、secondary-types 空、轄下 1 個 release（KR/Official，label-info SynNara music、無 catno）。刻意不釘（同系列編號盤，盤名只差一個數字，是本張最像的假陽性）：878e18c5-279f-3ecb-885c-36027dff6d20《Chapter Two》（1999）、c6673129-f436-4092-80f4-0adbb8ca2e2f《Chapter 3》（2000）、9ec3cefc-7525-475b-ab79-78140dff05af《Chapter 8》（2014）、3994d075-3cd9-49a0-82ef-0781fa4aa8f8《미운오리새끼》（2014 單曲）。藝人 MBID 6e0920b3-6508-4ad4-b067-ee7d274c90ce，名下 9 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "god Chapter 1；지오디 1집；Groove Over Dose",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "G.O.D",
+  "album": "Chapter 4: To Home",
+  "year": 2001,
+  "genres": [
+   "pop"
+  ],
+  "label": "SidusHQ",
+  "why": "G.O.D 的 Chapter 系列第四張，MB first-release-date 記 2001-11-11、轄下一筆 KR release 為 Official、發行掛 SidusHQ（與 Chapter 1 的 SynNara music 不同，該團在系列中途換過發行方）。Apple Music 美國店面對應條目 1669438161（題名 Chapter 4、13 軌）。實掃 seed_cards.json 全檔，G.O.D 池中 0 張；本批補出道盤與這張，取的是系列頭尾兩個可辨識的錨點，中間 Chapter 2／3／5–8 留給後續。",
+  "risk": "盤名在 MB 與 Apple 之間長短不一（MB 作《Chapter 4: To Home》、Apple 作《Chapter 4》），冒號後的副標會讓子字串比對誤中同系列別張（裁定第 168 條的形狀），Chapter 2–8 六張都要當對照組排除。掛名的同名實體問題同 Chapter 1 那張。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1669438161；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 0904574d-bd61-4994-bf60-8c4252eccf57。回問確認：title「Chapter 4: To Home」、artist-credit「G.O.D」、first-release-date 2001-11-11、primary-type Album、secondary-types 空、轄下 1 個 release（KR/Official，label-info SidusHQ、無 catno）。刻意不釘（同系列編號盤）：6c17a873-1c23-3b21-9c7c-2c047abd9416《Chapter 1》（1998，本批另收一卡、不得與本卡互換）、d53eace6-415f-4bdc-bb7e-7fbeb6174eef《Chapter 5: Letter》（2002）、b41b2aa0-ce89-4006-9147-688deefb8976《Chapter 6: An Ordinary Day》（2004）、4db84083-178e-4bfa-90cb-ded9f3cea7a9《The 7th Chapter: Into the Sky》（2005）。藝人 MBID 6e0920b3-6508-4ad4-b067-ee7d274c90ce。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Chapter 4；god Chapter 4；지오디 4집；To Home",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "신화",
+  "album": "신화",
+  "year": 1998,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno KSC-8008／SSM-022）",
+  "why": "신화 的出道正規盤，自我同名。MB 的 release-group first-release-date 記 1998-05-05、artist-credit 印的是諺文「신화」、轄下一筆 KR release 為 Official、兩組 label-info 皆 SM Entertainment（KSC-8008 與 SSM-022）。Apple Music 美國店面把這一筆題成「해결사 - The 1st Album」（collectionId 1060504276、10 軌、掛名寫 SHINHWA），해결사 是這張的主打曲題。實掃 seed_cards.json 全 14,424 列，신화／SHINHWA 兩種寫法在池中都是 0 張。這張與同批的 H.O.T.、S.E.S.、Fin.K.L、G.O.D 同屬 1996–1998 那三年，補上之後池中才有一組完整的第一代偶像切面。",
+  "risk": "掛名三分歧：MB 藝人實體主名寫 SHINHWA（721a6d4e-6c5b-4250-8e87-b5dc386fd965）、所釘 release-group 的 artist-credit 寫 신화、Apple 寫 SHINHWA；另有一個不同實體 99073f18-ac8f-47d3-9bb2-bdc26338d0a0「신화 WDJ」會在諺文搜尋中排第一，不是本團。盤名與掛名同形（自我同名卡），且 Apple 用主打曲題《해결사》而非團名，字串比對兩邊都對不上，只能走 collectionId 1060504276。⚠ MB 名下另有 2008-04-14 的《Shinhwa》（dd0e9b73）是同名別碟。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group c2a4fbb2-7c56-3a10-a122-e963f4a68560。回問確認：title「신화」、artist-credit「신화」、first-release-date 1998-05-05、primary-type Album、secondary-types 空、轄下 1 個 release（KR/Official，label-info SM Entertainment KSC-8008 與 SSM-022）。刻意不釘：dd0e9b73-d4a3-323f-964d-7818f2ab21b5《Shinhwa》（2008 同名別碟，本張最像的假陽性）、86af400b-db30-3d7d-b4c6-48ef17fa40c9《First Mythology》（2001 Live）、5c69fc65-dd63-4ea4-bbcb-6a14a4cb6ea4《SHINHWA Precious - Essential Collection》（2005 精選）、eea74cf0-4126-4588-b995-2e1ef2f7e95f《僕らの心には太陽がある》（2006 日版單曲）、f12bf6f6-00a8-3ebd-990f-cb31b74474de《Winter Story 2003-2004》（Other）。藝人 MBID 721a6d4e-6c5b-4250-8e87-b5dc386fd965（主名 SHINHWA），名下 28 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "SHINHWA；Shinhwa；해결사；해결사 - The 1st Album；신화 1집",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "BIGBANG",
+  "album": "BIGBANG VOL.1 SINCE 2007",
+  "year": 2006,
+  "genres": [
+   "pop",
+   "hiphop"
+  ],
+  "label": "YG Entertainment（catno YDCD-765）",
+  "why": "BIGBANG 的第一張正規盤，接在 2006 年三張編號單曲（《BIGBANG》《BIGBANG Is V.I.P》《B I G B A N G 03》）之後。MB first-release-date 記 2006-12-21、轄下三筆 KR release 全為 Official（首筆 label-info YG Entertainment、catno YDCD-765），三筆封面標題分別作「BIGBANG VOL.1 SINCE 2007」「BIGBANG VOL. 1 SINCE 2007」「Bigbang Vol.1」；Apple Music 美國店面該團目錄題作「BIGBANG, Vol. 1」（collectionId 1330865135、11 軌）。實掃 seed_cards.json 全 14,424 列，BIGBANG 池中 2 張——《REMEMBER》(2008，韓版第二張正規盤) 與《BIGBANG2》(2011，日版正規盤)；出道正規盤與 2016 年的《MADE》都不在，本卡補的是最前面那一格。",
+  "risk": "盤名四種寫法（含空格與句點位置差異：VOL.1／VOL. 1／Vol.1／, Vol. 1），依裁定第 139 條這種空格擺法會造出「查無此碟」，四種都要進 queryAlias。⚠ 掛名撞卡：MB 上另有 2006-08-29 的單曲《BIGBANG》（97d1c5b1）與 2009-08-19 的日版正規盤《BIGBANG》（56311e1d），三者盤名同字串、只有型別與年份能分。⚠ 掛名寫法：本卡沿用池中既有的拉丁寫法 BIGBANG（池中 2 張皆如此，MB 藝人實體主名亦為 BIGBANG），不改寫成諺文 빅뱅，理由見 c105/rulings.md 第 1 條。封面：CAA release-group 端點回 200（實測）。試聽：Apple us search 端點對本張回 0 筆、改打藝人頁目錄端點（artistId 318754656）才拿到 1330865135，是裁定第 173 條的又一實例；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group b4eee91a-479f-4c7e-aac4-f84e78d6238c。回問確認：title「BIGBANG VOL.1 SINCE 2007」、artist-credit「BIGBANG」、first-release-date 2006-12-21、primary-type Album、secondary-types 空、轄下 5 個 release（KR/Official 3、US/Official 1、XW/Official 1；KR 首筆 label-info YG Entertainment YDCD-765）。刻意不釘：97d1c5b1-0be8-4ec7-b99d-68be81c0315f《BIGBANG》（2006 單曲，同名）、56311e1d-0de0-4671-978e-b69849f17f55《BIGBANG》（2009 日版正規盤，同名）、95b530b7-17c8-4b37-adfd-b622fe568423《BIGBANG2》（2011 日版正規盤，池中已有）、df90223d-878a-37a5-b100-b84feebd552e《BIGBANG Is V.I.P》（2006 單曲）、d9b95042-99c6-486f-a5ff-7e4f64b05645《Bigbang Best 2006-2010》（日版精選）。藝人 MBID ec2bcb77-b9a1-49e2-bfe7-419586bbef48，名下 62 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "BIGBANG VOL. 1 SINCE 2007；Bigbang Vol.1；BIGBANG, Vol. 1；Since 2007；빅뱅 1집",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

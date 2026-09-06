@@ -1,4 +1,4 @@
-// c-102 提案檢查。用法：node batch-progress/c102/chk-prop.mjs [組別…]
+// c-112 提案檢查。用法：node batch-progress/c112/chk-prop.mjs [組別…]
 // 卡池合併後「線上池」＝ seed_cards.json 全部（一般卡與王牌都算，撞到哪種都是撞卡）。
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,7 +12,7 @@ const groups = process.argv.slice(2).length ? process.argv.slice(2) : ['a', 'b']
 const all = [];
 let bad = 0;
 for (const g of groups) {
-  const f = path.join(ROOT, `batch-progress/c102/prop-${g}.json`);
+  const f = path.join(ROOT, `batch-progress/c112/prop-${g}.json`);
   if (!fs.existsSync(f)) { console.log(`prop-${g}.json：未產出`); continue; }
   const p = JSON.parse(fs.readFileSync(f, 'utf8'));
   const say = (m) => { bad++; console.log(`  ⚠ ${m}`); };
