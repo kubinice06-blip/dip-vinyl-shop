@@ -122,5 +122,89 @@
   "status": "partial",
   "yearVerified": "⚠ 帶問號的一致，1960。原盤條目記 1960 年（Nashboro LP 7002），廠牌目錄記「[1960?]」——年份帶問號、是編者的推定。依裁定 236 與策展層第 12 條，取原盤條目的 1960。旁證：同編號段的 7000 與 7001 兩方都記 1960 不帶問號，7003 記 1961，本片夾在中間相容。**兩票但其中一票帶問號，行文寫 1960 可以，不要寫成「確定於 1960 年發行」。**",
   "notes": "§1 資格成立：藝人實體 12cfe076 名下 count=0，是本批最乾淨的一筆查無。\n⚠ 擋下策展層兩項：（一）curatorWhy 寫「Edna Gallmon Cooke 是 Nashboro 最大的女聲招牌」——評價，不得當事實寫。（二）同一張的 curatorWhy 寫「她 1967 年過世前替 Nashboro 錄了十張 LP，廠牌後來還出了兩張紀念盤」——**數字重複計算**。廠牌目錄她掛名總共只有十行，其中 7049 與 7068 兩行就是那兩張紀念盤，另有 7154 與 NA-27218 兩張是身後發行。**生前可查證的是六張**（7002／7009／7013／7020／7025／7041）。\n⚠ 「人稱 Sweet Rock of Ages」查不到來源；傳記記的名號是「Sweetheart of the Potomac」與敬稱「Madame」。**行文改用有來源的那兩個。**\n試聽覆核：us 店面以「Edna Gallmon Cooke」search 藝人實體回 0 筆，**連藝人條目都不存在**，因此無藝人目錄可 lookup。確認 unavailable，無可補的 collectionId。封面 manual-scan。\n曲名兩來源不一致（Walk Thru／Through、War Fare／Warfare），**行文引曲名取原盤盤面寫法**。"
+ },
+ {
+  "key": "desc2:The Consolers|Singing Gospel Songs",
+  "artist": "The Consolers",
+  "album": "Singing Gospel Songs",
+  "facts": [
+   {
+    "f": "原盤條目：Nashboro、編號 LP 7004、美國 1961 年、12 吋黑膠。十二段——A1〈Give Me My Flowers〉、A2〈How Long Has It Been〉、A3〈I Shall Not Want〉、A4〈Long Long Journey〉、A5〈Some Sweet Day Afterwhile〉、A6〈God Will Take Care〉、B1〈Every Christian Mother〉、B2〈I Know What It Means〉、B3〈After The Clouds Roll Away〉、B4〈Help Me To Understand〉、B5〈Glad To Be In The Number〉、B6〈My Soul's Salvation〉。無逐軌長度。",
+    "src": "https://api.discogs.com/releases/8083730"
+   },
+   {
+    "f": "同一條目的附註直接記下盤名分歧：封面與書背印的是「Singing Gospel Songs」，副標印「Give Me My Flowers」，**唱片內圈標籤上完全沒有盤名**。廠牌專輯目錄則把這張記成自我同名的「LP-7004 - Consolers - Consolers [1961]」，十二首曲目與原盤條目逐首相同。",
+    "src": "https://api.discogs.com/releases/8083730"
+   },
+   {
+    "f": "廠牌專輯目錄裡 The Consolers 掛名共十八行，從 1961 年的 LP-7004 排到推定 1979 年的 NA-7211《Praise The Lord With Singing》，是這份目錄裡跨度最完整的幾組之一；本片是其中的第一張，也是 Nashboro 專輯編號的第五張（7000／7001／7002／7003 在前）。",
+    "src": "https://www.bsnpubs.com/christian/nashboro.html"
+   },
+   {
+    "f": "2014 年的三十七軌數位精選《The Consolers Collection 1952-62》把本片十二首全部收了進去（曲名寫法略有出入：〈How Long Has It Been Since You've Been Home〉、〈Some Sweet Day After a While〉），三十七軌全部可試聽。同一份精選另收他們 1952 年起在其他廠牌的錄音。",
+    "src": "https://itunes.apple.com/lookup?id=933939727&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "§1 資格覆核：依裁定 179 回問 area 與 disambiguation，US 的那個實體（disambiguation 記「Gospel couple」）名下分頁只回兩筆——1998 年 9 月 22 日的《Lord, Bring Me Down》與 2014 年的《The Consolers Collection 1952-62》（Compilation）。另外三個同名實體分屬巴貝多、德國與北愛爾蘭，與本團無關。1961 年的本片沒有建檔。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "唱片內圈標籤上沒有盤名：封面寫「Singing Gospel Songs」，副標寫「Give Me My Flowers」，廠牌目錄乾脆寫成團名",
+   "十八行、十八年——這對夫妻檔從 Nashboro 編號第五張一路唱到 1979 年"
+  ],
+  "sound": "十二段、無逐軌長度可引。A 面以〈Give Me My Flowers〉開場，這首在後來的精選裡也被排在前段，是他們流傳最廣的一首；A 面其餘五首多為敘事型的慢板。B 面以〈Every Christian Mother〉起手，末段〈My Soul's Salvation〉收尾。⚠ 編制無來源：原盤條目沒有列樂手、製作人或錄音室，本團「一把電吉他兩個聲部」的說法在本片沒有可引的憑據，行文不得當本片的錄音事實寫。",
+  "keyTracks": [
+   "Give Me My Flowers",
+   "Every Christian Mother",
+   "My Soul's Salvation"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1961。原盤條目記 1961 年（Nashboro LP 7004），廠牌目錄記「[1961]」不帶問號。第三方缺席：2014 年那份精選是六十年後的重編，不能當 1961 年的佐證。",
+  "notes": "§1 資格成立：US 實體 c1b9c6b3 名下兩筆皆非本片。依裁定 179 逐一回問四個同名實體的 area 與 disambiguation（US 福音夫妻檔 c1b9c6b3、巴貝多伴唱團 67157a30、德國團 c4e607fd、北愛 alt-rock be08301a）。\n⚠ 擋下策展層一項不可寫的斷言：curatorWhy 寫「是戰後福音裡最樸素的編制」。評價，且本片沒有任何編制來源。\n⚠ 盤名：卡單取 Singing Gospel Songs（原盤封面與書背寫法），副標 Give Me My Flowers 與廠牌目錄的自我同名寫法 Consolers 皆已確認存在。**行文引盤名照卡單。**\n**試聽有解（裁定 185／203）**：走藝人目錄 lookup 查 us 店面（artistId 1806686，回六張），名下沒有本片的獨立條目，但 collectionId **933939727**《The Consolers Collection 1952-62》的三十七軌**涵蓋本片全部十二首**，全部有 previewUrl，**可當試聽來源**。封面不可用（該版是 2014 年精選的美術），coverSourceHint 維持 manual-scan。\n⚠ 探測層原判 unavailable，這一筆是回撈之外我另外找到的，策展層的 apple-candidates.md 對本張寫「目錄裡找不到」。"
+ },
+ {
+  "key": "desc2:The Swanee Quintet|Anniversary Album",
+  "artist": "The Swanee Quintet",
+  "album": "Anniversary Album",
+  "facts": [
+   {
+    "f": "原盤條目：Nashboro、編號 LP 7008、美國 1962 年、12 吋黑膠、Album，附註記「Original pressing with green labels」（初版為綠底標籤）。十二段——A1〈Where He Leads Me〉、A2〈Just One More Time〉、A3〈Holy Ghost Got Me〉、A4〈How I Got Over〉、A5〈Take The Lord With You〉、A6〈Holy Wine〉、B1〈Great Change In Me〉、B2〈I Want You To Move〉、B3〈One More River To Cross〉、B4〈I Know It Was The Blood〉、B5〈Jesus Loves Me〉、B6〈He's Everything To Me〉。無逐軌長度。",
+    "src": "https://api.discogs.com/releases/11191113"
+   },
+   {
+    "f": "綠底黑字是 Nashboro 第一代標籤的樣式：廠牌目錄描述為綠底黑印、中心孔上方寫 NASHBORO，下方一道弧形黑帶寫「33 1/3 RPM」、其上寫 NONBREAKABLE，底部寫「MICROGROOVE LONG PLAYING」。",
+    "src": "https://www.bsnpubs.com/christian/nashboro.html"
+   },
+   {
+    "f": "廠牌專輯目錄記為「LP-7008 - Anniversary Album - Swanee Quintet [1962]」，十二首曲名與原盤條目逐首相同。本片是本團在 Nashboro 本家的第二張 LP，前一張是 1960 年的 LP-7000。",
+    "src": "https://www.bsnpubs.com/christian/nashboro.html"
+   },
+   {
+    "f": "1992 年的二十四軌重發《What About Me? (Anniversary Album)》把 LP 7000 與本片併成一張，第 13–24 軌就是本片的完整十二首；其中第 13 軌在該版標為〈Where He Leads Me (Single Version)〉，指明那個版本取自單曲而非專輯。二十四軌全部可試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1443999129&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "A4〈How I Got Over〉是福音曲目中傳唱最廣的一首之一，A1〈Where He Leads Me〉則在本團自己的目錄裡至少出現三次——1960 年的 LP 7000 收過、1964 年的 LP-7022《Soul Stirring Gospels》也收，同一首在同一家廠牌的三張專輯上各錄一遍。",
+    "src": "https://www.bsnpubs.com/christian/nashboro.html"
+   },
+   {
+    "f": "§1 資格覆核：藝人實體 2a688f04 名下分頁只回四筆（《So Glad...》《Just One Rose Will Do!》《Eternal Life》與 2016 年精選），本片不在其中。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "〈Where He Leads Me〉他們在同一家廠牌錄了三次：1960 年、1962 年這張、1964 年再一次",
+   "綠底黑字、弧形黑帶寫著 33 1/3 RPM——初版標籤上還印著 NONBREAKABLE 這個字"
+  ],
+  "sound": "十二段、無逐軌長度可引。A 面從〈Where He Leads Me〉起手（這首兩年前的 LP 7000 就錄過一次），A4〈How I Got Over〉是全片最廣為人知的一段，A 面收在〈Holy Wine〉；B 面以〈Great Change In Me〉開場，末段〈He's Everything To Me〉收尾。整體是硬派四重唱的常規曲目編排——老靈歌、常備曲與自家新作交錯。⚠ 編制無來源：原盤條目沒有列樂手、製作人或錄音室，不得寫伴奏形制。",
+  "keyTracks": [
+   "Where He Leads Me",
+   "How I Got Over",
+   "Great Change In Me"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1962。原盤條目記 1962 年（Nashboro LP 7008），廠牌目錄記「[1962]」不帶問號。第三方缺席：1992 年那張合併盤是三十年後的重發。",
+  "notes": "§1 資格成立：藝人實體 2a688f04 名下四筆皆非本片。\n**試聽有解（裁定 185／203）**：collectionId **1443999129** 的第 13–24 軌就是本片完整十二首、全部有 previewUrl，**可當試聽來源**。⚠ 策展層只把這個 collectionId 記在同組《What About Me》那張的 curatorRisk 裡，**本張也適用**，apple-candidates.md 對本張寫「目錄裡找不到」是漏的。封面不可用（合併盤美術），維持 manual-scan。\n⚠ 擋下策展層一項不可寫的斷言：curatorWhy 寫 1992 年那張合併 CD「是這條線第一次被英國考古廠牌整理」。「第一次」無來源。\n盤名：卡單取 Anniversary Album，與原盤條目及廠牌目錄一致。⚠ 提醒下游：本團另有 Creed 3012《27th Anniversary》，與本片不是同一張。"
  }
 ]

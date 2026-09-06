@@ -84,5 +84,86 @@
   "status": "full",
   "yearVerified": "一致，1989。MB release-group first-release-date **1989**（只到年），其下 JP 首版（Alchemy Records ARCD-004）亦記 1989；**日文維基的作品欄也把《MODERN》記在 1989 年、廠牌記 アルケミーレコード**。兩處同為 1989、都沒給月份。1994 年那筆 Alchemy CD（ARCD-067）是同廠再版、2014 與 2021 的三筆是後世重製，**都不可與原盤年混用**。同名先行單曲：無——MB 藝人頁 62 個 release-group 裡沒有第二筆叫《Modern》的東西。",
   "notes": "**掛名是這張最要注意的地方（裁定 211／228／194）**：**本張在 MB 上的 artist-credit 是羅馬字「Hijokaidan」，卡單與卡池用的是漢字「非常階段」**——兩者是**同一個 MBID（d8e649be）的兩種 credit，不是兩個實體**（同一實體下另有第三種拼法「Hijyokaidan」，用在 1982-06 的《Originals》上）。策展層裁定第 3 條已決定沿用池中的漢字寫法，**行文照卡單寫「非常階段」**；但**下游若有藝人比對閘，本張所釘 RG 的 credit 與卡片掛名不同字，要放行**。Apple 端同樣分裂成兩個 artistId（269598068 漢字／269597521 HijoKaidan）。\\n**「本批七張 Alchemy 目錄裡編號最早」要修正**：本張是 **ARCD-004**（CD 系列），但同批 ハナタラシ《ハナタラシ》(1985) 是 **ARLP-007**（黑膠系列）、Incapacitants《Repo》(1989) 是 **ARLP-027**——**ARCD 與 ARLP 是兩個平行的編號序列，不能直接比大小**。**行文不要寫「編號最早」**，要寫就寫「Alchemy CD 系列的早期編號」。\\n**可寫且有來源的**：Alchemy Records 由 JOJO広重 於 1984 年創立（日文維基）、他是該廠負責人（英文維基）；日文維基作品欄顯示 1984–1992 幾乎一年一張全部出在該廠。\\n**這張碟的「一軌 74:03」是最扎實的一條具體事實**，行文值得用；但要註明那是 1989 年 CD 版的切法。\\n**Apple：兩店、兩個端點都查無。**"
+ },
+ {
+  "key": "desc2:Incapacitants|Eternal Paralysis",
+  "artist": "Incapacitants",
+  "album": "Eternal Paralysis",
+  "facts": [
+   {
+    "f": "release-group 35720d81 的欄位：title「Eternal Paralysis」、artist-credit「Incapacitants」（藝人實體 49085c3c，**Group**／Japan、disambiguation「Japanese electronic/noise band」、life-span begin **1981**）、first-release-date **1981**（只到年）、primary-type Album、secondary-types 空。轄下 3 個 release，全部 Official：**JP 1981 的卡帶（Pariah Tapes，catno PT-1，1 軌）**、XW 2025-03-14 的數位（advaita records，3 軌）、JP 2025-04-15 的卡帶（advaita records，3 軌）。**原盤是一捲一軌的卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/35720d81-2e0c-4573-acac-84d9852796eb?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1981 年 Pariah Tapes 卡帶（94a4a2cd）：**整捲只有 1 軌、題〈Eternal Paralysis〉，MB 未填長度**。2025 年 advaita records 的數位與卡帶版都切成 3 軌。**同一份錄音在四十四年後被重新分成三段。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=35720d81-2e0c-4573-acac-84d9852796eb&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Incapacitants 名下 **86 個 release-group、Album 66 筆**。1990 年以前的五筆依 first-release-date 排序為 **《Eternal Paralysis》1981**、《Peony Crackers》1983、《Project Pallo ’85》1985、《Δ8000 / Prelude to Pallo》1985、《Repo》1989。**逐筆回查這四筆前期作的載體：Peony Crackers 是 1983 年 Pariah Tapes 的卡帶（PT-2）、Project Pallo ’85 是 1985 年 Pariah Tapes 的三捲卡帶（PT-3／PT-4／PT-5）、Δ8000 / Prelude to Pallo 是 1985 年 Alchemy Records 的卡帶（ARCA-001）。也就是說，本張的 PT-1 是 Pariah Tapes 這個卡帶廠的第一號、也是這位藝人 MB 目錄上最早的一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=49085c3c-fe97-4477-8b9f-11ec2dcde57c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Incapacitants〉：**1981 年由 Toshiji Mikawa 在大阪創立，最初是他在 Hijokaidan 之外的個人計畫**；遷到東京後，C.C.C.C. 的 Fumio Kosakai 加入成為二人組，Kosakai 後來也成為 Hijokaidan 的固定成員。兩人自陳的目標是做出「pure」的噪音——不受音樂想法、甚至不受人的意圖左右——主要用回授、人聲與各式電子器材；Kosakai 把這種聲音叫做「hard noise」（借自爵士的 hard bop）。條目並記：兩人的正職分別是銀行員與公務員，因此難以經常出國巡演；1999 年 11 月才在奧地利 Wels 的 Music Unlimited Festival ’99 做了第一次海外演出。",
+    "src": "https://en.wikipedia.org/wiki/Incapacitants"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179）：實體 49085c3c 的 name「Incapacitants」、type **Group**、area **Japan**、disambiguation「Japanese electronic/noise band」、別名「インキャパシタンツ」；**artist-rels 明列兩位團員：美川俊治 與 小堺文雄**。Apple 端 jp／us 兩店的 `entity=musicArtist` 都只回到同一個 artistId **212904081「Incapacitants」**（沒有同名污染），其目錄 8 筆：Default Standard(1999)／Repo(2001)／LIVE INCAPACITANTS(2000)／Operorue(1995)／A Purpose Not Necessary(2019)／Live at Wall&Wall(2025)／Chwalfa(2025)／與 Pain Jerk 的 Live At No Fun Fest 2007。**《Eternal Paralysis》不在目錄裡。**",
+    "src": "https://musicbrainz.org/ws/2/artist/49085c3c-fe97-4477-8b9f-11ec2dcde57c?fmt=json&inc=aliases+artist-rels"
+   }
+  ],
+  "hookCandidates": [
+   "一九八一年的原件是一捲卡帶、整捲一軌；四十四年後再發時才被切成三段",
+   "卡帶上的編號是 PT-1——那家卡帶廠的第一號，就是這捲"
+  ],
+  "sound": "MB 記三筆 release：1981 年 Pariah Tapes 的卡帶（PT-1）**整捲只有 1 軌**、2025 年 advaita records 的數位與卡帶各 **3 軌**，**MB 三筆都沒有填長度**，因此無法談時間結構。可談的是形態與沿革：這是這位藝人 MB 目錄上最早的一筆，載體是卡帶而非黑膠——回查同期四筆（1983《Peony Crackers》PT-2、1985《Project Pallo ’85》PT-3/4/5 三捲、1985《Δ8000 / Prelude to Pallo》Alchemy ARCA-001）**全部都是卡帶**，這條線 1980 年代的發行形態就是卡帶。英文維基把這個計畫的目標記成做出「pure」的噪音、不受音樂想法甚至不受人的意圖左右，主要器材是回授、人聲與各式電子設備。",
+  "keyTracks": [
+   "Eternal Paralysis"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1981，**兩處**。MB release-group first-release-date **1981**（只到年），其下 Pariah Tapes 卡帶亦記 1981；**英文維基〈Incapacitants〉的 Discography 欄也把 Eternal Paralysis 記在 1981**，且條目正文寫這個計畫 1981 年在大阪成立——**年份與樂團起始年同一年**。MB 藝人實體的 life-span begin 亦為 1981。兩處同為 1981、都沒給月份。2025 年 advaita 的兩筆再發不可與原盤年混用。同名先行單曲：無。",
+  "notes": "⚠ **擋下策展層一處人名錯誤。** `curatorWhy` 寫「1981 年出在 **美濃 秀樹** 自營的 Pariah Tapes」——**沒有這個人**。**MB 藝人端點的 artist-rels 明列 Incapacitants 的兩位團員是 美川俊治 與 小堺文雄**；英文維基寫得更清楚：**1981 年由 Toshiji Mikawa（美川俊治）在大阪創立，最初是他在 Hijokaidan 之外的個人計畫**，Fumio Kosakai（小堺文雄）是遷到東京之後才加入的。**行文不得出現「美濃秀樹」。**\\n**「這條線的起點形態是卡帶不是黑膠」查證屬實、可以寫**：逐筆回查 1990 年以前的五筆，PT-1／PT-2／PT-3–5／ARCA-001 全部是卡帶，第一筆黑膠要到 1989 年的《Repo》（同批另一張卡）。\\n**「PT-1 是那個卡帶廠的創廠編號」可以寫**：MB label-info 的編號序列（PT-1 本張、PT-2 Peony Crackers、PT-3/4/5 Project Pallo ’85）支持這個說法。\\n**跨卡連結（都有來源）**：美川俊治 同時是 **非常階段** 的成員、小堺文雄 來自 **C.C.C.C.** 且後來也加入 非常階段（英文維基＋日文維基〈非常階段〉成員欄）——**本批 b 組同時收了這三個團**，是這一組最結實的一條人脈線。\\n**素材偏少**：MB 沒填任何長度、原盤只有一軌、Apple 查無。可寫的集中在載體沿革、編號序列與英文維基那段自述。status 填 partial。\\n**Apple：兩店、兩個端點都查無本張**（藝人 212904081 目錄 8 筆裡沒有）；這一位在 Apple 上**沒有同名污染**，兩店都只回到同一個 artistId。"
+ },
+ {
+  "key": "desc2:Incapacitants|Repo",
+  "artist": "Incapacitants",
+  "album": "Repo",
+  "facts": [
+   {
+    "f": "release-group 82353e00 的欄位：title「Repo」、artist-credit「Incapacitants」（藝人實體 49085c3c，Group／Japan／begin 1981）、first-release-date **1989**（只到年）、primary-type Album、secondary-types 空。轄下 **6 個 release，全部 Official**：**JP 1989 的 12 吋黑膠（Alchemy Records，catno ARLP-027，2 軌）**、JP 2001-06-25 的 CD（Alchemy Records，ARCD-130，**3 軌**）、JP 2012-08-11 的 CD（youth Inc.，YOUTH-167，3 軌）、XW 2023-05-25 的數位（Urashima，UMA 173，2 軌）、IT 2023-05-31 的雙黑膠＋卡帶（Urashima，UMA 173）、IT 2023-05-31 的雙黑膠（Urashima，UMA 173）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/82353e00-ebea-42aa-939d-b37cec11bb73?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1989 年 Alchemy 黑膠（3f9266a7）的逐軌曲目與長度：**1〈Repo〉23:41、2〈Reverse Repo〉23:45——兩軌，一面一段，長度只差四秒**。2001 年的 Alchemy CD（ARCD-130）與 2012 年的 youth Inc. CD 都是 3 軌（多一段），2023 年 Urashima 的數位版回到 2 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=82353e00-ebea-42aa-939d-b37cec11bb73&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **jp** 店面 collectionId 213573398：collectionName「Repo」、artistName「Incapacitants」、releaseDate **2001-05-17**、**℗ 2001 Alchemy Records**、trackCount 3。`entity=song` **攤得出 3 軌、3 軌全部有 previewUrl**：1〈Repo〉23:41、2〈Reverse Repo〉23:45、**3〈Prelude to Pallo Remixed (Bonus Tracks)〉26:37**。前兩軌的長度與 MB 那筆 1989 年黑膠**相同到秒**；第 3 軌是 2001 年 CD 版才加上的 bonus。**這是 2001 年 Alchemy CD 版，不是 1989 年黑膠原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=213573398&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Incapacitants 名下 86 個 release-group、Album 66 筆。1990 年以前依序為《Eternal Paralysis》1981、《Peony Crackers》1983、《Project Pallo ’85》1985、《Δ8000 / Prelude to Pallo》1985、**《Repo》1989**。**逐筆回查載體：前四筆全部是卡帶（Pariah Tapes PT-1／PT-2／PT-3–5、Alchemy ARCA-001），本張的 ARLP-027 是 12 吋黑膠——這是這位藝人 MB 目錄上第一筆黑膠。** 同一年 Alchemy 還發了 非常階段《Modern》(ARCD-004)。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=49085c3c-fe97-4477-8b9f-11ec2dcde57c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Incapacitants〉：1981 年由 Toshiji Mikawa 在大阪創立、原為他在 Hijokaidan 之外的個人計畫，遷東京後 C.C.C.C. 的 Fumio Kosakai 加入成為二人組；兩人的目標是「pure」noise，主要用回授、人聲與電子器材，Kosakai 把它叫「hard noise」。條目的 Discography 欄把 Repo 記在 **1989**。兩人的正職是銀行員與公務員，因此難以經常出國巡演。",
+    "src": "https://en.wikipedia.org/wiki/Incapacitants"
+   },
+   {
+    "f": "Apple 藝人目錄端點（artistId 212904081「Incapacitants」，jp 與 us 兩店，entity=album）各回 **8 筆**：213719364「Default Standard」1999-04-20（5 軌）、**213573398「Repo」2001-05-17（3 軌）**、213700197「LIVE INCAPACITANTS」2000-10-01（2 軌）、1519798143「Operorue」1995（3 軌）、1462219250「A Purpose Not Necessary」2019-05-21（2 軌）、1797023640「Live at Wall&Wall (Live)」2025-04-11、1825161834「Chwalfa (Live)」2025-08-22、269344313「Pain Jerk / Incapacitants: Live At No Fun Fest 2007」。**本批另外兩張（Eternal Paralysis、Quietus）都不在這 8 筆裡。**",
+    "src": "https://itunes.apple.com/lookup?id=212904081&country=jp&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "兩軌，一面一段，二十三分四十一秒對二十三分四十五秒——只差四秒",
+   "一九八一年起連出四捲卡帶，這張是他們第一次把聲音壓進黑膠"
+  ],
+  "sound": "MB 記六筆 release，**分段依載體而異**：1989 年 Alchemy 黑膠與 2023 年 Urashima 數位是 **2 軌**，2001 年 Alchemy CD 與 2012 年 youth Inc. CD 是 **3 軌**。原盤那兩軌是〈Repo〉23:41 與〈Reverse Repo〉23:45——**一面一段、長度只差四秒，總長約四十七分鐘**；第二軌的曲名是第一軌的字面反轉（Repo／Reverse Repo）。2001 年的 CD 版在後面加上第 3 軌〈Prelude to Pallo Remixed〉26:37，**那一軌單獨就比原盤任一面都長**，加上去之後全長超過七十四分鐘。載體上，這是這位藝人 MB 目錄上第一筆黑膠——在此之前的四筆（1981／1983／1985×2）全部是卡帶。",
+  "keyTracks": [
+   "Repo",
+   "Reverse Repo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。MB release-group first-release-date **1989**（只到年），其下 JP 首版（Alchemy Records ARLP-027）亦記 1989；**英文維基〈Incapacitants〉的 Discography 欄也把 Repo 記在 1989**。兩處同為 1989、都沒給月份。⚠ **Apple 213573398 的 releaseDate 是 2001-05-17、℗ 2001 Alchemy Records**——那是 2001 年 CD 版（ARCD-130）的年份，**不是原盤年**；2012 與 2023 的三筆再發同樣不可混用。同名先行單曲：無。",
+  "notes": "**Apple 覆核（探測層標 ready）**：`jp` **213573398**，**3 軌全部有 previewUrl**，`trackCount` 欄與曲目列都是 3。⚠ **這是 2001 年 Alchemy CD 版：前兩軌與 MB 的 1989 年黑膠原盤長度相同到秒，第 3 軌〈Prelude to Pallo Remixed〉26:37 是 CD 版才加的 bonus。MB 原盤 2 軌對 Apple 3 軌，是裁定 175 的落差**，下游引軌數要註明版本。**行文不要把「三軌」講成這張碟的形制。** us 店同一個 artistId 下也列得到同一筆。\\n**「第一張黑膠」查證屬實、可以寫**：逐筆回查 MB 上 1990 年以前的五筆，前四筆全是卡帶（Pariah Tapes PT-1／PT-2／PT-3–5、Alchemy ARCA-001），本張的 ARLP-027 是第一筆 12 吋黑膠。\\n**跨卡連結**：同年同廠的 非常階段《Modern》(ARCD-004) 是本批 b 組另一張卡；**但 ARLP 與 ARCD 是兩個平行編號序列，不要拿來比大小**。美川俊治 同時是 非常階段 成員、小堺文雄 來自 C.C.C.C.（英文維基），三個團本批都收了。\\n**第 3 軌那個 bonus 名稱本身也是跨卡線索**：〈Prelude to Pallo Remixed〉指向 MB 上 1985 年的《Δ8000 / Prelude to Pallo》，那一筆在 MB 上同時掛 Incapacitants 與 非常階段 兩團名下。\\n**擋下策展層一處措辭**：`curatorWhy` 寫本張「是這支團流通最廣的一張」——**「最廣」沒有來源**，可查的只有「MB 上再發次數最多（6 筆 release）」。行文改用後者。"
  }
 ]
