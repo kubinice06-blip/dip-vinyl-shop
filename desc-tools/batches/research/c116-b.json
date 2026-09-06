@@ -165,5 +165,159 @@
   "status": "full",
   "yearVerified": "一致，1989。MB release-group first-release-date **1989**（只到年），其下 JP 首版（Alchemy Records ARLP-027）亦記 1989；**英文維基〈Incapacitants〉的 Discography 欄也把 Repo 記在 1989**。兩處同為 1989、都沒給月份。⚠ **Apple 213573398 的 releaseDate 是 2001-05-17、℗ 2001 Alchemy Records**——那是 2001 年 CD 版（ARCD-130）的年份，**不是原盤年**；2012 與 2023 的三筆再發同樣不可混用。同名先行單曲：無。",
   "notes": "**Apple 覆核（探測層標 ready）**：`jp` **213573398**，**3 軌全部有 previewUrl**，`trackCount` 欄與曲目列都是 3。⚠ **這是 2001 年 Alchemy CD 版：前兩軌與 MB 的 1989 年黑膠原盤長度相同到秒，第 3 軌〈Prelude to Pallo Remixed〉26:37 是 CD 版才加的 bonus。MB 原盤 2 軌對 Apple 3 軌，是裁定 175 的落差**，下游引軌數要註明版本。**行文不要把「三軌」講成這張碟的形制。** us 店同一個 artistId 下也列得到同一筆。\\n**「第一張黑膠」查證屬實、可以寫**：逐筆回查 MB 上 1990 年以前的五筆，前四筆全是卡帶（Pariah Tapes PT-1／PT-2／PT-3–5、Alchemy ARCA-001），本張的 ARLP-027 是第一筆 12 吋黑膠。\\n**跨卡連結**：同年同廠的 非常階段《Modern》(ARCD-004) 是本批 b 組另一張卡；**但 ARLP 與 ARCD 是兩個平行編號序列，不要拿來比大小**。美川俊治 同時是 非常階段 成員、小堺文雄 來自 C.C.C.C.（英文維基），三個團本批都收了。\\n**第 3 軌那個 bonus 名稱本身也是跨卡線索**：〈Prelude to Pallo Remixed〉指向 MB 上 1985 年的《Δ8000 / Prelude to Pallo》，那一筆在 MB 上同時掛 Incapacitants 與 非常階段 兩團名下。\\n**擋下策展層一處措辭**：`curatorWhy` 寫本張「是這支團流通最廣的一張」——**「最廣」沒有來源**，可查的只有「MB 上再發次數最多（6 筆 release）」。行文改用後者。"
+ },
+ {
+  "key": "desc2:Incapacitants|Quietus",
+  "artist": "Incapacitants",
+  "album": "Quietus",
+  "facts": [
+   {
+    "f": "release-group 6d75acb3 的欄位：title「Quietus」、artist-credit「Incapacitants」（藝人實體 49085c3c，Group／Japan／begin 1981）、first-release-date **1993**（只到年）、primary-type Album、secondary-types 空。轄下 4 個 release，全部 Official、全部 **3 軌**：**JP 1993 的 CD（Alchemy Records，catno ARCD-059）**、JP 2012-08-11 的 CD（youth Inc.，YOUTH-170，barcode 4571209816908）、IT 2022-05-30 的 12 吋黑膠（Urashima，UMA 161）、XW 2022-05-30 的數位（Urashima）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6d75acb3-c9d7-3855-9d4c-635e816e3158?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1993 年 Alchemy CD（4ef93afa）的逐軌曲目與長度：1〈No Risk, No Return〉**23:12**、2〈Backfire〉**4:23**、3〈Gody Fishing〉**21:07**。**三軌總長約四十九分鐘，頭尾兩段各二十多分鐘、中間夾一段四分二十三秒的短曲——長度比例接近 5:1:5。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6d75acb3-c9d7-3855-9d4c-635e816e3158&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Incapacitants 名下 **86 個 release-group、Album 66 筆**，是本批 b 組深度僅次於 Aube、Pain Jerk、灰野敬二、ASTRO 的一位。1993 年一年之內就有三筆：**《Quietus》**、《Stupid Is Stupid》、《Extreme Gospel Nights》（後者帶 secondary-type Live）；1994 至 1996 三年更密集（1994《No Progress》Compilation 與《Ad Nauseam》、1995 五筆、1996 五筆）。本批收的三張《Eternal Paralysis》1981／《Repo》1989／《Quietus》1993 分屬卡帶、黑膠、CD 三種載體。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=49085c3c-fe97-4477-8b9f-11ec2dcde57c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Incapacitants〉：1981 年由 Toshiji Mikawa 在大阪創立，遷東京後 C.C.C.C. 的 Fumio Kosakai 加入成為二人組；兩人自陳做「pure」noise、不受音樂想法甚至不受人的意圖左右，主要用回授、人聲與電子器材，Kosakai 稱之為「hard noise」（借自爵士的 hard bop）。條目的 Discography 欄把 **Quietus 記在 1993**，同年另列 Extreme Gospel Nights 與 Stupid Is Stupid。條目並記兩人正職為銀行員與公務員，1999 年 11 月才在奧地利 Wels 做第一次海外演出。",
+    "src": "https://en.wikipedia.org/wiki/Incapacitants"
+   },
+   {
+    "f": "Apple Music 兩店查無本張。藝人目錄端點（artistId 212904081「Incapacitants」，jp 與 us）各回 8 筆，**沒有《Quietus》**（該 8 筆是 Default Standard／Repo／LIVE INCAPACITANTS／Operorue／A Purpose Not Necessary／Live at Wall&Wall／Chwalfa／與 Pain Jerk 的 No Fun Fest 現場）。`search?term=Incapacitants Quietus&country=us&media=music&entity=album` 回 0 筆。**兩個端點都跑過（裁定 173）。**",
+    "src": "https://itunes.apple.com/lookup?id=212904081&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三軌四十九分鐘：兩段二十多分鐘的長段中間，夾了一首四分二十三秒的短曲",
+   "一九九三年這一年，他們名下就出現三筆條目——那還只是這位作者六十六張專輯裡的一年"
+  ],
+  "sound": "MB 記四筆 release、**全部 3 軌、同曲同序**（1993 Alchemy CD、2012 youth Inc. CD、2022 Urashima 的義大利黑膠與數位）。逐軌長度：〈No Risk, No Return〉**23:12**、〈Backfire〉**4:23**、〈Gody Fishing〉**21:07**，**總長約四十九分鐘**——頭尾兩段各二十多分鐘、中間那段只有四分多鐘，**三軌的長度比例接近 5:1:5**，是很不尋常的對稱結構。曲名上，第 1 軌〈No Risk, No Return〉與第 2 軌〈Backfire〉都是金融與投資的用語，第 3 軌〈Gody Fishing〉則是拼寫不明的造詞；英文維基記這兩位的正職分別是銀行員與公務員，且他們的曲名常引用自己的職業。",
+  "keyTracks": [
+   "No Risk, No Return",
+   "Backfire",
+   "Gody Fishing"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1993。MB release-group first-release-date **1993**（只到年），其下 JP 首版（Alchemy Records ARCD-059）亦記 1993；**英文維基的 Discography 欄也把 Quietus 記在 1993**。兩處同為 1993、都沒給月份。2012 與 2022 的三筆再發不可與原盤年混用。⚠ **同年同藝人另有兩筆**（《Stupid Is Stupid》與帶 Live 標記的《Extreme Gospel Nights》），**搜尋或數序數時容易混**。同名先行單曲：無。",
+  "notes": "**「1990 年代前半那一批 CD 裡最常被引用的一張」——沒有來源，擋下。** `curatorWhy` 這句是策展層的判斷，**MB、英文維基都查不到任何佐證**（英文維基的 Discography 欄只是平列）。**行文不得寫「最常被引用」或任何類似的相對評價。**\\n**「卡帶／黑膠／CD 三種形態各一張」查證屬實、可以寫**：本批三張分別是 1981 年 Pariah Tapes 的卡帶、1989 年 Alchemy 的 12 吋黑膠（ARLP-027）、1993 年 Alchemy 的 CD（ARCD-059），三種載體確實各一。\\n**曲名那條線可以寫，但要小心**：英文維基寫「Many of the group’s track titles reference their professions」並記兩人的正職是銀行員與公務員——本張第 1、2 軌〈No Risk, No Return〉〈Backfire〉正好是投資用語。**行文可以把「曲名引用自己的職業」寫成有來源的觀察，但不要斷言這兩個曲名就是例證**（維基沒有逐首舉例）。\\n**Apple：兩店、兩個端點都查無**（藝人 212904081 目錄 8 筆裡沒有）。這一位沒有同名污染。\\n**素材中等**：有三軌的精確長度、有英文維基的團體背景，但**這張碟本身沒有專屬條目、沒有 Apple、沒有製作資料**，status 填 partial。"
+ },
+ {
+  "key": "desc2:Masonna|Mademoiselle Anne sanglante ou notre nymphomanie auréolé",
+  "artist": "Masonna",
+  "album": "Mademoiselle Anne sanglante ou notre nymphomanie auréolé",
+  "facts": [
+   {
+    "f": "release-group 25804698 的欄位：title「Mademoiselle Anne sanglante ou notre nymphomanie auréolé」、artist-credit「Masonna」（藝人實體 85faf30e，**Person**／Japan、disambiguation「Japanese noise musician」、life-span begin **1966-11-16**）、first-release-date **1993-08**、primary-type Album、secondary-types 空。轄下 4 個 release，全部 Official、全部 **31 軌**：**JP 1993-08 的 CD（Alchemy Records，catno ARCD-057）**、JP 2023-10-18 的 CD（Alchemy Records／P‐VINE RECORDS，ALPCD-14，barcode 4995879608302，**release 題名改作「血まみれのアンヌ」**）、XW 2023-10-18 的數位（P‐VINE，同編號）、JP 2024-01-10 的 12 吋黑膠（P‐VINE，ALPLP-18）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/25804698-6c45-4320-92e5-71508afb3187?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 2023 年《血まみれのアンヌ》CD（19de2cd7）的逐軌長度（**31 軌，前 30 軌在 MB 上全部題作 [untitled]**）：0:45–3:39 之間，依序 1:06／0:45／1:08／0:40／0:38／0:59／1:23／0:52／1:56／2:24／0:57／0:52／1:07／2:11／0:50／2:01／0:41／3:01／1:02／**0:20**／1:14／1:08／2:34／0:59／0:46／**3:39**／0:54／2:29／3:13／1:16，**第 31 軌才有標題、就是專輯名〈Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé〉、長度只有 0:06**。**三十一軌總長約四十二分鐘，最短的第 20 軌 0:20、最長的第 26 軌 3:39。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=25804698-6c45-4320-92e5-71508afb3187&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1720087899：collectionName **「血まみれのアンヌ」**、artistName「Masonna」、releaseDate **2023-10-18**、**℗ 2023 P-VINE, Inc. Under Licensed by Alchemy Records**、trackCount 31。`entity=song` **攤得出 31 軌、31 軌全部有 previewUrl**；**前 30 軌在 Apple 上題作 TRK1 至 TRK30**（MB 是 [untitled]），第 31 軌〈Mademoiselle Anne Sanglante Ou Notre Nymphomanie Aureole〉0:06。逐軌長度與 MB 相同到秒。**這是 2023 年 P-Vine 的復刻版，不是 1993 年原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1720087899&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Masonna〉：本名 山崎卓志（Takushi Yamazaki）、藝名 山崎マゾ（Maso Yamazaki）、1966 年 11 月 16 日生於京都府宮津；**Masonna（マゾンナ）1987 年在大阪開始，團名是日文的マゾ（被虐）與 女 的組合，同時也是歌手 Madonna 的諧音**。⚠ **條目明寫：這個名字有時被當成縮寫展開，其中一種展開就是「Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé（血まみれのアンヌ嬢・若しくは・我等がニンフォマニアが・後光に包まれる）」**，另一種是 Mystic Another Selection Of Nurses Naked Anthology。條目並記他初次接觸日本 noise 是聽到 **Hanatarash 的首張 LP**。",
+    "src": "https://en.wikipedia.org/wiki/Masonna"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Masonna 名下 **53 個 release-group、Album 37 筆**。1993 年以前依 first-release-date 排序為《Like a Vagina》1988-11、《Masonna vs. Bananamara》1989、《Open Your Cunt》1989、《All Live Recording at My Room》1989-03、《Maso + Onna = Masonna》1989-05、《Mad Onna》1989-06、《Shinsen Na Clitoris》1990、《Violent Onsen Geisha / Masonna》1991、《Compilation 1987–1992》1992（Compilation）、**《Mademoiselle Anne sanglante…》1993-08**。**1988–89 那批共六筆，1993 這張之後才進入 1995–98 的高密度期。** MB 藝人端點的 artist-rels 記本人為 **山崎卓志**，別名欄同時收了本張盤名與另一個縮寫展開。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=85faf30e-fb8a-4b0f-8194-95e17a8b978e&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "三十一軌裡有三十軌連名字都沒有，只有最後那軌有標題——而且只有六秒",
+   "那個六秒的曲名就是藝名的展開：Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé"
+  ],
+  "sound": "MB 記四筆 release、**全部 31 軌、同曲同序**；Apple 那筆的逐軌長度與 MB 相同到秒。**前 30 軌在 MB 上一律建成 [untitled]、在 Apple 上則被編號成 TRK1 至 TRK30**，只有第 31 軌有真正的標題、且**只有 0:06**。三十一軌總長約四十二分鐘，逐軌長度落差極大：最短第 20 軌 **0:20**、最長第 26 軌 **3:39**，二十軌不到一分半，整張碟因此像三十段長短不一的切片接在一起。載體上，1993 年的原盤是 Alchemy Records 的 CD（ARCD-057），三十年後由 P-VINE 與 Alchemy 聯名以《血まみれのアンヌ》之名復刻 CD（2023）與黑膠（2024）——**盤名在復刻時整個換成了日文。**",
+  "keyTracks": [
+   "Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1993。MB release-group first-release-date **1993-08**（給到月），其下 JP 首版（Alchemy Records ARCD-057）同為 1993-08。⚠ **Apple 1720087899 的 releaseDate 是 2023-10-18、℗ 2023 P-VINE**——那是三十年後的復刻，**不可取**；MB 上另外三筆（2023 CD、2023 數位、2024 黑膠）同樣是復刻。**英文維基的 Masonna 條目沒有逐張作品年份**，所以年份只有 MB 一處來源、但 MB 給到月份且原盤 catno 明確。同名先行單曲：無。⚠ **盤名在復刻後變成《血まみれのアンヌ》，兩個名字指同一張碟**，搜尋時要都試。",
+  "notes": "**這張碟最好的一條事實，是盤名與藝名的關係，而且有來源。** 英文維基〈Masonna〉明寫：Masonna 這個名字「有時被當成縮寫展開」，其中一種展開就是 **Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé**——**也就是這張碟的盤名**；MB 藝人端點的別名欄同樣收了這一串（以及另一種展開 Mystic Another Selection Of Nurses Naked Anthology）。**行文可以寫「盤名是藝名的一種展開」，兩處來源都站得住。**\\n**Apple 覆核（探測層標 unavailable，實際找得到）**：`us` **1720087899**，**31 軌全部有 previewUrl**，`trackCount` 欄與曲目列都是 31，逐軌長度與 MB 相同到秒，**無裁定 175 的落差**。⚠ 但它是 **2023 年 P-Vine 的復刻版、題名作《血まみれのアンヌ》**——`apple-candidates.md` 把本張列為「目錄裡找不到」，**是因為用原盤的法文盤名搜不到**。**建議主線補 `us` 1720087899。不改 `previews.json`。**\\n**掛名**：MB 實體 85faf30e 是 **Person**（不是 Group），本名 山崎卓志、藝名 山崎マゾ。`curatorWhy` 用「山崎マゾ」是藝名、可用，但**若要寫本名請寫 山崎卓志**（英文維基與 MB artist-rels 都是這個）。\\n**跨卡連結（有來源）**：英文維基記 Masonna 初次接觸日本 noise 是聽到 **Hanatarash 的首張 LP**——本批 b 組正好收 ハナタラシ 1985 年那張首張 LP。\\n**盤名與曲名涉及性相關的挑釁字眼**（MB 藝人目錄上的其他盤名亦然）。**行文只寫可查的形態事實（31 軌、30 軌無題、末軌 0:06、盤名＝藝名展開），不轉述、不解釋、不評價。**"
+ },
+ {
+  "key": "desc2:Masonna|Ejaculation Generater",
+  "artist": "Masonna",
+  "album": "Ejaculation Generater",
+  "facts": [
+   {
+    "f": "release-group 4c7c0ee5 的欄位：title「Ejaculation Generater」、artist-credit「Masonna」（藝人實體 85faf30e，Person／Japan／1966-11-16 生）、first-release-date **1996-06-25**、primary-type Album、secondary-types 空。轄下 2 個 release，都 Official、都 **32 軌**：**JP 1996-06-25 的 CD（Alchemy Records，catno ARCD-087）**、XW 2022-02-14 的數位（**Total Black**，無 catno）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4c7c0ee5-bcbb-3d22-bca9-4608025bf22a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 2022 年 Total Black 數位版（7020b8c1）的逐軌長度（**32 軌，全部題作「Untitled」**）：0:34／0:46／1:35／0:36／1:06／**0:19**／1:09／0:35／0:23／**0:16**／0:25／0:58／0:21／1:07／1:03／0:52／1:04／0:44／1:30／0:18／**3:05**／1:24／0:33／1:51／1:47／0:55／0:28／0:59／1:31／0:27／2:02／**0:13**。**三十二軌總長約二十九分鐘，平均每軌不到一分鐘；最短第 10 軌 0:16、第 32 軌 0:13，最長第 21 軌 3:05——只有三軌超過兩分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4c7c0ee5-bcbb-3d22-bca9-4608025bf22a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Masonna 名下 53 個 release-group、Album 37 筆。**1995 至 1998 是這位作者最密集的四年**：1995 六筆（Hate／Clitoris Projectile Pump Action／Freak／Super Compact Disc／Filled With Unquestionable Feelings／Noisextra）、1996 五筆（含兩筆帶 Live 標記的現場、**《Hyper Chaotic》**、**《Ejaculation Generater》1996-06-25**、**《Inner Mind Mystique》1996-07**）、1997 兩筆、1998 三筆。**本張與池中已有的《Inner Mind Mystique》(1996-07) 只差約一個月，是同一年同一廠牌連著出的兩張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=85faf30e-fb8a-4b0f-8194-95e17a8b978e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Masonna〉：本名 山崎卓志、藝名 山崎マゾ、1966-11-16 生於京都府宮津；Masonna 1987 年在大阪開始，名字是 マゾ＋女 的組合、也是 Madonna 的諧音，並有兩種縮寫展開（Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé／Mystic Another Selection Of Nurses Naked Anthology）。他另以 **Space Machine** 之名使用老式類比合成器演出，也參與過迷幻搖滾團 Christine 23 Onna（後成為 Acid Eater）、noise 團 Bustmonster 與三人組 Flying Testicle；2018 年起改用 **Controlled Death** 之名發表。",
+    "src": "https://en.wikipedia.org/wiki/Masonna"
+   },
+   {
+    "f": "Apple Music 兩店查無本張。藝人目錄端點（artistId 121093320「Masonna」，jp 與 us 兩店，entity=album）各回 **8 筆**：130038206「Arschloch-Onna」1998（69 軌）、502715016「Spectrum Ripper」1997（25 軌）、1822959203「SHOCK ROCK (2025 Remaster)」2025（31 軌）、1650764871「Annihilationism」2022（13 軌）、**1720087899「血まみれのアンヌ」2023（31 軌，＝同批的《Mademoiselle Anne sanglante…》）**、1590606783「Frequency L.S.D.」1998（14 軌）、1871964807「Alchemy Masters Collection - The Best of MASONNA」2017、1556133579「Devil’s Sacrifice (feat. Masonna) - EP」2021。**《Ejaculation Generater》不在其中**；`apple-candidates.md` 掛在本張底下的候選 502715016 是《Spectrum Ripper》(1997, 25 軌)，**與本張的 32 軌不符，不採信**。",
+    "src": "https://itunes.apple.com/lookup?id=121093320&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三十二軌二十九分鐘，最短的一軌十三秒、最長的也才三分零五秒——三十二個標題全是空的",
+   "同一年在同一家廠牌，六月底一張、七月又一張"
+  ],
+  "sound": "MB 記兩筆 release、**都是 32 軌、同曲同序**（1996 年 Alchemy CD、2022 年 Total Black 數位）。**三十二軌在 MB 上全部題作「Untitled」**，總長約二十九分鐘、**平均每軌不到一分鐘**。逐軌長度極端不均：最短第 10 軌 **0:16** 與收尾第 32 軌 **0:13**，另有 0:18、0:19、0:21、0:23、0:25、0:27、0:28 一連串二三十秒的切片；**只有三軌超過兩分鐘**（第 21 軌 3:05、第 31 軌 2:02、第 24 軌 1:51）。整張碟因此是三十二段長短懸殊的片段接連而成，沒有可辨識的曲序邏輯。載體上，1996 年的原盤是 Alchemy Records 的 CD（ARCD-087），二十六年後由美國的 Total Black 發數位版。",
+  "keyTracks": [],
+  "status": "partial",
+  "yearVerified": "一致，1996。MB release-group first-release-date **1996-06-25**（給到日），其下 JP 首版（Alchemy Records ARCD-087）同為 1996-06-25。2022 年 Total Black 的數位版記 2022-02-14，不可混用。**英文維基的 Masonna 條目沒有逐張作品年份**，Apple 兩店查無本張，因此**年份只有 MB 一處來源、但 MB 給到日、且原盤 catno 明確**。同名先行單曲：無。⚠ **同年同廠另有《Hyper Chaotic》與池中已有的《Inner Mind Mystique》(1996-07)**，數序數或搜尋時容易混。",
+  "notes": "**這張的 `keyTracks` 是空的，而且是對的**：MB 兩筆 release 的 32 軌**全部題作「Untitled」**，沒有任何一軌有可引的曲名。**行文不要編曲名，也不要用軌號當曲名寫（例如「第 21 軌」可以，「〈Track 21〉」不行）。**\\n**Apple：兩店、兩個端點都查無本張。** 藝人 121093320 的目錄 8 筆已逐筆對照，**沒有 32 軌的條目**；`apple-candidates.md` 的候選 **502715016 是《Spectrum Ripper》(1997, 25 軌)——那是池中已有的另一張碟，不是本張**，不採信。\\n**「與池中的《Inner Mind Mystique》(1996-07) 只差一個月」查證屬實、可以寫**：MB 藝人頁上兩筆的日期是 1996-06-25 與 1996-07，同一年同一家廠牌。\\n**擋下策展層一處措辭**：`curatorWhy` 說本張是「他從 1988–89 那批自製卡帶轉為在廠牌發行後的一張」——**這句放在 1996 年這張上時序不對**（1993 年的《Mademoiselle Anne sanglante…》就已經出在 Alchemy 了，那句原是寫給 1993 那張的）。行文不要沿用。\\n**盤名帶性相關的挑釁字眼**：**只寫形態事實（32 軌全部無題、長度分布、廠牌編號），不解釋盤名、不轉述、不評價。**\\n**素材偏少**：MB 只有兩筆 release、曲名全空、英文維基沒有逐張資料、Apple 查無。可寫的集中在 32 軌的長度分布與同年兩張的關係。status 填 partial。"
+ },
+ {
+  "key": "desc2:C.C.C.C.|Cosmic Coincidence Control Center",
+  "artist": "C.C.C.C.",
+  "album": "Cosmic Coincidence Control Center",
+  "facts": [
+   {
+    "f": "release-group a62af6e7 的欄位：title「Cosmic Coincidence Control Center」、artist-credit「C.C.C.C.」（藝人實體 55394e92，Group／Japan、disambiguation「Japanese noise group」、life-span begin **1989**）、first-release-date **1992**（只到年）、primary-type Album、secondary-types 空。轄下 4 個 release，全部 Official：**JP 1992 的 CD（Endorphine Factory，catno EDP CD-01，3 軌）**、IT 2021-09-16 的 7 吋＋12 吋（Urashima，Uma152，2+2 軌）、XW 2021-09-16 的數位（Urashima，4 軌）、以及一筆無日期的 XW 數位（Urashima，3 軌，disambiguation「3 track digital rerelease」）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a62af6e7-897d-37ed-96ad-bfac682396cd?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 3 軌數位版（638c0931）的逐軌曲目與長度：1〈Morphogenesis〉6:04、2〈Reticular Formation〉4:60、3〈**Sonic Machine**〉**41:12**。**第三軌一首就佔掉四十一分鐘，是前兩軌加起來的近四倍；全碟總長約五十二分鐘。**（第 2 軌的長度在 MB 上寫成 4:60，是建檔時的進位瑕疵。）",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a62af6e7-897d-37ed-96ad-bfac682396cd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 C.C.C.C. 名下 **26 個 release-group、Album 22 筆**。1990 年代依 first-release-date 排序為《Reflexive Universe》1991（**Live**）、**《Cosmic Coincidence Control Center》1992**、《Phantasmagoria》1992（**Live**）、**《Amplified Crystal》1993**、《Loud Sounds Dopa / Live in U.S.A.》1993（Live）、《Amplified Crystal II》1993、《Community Center Cyber Crash / Live in Pittsburgh》1994（Live）、《Gnosis》1994、《Love & Noise》1996、《Flash》1996、《The Beauty of Pollution》1996、《[untitled]》1997、《Rocket Shrine》1997-10。**逐筆回查載體：1991 年的《Reflexive Universe》是 Vanilla Records 的卡帶（Vanilla-17）、1992 年的《Phantasmagoria》是 Endorphine Factory 的卡帶（EDP-002）——本張的 EDP CD-01 是這家自營廠牌的第一張 CD，也是名下第一筆非現場作品。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=55394e92-a45c-452e-9ed8-09ce2f68a1fe&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Astro (Japanese band)〉：Astro 是 **C.C.C.C. 的 長谷川洋（Hiroshi Hasegawa）** 於 1993 年開始的個人計畫。英文維基〈Incapacitants〉另記：**C.C.C.C. 的 Fumio Kosakai（小堺文雄）** 在 Incapacitants 遷到東京後加入成為二人組，之後也成為 Hijokaidan 的固定成員。**這兩條把 C.C.C.C. 同時接到本批 b 組的 ASTRO 與 Incapacitants 兩位藝人身上。**",
+    "src": "https://en.wikipedia.org/wiki/Astro%20(Japanese%20band)"
+   },
+   {
+    "f": "Apple Music 兩店查無本張。**這支團在 Apple 上的藝人條目掛在 artistId 274010683「C.C.C.C.」底下**（要用其他關鍵字才撈得到，直接查 `C.C.C.C.` 兩店都回 0 筆），其目錄 8 筆為：1725723264「Amplified Crystal」2024-02-20（2 軌）、509246731「Flash」2012-03-12（2 軌）、1519786354「Loud Sounds Dopa」1993（2 軌）、1725721242「Community Center Cyber Crash/Live In Pittsburgh」2024-01-30（1 軌）、506719117「Chaos Is The Cosmos」2007-11-26（1 軌）、1519784520「Phantasmagoria」1992（1 軌）、6793589022「New Dimension - Single」2026、以及一筆與本團無關的義大利單曲。**《Cosmic Coincidence Control Center》不在其中**；`apple-candidates.md` 掛在本張底下的兩個候選 1519786354（《Loud Sounds Dopa》1993）與 1519784520（《Phantasmagoria》1992）**都是別張碟，不採信**。",
+    "src": "https://itunes.apple.com/lookup?id=274010683&country=jp&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三軌五十二分鐘，第三軌〈Sonic Machine〉一首就佔掉四十一分十二秒",
+   "盤名就是團名的全稱，編號 EDP CD-01——自家廠牌的第一張 CD"
+  ],
+  "sound": "MB 記四筆 release，**分段依載體而異**：1992 年 Endorphine Factory 的 CD 與其中一筆數位是 **3 軌**，2021 年 Urashima 的 7 吋＋12 吋是 2+2 軌、同日數位 4 軌。3 軌版的長度：〈Morphogenesis〉6:04、〈Reticular Formation〉4:60（MB 建檔的進位瑕疵）、**〈Sonic Machine〉41:12**——**第三軌一首就佔掉四十一分鐘、接近前兩軌總和的四倍，全碟約五十二分鐘**。盤名《Cosmic Coincidence Control Center》就是團名 C.C.C.C. 四個字母的全稱。載體與廠牌上，這是樂團自營的 Endorphine Factory 的第一張 CD（EDP CD-01）；回查同期兩筆——1991 年《Reflexive Universe》是 Vanilla Records 的卡帶、1992 年《Phantasmagoria》是同廠的卡帶（EDP-002）——**且那兩筆在 MB 上都帶 Live 標記，本張是這位藝人名下第一筆非現場作品。**",
+  "keyTracks": [
+   "Morphogenesis",
+   "Reticular Formation",
+   "Sonic Machine"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1992，**但只有 MB 一個來源**。MB release-group first-release-date **1992**（只到年、無月日），其下 JP 首版（Endorphine Factory EDP CD-01）亦記 1992；2021 年 Urashima 的三筆是後世復刻。**這支團在英文維基只有一個消歧義頁（`en.wikipedia.org/wiki/C.C.C.C.` 導向「CCCC or C.C.C.C may refer to:」）、日文維基無條目、Apple 兩店查無本張**，因此**沒有第二來源**。⚠ **同年同藝人另有一筆《Phantasmagoria》(1992, EDP-002, 卡帶, Live)**，Apple 上那筆 1519784520 就是它，**別把兩張混為一談**。行文寫 1992、不要寫月份。同名先行單曲：無。",
+  "notes": "**擋下策展層一處**：`curatorWhy` 寫這支團「是三者（與 Incapacitants、Masonna 相比）中唯一自己開廠牌發自己碟的」——**「唯一」不成立**：Alchemy Records 就是 非常階段 的 JOJO広重 自己開的（日文維基），Aube 的 G.R.O.S.S.、MSBR 的 MSBR Records、K2 的 Kinky Musik Institute、Crow 的 Crow Records 也都是同一種形態。**行文不得寫「唯一」。**\\n**「第一張錄音室專輯」要改措辭**：MB 藝人頁上排在本張前面的《Reflexive Universe》(1991) 帶 **Live** 標記、同年的《Phantasmagoria》(1992) 也帶 Live 標記，所以本張是**名下第一筆非現場作品**——**這個說法有 MB 欄位可查，比「第一張錄音室專輯」精確**。\\n**Apple 覆核**：本團在 Apple 上的藝人條目**要繞路才撈得到**（直接查 `C.C.C.C.` 兩店回 0 筆，是從 `MSBR` 的同名清單裡撈到 artistId **274010683**）。其目錄 8 筆裡**沒有本張**；`apple-candidates.md` 的兩個候選（1519786354《Loud Sounds Dopa》、1519784520《Phantasmagoria》）**都是別張碟**，已逐筆比對、不採信。\\n**跨卡連結（都有來源）**：**長谷川洋** 是 C.C.C.C. 成員、1993 年另起個人計畫 **ASTRO**（英文維基）；**小堺文雄** 是 C.C.C.C. 成員、後加入 **Incapacitants** 與 非常階段（英文維基）。**本批 b 組同時收了 ASTRO、Incapacitants 三張與 非常階段 兩張**，這四位是同一群人。\\n**素材中等**：有三軌的精確長度、有廠牌編號序列、有可查的人脈，但**無專屬條目、無 Apple、無製作資料**，status 填 partial。"
  }
 ]
