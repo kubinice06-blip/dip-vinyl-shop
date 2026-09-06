@@ -189,5 +189,329 @@
   "queryAlias": "BIGBANG VOL. 1 SINCE 2007；Bigbang Vol.1；BIGBANG, Vol. 1；Since 2007；빅뱅 1집",
   "reissuedBy": "",
   "g": "a"
+ },
+ {
+  "artist": "BIGBANG",
+  "album": "ALWAYS",
+  "year": 2007,
+  "genres": [
+   "pop",
+   "hiphop"
+  ],
+  "label": "YG Entertainment（catno YDCD-795）",
+  "why": "BIGBANG 在 2006 年出道正規盤之後推出的迷你專輯，MB first-release-date 記 2007-08-16、primary-type EP、轄下兩筆 KR release 皆 Official（label-info YG Entertainment、catno YDCD-795）；Apple Music 美國店面題作「Always - EP」（collectionId 1330947214、6 軌）。英文維基〈Always (Big Bang EP)〉為這一張獨立立條。實掃 seed_cards.json 全 14,424 列，BIGBANG 池中 2 張（2008《REMEMBER》、2011 日版《BIGBANG2》），2006–2007 這兩年一張都沒有；本卡與同批的出道正規盤把該團最前面兩格一起補上。",
+  "risk": "《Always》是極常見的英文單字，Apple us 同字串會回到 ENHYPEN、NiziU 等多筆同名單曲，配對只能走 collectionId 1330947214。MB 名下同期另有四張迷你專輯（Hot Issue／For The World／WITH U／Stand Up），六軌上下、型別同為 EP，軌數不是識別鍵（裁定第 174 條），須逐軌比對。掛名寫法沿用池中既有的 BIGBANG，理由見 c105/rulings.md 第 1 條。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1330947214；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 6b2998cf-4c8b-360a-8ca8-6af57fab1f5f。回問確認：title「ALWAYS」、artist-credit「BIGBANG」、first-release-date 2007-08-16、primary-type EP、secondary-types 空、轄下 4 個 release（KR/Official 2、US/Official 1、??/Official 1；KR 筆 label-info YG Entertainment YDCD-795）。刻意不釘（同期同型迷你專輯與日版）：8ff53c71-c402-49fb-9273-0de6a02e1090《Hot Issue》（2007 EP）、3302a666-f8a0-3805-ab0d-dde39030b6df《For The World》（2008 EP）、f93a6623-76ae-4d82-85a4-6e4eaeda7380《Stand Up》（2008 EP）、2098162e-73b3-4d3b-a676-e09f1b2abf49《Tonight》（2011 EP）、56311e1d-0de0-4671-978e-b69849f17f55《BIGBANG》（2009 日版正規盤）。藝人 MBID ec2bcb77-b9a1-49e2-bfe7-419586bbef48。",
+  "releaseType": "EP",
+  "genreException": "asia-mini-album",
+  "releaseTypeException": "asia-mini-album",
+  "exceptionReason": "韓國的正規迷你專輯：MB 依曲數標成 EP，但在母國市場它是被當成一張作品發行、宣傳與評論的。這一張是 BIGBANG 從 2006 年編號單曲時期轉向自製曲路線的節點，收錄〈거짓말〉；英文維基為它獨立立條，MB 亦以獨立 release-group 建檔、轄下兩筆 KR Official 實體盤（YG Entertainment，catno YDCD-795），不是單曲附錄。",
+  "exceptionEvidenceUrls": [
+   "https://en.wikipedia.org/wiki/Always_(Big_Bang_EP)",
+   "https://musicbrainz.org/release-group/6b2998cf-4c8b-360a-8ca8-6af57fab1f5f"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Always - EP；빅뱅 미니앨범 1집；BIGBANG Always",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Girls' Generation",
+  "album": "Girls' Generation",
+  "year": 2007,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno SMCD161）",
+  "why": "소녀시대 的出道正規盤，自我同名。MB first-release-date 記 2007-11-01、轄下四筆 KR release 皆 Official（首筆 label-info SM Entertainment、catno SMCD161），其中 2008-03-13 兩筆封面標題作「Baby Baby」，是同一張碟的改版；Apple Music 美國店面該團目錄有對應條目 854885986（2007、11 軌）。實掃 seed_cards.json 全 14,424 列，Girls' Generation 池中僅 1 張《Oh!》(2010)；出道盤與 2013 年《I GOT A BOY》都不在，本卡補的是最前面那一格。",
+  "risk": "掛名兩種撇號：池中那張《Oh!》用直撇號 Girls' Generation，MB 藝人實體主名用彎撇號 Girls’ Generation。本卡沿用池中的直撇號寫法以免生出新的分裂鍵（2026-09-06 稽核型態二的同型問題），彎撇號版與諺文 소녀시대 都放進 queryAlias。盤名與掛名同形（自我同名卡），且同 release-group 內另有「Baby Baby」改版標題，字串比對兩邊都會落空。⚠ MB 名下另有 2011-06-01 的日版正規盤《GIRLS’ GENERATION》（4ae417a1），與本卡只差大小寫。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 854885986；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 896a95e6-56c0-47b6-b8b1-26570d1824bd。回問確認：title「Girls' Generation」、artist-credit「Girls’ Generation」、first-release-date 2007-11-01、primary-type Album、secondary-types 空、轄下 9 個 release（KR/Official 4、XW/Official 2、US/Official 1、??/Pseudo-Release 2；KR 首筆 label-info SM Entertainment SMCD161）。刻意不釘（日版正規盤與單曲）：4ae417a1-02d3-44ca-892f-a156db79a527《GIRLS’ GENERATION》（2011 日版正規盤，與本卡同名）、546918c2-3e2f-4bd1-a04f-8351c997fac8《GIRLS’ GENERATION II ～Girls & Peace～》（2012 日版）、a83a42d3-3cbc-4300-926c-a11641fd8726《LOVE&PEACE》（2013 日版）、03175d32-3b6a-4bce-b110-080b2844d6e2《소녀시대》（單曲）、a4cb44db-de07-4ac2-a4a8-69353c76970a《Into the New World: GIRLS’ GENERATION THE 1ST ASIA TOUR》（Live）。藝人 MBID b7442f18-d9be-4185-8b51-482510046156，名下 53 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Girls’ Generation；소녀시대；SNSD；Baby Baby；다시 만난 세계",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Girls' Generation",
+  "album": "Gee",
+  "year": 2009,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment",
+  "why": "소녀시대 出道盤之後的迷你專輯，MB first-release-date 記 2009-01-05、primary-type EP、轄下兩筆 KR release 皆 Official（label-info SM Entertainment、無 catno），另有 CN 與 XW 各一筆；Apple Music 美國店面題作「Gee - EP」（collectionId 854911623、5 軌）。英文維基〈Gee (EP)〉為這一張獨立立條。實掃 seed_cards.json 全 14,424 列，Girls' Generation 池中僅《Oh!》(2010) 一張——那是這張的次年之作，兩者是同一波；本卡把前面那一格補齊。",
+  "risk": "⚠ 同名雙胞胎三筆：MB 上除本 EP 外，另有 2010-10-20 的日版單曲《Gee》（548ca5eb）與 2009-01-05 同日的相關條目，盤名同字串。Apple us 以「Gee」搜尋會先回該團 2022 年《FOREVER 1》等別碟，配對走 collectionId 854911623。掛名撇號問題同出道盤那張（池中用直撇號、MB 用彎撇號）。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 9a8757c6-d6ef-30ef-9a2b-ff10a9624a83。回問確認：title「Gee」、artist-credit「Girls’ Generation」、first-release-date 2009-01-05、primary-type EP、secondary-types 空、轄下 5 個 release（KR/Official 2、XW/Official 1、CN/Official 1、??/Pseudo-Release 1；KR 筆 label-info SM Entertainment）。刻意不釘：548ca5eb-707a-405f-8db8-75068c95b420《Gee》（2010 日版單曲，同名，本張最像的假陽性）、99992d68-8481-4347-8902-2dbd0a5d2375《소원을 말해봐》（2009 EP）、a177915c-b158-43e7-94e5-5460b3fbcded《훗》（2010 EP）、a8fdc558-85bc-4005-8ea0-e6642f8e96af《Oh!》（2012 日版單曲，與池中 2010 韓版專輯《Oh!》易混）、4ae417a1-02d3-44ca-892f-a156db79a527《GIRLS’ GENERATION》（2011 日版正規盤）。藝人 MBID b7442f18-d9be-4185-8b51-482510046156。",
+  "releaseType": "EP",
+  "genreException": "asia-mini-album",
+  "releaseTypeException": "asia-mini-album",
+  "exceptionReason": "韓國的正規迷你專輯：MB 依五首曲數標成 EP，母國市場則以獨立作品發行與宣傳。這一張是 2009 年韓國女團市場的分水嶺之作，英文維基為它獨立立條並記錄其榜單與獎項紀錄；MB 亦以獨立 release-group 建檔，轄下兩筆 KR Official 實體盤加上 CN 一筆，流通規模與正規盤同級，不是單曲的附屬包裝。",
+  "exceptionEvidenceUrls": [
+   "https://en.wikipedia.org/wiki/Gee_(EP)",
+   "https://musicbrainz.org/release-group/9a8757c6-d6ef-30ef-9a2b-ff10a9624a83"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Gee - EP；소녀시대 Gee；Girls’ Generation Gee；SNSD Gee",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "2NE1",
+  "album": "2NE1 1st Mini Album",
+  "year": 2009,
+  "genres": [
+   "pop",
+   "hiphop"
+  ],
+  "label": "YG Entertainment（catno CMBC-9136）",
+  "why": "2NE1 的出道迷你專輯。MB first-release-date 記 2009-07-08、primary-type EP、轄下十筆 release 涵蓋 KR（3，皆 Official，首筆 label-info YG Entertainment、catno CMBC-9136）、JP（3）、TH（2）、PH（1）與 XW（1）；Apple Music 美國店面題名與 MB 完全相同「2NE1 1st Mini Album」（collectionId 1339060465、7 軌）。英文維基〈2NE1 (EP)〉為這一張獨立立條。實掃 seed_cards.json 全 14,424 列，2NE1 池中僅《To Anyone》(2010) 一張，出道那一格空著，本卡補上。",
+  "risk": "盤名兩說：MB 與 Apple 都用「2NE1 1st Mini Album」，但英文維基把碟名記作《2NE1》——與掛名同形。卡單採 MB 的長標題以免變成自我同名卡，兩種寫法都進 queryAlias。⚠ MB 名下另有 00427b16-771d-4213-8065-89d2d22fdf2a《2NE1 2nd Mini Album》（2011），盤名只差一個序數，是本張最像的假陽性；Apple us 以「2NE1 1st Mini Album」搜尋亦會同時回到 Red Velvet 的「The 1st Mini Album ‘Ice Cream Cake’」。配對走 collectionId 1339060465。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group de639ef7-9c47-46b3-8763-1da763ed3f98。回問確認：title「2NE1 1st Mini Album」、artist-credit「2NE1」、first-release-date 2009-07-08、primary-type EP、secondary-types 空、轄下 10 個 release（KR/Official 3、JP/Official 3、TH/Official 2、PH/Official 1、XW/Official 1；KR 首筆 label-info YG Entertainment CMBC-9136）。刻意不釘：00427b16-771d-4213-8065-89d2d22fdf2a《2NE1 2nd Mini Album》（2011 EP，序數之差）、aad244a5-3288-4596-b285-a9d76349b766《Lollipop》（2009 單曲，與 BIGBANG 合作、兩邊目錄都會出現）、111c4438-27ae-4a17-83c5-7932ab65e5af《Collections》與 21a5c6c5-16eb-4a24-9f94-5b8a72d6fdb0《COLLECTION》（日版精選）、6f136a07-c160-4383-a10f-44e83b79615c《2NE1 Best Collection》（精選）。藝人 MBID e119e5ff-0de0-421c-a630-0516c6acede8，名下 33 個 release-group（分頁全列）。",
+  "releaseType": "EP",
+  "genreException": "asia-mini-album",
+  "releaseTypeException": "asia-mini-album",
+  "exceptionReason": "韓國的正規迷你專輯：MB 依七首曲數標成 EP，但這是 2NE1 的出道作品、以獨立作品規格發行。判它是核心經典的依據在流通規模——同一 release-group 底下有 KR 三筆、JP 三筆、TH 兩筆、PH 一筆共十筆實體 release，是本批所有迷你專輯裡跨市場發行最廣的一張；英文維基亦為它獨立立條。",
+  "exceptionEvidenceUrls": [
+   "https://en.wikipedia.org/wiki/2NE1_(EP)",
+   "https://musicbrainz.org/release-group/de639ef7-9c47-46b3-8763-1da763ed3f98"
+  ],
+  "selfTitled": false,
+  "queryAlias": "2NE1；2NE1 EP；투애니원 1st Mini Album；Fire；I Don't Care",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "f(x)",
+  "album": "Pinocchio",
+  "year": 2011,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "SM Entertainment（catno SMCD-218）",
+  "why": "f(x) 在 2009–2010 兩張迷你專輯（《라차타》《NU ABO》）之後的第一張正規盤。MB first-release-date 記 2011-04-20、轄下四筆 KR release 皆 Official（首筆 label-info SM Entertainment、catno SMCD-218），其中 2011-06-14 兩筆封面標題作「Hot Summer」，是同一張碟的改版；Apple Music 美國店面題作「Pinocchio - The 1st Album」（collectionId 854892507、10 軌）。實掃 seed_cards.json 全 14,424 列，f(x) 池中 3 張——《Pink Tape》(2013)、《Red Light》(2014)、《4 Walls》(2015)，全部落在 2013 年之後；2011 年這一張是該團正規盤序列的第一格，補上之後 f(x) 在池中才是完整的四張正規盤。",
+  "risk": "同 release-group 內有兩種封面標題（Pinocchio／Hot Summer），改版盤名與 MB 名下 2012-09-12 的單曲《Hot Summer》（579e308a）同字串，是本張最像的假陽性。Apple us 另有 1017693587「SUMMER SPECIAL Pinocchio / Hot Summer - Single」（2015、2 軌）一筆日版單曲，不是本專輯。配對走 collectionId 854892507。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 3309f265-d370-4920-8a30-04026455611f。回問確認：title「Pinocchio」、artist-credit「f(x)」、first-release-date 2011-04-20、primary-type Album、secondary-types 空、轄下 10 個 release（KR/Official 4、XW/Official 4、??/Official 2；KR 首筆 label-info SM Entertainment SMCD-218，另有兩筆封面標題作 Hot Summer）。刻意不釘：579e308a-d46d-43fe-bcca-7d4653f5c951《Hot Summer》（2012 單曲，與本張改版盤名同字串）、a0a3c5a4-787b-4f1e-a09e-f6a86f5dec00《SUMMER SPECIAL Pinocchio / Hot Summer》（2015 日版單曲，盤名含 Pinocchio）、f8d98d87-9e28-431d-abfe-94656973f472《NU ABO》（2010 EP）、656f7fa2-019b-49f8-a338-2d06f8164a1a《Electric Shock》（2012 EP）、16b4f65c-0253-4b21-8034-2d20e7438cac《Dimension 4 - Docking Station in Japan》（日版 Live）。藝人 MBID 37fa0bfd-8bf7-422c-a97a-f8deda49b3a4，名下 20 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pinocchio - The 1st Album；Hot Summer；에프엑스 Pinocchio；Danger",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "SHINee",
+  "album": "누난 너무 예뻐 (Replay)",
+  "year": 2008,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno SMCD-169）",
+  "why": "SHINee 的出道迷你專輯，比同年 8 月的第一張正規盤《The SHINee World》早三個月。MB first-release-date 記 2008-05-22、primary-type EP、轄下兩筆 KR release 皆 Official（label-info SM Entertainment、catno SMCD-169）；Apple Music 美國店面題作「Replay The First Mini Album - EP」（collectionId 854925787、5 軌）。英文維基〈Replay (EP)〉為這一張獨立立條。實掃 seed_cards.json 全 14,424 列，SHINee 池中 3 張——《The SHINee World》(2008)、《Boys Meet U》(2013 日版正規盤)、《Odd》(2015)；出道迷你專輯不在，而池中那張《The SHINee World》正是它的下一步，兩張並排才看得出 2008 年那半年的順序。",
+  "risk": "盤名跨語言三種寫法：MB 用韓文加括號英文《누난 너무 예뻐 (Replay)》、Apple 用《Replay The First Mini Album》、英文維基條目名為《Replay》，跨文字系統的字串去重完全看不見（裁定第 49 條），三種都要進 queryAlias。⚠ MB 名下另有 2011-06-22 的日版單曲《Replay -君は僕のeverything-》（315f9309）與 2022 年的《SHINee's Memorial Box \"Replay\"》（55175460），盤名都含 Replay。配對走 collectionId 854925787。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 92692dca-d4b7-396d-b855-400d2b2805af。回問確認：title「누난 너무 예뻐 (Replay)」、artist-credit「SHINee」、first-release-date 2008-05-22、primary-type EP、secondary-types 空、轄下 4 個 release（KR/Official 2、XW/Official 1、??/Pseudo-Release 1；KR 筆 label-info SM Entertainment SMCD-169）。刻意不釘（皆日版或含同字串的別碟）：315f9309-b69c-4c48-83df-273e2d7a4422《Replay -君は僕のeverything-》（2011 日版單曲）、55175460-6164-4140-a9ad-450bd48fd2f1《SHINee's Memorial Box \"Replay\"》（2022 單曲＋合輯）、0c00792f-1022-4a23-8eb6-d1d94ca7564c《THE FIRST》（2011 日版正規盤）、33820a85-2f27-35d8-8a25-4ac464167f0d《The SHINee World》（2008 韓版正規盤，池中已有）。藝人 MBID 70e5098b-c4ae-4cd7-9799-3c1b9b57c753，名下 73 個 release-group（分頁全列）。",
+  "releaseType": "EP",
+  "genreException": "asia-mini-album",
+  "releaseTypeException": "asia-mini-album",
+  "exceptionReason": "韓國的正規迷你專輯：MB 依五首曲數標成 EP，母國則以出道作品的規格發行與宣傳。這一張是 SHINee 的出道作，時序上排在池中已有的《The SHINee World》之前，缺了它該團在池中的起點就從第二步開始；英文維基為它獨立立條，MB 亦以獨立 release-group 建檔、轄下兩筆 KR Official 實體盤（SM Entertainment，catno SMCD-169）。",
+  "exceptionEvidenceUrls": [
+   "https://en.wikipedia.org/wiki/Replay_(EP)",
+   "https://musicbrainz.org/release-group/92692dca-d4b7-396d-b855-400d2b2805af"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Replay；Replay The First Mini Album；SHINee Replay；샤이니 누난 너무 예뻐",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "SHINee",
+  "album": "LUCIFER",
+  "year": 2010,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "SM Entertainment（catno SMCD-203）",
+  "why": "SHINee 的第二張正規盤（Apple Music 美國店面題作「The 2nd Album 'Lucifer'」，collectionId 854891682、13 軌）。MB first-release-date 記 2010-07-19、轄下五筆 KR release 皆 Official（首筆 label-info SM Entertainment、catno SMCD-203），另有 HK／TW／JP 各數筆，其中 2010-09-30 的 KR 筆封面標題作「Hello」，是同一張碟的改版。實掃 seed_cards.json 全 14,424 列，SHINee 池中 3 張——2008 年《The SHINee World》、2013 年日版《Boys Meet U》、2015 年《Odd》；2010 這一張夾在第一張與第三張之間，補上之後該團的韓版正規盤序列才連得起來。",
+  "risk": "同 release-group 內有兩種封面標題（LUCIFER／Hello），改版盤名極短、字串比對誤中率高。⚠ MB 名下另有 2011-10-12 的日版單曲《LUCIFER》（eb214370），盤名同字串。池中《Boys Meet U》是日版正規盤，不得與本卡混為同一序列。配對走 collectionId 854891682。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group bab02758-fbc4-40dc-8a6e-3a56a3d94b06。回問確認：title「LUCIFER」、artist-credit「SHINee」、first-release-date 2010-07-19、primary-type Album、secondary-types 空、轄下 13 個 release（KR/Official 5、XW/Official 2、HK/Official 2、JP/Official 2、TW/Official 1、??/Pseudo-Release 1；KR 首筆 label-info SM Entertainment SMCD-203）。刻意不釘：eb214370-67ba-4bce-9d96-cae46e357362《LUCIFER》（2011 日版單曲，同名，本張最像的假陽性）、0c00792f-1022-4a23-8eb6-d1d94ca7564c《THE FIRST》（2011 日版正規盤）、52114b5b-bd81-4f20-ac82-e4b514fcaab0《Boys Meet U》（2013 日版正規盤，池中已有）、06cb9531-8315-4284-a81b-c9470a5e3147《SHINee World》（2012 Live）、99f864d3-6de8-4820-8220-d8cafcf1b79d《2009, Year of Us》（2009 EP）。藝人 MBID 70e5098b-c4ae-4cd7-9799-3c1b9b57c753。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lucifer；The 2nd Album 'Lucifer'；Hello；샤이니 2집",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "EXO",
+  "album": "XOXO",
+  "year": 2013,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno SMK-0242）",
+  "why": "EXO 在 2012 年迷你專輯《Mama》之後的第一張正規盤。MB first-release-date 記 2013-06-03、轄下七筆 KR release 皆 Official（首筆 label-info SM Entertainment、catno SMK-0242），其中 2013-08-05 那筆封面標題作「으르렁」，是同一張碟的改版；Apple Music 美國店面同時有原版 980274346（24 軌）與改版 854908236「The 1st Album 'XOXO' (Repackage)」（28 軌）兩筆。實掃 seed_cards.json 全 14,424 列，EXO 池中 3 張——《DON'T MESS UP MY TEMPO》(2018)、《OBSESSION》(2019)、《EXIST》(2023)，全部落在 2018 年之後；2013 這一張是該團正規盤序列的第一格。",
+  "risk": "⚠ 原版與改版曲數不同（Apple 24 軌對 28 軌）且同屬一個 release-group，固定試聽取首軌時兩者曲序不同，須以逐軌長度而非軌數辨版（裁定第 174／175 條）；卡單取原版 980274346。改版封面標題〈으르렁〉是韓文，字串比對看不見。掛名 EXO 在 MB 上有至少五個同名實體（含俄羅斯金屬團 f09fb474、Queens 的饒舌歌手 8bd38ee2），藝人實體須釘 b3785a55-2cf6-497d-b8e3-cfa21a36f997。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 054dbb3b-e753-43a7-8785-0df2c1aa3192。回問確認：title「XOXO」、artist-credit「EXO」、first-release-date 2013-06-03、primary-type Album、secondary-types 空、轄下 8 個 release（KR/Official 7、XW/Official 1；KR 首筆 label-info SM Entertainment SMK-0242，另有一筆封面標題作 으르렁）。刻意不釘：f57bd357-fabd-4594-960b-0c912ca10cb9《Mama》（2012 EP）、d4487911-faed-437b-a190-2cfd31e2fe4e《COUNTDOWN》（2018 日版正規盤）、3d0798db-97b4-4f5d-add6-d58fd007dde3《EXODUS》（2015 正規盤，非本卡）、951708a9-0162-4eb5-8f8e-479581e00e4b《LOVE SHOT – The 5th Album Repackage》（2018 改版）、1611d6c9-feda-4eff-aee0-52e40e786a04《EXOLOGY CHAPTER 1: THE LOST PLANET》（Live）。藝人 MBID b3785a55-2cf6-497d-b8e3-cfa21a36f997，名下 34 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "XOXO (Kiss&Hug)；The 1st Album 'XOXO'；으르렁；Growl；엑소 1집",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Red Velvet",
+  "album": "The Red",
+  "year": 2015,
+  "genres": [
+   "pop"
+  ],
+  "label": "SM Entertainment（catno SMK-0561）",
+  "why": "Red Velvet 在 2014–2015 兩張單曲與迷你專輯之後的第一張正規盤（Apple Music 美國店面題作「The Red - The 1st Album」，collectionId 1037732950、11 軌）。MB first-release-date 記 2015-09-09、轄下兩筆 KR release 皆 Official（label-info SM Entertainment、catno SMK-0561），另有 TW、JP、XW 各筆。實掃 seed_cards.json 全 14,424 列，Red Velvet 池中 3 張——《Perfect Velvet》(2017)、《Bloom》(2022 日版正規盤)、《Chill Kill》(2023)；2015 年這一張是該團韓版正規盤的第一格，也是池中那張 2017 年《Perfect Velvet》的前一步。",
+  "risk": "⚠ 盤名系列高度相似：MB 名下另有《The Velvet》（2016 EP，6b9116c4）、《The Red Summer》（2017 EP，75013bad）、《'The ReVe Festival' Finale》（2019，2b1d5578），四者盤名共用同一組詞，子字串比對會整組吃掉（裁定第 168 條的形狀）。池中《Bloom》是日版正規盤、與韓版序列無關。配對走 collectionId 1037732950。封面：CAA release-group 端點回 200（實測）。試聽：Apple us search 以「Red Velvet The Red」查詢時第一筆回到 2026 年的《Velvet Summer》，須以 collectionId 直查；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 50f9a5ca-588c-459a-8a11-f51f73beea60。回問確認：title「The Red」、artist-credit「Red Velvet」、first-release-date 2015-09-09、primary-type Album、secondary-types 空、轄下 7 個 release（KR/Official 2、XW/Official 2、TW/Official 1、JP/Official 1、??/Official 1；KR 筆 label-info SM Entertainment SMK-0561）。刻意不釘（盤名同系列或日版）：6b9116c4-078d-4e1b-a56f-2a63c21ad2b0《The Velvet》（2016 EP）、75013bad-b5b2-408c-ace9-da0aa550ee3f《The Red Summer》（2017 EP）、2b1d5578-60d7-4a6c-9cfb-fedf72924641《'The ReVe Festival' Finale》（2019 合輯）、93f17502-53e9-4e7b-abd7-17357c33cd78《Bloom》（2022 日版正規盤，池中已有）、afa4c5e5-7a30-4380-811e-4730d79c3f2e《Red Velvet 2nd Concert “REDMARE” in JAPAN》（日版 Live）。藝人 MBID 4f0cb3b7-6c06-4317-ae35-ddf3106a17ee，名下 56 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Red - The 1st Album；레드벨벳 The Red；Dumb Dumb",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "BTS",
+  "album": "DARK&WILD",
+  "year": 2014,
+  "genres": [
+   "hiphop",
+   "pop"
+  ],
+  "label": "BigHit Entertainment（catno L100001039）",
+  "why": "BTS 在 2013–2014 三張出道期作品之後的第一張韓版正規盤。MB first-release-date 記 2014-08-20、轄下兩筆 KR release 皆 Official（label-info BigHit Entertainment、catno L100001039）；Apple Music 美國店面對應條目 1597016856（14 軌）。實掃 seed_cards.json 全 14,424 列，BTS 池中 6 張——《WAKE UP》(2014)、《Wings》(2016)、《LOVE YOURSELF 轉 'Tear'》(2018)、《FACE YOURSELF》(2018)、《Map of the Soul: 7》(2020)、《ARIRANG》(2026)，其中《WAKE UP》與《FACE YOURSELF》是日版正規盤；韓版序列缺最前面的 2014 年這一張。",
+  "risk": "⚠ 池中已有的《WAKE UP》(2014) 與本卡同年、但那是日版正規盤，兩者不得互相取代；同理《FACE YOURSELF》(2018) 亦為日版。盤名《DARK&WILD》的 & 與 and 分裂、以及有無空格（Dark & Wild／DARK&WILD）會讓比對落空（裁定第 139 條），兩種都要進 queryAlias。Apple us 以「BTS Dark & Wild」搜尋第一筆即為 1597016856，但第三筆起會回到 Nickelback《Dark Horse》，須以 collectionId 直查。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group ea958ad6-4519-44f8-8c7c-18b3f16218f4。回問確認：title「DARK&WILD」、artist-credit「BTS」、first-release-date 2014-08-20、primary-type Album、secondary-types 空、轄下 3 個 release（KR/Official 2、XW/Official 1；KR 筆 label-info BigHit Entertainment L100001039）。刻意不釘（皆日版正規盤、日版合輯或改版）：75ec671d-bd15-4bfa-baeb-f6054d2202db《WAKE UP》（2014 日版正規盤，池中已有）、7b70f452-a540-4fc8-933e-3b1d6800e290《YOUTH》（2016 日版正規盤）、a3ed68fc-eb06-4c18-a61f-beb9f955337e《FACE YOURSELF》（2018 日版正規盤，池中已有）、ca01d0c3-440f-4784-85b9-5de9d2e2199b《2 COOL 4 SKOOL / O!RUL8,2?》（2014 日版二合一）、b5218775-bed4-4675-961b-4fdf54735489《THE BEST OF 防彈少年團》（2017 日版精選）。藝人 MBID 0d79fe8e-ba27-4859-bb8c-2f255f346853，名下 101 個 release-group（分頁全列；另有 12e3b138「Bangtan Sonyeondan」為別筆實體，不釘）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dark & Wild；Dark and Wild；방탄소년단 Dark&Wild；Danger",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "BTS",
+  "album": "BE",
+  "year": 2020,
+  "genres": [
+   "pop",
+   "hiphop"
+  ],
+  "label": "BigHit Entertainment",
+  "why": "BTS 在《MAP OF THE SOUL : 7》(2020-02) 同年稍晚推出的韓版正規盤。MB first-release-date 記 2020-11-20、轄下三筆 KR release 皆 Official（label-info BigHit Entertainment、未填 catno），另有 XW 一筆與 GB 一筆標為 Bootleg；Apple Music 美國店面對應條目 1596532185（8 軌）。實掃 seed_cards.json 全 14,424 列，BTS 池中 6 張，2020 年只有《Map of the Soul: 7》一張；這張補的是同年下半年那一格，也是《LOVE YOURSELF 轉 'Tear'》(池中已有) 之後韓版序列的下一步。",
+  "risk": "⚠ 同 release-group 內有一筆 GB/Bootleg release，依裁定第 43／78 條不得採為背書，封面與試聽都只能走 KR Official 那三筆。盤名《BE》只有兩個字母，任何字串比對都會大量誤中，配對一律走 collectionId 1596532185。Apple us 以「BTS BE」搜尋第二筆起就回到《MAP OF THE SOUL : PERSONA》《Love Yourself 轉 'Tear'》等別碟。池中已有的《Map of the Soul: 7》(2020) 與本卡同年，兩者盤名不同、不會撞卡，但敘述時要分清。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 7917fe48-906d-464f-9909-0e4d18d59192。回問確認：title「BE」、artist-credit「BTS」、first-release-date 2020-11-20、primary-type Album、secondary-types 空、轄下 6 個 release（KR/Official 3、XW/Official 1、GB/Bootleg 1、??/Official 1；KR 首筆 label-info BigHit Entertainment）。刻意不釘（日版正規盤、日版精選與合輯）：3a91498a-4e50-4a77-93e2-a7b599b9739e《MAP OF THE SOUL : 7 〜 THE JOURNEY 〜》（2020 日版正規盤，與池中韓版《Map of the Soul: 7》同名系列）、b60d3e59-647c-493f-a4fb-3530cee04a16《BTS, THE BEST》（2021 日版精選）、b07a485f-cde7-4160-8b69-72ff3bf277ce《Proof》（2022 合輯）、205347cd-aae4-4121-b6ba-b57474b3c580《LOVE YOURSELF 結 ‘Answer’》（2018 合輯）。藝人 MBID 0d79fe8e-ba27-4859-bb8c-2f255f346853。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "BE (Deluxe Edition)；방탄소년단 BE；BTS BE；Life Goes On",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "IU",
+  "album": "Last Fantasy",
+  "year": 2011,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "MB 的 KR release label-info 記 Kakao Entertainment（現行權利方；2011 年原發行體系為 LOEN）",
+  "why": "IU 的第二張正規盤。MB first-release-date 記 2011-11-29、轄下兩筆 KR release 皆 Official；Apple Music 美國店面對應條目 484346200（13 軌），是該歌手 Apple 目錄裡年代最早的一張正規盤條目。實掃 seed_cards.json 全 14,424 列，IU 池中 2 張——《Modern Times》(2013) 與《Palette》(2017)，都在 2013 年之後；2011 這一張排在《Modern Times》前面兩年，補上之後 IU 在池中才不是只有中後期。",
+  "risk": "廠牌兩說：MB 的 KR release label-info 填的是 Kakao Entertainment（該廠牌歷經 LOEN Entertainment 更名與併購），與 2011 年原盤封面上的發行方不一定相同，行文不得斷言單一發行方。⚠ 同期改版盤名易混：MB 名下有 1613e530《REAL》（2010 EP）與 c4facf88《REAL+》（2011 EP），加號之差；另有 2feb55d3《I □ U》（2011 日版 EP）。配對走 collectionId 484346200。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 98368c20-07b7-4c42-b4bc-5e5bcf90f431。回問確認：title「Last Fantasy」、artist-credit「IU」、first-release-date 2011-11-29、primary-type Album、secondary-types 空、轄下 4 個 release（KR/Official 2、XW/Official 1、??/Pseudo-Release 1；KR 首筆 label-info Kakao Entertainment）。刻意不釘：c4facf88-64c8-4feb-b16e-5d999a393c61《REAL+》（2011 EP，與 1613e530《REAL》只差一個加號）、2feb55d3-9e35-4e58-aa34-30943e1da8f8《I □ U》（2011 日版 EP）、b87d2994-bbd4-45d4-b9e9-dad09d321c7a《Smash Hits》（2016 日版精選）、6b63852f-0892-4bea-b603-597aaca629db《Smash Hits 2: The Stories Between U & I》（2018 日版精選）、a9e6419f-672e-4ff1-b3af-897600c44fe1《Growing Up》（2009，非本卡）。藝人 MBID b9545342-1e6d-4dae-84ac-013374ad8d7c，名下 57 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "아이유 Last Fantasy；IU 2집；너랑 나；Lee Ji-eun",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "IU",
+  "album": "CHAT-SHIRE",
+  "year": 2015,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "LOEN Tree（catno L100005113）",
+  "why": "IU 在《Modern Times》(2013，池中已有) 之後推出的迷你專輯。MB first-release-date 記 2015-10-23、primary-type EP、轄下一筆 KR release 為 Official（label-info LOEN Tree、catno L100005113）與三筆 XW；Apple Music 美國店面對應條目 1051977837（7 軌）。英文維基〈Chat-Shire〉為這一張獨立立條，並記載 IU 在本作參與全部詞曲的創作分工。實掃 seed_cards.json 全 14,424 列，IU 池中 2 張（2013、2017），2015 這一張正好落在兩者中間，是她從企劃歌手轉向創作主導那段的節點。",
+  "risk": "盤名的連字號位置有兩說（CHAT-SHIRE／Chat-Shire／챗셔），大小寫與韓文寫法都要進 queryAlias；連字號為 ASCII，不涉及裁定第 50 條的非 ASCII 連字號問題。同 release-group 的 KR Official 只有一筆，封面與試聽都得走那一筆。配對走 collectionId 1051977837。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group e79deb17-202f-425d-bc83-9e1082cfe56a。回問確認：title「CHAT-SHIRE」、artist-credit「IU」、first-release-date 2015-10-23、primary-type EP、secondary-types 空、轄下 4 個 release（XW/Official 3、KR/Official 1；KR 筆 label-info LOEN Tree L100005113、date 2015-10-27）。刻意不釘：9ad6d1a2-7495-4d0c-9aad-de058bfb1493《꽃갈피》（2014 翻唱 EP）、e8d78af8-47b7-425b-958a-03c7f912ae32《꽃갈피 둘》（2017 翻唱 EP）、2c9d0799-ee08-4988-a096-689955210d22《Love poem》（2019 EP）與同日的 9dbe8c54《Love poem》（單曲，同名雙胞胎）、b87d2994-bbd4-45d4-b9e9-dad09d321c7a《Smash Hits》（2016 日版精選）。藝人 MBID b9545342-1e6d-4dae-84ac-013374ad8d7c。",
+  "releaseType": "EP",
+  "genreException": "asia-mini-album",
+  "releaseTypeException": "asia-mini-album",
+  "exceptionReason": "韓國的正規迷你專輯：MB 依七首曲數標成 EP，母國市場則以獨立作品發行。收它的理由與本批其他迷你專輯不同——這一張的分量在創作歸屬：英文維基的專條記載 IU 在本作包辦全部曲目的作詞並參與作曲，是她的目錄從企劃導向轉為自製導向的分界；池中已有的《Modern Times》(2013) 與《Palette》(2017) 分別在它前後兩年，缺這一張中間那一步就看不出來。",
+  "exceptionEvidenceUrls": [
+   "https://en.wikipedia.org/wiki/Chat-Shire",
+   "https://musicbrainz.org/release-group/e79deb17-202f-425d-bc83-9e1082cfe56a"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Chat-Shire；챗셔；아이유 CHAT-SHIRE；스물셋",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "TWICE",
+  "album": "twicetagram",
+  "year": 2017,
+  "genres": [
+   "pop"
+  ],
+  "label": "JYP Entertainment",
+  "why": "TWICE 在四張迷你專輯之後的第一張韓版正規盤。MB first-release-date 記 2017-10-30、轄下十筆 KR release 皆 Official（label-info JYP Entertainment、未填 catno），另有 JP 四筆與 US 一筆；Apple Music 美國店面題作「Twicetagram」（collectionId 1555405141、13 軌）。實掃 seed_cards.json 全 14,424 列，TWICE 池中 4 張——《&TWICE》(2019)、《Eyes wide open》(2020)、《Perfect World》(2021)、《ENEMY》(2025)，其中《&TWICE》與《Perfect World》是日版正規盤；韓版正規盤序列只有 2020 年那一張，本卡補的是它前面的第一格。",
+  "risk": "⚠ 改版盤名不同碟名：MB 名下 eed97a60《Merry & Happy》（2017-12-22，型別 Other）是本張的改版包裝，兩者曲目高度重疊、盤名完全不同，字串比對抓不到（裁定第 140 條的形狀），必須明列為對照組。盤名大小寫兩說（MB 全小寫 twicetagram、Apple 首字大寫 Twicetagram）。池中《&TWICE》《Perfect World》為日版，與韓版序列無關。配對走 collectionId 1555405141。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group 23f9bb2e-c6a9-40ec-9202-922220e5015e。回問確認：title「twicetagram」、artist-credit「TWICE」、first-release-date 2017-10-30、primary-type Album、secondary-types 空、轄下 20 個 release（KR/Official 10、JP/Official 4、??/Official 4、TH/Official 1、US/Official 1；KR 首筆 label-info JYP Entertainment）。刻意不釘：eed97a60-8efe-4e16-8f39-5acbd19dd647《Merry & Happy》（2017 本張的改版包裝，型別 Other）、9517f797-9f15-4e55-b26a-7e9eb549713c《#TWICE》（2017 日版合輯）、349be2ad-047e-4462-8f4d-6f4c01121775《BDZ》（2018 日版正規盤）、4ce5807d-498d-45d6-8fe6-8ac9fa0541d0《&TWICE》（2019 日版正規盤，池中已有）、e05788f5-3528-4c20-a5bd-9fd19597d4f0《Perfect World》（2021 日版正規盤，池中已有）。藝人 MBID 8da127cc-c432-418f-b356-ef36210d82ac，名下 118 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Twicetagram；TWICEtagram；트와이스 twicetagram；LIKEY",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "NewJeans",
+  "album": "New Jeans",
+  "year": 2022,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "ADOR（catno ADR0174）",
+  "why": "NewJeans 的出道迷你專輯。MB first-release-date 記 2022-08-01、primary-type EP、轄下十筆 KR release 皆 Official（label-info ADOR、catno ADR0174），另有 JP 兩筆與 XW 一筆；Apple Music 美國店面題作「NewJeans 1st EP 'New Jeans'」（collectionId 1635469682、4 軌）。英文維基〈New Jeans (EP)〉為這一張獨立立條。實掃 seed_cards.json 全 14,424 列，NewJeans 池中僅 1 張《Get Up》(2023)——那是這張的下一步（Apple 同店題作 NewJeans 2nd EP），兩張並排才看得出出道那一年的順序。",
+  "risk": "⚠ 掛名與盤名只差一個空格（NewJeans／New Jeans），依裁定第 139 條這種空格擺法會造出「查無此碟」，也會讓自我同名判定搖擺；卡單依 MB 的 release-group 標題取有空格的《New Jeans》、掛名取無空格的 NewJeans，兩種寫法互相進 queryAlias。⚠ MB 名下另有 cd544c25-e9c4-4e52-a146-0761ef6e006f《New Jeans》（2023-07-07，型別 Other），盤名完全相同、是本張最像的假陽性。配對走 collectionId 1635469682。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group cad0949d-e2cc-4794-b4f0-1439907c1cbe。回問確認：title「New Jeans」、artist-credit「NewJeans」、first-release-date 2022-08-01、primary-type EP、secondary-types 空、轄下 14 個 release（KR/Official 10、JP/Official 2、XW/Official 1、??/Official 1；KR 首筆 label-info ADOR ADR0174、date 2022-08-08）。刻意不釘：cd544c25-e9c4-4e52-a146-0761ef6e006f《New Jeans》（2023 型別 Other，同名）、d2b0e110-fe62-4c91-9504-5dbfbedf1374《Get Up》（2023 EP，池中已有）、639c7400-678e-4751-889f-01c168468b32《NJWMX》（2023 remix 專輯）、3dbba4ac-5dac-4e69-ac56-8e876a3802ae《Attention》與 18d880c3-c56a-4cd8-bb4d-f5fae2ba3f59《Hype boy》（2022 型別 Other 的單曲，皆取自本 EP 曲目）。藝人 MBID 49204a7a-ed85-407a-828f-6fd46f1d8126，名下 26 個 release-group（分頁全列）。",
+  "releaseType": "EP",
+  "genreException": "asia-mini-album",
+  "releaseTypeException": "asia-mini-album",
+  "exceptionReason": "韓國的正規迷你專輯，也是 ALBUM_ONBOARDING §5.5 白名單條文自己舉的例子之一（NewJeans《Get Up》）的前一張。MB 依四首曲數標成 EP，母國市場以出道作品規格發行：同一 release-group 底下有 KR 十筆 Official 實體 release（ADOR，catno ADR0174）加 JP 兩筆，發行規模與正規盤同級；英文維基為它獨立立條。池中已有的《Get Up》若沒有這一張墊在前面，該團在池中就從第二張開始。",
+  "exceptionEvidenceUrls": [
+   "https://en.wikipedia.org/wiki/New_Jeans_(EP)",
+   "https://musicbrainz.org/release-group/cad0949d-e2cc-4794-b4f0-1439907c1cbe"
+  ],
+  "selfTitled": false,
+  "queryAlias": "NewJeans 1st EP 'New Jeans'；NewJeans；뉴진스 New Jeans；Attention；Hype Boy",
+  "reissuedBy": "",
+  "g": "a"
  }
 ]
