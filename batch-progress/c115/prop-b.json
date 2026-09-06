@@ -1,0 +1,47 @@
+[
+ {
+  "artist": "阿弟仔",
+  "album": "平衡",
+  "year": 2003,
+  "genres": [
+   "rock",
+   "hiphop"
+  ],
+  "label": "驚奇多媒體",
+  "why": "店主 2026-09-06 指名要收的一張。阿弟仔本名張健偉，1976 年生於基隆，1999 年以台語歌〈我沒讀書〉出道，歌詞爭議讓他一開始被當成噱頭；《平衡》是他的第三張全創作專輯，整片壓在搖滾、Rap-Metal 與 Hardcore 上，卻把國樂器與京劇唱腔織進編曲——〈嗆〉是最清楚的示範，〈虎頭蜂〉是全片商業性最強的 Rap-Metal，〈地圖〉的饒舌詼諧帶刺，末曲〈敦倫〉用鋼琴配國樂器襯自寫的情色詩。同名曲〈平衡〉找來 Rapper 張睿銓對唱，中西兩種語彙互相頂住，PlayMusic 的樂評（游祥威，90 分）把整張的主題讀成「文化上的平衡」。中華音樂人交流協會把它選進年度十大專輯與年度十大單曲，2009 年的〈台灣流行音樂 200 最佳專輯〉（1993–2005 百張那半）把它排在**第 76 名**——那是台灣樂評界最常被引用的正典名單。他後來成為李玟、蔡依林、蕭亞軒、羅志祥、張惠妹的詞曲與製作核心（2008 年〈特務J〉、2010 年《阿密特》兩座金曲獎），但那些是替別人做的；《平衡》是他自己唱、自己寫、自己製作的那一張。池中實掃 seed_cards.json 全 14,424 列，阿弟仔／A-Di／平衡／張健偉四種寫法全數零命中。",
+  "risk": "撞卡：實掃全 14,424 列零命中，盤名「平衡」在池中亦無同名卡。⚠ **年份兩派**：中文維基的作品列與〈台灣流行音樂 200 最佳專輯〉表格都記 2002，但兩個帶明確日期的來源都指向 2003 年 1 月——Hit FM 專輯資料庫的「發行月份：2003-Jan」與 PlayMusic 樂評頁的「發行日期 2003-01-10」。依第 127 條「直記優先於推定」取 **2003**，維基的 2002 記在這裡（見 rulings 第 2 條）。中華音樂人交流協會把它列進**年度十大專輯的 2003 年度**，與 2003-01 發行相容。⚠ **Discogs 上完全沒有這張**：阿弟仔的 Discogs 藝人頁（3373388）46 筆裡，2002 年那張是《我是人》（Zruden Music ZD-A01002，勇士唱片），沒有《平衡》；廠牌 Zruden Music 的四個 label 頁逐一掃過也沒有。因此本卡是**全批唯一不以 Discogs 當來源**的一張（rulings 第 1 條）。封面與試聽：Apple tw 只有 2007 年的《Adia》（collectionId 264946479）與幾首單曲，**沒有《平衡》**，封面走 manual-scan——Hit FM 專輯資料庫的封面圖在 https://www.hitoradio.com/media/album_cover/normal/48.jpg，曲序十二軌（序／嗆／平衡／地圖／曖昧／鳥籠／塔／虎頭蜂／認錯／門／敦倫／跋）同頁可核。**試聽預估缺。** ⚠ 掛名「阿弟仔」與 Discogs 的英文別名 Aadia、Apple 的 Adia 並存，三種都進 queryAlias；MB 上另有 1957 年生的台語歌手「阿吉仔」（d9a637b1，score 42），不是同一人。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=阿弟仔&limit=8 → score 100 命中「阿弟仔」f0438b9e-af7a-4340-955a-43e79b6be77a（Taiwan／Person／1976-07）；依第 179 條回問 area 與 type 確認不是 score 42 的「阿吉仔」（d9a637b1，Taiwan／Person／1957）或 score 40 的「仔仔」（3a3042fc）",
+    "release-group?artist=f0438b9e-af7a-4340-955a-43e79b6be77a&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "依第 187 條改查羅馬字與本名三種寫法：artist?query=A-Di → score 100 是「Ëver A. Di'」（a25e3fa2），與本人無關；artist?query=Adia → score 100 是美國 R&B 歌手 Adia Bushrah（3af71441）；artist?query=張健偉 → score 100 是「张健」（25f8338b）。**MB 上沒有第二個阿弟仔實體**",
+    "release-group?query=releasegroup:\"平衡\" AND artist:\"阿弟仔\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"平衡\"&limit=10 → count=4，全是別人：大象體操《平衡》2013 EP、和平饭店《平衡》2022 EP、理想混蛋《平衡木》2019 Single、Tia Ray《在与生俱来的不平衡里》2023，沒有一筆的 artist-credit 沾到阿弟仔"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "阿弟仔的藝人實體在 MB 上存在（f0438b9e，Taiwan／Person／1976-07），但 browse 分頁回 0 個 release-group——他名下什麼都沒建，不只是缺這一張；羅馬字 A-Di、藝名 Adia 與本名張健偉三種寫法反查都回不相干的實體，排除第 187 條的實體分裂。盤名加掛名反查 count=0，單以盤名反查的 4 筆全是別的藝人。查詢全部回 HTTP 200，走的是 limit=100 的 browse 端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.hitoradio.com/newweb/48album",
+   "https://www.playmusic.tw/music_critics_detail.php?id=193",
+   "https://zh.wikipedia.org/zh-tw/台灣流行音樂200最佳專輯"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」，卷宗見 batch-progress/c115/OWNER-REQUEST-adizai.md；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。Discogs 無條目，改以 Hit FM 專輯資料庫（發行公司、發行月份、完整曲序）與 PlayMusic 樂評頁（發行日期）兩個獨立來源立卡，第三個來源是〈台灣流行音樂 200 最佳專輯〉名單第 76 名，見 c-115 rulings 第 1 條。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Aadia / Adia / 張健偉",
+  "reissuedBy": ""
+ }
+]
