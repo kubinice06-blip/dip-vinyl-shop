@@ -256,5 +256,533 @@
   "status": "full",
   "yearVerified": "**2003 ✓，逐日相符。** 釘定條目 first-release-date 2003-06-21、其下兩筆 release（XW 數位版與 JP／Official CD）同為 2003-06-21；線上店面 collectionId 264649237 的 releaseDate 也是 **2003-06-21**——**三處把日期對到同一天**，是本批年份最硬的一張。℗ 只寫 Bad News Records、沒有年份。卡片年份 2003 正確。要分開的年份：1997 成軍、2007 年有一張與本張第 1 軌同名的專輯。",
   "notes": "**探測層判定覆核通過**：卡單只記了封面走 CAA——實測**試聽也有**：collectionId **264649237**，tw 與 us 兩店攤得出 12 軌、12 軌全有試聽，releaseDate 與釘定條目逐日相符。封面 CAA 亦有（release-group/0b8df1c2 回 200）。\\n**⚠ 軌數兩說（裁定 175）**：釘定條目底下 12 軌（數位）與 14 軌（日版 CD）並存，線上店面是 **12 軌版**。依裁定以攤得開的曲目列為準，**寫 12 軌**。\\n**⚠ 盤名少一個驚嘆號**：釘定條目寫《Turn On the Distortion!》、線上店面寫《Turn On the Distortion》。**行文一律用釘定條目的寫法（帶驚嘆號）**，與卡片一致。\\n**⚠ 同名撞卡**：樂隊 2007 年有一張專輯就叫《Coming Down to Beijing》，與本張第 1 軌同名，子字串比對會互相喫掉。\\n**拉丁掛名維持不變**（本批規則第 6 條）：這支樂隊的中文團名是「腦濁」，但釘定條目與線上店面都用拉丁寫法 Brain Failure，卡片沿用拉丁掛名**正確**；行文若要提中文團名，寫繁體「腦濁」。\\n**擋下策展層零處**。**可寫的硬事實**：1997 年成軍、立足北京且在歐美巡演、受 The Clash 與 Rancid 一路影響（兩處百科都提到 The Clash）。\\n**「首張正規專輯」要小心**：釘定目錄裡 2001 年有兩筆更早的條目（一筆 Compilation、一筆 Live）、2002 年有一張 EP，**本張是最早的 primary-type Album 且 secondary-types 為空的一筆**——要寫序數就必須帶這個限定，否則不要寫。\\n**可補的 Apple collectionId：`264649237`／建議店面 tw（us 亦可）／12 軌、12 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:木馬|Yellow Star",
+  "artist": "木馬",
+  "album": "Yellow Star",
+  "facts": [
+   {
+    "f": "釘定的 release-group abb3cc35 欄位：title《Yellow Star》（拉丁盤名）、artist-credit《木马》（藝人實體 860fa646，country CN、type Group、成軍 1998）、first-release-date **2003**、primary-type Album、secondary-types **空**、轄下 1 個 release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/abb3cc35-c489-339d-baaf-14183ed530f6?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release：CN／Official／2003，CD 單片 **6 軌**，條碼 9787880881790，廠牌欄記摩登天空、編號 **M-017**。逐軌長度：1〈我失去了她〉4:11、2〈爱得像蜜糖〉4:47、3〈Yellow Star〉3:23、4〈美丽的南方〉7:07、5〈Feifei Run〉3:59、6〈伟大的演奏家〉3:57。**六軌合計約 27 分半——本批軌數最少的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=abb3cc35-c489-339d-baaf-14183ed530f6&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**線上店面是 7 軌，比釘定條目多一軌，而且多出來的那首與第 4 軌重複。** collectionId **1841555007**《Yellow Star》，**tw 與 hk 兩店攤得出 7 軌、7 軌全部有試聽**（cn 與 us 只回專輯層），trackCount 欄 7、releaseDate 2003-01-01、℗ 2003 Beijing Modern Sky Culture Development Co.,Ltd.。逐軌：1〈我失去了她〉4:11、2〈愛得像蜜糖〉4:47、3〈Yellow Star〉3:23、4〈**方南的麗美**〉7:07、5〈Feifei Run〉3:59、6〈偉大的演奏家〉3:57、7〈**美麗的南方**〉7:14。**第 4 軌的曲名是「美麗的南方」四字倒排的訛寫、長度與第 7 軌幾乎相同**——同一首曲子在這份上架資料裡出現了兩次。",
+    "src": "https://itunes.apple.com/lookup?id=1841555007&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈木马乐队〉：「木馬樂隊是中華人民共和國的一支搖滾樂隊，1998年7月成立於北京，**2006年解散，2020年重組**。」條目沒有作品年表；三位成員的小傳都寫《98年在长沙组建木马乐队》，與條目開頭的北京說法不一致。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E9%A9%AC%E4%B9%90%E9%98%9F"
+   },
+   {
+    "f": "藝人 MBID 860fa646 分頁全列，名下只有 **3 個 release-group**：1999《木马》（同批 a 組另收一張）、2003 本張、2004《果冻帝国》。線上店面該藝人條目 1149741344（顯示名為繁體「木馬」）名下 10 筆，包含 2007《丝绒公路》、2011《进化》、2020 的綜藝現場 EP 與 2024 年之後的單曲，**1999 年那張同名首作四店都沒有，本張是他們在店面上最早的一筆。**",
+    "src": "https://itunes.apple.com/lookup?id=1149741344&country=tw&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六軌二十七分半，本批軌數最少的一張——其中〈美丽的南方〉一首就佔了七分鐘",
+   "上架資料把〈美麗的南方〉的四個字倒過來排，於是同一首歌在曲目單上出現了兩次"
+  ],
+  "sound": "六軌、合計約 27 分半，**是本批軌數最少、總長也最短的幾張之一**。結構很簡單：五首四分鐘上下的曲子，加上一首 7:07 的〈美丽的南方〉撐在第四軌。開場〈我失去了她〉4:11 與〈爱得像蜜糖〉4:47 是全碟最接近流行結構的兩首，同名曲〈Yellow Star〉3:23 最短，收尾的〈伟大的演奏家〉3:57 與〈Feifei Run〉3:59 幾乎等長。曲名中英夾雜，兩首用拉丁字母、四首用中文。廠牌編號 M-017，與同批 a 組《新褲子》(M-004) 出自同一組序列。",
+  "keyTracks": [
+   "Yellow Star",
+   "美丽的南方",
+   "我失去了她",
+   "Feifei Run"
+  ],
+  "status": "full",
+  "yearVerified": "**2003 ✓，兩處相符。** 釘定條目 first-release-date 2003、其下唯一 release（CN／Official／摩登天空 M-017／條碼 9787880881790）同為 2003；線上店面 collectionId 1841555007 的 releaseDate 2003-01-01（月初佔位）、℗ 2003 摩登天空。**中文百科沒有作品年表，第三處旁證缺席。** 卡片年份 2003 正確。要分開的年份：1998 成軍、1999 同名首作（同批 a 組另收）、2004《果冻帝国》、2006 解散。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為未回撈——實測**四店都有**：collectionId **1841555007**，**tw 與 hk 兩店攤得出 7 軌、7 軌全有試聽**（cn 與 us 的 entity=song 攤出 0 軌），曲名繁體。封面 CAA 亦有（release-group/abb3cc35 回 200）。\\n**⚠ 軌數兩說，而且線上那一筆有訛寫（裁定 175）**：釘定條目 6 軌、線上店面 7 軌，多出來的第 7 軌〈美麗的南方〉7:14 與第 4 軌〈方南的麗美〉7:07 是**同一首**——第 4 軌的曲名是四個字倒排的錯字。**寫作層寫 6 軌，曲名寫〈美丽的南方〉**，不要照抄店面第 4 軌那個倒排的寫法。\\n**同批兩張同藝人**：a 組《木馬》(1999) 與本張同屬 860fa646；**線上店面只有本張**，不要互相串。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**成立地點兩說**（北京／長沙）、**成員小傳與條目開頭矛盾**，寫作層不要寫成立地。\\n**盤名是拉丁字母，不涉簡繁**；掛名 MB 建檔用簡體《木马》，卡片依 09-06 裁定用繁體《木馬》，線上店面顯示的藝人名本來就是繁體「木馬」。\\n**可補的 Apple collectionId：`1841555007`／建議店面 tw（hk 亦可；cn 與 us 攤不出曲目）／7 軌（實為 6 軌＋1 軌重複）、7 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:P.K.14|誰誰誰和誰誰誰",
+  "artist": "P.K.14",
+  "album": "誰誰誰和誰誰誰",
+  "facts": [
+   {
+    "f": "釘定的 release-group 19bd011d 欄位：title《谁谁谁和谁谁谁》（簡體建檔）、artist-credit《P.K.14》（藝人實體 05653c73，country CN、type Group、成軍 1997-11）、first-release-date **2004**、primary-type Album、secondary-types **空**、轄下 2 個 release。條目掛的風格標籤是 indie rock、noise pop、noise rock、post-punk、rock。",
+    "src": "https://musicbrainz.org/ws/2/release-group/19bd011d-3a9c-3ca6-af0e-c1a28334d17d?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 都是 **10 軌、同曲同序**，差別只在語言：CN／Official 的 CD（Badhead，編號 **B-023**）用中文曲名——1〈她丢失了信仰〉5:01、2〈第二十八个影子〉3:55、3〈她是一首歌〉3:30、4〈说话的伤口〉2:17、5〈快〉4:55、6〈甜蜜的雨滴〉8:22、7〈拒绝参加游戏的人〉1:37、8〈燥眠夜〉3:28、9〈声音〉3:29、10〈这辆红色的列车〉5:59；另一筆數位版整張標《Whoever and Whoever》、十軌逐位置英譯（She Lost Faith／28th Shadow／She's a Song／Talking Wound／Hurry／Sweet Raindrop／Man Who Refused to Join the Game／Sleepless & Impatient Night／Sound／This Red Train）。**十軌合計約 43 分。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=19bd011d-3a9c-3ca6-af0e-c1a28334d17d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1822759363**，**tw 與 hk 兩店攤得出 10 軌、10 軌全部有試聽**（cn 與 us 只回專輯層），trackCount 欄 10、releaseDate **2004-10-13**、℗ 2004 Beijing Modern Sky Culture Development Co.,Ltd.。tw／hk 的曲名全部繁體，逐軌長度比釘定條目長 0–3 秒。**同一位藝人名下另有兩筆英文題名的同一張碟——1439255151《Who Who Who and Who Who Who》（標 2005-06-14、℗ 2004 Modern Sky）與 1444280866（標 2004-01-01、℗ 2004 Modern Sky），兩筆都只存在於 cn 店面、攤不出曲目**，是重複上架，不要用。",
+    "src": "https://itunes.apple.com/lookup?id=1822759363&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈PK14〉：「P.K.14，**全稱爲the Public Kingdom for Teens（青春公共王國）**。音樂風格受新浪潮／後朋克的影響……**1997年11月，P.K.14成立於南京。**」條目在 2004 年項明寫：「**2004年10月，發表專輯《谁谁谁和谁谁谁》（廠牌：Badhead 中國）。專輯完成後，鼓手雷壇壇加入樂隊**」——與線上店面的 2004-10-13 相符。",
+    "src": "https://zh.wikipedia.org/wiki/PK14"
+   },
+   {
+    "f": "英文百科〈P.K. 14〉：「Formed in 1997 in Nanjing, **they moved to Beijing in 2001**……The band, which **sings exclusively in Mandarin Chinese**, has been praised for its 'sharp, post-punk' sound」；同條目記主唱楊海崧同時是製作人，替兵馬司（Maybe Mars）、摩登天空與 Genjing 等廠牌製作過 **Carsick Cars** 等樂隊的作品——**Carsick Cars 本批 b 組另收一張。**",
+    "src": "https://en.wikipedia.org/wiki/P.K._14"
+   },
+   {
+    "f": "藝人 MBID 05653c73 分頁全列，名下共 **8 個 release-group**，全是 primary-type Album、secondary-types 空：2001-03-15《烂掉吧》、2001-10-01《上楼就往左拐》、2004 本張、2005-09《白皮书》（同批 b 組另收一張）、2008-07-26《城市天气的航行》、2013-08-31《1984》、2018-10-16《What We Talk About When We Talk About His Name》、2025-12-19《我们的样子》。**本張排第三。** 別名欄只登錄三種寫法變體（P.K. 14／PK 14／PK14），沒有中文別名。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=05653c73-f8e9-44cf-8185-e569bc3274d4&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "團名是 the Public Kingdom for Teens 的縮寫——青春公共王國",
+   "第六軌〈甜蜜的雨滴〉8 分 22 秒，前一軌與後一軌都不到三分半"
+  ],
+  "sound": "十軌、合計約 43 分。結構是短曲密集、中間突然開一個大洞：第 4 軌〈说话的伤口〉2:17 與第 7 軌〈拒绝参加游戏的人〉1:37 是兩首不到兩分半的急曲，夾在中間的第 6 軌〈甜蜜的雨滴〉卻跑了 8:22——全碟最長，比第二長的〈这辆红色的列车〉5:59 多出兩分半。其餘六軌落在 3:28 到 5:01。條目掛的標籤把 post-punk 與 noise rock、noise pop 並列，人聲全部用普通話。曲名一半是第三人稱的敘事（〈她丢失了信仰〉〈她是一首歌〉〈拒绝参加游戏的人〉），一半是單字或短詞（〈快〉〈声音〉）。同一批錄音另有一份整張英譯的版本。",
+  "keyTracks": [
+   "甜蜜的雨滴",
+   "她丢失了信仰",
+   "这辆红色的列车",
+   "拒绝参加游戏的人"
+  ],
+  "status": "full",
+  "yearVerified": "**2004 ✓，三處相符，日期精確到月。** 釘定條目 first-release-date 2004、其下 CN 首版（Badhead B-023）同為 2004；中文百科〈PK14〉明寫《2004年10月，发表专辑\u00001\u0000》；線上店面 collectionId 1822759363 的 releaseDate **2004-10-13**、℗ 2004 摩登天空——**百科的「2004 年 10 月」與店面的 10 月 13 日互相印證**。卡片年份 2004 正確。**注意 cn 店面另有一筆同碟英文題名條目標 2005-06-14**，那是重複上架的錯誤日期，不可採。",
+  "notes": "**探測層判定覆核通過並收斂到一筆**：卡單列了四個候選 id（1822757858／1822759363／1439255151／1444280866）——**正解是 1822759363**：tw 與 hk 兩店攤得出 10 軌、10 軌全有試聽、曲名繁體、日期與百科相符。**1822757858 是同批另一張《白皮書》**（11 軌，2005），**1439255151 與 1444280866 是同一張碟的英文題名重複上架**，兩筆都只在 cn 店面、攤不出曲目。封面 CAA 亦有。\\n**⚠ 同批兩張同藝人，且卡單的候選清單把兩張的 id 混在一起**：《誰誰誰和誰誰誰》(2004) 用 1822759363、《白皮書》(2005) 用 1822757858，**建卡時務必分開**。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**可寫的硬事實**：團名是 the Public Kingdom for Teens 的縮寫、1997 年 11 月成軍於南京、2001 年遷北京、歌詞全部用普通話、鼓手雷壇壇是這張錄完之後才加入的——五條都有來源。\\n**「Time 雜誌 2008 年選為亞洲最佳樂團之一」不要寫**——那是媒體榜單，依規則不得寫入。\\n**拉丁掛名維持不變**（本批規則第 6 條）：釘定條目與線上店面都用 P.K.14，沒有中文別名，卡片沿用**正確**。注意盤名的正規化：「P.K.14」含兩個點與數字，比對時不要被喫掉。\\n**MB 建檔的盤名用簡體，卡片依 09-06 裁定用繁體《誰誰誰和誰誰誰》**；tw／hk 店面的曲名已是繁體。\\n**可補的 Apple collectionId：`1822759363`／建議店面 tw（hk 亦可；cn 與 us 攤不出曲目）／10 軌、10 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:周雲蓬|沉默如謎的呼吸",
+  "artist": "周雲蓬",
+  "album": "沉默如謎的呼吸",
+  "facts": [
+   {
+    "f": "釘定的 release-group 4a3f1ac1 欄位：title《沉默如谜的呼吸》（簡體建檔）、artist-credit《周云蓬》（藝人實體 e3587c0a，country CN、type Person、生日 1970-12-15）、first-release-date **2004**、primary-type Album、secondary-types **空**、轄下 1 個 release。別名欄登錄羅馬字 Zhou Yunpeng 與繁體「周雲蓬」。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4a3f1ac1-d932-45bc-849d-c77c735d1454?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release：CN／Official／2004，CD 單片 **10 軌**，條碼 9787880748536，廠牌欄同時掛 **Badhead（編號 B022）與摩登天空**。曲目：1〈空水杯〉2〈鱼相忘于江湖〉3〈沉默如谜的呼吸〉4〈山鬼〉5〈我听到某人在唱一首忧伤的歌〉6〈盲人影院〉7〈失业者〉8〈幻觉支撑我们活下去〉9〈荡荡悠悠〉10〈蓝色老虎〉。**各軌未登錄長度。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4a3f1ac1-d932-45bc-849d-c77c735d1454&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "中文百科〈周云蓬〉：「周雲蓬（1970年12月15日—），出生於遼寧瀋陽，**中國大陸盲人獨立民謠歌手、詩人**。」生平段記「**幼年因患眼疾而導致九歲時失明**。後入盲人學校學習，個人努力至1994年長春大學中文專業畢業……**1995年到北京圓明園開始了賣唱生涯**，其後四處遊蕩並進行創作……曾發行過兩本刊物，《命与门》和《低岸》。**2003年摩登天空買斷髮行唱片《沉默如谜的呼吸》**」。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%91%A8%E4%BA%91%E8%93%AC"
+   },
+   {
+    "f": "英文百科〈Zhou Yunpeng〉：「Zhou's debut album, **Silent as a Mysterious Breath (沉默如謎的呼吸), was released in 2003 by Modern Sky Records (摩登天空)**. His second album, China's Children (中國孩子), was self-funded and issued in April 2007」——**但同一條目的作品表把本張列成「Silent as a Mysterious Breath (沉默如謎的呼吸), 2004」，內文與表格差一年。**",
+    "src": "https://en.wikipedia.org/wiki/Zhou_Yunpeng"
+   },
+   {
+    "f": "線上店面：以掛名與盤名的簡繁組合在 cn／tw／us 三店各跑 search（entity=album），**沒有任何一筆對得上**；藝人目錄端點也找不到這個掛名底下的本張。**四店查無，試聽走無來源狀態。**",
+    "src": "https://itunes.apple.com/search?term=%E5%91%A8%E4%BA%91%E8%93%AC%20%E6%B2%89%E9%BB%98%E5%A6%82%E8%B0%9C%E7%9A%84%E5%91%BC%E5%90%B8&entity=album&limit=20&country=cn"
+   },
+   {
+    "f": "藝人 MBID e3587c0a 分頁全列，名下共 **9 個 release-group**：2004 本張、2007《中國孩子》、2008-07-16《清炒苦瓜》、2010-09-11《牛羊下山》、2014-04-29《四月旧州》、2014-09-05 與 2015-11-27 兩筆現場專輯、2015-12-28 單曲《王刚》、2022-07-10《瓦尔登湖》。**本張是名下日期最早的一筆。** 2015-11-27 那一筆《树生长的声音——周云蓬 × 声音碎片北京站 live》同時掛在**聲音碎片**名下——聲音碎片本批 b 組另收一張。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e3587c0a-2f41-4bf3-bd61-1145ec9e685b&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第六軌叫〈盲人影院〉——唱的人九歲失明，1995 年在圓明園開始賣唱",
+   "十軌的曲名一半來自古典（〈山鬼〉〈鱼相忘于江湖〉），一半來自街頭（〈失业者〉〈空水杯〉）"
+  ],
+  "sound": "十軌，各軌未登錄長度。這是一張民謠底的碟：人聲與吉他為主，作者本人是盲人歌手兼詩人，十軌的詞都出自他自己。曲名分成兩路——一路取自古典語彙（〈山鬼〉出自楚辭、〈鱼相忘于江湖〉出自莊子），一路是九〇年代末城市底層的現實（〈失业者〉〈空水杯〉〈盲人影院〉）；第 5 軌〈我听到某人在唱一首忧伤的歌〉與第 8 軌〈幻觉支撑我们活下去〉則把整句話搬上標題。同名曲擺在第三軌。發行方是摩登天空底下的地下支線廠牌，編號 B022，與同批的 P.K.14（B-023）幾乎相鄰。",
+  "keyTracks": [
+   "盲人影院",
+   "沉默如谜的呼吸",
+   "山鬼",
+   "失业者"
+  ],
+  "status": "partial",
+  "yearVerified": "**兩說：2004（釘定條目）對 2003（兩處百科的內文）。** 釘定條目 first-release-date 2004、其下唯一 release（CN／Official／Badhead B022／摩登天空／條碼 9787880748536）同為 2004；但中文百科〈周云蓬〉寫《**2003年**摩登天空买断发行唱片\u00001\u0000》，英文百科內文也寫「released in **2003** by Modern Sky Records」——**不過英文百科自己的作品表又寫 2004**，內文與表格互相矛盾。**線上店面四店查無，沒有 ℗ 可以裁判。** 卡片年份 2004 與釘定條目一致，維持不動；**寫作層不要寫 2003**。注意「買斷發行」與「發行」未必同年，這可能正是兩說並存的原因。",
+  "notes": "**探測層判定覆核通過**：封面 CAA（release-group/4a3f1ac1 回 200），試聽四店查無、走無來源狀態，與卡單預估一致。\\n**status 填 partial**：各軌長度未登錄、線上店面完全查無，可寫的硬事實集中在曲目、廠牌編號與作者生平。\\n**「首張專輯」可以寫**：英文百科明寫「Zhou's debut album」，釘定目錄裡九個 RG 也是這張最早，兩處一致。\\n**可寫的生平事實（都有來源）**：1970 年 12 月 15 日生於瀋陽、九歲失明、1994 年長春大學中文系畢業、1995 年起在北京圓明園賣唱、出過《命與門》與《低岸》兩本刊物。**第 6 軌〈盲人影院〉與他本人的處境直接相關，是這張最好用的一條。**\\n**獎項一律不要寫**：兩處百科都列了他後來得的音樂獎，**那是媒體評選，依規則不得寫入**。\\n**與同批另一張的關聯**：2015 年他與聲音碎片有一張合作現場專輯，聲音碎片本批 b 組另收《世界是噪音的花園》。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《沉默如謎的呼吸》／《周雲蓬》**；別名欄本來就有繁體「周雲蓬」。\\nApple collectionId：**無可補**。"
+ },
+ {
+  "key": "desc4:崔健|給你一點顏色",
+  "artist": "崔健",
+  "album": "給你一點顏色",
+  "facts": [
+   {
+    "f": "釘定的 release-group 42d16071 欄位：title《给你一点颜色》（簡體建檔）、artist-credit《崔健》（藝人實體 d457f05e，CN／Person）、first-release-date **2005**、primary-type Album、secondary-types **空**、轄下 4 個 release。條目掛的風格標籤包含 art rock、hip hop、**experimental hip hop**、**industrial hip hop**、rap rock、pop 與 rock。",
+    "src": "https://musicbrainz.org/ws/2/release-group/42d16071-0ee6-322c-b9a8-2cf66d46c062?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "四筆 release 全部 **11 軌、同曲同序**，長度彼此相差不到 1 秒。2005 的 CN／Official CD（京文音像，catno YX·0015、條碼 9787880457667）逐軌為：1〈城市船夫〉7:12、2〈蓝色骨头〉6:48、3〈迷失的季节〉5:18、4〈小城故事V21（上）〉2:56、5〈红先生〉3:14、6〈网络处男〉6:15、7〈小城故事V21（中）〉2:56、8〈农村包围城市〉6:27、9〈小城故事V21（下）〉3:19、10〈舞过38线〉7:30、11〈超越那一天〉6:09。**十一軌合計約 58 分半；〈小城故事V21〉被拆成上、中、下三段，分別插在第 4、7、9 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=42d16071-0ee6-322c-b9a8-2cf66d46c062&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "四筆裡有一筆**整張用英文標題**《Show You Colour》，十一軌逐位置英譯：City Boatman／Blue Bone／The Lost Season／Little Town Story v21-(A)／Mr. Red／Net Virgin／Little Town Story v21-(B)／Village Attacks City／Little Town Story v21-(C)／Dance Across 38 Parallel／Get Over That Day。另有一筆 XW 數位版（條碼 3616840949064）與一筆無廠牌的 CN CD，**後者第 3 軌把〈迷失的季节〉誤植成〈迷失的李节〉**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=42d16071-0ee6-322c-b9a8-2cf66d46c062&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1590999610**，四店都有，**tw／hk／us 三店攤得出 11 軌、11 軌全部有試聽**（cn 只回專輯層）。trackCount 欄 11、releaseDate **2005-03-01**、℗ 2005 北京東西音樂藝術製作有限責任公司。逐軌長度與釘定條目**逐位置相符到秒**；tw／hk 曲名繁體（〈藍色骨頭〉〈網絡處男〉〈農村包圍城市〉〈舞過38線〉），us 簡體、藝人欄顯示羅馬字「Cui Jian」。",
+    "src": "https://itunes.apple.com/lookup?id=1590999610&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈崔健〉的生平段記「**2005年發行專輯《给你一点颜色》**，同年『嚎叫唱片』出版的向崔健致敬專輯《谁是崔健》再次顯示崔健在中國搖滾界的老前輩地位」。同條目的作品年表在 1998 年的《無能的力量》（同批 a 組另收一張）之後，下一筆正是 2005 年這張。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%B4%94%E5%81%A5"
+   },
+   {
+    "f": "藝人 MBID d457f05e 名下 16 個 release-group；1998《无能的力量》與 2005 本張之間**沒有第二張 primary-type Album 的條目**，本張之後要到 2015-12-24《光冻》纔有下一張。線上店面四店的目錄同樣顯示 1998、2005、2015 三個點之間各空一段。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d457f05e-8802-4888-83a6-b07d3df3bbf3&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "〈小城故事V21〉被切成上、中、下三段，插在第四、第七、第九軌，像三次插播",
+   "十一軌五十八分半，前後隔著七年——上一張 1998、下一張 2015"
+  ],
+  "sound": "十一軌、合計約 58 分半，是他目錄裡最長的一張之一。結構上有一組貫串的插曲：〈小城故事V21〉被切成上、中、下三段，分別擺在第 4（2:56）、第 7（2:56）與第 9 軌（3:19），把八首正曲隔成三段。正曲一律偏長——〈舞过38线〉7:30、〈城市船夫〉7:12、〈蓝色骨头〉6:48、〈农村包围城市〉6:27、〈网络处男〉6:15、〈超越那一天〉6:09 六首都超過六分鐘。條目掛的標籤把 experimental hip hop 與 industrial hip hop 並列在搖滾之外，可見這一張的節奏來源已經整個換過。曲名混用政治語彙的挪用（〈农村包围城市〉〈红先生〉）與世紀初的網路生活（〈网络处男〉）。同一批錄音另有一份整張英譯的版本。",
+  "keyTracks": [
+   "蓝色骨头",
+   "农村包围城市",
+   "城市船夫",
+   "舞过38线"
+  ],
+  "status": "full",
+  "yearVerified": "**2005 ✓，三處相符。** 釘定條目 first-release-date 2005、其下三筆 CN release 同為 2005（京文音像 YX·0015、條碼 9787880457667）；中文百科〈崔健〉記《2005年发行专辑\u00001\u0000》；線上店面 collectionId 1590999610 的 releaseDate 2005-03-01、℗ 2005。卡片年份 2005 正確。**要分開的年份**：同批 a 組《無能的力量》在釘定條目底下有一筆 2005 的 CN 再版（同為京文音像、另一組條碼），**兩張都是 2005，不要混**。",
+  "notes": "**探測層判定覆核通過且加值**：卡單記 collectionId 1590999610——**配對正確**，但實測 **cn 店面 entity=song 攤出 0 軌**，tw／hk／us 才攤得出 11 軌且 11 軌全有試聽。建議釘 **tw**（曲名繁體）。封面 CAA 亦有（release-group/42d16071 回 200）。\\n**擋下策展層零處**（卡單對這張沒有寫敘述），但要注意兩件事：\\n（1）**序數不要寫**——同批 a 組《無能的力量》那張已經記錄過：〈崔健〉條目說第四張、〈中国摇滚乐〉年表說第六張，兩處打架，本張的序數同樣數不出來。\\n（2）**「隔了七年」可以寫**——目錄與四個店面都顯示 1998 與 2005 之間沒有專輯，這是可查的事實。\\n**曲名有一處誤植**：釘定條目底下有一筆無廠牌的 CN CD 把第 3 軌寫成〈迷失的李节〉，正確是〈迷失的季节〉（其餘三筆 release 與線上店面都寫「季」）。\\n**⚠ 政治敏感**：本張曲名帶有政治語彙的挪用（〈农村包围城市〉〈红先生〉〈舞过38线〉）。**曲名照引沒有問題，但不得就其含義做任何解讀或評論**——沒有來源。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《給你一點顏色》**；tw／hk 店面的曲名已是繁體。\\n**可補的 Apple collectionId：`1590999610`／建議店面 tw（hk／us 亦可）／11 軌、11 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:左小祖咒|我不能悲傷地坐在你身旁",
+  "artist": "左小祖咒",
+  "album": "我不能悲傷地坐在你身旁",
+  "facts": [
+   {
+    "f": "釘定的 release-group 68b451f8 欄位：title《我不能悲伤地坐在你身旁》（簡體建檔）、artist-credit《左小祖咒》（藝人實體 68778ad0，country CN、type Person、生日 1970-03-04）、first-release-date **2005-05-25**、primary-type Album、secondary-types **空**、轄下 1 個 release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/68b451f8-6473-4c2e-b415-68091631c338?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release：CN／2005-05-25、**status 未填**、無廠牌、無條碼，載體是 Digital Media、**9 軌**。逐軌長度：1〈像孩子似的倾听〉5:46、2〈我不能悲伤地坐在你身旁〉6:24、3〈征服〉6:19、4〈恩惠〉7:24、5〈平安大道的延伸〉5:51、6〈当我离开你的时候〉約 6:00、7〈尊敬〉8:20、8〈这些天的一天〉3:16、9〈感激〉5:49。**九軌合計約 55 分；除了第 8 軌 3:16，其餘八軌全部超過五分半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=68b451f8-6473-4c2e-b415-68091631c338&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1508469243**，**tw／hk／us 三店攤得出 9 軌、9 軌全部有試聽**，trackCount 欄 9、releaseDate **2005-05-25**（與釘定條目逐日相符）、℗ **2020 Zuoxiao Zuzhou**（是 2020 年的數位上架，版權標示掛他本人）。曲名全部繁體，逐軌長度與釘定條目相符；**第 6 軌店面標明是合作曲——〈當我離開你的時候 (feat. 陳珊妮)〉**，釘定條目的曲名欄沒有帶這個署名。",
+    "src": "https://itunes.apple.com/lookup?id=1508469243&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈左小祖咒〉：本名吳紅巾、1970 年 3 月 4 日生於江蘇建湖；1993 年從上海到北京後「在東部郊區締造了對中國當代藝術影響深遠的前衛藝術家部落『**北京東村**』。同期與夜千組建NO樂隊，改名爲左小祖咒，任樂隊主唱、吉他手、提琴手和詞曲作者」。條目記他 1998 年發行首張專輯《走失的主人》、次年《廟會之旅》（同批 a 組另收一張）、2001 年第三張《左小祖咒在地安门》。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%B7%A6%E5%B0%8F%E7%A5%96%E5%92%92"
+   },
+   {
+    "f": "藝人 MBID 68778ad0 分頁全列，名下共 **16 個 release-group**；本張在 2001-11-01《左小祖咒在地安门》與 2006-04-01《美国》（Album+Soundtrack）之間。**釘定目錄把百科所記 1998 年的首張《走失的主人》記成 2009-02-28**，所以這個目錄的早期年份不可靠、不能用來數序數。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=68778ad0-b56f-44c1-afbd-089ad84549f6&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "九軌五十五分鐘，只有一首不到五分半——第八軌〈这些天的一天〉3 分 16 秒",
+   "第六軌的對唱找來了臺灣的陳珊妮"
+  ],
+  "sound": "九軌、合計約 55 分。這是一張把時間拉得很開的碟：九軌裡有八軌超過五分半，最長的〈尊敬〉8:20 與〈恩惠〉7:24，唯一的短曲是第 8 軌〈这些天的一天〉3:16，夾在兩首長曲之間像一次換氣。曲名幾乎全是兩到三個字的抽象名詞（〈征服〉〈恩惠〉〈尊敬〉〈感激〉），只有同名曲與第 5 軌〈平安大道的延伸〉帶著具體的地名與句子。第 6 軌〈当我离开你的时候〉是一首對唱，線上版標明客座的是臺灣歌手陳珊妮。人聲走的是他一貫那種刻意遊離音準的唱法。",
+  "keyTracks": [
+   "我不能悲伤地坐在你身旁",
+   "尊敬",
+   "当我离开你的时候",
+   "平安大道的延伸"
+  ],
+  "status": "full",
+  "yearVerified": "**2005 ✓，逐日相符。** 釘定條目 first-release-date 2005-05-25、其下唯一 release 同為 2005-05-25；線上店面 collectionId 1508469243 的 releaseDate 也是 **2005-05-25**——兩處對到同一天。**℗ 標的是 2020，那是數位上架年，不是原盤年。** 可查的百科沒有列出這張的年份（〈左小祖咒〉的年表跳過了 2005）。**注意那筆 release 的 status 未填、無廠牌、無條碼**，依裁定 43／57／65／78 不能單獨當 Official 背書；不過線上店面的日期與它逐日相符，兩者互相補強。卡片年份 2005 正確。",
+  "notes": "**探測層判定覆核通過且加值——這是本批四張 CAA 無封面的碟之一**：卡單記 collectionId 1508469243（cn）——實測 **tw／hk／us 三店都攤得出 9 軌、9 軌全有試聽、曲名繁體**，這一筆同時解決封面與試聽兩件事。卡單另列的 1510707631《美國》(2006) 是另一張碟，**不要用**。\\n**⚠ 同一位藝人本批收兩張**：a 組《廟會之旅》(2000) 用 collectionId 1510707894，本張用 1508469243；另有《廟會之旅II》(2011，1510707987) 與《美國》(2006，1510707631) 兩張同藝人的碟在同一個目錄下，四筆的 id 前綴相近，**建卡時要逐位核對**。\\n**可補的一條事實**：線上版第 6 軌標明是與臺灣歌手陳珊妮的對唱，釘定條目沒有這個署名。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**序數不要寫**：釘定目錄把他 1998 年的首張記成 2009，早期年份不可靠。\\n**⚠ 政治敏感**：這位藝人的百科條目裡有大量與審查、演出禁令相關的段落，**與這張 2005 年的碟無關，一律不要碰**。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《我不能悲傷地坐在你身旁》**；掛名「左小祖咒」簡繁同形。\\n**可補的 Apple collectionId：`1508469243`／建議店面 tw（hk／us 亦可）／9 軌、9 軌全有試聽。⚠ 這一筆同時是這張的封面來源。**"
+ },
+ {
+  "key": "desc4:P.K.14|白皮書",
+  "artist": "P.K.14",
+  "album": "白皮書",
+  "facts": [
+   {
+    "f": "釘定的 release-group 59355b12 欄位：title《白皮书》（簡體建檔）、artist-credit《P.K.14》（藝人實體 05653c73，country CN、type Group、成軍 1997-11）、first-release-date **2005-09**、primary-type Album、secondary-types **空**、轄下 2 個 release。條目掛的風格標籤是 art punk、dance-punk、garage rock revival、indie rock、post-punk、rock。",
+    "src": "https://musicbrainz.org/ws/2/release-group/59355b12-99cc-312c-b1d7-130e3c282f68?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 都是 **11 軌、同曲同序**：2005-09 的 CN／Official CD（Badhead，編號 **B-028**、條碼 9787880797008）逐軌為 1〈陌生客人的来访〉2:23、2〈他们〉2:44、3〈告诉孩子们〉6:44、4〈暴风的中心〉2:42、5〈什么样的风在吹〉6:16、6〈伊甸园〉4:45、7〈有一个地方〉3:05、8〈你知道〉3:47、9〈**征兆**〉**9:43**、10〈青年人，神秘事物和打开的眼睛〉3:36、11〈故事〉4:22；另一筆是 2025-06-25 的 XW 數位再發（摩登天空、條碼 00602478311437），各軌長 2–7 秒，**第 10 軌的曲名在再發版改成〈年轻人，神秘事物和打开的眼睛〉**（「青年人」改成「年輕人」）。**十一軌合計約 50 分。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=59355b12-99cc-312c-b1d7-130e3c282f68&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1822757858**，**tw 與 hk 兩店攤得出 11 軌、11 軌全部有試聽**（cn 只回專輯層），trackCount 欄 11、releaseDate 2005-01-01（月初佔位）、℗ 2005 Beijing Modern Sky Culture Development Co.,Ltd.。曲名全部繁體，逐軌長度與 2025 再發版相符（〈征兆〉9:45 為全碟最長），**第 10 軌採的是「年輕人」那個寫法**。",
+    "src": "https://itunes.apple.com/lookup?id=1822757858&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈PK14〉：樂隊 1997 年 11 月成立於南京，全名是 the Public Kingdom for Teens；條目描述他們「從一開始就定下了歌詞深邃如詩、沉重嚴肅的風格」，作品《往往有着猛烈的和弦，阴暗的贝司低音以及躁动的鼓点》，並列出 Sonic Youth、the Pixies、Fugazi 等美國八〇年代獨立樂隊的影響。主唱楊海崧本人「並不在意對樂隊風格定義」，他說「如果硬是要加所謂的『風格』的話，那就是我們對社會的感受」。",
+    "src": "https://zh.wikipedia.org/wiki/PK14"
+   },
+   {
+    "f": "藝人 MBID 05653c73 名下 8 個 release-group，全是 primary-type Album、secondary-types 空；依日期排序本張排第四（2001-03-15《烂掉吧》、2001-10-01《上楼就往左拐》、2004《谁谁谁和谁谁谁》、2005-09 本張、2008-07-26《城市天气的航行》、2013-08-31《1984》、2018-10-16、2025-12-19）。**同批 b 組另收 2004 年的《誰誰誰和誰誰誰》，兩張只隔一年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=05653c73-f8e9-44cf-8185-e569bc3274d4&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第九軌〈征兆〉跑了 9 分 43 秒，前面八軌加起來也才三十二分鐘",
+   "同一首歌在首版叫〈青年人，神秘事物和打开的眼睛〉，二十年後的再發改成了〈年轻人〉"
+  ],
+  "sound": "十一軌、合計約 50 分。這是一張把長短拉到極端的碟：開場〈陌生客人的来访〉2:23、〈他们〉2:44 與第 4 軌〈暴风的中心〉2:42 都不到三分鐘，第 9 軌〈征兆〉卻跑到 9:43——一首就佔掉全碟五分之一，比第二長的〈告诉孩子们〉6:44 多出三分鐘。其餘落在 3:05 到 6:16。條目掛的標籤把 art punk、dance-punk 與 garage rock revival 一併列進 post-punk 之外，比前一張多了舞曲取向。曲名以完整的短句為主（〈告诉孩子们〉〈什么样的风在吹〉〈有一个地方〉〈你知道〉），第 10 軌那個三段式的長題〈青年人，神秘事物和打开的眼睛〉在二十年後的再發版被改成了「年輕人」。",
+  "keyTracks": [
+   "征兆",
+   "告诉孩子们",
+   "什么样的风在吹",
+   "陌生客人的来访"
+  ],
+  "status": "full",
+  "yearVerified": "**2005 ✓，兩處相符。** 釘定條目 first-release-date 2005-09、其下 CN 首版（Badhead B-028、條碼 9787880797008）同為 2005-09；線上店面 collectionId 1822757858 的 releaseDate 2005-01-01（月初佔位）、℗ 2005 摩登天空。**中文百科的年表在 2004 年之後直接跳到 2013 年，沒有記這張的年份**，第三處旁證缺席。卡片年份 2005 正確。要分開的年份：2025-06-25 的數位再發是同一個 release-group 底下的另一筆。",
+  "notes": "**探測層判定覆核通過並收斂到一筆**：卡單為這張列了四個候選 id，**正解是 1822757858**（tw 與 hk 兩店攤得出 11 軌、11 軌全有試聽、曲名繁體）。**1822759363 是同批另一張《誰誰誰和誰誰誰》**（10 軌，2004），1439255151 與 1444280866 是那一張的英文題名重複上架，三筆都不能用在這裡。封面 CAA 亦有（release-group/59355b12 回 200）。\\n**⚠ 同批兩張同藝人、且候選 id 只差兩位數**：《誰誰誰和誰誰誰》1822759363 對本張 1822757858，**建卡時逐位核對**。\\n**⚠ 曲名兩種寫法**：第 10 軌首版寫〈青年人，神秘事物和打开的眼睛〉、2025 再發與線上店面都寫〈年轻人，……〉。寫作層擇一即可，但要一致。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**「Time 雜誌 2008 年選為亞洲最佳樂團之一」不要寫**——媒體榜單，依規則不得寫入。同理，百科引述的樂評形容詞（「深邃如詩」之類）可以當作風格描述改寫，但不要當成客觀事實直述。\\n**拉丁掛名維持不變**（本批規則第 6 條）：釘定條目與線上店面都用 P.K.14，沒有中文別名。\\n**MB 建檔的盤名用簡體，卡片依 09-06 裁定用繁體《白皮書》**；tw／hk 店面的曲名已是繁體。\\n**可補的 Apple collectionId：`1822757858`／建議店面 tw（hk 亦可；cn 攤不出曲目）／11 軌、11 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:李志|梵高先生",
+  "artist": "李志",
+  "album": "梵高先生",
+  "facts": [
+   {
+    "f": "釘定的 release-group 7db4d471 欄位：title《梵高先生》（簡繁同形）、artist-credit《李志》（藝人實體 e54bc357，country CN、type Person、生日 1978-11-13）、first-release-date **2005-12-01**、primary-type Album、secondary-types **空**、轄下 **5 個 release**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7db4d471-88c8-4dd3-93b4-0fda16797bb4?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "**五筆 release 有三種軌數：9 軌、8 軌、7 軌。** 2005-12-25 的 CN／Official CD（口袋唱片、條碼 9787798627176）是 **9 軌**：1〈你离开了南京，从此没有人和我说话（乐曲）〉1:14、2〈董卓瑶〉3:20、3〈春末的南方城市〉4:09、4〈来了〉5:14、5〈广场〉（未登錄長度）、6〈暧昧〉3:40、7〈想起了他〉4:35、8〈梵高先生〉4:12、9〈斜〉3:37；2007-02-28 的 CN 再版是 **8 軌**（少了〈广场〉）；2005-12-01 的 HK 數位版與 2020-10-21 的 XW 數位版都是 **7 軌**（再少掉〈暧昧〉），且曲名用繁體。**每少一次，就少掉一首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7db4d471-88c8-4dd3-93b4-0fda16797bb4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "第五筆 release 是 2013-06-30 的 XW 數位版，整張標英文《Mr. Van Gogh》、**9 軌**，逐位置英譯：No One Talks to Me While You Are Gone 1:12／Miss Dong 3:18／A Southern City in a Late Spring Day 4:07／It Has Come 5:12／**The Square 4:11**／A Vague Talk 3:38／Mr Van Gogh 4:10／When I Miss Her 4:33／Bias 3:37——**這一筆補上了 CD 版沒登錄的〈广场〉長度（4:11）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7db4d471-88c8-4dd3-93b4-0fda16797bb4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1447801894**，**tw／hk／us 三店攤得出 7 軌、7 軌全部有試聽**，trackCount 欄 7、releaseDate **2005-12-01**、℗ **2006 李志**（版權標示掛他本人）。逐軌（tw，繁體）：1〈你離開了南京, 從此沒有人和我說話〉1:12、2〈董卓瑤〉3:18、3〈春末的南方城市〉4:07、4〈來了〉5:12、5〈梵高先生〉4:10、6〈想起了他〉4:33、7〈斜〉3:37。**這是 7 軌版**——與 HK／XW 兩筆數位 release 一致，比 CD 首版少〈广场〉與〈暧昧〉兩首，且**同名曲的位置從第 8 軌前移到第 5 軌**。",
+    "src": "https://itunes.apple.com/lookup?id=1447801894&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈李志〉：「**2004年～2006年期間，李志製作了三張Lo-fi個人專輯。前兩張後由口袋唱片以《被禁忌的游戏》《梵高先生》發行**，第三張《这个世界会好吗》沒有再版。」同條目記他大學時代的好友劉威在前三張專輯中擔任製作人與樂手，並列出他與張瑋瑋、老狼、**萬曉利**等人的多次合作——**萬曉利本批 b 組另收一張。**",
+    "src": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%BF%97"
+   },
+   {
+    "f": "藝人 MBID e54bc357 分頁全列，名下共 **25 個 release-group**（其中大量是現場與精選）；primary-type Album 且 secondary-types 為空的最早三筆是 2004-11-30《被禁忌的游戏》、2005-12-01 本張、2006-11-20《这个世界会好吗》——**與百科所記那三張 Lo-fi 專輯的順序一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e54bc357-19aa-4e1f-9795-3346e486d5db&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟流通過 9 軌、8 軌、7 軌三種版本——每改版一次就少掉一首",
+   "開場那首的名字就是一句話：〈你离开了南京，从此没有人和我说话〉，只有 1 分 12 秒"
+  ],
+  "sound": "線上流通的版本七軌、約 26 分半（CD 首版九軌，另有八軌的中間版本）。開場〈你离开了南京，从此没有人和我说话〉1:12 是一段無詞的樂曲，其餘六軌落在 3:18 到 5:12，最長的是〈来了〉5:12。這是一張 Lo-fi 民謠底的碟——人聲與吉他為主、錄音刻意粗糙，製作是他大學時代的朋友。曲名一半是人與地（〈董卓瑶〉〈春末的南方城市〉〈广场〉），一半是單字或短詞（〈来了〉〈暧昧〉〈斜〉）。同名曲〈梵高先生〉4:12 在 CD 版排第八、在流通的七軌版被前移到正中間第五軌。海外另有一份整張英譯的九軌版本。",
+  "keyTracks": [
+   "梵高先生",
+   "你离开了南京，从此没有人和我说话",
+   "董卓瑶",
+   "斜"
+  ],
+  "status": "full",
+  "yearVerified": "**2005 ✓，兩處相符，但月份日期在同一個月內散開。** 釘定條目 first-release-date 2005-12-01、其下 HK 數位版同為 2005-12-01、CN 首版（口袋唱片）記 2005-12-25；線上店面 collectionId 1447801894 的 releaseDate 也是 **2005-12-01**、℗ 2006 李志（℗ 年份比發行年晚一年）。中文百科只寫「2004～2006 年間製作了三張 Lo-fi 專輯、前兩張後由口袋唱片發行」，沒有給確切日期。卡片年份 2005 正確。要分開的年份：2007-02-28 的 8 軌再版、2013 的英譯版、2020 的數位再發。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為未回撈——實測**找得到**：collectionId **1447801894**，tw／hk／us 三店攤得出 7 軌、7 軌全有試聽、曲名繁體。封面 CAA 亦有（release-group/7db4d471 回 200）。\\n**⚠ 軌數三說，這是本張最需要小心的地方（裁定 175）**：CD 首版 9 軌、2007 再版 8 軌、數位版與線上店面 7 軌。**依裁定以攤得開的曲目列為準，寫 7 軌**；若要寫 9 軌必須註明是 CD 首版。**同名曲的軌號也跟著變**（CD 版第 8 軌／線上版第 5 軌），**不要寫「第八軌」或「壓軸」這種依賴軌號的說法**。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**「首張」不要寫**：百科明寫《被禁忌的游戏》(2004) 在前，本張是第二張。\\n**可寫的硬事實**：2004–2006 年間自製的三張 Lo-fi 專輯之一、後由口袋唱片發行、版權標示掛他本人、〈广场〉這一軌只在部分版本裡出現。\\n**與同批另一張的關聯**：百科列出他與萬曉利的多次合作，萬曉利本批 b 組另收一張。\\n**盤名與掛名都簡繁同形**，不需改寫；tw／hk 店面的曲名是繁體。\\n**可補的 Apple collectionId：`1447801894`／建議店面 tw（hk／us 亦可）／7 軌、7 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:惘聞|RE:RE:RE:",
+  "artist": "惘聞",
+  "album": "RE:RE:RE:",
+  "facts": [
+   {
+    "f": "釘定的 release-group c8eba161 欄位：title《RE:RE:RE:》（拉丁盤名，**末尾帶一個冒號**）、artist-credit《惘闻》（藝人實體 b7637cdc，country CN、area 大連、type Group、成軍 1999）、first-release-date **2006**、primary-type Album、secondary-types **空**、轄下 3 個 release。條目掛的風格標籤是 experimental rock、**instrumental**、instrumental rock、post-rock、rock。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c8eba161-37a7-3ca4-b751-a7af503e6e95?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "三筆 release 都是 **6 軌**，但曲序不同。2006 的 CN／Official CD：1〈My Crime〉10:02、2〈隧道〉6:49、3〈劳动公园〉10:44、4〈圆周率〉8:07、5〈最后的麻山〉12:30、6〈酒狂〉8:22。**六軌合計約 56 分半，平均一軌 9 分 25 秒——本批平均曲長最長的一張**；最短的〈隧道〉6:49 也接近七分鐘，最長的〈最后的麻山〉12:30 超過十二分鐘。2016-04-09 的 XW 數位版把盤名寫成《RE:RE:RE》（少一個冒號）、曲序改為 my crime／隧道／勞動公園／圓周率／酒狂／最後的麻山。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c8eba161-37a7-3ca4-b751-a7af503e6e95&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1598039678**，題名寫《Re:Re:Re:》，**tw／hk／us 三店攤得出 6 軌、6 軌全部有試聽**，trackCount 欄 6、releaseDate **2005-12-01**、℗ **2005 Space Circle**。**這一筆的曲名與長度配對與釘定條目對不上**：店面列 1〈隧道〉10:44、2〈勞動公園〉10:02、3〈My Crime〉6:50、4〈最後的麻山〉8:23、5〈酒狂〉8:08、6〈圓周率〉12:30——**六個長度值與釘定條目完全相同，但掛在不同的曲名上**（例如釘定條目的〈隧道〉是 6:49、店面卻標 10:44）。tw／hk 曲名繁體、us 全英文（Tunnel／Labor Park／My Crime／Last Ma Mountain／Wine Crazy／Pye）。",
+    "src": "https://itunes.apple.com/lookup?id=1598039678&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈惘闻〉：「惘聞（英語：Wang Wen）是一支中國**後搖滾**樂隊，**1999年成立於中國大連**。最早由謝玉崗等人發起，並擔任吉他手和主唱……樂隊初成立時，**時任鼓手趙丹由詞語『置若罔聞』衍生出樂隊名稱『惘聞』**。關於英文名，其早期專輯《二十八天失眠日记》封面上爲『Unknown Band』，而後續幾張專輯《0.7》、《八匹马》、《岁月鸿沟》封面上均標識爲『Wang Wen』。」條目並記樂隊至今發行過 12 張錄音室專輯。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%83%98%E9%97%BB"
+   },
+   {
+    "f": "中文百科〈中国摇滚乐〉在 1999 年條記：《**中国的后摇乐队惘闻，在大连成立。**》同一年條還記了痛苦的信仰（即同批 b 組的痛仰樂隊）與二手玫瑰（同批 b 組另收一張）的成立。",
+    "src": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E6%91%87%E6%BB%9A%E4%B9%90"
+   },
+   {
+    "f": "藝人 MBID b7637cdc 分頁全列，名下共 **17 個 release-group**；本張排第二（2003《二十八天失眠日记》在前），之後是 2007-04-14《7 Objects in Another Infinite Space》、2007-12-15《0306》、2008-05-17《IV》、2010-04-08《L & R》、2012-06-08《0.7》、2014-06-20《八匹馬》（同批 b 組另收一張）等。別名欄同時登錄簡體「惘聞」（zh_Hans_CN）、繁體「惘聞樂隊」與英文 Wang Wen。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b7637cdc-7413-422a-9dc3-3d71a19322ae&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "六軌五十六分半，平均一首九分二十五秒——最長的〈最后的麻山〉十二分半",
+   "團名是鼓手從「置若罔聞」四個字裡拆出來的"
+  ],
+  "sound": "六軌、合計約 56 分半，**是本批平均曲長最長的一張**：一軌平均 9 分 25 秒，最短的〈隧道〉6:49 也接近七分鐘，最長的〈最后的麻山〉12:30 超過十二分鐘，另外〈劳动公园〉10:44 與〈My Crime〉10:02 也都破十分。這是一張器樂後搖滾——條目掛的標籤裡直接有 instrumental 一項，六軌沒有人聲，結構靠吉他層疊的長段落推進。曲名一半是地方（〈劳动公园〉〈最后的麻山〉），一半是抽象或外語（〈My Crime〉〈圆周率〉〈酒狂〉）。曲序在不同版本之間換過，末軌在 CD 版是〈酒狂〉、在數位版是〈最后的麻山〉。",
+  "keyTracks": [
+   "最后的麻山",
+   "劳动公园",
+   "My Crime",
+   "酒狂"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說：2006（釘定條目）對 2005（線上店面）。** 釘定條目 first-release-date 2006、其下 CN／Official CD 亦記 2006；但線上店面 collectionId 1598039678 的 releaseDate 記 **2005-12-01**、℗ **2005 Space Circle**——**差一年又一個月**。可查的百科沒有列出這張的年份（〈惘闻〉條目只記樂隊沿革，沒有作品年表）。**兩說很可能是歲末壓片、開春上架的兩端**，與同批 a 組左小祖咒《廟會之旅》遇到的情形相同。卡片年份 2006 與釘定條目一致、維持不動；**寫作層不要寫 2005**。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為未回撈——實測**找得到**：collectionId **1598039678**，tw／hk／us 三店攤得出 6 軌、6 軌全有試聽。封面 CAA 亦有（release-group/c8eba161 回 200）。\\n**⚠ 這一筆的曲名與長度配對是錯的**：店面的六個長度值與釘定條目完全相同，**但掛在不同的曲名上**（店面把 10:44 掛給〈隧道〉，釘定條目的〈隧道〉是 6:49、10:44 是〈劳动公园〉）。**寫作層若要把曲名與長度連在一起寫，一律以釘定條目為準**；只寫曲名或只寫長度則兩邊都可以。\\n**⚠ 盤名的冒號**：釘定條目寫《RE:RE:RE:》（末尾帶冒號）、數位版寫《RE:RE:RE》、店面寫《Re:Re:Re:》——**三種寫法**。卡片用《RE:RE:RE:》，行文照卡片。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**可寫的硬事實**：1999 年成立於大連、團名從「置若罔聞」拆出、六軌全是器樂、平均曲長九分半——四條都有來源或可從資料直接算出。\\n**「第二張」可以寫但要小心**：釘定目錄裡 2003 年的《二十八天失眠日记》在前，本張排第二；不過百科沒有作品年表可以佐證，**建議只寫年份**。\\n**同批兩張同藝人**：本張與《八匹馬》(2014) 同屬 b7637cdc。\\n**MB 建檔的掛名用簡體，卡片依 09-06 裁定用繁體《惘聞》**；別名欄本來就同時登錄簡繁兩種寫法，tw／hk 店面顯示的藝人名也是繁體「惘聞」。\\n**可補的 Apple collectionId：`1598039678`／建議店面 tw（hk 亦可；us 是英譯）／6 軌、6 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:萬曉利|這一切沒有想像的那麼糟",
+  "artist": "萬曉利",
+  "album": "這一切沒有想像的那麼糟",
+  "facts": [
+   {
+    "f": "釘定的 release-group 2b38234e 欄位：title《这一切没有想象的那么糟》（簡體建檔，**「想象」不是「想像」**）、artist-credit《万晓利》（藝人實體 93bdf621，country CN、type Person、1971 年生）、first-release-date **2006**、primary-type Album、secondary-types **空**、轄下 1 個 release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2b38234e-2294-352a-ad0a-a5b591140c26?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release：CN／Official／2006，CD 單片 **10 軌**、**無廠牌、無條碼**。逐軌長度：1〈陀螺〉4:45、2〈鸟语〉5:16、3〈达摩流浪者〉3:31、4〈冬天的天空〉3:41、5〈墓床〉5:16、6〈失〉3:39、7〈时光灯〉4:00、8〈台阶下〉4:51、9〈城堡〉6:41、10〈这一切没有想象的那么糟〉3:33。**十軌合計約 45 分，同名曲擺在最後、也是全碟第二短的一首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2b38234e-2294-352a-ad0a-a5b591140c26&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**線上店面是 11 軌、曲序完全不同、而且是 2020 年的版本。** collectionId **1637710480**《這一切沒有想像的那麼糟》，**tw 與 hk 兩店攤得出 11 軌、11 軌全部有試聽**，trackCount 欄 11、releaseDate **2020-07-30**、℗ **2020 北京眾水之音文化傳播有限公司**。逐軌：1〈這一切沒有想像的那麼糟〉3:33、2〈**狐狸**〉3:28、3〈墓床〉5:16、4〈台階下〉4:51、5〈陀螺〉4:45、6〈城堡〉6:41、7〈達摩流浪者〉3:31、8〈冬天的天空〉3:41、9〈鳥語〉5:16、10〈失〉3:39、11〈時光燈〉約 4:00。**同名曲被移到第一軌，並多出一首〈狐狸〉；其餘十軌的長度與釘定條目分秒相符**，是同一份母帶重新排序。",
+    "src": "https://itunes.apple.com/lookup?id=1637710480&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**線上店面的盤名用的是「想像」、釘定條目用的是「想象」。** 卡片採「想像」，與線上店面同向；釘定條目的建檔寫法是《这一切没有想象的那么糟》。",
+    "src": "https://itunes.apple.com/lookup?id=1637710480&country=hk&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 MBID 93bdf621 分頁全列，名下只有 **5 個 release-group**，全是 primary-type Album、secondary-types 空：2002-12《走过来 走过去》、2006 本張、2010-01-01《北方的北方》、2015-03-27《太阳看起来圆圆的》、2017-11-05《天秤之舟／牙齿，菠菜和豆腐与诗人，流浪汉和门徒》。**本張排第二。** 別名欄登錄羅馬字 Wan Xiaoli 與繁體「萬曉利」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=93bdf621-5e30-4489-8f3d-e211391f012f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "中文百科〈李志〉在合作者名單裡列了萬曉利：「在幾張專輯錄制過程中，曾經和張瑋瑋、老狼、荒井壯一郎、**萬曉利**、邵夷貝、江建民等有多次合作」——**李志本批 b 組另收一張 2005 年的《梵高先生》。**",
+    "src": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%BF%97"
+   }
+  ],
+  "hookCandidates": [
+   "十軌四十五分鐘，把同名曲放在最後——十四年後的再版反過來，讓它當第一軌",
+   "第五軌〈墓床〉與第二軌〈鸟语〉都是 5 分 16 秒，分秒不差"
+  ],
+  "sound": "十軌、合計約 45 分。曲長集中：十軌裡有七軌落在 3:31 到 5:16 之間，最長的〈城堡〉6:41 排在倒數第二，同名曲〈这一切没有想象的那么糟〉3:33 收尾、也是全碟第二短的一首。〈鸟语〉與〈墓床〉都是 5:16，分秒不差。這是一張民謠底的碟，人聲與木吉他為主。曲名分成三路——物件（〈陀螺〉〈时光灯〉〈墓床〉〈城堡〉）、自然（〈鸟语〉〈冬天的天空〉）、以及一個外來的典故（〈达摩流浪者〉取自凱魯亞克的小說書名）。十四年後的數位再版把同名曲移到第一軌、另外補進一首〈狐狸〉，其餘十軌的長度與原盤分秒相同。",
+  "keyTracks": [
+   "这一切没有想象的那么糟",
+   "陀螺",
+   "达摩流浪者",
+   "城堡"
+  ],
+  "status": "full",
+  "yearVerified": "**2006，但只有釘定條目一處來源。** 釘定條目 first-release-date 2006、其下唯一 release 同為 2006——**那筆 release 沒有廠牌也沒有條碼**。線上店面 collectionId 1637710480 的 releaseDate **2020-07-30**、℗ 2020，**那是十四年後的數位再版，不是原盤年**。可查的百科裡沒有他的個人條目，也沒有這張的條目，第二處旁證缺席。卡片年份 2006 維持不動；**寫作層不要拿 2020 當發行年**。",
+  "notes": "**探測層判定覆核通過且加值——這是本批四張 CAA 無封面的碟之一**：卡單把這張列為未回撈——實測**找得到**：collectionId **1637710480**，tw 與 hk 兩店攤得出 11 軌、11 軌全有試聽、曲名繁體。**這一筆同時解決封面與試聽兩件事。**\\n**⚠ 但它是 2020 年的再版，軌數與曲序都與原盤不同（裁定 174／175）**：11 軌對 10 軌（多出〈狐狸〉）、同名曲從末軌移到首軌。**十軌的長度分秒相符，確認是同一份母帶。** 寫作層若要寫軌數，寫原盤的 10 軌並註明再版是 11 軌；**不要寫「開場曲是……」**，兩個版本的第一軌不同。\\n**⚠ 盤名兩種寫法**：釘定條目《这一切没有想象的那么糟》用「想象」、線上店面與卡片用「想像」。卡片的寫法與店面同向，**行文照卡片**。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**「第二張」可以寫但只有目錄一處來源**：釘定目錄裡 2002-12 的《走过来 走过去》在前。建議只寫年份。\\n**可寫的硬事實**：〈达摩流浪者〉取自凱魯亞克的同名小說（曲名本身即內證，但**若要點出書名來源請確認寫作層有把握**，否則只寫曲名）；〈鸟语〉與〈墓床〉同為 5:16。\\n**與同批另一張的關聯**：李志的百科條目把他列為多次合作的樂手，李志本批 b 組另收《梵高先生》。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《這一切沒有想像的那麼糟》／《萬曉利》**；別名欄本來就有繁體「萬曉利」，tw／hk 店面也是繁體。\\n**可補的 Apple collectionId：`1637710480`／建議店面 tw（hk 亦可）／11 軌、11 軌全有試聽（⚠ 2020 再版，比原盤多一軌）。⚠ 這一筆同時是這張的封面來源。**"
+ },
+ {
+  "key": "desc2:Carsick Cars|Carsick Cars",
+  "artist": "Carsick Cars",
+  "album": "Carsick Cars",
+  "facts": [
+   {
+    "f": "釘定的 release-group 17e8f0df 欄位：title《Carsick Cars》、artist-credit《Carsick Cars》（藝人實體 38c38eec，country CN、type Group、disambiguation「Chinese indie rock band」、成軍 2005-03）、first-release-date **2007-09**、primary-type Album、secondary-types **空**、轄下 3 個 release。條目掛的風格標籤是 alternative rock、indie rock、jangle pop、noise pop、noise rock、post-punk、rock，並掛了一條 discogs master 連結。",
+    "src": "https://musicbrainz.org/ws/2/release-group/17e8f0df-51e4-336c-ab95-7345cd61b247?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "三筆 release 都是 **10 軌、同曲同序**，全部掛廠牌 Maybe Mars（兵馬司）、編號 Maybe 2.2、條碼 9787880833454：兩筆 2007-09 的 CN／Official CD（一筆用中文曲名、一筆用拼音）與一筆 2018-02-28 的 XW 數位版。中文曲目與長度：1〈志愿的人〉3:14、2〈棍〉5:18、3〈蘑菇〉3:06、4〈中南海〉6:45、5〈厚道〉3:34、6〈熊猫〉6:08、7〈广场〉5:51、8〈热身〉3:09、9〈和声〉3:40、10〈**回授**〉**12:23**。**十軌合計約 53 分，末軌一首就佔掉 12 分 23 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=17e8f0df-51e4-336c-ab95-7345cd61b247&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**線上店面少了一軌。** collectionId **1492978199**，**tw 與 us 兩店的 trackCount 欄寫 10、但 entity=song 只攤得出 9 軌**（cn 攤出 0 軌），9 軌全部有試聽。攤出的軌號是 1、2、3、4、5、6、8、9、10——**第 7 軌〈广场〉整個缺席**。曲名全部繁體：〈志願的人〉3:14／〈棍〉5:18／〈蘑菇〉3:06／〈中南海〉6:45／〈厚道〉3:34／〈熊貓〉6:08／〈熱身〉3:09／〈和聲〉3:40／〈回授〉12:23。releaseDate **2007-09-08**、℗ **2019 天之痕（北京）文化傳播有限公司**（後來的數位版權標示）。",
+    "src": "https://itunes.apple.com/lookup?id=1492978199&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈Carsick Cars〉：「Carsick Cars（也稱：**粉筆線樂隊**）是中國北京的一支樂隊，成立於2005年3月……**2005年3月，三位來自北京理工大學的樂手，吉他手張守望、貝斯手李維思和鼓手李青在校園組建了樂隊。起初樂隊名字叫Psycho Cars，4月1日改成Carsick Cars。**」同條目記 2005 年 10 月他們「與後海大鯊魚、Snapline、哪吒一起……組成了 **No Beijing**」，並明寫「**他們第一張專輯錄制於2007年的春天，由P.K.14樂隊的主唱楊海崧製作**」——**P.K.14 與 Snapline 本批 b 組都另收一張。**",
+    "src": "https://zh.wikipedia.org/wiki/Carsick_Cars"
+   },
+   {
+    "f": "同一個條目記了 2007 年那次演出的變故：「2007年年初，音樂推廣公司Split Works運作Sonic Youth來到中國進行巡演，Carsick Cars作爲其中的嘉賓參與演出。**然而，他們這次演出卻被官方叫停，不允許Carsick Cars參與這次演出。作爲補償，8月25日，26日和31日，樂隊受Sonic Youth邀請參加歐洲巡演**」——布拉格 Archa Theatre、維也納 Openair at Arena 與倫敦 Roundhouse 三場「Open for Sonic Youth」。條目並記《**2008年12月2日，乐队发行第一张同名专辑》**。",
+    "src": "https://zh.wikipedia.org/wiki/Carsick_Cars"
+   },
+   {
+    "f": "英文百科〈Maybe Mars〉：「Maybe Mars is an independent record label **founded in 2007**. Their current catalogue includes **Carsick Cars, Hiperson, P.K.14, Joyside, Snapline, SMZB, and Dear Eloise**, among others.」——本張的編號 Maybe 2.2 是這家廠牌最早的一批之一，同批 b 組的 Snapline《Party Is Over, Pornostar》編號 Maybe 3.1，兩張相鄰。",
+    "src": "https://en.wikipedia.org/wiki/Maybe_Mars"
+   },
+   {
+    "f": "藝人 MBID 38c38eec 分頁全列，名下只有 **5 個 release-group**：2007-09 本張、2008-09-02《Live @ D22》（Album+Live）、2009-06-26《You Can Listen, You Can Talk》、2014-02-28《3》、2024-07-18《Aha》。**本張是名下日期最早的一筆。** 別名欄登錄 Car-Sick Cars 與簡體中文名《晕车的车》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=38c38eec-c6d9-4da0-b2da-2fba8458a3cb&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "末軌〈回授〉一首跑了 12 分 23 秒，前面九軌加起來也才四十分鐘",
+   "第七軌〈广场〉在線上版整個消失——軌號從 6 直接跳到 8"
+  ],
+  "sound": "十軌、合計約 53 分。結構上前九軌都是三到六分半的短中曲——最短的〈蘑菇〉3:06 與〈热身〉3:09，中段〈中南海〉6:45 與〈熊猫〉6:08 稍長——然後末軌〈回授〉突然給出 12:23，一首就佔掉全碟近四分之一。條目掛的標籤把 noise rock、noise pop 與 jangle pop 並列，錄音由另一支同批收錄的樂隊主唱擔任製作。曲名全部是兩到三個字的日常名詞（〈棍〉〈蘑菇〉〈中南海〉〈熊猫〉〈广场〉），末軌那個〈回授〉正是吉他回授的技術名詞——與長度一起看，等於把整張的收尾交給噪音本身。",
+  "keyTracks": [
+   "中南海",
+   "回授",
+   "熊猫",
+   "蘑菇"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說：2007-09（釘定條目與線上店面）對 2008-12-02（中文百科）。** 釘定條目 first-release-date 2007-09、其下兩筆 CN／Official CD（Maybe Mars 2.2、條碼 9787880833454）同為 2007-09；線上店面 collectionId 1492978199 的 releaseDate **2007-09-08**，與釘定條目同月。**但中文百科〈Carsick Cars〉明寫《2008年12月2日，乐队发行第一张同名专辑》**，比前兩處晚了一年三個月；同一條目又說「第一張專輯錄製於 2007 年的春天」。**兩個 2007 對一個 2008，卡片年份 2007 維持不動；寫作層不要寫 2008。** ℗ 標的 2019 是後來的數位版權標示，不可採。",
+  "notes": "**探測層判定覆核通過且加值**：卡單記「1492978199 cn《Carsick Cars》2007 10 軌｜依據：盤名＋年份」——**配對正確，但軌數要修正**：實測 **cn 店面 entity=song 攤出 0 軌，tw 與 us 攤得出 9 軌**（不是欄位寫的 10 軌），9 軌全有試聽。**缺的是第 7 軌〈广场〉**，攤出的軌號從 6 直接跳到 8。依裁定 175 以曲目列為準。封面 CAA 亦有（release-group/17e8f0df 回 200）。\\n**⚠ 年份兩說**見 `yearVerified`——這是本張最需要注意的一點。\\n**⚠ 同名污染**：以「Carsick」search 會回一個完全不相干的加拿大廠牌藝人（artistId 120170292，2006 年的《Carsick》，Drip Audio），**軌數也是 9 軌、也有一首 12 分的末軌**（Rise to Downpour 12:02），**極容易誤配**。只能用 collectionId 1492978199 直查。\\n**自我同名**（盤名＝掛名），線上店面找得到，符合 c-67 的收錄條件。\\n**拉丁掛名維持不變**（本批規則第 6 條）：釘定條目的別名欄有簡體中文名《晕车的车》、百科另記「粉筆線樂隊」這個中文別稱，**但卡片沿用拉丁掛名正確**。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。**可寫的硬事實**：2005 年 3 月由三名北京理工大學學生組成、原名 Psycho Cars、2005 年 10 月與後海大鯊魚等組成 No Beijing、專輯錄於 2007 年春天並由 P.K.14 的主唱製作、廠牌編號 Maybe 2.2——五條都有來源。\\n**⚠ 政治敏感**：百科記 2007 年那次 Sonic Youth 中國巡演「被官方叫停、不允許 Carsick Cars 參與」，隨後樂隊受邀參加歐洲巡演。**這是有來源的事實，可以照抄動作，但不得推測原因、不得評論。** 曲名〈中南海〉同理——**照引沒問題，不得解讀。**\\n**可補的 Apple collectionId：`1492978199`／建議店面 tw（us 亦可；cn 攤不出曲目）／欄位寫 10 軌、實際攤出 9 軌、9 軌全有試聽。**"
+ },
+ {
+  "key": "desc2:Snapline|Party Is Over, Pornostar",
+  "artist": "Snapline",
+  "album": "Party Is Over, Pornostar",
+  "facts": [
+   {
+    "f": "釘定的 release-group 376eaf20 欄位：title《Party Is Over, Pornostar》、artist-credit《Snapline》（藝人實體 6084f926，country CN、area Beijing、type Group、成軍 2005）、first-release-date **2007-09-08**、primary-type Album、secondary-types **空**、轄下 **4 個 release**。條目掛的風格標籤是 dance、**dance-punk**、electropunk、experimental、gothic rock、post-punk、punk。",
+    "src": "https://musicbrainz.org/ws/2/release-group/376eaf20-e150-312e-b65a-9d677bb3b776?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "**四筆 release 分成兩種曲目：中國原版與「Martin Atkins Version」。** 2007-09-08 的 CN／Official CD（Maybe Mars，編號 **Maybe 3.1**、條碼 9787880833447）11 軌：1 Close Your Cold Eyes 3:25、2 Holy Comments 3:24、3 Catch You Low 4:26、4 Porno Star 5:40、5 Jenny 2:28、6 Let In 3:56、7 Single Beat 2:51、8 S#1 3:34、9 S#2 3:28、10 Spinning 4:11、11 **Yellow Cab** 4:24；2010-04 的 AU／Official CD（tenzenmen 038TZM／Maybe Mars 3.2）曲目完全相同。另兩筆標《…(Martin Atkins Version)》（Invisible China 發行，2007-09-08 的 XW 數位版與 2008-09-02 的 US 數位版）同樣 11 軌，但**末軌換成 Close Your Cold Eyes (Remix) 2:58、沒有 Yellow Cab**，曲序也不同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=376eaf20-e150-312e-b65a-9d677bb3b776&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面同樣有兩筆、對應上述兩種版本，**兩筆都是 11 軌、11 軌全部有試聽**：collectionId **1558793452**《Party Is Over, Pornostar》（tw／hk／us，releaseDate 2018-01-01、℗ **2018 天之痕（北京）文化傳播有限公司**）採**中國原版曲目**（末軌 Yellow Cab 4:24），但第 5、6 軌對調（Single Beat 在 Jenny 之前）；collectionId **289738689**《Party Is Over, Pornostar (Martin Atkins Version)》（tw／hk／us，releaseDate **2008-09-02**、℗ 2008 Invisible Records）採**混音版曲目**（末軌 Close Your Cold Eyes (Remix) 2:58）。",
+    "src": "https://itunes.apple.com/lookup?id=1558793452&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "英文百科〈Maybe Mars〉：「Maybe Mars is an independent record label **founded in 2007**. Their current catalogue includes Carsick Cars, Hiperson, P.K.14, Joyside, **Snapline**, SMZB, and Dear Eloise」——本張編號 Maybe 3.1，與同批 b 組 Carsick Cars 那張的 Maybe 2.2 相鄰，兩張同月（2007 年 9 月）出版。",
+    "src": "https://en.wikipedia.org/wiki/Maybe_Mars"
+   },
+   {
+    "f": "中文百科〈Carsick Cars〉記兩支樂隊的關係：2005 年 10 月他們「與後海大鯊魚、**Snapline**、哪吒一起，效仿20世紀70年代紐約地下無浪潮音樂運動的作品合輯『No New York』，組成了 **No Beijing**」；2009 年 11 月「Carsick Cars與小河，WHITE，PK14和 **Snapline** 樂隊於美國巡演」；2010 年 Carsick Cars 的貝斯手李維思與鼓手李青退團後「將音樂重心更多的放在 **Snapline** 與 Soviet Pop 上」——**小河與 P.K.14 本批也都收了。**",
+    "src": "https://zh.wikipedia.org/wiki/Carsick_Cars"
+   },
+   {
+    "f": "藝人 MBID 6084f926 分頁全列，名下只有 **5 個 release-group**：2007-09-08 本張、2007-10《Be Brit Now 2007.7.14 Mao Live House》（Album+Live）、2010-04-06《Future Eyes》、2012-04-20《Phenomena》、2018-11-29《Shou Hua》。**本張是名下日期最早的一筆。** 這個實體沒有登錄任何別名。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6084f926-d798-4468-9e2c-ba64a4b7bfbc&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟有兩種末軌：中國版收〈Yellow Cab〉，海外的混音版換成〈Close Your Cold Eyes〉的重混",
+   "編號 Maybe 3.1，與同月出版的 Carsick Cars（Maybe 2.2）是同一家廠牌開張時的頭幾張"
+  ],
+  "sound": "十一軌、合計約 40 分（中國原版）。這是一張短曲密集的碟：十一軌裡有五軌不到三分半，最短的〈Jenny〉2:28 與〈Single Beat〉2:51，最長的〈Porno Star〉5:40 也不到六分鐘。條目掛的標籤把 dance-punk、electropunk 與 gothic rock 並列——節奏機器與冷調的貝斯線是主要質地，第 8、9 兩軌乾脆只用編號當曲名（S#1、S#2）。**同一批錄音有兩種收尾**：中國版末軌是〈Yellow Cab〉4:24，海外發行的「Martin Atkins Version」把它拿掉、換成〈Close Your Cold Eyes〉的重混 2:58，曲序也重排過。",
+  "keyTracks": [
+   "Close Your Cold Eyes",
+   "Porno Star",
+   "Yellow Cab",
+   "Jenny"
+  ],
+  "status": "full",
+  "yearVerified": "**2007 ✓，逐日相符。** 釘定條目 first-release-date 2007-09-08、其下 CN／Official CD（Maybe Mars 3.1、條碼 9787880833447）與 XW 數位版同為 2007-09-08。**線上店面的兩筆 ℗ 年份都不是原盤年**：1558793452 標 2018、289738689 標 2008（那是 US 數位版的年份，與釘定條目底下的 2008-09-02 US release 相符）。卡片年份 2007 正確。要分開的年份：2008 的 US 混音版、2010-04 的澳洲 CD、2018 的數位再發。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為未回撈——實測**有兩筆**，且**兩筆都是 11 軌、11 軌全有試聽**。**建議用 1558793452**（tw／hk／us；採中國原版曲目、末軌 Yellow Cab，與釘定條目的首版一致）；**289738689 是海外的 Martin Atkins Version**，末軌不同、曲序不同，**不要混用**。封面 CAA 亦有（release-group/376eaf20 回 200）。\\n**⚠ 兩種版本的差異要寫清楚**：中國版末軌〈Yellow Cab〉／海外混音版末軌〈Close Your Cold Eyes (Remix)〉；線上那筆 1558793452 雖採中國版曲目，但第 5、6 軌與釘定條目對調。**不要寫「第五軌是……」這種依賴軌號的句子。**\\n**盤名帶一個半形逗號**（Party Is Over, Pornostar），比對與正規化時要注意；釘定條目底下另有把「Pornostar」拆成「Porno Star」兩個字的曲名寫法。\\n**拉丁掛名維持不變**（本批規則第 6 條）：這個藝人實體**沒有登錄任何中文別名**，拉丁寫法是唯一寫法。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。**可寫的硬事實**：2005 年成軍於北京、廠牌編號 Maybe 3.1、與 Carsick Cars 同屬 No Beijing 那一批、Carsick Cars 的兩位原始成員後來把重心移到這支團——四條都有來源。\\n**可補的 Apple collectionId：`1558793452`／建議店面 tw（hk／us 亦可）／11 軌、11 軌全有試聽。（另一筆 289738689 是海外混音版，備而不用。）**"
+ },
+ {
+  "key": "desc4:刺蝟|Noise Hit World 噪音襲擊世界",
+  "artist": "刺蝟",
+  "album": "Noise Hit World 噪音襲擊世界",
+  "facts": [
+   {
+    "f": "釘定的 release-group 2789851e 欄位：title《Noise Hit World 噪音袭击世界》（**中英並列，中文部分是簡體**）、artist-credit《刺猬》（藝人實體 068dfa29，country CN、area Beijing、type Group、disambiguation「Chinese indie rock trio」、成軍 2005-01）、first-release-date **2007-05-01**、primary-type Album、secondary-types **空**、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2789851e-020b-4201-a756-2010e3108b73?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 都是 **11 軌、同曲同序**、共用條碼 9787880889277：2007-09-30 的 XW／Official CD（Badhead，編號 **B-033**）與 2007-05-01 的數位版（摩登天空）。逐軌長度：1〈Toy&61Festival〉3:42、2〈Pumpkin〉3:40、3〈Elf〉1:41、4〈Love Tosh〉3:19、5〈Dragon Dung Ball〉3:06、6〈Nova Nova〉4:13、7〈Noise Hit World〉2:38、8〈It's Not Yourself But It's Future〉3:08、9〈Apart〉4:14、10〈Our Last Word〉3:06、11〈白纸年华〉3:57。**十一軌合計約 36 分半——本批第二短的一張**；十一軌裡只有第 11 軌用中文題，其餘全是英文。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2789851e-020b-4201-a756-2010e3108b73&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**線上店面有兩筆，是同一張碟的英文版與中文版。** collectionId **1444302648**《Noise Hit World》（tw，releaseDate 2007-11-01、℗ 2007 Modern Sky）**11 軌、11 軌全部有試聽**，曲名全英文（Toy & 6.1／Pumpkin／Elf／Love Tosh／Dragon Dung Ball／Nova Nova／Noise Hit World／It's Not Yourself but It's Future／Apart／Our Last Word／**White Paper Years**）；collectionId **1808896136**《噪音袭击世界》（tw，releaseDate 2007-10-01、℗ 2007 北京摩登天空文化發展有限公司）同樣 **11 軌、11 軌全部有試聽**，**曲名全部是繁體中文**（〈玩具和61兒童節〉3:42／〈南瓜〉3:40／〈小鬼兒〉1:41／〈愛之廢語〉3:19／〈龍珠〉3:06／〈新星 新星〉4:13／〈噪音襲擊世界〉2:38／〈這不是你自己但這是未來〉3:08／〈分離〉4:14／〈我們最後的話〉3:06／〈白紙年華〉3:57）。**兩筆的逐軌長度完全相同，是同一份母帶的兩種曲名版本。**",
+    "src": "https://itunes.apple.com/lookup?id=1808896136&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**中文曲名與英文曲名一一對應**（由上述兩筆逐軌長度比對得出）：Toy&61Festival＝〈玩具和61兒童節〉、Pumpkin＝〈南瓜〉、Elf＝〈小鬼兒〉、Love Tosh＝〈愛之廢語〉、Dragon Dung Ball＝〈龍珠〉、Nova Nova＝〈新星 新星〉、Noise Hit World＝〈噪音襲擊世界〉、It's Not Yourself But It's Future＝〈這不是你自己但這是未來〉、Apart＝〈分離〉、Our Last Word＝〈我們最後的話〉、White Paper Years＝〈白紙年華〉。**釘定條目採的是英文那一套，只有末軌用中文。**",
+    "src": "https://itunes.apple.com/lookup?id=1444302648&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 MBID 068dfa29 分頁全列，名下共 **11 個 release-group**；primary-type Album 且 secondary-types 為空的依日期排序為 2006-03-12《Happy Idle Kid》、2007-05-01 本張、2009《白日夢藍》、2011-03-11《甜蜜与杀害》、2012-04-01《Sun Fun Gun》、2015-03-03《神经元 (Neurons)》、2018-04-25《生之响往》、2020-07-12《赤子白仙》、2022-04-08《乌鸦谷》。**本張排第二。** 別名欄登錄英文 Hedgehog、「刺蝟HEDGEHOG」、簡體《刺猬乐队》與繁體「刺蝟樂隊」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=068dfa29-4ce1-46a8-9647-f612b6750387&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌三十六分半，第三軌〈小鬼兒〉只有 1 分 41 秒",
+   "同一張碟上架了兩次：一次全用英文曲名，一次全用中文，長度分秒相同"
+  ],
+  "sound": "十一軌、合計約 36 分半，**是本批第二短的一張**。全程維持在快而短的節奏上：十一軌裡有六軌不到三分半，最短的〈Elf〉（中文題〈小鬼兒〉）只有 1:41，最長的〈Nova Nova〉4:13 也沒破四分半。編制是三人團，噪音吉他與女鼓手的敲擊是主要質地。**曲名有中英兩套**——釘定條目與其中一個線上版本用英文（Pumpkin／Elf／Dragon Dung Ball／Our Last Word），另一個線上版本用中文（〈南瓜〉〈小鬼兒〉〈龍珠〉〈我們最後的話〉），逐軌長度分秒相同。同名曲〈Noise Hit World〉2:38 排在正中間第七軌，收尾的〈白纸年华〉3:57 是全碟唯一在兩種版本裡都用中文題的一首。",
+  "keyTracks": [
+   "Noise Hit World",
+   "白纸年华",
+   "Nova Nova",
+   "Elf"
+  ],
+  "status": "full",
+  "yearVerified": "**2007 ✓，三處相符，但月份四說。** 釘定條目 first-release-date 2007-05-01、其下數位版同為 2007-05-01、CD 版記 2007-09-30；線上店面兩筆分別記 **2007-10-01**（中文版）與 **2007-11-01**（英文版），℗ 都是 2007 摩登天空。**年份四處一致、月份從 5 月散到 11 月**，寫作層只寫年份、**不要寫月份**。卡片年份 2007 正確。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為「目錄裡找不到」——實測**有兩筆，而且都是滿試聽**：**1808896136**（中文曲名、繁體，tw）與 **1444302648**（英文曲名，tw），兩筆都是 11 軌、11 軌全有試聽、逐軌長度分秒相同。**建議釘 1808896136**（曲名繁體，與 09-06 裁定同向）。封面 CAA 亦有（release-group/2789851e 回 200）。\\n**⚠ 曲名兩套，寫作層要擇一並保持一致**：卡片的盤名《Noise Hit World 噪音襲擊世界》本身就是中英並列，行文引曲名建議用中文那一套（並在需要時附英文），第 4 條事實已列出一一對應表。\\n**釘定條目的中文部分是簡體「噪音襲擊世界」，卡片依 09-06 裁定用繁體「噪音襲擊世界」**；別名欄本來就有繁體「刺蝟樂隊」，線上中文版的曲名也全是繁體。\\n**⚠ 掛名要小心**：這支樂隊的 Apple 主目錄掛在另一個 artistId（1142174628「刺蝟」）底下，那個目錄非常大（攤開近兩百軌，含大量現場與綜藝版本），**不要從那裡撈**；本張的兩筆用 collectionId 直查即可。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**「第二張」可以寫但只有目錄一處來源**（2006-03-12《Happy Idle Kid》在前）。建議只寫年份。\\n**可補的 Apple collectionId：`1808896136`（中文曲名，繁體）／建議店面 tw／11 軌、11 軌全有試聽。備選 `1444302648`（英文曲名，同樣 11 軌全試聽）。**"
  }
 ]
