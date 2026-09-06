@@ -230,5 +230,225 @@
   "status": "full",
   "yearVerified": "一致，1994（**這是編輯發行年，不是錄音年**）。MB release-group first-release-date **1994**、其下唯一 release 記 1994（HK、Official、CD、barcode 7 2438 31403 2 9）、Apple tw 724959370 的 releaseDate 1994-01-01、℗ 1994 EMI (HK) Ltd.，三處一致。**收錄的錄音本身是 1950 年代**：Apple 逐軌註明的十二部電影全部是 1950 年代的國語片，〈桃花江〉出自 1956 年電影《桃花江》（中文維基姚莉條目）。行文寫年份時要分清 1994（編輯年）與 1950 年代（錄音年）。",
   "notes": "**§5.6 合輯覆核（本批兩張之一）——結論：成立。**卡單 `releaseType` 填 Compilation、`exceptionReason` 寫「百代中國時代曲名典第 48 集，把姚莉 1940–50 年代替國語片唱的插曲整編」。三項都對得上：（1）MB 這個 RG 的 secondary-types 確實含 Compilation；（2）Apple 藝人目錄把它掛在 EMI (HK)《百代‧中國時代曲名典》系列下，同系列在本批另有龔秋霞第 24 集；（3）Apple 逐軌註記證明 20 軌來自 12 部電影、是**編輯而成的曲目集**而非一次錄音。**兩個證據 URL 也都打得開且各自獨立**（MB release-group 端點證 Compilation 次類型與 20 軌，Apple lookup 端點證系列歸屬與逐軌電影出處）。\\n**探測層可補的 Apple 條目：`tw` collectionId 724959370**（20 軌全有 previewUrl、曲序與 MB 逐位置相符、逐軌長度相同到秒、trackCount 欄與曲目列都是 20）。\\n**曲名以 MB 為準的四處**：MB〈毋忘我〉／Apple〈母忘我〉、MB〈伴侶哪裡找〉／Apple〈伴侶那裡找〉、MB〈重回你懷抱〉／Apple〈重回你的懷抱〉、MB〈我睡在雲霧裡〉／Apple〈我睡在雲霧裏〉。**〈毋忘我〉那一處 Apple 是明顯形近錯字，取正字**（同策展層第三條裁定的形狀）。\\n**盤名兩種寫法**：MB 與卡單寫《電影歌曲精選》，Apple 貨架上寫《姚莉電影歌曲精選》（多了藝人名），行文取卡單那一種。\\n**序數不得寫。**MB 名下只有 4 個 RG，Apple 目錄 17 筆多半是後世精選，姚莉三十多年的錄音沒有可查證的作品序列。維基提到的「第一張唱片〈賣相思〉」是**單曲**不是專輯，不能拿來替本張排序。"
+ },
+ {
+  "key": "desc4:靜婷|I Live for You",
+  "artist": "靜婷",
+  "album": "I Live for You",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8b4e96ce 的欄位：title「I Live for You」、artist-credit「Tsin Ting」（藝人實體 MBID ab810190）、first-release-date 1971、primary-type Album、secondary-types 空。轄下只有 1 個 release：1971 年 HK、Official、12 吋黑膠、**廠牌同時掛 EMI 與 Pathé、catno 都是 S-CPAX-367**、12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/8b4e96ce-bb8e-4da2-901f-cea2713f0a63?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（e17fb499）的逐軌曲目，12 軌、無長度登錄、**十二首全部是英文曲名**：1〈I Live for You〉2〈A Hurting Kind of Love〉3〈Last Chance〉4〈Spring Is Gone〉5〈Where Is He Now〉6〈Happy〉7〈Forever True (Bluce's Song)〉8〈Let Me Gaze Into Your Eyes Once More〉9〈I Can't Forget〉10〈Cruel Love〉11〈Spring Memories〉12〈I Face the Night Without You〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b4e96ce-bb8e-4da2-901f-cea2713f0a63&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列靜婷名下 5 個 release-group，其中 primary-type=Album 且 secondary-types 為空的**只有本張一筆**（1971 年《I Live for You》）。也就是說 MB 上靜婷十幾年的百代錄音只建了這一張原盤。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ab810190-cdda-48d7-92c6-206a42683610&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "**Apple 上沒有這張碟。**`search?term=靜婷 I Live for You&country=tw&entity=song` 回 0 筆，`term=靜婷 A Hurting Kind of Love` 也回 0 筆。藝人實體查得到（`search?term=靜婷&entity=musicArtist&country=tw` 回 artistId **129732447**「靜婷」），其目錄 `lookup?id=129732447&country=tw&entity=album` 列出的是《痴痴地等》1968（EMI (Hong Kong)）、《仙樂飄飄處處聞》1994（EMI (HK)）、永恆唱片的《山歌姻緣》1980／《明日之歌》1981／《痴痴地等》1982 等，**沒有任何一筆是《I Live for You》**。",
+    "src": "https://itunes.apple.com/lookup?id=129732447&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "中文維基潘迪華條目把靜婷列為 1960 年代香港「五大歌后」之一（另四人為潘秀瓊、顧媚、崔萍、潘迪華本人）。姚莉條目則記姚敏 1967 年過世後，姚莉在 1970 年代受百代之邀轉任監製，帶過的歌手包括潘秀瓊、崔萍、**靜婷**、梁萍——本張 1971 年的百代／EMI 盤正落在那段時期。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%8E%89"
+   },
+   {
+    "f": "本盤的廠牌登錄形態值得記一筆：MB 這張 release 的 label-info 同時掛「EMI」與「Pathé」兩個廠牌、共用同一個 catno S-CPAX-367。同批香港百代盤的另一個例子是李香蘭 1957 年的 CPA 134（只掛 Pathé），編號前綴由 CPA 變成 S-CPAX，S 代表立體聲——**1957 年那張是單聲道 10 吋，1971 年這張是立體聲 12 吋**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c50a9172-2109-4d57-943b-08ca3e077f96&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌，十二個英文曲名——1971 年百代替靜婷做的這張碟，一句中文歌名都沒有印在盤面上",
+   "唱片上掛 EMI 與百代兩個廠牌、同一個編號 S-CPAX-367，那個 S 是立體聲的意思"
+  ],
+  "sound": "單片 12 吋黑膠、12 軌，MB 未登錄任何一軌的長度，Apple 上也查不到這張碟，**逐軌長度與總長目前無來源可引，行文不要寫時間**。可確認的只有曲目形態：十二首全部登錄成英文曲名，其中〈Forever True〉還帶一個副題（Bluce's Song），〈Spring Is Gone〉〈Spring Memories〉是同一組季節主題的兩首，〈I Live for You〉〈I Can't Forget〉〈I Face the Night Without You〉三首以第一人稱起題。廠牌是香港百代（EMI／Pathé），編號 S-CPAX-367 的 S 表示立體聲錄音。",
+  "keyTracks": [
+   "I Live for You",
+   "A Hurting Kind of Love",
+   "I Face the Night Without You"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1971，**但只有一個來源。**MB release-group first-release-date **1971**、其下唯一 release 也記 1971（HK、Official、EMI／Pathé S-CPAX-367），兩者其實是同一筆建檔的兩層。**Apple 上沒有這張碟、中文維基沒有靜婷條目**，第三、第四處對照都不存在。1971 這個年份目前**只有 MB 一處可查**，行文不要把它當成經過交叉驗證的年份。",
+  "notes": "**Apple 上買不到，探測層的 unavailable 判定正確。**覆核方式（裁定 173，兩個端點都跑過）：`search` 用盤名與兩首曲名各查一次，全回 0 筆；藝人目錄 `lookup?id=129732447&country=tw&entity=album` 全列也沒有這張。**沒有可補的 collectionId。**\\n**裁定 192 在這張上不成立、可以更新**：靜婷用漢字在 `search?term=靜婷&entity=musicArtist&country=tw` **查得到**藝人實體（129732447），不是「連藝人實體都 search 不出來」。本批實測，崔苔菁（1094784330）、沈文程（1105496867）、仙杜拉（401426980）、太極（372726812）、夏韶聲（201526994）在 tw 店面同樣都搜得出來——**裁定 192 列的五位這一次全部命中**，那條裁定應改記為「當時查不到」而非「查不出來」。\\n**掛名**：MB artist-credit 是英文盤面署名「Tsin Ting」，依策展層已立的裁定不採用，取繁體漢字**靜婷**（Apple 藝人實體的 name 欄也是「靜婷」）。\\n**曲名全部是英文原題，照 MB 那一份寫**，不要自行譯成中文。\\n**序數不得寫。**MB 名下只有 5 個 RG、純 Album 只有這一張，Apple 目錄裡另有 1968／1980／1981／1982 的盤，兩邊拼不出完整序列。\\n**這一筆的事實密度偏低**（無逐軌長度、無維基條目、無 Apple 條目），寫作層要有心理準備：可寫的只有曲目形態、廠牌編號與時代位置。"
+ },
+ {
+  "key": "desc4:張露|繁星點點 張露",
+  "artist": "張露",
+  "album": "繁星點點 張露",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2070a4d2 的欄位：title「繁星點點 張露」、artist-credit「張露」（藝人實體 MBID 08571849）、first-release-date **1973-10-23**、primary-type Album、secondary-types 空。轄下只有 1 個 release，而且**那一筆是 Digital Media 不是黑膠**：日期同為 1973-10-23、country **空**、Official、廠牌欄登錄成簡體的「环球唱片」、11 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2070a4d2-ca83-4d0d-940d-52f3f30bec5a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（d18dce27）的逐軌曲目與長度，11 軌：1〈繁星點點〉178 秒 2〈夢醒不見你〉220 3〈永遠在一起〉196 4〈永遠相依〉166 5〈美麗的暇想〉167 6〈小花朵〉135 7〈世界真有趣〉157 8〈不要忘記〉187 9〈小城春回〉191 10〈相親相愛〉160 11〈昨天 今天 明天〉154。總長約 33 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2070a4d2-ca83-4d0d-940d-52f3f30bec5a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列張露名下只有 **2 個 release-group**，其中 primary-type=Album 且 secondary-types 為空的僅本張一筆。張露 1940 年代到 1970 年代的百代錄音在 MB 上幾乎沒有建檔。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=08571849-85b7-4a1e-8b65-e857346f0efb&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "**Apple 上沒有這張碟。**`search?term=張露 繁星點點&country=tw&entity=song` 回傳的唯一一筆掛「張露」的結果是 2021 年《中國好聲音》的現場版〈縱身一躍〉，與本人無關；`term=張露 夢醒不見你` 回 0 筆。藝人實體查得到（`search?term=張露&entity=musicArtist&country=tw` 回 artistId **27386833**「張露」），但其目錄裡沒有《繁星點點》。",
+    "src": "https://itunes.apple.com/search?term=%E5%BC%B5%E9%9C%B2%20%E7%B9%81%E6%98%9F%E9%BB%9E%E9%BB%9E&country=tw&media=music&entity=song&limit=25"
+   },
+   {
+    "f": "中文維基張露條目：本名張秀英，1932 年生於蘇州、2009 年逝於香港，1940 年在上海電台起唱，藝名由電台稱呼「張大小姐」的上海話讀音轉來，其後與百代唱片簽約。1941 年推出首張個人唱片〈小巷春〉與〈關不住〉；1948 年因〈你真美麗〉紅遍上海；1952 年遷居香港，代表作〈給我一個吻〉（1954）唱到家喻戶曉，有「中國歌后」之稱。**1975 年退出歌壇**，1980 年移民加拿大、1985 年迴流香港。她 1957 年與西班牙裔樂隊領班兼鼓手杜奧利結婚，兩個兒子杜德智、杜德偉都是香港歌手。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%B2"
+   },
+   {
+    "f": "**這張碟落在她歌唱生涯的尾聲**：中文維基記她 1975 年退出歌壇，MB 這個 release-group 的 first-release-date 是 1973-10-23——**距離收山不到兩年**。同一條目也把她與顧媚、潘迪華、靜婷列為相關條目，四人同屬 1950–70 年代香港國語歌壇的同一批人，本批 20 張裡有其中三位。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%B2"
+   }
+  ],
+  "hookCandidates": [
+   "十一首歌、三十三分鐘，最短的〈小花朵〉只有兩分十五秒——1973 年的張露，離退出歌壇只剩兩年",
+   "她的藝名是電台叫錯出來的：上海話裡「大小姐」的「大」讀近「露」，張大小姐就成了張露"
+  ],
+  "sound": "單片 11 軌，MB 逐軌 178／220／196／166／167／135／157／187／191／160／154 秒，總長約 33 分鐘。**十一首全部落在 2 分 15 秒到 3 分 40 秒之間，最長的是第 2 軌〈夢醒不見你〉3 分 40 秒、最短的是第 6 軌〈小花朵〉2 分 15 秒**，平均 3 分整——這是 1970 年代初國語流行盤的標準單曲長度，沒有任何一軌是長篇編曲。曲名本身透露編排：〈永遠在一起〉〈永遠相依〉〈相親相愛〉三首成組，〈小城春回〉〈昨天 今天 明天〉則是時序題。**Apple 上查不到這張碟，無法用第二個來源核對長度**，上列數字全部出自 MB 那一筆 Digital Media release。",
+  "keyTracks": [
+   "繁星點點",
+   "夢醒不見你",
+   "昨天 今天 明天"
+  ],
+  "status": "partial",
+  "yearVerified": "**1973 只有 MB 一處可查，而且那一筆是數位條目。**MB release-group first-release-date **1973-10-23**、其下唯一 release 也是 1973-10-23，但**那個 release 的 format 是 Digital Media、country 空**——換句話說 MB 上沒有任何一筆 1973 年的實體發行可以佐證這個日期，日期本身很可能來自後來數位化時沿用的原始發行日（裁定 220 的形狀）。Apple 上沒有這張碟，中文維基張露條目沒有提到這張專輯。**行文寫 1973 可以（卡單與 MB 一致），但不要寫成「經多方查證」。**",
+  "notes": "**Apple 上買不到，探測層的判定正確。**覆核方式（裁定 173）：`search` 用盤名與第 2 軌曲名各查一次都沒有命中本人的這張碟；藝人實體查得到（tw artistId 27386833），目錄裡沒有。**沒有可補的 collectionId。**\\n**裁定 220 要標記**：本 RG 轄下唯一的 release 是 Digital Media、無國別，first-release-date 與它同日。**這是「以再發（數位）建檔卻掛原始日期」的典型形狀**，下游若要引 1973-10-23 這個精確日期，要註明來源只有一處。\\n**簡體登錄要轉繁**：MB 這筆 release 的廠牌欄寫成簡體「环球唱片」，依策展層已立的第二條裁定，卡片與行文寫**環球唱片**（卡單已經是繁體，正確）。\\n**掛名**：MB artist-credit 本來就是繁體漢字「張露」，Apple 藝人實體 name 欄也是「張露」，無分歧。\\n**序數不得寫。**MB 名下只有 2 個 RG，維基只提到 1941 年的首張唱片是〈小巷春〉／〈關不住〉（**是 78 轉單曲不是專輯**），拿來替 1973 年這張排序會出錯。\\n**可寫的傳記事實**（維基有具名來源）：本名張秀英、藝名由來、〈給我一個吻〉、1975 年退出歌壇、杜德偉的母親。**「中國歌后」是稱號不是排行榜**，可寫。"
+ },
+ {
+  "key": "desc4:潘秀瓊|Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)",
+  "artist": "潘秀瓊",
+  "album": "Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 145dc64c 的欄位：title「Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)」、artist-credit「潘秀瓊」（繁體漢字，藝人實體 MBID 5b2b4dc3）、first-release-date 1960、primary-type Album、secondary-types 空。轄下只有 1 個 release，而且**發行地是美國**：1960 年 **US**、Official、12 吋黑膠、廠牌 **Capitol Records**、catno T 10326（另登錄 T-10326）、12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/145dc64c-8d7d-45ce-9127-086301c8a8f4?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（b7bf70d3）的逐軌曲目，12 軌、無長度登錄、**十二首國語歌全部只印英文譯題**：1〈The Foggy Night〉2〈Little Darling〉3〈Lover's Tears〉4〈I Love Him, Too〉5〈Blue Love〉6〈It's So Unusual〉7〈Eyes Closed〉8〈A Caged Bird〉9〈A White Handkerchief〉10〈I Could Hardly Give Him Up〉11〈On The Elephant Back〉12〈Mysterious Charm〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=145dc64c-8d7d-45ce-9127-086301c8a8f4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Capitol 的 T 10326 屬於該廠的國際系列**：這是一張由美國廠牌在美國本土發行、內容是國語流行曲的 LP，副題直接寫「By The Orient's Favorite Vocalist」（東方最受歡迎的歌者）——盤名與副題本身就是這張碟的定位說明。MB 這筆 release 的 country 欄是 US、廠牌欄是 Capitol Records，不是香港百代。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=145dc64c-8d7d-45ce-9127-086301c8a8f4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列潘秀瓊名下只有 **2 個 release-group**，其中 primary-type=Album 且 secondary-types 為空的僅本張一筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5b2b4dc3-ab3d-4667-94ef-3883e81b0f89&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "**Apple 上沒有這張碟。**`search?term=潘秀瓊 The Foggy Night&country=tw&entity=song` 與 `term=Poon Sow Keng Lover's Tears` 都回 0 筆掛本人的結果。藝人實體查得到兩個（tw：**14875670**「潘秀瓊」與 1482555177「潘秀瓊」），目錄裡是 2015 年 Universal 的《柔情萬縷》《Poon Sow Keng》等復刻條目，**沒有任何一筆對得上 Capitol T 10326 的 12 軌曲目**。",
+    "src": "https://itunes.apple.com/lookup?id=14875670&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "中文維基〈情人的眼淚〉消歧義頁明確記載：〈情人的眼淚 (歌曲)〉是**潘秀瓊的成名曲，於 1958 年錄製**（並特別註明姚蘇蓉不是此曲的原唱者）。潘迪華條目則把潘秀瓊列為 1960 年代香港「五大歌后」之首（另四人為顧媚、崔萍、靜婷、潘迪華）。本盤第 3 軌的英文題〈Lover's Tears〉即〈情人的眼淚〉的直譯。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B7%9A"
+   }
+  ],
+  "hookCandidates": [
+   "美國 Capitol 在本土發的一張國語唱片，副題印著「東方最受歡迎的歌者」——十二首中文歌，盤面上一個中文字都沒有",
+   "第三軌〈Lover's Tears〉就是〈情人的眼淚〉：她 1958 年的成名曲，兩年後換成英文題賣到美國去"
+  ],
+  "sound": "單片 12 吋黑膠、12 軌，MB 未登錄任何一軌的長度，Apple 上也查不到這張碟，**逐軌長度與總長無來源可引，行文不要寫時間**。可確認的是曲目形態：十二首國語流行曲全部以英文譯題印在盤面上，其中〈Lover's Tears〉是〈情人的眼淚〉、〈A Caged Bird〉〈On The Elephant Back〉〈A White Handkerchief〉這類直譯題則對應同時期的國語小調。發行方是美國 Capitol（catno T 10326）而非香港廠牌，錄音本身則是香港／新馬一路的國語時代曲，是「東南亞錄、美國發」的形態。",
+  "keyTracks": [
+   "Lover's Tears",
+   "The Foggy Night",
+   "A Caged Bird"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1960，**但只有 MB 一處。**MB release-group first-release-date **1960**、其下唯一 release 也記 1960（US、Official、Capitol T 10326），兩者是同一筆建檔的兩層。**Apple 上沒有這張碟、中文維基沒有潘秀瓊條目**，第三、第四處對照不存在。可交叉的只有一個側面事實：維基〈情人的眼淚〉消歧義頁記該曲 1958 年錄製，本盤第 3 軌〈Lover's Tears〉即該曲的英譯，**1960 年的碟收 1958 年的錄音，時序上說得通**。",
+  "notes": "**Apple 上買不到，探測層的判定正確。**覆核方式（裁定 173，兩個端點都跑過）：`search` 用兩首曲名各查一次全部落空；藝人目錄 `lookup?id=14875670&country=tw&entity=album` 全列也沒有對得上的 12 軌盤。**沒有可補的 collectionId。**\\n**盤名極長，且中文圈另有一個名字**：MB 與卡單用的是英文全名《Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)》。**行文引盤名時建議只引主標題**，副題（By The Orient's Favorite Vocalist）當成一句可以引述的盤面文案來用，效果比整串照抄好。\\n**曲名全部是英文譯題，照 MB 那一份寫**；要提〈情人的眼淚〉時，寫成「第三軌〈Lover's Tears〉，即〈情人的眼淚〉」這種對照式，不要直接把中文題當成盤面曲名。\\n**掛名**：MB artist-credit 本來就是繁體漢字「潘秀瓊」，Apple 兩個藝人實體 name 欄也都是「潘秀瓊」，無分歧。\\n**序數不得寫。**MB 名下只有 2 個 RG。維基沒有潘秀瓊條目，Apple 目錄全是 2015 年的復刻，作品序列完全無從建立。\\n**這一筆的事實密度偏低**（無逐軌長度、無維基專屬條目、無 Apple 條目）；可寫的是「美國 Capitol 發行的國語盤」這個罕見形態、副題文案、與〈情人的眼淚〉的關係。"
+ },
+ {
+  "key": "desc4:顧媚|小雲雀 = The Lark",
+  "artist": "顧媚",
+  "album": "小雲雀 = The Lark",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 38efe9cd 的欄位：title「小雲雀 = The Lark」（中英並列）、artist-credit「Carrie Koo Mei」（藝人實體 MBID a2134991）、first-release-date 1966、primary-type Album、**secondary-types 含「Soundtrack」**。轄下只有 1 個 release：1966 年 HK、status **null（未標 Official）**、12 吋黑膠、廠牌 **Angel Records**、catno 3AEX 314、12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/38efe9cd-6a52-45f4-a068-ef4e12d4fdb4?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（c3ba792f）的逐軌曲目，12 軌、無長度登錄：1〈我心裡有一個人〉2〈阿里山的姑娘〉3〈相思河畔〉4〈空虛的夢〉5〈燈紅酒綠〉6〈農家樂〉7〈主題曲〉8〈露珠兒〉9〈海棠〉10〈情人的眼淚〉11〈不了情〉12〈花月佳期〉。**第 7 軌的曲名就登錄成〈主題曲〉三個字**，是電影原聲盤才會出現的寫法。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=38efe9cd-6a52-45f4-a068-ef4e12d4fdb4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "中文維基顧媚條目：本名顧嘉瀰，1929 年生於廣州，父親是畫家顧淡明，胞弟為顧嘉煇與顧嘉鏘。1951 年正式投身歌壇，1956 年香港飛利浦唱片成立後成為其主要歌星，1961 年加盟邵氏，初期主要任務是幕後代唱——同年在電影《不了情》中替女主角林黛代唱〈不了情〉〈夢〉〈山歌〉三曲，其中〈夢〉是**顧嘉煇的第一首作品**。**1965 年她出演電影《小雲雀》獲得成功，「小雲雀」自此成為她的外號**。1970 年代中期息影，遷居溫哥華專事水墨畫，1977 年獲香港市政局藝術獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%A1%A7%E5%AA%9A"
+   },
+   {
+    "f": "**電影是 1965 年、唱片是 1966 年**：中文維基記《小雲雀》是 1965 年的電影，MB 這個 release-group 釘的實體是 1966 年 Angel Records 的 12 吋黑膠 3AEX 314。Apple 上另一筆 EMI 復刻輯《百代百年系列 25 電影名曲(二)》（tw collectionId 720636056）把〈相思河畔〉逐軌註明為「電影《小雲雀》插曲」，與 MB 本盤第 3 軌對得上——可佐證這張碟的曲目確實是那部電影的歌。",
+    "src": "https://itunes.apple.com/search?term=%E9%A1%A7%E5%AA%9A%20%E5%B0%8F%E9%9B%B2%E9%9B%80&country=tw&media=music&entity=song&limit=25"
+   },
+   {
+    "f": "**Apple 上沒有這張 1966 年原盤。**`search?term=顧媚 小雲雀&country=tw&entity=song` 回 25 筆，全部落在後世的復刻／精選：《百代百年系列14: 小雲雀》（tw 727554274，2005，21 軌）、《百代中國時代曲名典33: 不了情》（tw 724698411，1994，16 軌）、《Denon Mastersonic: 顧媚》（tw 727551550，1994，16 軌）、《邵氏電影金曲精選 – 戲假情真》（tw 720235482，2006，26 軌）。**這四張沒有一張的曲目與 MB 本盤的 12 軌相符**（例如 727554274 收〈小雲雀〉〈夢〉〈萬紫千紅〉〈苦酒滿杯〉等，與本盤只重疊〈阿里山的姑娘〉〈海棠〉兩軌）。",
+    "src": "https://itunes.apple.com/search?term=%E9%A1%A7%E5%AA%9A%20%E5%B0%8F%E9%9B%B2%E9%9B%80&country=tw&media=music&entity=song&limit=25"
+   },
+   {
+    "f": "MB 藝人頁分頁全列顧媚名下只有 **1 個 release-group**，就是本張；primary-type=Album 且 secondary-types 為空的**掛零**（本張帶 Soundtrack 次類型）。顧媚二十多年的錄音在 MB 上只有這一筆建檔。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a2134991-9a21-43fb-8a97-ddc2a77cd68b&limit=100&offset=0&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "第七軌的曲名就叫〈主題曲〉——盤上不寫歌名，因為所有人都知道那是哪部電影的主題曲",
+   "她替林黛代唱〈不了情〉的那一年，弟弟顧嘉煇交出生平第一首作品；四年後她自己主演《小雲雀》，外號就此跟了一輩子"
+  ],
+  "sound": "單片 12 吋黑膠、12 軌，MB 未登錄任何一軌的長度，Apple 上沒有這張原盤，**逐軌長度與總長無來源可引，行文不要寫時間**。曲目形態可以確認：十二軌是一部電影的歌，第 7 軌直接登錄成〈主題曲〉；其餘十一首橫跨山地民謠改編（〈阿里山的姑娘〉）、南洋小調（〈相思河畔〉）、都會夜生活題（〈燈紅酒綠〉）與抒情曲（〈不了情〉〈情人的眼淚〉〈空虛的夢〉）。**〈不了情〉與〈情人的眼淚〉都是別人先唱紅的曲目**（前者是她 1961 年替林黛代唱的同名電影主題曲，後者是潘秀瓊 1958 年的成名曲），在這張碟上是重唱。",
+  "keyTracks": [
+   "相思河畔",
+   "不了情",
+   "主題曲"
+  ],
+  "status": "partial",
+  "yearVerified": "**電影 1965、唱片 1966，兩層要分清。**MB release-group first-release-date **1966**、其下唯一 release 也記 1966（HK、Angel Records 3AEX 314，**status 是 null 不是 Official**）；中文維基顧媚條目記電影《小雲雀》是 **1965** 年。Apple 上沒有這張原盤，第三處對照不存在。卡單取 1966（唱片年）與 MB 一致，**但行文若寫「1965 年的電影《小雲雀》」要與唱片年份分開講**，不要混成一個年份。",
+  "notes": "**Apple 上買不到這張原盤，探測層的判定正確。**覆核方式（裁定 173，兩個端點都跑過）：`search` 用盤名與第 1 軌曲名各查一次，回來的 25 筆全部是 1994／2005／2006 年的復刻精選，逐軌比對後**沒有一張與本盤的 12 軌相符**；藝人實體查得到（tw artistId **104023513**「顧媚」），目錄裡也沒有。**沒有可補的 collectionId。**\\n**若主線願意退而求其次**，最接近的兩張是《百代百年系列14: 小雲雀》（tw 727554274，21 軌）與《百代中國時代曲名典33: 不了情》（tw 724698411，16 軌），但**它們是別的碟，不是本盤的數位版，不建議當成配對**。\\n**releaseType**：卡單填 Album，MB 這個 RG 的 secondary-types 帶 **Soundtrack**，第 7 軌曲名就叫〈主題曲〉。與葛蘭那張同型——**行文宜稱「電影歌曲集」而非「錄音室專輯」**。\\n**掛名**：MB artist-credit 是「Carrie Koo Mei」（英文盤面署名），依策展層已立的裁定不採用，取繁體漢字**顧媚**。\\n**序數不得寫。**MB 名下只有 1 個 RG，這是本組建檔最少的一位。\\n**可寫的傳記事實**（維基有具名來源）：本名顧嘉瀰、顧嘉煇的姊姊、1961 年替林黛代唱〈不了情〉〈夢〉〈山歌〉、〈夢〉是顧嘉煇的第一首作品、1965 年因主演《小雲雀》得到這個外號、1970 年代中期息影轉畫水墨。**「1977 年獲香港市政局藝術獎」是獎項不是排行榜，可寫。**"
+ },
+ {
+  "key": "desc4:姚蘇蓉|Love Is Forever 不變的情",
+  "artist": "姚蘇蓉",
+  "album": "Love Is Forever 不變的情",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group fab697b7 的欄位：title「Love Is Forever 不變的情」（英中並列）、artist-credit「姚蘇蓉」（繁體漢字，藝人實體 MBID fc579f36）、first-release-date 1971、primary-type Album、secondary-types 空。轄下只有 1 個 release：1971 年 HK、Official、12 吋黑膠、**廠牌欄空白、catno CS 6009**、12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/fab697b7-0b6a-4602-b111-8e305fdbe551?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（ef127ad4）的逐軌曲目，12 軌、無長度登錄：1〈永遠不再愛〉2〈不變的情〉3〈人生長恨水長流〉4〈愛你360年〉5〈一年四季都想你〉6〈王昭君〉7〈對我說句真心話〉8〈全心全意愛你〉9〈苦戀〉10〈初戀詩〉11〈帶走了我的心〉12〈俏冤家〉。**點題曲〈不變的情〉排第 2 軌不是第 1 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fab697b7-0b6a-4602-b111-8e305fdbe551&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列姚蘇蓉名下 11 個 release-group，其中 primary-type=Album 且 secondary-types 為空的 6 筆，依 first-release-date 排序：《Yao Su Yong's Highlight / A Go Go》1967、《歌曲精選》1970、《Love Is Forever 不變的情》1971、《想起你的時候》1972、《我不能再想你 / 你的電話又來到》1973、《夢的世界》2015。**本張排在 1971 年這一格。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=fc579f36-26fc-4478-b1c0-b3d1ce0e2457&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "**Apple 上沒有這張碟，而且不是因為查不到藝人。**藝人實體查得到（tw artistId **390852467**「姚蘇蓉」），其目錄 `lookup?id=390852467&country=tw&entity=album&limit=200` 一口氣列出 **75 筆**條目——海山唱片 2023 年整批數位化的《像霧又像花》《今天不回家》《負心的人》《偷偷愛你》《你的電話又來到》，喜瑪拉雅（Himalaya）的《郎變了》《偷心的人》《淚的衣裳》，鄉城、麗風、金企鵝的各種精選——**七十五筆裡沒有任何一筆叫《不變的情》或《Love Is Forever》**。",
+    "src": "https://itunes.apple.com/lookup?id=390852467&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "**逐軌反查也落空。**`search?term=姚蘇蓉 不變的情&country=tw&entity=song` 回 20 筆掛本人的結果，曲名是〈我求你騙我騙到底〉〈珊瑚戀〉〈郎變了〉〈痴情恨〉〈一寸相思一寸淚〉〈你儂我儂〉等，**沒有一首叫〈不變的情〉**；`term=姚蘇蓉 人生長恨水長流`（本盤第 3 軌）回 0 筆。回撈候選單上列的 1734958401《像霧又像花》（1971、12 軌）與 1854926762《Lang Bian Liao 郎變了》（1971、10 軌）都已逐軌攤開比對：前者是〈像霧又像花〉〈偷吻〉〈你可知道我想你〉…，後者是〈郎變了〉〈我要活下去〉〈一寸相思一寸淚〉…，**兩張的十二／十軌與本盤沒有任何一軌重疊**，都不是本張。",
+    "src": "https://itunes.apple.com/lookup?id=1734958401&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基姚蘇蓉條目：1945 年生，1966 年參加正聲電台歌唱比賽奪冠，在翁清溪促成下與海山唱片簽約，以〈負心的人〉一炮而紅；1967 年以〈秋水伊人〉贏得「盈淚歌后」的稱號；電影主題曲〈今天不回家〉（左宏元作曲）紅遍東南亞，另有「禁唱歌后」「東南亞歌后」之稱。1993 年第 30 屆金馬獎頒獎典禮公開演出後退居幕後，隱居吉隆坡。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%98%87%E8%93%89"
+   }
+  ],
+  "hookCandidates": [
+   "點題曲〈不變的情〉排在第二軌，第一軌叫〈永遠不再愛〉——一張碟的前兩首歌就把話說反了",
+   "海山把她七十五張碟送上串流，唯獨漏了這一張：1971 年香港版的《不變的情》，編號 CS 6009，線上完全找不到"
+  ],
+  "sound": "單片 12 吋黑膠、12 軌，MB 未登錄任何一軌的長度，Apple 上沒有這張碟，**逐軌長度與總長無來源可引，行文不要寫時間**。曲目形態可確認：十二首全部是中文題，點題曲〈不變的情〉在第 2 軌；〈王昭君〉是古典題材的老曲重唱，〈愛你360年〉〈一年四季都想你〉〈全心全意愛你〉三首用數量詞堆疊的題名是 1970 年代初國語流行盤的典型；〈苦戀〉〈初戀詩〉〈永遠不再愛〉則延續她被稱為「盈淚歌后」的悲情路數。發行編號 CS 6009、MB 廠牌欄空白——這是香港版的一張碟，不是台灣海山的原始發行。",
+  "keyTracks": [
+   "不變的情",
+   "人生長恨水長流",
+   "王昭君"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1971，**但只有 MB 一處。**MB release-group first-release-date **1971**、其下唯一 release 也記 1971（HK、Official、catno CS 6009），兩者是同一筆建檔的兩層。**Apple 上沒有這張碟**（75 筆目錄逐筆看過），中文維基姚蘇蓉條目沒有列專輯目錄。1971 這個年份**只有一處可查**。可交叉的側面：MB 藝人頁上她 1970、1971、1972、1973 各有一張盤，年序連續、本張落在其中，沒有出現「同一張碟兩個年份」的分歧。",
+  "notes": "**Apple 上買不到，探測層的判定正確——但回撈清單那八個候選 id 全部要退回。**覆核方式（裁定 173，兩個端點都跑過，加逐軌反查）：（1）藝人目錄 75 筆全列，無《不變的情》；（2）`search` 用盤名與第 3 軌曲名各查一次，前者回的 20 首沒有〈不變的情〉、後者 0 筆；（3）回撈清單列的 1734958401《像霧又像花》與 1854926762《郎變了》已 `entity=song` 攤開逐軌比對，**與本盤零軌重疊**。**沒有可補的 collectionId。**\\n**回撈清單的「依據：年份」不足以配對**（裁定 175 的延伸）：姚蘇蓉光是 1971 年就有六筆條目，只靠年份挑出來的候選命中率是零。這一張的教訓是**候選必須逐軌攤開比對才算數**。\\n**盤名兩種寫法（裁定 193）**：MB 與卡單用英中並列的《Love Is Forever 不變的情》，實際流通時多半只叫《不變的情》。**行文引盤名取〈不變的情〉即可**，英文半邊當成盤面副題。\\n**掛名**：MB artist-credit 本來就是繁體漢字「姚蘇蓉」，Apple 藝人實體 name 欄也是，無分歧。\\n**序數不得寫。**MB 名下 6 張純 Album 看似排得出序，但那 6 張只是 MB 建了檔的部分——Apple 目錄光是 1960 年代末到 1970 年代初就有二十幾張她的碟，**MB 的序列不是完整目錄**，據此寫「第幾張」必錯。\\n**可寫的傳記事實**（維基有具名來源）：1966 年正聲電台歌唱比賽奪冠、翁清溪促成簽海山、〈負心的人〉、〈今天不回家〉、「盈淚歌后」「禁唱歌后」的稱號。**這些是稱號與事件，不是排行榜。**"
  }
 ]
