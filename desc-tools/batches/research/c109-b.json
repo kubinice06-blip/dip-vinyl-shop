@@ -134,5 +134,537 @@
   "status": "full",
   "yearVerified": "一致，1977。release-group first-release-date **1977-12**、其下唯一的原盤 release 是 1977-12 的 Disques Flèche 67.215（FR／Official／12 吋 10 軌）、條目 infobox 記 1977 年 12 月、串流店面 fr 274663463 的 **℗ 1977** 相符。**唯一不同步的是店面的 releaseDate 1978-01-01**（跨月的填充值），**行文一律寫 1977**。**同名先行單曲：有，而且與專輯同名**——〈Magnolias for Ever〉45 轉 1977 年 11 月，**比專輯早一個月**；**第 1 軌也與盤名同名**。",
   "notes": "**`curatorWhy` 的「生前最後一張錄音室作品」查證屬實**：條目首句明寫 dernier album studio du vivant；藝人目錄裡本張（1977-12）之後只剩 1978-04 的《Bordeaux Rosé》，而藝人條目記他 **1978-03-11** 身故。**這一條可以寫。但同一句裡的序數不行**——條目寫 vingt-cinquième、藝人目錄排第 28，差三張，**行文不得寫「第二十五張」或任何序數**。｜**配對風險（極高）**：fr 藝人目錄裡有四筆盤名含「Magnolias for Ever」的條目，其中三筆是 2022–2023 的重混（4 軌 EP、2 軌單曲、5 軌 mixes）。**必須指名 `274663463`。**（策展層裁定 6 記 search 端點回的正是那筆 Fred Falke 重混單曲。）｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`Et je t'aime tellement`、`L'amour vient, l'amour va`），兩邊一致。｜重音差異：原盤〈Ève〉（大寫 È）、店面〈Eve〉（無重音）；原盤〈Magnolias for Ever〉、release title 作「Magnolias For Ever」、店面作〈Magnolias for ever〉。**行文照 release-group 的 title。**"
+ },
+ {
+  "key": "desc2:Mylène Farmer|Cendres de lune",
+  "artist": "Mylène Farmer",
+  "album": "Cendres de lune",
+  "facts": [
+   {
+    "f": "release-group 2766bddd 的欄位：title「Cendres de lune」、artist-credit「Mylène Farmer」（藝人 MBID 18b23026）、first-release-date **1986-04-01**、primary-type Album、secondary-types **空**。轄下 **14 筆 release、全部 FR 或未填國別、全部 Official**，軌數分成幾組：**1986-04-01 的 Polydor 829 127-1（12 吋）與 829 127-4（卡帶）都是 9 軌**、1986 的 Polydor 829 127-2（CD）**10 軌**、**1987 的 Polydor 831 732-2（CD，兩筆）與 829 127-1 的 1987 12 吋分別是 12 軌與 10 軌**，之後 2009 的 12 吋 10 軌、2018 的 CD 與數位 12 軌、2024-06-05 的多片組、2025-12-12 的 deluxe（CD 12＋10／數位 22 軌）。**原盤 9 軌，12 軌是 1987 年再版的內容。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/2766bddd-96a1-32ca-b057-81cab37ab52d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1986-04-01 FR 原盤（Polydor 829 127-1，12 吋）的逐軌曲目與長度：1〈Libertine〉3:49、2〈Au bout de la nuit〉4:21、3〈Vieux bouc〉5:38、4〈Chloé〉2:35、5〈Maman a tort〉4:04、6〈We'll Never Die〉4:15、7〈Greta〉4:48、8〈Plus grandir〉4:04、9〈Cendres de lune〉1:47。**只有 9 軌，末軌同名曲 1:47 是全碟最短的一首。**",
+    "src": "https://musicbrainz.org/ws/2/release/6272a726-d8f1-3ae4-b047-859defd488d3?fmt=json&inc=media+labels+recordings+release-groups"
+   },
+   {
+    "f": "1987 FR 再版（Polydor 831 732-2，CD）的 12 軌：1〈Libertine〉3:48、2〈Au bout de la nuit〉4:22、3〈Vieux bouc〉5:37、**4〈Tristana〉4:36**、5〈Chloé〉2:35、6〈Maman a tort (nouvelle version)〉4:05、7〈We'll Never Die〉4:17、8〈Greta〉4:49、9〈Plus grandir〉4:05、10〈Libertine (remix spécial club)〉5:53、**11〈Tristana (remix club)〉7:10**、12〈Cendres de lune〉1:48。**比 1986 原盤多三軌：〈Tristana〉插進第 4 位、末段加兩首 remix；〈Maman a tort〉也換成 nouvelle version。**",
+    "src": "https://musicbrainz.org/ws/2/release/44ab07ba-99aa-497e-8184-3020ea98ff0b?fmt=json&inc=media+labels+recordings+release-groups"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1855821691：collectionName「Cendres de lune」、releaseDate **1986-04-01**、copyright「℗ 1986 Polydor (France)」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，**曲名與曲序與 1987 年那筆 12 軌 CD 逐位置相符**、逐軌長度差都在 2 秒內（只有第 6 軌店面寫〈Maman a tort〉、CD 寫〈Maman a tort (nouvelle version)〉）。**店面日期掛 1986-04-01，內容卻是 1987 再版；1986 原盤的 9 軌版沒有上架。** 同一藝人目錄下另有 `1443935883`（同名，1986-01-01，12 軌，內容相同）與 `1855822815`「Cendres de lune (Deluxe)」22 軌、`1748795506`「Cendres de lune - Les instrumentaux」10 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1855821691&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首段：本張是 Mylène Farmer 的 **premier album**（首張專輯），1986 年 4 月 1 日由 Polydor 發行；**錄音期 1985 年 6 月到 1986 年 1 月、地點是 Aubervilliers 的 Studio Le Matin Calme**；**製作 Laurent Boutonnat**（他同時掛編曲並作了大部分的曲）；曲風記 pop／variété française。**條目明寫「原版收九首」**，並說隔年為了收進〈Tristana〉而再版。單曲四首：〈Maman a tort〉1984 年 3 月 16 日、〈Plus grandir〉1985 年 9 月 25 日、**〈Libertine〉1986 年 3 月 25 日（比專輯早一週）**、〈Tristana〉1987 年 2 月 12 日。",
+    "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune"
+   },
+   {
+    "f": "同一條目的 Genèse 節：Mylène Farmer 1984 年靠〈Maman a tort〉為人所知；1985 年初〈On est tous des imbéciles〉失利後，唱片公司 RCA 決定不續約，她轉簽 Polydor、拿到一紙三張專輯的合約，原先替她寫歌的 Jérôme Dahan 則在此時與她和 Laurent Boutonnat 分道。兩人接著寫出這張碟，題材是法語流行少碰的性、死亡、童年與宗教。**〈Plus grandir〉是 Mylène Farmer 第一首自己填詞的歌**；當團隊都覺得〈Libertine〉最有潛力時，Polydor 的總裁 Alain Lévy 出人意料地決定先發〈Plus grandir〉當 1985 年秋天的單曲，那支由 Boutonnat 當短片拍的 MV 遭到多個節目禁播。",
+    "src": "https://fr.wikipedia.org/wiki/Cendres_de_lune"
+   },
+   {
+    "f": "藝人端點分頁全列 **216 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **12 張**，依序為 **《Cendres de lune》1986-04-01**、《Ainsi soit je…》1988-03-14、《L'Autre…》1991-04-09、《Anamorphosée》1995-11-01、《Innamoramento》1999-04-07、《Avant que l'ombre…》2005-04-04、《Point de suture》2008-08-20、《Bleu noir》2010-11-29、《Monkey Me》2012-12-02、《Interstellaires》2015-11-06、《Désobéissance》2018-09-28、《L'Emprise》2022-11-24。**本張排第 1，與條目的 premier album 一致；池中已有的《Ainsi soit je...》排第 2，也與卡單說法一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=18b23026-ed29-445a-9bb4-4e86598ab5a9&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "原版只有九首，隔年為了塞進〈Tristana〉整張重出",
+   "團隊都看好〈Libertine〉，公司總裁偏偏先發了另一首"
+  ],
+  "sound": "1986 年 4 月 1 日的 12 吋與卡帶都只有 9 軌，同年的 CD 10 軌，1987 年再版才變成 12 軌——多的是插進第 4 位的〈Tristana〉與末段兩首 remix，〈Maman a tort〉也換成新版。串流上架的就是這個 12 軌版本。原盤末軌同名曲〈Cendres de lune〉只有 1:47，是全碟最短。錄音期從 1985 年 6 月拉到 1986 年 1 月，地點是 Aubervilliers 的 Studio Le Matin Calme，製作、編曲與大部分作曲都是 Laurent Boutonnat。題材集中在性、死亡、童年與宗教，條目說那是當時法語流行少碰的一組。",
+  "keyTracks": [
+   "Libertine",
+   "Plus grandir",
+   "Cendres de lune"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986-04-01**、其下 1986-04-01 的兩筆 FR／Official（12 吋與卡帶，皆 9 軌）與 1986 的 CD 同年、條目 infobox 記 1986 年 4 月 1 日、串流店面 fr 1855821691 的 releaseDate **1986-04-01** 與 ℗ 1986 相符。**四處同年同日。** **同名先行單曲：無**，但〈Libertine〉的 45 轉 **1986 年 3 月 25 日發、比專輯早一週**；末軌與盤名同名。**要防的不是年份而是版本**：店面掛 1986 的日期、內容卻是 1987 年那個 12 軌再版。",
+  "notes": "**配對覆核（版本差異，寫作層必讀）**：fr `1855821691` 是 **12 軌**，逐軌與 **1987 年 Polydor 831 732-2 的 CD 再版**相符；**1986 年的原盤只有 9 軌**。**行文不得說「這張有十二首」，也不得把〈Tristana〉與兩首 remix 當 1986 原盤曲目**（裁定 141）。策展層 `risk` 欄記的「12 軌／1986 原盤 9 軌」與本次覆核一致。｜**同名 collectionId 有四筆**：`1855821691`（12 軌，建議取）、`1443935883`（12 軌，同內容、releaseDate 1986-01-01）、`1855822815`（Deluxe 22 軌）、`1748795506`（Les instrumentaux 10 軌）。**必須指名。**｜**撇號**：本張曲名不含撇號，兩種寫法問題不觸及。｜**盤名的刪節號**：同藝人下一張《Ainsi soit je…》在來源端用 U+2026、池中作三點，本批裁定 3 沿用池中的 ASCII 慣例——本張盤名不含刪節號、不受影響，但**行文若提到《Ainsi soit je...》要用 ASCII 三點**。｜條目的銷售認證與排行名次依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Mylène Farmer|L'Autre...",
+  "artist": "Mylène Farmer",
+  "album": "L'Autre...",
+  "facts": [
+   {
+    "f": "release-group acba2e91 的欄位：title「L'Autre…」（來源端用彎撇 U+2019 與 U+2026 刪節號）、artist-credit「Mylène Farmer」、first-release-date **1991-04-09**、primary-type Album、secondary-types **空**。轄下 **12 筆 release**：1991 的 Polydor PROC 81（**CA，卡帶 8 軌，status Promotion**）、**1991-04-09 的 Polydor 849 217-2（FR，CD，10 軌，Official）**、2002-09-16 與 2018-07-29 的 FR 數位（10 軌）、2005-03-21 的 Polydor 982 825-5（CD，10 軌）、2009 的 Polydor 849 217-1（12 吋，10 軌）、2023-10-20 的收藏版多片組、2023-10-27 的 instrumental 版、2024-09-20 的紅膠、2025-12-12 的三筆 deluxe（CD 10＋10／12 吋 10＋10／數位 20 軌）。**唯一一筆非 Official 是加拿大那卷 8 軌的宣傳卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/acba2e91-7c1e-38ed-b7df-f06fc4a5f528?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1991-04-09 FR 原盤（Polydor 849 217-2，CD）的逐軌曲目與長度：1〈Agnus Dei〉5:46、2〈Désenchantée〉5:23、3〈L'Autre〉5:21、4〈Je t'aime mélancolie〉5:33、5〈Psychiatric〉6:09、6〈Regrets〉5:15、7〈Pas de doute〉5:15、8〈Il n'y a pas d'ailleurs〉5:44、9〈Beyond My Control〉5:25、10〈Nous souviendrons-nous〉5:11。**10 軌，每一首都在 5:11 到 6:09 之間——十首曲長的落差不到一分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release/6deb4962-e496-4899-b6f2-d7d8b44fa55d?fmt=json&inc=media+labels+recordings+release-groups"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1855831155：collectionName「L'autre」、releaseDate **1991-04-08**、copyright「℗ 1991 Polydor (France)」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1991 原盤**逐位置相符**、逐軌長度差都在 3 秒內（店面第 4 軌寫〈Je t'aime mélancolie (Remix Version)〉、原盤寫〈Je t'aime mélancolie〉）。**同一藝人目錄下另有 `1443549423`（同名 10 軌、內容相同）、`1855825798`「L'autre (Deluxe)」20 軌、`1713466644`「L'autre... (Instrumental Version)」10 軌。**",
+    "src": "https://itunes.apple.com/lookup?id=1855831155&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首段：本張是 Mylène Farmer 的 **troisième album**（第三張專輯），1991 年 4 月 8 日由 Polydor 發行；**錄音在 1990 年、地點是巴黎的 Studio Méga**；**製作 Laurent Boutonnat**；總長記 54 分 49 秒；曲風記 pop／variété française／trip hop；廠牌 Polydor 與 Toutankhamon 並列。**十首歌的詞全部由 Mylène Farmer 寫、曲全部由 Laurent Boutonnat 作。** 單曲四首：〈Désenchantée〉1991 年 3 月 18 日、〈Regrets〉（與 Jean-Louis Murat 對唱）1991 年 7 月 29 日、〈Je t'aime mélancolie〉1991 年 11 月 19 日、〈Beyond My Control〉1992 年 4 月 13 日。",
+    "src": "https://fr.wikipedia.org/wiki/L'Autre%E2%80%A6"
+   },
+   {
+    "f": "同一條目的 Genèse 節：1989 年《Ainsi soit je...》大成之後，Mylène Farmer 做了第一次巡演，收在 1989 年 12 月的現場專輯裡。條目引她自己的話說巡演結束那段極不穩定——「別人先提醒過我：演出結束後所有藝人都會經歷一段空掉的時期……一切都顯得徒勞。我不知道什麼叫抑鬱，但我想我在 Bercy 之後那至少四個月經歷的，就很像那個。那種不想再動、無法想溝通的狀態。」條目說這張碟延續死亡、宗教與性的題材，但她更多談自己的情緒與疑惑、承認需要另一個人。",
+    "src": "https://fr.wikipedia.org/wiki/L'Autre%E2%80%A6"
+   },
+   {
+    "f": "藝人端點分頁全列 216 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 12 張，**《L'Autre…》1991-04-09 排第 3**，前一張是 1988-03-14 的《Ainsi soit je…》、後一張是 1995-11-01 的《Anamorphosée》。**與條目的 troisième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=18b23026-ed29-445a-9bb4-4e86598ab5a9&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌全部落在五分十一秒到六分零九秒，落差不到一分鐘",
+   "巡演結束後那四個月「不想再動」，這張碟從那裡長出來"
+  ],
+  "sound": "1991 年 Polydor 的 CD 10 軌、總長 54 分 49 秒。曲長異常整齊——十首全部在 5:11 到 6:09 之間，落差不到一分鐘，沒有短曲也沒有長曲。1990 年錄於巴黎的 Studio Méga，製作 Laurent Boutonnat；十首的詞全由 Mylène Farmer 寫、曲全由 Boutonnat 作。條目把曲風記成 pop、variété française 與 trip hop，並說這張比前作更多談自己的情緒與疑惑。〈Regrets〉是與 Jean-Louis Murat 的對唱。第 3 軌〈L'Autre〉與盤名同名（盤名多一組刪節號）。",
+  "keyTracks": [
+   "Désenchantée",
+   "Regrets",
+   "Beyond My Control"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991-04-09**、其下的 FR 原盤 CD（Polydor 849 217-2）同為 1991-04-09、串流店面 fr 1855831155 的 releaseDate **1991-04-08**、條目 infobox 也記 1991 年 4 月 8 日。**8 日與 9 日兩說，年份無爭議；行文只寫 1991。** ℗ 1991 相符。**同名先行單曲：無**（先行單曲是〈Désenchantée〉，1991-03-18）；**第 3 軌〈L'Autre〉與盤名幾乎同名**，只差盤名末尾的刪節號。",
+  "notes": "**盤名的兩個排印字元**：來源端 title 作「L'Autre…」——撇號是彎撇 **U+2019**、末尾是 **U+2026 單一刪節號字元**；卡單依本批裁定 3 改成 ASCII 的 `L'Autre...`（直撇＋三個句點）。**行文照卡單。**｜**店面把盤名寫成「L'autre」（小寫 a、且沒有刪節號）**，兩個 collectionId（1855831155 與 1443549423）都是這個寫法，**字串比對會對不上卡單的 `L'Autre...`，必須指名 collectionId**。｜**同名 collectionId 有四筆**：`1855831155`（10 軌，建議取）、`1443549423`（10 軌、同內容）、`1855825798`（Deluxe 20 軌）、`1713466644`（Instrumental 10 軌）。｜**撇號兩種寫法**：來源端曲名用彎撇（`Je t’aime mélancolie`、`Il n’y a pas d’ailleurs`），店面一律 ASCII。`keyTracks` 三首都不含撇號、不受影響。｜曲名差異：原盤第 4 軌〈Je t'aime mélancolie〉、店面加註 (Remix Version)；原盤第 10 軌〈Nous souviendrons-nous〉、店面〈Nous souviendrons nous〉（無連字號）、另一筆店面作〈Nous souviendrons-nous ?〉（帶問號）。**行文照原盤。**｜策展層記本張「只在 be 命中」，**本次覆核 fr 店面同樣有貨**（1855831155 與 1443549423 都在 fr 目錄裡）。｜條目的排行與銷售數字依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Mylène Farmer|Anamorphosée",
+  "artist": "Mylène Farmer",
+  "album": "Anamorphosée",
+  "facts": [
+   {
+    "f": "release-group 8b918772 的欄位：title「Anamorphosée」、artist-credit「Mylène Farmer」、first-release-date **1995-11-01**、primary-type Album、secondary-types **空**。轄下 **12 筆 release**：1995 的 Polydor 529 260-2（FR，CD，12 軌，兩筆）、**1995-11-01 的 Polydor POCP-7085（JP，CD，14 軌）**、2002-09-16 的 FR 數位（12 軌）、2005 的 Polydor 982 832-9（CD，12 軌）、2009 的 Polydor 529 260-1（12 吋，12 軌）、2014 的 RU CD（12 軌）、**2022 的 RU Bootleg（CD，12 軌）**、2022-05-27 的 FR 多片組、2023-11-03 的 instrumental 版、2025-12-12 的兩筆 deluxe（數位 24 軌／CD 12＋12）。**法國原盤 12 軌，日本版 14 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/8b918772-9d9a-31ac-bdba-0b6b2e272f33?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1995 FR 原盤（Polydor 529 260-2，CD）的逐軌曲目與長度：1〈California〉5:00、2〈Vertige〉5:29、3〈Mylène s'en fout〉4:31、4〈L'instant X〉4:46、5〈Eaunanisme〉5:08、6〈Et tournoie…〉4:29、7〈XXL〉4:27、8〈Rêver〉5:22、9〈Alice〉5:22、10〈Comme j'ai mal〉3:54、11〈Tomber 7 fois…〉4:50、12〈Laisse le vent emporter tout〉4:00。**12 軌、總長約 57 分 46 秒；最短〈Comme j'ai mal〉3:54、最長〈Vertige〉5:29。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b918772-9d9a-31ac-bdba-0b6b2e272f33&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId **1855823375**：collectionName「Anamorphosée」、releaseDate **1995-10-17**、copyright「℗ 1995 Polydor (France)」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 1995 FR 原盤**逐位置相符**、逐軌長度差都在 4 秒內。**這是 12 軌的原盤，不是策展層 `risk` 欄記的那筆 24 軌豪華版。** 同一藝人目錄下另有 `1444071443`（同名 12 軌、內容相同、releaseDate 1995-01-01）、`1855822898`「Anamorphosée (Deluxe)」24 軌、`1713473175`「Anamorphosée (Instrumental version)」12 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1855823375&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首段：本張是 Mylène Farmer 的 **quatrième album studio**（第四張錄音室專輯），1995 年 10 月 17 日由 Polydor 發行；**錄音在洛杉磯**；**製作 Laurent Boutonnat**；總長記 57 分 46 秒；曲風記 pop／rock／variété française；廠牌 Polydor 與 Toutankhamon 並列。**十二首的詞全部由 Mylène Farmer 寫、曲由 Laurent Boutonnat 作（其中一首由她自己作曲）。** 單曲五首：〈XXL〉1995 年 9 月 19 日、〈L'Instant X〉1995 年 12 月 12 日、〈California〉1996 年 3 月 26 日、〈Comme j'ai mal〉1996 年 8 月 5 日、〈Rêver〉1996 年 11 月 16 日。條目另記本張在 1996 年拿到 Victoire de la musique 的「年度最多外銷法語專輯」。",
+    "src": "https://fr.wikipedia.org/wiki/Anamorphos%C3%A9e"
+   },
+   {
+    "f": "同一條目的 Genèse 節：1993 年 Laurent Boutonnat 開拍他籌備多年的電影《Giorgino》，由 Mylène Farmer擔綱第一個大角色；拍攝過程艱苦、兩人的默契在期間破裂，電影 1994 年 10 月上映後失利，常被說成「一支三小時的 MV」。她隨後帶著《Giorgino》的男主角、同時也是搖滾吉他手的 **Jeff Dahlgren** 到洛杉磯待了九個月——「我需要那種空間感、那種身分流失的感覺，才能重新找回自己。像所有人一樣過日子。」在匿名的狀態裡她讀了 Paulo Coelho 的《牧羊少年奇幻之旅》，尤其是 **Sogyal Rinpoché 的《西藏生死書》**。她想做一張更搖滾、更明亮的碟，Boutonnat 之後才加入，兩人在洛杉磯與美國樂手一起錄完。**內頁攝影由 Herb Ritts 掌鏡。**",
+    "src": "https://fr.wikipedia.org/wiki/Anamorphos%C3%A9e"
+   },
+   {
+    "f": "藝人端點分頁全列 216 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 12 張，**《Anamorphosée》1995-11-01 排第 4**，前一張是 1991-04-09 的《L'Autre…》、後一張是 1999-04-07 的《Innamoramento》。**與條目的 quatrième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=18b23026-ed29-445a-9bb4-4e86598ab5a9&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "電影垮掉之後她在洛杉磯待了九個月，回來就做了這張更搖滾的碟",
+   "十二首的詞全是她寫的，曲只有一首不是搭檔作的"
+  ],
+  "sound": "1995 年 Polydor 的 CD 12 軌、總長 57 分 46 秒，單軌 3:54 到 5:29；日本同期另出 14 軌版。整張在洛杉磯與美國樂手錄，製作 Laurent Boutonnat；十二首的詞全由 Mylène Farmer 寫、曲由 Boutonnat 作（有一首是她自己作曲）。條目把曲風記成 pop、rock 與 variété française，並說這張比前幾張明亮、更靠搖滾，題材受 Sogyal Rinpoché《西藏生死書》影響。內頁攝影是 Herb Ritts。同行的還有《Giorgino》男主角、搖滾吉他手 Jeff Dahlgren。",
+  "keyTracks": [
+   "XXL",
+   "California",
+   "L'instant X"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995-11-01**、其下 1995 的兩筆 FR／Official CD 與同日的 JP 版同年、條目 infobox 記 **1995 年 10 月 17 日**、串流店面 fr 1855823375 的 releaseDate 也是 **1995-10-17**、℗ 1995。**來源端的 11 月 1 日與條目／店面的 10 月 17 日差半個月，年份無爭議；行文只寫 1995。** **同名先行單曲：無**（先行單曲是〈XXL〉，1995-09-19，比專輯早）。",
+  "notes": "**改掉策展層指定的 collectionId**：策展層 `risk` 欄記的是 24 軌的 Deluxe（店面 `1855822898`）並註明「原盤 12 軌」。**逐軌覆核後在同一個 fr 藝人目錄裡找到 12 軌的原盤 `1855823375`**（releaseDate 1995-10-17、℗ 1995、曲名曲序與 FR 原盤逐位置相符、12 軌全有試聽）。**建議改用 1855823375**，這樣試聽與行文都落在原盤上。另一筆 `1444071443` 內容相同但 releaseDate 記 1995-01-01。｜**版本差異**：日本 1995 版 14 軌、豪華版 24 軌、另有 instrumental 12 軌，**行文只認 12 軌的法國原盤**（裁定 141）。｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`Mylène s’en fout`、`L’instant X`、`Comme j’ai mal`），店面一律 ASCII。**卡池走 ASCII，`keyTracks` 已按 ASCII 寫。**｜**刪節號**：原盤第 6 軌〈Et tournoie…〉與第 11 軌〈Tomber 7 fois…〉用 U+2026，店面作〈Et tournoie...〉與〈Tomber 7 Fois〉。**行文用 ASCII 三點。**｜來源端有一筆 2022 的 RU Bootleg，**再發背書不採那一筆**（裁定 43／57）。｜條目的銷售數字與排行名次依規則不進 facts；1996 年的 Victoire de la musique 是獎項、可用。"
+ },
+ {
+  "key": "desc2:Étienne Daho|Mythomane",
+  "artist": "Étienne Daho",
+  "album": "Mythomane",
+  "facts": [
+   {
+    "f": "release-group 84574dcb 的欄位：title「Mythomane」、artist-credit「Étienne Daho」（藝人 MBID 1e0de31c）、first-release-date **1981**、primary-type Album、secondary-types **空**。轄下 5 筆 release **全部 FR、全部 Official**：1981 的 Virgin 70170（**12 吋，10 軌**）、1987 的 Virgin France 868702（CD，10 軌）、1995 的 Virgin France 7868700（CD，10 軌）、1995 的另一筆 Virgin France CD（10 軌）、2011-10-31 的 EMI Music France 509990273162 9（**CD 16 軌＋CD 26 軌的兩片組**）。**原盤 10 軌；2011 那套 42 軌的不是原盤。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/84574dcb-b533-3615-9117-866dede4ebc8?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1981 FR 原盤（Virgin 70170，12 吋）的逐軌曲目與長度：1〈Il ne dira pas〉4:00、2〈Ton cinoche〉3:01、3〈Mes copains〉2:28、4〈On s'fait la gueule〉4:05、5〈Va t'en〉2:38、6〈Cowboy〉3:42、7〈Encore cette chanson〉2:47、8〈L'été〉4:23、9〈Tu dors encore〉2:41、10〈Mythomane〉2:29。**10 軌、總長 31 分 52 秒——是本批最短的一張整長專輯；末軌與盤名同名、只有 2:29。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=84574dcb-b533-3615-9117-866dede4ebc8&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1482781247：collectionName「Mythomane (2011 Remaster)」、releaseDate **1981-11-10**、copyright「℗ 1981, 2011 Parlophone/Warner Music France, a Warner Music Group Company」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1981 原盤**逐位置相符**，每軌曲名後掛「(2011 Remaster)」。**逐軌長度差比本批其他張大**：第 3 軌店面 2:14／原盤 2:28、第 4 軌 3:35／4:05、第 5 軌 2:21／2:38、第 8 軌 3:45／4:23——**四軌各短 14 到 38 秒，是重製版的實際差異，不是配錯碟**（曲序與其餘六軌長度都對得上）。",
+    "src": "https://itunes.apple.com/lookup?id=1482781247&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Étienne Daho 的 **premier album**（首張專輯），1981 年 11 月 10 日發行；**錄音期 1981 年 7 至 8 月、地點是 Studio d'Auteuil**；**製作 Jacno**；總長記 31 分 52 秒；曲風記 rock français／pop；廠牌 Virgin。條目說這張雖然拿到專業媒體的好評，卻沒被大眾注意到，只抽出一首單曲〈Il ne dira pas〉。**封面照片由 Antoine Giacomoni 拍，封套設計有 Jacno 的伴侶 Elli Medeiros 參與。**",
+    "src": "https://fr.wikipedia.org/wiki/Mythomane_(album)"
+   },
+   {
+    "f": "同一條目的 Musiciens 節：Étienne Daho（人聲、和聲、打擊）、Thierry Alexandre（貝斯）、**Franck Darcel**（吉他、合成器）、Eric Morinière（鼓）、Philippe Herpin（薩克斯風）、**Jacno**（鋼琴、吉他、合成器）、Sylvie Coma（〈On s'fait la gueule〉的鋼琴）。單曲兩筆：1981 年 11 月的宣傳單曲〈Cow boy〉與 1981 年 12 月的〈Il ne dira pas〉。",
+    "src": "https://fr.wikipedia.org/wiki/Mythomane_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 **97 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **15 張**，最前面六張依序是 **《Mythomane》1981**、《La Notte, la Notte...》1984、《Pop Satori》1986-04-01、《Pour nos vies martiennes》1988-06、《Paris ailleurs》1991-10-01、《Eden》1996-11-19。**本張排第 1，與條目的 premier album 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1e0de31c-4957-4649-9aa3-7b0f1d9d2c84&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十首三十一分五十二秒就走完，末軌同名曲只有兩分二十九秒",
+   "製作是 Jacno，封套設計還有他的伴侶 Elli Medeiros 一起做"
+  ],
+  "sound": "1981 年 Virgin 的 12 吋 10 軌、總長 31 分 52 秒，是本批最短的一張整長專輯；末軌同名曲〈Mythomane〉只有 2:29。1981 年 7 至 8 月錄於 Studio d'Auteuil，製作 Jacno——他同時彈鋼琴、吉他與合成器。其餘編制是 Thierry Alexandre 的貝斯、Franck Darcel 的吉他與合成器、Eric Morinière 的鼓與 Philippe Herpin 的薩克斯風。條目把曲風記成 rock français 與 pop，並說這張只抽出一首單曲、當時沒被大眾接住。封面攝影 Antoine Giacomoni，封套設計有 Elli Medeiros 參與。",
+  "keyTracks": [
+   "Il ne dira pas",
+   "Cowboy",
+   "Mythomane"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1981。release-group first-release-date 只記到年份 **1981**、其下最早的 release 是 1981 的 Virgin 70170（FR／Official／12 吋 10 軌）。**日期靠另兩處補齊且互相吻合**：條目 infobox 記 1981 年 11 月 10 日、串流店面 fr 1482781247 的 releaseDate 也是 **1981-11-10**；℗ 欄寫「℗ 1981, 2011」，原錄音年與重製年並列。**同名先行單曲：無**（單曲是〈Cow boy〉與〈Il ne dira pas〉）；**末軌與盤名同名**。",
+  "notes": "**曲名易混一處（寫作層必讀）**：〈Le Grand Sommeil〉**不在本張上**——它是下一張《La Notte, la Notte...》的第 3 軌，1982-12-09 就先發過單曲。**行文寫本張時不得引用這首。**｜**配對覆核**：fr `1482781247` 是 **2011 重製版**，曲序與 1981 原盤逐位置相符，但**有四軌比原盤短 14 到 38 秒**（第 3、4、5、8 軌）。**行文不得拿店面的長度當原盤長度**（裁定 141）。｜**配對風險**：藝人目錄裡另有 `694091565`《Mythomane (1978-1982) [Remastered] [Deluxe Version]》43 軌，**盤名含本張，字串比對會配錯**，必須指名 1482781247。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`On s'fait la gueule`、`Va t'en`、`L'été`），兩邊一致。｜曲名差異：原盤〈Cowboy〉連寫、店面〈Cow-boy〉帶連字號、條目單曲欄作〈Cow boy〉分寫——**三處三種，行文照原盤的連寫。**"
+ },
+ {
+  "key": "desc2:Étienne Daho|La Notte, la Notte...",
+  "artist": "Étienne Daho",
+  "album": "La Notte, la Notte...",
+  "facts": [
+   {
+    "f": "release-group e892aff4 的欄位：title「La Notte, la Notte...」（**來源端用的是三個 ASCII 句點，不是 U+2026**）、artist-credit「Étienne Daho」、first-release-date **1984**、primary-type Album、secondary-types **空**。轄下 5 筆 release **全部 FR、全部 Official**：1984 的 Virgin 868672（CD，10 軌）、1984 的 Virgin 70232（**12 吋，10 軌**）、1995 的 Virgin France 840488 2（CD，10 軌）、2014-03-31 的 Parlophone 082564633794 1（12 吋，10 軌，「30e anniversaire édition」）、2014-03-31 的 Parlophone 082564633797 2（**CD 19 軌＋CD 18 軌**）。**原盤 10 軌，1984 年同時出 12 吋與 CD。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e892aff4-d2ac-34b5-ba47-ef7585435be9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1984 FR 原盤（Virgin 868672，CD）的逐軌曲目與長度：1〈Week-end à Rome〉4:12、2〈Signé Kiko〉4:00、3〈Le Grand Sommeil〉4:04、4〈Promesses〉3:55、5〈Poppy Gene Tierney〉3:42、6〈Sortir ce soir〉4:07、7〈Et si je m'en vais avant toi〉3:30、8〈Laisse tomber les jaloux〉4:20、9〈Jack, tu n'es pas un ange〉3:29、10〈Saint-Lunaire, dimanche matin〉3:57。**10 軌、總長 40 分 16 秒；十首全部落在 3:29 到 4:20，是本批曲長最整齊的一張之一。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e892aff4-d2ac-34b5-ba47-ef7585435be9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1482780691：collectionName「La notte, la notte (2014 Remastered)」、releaseDate **1984-03-03**、copyright「℗ 1984, 2014 Parlophone / Warner Music France, a Warner Music Group Company」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1984 原盤**逐位置相符**、逐軌長度差都在 2 秒內，每軌曲名後掛「(2014 Remastered)」。**上架的是 2014 重製版，曲目內容與 1984 原盤相同。**",
+    "src": "https://itunes.apple.com/lookup?id=1482780691&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Étienne Daho 的 **deuxième album**（第二張專輯），1984 年 3 月 3 日發行；**錄音分兩段：1982 年 10 月，以及 1983 年 11 月到 12 月；地點是 Rennes 的 Studio DB 與巴黎的 Studio de l'Oncle Sam**；**製作 Franck Darcel**；總長 40 分 16 秒；曲風記 **electropop**；廠牌 Virgin。條目說**這張碟之所以能錄成，是因為 1982 年先發的單曲〈Le Grand Sommeil〉賣起來了**——前一張《Mythomane》失利之後，是這首單曲讓他拿到做第二張的機會。",
+    "src": "https://fr.wikipedia.org/wiki/La_notte,_la_notte"
+   },
+   {
+    "f": "同一條目關於封套與樂手：封面上歌手穿橫條 T 恤、肩上停著一隻長尾鸚鵡，**攝影是 Pierre et Gilles**；原本 Daho 對封套另有構想，幾次嘗試都不成之後由這對攝影搭檔即興拍成，那張本來是要給 45 轉用的照片，最後在唱片公司反對的情況下由歌手自己堅持採用。樂手：Étienne Daho（人聲、和聲）、François Daniel（貝斯）、**Xavier Géronimi**（吉他）、Frédéric Cousseau（鼓）、**Arnold Turboust**（鍵盤與程式）。單曲三筆：〈Le Grand Sommeil〉1982 年 12 月 9 日、〈Sortir ce soir〉1983 年 11 月、〈Week-End à Rome〉1984 年 4 月。",
+    "src": "https://fr.wikipedia.org/wiki/La_notte,_la_notte"
+   },
+   {
+    "f": "藝人端點分頁全列 97 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 15 張，**《La Notte, la Notte...》1984 排第 2**，前一張是 1981 的《Mythomane》、後一張是 1986-04-01 的《Pop Satori》。**與條目的 deuxième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1e0de31c-4957-4649-9aa3-7b0f1d9d2c84&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "前一張沒賣動，是 1982 年先發的那首單曲救回了做第二張的機會",
+   "封面那張肩上停鸚鵡的照片本來只打算給 45 轉用"
+  ],
+  "sound": "1984 年 Virgin 同時出 12 吋與 CD，都是 10 軌、總長 40 分 16 秒；十首全部落在 3:29 到 4:20，曲長極整齊。錄音分兩段做——1982 年 10 月，以及 1983 年 11 月到 12 月，地點是 Rennes 的 Studio DB 與巴黎的 Studio de l'Oncle Sam，製作 Franck Darcel。條目把曲風記成 electropop，編制是 François Daniel 的貝斯、Xavier Géronimi 的吉他、Frédéric Cousseau 的鼓與 Arnold Turboust 的鍵盤與程式。第 3 軌〈Le Grand Sommeil〉是 1982 年就先發的單曲，也是這張碟能開錄的原因。封面由 Pierre et Gilles 拍。",
+  "keyTracks": [
+   "Week-end à Rome",
+   "Le Grand Sommeil",
+   "Sortir ce soir"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。release-group first-release-date 只記到年份 **1984**、其下 1984 的兩筆 FR／Official release（CD 與 12 吋，皆 10 軌）同年。**日期靠另兩處補齊且互相吻合**：條目 infobox 記 1984 年 3 月 3 日、串流店面 fr 1482780691 的 releaseDate 也是 **1984-03-03**；℗ 欄寫「℗ 1984, 2014」。**同名先行單曲：無**，但**先行單曲〈Le Grand Sommeil〉早在 1982 年 12 月 9 日就發了、比專輯早十五個月**，凡「取最早那筆」的邏輯會選到它。",
+  "notes": "**盤名大小寫與刪節號**：來源端 release-group title 作「La Notte, la Notte...」（兩個 Notte 都大寫、末尾三個 ASCII 句點），條目頁面標題與店面都作「La notte, la notte」（小寫、無刪節號）。**卡單走來源端的寫法，行文照卡單。**｜**配對風險**：藝人目錄裡另有 `844517318`《La notte, la notte - Deluxe Remastered (1982-1985)》37 軌，**盤名含本張，字串比對會配錯**，必須指名 1482780691。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`Et si je m'en vais avant toi`、`Jack, tu n'es pas un ange`），兩邊一致。｜曲名逗號：原盤〈Jack, tu n'es pas un ange〉與〈Saint-Lunaire, dimanche matin〉帶半形逗號，店面把逗號拿掉。**行文照原盤。**｜大小寫：原盤〈Week-end à Rome〉、條目單曲欄作〈Week-End à Rome〉。**用原盤的小寫 e。**｜條目的銷售認證依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Étienne Daho|Pop Satori",
+  "artist": "Étienne Daho",
+  "album": "Pop Satori",
+  "facts": [
+   {
+    "f": "release-group e56d9330 的欄位：title「Pop Satori」、artist-credit「Étienne Daho」、first-release-date **1986-04-01**、primary-type Album、secondary-types **空**。轄下 7 筆 release **全部 FR 或 XW、全部 Official**：1986 的 Virgin France 70429（**12 吋，12 軌**）、1986 的 Virgin France 30030（CD，12 軌）、1986-04-01 的 Parlophone France 數位（XW，12 軌，「2006 Remaster」）、1995 的 Virgin 8404902（CD，12 軌）、2006-09 的 Capitol Records（**CD 19＋20 軌兩片**）、2006-09-25 的 Capitol 0946 379972 6（CD，17 軌）、2016 的 Parlophone 50999 0273222 0（CD 19＋20 軌）。**原盤 12 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e56d9330-2c62-3036-a891-7046158409f1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1986 FR 原盤（Virgin France 70429，12 吋）的逐軌曲目與長度：1〈Satori thème〉1:52、2〈Épaule tattoo〉4:45、3〈Paris, le Flore〉4:14、4〈Pop égérie O.〉4:03、5〈Quelqu'un qui m'ressemble〉3:55、6〈Tombé pour la France〉4:19、7〈4000 années d'horreur〉4:21、8〈(Qui sera) Demain, mieux que moi〉4:10、9〈Pari à l'hôtel〉4:36、10〈Duel au soleil〉4:27、11〈Satori Pop Century〉3:21、12〈Late Night〉3:04。**12 軌、總長 45 分 25 秒；第 1 軌〈Satori thème〉1:52 是開場短曲，第 11 軌〈Satori Pop Century〉與它成一組收束。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e56d9330-2c62-3036-a891-7046158409f1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1487678797：collectionName「Pop Satori (2006 Remaster)」、releaseDate **1986-04-01**、copyright「℗ 1986, 2006 Parlophone / Warner Music France」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 1986 原盤**逐位置相符**、逐軌長度差都在 9 秒內（第 9 軌〈Pari à l'hôtel〉店面 3:35／原盤 4:36 差最多，是重製版的實際差異）。每軌曲名後掛「(2006 Remaster)」；**第 4 軌店面另註「(En duo avec Elie Medeiros)」，原盤曲名沒有這個掛名。**",
+    "src": "https://itunes.apple.com/lookup?id=1487678797&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：本張是 Étienne Daho 的 **troisième album studio**（第三張錄音室專輯），1986 年 4 月 1 日發行；**錄音期 1985 至 1986 年、跑三個城市三間錄音室：巴黎的 Studio de l'Oncle Sam、布魯塞爾的 Studio Synsound、倫敦的 Studio Guerilla**；**製作掛六個人：Étienne Daho、Rico Conning、Torch Song、Arnold Turboust、Franck Darcel、Dick O'Dell**；總長 45 分 25 秒；曲風記 pop；廠牌 Virgin。單曲三筆：〈Tombé pour la France〉1985 年 5 月 1 日、〈Épaule Tattoo〉1986 年 3 月 1 日、〈Duel au soleil〉1986 年 10 月。",
+    "src": "https://fr.wikipedia.org/wiki/Pop_Satori"
+   },
+   {
+    "f": "同一條目的 Musiciens 節：Étienne Daho（人聲、和聲）、Xavier Géronimi（吉他）、Arnold Turboust（貝斯、鍵盤、程式）、Rico Conning（程式）、Kako Bessot（小號）、Michel Gaucher（薩克斯風）、Alex Perdigon（長號）；客席逐曲分工——**William Orbit** 在〈Paris, Le Flore〉〈Quelqu'un Qui M'Ressemble〉〈(Qui Sera) Demain, Mieux Que Moi〉三軌上彈貝斯、吉他與打擊，Jérôme Soligny 與 Denis Bourhis 在〈Duel Au Soleil〉上彈木吉他與鋼琴，Chris Lee 在〈Paris, Le Flore〉吹小號，Olly Moore 在〈Pari À L'Hôtel〉吹薩克斯風；和聲有 Robert Farel 與 **Elli Medeiros**（〈Pop Égérie O.〉）、Laurie Mayer（兩軌）。",
+    "src": "https://fr.wikipedia.org/wiki/Pop_Satori"
+   },
+   {
+    "f": "藝人端點分頁全列 97 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 15 張，**《Pop Satori》1986-04-01 排第 3**，前一張是 1984 的《La Notte, la Notte...》、後一張是 1988-06 的《Pour nos vies martiennes》。**與條目的 troisième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1e0de31c-4957-4649-9aa3-7b0f1d9d2c84&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "製作欄掛了六個名字，錄音跑巴黎、布魯塞爾、倫敦三個城市",
+   "第一軌一分五十二秒的〈Satori thème〉，第十一軌再拿同一個名字收回來"
+  ],
+  "sound": "1986 年 Virgin 的 12 吋與 CD 都是 12 軌、總長 45 分 25 秒。第 1 軌〈Satori thème〉1:52 當開場，第 11 軌〈Satori Pop Century〉拿同一個字收束，中間十首落在 3:04 到 4:45。錄音 1985 到 1986 年跑三個城市——巴黎的 Studio de l'Oncle Sam、布魯塞爾的 Synsound、倫敦的 Guerilla；製作欄掛了六個名字，包括 Daho 自己、Rico Conning、Torch Song、Arnold Turboust、Franck Darcel 與 Dick O'Dell。客席裡有 William Orbit 在三軌上彈貝斯與吉他，Elli Medeiros 在〈Pop égérie O.〉上和聲，另有小號、薩克斯風、長號各一把。",
+  "keyTracks": [
+   "Épaule tattoo",
+   "Tombé pour la France",
+   "Duel au soleil"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986-04-01**、其下 1986 的三筆 Official release（12 吋、CD、數位）同年、條目 infobox 記 1986 年 4 月 1 日、串流店面 fr 1487678797 的 releaseDate 也是 **1986-04-01**；℗ 欄寫「℗ 1986, 2006」。**四處同年同日。** **同名先行單曲：無**，但**第 6 軌〈Tombé pour la France〉的 45 轉早在 1985 年 5 月 1 日就發了、比專輯早十一個月**（那年另有一張同名的《Tombé pour la France》在藝人目錄裡，條目把它列為本張的前一作）。",
+  "notes": "**配對風險**：藝人目錄裡另有 `693299663`《Pop Satori (1985-1987) [2006 Remastered] [Deluxe Version]》39 軌，**盤名含本張，字串比對會配錯**，必須指名 1487678797。｜**配對覆核**：fr `1487678797` 是 **2006 重製版**，曲序與 1986 原盤逐位置相符，但**第 9 軌比原盤短 61 秒**（3:35／4:36），其餘各軌差 2 到 9 秒。**行文不得拿店面的長度當原盤長度。**｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`Quelqu'un qui m'ressemble`、`4000 années d'horreur`、`Pari à l'hôtel`），兩邊一致。｜大小寫與標點：原盤〈(Qui sera) Demain, mieux que moi〉帶逗號、店面把逗號拿掉；原盤〈Paris, le Flore〉小寫 le、條目寫〈Paris, Le Flore〉。**行文照原盤。**｜第 4 軌的 `(En duo avec Elie Medeiros)` 是店面加的掛名，原盤曲名沒有；條目確認 Elli Medeiros 確實在該軌和聲（**條目與店面的拼法不同：Elli／Elie**）。**行文提她時用條目的 Elli Medeiros。**"
+ },
+ {
+  "key": "desc2:Étienne Daho|Eden",
+  "artist": "Étienne Daho",
+  "album": "Eden",
+  "facts": [
+   {
+    "f": "release-group 65c9a66f 的欄位：title「Eden」（**無重音**）、artist-credit「Étienne Daho」、first-release-date **1996-11-19**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release **全部 FR、全部 Official**：1996 的 Virgin France CDVIRX 61（CD，**13 軌**）、**1996-11-19 的 Virgin Music France 7243 8424352 4（Enhanced CD，12 軌）**、2019-10-18 的 Parlophone／Warner Music France 953 945 3（**CD 20＋19＋13 軌的三片組**）。**同年就有 13 軌與 12 軌兩種內容。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/65c9a66f-ae04-38e6-b8a4-f5d61f8c9ff9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996-11-19 FR 標準版（Virgin Music France 7243 8424352 4，Enhanced CD，12 軌）的逐軌曲目與長度：1〈Au commencement〉4:00、2〈Les Passagers〉4:55、3〈Un serpent sans importance〉3:47、4〈Les Pluies chaudes de l'été〉4:37、5〈Les Bords de Seine〉3:30、6〈Me manquer〉4:05、7〈Soudain〉3:22、8〈L'enfer enfin〉3:25、9〈Timide intimité〉1:59、10〈Rendez-vous au jardin des plaisirs〉4:44、11〈Quand tu m'appelles Eden〉3:39、12〈Des adieux très heureux〉3:09。**12 軌、總長約 45 分；〈Timide intimité〉1:59 是全碟最短。**",
+    "src": "https://musicbrainz.org/ws/2/release/ffcd1ccb-6b3a-45c5-9c76-5eb27e145e7f?fmt=json&inc=media+labels+recordings+release-groups"
+   },
+   {
+    "f": "同年的另一筆 FR CD（Virgin France CDVIRX 61）是 **13 軌**，曲序不同：**開頭多一首〈A New World〉4:03**，其後才是〈Les passagers〉〈Un serpent sans importance〉…，而〈Au commencement〉4:00 被移到**第 13 軌收尾**。**同一年兩種版本的差別就是〈A New World〉的有無與〈Au commencement〉排開頭還是排結尾。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65c9a66f-ae04-38e6-b8a4-f5d61f8c9ff9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1482930599：collectionName「Eden (2019 Remaster)」、releaseDate **1996-11-19**、copyright「℗ 1996, 2019 Parlophone / Warner Music France, a Warner Music Group Company」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 **12 軌的 Enhanced CD 逐位置相符**（開頭是〈Au commencement〉、沒有〈A New World〉）、逐軌長度差都在 2 秒內，每軌曲名後掛「(2019 Remaster)」。**店面另標出三軌的客席：第 3 軌 feat. Lyn Byrd、第 5 軌與 Astrud Gilberto 對唱、第 6 軌 feat. Elli Medeiros 與 Lyn Byrd、第 9 軌與 The Swingle Singers 合作**——原盤曲名都沒有這些掛名。",
+    "src": "https://itunes.apple.com/lookup?id=1482930599&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：盤名條目寫作 **《Éden》（帶重音）**，1996 年 11 月 19 日發行；**錄音在 1996 年的倫敦（正文寫 1996 年春天）**；**製作 Étienne Daho 與 Arnold Turboust**；總長記 45 分；曲風記 chanson française／pop／**trip hop**；廠牌 Virgin。首句寫本張是 Daho 的 **sixième album studio**（第六張錄音室專輯），並列出四首單曲：〈Au commencement〉〈Me manquer〉〈Les Bords de Seine〉〈Soudain〉。",
+    "src": "https://fr.wikipedia.org/wiki/%C3%89den_(album_d'%C3%89tienne_Daho)"
+   },
+   {
+    "f": "藝人端點分頁全列 97 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 15 張，**《Eden》1996-11-19 排第 6**，前一張是 1991-10-01 的《Paris ailleurs》、後一張是 2000-04-17 的《Corps & armes》。**與條目的 sixième 一致。** 本批收的四張在這份排序裡分別是第 1、2、3、6。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1e0de31c-4957-4649-9aa3-7b0f1d9d2c84&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一年兩種版本：一種拿〈Au commencement〉開場，另一種拿它收尾",
+   "第五軌是和 Astrud Gilberto 的對唱，第九軌找了 The Swingle Singers"
+  ],
+  "sound": "1996 年同時存在兩種內容：13 軌的 CDVIRX 61 以〈A New World〉開場、把〈Au commencement〉挪到末軌，12 軌的 Enhanced CD 則直接用〈Au commencement〉開場、沒有〈A New World〉。串流上架的是 12 軌那一版，總長約 45 分，最短的〈Timide intimité〉1:59。1996 年錄於倫敦，製作 Étienne Daho 與 Arnold Turboust，條目把曲風記成 chanson française、pop 與 trip hop。客席層很厚——〈Les Bords de Seine〉是與 Astrud Gilberto 的對唱，〈Me manquer〉有 Elli Medeiros 與 Lyn Byrd，〈Timide intimité〉找了 The Swingle Singers。",
+  "keyTracks": [
+   "Au commencement",
+   "Les Bords de Seine",
+   "Me manquer"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。release-group first-release-date **1996-11-19**、其下 1996 的兩筆 FR／Official CD（13 軌與 12 軌）同年、條目 infobox 記 1996 年 11 月 19 日、串流店面 fr 1482930599 的 releaseDate 也是 **1996-11-19**；℗ 欄寫「℗ 1996, 2019」。**四處同年同日。** **同名先行單曲：無**（四首單曲都不與專輯同名，**但第 11 軌〈Quand tu m'appelles Eden〉的曲名含盤名**，字串比對會撞）。",
+  "notes": "**盤名的重音**：來源端 release-group title 與店面都寫 **Eden（無重音）**，條目頁面卻寫 **Éden（帶重音）**。卡單走無重音的 `Eden`，**行文照卡單**。｜**版本差異（寫作層必讀）**：1996 年同時有 13 軌與 12 軌兩種，差別是〈A New World〉的有無與〈Au commencement〉的位置。**行文若要說「開場是〈Au commencement〉」，要知道那只對 12 軌版成立。**｜**配對風險**：藝人目錄裡另有 `1483689162`《Eden (1996 - 1998) [2019 Remaster] [Deluxe Version]》39 軌，**盤名含本張**，必須指名 1482930599。｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`Les Pluies chaudes de l’été`、`L’enfer enfin`、`Quand tu m’appelles Eden`），店面一律 ASCII。**卡池走 ASCII。**｜大小寫：原盤〈Les Passagers〉〈Les Pluies chaudes de l'été〉〈Les Bords de Seine〉首字母大寫，店面把 Passagers／Pluies 改小寫但 Bords de Seine 保留大寫。**行文照原盤。**｜店面加的 feat./duo 掛名不是原盤曲名的一部分，**引曲名時不要帶。**｜條目的銷售認證依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Sébastien Tellier|L'Incroyable Vérité",
+  "artist": "Sébastien Tellier",
+  "album": "L'Incroyable Vérité",
+  "facts": [
+   {
+    "f": "release-group 13d05458 的欄位：title「L'Incroyable Vérité」（來源端用彎撇 U+2019）、artist-credit「Sébastien Tellier」（藝人 MBID ac69016f）、first-release-date **2001-06-12**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release **全部 Official、全部 11 軌**：2001 的 Virgin CDVIR137／**Record Makers REC-03**（FR，CD）、2001-06-12 的 **Astralwerks ASW 50667-2（US，CD）**、2011-02-17 的 Record Makers 數位（XW）。**法國與美國同年就各有一筆 Official 壓片。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/13d05458-cd1a-323b-a973-aae13178957e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2001 FR 原盤（Virgin CDVIR137／Record Makers REC-03，CD）的逐軌曲目與長度：1〈Oh malheur chez O'Malley〉4:43、2〈Kazoo III〉3:50、3〈Universe〉5:06、**4〈Trilogie chien : L'Enfance d'un chien〉4:16、5〈Trilogie chien : Une vie de papa〉4:00、6〈Trilogie chien : Fin chien〉1:45**、7〈Grec〉1:14、8〈Kissed by You〉4:58、9〈Fantino〉3:12、**10〈Trilogie femme : Vierges / Une vraie maman / Face au miroir〉4:31**、11〈Black Douleur〉3:35。**11 軌裡有兩組標題成組的曲目：第 4–6 軌是拆成三軌的「Trilogie chien」，第 10 軌是把三段擠進一軌的「Trilogie femme」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=13d05458-cd1a-323b-a973-aae13178957e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1742763695：collectionName「L'incroyable Vérité」、releaseDate 2001-01-02、copyright「℗ 2001 Record Makers」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 2001 原盤**逐位置相符**、**逐軌長度與原盤相同到秒**。差別只在店面把「Trilogie chien :」與「Trilogie femme :」的前綴拿掉——第 4–6 軌只寫〈L'enfance D'un Chien〉〈Une Vie De Papa〉〈Fin Chien〉，第 10 軌只寫〈Trilogie Femme〉。",
+    "src": "https://itunes.apple.com/lookup?id=1742763695&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "藝人條目的 Ses débuts 節：Sébastien Tellier 1975 年 2 月 22 日生於 Val-d'Oise 的 Le Plessis-Bouchard，父親 Alain Tellier 是節奏吉他手、活動於樂團 Magma 周邊的音樂人圈子。他先在 Virgin Records 試過、在一張合輯上拿到第一首曲子，並在那裡認識 Phoenix。**他的第一張專輯《L'Incroyable vérité》（2001）出在 Air 共同創辦的廠牌 Record Makers**；為了宣傳這張碟，他在 Air 2001 年的巡演上擔任開場，舞台上由特雷門琴名手 **Pamelia Kurstin** 伴奏。",
+    "src": "https://fr.wikipedia.org/wiki/S%C3%A9bastien_Tellier"
+   },
+   {
+    "f": "同一條目：**本張的第 9 軌〈Fantino〉被選進 Sofia Coppola 2003 年電影《Lost in Translation》的原聲帶。** 條目另記他以法語、英語、西班牙語、德語與義大利語演唱。",
+    "src": "https://fr.wikipedia.org/wiki/S%C3%A9bastien_Tellier"
+   },
+   {
+    "f": "藝人端點分頁全列 **64 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **9 張**，依序為 **《L'Incroyable Vérité》2001-06-12**、《Politics》2004-01-05、《Sexuality》2008-02-19、《My God Is Blue》2012-04-16、《Confection》2013-10-14、《L'aventura》2014-05-26、《Domesticated》2020-05-29、《SYMPHONIC (extended)》2022-02-25、《Kiss the Beast》2026-01-30。**本張排第 1；池中已有的《Confection》排第 5，與卡單說法一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ac69016f-42cc-4322-b70e-101458b769aa&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "「狗的三部曲」拆成三軌放，「女人的三部曲」卻擠進同一軌",
+   "第九軌後來被放進《愛情，不用翻譯》的原聲帶"
+  ],
+  "sound": "2001 年 Record Makers／Virgin 的 CD 11 軌，單軌 1:14 到 5:06。曲目結構有兩處成組：第 4 到 6 軌是拆成三軌的「Trilogie chien」（狗的三部曲），第 10 軌則把「Trilogie femme」的三段〈Vierges〉〈Une vraie maman〉〈Face au miroir〉壓進同一軌。第 7 軌〈Grec〉只有 1:14。廠牌是 Air 共同創辦的 Record Makers，美國同年由 Astralwerks 發行。宣傳期他替 Air 巡演開場，舞台上有特雷門琴手 Pamelia Kurstin。第 9 軌〈Fantino〉後來收進《Lost in Translation》的原聲帶。",
+  "keyTracks": [
+   "Fantino",
+   "Universe",
+   "Kissed by You"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2001。release-group first-release-date **2001-06-12**、其下 2001 的兩筆 Official CD（FR 與 US）同年、串流店面 fr 1742763695 的 ℗ 2001 相符。**店面的 releaseDate 記 2001-01-02，與來源端的 6 月 12 日差半年**——年份一致，月日不可採，**行文只寫 2001**。**同名先行單曲：無**；**盤名與其他作品無撞名**（藝人目錄裡沒有第二筆叫這個名字的條目）。",
+  "notes": "**盤名的撇號與大小寫**：來源端 title 作「L'Incroyable Vérité」（彎撇 U+2019、大寫 I），店面作「L'incroyable Vérité」（ASCII 直撇、小寫 i）。卡單走 ASCII 直撇＋大寫 I，**行文照卡單**。｜**撇號兩種寫法**：來源端曲名用彎撇（`Oh malheur chez O’Malley`、`L’Enfance d'un chien`），店面一律 ASCII。**卡池走 ASCII。**｜**曲名前綴**：來源端第 4–6 與第 10 軌帶「Trilogie chien :」「Trilogie femme :」前綴（半形冒號前有空格），店面把前綴整個拿掉。**行文提這兩組時說明它是三部曲即可，引單軌曲名用店面的裸曲名。**｜大小寫：店面把每字首字母大寫（`Une Vie De Papa`），原盤是正常大小寫。**行文照原盤。**｜藝人條目提到的 Eurovision 名次屬名次類資訊，**本卡不引**（與本張無關）。"
+ },
+ {
+  "key": "desc2:Sébastien Tellier|Politics",
+  "artist": "Sébastien Tellier",
+  "album": "Politics",
+  "facts": [
+   {
+    "f": "release-group eab88d7b 的欄位：title「Politics」、artist-credit「Sébastien Tellier」、first-release-date **2004-01-05**、primary-type Album、secondary-types **空**。轄下 4 筆 release **全部 Official、全部 11 軌**：2004-01-05 的 Source 7243 5 94283 2 1／**Record Makers REC-13**（FR，**Copy Control CD**）、2005-06-13 的 Record Makers 數位（XW）、2005-09-12 的 **Lucky Number LUCKY 003CD（GB，CD）**、2011-02-17 的 Record Makers 數位（XW）。**法國原盤是防拷 CD；英國要等一年半後才由 Lucky Number 發行。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/eab88d7b-b9cc-3d46-ad1c-12419a16cd8c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2004-01-05 FR 原盤（Source／Record Makers REC-13，Copy Control CD）的逐軌曲目與長度：1〈Bye-Bye〉2:19、2〈League Chicanos〉3:12、3〈Wonderafrica〉5:08、4〈Broadway〉4:03、**5〈La Ritournelle〉7:34**、6〈Benny〉3:10、7〈Slow Lynch〉1:20、8〈Mauer〉3:19、9〈La Tuerie〉2:58、10〈Ketchup vs Genocide〉3:46、11〈Zombie〉3:22。**11 軌、總長 40 分 05 秒；第 5 軌〈La Ritournelle〉7:34 比其他十軌任何一首都長一倍以上，第 7 軌〈Slow Lynch〉只有 1:20。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eab88d7b-b9cc-3d46-ad1c-12419a16cd8c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1742755566：collectionName「Politics」、releaseDate 2004-01-01、copyright「℗ 2004 Record Makers」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 2004 原盤**逐位置相符**、**逐軌長度與原盤相同到秒**。差別只在正字：店面第 1 軌寫〈Bye - Bye〉（中間有空格）、第 10 軌寫〈Ketchup Vs. Genocide〉（帶句點）、第 11 軌寫〈Zombi〉（少一個 e）。",
+    "src": "https://itunes.apple.com/lookup?id=1742755566&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "英語條目的 infobox 與首段：本張是 Sébastien Tellier 的 **second studio album**（第二張錄音室專輯），**2004 年 1 月 31 日**由 Record Makers 與 Astralwerks 發行，製作 Sébastien Tellier，總長 40 分 05 秒，曲風記 lounge／orchestral pop／psychedelic pop。**條目明寫這張的鼓由 Tony Allen 打**，並說**歌是用英語、德語與西班牙語唱的**。Personnel 欄另列 Mathieu Tonetti（製作）、Frederick N'Landu 與 **Philippe Zdar**（混音）、Noel Summerville（母帶）、Hélène Grand（攝影）、Manu Cossu 與 Alexandre Courtès（美術）。",
+    "src": "https://en.wikipedia.org/wiki/Politics_(S%C3%A9bastien_Tellier_album)"
+   },
+   {
+    "f": "藝人條目：**《Politics》2004 年出版，Fela Kuti 的前鼓手 Tony Allen 在大部分曲目上演奏**；主打曲〈La Ritournelle〉大獲成功，讓 Sébastien Tellier 有了一定的知名度。同年他為電影《Narco》做了配樂。2006 年他與鋼琴家 Simon Dalmais 花幾天把前兩張碟的曲子重錄成木吉他版本，加上 Christophe〈La Dolce Vita〉的翻唱，成為《Sessions》——後來補進《Narco》配樂的幾首、改名為《Universe》在英國由 Lucky Number 發行。",
+    "src": "https://fr.wikipedia.org/wiki/S%C3%A9bastien_Tellier"
+   },
+   {
+    "f": "藝人端點分頁全列 64 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 9 張，**《Politics》2004-01-05 排第 2**，前一張是 2001-06-12 的《L'Incroyable Vérité》、後一張是 2008-02-19 的《Sexuality》。**與英語條目的 second studio album 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ac69016f-42cc-4322-b70e-101458b769aa&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十一首裡有一首七分半，另一首只有一分二十",
+   "打鼓的是 Fela Kuti 的舊鼓手 Tony Allen"
+  ],
+  "sound": "2004 年 Record Makers 的防拷 CD 11 軌、總長 40 分 05 秒。曲長落差極大——第 5 軌〈La Ritournelle〉7:34 比其他任何一首長一倍以上，第 7 軌〈Slow Lynch〉只有 1:20。製作是 Tellier 自己（Mathieu Tonetti 共同掛名），混音有 Philippe Zdar，母帶 Noel Summerville。鼓由 Fela Kuti 的前鼓手 Tony Allen 打，大部分曲目上都有他。條目把曲風記成 lounge、orchestral pop 與 psychedelic pop，並說歌是用英語、德語與西班牙語唱的。英國版要到 2005 年 9 月才由 Lucky Number 發行。",
+  "keyTracks": [
+   "La Ritournelle",
+   "Bye-Bye",
+   "Wonderafrica"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2004。release-group first-release-date **2004-01-05**、其下唯一的原盤 release 是 2004-01-05 的 FR Copy Control CD、串流店面 fr 1742755566 的 releaseDate 2004-01-01 與 ℗ 2004 相符。**英語條目寫的是 2004 年 1 月 31 日，與來源端的 1 月 5 日差 26 天**——年份三處一致，**行文只寫 2004**。**同名先行單曲：無**；盤名「Politics」是常見英文字，**跨藝人的字串比對風險高**。",
+  "notes": "**撇號**：本張曲名不含撇號，兩種寫法問題不觸及。｜**曲名正字三處**：原盤〈Bye-Bye〉／店面〈Bye - Bye〉；原盤〈Ketchup vs Genocide〉／店面〈Ketchup Vs. Genocide〉／英語條目〈Ketchup vs. Genocide〉；**原盤〈Zombie〉／店面〈Zombi〉（少一個 e）**。**行文照原盤。**｜**配對風險**：盤名是常見英文字，`search` 端點跨藝人會撈到大量無關條目，**必須走藝人目錄並指名 1742755566**。｜英語條目的 Reception 與 Charts 兩節含評分與名次，**依規則一律不進 facts**。｜藝人條目提到的《Sessions》／《Universe》是同一批錄音的改名再發，**與本張不同碟，行文不要混**。"
+ },
+ {
+  "key": "desc2:Sébastien Tellier|Sexuality",
+  "artist": "Sébastien Tellier",
+  "album": "Sexuality",
+  "facts": [
+   {
+    "f": "release-group 73ba26da 的欄位：title「Sexuality」、artist-credit「Sébastien Tellier」、first-release-date **2008-02-19**、primary-type Album、secondary-types **空**。轄下 6 筆 release 全部 Official：2008-02-19 的 Record Makers 數位（XW，11 軌）、2008-02-25 的 Record Makers REC-43（FR，CD，11 軌，兩筆）、2008-02-25 的 **Lucky Number LUCKY 017（GB，CD，11 軌）**、2008-07-02 的 **Rambling RECORDS RBCS-2270（JP，CD，14 軌）**、2011-02-14 的 Record Makers 數位（11 軌）。**原盤 11 軌，日本版 14 軌；這次法國與英國同日發行。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/73ba26da-3301-35ef-af02-c926fafa3bdc?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "11 軌版的逐軌曲目與長度：1〈Roche〉5:01、2〈Kilometer〉4:18、3〈Look〉4:34、4〈Divine〉3:09、5〈Pomme〉3:31、6〈Une heure〉3:51、**7〈Sexual Sportswear〉7:17**、8〈Elle〉4:38、9〈Fingers of Steel〉5:16、10〈Manty〉3:32、11〈L'amour et la violence〉5:23。**11 軌，第 7 軌〈Sexual Sportswear〉7:17 最長、第 4 軌〈Divine〉3:09 最短；盤名同名曲不存在，但第 7 軌的曲名含盤名的字根。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=73ba26da-3301-35ef-af02-c926fafa3bdc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1744347394：collectionName「Sexuality」、releaseDate **2008-02-25**、copyright「℗ 2008 Record Makers」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、**逐軌長度與原盤相同到秒**。差別只在大小寫（店面把〈Une heure〉寫成〈Une Heure〉、〈L'amour et la violence〉寫成〈L'amour Et La Violence〉）。**同一藝人目錄下另有 `1742766159`「Sexuality Remix」16 軌（2010-04-09），盤名含本張，字串比對會配錯。**",
+    "src": "https://itunes.apple.com/lookup?id=1744347394&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與 Production 節：本張是 Sébastien Tellier 的 **troisième album studio**（第三張錄音室專輯），2008 年 2 月 25 日出在獨立廠牌 Record Makers，曲風記 musique électronique。**製作交給 Daft Punk 的 Guy-Manuel de Homem-Christo**——Tellier 自己說「這張碟幾乎是他做的」；他說要處理「性」這個題目就需要一組搭檔，所以找了對方。",
+    "src": "https://fr.wikipedia.org/wiki/Sexuality"
+   },
+   {
+    "f": "同一條目的 Genèse 節：如盤名所示，整張碟繞著性打轉。條目引 Tellier 的說法把三張碟串成一條線——第一張《L'Incroyable Vérité》（2001）時他覺得「最重要的是家庭」，《Politics》（2004）獻給政治因為他認為「一切都由它掌管」，之後他發現「性支配一切」「一切都是性」，於是決定整張碟只做這個題目。他的伴侶 **Amandine de la Richardière** 參與了幾首：除了〈Kilometer〉的和聲，**〈Pomme〉裡聽得到她的呻吟**。條目另記 **第 4 軌〈Divine〉是他 2008 年代表法國參加歐洲歌唱大賽的曲目**。",
+    "src": "https://fr.wikipedia.org/wiki/Sexuality"
+   },
+   {
+    "f": "藝人端點分頁全列 64 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 9 張，**《Sexuality》2008-02-19 排第 3**，前一張是 2004-01-05 的《Politics》、後一張是 2012-04-16 的《My God Is Blue》。**與條目的 troisième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ac69016f-42cc-4322-b70e-101458b769aa&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "三張碟三個題目：先是家庭，再是政治，然後他決定一整張只談性",
+   "製作交給 Daft Punk 的一半，他自己說「這張幾乎是他做的」"
+  ],
+  "sound": "2008 年 Record Makers 的 CD 11 軌，單軌 3:09 到 7:17；第 7 軌〈Sexual Sportswear〉7:17 最長。日本另出 14 軌版。製作是 Daft Punk 的 Guy-Manuel de Homem-Christo，Tellier 自己說「這張碟幾乎是他做的」。整張繞著性這個題目走，是他從家庭（第一張）、政治（第二張）一路推過來的第三個題目。伴侶 Amandine de la Richardière 參與了〈Kilometer〉的和聲與〈Pomme〉。第 4 軌〈Divine〉是他 2008 年代表法國參加歐洲歌唱大賽的曲目。法國與英國這次同日發行。",
+  "keyTracks": [
+   "Roche",
+   "Divine",
+   "L'amour et la violence"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2008。release-group first-release-date **2008-02-19**（數位版）、其下 2008-02-25 的三筆實體 CD（FR 兩筆與 GB 一筆）同月、串流店面 fr 1744347394 的 releaseDate **2008-02-25** 與 ℗ 2008 相符、條目 infobox 記 2008 年 2 月 25 日。**數位早實體六天，年份無爭議。** **同名先行單曲：無**；但**第 7 軌〈Sexual Sportswear〉的曲名含盤名字根**，且 2010 年另有《Sexuality Remix》（店面 1742766159，16 軌）會撞盤名。",
+  "notes": "**配對風險**：藝人目錄裡有 `1742766159`《Sexuality Remix》（2010-04-09，16 軌），**盤名含本張，字串比對會配錯**，必須指名 1744347394。｜**版本差異**：日本 2008 版 14 軌，比原盤多三軌。**行文只認 11 軌。**｜**撇號**：來源端曲名用彎撇 U+2019（`L’amour et la violence`），店面用 ASCII（`L'amour Et La Violence`）。**卡池走 ASCII，`keyTracks` 已按 ASCII 寫。**｜大小寫：店面把每字首字母大寫，原盤是正常大小寫（`Une heure`、`L'amour et la violence`）。**行文照原盤。**｜條目 infobox 的 critique 欄含兩個評分，**依規則不進 facts**；歐洲歌唱大賽的名次同樣不寫，**只寫他以〈Divine〉代表法國參賽**。"
+ },
+ {
+  "key": "desc2:Celine Dion|D'eux",
+  "artist": "Celine Dion",
+  "album": "D'eux",
+  "facts": [
+   {
+    "f": "release-group 9fe516f5 的欄位：title「D'eux」、**artist-credit「Céline Dion」（帶重音）**、藝人 MBID 847e8a0c、first-release-date **1995-03-27**、primary-type Album、secondary-types **空**。轄下 **16 筆 release**，國別橫跨 BR／CA／FR／US／JP／XE／XW，**1995 年的六筆全部 12 軌**（含 FR 的 Columbia COL 480286 2 CD 與卡帶、CA 的 Sony Musique CK 80219 CD 三筆、BR 的 CD）；**1995-05-16 的美國版標題不是《D'eux》而是《The French Album》**（Sony 550 Music BK 67107，12 軌），1996-10-02 的日本版（Epic ESCA 6542）disambiguation 寫「フレンチ・アルバム」。另有 2009-11-27 的 17 軌「édition 15ème anniversaire」與 2017-09-01 的 XE 12 吋。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9fe516f5-8e2c-3664-9903-c852c2fffd6b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1995 原盤 12 軌的逐軌曲目與長度：1〈Pour que tu m'aimes encore〉4:15、2〈Le Ballet〉4:23、3〈Regarde-moi〉3:57、4〈Je sais pas〉4:34、5〈La Mémoire d'Abraham〉3:50、6〈Cherche encore〉3:24、7〈Destin〉4:16、8〈Les derniers seront les premiers〉3:33、9〈J'irai où tu iras〉3:26、10〈J'attendais〉4:25、11〈Prière païenne〉4:11、12〈Vole〉2:55。**12 軌、總長 46 分 57 秒；十二首全部落在 2:55 到 4:34，沒有長曲。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9fe516f5-8e2c-3664-9903-c852c2fffd6b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 203133169：collectionName「D'eux」、artistName「Céline Dion」、releaseDate 1995-10-01、copyright「℗ 1995 Sony Music Entertainment Canada Inc.」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、逐軌長度差都在 3 秒內。**同一藝人目錄下另有 `338620107`「D'eux (Édition 15e Anniversaire)」17 軌（releaseDate 記 1995-03-27），盤名含本張，字串比對會配錯。**",
+    "src": "https://itunes.apple.com/lookup?id=203133169&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：本張**在美國叫《The French Album》**，1995 年 3 月 28 日發行（infobox 依國別分列：加拿大 1995-03-28、法國 1995-04-03、美國 1995-05-16、英國 1995-10-02、日本與義大利 1996-10-02）；**錄音期 1994 年 11 至 12 月、地點是巴黎的 studio Méga**；**製作 Jean-Jacques Goldman 與 Erick Benzi**；總長 46 分 57 秒；廠牌 Columbia／Epic。首句寫本張**由 Jean-Jacques Goldman 一人作詞作曲並製作**。單曲五首：〈Pour que tu m'aimes encore〉1995 年 3 月 13 日、〈Je sais pas〉1995 年 8 月 21 日、〈Destin〉與〈Le ballet〉1996 年 1 月、〈J'irai où tu iras〉1996 年 4 月。",
+    "src": "https://fr.wikipedia.org/wiki/D'eux"
+   },
+   {
+    "f": "同一條目的 Personnel 節：製作與編曲 Erick Benzi 與 Jean-Jacques Goldman；和聲 Beckie Bell、**Carole Fredericks**、Yvonne Jones；貝斯 Neil Jason 與 Yannick Hardouin；鼓 Christophe Deschamps；吉他 Basile Leroux 與 Patrice Tison；鍵盤與程式 Erick Benzi；鋼琴 Arnaud Dunoyer de Segonzac；薩克斯風 Christophe Nègre 與 Sylvain Beuf；長號 Denis Leloup；小號 Christian Martinez 與 Antoine Russo；**末軌〈Vole〉的鋼琴與編曲由 Roland Romanelli 負責**；經紀 René Angélil。",
+    "src": "https://fr.wikipedia.org/wiki/D'eux"
+   },
+   {
+    "f": "藝人端點分頁全列 **209 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **31 張**。依 first-release-date 排序，**《D'eux》1995-03-27 排第 14**（前一張是 1994 的《Voice of Love》、後一張是 1996-03-07 的《Falling Into You》）；**條目首句寫的是 quinzième album（第十五張），兩邊差一張。** 池中已有的三張英語盤在這份排序裡分別是《The Colour of My Love》第 12、《Falling Into You》第 16、《Let's Talk About Love》第 17。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=847e8a0c-cc20-4213-9e16-975515c2a926&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十二首的詞曲全出自同一支筆，連製作都是他",
+   "同一張碟在美國換了名字上架，直接叫《The French Album》"
+  ],
+  "sound": "1995 年的 CD 12 軌、總長 46 分 57 秒，十二首全部落在 2:55 到 4:34。1994 年 11 到 12 月錄於巴黎的 studio Méga，詞曲全由 Jean-Jacques Goldman 一人寫，製作由他與 Erick Benzi 共同掛名。編制是 Christophe Deschamps 的鼓、Neil Jason 與 Yannick Hardouin 的貝斯、Basile Leroux 與 Patrice Tison 的吉他、Erick Benzi 的鍵盤與程式，另有薩克斯風、長號、小號各兩把；末軌〈Vole〉的鋼琴與編曲換成 Roland Romanelli。同一張碟在美國以《The French Album》之名上架，日本版也用了同樣的副名。",
+  "keyTracks": [
+   "Pour que tu m'aimes encore",
+   "Je sais pas",
+   "J'irai où tu iras"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995-03-27**、其下 1995 的六筆 Official release（CA／FR／BR）同年、條目 infobox 依國別分列的最早一筆是加拿大 1995 年 3 月 28 日、℗ 1995 相符。**串流店面 fr 203133169 的 releaseDate 記 1995-10-01**（對應英國那條線的 10 月 2 日），**年份一致、月日不可採**。**同名對照組有兩型**：同名的美國版《The French Album》（同一張碟、換名上架）與 2009 的 17 軌十五週年版（店面 338620107）。**同名先行單曲：無**（先行單曲是〈Pour que tu m'aimes encore〉，1995-03-13）。",
+  "notes": "**掛名字元（本批裁定 1）**：來源端與店面的 artist-credit／artistName 都是 **「Céline Dion」（帶重音）**，卡單依池中先例走 **無重音的「Celine Dion」**。**行文照卡單寫 Celine Dion**，重音形只留在本欄。｜**擋下策展層的序數風險**：條目首句寫 **quinzième album**（第十五張）、藝人目錄排第 **14**，差一張。卡單 `curatorWhy` 本張沒寫序數，**行文也不要寫**。｜**配對風險**：`338620107`（十五週年版 17 軌）盤名含本張、releaseDate 還記成 1995-03-27，**比原盤那筆更像原盤**，必須指名 `203133169`。｜**撇號兩種寫法**：來源端多數 release title 用彎撇 U+2019（`D’eux`），少數用 ASCII（`D'eux`）；**店面的曲名混用兩種**——〈Pour que tu m'aimes encore〉與〈J'irai où tu iras〉用彎撇 U+2019，〈La mémoire d'Abraham〉〈J'attendais〉用 ASCII 直撇。**卡池走 ASCII，`keyTracks` 已全部改成 ASCII。**｜大小寫：原盤〈Le Ballet〉〈La Mémoire d'Abraham〉首字母大寫，店面小寫。**行文照原盤。**｜條目的銷售認證與「最暢銷法語專輯」一類的說法**依規則不進 facts**。"
+ },
+ {
+  "key": "desc2:Celine Dion|S'il suffisait d'aimer",
+  "artist": "Celine Dion",
+  "album": "S'il suffisait d'aimer",
+  "facts": [
+   {
+    "f": "release-group 09b86375 的欄位：title「S'il suffisait d'aimer」（來源端用彎撇 U+2019）、artist-credit「Céline Dion」、first-release-date **1998-08-31**、primary-type Album、secondary-types **空**。轄下 6 筆 release **全部 Official、全部 12 軌**：1998 的 Columbia COL 491859-8（FR，**MiniDisc**）、1998 的 Sony Music Entertainment (Canada) BK 69679（CA，CD）、1998-08-31 的 Columbia 數位、1998-09-07 的 Columbia COL 491859-2（FR，CD）、1998-09-07 的 Sony Musique CK 80339（CA，CD）、另一筆 Columbia 的 Dolby Atmos 數位。**六筆全部 12 軌，載體含 MiniDisc 這種少見的規格。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/09b86375-0965-3fc0-8fc5-7d583c4b52f1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1998 FR 版（Columbia COL 491859-8，MiniDisc）的逐軌曲目與長度：1〈Je crois toi〉5:08、2〈Zora sourit〉3:55、3〈On ne change pas〉4:12、4〈Je chanterai〉4:14、5〈Terre〉4:20、6〈En attendant ses pas〉4:12、7〈Papillon〉4:04、8〈L'Abandon〉4:29、9〈Dans un autre monde〉4:41、10〈Sur le même bateau〉4:28、11〈Tous les blues sont écrits pour toi〉4:51、12〈S'il suffisait d'aimer〉3:34。**12 軌、總長 51 分 46 秒；十二首全部落在 3:34 到 5:08，落差不到一分半。第 12 軌與盤名同名、收在最後。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=09b86375-0965-3fc0-8fc5-7d583c4b52f1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 212137941：collectionName「S'il suffisait d'aimer」、artistName「Céline Dion」、releaseDate **1998-08-31**、copyright「℗ 1998 Sony Music Entertainment (Canada) Inc.」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、逐軌長度各短 2 到 4 秒（店面版本一致地略短）。差別只在大小寫（店面把〈L'Abandon〉寫成〈L'abandon〉）。**藝人目錄裡沒有第二筆同名條目，是本批少數不必防撞名的一張。**",
+    "src": "https://itunes.apple.com/lookup?id=212137941&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox：本張 1998 年 8 月 31 日發行；**錄音在 1997 年**；**auteur-compositeur 欄只掛 Jean-Jacques Goldman 一人，製作 Erick Benzi 與 Jean-Jacques Goldman**；總長 51 分 46 秒；曲風記 pop rock；廠牌 Columbia／Sony Music。單曲五首：〈Zora sourit〉1998 年 9 月 14 日、**〈S'il suffisait d'aimer〉1998 年 11 月 23 日（與專輯同名，在專輯之後）**、〈On ne change pas〉1999 年 3 月 1 日、〈En attendant ses pas〉與〈Je crois toi〉1999 年 7 月 5 日。前一張記《Let's Talk About Love》1997、後一張記《These Are Special Times》。",
+    "src": "https://fr.wikipedia.org/wiki/S'il_suffisait_d'aimer"
+   },
+   {
+    "f": "藝人端點分頁全列 209 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 31 張。依 first-release-date 排序，**《S'il suffisait d'aimer》1998-08-31 排第 18**，前一張是 1997-11-14 的《Let's Talk About Love》、後一張是 1998-10-31 的《These Are Special Times》——**同一年連出兩張，一張法語一張英語耶誕碟**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=847e8a0c-cc20-4213-9e16-975515c2a926&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一份藝人目錄裡的法語盤與英語盤分布：法語盤含《La Voix du bon Dieu》1981-11-09、《Tellement j'ai d'amour…》1982、《Les chemins de ma maison》1983、《C'est pour toi》1985、《Incognito》1987、《Dion chante Plamondon》1991、《D'eux》1995、**《S'il suffisait d'aimer》1998**、《1 fille & 4 types》2003、《D'elles》2007、《Sans attendre》2012、《Encore un soir》2016；英語盤則從 1990 的《Unison》起算。**本張與《D'eux》是九〇年代僅有的兩張法語錄音室盤。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=847e8a0c-cc20-4213-9e16-975515c2a926&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十二首全部落在三分半到五分零八秒，落差不到一分半",
+   "同一年出兩張碟：八月這張法語盤，十月一張英語耶誕碟"
+  ],
+  "sound": "1998 年的 CD 12 軌、總長 51 分 46 秒，十二首全部落在 3:34 到 5:08。1997 年錄，詞曲全由 Jean-Jacques Goldman 一人掛名，製作由他與 Erick Benzi 共同負責——與三年前那張法語盤同一組班底。條目把曲風記成 pop rock。末軌〈S'il suffisait d'aimer〉與盤名同名、收在最後，同名單曲要到 1998 年 11 月才發。載體上還出過 MiniDisc 版，是這批四十五張裡唯一一筆。同年 10 月她另出了一張英語耶誕碟。",
+  "keyTracks": [
+   "S'il suffisait d'aimer",
+   "Je crois toi",
+   "Zora sourit"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998。release-group first-release-date **1998-08-31**、其下 1998 的五筆 Official release（FR MiniDisc、CA CD、FR 與 CA 的 1998-09-07 CD、數位）同年、串流店面 fr 212137941 的 releaseDate **1998-08-31** 與 ℗ 1998 完全相符、條目 infobox 記 1998 年 8 月 31 日。**四處同年同日。** **同名對照組：同名單曲在專輯之後**（1998-11-23），**末軌也與盤名同名**；藝人目錄裡沒有第二筆同名專輯。",
+  "notes": "**掛名字元（本批裁定 1）**：來源端與店面都是「Céline Dion」（帶重音），卡單依池中先例走無重音的「Celine Dion」。**行文照卡單。**｜**撇號兩種寫法**：來源端的 release-group title 與多數 release title 用彎撇 U+2019（`S’il suffisait d’aimer`），店面一律 ASCII 直撇。**卡單走 ASCII，`keyTracks` 已按 ASCII 寫。**｜**這張是本批少數配對乾淨的一張**：藝人目錄裡沒有同名的再版或重混，`212137941` 的曲名曲序與原盤逐位置相符，只是各軌一致地短 2 到 4 秒。｜大小寫：原盤〈L'Abandon〉大寫 A、店面小寫。**行文照原盤。**｜條目 critique 欄的評分與銷售認證**依規則不進 facts**。"
  }
 ]
