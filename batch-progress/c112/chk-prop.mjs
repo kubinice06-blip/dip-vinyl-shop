@@ -4,7 +4,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from '../lib.mjs';
 const VALID = ['rock', 'jazz', 'soul', 'electronic', 'pop', 'hiphop', 'folk', 'classical', 'world', 'blues'];
-const k = s => String(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+// 2026-09-06（c-117 發現）：原本的正規化把 `&` 當標點刪掉、卻留著 `and`，
+// 於是 `Shirley & Dolly Collins` 與 `Shirley and Dolly Collins` 摺出兩個不同的鍵——
+// **`&`／`and` 分裂的撞卡一個都抓不到，標記 0 不等於沒撞卡**。先把 `&` 換成 `and` 再剝。
+const k = s => String(s).toLowerCase().replace(/[&＆]/g, 'and').replace(/[^\p{L}\p{N}]+/gu, '');
 const rows = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
 const live = new Map(); for (const r of rows) live.set(k(r[0]) + '|' + k(r[1]), r[8] ? `apex:${r[8]}` : 'seed');
 
