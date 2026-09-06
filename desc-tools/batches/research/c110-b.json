@@ -790,5 +790,181 @@
   "status": "full",
   "yearVerified": "一致，1975。所釘 release-group 的 first-release-date 是 **1975-01**、轄下原盤標同月（IT，RCA TPL 1-1107），義大利文條目寫 1975 年由 RCA Italiana 發行，德國店面 id 259987937 的 releaseDate 標 1975-01-01、℗ 1975。四處同年，取 **1975**。同名先行單曲：無；名下 68 個 release-group 沒有第二筆叫《Rimmel》的專輯條目。",
   "notes": "**探測層 ready 覆核通過**：de 259987937，9 軌全有 previewUrl，`trackCount` 與曲目列都是 9，**與原盤軌數一致**。\\n**status（裁定 167 附帶）**：6 筆裡 **2 筆 Promotion**，兩筆都不採為背書——與策展層說法（「De Gregori《Rimmel》含 2 筆 Promotion」）相符。\\n策展層其餘說法逐條查證：68 個 release-group、24 張純 Album、本張是第四張、RCA TPL 1-1107、9 軌——**全部屬實**。\\n**跨卡連結（同組第 23 張）**：〈Pablo〉是他與 **Lucio Dalla** 共同作曲的唯一一首；而 Dalla《Lucio Dalla》(1979) 裡的〈Cosa sarà〉又是兩人對唱的。**這條關係只能寫一次**——建議留給本張（這裡是作曲層級的合作），Dalla 那張寫別的。\\n**未寫進 facts 的**：專輯榜名次與在榜週數、Rolling Stone Italia 百大名次、以及當年樂評筆戰的引句（「De Gregori non è Nobel, è Rimmel」那句），**依派工信一律不寫**；四十萬張的銷量本身可寫，已進 facts。"
+ },
+ {
+  "key": "desc2:Antonello Venditti|Sotto il segno dei pesci",
+  "artist": "Antonello Venditti",
+  "album": "Sotto il segno dei pesci",
+  "facts": [
+   {
+    "f": "所釘 release-group 0570526b 的欄位：title「Sotto il segno dei pesci」、artist-credit「Antonello Venditti」（藝人實體 dd4a5777）、first-release-date **1978-03-08**、primary-type Album、secondary-types **空**。轄下 6 筆 release 全部 Official、**1978 那兩筆都是 8 軌**：IT 的 12\" Vinyl（Philips 6323 056）與 1978-03-08 的 DE 版（Metronome 0060.137）；其後是 2004 的 IT CD、2018 的兩筆再發（其中 40 週年版是 8+8 的雙片）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0570526b-a661-311b-a995-b0da7fab6723?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1978 IT 原盤（Philips 6323 056）的逐軌：〈Sotto il segno dei pesci〉**6:03**、〈Francesco〉4:26、〈Bomba o non bomba〉5:08、〈Chen il Cinese〉4:09、〈Sara〉4:30、〈Il telegiornale〉5:15、〈Giulia〉5:09、〈L'Uomo Falco〉5:45。**只有八軌，卻長四十分鐘——六首超過四分半，開場的同名曲六分鐘出頭。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0570526b-a661-311b-a995-b0da7fab6723&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Sotto il segno dei pesci〉：**這是 Venditti 離開 RCA Italiana 之後、在 Philips 做的第一張唱片**。全碟詞曲與編曲都由他本人負責，只有〈Francesco〉的編曲交給 Nicola Samale 與 Giuseppe Mazzuca（兩人也指揮樂團）。錄音在羅馬的 Trafalgar Recording Studios 與**倫敦的 Marquee Studios**進行，錄音師 Gaetano Ria、與 Tim Painter 一起混音。錄音期間還錄了一首〈Italia〉，但沒有放進這張，直到 1982 年才收在《Sotto la pioggia》。",
+    "src": "https://it.wikipedia.org/wiki/Sotto_il_segno_dei_pesci"
+   },
+   {
+    "f": "同一條目：**封面出自 Mario Convertino 之手，白底上畫了一藍一橘兩條魚，指的是 Venditti 出生的星座；第一版的封套上還把十二個星座全部做成浮凸。** **唱片發行日 3 月 8 日正是他的生日**；條目並記載，**它出版一星期後就發生了 Moro 綁架案，於是這張唱片非其所願地成了義大利那段陰暗時期的配樂**。",
+    "src": "https://it.wikipedia.org/wiki/Sotto_il_segno_dei_pesci"
+   },
+   {
+    "f": "義大利店面 id 1440652137：標題「Sotto il segno dei pesci」、掛名「Antonello Venditti」、releaseDate 1978-01-01、℗ 1978 PolyGram Italia Srl、`trackCount` 8。攤開的曲目列 **8 軌、8 軌全部有試聽**，曲名與曲序與 1978 原盤**逐位置相符**（第 4 軌寫成「Chen il Chinese」、第 8 軌寫成「L' uomo falco」），逐軌長度差在數秒內。**軌數與原盤相同，不是加曲版。**",
+    "src": "https://itunes.apple.com/lookup?id=1440652137&country=it&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 dd4a5777 名下 62 個 release-group，其中 primary-type=Album 且 secondary-types 空的 20 張。依 first-release-date 排，本張 1978-03-08 前面是《Theorius Campus》1972-07-21、《L'orso bruno》1973、《Le cose della vita》1973-10、《Quando verrà Natale》1974-02-15、《Lilly》1975、《Ullàlla》1976。**義大利文條目寫這是第六張，所釘藝人頁排序則是第七筆——兩邊差一張，序數不可斷言。** 名下另有兩筆盤名以本卡為前綴的條目：2019-11-15 的《Sotto il segno dei pesci: The Anniversary Tour》（Album＋Live）與 2002 年的《Sotto il segno dei pesci e altri successi》（Album＋Compilation）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=dd4a5777-42a3-44a2-b5e6-bff6731cdf3a&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "唱片在他生日那天上市，一星期後 Moro 綁架案發生",
+   "封面白底上兩條魚，第一版把十二個星座全部壓成浮凸"
+  ],
+  "sound": "1978 原盤八軌、約四十分鐘，單軌 4:09 到 6:03，沒有短曲。編制以鋼琴與人聲為核心，加上樂團與弦樂編寫（〈Francesco〉另請人指揮樂團），節奏組克制、留給旋律與歌詞空間。Venditti 的羅馬腔義大利語唱得寬而直，長句一路推到底；開場的同名曲六分鐘、〈Il telegiornale〉與〈L'Uomo Falco〉都超過五分鐘，段落靠鋼琴的動機串起來。",
+  "keyTracks": [
+   "Sotto il segno dei pesci",
+   "Bomba o non bomba",
+   "Sara"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978。所釘 release-group 的 first-release-date 是 **1978-03-08**、轄下 DE 版標同一天、IT 原盤標 1978，義大利文條目寫發行日是 3 月 8 日（他的生日），義大利店面 id 1440652137 的 releaseDate 標 1978-01-01（只到年）、℗ 1978。四處同年，取 **1978**。同名先行單曲：無——抽出的第一張 45 轉是〈Sotto il segno dei pesci〉／〈Sara〉，那是專輯之後的單曲。**⚠ 名下有兩筆以本卡盤名為前綴的條目**（2019 現場盤、2002 選輯），前綴比對會配到。",
+  "notes": "**⚠ 這張是本層在店面端最重要的一筆更正**：`search` 端點在 de 店面只回得到 **1436319209《Sotto il segno dei pesci》，releaseDate 標 2003-12-18、16 軌**——那不是原盤。**改走藝人目錄 lookup 才找到 1440652137（1978、8 軌）**；而且**那一筆在 de 店面回 0 首曲目，必須改用 it 店面才攤得出 8 軌**。**兩個端點都跑、又換了店面才拿到正確的那筆**（裁定 173／185 在本張同時命中）。8 軌全部有 previewUrl。\\n**這張策展層與探測層都沒有標成問題卡**，但實際上是本批最容易配錯的一張——**回撈清單沒有列它**。\\n策展層說法逐條查證：62 個 release-group、6 筆 release 全 Official、Philips、8 軌——**全部屬實**。\\n**⚠ 本層擋下一個序數**：條目寫「第六張」，所釘藝人頁排序是第七筆。**行文不要寫第幾張。**\\n**題材處理**：Moro 綁架案是與作品發行時間直接綁定的歷史事件（條目自己就這樣寫），**可寫但必須標明時序（唱片先、事件後一週）**，並用台灣慣用的中文譯名寫歷史人物與事件。\\n**未寫進 facts 的**：唱片榜與單曲榜名次，依派工信不寫。"
+ },
+ {
+  "key": "desc2:Gianna Nannini|Puzzle",
+  "artist": "Gianna Nannini",
+  "album": "Puzzle",
+  "facts": [
+   {
+    "f": "所釘 release-group b6c3f1f5 的欄位：title「Puzzle」、artist-credit「Gianna Nannini」（藝人實體 116ed804）、first-release-date **1984-11-27**、primary-type Album、secondary-types **空**。轄下只有 4 筆 release、全部 Official、**全部 8 軌**：1984-11-27 的 IT CD（Ricordi CDMRL 6309）與同日的 DE 黑膠（Ricordi 813 387-1）、2009-11-27 的 XW 數位版（RCA）、以及一筆 DE 的 Metronome CD。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b6c3f1f5-8d51-3032-b834-e9cbbe8600e6?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1984-11-27 原盤的逐軌：〈Kolossal〉3:56、〈Fotoromanza〉4:26、〈L'urlo〉4:07、〈Siamo ricchi〉4:05、〈Ciao〉4:42、〈Festa〉3:49、〈Ballami〉4:44、〈Se vai via〉4:42。**只有八軌、約三十五分鐘，每一首都在 3:49 到 4:44 之間**——落差不到一分鐘。**第 6 軌的曲名兩說：所釘條目作〈Festa〉，義大利文條目與數位店面都作〈Fiesta〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b6c3f1f5-8d51-3032-b834-e9cbbe8600e6&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Puzzle (Gianna Nannini)〉：1984 年發行，是她的第六張專輯。**整張的主題是「從根重建生活」，就像拼圖的一片片。** 〈Formazione〉節列的班底：Gianna Nannini（人聲、鋼琴）、Hans Baar（貝斯、吉他、合成器）、Rüdiger Braune（鼓、合成器）、Claudio Cattafesta（吉他、和聲）、Claudio Golinelli（貝斯）、**Conny Plank（合成器）**、Pino Scagliarini（鍵盤、和聲）、Rudy Spinello（吉他）、Freddy Steady（鼓、打擊樂）。**Plank 不只彈合成器，還掛了〈Fotoromanza〉與〈Ciao〉兩首的共同作曲。**",
+    "src": "https://it.wikipedia.org/wiki/Puzzle_(Gianna_Nannini)"
+   },
+   {
+    "f": "同一條目的〈Descrizione〉節：**單曲〈Fotoromanza〉與另一首抽出的〈Ballami〉，影像都由電影導演 Michelangelo Antonioni 執導——這是義大利最早由電影作者拍攝音樂錄影帶的案例之一。** 不過在義大利，第二首成功的單曲不是〈Ballami〉而是〈Kolossal〉。這張在德國、奧地利與瑞士同樣賣得很好，而她在那幾個市場此前就已經獲得比義大利更大的迴響。",
+    "src": "https://it.wikipedia.org/wiki/Puzzle_(Gianna_Nannini)"
+   },
+   {
+    "f": "德國店面 id 6768666818：標題「Puzzle」、掛名「Gianna Nannini」、releaseDate 1984-11-27、℗ 1984 GNG Musica s.r.l.、`trackCount` 8。攤開的曲目列 **8 軌、8 軌全部有試聽**，曲名與曲序與 1984 原盤**逐位置相符**（第 6 軌寫作「Fiesta」），逐軌長度差在三秒內。**軌數與原盤相同，不是加曲版。**",
+    "src": "https://itunes.apple.com/lookup?id=6768666818&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 116ed804 名下 58 個 release-group，其中 primary-type=Album 且 secondary-types 空的 23 張。依 first-release-date 排，本張 1984-11-27 前面是《Gianna Nannini》1976、《Una radura…》1977、《California》1979、《G.N.》1981、《Latin Lover》1982——**本張正是第六張，與條目說法相符**；下一張是 1986 的《Profumo》。58 筆裡沒有第二筆叫《Puzzle》的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=116ed804-4d04-43fd-809f-24e18b17233c&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "兩支單曲的錄影帶都由電影導演 Michelangelo Antonioni 拍攝",
+   "八首歌全部落在三分四十九秒到四分四十四秒之間，落差不到一分鐘"
+  ],
+  "sound": "1984 原盤八軌、約三十五分鐘，長度整齊。編制是八○年代中期的搖滾配置加上大量合成器：兩位貝斯手、兩位鼓手與三把吉他輪流上，合成器由包含 Conny Plank 在內的數人分擔，聲音厚而乾淨、節拍硬。Nannini 的義大利語嗓音沙啞、推得很滿，副歌多半靠短句反覆；〈Fotoromanza〉4:26 是全碟旋律最清楚的一首，〈Kolossal〉開場節奏最重。",
+  "keyTracks": [
+   "Fotoromanza",
+   "Kolossal",
+   "Ballami"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。所釘 release-group 的 first-release-date 是 **1984-11-27**、轄下 IT 的 CD 與 DE 的黑膠都標同一天，義大利文條目寫 1984 年發行，德國店面 id 6768666818 的 releaseDate 標 1984-11-27、℗ 1984。四處同日，取 **1984**。同名先行單曲：無；名下 58 個 release-group 沒有第二筆叫《Puzzle》。**要注意的是曲名而非年份**：第 6 軌〈Festa〉／〈Fiesta〉兩種寫法並存。",
+  "notes": "**探測層原判 unavailable、本層找到了**：de **6768666818**，8 軌全有 previewUrl，`trackCount` 與曲目列都是 8，**與原盤軌數一致**。\\n**成因是盤名是英文通用詞（裁定 173）**：`search?term=Gianna Nannini Puzzle` 落空，走藝人目錄 lookup（artistId 13497899）才找到。**策展層說法與 id 都正確。**\\n**曲名兩種寫法**：第 6 軌所釘條目作〈Festa〉、條目與店面作〈Fiesta〉。**行文若要提這首，建議照店面／條目的〈Fiesta〉並在 keyTracks 之外註明**；本稿 facts 兩種都記了。\\n策展層說法逐條查證：58 個 release-group、23 張純 Album、本張是第六張、Ricordi、8 軌、4 筆 release 全 Official——**全部屬實**。\\n**跨卡連結（同組第 18 張）**：**Conny Plank 在這張彈合成器並共同作曲兩首，而他正是 DAF《Gold und Liebe》(1981) 那套 Virgin 三部曲的製作人**——本批德義兩線在這裡真的接上了。**這條線只能寫一次**，建議留給本張（在 DAF 那張他是製作人、屬既有敘事；在這裡他跨到義大利、是更少見的事實）。\\n**未寫進 facts 的**：「當年第二暢銷專輯」「第四暢銷單曲」「瑞士榜第一」這些名次，**依派工信一律不寫**。"
+ },
+ {
+  "key": "desc2:Diaframma|Siberia",
+  "artist": "Diaframma",
+  "album": "Siberia",
+  "facts": [
+   {
+    "f": "所釘 release-group 9807ed95 的欄位：title「Siberia」、artist-credit「Diaframma」（藝人實體 d3f9254c）、first-release-date 1984、primary-type Album、secondary-types **空**。轄下 5 筆 release 全部 Official、**軌數一路長大**：1984 IT 原盤 12\" Vinyl（**IRA IR-LP1002，8 軌**）、1992 的《Siberia+2》CD（Anthology Ant 8.11，10 軌）、2001 的 CD（Diaframma Records，15 軌）、2006-06-23 的 CD／DVD（18 軌）、2016-09-23 的《Siberia Reloaded 2016》（21 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9807ed95-b307-3de8-996c-879626cf1b1e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1984 IT 原盤（IRA IR-LP1002）的逐軌：A 面〈Siberia〉3:32、〈Neogrigio〉3:21、〈Impronte〉3:38、〈Amsterdam〉5:17；B 面〈Delorenzo〉3:05、〈Memoria〉3:37、〈Specchi d'acqua〉3:49、〈Desiderio del nulla〉3:58。**只有八軌、約三十分鐘，兩面各四首**；除了〈Amsterdam〉5:17 之外全部在 3:05 到 3:58 之間。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9807ed95-b307-3de8-996c-879626cf1b1e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Siberia (Diaframma)〉：這是佛羅倫斯樂團 Diaframma 的**第一張專輯，1984-12-05 發行**，至今仍被當成義大利 new wave 的參照點。**音樂上受英國 post-punk 樂團影響極深，首先是 Joy Division**：典型的黑暗氛圍配上象徵主義式的歌詞，表達強烈的內在不適。**全碟詞曲都出自 Federico Fiumani。** 1992 年的 CD 再發加了〈Elena〉與〈Ultimo boulevard〉兩首，因此那一版叫《Siberia+2》；2001 年的版本更收進一個**與 Litfiba 合作的〈Amsterdam〉**版本與四首現場錄音。",
+    "src": "https://it.wikipedia.org/wiki/Siberia_(Diaframma)"
+   },
+   {
+    "f": "德國店面 id 293651689：標題「Siberia」、掛名「Diaframma」、releaseDate **2006-04-20**、℗ 2006 Federico Fiumani、`trackCount` 18。攤開的曲目列 **18 軌、18 軌全部有試聽**——**那是 2006 年的擴充版**：**前 8 軌與 1984 原盤逐位置相符**（第 4 軌標成「Amsterdam 1」），第 9 軌起是加曲——另一版〈Amsterdam 2〉5:29、〈Elena〉、〈Ultimo Boulevard〉、三首 Demo 與更多現場版。",
+    "src": "https://itunes.apple.com/lookup?id=293651689&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 d3f9254c 名下 34 個 release-group，其中 primary-type=Album 且 secondary-types 空的 20 張：**《Siberia》1984 是最早的一張**，其後是《Tre volte lacrime》1986、《Boxe》1988、《8183》1989、《In perfetta solitudine》1990。34 筆裡沒有第二筆叫《Siberia》的專輯條目（最接近的是 1991 年的《Da Siberia al prossimo week-end》，Album＋Compilation），primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d3f9254c-08fe-4aa6-b601-8dd43dd1ba19&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一份條目的版本表顯示：這張唱片**每一次再發都在長大**——1992 年 10 軌、2001 年 15 軌、2006 年 18 軌（另附 DVD，收了三場現場與電視訪談）、2016 年 21 軌。原盤那八首在每一版裡都排在最前面、順序不變。",
+    "src": "https://it.wikipedia.org/wiki/Siberia_(Diaframma)"
+   }
+  ],
+  "hookCandidates": [
+   "原盤只有八首、三十分鐘，之後每一次再發都變長，一路長到二十一軌",
+   "佛羅倫斯樂團把英國 post-punk 的陰冷搬進義大利語裡"
+  ],
+  "sound": "1984 原盤八軌、約三十分鐘，除一首 5:17 之外全在 3:05 到 3:58。編制是吉他、貝斯、鼓的三件式 post-punk：貝斯線負責主要動機、吉他以延遲效果鋪冷色的和弦、鼓打得直而乾，混音把低頻留得厚。人聲用義大利語低聲唸唱、幾乎不揚起，歌詞是象徵主義式的短句。〈Amsterdam〉5:17 是唯一鋪得長的一首，收尾的〈Desiderio del nulla〉最陰。",
+  "keyTracks": [
+   "Siberia",
+   "Amsterdam",
+   "Specchi d'acqua"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。所釘 release-group 的 first-release-date 是 **1984**（只到年）、轄下原盤標 1984 IT（IRA IR-LP1002），義大利文條目寫首發日是 **1984-12-05**。取 **1984**。**⚠ 德國店面那筆 293651689 的 releaseDate 與 ℗ 都是 2006**——那是擴充版的標記，**不可拿來當卡片年份**。同名先行單曲：無；名下 34 個 release-group 沒有第二筆同名專輯條目。",
+  "notes": "**探測層 ready 覆核通過，但要小心軌數**：de 293651689，18 軌全有 previewUrl。**18 不是原盤軌數**——原盤 8 軌，第 9 軌起是 2006 年擴充版的加曲（另一版〈Amsterdam〉、兩首 1992 年的加曲、三首 Demo 與現場版）。依裁定 140 可用，**但行文提軌數一律寫 8 軌**，且**不得把〈Elena〉〈Ultimo Boulevard〉當成本張的曲目**。\\n**⚠ 這張的每一個版本軌數都不同**（8／10／15／18／21），是本批版本最發散的一張。\\n**同店面的假陽性**：1154468054《Siberia Reloaded 2016》21 軌。\\n策展層說法逐條查證：34 個 release-group、20 張純 Album、本張最早、IRA、5 筆 release 全 Official、與 Litfiba 同屬佛羅倫斯 IRA 廠牌那條線——**全部屬實**。\\n**跨卡連結（同組第 28 張）**：Litfiba《17 re》同樣發在 IRA，而 2001 年那版《Siberia》還收了與 Litfiba 合作的〈Amsterdam〉。**「佛羅倫斯 IRA 廠牌」這條線只能寫一次**，建議留給本張。\\n**未寫進 facts 的**：Rolling Stone Italia 百大名次，依派工信不寫。"
+ },
+ {
+  "key": "desc2:Marlene Kuntz|Catartica",
+  "artist": "Marlene Kuntz",
+  "album": "Catartica",
+  "facts": [
+   {
+    "f": "所釘 release-group 8a2a5203 的欄位：title「Catartica」、artist-credit「Marlene Kuntz」（藝人實體 b948e199）、first-release-date **1994-03-27**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release、全部 IT／Official、**全部 14 軌**：1994-03-27 的 12\" Vinyl 與 CD（**Consorzio Produttori Indipendenti，catno 300 003-1／300 003-2**）、2000-04-01 的 CD 再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/8a2a5203-10d6-3087-8211-a1e2f5e0947b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1994 IT 原盤（Consorzio Produttori Indipendenti 300 003-1）的逐軌：A 面〈M.K.〉3:23、〈Festa mesta〉4:14、**〈Sonica〉6:38**、〈Nuotando nell'aria〉5:20、〈Giù giù giù〉3:20、〈Lieve〉3:42、〈Trasudamerica〉4:59；B 面〈Fuoco su di te〉3:31、〈Merry X-mas〉3:19、〈Gioia (che mi do)〉5:03、〈Canzone di domani〉3:53、〈Mala mela〉5:20、〈1º 2º 3º〉4:31、〈Non ti scorgo più〉2:32。**十四軌、約一小時，最長的〈Sonica〉6:38 排在第三軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8a2a5203-10d6-3087-8211-a1e2f5e0947b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Catartica〉：這是 Marlene Kuntz 的第一張專輯，**也是當時剛成立的廠牌 Consorzio Produttori Indipendenti 發行的第一張唱片**（原本由 Phonogram 經銷，後來由 EMI 再發）。這張的源頭是 1992 年一場叫 Rock Targato Italia 的音樂比賽——比賽提供合輯的位置，那張合輯由 **CSI 的貝斯手 Gianni Maroccolo** 製作，共十六支樂團參加；Marlene Kuntz 拿到第九名，因為另一組棄權才擠進決賽，**也因此被 Maroccolo 注意到，他請他們把全部曲目在杜林錄下來給他聽**。",
+    "src": "https://it.wikipedia.org/wiki/Catartica"
+   },
+   {
+    "f": "同一條目：**讓他們真正被看見的是 CSI 的主唱 Giovanni Lindo Ferretti——他住院療養期間聽到單曲〈Lieve〉，喜歡到決定親自指點這支樂團、給了他們一些有用的修正**，後來還在《In quiete》裡收了這首歌的翻唱版。〈I brani〉節指出這張深受紐約 Sonic Youth 的噪音聲響影響——器樂曲〈Non ti scorgo più〉像 Lee Ranaldo 與 Thurston Moore 的噪音交鋒，而〈Sonica〉成了義大利噪音搖滾的一份宣言。班底是 Cristiano Godano（人聲、電吉他）、Riccardo Tesio（吉他）、Gianluca Viano（貝斯）、Luca Bergia（鼓）；**詞出自 Godano，曲由樂團共同創作**。",
+    "src": "https://it.wikipedia.org/wiki/Catartica"
+   },
+   {
+    "f": "德國店面 id 723409349：標題「Catartica」、掛名「Marlene Kuntz」、releaseDate 1994-01-01、℗ 1994 EMI Music Italy、`trackCount` 14。攤開的曲目列 **14 軌、14 軌全部有試聽**，曲名與曲序與 1994 原盤**逐位置相符**，逐軌長度差在一秒內。**軌數與原盤相同，不是加曲版。**",
+    "src": "https://itunes.apple.com/lookup?id=723409349&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 b948e199 名下 32 個 release-group，其中 primary-type=Album 且 secondary-types 空的 12 張：**《Catartica》1994-03-27 是最早的一張**，其後是《Il vile》1996-04-26、《Ho ucciso paranoia》1999-01-14、《Che cosa vedi》2000。**⚠ 名下另有一筆《Catartica (Live 2024)》（Album＋Live），它的 first-release-date 被建成 1994-01-01——比本卡的 1994-03-27 還早。** 32 筆裡 primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b948e199-ad8a-4321-9a84-58f36226d9fa&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "一場比賽拿第九名、靠別人棄權才進決賽，卻因此被製作人看見",
+   "另一支樂團的主唱在住院時聽到他們的單曲，出院後親自去指點他們"
+  ],
+  "sound": "1994 原盤十四軌、約一小時，單軌 2:32 到 6:38。四件式編制：兩把電吉他把失真與回授當主要素材，貝斯與鼓維持穩定的推進，段落常在安靜與爆裂之間突然切換。Cristiano Godano 的義大利語從低聲唸白轉到嘶吼，咬字清楚；〈Sonica〉6:38 是全碟噪音鋪得最開的一首，〈Nuotando nell'aria〉5:20 與〈Gioia (che mi do)〉則慢而有旋律，收尾的〈Non ti scorgo più〉是器樂曲。",
+  "keyTracks": [
+   "Sonica",
+   "Nuotando nell'aria",
+   "Lieve"
+  ],
+  "status": "full",
+  "yearVerified": "**年份 1994 確定，日期兩說。** 所釘 release-group 的 first-release-date 是 **1994-03-27**、轄下黑膠與 CD 都標同一天；**義大利文條目卻寫 1994-05-13**。兩邊差一個半月，**行文不要寫月份**。德國店面 id 723409349 的 releaseDate 標 1994-01-01（只到年）、℗ 1994。年份三處一致，取 **1994**。同名先行單曲：無。**⚠ 同名假陽性且日期更早**：名下的《Catartica (Live 2024)》（Album＋Live）first-release-date 被建成 **1994-01-01**，比本卡早——**這不是先行單曲，是建檔錯誤**（策展層已預告，本層實查屬實）。「取最早那筆」的自動邏輯會選到那張現場盤。",
+  "notes": "**探測層 ready 覆核通過**：de 723409349，14 軌全有 previewUrl，`trackCount` 與曲目列都是 14，**與原盤軌數一致**。\\n**⚠ 裁定 179 第 1 點的新變形（策展層的發現，本層確認）**：假陽性的更早日期不是先行單曲，而是 **2024 年那張現場盤的 first-release-date 被建成 1994-01-01**。這一條值得往上游提。\\n策展層其餘說法逐條查證：32 個 release-group、12 張純 Album、本張最早、Consorzio Produttori Indipendenti、14 軌、3 筆 release 全 Official——**全部屬實**。\\n**跨卡連結（同組第 28、30、31 張）**：本張的兩位關鍵人物都與本批其他卡直接相關——**Gianni Maroccolo 是 Litfiba《17 re》(1986) 的貝斯手兼編曲主導**，**Giovanni Lindo Ferretti 是 CCCP 兩張的主唱**，兩人 1990 年代都在 CSI。**這條「上一代義大利獨立樂團拉拔下一代」的線是本批 b 組最強的跨卡連結，但只能寫一次**，建議留給本張（它是被拉拔的那一端）。\\n**未寫進 facts 的**：本張未查到榜單資料；條目對 Sonic Youth 的比較是有來源的風格描述、不是評分，已寫進 facts。"
  }
 ]
