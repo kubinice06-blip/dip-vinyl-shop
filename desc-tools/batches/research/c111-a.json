@@ -658,5 +658,489 @@
   "status": "full",
   "yearVerified": "一致，2025。MB first-release-date **2025-09-19**、其下五筆 release 全部同為 2025-09-19、Apple us 1807870796 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（四首先行單曲皆不同名）。MB 藝人頁 20 個 release-group 裡沒有第二筆《Bleeds》。**要防的不是年份是軌數**：日本 CD 是 14 軌（多兩軌 demo），標準版與 Apple 都是 12 軌。",
   "notes": "**探測層 ready 覆核通過**：us 1807870796，12 軌全有 previewUrl、與 MB 的 12 軌版逐位置相符，`trackCount` 欄與攤開的曲目列都是 12。**配對的是 12 軌標準版、不是日本 14 軌版，正確**；行文若提軌數要寫 12，**兩軌日本盤 demo 不算原盤曲目**（裁定 140 的加曲版分界）。\\n**修正策展層兩處**：\\n(1) `why` 寫「也是吉他手 **MJ Lenderman 離團**前後那一段的錄音」——**與來源相反**。維基首段明寫：Lenderman 宣布**不再隨團巡演**，但**仍是錄音室裡的正式團員**（remain a full contributing member of the band in a studio context），巡演由 Jake「Spyder」Pugh 頂替；Personnel 節裡他也列在 Wednesday 團員之下。**行文不得寫「離團」**，要寫就寫「退出巡演、留在錄音室」。\\n(2) `why` 寫「主唱 Karly Hartzman 與 lap steel 手 Xandy Chelmis 是固定核心」——可用，但**更值得寫的是這張是第一張有貝斯手 Ethan Baechtold 的專輯**（他 2023 年因《Rat Saw God》巡演加入）。\\n策展層說對的：第六張 ✅、Dead Oceans ✅、Drop of Sun ✅、工程是 Alex Farrar ✅（他同時掛製作與混音，不只工程）。\\n**要補的、比序數好用的**：盤名原訂《Carolina Girl》被團員否決，改用第 1 軌〈Reality TV Argument Bleeds〉裡的字，因為「Wednesday Bleeds」接得起來。\\n**媒體榜與評分不寫**；本次來源裡**沒有獎項紀錄**，不要杜撰。"
+ },
+ {
+  "key": "desc2:Clipse|Let God Sort Em Out",
+  "artist": "Clipse",
+  "album": "Let God Sort Em Out",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 18cdc08c 的欄位：title「Let God Sort Em Out」、artist-credit「Clipse」（藝人 MBID e6424fa5）、first-release-date 2025-07-11、primary-type Album、secondary-types 空。轄下 **15 個 release**，含 2025-07-11 的 explicit 與 clean 數位各 13 軌（Roc Nation Distribution）、三筆 status=Withdrawn 的數位、2025-10-24 的 CD（Roc Nation 810182964812，13 軌），以及 **2025-12-19 GB 的 17 軌數位**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/18cdc08c-03a1-4e55-9624-b7f9dbb968f5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**初版實體是 12 軌、數位是 13 軌**：MB 的 2025-07-11 US 粉紅膠 12 吋（Roc Nation，附簽名內頁）、同日的 Verdy edition 12 吋與卡帶、2025-07-11 US 的 CD（810182962078）**都是 12 軌，缺〈So Be It〉**；2025-09-12 之後的黑膠（含 Josh Sperling edition）才補成 13 軌。英文維基的 Notes 節說明原因：**初版的 Kaws 與 Verdy 實體版既沒有〈So Be It〉的任何版本，也沒有 Tyler, the Creator 在〈P.O.V.〉上的客串**；〈So Be It〉發行當天因取樣授權問題先上了另換編曲的「Pt. II」，幾小時後問題解決才換回原版。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=18cdc08c-03a1-4e55-9624-b7f9dbb968f5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1816313639：collectionName「Let God Sort Em Out」、artistName「Clipse, Pusha T & Malice」、releaseDate 2025-07-11、copyright「℗ 2025 Clipse, under exclusive license to Roc Nation Distribution」、collectionExplicitness **explicit**、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**：1〈The Birds Don't Sing〉4:01、2〈Chains & Whips〉4:04、3〈P.O.V.〉4:18、4〈So Be It〉3:15、5〈Ace Trumpets〉2:34、6〈All Things Considered〉3:09、7〈M.T.B.T.T.F.〉2:36、8〈E.B.I.T.D.A.〉2:00、9〈F.I.C.O.〉3:22、10〈Inglorious Bastards〉2:33、11〈So Far Ahead〉3:22、12〈Let God Sort Em Out/Chandeliers〉2:33、13〈By The Grace Of God〉3:06，**與英文維基曲目表逐位置、逐長度吻合**（總長 40:47）。",
+    "src": "https://itunes.apple.com/lookup?id=1816313639&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Let God Sort Em Out〉的首段與 infobox：這是 Clipse 的**第四張錄音室專輯**，2025-07-11 **自主發行**（infobox 的 label 欄寫 Self-released），距前一張《Til the Casket Drops》（2009）十六年；兩兄弟 2010 年拆夥、2019 年重聚、2023 年開始做這張。**Pharrell Williams 是這張唯一的製作人兼執行製作**，錄音 2023–2024 年，主要分在**維吉尼亞 Virginia Beach 的 Masterworks** 與**巴黎的 Louis Vuitton 總部**兩處（Williams 2023 年起任該品牌男裝創意總監）。客串有 Kendrick Lamar、Nas、Tyler, the Creator、John Legend、The-Dream、Stove God Cooks、Ab-Liva、Pharrell 本人與合唱團 Voices of Fire，另有 Lenny Kravitz 與 Stevie Wonder 的參與。",
+    "src": "https://en.wikipedia.org/wiki/Let_God_Sort_Em_Out"
+   },
+   {
+    "f": "同一條目的首段：這張原訂 2024 年發行，**因為當時的東家 Def Jam 與母公司環球要求把 Kendrick Lamar 在〈Chains & Whips〉上的客串段落消音或整段拿掉而延期**；Clipse 拒絕修改，**付了七位數的解約金離開，改與 Roc Nation 簽發行約，並分給 Def Jam 一部分利潤**。先行單曲只有一首〈Ace Trumpets〉2025-05-30；〈Chains & Whips〉與〈So Far Ahead〉在發行前一晚才送上 Apple Music。",
+    "src": "https://en.wikipedia.org/wiki/Let_God_Sort_Em_Out"
+   },
+   {
+    "f": "同一條目的 Artwork 與 Sample credits 節：**封面由美國藝術家 Kaws 設計**，畫的是他的 Companion 角色被兩隻手組裝、也就是被「sorted out」——**Kaws 也畫過他們 2009 年《Til the Casket Drops》的封面**；另有 Verdy 與 Josh Sperling 各做的替代封面（Sperling 說他那兩款是「十字架與錨——十字架代表罪、死與信，錨代表未知水域裡的堅定，兩個符號給兩兄弟」）。取樣：〈Chains & Whips〉用了 Paul Desmond 作曲的〈Take Five〉（Cherry Wainer 與 Don Storer 版）、〈Inglorious Bastards〉用了 Jesse Jackson 在 Wattstax 的開場演說。",
+    "src": "https://en.wikipedia.org/wiki/Let_God_Sort_Em_Out"
+   }
+  ],
+  "hookCandidates": [
+   "為了保住 Kendrick Lamar 那段客串，他們付了七位數解約金離開東家",
+   "初版黑膠與卡帶只有十二軌——〈So Be It〉那時還卡在取樣授權上"
+  ],
+  "sound": "**同一張碟有 12 軌與 13 軌兩種**：2025-07-11 的初版實體（粉紅膠、Verdy edition 黑膠與卡帶、CD）都是 12 軌、缺〈So Be It〉，9 月之後的黑膠才補成 13 軌；Apple us 上架的是 13 軌 explicit 版、逐軌長度與維基曲目表吻合，總長 40:47。全碟由 Pharrell Williams 一人製作，2023–2024 年錄在 Virginia Beach 的 Masterworks 與巴黎的 Louis Vuitton 總部。十三首平均三分鐘出頭，最短的〈E.B.I.T.D.A.〉2:00。客串橫跨 Kendrick Lamar、Nas、Tyler, the Creator、John Legend、The-Dream、Stove God Cooks 與合唱團 Voices of Fire。",
+  "keyTracks": [
+   "The Birds Don't Sing",
+   "Chains & Whips",
+   "Ace Trumpets"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-07-11**、Apple us 1816313639 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（唯一先行單曲是〈Ace Trumpets〉2025-05-30）。**要防的不是同名單曲，是版本**：MB 轄下 15 筆 release 裡有 **clean 與 explicit 兩版**、**三筆 status=Withdrawn**、**12 軌與 13 軌兩種曲目**，以及 **2025-12-19 GB 的 17 軌數位**。上架時要辨淨化版（裁定 166、`audits/cleaned-previews-hiphop.md`）。",
+  "notes": "**探測層 ready 覆核通過**：us 1816313639，13 軌全有 previewUrl、與維基曲目表逐位置相符，`trackCount` 欄與攤開的曲目列都是 13；探測層以 `explicitTwinRecovered: 1825917340` 換回 explicit 版（裁定 166 的補救有作用）。**Apple 的 artistName 是「Clipse, Pusha T & Malice」，卡片掛名是「Clipse」——外部服務查詢時三種都要試。**\\n**修正策展層一處**：`why` 寫「**Roc Nation 發行**」——維基 infobox 的 label 欄寫的是 **Self-released**，Roc Nation 是**發行／經銷方**（Apple ℗ 欄寫「Clipse, under exclusive license to Roc Nation Distribution」）。**行文要寫「自主發行、交 Roc Nation 經銷」，不要寫成「Roc Nation 的碟」**——這個差別正是這張碟最有故事的地方（見下）。\\n策展層其餘全對：Pharrell 全碟製作 ✅（而且是**唯一**製作人兼執行製作）、客串名單 ✅、距《Til the Casket Drops》（2009）十六年 ✅、explicit／clean 兩版要辨 ✅。\\n**策展層沒寫、但這張最該寫的三件事**：(1) 原訂 2024 年發行，**Def Jam 與環球要求消掉 Kendrick Lamar 在〈Chains & Whips〉上的段落**，Clipse 拒改、付七位數解約金離開；(2) 錄音一半在巴黎的 **Louis Vuitton 總部**（Pharrell 是該品牌男裝創意總監）；(3) **封面由 Kaws 畫，他也畫過 2009 年那張**。\\n**⚠ 軌數要小心**：初版實體 12 軌（缺〈So Be It〉，Kaws 與 Verdy 版連 Tyler 在〈P.O.V.〉的客串也沒有），數位 13 軌。**行文若點〈So Be It〉，要知道它不在初版實體上。**\\n**媒體榜與商業榜名次一律不寫**；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:Turnstile|NEVER ENOUGH",
+  "artist": "Turnstile",
+  "album": "NEVER ENOUGH",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 58310aac 的欄位：title「NEVER ENOUGH」、artist-credit「Turnstile」（藝人 MBID 7b748dac）、first-release-date 2025-06-06、primary-type Album、secondary-types 空。轄下 4 個 release 全部 2025-06-06 Official、全部 14 軌：XE 的 CD（Roadrunner Records 07578601422）、XW 數位、US 的 12 吋黑膠（075678604256）、24-Bit/48 kHz 數位。",
+    "src": "https://musicbrainz.org/ws/2/release-group/58310aac-65aa-492e-83fb-ec50c58e5a1d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-06-06 XE，Roadrunner 07578601422，CD 14 軌）的逐軌曲目與長度：1〈NEVER ENOUGH〉4:47、2〈SOLE〉3:25、3〈I CARE〉3:53、4〈DREAMING〉2:36、5〈LIGHT DESIGN〉2:10、6〈DULL〉2:19、7〈SUNSHOWER〉3:40、8〈LOOK OUT FOR ME〉6:44、9〈CEILING〉1:13、10〈SEEIN' STARS〉3:06、11〈BIRDS〉2:27、12〈SLOWDIVE〉3:33、13〈TIME IS HAPPENING〉2:07、14〈MAGIC MAN〉3:14。總長 45:14；**第 8 軌 6:44 與第 9 軌 1:13 相鄰，是全碟最長與最短的兩首**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=58310aac-65aa-492e-83fb-ec50c58e5a1d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1805820903：collectionName「NEVER ENOUGH」、artistName「Turnstile」、releaseDate 2025-06-06、copyright「℗ 2025 Roadrunner Records Inc.」、collectionExplicitness explicit、trackCount 14。`entity=song` **攤得出 14 軌、14 軌全部有 previewUrl**，曲名與曲序與 MB **逐位置相符**、逐軌長度相同到秒（287／205／233／156／130／139／220／404／73／186／147／213／127／194 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1805820903&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Never Enough (Turnstile album)〉的首段與 infobox：這是 Turnstile 的**第四張錄音室專輯**，2025-06-06 經 Roadrunner Records 發行，總長 45:14，**製作掛 Brendan Yates**（條目的 infobox 註明 Will Yip 與 A. G. Cook 屬追加製作、依 WP:NOEXEC 不列在 producer 欄）。**這是創團成員 Brady Ebert（2022 年離團）之後的第一張，也是第一張有吉他手 Meg Mills 的碟**。正式發行前，樂團 2025-05-12 在故鄉巴爾的摩辦了一場免費演出，替 Healthcare for the Homeless 募款。",
+    "src": "https://en.wikipedia.org/wiki/Never_Enough_(Turnstile_album)"
+   },
+   {
+    "f": "同一條目的 Personnel 節：五人編制 Brendan Yates（人聲、合成器、鍵盤、製作、美術指導）、Franz Lyons（貝斯）、Pat McCrory（吉他）、Daniel Fang（鼓）、Meg Mills（吉他），全碟曲子共掛 Turnstile。技術：Will Yip 錄音與追加製作、Jason Lader 錄音、Adam Hawkins 混音、Chris Gehringer 母帶。**客席逐軌可查**：Devonté Hynes（Blood Orange）在〈Never Enough〉與〈Look Out for Me〉拉大提琴、在〈Seein' Stars〉唱和聲；**Shabaka Hutchings 在〈Sunshower〉吹長笛**；**Faye Webster 在〈Time Is Happening〉唱和聲**；**Hayley Williams 在〈Seein' Stars〉唱和聲**；Kae Murphy 的小號與 Leland Whitty 的薩克斯風在〈Dreaming〉；A. G. Cook 在〈Dull〉掛追加製作。封面正反照片 Atiba Jefferson、內頁照片 Alexis Gross。",
+    "src": "https://en.wikipedia.org/wiki/Never_Enough_(Turnstile_album)"
+   },
+   {
+    "f": "同一條目的 Accolades 節：**這張在第 68 屆葛萊美獎拿下 Best Rock Album，單曲〈Birds〉拿下 Best Metal Performance**；另有兩項入圍——〈Never Enough〉的 Best Rock Performance 與〈Seein' Stars〉的 Best Alternative Music Performance。MB 藝人頁分頁全列 24 個 release-group，**同名對照組兩筆**：**2025-04-08 的 Single《NEVER ENOUGH》（MBID aeddf494）——比專輯早 59 天**，是這張的先行單曲；以及 2026-08-28 的 Album《NEVER ENOUGH: VERSIONS》（MBID a83e421a）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7b748dac-f5ce-45a7-9b95-c1d8b5b013ed&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第八軌六分四十四秒、第九軌一分十三秒——最長與最短就排在一起",
+   "硬蕊團的碟上有 Shabaka Hutchings 的長笛、Dev Hynes 的大提琴與 Faye Webster 的和聲"
+  ],
+  "sound": "MB 四筆 release 全在 2025-06-06、全部 14 軌（Roadrunner 的 CD、黑膠、數位與 24-Bit/48 kHz 版）；Apple us 逐軌長度與 MB 相同到秒，總長 45:14。曲序上最極端的落差在中段：第 8 軌〈LOOK OUT FOR ME〉6:44 之後緊接 1:13 的〈CEILING〉。製作掛主唱 Brendan Yates，Will Yip 錄音兼追加製作、A. G. Cook 在〈DULL〉掛追加製作，混音 Adam Hawkins、母帶 Chris Gehringer。五人編制之外，客席全是跨圈子的：Dev Hynes 的大提琴與和聲、Shabaka Hutchings 的長笛、Faye Webster 與 Hayley Williams 的和聲、Kae Murphy 的小號與 Leland Whitty 的薩克斯風。",
+  "keyTracks": [
+   "NEVER ENOUGH",
+   "SEEIN' STARS",
+   "BIRDS"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-06-06**、其下四筆 release 全部同為 2025-06-06、Apple us 1805820903 的 releaseDate 與 ℗ 年份都是 2025。**⚠ 同名先行單曲：有——MB Single《NEVER ENOUGH》2025-04-08，比專輯早 59 天**（裁定 179 第 1 型）；另有 2026-08-28 的 Album《NEVER ENOUGH: VERSIONS》。**取最早那筆會選到 4 月 8 日的單曲、取最新那筆會選到 2026 年的 VERSIONS**——策展層已把兩筆寫進「刻意不釘」，照著看。",
+  "notes": "**探測層 ready 覆核通過**：us 1805820903，14 軌全有 previewUrl、與 MB 逐位置相符，`trackCount` 欄與攤開的曲目列都是 14；探測層是靠 `us:artistPage→2` 撈回來的（`search` 回 0），再次印證裁定 173。\\n**擋下策展層一處**：`why` 寫「由樂團與 **Mike Elizondo** 共同製作」——**查不到**。維基 infobox 的 producer 欄只有 **Brendan Yates**（並明白註記 Will Yip 與 A. G. Cook 屬追加製作、不列 producer 欄），Personnel 節裡也沒有 Mike Elizondo。**行文不得出現 Mike Elizondo**；要寫製作就寫主唱 Brendan Yates 自己掛。\\n策展層說對的、而且逐軌查得到：第四張 ✅、Roadrunner ✅、**Dev Hynes ✅（〈Never Enough〉〈Look Out for Me〉大提琴、〈Seein' Stars〉和聲）、Faye Webster ✅（〈Time Is Happening〉和聲）、Shabaka Hutchings ✅（〈Sunshower〉長笛）**——三個客席全部屬實，而且能點到軌。\\n**要補的**：這是創團成員 Brady Ebert 2022 年離團後的第一張、也是第一張有吉他手 Meg Mills 的碟；**同批 Hayley Williams 也在〈Seein' Stars〉上唱和聲**（兩張卡可互相參照）。\\n可寫的獎項、而且是本批最硬的一筆：**第 68 屆葛萊美 Best Rock Album 得獎，〈Birds〉拿下 Best Metal Performance**；另兩項入圍（〈Never Enough〉Best Rock Performance、〈Seein' Stars〉Best Alternative Music Performance）。**媒體榜與商業榜名次不寫。**"
+ },
+ {
+  "key": "desc2:Hayley Williams|Ego Death at a Bachelorette Party",
+  "artist": "Hayley Williams",
+  "album": "Ego Death at a Bachelorette Party",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 15c3b397 的欄位：title「Ego Death at a Bachelorette Party」、artist-credit「Hayley Williams」（藝人 MBID b4b5b5a7）、first-release-date **2025-07-28**、primary-type Album、secondary-types 空。**轄下 9 個 release，軌數一路長大**：2025-07-28 XW 數位 **17 軌**（無廠牌欄）、2025-08-28 XW 數位 **18 軌**（Post Atlantic）與 US 的 CD-R「Hayley's mix」18 軌（PA001CDR）、2025-10-24 數位 **19 軌**、2025-11-07 的數位／CD（PA001CD）／US CD（PA001CDR）**都是 20 軌**、同日的 Team Zissou Vinyl **雙 12 吋（10＋10 軌）**（PA001LP），以及 2026-05-22 的 Dinked Edition 雙 12 吋。",
+    "src": "https://musicbrainz.org/ws/2/release-group/15c3b397-9652-4537-a14b-7eb8489092ff?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "英文維基〈Ego Death at a Bachelorette Party〉的 Notes 節把三次長大的節點寫死：「〈Good Ol' Days〉與〈Showbiz〉不在 2025-08-28 的原始發行上，是後來加進數位版的。〈Good Ol' Days〉加於 10 月、〈Showbiz〉加於 11 月 7 日。兩軌出現在**首批一千五百張網路商店版之後的所有實體版上**。**原始版總長 59:31、第二版 62:54、第三版 66:44。**」（同一條目的 Release 節把〈Good Ol' Days〉的加入日寫成 10 月 24 日，與 Notes 節的 10 月 29 日**不一致**；MB 的對應 release 記 2025-10-24。）",
+    "src": "https://en.wikipedia.org/wiki/Ego_Death_at_a_Bachelorette_Party"
+   },
+   {
+    "f": "Apple Music us collectionId 1850011909：collectionName「Ego Death At A Bachelorette Party」、artistName「Hayley Williams」、**releaseDate 2025-11-07**、copyright「℗ 2025 Post Atlantic」、collectionExplicitness explicit、trackCount 20。`entity=song` **攤得出 20 軌、20 軌全部有 previewUrl**，曲名與曲序與英文維基的 20 軌曲目表**逐位置相符**、逐軌長度相同到秒（末兩軌〈Good Ol' Days〉3:24 與〈Showbiz〉3:50）。**Apple 上架的是 11 月 7 日那個 20 軌最終版。**",
+    "src": "https://itunes.apple.com/lookup?id=1850011909&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "同一條目的首段與 Release and marketing 節：**2025-07-28，Williams 把 17 首新歌放上自己的官方網站——要輸入 16 位數代碼才聽得到，那組代碼發給在她的染髮品牌 Good Dye Young 買過東西的人**；網頁做成 2000 年代 Windows 桌面的樣子，歌曲以 MP3 檔案的形式散在黃色底圖上、旁邊擺她的狗。約 24 小時後整批從網站撤下，只留一行「Thank you for listening.」。**8 月 1 日這 17 首才以單曲形式上串流**，8 月 28 日才正式成為專輯（加上〈Parachute〉）。公布曲目時她**把第 19、20 軌留成空白**，明示還有兩首要補。這是她 2023 年離開 Atlantic Records 之後的第一張獨立發行，掛在自設廠牌 **Post Atlantic** 之下、由 Secretly Distribution 經銷。",
+    "src": "https://en.wikipedia.org/wiki/Ego_Death_at_a_Bachelorette_Party"
+   },
+   {
+    "f": "同一條目的 infobox 與 Composition 節：這是 Hayley Williams 的**第三張個人錄音室專輯**（前一作是 2021 年的《Flowers for Vases / Descansos》）；**製作掛 Daniel James、Jim-E Stack、Brian Robert Jones 與 Steph Marziano**，Williams 自己演奏數種樂器、並與 Daniel James 共寫全碟（除註明者外）。Notes 另記：〈Ice in My OJ〉引用 Mammoth City Messengers 的〈Jumping Inside〉、〈Love Me Different〉取樣 Phoenix 的〈Fior di Latte〉、〈Discovery Channel〉引用 Bloodhound Gang 的〈The Bad Touch〉。最終曲序**是照一個歌迷自製網站收集來的排序偏好定的**——她說自己「真的想推掉這個責任」、「在風暴中心的人排不出來」。",
+    "src": "https://en.wikipedia.org/wiki/Ego_Death_at_a_Bachelorette_Party"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 54 個 release-group。**同名對照組一筆：2025-08-01 的 Single《Ego Death at a Bachelorette Party》（MBID 2511e534）**——那是 17 首上串流那天單獨發的同名曲，**日期早於 8 月 28 日的正式專輯、晚於 7 月 28 日的網站版**，夾在兩個日期之間。Williams 個人名下的 Album 依序是《Petals for Armor》2020、《Flowers for Vases / Descansos》2021、本張，**排第三、與維基 infobox 一致**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b4b5b5a7-feff-47d0-9458-83d0d135a692&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十七首歌只放在自家網站上一天，密碼發給在她染髮品牌買過東西的人",
+   "公布曲目時第十九、二十軌是空白的——兩首歌要等十月與十一月才補上去"
+  ],
+  "sound": "**這張碟是長出來的，不是一次做完的**：MB 記 2025-07-28 的 17 軌、08-28 的 18 軌、10-24 的 19 軌、11-07 的 20 軌，維基把三個版本的總長寫成 59:31／62:54／66:44。Apple us 上架的是 11 月 7 日那個 20 軌版、逐軌長度與維基曲目表相同到秒；同日的黑膠是雙 12 吋 10＋10 分片。製作掛 Daniel James、Jim-E Stack、Brian Robert Jones 與 Steph Marziano，Williams 自己彈了數種樂器、並與 Daniel James 共寫全碟。二十首平均三分多鐘，最短的〈Ice in My OJ〉2:11。發行掛她 2023 年離開 Atlantic 之後自設的 Post Atlantic，由 Secretly Distribution 經銷。",
+  "keyTracks": [
+   "Glum",
+   "Mirtazapine",
+   "Ego Death at a Bachelorette Party"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025，但**這張有四個發行日、要說清楚**。MB first-release-date **2025-07-28**（官網放出 17 首那天）；**8 月 1 日**這 17 首上串流；**8 月 28 日**加〈Parachute〉成 18 軌、才算正式專輯；**10 月 24 日**加〈Good Ol' Days〉成 19 軌；**11 月 7 日**加〈Showbiz〉成 20 軌、實體同日上市——**Apple us 1850011909 的 releaseDate 正是 2025-11-07**。四個日期都在 2025 年，卡片年份無誤。**⚠ 同名單曲：有一筆 MB Single《Ego Death at a Bachelorette Party》2025-08-01**，夾在 7 月 28 日與 8 月 28 日兩個專輯日期之間——**這張的假陽性不是「單曲比專輯早」，是「專輯本身有四個日期」**（裁定 179 第 1 型的變形）。",
+  "notes": "**探測層 ready 覆核通過**：us 1850011909，20 軌全有 previewUrl、與維基 20 軌曲目表逐位置相符，`trackCount` 欄與攤開的曲目列都是 20；探測層靠 `us:artistPage→1` 撈回（`search` 回 0），策展層預判的「長盤名在 search 端點容易落空、要同時跑目錄端點」**應驗**。\\n**擋下策展層一處**：`why` 寫「曲目最初在 **Nashville 一家唱片行**以實體形式先放出，之後才上串流」——**與來源相反**。維基 Release and marketing 節寫的是：**放在她自己的官方網站上，要輸入 16 位數代碼**，代碼發給在她的染髮品牌 **Good Dye Young** 買過商品的人；約 24 小時後撤下。（同節另提 Nashville 的公共電台 **WNXP** 在 7 月 23 日首播了〈Mirtazapine〉——那是電台不是唱片行。11 月 7 日實體上市時才有各地唱片行的「Ego Nites」試聽會。）**行文不得寫「唱片行實體先放」。**\\n策展層說對的：第三張個人專輯 ✅、與 Daniel James 共同製作 ✅（但還有 Jim-E Stack、Brian Robert Jones、Steph Marziano 三位）、Post Atlantic ✅、同名 Single 對照組 ✅、盤名長要跑目錄端點 ✅。\\n**⚠ 軌數要小心（本批最複雜的一張）**：17→18→19→20 四個版本，**「20 軌」只從 2025-11-07 起成立**。**行文不得把 20 這個數字綁在 7 月或 8 月**；要講這張的故事，講「一次放 17 首、曲目表上留兩格空白等後補」比講軌數好。\\n**媒體榜與評分不寫**；本次來源裡沒有獎項紀錄。可補一筆跨卡的：她在同批 Turnstile《NEVER ENOUGH》的〈Seein' Stars〉上唱和聲。"
+ },
+ {
+  "key": "desc2:Dijon|Baby",
+  "artist": "Dijon",
+  "album": "Baby",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1a1e8337 的欄位：title「Baby」、artist-credit「Dijon」（藝人 MBID cceea21d）、first-release-date 2025-08-15、primary-type Album、secondary-types 空。轄下 3 個 release：2025-08-15 的兩筆 XW 數位（Warner Records，各 **12 軌**），以及 **2025-11-21 的 US CD（Warner Records 093624827405）——13 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1a1e8337-cd16-40e6-b04d-e1b5801b4c89?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-11-21 US CD，13 軌）的逐軌曲目與長度：1〈Baby!〉3:40、2〈Another Baby!〉3:28、3〈HIGHER!〉3:58、4〈(Freak It)〉1:44、5〈Yamaha〉4:28、6〈FIRE!〉2:40、7〈(Referee)〉1:06、8〈Rewind〉2:33、9〈my man〉3:59、10〈loyal & marie〉2:33、11〈Automatic〉2:58、12〈Kindalove〉4:37、**13〈Nü Diamond〉2:29**。**第 13 軌只在 CD 上**；數位版與英文維基的曲目表都停在第 12 軌〈Kindalove〉，總長 37:45。第 4 與第 7 軌是括號起來的短段（1:44 與 1:06）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1a1e8337-cd16-40e6-b04d-e1b5801b4c89&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1832337743：collectionName「Baby」、artistName「Dijon」、releaseDate 2025-08-15、copyright「R&R/Warner Records, ℗ 2025 R&R/Warner Records Inc.」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 MB 的前 12 軌**逐位置相符**、逐軌長度相同到秒。**Apple 上架的是 12 軌數位版，沒有 CD 那第 13 軌。**",
+    "src": "https://itunes.apple.com/lookup?id=1832337743&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Baby (Dijon album)〉的首段與 Background and release 節：這是 Dijon 的**第二張錄音室專輯**（前一張是 2021 年的《Absolutely》），2025-08-15 經 **R&R 與 Warner Records** 發行，總長 37:45。**發行前一週（8 月 8 日）才公布，並掛上一個倒數計時器，標題寫著「until the album Baby (unless samples don't get cleared)」——「除非取樣沒過」**。**完全沒有先行單曲**。這也是 Dijon 當爸爸之後的第一張碟，而那正是碟上的主題之一；同年他還參與了 Justin Bieber 的《Swag》與 Bon Iver 的《Sable, Fable》。",
+    "src": "https://en.wikipedia.org/wiki/Baby_(Dijon_album)"
+   },
+   {
+    "f": "同一條目的 Personnel 節：製作除 Dijon Duenas 本人外有 **Andrew Sarlo**，追加參與者含 BJ Burton、Henry Kwapis、Tommy King、Tobias Jesso Jr. 與**常態合作者 Mk.gee**。逐軌可查的班底：**Michael Gordon（Mk.gee）在第 1、12 軌打鼓、第 2、12 軌彈貝斯與鋼琴、第 12 軌吹口哨**；**Pino Palladino 在第 1、3、5、6、10、11 軌彈貝斯**；Tommy King 的鋼琴與風琴；**Justin Vernon 在第 3 軌唱追加人聲、Jenn Wasner 在同軌彈貝斯**；Tobias Jesso Jr. 在第 10 軌唱；Zsela 在第 5 軌唱和聲；第 1 軌另有掛名 Mama Joanie 與 Baby June 的人聲。",
+    "src": "https://en.wikipedia.org/wiki/Baby_(Dijon_album)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 24 個 release-group，**沒有第二筆叫《Baby》的條目**（唯一標題重疊的是 2019-11-01 的 Single《CRYBABY :*(》，MBID f0823d0d，**日期在六年前、不是這張的先行單曲**）。Dijon 名下 primary-type=Album 的依序是《Absolutely》2021 與本張，**排第二、與維基首句一致**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=cceea21d-f3ec-4586-be7a-d2e939c15c78&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "公布時掛的倒數計時器上寫著「距離專輯《Baby》——除非取樣沒過」",
+   "一首先行單曲都沒放，發行前一週才讓人知道有這張碟"
+  ],
+  "sound": "MB 記 2025-08-15 兩筆數位（Warner Records）各 12 軌，三個月後的 US CD（093624827405）才多出第 13 軌〈Nü Diamond〉；Apple us 上架的是 12 軌版、逐軌長度與 MB 相同到秒，總長 37:45。十二首裡第 4 軌〈(Freak It)〉1:44 與第 7 軌〈(Referee)〉1:06 是兩段括號起來的短接，把碟分成三段。製作是 Dijon 本人與 Andrew Sarlo，班底延續《Absolutely》那一圈：Mk.gee（Michael Gordon）打鼓、彈貝斯與鋼琴，Pino Palladino 在六軌上彈貝斯，Tommy King 的鋼琴與風琴，另有 Justin Vernon 與 Jenn Wasner 在第 3 軌、Tobias Jesso Jr. 在第 10 軌。",
+  "keyTracks": [
+   "Baby!",
+   "Yamaha",
+   "Kindalove"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-08-15**、其下兩筆數位同日、CD 晚到 2025-11-21；Apple us 1832337743 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無，而且連任何先行單曲都沒有**（維基 Background 節：released with no preceding singles）。MB 藝人頁唯一標題重疊的是 2019 年的《CRYBABY :*(》，早六年、與本張無關。",
+  "notes": "**探測層 ready 覆核通過**：us 1832337743，12 軌全有 previewUrl、與 MB 的前 12 軌逐位置相符，`trackCount` 欄與攤開的曲目列都是 12。\\n**軌數要注意**：MB 的 **US CD 是 13 軌**（多末軌〈Nü Diamond〉），數位與 Apple 都是 12 軌，維基曲目表也停在 12。**行文若提軌數寫 12，第 13 軌是 CD 限定。**\\n**待查證一處**：`why` 寫「**錄音以現場合奏一次錄下的作法為主**」——本次三份來源都沒有這句。**行文不得寫錄音方式。**\\n策展層說對的、而且逐軌查得到：第二張 ✅、Warner Records ✅（維基另列 R&R，Apple ℗ 欄作 R&R/Warner Records）、**Mk.gee（Michael Gordon）與 Andrew Sarlo 都在班底裡 ✅**、「與同批 Mk.gee 那張是同一個錄音圈子的兩面」✅（Gordon 在這張打鼓、彈貝斯與鋼琴；反過來 Dijon 也共同製作了 Mk.gee《Two Star & The Dream Police》的〈New Low〉與〈DNM〉——**兩張卡可以互相參照**）。\\n**要補的、比什麼都好用的兩件事**：發行前一週才公布，倒數計時器上寫「until the album Baby (unless samples don't get cleared)」；**完全沒有先行單曲**。另可寫 Pino Palladino 在六軌上彈貝斯。\\n**媒體榜與評分不寫**；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:Lorde|Virgin",
+  "artist": "Lorde",
+  "album": "Virgin",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a3734ef9 的欄位：title「Virgin」、artist-credit「Lorde」（藝人 MBID 8e494408）、first-release-date 2025-06-27、primary-type Album、secondary-types 空。轄下 **13 個 release、全部 11 軌**，多數在 2025-06-27：AU 的 indie exclusive／gatefold／Spotify Fans First exclusive 三種 12 吋、XE 的 Blood Vinyl（Crush Music／Universal Music New Zealand 00602478121234）、US 的 bathwater 色膠（602478121180）、AR 與 AU 的 CD、XW 數位與 Dolby Atmos 混音。**日本盤的標題是《ヴァージン》（Crush Music／Universal Music New Zealand，UIJO-7001，12 吋黑膠）；台灣盤 2025-07-04 的標題是《聖女》（Crush Music／環球音樂，CD，00602478121333）。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/a3734ef9-80a8-40e0-8718-9eb39860ff4a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-06-27 AU indie exclusive，12 吋黑膠 11 軌）的逐軌曲目與長度：1〈Hammer〉3:13、2〈What Was That〉3:29、3〈Shapeshifter〉4:17、4〈Man of the Year〉3:00、5〈Favourite Daughter〉3:28、6〈Current Affairs〉3:18、7〈Clearblue〉1:57、8〈GRWM〉2:35、9〈Broken Glass〉3:14、10〈If She Could See Me Now〉2:56、11〈David〉3:24。11 軌、總長 34:51；**第 7 軌〈Clearblue〉1:57 是全碟最短，第 3 軌〈Shapeshifter〉4:17 最長**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a3734ef9-80a8-40e0-8718-9eb39860ff4a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**探測層記 unavailable，實為 ready**：Apple Music 藝人頁 `lookup?id=602767352&entity=album&limit=200` 在 **us／gb／de／fr／ca／au／jp 七個店面全部回同一個 collectionId 1810905299**《Virgin》、releaseDate 2025-06-27、trackCount 11、collectionExplicitness explicit、copyright「℗ 2025 Universal Music New Zealand Limited」。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 MB **逐位置相符**、逐軌長度相同到秒（193／209／257／180／209／198／117／155／194／177／205 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1810905299&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Virgin (Lorde album)〉的 infobox 與首段：這是 Lorde 的**第四張錄音室專輯**，2025-06-27 經 Universal Music New Zealand 與 Republic Records 發行，**也是她離開環球音樂集團前在這兩家旗下的最後一張**，總長 34:51。**製作是 Lorde 與 Jim-E Stack，另有 Dan Nigro 與 Buddy Ross 掛 producer**；Writing and production 節另記追加參與者 **Dev Hynes、Fabiana Palladino 與 Andrew Aged**，混音 Spike Stent 與 Tom Elmhirst、母帶 Chris Gehringer。**錄音散在十二處錄音室**，含紐約的 Electric Lady、倫敦的 Strongroom 與 Studio 13、洛杉磯的 Henson Recording 等。**封面是一張藍調的骨盆 X 光片，上面看得到皮帶扣、褲子拉鍊、鉚釘與一個子宮內避孕器。**",
+    "src": "https://en.wikipedia.org/wiki/Virgin_(Lorde_album)"
+   },
+   {
+    "f": "同一條目的 Promotion 節：先行單曲三首**都不與專輯同名**——〈What Was That〉2025-04-24（發行時專輯尚未公布，MV 拍在紐約，含華盛頓廣場公園那場因人太多、沒有公演許可而被紐約警方中止的快閃）、〈Man of the Year〉2025-05-29、〈Hammer〉2025-06-19。她在 4 月 30 日才公布這是一張 11 軌專輯；6 月 22 日在布魯克林的酒吧 Baby's All Right 放全碟給歌迷聽、TikTok 直播；發行當天在 2025 年 Glastonbury 音樂節做了一場**未預告的全碟演出**。**發行後有歌迷回報：全透明的 clear CD 版在部分機器上讀不出來**——車用音響、隨身 CD player、遊戲主機、燒錄機、多片換片機、吸入式與老機種都中招。",
+    "src": "https://en.wikipedia.org/wiki/Virgin_(Lorde_album)"
+   },
+   {
+    "f": "同一條目的 Writing and production 節與 MB 藝人頁：碟上用了 Dexta Daps〈Morning Love〉的取樣與 Baby Bash feat. Frankie J〈Suga Suga〉的引用。MB 藝人頁分頁全列 60 個 release-group，**沒有第二筆叫《Virgin》的條目、也沒有同名先行單曲**。Lorde 名下 primary-type=Album 的依序是《Pure Heroine》2013、《Melodrama》2017、《Solar Power》2021、《Virgin》2025，**排第四、與維基首句一致**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8e494408-8620-4c6a-82c2-c2ca4a1e4f12&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "封面是一張骨盆 X 光片，皮帶扣、拉鍊、鉚釘與一個子宮內避孕器都照得清清楚楚",
+   "全透明那版 CD 在車用音響與老機器上讀不出來"
+  ],
+  "sound": "MB 十三筆 release 全是 11 軌，幾乎都在 2025-06-27（AU 的三種黑膠、XE 的 Blood Vinyl、US 的 bathwater 色膠、AR 與 AU 的 CD、數位與 Dolby Atmos 混音），日本盤題《ヴァージン》、台灣盤 07-04 題《聖女》。Apple 逐軌長度與 MB 相同到秒，總長 34:51——十一首裡九首不到三分半，最短的〈Clearblue〉1:57。製作是 Lorde 與 Jim-E Stack，Dan Nigro 與 Buddy Ross 也掛 producer，Dev Hynes、Fabiana Palladino 與 Andrew Aged 追加參與；混音 Spike Stent 與 Tom Elmhirst、母帶 Chris Gehringer。錄音散在十二處錄音室，從紐約的 Electric Lady 到倫敦的 Strongroom。",
+  "keyTracks": [
+   "Hammer",
+   "What Was That",
+   "David"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-06-27**、其下十二筆 release 同為 2025-06-27（只有台灣盤《聖女》晚到 2025-07-04）、Apple 1810905299 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（〈What Was That〉2025-04-24、〈Man of the Year〉2025-05-29、〈Hammer〉2025-06-19，皆不同名）。MB 藝人頁 60 個 release-group 裡沒有第二筆《Virgin》。",
+  "notes": "**⚠ 試聽推翻：探測層記 unavailable，實為 ready。** 正解 **1810905299**（11 軌、11 軌皆有 previewUrl、與 MB 逐位置相符），us／gb／de／fr／ca／au／jp **七個店面同一個 collectionId 全部命中**。探測落空的原因是**只走 `search` 端點**（`tried` 九個店面全是 `0→0`），改走藝人頁 `lookup?id=602767352&entity=album` 就在第一頁——**與同批 Mk.gee 同一個形狀，裁定 173／166**。策展層預判「Virgin 同時是 Virgin Records 的廠牌名，字串查詢會被廠牌欄污染」，方向對，但**真正的解法是換端點、不是換字串**。\\n策展層說法查證：第四張 ✅、Universal Music New Zealand 與 Crush Music ✅（MB 廠牌欄；維基 infobox 另寫 Republic Records）、Jim-E Stack 為主要合作者 ✅、Dan Nigro 與 Fabiana Palladino 參與 ✅、封面是骨盆 X 光片 ✅（**可再補一句：片子上看得到皮帶扣、拉鍊、鉚釘與一個子宮內避孕器**）。\\n**要補的、策展層沒提的三件事**：(1) **日本盤題《ヴァージン》、台灣盤題《聖女》**（MB 廠牌欄：台灣盤掛 Crush Music 與環球音樂、2025-07-04），這是本批唯一一張有中文盤名的西方碟；(2) 全透明的 clear CD 在部分播放器上讀不出來；(3) 錄音散在十二處錄音室。\\n**附帶一筆會影響別張卡的線索**：**Andrew Aged 出現在這張的追加製作名單裡**——c-111 策展層把他誤寫進了 Mk.gee《Two Star & The Dream Police》的製作掛名（見該卡 notes），兩張的 `why` 大概在同一輪裡串了線。\\n**媒體榜與商業榜名次一律不寫**；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:Blood Orange|Essex Honey",
+  "artist": "Blood Orange",
+  "album": "Essex Honey",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 778e2320 的欄位：title「Essex Honey」、artist-credit「Blood Orange」（藝人 MBID 3d254f1e）、first-release-date 2025-08-29、primary-type Album、secondary-types 空。轄下 3 個 release 全部 2025-08-29 Official：XE 的 CD **14 軌**（Domino 與 RCA 並列，19802944962）、**US 的雙 12 吋黑膠（7＋7 軌，19802960851）**、XW 數位 14 軌（Domino／RCA／Sony Music）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/778e2320-736e-4634-ae65-354d408c40e9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-08-29 XE，CD 14 軌）的逐軌曲目與長度：1〈Look at You〉2:59、2〈Thinking Clean〉3:35、3〈Somewhere in Between〉3:24、4〈The Field〉3:19、5〈Mind Loaded〉3:38、6〈Vivid Light〉4:22、7〈Countryside〉3:11、8〈The Last of England〉3:54、9〈Life〉2:52、10〈Westerberg〉3:26、11〈The Train (King's Cross)〉2:48、12〈Scared of It〉2:41、13〈I Listened (Every Night)〉3:35、14〈I Can Go〉2:51。總長 46:43，**十四首沒有一首超過四分半**；黑膠把它切成 7＋7 兩片。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=778e2320-736e-4634-ae65-354d408c40e9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1825903903：collectionName「Essex Honey」、artistName「Blood Orange」、releaseDate 2025-08-29、copyright「℗ 2025 RCA Records, under exclusive license from Domino Recording Co. Ltd.」、trackCount 14。`entity=song` **攤得出 14 軌、14 軌全部有 previewUrl**，曲名與曲序與 MB **逐位置相符**、逐軌長度相同到秒；Apple 的軌名把客串攤在標題上——第 4 軌 feat. The Durutti Column／Tariq Al-Sabir／Caroline Polachek／Daniel Caesar，第 5 軌 feat. Caroline Polachek／Lorde／Mustafa，第 12 軌 feat. Brendan Yates／Ben Watt，第 14 軌 feat. Mabe Fratti／Mustafa。",
+    "src": "https://itunes.apple.com/lookup?id=1825903903&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Essex Honey〉的首段與 Background 節：這是 Dev Hynes 以 Blood Orange 名義的**第五張錄音室專輯**，2025-08-29 由 **Domino 與 RCA 合資發行**，總長 46:43；**也是他自 2018 年《Negro Swan》以來的第一張完整長篇**（中間只有 2022 年的 EP《Four Songs》），並且是他 2022 年 9 月簽進 RCA 後的第一張。這張做於一段哀悼與回望的時期，主題是他在 **Essex** 的成長，以及音樂一路如何啟發並療癒他；碟上對 Elliott Smith、The Replacements 與他自己的舊作都有指涉。**全碟由 Hynes 自己寫、自己製作**，客串者參與部分作曲。",
+    "src": "https://en.wikipedia.org/wiki/Essex_Honey"
+   },
+   {
+    "f": "同一條目的首段與 Personnel 節：客串名單橫跨 **Lorde、The Durutti Column、Caroline Polachek、Daniel Caesar、Mustafa、Turnstile 的 Brendan Yates、Everything but the Girl 的 Ben Watt、Naomi Scott、Amandla Stenberg 與作家 Zadie Smith** 等人。技術面：Hynes 掛人聲、製作、混音與錄音，另有 Mikaelin Bluespruce 混音、**Heba Kadry 母帶**、Alec Fellman（第 2–4、6–8、13 軌）與 Evie Clark-Yospa（第 3–5 軌）錄音，第 5 軌另有 **Jim-E Stack** 與 Migui Maloles 的錄音；美術、設計與版面 Katharina Korbjuhn。先行單曲三首都**不與專輯同名**：〈The Field〉2025-06-26、雙 A 面〈Somewhere in Between〉／〈Mind Loaded〉2025-07-17（與專輯公告同日）、〈Countryside〉2025-08-27。",
+    "src": "https://en.wikipedia.org/wiki/Essex_Honey"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 40 個 release-group。**與本張標題重疊的兩筆都在專輯之後**：2025-09-05 的《honey》（Album＋secondary-types Compilation、Demo，MBID 92960d34）與 **2026-05-29 的 Single《Essex_Honey.mp3》（MBID 8f630e6c）**。**沒有同名先行單曲。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3d254f1e-7d18-431b-baeb-68e57695dfdb&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十四首、四十六分鐘，沒有一首超過四分半——黑膠切成兩片，一面七首",
+   "客串名單裡有 Lorde、有 Turnstile 的主唱，也有小說家 Zadie Smith"
+  ],
+  "sound": "MB 三筆 release 全在 2025-08-29：XE 的 CD 與 XW 數位都是 14 軌，US 黑膠是雙 12 吋 7＋7 分片。Apple us 逐軌長度與 MB 相同到秒，總長 46:43——十四首最長的〈Vivid Light〉4:22，其餘全在兩分半到四分之間，是密度很高的排法。全碟由 Dev Hynes 一人寫、製作，並自己掛混音與錄音；另有 Mikaelin Bluespruce 混音、Heba Kadry 母帶。客串幾乎每隔一兩軌就換一組：第 4 軌是 The Durutti Column 與 Caroline Polachek、Daniel Caesar，第 5 軌是 Polachek、Lorde 與 Mustafa，第 12 軌是 Turnstile 的 Brendan Yates 與 Everything but the Girl 的 Ben Watt，末軌是 Mabe Fratti 與 Mustafa。",
+  "keyTracks": [
+   "The Field",
+   "Mind Loaded",
+   "I Can Go"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-08-29**、其下三筆 release 全部同為 2025-08-29、Apple us 1825903903 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（〈The Field〉2025-06-26、〈Somewhere in Between〉／〈Mind Loaded〉2025-07-17、〈Countryside〉2025-08-27）。**同名對照組兩筆、都在專輯之後**：2025-09-05 的《honey》（Compilation＋Demo）與 2026-05-29 的 Single《Essex_Honey.mp3》——策展層已把後者寫進「刻意不釘」。",
+  "notes": "**探測層 ready 覆核通過**：us 1825903903，14 軌全有 previewUrl、與 MB 逐位置相符，`trackCount` 欄與攤開的曲目列都是 14。\\n策展層說法**全數查證屬實**：第五張 ✅、Domino 與 RCA 共同發行 ✅、客串含 Caroline Polachek／Lorde／Mustafa／Daniel Caesar／Tariq Al-Sabir ✅（**五個名字逐一對到軌**）、盤名指向他成長的 Essex ✅、2026 年那筆《Essex_Honey.mp3》單曲對照組 ✅。\\n**要收緊一處**：`why` 寫「接在《Negro Swan》（2018）與《Angel's Pulse》（2019）之後」——維基首段的說法更硬：**這是他自 2018 年《Negro Swan》以來的第一張完整長篇**（中間 2022 年只有 EP《Four Songs》）。**行文可以寫「距上一張完整專輯七年」，那比列前作清單有力。**\\n**要補的**：全碟由 Hynes 一人寫、製作、混音與錄音；客串名單裡除策展層列的五位外，還有 **Turnstile 的 Brendan Yates**（同批另有 Turnstile 卡）、Everything but the Girl 的 Ben Watt、The Durutti Column，以及**小說家 Zadie Smith**；母帶是 Heba Kadry（本批第三張經她手的碟，另兩張是 English Teacher 與 Mk.gee）。\\n**媒體榜與評分不寫**；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:Alex G|Headlights",
+  "artist": "Alex G",
+  "album": "Headlights",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2b86bcf2 的欄位：title「Headlights」、artist-credit「Alex G」（藝人 MBID 7df4c4de）、first-release-date 2025-07-18、primary-type Album、secondary-types 空。轄下 5 個 release 全部 2025-07-18 Official、全部 12 軌：US 的 CD（RCA 19802917132）、US 的黑膠兩種（black vinyl 19802917131、metallic blue vinyl 19802924371）、XW 數位（RCA），以及一筆廠牌欄記 `[no label]` 的 **Bandcamp 版數位**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2b86bcf2-220b-44d3-9ba1-75e1983e0684?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-07-18 US CD，RCA 19802917132，12 軌）的逐軌曲目與長度：1〈June Guitar〉3:52、2〈Real Thing〉3:19、3〈Afterlife〉3:30、4〈Beam Me Up〉3:28、5〈Spinning〉2:34、6〈Louisiana〉4:12、7〈Bounce Boy〉2:00、8〈Oranges〉2:53、9〈Far and Wide〉3:49、10〈Headlights〉4:56、11〈Is It Still You in There?〉2:52、**12〈Logan Hotel (live)〉3:34**。總長 40:52；**同名曲排第 10 軌、是全碟最長，收尾的〈Logan Hotel〉是現場錄音**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2b86bcf2-220b-44d3-9ba1-75e1983e0684&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1815825254：collectionName「Headlights」、artistName「Alex G」、releaseDate 2025-07-18、copyright「℗ 2025 RCA Records, a division of Sony Music Entertainment, under exclusive license from Alex G」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 MB **逐位置相符**、逐軌長度相同到秒（232／199／210／208／154／252／120／173／229／296／172／214 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1815825254&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Headlights (Alex G album)〉的首段與 Release 節：這是 Alex G 的**第十張錄音室專輯**，2025-07-18 經 RCA Records 發行，**也是他的大廠首作**——他在此之前與 Domino Recording Company 合作近十年。**共同製作是 Alex G 與 Unknown Mortal Orchestra 的貝斯手 Jacob Portrait**，Portrait 也做過他前兩張《God Save the Animals》（2022）與《House of Sugar》（2019）。錄音在賓州費城與紐約，總長 40:52。",
+    "src": "https://en.wikipedia.org/wiki/Headlights_(Alex_G_album)"
+   },
+   {
+    "f": "同一條目的 Recording 節與 Personnel 節：**碟上大部分的樂器都是 Alex G 一個人錄的**；弦樂來自他的伴侶與長期合作者 Molly Germer（小提琴、和聲）、Carolina Diazgranados（大提琴、和聲）、Hannah Nicholas（中提琴、和聲）、Veronica Jurkiewicz（中提琴）、Carlos Santiago（小提琴）與 Justin Yoder（大提琴），集中在第 5、9 軌。**他的長年巡演班底 Sam Acchione（吉他）、John Heywood（貝斯）、Tom Kelly（鼓）只出現在收尾的〈Logan Hotel (Live)〉——那首是圍著費城市中心一家旅館的鋼琴錄下來的**，他說「他們是很厲害的樂手，我想把他們帶進碟裡，因為他們是我的人」。混音 Jacob Portrait、母帶 **Heba Kadry**。",
+    "src": "https://en.wikipedia.org/wiki/Headlights_(Alex_G_album)"
+   },
+   {
+    "f": "同一條目的 infobox 與 MB 藝人頁：**infobox 記的前一作是 2024 年的《I Saw the TV Glow (Original Motion Picture Score)》**（電影《我看見電視發光》的配樂），先行單曲三首都**不與專輯同名**——〈Afterlife〉2025-05-29（與專輯公告同日）、〈June Guitar〉2025-06-27、〈Oranges〉2025-07-16。MB 藝人頁分頁全列 71 個 release-group，**沒有第二筆叫《Headlights》的條目**（名下有大量 secondary-type Compilation 的早期自壓合輯，皆與本張標題無關）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7df4c4de-3181-4a69-bd36-9d663970cebb&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "幾乎所有樂器都是他一個人錄的，只有最後一軌讓巡演班底進來",
+   "收尾那首圍著費城一家旅館的鋼琴現場錄，曲名就叫〈Logan Hotel〉"
+  ],
+  "sound": "MB 五筆 release 全在 2025-07-18、全部 12 軌（RCA 的 CD、黑膠兩色、數位，另有一筆 Bandcamp 版）；Apple us 逐軌長度與 MB 相同到秒，總長 40:52。同名曲〈Headlights〉4:56 排第 10 軌、是全碟最長，末軌〈Logan Hotel (Live)〉是現場錄音。共同製作是 Alex G 與 Unknown Mortal Orchestra 的貝斯手 Jacob Portrait（他也做過前兩張），Portrait 同時掛全碟混音，母帶 Heba Kadry。碟上大部分樂器由 Alex G 一人包辦，弦樂六人組集中在第 5、9 兩軌，巡演班底只出現在末軌。",
+  "keyTracks": [
+   "June Guitar",
+   "Afterlife",
+   "Logan Hotel"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-07-18**、其下五筆 release 全部同為 2025-07-18、Apple us 1815825254 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（〈Afterlife〉2025-05-29、〈June Guitar〉2025-06-27、〈Oranges〉2025-07-16）。MB 藝人頁 71 個 release-group 裡沒有第二筆《Headlights》。",
+  "notes": "**探測層 ready 覆核通過**：us 1815825254，12 軌全有 previewUrl、與 MB 逐位置相符，`trackCount` 欄與攤開的曲目列都是 12。\\n**擋下策展層一處**：`why` 寫「接在《God Save the Animals》（2022）與**他為電影《Wolves》寫的配樂**之後」——**片名錯了**。維基 infobox 的前一作是 **2024 年的《I Saw the TV Glow (Original Motion Picture Score)》**，本次來源裡查不到《Wolves》。**行文不得寫《Wolves》。**\\n策展層說對的：第十張 ✅（維基首句 tenth studio album）、從 Domino 換到 RCA ✅（維基另記這是他的**大廠首作**、與 Domino 合作近十年）、製作是 Jacob Portrait 與 Giannascoli 自己 ✅（**可補：Portrait 是 Unknown Mortal Orchestra 的貝斯手，且做過他前兩張**）。\\n**掛名**：卡片與 MB artist-credit 都作「Alex G」；策展層列的另兩種寫法（(Sandy) Alex G、Alex Giannascoli）在 MB 上是同一實體的別名，撞卡比對三種都要查——**這一點策展層寫得對**。\\n**要補的**：碟上大部分樂器由他一人錄；末軌〈Logan Hotel (Live)〉是圍著費城市中心一家旅館的鋼琴、與長年巡演班底一起錄的現場；母帶是 Heba Kadry（本批第四張經她手的碟）。\\n**媒體榜與評分不寫**；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:Stereolab|Instant Holograms on Metal Film",
+  "artist": "Stereolab",
+  "album": "Instant Holograms on Metal Film",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 446fc616 的欄位：title「Instant Holograms on Metal Film」、artist-credit「Stereolab」（藝人 MBID f1df0431）、first-release-date 2025-05-23、primary-type Album、secondary-types 空。轄下 4 個 release 全部 2025-05-23 Official：**XE 的雙黑膠（7＋6 軌，Duophonic Ultra High Frequency Disks 與 Warp Records 並列，D-UHF-D46）**、XW 數位 13 軌（DUHFDL46）、XE 的 CD 13 軌（D-UHF-CD46），以及**日本的 CD（Beat Records BRC784）——14 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/446fc616-c4db-46ce-8d4c-e4efc019b3f8?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-05-23 XE，CD 13 軌）的逐軌曲目與長度：1〈Mystical Plosives〉0:56、2〈Aerial Troubles〉3:21、3〈Melodie Is a Wound〉7:37、4〈Immortal Hands〉6:25、5〈Vermona F Transistor〉4:37、6〈Le Coeur et la force〉4:21、7〈Electrified Teenybop!〉4:17、8〈Transmuted Matter〉4:16、9〈Esemplastic Creeping Eruption〉6:04、10〈If You Remember I Forgot How to Dream, Pt. 1〉3:41、11〈Flashes From Everywhere〉5:35、12〈Colour Television〉5:33、13〈If You Remember I Forgot How to Dream, Pt. 2〉2:57。**黑膠把它切成 7＋6 兩片**（第一片收在〈Electrified Teenybop!〉）；**日本 CD 多的第 14 軌是〈Aerial Troubles (instrumental)〉**。總長 59:36。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=446fc616-c4db-46ce-8d4c-e4efc019b3f8&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1802636797：collectionName「Instant Holograms On Metal Film」、artistName「Stereolab」、releaseDate 2025-05-23、copyright「℗ 2025 Duophonic UHF Disks」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名與曲序與 MB 的 13 軌版**逐位置相符**、逐軌長度相同到秒。**Apple 上架的是 13 軌版，不是日本 CD 那個 14 軌版。**",
+    "src": "https://itunes.apple.com/lookup?id=1802636797&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Instant Holograms on Metal Film〉的首段與 Background 節：這是 Stereolab 的**第十一張錄音室專輯**，2025-05-23 經 Duophonic UHF Disks 與 Warp Records 發行，**是他們自 2010 年《Not Music》以來睽違近十五年的第一張錄音室專輯**，錄音室是倫敦的 **Press Play**，**infobox 的 producer 欄空白、沒有掛名製作人**。**2025 年 4 月 2 日——樂團宣布無限期休團整整十六年的同一天——訂閱者收到一份叫「unsolicited Stereolab material」的包裹**，裡面是先行單曲〈Aerial Troubles〉與它的伴奏版；同時樂團名字的海報出現在世界各大城市。4 月 8 日正式公布專輯。",
+    "src": "https://en.wikipedia.org/wiki/Instant_Holograms_on_Metal_Film"
+   },
+   {
+    "f": "同一條目的 Background 與 Personnel 節：**十三首全部由 Tim Gane 與 Lætitia Sadier 所寫**（〈Mystical Plosives〉與〈Electrified Teenybop!〉由 Gane 一人），演奏是兩人加上 2025 年巡演編制的 Andy Ramsay、Joe Watson 與 Xavi Muñoz。追加參與者：**Bitchin Bajas 的 Cooper Crain（掛錄音、工程與混音，並彈了 Cwejman SM-1、Korg MS-20、TR-606、Jupiter-4、Oberheim SEM、Mellotron 等一整排機器）與 Rob Frye（薩克斯風、木管、單簧管、長笛）**、International Anthem 的 **Ben LaMar Gay**（第 4、5、10 軌短號）、Ric Elsworth（打擊、馬林巴、鐵琴、鐘琴）、Cavern of Anti-Matter 的 Holger Zapf、Marie Merlet 與 Molly Read 的和聲。母帶 Bo Kondren、內袋設計 Vanina Schmitt。**混音由五名團員與 Cooper Crain 共同掛名。**",
+    "src": "https://en.wikipedia.org/wiki/Instant_Holograms_on_Metal_Film"
+   },
+   {
+    "f": "同一條目的 Singles 欄與 MB 藝人頁：先行單曲三首都**不與專輯同名**——〈Aerial Troubles〉2025-04-08、〈Melodie Is a Wound〉2025-04-29、〈Transmuted Matter〉2025-05-20。MB 藝人頁分頁全列 119 個 release-group，**沒有第二筆與《Instant Holograms on Metal Film》標題重疊的條目**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f1df0431-9250-4ec8-95d8-f19ce7cf7fb6&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "宣布無限期休團的十六年後，同一個日子，訂閱者信箱裡出現一份「未經請求的 Stereolab 材料」",
+   "製作人欄是空的——十三首的混音掛在五個團員與 Cooper Crain 名下"
+  ],
+  "sound": "MB 四筆 release 全在 2025-05-23：CD 與數位 13 軌，黑膠是雙片 7＋6（第一片收在〈Electrified Teenybop!〉），日本 CD 多一軌〈Aerial Troubles (instrumental)〉。Apple us 上架 13 軌版、逐軌長度與 MB 相同到秒，總長 59:36——十三首裡有五首超過五分鐘，最長的〈Melodie Is a Wound〉7:37，開場的〈Mystical Plosives〉只有 0:56。錄音在倫敦的 Press Play，**沒有掛名製作人**，混音由五名團員與 Cooper Crain 共同掛。曲子全由 Tim Gane 與 Lætitia Sadier 所寫；追加的音色來自 Cooper Crain 的一整排合成器、Rob Frye 的木管與 Ben LaMar Gay 的短號。",
+  "keyTracks": [
+   "Aerial Troubles",
+   "Melodie Is a Wound",
+   "Transmuted Matter"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-05-23**、其下四筆 release 全部同為 2025-05-23、Apple us 1802636797 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（〈Aerial Troubles〉2025-04-08、〈Melodie Is a Wound〉2025-04-29、〈Transmuted Matter〉2025-05-20）。MB 藝人頁 119 個 release-group 裡沒有第二筆同名條目——**本批盤名最長的一張，反而是撞卡風險最低的一張**。",
+  "notes": "**探測層 ready 覆核通過**：us 1802636797，13 軌全有 previewUrl、與 MB 的 13 軌版逐位置相符，`trackCount` 欄與攤開的曲目列都是 13。**配對的是 13 軌版、不是日本 14 軌版，正確**；行文若提軌數寫 13。\\n策展層說法**全數查證屬實**：睽違十五年 ✅（維基首句 first studio album in nearly 15 years）、上一張正規專輯是《Not Music》（2010）✅、Duophonic UHF Disks 與 Warp 共同發行 ✅、Tim Gane 與 Lætitia Sadier 的核心編制 ✅、Cooper Crain 混音 ✅（**他同時掛錄音與工程，並彈了整排合成器**）。\\n**要補的、比序數好用的三件事**：(1) **2025 年 4 月 2 日——樂團宣布無限期休團整整十六年的同一天——訂閱者收到一份叫「unsolicited Stereolab material」的包裹**，裡面是〈Aerial Troubles〉與其伴奏版；(2) **維基 infobox 的 producer 欄是空的**，混音掛在五名團員與 Cooper Crain 名下；(3) 十三首全由 Gane 與 Sadier 所寫，演奏加上 2025 年巡演編制的 Ramsay／Watson／Muñoz。\\n**可補的序數**：維基首句寫 **eleventh studio album**——策展層沒寫序數，行文要寫可以照維基。\\n**媒體榜與評分不寫**；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:Deafheaven|Lonely People With Power",
+  "artist": "Deafheaven",
+  "album": "Lonely People With Power",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f88055a1 的欄位：title「Lonely People With Power」、artist-credit「Deafheaven」（藝人 MBID f4ccf6c5）、first-release-date **2025-03-25**、primary-type Album、secondary-types 空。轄下 **11 個 release**：CD 與數位一律 **12 軌**（XE 的 CD Roadrunner 075678600784、XW 數位），**黑膠一律是雙 12 吋 6＋6 軌**，色膠版本多達八種（amethyst、sterling purple、clear vinyl with bronze and gold streaks、clear with silver glitter、lilac rose、southern autumn、green translucent、green & clear，以及一個「Blood on the Walls」版）。**MB 的 first-release-date 2025-03-25 落在美國的兩款黑膠上，其餘全部是 2025-03-28。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/f88055a1-f78c-4344-8765-e4ec22eb8bf8?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "英文維基〈Lonely People with Power〉的 Track listing 節（12 軌，總長 62:08）：1〈Incidental I〉0:56、2〈Doberman〉6:34、3〈Magnolia〉4:14、4〈The Garden Route〉5:48、5〈Heathen〉5:02、6〈Amethyst〉8:14、7〈Incidental II〉4:20（feat. Jae Matthews）、8〈Revelator〉6:24、9〈Body Behavior〉5:23、10〈Incidental III〉2:08（feat. Paul Banks）、11〈Winona〉7:28、12〈The Marvelous Orange Tree〉5:37。**三段〈Incidental〉分別排在第 1、7、10 軌，把碟切成三塊**；黑膠的 6＋6 分片正好切在第 6 軌〈Amethyst〉之後。",
+    "src": "https://en.wikipedia.org/wiki/Lonely_People_with_Power"
+   },
+   {
+    "f": "Apple Music us collectionId 1792077173：collectionName「Lonely People With Power」、artistName「Deafheaven」、**releaseDate 2025-03-28**、copyright「℗ 2025 Roadrunner Records Inc.」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與維基曲目表**逐位置相符**、逐軌長度相同到秒（56／394／254／348／303／494／260／384／323／128／448／337 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1792077173&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "同一條目的首段與 Recording and themes 節：這是 Deafheaven 的**第六張錄音室專輯**，2025-03-28 經 Roadrunner Records 發行，**是他們 2024 年簽進該廠牌後的第一張**；在 2021 年《Infinite Granite》完全放掉黑金屬元素之後，這張把 blackgaze 的聲音收了回來。**製作是 Justin Meldal-Johnsen——與前一張《Infinite Granite》同一人**；錄音在好萊塢的 **EastWest Studios**，混音與母帶由 **Zach Weeks 在 God City Studio** 完成。**封面用的是美國前成人片演員 Jenna Haze 的影像。**",
+    "src": "https://en.wikipedia.org/wiki/Lonely_People_with_Power"
+   },
+   {
+    "f": "同一條目的 Recording and themes 節與 Personnel 節：客席人聲有 **Boy Harsher 的 Jae Matthews（〈Incidental II〉）與 Interpol 的 Paul Banks（〈Incidental III〉的口白）**；第 11 軌〈Winona〉另有一支十人的「Winona Choir」。曲名多來自主唱 George Clarke 的家族：〈Magnolia〉取自密西西比州的州花——他在那裡參加叔叔的葬禮；〈Winona〉取自密西西比同名小鎮，他的祖父母住過、家族多人葬在那裡；收尾的〈The Marvelous Orange Tree〉取自法國魔術師 **Jean-Eugène Robert-Houdin** 的同名幻術。五人編制：George Clarke（人聲）、Kerry McCoy 與 Shiv Mehra（吉他）、Chris Johnson（貝斯）、Daniel Tracy（鼓）。",
+    "src": "https://en.wikipedia.org/wiki/Lonely_People_with_Power"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 28 個 release-group，**沒有第二筆與《Lonely People With Power》標題重疊的條目**、也沒有同名先行單曲；先行單曲三首是〈Magnolia〉2025-01-27（與專輯公告同日）、〈Heathen〉2025-02-25、〈Winona〉2025-03-28（與專輯同日，並附一支短片）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "三段〈Incidental〉排在第一、第七、第十軌，把六十二分鐘切成三塊",
+   "黑膠出了八種顏色，其中一款直接叫「Blood on the Walls」"
+  ],
+  "sound": "MB 十一筆 release：CD 與數位 12 軌，黑膠一律雙 12 吋 6＋6 分片、色膠八種。Apple us 逐軌長度與維基曲目表逐軌吻合，總長 62:08——十二首裡有四首超過六分鐘，最長的〈Amethyst〉8:14，而三段〈Incidental〉（0:56／4:20／2:08）分排第 1、7、10 軌，把碟切成三塊；黑膠的分片正好切在〈Amethyst〉之後。製作是 Justin Meldal-Johnsen（他也做了前一張《Infinite Granite》），錄音在好萊塢的 EastWest Studios，混音與母帶由 Zach Weeks 在 God City Studio 完成。五人編制之外，〈Incidental II〉有 Boy Harsher 的 Jae Matthews、〈Incidental III〉有 Interpol 的 Paul Banks 口白、〈Winona〉有一支十人合唱團。",
+  "keyTracks": [
+   "Doberman",
+   "Magnolia",
+   "The Marvelous Orange Tree"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025，但**日期有兩個**。MB first-release-date **2025-03-25**——那是美國兩款黑膠（amethyst、sterling purple）的日期；**其餘九筆 release 全部是 2025-03-28**，Apple us 1792077173 的 releaseDate 與維基首句也都是 2025-03-28。**同一年、差三天，行文若要點日期用 3 月 28 日**。**同名先行單曲：無**（〈Magnolia〉2025-01-27、〈Heathen〉2025-02-25、〈Winona〉2025-03-28）。MB 藝人頁 28 個 release-group 裡沒有第二筆同名條目。",
+  "notes": "**探測層 ready 覆核通過**：us 1792077173，12 軌全有 previewUrl、與維基曲目表逐位置相符，`trackCount` 欄與攤開的曲目列都是 12。\\n**擋下策展層一處，是硬錯**：`why` 寫「製作**回頭找回《Sunbather》（2013）與《New Bermuda》（2015）的 Jack Shirley**」——**與來源相反**。維基 Recording and themes 節的原話是「**與前一張《Infinite Granite》一樣，這張由 Justin Meldal-Johnsen 製作**」，Personnel 節也只列 Meldal-Johnsen；**Jack Shirley 完全沒有出現在這張碟的來源裡**。**行文一律寫 Justin Meldal-Johnsen，不得出現 Jack Shirley，也不得寫「找回早期的製作人」。**\\n策展層說對的：第六張 ✅、Roadrunner ✅（**可補：這是 2024 年簽進 Roadrunner 後的第一張**）、把《Infinite Granite》那張幾乎全清腔的路線收回黑金屬編制 ✅（維基首段的說法是「在 2021 年完全放掉黑金屬元素之後，這張回到 blackgaze」）。\\n**要補的、比序數好用的四件事**：(1) 錄音在好萊塢 **EastWest Studios**，混音與母帶是 Zach Weeks 在 God City Studio；(2) **封面用的是前成人片演員 Jenna Haze 的影像**；(3) 客席是 Boy Harsher 的 Jae Matthews 與 **Interpol 的 Paul Banks**；(4) 〈Magnolia〉與〈Winona〉都是密西西比的地名、來自主唱家族的葬禮與祖父母舊居，收尾曲名取自法國魔術師 Robert-Houdin 的幻術。\\n**媒體榜與評分一律不寫**（維基那段年度榜名次全部不可用）；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:Ethel Cain|Willoughby Tucker, I’ll Always Love You",
+  "artist": "Ethel Cain",
+  "album": "Willoughby Tucker, I’ll Always Love You",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b812527c 的欄位：title「Willoughby Tucker, I’ll Always Love You」（**MB 用彎撇號 U+2019，與卡片一致**）、artist-credit「Ethel Cain」（藝人 MBID 677e31f1）、first-release-date 2025-08-08、primary-type Album、secondary-types 空。轄下 **12 個 release 全部 2025-08-08 Official、全部掛 Daughters of Cain Records**：卡帶（DOCCS02）、CD（DOCCD02、US 與 XE 各一）、數位（含 Dolby Atmos 混音），以及 **六款雙 12 吋黑膠、每一款都是 6＋4 軌分片**（DOCLP02D、DOCLP02I indie exclusive、DOCLP02DE D2C 獨佔、DOCLP02DS 簽名版、DOCLP02EU、DOCLP02EUI）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b812527c-30ac-4f38-82ce-85b971727248?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-08-08 US 卡帶，DOCCS02，10 軌）的逐軌曲目與長度：1〈Janie〉5:00、2〈Willoughby's Theme〉4:44、3〈Fuck Me Eyes〉6:05、4〈Nettles〉8:04、5〈Willoughby's Interlude〉7:27、6〈Dust Bowl〉6:26、7〈A Knock at the Door〉5:24、8〈Radio Towers〉5:12、9〈Tempest〉10:01、**10〈Waco, Texas〉15:16**。**10 軌、總長 73:35——末軌一首就佔了全碟五分之一**；黑膠的 6＋4 分片正好切在〈Dust Bowl〉之後。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b812527c-30ac-4f38-82ce-85b971727248&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**探測層記 unavailable，實為 ready**：Apple Music 藝人頁 `lookup?id=1474427879&entity=album&limit=200` 在 **us／gb／de／fr／ca／au／jp 七個店面全部回同一個 collectionId 1818431571**《Willoughby Tucker, I'll Always Love You》、releaseDate 2025-08-08、trackCount 10、collectionExplicitness explicit、copyright「℗ 2025 Daughters of Cain Records」。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 MB **逐位置相符**、逐軌長度相同到秒（300／284／365／484／447／387／324／312／601／916 秒）。**⚠ Apple 的盤名用的是直撇號 `I'll`，卡片與 MB 用彎撇號 `I’ll`**。",
+    "src": "https://itunes.apple.com/lookup?id=1818431571&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Willoughby Tucker, I'll Always Love You〉的首段與 infobox：這是 Hayden Anhedönia 以 Ethel Cain 名義的**第二張錄音室專輯**，2025-08-08 由她自己的獨立廠牌 **Daughters of Cain（經 AWAL）**發行，是她同年的第二次發行（前一次是 2025 年的《Perverts》）。**歌詞敘事是 2022 年首作《Preacher's Daughter》的前傳**。製作掛 **Ethel Cain 與 Matthew Tomasi**——Anhedönia 自己掛全碟的製作、混音與錄音，Tomasi 掛全碟母帶、第 1–5 軌電吉他、第 2 軌製作、第 6／9／10 軌鼓。總長 73:35。",
+    "src": "https://en.wikipedia.org/wiki/Willoughby_Tucker,_I%27ll_Always_Love_You"
+   },
+   {
+    "f": "同一條目的 Concept and themes 節：故事**起於 1986 年——比前作的事件早五年**，Cain 稱那是「一切永遠改變的那一年」。開場〈Janie〉裡十六歲的 Ethel 因為好友交了新對象而陷入被拋下的感覺；第 2 軌〈Willoughby's Theme〉是器樂曲，Cain 說她想抓住「墜入愛河那種令人反胃、暈眩的恐懼與衝動」；〈Fuck Me Eyes〉帶進新角色 Holly Reddick；〈Nettles〉裡蕁麻是「難以被愛」的隱喻；〈Tempest〉視角轉到 Willoughby 身上；收尾的〈Waco, Texas〉裡 Ethel 仍停在天真的盼望裡，Willoughby 則明白了「在這個世界上愛是不夠的」。Sample credit：〈Dust Bowl〉引用了 Duster 的〈Stars Will Fall〉。",
+    "src": "https://en.wikipedia.org/wiki/Willoughby_Tucker,_I%27ll_Always_Love_You"
+   },
+   {
+    "f": "同一條目的 Release and promotion 節與 MB 藝人頁：這張 2025-03-24 在社群上公布，**原本被說成是一張「companion EP」，最後成了她的第二張正規專輯**；先行單曲兩首都**不與專輯同名**——〈Nettles〉2025-06-04（同日才公布 8 月 8 日的確切發行日）、〈Fuck Me Eyes〉2025-07-02。MB 藝人頁分頁全列 45 個 release-group，**與本張標題重疊的只有一筆：2025-12-29 的《willoughby tucker, i’ll always love you (demos)》（Album＋secondary-type Demo，MBID 1a3601c0，全小寫）——在專輯之後**。班底另有 Dillon Hodges（第 4 軌班鳩）、Bryan De Leon（第 4 軌鼓）、Danny Carpenter（第 4 軌提琴）、Steve Colyer（第 4 軌風琴）、Todd Beene 與 Angel Diaz 的追加吉他。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=677e31f1-4035-463c-8ca4-41175440c919&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十軌七十三分半，最後一首〈Waco, Texas〉一個人就佔了十五分鐘",
+   "故事從 1986 年講起——比《Preacher's Daughter》裡發生的事早五年"
+  ],
+  "sound": "MB 十二筆 release 全在 2025-08-08、全部掛自家廠牌 Daughters of Cain：卡帶、CD、數位（含 Dolby Atmos）都是 10 軌，六款雙 12 吋黑膠一律 6＋4 分片、切在〈Dust Bowl〉之後。Apple 逐軌長度與 MB 相同到秒，總長 73:35——十軌平均超過七分鐘，〈Tempest〉10:01、末軌〈Waco, Texas〉15:16。製作、混音與錄音都是 Anhedönia 本人，Matthew Tomasi 掛全碟母帶、第 1–5 軌電吉他與三軌的鼓。第 4 軌〈Nettles〉是全碟編制最厚的一首：班鳩、鼓、提琴、風琴與追加吉他一起進來。",
+  "keyTracks": [
+   "Janie",
+   "Nettles",
+   "Waco, Texas"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-08-08**、其下 12 筆 release **全部同為 2025-08-08**、Apple 1818431571 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（〈Nettles〉2025-06-04、〈Fuck Me Eyes〉2025-07-02）。**同名對照組一筆、在專輯之後**：2025-12-29 的《willoughby tucker, i’ll always love you (demos)》（Album＋Demo，全小寫）——策展層已寫進「刻意不釘」。",
+  "notes": "**⚠ 試聽推翻：探測層記 unavailable，實為 ready。** 正解 **1818431571**（10 軌、10 軌皆有 previewUrl、與 MB 逐位置相符），us／gb／de／fr／ca／au／jp **七個店面同一個 collectionId 全部命中**。探測落空有兩層原因：(1) **只走 `search` 端點**（九個店面全是 `0→0`），而 Apple 的 `search` 索引裡連《Preacher's Daughter》都查不到（本次實測：search 只回得出《Perverts》與一批單曲，藝人頁 `lookup?id=1474427879&entity=album` 才列得出 17 筆完整目錄）——**裁定 173／166**；(2) **撇號形態不同**：卡片與 MB 用彎撇號 `I’ll`（U+2019），**Apple 的 collectionName 用直撇號 `I'll`**，字串比對零命中。**兩種撇號都要進 queryAlias，策展層已寫，正確。**\\n策展層說法**全數查證屬實**：自家廠牌 Daughters of Cain ✅（維基另註「經 AWAL」）、故事線設定在《Preacher's Daughter》之前 ✅（**可再寫死：起於 1986 年、比前作早五年**）、同年另發過《Perverts》✅、彎撇號分裂 ✅、同名 demos 對照組 ✅。\\n**要收緊一處**：`why` 寫「製作**由她自己完成**」——維基 infobox 的 producer 欄是 **Ethel Cain 與 Matthew Tomasi 兩人**；Anhedönia 掛全碟製作、混音與錄音，Tomasi 掛全碟母帶、第 2 軌製作與五軌電吉他、三軌鼓。**行文寫「自己製作、自己混音」可以，寫「一人完成」不行。**\\n**要補的、比什麼都好用的**：這張原本只被說成一張 companion EP，最後長成 73 分半的第二張正規專輯；末軌〈Waco, Texas〉15:16。\\n**媒體榜與商業榜名次一律不寫**；本次來源裡沒有獎項紀錄。"
+ },
+ {
+  "key": "desc2:ROSALÍA|LUX",
+  "artist": "ROSALÍA",
+  "album": "LUX",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bb3ec118 的欄位：title「LUX」、artist-credit「ROSALÍA」（藝人 MBID 25f3abd9）、first-release-date 2025-11-07、primary-type Album、secondary-types 空。轄下 6 個 release：2025-11-07 的 **XE 與 US 的 CD 各 18 軌**（Columbia 19802990922）、**XE 與 US 的雙 12 吋黑膠各 9＋9 軌**（Columbia／Sony Music 19802943251）、**XW 的數位 15 軌**，以及 **2026-04-16 XW 的「complete works」數位 18 軌**。**實體 18 軌、原始數位 15 軌，是同一張碟的兩份曲目。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**兩份曲目的差別逐軌可查**：MB 的 2025-11-07 XE CD（18 軌）依序是 1〈Sexo, violencia y llantas〉2:21、2〈Reliquia〉3:50、3〈Divinize〉4:04、4〈Porcelana〉4:08、5〈Mio Cristo〉4:30、6〈Berghain〉2:59、7〈La perla〉3:16、8〈Mundo nuevo〉2:20、9〈De madrugá〉1:45、10〈Dios es un stalker〉**2:55**、11〈La yugular〉4:18、**12〈Focu 'ranni〉2:51**、13〈Sauvignon blanc〉2:42、**14〈Jeanne〉3:52**、**15〈Novia robot〉3:12**、16〈La rumba del perdón〉4:11、17〈Memória〉3:46、18〈Magnolias〉3:15。**數位版少的正是第 12、14、15 軌**，且第 10 軌換成一個 **2:11 的不同 take**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1848167516：collectionName「LUX」、artistName「ROSALÍA」、releaseDate 2025-11-07、copyright「℗ 2025 Columbia Records, a Division of Sony Music Entertainment」、collectionExplicitness explicit、trackCount 15。`entity=song` **攤得出 15 軌、15 軌全部有 previewUrl**，曲序與 MB 的 18 軌 CD 對照後**缺〈Focu 'Ranni〉〈Jeanne〉〈Novia Robot〉三軌**，且第 10 軌〈Dios Es Un Stalker〉在 Apple 上只有 **131 秒**、CD 上是 **175 秒**——**同名不同 take**。",
+    "src": "https://itunes.apple.com/lookup?id=1848167516&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Lux (Rosalía album)〉的首段與 Notes 節：這是 ROSALÍA 的**第四張錄音室專輯**，2025-11-07 經 Columbia Records 發行，**與倫敦交響樂團合錄、指揮是 Daníel Bjarnason，ROSALÍA 自任執行製作**。**「原始發行時實體版有 18 軌、數位版少了其中三軌；2026-04-17 才發了收齊 18 軌的數位再版《Lux (Complete Works)》。」** Notes 逐條寫明：數位標準版不含〈Focu 'Ranni〉〈Jeanne〉〈Novia Robot〉；數位版的〈Dios Es un Stalker〉是**另一個 take、調性較低、少了第二段副歌與橋段，長 2:10**；〈Mio Cristo Piange Diamanti〉在實體版上題作〈Mio Cristo〉。客串有 Björk、Carminho、Dougie F、Estrella Morente、Sílvia Pérez Cruz、Yahritza y su Esencia 與 Yves Tumor；製作名單含 Noah Goldstein、Dylan Wiggins、Pharrell Williams、Caroline Shaw、El Guincho 等。",
+    "src": "https://en.wikipedia.org/wiki/Lux_(Rosal%C3%ADa_album)"
+   },
+   {
+    "f": "同一條目的 Concept 節與 infobox：**曲目分成四個樂章（movement）**，ROSALÍA 說第一樂章是「離開純真」、第二是「在重力裡、與世界為友」、第三是「恩典、盼望與神為友」、第四是「告別與回返」。**每一首都取材自一位女性聖者的故事**，逐首可對：〈Reliquia〉利馬的聖羅莎、〈Porcelana〉了然（Ryōnen Gensō）、〈Mio Cristo Piange Diamanti〉亞西西的佳蘭、〈Berghain〉賓根的希德嘉與 Vimala、〈De Madrugá〉基輔的聖奧麗加、〈La Yugular〉蘇非派的拉比雅、〈Focu 'Ranni〉巴勒摩的聖羅莎莉亞、〈Sauvignon Blanc〉亞維拉的德蘭、〈Jeanne〉聖女貞德、〈Novia Robot〉孫不二與米利暗、〈Magnolias〉Anandamayi Ma。**歌詞跨 14 種語言**（母語加泰隆尼亞語與西班牙語，另加阿拉伯語、英語、法語、德語、希伯來語、義大利語、日語、拉丁語、華語、葡萄牙語、西西里語、烏克蘭語共 12 種）。錄音 2023–2025 年，橫跨倫敦 AIR、塞維亞 A Tempo、洛杉磯 Conway 與 Larrabee、邁阿密 FB House、法國 La Fabrique、巴塞隆納 L'Auditori 與蒙特塞拉特修道院唱詩班等十處。",
+    "src": "https://en.wikipedia.org/wiki/Lux_(Rosal%C3%ADa_album)"
+   },
+   {
+    "f": "同一條目的 Concept 節與 Writing and recording 節：**封面是 ROSALÍA 穿白色修女會衣與頭紗、閉眼、金唇、在藍底前抱住自己**；攝影師 Noah Dillon 2024 年底被 ROSALÍA 與她姊姊 Pili 找上，他說「要真的看懂《Lux》的視覺，得看黑膠那份摺頁——那裡有將近八十張照片」。整張碟花了兩到三年，其中大量時間花在學怎麼用別的語言寫與唱：她常先用 Google 翻譯打草稿，再拿去給專業譯者與語音學老師；她強調**完全沒有用人工智慧**。Charlotte Gainsbourg 替〈Jeanne〉、Justice 替〈Sauvignon Blanc〉提供語言上的意見。MB 藝人頁分頁全列 55 個 release-group，**沒有第二筆叫《LUX》的條目、也沒有同名先行單曲**（先行單曲是〈Berghain〉2025-10-27）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=25f3abd9-63b5-471a-bd25-feb9672dfa11&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十八首各取材自一位女性聖者，從賓根的希德嘉到基輔的聖奧麗加",
+   "黑膠那份摺頁裡有將近八十張照片——攝影師說不看它就看不懂這張碟"
+  ],
+  "sound": "**同一張碟有兩份曲目**：MB 的 CD 與雙黑膠（9＋9 分片）都是 18 軌，原始數位只有 15 軌——少〈Focu 'Ranni〉〈Jeanne〉〈Novia Robot〉三首，且〈Dios Es un Stalker〉換成一個短 44 秒、調性較低、少了第二段副歌與橋段的 take；2026-04-16 的《Lux (Complete Works)》數位版才收齊 18 軌。Apple us 上架的是 15 軌那一版、全軌有試聽。曲目分四個樂章，總長 60:03，單軌從 1:45 的〈De madrugá〉到 4:30 的〈Mio Cristo〉。與倫敦交響樂團合錄、Daníel Bjarnason 指揮，ROSALÍA 自任執行製作，製作名單另有 Noah Goldstein、Dylan Wiggins、Pharrell Williams、Caroline Shaw 與 El Guincho。錄音 2023–2025 年橫跨十處錄音室，遠至蒙特塞拉特修道院的唱詩班。",
+  "keyTracks": [
+   "Berghain",
+   "La Perla",
+   "Magnolias"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB first-release-date **2025-11-07**、其下五筆 release 同為 2025-11-07（第六筆是 2026-04-16 的《Lux (Complete Works)》數位再版）、Apple us 1848167516 的 releaseDate 與 ℗ 年份都是 2025。**同名先行單曲：無**（唯一先行單曲是〈Berghain〉2025-10-27，比專輯早 11 天）。MB 藝人頁 55 個 release-group 裡沒有第二筆《LUX》。**要防的不是年份是曲目：15 軌與 18 軌兩版並存。**",
+  "notes": "**探測層 ready 覆核通過**：us 1848167516，15 軌全有 previewUrl，`trackCount` 欄與攤開的曲目列都是 15；探測層靠 `us:artistPage→1` 撈回（`search` 回 0），策展層預判「LUX 只有三個字母、子字串比對會被別碟包住」方向對，實際解法是換端點（裁定 173）。\\n**⚠ 軌數與曲目：本批第二例「同一張碟兩份曲目」（另一例是 Tyler《CHROMAKOPIA》）。** 實體 18 軌、原始數位 15 軌，少的是第 12、14、15 軌（〈Focu 'Ranni〉〈Jeanne〉〈Novia Robot〉）；而且**第 10 軌〈Dios Es un Stalker〉在兩版上是不同的 take**（CD 2:55／數位 2:10，維基 Notes 明寫調性較低、少第二段副歌與橋段）。**行文若要點曲名，只能點兩版都有的那些；〈Focu 'Ranni〉〈Jeanne〉〈Novia Robot〉不得寫成「這張碟的第 N 軌」。** 另注意〈Mio Cristo Piange Diamanti〉在實體版上題作〈Mio Cristo〉。\\n**修正策展層一處**：`why` 寫「歌詞跨 **十三** 種語言」——**維基 infobox 逐一列出的是 14 種**（西班牙語、英語、阿拉伯語、加泰隆尼亞語、法語、德語、希伯來語、義大利語、日語、拉丁語、華語、葡萄牙語、西西里語、烏克蘭語）。**行文寫 14，不要寫 13。**\\n策展層其餘全對：第四張 ✅、Columbia ✅、與倫敦交響樂團合錄 ✅（**可補：指揮是 Daníel Bjarnason**）、製作班底含 Noah Goldstein、Dylan Wiggins 與她自己 ✅、客席 Björk／Yves Tumor／Estrella Morente ✅（**還有 Carminho、Sílvia Pérez Cruz、Yahritza y su Esencia、Dougie F**）。\\n**要補的、比語言數字更好用的兩件事**：**曲目分成四個樂章、每一首取材自一位女性聖者**（逐首可對到人）；**封面是她穿白色修女會衣、金唇閉眼**，黑膠摺頁裡有近八十張照片。另可寫：整張花了兩到三年，其中大量時間在學怎麼用別的語言唱，她先用 Google 翻譯打草稿再找譯者與語音學老師，並強調沒有用人工智慧。\\n**⚠ 媒體榜與評分一律不寫**——維基那句「Metacritic 2025 年第二高分／史上第十八」與 Spotify 單日串流紀錄**全部不可用**（下游會刪，寫了白費）。\\n**掛名照卡片原樣 `ROSALÍA`（全大寫帶重音，裁定 26／70），MB artist-credit 與 Apple artistName 三者一致。**"
  }
 ]
