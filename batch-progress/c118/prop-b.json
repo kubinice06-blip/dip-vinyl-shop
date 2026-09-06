@@ -1,0 +1,234 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Blake Baxter Dream Sequence；The Prince of Techno；Ghetto Techno",
+  "reissuedBy": "Tresor（1992-02-01，Tresor 2 CD）；Tresor（2000-08-15，Tresor 149 CD）；Tresor（2025-06-16，Tresor.002X，《Dream Sequence X》）",
+  "g": "b",
+  "artist": "Blake Baxter",
+  "album": "Dream Sequence",
+  "year": 1991,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Tresor（catno Tresor 2，DE 1991）",
+  "why": "Tresor 廠牌編號第二號，也是柏林 Tresor 與底特律第二代之間第一批正式簽下的碟：Blake Baxter 是 Metroplex 早期（〈When We Used to Play〉、〈Ride Em Boy〉）與 KMS 兩邊都出過的人，1991 年這張是他第一張整張長篇。實掃 seed_cards.json 全 14,424 列：Blake Baxter 池中 0 張；池中的底特律第二代目前是 Kenny Larkin 2、Stacey Pullen 1、Octave One 1、Terrence Dixon 1、Anthony \"Shake\" Shakir 1，Baxter 這一位整段缺席，而他在時間上比上述所有人都早。來源：MB release-group 514a97c8 轄下四個 release 的 label-info（Tresor 2／Tresor 2 CD／Tresor 149 CD／Tresor.002X）。",
+  "risk": "撞卡：實掃全池，Blake Baxter 0 張；與 c-40（257 筆，含 Tresor 系的《Tresor II: Berlin & Detroit》）、c-70、c-82、c-97 逐筆比對皆無。⚠ 同 RG 底下有 2025 年的《Dream Sequence X》——那是同一個 release-group 下的第四個 release、盤名多了一個 X，配對時容易配到它（Apple 搜到的兩筆就有一筆是它，見下）；年份一律取 1991 原盤。⚠ 廠牌國別：這張是德國 Tresor 發行的美國底特律錄音，「美國小廠」的判準看的是製作端的場景與廠牌規模，不是壓片國（見本批裁定第 4 條）。再發 status：四筆皆 Official。封面 CAA：release-group 514a97c8 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 514a97c8-4405-3297-b957-055b47c9692c。回問確認：title「Dream Sequence」、artist-credit「Blake Baxter」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 4 個 release（1991 DE Tresor 2／1992-02-01 DE Tresor 2 CD／2000-08-15 DE Tresor 149 CD／2025-06-16 DE Tresor.002X《Dream Sequence X》，全數 Official）。藝人 MBID 09039d5e-335c-4c08-9474-a83d1b838f23（Person／United States，裁定 179 回問已做），分頁全列 45 個 RG，primary-type=Compilation 0 個。刻意不釘：0adf9eea-7582-372b-9f0c-4dd17e30d5f2《The Project》（1992-04，與 Eddie Fowlkes 等人的共同掛名，同一個 RG 也掛在 Fowlkes 名下）、fc58c33b-84b4-3131-a343-93a6c04fe7b1《Endless Reflection》（1995）、ac26f234-9487-3135-83e1-4dda47617329《The Vault》（1995）、f8a05e4c-7744-3f18-91d0-7503b5d43e99《The H-Factor》（1997）、81f79cfd-6cbb-3aad-b5b7-2ef724465be7《Dream Sequence 3: The Collective》（2001，同系列第三集，容易與本張混）、f514af0e-d4fc-3544-a4fe-01e90387df6b《Globus Mix, Volume 2》（1998，Album+[Compilation]）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Eddie Fowlkes；Eddie Flashin Fowlkes；Eddie ‘Flashin’ Fowlkes；Eddie “Flashin” Fowlkes；Black Technosoul",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Eddie \"Flashin\" Fowlkes",
+  "album": "Black Technosoul",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Tresor（catno Tresor 49 CD，DE 1996-04-01）",
+  "why": "Eddie Fowlkes 是 Belleville Three 之外底特律第一代唯一常被並列的第四人（Metroplex M-002〈Goodbye Kiss〉就是他），也是「techno soul」這個講法的提出者；《Black Technosoul》是他名下 35 個 release-group 裡最完整的一張長篇，在 Tresor 49 這個編號上把他 1992–95 年散在 Tresor、Back Beat 的做法收成一整張。實掃 seed_cards.json 全 14,424 列：Eddie Fowlkes（四種寫法都查）池中 0 張；池中底特律第一代有 Juan Atkins 2＋Model 500 5＋Cybotron 2、Derrick May 1＋Rhythim Is Rhythim 1、Kevin Saunderson 的 Inner City 2＋E-Dancer 1，唯獨 Fowlkes 是 0。來源：MB release-group 7dde5866 轄下 release 的 label-info（Tresor 49 CD）。",
+  "risk": "⚠ 掛名是這張最大的坑，處置見本批裁定第 3 條：MB 藝人實體的主名是 `Eddie “Flashin” Fowlkes`（彎雙引號 U+201C／U+201D），同一個實體底下本張的 artist-credit 卻是 `Eddie ‘Flashin’ Fowlkes`（彎單引號 U+2018／U+2019）——同一個 MB 實體內部兩種引號並存，是裁定 211「MB 內部掛名分裂」的第三種形狀。碟面印的是直引號的 EDDIE 'FLASHIN' FOWLKES。本卡取 ASCII 直雙引號的 `Eddie \"Flashin\" Fowlkes`，理由是池中已有同型掛名 `Anthony \"Shake\" Shakir` 用的就是這個寫法，依裁定 177 第一步「先看池中的既有寫法」。四種寫法全部寫進 queryAlias。撞卡：實掃全池四種寫法皆 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ 同名撞卡：Apple 上有 2021 年的《Archives Vol. 5 - Black Technosoul》，是後世整編、不是本張。再發 status：唯一 release Official。封面 CAA：release-group 7dde5866 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 7dde5866-5adf-307c-a440-5716456c3d96。回問確認：title「Black Technosoul」、artist-credit「Eddie ‘Flashin’ Fowlkes」、first-release-date 1996-04-01、primary-type Album、secondary-types 空、轄下 1 個 release（1996-04-01 DE Tresor 49 CD，Official）。藝人 MBID a3db0ecd-e3f0-4320-88c3-d1d0466cc9bf（Person／United States／1962，實體主名 `Eddie “Flashin” Fowlkes`，裁定 179 回問已做），分頁全列 35 個 RG，primary-type=Compilation 0 個。刻意不釘：c322588c-4055-3172-91be-fca4ff1cc038《Technosoul》（1992-12，名字近但不是同一張）、e55fcfdb-083d-3104-939d-c2b170379730《The Birth of Technosoul》（1993，同族名字第三張）、ab17d709-5639-4e0a-b1c7-904c3291ef32《Detroit Techno Soul Compilation》（1993，Album+[Compilation]）、5665d489-4c0e-3bc1-813b-94676d2a9e36《3MB》（1992-09-01，與 Moritz von Oswald／Thomas Fehlmann 的三人團，掛名不是他單獨）、0adf9eea《The Project》（1992-04，與 Blake Baxter 等人的共同掛名）、7eb9c0af《Welcome to My World》（2007）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dark Comedy Seven Days；Kenny Larkin；Yennek",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Dark Comedy",
+  "album": "Seven Days",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Elypsia（catno ELY007CD，BE 1997）",
+  "why": "Kenny Larkin 的第二個掛名 Dark Comedy 名下唯一的 1990 年代長篇。實掃 seed_cards.json 全 14,424 列：`Kenny Larkin` 池中 2 張（《Azimuth》1994、《Metaphor》1995），`Dark Comedy` 與 `Yennek` 兩個別名池中皆 0 張。MB 把 Dark Comedy 建成獨立的藝人實體（7f57505a），與 Kenny Larkin 本人的實體（ed8e364a）分開，名下 5 個 release-group、Album 只有 2 個。這張填的正好是池中《Metaphor》（1995）之後、他 2000 年代沉寂之前那一段。來源：MB release-group 7236f72a 轄下 release 的 label-info（Elypsia ELY007CD）。",
+  "risk": "撞卡：實掃全池，`Dark Comedy` 0 張、`Kenny Larkin` 名下的兩張與本張不同；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ 別名：MB 把 Dark Comedy 建成獨立實體而不是 Kenny Larkin 的 alias，本卡依碟上印的名字掛 `Dark Comedy`，mbNote 已寫明本名對應；下游若有藝人比對閘，要能接受卡片掛名與本人名不同（裁定 194 的形狀）。⚠ 盤名極常見：`sevendays` 是高風險短鍵，搜尋一定要帶掛名。⚠ 廠牌國別：Elypsia 是比利時獨立廠，這是底特律作者在歐洲小廠發行的常態（見本批裁定第 4 條）。年份分歧：無。再發 status：唯一 release Official。封面 CAA：release-group 7236f72a 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 7236f72a-fc9f-3d38-804d-ab54bb44f28d。回問確認：title「Seven Days」、artist-credit「Dark Comedy」、first-release-date 1997、primary-type Album、secondary-types 空、轄下 1 個 release（1997 BE Elypsia ELY007CD，Official）。藝人 MBID 7f57505a-f683-4091-8b10-45ade72909af（Dark Comedy／Person／United States——本名 Kenny Larkin，其本人實體是 ed8e364a-6087-4425-bd58-6b146893c4b4／Person／United States／1968／disambiguation「techno DJ/producer」），Dark Comedy 名下分頁全列 5 個 RG，primary-type=Compilation 0 個。刻意不釘：27367ef4-279c-3dc3-ba84-9889e293ff3a《Funkfaker: Music Saves My Soul》（2004，同掛名下的第二張 Album，年代已出窗口）、dbba4074-2b70-410d-80b5-5adab3a5c4d3《Plankton / Clavia's North》（1997-01-27，primary-type 空白的 12 吋）；Kenny Larkin 本人實體名下的《Azimuth》與《Metaphor》池中已有，不重複。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kevin Saunderson Faces and Phases；Faces & Phases: The Kevin Saunderson Collection；Reese；E-Dancer；Inner City；Reese & Santonio",
+  "reissuedBy": "Planet E（1997-11-18，PE 65235 CD／US）；SSR Records（1998，SSR 196／BE，改名《Faces & Phases: The Kevin Saunderson Collection》）；KMS（2023-07-07，BTKMSFPCD 1／XW）",
+  "g": "b",
+  "artist": "Kevin Saunderson",
+  "album": "Faces & Phases",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Six6（catno SIXXCD 6，GB 1996）",
+  "why": "Kevin Saunderson 本人掛名在池中一張都沒有——實掃 seed_cards.json 全 14,424 列，`Kevin Saunderson` 0 張、`Reese` 0 張，只有他的兩個團／別名有卡：Inner City 2 張（《Paradise》1989、《Praise》1992）與 E-Dancer 1 張（《Heavenly》1998）。《Faces & Phases》是把他 1986–96 年散在 KMS、Transmat、Network 的十年工作用他本人名字集中起來的那一張，1997 年再由 Planet E 在美國發行。依裁定 167，MB 的 primary-type 是 Album（secondary-types 才有 Compilation），故照一般 Album 寫、不填例外欄位。來源：MB release-group 723bb9f3 轄下四個 release 的 label-info。",
+  "risk": "撞卡：實掃全池，`Kevin Saunderson` 0 張；與 c-40（收了 E-Dancer《Heavenly》）、c-70、c-82、c-97 逐筆比對皆無。⚠ 依裁定 167／190：本張 MB primary-type=Album、secondary-types=[Compilation]，**照一般 Album 寫、example 欄位一律留空**，填了會被 `chk-prop` 判「非合輯卻帶例外欄位」。⚠ 盤名分歧：1998 年 SSR 版把標題改成《Faces & Phases: The Kevin Saunderson Collection》，是同一個 RG 的另一個 release，不是另一張碟；年份取 1996。⚠ `&` 的摺疊：`chk-prop` 已把 `&` 換成 `and` 再摺（c-117 的修正），`Faces & Phases` 與 `Faces and Phases` 現在會摺成同一個鍵，兩種寫法都查過池中皆無。再發 status：四筆皆 Official。封面 CAA：release-group 723bb9f3 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 723bb9f3-ffb0-3705-9b7a-2c68b8d4ab74。回問確認：title「Faces & Phases」、artist-credit「Kevin Saunderson」、first-release-date 1996、primary-type **Album**、secondary-types **[\"Compilation\"]**（依裁定 167 照一般 Album 寫）、轄下 4 個 release（1996 GB Six6 SIXXCD 6／1997-11-18 US Planet E PE 65235 CD／1998 BE SSR Records SSR 196／2023-07-07 XW KMS BTKMSFPCD 1，全數 Official）。藝人 MBID bf259ecd-fe89-4738-82fc-ecdd67de1fcc（Person／United States／1964-05-09），分頁全列 36 個 RG，primary-type=Compilation 0 個。刻意不釘：781ee861-0682-4732-ba30-d34d9d2184a8《Heavenly Revisited》（2017，與池中 E-Dancer《Heavenly》同源）、9d4aca32-9569-4621-8ec9-16b6e3c592b5《e-Dancer》（2025）、ea7b6078-fd11-38d4-8c18-489e0e28e40e《KS02》（2003，Album+[Compilation]）、1bef6caf-2e19-3cd0-bd8d-da3d4419d50c《KMS: The Party of the Year》（1994）與 1003139f-45a8-443a-b7a6-a0be0bc75b98《KMS: The Definitive Mix Compilation》（2003）兩張廠牌 DJ mix、73fb0069《The Annual 2022》、ccaf8c1e《Defected Presents》等 DJ-mix 系。他的別名 `Reese`（e753448b）另立一卡，見本批 Reese《Just Want Another Chance》。"
+ },
+ {
+  "releaseType": "Single",
+  "exceptionReason": "§5.5 electronic 白名單：Reese 這個掛名在 MB 上 10 個 release-group 全是 Single／EP、沒有任何 Album，12 吋就是它唯一的作品形態；這一張的低頻音色後來被英國 jungle／drum & bass 整代人取樣成通稱的「Reese bass」，是一張 12 吋直接生出一個音色名詞的少見例子，2014 年 KMS 以 KMS 153 重發",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/db7921a6-afca-4af5-9895-da75fd7c64b3",
+   "https://www.discogs.com/master/1341"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Reese Just Want Another Chance；Kevin Saunderson；Reese & Santonio；Reese Project",
+  "reissuedBy": "KMS（2014，KMS 153／XW）",
+  "g": "b",
+  "artist": "Reese",
+  "album": "Just Want Another Chance",
+  "year": 1988,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Incognito Records（catno IR 111787，US 1988）",
+  "why": "Kevin Saunderson 以 Reese 之名在自營的 Incognito Records 出的 12 吋。實掃 seed_cards.json 全 14,424 列：`Reese` 池中 0 張、`Kevin Saunderson` 本人 0 張，只有 Inner City 2 張與 E-Dancer 1 張。本批同時收他本人的《Faces & Phases》（1996），這兩張一頭一尾把他的十年圈起來，而這張是起點：1988 年他還沒有 Inner City 的排行榜成績時的自營發行。來源：MB release-group db7921a6 轄下兩個 release 的 label-info（Incognito IR 111787／KMS 153）、Discogs master 1341。",
+  "risk": "⚠ 短掛名同名實體是這張最大的坑：MB 上 `Reese` 至少七個 score ≥90 的實體——Della Reese（歌手）、US 製作人 Maurice Trudell、英國 house 團、US hip-hop 主唱 Irisna Gayle、Huddersfield 藝人、基督教饒舌歌手⋯⋯依裁定 179 逐一回問 area／type／disambiguation 才分得出來，本張釘的是 e753448b（Person／United States／disambiguation「US house DJ/producer Kevin Saunderson」）。撞卡：實掃全池，`Reese` 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ Apple 上同一張碟有兩筆掛名不同的條目（`Reese & Kevin Saunderson` 與 `Reese`），配對時任一皆可、但要在備註記明是同一張。⚠ MB 兩個實體的生日不一致（Reese 記 1964-09-05、Kevin Saunderson 本人記 1964-05-09，月日顛倒），這是 MB 的資料瑕疵、不影響身分判定。再發 status：兩筆皆 Official。封面 CAA：release-group db7921a6 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group db7921a6-afca-4af5-9895-da75fd7c64b3。回問確認：title「Just Want Another Chance」、artist-credit「Reese」、first-release-date 1988、primary-type **Single**（故走 §5.5 白名單）、secondary-types 空、轄下 2 個 release（1988 US Incognito Records IR 111787／2014 XW KMS KMS 153，皆 Official）。藝人 MBID e753448b-2970-4f7d-9265-532ef0657891（Person／United States／1964-09-05／disambiguation「US house DJ/producer Kevin Saunderson」；本人實體是 bf259ecd），Reese 名下分頁全列 10 個 RG，全部 Single／EP，Album 與 Compilation 皆 0 個。刻意不釘：0381ab35-5af5-4468-8bd0-9137cf293acd《Bounce Your Body To The Box》（1988-04-02，同年另一張，且同時掛在 Kevin Saunderson 名下）、3afed299-5d3c-3da1-b537-8679415e20e2《Inside Out》（1991，EP）、67c68a9d-279c-428e-b554-ebb0c0b39d59《Rock to the Beat》（2015 的再發條目）、b2bd2bac《You're Mine》（1990）；另有獨立實體 `The Reese Project`（24fe7b77）不在本卡範圍。",
+  "genreException": "electronic"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "K-HAND；K-Hand；Kelli Hand；K. Hand On a Journey；Acacia Records",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "K. Hand",
+  "album": "On a Journey",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "!K7（catno !K7R001CD，DE 1995）",
+  "why": "Kelli Hand 是底特律 techno 少數的女性作者、自營廠牌 Acacia Records 的主理人，《On a Journey》是 !K7 的 R 系列第一號（!K7R001CD），也是她第一張整張長篇。實掃 seed_cards.json 全 14,424 列：`K. Hand`、`K-HAND`、`Kelli Hand` 三種寫法池中皆 0 張；底特律這條線池中女性作者是 0——本張是這個空缺的第一張。來源：MB release-group 065c0872 轄下 release 的 label-info（!K7 !K7R001CD）。",
+  "risk": "⚠ 掛名分裂在 MB 內部：同一個人有兩個實體——0773e58b 主名 `Kelli Hand`（Person／United States／1964-09-15）與 6bd7981d 主名 `K-HAND`（未填 area）；本張所在的是前者，而該 RG 的 artist-credit 又寫成 `K. Hand`（帶句點的第三種寫法）。這是裁定 187／211 的疊加形狀：同一人三種寫法、還分屬兩個實體。本卡取碟上與 artist-credit 一致的 `K. Hand`，三種寫法全部寫進 queryAlias，並在此標明本機上架前要確認不會與 6bd7981d 那個實體的碟撞出兩張卡。撞卡：實掃全池三種寫法皆 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ 盤名極常見：`onajourney` 是高風險短鍵。再發 status：唯一 release Official。封面 CAA：release-group 065c0872 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 065c0872-4c0d-3979-ab67-c6e47375c523。回問確認：title「On a Journey」、artist-credit「K. Hand」、first-release-date 1995、primary-type Album、secondary-types 空、轄下 1 個 release（1995 DE !K7 !K7R001CD，Official）。藝人 MBID 0773e58b-1a46-4fe9-bcc1-c6f384daf4bc（主名 `Kelli Hand`／Person／United States／1964-09-15，裁定 179 回問已做）；MB 另有第二個實體 6bd7981d-5735-4e38-812e-10dc0d83425b（主名 `K-HAND`），本卡不釘它。0773e58b 名下分頁全列 22 個 RG，primary-type=Compilation 0 個。刻意不釘：5ac88e4b-cbeb-3f18-81cb-9ad9a103e07f《Ready for the Darkness》、6ad3a368-3b28-39bd-8360-0f675625e421《Soul》、7e88ffb3-fcd9-3c57-bd77-d71d26986004《The Art of Music》（三張皆 1997，同年三張 Album，只取最早的《On a Journey》）、b1949e7a-f1b6-3f69-82ca-74fe053428d9《Fantasy》（1998）、87187ca3-56b3-3f2a-90ef-838744d8995c《Detroit History, Part 1》（2001）、2e9380a0-d876-3856-a130-2d5d7b804393《Acacia Classics, Volume One》（1997，Album+[Compilation]）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Scan 7 Dark Territory；Scan Seven；Trackmasta Lou",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Scan 7",
+  "album": "Dark Territory",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Tresor（catno Tresor 57 CD，DE 1996-10-01）",
+  "why": "Underground Resistance 支線裡最早以整張長篇形態發行的一組：Scan 7 從 1993 年起以匿名集體的方式在 UR 出 12 吋，《Dark Territory》是他們第一張專輯，也是 UR 那套「不露臉、不具名」的作法第一次撐起一張完整的碟。實掃 seed_cards.json 全 14,424 列：Scan 7 池中 0 張；池中 UR 系統有 Underground Resistance 3 張（《Revolution for Change》《Interstellar Fugitives》《Electronic Warfare 2.0》）與 Galaxy 2 Galaxy 1 張，支線的其餘團一張都沒有。本批同時收 The Martian《Ghostdancer》（Red Planet），兩張把 UR 的兩條支線一起補上。來源：MB release-group 298518bb 轄下 release 的 label-info（Tresor 57 CD）。",
+  "risk": "撞卡：實掃全池，Scan 7 0 張；與 c-40（收了 UR 兩張與 Galaxy 2 Galaxy）、c-70、c-82、c-97 逐筆比對皆無。⚠ 掛名帶數字：`Scan 7` 摺疊後是 `scan7`，數字結尾的短掛名在搜尋端點容易被截斷（裁定 168 的形狀），`Scan Seven` 的拼字形已補 queryAlias。⚠ 廠牌國別：德國 Tresor 發行的底特律錄音，判準見本批裁定第 4 條。年份分歧：無，MB 唯一 release 記 1996-10-01。再發 status：Official。封面 CAA：release-group 298518bb 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 298518bb-b86b-372f-bf42-45a213967392。回問確認：title「Dark Territory」、artist-credit「Scan 7」、first-release-date 1996-10-01、primary-type Album、secondary-types 空、轄下 1 個 release（1996-10-01 DE Tresor 57 CD，Official）。藝人 MBID d321aef8-e1ba-4a03-9e4f-69f3f20a67a0（Group／United States／1993，裁定 179 回問已做），分頁全列 18 個 RG，primary-type=Compilation 0 個。刻意不釘：4ef88c51-672b-3975-8634-2572d72f1575《Resurfaced》（1998-06，第二張 Album）、a4e43c94-9bbd-4de3-9025-e2a9cadf0c66《Beyond Sound》（1998，同年第三張）、02591b58-4d7a-4904-b2a4-2036e5e26a3b《The Return Of The Beginning》（2002）、450e0ff3《Between Worlds》（2019）、5b6732f4《Burdens Down (The Remixes)》（2020，Album+[Remix]）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Urban Tribe Collapse of Modern Culture；Sherard Ingram；DJ Stingray",
+  "reissuedBy": "TOY’S FACTORY（1998，TFCK-87965／JP）",
+  "g": "b",
+  "artist": "Urban Tribe",
+  "album": "The Collapse of Modern Culture",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Mo Wax（catno MW 102 CD，GB 1998-10-13）",
+  "why": "Sherard Ingram（後來的 DJ Stingray）召集 Carl Craig、Kenny Dixon Jr.、Anthony Shakir 三人做的一張碟，是底特律第二代四個作者第一次同時掛在同一張長篇上；Mo Wax 在 1998 年把它放進自家目錄（MW 102），也是那條線少數被英國獨立廠完整發行的底特律碟。實掃 seed_cards.json 全 14,424 列：Urban Tribe 池中 0 張；參與的四個人池中分別有 Carl Craig 5 張（另加 69／Paperclip People／Innerzone Orchestra 各 1）、Moodymann 9 張、Anthony \"Shake\" Shakir 1 張，但四人同台的這張沒有。來源：MB release-group 7814ca6d 轄下三個 release 的 label-info（Mo Wax MW 102 CD／TOY’S FACTORY TFCK-87965）。",
+  "risk": "撞卡：實掃全池，Urban Tribe 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ 同名實體：MB 上另有芬蘭另類搖滾團 `Suburban Tribe`（ef454227，score 100，字串極近）與瑞典雷鬼團 `Urban Tribe`（7e37c6c9），依裁定 179 靠 area／type 排除，本張釘的是 836449fe（Group／Detroit／disambiguation「US techno/house group」）。⚠ 同 RG 底下有兩筆 1998 年 GB Mo Wax 的 release（10-13 與 10-26，同編號 MW 102 CD），是同一張碟的兩筆建檔、不是兩張碟；年份取 1998。⚠ 廠牌國別：Mo Wax 是英國獨立廠，判準見本批裁定第 4 條。再發 status：三筆皆 Official。封面 CAA：release-group 7814ca6d 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 7814ca6d-4e79-33ab-9035-9477ef8c6e13。回問確認：title「The Collapse of Modern Culture」、artist-credit「Urban Tribe」、first-release-date 1998-10-13、primary-type Album、secondary-types 空、轄下 3 個 release（1998-10-13 GB Mo Wax MW 102 CD／1998-10-26 GB Mo Wax MW 102 CD／1998 JP TOY’S FACTORY TFCK-87965，全數 Official）。藝人 MBID 836449fe-07d3-4777-8e3f-ed7eb12bfc48（Group／Detroit／disambiguation「US techno/house group」），分頁全列 16 個 RG，primary-type=Compilation 0 個。刻意不釘：144d9869-1133-37c9-a141-e746819de2c1《Authorized Clinical Trials》（2006）、301dee84-c944-3b88-b0a7-b8c2f69dac9b《Acceptable Side Effects》（2007）、4ccb224a-4ba6-4218-b78b-41c29a9d9063 與 7997c615-a11d-4f80-8fca-2aff61184d3d 兩個《Urban Tribe》（2010-07-01，同名同日的雙胞胎 RG，兩個都不釘）、baccfb1b《FACT Mix 222》（2011，DJ mix）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Terrence Parker Tragedies of a Plastic Soul Junkie；TP；Seven Grand Housing Authority；Intangible Records",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Terrence Parker",
+  "album": "Tragedies of a Plastic Soul Junkie",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "!K7（catno !K7R007CD，DE 1996-09-16）",
+  "why": "底特律 house（不是 techno）那一側最完整的長篇之一：Terrence Parker 自營 Intangible Records，把福音唱腔與電話聽筒當耳機的 DJ 手法帶進底特律的 house 敘事，《Tragedies of a Plastic Soul Junkie》是他名下 32 個 release-group 裡最早的一張 primary-type=Album。實掃 seed_cards.json 全 14,424 列：Terrence Parker 池中 0 張；池中的底特律 house 這一支只有 Moodymann 9 張與 Theo Parrish 7 張，兩位都是 1997 年之後才出道的下一代——Parker 這一輩在池中完全沒有落點。來源：MB release-group 6a8bf3fa 轄下 release 的 label-info（!K7 !K7R007CD）。",
+  "risk": "撞卡：實掃全池，Terrence Parker 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ 盤名長且含 of a：跨批比對摺疊後是 `tragediesofaplasticsouljunkie`，不會誤撞，但 Apple 側常把長標題截斷。年份分歧：無，MB 唯一 release 記 1996-09-16。廠牌國別：!K7 是德國獨立廠，同批的 K. Hand 與 Sean Deason 也在同一系列（!K7R001／007／008），判準見本批裁定第 4 條。再發 status：Official。封面 CAA：release-group 6a8bf3fa 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 6a8bf3fa-d34a-3503-8d9e-84ce61316863。回問確認：title「Tragedies of a Plastic Soul Junkie」、artist-credit「Terrence Parker」、first-release-date 1996-09-16、primary-type Album、secondary-types 空、轄下 1 個 release（1996-09-16 DE !K7 !K7R007CD，Official）。藝人 MBID b9157532-8101-4fa3-a568-3293574e1364（Person／United States／disambiguation「house music DJ/producer」，裁定 179 回問已做），分頁全列 32 個 RG，primary-type=Compilation 0 個。刻意不釘：aa80e538-ed13-3d2e-a4cf-8be5e9bc7ee2《Detroit After Dark》（1997-09-15，次年的第二張 Album）、b45978e0-4558-4af0-b51c-cdac0f382a04《God Loves Detroit》（2017）、bf1fb8ee-3878-4457-811d-8ad6b841388c《Motor City Life》（2017）、ac370a6c《Omnipotent》（2019）、2c2778a0-e88d-388a-9dac-8e2848fc388c《Building Blocks, Volume 1》（1995，Album+[Compilation,DJ-mix]）、8d8960d2《Mix The Vibe: Deeep Detroit Heat》（2015，DJ mix）、d6bda574《Life on the Back 9》（2014，Album+[Compilation]）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Aux 88 Xeo-Genetic；Aux88；AUX88；Xeo Genetic；Direct Beat",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "AUX 88",
+  "album": "Xeo-Genetic",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Direct Beat（catno DBCD-5037，US 1998-10-12）",
+  "why": "底特律電子放克（electro）那一支的第二張長篇：Direct Beat 是 Juan Atkins 的 Metroplex 之外、專做 electro 的底特律小廠，AUX 88 是它的招牌團。實掃 seed_cards.json 全 14,424 列：AUX 88 池中 1 張（《Is It Man or Machine?》1996，由 c-40 帶進），本張是它的直接續作，兩張放在一起才看得出 Direct Beat 1996–98 那兩年的形狀；池中同一支的其他名字（Ectomorph、Aux Men、Dopplereffekt 之外）幾乎沒有。來源：MB release-group aad16957 轄下 release 的 label-info（Direct Beat DBCD-5037）。",
+  "risk": "撞卡：實掃全池，AUX 88 名下只有《Is It Man or Machine?》，《Xeo-Genetic》不在池中；與 c-40（就是它帶進上一張的那批）、c-70、c-82、c-97 逐筆比對皆無。⚠ 掛名大小寫與空格：MB 實體主名是全大寫 `AUX 88`，池中既有那張寫成 `Aux 88`——`chk-prop` 的 k() 會摺掉大小寫與空白，兩者同鍵，不會生出重複卡；但顯示層不一致，本機上架前建議把池中那張一併正規化成 MB 主名（與 c-116 對灰野敬二的處置同型）。⚠ 盤名連字號：`Xeo-Genetic` 用的是 ASCII 連字號 U+002D，不是 en dash，`chk-prop` 的非 ASCII 連字號檢查不會標。年份分歧：無。再發 status：唯一 release Official。封面 CAA：release-group aad16957 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group aad16957-abef-3d82-9df1-74364c489f1b。回問確認：title「Xeo-Genetic」、artist-credit「AUX 88」、first-release-date 1998-10-12、primary-type Album、secondary-types 空、轄下 1 個 release（1998-10-12 US Direct Beat DBCD-5037，Official）。藝人 MBID 92317e0b-181b-4119-aba1-77261515daf8（Group／United States／1993），分頁全列 35 個 RG，primary-type=Compilation 0 個。刻意不釘：5145decf-ee5d-3855-980d-86429201ee8e《Is It Man or Machine?》（1996，池中已有）、1db48652-a524-37a8-983b-37044ee8e699《Reprogramming the Machine》（1998，同年的 Album+[Remix] 再混盤，極易與本張混）、c558ef84-c894-3372-9110-0b2f989416fd《88 FM》（1998，Album+[Compilation]）、a64f5c46-f52d-366a-afd6-239e1a5e40db《Electro Boogie》（1999，Album+[Compilation,DJ-mix]）與 167975ec《The Best of Electro Boogie》（2001，同型）、a240e59c-b37e-30cb-b19a-ab7dbe5ea91b《Aux 88》（2005，自我同名的晚期碟）、434b7db7《AUX 88 Presents Black Tokyo》（2010）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Silent Phase The Theory of Silent Phase；The Theory Of；Stacey Pullen；Kosmik Messenger；Bango",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Silent Phase",
+  "album": "(The Theory of)",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "R&S Records／Transmat 共同發行（catno TMT-1 CD，BE 1995-11-23）",
+  "why": "Stacey Pullen 的第一個化名 Silent Phase 名下唯一的一張碟，也是 Transmat 少數幾張整張長篇：Derrick May 把自家廠牌的 TMT-1 這個新編號給了他，由 R&S 在歐洲同步發行。實掃 seed_cards.json 全 14,424 列：`Silent Phase` 池中 0 張、`Stacey Pullen` 池中 1 張（《Todayisthetomorrowyouwerepromisedyesterday》2001）——池中只有他 2001 年那張，1995 年這個起點是空的；池中 Transmat 系統則只有 Derrick May《Innovator》與 Rhythim Is Rhythim《Strings of Life》兩張。來源：MB release-group e671f480 轄下 release 的 label-info（R&S Records 與 Transmat 同記 TMT-1 CD）、Discogs master 10311。",
+  "risk": "⚠ 盤名是這張最大的風險：MB 的 RG 標題與 Discogs master 10311 的標題**都**是《(The Theory Of)》——碟面上印的是「SILENT PHASE」大字加括號裡的「The Theory Of」，兩個資料庫一致採用括號那一段。依裁定 6／70／120「盤名用 MB 實體的文字」，本卡照填 `(The Theory of)`，慣稱的《The Theory of Silent Phase》寫進 queryAlias。跨批去重的 `strip()` 只在括號內容是再版裝飾詞時才剝，`The Theory of` 不在裝飾詞表內，所以括號會被保留、鍵是 `silentphase|thetheoryof`，不會被摺空。撞卡：實掃全池，`Silent Phase` 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ 別名：MB 把 Silent Phase 建成獨立實體（efa4bbba），與 Stacey Pullen 本人（74de5c4e）分開；卡片掛名依碟上印的取 `Silent Phase`。再發 status：唯一 release Official。封面 CAA：release-group e671f480 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group e671f480-c707-3232-8027-bdb137be7ddb。回問確認：title「(The Theory of)」、artist-credit「Silent Phase」、first-release-date 1995-11-23、primary-type Album、secondary-types 空、轄下 1 個 release（1995-11-23 BE，label-info 同時記 R&S Records TMT-1 CD 與 Transmat TMT-1 CD，Official）。藝人 MBID efa4bbba-3a42-4e10-9e8d-084cfa3d8558（Silent Phase／Person／United States——本名 Stacey Pullen，其本人實體是 74de5c4e-e839-43f3-b1bf-1718a855c75d），Silent Phase 名下分頁全列 3 個 RG，primary-type=Compilation 0 個。刻意不釘：Silent Phase 名下另兩個 RG 皆為 12 吋；Stacey Pullen 本人實體名下的 2c6fcd90《Todayisthetomorrowyouwerepromisedyesterday》池中已有，0828ef7b《DJ-Kicks: Stacey Pullen》（1996）與 2d7dc32e《Fabric 14》（2004）、9fc995b6《Balance 028》（2015）皆為 DJ mix、本批不收。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Infiniti Skynet；Juan Atkins；Model 500；Cybotron；Infinity",
+  "reissuedBy": "Tresor（2018-12-14，TRESOR105／XW 數位再發）",
+  "g": "b",
+  "artist": "Infiniti",
+  "album": "Skynet",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Tresor（catno Tresor 105 CD，DE 1998-09-29）；美版 X-Sight Records（6385-2）",
+  "why": "Juan Atkins 三個主要掛名裡池中唯一缺席的一個。實掃 seed_cards.json 全 14,424 列：`Juan Atkins` 池中 2 張（《The Berlin Sessions》2005、《Borderland》2013）、`Model 500` 池中 5 張、`Cybotron` 池中 2 張，`Infiniti` 池中 0 張。Infiniti 是他 1990 年代替 Tresor 做的掛名，《Skynet》（Tresor 105）把 1993 年起散在 Metroplex 與 Tresor 的 Infiniti 12 吋推成一張完整的碟，也是他 1990 年代唯一一張不掛 Model 500 的長篇。來源：MB release-group 5792cc9f 轄下四個 release 的 label-info。",
+  "risk": "撞卡：實掃全池，`Infiniti` 0 張；與 c-40（收了 Model 500《Classics》）、c-70、c-82、c-97 逐筆比對皆無。⚠ 掛名易誤拼：`Infiniti`（單 i 結尾）常被寫成 `Infinity`，已補 queryAlias；MB 藝人實體 82999a0b 的 disambiguation 明寫「US techno DJ/producer Juan Atkins」，依裁定 179 回問確認。⚠ 盤名撞名：`Skynet` 是常見詞，跨批鍵是 `infiniti|skynet`，掛名夠特殊不會誤撞。⚠ 同 RG 有四個 release、三個不同年份寫法（1998-09-29 與兩筆只有 1998），年份取 1998。再發 status：四筆皆 Official。封面 CAA：release-group 5792cc9f 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 5792cc9f-813a-36fc-adc6-cf9444f3be42。回問確認：title「Skynet」、artist-credit「Infiniti」、first-release-date 1998-09-29、primary-type Album、secondary-types 空、轄下 4 個 release（1998-09-29 DE Tresor 105 CD／1998 DE Tresor 105／1998 US X-Sight Records 6385-2／2018-12-14 XW Tresor TRESOR105，全數 Official）。藝人 MBID 82999a0b-057c-4635-8e29-7eeb88e0ac0c（Person／United States／1962-09-12／disambiguation「US techno DJ/producer Juan Atkins」），分頁全列 11 個 RG，primary-type=Compilation 0 個。刻意不釘：3043fb83-b9f3-3984-b3a4-d4ca4c2b3112《The Infiniti Collection》（1996，Album+[Compilation]，是 Skynet 之前那批 12 吋的整編）、0f1ae69b-a3aa-4e9b-987d-c80bff54f7ca《Higher》（2022）；Juan Atkins 本人與 Model 500、Cybotron 名下池中已有的碟不重複。"
+ }
+]

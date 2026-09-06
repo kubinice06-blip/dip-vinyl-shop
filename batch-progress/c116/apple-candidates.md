@@ -73,3 +73,18 @@
 ## Government Alpha《Alphaville》1999 — **目錄裡找不到**
 
 ## MSBR《Ultimate Ambience》1992 — **目錄裡找不到**
+
+## Pain Jerk《Aktion Bruit》1995 — **目錄裡找不到**
+
+## ASTRO《Bio-Galaxy》2000 — **目錄裡找不到**
+
+## ハナタラシ《ハナタラシ》1985 — **目錄裡找不到**
+
+## 灰野敬二《滲有無》1990 — **目錄裡找不到**
+
+## High Rise《Psychedelic Speed Freaks》1984 — **目錄裡找不到**
+
+## 不失者《Allegorical Misunderstanding》1993 — **目錄裡找不到**
+
+## Zeni Geva《Nai-Ha》1993
+- `281865258` jp｜《Desire for Agony》1993｜9 軌｜依據：年份
