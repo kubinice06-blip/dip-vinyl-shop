@@ -287,5 +287,100 @@
   "queryAlias": "Pigeon Is a Rat in the Sky；Sister's Barbershop；Sisters Barbershop；언니네이발관；Bidulgineun Haneurui Jwi",
   "reissuedBy": "",
   "g": "b"
+ },
+ {
+  "artist": "언니네 이발관",
+  "album": "꿈의 팝송",
+  "year": 2002,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB 的 KR release 未填廠牌名，只填 catno DK0346",
+  "why": "언니네 이발관 的第三張正規盤。MB first-release-date 記 2002-10（只到月）、轄下一筆 KR release 為 Official、label-info 只填了 catno DK0346 而未填廠牌名；Apple Music 美國店面以「Sister's Barbershop」掛名、題作《Pop Song of the Dream》（collectionId 1340071511、11 軌）。實掃 seed_cards.json 全 14,424 列，這團池中只有 2008 年《가장 보통의 존재》一張；本卡與同批的 1996 年出道盤把 1996→2002→2008 三格串起來。",
+  "risk": "⚠ 封面來源與本批多數卡不同：CAA release-group 端點對這一筆回 404（實測），封面要走 Apple 的 1340071511，manifest 需記下 collectionId（裁定第 96／134 條）。廠牌名 MB 沒有，行文只能寫 catno DK0346，不得斷言發行方。年份 MB 只記到 2002-10，無日。盤名與掛名的跨文字系統兩套問題同出道盤那張。試聽：Apple us 1340071511；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group d9f68416-8ef1-4586-82f6-8fd26ad43ebf。回問確認：title「꿈의 팝송」、artist-credit「언니네 이발관」、first-release-date 2002-10、primary-type Album、secondary-types 空、轄下 2 個 release（KR/Official 1、??/Official 1；KR 筆 label-info 廠牌名為 null、catno DK0346）。刻意不釘：61996e68-73ca-4e31-bec9-39866dd7b5c2《비둘기는 하늘의 쥐》（1996 出道盤，本批另收一卡）、9248fe07-1ba4-4441-87e4-2bab35fadb8c《후일담》（1998）、ed4a179b-d526-415c-81da-7319073a3d55《순간을 믿어요》（2004）、772f05b6-d0c1-339d-96bb-dcc568bc3d58《가장 보통의 존재》（2008，池中已有）。藝人 MBID d63ff8fa-6a05-475e-b758-e23783195efd。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pop Song of the Dream；Sister's Barbershop；언니네이발관 3집；Kkumui Popsong",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "델리스파이스",
+  "album": "Welcome to the DeliHouse",
+  "year": 1999,
+  "genres": [
+   "rock"
+  ],
+  "label": "Music Design Record Company（catno MDCD-0121）",
+  "why": "델리스파이스 在池中已有的同名首張《Deli Spice》(1997) 之後的第二張正規盤。MB first-release-date 記 1999-02-03、轄下兩筆 KR release 皆 Official（首筆 label-info Music Design Record Company、catno MDCD-0121，另一筆 2008-07 再發）；Apple Music 美國店面以「Deli Spice」掛名、題作《Welcome To The Delihouse》（collectionId 1680498181、13 軌）。實掃 seed_cards.json 全 14,424 列，델리스파이스 池中 1 張（1997 年那張，掛名用諺文、盤名用拉丁）；本卡與同批的《D》(2001) 把 1997→1999→2001 三格串起來。",
+  "risk": "⚠ 掛名分裂：MB 藝人實體主名與 artist-credit 都寫拉丁 Deli Spice，池中那張卻掛諺文 델리스파이스。本卡沿用池中的諺文寫法以免生出新的分裂鍵——但這代表 chk-prop 的撞卡比對看不見 MB 那一側，池中那張首張已人工確認不在本批提案內（見 c105/rulings.md 第 2 條）。盤名大小寫兩說（Welcome to the DeliHouse／Welcome To The Delihouse），要做大小寫摺疊。同 release-group 內有 1999 與 2008 兩筆 Official，年份取 first-release-date 1999。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1680498181；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 5ab594dd-ff4d-3223-b2bf-e60418405faa。回問確認：title「Welcome to the DeliHouse」、artist-credit「Deli Spice」、first-release-date 1999-02-03、primary-type Album、secondary-types 空、轄下 2 個 release（皆 KR/Official，日期 1999-02-03 與 2008-07；首筆 label-info Music Design Record Company MDCD-0121）。刻意不釘：f5bab0ab-4b11-312a-a17e-a0e89a7465fc《Deli Spice》（1997 同名首張，池中已有、掛名寫法不同故機器比對不到，人工排除）、6d024861-3b04-4f38-9bcb-f1338cab9835《슬프지만 진실...》（2000 第三張）、b014eb05-bebb-358b-b99b-bb9555cb95d6《Espresso》（2003）、e6f42115-27b4-450f-88fa-bef9560edc8c《聯》（2012 EP）。藝人 MBID 2ccf313f-ec6a-42fc-9de6-e509b806ac45（主名 Deli Spice），名下 8 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Deli Spice；Delispice；Welcome To The Delihouse；델리스파이스 2집；고백",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "델리스파이스",
+  "album": "D",
+  "year": 2001,
+  "genres": [
+   "rock"
+  ],
+  "label": "Fresh Entertainment（catno FLD001）",
+  "why": "델리스파이스 的第四張正規盤。MB first-release-date 記 2001-09-13、轄下一筆 KR release 為 Official（label-info Fresh Entertainment、catno FLD001）。Apple Music 美國店面把同一張碟題成《Drrrr!》（collectionId 1483887005）——逐軌核對通過：13 軌、曲名與曲序完全相同（뚜빠뚜빠띠／항상 엔진을 켜둘께／…／천사의 자장가），每軌長度與 MB 對到秒（207／198／248／252／303／218／369／116／223／330–331／296／335／413），依裁定第 174 條這是以逐軌長度而非軌數確認的同一版。實掃 seed_cards.json 全 14,424 列，델리스파이스 池中 1 張（1997 年首張）；本卡與同批的 1999 年那張把該團前四張裡的三張補齊。",
+  "risk": "⚠ 盤名只有一個字母《D》，任何字串比對都會大規模誤中，配對一律走 collectionId 1483887005；Apple 用的題名《Drrrr!》與 MB 的《D》完全不同字串，兩者都要進 queryAlias（這正是裁定第 152 條「題名各壞一層」的形狀）。掛名分裂問題同前一張（MB 用 Deli Spice、池中用 델리스파이스），本卡沿用池中寫法。封面：CAA release-group 端點回 200（實測）。試聽：kr 店面對 search 端點全空，用 us。",
+  "mbNote": "釘 release-group d78bcbfb-22b4-3cda-948c-82d83ba632fe。回問確認：title「D」、artist-credit「Deli Spice」、first-release-date 2001-09-13、primary-type Album、secondary-types 空、轄下 1 個 release（KR/Official，label-info Fresh Entertainment FLD001，13 軌，曲目已逐軌與 Apple 1483887005 比對相同）。刻意不釘：f5bab0ab-4b11-312a-a17e-a0e89a7465fc《Deli Spice》（1997 同名首張，池中已有）、5ab594dd-ff4d-3223-b2bf-e60418405faa《Welcome to the DeliHouse》（1999，本批另收一卡）、6d024861-3b04-4f38-9bcb-f1338cab9835《슬프지만 진실...》（2000 第三張）、596e47c3-9ecf-4ca5-acd2-df951ecb363b《Open Your Eyes》（2011）。藝人 MBID 2ccf313f-ec6a-42fc-9de6-e509b806ac45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Drrrr!；Deli Spice D；Delispice D；델리스파이스 4집；뚜빠뚜빠띠",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Parannoul",
+  "album": "Let's Walk on the Path of a Blue Cat",
+  "year": 2020,
+  "genres": [
+   "rock"
+  ],
+  "label": "自主發行（MB 的 release label-info 記 [no label]）",
+  "why": "Parannoul 在池中已有的《To See the Next Part of the Dream》(2021) 之前的一張作品。MB first-release-date 記 2020-01-17、轄下四筆 release（XW/Official 2、KR/Official 1、US/Official 1），label-info 皆記 [no label]，是自主發行；KR 那筆日期 2021-08-23，晚於首發。Apple Music 美國店面對應條目 1582156261（10 軌、releaseDate 記 2021）。實掃 seed_cards.json 全 14,424 列，Parannoul 池中只有 2021 年那一張；本卡與同批的《After the Magic》(2023) 把這位的前後各補一格。",
+  "risk": "⚠ 掛名分裂：MB 藝人實體主名是諺文 파란노을（sort-name Parannoul），池中那張卻掛拉丁 Parannoul、Apple 也用 Parannoul。本卡沿用池中與 Apple 的拉丁寫法，諺文進 queryAlias（見 c105/rulings.md 第 1 條）。⚠ 年份分歧：MB first-release-date 記 2020-01-17，Apple releaseDate 記 2021，KR release 日期亦為 2021-08-23；卡單取 MB 的 2020，依裁定第 77 條 Apple 日期只當訊號。盤名的撇號有直彎兩種（Let's／Let’s，MB 用彎撇號），兩種都要掃。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1582156261；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 460e9cc3-c9e2-4cac-a3ba-4885f4da81aa。回問確認：title「Let’s Walk on the Path of a Blue Cat」（MB 用彎撇號）、artist-credit「파란노을」、first-release-date 2020-01-17、primary-type Album、secondary-types 空、轄下 4 個 release（XW/Official 2、KR/Official 1、US/Official 1；label-info 皆 [no label]）。刻意不釘：74769203-cd8e-409b-912e-f1ec476dd716《To See the Next Part of the Dream》（2021，池中已有）、ad2ead35-0251-4846-a977-f64788cda77f《Downfall of the Neon Youth》（2021 合作盤）、b265f92d-51f4-43c1-b80f-fa4507ff81bd《After the Night》（2023 Live）、4bda47b2-52a1-429f-a1e3-1549b84f11a4《Paraglow》（2022 EP 合作盤）。藝人 MBID 7d517c2e-ea8a-4401-935b-42f9343630c7（主名 파란노을），名下 26 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Let’s Walk on the Path of a Blue Cat；파란노을；푸른 고양이의 길을 걷자；Parannoul Blue Cat",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Parannoul",
+  "album": "After the Magic",
+  "year": 2023,
+  "genres": [
+   "rock"
+  ],
+  "label": "自主發行（MB 的 release label-info 記 [no label]）",
+  "why": "Parannoul 在池中已有的《To See the Next Part of the Dream》(2021) 之後的一張。MB first-release-date 記 2023-01-28、轄下七筆 release（KR/Official 2 與一筆 KR 未填 status、XW/Official 1、XW/Pseudo-Release 1、US/Official 2），label-info 皆記 [no label]；Apple Music 美國店面對應條目 1668278693（10 軌）。實掃 seed_cards.json 全 14,424 列，Parannoul 池中只有 2021 年那一張；本卡與同批的 2020 年那張把這位的三格連起來，而不是只有中間一張。",
+  "risk": "⚠ 同年近名別碟：MB 名下 b265f92d《After the Night》（2023-03-25，Album＋Live）與本卡只差一個詞、同年發行，是本張最像的假陽性，任何子字串比對都會中招（裁定第 168 條的形狀）。⚠ 同 release-group 內有一筆 KR release 的 status 為 null，依裁定第 43／78 條不得採為背書，封面與試聽都走標明 Official 的那幾筆。掛名分裂問題同前一張（MB 用諺文 파란노을、池中與 Apple 用 Parannoul），本卡沿用池中寫法。封面：CAA release-group 端點回 200（實測）。試聽：Apple us 1668278693；kr 店面對 search 端點全空。",
+  "mbNote": "釘 release-group 5d005c69-b6c5-41eb-ad1c-b22fa01ab707。回問確認：title「After the Magic」、artist-credit「파란노을」、first-release-date 2023-01-28、primary-type Album、secondary-types 空、轄下 7 個 release（KR/Official 2、KR/status 未填 1、XW/Official 1、XW/Pseudo-Release 1、US/Official 2；label-info 皆 [no label]）。刻意不釘：b265f92d-51f4-43c1-b80f-fa4507ff81bd《After the Night》（2023 Live，與本卡同年、盤名只差一詞）、460e9cc3-c9e2-4cac-a3ba-4885f4da81aa《Let’s Walk on the Path of a Blue Cat》（2020，本批另收一卡）、74769203-cd8e-409b-912e-f1ec476dd716《To See the Next Part of the Dream》（2021，池中已有）、d8733dc4-50d1-4421-bfd8-9b57cc8a535c《Scattersun》（2024）、e3b03ac3-412a-40fb-a4e9-68b15b8fd531《Sky Hundred》（2024）。藝人 MBID 7d517c2e-ea8a-4401-935b-42f9343630c7。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "파란노을 After the Magic；Parannoul After the Magic；Magic ISLAND",
+  "reissuedBy": "",
+  "g": "b"
  }
 ]
