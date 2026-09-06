@@ -530,5 +530,533 @@
   "status": "full",
   "yearVerified": "一致，1999。release-group first-release-date **1999-09-13**、其下四筆 FR／Official release（1999-09 黑膠、1999-09-13 CD，加 2004 與 2005 兩次再壓）、串流店面 fr 1440921029 的 releaseDate **1999-09-13** 與 ℗ 1999 完全相符、條目 infobox 記 1999 年 9 月 13 日。**四處同年同日，是本批對得最齊的一張。** **同名對照組有兩型**：同名單曲〈Sang pour sang〉1999-11-16（在專輯之後），與 2024-04-24 的〈Sang pour sang - Single〉（店面 1740991247，1 軌）。**第 1 軌也與盤名同名。**",
   "notes": "**擋下策展層（序數）**：藝人目錄把本張排第 **53**、條目寫 **42e album studio**，差十一張。卡單 `curatorWhy` 只寫「本批 Hallyday 三張裡最晚的一個節點」，那是批內描述、不是目錄序數，**可用**；但**行文不得寫這張是他的第幾張**。｜**撇號兩種寫法**：來源端曲名用 ASCII 直撇（`Si tu m'aimais`、`Je t'aime comme je respire`），店面同樣 ASCII，**本張兩邊一致**。｜大小寫差異：原盤〈Le Poids de mes maux〉〈Les Larmes de gloire〉〈Partie de cartes〉首字母大寫，店面全小寫。**行文照原盤。**｜配對風險：2024 年的同名單曲 1740991247 會撞盤名，本張必須指名 1440921029。"
+ },
+ {
+  "key": "desc2:Téléphone|Téléphone",
+  "artist": "Téléphone",
+  "album": "Téléphone",
+  "facts": [
+   {
+    "f": "release-group 655da2c6 的欄位：title「Téléphone」、artist-credit「Téléphone」（藝人 MBID a4e34a43）、first-release-date **1977**、primary-type Album、secondary-types **空**。轄下 5 筆 release **全部 FR、全部 Official、全部 9 軌**：1977 的 Pathé Marconi EMI 2C 066 - 14.506（12 吋）、1987 的 EMI France 1598862（CD，**title 作「Téléphone “Anna”」**）、1987 的 Pathé Marconi EMI 1598862（CD）、1996 的 Virgin 8420812（**HDCD**，title 作「Anna」）、2015 的 Parlophone／Warner Music France 0825646085453（CD）。**同一張碟在不同年份被掛過三個盤名：Téléphone、Téléphone “Anna”、Anna。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/655da2c6-0818-3735-8f2b-e20882ba16e5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1977 FR 原盤（Pathé Marconi EMI 2C 066 - 14.506，12 吋）的逐軌曲目與長度：1〈Anna〉3:02、2〈Sur la route〉4:04、3〈Dans ton lit〉3:31、4〈Le vaudou (est toujours debout)〉2:16、5〈Téléphomme〉4:40、6〈Hygiaphone〉2:54、7〈Métro (C'est trop)〉4:27、8〈Prends ce que tu veux〉3:24、9〈Flipper〉6:04。**只有 9 軌、總長約 34 分鐘；末軌〈Flipper〉6:04 比其他八軌任何一首都長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=655da2c6-0818-3735-8f2b-e20882ba16e5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1055763940：collectionName「Telephone (Remasterisé en 2015)」、artistName「Téléphone」、releaseDate **1977-11-25**、copyright「℗ 1977, 2015 Parlophone / Warner Music France, a Warner Music group Company」、trackCount 9。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲名與曲序與 1977 原盤**逐位置相符**、逐軌長度差都在 2 秒內，**每一軌的曲名後面都掛「(Remasterisé en 2015)」**。**上架的是 2015 重製版、對應來源端那筆 2015 Parlophone CD；曲目內容與 1977 原盤相同。**",
+    "src": "https://itunes.apple.com/lookup?id=1055763940&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是樂團的 **premier album**（首張專輯），1977 年 11 月 25 日在法國發行，格式 33 tours，廠牌 Pathé-Marconi，製作 **Mike Thorne**，總長記 34 分 10 秒，曲風記 rock français／punk rock／hard rock，詞曲掛 Jean-Louis Aubert 與 Louis Bertignac。**條目說這張有時被叫做《Anna》，取自第一首歌的名字。** 單曲三筆：1977 年夏天的現場版〈Hygiaphone〉/〈Métro (c'est trop)〉、1978 的〈Anna〉/〈Hygiaphone〉、1978 的〈Métro (c'est trop)〉。",
+    "src": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9phone_(album)"
+   },
+   {
+    "f": "同一條目的 Contexte 與 Enregistrement 兩節：樂團 1976 年 11 月 12 日在巴黎 Centre américain 的演出上成軍；1977 年 6 月 7 日因 Blondie 缺席而遞補上 Olympia，為美國樂團 Television 開場，隔天就在 Bus Palladium 錄下〈Hygiaphone〉與〈Métro (c'est trop)〉的現場版，自資壓兩千張 45 轉、在自己的演出散場時賣掉。1977 年 8 月 25 日與 Pathé-Marconi 簽約。**錄音改到倫敦的 Eden Studio**（製作人希望用他自己的倫敦技術團隊），10 月底開錄、做了十七天；**廠牌要求樂團改唱英語，Mike Thorne 說這些歌留在法語更好**。混音在 11 月第二週趕工於倫敦 Advision，母帶 11 月 18 日由 Chris Blair 在 Abbey Road 完成——因為樂團訂了 12 月 12 日的免費周年演出，唱片必須在那之前上架。",
+    "src": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9phone_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 **35 個 release-group**，其中 primary-type Album 且 secondary-types 為空的**只有 5 張**：**《Téléphone》1977**、《Crache ton venin》1979-04-02、《Au cœur de la nuit》1980、《Dure Limite》1982、《Un autre monde》1984-05-07。**本張排第 1，與條目的 premier album 一致；整個目錄的錄音室盤就這五張，全部落在 1977–1984 的七年內。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a4e34a43-d8de-48eb-9ec6-349b62756590&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌要他們改唱英語，製作人說這些歌留在法語更好",
+   "十七天錄完、混音趕工，只因為十二月十二日那場免費演出必須有唱片"
+  ],
+  "sound": "1977 年 Pathé Marconi EMI 的 12 吋只有 9 軌、總長 34 分 10 秒，單軌 2:16 到 6:04，末軌〈Flipper〉一首就六分鐘。錄音在倫敦的 Eden Studio、十七天做完，製作 Mike Thorne；混音在倫敦 Advision 趕工，母帶 11 月 18 日由 Chris Blair 在 Abbey Road 完成。條目把曲風記成 rock français、punk rock 與 hard rock，詞曲掛 Jean-Louis Aubert 與 Louis Bertignac。這張碟在不同年份被掛過三個盤名——1977 的《Téléphone》、1987 CD 的《Téléphone “Anna”》、1996 HDCD 的《Anna》——都是同樣的 9 軌。串流上架的是 2015 重製版。",
+  "keyTracks": [
+   "Anna",
+   "Hygiaphone",
+   "Flipper"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977。release-group first-release-date 只記到年份 **1977**、其下最早的 release 是 1977 的 Pathé Marconi EMI 2C 066 - 14.506（FR／Official／12 吋 9 軌）。**日期靠另兩處補齊且互相吻合**：條目 infobox 記 1977 年 11 月 25 日、串流店面 fr 1055763940 的 releaseDate 也是 **1977-11-25**，℗ 欄寫「℗ 1977, 2015」——**原錄音年 1977 與重製年 2015 並列**。**同名先行單曲：有**——1977 年夏天自資的現場 45 轉（〈Hygiaphone〉/〈Métro (c'est trop)〉）在專輯之前，但**不同名**；**同名的是藝人本身**（樂團名＝盤名），字串比對會把整個藝人目錄都撈進來。",
+  "notes": "**配對覆核（本批 6 張未 ready 之一）**：探測層判本張 unavailable，回撈候選 `1055763940` 經逐軌覆核**成立**——fr 店面 9 軌、曲名曲序與 1977 原盤逐位置相符、長度差 2 秒內。**這是 2015 重製版（每軌曲名帶「(Remasterisé en 2015)」），不是 1977 原壓，但曲目內容相同。可補的 collectionId：fr `1055763940`，9 軌，9 軌全有試聽。** 回撈清單裡另一筆 `1244745246`（《Téléphone! - Single》1977，2 軌）**不是本張，是單曲，必須排除**。｜**配對風險（同名藝人）**：盤名＝樂團名，藝人目錄裡另有《Au cœur de Telephone》三種精選（35／50／77 軌）與《Telephone Illimité》（34 軌）會被字串比對撈到。**必須指名 collectionId。**｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`Métro (C’est trop)`），店面用 ASCII（`Métro c'est trop`）。`keyTracks` 三首都不含撇號、不受影響。｜**盤名正字**：店面把盤名寫成無重音的「Telephone」，卡片與行文照原盤的「Téléphone」。｜曲名差異：原盤〈Le vaudou (est toujours debout)〉有括號、店面無括號；原盤〈Métro (C'est trop)〉、店面〈Métro c'est trop〉。**行文照原盤。**"
+ },
+ {
+  "key": "desc2:Téléphone|Au cœur de la nuit",
+  "artist": "Téléphone",
+  "album": "Au cœur de la nuit",
+  "facts": [
+   {
+    "f": "release-group 29f067cf 的欄位：title「Au cœur de la nuit」、artist-credit「Téléphone」、first-release-date **1980**、primary-type Album、secondary-types **空**。轄下 5 筆 release **全部 FR、全部 13 軌**：1980 的 Pathé Marconi EMI 2C 070 72279（12 吋，Official）、1990 的 EMI France 7489342（CD，Official）、1996 的 Virgin 8420832（HDCD，Official）、2006 的 EMI Music France（CD，Official）、2015 的 Parlophone 0825646085415／Warner Music France（CD，**NOSTATUS**）。**主要壓片皆 Official，只有 2015 那筆沒有 status。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/29f067cf-d638-33fa-8272-05e8db5a051d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1980 FR 原盤（Pathé Marconi EMI 2C 070 72279，12 吋）的逐軌曲目與長度：1〈Au cœur de la nuit〉3:29、2〈Ploum ploum〉1:55、3〈Pourquoi n'essaies-tu pas ?〉3:24、4〈Seul〉3:02、5〈Laisse tomber〉4:24、6〈Un homme + un homme〉2:00、7〈Les Ils et les Ons〉2:59、8〈Argent trop cher〉4:08、9〈Ordinaire〉2:38、10〈2000 nuits〉2:28、11〈Fleur de ma ville〉3:15、12〈La Laisse〉3:24、13〈Le Silence〉4:36。**13 軌是三張裡最多的一張，但單軌很短——最短〈Ploum ploum〉1:55、最長〈Le Silence〉4:36，全碟約 41 分 43 秒。第 1 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=29f067cf-d638-33fa-8272-05e8db5a051d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1056175321：collectionName「Au cœur de la nuit (Remasterisé en 2015)」、releaseDate **1980-10-25**、copyright「℗ 1980, 2015 Parlophone / Warner Music France, a Warner Music Group Company」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名與曲序與 1980 原盤**逐位置相符**、逐軌長度差都在 2 秒內，每軌曲名後掛「(Remasterisé en 2015)」。**上架的是 2015 重製版，曲目內容與 1980 原盤相同。**",
+    "src": "https://itunes.apple.com/lookup?id=1056175321&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox：本張是樂團的 **troisième album**（第三張專輯），1980 年 10 月 25 日發行；錄音在 1980 年——**7 月在巴黎的 Studios Pathé-Marconi、8 至 9 月在紐約的 Electric Lady Studios**；製作 **Martin Rushent**；總長記 41 分 43 秒；曲風記 rock／punk rock／hard rock；廠牌 EMI。單曲一筆：〈Argent trop cher〉/〈Au cœur de la nuit〉1980。前一張是 1979 的《Crache ton venin》、後一張是 1982 的《Dure Limite》。",
+    "src": "https://fr.wikipedia.org/wiki/Au_c%C5%93ur_de_la_nuit_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 35 個 release-group，其中 primary-type Album 且 secondary-types 為空的只有 5 張：《Téléphone》1977、《Crache ton venin》1979-04-02、**《Au cœur de la nuit》1980**、《Dure Limite》1982、《Un autre monde》1984-05-07。**本張排第 3，與條目的 troisième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a4e34a43-d8de-48eb-9ec6-349b62756590&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一 release-group 的廠牌線：1980 原盤與 1990 CD 掛 Pathé Marconi EMI／EMI France，1996 的 HDCD 掛 Virgin，2006 掛 EMI Music France，2015 那筆掛 Parlophone 與 Warner Music France 並列——**同一張碟的再發權在三十五年裡從 EMI 系統轉到 Warner 系統**，這也是串流上架版本掛 Warner ℗ 的原因。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=29f067cf-d638-33fa-8272-05e8db5a051d&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十三首裡最短的〈Ploum ploum〉只有 1 分 55 秒",
+   "七月在巴黎錄底，八九月飛去 Electric Lady 把它做完"
+  ],
+  "sound": "1980 年 Pathé Marconi EMI 的 12 吋 13 軌、總長 41 分 43 秒。曲子普遍短——〈Ploum ploum〉1:55、〈Un homme + un homme〉2:00、〈2000 nuits〉2:28，最長的〈Le Silence〉也只有 4:36。錄音分兩段：1980 年 7 月在巴黎的 Studios Pathé-Marconi，8 到 9 月在紐約的 Electric Lady Studios，製作 Martin Rushent。條目把曲風記成 rock、punk rock 與 hard rock。第 1 軌與盤名同名。再發線橫跨三個廠牌系統：1990 的 EMI CD、1996 的 Virgin HDCD、2015 的 Parlophone／Warner，串流上架的是最後這一版的 2015 重製。",
+  "keyTracks": [
+   "Au cœur de la nuit",
+   "Argent trop cher",
+   "Le Silence"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1980。release-group first-release-date 只記到年份 **1980**、其下最早的 release 是 1980 的 Pathé Marconi EMI 12 吋 13 軌。**日期靠另兩處補齊且互相吻合**：條目 infobox 記 1980 年 10 月 25 日、串流店面 fr 1056175321 的 releaseDate 也是 **1980-10-25**；℗ 欄寫「℗ 1980, 2015」，原錄音年與重製年並列。**同名先行單曲：無**（1980 的單曲是〈Argent trop cher〉/〈Au cœur de la nuit〉雙面曲，**B 面與專輯同名**）。**第 1 軌也與盤名同名。**",
+  "notes": "**配對覆核（本批 6 張未 ready 之一）**：探測層判本張 unavailable，回撈候選 `1056175321` 經逐軌覆核**成立**——fr 店面 13 軌、曲名曲序與 1980 原盤逐位置相符、長度差 2 秒內。**可補的 collectionId：fr `1056175321`，13 軌，13 軌全有試聽。** 回撈清單裡另一筆 `1056184622`（《Crache ton venin (Remasterisé en 2015)》1979，9 軌）**是姊妹作、不是本張，必須排除**——那張已在池中。｜**撇號兩種寫法**：來源端寫〈Pourquoi n'essaies‐tu pas ?〉用的是 **U+2010 HYPHEN**（不是 ASCII 連字號），店面作〈Pourquoi n'essaies-tu pas ?〉用 ASCII；撇號兩邊都是 ASCII 直撇。**`keyTracks` 與行文一律 ASCII。**｜大小寫差異：原盤〈Les Ils et les Ons〉〈La Laisse〉〈Le Silence〉首字母大寫，店面全小寫。**行文照原盤。**｜**盤名的 œ 連字**：`cœur` 用的是 U+0153，來源端與店面一致，**不要拆成 oe**。"
+ },
+ {
+  "key": "desc2:Téléphone|Dure Limite",
+  "artist": "Téléphone",
+  "album": "Dure Limite",
+  "facts": [
+   {
+    "f": "release-group 7118f81b 的欄位：title「Dure Limite」、artist-credit「Téléphone」、first-release-date **1982**、primary-type Album、secondary-types **空**。轄下 6 筆 release **全部 FR、全部 10 軌**：1982 的 **Virgin 201 915**（12 吋，Official）、1982 的 Virgin 869802（CD，Official）、1984 的 Virgin 30008（CD，Official）、1996 的 Virgin 8420842（HDCD，Official）、2006 的 CD（Official）、2015 的 Parlophone France 0825646085392／Warner Music France（CD，**NOSTATUS**）。**原盤的廠牌是 Virgin，不再是前兩張的 Pathé Marconi EMI。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7118f81b-77ab-3553-92d3-214bfa03312c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1982 FR 原盤（Virgin 201 915，12 吋）的逐軌曲目與長度：1〈Dure Limite〉4:38、2〈Ça (c'est vraiment toi)〉4:28、3〈Jour contre jour〉3:37、4〈Ex-Robin des Bois〉3:26、5〈Le Chat〉4:55、6〈Serrez〉3:59、7〈Le Temps〉4:18、8〈Cendrillon〉3:58、9〈Juste un autre genre〉3:44、10〈Ce soir est ce soir〉6:23。**10 軌、總長約 43 分半，末軌〈Ce soir est ce soir〉6:23 最長；第 1 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7118f81b-77ab-3553-92d3-214bfa03312c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1056187455：collectionName「Dure limite (Remasterisé en 2015)」、releaseDate **1982-06-03**、copyright「℗ 1982, 2015 Parlophone / Warner Music France, a Warner Music Group Company」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1982 原盤**逐位置相符**、逐軌長度差都在 2 秒內，每軌曲名後掛「(Remasterisé en 2015)」。**上架的是 2015 重製版，曲目內容與 1982 原盤相同。**",
+    "src": "https://itunes.apple.com/lookup?id=1056187455&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是樂團的 **quatrième album studio**（第四張錄音室專輯），1982 年 6 月 3 日發行；錄音在 1982 年 3 至 4 月、地點是**多倫多近郊的 ESP Studios**；製作 **Bob Ezrin**；總長記 43 分 28 秒；曲風記 rock／punk rock／hard rock；**廠牌欄明列「Virgin（原版）／EMI（再版）」**。單曲三筆：〈Ça (c'est vraiment toi)〉1982 年 6 月、〈Cendrillon〉1982 年 10 月、〈Jour contre jour〉/〈Dure limite〉1982。",
+    "src": "https://fr.wikipedia.org/wiki/Dure_Limite"
+   },
+   {
+    "f": "同一條目的 Analyse artistique 節：整張的氣氛比前一張《Au cœur de la nuit》明亮得多，**合成器是樂團第一次用**。〈Le Chat〉由 **Corine Marienneau** 作詞作曲並主唱；〈Cendrillon〉由 **Louis Bertignac** 作詞作曲並主唱，是一則走向噩夢的童話，他後來說寫的時候想的是 Romy Schneider。〈Ex-Robin des bois〉是米特朗當選一年後對社會黨支持者幻滅的政治諷刺。**末軌〈Ce soir est ce soir〉的旋律線由 Patti Smith Group 的吉他手 Ivan Král 寫**（部分壓片把名字誤印成 Yvan Kral），條目說 Iggy Pop 曾婉拒自己使用這條旋律；該曲含 AC/DC〈You Shook Me All Night Long〉第二段主歌的片段，**因為版權未解決，首次出 CD 時這首被剪短**。錄音期間寫的〈Je brûle〉（Marienneau）與〈Au bout du rouleau〉（Aubert）被製作人認為不夠「國際」而未收，2003 年才在《Intégrale studio》盒裝發表。",
+    "src": "https://fr.wikipedia.org/wiki/Dure_Limite"
+   },
+   {
+    "f": "藝人端點分頁全列 35 個 release-group，其中 primary-type Album 且 secondary-types 為空的只有 5 張：《Téléphone》1977、《Crache ton venin》1979-04-02、《Au cœur de la nuit》1980、**《Dure Limite》1982**、《Un autre monde》1984-05-07。**本張排第 4，與條目的 quatrième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a4e34a43-d8de-48eb-9ec6-349b62756590&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "末軌的旋律是 Patti Smith Group 的吉他手寫的，Iggy Pop 婉拒過同一條旋律",
+   "十首裡有兩首不是主唱唱的：貝斯手寫唱一首、吉他手寫唱一首"
+  ],
+  "sound": "1982 年 Virgin 201 915 的 12 吋 10 軌、總長 43 分 28 秒，單軌 3:26 到 6:23。1982 年 3 至 4 月錄在多倫多近郊的 ESP Studios，製作 Bob Ezrin。條目說氣氛比前一張明亮很多，合成器是樂團第一次用。分唱也是這張的特徵：〈Le Chat〉由貝斯手 Corine Marienneau 寫並主唱，〈Cendrillon〉由吉他手 Louis Bertignac 寫並主唱。末軌〈Ce soir est ce soir〉的旋律線出自 Patti Smith Group 的 Ivan Král，曲中含 AC/DC〈You Shook Me All Night Long〉的片段、首次出 CD 時因版權未解而被剪短。廠牌從前兩張的 Pathé Marconi EMI 換成 Virgin。",
+  "keyTracks": [
+   "Ça (c'est vraiment toi)",
+   "Cendrillon",
+   "Ce soir est ce soir"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982。release-group first-release-date 只記到年份 **1982**、其下最早的兩筆是 1982 的 Virgin 201 915（12 吋）與 Virgin 869802（CD），皆 FR／Official／10 軌。**日期靠另兩處補齊且互相吻合**：條目 infobox 記 1982 年 6 月 3 日、串流店面 fr 1056187455 的 releaseDate 也是 **1982-06-03**；℗ 欄寫「℗ 1982, 2015」。**同名先行單曲：有一筆同名雙面曲**——1982 的〈Jour contre jour〉/〈Dure limite〉，**B 面與專輯同名**；**第 1 軌也與盤名同名**。",
+  "notes": "**配對覆核（本批 6 張未 ready 之一）**：探測層判本張 unavailable，回撈候選 `1056187455` 經逐軌覆核**成立**——fr 店面 10 軌、曲名曲序與 1982 原盤逐位置相符、長度差 2 秒內。**可補的 collectionId：fr `1056187455`，10 軌，10 軌全有試聽。**｜**配對風險**：藝人目錄裡另有 `711303183`《Dure limite / Un autre monde / Le live》（1997，37 軌三合一），**盤名含本張，子字串比對會配錯**。｜`curatorWhy` 的「從 Pathé Marconi EMI 轉到 Virgin 之後的第一張」查證屬實：本張原盤 catno 是 Virgin 201 915、條目廠牌欄也明列「Virgin（原版）」，而前一張《Au cœur de la nuit》1980 原盤是 Pathé Marconi EMI 2C 070 72279。**但「第一張」這個序數只在「Virgin 名下」的限定下成立，行文要寫就得把限定寫清楚。**｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`Ça (c’est vraiment toi)`），店面用 ASCII 且拿掉括號（`Ça c'est vraiment toi`）。**`keyTracks` 照原盤的括號、撇號用 ASCII。**｜連字號：原盤〈Ex‐Robin des Bois〉用 U+2010，店面用 ASCII。**行文一律 ASCII。**"
+ },
+ {
+  "key": "desc2:Les Rita Mitsouko|Rita Mitsouko",
+  "artist": "Les Rita Mitsouko",
+  "album": "Rita Mitsouko",
+  "facts": [
+   {
+    "f": "release-group 183a97ea 的欄位：title「Rita Mitsouko」、artist-credit「Les Rita Mitsouko」（藝人 MBID 0bfe360b）、first-release-date **1984**、primary-type Album、secondary-types **空**。轄下 5 筆 release 全部 Official：1984 的 Virgin 70238（FR，**12 吋 9 軌**）、1984 的 Virgin France S.A. CDV 30050（FR，**CD 14 軌**）、2012 的 Virgin 869072（FR，CD 14 軌）、2021-04-08 的 Because Music（XW，數位 14 軌）、無日期的 Virgin France 869072（FR，CD 14 軌）。**黑膠 9 軌、CD 14 軌，同年就分成兩種內容。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/183a97ea-647b-3365-8b59-11dd35f5f94c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1984 FR 黑膠（Virgin 70238，12 吋）的逐軌曲目與長度：1〈Restez avec moi〉4:07、2〈Jalousie〉4:25、3〈Le Futur n°4〉3:30、4〈La Fille venue du froid〉6:55、5〈Yaktagan〉3:23、6〈In My Tea〉2:56、7〈Marcia Baïla〉5:30、8〈Oum Khalsoum〉4:05、9〈Amnésie〉2:55。**黑膠只有 9 軌，〈Marcia Baïla〉排第 7。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=183a97ea-647b-3365-8b59-11dd35f5f94c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1984 FR CD（Virgin France S.A. CDV 30050）在同樣的 9 軌之後**多五軌**：10〈Don't Forget The Nite〉2:42、11〈Galoping〉5:02、12〈Dans la steppe〉4:12、13〈Minuit dansant〉4:02、14〈Aïe (Kriptonite Miss Spleïn)〉5:10，前 9 軌的曲名與曲序與黑膠相同、長度差在 6 秒內。**14 軌是 CD 版的內容，不是黑膠原盤。**",
+    "src": "https://musicbrainz.org/ws/2/release/94c86382-6680-4beb-9d23-a0a18528b2e0?fmt=json&inc=media+labels+recordings+release-groups"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1231273848：collectionName「Rita Mitsouko」、releaseDate 1984-01-04、copyright「℗ 1984 Because Music / Six Sarl」、trackCount 14。`entity=song` **攤得出 14 軌、14 軌全部有 previewUrl**，曲名與曲序與 1984 的 **CD 版**逐位置相符（末軌店面寫〈Aïe (Kryptonite Miss Spleïn)〉、CD 寫〈Aïe (Kriptonite Miss Spleïn)〉，差一個字母），逐軌長度比 CD 各長 2–6 秒。**上架的是 14 軌 CD 版，不是 9 軌黑膠。**",
+    "src": "https://itunes.apple.com/lookup?id=1231273848&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Les Rita Mitsouko 的 **premier album**（首張專輯），1984 年春天發行，廠牌 Virgin Records，**製作 Conny Plank 與樂團自己**，曲風記 new wave／synth pop／rock expérimental。條目說這張收了他們最有名的〈Marcia Baïla〉。編制只有兩人：**Catherine Ringer**（人聲、鋼琴、Elka Rhapsody、風琴、Oberheim／VCS3／ARP 合成器、吉他、木吉他、Höfner 貝斯、節奏機、鼓）與 **Fred Chichin**（六弦與十二弦吉他、Höfner 貝斯、Oberheim／VCS3／Emulator 合成器、鼓、鈴鼓、鐘）。",
+    "src": "https://fr.wikipedia.org/wiki/Rita_Mitsouko_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 **44 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **7 張**：**《Rita Mitsouko》1984**、《The No Comprendo》1986、《Marc & Robert》1988-11-07、《Système D》1993-11、《Cool Frénésie》2000-03-07、《La Femme Trombone》2002-09、《Variéty》2007-04-23。**本張排第 1，與條目的 premier album 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0bfe360b-4abf-4750-962c-981cc5bfc4cf&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "兩個人包辦全部樂器：合成器、貝斯、鼓、六弦與十二弦吉他都自己來",
+   "同一年的黑膠九首、CD 十四首，多出來的五首只在 CD 上"
+  ],
+  "sound": "1984 年 Virgin 的 12 吋只有 9 軌，同年的 CD（CDV 30050）在後面補五軌成 14 軌，串流上架的是 14 軌那一版。黑膠單軌 2:55 到 6:55，最長的〈La Fille venue du froid〉6:55，最有名的〈Marcia Baïla〉排第 7。製作是 Conny Plank 與樂團共同掛名。編制就 Catherine Ringer 與 Fred Chichin 兩個人——Ringer 的人聲加鋼琴、Elka Rhapsody、Oberheim／VCS3／ARP、Höfner 貝斯與鼓，Chichin 的六弦與十二弦吉他、Emulator 與鼓。條目把曲風記成 new wave、synth pop 與 rock expérimental。",
+  "keyTracks": [
+   "Marcia Baïla",
+   "Restez avec moi",
+   "La Fille venue du froid"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。release-group first-release-date 只記到年份 **1984**、其下 1984 的兩筆 FR／Official release（12 吋 9 軌與 CD 14 軌）同年、串流店面 fr 1231273848 的 releaseDate 1984-01-04 與 ℗ 1984 相符，條目寫 1984 年春天。**「1 月 4 日」是店面填充值，條目說的是春天，行文只寫 1984。** **同名對照組：盤名與樂團名幾乎相同**（樂團 Les Rita Mitsouko／盤名 Rita Mitsouko），**字串比對會把整個藝人目錄撈進來**。",
+  "notes": "**配對覆核（版本差異）**：fr `1231273848` 是 **14 軌的 CD 版**，1984 年的 12 吋黑膠只有 9 軌。**行文不得拿店面的 14 軌當黑膠原盤曲目**（裁定 141）；要提〈Don't Forget The Nite〉〈Galoping〉〈Dans la steppe〉〈Minuit dansant〉〈Aïe〉這五首，必須說明是 CD 版才有。｜**撇號**：本張曲名不含撇號，兩種寫法問題不觸及。｜**掛名差異**：來源端的 artist-credit 是「Les Rita Mitsouko」（帶 Les），條目 infobox 的 artiste 欄卻寫「Rita Mitsouko」（不帶 Les）；卡單走「Les Rita Mitsouko」。**行文提樂團一律寫 Les Rita Mitsouko，提盤名寫《Rita Mitsouko》。**｜末軌拼法兩種：CD 作〈Aïe (Kriptonite Miss Spleïn)〉、店面作〈Aïe (Kryptonite Miss Spleïn)〉（Kri／Kry）。**行文照 CD 的 Kriptonite。**｜條目該頁的參考連結裡有唱片資料庫網址，**不作為本卡的 src**。"
+ },
+ {
+  "key": "desc2:Les Rita Mitsouko|The No Comprendo",
+  "artist": "Les Rita Mitsouko",
+  "album": "The No Comprendo",
+  "facts": [
+   {
+    "f": "release-group ff2ebcc7 的欄位：title「The No Comprendo」、artist-credit「Les Rita Mitsouko」、first-release-date **1986**、primary-type Album、secondary-types **空**。轄下 **9 筆 release、全部 Official**，國別橫跨 **US（Virgin 7 90616-1，12 吋 10 軌）、FR（Virgin France 70465，12 吋 10 軌；Virgin France 30031 的 CD 有 11 軌與 10 軌兩種）、DE（Virgin France 207 679，12 吋 10 軌）**，另有 2016-01-22 的 DE 數位版（10 軌）與 2019-09-27 的 FR「Remastered 2019」（12 吋 10 軌＋CD 10 軌，Because Music BEC5650059）。**同一張碟在 1986 年就同時有美國、法國、德國三個國別的 Official 壓片。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/ff2ebcc7-9dff-32b4-a7cd-3f3136ba9bee?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1986 US 版（Virgin 7 90616-1，12 吋）的逐軌曲目與長度：1〈Les Histoires D'a〉4:04、2〈Andy〉5:30、3〈C'Est Comme Ça〉4:41、4〈Vol de Nuit〉4:12、5〈Someone to Love〉3:04、6〈Stupid Anyway〉4:45、7〈Un Soir Un Chien〉5:44、8〈Bad Days〉5:03、9〈Tonite〉5:11、10〈Nuit D'Ivresse〉3:43。**10 軌，法語與英語標題各半；最長〈Un soir un chien〉5:44、最短〈Someone to Love〉3:04。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ff2ebcc7-9dff-32b4-a7cd-3f3136ba9bee&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1231274088：collectionName「The No Comprendo」、releaseDate 1986-09-01、copyright「℗ 1986 Because Music / Six Sarl」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1986 的 10 軌版**逐位置相符**、逐軌長度差在 9 秒內（第 3 軌〈C'est comme ça〉店面 4:54、來源端 4:41 差最多）。**上架的是 10 軌版；來源端另有一筆 11 軌的 FR CD（Virgin France 30031），不是這一版。**",
+    "src": "https://itunes.apple.com/lookup?id=1231274088&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Les Rita Mitsouko 的 **deuxième album**（第二張專輯），1986 年 9 月 20 日發行，廠牌 Virgin Records，**製作 Tony Visconti 與 Fred Chichin、Catherine Ringer 三人共同掛名**，曲風記 new wave／pop rock／synthpop。條目說這張收了他們最有名的幾首之一〈C'est comme ça〉。",
+    "src": "https://fr.wikipedia.org/wiki/The_No_Comprendo"
+   },
+   {
+    "f": "同一條目的 Musiciens 節（逐曲分工）：Fred Chichin 幾乎包辦吉他、貝斯與鼓（各有例外曲目），並在〈Andy〉上開口唱；Catherine Ringer 除人聲外另彈吉他、鍵盤、〈C'est comme ça〉的貝斯、〈Someone to Love〉的鼓，以及〈Un soir un chien〉上的鋼琴、小提琴、大提琴與康加鼓。**製作人 Tony Visconti 自己下場演奏**：〈Les histoires d'A〉的貝斯與木吉他、〈Andy〉的低音提琴、〈C'est comme ça〉的鈴鼓、〈Vol de nuit〉的程式吉他、〈Someone to Love〉的鼓、〈Un soir un chien〉的小提琴與大提琴。客席另有 Graham Ward（鼓）、Bobby Valentino（小提琴）、Sam Smith（〈C'est comme ça〉的主奏吉他）、Luis Jardim（打擊）與 Andy Mackintosh、Pete Beachill、Guy Barker 三人的薩克斯風／長號／小號（都在〈Nuit d'ivresse〉）。",
+    "src": "https://fr.wikipedia.org/wiki/The_No_Comprendo"
+   },
+   {
+    "f": "藝人端點分頁全列 44 個 release-group，錄音室盤（primary-type Album＋secondary-types 空）共 7 張：《Rita Mitsouko》1984、**《The No Comprendo》1986**、《Marc & Robert》1988-11-07、《Système D》1993-11、《Cool Frénésie》2000-03-07、《La Femme Trombone》2002-09、《Variéty》2007-04-23。**本張排第 2，與條目的 deuxième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0bfe360b-4abf-4750-962c-981cc5bfc4cf&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "製作人 Tony Visconti 不只坐控制室，貝斯、低音提琴、小提琴、鼓都自己下去彈",
+   "十首裡有一首是吉他手開口唱的，其餘全是主唱"
+  ],
+  "sound": "1986 年的 12 吋 10 軌，單軌 3:04 到 5:44；同年另有一種 11 軌的法國 CD。製作掛 Tony Visconti 與 Fred Chichin、Catherine Ringer 三人。Visconti 不只做製作——〈Les histoires d'A〉的貝斯與木吉他、〈Andy〉的低音提琴、〈C'est comme ça〉的鈴鼓、〈Un soir un chien〉的小提琴與大提琴都是他彈的。Ringer 除人聲外包了吉他、鍵盤與幾軌的貝斯與鼓，Chichin 在〈Andy〉上開口唱。〈Nuit d'ivresse〉另找了薩克斯風、長號、小號三把管樂。曲目法語英語各半，條目把曲風記成 new wave、pop rock 與 synthpop。",
+  "keyTracks": [
+   "C'est comme ça",
+   "Andy",
+   "Un soir un chien"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date 只記到年份 **1986**、其下 1986 的四筆 Official release（US／FR／DE 三國）同年、串流店面 fr 1231274088 的 releaseDate 1986-09-01 與 ℗ 1986 相符，條目寫 1986 年 9 月 20 日。**店面的 9 月 1 日與條目的 9 月 20 日不同，行文只寫年份 1986。** **同名先行單曲：無**。",
+  "notes": "**擋下策展層一處（『唯一』）**：卡單 `curatorWhy` 寫「這張是三張裡唯一走出法國市場的一張」。**與來源相反**——同一批三張裡，1988 的《Marc & Robert》轄下有一筆 **GB 的 Official CD**（Virgin CDV 2572，1988，11 軌）。本張確實有 US 與 DE 的 1986 Official 壓片，但**不是三張裡唯一走出法國的**。**行文不得寫「唯一」。**｜**撇號兩種寫法**：US 版曲名用 ASCII 直撇且全大寫式排版（`Les Histoires D'a`、`C'Est Comme Ça`、`Nuit D'Ivresse`），店面用 ASCII 但正常大小寫（`Les histoires d'a`、`C'est comme ça`）。**`keyTracks` 已按店面／條目的正常大小寫＋ASCII 撇號寫。**｜曲名大小寫：條目寫〈Les histoires d'A.〉（帶句點、大寫 A），來源端與店面都不帶句點。**行文用〈Les histoires d'A〉即可，不要寫成 d'a。**｜**版本差異**：來源端另有 11 軌的 FR CD，店面上架的是 10 軌版，**行文不得說「這張有十一首」**。"
+ },
+ {
+  "key": "desc2:Les Rita Mitsouko|Marc & Robert",
+  "artist": "Les Rita Mitsouko",
+  "album": "Marc & Robert",
+  "facts": [
+   {
+    "f": "release-group 78f1ad77 的欄位：title「Marc & Robert」、artist-credit「Les Rita Mitsouko」、first-release-date **1988-11-07**、primary-type Album、secondary-types **空**。轄下 6 筆 release 全部 Official：1988 的 Virgin 259 440-222／CDV 2572（FR，CD 11 軌）、1988 的 **Virgin CDV 2572（GB，CD 11 軌）**、1988 的 Virgin France 70635（FR，**12 吋 10 軌**）、1988-11-07 的 Virgin France 30635（FR，CD 11 軌）、2021-04-08 的 Because Music（XW，數位 11 軌）、無日期的 Virgin 869082（FR，CD 11 軌）。**黑膠 10 軌、CD 11 軌；英國有自己的一筆 Official CD。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/78f1ad77-9fd4-3396-9c92-a4c47c947c0c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 FR CD（Virgin 259 440-222／CDV 2572）的逐軌曲目與長度：1〈Hip Kit〉4:58、2〈Smog〉3:05、3〈Mandolino City〉2:13、4〈Le petit train〉5:48、5〈Perfect Eyes〉3:33、6〈Tongue Dance〉4:45、7〈Singing in the Shower〉4:24、8〈Petite fille princesse〉3:25、9〈Harpie & Harpo〉2:55、10〈Ailleurs〉3:50、11〈Live in Las Vegas〉4:18。**11 軌、總長約 43 分 10 秒；12 吋黑膠是 10 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=78f1ad77-9fd4-3396-9c92-a4c47c947c0c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1231766590：collectionName「Marc & Robert」、releaseDate 1988-11-01、copyright「℗ 1988 Because Music / Six Sarl」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1988 CD **逐位置相符**、逐軌長度差都在 2 秒內。**上架的是 11 軌 CD 版，不是 10 軌黑膠。**",
+    "src": "https://itunes.apple.com/lookup?id=1231766590&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Les Rita Mitsouko 的 **troisième album**（第三張專輯），1988 年 11 月 7 日發行，廠牌 Virgin Records，**製作 Tony Visconti 與 Les Rita Mitsouko**，總長記 43 分 10 秒。條目說**兩首（CD 上是三首）與美國樂團 Sparks 合作**，Ron 與 Russell Mael 以客席身分參與並寫了〈Singing in the Shower〉與〈Live in Las Vegas〉；**〈Smog〉是樂團唯一一首由 Fred Chichin 演唱的歌**。〈Tongue Dance〉出現在 1990 年 Volker Schlöndorff 改編 Margaret Atwood 小說《使女的故事》的電影裡。",
+    "src": "https://fr.wikipedia.org/wiki/Marc_et_Robert"
+   },
+   {
+    "f": "同一條目關於〈Le petit train〉：歌詞指向二戰的死亡列車與遣送，旋律卻取材自 André Claveau 唱過的同名老歌〈Le Petit Train〉、輕快歡騰，維持樂團一貫的荒謬感。條目另記 **Catherine Ringer 的父親 Sam Ringer 1940 年遭遣送**，他的生平後來寫進《Cool Frénésie》裡的〈C'était un homme〉。樂手：Catherine Ringer（人聲、電子鼓、貝斯）、Fred Chichin（吉他、小號、人聲、鼓）、Sam Smith（主奏與滑管吉他）、**Jean-Baptiste Mondino（節奏吉他）**、Tony Visconti（貝斯、薩克斯風、電子鼓）、Gilbert Monin（貝斯）、Guy Barker（小號）、Jesse Johnson（鼓）、Ron Mael（鍵盤）、Russell Mael（人聲、鍵盤）。",
+    "src": "https://fr.wikipedia.org/wiki/Marc_et_Robert"
+   },
+   {
+    "f": "藝人端點分頁全列 44 個 release-group，錄音室盤（primary-type Album＋secondary-types 空）共 7 張，**《Marc & Robert》1988-11-07 排第 3**，前一張是 1986 的《The No Comprendo》、後一張是 1993-11 的《Système D》。**與條目的 troisième 一致。**（1990 的《Re》在來源端不屬於這 7 張。）",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0bfe360b-4abf-4750-962c-981cc5bfc4cf&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "〈Le petit train〉唱的是遣送與死亡列車，旋律卻取自一首輕快的老歌",
+   "Sparks 兄弟帶著自己寫的兩首歌進來當客人"
+  ],
+  "sound": "1988 年 Virgin 的 CD 11 軌、總長 43 分 10 秒，12 吋黑膠是 10 軌，串流上架的是 11 軌 CD 版。單軌 2:13 到 5:48。製作 Tony Visconti 與樂團。Sparks 的 Ron 與 Russell Mael 以客席身分進來，寫了〈Singing in the Shower〉與〈Live in Las Vegas〉兩首。〈Smog〉是團裡唯一一首由 Fred Chichin 演唱的歌。〈Le petit train〉的詞指向二戰的遣送與死亡列車，旋律卻取自 André Claveau 唱過的同名輕快老歌。樂手線除兩位團員外含 Sam Smith 的滑管吉他、Jean-Baptiste Mondino 的節奏吉他、Tony Visconti 的貝斯與薩克斯風、Guy Barker 的小號。英國同年有自己的一筆 Official CD。",
+  "keyTracks": [
+   "Le petit train",
+   "Singing in the Shower",
+   "Smog"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988-11-07**、其下 1988 的四筆 Official release（FR 的 CD 與 12 吋、GB 的 CD）同年、串流店面 fr 1231766590 的 releaseDate 1988-11-01 與 ℗ 1988 相符，條目 infobox 記 1988 年 11 月 7 日。**店面的 11 月 1 日與來源端／條目的 11 月 7 日差六天，行文只寫年份 1988。** **同名先行單曲：無**。",
+  "notes": "**這張是擋下前一卡『唯一走出法國』說法的證據**：本張轄下有 **GB 的 Official CD（Virgin CDV 2572，1988，11 軌）**，所以《The No Comprendo》不是三張裡唯一走出法國市場的。｜**版本差異**：黑膠 10 軌、CD 與店面 11 軌。**行文若要說「十一首」，要記得那是 CD 版；黑膠少一軌。**｜**撇號**：本張曲名不含撇號，兩種寫法問題不觸及；條目正文提到的〈C'était un homme〉（另一張碟）用 ASCII 直撇。｜盤名的「&」：來源端與店面都用半形 &（`Marc & Robert`），**條目頁面標題卻作「Marc et Robert」**。卡單走 `Marc & Robert`，**行文照卡單**。｜條目的銷售認證（disque d'or）依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Indochine|3",
+  "artist": "Indochine",
+  "album": "3",
+  "facts": [
+   {
+    "f": "release-group 3b8192c1 的欄位：title「3」、artist-credit「Indochine」（藝人 MBID 076caf66）、first-release-date **1985-05-10**、primary-type Album、secondary-types **空**。轄下 4 筆 release **全部 Official、全部 9 軌**：1985 的 Ariola 206 085（FR，12 吋）、1985 的 Ariola 406 085（FR，卡帶）、1985 的 Ariola 610 477（FR，CD）、1985-05-10 的 Sony Music 88985451122（國別未填，CD）。**四種載體全部 9 軌，沒有任何加曲版本。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/3b8192c1-da01-3841-b97b-6f66904e69f7?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1985 FR 原盤（Ariola 206 085，12 吋）的逐軌曲目與長度：1〈3e sexe〉5:01、2〈Canary Bay〉5:23、3〈Monte Cristo〉4:32、4〈Salômbo〉5:10、5〈Hors-la-loi〉3:08、6〈À l'assaut (Des ombres sur l'O)〉3:49、7〈Trois nuits par semaine〉5:14、8〈Le Train sauvage〉3:18、9〈Tes yeux noirs〉4:50。**只有 9 軌、總長約 40 分 26 秒，但沒有一首短於 3 分鐘、四首超過五分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3b8192c1-da01-3841-b97b-6f66904e69f7&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 254263777：collectionName「3」、releaseDate **1985-12-10**、copyright「℗ 1985 Éditions Clémence Melody」、trackCount 9。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲名與曲序與 1985 原盤**逐位置相符**、逐軌長度差都在 3 秒內。差別只在正字：店面把〈À l'assaut (Des ombres sur l'O)〉寫成〈A l'assaut (des ombres sur l'o)〉。**店面的月日 12-10 與來源端的 05-10 對不上，只有年份 1985 可信。**",
+    "src": "https://itunes.apple.com/lookup?id=254263777&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Indochine 的 **troisième album studio**（第三張錄音室專輯），1985 年 5 月 10 日發行，**製作 Philippe Eidel 與 Indochine**，總長記 40 分 26 秒，曲風記 new wave，廠牌 BMG Ariola。條目說盤名取的是數字 3 的宗教意涵，**好幾首曲名或歌詞都在指這個數字**（〈3e sexe〉〈Trois nuits par semaine〉，〈Hors-la-loi〉的詞裡也有），**而全碟 9 軌本身就是 3 的倍數**。條目另記這張是樂團第一次音樂上的轉向：歌詞轉到肉身與曖昧的題材，編曲拿掉了先前的遠東風小把戲，並加進 Arnaud Devos 的打擊。",
+    "src": "https://fr.wikipedia.org/wiki/3_(album_d'Indochine)"
+   },
+   {
+    "f": "同一條目對各曲的說明：〈3e sexe〉是一首關於穿著與性的容忍、關於差異權的歌；〈Canary Bay〉處理女同志題材；〈Trois nuits par semaine〉直接取材自 Marguerite Duras 的小說《L'Amant》；〈Tes yeux noirs〉寫分手與對對方的慾望。**第 8 軌〈Le train sauvage〉是 Stéphane Sirkis 寫的第一首曲子。** 單曲三筆（都是雙面曲）：〈Canary Bay〉/〈Le Train Sauvage〉1985 年 4 月、〈3e sexe〉/〈3 Nuits Par Semaine〉1985 年 10 月 18 日、〈Tes yeux noirs〉/〈Monte Cristo〉/〈Hors-La-Loi〉1986 年 5 月。",
+    "src": "https://fr.wikipedia.org/wiki/3_(album_d'Indochine)"
+   },
+   {
+    "f": "藝人端點分頁全列 **108 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **14 張**，依序為《L'Aventurier》1982-11-15、《Le Péril jaune》1983、**《3》1985-05-10**、《7000 danses》1987、《Le Baiser》1990、《Un jour dans notre vie》1993-03-19、《Wax》1996、《Dancetaria》1999、《Paradize》2002-05-14、《Alice & June》2005-12-16、《La République des Meteors》2009-03-09、《Black City Parade》2013-02-11 等。**本張排第 3，與條目的 troisième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=076caf66-1bb1-4486-8f46-910c83441eab&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名取數字 3 的宗教意涵，連軌數 9 都是 3 的倍數",
+   "〈Trois nuits par semaine〉直接從莒哈絲的《情人》長出來"
+  ],
+  "sound": "1985 年 Ariola 同時出 12 吋、卡帶與 CD，三種載體都是 9 軌、總長 40 分 26 秒。曲子偏長——四首超過五分鐘，最短的〈Hors-la-loi〉也有 3:08。製作 Philippe Eidel 與樂團，條目把曲風記成 new wave，並說這張把先前的遠東風小把戲拿掉、加進 Arnaud Devos 的打擊。盤名取數字 3 的宗教意涵，曲名與歌詞多處呼應，軌數 9 也是 3 的倍數。第 8 軌〈Le train sauvage〉是 Stéphane Sirkis 寫的第一首曲子。",
+  "keyTracks": [
+   "3e sexe",
+   "Canary Bay",
+   "Trois nuits par semaine"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1985。release-group first-release-date **1985-05-10**、其下四筆 Official release 全部 1985、條目 infobox 記 1985 年 5 月 10 日。**串流店面 fr 254263777 的 releaseDate 記 1985-12-10，比來源端與條目晚七個月**——年份相同、月日不可採，**行文只寫 1985**。**同名先行單曲：無**（1985 年 4 月的先行單曲是〈Canary Bay〉/〈Le Train Sauvage〉）；**但盤名是單一數字「3」，字串比對必然大量誤中**（藝人目錄裡的《13》《3.6.3 (Live 2003)》〈3SEX〉《Station 13》都會撈到）。",
+  "notes": "**配對風險（極高，盤名只有一個字元）**：藝人目錄 fr／be 兩店面裡與「3」字串相符的有 `1262498300`《13》(2017，22 軌)、`1044712162`《3.6.3 (Live 2003)》(27 軌)、`1540251806`〈3SEX - Single〉(1 軌)、`1397378150`《Station 13》(6 軌)。**本張必須指名 `254263777`，任何字串比對都會配錯。**｜**撇號兩種寫法**：來源端與店面本張曲名都用 ASCII 直撇（`À l'assaut`、`l'O`），兩邊一致。｜**重音與大小寫差異**：原盤〈À l'assaut (Des ombres sur l'O)〉、店面〈A l'assaut (des ombres sur l'o)〉——大寫 À 變 A、括號內大小寫全變。**行文照原盤。**｜曲名寫法：條目與單曲欄把第 1 軌寫成「3e sexe」也寫成「3ème sexe」，來源端與店面都是〈3e sexe〉。**`keyTracks` 用〈3e sexe〉。**｜條目的排行榜名次與銷售認證依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Indochine|Paradize",
+  "artist": "Indochine",
+  "album": "Paradize",
+  "facts": [
+   {
+    "f": "release-group a8447ca4 的欄位：title「Paradize」、artist-credit「Indochine」、first-release-date **2002-05-14**、primary-type Album、secondary-types **空**。轄下 8 筆 release：2002 的 Distribution Select／Zone3 ZCD-1000（**CA**，CD 15 軌，Official）、2002 的 Columbia COL5076362 三筆（FR，CD 15 軌，Official，其中兩筆以「with／without SCPP logo」區分）、2002-05-14 的 Columbia 數位（XW，15 軌，Official）、2012 的 Jive Epic（FR，CD 15 軌，Official）、2012-02-13 的 Jive Epic 88691924452（FR，**CD 15 軌＋CD 13 軌**，title「Paradize +10」，Official）、以及一筆 **RU 的 Bootleg**（Columbia 5076362000，CD 15 軌）。**原盤是 15 軌；加拿大有自己一筆 Official 壓片。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/a8447ca4-c63a-30c0-9e1a-66c292a0a5c5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2002 CA 版（Distribution Select／Zone3 ZCD-1000，CD）的逐軌曲目與長度：1〈Paradize〉4:50、2〈Electrastar〉5:30、3〈Punker〉2:50、4〈Mao Boy!〉5:42、5〈J'ai demandé à la lune〉3:29、6〈Dunkerque〉5:48、7〈Like a Monster〉3:56、8〈Le Grand Secret〉5:50、9〈La Nuit des fées〉4:58、10〈Marilyn〉5:55、11〈Le Manoir〉5:05、12〈Popstitute〉4:00、13〈Dark〉4:37、14〈Comateen I〉6:07、15〈Un singe en hiver〉3:46。**15 軌、總長約 72 分 25 秒；第 1 軌與盤名同名，第 14 軌標 I（意味著另有 II，但不在原盤上）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a8447ca4-c63a-30c0-9e1a-66c292a0a5c5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId **253593945**：collectionName「Paradize」、releaseDate **2002-05-14**、copyright「℗ 2002 Sony Music Entertainment (France) S.A.」、trackCount 15。`entity=song` **攤得出 15 軌、15 軌全部有 previewUrl**，曲名與曲序與 2002 原盤**逐位置相符**、逐軌長度相同到秒。差別只在正字（店面把〈Le manoír〉多打了一個重音、〈Comateen I〉寫成〈Comateen〉）。**這是 15 軌的原盤，不是策展層 `risk` 欄記的那筆 28 軌豪華版。**",
+    "src": "https://itunes.apple.com/lookup?id=253593945&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "同一藝人目錄下另有 collectionId **499235070**「Paradize +10 (Édition deluxe) [Réédition]」：releaseDate 2012-02-13、trackCount 28、28 軌全有試聽。**那是 2012 年的再版（對應來源端 Jive Epic 88691924452 的 15＋13 兩片），比原盤多十三軌，不能拿來當原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=499235070&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Indochine 的 **9e album studio**（第九張錄音室專輯），**製作 Hervé Lauzanne**，總長記 72 分 25 秒，曲風記 chanson française／synthpop／glam rock，廠牌 Columbia－Sony。條目說這張常被視為樂團事業的重生之作。單曲六筆（多為雙面）：〈Punker〉/〈J'ai demandé à la lune〉2002 年 2 月 11 日、〈J'ai demandé à la lune〉2002 年 4 月 8 日、〈Mao Boy!〉2002 年 9 月 30 日、〈Le Grand Secret〉2003 年 3 月 3 日、〈Marilyn〉/〈Smalltown Boy〉2003 年 7 月 15 日、〈Un singe en hiver〉/〈Electrastar〉2003 年 11 月 3 日。",
+    "src": "https://fr.wikipedia.org/wiki/Paradize"
+   },
+   {
+    "f": "藝人端點分頁全列 108 個 release-group，錄音室盤（primary-type Album＋secondary-types 空）共 14 張，**《Paradize》2002-05-14 排第 9**，前一張是 1999 的《Dancetaria》、後一張是 2005-12-16 的《Alice & June》。**與條目的 9e 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=076caf66-1bb1-4486-8f46-910c83441eab&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第十四軌標「Comateen I」，但整張上找不到 II",
+   "十五首撐到七十二分鐘，是同一位藝人目錄裡最長的一張"
+  ],
+  "sound": "2002 年 Columbia 的 CD 15 軌、總長 72 分 25 秒，是這位藝人目錄裡最長的一張。單軌 2:50 到 6:07，第 1 軌與盤名同名、第 14 軌〈Comateen I〉標了羅馬數字 I 卻沒有 II 在同一張上。製作 Hervé Lauzanne，條目把曲風記成 chanson française、synthpop 與 glam rock。2012 年另有「Paradize +10」的兩片再版（15＋13 軌）。同一張碟在 2002 年就有法國、加拿大與數位三條線，另有一筆俄羅斯的非官方壓片。",
+  "keyTracks": [
+   "J'ai demandé à la lune",
+   "Mao Boy!",
+   "Le Grand Secret"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2002。release-group first-release-date **2002-05-14**、其下 2002 的 FR／CA／XW 五筆 Official release 同年、串流店面 fr 253593945 的 releaseDate **2002-05-14** 與 ℗ 2002 完全相符。**唯一不同步的是條目 infobox 的 2002 年 3 月 12 日**，比來源端與店面早兩個月——**年份三處一致都是 2002，月日兩說，行文只寫年份**。**同名先行單曲：無**（先行單曲是〈Punker〉/〈J'ai demandé à la lune〉，2002-02-11）；**第 1 軌與盤名同名**。",
+  "notes": "**改掉策展層指定的 collectionId**：策展層 `risk` 欄記的是 `499235070`（Paradize +10 豪華版，28 軌）並註明「原盤 15 軌」。**逐軌覆核後在同一個 fr 藝人目錄裡找到 15 軌的原盤 `253593945`**（releaseDate 2002-05-14、℗ 2002、曲名曲序長度與原盤相同到秒、15 軌全有試聽）。**建議改用 253593945**，這樣試聽與行文都會落在原盤上，不必再靠裁定 141 迴避豪華版曲目。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`J'ai demandé à la lune`），兩邊一致。｜正字差異兩處：原盤〈Le Manoir〉／店面〈Le manoír〉（店面多一個重音，是錯字）；原盤〈Comateen I〉／店面〈Comateen〉。**行文照原盤。**｜來源端有一筆 RU 的 Bootleg，**再發背書不採那一筆**（裁定 43／57）。"
+ },
+ {
+  "key": "desc2:-M-|Le Baptême",
+  "artist": "-M-",
+  "album": "Le Baptême",
+  "facts": [
+   {
+    "f": "release-group 195738ce 的欄位：title「Le Baptême」、**artist-credit「‐M‐」（用的是 U+2010 HYPHEN，不是 ASCII 連字號）**、藝人 MBID 99513c45、first-release-date **1997-04-25**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release：1997-04-25 的 Parlophone France 數位（XW，**19 軌**，Official）、1998-09-01 的 Delabel 7243 8465542 6（FR，CD，**17 軌**，Official）、1998-09-04 的 Virgin France S.A. 8429382（FR，CD，**16 軌**，Official）。**三筆三種軌數：19／17／16。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/195738ce-d4f5-3646-9a53-656bbe6a037d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "19 軌版的逐軌曲目與長度：1〈La Fleur〉3:00、2〈Le Baptême〉4:06、3〈L'amour ma thématique〉2:50、4〈Nostalgic du Cool〉3:41、5〈Manque de q〉3:57、6〈Je suis une cigarette〉3:37、7〈La mort de l'âme〉2:16、8〈Pick Pocket〉3:34、9〈Les Acariens〉4:53、10〈Le rose pourpre du coeur〉3:14、11〈Coup de vent〉3:40、12〈Le temps mue〉3:33、13〈Matchistador〉3:46、14〈Souviens-toi〉0:35、15〈Souvenir du futur〉3:57、16〈Matchistador〉8:06、17〈Céline attendue〉13:12、18〈Machistador (Macho mix)〉6:39、19〈Machistador (J'Adore mix)〉3:39。**第 14 軌只有 35 秒、第 17 軌 13 分 12 秒；同一首〈Machistador〉在後段出現四次（含兩個 mix）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=195738ce-d4f5-3646-9a53-656bbe6a037d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 693827681：collectionName「Le baptême」、artistName「-M-」（**ASCII 連字號**）、releaseDate **1997-04-25**、copyright「℗ 1998 Parlophone Music France」、trackCount 19。`entity=song` **攤得出 19 軌、19 軌全部有 previewUrl**，曲名與曲序與 19 軌版**逐位置相符**、逐軌長度相同到秒。差別在拼法：店面第 13／16 軌寫〈Machistador〉與〈Machistador extended〉，來源端第 13／16 軌寫〈Matchistador〉（多一個 t）。",
+    "src": "https://itunes.apple.com/lookup?id=693827681&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox：盤名《Le Baptême》，artiste 欄寫 **-M-**，sorti 記 **1998 年 9 月 4 日**、enregistré 記 **1997**，總長 71 分 56 秒，曲風 rock français，廠牌 Virgin France；後一張是 1999 的《Je dis aime》。首句寫「**Le Baptême 是 Matthieu Chedid 的第一張錄音室專輯，1997 年錄、1998 年發行**」。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Bapt%C3%AAme_(Matthieu_Chedid)"
+   },
+   {
+    "f": "藝人本人條目的〈Le Baptême (1997)〉一節：**「1997 年，他的第一張個人專輯《Le Baptême》問世」**，這張碟讓 Matthieu Chedid 端出他替自己造的 M 這個角色——兩側立起的髮型、額前一撮貼平的瀏海，條目把這個舞台分身比作 David Bowie 的 Ziggy Stardust 與 Klaus Nomi。條目另記他當時常獨自或與大提琴手 **Vincent Ségal** 二人演出，把大提琴段落取樣進自己的吉他；**這張碟是在家族的鄉間老屋裡錄的**。",
+    "src": "https://fr.wikipedia.org/wiki/Matthieu_Chedid"
+   },
+   {
+    "f": "藝人端點分頁全列 **86 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **12 張**，依序為 **《Le Baptême》1997-04-25**、《Je dis aime》1999-10-25、《Les Âmes de Mogador》2003、《Labo -M-》2003-02-20、《Qui de nous deux》2003-11-24、《Mister Mystère》2009-09-07、《Îl》2012-11-12、《Louis, Matthieu, Joseph & Anna Chedid》2015-10-23、《La B.O²-M-》2015-11-16、《Lettre infinie》2019-01-25、《Rêvalité》2022-06-03、《L'Heure miroir》2024-06-07。**本張排第 1。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=99513c45-6c2d-4a6b-a089-074360591f01&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "在家族的鄉間老屋裡錄完，端出一個叫 M 的舞台分身",
+   "第十四軌只有三十五秒，第十七軌拉到十三分十二秒"
+  ],
+  "sound": "軌數三種版本各不同：數位版 19 軌、1998 年 Delabel 的 CD 17 軌、同月 Virgin 的 CD 16 軌，總長記 71 分 56 秒。19 軌版的曲長落差極大——第 14 軌〈Souviens-toi〉只有 35 秒，第 17 軌〈Céline attendue〉13 分 12 秒；同一首〈Machistador〉在後段以正規版、延長版與兩個 mix 出現四次。錄音在家族的鄉間老屋，條目把曲風記成 rock français。這張碟端出 Matthieu Chedid 替自己造的 M 這個舞台角色，當時他常獨自或與大提琴手 Vincent Ségal 二人演出。串流上架的是 19 軌那一版。",
+  "keyTracks": [
+   "Le Baptême",
+   "Machistador",
+   "Je suis une cigarette"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說，卡單取 1997 有據但要註明。** 來源端 release-group first-release-date 記 **1997-04-25**、串流店面 fr 693827681 的 releaseDate 也是 **1997-04-25**、藝人本人條目的小節標題直接寫「Le Baptême (1997)」並在正文說「1997 年他的第一張個人專輯問世」。**但專輯條目的 infobox 記 sorti 1998 年 9 月 4 日、enregistré 1997，首句也寫「1997 年錄、1998 年發行」**，而來源端**唯一的兩筆實體 CD 都落在 1998-09-01 與 1998-09-04**。℗ 欄寫 1998。**四處對照的結論：1997 是錄音年與最初發行年（兩處明寫）、1998 是實體 CD 上架年（實體壓片全在 1998）。卡單的 1997 可用，但行文不要把 1998 那批 CD 說成原盤。** **同名先行單曲：無**；**第 2 軌與盤名同名**。",
+  "notes": "**掛名字元**：來源端的 artist-credit 是 **‐M‐（U+2010 HYPHEN）**，店面的 artistName 是 **-M-（ASCII）**，卡單走 ASCII（本批裁定 2）。**行文一律寫 -M-。**｜**曲名拼法兩種**：來源端第 13／16 軌作〈Matchistador〉（Mat-），第 18／19 軌的 mix 卻作〈Machistador〉（Mach-）——**同一份曲目表內部就不一致**；店面四筆全部作〈Machistador〉。**`keyTracks` 取店面一致的〈Machistador〉。**｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`L’amour ma thématique`、`La mort de l’âme`、`J’Adore mix`），店面一律 ASCII。**卡池走 ASCII。**｜連字號：來源端第 14 軌〈Souviens‐toi〉用 U+2010，店面作〈Souviens toi〉（無連字號）。｜**版本差異**：19／17／16 三種軌數並存，**行文不得說「這張有幾首」，只能說串流上架的是 19 軌版**。｜正字：來源端第 10 軌作〈Le rose pourpre du coeur〉（oe 拆開），店面作〈Le rose pourpre du cœur〉（œ 連字）。"
+ },
+ {
+  "key": "desc2:-M-|Qui de nous deux",
+  "artist": "-M-",
+  "album": "Qui de nous deux",
+  "facts": [
+   {
+    "f": "release-group b8a380c7 的欄位：title「Qui de nous deux」、artist-credit「‐M‐」（U+2010）、first-release-date **2003-11-24**、primary-type Album、secondary-types **空**。轄下 5 筆 release 全部 Official：2003 的 Delabel／EMI／Virgin 7243 5953980 5（**CA**，CD 15 軌）、2003 的 Delabel 7243 5948581（FR，**12 吋兩片 8＋7 軌**）、2003 的 Delabel（FR，CD 15 軌，「édition limitée, coffret collector」）、2003-11-24 的 Delabel 7243 5953980 5（FR，CD 15 軌）、2023-11-17 的 Parlophone France 數位（XW，**15＋5 軌**，「Edition 20ème anniversaire」）。**原盤 15 軌，黑膠切成 8＋7 兩片。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b8a380c7-4888-3e52-8ad5-cc1378f3f612?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2003 CA 版（CD，15 軌）的逐軌曲目與長度：1〈Mon égo〉2:30、2〈La bonne étoile〉3:37、3〈Sous ta peau〉3:45、4〈À tes souhaits〉2:59、5〈Qui de nous deux〉3:46、6〈Ma mélodie〉3:33、7〈Quand je vais chez elle〉3:06、8〈La corde sensible〉3:31、9〈Je me démasque〉3:40、10〈C'est pas ta faute〉3:46、11〈Gimmick〉3:12、12〈Le Radeau〉3:24、13〈Psyko Bug〉2:35、14〈Peau de fleur〉4:12、15〈Ton écho〉4:50。**15 軌、總長約 52 分 29 秒；十五首裡有十三首落在 2:30 到 4:12，只有末軌〈Ton écho〉4:50 略長。第 5 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b8a380c7-4888-3e52-8ad5-cc1378f3f612&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 695497606：collectionName「Qui De Nous Deux」、artistName「-M-」、releaseDate **2003-10-24**、copyright「℗ 2003 Parlophone / Warner Music France」、trackCount 15。`entity=song` **攤得出 15 軌、15 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、逐軌長度差都在 2 秒內。店面把每個字的首字母都大寫（「Qui De Nous Deux」「La Bonne Étoile」），與原盤的正常大小寫不同。**同一藝人目錄下另有 `1711472508`「Qui de nous deux (Edition 20ème anniversaire)」20 軌與 `697589970`「Qui de nous deux - Single」1 軌，兩筆都會撞盤名。**",
+    "src": "https://itunes.apple.com/lookup?id=695497606&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Matthieu Chedid 的 **troisième album studio**（第三張錄音室專輯），2003 年 11 月 24 日發行，總長記 52 分 29 秒，曲風 rock français，廠牌 EMI；前一張記《Labo M》2003、後一張記《M au Spectrum》2005。**條目加註：盤名在唱片封套與登記在著作權協會的樂譜上都不帶問號**（不寫成「Qui de nous deux ?」）。",
+    "src": "https://fr.wikipedia.org/wiki/Qui_de_nous_deux_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 86 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 12 張，依 first-release-date 排序為《Le Baptême》1997-04-25、《Je dis aime》1999-10-25、《Les Âmes de Mogador》2003、《Labo -M-》2003-02-20、**《Qui de nous deux》2003-11-24**、《Mister Mystère》2009-09-07 …… **本張在這份排序裡排第 5，條目寫的是 troisième（第三張），兩邊差兩張**——差的是同年的《Les Âmes de Mogador》與《Labo -M-》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=99513c45-6c2d-4a6b-a089-074360591f01&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一 release-group 的 2023-11-17 數位版標「Edition 20ème anniversaire」、分成 15 軌＋5 軌兩片，店面對應 `1711472508`（20 軌）。**原盤 15 軌與二十週年版 20 軌的差距就是這追加的 5 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b8a380c7-4888-3e52-8ad5-cc1378f3f612?fmt=json&inc=artist-credits+releases"
+   }
+  ],
+  "hookCandidates": [
+   "盤名在封套與登記的樂譜上都不帶問號，念起來卻是個問句",
+   "十五首裡十三首卡在兩分半到四分鐘之間"
+  ],
+  "sound": "2003 年 Delabel 的 CD 15 軌、總長 52 分 29 秒，黑膠切成 8＋7 兩片。曲長很整齊——十五首裡十三首落在 2:30 到 4:12，末軌〈Ton écho〉4:50 最長。第 5 軌與盤名同名。條目把曲風記成 rock français，並註明盤名在封套與登記的樂譜上都不帶問號。加拿大同年有自己一筆 Official CD，法國另出過限量收藏盒裝；2023 年再出 20 軌的二十週年數位版。",
+  "keyTracks": [
+   "Qui de nous deux",
+   "La bonne étoile",
+   "Mon égo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2003。release-group first-release-date **2003-11-24**、其下四筆 2003 的 Official release（FR CD、FR 12 吋、FR 收藏盒、CA CD）同年、條目 infobox 記 2003 年 11 月 24 日。**串流店面 fr 695497606 的 releaseDate 記 2003-10-24，比來源端與條目早一個月**——年份相同、月日不可採，**行文只寫 2003**。℗ 2003 相符。**同名對照組有兩型**：同名單曲〈Qui de nous deux〉（店面 697589970，releaseDate 同為 2003-10-24，1 軌）與 2023 的二十週年版（1711472508，20 軌）。**第 5 軌也與盤名同名。**",
+  "notes": "**擋下策展層一處（序數）**：卡單 `curatorWhy` 寫「-M- 的第三張錄音室專輯，接在《Je dis aime》（1999）之後」。**藝人目錄把本張排第 5**——中間還有 2003 的《Les Âmes de Mogador》與 2003-02-20 的《Labo -M-》兩筆 primary-type Album；條目寫的是 troisième。**兩邊差兩張，行文不得寫序數**，也不要寫「接在《Je dis aime》之後」（同年還隔了兩筆）。｜**掛名字元**：來源端 ‐M‐（U+2010）／店面 -M-（ASCII），卡單走 ASCII。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`C'est pas ta faute`），兩邊一致。｜**大小寫**：店面把每字首字母大寫（`Qui De Nous Deux`、`Mon Ego`），原盤是正常大小寫且帶重音（`Mon égo`）。**`keyTracks` 與行文照原盤。**｜配對風險：`697589970`（同名單曲，1 軌）與 `1711472508`（20 軌週年版）都會撞盤名，**必須指名 695497606**。"
+ },
+ {
+  "key": "desc2:Dominique A|La Fossette",
+  "artist": "Dominique A",
+  "album": "La Fossette",
+  "facts": [
+   {
+    "f": "release-group fd5e8f9b 的欄位：title「La Fossette」、artist-credit「Dominique A」（藝人 MBID 8ae5648d）、first-release-date **1992-01-01**、primary-type Album、secondary-types **空**。轄下 4 筆 release **全部 FR、全部 Official**：1992 的 Lithium 07777 880542 7（CD，13 軌）、1992-01-01 的 Parlophone France 數位（**13 軌＋18 軌兩片**，disambiguation「(Édition spéciale) [Remasterisée]」）、1992-02-05 的 Lithium LICD 03（CD，13 軌）、2012-01-09 的 CD 13＋18 兩片。**原盤 13 軌；31 軌是特別版的兩片合計。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/fd5e8f9b-be81-3a97-b7d2-d931861f743b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1992 FR 原盤（Lithium 07777 880542 7，CD）的逐軌曲目與長度：1〈Vivement dimanche〉3:55、2〈Février〉1:52、3〈Trombes d'eau〉1:16、4〈Va t'en〉6:01、5〈L'un dans l'autre〉1:58、6〈Mes lapins〉2:08、7〈Sous la neige〉3:06、8〈Le Courage des oiseaux〉2:33、9〈Les habitudes se perdent〉2:57、10〈Ce qui sépare〉2:33、11〈Passé l'hiver〉3:09、12〈La Folie des hommes〉2:35、13〈L'Écho〉4:16。**13 軌、總長約 36 分；曲子非常短——第 3 軌只有 1:16、第 2 與第 5 軌不到兩分鐘，只有〈Va t'en〉6:01 明顯拉長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fd5e8f9b-be81-3a97-b7d2-d931861f743b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 693506098：collectionName「La fossette (Édition spéciale) [Remasterisée]」、releaseDate 1992-01-01、copyright「℗ 2012 Parlophone Music France」、trackCount 31。`entity=song` **攤得出 31 軌（第一片 13 軌＋第二片 18 軌）、31 軌全部有 previewUrl**。**第一片 13 軌的曲名、曲序與逐軌長度與 1992 原盤相同到秒**；第二片 18 軌是追加內容，**其中前十三首的曲名後都掛「(Un disque sourd)」**——那是 1991 年那張自製 33 轉的版本，另有〈L'histoire chuchotée de l'art〉12:47、〈Il faut être un fantôme〉、〈Balbadru et les lumières〉、〈Les habitudes se perdent (1ère version)〉、〈Why I Bleed〉。**上架的是 31 軌特別版，前 13 軌就是原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=693506098&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Dominique A 的 **premier album**（首張專輯），1992 年 2 月 5 日在 Lithium 廠牌發行，**製作 Vincent Chauvier**，曲風記 chanson française／nouvelle scène française。**條目說這張收錄了他 1991 年自製 33 轉《Un disque sourd》裡的好幾首曲子，那張只壓了 150 張、發行極為有限。**",
+    "src": "https://fr.wikipedia.org/wiki/La_Fossette"
+   },
+   {
+    "f": "藝人端點分頁全列 **47 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **20 張**，最前面五張依序是《Un disque sourd》1991、**《La Fossette》1992-01-01**、《Si je connais Harry》1993-10、《La Mémoire neuve》1995-05、《Remué》1999-03-01。**本張在藝人目錄裡排第 2**（前面還有 1991 那張自製盤），**條目寫的是 premier album**——兩邊差一張，差的正是那張只壓 150 份的《Un disque sourd》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8ae5648d-d9b7-4083-b538-17f71672990f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流店面 fr 的第二片曲目直接證明兩張碟的關係：〈Le courage des oiseaux (Un disque sourd)〉2:33、〈Passé l'hiver (Un disque sourd)〉3:03、〈Ce qui sépare (Un disque sourd)〉2:28、〈Sous la neige (Un disque sourd)〉3:06、〈La folie des hommes (Un disque sourd)〉2:30 等五首，**與原盤第 8、11、10、7、12 軌同名**，是同一批歌的前一個版本。",
+    "src": "https://itunes.apple.com/lookup?id=693506098&country=fr&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十三首裡有三首不到兩分鐘，最短的〈Trombes d'eau〉只有 1 分 16 秒",
+   "前一年那張自製盤只壓了一百五十張，這裡有好幾首是它的重錄"
+  ],
+  "sound": "1992 年 Lithium 的 CD 13 軌、總長約 36 分。曲子極短——〈Trombes d'eau〉1:16、〈Février〉1:52、〈L'un dans l'autre〉1:58，全碟只有〈Va t'en〉6:01 明顯拉長。製作 Vincent Chauvier，條目把曲風記成 chanson française 與 nouvelle scène française。這批歌有好幾首來自 1991 年那張只壓 150 份的自製 33 轉《Un disque sourd》，串流上架的特別版把那個版本整批收在第二片。",
+  "keyTracks": [
+   "Le Courage des oiseaux",
+   "Va t'en",
+   "Vivement dimanche"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992-01-01**（「1 月 1 日」是填充值）、其下 1992 的兩筆 FR／Official CD 分別記 1992 與 **1992-02-05**、串流店面 fr 693506098 的 releaseDate 1992-01-01、條目 infobox 記 1992 年 2 月 5 日。**年份四處一致都是 1992，實際日期以 2 月 5 日為準。** ℗ 欄寫 2012，那是特別版的重製年份、不是原盤年份。**同名先行單曲：無。**",
+  "notes": "**配對覆核（本批 6 張未 ready 之一）**：探測層判本張 unavailable，回撈候選 `693506098` 經逐軌覆核**成立**——fr 店面 31 軌，**第一片 13 軌與 1992 原盤相同到秒**，第二片 18 軌是追加。**可補的 collectionId：fr `693506098`，31 軌（原盤內容＝前 13 軌），31 軌全有試聽。** 回撈清單裡另一筆 `693501713`（《Si je connais Harry (Edition spéciale)》1993，24 軌）**是下一張碟、不是本張，必須排除**。｜**版本差異（寫作層必讀）**：店面是 31 軌特別版，**原盤只有 13 軌**。**行文不得說「這張有三十一首」**，也不得把第二片那些帶「(Un disque sourd)」尾註的曲子當本張曲目（裁定 141）。｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`Trombes d’eau`、`Va t’en`、`L’un dans l’autre`、`Passé l’hiver`、`L’Écho`），店面一律 ASCII。**卡池走 ASCII，`keyTracks` 已按 ASCII 寫。**｜大小寫：原盤〈Le Courage des oiseaux〉〈La Folie des hommes〉〈L'Écho〉首字母大寫，店面全小寫。**行文照原盤。**｜**序數**：條目寫 premier album、藝人目錄排第 2（前有 1991 的《Un disque sourd》）。卡單 `curatorWhy` 沒寫序數，**行文也不要寫**。"
+ },
+ {
+  "key": "desc2:Dominique A|Remué",
+  "artist": "Dominique A",
+  "album": "Remué",
+  "facts": [
+   {
+    "f": "release-group 7644a28a 的欄位：title「Remué」、artist-credit「Dominique A」、first-release-date **1999-03-01**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release **全部 FR、全部 Official**：1999-03-01 的 Lithium 72438 472742 0（CD，14 軌）、1999-03-15 的 Lithium 72438 471432 1（CD，14 軌）、2012-01 的 EMI 509999995406428（**CD 14 軌＋CD 13 軌**）。**原盤 14 軌；27 軌是 2012 特別版的兩片合計。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7644a28a-5a6d-3c87-b623-294473bf3122?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1999-03-01 FR 原盤（Lithium 72438 472742 0，CD）的逐軌曲目與長度：1〈Comment certains vivent〉4:25、2〈Pères〉3:35、3〈Encore〉5:38、4〈Je suis une ville〉4:12、5〈Tu vas voir ailleurs〉3:02、6〈Avant l'enfer〉3:35、7〈Exit〉4:57、8〈Douanes〉4:33、9〈Ma vieille tête〉3:17、10〈Le Détour〉3:24、11〈Rien qu'à voir〉3:59、12〈Retrouvailles〉3:29、13〈Surestimé〉2:59、14〈Le Morceau caché〉3:18。**14 軌、總長約 54 分；曲長比前一張整齊得多，全部落在 2:59 到 5:38。末軌叫〈Le Morceau caché〉（藏起來的那一軌），但它就明列在第 14 軌上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7644a28a-5a6d-3c87-b623-294473bf3122&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 693505026：collectionName「Remué (Edition spéciale) [Remasterisé]」、releaseDate **2012-01-04**、copyright「Label Parlophone, ℗ 2012 Warner Music France」、trackCount 27。`entity=song` **攤得出 27 軌（第一片 14 軌＋第二片 13 軌）、27 軌全部有 previewUrl**。**第一片 14 軌的曲名、曲序與逐軌長度與 1999 原盤相同到秒**（只有第 7 軌差 1 秒）；第二片 13 軌是追加，含〈Retrouvailles (Version inédite)〉〈Pères (Version inédite)〉〈Encore (Version inédite)〉〈Douanes (Version inédite)〉四首未發表版本，加〈Vouloir〉〈Comme aurait dit Ben〉〈Un insouciant〉〈S'ils te voyaient〉〈Roach〉〈Friseur von Elvis〉〈Milena Jesenska〉〈By Night〉〈L'attirance〉。**上架的是 27 軌特別版，前 14 軌就是原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=693505026&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是 Dominique A 的 **quatrième album**（第四張專輯），1999 年 3 月 1 日在 Lithium 廠牌發行（infobox 的 sorti 欄記 3 月 2 日），**錄音在 1998 年**，**製作 Geoff Pesche 與 Dominique A**，總長記 54 分，曲風記 chanson française／nouvelle scène française；前一張是《La Mémoire neuve》、後一張是《Auguri》。",
+    "src": "https://fr.wikipedia.org/wiki/Remu%C3%A9"
+   },
+   {
+    "f": "藝人端點分頁全列 47 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 20 張，最前面五張依序是《Un disque sourd》1991、《La Fossette》1992-01-01、《Si je connais Harry》1993-10、《La Mémoire neuve》1995-05、**《Remué》1999-03-01**。**本張在藝人目錄裡排第 5，條目寫的是 quatrième（第四張）**——兩邊差一張，差的是 1991 那張只壓 150 份的《Un disque sourd》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8ae5648d-d9b7-4083-b538-17f71672990f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一 release-group 的三筆 release 之間只隔兩週（1999-03-01 與 1999-03-15 的兩個 Lithium 品號，14 軌內容相同），下一次再發要等到 **2012-01** 的 EMI 兩片版——**1999 到 2012 中間十三年沒有任何再壓紀錄。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7644a28a-5a6d-3c87-b623-294473bf3122&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "末軌叫〈Le Morceau caché〉（藏起來的那首），卻大方印在第十四軌上",
+   "1999 年出完，要等十三年才有下一次再發"
+  ],
+  "sound": "1999 年 Lithium 的 CD 14 軌、總長約 54 分，曲長比前作整齊很多，全部落在 2:59 到 5:38。錄音在 1998 年，製作 Geoff Pesche 與 Dominique A 共同掛名。條目把曲風記成 chanson française 與 nouvelle scène française。末軌〈Le Morceau caché〉的名字是「藏起來的那一軌」，但它就明列在第 14 軌。發行後兩週 Lithium 又出了第二個品號，之後要到 2012 年 EMI 才有 14＋13 軌的兩片特別版，中間隔了十三年。",
+  "keyTracks": [
+   "Je suis une ville",
+   "Comment certains vivent",
+   "Le Morceau caché"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1999。release-group first-release-date **1999-03-01**、其下兩筆 FR／Official 原盤 CD 分別是 1999-03-01 與 1999-03-15、條目正文寫 1999 年 3 月 1 日（infobox 的 sorti 欄寫 3 月 2 日，同月差一天）。**串流店面 fr 693505026 的 releaseDate 是 2012-01-04、℗ 2012**——那是特別版的年份，**行文一律寫 1999**。**同名先行單曲：無。**",
+  "notes": "**配對覆核（本批 6 張未 ready 之一，也是回撈清單上標「目錄裡找不到」的那一張）**：探測層判本張 unavailable、回撈清單寫「目錄裡找不到」。**實查藝人目錄後在 fr 找到 `693505026`**（《Remué (Edition spéciale) [Remasterisé]》，27 軌），逐軌覆核**成立**——**第一片 14 軌與 1999 原盤相同到秒**。**可補的 collectionId：fr `693505026`，27 軌（原盤內容＝前 14 軌），27 軌全有試聽。**（be 店面同樣有這一筆。）｜**版本差異（寫作層必讀）**：店面是 27 軌特別版、releaseDate 記 2012，**原盤只有 14 軌、年份 1999**。**行文不得說「這張有二十七首」**，也不得把第二片那些「(Version inédite)」與未發表曲當本張曲目（裁定 141）。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`Avant l'enfer`、`Rien qu'à voir`），兩邊一致。｜大小寫與重音：原盤〈Le Détour〉〈Surestimé〉〈Le Morceau caché〉，店面作〈Le détour〉〈Surestime〉（掉了 é）〈Le morceau caché〉。**行文照原盤。**｜**序數**：條目寫 quatrième、藝人目錄排第 5。卡單 `curatorWhy` 沒寫序數，**行文也不要寫**。"
  }
 ]

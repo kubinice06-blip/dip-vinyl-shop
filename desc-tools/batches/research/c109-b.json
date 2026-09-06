@@ -1,0 +1,138 @@
+[
+ {
+  "key": "desc2:Claude François|Comme d'habitude",
+  "artist": "Claude François",
+  "album": "Comme d'habitude",
+  "facts": [
+   {
+    "f": "release-group ba3eaf74 的欄位：title「Comme d'habitude」（來源端用彎撇 U+2019）、artist-credit「Claude François」（藝人 MBID 1cfbf85c）、first-release-date **1967**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release **全部 FR、全部 Official**：1967 的 Disques Flèche 844 800 BY／Philips 844 800 BY（**12 吋，11 軌**）、2000 的 Mercury Records 536 158-2（CD，11 軌）、2014-05 的 Mercury Records 378 190-9（CD，**19 軌**）。**原盤 11 軌，2014 那筆多八軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/ba3eaf74-11b3-4cd9-b734-7ae17c91d51b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1967 FR 原盤（Disques Flèche／Philips 844 800 BY，12 吋）的逐軌曲目與長度：1〈Comme d'habitude〉4:11、2〈Ce soir je vais boire〉2:02、3〈Je veux chaque dimanche une fleur〉2:42、4〈Pourquoi〉2:48、5〈Le Martien〉2:41、6〈La plus belle chose du monde〉3:00、7〈Pardon〉2:52、8〈L'Homme au traineau〉2:15、9〈Rien rien rien〉2:57、10〈Ma fille〉2:52、11〈Mais quand le matin〉3:19。**11 軌、總長約 31 分半；第 1 軌〈Comme d'habitude〉4:11 是全碟最長的一首，其餘十首全部不到三分半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ba3eaf74-11b3-4cd9-b734-7ae17c91d51b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1443781606：collectionName「Comme d'habitude」、releaseDate 1968-01-01、copyright「℗ 1997 Mercury Music Group」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1967 原盤**逐位置相符**、逐軌長度差都在 2 秒內。**同一藝人目錄下另有同名的 `448424284`（11 軌之外的另一張，13 軌，℗ 2008 M.A.T. Music Theme Licensing）——那筆的曲目完全不同（開頭是〈Cherche〉，中間有一段 21 分 41 秒的〈Chanson Medley〉），與本張無關，配對時必須排除。**",
+    "src": "https://itunes.apple.com/lookup?id=1443781606&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "**同名對照組 `448424284` 的逐軌實查**：1〈Cherche〉4:49、2〈Hey ho c'est impossible〉2:13、3〈Je te demande pardon〉3:02、4〈C'est de l'eau c'est du vent〉2:05、5〈Eloìse〉4:45、6〈Une petite larme m'a trahi〉2:31、7〈Si douce à mon souvenir〉2:41、8〈Comme d'habitude〉3:54、9〈Le monde est grands les gens sont beaux〉2:18、10〈Chanson Medley〉21:41、11〈Fleur sauvage〉3:35、12〈C'est la même chanson〉2:53、13〈Final〉2:07。**十三軌裡只有第 8 軌與本張同名、長度還差 17 秒；這是一張拼盤，盤名卻同樣叫「Comme d'habitude」、releaseDate 同樣記 1968。**",
+    "src": "https://itunes.apple.com/lookup?id=448424284&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "同名曲條目的 infobox 與 Genèse 節：〈Comme d'habitude〉的詞是 **Gilles Thibaut 與 Claude François**、曲是 **Jacques Revaux 與 Claude François**，1967 年 11 月以 45 轉發行，**錄音日 1967 年 9 月 17 日、地點是巴黎的 Studio de la Gaité**，時長 4:15，製作 Claude François，B 面是〈L'homme au traîneau〉與〈La plus belle chose du monde〉。**這首曲子最初叫〈For Me〉、是英語詞**——Jacques Revaux 1967 年 2 月在 Megève 的旅館一個上午寫了四首交差，這是其中之一，先後被 Hugues Aufray、Michel Sardou、Dalida、Mireille Mathieu 以及 Claude François 本人拒絕過。1967 年 8 月 27 日 Revaux 再帶去 François 在 Dannemois 的磨坊，兩人與作詞人 Gilles Thibaut 在泳池邊重做，把詞改成一對正在崩解的伴侶的日常，對應 François 與 France Gall 剛結束的那段感情。",
+    "src": "https://fr.wikipedia.org/wiki/Comme_d'habitude"
+   },
+   {
+    "f": "同一條目的首段：這首歌後來透過英語改編走向國際——**Paul Anka 1968 年寫出的〈My Way〉是第一個英語版本，1969 年 Frank Sinatra 的版本最廣為人知**。",
+    "src": "https://fr.wikipedia.org/wiki/Comme_d'habitude"
+   },
+   {
+    "f": "藝人端點分頁全列 **190 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **29 張**，依 first-release-date 排序，**《Comme d'habitude》1967 排第 8**（前一張是 1966 的《N°5》、後一張是 1968 的《Éloïse》）。條目在其他專輯頁上採的是另一套算法（《Le Lundi au soleil》寫 quinzième、《Magnolias for Ever》寫 vingt-cinquième），**與這份排序系統性地差三張，序數不可斷言。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1cfbf85c-dc74-42d6-915e-77033afd0204&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "這首曲子原本叫〈For Me〉、是英語詞，被五個人退過稿",
+   "十一軌裡只有第一首超過三分半，其餘十首全在三分鐘上下"
+  ],
+  "sound": "1967 年 Disques Flèche／Philips 的 12 吋 11 軌、總長約 31 分半。第 1 軌〈Comme d'habitude〉4:11 是全碟最長，其餘十首全部落在 2:02 到 3:19，是那個年代 45 轉思維下的專輯結構。同名曲 1967 年 9 月 17 日錄於巴黎的 Studio de la Gaité，詞由 Gilles Thibaut 與 Claude François 寫、曲由 Jacques Revaux 與 Claude François 作，製作也是 François 自己。這條旋律最初是 Revaux 一個上午寫出來、名為〈For Me〉的英語歌，被幾位歌手退過稿，後來成為 Paul Anka〈My Way〉的底。",
+  "keyTracks": [
+   "Comme d'habitude",
+   "Ce soir je vais boire",
+   "Mais quand le matin"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單記 1967，來源端支持，但店面記 1968，兩處要分清。** release-group first-release-date **1967**、其下唯一的原盤 release 是 1967 的 Disques Flèche／Philips 844 800 BY（FR／Official／12 吋 11 軌）；同名曲條目記單曲 1967 年 11 月發行、1967 年 9 月 17 日錄音。**串流店面 fr 1443781606 的 releaseDate 記 1968-01-01、℗ 1997**——**店面的 1968 與 ℗ 的 1997 都不是原盤年份，行文一律寫 1967**。**同名先行單曲：有，而且與專輯同名**——〈Comme d'habitude〉45 轉 1967 年 11 月，**與專輯同名同年**，凡「取最早那筆」或字串比對的邏輯在這張上一定會撞。",
+  "notes": "**配對風險（本批最嚴重的同名撞盤之一）**：fr 藝人目錄裡有**兩個同名 collectionId**——`1443781606`（11 軌，曲目與 1967 原盤逐位置相符）與 `448424284`（13 軌，曲目完全不同、含一段 21 分 41 秒的 medley，℗ 2008 M.A.T. Music Theme Licensing）。**兩筆的 releaseDate 都記 1968-01-01。必須指名 `1443781606`。**｜**撇號兩種寫法**：來源端 release-group title 用彎撇 U+2019（`Comme d’habitude`），其下 release title 與店面都用 ASCII 直撇（`Comme d'habitude`）——**同一筆資料內部就兩種**。卡單走 ASCII，`keyTracks` 已按 ASCII 寫。｜**擋下策展層的序數風險**：藝人目錄把本張排第 8，但條目在其他專輯頁上用的是另一套算法（差三張）。**行文不得寫序數。**｜曲名正字：原盤〈L'Homme au traineau〉（無 î）、店面〈L'homme au traîneau〉（有 î）；原盤〈Le Martien〉大寫、店面小寫。**行文照原盤。**｜條目的 Reprises／改編段落含大量翻唱資訊，本卡只取 Paul Anka 與 Sinatra 兩筆，**行文不要展開成翻唱清單**。"
+ },
+ {
+  "key": "desc2:Claude François|Le Lundi au soleil",
+  "artist": "Claude François",
+  "album": "Le Lundi au soleil",
+  "facts": [
+   {
+    "f": "release-group cb73c124 的欄位：title「Le Lundi au soleil」、artist-credit「Claude François」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release **全部 FR、全部 Official**：1972 的 Disques Flèche 6450 502（**12 吋，12 軌**）、1998 的 Versailles（CD，12 軌）、2014-09 的 Mercury Records 378 660-7（CD，**15 軌**）。**原盤 12 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/cb73c124-fcbe-4592-b8e4-79a173583f6d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972 FR 原盤（Disques Flèche 6450 502，12 吋）的逐軌曲目與長度：1〈Le Lundi au soleil〉2:59、2〈Nina Nana〉2:23、3〈Il n'y a que l'amour qui rende heureux〉2:19、4〈On ne choisit pas〉2:38、5〈Soudain il est trop tard〉3:16、6〈Qu'on ne vienne pas me dire〉3:27、7〈Belinda〉2:39、8〈Une fille et des fleurs〉2:51、9〈Celui qui reste〉3:00、10〈L'amour se meurt〉2:38、11〈Mon mensonge et ma vérité〉3:02、12〈Tu as tes problèmes, moi j'ai les miens〉3:32。**12 軌、總長約 34 分半；十二首全部落在 2:19 到 3:32，沒有一首超過三分半。第 1 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cb73c124-fcbe-4592-b8e4-79a173583f6d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 253642790：collectionName「Le lundi au soleil」、releaseDate 1972-01-01、copyright「℗ 1972 Sony Music Entertainment (France) S.A.」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 1972 原盤**逐位置相符**、逐軌長度差都在 2 秒內。**同一藝人目錄下另有 `402493909`「Le lundi au soleil / Chanson populaire... / Le téléphone pleuré」（2004-09-19，34 軌）——那是三張碟合一的再版，盤名含本張，子字串比對會配錯。**",
+    "src": "https://itunes.apple.com/lookup?id=253642790&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox：盤名《Le Lundi au soleil》，1972 年發行，格式 33 tours，曲風 chanson française，廠牌 **Disques Flèche**。單曲兩筆：〈Le Lundi au soleil〉1972 年 12 月、〈Celui qui reste〉1973 年 3 月。首句寫本張是 Claude François 的 **quinzième album studio**（第十五張錄音室專輯）。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Lundi_au_soleil_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 190 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 29 張。依 first-release-date 排序，**《Le Lundi au soleil》1972 排第 18**（同年更前面還有一張《Y'a le printemps qui chante》1972）；**條目首句寫的是 quinzième（第十五張），兩邊差三張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1cfbf85c-dc74-42d6-915e-77033afd0204&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人條目的 infobox 與首段：Claude François 1939 年 2 月 1 日生於埃及 Ismaïlia、1978 年 3 月 11 日在巴黎意外身故，活躍期記 **1962–1978**；廠牌欄依年份分列 Fontana（1962–1963）、Philips（1963–1978）、**Flèche（1967–1978）**、Phonogram（1972–1978）、Carrère（1977–1978）。條目首段把〈Le Lundi au soleil〉列為他最為人知的幾首之一。",
+    "src": "https://fr.wikipedia.org/wiki/Claude_Fran%C3%A7ois"
+   }
+  ],
+  "hookCandidates": [
+   "十二首沒有一首超過三分半，整張三十四分鐘就走完",
+   "自己的廠牌 Flèche 從 1967 開到 1978，這張是它中段的出品"
+  ],
+  "sound": "1972 年 Disques Flèche 的 12 吋 12 軌、總長約 34 分半。十二首全部落在 2:19 到 3:32，最長的〈Tu as tes problèmes, moi j'ai les miens〉也只有 3:32——整張維持在單曲長度的節奏上。第 1 軌與盤名同名，是先出唱片、同年 12 月才發 45 轉的順序。條目把曲風記成 chanson française，廠牌是他自己的 Disques Flèche。再發線很短：1998 年一張 12 軌 CD，2014 年一張 15 軌 CD。",
+  "keyTracks": [
+   "Le Lundi au soleil",
+   "Celui qui reste",
+   "Nina Nana"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。release-group first-release-date **1972**、其下唯一的原盤 release 是 1972 的 Disques Flèche 6450 502（FR／Official／12 吋 12 軌）、串流店面 fr 253642790 的 releaseDate 1972-01-01 與 **℗ 1972** 相符、條目 infobox 記 1972。**四處同年。** **同名先行單曲：無，但有同名後行單曲**——〈Le Lundi au soleil〉45 轉在 1972 年 12 月才發，**晚於專輯**；**第 1 軌也與盤名同名**。",
+  "notes": "**擋下策展層的序數風險**：條目寫 **quinzième**（第十五張）、藝人目錄排第 **18**，差三張。卡單 `curatorWhy` 本張沒寫序數，**行文也不要寫**。｜**配對風險**：`402493909`《Le lundi au soleil / Chanson populaire... / Le téléphone pleuré》（34 軌三合一）盤名含本張，**子字串比對會配錯，必須指名 253642790**。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`Il n'y a que l'amour qui rende heureux`、`L'amour se meurt`），兩邊一致。｜正字差異：店面把〈Qu'on ne vienne pas me dire〉打成〈Qu'on ne víenne pas me diré〉、〈Belinda〉打成〈Bélinda〉、〈Mon mensonge et ma vérité〉多一個逗號——**都是店面的錯字，行文一律照原盤**。｜盤名大小寫：原盤〈Le Lundi au soleil〉（大寫 L），店面全小寫。**卡單走原盤寫法。**"
+ },
+ {
+  "key": "desc2:Claude François|Magnolias for Ever",
+  "artist": "Claude François",
+  "album": "Magnolias for Ever",
+  "facts": [
+   {
+    "f": "release-group 27f5c5e8 的欄位：title「Magnolias for Ever」、artist-credit「Claude François」、first-release-date **1977-12**、primary-type Album、secondary-types **空**。轄下只有 3 筆 release **全部 FR、全部 Official**：1977-12 的 Disques Flèche 67.215（**12 吋，10 軌**，title 作「Magnolias For Ever」）、2004-01-13 的 CD（10 軌）、2014-06 的 Mercury Records 378 191-2（CD，**16 軌**）。**原盤 10 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/27f5c5e8-a414-394b-aa60-0b9aaab2f325?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1977-12 FR 原盤（Disques Flèche 67.215，12 吋）的逐軌曲目與長度：1〈Magnolias for Ever〉4:19、2〈Et je t'aime tellement〉3:50、3〈Ève〉4:48、4〈L'amour vient, l'amour va〉3:34、5〈Sacrée chanson〉4:26、6〈Alexandrie Alexandra〉4:25、7〈Rubis〉3:39、8〈Pourquoi toi〉3:51、9〈Écoute ma chanson〉3:40、10〈Disco météo〉4:17。**只有 10 軌，但每一首都超過三分半、四首超過四分鐘——與五年前那張十二首全在三分半以內的結構整個相反。第 1 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=27f5c5e8-a414-394b-aa60-0b9aaab2f325&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 274663463：collectionName「Magnolias for Ever」、releaseDate 1978-01-01、copyright「℗ 1977 East West France」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1977 原盤**逐位置相符**、逐軌長度差都在 5 秒內。**同一藝人目錄下另有三筆同名的後世重混**：`1628882728`〈Magnolias for Ever (2022 Extended Mixes) - EP〉4 軌、`1651629705`〈Magnolias for Ever (Fred Falke Remixes) - Single〉2 軌、`1671647824`《Magnolias for Ever (Mixes & Remixes)》5 軌，**盤名全部含本張，字串比對會配錯**。",
+    "src": "https://itunes.apple.com/lookup?id=274663463&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：盤名《Magnolias for Ever》，1977 年 12 月發行，格式 33 tours，曲風記 **chanson française／pop／disco**，廠牌 Disques Flèche。首句寫本張是 Claude François 的 **vingt-cinquième et dernier album studio du vivant**（第二十五張、也是他生前的最後一張錄音室專輯）；條目另記**不少歌迷把這張碟叫作「Disco」**。單曲四筆：〈Magnolias for Ever〉1977 年 11 月、〈Alexandrie Alexandra〉**1978 年 3 月 15 日**、〈Écoute ma chanson〉1978 年 9 月、〈Rubis〉1978 年 10 月。",
+    "src": "https://fr.wikipedia.org/wiki/Magnolias_for_Ever_(album)"
+   },
+   {
+    "f": "藝人條目的 infobox 與首段：Claude François **1978 年 3 月 11 日在巴黎意外身故**（1939 年 2 月 1 日生於埃及 Ismaïlia），活躍期 1962–1978；條目首段把〈Magnolias for Ever〉與〈Alexandrie Alexandra〉都列為他最為人知的曲目。**這與本張單曲欄的日期對照起來，〈Alexandrie Alexandra〉的 45 轉（1978 年 3 月 15 日）發行時他已經過世四天。**",
+    "src": "https://fr.wikipedia.org/wiki/Claude_Fran%C3%A7ois"
+   },
+   {
+    "f": "藝人端點分頁全列 190 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 29 張。依 first-release-date 排序，**《Magnolias for Ever》1977-12 排第 28**，其後只剩一筆 **1978-04 的《Bordeaux Rosé》**（在他 1978-03-11 身故之後）。**條目寫的是 vingt-cinquième（第二十五張），與這份排序差三張；但「生前最後一張」這個位置兩邊一致——本張之後唯一的一筆已經是身後發行。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1cfbf85c-dc74-42d6-915e-77033afd0204&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十首沒有一首短於三分半，和他五年前那批三分鐘的歌整個反過來",
+   "〈Alexandrie Alexandra〉的單曲上架時，唱它的人已經走了四天"
+  ],
+  "sound": "1977 年 12 月 Disques Flèche 的 12 吋只有 10 軌，但每首都超過三分半、四首破四分鐘，總長比五年前那張十二軌的碟還接近——這是舞曲長度取代單曲長度的結果。條目把曲風記成 chanson française、pop 與 disco，並說不少歌迷直接把這張叫「Disco」。第 1 軌與盤名同名，先行單曲 1977 年 11 月就出了。第 6 軌〈Alexandrie Alexandra〉的 45 轉發在 1978 年 3 月 15 日。再發線只有 2004 的 10 軌 CD 與 2014 的 16 軌 CD 兩筆。",
+  "keyTracks": [
+   "Magnolias for Ever",
+   "Alexandrie Alexandra",
+   "Disco météo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977。release-group first-release-date **1977-12**、其下唯一的原盤 release 是 1977-12 的 Disques Flèche 67.215（FR／Official／12 吋 10 軌）、條目 infobox 記 1977 年 12 月、串流店面 fr 274663463 的 **℗ 1977** 相符。**唯一不同步的是店面的 releaseDate 1978-01-01**（跨月的填充值），**行文一律寫 1977**。**同名先行單曲：有，而且與專輯同名**——〈Magnolias for Ever〉45 轉 1977 年 11 月，**比專輯早一個月**；**第 1 軌也與盤名同名**。",
+  "notes": "**`curatorWhy` 的「生前最後一張錄音室作品」查證屬實**：條目首句明寫 dernier album studio du vivant；藝人目錄裡本張（1977-12）之後只剩 1978-04 的《Bordeaux Rosé》，而藝人條目記他 **1978-03-11** 身故。**這一條可以寫。但同一句裡的序數不行**——條目寫 vingt-cinquième、藝人目錄排第 28，差三張，**行文不得寫「第二十五張」或任何序數**。｜**配對風險（極高）**：fr 藝人目錄裡有四筆盤名含「Magnolias for Ever」的條目，其中三筆是 2022–2023 的重混（4 軌 EP、2 軌單曲、5 軌 mixes）。**必須指名 `274663463`。**（策展層裁定 6 記 search 端點回的正是那筆 Fred Falke 重混單曲。）｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`Et je t'aime tellement`、`L'amour vient, l'amour va`），兩邊一致。｜重音差異：原盤〈Ève〉（大寫 È）、店面〈Eve〉（無重音）；原盤〈Magnolias for Ever〉、release title 作「Magnolias For Ever」、店面作〈Magnolias for ever〉。**行文照 release-group 的 title。**"
+ }
+]
