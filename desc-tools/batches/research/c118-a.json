@@ -238,5 +238,161 @@
   "status": "partial",
   "yearVerified": "一致，1995。release-group first-release-date **1995**、其下唯一一筆 release 是 1995 US 的 Dance Mania DM 085（Official），**沒有更早也沒有更晚的 release**。串流側查無本張，℗ 那一路無從對照，四處對照只成立兩處，仍指向 1995。**同名先行單曲：無**（同名曲〈Housework〉是本張第 4 軌，盤上寫成一個字）。",
   "notes": "**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 寫「Dance Mania 是芝加哥 Ray Barney 1985 年開的廠」。**廠牌條目記的創辦人是 Jesse Saunders，Ray Barney 是一年後替廠牌定名的人**，兩者角色不同。**行文不得把 Ray Barney 寫成創辦人**；要寫廠牌只能寫「1985 年在芝加哥成立、1999 年結束前出過將近三百張唱片」。｜`curatorWhy` 寫「名下最早以整張長篇形態編號發行的碟」**查證屬實**（藝人目錄 6 張長篇裡本張最早）；但同一句的「此前與此後 52 個 release-group 絕大多數是 12 吋與數位單張」要修正成「EP 28 個、Single 13 個」，**行文不要用「絕大多數」帶過**。｜**十一軌無長度**，行文不得寫任何單軌長度或全張時長。｜**曲名寫法**：盤名兩個字《House Work》、同名軌一個字〈Housework〉，兩者不可互換。｜`curatorRisk` 提醒的內容分級註記與本層無關，但曲名〈The Dick〉〈Mo Murder〉確實在原盤曲目列上，**行文選曲時避開**。｜回撈清單本張無候選，重查仍查無。"
+ },
+ {
+  "key": "desc2:Parris Mitchell|Life in the Underground",
+  "artist": "Parris Mitchell",
+  "album": "Life in the Underground",
+  "facts": [
+   {
+    "f": "release-group 5cc1a023 的欄位：title「Life in the Underground」、artist-credit「Parris Mitchell」（藝人實體 MBID abda6360，type Person、country US、**disambiguation「90's Chicago house producer」**）、first-release-date **1994**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1994 US 的 Dance Mania DM 071，Official，**兩張 12 吋、第一張 6 軌第二張 5 軌，合計 11 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5cc1a023-7bfc-45d8-9ea3-870aec03662f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1994 US 原盤（Dance Mania DM 071，兩張 12 吋）的逐軌曲目與長度：第一張 1〈Rubber Jazz Band〉5:26、2〈Pipe Dreams〉3:51、3〈Climb the Walls〉3:45、4〈Beatnix〉3:08、5〈Street Jazz〉2:45、6〈Ghetto Booty〉5:38；第二張 1〈Work It (re-mix)〉8:42、2〈The Underground〉3:34、3〈Follow Me Ghetto (Acid)〉4:41、4〈Computer (re-mix)〉5:41、5〈F.T.M.F.B. (revised)〉4:29。**第一張六軌沒有一軌超過 5:38、第二張的〈Work It (re-mix)〉卻長達 8:42，是全張最長的一軌、也比第一張任何一軌長三分鐘以上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5cc1a023-7bfc-45d8-9ea3-870aec03662f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **584624819**：collectionName「Life In the Underground」、artistName「Parris Mitchell」、releaseDate 1994-01-01、trackCount 11、copyright「℗ 2012 Victor Parris Mitchell」。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1994 原盤**逐位置相符**、逐軌長度**逐軌完全相同**（5:26／3:51／3:45／3:08／2:45／5:38／8:42／3:34／4:41／5:41／4:29）。店面版本多標了三筆客座：第 7 軌 feat. Jammin Gerald、第 8 與第 9 軌 feat. DJ Funk。**上架的就是 1994 原盤的十一軌內容。**",
+    "src": "https://itunes.apple.com/lookup?id=584624819&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **10 個 release-group**：**primary-type=Album 只有 1 個，就是本張**；EP 3 個、Single 4 個、**primary-type=Compilation 0 個**。**本張是這個掛名下唯一一張長篇。** 藝人實體的 disambiguation 明寫「90's Chicago house producer」，用來與同名的另一個實體分辨。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=abda6360-88aa-4b4b-8a27-525f97acc419&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌條目：Dance Mania **1985 年在芝加哥成立、創辦人記的是 Jesse Saunders**，Ray Barney 是一年後才替廠牌定名的人；該廠在 **1999 年結束前發行了將近三百張唱片**，2013 年復刊。條目把它的路線記為 house 與 ghetto house。本張的編號 DM 071 與同廠 DJ Deeon《House Work》的 DM 085 相差十四號、發行年相差一年。",
+    "src": "https://en.wikipedia.org/wiki/Dance_Mania_(record_label)"
+   }
+  ],
+  "hookCandidates": [
+   "第一張唱片六首沒有一首超過五分四十秒，第二張第一首就衝到八分四十二秒",
+   "十一首裡有三首的標題自己帶著 re-mix 或 revised 的註記"
+  ],
+  "sound": "1994 年 Dance Mania DM 071 是兩張 12 吋、六軌加五軌共十一軌。第一張全是短曲，從 2:45 的〈Street Jazz〉到 5:38 的〈Ghetto Booty〉；第二張開頭的〈Work It (re-mix)〉一口氣拉到 8:42，是全張最長的一軌，比第一張任何一軌長出三分鐘以上。十一軌裡有三軌的標題直接寫著這是重做版（〈Work It (re-mix)〉〈Computer (re-mix)〉〈F.T.M.F.B. (revised)〉）。曲名把爵士（〈Rubber Jazz Band〉〈Street Jazz〉）與 ghetto house 的直白用語擺在同一張裡。串流上架的十一軌與原盤逐軌長度完全相同。",
+  "keyTracks": [
+   "Rubber Jazz Band",
+   "Work It",
+   "Street Jazz"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1994。release-group first-release-date **1994**、其下唯一一筆 release 是 1994 US 的 Dance Mania DM 071（Official），沒有任何再發建檔。串流店面 us 的 584624819 releaseDate 記 **1994-01-01**（**店面只有年份可信、月日是填充值**）、℗ 欄寫「℗ 2012 Victor Parris Mitchell」——**那是 2012 年數位化的錄製聲明，不是原盤年份**；十一軌長度與原盤逐軌完全相同，可確認是同一批錄音。四處對照後年份仍是 1994。**同名先行單曲：無。**",
+  "notes": "**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 沒有提廠牌創辦人，但同批 DJ Deeon 那張的 `curatorWhy` 把 Dance Mania 寫成「Ray Barney 1985 年開的廠」。**廠牌條目記的創辦人是 Jesse Saunders，Ray Barney 是一年後替廠牌定名的人**，兩張卡的行文都不得把 Ray Barney 寫成創辦人。｜`curatorWhy` 寫「10 個 release-group 裡唯一一張 primary-type=Album」**查證屬實**。｜`curatorWhy` 寫「與 DJ Deeon 隔年的《House Work》是同一個廠、同一批人」——**同廠查證屬實（DM 071 與 DM 085），但「同一批人」沒有查到來源**；店面把本張第 8、9 軌標為 feat. DJ Funk、第 7 軌標為 feat. Jammin Gerald，**這三筆客座才是可引的關係，DJ Deeon 沒有出現在本張的曲目列上**。｜**曲名的重做註記**：原盤寫 `(re-mix)`（帶連字號）、店面寫 `(Remix)`，行文照原盤。｜**第 11 軌的縮寫**：原盤作〈F.T.M.F.B. (revised)〉（末尾帶句點），店面作〈F.T.M.F.B (Remix)〉（末尾無句點）。｜回撈清單本張無候選；卡單原記的 584624819 逐軌覆核成立，是可用的固定試聽來源。"
+ },
+ {
+  "key": "desc2:Steve Poindexter|Man at Work",
+  "artist": "Steve Poindexter",
+  "album": "Man at Work",
+  "facts": [
+   {
+    "f": "release-group 484c5b45 的欄位：title「Man at Work」、artist-credit「Steve Poindexter」（藝人實體 MBID 2d41691a，type Person、country US）、first-release-date **1996**、primary-type Album、secondary-types **空**。轄下 **3 筆 release**：1996 IT 的 ACV ACVDP 014（**兩張 12 吋、每張 4 軌，合計 8 軌**，Official）、1996 IT 的 ACV ACVCD014（**CD，12 軌**，**status 欄是空的**）、2024-12-16 XW 的 Numero Group NUM6146DIGITAL（數位，8 軌，Official）。**兩筆 1996 年的義大利發行軌數不同，2024 年的數位再發跟著 8 軌的黑膠版走。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/484c5b45-21a3-3485-93ed-9ab9437cf242?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 IT 黑膠版（ACV ACVDP 014，兩張 12 吋）的逐軌曲目與長度：第一張 1〈LSD〉4:31、2〈Destorsion〉3:17、3〈Sput Nik Jazz〉3:27、4〈Gobber Grade〉3:29；第二張 1〈Life's Lil Pleasures〉4:19、2〈U.F.O.〉5:15、3〈Cartoon Fun〉3:55、4〈Benny Hill〉3:40。**八軌全部在 3:17 到 5:15 之間，沒有一軌超過六分鐘**——與同批芝加哥碟動輒七、八分鐘的長段落完全相反。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=484c5b45-21a3-3485-93ed-9ab9437cf242&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同年的 CD 版（ACV ACVCD014）是 12 軌**：前八軌與黑膠版逐位置相符（各軌長度多 1 到 3 秒），**末尾多出 9〈Work That Mother Fucker (Paul Johnson remix)〉4:50、10〈Short Circuit〉4:18、11〈Whiplash〉6:03、12〈Born to Freak〉5:03**。**〈Whiplash〉6:03 是 CD 版才有的最長一軌，黑膠版沒有任何一軌超過 5:15。** 2024-12-16 的數位再發是 8 軌，與黑膠版相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=484c5b45-21a3-3485-93ed-9ab9437cf242&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1785790436**（另有一筆內容完全相同的 1778099056）：collectionName「Man At Work」、artistName「Steve Poindexter」、releaseDate 2002-01-01、trackCount 8、copyright「℗ 2024 The Numero Group」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**，曲名與曲序與 1996 黑膠版**逐位置相符**、逐軌長度差都在 1 秒內（4:30／3:18／3:27／3:29／4:21／5:16／3:54／3:40）。**上架的是 8 軌的黑膠版內容，不是 12 軌的 CD 版**；店面的 releaseDate 記 2002 但 ℗ 掛 2024，兩者都不是原盤年份。",
+    "src": "https://itunes.apple.com/lookup?id=1785790436&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **17 個 release-group**：**primary-type=Album 只有 1 個，就是本張**；EP 14 個、Single 2 個、**primary-type=Compilation 0 個**。**本張是名下唯一一張長篇。** CD 版第 9 軌〈Work That Mother Fucker (Paul Johnson remix)〉的原曲，在同一份目錄裡是 1980 年代末的一筆非長篇作品。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2d41691a-502d-487f-a10e-0646db708304&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "八軌沒有一軌超過五分十五秒，在這批芝加哥碟裡短得反常",
+   "同年的 CD 版在末尾多塞了四軌，其中一軌是他自己成名曲的重混"
+  ],
+  "sound": "1996 年 ACV ACVDP 014 的黑膠版是兩張 12 吋、每張四軌共八軌，八軌全在 3:17 到 5:15 之間，沒有一軌超過六分鐘——同一批芝加哥碟多半七、八分鐘一軌，這張的尺度短得反常。曲名一路是縮寫與冷笑話：〈LSD〉〈Destorsion〉〈Sput Nik Jazz〉〈U.F.O.〉〈Cartoon Fun〉，最後一軌直接叫〈Benny Hill〉。同年的 CD 版把同樣八軌收進去再加四軌，包含一軌他自己成名曲的重混與 6:03 的〈Whiplash〉；2024 年的數位再發則回到八軌的黑膠內容。",
+  "keyTracks": [
+   "LSD",
+   "Sput Nik Jazz",
+   "Benny Hill"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996；**卡單提示的 1995 一說在本層查不到支持**。release-group first-release-date **1996**、其下兩筆 1996 IT 的 ACV 發行同年（ACVDP 014 為 Official、ACVCD014 的 status 欄是空的，依裁定 43／57／65／78 不採為背書），第三筆是 2024-12-16 的數位再發。串流店面 us 的 1785790436 releaseDate 記 **2002-01-01**、℗ 欄「℗ 2024 The Numero Group」——**兩個都不是原盤年份**，2002 那個數值在本層找不到任何對應的發行，判為店面的填充值。四處對照後年份取 1996。**同名先行單曲：無。**",
+  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **ACVDP 014（黑膠、8 軌）**，同年另有 **ACVCD014（CD、12 軌）**。**行文只能引 8 軌**；〈Work That Mother Fucker (Paul Johnson remix)〉〈Short Circuit〉〈Whiplash〉〈Born to Freak〉四軌**只在 CD 版上**，不得當本張曲目。｜`curatorRisk` 要求覆核「Discogs 記 1995」這件事：**本層查到的三筆 release 全部記 1996，串流側記 2002 與 ℗ 2024，沒有任何一處出現 1995**。行文一律寫 1996。｜`curatorWhy` 寫「17 個 release-group 裡唯一一張 primary-type=Album」**查證屬實**。｜`curatorWhy` 寫「2024 年 Numero Group 把它重新數位發行」**查證屬實**（2024-12-16 XW，NUM6146DIGITAL，8 軌）。｜`curatorWhy` 提到的〈Work That Mutha Fucker〉：**原盤八軌裡沒有這一軌**，它只在 CD 版第 9 軌以 Paul Johnson 重混的形式出現，且該筆的正式曲名是〈Work That Mother Fucker〉（Mother 不是 Mutha）。｜**盤名大小寫兩種**：原盤與 release-group 是《Man at Work》，CD 版、數位再發與店面都寫《Man At Work》。｜店面兩筆 1785790436 與 1778099056 **內容逐軌相同**，取前者即可。"
+ },
+ {
+  "key": "desc2:Fast Eddie|Jack to the Sound",
+  "artist": "Fast Eddie",
+  "album": "Jack to the Sound",
+  "facts": [
+   {
+    "f": "release-group 7200aa7f 的欄位：title「Jack to the Sound」、artist-credit **「Fast Eddie」**、藝人實體 MBID c0b3d632 的**主名卻是「“Fast” Eddie Smith」（帶彎雙引號 U+201C／U+201D）**，type Person、country US、disambiguation「Chicago house producer」。first-release-date **1988**、primary-type Album、secondary-types **空**。轄下 **5 筆 release**：1988 GB 的 D.J. International Records DJART 902（**兩張 12 吋、10 軌＋2 軌，status 欄空的**）、1988 DE 的 BCM Records 50140／D.J. International 50140（CD，10 軌，Official）、1988 ES 無廠牌（CD，10 軌，Official）、1988 US 無廠牌（CD，10 軌，Official）、1988 GB 的 Westside Records CDART 902（CD，10 軌，Official）。**五筆全部記 1988。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7200aa7f-7307-388d-8138-446932de6d9b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 GB 的兩張 12 吋（D.J. International Records DJART 902）逐軌曲目與長度：第一張 1〈Acid Thunder〉4:30、2〈Hip House〉4:24、3〈I Can Dance〉5:00、4〈Let's Go〉5:18、5〈Keep On Dancing〉4:08、6〈Yo Yo Get Funky〉5:00、7〈Can U Still Dance〉4:16、8〈Jack 2 The Sound〉5:07、9〈Clap Your Hands〉5:00、10〈Funk Makes You Move〉4:08；**第二張是兩段〈Jack To The Sound (Megamix)〉，未記長度。** 同年的 CD 版（BCM 50140）只有那 10 軌、沒有 megamix，逐軌長度與黑膠差 2 到 8 秒。**同名曲在盤上寫成〈Jack 2 The Sound〉，盤名卻是《Jack to the Sound》。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7200aa7f-7307-388d-8138-446932de6d9b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1844558545**：collectionName「Jack to the Sound (Digitally Remastered)」、artistName「Fast Eddie」、releaseDate 2014-09-22、trackCount 10、copyright「℗ 2014 AOU Entertainment」。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1988 年的 10 軌版**逐位置相符**、逐軌長度差都在 5 秒內（4:32／4:28／5:03／5:08／4:07／5:01／4:09／5:03／4:58／4:03）。**上架的是 10 軌版、沒有兩段 megamix**；曲名拼法跟著 CD 版寫〈Yoyo Get Funky〉，不是黑膠版的〈Yo Yo Get Funky〉。",
+    "src": "https://itunes.apple.com/lookup?id=1844558545&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **24 個 release-group**：primary-type=Album 5 個（**secondary-types 為空的只有 3 個**，另 2 個帶 Compilation）、EP 2 個、Single 16 個、**primary-type=Compilation 0 個**。3 張長篇依序是 **1988 本張、1989《Most Wanted》、1991《Straight Jackin'》**——**本張是名下最早的一張長篇**；兩張帶 Compilation 的整編（《The Best of the DJ Fast Eddie》與《Housemasters: The Best Of》）都是 1989 年的。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c0b3d632-282e-4323-a242-104f60bb8645&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第二張唱片整張只放兩段 megamix，正式曲目全在第一張上",
+   "同名那一軌在盤上寫成 Jack 2 The Sound，盤名卻用 to"
+  ],
+  "sound": "1988 年 D.J. International DJART 902 是兩張 12 吋：第一張裝完十軌正式曲目，從 4:08 的〈Keep On Dancing〉與〈Funk Makes You Move〉到 5:18 的〈Let's Go〉，十軌全部落在四到五分半之間；第二張整張只放兩段〈Jack To The Sound (Megamix)〉，未記長度。同年在德國、西班牙、美國與英國另發的四種 CD 都只收那十軌、沒有 megamix。曲名把 acid（〈Acid Thunder〉）、hip house（〈Hip House〉〈Yo Yo Get Funky〉）與舞池指令（〈I Can Dance〉〈Clap Your Hands〉〈Keep On Dancing〉）並置，同名的那一軌寫成〈Jack 2 The Sound〉。",
+  "keyTracks": [
+   "Acid Thunder",
+   "Hip House",
+   "Yo Yo Get Funky"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**、其下 **5 筆 release 全部記 1988**（GB 黑膠、DE／ES／US／GB 四種 CD），**沒有任何一筆把年份往後推**。GB 黑膠那筆的 status 欄是空的（依裁定 43／57／65／78 不採為背書），背書取同年四筆 Official 的 CD。串流店面 us 的 1844558545 releaseDate 記 **2014-09-22**、℗ 欄「℗ 2014 AOU Entertainment」——**那是 2014 年重製版的聲明，不是原盤年份**；十軌與 1988 年的 10 軌版逐位置相符、長度差在 5 秒內。四處對照後年份仍是 1988。**同名先行單曲：無**（同名軌在盤上寫成〈Jack 2 The Sound〉）。",
+  "notes": "**掛名依本批裁定第 3 條處理**：藝人實體主名是彎雙引號的 `“Fast” Eddie Smith`，本張的 artist-credit 是 `Fast Eddie`，卡片取後者，**行文一律寫 `Fast Eddie`，不要出現彎引號的那個寫法**。｜**軌數兩種（裁定 157）**：黑膠版是兩張 12 吋、10 軌正式曲目＋2 段 megamix；四種 CD 與串流版都只有 10 軌。**行文引「十軌」是安全的；要提兩張唱片就必須說明第二張放的是 megamix。**｜`curatorWhy` 寫「hip house 這個做法被整理成一張碟的最早例子之一」是風格斷語，**本批沒有查到可引的來源**；但曲目列上確實有一軌就叫〈Hip House〉，行文可以引曲名、不要引斷語。｜`curatorWhy` 寫「24 個 release-group 裡 primary-type=Album 只有 3 個」：**primary-type=Album 其實是 5 個**，3 是「secondary-types 為空」那一項；「這是最早的一張」**查證屬實**。｜`curatorWhy` 說「這張之後才有 1989 年的《Most Wanted》與《The Best of the DJ Fast Eddie》」**查證屬實**（兩張都是 1989）。｜**曲名拼法兩套**：黑膠寫〈Yo Yo Get Funky〉（分寫），CD 與店面寫〈Yoyo Get Funky〉（連寫）；黑膠版曲名全部首字母大寫、CD 版用一般大小寫。本檔 `keyTracks` 依黑膠原盤。"
+ },
+ {
+  "key": "desc2:Tyree|Tyree's Got a Brand New House",
+  "artist": "Tyree",
+  "album": "Tyree's Got a Brand New House",
+  "facts": [
+   {
+    "f": "release-group 7316a3a9 的欄位：title「Tyree's Got a Brand New House」、artist-credit「Tyree」（藝人實體 MBID ef71268b，type Person、**area 記 DE**、**disambiguation「US acid house DJ Tyree Cooper」**）、first-release-date **1988**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1988 DE 的 BCM Records 50139，Official，**CD，10 軌**。**美版原盤沒有建檔，這裡查得到的只有德版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7316a3a9-4217-3cd1-b6a4-7042e5d1260b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 DE 版（BCM Records 50139，CD）的逐軌曲目與長度：1〈Acid Over〉4:30、2〈T.J.G.P.〉4:20、3〈Life〉5:02、4〈Let's Get Together〉6:07、5〈Turn Up the Bass〉5:09、6〈House Line〉4:02、7〈Never Let You Go〉5:53、8〈Acid Overture〉4:10、9〈Acid Is My Life〉4:22、10〈T's Revenge〉5:06。**十軌裡有三軌的標題帶 acid 一字（第 1、8、9 軌），最長的〈Let's Get Together〉6:07、最短的〈House Line〉4:02。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7316a3a9-4217-3cd1-b6a4-7042e5d1260b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**〈Turn Up the Bass〉是本張的第 5 軌**（5:09），不是本張之後才出現的曲子。同一份藝人目錄裡，這個標題另外出現在 1988 年之後的多筆非長篇條目上，但**本張的曲目列上就有它**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7316a3a9-4217-3cd1-b6a4-7042e5d1260b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **37 個 release-group**：primary-type=Album 9 個（**secondary-types 為空的 7 個**，另 2 個帶 Compilation）、EP 13 個、Single 12 個、**primary-type=Compilation 0 個**。7 張長篇依序是 **1988 本張、1989《Nation of Hip House》、1991《The Time Iz Now!》、1998《Welcome To Ty'z House》、2008-10-15《Hip Housin'》、2010-04-25《Podcast Feature | Five》、2013-11《Side A》**——**本張是名下最早的一張長篇。** 兩張帶 Compilation 的整編分別是 1999 與 2007 年的。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ef71268b-07b0-4fc9-aafc-c1909da8edef&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=Tyree+Tyree+s+Got+a+Brand+New+House&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡有三軌的標題帶著 acid 一字，第一軌就叫 Acid Over",
+   "資料庫裡查得到的只有德國版，美版原盤根本沒建檔"
+  ],
+  "sound": "1988 年 BCM Records 50139 的德版 CD 十軌，從 4:02 的〈House Line〉到 6:07 的〈Let's Get Together〉，十軌全部落在四到六分之間。十軌裡有三軌的標題直接帶 acid——第 1 軌〈Acid Over〉、第 8 軌〈Acid Overture〉、第 9 軌〈Acid Is My Life〉——中段則是〈Turn Up the Bass〉5:09 與〈House Line〉4:02 這種 hip house 的呼喊式曲目。第 2 軌〈T.J.G.P.〉與末軌〈T's Revenge〉都拿他自己的名字首字母當標題。這張在資料庫裡只有德版一筆建檔，美版原盤查不到。",
+  "keyTracks": [
+   "Acid Over",
+   "Turn Up the Bass",
+   "T's Revenge"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**、其下唯一一筆 release 是 1988 DE 的 BCM Records 50139（Official）。**美版原盤（卡單記為 D.J. International DJ#1016）沒有建檔，年份無法從第二筆 release 交叉驗證**；串流三店查無、℗ 那一路也對不了。四處對照只成立兩處，仍指向 1988。**同名先行單曲：無。**",
+  "notes": "**擋下策展層一處（事實順序）**：`curatorWhy` 寫「也是〈Turn Up the Bass〉出現之前他在該廠的定位之作」。**〈Turn Up the Bass〉就是本張的第 5 軌**（5:09），不是本張之後才有的曲子。**行文不得寫「在〈Turn Up the Bass〉之前」**；要提這首只能寫成本張的曲目。｜`curatorWhy` 寫「37 個 release-group 裡 primary-type=Album 有 6 個」：**primary-type=Album 其實是 9 個**、secondary-types 為空的 7 個；「這是最早的一張」**查證屬實**。｜`curatorRisk` 說「美版 D.J. International DJ#1016 沒有建進來、label 欄以另一份資料的美版編號為準」**屬實**：本層只查得到 1988 DE 的 BCM 50139 一筆。**行文若要寫廠牌，寫得到的只有德版那家；要寫美版編號就得標明來源不在本層。**｜`curatorWhy` 說本張與 Fast Eddie 那張「同年、同廠、相鄰編號」——**同年查證屬實**，但**同廠與相鄰編號都建立在美版編號上，本層查不到**；Fast Eddie 那張本層查得到的是 GB 與 DE／ES／US 五筆，Tyree 這張只有 DE 一筆。行文不要把兩張的編號連號當事實寫。｜藝人 area 記 DE（他長期居柏林），**用地區篩選會把他排除在美國線之外**，這是本張的檢索陷阱。"
  }
 ]
