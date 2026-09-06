@@ -1,0 +1,289 @@
+[
+ {
+  "artist": "許冠傑",
+  "album": "’79夏日之歌集",
+  "year": 1979,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Polydor",
+  "why": "許冠傑 1979 年在 Polydor 的專輯（2427 321），收〈加價熱潮〉〈學生哥〉，是他從電影歌曲（《鬼馬雙星》《半斤八両》《賣身契》）轉成「不靠電影也能撐一張唱片」的第一張，也是粵語流行從市井諷刺走向都市青年題材的節點。實掃 seed_cards.json：許冠傑池中 5 張——《鬼馬雙星》(1974)、《天才與白痴》(1975)、《半斤八兩》(1976)、《賣身契》(1978)、《財神到》(1978)，全部是 1974–78 的電影歌曲集，1979 年之後一張都沒有。本卡補在《財神到》後面，接上他 1980 年代的目錄。可查證來源：MB 轄下 6 個 release 全為 Official（1979 HK Polydor 2427 321／3225 321、1999-10-01 Polydor 513 975-2(X)、2007-06-22 Polydor 173 914-8 等）。",
+  "risk": "**盤名開頭是彎撇號 ’**（U+2019），不是直撇號也不是 ASCII 引號；`audits/pool-artist-name-splits.md` 記過彎直撇號是池中最常見的分裂型態，兩種寫法都要進 queryAlias。撞卡：池中《半斤八兩》用「兩」，MB 那張用「半斤八両」（55b343d1）——是同一張碟的兩種寫法，摺疊後不相等、工具抓不到，本批刻意不收它。掛名：池中已有「許冠傑」，沿用。封面與試聽：Apple 藝人目錄在 tw／hk 都有兩個候選，collectionId 1443396903《復黑王: '79夏日之歌集》(1979) 與 1443841605《79夏日之歌集》(1999)，前者是復黑王復刻、後者去掉了撇號；本卡優先取 1443396903，比對曲目後若不符再換。轄下 6 個 release，CAA 命中機會中等。",
+  "mbNote": "釘 release-group f327b431-f59a-4e2b-855a-57f45091a48a。回問確認：title「’79夏日之歌集」、artist-credit「許冠傑」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1979 HK Polydor 3225 321、1979 HK Polydor 2427 321、1999-10-01 HK Polydor 513 975-2(X)、2005-04-27 XW、2007-06-22 HK Polydor 173 914-8、無日期 XW）。藝人 MBID 36ef3857-5be4-4ee0-9e8b-3280a9913a67，以 release-group?artist=…&limit=100&offset= 分頁全列 89 個 RG。刻意不釘：55b343d1-3290-35fb-a139-e699c0a32419《半斤八両》（1976，池中已有《半斤八兩》，同碟異寫）、974d3d5c-f547-4960-9389-e8da8a5da7d6《金唱片精選》(1976 Compilation)、d470191f-0b49-4603-a2fa-a6858cafc677《許冠傑精選》(1985 Compilation)、9218211f-7a4b-41f5-af53-4d09f74dafcb《Sam Hui新曲與精選》(1988 Compilation)、9bbe1f42-988c-40b8-a38a-588a2893cedc《夢追い》(1981 EP、日本盤)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "'79夏日之歌集；79夏日之歌集；復黑王 '79夏日之歌集；Sam Hui 79 Summer Songs",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "許冠傑",
+  "album": "念奴嬌",
+  "year": 1980,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Polydor",
+  "why": "1980 年 Polydor 的《念奴嬌》（2427 334），是許冠傑把宋詞詞牌名拿來當專輯與主打曲名的一次轉向，也是他 1980 年代最常被回頭引用的一張。實掃 seed_cards.json：許冠傑池中 5 張全在 1974–78，1980 年代空白；本卡與本批的《’79夏日之歌集》一起，把他從電影歌曲期接到 Polydor 個人專輯期。可查證來源：MB 轄下 6 個 release 全 Official（1980 HK Polydor 2427 334／3225 334、1992 Polydor 5139772、1999-10-01 Polydor 513 977-2(X)、2009-06-05 Polydor 2709534）。",
+  "risk": "撞卡風險低（池中 5 張許冠傑盤名皆不同；「念奴嬌」全池 0 筆）。同名陷阱：詞牌「念奴嬌」被大量華語歌手拿來當曲名，比對時要鎖 1980 年 Polydor 這一版，不要撈到別人的同名碟。掛名：池中已有「許冠傑」，沿用。封面與試聽：Apple 藝人目錄 tw／hk 都有 collectionId 1443600141《念奴嬌》1980，兩店面同一個 id，配對應該會過；轄下 6 個 release，CAA 命中機會中等。",
+  "mbNote": "釘 release-group 55f8ed88-ead1-49ea-80bf-e5b17d1dd2ac。回問確認：title「念奴嬌」、artist-credit「許冠傑」、first-release-date 1980、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1980 HK Polydor 2427 334、1980 HK Polydor 3225 334、1992 HK Polydor 5139772、1999-10-01 HK Polydor 513 977-2(X)、2009-06-05 HK Polydor 2709534、無日期 XW）。藝人 MBID 36ef3857-5be4-4ee0-9e8b-3280a9913a67，名下 89 個 RG。刻意不釘：d13ffb80-8347-4cfb-95a7-192025007d2a《摩登保鑣》(1981-03，電影歌曲集)、40b16abb-9a89-40f2-855f-947565a98f96《難忘您·紙船》(1982)、37fec8c9-da71-4fad-8230-817a794ea233《新的開始》(1983)、03714bc9-7399-473f-bbc4-10b3c84d8055《斤両十足》(1985 Single)、f327b431-f59a-4e2b-855a-57f45091a48a《’79夏日之歌集》(1979，本批另立一卡)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sam Hui 念奴嬌；Nian Nu Jiao；許冠傑 念奴嬌 1980",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "羅文",
+  "album": "小李飛刀",
+  "year": 1978,
+  "genres": [
+   "pop"
+  ],
+  "label": "Crown Records",
+  "why": "1978 年娛樂唱片（Crown Records CST-12-31）的《小李飛刀》是羅文最早、也是最具代表性的電視劇歌曲集：同名主題曲讓「武俠劇主題曲」成為粵語流行的一個獨立品類，其後《射雕英雄傳》《絕代雙驕》都循這條路。實掃 seed_cards.json：羅文池中 1 張，是《幾許風雨》(1986)——他 1986 年之後的一張，而他 1977–83 年在娛樂與 EMI 的黃金期（《家變》《小李飛刀》《強人》《親情》《卉》《射雕英雄傳》）池中一張都沒有。本卡補的是這一段的起點。可查證來源：MB release 掛 Crown Records CST-12-31、HK、Official。",
+  "risk": "撞卡風險低（池中羅文 1 張、盤名不同）。掛名：池中已有「羅文」，沿用；MB 上另有一個簡體實體「罗文」(7f3f378a，CN)，不要選錯。**Apple 目錄未命中**：藝人目錄在 tw／hk 都查不到《小李飛刀》；依第 173 條，藝人頁目錄端點會被 limit=200 截斷、也會漏碟，這個「查無」不算數，判 unavailable 前要用曲名或 catno 反查，交研究層覆核。CAA 只有 1 個 release，預估要人工補封面。同名陷阱：〈小李飛刀〉被翻唱極多，且 2000 年代有同名電視劇原聲，比對曲目要鎖 1978 年娛樂唱片這一版。",
+  "mbNote": "釘 release-group 1caf5a24-4a36-45a0-a0bd-1916e7f25fac。回問確認：title「小李飛刀」、artist-credit「羅文」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（1978 HK、Official、Crown Records CST-12-31）。藝人 MBID 3ac59c53-a679-49c0-9904-ef9df0e4e93b（HK、1945-02-12），以分頁全列 47 個 RG。刻意不釘：78b92d9e-0631-49b0-9e28-d701a36cf41a《強人》(1978 同年)、60109392-3416-4956-9638-b5fa65d2de87《死亡遊戲》(1978 同年)、c6a6e96f-7cc8-45f4-a679-29bca52f93a8《家變》(1977)、2634766f-e405-47ad-ac36-ce253bf7078f《射雕英雄傳》(1983，MB 同時掛在羅文與甄妮名下，是對唱盤)、7e682c59-40f7-403b-945d-9b3e619fca20《絕代雙驕》(1979 Compilation)。另注意他名下有四個純《羅文》同名 RG（0ac07eee／7ba01637 1988、1c5510cf 2003、efce176d 2023）與一個《羅文》Single（b98a09bb），全部刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Roman Tam 小李飛刀；罗文 小李飞刀；Crown Records CST-12-31",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "羅文",
+  "album": "卉",
+  "year": 1981,
+  "genres": [
+   "pop"
+  ],
+  "label": "EMI",
+  "why": "1981 年 EMI（EMGS-6078）的《卉》是羅文從娛樂唱片轉到 EMI 後的代表作，也是他把粵語流行往「以概念與造型整體包裝」推的一張，之後《射雕英雄傳》《舞台上》都延續這個做法。實掃 seed_cards.json：羅文池中 1 張《幾許風雨》(1986)；本卡與本批的《小李飛刀》(1978) 一起，把他 1977–86 的目錄從一張補到三張。可查證來源：MB 轄下 4 個 release 全 Official，其中 1981 HK EMI EMGS-6078 與無日期的 HK EMI CDFH10117；Apple tw／hk 兩店面都有 collectionId 1442597535《卉》1981、724703745《羅文記念全集(五): 卉》1981、720238158《Lpcd1630: 羅文 卉》2009 三個版本。",
+  "risk": "**盤名只有一個字**：「卉」摺疊後是單字，任何含這個字的盤名都會被子字串比對撈到，去重與封面比對一定要帶藝人一起查（本批人工核對過池中 0 筆）。掛名：池中已有「羅文」，沿用；MB 另有簡體實體「罗文」(7f3f378a) 不要選錯。封面與試聽：Apple 有三個候選 collectionId，優先取 1442597535（盤名與年份都與 MB 一致），其餘兩個是全集與 LPCD1630 復刻，取封面前要比對曲目。轄下 4 個 release，CAA 命中機會中等。",
+  "mbNote": "釘 release-group 5406c4c2-348b-4199-8ff7-faa6e94e4003。回問確認：title「卉」、artist-credit「羅文」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 4 個 release 全 Official（1981 HK EMI EMGS-6078、無日期 HK EMI CDFH10117、兩筆無日期 XW）。藝人 MBID 3ac59c53-a679-49c0-9904-ef9df0e4e93b，名下 47 個 RG。刻意不釘：4182df3e-2c98-4670-9fa9-3230c43aa269《仲夏夜》(1981 同年另一張)、8c8c1616-4ce4-44c7-a2cc-3b895db803f2《我的挑選》(1982 Compilation)、2755cf03-034c-4720-94db-f1d39c8272f9《絲綢之路巡禮名曲集》(1983 Compilation)、9406f38c-543f-4441-bdd9-e26f1aed8201《羅文 / Roman》(1985)、1caf5a24-4a36-45a0-a0bd-1916e7f25fac《小李飛刀》(1978，本批另立一卡)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Roman Tam 卉；羅文記念全集(五) 卉；Lpcd1630 羅文 卉；EMI EMGS-6078",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "甄妮",
+  "album": "秋歌",
+  "year": 1976,
+  "genres": [
+   "pop"
+  ],
+  "label": "",
+  "why": "甄妮 1976 年的《秋歌》是她從台灣國語歌壇轉往香港、開始以粵語與國語雙軌經營之前的代表作，同名主打曲至今仍是她演唱會的固定曲目。實掃 seed_cards.json：甄妮池中 1 張，是《誓言》(1972)——她出道第一張；1976 年之後到 1990 年代這二十年（也是她產量最高的期間）池中完全空白。本卡與本批的《海上花》(1986) 一起，把她的目錄從 1 張補到 3 張、涵蓋 70 與 80 兩個年代。可查證來源：Apple tw／hk 兩店面目錄都有 collectionId 1864921890《秋歌》1976，另有 1714155897《秋歌 (復刻版)》2007 與 1748501318《秋歌》2023 兩個再發。",
+  "risk": "**MB 這筆的 release 資料很薄**：轄下只有 1 個 release，沒有國別、沒有 status、沒有廠牌，因此廠牌欄留空、不臆測；年份取 RG 的 first-release-date 1976，與 Apple 標的 1976 一致，兩邊互相印證。撞卡：池中甄妮《誓言》(1972) 盤名不同。掛名：池中已有「甄妮」，沿用；MB 上另有一個同名實體 0e93a874（無國別）不要選錯。封面與試聽：Apple 有三個候選，優先取 1864921890（年份與 MB 一致），2007 復刻版與 2023 版取封面前要比對曲目。CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 506004e5-6174-40be-a371-1d93840d11de。回問確認：title「秋歌」、artist-credit「甄妮」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 1 個 release（1976，國別／status／廠牌皆空）。藝人 MBID d394677d-d434-4cfe-ab85-0d7eaea9dcbd（HK、1953-02-20），以分頁全列 51 個 RG。刻意不釘：798b87c4-3431-4957-be72-bcfda55cadf3《奇妙的爱》(1976 同年，MB 簡體登錄)、6f47a331-a7cc-4d0b-a963-de233a691a8e《變色的太陽：全部原聲帶插曲／不一樣的愛》(1976-03 Soundtrack)、22453ec1-c92b-46eb-a4be-324d7d64c7bf《信不信由你 / 奇妙的愛》(無年份、與前者內容重疊)、ab8ebe52-337e-44af-a033-5fa75d0e2280《满山花开一片情》(1977 簡體登錄)、52340aa3-b852-41af-933b-bf0420da4bd5《誓言》(1972，池中已有)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jenny Tseng 秋歌；秋歌 (復刻版)；甄妮 秋歌 1976",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "甄妮",
+  "album": "海上花",
+  "year": 1986,
+  "genres": [
+   "pop"
+  ],
+  "label": "喜瑪拉雅唱片",
+  "why": "1986 年喜瑪拉雅（HPR-7508）的《海上花》是甄妮在台灣發行的國語專輯，同名主打曲出自關錦鵬電影《地下情》、由羅大佑作曲，是 1980 年代港台合製流行歌裡最常被引用的一首。實掃 seed_cards.json：甄妮池中 1 張《誓言》(1972)；本卡與本批的《秋歌》(1976) 一起把她的目錄補到三張。池中已有羅大佑 4 張（《之乎者也》《未來的主人翁》《家》《愛人同志》），這張是他替別人寫的曲在池中的第一個落點。可查證來源：MB release 掛喜瑪拉雅 HPR-7508、TW、Official。",
+  "risk": "**同名同年的 EP／Album 雙胞胎**：MB 上「海上花」有兩個 RG——299f6353（1986 Album，TW 喜瑪拉雅，本卡釘的）與 91729a37（1986 EP，Sony Music），盤名年份完全相同，只能用 primary-type 與 MBID 分辨（第 126／153 條）。另注意侯孝賢 1998 年電影《海上花》與其原聲帶是完全不相干的東西，比對時不可混用。掛名：池中已有「甄妮」，沿用。**Apple 目錄未命中**：tw／hk 兩店面藝人目錄都查不到《海上花》，依第 173 條這個查無不算數（目錄端點會漏碟），交研究層用曲名反查覆核；CAA 只有 1 個 release，預估要人工補封面。",
+  "mbNote": "釘 release-group 299f6353-ae68-4891-b446-412c4f88dfce。回問確認：title「海上花」、artist-credit「甄妮」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 1 個 release（1986 TW、Official、喜瑪拉雅 HPR-7508）。藝人 MBID d394677d-d434-4cfe-ab85-0d7eaea9dcbd，名下 51 個 RG。刻意不釘：91729a37-741a-4e53-8456-d2786e823183《海上花》（1986 EP、Sony Music，同名同年的雙胞胎，已回問確認 primary-type 是 EP）、8e16aa47-5f76-4a10-b654-ea719f08a73c《新曲精選珍藏版》(1987 Compilation)、2634766f-e405-47ad-ac36-ce253bf7078f《射雕英雄傳》(1983，與羅文的對唱盤，MB 同時掛兩人)、8549dd1f-3786-454c-ab65-42460e296be8《留下我美梦》(1986 同年、簡體登錄)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jenny Tseng 海上花；甄妮 海上花 1986；喜瑪拉雅 HPR-7508",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "徐小鳳",
+  "album": "風雨同路",
+  "year": 1978,
+  "genres": [
+   "pop"
+  ],
+  "label": "CBS/Sony",
+  "why": "1978 年 CBS/Sony（CBA 101）的《風雨同路》是徐小鳳從夜總會歌手轉成唱片主流歌手的關鍵一張，同名主打曲是她第一首廣為傳唱的粵語代表作。實掃 seed_cards.json：徐小鳳池中 1 張，是《全新歌集3》(1985)——她 1980 年代中期的一張；她 1970 年代的整段（1970 起就有唱片、1978 年這張是轉捩點）池中一張都沒有。本卡與本批的《每一步》(1986) 一起，把她的目錄補到三張、橫跨 70 與 80 年代。可查證來源：MB 轄下 5 個 release 全 Official（1978 HK CBS/Sony CBA 101、1978 MY CBS/Sony、2011-03-21 與 2016 兩筆 Sony Music 再發）。",
+  "risk": "撞卡風險低（池中徐小鳳 1 張、盤名不同）。掛名：池中已有「徐小鳳」，沿用。**Apple 的年份會誤導**：tw／hk 兩店面目錄都有 collectionId 457366030《風雨同路》，但該頁標 1990（是 CD 再發年），MB first-release-date 是 1978；本卡 year 取 1978，上架時不要被 Apple 的年份欄改掉。同名陷阱：〈風雨同路〉這首歌被多位歌手翻唱，且她 1980 年另有《每日懷念你》等同期作品，比對曲目要鎖 CBA 101 這一版。轄下 5 個 release，CAA 命中機會中等。",
+  "mbNote": "釘 release-group fe2480d4-6a90-429e-9553-08206beda28e。回問確認：title「風雨同路」、artist-credit「徐小鳳」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official（1978 HK CBS/Sony CBA 101、1978 HK CBS/Sony、1978 MY CBS/Sony、2011-03-21 HK Sony Music 88697849752、2016 HK Sony Music 88985333542）。藝人 MBID 21556778-2609-4cd1-a8ab-550157594190（HK、1949），以分頁全列 57 個 RG。刻意不釘：e8b5bc7d-f820-4631-bfa6-fc493abeac22《大亨》(1978 同年)、840edcc3-5b91-442d-81f1-7f1d96c7fe2b《夜風中》(1979)、fad8c475-caa8-48d0-907d-32df78d614bf《77第一屆金唱片精選》(1977)、c47af99b-38be-4dd6-b2ca-7b4280ede756《新曲與精選》(1981 Compilation)、350bf9ef-0267-39eb-b4ef-33c0a90c8c5f《新曲與精選》(1989 Compilation，與前者同名不同年)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Paula Tsui 風雨同路；徐小鳳 風雨同路 1978；CBS/Sony CBA 101",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "徐小鳳",
+  "album": "每一步",
+  "year": 1986,
+  "genres": [
+   "pop"
+  ],
+  "label": "Polydor",
+  "why": "1986 年 Polydor（827 902-1）的《每一步》是徐小鳳在寶麗金時期銷量最高的一張，同名主打曲與〈城市足印〉是她 1980 年代後期演唱會的骨幹。實掃 seed_cards.json：徐小鳳池中只有《全新歌集3》(1985) 一張；本卡緊接在它後面一年，是她轉入寶麗金後最具代表性的專輯。可查證來源：MB 轄下 6 個 release 全 Official（1986 HK Polydor 827 902-1／-2／-4、1999-05-01 Polydor 827 902-2(X)、2004 Polydor 827902-2B、2015-04-22 Universal Music Hong Kong 888 824-9）。",
+  "risk": "撞卡風險低（池中徐小鳳 1 張、盤名不同；「每一步」全池 0 筆）。**盤名是常見詞組**：子字串比對會撈到任何含「每一步」的盤名，去重要帶藝人一起查。掛名：池中已有「徐小鳳」，沿用。封面與試聽：Apple 藝人目錄在 tw／hk 都有 collectionId 1443349186《每一步 (DCS)》1986，盤名多了 DCS（Digital Compact Sound 復刻標記）後綴，摺疊後本卡盤名是它的子字串，配對放寬到子字串就會過。轄下 6 個 release，CAA 命中機會不錯。",
+  "mbNote": "釘 release-group 798e4677-1efd-458f-8cd5-f230334ea833。回問確認：title「每一步」、artist-credit「徐小鳳」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1986 HK Polydor 827 902-1／827 902-2／827 902-4、1999-05-01 HK Polydor 827 902-2(X)、2004 HK Polydor 827902-2B、2015-04-22 HK Universal Music Hong Kong 888 824-9）。藝人 MBID 21556778-2609-4cd1-a8ab-550157594190，名下 57 個 RG。刻意不釘：54f69e39-5254-3515-bf08-099a080f4b7e《徐小鳳 Paula》(1986 同年)、5ca37536-02be-401d-bef6-f6eb5a85b431《徐小鳳》(1985 同名系列)、95b9004b-a7f9-4fbb-ac61-0de429692989《金曲精選》(1986 Compilation)、0a2e5836-187e-42c8-aa76-6a05195673d7《星輝燦爛徐小鳳》(1987 Compilation)、3bab8359-a4d3-46bd-a0fe-4c7e368a9937《全新歌集3》(1985，池中已有)、d3352470-51fb-4be7-8a10-7e8af267f26b《秋水伊人》(1984，與本批 a 組龔秋霞那張同名，不同藝人)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "每一步 (DCS)；Paula Tsui 每一步；徐小鳳 每一步 1986",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "梅艷芳",
+  "album": "心債",
+  "year": 1982,
+  "genres": [
+   "pop"
+  ],
+  "label": "華星唱片",
+  "why": "《心債》是梅艷芳 1982 年拿下第一屆新秀歌唱大賽冠軍後由華星發行的首張專輯（CAL-02-1003），同名主打曲是電視劇《香城浪子》主題曲，也是她整個目錄的起點。實掃 seed_cards.json：梅艷芳池中 5 張——《赤色梅艷芳》(1983)、《飛躍舞台》(1984)、《似水流年》(1985)、《壞女孩》(1985)、《烈焰紅唇》(1987)，全部在 1983 之後；**她的出道作反而不在池中**，本卡補的就是這個「第一張該有的」（藍圖 §五-1 的判準）。可查證來源：MB 轄下 8 個 release，1982 HK 華星 CAL-02-1003／CD-04-1003 皆 Official；Apple tw／hk 兩店面都有 collectionId 892647981《心債》1982。",
+  "risk": "撞卡風險低（池中 5 張梅艷芳盤名皆不同；「心債」全池 0 筆）。掛名：池中已有「梅艷芳」，沿用。**轄下有一個 Withdrawn release**（2018-06-29 華星 EACD913），同編號另有一筆 Official——上架比對時不要挑到撤回的那一筆（第 43／57 條）。封面與試聽：Apple collectionId 892647981，tw／hk 同一個 id，配對應該會過；轄下 8 個 release，CAA 命中機會不錯。",
+  "mbNote": "釘 release-group 31ca6d61-5141-47b6-a38b-1dbde8177dcf。回問確認：title「心債」、artist-credit「梅艷芳」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 8 個 release（1982 HK 華星 CAL-02-1003／CAL-02-1003C／CD-04-1003 Official、2015 HK 華星 EALP009 Official、2018-06-29 HK 華星 EACD913 有 Official 與 Withdrawn 各一筆）。藝人 MBID 34245089-97eb-4ebb-8170-978a74dc1cfc（HK、1963-10-10），以分頁全列 55 個 RG。刻意不釘：935bb777-6c70-452d-b2f4-37f8b1fcd8c1《赤色梅艷芳》(1983，池中已有)、4eb77875-5d25-4cf2-97cb-14d5f6ade010《飛躍舞台》(1984，池中已有)、0a54ad88-dcc4-4099-abc4-24c7bb529aba《壞女孩》(1985，池中已有)、393dc637-7785-486a-b011-ffc0488d56e6《百變梅艷芳：烈焰紅唇》(1988，池中已有《烈焰紅唇》1987，同碟異寫)、8d121c9d-f67c-3bce-828d-1df52635b08e／a8437204-1c87-4e44-b067-923068dfcfef／81f215cc-dc79-44b0-bbb3-fc9793eaf18a／87ddd5d1-3eaa-4c61-b343-42a493a785c7／c45f5e9e-ba38-4af2-92ac-a73faabf26bf 五個純《梅艷芳》同名 RG（無法從盤名分辨，全部不釘）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Anita Mui 心債；梅艷芳 心債 1982；華星 CAL-02-1003",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "梅艷芳",
+  "album": "淑女",
+  "year": 1989,
+  "genres": [
+   "pop"
+  ],
+  "label": "華星唱片",
+  "why": "1989 年華星（CAL-04-1079）的《淑女》是梅艷芳「百變」形象最後一個華星階段的專輯，也是她 1990 年宣布不再領獎前的最後一批粵語錄音之一。實掃 seed_cards.json：梅艷芳池中 5 張全在 1983–87；1988 之後池中空白。本卡與本批的《心債》(1982) 一起，把她的目錄從出道年一直接到 1989，前後兩端都補上。可查證來源：MB 轄下 3 個 release 全 Official（1989 HK 華星 CAL-04-1079／CD-04-1079、2018-08-24 華星 EACD928）；Apple tw／hk 兩店面都有 collectionId 892872044《淑女》1989。",
+  "risk": "**盤名是常見詞**：「淑女」兩字摺疊後極短，子字串比對會撈到大量不相干的碟（人工核對過池中 0 筆），去重與封面比對一定要帶藝人一起查。掛名：池中已有「梅艷芳」，沿用。同期陷阱：她 1989 年另有《In Brasil》(729132bf)，1990 年有《封面女郎》(153910f8)，比對曲目時不要混。封面與試聽：Apple collectionId 892872044，tw／hk 同一個 id；轄下 3 個 release，CAA 命中機會中等。",
+  "mbNote": "釘 release-group 0d8967c9-0e3d-45bd-b92e-c3921cb7821a。回問確認：title「淑女」、artist-credit「梅艷芳」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 3 個 release 全 Official（1989 HK 華星 CAL-04-1079、1989 HK 華星 CD-04-1079、2018-08-24 HK 華星 EACD928）。藝人 MBID 34245089-97eb-4ebb-8170-978a74dc1cfc，名下 55 個 RG。刻意不釘：729132bf-952d-4823-ab39-237dd8b30d30《In Brasil》(1989-09 同年)、153910f8-8bcf-3cfe-abb0-1c1b448b0e90《封面女郎》(1990)、dcc385ce-f768-431e-8149-9cf5f5eaa7ec《百變梅艷芳再展光華87–88演唱會》(1987-12 Live)、b068282a-ce4d-43f2-95d8-8bc28af32b07《百變梅艷芳夏日耀光華演唱會》(1990 Live)、31ca6d61-5141-47b6-a38b-1dbde8177dcf《心債》(1982，本批另立一卡)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Anita Mui 淑女；梅艷芳 淑女 1989；華星 CAL-04-1079",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "譚詠麟",
+  "album": "忘不了您",
+  "year": 1981,
+  "genres": [
+   "pop"
+  ],
+  "label": "Philips",
+  "why": "1981 年 Philips（7237 223）的《忘不了您》是譚詠麟離開溫拿樂隊後、在寶麗金體系下的第一批個人專輯之一，也是他從「樂隊主唱」轉成粵語情歌代表的起點。實掃 seed_cards.json：譚詠麟池中 4 張——《霧之戀》(1984)、《愛的根源》(1984)、《愛情陷阱》(1985)、《暴風女神 Lorelei》(1985)，全部集中在 1984–85 那兩年的「愛情三部曲」時期；他 1979–83 的成形期池中一張都沒有。本卡補的是那一段。可查證來源：MB 轄下 7 個 release 全 Official（1981 HK Philips 7237 223、1989 Philips 836 891-2、1999 836 891-2(X)、2003-10-21 836 891-2A）。",
+  "risk": "撞卡風險低（池中譚詠麟 4 張、盤名皆不同）。掛名：池中已有「譚詠麟」，沿用。**這位藝人 MB 名下 191 個 RG**，是本批最多的一位，其中大量 1994–97 的簡體登錄拼盤與日本盤 Single，選 RG 時容易誤觸——本卡已逐筆確認 primary-type 是 Album、secondary-types 空。同名陷阱：〈忘不了您〉這首歌名被多位歌手用過，比對曲目要鎖 Philips 7237 223。封面與試聽：Apple 藝人目錄在 tw／hk 都有 collectionId 1395160255《忘不了您》1981，兩店面同一個 id；轄下 7 個 release，CAA 命中機會不錯。",
+  "mbNote": "釘 release-group 5929fddc-b470-4ea9-a64d-c34672a0a8a2。回問確認：title「忘不了您」、artist-credit「譚詠麟」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 7 個 release 全 Official（1981 HK Philips 7237 223、1989 HK Philips 836 891-2 兩筆、1999 HK Philips 836 891-2(X)、2003-10-21 HK Philips 836 891-2A、無日期 XW）。藝人 MBID 52f243b5-cca7-4ba5-b32e-125096c7646e（HK、1950-08-23），以 release-group?artist=…&limit=100&offset= 分頁全列 191 個 RG。刻意不釘：7a3c1fbe-89ec-45d0-9c96-4ede56317eb9《愛到你發狂》(1979)、9a8e2ddf-1f7a-47dd-93cf-49033d0bb7d6《反斗星》(1979-02-20)、937f2e8e-6a6b-404d-ac45-e2c664b33831《彈起來！唱起來！／尋找》(1980-12-25)、70638dca-dc0a-41af-8127-121cb611fa43《你的凝望》(1981-10 同年另一張)、b8399dc7-28bb-4932-9495-776aef67b427《愛人·女神》(1982-04)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alan Tam 忘不了您；譚詠麟 忘不了你；Philips 7237 223",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "譚詠麟",
+  "album": "第一滴淚",
+  "year": 1986,
+  "genres": [
+   "pop"
+  ],
+  "label": "Philips",
+  "why": "1986 年 Philips（826 908-1）的《第一滴淚》是譚詠麟「愛情三部曲」之後、宣布不再領取competitive 獎項之前的高峰之一，也是他把日本流行曲改編成粵語歌這條路做到最成熟的一張。實掃 seed_cards.json：譚詠麟池中 4 張全在 1984–85；1986 之後空白。本卡與本批的《忘不了您》(1981) 一起，把他的目錄從 1981 拉到 1986。可查證來源：MB 轄下 6 個 release 全 Official（1986-07-18 HK Philips 826 908-2、1986 826 908-1／-4、1999 826 908-2(X)、2017-04-25 Universal Music Hong Kong 886060-5、2019 Philips 889 778-9）。",
+  "risk": "撞卡風險低（池中 4 張譚詠麟盤名皆不同）。掛名：池中已有「譚詠麟」，沿用；池中那張《暴風女神 Lorelei》在 MB 上寫「暴風女神Lorelei」（無空格，7f89a88d），摺疊後兩者相等，工具會抓到，本批刻意不收它。同期陷阱：他 1986 年另有《Fantasy》(31cf60b3)、日本盤《サンダーアーム》(59082431) 與《’86萬眾狂歡演唱會》(ae365225 Live)，比對曲目時不要混。封面與試聽：Apple 藝人目錄在 tw／hk 都有 collectionId 1443359181《第一滴淚》1986，兩店面同一個 id；轄下 6 個 release，CAA 命中機會不錯。",
+  "mbNote": "釘 release-group 4fe67513-f2f0-4fb6-93d0-88a9ffd854c7。回問確認：title「第一滴淚」、artist-credit「譚詠麟」、first-release-date 1986-07-18、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1986 HK Philips 826 908-1／826 908-4、1986-07-18 HK Philips 826 908-2、1999 HK Philips 826 908-2(X)、2017-04-25 HK Universal Music Hong Kong 886060-5、2019 HK Philips 889 778-9）。藝人 MBID 52f243b5-cca7-4ba5-b32e-125096c7646e，名下 191 個 RG。刻意不釘：31cf60b3-d04e-4274-9c06-9ee0fd6ddcb6《Fantasy》(1986-12-05)、59082431-f7ac-4910-9b3d-dd47f7ad29ad《サンダーアーム》(1986-09 日本盤)、ae365225-ad01-4e4e-818a-b7ac61dc27fb《譚詠麟’86萬眾狂歡演唱會》(1986 Live)、7f89a88d-d3e3-4854-8bfc-f118ffd5a8ad《暴風女神Lorelei》(1985，池中已有)、4e79de6a-0f68-4743-85ed-11ebd9f1cc59《最佳12″》(1987 Remix)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alan Tam 第一滴淚；譚詠麟 第一滴淚 1986；Philips 826 908-1",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "張國榮",
+  "album": "為妳鍾情",
+  "year": 1985,
+  "genres": [
+   "pop"
+  ],
+  "label": "華星唱片",
+  "why": "1985 年華星（CD-03-1023）的《為妳鍾情》是張國榮在《風繼續吹》《Leslie》之後真正確立商業地位的一張，同名主打曲與同年同名電影一起推出，是他 1980 年代中期最具辨識度的作品。實掃 seed_cards.json：張國榮池中 4 張——《風繼續吹》(1983)、《Leslie》(1984)、《Summer Romance '87》(1987)、《Salute》(1989)；1985–86 這兩年正好缺口，本卡補在《Leslie》與《Summer Romance ’87》之間。可查證來源：MB 轄下 7 個 release 全 Official（1985-05-14 HK 華星 CD-03-1023、2004-08-17 CD-03-1339、2015 EASACD019、2018-06-29 EACD919）。",
+  "risk": "撞卡風險低（池中 4 張張國榮盤名皆不同）。**池中《Summer Romance '87》用直撇號、MB 用彎撇號 ’**，摺疊後相等、工具抓得到，本批刻意不收它；但這組是 `audits/pool-artist-name-splits.md` 記的彎直撇號型態，往後提案要留意。掛名：池中已有「張國榮」，沿用。同名陷阱：Apple tw／hk 目錄另有 collectionId 1442912183《鍾情》2010（後世精選），盤名是本卡的子字串，取封面時不可誤取。封面與試聽：優先取 Apple collectionId 892601595《為妳鍾情》1985，tw／hk 同一個 id；轄下 7 個 release，CAA 命中機會不錯。",
+  "mbNote": "釘 release-group c5a49dce-3c91-306b-a6ab-5bd18e659f28。回問確認：title「為妳鍾情」、artist-credit「張國榮」、first-release-date 1985-05-14、primary-type Album、secondary-types 空、轄下 7 個 release 全 Official（1985-05-14 HK 華星 CD-03-1023、2004-08-17 HK 華星 CD-03-1339、2014-07-01 XW 華星、2015 HK 華星 EASACD019、2018-06-29 HK 華星 EACD919 等）。藝人 MBID d780609b-eca5-4277-a0c2-801cc0404764（HK、1956-09-12），以分頁全列 117 個 RG。刻意不釘：56227a8b-11f3-4b0a-b4e7-6bd1ce1768a8《Stand Up》(1986)、67675c2d-141e-407c-b8fe-4a80a2b7724a《張國榮》(1986-10-01，同名 RG)、21ea9581-ec6c-4573-ac45-4f59f0bde7d2《英雄本色當年情》(1986-11-26)、714ee9a3-ee18-4598-9414-47aa724984a8《張國榮的一片痴…》(1983)、d5327e2a-6d7b-3084-9850-53fb3aced850《Summer Romance ’87》(1987，池中已有)、f56e65e2-d8bc-4b93-9b3d-fd68c20fbf7a《風繼續吹》(1983，池中已有)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Leslie Cheung 為妳鍾情；為你鍾情；華星 CD-03-1023",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "張國榮",
+  "album": "紅",
+  "year": 1996,
+  "genres": [
+   "pop"
+  ],
+  "label": "Rock Records",
+  "why": "1996 年滾石（ROC 5132）的《紅》是張國榮 1990 年宣布退出後復出的第一張粵語錄音室專輯，也是他從偶像歌手轉成自主創作者的分水嶺：他自己參與製作，同名曲與〈怪你過分美麗〉是他後期最常被引用的兩首。實掃 seed_cards.json：張國榮池中 4 張全在 1983–89；他 1995 年復出之後的整段池中空白。本卡與本批的《為妳鍾情》(1985) 一起，把他的目錄前後兩端都補上。可查證來源：MB 轄下 11 個 release（1996 MY Rock Records ROC 5132、1996-11-26 JP 滾石 RJOD-5132、2014 HK RK2HD010、2022-04-01 HK RSACD029），全為 Official；Apple tw／hk 兩店面都有 collectionId 1671720009《紅》1996。",
+  "risk": "**盤名只有一個字**：「紅」摺疊後是單字，子字串比對會撈到大量不相干的碟（人工核對過池中沒有張國榮《紅》），去重與封面比對一定要帶藝人一起查——這是本批最容易誤配的盤名。掛名：池中已有「張國榮」，沿用。廠牌是滾石（Rock Records）＝大廠，但發行年 1996 遠早於「2010 年後中文圈只收獨立」那條線（簡報 §1.5 明文：2010 年之前不受限制），不受影響。年份分歧：MB first-release-date 1996-11-26 掛在 JP release 上，MY 版標 1996，本卡取 1996。封面與試聽：Apple collectionId 1671720009，tw／hk 同一個 id；轄下 11 個 release，CAA 命中機會高。",
+  "mbNote": "釘 release-group 28d2dacf-9c22-3d58-bb0f-34fd7e440b5b。回問確認：title「紅」、artist-credit「張國榮」、first-release-date 1996-11-26、primary-type Album、secondary-types 空、轄下 11 個 release 全 Official（1996 MY Rock Records ROC 5132、1996-11-26 JP 滾石唱片 RJOD-5132、2014 HK Rock Records RK2HD010、2022-04-01 HK Rock Records RSACD029、AL 與 XW 各一筆等）。藝人 MBID d780609b-eca5-4277-a0c2-801cc0404764，名下 117 個 RG。刻意不釘：ca8f2049-3762-3773-b1b9-1c73c8bb413e《寵愛》(1995，復出後的第一張，但是電影歌曲集)、3f05aae6-f973-39b1-b5d4-c714e52bb395《Printemps》(1998)、53251178-ad82-4974-8b87-b9bb8d05389d《陪你倒數》(1999-10-13)、a585fae3-b932-40d0-b66e-dd865fb08b2a《張國榮跨越97演唱會》(1997 Live)、9d88925a-011f-4e20-8011-072d0ce71fae《Revisit》(2020 Remix)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Leslie Cheung 紅；張國榮 紅 1996；Rock Records ROC 5132",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Beyond",
+  "album": "亞拉伯跳舞女郎",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "Kinn’s Music",
+  "why": "1987 年 Kinn’s Music（KN 1-1）的《亞拉伯跳舞女郎》是 Beyond 簽進商業廠牌後的第一張錄音室專輯，也是他們從地下自資（《再見理想》1986）走進主流的轉折點。實掃 seed_cards.json：Beyond 池中 5 張——《再見理想》(1986)、《秘密警察》(1988)、《命運派對》(1990)、《猶豫》(1991)、《樂與怒》(1993)；1987 與 1989 兩年缺口，本卡補 1987 這一格，正好夾在《再見理想》與《秘密警察》之間。可查證來源：MB 轄下 5 個 release，1987-07 HK Kinn’s Music KN 1-1／KN 1-4 與 1989 HK Cinepoly CP-5-002K 皆 Official。",
+  "risk": "撞卡風險低（池中 5 張 Beyond 盤名皆不同）。掛名：池中已有「Beyond」（拉丁），MB artist-credit 也是「Beyond」，兩者一致，依第 177 條第 1 步沿用，不要改寫成漢字。**轄下有一筆 Promotion 與一筆 Pseudo-Release**（1993-08-26 JP Fun House FHCF-2127 是 Promotion、另一筆是 Pseudo-Release），上架比對時要挑 Official 那幾筆（第 43／57 條）。封面與試聽：Apple tw／hk 兩店面各有兩個候選——collectionId 1443334744《復黑: 亞拉伯跳舞女郎》(1987) 與 1443318407《亞拉伯跳舞女郎(超越時代紀念版)》(2014)，優先取 1443334744（年份與 MB 一致）；轄下 5 個 release，CAA 命中機會中等。",
+  "mbNote": "釘 release-group 451772ab-2a07-4134-ba00-4a6b38205f75。回問確認：title「亞拉伯跳舞女郎」、artist-credit「Beyond」、first-release-date 1987-07、primary-type Album、secondary-types 空、轄下 5 個 release（1987-07 HK Kinn’s Music KN 1-1 Official、1987-07 HK Kinn’s Music KN 1-4 Official、1989 HK Cinepoly Records CP-5-002K Official、1993-08-26 JP Fun House FHCF-2127 Promotion、一筆 Pseudo-Release）。藝人 MBID d84d02ad-d74c-4227-8073-6f13a039cfac（HK、1983），以分頁全列 118 個 RG。刻意不釘：59da8517-b16c-4e10-b1e7-28c59b71e80d《永遠等待》(1987 EP)、14c2e2d5-385f-4970-bae0-0de7e461f123《再見理想》(1986，池中已有)、c00ff47a-9c4b-314c-8ea9-75f61be09063《秘密警察》(1988，池中已有)、5c203d28-f54f-4f87-92a6-9147627a9cc8 與 b9131b90-7e03-456f-ba44-dbbce6fbf302 兩個《光辉岁月-二十周年精选》(簡體登錄的後世精選)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "復黑 亞拉伯跳舞女郎；亞拉伯跳舞女郎(超越時代紀念版)；Arabian Dancing Girl；Kinn's Music KN 1-1",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

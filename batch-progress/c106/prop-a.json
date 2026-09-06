@@ -1,0 +1,400 @@
+[
+ {
+  "artist": "潘迪華",
+  "album": "Oriental Pearls",
+  "year": 1961,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "Diamond",
+  "why": "潘迪華 1961 年在香港鑽石唱片（Diamond）錄的首張個人 LP（SLP 1006），是香港「國語時代曲跨進夜總會／國際曲目」這一路的起點盤：她把上海時代曲的曲目搬進酒店駐唱編制，後來《花樣年華》與《阿飛正傳》引用的就是這一批錄音。實掃 seed_cards.json 全 14,424 列：潘迪華池中 0 張，整條上海／香港時代曲線只有七張，且全部是 EMI《百代中國時代曲名典》復刻輯（周璇、姚莉、吳鶯音、崔萍、潘秀瓊、靜婷、張露各一），沒有任何一張是當年實體發行的原盤。這張補的正是「原盤」這個缺口。可查證來源：MB release 掛 Diamond SLP 1006、HK、Official；Discogs 同編號另有 1961 與 1962 兩刷（release 7124638／7985428）。",
+  "risk": "撞卡風險低（池中潘迪華 0 張，盤名 Oriental Pearls 全池 0 筆）。掛名分歧是本卡最大的坑：MB 這個 RG 的 artist-credit 寫 Pan Wan Ching，另一張 1963 年的寫 Rebecca Pan，Apple 兩張都掛「潘迪華」——依 2026-08-11 東亞命名裁定與派工信（華語圈照原文漢字、一律繁體）取「潘迪華」，三種拉丁寫法全部進 queryAlias，否則 grep 去重會漏。年份分歧：Discogs 同盤有 1961／1962 兩個刷次，本卡取 MB first-release-date 1961。封面與試聽：Apple 藝人 id 16628658，tw 與 hk 兩店面目錄都有 collectionId 1510091855《Oriental Pearls》1961，兩店面同一個 id，配對應該會過；CAA 只有 1 個 release，命中率不高，預估要走 apple-verified-collection。",
+  "mbNote": "釘 release-group 8d0f5edd-318f-4e25-a4b1-a7cefc475f19。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「Oriental Pearls」、artist-credit「Pan Wan Ching」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 1 個 release（1961 HK、Official、Diamond SLP 1006）。藝人 MBID c0844c64-5011-40df-8072-068427f9a683，以 release-group?artist=…&limit=100&offset= 分頁全列 7 個 RG（不用 inc=release-groups 的 25 筆上限，第 116 條）。刻意不釘：bb62c344-cc6b-4666-8255-33f6e6b30575《Pan Wan Ching Sings the Four Seasons》（1961 同年另一張 Diamond LP，內容不同）、1e7b2020-ecbf-488e-b8fa-5a6f1efcb956《How Strange》（1969）、64986fdd-1240-4645-a762-732f3c3f42c7《A Man and A Woman》（1968）、ae01f41d-7c6a-4587-aed9-2eecd835e149《我的路》（2004，secondary-types 含 Interview 與 Live）、1b45a11c-617b-4ac2-9474-a0bb63faff1b《Rebecca Live 我的心-音樂旅情》（2021，primary-type Other＋Live）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pan Wan Ching Oriental Pearls；Rebecca Pan Oriental Pearls；潘迪華 東方之珠；Rebecca Pan",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "潘迪華",
+  "album": "The Exciting Rebecca Pan 我的心．潘迪華",
+  "year": 1963,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "Diamond",
+  "why": "潘迪華 1963 年第三張 Diamond LP（SLP 1009），是她從「唱上海老歌」轉成「以國語填詞唱國際流行曲」的定型之作，也是後來她在《阿飛正傳》《花樣年華》被王家衛整批取用的曲目來源。實掃 seed_cards.json：潘迪華池中 0 張；本批另收她 1961 年的《Oriental Pearls》，兩張並排正好構成她 1960 年代的前後段。可查證來源：MB release 掛 Diamond SLP 1009、HK、Official；Apple 的 tw／hk 目錄把它列為《我的心》1963（collectionId 1510277115）。",
+  "risk": "撞卡風險低（池中 0 張）。**盤名是本卡最需要人工盯的一欄**：MB 的 RG 標題是英文與中文併寫的「The Exciting Rebecca Pan 我的心．潘迪華」，Apple 只用「我的心」，兩者摺疊後互不為子字串，去重與封面比對都要兩種寫法一起查（第 49 條）。掛名同前一張：MB credit 寫 Rebecca Pan，依派工信取繁體漢字「潘迪華」。另注意 2021 年的《Rebecca Live 我的心-音樂旅情》盤名也含「我的心」，是 Live 專輯，不可混用。封面與試聽：Apple 藝人 id 16628658，tw／hk 同一個 collectionId 1510277115；CAA 只有 1 個 release，預估要人工補封面。",
+  "mbNote": "釘 release-group 172de071-9585-4e5a-894a-b1d36a2ea2f1。回問確認：title「The Exciting Rebecca Pan 我的心．潘迪華」、artist-credit「Rebecca Pan」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 1 個 release（1963 HK、Official、Diamond SLP 1009）。藝人 MBID c0844c64-5011-40df-8072-068427f9a683，名下 7 個 RG。刻意不釘：8d0f5edd-318f-4e25-a4b1-a7cefc475f19《Oriental Pearls》（1961，本批另立一卡）、bb62c344-cc6b-4666-8255-33f6e6b30575《Pan Wan Ching Sings the Four Seasons》（1961）、1b45a11c-617b-4ac2-9474-a0bb63faff1b《Rebecca Live 我的心-音樂旅情》（2021 Live，盤名含「我的心」最易誤配）、ae01f41d-7c6a-4587-aed9-2eecd835e149《我的路》（2004 Interview＋Live）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "我的心；The Exciting Rebecca Pan；Rebecca Pan 我的心；潘迪華 我的心",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "葛蘭",
+  "album": "The Wild, Wild Rose 野玫瑰之戀",
+  "year": 1971,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "麗歌唱片",
+  "why": "1960 年電懋（MP&GI）電影《野玫瑰之戀》的歌曲集，葛蘭在片中把《卡門》《風流寡婦》等西洋歌劇曲調填上國語詞，是香港國語時代曲最常被引用的一次「洋曲中唱」實驗；本卡鎖定 1971 年麗歌（Regal LRHX 868）發行的唱片版，這是 MB 上這批錄音最早成盤的條目。實掃 seed_cards.json：葛蘭池中 0 張；池中七張時代曲卡全是 EMI 名典復刻輯，沒有一張是電影歌曲集。可查證來源：MB release 掛麗歌Regal LRHX 868、HK；Apple tw／hk 目錄有同名《野玫瑰之戀》（collectionId 1443733106，標 2015 再發）。",
+  "risk": "**同名雙胞胎**：MB 上「野玫瑰之戀」有兩個 RG——dd0d0a2d（1971 麗歌 LP，本卡釘的）與 eb05f3eb（2015-11-13 的數位再發），兩者盤名完全相同，去重與封面比對時必須用 MBID 而不是盤名分辨（第 126／153 條）。年份分歧：電影 1960、唱片 1971、Apple 標 2015，本卡 year 取唱片年 1971（比照 c-88 的 Woodstock 處理）。MB 這個 release 的 status 是空的（不是 Official），封面與 CAA 命中率低。掛名：MB credit 寫 Grace Chang，依派工信取繁體漢字「葛蘭」，拉丁寫法進 queryAlias。封面與試聽：Apple 藝人 id 14126461，tw／hk 兩店面都有 collectionId 1443733106，該頁標 2015、盤名純漢字——依第 185 條，tw 店面對純漢字盤名的 search 會回 0，配對要走藝人目錄 lookup 不能只靠 search。",
+  "mbNote": "釘 release-group dd0d0a2d-fc8d-443e-963e-1e83ea34824c。回問確認：title「The Wild, Wild Rose 野玫瑰之戀」、artist-credit「Grace Chang」、first-release-date 1971、primary-type Album、secondary-types [Soundtrack]（依 §5.6 明文，primary-type 為 Album 者照一般 Album 寫、不填例外欄位）、轄下 1 個 release（1971 HK、status 空、麗歌Regal LRHX 868）。藝人 MBID e4eaa89a-c6b3-496c-b2f2-da019bcc594f，名下 7 個 RG。刻意不釘：eb05f3eb-045c-4c05-b81e-018272545bf8《野玫瑰之戀》（2015 數位再發，與本卡同名，是最危險的對照組）、01c3173c-a28d-4faf-b842-09702ee5b7a8《教我如何不想她 (電影原聲帶)》（2015）、513699d2-3ef2-4297-a7cf-5a007ef79ef4《群星會 23 葛蘭 (珍藏系列)》（Compilation、無年份）、317e051a-3719-4444-815d-911e4bb376ac《流星歲月精華～珍藏集》（2002 Compilation）、0df7326f-335c-426f-b572-38fba772355f《百代百年系列 15:我要你的愛》（2005 後出重包裝）、5bdfd27c-e505-4088-b99f-ae66118d251b《葛蘭之歌》（2015）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "野玫瑰之戀；The Wild, Wild Rose；Grace Chang The Wild Wild Rose；葛蘭 野玫瑰之戀",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "李香蘭",
+  "album": "蘭閨寂寂",
+  "year": 1957,
+  "genres": [
+   "pop"
+  ],
+  "label": "百代唱片",
+  "why": "李香蘭（山口淑子）1950 年代在香港百代錄的國語歌曲集，主標題曲〈蘭閨寂寂〉是她離開上海後最具代表性的一首；這張是 MB 上她名下唯一一個非精選的 Album 條目。實掃 seed_cards.json 全 14,424 列：李香蘭池中 0 張，同時查「李香蘭」「Li Xianglan」「Yoshiko Yamaguchi」「山口淑子」四種寫法皆 0——這位橫跨上海、香港、日本三地的歌手在池中完全不存在。池中七張時代曲卡皆為 EMI 名典復刻輯，補她的原盤是這條線的第一順位。可查證來源：Discogs 有四筆同盤條目（release 10381779 Pathé 1961、2828497 Regal 1968、10303956／5810673 Sepia 2014 復刻），盤名一致寫作「蘭閨寂寂 = My Lonely Boudoir」。",
+  "risk": "**盤名有一個字要人工改**：MB 的 RG 標題誤植成「籣閨寂寂」（籣，草字頭下从闌），Discogs 四筆條目與 Apple 的《百代中國時代曲名典十七: 李香蘭 - 蘭閨寂寂》一致寫「蘭」，本卡取正字「蘭閨寂寂」，MB 原字串進 queryAlias（見 c106 rulings 第 3 條）。年份分歧：MB 記 1957，Discogs 的 Pathé 版標 1961、Regal 版標 1968，本卡取 MB first-release-date 1957。掛名：MB credit 已是漢字「李香蘭」，直接沿用；但 Apple tw／hk 的藝人實體掛「Yoshiko Yamaguchi」（id 253495935）與簡體「李香兰」，配對要用藝人目錄 lookup。封面與試聽：Apple 目錄裡最接近的是 collectionId 723985727《百代中國時代曲名典十七: 李香蘭 - 蘭閨寂寂》（1991 復刻），不是本卡釘的 1957 原盤，用它取封面要人工核對曲目；CAA 只有 1 個 release，命中率低。",
+  "mbNote": "釘 release-group c50a9172-2109-4d57-943b-08ca3e077f96。回問確認：MB title「籣閨寂寂」（錯字，卡片用正字）、artist-credit「李香蘭」、first-release-date 1957、primary-type Album、secondary-types 空、releases 陣列 1 筆（release 端點 browse 回 0 筆，屬 MB 資料不全，不是查無）。藝人 MBID 44b8d3ea-bdcf-4c41-8c77-1aea20e77357，名下 2 個 RG。刻意不釘：9342b2ee-90cb-4ffd-9797-4df43d70d103《群星會 42 李香蘭 (珍藏系列)》（Album＋Compilation、無 first-release-date，後世珍藏系列拼盤）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "籣閨寂寂（MB 誤植）；My Lonely Boudoir；Li Hsiang Lan 蘭閨寂寂；Yoshiko Yamaguchi；山口淑子；百代中國時代曲名典十七",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "姚莉",
+  "album": "電影歌曲精選",
+  "year": 1994,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "百代唱片",
+  "why": "姚莉在 EMI《百代中國時代曲名典》系列裡佔第 25／26、27、48 三種切法：25／26 收上海時期、27 收中詞西曲、48 就是這張《電影歌曲精選》，收她 1940–50 年代替國語片唱的插曲。實掃 seed_cards.json：姚莉池中 1 張，是 c-49 上架的《百代中國時代曲名典25／26：姚莉 秋的懷念（上海時期歌曲）》(1941)——上海時期已經有了，影歌這一塊還是空的，本卡補的就是那一塊。時代曲不存在原始「專輯」（78 轉蟲膠單片發行），只能以復刻輯為建檔單位，路線同 c-49。可查證來源：MB release 掛 HK、Official、條碼 7 2438 31403 2 9；Apple tw／hk 目錄有 collectionId 724959370《姚莉電影歌曲精選》1994。",
+  "risk": "撞卡風險：池中那張名典 25／26 與本卡是同系列不同集，曲目不重疊，但盤名摺疊後互不為子字串，人工核對過確定不是同一張。年份：本卡 year 取合輯首次出版年 1994（§5.6 規定），不是錄音年（1940s–50s），行文時三個年份要分開講。掛名：MB credit 已是漢字「姚莉」，與池中既有卡一致，沿用（第 177 條第 1 步）。封面與試聽：Apple 藝人 id 377320817，tw／hk 兩店面都有 collectionId 724959370，Apple 盤名多了「姚莉」前綴，配對要放寬到子字串；CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 1d1507b1-95d5-49c6-9018-355a2d1403a9。回問確認：title「電影歌曲精選」、artist-credit「姚莉」、first-release-date 1994、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（1994 HK、Official、條碼 7 2438 31403 2 9）。藝人 MBID 2d0addcb-4ec4-4d83-b7a5-d435184fef8c，名下 4 個 RG。刻意不釘：77767f27-4a3d-4cbd-b344-ba5f98f6cf52《秋的懷念》（1962 Compilation，內容＝池中已有的名典 25／26）、36079b2d-7416-4779-a0b8-588a85fcd156《漁光曲》（1971 麗歌 LP，Apple 七店面查無、封面無來源，本批不收）、50fdd560-c096-4c9f-9b74-c16c635c044e《一曲難忘 . 中詞西曲精選》（＝名典 27，MB 無 first-release-date，年份填不出來）。",
+  "releaseType": "Compilation",
+  "exceptionReason": "百代中國時代曲名典第 48 集，把姚莉 1940–50 年代替國語片唱的插曲整編成單一發行品；時代曲當年只以 78 轉蟲膠單片流通、不存在原始專輯，這一系列復刻輯是這批錄音唯一可建檔的單位，1994 年由 EMI (HK) 正式發行並持續在串流上架。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/1d1507b1-95d5-49c6-9018-355a2d1403a9",
+   "https://music.apple.com/hk/album/724959370"
+  ],
+  "selfTitled": false,
+  "queryAlias": "姚莉電影歌曲精選；百代中國時代曲名典48；Yao Lee Film Songs；姚莉 影歌精選",
+  "reissuedBy": "EMI (HK)",
+  "g": "a"
+ },
+ {
+  "artist": "靜婷",
+  "album": "I Live for You",
+  "year": 1971,
+  "genres": [
+   "pop"
+  ],
+  "label": "百代唱片",
+  "why": "靜婷是邵氏黃梅調與國語歌唱片時代最主要的幕後代唱，這張 1971 年的 EMI／Pathé LP（S-CPAX-367）是 MB 上她名下唯一一張非精選、非電影原聲的個人專輯，也是她從「替電影配唱」走到「以歌手身分出獨立唱片」的節點。實掃 seed_cards.json：靜婷池中 1 張，是 c-49 上架的《百代中國時代曲名典42：靜婷 痴痴地等》(1966) 復刻輯；那張是後世整編，本卡補的是當年實體發行的原盤，兩張的性質不同。可查證來源：MB release 掛 EMI／Pathé S-CPAX-367、HK、Official。",
+  "risk": "撞卡風險低（池中靜婷 1 張、盤名不同；英文盤名 I Live for You 全池 0 筆）。掛名：池中已有「靜婷」這個鍵，依第 177 條第 1 步沿用，不採 MB credit 的「Tsin Ting」，拉丁寫法進 queryAlias。年份分歧：MB 記 1971，Apple 目錄裡標 1968 的《痴痴地等》與標 1961 的《電影歌選》都是另外的碟，不可拿來校年。**封面與試聽風險高**：Apple 藝人 id 129732447，tw／hk 目錄各 22 筆，逐筆比對過沒有《I Live for You》這張；依第 173／185 條，目錄端點未命中不等於 Apple 沒有（也可能只是沒上架 1971 年那批 Pathé LP），但實務上預估要走人工補封面。CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 8b4e96ce-bb8e-4da2-901f-cea2713f0a63。回問確認：title「I Live for You」、artist-credit「Tsin Ting」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release（1971 HK、Official、EMI S-CPAX-367／Pathé S-CPAX-367）。藝人 MBID ab810190-cdda-48d7-92c6-206a42683610，名下 5 個 RG。刻意不釘：1755ec8b-d802-4d0c-b44d-0f2395e3b426《The Human Goddess / The Yellow Muffler》（1971 同年，secondary-types [Soundtrack]）、372329b9-9cf7-4a7c-a11a-d75c11525932《電影歌選 / 痴痴地等》（2015 Compilation，內容與池中已有的名典 42 重疊，收了會變成實質重複卡）、bbb8e232-4d16-40cb-bf8e-f776eafec951《靜婷早期名曲選》（2011 Compilation）、6131f502-eb4e-4c15-b156-dd5eb4048104《傾國傾城》（2015 Soundtrack）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tsin Ting I Live for You；靜婷 I Live for You；席靜婷",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "張露",
+  "album": "繁星點點 張露",
+  "year": 1973,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "環球唱片",
+  "why": "張露是 1950 年代上海／香港時代曲裡最早把恰恰、曼波這類拉丁舞曲節奏唱進國語歌的歌手；這張 1973 年環球（香港）發行的 LP 是 MB 上她名下唯一一張非精選的專輯，也是她演唱生涯後段唯一留下條目的原盤。實掃 seed_cards.json：張露池中 1 張，是 c-49 上架的《百代中國時代曲名典13：張露 給我一個吻》(1954) 復刻輯——那張收的是 50 年代百代錄音，本卡補的是 70 年代的原盤，兩張在她目錄裡是首尾兩端。可查證來源：MB release 掛環球唱片、Official、日期 1973-10-23。",
+  "risk": "撞卡風險低（池中張露 1 張、盤名不同）。**廠牌欄要注意簡繁**：MB release 的 label 登錄成簡體「环球唱片」，卡片依 2026-09-06 店主裁定寫繁體「環球唱片」。掛名：池中已有「張露」，沿用（第 177 條第 1 步），MB credit 也是漢字，無分歧。年份：MB 記 1973-10-23，取 1973。**封面與試聽風險高**：Apple 藝人 id 27386833，tw／hk 目錄各 11 筆，逐筆比對過沒有《繁星點點》；Apple 上有的是《張露之歌》1958、《扇舞》1958、名典 35《不許他回家》、名典 50《蘋果花》等，都不是本卡這張。CAA 只有 1 個 release，預估要人工補封面。",
+  "mbNote": "釘 release-group 2070a4d2-ca83-4d0d-940d-52f3f30bec5a。回問確認：title「繁星點點 張露」、artist-credit「張露」、first-release-date 1973-10-23、primary-type Album、secondary-types 空、轄下 1 個 release（Official、廠牌 环球唱片，release 未填國別）。藝人 MBID 08571849-85b7-4a1e-8b65-e857346f0efb，名下 2 個 RG。刻意不釘：e0b3dfaf-1aa0-45fb-9bec-1647b48a9709《給我一個吻》（1992 Album＋Compilation，就是池中已有的名典 13，c-49 已核實其 release 8d1c9b66＝FH81013 2、15 軌）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "繁星點點；Chang Loo；張露 繁星點點；Fan Xing Dian Dian",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "潘秀瓊",
+  "album": "Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)",
+  "year": 1960,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "Capitol Records",
+  "why": "潘秀瓊 1960 年由美國 Capitol「Capitol of the World」系列在美國發行的 LP（T 10326），是華語時代曲極少數在 1960 年就進了美國主流廠牌國際系列的唱片，也是 MB 上她名下唯一一張專輯條目。實掃 seed_cards.json：潘秀瓊池中 1 張，是 c-49 上架的《百代中國時代曲名典43：潘秀瓊 情人的眼淚》(1958)——那是後世復刻，本卡補的是當年的實體原盤，而且是海外版，兩張互不重疊。可查證來源：MB release 掛 Capitol Records T 10326、US、Official；Discogs 有 1962 年的 Capitol 刷次（release 5302495）與 2015 年 Sepia／Capitol 兩筆復刻（release 7161575／15324574）。",
+  "risk": "撞卡風險低（池中潘秀瓊 1 張、盤名不同；英文長盤名全池 0 筆）。**盤名很長且含括號**：MB 標題整串帶副標「(By The Orient's Favorite Vocalist)」，Discogs 有的條目沒有括號，比對時兩種都要試。年份分歧：MB 記 1960，Discogs 的 Capitol 刷次標 1962，本卡取 MB first-release-date 1960。掛名：池中已有「潘秀瓊」，沿用；MB credit 亦為漢字。**封面與試聽風險高**：Apple 藝人 id 14875670／1482555177（兩個實體），tw 目錄 7 筆、hk 目錄 24 筆，逐筆比對過都沒有這張；hk 有的是名典 44／45 與 1980 年的金曲經典。預估要人工補封面，且要注意 Capitol 這張是美國盤，店面可能落在 us 而不是 tw／hk（第 183 條：再發權比原產國更能預測 Apple 的上架市場）。",
+  "mbNote": "釘 release-group 145dc64c-8d7d-45ce-9127-086301c8a8f4。回問確認：title「Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)」、artist-credit「潘秀瓊」、first-release-date 1960、primary-type Album、secondary-types 空、轄下 1 個 release（1960 US、Official、Capitol Records T 10326／T-10326）。藝人 MBID 5b2b4dc3-ab3d-4667-94ef-3883e81b0f89，名下 2 個 RG。刻意不釘：1742269c-e5e9-4558-867d-fbc23ce9ba48《Our Singapore 2019》（2019 Single，與時代曲無關）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Popular Songs In Mandarin Chinese；Poon Sow Keng；潘秀瓊 Capitol T 10326；Capitol of the World 潘秀瓊",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "顧媚",
+  "album": "小雲雀 = The Lark",
+  "year": 1966,
+  "genres": [
+   "pop"
+  ],
+  "label": "Angel Records",
+  "why": "顧媚是邵氏電影幕後代唱的另一根支柱，1961 年《不了情》主題曲就是她唱的；《小雲雀》是 1965 年邵氏同名電影的歌曲集，1966 年由 EMI 旗下 Angel Records 發行（3AEX 314），也是 MB 上她名下唯一一個條目。實掃 seed_cards.json 全 14,424 列：顧媚池中 0 張，同時查「顧媚」「Koo Mei」「Carrie Koo」三種寫法皆 0。c-49 的靜婷那張裁定文字裡就寫明〈不了情〉是顧媚唱的、名典第 33 集也掛她的名，等於當時就標出了這個缺口，本卡補上。可查證來源：MB release 掛 Angel Records 3AEX 314、HK。",
+  "risk": "撞卡風險低（池中 0 張）。盤名含「=」的中英併寫，摺疊後會變成一長串，去重比對要同時試「小雲雀」與「The Lark」。掛名：MB credit 寫「Carrie Koo Mei」，池中無此藝人，依派工信（華語圈照原文漢字、一律繁體）取「顧媚」，拉丁寫法進 queryAlias。MB 這個 release 的 status 是空的（不是 Official），且 secondary-types 含 Soundtrack——依 §5.6 明文，primary-type 為 Album 者照一般 Album 寫、不填例外欄位。封面與試聽：Apple 藝人 id 104023513，tw／hk 目錄各 4 筆，其中 collectionId 727554274《百代百年系列14: 小雲雀》(2005) 是同一批錄音的後出重包裝，可以拿來取封面但要人工核對曲目；CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 38efe9cd-6a52-45f4-a068-ef4e12d4fdb4。回問確認：title「小雲雀 = The Lark」、artist-credit「Carrie Koo Mei」、first-release-date 1966、primary-type Album、secondary-types [Soundtrack]、轄下 1 個 release（1966 HK、status 空、Angel Records 3AEX 314）。藝人 MBID a2134991-9a21-43fb-8a97-ddc2a77cd68b，名下 1 個 RG（以 release-group?artist=…&limit=100&offset= 分頁確認，不是 inc=release-groups 的 25 筆上限）。無同名或同期對照組可列。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "小雲雀；The Lark；Carrie Koo Mei；Koo Mei；百代百年系列14 小雲雀",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "姚蘇蓉",
+  "album": "Love Is Forever 不變的情",
+  "year": 1971,
+  "genres": [
+   "pop"
+  ],
+  "label": "",
+  "why": "姚蘇蓉是 1960 年代末台灣「禁歌歌后」，《今天不回家》一曲讓她成為國語流行從上海腔轉向台北製作的分水嶺。這張 1971 年的香港版 LP 是 MB 上她名下少數標 Official 的專輯條目之一。實掃 seed_cards.json：姚蘇蓉池中 1 張，是《今天不回家》(1969)；她 1970 年代初赴港與新馬演唱的那一段池中完全空白，本卡補的是那一段。可查證來源：MB release 掛 HK、Official、編號 CS 6009。",
+  "risk": "撞卡風險低（池中姚蘇蓉 1 張、盤名不同）。盤名是中英併寫「Love Is Forever 不變的情」，Apple 目錄裡沒有完全同名的條目，比對要兩種寫法都試。掛名：池中已有「姚蘇蓉」，沿用；MB 上另有一個同名藝人實體 a08d7e5a（score 96、無國別、名下無 RG），本卡用的是 fc579f36（TW、1945-12-05），不要選錯。**Apple 目錄極龐雜**：藝人 id 390852467，tw 目錄回 74 筆，其中 2023 年一口氣上了三十多張復刻，逐筆比對過沒有《不變的情》；依第 173 條，目錄端點沒命中不算「Apple 沒有」，但預估要人工補封面。CAA 只有 1 個 release。廠牌欄留空：MB 該 release 只登錄了編號 CS 6009、沒有 label 名稱，不臆測。",
+  "mbNote": "釘 release-group fab697b7-0b6a-4602-b111-8e305fdbe551。回問確認：title「Love Is Forever 不變的情」、artist-credit「姚蘇蓉」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release（1971 HK、Official、編號 CS 6009）。藝人 MBID fc579f36-26fc-4478-b1c0-b3d1ce0e2457（TW），名下 11 個 RG。刻意不釘：76882b49-d37d-4046-bc02-aa2120868e80《歌曲精選》（1970）、08d55144-a79b-43e6-894b-e2c3594c22bf《想起你的時候》（1972）、6a7d2bac-74ac-4bc2-9af7-53d8dcda6a0b《Yao Su Yong's Highlight / A Go Go》（1967）、1dd3f60d-f333-4984-bbd2-8f4a3af7e3f6《我不能再想你 / 你的電話又來到》（1973）、97673d77-55f8-467c-bdc3-9fe4639c8798《Yao Su Yong's Greatest Movie Hits = 最流行電影名曲》（Compilation、無年份）。另一個同名藝人實體 a08d7e5a-b9b4-4f0d-a537-962c71261c0f 名下無 RG，刻意不用。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "不變的情；Love Is Forever；Yao Su Yong；姚蘇蓉 不變的情",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "青山",
+  "album": "青山之歌",
+  "year": 1969,
+  "genres": [
+   "pop"
+  ],
+  "label": "崑崙唱片",
+  "why": "青山與姚蘇蓉、謝雷同屬 1960 年代末台灣國語流行的第一線男歌手，〈淚的小花〉〈一寸相思一寸淚〉都出自這幾年。這張 1969 年崑崙唱片（K.L.C. KLC 1028）的《青山之歌》是 MB 上他名下唯一一張標 Official 的整張 Album，其餘全是 EP 與後世拼盤。實掃 seed_cards.json：青山池中 1 張，是《淚的小花》(1969)——那在 MB 上只有 EP 條目（442bda57），本卡補的是同一時期的整張 LP。可查證來源：MB release 掛崑崙 K.L.C. KLC 1028、Official。",
+  "risk": "撞卡風險：**池中《淚的小花》與本卡是同年同一位歌手**，曲目可能部分重疊；MB 上《淚 的 小 花》是獨立的 EP RG（442bda57，字間帶空格），與本卡釘的 Album RG 不同，人工核對過不是同一個發行品。掛名：池中已有「青山」，沿用；MB 上另有三個名字相近的日本藝人（青山ミチル、青山薫、青山テルマ），選 1290816e-1add-4430-ba8a-e1696d50ba28（TW、1945）不要選錯。**盤名是常見詞**：「青山之歌」在 Apple tw／hk 目錄有 1971 年的《青山之歌-酒醒夢已殘》(955364085)、《青山之歌-今夜雨濛濛》(955363689) 與 2016 年的《歌王 青山之歌》(1166800012) 三筆，都是副標不同的別碟，取封面時不能拿它們頂替。CAA 只有 1 個 release，預估要人工補封面。",
+  "mbNote": "釘 release-group d68427d1-eecf-42b5-a62f-f09c5f6102a8。回問確認：title「青山之歌」、artist-credit「青山」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（Official、崑崙 K.L.C. KLC 1028，release 未填國別）。藝人 MBID 1290816e-1add-4430-ba8a-e1696d50ba28（TW、1945），名下 13 個 RG。刻意不釘：442bda57-e660-47ac-b7ea-ec2e469248d7《淚 的 小 花》（1970 EP，池中已有同名卡）、bf4b20b1-804f-42e4-b312-ffac528e3bcf《一寸相思一寸淚 / 不要拋棄我》（1969 EP）、ce679db2-fee6-4eab-af1a-52300f96b713《一寸相思一寸淚》（無 first-release-date）、47f622fc-f19e-4296-9745-596fed7c089c《電影明星青山亏歌》（1969 EP）、7e03b5e3-e556-4fb4-8e95-fcec75e68681《心愛的馬 / 第3集》（1968）、a5878a5a-8381-45a1-b4d6-d0979423b567《70年代（今夕何夕）》（Compilation、無年份）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ching San；Qing Shan；青山 崑崙 KLC 1028",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "崔苔菁",
+  "album": "為什麼春天要遲到",
+  "year": 1970,
+  "genres": [
+   "pop"
+  ],
+  "label": "可登唱片",
+  "why": "崔苔菁是台灣電視綜藝歌唱時代的第一位「歌星」型偶像，1970 年代主持《翠笛銀箏》《夜來香》，把國語流行從唱片廳搬上電視。這張 1970 年可登唱片的《為什麼春天要遲到》是她最早的個人專輯，也是 MB 上她名下僅有的兩個條目之一。實掃 seed_cards.json 全 14,424 列：崔苔菁池中 0 張，同時查「崔苔菁」「Tsui Tai-ching」「Louise Tsui」三種寫法皆 0——1970 年代台灣電視歌唱這一塊池中只有鳳飛飛 3 張與劉文正 1 張，她完全缺席。可查證來源：MB release 掛可登有聲出版社有限公司、Official。",
+  "risk": "撞卡風險低（池中 0 張，盤名全池 0 筆）。掛名：池中無此藝人，MB credit 已是漢字「崔苔菁」，直接沿用（第 177 條第 2 步）。年份：MB 記 1970，release 國別登錄成 XW（全球），不是 TW，行文時不要把它當成海外發行。**Apple 查無**：以藝人名在 tw／hk 兩店面 search 都找不到匹配的 musicArtist 實體，依第 176／185 條，這種情形要再走一次藝人目錄 lookup 才能判 unavailable，交給研究層覆核；封面預估要人工處理。CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 793fc373-fce4-45b3-a8bb-e0759406f08b。回問確認：title「為什麼春天要遲到」、artist-credit「崔苔菁」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release（1970 XW、Official、可登有聲出版社有限公司）。藝人 MBID 2dd86b55-dc99-489e-8a52-28ab55b2ca6a（TW、1950-11-08），名下 2 個 RG。刻意不釘：1802c207-cfd1-4995-8de3-c781896f9cee《甜蜜的回憶 / 乘風破浪》（1976，晚六年的另一張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tsui Tai-ching；Louise Tsui；崔苔菁 可登唱片",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "龔秋霞",
+  "album": "秋水伊人",
+  "year": 1993,
+  "genres": [
+   "pop"
+  ],
+  "label": "百代唱片",
+  "why": "龔秋霞是 1930 年代上海「四大歌后」以外最重要的影歌雙棲者，1937 年《古塔奇案》的〈秋水伊人〉是她的代表作，也是時代曲最早的電影插曲名作之一。這張 1993 年 EMI (HK) 的《秋水伊人》是《百代中國時代曲名典》系列第 24 集，把她的百代錄音整編成單一發行品，也是 MB 上她名下唯一一個條目。實掃 seed_cards.json 全 14,424 列：龔秋霞池中 0 張；池中七張名典系列卡涵蓋周璇、姚莉、吳鶯音、崔萍、潘秀瓊、靜婷、張露七位，唯獨缺她。時代曲只以 78 轉蟲膠單片流通、不存在原始專輯，只能以復刻輯為建檔單位（路線同 c-49）。可查證來源：MB release 掛 Pathé 百代唱片、條碼 0 7777 78370 2 3、HK、Official；Discogs release 5607486 同盤同廠同年。",
+  "risk": "**同名別碟**：徐小鳳 1984 年也有一張《秋水伊人》（MB d3352470-51fb-4be7-8a10-7e8af267f26b），盤名完全相同、藝人不同；本批同時收徐小鳳兩張碟，人工核對過兩者不衝突，但封面與試聽比對時一定要帶藝人一起查。年份：本卡 year 取合輯首次出版年 1993（§5.6 規定），錄音年是 1930s–40s，行文要分開講。掛名：池中無此藝人，MB credit 已是漢字「龔秋霞」，沿用。封面與試聽：Apple tw／hk 兩店面目錄都有 collectionId 771772433《百代‧中國時代曲名典24: 秋水伊人》(1993) 與 1442276146《秋水伊人》(1962)，前者與本卡釘的 RG 同年同系列，是首選；後者標 1962，是別的發行品，不可混用。",
+  "mbNote": "釘 release-group f0899d3d-46f7-405a-a1d0-97844d54e151。回問確認：title「秋水伊人」、artist-credit「龔秋霞」、first-release-date 1993-03-23、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（1993-03-23 HK、Official、Pathé 百代唱片、條碼 0 7777 78370 2 3）。藝人 MBID ab808f0a-3541-4635-82a4-6cd402d7d6f9，名下 1 個 RG。刻意不釘：d3352470-51fb-4be7-8a10-7e8af267f26b《秋水伊人》（1984，徐小鳳的同名碟，不同藝人不同內容）。",
+  "releaseType": "Compilation",
+  "exceptionReason": "百代中國時代曲名典第 24 集，1993 年由 EMI (HK) 把龔秋霞 1930–40 年代的百代蟲膠錄音整編發行；時代曲當年只以 78 轉單片流通、沒有原始專輯這個單位，這一系列復刻輯是這批錄音唯一可建檔也是唯一在串流上架的形式。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/f0899d3d-46f7-405a-a1d0-97844d54e151",
+   "https://www.discogs.com/release/5607486"
+  ],
+  "selfTitled": false,
+  "queryAlias": "百代中國時代曲名典24；Kung Chiu Hsia；龔秋霞之歌；Awaiting Your Return",
+  "reissuedBy": "EMI (HK)",
+  "g": "a"
+ },
+ {
+  "artist": "白光",
+  "album": "白光紀念專輯-懷念",
+  "year": 1999,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "百代唱片",
+  "why": "白光是上海時代曲七大歌星裡音域最低、風格最接近西方 torch song 的一位，〈如果沒有你〉〈等著你回來〉是她的代表作。她在 1999 年於吉隆坡病逝，這張同年發行的紀念輯是 MB 上她名下唯一一個條目。實掃 seed_cards.json 全 14,424 列：白光池中 0 張，同時查「白光」「Bai Guang」「Pai Kwong」三種寫法皆 0——上海七大歌星在池中只有周璇、姚莉、吳鶯音三位有卡，她是最大的缺口之一。可查證來源：Apple tw／hk 兩店面目錄都有 collectionId 724462653《白光紀念專集 - 懷念》(1999)，與 MB 條目同年同名（Apple 用「專集」、MB 用「專輯」）。",
+  "risk": "**這張的資料最薄**：MB 只有 1 個 release、國別 CN、status 空、沒有廠牌欄，first-release-date 1999-01-01 是月日補齊的形式，年份可信度低於本批其他卡。primary-type 是 Album、secondary-types 空，依 §5.6 明文照一般 Album 寫、不填例外欄位；但實質上它是一張身後紀念輯，行文要講清楚錄音年（1940s 上海百代）與唱片年（1999）不是同一件事。盤名一字之差：MB 寫「專輯」、Apple 寫「專集」，摺疊後不相等，兩種寫法都要進 queryAlias 否則配對會漏。掛名：池中無此藝人，MB credit 已是漢字「白光」，沿用；Apple 有五個近似藝人實體（633855421 白光、1484646750 白光、633867352 Guang Bai、1842716284 白光 等），要挑 633855421 那個。封面與試聽：以 collectionId 724462653 直查最穩；CAA 只有 1 個 release，命中率低。",
+  "mbNote": "釘 release-group 04b6c99e-66c3-4860-a674-f054464b0ff1。回問確認：title「白光紀念專輯-懷念」、artist-credit「白光」、first-release-date 1999-01-01、primary-type Album、secondary-types 空、轄下 1 個 release（1999-01-01 CN、status 空、無廠牌登錄）。藝人 MBID d9244940-d3ef-483f-8561-0fa805dcb6db（CN、1920），以 release-group?artist=…&limit=100&offset= 分頁確認名下只有這 1 個 RG——她 1940 年代的百代錄音在 MB 上完全沒有建檔（第 28 條：這是真的查無，不是 503）。無對照組可列。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "白光紀念專集 - 懷念；懷念；Bai Guang；Pai Kwong；百代中國時代曲名典20 白光 如果沒有你",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "沈文程",
+  "album": "心事誰人知",
+  "year": 1982,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "愛莉亞唱片",
+  "why": "1982 年愛莉亞唱片（A6002）發行的《心事誰人知》是戰後台語歌從「日本演歌翻唱為主」轉向「本地創作」的關鍵一張：主打曲由蔡振南作詞作曲、沈文程演唱，之後成為台語歌被翻唱最多的曲目之一。實掃 seed_cards.json 全 14,424 列：沈文程池中 0 張；1980 年代台語線池中只有洪榮宏《行船人的愛》(1982) 與葉啟田《愛拚才會贏》(1988) 兩張，這張補的正是這兩張之間的創作源頭。本批另收蔡振南《生命的太陽》(1995)，兩張並置能把作者與演唱者兩條線都補上。可查證來源：MB release 掛愛莉亞 A6002、TW、Official。",
+  "risk": "撞卡風險低（池中 0 張，盤名全池 0 筆）。掛名：池中無此藝人，MB credit 已是漢字「沈文程」，沿用。**Apple 查無**：藝人名在 tw／hk 兩店面 search 找不到匹配的 musicArtist 實體；依第 176／185 條，tw 店面對純漢字的 search 本來就會失手，判 unavailable 前要再走藝人目錄 lookup，交研究層覆核。CAA 只有 1 個 release，預估要人工補封面。另注意〈心事誰人知〉被翻唱極多（江蕙、蔡振南、伍佰皆有版本），比對曲目時要鎖 1982 年沈文程原唱，不收任何後世翻唱或他本人的重錄。",
+  "mbNote": "釘 release-group 1c038164-4a20-48ee-a78f-ff14fd399997。回問確認：title「心事誰人知」、artist-credit「沈文程」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release（1982 TW、Official、愛莉亞 A6002）。藝人 MBID cbf91cdd-4d81-42af-9e9c-478bc21a2a85（TW、1955-06-06），以分頁確認名下只有這 1 個 RG。無對照組可列。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shen Wen-cheng；沈文程 心事誰人知；Sim Bun-thing",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "蔡振南",
+  "album": "生命的太陽",
+  "year": 1995,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "飛碟唱片",
+  "why": "蔡振南先是〈心事誰人知〉(1982) 的詞曲作者，1995 年這張《生命的太陽》才是他以歌手身分的代表作，同年也因《多桑》《香蕉天堂》等片跨進電影。實掃 seed_cards.json 全 14,424 列：蔡振南池中 0 張；1990 年代台語線池中只有江蕙 3 張與伍佰 & China Blue 的《樹枝孤鳥》(1998)，男聲創作型這一塊是空的。本批同時收沈文程《心事誰人知》(1982)，兩張把「同一首歌的作者與原唱」在池中對上。可查證來源：MB release 掛飛碟唱片 09417-2、TW、Official；Apple tw／hk 兩店面目錄都有 collectionId 203895157《生命的太陽》1995。",
+  "risk": "撞卡風險低（池中 0 張，盤名全池 0 筆）。掛名：池中無此藝人，MB credit 已是漢字「蔡振南」，沿用。年份：MB 記 1995-01，取 1995。廠牌飛碟唱片在 1990 年代已被 EMI 收購，屬大廠——本批不受「2010 年後中文圈只收獨立」那條限制（簡報 §1.5 明文寫 2010 年之前不受限）。封面與試聽：Apple 藝人 id 203883904，tw／hk 兩店面同一個 collectionId 203895157，配對應該會過；CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 490beb15-bd28-4d60-a734-e28622a603f1。回問確認：title「生命的太陽」、artist-credit「蔡振南」、first-release-date 1995-01、primary-type Album、secondary-types 空、轄下 1 個 release（1995-01 TW、Official、飛碟唱片 09417-2）。藝人 MBID 21758fd7-ed84-4b48-a195-dabee78c656c（TW、1954-07-26），名下 2 個 RG。刻意不釘：e22873ea-c749-3aa1-84d9-6f0b4c173d2f《南歌》（MB 無 first-release-date，Apple 標 1996，年份填不出來）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tsai Chen-nan；蔡振南 生命的太陽；Chhoa Chín-lâm",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "陳芬蘭",
+  "album": "親愛的母親",
+  "year": 1970,
+  "genres": [
+   "pop"
+  ],
+  "label": "",
+  "why": "陳芬蘭 12 歲以〈孤女的願望〉出道，是 1960 年代台語歌壇最早的童星型歌手，1970 年前後轉唱國語與福建歌曲並赴日發展。這張 1970 年的《親愛的母親》是 MB 上她名下最早、且標 Official 的專輯條目。實掃 seed_cards.json 全 14,424 列：陳芬蘭池中 0 張；1950–70 年代台語線池中一張都沒有（文夏、洪一峰、紀露霞、郭金發、吳晉淮全部 0 張，且 MB 上完全沒有建檔），她是這一代裡少數 MB 釘得住的人，本卡與本批另一張《楊三郎紀念專輯》一起把這條線從零補到二。可查證來源：MB release 標 1970-06-30、XW、Official；Apple tw／hk 兩店面目錄都有 collectionId 1442592279《陳芬蘭親愛的母親》1970。",
+  "risk": "撞卡風險低（池中 0 張，盤名全池 0 筆）。掛名：池中無此藝人，MB credit 已是漢字「陳芬蘭」，沿用；Apple 用同一個寫法（藝人 id 776149982）。盤名分歧：Apple 把藝人名併進盤名寫成「陳芬蘭親愛的母親」，摺疊後本卡盤名是它的子字串，配對放寬到子字串就會過。廠牌欄留空：MB 該 release 沒有登錄 label，不臆測。國別 XW（全球）不是 TW，行文不要當成台灣盤。封面與試聽：Apple collectionId 1442592279，tw／hk 同一個 id；CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 2353768a-ea9d-4f6f-a538-470b8ffe34df。回問確認：title「親愛的母親」、artist-credit「陳芬蘭」、first-release-date 1970-06-30、primary-type Album、secondary-types 空、轄下 1 個 release（1970-06-30 XW、Official、無廠牌登錄）。藝人 MBID 883ebf6a-112f-42f9-9bf2-86264cfef3bd，名下 5 個 RG。刻意不釘：74b4f1b5-5aa1-4e10-beb4-68626d52ae1f《陳芬蘭之福建歌曲 - 月下心茫茫 = Alone With The Moon》（1970 同年，盤名帶三段併寫，另一張碟）、28963fe8-89d8-4c20-8268-5ee2076c08f4《陳芬蘭与流行歌曲》（1971，MB 標題是簡體登錄）、0d876f12-603a-4936-bbd0-3fccc57b694f《梦乡/你的期望》（1972，同樣簡體登錄）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "陳芬蘭親愛的母親；Chen Fen-lan；Tan Hun-lan",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "陳芬蘭",
+  "album": "楊三郎紀念專輯",
+  "year": 1992,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "吉馬唱片",
+  "why": "楊三郎（1919–1989）是〈港都夜雨〉〈孤戀花〉〈望你早歸〉的作曲者，戰後台語歌最重要的作曲家之一；1992 年吉馬唱片這張紀念專輯由陳芬蘭重唱他的曲目，是台語歌壇少見的「以作曲家為單位」整輯。實掃 seed_cards.json 全 14,424 列：楊三郎作品在池中 0 張、陳芬蘭 0 張；台語線池中六張（洪榮宏、葉啟田、江蕙 3、伍佰《樹枝孤鳥》）全部是 1980 年之後的原創專輯，沒有任何一張回頭處理戰後第一代作曲家。本卡與本批的《親愛的母親》(1970) 一起收，前者是她自己的原盤、後者是她替前輩留檔。可查證來源：MB release 掛吉馬唱片 MCD09205、TW、Official。",
+  "risk": "撞卡風險低（池中 0 張）。**這張是「單一歌手重唱單一作曲家」的整輯，不是合輯**：MB primary-type Album、secondary-types 空，依 §5.6 明文照一般 Album 寫、不填例外欄位；但行文要講清楚曲目是楊三郎 1940–50 年代的作品、演唱是 1992 年的新錄音，兩個年份不能混。掛名：以演唱者「陳芬蘭」掛卡，不掛楊三郎（池中無作曲家卡形態，藍圖 §五-6）。**Apple 查無**：tw／hk 目錄各 12／13 筆，逐筆比對過沒有這張，依第 173 條要再走一次別的查法才能判 unavailable；CAA 只有 1 個 release，預估要人工補封面。",
+  "mbNote": "釘 release-group b650864e-698c-41b4-a67f-f8169a80edb0。回問確認：title「楊三郎紀念專輯」、artist-credit「陳芬蘭」、first-release-date 1992-06、primary-type Album、secondary-types 空、轄下 1 個 release（1992-06 TW、Official、吉馬唱片 MCD09205）。藝人 MBID 883ebf6a-112f-42f9-9bf2-86264cfef3bd，名下 5 個 RG。刻意不釘：2353768a-ea9d-4f6f-a538-470b8ffe34df《親愛的母親》（1970，本批另立一卡）、74b4f1b5-5aa1-4e10-beb4-68626d52ae1f《陳芬蘭之福建歌曲 - 月下心茫茫》（1970）、28963fe8-89d8-4c20-8268-5ee2076c08f4《陳芬蘭与流行歌曲》（1971）、0d876f12-603a-4936-bbd0-3fccc57b694f《梦乡/你的期望》（1972）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "楊三郎紀念專輯 陳芬蘭；吉馬唱片 MCD09205；Iunn Sam-long",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "黃乙玲",
+  "album": "無字的情批",
+  "year": 1999,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "上華唱片",
+  "why": "黃乙玲從 1980 年代的餐廳秀出身，1990 年代末在上華唱片轉成台語歌壇第一線；1999 年這張《無字的情批》是她銷量與評價都最高的一張，同名主打曲至今仍是台語卡拉 OK 的固定曲目。實掃 seed_cards.json 全 14,424 列：黃乙玲池中 0 張；台語女聲池中只有江蕙 3 張，等於整個 1990 年代台語女聲只由一個人代表，本卡補的是與江蕙同期的另一條線。可查證來源：MB release 掛上華唱片 WCD2213-2、TW、Official；Apple tw／hk 兩店面目錄都有 collectionId 650710709《無字的情批》1999。",
+  "risk": "撞卡風險低（池中 0 張，盤名全池 0 筆）。掛名：池中無此藝人，MB credit 已是漢字「黃乙玲」，沿用；Apple tw 另有兩個近似實體「黄艺灵」「黄依玲」，要挑 404105101。年份：MB 記 1999-11-11，取 1999；同年她另有一張《玲聲若響 經選集》(Compilation)，不要混。封面與試聽：Apple collectionId 650710709，tw／hk 同一個 id，配對應該會過；CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 07f7c44d-28a2-4a7e-83d8-ec7f4a20c0f4。回問確認：title「無字的情批」、artist-credit「黃乙玲」、first-release-date 1999-11-11、primary-type Album、secondary-types 空、轄下 1 個 release（1999-11-11 TW、Official、上華唱片 WCD2213-2）。藝人 MBID 4d4a26b2-cba8-432c-8f4c-0a253c2d791f（TW、1969-09-20），名下 7 個 RG。刻意不釘：eec319a0-9c01-4857-a506-6e896389a271《玲聲若響 經選集》（1999-03-01，同年 Compilation）、5d808eab-9829-4f8c-a57d-c51a924a380f《海波浪》（2001）、b21e94fe-ec87-4a0f-813c-a9fe02fb68d3《講什麼山盟海誓精選重唱＋新歌》（2001，精選＋新歌混編）、c99479e4-d084-3f65-9fb2-4ad604e0b3ca《24K黃金CD版I》（無 first-release-date）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Huang Yee-ling；黃乙玲 無字的情批；Ng It-leng",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "江蕙",
+  "album": "愛作夢的魚",
+  "year": 2005,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "亞律音樂",
+  "why": "江蕙 2005 年轉到亞律音樂後的第一張專輯，是她從「台語苦情歌」轉向抒情敘事的分水嶺，也是她連續拿金曲獎最佳台語女歌手那幾年的起點。實掃 seed_cards.json：江蕙池中 3 張——《酒後的心聲》(1992)、《半醉半清醒》(1999)、《紅線》(2002)，全部集中在 1992–2002；她 2005 年之後的十年（也是她商業與評價的最高峰）池中完全空白，本卡補在《紅線》後面。可查證來源：MB release 掛亞律音樂 H103004、TW、Official；Apple tw／hk 兩店面目錄都有 collectionId 1444719861《愛作夢的魚》2005。",
+  "risk": "撞卡風險：池中三張江蕙都逐筆核對過，盤名互不為子字串。掛名：池中已有「江蕙」，沿用（第 177 條第 1 步）；Apple tw 的 search 會把「阿杜」「李宗盛」一起回進來，要用 artistId 395158183 精確鎖定。**年份界線**：2005 在「2010 年後中文圈只收獨立」那條線之前（簡報 §1.5 明文：2010 年之前不受限制），不受影響；但她 2010 年的《當時欲嫁》就落在線上，本批刻意不收。封面與試聽：Apple collectionId 1444719861，tw／hk 同一個 id；CAA 只有 1 個 release。",
+  "mbNote": "釘 release-group 8ed2baae-5800-3504-a493-23e09dcfef1e。回問確認：title「愛作夢的魚」、artist-credit「江蕙」、first-release-date 2005-12-30、primary-type Album、secondary-types 空、轄下 1 個 release（2005-12-30 TW、Official、亞律音樂 H103004）。藝人 MBID 30923ad8-e747-4f7b-8014-02e479ae4381（TW、1961-09-01），名下 12 個 RG。刻意不釘：16993743-cf1a-4591-aa14-84d471b2b882《酒後的心聲》、d26f7422-a227-36a5-afc0-61315c632a99《半醉半清醒》、e65c764a-5a56-3d94-9c90-71086314bbad《紅線》（三者皆池中已有）、2a508ba7-037b-4313-91e9-1104b99ea0e8《再相會》（2001）、d1ede4aa-ca91-484b-9011-911647274f32《當時欲嫁》（2010，落在 §1.5 的年份線上）、721f5b07-0363-48be-950d-cf42a1b85367《10年‧典藏精選》（2011 Compilation）、d5dae520-ee01-47e2-9767-7e55f89d7d7b《惜別的海岸》（無 first-release-date）、5b52e4c3-a045-4646-8578-58cadbbf6005《明天會更好》（Single，多藝人合唱，MB 掛在多位歌手名下）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jody Chiang；江蕙 愛作夢的魚；Kang Hui",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
