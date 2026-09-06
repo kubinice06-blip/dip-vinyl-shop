@@ -354,25 +354,6 @@
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "太阳之子; Children of the Sun; Jay Chou",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "周杰倫",
-  "album": "太陽之子",
-  "year": 2026,
-  "genres": [
-   "pop"
-  ],
-  "label": "杰威爾音樂有限公司／環球音樂",
-  "why": "2026-03-24 首發（TW 盤），MB 該 release-group 轄下 4 筆 release 全 Official：TW 兩筆（2026-03-24 與 2026-03-25）、CN 一筆標題作簡體「太阳之子」、GB 一筆標題作英文「Children of the Sun」，13 軌數位。發行掛杰威爾音樂有限公司與環球音樂兩家。池中周杰倫現有 8 張（實掃 seed_cards.json 全 14,424 列）：《Jay》2000、《范特西》2001、《八度空間》2002、《葉惠美》2003、《七里香》2004、《十一月的蕭邦》2005、《依然范特西》2006、《魔杰座》2008——2008 年之後整條目錄池中全無。",
-  "risk": "⚠ 簡繁分裂：同一 release-group 內 TW 盤作「太陽之子」、CN 盤作「太阳之子」，chk-prop 的 NFKC 正規化摺不掉簡繁（本輪共用簡報第二節明載），兩種都要查撞卡；卡片一律用繁體。英文標題「Children of the Sun」是 GB 盤寫法，也要進 queryAlias。掛名「周杰倫」在池中八張全為繁體，與新卡一致；「Jay Chou」在池中 0 張，但是外部服務認得的鍵，依裁定 25 放進 queryAlias。MB 上只有數位載體，實體盤資訊尚未建檔。封面與試聽走 tw／hk 店面。",
-  "mbNote": "釘 release-group 35a0c2e9-5bdb-4418-87b1-8b059958f593。回問確認：title「太陽之子」、artist-credit「周杰倫」、first-release-date 2026-03-24、primary-type Album、secondary-types 空、轄下 4 筆 release 全 Official（TW 2026-03-24、CN 2026-03-25 標題「太阳之子」、TW 2026-03-25、GB 2026-03-25 標題「Children of the Sun」）。藝人 MBID a223958d-5c56-4b2c-a30a-87e357bc121b，名下 55 個 release-group。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
   "queryAlias": "在这里停一下; deca joins 2026",
   "reissuedBy": "",
   "g": "b",
@@ -405,24 +386,5 @@
   "why": "2026-08-28 由樂團自營的回聲社音樂有限公司發行，編號 ECHOCD015，MB 該 release-group 只有 1 筆 TW Official release，CD 兩片、分別是 10 軌與 6 軌。池中回聲樂團現有 2 張（實掃 seed_cards.json 全 14,424 列）：《感官駕馭》2002、《巴士底之日》2007——2007 年之後整條目錄池中全無。",
   "risk": "⚠ 掛名「回聲樂團」的英文團名是「Echo」，池中「Echo」這個字串下已有 Echo & the Bunnymen 6 張與 Echobelly、Echospace 等共 11 筆，全部與本團無關；用英文團名查撞卡會全部誤中，一定要用繁體掛名或 MBID（裁定 29／49）。盤名「靈魂的回聲」含團名「回聲」二字，與團名字串互相包住（裁定 162 的鏡像）。簡體「灵魂的回声」也要查。MB 上該藝人只有 3 個 release-group，池中兩張都不在裡面，代表 MB 對這團的建檔不完整、不能用它反推目錄。封面與試聽走 tw 店面。",
   "mbNote": "釘 release-group 5058e1ce-5d59-48d7-a48d-94a111ac9861。回問確認：title「靈魂的回聲」、artist-credit「回聲樂團」、first-release-date 2026-08-28、primary-type Album、secondary-types 空、轄下 1 筆 TW Official release（CD ×2，10 軌＋6 軌）。藝人 MBID 025522c5-dc7f-4037-9b81-167cf52b615b，名下僅 3 個 release-group（建檔不完整）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "Asiaboy; 禁藥王; 禁药王; 猛虎下山 Asiaboy",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "Asiaboy 禁藥王",
-  "album": "猛虎下山",
-  "year": 2026,
-  "genres": [
-   "hiphop"
-  ],
-  "label": "（MB 未填廠牌）",
-  "why": "2026-03-17 發行，MB 該 release-group 只有 1 筆 TW Official release、CD 14 軌，廠牌與編號尚未建檔。池中 Asiaboy 禁藥王 0 張（實掃 seed_cards.json 全 14,424 列，「Asiaboy」與「禁藥王」兩種寫法都查過），台灣嘻哈這條線在池中沒有 2020 年代的碟。",
-  "risk": "⚠ 掛名「Asiaboy 禁藥王」是拉丁與繁體混排，MB 的 artist-credit 就是這個混排字串（裁定 6／70／120：用 MB 實體的文字），但外部服務多半只認「Asiaboy」或「禁藥王」其中一半，兩種都要進 queryAlias。簡體「禁药王」也要查。MB 上廠牌未填，行文不得斷言發行方；該藝人在 MB 上只有 1 個 release-group，建檔極不完整。嘻哈卡要在上架前確認 Apple 的 collectionExplicitness 與淨化版。封面與試聽走 tw 店面。",
-  "mbNote": "釘 release-group bfc01933-8890-4d59-83fd-598de80af417。回問確認：title「猛虎下山」、artist-credit「Asiaboy 禁藥王」、first-release-date 2026-03-17、primary-type Album、secondary-types 空、轄下 1 筆 TW Official release（CD 14 軌，label-info 空）。藝人 MBID 6e8bff95-815d-4c6c-80d9-50036ea4af51，名下僅 1 個 release-group。"
  }
 ]
