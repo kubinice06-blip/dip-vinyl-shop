@@ -1,0 +1,250 @@
+[
+ {
+  "key": "desc2:Comus|To Keep From Crying",
+  "artist": "Comus",
+  "album": "To Keep From Crying",
+  "facts": [
+   {
+    "f": "release-group 704963ff 的欄位：title「To Keep From Crying」、artist-credit「Comus」（藝人實體 MBID b8570b23，type Group、country GB、begin 1968）、first-release-date **1974**、primary-type Album、secondary-types **空**、disambiguation 空。轄下 4 筆 release：1974／GB／Official（12 吋，11 軌，label-info Virgin V 2018）、1974／GB／Official（13 軌，無 label-info）、1990-07-04／JP／Official（CD，11 軌，Virgin VJCP-2535）、2005-11-29／JP／Official（CD，**10 軌**，Strange Days WAS-1068）。**轄下最早的 release 是 1974／GB，與 first-release-date 同年**（裁定 220 的逐張複驗：這張沒有以再發日期建檔的問題）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/704963ff-a3cf-3feb-9f9d-1f3428e8f134?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1974／GB 原盤（12 吋，Virgin V 2018，release 2e2af4ce）的逐軌曲目與長度：1〈Down (Like a Movie Star)〉4:01、2〈Touch Down〉4:39、3〈Waves and Caves〉1:36、4〈Figure in Your Dreams〉3:11、5〈Children of the Universe〉5:50、6〈So Long Supernova〉3:17、7〈Perpetual Motion〉4:07、8〈Panophany〉**0:23**、9〈Get Yourself a Man〉**7:01**、10〈To Keep From Crying〉5:38、11〈After the Dream〉1:04。**11 軌、總長 40 分 47 秒；最短的第 8 軌只有 23 秒，最長的第 9 軌 7 分 01 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=704963ff-a3cf-3feb-9f9d-1f3428e8f134&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文與人員欄：本張是 Comus 的**第二張專輯**，1974 年發行，**編制與其他作品明顯不同——原本的小提琴／中提琴與木管位置換成鍵盤與一般套鼓**。固定班底 Bobbie Watson（主唱、和聲、打擊、直笛）、Roger Wootton（吉他、主唱、和聲）、Keith Hale（鋼琴、風琴、電鋼琴、合成器、馬林巴）、Andy Hellaby（貝斯、自動豎琴、磁帶效果）、Gordon Coxon（鼓、打擊）。客席：Philip Barry（bongo）、Lindsay Cooper（〈To Keep From Crying〉的巴松管）、Didier Malherbe（〈Get Yourself a Man〉的薩克斯風）、Tim Kraemer（〈So Long Supernova〉的大提琴）。",
+    "src": "https://en.wikipedia.org/wiki/To_Keep_from_Crying"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次，`search` 都回 0 筆；改走藝人目錄 lookup（artistId 122075356，genre 標 Rock）攤開名下全部 4 個條目：《Out of the Coma》2012、《First Utterance》1971（11 軌）、《Lofi & Friends (feat. Comus)》2023、《Asian Lofi (feat. Comus)》2024——**沒有本張**。us／jp／de／fr／ie／ca／au 七個店面亦全數 0 筆。**這張在串流上真的沒有，不是查法不對。**",
+    "src": "https://itunes.apple.com/lookup?id=122075356&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 704963ff 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/704963ff-a3cf-3feb-9f9d-1f3428e8f134/front"
+   }
+  ],
+  "hookCandidates": [
+   "第八軌〈Panophany〉只有 23 秒，夾在四分鐘上下的曲子中間",
+   "原本的小提琴與木管位置，這一張換成了鍵盤與一般套鼓"
+  ],
+  "sound": "1974 年 Virgin V 2018 的 12 吋原盤 11 軌、總長 40 分 47 秒。單軌從 23 秒的〈Panophany〉到 7 分 01 秒的〈Get Yourself a Man〉，落差極大。編制與樂團其他作品不同：小提琴、中提琴與木管的位置換成 Keith Hale 的鋼琴、風琴、電鋼琴、合成器與馬林巴，鼓改成 Gordon Coxon 的一般套鼓。Bobbie Watson 唱主聲部並兼打擊與直笛，Roger Wootton 彈吉他兼主唱。客席吹奏三人各只出現在一軌：Lindsay Cooper 的巴松管在同名曲、Didier Malherbe 的薩克斯風在〈Get Yourself a Man〉、Tim Kraemer 的大提琴在〈So Long Supernova〉。",
+  "keyTracks": [
+   "Down (Like a Movie Star)",
+   "Get Yourself a Man",
+   "To Keep From Crying"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974。release-group first-release-date **1974**；**依裁定 220 逐張回問轄下 release**，最早的兩筆都是 1974／GB／Official，其中 12 吋那筆的 label-info 是 Virgin V 2018，與卡單 `label` 欄一致；之後才是 1990 與 2005 的 JP CD。**沒有出現「以再發日期建檔」的形狀。** 串流店面無此條目，無第三方年份可對，但 MB 兩筆原壓 release 已互相佐證。**同名先行單曲：無。**",
+  "notes": "**版本要防**：轄下 1974／GB 另有一筆 13 軌的 release（5616f5b8，無 label-info、無載體欄），2005 年 JP 的 Strange Days CD 則只有 **10 軌**；條目也提到日本版把〈Waves and Caves〉與〈After the Dream〉剪到一分鐘以下。**行文一律以 11 軌的 Virgin V 2018 為準，不得引用 13 軌或 10 軌的曲目數。**｜卡單 `curatorWhy` 寫「Comus 的第二張、也是最後一張原始專輯」：條目證實「第二張」，但**「最後一張」未查到直接來源**（樂團 2012 年另有《Out of the Coma》，串流目錄亦列出），**行文只能寫「第二張」，不要寫「最後一張」**。｜`curatorWhy` 另寫「中間樂團一度解散再由 Roger Wootton 重組」，本次查證未取得直接來源，**行文不要寫解散與重組**。｜評論性的比較（與首作孰優）一律不入行文。"
+ },
+ {
+  "key": "desc2:Dr. Strangely Strange|Heavy Petting",
+  "artist": "Dr. Strangely Strange",
+  "album": "Heavy Petting",
+  "facts": [
+   {
+    "f": "release-group 44088292 的欄位：title「Heavy Petting」、artist-credit「Dr. Strangely Strange」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1970／DE／Official（12 吋，11 軌，label-info Vertigo 6360 009）與 2005／GB／Official（CD，11 軌，Repertoire REPUK 1045）。**最早的 release 就是 1970 那筆，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/44088292-b06f-37dd-8bd9-5154ab4ac885?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970 原盤（Vertigo 6360 009，12 吋，release 0d80dc74）逐軌：1〈Ballad of the Wasps〉3:23、2〈Summer Breeze〉3:40、3〈Kilmanoyadd Stomp〉2:43、4〈I Will Lift Up Mine Eyes〉1:56、5〈Sign on My Mind〉**8:34**、6〈Gave My Love an Apple〉6:08、7〈Jove Was at Home〉2:40、8〈When Adam Delved〉2:12、9〈Ashling〉4:44、10〈Mary Malone of Moscow〉3:57、11〈Goodnight, My Friends〉1:47。**11 軌、總長 41 分 44 秒，第 5 軌 8 分 34 秒是全張最長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=44088292-b06f-37dd-8bd9-5154ab4ac885&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Dr. Strangely Strange 是 1967 年在都柏林成立的愛爾蘭實驗民謠團，創團者為 Tim Booth（人聲、吉他）與 Ivan Pawle（貝斯、鍵盤），後加入多樂器手 Tim Goulding（人聲、直笛、鍵盤）。樂團簽在 Incredible String Band 的製作人兼經紀人 Joe Boyd 名下，1969 年以《Kip of the Serenes》出道。**《Heavy Petting》是第二張，1970 年 9 月發行，收錄 Dave Mattacks 的鼓與回鍋的 Gary Moore 的主奏吉他。** 樂團 1971 年 5 月在倫敦 Drury Lane Theatre 與 Al Stewart 同場演出後解散。",
+    "src": "https://en.wikipedia.org/wiki/Dr._Strangely_Strange"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1443454371：collectionName「Heavy Petting」、artistName「Dr. Strangely Strange」、releaseDate 記 1970、trackCount 11、℗ 欄「℗ 1970 Mercury Records Limited」。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1970 原盤**逐位置相符**，逐軌長度差多在 5 秒內。**唯二較大的差距是第 5 軌（8:20 對 8:34）與第 11 軌（1:13 對 1:47）。上架的是 11 軌的原盤內容，沒有加曲。**",
+    "src": "https://itunes.apple.com/lookup?id=1443454371&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 44088292 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/44088292-b06f-37dd-8bd9-5154ab4ac885/front"
+   }
+  ],
+  "hookCandidates": [
+   "1970 年這張的主奏吉他是回鍋的 Gary Moore，鼓手則是 Dave Mattacks",
+   "十一軌裡第五軌〈Sign on My Mind〉獨佔八分半，其餘多在兩三分鐘"
+  ],
+  "sound": "1970 年 Vertigo 6360 009 的 12 吋原盤 11 軌、總長 41 分 44 秒。第 5 軌〈Sign on My Mind〉8 分 34 秒與第 6 軌〈Gave My Love an Apple〉6 分 08 秒撐起全張長度，其餘多落在兩到四分鐘，收尾的〈Goodnight, My Friends〉只有 1 分 47 秒。樂團是 1967 年在都柏林成立的愛爾蘭實驗民謠團，核心是 Tim Booth 的人聲與吉他、Ivan Pawle 的貝斯與鍵盤、Tim Goulding 的直笛與鍵盤，簽在 Joe Boyd 名下。這一張的鼓由 Dave Mattacks 擔任，主奏吉他是回鍋的 Gary Moore。2005 年 Repertoire 的 CD 仍是同樣 11 軌，串流上架的也是這 11 軌。",
+  "keyTracks": [
+   "Ballad of the Wasps",
+   "Sign on My Mind",
+   "Mary Malone of Moscow"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／DE／Official（Vertigo 6360 009），另一筆是 2005 年的 CD，沒有以再發日期建檔的問題；條目正文另記「1970 年 9 月發行」，串流店面 gb 1443454371 的 releaseDate 與 ℗ 欄也都是 1970。**四處一致。同名先行單曲：無。**",
+  "notes": "**原壓建檔在 DE（Vertigo 6360 009）而不是 GB**，卡單 `label` 欄照此填；轄下沒有 GB 首版的 release，行文若要提發行地請只寫廠牌不寫國別。｜串流版第 11 軌只有 1:13、原盤 1:47，**行文不得引用單軌長度**（裁定 174 同族）。｜條目提到樂團 1971 年 5 月解散，那是樂團史不是本張的事，**行文不要寫成這張是「解散前最後一張」**——條目未如此表述。｜掛名首字是 `Dr.` 帶點號，池中與 MB 一致，維持原寫法。"
+ },
+ {
+  "key": "desc2:Spirogyra|Old Boot Wine",
+  "artist": "Spirogyra",
+  "album": "Old Boot Wine",
+  "facts": [
+   {
+    "f": "release-group 6188e07f 的欄位：title「Old Boot Wine」、artist-credit「Spirogyra」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下 5 筆 release：1972／DE／Official（12 吋，9 軌，Brain BRAIN 1012）、1972／GB／Official（12 吋，9 軌，**Pegasus PEG 13**）、1992／DE／Official（CD，9 軌，Repertoire REP 4132-WY）、2005-03-29／JP／Official（CD，9 軌，Strange Days WAS-1023）、2013-09-30／Official（CD，**13 軌**，Esoteric ECLEC 2411）。**最早的兩筆同為 1972，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6188e07f-5d11-3e17-9aaf-597f60a68a93?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972／DE 原盤（Brain BRAIN 1012，12 吋，release 10095b04）逐軌：1〈Dangerous Dave〉4:16、2〈Van Allen's Belt〉2:35、3〈Runaway〉4:55、4〈Grandad〉3:23、5〈Wings of Thunder〉3:08、6〈World's Eyes〉**7:31**、7〈Don't Let It Get You〉4:28、8〈Disraeli's Problem〉4:15、9〈A Canterbury Tale〉4:03。**9 軌、總長 38 分 34 秒，第 6 軌 7 分 31 秒是唯一超過五分鐘的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6188e07f-5d11-3e17-9aaf-597f60a68a93&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Spirogyra 是英國 folk rock／prog 團，1971 至 1973 年間出過三張專輯，核心是共同創團者兼詞曲與吉他的 Martin Cockerham 與歌手 Barbara Gaskin。樂團在肯特大學重組，另有 Steve Borrill（貝斯）與 Julian Cusack（小提琴）。**三張專輯的鼓全部由 Fairport Convention 的 Dave Mattacks 擔任。** 英國合約簽在 B&C，歐洲與美國的 Polydor 發行案破局，因此德國版改由 Brain 發行、美國未上市。**《Old Boot Wine》是 1972 年的第二張，製作人 Max Hole，英國由 B&C 的子廠 Pegasus 發行**；聲音變化的一部分原因是小提琴手 Julian Cusack 回學校、參與變少，以及原始共同創團者 Mark Francis 回歸。",
+    "src": "https://en.wikipedia.org/wiki/Spirogyra_(band)"
+   },
+   {
+    "f": "歌手條目另記 Barbara Gaskin 的資歷與三張盤的廠牌編號：1950 年 6 月 5 日生，1969 年到肯特大學讀哲學與文學後加入 Spirogyra 任主唱（1969–1974），三張分別是《St Radigunds》B&C CAS 1042、**《Old Boot Wine》Pegasus PEG 13**、《Bells, Boots, & Shambles》Polydor 2310 246；她 1973 至 1976 年間為 Hatfield and the North 唱和聲，1981 年與 Dave Stewart 組成二人組。",
+    "src": "https://en.wikipedia.org/wiki/Barbara_Gaskin"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1393072123：collectionName「Old Boot Wine」、artistName「Spirogyra」、releaseDate 記 1972、trackCount 9、℗ 欄「℗ 1972 Sanctuary Records Group Ltd., a BMG Company」。`entity=song` 攤得出 **9 軌、9 軌全部有 previewUrl**，曲名與曲序與 1972 原盤**逐位置相符**、逐軌長度差在 14 秒內。**上架的是 9 軌的原盤內容，不是 2013 年那張 13 軌 CD。** 唯一的字面差異是第 6 軌店面作〈World's Eye〉、原盤作〈World's Eyes〉。",
+    "src": "https://itunes.apple.com/lookup?id=1393072123&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 6188e07f 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/6188e07f-5d11-3e17-9aaf-597f60a68a93/front"
+   }
+  ],
+  "hookCandidates": [
+   "三張專輯的鼓都是 Fairport Convention 的 Dave Mattacks 來打",
+   "英國掛 Pegasus、德國掛 Brain，同一張碟兩個廠牌編號"
+  ],
+  "sound": "1972 年的 12 吋原盤 9 軌、總長 38 分 34 秒，德國由 Brain 以編號 BRAIN 1012 發行、英國由 B&C 的子廠 Pegasus 以 PEG 13 發行。第 6 軌〈World's Eyes〉7 分 31 秒是唯一超過五分鐘的一軌，其餘落在兩分半到五分鐘之間。樂團核心是 Martin Cockerham 的詞曲與吉他、Barbara Gaskin 的歌聲，加上 Steve Borrill 的貝斯與 Julian Cusack 的小提琴；三張專輯的鼓都由 Fairport Convention 的 Dave Mattacks 擔任。這一張製作人是 Max Hole，Julian Cusack 回學校後參與變少，原始共同創團者 Mark Francis 回歸。2013 年 Esoteric 的 CD 補到 13 軌，串流上架的仍是 9 軌原盤內容。",
+  "keyTracks": [
+   "Dangerous Dave",
+   "World's Eyes",
+   "A Canterbury Tale"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。release-group first-release-date **1972**、**依裁定 220 回問轄下 release**，最早的兩筆同為 1972（DE 的 Brain BRAIN 1012 與 GB 的 Pegasus PEG 13），沒有以再發日期建檔的問題；條目把本張明記為 1972 年作品，歌手條目也列出 Pegasus PEG 13；串流店面 gb 1393072123 的 releaseDate 與 ℗ 欄同為 1972。**四處一致。同名先行單曲：無。**",
+  "notes": "**廠牌兩種寫法都對**：卡單 `label` 欄取德國 Brain BRAIN 1012，條目與歌手條目則記英國的 Pegasus PEG 13，**兩者是同一張碟的兩地發行，行文不要寫成兩張碟**。｜曲名差異一處：原盤作〈World's Eyes〉、串流作〈World's Eye〉，**行文照原盤的複數**。｜2013 年 Esoteric ECLEC 2411 是 13 軌，**行文不得拿追加的四軌當本張曲目**（裁定 141）。｜條目對本張與其他兩張的優劣比較屬評論，**不入行文**。"
+ },
+ {
+  "key": "desc2:Spirogyra|Bells, Boots and Shambles",
+  "artist": "Spirogyra",
+  "album": "Bells, Boots and Shambles",
+  "facts": [
+   {
+    "f": "release-group 2cd4acca 的欄位：title「Bells, Boots and Shambles」、artist-credit「Spirogyra」、first-release-date **1973**、primary-type Album、secondary-types **空**。轄下 5 筆 release：1973／DE／Official（12 吋，7 軌，Brain BRAIN 1024）、1973／GB／Official（12 吋，7 軌，**Polydor 2310 246**）、1991／DE／Official（CD，7 軌，Repertoire RR 4137-WZ）、2005／JP／Official（CD，7 軌，Strange Days WAS-1040）、2013-09-30／XE／Official（CD，**8 軌**，Esoteric ECLEC2412）。**最早的兩筆同為 1973，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2cd4acca-4fec-341e-8099-e66ae1d98c69?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1973／DE 原盤（Brain BRAIN 1024，12 吋，release 04c04d8a）逐軌：1〈The Further Point〉**8:16**、2〈Old Boot Wine〉4:19、3〈Parallel Lines Never Separate〉5:06、4〈Spiggly〉**1:13**、5〈An Everyday Consumption Song〉4:30、6〈The Sergeant Says〉3:43、7〈In the Western World〉**13:00**。**只有 7 軌、總長 40 分 06 秒；末軌 13 分鐘、第 4 軌只有 1 分 13 秒。**第 2 軌與前一張專輯同名。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2cd4acca-4fec-341e-8099-e66ae1d98c69&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：《Old Boot Wine》發行後不久，樂團縮編成 Martin Cockerham 與 Barbara Gaskin 二人。**最後一張《Bells, Boots and Shambles》在倫敦 Morgan Studios 錄音，製作人仍是 Max Hole；1973 年由 Polydor 發行——英國合約原屬的 B&C 前一年已歇業。** 這張找來多位客席，包括前團員 Julian Cusack 與 Steve Borrill，以及吹小號的 Henry Lowther。樂團 1974 年 3 月做了最後一次巡演，同年 Cockerham 移居愛爾蘭後解散。",
+    "src": "https://en.wikipedia.org/wiki/Spirogyra_(band)"
+   },
+   {
+    "f": "歌手條目：Barbara Gaskin 1969 至 1974 年任 Spirogyra 主唱，三張專輯的廠牌編號分別是《St Radigunds》B&C CAS 1042、《Old Boot Wine》Pegasus PEG 13、**《Bells, Boots, & Shambles》Polydor 2310 246**；她之後為 Hatfield and the North 唱和聲，1981 年與 Dave Stewart 組二人組。",
+    "src": "https://en.wikipedia.org/wiki/Barbara_Gaskin"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，改走藝人目錄 lookup（artistId 120105918）攤開名下全部 3 個條目：《Revolution Solution》2012、《St. Radigunds》1971（10 軌）、《Old Boot Wine》1972（9 軌）——**沒有本張**。us／jp／de／fr／ie／ca／au 七個店面亦全數 0 筆。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=120105918&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 2cd4acca 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/2cd4acca-4fec-341e-8099-e66ae1d98c69/front"
+   }
+  ],
+  "hookCandidates": [
+   "七軌撐滿四十分鐘，末軌〈In the Western World〉一首就佔十三分",
+   "第二軌的曲名〈Old Boot Wine〉正是樂團上一張專輯的盤名"
+  ],
+  "sound": "1973 年的 12 吋原盤只有 7 軌、總長 40 分 06 秒：開場的〈The Further Point〉8 分 16 秒、末軌〈In the Western World〉13 分鐘，中間夾著只有 1 分 13 秒的〈Spiggly〉。第 2 軌〈Old Boot Wine〉與樂團上一張專輯同名。錄音在倫敦 Morgan Studios，製作人是 Max Hole；此時樂團已縮編成 Martin Cockerham 與 Barbara Gaskin 二人，客席請回前團員 Julian Cusack 與 Steve Borrill，另有 Henry Lowther 的小號。德國掛 Brain BRAIN 1024、英國掛 Polydor 2310 246——原本的英國合約廠 B&C 前一年已歇業。",
+  "keyTracks": [
+   "The Further Point",
+   "Parallel Lines Never Separate",
+   "In the Western World"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973。release-group first-release-date **1973**、**依裁定 220 回問轄下 release**，最早的兩筆同為 1973（DE 的 Brain BRAIN 1024 與 GB 的 Polydor 2310 246），沒有以再發日期建檔的問題；條目與歌手條目都把本張記為 1973 年、Polydor 2310 246。串流店面查無此條目，無第四處可對，但三處已互證。**同名先行單曲：無。**",
+  "notes": "**無來源狀態**：掛名鍵與盤名鍵、八個店面都查過，藝人目錄 lookup 也只列出三個條目且不含本張（裁定 185／173 走完），**這張確定沒有試聽來源，不要拿《Old Boot Wine》的 collectionId 1393072123 頂替**——回撈清單把它列為本張的候選，那是錯的，它是另一張碟的條目、已被同批另一張卡佔用。｜2013 年 Esoteric ECLEC2412 是 8 軌，**行文不得拿追加的那一軌當本張曲目**。｜末軌長度來源端寫成 12:60，換算後為 13 分整，**行文寫 13 分鐘**。｜條目引用的樂評形容與「lost masterpiece」一類的評價 **一律不入行文**。"
+ },
+ {
+  "key": "desc2:Bill Fay|Bill Fay",
+  "artist": "Bill Fay",
+  "album": "Bill Fay",
+  "facts": [
+   {
+    "f": "release-group 4535d224 的欄位：title「Bill Fay」、artist-credit「Bill Fay」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下 7 筆 release，最早的是 1970／GB／Official（12 吋，**13 軌**，label-info Deram SDN 12，disambiguation「stereo」），其後為 1971 的 Deram（14 軌）、2005 的 Eclectic Discs ECLCD1022（CD，15 軌）、2008 的 Esoteric ECLEC 2037（CD，15 軌）、2008-05-22 的數位版（15 軌）、2009-12-22 的 XE 黑膠（13 軌）、2012 的 US 黑膠（13 軌）。**最早的 release 就是 1970／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4535d224-6083-3be6-8b9d-121fde8d0b37?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（Deram SDN 12，12 吋，release 821328f1）的 **13 軌**曲序：1〈Garden Song〉、2〈The Sun Is Bored〉、3〈We Want You to Stay〉、4〈Narrow Way〉、5〈We Have Laid Here〉、6〈Sing Us One of Your Songs May〉、7〈Gentle Willie〉、8〈Methane River〉、9〈The Room〉、10〈Goodnight Stan〉、11〈Cannons Plain〉、12〈Be Not So Fearful〉、13〈Down to the Bridge〉。**該筆 release 未填逐軌長度。** 2005 年 Eclectic Discs 的 CD（15 軌）前 13 軌與此完全相同、長度合計 40 分 26 秒，第 13 軌〈Down to the Bridge〉1:53，之後才是追加的〈Screams in the Ears〉3:23 與〈Some Good Advice〉2:20。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4535d224-6083-3be6-8b9d-121fde8d0b37&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Bill Fay（1943 年 9 月 9 日–2025 年 2 月 22 日）是英國創作歌手，生於北倫敦並終生居住於此，在威爾斯讀電子學時開始用鋼琴與簧風琴寫歌。**他的第一張單曲〈Some Good Advice〉／〈Screams in the Ears〉1967 年由 Deram 發行，接著是 1970 年的《Bill Fay》與 1971 年的《Time of the Last Persecution》兩張專輯。** 唱片銷量不佳，第二張發行後不久他就被 Deram 解約。兩張早期作品 1998 年首度再發、2005 年再度再發。",
+    "src": "https://en.wikipedia.org/wiki/Bill_Fay"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1443150676：collectionName「Bill Fay」、artistName「Bill Fay」、trackCount 15、℗ 欄「℗ 1969 Decca Music Group Limited」、releaseDate 記 1969。`entity=song` 攤得出 **15 軌、15 軌全部有 previewUrl**：第 1–12 軌與 1970 原盤逐位置相符，**第 14、15 軌〈Screams In the Ears〉3:22 與〈Some Good Advice〉2:21 是 1967 年那張單曲的兩面、不是原盤內容**。**上架的是 15 軌的再發版，不是 13 軌的原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1443150676&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 4535d224 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/4535d224-6083-3be6-8b9d-121fde8d0b37/front"
+   }
+  ],
+  "hookCandidates": [
+   "串流上那兩首追加曲，其實是他 1967 年單曲的正反兩面",
+   "十三軌的首張專輯出完，第二張之後他就被廠牌解約了"
+  ],
+  "sound": "1970 年 Deram SDN 12 的 12 吋原盤 13 軌，從〈Garden Song〉起、〈Down to the Bridge〉收尾。2005 年的 CD 前 13 軌與原盤完全相同、合計 40 分 26 秒，單軌多在兩到三分半之間，最短的〈Down to the Bridge〉1 分 53 秒。作者是生於北倫敦的創作歌手 Bill Fay，在威爾斯讀電子學時開始以鋼琴與簧風琴寫歌；1967 年先出過一張單曲，1970 年才有這張首作。串流上架的是加了兩軌的 15 軌再發版，追加的〈Screams In the Ears〉與〈Some Good Advice〉正是那張 1967 年單曲的兩面。",
+  "keyTracks": [
+   "Garden Song",
+   "Methane River",
+   "Be Not So Fearful"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **兩處分歧，取 1970。** release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／GB／Official 的 Deram SDN 12（13 軌），沒有以再發日期建檔的問題；條目正文亦明寫「1970 年的《Bill Fay》」。**串流店面 gb 1443150676 的 releaseDate 與 ℗ 欄都寫 1969，那是錯的**——條目把 1967 年的單曲、1970 年的首張與 1971 年的第二張分得很清楚。依裁定 127 取有兩處佐證的 1970。**同名先行單曲：無**（1967 那張單曲是〈Some Good Advice〉／〈Screams in the Ears〉，不同名）。",
+  "notes": "**擋下一處配對誤差**：串流第 13 軌店面作〈Down to the River〉，**原盤與 2005 年 CD 兩處都作〈Down to the Bridge〉**，店面是筆誤，**行文一律寫〈Down to the Bridge〉**。｜串流版是 15 軌再發，**行文只能引原盤 13 軌**；追加的兩軌是 1967 年單曲的兩面，要提只能寫成「後來的再發版才補進來」（裁定 141）。｜1970／GB 那筆 release 沒有填逐軌長度，本檔引用的長度全部來自 2005 年 CD 的前 13 軌，**行文若要引單軌長度，只能引〈Down to the Bridge〉1 分 53 秒這種與原盤同軌的值，且不要說成原盤實測**。｜自我同名卡（掛名與盤名相同），行文避免寫成「同名專輯」以外的花樣。"
+ },
+ {
+  "key": "desc2:Heron|Twice as Nice & Half the Price",
+  "artist": "Heron",
+  "album": "Twice as Nice & Half the Price",
+  "facts": [
+   {
+    "f": "release-group 2a3bdbb3 的欄位：title「Twice as Nice & Half the Price」、artist-credit「Heron」（藝人實體 MBID e72b466b，type Group、area United Kingdom、begin 1968、disambiguation「UK folk rock band」）、first-release-date **1971**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1971／GB／Official（**兩張 12 吋，10 軌＋11 軌共 21 軌**，label-info Dawn DNLS 3025）與 2004-07-16／JP／Official（兩張 CD，同為 21 軌，Arcàngelo ARC-7053/54）。**最早的 release 就是 1971／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2a3bdbb3-4fe2-3847-ae03-bff05eaee8da?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971／GB 原盤（Dawn DNLS 3025，雙 12 吋，release c76143b5）逐軌——第一張：1〈Madman〉、2〈Take Me Back Home〉、3〈Love 13 (Lone)〉、4〈Something Inside〉、5〈Miss Kiss〉、6〈John Brown〉、7〈Big A〉、8〈Winter Harlequin〉、9〈The Sound of Music〉、10〈Your Love and Mine〉；第二張：1〈You Really Got a Hold on Me〉、2〈The Great Dust Storm〉、3〈My Turn to Cry〉、4〈This Old Heart of Mine〉、5〈Minstrel and a King〉、6〈Getting 'em Down〉、7〈I Wouldn't Mind〉、8〈He's a Poor Boy〉、9〈The Devil〉、10〈Wanderer〉、11〈Harlequin 5〉。**兩張合計 21 軌、總長 75 分 27 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2a3bdbb3-4fe2-3847-ae03-bff05eaee8da&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Heron 起於 1967 年 Berkshire 的 Maidenhead 的 Dolphin Folk Club，成員為 Tony Pook（人聲）、Roy Apps（吉他、人聲）、Gerald T. Moore（吉他、曼陀林、人聲）與後來加入的 Steve Jones（鍵盤），簽在 Pye 的子廠 Dawn。**樂團不喜歡在錄音室錄音**：1970 年的首張是在 Pook 家族位於 Appleford-on-Thames 的農舍後方田野以行動錄音車錄成、收進了鳥鳴等環境聲。**第二張則錄在 Devon 郡 Crediton 附近小村 Black Dog 的一座農舍花園裡**，除四名團員外，參與者包括 Bill Boazman（電吉他）、Mike Cooper（滑音吉他）、Mike Finesilver（貝斯）、Terry Gittings（鼓）。**成品以雙 LP 發行，收了幾首意料之外的翻唱，包括 Moore 早年樂團彈過的〈This Old Heart of Mine〉。** Pook 後來說：「那些素材夠做一張非常好的專輯，但只夠做一張普通的雙專輯。可是我們想給兩張唱片一張的價錢——那是背後的嬉皮理念，讓人覺得物有所值。」樂團 1972 年解散。",
+    "src": "https://en.wikipedia.org/wiki/Heron_(band)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1439092665：collectionName「Twice as Nice & Half the Price」、artistName「Heron」、trackCount 21、**releaseDate 記 2004-07-19**、℗ 欄「℗ 1971 Sanctuary Records Group Ltd., a BMG Company」。`entity=song` 攤得出 **21 軌、21 軌全部有 previewUrl**，曲名與曲序與 1971 原盤**逐位置完全相符**（含兩張唱片併成單一序列）。",
+    "src": "https://itunes.apple.com/lookup?id=1439092665&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 2a3bdbb3 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/2a3bdbb3-4fe2-3847-ae03-bff05eaee8da/front"
+   }
+  ],
+  "hookCandidates": [
+   "錄音地點是 Devon 一座農舍的花園，不是錄音室",
+   "雙 LP 賣一張的價錢，盤名就是這個念頭本身"
+  ],
+  "sound": "1971 年 Dawn DNLS 3025 的雙 12 吋原盤，兩張合計 21 軌、總長 75 分 27 秒（第一張 10 軌、第二張 11 軌）。錄音不在錄音室，而是在 Devon 郡 Crediton 附近小村 Black Dog 的一座農舍花園裡完成——樂團前一張也是用行動錄音車錄在戶外。四名團員是 Tony Pook 的人聲、Roy Apps 與 Gerald T. Moore 的吉他、Steve Jones 的鍵盤，另有 Bill Boazman 的電吉他、Mike Cooper 的滑音吉他、Mike Finesilver 的貝斯與 Terry Gittings 的鼓。曲目裡混了幾首翻唱，包括 Moore 早年樂團彈過的〈This Old Heart of Mine〉。廠牌 Dawn 是 Pye 的子廠。",
+  "keyTracks": [
+   "Madman",
+   "Big A",
+   "This Old Heart of Mine"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。release-group first-release-date **1971**、**依裁定 220 回問轄下 release**，最早的一筆就是 1971／GB／Official 的 Dawn DNLS 3025，另一筆是 2004 年的 JP CD，沒有以再發日期建檔的問題；串流店面 gb 1439092665 的 **releaseDate 記 2004-07-19，那是再發日期**，同一條目的 ℗ 欄寫的是 1971，與原盤一致。探測層也把這筆標了 yearDrift 33。**行文一律寫 1971。同名先行單曲：無。**",
+  "notes": "⚠ **擋下策展層一處**：卡單 `curatorWhy` 寫「是英國 1970 年代初『不進錄音室』這條做法最有名的一例」。**「最有名」查無來源，屬待查證的最高級表述，行文不得寫。** 條目只說樂團不喜歡錄音室、兩張都錄在戶外。｜`curatorWhy` 另寫「整張在戶外實地錄音」：條目寫的是「錄在一座農舍花園裡」，**行文寫「農舍花園」比寫「戶外實地」精確**。｜⚠ **單軌長度不可引用**：原盤與串流的曲名、曲序 21 軌逐位置全同，但**第 5 軌之後兩邊的長度整整錯開一個位置**（原盤〈Miss Kiss〉7:13／串流 2:45，原盤〈John Brown〉2:56／串流 7:11，依此類推），其中一方的長度欄位錯位、無法判定何者為真，**行文不要引用任何單軌長度**。｜⚠ 掛名撞名（裁定 179）：查詢 `Heron` 時 score 最高的是 Gil Scott-Heron（子字串命中），本張用的是 e72b466b（Group／United Kingdom／1968／「UK folk rock band」）。**score 不看，只看 area 與 disambiguation。**｜盤名含 `&`，池中另有 `and` 的寫法風險（裁定 217），行文照卡單的 `&`。"
+ }
+]
