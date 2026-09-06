@@ -180,3 +180,26 @@ Crying Nut 0／No Brain 0／NELL 1／장기하와 얼굴들 1／브로콜리 너
 TWICE 的 4 張裡有 2 張（《&TWICE》《Perfect World》）、Red Velvet 的 3 張裡有 1 張（《Bloom》）、
 SHINee 的 3 張裡有 1 張（《Boys Meet U》）。**照「韓版正規盤」這條線重數，這六組其實只有 12 張、不是 22 張。**
 本批補的全是韓版。
+
+## 9. 附帶抓到的一條：**MB 會把多藝人合輯建成掛在成員團底下的 `primary-type=Album`，序數會因此多算一張**
+
+`why` 欄的序數主張本批一律回到 MB 的 `release-group?artist=…&limit=100&offset=` 分頁全列、
+按 `first-release-date` 排序來數（沒有具名來源的序數一律改寫，交件前實查 45 張、剩 0 處無來源）。
+數的時候踩到一個形狀：
+
+**Crying Nut 名下最早的 `primary-type=Album` 不是 1998 年的出道盤，是 1996-10 的《Our Nation Vol. 1》
+（ceb244e0，`secondary-types` 空）——那是弘大 punk 場景的多藝人合輯，不是這團的專輯。**
+同一筆也掛在 No Brain 名下（另有 2014 年的《96》f13ab1f8 同樣兩團共掛）。
+若照「primary-type=Album 依日期排序」機械地數，Crying Nut 的出道盤會被算成第二張。
+
+**通則：用 MB 排序數序數之前，先把「掛在多位藝人名下的同一個 release-group」挑掉**——
+它們在 `secondary-types` 上通常什麼都不標，第 167 條那條「看 primary-type 就好」的判準在這裡不夠用。
+本批受影響的兩張（Crying Nut《Crying Nut》、No Brain《청년폭도맹진가》）已在 `why` 裡明寫排除。
+
+## 10. NELL 的 artist-credit 是 `Nell`、實體主名與池中是 `NELL`
+
+所釘的兩個 release-group（0dbdc66f、f15677d9）artist-credit 都印首字大寫 `Nell`，
+MB 藝人實體主名與池中既有的《Healing Process》都是全大寫 `NELL`。
+依第 1 條①（池中已有 → 沿用池中寫法）取 `NELL`；`Nell` 已入 queryAlias。
+MB 上另有至少四個叫 Nell 的別實體（US 饒舌歌手 5fbd24f6、比利時樂團 b3dbe62c、法國 slam 2410ca94 等），
+藝人實體一律釘 e156615d-3ddd-4491-9584-4b9d971472c4（KR）。
