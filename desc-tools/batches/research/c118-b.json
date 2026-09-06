@@ -636,5 +636,285 @@
   "status": "full",
   "yearVerified": "一致，1997。release-group first-release-date **1997**、其下兩筆 release 都是 1997 BE 的 Elypsia（ELY014CD 與 ELY014LP，皆 Official），**沒有任何再發**。串流三店查無（回撈候選是 1998 年的雙人合作單曲，已駁回），℗ 那一路對不了。四處對照只成立兩處，仍指向 1997。**同名先行單曲：無。**",
   "notes": "**回撈的 1 個候選駁回**：1736519843 的掛名是雙人合作、盤名與曲目都與本張無關。**本張維持無串流來源狀態、封面走圖庫那一路**——卡單 `curatorRisk` 提到的圖庫首次回 5xx、重試後回 200 這件事屬於本批裁定第 5 條的範圍，本層不重跑。｜**第 6 軌的長度不要引**：來源端記為 **3:60**，那是秒數四捨五入的殘留（實際約 4 分整）。**行文與 hook 都不得寫「3 分 60 秒」，要提就寫「約四分鐘」。**｜`curatorWhy` 相關：本層確認**本張是名下最早的原創長篇**（30 個 RG、4 張純長篇）；但同一份目錄裡 **1996 年有兩筆帶 DJ-mix 的 Album 比本張早**，**行文若寫「第一張」必須加上「原創長篇」的限定**，否則會與那兩筆打架。｜**兩種載體軌數相同**（CD 與兩張 12 吋都是 9 軌），**這一點可以放心引**——本批多數碟不是這樣。｜**同廠同批**：Dark Comedy《Seven Days》（ELY007CD）與本張（ELY014）同年同廠，編號相差七號，**這一點在來源端對得起來**。｜**盤名的 Thru**：是縮寫拼法，不是 Through。"
+ },
+ {
+  "key": "desc2:Todd Terry|Works",
+  "artist": "Todd Terry",
+  "album": "Works",
+  "facts": [
+   {
+    "f": "release-group a90db819 的欄位：title「Works」、artist-credit「Todd Terry」（藝人實體 MBID 625e3105，type Person、country US、**disambiguation「US house DJ, producer and remixer」**）、first-release-date **1988**、**primary-type Album、secondary-types ［Compilation］**（依裁定 167 照一般 Album 處理、例外欄位留空）。轄下**只有 1 筆 release**：1988 NL 的 Torso TORSO CD 109，Official，**CD、9 軌**。**沒有美國版建檔、沒有黑膠版建檔、沒有任何再發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/a90db819-7149-398b-a313-e89b51432837?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 NL 原盤（Torso TORSO CD 109）的逐軌曲目與長度：1〈Can You Party (club mix)〉6:09、2〈When the Pieces Fall (Todd Terry's mix)〉5:02、3〈Weekend (Cub version)〉5:49、4〈In the Name of Love (club mix)〉5:22、5〈Back to the Beat (Bang Out remix)〉4:19、6〈I'll House You (House U mix)〉4:59、7〈The Texican (club mix)〉6:17、8〈Yeah Buddy (extended remix)〉7:08、9〈Bango (Go Bang mix)〉3:15。**九軌每一軌的標題都帶著混音註記——沒有一軌是原版**；最長的〈Yeah Buddy (extended remix)〉7:08 是最短的〈Bango (Go Bang mix)〉3:15 的兩倍以上。第 3 軌的註記在來源端寫成 `Cub version`（**少一個 l**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a90db819-7149-398b-a313-e89b51432837&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **262 個 release-group——本批 42 張裡目錄最龐大的一位**：primary-type=Album 40 個（**secondary-types 為空的只有 15 個**，另 25 個帶 Compilation、DJ-mix 或 Remix）、EP 23 個、Single **119 個**、**primary-type=Compilation 0 個**。**本張是那 40 筆 Album 裡年份最早的一筆**，而 secondary-types 為空的 15 張純長篇最早的是 1995 年的《A Day in the Life》——**本張比它早七年，但形態上是帶 Compilation 的那一種。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=625e3105-172c-4425-ac57-069887fd401e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選逐筆攤開曲目列比對，**四筆全部是別張碟、而且掛名都不是他本人**：516960774《2 The Batmobile Let's Go》（1988、9 軌、artistName「**The Todd Terry Project**」、℗ Fresh Records，曲目是〈Bango〉3:17／〈Weekend〉3:58／〈You're The One (You Bad)〉等原版而非混音版）、1501566252 與 1869768351 兩筆《Weekend (Remix) - Single》（1988、3 軌、℗ Sleeping Bag Records）、1662687719《Weekend / Just Wanna Dance》（1988、6 軌、℗ Fresh Records）。**四筆與本張九軌的混音名稱全部對不上，一律駁回。** 串流三店以掛名加盤名做 `search` 只命中 1544342693《Make It Work - Single》（2021、2 軌）——**那是子字串比對吃掉差別的假陽性**（`makeitwork` 含 `work`）。**本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=516960774&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**盤名是本批最高風險的短鍵**：《Works》摺疊後只有五個字母，而這位藝人的目錄有 262 筆、其中大量是 2007 年之後的自營數位發行與 primary-type 空白項（如四張《The Dubs》分集、四張《TT 100》分集）。**配對一律要以 release-group id 為準，靠盤名一定會配錯。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=625e3105-172c-4425-ac57-069887fd401e&fmt=json&limit=100&offset=100"
+   }
+  ],
+  "hookCandidates": [
+   "九軌每一軌的標題都帶著混音註記，整張沒有一軌是原版",
+   "第三軌的註記在資料庫上少打一個字母，寫成 Cub version"
+  ],
+  "sound": "1988 年荷蘭 Torso 的 CD 九軌，而九軌的共通點是——每一軌的標題都帶著混音註記：club mix、Todd Terry's mix、Cub version、Bang Out remix、House U mix、extended remix、Go Bang mix。整張沒有一軌以原版形式出現，等於把一批十二吋上的不同版本收攏成一張碟。長度從 3:15 的〈Bango (Go Bang mix)〉到 7:08 的〈Yeah Buddy (extended remix)〉，兩倍以上的落差。第三軌的註記在來源端少打了一個字母，寫成 `Cub version`。",
+  "keyTracks": [
+   "Can You Party",
+   "I'll House You",
+   "Bango"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**、其下唯一一筆 release 是 1988 NL 的 Torso TORSO CD 109（Official），**沒有第二筆可交叉驗證、沒有任何再發**。串流三店查無本張（四個回撈候選全是別張碟、`search` 命中的是同名子字串的假陽性），℗ 那一路對不了。四處對照只成立兩處，仍指向 1988。**同名先行單曲：無。**",
+  "notes": "**裁定 167 的處置正確**：本張 primary-type=Album、secondary-types=[Compilation]，**照一般 Album 寫、例外欄位一律留空**，卡單填法無誤。｜**擋下策展層一處**：`label` 欄寫「美版原盤為 Fourth Floor Records 的 12 吋系列」。**本層在 release-group 底下只查得到一筆荷蘭 Torso 的 CD，沒有任何美版、也沒有 Fourth Floor 的 label-info**。**行文不得寫 Fourth Floor，要寫廠牌只能寫查得到的那一家。**｜`curatorWhy` 寫「Royal House、Black Riot、Orange Lemon、Masters at Work 那批假團名第一次被集中成一張碟」——**本層在曲目列上查不到任何團名歸屬**，九軌只有曲名與混音註記。**行文不得列這些團名。**｜**回撈的 4 個候選全部駁回**：四筆的 artistName 都是 `The Todd Terry Project`（另一個掛名），曲目是原版而非本張的混音版。｜**軌數與版本**：原盤 9 軌、每軌都是混音版。**行文引曲名時必須連混音註記一起理解**——〈Can You Party〉在本張上是 club mix，不是別處那個原版。｜**第 3 軌的拼法**：來源端寫 `Cub version`（少一個 l），**照原樣寫，不要自行更正成 Club**。｜**目錄極龐大（262 筆）且盤名極短**：配對務必用 release-group id。"
+ },
+ {
+  "key": "desc2:Joe Claussell|Language",
+  "artist": "Joe Claussell",
+  "album": "Language",
+  "facts": [
+   {
+    "f": "release-group 294bbbd9 的欄位：title「Language」、artist-credit「Joe Claussell」（藝人實體 MBID a3110349，type Person、country US）、first-release-date **1999-11-29**、primary-type Album、secondary-types **空**。轄下 **3 筆 release**：1999 JP 的 Ibadan Records／TOY'S FACTORY 共掛 TFCK-87982（**CD、9 軌**，**status 欄是空的**）、1999 US 的 Ibadan Records irc023（**兩張 12 吋、每張 4 軌共 8 軌**，Official）、1999-11-29 US 的 Ibadan Records IRC023（**CD、8 軌**，Official）。**日版比兩種美版各多一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/294bbbd9-7594-3d29-8a31-f964051679e3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1999-11-29 US 的 CD 版（Ibadan Records IRC023）逐軌曲目與長度：1〈Spiritual Insurrection〉8:24、**2〈Git Wa〉11:01**、3〈Marco Polo〉9:38、4〈Kryptic Elements〉7:03、5〈Gbedu 1 (Gbedu Resurrection)〉9:34、**6〈Mateens Theme〉10:20**、7〈Je Ka Jo (vocal)〉7:28、8〈Suspicious Dub〉7:07。**八軌沒有一軌短於七分鐘、兩軌超過十分鐘，整張超過 70 分鐘。** 同年的兩張 12 吋是同樣八軌、曲名略有出入（第 5 軌作〈Gbedu Resurrection〉、第 6 軌作〈Mateen's Theme〉帶撇號）、未記長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=294bbbd9-7594-3d29-8a31-f964051679e3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**日版（TFCK-87982）是 9 軌**：前八軌與美版 CD 逐位置相符（長度差 1 到 2 秒），**末尾多出第 9 軌〈Cry For Help〉7:12**。**這一軌只在日版上**；日版的第 5 軌標題也只寫〈Gbedu 1〉、沒有括號裡那段。**日版那筆的 status 欄是空的**（依裁定 43／57／65／78 不採為背書）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=294bbbd9-7594-3d29-8a31-f964051679e3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **30 個 release-group**：primary-type=Album 17 個（**secondary-types 為空的只有 6 個**，另 11 個帶 Compilation 或 DJ-mix）、EP 2 個、Single 8 個、**primary-type=Compilation 0 個**。6 張純長篇依序是 **1999-11-29 本張、2007《Un.Chained Rhythums Part 2》、2007-12-18《Un.Chained Rhythums, Part 1》、2008-03-26《Corresponding Echoes》、2021-06-25《Raw Tones》、2024-09-30《Iboga》**——**本張是名下最早的一張長篇，而且與第二張之間隔了八年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a3110349-7c07-4514-881d-6c0f41f910e3&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選攤開曲目列比對：collectionId **1758495258**《Mix the Vibe: Joe Claussell》（1999-04-12、**29 軌**、℗ 1999 BEAT Music Fund），二十九軌全部帶 `(Mixed)` 標記、曲名是〈Ca Chauffe〉〈Moments in My Life〉〈Brighter Days〉這一類**別人的曲子接成的連續混音**，**與本張八軌無一同名**。**駁回。** 串流三店以掛名加盤名做 `search` 亦無任何同名結果。**本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1758495258&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌沒有一軌短於七分鐘，其中兩軌超過十分鐘",
+   "日本版在末尾多放一軌，兩種美國版都沒有"
+  ],
+  "sound": "1999 年 11 月 Ibadan Records IRC023 的美版 CD 八軌，總長超過七十分鐘——八軌沒有一軌短於七分鐘，〈Git Wa〉11:01 與〈Mateens Theme〉10:20 兩軌各自超過十分鐘。同年另發的兩張 12 吋是同樣八軌，只是第五、六軌的標題寫法略有出入。曲名橫跨好幾種語言與地名：〈Marco Polo〉〈Gbedu 1〉〈Je Ka Jo〉〈Git Wa〉，中間夾著〈Spiritual Insurrection〉與〈Kryptic Elements〉這種抽象標題，末軌是 7:07 的〈Suspicious Dub〉。同年的日本版另外多收一軌 7:12 的〈Cry For Help〉。",
+  "keyTracks": [
+   "Spiritual Insurrection",
+   "Git Wa",
+   "Marco Polo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1999。release-group first-release-date **1999-11-29**、其下三筆 release 全部是 1999（日版與兩張 12 吋的美版只記到年，CD 的美版記 1999-11-29）。**日版那筆的 status 欄是空的**，背書取 1999-11-29 US IRC023 那筆 Official。串流三店查無（回撈候選是另一張連續混音的合輯，已駁回），℗ 那一路對不了。四處對照只成立兩處，仍指向 1999。**同名先行單曲：無。**",
+  "notes": "**軌數兩種（裁定 157）**：卡單 label 欄記的是 **美版 Ibadan IRC023（8 軌）**，同年**日版是 9 軌**。**行文只能引 8 軌**，〈Cry For Help〉不得當本張曲目。｜**曲名有兩套寫法**：CD 版寫〈Gbedu 1 (Gbedu Resurrection)〉〈Mateens Theme〉〈Je Ka Jo (vocal)〉，黑膠版寫〈Gbedu Resurrection〉〈Mateen's Theme〉（帶 ASCII 直撇）〈Je Ka Jo (vocal)〉，日版寫〈Gbedu 1〉〈Mateens Theme〉〈Je Ka Jo〉。**本檔 `keyTracks` 取三版一致的前三軌以免摺疊出問題。**｜**回撈的 1 個候選駁回**：1758495258 是二十九軌的連續混音合輯，與本張無一軌同名。｜**擋下策展層一處**：`curatorWhy` 寫「他是紐約 Body & Soul 派對的三位常駐之一、Spiritual Life Music 與 Ibadan Records 的主理人」。**本層能確認的只有 release 的 label-info 是 Ibadan Records**；**派對常駐與廠牌主理人的身分查不到來源，行文不得寫。**｜`curatorWhy` 寫「名下最早的一張長篇」**查證屬實**（30 個 RG、6 張純長篇，本張最早）。｜**掛名兩種**：本張的 artist-credit 是 `Joe Claussell`，同一份目錄裡 2012 年之後的碟多半掛帶中間名的長寫法。**行文照卡片的短寫。**｜**盤名極短**：`language` 是高風險短鍵，跨批比對要帶掛名。"
+ },
+ {
+  "key": "desc2:Mood II Swing|All Night Long With...",
+  "artist": "Mood II Swing",
+  "album": "All Night Long With...",
+  "facts": [
+   {
+    "f": "release-group 9213eb79 的欄位：title「All Night Long With...」（結尾三個 ASCII 句點）、artist-credit「Mood II Swing」（藝人實體 MBID 66ec355a，**type Group**、country US、**disambiguation 明寫「American house music production duo of John Ciafone & Lem Springsteen」**）、first-release-date **1997**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1997 DE 的 URBAN 539 008-2，Official，**CD、9 軌**。**沒有美國版建檔、沒有黑膠版建檔、沒有任何再發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/9213eb79-ec11-438a-b6f0-8dd7218884ca?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 DE 原盤（URBAN 539 008-2）的逐軌曲目與長度：**1〈Searchin' (Vocal mix)〉10:49**、2〈All Night Long〉8:13、3〈Ohh〉7:23、4〈Do It Your Way〉9:26、5〈I See You Dancing (remix)〉8:38、6〈I Like It〉6:19、7〈Freestyle Groove〉6:11、8〈Choices (Vocal mix)〉7:51、**9〈Searchin' (Search instrumental mix)〉4:36**。**開場與收尾是同一首曲子的兩個版本，一個 10:49、一個 4:36——最長與最短的兩軌都叫〈Searchin'〉。** 中間七軌全部在 6:11 到 9:26 之間。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9213eb79-ec11-438a-b6f0-8dd7218884ca&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **15 個 release-group**：primary-type=Album 2 個（**secondary-types 為空的只有 1 個，就是本張**；另 1 個是 2015-01-15 帶 Compilation 的《Strictly Mood II Swing》）、EP 5 個、Single 5 個、**primary-type=Compilation 0 個**。**本張是這個掛名下唯一的一張原創長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=66ec355a-2a17-4504-99c8-722af2b7f87f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選逐筆攤開曲目列比對，**三筆都是同期的單曲與 EP、不是本張**：1890017340《Do It Your Way - Single》（1996、3 軌〈Do It Your Way〉9:28／〈All Night Long〉8:16／〈I Like It〉6:23）、1890017114《I See You Dancing - EP》（1996、4 軌、artistName「Mood II Swing & John Ciafone」）、1894839779《Searchin' - EP》（1996、3 軌、artistName「Mood II Swing & Loni Clark」、℗ Essence Records）。**三筆的曲目與本張九軌高度重疊但軌數與掛名都不同，而且年份全部是 1996、比本張早一年**——**是本張的素材來源而不是本張，三筆全數駁回。** 串流三店以掛名加盤名做 `search` 亦無任何同名結果。**本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1890017340&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**掛名的摺疊陷阱（裁定 204 的反向形狀）**：`Mood II Swing` 用羅馬數字，摺疊後是 `moodiiswing`；若寫成阿拉伯數字的 `Mood 2 Swing` 摺疊後是 `mood2swing`——**兩者是兩個不同的鍵，自動比對抓不到，只能兩種都查。** 藝人實體的 disambiguation 直接寫出了兩位成員的名字，**這是本批少數幾個能從實體欄位確認成員的掛名之一。**",
+    "src": "https://musicbrainz.org/ws/2/artist/66ec355a-2a17-4504-99c8-722af2b7f87f?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌與最後一軌是同一首曲子，一個十分四十九秒、一個四分三十六秒",
+   "九軌裡最長與最短的那兩軌，用的是同一個曲名"
+  ],
+  "sound": "1997 年德國 URBAN 的 CD 九軌，頭尾用的是同一首曲子的兩個版本：開場的〈Searchin' (Vocal mix)〉10:49 是全張最長的一軌，收尾的〈Searchin' (Search instrumental mix)〉4:36 是最短的，中間七軌全部落在 6:11 到 9:26 之間。曲名幾乎都是動作或短句——〈All Night Long〉〈Do It Your Way〉〈I See You Dancing〉〈I Like It〉——第三軌乾脆只有一個〈Ohh〉。九軌裡有三軌的標題帶著混音註記，其餘六軌沒有。這張在資料庫上只有德國那一次發行，沒有美國版、沒有黑膠版。",
+  "keyTracks": [
+   "Searchin'",
+   "All Night Long",
+   "Freestyle Groove"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997**、其下唯一一筆 release 是 1997 DE 的 URBAN 539 008-2（Official），**沒有第二筆可交叉驗證、沒有任何再發**。串流三店查無本張，但**同一組人 1996 年的三張單曲／EP 在店面上都查得到**——**那三筆比本張早一年，是素材不是本張**。℗ 那一路對不了，四處對照只成立兩處，仍指向 1997。**同名先行單曲：有（部分）**——〈All Night Long〉這首曲子 1996 年就以 1890017340 那張單曲的第 2 軌形式出現過，**但那張單曲的盤名是《Do It Your Way》、不與本張盤名同名**，兩者不可混寫。",
+  "notes": "**回撈的 3 個候選全部駁回**：1890017340／1890017114／1894839779 三筆都是 **1996 年**的單曲或 EP，掛名分別是 `Mood II Swing`、`Mood II Swing & John Ciafone`、`Mood II Swing & Loni Clark`，曲目雖與本張重疊（〈Do It Your Way〉〈All Night Long〉〈I Like It〉〈I See You Dancing〉〈Searchin'〉），**但軌數、掛名與年份都不同**。**行文不得把這三筆的長度或掛名當本張的資料引。**｜`curatorWhy` 寫「他們自己掛名下唯一的一張長篇」**查證屬實**（15 個 RG、純長篇只有本張）。｜**成員名可以寫**：藝人實體的 disambiguation 直接寫出兩位成員的名字，**這是本批少數能從實體欄位確認人名的掛名**——與其他多數卡不同，本張的成員名有來源可引。｜`curatorWhy` 寫「1990 年代替三家廠牌做了上百首製作與再混」——**本層查不到那個數量與那三個廠牌名，行文不要寫。**｜**掛名摺疊（裁定 204）**：羅馬數字與阿拉伯數字摺出兩個不同的鍵，跨批比對兩種都要查。｜**盤名的刪節號**：結尾是三個 ASCII 句點，不是單一省略號字元。｜**撇號**：〈Searchin'〉用 ASCII 直撇。"
+ },
+ {
+  "key": "desc2:Blaze|Basic Blaze",
+  "artist": "Blaze",
+  "album": "Basic Blaze",
+  "facts": [
+   {
+    "f": "release-group 38ae2d36 的欄位：title「Basic Blaze」、artist-credit「Blaze」（藝人實體 MBID 65e331ed，**type Group**、country US、**disambiguation「New Jersey-based house duo」**）、first-release-date **1997**、primary-type Album、secondary-types **空**。轄下 **5 筆 release，全部 Official**：1997 US 的 Slip 'n' Slide SLIPCD 61（**CD、9 軌**）、1998 NL 的 True TRUE CD01（**CD、10 軌**）、1999 GB 的 Slip 'n' Slide SLIPLP61（**兩張 12 吋、8 軌**）、2003-01-13 US 的無廠牌版（**10 軌**）、2026-04-18 GB 的無廠牌黑膠（**8 軌**）。**五筆橫跨二十九年，軌數是 9／10／8／10／8。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/38ae2d36-84aa-3a30-8fb4-fa11a17ba7a0?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 US 原盤（Slip 'n' Slide SLIPCD 61）的逐軌曲目與長度：1〈My Beat〉5:26、2〈Cult of Soul〉7:31、3〈Wishing You Were Here〉7:05、**4〈Sacred Sex〉11:08**、5〈The Garden〉6:05、6〈Klubtrance〉6:48、7〈Never Can Get Away〉7:48、8〈Threshold〉5:27、9〈Another Dae〉6:27。**第 4 軌〈Sacred Sex〉11:08 比全張任何一軌都長至少三分二十秒，是唯一超過十分鐘的一軌。** 末軌〈Another Dae〉的 Dae 是刻意的拼法。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=38ae2d36-84aa-3a30-8fb4-fa11a17ba7a0&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**其餘四個版本各不相同**：1998 荷蘭版是 10 軌，在第 5 軌插入〈Lovelee Dae〉7:38（**這一軌只在該版上**）；1999 與 2026 的兩次黑膠都是 8 軌、曲序整個重排，並用〈Cult Reprise〉／〈Cult (reprise)〉取代〈Never Can Get Away〉與〈Threshold〉；2003 年那筆 10 軌的**第 1 軌就叫〈Basic Blaze〉**（與盤名同名，**1997 原盤上沒有這一軌**），並把〈The Garden〉寫成〈Garden〉、〈Threshold〉拆成〈Thresh Old〉。**五個版本沒有任何兩個的曲目完全相同。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=38ae2d36-84aa-3a30-8fb4-fa11a17ba7a0&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三店的 collectionId **1790528948**：collectionName「Basic Blaze」、artistName「Blaze」、releaseDate **1997-08-18**、trackCount **9**、copyright「℗ 1997 Defected Records Limited dba Slip 'n' Slide」。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**：〈My Beat (feat. Palmer Brown)〉5:20／〈Cult of Soul〉7:28／〈Wishing You Were Here〉6:56／〈Sacred Sex〉11:03／〈The Garden〉5:59／〈Klubtrance〉6:45／〈Never Can Get Away〉7:40／〈Threshold〉5:20／〈Another Dae〉6:28。**九軌與 1997 原盤逐位置相符、逐軌長度差都在 8 秒內**——**上架的就是 1997 那個九軌版本，不是 10 軌或 8 軌的其他版本**；差別只在店面替第 1 軌標了客座。",
+    "src": "https://itunes.apple.com/lookup?id=1790528948&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **58 個 release-group**：primary-type=Album 17 個（**secondary-types 為空的只有 6 個**，另 11 個帶 Compilation 或 Remix）、EP 9 個、Single 28 個、**primary-type=Compilation 0 個**。6 張純長篇依序是 **1990《25 Years Later》、1997 本張、2001-03-19《Natural Blaze》、2002《Spiritually Speaking》、2004-03-10《Keep Hope Alive》、2018-07-20《Lovelee Dae》**——**本張排第 2，與第一張之間隔了七年。** 2018 年那張長篇的盤名《Lovelee Dae》，**正是 1998 年荷蘭版才有的那一軌的曲名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=65e331ed-ab1b-475a-81d1-4dad7e55043b&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第四軌十一分零八秒，比整張任何一軌都長三分二十秒以上",
+   "同一張碟發過五次，五次的曲目沒有任何兩次完全一樣"
+  ],
+  "sound": "1997 年 Slip 'n' Slide SLIPCD 61 的九軌，重心壓在第四軌——〈Sacred Sex〉11:08，比全張任何一軌都長至少三分二十秒，是唯一超過十分鐘的一首。其餘八軌落在 5:26 到 7:48 之間，排得相當平均。曲名把宗教與身體的詞彙擺在一起（〈Cult of Soul〉〈Sacred Sex〉〈The Garden〉〈Threshold〉），末軌〈Another Dae〉用的是刻意的拼法。這張碟後來又發過四次，荷蘭版多一軌、兩次黑膠各少一軌並換上一段 Cult 的重奏，2003 年那版甚至多出一首與盤名同名的開場曲——五個版本裡沒有任何兩個的曲目完全相同。",
+  "keyTracks": [
+   "My Beat",
+   "Sacred Sex",
+   "Another Dae"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997**、其下最早的 release 是 1997 US 的 Slip 'n' Slide SLIPCD 61（Official），其餘四筆分別是 1998、1999、2003-01-13 與 2026-04-18。串流店面的 1790528948 releaseDate 記 **1997-08-18**、℗ 欄「℗ 1997 Defected Records Limited dba Slip 'n' Slide」——**年份與原盤一致**，九軌逐軌長度差在 8 秒內。四處對照有三處成立，年份是 1997。**同名先行單曲：無**；**但 2003 年那個版本的第 1 軌就叫〈Basic Blaze〉，與盤名同名——那一軌 1997 原盤上沒有，不得當本張曲目。**",
+  "notes": "**版本差是本張最大的坑（裁定 157）**：五個版本的軌數是 **9／10／8／10／8**，**沒有任何兩個完全相同**。卡單 label 欄記的是 **1997 US SLIPCD 61（9 軌）**，**行文只能引這九軌**；〈Lovelee Dae〉（1998 荷蘭版）、〈Cult Reprise〉（兩次黑膠）、〈Basic Blaze〉與〈Thresh Old〉（2003 版）**都不是本張曲目**。｜**串流採信 1790528948**：九軌逐位置相符、長度差在 8 秒內、年份一致，是可用的固定試聽來源。｜`curatorWhy` 寫「1990 年那張之後停了七年、本張是回到獨立體系後的第一張長篇」**查證屬實**（藝人目錄 6 張純長篇，1990 與 1997 之間沒有第三張）。｜**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 寫出兩位成員的名字與 1990 年那張的發行大廠。**藝人實體的 disambiguation 只寫「New Jersey-based house duo」、沒有寫出成員**；1990 年那張的廠牌本層也沒查。**行文不得寫成員名與那家大廠。**｜**廠牌名的撇號**：來源端寫成彎撇的 `Slip ’n’ Slide`，店面端寫成 ASCII 直撇的 `Slip 'n' Slide`。**卡池慣例走 ASCII。**｜**曲名拼法**：〈Another Dae〉與〈Lovelee Dae〉都用 Dae，**照原樣寫**。"
+ },
+ {
+  "key": "desc2:Byron Stingily|The Purist",
+  "artist": "Byron Stingily",
+  "album": "The Purist",
+  "facts": [
+   {
+    "f": "release-group df6e189f 的欄位：title「The Purist」、artist-credit「Byron Stingily」（藝人實體 MBID edbdc43b，type Person、country US）、first-release-date **1998-02-10**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 Official、全部 15 軌**：1998-02-10 US 的 Nervous Records 20226（CD）、1998-03-16 DE 的 Club Tools 0064512CLU（CD）、**一筆日期空白的 XW 數位版**（Nervous Records、無編號）。**三筆軌數完全相同，這在本批算少見。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/df6e189f-c998-3b34-8d0b-aa9c37b1bf3f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1998-02-10 US 原盤（Nervous Records 20226）的逐軌曲目與長度：1〈Flying High〉4:01、2〈Back to Paradise〉5:35、3〈Beautiful Night〉3:58、4〈You Make Me Feel (Mighty Real)〉4:21、5〈Get Up (Everybody)〉3:45、6〈Sing a Song〉4:07、7〈Found a Love〉4:11、8〈Keep Love Going〉4:02、9〈Run to Me〉4:10、10〈Feeling Good, Feeling Happy〉3:53、11〈Temptation〉4:01、12〈It's Over〉4:35、13〈Don't Fall in Love〉3:58、14〈Testify〉3:40、**15〈Flying High (Brazilian mix)〉6:04**。**前十四軌全部在 3:40 到 5:35 之間、十軌落在四分上下——是唱歌用的尺度；只有末軌那個開場曲的重混拉到 6:04，比它自己的原版長兩分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=df6e189f-c998-3b34-8d0b-aa9c37b1bf3f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三店的 collectionId **14141395**：collectionName「The Purist」、artistName「Byron Stingily」、releaseDate **1998-02-09**、trackCount **15**、copyright「℗ 1998 Nervous, Inc.」。`entity=song` **攤得出 15 軌、15 軌全部有 previewUrl**，曲名與曲序與 1998 原盤**逐位置相符、逐軌長度差都在 4 秒內**（4:01／5:33／3:56／4:19／3:43／4:04／4:09／4:01／4:08／3:51／4:00／4:33／3:56／3:36／6:05）。**上架的就是本張，日期只差一天。**",
+    "src": "https://itunes.apple.com/lookup?id=14141395&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **18 個 release-group**：**primary-type=Album 只有 2 個（兩個的 secondary-types 都是空的）**——1998-02-10 本張與 2001-03-21《Club Stories》；**EP 0 個、Single 16 個**、**primary-type=Compilation 0 個**。**本張是名下最早的一張長篇，而且整份目錄除了兩張長篇之外全部是單曲。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=edbdc43b-4eb1-45c9-ac20-9527dc23e9dc&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**第 4 軌是翻唱**：〈You Make Me Feel (Mighty Real)〉4:21 是 disco 時代的既有曲目，**在本張十五軌裡是唯一一首標題完全來自他人作品的曲子**。**末軌〈Flying High (Brazilian mix)〉6:04 則是第 1 軌〈Flying High〉4:01 的重混**——整張因此以自己的開場曲收尾。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=df6e189f-c998-3b34-8d0b-aa9c37b1bf3f&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌裡前十四軌都在三分四十秒到五分三十五秒之間，只有末軌拉到六分零四秒",
+   "整張以自己的第一軌收尾，末軌是開場曲的重混"
+  ],
+  "sound": "1998 年 2 月 Nervous Records 20226 的十五軌，前十四軌全部落在 3:40 到 5:35 之間、其中十軌就在四分上下——這是唱歌用的尺度，不是舞池長段落的尺度。只有末軌破例：〈Flying High (Brazilian mix)〉6:04，比它自己的原版長兩分鐘，整張因此以第一軌的重混收尾。曲名幾乎全是祈使句或短句——〈Get Up (Everybody)〉〈Sing a Song〉〈Keep Love Going〉〈Run to Me〉〈Testify〉——中間夾著一首 disco 時代的翻唱〈You Make Me Feel (Mighty Real)〉。同年三月的德版與後來的數位版都是同樣十五軌。",
+  "keyTracks": [
+   "Flying High",
+   "Sing a Song",
+   "Testify"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998。release-group first-release-date **1998-02-10**、其下最早的 release 同為 1998-02-10 US 的 Nervous Records 20226（Official），第二筆是 1998-03-16 DE 的 Club Tools。**第三筆是日期空白的 XW 數位版**——依裁定 216「有條目沒年份是第三種狀態」不採為年份來源。串流店面的 14141395 releaseDate 記 **1998-02-09**（**比原盤早一天**）、℗ 欄「℗ 1998 Nervous, Inc.」，十五軌逐軌長度差在 4 秒內。**四處對照有三處成立**，年份是 1998。**同名先行單曲：無。**",
+  "notes": "**串流採信 14141395**：十五軌逐位置相符、長度差在 4 秒內、日期只差一天，是本批對得最乾淨的固定試聽來源之一。｜`curatorWhy` 寫「單飛後在 Nervous Records 出的第一張長篇」**查證屬實**（18 個 RG、2 張長篇，本張最早）。｜**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 寫「Ten City 的主唱」與「Nervous Records 是某人 1991 年在紐約開的廠」。**本層在藝人實體上查不到任何團籍記載**（edbdc43b 只有 type Person 與 country US、沒有 disambiguation），**廠牌的創辦人與創立年也查不到**。**行文不得寫廠牌創辦人的名字與創立年**；團籍那一項若要寫，得由下游另找來源。｜**第 4 軌是翻唱**：〈You Make Me Feel (Mighty Real)〉不是他的原創曲，**行文若把它當代表作會出錯**，本檔 `keyTracks` 因此避開它。｜**三個版本軌數完全相同**（15／15／15），**這一點可以放心引**——本批多數碟不是這樣。｜**掛名易誤拼**：`Stingily`，不是 Stingley。｜**盤名極短**：`thepurist` 是高風險短鍵。"
+ },
+ {
+  "key": "desc2:Wamdue Project|Program Yourself",
+  "artist": "Wamdue Project",
+  "album": "Program Yourself",
+  "facts": [
+   {
+    "f": "release-group cccdd33b 的欄位：title「Program Yourself」、artist-credit「Wamdue Project」（藝人實體 MBID 355e35eb，type Person、country US）、first-release-date **1998-08-11**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 Official、全部 11 軌**：1998 GB 的 Eruption Records ERUPCD001（CD）、1998 US 的 Strictly Rhythm SR 330 CD（CD）、1998-08-11 DE 的 Motor Music 557 521-2（CD）。**三國三家廠牌同年發行、軌數完全相同；帶完整日期的那一筆是德版，不是美版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/cccdd33b-7d99-3b4c-a4d2-d5c5c34e9f9d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1998 年版本（Eruption Records ERUPCD001，與美版、德版同為 11 軌）的逐軌曲目與長度：**1〈King of My Castle〉8:14**、2〈Like This〉6:00、3〈Are You High?〉6:12、4〈Walk With Me〉7:15、**5〈I Acknowledge You〉1:12**、6〈Giraffe〉4:56、7〈Where Do We Go〉5:20、8〈Spirit〉6:13、9〈You're the Reason〉6:13、10〈Instrumentation〉5:44、11〈Diving for Pills〉7:15。**第 5 軌只有 1:12，是全張唯一不到五分鐘的一軌，其餘十軌從 4:56 到 8:14；第 8 與第 9 軌長度完全相同（6:13）、第 4 與第 11 軌也完全相同（7:15）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cccdd33b-7d99-3b4c-a4d2-d5c5c34e9f9d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **13 個 release-group**：primary-type=Album 4 個（**secondary-types 為空的只有 2 個**：1996《Resource Toolbook, Volume One》與 1998-08-11 本張；另 2 個帶 Compilation）、EP 3 個、Single 6 個、**primary-type=Compilation 0 個**。**本張是名下第二張長篇，不是第一張**——1996 年的《Resource Toolbook, Volume One》比它早兩年。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=355e35eb-86d4-454d-ac9c-656a2271181d&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選逐筆攤開曲目列比對，**四筆全部是本張第 1 軌或第 9 軌的後世重混合輯、不是本張**：1689546955《King of My Castle (Mixes)》（1998、**15 軌全部是同一首曲子的不同重混**、℗ 2023）、1522316592《King of My Castle (1998 Radio Edit) - Single》（1 軌、℗ 2020）、734192649《King of My Castle (Crazibiza Remix) - Single》（1 軌、℗ 2013）、1727161909《You're the Reason》（1999、11 軌**全部是〈You're the Reason〉的不同重混**、℗ 2024）。**四筆沒有一筆含本張的其餘九軌，一律駁回。** 串流三店以掛名加盤名做 `search` 亦無任何同名結果。**本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1689546955&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**同廠對照**：本批另收 Photon Inc.《Generate Power》（Strictly Rhythm SR 1251，1991），與本張的美版（Strictly Rhythm SR 330 CD，1998）同屬一家廠牌，**編號從四位數的 1251 變成三位數的 330**——**兩個編號序列不同，不能拿來排先後。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cccdd33b-7d99-3b4c-a4d2-d5c5c34e9f9d&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡有一軌只有一分十二秒，其餘十軌全在五分上下",
+   "同一張碟同一年在三個國家由三家不同的廠牌發行，軌數一模一樣"
+  ],
+  "sound": "1998 年這張同時在英國、美國與德國由三家不同的廠牌發行，三個版本都是十一軌、內容相同。開場的〈King of My Castle〉8:14 是全張最長的一軌，第五軌〈I Acknowledge You〉卻只有 1:12——是全張唯一不到五分鐘的一首，像一段插入的宣告。其餘九軌從 4:56 的〈Giraffe〉到 7:15，排得很平均，甚至有兩對曲目長度完全相同：〈Spirit〉與〈You're the Reason〉都是 6:13、〈Walk With Me〉與〈Diving for Pills〉都是 7:15。曲名一半是對話式的句子，一半是單詞（〈Giraffe〉〈Spirit〉〈Instrumentation〉）。",
+  "keyTracks": [
+   "King of My Castle",
+   "I Acknowledge You",
+   "Diving for Pills"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998。release-group first-release-date **1998-08-11**、其下三筆 release 全部是 1998（英版與美版只記到年，**帶完整日期 1998-08-11 的是德版 Motor Music**），三筆皆 Official、三筆都是 11 軌。串流三店查無本張（四個回撈候選全是後世重混合輯，已逐筆駁回），℗ 那一路對不了。四處對照只成立兩處，仍指向 1998。**同名先行單曲：無。**",
+  "notes": "**擋下策展層一處（序數）**：`curatorWhy` 沒有直接寫序數，但把本張說成該廠「1990 年代末少數以一位作者一整張碟形態發行的作品」。**藝人目錄顯示本張是他名下第二張長篇**——1996 年的《Resource Toolbook, Volume One》比它早兩年。**行文不得寫「第一張」。**｜**回撈的 4 個候選全部駁回**：四筆分別是第 1 軌與第 9 軌的重混合輯或單軌，**沒有一筆含本張其餘九軌**。｜`curatorWhy` 寫「該廠的目錄絕大多數是 12 吋與廠牌合輯」——**本層沒有查該廠的完整目錄，行文不要寫這個比例斷語。**｜`curatorWhy` 另寫出一個本名。**藝人實體 355e35eb 只有 type Person 與 country US、沒有 disambiguation，本層查不到本名，行文不得寫。**｜**年份的細節**：release-group 帶的 1998-08-11 來自德版，**卡單 label 欄記的是美版 Strictly Rhythm SR 330 CD、那一筆只記到年**。行文寫 1998 即可，不要把 8 月 11 日安在美版上。｜**三個版本軌數完全相同**，行文引 11 軌是安全的。｜**同廠編號不可比**：本批另一張同廠碟的編號是四位數，本張是三位數，兩個序列不同。"
+ },
+ {
+  "key": "desc2:N.Y. House'n Authority|APT.",
+  "artist": "N.Y. House'n Authority",
+  "album": "APT.",
+  "facts": [
+   {
+    "f": "release-group b14b2c52 的欄位：title「APT.」（帶結尾句點）、artist-credit「N.Y. House'n Authority」（撇號是 ASCII 直撇；藝人實體 MBID 68229c91，**type 記成 Person、area 與 disambiguation 兩欄都空白**）、first-release-date **1989-05**（帶月份）、**primary-type EP**、secondary-types **空**。轄下 **2 筆 release，都 Official**：1989-05 US 的 Nu Groove Records NG 025（**12 吋、6 軌**）與 2018-01-19 XW 的 **Nu Groove Records NG025D**（**數位、6 軌**）。**兩筆軌數相同，2018 那次是同一家廠牌的數位化，不是別家重發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b14b2c52-440d-3700-b387-3613d1b167a1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1989-05 US 原盤（Nu Groove Records NG 025，12 吋）的逐軌曲目：1〈APT. 1A〉、2〈APT. 2A〉、3〈APT. 3A〉、4〈APT. 1B〉、5〈APT. 2B〉、6〈APT. 3B〉。**六軌全部沒有記錄長度，而且六個標題只是盤名加上唱片面別與序號**——A 面三軌、B 面三軌，**整張碟沒有任何一首曲子有名字。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b14b2c52-440d-3700-b387-3613d1b167a1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三店的 collectionId **1783985585**：collectionName「APT. - EP」、artistName「N.Y. House'n Authority」、releaseDate **1989-08-04**、trackCount 6、copyright「℗ 1989 Nu Groove Records/Burrell Brothers」。`entity=song` **攤得出 6 軌、6 軌全部有 previewUrl**：〈APT. 1a〉4:56／〈APT. 2a〉3:32／〈APT. 3a〉4:57／〈APT. 1b〉4:56／〈APT. 2b〉3:56／〈APT. 3b〉4:45。**六軌與原盤逐位置相符、面別序號完全對得上**（差別只在店面把 A／B 寫成小寫），**而且補上了原盤沒有的長度**：六軌從 3:32 到 4:57，**第 1 軌與第 4 軌長度完全相同（4:56）。**",
+    "src": "https://itunes.apple.com/lookup?id=1783985585&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**回撈的第二個候選是同掛名的另一張碟**：collectionId **1783985172**《N.Y. House'n Authority - EP》（releaseDate 1989-04-07、6 軌〈Dyckman House〉4:18／〈Ravenswood House〉4:28／〈Tilden House〉7:03／〈High Bridge House〉2:50／〈Fort Green House〉5:34／〈Forty House〉4:29、℗ 1989 Nu Groove Records/Burrell Brothers）。**六軌全部有名字、與本張六軌無一同名，發行日期還早一個月**——**這是這個掛名名下的另一張 EP，駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=1783985172&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**§5.5 白名單條件覆核**：藝人端點分頁全列 **2 個 release-group——兩個都是 EP，primary-type=Album 0 個、primary-type=Compilation 0 個、Single 0 個**。**「這個掛名名下只有兩張、都是 EP、沒有任何 Album」成立**，而那另一張正是上面駁回的那一筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=68229c91-7cf5-4f4f-8625-0e1ac17b45bb&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "六軌的標題只是盤名加上唱片面別與序號，整張沒有一首曲子有名字",
+   "第一軌與第四軌長度分秒不差，都是四分五十六秒"
+  ],
+  "sound": "1989 年 5 月 Nu Groove Records NG 025 是一張 12 吋、六軌，而六個標題全部只是盤名加上唱片面別與序號——A 面三軌、B 面三軌，整張碟沒有任何一首曲子取過名字。原盤沒有留下長度紀錄，後來同廠的數位版補上了：六軌從 3:32 到 4:57，第一軌與第四軌分秒不差都是 4:56，等於兩面的開頭刻意做成一樣長。這個掛名名下總共只有兩張碟、都是十二吋，另一張的六軌反而每首都有名字，全部以紐約的地名加上 House 命名。",
+  "keyTracks": [
+   "APT. 1A",
+   "APT. 3A",
+   "APT. 3B"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989-05**（帶月份）、其下最早的 release 同為 1989-05 US 的 Nu Groove Records NG 025（Official），第二筆是 2018-01-19 的同廠數位版。**串流那一路的日期對不上**：collectionId 1783985585 的 releaseDate 記 **1989-08-04**，**比原盤晚三個月**；℗ 欄寫「℗ 1989 Nu Groove Records/Burrell Brothers」，**年份一致但月份不可信**。**裁定 220 的形狀在本張不成立**：這是 primary-type=EP 的 12 吋，RG 的日期就是原盤日期、沒有被 2018 那次數位化蓋掉。四處對照後年份是 1989。**同名先行單曲：不適用**（六軌都以盤名編號命名）。",
+  "notes": "**§5.5 覆核通過**：`exceptionReason` 寫「這個掛名只有兩個 release-group、兩張都是 EP，沒有任何 Album」——**逐項查證屬實**（2 個 RG、EP 2、Album 0、Compilation 0）。兩個 HTTPS 證據網址成立。**白名單資格成立。**｜**擋下策展層一處**：`exceptionReason` 與 `curatorWhy` 都寫「2018 年 Rush Hour 系統重發」。**2018-01-19 那一筆的 label-info 是 Nu Groove Records、編號 NG025D，不是 Rush Hour。** **行文不得寫 Rush Hour。**｜**回撈的 2 個候選：採信 1783985585、駁回 1783985172**（後者是同掛名的另一張 EP，六軌全部有名字、與本張無一同名）。**兩張碟的封面與掛名幾乎一樣，這是本張最容易配錯的地方。**｜**擋下策展層第二處（人名，裁定 241）**：`curatorWhy` 寫出廠牌創辦人夫婦與兄弟二人的名字。**藝人實體 68229c91 的 area 與 disambiguation 兩欄都空白、type 還記成 Person**（實際是化名團），**本層在資料庫端查不到任何人名**；只有串流側的 ℗ 欄出現「Burrell Brothers」這個團體寫法。**行文最多只能寫到那個團體寫法，不得寫個別成員的名字，也不得寫廠牌創辦人。**｜**盤名極短**：`apt` 摺疊後只有三個字母，**是本批最短的鍵**，下游新增同型卡要特別留意。｜**曲名大小寫**：原盤寫〈APT. 1A〉（面別大寫），店面寫〈APT. 1a〉（小寫）。本檔依原盤。"
  }
 ]
