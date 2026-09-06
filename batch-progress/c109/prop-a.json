@@ -1,0 +1,192 @@
+[
+ {
+  "artist": "Alain Bashung",
+  "album": "Roulette russe",
+  "year": 1979,
+  "genres": [
+   "rock"
+  ],
+  "label": "Philips（catno 9101 223）",
+  "why": "Bashung 在 Philips 名下的第二張正規專輯，是《Roman photos》（1977）之後、《Play blessures》（1982）之前的一張，收〈Gaby oh Gaby〉。MB 該 release-group 轄下五筆 release 全是 FR／Official，1979-03 的 Philips 9101 223 是 12 吋原盤，之後由 Barclay（517 242-2，1992）與 Mercury（296 607-2，1998）兩度再發，1980 年另有 Philips 9120 427 一版，是唱片持續在架上的直接證據。實掃 seed_cards.json 全 14,424 列：Alain Bashung 池中 0 張。法語搖滾這條線池中目前只有 Téléphone《Crache ton venin》與 Indochine《L'Aventurier》兩張 80 年代前後的碟，Noir Désir、Johnny Hallyday、Les Rita Mitsouko、Dominique A 全部 0 張；香頌上一代則有 Jacques Brel 4 張、Serge Gainsbourg 4 張、Georges Brassens 1 張、Léo Ferré 1 張、Françoise Hardy 4 張（c-47／c-98 那一段）。這張補的是那一代之後、rock français 開場的位置。",
+  "risk": "同一藝人名下有 1992 年的 Compilation《Alain Bashung Collection : Roulette russe / Pizza / Play blessures》（2adf07e3），盤名把本張整個包進去，是子字串比對最容易配錯的一筆（裁定 162 的鏡像形狀），已在 mbNote 標「刻意不釘」。另有兩張同名 Compilation《Alain Bashung》（1983 e209f623、1987 6f461707），與掛名字串相同，藝人端查詢會撈到。Apple fr collectionId 1443724135（Roulette russe，12 軌，releaseDate 記 1979-01-01，MB 記 1979-03；Apple 的日期只能當訊號）；原盤 12 吋為 11 軌，Apple 那筆 12 軌，軌數差一軌的原因未查證，不在此下判斷（裁定 141）。店面 fr 命中。",
+  "mbNote": "釘 release-group 5e22fd4b-4237-34ef-9f84-d3571f8a7216。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Roulette russe」、artist-credit「Alain Bashung」、first-release-date 1979-03、primary-type Album、secondary-types 空、轄下 5 個 release 全 FR／Official（Philips 9101 223 12\" x11、Philips 9120 427、Barclay 517 242-2 CDx12、Mercury 296 607-2 CDx11、Barclay 065 342-2 CDx11）。藝人 MBID d31e78a3-4fd8-4b10-9c49-0ee8d4dfd61e（Person／France／Paris），名下 90 個 release-group（release-group?artist=…&limit=100&offset= 分頁全列，非 25 筆上限）。刻意不釘：2adf07e3-879e-4167-b957-1669e1b6d08d《Alain Bashung Collection : Roulette russe / Pizza / Play blessures》（1992 三合一 Compilation，盤名含本張）、e209f623-0ec4-42aa-bd3b-412ce71ee1f6《Alain Bashung》（1983 Compilation）、6f461707-c1c2-3e8a-8a97-29d90b4a3552《Alain Bashung》（1987 Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bashung Roulette russe；Roulette Russe",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Alain Bashung",
+  "album": "Play blessures",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Philips（catno 6313 426）",
+  "why": "Bashung 與 Serge Gainsbourg 合作填詞的一張，MB 該 release-group 的 artist-credit 是 Bashung 單獨掛名、1982 年 Philips 6313 426 的 12 吋原盤 10 軌，同年另發 Cassette（7200 426）與 CD（Barclay 810 949-2），1992 年 Barclay 517 244-2 的再發把軌數補到 13。它接在《Roulette russe》（1979）之後、《Figure imposée》（1983）之前，是 Bashung 目錄裡與 Gainsbourg 直接交會的一張。實掃 seed_cards.json 全 14,424 列：Bashung 池中 0 張；池中已有 Serge Gainsbourg 4 張（《Histoire de Melody Nelson》《L'Homme à tête de chou》《N°4》《Bonnie and Clyde》），這張正好補在那四張的下游。",
+  "risk": "1992 年 Barclay 的再發把盤名大寫成《Play Blessures》，與 1982 原盤的《Play blessures》只差一個字母的大小寫，NFKC 正規化摺得掉、人工目視摺不掉，兩種寫法都要進 queryAlias。撞卡風險同前一張：1992 年的三合一 Compilation（2adf07e3）盤名含本張，已標刻意不釘。Apple fr collectionId 1443486643（Play blessures，10 軌，releaseDate 1982-01-01），軌數與原盤一致。店面 fr 命中。",
+  "mbNote": "釘 release-group c07ae991-1ce3-345a-80a2-a3ecd9b5c663。回問確認：title「Play blessures」、artist-credit「Alain Bashung」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 4 個 release 全 FR／Official（Philips 6313 426 12\" x10、Philips 7200 426 Cassette x10、Barclay 810 949-2 CDx10、Barclay 517 244-2 CDx13）。藝人 MBID d31e78a3-4fd8-4b10-9c49-0ee8d4dfd61e，名下 90 個 release-group。刻意不釘：2adf07e3-879e-4167-b957-1669e1b6d08d《Alain Bashung Collection : Roulette russe / Pizza / Play blessures》（1992 Compilation，盤名含本張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Play Blessures；Bashung Play blessures",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Alain Bashung",
+  "album": "Osez Joséphine",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay（catno 511 485-1／511 485-2）",
+  "why": "Bashung 1991 年在 Barclay 的專輯，原盤同時發 12 吋（511 485-1）與 CD（511 485-2）各 11 軌；2015 年 Barclay 以 472 484-4 出 Super Deluxe 三片版（11＋12＋14 軌），2016 年另有 14 軌 CD，是唱片被廠牌反覆整編的直接證據。它在目錄裡接在《Novice》（1989）之後、《Chatterton》（1994）之前。實掃 seed_cards.json：Bashung 池中 0 張，這張與《Fantaisie militaire》《Bleu pétrole》一起把他 90 年代到 2000 年代的三個節點補齊。",
+  "risk": "同名 Single《Osez Joséphine》（bc0f49e2，1991）與 2010 年的 Compilation《Osez》（b2d6c861）都在同一位藝人名下，前者同年同名、後者是本張盤名的前綴，兩筆都已標刻意不釘。Apple fr collectionId 1444021317（Osez Joséphine，11 軌，releaseDate 1991-01-01），與原盤軌數一致；但 Apple 目錄另有 Super Deluxe 版，配對時要盯 collectionName。店面 fr 命中。",
+  "mbNote": "釘 release-group 7fcd52d9-b3cf-3a35-94e3-ac76b0801296。回問確認：title「Osez Joséphine」、artist-credit「Alain Bashung」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 4 個 release 全 FR／Official（Barclay 511 485-1 12\" x11、Barclay 511 485-2 CDx11、Barclay 472 484-4 CDx11+CDx12+CDx14「Super Deluxe Édition」2015、Barclay CDx14 2016）。藝人 MBID d31e78a3-4fd8-4b10-9c49-0ee8d4dfd61e，名下 90 個 release-group。刻意不釘：bc0f49e2-f2ea-4422-871c-30313c99dbaf《Osez Joséphine》（1991 Single，同年同名）、b2d6c861-f3c3-470f-beec-c61f1022ef8c《Osez》（2010 Compilation，盤名為本張前綴）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Osez Josephine；Bashung Osez Joséphine",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Alain Bashung",
+  "album": "Fantaisie militaire",
+  "year": 1998,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay（catno 539 488-1）",
+  "why": "Bashung 1998 年在 Barclay 的專輯，MB 該 release-group 轄下 9 筆 release 橫跨 FR、DZ、AL、AU、JP 五個國別（12 吋 539 488-1 為 FR 原盤 12 軌，其餘為數位版，含 12／13／15 軌三種曲目長度），是他目錄裡流通範圍最寬的幾張之一。它接在《Chatterton》（1994）之後、《L'Imprudence》（2002）之前。實掃 seed_cards.json：Bashung 池中 0 張。",
+  "risk": "同一 release-group 底下的數位版有 12、13、15 軌三種，卡片年份與軌數要以 1998 年 FR 12 吋（12 軌）為準，不要拿數位版的軌數反推原盤（裁定 141）。MB 有多筆 release 的 date 欄留空（顯示 ????），年份取 release-group 的 first-release-date 1998。Apple fr collectionId 1443816325，collectionName 作「Fantaisie Militaire」（M 大寫），12 軌，releaseDate 1998-01-01；大小寫差異要進 queryAlias。店面 fr 命中。",
+  "mbNote": "釘 release-group 89198afe-6134-37bf-a2c0-574d85bf30b4。回問確認：title「Fantaisie militaire」、artist-credit「Alain Bashung」、first-release-date 1998、primary-type Album、secondary-types 空、轄下 9 個 release 全 Official，國別 FR／AL／DZ／AU／JP，FR 12\" Barclay 539 488-1 為 12 軌原盤。藝人 MBID d31e78a3-4fd8-4b10-9c49-0ee8d4dfd61e，名下 90 個 release-group。刻意不釘：31e09119-ce78-4e8f-a015-27f4f5d90b6a《Mes petites entreprises》（1998-11-06 Compilation，同年）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fantaisie Militaire；Bashung Fantaisie militaire",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Alain Bashung",
+  "album": "Bleu pétrole",
+  "year": 2008,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay（catno 530 592 9）",
+  "why": "Bashung 2008 年的專輯，也是他生前發表的最後一張錄音室作品（1947–2009）。MB 該 release-group 轄下 5 筆 release 都是 2008 年、Official：FR 的 CD（530 592 9）與 CD＋DVD（530 593 7）各 11 軌、FR 雙 12 吋（530 709-4，5＋6 軌）、CA 的 CD（5305929）與一筆數位版，同時出實體與加映影音，是唱片在當年被完整發行的證據。它接在《L'Imprudence》（2002）與《La Ballade de Calamity Jane》（2006）之後。實掃 seed_cards.json：Bashung 池中 0 張，這張與《Roulette russe》《Play blessures》《Osez Joséphine》《Fantaisie militaire》一起，把 1979–2008 的五個節點鋪成一條線。",
+  "risk": "同名數位版把盤名寫成《Bleu Pétrole》（P 大寫），與 FR 實體盤的《Bleu pétrole》大小寫不同，兩種都要進 queryAlias。CA 版與 FR 版同年同名，配對時要盯國別。Apple fr collectionId 1440511541（Bleu pétrole，11 軌，releaseDate 2008-01-01），軌數與 FR CD 一致。店面 fr 命中。行文不得寫「最後一張」以外的排序主張；此處的「生前最後一張錄音室作品」以 MB 該藝人 release-group 全 90 筆的日期序與其卒年為據，若研究層另有材料以研究層為準。",
+  "mbNote": "釘 release-group 6a0fb53e-bbea-35de-99ed-6dc94373c549。回問確認：title「Bleu pétrole」、artist-credit「Alain Bashung」、first-release-date 2008-03-24、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official（FR Barclay 530 592 9 CDx11、FR Barclay 530 593 7 CDx11+DVDx4、FR Barclay 530 709-4 12\"x5+12\"x6、CA Barclay 5305929 CDx11、數位版 Digital Media x11）。藝人 MBID d31e78a3-4fd8-4b10-9c49-0ee8d4dfd61e，名下 90 個 release-group。刻意不釘：d973a195-6fa3-4629-af1d-22abb1adf727《Lille 2008 L'Aéronef》（2008-04-05 Live，同年）、5f08a764-b1d3-4238-b062-38b5980b64e3《Bijoux bijoux》（2008-10-27 Compilation，同年）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bleu Pétrole；Bleu petrole；Bashung Bleu pétrole",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Noir Désir",
+  "album": "Veuillez rendre l'âme (à qui elle appartient)",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay（catno 837 773-1／837 773-2）",
+  "why": "Noir Désir 在 Barclay 名下的第一張整長專輯，接在 1986 年的《Où veux-tu qu'je r'garde ?》之後。MB 該 release-group 轄下 6 筆 release 全 FR／Official，1989 年同時發 12 吋（837 773-1）、Cassette（837 773-4）與 CD（837 773-2）各 11 軌，2008 年 Barclay 又以 530 917-8 出 12 吋再發，是唱片持續在架上的證據。實掃 seed_cards.json 全 14,424 列：Noir Désir 池中 0 張，Bordeaux 這一支在池中完全不存在；同代的 Téléphone 池中只有《Crache ton venin》一張，Indochine 只有《L'Aventurier》一張。這張補的是 1980 年代末 rock français 從 Téléphone 世代交棒出去的位置。",
+  "risk": "MB 有兩筆 date 欄留空的 CD（同為 Barclay 837 773-2），年份取 release-group 的 first-release-date 1989-01-10。盤名長且含括號，dedup-crossbatch 的括號剝除規則只剝再版裝飾詞、不剝這一組，字串會完整保留；但外部服務常把括號整段砍掉寫成「Veuillez rendre l'âme」，已進 queryAlias。MB 標題用的是排印撇號 U+2019（l’âme），卡片依池中既有法語卡的寫法（如《L'Aventurier》《L'Homme à tête de chou》）統一用 ASCII 撇號。Apple fr collectionId 1440855139（11 軌，releaseDate 記 2014-01-01——那是數位再上架日，不是原盤年）。店面 fr 命中。",
+  "mbNote": "釘 release-group 7664fc7a-f99e-3352-8eba-d2afc9718f48。回問確認：title「Veuillez rendre l’âme (à qui elle appartient)」（U+2019 撇號）、artist-credit「Noir Désir」、first-release-date 1989-01-10、primary-type Album、secondary-types 空、轄下 6 個 release 全 FR／Official（Barclay 837 773-1 12\"x11、837 773-4 Cassette x11、837 773-2 CDx11 三筆、530 917-8 12\"x11 2008）。藝人 MBID e6358374-5eea-4205-be22-382ed6df493c（Group／France／Bordeaux），名下 69 個 release-group。刻意不釘：ff611e22-d253-4ec2-a958-48b8310c7232《Noir Désir》（1994 Live，盤名＝團名）、f495ca1b-46c5-3090-ba27-cf00bd2e3b11《Noir Désir》（1994-08-22 Compilation，盤名＝團名）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Veuillez rendre l'ame；Veuillez rendre l'âme；Noir Desir Veuillez rendre l'âme",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Noir Désir",
+  "album": "Tostaky",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay（catno 517598-2）",
+  "why": "Noir Désir 1992 年在 Barclay 的專輯，接在《Du ciment sous les plaines》（1991）之後。MB 該 release-group 轄下 4 筆 release 全 FR／Official：1992-12-07 同日發 CD（517598-2）與 Cassette（517598-4）各 12 軌，2012 年 Barclay 以 372 331-3 出雙 CD 再版（15＋18 軌）。實掃 seed_cards.json：Noir Désir 池中 0 張。這張與《Veuillez rendre l'âme》《666.667 Club》《Des visages des figures》一起，把樂團 1989–2001 的四個節點鋪成一條線。",
+  "risk": "**同名假陽性有兩筆**：1992 年的 Single《Tostaky》（a9aab773，與專輯同年）與 2022 年的 Live Single《Tostaky》（03562e84）。Apple 的 search 端點只回後者（fr 1649858342，1 軌，2022-10-28），專輯本身要走藝人目錄端點才看得到——這正是裁定 173「兩個端點會漏掉不同的碟」的實例。專輯的 Apple fr collectionId 是 **1443608935**（12 軌，1992-01-01，collectionExplicitness=explicit），配對時不得取 1649858342。店面 fr 命中。",
+  "mbNote": "釘 release-group c9d18ffe-4f0f-3801-94fa-def1e1ba8483。回問確認：title「Tostaky」、artist-credit「Noir Désir」、first-release-date 1992-12-07、primary-type Album、secondary-types 空、轄下 4 個 release 全 FR／Official（Barclay 517598-2 CDx12 兩筆、517598-4 Cassette x12、372 331-3 CDx15+CDx18 2012）。藝人 MBID e6358374-5eea-4205-be22-382ed6df493c，名下 69 個 release-group。刻意不釘：a9aab773-533a-4bc2-9c83-6e0b3ad6a369《Tostaky》（1992 Single，同年同名）、03562e84-f8c4-4b96-abb9-d0dbd39984f8《Tostaky》（2022-10-28 Live Single）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tostaky (Le Continent)；Noir Desir Tostaky",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Noir Désir",
+  "album": "666.667 Club",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay（catno 533442-2）",
+  "why": "Noir Désir 1996 年在 Barclay 的專輯，接在《Tostaky》（1992）之後。MB 該 release-group 轄下 6 筆 release 全 Official：1996-11 的 FR 雙 12 吋（533 442-1，6＋7 軌）與 CD（533442-2，13 軌），另有 2004-06 的 Barclay 再發與一筆 XW 數位版。實掃 seed_cards.json：Noir Désir 池中 0 張。這張是樂團 90 年代兩張正規盤中的後一張，與《Tostaky》成對。",
+  "risk": "盤名以數字與小數點開頭（666.667），任何把標點壓成空字串的正規化都會變成「666667club」，跨批去重與撞卡比對都要用正規化後的鍵而不是原字串。**Apple 的 search 端點在 fr／be／ch／ca／us／gb／de／nl 八個店面全部查無**，只有藝人目錄端點看得到（裁定 173）：fr collectionId **1443159119**（13 軌，1996-01-01，collectionExplicitness=explicit）。封面可先試 CAA release-group 端點，落空再走該 collectionId。店面 fr。",
+  "mbNote": "釘 release-group 18659ce4-de69-3829-aa1c-a71d64b3d97c。回問確認：title「666.667 Club」、artist-credit「Noir Désir」、first-release-date 1996-01-01、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（XW 數位 x13、FR Barclay 533 442-1 12\"x6+12\"x7、FR Barclay 533442-2 CDx13 三筆、FR Barclay 533 442-2 CDx13 2004-06）。藝人 MBID e6358374-5eea-4205-be22-382ed6df493c，名下 69 個 release-group。刻意不釘：00bf47ac-ccd4-34e6-a330-883d67687526《One Trip One Noise》（1998-11-02 Remix）、020c3746-6969-44fe-9125-8203b562a314《On est au monde》（1998 Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "666667 Club；Noir Desir 666.667 Club",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Noir Désir",
+  "album": "Des visages des figures",
+  "year": 2001,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay／Universal（catno 589 275-2）",
+  "why": "Noir Désir 2001 年在 Barclay／Universal 的專輯，收〈Le vent nous portera〉（與 Manu Chao 合作）。MB 該 release-group 轄下 12 筆 release 橫跨 FR、CA、XE、RU、IT、AR 六個國別，是樂團目錄裡流通最廣的一張：FR 的 Barclay／Universal 589 275-2、CA 的 Barclay 5892752、RU 的 Universal Music Russia 589 275-9 各 12 軌。實掃 seed_cards.json：Noir Désir 池中 0 張；池中已有 Manu Chao 4 張（《Clandestino》《Sibérie m'était contéee》《La Radiolina》《Viva tu》），這張是那條線在法語搖滾這一側的接點。",
+  "risk": "12 筆 release 裡有數筆 status 未填（NOSTATUS），但 FR／CA／RU 的主要壓片都標 Official，依裁定 167 的附帶結論，status 查得到就不必再翻 Discogs 版本頁。跨國別再發多，配對時要以 FR 原盤為準。Apple fr collectionId 1440863170（12 軌，releaseDate 記 2014-01-01＝數位再上架日，不是原盤年）。店面 fr 命中。",
+  "mbNote": "釘 release-group fb9ef440-6e16-318a-95a8-7f706688967a。回問確認：title「Des visages des figures」、artist-credit「Noir Désir」、first-release-date 2001-09-11、primary-type Album、secondary-types 空、轄下 12 個 release，status 為 Official 與未填兩種，國別 FR／CA／XE／RU／IT／AR（FR Barclay+Universal 589 275-2 CDx12 為原盤）。藝人 MBID e6358374-5eea-4205-be22-382ed6df493c，名下 69 個 release-group。刻意不釘：77e01a89-792e-331f-8ff8-819078be2b4e《En route pour la joie》（2001-11-05 Compilation，同年）、d60faf02-ba87-3cb3-b685-2ed11e5d1a52《Rarities, Volume 2: Ira diei》（2001 Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Des Visages Des Figures；Noir Desir Des visages des figures",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Johnny Hallyday",
+  "album": "Vie",
+  "year": 1970,
+  "genres": [
+   "rock"
+  ],
+  "label": "Philips（catno 6397.018）",
+  "why": "Hallyday 1970 年在 Philips 的專輯，MB 該 release-group 轄下三筆 release 全 Official：1970-11-06 的 FR 12 吋原盤（6397.018，11 軌）、1994 年 Philips 546 956-2 的 CD 再發、2022 年 Mercury Music Group 的數位版，一張 1970 年的碟在五十二年後仍被原廠重新上架。它接在《Rêve et amour》（1968）與 1969 年的同名專輯之後、《Flagrant délit》（1971）之前。實掃 seed_cards.json 全 14,424 列：Johnny Hallyday 池中 0 張——法國戰後最大的流行搖滾目錄在卡池裡完全不存在。本張與《Gang》（1986）、《Sang pour sang》（1999）三張分別落在 70／80／90 三個年代。",
+  "risk": "盤名只有三個字母（Vie），是全批最容易配錯的一筆：Hallyday 名下 442 個 release-group 裡含「vie」字串的還有《C'est la vie》（6f2f703e，1977）、《À la vie, à la mort !》（e025df8d，2002）、《Ma vérité》（96fc0bc1，2005），三筆都已標刻意不釘。Apple fr collectionId 1605011803（Vie，11 軌，releaseDate 1970-01-01），軌數與原盤一致；配對必須用 collectionId 直查，不能靠盤名字串比對。店面 fr 命中。",
+  "mbNote": "釘 release-group 335eb1f0-9c0c-4144-b5e2-e1f9bae943ec。回問確認：title「Vie」、artist-credit「Johnny Hallyday」、first-release-date 1970-11-06、primary-type Album、secondary-types 空、轄下 3 個 release 全 Official（FR Philips 6397.018 12\"x11、FR Philips 546 956-2 CDx11 1994、XW Mercury Music Group 數位 x11 2022）。藝人 MBID 323ed974-8bf6-4f54-9525-b774a659f805（Person／France／Paris），名下 442 個 release-group（release-group?artist=…&limit=100&offset= 五頁分頁全列）。刻意不釘：6f2f703e-f26f-3602-a989-62146615ff1a《C’est la vie》（1977 Album，盤名含 vie）、e025df8d-cdc6-370e-8c90-16c151fa825b《À la vie, à la mort !》（2002 Album，盤名含 vie）、96fc0bc1-a144-30e3-8974-ff5eae7f80d1《Ma vérité》（2005 Album）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Johnny Hallyday Vie；Vie 1970",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
