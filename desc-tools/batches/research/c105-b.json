@@ -470,5 +470,233 @@
   "status": "full",
   "yearVerified": "一致，2011。MB release-group first-release-date **2011-07-13**、其下 CD 同為 2011-07-13、數位盤 2011-07-29，Apple us 1316316551 的 releaseDate **2011-07-13**（**與 MB 逐日相同**）、℗ 年份 2011，韓文維基藝人條目明寫發行日為 2011 年 7 月 13 日，英文維基把本張記為 (2011)。**五處同為 2011，四處連日期都是 7/13。****同名先行單曲：無。**⚠ 但同一位藝人 2016-01-29 有一筆單曲《EVERYTHING》、2016-03-15 有《내 고향 서울엔》，兩者都與 2017 年《TEAM BABY》的曲目同名，**與本張無關但會干擾同批另一張卡的配對**。",
   "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面（1316316551）。** 覆核結果：這個 collectionId 在 **us** 店面同樣攤得出 12 軌、12 軌全有 previewUrl、`trackCount` 欄與曲目列都是 12、曲名與 MB 逐字相同、曲序逐位置相符、逐軌長度差在 1.7 秒內；它也列在 us 的藝人頁目錄（artistId 365442996）裡，**不是日版**。依 c105/rulings.md 第 3 條，**建議主線把店面改記成 us、id 不變**。\\n**「第二張正規盤」查證屬實、可以寫**：韓文維基藝人條目明寫 2011 年 7 月 13 日發行第二張正規音盤、英文維基把它列在《201》之後、MB 的 5 筆 Album 排序本張也排第二——**三處一致。**\\n**⚠ 但序數的參照點《201》年份兩說，行文不要提《201》的年份**：韓文維基與 MB 都記 2008-11-13，英文維基卻寫 In 2010 he released his debut album 201、並說它拿 2010 年的 Korean Music Awards；Apple 目錄上架的又是 **2010-03-18 的《201 (Special Edition)》**（13 軌）而不是 2008 年的原盤。三邊各說各話，源頭是那張 Special Edition。**本卡只需要「第二張」這個位置，不需要引《201》的年份。**\\n**曲名有兩套、而且 MB 那一套不是原題**：MB 兩筆 release 與 Apple 都只有英譯曲名，**韓文維基專條列的諺文原題才是原文**（十二軌逐位置對得上）。`keyTracks` 給的是諺文原題。行文引曲名時**要嘛全用諺文原題、要嘛註明是英譯**，不要混用。\\n**掛名分裂（本張這一側）**：本 release-group 的 artist-credit 印的是諺文《검정치마》、MB 藝人實體主名也是諺文，**只有同批 2017 年那張《TEAM BABY》的 artist-credit 印 The Black Skirts**——MB 自己兩形都有。卡單沿用池中的 The Black Skirts 正確，諺文要進 queryAlias。\\n可寫的商業事實（韓文維基藝人條目）：這位到條目撰寫時為止各張專輯合計售出約五萬張以上。"
+ },
+ {
+  "key": "desc2:The Black Skirts|TEAM BABY",
+  "artist": "The Black Skirts",
+  "album": "TEAM BABY",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 872c10f4 的欄位：title「TEAM BABY」、artist-credit「**The Black Skirts**」（拉丁；藝人實體 a697464c，主名為諺文《검정치마》）、first-release-date **2017-05-30**、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 KR/Official、日期都是 2017-05-30**：39579472（標題「**Team Baby**」，CD，label-info **Doggy Rich** catno YP 0002，barcode 8809634380012，10 軌）與 3e85ea55（標題「**TEAM BABY**」，媒體格式未填，**label-info HIGHGRND**，10 軌）。**兩筆的廠牌欄不一樣：一筆 Doggy Rich、一筆 HIGHGRND。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/872c10f4-7dd3-4e68-a91f-869836bfc0ad?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（39579472）的逐軌曲目與長度：1〈난 아니에요〉3:31、2〈Big Love〉3:59、3〈Diamond〉4:57、4〈Love Is All〉2:44、5〈내 고향 서울엔〉3:23、6〈폭죽과 풍선들〉3:22、7〈한시 오분 (1:05)〉4:01、8〈나랑 아니면〉4:33、9〈혜야〉5:25、**10〈Everything / 걱정하지마〉15:40**。單片 10 軌、合計 3095 秒（51:35）。**收尾那一軌 15 分 40 秒、佔全碟三成長度**，MB 的曲名欄直接把它標成兩首歌的斜線併寫，其餘九軌全部在 2:44 到 5:25 之間。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=872c10f4-7dd3-4e68-a91f-869836bfc0ad&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1242154383：collectionName「TEAM BABY」、artistName「The Black Skirts」、releaseDate **2017-05-30**、copyright「℗ 2017 DOGGYRICH FOREVER, BESPOK., under license to YG PLUS」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，曲序與 MB 逐位置相符。**前九軌的長度與 MB 差在 2 秒以內，第 10 軌卻差了 647 秒**——MB 記〈Everything / 걱정하지마〉15:40，Apple 那一軌題作〈EVERYTHING〉、只有 **4:53**。**Apple 上架的版本把後面那段隱藏曲拿掉了。**Apple 的曲名把諺文換成英譯（That's Not Me／In My City of Seoul／Confetti and Balloons／1:05／Who Do You Love／Heya），英文原題的四軌（Big Love／Diamond／Love Is All／EVERYTHING）維持原樣。",
+    "src": "https://itunes.apple.com/lookup?id=1242154383&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Team Baby〉專條：這是 The Black Skirts 的 **third studio album**，**released on 30 May 2017**，並入圍 2018 年 Korean Music Awards 的 album of the year。Background 節記 2016 年他與 Tablo 主持的廠牌 **HIGHGRND** 簽約；**專輯封面是他父母的結婚照**；他自己形容這會是一張非常成熟的專輯。Critical reception 引 Music Y 的 Park Sangjoon（說整張裡很難只挑一首最好的，每首都美、完成度都高）與 IZM 的 Kang Minjeong（說大半曲子都填著平常的愛情主題卻不覺得負擔，是因為那種獨特的乾燥質地）。",
+    "src": "https://en.wikipedia.org/wiki/Team_Baby"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 a697464c 名下 15 個 release-group，primary-type=Album 且 secondary-types 為空的 5 筆依 first-release-date 排序為《201》2008-11-13、《Don't You Worry Baby (I'm Only Swimming)》2011-07-13、**《TEAM BABY》2017-05-30**、《THIRSTY》2019-02-12、《TEEN TROUBLES》2022-09-15——**本張排第三**。⚠ 名下另有 2016-01-29 的單曲《EVERYTHING》與 2016-03-15 的單曲《내 고향 서울엔》，**兩者都與本張的曲目同名、都比本張早一年多**。名下沒有合輯、沒有 Live、沒有日版。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a697464c-69b1-4bbc-88cc-570c025a25e5&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 365442996，us，entity=album，回 16 筆、未達 200 上限）在 2016 年確實各有一筆對應的先行單曲：1316460624《In My City of Seoul - Single》2016-03-15（1 軌）；2017 年只有 **1242154383《TEAM BABY》2017-05-30（10 軌）** 一筆專輯。前後鄰近的專輯是 1316316551《Don't You Worry Baby (I'm Only Swimming)》2011-07-13（12 軌）與 1558959940《THIRSTY》2019-02-12（12 軌）。",
+    "src": "https://itunes.apple.com/lookup?id=365442996&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十軌五十一分半，最後一軌就佔了十五分四十——那裡面藏了第二首歌，Apple 上架時把它剪掉，只留四分五十三",
+   "封面是他父母的結婚照，碟名叫《TEAM BABY》"
+  ],
+  "sound": "MB 記兩筆 release、都是 KR Official、都在 2017-05-30，**兩筆都是 10 軌**，差別在標題大小寫（Team Baby／TEAM BABY）與廠牌欄（Doggy Rich catno YP 0002／HIGHGRND）。全碟 3095 秒（51:35），但**這個數字被最後一軌撐起來**：前九軌合計 35 分 55 秒、全部落在 2:44 到 5:25 之間，收尾的〈Everything / 걱정하지마〉一軌就 **15:40**，MB 的曲名欄直接用斜線把兩首歌併寫。曲序上諺文題與英文題交錯（난 아니에요／Big Love／Diamond／Love Is All／내 고향 서울엔／폭죽과 풍선들／한시 오분 (1:05)／나랑 아니면／혜야），第 7 軌的曲名本身就是一個時刻。Apple 上架的版本把最後那軌截成 4:53、題作〈EVERYTHING〉。〈내 고향 서울엔〉與〈EVERYTHING〉在 2016 年都先以單曲發行過。英文維基記封面是他父母的結婚照，2016 年簽進 HIGHGRND。",
+  "keyTracks": [
+   "혜야",
+   "Everything / 걱정하지마",
+   "내 고향 서울엔"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2017。MB release-group first-release-date **2017-05-30**、其下兩筆 release 的日期都是 2017-05-30、Apple us 1242154383 的 releaseDate **2017-05-30**（**與 MB 逐日相同**）、℗ 年份 2017，英文維基專條明寫 released on **30 May 2017**。**四處同為 2017，四處的日期全部是 5/30、一天不差。****⚠ 同名先行單曲：有，而且是曲名不是盤名**——MB 名下 2016-01-29 的單曲《EVERYTHING》與 2016-03-15 的單曲《내 고향 서울엔》都與本張曲目同名、都早一年多。它們不會把專輯年份拉錯（盤名不同），但**行文若說某首歌「在這張碟上首度發表」會錯**。",
+  "notes": "**探測層 ready，但釘的是 jp 店面（1242154383）。** 覆核結果：這個 collectionId 在 **us** 店面同樣攤得出 10 軌、10 軌全有 previewUrl、`trackCount` 欄與曲目列都是 10、曲序與 MB 逐位置相符；它也列在 us 的藝人頁目錄裡，**不是日版**。依 c105/rulings.md 第 3 條，**建議主線把店面改記成 us、id 不變**。\\n**⚠ 擋下一處：Apple 與 MB 的第 10 軌不是同一段音檔。** MB 兩筆 release 都記〈Everything / 걱정하지마〉**15:40**，Apple 那一軌題作〈EVERYTHING〉、只有 **4:53**——差 647 秒。前九軌長度差在 2 秒以內，所以這不是別版母帶，是 **Apple 上架時把後面那段隱藏曲切掉了**。**行文寫全碟長度或寫「最後一軌十五分鐘」時要指明是實體盤**；照 Apple 算全碟只有 40 分 48 秒。\\n**「第三張正規盤」查證屬實、可以寫**：英文維基專條寫 third studio album、MB 的 5 筆 Album 排序本張也排第三，**兩處一致**（韓文維基沒有本張的專條）。\\n**⚠ 但不要寫「唯一」「最」這類話**：同一位藝人 2019 年的《THIRSTY》與 2022 年的《TEEN TROUBLES》都在 MB 與 Apple 上，本張不是最後一張。\\n**盤名大小寫兩形**：MB release-group 與 Apple 都用全大寫《TEAM BABY》，MB 那筆 CD 的 release 標題卻寫《Team Baby》，英文維基條目名也是《Team Baby》。**行文取卡單／MB release-group 的全大寫。**\\n**廠牌兩說、而且兩說都對**：MB 的 CD 記 Doggy Rich（catno YP 0002）、另一筆記 HIGHGRND，英文維基說 2016 年簽進 HIGHGRND，Apple 的 ℗ 記 DOGGYRICH FOREVER 授權 YG PLUS。**卡單的 label 欄只寫 Doggy Rich，漏了 HIGHGRND**；行文若提發行方，兩家一起提或都不提。\\n**掛名分裂（本張這一側）**：本 release-group 的 artist-credit 印拉丁 The Black Skirts、同批 2011 年那張印諺文《검정치마》。卡單沿用池中的 The Black Skirts 正確。\\n可寫的獎項（英文維基有具名主辦者）：入圍 2018 年 Korean Music Awards 的 album of the year。可寫的評論來源：Music Y 的 Park Sangjoon、IZM 的 Kang Minjeong。"
+ },
+ {
+  "key": "desc4:9와 숫자들|9와 숫자들",
+  "artist": "9와 숫자들",
+  "album": "9와 숫자들",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 562b4961 的欄位：title「9와 숫자들」、artist-credit「9와 숫자들」（藝人實體 aa04a662，sort-name 9 and the Numbers）、first-release-date **2009-12-29**、primary-type Album、secondary-types **空**。轄下**只有 1 個 release**：KR 的 CD（**Official**，2009-12-29，label-info **Tunetable Movement** catno FGM 3306，barcode 808780330627，13 軌）。**實體 KR Official 盤就這一筆，沒有數位盤、沒有再發、沒有海外版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/562b4961-272f-4d4a-84ba-11efa061aa14?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（6b3b56bb）的逐軌曲目與長度：1〈그리움의 숲〉4:41、2〈말해주세요〉3:20、3〈오렌지 카운티〉4:05、4〈석별의 춤〉4:04、5〈칼리지 부기〉4:55、6〈슈거 오브 마이 라이프〉3:31、7〈삼청동에서〉3:49、8〈실낙원〉4:54、9〈이것이 사랑이라면〉2:37、10〈선유도의 아침〉3:42、11〈연날리기〉3:24、12〈디엔에이〉2:57、13〈낮은 침대〉3:46。單片 13 軌、合計 2985 秒（49:45）。**十三軌全部落在 2:37 到 4:55 之間，沒有一首長曲、也沒有 interlude**，最短〈이것이 사랑이라면〉2:37、最長〈칼리지 부기〉4:55。曲名裡有四軌是外來語的諺文音譯（〈오렌지 카운티〉〈칼리지 부기〉〈슈거 오브 마이 라이프〉〈디엔에이〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=562b4961-272f-4d4a-84ba-11efa061aa14&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 6770612140：collectionName「9 and the Numbers」、artistName「9 and the Numbers」、releaseDate **2009-12-29**、copyright「℗ 2009 9 and the Numbers」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，曲序與 MB 逐位置相符，逐軌長度與 MB 最大差 2474 毫秒、平均 2046 毫秒（Apple 一律略短，是同一份母帶的不同轉檔）。曲名全部換成英譯，其中**兩軌不是直譯**：第 7 軌〈삼청동에서〉題作〈Colors of Moment〉、第 9 軌〈이것이 사랑이라면〉題作〈I Won't Do〉；其餘為 A Wood／Say／Orange County／Goodbye Dance／College Boogie／Sugar of My Life／Paradise Lost／Morning After／Fly Your Kite／DNA／Low Bed。",
+    "src": "https://itunes.apple.com/lookup?id=6770612140&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 934867626，us，entity=album，回 24 筆、未達 200 上限）列出的**第一筆就是本張**：6770612140《9 and the Numbers》2009-12-29（13 軌）；其後依序是 6770567209《Grace》2012-11-15（8 軌）、6770583221《Treasure Island》2014-11-25（13 軌）、6770572195《Solitude and Solidarity》2016-11-26（11 軌）、6770590816《Many Minutes In Seoul》2019-11-27（11 軌），另有 6770615358《9th Anniversary of 9 and the Numbers》2018-09-09（14 軌）與若干單曲。**《Grace》就是 MB 上那張 2012 年的 EP，Apple 沒有替它標 EP。**",
+    "src": "https://itunes.apple.com/lookup?id=934867626&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 aa04a662 名下**只有 5 個 release-group**：primary-type=Album 且 secondary-types 為空的 4 筆依 first-release-date 排序為 **《9와 숫자들》2009-12-29**、《보물섬》2014-11-25、《수렴과 발산》2016-11-26、《서울시 여러분》2019-11-27，另一筆是 2012-11-15 的 EP《유예》。**本張排最前。**名下沒有合輯、沒有 Live、沒有日版，也沒有第二筆同名 release-group。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=aa04a662-7ffc-4cc7-93e6-fb3502926382&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "韓文維基〈9와 숫자들〉（樂團條目）：韓國獨立樂團，**團員都用數字當藝名**，現行編制是 송재경（9）、유정목（0）、유병덕（3）、이용（4）四人。條目明記這組**發表過 4 張正規專輯與 1 張迷你專輯**，另有多首單曲——**與 MB 那份「4 筆 Album ＋ 1 筆 EP」完全對得上。**",
+    "src": "https://ko.wikipedia.org/wiki/9%EC%99%80_%EC%88%AB%EC%9E%90%EB%93%A4"
+   }
+  ],
+  "hookCandidates": [
+   "十三首歌全部卡在兩分三十七秒到四分五十五秒之間，四十九分四十五秒裡沒有一首長曲",
+   "團員的藝名都是數字：9、0、3、4——碟名就叫《9와 숫자들》"
+  ],
+  "sound": "MB 只記一筆 release：單片 13 軌的 KR Official CD（Tunetable Movement，catno FGM 3306，barcode 808780330627），**沒有數位盤、沒有再發、沒有海外版**。全碟 2985 秒（49:45），**十三軌全部落在 2:37 到 4:55 之間——沒有長曲、沒有 interlude、沒有再現軌**，長度分布是本組最平的一張。曲序自〈그리움의 숲〉4:41 起，中段〈칼리지 부기〉4:55 與〈실낙원〉4:54 是兩個較長的段落，第 9 軌〈이것이 사랑이라면〉2:37 最短，收在〈낮은 침대〉3:46。曲名有四軌是外來語的諺文音譯（〈오렌지 카운티〉〈칼리지 부기〉〈슈거 오브 마이 라이프〉〈디엔에이〉），Apple 的英譯裡有兩軌不是直譯——〈삼청동에서〉變成〈Colors of Moment〉、〈이것이 사랑이라면〉變成〈I Won't Do〉。團員都用數字當藝名（9、0、3、4）。",
+  "keyTracks": [
+   "그리움의 숲",
+   "칼리지 부기",
+   "삼청동에서"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，2009。MB release-group first-release-date **2009-12-29**、其下唯一那筆 KR CD 的日期同為 2009-12-29、Apple us 6770612140 的 releaseDate **2009-12-29**（**與 MB 逐日相同**）、℗ 年份 2009。**三處同為 2009，日期一天不差。****⚠ 這是本組最需要小心跨年的一張**：12 月 29 日離元旦只剩兩天，任何以「上架日」或「通路入庫日」為準的來源都可能標成 2010。**目前三處全部指向 2009，不要跟著任何 2010 的說法改。****同名先行單曲：無**——MB 名下只有 5 個 release-group。**維基沒有本張的專條**，年份沒有第四票。",
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **6770612140**（13 軌全有 previewUrl，`trackCount` 欄與曲目列都是 13，曲序與 MB 逐位置相符，逐軌長度差在 2.5 秒內）。查不到的原因是 **Apple 把掛名與盤名同時換成英譯「9 and the Numbers」**（自我同名卡，兩層一起壞掉）。**這一張同時也不在 `batch-progress/c105/apple-candidates.md` 裡（那份把它列成「目錄裡找不到」）——本次重跑藝人頁目錄端點就抓到了。不改 `previews.json`，交主線補。**\\n**「出道正規盤」查證屬實、可以寫**：MB 藝人頁只有 5 個 release-group、本張排最前；韓文維基樂團條目說這組發表過 **4 張正規專輯與 1 張迷你專輯**，與 MB 的「4 筆 Album ＋ 1 筆 EP」數目完全一致——**兩處對得上，MB 這份排序在這位藝人身上沒有多算的空間。**\\n**⚠ 但序數只能寫到「出道」為止**：韓文維基沒有本張的專條、也沒有逐張標序數，Apple 目錄同樣沒有序數欄位。**「第幾張」以外的相對位置（例如「五年後才有第二張」）可以寫，因為兩處的碟單都支持。**\\n**掛名以阿拉伯數字開頭**（9와 숫자들），任何把開頭數字當殘餘剝掉的正規化都會把它變成別的字串（裁定 90 的形狀）；Apple 那邊的掛名是英譯 9 and the Numbers，兩者在任何正規化下都不會相等。\\n**Apple 目錄的鄰近假陽性有兩筆**：6770615358《9th Anniversary of 9 and the Numbers》2018-09-09（14 軌，盤名含本卡字串）與 6770567209《Grace》2012-11-15（8 軌，就是 MB 上那張 EP《유예》、Apple 沒標 EP）。配對一律走 collectionId。\\n**`status` 記 thin 的理由**：MB 與 Apple 的曲目、長度、廠牌、catno、barcode 都齊，**但沒有任何一份針對這張碟本身的文字來源**（韓文維基只有樂團條目、沒有專輯條目；英文維基沒有這組）。可寫的是形制與曲序，不是評價與脈絡。"
+ },
+ {
+  "key": "desc4:9와 숫자들|보물섬",
+  "artist": "9와 숫자들",
+  "album": "보물섬",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4d1908db 的欄位：title「보물섬」、artist-credit「9와 숫자들」（藝人實體 aa04a662）、first-release-date **2014-11-25**、primary-type Album、secondary-types **空**。轄下**只有 1 個 release**：KR 的 CD（**Official**，2014-11-25，**label-info 為空陣列——沒有廠牌、沒有 catno**，無 barcode，13 軌）。**實體 KR Official 盤就這一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/4d1908db-7bb2-4f3f-9e55-5f97a6af887e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（5df115a5）的逐軌曲目與長度：1〈보물섬〉5:30、2〈실버 라인〉4:06、3〈숨바꼭질〉3:42、4〈깍쟁이〉4:52、5〈높은 마음〉3:58、6〈잡 투 두〉5:54、7〈커튼콜〉3:35、8〈초코바〉3:22、9〈톱니바퀴〉3:40、10〈한강의 기적〉4:05、11〈겨울 독수리〉6:05、12〈창세기〉3:11、13〈북극성〉4:07。單片 13 軌、合計 3367 秒（56:07）——**比出道盤長了六分半，是本組第二長的一張正規盤**。同名曲〈보물섬〉5:30 排在第 1 軌，最長的是第 11 軌〈겨울 독수리〉6:05，最短〈창세기〉3:11。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4d1908db-7bb2-4f3f-9e55-5f97a6af887e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 6770583221：collectionName「Treasure Island」、artistName「9 and the Numbers」、releaseDate **2014-11-25**、copyright「℗ 2014 9 and the Numbers」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，曲序與 MB 逐位置相符，逐軌長度與 MB 最大差 520 毫秒、平均 326 毫秒。**曲名的英譯有四軌完全不是直譯**：第 1 軌〈보물섬〉題作〈Finding Gold Breaking Walls〉（而不是 Treasure Island）、第 4 軌〈깍쟁이〉題作〈Thorn In My Side〉、第 8 軌〈초코바〉題作〈Energy Bar〉、第 10 軌〈한강의 기적〉題作〈Grass Of Miracle〉；第 5 軌〈높은 마음〉題作〈Hearts High (Room Edit)〉、**標了 Room Edit**。",
+    "src": "https://itunes.apple.com/lookup?id=6770583221&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 934867626，us，entity=album，回 24 筆、未達 200 上限）在本張前後各有一筆同名或近名的**先行單曲**：**6770587340《Treasure Island - Single》2014-09-26（2 軌）**（盤名與本張的 Apple 題名完全相同、早兩個月）、6770555655《Curtain Call - Single》2014-10-24（2 軌，曲名同本張第 7 軌）、6770602604《Hearts High - Single》2013-09-10（1 軌，曲名同本張第 5 軌）。專輯本身是 **6770583221《Treasure Island》2014-11-25（13 軌）**。",
+    "src": "https://itunes.apple.com/lookup?id=934867626&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 aa04a662 名下只有 5 個 release-group：primary-type=Album 且 secondary-types 為空的 4 筆依 first-release-date 排序為《9와 숫자들》2009-12-29、**《보물섬》2014-11-25**、《수렴과 발산》2016-11-26、《서울시 여러분》2019-11-27，另一筆是 2012-11-15 的 EP《유예》。**本張排第二**，與出道盤之間隔著那張 EP。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=aa04a662-7ffc-4cc7-93e6-fb3502926382&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "韓文維基〈9와 숫자들〉（樂團條目）：韓國獨立樂團，團員都用數字當藝名，現行編制是 송재경（9）、유정목（0）、유병덕（3）、이용（4）四人；條目明記這組**發表過 4 張正規專輯與 1 張迷你專輯**，另有多首單曲。",
+    "src": "https://ko.wikipedia.org/wiki/9%EC%99%80_%EC%88%AB%EC%9E%90%EB%93%A4"
+   }
+  ],
+  "hookCandidates": [
+   "Apple 把碟名譯成《Treasure Island》，卻把同名的第一軌譯成〈Finding Gold Breaking Walls〉——同一個詞，兩種說法",
+   "十三軌五十六分鐘，同名曲放在第一軌就用掉五分半，最長的〈겨울 독수리〉留到第十一軌"
+  ],
+  "sound": "MB 只記一筆 release：單片 13 軌的 KR Official CD，**label-info 是空陣列——沒有廠牌、沒有 catno、沒有 barcode**，Apple 的 ℗ 也只寫樂團自己的名字（℗ 2014 9 and the Numbers），是一張自主發行的碟。全碟 3367 秒（56:07），比五年前的出道盤長六分半。曲序把同名曲〈보물섬〉5:30 放在第 1 軌，中段〈잡 투 두〉5:54 與後段〈겨울 독수리〉6:05 是另外兩個長段落，其餘十軌落在 3:11 到 4:52 之間，收在〈북극성〉4:07。與出道盤那種一律三、四分鐘的平整相比，這張多了三個五分鐘以上的段落。Apple 的英譯有四軌完全不照字面走（〈보물섬〉→〈Finding Gold Breaking Walls〉、〈깍쟁이〉→〈Thorn In My Side〉、〈초코바〉→〈Energy Bar〉、〈한강의 기적〉→〈Grass Of Miracle〉），第 5 軌還標了 Room Edit。〈보물섬〉〈커튼콜〉〈높은 마음〉三軌在專輯之前都先發過單曲。",
+  "keyTracks": [
+   "보물섬",
+   "겨울 독수리",
+   "한강의 기적"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，2014。MB release-group first-release-date **2014-11-25**、其下唯一那筆 KR CD 的日期同為 2014-11-25、Apple us 6770583221 的 releaseDate **2014-11-25**（**與 MB 逐日相同**）、℗ 年份 2014。**三處同為 2014，日期一天不差。****維基沒有本張的專條**，年份沒有第四票。**⚠ 同名先行單曲：有**——Apple 目錄裡 **6770587340《Treasure Island - Single》2014-09-26（2 軌）**，盤名與本張的 Apple 題名**完全相同**、早兩個月；任何以盤名加年份做的配對都會在兩者之間搖擺，**必須以軌數（13 對 2）與 collectionId 區分**。",
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **6770583221**（13 軌全有 previewUrl，`trackCount` 欄與曲目列都是 13，曲序與 MB 逐位置相符，逐軌長度差在 0.52 秒內）。查不到的原因同出道盤：Apple 把掛名與盤名同時換成英譯。**這一張同時也不在 `batch-progress/c105/apple-candidates.md` 裡（那份列成「目錄裡找不到」）——本次重跑藝人頁目錄端點就抓到了。不改 `previews.json`，交主線補。**\\n**封面走 Apple 這一點確認無誤**：`curatorRisk` 記 CAA 的 release-group 端點對這一筆回 404，本卡的 Apple collectionId **6770583221** 與策展層寫的一致（rulings.md 第 7c 條也記了同一個 id），manifest 要記下它。\\n**「第二張正規盤」查證屬實、可以寫**：MB 名下只有 5 個 release-group、本張排第二；韓文維基樂團條目記這組共 4 張正規＋1 張迷你，與 MB 的「4 Album ＋ 1 EP」對得上。**中間隔著 2012 年那張 EP《유예》（Apple 題作《Grace》），行文若寫「五年後的第二張正規盤」要記得那五年裡不是空白。**\\n**⚠ 最像的假陽性是同名先行單曲**：Apple **6770587340《Treasure Island - Single》2014-09-26**（2 軌），與專輯的 Apple 題名一字不差。策展層 `curatorRisk` 已經抓到這點，這裡確認屬實。\\n**廠牌不得斷言**：MB 的 label-info 是空陣列，Apple 的 ℗ 只寫樂團自己的名字。行文可寫「自主發行」，不得指名任何廠牌。\\n**盤名兩種、而且英譯自己打架**：諺文《보물섬》對 Apple 的《Treasure Island》，但 **Apple 把同名的第一軌譯成〈Finding Gold Breaking Walls〉**——同一個詞在盤名與曲名上給了兩種英譯。行文引曲名時用諺文原題。\\n**`status` 記 thin 的理由**：曲目、長度與時序都齊，**但沒有任何一份針對這張碟本身的文字來源**（維基只有樂團條目），廠牌欄也是空的。"
+ },
+ {
+  "key": "desc4:언니네 이발관|비둘기는 하늘의 쥐",
+  "artist": "언니네 이발관",
+  "album": "비둘기는 하늘의 쥐",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 61996e68 的欄位：title「비둘기는 하늘의 쥐」、artist-credit「언니네 이발관」（**中間有空格**；藝人實體 d63ff8fa，sort-name Sister's Barbershop）、first-release-date **1996-11-08**、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 Official**：KR 的 CD（**1996-11-08**，label-info《킹레코드》catno KSC-6060，barcode 8804524001640，12 軌）與 XW 的 Digital Media（**1996-11-09**，標題「**Pigeon Is a Rat in the Sky (Deluxe Edition)**」，label-info Stoneage，barcode 8809259907960，12 軌）。**實體 KR Official 盤只有一筆；MB 自己就收了那個 Deluxe Edition 的數位條目。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/61996e68-73ca-4e31-bec9-39866dd7b5c2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（6a59747d）的逐軌曲目與長度：1〈푸훗〉3:11、2〈동경〉3:07、3〈보여줄순 없겠지〉3:23、4〈쥐는 너야〉6:24、5〈생일 기분〉4:04、6〈산책끝 추격전〉6:30、7〈팬클럽〉3:59、8〈로랜드 고릴라〉3:09、9〈상업 그런지〉3:33、10〈미움의 제국〉5:59、11〈소년〉4:32、12〈우스운 오후〉2:54。單片 12 軌、合計 3045 秒（50:45）。**十二軌裡有三軌超過五分半**（〈쥐는 너야〉6:24、〈산책끝 추격전〉6:30、〈미움의 제국〉5:59），其餘九軌都在 2:54 到 4:32 之間——長曲與短曲交錯排列，不是集中在後段。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=61996e68-73ca-4e31-bec9-39866dd7b5c2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 509439311：collectionName「**Pigeon Is a Rat in the Sky (Deluxe Edition)**」、artistName「Sister's Barbershop」、releaseDate **1996-11-09**、copyright「℗ 1996 Stoneage Records」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度與 MB 最大只差 1 毫秒**（十二軌裡有四軌完全相同、其餘八軌各差 1 毫秒）。曲名全部換成英譯（Poo-Hut／Admiration／Can't Show You This／Rat Is You／Birthday Mood／Stop Walking, Start Chasing／Fan Club／Roland Gorilla／Commercial Grunge／Empire of Hatred／Boy／Funny Afternoon）。**這一筆對應的正是 MB 那個 XW 數位 Deluxe Edition 條目（同題名、同日期、同廠牌、同 barcode 來源）。**",
+    "src": "https://itunes.apple.com/lookup?id=509439311&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 23546902，us，entity=album，回 10 筆、遠未達 200 上限）列出這團在 Apple 上的**全部**條目：**509439311《Pigeon Is a Rat in the Sky (Deluxe Edition)》1996-11-09（12 軌）**、509440525《Reminiscences (Deluxe Edition)》1998-12-01（12 軌）、1340071511《Pop Song of the Dream》2002-10-17（11 軌）、1339962878《Believe In the Moment》2004-07-12（11 軌）、1253356877《Most Ordinary Existence》2008-08-08（11 軌）、1340079284 一筆 2015 單曲、1683244410 一筆 2017 致敬單曲、1242192916《People Who Stay Alone》2017-06-02（9 軌）、1522378427《Reminiscences (Remastered Version)》2017-06-26（12 軌）、**1358221488《Pigeon Is a Rat in the Sky (Remastered)》2018-01-25（12 軌）**。⚠ **本張在 Apple 上有兩個條目：1996 年的 Deluxe Edition 與 2018 年的 Remastered，都是 12 軌。**",
+    "src": "https://itunes.apple.com/lookup?id=23546902&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "英文維基〈Pigeon Is a Rat in the Sky〉專條：這是韓國獨立搖滾樂團 Onnine Ibalgwan 的 **debut studio album**，**released on 9 November 1996**。Background 節記 1990 年代 Lee Seokwon 為了參加一場搖滾聚會，謊稱自己是一支根本不存在的樂團的主唱；後來他甚至上了 KBS 廣播還在繼續講那支不存在的樂團，事情越滾越大，最後他真的想當音樂人，在 Noise Garden 的 Yoon Byeongjoo 幫忙下組成了真的樂團。**專輯內頁沒有記載任何作曲資訊**，Lee Seokwon 在這張碟上只參與了主旋律與作曲。Critical reception 引 Music Y 的 Kim Byeongwoo 與 Weiv 的 Jang Hoyeon（後者說這張出道盤「在韓國獨立音樂的地形上宣告了一種新的感受性，同時展示了 guitar pop 的典型」）；**這張碟在 Kyunghyang Shinmun 主辦的韓國百大專輯裡排第 34 名**，樂評 Cho Wonhee 說他們取得了與西方流行音樂的同時代性。",
+    "src": "https://en.wikipedia.org/wiki/Pigeon_Is_a_Rat_in_the_Sky"
+   },
+   {
+    "f": "韓文維基〈비둘기는 하늘의 쥐〉專條全文只有一句：這是 **1996 年 11 月**發行的《언니네이발관》（無空格寫法）的**第一張專輯**。同一部維基的樂團條目〈언니네이발관〉說這團是「把現代搖滾這個類型正式引進並普及到韓國的樂團」、被稱為「大韓民國現代搖滾的先聲」。",
+    "src": "https://ko.wikipedia.org/wiki/%EB%B9%84%EB%91%98%EA%B8%B0%EB%8A%94_%ED%95%98%EB%8A%98%EC%9D%98_%EC%A5%90"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 d63ff8fa 名下**只有 6 個 release-group、而且 6 筆全部是 primary-type=Album 且 secondary-types 為空**，依 first-release-date 排序為 **《비둘기는 하늘의 쥐》1996-11-08**、《후일담》1998、《꿈의 팝송》2002-10、《순간을 믿어요》2004、《가장 보통의 존재》2008-08-08、《홀로 있는 사람들》2017-06-01——**本張排最前**。**名下沒有任何 EP、單曲、合輯、Live 或日版**，是本組結構最乾淨的一位藝人。英文維基〈Onnine Ibalgwan〉的 Discography 節列的也正好是這 6 張、年份一一對應。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d63ff8fa-6a05-475e-b758-e23783195efd&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "樂團的起點是一個謊：主唱在聚會上謊稱自己是一支不存在的樂團的主唱，講到收不了手，只好把樂團真的組起來",
+   "內頁沒有印任何作曲資訊——1996 年的出道盤，連誰寫了哪首歌都沒有交代"
+  ],
+  "sound": "MB 記兩筆 release、都是 Official：KR 的 CD（1996-11-08，《킹레코드》，catno KSC-6060，barcode 8804524001640）與隔天的 XW 數位 Deluxe Edition（Stoneage），**兩筆都是 12 軌、同曲同序**。全碟 3045 秒（50:45）。**長度分布是本組最不平的一張**：三軌超過五分半（〈산책끝 추격전〉6:30、〈쥐는 너야〉6:24、〈미움의 제국〉5:59），九軌落在 2:54 到 4:32 之間，而且長曲不是集中在後段，是與短曲交錯排開（第 4、6、10 軌）。曲序自〈푸훗〉3:11 起、收在全碟最短的〈우스운 오후〉2:54。Apple 版的逐軌長度與 MB 相同到 1 毫秒以內，曲名全部換成英譯（Poo-Hut／Admiration／Can't Show You This／Rat Is You／Birthday Mood／Stop Walking, Start Chasing／Fan Club／Roland Gorilla／Commercial Grunge／Empire of Hatred／Boy／Funny Afternoon）。英文維基記專輯內頁沒有印任何作曲資訊，主唱在這張碟上只參與主旋律與作曲。",
+  "keyTracks": [
+   "푸훗",
+   "산책끝 추격전",
+   "우스운 오후"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。MB release-group first-release-date **1996-11-08**、其下 KR CD 同為 1996-11-08、XW 數位 Deluxe Edition 記 1996-11-09，Apple us 509439311 的 releaseDate **1996-11-09**、℗ 年份 1996，英文維基專條明寫 **released on 9 November 1996**，韓文維基寫 1996 年 11 月。**五處同為 1996**，日期只在 11/8 與 11/9 之間差一天（MB 的 KR 實體盤記 8 日，數位與兩部維基記 9 日）。**行文只寫年份或寫「1996 年 11 月」即可。****同名先行單曲：無**——MB 名下只有 6 個 release-group、全部是 Album，沒有任何單曲或 EP。",
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **509439311**（12 軌全有 previewUrl，`trackCount` 欄與曲目列都是 12，曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度與 MB 最大只差 1 毫秒**）。查不到的原因是 **Apple 把掛名換成轉寫 Sister's Barbershop、盤名換成英譯《Pigeon Is a Rat in the Sky》**，兩層都對不上卡單的諺文。**不改 `previews.json`，交主線補。**\\n**⚠ 兩個 Apple 條目都是 12 軌，軌數不能當識別鍵（裁定 174）**：`us` **509439311《Pigeon Is a Rat in the Sky (Deluxe Edition)》1996-11-09、℗ 1996 Stoneage Records** 與 `us` **1358221488《Pigeon Is a Rat in the Sky (Remastered)》2018-01-25、℗ 2018 Stoneage Records**。**本卡取 509439311**：它的逐軌長度與 MB 的 1996 年 KR 原盤相同到 1 毫秒，而且 **MB 自己就把這個 Deluxe Edition 收在同一個 release-group 底下**（同題名、同日期 1996-11-09、同廠牌 Stoneage），不是別碟。策展層 `curatorRisk` 的判斷正確。\\n**「出道正規盤」查證屬實、可以寫**：英文維基專條寫 debut studio album、韓文維基專條寫第一張專輯、MB 名下 6 筆全是 Album 而本張排最前、英文維基樂團條目的 Discography 也列同樣 6 張——**四處一致，本組序數最穩的三張之一。**\\n**這位藝人在 MB 上沒有任何 EP、單曲、合輯、Live 或日版**，6 個 release-group 全部是正規盤。**同批另一張《꿈의 팝송》的「第三張」因此也可以放心寫。**\\n**掛名有無空格兩說**：MB 實體與 artist-credit 寫「언니네 이발관」（有空格），韓文維基條目名寫《언니네이발관》（無空格），Apple 用轉寫 Sister's Barbershop。卡單取有空格的寫法（同 MB），三形都要進 queryAlias。\\n可寫的評價與名次（英文維基有具名主辦者與具名樂評）：本作在 Kyunghyang Shinmun 主辦的韓國百大專輯裡排第 34 名；評論來源為 Music Y 的 Kim Byeongwoo、Weiv 的 Jang Hoyeon、樂評 Cho Wonhee。**注意：這是具名主辦者的名次，不是不具名清單，依既有規則可寫。**"
+ },
+ {
+  "key": "desc4:언니네 이발관|꿈의 팝송",
+  "artist": "언니네 이발관",
+  "album": "꿈의 팝송",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d9f68416 的欄位：title「꿈의 팝송」、artist-credit「언니네 이발관」（藝人實體 d63ff8fa）、first-release-date **2002-10**（**只到月、沒有日**）、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 Official**：KR 的 CD（2002-10，**label-info 的廠牌名是 null、只填了 catno DK0346**，barcode 8808678303490，11 軌）與一筆沒有國別也沒有日期的 Digital Media（**label-info 記 Blue Boy**，barcode 8806384500684，11 軌）。**實體 KR Official 盤只有一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/d9f68416-8ef1-4586-82f6-8fd26ad43ebf?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 兩筆 release 的曲目都是 11 軌、同序：1〈헤븐 (단 한번의 사랑)〉、2〈나를 잊었나요?〉、3〈괜찮아〉、4〈남자의 마음〉、5〈울면서 달리기〉、6〈2002년의 시간들〉、7〈지루한 일요일〉、8〈불우스타 (不遇Star)〉、9〈안녕〉、10〈표정〉、11〈언젠가 이발관〉。**⚠ MB 這兩筆 release 的每一軌都沒有填長度（length 全部是 null）**，全碟總長在 MB 上查不到。第 8 軌的曲名裡直接夾了漢字（不遇Star）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d9f68416-8ef1-4586-82f6-8fd26ad43ebf&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1340071511：collectionName「Pop Song of the Dream」、artistName「Sister's Barbershop」、releaseDate **2002-10-17**、copyright「℗ 2002 blue boy」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，曲序與 MB 逐位置相符。**MB 沒填長度，所以逐軌長度只能單方面由 Apple 提供**：3:14／4:17／4:18／2:50／3:27／3:59／2:28／3:20／1:54／3:37／3:45，合計 2233 秒（**37:13**）。曲名全部換成英譯（Heaven (One and Only Love)／Did You Forget About Me?／It's Okay／A Man's Heart／Running While Crying／Times in 2002／**Boring Sunday (Inst.)**／Underprivileged Star／**Good-Bye (Inst.)**／The Look／Barbershop Someday）——**第 7 與第 9 軌被標成 Inst.（純演奏）**。",
+    "src": "https://itunes.apple.com/lookup?id=1340071511&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "韓文維基〈꿈의 팝송〉專條：這是 **2002 年 10 月**發行的《언니네이발관》的**第三張正規專輯**。發行前曾在光化門的教保文庫等處辦過 showcase；第一支單曲〈헤븐 (단 한번의 사랑)〉拍了 MV；**2002 年 12 月 12 日在延世大學百周年紀念館舉辦了創團以來的第一場單獨演唱會。**",
+    "src": "https://ko.wikipedia.org/wiki/%EA%BF%88%EC%9D%98_%ED%8C%9D%EC%86%A1"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 d63ff8fa 名下只有 6 個 release-group、**6 筆全部是 primary-type=Album 且 secondary-types 為空**，依 first-release-date 排序為《비둘기는 하늘의 쥐》1996-11-08、《후일담》1998、**《꿈의 팝송》2002-10**、《순간을 믿어요》2004、《가장 보통의 존재》2008-08-08、《홀로 있는 사람들》2017-06-01——**本張排第三**。名下沒有任何 EP、單曲、合輯、Live 或日版。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d63ff8fa-6a05-475e-b758-e23783195efd&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Onnine Ibalgwan〉：韓國現代搖滾樂團，又稱 Sister's Barbershop，1996 年以《Pigeon is a Rat in the Sky》出道並獲樂評與樂迷好評，2017 年解散。Discography 節列出六張：Pigeon is a Rat in the Sky (비둘기는 하늘의 쥐), 1996／Reminiscences (후일담), 1998／**Pop Song of the Dream (꿈의 팝송), 2002**／Believe in the Moment (순간을 믿어요), 2004／Most Ordinary Existence (가장 보통의 존재), 2008／People Who Stay Alone (홀로 있는 사람들), 2017——**本張排第三，與 MB 的排序完全一致。**",
+    "src": "https://en.wikipedia.org/wiki/Onnine_Ibalgwan"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 23546902，us，entity=album，回 10 筆、未達 200 上限）在 2002 年只有 **1340071511《Pop Song of the Dream》2002-10-17（11 軌）** 一筆；前後鄰近的是 509440525《Reminiscences (Deluxe Edition)》1998-12-01（12 軌）與 1339962878《Believe In the Moment》2004-07-12（11 軌）。**Apple 目錄沒有本張的第二個條目、也沒有 Remastered 版**，與同批 1996 年那張有兩個條目的情況不同。",
+    "src": "https://itunes.apple.com/lookup?id=23546902&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌三十七分十三秒，其中兩軌是純演奏——這張碟真正唱的只有九首",
+   "MB 上這張碟的十一軌一格長度都沒有填，連廠牌名都是空的，只留下一個目錄號 DK0346"
+  ],
+  "sound": "MB 記兩筆 release：KR 的 Official CD（2002-10，**廠牌名欄是空的、只有 catno DK0346**，barcode 8808678303490）與一筆沒有國別與日期的數位（廠牌記 Blue Boy），**兩筆都是 11 軌、同序**。**MB 這兩筆的每一軌長度都沒填**，全碟長度只能靠 Apple：11 軌合計 2233 秒（**37:13**），是本組最短的一張正規盤。**其中兩軌被 Apple 標成純演奏**——第 7 軌〈지루한 일요일〉2:28 與第 9 軌〈안녕〉1:54，正好也是全碟最短的兩軌。其餘九軌落在 2:50 到 4:18 之間。曲序自〈헤븐 (단 한번의 사랑)〉3:14 起，第 2、3 軌〈나를 잊었나요?〉4:17 與〈괜찮아〉4:18 是全碟最長的兩軌，收在〈언젠가 이발관〉3:45——**曲名把團名自己寫了進去**。第 8 軌〈불우스타 (不遇Star)〉的曲名裡夾著漢字。韓文維基記發行前在光化門的教保文庫等處辦過 showcase，第一支單曲是〈헤븐 (단 한번의 사랑)〉。",
+  "keyTracks": [
+   "헤븐 (단 한번의 사랑)",
+   "언젠가 이발관",
+   "불우스타 (不遇Star)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2002。MB release-group first-release-date **2002-10**（**只到月、沒有日**）、其下 KR CD 同為 2002-10、另一筆數位沒有日期，Apple us 1340071511 的 releaseDate **2002-10-17**、℗ 年份 2002，韓文維基寫 2002 年 10 月，英文維基的 Discography 記 2002。**四處同為 2002，月份四處都是 10 月**；**唯一給出日期的是 Apple 的 10 月 17 日、沒有第二處背書**。行文只寫年份或「2002 年 10 月」，**不要寫 10 月 17 日**。**同名先行單曲：無**——MB 名下 6 個 release-group 全是 Album。",
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **1340071511**（11 軌全有 previewUrl，`trackCount` 欄與曲目列都是 11，曲序與 MB 逐位置相符）。查不到的原因同 1996 年那張：Apple 把掛名換成 Sister's Barbershop、盤名換成《Pop Song of the Dream》。**不改 `previews.json`，交主線補。**\\n**⚠ 這一張的逐軌長度只有 Apple 一方有數字**：MB 兩筆 release 的 length 欄全部是 null，**所以裁定 157 要求的「逐軌長度比對」在這張做不到**，只能比曲名與曲序（11 軌逐位置對得上）。判定依據還有三條：Apple 這一筆在 us 藝人頁目錄裡是 2002 年唯一的條目、℗ 年份與 MB 相符、**Apple 目錄裡沒有本張的第二個條目或 Remastered 版**（與同批 1996 年那張的情況不同）。**採信這個配對，但行文引用逐軌長度時要知道那是 Apple 單方面的數字。**\\n**封面走 Apple 這一點確認無誤**：`curatorRisk` 記 CAA 的 release-group 端點對這一筆回 404，本卡的 Apple collectionId **1340071511** 與策展層寫的一致（rulings.md 第 7c 條同一個 id），manifest 要記下它。\\n**「第三張正規盤」查證屬實、可以寫**：韓文維基專條寫第三張正規專輯、英文維基樂團條目的 Discography 本張也排第三、MB 名下 6 筆全是 Album 而本張排第三——**三處一致**，而且這位藝人在 MB 上**沒有任何 EP、單曲、合輯、Live 或日版**，排序沒有多算的空間。\\n**⚠ 擋下策展層一處（廠牌）**：`curatorRisk` 寫「廠牌名 MB 沒有，行文只能寫 catno DK0346，不得斷言發行方」——**MB 那筆 KR CD 確實沒有廠牌名，但同一個 release-group 底下的數位 release 的 label-info 記的是 Blue Boy，Apple 的 ℗ 也寫 blue boy**。兩處獨立對得上，**發行方寫 Blue Boy 是有據的**，不必當成不可寫。實體盤那一格仍然只有 catno DK0346。\\n**兩軌是純演奏**：Apple 把第 7 軌〈지루한 일요일〉與第 9 軌〈안녕〉標成 (Inst.)，MB 沒標。行文若寫「十一首歌」要留意其中兩首沒有唱。\\n**盤名兩種**：諺文《꿈의 팝송》對 Apple／英文維基的英譯《Pop Song of the Dream》。行文取諺文原題。"
  }
 ]
