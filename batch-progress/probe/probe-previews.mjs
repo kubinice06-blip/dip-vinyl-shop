@@ -119,7 +119,9 @@ const LATAM = ['pe', 'cl', 'us', 'co', 'mx', 'ar', 'es', 'gb', 'fr', 'br'];
 // 法語線：fr 第一，be／ch／ca 是法語圈的鄰接市場（Céline Dion 與魁北克那一支在 ca）。
 const FRA = ['fr', 'be', 'ch', 'ca', 'us', 'gb', 'de', 'nl'];
 // 德義線：一批同時涵蓋德語與義大利語，兩邊都要排前面。
-const DEIT = ['de', 'it', 'at', 'ch', 'fr', 'us', 'gb', 'nl'];
+// 2026-09-06：c-110 策展層實測回報——Falco 兩張命中在 **at** 不是 de、Grauzone 原盤登記在 **GB**、
+// 義大利卡有一半靠 **gb** 命中（`it` 店面的 403 比例最高）。gb 因此從第七位提到第四位。
+const DEIT = ['de', 'it', 'at', 'gb', 'ch', 'us', 'fr', 'nl'];
 // 新譜（c-111／c-112）：發行權全球同步，用最寬的一組；tw／kr 補在後面接華語與韓語那半。
 const NEW = ['us', 'gb', 'jp', 'de', 'fr', 'tw', 'kr', 'ca', 'au'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,

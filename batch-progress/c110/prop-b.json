@@ -1,0 +1,430 @@
+[
+ {
+  "artist": "Lucio Dalla",
+  "album": "Come è profondo il mare",
+  "year": 1977,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "RCA Italiana（catno PL 31321）",
+  "why": "Lucio Dalla MB 名下 88 個 release-group（release-group?artist=…&limit=100&offset= 分頁列完），primary-type=Album 且 secondary-types 空的 27 張，這張 1977 年 RCA Italiana 發行的是他從 1966《1999》起十一年目錄裡的第七張，也是他 1979 年自我同名盤之前的那一張。實掃 seed_cards.json 全 14,424 列：**派工信說「Lucio Dalla 池中 1 張」是錯的，實掃是 0 張**（`Dalla` 這個字串在全池只命中 `Jimmy Carter and Dallas County Green` 一筆，是誤配）。池中的義大利卡集中在三塊：cantautore（Fabrizio De André 5、Lucio Battisti 4、Paolo Conte 1、Domenico Modugno 1）、流行（Mina 2、Adriano Celentano 1、Zucchero 1）、以及 c-61 那批 1970 年代 prog（Alphataurus、Museo Rosenbach 等 17 張），**1970 年代的搖滾流行主線是空的**。這張與 1979 年那張一起補。",
+  "risk": "盤名含 è，NFKD 折音後與 Apple 的三種寫法都能對上，但 Apple gb 1308834874 把標題寫成「Come E' Profondo Il Mare」（用 ASCII 撇號代替重音），**三種寫法都要進 queryAlias**。Apple 正確的那筆是 gb 254263531 標 1977、8 軌，與 MB 1977 IT 原盤（RCA Italiana PL 31321、8 軌）一致；1310473875「Come è profondo il mare (Legacy Edition)」15 軌是加曲版，依裁定第 141 條配到要註明原盤 8 軌。轄下 6 筆 release（5 Official、1 Promotion），IT 5、DE 1。與 c-61／c-55／c-56 三批的卡單逐筆比過，**Lucio Dalla 完全沒有出現在那三批裡**。CAA 未實測。",
+  "mbNote": "釘 release-group a9651e36-d3c4-3789-9444-543501d21e55。回問 release-group 端點（inc=artist-credits+releases）確認：title「Come è profondo il mare」、artist-credit「Lucio Dalla」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 6 筆 release（5 Official、1 Promotion；IT 5、DE 1），1977 IT 原盤 RCA Italiana PL 31321、8 軌 12\" Vinyl。藝人 MBID 60889737-6f73-415e-ba20-5040498512b4（area Italy、1943-03-04 生、disambiguation「Italian singer-songwriter」），名下 88 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Come E' Profondo Il Mare；Come e profondo il mare；Come È Profondo Il Mare",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Lucio Dalla",
+  "album": "Lucio Dalla",
+  "year": 1979,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "RCA Italiana（catno PL 31424）",
+  "why": "Lucio Dalla 1979 年的自我同名盤（RCA Italiana PL 31424、9 軌），在 MB 名下 27 張純 Album 型 release-group 裡排在 1977《Come è profondo il mare》與 1980《Dalla》之間，MB 該 release-group 轄下 9 筆 release 全數 Official（IT 7、XE 2），到 2019 年 Legacy 還再發過。實掃 seed_cards.json 全 14,424 列，Lucio Dalla 池中 0 張；這張與《Come è profondo il mare》兩張一起收，池中就有他 1970 年代末兩張連著的碟。",
+  "risk": "**自我同名卡，而且 MB 名下有兩個標題完全相同的 release-group**：本卡的 76c1c3d9（1979，9 軌，RCA Italiana PL 31424）與 9963863b（1981，**只有 4 軌**，RCA Italiana PG 33420）——後者是同名的短盤，逐筆回問過兩個都是 primary-type Album、secondary-types 空，**唯一分得出來的是軌數與目錄號**。掛名與盤名相同的自我配對風險同組 a 的 Trio／Ideal。Apple us 254234695「Lucio Dalla」標 1979、9 軌是正確的那筆；it 253944002「Dalla」標 1980、8 軌是**下一張專輯**、盤名是本卡掛名的子字串，子字串比對必然誤配。gb 店面回 403（裁定第 98 條：不是查無）。CAA 未實測。",
+  "mbNote": "釘 release-group 76c1c3d9-ec8e-3d13-a1f3-bc1999ee60ee。回問確認：title「Lucio Dalla」、artist-credit「Lucio Dalla」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 9 筆 release 全 Official（IT 7、XE 2），1979 IT 原盤 RCA Italiana PL 31424、9 軌 12\" Vinyl。藝人 MBID 60889737-6f73-415e-ba20-5040498512b4，名下 88 個 release-group。刻意不釘：9963863b-9d2f-3bcc-a5d3-288ffbbd1016《Lucio Dalla》（1981，同名但只有 4 軌、RCA Italiana PG 33420，轄下 2 筆 release）、199d88ca-57f2-38bd-b87a-cf274a5c3047《Dalla》（1980，盤名是掛名的子字串）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Lucio Dalla 1979；Lucio Dalla (Legacy Edition)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Måneskin",
+  "album": "Teatro d'ira, Vol. I",
+  "year": 2021,
+  "genres": [
+   "rock"
+  ],
+  "label": "RCA（catno 19439872892）",
+  "why": "Måneskin MB 名下 32 個 release-group，primary-type=Album 且 secondary-types 空的 4 張（2018《Il ballo della vita》、2021 本張、2023《RUSH!》、2023《RUSH! (ARE U COMING?)》），這張 2021-03-19 由 RCA 發行的是第二張。實掃 seed_cards.json 全 14,424 列：Måneskin 與折音寫法 Maneskin 兩種都掃過，池中 0 張；池中 2010 年之後的義大利卡也是 0 張——最晚的義大利卡是 Fabrizio De André《Sogno nº 1》(2011，遺作整編) 與 Anime salve (1996)。這張補進去，池中的義大利線才接得到 2020 年代。",
+  "risk": "**掛名保留 å（裁定第 26／70 條）**，但 Apple 與多數英語媒體寫 Maneskin，兩種都要進 queryAlias。**盤名的撇號取 ASCII `'`**：MB release-group 標題用的是 U+2019（「Teatro d’ira, Vol. I」），池中 800 張帶撇號的卡有 774 張用 ASCII、只有 26 張用彎撇號，本卡從多數；MB 的 JP 版 release 本身也是 ASCII 撇號。**Apple 的分隔符又不一樣**：`search` 端點五個店面全部 403／查無，改打藝人頁目錄端點（artistId 1312874741，裁定第 173 條）才找到 1556035498「Teatro d'Ira - Vol. I」標 2021、8 軌——**逗號變成破折號**，三種寫法都要進 queryAlias。轄下 4 筆 release 全 Official（XE 1、XW 2、JP 1），JP 版 9 軌（多一軌）、其餘 8 軌。CAA 未實測。",
+  "mbNote": "釘 release-group f2a534fb-2658-46a5-b99c-c34f8a79d1d0。回問確認：release-group title「Teatro d’ira, Vol. I」（MB 用 U+2019）、artist-credit「Måneskin」、first-release-date 2021-03-19、primary-type Album、secondary-types 空、轄下 4 筆 release 全 Official（XE 1、XW 2、JP 1），2021-03-19 XE 原盤 RCA 19439872892、8 軌；2021-10-13 JP 版 RCA SICP-6402、9 軌，標題用 ASCII 撇號。卡片盤名取 ASCII 撇號寫法。藝人 MBID 3862342a-43c4-4cdb-8250-bfdbfb5e1419（area Italy、2016 起、type Group），名下 32 個 release-group。刻意不釘：61eed5a5-85e6-48bc-abf3-447e8510d39e《Il ballo della vita》（2018 首張）、9a0b543a-1f13-4a1c-86ff-cc90bafde4cf《RUSH! (ARE U COMING?)》（2023，是 0bee34eb《RUSH!》的加曲版，兩者盤名互為子字串）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Teatro d'Ira - Vol. I；Teatro d’ira, Vol. I；Maneskin Teatro d'ira；Teatro d'ira Vol I",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Vasco Rossi",
+  "album": "Vado al massimo",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Carosello（catno CLN 25095）",
+  "why": "Vasco Rossi MB 名下 108 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 19 張，這張 1982-04-13 由 Carosello 發行的是他 1978 年出道後的第五張，也是 1983《Bollicine》之前的那一張。實掃 seed_cards.json 全 14,424 列：Vasco Rossi 池中 0 張——**這是義大利銷量最大的搖滾歌手，池中一張都沒有**。這張與《Bollicine》兩張一起補，是把 1980 年代義大利主流搖滾這一塊從零開起來。與 c-61（義大利與法國地下 prog，51 張）、c-55、c-56 三批的卡單逐筆比過，沒有任何重疊。",
+  "risk": "盤名是常見的義大利短句，子字串比對容易誤配。MB 轄下 5 筆 release（4 Official、1 Promotion）全部登記在 IT。Apple us 1327846570「Vado al massimo」標 1982、9 軌與 MB 原盤（Carosello CLN 25095、9 軌）一致；1656790510「Vado al massimo: 40° RPLAY Special Edition (Remastered 2022)」同樣 9 軌但是 2022 重製，盤名是本卡的超字串。ch／gb 兩個店面回 403（裁定第 98 條：不是查無），it／de／us 命中。CAA 未實測。",
+  "mbNote": "釘 release-group d54ae310-ff52-38d7-a66a-0f8cdc95733d。回問確認：title「Vado al massimo」、artist-credit「Vasco Rossi」、first-release-date 1982-04-13、primary-type Album、secondary-types 空、轄下 5 筆 release 全 IT（4 Official、1 Promotion），1982-04-13 原盤 Carosello CLN 25095、9 軌 12\" Vinyl。藝人 MBID 3bf74908-e8b3-4158-8fae-4fd795bb4474（area Italy、1952-02-07 生），名下 108 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vado al massimo 40° RPLAY Special Edition；Vasco Rossi Vado al massimo",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Vasco Rossi",
+  "album": "Bollicine",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Carosello（catno CLN 25101）",
+  "why": "Vasco Rossi 1983-04-14 由 Carosello 發行的第六張正規盤，MB 該 release-group 轄下 6 筆 release 全數 IT／Official，1983 原盤 Carosello CLN 25101、8 軌。在他 19 張純 Album 型 release-group 裡緊接在 1982《Vado al massimo》之後、1985《Cosa succede in città》之前。實掃 seed_cards.json 全 14,424 列，Vasco Rossi 池中 0 張；與《Vado al massimo》兩張一起補，池中就有他 Carosello 時期連著的兩張。",
+  "risk": "盤名單詞、義大利文常用詞（「氣泡」），Apple 上有同名單曲（gb 1749556907「Bollicine (Remix) - Single」2024、1 軌）會被子字串比對配到。正確的兩筆是 gb 1338856603「Bollicine (Original Master)」標 1983、8 軌與 1713323768「Bollicine (40° RPLAY Special Edition) [Remastered 2023]」8 軌——**兩筆軌數都與原盤相同，只有盤名後綴分得出來**（裁定第 174 條：一個藝人反覆重製同一份曲目時，軌數不是識別鍵）。it／de／us 三個店面回 403（不是查無），ch／gb 命中。CAA 未實測。",
+  "mbNote": "釘 release-group f295d7c0-4c40-368f-931c-eff3de708e9d。回問確認：title「Bollicine」、artist-credit「Vasco Rossi」、first-release-date 1983-04-14、primary-type Album、secondary-types 空、轄下 6 筆 release 全 IT／Official，1983-04-14 原盤 Carosello CLN 25101、8 軌 12\" Vinyl。藝人 MBID 3bf74908-e8b3-4158-8fae-4fd795bb4474，名下 108 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bollicine (Original Master)；Bollicine 40° RPLAY Special Edition；Vasco Rossi Bollicine",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Ligabue",
+  "album": "Buon compleanno Elvis",
+  "year": 1995,
+  "genres": [
+   "rock"
+  ],
+  "label": "WEA（catno 0630 11823 2）",
+  "why": "Ligabue MB 名下 44 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 16 張，這張 1995-09-21 由 WEA 發行的是他 1990 年出道後的第五張。實掃 seed_cards.json 全 14,424 列：Ligabue 池中 0 張（同姓的 Ilva Ligabue 與 Marco Ligabue 兩個 MB 實體池中也沒有）。這張與同批的 Vasco Rossi 兩張、Litfiba 兩張並排，池中的 1980–90 年代義大利主流搖滾才有一組可以互相對照的卡。",
+  "risk": "**盤名的超字串在 MB 上有兩個，而且都是 2025 年才建的**：00052408-7c85-4f27-a0d8-51615cb20b39《Buon compleanno Elvis: Naked + Tales》（2025，primary-type Album、secondary-types 空——**第 167 條「看 primary-type 就好」在這裡不夠用，要靠盤名的冒號後綴分辨**）與 3aacffbd-9018-4108-9b6e-e74550ed082e《Buon compleanno Elvis 1995–2025》（2025，Album ＋ Compilation，**盤名含 U+2013 連接號**）。Apple 三筆同樣的形狀：ch 307159126「Buon compleanno Elvis (Remastered Version)」1995、14 軌是正確的；1808763855「Buon compleanno Elvis 1995-2025」46 軌與 1801841790「Buon compleanno Elvis (Naked + Tales)」28 軌都是 2025 年的紀念版。us／gb 店面回 403（不是查無）。轄下只有 3 筆 release（全 Official，IT 1、2 筆未填國別）。CAA 未實測。",
+  "mbNote": "釘 release-group 899f4ac7-9517-3a01-8cd9-72afd542ebc6。回問確認：title「Buon compleanno Elvis」、artist-credit「Ligabue」、first-release-date 1995-09-21、primary-type Album、secondary-types 空、轄下 3 筆 release 全 Official，1995-09-21 IT 原盤 wea 0630 11823 2、14 軌 CD。藝人 MBID d5b0dc28-2f22-4f7d-adfb-ebbc30fa6d48（area Italy、1960-03-13 生、disambiguation「Italian singer-songwriter Luciano Ligabue」），名下 44 個 release-group。刻意不釘：00052408-7c85-4f27-a0d8-51615cb20b39《Buon compleanno Elvis: Naked + Tales》（2025 重錄版，primary-type Album）、3aacffbd-9018-4108-9b6e-e74550ed082e《Buon compleanno Elvis 1995–2025》（2025，secondary-types Compilation）——**兩筆盤名都以本卡盤名開頭，是最危險的假陽性**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Buon compleanno Elvis (Remastered Version)；Ligabue Buon compleanno Elvis",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Litfiba",
+  "album": "17 re",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "IRA（catno 508 006 1）",
+  "why": "Litfiba 是佛羅倫斯的樂團，MB 名下 47 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 13 張，這張 1986 年由 IRA 發行的是 1985《Desaparecido》之後的第二張，也是他們「四元素三部曲」的第一張。MB 該 release-group 轄下 13 筆 release 全數 Official（IT 11、FR 2），1986 IT 原盤 IRA 508 006 1 是 8+8 軌的雙片 12\" Vinyl。實掃 seed_cards.json 全 14,424 列：Litfiba 池中 0 張；同為 IRA 廠牌的 Diaframma（同批收《Siberia》）也是 0 張。",
+  "risk": "**短掛名，已依裁定第 179 條回問 MB 藝人端點的 area 與 disambiguation**：e68a900e-4fae-493a-84a8-f76ab62d23e4，area Italy、1980-10 起、type Group；MB 另有 813f7565「SpiritoLitfiba」（2011，掛名含本團名）。**盤名「17 re」只有四個字元**，數字加兩個字母，子字串比對幾乎必然誤配，去重要用完整字串加掛名。Apple gb 41257063「17 Re」標 1986、16 軌（＝MB 雙片 8+8 攤平，不是加曲版）；同店面另有 6768297738「17 Re (2026 Remaster)」16 軌與 1887933846「17 RE - Single」（2026，1 軌）兩個假陽性。it／de／ch／us 四個店面回 403（不是查無），只有 gb 命中。CAA 未實測。",
+  "mbNote": "釘 release-group 24dc4275-a92b-3115-8f97-7c57576e2b21。回問確認：title「17 re」、artist-credit「Litfiba」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 13 筆 release 全 Official（IT 11、FR 2），1986 IT 原盤 IRA 508 006 1、8+8 軌雙片 12\" Vinyl。藝人 MBID e68a900e-4fae-493a-84a8-f76ab62d23e4（area Italy、1980-10 起），名下 47 個 release-group。刻意不釘：5291b938-bf2e-3b5b-b8ec-16bc2892f181《Desaparecido》（1985 首張）、94e90dbd-6ef0-3ec4-b4a4-fde2365f68a3《Litfiba 3》（1988，盤名含團名，子字串比對會反過來配到它）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "17 Re；Litfiba 17 re；Diciassette re",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Litfiba",
+  "album": "El diablo",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "CGD（catno 9031-72780-4）",
+  "why": "Litfiba 1990 年轉進大廠 CGD 之後的第一張正規盤（MB 該 release-group 轄下 5 筆 release 全 Official，IT 4、JP 1，8 軌），在 13 張純 Album 型 release-group 裡排在 1988《Litfiba 3》與 1993《Terremoto》之間。與同批的《17 re》分別代表這團 IRA 獨立時期與 CGD 大廠時期。實掃 seed_cards.json 全 14,424 列，Litfiba 池中 0 張。",
+  "risk": "**MB 名下有一個同名單曲**：fb356c66-4121-4419-ae0e-ca462836877d《El Diablo》（1990-10-30，Single）——**單曲的日期比專輯的 1990 年整年份更精確，凡是「取 first-release-date 最早那筆」的邏輯都可能選錯**（裁定第 179 條第 1 點的同形）。盤名是西班牙文兩個常用詞，Apple 上有 gb 621297662「El diablo (Instrumental version) [Originally by Litfiba]」（Roadhouse Professional Karaoke）這種模唱版假陽性。正確的是 gb 40060715「El Diablo」標 1990、8 軌，與 MB 原盤軌數一致。it 店面回 403、us 回 429（裁定第 98 條：都不是查無）。CAA 未實測。",
+  "mbNote": "釘 release-group 4b0c49ee-06af-3db8-8519-5e3b8db48dc5。回問確認：title「El diablo」、artist-credit「Litfiba」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 5 筆 release 全 Official（IT 4、JP 1），1990 IT 原盤 CGD 9031-72780-4、8 軌。藝人 MBID e68a900e-4fae-493a-84a8-f76ab62d23e4，名下 47 個 release-group。刻意不釘：fb356c66-4121-4419-ae0e-ca462836877d《El Diablo》（1990-10-30 同名單曲，日期比專輯精確）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "El Diablo；Litfiba El diablo",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "CCCP - Fedeli alla linea",
+  "album": "1964-1985 Affinità-divergenze fra il compagno Togliatti e noi: Del conseguimento della maggiore età",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Attack Punk Records（catno APR 10）",
+  "why": "CCCP – Fedeli alla linea 是 Reggio Emilia 的樂團，MB 名下只有 19 個 release-group，primary-type=Album 且 secondary-types 空的 4 張，這張 1986 年由 Attack Punk Records 發行（目錄號 APR 10、10 軌）的是其中最早的一張，也是 1987《Socialismo e barbarie》之前的那一張。MB 該 release-group 轄下 6 筆 release 全數 IT／Official，1987 年起改由 Virgin 再發。實掃 seed_cards.json 全 14,424 列：CCCP 池中 0 張；與 c-61（義大利與法國地下 prog）、c-55、c-56 三批卡單逐筆比過，都沒有這團。",
+  "risk": "**掛名的連接號取 ASCII `-`**：MB 的 artist-credit 是「CCCP – Fedeli alla linea」，用的是 U+2013 連接號；`chk-prop` 的非 ASCII 連字號檢查只看 `album` 欄、不看 `artist` 欄，但同一個理由（標題比對整組失準）在掛名上一樣成立，本卡取 ASCII 寫法，MB 原寫法進 queryAlias。Apple 又是第三種：gb 713209816 的 artistName 作「CCCP Fedeli Alla Linea」（**完全沒有連接號**），盤名作「Affinità - Divergenze fra il compagno togliatti e noi del conseguimento della maggiore età (Remastered)」——**沒有年份前綴、冒號換成空白、大小寫也不同**，三種盤名寫法都要進 queryAlias。MB 另有 acd3d634「CCCP」是德國 synthpop 樂團（area Germany），短掛名比對必撞。it 店面回 403（不是查無）。CAA 未實測。",
+  "mbNote": "釘 release-group 022f2fb8-aa63-3b69-a01b-006f1beb5fe5。回問確認：title「1964-1985 Affinità-divergenze fra il compagno Togliatti e noi: Del conseguimento della maggiore età」、artist-credit「CCCP – Fedeli alla linea」（U+2013）、first-release-date 1986、primary-type Album、secondary-types 空、轄下 6 筆 release 全 IT／Official，1986 原盤 Attack Punk Records APR 10、10 軌 12\" Vinyl；1987／1988 Virgin 再發。藝人 MBID fa08e509-aedb-48a0-bf85-d30034899156（area Italy、1982 起、type Group），名下 19 個 release-group。刻意不釘：acd3d634-eece-4171-a3e9-69bc4fe2217b 是德國 synthpop 樂團「CCCP」（area Germany、1984 起）、4da1e1d1-25d5-4cba-bfcc-2de55a83f565「I Soviet + l'Elettricità」是本團成員的後續實體。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "CCCP – Fedeli alla linea；CCCP Fedeli Alla Linea；Affinità-divergenze fra il compagno Togliatti e noi；Affinità - Divergenze fra il compagno togliatti e noi del conseguimento della maggiore età",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "CCCP - Fedeli alla linea",
+  "album": "Epica Etica Etnica Pathos",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Virgin（catno CCCPK 7207）",
+  "why": "CCCP – Fedeli alla linea 的最後一張正規盤（1990，Virgin CCCPK 7207），在 MB 名下 4 張純 Album 型 release-group 裡排在 1989《Canzoni, preghiere, danze del II millennio: Sezione Europa》之後。與同批的 1986 年首張分別是這團的起點與終點——**MB 名下 19 個 release-group 裡就這 4 張是正規盤，收兩張已經是這團目錄的一半**。實掃 seed_cards.json 全 14,424 列，CCCP 池中 0 張。",
+  "risk": "掛名的連接號問題同前一張（MB 用 U+2013、Apple 完全不用、本卡取 ASCII）。盤名是四個並列的名詞、沒有連接詞，大小寫在 Apple 上是「Epica etica etnica pathos」（只有首字大寫），兩種都要進 queryAlias。**Apple 兩筆的年份互相矛盾**：gb 712936094「Epica etica etnica pathos (Remastered)」標 **1992**、15 軌，gb 1541137049「Epica Etica Etnica Pathos (30° Anniversario) [Remastered 2020]」標 **1990**、同樣 15 軌——MB 原盤是 1990 年的 6+9 軌雙卡帶（攤平 15 軌），依裁定第 91 條年份以 MB 為準、Apple 日期只當訊號。it／de／gb 三個店面回 429、ch 回 403（都不是查無）。CAA 未實測。",
+  "mbNote": "釘 release-group 35ccc645-f870-34bc-a4e9-4f83b91f93db。回問確認：title「Epica Etica Etnica Pathos」、artist-credit「CCCP – Fedeli alla linea」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 7 筆 release 全 Official（IT 6、XW 1），1990 IT 原盤 Virgin CCCPK 7207、6+9 軌雙卡帶。藝人 MBID fa08e509-aedb-48a0-bf85-d30034899156，名下 19 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Epica etica etnica pathos；CCCP Fedeli Alla Linea Epica Etica Etnica Pathos；Epica Etica Etnica Pathos 30° Anniversario",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Afterhours",
+  "album": "Hai paura del buio?",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "Mescal（catno 300 755-2）",
+  "why": "Afterhours 是米蘭的樂團，MB 名下 32 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 10 張，這張 1997 年由 Mescal 發行的是他們 1995《Germi》之後的第四張，也是他們從英語歌詞轉成義大利語歌詞之後的第二張。MB 該 release-group 轄下 4 筆 release 全數 IT／Official。實掃 seed_cards.json 全 14,424 列：Afterhours 池中 0 張；同一條 1990 年代義大利另類搖滾線上的 Marlene Kuntz、Massimo Volume、Verdena、Subsonica 也全部是 0 張，本批補 Afterhours 與 Marlene Kuntz 兩位當代表。",
+  "risk": "**短掛名，已依裁定第 179 條回問 MB 藝人端點**：70a709a1-8083-44c4-b61f-f7d10e1004d9，area Italy、1986 起、disambiguation「Italian alternative rock band」；MB 另有兩個同名實體——2e91e607（United Kingdom，Celtic band）與 99026e96（電子藝人）——**用掛名字串查一定會撞**。盤名帶問號，去重字串要保留。Apple ch 1440859302「Hai paura del buio?」標 1997 但 **42 軌**，而 MB 1997 IT 原盤是 19 軌——那是後世的加曲／合併版，依裁定第 141 條軌數判斷以 MB release 為準，配到要在 notes 註明原盤 19 軌。it／us／gb 三個店面回 429（不是查無）。CAA 未實測。",
+  "mbNote": "釘 release-group a787a80c-c567-32b8-8786-d24518bf462f。回問確認：title「Hai paura del buio?」、artist-credit「Afterhours」、first-release-date 1997、primary-type Album、secondary-types 空、轄下 4 筆 release 全 IT／Official，1997 原盤 Mescal 300 755-2、19 軌 CD。藝人 MBID 70a709a1-8083-44c4-b61f-f7d10e1004d9（area Italy、1986 起、disambiguation「Italian alternative rock band」），名下 32 個 release-group。刻意不釘：7af69a4a-c5dd-35c2-8573-2fdc97025c19《Non è per sempre》（1999 下一張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hai paura del buio；Afterhours Hai paura del buio",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Franco Battiato",
+  "album": "Patriots",
+  "year": 1980,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "EMI（catno 3C 064-18521）",
+  "why": "Franco Battiato MB 名下 91 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 42 張，這張 1980-07 由 EMI 發行的緊接在 1979《L'era del cinghiale bianco》之後、1981《La voce del padrone》之前。實掃 seed_cards.json 全 14,424 列：Battiato 池中已有 2 張，**正好就是這張前後那兩張**（L'era del cinghiale bianco 1979、La voce del padrone 1981）——這張補進去就把他 EMI 流行三部曲中間那一格填起來。",
+  "risk": "盤名是英文單詞「Patriots」，在池中與 Apple 上都極易誤配（Apple 的 it／de／ch／us 四個店面第一輪全部回 429，第二輪改打 it／gb 才命中）。Apple 兩筆：gb 713519129「Patriots (Remastered)」標 **1980**、7 軌（與 MB 1980-07 IT 原盤 EMI 3C 064-18521、7 軌一致）與 gb 1539134118「Patriots (40th Anniversary Edition) [Remastered]」標 **1981**、10 軌——**年份差一年、軌數多三軌**，依裁定第 91 條年份以 MB 為準。轄下 7 筆 release 全 Official（IT 5、ES 1、1 筆未填），**MB 排最前的是 1980 年的西班牙版（EMI 056 1185211），義大利原盤是 1980-07 那筆**，廠牌與目錄號取義大利原盤。CAA 未實測。",
+  "mbNote": "釘 release-group 639d6062-c4f2-350c-8ecc-fd12321d3adf。回問確認：title「Patriots」、artist-credit「Franco Battiato」、first-release-date 1980-07、primary-type Album、secondary-types 空、轄下 7 筆 release 全 Official（IT 5、ES 1、1 筆未填），1980-07 IT 原盤 EMI 3C 064-18521、7 軌 12\" Vinyl。藝人 MBID 0cd117b2-2e21-406d-80cf-5ce0a6065e37（area Italy、1945-03-23 生、disambiguation「Italian singer-songwriter and composer」），名下 91 個 release-group。刻意不釘：4084879c-4ade-3c06-8bf2-2a71b25487db《L'era del cinghiale bianco》與 8a50a533-81c0-38d8-a0a9-8f78fd009ff3《La voce del padrone》——**這兩張池中已有**，本卡是夾在它們中間的那一張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Patriots (Remastered)；Franco Battiato Patriots；Patriots 40th Anniversary Edition",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Franco Battiato",
+  "album": "Fisiognomica",
+  "year": 1988,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "EMI（catno 090-7903142）",
+  "why": "Franco Battiato 1988-04-09 由 EMI 發行的專輯，MB 該 release-group 轄下 4 筆 release 全數 IT／Official、8 軌。在他 42 張純 Album 型 release-group 裡排在 1985《Mondi lontanissimi》與 1991《Come un cammello in una grondaia》之間。實掃 seed_cards.json 全 14,424 列：Battiato 池中 2 張都在 1979–81 那兩年，1980 年代中後期整段空白；這張與同批的《Patriots》一起補，池中的 Battiato 就從兩張變成四張、且跨 1979–1988 十年。",
+  "risk": "盤名是生僻的義大利文詞（「面相學」），去重風險低，但 Apple 上唯一命中的 it 713785467 盤名作「Fisiognomica (2008 Remastered Edition)」、**releaseDate 標 2008**（不是 1988），依裁定第 91 條年份以 MB 的 1988-04-09 為準，Apple 的日期只當訊號。gb 店面回 403（不是查無）。轄下 4 筆 release 都是 IT／Official，最早那筆 EMI 0777 7 90314 2／090-7903142 是 8 軌 CD。CAA 未實測。",
+  "mbNote": "釘 release-group 99e4c30a-b81c-379c-a6d4-6513b897e729。回問確認：title「Fisiognomica」、artist-credit「Franco Battiato」、first-release-date 1988-04-09、primary-type Album、secondary-types 空、轄下 4 筆 release 全 IT／Official，1988 原盤 EMI 0777 7 90314 2／090-7903142、8 軌 CD。藝人 MBID 0cd117b2-2e21-406d-80cf-5ce0a6065e37，名下 91 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fisiognomica (2008 Remastered Edition)；Franco Battiato Fisiognomica",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Pino Daniele",
+  "album": "Terra mia",
+  "year": 1977,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "EMI（catno 3C 064-18277）",
+  "why": "Pino Daniele MB 名下 61 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 23 張，這張 1977 年由 EMI 發行的是其中年份最早的一張。實掃 seed_cards.json 全 14,424 列：Pino Daniele 池中已有 2 張——《Pino Daniele》(1979) 與《Nero a metà》(1980)，**他的首張《Terra mia》不在**。依藍圖「先確認第一張該有的在不在」的判準，這張是他目錄裡最該補的一張。",
+  "risk": "盤名是兩個常用義大利文詞，Apple 上假陽性密集：gb 1880559062「Terra mia (Omaggio a Pino Daniele in jazz)」與 1193973783「Terra mia: Omaggio a Pino Daniele in jazz」**都是 Massimo Faraò Trio 的致敬碟，盤名同樣是 Terra mia、掛名裡還帶 Pino Daniele 這五個字**——掛名與盤名兩層比對都會誤配，探測層必須用 artistName 精確等於「Pino Daniele」再過一次。正確的是 gb 713514527「Terra mia (2008 Remaster)」標 1977、13 軌，與 MB 1977 IT 原盤（EMI 3C 064-18277、13 軌）一致。it 店面回 403、第一輪五個店面全 429（都不是查無）。轄下 4 筆 release 全 IT（3 Official、1 Promotion）。CAA 未實測。",
+  "mbNote": "釘 release-group 76fbfcc9-9de1-33ee-8986-7ac70ddec993。回問確認：title「Terra mia」、artist-credit「Pino Daniele」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 4 筆 release 全 IT（3 Official、1 Promotion），1977 原盤 EMI 3C 064-18277、13 軌 12\" Vinyl。藝人 MBID 5b1633c8-cb78-4d85-a7d1-a6d145d8d472（area Italy、1955-03-19 生），名下 61 個 release-group。刻意不釘：c3a7d267-448e-3356-8470-6fe6ca950270《Pino Daniele》（1979 自我同名，**池中已有**）、7c311aaa-5aa3-3fbd-830d-b138abbd6d2e《Nero a metà》（1980，**池中已有**）；MB 另有 5bf4f8ce-edea-45ce-8e05-b211d8e87d4a「Pino Daniele Project」是別的實體。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Terra mia (2008 Remaster)；Pino Daniele Terra mia",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Pino Daniele",
+  "album": "Vai mo'",
+  "year": 1981,
+  "genres": [
+   "jazz",
+   "blues"
+  ],
+  "label": "EMI（catno 3C 064 18550）",
+  "why": "Pino Daniele 1981-06 由 EMI 發行的第四張正規盤，MB 該 release-group 轄下 5 筆 release 全數 Official（IT 3、DE 1、FR 1），1981 IT 原盤 EMI 3C 064 18550、11 軌。在他 23 張純 Album 型 release-group 裡緊接在 1980《Nero a metà》之後——而《Nero a metà》池中已有，這張正好接在它後面。實掃 seed_cards.json 全 14,424 列，池中 Pino Daniele 只有 1979／1980 兩張；本批補《Terra mia》(1977) 與這張，四張就涵蓋他 EMI 時期 1977–1981 的主要目錄。",
+  "risk": "**盤名的撇號取 ASCII `'`**：MB release-group 標題用 U+2019（「Vai mo’」），但 MB 1981 IT 原盤那筆 release 的標題本身就是 ASCII 撇號「Vai mo'」，且池中 800 張帶撇號的卡有 774 張用 ASCII——本卡從原盤與池中多數。盤名只有六個字元且以撇號結尾，去重時撇號常被剝掉，要另比對「Vai mo」。Apple ch 1554178612「Vai mo' (2021 Remaster)」標 1981、11 軌與 MB 原盤一致；同店面 592758688「Tutta n'ata storia (Vai mo' - Live in Napoli)」是 2013 年的現場盤、盤名含本卡盤名，子字串比對必然誤配。it／us／gb 三個店面回 429（不是查無）。CAA 未實測。",
+  "mbNote": "釘 release-group 2e7b4c96-ec1a-3616-ad72-c4047b6d9565。回問確認：release-group title「Vai mo’」（MB 用 U+2019）、artist-credit「Pino Daniele」、first-release-date 1981-06、primary-type Album、secondary-types 空、轄下 5 筆 release 全 Official（IT 3、DE 1、FR 1），1981-06 IT 原盤 EMI 3C 064 18550、11 軌 Vinyl，**該筆 release 的標題是 ASCII 撇號的「Vai mo'」**。卡片盤名取原盤寫法。藝人 MBID 5b1633c8-cb78-4d85-a7d1-a6d145d8d472，名下 61 個 release-group。刻意不釘：c51374a7-c928-3cb4-8d6e-426b3164425f《Bella 'mbriana》（1982 下一張，同樣帶撇號）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vai mo’；Vai mo；Vai mo' (2021 Remaster)；Pino Daniele Vai mo",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Rino Gaetano",
+  "album": "Mio fratello è figlio unico",
+  "year": 1976,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "It（catno ZSLT 70029）",
+  "why": "Rino Gaetano MB 名下 31 個 release-group，primary-type=Album 且 secondary-types 空的只有 6 張（1974–1980 六年、他 1981 年車禍身故），這張 1976 年由 It 廠牌發行的是第二張。MB 該 release-group 轄下 3 筆 release 全在 IT（2 Official、1 Promotion），1976 原盤 It ZSLT 70029、8 軌。實掃 seed_cards.json 全 14,424 列：Rino Gaetano 池中 0 張。池中的義大利 cantautore 只有 Fabrizio De André 5、Lucio Battisti 4、Paolo Conte 1 三位，本批補 Rino Gaetano、Guccini、De Gregori、Venditti 四位各一張。",
+  "risk": "**Apple 的 `search` 端點在 it／gb 兩個店面都回 403，改打藝人頁目錄端點（artistId 27378288，裁定第 173 條）才找到** 269002720「Mio Fratello E' Figlio Unico」標 1976、8 軌，與 MB 原盤軌數一致——**Apple 把 è 寫成 `E'`（ASCII 大寫 E ＋ 撇號）**，這是義大利文條目在 Apple 上的常見寫法，兩種都要進 queryAlias，否則探測層會誤判查無。這是本批第四次踩到第 173 條。同一藝人頁另有 1299684185「Rino Gaetano」(2017) 與 206996594「Rino Gaetano」(2006) 兩張整編輯，掛名等於盤名，會被自我配對。CAA 未實測。",
+  "mbNote": "釘 release-group e6ce7c31-79ab-3d7d-bae1-fd9a9104dd73。回問確認：title「Mio fratello è figlio unico」、artist-credit「Rino Gaetano」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 3 筆 release 全 IT（2 Official、1 Promotion），1976 原盤 It ZSLT 70029、8 軌 12\" Vinyl。藝人 MBID 5a78419b-a191-4423-adc9-95caebba6c1f（area Italy、1950-10-29 生），名下 31 個 release-group。刻意不釘：c5cbbd1d-8899-4483-a032-0425f7a79d9e「Rino Gaetano Band」是後世的致敬樂團實體，不是本人。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mio Fratello E' Figlio Unico；Mio fratello e figlio unico；Rino Gaetano Mio fratello è figlio unico",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Francesco Guccini",
+  "album": "Radici",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Columbia Records（catno 3C064-17825）",
+  "why": "Francesco Guccini MB 名下 35 個 release-group，primary-type=Album 且 secondary-types 空的 19 張，這張 1972 年由 Columbia 發行的是他 1967《Folk Beat n. 1》起第四張。MB 該 release-group 轄下 7 筆 release 全數 IT／Official，1972 原盤 Columbia 3C064-17825、7 軌。實掃 seed_cards.json 全 14,424 列：Guccini 池中 0 張。池中的義大利 cantautore 只有 De André 5、Battisti 4、Paolo Conte 1，Guccini 是這條線上最大的缺口之一。",
+  "risk": "**盤名「Radici」是義大利文常用詞（「根」），而且與同名的西班牙／葡萄牙語詞相近**，Apple 上只回同一藝人的兩筆（de 714274303「Radici (Remastered)」標 1972、7 軌與 1656949152「Radici (Remastered 2022)」同樣 7 軌），**兩筆軌數與原盤都相同，只有後綴分得出來**（裁定第 174 條：同一份曲目被反覆重製時軌數不是識別鍵）。ch／us／gb 三個店面回 403（不是查無），it／de 命中。CAA 未實測。",
+  "mbNote": "釘 release-group 0345ed75-37b8-3645-be6e-dd5e4436d71a。回問確認：title「Radici」、artist-credit「Francesco Guccini」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 7 筆 release 全 IT／Official，1972 原盤 Columbia Records 3C064-17825、7 軌 12\" Vinyl。藝人 MBID 04aab033-628a-48b8-9d70-fc9b10761932（area Italy、1940-06-14 生），名下 35 個 release-group。刻意不釘：1eebd4ba-1e4f-42e5-91f8-4fca81426568「I Musici di Francesco Guccini」是他的伴奏團實體，掛名含本人姓名。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Radici (Remastered)；Francesco Guccini Radici",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Francesco De Gregori",
+  "album": "Rimmel",
+  "year": 1975,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "RCA（catno TPL 1-1107）",
+  "why": "Francesco De Gregori MB 名下 68 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 24 張，這張 1975-01 由 RCA 發行的是他 1972《Theorius Campus》（與 Antonello Venditti 合掛）起的第四張。MB 該 release-group 轄下 6 筆 release（4 Official、2 Promotion；IT 5、XE 1），1975 原盤 RCA TPL 1-1107、9 軌。實掃 seed_cards.json 全 14,424 列：De Gregori 池中 0 張。",
+  "risk": "**MB 名下有一個同名近似的單曲**：159fffb9-6982-43c7-9794-a792cfb524cc《Rimmel / Piccola mela》（1975-01，Single）——**與專輯同月發行，凡是「取 first-release-date 最早那筆」的邏輯都可能選錯**（裁定第 179 條第 1 點）。盤名單詞、是化妝品的通名，Apple 上 us 618113254「Rimmel (Instrumental version) [Originally by Francesco De Gregori]」是 Roadhouse Professional Karaoke 的模唱版假陽性。正確的是 us 259987937「Rimmel」標 1975、9 軌，與 MB 原盤一致。it／ch／gb 三個店面回 403（不是查無）。**另注意 1972《Theorius Campus》這個 release-group（93c028d3）同時掛在 De Gregori 與 Antonello Venditti 兩人名下**，兩位的目錄計數會重複算一張。CAA 未實測。",
+  "mbNote": "釘 release-group f33c2a84-99d9-3b46-8667-d272b3e330f3。回問確認：title「Rimmel」、artist-credit「Francesco De Gregori」、first-release-date 1975-01、primary-type Album、secondary-types 空、轄下 6 筆 release（4 Official、2 Promotion；IT 5、XE 1），1975-01 IT 原盤 RCA TPL 1-1107、9 軌 12\" Vinyl。藝人 MBID 9128bb19-1bb7-4f20-9e42-7cd9979a6792（area Italy、1951-04-04 生），名下 68 個 release-group。刻意不釘：159fffb9-6982-43c7-9794-a792cfb524cc《Rimmel / Piccola mela》（1975-01 同名單曲，日期與專輯同月）、93c028d3-9281-35c4-a2fa-8188abcd8904《Theorius Campus》（1972，同時掛在 Antonello Venditti 名下的合作盤）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Francesco De Gregori Rimmel；De Gregori Rimmel",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Antonello Venditti",
+  "album": "Sotto il segno dei pesci",
+  "year": 1978,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "Philips（catno 6323 056）",
+  "why": "Antonello Venditti MB 名下 62 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 20 張，這張 1978-03-08 由 Philips 發行的是他 1972《Theorius Campus》（與 Francesco De Gregori 合掛）起的第七張。MB 該 release-group 轄下 6 筆 release 全數 Official（IT 3、DE 1、XW 2），1978 原盤 Philips 6323 056、8 軌。實掃 seed_cards.json 全 14,424 列：Venditti 池中 0 張。與同批的 De Gregori、Guccini、Rino Gaetano 三位一起補，池中的義大利 cantautore 就從三位變成七位。",
+  "risk": "**Apple 上三筆同名，年份與軌數各不相同**：us 1440652137「Sotto il segno dei pesci」標 1978、8 軌（正確的那筆，與 MB 原盤一致）、de 1436319209 同名標 **2003**、16 軌、us 1487470314「Sotto il segno dei pesci: The Anniversary Tour (Live)」標 2003、34 軌——**中間那筆盤名與本卡逐字相同、年份卻差 25 年**，依裁定第 91 條年份以 MB 為準，探測層要靠軌數與年份兩層才分得開。it／ch／gb 三個店面回 403（不是查無）。1972《Theorius Campus》同時掛在 De Gregori 名下，兩位的目錄計數會重複算一張。CAA 未實測。",
+  "mbNote": "釘 release-group 0570526b-a661-311b-a995-b0da7fab6723。回問確認：title「Sotto il segno dei pesci」、artist-credit「Antonello Venditti」、first-release-date 1978-03-08、primary-type Album、secondary-types 空、轄下 6 筆 release 全 Official（IT 3、DE 1、XW 2），1978 IT 原盤 Philips 6323 056、8 軌 12\" Vinyl。藝人 MBID dd4a5777-42a3-44a2-b5e6-bff6731cdf3a（area Italy、1949-03-08 生），名下 62 個 release-group。刻意不釘：93c028d3-9281-35c4-a2fa-8188abcd8904《Theorius Campus》（1972，與 Francesco De Gregori 合掛的同一個 release-group）、f87c89be-cc9a-304a-be29-b2b4e03ae8b5《Sotto la pioggia》（1982，盤名前兩個詞與本卡相同）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Antonello Venditti Sotto il segno dei pesci；Sotto il segno dei pesci The Anniversary Tour",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gianna Nannini",
+  "album": "Puzzle",
+  "year": 1984,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Ricordi（catno CDMRL 6309）",
+  "why": "Gianna Nannini MB 名下 58 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 23 張，這張 1984-11-27 由 Ricordi 發行的是她 1976 年出道後的第六張。MB 該 release-group 轄下 4 筆 release 全數 Official（DE 2、IT 1、XW 1）——**德國版比義大利版還多**，這張正是她在德語區走紅的那一張，同時對得上本批 a 組的德語店面。實掃 seed_cards.json 全 14,424 列：Gianna Nannini 池中 0 張，池中的義大利女性藝人只有 Mina 2 張。",
+  "risk": "**盤名「Puzzle」是英文通用詞**，Apple 的 `search` 端點四個店面（it／de／ch／gb）全部回 403，改打藝人頁目錄端點（artistId 13497899，裁定第 173 條）才找到 6768666818「Puzzle」標 1984、8 軌，與 MB 原盤（Ricordi CDMRL 6309、8 軌）一致——**這是本批第五次踩到第 173 條**。掛名雙 n 雙 n（Nannini），拼字容易漏，queryAlias 已填常見誤拼。CAA 未實測。",
+  "mbNote": "釘 release-group b6c3f1f5-8d51-3032-b834-e9cbbe8600e6。回問確認：title「Puzzle」、artist-credit「Gianna Nannini」、first-release-date 1984-11-27、primary-type Album、secondary-types 空、轄下 4 筆 release 全 Official（DE 2、IT 1、XW 1），1984-11-27 原盤 Ricordi CDMRL 6309、8 軌 CD。藝人 MBID 116ed804-4d04-43fd-809f-24e18b17233c（area Italy、1954-06-14 生），名下 58 個 release-group。刻意不釘：36722c58-2380-4c85-b5c8-c7a017576128「The Primadonnas」是她的現場伴奏團實體。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gianna Nannini Puzzle；Gianna Nanini Puzzle",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Diaframma",
+  "album": "Siberia",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "IRA（catno IR-LP1002）",
+  "why": "Diaframma 是佛羅倫斯的後龐克樂團，MB 名下 34 個 release-group，primary-type=Album 且 secondary-types 空的 20 張，這張 1984 年由 IRA 發行（目錄號 IR-LP1002、8 軌）的是其中年份最早的一張。IRA 也是同批 Litfiba《17 re》的廠牌——**佛羅倫斯這條 1980 年代獨立線在池中完全沒有**。實掃 seed_cards.json 全 14,424 列：Diaframma 池中 0 張；與 c-61（義大利與法國地下 prog，51 張，全部是 1969–78 的 prog 樂團）逐筆比過，沒有任何重疊。",
+  "risk": "**盤名「Siberia」是地名通名**，Apple 上兩筆都不是原盤：gb 293651689「Siberia」標 **2006**、18 軌與 1154468054「Siberia Reloaded 2016」21 軌——**前者盤名與本卡逐字相同、年份差 22 年、軌數多 10 軌**，依裁定第 91／141 條年份以 MB 的 1984 為準、軌數以 MB release（8 軌）為準。it／de／ch／us 四個店面回 403（不是查無），只有 gb 命中。轄下 5 筆 release 全 Official（IT 4、XW 1）。CAA 未實測。",
+  "mbNote": "釘 release-group 9807ed95-b307-3de8-996c-879626cf1b1e。回問確認：title「Siberia」、artist-credit「Diaframma」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 5 筆 release 全 Official（IT 4、XW 1），1984 IT 原盤 IRA IR-LP1002、8 軌 12\" Vinyl。藝人 MBID d3f9254c-08fe-4aa6-b601-8dd43dd1ba19（area Italy、1979 起、type Group，**MB 上沒有同名的第二個實體**），名下 34 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Diaframma Siberia；Siberia Reloaded",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Marlene Kuntz",
+  "album": "Catartica",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "Consorzio Produttori Indipendenti（catno 300 003-1）",
+  "why": "Marlene Kuntz 是 Cuneo 的樂團，MB 名下 32 個 release-group，primary-type=Album 且 secondary-types 空的 12 張，這張 1994-03-27 由 Consorzio Produttori Indipendenti 發行的是其中年份最早的一張。MB 該 release-group 轄下 3 筆 release 全數 IT／Official，1994 原盤目錄號 300 003-1、14 軌。實掃 seed_cards.json 全 14,424 列：Marlene Kuntz 池中 0 張（另有 MB 實體 191cba6a「Marlene Dietrich」與 0b71b386「Marlene」是不同的人，池中也沒有）。與同批的 Afterhours《Hai paura del buio?》一起補，池中才有 1990 年代義大利另類搖滾。",
+  "risk": "**MB 名下有一個盤名以本卡盤名開頭的 Live 條目**：9c18c2f5-a7f4-475b-8833-5b934e6547b0《Catartica (Live 2024)》，**first-release-date 標 1994-01-01——比本卡的 1994-03-27 還早**，凡是「取 first-release-date 最早那筆」的邏輯都會選錯（裁定第 179 條第 1 點的變形：這次假陽性的日期是建檔錯誤，不是先行單曲）。掛名「Marlene Kuntz」的前半與 Marlene Dietrich 相同，字串比對會撞。Apple gb 723409349「Catartica」標 1994、14 軌與 MB 原盤一致；de／ch 兩個店面回 403（不是查無），it／us／gb 命中。CAA 未實測。",
+  "mbNote": "釘 release-group 8a2a5203-10d6-3087-8211-a1e2f5e0947b。回問確認：title「Catartica」、artist-credit「Marlene Kuntz」、first-release-date 1994-03-27、primary-type Album、secondary-types 空、轄下 3 筆 release 全 IT／Official，1994-03-27 原盤 Consorzio Produttori Indipendenti 300 003-1、14 軌 12\" Vinyl。藝人 MBID b948e199-ad8a-4321-9a84-58f36226d9fa（area Italy、1987 起、type Group），名下 32 個 release-group。刻意不釘：9c18c2f5-a7f4-475b-8833-5b934e6547b0《Catartica (Live 2024)》（secondary-types Live，**MB 的 first-release-date 誤標成 1994-01-01，比本卡早**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Marlene Kuntz Catartica",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]
