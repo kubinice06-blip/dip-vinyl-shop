@@ -1,0 +1,266 @@
+[
+ {
+  "key": "desc2:Ton Steine Scherben|Warum geht es mir so dreckig?",
+  "artist": "Ton Steine Scherben",
+  "album": "Warum geht es mir so dreckig?",
+  "facts": [
+   {
+    "f": "所釘 release-group e7eea636 的欄位：title「Warum geht es mir so dreckig?」、artist-credit「Ton Steine Scherben」（藝人實體 6b49bc68，area Germany、type Group）、first-release-date 1971、primary-type Album、secondary-types **空**。轄下 4 筆 release：1971 DE 原盤（David Volksmund Produktion，catno SST 13，12\" Vinyl **9 軌**，status Official）、1991 DE CD（INDIGO 2008-2，9 軌）、2006 DE CD（8 軌）、另一筆 Digital Media 8 軌**沒有填 status**。廠牌是樂團自己成立的自營廠牌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e7eea636-7e7b-385a-a59e-7726f1298330?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971 DE 原盤（SST 13）的逐軌曲目與長度：1〈Ich will nicht werden, was mein Alter ist〉5:05、2〈Warum geht es mir so dreckig?〉5:09、3〈Der Kampf geht weiter〉6:49、4〈Macht kaputt, was euch kaputt macht〉3:32、5〈Einheitsfrontlied〉3:26、6〈Mein Name ist Mensch〉6:53、7〈Sklavenhändler〉2:37、8〈Alles verändert sich〉4:18、9〈Solidarität〉5:01。單片九軌，A 面四首、B 面五首。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e7eea636-7e7b-385a-a59e-7726f1298330&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Warum geht es mir so dreckig?〉的〈Die Aufnahmen〉節：1970 年先發了單曲〈Macht kaputt, was euch kaputt macht〉，隔年樂團進柏林 Klaus Freudigmann 的錄音室錄第一張唱片，錄音條件不佳、成品讓一向自己包辦製作的樂團不滿意。1971 年六月，Agit 883 與 Rote Hilfe 在克羅伊茨貝格的 Mariannenplatz 辦了一場針對待拆空屋的活動，樂團在場演出；**散場之後就發生了柏林最早的自發佔屋行動之一**。那場演出有錄音，**唱片 A 面就是這批實況，B 面才是錄音室版本**。",
+    "src": "https://de.wikipedia.org/wiki/Warum_geht_es_mir_so_dreckig%3F"
+   },
+   {
+    "f": "同一條目的〈Titelliste〉節注記：〈Macht kaputt, was euch kaputt macht〉裡在音樂上整段嵌進了 Bertolt Brecht 與 Hanns Eisler 的〈Einheitsfrontlied〉、歌詞略作更動，**封底與隨片歌詞頁都沒有列出這首，也沒有列它的 3:26 長度**。〈Besetzung〉節列的班底：Ralph Möbius（人聲、吉他、鋼琴）、Ralph Steitz（吉他、鼓、打擊、和聲）、Kai Sichtermann（貝斯、打擊、和聲）、Wolfgang Seidel（鼓、打擊）、Nikel Pallat（和聲）、Gert Möbius（原始封套）。**這張與下一張都還沒用 Rio Reiser／R.P.S. Lanrue 這兩個藝名**。",
+    "src": "https://de.wikipedia.org/wiki/Warum_geht_es_mir_so_dreckig%3F"
+   },
+   {
+    "f": "德國店面 id 1053103371：標題「Warum geht es mir so dreckig?」、掛名「Ton Steine Scherben」、releaseDate 1971-09-24、℗ 2015 David Volksmund Produktion、`trackCount` 8。攤開的曲目列也是 **8 軌、8 軌全部有試聽**，比原盤少一軌——少的正是〈Einheitsfrontlied〉，該版把它併進第 4 軌〈Macht kaputt was euch kaputt macht〉，那一軌長 6:56，約等於原盤 3:32 加 3:26 兩軌之和。",
+    "src": "https://itunes.apple.com/lookup?id=1053103371&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 6b49bc68 名下分頁列完共 27 個 release-group，其中 primary-type=Album 且 secondary-types 空的 9 張，依 first-release-date 排是《Warum geht es mir so dreckig?》1971、《Keine Macht für Niemand》1972、《Wenn die Nacht am tiefsten...》1975-09、《Paranoia》1976、《Mannstoll》1977-07、《Schwule After Punk Show》1979、《Entartet!》1979-09-03、《IV》1981、《Scherben》1983。**本張是其中年份最早的一張**；27 筆裡 primary-type=Compilation 的是 0 筆，也沒有第二筆與本張同名的條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6b49bc68-353e-44a3-ba64-3ba4d30b1beb&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "唱片 A 面不是錄音室，是 1971 年六月 Mariannenplatz 那場演出的實況，散場後就發生柏林最早的佔屋行動之一",
+   "〈Macht kaputt, was euch kaputt macht〉裡整段嵌著 Brecht 與 Eisler 的〈Einheitsfrontlied〉，封底一個字都沒提"
+  ],
+  "sound": "1971 DE 原盤單片九軌、A 面實況 B 面錄音室，長度從 2:37 到 6:53，四首超過五分鐘。編制是雙吉他加貝斯與鼓的四件式搖滾，Ralph Möbius 的德語人聲擺在最前面，副歌以齊唱口號收尾；實況那一面帶著現場的群眾聲，錄音條件不佳的粗糙感是樂團自己也承認的。歌詞是直白的德語政治語言，〈Macht kaputt, was euch kaputt macht〉裡嵌進〈Einheitsfrontlied〉的旋律。",
+  "keyTracks": [
+   "Macht kaputt, was euch kaputt macht",
+   "Ich will nicht werden, was mein Alter ist",
+   "Der Kampf geht weiter"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。所釘 release-group 的 first-release-date 是 **1971**（只到年）、轄下最早那筆 release 也標 1971 DE，德國店面 id 1053103371 的 releaseDate 標 1971-09-24；℗ 年份是 2015，那是自營廠牌 2015 年那次數位再發的標記、不是原盤年。四處對照後取 **1971**。同名先行單曲：無——〈Macht kaputt, was euch kaputt macht〉1970 年先出過單曲，但那不與專輯同名；藝人名下 27 個 release-group 沒有第二筆叫《Warum geht es mir so dreckig?》。",
+  "notes": "**探測層可補的試聽**：de 1053103371，8 軌全部有 previewUrl（`trackCount` 欄與攤開的曲目列都是 8，兩者一致）。\\n**但 8 不是原盤軌數**：原盤 9 軌，數位版把〈Einheitsfrontlied〉併進〈Macht kaputt was euch kaputt macht〉（6:56）。依裁定 141／175，軌數一律以原盤曲目列為準，**行文若提軌數要寫 9 軌**。\\n策展層說法逐條查證：27 個 release-group、9 張純 Album、本張最早、自營廠牌 SST 13、9 軌 12\" Vinyl、1 筆 status 未填——**全部屬實**。\\n§5.6 對照：本藝人 primary-type=Compilation 為 0，與策展層的全批結論一致。\\n盤名結尾的問號是原盤標題的一部分，release-group 標題與數位店面標題都帶問號。\\n未收進 facts 的排行榜資料：無（本張未查到榜單資料，也依派工信不寫）。"
+ },
+ {
+  "key": "desc2:Ton Steine Scherben|Keine Macht für Niemand",
+  "artist": "Ton Steine Scherben",
+  "album": "Keine Macht für Niemand",
+  "facts": [
+   {
+    "f": "所釘 release-group 4d7f4dcc 的欄位：title「Keine Macht für Niemand」、artist-credit「Ton Steine Scherben」、first-release-date 1972、primary-type Album、secondary-types **空**。轄下 6 筆 release **全部 DE、全部 Official**：1972 原盤是 David Volksmund Produktion 的 catno TSS 17、**兩片 12\" Vinyl 各 6 軌**；其餘五筆是 1989、1992、2006 的 CD（都攤成單片 12 軌）與 2015-12-04 的雙片黑膠再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4d7f4dcc-edc6-3744-9ff3-919fc6c6b137?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972 DE 原盤（TSS 17）的四面逐軌：A 面〈Wir müssen hier raus!〉5:22、〈Feierabend〉4:41、〈Die letzte Schlacht gewinnen wir〉4:18；B 面〈Paul Panzers Blues〉6:41、〈Menschenjäger〉5:04、〈Allein machen sie dich ein〉4:42；C 面〈Schritt für Schritt ins Paradies〉6:53、〈Der Traum ist aus〉9:24、〈Mensch Meier〉3:43；D 面〈Rauch-Haus-Song〉3:59、〈Keine Macht für Niemand〉4:09、〈Komm schlaf bei mir〉4:02。**四面各三首，最長的〈Der Traum ist aus〉9:24 排在 C 面中間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4d7f4dcc-edc6-3744-9ff3-919fc6c6b137&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Keine Macht für Niemand〉：這張 1972 年的雙片盤因為封套極簡（白底黑字）被稱作「die Weiße」（白色那張）；**外包裝是白色紙板箱，內附歌詞單，最早幾刷還附一把彈弓（Zwille）**。〈Bedeutung als Schlagwort〉節記：依 Rio Reiser 的說法，這句口號出自無政府主義刊物《Germania》；歌詞裡就寫著「Schreibt die Parole an jede Wand」，這句話至今仍出現在示威布條與牆上塗鴉。",
+    "src": "https://de.wikipedia.org/wiki/Keine_Macht_f%C3%BCr_Niemand"
+   },
+   {
+    "f": "同一條目的〈Besetzung〉節：Rio Reiser（人聲、吉他、鋼琴、clavinet）、R.P.S. Lanrue（吉他、鼓、和聲）、Kai Sichtermann（電貝斯、班鳩、和聲）、Nikel Pallat（人聲、和聲）、Jörg Schlotterer（長笛、和聲）、Olaf Lietzau（鼓）、Jochen Petersen（薩克斯風）、Klaus Schulz（牛鈴），**和聲名單裡直接列著「Georg-von-Rauch-Haus-Bewohner」——也就是 Rauch-Haus 那棟佔屋樓的住戶本人**；錄音是 Richard Borowski 與 Klaus Freudigmann。〈Trivia〉節另記：Kraftklub 2017 年的第三張《Keine Nacht für Niemand》盤名就是照這張改的。",
+    "src": "https://de.wikipedia.org/wiki/Keine_Macht_f%C3%BCr_Niemand"
+   },
+   {
+    "f": "德國店面 id 1053059264：標題「Keine Macht für Niemand」、releaseDate 1972-11-17、℗ 2015 David Volksmund Produktion、`trackCount` 12。攤開的曲目列同樣 **12 軌、12 軌全部有試聽**，曲名與曲序和原盤四面攤平後**逐位置相符**，逐軌長度與原盤相差都在數秒內（例如〈Der Traum ist aus〉同為 9:24）。**這是把雙片攤成單片，不是加曲版**——沒有多出任何一首。",
+    "src": "https://itunes.apple.com/lookup?id=1053059264&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 6b49bc68 名下 27 個 release-group 裡，primary-type=Album 且 secondary-types 空的 9 張，本張 1972 年是**第二早**的一張，前一張是 1971 年的《Warum geht es mir so dreckig?》、下一張要等到 1975-09 的《Wenn die Nacht am tiefsten...》，**中間隔了三年**。27 筆裡沒有第二筆叫《Keine Macht für Niemand》的條目，也沒有 primary-type=Compilation 的條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6b49bc68-353e-44a3-ba64-3ba4d30b1beb&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "白色紙板箱裝的雙片盤，最早幾刷裡還附了一把彈弓",
+   "和聲名單上直接寫著 Rauch-Haus 那棟佔屋樓的住戶"
+  ],
+  "sound": "1972 DE 原盤是雙片十二軌、四面各三首，總長超過一小時，單軌從 3:43 到 9:24。比前一張多了長笛、薩克斯風與班鳩，配器變寬，仍以雙吉他與德語人聲為骨幹；〈Der Traum ist aus〉9:24 是全碟最長也最慢的一首，〈Rauch-Haus-Song〉則是三分多鐘的直接敘事。歌詞從口號轉向具體事件與人物，同名曲把「Keine Macht für Niemand」寫成一句要人抄到牆上的話。",
+  "keyTracks": [
+   "Keine Macht für Niemand",
+   "Rauch-Haus-Song",
+   "Der Traum ist aus"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。所釘 release-group 的 first-release-date 是 **1972**（只到年）、轄下最早那筆 release 標 1972 DE，德國店面 id 1053059264 的 releaseDate 標 1972-11-17；℗ 2015 是自營廠牌 2015 年數位再發的標記、不是原盤年。取 **1972**。同名先行單曲：無——藝人名下 27 個 release-group 沒有第二筆同名條目。**要注意的不是年份而是載體**：原盤是雙片 6+6 軌，數位版攤成單片 12 軌，同一組曲目。",
+  "notes": "**探測層可補的試聽**：de 1053059264，12 軌全部有 previewUrl，`trackCount` 欄與曲目列都是 12。\\n**12 軌是雙片攤平的結果，不是加曲版**（裁定 140 的判準：沒有多出來的曲目、沒有 Bonus 標記），行文寫「雙片十二軌」最安全。\\n**策展層預告的假陽性已擋下**：另有一筆 68 軌的有聲書條目《Keine Macht für niemand - Die Geschichte von Ton Steine Scherben》（掛名是寫這本書的 Kai Sichtermann 等人），盤名是本卡的超字串，任何子字串比對都會配到它——本卡取的 1053059264 不是它。\\n策展層說法逐條查證：轄下 6 筆全 DE／Official、原盤 TSS 17、6+6 軌雙片——**全部屬實**。\\n**跨卡連結**：Kraftklub《Keine Nacht für Niemand》(2017) 的盤名出自本張，而 Kraftklub《Mit K》就在本批 a 組（第 13 張）；兩張要避免把同一段連結寫兩次。\\n晚於發行的事件分類：Kraftklub 那筆屬「作品本身的後世流傳」，可寫但要標時序。"
+ },
+ {
+  "key": "desc2:Rio Reiser|Rio I.",
+  "artist": "Rio Reiser",
+  "album": "Rio I.",
+  "facts": [
+   {
+    "f": "所釘 release-group da3a12ec 的欄位：title「Rio I.」、artist-credit「Rio Reiser」（藝人實體 cdc82eb3，area Germany、1950-01-09 生、type Person）、first-release-date **1986-11-05**、primary-type Album、secondary-types **空**。轄下 5 筆 release 全部 Official：1986-11 DE 的 12\" Vinyl（CBS，catno CBS 26862，10 軌）、1986-11-05 XW 的 Digital Media（Columbia）、1993-11-08 與 2004-11-01 的 DE CD（Columbia 475561 2／475561 5）、另一筆未標日期的 DE CD。",
+    "src": "https://musicbrainz.org/ws/2/release-group/da3a12ec-0817-3801-8668-c3d868523c7c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1986-11 DE 原盤（CBS 26862）的逐軌：A 面〈Alles Lüge〉4:15、〈Lass uns das Ding drehn〉3:42、〈Für immer und Dich〉5:35、〈Menschenfresser〉3:58、〈Junimond〉4:01；B 面〈König von Deutschland〉3:31、〈Lass mich los〉4:46、〈So allein〉3:33、〈Ich leb doch〉3:26、〈Bei Nacht〉6:05。**兩面各五首，最長的〈Bei Nacht〉6:05 收尾。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=da3a12ec-0817-3801-8668-c3d868523c7c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Rio I.〉的〈Entstehungsgeschichte〉節：Ton Steine Scherben 一向自營發行，與唱片工業合作破局後，樂團在 1985 年五月**背著債務解散**，但留下一疊 demo 帶，其中〈Alles Lüge〉〈Junimond〉〈Lass mich los〉〈Runter zum Hafen〉四首曾拿去向唱片公司提案。本張 1985 至 1986 年在柏林錄音，製作是 Annette Humpe 與 Udo Arndt。1984 年 Reiser 曾想向 Humpe 借一萬馬克被拒，Humpe 改替他從 WEA 弄到五千馬克預付金，做出他的第一張個人單曲〈Dr. Sommer〉。",
+    "src": "https://de.wikipedia.org/wiki/Rio_I."
+   },
+   {
+    "f": "同一條目：**這張的伴奏大部分交給當時德國第一線的錄音室樂手**（Curt Cress、Ken Taylor、Peter Weihe 等），Reiser 本人**只專心在作曲與演唱**——與 Scherben 時期他還兼吉他與鋼琴的「集體式」做法相反。〈Singleauskopplungen〉節列出四首單曲：〈Alles Lüge〉1986 年 5 月、〈Junimond〉8 月、〈König von Deutschland〉10 月、〈Für immer und Dich〉11 月，**四首全部出自本張、發行時間橫跨半年**。〈Trivia〉節另記：封面王冠圖案裡靠明暗差做出一根伸出的中指。",
+    "src": "https://de.wikipedia.org/wiki/Rio_I."
+   },
+   {
+    "f": "德國店面 id 279143036：標題「Rio I.」、掛名「Rio Reiser」、releaseDate 1986-01-01、℗ 1986 Sony Music Entertainment (Germany) GmbH、`trackCount` 10。攤開的曲目列 **10 軌、10 軌全部有試聽**，曲名與曲序與原盤**逐位置相符**，逐軌長度與原盤幾乎相同（〈Junimond〉3:55 對原盤 4:01，其餘差距在三秒內）。",
+    "src": "https://itunes.apple.com/lookup?id=279143036&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 cdc82eb3 名下分頁列完 29 個 release-group，primary-type=Album 且 secondary-types 空的 9 張：《Rio I.》1986-11-05、《Blinder Passagier》1987-09-15、《Rio ***》1990-04-02、《Durch die Wand》1991-07-10、《Über Alles》1993-08-20、《Himmel & Hölle》1995-03-24、《Am Piano I》1998-10-20、《Am Piano II》1999-03-30，以及一筆未標日期的現場錄音。**本張是他個人名下年份最早的一張**；29 筆裡 primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=cdc82eb3-7eac-4387-baf8-cd3bac0f5092&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十首裡有四首在半年內先後發成單曲，素材是樂團解散後留下的一疊 demo 帶",
+   "封面王冠的明暗裡藏著一根中指"
+  ],
+  "sound": "1986 原盤十軌、兩面各五首，單軌 3:26 到 6:05，沒有長曲。伴奏交給 Curt Cress、Ken Taylor、Peter Weihe 這批錄音室樂手，聲音是 1980 年代中期的乾淨主流製作——電子鼓機、合成器襯底、清楚的貝斯線，與 Scherben 時期的粗糙實況感相反。Reiser 只唱不彈，人聲擺在正中央，〈Junimond〉與〈Für immer und Dich〉是慢板抒情，〈König von Deutschland〉則是帶反諷的中板搖滾。",
+  "keyTracks": [
+   "König von Deutschland",
+   "Junimond",
+   "Alles Lüge"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。所釘 release-group 的 first-release-date 是 **1986-11-05**、轄下最早的實體 release 標 1986-11 DE（CBS 26862）、數位那筆標 1986-11-05，德國店面 id 279143036 的 releaseDate 標 1986-01-01（只精確到年）、℗ 也是 1986。四處都落在 **1986**。**先行單曲〈Alles Lüge〉1986 年 5 月早於專輯半年，但它不與專輯同名**；藝人名下 29 個 release-group 沒有第二筆叫《Rio I.》的條目（最像的是 1990 年《Rio ***》與 1989 年的同名 EP《Rio Reiser》，兩者都不同名）。",
+  "notes": "**探測層可補的試聽**：de 279143036，10 軌全部有 previewUrl，`trackCount` 欄與曲目列都是 10，與原盤軌數一致。\\n**策展層預告的假陽性已擋下**：同店面另有一筆 403073336 標 1993、同樣 10 軌，是同一張碟的第二次上架；本卡取 1986 那筆。盤名「Rio I.」只有五個字元又以句點結尾，子字串比對會配到《Rio ***》，去重要用完整字串。\\n策展層說法逐條查證：29 個 release-group、5 筆 release 全 Official、CBS 26862、10 軌、藝人是 Ton Steine Scherben 的主唱——**全部屬實**。\\n**跨卡連結**：本批 a 組第 0、1 張是同一位主唱的樂團時期（他當時還用本名 Ralph Möbius），本張是簽進 CBS 之後的個人時期；製作人 Annette Humpe 同時是本批第 3 張 Ideal 的主腦，**三張卡不要把同一條人脈各寫一次**。\\n未寫進 facts 的：條目引用的樂評段落與唱片榜表現，依派工信不寫。"
+ },
+ {
+  "key": "desc2:Ideal|Ideal",
+  "artist": "Ideal",
+  "album": "Ideal",
+  "facts": [
+   {
+    "f": "所釘 release-group 89124cc5 的欄位：title「Ideal」、artist-credit「Ideal」（藝人實體 4e3f4f52，area Germany、type Group、disambiguation 明寫「German \"Neue Deutsche Welle\" group」）、first-release-date 1980、primary-type Album、secondary-types **空**。轄下 8 筆 release 全部 Official：1980 DE 原盤與 1981 換背封再刷都是 Innovative Communication 的 catno KS 80.004、12\" Vinyl 10 軌；1982 起改由 wea 發（K 58716、258 716、2292-42173-2），2005-10-28 那筆 CD 是 13 軌，2025-06-27 一筆叫《Ideal (2025 Mix)》。",
+    "src": "https://musicbrainz.org/ws/2/release-group/89124cc5-a9bc-38bd-a97d-b5b98ce19d58?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1980 DE 原盤（KS 80.004）的逐軌：A 面〈Berlin〉3:14、〈Irre〉3:56、〈Telepathie〉5:30、〈Blaue Augen〉3:31、〈Hundsgemein〉2:14；B 面〈Luxus〉4:06、〈Rote Liebe〉2:39、〈Da leg ich mich doch lieber hin〉4:31、〈Telephon〉3:27、〈Roter Rolls Royce〉3:12。**十軌裡九軌不到四分半，最長的〈Telepathie〉5:30 排在 A 面正中間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=89124cc5-a9bc-38bd-a97d-b5b98ce19d58&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Ideal (Band)〉的〈Bandgeschichte〉節：樂團 1980 年春天在西柏林組成，成員是 Annette Humpe、Ernst Ulrich Deuker、Frank Jürgen「Eff Jott」Krüger 與 Hans-Joachim「Hansi」Behrendt；Humpe 在此之前與妹妹 Inga Humpe 在 Neonbabies。發掘他們的音樂出版人 Klaus D. Mueller 向當時的知名廠牌提案**全部被拒**，最後找上老友 Klaus Schulze，這張首張專輯 1980 年 11 月因此發在 Schulze 的 IC（Innovative Communication）廠牌上。**這張長片的特殊之處是要用每分鐘 45 轉播放**——那本來是單曲的轉速，為的是音質，後續作品沒有再沿用。封套是一個穿襯衫、正在打領帶的無頭人，頭的位置擺著紅色的團名，設計是 Bettina Sefkow。",
+    "src": "https://de.wikipedia.org/wiki/Ideal_(Band)"
+   },
+   {
+    "f": "英文條目〈Ideal (German band)〉：1980-08-30 英國樂團 Barclay James Harvest 在柏林國會大廈前辦免費戶外演出，Ideal 是暖場團，該場十五萬名觀眾也看到了他們，這是他們走向大眾的一大步。1981 年十月第二張《Der Ernst des Lebens》發行的同時，**首張專輯拿到金唱片，而這是德國史上第一次有獨立廠牌發行的專輯獲金唱片認證**（德文條目的〈Bandgeschichte〉節寫的是同一件事：「zum ersten Mal in Deutschland ein Produkt eines Independent-Labels vergoldet」）。樂團 1983-03-31 用一封電報宣布解散。",
+    "src": "https://en.wikipedia.org/wiki/Ideal_(German_band)"
+   },
+   {
+    "f": "德國店面 id 41255566：標題「Ideal」、掛名「Ideal」、releaseDate 1980-11-17、℗ 1980 WEA RECORDS / WARNER MUSIC GERMANY、`trackCount` 10。攤開的曲目列 **10 軌、10 軌全部有試聽**，曲名與曲序與 1980 原盤**逐位置相符**，逐軌長度全部落在原盤的三秒內。",
+    "src": "https://itunes.apple.com/lookup?id=41255566&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 4e3f4f52 名下分頁列完 21 個 release-group，其中 primary-type=Album 且 secondary-types 空的**只有 3 張**：本張 1980、《Der Ernst des Lebens》1981、《Bi Nuu》1982-11。21 筆裡沒有第二筆標題就叫《Ideal》的正規盤（最像的是 2005 年那筆兩張合一的《Ideal / Der Ernst des Lebens》，secondary-types 帶 Compilation），primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4e3f4f52-968c-43ec-b165-741122d7cc28&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "所有大廠都回絕之後，這張長片發在 Klaus Schulze 的廠牌上，而且要用單曲的 45 轉來播",
+   "德國第一張拿到金唱片的獨立廠牌專輯，封面是個正在打領帶的無頭人"
+  ],
+  "sound": "1980 原盤十軌、兩面各五首，單軌 2:14 到 5:30，總長不到三十五分鐘。四件式編制：Annette Humpe 的合成器與主唱、兩把吉他加鼓，節奏硬、和聲少，德語咬字刻意乾脆。〈Berlin〉與〈Blaue Augen〉是三分鐘出頭的短打，〈Telepathie〉5:30 是全碟唯一鋪得比較長的一首。母帶刻成 45 轉是為了音質，播放時的動態比一般長片緊。",
+  "keyTracks": [
+   "Blaue Augen",
+   "Berlin",
+   "Telepathie"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1980。所釘 release-group 的 first-release-date 是 **1980**（只到年）、轄下最早那筆 release 標 1980 DE（IC KS 80.004），德國店面 id 41255566 的 releaseDate 標 1980-11-17、℗ 1980，德文與英文條目都寫 1980 年 11 月發行。四處同年，取 **1980**。同名先行單曲：無——1980 年 5 月的首支單曲是〈Wir stehn auf Berlin〉／〈Männer gibt's wie Sand am Meer〉，不與專輯同名；藝人名下 21 個 release-group 沒有第二筆同名正規盤。**自我同名卡**（掛名與盤名相同）。",
+  "notes": "**探測層可補的試聽**：de 41255566，10 軌全部有 previewUrl，`trackCount` 欄與曲目列都是 10，與原盤軌數一致。\\n**短掛名的同名實體風險（裁定 179）已覆核**：藝人端點回的 4e3f4f52 area 是 Germany、disambiguation 是「German \"Neue Deutsche Welle\" group」，與卡片相符。店面上的假陽性至少四筆：1808921723《Ideal (2025 Mix)》（同團 2025 重混，10 軌）、1871523594《Ideal - Single》、1565981056《Idéal》（Arma Jackson）、693155813《Ideal》27 軌（Parlophone）——**任何用掛名或盤名字串比對的步驟都會撞到**。\\n策展層說法逐條查證：21 個 release-group、3 張純 Album、本張最早、IC KS 80.004、8 筆 release 全 Official、10 軌——**全部屬實**。\\n**「德國第一張獨立廠牌金唱片」這種「史上第一」宣稱依研究層規則要交叉驗證**：德文與英文兩個條目**各自獨立寫了同一件事**，且限定語很明確（是「獨立廠牌發行的專輯首次獲金唱片」，不是「該廠第一張唱片」），可寫；行文若要用，建議照原句的限定語寫，不要簡化成「第一張金唱片」。\\n**跨卡連結**：製作人／團長 Annette Humpe 也是本批第 2 張 Rio Reiser《Rio I.》的製作人；Klaus Schulze 的 IC 廠牌與池中既有的 krautrock 卡同源。兩處連結不要各寫一次。\\n未寫進 facts 的：專輯榜名次，依派工信不寫。"
+ },
+ {
+  "key": "desc2:Udo Lindenberg & Das Panikorchester|Alles klar auf der Andrea Doria",
+  "artist": "Udo Lindenberg & Das Panikorchester",
+  "album": "Alles klar auf der Andrea Doria",
+  "facts": [
+   {
+    "f": "所釘 release-group 51e1837b 的欄位：title「Alles klar auf der Andrea Doria」、artist-credit **「Udo Lindenberg & Das Panikorchester」**（兩個藝人實體：8d3c6a3c，area Germany、1946-05-17 生；與 44bd8fa3 Das Panikorchester）、first-release-date 1973、primary-type Album、secondary-types **空**。轄下 9 筆 release 全部 Official：1973 DE 的 12\" Vinyl（Telefunken SLE 14719-P，10 軌）與同年的卡帶（Telefunken 4.21138／TTP 91 703，10 軌）、1976 TELDEC 再刷、1987 兩筆 CD、2002-10-28 兩筆 CD（其中一筆 12 軌）、2021-04-16 的數位 12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/51e1837b-3a85-3400-80ec-67e5214ece2c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1973 DE 原盤（Telefunken SLE 14719-P）的逐軌：A 面〈Alles klar auf der Andrea Doria〉3:42、〈Boogie Woogie-Mädchen〉3:30、〈Nichts haut einen Seemann um〉5:05、〈Ganz egal〉4:17；B 面〈Du heißt jetzt Jeremias〉2:50、〈Wir wollen doch einfach nur zusammen sein〉3:05、〈Dr. Chicago〉2:58、〈Cello〉3:00、〈Er wollte nach London〉3:55、〈Die größte Liebe〉0:48。**A 面四首、B 面六首，收尾那首只有 48 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=51e1837b-3a85-3400-80ec-67e5214ece2c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Alles klar auf der Andrea Doria〉的〈Entstehung und Veröffentlichung〉節：1973 年六月 Lindenberg 與少年時期的朋友 Steffi Stephan、ragtime 鋼琴手 Gottfried Böttger、Karl「Brutal」Allaut、Backi Backhausen、Judith Hodosi 組成 Ramba-Zamba-Band，**1973-08-13 首次以 Panik-Orchester 的名義登台**。專輯的排練 1973 年春天在 Münster 一座穀倉裡進行，七月進漢堡的 Teldec 錄音室錄音，1973-12-15 由 Telefunken 發行，原始版本是十軌的 LP。全碟詞曲都由 Lindenberg 一人所寫，製作大致由 Thomas Kukuck 一手包辦。當時他與 Marius Müller-Westernhagen、Otto Waalkes 同住漢堡 Rondeel 29 的「Villa Kunterbunt」——**寫詞要創造可信角色的建議來自 Westernhagen，好笑的人名靈感來自 Waalkes**。",
+    "src": "https://de.wikipedia.org/wiki/Alles_klar_auf_der_Andrea_Doria"
+   },
+   {
+    "f": "同一條目的〈Albumtitel〉與〈Mädchen aus Ostberlin〉兩節：盤名指的是義大利豪華郵輪 Andrea Doria——1956-07-26 在美國外海與瑞典客輪 Stockholm 相撞後沉沒，1706 名船上人員救回 1660 人，是當時民用航海史上規模最大的救援行動；**押韻的那句「Alles klar auf der Andrea Doria」宣稱一切正常，因此是反話**。B 面第二首原題〈Wir wollen doch einfach nur zusammen sein〉，後來以〈Mädchen aus Ostberlin〉這個更醒目的名字為人所知，寫的是德國分裂下的一段真人真事：1973-06-21 剛簽的《基礎條約》讓西德人比較容易當天往返東柏林，Lindenberg 在一次柏林之行認識了來自 Pankow 的「Manuela」，但**他只有一日通行證，最遲十二點前必須回到另一邊**。",
+    "src": "https://de.wikipedia.org/wiki/Alles_klar_auf_der_Andrea_Doria"
+   },
+   {
+    "f": "德國店面 id 694843398：標題「Alles klar auf der Andrea Doria (Remastered)」、掛名「Das Panikorchester & Udo Lindenberg」（**語序與所釘條目相反**）、releaseDate 1973-01-01、℗ 2013 Warner Music Group Germany，版權欄另註「Original-Veröffentlichung 1973 Teldec」、`trackCount` 12。攤開的曲目列 **12 軌、12 軌全部有試聽**，前十軌與 1973 原盤逐位置相符（第 6 軌標成「Mädchen aus Ost-Berlin (Wir wollen doch einfach nur zusammen sein)」兩個名字並列），**第 11、12 軌是標了 (Bonus Track) 的〈Tief im Süden〉2:26 與〈Rock' n' Roll Band〉3:16**。",
+    "src": "https://itunes.apple.com/lookup?id=694843398&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 8d3c6a3c 名下分頁列完 **220 個 release-group**，其中 primary-type=Album 且 secondary-types 空的 40 張。依 first-release-date 排，前四張是《Lindenberg》1971、《Daumen im Wind》1972、**《Alles klar auf der Andrea Doria》1973**、《Ball Pompös》1974——**本張是他名下第三張純正規盤**。220 筆裡另有一筆 1991 年同名的 release-group（6a09c0ef，primary-type Album 但 secondary-types 帶 Compilation），與本卡不是同一筆；primary-type=Compilation 的則是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8d3c6a3c-4d97-455c-ad07-3fefc0172861&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名那句「Andrea Doria 上一切正常」是反話——那艘船 1956 年就沉了",
+   "B 面那首東柏林戀曲寫的是真事，他手上只有一張當天必須回去的通行證"
+  ],
+  "sound": "1973 原盤十軌、A 面四首 B 面六首，單軌從 48 秒到 5:05。底子是新組的 Panik-Orchester：ragtime 鋼琴、薩克斯風與吹管撐起 Dixieland 味的搖滾，〈Ganz egal〉開頭有一分鐘當時風格的硬搖滾器樂前奏，〈Cello〉則以弦樂四重奏開場、編制稀疏得接近巴洛克流行。全碟德語演唱、咬字口語化，人名與地名密集出現在歌詞裡；收尾的〈Die größte Liebe〉只有 48 秒，是拿德語情歌開玩笑的短曲。",
+  "keyTracks": [
+   "Alles klar auf der Andrea Doria",
+   "Wir wollen doch einfach nur zusammen sein",
+   "Cello"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973。所釘 release-group 的 first-release-date 是 **1973**（只到年）、轄下最早的兩筆 release 都標 1973 DE，德文條目寫首發日是 **1973-12-15**（Telefunken），德國店面 id 694843398 的 releaseDate 標 1973-01-01（只精確到年）。四處同年，取 **1973**；℗ 2013 是再發標記、不採。同名先行單曲：無同名專輯級條目，但 322030646 是〈Candy Jane / Alles klar auf der Andrea Doria〉的雙面單曲、標 1973——**那是單曲不是專輯**，不影響年份。",
+  "notes": "**探測層可補的試聽**：de 694843398，12 軌全部有 previewUrl。**但 12 不是原盤軌數**——後兩軌明標 (Bonus Track)，是 2002 年 CD 再發加的〈Tief im Süden〉與〈Rock 'n' Roll Band〉；依裁定 140 的加曲版分界（多出來的排在最後、且有標記）可用，**但行文提軌數要寫 10 軌，收尾曲是 48 秒的〈Die größte Liebe〉**。\\n**搜尋端點對這張整批回 403（八個店面全部）**，是靠藝人目錄與盤名直搜才找到的——裁定 173／185 在本張再中一次。\\n**掛名語序**：所釘條目是「Udo Lindenberg & Das Panikorchester」，店面那筆是「Das Panikorchester & Udo Lindenberg」，兩種語序都存在，卡片沿用前者。\\n策展層說法逐條查證：220 個 release-group、40 張純 Album、本張是第三張、Telefunken、10 軌、1991 年同名 Compilation 是最像的假陽性——**全部屬實**。\\n**銷量與獎項**：條目記本張售出逾十萬張、由廠牌頒銀唱片（德國的 BVMI 制度 1975 年才開始，這面是廠牌自頒），這是他第一次的商業成功；**唱片榜名次與樂評引句依派工信不寫**。\\n晚於發行的事件分類：Lindenberg 後來延續德國分裂主題寫的〈Sonderzug nach Pankow〉(1983) 等屬「作品本身的後世流傳」，要寫須標時序。"
+ },
+ {
+  "key": "desc2:Die Ärzte|Debil",
+  "artist": "Die Ärzte",
+  "album": "Debil",
+  "facts": [
+   {
+    "f": "所釘 release-group 26535caf 的欄位：title「Debil」、artist-credit「Die Ärzte」（藝人實體 f2fb0ff0，area Germany、1982 起、type Group）、first-release-date **1984-11**、primary-type Album、secondary-types **空**。轄下 12 筆 release 全部 Official，其中 1984 年的四筆（兩捲卡帶 CBS 40-26237、12\" Vinyl CBS 26237、CD CDCBS 26237）**都是 13 軌**；1990 年三筆 CBS 467217 也是 13 軌；**1990-09-06 一筆 XW 數位版標題寫成「Devil」、18 軌**，2005-10-21 的黑膠（13+6 軌）與 Enhanced CD（18 軌）同樣叫《Devil》。",
+    "src": "https://musicbrainz.org/ws/2/release-group/26535caf-778b-3392-bbf6-ff16a712bbcb?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1984 DE 原盤（CBS 26237）的逐軌：A 面〈Ärzte Theme (instrumental)〉2:00、〈Scheißtyp〉2:58、〈Paul〉2:26、〈Kamelralley〉4:00、〈Frank'n'stein〉2:38、〈El Cattivo〉3:12、〈Claudia hat 'nen Schäferhund〉1:58；B 面〈Mädchen〉2:55、〈Mr. Sexpistols〉3:14、〈Micha〉2:52、〈Zu spät〉2:43、〈Roter Minirock〉2:15、〈Schlaflied〉4:13。**十三軌裡十一軌不到三分半，最長的〈Schlaflied〉4:13 收尾。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=26535caf-778b-3392-bbf6-ff16a712bbcb&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Debil (Album)〉的〈Hintergrund〉與〈Lieder〉兩節：前一張 EP《Uns geht's prima…》還在柏林小廠 Vielklang，之後 CBS 才簽下這支柏林龐克團；**整張專輯只花 13 天錄完**，製作是樂團自己加上 Stan Regal。首支單曲〈Paul〉沒有進榜，專輯當時也只是小成功，是靠不斷巡演一場一場累積出聽眾的。**黑膠與卡帶版把兩面分別題為「Jungsseite」（男生面）與「Mädchenseite」（女生面），而且兩面在第一首歌之前都會先聽到一句「Ey, du Blödmann, du hast die falsche Seite aufgelegt!」（喂笨蛋，你放錯面了）**；CD 版兩者都沒有。",
+    "src": "https://de.wikipedia.org/wiki/Debil_(Album)"
+   },
+   {
+    "f": "同一條目的〈Indizierung〉節：這張上市三年後，1987 年因〈Claudia hat 'nen Schäferhund〉與〈Schlaflied〉兩首被聯邦青少年危害出版品審查處（BPjS）列入危害青少年名單，理由是兩首「在社會倫理上使人失去方向」、有「粗暴化作用」，**唱片自此只能賣給成年人並且禁止打廣告**。起因是同年稍早樂團 1986 年的同名專輯先因〈Geschwisterliebe〉被列管，於是早期作品一併被回頭審查。**2004-11-30 該處撤銷列管**，理由是回頭看那兩首具有「諷刺形式」；隔年 2005-10-21 這張才以《Devil》為名重新發行，附 24 頁小冊與此前未發表的加曲。",
+    "src": "https://de.wikipedia.org/wiki/Debil_(Album)"
+   },
+   {
+    "f": "德國店面 id 1533957895：標題**「Devil (Debil Re-Release)」**、掛名「Die Ärzte」、releaseDate 1990-09-06、℗ 2005 Die Ärzte distributed by Sony Music Entertainment Germany、`trackCount` 18。攤開的曲目列 **18 軌、18 軌全部有試聽**，前 13 軌與 1984 原盤逐位置相符，第 14 軌起是加曲：〈Teenager Liebe〉2:57、〈Grace Kelly〉2:21、〈Ärzte Theme〉1:58（三首都是電影《Richy Guitar》的版本）、〈Claudia hat 'nen Schäferhund〉的 Unikum 卡帶合輯版 1:54，以及 7:26 的〈Füße von Tisch〉。",
+    "src": "https://itunes.apple.com/lookup?id=1533957895&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 f2fb0ff0 名下分頁列完 160 個 release-group，其中 primary-type=Album 且 secondary-types 空的 16 張，**本張 1984-11 是其中年份最早的一張**。160 筆裡沒有第二筆叫《Debil》的條目；最像的假陽性是 1986 年那張與掛名同名的《Die Ärzte》（任何「藝人名＝盤名」的比對都會配到）與 1985 年的《Im Schatten der Ärzte》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f2fb0ff0-5679-42ec-a55c-15109ce6e320&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "黑膠兩面題成男生面與女生面，兩面開頭都先罵一句「你放錯面了」",
+   "上市三年後被列入危害青少年名單、只准賣給成年人，十七年後才解禁"
+  ],
+  "sound": "1984 原盤十三軌、兩面各七與六首，總長約三十七分鐘，單軌 1:58 到 4:13。三件式龐克：Farin Urlaub 的吉他、Bela B. 的鼓與 Sahnie 的貝斯，速度快、和弦簡單、歌全部唱德語，人聲刻意帶點漫不經心的滑稽感。開場是兩分鐘的器樂〈Ärzte Theme〉，主題從校園、女孩到黑色幽默，歌詞的髒與玩笑是這張的招牌；收尾的〈Schlaflied〉4:13 是全碟最長也最陰的一首。",
+  "keyTracks": [
+   "Paul",
+   "Zu spät",
+   "Claudia hat 'nen Schäferhund"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。所釘 release-group 的 first-release-date 是 **1984-11**、轄下最早的四筆 release 全標 1984 DE（黑膠與 CD 都標 1984-11），德文條目也寫 1984 年發行。取 **1984**。**店面那筆的 releaseDate 是 1990-09-06、℗ 2005，都不是原盤年**——那是 1990 年改名《Devil》再發、2005 年解禁後重新發行的標記，不可拿來當卡片年份（裁定 141 同型）。同名先行單曲：無——首支單曲是〈Paul〉，不與專輯同名；藝人名下 160 個 release-group 沒有第二筆叫《Debil》。",
+  "notes": "**探測層原判 unavailable，本層改走藝人目錄找到了**：de **1533957895**（《Devil (Debil Re-Release)》，18 軌、18 軌全有 previewUrl）。**這是裁定 173／185 在本張的命中：`search` 用「Debil」查不到，因為店面上的盤名是《Devil》**——1990 年那次改名再發。\\n**18 軌不是原盤軌數**：原盤 13 軌，第 14 軌起是有明確標記的加曲（三首電影版、一首卡帶合輯版、一首未發表曲）。依裁定 140 可用，**但行文提軌數一律寫 13 軌**。\\n策展層說法逐條查證：160 個 release-group、16 張純 Album、本張最早、CBS、12 筆 release 全 Official、店面盤名是《Devil》而非《Debil》——**全部屬實**。策展層寫「原盤 1984 只有 13 軌」也對。\\n**回撈候選清單裡的七筆全部不是本張**（`1533954916`《Im Schatten Der Ärzte》、`1533958937`《Zu spät - EP》、`1523456296`《Uns geht's prima - EP》等，全是靠年份猜的鄰近品項）——本層改由藝人目錄逐筆比盤名才命中。\\n**題材處理**：列管與解禁是這張的主故事，依「題材無禁區」照寫；歌詞內容（BPjS 判詞裡描述的性題材）**不逐字引、也不渲染細節**，寫到「被列管、理由、解禁」這一層即可。\\n未寫進 facts 的：2005 年再發版的榜單名次與樂評引句，依派工信不寫。"
+ }
+]
