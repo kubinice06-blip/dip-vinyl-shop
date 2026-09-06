@@ -1,0 +1,102 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Robyn Sexistential",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Robyn",
+  "album": "Sexistential",
+  "year": 2026,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Konichiwa Records／Young（catno YO467LP／YO467CD／YO467DA）",
+  "why": "2026-03-27 發行的 Robyn 新作，MB 該 release-group 轄下四筆 release 全為 Official，載體含 12 吋黑膠、CD 與數位，九軌，廠牌掛 Konichiwa Records 與 Young 兩家、編號 YO467 系列。同名先行單曲《Sexistential / Talk to Me》2026-01-07 先出，專輯版本晚兩個半月。池中 Robyn 現有 4 張（實掃 seed_cards.json 全 14,424 列）：《Don’t Stop the Music》2002、《Body Talk, Pt 1》《Body Talk, Pt 2》《Body Talk》皆 2010——2010 年之後的目錄池中全無，這張補的是那段空白的最新一端。",
+  "risk": "同名假陽性有兩筆且都在 2026 年：先行單曲《Sexistential / Talk to Me》與 Robyn & Arca 的混音單曲《Sexistential (Arca’s take)》，兩筆的盤名都含「Sexistential」，字串比對會撞（裁定 162 的形狀）。掛名還有 Robyn Hitchcock、Robyn Froese、Robyn Adele Anderson 三位同名不同人在 2026 年都有作品，`artist:` 查的是 artist-credit 字串不是實體（裁定 20），實掃時要看 MBID。封面與試聽走 us／gb 店面。",
+  "mbNote": "釘 release-group ebe6e41d-3f9e-4633-b5b9-8752e31ceec7。回問 release-group?inc=artist-credits+releases 確認：title「Sexistential」、artist-credit「Robyn」、first-release-date 2026-03-27、primary-type Album、secondary-types 空、轄下 4 筆 release 全 Official（XW ×3、未填國別 ×1）。刻意不釘：af1a8918-271d-4b44-b0c3-ea227ae8898d《Sexistential / Talk to Me》（2026-01-07 先行單曲，primary-type Single）、5334e998-1c28-4445-9fe9-c3a9906a924d《Sexistential (Arca’s take)》（Single+Remix）。藝人 MBID 5a8e07d5-d932-4484-a7f7-e700793a9c94，名下 109 個 release-group（release-group?artist=&limit=100&offset= 分頁取得）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Kacey Musgraves",
+  "album": "Middle of Nowhere",
+  "year": 2026,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Lost Highway（catno 00199957220385／00199957358088）",
+  "why": "2026-05-01 由 Lost Highway 發行，MB 該 release-group 轄下 19 筆 release 全 Official，涵蓋 AU／XE／US 三個市場，載體有 12 吋黑膠（13 軌）、CD、卡帶與數位，數位版另有 15 軌與 16 軌兩種曲目長度。同名先行單曲 2026-04-17 先出。池中 Kacey Musgraves 現有 4 張（實掃 seed_cards.json 全 14,424 列）：《Pageant Material》2015、《A Very Kacey Christmas》2016、《Golden Hour》2018、《star-crossed》2021——2021 年之後的目錄池中全無。",
+  "risk": "同名單曲 8cfd8d4a（2026-04-17）與專輯同名，字串比對必撞。曲目長度三說（黑膠 13 軌、數位 15 軌、另一數位 16 軌），行文不得寫「這張有幾首」。曲風歸 folk 是因為十類清單裡沒有 country，pop 為第二軸。封面與試聽走 us 店面；黑膠版與 CD 版封面可能不同，取 US 那筆。",
+  "mbNote": "釘 release-group f0387d06-86d9-40e6-9bb3-c82de9002006。回問確認：title「Middle of Nowhere」、artist-credit「Kacey Musgraves」、first-release-date 2026-05-01、primary-type Album、secondary-types 空、轄下 19 筆 release 全 Official（AU／XE／US）。刻意不釘：8cfd8d4a-ab76-4a3a-bf63-567a43828f51《Middle of Nowhere》（2026-04-17 同名先行單曲，primary-type Single）。藝人 MBID d1393ecb-431b-4fde-a6ea-d769f2f040cb，名下 64 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Gorillaz",
+  "album": "The Mountain",
+  "year": 2026,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Kong（catno KONG001LPI／KONG001LPT／KONG001CD／KONG001D）",
+  "why": "2026-02-27 由 Kong 發行，編號 KONG001 是該廠牌編號序列的起點段。MB 該 release-group 轄下 7 筆 release 全 Official，橫跨 XE／GB／US／XW，載體含三種 12 吋黑膠壓片（15 軌、7 軌、8 軌三種切法）、CD 與數位，其中一筆 XW 數位版只有 1 軌。池中 Gorillaz 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Demon Days》2005——2005 年之後整條目錄池中全無，這張是把那條線接上的一端。",
+  "risk": "黑膠壓片有 15／7／8 三種軌數切法（雙片與單片的分片差異），行文不得斷言原盤軌數（裁定 141）。同期另有單曲《The Hardest Thing / Orange County》（2026-01-15）與《Damascus (Armageddon Turk Mix)》，盤名不同、不會撞。封面與試聽走 gb／us 店面。",
+  "mbNote": "釘 release-group b82f59df-2659-4c23-a3b6-9eb2518b4327。回問確認：title「The Mountain」、artist-credit「Gorillaz」、first-release-date 2026-02-27、primary-type Album、secondary-types 空、轄下 7 筆 release 全 Official（XE／GB／US／XW ×4）。刻意不釘：6c9e4a84-e9ac-493b-b27a-d697cf912ea2《The Hardest Thing / Orange County》（2026-01-15 單曲）、af0e4171-c143-48ce-92a4-d506f2ef6640《Feel Good Inc. (ZKAI Bootleg Edit)》（Single+Remix）。藝人 MBID e21857d5-3256-4547-afb3-4b6ded592596，名下 174 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "you seem pretty sad; Olivia Rodrigo 2026",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Olivia Rodrigo",
+  "album": "you seem pretty sad for a girl so in love",
+  "year": 2026,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Geffen Records（catno 199957737678）",
+  "why": "2026-06-12 由 Geffen Records 發行，MB 該 release-group 轄下 22 筆 release 全 Official，涵蓋 AU／XE／US，載體有 12 吋黑膠、CD、卡帶與數位，黑膠與 CD 皆 13 軌、數位另有 14 軌版。先行單曲《drop dead》2026-04-17、《the cure》2026-05-22 先出，同日另有《honeybee / cigarette smoke》與《stupid song》兩張單曲。池中 Olivia Rodrigo 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Sour》2021。",
+  "risk": "盤名極長（41 字元）且全小寫，Apple 端點對長盤名的命中率會掉（裁定 152），queryAlias 要留短形。2026 年同藝人有大量單曲與 SNL 廣播錄音（Broadcast＋Live）在 MB 上，`artist:` 查詢會一起回來，靠 primary-type 過濾。數位版 14 軌 vs 實體 13 軌，行文不得斷言軌數。封面與試聽走 us 店面。",
+  "mbNote": "釘 release-group 4c4eee61-da1e-4115-8eb9-07e5b671fefe。回問確認：title「you seem pretty sad for a girl so in love」、artist-credit「Olivia Rodrigo」、first-release-date 2026-06-12、primary-type Album、secondary-types 空、轄下 22 筆 release 全 Official（AU／XE／US）。刻意不釘：2abba7f3-7851-44af-bbc1-2ebee07a6d4e《Olivia Rodrigo: Saturday Night Live》（EP+Compilation）、589db98a-ffcc-4e4a-a3ad-2fb31050588d《drop dead (SNL)》與 dcbd9eab-a515-4c06-9a12-a94fefeee867《begged (SNL)》（皆 Broadcast+Live）。藝人 MBID 6925db17-f35e-42f3-a4eb-84ee6bf5d4b0，名下 66 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Charli xcx",
+  "album": "Music, Fashion, Film",
+  "year": 2026,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Atlantic（catno 075678584206／日本盤 WPCR-18859）",
+  "why": "2026-07-24 由 Atlantic 發行，MB 該 release-group 轄下 24 筆 release 全 Official，載體含 12 吋黑膠、CD、卡帶與數位（11 軌），另有 6 軌、12 軌、19 軌三種數位切法與一張 2 軌 7 吋單曲，日本盤編號 WPCR-18859。池中 Charli xcx 現有 5 張（實掃 seed_cards.json 全 14,424 列，掛名一律作「Charli xcx」小寫）：《True Romance》2013、《SUCKER》2014、《Charli》2019、《CRASH》2022、《Brat》2024——《Brat》之後的目錄池中全無。",
+  "risk": "掛名 MB 實體作「Charli xcx」（xcx 小寫），池中五張同寫法，維持一致。同年另有 Album+Soundtrack 的《Wuthering Heights》（8a03034e，2026-02-13）與兩筆 Broadcast+Live，都是 2026 年、同藝人，逐張複檢時容易配錯。盤名含兩個逗號，Apple 搜尋要拆。封面與試聽走 us／gb 店面。",
+  "mbNote": "釘 release-group 15010f36-5433-4a29-9b68-26c13fb4c7ec。回問確認：title「Music, Fashion, Film」、artist-credit「Charli xcx」、first-release-date 2026-07-24、primary-type Album、secondary-types 空、轄下 24 筆 release 全 Official（多為 XE）。刻意不釘：8a03034e-d5be-4d37-a32c-da9858b3cf59《Wuthering Heights》（Album+Soundtrack，2026 電影原聲）、5aa3be43-a5bf-4845-9921-356a68b51764《Lollapalooza 2026》與 5a0998d8-5ce4-446b-a9b1-55bc6416243c《Charli xcx: Live at the BBC》（皆 Broadcast+Live）。藝人 MBID 260b6184-8828-48eb-945c-bc4cb6fc34ca，名下 224 個 release-group。"
+ }
+]
