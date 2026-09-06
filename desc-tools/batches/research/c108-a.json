@@ -458,5 +458,225 @@
   "status": "full",
   "yearVerified": "**兩說，採 MB 的 1978。** MB release-group first-release-date **1978**、其下唯一一筆 release（PE／Official／Horoscopo **HLP 001**）也是 1978；Apple pe 1093449379 的 releaseDate 是 **1976-10-24**、℗ 也寫 **1976 Discos Horóscopo**，**兩邊差兩年**。採 MB 的三個理由：(a) MB 那筆有國別、狀態與 catno，Apple 只有日期（裁定 77／91）；(b) catno **HLP 001** 是該廠牌的第一號，與 1978 年開廠相容；(c) **MB 的藝人實體 life-span 起年就是 1978**——若採 Apple 的 1976，這張碟會早於樂團成立兩年。**行文不得斷言發行年月**；要寫年份只寫 1978，不得引用 1976。",
   "notes": "**探測層 ready 覆核通過**：pe 1093449379，12 軌全有 previewUrl，曲名／曲序與 MB 1978 PE 原盤逐位置相符（MB 未填長度，長度那一層做不到），`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**探測層記的 appleYear 是 1976，與卡片的 1978 不同，這不是配錯碟、是 Apple 自己的日期有問題**（見 yearVerified）。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。同藝人名下另有兩筆帶 Compilation 的整編輯（2005《El Faraon de la Chicha Vol.1》、2007《Recuerdos Inolvidables Vol.2》）與一筆 **primary-type 為空**的《Éxitos de Papá Chacalón》，配對時都不要撞進去。\\n**身分回問（裁定 179）**：MB 藝人實體 326162e7 的 type=Group、country=PE、**disambiguation 空**、**life-span 1978–1994**——**本批 45 張裡唯一一個 MB 已標終止年的藝人**。**MB 沒有任何欄位記載 Chacalón 本人的姓名或生卒**，行文若要提到他個人，需另找來源。\\n**⚠ 自我同名（裁定 162 的最強形狀）**：掛名與盤名字串完全相同，**任何方向的子字串比對都會命中**；MB 的 RG 標題大小寫（Chacalón Y La Nueva Crema）又與 artist-credit（小寫 y／la）不同。卡單採 credit 的寫法，**覆核無誤**。\\n**擋下策展層一處（預防性）**：1978 年 MB 上名下有**兩筆** Album（本張與《Exitos ...Exitos ...Exitos》），**兩筆的先後在 MB 上分不出來**（都只有年份、沒有月日）。**行文不得寫「首張」「出道作」「第一張」**——即使 catno 是 HLP 001，那是廠牌編號不是樂團的發行序。"
+ },
+ {
+  "key": "desc2:Chacalón y la Nueva Crema|El Soberano de la Cumbia",
+  "artist": "Chacalón y la Nueva Crema",
+  "album": "El Soberano de la Cumbia",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c8daf110 的欄位：title「**El Soberano De La Cumbia**」（De、La 大寫）、artist-credit「Chacalón y la Nueva Crema」（藝人 MBID 326162e7）、first-release-date **1982**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1982／PE／Official，12 吋黑膠，**廠牌 Horoscopo、catno「HLP 1009」**，11 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c8daf110-478d-4d19-bd8c-daf7f9318a64?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1982 PE 黑膠（Horoscopo HLP 1009）的逐軌曲目與長度（**這一張 MB 有填長度**）：1〈Ilusión De Amor〉3:13、2〈A Trabajar〉3:30、3〈Lejos De Tu Amor〉2:49、4〈Vete De Mi Lado〉3:30、5〈Muchacha Traicionera〉4:16、6〈Que Sera De Mi〉3:31、7〈Amor Imposible〉3:43、8〈Sueño Con Tu Amor〉3:25、9〈Pagaras Tu Traicion〉3:52、10〈Nube Gris〉3:03、11〈Parranda De Chacalon〉**6:25**。**末軌〈Parranda De Chacalón〉6:25 比其他十軌任何一首都長超過兩分鐘，是全碟長度分布上唯一的斷點。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c8daf110-478d-4d19-bd8c-daf7f9318a64&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1775638838：collectionName「El Soberano de la Cumbia」、artistName「Chacalón y la Nueva Crema」、releaseDate **1983-01-12**、copyright「**℗ 1983 Chacalón y la Nueva Crema**」（版權掛在樂團自己名下，不是廠牌）、trackCount 11。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲名／曲序與 MB **逐位置相符**、**逐軌長度與 MB 每一軌相差都在 1 秒內**（3:14／3:30／2:50／3:30／4:16／3:31／3:44／3:26／3:53／3:03／6:26）。Apple 那一份把重音補齊：〈Qué Será de Mí〉〈Pagarás Tu Traición〉〈Parranda de Chacalón〉。",
+    "src": "https://itunes.apple.com/lookup?id=1775638838&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 326162e7（Chacalón y la Nueva Crema，**Group／CO 欄為 PE／disambiguation 空／life-span 1978–1994**）分頁列完 8 個 release-group，Album 依 first-release-date：1978《Exitos ...Exitos ...Exitos》、1978《Chacalón Y La Nueva Crema》、**1982《El Soberano De La Cumbia》**、1983《Los Admirados De La Nueva Crema》、1985《Vol. 5 Tu Vida, Mi Vida》，另兩筆 2005／2007 帶 secondary-type Compilation、一筆無年份且 **primary-type 為空**。**1982 年名下只有這一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=326162e7-0e56-49ba-8aa9-a0b12dbc6526&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十首都在三分鐘上下，最後一首〈Parranda de Chacalón〉獨自跑滿六分二十五",
+   "Apple 上這張的 ℗ 不掛廠牌，掛的是樂團自己的名字"
+  ],
+  "sound": "MB 只登記一筆 release：1982 年祕魯 Horoscopo 的 12 吋黑膠 HLP 1009，單片 11 軌，**而且 MB 這一次把每一軌的長度都填了**：3:13／3:30／2:49／3:30／4:16／3:31／3:43／3:25／3:52／3:03／6:25，Apple pe 1775638838 的每一軌與之相差都在 1 秒內。前十軌集中在 2:49–4:16，末軌〈Parranda De Chacalón〉6:25 是唯一的長曲。曲名整張都在同一種題材上：〈Muchacha Traicionera〉〈Pagarás Tu Traición〉〈Amor Imposible〉〈Vete De Mi Lado〉〈Lejos De Tu Amor〉，只有第 2 軌〈A Trabajar〉與末軌把主唱的綽號寫進曲名的〈Parranda De Chacalón〉離開這條線。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Ilusión De Amor",
+   "A Trabajar",
+   "Parranda De Chacalon"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說，採 MB 的 1982。** MB release-group first-release-date **1982**、其下唯一一筆 release（PE／Official／Horoscopo **HLP 1009**）也是 1982；Apple pe 1775638838 的 releaseDate **1983-01-12**、℗ 也寫 **1983**，**兩邊差一年**。依裁定 141（兩邊各有具體記載時不換值）採 MB：MB 那筆有國別、狀態與 catno，Apple 只有日期與一個掛在樂團自己名下的 ℗。**行文不得斷言發行年月。** 同名先行單曲：無；MB 藝人頁 8 個 release-group 裡沒有第二筆與《El Soberano De La Cumbia》同名的東西。",
+  "notes": "**探測層 ready 覆核通過，而且這是本批 a 組少數三層都比得成的一張**：pe 1775638838，11 軌全有 previewUrl，**曲名、曲序與逐軌長度都與 MB 1982 PE 原盤逐位置相符（長度每一軌差 ≤1 秒）**——裁定 157 的三層比對全做完。`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。同藝人名下的 2005／2007 兩筆才是帶 Compilation 的整編輯。\\n**身分回問（裁定 179）**：MB 藝人實體 326162e7 的 type=Group、country=PE、**disambiguation 空**、**life-span 1978–1994**。**本張落在這個區間中段**，這是 MB 上唯一與樂團活動期有關的欄位；**MB 沒有記載 Chacalón 本人的姓名或生卒**，行文若要提到他個人（包括「Chacalón」是誰的綽號），需另找來源。\\n**擋下策展層零處**：卡單 `risk` 對年份兩說的處理與實查相符（Apple 1983／MB 1982，卡單採 1982）。**但要補一個下游警告**：MB 上 1982 年只有這一筆、1983 與 1985 各還有一筆，**行文不得寫「最後一張」「顛峰之作」**，也不得用「第 N 張」——1978 年那兩筆的先後在 MB 上分不出來，整條序列的序數都不可靠。"
+ },
+ {
+  "key": "desc2:Lucho Bermúdez|San Fernando y otros éxitos inolvidables de Lucho Bermúdez y Matilde Díaz",
+  "artist": "Lucho Bermúdez",
+  "album": "San Fernando y otros éxitos inolvidables de Lucho Bermúdez y Matilde Díaz",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5fa1f7b1 的欄位：title「San Fernando y otros éxitos inolvidables de Lucho Bermúdez y Matilde Díaz」、artist-credit「**Lucho Bermúdez y Matilde Díaz**」（**群組實體 MBID 2d1d0c07，不是 Lucho 個人實體**）、first-release-date **1954**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1954／**CO**／Official，Vinyl，**廠牌 Sonolux、catno 空**，14 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5fa1f7b1-9b6f-42d5-8111-7e1f4b7a99d2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1954 CO release 的逐軌曲目（MB 未填任何一軌長度）：1〈Navidad Negra〉、2〈La Mucura〉、**3〈San Fernando〉**、4〈Te Busco〉、5〈Mañanitas〉、6〈La Bramadora〉、7〈Tambores De Chambacu〉、8〈Carmen De Bolivar〉、9〈Danza Negra〉、10〈La Gaita〉、11〈Salsipuedes〉、12〈Mi Cumbia〉、13〈Pepe〉、14〈Fantasia Tropical〉。**盤名開頭的〈San Fernando〉排在第 3 軌、不是開場曲**；曲名裡點了三個哥倫比亞地名（Chambacú、Carmen de Bolívar、Salsipuedes）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5fa1f7b1-9b6f-42d5-8111-7e1f4b7a99d2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1749165736：collectionName「San Fernando y Otros Éxitos Inolvidables de Lucho Bermúdez y Matilde **Diaz**」（**Diaz 無重音**）、artistName「**Lucho Bermúdez**」（**不含 Matilde Díaz**）、releaseDate **1954-08-01**、copyright「**℗ 1954 Sonolux**」、trackCount 14。`entity=song` 攤得出 **14 軌、14 軌全部有 previewUrl**，曲名／曲序與 MB **逐位置相符**（Apple 補了重音：〈La Múcura〉〈Fantasía Tropical〉）。逐軌長度 3:55／3:13／2:59／2:46／2:49／3:08／3:03／2:29／2:28／2:34／2:33／2:58／3:39／2:48，**十四軌全部落在 2:28–3:55，總長不到四十二分鐘**。",
+    "src": "https://itunes.apple.com/lookup?id=1749165736&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 2d1d0c07：name「Lucho Bermúdez y Matilde Díaz」、sort-name「Lucho y Matilde」、type **Group**、country **CO**（area Colombia）、**disambiguation 空**、life-span **`ended: true` 但 begin 與 end 兩欄都是 null**（標了已結束、卻沒有任何年份）、**名下只有這 1 個 release-group**。這是一個為了這張碟而建的合掛實體，**MB 上沒有任何欄位說明 Lucho Bermúdez 與 Matilde Díaz 兩人各自的角色**。",
+    "src": "https://musicbrainz.org/ws/2/artist/2d1d0c07-bc4a-4e1c-968f-8e0413384f5b?fmt=json"
+   },
+   {
+    "f": "Apple `search` 端點在 pe 店面以「San Fernando Lucho Bermudez」查，`resultCount` 3：**1749165736 本張**（14 軌，1954）、1106722105《San Fernando Orquesta de Lucho Bermúdez (feat. Matilde Diaz)》（**掛名寫成「San Fernando Orquesta De Lucho Bermúdez」、16 軌、2016-04-18**，是另一筆、不得配到）、1413618954《Homenaje a los Grandes Compositores de la Música Tropical Colombiana, Vol. 1》（14 軌，2011）。**三筆同店面、軌數又有兩筆都是 14**，配對只能靠逐軌曲名比對，不能靠軌數。探測層十個店面只在 pe 命中（`pe:1→1`）——一張 1954 年的哥倫比亞 Sonolux 盤，數位發行權落在祕魯店面，與本批整體形狀一致（c-108 十店面實測 pe 30／cl 5／us 3，`co` 零命中）。",
+    "src": "https://itunes.apple.com/search?term=San%20Fernando%20Lucho%20Bermudez&country=pe&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "盤名頭一個字是〈San Fernando〉，這首卻排在第三軌",
+   "1954 年的哥倫比亞 Sonolux 盤，今天只有祕魯的店面找得到"
+  ],
+  "sound": "MB 只登記一筆 release：1954 年哥倫比亞 Sonolux 的黑膠，**廠牌有名字但 catno 欄是空的**，14 軌；MB 未填長度，逐軌時間來自 Apple pe 1749165736（曲序逐位置相符）：3:55／3:13／2:59／2:46／2:49／3:08／3:03／2:29／2:28／2:34／2:33／2:58／3:39／2:48。**十四軌全部落在 2:28–3:55，最長與最短只差一分二十七秒**，是本批最平的一份長度分布之一。開場〈Navidad Negra〉3:55 最長。曲名把哥倫比亞加勒比岸的地與節奏排成一列：〈Tambores De Chambacu〉〈Carmen De Bolivar〉〈Salsipuedes〉〈La Gaita〉〈Mi Cumbia〉〈Danza Negra〉。MB 與 Apple 都沒有這張的班底、錄音室或編制資料。",
+  "keyTracks": [
+   "Navidad Negra",
+   "San Fernando",
+   "Carmen De Bolivar"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1954（**三處**）。MB release-group first-release-date **1954**、其下唯一一筆 release（CO／Official／Sonolux）也是 1954、Apple pe 1749165736 的 releaseDate 1954-08-01 與 **℗ 1954 Sonolux** 相符。**這是本批年份最早的一張，而且 Apple 的 ℗ 就是原盤年、不是再發年。** 同名先行單曲：無——這個群組實體名下**只有這一個 release-group**，沒有第二筆可以撞名。**但要注意：MB 的年份沒有月日，Apple 的 08-01 是單方面的**，行文不得寫月份。",
+  "notes": "**探測層 ready 覆核通過**：pe 1749165736，14 軌全有 previewUrl，曲名／曲序與 MB 1954 CO release 逐位置相符（MB 未填長度，長度那一層做不到），`trackCount` 欄與攤開的曲目列都是 14、無裁定 175 的落差。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。**⚠ 但盤名本身讀起來像精選輯**（「y otros éxitos inolvidables」＝「與其他難忘的名曲」），**行文不得把它寫成「錄音室專輯」或「一次錄成的一張碟」**——MB 的欄位只說它是 Album，沒有說這 14 軌是同一次錄音。這是裁定 184 的反向風險（欄位是 Album、實質可能是選輯）在本批的最強一例。\\n**⚠ 掛名（裁定 179／c-108 裁定 4）**：本張的 artist-credit 是群組實體 **2d1d0c07「Lucho Bermúdez y Matilde Díaz」**，type=Group、country=CO、**life-span 完全空白**、**名下只有這一個 release-group**；Lucho 的個人實體是另一個 MBID（81aa035d，14 個 release-group）。卡片採「Lucho Bermúdez」與 **Apple 的 artistName 一致**（Apple 也只掛 Lucho），覆核無誤。**MB 上沒有任何欄位說明 Matilde Díaz 在這張碟裡做什麼**，行文若要提她，只能寫「掛名並列」這個可查證的事實，**不得寫成「他的歌手」「他的妻子」之類的關係**。\\n**⚠ 同店面有三筆近似碟（裁定 162）**：Apple pe 的 search 回三筆，其中 1106722105《San Fernando Orquesta de Lucho Bermúdez (feat. Matilde Diaz)》（16 軌、2016）與 1413618954《Homenaje…Vol. 1》（**也是 14 軌**）都不是本張，**軌數比對在這一張擋不住錯配，只有逐軌曲名能擋。**\\n**⚠ 廠牌 catno 空**：MB 那筆 release 只有廠牌名 Sonolux、**沒有 catalog-number**，行文不得引用編號。\\n**擋下策展層零處**：卡單 `risk` 對兩個 MB 實體、Apple 的無重音 Diaz、長盤名短名配對（裁定 152）都預告正確。"
+ },
+ {
+  "key": "desc2:Aníbal Velásquez|Mambo Loco",
+  "artist": "Aníbal Velásquez",
+  "album": "Mambo Loco",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8f157439 的欄位：title「Mambo Loco」、artist-credit「**Aníbal Velásquez y su Conjunto**」（藝人 MBID c06d3377）、first-release-date **2010-04-12**、**primary-type Album、secondary-types 含 [Compilation]**。轄下 4 筆 release，**軌數兩說**：2010／XE／**Official**，12 吋黑膠，Analog Africa **AALP 067**，**11 軌**；2010-04／XE／**Official**，CD，Analog Africa **AACD 067**，10 軌；2010-04-12／XW／**Official**，Digital Media，Analog Africa，10 軌；2010-04／XE／**Promotion**，CD，AACD 067，10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/8f157439-4ace-473f-87e8-475828d2da63?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**黑膠 11 軌與 CD 10 軌的差別不只多一首**：LP（AALP 067）曲序 1〈Carruseles〉3:24、2〈Los Vecinos〉3:31、3〈Cecilia〉3:04、4〈Mi Cumbia〉2:29、5〈Que Paso〉5:24、6〈Vestido Nuevo〉3:00、7〈Mambo Loco〉2:40、**8〈Mi Sombreron〉2:41**、9〈Cumbia Bogotana〉2:33、10〈El Pechiche〉2:50、11〈Santo Amor〉3:00；CD（AACD 067）拿掉〈Mi Sombreron〉，並把第 9 軌寫成〈El **pecheche**〉2:46（LP 作〈El Pechiche〉2:50，**曲名與長度都不同**）。其餘九軌兩版相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8f157439-4ace-473f-87e8-475828d2da63&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1485795072：collectionName「Mambo Loco」、artistName「**Anibal Velasquez y Su Conjunto**」（無重音）、releaseDate **2010-04-12**、copyright「℗ 2010 Analog Africa」、trackCount 10。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**，曲名／曲序與 **MB 那筆 10 軌 CD 版逐位置相符**（無〈Mi Sombreron〉），逐軌長度與 CD 版相差都在 5 秒內——**唯獨末軌〈Santo Amor〉Apple 記 16:16、MB 記 3:00**，相差十三分鐘。**Apple 上架的是 10 軌 CD 版，不是 11 軌黑膠版。**",
+    "src": "https://itunes.apple.com/lookup?id=1485795072&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 c06d3377：name「Aníbal Velásquez」、type **Person**（本批 a 組唯一一個個人實體）、country **CO**、**disambiguation 空**、life-span 自 **1936-06-03** 起、無終止年。分頁列完共 **17 個 release-group**，Album 依 first-release-date：1968《Lo Ultimo...》、1969《No canto go gó》、1970《Tremenda Salsa》、1970《Esa Fue》、1970《Mano a mano bailable》[Compilation]、1970《Estas cosas...》、1972《Aníbal Velásquez y su Conjunto》、1980《Festival Bailable Con Anibal Velasquez》、1981-02-24《Anibal Velásquez y su conjunto, vol. 4》、2002《El ritmo y el sabor》、**2010-04-12《Mambo Loco》[Compilation]**、2025-03-31《A la manera de …》、無年份的《Anibal Velasquez y su ritmo》，另有四筆 Single。**本張是 MB 上他名下唯一一筆由歐洲廠牌發行的條目。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c06d3377-3ff5-41bb-8e1b-23998922ce9b&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "黑膠十一軌、CD 十軌——被拿掉的那首叫〈Mi Sombreron〉",
+   "1936 年生的哥倫比亞手風琴手，錄音要等到 2010 年才由德國的 Analog Africa 整成一張"
+  ],
+  "sound": "MB 四筆 release 全部 2010 年、全部掛德國廠牌 Analog Africa：12 吋黑膠 AALP 067 是 **11 軌**，CD AACD 067 與 XW 數位是 **10 軌**（另一筆同編號 CD 標 Promotion）。黑膠比 CD 多一首〈Mi Sombreron〉2:41，另有一軌兩版曲名與長度都不同（〈El Pechiche〉2:50／〈El pecheche〉2:46）。逐軌長度以 CD 版計：3:24／3:31／3:04／2:29／5:24／3:00／2:40／2:33／2:46／3:00，九軌落在 2:29–3:31，第 5 軌〈Que Paso〉5:24 是唯一的長曲。曲名以 cumbia 與地名為主（〈Mi Cumbia〉〈Cumbia Bogotana〉〈El Pechiche〉），同名曲〈Mambo Loco〉排第 7 軌。MB 與 Apple 都沒有這張的班底或錄音年代資料——**這是一張 2010 年出版、收錄早年錄音的考古整輯，但 MB 沒有記載任何一軌的原始錄音年。**",
+  "keyTracks": [
+   "Carruseles",
+   "Mambo Loco",
+   "Cumbia Bogotana"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2010（**三處**），**但這是整輯的出版年、不是錄音年**。MB release-group first-release-date **2010-04-12**、其下四筆 release 全部 2010（2010／2010-04／2010-04-12／2010-04）、Apple us 1485795072 的 releaseDate 2010-04-12 與 ℗ 2010 Analog Africa 相符。**卡片記的是復刻年 2010。** MB 與 Apple **都沒有記載這些錄音本來錄於哪一年**——藝人 1936 年生、MB 名下最早的 Album 是 1968 年，**行文若要提「早年錄音」只能寫成沒有標年的事實，絕不能推算或編一個年代區間**。同名先行單曲：無；同名曲〈Mambo Loco〉在碟內排第 7 軌。",
+  "notes": "**探測層 ready 覆核通過**：us 1485795072（**本批只有三張落在 us 店面，這是其中之一**），10 軌全有 previewUrl，曲名／曲序與 MB 那筆 10 軌 CD 版逐位置相符，`trackCount` 欄與攤開的曲目列都是 10。\\n**⚠ Apple 末軌長度異常**：〈Santo Amor〉Apple 記 **16:16**、MB 記 **3:00**，相差十三分鐘。其餘九軌兩邊差 ≤5 秒。**這一軌極可能是 Apple 把隱藏軌或整段連奏併進了同一個檔**。**行文不得引用這一軌的長度、也不得說這張碟有一首十六分鐘的曲子。**\\n**⚠ releaseType：這是本批 §5.6 判準的核心一張**——MB `primary-type=Album`、**`secondary-types` 含 [Compilation]**。依 `ALBUM_ONBOARDING.md` §5.6 明文與裁定 167，`primary-type=Album` 者照一般 Album 寫，**卡單 `releaseType: \"Album\"`、`exceptionReason` 與 `exceptionEvidenceUrls` 留空——正確**。**但下游行文要知道它實質上是考古整輯**，不得寫成「錄音室專輯」或「他 2010 年的新作」。\\n**⚠ 軌數兩說（裁定 140／175）**：黑膠 11 軌、CD／數位 10 軌，且有一軌曲名兩版不同。卡單 `risk` 已預告、且未填 `originalTrackCount`——**正確**。**行文不得寫這張有幾軌，也不得點〈Mi Sombreron〉（只在黑膠版上）。**\\n**授權狀態**：四筆中有一筆 **2010-04／XE 標 Promotion**，依裁定 43／57 不採為背書；其餘三筆 Official。\\n**掛名（c-108 裁定 4）**：MB artist-credit「Aníbal Velásquez y su Conjunto」、Apple「Anibal Velasquez y Su Conjunto」（無重音）、卡片採 MB 藝人實體名「Aníbal Velásquez」（**Person／CO／1936-06-03 生**）——覆核無誤。\\n**擋下策展層一處（預防性）**：`why` 若提到「哥倫比亞 cumbia 的代表」或任何「最」「第一」形狀，本次查到的來源都撐不住；MB 只給得出一份 17 筆的目錄與一個生日。"
+ },
+ {
+  "key": "desc2:Los Ángeles Negros|Y volveré",
+  "artist": "Los Ángeles Negros",
+  "album": "Y volveré",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0e4e6d3b 的欄位：title「Y volveré」、artist-credit「Los Ángeles Negros」（**帶重音**，藝人 MBID 3febb873）、first-release-date **1969**、**primary-type Album、secondary-types 空**。轄下 3 筆 release、全部 12 軌、**全部 Official**：**1969／CL，Vinyl，EMI Odeón Chilena S.A.（catno 空）**；1970-09-05／XW，Digital Media，Alegría Music Latino；1972／US，12 吋黑膠，**Parnaso catno P-LPS-1070**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0e4e6d3b-8838-3ff9-bb6f-d1820eff7e2f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**MB 三筆 release 的曲目相同，但 1969 智利原盤與 1970 數位版的曲序完全不同。** 1969 CL（EMI Odeón）：1〈Y volveré〉4:01、2〈Por siempre〉2:46、3〈Mejor es morir, morir〉3:13、4〈Y buen viaje〉2:19、5〈De otro brazo〉2:47、6〈Murió la flor〉3:17、7〈Cómo quisiera decirte〉2:43、8〈Mi niña〉3:06、9〈Ay amor〉2:53、10〈El rey y yo〉2:10、11〈Yo sé que estás〉2:55、12〈Tanto adiós〉2:51。1970-09-05 XW（Alegría Music Latino）：1〈Como Quisiera Decirte〉、2〈Mi Niña〉、3〈Ay Amor〉、4〈El Rey y Yo〉、5〈Yo Se Que Estas〉、6〈Tanto Adios〉、**7〈Y Volvere〉**、8〈Por Siempre〉、9〈Mejor Es Morir, Morir〉、10〈Y Buen Viaje〉、11〈De Otro Brazo〉、12〈Murió la Flor〉——**原盤的 A 面六首與 B 面六首被對調了**，同名曲從第 1 軌變成第 7 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e4e6d3b-8838-3ff9-bb6f-d1820eff7e2f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1435600006：collectionName「Y Volveré」、artistName「Los Ángeles Negros」、releaseDate **1970-09-05**、copyright「**℗ 2018 Alegria Music Latino.**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**。**曲序與 MB 那筆 1970-09-05 XW release 逐位置相符、與 1969 智利原盤不相符**：Apple 的第 1 軌是〈Como Quisiera Decirte〉、同名曲〈Y Volveré〉4:02 排在**第 7 軌**。逐軌長度與 XW 那筆相同到秒。",
+    "src": "https://itunes.apple.com/lookup?id=1435600006&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 3febb873：name「Los Ángeles Negros」、type **Group**、country **CL**、**disambiguation 空**、life-span 自 **1968** 起、無終止年。分頁列完共 **23 個 release-group**，**其中 13 筆帶 secondary-type Compilation**（《Album de oro》《Album de oro (Volumen 2)》《12 super éxitos》《Inolvidables》兩筆同名、《20 éxitos originales…》《Antología 1969-1982》《40 éxitos》《20 éxitos clásicos》《Lo mejor de…》《La balada romantica》《Baladas de oro 1》《Disco de oro》《15 melodias inolvidables…》）。**不帶 Compilation 的 Album 只有 8 筆**：1969《Y volveré》、1969《Porque te quiero》、1971《Esta Noche La Paso Contigo》、1974《Aplaude Mi Final》、1994《Clásicos Latinos》、2014《En vivo & sin etiqueta》、2015《No morirá jamás》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3febb873-0757-47a2-b9cb-baa2cf0e5b91&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "智利原盤把〈Y volveré〉放在第一軌，數位版把 A 面 B 面對調，同一首掉到第七",
+   "MB 上這個團二十三筆條目、十三筆是精選輯——真正的新錄音只有八張"
+  ],
+  "sound": "MB 三筆 release 都是 12 軌、曲目相同：1969 年智利 EMI Odeón Chilena S.A. 的黑膠（**MB 未填 catno**）、1970-09-05 的 XW 數位版（Alegría Music Latino）、1972 年美國 Parnaso 的 P-LPS-1070。逐軌長度（1969 智利原盤那份）4:01／2:46／3:13／2:19／2:47／3:17／2:43／3:06／2:53／2:10／2:55／2:51，**十二軌裡只有同名曲〈Y volveré〉4:01 超過四分鐘，其餘十一首都在 2:10–3:17 之間**。原盤曲序以同名曲開場、以〈Tanto adiós〉收尾；1970 數位版把前後六首對調，開場換成〈Cómo quisiera decirte〉。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Y volveré",
+   "Murió la flor",
+   "Cómo quisiera decirte"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說，採 MB 的 1969。** MB release-group first-release-date **1969**、其下 1969／CL／Official／EMI Odeón Chilena S.A. 那筆也是 1969；Apple pe 1435600006 的 releaseDate 是 **1970-09-05**（＝MB 那筆 XW release 的日期）、**℗ 卻寫 2018 Alegria Music Latino**——**Apple 這一筆同時帶著三個年份訊號中的兩個後期年份**。依裁定 91／127，MB 的智利原盤有國別、狀態與具名廠牌，卡片記 **1969**。**行文不得斷言發行年月，也不得把 1970 或 2018 寫成這張碟的年份。** 同名先行單曲：無；MB 藝人頁 23 個 release-group 裡沒有第二筆叫《Y volveré》的東西。",
+  "notes": "**⚠ 探測層 ready，但配到的不是 1969 智利原盤——覆核在這一張擋下了一個實質錯誤。** pe 1435600006 的 12 軌**曲序與 1969 智利原盤不相符**：Apple 走的是 MB 那筆 **1970-09-05 XW（Alegría Music Latino）** 的曲序，**原盤的 A 面六首與 B 面六首被整段對調**，同名曲〈Y volveré〉從第 1 軌變成第 7 軌。曲名與長度逐位置對得上 XW 那一版、對不上原盤。**12 軌全有 previewUrl、`trackCount` 欄與曲目列都是 12**，所以配對可以成立（同一份錄音、同一組曲目），**但下游不得寫「開場曲是〈Y volveré〉」或任何與曲序有關的句子**——兩版的答案不一樣。這是裁定 157 的位置比對真正抓到東西的一次。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。**但這個藝人名下 23 筆裡有 13 筆帶 Compilation**，是本批整編輯密度最高的目錄，配對與去重都要格外小心。\\n**掛名（c-108 裁定 4）**：**1969 這一筆的 artist-credit 是「Los Ángeles Negros」（帶重音）**，而同團 1971／1974 兩筆的 credit 是「Los Angeles Negros」（無重音）——同一藝人在 MB 上兩種 credit 並存。卡單依裁定 26／70 一律採重音版、與 Apple 一致，**覆核無誤**。Apple 另有 1271228993「Los angeles negros」與 1473829021（無重音）兩個變體實體。\\n**擋下策展層一處（預防性）**：這是 MB 上這個團**年份最早的兩筆之一**（同年還有《Porque te quiero》），**兩筆都只有年份、分不出先後**。**行文不得寫「首張」「出道作」「第一張」。**"
+ },
+ {
+  "key": "desc2:Los Ángeles Negros|Esta noche la paso contigo",
+  "artist": "Los Ángeles Negros",
+  "album": "Esta noche la paso contigo",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 19f9b428 的欄位：title「**Esta Noche La Paso Contigo**」（每字大寫）、artist-credit「**Los Angeles Negros**」（**無重音**，與同團 1969 那筆的「Los Ángeles Negros」不同，藝人實體同為 3febb873）、first-release-date **1971**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1971／CL／**status 空**，12 吋黑膠，**廠牌 Odeon、catno「LDC 35274」**，12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/19f9b428-f088-41af-8fbb-a3c2d98fde31?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1971 CL release 的逐軌曲目（MB 未填任何一軌長度）：1〈No Morirá Jamás〉、2〈Hoy〉、3〈No Viviré〉、**4〈Esta Noche La Paso Contigo〉**、5〈A Tu Recuerdo〉、6〈Ayer Preguntaron Por Ti〉、7〈Y Me Prometes〉、8〈Quiero Que Grabes En Mi Piel〉、9〈Si Conmigo Tú No Estás〉、10〈Puerto Vacío〉、11〈Te Di Mi Vida〉、12〈No Creas Que Sin Ti〉。**同名曲在原盤排第 4 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=19f9b428-f088-41af-8fbb-a3c2d98fde31&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1332734644：collectionName「Esta Noche la Paso Contigo」、artistName「Los Ángeles Negros」（**帶重音**）、releaseDate **2018-01-06**、copyright「**℗ 2016 Master Media Music Ltda.**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，**十二個曲名與 MB 那筆 1971 CL release 是同一組，但曲序不同**：Apple 把同名曲提到第 1 軌，〈Puerto Vacío〉從第 10 軌移到第 6 軌，其餘順勢後推。逐軌長度 2:55／3:23／2:56／1:56／3:22／3:53／3:52／3:27／2:58／2:16／3:18／2:19。**兩處曲名也不同**：Apple 作〈No Moriras Jamás〉（**未來式**，MB 作〈No Morirá Jamás〉）、Apple 作〈No Viveré〉（MB 作〈No Viviré〉）。",
+    "src": "https://itunes.apple.com/lookup?id=1332734644&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 3febb873（Los Ángeles Negros，Group／CL／disambiguation 空／life-span 自 1968 起）分頁列完 23 個 release-group、**13 筆帶 secondary-type Compilation**。不帶 Compilation 的 Album 依 first-release-date：1969《Y volveré》、1969《Porque te quiero》、**1971《Esta Noche La Paso Contigo》**、1974《Aplaude Mi Final》、1994《Clásicos Latinos》、2014《En vivo & sin etiqueta》、2015《No morirá jamás》。**2015 那筆《No morirá jamás》的盤名，正是本張第 1 軌的曲名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3febb873-0757-47a2-b9cb-baa2cf0e5b91&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "智利 Odeon 的 LDC 35274 把同名曲擺在第四軌，串流那一版把它提到最前面",
+   "第一軌〈No Morirá Jamás〉四十四年後又變成他們另一張碟的盤名"
+  ],
+  "sound": "MB 只登記一筆 release：1971 年智利 Odeon 的 12 吋黑膠 LDC 35274，單片 12 軌，**status 欄是空的**；MB 未填任何一軌長度。逐軌時間只有 Apple pe 1332734644 那份（曲序與原盤不同）：2:55／3:23／2:56／1:56／3:22／3:53／3:52／3:27／2:58／2:16／3:18／2:19，**十二軌落在 1:56–3:53，最短的〈No Viviré〉不到兩分鐘**。原盤曲序以〈No Morirá Jamás〉開場、同名曲排第 4 軌、〈No Creas Que Sin Ti〉收尾。曲名整張都在告別與夜裡打轉。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Esta Noche La Paso Contigo",
+   "No Morirá Jamás",
+   "Puerto Vacío"
+  ],
+  "status": "full",
+  "yearVerified": "**採 MB 的 1971，Apple 完全幫不上忙。** MB release-group first-release-date **1971**、其下唯一一筆 release（CL／**status 空**／Odeon LDC 35274）也是 1971；Apple pe 1332734644 的 releaseDate 是 **2018-01-06**、℗ 寫 **2016 Master Media Music Ltda.**——**Apple 這一側兩個年份都是後期再發年，沒有任何一個接近 1971**。所以「1971」只有 MB 那一筆（而且 status 還是空的）支撐，**是本批 a 組年份佐證最薄的一張**。**行文不得斷言發行年月**；若要寫年份，只能寫 1971 並知道它只有單一來源。同名曲〈Esta Noche La Paso Contigo〉在原盤排第 4 軌。",
+  "notes": "**⚠ 探測層 ready，但曲序與原盤不符（與同團《Y volveré》同型的第二例）。** pe 1332734644 的十二個曲名與 MB 1971 CL 原盤**是同一組**，**但曲序不同**：Apple 把同名曲提到第 1 軌、〈Puerto Vacío〉從第 10 軌移到第 6 軌。**12 軌全有 previewUrl、`trackCount` 欄與曲目列都是 12**，配對成立（同一組曲目），**但行文不得提任何與曲序有關的事**——「開場曲」「收尾曲」「第 N 軌」在兩版上答案不同。\\n**⚠ 兩處曲名兩說**：Apple 作〈No Moriras Jamás〉（未來式）而 MB 作〈No Morirá Jamás〉；Apple 作〈No Viveré〉而 MB 作〈No Viviré〉。**要點這兩首只能寫兩版都認得的部分，或避開。**\\n**⚠ 授權狀態：MB 唯一那筆 release 的 status 是空的**（裁定 43／57／78），**同 release-group 沒有第二筆可交叉**，卡單 `risk` 已預告——**覆核無誤，行文不得拿它當授權背書**。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**掛名（c-108 裁定 4）**：**這一筆的 artist-credit 是無重音的「Los Angeles Negros」**，1969 那筆是帶重音的「Los Ángeles Negros」——同一藝人實體、兩種 credit。卡單依裁定 26／70 一律採重音版、與 Apple 的 artistName 一致，**覆核無誤**。\\n**去重警告（裁定 162）**：本張第 1 軌曲名〈No Morirá Jamás〉與同藝人 2015 年那筆 Album 的**盤名完全相同**，曲名對盤名的比對會跨條目命中。"
+ },
+ {
+  "key": "desc2:Los Ángeles Negros|Aplaude mi final",
+  "artist": "Los Ángeles Negros",
+  "album": "Aplaude mi final",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2151fadd 的欄位：title「**Aplaude Mi Final**」（每字大寫）、artist-credit「**Los Angeles Negros**」（無重音，藝人 MBID 3febb873）、first-release-date **1974**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1974／**US**／**status 空**，12 吋黑膠，**廠牌名欄是空的、只有 catno「SLP 00465」**，12 軌。**這是本批唯一一張連廠牌名都查不到的碟。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/2151fadd-4949-4afc-8f96-298388f3dd2f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1974 US release 的逐軌曲目與長度（**這一張 MB 有填長度**）：1〈Aplaude Mi Final〉3:15、2〈Para Volver A Vivir〉2:50、3〈Son Mentiras〉2:40、4〈Karina〉2:27、5〈Eres Lo Que Nunca Quise Ser〉3:07、6〈El Enviado Del Amor〉3:53、7〈Para Que Sepas〉3:11、8〈Voló La Golondrina〉3:43、9〈A La Mujer Que Tanto Amé〉3:20、10〈Olvídate Muchacho〉2:21、11〈Eso Se Terminó〉2:58、12〈Yo Lo Comprendo〉3:53。**同名曲排第 1 軌開場。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2151fadd-4949-4afc-8f96-298388f3dd2f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1284903069：collectionName「Aplaude Mi Final」、artistName「Los Ángeles Negros」（帶重音）、releaseDate **1974-09-10**、copyright「**℗ 2017 Master Media Music Ltd**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，**曲名、曲序與逐軌長度都與 MB 那筆 1974 US release 逐位置相符**——十二軌中十軌長度差 ≤3 秒，最大差距是末軌〈Yo Lo Comprendo〉（Apple 3:33／MB 3:53，差 20 秒）與第 7 軌（3:05／3:11）。**這是本批三張 Los Ángeles Negros 裡唯一曲序沒有被重排的一張。**",
+    "src": "https://itunes.apple.com/lookup?id=1284903069&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 3febb873（Los Ángeles Negros，Group／CL／disambiguation 空／life-span 自 1968 起）分頁列完 23 個 release-group、13 筆帶 secondary-type Compilation。**1974 年名下有兩筆**：本張《Aplaude Mi Final》（Album）與單曲《Dejenme si estoy llorando / Debut y despedida》（primary-type Single，MBID bf6f30f1）。不帶 Compilation 的 Album 之中，**本張是 1970 年代的最後一筆**，下一筆 Album 要到 1994 年的《Clásicos Latinos》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3febb873-0757-47a2-b9cb-baa2cf0e5b91&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "MB 上這張連廠牌名都沒有，只留下一組編號 SLP 00465 和一個國別：美國",
+   "同名曲開場三分十五，收尾的〈Yo Lo Comprendo〉在兩份來源上一個三分五十三、一個三分三十三"
+  ],
+  "sound": "MB 只登記一筆 release：1974 年美國壓片的 12 吋黑膠，**廠牌名欄空白、只有 catno SLP 00465**，單片 12 軌，status 欄也是空的。MB 這一次填了長度：3:15／2:50／2:40／2:27／3:07／3:53／3:11／3:43／3:20／2:21／2:58／3:53，Apple pe 1284903069 的每一軌與之相差多在 3 秒內。**十二軌落在 2:21–3:53**，同名曲〈Aplaude Mi Final〉3:15 開場，第 6 軌〈El Enviado Del Amor〉與末軌〈Yo Lo Comprendo〉並列 3:53 最長。曲名整張都在收場：〈Aplaude Mi Final〉〈Eso Se Terminó〉〈Olvídate Muchacho〉〈A La Mujer Que Tanto Amé〉。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Aplaude Mi Final",
+   "Voló La Golondrina",
+   "Eso Se Terminó"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974（**兩處**）。MB release-group first-release-date **1974**、其下唯一一筆 release（US／**status 空**／catno SLP 00465）也是 1974；Apple pe 1284903069 的 releaseDate **1974-09-10** 與 MB 同年——**這是本批三張 Los Ángeles Negros 裡唯一 Apple 的 releaseDate 就落在原盤年的一張**。**但 Apple 的 ℗ 是 2017 Master Media Music Ltd**（再發方），不能算第三處。**MB 的年份沒有月日，Apple 的 09-10 是單方面的**，行文不得寫月份。同名曲〈Aplaude Mi Final〉在碟內排第 1 軌，不是同名先行單曲。",
+  "notes": "**探測層 ready 覆核通過，而且是三張裡唯一三層全對的一張**：pe 1284903069，12 軌全有 previewUrl，**曲名、曲序與逐軌長度都與 MB 1974 US release 逐位置相符**（十軌差 ≤3 秒；末軌差 20 秒、第 7 軌差 6 秒）。`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**與同團《Y volveré》《Esta noche la paso contigo》兩張的曲序被重排不同，這一張沒有這個問題。**\\n**⚠ 廠牌名空、status 空（裁定 43／57）**：MB 唯一那筆 release **沒有廠牌名**（只有 catno SLP 00465）、**status 也是空的**。卡單的 `label` 寫成「美國盤，catno SLP 00465（MB 未填廠牌名）」——**這是正確的處理**。**行文不得斷言發行廠牌、不得拿這筆 release 當授權背書。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**掛名（c-108 裁定 4）**：這一筆的 artist-credit 同樣是無重音的「Los Angeles Negros」，卡單依裁定 26／70 採重音版、與 Apple 一致，**覆核無誤**。\\n**⚠ 擋下策展層一處（預防性，這一張最危險）**：本張是 MB 上這個團**不帶 Compilation 的 Album 之中 1970 年代的最後一筆**（下一筆要到 1994 年），加上盤名字面就是「為我的結局鼓掌」，**下游極容易寫成「告別作」「最後一張」「解散前的最後一張」**。**MB 沒有任何欄位支持這些說法**：藝人實體的 life-span **沒有終止年**，1994／2014／2015 年還有三筆 Album。**行文一律不得寫序數與終結語（最後一張／告別作／解散前／唯一）。**"
  }
 ]
