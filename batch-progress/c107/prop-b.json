@@ -1,0 +1,292 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "这是个问题；痛仰乐队 这是个问题；This Is a Problem；Miserable Faith",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "痛仰樂隊",
+  "album": "這是個問題",
+  "year": 2001,
+  "genres": [
+   "rock"
+  ],
+  "label": "（MB 該 RG 兩個 release 皆無 label-info；坊間流通版為嚎叫系）",
+  "why": "痛仰的首張專輯，是 2001 年北京硬蕊／新金屬那一撥裡流傳最廣的一張，「哪吒」的封面圖案後來成了整個中國搖滾世代的符號。MB 上同一 RG 另掛一個英文標題 This Is A Problem。實掃 seed_cards.json 全 14,424 列：痛仰池中 0 張；池中中國搖滾線 2001 年只有 0 張（前後最近的是朴树 1999 與万能青年旅店 2010），2001–2008 這一整段在池中幾乎空白，本批 b 組補的就是這一段。",
+  "risk": "撞卡：池中 0 張。掛名 MB 實體名是「痛仰乐队」（area China，type Group，裁定 179 已回問），卡片依 09-06 裁定寫繁體「痛仰樂隊」。Apple：**藝人目錄 lookup 命中 collectionId 471156792，但盤名寫成英文 This Is a Problem（tw／hk／us 三店，cn 店未見）**——這正是裁定 185 的形狀（純漢字盤名在 search 端點查不到，要靠藝人目錄 lookup 才撈得出來，而且撈出來的是英譯名），配對時 queryAlias 必須帶英文名，否則會被判 unavailable。MB 該 RG 的兩個 release 都沒有 label-info，廠牌欄留白。",
+  "mbNote": "釘 release-group 102d0b1f-16fe-44a2-a324-6c372da05bc2。回問確認：title「这是个问题」、artist-credit「痛仰乐队」、first-release-date 2001-09-19、primary-type Album、secondary-types 空、轄下 2 個 release（CN 2001-09-19／Official，另一個英文標題 This Is A Problem／Official，皆無 label-info）。**MB 建檔用簡體，卡片依 2026-09-06 裁定用繁體《這是個問題》／《痛仰樂隊》。** 藝人 MBID 9e45a3c0-0e98-4217-a144-f7e17b12118b，分頁全列 8 個 RG。刻意不釘：bc81584b-28b5-42d0-8ee7-e1336c61c673《不要停止我的音乐》（2008）、8402ca11-c9a3-4707-bb93-0dffe3c84716《改变你的生活》（2009）、554a17d2-7942-43cf-b30f-0697851aaa76《愿爱无忧》（2014）、b9dbc36e-a93e-4687-a260-4f8292878b6d《今日青年》（2017）、2bf3b0ac-ff9b-4927-9104-572da2e614c2《不》與 17578f30-e6d9-422e-93e7-43f217ac85a9《盛开》（兩張 EP）、d4695d29-c1eb-4e31-b2be-3ef0ad628565《痛仰乐队英国现场》（Album+Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "灵魂出窍；张浅潜 灵魂出窍；Zhang Qianqian",
+  "reissuedBy": "口袋唱片（2006 再版）",
+  "g": "b",
+  "artist": "張淺潛",
+  "album": "靈魂出竅",
+  "year": 2001,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "成都音像出版社（CN 2001-05）；口袋唱片（CN 2006 再版）",
+  "why": "張淺潛是 90 年代末到 2000 年代初中國地下少數以女性創作者身分被完整記錄下來的名字，《靈魂出竅》是她唯一一張正式發行的專輯，2006 年由南京口袋唱片再版（同一家後來也出了李志《梵高先生》）。實掃 seed_cards.json 全 14,424 列：張淺潛池中 0 張；連同 a 組的眼鏡蛇樂隊，這是本批唯二兩張由女性主導的中國搖滾卡——池中原本這一塊是 0。",
+  "risk": "撞卡：池中 0 張。掛名同名風險：Apple 的中文藝人搜尋會把「張學友／張國榮」等高分實體帶回來，配對要用 artistId 直查。Apple：藝人目錄 lookup 命中 collectionId 1749213944《靈魂出竅》（cn／tw／hk／us 四店，Apple 盤名已是繁體，年份欄 2001-05-01 與 MB 一致）。再發判定：MB 兩個 release 皆標 Official（2001 成都音像、2006 口袋唱片），依裁定 43／57／65／78 這一次再發可採為背書；年份取 first-release-date 2001。",
+  "mbNote": "釘 release-group c7409c06-5ceb-4194-bed4-adc1f23f4dd0。回問確認：title「灵魂出窍」、artist-credit「张浅潜」、first-release-date 2001-05、primary-type Album、secondary-types 空、轄下 2 個 release（CN 2001-05 成都音像出版社／Official，CN 2006 口袋唱片／Official）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《靈魂出竅》／《張淺潛》。** 藝人 MBID 2ac03b9e-c3f9-4215-bf5c-04ca722f44f4，名下只有 2 個 RG。刻意不釘：d3daa369-171b-4944-b4e1-5ad61788db78《自己的主人EP》（EP+Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "这就是你；This Is You；舌头 这就是你；SheTou This Is You",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "舌頭",
+  "album": "這就是你",
+  "year": 2002,
+  "genres": [
+   "rock"
+  ],
+  "label": "引擎唱片（CN 2002）",
+  "why": "舌頭的第二張，離開 Badhead 之後由引擎唱片發行，比《小雞出殼》(1999) 更長、編制更寬，是他們在 2003 年解散前最後一張錄音室專輯。實掃 seed_cards.json 全 14,424 列：舌頭池中 0 張。這張與 a 組的《小雞出殼》一起收，才看得到這支隊伍從嚎叫式短打走到長篇結構的整段。",
+  "risk": "撞卡：與 a 組的《小雞出殼》同一藝人不同碟，已互相比對；池中 0 張。**MB 的 RG title 帶英文副標「这就是你 (This Is You)」**，卡片盤名取去掉副標的《這就是你》，依裁定 95（RG 標題與卡片盤名不必相等）；兩種寫法都已進 queryAlias。Apple：藝人目錄 lookup 命中 collectionId 1709599133，但掛在第三個藝人 id「SheTou舌头」(1709558933) 底下、盤名寫成《This Is You这就是你》，**tw／hk／us 三店有、cn 店未見**——這是裁定 173／185 的合併形狀（同一藝人在 Apple 分裂成三個 id，不同 id 蓋到不同的碟），配對必須三個 id 都掃。",
+  "mbNote": "釘 release-group 3946c02d-2caa-4ac7-b349-5f4a91919c08。回問確認：title「这就是你 (This Is You)」、artist-credit「舌头」、first-release-date 2002-08-02、primary-type Album、secondary-types 空、轄下 2 個 release（一個無 country／無 label，一個 CN 2002／Official／label 引擎唱片）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《這就是你》／《舌頭》。** 藝人 MBID 8a436167-4406-4388-9945-cc04f0a4dfbb（area Dali Bai Autonomous Prefecture，type Group，裁定 179 已回問排除 The Beatles、百舌 等雜訊命中），分頁全列 7 個 RG。刻意不釘：5cd6caee-982a-4eca-b61a-1ad4c3b47709《小鸡出壳》（同批 a 組另收）、5cab0129-1d21-484f-a19c-f8db610c611e《油漆匠》（Album+Live）、68812716-088f-49e7-9088-4403ab3ee9c6《原始人爱空调协会》（2016）、7e982ba8-88f6-4d0e-9980-5eece8cfeae1《中国制造》（2021）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "世界是噪音的花园；声音碎片 世界是噪音的花园；Sound Fragment",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "聲音碎片",
+  "album": "世界是噪音的花園",
+  "year": 2002,
+  "genres": [
+   "rock"
+  ],
+  "label": "天津音像公司（CN 2002）",
+  "why": "聲音碎片的首張專輯，是 2000 年代初中國另類搖滾裡把文學性與吉他織體結合得最完整的一張，也是這支武漢／北京樂隊二十年目錄的起點。實掃 seed_cards.json 全 14,424 列：聲音碎片池中 0 張；MB 上他們名下 8 個 RG 裡有 3 個是 Live 盤，原盤只有 5 張，這張是最早的一張。",
+  "risk": "撞卡：池中 0 張。Apple：藝人目錄 lookup 命中 collectionId 1808899053《世界是噪音的花园》（cn／tw／hk／us 四店，Apple 盤名仍是簡體，卡片依 09-06 裁定寫繁體，配對時 queryAlias 要帶簡體形）。同一藝人目錄裡有一張與周雲蓬共掛的 Live 盤（578f421c…《树生长的声音——周云蓬 × 声音碎片北京站 live》），與本批另收的周雲蓬卡在同一個 RG 上，撞卡檢查要注意不要重複計入。",
+  "mbNote": "釘 release-group b97ac294-795b-4b4f-ae88-540974b59b66。回問確認：title「世界是噪音的花园」、artist-credit「声音碎片」、first-release-date 2002、primary-type Album、secondary-types 空、轄下 1 個 release（CN／Official，label 天津音像公司）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《世界是噪音的花園》／《聲音碎片》。** 藝人 MBID c458e9c5-6d39-4d4e-856c-8c861f707182，分頁全列 8 個 RG。刻意不釘：b8d7cea4-1adf-3f25-a696-0c774f8634fc《Under life is…》（2005）、a92cfa75-fe1c-4b8a-aabf-f4506f411247《把光芒洒向更开阔的地方》（2008）、578f421c-bab5-475b-810e-7547681d7a47《树生长的声音》與 36b837c6-1fdf-44f8-bbbb-fcc0d6fc5a20《遍地风流》（兩張 Album+Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "二手玫瑰；Second Hand Rose；Er Shou Mei Gui",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "二手玫瑰",
+  "album": "二手玫瑰",
+  "year": 2003,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "天津市泰達音像發行中心（CN 2003-01）",
+  "why": "二手玫瑰的同名首作，把東北二人轉的唱腔與嗩吶編制放進搖滾樂隊，是中國搖滾裡最早、也最徹底的一次本土戲曲挪用。實掃 seed_cards.json 全 14,424 列：二手玫瑰池中 0 張；池中中國搖滾線 25 張全部是西式編制，戲曲／曲藝取向的隊伍是 0 支。",
+  "risk": "**自我同名**（盤名＝掛名），依 c-67 規則要 Apple 找得到才收——已確認：藝人目錄 lookup 命中 collectionId 264594758，**但 Apple 把盤名寫成羅馬轉寫《Second Hand Rose (Er Shou Mei Gui)》，且只在 tw／hk／us 三店，cn 店未見**（裁定 185 的形狀），配對必須用 collectionId 直查、queryAlias 帶羅馬字。Apple 上另有三個藝人 id（708069050 二手玫瑰、1711263324 Second Hand Rose二手玫瑰、1100357201 Second Hand Rose Band），三個都要掃。撞卡：池中 0 張；MB 上另有 2018《我要开花》、2013《一枝独秀》等 6 張，盤名不近。",
+  "mbNote": "釘 release-group 4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc。回問確認：title「二手玫瑰」（簡繁同形）、artist-credit「二手玫瑰」、first-release-date 2003-01、primary-type Album、secondary-types 空、轄下 1 個 release（CN／Official，label 天津市泰达音像发行中心）。藝人 MBID e49f6e64-12db-4879-8e66-6bcc614f61d0，分頁全列 7 個 RG。刻意不釘：038ce70d-15d2-3ee2-96a6-27a4cd9dd1fa《娱乐江湖》（2006，Apple 有 718082885，留給後續補遺）、9697867e-9a92-4c53-9e08-fb03c09905e2《一枝独秀》（2013）、febf5519-62fd-4c2b-aea9-3280e5590fd4《Stealing the Show》（2013，與《一枝独秀》同年的英文版雙胞胎，依裁定 126 明列）、96f55df1-5bbc-4d29-a98b-fb32fe9e1a2f《人人有颗主唱的心》（2010）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "脑浊；Brain Failure Turn On the Distortion；Turn On The Distortion!",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Brain Failure",
+  "album": "Turn On the Distortion!",
+  "year": 2003,
+  "genres": [
+   "rock"
+  ],
+  "label": "Bad News Records（catno BNCP-86，JP 2003-06-21）",
+  "why": "腦濁（Brain Failure）是北京「無聊軍隊」那一撥龐克裡走得最遠的一支，《Turn On the Distortion!》由日本 Bad News Records 發行，是 2000 年代初中國龐克第一次進入國外正規發行體系，也是他們後來與 Dropkick Murphys 巡演、在波士頓錄《Beijing to Boston》的前置。實掃 seed_cards.json 全 14,424 列：Brain Failure／腦濁兩種寫法池中都是 0 張；池中中國龐克整體是 0 支（本批另收地下嬰兒與盤古一線，盤古因無封面來源未收）。",
+  "risk": "**掛名用拉丁不用漢字**：MB 的藝人實體名與該 RG 的 artist-credit 都是「Brain Failure」，Apple 四店也全部用「Brain Failure／BRAIN FAILURE」，池中 0 張無先例可循。依裁定 177（掛名取用順序是「先看池中、再看 MB credit」，不是先套命名裁定），本張取拉丁形，中文形「腦濁／脑浊」放進 queryAlias。本批的簡繁裁定管的是中文寫法，不強迫把拉丁註冊的團名譯回中文（同批的 P.K.14、Carsick Cars、Snapline、Re-TROS 同理，見 rulings.md 第 3 條）。Apple：藝人目錄 lookup 命中兩個 collectionId——1687012919《Turn on the DISTORTION!》(cn／tw／hk／us) 與 264649237《Turn On the Distortion》(tw／hk／us)，**同一張碟在 Apple 上有兩筆、大小寫與驚嘆號都不同**，配對要挑四店都有的 1687012919。撞卡：池中 0 張。",
+  "mbNote": "釘 release-group 0b8df1c2-1771-3f94-8660-fd9c962257a9。回問確認：title「Turn On the Distortion!」、artist-credit「Brain Failure」、first-release-date 2003-06-21、primary-type Album、secondary-types 空、轄下 2 個 release（JP 2003-06-21／Official／label Bad News Records BNCP-86，XW／status 未填）。藝人 MBID 8a9ff5d1-9690-4013-a6b2-bbfd693087e0（area China，disambiguation「Beijing punk」），分頁全列 15 個 RG。刻意不釘：d01657a9-be55-4c54-b5e4-dfc19cb9ae4b《Coming Down to Beijing》（2007）、1b6cfb9b-df1f-42ec-91b5-6cbff1830c65《Beijing to Boston》（2007）、dffce338-b658-3b0c-91b0-7cd4ca7cd6ab《American Dreamer》（2005）、17491791-5a71-4316-b2a0-e94955642a44《Live & Rare》、5a85429a-48ff-4e49-a750-1b68b11a456f《无聊军队》、dec51275-bf7b-4a4b-b629-dc69fc24661e《皂·白》（三張 Album+Compilation）、dee9e67d-e6b1-474a-a472-4f2fdb8e2d3e《Anarchy in the P.R.C.》與 be11aa7e-2390-415c-9522-b5681f18c4f2《Beijing Calling》（EP）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "木马 Yellow Star；Muma Yellow Star；木馬 黃星",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "木馬",
+  "album": "Yellow Star",
+  "year": 2003,
+  "genres": [
+   "rock"
+  ],
+  "label": "摩登天空（catno M-017，CN 2003）",
+  "why": "木馬離開 Badhead、轉到摩登天空本牌後的第二張專輯，是這支樂隊聲響最開闊的一張，也是摩登天空 2003 年那一批（M-017）的代表作。實掃 seed_cards.json 全 14,424 列：木馬池中 0 張。與 a 組的同名首作《木馬》(1999) 一起收，一張在 Badhead、一張在摩登天空，剛好把 90 年代末到 2000 年代初中國地下的廠牌轉移過程帶出來。",
+  "risk": "撞卡：與 a 組《木馬》同一藝人不同碟，已互相比對；池中 0 張。掛名同名風險高（Apple 上「木馬／Muma」對應十餘個實體，含日本的 斉藤木馬、哈薩克的 马木尔 Mamer），配對只能用 collectionId。Apple：藝人目錄 lookup 命中 collectionId 1841555007《Yellow Star》（cn／tw／hk／us 四店，Apple 年份欄 2003-01-01 與 MB 的 2003 一致）。盤名是拉丁字，不受簡繁裁定影響，掛名寫繁體《木馬》。CAA 亦有（release-group/abb3cc35 回 200）。",
+  "mbNote": "釘 release-group abb3cc35-c489-339d-baaf-14183ed530f6。回問確認：title「Yellow Star」、artist-credit「木马」、first-release-date 2003、primary-type Album、secondary-types 空、轄下 1 個 release（CN／Official，label 摩登天空 M-017）。**MB 建檔掛名用簡體「木马」，卡片依 09-06 裁定用繁體《木馬》。** 藝人 MBID 860fa646-33ab-4e10-9f7f-de14c63502e5，名下只有 3 個 RG。刻意不釘：75cfd757-e088-338f-b9ee-c394ffa4fa05《木马》（同批 a 組另收）、7362214b-e2e2-3e56-b000-61b6c3b2ffef《果冻帝国》（2004，CAA 與 Apple 四店皆查無，本批不收，見 rulings.md 未收清單）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "谁谁谁和谁谁谁；Whoever and Whoever；Who Who Who and Who Who Who；PK14",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "P.K.14",
+  "album": "誰誰誰和誰誰誰",
+  "year": 2004,
+  "genres": [
+   "rock"
+  ],
+  "label": "Badhead（catno B-023，CN 2004）／摩登天空",
+  "why": "P.K.14 從南京搬到北京之後的第二張，Badhead B-023，是這支樂隊被視為「中國後龐克的語言」的起點——楊海崧的中文歌詞寫法從這張開始被大量模仿。實掃 seed_cards.json 全 14,424 列：P.K.14 池中 0 張，而他們是 Maybe Mars／Badhead 那整個系譜（Carsick Cars、Snapline、刺蝟、Re-TROS 都由楊海崧或同一圈子製作）的源頭。本批 b 組把這個系譜的五支隊伍一次補齊。",
+  "risk": "撞卡：與同組《白皮書》(2005) 同一藝人不同碟，已互相比對；池中 0 張。掛名含句點「P.K.14」，正規化會折成「pk14」，比對時注意（`chk-prop` 的 k() 已確認不與池中任何卡撞）。Apple 的藝人搜尋對「P.K.14」會回大量 K-pop 雜訊（BOYNEXTDOOR、10CM 等），必須用 artistId 81571922 直查。Apple：藝人目錄 lookup 命中 collectionId 1822759363《谁谁谁和谁谁谁》（cn／tw／hk／us 四店，簡體）與 1439255151《Who Who Who and Who Who Who》（同碟的英文版，四店），**同一張碟兩筆**，配對挑 1822759363。CAA 亦有（release-group/19bd011d 回 200）。",
+  "mbNote": "釘 release-group 19bd011d-3a9c-3ca6-af0e-c1a28334d17d。回問確認：title「谁谁谁和谁谁谁」、artist-credit「P.K.14」、first-release-date 2004、primary-type Album、secondary-types 空、轄下 2 個 release（CN 2004／Official／label Badhead B-023，另一個英文標題 Whoever and Whoever／Official／label 摩登天空）。**MB 建檔盤名用簡體，卡片依 09-06 裁定用繁體《誰誰誰和誰誰誰》；掛名 P.K.14 本身是拉丁註冊，依裁定 177 維持拉丁。** 藝人 MBID 05653c73-f8e9-44cf-8185-e569bc3274d4，分頁全列 8 個 RG。刻意不釘：59355b12-99cc-312c-b1d7-130e3c282f68《白皮书》（同組另收）、47ac80b8-7892-4bd7-99e6-9f468447243f《上楼就往左拐》（2001，CAA 與 Apple 皆查無，本批不收）、d4f47b9d-e3de-482b-b822-a0908d71146d《烂掉吧》（2001，與《上楼就往左拐》同年的雙胞胎條目，依裁定 126 明列）、53296f12-b5db-3ff9-97da-37bcacacd8b0《城市天气的航行》（2008）、2218fb33-8cf5-4201-80da-5826466421b8《1984》（2013）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "沉默如谜的呼吸；周云蓬 沉默如谜的呼吸；Zhou Yunpeng",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "周雲蓬",
+  "album": "沉默如謎的呼吸",
+  "year": 2004,
+  "genres": [
+   "folk"
+  ],
+  "label": "Badhead（catno B022，摩登天空副牌，CN 2004）",
+  "why": "周雲蓬的首張專輯，Badhead B022，比池中已有的《中國孩子》(2007) 早三年，是他從北京地下走唱到被唱片工業記錄下來的第一份成果。實掃 seed_cards.json 全 14,424 列：周雲蓬池中有 2 張（《中國孩子》2007、《牛羊下山》2010，兩張都已是繁體寫法），但起點盤缺席——補這張才接得上那兩張，也把 Badhead 這條線（本批另收舌頭、木馬、P.K.14、左小祖咒、刺蝟）在民謠側的一角補上。",
+  "risk": "撞卡：池中周雲蓬 2 張的盤名已人工比對，《沉默如謎的呼吸》不在其中；掛名池中已是繁體「周雲蓬」，本張與之一致，不會製造新的分裂寫法。**Apple 四店（cn／tw／hk／us）藝人目錄 lookup 查無這張**——周雲蓬在 Apple 上目錄很滿（《中國孩子》1649723808、《牛羊下山》1649724039、《清炒苦瓜》1648654923、《四月舊州》1648109772、《瓦爾登湖》1648653838 加十餘支單曲），唯獨 2004 這張沒有，已依裁定 176／185 排除 search 假陰性。封面走 CAA：coverartarchive.org/release-group/4a3f1ac1 回 200，試聽預估「無來源」。",
+  "mbNote": "釘 release-group 4a3f1ac1-d932-45bc-849d-c77c735d1454。回問確認：title「沉默如谜的呼吸」、artist-credit「周云蓬」、first-release-date 2004、primary-type Album、secondary-types 空、轄下 1 個 release（CN／Official，label Badhead B022／摩登天空）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《沉默如謎的呼吸》／《周雲蓬》，與池中既有兩張的繁體掛名一致。** 藝人 MBID e3587c0a-2f41-4bf3-bd61-1145ec9e685b，分頁全列 9 個 RG。刻意不釘：384c8d66-c73d-4469-9e20-2ba99629c7db《中國孩子》與 26659670-d9c8-4c04-abf5-47f502be174e《牛羊下山》（池中已有）、012c08ce-d013-4be8-b87b-cf49b2cf3f69《清炒苦瓜》（2008）、1e384885-ca79-49c2-bc6f-7b8cd57ab251《四月旧州》（2014）、578f421c-bab5-475b-810e-7547681d7a47 與 b16a3276-6cb5-4d32-a633-3b28f28ed34c（兩張 Album+Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "给你一点颜色；崔健 给你一点颜色；Show You Colour",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "崔健",
+  "album": "給你一點顏色",
+  "year": 2005,
+  "genres": [
+   "rock",
+   "hiphop"
+  ],
+  "label": "京文音像（catno YX·0015，CN 2005）",
+  "why": "崔健隔了七年才出的第五張錄音室專輯，MB 上同一 RG 另掛英文標題 Show You Colour，是他把說唱與電子節奏推到最前面的一張。實掃 seed_cards.json 全 14,424 列：崔健池中 4 張（含 1 張分裂寫法重複卡），最新一張停在 1994 年《红旗下的蛋》。本批 a 組補 1998《無能的力量》、b 組補這張，兩張一起把他的目錄從 1994 接到 2005，是這條線最該補的兩個缺口。",
+  "risk": "撞卡：池中崔健全是簡體盤名，且有「崔健 Cui Jian」分裂寫法，兩種掛名都查過，《給你一點顏色》不在池中。**同 RG 有兩個標題完全相同的 CN release**（MB 上重複建檔），加上一個英文標題 Show You Colour，配對時容易挑錯 release；rgMbid 是身分鍵，release 層級的差異不影響卡片。Apple：藝人目錄 lookup 命中 collectionId 1590999610《给你一点颜色》（cn／tw／hk／us 四店，Apple 盤名仍是簡體，年份欄 2005-03-01）。轄下 4 個 release 全部 Official。",
+  "mbNote": "釘 release-group 42d16071-0ee6-322c-b9a8-2cf66d46c062。回問確認：title「给你一点颜色」、artist-credit「崔健」、first-release-date 2005、primary-type Album、secondary-types 空、轄下 4 個 release（CN×3 含一個英文標題 Show You Colour、XW×1，全部 Official，label 京文音像 YX·0015）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《給你一點顏色》。** 藝人 MBID d457f05e-8802-4888-83a6-b07d3df3bbf3，分頁全列 16 個 RG。刻意不釘：91cb8eed-fd86-36f7-be7e-d21719e7039b《无能的力量》與 188ec628-086e-48fa-a225-86bafd5e41bd《浪子歸》（同批 a 組另收）、59ff6861-edc3-473d-8613-c1008005ca6e《解决》（**注意：MB 這一筆的 first-release-date 記 2005，與池中那張 1991 年的《解决》是同一張碟的錯誤日期，不要因為年份接近而誤配**）、58f8bf87 與 22bd5a1a（池中已有）、2153565c-7724-4c58-bf06-662e258c89ee《光冻》（2015）、779eab79-ddc9-4b0e-a6e5-3279ddd54e3e《飞狗》（2021）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "我不能悲伤地坐在你身旁；左小祖咒 我不能悲伤地坐在你身旁；Zuoxiao Zuzhou",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "左小祖咒",
+  "album": "我不能悲傷地坐在你身旁",
+  "year": 2005,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "（MB 該 release 無 label-info）",
+  "why": "左小祖咒 2005 年的專輯，是他從《廟會之旅》(2000) 的敘事民謠轉向長篇獨白與樂隊編制的分水嶺，也是他被主流樂評正式接住的第一張。實掃 seed_cards.json 全 14,424 列：左小祖咒池中 0 張。與 a 組的《廟會之旅》一起收，等於把這條線的起點與轉折點各補一張。",
+  "risk": "撞卡：與 a 組《廟會之旅》同一藝人不同碟，已互相比對；池中 0 張。**MB 該 RG 唯一的 release 的 status 未填**，依裁定 43／57／65／78 不能採為 Official 背書，也沒有 label-info，廠牌欄留白。Apple：藝人目錄 lookup 命中 collectionId 1508469243《我不能悲傷地坐在你身旁》（cn／tw／hk／us 四店，Apple 盤名已是繁體，年份欄 2005-05-25 與 MB 完全一致），封面與試聽走 Apple。撞名風險：同一藝人目錄裡有多張長標題盤（《你知道東方在哪一邊》2008／《你知道對方在那一邊》2011 只差兩字），依裁定 168 已在 mbNote 明列不釘。",
+  "mbNote": "釘 release-group 68b451f8-6473-4c2e-b415-68091631c338。回問確認：title「我不能悲伤地坐在你身旁」、artist-credit「左小祖咒」、first-release-date 2005-05-25、primary-type Album、secondary-types 空、轄下 1 個 release（CN／**status 未填**／無 label-info）。**MB 建檔盤名用簡體，卡片依 09-06 裁定用繁體。** 藝人 MBID 68778ad0-b56f-44c1-afbd-089ad84549f6，分頁全列 16 個 RG。刻意不釘：a8164d98-3502-47ab-8328-c04f6bdbae8d《庙会之旅》（同批 a 組另收）、4c55b60d-1634-44a0-aa8f-400b36cec9ac《庙会之旅II》、13f8f0df-edc8-4ec9-b2e6-a12c5ea1a731《你知道东方在哪一边》(2008) 與 081a4ae7-0cc2-4d00-9476-7a9a4809b0d9《你知道对方在那一边》(2011)（**兩張盤名只差「東方／對方」「哪／那」，是本批最容易誤配的一組**）、96fee5d5-14d7-4b7b-bc74-686a649f1af0《美国》與 aca543fa-9760-4ef5-aea8-cf9f9a714b9b《左小祖咒原声配乐No.1》（Album+Soundtrack）、8fd378ee-7885-44c5-bad1-1cf43424a930《我愛鄧麗君》（2023，與五條人共掛）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "白皮书；P.K.14 白皮书；PK14 White Paper",
+  "reissuedBy": "摩登天空（2025 再版）",
+  "g": "b",
+  "artist": "P.K.14",
+  "album": "白皮書",
+  "year": 2005,
+  "genres": [
+   "rock"
+  ],
+  "label": "Badhead（catno B-028，CN 2005-09）；北京摩登天空（XW 2025 再版）",
+  "why": "P.K.14 的第三張，Badhead B-028，是這支樂隊公認最完整的一張——2025 年摩登天空還為它做了新的全球數位再版。實掃 seed_cards.json 全 14,424 列：P.K.14 池中 0 張。與同組的《誰誰誰和誰誰誰》(2004) 一起收，兩張剛好是他們在 Badhead 時期的一頭一尾。",
+  "risk": "撞卡：與同組《誰誰誰和誰誰誰》同一藝人不同碟，已互相比對；池中 0 張。再發判定：2025-06-25 的 XW release 標 Official、廠牌是北京摩登天空（原廠再發），依裁定 43／57／65／78 可採為背書；年份取 first-release-date 2005。Apple：藝人目錄 lookup 命中 collectionId 1822757858《白皮书》（cn／tw／hk／us 四店，Apple 盤名仍是簡體，卡片依裁定寫繁體，queryAlias 已帶簡體形）。CAA 未查（Apple 已足）。",
+  "mbNote": "釘 release-group 59355b12-99cc-312c-b1d7-130e3c282f68。回問確認：title「白皮书」、artist-credit「P.K.14」、first-release-date 2005-09、primary-type Album、secondary-types 空、轄下 2 個 release（CN 2005-09／Official／label Badhead B-028，XW 2025-06-25／Official／label 北京摩登天空文化发展有限公司）。**MB 盤名用簡體，卡片依 09-06 裁定用繁體《白皮書》；掛名 P.K.14 是拉丁註冊，依裁定 177 維持拉丁。** 藝人 MBID 05653c73-f8e9-44cf-8185-e569bc3274d4，分頁全列 8 個 RG。刻意不釘：19bd011d-3a9c-3ca6-af0e-c1a28334d17d《谁谁谁和谁谁谁》（同組另收）、47ac80b8-7892-4bd7-99e6-9f468447243f《上楼就往左拐》與 d4f47b9d-e3de-482b-b822-a0908d71146d《烂掉吧》（2001 兩張，封面來源皆缺）、f783865e-100c-404f-a030-6157c9054b1c《What We Talk About When We Talk About His Name》（2018）、83434fa6-1189-4a15-8370-a5b3ffe9540b《我们的样子》（2025）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "梵高先生；李志 梵高先生；Mr. Van Gogh；Li Zhi",
+  "reissuedBy": "太合音樂集團（2020 數位再版）",
+  "g": "b",
+  "artist": "李志",
+  "album": "梵高先生",
+  "year": 2005,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "口袋唱片（CN 2005-12-25）；太合音樂集團（XW 2020-10-21 再版）",
+  "why": "李志的第二張，南京口袋唱片發行，是他從《被禁忌的遊戲》(2004) 的粗糙錄音走向完整編曲的一張，同名曲後來成為整個中國獨立民謠世代傳唱最廣的作品。實掃 seed_cards.json 全 14,424 列：李志池中只有 1 張《被禁忌的遊戲》(2004，池中已是繁體寫法)，正好缺它的續作。MB 上李志名下 25 個 RG 裡有 13 個是 Live 或 Compilation，原盤只有 12 張，這張是第二張。",
+  "risk": "**盤名的「梵高」是大陸譯名、台灣作「梵谷」——但這是譯名差異不是簡繁差異，09-06 的繁體裁定不涵蓋它，卡片維持《梵高先生》**（MB、Apple、池中相鄰卡都用「梵高」）。撞卡：池中《被禁忌的游戏》盤名已比對，不撞。Apple：藝人目錄 lookup 命中 collectionId 1447801894《梵高先生》（**tw／hk／us 三店有、cn 店未見**——李志 2019 年後在中國大陸全平台下架，這是可預期的，不是探測失誤）。MB 有 5 個 release（HK 2005-12-01 最早、CN 2005-12-25、CN 2007、XW 2013 英文標題 Mr. Van Gogh、XW 2020 太合再版），全部 Official；first-release-date 取 2005-12-01（HK 版），卡片年份 2005。",
+  "mbNote": "釘 release-group 7db4d471-88c8-4dd3-93b4-0fda16797bb4。回問確認：title「梵高先生」、artist-credit「李志」（簡繁同形）、first-release-date 2005-12-01、primary-type Album、secondary-types 空、轄下 5 個 release（HK／CN×2／XW×2，全部 Official，label 口袋唱片、太合音乐集团）。藝人 MBID e54bc357-19aa-4e1f-9795-3346e486d5db，分頁全列 25 個 RG。刻意不釘：1781c5c4-0121-3f7a-bb7f-45d558538910《被禁忌的游戏》（池中已有）、a6c427b3-78d5-4537-95f1-5e5bc80c2c9c《这个世界会好吗》(2006)、be714e48-1059-4688-b913-dd9456700aa5《你好，郑州》(2010)、33383bca-a17a-468c-bd3b-9c47878bba2a《F》(2011)、4f39f226-4ea5-48f6-9cd5-6da2320282b6《我爱南京》(2009)；另有 9993e729／2b741791／a0583f22 三張《Best Selection Songs 2004~2018》（Album+Compilation）與十餘張 Album+Live，**全部刻意不釘**。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "惘闻 RE:RE:RE:；RE:RE:RE；Wang Wen Re Re Re",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "惘聞",
+  "album": "RE:RE:RE:",
+  "year": 2006,
+  "genres": [
+   "rock"
+  ],
+  "label": "（MB 三個 release 皆無 label-info；2016 全球再版）",
+  "why": "惘聞第二張專輯，是大連這支後搖樂隊被中國以外聽眾認識的第一張，2016 年做過全球數位再版。實掃 seed_cards.json 全 14,424 列：惘聞池中 0 張——**中國後搖整個品類在池中是 0 張**（派工信明列惘聞是本批範圍）。MB 上他們名下 17 個 RG，是本批最深的一份目錄，本組收最早的《RE:RE:RE:》與最受推崇的《八匹馬》各一張。",
+  "risk": "撞卡：與同組《八匹馬》同一藝人不同碟，已互相比對；池中 0 張。**盤名全是冒號與 RE**，正規化後會變成「rererere」，與任何含相同字母序列的碟都可能誤配，比對要用完整字串；MB 上該 RG 的三個 release 標題也不一致（RE:RE:RE: 與 RE:RE:RE 差一個尾冒號），卡片取 RG title 的《RE:RE:RE:》。其中一個 release 標 Pseudo-Release，不採為背書；2006 CN 與 2016 XW 兩個標 Official。Apple：藝人目錄 lookup 命中 collectionId 1598039678《Re:Re:Re:》（cn／tw／hk／us 四店，**Apple 用首字大寫其餘小寫，與 MB 的全大寫不同**，配對要大小寫不敏感）。",
+  "mbNote": "釘 release-group c8eba161-37a7-3ca4-b751-a7af503e6e95。回問確認：title「RE:RE:RE:」、artist-credit「惘闻」、first-release-date 2006、primary-type Album、secondary-types 空、轄下 3 個 release（CN 2006／Official，XW 2016-04-09／Official，另一個 Pseudo-Release，皆無 label-info）。**MB 建檔掛名用簡體「惘闻」，卡片依 09-06 裁定用繁體《惘聞》。** 藝人 MBID b7637cdc-7413-422a-9dc3-3d71a19322ae（area Dalian），分頁全列 17 個 RG。刻意不釘：87b09869-5a4a-484d-abb9-e4d6c722621d《八匹馬》（同組另收）、d72aaaf6-0599-46b0-aca2-31779108d9f1《二十八天失眠日记》(2003 首張)、030f6a05-c74c-4cac-a9e5-2b1f7b914adc《0306》、65cec2b9-df66-38c7-81fb-9eb377e83a77《7 Objects in Another Infinite Space》、a24fd0c0-eb75-4057-913d-2be3c8524fb7《0.7》、2207303d-9565-479d-acbc-9219b61730f0《In Course of the Miraculous》、2c1f8015-0afe-40ba-afe3-4a858a86d958《Invisible City》、856d8925-6f26-40b6-aa1b-d44f94486f31《pg.lost / Wang Wen》（split，掛名不同）、0e389020-5933-49aa-b4d6-97dd7a03667b（Album+Live）、e704862e-f5fc-4f2f-8d7d-d9fb0293d42d（Album+Soundtrack）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "这一切没有想象的那么糟；万晓利 这一切没有想象的那么糟；Wan Xiaoli",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "萬曉利",
+  "album": "這一切沒有想像的那麼糟",
+  "year": 2006,
+  "genres": [
+   "folk"
+  ],
+  "label": "（MB 該 release 無 label-info；原為十三月唱片發行）",
+  "why": "萬曉利的第二張，是 2000 年代中國新民謠最常被拿來當標竿的一張，也是他從河北到北京酒吧走唱十年後第一次被完整錄下來。實掃 seed_cards.json 全 14,424 列：萬曉利池中 0 張，而池中民謠側已經有周雲蓬 2 張、小河 1 張、野孩子 1 張、蘇陽 1 張、李志 1 張——**同一批人裡只有萬曉利缺席**，補這張是最直接的補洞。",
+  "risk": "撞卡：池中 0 張。盤名的「想像／想象」兩種寫法：MB 用「想象」，卡片依 09-06 裁定寫繁體《這一切沒有想像的那麼糟》，兩種都已進 queryAlias（這是簡繁轉換會分叉的字，`chk-prop` 折不掉，比對要人工）。Apple：藝人目錄 lookup 命中 collectionId 1637710480《這一切沒有想像的那麼糟》（**只在 tw／hk 兩店，cn／us 未見**；Apple 盤名已是繁體且與卡片完全一致，年份欄記 2020-07-30 是上架日不是發行日，依裁定 91／95 年份取 MB 的 2006）。CAA 查無（release-group/2b38234e 回 404），封面只能走 apple-verified-collection，**要用 tw 或 hk 店的 collectionId 反查**。",
+  "mbNote": "釘 release-group 2b38234e-2294-352a-ad0a-a5b591140c26。回問確認：title「这一切没有想象的那么糟」、artist-credit「万晓利」、first-release-date 2006、primary-type Album、secondary-types 空、轄下 1 個 release（CN／Official／無 label-info）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《這一切沒有想像的那麼糟》／《萬曉利》。** 藝人 MBID 93bdf621-5e30-4489-8f3d-e211391f012f，名下 5 個 RG。刻意不釘：f7cfe95a-04a4-393c-8d81-16e54d5b7a26《走过来 走过去》（2002 首張，CAA 404 且 Apple 四店查無，本批不收）、64ee48b3-30dc-4cd7-ad48-6272d3c9d156《北方的北方》（2010，Apple 有 1736475007，留給後續補遺）、981423fb-61a1-45c7-b712-66250f697f01《太阳看起来圆圆的》（2015）、a7c414f8-93a1-469a-910f-e97406f8bfe3《天秤之舟／牙齿，菠菜和豆腐与诗人，流浪汉和门徒》（2017）。"
+ }
+]
