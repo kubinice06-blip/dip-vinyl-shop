@@ -103,11 +103,30 @@ const BLU = ['us', 'gb', 'fr', 'dk', 'se', 'de', 'nl', 'jp', 'ca', 'au'];
 // 留著只會讓每張卡多花一次退避重試，且 400 不在重試白名單裡、會直接記成 `cu:400` 污染 `tried`。移除。
 const WLD = ['us', 'gb', 'fr', 'ng', 'za', 'ci', 'sn', 'jm', 'eg', 'in', 'mx', 'co', 'br', 'de', 'ca'];
 const GAME = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
+// c-103～c-118（2026-09-06，規劃書剩下的 16 批）。
+// **kr 是這輪第一次用。** c-43 的教訓是「日版單曲會撞進來」，所以 kr 排第一、jp 排第二
+// ——jp 留著是因為韓國 80s–90s 的正規盤有一批只在日本再發過。
+const KOR = ['kr', 'jp', 'us', 'gb', 'hk', 'tw', 'de', 'au'];
+// 中國搖滾：cn 排第一。台灣線實測 cn 零命中（見上面 TWN 的註解），但那批是台語與華語流行，
+// **這批的發行權在中國本土**，形狀不同，cn 值得排第一；tw／hk 接著（魔岩是台灣廠牌）。
+const CHN = ['cn', 'tw', 'hk', 'us', 'gb', 'jp', 'sg', 'my'];
+// 拉丁第二圈：chicha 與 cumbia 的原廠在祕魯與哥倫比亞，再發權落在英美（Barbès、Analog Africa）。
+const LATAM = ['pe', 'co', 'cl', 'mx', 'ar', 'us', 'gb', 'es', 'fr', 'br'];
+// 法語線：fr 第一，be／ch／ca 是法語圈的鄰接市場（Céline Dion 與魁北克那一支在 ca）。
+const FRA = ['fr', 'be', 'ch', 'ca', 'us', 'gb', 'de', 'nl'];
+// 德義線：一批同時涵蓋德語與義大利語，兩邊都要排前面。
+const DEIT = ['de', 'it', 'at', 'ch', 'fr', 'us', 'gb', 'nl'];
+// 新譜（c-111／c-112）：發行權全球同步，用最寬的一組；tw／kr 補在後面接華語與韓語那半。
+const NEW = ['us', 'gb', 'jp', 'de', 'fr', 'tw', 'kr', 'ca', 'au'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
   c87: JPN, c88: OST,
   c89: TWN, c90: TWN, c91: TWN, c92: TWN,
-  c93: UKB, c94: USB, c95: BLU, c96: USB, c97: UKB, c98: USB, c99: WLD, c100: UKB, c101: GAME, c102: GAME };
+  c93: UKB, c94: USB, c95: BLU, c96: USB, c97: UKB, c98: USB, c99: WLD, c100: UKB, c101: GAME, c102: GAME,
+  // c-103～c-118。c-113～c-115 是 §1 批（rgMbid 留空、不跑 fix-rgmbid 與 probe-caa），
+  // 但試聽探測照跑——§1 的碟在 Apple 上有時反而找得到。
+  c103: JPN, c104: KOR, c105: KOR, c106: TWN, c107: CHN, c108: LATAM, c109: FRA, c110: DEIT,
+  c111: NEW, c112: NEW, c113: JPN, c114: USB, c115: UKB, c116: JPN, c117: UKB, c118: USB };
 
 const cards = [];
 for (const b of BATCHES)
