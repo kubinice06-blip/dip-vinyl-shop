@@ -4613,3 +4613,30 @@ Barbès、Soundway、Analog Africa、Vampisoul、Munster、Infopesa **全部是 
 **先例衝突**：池中《The Roots of Chicha》(2007) 在 2026-08-21 的 c-33 manifest 走的是
 Compilation＋3 個證據 URL，同一形狀。c-108 採新規（照一般 Album 寫），
 **差異留給本機決定要不要回頭統一**。
+
+## 第 185 條（2026-09-06，c-111 研究層 b 組實測）：**Apple 的 `search` 端點對「盤名不是拉丁字」的碟系統性失手，五張全是假的 unavailable**
+
+c-111 的五張 `unavailable`，用 `lookup?id=` 直查**五張全部買得到**，而且每張都命中五到六個店面。
+五種失手的成因各不相同，但**都不是「沒上架」**：
+
+| 卡 | collectionId | 為什麼 `search` 回 0 |
+|---|---|---|
+| 단편선 순간들《음악만세》 | 1766256265 | Apple 盤名用英譯 `Hail to the Music`、掛名用 `Danpyunsun and the Moments Ensemble` |
+| 소음발광《불과 빛》 | 1771393485 | 盤名英譯 `Fire & Light`；且策展層的 alias `Soeumbalgwang` 是自創的，Apple 用 `Soumbalgwang` |
+| 추다혜차지스《소수민족》 | 1818525322 | 盤名是全大寫轉寫 `SOSUMINJOK` |
+| 李竺芯《Suí 水》 | 1786938591 | 盤名含重音 í，search 回的 14 筆全是日本藝人 |
+| 呂士軒《好聲豪氣》 | 1783248937 | **`search?term=好聲豪氣&country=tw` 回 0——tw 店面對純漢字盤名查不到，藝人名卻查得到** |
+
+**最後一列是第 176 條沒涵蓋的新形狀**：176 講的是「`kr`／`cn` 只有 lookup 認得」，
+這裡是 **`tw` 店面認得藝人名、不認得純漢字盤名**。
+
+**通則**：**只要盤名不是拉丁字母，`search` 端點的 0 筆就不能當成「沒上架」。**
+判定 unavailable 之前，至少要再走一次「藝人目錄 lookup」（第 173 條）。
+探測腳本目前只走 search，所以**東亞線的 `unavailable` 一律要研究層覆核**——
+c-111 這批 8 張假陽性（a 組 3 張、b 組 5 張），佔原本 unavailable 的 **100%**。
+
+## 第 186 條（2026-09-06，c-110 策展層踩到）：**`chk-prop` 的非 ASCII 連字號檢查原本只掃 `album`**
+
+CCCP 在 MB 上的 artist-credit 本身就含 U+2013，**掛名這一欄整組漏過去**。
+掛名一樣是標題比對的鍵，已在 c-103／c-106／c-107 的 `chk-prop` 加上 `artist` 欄的同一道檢查。
+**往後複製 `chk-prop` 到新批時，兩欄都要在。**

@@ -1,0 +1,714 @@
+[
+ {
+  "key": "desc4:柴田聡子|Your Favorite Things",
+  "artist": "柴田聡子",
+  "album": "Your Favorite Things",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f717cc8f 的欄位：title「Your Favorite Things」、artist-credit「柴田聡子」（藝人 MBID b9c0edaa）、first-release-date 2024-02-28、primary-type Album、secondary-types **空**。轄下只有 2 個 release，同日 2024-02-28、都是 status Official、都是 **10 軌**：JP 的 CD（AWDR/LR2，catno DDCB-12121，packaging Jewel Case，barcode 4543034052905）與 XW 的 Digital Media（同 catno DDCB-12121，barcode 4580789617744）。**沒有加曲版、沒有初回限定盤，兩筆軌數與曲目完全相同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/f717cc8f-34a3-4edf-8f54-5d1e7b80f29d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2024-02-28 JP CD，AWDR/LR2 DDCB-12121）的逐軌曲目與長度：1〈Movie Light〉5:19、2〈Synergy〉3:18、3〈目の下〉3:14、4〈うつむき〉3:18、5〈白い椅子〉3:04、6〈Kizaki Lake〉3:03、7〈Side Step〉3:29、8〈Reebok〉3:28、9〈素直〉3:48、10〈Your Favorite Things〉3:21。單片 10 軌，**開場的〈Movie Light〉是全碟最長的一首，其餘九軌都落在 3:03–3:48 這個很窄的帶子裡**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f717cc8f-34a3-4edf-8f54-5d1e7b80f29d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1728810659：collectionName「Your Favorite Things」、artistName「Satoko Shibata」、releaseDate 2024-02-28、copyright「℗ 2024 IDEAL MUSIC LLC. | AWDR/LR2」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲序與 MB 原盤**逐位置相符**、逐軌長度相同到秒（319／198／194／198／184／183／209／208／228／201 秒）。**但 us 店面把四首日文曲名換成英譯**：第 3 軌顯示 All My Feelings are My Own、第 4 軌 Look Down、第 5 軌 Sitting、第 9 軌 Selfish。**同一個 collectionId 打 `country=jp`，顯示的是日文原題〈目の下〉〈うつむき〉〈白い椅子〉〈素直〉，長度一字不差。** 曲名要以 jp 店面與 MB 的日文原題為準。",
+    "src": "https://itunes.apple.com/lookup?id=1728810659&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈柴田聡子〉的ディスコグラフィ表：本張是她第 7 張專輯，2024 年 2 月 28 日、AWDR/LR2、規格品番 DDCB-12121，前一張是《ぼちぼち銀河》（2022 年 5 月 25 日，DDCB-12118，同廠牌）。同欄備考記：本張是**第 17 回 CD ショップ大賞・赤賞**的得獎作（音楽ナタリー 2025-03-06 報導為引註）。同頁另記她 2014 年轉入 P-VINE、2022 年起的作品掛 AWDR/LR2。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9F%B4%E7%94%B0%E8%81%A1%E5%AD%90"
+   },
+   {
+    "f": "日文維基〈岡田拓郎〉的參加作品表，2024 年 2 月 28 日『柴田聡子 / Your Favorite Things』那一列逐項列出他的掛名：**製作與編曲（與柴田共同）、錄音工程師、混音工程師**；演奏則是電吉他（第 2、5、7–10 軌）、滑棒吉他（第 1 軌）、木吉他（第 1、6、9 軌）、自鳴琴 autoharp（第 1 軌）、合成器（第 1–3、5–8、10 軌）、Wurlitzer（第 2 軌）、取樣（第 3、7–10 軌）、數位吉他（第 4、5 軌）、鈴（第 5、6 軌）、踏板鋼棒吉他（第 6 軌）、電貝斯（第 8、9 軌）、吉他合成器（第 9 軌）。**十軌裡他碰了九軌**（只有第 4 軌以外每一軌都至少有一件他的樂器）。同表也記他在前作《ぼちぼち銀河》（2022）與《がんばれ！メロディー》（2019）上就已經在班底裡。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E7%94%B0%E6%8B%93%E9%83%8E"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 19 個 release-group。四首先行單曲都**不與專輯同名**：〈Synergy〉2023-09-27、〈白い椅子〉2023-11-22、〈素直〉2024-01-17、〈Side Step〉2024-02-21（**發行只早七天**），四首全部收進本碟。**但同一份名單上有一筆極近似的對照組**：《My Favorite Things》bb5b0b82，2024-10-23，`primary-type=Album`、`secondary-types` 空——**同藝人、同一年、盤名只差第一個字**。用盤名子字串比對會兩張互相命中，撞卡比對一定要連 MBID 或發行日一起看。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b9c0edaa-37ff-4115-847d-14ff604fa952&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡有九軌插著岡田拓郎的手：滑棒吉他、自鳴琴、Wurlitzer、踏板鋼棒，一人一件一件疊上去",
+   "〈Side Step〉當先行單曲放出來時，離整張碟只剩七天"
+  ],
+  "sound": "MB 記兩筆 2024-02-28 的 release（JP CD DDCB-12121 與 XW 數位），都是單片 10 軌、曲目完全相同，沒有加曲版也沒有初回限定盤。曲序自〈Movie Light〉起，那首 5:19 是全碟最長，其餘九軌壓在 3:03–3:48 的窄帶裡，收尾是同名曲〈Your Favorite Things〉3:21。製作與編曲是柴田聡子與岡田拓郎兩人共同掛名，岡田同時是錄音與混音工程師，並在十軌裡的九軌上留下樂器——電吉他、木吉他、滑棒吉他、踏板鋼棒吉他、自鳴琴、Wurlitzer、合成器、吉他合成器、電貝斯與取樣。廠牌 AWDR/LR2，Apple 的 ℗ 欄併記 IDEAL MUSIC LLC.。",
+  "keyTracks": [
+   "Movie Light",
+   "素直",
+   "Your Favorite Things"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。MB release-group first-release-date **2024-02-28**、其下兩筆 release（JP CD／XW 數位）同為 2024-02-28、Apple 1728810659 的 releaseDate 與 ℗ 年份都是 2024，日文維基的ディスコグラフィ表也記 2024 年 2 月 28 日，四處同年同日。**同名先行單曲：無**——四首先行單曲〈Synergy〉〈白い椅子〉〈素直〉〈Side Step〉都不與專輯同名。**但要防的不是年份、是盤名**：同藝人 2024-10-23 另有一張《My Favorite Things》（bb5b0b82，primary-type Album），與本張只差第一個字、同年，是本張最像的假陽性。",
+  "notes": "**探測層 ready 覆核通過**：us 1728810659，10 軌全有 previewUrl，曲序與逐軌長度與 MB 原盤逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。\\n**但曲名有店面差**：us 店面把〈目の下〉〈うつむき〉〈白い椅子〉〈素直〉四首換成英譯（All My Feelings are My Own／Look Down／Sitting／Selfish），jp 店面同一個 collectionId 顯示日文原題。**依裁定 6／70，行文與 keyTracks 一律寫日文原題**，不要照抄 us 店面的英譯。\\n**擋下策展層一處**：`why` 寫「這張的錄音班底以岡田拓郎為中心」——**方向對但講得太含糊，而且『班底』二字沒有來源**。可查證的是岡田拓郎的個人掛名（與柴田共同製作與編曲、錄音工程師、混音工程師，並在十軌中九軌上演奏），**其餘參與者本次查不到名單**，行文不得寫成「一群人的班底」，只能寫岡田一個人做了哪些事。\\n策展層另兩句查證屬實：AWDR/LR2 發行（MB 兩筆 release 的廠牌欄皆是）、《がんばれ！メロディー》（2019）與《ぼちぼち銀河》（2021→**實為 2022-05-25**）在同一條線上（岡田拓郎在那兩張上都在）。**策展層把《ぼちぼち銀河》寫成 2021 年，MB 與日文維基都記 2022-05-25，差一年，行文不得引用那個年份。**\\n**可寫的獎項：第 17 回 CD ショップ大賞・赤賞**（日文維基ディスコグラフィ表的備考欄，引註音楽ナタリー 2025-03-06）。這是唱片行店員票選的獎項名單，不是評論分數也不是銷售榜。"
+ },
+ {
+  "key": "desc4:ZAZEN BOYS|らんど",
+  "artist": "ZAZEN BOYS",
+  "album": "らんど",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 513452fd 的欄位：title「らんど」、artist-credit「ZAZEN BOYS」（藝人 MBID 3d2cd44b）、first-release-date 2024-01-24、primary-type Album、secondary-types **空**。轄下 5 個 release：2024-01-24 的 XW Digital Media 13 軌（Matsuri Studio，barcode 4580789605383）、2024-01-24 的 JP CD 13 軌（Matsuri Studio，catno **PECF-3287**，packaging **Gatefold Cover**，barcode 4544163469411）、一筆無日期無國別的 Digital Media 13 軌、一筆 status **Pseudo-Release** 的羅馬字虛擬條目《Rando》（不採為背書），以及 **2024-05-22 的 JP 12″ 黑膠雙片（Matsuri Studio，catno PEJF-9056~7，Gatefold Cover，barcode 4544163469428）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/513452fd-ff13-4410-9611-fa9e02ac849d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2024-01-24 JP CD，Matsuri Studio PECF-3287）的逐軌曲目與長度：1〈DANBIRA〉3:27、2〈バラクーダ〉4:22、3〈八方美人〉3:23、4〈チャイコフスキーでよろしく〉4:27、5〈ブルーサンダー〉3:32、6〈杉並の少年〉3:33、7〈黄泉の国〉4:12、8〈公園には誰もいない〉**6:51**、9〈ブッカツ帰りのハイスクールボーイ〉4:37、10〈永遠少女〉4:03、11〈YAKIIMO〉4:52、12〈乱土〉**2:05**、13〈胸焼けうどんの作り方〉**2:10**。**單片 13 軌，收尾兩首是全碟最短的兩首，而第 8 軌是最長的一首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=513452fd-ff13-4410-9611-fa9e02ac849d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數相同、但載體切法不同**：2024-05-22 的黑膠版（PEJF-9056~7）同樣 13 軌、同樣曲序，但拆成兩片四面 —— 第一片 6 軌（〈DANBIRA〉到〈杉並の少年〉），第二片 7 軌（〈黄泉の国〉到〈胸焼けうどんの作り方〉）。**CD 上一氣呵成的曲序，在黑膠上被切在第 6 與第 7 軌之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=513452fd-ff13-4410-9611-fa9e02ac849d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1720130386：collectionName「らんど」、artistName「Zazen Boys」、releaseDate 2024-01-24、copyright「℗ 2024 MATSURI STUDIO」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲序與 MB 原盤**逐位置相符**、逐軌長度相同到秒（207／262／203／267／212／213／252／411／277／243／292／125／130 秒）。**但 us 店面把所有日文曲名換成羅馬字**（Danbira／Barracuda／Happou Bijin／Tchaikovsky, Yoroshiku／…／Rando／How To Make Heartburn Udon），與 MB 那筆 Pseudo-Release 的寫法同型；**同一個 collectionId 打 `country=jp` 顯示的是日文原題**，長度一字不差。",
+    "src": "https://itunes.apple.com/lookup?id=1720130386&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ZAZEN BOYS〉的メンバー節與ディスコグラフィ表：現行編制是 **向井秀徳（主唱、吉他、鍵盤）、吉兼聡（吉他、取樣器）、松下敦（鼓，2005 年 1 月加入）、MIYA（貝斯，前 BLEACH／現 385 成員，2018 年 5 月宣布參加、7 月 21 日正式加入）**；前一任貝斯手吉田一郎於 2017 年 12 月 13 日豊洲 PIT 的 TOUR MATSURI SESSION 最終日退團。同表把《らんど》記為**第 6 張專輯**、2024 年 1 月 24 日、規格品番 PECF-3287、全 13 曲；**前一張《すとーりーず》是 2012 年 9 月 5 日**（DQC-964／MSVL-016）。",
+    "src": "https://ja.wikipedia.org/wiki/ZAZEN_BOYS"
+   },
+   {
+    "f": "日文維基〈向井秀徳〉：MATSURI STUDIO 是他在 NUMBER GIRL 解散後自己設立的錄音室，同名廠牌就是 ZAZEN BOYS 音源的發行方；他本人的職業欄同時列著**錄音工程師**。該條目還記了這間錄音室的一項實體限制——**二樓住著房東，晚上八點以後基本上不能出聲**。ZAZEN BOYS 唯一一次到海外錄音是 2008 年 3 月的《ZAZEN BOYS 4》，在 Dave Fridmann 的 Tarbox Road Studio。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%90%91%E4%BA%95%E7%A7%80%E5%BE%B3"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 24 個 release-group。`primary-type=Album` 且 `secondary-types` 空的依序是《ZAZEN BOYS》2004-01-10、《ZAZEN BOYS II》2004-09-01、《ZAZEN BOYS III》2006-01-18、《Matsuri Session Basement Tapes》2008-09-17、《ZAZEN BOYS 4》2008-09-17、《すとーりーず》2012-09-05、《らんど》2024-01-24 —— **共 7 筆；日文維基把《らんど》數成第 6 張**（它不把《Matsuri Session Basement Tapes》這張現場會場限定的 session 盤計入正規作）。**兩份差一張，序數不可斷言。** 名單上**沒有第二筆與《らんど》同名或標題重疊的條目**，沒有同名先行單曲、也沒有同名現場版。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3d2cd44b-9e77-4249-9d37-d8028e756693&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡最長的〈公園には誰もいない〉六分五十一秒，收尾兩首各兩分出頭，一口氣就吹熄",
+   "CD 一路到底的十三軌，黑膠版切成兩片四面，斷在〈杉並の少年〉之後"
+  ],
+  "sound": "MB 記同日兩筆 2024-01-24 的 release（JP CD PECF-3287 對開紙套、XW 數位）皆單片 13 軌，四個月後 2024-05-22 出的 12″ 黑膠雙片（PEJF-9056~7）也是 13 軌同曲序、拆成 6＋7 兩片四面。曲序自〈DANBIRA〉起，多數落在 3:23–4:52，第 8 軌〈公園には誰もいない〉6:51 是唯一一首破六分的，末兩軌〈乱土〉2:05 與〈胸焼けうどんの作り方〉2:10 是全碟最短。廠牌與 ℗ 都是 MATSURI STUDIO——向井秀徳在 NUMBER GIRL 解散後自建的錄音室兼廠牌，他本人也掛錄音工程師。編制是向井秀徳（主唱、吉他、鍵盤）、吉兼聡（吉他、取樣器）、松下敦（鼓）與 2018 年 7 月才正式加入的貝斯手 MIYA。",
+  "keyTracks": [
+   "DANBIRA",
+   "公園には誰もいない",
+   "乱土"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。MB release-group first-release-date **2024-01-24**、其下 CD 與數位兩筆同為 2024-01-24、Apple 1720130386 的 releaseDate 與 ℗ 年份都是 2024，日文維基也記 2024 年 1 月 24 日。**同名先行單曲：無**——MB 藝人頁 24 個 release-group 裡沒有第二筆叫《らんど》的東西。**要留意的是同一個 release-group 底下的黑膠版晚了四個月（2024-05-22）**，那不是另一張碟、也不影響卡單年份。轄下另有一筆 status=Pseudo-Release 的羅馬字條目《Rando》，依既有慣例不採為背書。",
+  "notes": "**探測層 ready 覆核通過**：us 1720130386，13 軌全有 previewUrl，曲序與逐軌長度與 MB 原盤逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 13、無裁定 175 的落差。\\n**曲名有店面差**：us 店面把 13 首全部換成羅馬字（Danbira／Barracuda／Happou Bijin…／Rando／How To Make Heartburn Udon），jp 店面同一個 collectionId 顯示日文原題。**依裁定 6／70，行文與 keyTracks 一律寫日文原題。**\\n**擋下策展層兩處**：\\n（一）`why` 寫「睽違十二年的專輯（前作《すとーりーず》是 2012 年）」——**十二年是錯的**。2012-09-05 到 2024-01-24 是 **11 年 4 個多月**，日文維基與 MB 兩邊的日期一致。**行文不得寫「十二年」**；要講這個空白就寫「二〇一二年之後就沒有新的正規作」或直接點兩個年份。\\n（二）`why` 的 catno 寫「Matsuri Studio（catno PECF-3287）」在 `why` 內文、卡單的 `label` 欄卻寫 PEJF-9056~7——**兩個號都真的存在但指不同載體**：PECF-3287 是 2024-01-24 的 CD，PEJF-9056~7 是 2024-05-22 的黑膠雙片。行文若要提目錄號要講清楚是哪一種載體。\\n**序數不可斷言**：MB 數得出 7 張非現場 Album，日文維基數成第 6 張（差在 2008 年那張會場限定的《Matsuri Session Basement Tapes》算不算）。要講位置就用「MIYA 進來之後的第一張正規作」或「MATSURI STUDIO 自家發行」當錨點。\\n策展層說法查證屬實的兩句：MATSURI STUDIO 既是錄音室也是發行廠牌（向井自建，日文維基〈向井秀徳〉明載）、這張是貝斯手換成 MIYA 之後的正規作（MIYA 2018-07-21 正式加入，其後的正規專輯只有這一張）。"
+ },
+ {
+  "key": "desc4:米津玄師|LOST CORNER",
+  "artist": "米津玄師",
+  "album": "LOST CORNER",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3d764b39 的欄位：title「LOST CORNER」、artist-credit「米津玄師」（藝人 MBID 09d4a85c）、primary-type Album、secondary-types **空**。⚠ 欄位上的 first-release-date 是 **2024-08-08，但那不是專輯的發行日**——這個 release-group 底下混進了兩筆**單軌**的先行數位發行：2024-08-08 的〈RED OUT〉（catno SEXX02685B00Z）與 2024-08-20 的〈がらくた〉（catno SEXX02686B00Z），各只有 1 軌。**整張碟的 8 筆 20 軌 release 全部落在 2024-08-21（日本）與 2024-08-23（海外）。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/3d764b39-b548-4157-9129-5770d4b5ed40?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 轄下的 20 軌 release 逐筆（全部 status Official、全部 CD 那一片都是 20 軌）：**2024-08-21 JP** 有四種——CD 單片 SECL-3110／3111、CD＋Blu-ray（附 23 軌影像片）SECL-3112／3113／3114、CD＋DVD（同 23 軌）SECL-3115／3116／3117、通常盤 CD 單片 Jewel Case **SECL-3118**（barcode 4547366694253）；**2024-08-21 XW** 數位 20 軌（SECL03118B00Z）；**2024-08-23 XE** 的 CD 掛 **Milan**（catno 19802837062，Jewel Case）；**2024-08-23 KR** 的 CD 掛 **Sony Music**（catno 019802837062）。廠牌欄實查：Sony Music Labels Inc.、Milan、Sony Music。**影像片那 23 軌是「米津玄師 2023 TOUR / 空想」的現場影像，不是專輯曲目。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d764b39-b548-4157-9129-5770d4b5ed40&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB release（2024-08-21 JP，通常盤 SECL-3118）的逐軌曲目與長度：1〈RED OUT〉2:32、2〈KICK BACK〉3:14、3〈マルゲリータ〉3:03、4〈POP SONG〉3:19、5〈死神〉3:01、6〈毎日〉3:02、7〈LADY〉3:28、8〈ゆめうつつ〉5:05、9〈さよーならまたいつか!〉3:21、10〈とまれみよ〉2:51、11〈LENS FLARE〉2:55、12〈月を見ていた〉4:13、13〈M八七〉4:23、14〈Pale Blue〉4:57、15〈がらくた〉3:58、16〈YELLOW GHOST〉2:53、17〈POST HUMAN〉4:05、18〈地球儀〉4:35、19〈LOST CORNER〉3:43、20〈おはよう〉2:20。**20 軌、日文維基記全長 70:58**，是 b 組 15 張裡軌數最多、也是唯一破七十分鐘的一張。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d764b39-b548-4157-9129-5770d4b5ed40&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1759899363：collectionName「LOST CORNER」、artistName「Kenshi Yonezu」、**releaseDate 2024-08-21**（與 MB 的 20 軌 release 一致，不是 release-group 欄位上的 08-08）、trackCount 20、copyright 欄逐年逐軌標示「℗ 2021(5,8,14),2022(2,4,13),2023(7,12,18),2024(1,3,6,9-11,15-17,19-20) Sony Music Labels Inc.」——**版權欄自己就把「哪幾軌是舊曲」列了出來：第 5、8、14 軌是 2021 年、第 2、4、13 軌是 2022 年、第 7、12、18 軌是 2023 年，其餘十一軌是 2024 年。** `entity=song` **攤得出 20 軌、20 軌全部有 previewUrl**，曲序與 MB 逐位置相符、逐軌長度相同到秒。us 店面把日文曲名換成羅馬字或英譯（Shinigami／Mainichi - Every Day／Garakuta - JUNK 等），**同一個 collectionId 打 `country=jp` 顯示日文原題**。",
+    "src": "https://itunes.apple.com/lookup?id=1759899363&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈LOST CORNER〉的 infobox 與收錄內容節：發行 2024 年 8 月 21 日、Sony Music Labels、全長 70 分 58 秒；**製作掛米津玄師本人，第 2 軌〈KICK BACK〉另掛常田大希**。全 20 曲的作詞作曲都是米津玄師，編曲逐軌列名：米津單獨編曲 8 首（第 1、3、10、11、16、17、19、20 軌），**坂東祐大共同編曲 7 首**（第 4、5、8、12、13、14、18 軌），常田大希（第 2 軌）、Yaffle（第 6 軌）、mabanua（第 7 軌）、トオミヨウ（第 9、15 軌）各若干。前作《STRAY SHEEP》全碟由坂東祐大共同編曲，**這一張把編曲拆給了多位不同的人**。",
+    "src": "https://ja.wikipedia.org/wiki/LOST_CORNER"
+   },
+   {
+    "f": "同一條目的背景與商品形態節：本作是繼《STRAY SHEEP》（2020）之後隔了約四年的原創全長作，收進**自身過去最多的 11 首既出曲**（〈Pale Blue〉〈ゆめうつつ〉〈死神〉〈POP SONG〉〈M八七〉〈KICK BACK〉〈LADY〉〈月を見ていた〉〈地球儀〉〈さよーならまたいつか！〉〈毎日〉），加上映画《ラストマイル》主題歌〈がらくた〉與找アイナ・ジ・エンド客座人聲的〈マルゲリータ〉，共 20 曲。**專輯名取自石黑一雄小說《別讓我走》書中的字句**；**封面美術是米津玄師自己畫的**。實體共四種形態：通常盤（CD）與三種初回限定盤（がらくた盤 CD＋物件透明盒 SECL-3110~1、映像盤 CD＋Blu-ray＋馬口鐵盒 SECL-3112~4、映像盤 CD＋DVD＋馬口鐵盒 SECL-3115~7）；8 月 23 日另發北美／歐洲盤（Milan Records）、台灣盤（Sony Music 台灣）與香港盤（Sony Music 香港），**海外只出通常盤**。",
+    "src": "https://ja.wikipedia.org/wiki/LOST_CORNER"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 39 個 release-group，`primary-type=Album`、`secondary-types` 空的依序是《diorama》2012-05-16、《YANKEE》2014-04-23、《Bremen》2015-10-07、《BOOTLEG》2017-11-01、《STRAY SHEEP》2020-08-05、《LOST CORNER》2024-08-08（RG 欄位日期）——**本張排第六**；日文維基首句寫「メジャー5枚目、通算6枚目のスタジオ・アルバム」，**通算數與 MB 一致**。名單上**沒有第二筆叫《LOST CORNER》的條目**（同名的只有本碟第 19 軌那首曲子）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=09d4a85c-4916-4b4e-bc96-c4cfcf371046&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "二十軌裡有十一首是舊曲，Apple 的版權欄乾脆按年份把它們一軌一軌點名出來",
+   "前一張整碟編曲交給坂東祐大一個人，這一張拆成六個人分著做"
+  ],
+  "sound": "MB 記 2024-08-21 的日本盤四種形態與 XW 數位、2024-08-23 的 Milan 歐美盤與 Sony Music 韓國盤，**CD 那一片一律 20 軌、曲序相同**（影像盤附的 23 軌是 2023 年橫濱體育館的現場影像，不是專輯曲目）。日文維基記全長 70:58。曲長多落在 2:20–5:05，最長的是第 8 軌〈ゆめうつつ〉5:05、最短的是收尾的〈おはよう〉2:20。作詞作曲全部米津玄師，製作也是他本人（第 2 軌〈KICK BACK〉另掛常田大希）；編曲逐軌分工——米津單獨編 8 首，坂東祐大共同編 7 首，另有常田大希、Yaffle、mabanua、トオミヨウ各分擔一到兩首。二十首裡有十一首是先前已經發表過的曲子，Apple 的 ℗ 欄按 2021／2022／2023／2024 四個年份把軌號逐一列出。封面美術由米津玄師自己繪製。",
+  "keyTracks": [
+   "RED OUT",
+   "マルゲリータ",
+   "LOST CORNER"
+  ],
+  "status": "full",
+  "yearVerified": "**年份一致，2024；但發行日要小心。** MB release-group 欄位上的 first-release-date 是 **2024-08-08，那是混進同一個 release-group 的單軌先行發行〈RED OUT〉的日期**，不是專輯的。整張碟的 20 軌 release 全部是 **2024-08-21**（日本四形態＋XW 數位）與 **2024-08-23**（Milan 歐美盤、Sony Music 韓國盤）；Apple 1759899363 的 releaseDate 也是 2024-08-21，日文維基的 infobox 同樣記 2024 年 8 月 21 日。**卡單年份 2024 正確、行文不得引用 8 月 8 日。** 同名先行單曲：無——MB 藝人頁 39 個 release-group 裡沒有第二筆叫《LOST CORNER》的條目；那兩筆單軌發行的標題是〈RED OUT〉與〈がらくた〉，不是專輯名。",
+  "notes": "**探測層 ready 覆核通過**：us 1759899363，20 軌全有 previewUrl，曲序與逐軌長度與 MB 通常盤（SECL-3118）逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 20、無裁定 175 的落差。\\n**曲名有店面差**：us 店面把日文曲名換成羅馬字／英譯（Shinigami、Mainichi - Every Day、Tsuki Wo Miteita - Moongazing、Garakuta - JUNK、Chikyugi - Spinning Globe、M87、OHAYO…），jp 店面同一個 collectionId 顯示日文原題〈死神〉〈毎日〉〈月を見ていた〉〈がらくた〉〈地球儀〉〈M八七〉〈おはよう〉。**依裁定 6／70，行文與 keyTracks 一律寫日文原題。**\\n**擋下策展層一處，而且是硬錯**：`why` 寫「收錄他為《劇場版 呪術廻戦》《シン・ウルトラマン》等作品寫的曲子與〈KICK BACK〉」——**「呪術廻戦」在日文維基〈米津玄師〉整篇條目裡出現 0 次，他沒有為那部作品寫過曲子**。正確的對應是：〈KICK BACK〉是電視動畫**《チェンソーマン》**的片頭曲（2022-09-19 公布，同曲也是他與常田大希再度合作的那一首）、〈M八七〉是電影**《シン・ウルトラマン》**主題歌、〈地球儀〉是吉卜力《君たちはどう生きるか》主題歌、〈さよーならまたいつか！〉是 NHK 晨間劇《虎に翼》主題歌、〈がらくた〉是電影《ラストマイル》主題歌。**行文提到繫結作品時只能用這五組，不得寫呪術廻戦。**\\n**擋下策展層第二處**：`mbNote` 與 `why` 都以 MB 的 first-release-date **2024-08-08** 為準——**那是〈RED OUT〉單軌發行的日期**（見 `yearVerified`）。行文不得把 8 月 8 日當專輯發行日。\\n策展層其餘說法查證屬實：Sony Music Labels Inc. 發行（MB 六筆日本盤的廠牌欄）、歐洲盤掛 Milan、韓國盤掛 Sony Music、接在《STRAY SHEEP》（2020）之後。**序數可寫**：MB 數得出 6 張非現場 Album、日文維基首句寫「通算 6 枚目」，兩邊一致——但本批的行文方針不靠序數，建議改用「四年之後」或「二十軌裡十一首是舊曲」當錨點。\\n**媒體榜與銷量一律不入 facts**（日文維基那一大塊 Oricon／Billboard JAPAN 名次與唱片協會認證已刻意不採）。"
+ },
+ {
+  "key": "desc4:折坂悠太|呪文",
+  "artist": "折坂悠太",
+  "album": "呪文",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ae1c8d2c 的欄位：title「呪文」、artist-credit「折坂悠太」（藝人 MBID b9c7b7f8）、first-release-date 2024-06-26、primary-type Album、secondary-types **空**。轄下 3 個 release，全部同日 2024-06-26、全部 status Official、廠牌欄全部是 **ORISAKAYUTA**：JP 的 **雙片 CD**（catno ORSK-020，Jewel Case，barcode 4943566314234，**9 軌＋7 軌**）、JP 的單片 CD（catno **ORSK-021**，Jewel Case，barcode 4943566314241，9 軌）、XW 的 Digital Media 9 軌（標題記成羅馬字《Jumon》）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ae1c8d2c-dc47-4963-81fe-7067d50fc799?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2024-06-26 JP 單片 CD，ORISAKAYUTA ORSK-021）的逐軌曲目與長度：1〈スペル〉4:34、2〈夜香木〉3:21、3〈人人〉4:22、4〈凪〉4:41、5〈信濃路〉3:54、6〈努努〉4:30、7〈正気〉3:20、8〈無言〉**6:24**、9〈ハチス〉5:06。**單片 9 軌，第 8 軌〈無言〉6:24 是全碟最長，其餘八軌落在 3:20–5:06。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ae1c8d2c-dc47-4963-81fe-7067d50fc799&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數不同的是初回限定盤，而且多出來的那片是伴奏**：ORSK-020 的第二片 7 軌逐首都標 (Instrumental)——〈スペル〉〈夜香木〉〈人人〉〈凪〉〈努努〉〈無言〉〈ハチス〉的伴奏版，長度與第一片的對應曲幾乎相同（270／201／262／281／270／382／308 秒）。**九首裡有兩首（第 5 軌〈信濃路〉與第 7 軌〈正気〉）沒有做伴奏版，所以第二片只有 7 軌不是 9 軌。** 通常盤 ORSK-021 只有第一片那 9 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ae1c8d2c-dc47-4963-81fe-7067d50fc799&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **jp** collectionId 1747978328：collectionName「呪文」、artistName「折坂悠太」、releaseDate 2024-06-26、copyright「℗ 2024 ORISAKAYUTA」、trackCount 9。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲名是日文原題、曲序與 MB 通常盤**逐位置相符**、逐軌長度相同到秒（272／200／261／279／233／268／198／382／306 秒）。**上架的是 9 軌的通常盤，不是 16 軌的初回限定盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1747978328&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **這張碟在 Apple 上有兩個不同的 collectionId，分店面掛不同的盤名**：jp 店面是 **1747978328《呪文》**（曲名日文原題），**us／tw／hk 店面是 1747965020《Jumon》**（artistName「Orisaka Yuta」，曲名全部英譯：Spell／Night Jasmine／People／Calmly／Shinano Trail／Never／Sane／Silent／Lotus）。兩邊都是 9 軌、9 軌全有 previewUrl、逐軌長度相同到秒（272／200／261／279／233／268／198／382／306），**是同一張碟的兩筆上架**。藝人頁（artistId **1148501286**，Apple 掛名 `Orisaka Yuta`）在 jp／us／tw／hk 四店都回同一份 19 筆目錄，只是本張那一列的 id 與標題不同。**下游釘 collectionId 時要先決定走哪個店面**——依裁定 6／70 要日文原題，**應該釘 jp 的 1747978328。**",
+    "src": "https://itunes.apple.com/lookup?id=1747965020&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈折坂悠太〉的アルバム表：《呪文》是他的**第 4 張專輯**，2024 年 6 月 26 日，**初回限定盤是 2CD（規格品番 ORSK-020）、通常盤是單片 CD（ORSK-021）**；同表往前是《たむけ》2016-09-07（NORO-003）、《平成》2018-10-03（ORSK-005）、《心理》2021-10-06（初回限定盤 CD＋DVD ORSK-015／通常盤 ORSK-016）。**他名下的規格品番從 2014 年的迷你專輯《あけぼの》（ORSK-001）起就一路是 ORSK- 開頭**，與 MB 廠牌欄記的 ORISAKAYUTA 對得上。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%8A%98%E5%9D%82%E6%82%A0%E5%A4%AA"
+   },
+   {
+    "f": "同一條目的略歴節：折坂悠太 1989 年生於鳥取縣、在千葉縣長大，小學前三年隨父親工作住在**俄羅斯**、中學時再到**伊朗**住了兩年，兩度回國後都不上學、改上千葉柏市的自由學校「ゆうび小さな学園」——**《たむけ》為止的錄音就是在那間自由學校裡做的**。2014 年參與創立自主廠牌「のろしレコード」（與松井文、夜久一三人，松井發起）。2016 年 8 月 11 日《たむけ》的發片單場演出是他**第一次以「合奏」編制上台**；2021 年《心理》的首次巡迴走了八個城市，音楽ナタリー的報導標題記那次是「7 人の重奏編成」。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%8A%98%E5%9D%82%E6%82%A0%E5%A4%AA"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 13 個 release-group。`primary-type=Album`、`secondary-types` 空的有 5 筆：《のろしレコード》2015-05-06、《たむけ》2016-09-07、《平成》2018-10-03、《心理》2021-10-05、《呪文》2024-06-26 —— **MB 數得出五筆、日文維基把《呪文》記成第 4 張**（差在 2015 年那張是のろしレコード三人組的合作盤、不是他的個人作）。**兩份差一張，序數不可斷言。** 名單上**沒有第二筆叫《呪文》的條目**，沒有同名先行單曲、也沒有同名現場版；2023-06-30 的〈あけぼの（2023）〉與 2018 年的迷你專輯《あけぼの》同名，但那與本張無關。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b9c7b7f8-653c-42fb-b754-f212bb469438&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "初回限定盤第二片是伴奏，但只有七首——〈信濃路〉與〈正気〉沒有做成伴奏版",
+   "九軌裡〈無言〉獨自跑到六分二十四秒，其他八首都收在三分二十到五分之間"
+  ],
+  "sound": "MB 記三筆 2024-06-26 的 release，廠牌欄一律 ORISAKAYUTA：初回限定盤雙片 CD（ORSK-020，9＋7 軌）、通常盤單片 CD（ORSK-021，9 軌）、XW 數位 9 軌。原盤是 9 軌，曲序自〈スペル〉起、收在〈ハチス〉；第 8 軌〈無言〉6:24 是全碟最長，其餘八軌壓在 3:20–5:06。初回限定盤多出來的第二片是伴奏版，但只做了七首——〈信濃路〉與〈正気〉不在其中。Apple 上架的是 9 軌那一版，逐軌長度與 MB 相同到秒，目前只在 jp 店面查得到。",
+  "keyTracks": [
+   "スペル",
+   "無言",
+   "ハチス"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。MB release-group first-release-date **2024-06-26**、其下三筆 release（雙片 CD／單片 CD／XW 數位）全部同為 2024-06-26、Apple jp 1747978328 的 releaseDate 與 ℗ 年份都是 2024，日文維基的アルバム表也記 2024 年 6 月 26 日，四處同年同日。**同名先行單曲：無**——MB 藝人頁 13 個 release-group 裡沒有第二筆叫《呪文》的條目。",
+  "notes": "**探測層 ready 覆核通過**：**jp** 1747978328，9 軌全有 previewUrl，曲名是日文原題、曲序與逐軌長度與 MB 通常盤 ORSK-021 逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 9、無裁定 175 的落差。⚠ **同一張碟在 Apple 上有兩個 collectionId**：jp 是 1747978328《呪文》（日文曲名），us／tw／hk 是 1747965020《Jumon》（英譯曲名、掛名 Orisaka Yuta）。兩筆都是 9 軌全有 previewUrl、逐軌長度相同到秒。**下游要釘 jp 的 1747978328**，才拿得到日文原題（裁定 6／70）；拿 jp 的 id 去打 country=us 會回空，那不是「Apple 沒有」，是那個店面用另一個 id。\\n**這是本組唯一一張『初回限定盤／通常盤軌數不同』的碟**，但差異不在正盤曲目：多出來的第二片全是伴奏版（而且只有七首）。**行文寫軌數時要寫 9 軌，不得把 16 當原盤軌數**（裁定 140 的形狀）。\\n**擋下策展層兩處**：\\n（一）`why` 寫「他的合奏班底『重奏』橫跨爵士與傳統歌謡的演奏者」——**『重奏』這個詞在本次查到的來源裡只出現在 2021 年《心理》巡迴的報導標題（『7 人の重奏編成』），不是《呪文》的班底名，而『橫跨爵士與傳統歌謡』完全查不到出處。** 行文不得指名這張碟的演奏者或編制人數；要寫他的合奏線只能用可查證的錨點——2016 年《たむけ》發片場是他第一次用合奏編制上台。\\n（二）`why` 寫「發行掛他自己的 ORISAKAYUTA」——**『他自己的』這四個字沒有來源**。可查證的是：MB 三筆 release 的廠牌欄都是 ORISAKAYUTA，而他名下的規格品番自 2014 年起一路是 ORSK- 開頭。日文維基明寫是他自主廠牌的只有「のろしレコード」（與松井文、夜久一共同，2014 年由松井發起）。**行文只能寫廠牌名與目錄號，不要斷言所有權。**\\n**序數不可斷言**：MB 數得出 5 筆非現場 Album、日文維基記第 4 張（差在 2015 年那張三人組合作盤）。要講位置就用「接在《心理》（2021）之後」。\\n可用的傳記錨點（有來源）：俄羅斯與伊朗各住過幾年、《たむけ》為止的錄音在他上的自由學校裡做——這些日文維基都有引註。"
+ },
+ {
+  "key": "desc4:단편선 순간들|음악만세",
+  "artist": "단편선 순간들",
+  "album": "음악만세",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b8d54db0 的欄位：title「음악만세」、artist-credit「단편선 순간들」（藝人 MBID e4817d35）、first-release-date 2024-09-10、primary-type Album、secondary-types **空**。轄下 2 個 release，同日 2024-09-10、都是 status Official、廠牌欄都是 **Mirrorball Music**、都是 **10 軌**：KR 的 Digital Media（標題「음악만세」）與 XW 的 Digital Media（標題譯成「Hail to the Music」）。**沒有實體 release 建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b8d54db0-5918-456b-922a-b53d469e118c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 的 KR release（2024-09-10，Mirrorball Music）逐軌曲目與長度：1〈Land of Hope and Glory (and The Things) (Edward Elgar)〉1:53、2〈독립〉3:47、3〈오늘보다 더 기쁜 날은 남은 생애 많지 않을 것이다〉3:35、4〈물〉5:21、5〈Alice in Deep〉**7:45**、6〈아내〉4:42、7〈거인〉**8:34**、8〈불〉6:43、9〈음악만세〉5:25、10〈Pavane pour une infante défunte (Maurice Ravel)〉3:55。**十軌裡有兩首破七分半，總長超過五十分鐘；而且頭尾兩軌不是自己的曲子——開場掛 Edward Elgar 的〈Land of Hope and Glory〉、收尾掛 Maurice Ravel 的〈Pavane pour une infante défunte〉，兩首都在 MB 的曲名欄裡直接標了原作者。** 同 release-group 的 XW 那筆是同樣 10 軌、同樣曲序、長度相同到秒，只是曲名全部英譯（Independent／Material／Spouse／Giant／Fire／Hail to the Music）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b8d54db0-5918-456b-922a-b53d469e118c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**探測層記的『Apple 查無』是假的。** iTunes 的 `search` 端點對 `country=kr` 一律回 0（裁定 176），而**這張在 Apple 上不是用諺文盤名上架的**——藝人頁掛 `Danpyunsun and the Moments Ensemble`（artistId **1754273932**）、盤名掛英譯 **「Hail to the Music」**，用「음악만세」怎麼查都查不到。改打藝人頁 `lookup?id=1754273932&entity=album`，**us／jp／kr／hk／tw 五個店面全部命中**，每個店面都回同一份 5 筆目錄，本張是 **collectionId 1766256265**（2024-09-10，trackCount 10，copyright「℗ 2024 미러볼 뮤직」＝ Mirrorball Music 的諺文寫法）。**kr 店面的 artistName 顯示諺文「단편선 순간들」，其餘四店顯示羅馬轉寫。**",
+    "src": "https://itunes.apple.com/lookup?id=1754273932&entity=album&limit=200&country=kr"
+   },
+   {
+    "f": "Apple `lookup?id=1766256265&country=us&entity=song`：**攤得出 10 軌、10 軌全部有 previewUrl**，曲序與 MB 的 KR release **逐位置相符**、逐軌長度相同到秒（114／227／215／321／466／283／515／403／325／235 秒），`trackCount` 欄與攤開的曲目列都是 10。⚠ **kr 店面的 `entity=song` 只回 collection、攤不出曲目列**（`lookup?id=1766256265&country=kr&entity=song` 的 songs 為 0），**曲目與試聽要走 us／jp 店面取**。us 店面的曲名是英譯，第 6 軌另標 (feat. Kim Haewon)。",
+    "src": "https://itunes.apple.com/lookup?id=1766256265&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "韓文維基〈단편선 순간들〉：這是**2024 年 1 月才組成的樂團**，由創作歌手 회기동 단편선 在前團 **단편선과 선원들** 解散之後號召成立，先以單曲〈독립〉出道；成員是 회기동 단편선、박재준、송현우（貝斯）、이보람（鋼琴）、박장미（吉他），共五人。**《음악만세》是這個團的第一張正規專輯**，2024 年 9 月發行。同條目的引註（한국일보 2024-12-30）記單편선在前團之後**隔了八年**才組新團。",
+    "src": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%EC%84%A0_%EC%88%9C%EA%B0%84%EB%93%A4"
+   },
+   {
+    "f": "韓文維基〈제22회 한국대중음악상〉的得獎與入圍表：第 22 屆頒獎典禮 **2025 年 2 月 27 日**於首爾舉行，評選範圍是 **2023 年 12 月 1 日至 2024 年 11 月 30 日**在韓國發行的作品，由樂評人、廣播製作人、學者與業界人士組成的選定委員會評選，文化體育觀光部與韓國內容振興院後援。**단편선 순간들 以 6 個獎項入圍、是該屆入圍最多的名字**（第二多的 aespa 是 5 項）。《음악만세》拿下**올해의 음반（年度專輯）**與**최우수 모던록 - 음반（最佳現代搖滾專輯）**兩座；另外四項入圍是 올해의 노래（〈독립〉）、올해의 음악인、Best Rock Song（〈독립〉）、최우수 모던록 - 노래（〈오늘보다 더 기쁜 날은 남은 생에 많지 않을 것이다〉）。",
+    "src": "https://ko.wikipedia.org/wiki/%EC%A0%9C22%ED%9A%8C_%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85%EC%83%81"
+   },
+   {
+    "f": "MB 藝人頁分頁全列：**단편선 순간들 名下只有 1 個 release-group**，就是本張。Apple 藝人頁那 5 筆裡另外四筆全是 Single——〈Independent〉2024-07-03（先行單曲，比專輯早兩個多月）、〈Spouse (feat. Kim Haewon)〉2024-08-01、〈You, Me and Namyangju〉2025-09-24、〈15 Minutes : Fire, Hail to the Music (Live at Pentaport, 2025)〉2025-10-07（3 軌現場單曲）。**兩首先行單曲都收進本碟（第 2、6 軌），都不與專輯同名；2025 年那筆現場單曲的標題含「Hail to the Music」，是 Apple 側唯一一個標題重疊的對照組，但它是 3 軌 Single、日期晚一年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e4817d35-f071-4292-abbb-2705bb70fd85&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十軌的頭尾都不是自己的曲子——開場借艾爾加、收尾借拉威爾，中間八首才是他們寫的",
+   "團是二〇二四年一月才組起來的，同年九月就交出這張，是這個名字底下的第一張碟"
+  ],
+  "sound": "MB 記兩筆 2024-09-10 的數位 release（KR 與 XW，廠牌都是 Mirrorball Music），皆 10 軌、曲序相同，沒有實體條目建檔。曲長從 1:53 到 8:34 拉得很開：第 7 軌〈거인〉8:34、第 5 軌〈Alice in Deep〉7:45、第 8 軌〈불〉6:43 都在六分以上，而開場那首只有 1:53。**首尾兩軌是別人的曲子**——第 1 軌是 Edward Elgar 的〈Land of Hope and Glory〉、第 10 軌是 Maurice Ravel 的〈Pavane pour une infante défunte〉，MB 的曲名欄直接把原作者標在括號裡。編制五人：회기동 단편선、박재준、송현우（貝斯）、이보람（鋼琴）、박장미（吉他）。第 6 軌〈아내〉在 Apple 上標 (feat. Kim Haewon)。",
+  "keyTracks": [
+   "독립",
+   "거인",
+   "음악만세"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。MB release-group first-release-date **2024-09-10**、其下兩筆 release（KR／XW 數位）同為 2024-09-10、Apple 1766256265 的 releaseDate 與 ℗ 年份都是 2024，韓文維基也記 2024 年 9 月，四處同年。**同名先行單曲：無**——先行單曲〈독립〉（2024-07-03）與〈Spouse〉（2024-08-01）都不與專輯同名，MB 藝人頁只有這一個 release-group。**唯一標題重疊的對照組在 Apple 那一側**：2025-10-07 的 3 軌現場單曲《15 Minutes : Fire, Hail to the Music (Live at Pentaport, 2025)》（1841573809），標題含專輯的英譯名，但軌數與日期都分得開。",
+  "notes": "**這張的 `unavailable` 是假的，已找到並覆核通過。** 失敗原因有兩層：(a) `search` 端點在 kr 店面一律回 0（裁定 176）；(b) **Apple 上的掛名與盤名都不是諺文**——藝人是 `Danpyunsun and the Moments Ensemble`（artistId 1754273932）、盤名是英譯 `Hail to the Music`，用「음악만세」或「단편선 순간들」查 `search` 只會查到藝人、查不到碟。改走藝人頁 `lookup?id=1754273932&entity=album` 後 **us／jp／kr／hk／tw 五店全中**，命中 **collectionId 1766256265**。\\n**曲目要走 us（或 jp）店面取**：kr 店面的 `entity=song` 攤不出曲目列（songs=0），us 店面 10 軌全有 previewUrl、曲序與逐軌長度與 MB 的 KR release 逐位置相符。\\n**曲名的文字要以 MB 的 KR release 為準**（諺文原題），Apple us 給的是英譯——依裁定 6／70，行文與 keyTracks 寫諺文。\\n**擋下策展層兩處，其中一處是硬錯**：\\n（一）`why` 寫「單團此前的目錄以自主發行為主」——**這個團在《음악만세》之前沒有目錄**。韓文維基明載樂團 2024 年 1 月才組成、先以單曲〈독립〉出道，《음악만세》是**正規 1 집**；MB 名下也只有這一個 release-group。**行文不得暗示這個團有更早的作品**；要講前史只能講 회기동 단편선 的前團 단편선과 선원들（引註記隔了八年）。\\n（二）`why` 寫「단편선（本名 김선기）」——**本次查到的來源沒有這個本名**，韓文維基只寫 회기동 단편선。**行文不得寫本名。**\\n策展層說法查證屬實：Mirrorball Music 發行（MB 兩筆 release 的廠牌欄、Apple 的 ℗「미러볼 뮤직」都是）、**第 22 屆한국대중음악상 올해의 음반與최우수 모던록 - 음반兩項的得獎作**（韓文維基該屆條目的得獎表，兩項都標為得獎）。**可寫的獎項就是這兩座**；另可寫「該屆入圍最多的名字（6 項）」——那是入圍計數不是媒體榜名次。"
+ },
+ {
+  "key": "desc4:소음발광|불과 빛",
+  "artist": "소음발광",
+  "album": "불과 빛",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group faec327b 的欄位：title「불과 빛」、artist-credit「소음발광」（藝人 MBID 0a3f66d1）、first-release-date 2024-10-07、primary-type Album、secondary-types **空**。轄下 2 個 release，同日 2024-10-07、都是 **10 軌**、**廠牌欄都空白**：KR 的 Digital Media（status Official，標題「불과 빛」）與 XW 的 Digital Media（status **Pseudo-Release**，標題譯成「Fire & Light」——虛擬條目，不採為背書）。**MB 上沒有實體 release、也沒有填廠牌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/faec327b-b06d-44eb-9098-a20c232c53c5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 的 KR release（2024-10-07）逐軌曲目與長度：1〈한낮〉3:58、2〈노랑〉3:42、3〈쇠망치〉3:06、4〈검은물〉**6:05**、5〈쉼과 숨〉**1:40**、6〈발소리〉4:10、7〈눈동자〉2:29、8〈방〉4:30、9〈바라는〉4:56、10〈새벽〉**5:31**。**單片 10 軌；第 4 軌〈검은물〉6:05 是全碟最長、第 5 軌〈쉼과 숨〉1:40 是最短，而這兩首緊挨著——最長的一首之後直接接上最短的一首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=faec327b-b06d-44eb-9098-a20c232c53c5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**探測層記的『Apple 查無』是假的。** 除了 `search` 在 kr 店面一律回 0（裁定 176），**Apple 上的掛名羅馬轉寫是 `Soumbalgwang`（不是 Soeumbalgwang，少一個 e）**、盤名掛英譯 **「Fire & Light」**——用「소음발광」或「Soeumbalgwang」查 `search` 都撲空（後者回 resultCount 0）。改打藝人頁 `lookup?id=1454612973&entity=album`，**us／jp／kr／hk／tw 五個店面全部命中**，每個店面都回同一份 11 筆目錄，本張是 **collectionId 1771393485**（2024-10-07，trackCount 10，copyright「℗ 2024 OSORIWORKS, under license to POCLANOS」）。**kr 店面的 artistName 顯示諺文「소음발광」，其餘四店顯示 Soumbalgwang。**",
+    "src": "https://itunes.apple.com/lookup?id=1454612973&entity=album&limit=200&country=kr"
+   },
+   {
+    "f": "Apple `lookup?id=1771393485&country=us&entity=song`：**攤得出 10 軌、10 軌全部有 previewUrl**，曲序與 MB 的 KR release **逐位置相符**、逐軌長度相同到秒（239／223／187／366／101／251／149／270／296／332 秒），`trackCount` 欄與攤開的曲目列都是 10。⚠ **kr 店面的 `entity=song` 只回 collection、攤不出曲目列**（songs=0），曲目與試聽要走 us／jp。us 店面的曲名是英譯（Midday／Terrified／Hammer／Black／Breathe／Step／Pupil／Room／Hope／Dawn）。**MB 的 Pseudo-Release 用的是同一套英譯**。⚠ 這張的 `collectionExplicitness` 是 notExplicit，沒有 explicit 雙胞胎的問題。",
+    "src": "https://itunes.apple.com/lookup?id=1771393485&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "韓文維基〈소음발광〉：這是一支 **2016 年在釜山（부산광역시）組成的後硬蕊（포스트 하드코어）樂團**，組成後成員更動很多次。現行編制**四人**——강동수（隊長、主唱、吉他）、유우진（貝斯）、마재현（鼓）、박성규（吉他）。發行序是 EP《풋》2019、第一張錄音室專輯《도화선》2020、第二張《기쁨, 꽃》2021、第三張《불과 빛》2024。**第二張《기쁨, 꽃》的製作人是釜山樂團 세이수미（Say Sue Me）的吉他手 김병규**（引註 Newstomato 2021-12-23）。2022 年 3 月他們以《기쁨, 꽃》拿下한국대중음악상的**최우수 록 - 노래**與**최우수 록 - 음반**兩座（引註 연합뉴스 2022-03-03 與韓國大眾音樂獎官網兩筆）。",
+    "src": "https://ko.wikipedia.org/wiki/%EC%86%8C%EC%9D%8C%EB%B0%9C%EA%B4%91"
+   },
+   {
+    "f": "韓文維基〈제22회 한국대중음악상〉的得獎表：第 22 屆（2025 年 2 月 27 日，評選範圍 2023-12-01 至 2024-11-30）的**최우수 록 - 음반（最佳搖滾專輯）由 소음발광《불과 빛》拿下**；同項入圍的另外四張是 김수철《김수철 45주년 기념 앨범 너는 어디에》、이승윤《역성》、MONO4OLY《Ordinary Chaos》、서울부인《Wrecking Havoc》。**這是他們在同一個獎項的第二次得獎**（2022 年那次是《기쁨, 꽃》）。",
+    "src": "https://ko.wikipedia.org/wiki/%EC%A0%9C22%ED%9A%8C_%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85%EC%83%81"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 3 個 release-group，全部 `primary-type=Album`：《도화선》2020-09-23、《기쁨, 꽃》2021-10-06、《불과 빛》2024-10-07——**本張排第三，與韓文維基的『세 번째 앨범』一致。** 名單上沒有第二筆叫《불과 빛》的條目。Apple 藝人頁的 11 筆裡另有兩首先行單曲〈In Love〉2024-06-01 與〈Black〉2024-09-04（**後者就是本碟第 4 軌〈검은물〉**，發行早一個月又三天），兩首都不與專輯同名；另有一筆 2025-06-17 的《’25 Live <Kuang!!>》（10 軌現場盤），標題與本張不重疊。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0a3f66d1-97cd-4dd4-9e76-6988cac797a5&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "六分零五秒的〈검은물〉之後，緊接著的〈쉼과 숨〉只有一分四十秒",
+   "他們在同一個獎項拿過兩次：二〇二二年那張，還有這一張"
+  ],
+  "sound": "MB 記兩筆 2024-10-07 的數位 release（KR 的 Official 與 XW 的 Pseudo-Release），皆單片 10 軌、曲序相同，沒有實體條目、廠牌欄也空著；Apple 的 ℗ 欄補上了發行方——OSORIWORKS 授權 POCLANOS。曲序自〈한낮〉起、收在〈새벽〉，第 4 軌〈검은물〉6:05 最長、第 5 軌〈쉼과 숨〉1:40 最短，兩首前後相接；末軌〈새벽〉5:31 是全碟第二長。樂團 2016 年在釜山組成，韓文維基把他們歸在後硬蕊，現行編制四人：강동수（隊長、主唱、吉他）、유우진（貝斯）、마재현（鼓）、박성규（吉他）。",
+  "keyTracks": [
+   "검은물",
+   "쉼과 숨",
+   "새벽"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。MB release-group first-release-date **2024-10-07**、其下兩筆 release 同為 2024-10-07、Apple 1771393485 的 releaseDate 與 ℗ 年份都是 2024，韓文維基也把《불과 빛》記為 2024 年，三處同年同日。**同名先行單曲：無**——兩首先行單曲〈In Love〉（2024-06-01）與〈Black〉（2024-09-04，即本碟第 4 軌〈검은물〉）都不與專輯同名，MB 藝人頁 3 個 release-group 裡沒有第二筆同名條目。",
+  "notes": "**這張的 `unavailable` 是假的，已找到並覆核通過。** 失敗原因有三層：(a) `search` 在 kr 店面一律回 0（裁定 176）；(b) 盤名在 Apple 上是英譯 `Fire & Light`；(c) **策展層填進 `queryAlias` 的羅馬轉寫 `Soeumbalgwang` 是自創的、Apple 上不存在**——Apple 用的是 `Soumbalgwang`（少一個 e），拿 Soeumbalgwang 去 `search` 回 resultCount 0。改走藝人頁 `lookup?id=1454612973&entity=album` 後 **us／jp／kr／hk／tw 五店全中**，命中 **collectionId 1771393485**。**這是裁定 26『不自創轉寫』的實例第二次應驗**：自創的鍵在外部服務上查不到。\\n**曲目要走 us（或 jp）店面取**：kr 店面的 `entity=song` 攤不出曲目列（songs=0）；us 店面 10 軌全有 previewUrl、曲序與逐軌長度與 MB 的 KR release 逐位置相符，`trackCount` 欄與攤開的曲目列都是 10。**曲名的文字以 MB 的 KR release 為準（諺文原題）**，Apple us 給的是英譯。\\n**擋下策展層兩處，兩處都是硬錯**：\\n（一）`why` 寫「首爾三人組」——**兩個數字都錯**。韓文維基明載樂團 **2016 年在釜山組成**、現行編制是**四人**（강동수、유우진、마재현、박성규）。**行文不得寫首爾、也不得寫三人組。**\\n（二）`why` 寫「樂團從弘大場景的自主發行起家」——**沒有來源，而且與『釜山組成』相反**。行文不得提弘大。\\n**另修一處**：策展層的 `label` 欄寫「（MB release 未填廠牌）」——**MB 的確沒填，但 Apple 的 ℗ 欄有**：「℗ 2024 OSORIWORKS, under license to POCLANOS」。這一條可以寫。\\n策展層說法查證屬實：**第 22 屆한국대중음악상 최우수 록 - 음반的得獎作**（韓文維基該屆得獎表）。**可補一筆**：這是他們在同一個獎項的第二次得獎——2022 年 3 月以前作《기쁨, 꽃》同時拿下 최우수 록 - 노래與 최우수 록 - 음반兩座；那張的製作人是釜山樂團 세이수미（Say Sue Me）的吉他手 김병규。"
+ },
+ {
+  "key": "desc4:李竺芯|Suí 水",
+  "artist": "李竺芯",
+  "album": "Suí 水",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 14d8c860 的欄位：title「Suí 水」、artist-credit「李竺芯」（藝人 MBID aa094838）、first-release-date 2024-12-30、primary-type Album、secondary-types **空**。轄下只有 **1 個 release**：TW 的 Digital Media，2024-12-30，status Official，**10 軌**，**廠牌欄空白**。MB 上沒有實體條目。⚠ 這筆 release 的曲名有**四首用簡體字**（第 5、7、8、10 軌），Apple 的 tw 店面與中文維基那四首都是繁體。",
+    "src": "https://musicbrainz.org/ws/2/release-group/14d8c860-cf27-412e-97ac-4cd6ea84a91d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**探測層記的『Apple 查無』是假的。** 這張的盤名《Suí 水》混了台羅拼音（帶重音 í）與漢字，用整串盤名去 `search` 會被日文藝人的同音名整批蓋掉（實測 `term=Suí 水&country=tw` 回 14 筆，全部是 水谷果穂、Sui Kobayashi、SUI 這類日本藝人，沒有一筆是本碟）。改打藝人頁 `lookup?id=1158832075&entity=album`（artistId 由 `term=李竺芯` 取得），**tw／hk／sg／my／us／jp 六個店面全部命中**，每店都回同一份 9 筆目錄，本張是 **collectionId 1786938591**（2024-12-30，trackCount 10，copyright「℗ 2024 果核音樂玫瑰森林農場有限公司」）。⚠ **artistName 在 tw／hk／jp 顯示「李竺芯」、在 sg／my／us 顯示「Siri Lee」**——策展層 `queryAlias` 填的 `Li Chu-Hsin` 不是 Apple 用的轉寫。",
+    "src": "https://itunes.apple.com/lookup?id=1158832075&entity=album&limit=200&country=tw"
+   },
+   {
+    "f": "Apple `lookup?id=1786938591&country=tw&entity=song`：**攤得出 10 軌、10 軌全部有 previewUrl**，曲名是繁體：1〈阿美蝶〉4:09、2〈水〉2:40、3〈足芳足芳〉3:34、4〈拌拌咧〉3:43、5〈拄拄仔離開〉3:48、6〈Sakura Gansha〉3:16、7〈懸踏仔咬跤〉3:00、8〈荷爾蒙〉3:05、9〈伍冬拾冬〉3:43、10〈台灣查某囝 (誠心推薦版)〉4:27。曲序與 MB 的 TW release **逐位置相符**、逐軌長度相同到秒，`trackCount` 欄與攤開的曲目列都是 10。⚠ **collectionExplicitness 是 `explicit`**（第 6 軌〈Sakura Gansha〉標 explicit），這是未淨化版、不是 cleaned 雙胞胎（裁定 166 的關已過）。",
+    "src": "https://itunes.apple.com/lookup?id=1786938591&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈Suí 水〉的 infobox 與收錄曲目表：**這是李竺芯的第二張專輯**，2024 年 12 月 30 日發行，廠牌 **果核音樂**，製作人 **鍾興民**，全長 35:23（曲目表另記 35:18），前作是《和昨日說再見》（2020）。逐軌credit：**十首的作詞全部是李竺芯**；作曲九首掛「台南歐力桑、李竺芯」（只有第 9 軌〈伍冬拾冬〉是「鍾興民、李竺芯」）；**編曲十首都有鍾興民**，第 4 軌另加李竺芯、第 5 軌另加王義中、第 10 軌另加董運昌；製作人十首都是鍾興民，第 8 軌〈荷爾蒙〉另加李竺芯。第 9 軌的作詞另掛曲全立。",
+    "src": "https://zh.wikipedia.org/wiki/Su%C3%AD_%E6%B0%B4"
+   },
+   {
+    "f": "同一條目的簡介節：李竺芯 2023 年參加《MUSIC MAKER 音樂主理人》時生出做新專輯的念頭，找鍾興民合作，花一年做完。逐首的取徑寫得很具體——**〈足芳足芳〉的旋律近法國香頌，她用「法式台語」唱**，說法源自小時候看《鐵獅玉玲瓏》裡許效舜把法語與台語接起來的橋段；**〈懸踏仔咬跤〉（台羅 kuân-ta̍h-á kā kha）是西班牙語歌〈關達那美拉〉的諧音**；**〈Sakura Gansha〉加了日本演歌的曲調**；**〈拌拌咧〉混了非洲的 Afrobeats**（這首曾在《MUSIC MAKER 音樂主理人》上唱過）。",
+    "src": "https://zh.wikipedia.org/wiki/Su%C3%AD_%E6%B0%B4"
+   },
+   {
+    "f": "同一條目的獎項紀錄表（引註中央社 2025-06-28 的完整得獎名單）：本張在**第 36 屆金曲獎入圍 6 項**，其中**年度專輯獎、最佳台語專輯獎兩項由《Suí 水》拿下、最佳台語女歌手獎由李竺芯拿下**（三項得獎）；另外三項入圍是年度歌曲獎（〈足芳足芳〉）、最佳作詞人獎（李竺芯〈足芳足芳〉）、最佳專輯製作人獎（鍾興民、李竺芯）。隔年第 37 屆另以〈Sakura Gansha〉入圍最佳 MV 獎。",
+    "src": "https://zh.wikipedia.org/wiki/Su%C3%AD_%E6%B0%B4"
+   },
+   {
+    "f": "MB 藝人頁分頁全列：**李竺芯名下只有 1 個 release-group**，就是本張。Apple 藝人頁那 9 筆裡另有一張 2020-09-30 的 9 軌專輯《和昨日說再見》（1533772311）與若干單曲，其中兩首後來收進本碟：〈台灣查某囝〉2023-10-06（本碟第 10 軌的原版）與〈伍冬拾冬〉的電影主題曲版本〈伍冬拾冬(台灣超人電影主題曲)〉2024-10-25（本碟第 9 軌）。**兩首先行單曲都不與專輯同名，Apple 藝人頁上也沒有第二筆叫《Suí 水》的東西。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=aa094838-40bd-4e51-a424-f35619480e54&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十首的詞全是她自己寫的，曲有九首掛著同一個名字：台南歐力桑",
+   "〈足芳足芳〉唱成法式台語，〈懸踏仔咬跤〉是〈關達那美拉〉的諧音，〈Sakura Gansha〉加演歌"
+  ],
+  "sound": "MB 只有一筆 2024-12-30 的 TW 數位 release、10 軌，沒有實體條目；Apple tw 的 ℗ 欄補上發行方——果核音樂玫瑰森林農場有限公司，中文維基的廠牌欄寫果核音樂。全長中文維基記 35:23，是 b 組 15 張裡最短的一張；十軌全部落在 2:40–4:27，沒有長曲。製作人鍾興民一個人掛滿十軌，編曲也是十軌都有他（第 4 軌另加李竺芯、第 5 軌王義中、第 10 軌董運昌）。作詞十首全是李竺芯，作曲九首掛「台南歐力桑、李竺芯」。曲目一首一種借法：〈足芳足芳〉走法國香頌、〈懸踏仔咬跤〉諧音〈關達那美拉〉、〈Sakura Gansha〉帶日本演歌、〈拌拌咧〉混 Afrobeats。收尾的〈台灣查某囝 (誠心推薦版)〉是 2023 年那首單曲的重錄。",
+  "keyTracks": [
+   "足芳足芳",
+   "懸踏仔咬跤",
+   "台灣查某囝 (誠心推薦版)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。MB release-group first-release-date **2024-12-30**、其下唯一那筆 TW release 同為 2024-12-30、Apple 1786938591 的 releaseDate 與 ℗ 年份都是 2024，中文維基的 infobox 也記 2024 年 12 月 30 日，三處同年同日。**同名先行單曲：無**——MB 名下只有這一個 release-group；Apple 藝人頁 9 筆裡沒有第二筆叫《Suí 水》的條目。**⚠ 這張落在年底，得獎與大部分報導都在 2025 年**（第 36 屆金曲獎是 2025-06-28 頒），行文若提獎年要與發行年分開寫。",
+  "notes": "**這張的 `unavailable` 是假的，已找到並覆核通過。** 失敗原因是盤名：《Suí 水》混了帶重音的台羅拼音與漢字，`search?term=Suí 水&country=tw` 回的 14 筆**全部是日本藝人**（水谷果穂、Sui Kobayashi、SUI…），一筆都不對；`term=好聲豪氣` 這類純漢字盤名更是直接回 0。改走藝人頁 `lookup?id=1158832075&entity=album`（artistId 從 `term=李竺芯` 取得，tw／us／hk 都查得到藝人），**tw／hk／sg／my／us／jp 六店全中**，命中 **collectionId 1786938591**。\\n**曲目與試聽走 tw 店面**：10 軌全有 previewUrl、曲序與逐軌長度與 MB 的 TW release 逐位置相符，`trackCount` 欄與攤開的曲目列都是 10。**`collectionExplicitness` 是 explicit**，取到的是未淨化版。\\n**繁簡要注意**：**MB 那筆 TW release 的曲名有四首用簡體字**（第 5〈拄拄仔離開〉、第 7〈懸踏仔咬跤〉、第 8〈荷爾蒙〉、第 10〈台灣查某囝〉這四軌），Apple tw 與中文維基都是繁體。**行文與 keyTracks 一律用繁體**（依店主 2026-09-06 裁定），不要照抄 MB 的字串。\\n**掛名的外部轉寫要更正**：策展層 `queryAlias` 填的是 `Li Chu-Hsin`，**Apple 實際用的是 `Siri Lee`**（sg／my／us 三店的 artistName），tw／hk／jp 顯示漢字「李竺芯」。\\n**策展層說法全數查證屬實，並可補強**：第 36 屆金曲獎年度專輯獎與最佳台語專輯獎都由這張拿下（中文維基獎項表，引註中央社完整名單）——**另可寫李竺芯同屆拿下最佳台語女歌手獎、本張共入圍 6 項**。發行方「果核音樂玫瑰森林農場」也對得上（Apple ℗ 欄）。\\n**策展層漏掉的最有寫頭的東西**：製作人 **鍾興民**（十軌全掛）與作曲者 **台南歐力桑**（十軌中九軌），以及每首各借一種曲風的做法（香頌／演歌／Afrobeats／〈關達那美拉〉諧音）——這些都在中文維基的 infobox、曲目 credit 與簡介節裡，有引註。"
+ },
+ {
+  "key": "desc4:呂士軒|好聲豪氣",
+  "artist": "呂士軒",
+  "album": "好聲豪氣",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5ef91014 的欄位：title「好聲豪氣」、artist-credit「呂士軒」（藝人 MBID 01b3b6f8）、first-release-date 2024-12-20、primary-type Album、secondary-types **空**。轄下只有 **1 個 release**：XW 的 Digital Media，2024-12-20，status Official，**10 軌**，廠牌欄 **任意門娛樂股份有限公司**，barcode 4711499321885。MB 上沒有實體條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5ef91014-52b8-42c8-833a-59a09157ec23?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2024-12-20 XW）的逐軌曲目與長度：1〈二周目〉2:32、2〈我在想什麼?〉2:35、3〈Make Some NOIS〉3:05、4〈笑話社長〉3:39、5〈Don't be the best〉2:45、6〈Windance〉2:31、7〈逆水逆 (feat. 黃浩庭)〉3:15、8〈總是要面對〉3:12、9〈芭樂冰芭樂碰〉2:25、10〈我、好翔、你〉3:33。**十軌全部在 2:25–3:39 之間，沒有一首破四分鐘——這是 b 組 15 張裡曲長分布最緊的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5ef91014-52b8-42c8-833a-59a09157ec23&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**探測層記的『Apple 查無』是假的。** `search?term=好聲豪氣&country=tw` 回 **resultCount 0**（純漢字盤名在 tw 店面的搜尋索引上查不到）。改打藝人頁 `lookup?id=1183553947&entity=album`（artistId 由 `term=呂士軒` 或 `term=Trout Fresh` 取得，兩種寫法都回同一個 id），**tw／hk／sg／my／us／jp 六個店面全部命中**，每店都回同一份 **32 筆**目錄，本張是 **collectionId 1783248937**（2024-12-20，trackCount 10，copyright「℗ 2024 任意門娛樂股份有限公司」，與 MB 的廠牌欄一致）。⚠ **artistName 在 tw／hk／jp 顯示「呂士軒」、在 sg／my／us 顯示「TroutFresh」（連寫，沒有空格）**——策展層 `queryAlias` 填的 `Trout Fresh` 帶空格，與 Apple 的寫法差一個字元。",
+    "src": "https://itunes.apple.com/lookup?id=1183553947&entity=album&limit=200&country=tw"
+   },
+   {
+    "f": "Apple `lookup?id=1783248937&country=tw&entity=song`：**攤得出 10 軌、10 軌全部有 previewUrl**，曲序與 MB **逐位置相符**、逐軌長度相同到秒（152／155／185／219／165／151／195／192／145／213 秒），`trackCount` 欄與攤開的曲目列都是 10。**`collectionExplicitness` 是 `explicit`**，第 3 軌〈Make Some NOIS (feat. SheATH)〉與第 5 軌〈Don't be the best (feat. FEEEleven)〉的 `trackExplicitness` 也是 explicit——**取到的是未淨化版，不是 cleaned 雙胞胎**（裁定 166 的關已過）。⚠ Apple 的第 3、5 軌標題比 MB 多了客座掛名（feat. SheATH／feat. FEEEleven），MB 的曲名欄沒有記。",
+    "src": "https://itunes.apple.com/lookup?id=1783248937&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈呂士軒〉的 infobox 與正規專輯表：呂士軒 1989 年 3 月 12 日生於**新竹**，玄奘大學大眾傳播學系畢業，藝名 **Trout Fresh**，職業欄同時列饒舌歌手、音樂製作人、**導演**、詞曲作家，經紀公司 RoboKatZ Music，相關團體是饒舌團體 **違法SmashRegz**（2015 年 12 月以該團 EP《戲劇話》出道）。正規專輯依序是《誤入奇途》2017 年 12 月、《市井小明》2020 年 8 月 18 日、**《好聲豪氣》2024 年 12 月 20 日——第三張個人專輯**，三張的唱片公司欄都寫 RoboKatZ Music。infobox 的金曲獎欄記：**2025 年以《好聲豪氣》拿下第 36 屆金曲獎最佳華語男歌手獎與最佳華語專輯獎兩座。**",
+    "src": "https://zh.wikipedia.org/wiki/%E5%91%82%E5%A3%AB%E8%BB%92"
+   },
+   {
+    "f": "同一條目的生平節：他從國中開始寫饒舌，大學後開始學影像創作，畢業後加入獨立唱片公司 RoboKatZ，**現在同時是歌手、音樂製作人與導演**。藝名的由來他在 2018 年《博恩夜夜秀》上解釋過——原名綽號「土豆」，Trout Fresh 是「新鮮鱒魚」，取鱒魚逆游向上產卵的意思。同頁的創作歌曲表列出他替別人做的專輯與單曲製作，包括違法SmashRegz《戲劇話》、張伍《歡迎入座》、史今《想入非非》三張整專輯的製作，以及田亞霍、Miss Ko、安那、朱俐靜、昌璟翔的單曲；他也替昌璟翔〈打我啊笨蛋〉與〈走到飛〉導過 MV。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%91%82%E5%A3%AB%E8%BB%92"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 3 個 release-group，全部 `primary-type=Album`：《誤入奇途》2017-12、《市井小明》2020-08-18、《好聲豪氣》2024-12-20——**本張排第三，與中文維基的「第三張個人專輯」一致。** 名單上沒有第二筆同名條目。Apple 藝人頁那 32 筆裡，**本碟十軌中有七首在專輯之前就以單曲放出過**：〈二周目〉2024-05-10、〈我在想什麼?〉2024-05-17、〈總是要面對〉2024-06-07、〈我、好翔、你〉2024-06-27、〈芭樂冰芭樂碰〉2024-08-13、〈笑話社長〉2024-09-24、〈Windance〉2024-11-29；**七首單曲都不與專輯同名**，最後一首離專輯只有三週。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=01b3b6f8-02ad-4872-b4a0-3fbd16f1f7aa&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十軌全部壓在兩分二十五秒到三分三十九秒之間，一首破四分的都沒有",
+   "十首裡有七首在專輯之前就一首一首放出來過，最後那首離發片只剩三週"
+  ],
+  "sound": "MB 只有一筆 2024-12-20 的 XW 數位 release、10 軌，廠牌欄記任意門娛樂股份有限公司（Apple 的 ℗ 欄同），沒有實體條目建檔。十軌全部落在 2:25–3:39，最長的是第 4 軌〈笑話社長〉3:39、最短的是第 9 軌〈芭樂冰芭樂碰〉2:25，曲長分布是本組最緊的一張。客座三處：第 3 軌〈Make Some NOIS〉的 SheATH、第 5 軌〈Don't be the best〉的 FEEEleven（兩處只出現在 Apple 的曲名裡，MB 沒記）、第 7 軌〈逆水逆〉的黃浩庭（MB 與 Apple 都記）。Apple 上是 explicit 版，第 3、5 軌標了 explicit。",
+  "keyTracks": [
+   "二周目",
+   "笑話社長",
+   "我、好翔、你"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。MB release-group first-release-date **2024-12-20**、其下唯一那筆 release 同為 2024-12-20、Apple 1783248937 的 releaseDate 與 ℗ 年份都是 2024，中文維基的正規專輯表也記 2024 年 12 月 20 日，三處同年同日。**同名先行單曲：無**——七首先行單曲（〈二周目〉〈我在想什麼?〉〈總是要面對〉〈我、好翔、你〉〈芭樂冰芭樂碰〉〈笑話社長〉〈Windance〉）都不與專輯同名，MB 藝人頁 3 個 release-group 裡也沒有第二筆同名的東西。**⚠ 這張落在年底，第 36 屆金曲獎是 2025 年頒的**，行文若提獎年要與發行年分開寫。",
+  "notes": "**這張的 `unavailable` 是假的，已找到並覆核通過。** 失敗原因很單純：`search?term=好聲豪氣&country=tw` 回 **resultCount 0**——**純漢字盤名在 tw 店面的搜尋索引上查不到**（這與裁定 176 記的 kr／cn 不是同一回事，tw 的 `search` 對藝人名 `李竺芯`／`呂士軒` 是查得到的，只有盤名查不到）。改走藝人頁 `lookup?id=1183553947&entity=album` 後 **tw／hk／sg／my／us／jp 六店全中**，命中 **collectionId 1783248937**。\\n**嘻哈卡的淨化版關已過**：`collectionExplicitness` 是 explicit，第 3、5 軌的 `trackExplicitness` 也是 explicit，取到的不是 cleaned 版（裁定 166）。\\n**掛名的外部轉寫要更正**：策展層 `queryAlias` 填 `Trout Fresh`（帶空格），**Apple 實際用的是 `TroutFresh`（連寫）**，出現在 sg／my／us 三店的 artistName；tw／hk／jp 顯示漢字「呂士軒」。\\n**擋下策展層一處**：`why` 寫「他此前的目錄從 國蛋 GorDoN 那一代的台北嘻哈場景一路過來」——**兩個要素都查不到**。中文維基明載他是**新竹**人、玄奘大學畢業、2015 年 12 月以饒舌團體**違法SmashRegz**的 EP《戲劇話》出道、所屬是獨立唱片公司 RoboKatZ；**「國蛋 GorDoN」在他的條目裡完全沒有出現，「台北嘻哈場景」也沒有來源**。行文不得寫這一句。\\n**廠牌有兩說，兩邊都要留**：MB 的廠牌欄與 Apple 的 ℗ 欄都是**任意門娛樂股份有限公司**，中文維基的正規專輯表三張都寫 **RoboKatZ Music**（也是他的經紀公司）。行文若提廠牌，寫 Apple／MB 那個發行方比較安全，或兩個都不寫。\\n策展層說法查證屬實：**第 36 屆金曲獎最佳華語專輯獎由這張拿下**（中文維基 infobox 的金曲獎欄）——**另可寫他同屆以這張拿下最佳華語男歌手獎**，兩座。\\n**策展層漏掉的可寫材料**：他同時是製作人與 MV 導演（替違法SmashRegz、張伍、史今做過整張專輯的製作，替昌璟翔與〈走到飛〉導過 MV）、藝名 Trout Fresh 取自鱒魚逆游——中文維基都有引註。"
+ },
+ {
+  "key": "desc4:星野源|Gen",
+  "artist": "星野源",
+  "album": "Gen",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 30357773 的欄位：title「Gen」、artist-credit「星野源」（藝人 MBID 2c6c53ea）、first-release-date 2025-05-14、primary-type Album、secondary-types **空**。轄下 3 個 release，全部同日 2025-05-14、全部 status Official、廠牌欄全部 **SPEEDSTAR**、**CD 那一片一律 16 軌**：JP 的 CD 單片（catno **VICL-66033**，Jewel Case，barcode 4988002943609）、同 catno 的 Digital Media 16 軌、以及 JP 的 **Box**（catno **VIZL-2436**，CD 16 軌＋Blu-ray 19 軌＋Blu-ray 4 軌）。**兩片 Blu-ray 的 23 段是現場與紀錄影像，不是專輯曲目。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/30357773-d98d-4d0d-b3dd-0e74339a9b90?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-05-14 JP CD，SPEEDSTAR VICL-66033）的逐軌曲目與長度：1〈創造〉3:55、2〈Mad Hope〉3:29、3〈Star〉2:42、4〈Glitch〉2:33、5〈喜劇〉3:54、6〈2〉2:40、7〈Melody〉2:31、8〈不思議〉**4:52**、9〈Memories〉3:37、10〈暗闇〉3:54、11〈Why〉4:09、12〈生命体〉3:12、13〈Eden〉3:42、14〈Sayonara〉3:25、15〈異世界混合大舞踏会〉3:49、16〈Eureka〉3:32。**16 軌、日文維基記全長 56:37**；曲長全部落在 2:31–4:52，沒有長曲。**MB 的 JP CD 那一筆在四個日文曲名後面加了英文對照**（創造 (Create)、喜劇 (Comedy)、不思議 (Fushigi)、暗闇 (Kurayami)、生命体 (Life)、異世界混合大舞踏会 (I Wanna Be Your Ghost)）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=30357773-d98d-4d0d-b3dd-0e74339a9b90&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1809314701：collectionName「Gen」、artistName「Gen Hoshino」、releaseDate 2025-05-14、copyright「℗ 2025 Victor Entertainment」、trackCount 16。`entity=song` **攤得出 16 軌、16 軌全部有 previewUrl**，曲序與 MB 的 JP CD **逐位置相符**、逐軌長度相同到秒（235／209／162／153／234／160／151／292／217／234／249／192／222／205／229／212 秒）。us 店面把日文曲名換成英譯（Create／Comedy／Fushigi／Kurayami／Life／I Wanna Be Your Ghost）；**同一個 collectionId 打 `country=jp` 顯示日文原題〈創造〉〈喜劇〉〈不思議〉〈暗闇〉〈生命体〉〈異世界混合大舞踏会〉**，長度一字不差。客座掛名在兩個店面都在：第 2 軌 (feat. Louis Cole, Sam Gendel, Sam Wilkes)、第 6 軌 (feat. Lee Youngji)、第 9 軌 (feat. UMI, Camilo)、第 13 軌 (feat. Cordae, DJ Jazzy Jeff)。",
+    "src": "https://itunes.apple.com/lookup?id=1809314701&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈Gen (星野源のアルバム)〉的 infobox 與概要節：2025 年 5 月 14 日發行、廠牌 SPEEDSTAR RECORDS、全長 56 分 37 秒，是他**第 6 張專輯**、距前作《POP VIRUS》（2018 年 12 月）**約六年半**。16 曲裡收進了這六年半間發行的 4 首 CD 單曲表題曲與若干數位單曲，**收錄的單曲數是他專輯史上最多的一次**；部分單曲曲目在收進專輯時**改了混音或重錄人聲**。星野 2020 年居家期間開始在家用 DAW 做音軌，**這張因此有很多以鍵盤打入為底的曲子**。專輯原本的暫定名是《Mad Hope》，做到後來他覺得「沒有想傳達的訊息」，怕用那個名字會生出訊息性，才改成《Gen》。",
+    "src": "https://ja.wikipedia.org/wiki/Gen_(%E6%98%9F%E9%87%8E%E6%BA%90%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+   },
+   {
+    "f": "同一條目的收録曲逐首註記與收録内容表：**全 16 軌的作詞作曲都是星野源、編曲也全部是星野源一人**（第 2 軌的詞曲另掛 Louis Cole、第 6 軌另掛 Lee Youngji、第 9 軌另掛 UMI 與 Camilo）。客座是：第 2 軌〈Mad Hope〉的 Louis Cole／Sam Gendel／Sam Wilkes、第 6 軌〈2〉的韓國饒舌歌手 이영지、第 9 軌〈Memories〉的美國 UMI 與哥倫比亞 Camilo、第 13 軌〈Eden〉的美國饒舌歌手 Cordae 與 DJ Jazzy Jeff；**Louis Cole 在第 4 軌〈Glitch〉上也打了鼓**。**第 10 軌〈暗闇〉是全碟唯一一首彈唱曲。** 第 11 軌〈Why〉原本以單曲《光の跡》的名字發行，收進專輯時改回星野原先構想的曲名；第 15 軌收進來時把標題裡的「(feat. おばけ)」拿掉、混音也大幅改過。第 14 軌〈Sayonara〉與他從前所屬的器樂團 SAKEROCK 那首同名曲無關。",
+    "src": "https://ja.wikipedia.org/wiki/Gen_(%E6%98%9F%E9%87%8E%E6%BA%90%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+   },
+   {
+    "f": "同一條目的リリース形態說明：共三種——只有 CD 的通常盤，加上兩種初回限定盤。「Box Set “Poetry”」附星野寫的攝影詩集《Mad Hope》、三種拍攝海報與一份名為《From 808 Studio》的解說；「Box Set “Visual”」附 DVD 與 Blu-ray，**總長 5 小時 46 分**的影像，內容包含紀錄片《ニセ明と仲間たち、2025 春》、2023 年 1 月《Gen Hoshino presents “Reassembly”》的本篇與後台影像等。專輯發行隔天（2025-05-15）起跑全國巡迴《Gen Hoshino presents MAD HOPE》，同年 8 月起再跑亞洲巡迴。",
+    "src": "https://ja.wikipedia.org/wiki/Gen_(%E6%98%9F%E9%87%8E%E6%BA%90%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 36 個 release-group。`primary-type=Album`、`secondary-types` 空的依序是《ばかのうた》2010-06-23、《エピソード》2011-09-28、《Stranger》2013-05-01、《YELLOW DANCER》2015-12-02、《POP VIRUS》2018-12-19、《Gen》2025-05-14 —— **本張排第六，與日文維基的「6 枚目のアルバム」一致。** 名單上**沒有第二筆叫《Gen》的條目**（本張標題只有三個字母，但 MB 這一份分頁全列裡沒有撞到）。先行單曲全部**不與專輯同名**：〈創造〉2021-02-17、〈不思議〉2021-04-27、〈喜劇〉2022-04-08、〈異世界混合大舞踏会〉2022-07-18、〈生命体〉2023-08-14、〈光の跡／生命体〉2023-12-27、〈Eureka〉2025-01-28、〈Star〉2025-04-23。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2c6c53ea-09d4-4d98-b174-c9aa83d4fecf&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十六軌的詞、曲、編曲全掛同一個名字，客座卻從洛杉磯排到首爾再排到波哥大",
+   "碟名本來要叫《Mad Hope》，他嫌那樣會生出訊息，改成自己的名字"
+  ],
+  "sound": "MB 記三筆 2025-05-14 的 release（JP CD 單片 VICL-66033、同 catno 數位、以及附兩片 Blu-ray 的 Box VIZL-2436），CD 那一片一律 16 軌；影像片那 23 段是現場與紀錄影像，不是專輯曲目。日文維基記全長 56:37。曲長全部落在 2:31–4:52，最長的是第 8 軌〈不思議〉4:52，沒有長曲。**16 軌的作詞、作曲與編曲都是星野源一個人**，客座集中在四首：〈Mad Hope〉的 Louis Cole／Sam Gendel／Sam Wilkes、〈2〉的 이영지、〈Memories〉的 UMI 與 Camilo、〈Eden〉的 Cordae 與 DJ Jazzy Jeff；Louis Cole 另在〈Glitch〉上打鼓。第 10 軌〈暗闇〉是全碟唯一的彈唱曲。他 2020 年起改在家用 DAW 做音軌，這張有很多以鍵盤打入為底的曲子。廠牌 SPEEDSTAR，Apple 的 ℗ 記 Victor Entertainment。",
+  "keyTracks": [
+   "創造",
+   "暗闇",
+   "異世界混合大舞踏会"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB release-group first-release-date **2025-05-14**、其下三筆 release（CD／數位／Box）全部同為 2025-05-14、Apple 1809314701 的 releaseDate 與 ℗ 年份都是 2025，日文維基的 infobox 也記 2025 年 5 月 14 日，四處同年同日。**同名先行單曲：無**——八首先行單曲（〈創造〉〈不思議〉〈喜劇〉〈異世界混合大舞踏会〉〈生命体〉〈光の跡／生命体〉〈Eureka〉〈Star〉）都不與專輯同名。**策展層擔心的『Gen 只有三個字母、極易誤命中』沒有在 MB 這一側發生**：藝人頁 36 個 release-group 分頁全列，沒有第二筆同名條目。",
+  "notes": "**探測層 ready 覆核通過**：us 1809314701，16 軌全有 previewUrl，曲序與逐軌長度與 MB 的 JP CD（VICL-66033）逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 16、無裁定 175 的落差。\\n**曲名有店面差**：us 店面把六首日文曲名換成英譯（Create／Comedy／Fushigi／Kurayami／Life／I Wanna Be Your Ghost），jp 店面同一個 collectionId 顯示日文原題。**依裁定 6／70，行文與 keyTracks 一律寫日文原題。**\\n**擋下策展層一處**：`why` 寫「是他自《POP VIRUS》（2018）之後隔了近七年的原創專輯」——**「近七年」偏大**。日文維基兩處都寫「約 6 年半」（2018-12-19 → 2025-05-14 是 6 年 5 個月），音楽ナタリー 2025-03-03 的報導標題也是「6 年半ぶり」。**行文寫六年半，不要寫近七年。**\\n策展層說法查證屬實：SPEEDSTAR 發行（MB 三筆 release 的廠牌欄）、catno VICL-66033（通常盤 CD；Box 是 VIZL-2436）、日本盤有初回限定盤多形態（共三種：通常盤與兩種 Box Set）。**序數可寫**：MB 數得出 6 張非現場 Album、日文維基也寫「6 枚目」，兩邊一致——但本批不靠序數行文，建議用「六年半」或「十六軌全部一個人寫一個人編」當錨點。\\n**媒體榜與認證一律不入 facts**（日文維基那欄的 Oricon 名次與唱片協會 Gold 認證已刻意不採）。\\n**策展層漏掉的可寫材料**：碟名原是暫定的《Mad Hope》、後來因為「怕生出訊息性」改成《Gen》；第 11 軌〈Why〉原本以單曲《光の跡》之名發行、收進專輯時才改回原構想的曲名；第 15 軌收進來時拿掉了標題裡的「(feat. おばけ)」；「Box Set “Visual”」附的影像總長 5 小時 46 分——這些日文維基都有引註。"
+ },
+ {
+  "key": "desc4:藤井風|Prema",
+  "artist": "藤井風",
+  "album": "Prema",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 937eacf6 的欄位：title「Prema」、artist-credit **「Fujii Kaze」**（羅馬字；藝人 MBID c3a4aeca）、first-release-date 2025-09-05、primary-type Album、secondary-types **空**。轄下 **12 個 release、全部同日 2025-09-05、全部 status Official**，分四個國別：US（12″ 黑膠 9 軌、CD 9 軌、CD 9＋7 軌）、GB（Polydor 的 CD 9＋7 軌、CD 9 軌、12″ 黑膠對開紙套 9 軌）、JP（HEHN RECORDS／Republic Records／UNIVERSAL SIGMA 三名並列，catno **UMCK-7275／7276** 的 CD 9＋7 軌、**UMCK-1798** 的 CD 9 軌、**UMJK-9152** 的 12″ 黑膠對開紙套 9 軌）、XW／無國別的數位 9 軌三筆。**標準版一律 9 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/937eacf6-5bf6-416b-891b-05fd9f8ddd45?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-09-05 XW 數位）的逐軌曲目與長度：1〈Casket Girl〉4:05、2〈I Need U Back〉3:06、3〈Hachikō〉4:30、4〈Love Like This〉4:21、5〈Prema〉4:23、6〈It Ain't Over〉4:59、7〈You〉4:42、8〈Okay, Goodbye〉3:51、9〈Forever Young〉**5:54**。**單片 9 軌，英文維基記全長 39:46**；曲長全部落在 3:06–5:54，收尾的〈Forever Young〉最長。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=937eacf6-5bf6-416b-891b-05fd9f8ddd45&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數不同的是限定盤，多出來的第二片是舊單曲合輯**：US／GB／JP 三地的 9＋7 軌版，第二片一律是〈grace〉〈Feelin' Go(o)d〉〈Workin' Hard〉〈It's Alright〉〈Hana〉〈Michi Teyu Ku (Overflowing)〉〈masshiro (pure white)〉七首。英文維基寫明那是 **六首先前發表的日語單曲加一首未發表曲〈It's Alright〉**，這一片本身另有一個 MB release-group《Pre: Prema》（cda0abf8，2025-09-05，**primary-type EP、secondary-types Compilation**）——**與正盤同日發行，只有 `primary-type` 分得開**（策展層已標「刻意不釘」）。⚠ **JP 盤那兩筆的曲名是片假名**（キャスケット・ガール／アイ・ニード・ユー・バック／ハチ公／ラヴ・ライク・ディス／プレマ／…／花／満ちてゆく／真っ白），US／GB／XW 是英文。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=937eacf6-5bf6-416b-891b-05fd9f8ddd45&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1819419299：collectionName「Prema」、artistName「Fujii Kaze」、releaseDate 2025-09-05、copyright「A Republic Records / UNIVERSAL SIGMA / HEHN RECORDS release; ℗ 2025 UNIVERSAL MUSIC LLC」、trackCount 9。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲序與 MB **逐位置相符**、逐軌長度相同到秒（245／186／270／261／263／299／282／231／354 秒）。**同一個 collectionId 在 jp 店面也回得到**（artistName 顯示「藤井 風」，中間有空格），曲名兩店都是英文——**這張與本組其他日本盤相反，jp 店面沒有日文曲名版本**，因為原盤的曲名本來就是英文。",
+    "src": "https://itunes.apple.com/lookup?id=1819419299&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Prema (album)〉的 infobox 與 Release and promotion 節：**Prema 是梵文的「神聖之愛」**；這是藤井風的**第三張錄音室專輯**，也是他**第一張全英語詞的專輯**（英文維基兩處都寫 first English-language album／first album fully recorded in English），距前作《LOVE ALL SERVE ALL》（2022）三年。**錄音室欄記 ABS（亞特蘭大）**、全長 39:46、廠牌 Republic／Universal Sigma／Hehn。實體共三種：標準版與限定版 CD，加上黑膠；限定版第二片《Pre: Prema》就是那七首。先行單曲三首：〈Hachikō〉2025-06-13、〈Love Like This〉2025-08-01、同名曲〈Prema〉2025-09-05（與專輯同日）。",
+    "src": "https://en.wikipedia.org/wiki/Prema_(album)"
+   },
+   {
+    "f": "同一條目的 Track listing 與 Personnel 節（credit 取自 Tidal 與唱片內頁）：**九軌的作曲全部是藤井風**；作詞五首與 **Shy Carter** 合寫（第 1、2、4、7、8 軌），第 1 軌另加 Dan Wilson、第 3 軌與 Tobias Jesso Jr. 合寫。**製作以韓國製作人 250 為主軸——九軌裡他掛了八軌**（第 3 軌不掛，但第 3 軌的 Nolan Lambroza 與他並列；實際是第 1 軌 Rob Bisel＋250、第 3 軌 Nolan Lambroza＋250、第 7 軌 Greg Kurstin＋250，其餘六軌 250 單掛）。班底：藤井風本人唱全碟、彈鍵盤（第 1、2、4–6、8、9 軌）、吹薩克斯風（第 6 軌）；Masahito Komori 混音與錄音、Randy Merrill 母帶、Shy Carter 和聲（第 1、2、4、8、9 軌）、Duran 吉他（第 1、2、4、8 軌）、Breakbot 貝斯與吉他與弦樂合成器（第 2 軌）。",
+    "src": "https://en.wikipedia.org/wiki/Prema_(album)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 36 個 release-group。`primary-type=Album`、`secondary-types` 空的有 4 筆：《HELP EVER HURT NEVER》2020-05-20、《HELP EVER HURT COVER》2021-05-20、《LOVE ALL SERVE ALL》2022-03-23、《Prema》2025-09-05 —— **MB 數得出四筆、英文維基寫第三張**（差在 2021 年那張是翻唱盤）。**兩份差一張，序數要寫就寫『第三張錄音室專輯』並跟著英文維基，不要拿 MB 的四筆去數。** 同名先行單曲**有一筆但同日**：〈Prema〉2025-09-05 與專輯同一天；另有《Pre: Prema》（cda0abf8，EP＋Compilation，同樣 2025-09-05）——**這三筆的 `first-release-date` 完全相同，年份比對抓不到，只有 `primary-type` 分得開**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c3a4aeca-8f02-4d22-b1ff-693434ab09a8&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "九軌的曲全是他寫的，詞有五首找了同一個人合寫：Shy Carter",
+   "製作幾乎交給一個人——韓國的 250，九軌裡他掛了八軌"
+  ],
+  "sound": "MB 記 12 筆全部 2025-09-05 的 release，橫跨 US／GB／JP 三地與數位，標準版一律 9 軌；限定版多的第二片是《Pre: Prema》那七首舊單曲（其中〈It's Alright〉是未發表曲）。英文維基記全長 39:46，曲長落在 3:06–5:54，收尾的〈Forever Young〉5:54 最長。錄音在亞特蘭大的 ABS。九軌的曲全部藤井風寫，詞有五首與 Shy Carter 合寫；製作以韓國製作人 250 為主軸，九軌裡八軌有他，另有 Rob Bisel（第 1 軌）、Nolan Lambroza（第 3 軌）、Greg Kurstin（第 7 軌）各分一首。他本人唱全碟、七軌彈鍵盤、第 6 軌吹薩克斯風；Duran 的吉他在四軌上，Breakbot 在第 2 軌彈貝斯、吉他與弦樂合成器；混音與錄音 Masahito Komori、母帶 Randy Merrill。廠牌三名並列：Republic Records、UNIVERSAL SIGMA、HEHN RECORDS。",
+  "keyTracks": [
+   "Casket Girl",
+   "Hachikō",
+   "Forever Young"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB release-group first-release-date **2025-09-05**、其下 12 筆 release 全部同為 2025-09-05、Apple 1819419299 的 releaseDate 與 ℗ 年份都是 2025，英文維基的 infobox 也記 2025 年 9 月 5 日。**⚠ 同名先行單曲：有，而且同一天。** MB 藝人頁上另有兩筆 2025-09-05 的條目——同名單曲〈Prema〉與 EP＋Compilation《Pre: Prema》（cda0abf8）。**三筆的 `first-release-date` 完全一樣，年份與日期比對都分不開，只有 `primary-type` 與 `secondary-types` 能分**（裁定 162 第 2 點：型別比標題硬）。策展層已把《Pre: Prema》標成「刻意不釘」，做法正確。",
+  "notes": "**探測層 ready 覆核通過**：us 1819419299，9 軌全有 previewUrl，曲序與逐軌長度與 MB 逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 9、無裁定 175 的落差。**同一個 collectionId 在 jp 店面也回得到**，兩店曲名都是英文（原盤曲名本來就是英文，這一張沒有本組其他日本盤那種店面曲名差）。\\n**⚠ 但 MB 的 JP 實體盤曲名是片假名**（キャスケット・ガール／ハチ公／プレマ／…），US／GB／XW 是英文。**行文與 keyTracks 用英文原題**——那是原盤與全部數位版的寫法，片假名只出現在日本壓片上。\\n**擋下策展層一處**：`why` 寫「也是他把發行重心移到國際市場後的全長作」——**這句話沒有來源，而且把可查證的事實講糊了**。英文維基寫得很硬的是另一件事：**這是他第一張全英語詞的專輯**（first English-language album／first album fully recorded in English，兩處都有）。行文寫這一句，不要寫「發行重心」。\\n**掛名照裁定 4 走**：MB 的 artist-credit 是羅馬字 `Fujii Kaze`、Apple 的 artistName 在 us 是 `Fujii Kaze`、在 jp 是「藤井 風」（中間有空格）；**卡片掛名寫漢字「藤井風」（無空格），與池中既有的《HELP EVER HURT NEVER》一致**，羅馬字進 queryAlias。\\n**序數要小心**：MB 數得出 4 筆非現場 Album，但其中《HELP EVER HURT COVER》（2021）是翻唱盤；英文維基寫 third studio album。**要寫序數就跟英文維基寫「第三張」，不要拿 MB 的四筆去數。**\\n策展層說法查證屬實：廠牌三名並列（MB 的 JP 盤廠牌欄與 Apple 的 ℗ 欄都是 Republic Records／UNIVERSAL SIGMA／HEHN RECORDS）、《Pre: Prema》是同日發的先行合輯且刻意不釘。\\n**媒體榜與認證一律不入 facts**（英文維基首段的 Oricon／Billboard Japan 冠軍與 RIAJ 認證已刻意不採）。\\n**策展層漏掉的可寫材料**：Prema 是梵文的「神聖之愛」、錄音室在亞特蘭大的 ABS、製作人 250 是韓國人且包辦八軌、Shy Carter 五軌合寫詞——這些英文維基都有引註。"
+ },
+ {
+  "key": "desc4:青葉市子|Luminescent Creatures",
+  "artist": "青葉市子",
+  "album": "Luminescent Creatures",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d1e4e7cd 的欄位：title「Luminescent Creatures」、artist-credit「青葉市子」（藝人 MBID fc3ae4dd）、first-release-date 2025-02-28、primary-type Album、secondary-types **空**。轄下 8 個 release，**全部同日 2025-02-28、全部 11 軌**：US 的 CD（**Psychic Hotline PSY050／hermine**，對開紙套，barcode 850068258079）、XW 的 CD（**hermine HERM003CD**，對開紙套）、JP 的 CD（**hermine HERMCD-003**，對開紙套）、XW 的 **12″ 黑膠對開紙套（hermine HERM003LPX）**、XW 與 JP 的數位共三筆、以及一筆無日期的 Pseudo-Release（不採為背書）。**沒有加曲版、也沒有初回限定盤，八筆全部同樣 11 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-02-28 US CD，Psychic Hotline PSY050／hermine）的逐軌曲目與長度：1〈COLORATURA〉4:08、2〈24° 3′ 27.0″ N, 123° 47′ 7.5″ E〉**1:08**、3〈mazamun〉3:27、4〈tower〉4:03、5〈aurora〉2:04、6〈FLAG〉4:37、7〈Cochlea〉**0:55**、8〈Luciférine〉**5:02**、9〈pirsomnia〉3:40、10〈SONAR〉3:17、11〈惑星の泪〉3:27。**11 軌、英文維基記全長 35:46**；**第 2 軌的曲名是一組經緯度座標（北緯 24°3′27.0″、東經 123°47′7.5″），只有 1 分 08 秒；第 7 軌〈Cochlea〉只有 55 秒——十一軌裡有兩軌不到一分半。**⚠ 數位版把兩處拼法寫成 Lucifèrine 與 prisomnia，**CD／黑膠實體與英文維基的單曲欄都是 Luciférine 與 pirsomnia**，以實體為準。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "⚠ **這張碟在 Apple 上分店面掛三個不同的 collectionId**：**us 1777069509**（artistName「Ichiko Aoba」）、**jp 1778066065**（artistName「青葉市子」、℗「2025 hermine」）、**gb 1774480921**（「Ichiko Aoba」、℗「2025 hermine」）。三筆都是 releaseDate 2025-02-28、trackCount 11、`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名、曲序與逐軌長度三店完全一致（248／68／207／243／124／277／55／302／220／197／206 秒），與 MB 實體逐位置相符。差別只在第 2 軌座標的標點寫法（jp 用直引號、gb 用尖引號並寫成 26.98″）與第 8／9 軌的重音拼法。**us 的 ℗ 是「2025 hermine under exclusive license to Psychic Hotline, LLC」，jp／gb 的 ℗ 只寫 hermine**——北美代理與自家廠牌的分工直接寫在版權欄裡。",
+    "src": "https://itunes.apple.com/lookup?id=1778066065&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Luminescent Creatures〉的 infobox：發行 2025 年 2 月 28 日、廠牌 Hermine、全長 35:46、**製作是青葉市子與梅林太郎（Taro Umebayashi）兩人**；日文原題記為「発光する生き物」。先行單曲三首都**不與專輯同名**：〈Luciférine〉2024-11-13、〈Flag〉2024-12-12、〈Sonar〉2025-02-06。條目首段記**碟名取自前作《アダンの風》（Windswept Adan，2020）最後一軌的曲名**，並記這張與前作共用了幾位核心班底——作曲的梅林太郎、錄音師笠井稔彥（Toshihiko Kasai）、攝影小林恒大（Kodai Kobayashi）。",
+    "src": "https://en.wikipedia.org/wiki/Luminescent_Creatures"
+   },
+   {
+    "f": "同一條目的 Personnel 節（credit 取自 Bandcamp 發行頁）：**青葉市子——所有人聲、古典吉他、Steiner chime、貝殼、田野錄音、電鋼琴，第 1 與 9 軌另掛追加人聲編排**；梅林太郎——原聲鋼琴、鋼片琴、合成器、電吉他、管弦編寫。客席：多久潤一朗長笛（第 1、8 軌）、朝川朋之豎琴（第 1、2、8 軌）、角銅真実打擊（第 1、7、8 軌）、Phonolite Strings 弦樂五人（第 1、2、4、8 軌——梶谷裕子第一小提琴、目加田朝乃第二小提琴、須原杏中提琴、平山織絵大提琴、水谷浩章低音提琴）。製作端：笠井稔彥錄音與混音、加瀬拓馬追加編輯、山内亜郎／小清水良太／石川美乃里助理工程、**小野誠彥（Seigen Ono）母帶**。美術：小林恒大藝術指導與攝影、町口日海設計。",
+    "src": "https://en.wikipedia.org/wiki/Luminescent_Creatures"
+   },
+   {
+    "f": "同一條目的 Development 節：青葉市子 2019 年在東北的一次音樂節上初次接觸到**鯨的研究**，這個興趣讓她此後常跑沖繩與八重山群島——那些造訪正是前作《アダンの風》的起點。她常不帶裝備潛進島嶼周邊的海裡，形容那讓死亡「就在轉角」。她與這張碟的班底把大部分時間花在**波照間島**（琉球群島最南端、面積最小的有人珊瑚島）上，理解它的傳統與生態。前作是替一部虛構電影寫的概念作、跟著一個少女，**這張寫的是她死後與轉生之後的事**；主題落在地球的成形與「海裡誕生的第一批生物」，碟上取樣了鯨的鳴叫。",
+    "src": "https://en.wikipedia.org/wiki/Luminescent_Creatures"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 63 個 release-group。`primary-type=Album`、`secondary-types` 空的依序是《剃刀乙女》2010-01-10、《檻髪》2011-01-19、《うたびこ》2012-01-25、《0》2013-10-23、《マホロボシヤ》2016-10-19、《qp》2018-10-24、《鮎川のしづく》2019-09-15、《Celestially Light》2019-11-08、《アダンの風》2020-12-02、《Luminescent Creatures》2025-02-28 —— **依 MB 這一份本張排第十；英文維基首句寫 ninth studio album。兩邊差一張，序數不可斷言。** 名單上**沒有第二筆與《Luminescent Creatures》同名的條目**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第二軌的曲名是一組經緯度，唸出來就是波照間島外海的那一點",
+   "十一軌裡有兩軌不到一分半——〈Cochlea〉只有五十五秒"
+  ],
+  "sound": "MB 記八筆 2025-02-28 的 release，一律 11 軌：US 的 CD（Psychic Hotline PSY050／hermine）、XW 的 CD（hermine HERM003CD）、JP 的 CD（HERMCD-003）、XW 的 12″ 黑膠（HERM003LPX），三種 CD 與黑膠全是對開紙套，另有三筆數位。英文維基記全長 35:46。曲長從 55 秒拉到 5:02：第 7 軌〈Cochlea〉0:55、第 2 軌那組經緯度曲名 1:08、第 5 軌〈aurora〉2:04 都很短，最長的是第 8 軌〈Luciférine〉5:02。製作是青葉市子與梅林太郎兩人；她本人唱全碟，還彈古典吉他、電鋼琴，吹 Steiner chime 與貝殼，並帶進田野錄音；梅林太郎負責原聲鋼琴、鋼片琴、合成器、電吉他與管弦編寫。客席有長笛（多久潤一朗）、豎琴（朝川朋之）、打擊（角銅真実）與 Phonolite Strings 的弦樂五人。錄音與混音笠井稔彥、母帶小野誠彥、封套攝影小林恒大——三位都是前作《アダンの風》的班底。",
+  "keyTracks": [
+   "COLORATURA",
+   "Luciférine",
+   "惑星の泪"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB release-group first-release-date **2025-02-28**、其下八筆 release 全部同為 2025-02-28、Apple 三個店面的 collection（us 1777069509／jp 1778066065／gb 1774480921）releaseDate 與 ℗ 年份都是 2025，英文維基的 infobox 也記 2025 年 2 月 28 日。**同名先行單曲：無**——三首先行單曲〈Luciférine〉（2024-11-13）、〈Flag〉（2024-12-12）、〈Sonar〉（2025-02-06）都不與專輯同名，MB 藝人頁 63 個 release-group 裡沒有第二筆同名的東西。",
+  "notes": "**探測層 ready 覆核通過**：us 1777069509，11 軌全有 previewUrl，曲序與逐軌長度與 MB 的 US CD 逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。\\n**⚠ 但這張在 Apple 上有三個 collectionId**：us 1777069509、**jp 1778066065**、**gb 1774480921**，三筆同日同 11 軌、曲名曲序長度完全一致。**下游若要日文的 artistName（「青葉市子」）要走 jp 的 1778066065**；us／gb 掛的是 Ichiko Aoba。這與同組的折坂悠太是同一個形狀——**「拿 A 店的 collectionId 去打 B 店回空」不等於 B 店沒有這張碟**。\\n**拼法要以實體為準**：MB 的數位版與 Apple 的 gb 店面把第 8／9 軌寫成 `Lucifèrine`／`prisomnia`，**CD 與黑膠實體、以及英文維基的先行單曲欄都是 `Luciférine`／`pirsomnia`**。第 2 軌的座標曲名各版本標點不一（有的用 ′″、有的用半形引號，gb 還寫成 26.98″），**以 US CD 那筆的 `24° 3′ 27.0″ N, 123° 47′ 7.5″ E` 為準。**\\n**序數不可斷言**：MB 數得出 10 筆非現場 Album（本張第十）、英文維基首句寫 ninth studio album。要講位置就用「接在《アダンの風》（2020）之後」。\\n策展層說法逐句查證的結果：\\n（一）「自家廠牌 hermine 發行、北美一側由 Psychic Hotline 代理」——**屬實**，而且 Apple us 的 ℗ 欄直接寫「hermine under exclusive license to Psychic Hotline, LLC」，jp／gb 的 ℗ 只寫 hermine。\\n（二）「延續《アダンの風》（2020）那套以八重山群島為題的世界觀」——**方向對，但要換一個更硬的講法**：英文維基寫的是這張與前作**共用班底**（梅林太郎、笠井稔彥、小林恒大三人），以及她與團隊把大部分時間花在**波照間島**上；碟名本身也取自《アダンの風》最後一軌的曲名。\\n（三）「錄音包含在島上採到的環境音」——**可寫，但要用 credit 的原話**：Personnel 節記她的樂器欄裡有 **field recordings**，英文維基另記碟上取樣了鯨的鳴叫。**不要寫成「錄音在島上進行」**，那是另一件事、沒有來源。\\n**策展層漏掉的可寫材料**：第 2 軌的曲名是一組經緯度、〈Cochlea〉只有 55 秒、母帶是小野誠彥、前作寫一個少女的故事而這張寫她死後與轉生——英文維基都有引註。\\n**媒體榜一律不入 facts**（Oricon 30 位、UK Independent 17 位、Billboard World Albums 17 位那一欄已刻意不採）。"
+ },
+ {
+  "key": "desc4:石橋英子|Antigone",
+  "artist": "石橋英子",
+  "album": "Antigone",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b80483e6 的欄位：title「Antigone」、artist-credit **「Eiko Ishibashi」**（羅馬字；藝人 MBID 7a505472）、first-release-date 2025-03-28、primary-type Album、secondary-types **空**。轄下只有 2 個 release，同日 2025-03-28、都是 status Official、廠牌欄都是 **Drag City catno DC944**、都是 **8 軌**：XW 的 Digital Media（barcode 781484094425）與 US 的 **12″ 黑膠**。**沒有 CD 條目、沒有加曲版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-03-28 US 12″ 黑膠，Drag City DC944）的逐軌曲目與長度：1〈October〉4:47、2〈Coma〉4:19、3〈Trial〉4:06、4〈Nothing As〉3:13、5〈Mona Lisa〉5:42、6〈Continuous Contiguous〉3:38、7〈The Model〉**8:33**、8〈Antigone〉5:21。**單片 8 軌，是 b 組 15 張裡軌數最少的一張；第 7 軌〈The Model〉8:33 幾乎是第 4 軌〈Nothing As〉3:13 的三倍，英文維基記全長 39:42。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1786650157：collectionName「Antigone」、artistName「Eiko Ishibashi」、releaseDate 2025-03-28、copyright「℗ 2025 Drag City」、trackCount 8。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**，曲序與 MB **逐位置相符**、逐軌長度相同到秒（287／260／247／193／343／218／513／321 秒），`trackCount` 欄與攤開的曲目列都是 8。**同一個 collectionId 在 jp 店面也回得到，artistName 顯示漢字「石橋英子」**，曲名兩店都是英文（原盤曲名本來就是英文）。",
+    "src": "https://itunes.apple.com/lookup?id=1786650157&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Antigone (Eiko Ishibashi album)〉的 infobox 與 Background 節：2025 年 3 月 28 日由 **Drag City** 發行、全長 39:42、曲風欄記 chamber pop、**製作是 Jim O'Rourke**。她替濱口竜介的《Drive My Car》與《悪は存在しない》（Evil Does Not Exist）寫過配樂；infobox 的前一作欄就是《Evil Does Not Exist》的原聲帶（2024）。條目引 Stereogum 的說法：**《Antigone》是她自《The Dream My Bones Dream》（2018）以來第一張正式的個人專輯**。〈Coma〉與〈Mona Lisa〉兩首出過 MV。",
+    "src": "https://en.wikipedia.org/wiki/Antigone_(Eiko_Ishibashi_album)"
+   },
+   {
+    "f": "同一條目的 Track listing 註記與 Personnel 節（credit 取自黑膠內頁）：**全碟由石橋英子作，只有第 4 軌〈Nothing As〉是 Jim O'Rourke 寫的**。第 7 軌〈The Model〉有兩件事特別——**那一段管弦是為 Film Fest Gent 的《2x25》企畫寫的，由 Brussels Philharmonic 演奏、Dirk Brossé 指揮**；**那首的口白取自 Michel Foucault 的〈The Politics of Health in the Eighteenth Century〉**。班底：石橋英子（人聲、鋼琴、Rhodes、合成器、聲響拼貼、弦樂編寫、管樂編寫、錄音）、**Jim O'Rourke（合成器、六弦貝斯、鼓機、弦樂編寫、管樂編寫、製作、錄音、混音）**、**山本達久（鼓）**、Joe Talia（第 1、2 軌打擊，第 3 軌鼓）、Marty Holoubek（第 1–3、5–8 軌貝斯）、Ermhoi（第 2 軌人聲，第 2、3、5、7 軌和聲）、Kalle Moberg（第 2、6 軌手風琴）、松丸契 Kei Matsumaru（第 3、5 軌中音與次中音薩克斯風）、須藤俊明（第 4 軌貝斯）、Mio.O（第 8 軌小提琴）、内田輝 Kirin Uchida（第 8 軌大提琴）。封套攝影水谷太郎，內袋攝影水谷太郎與草野庸子，3DCG Shibashin，排版 Dan Osborn。",
+    "src": "https://en.wikipedia.org/wiki/Antigone_(Eiko_Ishibashi_album)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 58 個 release-group，`primary-type=Album`、`secondary-types` 空的就有 **37 筆**——她的目錄極密（2020 一年裡就有 6 筆、2021 有 5 筆），其中大量是即興與合作盤。**因此「這是她第幾張專輯」在 MB 上根本數不出來，也與英文維基引的『自 2018 年以來第一張正式個人專輯』對不起來**（MB 在 2018 到 2025 之間還列了《Impulse of the Ribbon》《Orbit》《Contentless Dream》《Treatments》《Patrick》《Cryonic》《Lifetime of a Flower》《Album I》《Album II》等十幾筆）。**序數與『第一張正式專輯』兩種講法都不可斷言。** 名單上沒有第二筆叫《Antigone》的條目，也沒有同名先行單曲。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7a505472-ef0a-4a38-86cc-15e3f2a4261c&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "〈The Model〉那段管弦是替根特影展寫的，布魯塞爾愛樂演的，口白從傅柯那裡抄來",
+   "八軌裡七軌是她自己寫的，剩下那首〈Nothing As〉出自 Jim O'Rourke"
+  ],
+  "sound": "MB 只有兩筆 2025-03-28 的 release（XW 數位與 US 的 12″ 黑膠），廠牌都是 Drag City、catno 都是 DC944，都是 8 軌——是 b 組 15 張裡軌數最少的一張。英文維基記全長 39:42、曲風欄寫 chamber pop。曲長從 3:13 到 8:33，第 7 軌〈The Model〉8:33 是全碟唯一破六分的一首。製作是 Jim O'Rourke，他同時掛合成器、六弦貝斯、鼓機、弦樂與管樂編寫、錄音與混音，並寫了第 4 軌〈Nothing As〉——其餘七軌是石橋英子作。她本人唱、彈鋼琴與 Rhodes、合成器，做聲響拼貼，也掛弦樂編寫、管樂編寫與錄音。鼓是山本達久（第 3 軌另有 Joe Talia），貝斯 Marty Holoubek（第 4 軌是須藤俊明），另有 Ermhoi 的人聲與和聲、Kalle Moberg 的手風琴、松丸契的薩克斯風，末軌加進小提琴與大提琴。〈The Model〉的管弦是為根特影展的《2x25》企畫寫的，由 Brussels Philharmonic 演奏、Dirk Brossé 指揮；那一軌的口白取自 Michel Foucault。",
+  "keyTracks": [
+   "October",
+   "The Model",
+   "Antigone"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB release-group first-release-date **2025-03-28**、其下兩筆 release（XW 數位與 US 黑膠）同為 2025-03-28、Apple 1786650157 的 releaseDate 與 ℗ 年份都是 2025，英文維基的 infobox 也記 2025 年 3 月 28 日，三處同年同日。**同名先行單曲：無**——MB 藝人頁 58 個 release-group 裡沒有第二筆叫《Antigone》的東西。⚠ **策展層擔心的『Antigone 是常見古希臘劇名、同名別碟極多』在 MB 藝人頁這一側沒有發生**，但那是因為比對限定在她名下；若下游要用盤名做跨藝人比對，仍要連掛名一起。",
+  "notes": "**探測層 ready 覆核通過**：us 1786650157，8 軌全有 previewUrl，曲序與逐軌長度與 MB 的 US 黑膠逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 8、無裁定 175 的落差。**同一個 collectionId 在 jp 店面也回得到，artistName 顯示漢字「石橋英子」**；曲名兩店都是英文（原盤本來就是英文曲名），沒有本組其他日本盤那種店面曲名差。\\n**掛名照裁定 4 走**：MB 的 artist-credit 是羅馬字 `Eiko Ishibashi`，Apple 的 us 店面也是；**卡片掛名寫漢字「石橋英子」**（jp 店面就是這樣顯示），羅馬字進 queryAlias。\\n**擋下策展層兩處**：\\n（一）`why` 寫「接在她為濱口竜介《悪は存在しない》（2023）寫的配樂……之後」——**年份要小心**。英文維基 infobox 的前一作欄記的是《Evil Does Not Exist》原聲帶、**年份標 2024**（電影本身在 2023 年威尼斯首映、2024 年在日本上映）。**行文若要提那部片，不要斷言 2023，改寫成「她替濱口竜介的《ドライブ・マイ・カー》與《悪は存在しない》寫過配樂」——這一句英文維基的 Background 節直接支持、且不帶年份。**\\n（二）`why` 寫「與《GIFT》現場企畫之後」——**《GIFT》在本次查到的來源裡完全沒有出現**，英文維基的條目沒提。**行文不得寫 GIFT。**\\n策展層說法查證屬實的兩句：Drag City 發行（MB 兩筆 release 的廠牌欄、Apple 的 ℗ 欄都是）、長年合作者包含 **Jim O'Rourke 與山本達久**——這兩人都在本碟的 Personnel 名單上（O'Rourke 掛製作、錄音、混音、多件樂器與第 4 軌的作曲；山本達久打鼓）。\\n**序數與「第一張正式專輯」都不可斷言**：MB 在她名下數得出 37 筆 `primary-type=Album` 且 secondary-types 空的條目（2018 到 2025 之間就有十幾筆），與英文維基引 Stereogum 的「自 2018 年《The Dream My Bones Dream》以來第一張正式個人專輯」對不起來。**行文要講位置，就用「Drag City 發行」「Jim O'Rourke 製作」當錨點。**\\n**評論分數一律不入 facts**（英文維基那一整塊 Metacritic 84、Financial Times 四星、Uncut 四星半，以及 The Quietus／Uncut／The Wire 的年終榜名次已刻意不採）。\\n**策展層漏掉的可寫材料**：〈Nothing As〉是 Jim O'Rourke 寫的（全碟唯一一首不是她作的）、〈The Model〉的管弦是替 Film Fest Gent 的《2x25》寫的並由 Brussels Philharmonic 演奏、那一軌的口白取自 Michel Foucault——英文維基的 Track listing 註記與 Personnel 節都有出處（黑膠內頁）。"
+ },
+ {
+  "key": "desc4:추다혜차지스|소수민족",
+  "artist": "추다혜차지스",
+  "album": "소수민족",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1b58fd0e 的欄位：title「소수민족」、artist-credit「추다혜차지스」（藝人 MBID 76109ff2）、first-release-date 2025-06-13、primary-type Album、secondary-types **空**。轄下只有 **1 個 release**：XW 的 Digital Media，2025-06-13，status Official，**9 軌**，廠牌欄 **POCLANOS**。**MB 上沒有實體條目。** 這筆 release 的曲名全部是英譯：1〈Jakdu: Standing on Blades〉4:28、2〈Between〉5:12、3〈Dance of 5 Guardians〉4:44、4〈Dambul〉3:53、5〈Eo-yeong-cha〉5:26、6〈Bugi〉5:30、7〈Heosse!〉3:32、8〈Feed Well Farewell〉4:37、9〈Ninani〉3:26。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1b58fd0e-1856-4ccc-9e6b-2e7aed0e0b1e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "Bugs 的專輯頁（album 20731241）給的是**諺文原題與流通資訊**：發行日 2025 年 6 月 13 日、流通 **마운드미디어（Mound Media）**、總長 **40:48**，九軌依序是 1〈작두〉(Jakdu: Standing on Blades)、2〈사이에서〉(Between)、3〈좋다 잘한다 좋다〉(Dance of 5 Guardians)、4〈담불〉(Dambul)、5〈어영차〉(Eo-yeong-cha)、6〈부귀덩덩〉(Bugi)、7〈허쎄〉(Heosse!)、8〈너도먹고 물러가라〉(Feed Well Farewell)、9〈니나니〉(Ninani)——**每一首的英譯都與 MB 那筆 XW release 對得上，是同一張碟的兩種寫法。** 同頁的班底：主唱 CHU DA HYE、吉他 Simun、貝斯 Jaeho Kim、鼓 Davin Kim，**另有三人的管樂客席**——Brian Shin（小號）、Sungwan Kim（中音薩克斯風）、Hoseung Han（次中音薩克斯風）。專輯介紹把這張寫成他們的第二張正規作，說法是把韓國傳統巫歌拉進流行音樂的文法裡，並在原本的迷幻放克底上加進 dancehall 與嘻哈。",
+    "src": "https://music.bugs.co.kr/album/20731241"
+   },
+   {
+    "f": "**探測層記的『Apple 查無』是假的。** 除了 `search` 在 kr 店面一律回 0（裁定 176），**Apple 上的盤名是羅馬轉寫的全大寫「SOSUMINJOK」、不是諺文**。改打藝人頁 `lookup?id=1515812602&entity=album`（artistId 由 `term=추다혜차지스` 取得，us 與 jp 都查得到藝人、掛名 `Chudahye Chagis`），**us／jp／kr／hk／tw 五個店面全部命中**，每店都回同一份 **2 筆**目錄（本張與 2020 年的《Underneath the Dangsan Tree Tonight》），本張是 **collectionId 1818525322**（2025-06-13，trackCount 9，copyright「℗ 2025 SOSUMINJOK COMPANY, under license to POCLANOS」）。**kr 店面的 artistName 顯示諺文「추다혜차지스」，其餘四店顯示 Chudahye Chagis。**",
+    "src": "https://itunes.apple.com/lookup?id=1515812602&entity=album&limit=200&country=kr"
+   },
+   {
+    "f": "Apple `lookup?id=1818525322&country=us&entity=song`：**攤得出 9 軌、9 軌全部有 previewUrl**，曲序與 MB 的 XW release **逐位置相符**、逐軌長度相同到秒（268／312／285／233／326／330／213／277／207 秒），`trackCount` 欄與攤開的曲目列都是 9。⚠ **kr 店面的 `entity=song` 只回 collection、攤不出曲目列**（songs=0），曲目與試聽要走 us／jp。us 店面的曲名與 MB 一樣是英譯。",
+    "src": "https://itunes.apple.com/lookup?id=1818525322&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "경향신문 2026-02-27 的第 23 屆한국대중음악상報導：頒獎典禮 **2026 年 2 月 26 日**舉行。**추다혜차지스以《소수민족》拿下올해의 음반（年度專輯），另以〈허쎄〉拿下최우수 알앤비&소울 - 노래，兩座。** 同一屆的 이찬혁以〈멸종위기사랑〉與《EROS》拿三座。報導把樂團寫成四人編制：**추다혜（隊長、主唱）、이시문（吉他）、김재호（貝斯）、김다빈（鼓）**。選定委員會給《소수민족》的評語是它把陌生的傳統樂「在當代的語言與樣式裡救活了」，是流行音樂文法本身的擴張。",
+    "src": "https://www.khan.co.kr/article/202602270003001"
+   },
+   {
+    "f": "경향신문 2026-03-24 的추다혜專訪：她原本想當演員，為此去學民謠，後來進首爾藝術大學的國樂科；**同校的 이희문 在 2014 年找她加入融合國樂樂團 씽씽**，她在那裡體會到傳統與當代混起來的可能，**2016 年起走遍韓國學巫歌**（原話：「민요를 정식으로 배운 건 4년밖에 안 돼요」）。樂團的三位樂手：吉他 시문 在 Berklee 學過爵士吉他，鼓手 김다빈與貝斯手 김재호 都是實用音樂出身。她說「各自追求的、最小眾的、屬於少數者的音樂，在這個樂團裡發揮到 200%」。《소수민족》2025 年 6 月發行後拿下第 23 屆한국대중음악상的올해의 음반，她的原話是「올해의 음반으로 호명 됐을 때 정말 기쁘고 놀랐죠」。",
+    "src": "https://v.daum.net/v/20260324151202678"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 **2 個 release-group**，都是 `primary-type=Album`：《오늘밤 당산나무 아래서》2020-05-24 與《소수민족》2025-06-13 —— **本張排第二，與 Bugs 專輯介紹的「두 번째 정규 앨범」一致，兩張之間隔了五年。** 名單上沒有第二筆同名條目、也沒有任何先行單曲（MB 與 Apple 藝人頁都只有這兩張專輯，沒有 Single）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=76109ff2-a787-404d-8583-a218b1950704&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "四個人的底是巫歌，管樂客席三個人吹進來：小號、中音薩克斯風、次中音薩克斯風",
+   "上一張碟到這一張隔了五年，中間她走遍韓國去學巫歌"
+  ],
+  "sound": "MB 只有一筆 2025-06-13 的 XW 數位 release、9 軌，廠牌欄 POCLANOS；Bugs 記流通是 마운드미디어、總長 40:48；Apple 的 ℗ 寫「SOSUMINJOK COMPANY, under license to POCLANOS」。九軌落在 3:26–5:30，最長的是第 6 軌〈부귀덩덩〉5:30 與第 5 軌〈어영차〉5:26，最短的是收尾的〈니나니〉3:26。編制四人：추다혜（主唱，國樂／民謠出身，2016 年起在韓國各地學巫歌）、이시문（吉他，Berklee 學爵士吉他）、김재호（貝斯）、김다빈（鼓）；另有三人的管樂客席——Brian Shin 的小號、Sungwan Kim 的中音薩克斯風、Hoseung Han 的次中音薩克斯風。Bugs 的專輯介紹把這張的做法寫成把韓國傳統巫歌拉進流行音樂的文法裡，在原本的迷幻放克底上再加進 dancehall 與嘻哈。",
+  "keyTracks": [
+   "작두",
+   "허쎄",
+   "니나니"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB release-group first-release-date **2025-06-13**、其下唯一那筆 release 同為 2025-06-13、Apple 1818525322 的 releaseDate 與 ℗ 年份都是 2025，Bugs 的發行日欄也是 2025 年 6 月 13 日，三處同年同日。**同名先行單曲：無**——MB 與 Apple 的藝人頁都只有兩張專輯、沒有任何 Single 條目。**⚠ 獎年與發行年差一年**：第 23 屆한국대중음악상是 2026 年 2 月 26 日頒的，行文要把兩個年份分開寫。",
+  "notes": "**這張的 `unavailable` 是假的，已找到並覆核通過。** 失敗原因有兩層：(a) `search` 在 kr 店面一律回 0（裁定 176）；(b) **Apple 上的盤名是羅馬轉寫的全大寫 `SOSUMINJOK`、掛名是 `Chudahye Chagis`**，用諺文「소수민족」查不到碟。改走藝人頁 `lookup?id=1515812602&entity=album` 後 **us／jp／kr／hk／tw 五店全中**，命中 **collectionId 1818525322**。（策展層填的 `queryAlias: Chudahye Chagis` 這次是對的，Apple 就是用這個字串。）\\n**曲目要走 us（或 jp）店面取**：kr 店面的 `entity=song` 攤不出曲目列（songs=0）；us 店面 9 軌全有 previewUrl、曲序與逐軌長度與 MB 逐位置相符，`trackCount` 欄與攤開的曲目列都是 9。\\n**⚠ 諺文原題只在 Bugs 那一側**：**MB 與 Apple 兩邊的曲名都是英譯**（Jakdu / Between / Dance of 5 Guardians / Dambul / Eo-yeong-cha / Bugi / Heosse! / Feed Well Farewell / Ninani），諺文原題（작두／사이에서／좋다 잘한다 좋다／담불／어영차／부귀덩덩／허쎄／너도먹고 물러가라／니나니）要從 Bugs 的專輯頁取，兩份逐位置對得上。**依裁定 6／70，行文與 keyTracks 寫諺文原題。**\\n**策展層說法全數查證屬實**：추다혜是前 씽씽 成員（2014 年由同校的 이희문 找進去，경향신문 2026-03-24 專訪）、POCLANOS 發行（MB 廠牌欄與 Apple 的 ℗ 都有）、樂團的底是韓國巫歌與放克節奏組的接合（Bugs 專輯介紹）、**第 23 屆한국대중음악상 올해의 음반的得獎作**（경향신문 2026-02-27）。**可補一筆**：同屆他們還以第 7 軌〈허쎄〉拿下최우수 알앤비&소울 - 노래，是兩座不是一座。\\n**策展層漏掉的可寫材料**：四人的名字與樂器、三人的管樂客席、吉他手 이시문 在 Berklee 學爵士吉他、추다혜 2016 年起走遍韓國學巫歌、上一張到這一張隔了五年——這些都有來源。\\n**評論分數不入 facts**；選定委員會的評語是頒獎機構的官方說明、不是媒體評分，已收在 fact 裡但行文引用時要註明是評審評語。"
+ },
+ {
+  "key": "desc4:이찬혁|EROS",
+  "artist": "이찬혁",
+  "album": "EROS",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 13b4c618 的欄位：title「EROS」、artist-credit「이찬혁」（藝人 MBID 810a4fc2）、first-release-date 2025-07-14、primary-type Album、secondary-types **空**。轄下 2 個 release，同日 2025-07-14、都是 status Official、**都是 9 軌**：XW 的 Digital Media（廠牌 **YG Entertainment**）與一筆無國別的 Digital Media（廠牌 **YG PLUS**，barcode 8809519880798）。**MB 上沒有實體條目、也沒有加曲版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/13b4c618-8200-4c61-a4b5-7f0a4959e627?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**兩筆 release 的曲名一套諺文一套英文，逐位置對得上。** YG PLUS 那筆（諺文）：1〈SINNY SINNY〉3:39、2〈돌아버렸어〉3:15、3〈비비드라라러브〉4:00、4〈TV Show〉3:29、5〈멸종위기사랑〉3:40、6〈Eve〉5:00、7〈Andrew〉3:47、8〈꼬리〉4:09、9〈빛나는 세상〉3:59。YG Entertainment 那筆（英文）：SINNY SINNY／Out of My Mind／Vivid LaLa Love／TV Show／**Endangered Love**／Eve／Andrew／TAIL／Shining Ground，長度一秒不差。**九軌全部落在 3:15–5:00，第 6 軌〈Eve〉5:00 是唯一一首滿五分的。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=13b4c618-8200-4c61-a4b5-7f0a4959e627&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "⚠ **Apple 的 `trackCount` 欄與攤開的曲目列不一致——這是裁定 175 的形狀。** us collectionId 1825027867：collectionName「EROS」、artistName「LEE CHANHYUK」、releaseDate 2025-07-14、copyright「℗ 2025 YG Entertainment」、**`trackCount` 記 10**，但 `entity=song` **只攤得出 9 軌**（9 軌全部有 previewUrl），曲名是英文那一套、曲序與 MB **逐位置相符**、逐軌長度相同到秒（220／196／240／210／220／301／228／249／239 秒）。**kr 店面同一個 collectionId 的 `trackCount` 也記 10、而且 `entity=song` 完全攤不出曲目列（songs=0）。** MB 兩筆 release 都是 9 軌、Bugs 的曲目表也是 9 軌、韓國媒體一致寫「9 곡」——**原盤軌數是 9，`trackCount` 的 10 是錯的欄位值，不得採用。**",
+    "src": "https://itunes.apple.com/lookup?id=1825027867&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Bugs 的專輯頁（album 4122969）：發行日 2025 年 7 月 14 日、기획사 **YG Entertainment**／유통사 **YG PLUS**、總長 **35:00**、**정규 2집**、**타이틀곡是第 3 軌〈비비드라라러브〉**。credit：**全碟作詞都是 이찬혁**；作曲掛 이찬혁、**MILLENNIUM**、**SIHWANG** 三人，第 5 軌〈멸종위기사랑〉另加 이진협，第 8 軌〈꼬리〉另掛 신현빈與 정적。專輯介紹寫這張處理的是他人死亡之後留下的缺失與失落，質問被理想化的愛、揭穿表演性的情緒，在「愛已絕種」的犬儒與「只要還有一絲愛就活得下去」之間來回。",
+    "src": "https://music.bugs.co.kr/album/4122969"
+   },
+   {
+    "f": "경향신문 2026-02-27 的第 23 屆한국대중음악상報導（頒獎典禮 2026 年 2 月 26 日）：**이찬혁拿三座**——**올해의 노래（年度歌曲）與최우수 팝 - 노래兩項都是第 5 軌〈멸종위기사랑〉、최우수 팝 - 음반是《EROS》**。同一屆的올해의 음반是 추다혜차지스《소수민족》。**⚠ 得獎曲是〈멸종위기사랑〉（英譯 Endangered Love，本碟第 5 軌），不是與專輯同名的曲子——這張碟上沒有同名曲。**",
+    "src": "https://www.khan.co.kr/article/202602270003001"
+   },
+   {
+    "f": "韓文維基〈이찬혁 (가수)〉：他是 **AKMU（악동뮤지션）**的成員，與妹妹 이수현 一起活動；個人作是 2022 年的《ERROR》與 2025 年的정규 2집《EROS》（該頁把 EROS 列在作品表裡、專屬條目尚未建立）。這與 MB 藝人頁對得上——分頁全列 **3 個 release-group**：《ERROR》2022-10-17（Album）、〈1 TRILLION〉2024-01-01（Single）、《EROS》2025-07-14（Album）。**本張是他名下第二張 Album，名單上沒有第二筆叫《EROS》的條目、也沒有同名先行單曲。**",
+    "src": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%B0%AC%ED%98%81_(%EA%B0%80%EC%88%98)"
+   }
+  ],
+  "hookCandidates": [
+   "九軌只有〈Eve〉滿五分鐘，其餘八首都壓在三分十五到四分十秒",
+   "拿下年度歌曲的是第五軌〈멸종위기사랑〉——一首名字裡有「絕種」的情歌"
+  ],
+  "sound": "MB 記兩筆 2025-07-14 的數位 release（一筆掛 YG Entertainment、一筆掛 YG PLUS），都是 9 軌、曲序相同，一套諺文曲名一套英文曲名逐位置對得上，沒有實體條目也沒有加曲版。Bugs 記總長 35:00、타이틀곡是第 3 軌〈비비드라라러브〉。九軌全部落在 3:15–5:00，第 6 軌〈Eve〉5:00 是唯一滿五分的一首，開場〈SINNY SINNY〉3:39、收尾〈빛나는 세상〉3:59。**全碟作詞都是 이찬혁**；作曲固定掛 이찬혁、MILLENNIUM 與 SIHWANG 三人，第 5 軌另加 이진협、第 8 軌另掛 신현빈與 정적。他是 AKMU 的成員，個人名下在這之前只有 2022 年的《ERROR》。",
+  "keyTracks": [
+   "비비드라라러브",
+   "멸종위기사랑",
+   "빛나는 세상"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB release-group first-release-date **2025-07-14**、其下兩筆 release 同為 2025-07-14、Apple 1825027867 的 releaseDate 與 ℗ 年份都是 2025，Bugs 的發行日欄也是 2025 年 7 月 14 日，三處同年同日。**同名先行單曲：無**——MB 藝人頁 3 個 release-group 裡只有一筆 Single（〈1 TRILLION〉2024-01-01），與專輯不同名；**這張碟上也沒有同名曲**。**⚠ 獎年與發行年差一年**：第 23 屆한국대중음악상是 2026 年 2 月 26 日頒的。",
+  "notes": "**探測層 ready 覆核不通過——軌數是錯的。** 卡單／探測層記 `tr=10`，那是照 Apple 的 `trackCount` 欄抄的；**`entity=song` 只攤得出 9 軌**（9 軌全有 previewUrl、曲序與逐軌長度與 MB 逐位置相符）。**MB 兩筆 release 都是 9 軌、Bugs 的曲目表 9 軌、韓國媒體一致寫「9 곡」——原盤是 9 軌。** 這是**裁定 175 的形狀**（`trackCount` 欄與攤開的曲目列不一致），**下游一律以 9 為準**。kr 店面同一個 collectionId 的 `trackCount` 也記 10，而且 `entity=song` 攤不出曲目列（songs=0）——**曲目與試聽走 us 店面**。\\n**曲名有兩套**：MB 的 YG PLUS release 與 kr 側是諺文（돌아버렸어／비비드라라러브／멸종위기사랑／꼬리／빛나는 세상），MB 的 YG Entertainment release 與 Apple us 是英文（Out of My Mind／Vivid LaLa Love／Endangered Love／TAIL／Shining Ground），逐位置對得上、長度一秒不差。**依裁定 6／70，行文與 keyTracks 寫諺文原題。**\\n**擋下策展層一處，是硬錯**：`why` 寫「同名的〈위험한 사랑〉在第 23 屆한국대중음악상拿下올해의 노래」——**曲名錯、而且『同名』兩個字也錯**。경향신문 2026-02-27 的得獎名單記得很清楚：拿下올해의 노래的是 **〈멸종위기사랑〉**（英譯 Endangered Love，本碟第 5 軌）；**這張碟上根本沒有一首叫〈위험한 사랑〉的曲子，也沒有與專輯同名的曲子。** 行文不得寫〈위험한 사랑〉、也不得說得獎曲與專輯同名。\\n**策展層其餘說法查證屬實，並可補強**：YG PLUS 發行、接在《ERROR》（2022）之後、AKMU 的 이찬혁 —— 三句都對。**獎項要寫成三座**：올해의 노래與최우수 팝 - 노래（都是〈멸종위기사랑〉）、최우수 팝 - 음반（《EROS》）。\\n**策展層漏掉的可寫材料**：타이틀곡是〈비비드라라러브〉、全碟作詞都是他本人、作曲固定的三人組（이찬혁／MILLENNIUM／SIHWANG）、總長 35:00——Bugs 的專輯頁都有。"
+ },
+ {
+  "key": "desc4:鄭宜農|圓缺",
+  "artist": "鄭宜農",
+  "album": "圓缺",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e80098df 的欄位：title「圓缺」、artist-credit「鄭宜農」（藝人 MBID a1168584）、first-release-date 2025-05-01、primary-type Album、secondary-types **空**。轄下只有 **1 個 release**：TW 的 Digital Media，2025-05-01，status Official，**10 軌**，**廠牌欄空白**，barcode 4711548107576。MB 上沒有實體條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e80098df-649a-4754-88f0-3f1c4c4f0e60?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release（2025-05-01 TW）的逐軌曲目與長度：1〈真罕得想起來〉3:45、2〈留佇咱的血內底〉4:09、3〈歹物仔〉4:47、4〈未曾準備好〉4:26、5〈牽我〉4:46、6〈寬寬仔來到祢的面前〉4:55、7〈又閣減一工〉4:11、8〈一寡時間〉**3:06**、9〈講袂出嘴的彼个字〉3:49、10〈圓缺〉4:04。**單片 10 軌，曲名全部是台語漢字；十軌落在 3:06–4:55，中文維基記全長 42:02。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e80098df-649a-4754-88f0-3f1c4c4f0e60&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1810635857：collectionName「圓缺」、artistName「Enno Cheng」、releaseDate 2025-05-01、copyright「℗ 2025 邊走邊聽有限公司」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲序與 MB **逐位置相符**、逐軌長度相同到秒（226／249／288／266／286／296／252／187／229／244 秒）。⚠ **us 店面把十首曲名全部換成英譯**（Rarely Think of It／Remains In Our Blood／The Bad Things／Never Been Ready／Hold My Hand／Slowly Come to Thee／Another Day Gone By／Some Time／The Word Left Unsaid／Moon Phases）；**同一個 collectionId 打 `country=tw` 顯示的是台語漢字原題**〈真罕得想起來〉〈留佇咱的血內底〉〈歹物仔〉…〈圓缺〉，長度一字不差。第 3 軌〈歹物仔〉在 us 店面標 explicit。",
+    "src": "https://itunes.apple.com/lookup?id=1810635857&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈圓缺〉的 infobox：英文名 **Moon Phases**，**2025 年 5 月 1 日數位上架、2025 年 5 月 16 日發行實體**（CD 與數位下載兩種格式），廠牌 **邊走邊聽有限公司**，**製作人何俊葦與鄭宜農**，全長 42:02，前作是《水逆》（2022）。**這是鄭宜農的第五張專輯，也是她第二張全台語創作專輯。** 先行單曲三首都**不與專輯同名**：〈寬寬仔來到祢的面前〉2025-01-03、〈留佇咱的血內底〉2025-02-28、〈真罕得想起來〉2025-03-31。條目記這張延續她前幾張以天文星象貫穿的概念，這次做到月亮的週期，用「圓缺」二字談生命裡的缺憾與圓滿、聚合與離散。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%9C%93%E7%BC%BA"
+   },
+   {
+    "f": "同一條目的曲目表逐軌 credit：**十軌的編曲全部是何俊葦**；作詞十軌都是鄭宜農（第 6 軌另加李瀧、**第 10 軌〈圓缺〉的詞另註明節錄蘇軾〈水調歌頭〉**）；作曲六首是鄭宜農單掛、四首（第 2、3、5、10 軌）與何俊葦合寫、第 6 軌與李瀧合寫。製作人欄：第 2、3、5、6、10 軌是何俊葦單掛，其餘五軌是何俊葦與鄭宜農兩人。**客座四處掛 Chunho（第 2、3、5、10 軌）、一處掛李瀧 Lang Lee（第 6 軌）。** 同頁的音樂錄影帶表列出六首的 MV，其中〈寬寬仔來到祢的面前〉與〈真罕得想起來〉由 최이다 iida Choi 執導、〈圓缺〉由 NÄN（Nany Kim, Hyeji Kim）執導——**兩組都是韓國團隊，〈寬寬仔來到祢的面前〉的 MV 到首爾拍、跳的是韓國傳統舞「강강수월래」**（引註 Blow 吹音樂 2025-01-06）。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%9C%93%E7%BC%BA"
+   },
+   {
+    "f": "同一條目的獎項紀錄表：本張在 2026 年的**第 37 屆金曲獎入圍三項——年度專輯獎、最佳台語專輯獎、最佳台語女歌手獎，三項都是入圍、沒有得獎紀錄。** 另記〈留佇咱的血內底〉2025 年 2 月 28 日發行的 MV 是致敬白色恐怖受難家屬郭素貞（引註 Blow 吹音樂 2025-02-28）。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%9C%93%E7%BC%BA"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 15 個 release-group，`primary-type=Album`、`secondary-types` 空的依序是《海王星》2011-07-08、《Pluto》2017-04-28、《給天王星》2019-12-06、《水逆》2022-03-04、《圓缺》2025-05-01 —— **MB 數得出五筆、中文維基也寫第五張專輯，兩邊一致。** 名單上**沒有第二筆叫《圓缺》的條目**；先行單曲〈留佇咱的血內底〉（2025-02-28，MB 上有獨立條目）與〈如果你也想起來〉（2025-02-18，戲劇主題曲、未收進本碟）都不與專輯同名。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a1168584-1163-49b5-81ce-f7c289720cac&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十軌的編曲全掛同一個人：何俊葦；十軌的詞全是她自己寫的",
+   "收尾的同名曲把蘇軾〈水調歌頭〉節錄進台語歌詞裡"
+  ],
+  "sound": "MB 只有一筆 2025-05-01 的 TW 數位 release、10 軌，廠牌欄空著；中文維基記數位 5 月 1 日、實體 5 月 16 日，廠牌邊走邊聽有限公司（Apple 的 ℗ 欄相同），全長 42:02。十軌落在 3:06–4:55，最長的是第 6 軌〈寬寬仔來到祢的面前〉4:55、最短的是第 8 軌〈一寡時間〉3:06，收尾是同名曲〈圓缺〉4:04。**編曲十軌全部何俊葦**，製作人是何俊葦與鄭宜農；作詞十軌都是她，作曲六首她單掛、四首與何俊葦合寫、一首與李瀧合寫。客座 Chunho 在四軌上、李瀧 Lang Lee 在第 6 軌。收尾的同名曲把蘇軾〈水調歌頭〉節錄進歌詞裡。全碟台語。",
+  "keyTracks": [
+   "真罕得想起來",
+   "寬寬仔來到祢的面前",
+   "圓缺"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。MB release-group first-release-date **2025-05-01**、其下唯一那筆 TW release 同為 2025-05-01、Apple 1810635857 的 releaseDate 與 ℗ 年份都是 2025，中文維基的 infobox 記數位 2025-05-01、實體 2025-05-16。**卡單年份 2025 正確；⚠ 數位與實體差半個月，行文若要寫日期要講清楚是哪一種。** **同名先行單曲：無**——三首先行單曲〈寬寬仔來到祢的面前〉〈留佇咱的血內底〉〈真罕得想起來〉都不與專輯同名，MB 藝人頁 15 個 release-group 裡也沒有第二筆同名條目。",
+  "notes": "**探測層 ready 覆核通過**：us 1810635857，10 軌全有 previewUrl，曲序與逐軌長度與 MB 的 TW release 逐位置相符（裁定 157 的位置比對已做），`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。\\n**曲名有店面差**：us 店面把十首全部換成英譯（Rarely Think of It／Moon Phases…），**tw 店面同一個 collectionId 顯示台語漢字原題**。**依裁定 6／70，行文與 keyTracks 一律寫台語漢字原題。**\\n**策展層說法查證屬實，但兩處要修**：\\n（一）`why` 寫「第 37 屆金曲獎最佳台語專輯獎入圍名單中的一張」——**屬實，但少講了兩項**：中文維基的獎項表記本張在第 37 屆共入圍**三項**（年度專輯獎、最佳台語專輯獎、最佳台語女歌手獎），**三項都是入圍、沒有得獎**。行文寫「入圍」不得寫成得獎。\\n（二）`label` 欄寫「（MB release 未填廠牌）」——**MB 的確沒填，但中文維基與 Apple 的 ℗ 欄都有：邊走邊聽有限公司。** 這一條可以寫。\\n**序數可寫**：MB 數得出 5 筆非現場 Album（本張第五）、中文維基也寫第五張專輯，兩邊一致；中文維基另記這是她**第二張全台語創作專輯**。\\n**策展層漏掉的可寫材料**：製作人何俊葦（十軌編曲全掛他）、客座 Chunho 與李瀧 Lang Lee、收尾同名曲節錄蘇軾〈水調歌頭〉、整張延續她以天文星象貫穿的概念而這次做月亮週期、〈寬寬仔來到祢的面前〉的 MV 到首爾拍並跳韓國傳統舞——中文維基都有引註。\\n**媒體評分與榜單不入 facts**（本張的中文維基條目本來也沒有評分欄）。"
+ }
+]
