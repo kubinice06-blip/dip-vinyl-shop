@@ -17,7 +17,7 @@
     "src": "https://musicbrainz.org/ws/2/release?release-group=514a97c8-4405-3297-b957-055b47c9692c&fmt=json&inc=media+labels+recordings&limit=100"
    },
    {
-    "f": "串流店面 gb／de 的 collectionId **1810777410**：collectionName「Dream Sequence」、artistName「Blake Baxter」、releaseDate **1992-02-01**、trackCount **8**、copyright「℗ 1992 Tresor Records」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：〈Dark Bässe〉4:56／〈Adrenalin〉5:29／〈Laser 101〉4:50／〈One Mo Time (Mix 1)〉4:60／〈(Mix 2)〉5:08／〈The Warning〉4:22／〈Ghost〉5:26／〈Ex-〉4:56。**曲名與曲序與 1992 年那張 CD 逐位置相符，不是 1991 年的六軌黑膠**——上架的是隔年的 CD 版。**店面 us 沒有這一筆。**",
+    "f": "串流店面的 collectionId **1810777410**：collectionName「Dream Sequence」、artistName「Blake Baxter」、releaseDate **1992-02-01**、trackCount **8**、copyright「℗ 1992 Tresor Records」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：〈Dark Bässe〉4:56／〈Adrenalin〉5:29／〈Laser 101〉4:50／〈One Mo Time (Mix 1)〉4:60／〈(Mix 2)〉5:08／〈The Warning〉4:22／〈Ghost〉5:26／〈Ex-〉4:56。**曲名與曲序與 1992 年那張 CD 逐位置相符，不是 1991 年的六軌黑膠**——上架的是隔年的 CD 版。**以 `lookup` 逐店確認：us／gb／de 三店都取得到這一筆，只是 us 店的 `search` 端點不會把它排進同名結果裡。**",
     "src": "https://itunes.apple.com/lookup?id=1810777410&country=gb&entity=song&limit=200"
    },
    {
@@ -37,7 +37,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1991。release-group first-release-date **1991**、其下最早的 release 是 1991 DE 的 Tresor 2（Official，12 吋 6 軌），其餘三筆是 1992-02-01、2000-08-15 與 2025-06-16 的再發。**串流那一路對到的是 1992 年的 CD 版**：collectionId 1810777410 的 releaseDate 記 1992-02-01、℗ 寫「℗ 1992 Tresor Records」，**年份是隔年、內容也是隔年那一版**。四處對照後年份仍取 1991。**同名先行單曲：無。**",
-  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **Tresor 2（1991、12 吋、6 軌）**，但**串流上架的、以及多數再發都是 8 軌或更多**。**行文只能引 6 軌、只能引原盤那六個曲名**；〈Adrenalin〉〈One Mo Time (mix 2)〉〈Frequency Old Skool〉〈Laugh and Dog〉〈Luv Is Blind〉五軌都不是本張曲目。｜**曲名有三種拼法**：1991 黑膠〈Dark Basse〉、1992 CD 與後續全部〈Dark Bässe〉；〈Adrenalin〉在 2000 年那版寫成〈Adrenaline〉。本檔 `keyTracks` 避開這一軌以免摺疊出問題。｜**回撈與搜尋共 2 個候選：採信 1810777410（但要標明是 1992 年的 8 軌 CD 版）、駁回 1807733937（2025 年的《Dream Sequence X》，五軌全部重製、多一軌原盤沒有的曲子）。** 1810777410 **只在 gb 與 de 兩店查得到，us 店查無**。｜`curatorWhy` 寫「Tresor 廠牌編號第二號」**查證屬實**（catno 就是 Tresor 2）；「1991 年這張是他第一張整張長篇」**也查證屬實**（45 個 RG 裡 6 張純長篇，本張最早）。｜`curatorWhy` 提到的〈When We Used to Play〉〈Ride Em Boy〉與 Metroplex／KMS 的來歷，**本層查不到可引的來源，行文不要寫**。｜`curatorRisk` 提醒的《Dream Sequence 3: The Collective》（2001）確實在同一份目錄裡，**與本張是不同的 release-group**，別配錯。"
+  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **Tresor 2（1991、12 吋、6 軌）**，但**串流上架的、以及多數再發都是 8 軌或更多**。**行文只能引 6 軌、只能引原盤那六個曲名**；〈Adrenalin〉〈One Mo Time (mix 2)〉〈Frequency Old Skool〉〈Laugh and Dog〉〈Luv Is Blind〉五軌都不是本張曲目。｜**曲名有三種拼法**：1991 黑膠〈Dark Basse〉、1992 CD 與後續全部〈Dark Bässe〉；〈Adrenalin〉在 2000 年那版寫成〈Adrenaline〉。本檔 `keyTracks` 避開這一軌以免摺疊出問題。｜**回撈與搜尋共 2 個候選：採信 1810777410（但要標明是 1992 年的 8 軌 CD 版）、駁回 1807733937（2025 年的《Dream Sequence X》，五軌全部重製、多一軌原盤沒有的曲子）。** 1810777410 以 `lookup` 逐店確認 **us／gb／de 三店都取得到**，只是 us 店的 `search` 端點不會把它排進同名結果——**「search 查無」不等於「店裡沒有」，兩個端點都要跑（裁定 173／185）。**｜`curatorWhy` 寫「Tresor 廠牌編號第二號」**查證屬實**（catno 就是 Tresor 2）；「1991 年這張是他第一張整張長篇」**也查證屬實**（45 個 RG 裡 6 張純長篇，本張最早）。｜`curatorWhy` 提到的〈When We Used to Play〉〈Ride Em Boy〉與 Metroplex／KMS 的來歷，**本層查不到可引的來源，行文不要寫**。｜`curatorRisk` 提醒的《Dream Sequence 3: The Collective》（2001）確實在同一份目錄裡，**與本張是不同的 release-group**，別配錯。"
  },
  {
   "key": "desc2:Eddie \"Flashin\" Fowlkes|Black Technosoul",
@@ -251,7 +251,7 @@
     "src": "https://musicbrainz.org/ws/2/release?release-group=298518bb-b86b-372f-bf42-45a213967392&fmt=json&inc=media+labels+recordings&limit=100"
    },
    {
-    "f": "串流店面 us／gb 的 collectionId **1768756278**：collectionName「Dark Territory」、artistName「Scan 7」、releaseDate **1996-10-01**、trackCount 8、copyright「℗ 1996 - 2024 Tresor Records」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：〈Planet Energy〉5:57／〈Black Highway〉6:20／〈Dark Universe〉6:03／〈Unusual Channel〉6:44／〈Beyond Sound〉6:29／〈Dark Corridor〉7:08／〈VII〉7:48／〈Dark Territory〉7:23。**八軌與原盤逐位置相符、逐軌長度差都在 4 秒內，日期也完全一致**。**上架的就是本張。**",
+    "f": "串流店面的 collectionId **1768756278**：collectionName「Dark Territory」、artistName「Scan 7」、releaseDate **1996-10-01**、trackCount 8、copyright「℗ 1996 - 2024 Tresor Records」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：〈Planet Energy〉5:57／〈Black Highway〉6:20／〈Dark Universe〉6:03／〈Unusual Channel〉6:44／〈Beyond Sound〉6:29／〈Dark Corridor〉7:08／〈VII〉7:48／〈Dark Territory〉7:23。**八軌與原盤逐位置相符、逐軌長度差都在 4 秒內，日期也完全一致**。**上架的就是本張。**",
     "src": "https://itunes.apple.com/lookup?id=1768756278&country=us&entity=song&limit=200"
    },
    {
@@ -259,7 +259,7 @@
     "src": "https://musicbrainz.org/ws/2/release-group?artist=d321aef8-e1ba-4a03-9e4f-69f3f20a67a0&fmt=json&limit=100&offset=0"
    },
    {
-    "f": "**掛名的檢索陷阱（裁定 168／204）**：`Scan 7` 是**數字結尾的短掛名**，摺疊後是 `scan7`；藝人實體 d321aef8 的 type 是 Group、country US，**但沒有填 disambiguation**——同名比對時只有 area 與 type 兩欄可用。串流側以掛名加盤名查詢時，**us 與 gb 兩店有結果、de 店查無**。",
+    "f": "**掛名的檢索陷阱（裁定 168／204）**：`Scan 7` 是**數字結尾的短掛名**，摺疊後是 `scan7`；藝人實體 d321aef8 的 type 是 Group、country US，**但沒有填 disambiguation**——同名比對時只有 area 與 type 兩欄可用。串流側以掛名加盤名做 `search` 時 **us 與 gb 兩店有結果、de 店查無**，但改以 `lookup` 逐店確認，**1768756278 在 us／gb／de 三店都取得到**——**「search 查無」不等於「店裡沒有」。**",
     "src": "https://musicbrainz.org/ws/2/artist/d321aef8-e1ba-4a03-9e4f-69f3f20a67a0?fmt=json"
    }
   ],
@@ -275,7 +275,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1996-10-01。release-group first-release-date **1996-10-01**、其下唯一一筆 release 同為 1996-10-01 DE 的 Tresor 57 CD（Official）。串流店面 us／gb 的 1768756278 releaseDate 也記 **1996-10-01**、℗ 欄寫「℗ 1996 - 2024 Tresor Records」（**跨年份的聲明，起點與原盤一致**），八軌逐軌長度差在 4 秒內。**四處對照有三處成立且完全一致**，年份是 1996。**同名先行單曲：無**（同名曲〈Dark Territory〉是本張末軌）。",
-  "notes": "**串流採信 1768756278**：八軌逐位置相符、長度差在 4 秒內、日期完全一致，是本批對得最乾淨的一筆固定試聽來源之一。**但它只在 us 與 gb 兩店查得到，de 店查無**，卡單 `curatorRisk` 寫「de:search:1768756278」這一項本層重查不到，**下游設定店面時要留意**。｜`curatorWhy` 寫「《Dark Territory》是他們第一張專輯」**查證屬實**（18 個 RG、5 張純長篇，本張最早）。｜**擋下策展層一處**：`curatorWhy` 寫「Underground Resistance 支線裡最早以整張長篇形態發行的一組」「從 1993 年起以匿名集體的方式在 UR 出 12 吋」「UR 那套不露臉不具名的作法第一次撐起一張完整的碟」。**本層在藝人實體與目錄上查不到任何一項**——d321aef8 的欄位只有 type Group 與 country US，**連 disambiguation 都沒填**，也沒有任何指向該廠牌的關係資料。**行文不得寫這三句，也不得寫「支線裡最早」這種需要跨團比較才成立的序數。**｜**盤名與曲名撞名**：名下第二張長篇《Beyond Sound》（1998）**與本張第 5 軌同名**，行文提到那張時要標年份。｜**掛名帶數字**：`scan7` 摺疊後極短，跨批比對與搜尋都要帶盤名。"
+  "notes": "**串流採信 1768756278**：八軌逐位置相符、長度差在 4 秒內、日期完全一致，是本批對得最乾淨的一筆固定試聽來源之一。**de 店的 `search` 端點查不到它，但 `lookup` 三店都取得到**，卡單 `curatorRisk` 記的 de 命中因此成立——**這一條是裁定 173／185 的實例：兩個端點都要跑，只跑 `search` 會漏。**｜`curatorWhy` 寫「《Dark Territory》是他們第一張專輯」**查證屬實**（18 個 RG、5 張純長篇，本張最早）。｜**擋下策展層一處**：`curatorWhy` 寫「Underground Resistance 支線裡最早以整張長篇形態發行的一組」「從 1993 年起以匿名集體的方式在 UR 出 12 吋」「UR 那套不露臉不具名的作法第一次撐起一張完整的碟」。**本層在藝人實體與目錄上查不到任何一項**——d321aef8 的欄位只有 type Group 與 country US，**連 disambiguation 都沒填**，也沒有任何指向該廠牌的關係資料。**行文不得寫這三句，也不得寫「支線裡最早」這種需要跨團比較才成立的序數。**｜**盤名與曲名撞名**：名下第二張長篇《Beyond Sound》（1998）**與本張第 5 軌同名**，行文提到那張時要標年份。｜**掛名帶數字**：`scan7` 摺疊後極短，跨批比對與搜尋都要帶盤名。"
  },
  {
   "key": "desc2:Urban Tribe|The Collapse of Modern Culture",
@@ -316,5 +316,165 @@
   "status": "full",
   "yearVerified": "一致，1998。release-group first-release-date **1998-10-13**、其下三筆 release 全部是 1998（日版只記到年、英國版兩筆分別是 10-13 與 10-26）。**兩筆英國版同編號同軌數、只有三軌的長度差 1 到 2 秒，是同一張碟的兩次建檔。** 串流三店查無本張（回撈的兩個候選是另一個同名團的碟，已駁回），℗ 那一路對不了。四處對照只成立兩處，仍指向 1998。**同名先行單曲：無。**",
   "notes": "**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 寫「Sherard Ingram 召集 Carl Craig、Kenny Dixon Jr.、Anthony Shakir 三人做的一張碟，是底特律第二代四個作者第一次同時掛在同一張長篇上」。**本層在 release-group、release 與藝人實體上都查不到任何一個參與者的名字**——artist-credit 只有 `Urban Tribe` 一個實體，曲目列上沒有任何客座掛名。**行文不得寫這四個人名，也不得寫「四個作者第一次同台」這種需要參與者名單才成立的句子。**｜**回撈的 2 個候選全部駁回**：255779752 與 1220161854 的 artistName 都是 **Sub-Urban Tribe**（另一個字串極近的團），曲目與本張無一同名。**這是裁定 224「短掛名比對不可靠」在本批最乾淨的一個實例**——策展層已在第七節預告過這個團，回撈層仍把它當候選送進來。｜**軌數兩種（裁定 157）**：卡單 label 欄記的是 **Mo Wax MW 102 CD（14 軌）**，同年日版是 **16 軌**。**行文只能引 14 軌**；〈False Gods〉與〈I.F.O.〉不得當本張曲目。｜`curatorRisk` 說「同 RG 底下有兩筆 1998 GB Mo Wax 的 release 是同一張碟的兩筆建檔」**查證屬實**。｜`curatorWhy` 寫「Mo Wax 在 1998 年把它放進自家目錄（MW 102）」**查證屬實**；「那條線少數被英國獨立廠完整發行的底特律碟」是斷語，行文不要寫。"
+ },
+ {
+  "key": "desc2:Terrence Parker|Tragedies of a Plastic Soul Junkie",
+  "artist": "Terrence Parker",
+  "album": "Tragedies of a Plastic Soul Junkie",
+  "facts": [
+   {
+    "f": "release-group 6a8bf3fa 的欄位：title「Tragedies of a Plastic Soul Junkie」、artist-credit「Terrence Parker」（藝人實體 MBID b9157532，type Person、country US、**disambiguation「house music DJ/producer」**）、first-release-date **1996-09-16**（帶完整月日）、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1996-09-16 DE 的 !K7 !K7R007CD，Official，**CD、12 軌**。**沒有任何再發、沒有黑膠版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/6a8bf3fa-d34a-3503-8d9e-84ce61316863?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996-09-16 DE 原盤（!K7 !K7R007CD）的逐軌曲目與長度：1〈Emancipation of My Soul〉8:48、2〈Pure Disco〉5:42、3〈88 Phat Ivory Keys〉3:04、4〈A Track for O.J. Simpson (The Acquittal)〉6:16、5〈Tatina Speaks〉5:46、6〈Piano Circus〉7:29、7〈Plastic Soul Junkie (TP's Wave Brush mix)〉4:29、8〈House Ghost〉6:01、9〈Why? (After All This) (The Grand Ballroom mix)〉6:24、10〈Your Love〉5:04、**11〈Emancipation of My Soul (Re-Emancipated)〉7:32、12〈88 Phat Ivory Keys (TP's House-Ism remix)〉5:59**。**十二軌裡的最後兩軌分別是第 1 軌與第 3 軌的重做版，等於整張以自己的開場曲收尾。〈88 Phat Ivory Keys〉3:04 是全張最短的一軌，它的重做版 5:59 幾乎是它的兩倍。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6a8bf3fa-d34a-3503-8d9e-84ce61316863&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **32 個 release-group**：primary-type=Album 9 個（**secondary-types 為空的只有 5 個**，另 4 個帶 Compilation 或 DJ-mix）、EP 8 個、Single 10 個、**primary-type=Compilation 0 個**。5 張長篇依序是 **1996-09-16 本張、1997-09-15《Detroit After Dark》、2017-06-30《God Loves Detroit》、2017-12-11《Motor City Life》、2019-03-08《Omnipotent》**——**本張是名下最早的一張長篇**；1990 年代只有兩張，其後隔了二十年。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b9157532-8101-4fa3-a568-3293574e1364&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**同一系列的三張在本批同時出現**：!K7 的 R 系列裡，**!K7R001CD 是本批 K. Hand《On a Journey》（1995）、!K7R007CD 是本張（1996-09-16）、!K7R008 是本批 Sean Deason《Razorback》（1996）**——三張的 catno 序列與年份都在資料庫上對得起來。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6a8bf3fa-d34a-3503-8d9e-84ce61316863&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=Terrence+Parker+Tragedies+of+a+Plastic+Soul+Junkie&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "最後兩軌分別是第一軌與第三軌的重做版，整張以自己的開場曲收尾",
+   "全張最短的三分零四秒那首，重做版幾乎是它的兩倍長"
+  ],
+  "sound": "1996 年 9 月 !K7 的 R 系列第七號只出過德國 CD 一種載體、十二軌。開場的〈Emancipation of My Soul〉8:48 是全張最長的一軌，最短的〈88 Phat Ivory Keys〉只有 3:04；而末尾兩軌正是這兩首的重做版——〈Emancipation of My Soul (Re-Emancipated)〉7:32 與〈88 Phat Ivory Keys (TP's House-Ism remix)〉5:59，整張因此在自己的開場曲上收尾。中段的曲名把鋼琴（〈Piano Circus〉〈88 Phat Ivory Keys〉）、迪斯可（〈Pure Disco〉）與當年的新聞事件（〈A Track for O.J. Simpson (The Acquittal)〉）並置，盤名裡那個 Plastic Soul Junkie 則是第 7 軌的曲名。",
+  "keyTracks": [
+   "Emancipation of My Soul",
+   "88 Phat Ivory Keys",
+   "Piano Circus"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996-09-16。release-group first-release-date **1996-09-16**、其下唯一一筆 release 同為 1996-09-16 DE 的 !K7 !K7R007CD（Official），**沒有第二筆可交叉驗證、沒有任何再發**。串流三店查無、℗ 那一路對不了。四處對照只成立兩處，仍指向 1996。**同名先行單曲：無**（盤名取自第 7 軌〈Plastic Soul Junkie (TP's Wave Brush mix)〉，但那一軌的標題並不完全等於盤名）。",
+  "notes": "`curatorWhy` 寫「32 個 release-group 裡最早的一張 primary-type=Album」**查證屬實**（32 個 RG、5 張純長篇，本張最早）。｜**擋下策展層一處**：`curatorWhy` 寫「自營 Intangible Records，把福音唱腔與電話聽筒當耳機的 DJ 手法帶進底特律的 house 敘事」。**本層在藝人實體與目錄上查不到廠牌關係、也查不到任何演出手法的記載**——b9157532 的欄位只有 type Person、country US 與 disambiguation「house music DJ/producer」。**行文不得寫 Intangible Records，也不得寫電話聽筒那個典故。**｜**曲名有兩處要照原盤**：第 7 軌與第 12 軌的括號裡是 `TP's`（ASCII 直撇），來源端寫成彎撇；第 12 軌是〈88 Phat Ivory Keys (TP's House-Ism remix)〉，連字號是一般的 ASCII 連字號。｜**第 4 軌的標題涉及真實人物與司法事件**，行文選曲時避開。｜**同系列三張**：本批的 K. Hand（!K7R001CD，1995）、本張（!K7R007CD，1996-09-16）與 Sean Deason（!K7R008，1996）同屬一個編號序列，**這一點在資料庫上對得起來，行文可以寫**。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:AUX 88|Xeo-Genetic",
+  "artist": "AUX 88",
+  "album": "Xeo-Genetic",
+  "facts": [
+   {
+    "f": "release-group aad16957 的欄位：title「Xeo-Genetic」（連字號是 ASCII U+002D）、artist-credit「AUX 88」（**全大寫**；藝人實體 MBID 92317e0b，**type Group**、country US）、first-release-date **1998-10-12**（帶完整月日）、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1998-10-12 US 的 Direct Beat DBCD-5037，Official，**CD、20 軌**。**本批 42 張裡軌數最多的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/aad16957-abef-3d82-9df1-74364c489f1b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1998-10-12 US 原盤（Direct Beat DBCD-5037）的 20 軌裡**有 7 軌是不到 1 分 5 秒的過場**：1〈Begin (intro 1)〉**0:11**、2〈Welcome (intro 2)〉1:02、4〈The Light (interlude)〉0:48、**12〈Just a Test (interlude)〉0:04**、15〈Alien Contact (interlude)〉0:48、19〈Completed (outro 1)〉0:32、20〈Return (outro 2)〉0:07。**第 12 軌只有 4 秒**。其餘 13 軌是正式曲目：3〈Play It Loud〉5:17、5〈Electric Light〉5:25、6〈Synthesizers〉5:35、7〈No Time (Episode)〉2:35、8〈I Hear Rhythms〉6:05、9〈Radio Waves〉5:26、10〈Don't Stop It〉4:51、11〈Xeo-Genetic〉2:59、13〈I Need to Find Myself〉3:12、14〈Rise of the Phoenix〉6:02、16〈Computer Speaks〉4:56、17〈Hydro Spin (Episode)〉1:12、18〈Rhythm by Numbers〉4:37。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=aad16957-abef-3d82-9df1-74364c489f1b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **35 個 release-group**：primary-type=Album 11 個（**secondary-types 為空的 6 個**，另 5 個帶 Remix／Compilation／DJ-mix／Soundtrack）、EP 16 個、Single 7 個、**primary-type=Compilation 0 個**。6 張長篇依序是 **1996《Is It Man or Machine?》、1998-10-12 本張、2005-05-28《Aux 88》、2009《Mad Scientist》、2010-11-02《AUX 88 Presents Black Tokyo》、2020-01《Counterparts》**——**本張排第 2，是 1996 那張的直接續作**，兩張之間沒有第三張長篇。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=92317e0b-181b-4119-aba1-77261515daf8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**掛名大小寫覆核**：藝人實體 92317e0b 的主名是**全大寫的 `AUX 88`**，本張的 artist-credit 也是全大寫；但同一份目錄裡 2005 年那張長篇的 title 卻寫成 **`Aux 88`（首字大寫）**，2010 年那張又寫回 `AUX 88`。**同一個實體底下兩種大小寫並存**，這是本張在顯示層唯一要處理的問題。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=92317e0b-181b-4119-aba1-77261515daf8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=AUX+88+Xeo+Genetic&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "二十軌裡有七軌是過場，其中一軌只有四秒",
+   "從四秒的過場到六分零五秒的正曲，整張的長度差了九十倍"
+  ],
+  "sound": "1998 年 10 月 Direct Beat DBCD-5037 是本批軌數最多的一張，二十軌——但二十軌裡有七軌是不到一分零五秒的過場：開場的〈Begin (intro 1)〉0:11、〈Welcome (intro 2)〉1:02、中途的〈The Light (interlude)〉0:48 與〈Alien Contact (interlude)〉0:48，收尾的〈Completed (outro 1)〉0:32 與〈Return (outro 2)〉0:07，還有一軌〈Just a Test (interlude)〉只有 4 秒。真正的曲目十三軌，最長的〈I Hear Rhythms〉6:05 是那四秒過場的九十倍。同名曲〈Xeo-Genetic〉2:59 擺在第十一軌、比多數正曲都短。曲名整批是機器與訊號：〈Synthesizers〉〈Radio Waves〉〈Computer Speaks〉〈Rhythm by Numbers〉。",
+  "keyTracks": [
+   "Play It Loud",
+   "I Hear Rhythms",
+   "Xeo-Genetic"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998-10-12。release-group first-release-date **1998-10-12**、其下唯一一筆 release 同為 1998-10-12 US 的 Direct Beat DBCD-5037（Official），**沒有第二筆可交叉驗證、沒有任何再發**。串流三店查無、℗ 那一路對不了。四處對照只成立兩處，仍指向 1998。**同名先行單曲：無**（同名曲〈Xeo-Genetic〉2:59 是本張第 11 軌）。",
+  "notes": "**軌數的引用要小心（裁定 157）**：原盤 **20 軌，但其中 7 軌是不到 1 分 5 秒的過場**。**行文若只寫「二十軌」會誤導**，要寫成「二十軌裡十三軌是正式曲目、七軌是過場」，或直接引那個 4 秒的細節。｜`curatorWhy` 寫「本張是《Is It Man or Machine?》的直接續作、Direct Beat 的第二張長篇」**查證屬實**（藝人目錄 6 張純長篇，1996 那張最早、本張排第 2，兩張之間沒有第三張）。｜**擋下策展層一處**：`curatorWhy` 寫「Direct Beat 是 Juan Atkins 的 Metroplex 之外、專做 electro 的底特律小廠，AUX 88 是它的招牌團」。**本層查不到廠牌的來歷與人事關係**——release 上只有 label-info 的 `Direct Beat / DBCD-5037`。**行文不得把 Metroplex 或任何人名寫進廠牌敘述。**｜**掛名大小寫（本批第九節的前置一）**：實體主名與本張 artist-credit 都是全大寫 `AUX 88`，**但同一份目錄裡 2005 年那張的 title 寫成 `Aux 88`**——**兩種寫法在來源端本來就並存**，池中既有那張要不要一併正規化是上架層的事，本層只確認風險真實存在。｜**盤名連字號**：`Xeo-Genetic` 用 ASCII 連字號，不是 en dash。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:Silent Phase|(The Theory of)",
+  "artist": "Silent Phase",
+  "album": "(The Theory of)",
+  "facts": [
+   {
+    "f": "release-group e671f480 的欄位：**title 就是「(The Theory of)」——連同前後的括號一起，是資料庫上的正式標題**；artist-credit「Silent Phase」（藝人實體 MBID efa4bbba，type Person、country US）、first-release-date **1995-11-23**（帶完整月日）、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1995-11-23 BE 的 CD，Official，**12 軌**，**label-info 同時掛兩家、共用同一個編號 TMT-1 CD**（R&S Records 與 Transmat）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e671f480-c707-3232-8027-bdb137be7ddb?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1995-11-23 BE 原盤（TMT-1 CD）的逐軌曲目與長度：1〈Waterdance〉7:25、2〈Body Rock〉6:43、3〈Air Puzzle〉8:14、4〈Meditive Fusion〉7:29、**5〈Earth (interlude)〉0:57**、6〈Spirit of Sankofa〉9:54、7〈Spiritual Journey〉7:56、**8〈Fire (prelude)〉1:33**、9〈Psychotic Funk〉7:39、10〈Electric Relaxation〉6:53、11〈Love Comes and Goes〉6:38、12〈Forbidden Dance〉6:07。**十二軌裡有兩軌是不到兩分鐘的過場，而且用的是四元素裡的兩個——〈Earth〉0:57 與〈Fire〉1:33，分別擺在第 5 與第 8 軌，把十軌正曲切成三段。最長的〈Spirit of Sankofa〉9:54 就緊接在〈Earth〉之後。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e671f480-c707-3232-8027-bdb137be7ddb&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三店的 collectionId **1106311861**：collectionName「**The Theory Of**」（**店面把括號拿掉了**）、artistName「Silent Phase」、releaseDate **1995-01-01**、trackCount 12、copyright「℗ 1995 R&S Records」。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符、逐軌長度完全相同**（7:25／6:43／8:14／7:29／0:57／9:54／7:56／1:33／7:39／6:53／6:38／6:07）。**上架的就是本張**；差別只在店面把〈Earth (interlude)〉與〈Fire (prelude)〉的括號註記寫成〈Earth〉與〈Fire (Prelude)〉。",
+    "src": "https://itunes.apple.com/lookup?id=1106311861&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**別名各查一次的結果（裁定 223）**：`Silent Phase` 是**獨立的藝人實體**（efa4bbba，Person／US、**沒有填 disambiguation**），**名下分頁全列只有 3 個 release-group**——primary-type=Album **1 個，就是本張**；EP 2 個、Single 0 個、**primary-type=Compilation 0 個**。**這個掛名下唯一的一張長篇是本張，但它不是唯一的一筆作品**（另有兩張 EP）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=efa4bbba-3a42-4e10-9e8d-084cfa3d8558&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**盤名的兩種寫法都查得到**：資料庫端的 release-group 與 release title **都是《(The Theory of)》（帶括號、of 小寫）**；串流店面端寫成《The Theory Of》（**無括號、Of 大寫**）。**兩端都沒有出現慣稱的《The Theory of Silent Phase》**——那個寫法在本層查不到任何來源。",
+    "src": "https://itunes.apple.com/lookup?id=1106311861&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡有兩段過場叫〈Earth〉與〈Fire〉，一段五十七秒、一段一分三十三秒",
+   "盤名連括號一起才是完整的標題，串流上架時括號被拿掉了"
+  ],
+  "sound": "1995 年 11 月的比利時 CD 十二軌，兩家廠牌共用同一個編號印在同一張碟上。十軌正曲全部在 6:07 到 9:54 之間，中間插著兩段不到兩分鐘的過場——第 5 軌〈Earth (interlude)〉0:57 與第 8 軌〈Fire (prelude)〉1:33——把整張切成四軌、三軌、四軌三段。最長的〈Spirit of Sankofa〉9:54 就緊接在〈Earth〉之後，等於用一段五十七秒的空白替它開路。曲名一路走靈性與元素的語彙：〈Waterdance〉〈Meditive Fusion〉〈Spiritual Journey〉，中段卻突然接上〈Psychotic Funk〉與〈Electric Relaxation〉。",
+  "keyTracks": [
+   "Waterdance",
+   "Spirit of Sankofa",
+   "Psychotic Funk"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995-11-23**、其下唯一一筆 release 同為 1995-11-23 BE（Official），**沒有任何再發**。串流店面的 1106311861 releaseDate 記 **1995-01-01**（**只有年份可信、月日是填充值**）、℗ 欄「℗ 1995 R&S Records」——**年份與原盤一致**，且十二軌逐軌長度完全相同。四處對照後年份是 1995。**同名先行單曲：無。**",
+  "notes": "**盤名依本批裁定第 6 條處理，本層覆核成立**：release-group 與 release 的 title **都是《(The Theory of)》**，括號是標題的一部分。**串流端寫成《The Theory Of》（無括號、Of 大寫）**，而**慣稱的《The Theory of Silent Phase》在本層兩端都查不到來源**——**行文不得使用那個慣稱**，要寫盤名就照卡片的《(The Theory of)》。｜**擋下策展層一處**：`curatorWhy` 寫「Silent Phase 名下唯一的一張碟」。**這個掛名名下有 3 筆作品**（1 張 Album 加 2 張 EP），**唯一的是長篇、不是碟**。行文要寫「這個掛名下唯一的一張長篇」。｜`curatorWhy` 另寫「Transmat 少數幾張整張長篇」「Derrick May 把自家廠牌的 TMT-1 這個新編號給了他」。**本層能確認的只有 label-info 同時掛兩家、共用編號 TMT-1 CD**；**廠牌的擁有者與「把編號給了他」這件事查不到來源，行文不得寫人名。**｜**別名（裁定 223）**：`Silent Phase` 是獨立實體、**連 disambiguation 都沒填**，實體本身沒有寫明它是誰的化名。**行文不得寫本名。**｜**串流採信 1106311861**：十二軌逐軌長度完全相同，是本批對得最乾淨的固定試聽來源之一；`lookup` 逐店確認 us／gb／de 三店都取得到。｜**曲名拼寫**：第 4 軌是〈Meditive Fusion〉（不是 Meditative），照原樣。"
+ },
+ {
+  "key": "desc2:Infiniti|Skynet",
+  "artist": "Infiniti",
+  "album": "Skynet",
+  "facts": [
+   {
+    "f": "release-group 5792cc9f 的欄位：title「Skynet」、artist-credit「Infiniti」（藝人實體 MBID 82999a0b，type Person、country US、**disambiguation「US techno DJ/producer Juan Atkins」**）、first-release-date **1998-09-29**、primary-type Album、secondary-types **空**。轄下 **4 筆 release，全部 Official**：1998 DE 的 Tresor 105（**兩張 12 吋、5 軌＋4 軌共 9 軌**）、**1998 US 的 X-Sight Records 6385-2（CD、12 軌）**、1998-09-29 DE 的 Tresor 105 CD（**CD、9 軌**）、2018-12-14 XW 的 Tresor TRESOR105（數位、9 軌）。**德版是 9 軌、美版是 12 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/5792cc9f-813a-36fc-adc6-cf9444f3be42?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**德版（Tresor 105，兩張 12 吋）的 9 軌曲目**：第一張 1〈Skyway〉、2〈Walking on Water〉、3〈Thought Process〉、4〈Electric Circus〉、5〈Postcard From the Future〉；第二張 1〈Body Oil〉、2〈Coffeeshop (interlude)〉、3〈Coffeeshop Connection〉、4〈Subterrainea〉。**黑膠那筆未記各軌長度。** **美版（X-Sight Records 6385-2，CD）是 12 軌、曲序整個重排**，並多出 **6〈Higher〉5:11、8〈Never Tempt Me〉5:18、12〈Raindrops〉5:00** 三軌，同時把〈Body Oil〉改成〈Body Oil (Strip mix)〉4:10、把〈Coffeeshop〉寫成分開兩個字的〈Coffee Shop〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5792cc9f-813a-36fc-adc6-cf9444f3be42&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三店的 collectionId **1621825744**：collectionName「Skynet」、artistName「Infiniti」、releaseDate **1998-09-29**、trackCount **9**、copyright「℗ 1998 Tresor Records」。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**：〈Skyway〉5:58／〈Walking on Water〉5:27／〈Thought Process〉4:27/〈Electric Circus〉3:10／**〈Body Oil〉10:28**／〈Postcard from the Future〉5:59／〈Coffeeshop Interlude〉4:15／〈Coffeeshop Connection〉5:07／〈Subterrainea〉5:43。**九軌與德版的九個曲名完全相同、日期也完全一致**（只有〈Body Oil〉與〈Postcard〉兩軌的先後對調）。**〈Body Oil〉10:28 是全張最長的一軌，比美版那個 Strip mix 的 4:10 長出六分多鐘。**",
+    "src": "https://itunes.apple.com/lookup?id=1621825744&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**另一個候選 1404015352 是美版那一種**：collectionName「Skynet: a Juan Atkins Production」、trackCount **12**、℗ 1998 X-Sight Records，攤開後正是美版的十二軌（含〈Higher〉5:11、〈Never Tempt Me〉5:18、〈Raindrops〉5:00 與〈Body Oil (Strip Mix)〉4:10）。**兩筆是同一張碟的兩個版本、軌數差三軌，卡單 label 欄以德版 Tresor 105 CD 為主，因此取 1621825744。**",
+    "src": "https://itunes.apple.com/lookup?id=1404015352&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**別名各查一次的結果（裁定 223）**：`Infiniti` 是**獨立的藝人實體**（82999a0b），**名下分頁全列只有 11 個 release-group**——primary-type=Album 3 個（**secondary-types 為空的 2 個：1998-09-29 本張與 2022《Higher》**，另 1 個是 1996-04-01 帶 Compilation 的《The Infiniti Collection》）、EP 2 個、Single 6 個、**primary-type=Compilation 0 個**。**本張是這個掛名下最早的一張純長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=82999a0b-057c-4635-8e29-7eeb88e0ac0c&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一年的德版九軌、美版十二軌，連曲序都重排過",
+   "德版那首十分二十八秒的〈Body Oil〉，到了美版被剪成四分十秒"
+  ],
+  "sound": "1998 年 9 月 Tresor 105 的德版是兩張 12 吋、九軌，第一張五軌、第二張四軌，黑膠那筆沒有留下長度紀錄；同內容的德版 CD 也是九軌。九軌裡最長的〈Body Oil〉一口氣拉到 10:28，其餘八軌落在 3:10 到 5:59 之間，等於整張有八分之一的時間都在那一軌上。曲名分兩路：一路是移動與軌道（〈Skyway〉〈Walking on Water〉〈Subterrainea〉〈Postcard from the Future〉），一路是停下來的場景（〈Coffeeshop (interlude)〉4:15 與〈Coffeeshop Connection〉5:07 兩軌相連）。同年的美版是十二軌、曲序整個重排，並把〈Body Oil〉剪成 4:10 的另一個混音。",
+  "keyTracks": [
+   "Skyway",
+   "Body Oil",
+   "Subterrainea"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998。release-group first-release-date **1998-09-29**、其下四筆 release 有三筆是 1998（德版黑膠與美版 CD 只記到年、德版 CD 記 1998-09-29），第四筆是 2018-12-14 的數位再發。串流店面的 1621825744 releaseDate 記 **1998-09-29**、℗ 欄「℗ 1998 Tresor Records」——**與德版 CD 完全一致**。四處對照有三處成立，年份是 1998。**同名先行單曲：無。**",
+  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **德版 Tresor 105 CD（9 軌）**，同年**美版 X-Sight 6385-2 是 12 軌**。**行文只能引 9 軌**；〈Higher〉〈Never Tempt Me〉〈Raindrops〉三軌**不是本張曲目**，而〈Body Oil〉在德版是 **10:28**、美版是 **4:10 的 Strip mix**，**兩個長度不可互換**。｜**回撈與搜尋共 2 個候選：採信 1621825744（德版九軌，日期與 ℗ 都與原盤一致）、1404015352 記為美版十二軌不取。** 兩筆都在 us／gb／de 三店取得到。｜**別名（裁定 223）**：`Infiniti` 是獨立實體、disambiguation 明寫對應到誰，**但它與本人實體的目錄不互通**——這個掛名名下只有 11 筆。`curatorWhy` 寫「他 1990 年代唯一一張不掛 Model 500 的長篇」**需要跨掛名比對才成立，本層只查了 Infiniti 這一個實體，不能背書**；**行文只能寫「這個掛名下最早的一張長篇」。**｜`curatorWhy` 另寫「把 1993 年起散在 Metroplex 與 Tresor 的 Infiniti 12 吋推成一張完整的碟」——**本層在 Infiniti 名下 11 筆裡查不到 Metroplex 的 label-info，行文不要寫那個廠牌名。**｜**曲名兩種寫法**：德版與串流寫〈Coffeeshop〉（連寫），美版寫〈Coffee Shop〉（分寫）；串流把〈Coffeeshop (interlude)〉寫成〈Coffeeshop Interlude〉（無括號）。本檔依德版原盤。｜**掛名易誤拼**：`Infiniti` 單 i 結尾，不是 Infinity。"
  }
 ]
