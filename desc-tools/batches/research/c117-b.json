@@ -1,0 +1,130 @@
+[
+ {
+  "key": "desc2:Mr. Fox|The Gipsy",
+  "artist": "Mr. Fox",
+  "album": "The Gipsy",
+  "facts": [
+   {
+    "f": "release-group 31b0575a 的欄位：title「The Gipsy」、artist-credit「Mr. Fox」（藝人實體 MBID 745a29e9，type Group、area United Kingdom、begin 1970）、first-release-date **1971**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1971／GB／Official（12 吋，7 軌，label-info Transatlantic Records TRA 236）、2001／IT／Official（黑膠，7 軌，Get Back）、2005-07-22／JP／Official（CD，7 軌，Arcàngelo ARC7101）。**最早的 release 就是 1971／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/31b0575a-e5c6-3857-b72b-3056285bbe10?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971／GB 原盤（Transatlantic TRA 236，12 吋，release 3bee41ff）逐軌：1〈Mendle〉7:13、2〈The Gipsy〉**12:54**、3〈Aunt Lucy Broadwood〉2:23、4〈House Carpenter〉5:13、5〈Elvira Madigan〉4:20、6〈Dancing Song〉3:07、7〈All the Good Times〉5:25。**只有 7 軌、總長 40 分 35 秒；同名曲一首就佔 12 分 54 秒，接近整張的三分之一。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=31b0575a-e5c6-3857-b72b-3056285bbe10&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Mr Fox 是 1970 年代初的英國民謠搖滾團，核心是 Bob Pegg 與 Carole Butler（兩人皆 1944 年生），在 Nottingham Folk Workshop 認識、1963 年結婚後移居 Leeds。Bob 當時在大學的方言與民俗研究所研究 Yorkshire Dales 的民謠；他們 1969 年為製作人 Bill Leader 錄音時，**用了提琴、melodeon、大提琴、貝斯與鼓的編制，靈感來自 Yorkshire Dales 舊時的村莊樂隊——這成了 Mr Fox 的招牌**。Bill Leader 把帶子放給 Transatlantic Records 的 Nat Joseph 聽，樂團因此簽約。**團名取自他們的招牌曲，而那首歌出自一則血腥的英國民間故事——藍鬍子傳說的一個版本，年輕女子識破了連續殺人犯。**",
+    "src": "https://en.wikipedia.org/wiki/Mr._Fox"
+   },
+   {
+    "f": "同一條目對本張的敘述：大提琴手 Andrew Massey 與管樂手 John Myatt 在首張發行後不久因經濟因素離團，**因此第二張《The Gipsy》（1971）的配器較不複雜，卻更具實驗性**。這張仍以自己寫的素材為主，但收了兩首傳統曲——〈The House Carpenter〉與末軌〈All the Good Times〉，後者由 Bob Pegg 填了新詞。**〈All the Good Times〉的參與者掛名「The Gridley Tabernacle Choir and Orchestra」，那其實是一個臨時湊起來的樂手與歌手集合的虛構名號**——包括 Rod 與 Danny Stradling 以及 Swan Arcade 的成員——**疊錄三次做出巨大的合唱聲響**。1972 年鼓手 Alan Eden 與貝斯手 Barry Lyons 退團加入 Trees，同年 Carole 離開後樂團解散。",
+    "src": "https://en.wikipedia.org/wiki/Mr._Fox"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup，`Mr. Fox` 在店面上有四個同名實體，其中 artistId 1435971906 名下唯一的條目是 **1436337340《Join Us in Our Game》2004，17 軌**——攤開 `entity=song` 後可見 **第 11–17 軌正是本張的 7 軌**（〈Mendle〉7:12、〈The Gipsy〉12:52、〈Aunt Lucy Broadwood〉2:22、〈The House Carpenter〉5:12、〈Elvira Madigan Theme〉4:19、〈Dancing Song〉3:05、〈All the Good Times〉5:25，長度與原盤差 1–2 秒），**第 1–10 軌則是樂團 1970 年首張的內容。這是一個「兩張碟併成一個條目」的合輯，不是本張的條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1436337340&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 31b0575a 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/31b0575a-e5c6-3857-b72b-3056285bbe10/front"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲一首就走了十二分五十四秒，佔掉整張的三分之一",
+   "末軌掛名的那個合唱團與樂團其實不存在，是臨時湊的人疊錄三次"
+  ],
+  "sound": "1971 年 Transatlantic TRA 236 的 12 吋原盤只有 7 軌、總長 40 分 35 秒，同名曲〈The Gipsy〉一首就佔 12 分 54 秒，開場的〈Mendle〉也有 7 分 13 秒。核心是 Bob Pegg 與 Carole Butler 夫婦；Bob 研究過 Yorkshire Dales 的民謠，樂團的招牌編制——提琴、melodeon、大提琴、貝斯與鼓——正是從當地舊時的村莊樂隊來的。大提琴與管樂手在首張之後離團，這第二張的配器因此變得簡單，卻更放得開。素材以自己寫的為主，另收兩首傳統曲；末軌〈All the Good Times〉的參與者掛著「The Gridley Tabernacle Choir and Orchestra」的名號，其實是臨時湊起來的一群樂手與歌手疊錄三次做出的合唱聲響。",
+  "keyTracks": [
+   "Mendle",
+   "The Gipsy",
+   "All the Good Times"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。release-group first-release-date **1971**、**依裁定 220 回問轄下 release**，最早的一筆就是 1971／GB／Official 的 Transatlantic TRA 236，其餘兩筆是 2001 與 2005 的再發，沒有以再發日期建檔的問題；條目也把《The Gipsy》記為 1971 年的第二張。串流沒有本張的獨立條目，無第三處可對。**同名先行單曲：無**（同名曲是本張第 2 軌）。",
+  "notes": "⚠ **無來源狀態，但要記下發現**：串流上找到的 1436337340《Join Us in Our Game》2004（gb，17 軌）**是「兩張碟併成一個條目」的合輯**——第 1–10 軌是樂團 1970 年的首張、第 11–17 軌才是本張。**依策展層第八條操作判斷所記的同一形狀（Magna Carta 那筆），不可用它當本張的試聽來源。** 本張 status 維持無來源。｜⚠ **掛名撞名（裁定 179）**：`Mr Fox` 在 MB 上 score 最高的雖然是對的 745a29e9，但後面緊跟七個同名的 rapper／Afrobeat／dub 實體（score 92–96）；串流上四個同名實體也全部不是本團。**判準是 area 與 type，不是 score。**｜掛名寫法：池中與 MB 作 `Mr. Fox`（帶點號），條目內文作 `Mr Fox`（無點號），**照池中寫法**。｜曲名差異一處：原盤第 4 軌作〈House Carpenter〉（無 The），條目與串流作〈The House Carpenter〉，**行文照原盤**。｜條目提到首張獲得的媒體年度獎項**不得寫入**，且那是首張不是本張。｜條目對樂團現場表現好壞的敘述與樂評批評**一律不入行文**。"
+ },
+ {
+  "key": "desc2:Gryphon|Gryphon",
+  "artist": "Gryphon",
+  "album": "Gryphon",
+  "facts": [
+   {
+    "f": "release-group dc160fdc 的欄位：title「Gryphon」、artist-credit「Gryphon」（藝人實體 MBID 0cd7ff0b，type Group、area United Kingdom、begin 1973）、first-release-date **1973**、primary-type Album、secondary-types **空**。轄下 8 筆 release，最早的是 1973／GB／Official（12 吋，12 軌，label-info Transatlantic Records TRA 262），其後全部是 1992 之後的 CD 再發（PONY CANYON、Progressive International、Curio、Arcàngelo、Talking Elephant 等）。**最早的 release 就是 1973／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/dc160fdc-d7e8-345a-9591-176487e7d70f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1973／GB 原盤（Transatlantic TRA 262，12 吋，release 76b41752）逐軌：1〈Kemp's Jig〉3:11、2〈Sir Gavin Grimbold〉2:51、3〈Touch and Go〉1:35、4〈Three Jolly Butchers〉3:57、5〈Pastime With Good Company〉1:35、6〈The Unquiet Grave〉**5:46**、7〈Estampie〉4:55、8〈Crossing the Stiles〉2:30、9〈The Astrologer〉3:15、10〈Tea Wrecks〉**1:12**、11〈Juniper Suite〉4:47、12〈The Devil and the Farmer's Wife〉1:59。**12 軌、總長 37 分 33 秒，單軌多在一到四分鐘之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dc160fdc-d7e8-345a-9591-176487e7d70f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Gryphon 是 1972 年初在倫敦成軍的英國 progressive folk 團，**以中世紀與文藝復興風格的音樂為人所知**。四人編制是 Graeme Taylor、Richard Harvey、Dave Oberlé 與 Brian Gulland；**Harvey 與 Gulland 是倫敦皇家音樂學院的畢業生**，兩人以古典訓練的背景組了一個原聲樂團，混合英國民謠、當代搖滾與中世紀、文藝復興音樂，之後吉他手 Taylor 與鼓手 Oberlé 加入。樂團與民謠廠牌 Transatlantic Records 簽約，首場演出在 Buckinghamshire 的 Aylesbury 的 Stone Parish Church。**1973 年 6 月 Transatlantic 發行同名首張，錄音地點是錄音師 Adam Skeaping 的閣樓**；這張把電吉他、鍵盤與巴松管、krumhorn 等當時搖滾樂少用的管樂器加了進來。",
+    "src": "https://en.wikipedia.org/wiki/Gryphon_(band)"
+   },
+   {
+    "f": "同一條目：樂團早期演出包括在 St. Paul's 與 Southwark 兩座主教座堂的莎士比亞紀念活動；首張之後不久，他們在五天之內上遍 BBC 四個廣播頻道。1974 年 1 月在 Oxfordshire 的 Chipping Norton Recording Studios 錄第二張《Midnight Mushrumps》，同期受委託為倫敦國家劇院 Peter Hall 執導的莎劇《暴風雨》寫配樂，1974 年 4 月在 The Old Vic 首演。第三張《Red Queen to Gryphon Three》1974 年 12 月發行，是他們第一張在美國發行的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Gryphon_(band)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1382277093：collectionName「Gryphon」、artistName「Gryphon」、trackCount 12、℗ 欄「℗ 1973 Sanctuary Records Group Ltd., a BMG Company」、**releaseDate 記 1973-06-01**。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名與曲序與 1973 原盤**逐位置相符**、逐軌長度差多在 2 秒內。**上架的就是 12 軌的原盤內容，沒有加曲。** 字面差異一處：第 8 軌店面作〈Crossing the Styles〉。",
+    "src": "https://itunes.apple.com/lookup?id=1382277093&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group dc160fdc 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/dc160fdc-d7e8-345a-9591-176487e7d70f/front"
+   }
+  ],
+  "hookCandidates": [
+   "兩位創團者是皇家音樂學院的畢業生，帶進了巴松管與 krumhorn",
+   "這張錄在錄音師的閣樓裡，1973 年 6 月發行"
+  ],
+  "sound": "1973 年 6 月 Transatlantic TRA 262 的 12 吋原盤 12 軌、總長 37 分 33 秒。單軌短而密：〈Tea Wrecks〉1 分 12 秒、〈Touch and Go〉與〈Pastime With Good Company〉各 1 分 35 秒，最長的〈The Unquiet Grave〉也才 5 分 46 秒。樂團 1972 年初在倫敦成軍，Richard Harvey 與 Brian Gulland 是皇家音樂學院的畢業生，以古典訓練的底子把英國民謠、當代搖滾與中世紀、文藝復興的音樂混在一起，之後加入吉他手 Graeme Taylor 與鼓手 Dave Oberlé。這張錄在錄音師 Adam Skeaping 的閣樓，把電吉他、鍵盤與巴松管、krumhorn 這些當時搖滾樂少用的管樂器一起放了進來。串流上架的就是這 12 軌。",
+  "keyTracks": [
+   "Kemp's Jig",
+   "The Unquiet Grave",
+   "The Devil and the Farmer's Wife"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（月份亦對得上，6 月）。release-group first-release-date **1973**、**依裁定 220 回問轄下 release**，最早的一筆就是 1973／GB／Official 的 Transatlantic TRA 262，其餘七筆全部是 1992 年之後的 CD 再發，沒有以再發日期建檔的問題；條目寫「1973 年 6 月 Transatlantic 發行同名首張」；串流店面 gb 1382277093 的 releaseDate 正是 **1973-06-01**、℗ 欄同為 1973。**三處一致。同名先行單曲：無。**",
+  "notes": "⚠ **掛名撞名（裁定 179）**：`Gryphon` 在 MB 上 score 最高的雖然是對的 0cd7ff0b，但同名的還有加拿大的 Gryphon Trio、brony 藝人與遊戲音樂 remixer。**判準是 area、type 與 begin 年，不是 score。**｜**這是本批唯一踩在兩批邊界上的卡**（策展層第四節）：MB 的 disambiguation 把樂團寫成「70s UK progressive rock band」，形式上落在 prog 批的範圍，**本批收的是民謠側的首張**；1974 年的《Red Queen to Gryphon Three》已明寫進卡單的「刻意不釘」、留給日後的 prog 補遺批，**行文不要把兩張混談**。｜自我同名卡（掛名與盤名相同）。｜曲名差異一處：原盤〈Crossing the Stiles〉、店面〈Crossing the Styles〉，**行文照原盤的 Stiles**。｜條目關於《Midnight Mushrumps》與《暴風雨》配樂的段落**是下一張的事，不得挪用到本張**。"
+ },
+ {
+  "key": "desc2:Magna Carta|Seasons",
+  "artist": "Magna Carta",
+  "album": "Seasons",
+  "facts": [
+   {
+    "f": "release-group ce70b55e 的欄位：title「Seasons」、artist-credit「Magna Carta」、first-release-date **1970-08**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1970-08／GB／Official（12 吋，7 軌，label-info Vertigo 6360 003）、2004-07-12／GB／Official（CD，7 軌，Repertoire REPUK 1034）、一筆無日期的 Vertigo CD（846 447-2，7 軌）。**最早的 release 是 1970-08，與 first-release-date 完全相同**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ce70b55e-b485-3efa-8a5c-51d3904f7920?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970-08／GB 原盤（Vertigo 6360 003，12 吋，release 15be40db）逐軌：**1〈Seasons: Prologue / Winter Song / Spring Poem / Spring Song / Summer Poem / Summer Song / Autumn Song / Epilogue / Winter Song (reprise)〉22:14**、2〈Goin' My Way (Road Song)〉2:55、3〈Elizabethan〉2:38、4〈Give Me No Goodbye〉3:10、5〈Ring of Stones〉3:49、6〈Scarecrow〉2:17、7〈Airport Song〉3:41。**7 軌、總長 40 分 44 秒——第一軌是九段組曲、一軌就佔 22 分 14 秒，超過整張的一半；其餘六軌合計只有 18 分半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ce70b55e-b485-3efa-8a5c-51d3904f7920&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Magna Carta 是 1969 年 4 月在倫敦組成的民謠搖滾團，原始成員為 Chris Simpson（吉他、人聲）、Lyell Tranter（吉他）與 Glen Stuart（人聲），首場演出在 1969 年 5 月 10 日。首張同名專輯 1969 年由 Mercury 發行、Gus Dudgeon 製作、Tony Visconti 編曲。**三人組 1969 年簽 Mercury，之後轉到 Vertigo。1970 年的《Seasons》由 Gus Dudgeon 製作、Tony Visconti 編曲，錄音樂手包括風琴手 Rick Wakeman、鼓手 Barry Morgan 與爵士低音提琴手 Spike Heatley；這張之後 Tranter 回了澳洲。** 1971 年樂團與皇家愛樂在皇家亞伯特廳同台，Davey Johnstone 加入並參與《Songs From Wasties Orchard》（1971）與《In Concert》（1972），之後才離團去替 Elton John 工作。",
+    "src": "https://en.wikipedia.org/wiki/Magna_Carta_(band)"
+   },
+   {
+    "f": "串流店面 **de** 的 collectionId 988400303：collectionName「Seasons」、artistName「Magna Carta」、trackCount 7、℗ 欄「℗ 2004 Vertigo Records / Repertoire Records (UK) Ltd.」、releaseDate 記 1970。`entity=song` 攤得出 **7 軌、7 軌全部有 previewUrl**，每一軌都帶「(Remastered)」後綴，**截去後綴後與 1970 原盤逐位置相符**、逐軌長度差在 4 秒內（第一軌 22:18 對 22:14）。**上架的就是 7 軌的原盤內容。** 探測層在 gb／us／jp 三個店面各回 0 筆，**到 de 才命中**。",
+    "src": "https://itunes.apple.com/lookup?id=988400303&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group ce70b55e 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/ce70b55e-b485-3efa-8a5c-51d3904f7920/front"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌是九段組曲，一軌就佔了整張的一半以上",
+   "錄音時彈風琴的是 Rick Wakeman，編曲掛 Tony Visconti"
+  ],
+  "sound": "1970 年 8 月 Vertigo 6360 003 的 12 吋原盤 7 軌、總長 40 分 44 秒，但第一軌就是一首 22 分 14 秒的九段組曲——從序曲、冬之歌、春之詩、春之歌、夏之詩、夏之歌、秋之歌到尾聲與冬之歌的重奏——一軌吃掉超過整張的一半；剩下六軌合計只有十八分半，最短的〈Scarecrow〉2 分 17 秒。三人組由 Chris Simpson、Lyell Tranter 與 Glen Stuart 組成，1969 年 4 月在倫敦成軍。這張製作人是 Gus Dudgeon、編曲 Tony Visconti，錄音樂手包括彈風琴的 Rick Wakeman、鼓手 Barry Morgan 與爵士低音提琴手 Spike Heatley；錄完之後 Tranter 就回澳洲了。",
+  "keyTracks": [
+   "Seasons: Prologue / Winter Song / Spring Poem / Spring Song / Summer Poem / Summer Song / Autumn Song / Epilogue / Winter Song (reprise)",
+   "Elizabethan",
+   "Airport Song"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（月份亦一致，1970-08）。release-group first-release-date **1970-08**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970-08／GB／Official 的 Vertigo 6360 003，**連月份都相同**，其餘兩筆是 2004 年與無日期的 CD，沒有以再發日期建檔的問題；條目把《Seasons》記為 1970 年作品；串流店面 de 988400303 的 releaseDate 記 1970（℗ 欄的 2004 是再發權利方的錄製聲明）。**三處一致。同名先行單曲：無。**",
+  "notes": "⚠ **策展層第八條操作判斷要接手**：串流上另有一個 collectionId **1442886702《Seasons + Songs from Wasties Orchard (Remastered)》**（年份標 1999）是**兩張碟併成一個條目**，**不可用它當本張或另一張的來源**。本張用的是 de 店面的 988400303（單張 7 軌），**這一筆是對的**。｜**命中店面是 de 不是 gb**：gb／us／jp 三個店面都回 0 筆，到 de 才有。｜盤名與軌名都帶「(Remastered)」後綴，依裁定 175 截去後比對，**行文不要寫出後綴**。｜**第一軌的曲名極長（九段標題以斜線串接）**，行文引用時可只寫〈Seasons〉並說明它是九段組曲，**但 `keyTracks` 已照原樣完整保留**。｜條目提到的專輯排行榜名次**一律不得寫入**。｜同團的《Songs From Wasties Orchard》也在本批 b 組，兩張行文不要重複團史段落。"
+ }
+]
