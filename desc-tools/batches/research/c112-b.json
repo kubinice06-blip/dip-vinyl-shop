@@ -1,0 +1,282 @@
+[
+ {
+  "key": "desc4:坂本慎太郎|ヤッホー",
+  "artist": "坂本慎太郎",
+  "album": "ヤッホー",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bf8f391b 的欄位：title「ヤッホー」、artist-credit「坂本慎太郎」（藝人實體 MBID b713fb44，type Person、country **JP**、area Japan、gender Male、disambiguation「Japanese rock musician」）、first-release-date 2026-01-23、primary-type Album、secondary-types **空**。轄下 **3 筆 release 全部 Official、全部 2026-01-23**：JP 的 CD 一筆（barcode 4582561406607）、JP 的數位一筆（602488333665）、未填國別的數位一筆（617308005776）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/bf8f391b-3b13-47c5-a73b-0e1b94167153?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "三筆 release 的載體與軌數（`inc=media+labels+recordings` 攤開）：**CD 那筆 4704d156 其實是兩片裝——medium 1 是 10 軌正片、medium 2 是同樣 10 首的 (inst) 伴奏片，全片合計 20 軌**；另兩筆數位各為單片 10 軌。三筆的廠牌欄都記 Zelone Records（label MBID c098e3f9），catalog-number 只有 CD 那筆填了 zel-029，兩筆數位都沒填編號。**策展層 `why` 寫的「3 筆 release 全 Official、10 軌」在正片層面成立，但漏了 CD 版的第二片伴奏碟。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bf8f391b-3b13-47c5-a73b-0e1b94167153&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB release 4704d156（JP CD，Zelone Records zel-029）medium 1 的逐軌曲目與長度：1〈おじいさんへ〉2:59、2〈あなたの場所はありますか？〉4:31、3〈正義〉3:33、4〈脳をまもろう〉4:51、5〈時の向こうで〉5:41、6〈時計が動きだした〉4:01、7〈麻痺〉5:25、8〈なぜわざわざ〉4:26、9〈ゴーストタウン〉4:38、10〈ヤッホー〉3:49。最短是開場的〈おじいさんへ〉2:59、最長是第 5 軌〈時の向こうで〉5:41，十首全部落在 2:59 到 5:41 之間。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bf8f391b-3b13-47c5-a73b-0e1b94167153&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "同一 release-group 內的第三筆 release 5a42665c（Latn／eng，數位 10 軌）整張換成英文譯題：1〈Dear Grandpa〉、2〈Is There a Place for You There?〉、3〈Justice〉、4〈Protect Your Brain〉、5〈On the Other Side of Time〉、6〈The Clock Began to Move〉、7〈Numb〉、8〈Why Do This?〉、9〈Ghost Town〉、10〈Yoo‐hoo〉，逐軌長度與日文版差 0–1 秒。**這筆的標題與末軌曲名在 MB 上寫作「Yoo‐hoo」，中間那個連字號是 U+2010、不是 ASCII 的 U+002D**；卡單 queryAlias 填的「Yoo-hoo」是 ASCII，兩者在字串比對下不相等。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bf8f391b-3b13-47c5-a73b-0e1b94167153&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music jp collectionId 1854043241**：collectionName「Yoo-hoo」（**Apple 用的是 ASCII 連字號**）、artistName「坂本慎太郎」、releaseDate 2026-01-23、copyright「℗ 2026 zelone records」、trackCount 10、collectionExplicitness notExplicit。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名用日文原題、與 MB 的 JP 原盤**逐位置相符**（第 2 軌 Apple 記〈あなたの場所はありますか?〉為半形問號，MB 為全形〈？〉），逐軌長度除 1、4、5、7、10 軌各差一秒外全部相同。",
+    "src": "https://itunes.apple.com/lookup?id=1854043241&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple jp 藝人目錄（artistId 483508554）2026 年只有兩筆：1863650444《Numb - Single》2026-01-19（1 軌）與本張 1854043241（10 軌）。**同名先行單曲沒有，但專輯第 7 軌〈麻痺〉的英文題〈Numb〉在四天前先以單曲形式上架。**",
+    "src": "https://itunes.apple.com/lookup?id=483508554&country=jp&entity=album&limit=200"
+   },
+   {
+    "f": "日文維基〈坂本慎太郎〉的アルバム表把本張列為第 5 張個人專輯（1st《幻とのつきあい方》2011-11-18、2nd《ナマで踊ろう》2014-05-28、3rd《できれば愛を》2016-07-27、4th《物語のように》2022-06-03、5th《ヤッホー》2026-01-23），規格品番欄記 **zel-029（通常盤）與 zel-030（LP）兩種**——**LP 那筆 MB 目前沒有建檔**。同頁記他 2010 年以《空洞です》結束ゆらゆら帝国、其後自設廠牌 zelone records，2011 年 9 月以 7 吋〈幽霊の気分で〉個人出道。",
+    "src": "https://ja.wikipedia.org/wiki/坂本慎太郎"
+   },
+   {
+    "f": "MB 藝人 b713fb44 名下共 14 個 release-group，其中 primary-type Album 的有 6 筆：《幻とのつきあい方》2011-11-18、《まともがわからない》2013-01-11、《ナマで踊ろう》2014-05-28、《できれば愛を》2016-07-27、《物語のように》2022-06-03、《ヤッホー》2026-01-23。**MB 的 Album 計數是 6、日文維基的錄音室專輯計數是 5**（差在 2013 年那筆，維基未列入アルバム表）——序數兩說並存，行文不得斷言「第五張」或「第六張」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b713fb44-7a24-41d0-827a-cc8777b1ce89&limit=100&offset=0&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "CD 版是兩片裝：第二片把同樣那十首從頭到尾再放一次，只是全部拿掉人聲",
+   "同一張碟在 MB 上有兩套曲名，日文一套、英文一套——〈麻痺〉在英文那套裡叫〈Numb〉"
+  ],
+  "sound": "MB 三筆 Official release 的正片一律 10 軌：JP 的 CD（zel-029，另附一片同曲目的伴奏碟）、JP 數位、未填國別的英文題數位。Apple jp 逐軌長度與 MB 相同或差一秒。曲長從 2:59（〈おじいさんへ〉）到 5:41（〈時の向こうで〉），十首都在三到六分鐘之間，沒有短曲也沒有長篇。整張只有 Zelone Records 一家廠牌，是他 2011 年自設的自營廠牌；日文維基另記有 LP 版 zel-030，MB 尚未建檔。同一 release-group 內備有整套英文譯題（〈Dear Grandpa〉〈Protect Your Brain〉〈Ghost Town〉那一套），日英兩版曲序完全相同。",
+  "keyTracks": [
+   "おじいさんへ",
+   "時の向こうで",
+   "ヤッホー"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-01-23**、轄下三筆 release 全部同為 2026-01-23、Apple jp 1854043241 的 releaseDate 2026-01-23 與 ℗ 年份 2026，三處同年同日。**同名先行單曲：沒有。**Apple jp 藝人目錄 2026 年只多一筆 1863650444《Numb - Single》2026-01-19，那是專輯第 7 軌〈麻痺〉的英文題、比專輯早四天，盤名與專輯不同、不會撞。MB 藝人名下 14 個 release-group 裡沒有 2026 年的其他條目。策展層的釘位 bf8f391b 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層判 unavailable，覆核推翻（裁定 185）**：`tried` 記 us／gb／jp／de／fr／tw／kr／ca／au 九店全 0，但 **jp 店面實際有貨**——`search?term=坂本慎太郎 ヤッホー&country=jp` 一擊命中 **collectionId 1854043241**，10 軌全有 previewUrl。**探測層落空的原因是店面把盤名登記成羅馬字「Yoo-hoo」而不是「ヤッホー」**，以日文盤名查會全店皆空。回撈清單 apple-candidates.md 記「目錄裡找不到」也是同一個原因（用日文盤名比對藝人目錄），實際上目錄裡就在 2026-01-23 那一列。\\n**可補的 Apple collectionId：key `desc4:坂本慎太郎|ヤッホー`／店面 jp／id 1854043241／10 軌。**（不改 previews.json，交主線。）\\n**逐軌比對已做（裁定 157）**：Apple jp 10 軌與 MB JP 原盤 4704d156 medium 1 的曲名、曲序逐位置相符，長度差最多一秒；`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。collectionExplicitness 為 notExplicit，jp 店面沒有 explicit／cleaned 雙胞胎（藝人目錄 2026 年只有兩筆，逐筆看過）。\\n**傳給下游：U+2010 又中一次。**MB 的 5a42665c 標題與末軌曲名「Yoo‐hoo」中間是 U+2010 連字號，Apple 與卡單 queryAlias 都是 ASCII「Yoo-hoo」——與 a 組回報的 `L‐M Records` 同型。本批的 MONO 也中（見該筆）。\\n**擋下策展層一處**：`why`／`mbNote` 說「3 筆 release 全 Official、10 軌」，正片軌數成立，但 **CD 那筆 4704d156 是兩片裝**（medium 2 是同十首的 (inst) 伴奏碟），行文若要點「十軌」要說的是正片，不能寫「全碟十軌」。\\n**序數不可斷言**：MB 的 Album 型 release-group 有 6 筆、日文維基的アルバム表只列 5 張，兩說並存（同 a 組 Kacey Musgraves 的處理）。**行文不得寫「第 N 張」**，改用可查證的錨點：前作《物語のように》2022 年。\\n**短掛名回問結果（裁定 179）**：b713fb44 的 type=Person、country=JP、area=Japan、disambiguation「Japanese rock musician」，alias 含「Shintaro Sakamoto」（en、primary）——是ゆらゆら帝国那位坂本慎太郎本人，MB 上沒有同名的空欄實體。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:くるり|儚くも美しき12の変奏",
+  "artist": "くるり",
+  "album": "儚くも美しき12の変奏",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 04e15eab 的欄位：title「儚くも美しき12の変奏」、artist-credit「くるり」（藝人實體 MBID 252c9f8a，type Group、country **JP**）、first-release-date 2026-02-11、primary-type Album、secondary-types **空**、disambiguation 空。轄下 **只有 1 筆 release，status Official**：d8abce28，2026-02-11、country XW、text-representation 為 Jpan／jpn、barcode 4943566314616。",
+    "src": "https://musicbrainz.org/ws/2/release-group/04e15eab-cb86-478a-a4c7-20648ff26ddc?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "唯一那筆 release d8abce28 的載體與廠牌（`inc=media+labels+recordings`）：**Digital Media 單片 12 軌**，label-info 記 Noise McCartney Records（label MBID ac6d0a9e，**MB 的廠牌名是首字大寫的「Noise McCartney Records」、卡片寫全大寫「NOISE McCARTNEY RECORDS」**），catalog-number **未填**。**MB 上沒有任何實體載體的 release**，行文不得斷言 CD 或黑膠。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=04e15eab-cb86-478a-a4c7-20648ff26ddc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "d8abce28 的逐軌曲目與長度：1〈たまにおもうこと〉4:09、2〈Regulus〉3:22、3〈金星〉3:29、4〈瀬戸の内〉3:19、5〈La Palummella〉3:34、6〈C'est la vie〉2:17、7〈oh my baby〉5:09、8〈はたらくだれかのように〉4:53、9〈押し花と夢〉3:25、10〈セコイア〉3:43、11〈3323〉3:48、12〈ワンダリング〉3:34。十二軌合計 44:42，最短是第 6 軌〈C'est la vie〉2:17、最長是第 7 軌〈oh my baby〉5:09。**盤名裡的「12」與曲目數相符。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=04e15eab-cb86-478a-a4c7-20648ff26ddc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music jp collectionId 1893695487**：collectionName「**Twelve Ephemeral Variations**」（**Apple 用的是英文譯題、不是漢字原題**）、artistName「くるり」、releaseDate 2026-02-11、copyright「℗ 2026 NOISE McCARTNEY RECORDS」、trackCount 12、collectionExplicitness notExplicit。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名全部沿用日文原題、與 MB **逐位置相符**，逐軌長度**全部相同到秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1893695487&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple jp 藝人目錄（artistId 105025123，Apple 端的 artistName 是羅馬字「Quruli」）共 82 筆，2026 年**只有本張一筆**——沒有同名先行單曲，也沒有 explicit／cleaned 雙胞胎。",
+    "src": "https://itunes.apple.com/lookup?id=105025123&country=jp&entity=album&limit=200"
+   },
+   {
+    "f": "日文維基〈くるり〉的年表與 2026 年條目：本張是「通算 15 枚目のオリジナルアルバム」、距前作約 2 年 4 個月，其中〈La Palummella〉是在義大利那不勒斯錄音的，全碟取向被記為兼收爵士、重金屬、R&B 與古典。同頁 infobox：樂團 1996 年於京都成立，現行成員為岸田繁（主唱／吉他）與佐藤征史（貝斯／和聲）兩人；**2024 年 6 月 30 日與所屬 26 年的 SPEEDSTAR RECORDS 合約期滿，移籍到樂團自己 2002 年設立的 NOISE McCARTNEY RECORDS**——本張是移籍後的作品。2026 年 9 月樂團滿三十週年。",
+    "src": "https://ja.wikipedia.org/wiki/くるり"
+   }
+  ],
+  "hookCandidates": [
+   "盤名裡的「12」不是虛數：整張正好十二軌，第五軌〈La Palummella〉還是特地跑到那不勒斯錄的",
+   "同一張碟，MB 記漢字原題、Apple 掛的卻是英文題《Twelve Ephemeral Variations》"
+  ],
+  "sound": "MB 只有一筆 Official release，數位單片 12 軌，Apple jp 逐軌長度與 MB 相同到秒。十二軌合計 44:42，曲長從 2:17（〈C'est la vie〉）到 5:09（〈oh my baby〉），沒有一軌超過六分鐘。曲名混用日文（〈たまにおもうこと〉〈金星〉〈瀬戸の内〉〈押し花と夢〉）、英文（〈oh my baby〉）、法文（〈C'est la vie〉）、拉丁文（〈Regulus〉）與義大利那不勒斯方言（〈La Palummella〉），最後一軌是片假名的〈ワンダリング〉、第十一軌只有四個數字〈3323〉。廠牌是樂團 2002 年自設、2024 年才回去的 NOISE McCARTNEY RECORDS；MB 上實體載體與編號都尚未建檔。",
+  "keyTracks": [
+   "La Palummella",
+   "oh my baby",
+   "ワンダリング"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-02-11**、唯一那筆 Official release 同為 2026-02-11、Apple jp 1893695487 的 releaseDate 2026-02-11 與 ℗ 年份 2026，三處同年同日。**同名先行單曲：沒有**——Apple jp 藝人目錄 82 筆裡 2026 年只有本張一筆，MB 藝人 252c9f8a 名下也查不到 2026 年的其他條目。日文維基把發售日記為 2026 年 2 月 11 日，與前兩處一致。策展層的釘位 04e15eab 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層判 unavailable，覆核推翻（裁定 185）**：`tried` 記九店全 0，但 **jp 店面實際有貨**——`search?term=くるり 儚くも美しき12の変奏&country=jp` 一擊命中 **collectionId 1893695487**，12 軌全有 previewUrl。**探測層落空的原因與坂本慎太郎那筆同型：Apple 把盤名登記成英文譯題「Twelve Ephemeral Variations」**，用漢字盤名比對會全店皆空。apple-candidates.md 記「目錄裡找不到」同理——藝人目錄裡就有，只是那一列的 collectionName 是英文。\\n**可補的 Apple collectionId：key `desc4:くるり|儚くも美しき12の変奏`／店面 jp／id 1893695487／12 軌。**（不改 previews.json，交主線。）\\n**逐軌比對已做（裁定 157）**：Apple jp 12 軌與 MB d8abce28 的曲名、曲序逐位置相符，逐軌長度全部相同到秒；`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。collectionExplicitness notExplicit，藝人目錄 2026 年只有一筆、沒有雙胞胎。\\n**策展層說法複驗**：`why` 寫「只有 1 筆 Official release、12 軌數位、實體與編號尚未建檔」，逐筆核對**全部成立**。`risk` 說 MB 上實體尚未建檔、行文不得斷言載體，也成立。\\n**補一處策展層沒寫到的**：MB 的廠牌名是「Noise McCartney Records」（首字大寫），卡片 label 欄與 Apple 的 ℗ 都是全大寫「NOISE McCARTNEY RECORDS」——大小寫不同、字串比對不相等（與 a 組回報的 U+2010 同族，是另一種寫法分裂）。\\n**序數**：日文維基寫「通算 15 枚目のオリジナルアルバム」，這是外部來源的說法、且 MB 藝人名下有 72 個 release-group 無法逐一分類驗證。**行文若要用「第十五張」必須帶出處，或改用可查證的錨點**：2024 年離開 SPEEDSTAR、回到自營廠牌 NOISE McCARTNEY，本張是回去之後的作品。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc2:GEZAN|I KNOW HOW NOW",
+  "artist": "GEZAN",
+  "album": "I KNOW HOW NOW",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9264fb34 的欄位：title「I KNOW HOW NOW」、artist-credit「GEZAN」（藝人實體 MBID 4be17540，type Group、country **JP**、disambiguation「Japanese rock band」）、first-release-date 2026-02-11、primary-type Album、secondary-types **空**。轄下 **3 筆 release 全部 Official、全部 2026-02-11**：JP 的 CD 一筆（Jewel Case，barcode 4526180749455）、JP 的數位一筆（4550752734037）、XW 的數位一筆（無 barcode）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9264fb34-78c6-473a-8bc2-cff2bb46cc2b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "三筆 release 的載體、軌數與廠牌：**全部 9 軌**。CD 那筆 4e7f9d69 掛 十三月（label MBID b55ad879）、catalog-number **JSGM-065**；JP 數位 111b6827 同樣掛 十三月、無編號；**XW 數位 f93cfe98 掛的是 KiliKiliVilla（label MBID bf62e773）、無編號**——策展層 `why` 說「十三月與 KiliKiliVilla 共同發行」在 release 層面是**兩家各掛各的**，不是同一筆上並列兩家。三筆的 text-representation 分別是 Jpan／jpn、Latn／eng、Qaaa／mul。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9264fb34-78c6-473a-8bc2-cff2bb46cc2b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB release 4e7f9d69（JP CD，十三月 JSGM-065）的逐軌曲目與長度：1〈beat〉5:21、2〈Amrita〉8:38、3〈TRANSIT〉3:17、4〈HAPPY HIPPIE〉5:38、5〈Memoria〉4:09、6〈数字 / SUJI〉6:30、7〈HOWL〉5:08、8〈BEST DAY EVER〉6:35、9〈予感 / Premonition〉4:56。九軌合計 50:12，最短是第 3 軌〈TRANSIT〉3:17、最長是第 2 軌〈Amrita〉8:38——**九軌裡有四軌超過五分半，第 2 軌逼近九分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9264fb34-78c6-473a-8bc2-cff2bb46cc2b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "同一 release-group 內三筆 release 的曲名寫法各不相同：JP 數位 111b6827 全部小寫化的原題（〈beat〉〈数字〉〈予感〉）、CD 4e7f9d69 在漢字曲名後補斜線英譯（〈数字 / SUJI〉〈予感 / Premonition〉）、XW 數位 f93cfe98 改成首字大寫加括號英譯（〈Beat〉〈数字 (Numbers)〉〈予感 (Premonition)〉）。**同一首歌在同一個 release-group 內有三種寫法**，任何以曲名字串比對的下游動作都要挑定一筆。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9264fb34-78c6-473a-8bc2-cff2bb46cc2b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music us collectionId 1870248543**：collectionName「I Know How Now」（**Apple 用的是首字大寫式，不是卡片的全大寫**）、artistName「GEZAN」、releaseDate 2026-02-11、copyright「**℗ 2026 13th records**」（十三月的英文寫法）、trackCount 9、collectionExplicitness notExplicit。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲序與 MB **逐位置相符**、逐軌長度與 JP 數位版**全部相同到秒**。曲名走英譯（〈Suji〉〈Premonition〉），**第 8 軌 Apple 記作〈Best Day Ever (feat. Ichiko Aoba)〉——MB 三筆 release 都只寫〈BEST DAY EVER〉、沒有標客席。**",
+    "src": "https://itunes.apple.com/lookup?id=1870248543&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈GEZAN〉的年表與 infobox：樂團 2009 年在大阪難波ベアーズ成立，成立當初用「下山」名義；現行編制四人——マヒトゥ・ザ・ピーポー（主唱／吉他）、イーグル・タカ（吉他／風笛）、ヤクモア（貝斯）、石原ロスカル（鼓）；廠牌欄記自營的十三月。2012 年首張《かつてうたといわれたそれ》即由十三月發行，2014 年起自辦投錢制戶外音樂祭「全感覚祭」。同頁把本張記為 **7th アルバム**，並記 2026 年樂團辦了四名成員各連做 25 小時獨演的「100 時間リレー」企畫、3 月 14 日在日本武道館辦了首次單獨公演「独炎」。",
+    "src": "https://ja.wikipedia.org/wiki/GEZAN"
+   }
+  ],
+  "hookCandidates": [
+   "九軌五十分鐘，第二軌〈Amrita〉一首就佔掉八分半，比整張的五分之一還多",
+   "同一張碟在 MB 上有三套曲名寫法——〈数字〉在 CD 版後面補「/ SUJI」、在海外數位版後面補「(Numbers)」"
+  ],
+  "sound": "MB 三筆 Official release（JP CD、JP 數位、XW 數位）全部 9 軌，Apple us 逐軌長度與 JP 數位版相同到秒。九軌合計 50:12，曲長從 3:17（〈TRANSIT〉）到 8:38（〈Amrita〉），有四軌超過五分半，是長篇型的配置。CD 版由樂團自營的 十三月 發行、編號 JSGM-065，海外數位那筆改掛 KiliKiliVilla；Apple 的 ℗ 記成「13th records」，是十三月的英文寫法。Apple 在第 8 軌〈Best Day Ever〉標了客席 Ichiko Aoba，MB 三筆都沒有這個標記。樂團 2009 年於大阪成立、初期名為「下山」，現行四人編制含一把風笛。",
+  "keyTracks": [
+   "Amrita",
+   "BEST DAY EVER",
+   "予感"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-02-11**、三筆 Official release 全部同為 2026-02-11、Apple us 1870248543 的 releaseDate 2026-02-11 與 ℗ 年份 2026，三處同年同日。**同名先行單曲：沒有**——Apple us 藝人目錄（artistId 610768900）共 14 筆，2026 年只有本張一筆。策展層的釘位 9264fb34 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：us 1870248543，9 軌全有 previewUrl，曲序與 MB 逐位置相符、長度與 JP 數位版相同到秒（裁定 157 的位置比對已做）；`trackCount` 欄與攤開的曲目列都是 9、無裁定 175 的落差。collectionExplicitness notExplicit，us 藝人目錄 14 筆逐筆看過、2026 年只有這一筆，沒有 explicit／cleaned 雙胞胎。\\n**⚠ 交主線裁定的一件事（不是資料錯誤，是這張碟的處境）**：日文維基〈GEZAN〉infobox 的活動期間寫「2009年 - 2026年」，年表記 **2026 年 7 月 30 日樂團公告主唱マヒトゥ・ザ・ピーポー的性加害事案、宣布一定期間活動休止**，引的是朝日新聞 2026-07-31 朝刊與樂團官網公告。本張 2026-02-11 發行、早於該事件五個半月。**研究層照卡單把資料備齊，但行文層要知道這件事**：不得寫任何暗示樂團現況、未來動向或「還在跑」的句子，也不得把該事件寫進簡介。要不要留這張卡是策展面的判斷，證據與出處列在此。\\n**擋下策展層一處**：`why` 寫「由樂團自營的十三月與 KiliKiliVilla 共同發行」——**release 層面不是共同掛名**：CD 與 JP 數位掛 十三月（JSGM-065），XW 數位那筆單掛 KiliKiliVilla，兩家各掛各的 release。行文若要點廠牌，說「日本盤掛十三月、海外數位掛 KiliKiliVilla」才對得上。\\n**補一處策展層沒寫到的**：Apple 第 8 軌記〈Best Day Ever (feat. Ichiko Aoba)〉，**MB 三筆 release 都沒有標這個客席**——客席只有 Apple 一個來源，行文要點就得以 Apple 為據。\\n**曲名三種寫法**：同一 release-group 內〈数字〉有「数字」「数字 / SUJI」「数字 (Numbers)」三寫，〈予感〉同理；keyTracks 取 MB JP 數位版的原題。\\n**序數**：日文維基寫 7th アルバム。MB 藝人名下 15 個 release-group 無法逐一分類驗證，**行文若要用「第七張」必須帶出處**。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:Reol|美辞学",
+  "artist": "Reol",
+  "album": "美辞学",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3b53db49 的欄位：title「美辞学」、artist-credit「Reol」（藝人實體 MBID aea6ccea，type **Person**、country JP、area Japan、begin 1993-11-09、disambiguation「**singer/songwriter and member of REOL**」）、first-release-date 2026-01-21、primary-type Album、secondary-types **空**。轄下 **6 筆 release，六筆的 status 全部是 Official**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/3b53db49-d1a5-462d-9ee5-fdf3d5c8f013?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**策展層說「另有一筆標題作羅馬字「Rhetorica」的 pseudo-release」——不成立。**8ef6f336 那筆的 title 是「Rhetorica」沒錯，但 **status 欄記的是 Official、不是 Pseudo-Release**（本批的ずっと真夜中でいいのに。與 MASS OF THE FERMENTING DREGS 兩張才真的各有 Pseudo-Release 筆，同一支查詢下欄位讀得出來，所以不是欄位缺值）。它與 bf7945e9 共用 barcode 4547366789058、都是 11 軌數位，是同一版數位的漢字／羅馬字兩種登記。",
+    "src": "https://musicbrainz.org/ws/2/release-group/3b53db49-d1a5-462d-9ee5-fdf3d5c8f013?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "六筆 release 的載體、軌數與編號（`inc=media+labels+recordings`）：**主碟一律 11 軌**。JP 三筆 CD——ee9e6db6（CD 11 軌，NeOFRONT **KSCL-3634**）、49a8c090（CD 11 軌＋**DVD 0 軌**，KSCL-3632／KSCL-3633）、7c2a2977（CD 11 軌＋**Blu-ray 0 軌**，KSCL-3630／KSCL-3631）；XW 兩筆——85c28a64（CD 11 軌，Jewel Case）、bf7945e9（數位 11 軌，NeOFRONT SEXX03092B00Z）；另一筆 8ef6f336（數位 11 軌，label-info 空）。**DVD 與 Blu-ray 那兩片在 MB 上 track-count 都是 0（內容未建檔）**，行文不得說「附幾曲影像」。廠牌六筆一律 NeOFRONT（label MBID 1bcf1b81）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3b53db49-d1a5-462d-9ee5-fdf3d5c8f013&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB release ee9e6db6（JP CD，NeOFRONT KSCL-3634）的逐軌曲目與長度：1〈うつくしじごく〉3:51、2〈おとめの肖像〉3:26、3〈感情御中〉2:55、4〈DEAD CENTER〉2:56、5〈ディア〉2:55、6〈ULTRA C〉2:59、7〈SHINOBI〉3:10、8〈二等星〉3:33、9〈-閑話-〉1:22、10〈RE RESCUE〉3:50、11〈美辞目録〉3:01。十一軌合計 34:18，最短是第 9 軌〈-閑話-〉1:22（**唯一一軌不到兩分鐘、明顯是間奏**），其餘十軌全部落在 2:55 到 3:51 的窄帶裡。**末軌〈美辞目録〉與盤名〈美辞学〉共用「美辞」二字。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3b53db49-d1a5-462d-9ee5-fdf3d5c8f013&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "羅馬字那筆 8ef6f336 把同十一軌整套換成拉丁寫法：1〈Utsukushi Jigoku〉、2〈Portrait of Her〉、3〈**WANT U LUV IT**〉、4〈DEAD CENTER〉、5〈DEAR〉、6〈ULTRA C〉、7〈SHINOBI〉、8〈**Immitation Star**〉、9〈Quiet Talk〉、10〈RE RESCUE〉、11〈Rhetoric Index〉，逐軌長度與漢字版完全相同。**第 3 軌的兩種寫法不是音譯關係**（漢字〈感情御中〉對英文〈WANT U LUV IT〉），**第 8 軌 MB 拼作「Immitation Star」、Apple 拼作「Imitation Star」，MB 少了一個 t 是拼寫錯誤**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3b53db49-d1a5-462d-9ee5-fdf3d5c8f013&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music us collectionId 1850916200**：collectionName「美辞学」（漢字原題）、artistName「Reol」、releaseDate 2026-01-21、trackCount 11、collectionExplicitness notExplicit，**copyright 欄寫的是「℗ 2025 Sony Music Labels Inc.」——℗ 年份是 2025、與發行年 2026 錯開一年**。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名走羅馬字那一套（〈Utsukushi Jigoku〉〈WANT U LUV IT〉〈Imitation Star〉〈Rhetoric Index〉），曲序與 MB **逐位置相符**、逐軌長度**全部相同到秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1850916200&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple us 藝人目錄（artistId 1163095812）共 41 筆，2026 年三筆：本張 1850916200（2026-01-21，11 軌）、6784205578《COCOON - Single》2026-07-11、6802136175《天井の街 - CEILING CITY - Single》2026-08-26，**兩張單曲都在專輯之後、盤名也不同**。同一次 `entity=musicArtist` 搜尋在 us 店面另外撈到 **1160521716「REOL」**（音樂單元，與本人不同實體）、**1840455752「Reol」**（第三個同名條目）與 1634636824「re$ol」——**光靠「Reol」這個字串在 Apple 端至少會撞上四個 artistId**。",
+    "src": "https://itunes.apple.com/lookup?id=1163095812&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "日文維基〈れをる〉（Reol 的條目名）infobox 與年表：本名以外的活動名為れをる，1993-11-09 生於長野縣松本市，活動期間 2015 年起，2023 年起所屬 SME Records；2016 至 2017 年間曾在音樂單元 REOL 擔任主唱與詞曲。年表把本張記為「2026年1月21日、2年ぶりとなる**4th フルアルバム**『美辞学』」，前一張全長專輯是 2023-10-18 的《BLACK BOX》。同頁另記第 3 軌的英文題〈感情御中-WANT U LUV IT-〉原是 2024 年替麥當勞美國「WcDonald's」企畫寫的曲、第 10 軌〈RE RESCUE〉是動畫《青の祓魔師 雪ノ果篇》的片頭曲，兩首都先收在 2024-11-13 的 EP《秘色録》。",
+    "src": "https://ja.wikipedia.org/wiki/れをる"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡有十軌卡在三分鐘上下，只有第九軌〈-閑話-〉一分二十二秒，像中途插進來換一口氣",
+   "同一張碟的第三軌，漢字版叫〈感情御中〉、羅馬字版叫〈WANT U LUV IT〉——兩個題目沒有一個字對得上"
+  ],
+  "sound": "MB 六筆 Official release（JP 三種 CD 初回盤、XW 的 CD 與數位、另一筆羅馬字數位）主碟一律 11 軌，Apple us 逐軌長度與 MB 相同到秒。十一軌合計 34:18，除了 1:22 的間奏〈-閑話-〉，其餘十軌都壓在 2:55 到 3:51 之間，是節目單極整齊的短曲配置。廠牌一家 NeOFRONT，編號 KSCL-3630 到 KSCL-3634 一套五種，其中兩種初回盤各附一片 DVD 或 Blu-ray（MB 上內容未建檔）。同一 release-group 內備有整套羅馬字曲名，兩套之間不是音譯而是換題（〈感情御中〉對〈WANT U LUV IT〉、〈二等星〉對〈Imitation Star〉、〈美辞目録〉對〈Rhetoric Index〉）。掛名 Reol 是 Person 實體，MB 註記她同時是單元 REOL 的成員。",
+  "keyTracks": [
+   "感情御中",
+   "-閑話-",
+   "美辞目録"
+  ],
+  "status": "full",
+  "yearVerified": "**四處對照有一處錯開，結論仍是 2026。**MB release-group first-release-date **2026-01-21**、六筆 Official release 全部同為 2026-01-21、Apple us 1850916200 的 releaseDate 2026-01-21——三處同年同日；**但 Apple 的 copyright 欄是「℗ 2025 Sony Music Labels Inc.」，℗ 年份落在 2025、比發行年早一年**（唱片公司常以錄音年掛 ℗，不是發行年，這一處不推翻 2026）。日文維基同樣記 2026 年 1 月 21 日。**同名先行單曲：沒有**——Apple us 藝人目錄 2026 年的另兩筆《COCOON》《天井の街 - CEILING CITY》都在專輯之後、盤名不同。策展層的釘位 3b53db49 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：us 1850916200，11 軌全有 previewUrl，曲序與 MB 逐位置相符、逐軌長度相同到秒（裁定 157 已做）；`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。collectionExplicitness notExplicit，us 藝人目錄 41 筆逐筆看過、2026 年三筆無雙胞胎。\\n**擋下策展層一處**：`why` 與 `risk` 都說「另有一筆標題作羅馬字「Rhetorica」的 pseudo-release」——**8ef6f336 的 status 是 Official，不是 Pseudo-Release**。同一批的ずっと真夜中でいいのに。（f2b88e9a／4a505254）與 MASS OF THE FERMENTING DREGS（516b4ff7）真的各有 Pseudo-Release 筆、同一支查詢讀得出來，所以這裡不是欄位缺值而是策展層讀錯。實情：六筆全 Official，其中兩筆（8ef6f336 與 bf7945e9）共用 barcode 4547366789058，是同一版數位的兩種標題登記。\\n**另記兩處資料異狀**：（一）兩種初回盤附的 DVD 與 Blu-ray 在 MB 上 **track-count 都是 0**，內容未建檔，行文不得寫「附 N 曲影像」；（二）第 8 軌 MB 拼作〈Immitation Star〉、Apple 拼作〈Imitation Star〉，**MB 少一個 t**，行文取 Apple 的正確拼法。\\n**短掛名回問結果（裁定 179）**：MB aea6ccea 是 Person、JP、生於 1993-11-09、disambiguation「singer/songwriter and member of REOL」，alias 含れをる（ja）、レヲル（ja）、Reol（en）、Kasumi Seki（legal name）——**是本人，不是單元 REOL**。**Apple 端更麻煩**：`entity=musicArtist` 在 us 撈到 1163095812「Reol」（本人）、1160521716「REOL」（單元）、1840455752「Reol」（第三個同名）、1634636824「re$ol」四個 artistId，**光靠字串比對會釘錯**，下游一律用 1163095812。\\n**序數**：日文維基寫「4th フルアルバム」、前作《BLACK BOX》2023-10-18。MB 藝人名下 83 個 release-group 無法逐一分類驗證，**行文若要用「第四張」必須帶出處**，或改用錨點：前作 2023 年、隔兩年。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:鈴木実貴子ズ|いばら",
+  "artist": "鈴木実貴子ズ",
+  "album": "いばら",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1d6a0885 的欄位：title「いばら」、artist-credit「鈴木実貴子ズ」（藝人實體 MBID 2f2abdc2，type **Group**、country JP、area Japan、活動起始 **2012 年**、disambiguation **空**）、first-release-date 2026-01-28、primary-type Album、secondary-types **空**。轄下 **2 筆 release 全部 Official、全部 2026-01-28**：JP 的 CD（Jewel Case）與 XW 的數位，**兩筆共用同一個 barcode 4988007321815**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1d6a0885-f13f-4dd4-9015-aed27313aef5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "兩筆 release 的載體、軌數與廠牌：**都是 10 軌**。d54e901a 是 JP 的 CD，廠牌 PANAM（label MBID 5ace2e11）、catalog-number **CRCP-20619**；a747f02c 是 XW 的 Digital Media，同樣掛 PANAM、無編號。**MB 上沒有黑膠或卡帶**，行文只能點 CD 與數位兩種。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1d6a0885-f13f-4dd4-9015-aed27313aef5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB release d54e901a（JP CD，PANAM CRCP-20619）的逐軌曲目與長度：1〈ががが〉4:05、2〈ゆれる6弦〉4:22、3〈イッキ〉3:24、4〈四月の風〉4:28、5〈ブルース〉4:03、6〈0月0日〉3:28、7〈パンダ〉2:26、8〈止まるな危険〉4:08、9〈ハックオフ〉2:57、10〈ちいさなうた〉3:14。十軌合計 36:35，最短是第 7 軌〈パンダ〉2:26、最長是第 4 軌〈四月の風〉4:28。數位那筆 a747f02c 的曲名、曲序與長度**與 CD 完全一致**，同一 release-group 內沒有第二種切法。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1d6a0885-f13f-4dd4-9015-aed27313aef5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music jp collectionId 1863883405**：collectionName「いばら」、artistName「鈴木実貴子ズ」、releaseDate 2026-01-28、copyright「℗ 2026 PANAM / NIPPON CROWN Co., Ltd.」、trackCount 10、collectionExplicitness notExplicit。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名用日文原題、與 MB **逐位置相符**、逐軌長度**全部相同到秒**。**℗ 欄把 PANAM 的母公司 NIPPON CROWN 一併寫出，MB 的 label-info 只記 PANAM。**",
+    "src": "https://itunes.apple.com/lookup?id=1863883405&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple jp 藝人目錄（artistId 1459218461）共 16 筆，2026 年三筆：本張 1863883405（2026-01-28，10 軌）、1895093851《心臓 - Single》2026-05-20、6794233546《へいべべ - Single》2026-08-26，**兩張單曲都在專輯之後、盤名也不同**；沒有同名先行單曲，也沒有 explicit／cleaned 雙胞胎。",
+    "src": "https://itunes.apple.com/lookup?id=1459218461&country=jp&entity=album&limit=200"
+   },
+   {
+    "f": "日文維基〈鈴木実貴子ズ〉infobox 與年表：以愛知縣名古屋市為據點的**二人編制搖滾樂團**，2012 年起活動，現行成員為鈴木実貴子（歌與木吉他）與ズ（鼓）兩人，廠牌欄列 Low-Fi Records、P-VINE、tatara records 與 PANAM。**2024 年 10 月 15 日宣布經日本 Crown 的 PANAM 廠牌、以 10 月 30 日的配信單曲〈違和感と窮屈〉正式主流出道**——本張是主流出道後的第一張全長專輯。同頁的アルバム/ミニアルバム 表列到 2023-09-14 的《最終兵器は自由》為止（該表尚未收入本張），此前的全國流通專輯依序為《現実みてうたえよばか》《外がうるさい》2020-04-03、《泥の滑走路》、《最終兵器は自由》。",
+    "src": "https://ja.wikipedia.org/wiki/鈴木実貴子ズ"
+   }
+  ],
+  "hookCandidates": [
+   "兩個人的編制：一把木吉他加一組鼓，十軌三十六分半，最短的〈パンダ〉兩分二十六秒就收",
+   "從名古屋自主廠牌一路走到日本 Crown，這是他們掛上主流廠牌之後的第一張全長專輯"
+  ],
+  "sound": "MB 兩筆 Official release（JP 的 CD 與 XW 的數位，共用 barcode 4988007321815）都是 10 軌，Apple jp 逐軌長度與 MB 相同到秒，同一 release-group 內沒有第二種曲目切法。十軌合計 36:35，曲長從 2:26（〈パンダ〉）到 4:28（〈四月の風〉），全部落在兩分半到四分半之間。編制是名古屋的二人組：鈴木実貴子唱歌兼木吉他、ズ打鼓，2012 年起活動，2024 年才經日本 Crown 的 PANAM 主流出道，本張編號 CRCP-20619。曲名十首全用平假名、片假名或短漢字（〈ががが〉〈ゆれる6弦〉〈0月0日〉〈止まるな危険〉），沒有一首用英文題。",
+  "keyTracks": [
+   "ががが",
+   "四月の風",
+   "ちいさなうた"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-01-28**、兩筆 Official release 同為 2026-01-28、Apple jp 1863883405 的 releaseDate 2026-01-28 與 ℗ 年份 2026，三處同年同日。**同名先行單曲：沒有**——Apple jp 藝人目錄 16 筆裡 2026 年的另兩筆《心臓》《へいべべ》都在專輯之後、盤名不同；MB 藝人 2f2abdc2 名下 9 個 release-group 也查不到同名單曲。策展層的釘位 1d6a0885 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：jp 1863883405，10 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 逐位置相符（裁定 157 已做）；`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。探測層的 `tried` 記 us:0→0、gb:1→0、jp:1→1，us 店面確實沒有這張、jp 才有。collectionExplicitness notExplicit，jp 藝人目錄 16 筆逐筆看過、沒有雙胞胎。\\n**策展層說法複驗**：`why` 寫「2 筆 release 全 Official（JP 與 XW）、10 軌、CD 與數位、PANAM CRCP-20619」，逐筆核對**全部成立**。`risk` 說 MB 標題沒有自帶羅馬轉寫、依裁定 26 不自創，也成立——**但 MB 的藝人層有轉寫**：2f2abdc2 的 alias 收了「Suzuki Mikiko Zu」（en、Artist name）與「Suzuki Kimiko Zu」「susukimikikozu」「suzukikimikozu」四種 search hint，**掛名的轉寫不必自創、MB 上就有**（盤名「いばら」則確實沒有自帶轉寫，維持不轉）。\\n**序數不可斷言**：日文維基的アルバム/ミニアルバム 表**尚未收入本張**，只列到 2023-09-14 的《最終兵器は自由》為止，而且早期自主盤（2013《なにがポップだ》、2016《キミガヨ》）與「全國流通盤としては 1st」的《現実みてうたえよばか》兩套計數並存。**行文不得寫「第 N 張」**；可用的錨點是維基明記的「2024 年 10 月經 PANAM 主流出道」，本張是主流出道後的第一張全長專輯（維基年表可推、但該表未列本張，行文若要用這句要說「主流出道後」而不是序數）。\\n**掛名寫法**：末字「ズ」是團名的一部分（鼓手的藝名就叫ズ），不是複數字尾，行文不得拆。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc2:HANA|HANA",
+  "artist": "HANA",
+  "album": "HANA",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ed7ad6b9 的欄位：title「HANA」、artist-credit「HANA」（藝人實體 MBID 0c8c6c7a，type **Group**、country **JP**、area Japan、**活動起始 2025 年**、disambiguation「**Japanese group under B-RAVE**」）、first-release-date 2026-02-23、primary-type Album、secondary-types **空**。轄下 **3 筆 release 全部 Official**：933b7273（未填國別，**2026-02-23**）、4cde99c1 與 ff84b6e1（**都是 JP、2026-02-25**）——**首發是數位、實體晚兩天**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ed7ad6b9-f05d-4ebd-a22c-01f175f7ac28?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "三筆 release 的載體、軌數與編號：**主碟一律 11 軌**。933b7273 是 Digital Media 11 軌，廠牌 NO LABEL MUSIC（label MBID 71966265）、編號 SRXX05532B00Z；ff84b6e1 是 CD 11 軌、編號 **SRCL-13613**；4cde99c1 是 **CD 11 軌＋Blu-ray 7 軌**、編號 SRCL-13610／SRCL-13611／SRCL-13612 三個一筆。三筆的 text-representation 都是 Latn／eng。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ed7ad6b9-f05d-4ebd-a22c-01f175f7ac28&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**策展層說「CD 11 軌、另附 7 曲 Blu-ray」，「7 曲」不成立。**4cde99c1 的 medium 2（Blu-ray）那七條逐條攤開是：1〈1st Album「HANA」Jacket Shooting BTS〉、2〈BAD LOVE Recording BTS〉、3〈BAD LOVE MV BTS〉、4〈My Body Photo Shooting BTS〉、5〈My Body MV BTS〉、6〈NON STOP Photo Shooting BTS〉、7〈NON STOP MV BTS〉——**七條全部是幕後花絮與 MV 影像，沒有一條是歌**。順帶：**第一條的標題「1st Album「HANA」」本身就是 MB 上這張是首張專輯的直接書證。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ed7ad6b9-f05d-4ebd-a22c-01f175f7ac28&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB release 933b7273（數位 11 軌，NO LABEL MUSIC SRXX05532B00Z）的逐軌曲目與長度：1〈Drop〉2:28、2〈ROSE〉2:45、3〈Burning Flower〉2:58、4〈Blue Jeans〉3:27、5〈BAD LOVE〉3:05、6〈My Body〉3:23、7〈NON STOP〉2:55、8〈Cold Night〉3:13、9〈Bloom〉3:25、10〈ALL IN〉2:32、11〈Tiger – HANA with HONEYs ver.〉4:34。十一軌合計 34:45，**前十軌沒有一首超過 3:27**，只有收尾那首 4:34 明顯拉長。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ed7ad6b9-f05d-4ebd-a22c-01f175f7ac28&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music us collectionId 1874511603**：collectionName「HANA」、artistName「HANA」、releaseDate 2026-02-23、copyright「℗ 2026 NO LABEL MUSIC / Sony Music Labels Inc.」、trackCount 11、collectionExplicitness notExplicit。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 MB 數位版**逐位置相符**、逐軌長度**全部相同到秒**。唯二的寫法差異在第 9 軌（MB 數位版〈Bloom〉／兩張 CD〈BLOOM〉）與第 11 軌（Apple〈Tiger HANA with HONEYs Version〉／MB 數位版〈Tiger – HANA with HONEYs ver.〉、CD〈TIGER HANA with HONEYs Ver.〉）。",
+    "src": "https://itunes.apple.com/lookup?id=1874511603&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple us 藝人目錄（artistId 1792783458）共 14 筆，2026 年四筆：1867687784《Cold Night - Single》**2026-01-24**（1 軌，是專輯第 8 軌、比專輯早一個月）、本張 1874511603（2026-02-23，11 軌）、1884257488《Bad Girl - Single》2026-03-27、6798516738《I Got Your Back (Korean Ver.) - Single》2026-08-17。**沒有與專輯同名的單曲，也沒有 explicit／cleaned 雙胞胎。**",
+    "src": "https://itunes.apple.com/lookup?id=1792783458&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "初回盤那片 Blu-ray 上七條全是拍攝與錄音的幕後影像，一首歌也沒有",
+   "十一軌三十四分四十五秒，前十首沒有一首破三分半，只有收尾那首拉到四分半"
+  ],
+  "sound": "MB 三筆 Official release（未填國別的數位 2026-02-23、JP 兩種 CD 2026-02-25）主碟一律 11 軌，Apple us 逐軌長度與 MB 數位版相同到秒。十一軌合計 34:45，曲長從 2:28（開場〈Drop〉）到 4:34（收尾〈Tiger – HANA with HONEYs ver.〉），前十軌全部壓在三分半以內。廠牌一家 NO LABEL MUSIC，實體編號 SRCL-13610 到 SRCL-13613 一套四種，其中一種初回盤附一片 Blu-ray（七條全是幕後與 MV 影像、不是歌）。曲名十一首全用英文，只有末軌帶團名與應援名（HONEYs）。MB 記這個團 2025 年才開始活動、隸屬 B-RAVE。",
+  "keyTracks": [
+   "BAD LOVE",
+   "NON STOP",
+   "Tiger – HANA with HONEYs ver."
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-02-23**、三筆 Official release 分別是 2026-02-23（數位）與 2026-02-25（兩張 CD）、Apple us 1874511603 的 releaseDate 2026-02-23 與 ℗ 年份 2026，三處同年。**首發是數位 2026-02-23、JP 實體 2026-02-25，差兩天**，策展層 `why` 記的兩個日期成立。**同名先行單曲：沒有**——Apple us 藝人目錄 2026 年四筆裡最早的是 1867687784《Cold Night - Single》2026-01-24（專輯第 8 軌，比專輯早一個月），盤名與專輯不同、不會撞。策展層的釘位 ed7ad6b9 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：us 1874511603，11 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 數位版逐位置相符（裁定 157 已做）；`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。探測層 `tried` 記 us:12→1（us 店面 12 個候選收斂到 1 個），我另跑 us 藝人目錄 14 筆逐筆核對，2026 年四筆、**沒有 explicit／cleaned 雙胞胎**，收斂到的這一筆是對的。\\n**⚠ 掛名撞卡的實測結果（策展層 `risk` 點名的最高風險筆）**：Apple us 端 artistId 1792783458 的 artistName 就是「HANA」，與盤名同字串；本張的 MB 藝人實體 0c8c6c7a 有 disambiguation「Japanese group under B-RAVE」、begin 2025 可用來釘死。**下游一律用 MBID 0c8c6c7a 與 Apple artistId 1792783458，不要用字串。**\\n**擋下策展層一處**：`why` 寫「CD 11 軌、另附 7 曲 Blu-ray」——**Blu-ray 那七條沒有一條是歌**，逐條攤開是 Jacket Shooting BTS、BAD LOVE Recording BTS、BAD LOVE MV BTS、My Body Photo Shooting BTS、My Body MV BTS、NON STOP Photo Shooting BTS、NON STOP MV BTS。行文不得寫「附七曲」。\\n**⚠ 策展層 `why` 引了 Billboard JAPAN 上半期 Hot Albums 的上榜情形——依本批規矩，商業排行榜一律不得寫入 `facts`，也不得寫進簡介。**上面的 facts 沒有收這條，行文層也不要用。\\n**序數：這一次可以斷言，但只憑一條書證。**MB 4cde99c1 的 Blu-ray 第一條標題是〈1st Album「HANA」Jacket Shooting BTS〉，「1st Album」四個字寫在官方影像的標題裡；同向的旁證是 MB 藝人 0c8c6c7a 的活動起始年 2025、名下只有 12 個 release-group。**行文若要寫「首張專輯」，出處就是這條 Blu-ray 標題。**\\n**曲名寫法**：第 9 軌數位版〈Bloom〉／CD 版〈BLOOM〉，第 11 軌三種寫法（MB 數位〈Tiger – HANA with HONEYs ver.〉、MB CD〈TIGER HANA with HONEYs Ver.〉、Apple〈Tiger HANA with HONEYs Version〉）；keyTracks 取 MB 數位版。**注意數位版第 11 軌用的是 en dash（–）不是 hyphen。**\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ }
+]

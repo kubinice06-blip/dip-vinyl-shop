@@ -288,5 +288,162 @@
   "why": "萬曉利的第二張，是 2000 年代中國新民謠最常被拿來當標竿的一張，也是他從河北到北京酒吧走唱十年後第一次被完整錄下來。實掃 seed_cards.json 全 14,424 列：萬曉利池中 0 張，而池中民謠側已經有周雲蓬 2 張、小河 1 張、野孩子 1 張、蘇陽 1 張、李志 1 張——**同一批人裡只有萬曉利缺席**，補這張是最直接的補洞。",
   "risk": "撞卡：池中 0 張。盤名的「想像／想象」兩種寫法：MB 用「想象」，卡片依 09-06 裁定寫繁體《這一切沒有想像的那麼糟》，兩種都已進 queryAlias（這是簡繁轉換會分叉的字，`chk-prop` 折不掉，比對要人工）。Apple：藝人目錄 lookup 命中 collectionId 1637710480《這一切沒有想像的那麼糟》（**只在 tw／hk 兩店，cn／us 未見**；Apple 盤名已是繁體且與卡片完全一致，年份欄記 2020-07-30 是上架日不是發行日，依裁定 91／95 年份取 MB 的 2006）。CAA 查無（release-group/2b38234e 回 404），封面只能走 apple-verified-collection，**要用 tw 或 hk 店的 collectionId 反查**。",
   "mbNote": "釘 release-group 2b38234e-2294-352a-ad0a-a5b591140c26。回問確認：title「这一切没有想象的那么糟」、artist-credit「万晓利」、first-release-date 2006、primary-type Album、secondary-types 空、轄下 1 個 release（CN／Official／無 label-info）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《這一切沒有想像的那麼糟》／《萬曉利》。** 藝人 MBID 93bdf621-5e30-4489-8f3d-e211391f012f，名下 5 個 RG。刻意不釘：f7cfe95a-04a4-393c-8d81-16e54d5b7a26《走过来 走过去》（2002 首張，CAA 404 且 Apple 四店查無，本批不收）、64ee48b3-30dc-4cd7-ad48-6272d3c9d156《北方的北方》（2010，Apple 有 1736475007，留給後續補遺）、981423fb-61a1-45c7-b712-66250f697f01《太阳看起来圆圆的》（2015）、a7c414f8-93a1-469a-910f-e97406f8bfe3《天秤之舟／牙齿，菠菜和豆腐与诗人，流浪汉和门徒》（2017）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Carsick Cars 同名專輯；晕车的车",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Carsick Cars",
+  "album": "Carsick Cars",
+  "year": 2007,
+  "genres": [
+   "rock"
+  ],
+  "label": "Maybe Mars／兵馬司（catno Maybe 2.2，CN 2007-09）",
+  "why": "兵馬司（Maybe Mars）第二號發行，是這家北京獨立廠牌開張時的招牌唱片；同名曲〈中南海〉讓他們隔年被 Sonic Youth 找去歐洲巡演暖場。實掃 seed_cards.json 全 14,424 列：Carsick Cars 池中 0 張，兵馬司整條線在池中也是 0 張（本批 b 組另收 Snapline、小河、吹萬三張同廠牌的碟，一次把這家廠牌補進池裡）。",
+  "risk": "**自我同名**（盤名＝掛名），依 c-67 規則要 Apple 找得到才收——已確認：藝人目錄 lookup 命中 collectionId 1492978199《Carsick Cars》（cn／tw／hk／us 四店，年份欄 2007-09-08 與 MB 的 2007-09 一致）。Apple 上另有一個美國樂團 Carsick 的同名碟 120170292（tw／hk／us），**盤名只差一個字**，配對必須用 collectionId 直查。撞卡：池中 0 張。掛名是拉丁註冊（MB 實體名與 artist-credit 都是 Carsick Cars），依裁定 177 維持拉丁，中文別名「暈車的車」未在任何官方物料出現、不填。",
+  "mbNote": "釘 release-group 17e8f0df-51e4-336c-ab95-7345cd61b247。回問確認：title「Carsick Cars」、artist-credit「Carsick Cars」、first-release-date 2007-09、primary-type Album、secondary-types 空、轄下 3 個 release（CN 2007-09×2／Official／label Maybe Mars catno Maybe 2.2，XW 2018-02-28／Official／Maybe Mars 再版）。藝人 MBID 38c38eec-c6d9-4da0-b2da-2fba8458a3cb（disambiguation「Chinese indie rock band」，area China，裁定 179 已回問排除英國與美國的兩個 Carsick）。名下 5 個 RG。刻意不釘：27734151-34b6-4e6e-b830-a8c69e225cb8《You Can Listen, You Can Talk》(2009)、bfa0ee1a-828c-448c-a0d3-7e753906dcc6《3》(2014)、521ffd39-16f4-45a6-912f-b392824a960d《Aha》(2024)、cd2b528c-af58-4567-bb2b-f353443d1452《Live @ D22》（Album+Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Snapline Party Is Over Pornostar；Party Is Over, Pornostar (Martin Atkins Version)",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Snapline",
+  "album": "Party Is Over, Pornostar",
+  "year": 2007,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Maybe Mars／兵馬司（catno Maybe 3.1，CN 2007-09-08）；Invisible China（US 2008）",
+  "why": "兵馬司第三號發行，由 Public Image Ltd. 的鼓手 Martin Atkins 製作並在美國以 Invisible China 發行，是這家廠牌第一張進到北美通路的唱片。實掃 seed_cards.json 全 14,424 列：Snapline 池中 0 張；池中中國搖滾線 25 張裡以合成器為主體的隊伍是 0 支，這張與同組的吹萬《白夜》是唯二兩張。",
+  "risk": "撞卡：池中 0 張。**同一 RG 底下有兩個標題不同的版本**（原版與 Martin Atkins Version），Apple 上也對應兩個 collectionId——1558793452《Party Is Over, Pornostar》(cn／tw／hk／us，Apple 年份欄記 2018 是再版上架日) 與 289738689《…(Martin Atkins Version)》(cn／tw／hk／us，2008-09-02)，配對挑前者。四個 release 全部 Official，可採為背書。年份取 first-release-date 2007-09-08。掛名是拉丁註冊，依裁定 177 維持拉丁。",
+  "mbNote": "釘 release-group 376eaf20-e150-312e-b65a-9d677bb3b776。回問確認：title「Party Is Over, Pornostar」、artist-credit「Snapline」、first-release-date 2007-09-08、primary-type Album、secondary-types 空、轄下 4 個 release（CN 2007-09-08／Official／Maybe Mars 3.1，XW 2007-09-08 Martin Atkins Version／Official／Invisible China，US 2008-09-02／Official／Invisible China，AU 2010-04／Official／tenzenmen 038TZM＋Maybe Mars 3.2）。藝人 MBID 6084f926-d798-4468-9e2c-ba64a4b7bfbc（area Beijing）。名下 5 個 RG。刻意不釘：5053c9a2-a870-4c6e-a574-a2f6ed505888《Future Eyes》(2010)、aa561a7d-e458-4084-8d44-527cc0c73066《Phenomena》(2012)、90597b4b-e395-4b5b-8b44-211d44c07202《Shou Hua》(2018)、7551abe9-8e21-47f1-b9a0-b856ec844218《Be Brit Now…Mao Live House》（Album+Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "噪音袭击世界；Noise Hit World；刺猬 Noise Hit World",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "刺蝟",
+  "album": "Noise Hit World 噪音襲擊世界",
+  "year": 2007,
+  "genres": [
+   "rock"
+  ],
+  "label": "摩登天空／Badhead（catno B-033，2007）",
+  "why": "刺蝟的第二張，Badhead B-033，是這支北京三人組從 lo-fi 練團帶走向完整製作的第一張，也是他們日後（《生之響往》《赤子白仙》）二十年目錄的定型之作。實掃 seed_cards.json 全 14,424 列：刺蝟池中 0 張。派工信明列刺蝟是本批範圍；本張與同組的 Carsick Cars、Snapline、Re-TROS 同屬 2007–2009 那一撥北京獨立，四張一起收才成一條線。",
+  "risk": "**盤名是中英並置，MB 記「Noise Hit World 噪音袭击世界」（中文部分簡體）**，卡片依 09-06 裁定改繁體《Noise Hit World 噪音襲擊世界》——**這是本批唯一一張盤名同時含拉丁與漢字的碟，簡繁只改漢字那半，拉丁部分照原文**。Apple 上同一張碟裂成兩筆：1444302648《Noise Hit World》（純英文，cn／tw／hk／us）與 1808896136《噪音袭击世界》（純中文簡體，cn／tw／hk／us），**兩筆都不等於卡片盤名**，配對必須用 collectionId 直查，建議取四店齊全且較早上架的 1444302648。MB 兩個 release 的 country 分別是 AF 與 XW（AF 顯然是建檔錯誤，不影響 rgMbid 身分鍵）。撞卡：池中 0 張。",
+  "mbNote": "釘 release-group 2789851e-020b-4201-a756-2010e3108b73。回問確認：title「Noise Hit World 噪音袭击世界」、artist-credit「刺猬」、first-release-date 2007-05-01、primary-type Album、secondary-types 空、轄下 2 個 release（AF 2007-05-01／Official／label 摩登天空，XW 2007-09-30／Official／label Badhead B-033）。**MB 建檔中文部分用簡體，卡片依 09-06 裁定用繁體《噪音襲擊世界》／掛名《刺蝟》。** 藝人 MBID 068dfa29-4ce1-46a8-9647-f612b6750387（disambiguation「Chinese indie rock trio」，area Beijing，裁定 179 已回問排除美國 Santa Cruz 的同名 Hedgehog）。分頁全列 11 個 RG。刻意不釘：ea5d2437-34ca-409d-9a29-50680d4550f8《Happy Idle Kid》(2006 首張)、0d230838-7e70-4aad-b9e0-c9dbba77f344《白日夢藍》(2009)、a561d2fb-90f4-4599-b318-8f70d708fdc6《甜蜜与杀害》(2011)、8b47d5f0-7dde-4cef-bd1b-7caae0a81cc2《Sun Fun Gun》(2012)、fc063838-069e-43c4-8e0f-5dbc9d3c7a76《神经元》(2015)、a097d832-4e08-4ff2-a8d8-6a8afd67cdd6《生之响往》(2018)、c4f1733f-b6f9-4977-a94a-b0e4e97bf1d5《赤子白仙》(2020)、7a7ed87e-2d59-48d0-83d6-12009cd720c9《幻象波普星》（EP）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "重塑雕像的權利；重塑雕像的权利；Rebuilding the Rights of Statues；Watch Out! Climate Has Changed, Fat Mum Rises",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Re-TROS",
+  "album": "Watch Out! Climate Has Changed, Fat Mum Rises…",
+  "year": 2009,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "摩登天空（catno M-035，CN 2009-02-27）",
+  "why": "重塑雕像的權利的首張全長專輯，摩登天空 M-035，由 Brian Eno 的長期合作者 Tony Allen 圈子外的英國製作團隊參與、並在英國壓片，是中國後龐克第一張在國際樂評被完整討論的唱片。實掃 seed_cards.json 全 14,424 列：Re-TROS／重塑雕像的權利兩種寫法池中都是 0 張。派工信明列這支樂隊是本批範圍。",
+  "risk": "**掛名取捨**：MB 的藝人實體名是「Re-TROS」，但這個 RG 的 artist-credit 寫全稱「Rebuilding the Rights of Statues」，Apple 四店則統一用「Re-TROS」。依裁定 177（先看池中、再看 MB credit；池中 0 張無先例）與 Apple 實況，卡片取《Re-TROS》，中文全稱《重塑雕像的權利》與英文全稱都進 queryAlias。**盤名結尾是 U+2026 水平省略號**（不是三個句點、也不是非 ASCII 連字號，`chk-prop` 的連字號檢查不會標），Apple 那筆寫成三個句點「Rises...」，配對要兩種都試。Apple：collectionId 1808896844（cn／tw／hk／us 四店，Apple 盤名少一個逗號空格：「Watch Out!Climate Has Changed, Fat Mum Rises...」）。撞卡：池中 0 張。",
+  "mbNote": "釘 release-group 0db970c4-9d90-49ce-8305-1dc4d74ddb4d。回問確認：title「Watch Out! Climate Has Changed, Fat Mum Rises…」、**artist-credit「Rebuilding the Rights of Statues」（與藝人實體名 Re-TROS 不同）**、first-release-date 2009-02-27、primary-type Album、secondary-types 空、轄下 2 個 release（CN 2009-02-27／Official／label 摩登天空 M-035，XW 2009-03-01／Official／摩登天空）。藝人 MBID 32e69425-f232-48d8-9472-e816f1230b2a（實體名 Re-TROS，disambiguation「Chinese band」，area China，裁定 179 已回問排除瑞典的 RE: RE: RE: 與拉脫維亞的 RE RE）。分頁全列 12 個 RG，其中 9 個是 Single 或 Remix。刻意不釘：debf7d51-6a5e-3043-8346-c1ca6c9a5260《CUT OFF!》（2005，EP——依裁定 126，這是與本張最容易混的 EP／Album 雙胞胎形狀）、9b71786c-1b8d-4a31-a367-e86cdd8f9520《Before the Applause》（2017），以及 0509a64c／37b3d1b1／60db490d／617c89d2／6bda392b／896f3947／a94ce3eb／b3bb0b19／ec6fd7b6 九個 Single／Remix。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "身份的表演；The Performance of Identity；小河 身份的表演；Xiao He",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "小河",
+  "album": "身份的表演",
+  "year": 2009,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Maybe Mars／兵馬司（catno Maybe 12.1，CN 2009）；tenzenmen（AU 2011）",
+  "why": "小河在兵馬司出的專輯（Maybe 12.1），2011 年由澳洲 tenzenmen 以英文標題 The Performance of Identity 再版，是他從美好藥店的樂隊編制轉向個人聲音實驗最完整的一份紀錄。實掃 seed_cards.json 全 14,424 列：小河池中只有 1 張《飛的高的鳥不落在跑不快的牛的背上》(2002，池中已是繁體)，這張正好是他七年後的下一步。派工信明列小河是本批範圍。",
+  "risk": "撞卡：池中小河 1 張的盤名已比對，不撞；掛名池中已是繁體「小河」，本張一致，不製造新分裂。**掛名極短且是常用詞**——Apple 上「小河」對應到 何小河、小河River、江小河、日本的 CreepHyp（藝人別名）與 小河 ユウスケ 至少八個實體，MB 上也有 晓河、河图，裁定 179 已回問確認釘的是 area China、type Person 的「小河」（MBID e4af089b…）。Apple：藝人目錄 lookup 命中 collectionId 1521835617《身份的表演》（**tw／hk／us 三店有、cn 店未見**；另有一筆 cn 店的《傻瓜的情歌》單曲與電影原聲，都不是這張）。年份取 MB 的 2009，Apple 年份欄記 2009-07-03 一致。",
+  "mbNote": "釘 release-group 501b7e54-c966-412a-be55-a7101cf5cd08。回問確認：title「身份的表演」（簡繁同形）、artist-credit「小河」、first-release-date 2009、primary-type Album、secondary-types 空、轄下 3 個 release（CN 2009 中英兩個標題／Official／label Maybe Mars 12.1，AU 2011-03／Official／tenzenmen 050TZM＋Maybe Mars 12.1）。藝人 MBID e4af089b-114d-413b-8e57-e1f74aa72000，名下 5 個 RG。刻意不釘：c94b05cf-020a-41f2-b66e-d587b6ec1f0c《飞的高的鸟不落在跑不快的牛的背上》（池中已有——**注意 MB 這一筆是簡體，池中那張是繁體，字串比對看不到，只能靠這條註記**）、d16c89fc-c1f8-4ad0-a6f2-ed8ce4ee2b2e《傻瓜的情歌》(2011)、7da0bcc3-f7cd-49c6-9ce3-ec050b36d83e（Album+Live）、f2578cee-e27a-483a-82fa-07eb694cc6d5《小河配乐作品集》（Album+Soundtrack）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "上海市经典流行摇滚金曲十三首；顶楼的马戏团；Top Floor Circus",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "頂樓的馬戲團",
+  "album": "上海市經典流行搖滾金曲十三首",
+  "year": 2010,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "（MB 該 release 無 label-info；自主發行）",
+  "why": "頂樓的馬戲團是全程用上海話唱的樂隊，這張 2010 年的專輯把十三首上海本地題材寫成一份城市檔案，是中國方言搖滾裡最有意識、也流通最廣的一張。實掃 seed_cards.json 全 14,424 列：頂樓的馬戲團池中 0 張；池中方言取向的中文卡集中在台語（拍謝少年、滅火器）與粵語（達明一派），**吳語／上海話是 0 張**。§1.5 判定：這張是樂隊自主發行、無大廠掛名，屬獨立音樂，2010 年之後的中文圈收錄標準通過。",
+  "risk": "撞卡：池中 0 張。**CAA 查無**（release-group/ba9f6ca5 回 404），封面只能走 apple-verified-collection：藝人目錄 lookup 命中 collectionId 6790334879《上海市经典流行摇滚金曲十三首》（cn／tw／hk／us 四店，Apple 盤名是簡體、年份欄 2010-12-18 與 MB 的 2010-12 一致）。MB 該 RG 唯一的 release 沒有 country、沒有 label-info，只標 Official。掛名依 09-06 裁定寫繁體，MB 與 Apple 都用簡體，queryAlias 已帶。",
+  "mbNote": "釘 release-group ba9f6ca5-f395-402a-9ea4-20085de6c083。回問確認：title「上海市经典流行摇滚金曲十三首」、artist-credit「顶楼的马戏团」、first-release-date 2010-12、primary-type Album、secondary-types 空、轄下 1 個 release（country 未填／Official／無 label-info）。**MB 建檔用簡體，卡片依 09-06 裁定用繁體《上海市經典流行搖滾金曲十三首》／《頂樓的馬戲團》。** 藝人 MBID f77c4d04-c116-45ef-90e5-cd06720dc330（area Shanghai），名下 5 個 RG。刻意不釘：f31a2fed-bcfd-4780-9438-dc99e82ba0ee《蒂米重访零陵路93号》（2006，本批原本要收，CAA 404 且 Apple 四店查無，改收本張）、24b541d1-eeb8-4192-9c53-74dccad03ba6《最低级的小市民趣味》(2003)、27ff062a-fa0f-4f23-94f3-d75a6ad50b8d《谈钞票伤感情 谈感情又伤钞票又伤感情》(2013)、e3782d36-bfff-46db-9524-49a4543e53ce《EP》。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "吹万 白夜；White Night；Chui Wan White Night",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "吹萬",
+  "album": "白夜",
+  "year": 2012,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Maybe Mars／兵馬司（catno MAYBE 41.1）；tenzenmen（catno 128TZM）；PangPang Project",
+  "why": "吹萬（Chui Wan）的首張專輯，兵馬司 MAYBE 41.1，同時由澳洲 tenzenmen 以英文標題 White Night 發行，是 2010 年代北京迷幻／實驗搖滾最受國外注意的一張。實掃 seed_cards.json 全 14,424 列：吹萬池中 0 張。派工信明列「白／Chui Wan」是本批範圍——**白（White+）在 MB 上完全查無，已記進 to-si.md 的 §1 候選；Chui Wan 這一半照收。** §1.5 判定：兵馬司是獨立廠牌，2012 年這張通過。",
+  "risk": "撞卡：池中 0 張。**同一 RG 有五個 release、三種標題**（White Night／White Night 白夜／白夜），其中一個標 Pseudo-Release 不採為背書，其餘四個 Official。卡片盤名取 RG title 的《白夜》（簡繁同形）。掛名 MB 實體名是「吹万」，卡片依 09-06 裁定寫繁體《吹萬》；英文別名 Chui Wan 進 queryAlias。Apple：藝人目錄 lookup 命中 collectionId 1524408665《白夜》（cn／tw／hk／us 四店，Apple 藝人欄寫簡體「吹万」、盤名寫《白夜》，年份欄 2012-11-20）。Apple 上的「崔婉璐／脆肉婉」是名字相近的無關實體，配對要用 artistId 988322152 直查。",
+  "mbNote": "釘 release-group 78d0fddd-115f-4bc6-aa18-15b0043a2a0c。回問確認：title「白夜」、artist-credit「吹万」、first-release-date 2012-11-02、primary-type Album、secondary-types 空、轄下 5 個 release（XW 2012-11-02／Official，CN 2012-11-10／Pseudo-Release，XW 2012-11-20 White Night 白夜／Official，2012-11-20 白夜／Official，CN 2012 白夜／Official；label 有 Maybe Mars MAYBE 41.1、tenzenmen 128TZM、PangPang Project）。**MB 建檔掛名用簡體「吹万」，卡片依 09-06 裁定用繁體《吹萬》。** 藝人 MBID 6421234a-b4d6-4299-8fbb-005a43f75557（disambiguation「neo-psych group」，area China）。名下 4 個 RG。刻意不釘：0b0860d8-d2bd-40b6-9f09-b37000871292《吹万》（2015 同名專輯——**盤名＝掛名，若誤釘會變成自我同名卡**，依裁定 126 明列）、5576250b-a7a2-4a7b-8335-b1e4e88237ad《热带从未有过的风景》(2017)、d58e65c5-c55e-48af-b991-8a87478b0683《Eye》(2019)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "八匹马；Eight Horses；惘闻 八匹馬；Wang Wen",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "惘聞",
+  "album": "八匹馬",
+  "year": 2014,
+  "genres": [
+   "rock"
+  ],
+  "label": "（MB 只有 NL 2015 那個 release 有 label-info 且為空；歐版由 Pelagic 系通路發行）",
+  "why": "惘聞第八張，是他們目錄裡評價最高、也是第一張在歐洲實體發行（2015 年荷蘭壓片）的專輯。實掃 seed_cards.json 全 14,424 列：惘聞池中 0 張，中國後搖整個品類池中也是 0 張。與同組的《RE:RE:RE:》(2006) 一起收，一張是他們被聽見的起點、一張是被公認的高點。§1.5 判定：惘聞是獨立廠牌與自主發行體系（兵馬司、Pelagic），2014 年這張通過。",
+  "risk": "撞卡：與同組《RE:RE:RE:》同一藝人不同碟，已互相比對；池中 0 張。**MB 的 RG title 本身就寫繁體「八匹馬」**（惘聞的日／歐版物料慣用繁體），與卡片一致，不需轉換——但掛名 MB 用簡體「惘闻」，卡片寫繁體《惘聞》，**同一張碟盤名與掛名的簡繁方向相反，本機建卡時不要一併轉換**。三個 release 中一個標 Pseudo-Release（英文標題 Eight Horses），不採為背書。Apple：藝人目錄 lookup 命中 collectionId 1597876345《八匹馬》（cn／tw／hk／us 四店，Apple 盤名已是繁體，年份欄記 2015-02-27 即歐版日期，依裁定 91／95 年份取 MB 的 2014）。",
+  "mbNote": "釘 release-group 87b09869-5a4a-484d-abb9-e4d6c722621d。回問確認：title「八匹馬」（**MB 這一筆用繁體**）、artist-credit「惘闻」（簡體）、first-release-date 2014-06-20、primary-type Album、secondary-types 空、轄下 3 個 release（XW 2014-06-20／Official，XW 2014-06-20 Eight Horses／Pseudo-Release，NL 2015-02-27／Official）。藝人 MBID b7637cdc-7413-422a-9dc3-3d71a19322ae，分頁全列 17 個 RG。刻意不釘：c8eba161-37a7-3ca4-b751-a7af503e6e95《RE:RE:RE:》（同組另收）、d72aaaf6-0599-46b0-aca2-31779108d9f1《二十八天失眠日记》、a24fd0c0-eb75-4057-913d-2be3c8524fb7《0.7》、670cfc8e-0cfc-4105-850d-2dad89b0dece《Sweet Home, Go》、99bfaa9d-4c25-4e12-897f-916cf8097cf6《White Shirt》、2207303d-9565-479d-acbc-9219b61730f0《In Course of the Miraculous》、2c1f8015-0afe-40ba-afe3-4a858a86d958《Invisible City》、f27c349f-a734-4a73-8ab4-3ad9741f3626《100,000 Whys》、856d8925-6f26-40b6-aa1b-d44f94486f31《pg.lost / Wang Wen》（split）。"
  }
 ]
