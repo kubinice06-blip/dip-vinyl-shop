@@ -670,5 +670,237 @@
   "status": "full",
   "yearVerified": "一致，1971-09-18（**三處、而且精確到日**）。MB release-group first-release-date **1971-09-18**、其下 XW 那筆 release 同為 1971-09-18、另一筆 CL 黑膠記 1971（無月日）、Apple pe 1607176282 的 releaseDate **1971-09-18** 與 **℗ 1971 Los Jaivas** 相符。**這是本批唯一一張 MB 與 Apple 的日期精確到同一天的碟**——但要注意 **MB 的 XW release 與 Apple 是同一份數位母帶**，兩者的「同日」不是兩個獨立來源。2001 年 Columbia 那筆是三十年後的再發。**行文可以寫 1971，寫到月日則要知道它只靠數位版那條鏈。**",
   "notes": "**⚠ 這是本批可補的 Apple collectionId 之一。** 探測層十個店面判成 **unavailable**（十店面 search 全 0），**但 Apple pe 上確實有這張**：**pe `1607176282`（「El Volantín」），8 軌、8 軌全有 previewUrl**，曲名／曲序／逐軌長度與 MB 那筆 1971-09-18 XW release **相符到秒**。**探測層配不到的原因**：MB 的盤名是小寫的「El volantín」、Apple 是「El Volantín」，且探測層在十個店面的 search 都回 0 筆——**要靠藝人目錄 lookup（`id=85846724`，pe 26 筆）才撈得到**（裁定 173 的兩個端點在本張真的有差）。**建議把 pe 1607176282 補進 previews，這張可以從 unavailable 轉成 ready。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 兩筆 release 沒有廠牌名**：1971 CL 那筆廠牌欄空白、1971-09-18 XW 那筆寫「[no label]」。**行文不得斷言 1971 年的發行廠牌，只能提 2001 年 Columbia 那一筆**——卡單的 `label` 已經是這個寫法，**覆核無誤**。\\n**⚠ 第 1 軌曲名兩種寫法**：CL 黑膠作〈Piano introducción **/** Cacho〉（斜線）、XW 與 Apple 作〈Piano Introducción **-** Cacho〉（連字號）。**行文點這一軌要注意。**\\n**⚠ 兩筆自我同名的《Los Jaivas》（裁定 162 最強形狀）**：MB 上 6db43973（1972）與 aaed3b34（1975-12-02）**盤名與掛名字串完全相同、彼此又同名**。卡單已列為刻意不釘——**覆核無誤，去重必須靠 rgMbid**。\\n**政治時序：一句都不寫（沿用 c-108 裁定 8）。** 本張的日期是 1971-09-18，**距離 1973 年還有兩年**，本次查到的來源沒有任何一句把它與後來的事連起來。**行文不得寫任何 1973 年之後的時序主張。**"
+ },
+ {
+  "key": "desc2:Los Jaivas|Canción del sur",
+  "artist": "Los Jaivas",
+  "album": "Canción del sur",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 84d3c04c 的欄位：title「Canción del sur」、artist-credit「Los Jaivas」（藝人 MBID e3d766c2）、first-release-date **1977**、**primary-type Album、secondary-types 空**。轄下 2 筆 release、**都是 Official、軌數兩說**：**1977／CL，載體欄空、廠牌名欄空，7 軌**；**1994／CL，CD，EMI catno「710-831250」，11 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/84d3c04c-aeac-345a-887a-7d7f0bede6c5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1977 智利原盤的 7 軌與長度：1〈La vida mágica, ay sí〉3:21、2〈En la cumbre de un cerro〉5:06、3〈Canción para los pájaros〉3:15、**4〈Dum dum tambora〉7:51**、**5〈Canción del sur〉7:40**、**6〈Danzas〉8:45**、7〈Frescura antigua〉3:18。**七軌總長 39:16，中段連著三首七分半以上的長曲（第 4、5、6 軌），前後各夾兩首三分多的短曲**；同名曲〈Canción del sur〉7:40 排第 5 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=84d3c04c-aeac-345a-887a-7d7f0bede6c5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1994 年 EMI 那筆 11 軌把原盤的曲序整個打亂**：1〈La vida mágica ¡Ay, sí!〉3:21、**2〈Canción del sur〉7:43**、3〈Canción para los pájaros〉3:15、**4〈En la cumbre de un cerro〉5:07**、**5〈Danzas〉8:45**、**6〈Dum dum tambora〉7:51**、7〈Frescura antigua〉3:18，再加上 8〈En tus horas〉3:42、9〈Mambo de Machaguay〉4:11、10〈Sueño del inca〉3:41、11〈Bebida mágica〉2:58 四首。**原盤的七軌全部保留、但第 2／4／5／6 軌的位置被換過，多出來的四首排在最後。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=84d3c04c-aeac-345a-887a-7d7f0bede6c5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1501901327：collectionName「Canción del Sur」、artistName「Los Jaivas」、releaseDate **1977-03-30**、copyright「**℗ 1977 EMI Odeón Argentina**」、trackCount 11。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**。**Apple 的曲序既不是 MB 的 1977 原盤、也不是 1994 EMI 那一版**：它的前七軌與 **1977 原盤逐位置相符**（La Vida Mágica／En la Cumbre／Canción para los Pájaros／Dum Dum Tambora／Canción del Sur／Danzas／Frescura Antigua，長度差 ≤11 秒），**第 8–11 軌則是 1994 版多出來的那四首、順序也相同**。**這是「原盤曲序＋四首追加曲排在後面」的形態（裁定 140），不是 1994 那份重排版。**",
+    "src": "https://itunes.apple.com/lookup?id=1501901327&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 e3d766c2（Los Jaivas，Group／CL／**disambiguation 空**／life-span 自 **1963** 起）分頁列完 **32 個 release-group**。**MB 名下另有 bf8bdc0c《Canción del sur / Aconcagua》(1999)**——**二合一整編輯，盤名完整包含本張**（裁定 129／140 不取）；另有 f60692b4《Aconcagua》(1982) 與兩筆自我同名的《Los Jaivas》（1972／1975-12-02）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e3d766c2-aad2-469e-ac94-c90939f4a294&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "原盤七軌，中間連著三首都超過七分半，前後各用兩首三分多的短曲夾住",
+   "1994 年那版把七軌的次序換過再加四首，Apple 上的十一軌卻是原本的順序加在後面"
+  ],
+  "sound": "MB 兩筆 release：1977 年智利原盤（**載體與廠牌名兩欄都空白**）7 軌，與 1994 年智利 EMI 的 CD 710-831250 11 軌。原盤逐軌長度 3:21／5:06／3:15／7:51／7:40／8:45／3:18，**總長 39:16、七軌卻只有這麼長，因為中段第 4、5、6 軌連著三首七分五十一、七分四十與八分四十五**，前面兩首與最後一首都在 3:15–3:21。同名曲〈Canción del sur〉7:40 排第 5 軌。Apple pe 1501901327 上架的是 11 軌版，**但前七軌用的是原盤曲序**（與 1994 EMI 那份的重排不同），追加的四首〈En tus horas〉〈Mambo de Machaguay〉〈Sueño del inca〉〈Bebida mágica〉排在最後。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Canción del sur",
+   "Dum dum tambora",
+   "Danzas"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（**三處**）。MB release-group first-release-date **1977**、其下 1977／CL／Official 那筆也是 1977、Apple pe 1501901327 的 releaseDate **1977-03-30** 與 **℗ 1977 EMI Odeón Argentina** 相符。**但要注意 Apple 的 ℗ 掛的是阿根廷 EMI，而 MB 的兩筆 release 都是智利（CL）**——**行文不得斷言發行國**。MB 的年份沒有月日，Apple 的 03-30 是單方面的，**行文不得寫月日**。同名曲〈Canción del sur〉在原盤排第 5 軌，**不是同名先行單曲**。",
+  "notes": "**探測層 ready 覆核通過，而且覆核在這一張問出了一件卡單沒說對的事。** pe 1501901327，11 軌全有 previewUrl，`trackCount` 欄與攤開的曲目列都是 11。**卡單 `risk` 說「Apple 拿再發的曲目掛原盤的年份」——方向對，但更精確的是：Apple 的前七軌用的是 1977 原盤的曲序，而 1994 EMI 那份 11 軌把第 2／4／5／6 軌的位置換過。** 換句話說 **Apple 這一版是「原盤曲序＋四首追加曲排在後面」（裁定 140 的加曲版形態），不是 1994 那份重排版**，比卡單預期的更接近原盤。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 軌數兩說（裁定 140／141）**：原盤 7 軌、再發 11 軌、Apple 11 軌。卡單未填 `originalTrackCount`——**正確**。**行文不得寫這張有幾軌**；**若要點曲名，只能點原盤那七首**，〈En tus horas〉〈Mambo de Machaguay〉〈Sueño del inca〉〈Bebida mágica〉四首**不得寫成這張碟的曲目**。\\n**⚠ 1977 那筆 release 的廠牌名與載體兩欄都空**。**行文不得斷言原盤發行廠牌**——卡單的 `label` 已經寫成「1977 智利原盤（MB 未填廠牌名）；1994 年 EMI 再發 catno 710-831250」，**覆核無誤**。\\n**⚠ 二合一（裁定 129／140）**：MB 名下 bf8bdc0c《Canción del sur / Aconcagua》(1999) 完整包含本張盤名，卡單已列為刻意不釘——**覆核無誤**。\\n**政治時序：一句都不寫（沿用 c-108 裁定 8）。**"
+ },
+ {
+  "key": "desc2:Chabuca Granda|Dialogando...",
+  "artist": "Chabuca Granda",
+  "album": "Dialogando...",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 92efc848 的欄位：title「Dialogando**...**」（**帶三個句點**）、**artist-credit 是雙掛名「Chabuca Granda & Oscar Avilés」**（兩個藝人實體 ad92ec10 與 7e48d085），first-release-date **1967**、**primary-type Album、secondary-types 空**。轄下 2 筆 release、**都是 10 軌、都是 Official**：**1967／PE，Vinyl，Odeon del Peru catno「ELD-LD-1704」，release 標題作「Dialogando」（無句點）**；**1968-07／PE，Vinyl，IEMPSA（無 catno）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/92efc848-c77e-4d07-8a50-98e03e2605ea?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1967 PE 原盤（Odeon del Peru ELD-LD-1704）的 10 軌（**MB 未填任何一軌長度**）：1〈Bello durmiente〉、2〈Camarón〉、3〈Herida obscura〉、4〈Arequepay〉、5〈María Sueños〉、6〈Pobre voz〉、7〈Puño de oro〉、8〈José Antonio〉、9〈El puente de los suspiros〉、10〈La flor de la canela〉。1968-07 IEMPSA 那筆曲目與曲序完全相同，只是重音被拿掉（Camaron／Maria sueños／Jose antonio）。**收尾的〈La flor de la canela〉是這位作者最廣為傳唱的曲名之一，在這張碟上排在最後一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92efc848-c77e-4d07-8a50-98e03e2605ea&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**探測層配到的 Apple cl 1019270041 與 MB 原盤不相符。** 那一筆的 collectionName 是「Dialogando」、artistName「**Chabuca Granda, Oscar Aviles & Fetiche**」（**多掛一個 Fetiche**）、releaseDate **1995-01-01**、℗ **1995 Iempsa**、trackCount **17**。`entity=song` 攤得出 17 軌：前 10 軌與 MB 原盤逐位置相符，**後面另有 7 軌**〈El Dueño Ausente〉4:18、〈Coplas a San Martín〉2:05、〈Mi Ofrenda〉3:57、〈Gracias〉3:26、〈Quizá Un Día Así〉3:16、〈Ese Arar en el Mar〉3:54、〈Chabuca Limeña〉3:17。**軌數 17 對 10。**",
+    "src": "https://itunes.apple.com/lookup?id=1019270041&country=cl&entity=song&limit=200"
+   },
+   {
+    "f": "**同一個 Apple 上另有一筆與 MB 原盤完全對得上的條目**：**pe collectionId `1686055998`**、collectionName「**Dialogando (feat. Oscar Avilés)**」、artistName「**Chabuca Granda**」（**與卡片掛名一致**）、releaseDate **1967-01-12**、copyright「**℗ 1967 Odeon del Perú**」（**與 MB 1967 原盤的廠牌相同**）、trackCount **10**。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**，曲名／曲序與 MB 1967 PE 原盤 **逐位置相符**（每一軌後面掛「(feat. Oscar Avilés)」），逐軌長度 3:15／4:01／1:39／3:40／2:40／2:50／3:13／4:35／3:15／3:33。",
+    "src": "https://itunes.apple.com/lookup?id=1686055998&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "兩個掛名的 MB 藝人實體：**ad92ec10「Chabuca Granda」，type Person、country PE、disambiguation 空、life-span 1920-09-03 – 1983-03-08**，名下 **11 個 release-group**；**7e48d085「Óscar Avilés」（MB 實體名帶重音 Ó，而 artist-credit 寫成無重音的 Oscar），type Person、country PE、disambiguation 空、life-span 1924-03-24 – 2014-04-05**，名下 10 個 release-group。**兩人的生卒年 MB 都記全了。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ad92ec10-7f8b-4f9a-a0a0-c02982722b6c&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十軌收在〈La flor de la canela〉——她最有名的那首擺在最後一軌",
+   "Apple 上這張有兩筆：一筆十軌掛 Odeon del Perú 的 1967，一筆十七軌掛 Iempsa 的 1995"
+  ],
+  "sound": "MB 兩筆 release 都是 **10 軌**、曲序相同：1967 年祕魯 Odeon del Peru 的黑膠 ELD-LD-1704，與 1968-07 IEMPSA 的黑膠（無 catno）。**MB 未填任何一軌長度**；逐軌時間來自 Apple pe 1686055998（℗ 1967 Odeon del Perú，與 MB 原盤同廠）：3:15／4:01／1:39／3:40／2:40／2:50／3:13／4:35／3:15／3:33，**總長約 32 分半、十軌全部在 1:39–4:35 之間**，最短的〈Herida obscura〉不到一分四十。曲序以〈Bello durmiente〉開場、〈La flor de la canela〉收尾。**這是一張雙掛名的碟**——MB 的 artist-credit 是「Chabuca Granda & Oscar Avilés」，Apple 把 Avilés 放進「(feat.)」。MB 與 Apple 都沒有這張的其他班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Bello durmiente",
+   "José Antonio",
+   "La flor de la canela"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1967（**三處**）。MB release-group first-release-date **1967**、其下 1967／PE／Official／Odeon del Peru **ELD-LD-1704** 那筆也是 1967、**Apple pe 1686055998 的 releaseDate 1967-01-12 與 ℗ 1967 Odeon del Perú 相符**（**廠牌也對上了**）。**探測層配到的 cl 1019270041 標的是 1995／℗ 1995 Iempsa，那是二十八年後的擴充版**。MB 的年份沒有月日，Apple 的 01-12 是單方面的，**行文不得寫月日**。同名先行單曲：無；MB 藝人頁 11 個 release-group 裡沒有第二筆叫《Dialogando》的東西。",
+  "notes": "**⚠ 探測層配錯了——這一張的覆核擋下一個實質錯配。** 探測層取的是 **cl 1019270041**：**17 軌（MB 是 10 軌）、℗ 1995 Iempsa、artistName 還多掛了一個「Fetiche」**。前 10 軌雖與原盤相符，**但多出來的七軌不在 MB 任何一筆 release 上**，而且掛名與版權年都是 1995 那一版的。\\n**✅ 可補的正確 collectionId：pe `1686055998`（「Dialogando (feat. Oscar Avilés)」，10 軌、10 軌全有 previewUrl，曲名／曲序與 MB 1967 PE 原盤逐位置相符，℗ 1967 Odeon del Perú 與 MB 原盤同廠，artistName 就是「Chabuca Granda」與卡片一致）。** **卡單 `risk` 其實已經點名了這個 id，只是探測層沒有採用它。建議把探測層的 collectionId 換成 pe 1686055998。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 盤名的三個句點（裁定 49／152）**：MB 的 release-group 標題是「Dialogando**...**」、**MB 自己那筆 1967 release 的標題卻是「Dialogando」（無句點）**，Apple 兩筆也都沒有句點、其中一筆改帶「(feat. Oscar Avilés)」。**三種寫法都要進 `queryAlias`**，卡單已預告——覆核無誤。\\n**⚠ 雙掛名（c-108 裁定 4）**：MB 的 artist-credit 是「Chabuca Granda & Oscar Avilés」，卡片依池中既有寫法採「Chabuca Granda」單掛——**與 Apple pe 1686055998 的 artistName 一致**，覆核無誤。**MB 的 Avilés 實體名是帶重音的「Óscar Avilés」、artist-credit 卻寫無重音的「Oscar」**，兩種寫法都要能查。\\n**身分回問（裁定 179）**：兩位都是 Person／PE，**生卒年 MB 都記全**（Chabuca Granda 1920-09-03 – 1983-03-08；Óscar Avilés 1924-03-24 – 2014-04-05）。**行文提到兩人時態要正確；MB 只有日期、沒有生平欄位，其餘一律不得寫。**"
+ },
+ {
+  "key": "desc2:Los Prisioneros|Pateando piedras",
+  "artist": "Los Prisioneros",
+  "album": "Pateando piedras",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7595e654 的欄位：title「Pateando piedras」、artist-credit「Los Prisioneros」（藝人 MBID a1d044b9）、first-release-date **1986-01-01**、**primary-type Album、secondary-types 空**。轄下 3 筆 release、**全部 10 軌、全部 Official**：**1986／CL，載體欄空、廠牌名欄空**；**1986-01-01／XW，Digital Media，Plus Music（無 catno）**；**1995／CL，CD，EMI catno「7 98006 2」**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7595e654-b376-3ca9-9672-820a266dd0b3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1986 智利那筆的 10 軌與長度：1〈Muevan las industrias〉4:06、2〈Por qué no se van〉3:04、**3〈El baile de los que sobran〉5:38**、4〈Estar solo〉4:24、5〈Exijo ser un héroe〉5:46、6〈Quieren dinero〉5:16、7〈Por favor〉3:10、8〈Por qué los ricos〉4:58、9〈Una mujer que no llame la atención〉3:25、10〈Independencia cultural〉4:33。**十軌總長 44:20、四軌超過五分鐘**。同一 release-group 底下 1986-01-01 XW 那筆的曲目與曲序相同，**但第 2 與第 8 軌加了西語問號**（〈¿Por qué no se van?〉〈¿Por qué los ricos?〉），逐軌長度也各差 2–19 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7595e654-b376-3ca9-9672-820a266dd0b3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1102889296：collectionName「Pateando Piedras」、artistName「Los Prisioneros」、releaseDate **1986-01-01**（**與 MB 的 first-release-date 同日**）、copyright「**℗ 2016 mundo Digital USA**」、trackCount 10。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**，曲名／曲序與 MB **逐位置相符**、**逐軌長度與 MB 那筆 1986-01-01 XW（Plus Music）release 相符到 1 秒內**（不是與 1986 CL 那筆）。曲名差異：Apple 第 1 軌作〈Muevan las **Industrías**〉（多一個重音）、第 8 軌作〈**Porque** los Ricos〉（**兩個字併成一個**，MB 作 Por qué）。",
+    "src": "https://itunes.apple.com/lookup?id=1102889296&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 a1d044b9：name「Los Prisioneros」、type **Group**、country **CL**、**disambiguation 空**、life-span **1982 起、2006 止**（**本批第二個 MB 已標終止年的團體，另一個是 Chacalón y la Nueva Crema**）。分頁列完共 **25 個 release-group**。**MB 上有兩筆自我同名的《Los Prisioneros》**：41ac11af（1987，整編輯）與 e95be2f3 之外的 e9daadf3（2003）；另有 1984《La voz de los ’80》（**池中已有**）與同碟別版《La voz de los '80 (Fusión)》——**兩筆的撇號一個是 U+2019、一個是 ASCII**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a1d044b9-76c9-46d7-a5a6-0f52421e1ed7&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十軌四十四分鐘，四首超過五分鐘，最長的〈Exijo ser un héroe〉五分四十六",
+   "同一個條目底下兩筆一九八六年的版本，差別只在第二與第八軌的西語問號有沒有加上去"
+  ],
+  "sound": "MB 三筆 release 全部 10 軌、曲序相同：1986 年智利那筆（**載體與廠牌名兩欄都空白**）、1986-01-01 的 XW 數位版（Plus Music）、1995 年智利 EMI 的 CD 7 98006 2。逐軌長度（1986 CL 那份）4:06／3:04／5:38／4:24／5:46／5:16／3:10／4:58／3:25／4:33，**總長 44:20**；十軌裡四軌超過五分鐘（〈El baile de los que sobran〉5:38、〈Exijo ser un héroe〉5:46、〈Quieren dinero〉5:16、〈Por qué los ricos〉4:58 接近），最短的〈Por qué no se van〉3:04。Apple pe 1102889296 的每一軌與 XW 那份相符到 1 秒內。曲名幾乎每一首都是完整的句子或訴求（〈Muevan las industrias〉〈Exijo ser un héroe〉〈Quieren dinero〉〈Independencia cultural〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Muevan las industrias",
+   "El baile de los que sobran",
+   "Independencia cultural"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986（**三處**）。MB release-group first-release-date **1986-01-01**、其下 1986／CL 與 1986-01-01／XW 兩筆都是 1986、Apple pe 1102889296 的 releaseDate **1986-01-01** 與 MB 同日。**但 Apple 的 ℗ 是 2016 mundo Digital USA**（數位再發授權），不能算年份的第三處。**MB 的 01-01 本身就是「只知道年份」的填充日**，Apple 抄的是同一個值——**行文不得寫月日**。同名先行單曲：無；MB 藝人頁 25 個 release-group 裡沒有第二筆叫《Pateando piedras》的東西。",
+  "notes": "**探測層 ready 覆核通過**：pe 1102889296，10 軌全有 previewUrl，曲名／曲序與 MB 逐位置相符，`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。**逐軌長度對得上的是 MB 那筆 1986-01-01 XW（Plus Music）release、不是 1986 CL 那筆**（兩者各軌差 2–19 秒）——**行文引用單軌長度時要知道有兩組數字**。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 1986 智利那筆的廠牌名與載體兩欄都空**。**行文不得斷言原盤發行廠牌**——卡單的 `label` 已經寫成「EMI 智利（1995 年再發 catno 7 98006 2）；1986 原盤 MB 未填廠牌名，另有 Plus Music 的 XW 盤」，**覆核無誤**。\\n**⚠ 兩處曲名兩說**：第 2 與第 8 軌在 MB 的兩筆 release 上一個帶西語問號、一個不帶（〈¿Por qué no se van?〉／〈Por qué no se van〉）；**Apple 第 8 軌更把「Por qué」併成「Porque」**（意思從「為什麼」變成「因為」）。**行文點這兩軌只能用兩版都認得的部分，或避開。**\\n**身分回問（裁定 179）**：MB 藝人實體 a1d044b9 的 type=Group、country=CL、**disambiguation 空**、**life-span 1982–2006**（已標終止年）。**MB 沒有任何團員姓名欄位。**\\n**⚠ 去重（裁定 49／162）**：同藝人名下 1984 年的《La voz de los ’80》（**池中已有**）與《La voz de los '80 (Fusión)》**撇號一個 U+2019、一個 ASCII**，是同一張碟的兩筆；另有兩筆自我同名的《Los Prisioneros》（1987 整編輯、2003）。\\n**政治時序：一句都不寫（沿用 c-108 裁定 8）。** 本次查到的 MB 與 Apple 沒有任何欄位提到 1980 年代的智利政局。**曲名本身帶有訴求（〈Exijo ser un héroe〉〈Independencia cultural〉），但那是曲名、不是背景陳述，行文不得替它們補上時代解釋。**"
+ },
+ {
+  "key": "desc2:Los Prisioneros|La cultura de la basura",
+  "artist": "Los Prisioneros",
+  "album": "La cultura de la basura",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9c051dba 的欄位：title「La cultura de la basura」、artist-credit「Los Prisioneros」（藝人 MBID a1d044b9）、first-release-date **1987**、**primary-type Album、secondary-types 空**。轄下 4 筆 release、**狀態與軌數都不一致**：**1987／CL／Official，CD，廠牌名欄空，14 軌**；**1988／CO／Promotion，Vinyl，CBS「11001208」與 EMI Music Colombia 並列，10 軌**；**1995／CL／status 空，CD，EMI Odeón Chilena S.A.「7 98758 2」，14 軌**；**1995／CL／Official，CD，EMI「7 98758 2」，14 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9c051dba-c735-3fef-b976-5a5f40b51bd9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1987 智利那筆的 14 軌與長度：1〈Somos sólo ruido〉**1:25**、**2〈La cultura de la basura〉3:11**、3〈Que no destrocen tu vida〉4:16、4〈Usted y su ambición〉3:51、5〈Cuando te vayas〉4:56、6〈Jugar a la guerra〉4:41、7〈Algo tan moderno〉4:50、8〈Maldito sudaca〉2:20、9〈Lo estamos pasando muy bien〉5:51、10〈Él es mi ídolo〉4:22、11〈El vals〉3:11、12〈Otro día〉4:40、13〈Pa pa pa〉3:35、**14〈Poder elegir〉8:02**。**十四軌總長約 59 分鐘**；開場的〈Somos sólo ruido〉1:25 最短、收尾的〈Poder elegir〉8:02 最長，相差近六倍。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9c051dba-c735-3fef-b976-5a5f40b51bd9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1988 年哥倫比亞那筆（Promotion，10 軌）不是「原盤少四首」，是另一份曲目**：1〈**We are sudamerican rockers**〉、2〈Que no destrocen tu vida〉、3〈Pa pa pa〉、4〈Cuando te vayas〉、5〈Maldito sudaca〉、6〈Lo estamos pasando bien〉、7〈**De la cultura de la basura**〉、8〈El es mi idolo〉、9〈Usted y su ambición〉、10〈Jugar a la guerra〉（**MB 未填任何一軌長度**）。**開場的〈We are sudamerican rockers〉不在 14 軌版上**，同名曲的寫法也變成「**De** la cultura de la basura」，曲序整個重排。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9c051dba-c735-3fef-b976-5a5f40b51bd9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music cl collectionId 713621883：collectionName「La Cultura de la Basura」、artistName「Los Prisioneros」、releaseDate **1987-01-01**、copyright「**℗ 2006 EMI Odeón Chilena S.A.**」、trackCount 14。`entity=song` 攤得出 **14 軌、14 軌全部有 previewUrl**，曲序與 MB 1987 智利那筆 **逐位置相符**、逐軌長度每一軌短 2–5 秒（末軌 8:02 相同）。**但第 2 軌 Apple 作〈De la Cultura de la Basura〉——與 1988 哥倫比亞盤同一種寫法、與盤名（La cultura de la basura）不同**。",
+    "src": "https://itunes.apple.com/lookup?id=713621883&country=cl&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 a1d044b9（Los Prisioneros，Group／CL／**disambiguation 空**／**life-span 1982–2006**）分頁列完 **25 個 release-group**。**1987 年名下另有一筆自我同名的《Los Prisioneros》**（41ac11af，帶 secondary-type Compilation）；1990 年有《Corazones》（c50ba999）、1996 年有整編輯《Ni por la razón, ni por la fuerza》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a1d044b9-76c9-46d7-a5a6-0f52421e1ed7&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "開場一分二十五、收尾八分零二，十四軌之間差了將近六倍",
+   "同名曲在碟上叫〈De la cultura de la basura〉——比碟名多兩個字"
+  ],
+  "sound": "MB 四筆 release：1987 年智利那筆（**廠牌名欄空白**）、1988 年哥倫比亞的黑膠（**Promotion、10 軌、另一份曲目**）、1995 年兩筆 EMI 的 CD（同編號 7 98758 2，一筆 Official 一筆 status 空）。14 軌版逐軌長度 1:25／3:11／4:16／3:51／4:56／4:41／4:50／2:20／5:51／4:22／3:11／4:40／3:35／8:02，**總長約 59 分鐘、是本批最長的一張**；開場的〈Somos sólo ruido〉1:25 與收尾的〈Poder elegir〉8:02 相差近六倍，中段十二軌集中在 2:20–5:51。Apple cl 713621883 的每一軌比 MB 短 2–5 秒、末軌相同。曲名幾乎都是完整的句子（〈Que no destrocen tu vida〉〈Lo estamos pasando muy bien〉〈Poder elegir〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Somos sólo ruido",
+   "Maldito sudaca",
+   "Poder elegir"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987（**兩處**）。MB release-group first-release-date **1987**、其下 1987／CL／Official 那筆也是 1987、Apple cl 713621883 的 releaseDate **1987-01-01** 與之相符。**但 Apple 的 ℗ 是 2006 EMI Odeón Chilena S.A.**（再發授權），不能算第三處。MB 的年份沒有月日，**Apple 的 01-01 是填充日，行文不得寫月日**。同名曲在碟內排第 2 軌、**而且寫法與盤名不同**（〈De la cultura de la basura〉多兩個字）。",
+  "notes": "**探測層 ready 覆核通過**：cl 713621883（**本批只有五張落在 cl 店面，這是其中之一**），14 軌全有 previewUrl，曲序與 MB 1987 智利那筆逐位置相符、逐軌長度每一軌短 2–5 秒，`trackCount` 欄與攤開的曲目列都是 14、無裁定 175 的落差。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。**同年另有一筆自我同名的《Los Prisioneros》帶 Compilation**，配對不要撞進去。\\n**⚠ 授權狀態：四筆裡有兩筆不能當背書（裁定 43／57／78）**——1988 CO 那筆是 **Promotion**、1995 CL 有一筆 **status 空**。卡單 `risk` 已預告——**覆核無誤，引用發行資訊只用 1987 CL 與 1995 CL Official 那兩筆**。\\n**⚠ 軌數兩說，而且 10 軌那版不是刪節（裁定 174 而非 140）**：1988 哥倫比亞盤**開場是〈We are sudamerican rockers〉——這首不在 14 軌版上**，其餘九軌也重排過。**卡單 `risk` 說它是「刪節版」，方向對但不精確：它多了一首 14 軌版沒有的曲子。** **行文不得寫這張有幾軌，也不得把〈We are sudamerican rockers〉當成本張曲目。**\\n**⚠ 同名曲的寫法與盤名不同**：碟名是《La cultura de la basura》，**Apple 與 1988 哥倫比亞盤的第 2 軌都寫〈De la cultura de la basura〉**（多「De」），只有 MB 1987 那筆寫得與盤名一致。**行文若要說「同名曲」，必須知道有兩種寫法。**\\n**⚠ 1987 那筆廠牌名欄空**：行文不得斷言原盤發行廠牌，卡單的 `label` 已是正確寫法。\\n**政治時序：一句都不寫（沿用 c-108 裁定 8）。** 曲名帶訴求是曲名本身，**不得替它們補上時代背景**。"
+ },
+ {
+  "key": "desc2:Los Shakers|La conferencia secreta del Toto's Bar",
+  "artist": "Los Shakers",
+  "album": "La conferencia secreta del Toto's Bar",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c5224f74 的欄位：title「La conferencia secreta del Toto's Bar」（**ASCII 撇號**）、artist-credit「Los Shakers」（藝人 MBID **5a6d492a**）、first-release-date **1968**、**primary-type Album、secondary-types 空**。轄下 2 筆 release、**都是 Official、軌數兩說**：**1968／UY（烏拉圭），Vinyl，Odeon catno「LDX 309」，11 軌**（release 標題作「La Conferencia secreta del Toto's Bar」，大小寫不同）；**2007／AR，CD，EMI–Odeon S.A.I.C. catno「0946 3891282 8」，16 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c5224f74-580f-3f4a-bbfb-50eef5d9e3da?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1968 烏拉圭原盤（Odeon LDX 309）的 11 軌與長度：**1〈La Conferencia secreta del Toto's Bar / Mi Tía Clementina〉5:09**（**同名曲是與另一首併成一軌的組曲**）、2〈Candombe〉3:13、3〈Acostumbrado a ver TV los martes 36〉2:56、4〈Una forma de Arco Iris〉2:59、5〈Siempre tú〉2:33、6〈B.B.B. Band〉2:32、7〈Yo recuerdo mi mundo〉2:39、8〈Oh mi amigo〉2:18、9〈El Pino y la Rosa〉3:01、10〈Señor carretera el encantado〉3:19、11〈Más largo que \"el Ciruela\"〉3:23。**十一軌總長約 33 分半，除了開場那 5:09 的組曲，其餘十軌全部在 2:18–3:23 之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c5224f74-580f-3f4a-bbfb-50eef5d9e3da&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**2007 年阿根廷那筆 16 軌是「原盤 11 軌＋追加 5 軌」（裁定 140 的加曲版形態）**：前 11 軌與原盤逐位置相符（曲名有幾處改寫：第 3 軌作〈Acostumbro a ver T.V. Los martes 36〉、第 9 軌作〈**E** pino y la rosa〉少一個字母、第 11 軌拿掉引號），追加的五軌是 12〈Aleluya〉1:55、13〈No llames más por teléfono, nena〉1:39、14〈Sólo bailo samba〉1:40、15〈Adorable Lola〉2:18、**16〈Cuando tenga 64 (When I'm 64)〉2:45**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c5224f74-580f-3f4a-bbfb-50eef5d9e3da&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music cl collectionId 713639393：collectionName「La Conferencia Secreta del Toto's Bar」、artistName「Los Shakers」、releaseDate **2011-01-01**、copyright「**This Compilation ℗ 2011 EMI Odeon SAIC**」（**版權聲明自稱 Compilation**）、trackCount 16。`entity=song` 攤得出 **16 軌、16 軌全部有 previewUrl**，曲序與 MB 那筆 2007 阿根廷 16 軌 release **逐位置相符**、逐軌長度多數差 ≤1 秒——**唯獨第 13 軌〈No Llames Mas por Teléfono, Nena〉Apple 記 2:37、MB 記 1:39，相差 58 秒**；第 16 軌 Apple 把標題寫成〈Cuando Tenga Sesenta y Cuatro (When I'm Sixty Four)〉（**數字改寫成西班牙文字**）。",
+    "src": "https://itunes.apple.com/lookup?id=713639393&country=cl&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 **5a6d492a**：name「Los Shakers」、type **Group**、country **UY**、**disambiguation「Uruguayan rock band」**、life-span 自 **1963** 起、無終止年，名下 **15 個 release-group**。**MB 上另有一個字串完全相同的實體 7882004e「Los Shakers」（ES，disambiguation 記 Spanish 60s）**——**兩個實體的名字一模一樣，只能靠 MBID 分辨**。本團名下另有《Break It All》(1966) 與《Rompan todo》兩筆——**同一張碟的英文與西文盤名，MB 建成兩個 release-group**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5a6d492a-f114-47a1-b23d-1b1b6d61ac1d&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "開場那五分零九是兩首併成一軌：碟名那首接著〈Mi Tía Clementina〉",
+   "MB 上有兩個一模一樣的「Los Shakers」，一個在烏拉圭一個在西班牙，只有 MBID 分得開"
+  ],
+  "sound": "MB 兩筆 release：1968 年烏拉圭 Odeon 的黑膠 LDX 309（**11 軌**）與 2007 年阿根廷 EMI–Odeon 的 CD（**16 軌**，原盤加五首）。原盤逐軌長度 5:09／3:13／2:56／2:59／2:33／2:32／2:39／2:18／3:01／3:19／3:23，**總長約 33 分半**；**除了開場那首 5:09 的組曲（同名曲與〈Mi Tía Clementina〉併成一軌），其餘十軌全部落在 2:18–3:23 這 65 秒的區間內**。追加的五軌更短，四首不到兩分二十。曲名混著西語與英語（〈B.B.B. Band〉、追加軌的〈Cuando tenga 64 (When I'm 64)〉）。Apple cl 713639393 上架的是 16 軌那一版，逐軌長度與 MB 多數差 ≤1 秒。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "La Conferencia secreta del Toto's Bar / Mi Tía Clementina",
+   "Candombe",
+   "Yo recuerdo mi mundo"
+  ],
+  "status": "full",
+  "yearVerified": "**採 MB 的 1968，Apple 差四十三年。** MB release-group first-release-date **1968**、其下 1968／UY／Official／Odeon **LDX 309** 那筆也是 1968；Apple cl 713639393 的 releaseDate **2011-01-01**、℗ **2011 EMI Odeon SAIC**——**Apple 兩個年份訊號都是 2011**，而且版權聲明還自稱「This Compilation」。依裁定 77／91 採 MB 的 1968。**這張的原盤年（1968，烏拉圭）與 Apple 那一版的年份（2011）差四十三年，是本批落差最大的一組**，上架備註必須標明版本。同名曲與另一首併成第 1 軌，**不是獨立的同名曲**。",
+  "notes": "**探測層 ready 覆核通過，但配到的是 16 軌的再發版。** cl 713639393，16 軌全有 previewUrl，曲序與 MB 那筆 **2007 阿根廷 16 軌 release** 逐位置相符（**不是 1968 烏拉圭的 11 軌原盤**），`trackCount` 欄與攤開的曲目列都是 16。**配對成立**（前 11 軌就是原盤那 11 軌），**但下游不得把 16 軌當原盤軌數**。\\n**⚠ 一軌長度差 58 秒**：第 13 軌〈No llames más por teléfono, nena〉MB 記 **1:39**、Apple 記 **2:37**。其餘十五軌差 ≤1 秒。**這一軌兩邊很可能不是同一個剪輯，行文不得引用它的長度。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。**⚠ 但 Apple 的版權欄自稱「This Compilation ℗ 2011」**——**這只是 Apple 那一版的措辭，不改變 MB 的欄位判準**（裁定 167／184 以 MB 為準）。**行文不得因此把它寫成合輯。**\\n**⚠ 軌數兩說（裁定 140）**：原盤 11 軌、2007／Apple 16 軌，**多的五軌排在後面、有清楚分界**，屬加曲版。**行文不得寫原盤軌數，也不得把〈Aleluya〉〈Adorable Lola〉〈Cuando tenga 64〉當成原盤曲目。**\\n**⚠ 兩個字串完全相同的藝人實體（裁定 179 的最強形狀）**：MB 的 5a6d492a（**UY，disambiguation「Uruguayan rock band」**）與 7882004e（**ES，Spanish 60s**）**名字一模一樣**。卡單已釘 UY 那個、並把西班牙那個列為刻意不釘——**覆核無誤，藝人閘只能靠 MBID**。\\n**⚠ 同一張碟兩個盤名建成兩個 release-group**：《Break It All》(1966) 與《Rompan todo》——**這是這個團在 MB 上的既有問題，配對時要知道**。\\n**擋下策展層零處**：`risk`／`mbNote` 對兩個同名實體、軌數兩說、Apple 的 2011 年份判斷全部與實查相符。"
+ },
+ {
+  "key": "desc2:Los Saicos|¡Demolición! The Complete Recordings",
+  "artist": "Los Saicos",
+  "album": "¡Demolición! The Complete Recordings",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9d45fe14 的欄位：title「**¡Demolición!** The Complete Recordings」（**開頭是倒驚嘆號 U+00A1**）、artist-credit「Los Saicos」（藝人 MBID 096e3e94）、first-release-date **2010**、**primary-type Album、secondary-types 含 [Compilation]**。轄下**只有 1 筆 release**：**2010／ES（西班牙）／Official，CD，Munster Records catno「MR CD 295」，12 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9d45fe14-d9ce-40ff-8f6a-499132b1537c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 2010 西班牙 CD（Munster MR CD 295）的 12 軌與長度：1〈Come On (Ven aquí)〉2:46、2〈Ana〉2:01、**3〈Demolición〉2:58**、4〈Lonely Star (Estrella solitaria)〉2:46、5〈Camisa de fuerza〉2:52、6〈Cementerio〉2:20、7〈Te amo〉2:22、8〈Fugitivo de Alcatraz〉2:52、9〈Salvaje〉2:41、**10〈El entierro de los gatos〉3:24**、11〈Besando a otra〉2:41、12〈Intensamente〉2:18。**十二軌全部落在 2:01–3:24 之間、總長 31:41**，最長與最短只差 1:23；**兩軌帶英西雙語標題**（〈Come On (Ven aquí)〉〈Lonely Star (Estrella solitaria)〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9d45fe14-d9ce-40ff-8f6a-499132b1537c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 361049542：collectionName「¡Demolición! The Complete Recordings」、artistName「Los Saicos」、releaseDate **2010-01-01**、copyright「**℗ 1965 Los Saicos**」（**版權年是 1965、掛在樂團自己名下**）、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，**曲名、曲序與逐軌長度與 MB 那筆 2010 Munster CD 完全相同、一秒不差**（包括兩軌的英西雙語括號寫法）。",
+    "src": "https://itunes.apple.com/lookup?id=361049542&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 096e3e94：name「Los Saicos」、type **Group**、country **PE**、**disambiguation 空**、life-span 自 **1964** 起、無終止年，名下 **9 個 release-group**。**其中三筆與本張的內容或標題重疊**：21e2a91f《Saicos》(1966，**轄下 release 的標題卻是「Los Saicos」、無廠牌無軌數**)、09169136《Wild Teen-Punk From Peru 1965》(1999，同一批錄音的另一種整編)、66006ceb《**Demolición / Lonely Star**》(1965，**單曲；兩面的曲名正是本張的第 3 與第 4 軌**)。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=096e3e94-0faa-41a0-a94e-da54eeac7466&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌三十一分四十一，全部擠在兩分零一到三分二十四之間",
+   "碟是 2010 年 Munster 出的，Apple 上的版權年卻寫 1965——掛在樂團自己名下"
+  ],
+  "sound": "MB 只登記一筆 release：2010 年西班牙 Munster Records 的 CD，catno MR CD 295，單片 12 軌。逐軌長度 2:46／2:01／2:58／2:46／2:52／2:20／2:22／2:52／2:41／3:24／2:41／2:18，**總長 31:41——十二軌全部落在 2:01 到 3:24 之間，最長與最短只差 1:23**，是本批最緊的一份長度分布。Apple pe 361049542 的每一軌與 MB **一秒不差**。曲名兩軌帶英西雙語括號（〈Come On (Ven aquí)〉〈Lonely Star (Estrella solitaria)〉），其餘全西語，題材集中在暴力與死亡（〈Demolición〉〈Camisa de fuerza〉〈Cementerio〉〈Fugitivo de Alcatraz〉〈Salvaje〉〈El entierro de los gatos〉）。**這是一張 2010 年出版、收錄 1960 年代錄音的整輯**——Apple 的 ℗ 年份 **1965** 是本次查到唯一與錄音年代有關的數字，MB 沒有記載任何一軌的原始錄音年。",
+  "keyTracks": [
+   "Demolición",
+   "Cementerio",
+   "El entierro de los gatos"
+  ],
+  "status": "full",
+  "yearVerified": "**復刻年 2010，卡片記的是這一個。** MB release-group first-release-date **2010**、其下唯一一筆 release（ES／Official／Munster **MR CD 295**）也是 2010、Apple pe 361049542 的 releaseDate **2010-01-01** 與之相符。**原盤年與復刻年在這張分得很清楚**：**Apple 的 ℗ 寫「1965 Los Saicos」**——這是錄音年（掛在樂團自己名下），**2010 是整輯出版年**。MB 名下的單曲《Demolición / Lonely Star》也記 **1965**，與 ℗ 相符。**行文寫年份必須分清楚**：可以寫「2010 年 Munster 把 1965 年前後的錄音整成一張」，**不得把 2010 說成錄音年**，也**不得替單軌指定年份**——MB 沒有逐軌年。",
+  "notes": "**探測層 ready 覆核通過，而且是本批比對最乾淨的一張**：pe 361049542，12 軌全有 previewUrl，**曲名、曲序與逐軌長度與 MB 那筆 2010 Munster CD 一秒不差**（裁定 157 三層全做完，零誤差），`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。\\n**⚠ releaseType：這是本批 §5.6 判準的第三張**——MB `primary-type=**Album**`、**`secondary-types` 含 [Compilation]**。依 §5.6 明文與裁定 167，`primary-type=Album` 者照一般 Album 寫，**卡單 `releaseType: \"Album\"`、例外欄位留空——正確**。**但盤名本身就寫著「The Complete Recordings」，下游行文要知道它是整輯**，不得寫成「1965 年的專輯」。\\n**⚠ 倒驚嘆號（裁定 49）**：盤名開頭是 **U+00A1（¡）**，部分服務會吃掉。卡單已把去掉的寫法列進 `queryAlias`——**覆核無誤**。\\n**⚠ 三筆重疊條目（裁定 162）**：21e2a91f《Saicos》(1966，**RG 標題與 release 標題不一致、無廠牌無軌數**，資料太薄)、09169136《Wild Teen-Punk From Peru 1965》(1999，同一批錄音的另一種整編)、66006ceb《Demolición / Lonely Star》(1965 單曲，**兩面就是本張的第 3、4 軌**)。卡單已全部列為刻意不釘——**覆核無誤**。**行文不得寫〈Demolición〉是「這張碟的主打」**，它在 1965 年就是一張單曲的 A 面。\\n**身分回問（裁定 179）**：MB 藝人實體 096e3e94 的 type=Group、country=PE、**disambiguation 空**、life-span 自 **1964** 起、無終止年，名下只有 9 筆。\\n**擋下策展層一處（預防性）**：這個團在中文與英文圈常被冠上「最早的龐克」之類的說法——**本次查到的 MB 與 Apple 兩份來源沒有任何一句支持它**。**行文不得寫「第一支」「最早」「開創」任何形狀的序數或首創主張。**"
  }
 ]
