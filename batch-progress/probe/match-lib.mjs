@@ -35,7 +35,17 @@ export const titleOk = (want, got, selfTitled = false) => {
   if (volToken(want) !== volToken(got)) return false;  // 卷號殘餘（見上）
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
 };
+// 合輯的「群星」掛名在每個店面都是當地語言（2026-09-06，c-108 策展層在 pe 店面實測發現）。
+// Apple `pe` 把 Various Artists 記成 **Varios Artistas**，藝人閘直接擋掉整張碟。
+// 這一族的字串彼此零重疊（`variousartists` vs `variosartistas` 差三個字母、
+// 子字串比對過不了），所以不是「放寬比對」能解決的，只能列等價集合。
+// 卡片側用的是 MB 的 `Various Artists`；下面收的是各店面的在地寫法。
+const VA = new Set(['variousartists', 'variosartistas', 'variosartistes', 'artistivari',
+  'verschiedenekunstler', 'verschiedeneinterpreten', 'diversartistes', 'diversosartistas',
+  'オムニバス', 'ヴァリアスアーティスツ', '群星', '여러아티스트', 'multipleartistes']);
+const isVA = s => VA.has(norm(s)) || VA.has(String(s || '').replace(/\s+/g, ''));
 export const artistOk = (want, got) => {
+  if (isVA(want) && isVA(got)) return true;             // 群星對群星，不同語言也算同一個
   const a = norm(want), b = norm(got);
   return a === b || a.includes(b) || b.includes(a);
 };

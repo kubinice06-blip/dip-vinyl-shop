@@ -110,8 +110,12 @@ const KOR = ['kr', 'jp', 'us', 'gb', 'hk', 'tw', 'de', 'au'];
 // 中國搖滾：cn 排第一。台灣線實測 cn 零命中（見上面 TWN 的註解），但那批是台語與華語流行，
 // **這批的發行權在中國本土**，形狀不同，cn 值得排第一；tw／hk 接著（魔岩是台灣廠牌）。
 const CHN = ['cn', 'tw', 'hk', 'us', 'gb', 'jp', 'sg', 'my'];
-// 拉丁第二圈：chicha 與 cumbia 的原廠在祕魯與哥倫比亞，再發權落在英美（Barbès、Analog Africa）。
-const LATAM = ['pe', 'co', 'cl', 'mx', 'ar', 'us', 'gb', 'es', 'fr', 'br'];
+// 拉丁第二圈。**順序依 c-108 策展層的十店面實測重排**（2026-09-06）：
+// 命中分佈是 `pe` 30、`cl` 5、`us` 3，**`co mx ar gb es fr br` 七個店面零首次命中**
+// ——原本把 `co` 排第二是照「哥倫比亞 cumbia 的原廠在哥倫比亞」推的，**實測不成立**：
+// 哥倫比亞那三張反而落在 cl 與 us。再發權在英美這件事比原產國更能預測 Apple 的上架市場
+// （與台灣線那次「MB 的建檔語言不預測 Apple 的上架市場」是同一個教訓）。
+const LATAM = ['pe', 'cl', 'us', 'co', 'mx', 'ar', 'es', 'gb', 'fr', 'br'];
 // 法語線：fr 第一，be／ch／ca 是法語圈的鄰接市場（Céline Dion 與魁北克那一支在 ca）。
 const FRA = ['fr', 'be', 'ch', 'ca', 'us', 'gb', 'de', 'nl'];
 // 德義線：一批同時涵蓋德語與義大利語，兩邊都要排前面。

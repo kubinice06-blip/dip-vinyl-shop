@@ -39,6 +39,13 @@ const cases = [
   // Boom vs The Sonics Boom：卷號那道放行（兩邊都無），但摺疊後長度差 9 超過上限 8 → 擋。
   // c-96／c-93 那張就是因此判 unavailable、由研究層人工救回，**這是既有設計的已知代價**，先記錄現況。
   ['Boom vs The Sonics Boom → 現況擋（長度差 9 > 8，非卷號所致）', T, 'Boom', 'The Sonics Boom', false, false],
+  // 2026-09-06（c-108 在 pe 店面實測）：合輯掛名在每個店面都是當地語言，
+  // 字串彼此零重疊，子字串比對過不了，只能列等價集合。
+  ['Various Artists vs Varios Artistas（pe）', A, 'Various Artists', 'Varios Artistas', true],
+  ['Various Artists vs オムニバス（jp）', A, 'Various Artists', 'オムニバス', true],
+  ['Various Artists vs 群星（tw）', A, 'Various Artists', '群星', true],
+  ['群星 vs Varios Artistas（雙向都要成立）', A, '群星', 'Varios Artistas', true],
+  ['Various Artists vs Various Craft（不是群星，要擋）', A, 'Various Artists', 'Various Craft', false],
 ];
 let pass = 0, fail = 0;
 for (const [name, fn, ...rest] of cases) {
@@ -47,3 +54,4 @@ for (const [name, fn, ...rest] of cases) {
 }
 console.log(`\n${pass}/${cases.length} 通過${fail ? `，${fail} 失敗` : ''}`);
 process.exit(fail ? 1 : 0);
+

@@ -4567,3 +4567,49 @@ c-104 的探測因此**空等了 46 分鐘**，而 c-105 與 c-112（後來才�
 **這一條的形狀又是「失敗與正常長得一樣」**（第 163／169／170／171 條同族）：
 空等的迴圈不會報錯，log 是空的，看起來就只是「還沒輪到」。
 **判斷方式**：`ps -o etime,cmd -p <pid>` 看它的命令列裡有沒有自己要等的那個字串。
+
+---
+
+## 第 182 條（2026-09-06，c-108 在 `pe` 店面實測）：**合輯的「群星」掛名在每個店面都是當地語言，藝人閘會整張擋掉**
+
+Apple `pe` 把 `Various Artists` 記成 **`Varios Artistas`**。
+兩個字串**摺疊後零重疊**（`variousartists` vs `variosartistas` 差三個字母、互相不是子字串），
+所以 `artistOk` 的雙向子字串比對過不了——**整張碟被藝人閘擋死，而且看起來就像「Apple 沒有」**。
+
+**這不是放寬比對能解決的**（放寬到能吃下這組，就會把別的東西也放進來）。
+已在 `match-lib.mjs` 加一個**等價集合**，收各店面的在地寫法：
+`Varios Artistas`（es）、`Varios Artistes`、`Artisti Vari`（it）、`Verschiedene Künstler`／`Interpreten`（de）、
+`Divers Artistes`（fr）、`Diversos Artistas`（pt）、`オムニバス`／`ヴァリアス・アーティスツ`（jp）、
+`群星`（tw／hk）、`여러 아티스트`（kr）。`test-match.mjs` 加了 5 個回歸案例，**33/33 通過**。
+
+**這一條的形狀**：跨語言的**同義詞**，不是拼寫變體。第 49 條記的是跨文字系統的**同一個名字**
+（羅馬拼音 vs 原文字），這一條是**不同語言的同一個概念**——工具只能靠列舉。
+往後遇到「合輯」「サントラ」「Original Soundtrack」這類**功能性掛名**都要想到這件事。
+
+## 第 183 條（同批）：**再發權比原產國更能預測 Apple 的上架市場**
+
+c-108 十店面實測，命中分佈是 **`pe` 30、`cl` 5、`us` 3**，
+**`co mx ar gb es fr br` 七個店面零首次命中**。
+
+我把 `co` 排在第二，理由是「哥倫比亞 cumbia 的原廠在哥倫比亞」——**實測不成立**：
+**哥倫比亞那三張反而落在 `cl` 與 `us`。** 店面組已依實測重排成 `pe cl us co mx ar es gb fr br`。
+
+**這與台灣線那次的教訓是同一個**（TWN 那組的註解：「MB 的建檔語言不預測 Apple 的上架市場」，
+`cn` 零命中）。**現在有兩個實例了，可以當通則**：
+**排店面組要看「這批碟的再發權在哪」，不是「原本在哪裡錄的」。**
+考古整輯尤其明顯——Barbès、Analog Africa、Soundway、Vampisoul 都是歐美廠牌。
+
+## 第 184 條（同批）：**`chk-prop` 只擋單向——把 Album 寫成 Compilation 它不會標**
+
+`chk-prop` 有一道「非合輯卻帶例外欄位」的檢查，但**反方向沒有**：
+把一張 `primary-type=Album` 的碟寫成 `releaseType: "Compilation"` 再補兩個證據 URL，
+**工具完全不會標**。目前只能靠人守。
+
+**背景**：c-108 逐筆查了這條線上 9 個考古整輯的 `primary-type`——
+Barbès、Soundway、Analog Africa、Vampisoul、Munster、Infopesa **全部是 `Album` ＋ secondary `[Compilation]`**，
+**`primary-type=Compilation` 是 0 筆**。這是**第四批**得到同一結果，累計已掃逾 6,500 個 release-group。
+**第 167 條可以視為定論了：`primary-type=Compilation` 在 MB 上實質不存在。**
+
+**先例衝突**：池中《The Roots of Chicha》(2007) 在 2026-08-21 的 c-33 manifest 走的是
+Compilation＋3 個證據 URL，同一形狀。c-108 採新規（照一般 Album 寫），
+**差異留給本機決定要不要回頭統一**。
