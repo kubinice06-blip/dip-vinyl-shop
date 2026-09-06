@@ -746,5 +746,177 @@
   "status": "full",
   "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**——**這個 RG 轄下只有一筆 release**，就是 1970／GB／Official 的 Decca SKL 5048，最早即唯一，完全沒有以再發日期建檔的空間；樂團條目的作品表也把本張記為 Decca、1970；串流店面 gb 878171454 的 releaseDate 記 1970-05-13、℗ 欄同為 1970。**三處一致。同名先行單曲：無。**",
   "notes": "**掛名的連接詞是 `and` 不是 `&`**：池中與 MB 都寫 `Bread, Love and Dreams`，串流寫 `Bread, Love & Dreams`（第三種寫法），**照池中寫法**（裁定 217 的 &／and 分裂，本張是掛名側）。｜盤名裡的 `From` 在池中與 MB 是大寫 F，串流作小寫 from，**照池中寫法**。｜曲名字面差異兩處：原盤〈The Lobster Quadrille〉／店面〈Lobster Quadrille〉、原盤〈Purple Haze Melancholy〉／店面〈Purple Hazy Melancholy〉，**行文照原盤**。｜樂團第三張《Amaryllis》1971 在串流上只有標為 EP 的再發條目、形態有疑（策展層第 3.5 節），**與本張無關，行文不要提**。｜盤名極長（共 63 字元），**行文引用時請完整寫出、不要自行縮寫**。"
+ },
+ {
+  "key": "desc2:Dulcimer|And I Turned As I Had Turned As A Boy…",
+  "artist": "Dulcimer",
+  "album": "And I Turned As I Had Turned As A Boy…",
+  "facts": [
+   {
+    "f": "release-group 5e42d4bc 的欄位：title「And I Turned As I Had Turned As A Boy…」（**盤名末尾是單一字元的刪節號 U+2026，不是三個句點**）、artist-credit「Dulcimer」（藝人實體 MBID 5eb837fb，type Group、area United Kingdom）、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下 4 筆 release：1970／GB／Official（**15 軌，該筆未填 label-info 與載體欄**）、1971／GB／Official（12 吋，**12 軌**，label-info **Nepentha 6437003**）、2003-09／KR／Official（CD，15 軌，M2U M2U-0008）、2004／JP／Official（CD，12 軌，Air Mail Archive AIRAC-1061）。**最早的 release 就是 1970 那筆，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5e42d4bc-1dfa-3407-8398-6945c5a40684?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（release db9d6e69）的 **15 軌**逐軌：1〈Sonnet To the Fall〉3:54、2〈Pilgrim from the City〉3:13、3〈Morman's Casket〉4:31、4〈Ghost of the Wandering Minstrel Boy〉3:13、5〈Gloucester City〉2:57、6〈Starlight〉3:00、7〈Caravan〉**8:24**、8〈Lisa's Song〉3:03、9〈Time In My Life〉3:00、10〈Fruit of the Musical Tree〉2:42、11〈While It Lasted〉4:24、12〈Suzanne〉3:40、13〈Village / Days of LordKichener〉**9:48**、14〈Take Me home Uncle Terry〉3:46、15〈Country Life〉3:10。**15 軌、總長 62 分 44 秒——本批最長的一張**；兩首長曲〈Caravan〉8 分 24 秒與〈Village / Days of LordKichener〉9 分 48 秒合計就佔掉 18 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5e42d4bc-1dfa-3407-8398-6945c5a40684&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "同一 RG 轄下 1971／GB 的 12 吋（Nepentha 6437003，release d450beff）**只有 12 軌**，比 1970 那筆少三軌；2004 年的 JP CD 同樣是 12 軌，2003 年的 KR CD 才是 15 軌。**同一張碟因此存在 15 軌與 12 軌兩種曲目長度的版本。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5e42d4bc-1dfa-3407-8398-6945c5a40684&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次（盤名另備了去掉刪節號的 alias）都回 0 筆，改走藝人目錄 lookup（artistId 262630762）攤開名下全部 5 個條目：《Rob's Garden》2003、《Into the Light...》1997、《When a Child...》1993、**《Room for Thought》1971（12 軌）**、《Ay Nena - Single》2025——**沒有本張**。us／jp／de／fr／ie／ca／au 七個店面亦全數 0 筆。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=262630762&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 5e42d4bc 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/5e42d4bc-1dfa-3407-8398-6945c5a40684/front"
+   }
+  ],
+  "hookCandidates": [
+   "盤名的結尾是一個刪節號，不是三個句點",
+   "十五軌六十三分鐘，其中兩首長曲就佔掉十八分"
+  ],
+  "sound": "1970 年的原盤 15 軌、總長 62 分 44 秒，是本批單張最長的一份曲目。〈Caravan〉8 分 24 秒與〈Village / Days of LordKichener〉9 分 48 秒兩首長曲合計佔掉十八分鐘，其餘十三軌多落在三到四分半。同一張碟另有 12 軌的版本：1971 年掛 Nepentha 編號 6437003 的 12 吋只有 12 軌，2004 年的日本 CD 也是 12 軌，2003 年的韓國 CD 才回到 15 軌。盤名末尾是一個刪節號字元，不是三個句點。",
+  "keyTracks": [
+   "Sonnet To the Fall",
+   "Caravan",
+   "Village / Days of LordKichener"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1970，**但只有一個來源**。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／GB／Official（15 軌），第二筆才是 1971／GB 的 Nepentha 12 吋，沒有以再發日期建檔的問題。**串流查無條目、也查不到專屬的百科條目，因此年份是單一來源。** 要留意 1970 與 1971 兩個年份在轄下並存（1970 的 15 軌版與 1971 的 Nepentha 12 軌版），**卡單取 1970，本檔沿用。同名先行單曲：無。**",
+  "notes": "⚠ **擋下策展層兩處**：卡單 `curatorWhy` 寫「Dulcimer 唯一的一張原盤」與「原壓數量極少，是英國 acid folk 私壓價目上最高的幾張之一」。**前者與串流藝人目錄矛盾**（同一個 artistId 名下另列《Room for Thought》1971 與 1990 年代之後的三張），**後者是價格與最高級表述、查無來源**。**兩句都不得寫入行文。**｜⚠ **廠牌欄仍應留白**（策展層第六條操作判斷）：1970 那筆 release 沒有 label-info；**Nepentha 6437003 只掛在 1971 那筆 12 軌 release 上，不能拿來當 1970 版的廠牌**。｜⚠ **盤名含 U+2026 刪節號**：行文引用盤名時**照原樣寫出該字元**（裁定 6／70／120），不要換成三個句點、也不要省略。｜**無來源狀態**：兩個鍵、八個店面、藝人目錄 lookup 都走完（裁定 185／173）。｜曲名的來源端拼寫有兩處明顯手民之誤（〈Village / Days of LordKichener〉的 LordKichener 未空格、〈Take Me home Uncle Terry〉的 home 小寫），**照原樣引用、不要自行修正**。"
+ },
+ {
+  "key": "desc2:Andy Roberts|Home Grown",
+  "artist": "Andy Roberts",
+  "album": "Home Grown",
+  "facts": [
+   {
+    "f": "release-group 1e9dfcef 的欄位：title「Home Grown」、artist-credit「Andy Roberts」（藝人實體 MBID c62fda0f，type Person、area United Kingdom、生於 1946-06-12、disambiguation「UK folk singer/songwriter」）、first-release-date **1970-03**、primary-type Album、secondary-types **空**。**轄下只有 1 筆 release**：1970-03／GB／Official（黑膠，14 軌，label-info RCA Victor SF8086）。**最早即唯一，與 first-release-date 完全相同**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1e9dfcef-cfee-4574-869c-493870832c4e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970-03／GB 原盤（RCA Victor SF8086，release 478bfcdb）逐軌：1〈Home Grown〉2:54、2〈Just For The Record〉3:51、3〈Applecross〉**6:50**、4〈The Praties Are Dug〉**0:22**、5〈John The Revelator〉2:04、6〈Autumn To May〉2:37、7〈Moths And Lizards In Detroit〉5:18、8〈Creepy John〉3:36、9〈Jello〉3:15、10〈Gig Song〉1:50、11〈Queen Of The Moonlight World〉4:46、12〈Where The Soul Of Man Never Dies〉2:57、13〈The One-Armed Boatman And The Giant Squid〉5:53、14〈Boris At The Organ〉1:42。**14 軌、總長 47 分 55 秒；第 4 軌只有 22 秒，第 3 軌 6 分 50 秒是最長的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1e9dfcef-cfee-4574-869c-493870832c4e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人條目的個人作品表：**《Home Grown》（RCA SF8086，1970）——參與者 Roger Powell、Mike 'Ace' Evans、Gordon Huntley、Ian Whiteman，編曲 Dave Palmer，製作 Sandy Roberton；1970 年的黑膠原版是 14 軌，2005 年由 Strange Days Records 發行 CD 並加一軌。條目另列一筆《Home Grown》（B&C CAS1034，1971），是 1971 年在 B&C 發行的 10 軌縮短版黑膠**，參與者與製作人同上。",
+    "src": "https://en.wikipedia.org/wiki/Andy_Roberts_(musician)"
+   },
+   {
+    "f": "藝人條目正文：Andrew Jonathan Roberts，1946 年 6 月 12 日生於 Middlesex 的 Hatch End。九歲學小提琴並取得 Essex 的 Felsted School 小提琴獎學金，同時也彈吉他。1965 年進 Liverpool 大學讀法律，在那裡與詩人 Roger McGough 搭檔，先是 The Scaffold 的獨一吉他伴奏，後與 McGough 及 Adrian Henri 組成 The Liverpool Scene。**The Liverpool Scene 在 1968 至 1970 年間出了四張專輯**，1969 年參加 Led Zeppelin 的首次巡演，同年七月在 Isle of Wight Festival 與 Bob Dylan、The Band 同日演出，1970 年 5 月解散。他也與 Roy Harper、Chris Spedding、Kevin Ayers、Vivian Stanshall 等人合作過，1972 年初與 Iain Matthews 組成民謠搖滾團 Plainsong。",
+    "src": "https://en.wikipedia.org/wiki/Andy_Roberts_(musician)"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，改走藝人目錄 lookup（artistId 22351849）攤開名下全部 10 個條目：《4-Track Demos》2005、《Hold On Below - Single》1974、《More Stuff》2013、《Vinyl Fronteers EP》1996、**《Urban Cowboy》1971（10 軌）**、《The Streets Of Paris - Single》2011、《Big Daddy Vibes - Single》1996、《In the Spirit》2013、《Reach for the Sky》2015、《Mr. Roberts' Neighbourhood - Single》1998——**沒有本張**。us／jp／de／fr／ie／ca／au 七個店面亦全數 0 筆。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=22351849&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 1e9dfcef 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/1e9dfcef-cfee-4574-869c-493870832c4e/front"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌裡有一軌〈The Praties Are Dug〉只有 22 秒",
+   "隔年 B&C 的再發把十四軌砍成十軌"
+  ],
+  "sound": "1970 年 3 月 RCA Victor SF8086 的原盤 14 軌、總長 47 分 55 秒。軌數多而單軌短：第 4 軌〈The Praties Are Dug〉只有 22 秒、第 10 軌〈Gig Song〉1 分 50 秒、末軌〈Boris At The Organ〉1 分 42 秒，只有〈Applecross〉6 分 50 秒與〈The One-Armed Boatman And The Giant Squid〉5 分 53 秒兩首撐得長。錄音班底是 Roger Powell、Mike 'Ace' Evans、Gordon Huntley、Ian Whiteman，編曲 Dave Palmer，製作 Sandy Roberton。作者 Andy Roberts 生於 Middlesex 的 Hatch End，九歲學小提琴並拿過獎學金，1965 年進 Liverpool 大學讀法律時與詩人 Roger McGough 搭檔，先替 The Scaffold 伴奏，再組成 The Liverpool Scene。隔年 B&C 的再發把曲目砍成 10 軌。",
+  "keyTracks": [
+   "Home Grown",
+   "Applecross",
+   "The One-Armed Boatman And The Giant Squid"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（月份亦一致，1970-03）。release-group first-release-date **1970-03**、**依裁定 220 回問轄下 release**——**這個 RG 轄下只有一筆 release**，就是 1970-03／GB／Official 的 RCA Victor SF8086，最早即唯一，完全沒有以再發日期建檔的空間；藝人條目的作品表也把它記為「RCA SF8086，1970」。**要防的是同名不同版**：條目另列 1971 年 B&C CAS1034 的 10 軌縮短版，**那不是首版**。串流查無條目。**同名先行單曲：無**（同名曲是本張第 1 軌）。",
+  "notes": "⚠ **擋下策展層一處**：卡單 `curatorWhy` 寫「此後長期擔任 Roy Harper 與 Vivian Stanshall 的伴奏」。條目寫的是「He has also played with Roy Harper, Chris Spedding, Hank Wangford, Kevin Ayers, Vivian Stanshall and Grimms」——**是合作過，不是長期擔任伴奏**，行文照條目的說法寫。｜⚠ **掛名撞名（裁定 179）**：`Andy Roberts` 在 MB 上有六個同名實體、在串流店面上也有四個（The Andy Roberts Group、Andy Roberts and The Great Stampede、Andy Roberts & the Fourth Planet）。本張採 c62fda0f（Person／United Kingdom／1946-06-12／「UK folk singer/songwriter」），**判準是 area、type、disambiguation 三欄，不是 score**。｜⚠ **回撈候選要駁回**：回撈清單把串流的 1617244209《Urban Cowboy》1971 列為本張候選（依據只有年份）。**那是同藝人的另一張碟、曲目完全不同，不得採用。**｜**無來源狀態**：兩個鍵、八個店面、藝人目錄 lookup 都走完（裁定 185／173）。｜**版本要防**：1971 年 B&C 的 10 軌縮短版與 2005 年加一軌的 CD 都不是本張，**行文只能引原盤 14 軌**。"
+ },
+ {
+  "key": "desc2:The Sallyangie|Children of the Sun",
+  "artist": "The Sallyangie",
+  "album": "Children of the Sun",
+  "facts": [
+   {
+    "f": "release-group 0a2805fe 的欄位：title「Children of the Sun」、artist-credit「The Sallyangie」（藝人實體 MBID 63cf1df4，type Group、area United Kingdom、begin 1968）、first-release-date **1969**、primary-type Album、secondary-types **空**。轄下 7 筆 release，**最早的一筆是 1969／US、status 為 Promotion**（12 吋，14 軌，label-info Warner Bros.‐Seven Arts Records WS 1783）；正規盤要看 1978／GB／Official（12 吋，14 軌，Transatlantic TRA 176）與 1979／IT／Official（12 吋，14 軌，Transatlantic ORL 8366），其後為 1988／XE 的 CD（14 軌）、2003-11-28／JP 的兩片裝 CD（**22 軌**，Arcàngelo ARC-7037/38）與一筆無日期的 Castle Music 兩片裝（22 軌）。**最早的 release 年份仍是 1969，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0a2805fe-a0da-3721-b77e-b4c59df4d6ef?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1969／US 原壓（Warner Bros.‐Seven Arts WS 1783，12 吋，release 3a313ebb）逐軌：1〈Strangers〉1:12、2〈Lady Mary〉3:41、3〈Children of the Sun〉4:56、4〈A Lover for All Seasons〉3:42、5〈River Song〉3:40、6〈Banquet on the Water〉4:28、7〈Balloons〉5:28、8〈Midsummer Night's Happening〉4:08、9〈Love in Ice Crystals〉3:00、10〈Changing Colours〉**0:21**、11〈Chameleon〉2:20、12〈Milk Bottle〉**0:31**、13〈The Murder of the Children of San Francisco〉4:00、14〈Strangers (reprise)〉1:12。**14 軌、總長 42 分 39 秒；第 10 軌 21 秒與第 12 軌 31 秒是兩段極短的插曲，末軌是開場曲的重奏版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0a2805fe-a0da-3721-b77e-b4c59df4d6ef&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Children of the Sun》是英國民謠二人組 The Sallyangie（Oldfield 姊弟 Mike 與 Sally）**1969 年的專輯，製作人是 Transatlantic Records 創辦人 Nathan Joseph**；2002 年加曲並附第二片再發，2011 年 9 月 26 日再由 Esoteric Recordings 發行。**全部歌曲由 Mike 與 Sally Oldfield 合寫。** 人員：Sally Oldfield（人聲）、Mike Oldfield（木吉他、人聲）、**Terry Cox（打擊）**、David Palmer（編曲）、Ray Warleigh（長笛）。條目另註：**這張比 Mike Oldfield 的個人首作《Tubular Bells》早四年、比 Sally Oldfield 的《Water Bearer》早九年。**",
+    "src": "https://en.wikipedia.org/wiki/Children_of_the_Sun_(The_Sallyangie_album)"
+   },
+   {
+    "f": "樂團條目：The Sallyangie 是 1960 年代由 Mike 與 Sally Oldfield 姊弟組成的民謠二人組，**《Children of the Sun》是他們第一張也是唯一一張專輯**，二人組在有限的成績與一次全國巡演後於 1969 年底拆夥。**團名據稱是「Sally」與 Davey Graham 寫的吉他演奏曲〈Angie〉兩個字的合成。** 第二張單曲〈Child of Allah〉在拆夥三年後才發行。",
+    "src": "https://en.wikipedia.org/wiki/The_Sallyangie"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1439693983：collectionName「Children of the Sun (feat. Mike Oldfield & Sally Oldfield) [Definitive Edition]」、artistName「The Sallyangie」、trackCount **22**、℗ 欄「℗ 2002 Sanctuary Records Group Ltd., a BMG Company」、releaseDate 記 1969。`entity=song` 攤得出 **22 軌、22 軌全部有 previewUrl**，每一軌都帶「(feat. Mike Oldfield & Sally Oldfield)」後綴：**第 1 片的第 1–13 軌與 1969 原壓逐位置相符**（長度差在 16 秒內），第 1 片的第 14–16 軌是〈Twilight Song〉〈Song of the Healer〉與另一版〈Strangers〉、第 2 片 6 軌是〈Children of the Sun〉的無前奏版與〈Mrs. Moon and the Thatched Shop〉〈Branches〉〈A Sad Song for Rosie〉〈Colours of the World〉〈Two Ships〉。**這正是 2002 年那個加曲兩片裝的內容，不是 14 軌的原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1439693983&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 0a2805fe 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/0a2805fe-a0da-3721-b77e-b4c59df4d6ef/front"
+   }
+  ],
+  "hookCandidates": [
+   "團名是 Sally 加上 Davey Graham 那首〈Angie〉拼出來的",
+   "這張比《Tubular Bells》早了四年"
+  ],
+  "sound": "1969 年的原壓 14 軌、總長 42 分 39 秒。曲目裡夾了兩段極短的插曲——〈Changing Colours〉21 秒與〈Milk Bottle〉31 秒——末軌〈Strangers (reprise)〉則是開場曲的重奏版，只有 1 分 12 秒；最長的〈Balloons〉5 分 28 秒。二人組是 Oldfield 姊弟 Sally 與 Mike，全部歌曲由兩人合寫，Sally 唱、Mike 彈木吉他兼唱，另有 Terry Cox 的打擊、Ray Warleigh 的長笛，編曲 David Palmer，製作人是 Transatlantic Records 的創辦人 Nathan Joseph。團名據說是「Sally」與 Davey Graham 那首吉他演奏曲〈Angie〉合成的。這是他們第一張也是唯一一張專輯，比《Tubular Bells》早了四年。",
+  "keyTracks": [
+   "Children of the Sun",
+   "Balloons",
+   "The Murder of the Children of San Francisco"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **兩處分歧，取 1969。** release-group first-release-date **1969**、**依裁定 220 回問轄下 release**，最早的一筆是 1969／US、status **Promotion**（Warner Bros.‐Seven Arts WS 1783），其後才是 1978／GB 與 1979／IT 的兩筆 Official；專輯條目開宗明義寫「1969 年的專輯」，串流店面 gb 1439693983 的 releaseDate 也記 1969。**⚠ 樂團條目的作品表寫「1968 — Children of the Sun (Transatlantic Records TRA 176)」，年份與編號都對不上**——TRA 176 在轄下是 **1978** 那筆 GB release 的編號，該條作品表不可信。依裁定 127 取有三處佐證的 1969。**年份仍取原盤發行年 1969，不取 1978**（策展層第五條操作判斷）。**同名先行單曲：無**（同名曲是本張第 3 軌）。",
+  "notes": "⚠ **策展層第五條操作判斷要接手**：轄下最早那筆 release 的 status 是 **Promotion**，依裁定 43／57／65／78 **不得拿它當背書**；正規盤看 1978／GB 與 1979／IT 兩筆 Official。**但年份仍取 1969。**｜⚠ **串流條目是 2002 年的加曲兩片裝（22 軌），不是 14 軌原盤**：後 9 軌全部不是原盤內容，**行文只能引原盤 14 軌**（裁定 141）。｜**盤名後綴要截斷**（策展層第九條操作判斷）：店面盤名帶「(feat. Mike Oldfield & Sally Oldfield) [Definitive Edition]」、每一軌也都帶 feat. 後綴，**截去後才比對，不可判為別碟；行文不得寫出後綴**。｜⚠ **擋下策展層一處**：卡單 `curatorWhy` 寫「Mike Oldfield 十五歲、姊姊 Sally Oldfield 十九歲時錄的」。**兩個年齡本次查證都沒有取得來源，行文不得寫年齡。**｜曲名差異一處：原壓作〈The Murder of the Children of San Francisco〉，專輯條目的原始曲目表作〈Murder of the Children of San Francisco〉（無 The），**行文照原壓寫法**。"
+ },
+ {
+  "key": "desc2:Principal Edwards Magic Theatre|Soundtrack",
+  "artist": "Principal Edwards Magic Theatre",
+  "album": "Soundtrack",
+  "facts": [
+   {
+    "f": "release-group e6d2227a 的欄位：title「Soundtrack」、artist-credit「Principal Edwards Magic Theatre」、first-release-date **1969**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1969／US／Official（12 吋，**6 軌**，label-info Elektra D9-103）與 2006-06／GB／Official（CD，**8 軌**，Cherry Red CD MRED 306）。**最早的 release 就是 1969 那筆，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e6d2227a-8b2f-3922-aa59-813a994d4b45?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1969／US 原盤（Elektra D9-103，12 吋，release 9a06fc10）逐軌：1〈Enigmatic Insomniac Machine〉4:57、2〈Sacrifice〉7:12、3〈The Death of Don Quixote〉**13:22**、4〈Third Sonnet to Sundry Notes of Music〉7:17、5〈To a Broken Guitar〉2:38、6〈Pinky: A Mystery Circle〉**9:44**。**只有 6 軌、總長 45 分 10 秒——平均一軌超過七分半，是本批平均單軌最長的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e6d2227a-8b2f-3922-aa59-813a994d4b45&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Principal Edwards Magic Theatre 是 1968 至 1971 年間存在的英國表演藝術集體，**成員約十四人，包含樂手、詩人、舞者與音響燈光技術人員**；由 Exeter 大學的學生組成，原本只打算辦一本藝術雜誌。最初的樂手是 Root Cartwright（吉他、曼陀林、作曲）、Belinda「Bindy」Bourquin（小提琴、鍵盤、直笛）、David Jones（人聲、打擊）、Jeremy Ensor（貝斯）、Martin Stellman（人聲）、Lyn Edwards（鼓）與 Vivienne McAuliffe（人聲）。**團名取自 Hermann Hesse 小說《荒野之狼》裡的 Magic Theatre，以及 Lyn Edwards 的祖先、Aberystwyth 威爾斯大學學院首任院長 Thomas Charles Edwards。** Cartwright 說這個名字「沒有宗教意涵，我們只是覺得聽起來不錯」。",
+    "src": "https://en.wikipedia.org/wiki/Principal_Edwards_Magic_Theatre"
+   },
+   {
+    "f": "同一條目：樂團 1968 年 5 月在 Portsmouth 一場名為「Dance of Words」、由 John Peel 主持的活動上首度公開演出，同場還有 Fairport Convention、Free、Tyrannosaurus Rex、Alexis Korner 等。**他們是 Peel 的 Dandelion Records 簽下的第一組藝人**，1969 年 7 月發行首張單曲〈Ballad (of the Big Girl Now and a Mere Boy)〉，**次月發行首張專輯《Soundtrack》，由 Peel 與樂團共同製作**；**盤名之所以叫《Soundtrack》，是因為音樂只是他們演出的其中一個面向——演出還包含舞蹈、燈光與詩**。多數曲子由 Cartwright 作曲，歌詞由其他團員與相關人士貢獻，主唱是 Vivienne McAuliffe，Bindy Bourquin 的小提琴與直笛是樂團標誌性聲響的另一要素。團員後來離開 Exeter 的學業，一起搬進 Northamptonshire 的 Kettering 附近一棟農舍公社排練與巡演。",
+    "src": "https://en.wikipedia.org/wiki/Principal_Edwards_Magic_Theatre"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1601296749：collectionName「Soundtrack」、artistName「Principal Edwards Magic Theatre」、trackCount **8**、℗ 欄「℗ 1969 Cherry Red Records」、releaseDate 記 1969。`entity=song` 攤得出 **8 軌、8 軌全部有 previewUrl**：**第 1–6 軌與 1969 原盤逐位置相符**（長度差在 17 秒內），第 7、8 軌〈Ballad (of the big girl now and the mere boy)〉2:42 與〈Lament For The Earth〉4:49 **不在原盤上**——前者正是 1969 年 7 月那張先行單曲。**上架的是 8 軌的再發版，不是 6 軌的原盤。** 該條目有封面（artworkUrl100 可取）。曲名有兩處手民之誤：第 2 軌店面作〈Sacfrifice〉、第 6 軌作〈Pinky: A Mystery Cycle〉。",
+    "src": "https://itunes.apple.com/lookup?id=1601296749&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group e6d2227a 直取 front **回 404**（2026-09-06 複查仍是 404）；本張的封面來源改走串流條目 1601296749 的 artwork。",
+    "src": "https://coverartarchive.org/release-group/e6d2227a-8b2f-3922-aa59-813a994d4b45/front"
+   }
+  ],
+  "hookCandidates": [
+   "盤名叫《Soundtrack》，因為音樂只是那場演出的其中一個面向",
+   "十四個人的團，樂手、詩人、舞者與音響燈光技術人員都算團員"
+  ],
+  "sound": "1969 年 Elektra D9-103 的 12 吋原盤只有 6 軌、總長 45 分 10 秒，平均一軌超過七分半：〈The Death of Don Quixote〉13 分 22 秒、〈Pinky: A Mystery Circle〉9 分 44 秒、〈Third Sonnet to Sundry Notes of Music〉7 分 17 秒，最短的〈To a Broken Guitar〉才 2 分 38 秒。團體是約十四人的表演藝術集體，樂手、詩人、舞者與音響燈光技師都算團員，由 Exeter 大學的學生組成——原本只打算辦一本藝術雜誌。多數曲子由 Root Cartwright 作曲、Vivienne McAuliffe 主唱，Belinda Bourquin 的小提琴與直笛是另一個標誌。團名取自 Hermann Hesse 小說《荒野之狼》裡的 Magic Theatre。盤名之所以是《Soundtrack》，因為音樂只是那場演出的其中一個面向，還有舞蹈、燈光與詩。",
+  "keyTracks": [
+   "Enigmatic Insomniac Machine",
+   "The Death of Don Quixote",
+   "Pinky: A Mystery Circle"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969。release-group first-release-date **1969**、**依裁定 220 回問轄下 release**，最早的一筆就是 1969／US／Official 的 Elektra D9-103，另一筆是 2006 年的 CD，沒有以再發日期建檔的問題；條目寫「1969 年 7 月首張單曲，次月發行首張專輯《Soundtrack》」；串流店面 gb 1601296749 的 releaseDate 與 ℗ 欄同為 1969。**三處一致。⚠ 同名先行單曲：無，但有先行單曲**——1969 年 7 月的〈Ballad (of the Big Girl Now and a Mere Boy)〉比專輯早一個月，**曲名與盤名不同名**。",
+  "notes": "⚠ **這是全批三張封面庫拿不到圖的其中一張，靠串流那一路救回來的**（裁定 219／209）：封面庫 front 回 404、2026-09-06 複查仍是 404，串流條目 1601296749 有 artwork。**這三張全部在 a 組，全部靠串流救回。**｜**廠牌兩說**：MB 轄下唯一的 1969 release 是美國的 Elektra D9-103（卡單 `label` 欄照此填），**條目則說他們是 Dandelion Records 簽下的第一組藝人**。兩者不衝突（英國廠牌與美國發行版），但**行文若要提廠牌，只能擇一並寫清楚是哪一邊，不要把兩個廠牌並列成同一件事**。｜**串流版多兩軌**（先行單曲與〈Lament For The Earth〉），**行文只能引原盤 6 軌**。｜曲名字面差異兩處：原盤〈Sacrifice〉／店面〈Sacfrifice〉、原盤〈Pinky: A Mystery Circle〉／店面〈Pinky: A Mystery Cycle〉，**行文照原盤**。｜條目引用的樂評語與 Dandelion 共同創辦人對樂團的貶詞**一律不入行文**。｜掛名很長（4 個字），行文可在第二次提及時用簡稱，但**首次出現要寫全名**。"
  }
 ]
