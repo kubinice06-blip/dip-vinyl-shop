@@ -1,1 +1,260 @@
-[]
+[
+ {
+  "key": "desc4:痛仰樂隊|這是個問題",
+  "artist": "痛仰樂隊",
+  "album": "這是個問題",
+  "facts": [
+   {
+    "f": "釘定的 release-group 102d0b1f 欄位：title《这是个问题》（簡體建檔）、artist-credit《痛仰乐队》（藝人實體 9e45a3c0，country CN、type Group、disambiguation「Chinese rock band」、成軍 1999-07）、first-release-date **2001-09-19**、primary-type Album、secondary-types **空**、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/102d0b1f-16fe-44a2-a324-6c372da05bc2?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 都是 **11 軌、同曲同序**，差別只在語言：2001-09-19 的 CN／Official CD（條碼 9787880050066）用中文曲名——1〈哪里有压迫哪里就有反抗〉2:24、2〈愤怒〉4:22、3〈像个婊子〉3:53、4〈复制者〉4:30、5〈万岁〉2:45、6〈这是个问题〉6:27、7〈中国特色〉4:07、8〈真实的邪念〉5:07、9〈让位〉4:10、10〈自由的边缘〉5:33、11〈幌子〉6:14；另一筆整張標英文《This Is A Problem》，十一軌逐位置英譯。**十一軌合計約 49 分半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=102d0b1f-16fe-44a2-a324-6c372da05bc2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **471156792**，題名用英文《This Is a Problem》，掛在藝人條目 1078890772（tw 顯示繁體「痛仰樂隊」）名下。**tw 店面攤得出 11 軌、11 軌全部有試聽**，trackCount 欄 11、releaseDate 2001-01-01、℗ **2001 Beijing Scream Records**（即京文旗下的嚎叫唱片）。**曲名全部是英文**：Where There Is an Oppression, There Is a Revolution 2:24／Wrath 4:23／Like a Bitch 3:53／The Duplicator 4:31／Hooray 2:45／This Is a Problem 6:28／The Chinese Stuff 4:07／The True Wicked Idea 5:07／Move Over 4:11／On the Edge of the Freedom 5:33／Pretense 6:15，逐軌長度與釘定條目相差不到 1 秒。",
+    "src": "https://itunes.apple.com/lookup?id=471156792&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈痛仰乐队〉：「痛仰樂隊（英文：Miserable Faith），**原名痛苦的信仰樂隊，1999年成立於北京**……2001年發行的首張專輯《这是个问题》所表現出的強烈批判意識，讓痛苦的信仰在獲得歌迷的注意。」條目並記「2001年，樂隊簽約京文嚎叫唱片，發行第一張專輯《这是个问题》」，以及「**2017年9月18日起，樂隊首張專輯《这是个问题》在中國大陸各大音樂網站下架**」。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%97%9B%E4%BB%B0%E4%B9%90%E9%98%9F"
+   },
+   {
+    "f": "藝人 MBID 9e45a3c0 分頁全列，名下共 **8 個 release-group**：2001-09-19 本張、2006-02-28《不》（EP）、2008-10《不要停止我的音乐》、2009-06-19《改变你的生活》、2010-05-04《盛开》（EP）、2014《愿爱无忧》、2017-01-09《今日青年》、以及一筆無日期的《痛仰乐队英国现场》（Album+Live）。**本張是名下日期最早的一筆。** 別名欄登錄英文 Miserable Faith、簡稱「痛仰」與繁體「痛仰樂隊」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9e45a3c0-0e98-4217-a144-f7e17b12118b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "線上店面該藝人條目 1078890772 名下共 12 筆，除本張外全部是 2006 年之後的：《不》EP (2006)、《不要停止我的音樂》(2008)、《盛開》EP (2010)、《願愛無憂》(2014)、《今日青年》(2016)、《過海》(2019)、《痛仰乐队英国现场 (Live)》(2018) 與幾支單曲。**2001 到 2006 之間只有本張一筆。**",
+    "src": "https://itunes.apple.com/lookup?id=1078890772&country=tw&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌在店面上全部掛英文題名，中文原題只留在實體版的曲目單上",
+   "團名原本是四個字，這張出版時他們還叫痛苦的信仰"
+  ],
+  "sound": "十一軌、合計約 49 分半。節奏是硬核取向的：開場〈哪里有压迫哪里就有反抗〉2:24 與第 5 軌〈万岁〉2:45 是兩首短促的快歌，中段〈这是个问题〉6:27 與收尾的〈幌子〉6:14 則把長度拉開，其餘七軌壓在 3:53 到 5:33。曲名幾乎每一首都是一句斷言或口號——〈愤怒〉〈复制者〉〈中国特色〉〈让位〉〈自由的边缘〉，同名曲擺在正中間第六軌。同一批錄音另有一份整張英譯的版本，逐軌長度相差不到一秒，線上流通的正是英文題名那一版。",
+  "keyTracks": [
+   "这是个问题",
+   "哪里有压迫哪里就有反抗",
+   "愤怒",
+   "让位"
+  ],
+  "status": "full",
+  "yearVerified": "**2001 ✓，三處相符，日期精確到日。** 釘定條目 first-release-date 2001-09-19、其下 CN 首版（條碼 9787880050066）同為 2001-09-19；中文百科〈痛仰乐队〉記《2001年发行的首张专辑\u00001\u0000》；線上店面 collectionId 471156792 的 releaseDate 2001-01-01（月初佔位）、℗ 2001 Beijing Scream Records。卡片年份 2001 正確。要分開的年份：1999 成軍、2006 纔有下一張出版品。",
+  "notes": "**探測層判定覆核通過且加值**：卡單記「471156792 tw《This Is a Problem》2001 11 軌｜依據：年份」——**配對正確**，實測 tw 店面攤得出 11 軌、11 軌全有試聽，逐軌長度與釘定條目相差不到 1 秒。封面 CAA 亦有（release-group/102d0b1f 回 200）。\\n**⚠ 曲名語言要注意**：**線上店面那一筆整張都是英文題名**（This Is a Problem／Wrath／Hooray……），中文原題只出現在實體版的曲目單上。寫作層若要引曲名，用中文原題並註明店面掛英文，或直接避開。\\n**「首張專輯」可以寫**：中文百科明寫《首张专辑》，釘定目錄裡八個 RG 也是這張最早，兩處一致。\\n**「原名痛苦的信仰樂隊」可以寫**——有來源，且是這張最好用的一條（碟出版時樂隊還叫舊名）。\\n**⚠ 政治敏感**：百科記本張自 2017 年 9 月 18 日起在中國大陸各大音樂網站下架。**這是有來源的事實，但要寫就只能照抄「下架」這個動作，不得推測原因、不得評論**（百科原文附帶的解釋語句不要照搬）。若寫作層拿捏不準，**建議整條不寫**——本張可寫的材料已經夠多。\\n**「四大硬核」的說法**（百科稱本團曾與夜叉、扭曲的機器及舌頭一起被譽為中國搖滾的四大硬核）**沒有具名出處，不要寫**；不過「與舌頭同屬一條硬核線」這種不帶名分的描述可以用——舌頭本批收了兩張。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《這是個問題》／《痛仰樂隊》**；別名欄本來就有繁體「痛仰樂隊」，tw 店面顯示的也是繁體。\\n**可補的 Apple collectionId：`471156792`／建議店面 tw／11 軌、11 軌全有試聽（曲名為英文）。**"
+ },
+ {
+  "key": "desc4:張淺潛|靈魂出竅",
+  "artist": "張淺潛",
+  "album": "靈魂出竅",
+  "facts": [
+   {
+    "f": "釘定的 release-group c7409c06 欄位：title《灵魂出窍》（簡體建檔）、artist-credit《张浅潜》（藝人實體 2ac03b9e，country CN、type Person）、first-release-date **2001-05**、primary-type Album、secondary-types **空**、轄下 2 個 release。別名欄只登錄一個繁體寫法「張淺潛」。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c7409c06-5ceb-4194-bed4-adc1f23f4dd0?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 同曲同序、都是 CD **14 軌**、共用同一組條碼 9787880900309，差別在年份與廠牌：2001-05 那筆記成都音像出版社，2006 那筆記口袋唱片。曲目：1〈火焰〉2〈另一种情感〉3〈继续漫游〉4〈孤胆英雄之土豆呼叫红薯篇〉5〈险些崩溃〉6〈数数〉7〈我用幻觉移动你〉8〈星光撒在湖面上〉9〈不朽〉10〈灵魂出窍〉11〈迷途〉12〈湿润〉13〈罐头〉14〈独眠〉。**各軌未登錄長度。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c7409c06-5ceb-4194-bed4-adc1f23f4dd0&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**線上店面只有 13 軌，比釘定條目少一軌。** collectionId **1749213944**《靈魂出竅》四店都有，**tw／hk／us 三店攤得出 13 軌、13 軌全部有試聽**（cn 只回專輯層），trackCount 欄 13、releaseDate 2001-05-01、℗ **2001 張淺潛**（版權標示直接掛她本人）。逐軌：1〈火焰〉5:48、2〈繼續漫遊〉4:19、3〈孤膽英雄之土豆呼叫紅薯篇〉4:32、4〈險些崩潰〉4:23、5〈數數〉1:34、6〈我用幻覺移動你〉1:56、7〈星光灑在湖面上〉5:21、8〈不朽〉7:31、9〈靈魂出竅〉4:39、10〈迷途〉3:00、11〈濕潤〉4:15、12〈罐頭〉4:40、13〈獨眠〉1:59。**少掉的是釘定條目的第 2 軌〈另一种情感〉**；其餘十三軌逐位置對得上。**tw／hk 店面的曲名全部是繁體。**",
+    "src": "https://itunes.apple.com/lookup?id=1749213944&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "從店面攤出的長度算，十三軌合計約 53 分半：最長的〈不朽〉7:31，最短的〈數數〉1:34 與〈我用幻覺移動你〉1:56、〈獨眠〉1:59——**十三軌裡有三軌不到兩分鐘**，長短落差是全批最大的之一。",
+    "src": "https://itunes.apple.com/lookup?id=1749213944&country=hk&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 MBID 2ac03b9e 分頁全列，名下只有 **2 個 release-group**：2001-05 本張與 2008-10-08《自己的主人EP》（EP+Live）。**這是她名下唯一一張 primary-type Album。** 這個實體沒有登錄 area、沒有生卒年，外部連結只有兩個資料庫頁。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2ac03b9e-c3f9-4215-bf5c-04ca722f44f4&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有三軌不到兩分鐘，最長的〈不朽〉卻跑了 7 分 31 秒",
+   "版權標示上沒有唱片公司，只有她自己的名字"
+  ],
+  "sound": "線上流通的版本十三軌、合計約 53 分半（實體版多一軌〈另一种情感〉，共十四軌）。這是一張長短極不平均的碟：〈數數〉1:34、〈我用幻覺移動你〉1:56 與收尾的〈獨眠〉1:59 三首不到兩分鐘，像三段插曲；撐起結構的是〈不朽〉7:31、〈火焰〉5:48 與〈星光灑在湖面上〉5:21。曲名帶著明顯的私語與夢境色彩——〈我用幻覺移動你〉〈星光灑在湖面上〉〈濕潤〉〈獨眠〉——中間插一首題名長得突兀的〈孤膽英雄之土豆呼叫紅薯篇〉4:32。線上版的版權標示直接掛她本人的名字，不是唱片公司。",
+  "keyTracks": [
+   "灵魂出窍",
+   "不朽",
+   "孤胆英雄之土豆呼叫红薯篇",
+   "我用幻觉移动你"
+  ],
+  "status": "full",
+  "yearVerified": "**2001 ✓，兩處相符。** 釘定條目 first-release-date 2001-05、其下 2001-05 的 CN／Official（成都音像出版社）同為 2001-05；線上店面 collectionId 1749213944 的 releaseDate **2001-05-01**、℗ 2001，**連月份都對上**。釘定條目底下另有一筆 2006 的 CN／Official（口袋唱片、同一組條碼），那是再版，不可採。**可查的百科裡沒有她的條目、也沒有這張的條目**，第三處旁證缺席。卡片年份 2001 正確。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為「目錄裡找不到」——**實測找得到**：collectionId **1749213944** 四店都有，tw／hk／us 三店攤得出 13 軌、13 軌全有試聽，曲名繁體。這是本批迴撈到的新條目之一。封面 CAA 亦有（release-group/c7409c06 回 200）。\\n**⚠ 軌數兩說（裁定 175）**：釘定條目 14 軌、線上店面 13 軌，少的是第 2 軌〈另一种情感〉。**依裁定以攤得開的曲目列為準，寫 13 軌**；若要寫 14 軌必須註明是實體版。\\n**擋下策展層一處**：`curatorWhy`（透過卡單的場景欄）把她放在「池中中國搖滾線由女性主導的隊伍是 0 支」這個脈絡裡。**這個描述本身沒問題**，但**不要寫成「唯一的女聲」或「第一位」**——同批 a 組的眼鏡蛇樂隊（全女子編制）與指南針（女主唱）都在同一批裡，序數說法會互相打架。\\n**她的資料極少**：可查的百科沒有她的個人條目，MB 實體連 area 都沒填，名下只有兩個 release-group。可寫的硬事實集中在曲目、長度與「版權標示掛本人」這幾點。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《靈魂出竅》／《張淺潛》**；別名欄本來就有繁體「張淺潛」，tw／hk 店面也是繁體。\\n**可補的 Apple collectionId：`1749213944`／建議店面 tw（hk／us 亦可）／13 軌、13 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:舌頭|這就是你",
+  "artist": "舌頭",
+  "album": "這就是你",
+  "facts": [
+   {
+    "f": "釘定的 release-group 3946c02d 欄位：title《这就是你 (This Is You)》（**建檔的盤名本身就中英並列**）、artist-credit《舌头》（藝人實體 8a436167，country CN、area 大理白族自治州、type Group、成軍 1995-08）、first-release-date **2002-08-02**、primary-type Album、secondary-types **空**、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/3946c02d-2caa-4ac7-b349-5f4a91919c08?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 都是 **10 軌、同曲同序**：2002 的 CN／Official CD（引擎唱片、條碼 9787886190391）與一筆 2002-08-02 的數位版（無廠牌）。逐軌長度：1〈行动〉3:16、2〈乌鸦〉7:05、3〈靶子〉2:48、4〈蒙在鼓里〉5:03、5〈尾巴〉4:52、6〈这就是你〉6:26、7〈传子〉3:50、8〈油漆匠〉5:01、9〈中国龙〉4:38、10〈幌子〉5:58。**每一軌的中文題後面都附一個英文副題**（Move／Crows／Target／Be Kept in the Dark／Tail／This Is You／Because People Don't Need／Decorator／China Dragon／Excuse），兩筆 release 的英文副題用字略有出入。**十軌合計約 49 分。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3946c02d-2caa-4ac7-b349-5f4a91919c08&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**線上店面只有 9 軌，比釘定條目少一軌。** collectionId **1709599133**《This Is You这就是你》掛在藝人條目 1709558933「SheTou舌頭」名下，**tw 與 us 兩店攤得出 9 軌、9 軌全部有試聽**，trackCount 欄 9、releaseDate **2002-08-07**、℗ **2023 Pulay Music**（是 2023 年的數位上架）。曲名**全部只有英文**：Action 3:17／Crow 7:05／Target 2:48／Be Kept in the Dark 5:04／Tail 4:53／This Is You 6:27／Because People Don't Need 3:50／Chinese Dragon 4:39／Excuse 5:59。**少掉的是第 8 軌〈油漆匠〉**——它在同一個藝人條目下被單獨上架成一支單曲（collectionId 1711275264《Painter》，1 軌、標 2002-10-10）。",
+    "src": "https://itunes.apple.com/lookup?id=1709599133&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**〈油漆匠〉不只是一首曲名。** 釘定的藝人目錄裡，這支樂隊在本張之前一年還有一張 2001-08-01 的《油漆匠》（primary-type Album、secondary-types Live），**與本張第 8 軌同名**；子字串比對會互相喫掉，配對時必須分開。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8a436167-4406-4388-9945-cc04f0a4dfbb&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**短掛名回問結果（裁定 179／212）**：藝人實體 8a436167 是唯一一個對得上的中文實體（Group／CN／大理白族自治州／1995-08 起），別名含 She Tou、SheTou、Shuh Tou、Tongue（en）與繁體「舌頭」。**線上店面把這支樂隊拆在三個不同的 artistId 上**——1531054514《舌头乐队》（名下只有 2016 年那張）、1620335234《舌头乐队》（只有一支客串單曲）、1709558933「SheTou舌頭」（本張與〈Painter〉單曲）；以英文別名 Tongue 查到的七八個條目全部是不相干的外語藝人。",
+    "src": "https://itunes.apple.com/lookup?id=1709558933&country=tw&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第八軌〈油漆匠〉在線上版整個消失，被單獨上架成一支單曲；同名的還有他們前一年那張現場專輯",
+   "十軌的中文題後面各附一個英文副題，線上流通的版本乾脆只剩英文"
+  ],
+  "sound": "十軌、合計約 49 分（線上流通的版本少一軌，只有九軌）。長度落差大：〈乌鸦〉7:05 與同名曲〈这就是你〉6:26 是兩根長柱，最短的〈靶子〉2:48 夾在中間，其餘落在 3:16 到 5:58。曲名短、硬、指向明確——〈行动〉〈靶子〉〈蒙在鼓里〉〈中国龙〉〈幌子〉，每一首後面都跟著一個英文副題，這是這份建檔的固定寫法。收尾的〈幌子〉5:58 與同批 b 組痛仰樂隊那張的末軌同名，但不是同一首。編制上是硬核取向的樂隊配置，樂隊自 1995 年 8 月起活動，建檔上的所在地登錄在雲南大理。",
+  "keyTracks": [
+   "这就是你",
+   "乌鸦",
+   "中国龙",
+   "行动"
+  ],
+  "status": "full",
+  "yearVerified": "**2002 ✓，兩處相符，日期近乎逐日。** 釘定條目 first-release-date 2002-08-02、其下數位版同為 2002-08-02、CD 版記 2002；線上店面 collectionId 1709599133 的 releaseDate **2002-08-07**（差五天）。**℗ 標的是 2023 Pulay Music，那是數位上架年，不是原盤年。** 可查的百科裡沒有這支樂隊的條目，第三處旁證缺席。卡片年份 2002 正確。要分開的年份：2001-08-01 的《油漆匠》是現場專輯，不是這張。",
+  "notes": "**探測層判定覆核通過並修正一處**：卡單把這張列為「目錄裡找不到」，**且這是本批四張 CAA 無封面的碟之一**——實測**線上店面有**：collectionId **1709599133**（掛在 artistId 1709558933「SheTou舌頭」名下），tw 與 us 兩店攤得出 9 軌、9 軌全有試聽。**這一筆同時解決封面與試聽兩件事**，是本批迴撈價值最高的一個。\\n**⚠ 軌數兩說（裁定 175）**：釘定條目 10 軌、線上店面 9 軌，少的是第 8 軌〈油漆匠〉（它被單獨上架成單曲 1711275264）。**依裁定以攤得開的曲目列為準，寫 9 軌**；若要寫 10 軌必須註明是實體版。\\n**⚠ 曲名語言**：線上那一筆**只有英文題名**，中文原題只在實體版的曲目單上。\\n**⚠ 同名撞卡兩處**：（1）本張第 8 軌〈油漆匠〉與樂隊 2001 年的現場專輯《油漆匠》同名；（2）本張末軌〈幌子〉與同批 b 組痛仰樂隊《這是個問題》的末軌同名。兩處都不是同一個東西。\\n**同批兩張同藝人**：a 組《小雞出殼》(1999) 與本張同屬 8a436167，但線上店面只有本張；不要互相串。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《這就是你》／《舌頭》**；別名欄本來就有繁體「舌頭」。\\n**可補的 Apple collectionId：`1709599133`／建議店面 tw（us 亦可）／9 軌、9 軌全有試聽（曲名為英文）。⚠ 這一筆同時是這張的封面來源。**"
+ },
+ {
+  "key": "desc4:聲音碎片|世界是噪音的花園",
+  "artist": "聲音碎片",
+  "album": "世界是噪音的花園",
+  "facts": [
+   {
+    "f": "釘定的 release-group b97ac294 欄位：title《世界是噪音的花园》（簡體建檔）、artist-credit《声音碎片》（藝人實體 c458e9c5，country CN、type Group）、first-release-date **2002**、primary-type Album、secondary-types **空**、轄下 1 個 release。別名欄登錄英文 Sound Fragment 與繁體「聲音碎片」。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b97ac294-795b-4b4f-ae88-540974b59b66?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release：CN／Official／2002，載體是 **Cassette（卡帶）**、11 軌，條碼 9787880795776，廠牌欄記天津音像公司。逐軌長度：1〈自欺〉5:13、2〈平衡〉4:05、3〈妄想狂〉4:20、4〈狂欢〉4:10、5〈这一刻〉4:05、6〈所有人都必须这样吗〉4:27、7〈从内部成熟〉4:50、8〈请不要关我的灯〉5:02、9〈投降〉5:17、10〈秘密路线〉4:52、11〈世界是噪音的花园〉5:11。**十一軌合計約 51 分半，每一軌都落在 4:05 到 5:17 之間——全批曲長最平均的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b97ac294-795b-4b4f-ae88-540974b59b66&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1808899053**，**tw 店面攤得出 11 軌、11 軌全部有試聽**，trackCount 欄 11、releaseDate 2002-01-01（月初佔位）、℗ **2002 北京摩登天空文化發展有限公司**——**與釘定條目登錄的天津音像公司不是同一家**。tw 店面顯示的藝人名是繁體「聲音碎片」，曲名也全部繁體：〈自欺〉〈平衡〉〈妄想狂〉〈狂歡〉〈這一刻〉〈所有人都必須這樣嗎〉〈從內部成熟〉〈請不要關我的燈〉〈投降〉〈祕密路線〉〈世界是噪音的花園〉，逐軌長度與釘定條目**逐位置相符到秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1808899053&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 MBID c458e9c5 分頁全列，名下共 **8 個 release-group**：2002 本張、2005《Under life is…》、2008-09《把光芒洒向更开阔的地方》、2015-11-27 與周雲蓬合作的現場專輯、2019-05-14《没有鸟鸣，关上窗吧》、2020-12-22《遍地风流》（Album+Live）、2021-05-28《昔日我曾苍老》、2022-08-10《有限身 无穷念》。**本張是名下日期最早的一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c458e9c5-6d39-4d4e-856c-8c861f707182&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**與本批另一張碟有直接關聯**：釘定目錄裡 2015-11-27 那一筆《树生长的声音——周云蓬 × 声音碎片北京站 live》同時掛在這支樂隊與周雲蓬名下——**周雲蓬本批 b 組另收一張 2004 年的《沉默如謎的呼吸》。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e3587c0a-2f41-4bf3-bd61-1145ec9e685b&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌沒有一首短於四分鐘、也沒有一首超過五分二十秒——整張的呼吸幾乎是同一個長度",
+   "第六軌把一句問話整個搬上曲名：〈所有人都必须这样吗〉"
+  ],
+  "sound": "十一軌、合計約 51 分半，**是本批曲長最平均的一張**：十一軌全部落在 4:05 到 5:17 這一分十二秒的區間裡，沒有短插曲也沒有長曲，整張維持同一個呼吸。實體版的載體是卡帶。曲名分成兩路——一路是抽象的心理狀態（〈自欺〉〈平衡〉〈妄想狂〉〈投降〉），一路是完整的句子（〈所有人都必须这样吗〉〈请不要关我的灯〉），同名曲〈世界是噪音的花园〉5:11 放在最後收尾。開場〈自欺〉5:13 與收尾同名曲幾乎等長，首尾對稱。",
+  "keyTracks": [
+   "世界是噪音的花园",
+   "自欺",
+   "所有人都必须这样吗",
+   "请不要关我的灯"
+  ],
+  "status": "full",
+  "yearVerified": "**2002 ✓，兩處相符。** 釘定條目 first-release-date 2002、其下唯一 release（CN／Official／天津音像公司／卡帶／條碼 9787880795776）同為 2002；線上店面 collectionId 1808899053 的 releaseDate 2002-01-01（月初佔位）、℗ 2002。**可查的百科裡沒有這支樂隊的條目，第三處旁證缺席。** 卡片年份 2002 正確。**廠牌兩說**：釘定條目記天津音像公司、線上版權標示記摩登天空，**寫作層不要指名廠牌**。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為「目錄裡找不到」——**實測找得到**：collectionId **1808899053**，tw 店面攤得出 11 軌、11 軌全有試聽，曲名與藝人名都是繁體，逐軌長度與釘定條目分秒相符。封面 CAA 亦有（release-group/b97ac294 回 200）。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**可寫的硬事實**：曲長極度平均這一點是這張最有辨識度的特徵（十一軌全在 4:05–5:17 之間），且有兩處來源可以互相印證；實體版是卡帶。\\n**不要寫序數**：釘定目錄裡這張確實是名下最早的一筆，但沒有第二處來源背書。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《世界是噪音的花園》／《聲音碎片》**；別名欄本來就有繁體「聲音碎片」，tw 店面顯示的也是繁體。\\n**可補的 Apple collectionId：`1808899053`／建議店面 tw／11 軌、11 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:二手玫瑰|二手玫瑰",
+  "artist": "二手玫瑰",
+  "album": "二手玫瑰",
+  "facts": [
+   {
+    "f": "釘定的 release-group 4eaedf29 欄位：title《二手玫瑰》（簡繁同形）、artist-credit《二手玫瑰》（藝人實體 e49f6e64，country CN、type Group、成軍 2000-07）、first-release-date **2003-01**、primary-type Album、secondary-types **空**、轄下 1 個 release。別名欄登錄 Second Hand Rose（en）、Second-Hand Rose 與羅馬字 ershou meigui。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release：CN／Official／2003-01，CD 單片 **10 軌**，條碼 9787799610085，廠牌欄記天津市泰達音像發行中心。逐軌長度：1〈伎俩〉4:17、2〈火车快开〉5:47、3〈允许部分艺术家先富起来〉4:31、4〈征婚启示〉4:48、5〈招安〉6:24、6〈采花〉4:29、7〈因为所以〉4:07、8〈嫂子颂〉5:41、9〈公益歌曲〉3:32、10〈好花红〉7:03。**十軌合計約 50 分半，收尾的〈好花红〉7:03 最長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **264594758**，題名寫《Second Hand Rose (Er Shou Mei Gui)》，**tw 店面攤得出 10 軌、10 軌全部有試聽**，trackCount 欄 10、releaseDate 2003-01-01、℗ **2007 CRC Jianian, Inc.**（是後來的再發版權標示）。**曲名採「英譯（拼音）」並列的寫法**：Trick (Ji Liang) 4:17／On the Way (Huo Che Kuai Kai) 5:47／Allowing Some Artists to Get Rich First (Yun Xu Bu Fen Yi Shu Jia Xian Fu Qi Lai) 4:31／Marriage Seeker (Zheng Hun Qi Shi) 4:49／Let You Go (Zhao An) 6:24／Picking a Flower (Cai Hua) 4:29／Because (Yin Wei Suo Yi) 4:07／Ode to My Sister-in-Law (Sao Zi Song) 5:42／Charity Song (Gong Yi Ge Qu) 3:32／Red Flower (Hao Hua Hong) 7:03，逐軌長度與釘定條目相符到 1 秒。",
+    "src": "https://itunes.apple.com/lookup?id=264594758&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈二手玫瑰〉：「二手玫瑰是由樂手樑龍於**1999年**在中國大陸建立的一隻搖滾樂隊。該樂隊的音樂**結合了東北二人轉和現代搖滾樂**，以獨特雌雄難辨的嗓音，誇張的舞臺造型和表演、樸實戲謔的唱詞爲特色。」條目記樂隊現行編制包含一名專責民族樂器的樂手「表演時使用**嗩吶**和葫蘆絲等」；團名的來歷是「『二手』是自嘲以前樂隊一直模仿其他樂隊，『玫瑰』代表愛慕」。",
+    "src": "https://zh.wikipedia.org/wiki/%E4%BA%8C%E6%89%8B%E7%8E%AB%E7%91%B0"
+   },
+   {
+    "f": "同一個條目記了這張碟出版前的來龍去脈：主唱梁龍在哈爾濱郊區借住時「**在鄉下生活的薰染下，樑龍寫出了融合了二人轉風格的《采花》**」——即本碟第 6 軌；「2001年魔巖唱片的經紀人相中了二手玫瑰……不過，因爲樑龍與經紀人理念不合以及公司在大陸撤資，**最後並沒有合作發行專輯**。2002年黃燎原經人引薦，認識了樑龍，在其邀請下成了樂隊的經紀人，**幫助二手玫瑰出了專輯**」。",
+    "src": "https://zh.wikipedia.org/wiki/%E4%BA%8C%E6%89%8B%E7%8E%AB%E7%91%B0"
+   },
+   {
+    "f": "藝人 MBID e49f6e64 分頁全列，名下共 **7 個 release-group**，全是 primary-type Album、secondary-types 空：2003-01 本張、2006-10-17《娱乐江湖》、2010《人人有颗主唱的心》、2013-07-24《一枝独秀》、2013-10-08《Stealing the Show》、2018-11-27《我要开花》、2021-12-31《冰城之夏》。**本張是名下日期最早的一筆。** 線上店面該藝人條目另有 2018 年的十八週年跨年演唱會現場專輯（兩個版本，17 軌與 18 軌），**曲目與本張重疊六首**（〈伎倆〉〈嫂子頌〉〈採花〉〈因爲所以〉〈火車快開〉〈好花紅〉），配對時不要誤取。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e49f6e64-12db-4879-8e66-6bcc614f61d0&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第三軌把一句口號整個當成歌名：〈允许部分艺术家先富起来〉",
+   "唱腔與編制來自東北二人轉，樂隊裡有一支專責的嗩吶"
+  ],
+  "sound": "十軌、合計約 50 分半。曲長分佈前緊後鬆：前四軌壓在 4:07 到 5:47，中段〈招安〉6:24 拉開，收尾的〈好花红〉7:03 是全碟最長，最短的〈公益歌曲〉3:32 排在倒數第二。音樂上把東北二人轉的旋律與唱腔接進搖滾編制，樂隊裡有一名專責民族樂器的樂手，嗩吶是固定音色。曲名幾乎每一首都是一句現成語彙的挪用——〈伎俩〉〈允许部分艺术家先富起来〉〈征婚启示〉〈招安〉〈公益歌曲〉——第 6 軌〈采花〉是主唱最早寫成的那批二人轉風格作品之一。海外店面把十軌全部改成「英譯（拼音）」並列的寫法。",
+  "keyTracks": [
+   "允许部分艺术家先富起来",
+   "采花",
+   "招安",
+   "好花红"
+  ],
+  "status": "full",
+  "yearVerified": "**2003 ✓，兩處相符。** 釘定條目 first-release-date 2003-01、其下唯一 release（CN／Official／天津市泰達音像發行中心／條碼 9787799610085）同為 2003-01；線上店面 collectionId 264594758 的 releaseDate 2003-01-01，**年月都對上**。**℗ 標的是 2007 CRC Jianian，那是再發的版權標示，不是原盤年。** 中文百科沒有直接寫這張的年份，但把「2002 年黃燎原成為經紀人、幫助樂隊出了專輯」記在 2003 年之前，時序相符。卡片年份 2003 正確。要分開的年份：1999 成軍（釘定條目記 2000-07，與百科的 1999 差一年）、2001 與魔巖的合作破局。",
+  "notes": "**探測層判定覆核通過**：卡單記「264594758 tw《Second Hand Rose (Er Shou Mei Gui)》2003 10 軌｜依據：年份」——**配對正確**，實測 tw 店面攤得出 10 軌、10 軌全有試聽。封面 CAA 亦有（release-group/4eaedf29 回 200）。\\n**⚠ 曲名語言**：線上那一筆的曲名是**英譯加拼音**，沒有中文原題。寫作層引曲名請用中文原題。\\n**自我同名**（盤名＝掛名），線上店面找得到，符合 c-67 的收錄條件。\\n**⚠ 現場專輯撞卡**：同一個藝人條目下有 2018 年的十八週年跨年演唱會現場專輯兩個版本（17 軌與 18 軌，collectionId 1652010807／1872911468），**與本張重疊六首曲名**；建卡與驗收時要排除。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。**可寫的硬事實**：二人轉＋搖滾的組合、嗩吶是固定編制、團名的自嘲來歷、〈采花〉是最早寫成的那批曲子——四條都有來源。\\n**成軍年兩說**：釘定條目記 2000-07、百科記 1999，**不要寫成軍年**。\\n**盤名與掛名都是簡繁同形**，不需改寫；tw 店面顯示的藝人名是「二手玫瑰」。\\n**可補的 Apple collectionId：`264594758`／建議店面 tw／10 軌、10 軌全有試聽（曲名為英譯＋拼音）。**"
+ },
+ {
+  "key": "desc2:Brain Failure|Turn On the Distortion!",
+  "artist": "Brain Failure",
+  "album": "Turn On the Distortion!",
+  "facts": [
+   {
+    "f": "釘定的 release-group 0b8df1c2 欄位：title《Turn On the Distortion!》、artist-credit《Brain Failure》（藝人實體 8a9ff5d1，country CN、type Group、disambiguation「Beijing punk」、成軍 1997）、first-release-date **2003-06-21**、primary-type Album、secondary-types **空**、轄下 2 個 release。條目掛的風格標籤是 oi、punk、rock、ska。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0b8df1c2-1771-3f94-8660-fd9c962257a9?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release **軌數不同**：2003-06-21 的 XW 數位版是 **12 軌**；同日的 **JP／Official CD（Bad News Records，catno BNCP-86）是 14 軌**——前十一軌相同，第 12 軌〈Sail〉在日版長 5:56（數位版 3:23），後面再多一段標「(Hidden Track)」4:37 與一首「That's What I Know (Bonus)」2:51。**日版是本張唯一標 Official 的實體版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0b8df1c2-1771-3f94-8660-fd9c962257a9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "十二軌的曲目與長度（數位版）：1 Coming Down to Beijing 4:02、2 KTV 3:32、3 The Party's Down 2:23、4 Call the Police 4:17、5 Living In the City 2:53、6 Lick Me Baby 1:54、7 No Dirty Punx 3:38、8 My Simple Life! 3:50、9 Tuqiang Song's 1:36、10 No Apologize 1:36、11 2008 2:53、12 Sail 3:23。**十二軌合計約 34 分——本批最短的一張**；十二軌裡有四軌不到三分鐘。日版把第 1 與第 9 軌另附了中文題（〈欢迎来北京〉與〈図強之歌〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0b8df1c2-1771-3f94-8660-fd9c962257a9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **264649237**，題名寫《Turn On the Distortion》（少一個驚嘆號），**tw 與 us 兩店攤得出 12 軌、12 軌全部有試聽**，trackCount 欄 12、releaseDate **2003-06-21**（與釘定條目逐日相符）、℗ **Bad News Records**（無年份）。逐軌長度與釘定條目的數位版相差不到 1 秒，**曲序與軌數完全相同，是 12 軌版**。",
+    "src": "https://itunes.apple.com/lookup?id=264649237&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**這支樂隊的中文團名是「腦濁」。** 中文百科〈脑浊乐队〉：「腦濁樂隊（英語：Brain Failure），中國朋克搖滾樂隊，**成立於1997年**。一定程度上受到了衝撞樂隊、雷蒙斯樂隊、腐臭樂隊以及Dropkick Murphys和Social Distortion的影響。**樂隊立足於北京，也在歐美地區進行巡迴演出。**」英文百科〈Brain Failure〉補充：「The band's songs are performed in Mandarin and English. Their main references are The Clash and Rancid.」",
+    "src": "https://zh.wikipedia.org/wiki/%E8%84%91%E6%B5%8A%E4%B9%90%E9%98%9F"
+   },
+   {
+    "f": "藝人 MBID 8a9ff5d1 分頁全列，名下共 **15 個 release-group**；primary-type Album 且 secondary-types 為空的依日期排序為 2003-06-21 本張、2005-04-26《American Dreamer》、2007《Beijing to Boston》、2007-03-23《Coming Down to Beijing》、2009《Downtown Production》、2012《(Dare To Be) Tous Les Jours》、2012-11-01《歪打正着》、2021-04-01《滚蛋吧》。**本張是其中日期最早的一張正規專輯**（更早的 2001 年兩筆分別是 Compilation 與 Live，2002 年那筆是 EP）。**注意 2007 年有一張專輯就叫《Coming Down to Beijing》，與本張第 1 軌同名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8a9ff5d1-9690-4013-a6b2-bbfd693087e0&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌三十四分鐘，本批最短的一張——其中四軌連三分鐘都不到",
+   "日版多塞了兩軌：一段沒有名字的隱藏音軌，和一首標明是贈品的〈That's What I Know〉"
+  ],
+  "sound": "十二軌、合計約 34 分，**是本批四十四張裡最短的一張**。節奏全程壓在龐克的速度上：最長的開場曲〈Coming Down to Beijing〉4:02，最短的〈No Apologize〉1:36 與〈Tuqiang Song's〉1:36，十二軌裡有四軌不到三分鐘。條目掛的標籤把 oi 與 ska 一併列進來，可見編制不只是三件式。曲名混用英文口語與北京生活的專有名詞——〈KTV〉〈Living In the City〉〈No Dirty Punx〉〈2008〉——第 1 與第 9 軌在日版另附了中文題。日版把〈Sail〉延長到 5:56，後面再接一段隱藏音軌與一首標明是贈品的曲子，總共 14 軌。",
+  "keyTracks": [
+   "Coming Down to Beijing",
+   "KTV",
+   "2008",
+   "No Dirty Punx"
+  ],
+  "status": "full",
+  "yearVerified": "**2003 ✓，逐日相符。** 釘定條目 first-release-date 2003-06-21、其下兩筆 release（XW 數位版與 JP／Official CD）同為 2003-06-21；線上店面 collectionId 264649237 的 releaseDate 也是 **2003-06-21**——**三處把日期對到同一天**，是本批年份最硬的一張。℗ 只寫 Bad News Records、沒有年份。卡片年份 2003 正確。要分開的年份：1997 成軍、2007 年有一張與本張第 1 軌同名的專輯。",
+  "notes": "**探測層判定覆核通過**：卡單只記了封面走 CAA——實測**試聽也有**：collectionId **264649237**，tw 與 us 兩店攤得出 12 軌、12 軌全有試聽，releaseDate 與釘定條目逐日相符。封面 CAA 亦有（release-group/0b8df1c2 回 200）。\\n**⚠ 軌數兩說（裁定 175）**：釘定條目底下 12 軌（數位）與 14 軌（日版 CD）並存，線上店面是 **12 軌版**。依裁定以攤得開的曲目列為準，**寫 12 軌**。\\n**⚠ 盤名少一個驚嘆號**：釘定條目寫《Turn On the Distortion!》、線上店面寫《Turn On the Distortion》。**行文一律用釘定條目的寫法（帶驚嘆號）**，與卡片一致。\\n**⚠ 同名撞卡**：樂隊 2007 年有一張專輯就叫《Coming Down to Beijing》，與本張第 1 軌同名，子字串比對會互相喫掉。\\n**拉丁掛名維持不變**（本批規則第 6 條）：這支樂隊的中文團名是「腦濁」，但釘定條目與線上店面都用拉丁寫法 Brain Failure，卡片沿用拉丁掛名**正確**；行文若要提中文團名，寫繁體「腦濁」。\\n**擋下策展層零處**。**可寫的硬事實**：1997 年成軍、立足北京且在歐美巡演、受 The Clash 與 Rancid 一路影響（兩處百科都提到 The Clash）。\\n**「首張正規專輯」要小心**：釘定目錄裡 2001 年有兩筆更早的條目（一筆 Compilation、一筆 Live）、2002 年有一張 EP，**本張是最早的 primary-type Album 且 secondary-types 為空的一筆**——要寫序數就必須帶這個限定，否則不要寫。\\n**可補的 Apple collectionId：`264649237`／建議店面 tw（us 亦可）／12 軌、12 軌全有試聽。**"
+ }
+]
