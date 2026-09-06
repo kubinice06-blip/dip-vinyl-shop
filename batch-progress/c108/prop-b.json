@@ -1,0 +1,476 @@
+[
+ {
+  "artist": "Irakere",
+  "album": "Grupo Irakere",
+  "year": 1976,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Areito（catno LD-3660）",
+  "why": "Irakere 1973 年由 Chucho Valdés 在哈瓦那組成，MB 名下 50 個以上的 release-group 裡 1974–1980 年的錄音室與現場盤有八張。本張是 1976 年古巴國營廠牌 Areito 的 LD-3660、8 軌；2011 年 EGREM 以 XW 數位形態重發，2024 年英國 Mr Bongo 又以 MRBLP287／MRBCD287 重壓黑膠與 CD。實掃 seed_cards.json 全 14,424 列，Irakere 池中 0 張；古巴這條線池中有 Celia Cruz 六張、Buena Vista Social Club 兩張、Compay Segundo 兩張、Cachao 一張、Los Van Van 一張（《Llegó... Van Van》1999），1970 年代哈瓦那的樂團一張都沒有。 本批替 Irakere 收 1976／1978／1980 三張，分屬 Areito 古巴內銷、Columbia 美國與 CBS 三個發行體系。",
+  "risk": "**MB 的 release-group 標題與 artist-credit 都是「Grupo Irakere」，藝人實體名卻是「Irakere」**（MBID 70365513）；卡片掛名採實體名 Irakere、盤名採 RG 標題 Grupo Irakere，於是掛名與盤名互為子字串，去重要用完整的 artist|album 鍵。Apple us 449865814 把盤名拼成「**Groupo** Irakere」（多一個 u）8 軌、releaseDate 2011——拼錯的字串要進 queryAlias，否則標題比對配不到。年份採 MB 的 1976（Areito LD-3660），Apple 的 2011 是 EGREM 數位再發年。四筆 release 全部 Official。",
+  "mbNote": "釘 release-group 837ad33c-24c3-47fd-827d-36be2076ce30。回問確認：title「Grupo Irakere」、artist-credit「Grupo Irakere」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 4 筆 release（1976／CU／Official，Areito LD-3660，8 軌；2011-07-05／XW／Official，EGREM，8 軌；2024-01-26／GB／Official，Mr Bongo MRBLP287，8 軌；2024／GB／Official，Mr Bongo MRBCD287，8 軌）。藝人 MBID 70365513-39d7-47e3-b898-1f70f607b1fe（CU，1973 起）。刻意不釘：15740381-cffc-4f69-b868-a86e53181c83《Grupo Irakere / Teatro Amadeo Roldan recital》(1974，盤名完整包含本張)、db1b136a-3c5f-49d0-91c5-52396e4343dd《Musica cubana contemporanea》(1978)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Groupo Irakere；Grupo Irakere；Irakere Grupo Irakere",
+  "reissuedBy": "Mr Bongo（2024，GB，MRBLP287／MRBCD287）",
+  "g": "b"
+ },
+ {
+  "artist": "Irakere",
+  "album": "Irakere",
+  "year": 1978,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Areito（catno LD-3797）／Columbia（US 盤 JC 35655）",
+  "why": "Irakere 的同名盤，MB 轄下有 1978 年古巴 Areito LD-3797 與 1979 年美國 Columbia JC 35655 兩筆原盤（各 5 軌），以及 2007 年法國 Sony BMG（88697122762）與 2016 年日本 Sony Records International（SICJ 166）兩筆再發（各 8 軌）——是這個樂團少數同時有古巴、美國、歐洲與日本實體的碟。實掃 seed_cards.json 全 14,424 列，Irakere 池中 0 張；古巴這條線池中有 Celia Cruz 六張、Buena Vista Social Club 兩張、Compay Segundo 兩張、Cachao 一張、Los Van Van 一張（《Llegó... Van Van》1999），1970 年代哈瓦那的樂團一張都沒有。",
+  "risk": "**同名雙胞胎**：MB 名下另有一筆 1982 年的《Irakere》（e461d9ca，古巴 Areito，1 筆 release），標題完全相同、只差年份，配對必須以 rgMbid 分辨。**secondary-types 含 Live**——依 §5.6 明文與裁定第 167 條，primary-type 是 Album 就照一般 Album 寫、不填例外欄位。**軌數兩說**：1978／1979 原盤 5 軌、2007／2016 再發 8 軌，依裁定第 141 條行文不得寫原盤有幾軌。Apple 十個店面搜不到本張（us 目錄裡最接近的是 585556909「Essential Irakere (Live)」8 軌，未經核對不得取用）；CAA release-group 端點實測 307（有圖），封面走 CAA。",
+  "mbNote": "釘 release-group f296a22c-2132-445c-a5c6-49ad20e09ab3。回問確認：title「Irakere」、artist-credit「Irakere」、first-release-date 1978、primary-type Album、secondary-types [Live]、轄下 4 筆 release（1978／CU／Official，Areito LD-3797，5 軌；1979／US／Official，Columbia JC 35655，5 軌；2007-10-29／FR／Official，Sony BMG 88697122762，8 軌；2016-04-27／JP／Official，Sony Records International SICJ 166，8 軌）。藝人 MBID 70365513-39d7-47e3-b898-1f70f607b1fe。刻意不釘：e461d9ca-5f51-454e-8e04-3f8ea187b6e9《Irakere》(1982，同名別碟)、a06051b7-3a3b-4485-9346-475fe920f3c4《Live At Newport Jazz Festival And Montreux Jazz Festival》（無年份，內容與本張重疊、盤名不同）、585556909 那個 Apple 條目對應的《Essential Irakere (Live)》(2012 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Irakere 1978；Grupo Irakere；Irakere Columbia",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Irakere",
+  "album": "Irakere II",
+  "year": 1980,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "CBS（catno JC 36107）",
+  "why": "Irakere 的第二張國際發行盤，MB 轄下唯一一筆 release 是 CBS JC 36107、8 軌，編號緊接 1979 年美國 Columbia JC 35655 之後。實掃 seed_cards.json 全 14,424 列，Irakere 池中 0 張；古巴這條線池中有 Celia Cruz 六張、Buena Vista Social Club 兩張、Compay Segundo 兩張、Cachao 一張、Los Van Van 一張（《Llegó... Van Van》1999），1970 年代哈瓦那的樂團一張都沒有。 本批的三張 Irakere 中，這張是 1980 年代之前國際發行的最後一筆。",
+  "risk": "MB 這筆 release 的**國別欄是空的**（只有 status Official、廠牌 CBS JC 36107），行文不得斷言發行國。Apple 十個店面搜不到本張（us 藝人目錄 14226038 的 30 餘筆裡沒有 Irakere II）；CAA release-group 端點實測 307（有圖），封面走 CAA、試聽預期 unavailable。盤名帶羅馬數字 II，依裁定第 168 條，子字串比對會把它與《Irakere》(1978／1982) 混在一起——「數字殘餘」那道檢查測不到羅馬數字。",
+  "mbNote": "釘 release-group 1709dc1f-12f5-4326-ab78-dcc54a3c010f。回問確認：title「Irakere II」、artist-credit「Irakere」、first-release-date 1980、primary-type Album、secondary-types 空、轄下 1 筆 release（1980／國別空／Official，CBS JC 36107，8 軌）。藝人 MBID 70365513-39d7-47e3-b898-1f70f607b1fe。刻意不釘：f296a22c-2132-445c-a5c6-49ad20e09ab3《Irakere》(1978) 與 e461d9ca-5f51-454e-8e04-3f8ea187b6e9《Irakere》(1982)——本張的盤名完整包含這兩筆的標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Irakere 2；Irakere II CBS",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Van Van",
+  "album": "Sandunguera",
+  "year": 1986,
+  "genres": [
+   "world"
+  ],
+  "label": "Messidor（catno 115943／15989）",
+  "why": "Los Van Van 是 Juan Formell 1969 年組的哈瓦那樂團。MB 名下 45 個以上的 release-group，本張 1986 年由德國廠牌 Messidor 發行（115943／15989，9 軌），是他們的錄音在歐洲市場流通的一個具體條目。實掃 seed_cards.json 全 14,424 列，Irakere 池中 0 張；古巴這條線池中有 Celia Cruz 六張、Buena Vista Social Club 兩張、Compay Segundo 兩張、Cachao 一張、Los Van Van 一張（《Llegó... Van Van》1999），1970 年代哈瓦那的樂團一張都沒有。 池中這個樂團只有 1999 年的《Llegó... Van Van》一張，1980 年代完全空白，本批補 1986 與 1988 兩張。",
+  "risk": "MB 轄下兩筆 release 都是 Messidor、一筆 DE 一筆國別空，皆 Official、皆 9 軌。Apple cl 87065189「Sandunguera」9 軌但 releaseDate 記 2006（數位再發年），年份採 MB 的 1986。掛名在 Apple 上有 3736028「Los Van Van」與 259979827「Juan Formell y Los Van Van」兩個實體，藝人閘兩種都要認；池中既有那張掛「Los Van Van」，本卡沿用。CAA release-group 端點實測 307（有圖）。",
+  "mbNote": "釘 release-group 3a1bc826-481a-35df-8562-ccd1e0ae0b94。回問確認：title「Sandunguera」、artist-credit「Los Van Van」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 2 筆 release（1986／DE／Official，Messidor 115943，9 軌；1986／國別空／Official，Messidor 15989，9 軌）。藝人 MBID 452d9da4-21a7-44b0-8299-1ec4a8f031ef（CU，1969-12-04 起），分頁列完 45 個 release-group。刻意不釘：6b2d444c-45db-4729-b96f-1f571b3cdfa8《Eso que anda》(1986，同年另一張)、a9e1d03f-4e4f-4d37-8d08-5341dc981883《Eso que anda / Al son del Caribe - La titimania》(1990 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sandunguera；Juan Formell y Los Van Van",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Van Van",
+  "album": "Songo",
+  "year": 1988,
+  "genres": [
+   "world"
+  ],
+  "label": "Mango Records（catno MLPS 9825／CCD 9825）",
+  "why": "Los Van Van 1988 年由 Island 旗下的 Mango Records 在美國發行（MLPS 9825，8 軌；1989 年 CD 版 CCD 9825），2002 年 Island／Spectrum 又以 CID 9908 重發。盤名 songo 是 Juan Formell 這個樂團所用節奏的名稱。實掃 seed_cards.json 全 14,424 列，Irakere 池中 0 張；古巴這條線池中有 Celia Cruz 六張、Buena Vista Social Club 兩張、Compay Segundo 兩張、Cachao 一張、Los Van Van 一張（《Llegó... Van Van》1999），1970 年代哈瓦那的樂團一張都沒有。 本批與 1986 年 Messidor 的《Sandunguera》一起收，兩張分屬德國與美國兩條發行線。",
+  "risk": "Apple 十個店面搜不到本張（pe 搜到的 1543442736「Mi Songo (Edición 50 Aniversario)」是 2020 年的別碟、不得取用；cl 藝人目錄 3736028 的 40 餘筆裡也沒有）。CAA release-group 端點實測 307（有圖），封面走 CAA、試聽預期 unavailable。盤名只有五個字母，極易被更長的別碟包住（裁定第 162 條），去重要連掛名一起比。三筆 release 全部 Official、全 8 軌。",
+  "mbNote": "釘 release-group 3db98817-5d6b-47f4-824a-33708582625c。回問確認：title「Songo」、artist-credit「Los Van Van」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 筆 release（1988／US／Official，Mango Records MLPS 9825，8 軌；1989／US／Official，Mango Records CCD 9825，8 軌；2002／國別空／Official，Island CID 9908＋Spectrum Music，8 軌）。藝人 MBID 452d9da4-21a7-44b0-8299-1ec4a8f031ef。刻意不釘：ef6f0ba5-516b-478a-b213-39032e8f89db《El baile del buey cansao》(1982，Apple 與 CAA 兩條鏈都查無、本批不收)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Songo Los Van Van；Juan Formell y Los Van Van Songo",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Eddie Palmieri",
+  "album": "Justicia",
+  "year": 1969,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Tico Records（catno SLP-1188）",
+  "why": "Eddie Palmieri 1969 年在 Tico 的 LP（SLP-1188、9 軌），2006-06-06 Fania 重發。位置上在池中已有的《Azucar Pa' Ti》(1965) 與《Vámonos Pa'l Monte》(1971) 之間，是他 La Perfecta 解散後、進入 1970 年代 Fania 時期之前的一張。實掃 seed_cards.json 全 14,424 列，Eddie Palmieri 池中有六張：《Azucar Pa' Ti》(1965)、《Harlem River Drive》(1971)、《Vámonos Pa'l Monte》(1971)、《The Sun of Latin Music》(1974)、《Unfinished Masterpiece》(1975)、《Eddie Palmieri》(1981)。 1968–1970 這三年在池中是空的，本張與《Sentido》(1973) 一起補這一段。",
+  "risk": "MB 轄下三筆 release：1969／US／Official（Tico SLP-1188，9 軌）、2006-06-06／US／Official（Fania，9 軌）、一筆國別與日期皆空但 status Official（7 軌）——**7 軌那筆與另外兩筆軌數不同**，依裁定第 141 條行文不得寫原盤軌數。Apple 上有兩筆同碟條目：pe 1465968804「Justicia」9 軌記 1969、us 513388132「Justice / Justicia」9 軌記 1970——**後者是雙語盤名**（裁定第 152 條的形狀），兩種寫法都要進 queryAlias。",
+  "mbNote": "釘 release-group 67c5119e-cf54-4190-85bc-a5b7f9c1aac5。回問確認：title「Justicia」、artist-credit「Eddie Palmieri」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 3 筆 release（1969／US／Official，Tico SLP-1188，9 軌；2006-06-06／US／Official，Fania，9 軌；無日期／國別空／Official，7 軌）。藝人 MBID 42b5af45-312e-4dc1-ad0c-84dea2d5dcb2（US，1936-12-15 生）。刻意不釘：11087ccc-b06f-35ea-b64b-2713e6cb8ae3《Superimposition》(1970，鄰年另一張)、f1f3f4f4-0a2a-4b50-b2a6-818bda830630《Eddie's Concerto》(1976 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Justice / Justicia；Justice Justicia；Eddie Palmieri Justicia",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Eddie Palmieri",
+  "album": "Sentido",
+  "year": 1973,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Mango Records NYC（catno MS 103）",
+  "why": "Eddie Palmieri 1973 年的 LP，MB 轄下有 1973 年 Mango Records NYC MS 103 與 1991-07-30 年 Musical Productions MPPK 5-6251 兩筆 release。時間上緊接池中已有的《Vámonos Pa'l Monte》(1971) 之後、《The Sun of Latin Music》(1974) 之前。實掃 seed_cards.json 全 14,424 列，Eddie Palmieri 池中有六張：《Azucar Pa' Ti》(1965)、《Harlem River Drive》(1971)、《Vámonos Pa'l Monte》(1971)、《The Sun of Latin Music》(1974)、《Unfinished Masterpiece》(1975)、《Eddie Palmieri》(1981)。",
+  "risk": "**軌數兩說**：MB 兩筆 release 都是 5 軌，Apple us 1860596612「Sentido (Remastered)」記 6 軌（releaseDate 2025），另有 pe 1630262310「Sentido - EP」5 軌記 1972。依裁定第 141／175 條，行文不得寫原盤有幾軌，配對要以攤開的曲目列為準而非 trackCount 欄。Apple 的 2025 remaster 與 1972 EP 兩筆年份都與 MB 的 1973 不合，年份採 MB。盤名兩個音節，去重要連掛名一起比。CAA release-group 端點實測 307（有圖）。",
+  "mbNote": "釘 release-group 67aa5172-ec5b-349a-a42f-a6e8340efe00。回問確認：title「Sentido」、artist-credit「Eddie Palmieri」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 筆 release（1973／US／Official，Mango Records NYC MS 103，5 軌；1991-07-30／US／Official，Musical Productions MPPK 5-6251，5 軌）。藝人 MBID 42b5af45-312e-4dc1-ad0c-84dea2d5dcb2。刻意不釘：92b929ee-abe0-4543-8712-5686f2bc1b3b《Recorded Live at Sing Sing, Volume 2》(1974，Live)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sentido Remastered；Eddie Palmieri Sentido",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Ray Barretto",
+  "album": "Barretto Power",
+  "year": 1970,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Fania（catno LP 391／SLP 391）",
+  "why": "Ray Barretto 1970 年在 Fania 的 LP（LP 391／SLP 391、8 軌），MB 轄下另有一筆哥倫比亞壓片（Fania LP 391 ＋ Melser SLP-391）與 2020 年 Fania 的 XW 數位再發。時間上在池中已有的《Acid》(1968) 與《Que Viva la Música》(1972) 之間。實掃 seed_cards.json 全 14,424 列，Ray Barretto 池中有四張：《Acid》(1968)、《Que Viva la Música》(1972)、《Indestructible》(1973)、《Barretto》(1975)；另有 c-99 卡單裡的 Celia Cruz & Ray Barretto《Ritmo en el corazón》(1988) 尚未上線。 1969–1971 這一段在池中是空的，本張與《Rican/Struction》(1979) 一起把兩端補齊。",
+  "risk": "MB 轄下五筆 release：1970 US 兩筆（LP 391 與 SLP 391，皆 Official、8 軌）、1970 CO 一筆（Fania LP 391＋Melser SLP-391，Official，8 軌）、2020 XW 一筆（Fania，Official，8 軌），另一筆日期與國別皆空但 status Official（8 軌）。軌數五筆一致。Apple pe 1535124574「Barretto Power」8 軌、releaseDate 1970，與 MB 一致。掛名 MB 另有次要實體 796ea4e8-23dd-4788-97d6-ad9e988aed1d「Ray Barretto & His Orchestra」，藝人閘要一起認（同 c-99 第 1 條「本名＋後綴」那個形狀）。",
+  "mbNote": "釘 release-group 2dc9a66e-2e8b-3a68-b540-53ad486cd6a4。回問確認：title「Barretto Power」、artist-credit「Ray Barretto」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 5 筆 release（見 risk）。藝人 MBID 169153fd-ba80-401a-8ccd-2825efaf9155（US，1929-04-29 生）。刻意不釘：7778bc6a-2f2d-3716-8fe5-f0f6d9af54e3《Barretto》(1975，池中已有)、6f80cc84-5847-31e1-a0f1-804da3fe653e《From the Beginning》(1971 整編輯)、dba95c8f-91b8-37df-a2d3-31d5006d4667《The Message》(1971，鄰年另一張)——三筆的盤名都與本張互為子字串或同掛名近似。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Barretto Power；Ray Barretto & His Orchestra",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Ray Barretto",
+  "album": "Rican/Struction",
+  "year": 1979,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Fania（catno JM 552）",
+  "why": "Ray Barretto 1979 年在 Fania 的 LP（JM 552、7 軌），2006-05-23 Fania 以 773 130 078-2 重發。位置上在池中已有的《Barretto》(1975) 之後，是他 1970 年代末回到 Fania 的一張。實掃 seed_cards.json 全 14,424 列，Ray Barretto 池中有四張：《Acid》(1968)、《Que Viva la Música》(1972)、《Indestructible》(1973)、《Barretto》(1975)；另有 c-99 卡單裡的 Celia Cruz & Ray Barretto《Ritmo en el corazón》(1988) 尚未上線。",
+  "risk": "**盤名含斜線**（Rican/Struction），Apple pe 1464280570 作「Rican Struction」（**斜線改成空格**）7 軌、releaseDate 1979——兩種寫法都要進 queryAlias，否則標題比對配不到；MB 名下另有 be2e297a-5259-41b4-9a84-2387b2a5e7eb《Stargazer》(1978) primary-type 為空，不要混入。兩筆 release 皆 Official、皆 7 軌，年份兩邊一致。",
+  "mbNote": "釘 release-group c2a7a6f0-acbb-3d3b-af8f-51ad81c0da47。回問確認：title「Rican/Struction」、artist-credit「Ray Barretto」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 2 筆 release（1979／US／Official，Fania JM 552，7 軌；2006-05-23／US／Official，Fania 773 130 078-2，7 軌）。藝人 MBID 169153fd-ba80-401a-8ccd-2825efaf9155。刻意不釘：4b870d6f-370a-4fcb-9773-bb7ed452e353《Can You Feel It》(1978) 與 d583ed1f-f0d5-41dc-a28b-2585b08a65b1《Gracias》(1978)（同期兩張，本批不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rican Struction；Rican-Struction；RicanStruction",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Joe Bataan",
+  "album": "Gypsy Woman",
+  "year": 1967,
+  "genres": [
+   "soul",
+   "world"
+  ],
+  "label": "Fania（catno SLP 340）",
+  "why": "Joe Bataan 在 Fania 的第一批 LP 之一（SLP 340、9 軌），編號在池中已有的《Riot!》(1968，Fania SLP 345 一系) 之前；2022 年 Craft Recordings 與 Fania 以 CR00552 重發。實掃 seed_cards.json 全 14,424 列，Joe Bataan 池中只有《Riot!》(1968) 一張。 本批補 1967 與 1971 兩張，讓這位紐約拉丁靈魂的目錄在池中從一張變三張。",
+  "risk": "盤名《Gypsy Woman》與 Curtis Mayfield／The Impressions 1961 年的同名曲、以及 Brian Hyland 1970 年的同名單曲在字串上完全相同——池中沒有同名卡（實掃過），但配對時必須靠掛名與 rgMbid 分辨。MB 另有兩筆合刻 release-group：c5a53adc《Subway Joe & Gypsy Woman》與 cefb49e1《Gypsy Woman & Subway Joe》，**兩筆互為倒裝、且都完整包含本張盤名**（裁定第 162 條的形狀）。Apple pe 1467055315「Gypsy Woman」9 軌但 releaseDate 記 1968，MB 記 1967；依裁定第 141 條卡單採 MB 的 1967、行文不得斷言發行年。三筆 release 全部 Official、全 9 軌。",
+  "mbNote": "釘 release-group b62daa02-73f4-3ad0-99f1-e1ce1f4a1dbd。回問確認：title「Gypsy Woman」、artist-credit「Joe Bataan」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 3 筆 release（1967／US／Official，Fania SLP 340，9 軌；2022／US／Official，Craft Recordings＋Fania，9 軌；2022／US／Official，Craft Recordings CR00552＋Fania CR00552，9 軌）。藝人 MBID de7d54d7-0fce-4fb9-84f0-6fee794335d2（US，1942-11-15 生），分頁列完 33 個 release-group。刻意不釘：c5a53adc-7197-4ecf-9672-ed4ba03ed5ea《Subway Joe & Gypsy Woman》與 cefb49e1-4a6c-43e2-b7c8-1662912907e0《Gypsy Woman & Subway Joe》（兩筆二合一，依裁定第 129／140 條不取）、6ec37bdc-1505-32c0-b38a-4451129ce697《Subway Joe》(1968)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Bataan Gypsy Woman；Gypsy Woman Fania",
+  "reissuedBy": "Craft Recordings（2022，US，CR00552）",
+  "g": "b"
+ },
+ {
+  "artist": "Willie Colón",
+  "album": "The Hustler",
+  "year": 1968,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Fania（catno SLP 347）",
+  "why": "Willie Colón 在 Fania 的第二張 LP（SLP 347、7 軌），編號夾在池中已有的《El Malo》(1967) 與《Cosa Nuestra》(1969) 之間；2007 年 Fania 以 773 130 303-2 重發。實掃 seed_cards.json 全 14,424 列，Willie Colón 名下（含合掛）池中有十一張：《El Malo》(1967)、《Cosa Nuestra》(1969)、《La Gran Fuga》(1970)、《Asalto Navideño》(1971)、《Asalto navideño, vol. II》(1973)、與 Héctor Lavoe 合掛的《Lo Mato (Si No Compra Este LP)》(1973)、與 Celia Cruz 合掛的《Only They Could Have Made This Album》(1977)、與 Rubén Blades 合掛的《Metiendo Mano!》(1977)、《Siembra》(1978，兩種掛名各一張)、《Canciones del Solar de los Aburridos》(1981)。 1968 這一年在池中是空的，本張正好補在《El Malo》旁邊。",
+  "risk": "盤名《The Hustler》是常見英文字串，MB 上另有多個同名 release-group（不同藝人），配對必須靠掛名與 rgMbid。掛名 Colón 帶重音，依裁定第 26／70 條保留原文；池中既有的十一張全部用「Willie Colón」，本卡沿用同一寫法、不新增分裂。Apple pe 1466115663「The Hustler」7 軌、releaseDate 1968，軌數與年份都與 MB 一致。兩筆 release 皆 Official。",
+  "mbNote": "釘 release-group 564cfbc7-e46a-335d-b555-ba19d2154a20。回問確認：title「The Hustler」、artist-credit「Willie Colón」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 筆 release（1968／US／Official，Fania SLP 347，7 軌；2007／US／Official，Fania 773 130 303-2，7 軌）。藝人 MBID f1edfbed-9315-4550-859c-599cc3fdee57（US，1950-04-28 生）。刻意不釘：5397fc4d-d25c-3d3a-94e7-9c6cd5bddcdd《Crime Pays》(1971 整編輯)、9b5bc8ce-2a34-36b9-8d72-42158e3c8c8c《Willie》(1974 整編輯)、b4e9b318-87d1-4357-8ff7-0da1dfd3aab8《Willie Colón & Associates (49 Minutes)》(1978 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Willie Colon The Hustler；Willie Colón The Hustler",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Willie Colón",
+  "album": "El juicio",
+  "year": 1972,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Fania（catno SLP 00424）",
+  "why": "Willie Colón 1972 年在 Fania 的 LP（SLP 00424、8 軌），MB 轄下另有 1995 年 Fania LPCD-00424、2009 年 XW 數位（12 軌）與 2010 年 Código Music／Fania 三筆再發。位置上在池中已有的《Asalto Navideño》(1971) 與《Asalto navideño, vol. II》(1973) 之間。實掃 seed_cards.json 全 14,424 列，Willie Colón 名下（含合掛）池中有十一張：《El Malo》(1967)、《Cosa Nuestra》(1969)、《La Gran Fuga》(1970)、《Asalto Navideño》(1971)、《Asalto navideño, vol. II》(1973)、與 Héctor Lavoe 合掛的《Lo Mato (Si No Compra Este LP)》(1973)、與 Celia Cruz 合掛的《Only They Could Have Made This Album》(1977)、與 Rubén Blades 合掛的《Metiendo Mano!》(1977)、《Siembra》(1978，兩種掛名各一張)、《Canciones del Solar de los Aburridos》(1981)。 1972 這一年在池中是空的。",
+  "risk": "**軌數兩說**：1972／1995／2010 三筆 release 都是 8 軌，2009 年 XW 數位那筆是 12 軌——依裁定第 140／141 條，多出的四軌來源不明，行文不得寫原盤軌數，配對取 8 軌那筆。Apple pe 1660552362「El Juicio」8 軌、releaseDate 1972，與原盤一致。盤名兩個字，去重要連掛名一起比。四筆 release 全部 Official。",
+  "mbNote": "釘 release-group 772e1744-a6f0-3202-9665-a701c3acc758。回問確認：title「El juicio」、artist-credit「Willie Colón」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 4 筆 release（1972／US／Official，Fania SLP 00424，8 軌；1995／US／Official，Fania LPCD-00424，8 軌；2009／XW／Official，Fania USDBB0600462，12 軌；2010／US／Official，Código Music 463 950 9017-2＋Fania，8 軌）。藝人 MBID f1edfbed-9315-4550-859c-599cc3fdee57。刻意不釘：66cc792a-ca36-3f44-be44-a898337ba396《Asalto navideño》(1972，池中已有同碟)、e82d46ec-eb25-3234-be7c-b071ad185ea4《Lo mato (Si no compra este LP)》(1973，池中已有)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "El Juicio；Willie Colon El Juicio",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Quilapayún",
+  "album": "Basta",
+  "year": 1969,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Jota Jota（catno JJL-07）",
+  "why": "Quilapayún 1969 年在智利共產黨青年團廠牌 Jota Jota（DICAP 前身）的 LP，編號 JJL-07、12 軌；1991 年瑞士 DOM 以 DOM CD 1046 出過 17 軌版，2003-08-05 WEA International 又以 25664 重發。實掃 seed_cards.json 全 14,424 列，Quilapayún 池中只有《Cantata Santa María de Iquique》(1970) 一張，另有 c-98 卡單裡的《La Fragua》(1973) 尚未上線——本批不重複提案那兩張。 本批補 1969 與 1972 兩張，都在 1970 年《Cantata》的前後兩年，是同一個廠牌體系的目錄。",
+  "risk": "**軌數兩說**：1969 智利原盤與 2003 WEA 再發都是 12 軌，1991 年瑞士 DOM 那筆是 17 軌——依裁定第 141 條行文不得寫原盤軌數。Apple pe 1596949918 作「Basta (Remasterizado 2021)」12 軌、releaseDate 1969——**盤名帶再版裝飾詞**，上架時要在備註標明是 2021 重製版。盤名只有五個字母，MB 上另有多筆同名別碟（不同藝人），配對必須靠掛名與 rgMbid。MB 名下另有 153b8172《Basta / Adelante!》(1988)，盤名完整包含本張。掛名重音（Quilapayún）依裁定第 26／70 條保留，與池中既有那張一致。三筆 release 全部 Official。",
+  "mbNote": "釘 release-group 63481b1b-8216-3a33-82c6-f607ee015d6e。回問確認：title「Basta」、artist-credit「Quilapayún」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 3 筆 release（1969／CL／Official，Jota Jota JJL-07，12 軌；1991／CH／Official，DOM DOM CD 1046，17 軌；2003-08-05／CL／Official，WEA International 25664，12 軌）。藝人 MBID 46cbe388-52fe-410e-82ef-a5eae098c2d6（CL，1965 起）。刻意不釘：153b8172-4125-4d95-80bf-042af6a96138《Basta / Adelante!》(1988，二合一)、bc8939fe-aa3e-3399-9335-b3eefec2db22《Adelante!》(1975)、5ec07bc8-2521-439a-b9ca-8f0549ed9eed《La Fragua》(1973，c-98 已收)、b0d49795-dda8-36af-9e5f-12940750f20b《Cantata Santa María de Iquique》(1970，池中已有) 與 d8e7d3bb-7ac0-3363-91e4-1adeb2bd5a23《Cantata Santa María de Iquique (nueva versión)》(1978)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Basta Remasterizado 2021；Quilapayun Basta；Quilapayun",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Quilapayún",
+  "album": "Quilapayún 5",
+  "year": 1972,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Odeon（catno LDC - 36804）",
+  "why": "Quilapayún 1972 年的編號盤，Odeon 智利編號 LDC - 36804、13 軌，是他們以《Quilapayún Nº 3》(1969)、《4》(1970) 一路編下來的第五號。實掃 seed_cards.json 全 14,424 列，Quilapayún 池中只有《Cantata Santa María de Iquique》(1970) 一張，另有 c-98 卡單裡的《La Fragua》(1973) 尚未上線——本批不重複提案那兩張。 本張與 1969 年的《Basta》一起，把這個團在池中從一張補到三張（含 c-98 的《La Fragua》）。",
+  "risk": "**盤名是「團名＋數字」**，與 MB 名下 3da28c8b《Quilapayún Nº 3》、1335c816《4》兩筆同一系列，且與藝人名互為子字串——去重必須用完整 artist|album 鍵（裁定第 162 條）。Apple pe 1498323241「Quilapayún 5」13 軌但 releaseDate 記 1973，MB 記 1972；依裁定第 141 條卡單採 MB 的 1972、行文不得斷言發行年。MB 轄下只有一筆 release（1972／CL／Official）。",
+  "mbNote": "釘 release-group 97fcf000-7b1e-484d-8407-b5ae5ba0d5f8。回問確認：title「Quilapayún 5」、artist-credit「Quilapayún」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 筆 release（1972／CL／Official，Odeon LDC - 36804，13 軌）。藝人 MBID 46cbe388-52fe-410e-82ef-a5eae098c2d6。刻意不釘：3da28c8b-846b-4901-ba77-6339f85d5a02《Quilapayún Nº 3》(1969)、1335c816-90d3-464f-b811-e97803678c6c《4》(1970)、407aa1c9-2266-4600-9244-bcc6afbadf3c《Quilapayún》(1967 同名首張)——三筆與本張同屬編號系列、盤名互相包住。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Quilapayun 5；Quilapayún Nº 5；Quilapayun",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Inti-Illimani",
+  "album": "Palimpsesto",
+  "year": 1981,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "EMI（IT 盤，catno 3C 064-64522）",
+  "why": "Inti-Illimani 1981 年在義大利 EMI 的 LP（3C 064-64522、9 軌），MB 轄下另有 1983 年義大利 CDVR 516 與 1997 年一筆無國別的再發。實掃 seed_cards.json 全 14,424 列，Inti-Illimani 池中只有《Viva Chile!》(1973) 一張，另有 c-98 卡單裡的《Inti-Illimani 2: La nueva canción chilena》(1974) 尚未上線——本批不重複提案那兩張。 本張與 1984 年的《Imaginación》都是他們義大利時期的錄音，與池中那張 1973 年的智利盤不重疊。",
+  "risk": "**掛名的連字號是 U+2010**：MB 藝人實體名作「Inti‐Illimani」（U+2010 HYPHEN），池中既有那張與 Apple 都用 ASCII 連字號，卡片沿用池中寫法「Inti-Illimani」——這是 c-99 裁定第 2 條 U-Roy 那個形狀（兩個字串在螢幕上一樣、在 === 下不相等）。MB 另有 028ab6a5「Inti‐Illimani Histórico」與 618d26c5「Inti‐Illimani Nuevo」兩個 2004 年分出的實體，Apple 也有 40547661「Inti Illimani Historico」——**藝人閘必須擋掉這兩個**，它們是不同團體。Apple 十個店面搜不到本張（es 藝人目錄 35981885 的 30 餘筆裡沒有）；CAA release-group 端點實測 307（有圖），封面走 CAA、試聽預期 unavailable。1983 那筆 release 的廠牌欄是 [no label]。三筆 release 皆 Official、皆 9 軌。",
+  "mbNote": "釘 release-group 0ae236fd-227e-3730-8f73-e0fb0a5d38a0。回問確認：title「Palimpsesto」、artist-credit「Inti‐Illimani」（U+2010）、first-release-date 1981、primary-type Album、secondary-types 空、轄下 3 筆 release（1981／IT／Official，EMI 3C 064-64522，9 軌；1983／IT／Official，[no label] CDVR 516，9 軌；1997／國別空／Official，9 軌）。藝人 MBID a962cd78-1f5f-4cef-838d-07e2f9d8b02d（CL，1967 起）。刻意不釘：ad22a351-78dc-3d40-b8ff-0cd4c6d7a313《Canto de pueblos andinos, Volume I》(1973，CAA 404 且 Apple 只配得到 Inti‐Illimani Histórico 的別碟、本批不收)、9121932d-7e44-3f59-9abf-88d9de99de5c《Inti‐Illimani 5: Canto de pueblos andinos, vol. II》(1976)、ed5526b1-d758-3afa-805b-462ff7bd1837《Canto de pueblos andinos》(1973 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Inti Illimani Palimpsesto；Inti‐Illimani；Inti Illimani",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Joe Bataan",
+  "album": "Saint Latin's Day Massacre",
+  "year": 1971,
+  "genres": [
+   "soul",
+   "world"
+  ],
+  "label": "Fania（catno (S)LP 00420／SLP 00420）",
+  "why": "Joe Bataan 1971 年在 Fania 的 LP（(S)LP 00420、10 軌），2006 年 Fania 以 773 130 070-2 重發。位置上在池中已有的《Riot!》(1968) 之後三年，是他 Fania 時期後段的一張。實掃 seed_cards.json 全 14,424 列，Joe Bataan 池中只有《Riot!》(1968) 一張；本批與《Gypsy Woman》(1967) 一起收，三張分屬 1967／1968／1971 三個年份。",
+  "risk": "**MB 的 release-group 標題用 U+2019 撇號**（Saint Latin’s Day Massacre），卡片依池中慣例採 ASCII 撇號、U+2019 版本進 queryAlias（裁定第 49 條在同一書寫系統內的變形）。Apple pe 1464265004「Saint Latin's Day Massacre」10 軌、releaseDate 1971，軌數與年份都與 MB 一致。兩筆 release 皆 Official、皆 10 軌。",
+  "mbNote": "釘 release-group 4891fba6-e196-3078-83f1-f1d7d5f89c0c。回問確認：title「Saint Latin’s Day Massacre」（U+2019）、artist-credit「Joe Bataan」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 筆 release（1971／US／Official，Fania (S)LP 00420＋SLP 00420，10 軌；2006／US／Official，Fania 773 130 070-2，10 軌）。藝人 MBID de7d54d7-0fce-4fb9-84f0-6fee794335d2。刻意不釘：cfeeaf66-443c-30fd-bb65-b9a36fef62bd《Mr. New York and the East Side Kids》(1971，同年另一張)、3576dd33-78b2-30e1-b84c-3e87c419cad0《Mr New York》(1989)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Saint Latin’s Day Massacre；St Latin's Day Massacre；Joe Bataan Saint Latin's Day Massacre",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Inti-Illimani",
+  "album": "Imaginación",
+  "year": 1984,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "義大利盤 catno VRMLP 108（MB 未填廠牌名）",
+  "why": "Inti-Illimani 1984 年的錄音室盤，MB 轄下義大利原盤（VRMLP 108、12 軌）之外還有 1987 年美國 Redwood Records RRCD 8505（14 軌，標題改成《Imagination》）、1994 年德國 CGD 4509-95942-2（16 軌）與 1997 年智利 EMI Odeón（16 軌）三筆再發。本張與同批的《Palimpsesto》(1981) 都屬他們義大利時期。實掃 seed_cards.json 全 14,424 列，Inti-Illimani 池中只有《Viva Chile!》(1973) 一張，c-98 卡單另有《Inti-Illimani 2》(1974) 尚未上線。",
+  "risk": "**同一張碟四個軌數**（12／14／16／16）與**兩個盤名**（Imaginación／Imagination）：依裁定第 45 條盤名取原始發行的寫法《Imaginación》，依裁定第 141 條行文不得寫原盤有幾軌；英文盤名進 queryAlias。義大利原盤那筆的**廠牌名欄是空的**（只有編號 VRMLP 108），行文不得斷言發行廠牌。掛名 U+2010 的處理同《Palimpsesto》，且要擋掉 Inti‐Illimani Histórico／Nuevo 兩個 2004 年分出的實體。Apple 十個店面搜不到本張；CAA release-group 端點實測 307（有圖）。",
+  "mbNote": "釘 release-group 128f8d02-f178-3eb5-b634-1f9d7ec13871。回問確認：title「Imaginación」、artist-credit「Inti‐Illimani」（U+2010）、first-release-date 1984、primary-type Album、secondary-types 空、轄下多筆 release，含 1984／IT／Official（catno VRMLP 108，廠牌名空，12 軌）、1987／US／Official（Redwood Records RRCD 8505，14 軌，標題《Imagination》）、1994／DE／Official（CGD 4509-95942-2，16 軌）、1997／CL／Official（EMI Odeón Chilena S.A. 8 59752 2，16 軌）、以及兩筆無日期無國別的 Official（12 軌，其一 Alerce CDAL0117）。藝人 MBID a962cd78-1f5f-4cef-838d-07e2f9d8b02d。刻意不釘：099f6922-9b9d-46d2-9679-4a536c19fed4《The Return of The Condor》(1984，同年另一張)、96860027-552c-4a8a-9fd3-c45a77a8fd4d《Sing to Me the Dream》(1984，Live)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Imagination；Inti Illimani Imaginacion；Inti‐Illimani",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Jaivas",
+  "album": "El volantín",
+  "year": 1971,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "1971 智利原盤（MB 未填廠牌名）；2001 年 Columbia 再發 catno 2 500076",
+  "why": "Los Jaivas 1971 年的盤，MB 名下 32 個 release-group 裡年份最早的一筆（8 軌）；2001 年 Columbia 以 2 500076 重發。實掃 seed_cards.json 全 14,424 列，Los Jaivas 池中只有《Alturas de Macchu Picchu》(1981) 一張。本批補 1971 與 1977 兩張，把這個團在池中從一張變三張，並涵蓋 1981 年那張之前的十年。",
+  "risk": "MB 的 1971 CL 與 1971-09-18 XW 兩筆 release **都沒有填廠牌名**（XW 那筆標 [no label]），行文不得斷言 1971 年的發行廠牌，只能寫 2001 年 Columbia 那筆。Apple 十個店面搜不到本張；CAA release-group 端點實測 307（有圖），封面走 CAA、試聽預期 unavailable。MB 名下有兩筆同名的《Los Jaivas》（6db43973，1972；aaed3b34，1975-12-02），本批都不碰。三筆 release 皆 Official、皆 8 軌。",
+  "mbNote": "釘 release-group c9984482-c5a9-315e-8a79-c429cefe363e。回問確認：title「El volantín」、artist-credit「Los Jaivas」、first-release-date 1971-09-18、primary-type Album、secondary-types 空、轄下 3 筆 release（1971-09-18／XW／Official，[no label]，8 軌；1971／CL／Official，廠牌名空，8 軌；2001／CL／Official，Columbia 2 500076，8 軌）。藝人 MBID e3d766c2-aad2-469e-ac94-c90939f4a294（CL，1963 起），分頁列完 32 個 release-group。刻意不釘：6db43973-93a6-4442-bc61-46e0dbe1172c《Los Jaivas》(1972) 與 aaed3b34-5c32-35b2-baaa-59adb7994693《Los Jaivas》(1975-12-02)——**兩筆同名自我同名盤**，本批不收；abba4b8e-5227-44d5-a326-868b0951cb67 等五筆《La Vorágine》系列(2003)是後世檔案輯。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "El Volantin；Los Jaivas El Volantín",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Jaivas",
+  "album": "Canción del sur",
+  "year": 1977,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "1977 智利原盤（MB 未填廠牌名）；1994 年 EMI 再發 catno 710-831250",
+  "why": "Los Jaivas 1977 年的盤（智利原盤 7 軌），1994 年 EMI 以 710-831250 重發成 11 軌版。位置上在池中已有的《Alturas de Macchu Picchu》(1981) 之前四年，與本批同時收的《El volantín》(1971) 分屬這個團的兩個十年。實掃 seed_cards.json 全 14,424 列，Los Jaivas 池中只有《Alturas de Macchu Picchu》(1981) 一張。",
+  "risk": "**軌數兩說**：1977 智利原盤 7 軌、1994 EMI 再發 11 軌；Apple pe 1501901327「Canción del Sur」記 11 軌、releaseDate 1977——**Apple 拿再發的曲目掛原盤的年份**，依裁定第 141 條行文不得寫原盤有幾軌，配對要在備註標明是 11 軌版。1977 那筆 release 的廠牌名欄是空的，行文不得斷言原盤發行廠牌。MB 名下另有 bf8bdc0c《Canción del sur / Aconcagua》(1999 二合一整編輯)，盤名完整包含本張，依裁定第 129／140 條不取。兩筆 release 皆 Official。",
+  "mbNote": "釘 release-group 84d3c04c-aeac-345a-887a-7d7f0bede6c5。回問確認：title「Canción del sur」、artist-credit「Los Jaivas」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 2 筆 release（1977／CL／Official，廠牌名空，7 軌；1994／CL／Official，EMI 710-831250，11 軌）。藝人 MBID e3d766c2-aad2-469e-ac94-c90939f4a294。刻意不釘：bf8bdc0c-5a59-42e4-b7e6-7836f84ebc55《Canción del sur / Aconcagua》(1999，二合一)、f60692b4-6a06-342c-b7e5-17423ee55627《Aconcagua》(1982)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Cancion del Sur；Canción del Sur",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Chabuca Granda",
+  "album": "Dialogando...",
+  "year": 1967,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Odeon del Perú（catno ELD-LD-1704）",
+  "why": "Chabuca Granda 與吉他手 Óscar Avilés 合作的 1967 年 LP（Odeon del Perú ELD-LD-1704、10 軌），1968-07 IEMPSA 再壓一次。MB 名下這位藝人只有 11 個 release-group，其中 1960–70 年代的原廠盤僅三張。實掃 seed_cards.json 全 14,424 列，Chabuca Granda 池中只有《Tarimba Negra》(1978) 一張；本張補在它之前十一年。",
+  "risk": "**artist-credit 是「Chabuca Granda & Oscar Avilés」**（雙掛名），卡片依池中既有寫法採「Chabuca Granda」，不新增第二個掛名鍵（同 c-99 裁定第 2 條的處理）；Apple pe 1686055998 的盤名也作「Dialogando (feat. Oscar Avilés)」、掛名記「Chabuca Granda」，與卡片一致。**盤名帶三個句點**（Dialogando...），Apple 那筆沒有句點、改帶 feat. 括號——兩種寫法都要進 queryAlias。Apple 那筆 10 軌、releaseDate 1967，與 MB 一致。兩筆 release 皆 Official。",
+  "mbNote": "釘 release-group 92efc848-c77e-4d07-8a50-98e03e2605ea。回問確認：title「Dialogando...」、artist-credit「Chabuca Granda & Oscar Avilés」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 2 筆 release（1967／PE／Official，Odeon del Peru ELD-LD-1704，10 軌；1968-07／PE／Official，IEMPSA，10 軌）。藝人 MBID ad92ec10-7f8b-4f9a-a0a0-c02982722b6c（PE，1920-09-03 生），分頁列完 11 個 release-group。刻意不釘：88899eef-8a39-361c-8198-ecdd14ccbcde《Voz y vena de Chabuca Granda》(1968，鄰年另一張，本批不收)、7dd6802b-c699-4a51-9fe9-c90518e99b4c《Tarimba negra》(1978，池中已有)、af379f61-88ea-49bd-aeb3-edc30f4e207a《Déjame que te cuente》(2007 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dialogando；Dialogando (feat. Oscar Avilés)；Chabuca Granda & Oscar Avilés；Chabuca Granda y Oscar Avilés",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Prisioneros",
+  "album": "Pateando piedras",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "EMI 智利（1995 年再發 catno 7 98006 2）；1986 原盤 MB 未填廠牌名，另有 Plus Music 的 XW 盤",
+  "why": "Los Prisioneros 1986 年的第二張錄音室盤，MB 轄下有 1986 智利原盤（10 軌）、1986-01-01 Plus Music 的 XW 盤（10 軌）與 1995 年 EMI 7 98006 2（10 軌）三筆。位置上緊接池中已有的《La Voz de los '80》(1984)。實掃 seed_cards.json 全 14,424 列，Los Prisioneros 池中只有《La Voz de los '80》(1984) 一張；智利藝人池中另有 Víctor Jara 三張、Violeta Parra 兩張、Inti-Illimani／Quilapayún／Los Jaivas 各一張，1980 年代的智利搖滾就只有那一張。 本批補 1986 與 1987 兩張，把這個團 1980 年代的三張錄音室盤補齊。",
+  "risk": "1986 智利那筆 release 的**廠牌名欄是空的**，行文只能寫 1995 年 EMI 那筆或 Plus Music 那筆。Apple pe 1102889296「Pateando Piedras」10 軌、releaseDate 1986，與 MB 一致。盤名兩個西語常用字，MB 上另有他團同名條目，配對靠掛名與 rgMbid。三筆 release 皆 Official、皆 10 軌。",
+  "mbNote": "釘 release-group 7595e654-b376-3ca9-9672-820a266dd0b3。回問確認：title「Pateando piedras」、artist-credit「Los Prisioneros」、first-release-date 1986-01-01、primary-type Album、secondary-types 空、轄下 3 筆 release（1986／CL／Official，廠牌名空，10 軌；1986-01-01／XW／Official，Plus Music，10 軌；1995／CL／Official，EMI 7 98006 2，10 軌）。藝人 MBID a1d044b9-76c9-46d7-a5a6-0f52421e1ed7（CL，1982 起）。刻意不釘：1fd43e5e-aaa4-3603-9f53-bd0c16ab6400《La voz de los ’80》(1984，池中已有)、39bb6df2-0ec8-4b0a-a57f-263b119a80ac《La voz de los '80 (Fusión)》(1984，同碟別版)、41ac11af-6b5c-49ae-86d0-296bb12e2d37《Los Prisioneros》(1987 整編輯) 與 e9daadf3-9d99-3914-9388-2bfb138d36ea《Los Prisioneros》(2003 自我同名盤)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pateando Piedras",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Prisioneros",
+  "album": "La cultura de la basura",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "EMI 智利（1995 年再發 catno 7 98758 2）；1987 原盤 MB 未填廠牌名",
+  "why": "Los Prisioneros 1987 年的第三張錄音室盤（智利原盤 14 軌），1988 年哥倫比亞有一筆 CBS／EMI Music Colombia 的 10 軌宣傳盤，1995 年 EMI 以 7 98758 2 重發 14 軌版。位置上緊接同批的《Pateando piedras》(1986)。實掃 seed_cards.json 全 14,424 列，Los Prisioneros 池中只有《La Voz de los '80》(1984) 一張；智利藝人池中另有 Víctor Jara 三張、Violeta Parra 兩張、Inti-Illimani／Quilapayún／Los Jaivas 各一張，1980 年代的智利搖滾就只有那一張。",
+  "risk": "**四筆 release 的狀態與軌數都不一致**：1987 CL Official 14 軌（廠牌名空）、1988 CO **Promotion** 10 軌、1995 CL status 空 14 軌、1995 CL Official 14 軌。依裁定第 43／57／78 條，Promotion 與 status 空那兩筆都不採為授權背書；依裁定第 141 條，10 軌那筆是哥倫比亞刪節版，行文以 14 軌的智利原盤為準但不斷言軌數。Apple cl 713621883「La Cultura de la Basura」14 軌、releaseDate 1987，與智利原盤一致。",
+  "mbNote": "釘 release-group 9c051dba-c735-3fef-b976-5a5f40b51bd9。回問確認：title「La cultura de la basura」、artist-credit「Los Prisioneros」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 4 筆 release（1987／CL／Official，廠牌名空，14 軌；1988／CO／Promotion，CBS 11001208＋EMI Music Colombia，10 軌；1995／CL／status 空，EMI Odeón Chilena S.A. 7 98758 2，14 軌；1995／CL／Official，EMI 7 98758 2，14 軌）。藝人 MBID a1d044b9-76c9-46d7-a5a6-0f52421e1ed7。刻意不釘：c50ba999-f67f-39da-ab4a-c77a618ddb37《Corazones》(1990，本批不收)、e95be2f3-6cb1-385b-a47d-0b3d6c49c452《Ni por la razón, ni por la fuerza》(1996 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "La Cultura de la Basura",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Shakers",
+  "album": "La conferencia secreta del Toto's Bar",
+  "year": 1968,
+  "genres": [
+   "rock"
+  ],
+  "label": "Odeon（catno LDX 309，UY 盤）",
+  "why": "Los Shakers 是 1963 年在蒙特維多組的烏拉圭樂團，MB 名下 15 個 release-group、其中 1965–1971 年的錄音室盤有六張。本張是 1968 年 Odeon 烏拉圭盤（LDX 309、11 軌），2007 年 EMI–Odeon S.A.I.C. 在阿根廷以 0946 3891282 8 重發成 16 軌版。實掃 seed_cards.json 全 14,424 列，Los Shakers 池中 0 張；烏拉圭藝人池中亦為 0 張。",
+  "risk": "**MB 有兩個「Los Shakers」實體**：5a6d492a（UY，1963，MB disambiguation 記 Uruguayan rock band）與 7882004e（ES，Spanish 60s）——配對必須靠 rgMbid，掛名字串完全相同。**軌數兩說**：1968 原盤 11 軌、2007 阿根廷再發 16 軌；Apple cl 713639393「La Conferencia Secreta del Toto's Bar」記 16 軌、releaseDate 2011——那是再發版，依裁定第 141 條行文不得寫原盤軌數，上架時要在備註標明版本。盤名含 ASCII 撇號（Toto's），MB 與 Apple 兩邊一致。兩筆 release 皆 Official。",
+  "mbNote": "釘 release-group c5224f74-580f-3f4a-bbfb-50eef5d9e3da。回問確認：title「La conferencia secreta del Toto's Bar」、artist-credit「Los Shakers」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 筆 release（1968／UY／Official，Odeon LDX 309，11 軌；2007／AR／Official，EMI–Odeon S.A.I.C. 0946 3891282 8，16 軌）。藝人 MBID 5a6d492a-f114-47a1-b23d-1b1b6d61ac1d（UY，1963 起）。刻意不釘：7882004e-19b2-459c-8b81-e83d8c62a684 這個西班牙的同名藝人實體名下所有條目；2c303b37-733c-4518-b2cf-41afc3c0975c《Break It All》(1966) 與 69e46b87-b4ae-34c1-b395-e7ef905dfce7《Rompan todo》（同一張碟的英文與西文兩個盤名、MB 建成兩個 release-group）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "La Conferencia Secreta del Toto's Bar；Toto's Bar；Los Shakers Uruguay",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Los Saicos",
+  "album": "¡Demolición! The Complete Recordings",
+  "year": 2010,
+  "genres": [
+   "rock"
+  ],
+  "label": "Munster Records（catno MR CD 295）",
+  "why": "Los Saicos 是 1964 年在利馬 Lince 區組的樂團，MB 名下 9 個 release-group 中有四張 1965 年的單曲（《Demolición / Lonely Star》《Salvaje》《Camisa De Fuerza》《Come On》）。這張是西班牙廠牌 Munster Records 2010 年把他們的錄音整套集結的 CD（MR CD 295、12 軌），是這批單曲目前可買到的實體形態。實掃 seed_cards.json 全 14,424 列，Los Saicos 池中 0 張。",
+  "risk": "**MB primary-type 是 Album、secondary-types 含 Compilation**，依 ALBUM_ONBOARDING §5.6 明文與裁定第 167 條照一般 Album 寫、不填例外欄位；年份取整輯首次出版年 2010。MB 另有一筆 1966 年的《Saicos》(21e2a91f，PE，Official)，轄下 release 標題作「Los Saicos」——**那筆的內容與本張高度重疊、且盤名與掛名相同**，本批不釘它（資料太薄，只有兩筆 release、沒有廠牌與軌數）。盤名開頭的倒驚嘆號（¡）在部分服務會被吃掉，去掉的寫法要進 queryAlias。Apple pe 361049542「¡Demolición! The Complete Recordings」12 軌、releaseDate 2010，與 MB 完全一致。",
+  "mbNote": "釘 release-group 9d45fe14-d9ce-40ff-8f6a-499132b1537c。回問確認：title「¡Demolición! The Complete Recordings」、artist-credit「Los Saicos」、first-release-date 2010、primary-type Album、secondary-types [Compilation]、轄下 1 筆 release（2010／ES／Official，Munster Records MR CD 295，12 軌）。藝人 MBID 096e3e94-0faa-41a0-a94e-da54eeac7466（PE，1964 起），分頁列完 9 個 release-group。刻意不釘：21e2a91f-e35a-4734-8ed7-84ec15e62c87《Saicos》(1966，資料過薄、與本張重疊)、09169136-25c4-4a2c-a275-74418d617b24《Wild Teen-Punk From Peru 1965》(1999，同一批錄音的另一種整編)、66006ceb-4feb-314d-89f3-215117bc0901《Demolición / Lonely Star》(1965 單曲，盤名是本張的子字串)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Demolicion The Complete Recordings；Demolición；Los Saicos Demolicion",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

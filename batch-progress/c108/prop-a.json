@@ -1,0 +1,415 @@
+[
+ {
+  "artist": "Los Destellos",
+  "album": "En orbita",
+  "year": 1969,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Odeon del Perú（catno ELD-1795）",
+  "why": "Los Destellos 是 Enrique Delgado 1966 年在利馬組的樂團，MB 名下 28 個 release-group 裡 1967–1980 年的正規盤有 15 張，這張是 1969 年 Odeon del Perú 那一批中的一張，與同年的《Solo Ellos》同屬他們離開單曲、開始以 LP 為單位發行的階段。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 這張與《Constelación》《Destellantes》三張一起補，是把 chicha 這條線從零開到「三張同一個樂團、跨 1969／1971／1974 三個發行年」的第一步。",
+  "risk": "盤名 MB 作「En orbita」（無重音），Apple pe 1441430300 作「En Orbita」（2018 Infopesa 數位再發，12 軌）、另一筆 1672392632 作「En Órbita」標 1968 年——**同一張碟在 Apple 上有兩筆、年份還差一年**，去重與配對都要把三種寫法一起掃。Apple 兩筆的年份（2018／1968）都與 MB 的 1969 不一致，依裁定第 77／91 條年份以 MB release 的 1969 PE 原盤為準、Apple 的日期只當訊號。CAA release-group 端點未實測。店面 pe 命中。",
+  "mbNote": "釘 release-group f90ba1f9-2e98-4b10-9c34-caf4b6b9abb7。回問 release-group 端點確認：title「En orbita」、artist-credit「Los Destellos」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 筆 release（1969／PE／Official，Odeon del Peru ELD - 1795，12 軌）。藝人 MBID 7968034e-117f-4275-a2e6-a88472794cb2（PE，1966 起，MB disambiguation 記 Peruvian 60 psychedelic rock），以 release-group?artist=…&limit=100&offset= 分頁列完共 28 個 release-group。刻意不釘：bf772ef7-f67a-44a9-a2e2-421923e8ef11《Solo ellos... Los Destellos》（2015 再編輯，與 1969《Solo Ellos》8a9d6b73 同名近似）、1a376daf-80e2-4f4c-ae39-13c0bcc02fbf《Destellos》（無年份的整編輯，盤名是本團團名的子字串，子字串比對會反過來配到它）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "En Orbita；En Órbita；Los Destellos En Orbita",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Destellos",
+  "album": "Constelación",
+  "year": 1971,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Odeon del Perú（catno ELD-2105）",
+  "why": "Los Destellos 1971 年的兩張 LP 之一（另一張是《Clase aparte》，MB 7a12ccca），Odeon del Perú 編號 ELD-2105、11 軌。2011 年美國廠牌 Secret Stash Records 以 SSR-LP-282 重發整張，是這個樂團少數有英美再發實體的碟。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 本批替這個樂團收《En orbita》(1969)、本張 (1971) 與《Destellantes》(1974) 三張，三張分屬 Odeon 秘魯期、Odeon 後期與巴西授權盤，不是同一批錄音的重複包裝。",
+  "risk": "盤名 Constelación 帶重音，去重時 NFKD 折疊後與 Constelacion 相等，但 Apple 的搜尋要兩種都試。MB 轄下三筆 release 中有一筆國別與狀態皆空（1971，11 軌），依裁定第 43／57 條不採為授權背書；1971 PE Odeon 與 2011 US Secret Stash 兩筆都是 Official。Apple pe 6806401600「Constelación」11 軌、releaseDate 1971，軌數與 MB 一致。CAA 未實測。",
+  "mbNote": "釘 release-group a549c2f1-7052-41a8-af2e-1cb0a917b688。回問確認：title「Constelación」、artist-credit「Los Destellos」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 3 筆 release（1971／PE／Official，Odeon del Peru ELD-2105，11 軌；1971／國別與 status 皆空，11 軌；2011／US／Official，Secret Stash Records SSR-LP-282，11 軌）。藝人 MBID 7968034e-117f-4275-a2e6-a88472794cb2。刻意不釘：7a12ccca-4a9b-4aa7-af98-fca1cca9c825《Clase aparte》（同年同廠的另一張，Apple 十個店面全部 0 筆）、a333f8f0-4fd7-43df-8dfc-cd649835faac《Sicodélicos》（2016 整編輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Constelacion；Los Destellos Constelación",
+  "reissuedBy": "Secret Stash Records（2011，US，SSR-LP-282）",
+  "g": "a"
+ },
+ {
+  "artist": "Los Destellos",
+  "album": "Destellantes",
+  "year": 1974,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Latin Music Record（BR 盤，11 軌）",
+  "why": "Los Destellos 1974 年的 LP，MB 轄下唯一一筆 release 是巴西壓片（Latin Music Record，11 軌），與同團其餘各張留在祕魯 Odeon／Infopesa 的形態不同，是這個樂團的錄音外流到巴西市場的一個具體條目。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 收這張是為了讓 Los Destellos 在池中不只有 Odeon 秘魯期的兩張。",
+  "risk": "MB 只有巴西盤一筆、沒有祕魯原盤條目，年份 1974 只有這一筆支撐；Apple pe 6806402130「Destellantes」11 軌、releaseDate 1974，軌數與 MB 一致，是第二個獨立佐證。盤名 Destellantes 與團名 Los Destellos 前六個字母相同，子字串比對容易互相配到（裁定第 162 條的形狀），去重要用完整字串。CAA 未實測。",
+  "mbNote": "釘 release-group 453c51f3-085c-4ef0-8742-7826ae044a73。回問確認：title「Destellantes」、artist-credit「Los Destellos」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 筆 release（1974／BR／Official，Latin Music Record，11 軌）。藝人 MBID 7968034e-117f-4275-a2e6-a88472794cb2。刻意不釘：1a376daf-80e2-4f4c-ae39-13c0bcc02fbf《Destellos》與 8c802da2-bc72-4bfc-8df7-516c3c597b18《Éxitos》（兩筆都是無年份的整編輯，標題與本張互為子字串）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Los Destellos Destellantes",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Juaneco y su Combo",
+  "album": "El gran cacique",
+  "year": 1970,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Infopesa（catno LPS 8063）",
+  "why": "Juaneco y su Combo 來自祕魯亞馬遜地區的普卡爾帕，MB 名下 12 個 release-group、其中正規錄音室盤只有 4 張（1969 同名、1970 本張、1975《El brujo》、1988《No llores abuelita》）。本張是 Infopesa 時期的頭一批，編號 LPS 8063；2018-12-07 Infopesa 又把整張以 XW 數位形態重發。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 池中唯一與這條線相關的 Various Artists《The Roots of Chicha》(2007) 收的正是 Juaneco 這一批樂團的單曲，本批補的是他們自己的整張 LP。",
+  "risk": "MB 1969 年的同名首張《Juaneco y su Combo》（9c340d00）在 Apple 十個店面全部配不到（掛名與盤名相同，搜尋回 15 筆都不相符），因此本批不收、記進未收清單。本張 Apple pe 1436134761「El Gran Cacique」12 軌、releaseDate 2018（＝Infopesa 數位再發的日期，不是原盤年），依裁定第 77 條年份採 MB 的 1970。掛名 MB 實體作「Juaneco y su Combo」（小寫 y／su），Apple 作「Juaneco Y Su Combo」、另有 6783015381「Juaneco & Su Combo」與 1608102447 兩個次要實體，藝人閘要三種都認。",
+  "mbNote": "釘 release-group eb3e1494-0821-42d4-a20c-f20acf51fa64。回問確認：title「El gran cacique」、artist-credit「Juaneco y su Combo」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 筆 release（1970／PE／Official，Infopesa LPS 8063，12 軌；2018-12-07／XW／Official，Infopesa，12 軌）。藝人 MBID 9106e92a-aad0-4996-ac95-37b21fd70737（PE，1960 起），分頁列完 12 個 release-group。刻意不釘：ce98e591-6f76-412f-8984-420510decfff《Masters of Chicha, Vol. 1》(2008)、03e27ef8-2fd2-4af3-b22d-054fcc3f6ef5《The Birth of Jungle Cumbia》(2013)、5a421908-631c-47ef-825c-0ef6109a9459《Legado: Colección Definitiva》(2019)——三筆都是後世整編輯。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "El Gran Cacique；Juaneco Y Su Combo；Juaneco & Su Combo",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Juaneco y su Combo",
+  "album": "El brujo",
+  "year": 1975,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Infopesa（catno LPS-8081）",
+  "why": "Juaneco y su Combo 在 Infopesa 的第二張錄音室 LP，編號 LPS-8081、12 軌，與《El gran cacique》(LPS 8063) 同一條編號序列。這張與本批同時收的《El gran cacique》構成這個樂團在池中的兩張，其餘 MB 名下的條目多為後世整編輯（Masters of Chicha、The Birth of Jungle Cumbia、Legado）。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。",
+  "risk": "Apple pe 1832560434 作「El Brujo (2025 Remastered)」12 軌、releaseDate 2025——那是 2025 年的重製版，不是 1975 原盤，上架時封面與試聽要在備註標明版本差異（同 c-99 裁定第 5 條的處理）。MB 只有 1975 PE Official 一筆 release，年份與軌數以它為準。盤名 El brujo 兩個字，極容易被更長的別碟包住（裁定第 162 條），去重要連掛名一起比。",
+  "mbNote": "釘 release-group 6145f5c1-f892-4d51-b407-edc19b93803f。回問確認：title「El brujo」、artist-credit「Juaneco y su Combo」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 筆 release（1975／PE／Official，Infopesa LPS-8081，12 軌）。藝人 MBID 9106e92a-aad0-4996-ac95-37b21fd70737。刻意不釘：ba16b96e-b372-43ca-bba7-3de3cd2cbee9《Colección de oro》與 7af40121-d414-4c75-a223-0823761d8587《Grandes éxitos de...》（兩筆整編輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "El Brujo；Juaneco Y Su Combo El Brujo",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Mirlos",
+  "album": "El sonido selvático",
+  "year": 1973,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Infopesa（catno LPS 8043）",
+  "why": "Los Mirlos 1973 年在 Infopesa 的 LP，編號 LPS 8043、12 軌，是 MB 名下 18 個 release-group 裡年份最早的一張，也是這個樂團 1973–1976 年 Infopesa 三張（LPS 8043／8069／8097）的第一筆。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 本批把 Infopesa 那三張一併補上，是為了讓這個樂團在池中有一整段連號的原廠目錄，而不是只有後世的精選。",
+  "risk": "盤名重音（selvático）與 Apple 的大小寫（「El Sonido Selvático」）都要進 queryAlias。Apple pe 1810282818 12 軌、releaseDate 1973，與 MB 的軌數與年份一致。MB 名下另有 1978《Cumbia amazónica》(b0ae725a) 與 2014 同名的另一筆 (78a01584)——**同一個盤名兩個 release-group、相隔 36 年**，本批不碰那兩筆。CAA 未實測。",
+  "mbNote": "釘 release-group f95dafc0-c909-4874-b938-480fc0138101。回問確認：title「El sonido selvático」、artist-credit「Los Mirlos」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 筆 release（1973／PE／Official，Infopesa LPS 8043，12 軌）。藝人 MBID 967775fc-8997-47ed-8c2e-55a0eb59bfae（PE，1973 起），分頁列完 18 個 release-group。刻意不釘：b0ae725a-89ec-471e-ac9a-54b336d74048《Cumbia amazónica》(1978) 與 78a01584-2ce1-4df3-9d89-a39a3048320e《Cumbia amazónica》(2014)（兩筆同名整編輯）、239b3ebc-6a97-4017-a0bb-f5dbf8d13a6c 與 296ee9f3-0427-4319-8319-5aabdf8b5d2a 兩筆同名的《El Milagro Verde》(1975／1980)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "El Sonido Selvatico；El Sonido Selvático",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Mirlos",
+  "album": "Los charapas de oro",
+  "year": 1975,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Infopesa（catno LPS-8069）",
+  "why": "Los Mirlos 在 Infopesa 的第二張，編號 LPS-8069、12 軌，夾在 1973 年 LPS 8043 與 1976 年 LPS-8097 之間；2018-07-06 Infopesa 以 XW 數位形態把整張重發。盤名的 charapa 是祕魯亞馬遜地區對當地人的稱呼。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。",
+  "risk": "Apple pe 1371716537「Los Charapas de Oro」12 軌、releaseDate 2018——那是 Infopesa 數位再發的日期，年份依裁定第 77／91 條採 MB 的 1975。MB 名下 1975 年還有另一張《El Milagro Verde》(239b3ebc)，1980 年又有一筆同名的 (296ee9f3)，配對時不要撞進去。CAA 未實測。",
+  "mbNote": "釘 release-group 7107b643-f8cc-4b36-9022-3f66ba0378de。回問確認：title「Los charapas de oro」、artist-credit「Los Mirlos」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 筆 release（1975／PE／Official，Infopesa LPS-8069，12 軌；2018-07-06／XW／Official，Infopesa，12 軌）。藝人 MBID 967775fc-8997-47ed-8c2e-55a0eb59bfae。刻意不釘：1b00c927-096d-4460-9eef-9eb27da84298《Grandes éxitos》(2017)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Los Charapas de Oro",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Mirlos",
+  "album": "Tirense con la escoba",
+  "year": 1976,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Infopesa（catno LPS-8097）",
+  "why": "Los Mirlos 在 Infopesa 的第三張，編號 LPS-8097、12 軌，與 1973 年 LPS 8043、1975 年 LPS-8069 同一條編號序列，本批三張一起收即涵蓋這個樂團 1970 年代原廠目錄的主體。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。",
+  "risk": "MB 的盤名「Tirense con la escoba」無重音，Apple pe 1810282915 作「Tírense Con La Escoba」（Tírense 帶重音）12 軌、releaseDate 1976，**兩邊差一個重音符號**，NFKD 折疊後才相等，兩種寫法都要進 queryAlias（裁定第 49 條的同一書寫系統變形）。軌數與年份兩邊一致。CAA 未實測。",
+  "mbNote": "釘 release-group 7c408c7f-a44c-4648-9dfa-22d48b96f946。回問確認：title「Tirense con la escoba」、artist-credit「Los Mirlos」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 1 筆 release（1976／PE／Official，Infopesa LPS-8097／8097，12 軌）。藝人 MBID 967775fc-8997-47ed-8c2e-55a0eb59bfae。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tírense Con La Escoba；Tirense Con La Escoba",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Wembler's de Iquitos",
+  "album": "Al Ritmo de los Wembler's",
+  "year": 1972,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Odeon del Perú（catno LD 2195）",
+  "why": "Los Wembler's de Iquitos 是伊基托斯的家族樂團，MB 名下 7 個 release-group，1972–1977 年的原廠 LP 有四張。本張是其中年份最早的一筆，Odeon del Perú 編號 LD 2195、12 軌。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 本批替這個樂團收 1972／1975／1977 三張，跨 Odeon、Decibel 與 Sono Radio 三家廠牌。",
+  "risk": "掛名與盤名的撇號有兩種：MB 的 release-group 標題用 U+2019（Al Ritmo de los Wembler’s），artist-credit 與 Apple 用 ASCII 撇號（Los Wembler's de Iquitos）；MB 另有藝人實體名 Los Wembler’s de Iquitos 也是 U+2019。卡片一律採 ASCII 撇號（與池中 774 張含 ASCII 撇號的盤名一致），U+2019 版本進 queryAlias——這是裁定第 49 條在同一書寫系統內的變形，兩個字串在螢幕上一樣、在 === 下不相等。Apple pe 1804945401 12 軌、releaseDate 1972，與 MB 一致；Apple 另有 1760956287「Los Wemblers de Iquitos」（無撇號）這個次要藝人實體。MB 轄下第二筆 XW release（Distrolux SL）無日期。CAA 未實測。",
+  "mbNote": "釘 release-group b6659233-3016-4362-bc24-8574749a2ee0。回問確認：title「Al Ritmo de los Wembler’s」（U+2019）、artist-credit「Los Wembler's de Iquitos」（ASCII 撇號）、first-release-date 1972、primary-type Album、secondary-types 空、轄下 2 筆 release（1972／PE／Official，Odeon del Peru LD 2195，12 軌；無日期／XW／Official，Distrolux SL，12 軌）。藝人 MBID 8174abea-0428-4480-8f97-7bc5db389244（PE，1968 起），分頁列完 7 個 release-group。刻意不釘：6704b491-6212-4ae6-9533-d727699ea9b9《Los Wemblers de Emerson Isaias Sanchez Casanova》(2020)（掛名變體、非本團 1970 年代目錄）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Al Ritmo de los Wembler’s；Al Ritmo de los Wemblers；Los Wemblers de Iquitos；Los Wembler's De Iquitos",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Wembler's de Iquitos",
+  "album": "La danza del petrolero",
+  "year": 1975,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Decibel（catno LP 2001）",
+  "why": "Los Wembler's de Iquitos 1975 年的 LP，MB 轄下有兩筆 release：祕魯 Decibel LP 2001（12 軌）與一筆 XW 盤（18 軌）。盤名指的是 1970 年代祕魯亞馬遜的石油開採潮，與這個樂團所在的伊基托斯直接相關。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 本批同時收的《Al Ritmo de los Wembler's》(1972) 與《Fiesta en la selva》(1977) 分屬另外兩家廠牌。",
+  "risk": "**軌數兩說**：MB 的 PE Decibel 原盤 12 軌、XW 盤 18 軌；Apple 上也有兩筆——pe 1806368010「La Danza del Petrolero」12 軌標 1975，pe 1062401368 同名 18 軌標 2008。依裁定第 140／141 條，18 軌那一版多出來的六軌來源不明，行文不得寫原盤軌數，配對要取 12 軌那筆。掛名撇號同前一張的處理。CAA 未實測。",
+  "mbNote": "釘 release-group b8803c80-b282-4694-9189-a049860997bd。回問確認：title「La danza del petrolero」、artist-credit「Los Wembler's de Iquitos」、first-release-date 1975-01-01、primary-type Album、secondary-types 空、轄下 2 筆 release（1975／PE／Official，Decibel LP 2001，12 軌；1975-01-01／XW／Official，無廠牌，18 軌）。藝人 MBID 8174abea-0428-4480-8f97-7bc5db389244。刻意不釘：21046d72-c0da-4033-9054-abd2aeb065d0《La amenaza verde》(1975)（同年另一張，本批不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "La Danza del Petrolero",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Wembler's de Iquitos",
+  "album": "Fiesta en la selva",
+  "year": 1977,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Sono Radio（catno SE 9598）",
+  "why": "Los Wembler's de Iquitos 1977 年的 LP，廠牌換到 Sono Radio（編號 SE 9598、12 軌），是 MB 名下這個樂團 1970 年代四張原廠盤的最後一張，之後要到 2019 年《Visión del ayahuasca》才有新的錄音室盤。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。",
+  "risk": "Apple pe 1805638180「Fiesta en la Selva」12 軌、releaseDate 1977，與 MB 的軌數與年份一致。MB 名下另有 1805906840「El Encanto de la Selva」與 1805641490「Fiebre en la Selva」在 Apple 上（MB 未建檔），三個盤名都含「Selva」，子字串比對容易互配，去重要用完整字串。掛名撇號的兩種寫法同本團另兩張。CAA 未實測。",
+  "mbNote": "釘 release-group 333e75c0-dabf-4426-9089-4d8f1f28e60f。回問確認：title「Fiesta en la selva」、artist-credit「Los Wembler’s de Iquitos」（此筆的 credit 用 U+2019，與 1972／1975 兩筆的 ASCII 撇號不同，同一藝人在 MB 上兩種 credit 並存）、first-release-date 1977、primary-type Album、secondary-types 空、轄下 1 筆 release（1977／PE／Official，Sono Radio SE 9598，12 軌）。藝人 MBID 8174abea-0428-4480-8f97-7bc5db389244。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fiesta en la Selva；Los Wembler’s de Iquitos；Los Wemblers de Iquitos",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Chacalón y la Nueva Crema",
+  "album": "Chacalón y la Nueva Crema",
+  "year": 1978,
+  "genres": [
+   "world"
+  ],
+  "label": "Horóscopo（catno HLP 001）",
+  "why": "Chacalón（Lorenzo Palacios Quispe）與 La Nueva Crema 的同名盤，Horóscopo 編號 HLP 001、12 軌，是 MB 名下這個樂團 8 個 release-group 中年份最早的兩筆之一（另一筆是同年的《Exitos ...Exitos ...Exitos》）。這一支走的是利馬移民聚落的 chicha andina，與同批 Los Destellos、Los Mirlos 那條亞馬遜 cumbia 的路線不同。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。",
+  "risk": "**Apple 與 MB 的年份差兩年**：Apple pe 1093449379「Chacalón y la Nueva Crema」12 軌記 1976，MB 唯一一筆 PE release 記 1978。依裁定第 77／127 條，Apple 的 releaseDate 不足以覆蓋 MB 的具體 release 記載（Horoscopo HLP 001 是編號 001，與 1978 相符），卡單採 1978，行文不得斷言發行年。MB 的 release-group 標題大小寫作「Chacalón Y La Nueva Crema」（Y、La 大寫），artist-credit 作「Chacalón y la Nueva Crema」，卡片採 credit 的寫法。掛名與盤名相同（自我同名），子字串比對必然互相包住。",
+  "mbNote": "釘 release-group a5824f3a-3a7c-4bf2-8d66-83322e8db599。回問確認：title「Chacalón Y La Nueva Crema」、artist-credit「Chacalón y la Nueva Crema」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 筆 release（1978／PE／Official，Horoscopo HLP 001，12 軌）。藝人 MBID 326162e7-0e56-49ba-8aa9-a0b12dbc6526（PE，1978 起），分頁列完 8 個 release-group。刻意不釘：008763a2-0f7c-452c-b383-58804e85b3fe《Exitos ...Exitos ...Exitos》(1978，同年)、5f498ae0-6056-491f-b1cd-c308e0fb334f《Éxitos de Papá Chacalón》（無年份、primary-type 為空）、f8dd7336-f982-4d65-bfc3-124f2a46946f《El Faraon de la Chicha Vol.1》(2005 整編輯)、473b6050-1371-4c9b-ba85-e0180fbb9e84《Recuerdos Inolvidables Vol.2》(2007 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Chacalon y la Nueva Crema；Chacalón Y La Nueva Crema",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Chacalón y la Nueva Crema",
+  "album": "El Soberano de la Cumbia",
+  "year": 1982,
+  "genres": [
+   "world"
+  ],
+  "label": "Horóscopo（catno HLP 1009）",
+  "why": "Chacalón y la Nueva Crema 在 Horóscopo 的另一張 LP，編號 HLP 1009、11 軌，與 1978 年的 HLP 001 同一家廠牌、相隔四年。本批替這個樂團收 1978 與 1982 兩張，是把 chicha 的利馬移民聚落那一支從零補到兩張。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。",
+  "risk": "**Apple 與 MB 年份差一年**：Apple pe 1775638838「El Soberano de la Cumbia」11 軌記 1983，MB 的 PE release 記 1982（Horoscopo HLP 1009）。軌數兩邊都是 11。依裁定第 141 條，兩邊各有一筆具體記載且互相矛盾，卡單採 MB 的 1982、行文不得斷言發行年。MB 的 release-group 標題大小寫作「El Soberano De La Cumbia」（De、La 大寫），卡片採一般西語大小寫。",
+  "mbNote": "釘 release-group c8daf110-478d-4d19-bd8c-daf7f9318a64。回問確認：title「El Soberano De La Cumbia」、artist-credit「Chacalón y la Nueva Crema」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 筆 release（1982／PE／Official，Horoscopo HLP 1009，11 軌）。藝人 MBID 326162e7-0e56-49ba-8aa9-a0b12dbc6526。刻意不釘：c8daf110 之外的 90b594c9-4f7b-4dbf-8b93-1a5b91b1bd7e《Los Admirados De La Nueva Crema》(1983) 與 7d4ce3c0-fdd0-4954-b6d2-3f6eaf3c1882《Vol. 5 Tu Vida, Mi Vida》(1985)（同團鄰年的兩張，本批不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "El Soberano De La Cumbia",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Lucho Bermúdez",
+  "album": "San Fernando y otros éxitos inolvidables de Lucho Bermúdez y Matilde Díaz",
+  "year": 1954,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Sonolux（CO 盤，14 軌）",
+  "why": "Lucho Bermúdez 是哥倫比亞大樂團 porro／cumbia 的作曲與樂團領班，Matilde Díaz 是與他長期合作的歌手。這張 1954 年 Sonolux 的哥倫比亞盤是 MB 名下這條線年份最早的一筆（該藝人實體與「Lucho Bermúdez y Matilde Díaz」實體合計 15 個 release-group，其餘多為 1990 年代之後的整編輯）。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 收這張是把哥倫比亞 1950 年代的大樂團熱帶舞曲從零開到一張。",
+  "risk": "**掛名有兩個 MB 實體**：本張的 artist-credit 是「Lucho Bermúdez y Matilde Díaz」（群組實體 2d1d0c07-bc4a-4e1c-968f-8e0413384f5b，名下僅此一個 release-group），Lucho 個人實體是 81aa035d-9c0e-4080-b956-9dec7ff921b6（14 個 release-group）。卡片採「Lucho Bermúdez」，避免在池中製造第二個掛名鍵（同 c-99 裁定第 2 條的處理），兩個 credit 都進 queryAlias。Apple pe 1749165736「San Fernando y Otros Éxitos Inolvidables de Lucho Bermúdez y Matilde Diaz」14 軌、releaseDate 1954，掛名記「Lucho Bermúdez」——與卡片一致；注意 Apple 的 Diaz 沒有重音。盤名很長，依裁定第 152 條配對要準備短名「San Fernando」。MB 的 1967《Burucuca》(c95a86ab) 在 Apple 十個店面全部查無，本批不收。",
+  "mbNote": "釘 release-group 5fa1f7b1-9b6f-42d5-8111-7e1f4b7a99d2。回問確認：title「San Fernando y otros éxitos inolvidables de Lucho Bermúdez y Matilde Díaz」、artist-credit「Lucho Bermúdez y Matilde Díaz」、first-release-date 1954、primary-type Album、secondary-types 空、轄下 1 筆 release（1954／CO／Official，Sonolux，14 軌）。刻意不釘：c95a86ab-89ee-405e-b3b2-15ba5130b6db《Burucuca》(1967，Apple 查無)、33abcaf7-7a48-4a48-9a24-3ad2a26dad08《The Coastal Invasion…(1946-1961)》(2022 考古整編輯)、a4feb865-8476-4490-8c66-972a45850893《El Maestro》(2000 整編輯)、de5142f4-4fb6-41c4-993c-60c4e6e35e9b《Los éxitos》(1971 整編輯)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "San Fernando；Lucho Bermúdez y Matilde Díaz；Lucho Bermudez y Matilde Diaz；Lucho Bermúdez y su Orquesta Sabanera；Lucho Bermudez",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Aníbal Velásquez",
+  "album": "Mambo Loco",
+  "year": 2010,
+  "genres": [
+   "world"
+  ],
+  "label": "Analog Africa（catno AACD 067／AALP 067）",
+  "why": "Aníbal Velásquez 是哥倫比亞巴蘭基亞的手風琴手，MB 名下 17 個 release-group，1968–1981 年的原廠 LP 多為哥倫比亞內銷、國際上長期買不到。這張是德國廠牌 Analog Africa 2010 年編的整輯（AACD 067／AALP 067），把他 1960–70 年代的錄音重新集結，是他在英美市場有實體流通的條目。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 本張與同批的兩張 Soundway 哥倫比亞輯一起，構成這個場景在池中的入口。",
+  "risk": "**MB primary-type 是 Album、secondary-types 含 Compilation**，依 ALBUM_ONBOARDING §5.6 明文與裁定第 167 條，照一般 Album 寫、不填 exceptionReason 與 exceptionEvidenceUrls。年份取整輯首次出版年 2010。掛名 MB artist-credit 作「Aníbal Velásquez y su Conjunto」、Apple 作「Anibal Velasquez y Su Conjunto」（無重音），卡片採 MB 藝人實體名「Aníbal Velásquez」。Apple cl 420238397「Mambo Loco (Analog Africa No. 7)」10 軌——**Apple 的盤名帶系列副標**（裁定第 152 條的形狀），且 MB 四筆 release 的軌數是 10／10／10／11（LP 版 AALP 067 為 11 軌），行文不得寫這張有幾軌。MB 有一筆 2010-04 XE release 標 Promotion，依裁定第 43／57 條不採為背書；其餘三筆為 Official。",
+  "mbNote": "釘 release-group 8f157439-4ace-473f-87e8-475828d2da63。回問確認：title「Mambo Loco」、artist-credit「Aníbal Velásquez y su Conjunto」、first-release-date 2010-04-12、primary-type Album、secondary-types [Compilation]、轄下 4 筆 release（2010／XE／Official，Analog Africa AALP 067，11 軌；2010-04／XE／Official，AACD 067，10 軌；2010-04-12／XW／Official，Analog Africa，10 軌；2010-04／XE／Promotion，AACD 067，10 軌）。藝人 MBID c06d3377-3ff5-41bb-8e1b-23998922ce9b（CO，1936 生），分頁列完 17 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mambo Loco Analog Africa；Anibal Velasquez；Aníbal Velásquez y su Conjunto；Anibal Velasquez y Su Conjunto",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Ángeles Negros",
+  "album": "Y volveré",
+  "year": 1969,
+  "genres": [
+   "pop"
+  ],
+  "label": "EMI Odeón Chilena S.A.（CL 原盤，12 軌）",
+  "why": "Los Ángeles Negros 是 1968 年在智利 San Carlos 組的樂團，MB 名下 23 個 release-group，1969–1974 年的錄音室盤有五張。本張是 1969 年兩張之一（另一張是《Porque te quiero》，MB 404a17bb），MB 轄下有智利原盤、1970 年的 XW 盤與 1972 年的美國 Parnaso 盤（P-LPS-1070）三筆，是這個樂團外銷到美洲西語市場的一個具體條目。實掃 seed_cards.json 全 14,424 列，Los Ángeles Negros 池中 0 張；智利藝人池中只有 Víctor Jara 三張、Violeta Parra 兩張、Inti-Illimani 與 Quilapayún 與 Los Jaivas 與 Los Prisioneros 各一張，全部集中在 nueva canción 與 1980 年代搖滾兩端，1960 末到 1970 年代的智利抒情流行是空的。",
+  "risk": "盤名兩字、MB 標題「Y volveré」與 Apple pe 1435600006「Y Volveré」大小寫不同，且 Apple 的 releaseDate 記 1970（＝MB 那筆 XW release 的 1970-09-05），MB 的 first-release-date 是 1969（智利 EMI Odeón 原盤）。依裁定第 91／127 條，卡單採 MB 的 1969、行文不得斷言發行年。Apple 有 473386 與 1224562692 兩個「Los Ángeles Negros」藝人實體，另有 1271228993「Los angeles negros」與 1473829021「Los Angeles Negros」（無重音）兩個變體，藝人閘要四種都認。三筆 release 全部 Official。",
+  "mbNote": "釘 release-group 0e4e6d3b-8838-3ff9-bb6f-d1820eff7e2f。回問確認：title「Y volveré」、artist-credit「Los Ángeles Negros」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 3 筆 release（1969／CL／Official，EMI Odeón Chilena S.A.，12 軌；1970-09-05／XW／Official，Alegría Music Latino，12 軌；1972／US／Official，Parnaso P-LPS-1070，12 軌）。藝人 MBID 3febb873-0757-47a2-b9cb-baa2cf0e5b91（CL，1968 起），分頁列完 23 個 release-group、其中 13 筆是整編輯。刻意不釘：0c881a59-5d9d-4bc1-bd6c-750fd8c6898a《Album de oro》(1972) 與 03afd76f-487a-4b19-adc3-d7100258c429《Album de oro (Volumen 2)》(1972)（兩筆互為子字串的整編輯）、404a17bb-f879-4b66-8318-ce0378173079《Porque te quiero》(1969，同年另一張，本批不收)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Y Volveré；Y Volvere；Los Angeles Negros",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Ángeles Negros",
+  "album": "Esta noche la paso contigo",
+  "year": 1971,
+  "genres": [
+   "pop"
+  ],
+  "label": "Odeon（catno LDC 35274）",
+  "why": "Los Ángeles Negros 1971 年的錄音室盤，Odeon 編號 LDC 35274、12 軌，位在 1969 年兩張與 1974 年《Aplaude Mi Final》之間。本批替這個樂團收 1969／1971／1974 三張，涵蓋他們智利 Odeon 時期到外銷美國時期的三個點。實掃 seed_cards.json 全 14,424 列，Los Ángeles Negros 池中 0 張；智利藝人池中只有 Víctor Jara 三張、Violeta Parra 兩張、Inti-Illimani 與 Quilapayún 與 Los Jaivas 與 Los Prisioneros 各一張，全部集中在 nueva canción 與 1980 年代搖滾兩端，1960 末到 1970 年代的智利抒情流行是空的。",
+  "risk": "**MB 這筆 release 的 status 是空的**（1971／CL，Odeon LDC 35274），依裁定第 43／57／78 條不得單獨拿它當授權背書；同 release-group 沒有第二筆 release 可交叉。MB 的 release-group 標題大小寫作「Esta Noche La Paso Contigo」、artist-credit 作「Los Angeles Negros」（**無重音**，與 1969 那筆的「Los Ángeles Negros」不同，同一藝人在 MB 上兩種 credit 並存）；卡片依裁定第 26／70 條採西語原文的重音寫法，與 Apple pe 1332734644「Esta Noche la Paso Contigo」的掛名「Los Ángeles Negros」一致。Apple 那筆 12 軌但 releaseDate 記 2018（數位再發），年份採 MB 的 1971。",
+  "mbNote": "釘 release-group 19f9b428-f088-41af-8fbb-a3c2d98fde31。回問確認：title「Esta Noche La Paso Contigo」、artist-credit「Los Angeles Negros」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 筆 release（1971／CL／status 空，Odeon LDC 35274，12 軌）。藝人 MBID 3febb873-0757-47a2-b9cb-baa2cf0e5b91。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Esta Noche La Paso Contigo；Los Angeles Negros",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Los Ángeles Negros",
+  "album": "Aplaude mi final",
+  "year": 1974,
+  "genres": [
+   "pop"
+  ],
+  "label": "美國盤，catno SLP 00465（MB 未填廠牌名）",
+  "why": "Los Ángeles Negros 1974 年的盤，MB 轄下唯一一筆 release 是美國壓片（編號 SLP 00465、12 軌），與 1969《Y volveré》的 1972 年 Parnaso 美國盤同屬他們在美國西語市場發行的一段。本批三張中年份最晚的一張。實掃 seed_cards.json 全 14,424 列，Los Ángeles Negros 池中 0 張；智利藝人池中只有 Víctor Jara 三張、Violeta Parra 兩張、Inti-Illimani 與 Quilapayún 與 Los Jaivas 與 Los Prisioneros 各一張，全部集中在 nueva canción 與 1980 年代搖滾兩端，1960 末到 1970 年代的智利抒情流行是空的。",
+  "risk": "**MB 這筆 release 的 status 空、廠牌名也空**（只有編號 SLP 00465），依裁定第 43／57 條不得當授權背書，行文不得斷言發行廠牌。MB 的 release-group 標題大小寫作「Aplaude Mi Final」、artist-credit 作「Los Angeles Negros」（無重音），卡片採西語原文重音寫法。Apple pe 1284903069「Aplaude Mi Final」12 軌、releaseDate 1974，是年份的第二個獨立佐證，軌數也一致。",
+  "mbNote": "釘 release-group 2151fadd-4949-4afc-8f96-298388f3dd2f。回問確認：title「Aplaude Mi Final」、artist-credit「Los Angeles Negros」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 筆 release（1974／US／status 空，廠牌名未填、catno SLP 00465，12 軌）。藝人 MBID 3febb873-0757-47a2-b9cb-baa2cf0e5b91。刻意不釘：bf6f30f1-f00e-4f61-a436-a836d15b628e《Dejenme si estoy llorando / Debut y despedida》(1974 單曲)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Aplaude Mi Final；Los Angeles Negros",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "Cumbias Chichadélicas: Peruvian Psychedelic Chicha",
+  "year": 2011,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Infopesa（catno INF 00-00102）",
+  "why": "祕魯廠牌 Infopesa 2011 年編的 chicha 選輯（編號 INF 00-00102、16 軌），收的正是 Los Destellos、Los Mirlos、Juaneco y su Combo 這一批樂團在該廠牌名下的錄音；2015 年西班牙的 Pharaway Sounds 以 PHS029 重發雙碟版。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 池中那張 2007 年 Barbès 的《The Roots of Chicha》是布魯克林編的境外選輯，本張則是原廠自己編的，兩張並列可以讓這條線同時有境內與境外兩個入口。",
+  "risk": "**MB primary-type 是 Album、secondary-types 含 Compilation**，依 §5.6 明文與裁定第 167 條照一般 Album 寫、不填例外欄位。年份取整輯首次出版年 2011（MB first-release-date 2011-11-28）。MB 標題「Cumbias Chichadélicas : Peruvian Psychedelic Chicha」**冒號前有一個空格**，Apple pe 951761593 作「Cumbias Chichadelicas: Peruvian Psychedelic Chicha」（無重音、無空格）、releaseDate 2014、16 軌，掛名記「Varios Artistas」——**藝人閘會擋掉 Varios Artistas**（同 c-99 第 1 條 Slumdog 那筆的形狀），要先放行。MB 的 2015 ES Pharaway Sounds 那筆 status 空、且是 8+8 雙碟，與 16 軌單碟不是同一形態，配對不要取它。",
+  "mbNote": "釘 release-group 5e6f7b4a-63ae-4d8a-9945-6d7008e8aa8b。回問確認：title「Cumbias Chichadélicas : Peruvian Psychedelic Chicha」、artist-credit「Various Artists」、first-release-date 2011-11-28、primary-type Album、secondary-types [Compilation]、轄下 2 筆 release（2011-11-28／PE／Official，Infopesa INF 00-00102，16 軌；2015-11-25／ES／status 空，Pharaway Sounds PHS029，8+8 雙碟）。刻意不釘：fde830ce-ceb3-4fa4-95fb-2ad2939ca1a1《Cumbias Chichadelicas 2: + Peruvian Psychedelic Chicha》(2023，續集，盤名完整包含本張)、481befd2-952c-3cb3-8c45-d278c454618e《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007，池中已有)、34769c3e-3fdd-409a-a1b0-08598bcf0eb5《The Roots of Chicha 2》(2010，Apple 十個店面查無、本批不收)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Cumbias Chichadelicas；Cumbias Chichadelicas Peruvian Psychedelic Chicha；Varios Artistas",
+  "reissuedBy": "Pharaway Sounds（2015，ES，PHS029）",
+  "g": "a"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "Cartagena! Curro Fuentes and the Big Band Cumbia and Descarga Sound of Colombia 1962-72",
+  "year": 2011,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Soundway（catno SNDWCD026）",
+  "why": "英國廠牌 Soundway 2011 年編的哥倫比亞選輯（SNDWCD026、19 軌），以製作人 Curro Fuentes 在卡塔赫納的錄音為單位，涵蓋 1962–72 年的大樂團 cumbia 與 descarga。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 這張與同批的《Palenque Palenque》（同廠牌）一起，把哥倫比亞加勒比海岸這條線從零補到兩張。",
+  "risk": "**MB primary-type 是 Album、secondary-types 含 Compilation**，依 §5.6 明文與裁定第 167 條照一般 Album 寫、不填例外欄位。年份取 2011（MB first-release-date 2011-03-07）。**盤名極長**（裁定第 152 條），Apple cl 1611876689 作「Cartagena! Curro Fuentes & The Big Band Cumbia and Descarga Sound of Colombia 1962-72」——**and 改成 &**（同 c-99 Ali and Toumani 那筆的形狀），且 MB 的 US release 標題也是 & 版並把年份寫成「1962 - 72」（帶空格）。配對要準備短名「Cartagena Curro Fuentes」。兩筆 release 均為 Official、皆 19 軌。",
+  "mbNote": "釘 release-group 78b28ed4-3e4a-46e2-8cef-ce6f7a0de5a1。回問確認：title「Cartagena! Curro Fuentes and the Big Band Cumbia and Descarga Sound of Colombia 1962-72」、artist-credit「Various Artists」、first-release-date 2011-03-07、primary-type Album、secondary-types [Compilation]、轄下 2 筆 release（2011-03-07／GB／Official，Soundway SNDWCD026，19 軌；2011-07-12／US／Official，Soundway，19 軌，標題作「…Curro Fuentes & the Big Band…1962 - 72」）。刻意不釘：f2bd7461-0b63-4669-a2b2-47342ea4fd49《Colombia! The Golden Age of Discos Fuentes…》(2007，Apple 十個店面查無、本批不收)、216ab633-7a0e-4c78-9c03-8c2cf7a237e6《Remolino de Oro》與 646ee57b-1d93-49b6-b501-126cad396f91《A orillas del Magdalena》（兩筆同屬 Discos Fuentes 系列的別輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Cartagena Curro Fuentes；Cartagena! Curro Fuentes & The Big Band Cumbia and Descarga Sound of Colombia 1962-72；Cartagena",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "Palenque Palenque: Champeta Criolla & Afro Roots in Colombia 1975-91",
+  "year": 2009,
+  "genres": [
+   "world"
+  ],
+  "label": "Soundway（catno SNDWCD022）",
+  "why": "Soundway 2009 年編的哥倫比亞選輯（SNDWCD022、21 軌），以聖巴西利奧德帕倫克一帶的 champeta criolla 與非洲裔根源音樂為範圍，時間橫跨 1975–91 年。實掃 seed_cards.json 全 14,424 列：chicha 與 cumbia 這條線池中 0 張——祕魯藝人只有 Chabuca Granda《Tarimba Negra》與 Susana Baca 兩張，哥倫比亞最早的一張是 Joe Arroyo y La Verdad《Musa Original》(1986)，1950–70 年代的 cumbia／porro 一張都沒有；拉美考古選輯只有 Various Artists《The Roots of Chicha: Psychedelic Cumbias From Peru》(2007) 一張。 這張與同批《Cartagena!》同屬 Soundway 的哥倫比亞系列，兩張的年代與地域不重疊（1962–72 的卡塔赫納大樂團 vs 1975–91 的帕倫克），不是同一批錄音的重複包裝。",
+  "risk": "**MB primary-type 是 Album、secondary-types 含 Compilation**，依 §5.6 明文與裁定第 167 條照一般 Album 寫、不填例外欄位。年份取 2009（MB first-release-date 2009-08-10）；MB 另一筆 US release 記 2010，Apple us 1611911465 的 releaseDate 也記 2009——以 2009 為準。Apple 那筆盤名作「Palenque Palenque: Champeta Criolla & Afro Roots in Colombia 1975 - 91」（**年段中間有空格**），21 軌與 MB 一致。盤名前兩字重複（Palenque Palenque），子字串比對容易配到 MB 上一堆叫《Palenque》的別碟（4579b165 Felix Hess、6893a481 DJANGO 等）。兩筆 release 均為 Official。",
+  "mbNote": "釘 release-group 3d6a69c0-ff62-487c-919e-3e5b5e2e118a。回問確認：title「Palenque Palenque: Champeta Criolla & Afro Roots in Colombia 1975-91」、artist-credit「Various Artists」、first-release-date 2009-08-10、primary-type Album、secondary-types [Compilation]、轄下 2 筆 release（2009-08-10／XW／Official，Soundway，21 軌；2010／US／Official，Soundway SNDWCD022，21 軌）。刻意不釘：4579b165-7d2b-4e76-87d3-908762f2dce5《Palenque》(Felix Hess)、6893a481-7f65-41f2-bca9-3880447b89e4《Palenque》(DJANGO)、d4cec9df-49d3-4870-a71d-f2877e54004d《Así es Palenque》(Kombilesa Mi)——三筆與本張零關係、只是盤名互為子字串。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Palenque Palenque；Palenque Palenque Champeta Criolla；Palenque Palenque: Champeta Criolla & Afro Roots in Colombia 1975 - 91",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
