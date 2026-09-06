@@ -72,6 +72,23 @@ export const LINES = {
   c100: { lineType: '廣度', scene: '古典演奏家傳奇錄音目錄深度' },
   c101: { lineType: '廣度', scene: { a: '遊戲原聲正典：日本廠牌世代', b: '遊戲原聲正典：獨立遊戲與西方大作' } },
   c102: { lineType: '廣度', scene: { a: '動畫原聲正典：菅野・久石・梶浦世代', b: '動畫原聲正典：機械與劇伴' } },
+  // 2026-09-06 店主「接著跑完」——規劃書剩下的 16 批（B 線 6／C 2／D 2／E 3／F 3）
+  c103: { lineType: '廣度', scene: { a: '演歌與戰後歌謡：女聲正典', b: '演歌與戰後歌謡：男聲與昭和流行' } },
+  c104: { lineType: '廣度', scene: { a: '韓國 80s–90s 歌謡與城市流行', b: '韓國 80s–90s 韓搖與민중가요' } },
+  c105: { lineType: '廣度', scene: { a: 'K-pop 韓版里程碑', b: 'K-indie 第二輪' } },
+  c106: { lineType: '廣度', scene: { a: '華語第三輪：上海時代曲與港星目錄', b: '華語第三輪：台語經典' } },
+  c107: { lineType: '廣度', scene: { a: '中國搖滾正典：魔岩世代與北京搖滾', b: '中國獨立：後 2000 廠牌與地方場景' } },
+  c108: { lineType: '廣度', scene: { a: '拉丁第二圈：chicha 與 cumbia', b: '拉丁第二圈：salsa dura 與 nueva canción' } },
+  c109: { lineType: '廣度', scene: { a: '法語搖滾：Bashung 世代與 rock français', b: '法語流行與 rap français' } },
+  c110: { lineType: '廣度', scene: { a: '德語搖滾與 NDW', b: '義大利搖滾與流行' } },
+  c111: { lineType: '廣度', scene: { a: '2024–2025 正典：英美', b: '2024–2025 正典：日韓與華語' } },
+  c112: { lineType: '廣度', scene: { a: '2026 新譜：英美', b: '2026 新譜：日韓與華語' } },
+  c113: { lineType: '廣度', scene: '沖繩民謡 §1 補遺' },
+  c114: { lineType: '廣度', scene: { a: '美國福音 Nashboro 補遺 I', b: '美國福音 Nashboro 補遺 II' } },
+  c115: { lineType: '廣度', scene: { a: '英國 DIY 自壓盤補遺', b: '演歌批轉來的 §1 候選' } },
+  c116: { lineType: '深掘', scene: { a: '日本自主 hardcore／ジャパコア', b: '日本 noise 小廠' } },
+  c117: { lineType: '深掘', scene: { a: '英國 folk-rock 私壓：Leader／Trailer 系', b: '英國 folk-rock 小廠：Broadside／Village Thing 系' } },
+  c118: { lineType: '深掘', scene: { a: '芝加哥 house 二線小廠 12 吋', b: '底特律與紐澤西 techno／house 二線小廠' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
