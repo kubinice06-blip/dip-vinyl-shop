@@ -457,7 +457,7 @@
   ],
   "status": "full",
   "yearVerified": "**要注意，這張有兩處把年份指向 2025**。MB release-group first-release-date **2026-02-13**、CD 與數位兩筆同為 2026-02-13（黑膠那筆日期只填到「2026」，不能拿來當首發日）、Apple us 1848413292 的 releaseDate 是 2026-02-13——這三處都是 2026。**但 Apple 的 copyright 欄寫的是「℗ 2025 Epitaph」**，而且 **MB 33de147d《Love Is Not Enough》同名先行單曲的日期是 2025-11-19**（維基 Singles 欄同記 2025 年 11 月 19 日）。也就是說：**同名先行單曲比專輯早近三個月，而且落在前一年；「取 `first-release-date` 最早那筆」在這張上會同時選錯碟又選錯年。**卡單年份 2026 與 MB release-group 一致，維持不動；**行文不得引用 ℗ 2025 那個年份**。策展層的釘位 21465b8f 已複驗無誤。",
-  "notes": "**探測層 ready 覆核通過**：us 1848413292，10 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。\\n**短掛名回問結果（裁定 179 第 2 點）**：藝人實體 fa31e7d4 的 type=Group、country=US、area=United States、disambiguation「US metalcore band」、成軍 1990——**是本團無誤**，MB 上沒有第二個叫 Converge 的實體來搶這個掛名。\\n**同藝人同年第二張已避開**：MB 632777f5《Hum of Hurt》（2026-06-05）是同一實體 2026 年的另一張正規盤（維基 infobox 的 next 欄就是它），策展層已寫進「刻意不釘」，逐張複檢時未配到它。\\n**策展層說法複驗**：`why` 寫「Epitaph 88135-2 與 Deathwish DW266 共同發行、3 筆 release 全 Official、皆 10 軌、有一筆 XW release 日期只填到年」——**全部成立**。\\n**⚠ 資料源裡混著評論分數，一律不得引用**：MB 的 tags 欄含「laut.de [4/5]」與「plattentests.de [8/10]」，維基條目頂端有 Metacritic 84/100 與 AnyDecentMusic 8/10 的評分框。**這些一條都不能進 facts 或行文。**"
+  "notes": "**探測層 ready 覆核通過**：us 1848413292，10 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。\\n**短掛名回問結果（裁定 179 第 2 點）**：藝人實體 fa31e7d4 的 type=Group、country=US、area=United States、disambiguation「US metalcore band」、成軍 1990——**是本團無誤**，MB 上沒有第二個叫 Converge 的實體來搶這個掛名。\\n**同藝人同年第二張已避開**：MB 632777f5《Hum of Hurt》（2026-06-05）是同一實體 2026 年的另一張正規盤（維基 infobox 的 next 欄就是它），策展層已寫進「刻意不釘」，逐張複檢時未配到它。\\n**策展層說法複驗**：`why` 寫「Epitaph 88135-2 與 Deathwish DW266 共同發行、3 筆 release 全 Official、皆 10 軌、有一筆 XW release 日期只填到年」——**全部成立**。\\n**⚠ 資料源裡混著評論分數，一律不得引用**：MB 的 tags 欄有兩個帶分數的樂評站標記，維基條目頂端另有兩個評分框。**這些一條都不能進 facts 或行文。**"
  },
  {
   "key": "desc2:Kevin Morby|Little Wide Open",
@@ -681,6 +681,358 @@
   ],
   "status": "full",
   "yearVerified": "一致，2026。MB release-group first-release-date **2026-02-20**、三筆 release 同為 2026-02-20（另一筆數位 2026-04-03）、Apple us 1878399948 的 releaseDate 與 ℗ 年份都是 2026，三處同年同日。**同名先行單曲：無**——唯一的單曲〈Good Flirts〉2026-03-06 反而在專輯**之後**。**本張的同名陷阱在碟內**：第 2 軌就叫〈Ca$ino〉（4:20），以曲名取固定試聽會取到它而不是開場曲。另外盤名帶錢字號：MB 與 Apple 都作首字大寫的「Ca$ino」，英文維基條目名作「Casino」、內文註明風格化為「Ca$ino」；`$` 在多數正規化下會被清掉、變成「caino」而與「Casino」不相等（裁定 49 同型）。策展層的釘位 eac8a859 已複驗無誤。",
-  "notes": "**探測層 ready 覆核通過，而且不是淨化版**：us 1878399948 的 collectionExplicitness 是 `explicit`、11 軌裡 10 軌的 trackExplicitness 也是 `explicit`（裁定 166 的檢查已做）。11 軌全有 previewUrl，曲名／曲序與 MB 的 11 軌數位版逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。\\n**擋下策展層一處（硬錯）**：`why` 寫「數位版 11 軌、CD 版 12 軌、**另有一筆 13 軌的較晚數位版（2026-04-03）**」——**兩件事被接錯了**。13 軌那一筆是 **9fc95e48，日期 2026-02-20、status 是 Withdrawn**；而 **2026-04-03 的 829d48cf 是 11 軌、status Official**。策展層自己在 `risk` 裡點名了 Withdrawn 那筆「2026-02-20」，卻在 `why` 把 13 軌算到 4 月那筆頭上。依裁定 43／57／65／78，13 軌那個版本不採為背書；**有 Official 背書的軌數是 11（數位）與 12（CD）兩說**。\\n**⚠ 第 7 軌〈$ex Appeal〉的長度兩說**：MB 的 11 軌數位版記 3:25、12 軌 CD 版記 3:04，**Apple 記 3:04**——Apple 的曲序跟數位版走、這一軌的長度卻跟 CD 版走。單一軌的落差不影響配碟判斷，但**行文不得引用這一軌的長度**。\\n**〈Tubi〉只在 CD 上**：11 軌數位與 Apple 都沒有這一首，行文若要點曲目請避開它，或寫明「只收在 CD 版」。\\n**⚠ 資料源裡混著評論分數**：MB tags 有「laut.de [4/5]」。**不得寫任何評論分數、榜單名次或獎項。**"
+  "notes": "**探測層 ready 覆核通過，而且不是淨化版**：us 1878399948 的 collectionExplicitness 是 `explicit`、11 軌裡 10 軌的 trackExplicitness 也是 `explicit`（裁定 166 的檢查已做）。11 軌全有 previewUrl，曲名／曲序與 MB 的 11 軌數位版逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。\\n**擋下策展層一處（硬錯）**：`why` 寫「數位版 11 軌、CD 版 12 軌、**另有一筆 13 軌的較晚數位版（2026-04-03）**」——**兩件事被接錯了**。13 軌那一筆是 **9fc95e48，日期 2026-02-20、status 是 Withdrawn**；而 **2026-04-03 的 829d48cf 是 11 軌、status Official**。策展層自己在 `risk` 裡點名了 Withdrawn 那筆「2026-02-20」，卻在 `why` 把 13 軌算到 4 月那筆頭上。依裁定 43／57／65／78，13 軌那個版本不採為背書；**有 Official 背書的軌數是 11（數位）與 12（CD）兩說**。\\n**⚠ 第 7 軌〈$ex Appeal〉的長度兩說**：MB 的 11 軌數位版記 3:25、12 軌 CD 版記 3:04，**Apple 記 3:04**——Apple 的曲序跟數位版走、這一軌的長度卻跟 CD 版走。單一軌的落差不影響配碟判斷，但**行文不得引用這一軌的長度**。\\n**〈Tubi〉只在 CD 上**：11 軌數位與 Apple 都沒有這一首，行文若要點曲目請避開它，或寫明「只收在 CD 版」。\\n**⚠ 資料源裡混著評論分數**：MB tags 有一個帶分數的樂評站標記。**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc2:Isaiah Rashad|IT’S BEEN AWFUL",
+  "artist": "Isaiah Rashad",
+  "album": "IT’S BEEN AWFUL",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 434089fc 的欄位：title「IT’S BEEN AWFUL」（全大寫，**用的是彎撇號 U+2019**）、artist-credit「Isaiah Rashad」（藝人實體 MBID 37547347，type Person、country US、生於 1991-05-16）、first-release-date 2026-05-01、primary-type Album、secondary-types **空**。轄下 **3 筆 release 全部 Official、全部 2026-05-01、全部 16 軌、全部是 Digital Media**（廠牌欄一律 Top Dawg Entertainment 與 Warner Records 並列，**三筆都沒有目錄號**）——**MB 上完全沒有實體載體**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/434089fc-fe02-4883-a5c2-1a58abb10578?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release 9c334d61（2026-05-01 XW 數位）的逐軌曲目與長度：1〈THE NEW SUBLIME〉2:43、2〈M.O.M.〉2:45、3〈SAME SH!T〉3:13、4〈BOY IN RED〉3:09、5〈SUPAFICIAL〉4:44、6〈SCARED 2 LOOK DOWN〉3:36、7〈HAPPY HOUR〉4:07、8〈DO I LOOK HIGH?〉3:02、9〈AIN’T GIVIN’ UP〉3:56、10〈GTKY〉2:32、11〈CAMERAS〉3:48、12〈ACT NORMAL〉4:12、13〈10 STATES AWAY〉2:35、14〈NUTHIN 2 HIDE〉3:50、15〈SUPERPWRS〉3:32、16〈719 FREESTYLE〉2:23。**曲名全部大寫**。最短是收尾的〈719 FREESTYLE〉2:23、最長是〈SUPAFICIAL〉4:44——**十六軌沒有一首超過四分四十五秒**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=434089fc-fe02-4883-a5c2-1a58abb10578&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1892543099：collectionName「**IT'S BEEN AWFUL**」（**Apple 用的是直撇號 U+0027，與 MB 的彎撇號不同**）、releaseDate 2026-05-01、copyright「℗ 2026 Top Dawg Entertainment, under exclusive license to Warner Records Inc.」、trackCount 16、collectionExplicitness explicit。`entity=song` **攤得出 16 軌、16 軌全部有 previewUrl**，曲名與曲序與 MB 原盤**逐位置相符**、逐軌長度**全部相同到秒**；16 軌裡 15 軌的 trackExplicitness 是 explicit（只有第 14 軌 notExplicit）——**這一筆是 explicit 原版，不是淨化版**。",
+    "src": "https://itunes.apple.com/lookup?id=1892543099&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈It's Been Awful〉首句與 infobox：這是 Isaiah Rashad 的**第三張錄音室專輯**（盤名以全大寫呈現），2026-05-01 由 Top Dawg Entertainment 與 Warner Records 發行，總長 **54:17**，**錄音期橫跨 2022 到 2026 年**。前作是 2021 年的《The House Is Burning》。infobox 的製作人欄列了**二十八個名字**（Rory Behr、Fantom Power、Dominic Fike、Free P、Will Gell、Mihji Grey、Nate Hobden、Hollywood Cole、Jansport J、Julian Sintonia、Kal Banx、Koii、KTC、Mario Luciano、Lucho、Don Oskar、Pete Nebula、Rascal、Rowan、Sader、D. Sanders、Saxon、Blake Straus、SyedSounds、Henry Was、Wizzle、Devin Workman、Wu10）。兩首單曲：〈Same Shit〉2026-04-10、〈Boy in Red〉2026-04-30。",
+    "src": "https://en.wikipedia.org/wiki/It%27s_Been_Awful"
+   },
+   {
+    "f": "同一條目 Musicians 節與 Sample credits 節：**SZA 在第 4 軌〈BOY IN RED〉唱主唱**；**Dominic Fike 在第 11 軌〈CAMERAS〉唱主唱並掛編程**；Kembe X 在第 7 軌加人聲；Julian Sintonia 除了在第 1、4、5 軌加人聲與六軌的編程之外，**在第 8 軌〈DO I LOOK HIGH?〉唱主唱**。第 4 軌另有五位額外和聲、第 14 軌有四位。**第 9 軌〈AIN’T GIVIN’ UP〉取樣 Khruangbin 演奏的〈White Gloves〉。** Track notes 另註明〈Same Shit〉的風格化寫法是〈Same Sh!t〉。",
+    "src": "https://en.wikipedia.org/wiki/It%27s_Been_Awful"
+   },
+   {
+    "f": "同一條目 Background and promotion 節：這張碟拖了很久——2024 年 2 月 Top Dawg 一份外流的年度發行時程表上有他的名字，同年 10 月他自己確認新碟「快好了」，2025 年 8 月在 Lollapalooza 演出時又試放了一首新歌、再一次說快完成。**2026 年 3 月，有人在 Top Dawg 官網的訂單裡收到一張小卡：正面印著「It's Been Awful」，背面寫著「每個人都想看你崩潰、垮掉、燒完，當成他們的娛樂。我只想看你笑。」** Rashad 把這些小卡轉貼到自己的 Instagram；專輯在 4 月 7 日以一支預告正式公布。",
+    "src": "https://en.wikipedia.org/wiki/It%27s_Been_Awful"
+   }
+  ],
+  "hookCandidates": [
+   "公布前有人在官網訂單裡收到一張小卡，背面寫著「我只想看你笑」",
+   "十六軌五十四分鐘，最長的〈SUPAFICIAL〉也只有四分四十四秒"
+  ],
+  "sound": "MB 三筆 release 全 Official、全部 16 軌、全部是數位（Top Dawg Entertainment 與 Warner Records 並列，三筆都沒有目錄號，MB 上沒有任何實體載體）。Apple us 逐軌長度與 MB 相同到秒；維基記總長 54:17。曲長從 2:23（收尾的〈719 FREESTYLE〉）到 4:44（〈SUPAFICIAL〉），十六軌沒有一首超過四分四十五秒，只有四首破四分鐘。錄音期橫跨 2022 到 2026 年。製作人欄列了二十八個名字，多數只接一到兩軌；Julian Sintonia 是最貫穿的一位——六軌編程、五軌額外編程、三軌加人聲，還在第 8 軌唱主唱。客席主唱兩位：SZA 在第 4 軌、Dominic Fike 在第 11 軌（並掛該軌編程）。第 9 軌取樣 Khruangbin 的〈White Gloves〉。曲名全部大寫。",
+  "keyTracks": [
+   "THE NEW SUBLIME",
+   "BOY IN RED",
+   "719 FREESTYLE"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-05-01**、三筆 release 全部同為 2026-05-01、Apple us 1892543099 的 releaseDate 與 ℗ 年份都是 2026，三處同年同日。**同名先行單曲：無**——兩首單曲〈Same Shit〉（2026-04-10，即本張第 3 軌〈SAME SH!T〉）與〈Boy in Red〉（2026-04-30，本張第 4 軌）盤名都與專輯不同。**要注意錄音期不是發行年**：維基 infobox 記 recorded 2022–2026，行文不得把 2022 寫成發行年（裁定 30 的分別）。策展層的釘位 434089fc 已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過，而且不是淨化版**：us 1892543099 的 collectionExplicitness 是 `explicit`、16 軌裡 15 軌的 trackExplicitness 也是 `explicit`（裁定 166 的檢查已做）。16 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 16、無裁定 175 的落差。\\n**⚠ 撇號兩寫法已實測（裁定 49）**：MB 的盤名是「IT**’**S BEEN AWFUL」（彎撇號 U+2019）、**Apple 回的是「IT'S BEEN AWFUL」（直撇號 U+0027）**、英文維基條目名是〈It's Been Awful〉（直撇號）。卡片的 key 用的是彎撇號，**任何以卡片盤名字串去打 Apple 的動作都要同時試直撇號**。策展層在 `risk` 已預告這一點，實測確認成立。\\n**策展層說法複驗**：`why` 寫「3 筆 release 全 Official、目前只建了 16 軌的數位版、實體尚未建檔」「MB 廠牌欄沒填編號」——**全部成立**。`risk` 說「行文不得斷言實體發行」——**照做**，維基與 MB 都沒有實體版的紀錄。\\n**補一處策展層的曲目對照**：策展層說同日另出單曲《BOY IN RED》（feat. SZA），實查那首**就是本張的第 4 軌**，SZA 在維基 Musicians 節掛的是該軌的 lead vocals；行文若提 SZA，指的是碟內第 4 軌。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc2:Kelela|new avatar",
+  "artist": "Kelela",
+  "album": "new avatar",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 001c0c77 的欄位：title「new avatar」（全小寫）、artist-credit「Kelela」（藝人實體 MBID **045494aa**，type **Person**、country **US**、area United States、disambiguation「**US | R&B**」、生於 1983-06-06）、first-release-date 2026-07-10、primary-type Album、secondary-types **空**。轄下 **2 筆 release 全部 Official、全部 12 軌、全部 2026-07-10**：XW 的數位（Warp，barcode 5056818808807）與 XW 的 Jewel Case CD（**Warp WARPCD405**，barcode 5056818809088）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/001c0c77-95ee-4b9a-8292-63f237ae383a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release 8571224e（2026-07-10 XW 數位，Warp）的逐軌曲目與長度：1〈idea 1〉3:25、2〈point blank〉4:26、3〈goin down〉3:20、4〈outta time〉4:11、5〈against me〉2:40、6〈crystalize〉4:11、7〈retaliation lullaby〉3:07、8〈linknb〉1:55、9〈don’t piss me off〉3:30、10〈new life forms〉3:24、11〈the bridge〉3:53、12〈if we meet again〉2:45。**曲名全部小寫**。最短是〈linknb〉1:55、最長是〈point blank〉4:26——十二軌全部落在這個帶內。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=001c0c77-95ee-4b9a-8292-63f237ae383a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1888561538：collectionName「new avatar」、releaseDate 2026-07-10、copyright「℗ 2026 Warp Records」、trackCount 12、collectionExplicitness explicit。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 MB 原盤**逐位置相符**、逐軌長度**全部相同到秒**（12 軌裡 6 軌的 trackExplicitness 是 explicit）。",
+    "src": "https://itunes.apple.com/lookup?id=1888561538&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈New Avatar〉首句、infobox 與 Personnel 節：這是 Kelela 的**第三張錄音室專輯**（盤名與全部曲名都以小寫呈現），2026-07-10 經 Warp Records 發行，總長 **40:47**。製作三人：**Kelela 本人（掛全十二軌的製作與全碟混音）、Oscar Scheller（十軌製作）、A. K. Paul（第 4 軌〈outta time〉的製作與人聲工程）**；母帶 **Joe LaPorta**；Scarlet House 彈第 1 軌吉他，Kezia Warioba 在第 8 軌加人聲，PinkPantheress 掛第 11 軌〈the bridge〉的人聲工程。客席三位：A. K. Paul、Fousheé、PinkPantheress。**第 9 軌〈don’t piss me off〉取樣 Craig David 的〈You Know What〉。** infobox 的前作欄填的是 2025 年的《In the Blue Light》。",
+    "src": "https://en.wikipedia.org/wiki/New_Avatar"
+   },
+   {
+    "f": "同一條目 Background 與 Composition 節：Kelela 說這張碟取自她「在音樂上住過的每一個地方」，聲音被形容為「經過破音吉他的 R&B」，另有舞曲的成分；她說這張「在直視裡找到慰藉」，不打算讓人分心於世上正在發生的事，而是想「在這個瘋狂的時刻裡把事情弄明白」，希望聽的人重新接上他們曾感受過的「美與喜悅」。條目指出這張相對她過去的電子 R&B 是一次風格轉向——**取材自她早年在華盛頓特區獨立音樂圈的經驗**，把另類 R&B 與 shoegaze、grunge、獨立搖滾及電子的成分放在一起，同時保留她一貫的實驗電子聲響。",
+    "src": "https://en.wikipedia.org/wiki/New_Avatar"
+   },
+   {
+    "f": "同一條目的 Singles 欄：**五首單曲全部在 2026 年、全部先於專輯**——〈Idea 1〉2026-04-08（本張第 1 軌）、〈Linknb〉2026-05-05（第 8 軌）、〈Point Blank〉2026-06-01（第 2 軌）、〈Outta Time〉2026-06-16（第 4 軌）、〈The Bridge〉2026-07-07（第 11 軌，**只早三天**）。",
+    "src": "https://en.wikipedia.org/wiki/New_Avatar"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌四十分鐘，最短的〈linknb〉只有一分五十五秒——這張的參照是她早年在華盛頓特區獨立圈聽的東西",
+   "第九軌底下取樣的是 Craig David 的〈You Know What〉"
+  ],
+  "sound": "MB 兩筆 release 全 Official、全部 12 軌（Warp 的數位與 Jewel Case CD WARPCD405，同日發行）。Apple us 逐軌長度與 MB 相同到秒；維基記總長 40:47。曲長從 1:55（〈linknb〉）到 4:26（〈point blank〉），十二軌全部落在這個帶內、沒有一首超過四分半。製作三人：Kelela 自己掛全十二軌的製作與全碟混音、Oscar Scheller 接十軌並掛多軌人聲工程、A. K. Paul 只做第 4 軌；母帶 Joe LaPorta。客席與參與者散得很開：Scarlet House 的吉他在第 1 軌、Kezia Warioba 的和聲在第 8 軌、PinkPantheress 掛第 11 軌的人聲工程，Fousheé 與 A. K. Paul 另有客席。第 9 軌取樣 Craig David 的〈You Know What〉。盤名與全部曲名一律小寫。廠牌 Warp。",
+  "keyTracks": [
+   "idea 1",
+   "linknb",
+   "the bridge"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-07-10**、兩筆 release 全部同為 2026-07-10、Apple us 1888561538 的 releaseDate 與 ℗ 年份都是 2026，三處同年同日。**同名先行單曲：無**——五首單曲〈Idea 1〉〈Linknb〉〈Point Blank〉〈Outta Time〉〈The Bridge〉盤名都與專輯不同，但**五首都是本張的曲目**，而且最後一首〈The Bridge〉2026-07-07 只早三天。策展層點名的〈thе bridgе〉（標題含西里爾字母 е，U+0435）是**另一個 release-group**，與本張第 11 軌的〈the bridge〉同形異碼、自動比對看不出來（裁定 49）。策展層的釘位 001c0c77 已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：us 1888561538，12 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。\\n**短掛名回問結果（裁定 179 第 2 點）**：藝人實體 045494aa 的 type=Person、country=US、area=United States、disambiguation「US | R&B」、生於 1983-06-06——**是本人無誤**，MB 上沒有第二個 Kelela 實體。\\n**⚠ 修正策展層一處（前作認定）**：`why` 寫「池中 Kelela 現有《Take Me Apart》2017 與《Raven》2023，**這張接在《Raven》之後**」——**中間還隔了一張**。英文維基 infobox 的 prev_title 是 **2025 年的《In the Blue Light》**。行文若要寫「接在哪一張之後」，**要寫《In the Blue Light》2025，不是《Raven》2023**；要寫池中關係則另說（池中確實沒有 2025 那張）。\\n**策展層說法複驗**：`mbNote` 寫「2 筆 release 全 Official、12 軌、WARPCD405」——**成立**；`risk` 說的西里爾同形異碼陷阱也已複驗成立。\\n**評論性描述要小心**：維基 Composition 節裡有幾段是引用 DJ Mag 與 Resident Advisor 的樂評用語。**本稿只採條目自身的敘述與 Kelela 本人的說法**，行文同樣不得引用樂評的評價、分數或榜單名次。"
+ },
+ {
+  "key": "desc2:Steve Lacy|Oh yeah?",
+  "artist": "Steve Lacy",
+  "album": "Oh yeah?",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 40a8bbb9 的欄位：title「Oh yeah?」、artist-credit「Steve Lacy」（藝人實體 MBID **b29020d6**，type Person、country US、disambiguation「**guitarist and back‐up vocalist with The Internet; born 1998**」、生於 1998-05-23）——**這個 disambiguation 欄本身就把他與 1934–2004 那位高音薩克斯風手 Steve Lacy 分開了**。first-release-date 2026-07-17、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：XW 的 Digital Media（10 軌，barcode 196874346976），status Official，**沒有目錄號、沒有實體載體**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/40a8bbb9-667a-4878-beb7-05b4fdffa92d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release eb30b1a0（2026-07-17 XW 數位）的逐軌曲目與長度：1〈Oh Yeah?〉2:51、2〈Is It Cool?〉2:54、3〈The Feeling〉4:35、4〈Pure Colour〉3:07、5〈Show You Me〉3:23、6〈Doom〉4:53、7〈Nothing〉2:30、8〈Lovesexdrugbomb〉3:57、**9〈Nice Shoes / In Your World〉9:03**、10〈Bebe〉2:48。收尾前那一軌 9:03，**比其他任何一軌都長一倍以上**；最短是〈Nothing〉2:30。**MB 的廠牌欄記「L‐M Records」，中間那個字元是 U+2010 連字號、不是 ASCII 的 `-`**（另一家是 RCA）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=40a8bbb9-667a-4878-beb7-05b4fdffa92d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 6773775032：collectionName「Oh yeah?」、releaseDate 2026-07-17、copyright「℗ 2026 RCA Records, under exclusive license from **L-M Records**」（**Apple 用的是 ASCII 連字號**）、trackCount 10、collectionExplicitness explicit。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 MB 原盤**逐位置相符**、逐軌長度相同到秒（僅第 1、4、5、6、7、10 軌差一秒）；**Apple 的曲名一律小寫**，並把客席寫進曲名：第 2 軌〈is it cool? (feat. **SZA**)〉、第 4 軌〈pure colour (feat. **Erykah Badu**)〉、第 8 軌〈lovesexdrugbomb (feat. **Cecile Believe**)〉。",
+    "src": "https://itunes.apple.com/lookup?id=6773775032&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Oh Yeah? (album)〉首句與 infobox：這是 Steve Lacy 的**第三張錄音室專輯**，2026-07-17 經 RCA Records 發行，總長 **39:54**；**宣傳語是「一張給喜歡合成器的吉他小孩、和喜歡吉他的合成器小孩的唱片」**。製作六人：Marius de Vries、Steve Lacy、Matt Martians、Michael Uzowuru、Nicholas Weiss、Karl Wingate；**Matthew Castellanos 掛執行製作，並且是全部十軌的共同作者**。距前作 2022 年的《Gemini Rights》隔了四年。兩首單曲：〈The Feeling〉2026-06-05（本張第 3 軌）、〈Oh Yeah?〉**2026-08-18（在專輯之後）**。Notes 節註明全部曲名以小寫呈現、曲長取自 Spotify。",
+    "src": "https://en.wikipedia.org/wiki/Oh_Yeah%3F_(album)"
+   },
+   {
+    "f": "同一條目 Background and recording 節：**他在巴黎與洛杉磯之間往返做這張碟**；好幾次想把碟推往某個方向都以挫折收場，最後他乾脆放棄事先決定曲序，稱它是「最難做的專輯之一」。**他在得知加拿大音樂人 Cecile Believe 曾為 SOPHIE 2018 年的《Oil of Every Pearl's Un-Insides》獻聲之後對她著迷，形容她是「一台人形合成器」**，她因此出現在〈Lovesexdrugbomb〉上。Fousheé 在數首歌掛和聲與詞曲。",
+    "src": "https://en.wikipedia.org/wiki/Oh_Yeah%3F_(album)"
+   },
+   {
+    "f": "同一條目 Personnel 節的客席與班底逐軌歸位：**SZA 在第 2 軌演出、Erykah Badu 在第 4 軌演出、Cecile Believe 在第 1 軌唱和聲並在第 8 軌演出**；Brittany Fousheé 唱第 1、2 軌和聲、Ravyn Lenae 唱第 2 軌和聲、Alice Smith 唱第 3 軌和聲；**Tyler Okonma 掛第 8 軌的鼓編程**；第 9 軌〈Nice Shoes / In Your World〉的和聲有四位（Asia Lacy、Valerie Lacy、Valyn Spottsville、Vijay Beasley），鍵盤是 **John Carroll Kirby**。Nicholas Weiss 彈第 1 軌貝斯、第 5 軌合成器編程與第 6 軌合成器。混音 **Jon Castelli**，母帶 **Ruairi O'Flaherty**。",
+    "src": "https://en.wikipedia.org/wiki/Oh_Yeah%3F_(album)"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡第九軌〈Nice Shoes / In Your World〉獨自跑滿九分鐘，比其他任何一軌長一倍以上",
+   "宣傳語寫「給喜歡合成器的吉他小孩、和喜歡吉他的合成器小孩」——他在巴黎與洛杉磯之間往返做完"
+  ],
+  "sound": "MB 上只有一筆 release：XW 的 10 軌數位（Official，無目錄號、無實體載體）。Apple us 逐軌長度與 MB 相同到秒；維基記總長 39:54、並註明曲長取自 Spotify。曲長從 2:30（〈Nothing〉）到 9:03（第 9 軌〈Nice Shoes / In Your World〉）——除了那一軌之外，其餘九軌全部落在 2:30–4:53 之間，長度分布上只有一個斷點。製作六人（Marius de Vries、Lacy 本人、Matt Martians、Michael Uzowuru、Nicholas Weiss、Karl Wingate），Matthew Castellanos 掛執行製作並共同寫下全部十軌；混音 Jon Castelli、母帶 Ruairi O'Flaherty。錄音在巴黎與洛杉磯之間往返完成。客席三位各佔一軌：SZA 在第 2 軌、Erykah Badu 在第 4 軌、Cecile Believe 在第 8 軌（並在第 1 軌唱和聲）；Tyler Okonma 掛第 8 軌鼓編程，John Carroll Kirby 彈第 9 軌鍵盤。廠牌 RCA 與 L-M Records。",
+  "keyTracks": [
+   "Oh Yeah?",
+   "Pure Colour",
+   "Nice Shoes / In Your World"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-07-17**、唯一那筆 release 同為 2026-07-17、Apple us 6773775032 的 releaseDate 與 ℗ 年份都是 2026，三處同年同日。**同名先行單曲：無，而且方向是反的**——同名單曲〈Oh Yeah?〉的日期是 **2026-08-18，在專輯之後一個月**（維基 Singles 欄），先行的那首是〈The Feeling〉2026-06-05。**這是本組唯一一張同名單曲晚於專輯的**，取最早那筆不會選錯，但取最晚那筆會。策展層的釘位 40a8bbb9 已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：us 6773775032，10 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。\\n**⚠ 掛名撞號已用 MB 自己的欄位解決（裁定 179 第 2 點）**：藝人實體 b29020d6 的 disambiguation 直接寫著「guitarist and back‐up vocalist with **The Internet**; born **1998**」、生日 1998-05-23——**MB 這一欄本身就把他與 1934–2004 那位高音薩克斯風手分開了**。策展層說池中「Steve Lacy」一個字串下並存兩位不同音樂人（R&B 這位 2 張、薩克斯風手 7 張），這一點會影響三軸與封面配對，**已確認要往下游傳**。\\n**⚠ 廠牌名含非 ASCII 連字號（本批第二次出現這個形狀）**：**MB 的廠牌欄是「L‐M Records」，中間是 U+2010 HYPHEN**；Apple 的 ℗ 欄與卡片的 `label` 欄都是 ASCII 的「L-M Records」。**任何以廠牌名做字串比對的下游動作，兩種寫法都要試**（與策展層在未收清單裡剔除 Fire-Toolz 的理由同型，策展層 §11）。\\n**策展層說法複驗**：`why` 寫「MB 目前只有 1 筆 Official release、10 軌數位、實體尚未建檔、廠牌欄沒填編號」——**全部成立**；`risk` 說「行文不得斷言實體發行」，**照做**。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc2:Arlo Parks|Ambiguous Desire",
+  "artist": "Arlo Parks",
+  "album": "Ambiguous Desire",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 018ef28f 的欄位：title「Ambiguous Desire」、artist-credit「Arlo Parks」（藝人實體 MBID 6e8e3717，type Person、country **GB**、area United Kingdom、disambiguation「Alternative R&B artist」、生於 2000-08-09）、first-release-date 2026-04-03、primary-type Album、secondary-types **空**。轄下 **3 筆 release 全部 Official、全部 12 軌、全部 2026-04-03**：一張 CD（**Transgressive Records TRANS930CD**，barcode 5400863201609）與兩筆數位（Transgressive Records）。**MB 上沒有黑膠。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/018ef28f-9a83-4963-b751-6ad555bfa873?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release 26b2f447（2026-04-03 CD，Transgressive Records TRANS930CD）的逐軌曲目與長度：1〈Blue Disco〉3:01、2〈Jetta〉2:49、3〈Get Go〉3:22、4〈Senses〉4:03、5〈Heaven〉4:26、6〈Beams〉3:40、7〈South Seconds〉1:48、8〈Nightswimming〉3:51、9〈2SIDED〉2:57、10〈Luck of Life〉3:34、11〈What If I Say It?〉3:16、12〈Floette〉3:13。最短是排在正中間的〈South Seconds〉1:48、最長是〈Heaven〉4:26；十二軌只有兩首超過四分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=018ef28f-9a83-4963-b751-6ad555bfa873&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1862570378：collectionName「Ambiguous Desire」、releaseDate 2026-04-03、copyright「℗ 2026 Arlo Parks under exclusive license to Transgressive Records Ltd.」、trackCount 12、collectionExplicitness notExplicit。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 MB 原盤**逐位置相符**、逐軌長度相同到秒（僅第 1、2、6、11、12 軌差一到三秒）。Apple 把客席寫進曲名：第 4 軌〈Senses (feat. **Sampha**)〉。",
+    "src": "https://itunes.apple.com/lookup?id=1862570378&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Ambiguous Desire〉首句與 infobox：這是 Arlo Parks 的**第三張錄音室專輯**，2026-04-03 經 Transgressive Records 發行，總長 **40:01**。製作八人：**Arlo Parks 本人、Baird、Rob Bisel、Paul Epworth、Romil Hemnani、Dylan Neustadter、Buddy Ross、Andrew Sarlo**。前作是 2023 年的《My Soft Machine》。單曲共六首：〈2Sided〉2026-01-13（**與專輯的公告同日**）、〈Heaven〉2026-02-02、〈Get Go〉2026-03-10、〈Beams〉2026-03-31、〈Senses〉2026-05-22、〈Floette〉2026-08-04——**後兩首在專輯之後**，其中〈Floette〉那一次放的是**找饒舌歌手 John Glacier 合作的混音版**。",
+    "src": "https://en.wikipedia.org/wiki/Ambiguous_Desire"
+   },
+   {
+    "f": "同一條目 Personnel 節（抄自 Tidal）：Parks 掛主唱；**混音是 David Wrench**、錄音工程 Garry Purohit。逐軌班底：Simon Martinez 彈第 1、2、5 軌吉他；Ryan Raines 打第 3、4、12 軌的鼓；**Paul Epworth 在第 3、8、11 軌同時彈吉他與合成器，並在第 3、8 軌打鼓、第 3 軌彈貝斯**；Dylan Neustadter 彈第 2 軌合成器；Brad Oberhofer 彈第 6 軌鋼琴；**Sampha Sisay 唱第 4 軌〈Senses〉的主唱**。工程另有 Chiara Ferracuti 與 Luke Pickering（第 3、8、11 軌）、Walker Steele（第 9 軌）。",
+    "src": "https://en.wikipedia.org/wiki/Ambiguous_Desire"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡最短的〈South Seconds〉只有一分四十八秒，正好排在第七軌、全碟正中間",
+   "第四軌〈Senses〉唱主唱的是 Sampha；第三、八、十一軌的吉他與合成器則是 Paul Epworth 自己上陣"
+  ],
+  "sound": "MB 三筆 release 全 Official、全部 12 軌（Transgressive 的 CD TRANS930CD 與兩筆數位；MB 上沒有黑膠）。Apple us 逐軌長度與 MB 相同到秒（少數軌差一到三秒）；維基記總長 40:01。曲長從 1:48（第 7 軌〈South Seconds〉）到 4:26（〈Heaven〉），十二軌只有兩首超過四分鐘。製作欄列了八個人，Parks 自己在內；混音 David Wrench、錄音工程 Garry Purohit。班底分軌很細：Simon Martinez 的吉他在第 1、2、5 軌，Ryan Raines 的鼓在第 3、4、12 軌，Paul Epworth 在第 3、8、11 軌同時掛吉他與合成器、另在兩軌打鼓一軌彈貝斯，Brad Oberhofer 的鋼琴在第 6 軌。唯一的客席主唱是第 4 軌的 Sampha。廠牌 Transgressive Records。",
+  "keyTracks": [
+   "Blue Disco",
+   "Senses",
+   "South Seconds"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-04-03**、三筆 release 全部同為 2026-04-03、Apple us 1862570378 的 releaseDate 與 ℗ 年份都是 2026，三處同年同日。**同名先行單曲：無**——六首單曲盤名都與專輯不同，而且**六首都是本張的曲目**（〈2SIDED〉第 9 軌、〈Heaven〉第 5 軌、〈Get Go〉第 3 軌、〈Beams〉第 6 軌、〈Senses〉第 4 軌、〈Floette〉第 12 軌）。要注意其中兩首在專輯**之後**才單獨發行（〈Senses〉2026-05-22、〈Floette〉2026-08-04），後者放的還是與 John Glacier 合作的混音版——**取最晚那筆的邏輯會選到混音單曲**。策展層的釘位 018ef28f 已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：us 1862570378，12 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。\\n**修正策展層一處（掛名認定）**：`mbNote` 把 d5f9527d《Senses》（ft. Sampha）列進「刻意不釘」，理由是「artist-credit 與本張不同」——**釘位判斷正確、但要補一句**：那首**就是本張的第 4 軌**，維基 Personnel 節記 Sampha Sisay 掛該軌的 lead vocals，Apple 也把曲名寫成〈Senses (feat. Sampha)〉。行文提到 Sampha 時指的是碟內第 4 軌，不是一張另外的碟。\\n**策展層說法複驗**：`mbNote` 寫「3 筆 release 全 Official、12 軌、TRANS930」——**成立**；`why` 說四首先行單曲依序出，實查是**六首**（另兩首在專輯之後），數量要更正。\\n**補一處策展層沒寫到的**：**MB 上沒有黑膠 release**，只有 CD 與兩筆數位。依裁定 128／136，行文可寫「MB 目前只建了 CD 與數位」，**不得斷言沒有出黑膠**。\\n**掛名池中零張**：策展層說 Arlo Parks 在池中 0 張，是新開的藝人鍵，冷門軸會被雙重低估（策展層裁定 13）。\\n**⚠ 資料源裡混著評論媒體標記**：MB tags 有「laut.de」「musikexpress.de」「plattentests.de」。**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc2:Jalen Ngonda|Doctrine of Love",
+  "artist": "Jalen Ngonda",
+  "album": "Doctrine of Love",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 236c05d9 的欄位：title「Doctrine of Love」、artist-credit「Jalen Ngonda」（藝人實體 MBID 869851f6，type Person、country **GB**、**area Liverpool**、disambiguation 空）、first-release-date 2026-06-05、primary-type Album、secondary-types **空**。轄下 **4 筆 release 全部 Official、全部 2026-06-05**：一張 CD（**Daptone Records DAP-084**，10 軌）、US 的數位（10 軌）、GB 的 Digipak CD（**11 軌**，DAP-084）、以及 **GB 的紙套套裝 4c6760fa（DAP-084LPRT）＝一片 12 吋黑膠 10 軌 ＋ 一張 CD 11 軌 ＋ 一張下載卡**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/236c05d9-9e34-4160-bbea-665041bd04b6?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release 3d8cfe9e（2026-06-05 CD，Daptone Records DAP-084）的逐軌曲目與長度：1〈Anyone in Love〉3:05、2〈Doctrine of Love〉3:20、3〈Mr. Train Conductor〉2:44、4〈Burning Temptation〉3:31、5〈Love Is Gone〉3:11、6〈I Can’t Ever Leave You〉3:15、7〈Hannah, What’s the Matter?〉2:53、8〈Good Good Love〉2:23、9〈Hang It on the Shelf〉2:25、10〈Taken Out of the Picture〉3:49。**十軌沒有一首超過三分五十秒、也沒有一首短於兩分二十秒**，最短〈Good Good Love〉2:23、最長〈Taken Out of the Picture〉3:49。**11 軌的那兩筆（GB Digipak CD 與套裝內的 CD）多的是第 11 軌〈No More Tears From You〉2:55**，排在最後——依裁定 140 屬加曲版。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=236c05d9-9e34-4160-bbea-665041bd04b6&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1871925666：collectionName「Doctrine of Love」、releaseDate 2026-06-05、copyright「℗ 2026 Daptone Records」、trackCount 10、collectionExplicitness notExplicit。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 MB 的 10 軌版**逐位置相符**、逐軌長度**全部相同到秒**（**沒有第 11 軌〈No More Tears From You〉**）。",
+    "src": "https://itunes.apple.com/lookup?id=1871925666&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Daptone 官方商店的商品頁：目錄編號 **DAP084**，同時賣**標準黑膠、彩膠、附唱盤墊的標準黑膠、標準黑膠＋標準〈Doctrine of Love〉7 吋 45 轉、彩膠＋彩色 45 轉、以及 CD** 六種組合；**那張 45 轉的透明膠版本配淺藍色標籤、全球限量 一千三百 張**。商品文案引 Ngonda 的話：「愛的教義主張，每一個念頭與每一個行動都應該先以對他人的同理為準，因為愛是衡量人的價值的最高尺度。」文案並說這張把首作的管弦編排擴大，加上銅管的點綴與帶福音味的和聲。",
+    "src": "https://shopdaptonerecords.com/products/jalen-ngonda-doctrine-of-love"
+   },
+   {
+    "f": "Bandcamp 專輯頁的說明文與曲目：發行日 **2026-06-05**、廠牌 Daptone Records、十軌。文案寫自 2023 年備受注目的首張全長《Come Around and Love Me》之後他的路走得極快，**這是他的第二張專輯**；並引他自己對盤名的解釋（同上一條）。Bandcamp 列的十首曲目與長度與 MB 的 10 軌版完全一致。",
+    "src": "https://jalenngonda.bandcamp.com/album/doctrine-of-love"
+   },
+   {
+    "f": "Consequence 2026 年 3 月的專輯公告報導（只取事實欄）：發行日 6 月 5 日、廠牌 Daptone Records、**十軌**、**製作是 Vince Chiarito 與 Michael Buckley 兩人**、前作是 2023 年的《Come Around and Love Me》；**Ngonda 在華盛頓特區長大、現以倫敦為據點**。報導引他談同名曲的話：「我寫那首的時候正想盡辦法要離開錄音室。那陣子我聽了很多 James Brown，那就是靈感。」",
+    "src": "https://consequence.net/2026/03/jalen-ngonda-doctrine-of-love-new-album-title-track-stream/"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌沒有一首超過三分五十秒——Daptone 連唱盤墊與一張限量 一千三百 張的淺藍標 45 轉都一起賣",
+   "同名曲是他想盡辦法要離開錄音室時寫的：那陣子他聽了很多 James Brown"
+  ],
+  "sound": "MB 四筆 release 全 Official、同日發行：CD 與 US 數位是 10 軌，GB 的 Digipak CD 與那套黑膠套裝裡的 CD 是 11 軌（多的是收尾的〈No More Tears From You〉2:55）；套裝本身是一片 12 吋黑膠（10 軌）＋一張 CD（11 軌）＋一張下載卡，編號 DAP-084LPRT。Apple us 取的是 10 軌那一版，逐軌長度與 MB 相同到秒。曲長從 2:23（〈Good Good Love〉）到 3:49（收尾的〈Taken Out of the Picture〉）——**十軌全部落在兩分二十秒到三分五十秒之間，沒有任何一首例外**。製作是 Daptone 的 Vince Chiarito 與 Michael Buckley 兩人；廠牌文案說這張把首作的管弦編排放大，加上銅管點綴與帶福音味的和聲。Daptone 的實體版本開得很多：標準黑膠、彩膠、附唱盤墊的組合，以及一張限量 一千三百 張、淺藍標的透明膠 7 吋 45 轉。廠牌 Daptone Records，編號 DAP-084。",
+  "keyTracks": [
+   "Anyone in Love",
+   "Doctrine of Love",
+   "Taken Out of the Picture"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-06-05**、四筆 release 全部同為 2026-06-05、Apple us 1871925666 的 releaseDate 與 ℗ 年份都是 2026、Bandcamp 與 Consequence 的公告日期同樣是 2026-06-05，四處同年同日。**同名先行單曲：無同名的「單曲 release-group」**——先行單曲是〈Hang It on the Shelf〉（MB 13f59f95，2026-04-14），盤名與專輯不同、而且它是本張第 9 軌。**但 Daptone 另外壓了一張〈Doctrine of Love〉的 7 吋 45 轉當周邊**（見商店頁），那是與專輯同名的實體單曲、只是 MB 未建檔；下游若在別處撞到「Doctrine of Love 7\\\"」，那是周邊不是本張。策展層的釘位 236c05d9 已複驗無誤。",
+  "notes": "**本張沒有英文維基的專屬條目**（`Doctrine of Love` 是一個指向〈Jalen Ngonda〉藝人條目 #Singles 段的重新導向），班底與版本改由**Daptone 官方商店頁、Bandcamp 專輯頁與 Consequence 的公告報導**三份可點來源舉證。\\n**探測層 ready 覆核通過**：us 1871925666，10 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 的 10 軌版逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。\\n**修正策展層一處**：`why` 寫「CD（10 軌與 11 軌兩種）」——**成立但不完整**。那筆 GB 套裝 **4c6760fa 是三種媒體的組合**（12 吋黑膠 10 軌 ＋ CD 11 軌 ＋ 下載卡），策展層把它算成「一張下載卡」而漏掉了它同時含黑膠與 CD。行文若要點載體，請照這三合一的實況寫。另 MB 的編號寫作 **DAP-084**、Daptone 商店寫作 **DAP084**（無連字號），兩種寫法都要試。\\n**⚠ 出身地兩說（記錄，不裁定）**：**MB 的藝人實體記 country=GB、area=Liverpool**；Consequence 的報導寫他「在華盛頓特區長大、現以倫敦為據點」。兩者不是同一件事（MB 記的是活動地、報導記的是成長地與現居地），**行文不要斷言他是哪裡人**；要寫就寫「以英國為據點」這個兩邊都不牴觸的說法。\\n**互斥提醒（給 hook 層）**：**Jalen Ngonda 同時出現在本組第 3 張 Gorillaz《The Mountain》的第 2 軌客席名單上**；兩張卡若都用這條線會撞，請擇一分派。\\n**掛名池中零張**：策展層說 Jalen Ngonda 在池中 0 張，是新開的藝人鍵。\\n**⚠ 資料源裡混著評論媒體標記**：MB tags 有「laut.de」「rollingstone.de」「soultrainonline.de」。**不得寫任何評論分數、榜單名次或獎項**，Consequence 那篇的評論性形容詞也不得引用。"
+ },
+ {
+  "key": "desc2:Loraine James|Detached From the Rest of You",
+  "artist": "Loraine James",
+  "album": "Detached From the Rest of You",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 21cbedf4 的欄位：title「Detached From the Rest of You」、artist-credit「Loraine James」（藝人實體 MBID 5c952c8c，type Person、country **GB**、disambiguation「British electronic producer and musician」）、first-release-date 2026-05-08、primary-type Album、secondary-types **空**。轄下 **2 筆 release 全部 Official、全部 12 軌**：XW 的數位（2026-05-08，Hyperdub）與 **GB 的 CD（2026-05-22，Hyperdub HDBCD074）——實體比數位晚兩週**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/21cbedf4-f56d-418f-958c-15fe1eab0df2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release 6fed7709（2026-05-22 GB CD，Hyperdub HDBCD074）的逐軌曲目與長度：1〈A Long Distance Call〉3:33、2〈The Book of Self Doubt〉3:38、3〈In a Rut〉4:19、4〈Score〉3:43、5〈Seems Like I〉1:31、6〈Flatline〉3:14、7〈Peak Again〉4:29、8〈Habits and Patterns〉4:39、**9〈Wish I Was Like U〉1:12**、10〈Ending Us All〉3:30、**11〈Forever Still (Steel)〉7:08**、12〈See Through〉3:33。曲長跨度極大：最短的第 9 軌只有 1:12、最長的第 11 軌 7:08，**相差近六倍**；中間那批（第 1–4、6–8、10、12 軌）全部落在 3:14–4:39 之間。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=21cbedf4-f56d-418f-958c-15fe1eab0df2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1879377342：collectionName「Detached From The Rest Of You」（Apple 把介系詞也大寫）、releaseDate 2026-05-08、copyright「℗ 2026 Hyperdub Ltd」、trackCount 12、collectionExplicitness explicit。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 MB 原盤**逐位置相符**；**逐軌長度系統性地比 MB 短兩秒**（3:31／3:36／4:17／3:41／1:29／3:12／4:27／4:37／1:10／3:28／7:06／3:33），十二軌一致偏移、不是某一軌換了內容。Apple 把客席寫進曲名：第 3 軌 feat. Sydney Spann、第 4 軌 feat. Anysia Kym、第 6 軌 feat. **Miho Hatori**、第 7 軌 feat. **Alan Sparhawk**、第 8 軌 feat. **Tirzah**、第 10 軌 feat. Le3 bLACK & Fyn Dobson。",
+    "src": "https://itunes.apple.com/lookup?id=1879377342&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Detached from the Rest of You〉首句與 infobox：這是 Loraine James 的**第六張錄音室專輯**，**Hyperdub 在 2026-05-08 先出數位、CD 與黑膠版在 5 月 22 日跟上**；總長 **44:07**。**每一軌都由 James 自己製作，只有〈Flatline〉是與 Miho Hatori 共同製作**。客席七位：Hatori、Low 的 Alan Sparhawk、Sydney Spann、Anysia Kym、Le3 Black、Fyn Dobson 與 Tirzah。前作是 2023 年的《Gentle Confrontation》。兩首單曲：〈In a Rut〉2026-03-03、〈Flatline〉2026-04-14。",
+    "src": "https://en.wikipedia.org/wiki/Detached_from_the_Rest_of_You"
+   },
+   {
+    "f": "同一條目 Background and recording 節：《Gentle Confrontation》（2023）之後她以另一個環境音樂化名 Whatever the Weather 出了《Whatever the Weather II》（2025），並與 Purelink、**Kelela**、Yaeji 等人合作。她在 RA Exchange 的節目上談那段時間，說自己被冒牌者症候群、自我懷疑與創作瓶頸困住；「寫流行歌」這個念頭替她開出一條路。**Hyperdub 說 2025 年她與歌手 Anysia Kym 一起製作《Clandestine》EP 的經驗，讓她熟悉了流行的做法**，也幫她把器樂段落收成比較常規的歌曲形狀；廠牌把這張定位成同時離開她的舞池取向與長篇器樂。**James 自嘲這是她的「IDM 流行巨星專輯」**，指的是她這次唱得更多、歌的結構也更緊。她說盤名是很後期才出現的，反映她在做這張特別難完成的碟時感受到的疏離。",
+    "src": "https://en.wikipedia.org/wiki/Detached_from_the_Rest_of_You"
+   },
+   {
+    "f": "同一條目同節與 Personnel 節：她找合作者的方式是直接私訊或當面約，通常只把器樂丟過去、不指定要寫什麼題目；她說跟 Hatori 與 Kym 待在同一個房間裡做，比線上傳檔好。**經共同朋友介紹後她把 demo 寄給 Hatori，Hatori 2025 年到倫敦，兩人花一天一起寫**；Hatori 為〈Flatline〉試了好幾種方向，最後定在一段較慢的旋律、歌詞寫的是人工智慧。**James 說那一軌開頭的音讓她想到醫院的監測儀，曲名就是這麼來的**，兩人在同一個房間裡把它做完。Personnel 節（抄自 Bandcamp、Qobuz 與 Apple Music）：James 掛製作、作曲、混音與人聲；Mélodie Blaison 吹第 4 軌長笛；**Jason McGerr 打第 7 軌的鼓**；Fyn Dobson 在第 10 軌掛鼓、打擊與作曲；母帶 **Joshua Eustis**。",
+    "src": "https://en.wikipedia.org/wiki/Detached_from_the_Rest_of_You"
+   }
+  ],
+  "hookCandidates": [
+   "〈Flatline〉開頭那個音讓她想到醫院的監測儀，曲名就是這麼來的——Miho Hatori 到倫敦，兩人花一天寫完",
+   "十二軌裡最短的一分十二秒、最長的七分零八秒，中間那批全部擠在三分十四秒到四分三十九秒之間"
+  ],
+  "sound": "MB 兩筆 release 全 Official、全部 12 軌（Hyperdub 的數位在 2026-05-08，GB 的 CD HDBCD074 晚兩週到 05-22；維基另記黑膠也在 5 月 22 日跟上）。Apple us 曲名與曲序與 MB 逐位置相符、逐軌長度系統性地短兩秒。維基記總長 44:07。曲長跨度極大：第 9 軌〈Wish I Was Like U〉1:12、第 11 軌〈Forever Still (Steel)〉7:08，其餘九軌全部落在 3:14–4:39 之間。每一軌都由 James 自己製作、作曲、混音並唱，只有第 6 軌〈Flatline〉是與 Miho Hatori 共同製作；母帶 Joshua Eustis。客席分佈在六軌上：Sydney Spann（第 3 軌）、Anysia Kym（第 4 軌）、Miho Hatori（第 6 軌）、Alan Sparhawk（第 7 軌）、Tirzah（第 8 軌）、Le3 Black 與 Fyn Dobson（第 10 軌）；另有 Mélodie Blaison 的長笛（第 4 軌）與 Jason McGerr 的鼓（第 7 軌）。廠牌 Hyperdub。",
+  "keyTracks": [
+   "Flatline",
+   "Wish I Was Like U",
+   "Forever Still (Steel)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-05-08**、數位那筆同為 2026-05-08、CD 那筆 2026-05-22、Apple us 1879377342 的 releaseDate 與 ℗ 年份都是 2026，三處同年。**同名先行單曲：無**——兩首單曲〈In a Rut〉2026-03-03 與〈Flatline〉2026-04-14 盤名都與專輯不同，且兩首都是本張的第 3、6 軌。**要避開的是同藝人同年的另一張**：MB ba7967f0《It’s Nothing Personal.》（2026-09-04）是同一實體 2026 年的另一張專輯，策展層已寫進「刻意不釘」，逐張複檢時未配到它。策展層的釘位 21cbedf4 已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：us 1879377342，12 軌全有 previewUrl，曲名／曲序與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**逐軌長度整體比 MB 短兩秒，十二軌一致偏移**——這是同一份母帶在兩個資料庫的取整或淡出計法不同，不是換了曲目（**與裁定 174 那種「某一軌換了內容」的形狀不同**，已逐軌比對確認）。行文若要點單軌長度，請以 MB 為準。\\n**補一處策展層沒寫到的**：**維基載明黑膠版與 CD 同在 2026-05-22 發行，MB 上只建了 CD 與數位**。依裁定 128／136，行文可寫「MB 目前只建了 CD 與數位」，**不得斷言沒有出黑膠**。\\n**⚠ 序數（維基單一來源）**：維基首句寫這是她的**第六張**錄音室專輯；策展層沒有給序數。行文若要用序數，請註明出自維基，或改用「2023 年《Gentle Confrontation》之後的第一張本名專輯」這個兩邊都成立的說法（她中間以 Whatever the Weather 化名出過 2025 年的《Whatever the Weather II》）。\\n**盤名大小寫三說**：MB 作「Detached **From** the Rest of You」、維基條目作「Detached **from** the Rest of You」、Apple 作「Detached From The Rest Of You」。卡片採 MB 的寫法，下游比對三種都要試。\\n**掛名池中零張**：策展層說 Loraine James 在池中 0 張，是新開的藝人鍵。\\n**不得寫任何評論分數、榜單名次或獎項**（維基有 Accolades 一節，不得引用）。"
+ },
+ {
+  "key": "desc2:Zach Bryan|With Heaven on Top",
+  "artist": "Zach Bryan",
+  "album": "With Heaven on Top",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 84fd33ce 的欄位：title「With Heaven on Top」、artist-credit「Zach Bryan」（藝人實體 MBID 51e90731，type Person、country US、生於 1996-04-02）、first-release-date 2026-01-09、primary-type Album、secondary-types **空**。轄下 **4 筆 release 全部 Official**：2026-01-09 的兩筆 XW 數位（各 25 軌，一筆掛 Warner Records、一筆掛 Belting Bronco Records）、**2026-03-20 的 US CD（25 軌，Warner Records 093624827085）**，以及 **2026-01-12 的《With Heaven on Top (Acoustic)》**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/84fd33ce-5719-4082-9756-dec4b38a48b4?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release 02df0459（2026-01-09 XW 數位，Warner Records）的逐軌曲目與長度，**25 軌**：1〈Down, Down, Stream〉1:59、2〈Runny Eggs〉3:52、3〈Appetite〉3:05、4〈DeAnn’s Denim〉2:41、5〈Say Why〉2:23、6〈Drowning〉3:05、7〈Santa Fe〉2:54、8〈Skin〉2:55、9〈Dry Deserts〉2:31、10〈Bad News〉3:16、11〈South and Pine〉3:21、12〈Cannonball〉3:57、13〈Slicked Back〉3:51、14〈Anyways〉3:23、15〈If They Come Lookin’〉2:27、16〈Rivers and Creeks〉3:35、17〈Plastic Cigarette〉3:05、18〈You Can Still Come Home〉3:41、19〈Aeroplane〉2:20、20〈Always Willin’〉4:05、21〈Miles〉3:30、22〈All Good Things Past〉4:02、23〈Camper〉2:15、24〈Sundown Girls〉2:02、25〈With Heaven on Top〉3:53。**二十五軌沒有一首超過四分零五秒**，最短是開場的〈Down, Down, Stream〉1:59。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=84fd33ce-5719-4082-9756-dec4b38a48b4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "那筆《With Heaven on Top (Acoustic)》（5be3ce9c，2026-01-12，Belting Bronco Records）**不是一張 24 軌的碟，而是兩份數位媒體共 49 軌**：第一片是 **24 首全部標 (Acoustic) 的版本**（比正片少了開場的〈Down, Down, Stream〉），第二片就是**原封不動的 25 軌正片**。逐軌比對可見兩片的同一首歌長度不同——例如〈Runny Eggs〉原版 3:52／不插電版 2:59、〈Anyways〉原版 3:23／不插電版 1:26。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=84fd33ce-5719-4082-9756-dec4b38a48b4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music 藝人頁目錄（artistId 1436413980）在 **us／gb／de／fr／ca／au／jp 七個店面全部**回得到 **collectionId 1867328456「With Heaven On Top」、releaseDate 2026-01-09、trackCount 25**，同時七店都另有 **1867889943「With Heaven On Top (Acoustic)」、trackCount 49**。`lookup?id=1867328456&entity=song` **攤得出 25 軌、25 軌全部有 previewUrl**，℗「2026 Belting Bronco Records under exclusive license to Warner Records Inc.」，曲名與曲序與 MB 正片**逐位置相符**、逐軌長度**全部相同到秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1867328456&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈With Heaven on Top〉首句與 infobox：這是 Zach Bryan 的**第六張錄音室專輯**，2026-01-09 由 Belting Bronco Records 與 Warner Music Group 發行，總長 **78:16**；**全碟的詞曲與製作都是 Bryan 一個人完成的**，**二十五軌其中二十四首是歌、一首是口白詩**。條目並記外界預期這會是他在大廠牌旗下的最後一張。前作是 2024 年的《24 (Live)》。兩首單曲**都在專輯之後**：〈Plastic Cigarette〉2026-01-16、〈Say Why〉2026-03-20。",
+    "src": "https://en.wikipedia.org/wiki/With_Heaven_on_Top"
+   },
+   {
+    "f": "同一條目 Background 節：2025 年 2 月他在 Instagram 上預告時說的是「With Heaven On Top **這張 EP** 很快就會出」；2025-07-18 他放出〈Madeline〉，一度被當成本張的先行單曲，**結果那首並沒有收進專輯**。之後封面與發行日才公布，**原本設想的 EP 也改成了全長專輯**。曲目表在 2026-01-08 公布，不插電版在 01-12 跟上。",
+    "src": "https://en.wikipedia.org/wiki/With_Heaven_on_Top"
+   },
+   {
+    "f": "同一條目 Personnel 節（抄自 Tidal）：Bryan 唱滿二十五軌、彈七軌電吉他與十一軌原聲吉他，並掛全碟製作。固定班底人數很多：Noah Legros 的電吉他上十四軌、Zephyr Avalon 的貝斯上十三軌、Nate Head 的鼓上十四軌、Read Connolly 的踏板鋼棒吉他上十軌（另有 Dobro 與班鳩）、Heaven Schmitt 的和聲上十三軌。**弦樂與銅管是常設而不是點綴**：Ana Monwah Lei 的大提琴、Samantha Uzbay 的中提琴、Hannah Cohen 的小提琴各上十三軌，Lucas Ruge-Jones 的提琴上十軌，William Werthimer 的小號上十一軌，另有 Andy McCormick 的次中音薩克斯風、Isaac Washam 的長號與另外兩位小號手各上九軌。錄音工程主要是 Gabe Wax（十九軌）。",
+    "src": "https://en.wikipedia.org/wiki/With_Heaven_on_Top"
+   }
+  ],
+  "hookCandidates": [
+   "二十五軌七十八分鐘，卻沒有一首超過四分零五秒——弦樂與銅管在其中十三軌上是常設班底",
+   "他一開始在 Instagram 上說這是「一張 EP」，最後端出來的是二十四首歌加一首口白詩"
+  ],
+  "sound": "MB 四筆 release 全 Official：兩筆數位與一張 CD 都是 25 軌，另一筆是 2026-01-12 的不插電版（24 首不插電＋原封的 25 軌正片，合計 49 軌的兩片數位）。Apple us 逐軌長度與 MB 正片相同到秒；維基記總長 78:16。曲長從 1:59（開場的〈Down, Down, Stream〉）到 4:05（〈Always Willin’〉）——**二十五軌沒有一首超過四分零五秒**，長度分布極平。全碟的詞曲與製作都是 Bryan 一個人完成，二十四首歌之外還有一首口白詩。班底規模與曲數相稱：電吉他、貝斯、鼓、踏板鋼棒吉他與和聲各有一位固定樂手上十軌以上，弦樂三人（大提琴、中提琴、小提琴）各上十三軌、銅管四人各上九軌，是常設編制而非點綴。錄音工程主要由 Gabe Wax 負責。廠牌 Belting Bronco Records 與 Warner 並列。",
+  "keyTracks": [
+   "Down, Down, Stream",
+   "Plastic Cigarette",
+   "With Heaven on Top"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-01-09**、兩筆數位同為 2026-01-09（不插電版 01-12、CD 03-20）、Apple 1867328456 的 releaseDate 與 ℗ 年份都是 2026，三處同年同日。**同名先行單曲：無，而且兩首單曲都在專輯之後**（〈Plastic Cigarette〉2026-01-16、〈Say Why〉2026-03-20，兩首都是碟內第 17、5 軌）。**本張的同名陷阱在碟內與版本上**：第 25 軌就叫〈With Heaven on Top〉，而 MB 與 Apple 都另有一筆《With Heaven on Top (Acoustic)》——**Apple 上那筆的 trackCount 是 49**，逐張複檢時要挑非 Acoustic 的 1867328456。**另注意 2025-07-18 的〈Madeline〉曾被當成本張先行單曲、最後沒收進來**（維基），不要把它算成本張曲目。策展層的釘位 84fd33ce 已複驗無誤。",
+  "notes": "**⚠ 探測層的 `unavailable` 是假的，已在七個店面全部找到。** 依裁定 173 兩個端點都跑過：\\n・**`search` 端點失敗**——`term=Zach Bryan With Heaven on Top` 在 us 店面回 10 筆，全部是他的舊 EP 與單曲（《Summertime Blues》《Pink Skies》《Burn, Burn, Burn》等），**2026 年這張一筆都沒有**，第六筆甚至跑出另一位藝人 Zach Top。\\n・**藝人頁目錄端點成功**——`lookup?id=1436413980&entity=album&limit=200&country=<store>` 在 **us／gb／de／fr／ca／au／jp 七店全中**，每一店都回得到 **1867328456**（25 軌）與 1867889943（Acoustic，49 軌）。**七店的藝人目錄都只回 39 筆、遠低於 200 的上限**，不是裁定 173 說的截斷情形。\\n**建議的 collectionId 是 1867328456**：25 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 正片逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 25、無裁定 175 的落差。**不要用 1867889943**——那是不插電版與正片的合輯（49 軌）。\\n**修正策展層一處**：`why` 寫「數位版 **25 軌與 24 軌兩種**」——**24 軌不是一種數位版**，那是《With Heaven on Top (Acoustic)》這一筆 release **第一片**的軌數（第二片是完整的 25 軌正片，兩片合計 49 軌）。策展層說「Acoustic 版同屬本 release-group、Apple 目錄端點會兩筆都回」——**這一點完全成立**，實測 Apple 七店確實兩筆都回。\\n**⚠ 資料源裡混著評論分數**：MB tags 有一個帶分數與一個帶星等的樂評站標記，維基另有 Certifications 一節。**不得寫任何評論分數、榜單名次、銷量認證或獎項。** 維基那句「外界預期這是他在大廠牌旗下的最後一張」是**預期不是事實**，行文不得寫成已成定局。"
+ },
+ {
+  "key": "desc2:Ratboys|Singin’ to an Empty Chair",
+  "artist": "Ratboys",
+  "album": "Singin’ to an Empty Chair",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 362e059b 的欄位：title「Singin’ to an Empty Chair」（**用的是彎撇號 U+2019**）、artist-credit「Ratboys」（藝人實體 MBID 423a85de，type **Group**、country US、area United States、成軍 **2009**）、first-release-date 2026-02-06、primary-type Album、secondary-types **空**。轄下 **3 筆 release 全部 Official、全部 11 軌、全部 2026-02-06**：US 的對開紙套 CD（**New West Records NW6619**，barcode 607396661909）、另一張 US 的 CD（同樣 NW6619，無條碼）、XW 的數位。",
+    "src": "https://musicbrainz.org/ws/2/release-group/362e059b-f4d8-4031-87d6-9118fdb5867f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB release 14c62f22（2026-02-06 US 對開紙套 CD，New West Records NW6619）的逐軌曲目與長度：1〈Open Up〉5:05、2〈Know You Then〉3:12、3〈Light Night Mountains All That〉5:58、4〈Anywhere〉3:02、5〈Penny in the Lake〉3:51、6〈Strange Love〉2:23、7〈The World, So Madly〉3:10、**8〈Just Want You to Know the Truth〉8:29**、9〈What’s Right?〉5:14、**10〈Burn It Down〉7:06**、11〈At Peace in the Hundred Acre Wood〉3:16。最短是〈Strange Love〉2:23；**最長的兩首都排在後段（第 8 軌 8:29 與第 10 軌 7:06）**，中間夾著 5:14 的第 9 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=362e059b-f4d8-4031-87d6-9118fdb5867f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music 藝人頁目錄（artistId 997909855）在 **us／gb／de／fr／ca／au／jp 七個店面全部**回得到 **collectionId 1844710034「Singin’ to an Empty Chair」（Apple 這一側用的也是彎撇號）、releaseDate 2026-02-06、trackCount 11**。`lookup?id=1844710034&entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，℗「2026 New West Records, LLC」，曲名與曲序與 MB 原盤**逐位置相符**、逐軌長度相同到秒（僅第 4、5、6、7、9 軌差一秒）。第 8、10 軌 trackExplicitness 為 explicit。",
+    "src": "https://itunes.apple.com/lookup?id=1844710034&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Singin' to an Empty Chair〉首句與 infobox：這是 Ratboys 的**第六張錄音室專輯**，2026-02-06 經 New West Records 發行，總長 **50:51**，**錄音在 2025 年 2 月**。三處錄音地點：**威斯康辛州 Richland Center 的 Driftless Cabin、芝加哥的 Electrical Audio、伊利諾州 Evanston 的 Rosebud**。製作是 **Chris Walla** 與樂團本身。前作是 2023 年的《The Window》。兩首單曲**都在 2025 年**：〈Light Night Mountains All That〉2025-09-23（與他們簽進 New West 同時公布）、〈Anywhere〉2025-10-28。",
+    "src": "https://en.wikipedia.org/wiki/Singin%27_to_an_Empty_Chair"
+   },
+   {
+    "f": "同一條目 Recording 節：四人先躲進威斯康辛州 Richland Center 的一間小木屋磨歌；製作找回 2023 年《The Window》的同一位——Chris Walla，他**把自己的錄音器材從挪威的家運過來**、與樂團在芝加哥會合。2025 年 2 月樂團在那間木屋與 Walla 待了一週，**利用屋子本身很高的天花板收類比同步演奏**。之後轉場到芝加哥的 **Electrical Audio——那是 Steve Albini 生前的錄音室**；那一段錄得很實驗：樂團拿物件代替樂器、用非常規的方式取聲音，**例如把一台收音機放在轉動的唱盤上做出都卜勒效應**；鼓聲刻意做成明亮活潑的 pop-punk 質地，有些段落還把錄好的演奏加速。追加錄音在 Evanston 的 Rosebud Studios 完成。",
+    "src": "https://en.wikipedia.org/wiki/Singin%27_to_an_Empty_Chair"
+   },
+   {
+    "f": "同一條目 Composition 節與 Personnel 節：**盤名出自完形治療的「空椅法」**——主唱 Julia Steiner 練習對著一張想像中坐了某個人的椅子說話，把那些片刻當成一場真實對話的草稿。第 3 軌〈Light Night Mountains All That〉起於 Steiner 想寫一首「極度亢奮的民謠」、帶著詭異的田園意象，**樂團花了六個小時把它不尋常的結構理順**；第 4 軌〈Anywhere〉的源頭是吉他手 Dave Sagan 家那隻有分離焦慮的狗。四位團員全部掛製作：Julia Steiner（主唱、電吉他、原聲吉他）、Dave Sagan（電吉他、PocketPiano）、Sean Neumann（貝斯、合成貝斯、和聲）、**Marcus Nuccio（鼓、鈴鼓、沙鈴、合成器，並兼美術指導、版面與攝影）**。Chris Walla 除製作、錄音工程與全碟收音之外，還彈第 1、7 軌合成器、第 1、8、10 軌的磁帶迴圈、第 3、8、10 軌鋼琴，並混第 1、8 軌；Elizabeth Jordan 拉第 1 軌大提琴、Andy Krull 彈第 8 軌踏板鋼棒吉他、**Jenny Conlee 彈第 11 軌的 Hammond B-3 風琴**；其餘各軌混音 **Chris Shaw**，母帶 **Heba Kadry**。",
+    "src": "https://en.wikipedia.org/wiki/Singin%27_to_an_Empty_Chair"
+   }
+  ],
+  "hookCandidates": [
+   "盤名出自完形治療的「空椅法」——對著一張想像中坐了人的椅子說話",
+   "他們把一台收音機放在轉動的唱盤上做出都卜勒效應，那是在 Steve Albini 生前的 Electrical Audio 錄的"
+  ],
+  "sound": "MB 三筆 release 全 Official、全部 11 軌（New West 的兩張 CD 與一筆數位，編號一律 NW6619）。Apple us 逐軌長度與 MB 相同到秒；維基記總長 50:51。曲長從 2:23（〈Strange Love〉）到 8:29（第 8 軌〈Just Want You to Know the Truth〉），第 10 軌〈Burn It Down〉7:06 是第二長的——**兩首破七分鐘的都壓在後段，中間還夾著 5:14 的第 9 軌**。錄音在 2025 年 2 月，分三處：威斯康辛州 Richland Center 的 Driftless Cabin（用木屋很高的天花板收類比同步演奏）、芝加哥的 Electrical Audio、Evanston 的 Rosebud Studios。製作是 Chris Walla 與樂團本身，Walla 把自己的錄音器材從挪威運來，另彈合成器、磁帶迴圈與鋼琴。四位團員各自掛製作，鼓手 Marcus Nuccio 還包辦美術指導、版面與攝影。客席三位各一軌：Elizabeth Jordan 的大提琴、Andy Krull 的踏板鋼棒吉他、Jenny Conlee 的 Hammond B-3 風琴。混音 Chris Shaw（第 1、8 軌由 Walla 混），母帶 Heba Kadry。廠牌 New West Records。",
+  "keyTracks": [
+   "Open Up",
+   "Light Night Mountains All That",
+   "Just Want You to Know the Truth"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-02-06**、三筆 release 全部同為 2026-02-06、Apple 1844710034 的 releaseDate 與 ℗ 年份都是 2026，三處同年同日。**同名先行單曲：無**——兩首單曲〈Light Night Mountains All That〉與〈Anywhere〉盤名都與專輯不同，且兩首都是本張第 3、4 軌。**但兩首單曲的年份都落在 2025**（2025-09-23 與 2025-10-28，維基），行文若提到單曲要說清楚。**錄音年 2025 不是發行年**（維基 infobox 記 recorded February 2025），不得混用。策展層的釘位 362e059b 已複驗無誤。",
+  "notes": "**⚠ 探測層的 `unavailable` 是假的，已在七個店面全部找到。** 依裁定 173 兩個端點都跑過：\\n・**`search` 端點徹底失敗**——三種撇號寫法全部回 **0 筆**：`Ratboys Singin’ to an Empty Chair`（彎撇號）**0**、`Ratboys Singin' to an Empty Chair`（直撇號）**0**、`Ratboys Singin to an Empty Chair`（不帶撇號）**0**。**所以這一次不是撇號的問題**（c-111 的 Ethel Cain 是撇號，本張不是）——`search` 索引裡就是沒有這張。\\n・**藝人頁目錄端點成功**——`lookup?id=997909855&entity=album&limit=200&country=<store>` 在 **us／gb／de／fr／ca／au／jp 七店全中**，每一店都回得到 **1844710034**（11 軌，2026-02-06）。七店的藝人目錄都只回 22 筆、遠低於 200 上限，不是截斷。\\n**建議的 collectionId 是 1844710034**：11 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 原盤逐位置相符（裁定 157 已做），`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。**Apple 回的盤名本身也用彎撇號**（`Singin’ to an Empty Chair`），與 MB 及卡片一致。\\n**策展層說法複驗**：`why` 寫「3 筆 release 全 Official（US ×2、XW）、11 軌、NW6619、目前建檔載體為 CD 與數位」——**全部成立**；`risk` 說彎撇與直撇兩種寫法都要進 queryAlias——**照做，但實測兩種都查不到**，真正有效的是藝人頁目錄。\\n**互斥提醒（給 hook 層）**：本張在 **Steve Albini 生前的 Electrical Audio** 錄音；本組第 9 張 Neurosis 的敘事線裡也有 Albini（那張是自 1996 年以來第一張不由他錄的 Neurosis）。**兩張卡若都用 Albini 這條線會撞，請擇一分派。**\\n**第 10 軌的政治背景要節制**：維基記〈Burn It Down〉寫於 2020 年的抗議期間、由 Steiner 與貝斯手 Sean Neumann 分唱。**依裁定 21 的分寸，行文寫成事件即可、不要延伸評論**；若不確定就避開這一軌。\\n**⚠ 資料源裡混著評論分數**：MB tags 有一個帶分數的樂評站標記。**不得寫任何評論分數、榜單名次或獎項。**"
  }
 ]
