@@ -1,0 +1,234 @@
+[
+ {
+  "key": "desc4:潘迪華|Oriental Pearls",
+  "artist": "潘迪華",
+  "album": "Oriental Pearls",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8d0f5edd 的欄位：title「Oriental Pearls」、artist-credit 寫「Pan Wan Ching」（藝人實體 MBID c0844c64，name 欄已是繁體漢字「潘迪華」、sort-name「Pan, Rebecca」、country HK、type Person）、first-release-date 1961、primary-type Album、secondary-types **空**。轄下只有 1 個 release：1961 年 HK、Official、12 吋黑膠、廠牌 Diamond、catno SLP 1006、12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/8d0f5edd-318f-4e25-a4b1-a7cefc475f19?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（6774f3a1）的逐軌曲目，全部是拉丁字母盤面署名、無長度登錄：1〈Ding Dong Song〉2〈Cho Cho San〉3〈Soochow Evening〉4〈Magica Luna〉5〈Planting Rice〉6〈J'Attendrai〉7〈New Nee Yo Yo (You and I)〉8〈(The Isle of) Puleu Bali〉9〈Bamboo Dance〉10〈More More Romancing〉11〈When Shall We Meet Again〉12〈Sucu, Sucu〉。單片 12 軌、無 B 面分段登錄。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8d0f5edd-318f-4e25-a4b1-a7cefc475f19&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 1510091855：collectionName「Oriental Pearls」、artistName「潘迪華」、releaseDate 1961-01-01、copyright「℗ 1961 Diamond Records」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲序與 MB 逐位置相符，逐軌長度 166／200／228／132／114／179／160／167／149／151／203／122 秒。曲名有三處拼寫差異（Apple 寫 Nee Nee Wo Wo、More More Ramancing、The Isle Of Puleu Bali），是同一份母帶的不同轉寫。",
+    "src": "https://itunes.apple.com/lookup?id=1510091855&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人目錄端點（artistId 16628658，tw，entity=album）列出潘迪華名下 12 筆條目，Diamond 時期依 ℗ 年份排序共五張：《Four Seasons》1960、《Oriental Pearls》1961、《我的心》1963、《I Love You》1964、《潘迪華唱》1965；其後轉 EMI (Hong Kong)，有《給我一杯愛的咖啡》1967、《潘迪華男歡女愛》1968。**Apple 目錄裡比本張更早的 Diamond 盤是 1960 年的《Four Seasons》。**",
+    "src": "https://itunes.apple.com/lookup?id=16628658&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列潘迪華名下 7 個 release-group，其中 primary-type=Album 且 secondary-types 為空的共 5 筆，依 first-release-date 排序：《Oriental Pearls》1961、《Pan Wan Ching Sings the Four Seasons》1961、《The Exciting Rebecca Pan 我的心．潘迪華》1963、《A Man and A Woman》1968、《How Strange》1969。**MB 與 Apple 對「哪一張最早」不一致**——MB 把兩張 1961 年 Diamond 盤都記成 1961，Apple 把《Four Seasons》記成 1960。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c0844c64-5011-40df-8072-068427f9a683&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "中文維基潘迪華條目：本名潘宛卿，1930 年生於上海，後移居香港；1957 年正式開始職業歌手生涯，先在夜總會唱歌，1960 年代被列為當時香港五大歌后之一（另四人為潘秀瓊、顧媚、崔萍、靜婷），此時仍沿用本名潘宛卿。1964 年與倫敦 EMI 簽約。1972 年她監製並主演香港首部華語音樂劇《白娘娘》。王家衛《阿飛正傳》《花樣年華》、侯孝賢《海上花》都用過她的演出，《花樣年華》並選用她 33 歲時錄的〈梭羅河畔〉（Bengawan Solo）作原聲。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%BD%98%E8%BF%AA%E8%8F%AF"
+   },
+   {
+    "f": "曲目本身就是「東西混編」的直接證據：12 軌裡有法國香頌〈J'attendrai〉、玻利維亞舞曲〈Sucu, Sucu〉、印尼民謠出身的〈Puleu Bali〉、菲律賓〈Planting Rice〉，也有出自 1959 年電影《千嬌百媚》一路的國語小調英譯〈Ding Dong Song〉（葛蘭同曲在 1960 年《野玫瑰之戀》裡唱作〈叮噹歌〉，見 MB 該盤第 7 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dd0d0a2d-fc8d-443e-963e-1e83ea34824c&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌裡有法國香頌、玻利維亞舞曲、印尼民謠與菲律賓插秧歌——1961 年香港夜總會的歌單，就是這張唱片的曲目表",
+   "盤面署名寫的是 Pan Wan Ching，唱片行的貨架上寫潘迪華，電影字幕上寫 Rebecca Pan：一個人三個名字，全在這張碟上"
+  ],
+  "sound": "單片 12 軌，MB 未登錄長度，Apple tw 1510091855 逐軌 166／200／228／132／114／179／160／167／149／151／203／122 秒——**沒有一首超過四分鐘，最短的〈Planting Rice〉只有 1 分 54 秒**，總長約 33 分鐘，是標準的夜總會歌單長度。編制是酒店樂隊而非管弦樂團：曲目在恰恰（〈Sucu, Sucu〉）、香頌（〈J'attendrai〉）、南洋民謠（〈Puleu Bali〉〈Planting Rice〉）與國語小調英譯（〈Ding Dong Song〉〈Soochow Evening〉）之間輪替，每一首換一種語言與一種節奏。開場〈Ding Dong Song〉2 分 46 秒，收在〈Sucu, Sucu〉2 分 02 秒。",
+  "keyTracks": [
+   "Ding Dong Song",
+   "J'attendrai",
+   "Sucu, Sucu"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1961。MB release-group first-release-date **1961**、其下唯一 release 記 1961（HK、Official、Diamond SLP 1006）、Apple tw 1510091855 的 releaseDate 1961-01-01、℗ 年份 1961，四處同為 1961。**沒有更早的同名發行**：MB 藝人頁 7 個 release-group 裡沒有第二筆叫《Oriental Pearls》的東西，Apple 目錄裡也只有這一筆。",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1510091855**（12 軌全有 previewUrl，曲序與 MB 逐位置相符，trackCount 欄與攤開的曲目列都是 12，無裁定 175 的落差）。hk 店面 search 回傳同一個 id。這一筆不改 `previews.json`，交主線統一補。\\n**擋下策展層一處序數**：卡單 `curatorWhy` 寫本張是「潘迪華首張個人 LP」，**查不實**——Apple 藝人目錄裡有 ℗ 1960 的 Diamond 盤《Four Seasons》（collectionId 1510091885）排在前面，MB 另有《Pan Wan Ching Sings the Four Seasons》同記 1961，兩處都無法支持「首張」。**行文不得寫序數、不得寫「第一張」「起點盤」這類定位詞**，改寫曲目內容即可。\\n**掛名**：MB 這個 RG 的 artist-credit 是拉丁字母「Pan Wan Ching」，但同一個藝人實體的 name 欄本身就是「潘迪華」，Apple 兩個店面也都掛「潘迪華」——依派工信「華語圈照原文漢字、一律繁體」取**潘迪華**，與策展層裁定一致。\\n**曲名寫法**：本盤 12 軌全部是拉丁字母原題，**照 MB 那一份寫**（〈J'Attendrai〉MB 大寫 A、Apple 小寫 a，行文取通行的〈J'attendrai〉）；Apple 的〈Nee Nee Wo Wo〉／〈More More Ramancing〉是轉寫差異，不要當成另一首歌。\\n〈Bengawan Solo〉不在本盤（在 1963 年《我的心》第 10 軌），維基提到《花樣年華》用的那個錄音**不是這張**，行文不要把兩張碟混在一起。"
+ },
+ {
+  "key": "desc4:潘迪華|The Exciting Rebecca Pan 我的心．潘迪華",
+  "artist": "潘迪華",
+  "album": "The Exciting Rebecca Pan 我的心．潘迪華",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 172de071 的欄位：title「The Exciting Rebecca Pan 我的心．潘迪華」、artist-credit「Rebecca Pan」（同一個藝人實體 MBID c0844c64，name 欄「潘迪華」）、first-release-date 1963、primary-type Album、secondary-types **空**。轄下只有 1 個 release：1963 年 HK、Official、12 吋黑膠、Diamond、catno SLP 1009、12 軌。**同一位藝人在 MB 上兩張 Diamond 盤掛兩個不同的拉丁署名**（1961 年那張寫 Pan Wan Ching，本張寫 Rebecca Pan）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/172de071-9585-4e5a-894a-b1d36a2ea2f1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（9c7ffba0）的逐軌曲目，12 軌、無長度登錄：1〈Tears Of Love〉2〈Country Girl's Song〉3〈Pepito Cha Cha〉4〈Chinese Flower Drum Song〉5〈The Falling Flowers〉6〈Hava Nagela〉7〈My Heart〉8〈Beloved〉9〈Chinese Blues〉10〈Bengawan Solo〉11〈Carnival〉12〈Wooden Heart〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=172de071-9585-4e5a-894a-b1d36a2ea2f1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 1510277115：collectionName **「我的心」**（Apple 只用中文半邊，不帶 The Exciting Rebecca Pan）、artistName「潘迪華」、releaseDate 1963-01-01、copyright「℗ 1963 Diamond Records」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名與曲序與 MB 逐位置相符，逐軌長度 228／148／156／166／163／137／171／190／238／174／178／136 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1510277115&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人目錄（artistId 16628658，tw）確認本張在 Diamond 五張裡排第三：《Four Seasons》1960、《Oriental Pearls》1961、《我的心》1963、《I Love You》1964、《潘迪華唱》1965；同一目錄另有 EMI 時期的《給我一杯愛的咖啡》1967、《潘迪華男歡女愛》1968，以及 1994 年 EMI (HK) 的《百代‧中國時代曲名典49: 情人橋》與 2018 年的《My Hong Kong 東西一堂》。",
+    "src": "https://itunes.apple.com/lookup?id=16628658&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "中文維基潘迪華條目：她 18 歲時獲得機會錄流行歌曲，代表作是印尼民歌〈梭羅河畔〉（Bengawan Solo）的英語版；2000 年王家衛《花樣年華》選用她 33 歲時的〈梭羅河畔〉錄音作原聲音樂。潘迪華 1930 年生，33 歲即 1963 年——**與本盤第 10 軌〈Bengawan Solo〉的年份對得上**。條目另記她 1967 年是無綫《歡樂今宵》啟播七名台柱之一。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%BD%98%E8%BF%AA%E8%8F%AF"
+   },
+   {
+    "f": "曲目跨語言的幅度比 1961 年那張更大：希伯來民謠〈Hava Nagela〉、義大利／拉丁恰恰〈Pepito Cha Cha〉、巴西狂歡節曲〈Carnival〉、印尼〈Bengawan Solo〉、貓王〈Wooden Heart〉，以及三首直接以 Chinese 為題的國語曲目英譯（〈Chinese Flower Drum Song〉〈Chinese Blues〉〈The Falling Flowers〉）。同一張碟上並置六種語言來源的曲目，是 Diamond 時期潘迪華錄音的固定做法（比對 1961 年《Oriental Pearls》的曲目表）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8d0f5edd-318f-4e25-a4b1-a7cefc475f19&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "第十軌〈Bengawan Solo〉，錄的時候她三十三歲——三十七年後，《花樣年華》把這段錄音原封不動放回銀幕上",
+   "希伯來民謠、巴西狂歡節、貓王、印尼民謠、三首中國小調：一張十二軌的碟，六個地方的歌"
+  ],
+  "sound": "單片 12 軌，Apple tw 1510277115 逐軌 228／148／156／166／163／137／171／190／238／174／178／136 秒，總長約 35 分鐘。**最長的兩軌是開場〈Tears Of Love〉3 分 48 秒與第 9 軌〈Chinese Blues〉3 分 58 秒，其餘十軌全在 2 分 16 秒到 3 分 10 秒之間**——夜總會一首歌一支舞的長度。編排上快慢交錯：〈Pepito Cha Cha〉〈Hava Nagela〉〈Carnival〉是節奏曲，〈My Heart〉〈Beloved〉〈Bengawan Solo〉是慢板。伴奏仍是酒店樂隊編制，不是管弦樂團。",
+  "keyTracks": [
+   "Bengawan Solo",
+   "My Heart",
+   "Hava Nagela"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1963。MB release-group first-release-date **1963**、其下唯一 release 記 1963（HK、Official、Diamond SLP 1009）、Apple tw 1510277115 的 releaseDate 1963-01-01、℗ 年份 1963。**沒有更早的同名發行**：MB 藝人頁 7 個 RG 裡沒有第二筆《我的心》，Apple 目錄裡也只有這一筆。",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1510277115**（12 軌全有 previewUrl、曲序與 MB 逐位置相符、trackCount 欄與曲目列都是 12）。**回撈候選單上另一個 id 1510092732 是《I Love You》1964，不是本張，不要取。**\\n**盤名有兩種寫法（裁定 193 同型）**：MB 記全名《The Exciting Rebecca Pan 我的心．潘迪華》，**Apple 貨架上只寫《我的心》**。行文引盤名時取卡單／MB 那一種，或只寫〈我的心〉都成立，但不要把 Apple 的短名當成另一張碟。\\n**掛名**：MB 這個 RG 的 artist-credit 寫「Rebecca Pan」、1961 年那張寫「Pan Wan Ching」，Apple 兩張都掛「潘迪華」——取繁體漢字**潘迪華**。\\n**序數一律不要寫。**Apple 目錄把《Four Seasons》記成 1960、MB 把兩張 Diamond 盤都記成 1961，「第幾張」在這條線上兩處對不起來，本批 20 張裡潘迪華兩張都不得寫序數。\\n〈梭羅河畔〉／〈Bengawan Solo〉是同一首歌的兩個寫法，行文引曲名時**照盤面的英文原題**寫。"
+ },
+ {
+  "key": "desc4:葛蘭|The Wild, Wild Rose 野玫瑰之戀",
+  "artist": "葛蘭",
+  "album": "The Wild, Wild Rose 野玫瑰之戀",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group dd0d0a2d 的欄位：title「The Wild, Wild Rose 野玫瑰之戀」、artist-credit「Grace Chang」（藝人實體 MBID e4eaa89a）、first-release-date 1971、primary-type Album、**secondary-types 含「Soundtrack」**。轄下只有 1 個 release：1971 年 HK、status **null（未標 Official）**、12 吋黑膠、廠牌登錄為「麗歌Regal」、catno LRHX 868、12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/dd0d0a2d-fc8d-443e-963e-1e83ea34824c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（d5d52344）的逐軌曲目採「英文題＋中文題」並列，12 軌：1〈Madam Butterfly 蝴蝶夫人〉2〈Too Happy For Words 說不出的快活〉3〈Carmen 卡門〉4〈Sympathy 同情心〉5〈Go To Sleep 睡覺吧〉6〈Bamboo Dance (Instrumental) 竹舞〉7〈Ding Dong Song 叮噹歌〉8〈The Second Spring (Instrumental) 第二春〉9〈Achoo Cha Cha 打噴嚏〉10〈In Search For A Dream 尋夢曲〉11〈Spring By The Riverside (Instrumental) 河邊春〉12〈Lover's Shadow 情人的影子〉。**三軌標明是 Instrumental。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dd0d0a2d-fc8d-443e-963e-1e83ea34824c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 1443733106：collectionName「野玫瑰之戀」、artistName「葛蘭」、**releaseDate 2015-11-13、copyright「℗ 2015 Universal Music Ltd.」**、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲序與 MB 逐位置完全相符，逐軌長度 249／162／243／193／176／166／155／308／162／202／132／200 秒。Apple 的曲名只寫中文題並加註插曲出處：第 1–4 軌註「電影《野玫瑰之戀》插曲」，**第 5 軌〈睡覺吧〉註的卻是「電影《辮子姑娘》插曲」**，第 6、8 軌註 (Instrumental)。",
+    "src": "https://itunes.apple.com/lookup?id=1443733106&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈野玫瑰之戀〉條目：這是一部 **1960 年**的英屬香港歌舞劇情片，王天林執導，葛蘭、張揚主演，故事以比才歌劇《卡門》與馮·史丹堡電影《藍天使》為藍本，寫夜總會歌女與年輕鋼琴師的愛情悲劇。片中歌曲部份取自西洋古典樂、部份原創，由李雋青填詞。2005 年獲香港電影金像獎協會票選為「最佳華語片一百部」之一，2011 年獲香港電影資料館選為「百部不可不看的香港電影」之一。〈說不出的快活〉在 1993 年電影《風塵三俠》被翻唱。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%87%8E%E7%8E%AB%E7%91%B0%E4%B9%8B%E6%88%80"
+   },
+   {
+    "f": "**原盤年與唱片年不是同一年**：電影是 1960 年，MB 這個 release-group 釘的實體卻是 1971 年麗歌（Regal）在香港發的 12 吋黑膠 LRHX 868，Apple 上架的數位版 ℗ 2015 Universal。三個年份分屬電影、黑膠、數位三層，卡單取的 1971 是 MB first-release-date（黑膠那一層）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dd0d0a2d-fc8d-443e-963e-1e83ea34824c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列葛蘭名下 7 個 release-group，primary-type=Album 且 secondary-types 為空的只有 2 筆（2005 年《百代百年系列 15:我要你的愛》、2015 年《葛蘭之歌》），**兩筆都是後世的復刻／精選**；本張是名下唯一一筆帶 Soundtrack 次類型的原盤條目。也就是說 MB 上葛蘭沒有任何一張 1960 年代當年發行的錄音室專輯建檔。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e4eaa89a-c6b3-496c-b2f2-da019bcc594f&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "同一批 2015 年 Universal 數位化的葛蘭電影歌曲另有《教我如何不想她 (電影原聲帶)》（Apple tw collectionId 1443751817，12 軌，同樣 ℗ 2015 Universal Music Ltd.），與本張是同一個復刻系列的兩張，不是同一張碟。",
+    "src": "https://itunes.apple.com/lookup?id=14126461&country=tw&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "《卡門》被搬到北角的夜總會：〈卡門〉〈蝴蝶夫人〉照唱西洋歌劇的旋律，歌詞卻是李雋青的中文",
+   "十二軌裡有三軌是純音樂——〈竹舞〉〈第二春〉〈河邊春〉沒有人聲，這張碟原本就是電影的聲音檔案"
+  ],
+  "sound": "單片 12 軌，Apple tw 1443733106 逐軌 249／162／243／193／176／166／155／308／162／202／132／200 秒，總長約 38 分鐘。**最長的一軌是第 8 軌〈第二春〉純音樂版 5 分 08 秒，最短的〈河邊春〉2 分 12 秒也是純音樂**——三首器樂曲（〈竹舞〉〈第二春〉〈河邊春〉）在碟上等於段落之間的間奏。人聲曲目分兩路：〈蝴蝶夫人〉〈卡門〉直接搬用歌劇旋律填中文詞，〈說不出的快活〉〈打噴嚏〉〈叮噹歌〉則是恰恰、曼波一路的節奏曲。〈叮噹歌〉與潘迪華 1961 年《Oriental Pearls》第 1 軌的〈Ding Dong Song〉是同一首曲調。",
+  "keyTracks": [
+   "說不出的快活",
+   "卡門",
+   "叮噹歌"
+  ],
+  "status": "full",
+  "yearVerified": "**分歧，要分三層看。**電影《野玫瑰之戀》是 **1960** 年（中文維基）；MB release-group first-release-date **1971**，其下唯一 release 也記 1971（HK、麗歌 Regal LRHX 868，**status 是 null 不是 Official**）；Apple tw 1443733106 的 releaseDate **2015-11-13**、℗ 2015 Universal。卡單取 1971 等於取「黑膠實體那一層」，與 MB 一致，**但行文絕不能把 1971 說成這批錄音的年份**——錄音是 1960 年的電影配樂，1971 是麗歌發黑膠、2015 是環球上數位。",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1443733106**（12 軌全有 previewUrl，曲序與 MB 逐位置完全相符，trackCount 欄與曲目列都是 12）。回撈清單原本判本張「目錄裡找不到」，**實際上用 `search?term=葛蘭 野玫瑰之戀&country=tw` 第一筆就是它**，藝人 id 14126461 的目錄裡也有——那次沒找到是查法問題，不是沒上架。\\n**原盤年 vs 復刻年（本組通例）**：這是本組最典型的一張——電影 1960、黑膠 1971、數位 2015。**行文寫「1960 年電影的歌」是安全的，寫「1971 年的專輯」要加限定語**。\\n**Apple 與 MB 的插曲歸屬不一致**：Apple 把第 5 軌〈睡覺吧〉註成「電影《辮子姑娘》插曲」而非《野玫瑰之戀》，MB 沒有註。這一軌**行文不要寫成《野玫瑰之戀》的插曲**。\\n**releaseType**：卡單填 Album，但 MB 這個 RG 的 secondary-types 帶 **Soundtrack**，且 Apple 同系列的姊妹盤直接叫「(電影原聲帶)」。**這不是 §5.6 合輯例外的問題**（不是 Compilation），但策展層若要在行文裡稱它「專輯」，宜寫成「電影歌曲集」而不是「錄音室專輯」。\\n**掛名**：MB artist-credit 是英文盤面署名「Grace Chang」，依策展層已立的裁定不採用，取繁體漢字**葛蘭**（Apple tw／hk 兩店面也都掛「葛蘭」）。\\n**序數不得寫。**MB 名下只有 7 個 RG、兩筆是復刻，Apple 目錄同樣沒有 1960 年代的原盤序列，「第幾張」在葛蘭這條線上完全無從查證。"
+ },
+ {
+  "key": "desc4:李香蘭|蘭閨寂寂",
+  "artist": "李香蘭",
+  "album": "蘭閨寂寂",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c50a9172 的欄位：title 登錄成 **「籣閨寂寂」**（第一個字是「籣」，竹字頭）、artist-credit「李香蘭」（藝人實體 MBID 44b8d3ea）、first-release-date 1957、primary-type Album、secondary-types 空。轄下只有 1 個 release：1957 年 HK、Official、**10 吋黑膠**、廠牌 Pathé、catno CPA 134、10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c50a9172-2109-4d57-943b-08ca3e077f96?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（4f31498c）的逐軌曲目與長度，10 軌：1〈蘭閨寂寂〉158 秒 2〈烏鴉配鳳凰〉196 秒 3〈身世飄零〉161 秒 4〈河上的月色〉202 秒 5〈心曲〉192 秒 6〈小時候〉165 秒 7〈三年〉167 秒 8〈十里洋場〉161 秒 9〈恨不相逢未嫁時〉213 秒 10〈只有你〉203 秒。**注意第一軌的曲名在 release 這一層寫的是正字「蘭閨寂寂」，只有 release-group 的標題寫成「籣」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c50a9172-2109-4d57-943b-08ca3e077f96&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 723985727：collectionName「百代中國時代曲名典十七: 李香蘭 - 蘭閨寂寂」、artistName「李香蘭」、releaseDate 1991-01-01、copyright「℗ 1991 EMI (HK) Ltd.」、trackCount 15。`entity=song` 攤得出 **15 軌、15 軌全部有 previewUrl**。**這不是 1957 年那張 10 吋盤的數位版，是 1991 年的 15 軌復刻輯**：與 MB 十軌重疊的有〈蘭閏寂寂〉〈烏鴉配鳳凰〉〈身世飄零〉〈河上的月色〉〈心曲〉〈小時候〉〈三年〉〈十里洋場〉〈恨不相逄未嫁時〉〈只有你〉共 10 軌，另外多出〈分離〉〈梅花〉〈他總有一天回來〉〈歌舞今宵〉〈情枷愛鎖〉5 軌。",
+    "src": "https://itunes.apple.com/lookup?id=723985727&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 這份 1991 年復刻輯把電影出處逐軌註明：〈蘭閏寂寂〉〈烏鴉配鳳凰〉〈身世飄零〉三軌註「電影《金瓶梅》插曲」，〈分離〉〈歌舞今宵〉註「電影《神秘美人》插曲」，〈小時候〉〈情枷愛鎖〉〈十里洋場〉註「電影《一夜風流》插曲」，第 14 軌〈恨不相逄未嫁時〉另註「(1942年上海時報版本)」。**與 MB 十軌相同的那十首，逐軌長度也對得上到 1–2 秒**（157／196／162／203／192／167／169／161／210／204 對 MB 的 158／196／161／202／192／165／167／161／213／203）。",
+    "src": "https://itunes.apple.com/lookup?id=723985727&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈金瓶梅 (1955年电影)〉：這是 1955 年由王引執導的香港電影。李香蘭條目另記她 1950 年代在香港為多部邵氏／電懋電影演唱並主演，姚敏是這一時期主要的作曲者之一。**MB 這張 1957 年百代 10 吋盤的前三軌，正是 1955 年電影《金瓶梅》的插曲**（Apple 1991 年復刻輯逐軌註記為證）——唱片比電影晚兩年。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%87%91%E7%93%B6%E6%A2%85_(1955%E5%B9%B4%E7%94%B5%E5%BD%B1)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列李香蘭名下只有 2 個 release-group，其中 primary-type=Album 且 secondary-types 為空的僅本張一筆。**MB 上李香蘭的建檔近乎空白**，這張 1957 年百代 10 吋盤是名下唯一一張原盤。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=44b8d3ea-bdcf-4c41-8c77-1aea20e77357&limit=100&offset=0&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "十吋盤、十首歌，前三首全是 1955 年電影《金瓶梅》的插曲——唱片比電影慢了兩年才出",
+   "同一個盤名有三種寫法：資料庫的標題寫成「籣」，同一筆資料的曲名欄寫「蘭」，1991 年的復刻輯又寫成「閏」"
+  ],
+  "sound": "**10 吋盤、10 軌**，這是本組唯一一張 10 吋規格的碟（其餘都是 12 吋或 CD）。MB 逐軌長度 158／196／161／202／192／165／167／161／213／203 秒，總長約 30 分鐘，**十首全部落在 2 分 38 秒到 3 分 33 秒之間，沒有一首破四分鐘**——這是 78 轉時代單面一首歌的長度直接搬進 LP 的結果。曲目分兩路：〈蘭閨寂寂〉〈烏鴉配鳳凰〉〈身世飄零〉是 1955 年電影《金瓶梅》的古裝插曲，〈十里洋場〉〈恨不相逢未嫁時〉〈三年〉則是上海時代曲一路的都會小調。最長的〈恨不相逢未嫁時〉3 分 33 秒收在倒數第二軌。",
+  "keyTracks": [
+   "蘭閨寂寂",
+   "恨不相逢未嫁時",
+   "三年"
+  ],
+  "status": "full",
+  "yearVerified": "**原盤 1957 一致，但線上買得到的是 1991 年復刻輯。**MB release-group first-release-date **1957**、其下唯一 release 記 1957（HK、Official、Pathé CPA 134、10 吋黑膠）；Apple tw 723985727 是 **1991 年 EMI (HK) 的《百代中國時代曲名典十七》**，releaseDate 1991-01-01、℗ 1991，**15 軌而非 10 軌**。電影《金瓶梅》是 1955 年。四個年份分屬電影（1955）、黑膠（1957）、復刻輯（1991）三層，卡單取 1957 是原盤年，正確。",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 723985727，但它是 15 軌的 1991 年復刻輯、不是 1957 年那張 10 吋原盤。**15 軌全有 previewUrl，與原盤重疊的 10 軌逐軌長度對得上到 1–2 秒，可用；**主線若要補進 `previews.json`，要在備註裡寫明它是復刻輯**，否則下游會以為 Apple 上有 1957 年原盤。回撈清單原本判「目錄裡找不到」，實際上 `search?term=李香蘭 蘭閨寂寂&country=tw` 第一筆就是它。\\n**盤名的三種寫法（裁定 185／193 同型，策展層已立第三條裁定）**：MB release-group 標題寫「**籣**閨寂寂」（形近錯字），MB 同一筆資料的 release 曲名欄寫正字「**蘭**閨寂寂」，Apple 1991 復刻輯第 1 軌寫「蘭**閏**寂寂」（閏，另一個形近錯字）。**三處只有 MB 的曲名欄是正字，卡片與行文一律寫「蘭閨寂寂」**，與策展層裁定一致。Apple 第 14 軌的〈恨不相**逄**未嫁時〉同樣是形近錯字，正字為〈恨不相逢未嫁時〉。\\n**序數不得寫。**MB 名下只有 2 個 RG，Apple tw 用漢字「李香蘭」搜 `entity=musicArtist` 回 0 筆（hk 店面才搜得到 253495935 等四個實體），這條線上沒有可靠的作品序列，「第幾張／唯一一張」都查不出來。\\n**掛名**：MB artist-credit 本來就是繁體漢字「李香蘭」，Apple tw 也是，無分歧。"
+ },
+ {
+  "key": "desc4:姚莉|電影歌曲精選",
+  "artist": "姚莉",
+  "album": "電影歌曲精選",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1d1507b1 的欄位：title「電影歌曲精選」、artist-credit「姚莉」（藝人實體 MBID 2d0addcb）、first-release-date 1994、primary-type Album、**secondary-types 含「Compilation」**。轄下只有 1 個 release：1994 年 HK、Official、CD、barcode 7 2438 31403 2 9、**20 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1d1507b1-95d5-49c6-9018-355a2d1403a9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（7f31306b）的逐軌曲目與長度，20 軌：1〈桃花江〉170 秒 2〈月下對口〉157 3〈雙雙對對〉162 4〈春風吻上我的臉〉168 5〈紫丁香〉163 6〈雞尾酒〉187 7〈毋忘我〉137 8〈伴侶哪裡找〉173 9〈重回你懷抱〉171 10〈多心病〉146 11〈人面桃花〉183 12〈月下情歌〉189 13〈珍珠自嘆〉204 14〈接風酒〉167 15〈歌迷小姐〉194 16〈魚兒香〉185 17〈瓜棚小唱〉167 18〈我睡在雲霧裡〉179 19〈站在高崗上〉172 20〈人生就是戲〉184。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1d1507b1-95d5-49c6-9018-355a2d1403a9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 724959370：collectionName「姚莉電影歌曲精選」、artistName「姚莉」、releaseDate 1994-01-01、copyright「℗ 1994 EMI (HK) Ltd.」、trackCount 20。`entity=song` 攤得出 **20 軌、20 軌全部有 previewUrl**，曲序與 MB 逐位置完全相符，逐軌長度與 MB 相同到秒（170／157／162／168／163／187／137／173／171／146／183／189／204／167／194／185／167／179／172／184）。**Apple 這一版把每首歌的電影出處註在曲名後面**。",
+    "src": "https://itunes.apple.com/lookup?id=724959370&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 逐軌註記的電影出處（同一個 lookup）：〈桃花江〉電影《桃花江》主題曲、〈月下對口〉《桃花江》插曲、〈我睡在雲霧裏〉《桃花江》插曲；〈雙雙對對〉〈春風吻上我的臉〉〈紫丁香〉〈雞尾酒〉〈月下情歌〉都是《那個不多情》插曲；〈毋忘我〉《十九層地獄》、〈伴侶那裡找〉〈重回你的懷抱〉《特別快車》、〈人面桃花〉《風雨花村》、〈珍珠自嘆〉〈接風酒〉《血影燈》、〈歌迷小姐〉《歌迷小姐》主題曲、〈魚兒香〉《多情的野貓》、〈瓜棚小唱〉《採西瓜姑娘》、〈站在高崗上〉《阿里山之鶯》、〈人生就是戲〉《入室佳人》。**二十首歌來自十二部電影，這是這張碟的編輯邏輯。**",
+    "src": "https://itunes.apple.com/lookup?id=724959370&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基姚莉條目：本名姚秀雲，1922 年生於上海、2019 年逝於香港，作曲家姚敏的胞妹，與周璇、白虹、白光、龔秋霞、李香蘭、吳鶯音並稱 1940 年代上海歌壇七大歌星。13 歲開始在電台演唱，1937 年 16 歲時簽約百代唱片，第一張唱片是〈賣相思〉。1950 年移居香港後繼續與百代合作，在香港時期被稱「銀嗓子」。〈玫瑰玫瑰我愛你〉1951 年被美國歌手弗蘭基·萊恩翻唱成英文版〈Rose, Rose, I Love You〉。姚敏 1967 年過世後她漸淡出歌壇，1970 年代轉任百代監製，帶過潘秀瓊、崔萍、靜婷、梁萍。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%8E%89"
+   },
+   {
+    "f": "Apple 藝人目錄（artistId 377320817，tw，entity=album）列出姚莉名下 17 筆條目，其中 EMI (HK) 的《百代‧中國時代曲名典》系列有兩筆（第 25/26 集《秋的懷念-上海時期歌曲》1992、32 軌；本張 1994、20 軌），另有 1958 年《姚莉之歌-精選流行歌曲》10 軌與 1959 年《姚莉之歌》10 軌兩筆 EMI (Hong Kong) 的早期盤，以及 2005 年《百代百年系列 3: 姚莉 玫瑰玫瑰我愛你》22 軌。**本張在 Apple 目錄裡就掛在「名典」這一系列下。**",
+    "src": "https://itunes.apple.com/lookup?id=377320817&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "同系列的另一張已在本批：龔秋霞《秋水伊人》是《百代‧中國時代曲名典24》（Apple tw collectionId 771772433，1993、15 軌、℗ 1993 EMI (HK) Ltd.），與本張的第 48 集是同一套 EMI (HK) 在 1990 年代做的復刻系列，編號、廠牌與 ℗ 年份格式一致。",
+    "src": "https://itunes.apple.com/lookup?id=771772433&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "二十首歌來自十二部電影：〈桃花江〉〈春風吻上我的臉〉〈站在高崗上〉原本都是銀幕上唱的，不是唱片上錄的",
+   "1994 年百代把姚莉替國語片唱的插曲整編成一張碟，第七軌〈毋忘我〉只有兩分十七秒——那是一部電影分給一首歌的時間"
+  ],
+  "sound": "CD 單片 20 軌，MB 與 Apple 逐軌長度相同到秒，總長約 57 分鐘。**二十首裡最長的〈珍珠自嘆〉3 分 24 秒、最短的〈毋忘我〉2 分 17 秒，平均約 2 分 52 秒**——全部是 1950 年代電影插曲的標準單曲長度，沒有任何一首是後來重錄的加長版。編排不按電影分組、也不按年份，而是把同一部片的曲目拆開穿插（《那個不多情》的五首散在第 3、4、5、6、12 軌；《桃花江》的三首散在第 1、2、18 軌）。伴奏是 1950 年代香港百代錄音室的小型管弦編制，人聲貼得很前。",
+  "keyTracks": [
+   "桃花江",
+   "春風吻上我的臉",
+   "站在高崗上"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1994（**這是編輯發行年，不是錄音年**）。MB release-group first-release-date **1994**、其下唯一 release 記 1994（HK、Official、CD、barcode 7 2438 31403 2 9）、Apple tw 724959370 的 releaseDate 1994-01-01、℗ 1994 EMI (HK) Ltd.，三處一致。**收錄的錄音本身是 1950 年代**：Apple 逐軌註明的十二部電影全部是 1950 年代的國語片，〈桃花江〉出自 1956 年電影《桃花江》（中文維基姚莉條目）。行文寫年份時要分清 1994（編輯年）與 1950 年代（錄音年）。",
+  "notes": "**§5.6 合輯覆核（本批兩張之一）——結論：成立。**卡單 `releaseType` 填 Compilation、`exceptionReason` 寫「百代中國時代曲名典第 48 集，把姚莉 1940–50 年代替國語片唱的插曲整編」。三項都對得上：（1）MB 這個 RG 的 secondary-types 確實含 Compilation；（2）Apple 藝人目錄把它掛在 EMI (HK)《百代‧中國時代曲名典》系列下，同系列在本批另有龔秋霞第 24 集；（3）Apple 逐軌註記證明 20 軌來自 12 部電影、是**編輯而成的曲目集**而非一次錄音。**兩個證據 URL 也都打得開且各自獨立**（MB release-group 端點證 Compilation 次類型與 20 軌，Apple lookup 端點證系列歸屬與逐軌電影出處）。\\n**探測層可補的 Apple 條目：`tw` collectionId 724959370**（20 軌全有 previewUrl、曲序與 MB 逐位置相符、逐軌長度相同到秒、trackCount 欄與曲目列都是 20）。\\n**曲名以 MB 為準的四處**：MB〈毋忘我〉／Apple〈母忘我〉、MB〈伴侶哪裡找〉／Apple〈伴侶那裡找〉、MB〈重回你懷抱〉／Apple〈重回你的懷抱〉、MB〈我睡在雲霧裡〉／Apple〈我睡在雲霧裏〉。**〈毋忘我〉那一處 Apple 是明顯形近錯字，取正字**（同策展層第三條裁定的形狀）。\\n**盤名兩種寫法**：MB 與卡單寫《電影歌曲精選》，Apple 貨架上寫《姚莉電影歌曲精選》（多了藝人名），行文取卡單那一種。\\n**序數不得寫。**MB 名下只有 4 個 RG，Apple 目錄 17 筆多半是後世精選，姚莉三十多年的錄音沒有可查證的作品序列。維基提到的「第一張唱片〈賣相思〉」是**單曲**不是專輯，不能拿來替本張排序。"
+ }
+]
