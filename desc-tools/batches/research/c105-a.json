@@ -1006,5 +1006,197 @@
   "status": "full",
   "yearVerified": "一致，2020。MB release-group first-release-date **2020-11-20**、其下 KR CD、KR 數位與 XW 數位三筆**全部記 2020-11-20**、Apple us 1596532185 與 jp 1540718800 的 releaseDate **都是 2020-11-20**、兩筆 ℗ 年份都是 **2020**，英文維基 infobox 記 **November 20, 2020**。**四處同年同月同日、兩個店面的 ℗ 也一致**（與同批的《DARK&WILD》不同，那張的 jp ℗ 是 2015）。⚠ **但同一個 release-group 裡有 2021-02-19 的 Essential Edition（BHK1179ESS，同樣 8 軌）與 2023-06-20 的一筆數位**，若配對抓到那兩筆，年份會被拉到 2021 或 2023。**同名先行單曲：無**——MB 藝人頁 101 個 release-group 裡沒有第二筆叫《BE》的東西。",
   "notes": "**探測層 ready 覆核通過，釘的是 jp 店面但這一筆沒有問題。** 覆核結果：`jp` **1540718800** 的 8 軌逐位置與 MB 的 KR 原盤相符、8 軌全有 previewUrl、℗ 2020 Big Hit Entertainment、`trackCount` 欄與曲目列都是 8。**us 店面另有 1596532185**（同樣 8 軌全有 preview、℗ 2020 BIGHIT MUSIC、逐軌長度與 jp 那筆相同）。依 c-105 rulings 第 3 條，**建議主線改釘 `us` 1596532185**；但即使不改，jp 那筆的內容與年份都正確，**這張不像同批的《DARK&WILD》那樣有 ℗ 差一年的問題**。不改 `previews.json`，交主線補。\\n**⚠⚠ 這張的序數是本組最危險的一個，而且卡單很聰明地沒有寫。** `curatorWhy` 只寫「在《MAP OF THE SOUL : 7》(2020-02) 同年稍晚推出的韓版正規盤」——**沒有寫第 N 張，這個做法是對的，請務必維持。**理由：**英文維基首句自己就給了兩個序數——「the fifth Korean-language and the ninth overall studio album」**；MB 藝人頁的 Album 排序把它排第九（含四筆日版），扣掉日版後排第五。**「第五」與「第九」都有來源、指的是不同的計數口徑。行文一律不得寫序數**；要講位置就用「《MAP OF THE SOUL : 7》同年稍晚」這種相對說法。\\n**同 release-group 內那筆 GB 的 Bootleg 黑膠已確認**（無廠牌、無條碼、status Bootleg），`curatorRisk` 說不得採為背書，屬實。此外還有一筆 `curatorRisk` 沒提到的：**2021-02-19 的 KR「Essential Edition」CD（BHK1179ESS，packaging Box）**，同樣 8 軌、與原版同 release-group，**若配對抓到它，年份會變 2021**。請主線記進 rulings。\\n**盤名只有兩個字母**，`curatorRisk` 說任何字串比對都會大量誤中、要走 collectionId——本次覆核全程照做。\\n可寫的製作事實（維基有具名來源）：團員各自領一塊製作分工（지민 A&R、정국導 MV、뷔與 RM 監督視覺設計等）；專輯是疫情期間寫成、該團自稱「隔離年代的一封希望之信」；錄音橫跨九間錄音室。\\n⚠ **一件行文要小心的**：〈Dynamite〉收在最後一軌，那首在 2020 年 8 月已先以單曲發行過。**MB 的這個 release-group 裡沒有它的獨立 release-group 對照組**，但那首單曲確實存在於該團目錄中；行文若要提「收錄了先前的單曲」是安全的，**但不要寫成「這張碟首發了〈Dynamite〉」。**"
+ },
+ {
+  "key": "desc2:IU|Last Fantasy",
+  "artist": "IU",
+  "album": "Last Fantasy",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 98368c20 的欄位：title「Last Fantasy」、artist-credit「IU」（藝人實體 b9545342，**KR、type Person**——本組 25 張裡唯一一位個人藝人）、first-release-date **2011-11-29**、primary-type Album、secondary-types **空**。轄下 4 個 release、**全部 13 軌**：XW 的 Digital Media（2011-11-29，Kakao Entertainment，barcode 8804775042157）、**KR 的 CD（2011-11-29，Official，LOEN Entertainment，catno L100004399，packaging Other，同一組 barcode 8804775042157）**、KR 的 Digital Media（2011-11-29，Kakao Entertainment）、一筆 Pseudo-Release。**沒有改版、沒有加曲版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/98368c20-07b7-4c42-b4bc-5e5bcf90f431?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（b3b8e3a2，2011-11-29，LOEN L100004399）的逐軌曲目與長度：1〈비밀〉4:04、2〈잠자는 숲 속의 왕자〉3:34、3〈별을 찾는 아이〉3:58、4〈너랑 나〉3:59、5〈벽지무늬〉3:40、6〈삼촌〉3:24、7〈사랑니〉3:33、8〈Everything's Alright〉3:33、9〈**Last Fantasy〉6:07**、10〈Teacher〉4:01、11〈길 잃은 강아지〉3:14、12〈4AM〉3:02、13〈**라망 (L'amant)〉5:53**。**13 軌**，**同名曲〈Last Fantasy〉6:07 排在第 9 軌、是全碟最長的一首**，收尾〈라망 (L'amant)〉5:53 次之；其餘十一軌全部落在 3:02–4:04。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=98368c20-07b7-4c42-b4bc-5e5bcf90f431&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music collectionId 484346200（探測層釘 jp 店面、但 **us 店面的 IU 藝人頁目錄裡也列得到同一個 id**）：collectionName「Last Fantasy」、artistName「IU」、releaseDate **2011-11-29**（與 MB 同日）、copyright「℗ 2011 Kakao Entertainment,under license to Kakao Entertainment」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR CD 逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 13、無裁定 175 的落差。",
+    "src": "https://itunes.apple.com/lookup?id=484346200&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 IU 名下 57 個 release-group，primary-type=Album 且 secondary-types 為空的只有 5 筆，依 first-release-date 排序為《Growing Up》2009-04-23、**《Last Fantasy》2011-11-29**、《Modern Times》2013-10-07、《Palette》2017-04-21、《LILAC》2021-03-25——**本張排第二，而且這五筆全部是韓版、沒有日版正規盤混進來**。名下沒有第二筆叫《Last Fantasy》的 release-group，**沒有同名先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b9545342-1e6d-4dae-84ac-013374ad8d7c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Last Fantasy〉的 infobox 與首句：**the second studio album**、released and distributed on **November 29, 2011** by LOEN Entertainment、錄音 **2010–2011** 跨八間錄音室（LOEN Studio、T Studio、Realcollabo Studio、Music Cabal Studio、Jun Studio、Antenna Music Studio、W Sound Studio、Sonic Korea Studio）、曲風 K-pop／electronic／jazz／orchestral pop、**總長 52:01**、語言韓語、製作신원수、조영철、김진명、prev_title《Real+》(2011)、next_title《I U》(2011)。主打曲〈너랑 나 (You & I)〉2011-11-28（**比專輯早一天**）。條目另掛 IZM 的評分 3.5/5。",
+    "src": "https://en.wikipedia.org/wiki/Last_Fantasy"
+   },
+   {
+    "f": "同一條目的 Background 與 Music videos 節：本作被設定為反映 IU 告別童年、準備迎向成熟的那段時期。她在這張與**윤상、김광진、이적、김현철、Ra.D 等創作歌手合作**；部分曲目由 IU 自己作曲作詞，並得到이적、김현철、윤상、윤종신、G. 고릴라與 **Corinne Bailey Rae** 等人協助。經紀公司 LOEN 表示專輯製作期很長、特別限定版收錄的獨家內容能讓歌迷理解製作過程。2011-12-03 她在 SBS《人氣歌謠》展開首週宣傳，唱了〈별을 찾는 아이〉與主打曲〈너랑 나〉。〈너랑 나〉的 MV 2011-11-28 在 LOEN 官方 YouTube 上線、由演員이현우主演。",
+    "src": "https://en.wikipedia.org/wiki/Last_Fantasy"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 409076743，us，entity=album，回 54 筆、未觸及 200 上限）在 IU 名下同時列出 **484346200《Last Fantasy》2011-11-29（13 軌）**與 1051977837《CHAT-SHIRE》2015-10-23（7 軌）等；該目錄以 Kakao Entertainment／LOEN 系的韓版為主。**本卡與同批的《CHAT-SHIRE》在同一份目錄裡、兩筆的 collectionId 完全不同，不會互相誤配。**",
+    "src": "https://itunes.apple.com/lookup?id=409076743&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有十一軌在三分到四分之間，剩下兩軌——同名曲 6:07、收尾曲 5:53——把碟的後半整個撐開",
+   "與她合寫的名單從윤상、이적一路排到 Corinne Bailey Rae"
+  ],
+  "sound": "MB 記四筆 release（XW 數位、KR CD LOEN L100004399、KR 數位、一筆 Pseudo-Release），**全部同日 2011-11-29、全部 13 軌、沒有改版**；Apple 484346200 的逐軌長度與 MB 的 KR CD 相同到 3 秒內。維基記總長 **52:01**、錄音 2010–2011 跨八間錄音室、曲風欄列四項（K-pop／electronic／jazz／orchestral pop）、製作신원수、조영철、김진명三人。十三軌的長度分布有明顯的兩極：**十一軌擠在 3:02–4:04，另外兩軌是第 9 軌的同名曲〈Last Fantasy〉6:07 與收尾的〈라망 (L'amant)〉5:53**——兩首長曲一首放在正中間偏後、一首收尾。主打曲〈너랑 나〉排第 4 軌、3:59。合作名單很寬：윤상、김광진、이적、김현철、Ra.D 等創作歌手參與，部分曲目由 IU 自己作曲作詞、並得到이적、김현철、윤상、윤종신、G. 고릴라與 Corinne Bailey Rae 協助。",
+  "keyTracks": [
+   "너랑 나",
+   "Last Fantasy",
+   "라망 (L'amant)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2011。MB release-group first-release-date **2011-11-29**、其下 XW 數位、KR CD 與 KR 數位三筆**全部記 2011-11-29**、Apple 484346200 的 releaseDate **也是 2011-11-29**、℗ 2011，英文維基 infobox 記 **November 29, 2011**。**四處同年同月同日。**主打曲〈너랑 나〉的 MV 於 2011-11-28 上線、比專輯早一天，但那是 MV 不是單曲發行。**同名先行單曲：無**——MB 藝人頁 57 個 release-group 裡沒有第二筆叫《Last Fantasy》的東西。⚠ 近名的對照組是 `curatorRisk` 提到的《REAL》(2010 EP) 與《REAL+》(2011 EP)，以及 2011 年的日版 EP《I □ U》——**三者的盤名都與本卡不重疊，字串比對不會誤中，但同年（2011）有兩張。**",
+  "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面。** 覆核結果：`jp` **484346200** 的 13 軌逐位置與 MB 的 KR CD 相符、13 軌全有 previewUrl、`trackCount` 欄與曲目列都是 13。**這一筆不是日版**——同一個 collectionId 在 **us** 店面的 IU 藝人頁目錄裡也列得到、℗ 2011 Kakao Entertainment。依 c-105 rulings 第 3 條，**建議主線把店面改記成 us（同一個 id 484346200，不必換 id）**。不改 `previews.json`，交主線補。\\n**策展層「第二張正規盤」查證屬實、可以寫**：MB 藝人頁 5 筆 Album 依日期排序本張第二（前一筆是 2009 年的《Growing Up》）、英文維基寫 the second studio album，**兩處一致**。**而且 IU 這五筆全部是韓版、沒有日版正規盤混進來**，與同批的 BTS／SHINee／BIGBANG 不同，這位藝人的序數是乾淨的。\\n⚠ **但有一處要提醒**：MB 把 2009 年的《Growing Up》標成 primary-type=Album，而該作在一般韓國市場的認知裡是迷你專輯。**「第二張正規盤」這個說法在 MB 與英文維基兩處都成立，可以寫；但若下游想寫「她的第一張正規盤是 2011 年這張」，那就與兩份來源都不合，不行。**\\n**廠牌兩說已確認**：MB 的 KR CD 那筆 label-info 寫 **LOEN Entertainment**（catno L100004399）、KR 數位與 XW 數位那兩筆寫 **Kakao Entertainment**，Apple 的 ℗ 欄寫「Kakao Entertainment, under license to Kakao Entertainment」，英文維基 infobox 寫 LOEN。`curatorRisk` 說「行文不得斷言單一發行方」——**這條可以放寬一格：LOEN 有 MB 實體那筆與維基兩處支持，寫 LOEN 是安全的；Kakao 是後來的併購名稱。**\\n**這張的 release-group 結構乾淨**：四筆 release 全部同日、全部 13 軌、沒有 repackage。\\n可寫的製作事實（維基有具名來源）：合作名單（윤상、김광진、이적、김현철、Ra.D、윤종신、G. 고릴라、Corinne Bailey Rae）；本作被設定為告別童年、迎向成熟那段時期；錄音跨八間錄音室；IZM 給 3.5/5。**IZM 是媒體評分不是榜單名次，依 c-111 裁定 2 的界線這一項建議也不寫。**"
+ },
+ {
+  "key": "desc2:IU|CHAT-SHIRE",
+  "artist": "IU",
+  "album": "CHAT-SHIRE",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e79deb17 的欄位：title「CHAT-SHIRE」、artist-credit「IU」（藝人實體 b9545342，KR、Person）、first-release-date **2015-10-23**、**primary-type EP**、secondary-types **空**。轄下 4 個 release，**軌數不一致**：**KR 的 CD（2015-10-27，Official，LOEN Tree，catno L100005113，packaging Book，barcode 8804775066146）是 9 軌**；另外三筆 XW 的 Digital Media（2015-10-23，LOEN Tree／LOEN Entertainment）**都是 7 軌**。**實體比數位多兩軌、也晚四天。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e79deb17-202f-425d-bc83-9e1082cfe56a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 兩種版本的逐軌對照。**KR CD 9 軌**（223c3fb4）：1〈새 신발〉3:36、2〈Zezé〉3:12、3〈스물셋〉3:16、4〈푸르던〉4:08、5〈Red Queen〉3:34、6〈무릎〉4:44、7〈안경〉3:18、**8〈마음〉2:49、9〈Twenty three〉3:30**。**XW 數位 7 軌**（b89884e5）：前七軌與 CD 相同（新 신발／Zezé／스물셋／푸르던／Red Queen／무릎／안경），**沒有第 8、9 軌**。**多出來的兩軌〈마음〉與〈Twenty three〉只在實體 CD 上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e79deb17-202f-425d-bc83-9e1082cfe56a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music collectionId 1051977837（探測層釘 jp 店面、但 **us 店面的 IU 藝人頁目錄裡也列得到同一個 id**）：collectionName「CHAT-SHIRE」、artistName「IU」、releaseDate **2015-10-23**（與 MB 的數位版同日）、copyright「℗ Kakao Entertainment,under license to Kakao Entertainment」（**℗ 欄沒有年份**）、trackCount 7。`entity=song` **攤得出 7 軌、7 軌全部有 previewUrl**，曲名／曲序與 MB 的 XW 數位版逐位置相符，**逐軌長度與 MB 相同到 3 秒內**。**Apple 上架的是 7 軌數位版、不是 9 軌實體版。**",
+    "src": "https://itunes.apple.com/lookup?id=1051977837&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Chat-Shire〉的 infobox 與首段：**the fifth Korean-language extended play**、**self-composed EP**、數位於 **2015-10-23** 發行、實體「四天後」由 LOEN Entertainment 旗下 LOEN Tree 發行、曲風 Korean ballad 與 Dance、**總長 25:40（數位）／31:56（CD）**、語言韓語、**製作欄只寫 IU 一人**、prev_title《A Flower Bookmark》(2014)、next_title《Palette》(2017)。首段明寫本作是她自 2013 年《Modern Times》以來的第一份原創作品。**〈Chat-Shire〉共七軌含主打〈스물셋 (Twenty-Three)〉，另有兩首 CD 限定的加曲〈Heart〉與〈Twenty Three〉，出自 KBS 電視劇《製作人的那些事》（IU 在劇中飾演 Cindy）。**",
+    "src": "https://en.wikipedia.org/wiki/Chat-Shire"
+   },
+   {
+    "f": "同一條目的 Composition 與 Commercial reception 節：PopMatters 的 Scott Interrante 認為《Chat-Shire》以豐厚的管弦編制與複雜的編曲重現九〇年代 chamber pop 的聲響、近似 The Cardigans。**〈Red Queen〉的靈感來自설리（Sulli）畫的一張圖。**主打曲〈스물셋〉發行後登上南韓各大音樂榜首、專輯多首曲目同時進入前十，該曲最終達成 Perfect All-Kill（同時在所有主要南韓音樂網站奪冠）。專輯在 Gaon Album Chart 最高第二、Billboard World Albums 最高第四。",
+    "src": "https://en.wikipedia.org/wiki/Chat-Shire"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 IU 名下 57 個 release-group，本張是 primary-type=EP、first-release-date 2015-10-23，排在 2013-10-07 的《Modern Times》與 2017-04-21 的《Palette》之間（兩者皆 primary-type=Album，**池中已有這兩張**）。名下沒有第二筆與《CHAT-SHIRE》同名或近名的 release-group，**沒有同名先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b9545342-1e6d-4dae-84ac-013374ad8d7c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 409076743，us，entity=album，回 54 筆、未觸及 200 上限）在 IU 名下列出 **1051977837《CHAT-SHIRE》2015-10-23（7 軌）**；同一份目錄裡沒有第二筆 9 軌的 CHAT-SHIRE 條目。**Apple 這一邊只買得到 7 軌那一版。**",
+    "src": "https://itunes.apple.com/lookup?id=409076743&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "數位版七軌二十五分半、實體 CD 九軌三十一分五十六——多出來的兩首只印在光碟上",
+   "〈Red Queen〉的起點是설리畫的一張圖"
+  ],
+  "sound": "MB 這個 release-group 底下有兩種軌數：**KR 的實體 CD（LOEN Tree L100005113，packaging Book，2015-10-27）是 9 軌，三筆 XW 數位（2015-10-23）是 7 軌**。Apple 1051977837 上架的是 7 軌那一版，逐軌長度與 MB 相同到 3 秒內。維基記數位版總長 **25:40**、CD 版 **31:56**、曲風 Korean ballad 與 Dance、**製作欄只寫 IU 一人**。七軌落在 3:12–4:44：最短〈Zezé〉3:12、最長〈무릎〉4:44，主打曲〈스물셋〉排第 3 軌。實體多出來的第 8、9 軌是〈마음〉2:49 與〈Twenty three〉3:30，維基說明那兩首出自 KBS 電視劇《製作人的那些事》（IU 在劇中飾演 Cindy），**是 CD 限定加曲**。PopMatters 的 Scott Interrante 形容全碟以豐厚的管弦編制與複雜編曲重現九〇年代 chamber pop 的聲響、近似 The Cardigans。〈Red Queen〉的靈感來自설리畫的一張圖。",
+  "keyTracks": [
+   "스물셋",
+   "무릎",
+   "Red Queen"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2015。MB release-group first-release-date **2015-10-23**、其下三筆 XW 數位同為 2015-10-23、**KR 的實體 CD 是 2015-10-27（晚四天）**、Apple 1051977837 的 releaseDate **2015-10-23**，英文維基寫數位 2015-10-23、實體「四天後」。四處同為 2015，日期只在 10/23 與 10/27 之間差四天、且四處對這個時間差的說法一致。⚠ **Apple 的 ℗ 欄沒有填年份**（只寫「℗ Kakao Entertainment,under license to Kakao Entertainment」），**這張沒有 ℗ 年份可以當第四票**，實際上是三處對照不是四處。**同名先行單曲：無。**",
+  "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面。** 覆核結果：`jp` **1051977837** 的 7 軌逐位置與 MB 的 XW 數位版相符、7 軌全有 previewUrl、`trackCount` 欄與曲目列都是 7。**這一筆不是日版**——同一個 collectionId 在 **us** 店面的 IU 藝人頁目錄裡也列得到。依 c-105 rulings 第 3 條，**建議主線把店面改記成 us（同一個 id，不必換）**。不改 `previews.json`，交主線補。\\n**⚠ 給寫作層最重要的一條：這張碟有兩種軌數，行文寫 7 軌或 9 軌都不算錯，但必須說清楚是哪一版。** MB 的 KR 實體 CD 是 **9 軌**（LOEN Tree L100005113，2015-10-27），三筆 XW 數位是 **7 軌**（2015-10-23）；英文維基把總長分開記成 25:40（數位）與 31:56（CD），並明寫多出來的〈Heart〉與〈Twenty three〉是 **CD 限定加曲**、出自 KBS 電視劇《製作人的那些事》。**Apple 上只買得到 7 軌那一版。**依裁定 140 的加曲版分界（多出來的排在後面、且有標記），**7 軌是主體、9 軌是加曲版；行文若提軌數，建議寫 7 軌並註明實體另有兩首加曲。**\\n**這張沒有序數主張要擋**：`curatorWhy` 寫的是「在《Modern Times》(2013) 之後推出的迷你專輯」，只講先後。⚠ **但英文維基首句寫「the fifth Korean-language extended play」——如果下游想寫序數，那是「第五張韓語 EP」、不是「第五張專輯」**，兩者差很多。**行文一律不得寫序數。**\\n**`exceptionReason` 走 asia-mini-album 白名單的核心理由——創作歸屬——查證屬實**：英文維基首句就寫 **self-composed EP**、infobox 的 producer 欄**只列 IU 一人**。`exceptionReason` 寫「IU 在本作包辦全部作詞並參與作曲」——**維基的說法是 self-composed 與 producer=IU，沒有逐項拆成「全部作詞、參與作曲」**。意思相符但顆粒度不同，**行文用「這張碟由她自己一個人掛製作」比較貼近來源**。\\n**盤名寫法已確認**：MB 與 Apple 都用全大寫帶 ASCII 連字號的《CHAT-SHIRE》、英文維基條目標題寫《Chat-Shire》並註明 stylized CHAT-SHIRE。\\n可寫的事實（維基有具名來源）：PopMatters 對九〇年代 chamber pop／The Cardigans 的比較；〈Red Queen〉的靈感來自설리的畫；本作是她自 2013 年《Modern Times》以來第一份原創作品。**Gaon 第二、Billboard World Albums 第四、Perfect All-Kill 都是榜單名次，依 c-111 裁定 2 不寫。**"
+ },
+ {
+  "key": "desc2:TWICE|twicetagram",
+  "artist": "TWICE",
+  "album": "twicetagram",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 23f9bb2e 的欄位：title「twicetagram」（**全小寫**）、artist-credit「TWICE」（藝人實體 8da127cc，KR、Group）、first-release-date **2017-10-30**、primary-type Album、secondary-types **空**。轄下 **20 個 release**，分成兩組：**原版 13 軌題《twicetagram》**——KR CD 三筆（2017-10-31，JYP Entertainment，catno **JYPK0854**，packaging Box，barcode 8809269508461）、KR 數位三筆（2017-10-30）、KR CD 一筆（INgrooves，barcode 196922265280）、JP 數位兩筆（2017-10-30，Warner Music Japan）、2020-03-01 的一筆（Republic Records）；**改版 15 軌題《Merry & Happy》**——KR CD 兩筆（2017-12-12，JYP，catno JYPK0884，packaging Book）、KR 數位兩筆（2017-12-11）、JP 數位兩筆（Warner Music Japan）、2020-03-01 的一筆（Republic）、2023-06-02 的 US CD 一筆（INgrooves）；另有 2018-06-08 的 TH CD＋DVD 一筆（15 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/23f9bb2e-c6a9-40ec-9202-922220e5015e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD 原版（3bd3432e，2017-10-31，JYP JYPK0854）的逐軌曲目與長度：1〈LIKEY〉3:29、2〈거북이〉3:20、3〈MISSING U〉3:01、4〈WOW〉3:03、5〈FFW〉3:48、6〈DING DONG〉3:34、7〈24/7〉3:37、8〈날 바라바라봐〉3:15、9〈ROLLIN'〉3:13、10〈LOVE LINE〉3:18、11〈힘내! (DON'T GIVE UP)〉2:59、12〈널 내게 담아〉3:30、13〈잘자요 굿나잇〉4:23。**13 軌**，最短〈힘내!〉2:59、**最長的收尾曲〈잘자요 굿나잇〉4:23 是全碟唯一破四分的一首**；其餘十一軌全部落在 3:01–3:48。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=23f9bb2e-c6a9-40ec-9202-922220e5015e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1555405141：collectionName「Twicetagram」（**首字大寫**）、artistName「TWICE」、releaseDate **2017-10-30**（與 MB 的數位那筆同日）、℗ 2017 JYP Entertainment Company、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR 原版逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 13、**無裁定 175 的落差**。",
+    "src": "https://itunes.apple.com/lookup?id=1555405141&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **探測層釘的 jp 那一筆有裁定 175 的落差**：Apple **jp** 店面 collectionId 1303472555，collectionName「twicetagram」（全小寫）、℗ 2017 JYP Entertainment、releaseDate 2017-10-30、**`trackCount` 欄寫 14、但 `entity=song` 只攤得出 13 軌**。以曲目列為準：13 軌、13 軌全部有 previewUrl、曲名全大寫英文（LIKEY／TURTLE／MISSING U／WOW／FFW／DING DONG／24/7／LOOK AT ME／ROLLIN'／LOVE LINE／DON'T GIVE UP／YOU IN MY HEART／JALJAYO GOOD NIGHT）、曲序與 MB 的 KR 原版逐位置相符。**內容是韓版 13 軌，只有 `trackCount` 欄多算了一軌。**",
+    "src": "https://itunes.apple.com/lookup?id=1303472555&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 TWICE 名下 **118 個 release-group**，primary-type=Album 且 secondary-types 為空的 11 筆依 first-release-date 排序為 **《twicetagram》2017-10-30**、《BDZ》2018-09-12、《&TWICE》2019-11-20、《Eyes wide open》2020-10-26、《Perfect World》2021-07-28、《Formula of Love: O+T=<3》2021-11-12、《Celebrate》2022-07-27、《DIVE》2024-07-17、《THIS IS FOR》2025-07-11、《ENEMY》2025-08-26、《TEN: The Story Goes On》2025-10-10——**本張排最前**。⚠ 這 11 筆裡的《BDZ》(2018)、《&TWICE》(2019)、《Perfect World》(2021)、《Celebrate》(2022)、《DIVE》(2024) 是**日版正規盤**（池中已有《&TWICE》與《Perfect World》兩張）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8da127cc-c432-418f-b356-ef36210d82ac&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Twicetagram〉的 infobox 與首句：**the debut studio album**、released on **October 30, 2017** by JYP Entertainment、錄音室 JYPE Studios（首爾）、曲風 K-pop 與 dance、**總長 44:16**、語言韓語與英文、**製作박진영（J. Y. Park \"The Asiansoul\"）**、prev_title《#Twice》(2017)、next_title《Merry & Happy》(2017)。首段明寫**盤名指的是該團同名的官方 Instagram 帳號**、全長專輯共十三軌、主打曲〈Likey〉由 Black Eyed Pilseung 與전군作曲、是該團與 Black Eyed Pilseung 的第四次合作；前 Wonder Girls 成員 **우혜림**共同作詞作曲第八軌〈Look at Me〉。",
+    "src": "https://en.wikipedia.org/wiki/Twicetagram"
+   },
+   {
+    "f": "同一條目的 Background and release 節：2017-10-15 在出道兩週年的粉絲見面會第二天首度放出預告片、10-16 上傳 V Live 宣布首張全長專輯《Twicetagram》與主打曲〈Likey〉將於 10-30 發行。**專輯以社群媒體為靈感。**10-21 公布曲目表，確認十三軌並揭露團員參與寫作的分工——〈Missing U〉由다현與채영作詞（채영另寫〈Don't Give Up〉）、〈24/7〉由나연與지효執筆、〈Love Line〉由정연作詞。**專輯 10-30 以數位形式發行、實體則在隔天 10-31 上市**（與 MB 記的 KR 數位 10-30、KR CD 10-31 完全相符）。",
+    "src": "https://en.wikipedia.org/wiki/Twicetagram"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡十二軌都不到四分鐘，只有收尾的〈잘자요 굿나잇〉4:23 撐開——一張碟從頭快到尾，最後才慢下來道晚安",
+   "碟名取自她們的 Instagram 帳號；兩個月後同一批歌換上《Merry & Happy》的封面、加兩首耶誕曲再出一次"
+  ],
+  "sound": "MB 這個 release-group 底下有兩組 release：**原版 13 軌題《twicetagram》（KR CD JYPK0854，2017-10-31；KR 數位 2017-10-30）與改版 15 軌題《Merry & Happy》（KR CD JYPK0884，2017-12-12）**，卡單釘的是原版。Apple us 1555405141 就是 13 軌那一版，逐軌長度與 MB 相同到 3 秒內。維基記總長 **44:16**、錄音在 JYPE Studios（首爾）、曲風 K-pop 與 dance、製作박진영。十三軌的形狀非常一致：**十二軌落在 2:59–3:48，只有收尾的〈잘자요 굿나잇〉4:23 破四分**，最短〈힘내! (DON'T GIVE UP)〉2:59。主打曲〈LIKEY〉排第 1 軌，由 Black Eyed Pilseung 與전군作曲。團員參與寫作的分工在曲目上看得到：〈MISSING U〉由다현與채영作詞、〈힘내!〉由채영作詞、〈24/7〉由나연與지효執筆、〈LOVE LINE〉由정연作詞，第 8 軌〈날 바라바라봐 (Look at Me)〉由前 Wonder Girls 成員우혜림共同作詞作曲。盤名取自該團的官方 Instagram 帳號。",
+  "keyTracks": [
+   "LIKEY",
+   "날 바라바라봐",
+   "잘자요 굿나잇"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2017。MB release-group first-release-date **2017-10-30**、其下 KR 數位三筆記 2017-10-30、**KR CD 三筆記 2017-10-31（晚一天）**、Apple us 1555405141 與 jp 1303472555 的 releaseDate 都是 **2017-10-30**、兩筆 ℗ 年份都是 2017，英文維基 infobox 記 **October 30, 2017**、內文另明寫「數位 10-30、實體隔天 10-31」——**四處對這一天的差距說法完全一致，是本組解釋得最乾淨的一組日期差。**⚠ **但同一個 release-group 裡有 2017-12-11／12-12 的改版《Merry & Happy》、2018-06-08 的 TH 版、2020-03-01 的 Republic Records 兩筆、2023-06-02 的 US CD**——若配對抓到那幾筆，年份會被拉到 2018、2020 或 2023。**同名先行單曲：無。**",
+  "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面、而且那一筆有裁定 175 的落差。** 覆核結果：`jp` **1303472555** 的 `trackCount` 欄寫 **14**、`entity=song` 只攤得出 **13 軌**——**以曲目列為準是 13 軌**，13 軌全有 previewUrl、曲序與 MB 的 KR 原版逐位置相符（jp 那筆的曲名是全大寫英文）。內容正確，只是那個 14 會誤導下游。**us 店面另有 1555405141**（題「Twicetagram」、℗ 2017 JYP Entertainment Company、13 軌全有 preview、**`trackCount` 欄與曲目列都是 13、沒有落差**）。依 c-105 rulings 第 3 條，**建議主線改釘 `us` 1555405141**。不改 `previews.json`，交主線補。\\n**策展層「第一張韓版正規盤」查證屬實、可以寫**：MB 藝人頁 11 筆 Album 依日期排序本張最前、英文維基寫 the debut studio album 且明寫「first full-length album」，**兩處一致**。`curatorWhy` 用的判準（「primary-type=Album 且轄下有 KR Official 的條目裡這一筆排在最前」）本次逐筆核過，正確。\\n⚠ **但同一份 MB 排序不能拿來數後面的序數**：11 筆裡有 **五筆是日版正規盤**（《BDZ》2018、《&TWICE》2019、《Perfect World》2021、《Celebrate》2022、《DIVE》2024）。**池中已有的《&TWICE》與《Perfect World》正是其中兩筆**，`curatorWhy` 已經抓到這點、屬實。\\n**`curatorRisk` 說「《Merry & Happy》（eed97a60，型別 Other）是本張的改版包裝、盤名完全不同、字串比對抓不到」——這裡要修正一處**：本次以 `release?release-group=23f9bb2e` 回問時，**題《Merry & Happy》的七筆 release 就在本卡這個 release-group（23f9bb2e）底下**，不是另一個 release-group。`curatorRisk` 給的 eed97a60 是另一筆（可能是單獨建檔的改版 RG），**但下游要防的其實是同一個 release-group 內的 15 軌版本**：KR CD JYPK0884（2017-12-12，packaging Book）、KR 數位（2017-12-11）等。**分辨靠 13 對 15 軌與 10/30 對 12/11。**\\n**盤名大小寫兩說已確認**：MB 全小寫《twicetagram》、Apple us 首字大寫《Twicetagram》、Apple jp 全小寫、英文維基條目標題《Twicetagram》。**行文用卡單／MB 的全小寫。**\\n可寫的事實（維基有具名來源）：盤名取自該團官方 Instagram 帳號；主打曲〈Likey〉是該團與 Black Eyed Pilseung 的第四次合作；團員參與作詞的逐首分工；우혜림共寫〈Look at Me〉。"
+ },
+ {
+  "key": "desc2:NewJeans|New Jeans",
+  "artist": "NewJeans",
+  "album": "New Jeans",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cad0949d 的欄位：title「New Jeans」（**中間有空格**）、artist-credit「NewJeans」（**無空格**，藝人實體 49204a7a，KR、Group）、first-release-date **2022-08-01**、**primary-type EP**、secondary-types **空**。轄下 **14 個 release、全部 Official、全部 4 軌**：**KR 實體八筆**（2022-08-08——CD 六筆 catno ADR0174（barcode 8809848757822）／ADR0176／ADR0198／ADR0199，另一筆 Download Card catno ADR0177）、**JP 數位兩筆**（2022-08-01，ADOR，barcode 00602448368522 與 00602448368539）、XW 數位一筆（2022-08-01，barcode 192641873096）、國別未填的數位一筆（barcode 196922130724）。**十四筆全部 4 軌，沒有任何加曲版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/cad0949d-e2cc-4794-b4f0-1439907c1cbe?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（40e28cec，2022-08-08，ADOR ADR0174，packaging Box）的逐軌曲目與長度：1〈Attention〉2:59、2〈Hype boy〉2:58、3〈Cookie〉3:56、4〈Hurt〉2:55。**只有 4 軌**，三首不到三分鐘、只有第 3 軌〈Cookie〉3:56 稍長。**這是本組 25 張裡曲數最少的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cad0949d-e2cc-4794-b4f0-1439907c1cbe&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1635469682：collectionName「NewJeans 1st EP 'New Jeans'」、artistName「NewJeans」、releaseDate **2022-08-01**（與 MB 的數位那筆同日）、℗ 2022 ADOR Co., Ltd.、trackCount 4。`entity=song` **攤得出 4 軌、4 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR CD 逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 4、無裁定 175 的落差。**Apple 的題名裡自己寫了序數「1st EP」。**",
+    "src": "https://itunes.apple.com/lookup?id=1635469682&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 1635469693，us，entity=album，回 17 筆、未觸及 200 上限）列出 NewJeans 名下全部條目：**NewJeans 1st EP 'New Jeans' (1635469682, 2022-08-01, 4 軌)**、NewJeans 2nd EP 'Get Up' (1695951888, 2023-07-21, 6 軌)、How Sweet - EP (1744448415, 2024-05-24, 4 軌)、NJWMX (1719868691／1719675892, 2023-12-19, 12 軌)，以及 Ditto／OMG／Super Shy／Zero／Supernatural 等單曲。**該團在 Apple 上的目錄只有 17 筆、全部掛 ADOR（少數 OST 與跨界合作除外），沒有日版與韓版並存的問題。**",
+    "src": "https://itunes.apple.com/lookup?id=1635469693&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "⚠ **同名警訊**：MB 藝人頁分頁全列 NewJeans 名下 26 個 release-group，其中另有一筆 **2023-07-07 的《New Jeans》（cd544c25，primary-type Other）**——**盤名與本卡完全相同、相隔十一個月**，是最像的假陽性。同一份藝人頁裡本張是**唯一一筆 primary-type=EP 而且日期最早的作品**（2022-08-01），其前只有 2022-07-22 起的四筆 primary-type=Other 的單曲物件（〈Attention〉〈Hype boy〉〈Hurt〉〈Cookie〉）；**那四筆的標題正是本張的四首曲名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=49204a7a-ed85-407a-828f-6fd46f1d8126&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈New Jeans (EP)〉的 infobox 與首句：**the debut extended play (EP)**、released on **August 1, 2022** by ADOR（Hybe Corporation 的子公司）、錄音 2022 於 Hybe Studio（首爾龍山）、曲風 synth-pop 與 R&B、**總長 12:47**、語言韓語與英文、**製作민희진（Min Hee-jin）、250、박진수（XXX 的 Park Jin-su）**、next_title《OMG》(2023)、prev 欄空。三首單曲：〈Attention〉(2022-07-22)、〈Hype Boy〉(2022-07-23)、〈Cookie〉(2022-08-01)。首段另記樂評普遍稱讚其音樂風格、視為紮實的出道作，《滾石》把它列入 2022 年度最佳專輯名單。",
+    "src": "https://en.wikipedia.org/wiki/New_Jeans_(EP)"
+   },
+   {
+    "f": "同一條目的 Background and release 與 Musical styles 節：團體陣容 2022 年 3 月在 ADOR（All Doors One Room）底下定案，由前 SM 視覺總監、Big Hit 時期的品牌長**민희진**主導。2022-07-22〈Attention〉與 MV 在**沒有預告團員名單的情況下**先發，隨後才公布這張四軌的同名 EP。**민희진解釋一張四軌 EP 卻放三首單曲，是因為她對這些歌太有信心、而且「主打曲獨佔所有注意力這件事太可惜」。**音樂上取九〇與二〇〇〇年代的 pop 與 R&B：〈Attention〉是極簡的 2000 年代 R&B 編制、在大小調之間轉調；〈Hype Boy〉是帶九〇年代 R&B 與 moombahton 節奏元素的快板 future bass；〈Cookie〉是 pop-R&B、有脈動合成器、翻飛的貝斯線與淡淡的 808 大鼓，橋段帶 Jersey club 元素；收尾〈Hurt〉是節奏帶 groove 的柔和 R&B。",
+    "src": "https://en.wikipedia.org/wiki/New_Jeans_(EP)"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十二分四十七秒，其中三首在出片前就已經單獨發過——製作人的說法是「主打曲獨佔所有注意力這件事太可惜」",
+   "〈Attention〉先上線，那時連團員名單都還沒公布"
+  ],
+  "sound": "MB 記十四筆 release（KR 實體八筆、JP 數位兩筆、XW 一筆、國別未填一筆），**全部 4 軌、沒有任何加曲版**；Apple us 1635469682 的逐軌長度與 MB 的 KR CD 相同到 3 秒內。維基記總長 **12:47**、錄音 2022 於 Hybe Studio（首爾龍山）、曲風 synth-pop 與 R&B、製作민희진、250 與박진수三人。四軌落在 2:55–3:56：〈Attention〉2:59、〈Hype boy〉2:58、〈Cookie〉3:56、〈Hurt〉2:55——**只有第 3 軌破三分半，其餘三首都不到三分鐘**。維基逐曲拆解：〈Attention〉是極簡的 2000 年代 R&B 編制、在大小調之間轉調；〈Hype Boy〉是帶九〇年代 R&B 與 moombahton 節奏的快板 future bass；〈Cookie〉是 pop-R&B、有脈動合成器、翻飛貝斯線與淡淡的 808 大鼓，橋段帶 Jersey club；收尾〈Hurt〉是節奏帶 groove 的柔和 R&B。四軌裡有三軌在專輯發行前後以單曲形式先發（〈Attention〉7/22、〈Hype Boy〉7/23、〈Cookie〉與 EP 同日 8/1）。",
+  "keyTracks": [
+   "Attention",
+   "Hype boy",
+   "Hurt"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2022。MB release-group first-release-date **2022-08-01**、其下 JP 數位兩筆與 XW 數位一筆同為 2022-08-01、**KR 的八筆實體全部是 2022-08-08（晚一週）**、Apple us 1635469682 的 releaseDate **2022-08-01**、℗ 2022，英文維基 infobox 記 **August 1, 2022**、內文另明寫「數位 8/1、實體 8/8」——**四處對這一週的差距說法完全一致。****同名先行單曲：無，但有同名後行物件**——MB 藝人頁另有 2023-07-07 的《New Jeans》（cd544c25，primary-type Other），**盤名完全相同、相隔十一個月**。⚠ **另有一個方向的風險**：本張的四首曲名〈Attention〉〈Hype boy〉〈Hurt〉〈Cookie〉在 MB 上各自都有 2022-07-22 至 08-01 的獨立 release-group（primary-type Other），**日期比 EP 早或同日**；若以曲名配對或「取最早那筆」，會拿到那四筆而不是 EP。",
+  "notes": "**探測層這張標的是 unavailable，但 Apple us 確實買得到。** 覆核結果：`us` **1635469682**（4 軌全有 previewUrl，曲名／曲序與 MB 的 KR CD 逐位置相符、逐軌長度相同到 3 秒內，`trackCount` 欄與曲目列都是 4）。不改 `previews.json`，交主線補。\\n**策展層「出道迷你專輯」查證屬實、可以寫**：MB 藝人頁本張是唯一一筆 primary-type=EP 且日期最早的作品、**Apple 的題名自己寫了「1st EP」**、英文維基寫 the debut EP 且 prev 欄是空的，**三處一致**。\\n**`exceptionReason` 走 asia-mini-album 白名單的三項理由我逐一核過**：①「`ALBUM_ONBOARDING` §5.5 條文自己舉的例子《Get Up》的前一張」（確認，Apple 目錄裡是 1695951888《NewJeans 2nd EP 'Get Up'》2023-07-21）；②「KR 十筆 Official 實體盤（ADOR，ADR0174）」——**要修正：MB 上的 KR 實體是八筆**（CD 六筆＋Download Card 一筆＋另一筆 CD，catno 分別是 ADR0174×6、ADR0176、ADR0177、ADR0198、ADR0199），**不是十筆**；③「加 JP 兩筆」（確認，但那兩筆是 **Digital Media 不是實體**）。**數字要收緊，流通規模的判斷不受影響。**\\n**⚠ 盤名／掛名只差一個空格已確認**：MB release-group 標題《New Jeans》**有空格**、artist-credit《NewJeans》**無空格**、Apple 題名「NewJeans 1st EP 'New Jeans'」**兩種寫法同時出現在一行裡**。`curatorRisk` 說兩種都要進 queryAlias，屬實。\\n**⚠ 最像的假陽性有兩層，比 `curatorRisk` 寫的多一層**：①MB 名下 2023-07-07 的《New Jeans》（cd544c25，Other），盤名完全相同（risk 已抓到）；②**本張的四首曲名在 MB 上各自都有獨立的 release-group**（〈Attention〉3dbba4ac 2022-07-22、〈Hype boy〉18d880c3 2022-07-23、〈Hurt〉787d23e5 2022-07-25、〈Cookie〉6a3af3db 2022-08-01，全部 primary-type Other），**日期比 EP 早或同日**——若以曲名或「最早那筆」配對會全部踩中。這一層 risk 沒提，請主線記進 rulings。\\n**這位藝人沒有韓版／日版並存的問題**：Apple us 目錄只有 17 筆、幾乎全掛 ADOR，MB 的 JP 兩筆也是 ADOR 發的數位、與 KR 版同軌數。**是本組唯一一位完全沒有日版干擾的偶像團體。**\\n可寫的事實（維基有具名來源）：〈Attention〉在未公布團員名單的情況下先發；민희진對「四軌 EP 放三首單曲」的說法；製作三人組（민희진、250、박진수）；逐曲風格如 `sound` 所述。**《滾石》年度最佳專輯名單屬媒體榜，依 c-111 裁定 2 不寫。**"
  }
 ]
