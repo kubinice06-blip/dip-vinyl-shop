@@ -666,5 +666,137 @@
   "status": "full",
   "yearVerified": "一致，1998。release-group first-release-date **1998-08-31**、其下 1998 的五筆 Official release（FR MiniDisc、CA CD、FR 與 CA 的 1998-09-07 CD、數位）同年、串流店面 fr 212137941 的 releaseDate **1998-08-31** 與 ℗ 1998 完全相符、條目 infobox 記 1998 年 8 月 31 日。**四處同年同日。** **同名對照組：同名單曲在專輯之後**（1998-11-23），**末軌也與盤名同名**；藝人目錄裡沒有第二筆同名專輯。",
   "notes": "**掛名字元（本批裁定 1）**：來源端與店面都是「Céline Dion」（帶重音），卡單依池中先例走無重音的「Celine Dion」。**行文照卡單。**｜**撇號兩種寫法**：來源端的 release-group title 與多數 release title 用彎撇 U+2019（`S’il suffisait d’aimer`），店面一律 ASCII 直撇。**卡單走 ASCII，`keyTracks` 已按 ASCII 寫。**｜**這張是本批少數配對乾淨的一張**：藝人目錄裡沒有同名的再版或重混，`212137941` 的曲名曲序與原盤逐位置相符，只是各軌一致地短 2 到 4 秒。｜大小寫：原盤〈L'Abandon〉大寫 A、店面小寫。**行文照原盤。**｜條目 critique 欄的評分與銷售認證**依規則不進 facts**。"
+ },
+ {
+  "key": "desc2:PNL|Le Monde Chico",
+  "artist": "PNL",
+  "album": "Le Monde Chico",
+  "facts": [
+   {
+    "f": "release-group fb0e1291 的欄位：title「Le Monde Chico」、artist-credit「PNL」（藝人 MBID da04991d）、first-release-date **2015-10-30**、primary-type Album、secondary-types **空**。轄下只有 **2 筆 release、全部 FR、全部 Official、全部 17 軌**：2015-10-30 的 **QLF Records CD** 與同日的數位版（label 欄標 [no label]）。**兩筆都是 17 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/fb0e1291-2bc5-4935-af67-0a0863e24302?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2015-10-30 FR 原盤（QLF Records，CD）的逐軌曲目與長度：1〈Le monde ou rien〉4:16、2〈Sur Paname〉4:07、3〈Oh lala〉4:07、4〈J'vends〉3:50、5〈Abonné〉3:37、6〈J'suis PNL〉4:31、7〈Mexico〉4:05、8〈Porte de Mesrine〉4:51、9〈Dans ta rue〉5:29、10〈Laisse〉3:43、11〈Loin des hommes〉2:48、12〈Le M〉4:09、13〈Rebenga〉4:20、14〈Plus Tony que Sosa〉4:18、15〈Que la mif〉4:23、**16〈Tempête〉3:59**、17〈Dans la soucoupe〉3:46。**17 軌、總長 70 分 13 秒；十七首全部落在 2:48 到 5:29。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fb0e1291-2bc5-4935-af67-0a0863e24302&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 有 **兩個 collectionId 指向同一張碟、軌數卻不同**：`1048964879`「Le monde Chico」（17 軌，℗ 2015 QLF RECORDS，**collectionExplicitness 標 notExplicit**）與 `1455962586`「Le monde chico」（**16 軌**，同日 2015-10-30，℗ 2015 QLF RECORDS，**標 explicit**）。逐軌比對後：**17 軌那筆與原盤逐位置相符、長度相同到秒；16 軌那筆少的正是第 16 軌〈Tempête〉**，其餘十六首同名同序同長度。",
+    "src": "https://itunes.apple.com/lookup?id=1048964879&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "16 軌那筆（`1455962586`）的逐軌實查：1〈Le monde ou rien〉4:16 …… 15〈Que la mif (feat. Spion, Pti Moha, F430 & Ilinas)〉4:23、**16〈Dans la soucoupe〉3:46**——**〈Tempête〉整首不在上面**。兩筆都在第 13 軌標〈Rebenga (feat. RKM)〉、第 15 軌標一長串客席，原盤曲名沒有這些掛名；兩筆的客席拼法還不一樣（17 軌那筆寫 S-Pion、16 軌那筆寫 Spion）。**17 軌全有試聽、16 軌也全有試聽。**",
+    "src": "https://itunes.apple.com/lookup?id=1455962586&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：本張 2015 年 10 月 30 日出在 QLF Records，格式含 CD、數位、串流與黑膠，總長 70 分 13 秒，曲風記 rap français／cloud rap，**詞掛 PNL**。**條目說整張由 Nikola Feve 一人錄音、混音並做母帶。** 首句寫本張是這對法國 rap 兄弟檔的 **premier album studio**（第一張錄音室專輯）。單曲六首：〈Plus Tony que Sosa〉2015 年 5 月 8 日、〈Le monde ou rien〉6 月 12 日、〈J'suis PNL〉7 月 31 日、〈Dans ta rue〉9 月 18 日、〈Oh lala〉10 月 23 日、**〈Tempête〉2016 年 1 月 1 日**。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Monde_Chico"
+   },
+   {
+    "f": "藝人端點分頁全列 **13 個 release-group**（是本批最小的一份目錄），其中 primary-type Album 且 secondary-types 為空的只有 **4 張**：《Que La Famille》2015-03-02、**《Le Monde Chico》2015-10-30**、《Dans la légende》2016-09-16、《Deux frères》2019-04-03。**本張在藝人目錄裡排第 2**（同年 3 月還有《Que La Famille》），**條目寫的是 premier album studio**——兩邊差一張。池中已有的《Deux frères》在這份排序裡排第 4，與卡單說法一致。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=da04991d-8e8a-43be-9892-1e6342a77410&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟在架上有兩個版本，差別只有一首〈Tempête〉在不在",
+   "錄音、混音、母帶全部一個人做完"
+  ],
+  "sound": "2015 年 QLF Records 的 CD 與數位都是 17 軌、總長 70 分 13 秒，十七首全部落在 2:48 到 5:29。整張由 Nikola Feve 一人錄音、混音並做母帶，詞掛 PNL 兩兄弟。條目把曲風記成 rap français 與 cloud rap。上架版本有兩個：17 軌的完整版與少掉第 16 軌〈Tempête〉的 16 軌版——那首後來在 2016 年元旦單獨當單曲發。廠牌 QLF 是兄弟倆自營的。",
+  "keyTracks": [
+   "Le monde ou rien",
+   "J'suis PNL",
+   "Tempête"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2015。release-group first-release-date **2015-10-30**、其下兩筆 FR／Official release 同為 2015-10-30、串流店面兩個 collectionId 的 releaseDate 也都是 **2015-10-30**、℗ 2015 相符、條目 infobox 記 2015 年 10 月 30 日。**四處同年同日，是本批對得最齊的幾張之一。** **同名先行單曲：無**（五首先行單曲都不與專輯同名）；**〈Tempête〉的單曲在專輯之後（2016-01-01）**。",
+  "notes": "**配對覆核（同一張碟兩個 collectionId、軌數不同）**：`1048964879` 是 **17 軌、notExplicit**，與原盤逐位置相符、長度相同到秒；`1455962586` 是 **16 軌、explicit**，少的是第 16 軌〈Tempête〉。**策展層建議取 16 軌那筆（1455962586），但逐軌覆核後 17 軌那筆才是完整原盤**——若要試聽涵蓋全碟，`1048964879` 較合；若依裁定 166 要取 explicit 標記那一版，就得接受少一軌。**兩筆都 100% 有試聽，這個取捨留給上架層決定，行文一律以 17 軌原盤為準。**｜**擋下策展層一處（序數）**：卡單 `curatorWhy` 寫「PNL 的第二張專輯」。**藝人目錄支持第 2（前有 2015-03 的《Que La Famille》），但條目首句寫的是 premier album studio**——兩邊差一張。**行文不得寫序數。**｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`J'vends`、`J'suis PNL`），兩邊一致。｜大小寫：原盤〈Sur Paname〉大寫 P、16 軌那筆店面寫小寫 p。｜店面加的 feat. 掛名不是原盤曲名的一部分，**引曲名時不要帶**；兩筆店面的客席拼法還互相不一致（S-Pion／Spion）。"
+ },
+ {
+  "key": "desc2:PNL|Dans la légende",
+  "artist": "PNL",
+  "album": "Dans la légende",
+  "facts": [
+   {
+    "f": "release-group 4939e393 的欄位：title「Dans la légende」、artist-credit「PNL」、first-release-date **2016-09-16**、primary-type Album、secondary-types **空**。轄下 5 筆 release **全部 Official**：2016-09-16 的 QLF Records CD **三筆**——「Dans la légende (Version Orange)」17 軌、「Dans la légende (Version Rose)」17 軌、以及 PNL Records／QLF Records 的 **16 軌**版；2016-10-14 的 DEP／QLF M6401（**CA**，CD，**19 軌**）；2019-10-04 的 QLF Records 數位（AF，**18 軌**）。**同一天就有三種 CD、其中兩種是換封面的 Orange 與 Rose 版；軌數在 16 到 19 之間浮動。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/4939e393-ce2c-442c-95a4-ae6b636d9692?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2016-09-16 FR 的 17 軌版逐軌曲目與長度：1〈DA〉3:50、2〈Naha〉4:46、3〈Dans la légende〉3:54、4〈Mira〉3:36、5〈J'suis QLF〉4:28、6〈La vie est belle〉3:53、7〈Kratos〉3:37、8〈Luz de luna〉4:04、9〈Tu sais pas〉3:31、10〈Sheita〉4:16、11〈Humain〉4:39、12〈Bambina〉4:46、13〈Bené〉3:10、14〈Uranus〉4:00、15〈Onizuka〉4:12、16〈Jusqu'au dernier gramme〉5:55、17〈Je t'haine〉5:14。**17 軌、標準版總長 66 分 30 秒；第 3 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4939e393-ce2c-442c-95a4-ae6b636d9692&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1663880916：collectionName「Dans la légende」、releaseDate **2016-09-16**、copyright「**℗ 2019 QLF Records**」、trackCount 18、**標 explicit**。`entity=song` **攤得出 18 軌、18 軌全部有 previewUrl**：第 1 到 16 軌與 2016 的 17 軌版**逐位置相符、長度相同到秒**，**第 17 軌插進一首原盤沒有的〈Cramés〉4:03**，第 18 軌才是〈Je t'haine〉。**上架的是 2019 年那個 18 軌的擴充版（對應來源端的 2019-10-04 數位 release），不是 2016 原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1663880916&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：本張 2016 年 9 月 16 日出在 QLF（Que La Famille）Records，格式含 CD、數位、串流與黑膠，**總長標準版 66 分 30 秒、擴充版 75 分 46 秒**，曲風記 rap français／cloud rap，詞掛 PNL。首句寫本張是這對兄弟檔的 **deuxième album studio**（第二張錄音室專輯）。單曲七首：〈La vie est belle〉2016 年 3 月 11 日、〈DA〉4 月 15 日、〈J'suis QLF〉7 月 15 日、〈Naha〉9 月 15 日、〈Onizuka〉11 月 4 日、〈Bené〉2017 年 2 月 10 日、〈Jusqu'au dernier gramme〉2017 年 7 月 7 日。",
+    "src": "https://fr.wikipedia.org/wiki/Dans_la_l%C3%A9gende"
+   },
+   {
+    "f": "同一條目的 Genèse 節：這張延續《Que la famille》與《Le Monde Chico》的路線，題材是錢、毒品與販毒，氣氛悲傷而憂鬱；條目也記兩兄弟極為低調、**不接受任何訪問**，理由是「該說的都在歌詞裡」。時間線：2015 年 10 月的前一張出版五個月後，2016 年 3 月 11 日先出在納米比亞拍的〈La vie est belle〉MV，4 月 15 日的〈DA〉MV 裡他們把自己的金唱片拿出來展示；五月底在日本拍的〈Tchiki Tchiki〉MV 上線不到一個月就因版權被下架；6 月 16 日他們接受了一家美國刊物的非錄影訪談；7 月 15 日公開〈J'suis QLF〉的 MV；八月底才宣布專輯 9 月 16 日發行。",
+    "src": "https://fr.wikipedia.org/wiki/Dans_la_l%C3%A9gende"
+   },
+   {
+    "f": "藝人端點分頁全列 13 個 release-group，其中 primary-type Album 且 secondary-types 為空的只有 4 張：《Que La Famille》2015-03-02、《Le Monde Chico》2015-10-30、**《Dans la légende》2016-09-16**、《Deux frères》2019-04-03。**本張在藝人目錄裡排第 3，條目寫的是 deuxième（第二張）**——兩邊差一張，差的是 2015 年 3 月的《Que La Famille》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=da04991d-8e8a-43be-9892-1e6342a77410&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一天出橙版與粉版兩種封面，內容都是十七首",
+   "從不受訪，理由是「該說的都在歌詞裡」"
+  ],
+  "sound": "2016-09-16 同日出了三種 CD——換封面的 Version Orange 與 Version Rose 都是 17 軌，另有一種 16 軌版；加拿大版 19 軌，2019 年的數位擴充版 18 軌。標準版總長 66 分 30 秒、擴充版 75 分 46 秒。十七首落在 3:10 到 5:55，第 3 軌與盤名同名。條目把曲風記成 rap français 與 cloud rap，題材是錢、毒品與販毒，氣氛悲傷憂鬱。兩兄弟不接受訪問，宣傳全靠 MV——納米比亞拍的〈La vie est belle〉、日本拍的〈Tchiki Tchiki〉。串流上架的是 18 軌那個擴充版。",
+  "keyTracks": [
+   "DA",
+   "Dans la légende",
+   "Onizuka"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2016。release-group first-release-date **2016-09-16**、其下 2016-09-16 的三筆 FR／Official CD 同日、加拿大版 2016-10-14、條目 infobox 記 2016 年 9 月 16 日、串流店面 fr 1663880916 的 releaseDate 也是 **2016-09-16**。**唯一不同步的是店面的 ℗ 2019**——那是 18 軌擴充版的年份，**行文一律寫 2016**。**同名先行單曲：無**（七首單曲都不與專輯同名）；**第 3 軌與盤名同名**。",
+  "notes": "**配對覆核（版本差異，寫作層必讀）**：fr `1663880916` 是 **18 軌的 2019 擴充版**——第 1 到 16 軌與 2016 原盤相同到秒，**第 17 軌插進原盤沒有的〈Cramés〉4:03**。**行文不得說「這張有十八首」，也不得把〈Cramés〉當 2016 原盤曲目**（裁定 141）。策展層記本張 search 端點八個店面全空、靠藝人目錄救回，本次覆核確認那筆是對的碟、但是擴充版。｜**擋下策展層一處（序數）**：卡單 `curatorWhy` 寫「PNL 的第三張專輯」。**藝人目錄支持第 3，但條目首句寫的是 deuxième album studio**——兩邊差一張（差的是 2015-03 的《Que La Famille》）。**行文不得寫序數。**｜**軌數在四種版本間浮動 16／17／18／19**，`curatorWhy` 若提軌數要指明是哪一版。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`J'suis QLF`、`Jusqu'au dernier gramme`、`Je t'haine`），兩邊一致。｜大小寫：原盤〈Luz de luna〉、店面〈Luz de Luna〉。**行文照原盤。**｜條目提到的金唱片屬銷售認證，**依規則不進 facts**（本卡只寫 MV 裡出現過這件事的時間線，未寫認證等級）。"
+ },
+ {
+  "key": "desc2:IAM|... de la planète Mars",
+  "artist": "IAM",
+  "album": "... de la planète Mars",
+  "facts": [
+   {
+    "f": "release-group 03c21989 的欄位：title「… de la planète Mars」（**來源端用 U+2026 單一刪節號字元**）、artist-credit「IAM」（藝人 MBID 7aa4a16e）、first-release-date **1991-03-25**、primary-type Album、secondary-types **空**。轄下 4 筆 release 全部 Official：**1991-03-25 的 Virgin France CD（23 軌）與同日的 Virgin France 70834（12 吋，18 軌）**、2021-06-11 的 Parlophone France 數位（XW，**23 軌＋13 軌**，「édition super deluxe」）、一筆無日期的 XE CD（Delabel／Labelle Noir／Virgin 三廠共掛，23 軌，Reissue）。**同一天的黑膠 18 軌、CD 23 軌，差五軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/03c21989-c7db-3be1-b2ca-fb1ace407b96?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1991-03-25 FR CD 的 23 軌逐軌曲目與長度：1〈Pharaon revient〉1:06、2〈Planète Mars〉4:27、3〈Jazz〉0:09、4〈Tam-tam de l'Afrique〉3:51、5〈IAM Concept〉4:12、6〈Crack〉0:05、7〈Attentat〉4:46、8〈Disco Club〉0:32、9〈Le Nouveau Président〉3:28、10〈IAM Bercy〉0:25、11〈Non soumis à l'État〉4:18、12〈1 peu trop court〉3:41、13〈Do the Raï Thing〉1:19、14〈Red, Black and Green〉5:04、15〈Lève ton slip〉0:26、16〈Elvis〉3:47、17〈Unité〉4:06、18〈Khéops ∈ à l'horizon〉3:35、19〈Je viens de Marseille〉1:17、20〈Wake Up〉4:22、21〈Crécelle〉1:02、22〈La tension monte〉4:47、23〈Rapline II〉0:29。**23 軌裡有七軌短於 90 秒（最短〈Crack〉只有 5 秒），是短介面與正規曲交錯的結構。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=03c21989-c7db-3be1-b2ca-fb1ace407b96&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 696519676：collectionName「De la planète Mars」（**沒有前導刪節號**）、releaseDate 1991-01-01、copyright「℗ 1991 The Copyright In This Sound Recording Is Owned By Delabel, A Division Of Parlophone Music France」、trackCount 23。`entity=song` **攤得出 23 軌、23 軌全部有 previewUrl**，曲名與曲序與 1991 CD **逐位置相符**、逐軌長度相同到秒。差別在正字：店面把第 18 軌的數學符號寫開成〈Kheops appartient à l'horizon〉、第 19 軌加註 (feat. Faf Larage & Def Bond)。**上架的是 23 軌 CD 版，不是 18 軌的 12 吋。** 同一藝人目錄下另有 `1569638839`「...De la planète Mars (Edition Super Deluxe)」36 軌。",
+    "src": "https://itunes.apple.com/lookup?id=696519676&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：盤名條目作《… De La Planète Mars》，1991 年 3 月 25 日出在 **Labelle Noir**，曲風記 rap，**詞掛 Akhenaton 與 Shurik'n**。首句寫本張是 IAM 的 **premier album studio**（第一張錄音室專輯），**並明說它接續的是一年前的 demo《Concept》、而且從那捲 demo 上重收了幾首**——〈IAM Concept〉〈Non soumis à l'État〉〈Red, black and green〉〈Wake up〉。",
+    "src": "https://fr.wikipedia.org/wiki/..._De_la_plan%C3%A8te_Mars"
+   },
+   {
+    "f": "同一條目引 Imhotep 談這張碟的做法：「我們那時年輕，沒家庭沒小孩。除了要出門打工付房租、填冰箱之外，我們就住在錄音室裡。我們只有一件事可做：創作、編曲、寫詞。一天得幹十二到十五個小時，吃義大利麵配啤酒。我們沒給自己設任何限制。一切都不費力。我們太享受了，從來沒有在工作的感覺。」",
+    "src": "https://fr.wikipedia.org/wiki/..._De_la_plan%C3%A8te_Mars"
+   },
+   {
+    "f": "藝人端點分頁全列 **68 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **12 張**，依序為 **《Concept》1990**、**《… de la planète Mars》1991-03-25**、《Ombre est lumière》1993-11-02、《L'École du micro d'argent》1997-03-18、《Revoir un printemps》2003-09-15、《Saison 5》2007-04-02、《Arts martiens》2013-04-22、《… IAM》2013-10-18、《Rêvolution》2017-03-03、《Yasuke》2019-11-22、《Rimes essentielles》2021-12-02、《HHHistory》2023-12-11。**本張在藝人目錄裡排第 2**——1990 的《Concept》也被標成 primary-type Album；**條目則把《Concept》稱為 demo、把本張稱為 premier album studio**。池中已有的三張在這份排序裡分別排第 3、4、5。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7aa4a16e-9d5a-41d3-968e-fae1a2c84d05&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "二十三軌裡七軌短於九十秒，最短的〈Crack〉只有五秒",
+   "住在錄音室裡做完，一天十二到十五小時，吃麵配啤酒"
+  ],
+  "sound": "1991-03-25 同日出的 12 吋 18 軌與 CD 23 軌，串流上架的是 23 軌那一版。23 軌裡有七軌短於 90 秒——〈Crack〉5 秒、〈Jazz〉9 秒、〈IAM Bercy〉25 秒、〈Lève ton slip〉26 秒、〈Rapline II〉29 秒——短介面與四五分鐘的正規曲交錯排列。詞掛 Akhenaton 與 Shurik'n，廠牌 Labelle Noir。這張接續的是一年前那捲 demo《Concept》，並從上面重收了〈IAM Concept〉〈Non soumis à l'État〉〈Red, Black and Green〉〈Wake Up〉四首。Imhotep 說那段時間他們就住在錄音室裡，一天做十二到十五個小時。",
+  "keyTracks": [
+   "Planète Mars",
+   "Tam-tam de l'Afrique",
+   "Non soumis à l'État"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991-03-25**、其下 1991-03-25 的兩筆 FR／Official release（CD 23 軌與 12 吋 18 軌）同日、條目 infobox 記 1991 年 3 月 25 日、串流店面 fr 696519676 的 ℗ 1991 相符。**店面的 releaseDate 記 1991-01-01 是填充值**，年份無爭議。**同名對照組有一筆、在專輯之後**：2021 的《...De la planète Mars (Edition Super Deluxe)》36 軌（店面 1569638839）。**同名先行單曲：無。**",
+  "notes": "**序數（可寫，但要帶條件）**：卡單 `curatorWhy` 寫「IAM 的首張專輯」。**條目首句明寫 premier album studio，並把 1990 的《Concept》稱為 demo**；**但藝人目錄把《Concept》也標成 primary-type Album、secondary-types 空，因此在目錄的排序裡本張是第 2**。**行文若要寫序數，只能寫「第一張錄音室專輯」並隱含 demo 不計；不要寫裸的「首張」或「出道作」。**｜**盤名的刪節號**：來源端 title 用 **U+2026**（`… de la planète Mars`），卡單依本批裁定 3 改成 ASCII 三點（`... de la planète Mars`），**店面則完全沒有前導刪節號**（`De la planète Mars`）。**字串比對三邊都對不上，必須指名 collectionId。**｜**版本差異**：12 吋 18 軌、CD 與店面 23 軌、超級豪華版 36 軌。**行文說軌數要指明是哪一版。**｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`Tam‐tam de l’Afrique`、`Non soumis à l’État`、`Khéops ∈ à l’horizon`），店面一律 ASCII。**卡池走 ASCII，`keyTracks` 已按 ASCII 寫。**｜連字號：來源端〈Tam‐tam de l'Afrique〉用 U+2010，店面用 ASCII。**行文一律 ASCII。**｜**特殊符號**：第 18 軌來源端作〈Khéops ∈ à l'horizon〉（數學的屬於符號 U+2208），店面寫成〈Kheops appartient à l'horizon〉。**行文若要引這首，用店面的展開寫法比較安全。**"
  }
 ]
