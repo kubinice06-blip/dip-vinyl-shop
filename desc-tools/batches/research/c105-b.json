@@ -25,7 +25,7 @@
     "src": "https://musicbrainz.org/ws/2/release-group?artist=ea0edf77-dabf-4c3f-9a82-60fcada08f9b&fmt=json&limit=100&offset=0"
    },
    {
-    "f": "英文維基〈Crying Nut〉：這團 1995 年開始在首爾弘大的 club 場景演出，「released their debut album, **Speed Up Losers**, in **1998**, selling over 100,000 copies」；2002 年世界盃的演出讓他們變成家喻戶曉的名字；條目並記「The group has released **eight** full-length albums as of 2018」。Discography 一節把 **Our Nation Vol.1 列在「Split albums」**（與 Yellow Kitchen 的分軌盤，1996 年 12 月 1 日由 KM Culture 發行），不列在 studio albums；《96》與《개구쟁이》列在 Extended plays（分別是與 No Brain、Galaxy Express 的分軌 EP）。1990 年代這批韓國 punk 團自稱 Chosun Punk（今作 Joseon Punk）。",
+    "f": "英文維基〈Crying Nut〉：這團 1995 年開始在首爾弘大的 club 場景演出，「released their debut album, **Speed Up Losers**, in **1998**, selling over 100000 copies」；2002 年世界盃的演出讓他們變成家喻戶曉的名字；條目並記「The group has released **eight** full-length albums as of 2018」。Discography 一節把 **Our Nation Vol.1 列在「Split albums」**（與 Yellow Kitchen 的分軌盤，1996 年 12 月 1 日由 KM Culture 發行），不列在 studio albums；《96》與《개구쟁이》列在 Extended plays（分別是與 No Brain、Galaxy Express 的分軌 EP）。1990 年代這批韓國 punk 團自稱 Chosun Punk（今作 Joseon Punk）。",
     "src": "https://en.wikipedia.org/wiki/Crying_Nut"
    }
   ],
@@ -41,7 +41,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1998。MB release-group first-release-date **1998-06**、其下 KR CD 的 release-event 日期欄只寫「1998」（無月無日）、XW 數位盤記 1998-06，Apple us 307362575 的 releaseDate 1998-06-01、℗ 年份 1998，英文維基〈Crying Nut〉內文寫「debut album, Speed Up Losers, in 1998」。**四處同為 1998，MB 與 Apple 的月份也對得上（6 月）**，只有 Apple 的「-01」是月初佔位、不足採為日期。**同名先行單曲：無**——MB 藝人頁 26 個 release-group 裡沒有第二筆叫《Crying Nut》的東西。",
-  "notes": "**探測層這張標的是 unavailable（八個店面 kr／jp／us／gb／hk／tw／de／au 全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **307362575**（13 軌全有 previewUrl，曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度與 MB 完全相同、誤差 0 毫秒**，`trackCount` 欄與曲目列都是 13）。探測層查不到的原因是它在 Apple 上題作《Speed Up Losers》、與卡單的《Crying Nut》完全不同字串（裁定 185／176 的形狀）。**不改 `previews.json`，交主線補。**\\n**策展層「出道正規盤」查證屬實、可以寫**：英文維基明寫 debut album（1998），MB 藝人頁排序裡屬本團自己專輯的最前一筆也是這張。**而且策展層排除《Our Nation Vol. 1》的做法有具名來源背書**——英文維基把它列在 Discography 的「Split albums」（與 Yellow Kitchen 的分軌盤），不列在 studio albums；同一條目又寫「eight full-length albums as of 2018」，正好等於 MB 那 9 筆扣掉《Our Nation Vol. 1》。**兩處獨立對得上，序數口徑沒有打架。**\\n**盤名四種寫法**：MB／卡單《Crying Nut》、Apple《Speed Up Losers》、韓國通稱「크라잉넛 1집」、主打曲〈말달리자〉。**行文引盤名時取 MB 的《Crying Nut》**，要提《Speed Up Losers》必須說明那是 Apple 的題名、且它是曲名的英譯，不得寫成專輯原名。\\n**廠牌兩說**：MB 的 label-info 寫諺文《드럭》，Apple 的 ℗ 寫「Drug Records LSM」。行文可寫《드럭》（Drug Records），不要單寫「Drug Records LSM」。\\n可寫的商業事實（英文維基有內文敘述）：出道盤售出逾十萬張。"
+  "notes": "**探測層這張標的是 unavailable（八個店面 kr／jp／us／gb／hk／tw／de／au 全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **307362575**（13 軌全有 previewUrl，曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度與 MB 完全相同、誤差 0 毫秒**，`trackCount` 欄與曲目列都是 13）。探測層查不到的原因是它在 Apple 上題作《Speed Up Losers》、與卡單的《Crying Nut》完全不同字串（裁定 185／176 的形狀）。**不改 `previews.json`，交主線補。**\\n**策展層「出道正規盤」查證屬實、可以寫**：英文維基明寫 debut album（1998），MB 藝人頁排序裡屬本團自己專輯的最前一筆也是這張。**而且策展層排除《Our Nation Vol. 1》的做法有具名來源背書**——英文維基把它列在 Discography 的「Split albums」（與 Yellow Kitchen 的分軌盤），不列在 studio albums；同一條目又寫「eight full-length albums as of 2018」，正好等於 MB 那 9 筆扣掉《Our Nation Vol. 1》。**兩處獨立對得上，序數口徑沒有打架。**\\n**盤名四種寫法**：MB／卡單《Crying Nut》、Apple《Speed Up Losers》、韓國通稱《크라잉넛 1집》、主打曲〈말달리자〉。**行文引盤名時取 MB 的《Crying Nut》**，要提《Speed Up Losers》必須說明那是 Apple 的題名、且它是曲名的英譯，不得寫成專輯原名。\\n**廠牌兩說**：MB 的 label-info 寫諺文《드럭》，Apple 的 ℗ 寫「Drug Records LSM」。行文可寫《드럭》（Drug Records），不要單寫「Drug Records LSM」。\\n可寫的商業事實（英文維基有內文敘述）：出道盤售出逾十萬張。"
  },
  {
   "key": "desc4:Crying Nut|서커스 매직 유랑단",
@@ -61,7 +61,7 @@
     "src": "https://itunes.apple.com/lookup?id=307365325&country=us&entity=song&limit=200"
    },
    {
-    "f": "韓文維基〈서커스 매직 유랑단〉：明寫這是 Crying Nut 的「**2집 정규 음반**」（第二張正規盤），1999 年發行，同名主打曲〈서커스 매직 유랑단〉之外多首曲子也受到歡迎；並記「這張專輯發行時起，鍵盤手 김인수 開始參與部分曲子」。",
+    "f": "韓文維基〈서커스 매직 유랑단〉：明寫這是 Crying Nut 的《2집 정규 음반》（第二張正規盤），1999 年發行，同名主打曲〈서커스 매직 유랑단〉之外多首曲子也受到歡迎；並記這張專輯發行時起、鍵盤手 Kim In-Soo（金仁洙）開始參與部分曲子。",
     "src": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%BB%A4%EC%8A%A4_%EB%A7%A4%EC%A7%81_%EC%9C%A0%EB%9E%91%EB%8B%A8"
    },
    {
@@ -77,7 +77,7 @@
    "十三軌五十三分鐘，最短〈벗어〉只有一分二十六秒、最長〈다죽자〉六分四十八秒——同一張碟裡差了近五倍",
    "廠牌目錄號 DM079-2 夾在出道盤的 DM037-2 與三年後《고물라디오》的 DMK144-2 中間，三張連號都出自弘大同一家小廠牌"
   ],
-  "sound": "MB 記三筆 release、日期全是 1999-11-05，實體只有一張 KR CD（《드럭》，catno DM079-2，barcode 8808548000795），另兩筆是 XW 數位（一筆 Official、一筆 Pseudo-Release）；**三筆都是單片 13 軌、同曲同序**。全碟 3218 秒（53:38），比出道盤長了四分半。長度分布比出道盤更極端：〈벗어〉1:26 幾乎是個插曲，〈다죽자〉6:48、〈탈출기 (바람의 계곡을 넘어...)〉6:20、〈빨대맨〉6:13 三首都超過六分鐘。曲序把同名主打曲放在第 1 軌（4:03），收在〈게릴라성 집중호우〉4:08。Apple 的英譯把幾軌的題目攤開得很清楚：Grasshopper、All Die、Dirty City、Soldier 230、Escape (Over the Valley of Wind)、Broadway AM 03:00、S.F (Science Fiction)、Straw Man、Guerrilla Rainstorm。韓文維基記鍵盤手 김인수 從這張起參與部分曲子。",
+  "sound": "MB 記三筆 release、日期全是 1999-11-05，實體只有一張 KR CD（《드럭》，catno DM079-2，barcode 8808548000795），另兩筆是 XW 數位（一筆 Official、一筆 Pseudo-Release）；**三筆都是單片 13 軌、同曲同序**。全碟 3218 秒（53:38），比出道盤長了四分半。長度分布比出道盤更極端：〈벗어〉1:26 幾乎是個插曲，〈다죽자〉6:48、〈탈출기 (바람의 계곡을 넘어...)〉6:20、〈빨대맨〉6:13 三首都超過六分鐘。曲序把同名主打曲放在第 1 軌（4:03），收在〈게릴라성 집중호우〉4:08。Apple 的英譯把幾軌的題目攤開得很清楚：Grasshopper、All Die、Dirty City、Soldier 230、Escape (Over the Valley of Wind)、Broadway AM 03:00、S.F (Science Fiction)、Straw Man、Guerrilla Rainstorm。韓文維基記鍵盤手 Kim In-Soo 從這張起參與部分曲子。",
   "keyTracks": [
    "서커스 매직 유랑단",
    "다죽자",
@@ -85,7 +85,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1999。MB release-group first-release-date **1999-11-05**、其下三筆 release 的 release-event 日期全部是 1999-11-05、Apple us 307365325 的 releaseDate 1999-11-05、℗ 年份 1999，韓文維基記 1999 年。**四處同為 1999，而且 MB 與 Apple 連日期都一模一樣（11/5），本批年份最乾淨的一張。****同名先行單曲：無。**",
-  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **307365325**（13 軌全有 previewUrl，曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度最大差 1 毫秒**，`trackCount` 欄與曲目列都是 13）。查不到的原因同出道盤：Apple 題作《Circus Magic Clowns》、與卡單的諺文盤名完全不同字串。**不改 `previews.json`，交主線補。**\\n**「第二張正規盤」查證屬實、可以寫**：韓文維基專條直接寫「2집 정규 음반」，MB 藝人頁扣掉分軌盤《Our Nation Vol. 1》後本張也排第二，**兩處一致**。策展層在這張的 `why` 沒有寫序數（只寫「出道盤次年的正規盤」），寫序數其實是安全的。\\n**盤名三種寫法**：諺文《서커스 매직 유랑단》、Apple 英譯《Circus Magic Clowns》、羅馬轉寫 Seokeoseu Maejik Yurangdan。**行文取諺文原題**，要引 Apple 的英譯要註明那是 Apple 的題名。\\n**廠牌兩說同出道盤**：MB 寫《드럭》、Apple 的 ℗ 寫 Drug Records LSM。三張連號（DM037-2／DM079-2／DMK144-2）的說法在 MB 上查得到，可寫。"
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **307365325**（13 軌全有 previewUrl，曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度最大差 1 毫秒**，`trackCount` 欄與曲目列都是 13）。查不到的原因同出道盤：Apple 題作《Circus Magic Clowns》、與卡單的諺文盤名完全不同字串。**不改 `previews.json`，交主線補。**\\n**「第二張正規盤」查證屬實、可以寫**：韓文維基專條直接寫《2집 정규 음반》，MB 藝人頁扣掉分軌盤《Our Nation Vol. 1》後本張也排第二，**兩處一致**。策展層在這張的 `why` 沒有寫序數（只寫「出道盤次年的正規盤」），寫序數其實是安全的。\\n**盤名三種寫法**：諺文《서커스 매직 유랑단》、Apple 英譯《Circus Magic Clowns》、羅馬轉寫 Seokeoseu Maejik Yurangdan。**行文取諺文原題**，要引 Apple 的英譯要註明那是 Apple 的題名。\\n**廠牌兩說同出道盤**：MB 寫《드럭》、Apple 的 ℗ 寫 Drug Records LSM。三張連號（DM037-2／DM079-2／DMK144-2）的說法在 MB 上查得到，可寫。"
  },
  {
   "key": "desc4:No Brain|청년폭도맹진가",
@@ -101,11 +101,11 @@
     "src": "https://musicbrainz.org/ws/2/release?release-group=6963aeb7-80f8-4592-aa71-db9961663ea0&fmt=json&inc=media+labels+recordings&limit=100"
    },
    {
-    "f": "**Apple 兩個端點都確認查無。**（一）`search` 端點跑了四種寫法、都是 `resultCount` 0：`No Brain 청년폭도맹진가`、`청년폭도맹진가`、`No Brain Cheongnyeon`、`노브레인 청년폭도맹진가`（HTTP 全 200）。（二）藝人頁目錄端點（artistId 39695325，us，entity=album）回 **36 筆條目、未觸及 200 上限**，時間軸從 1997-03-01《Our Nation, Vol. 2》一路排到 2026 年，**1999-01-01《Youth 98 - EP》與 2001-07-11《Viva No Brain》之間沒有任何條目**——2000 年這一格是空的。依裁定 173 兩端都跑過、目錄未達上限，本張的結論是 **Apple 目錄確實沒有這張碟**，不是假查無。",
+    "f": "**Apple 兩個端點都確認查無。**（一）`search` 端點跑了四種寫法、都是 `resultCount` 0：《No Brain 청년폭도맹진가》、《청년폭도맹진가》、《No Brain Cheongnyeon》、《노브레인 청년폭도맹진가》（HTTP 全 200）。（二）藝人頁目錄端點（artistId 39695325，us，entity=album）回 **36 筆條目、未觸及 200 上限**，時間軸從 1997-03-01《Our Nation, Vol. 2》一路排到 2026 年，**1999-01-01《Youth 98 - EP》與 2001-07-11《Viva No Brain》之間沒有任何條目**——2000 年這一格是空的。依裁定 173 兩端都跑過、目錄未達上限，本張的結論是 **Apple 目錄確實沒有這張碟**，不是假查無。",
     "src": "https://itunes.apple.com/lookup?id=39695325&country=us&entity=album&limit=200"
    },
    {
-    "f": "Apple `search` 端點對 `청년폭도맹진가` 的實查結果：HTTP 200、`resultCount` **0**、`results` 為空陣列，無任何錯誤訊息。對照組同一批查詢裡 `브로콜리너마저` 在同一個店面回 25 筆——**同一個端點、同一個店面，這一組諺文詞查得到、那一組查不到**，所以 0 筆不是端點壞掉，是目錄裡真的沒有。",
+    "f": "Apple `search` 端點對 `청년폭도맹진가` 的實查結果：HTTP 200、`resultCount` **0**、`results` 為空陣列，無任何錯誤訊息。對照組同一批查詢裡《브로콜리너마저》在同一個店面回 25 筆——**同一個端點、同一個店面，這一組諺文詞查得到、那一組查不到**，所以 0 筆不是端點壞掉，是目錄裡真的沒有。",
     "src": "https://itunes.apple.com/search?term=%EC%B2%AD%EB%85%84%ED%8F%AD%EB%8F%84%EB%A7%B9%EC%A7%84%EA%B0%80&country=us&media=music&entity=album&limit=25"
    },
    {
@@ -113,11 +113,11 @@
     "src": "https://musicbrainz.org/ws/2/release-group?artist=8054694e-42d9-4cf9-b5db-5475dcc33bd6&fmt=json&limit=100&offset=0"
    },
    {
-    "f": "韓文維基〈청년폭도맹진가〉全文只有一句：「《청년폭도맹진가》는 록 밴드 노브레인의 **정규 음반 1집**이다」——這是 No Brain 的第一張正規盤。",
+    "f": "韓文維基〈청년폭도맹진가〉全文只有一句，直譯是「《청년폭도맹진가》是搖滾樂團 No Brain 的**正規音盤第 1 輯**」——原文的關鍵詞組作《정규 음반 1집》。這是 No Brain 的第一張正規盤。",
     "src": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EB%85%84%ED%8F%AD%EB%8F%84%EB%A7%B9%EC%A7%84%EA%B0%80"
    },
    {
-    "f": "韓文維基〈노브레인〉（樂團條目）：四人編制的韓國搖滾樂團，「以韓國 punk 特有的音色，在 2000 年前後展示了『조선펑크』的無限可能，在守住既有 punk 精髓這一點上獲得高度評價」；擔任吉他與主唱的 차승우 退團之後，樂團的旋律轉向加入大眾性的另一個局面。",
+    "f": "韓文維基〈노브레인〉（樂團條目）：四人編制、以韓國 punk 特有的音色在 2000 年前後展示了 Joseon Punk（條目原文作《조선펑크》）的可能性，在守住既有 punk 精髓這一點上獲得高度評價；擔任吉他與主唱的 Cha Seung-woo 退團之後，樂團的旋律轉向加入大眾性的另一個局面。",
     "src": "https://ko.wikipedia.org/wiki/%EB%85%B8%EB%B8%8C%EB%A0%88%EC%9D%B8"
    }
   ],
@@ -125,15 +125,15 @@
    "兩片十八軌、七十九分鐘，第二片最後放了一首九分半的〈전자펑크 리믹스메들리〉——2000 年一支弘大 punk 團的出道盤",
    "第一片第二軌是〈애국가〉，五十九秒；第七軌叫〈Viva 대한민국〉——這張碟一開頭就把國歌和萬歲擺在一起"
   ],
-  "sound": "MB 只記一筆 release，而且是**雙片裝的 KR Official CD**（Ponycanyon Korea，catno PLCD 00009）：第一片 10 軌 2521 秒（42:01）、第二片 8 軌 2235 秒（37:15），**全碟 18 軌、4756 秒（79:16）**。長度分布極寬——最短〈애국가〉0:59，最長是第二片收尾的〈전자펑크 리믹스메들리〉9:34，中間還有〈십대정치〉6:54 與〈제발나를〉5:08。第一片以〈날이 저문다〉4:36 開場，同名曲〈청년폭도맹진가〉排在第 3 軌；第一片後半三軌〈잡놈패거리〉〈98년서울〉〈정열의 펑크라이더〉都在三分鐘上下。第二片整體比第一片慢一格，收尾那首九分半的混音組曲把整張碟拉長到快八十分鐘。廠牌是 Ponycanyon Korea 而不是同期弘大 punk 常見的小廠牌。韓文維基把這團放在「조선펑크」這條線上談。",
+  "sound": "MB 只記一筆 release，而且是**雙片裝的 KR Official CD**（Ponycanyon Korea，catno PLCD 00009）：第一片 10 軌 2521 秒（42:01）、第二片 8 軌 2235 秒（37:15），**全碟 18 軌、4756 秒（79:16）**。長度分布極寬——最短〈애국가〉0:59，最長是第二片收尾的〈전자펑크 리믹스메들리〉9:34，中間還有〈십대정치〉6:54 與〈제발나를〉5:08。第一片以〈날이 저문다〉4:36 開場，同名曲〈청년폭도맹진가〉排在第 3 軌；第一片後半三軌〈잡놈패거리〉〈98년서울〉〈정열의 펑크라이더〉都在三分鐘上下。第二片整體比第一片慢一格，收尾那首九分半的混音組曲把整張碟拉長到快八十分鐘。廠牌是 Ponycanyon Korea 而不是同期弘大 punk 常見的小廠牌。韓文維基把這團放在 Joseon Punk 這條線上談。",
   "keyTracks": [
    "청년폭도맹진가",
    "애국가",
    "전자펑크 리믹스메들리"
   ],
   "status": "full",
-  "yearVerified": "一致，2000。MB release-group first-release-date **2000-07-07**、其下唯一那筆 KR CD 的 release-event 日期同為 2000-07-07。**Apple 沒有這張碟，所以沒有 releaseDate 與 ℗ 可對照**（兩個端點都查無，見事實表第三、四條）。韓文維基專條沒寫年份、只寫「정규 음반 1집」，樂團條目寫這團「2000 年前後」展示了조선펑크的可能性——**與 2000 這個年份相容但不是獨立票數**。**實質上只有 MB 一處給年份**，行文寫 2000 沒問題（MB 的 release-group 與其下 release 日期完全一致、精確到日），但**不要寫成「四處查證一致」**。**同名先行單曲：無**——1999 年那筆《청춘구십팔》是不同盤名的單曲。",
-  "notes": "**探測層 unavailable，覆核後確認是真的 unavailable。** 這是本組 20 張裡**唯二**經兩個端點都證實 Apple 目錄沒有的一張（另一張是 브로콜리 너마저《보편적인 노래》）：`search` 端點四種寫法全回 0 筆、藝人頁目錄 36 筆條目未達上限且 1999 與 2001 之間是空的。策展層 `curatorRisk` 的判斷正確，**固定試聽要走無來源狀態**。\\n**擋下一處：策展層與卡單都沒說這是雙片裝。** MB 那筆唯一的 KR Official CD 有**兩張碟、10＋8 共 18 軌**、全長 79 分 16 秒。卡單的 `mbNote` 只寫「轄下 1 個 release（KR/Official）」，數 release 沒錯，但**下游若照單片專輯的語感寫「十軌」或寫成一般長度的 punk 專輯就會錯**。行文要寫軌數必須寫 18 軌（或寫「兩片」），不得寫 10 軌。\\n**「出道正規盤」查證屬實、可以寫**：韓文維基專條寫「정규 음반 1집」，MB 藝人頁排序本張也在最前，兩處一致。**策展層排除 1999 年單曲《청춘구십팔》的做法正確**——MB 上它的 primary-type 是 Single。\\n**⚠ 但序數只能寫到「第一張」為止。** 同一份 MB 排序裡 2001 年有兩筆並存（《Never Mind The Sex Pistols, Here's The No Brain》只標到年、排在 2001-07-11 的《Viva No Brain》前面），韓文維基卻把《Viva No Brain》記成「정규 음반 2집」——**第二張是誰在 MB 與維基之間打架**，這張卡不要寫「之後第幾張」之類的相對序數。\\n廠牌 Ponycanyon Korea 與 catno PLCD 00009 在 MB 上查得到，可寫。"
+  "yearVerified": "一致，2000。MB release-group first-release-date **2000-07-07**、其下唯一那筆 KR CD 的 release-event 日期同為 2000-07-07。**Apple 沒有這張碟，所以沒有 releaseDate 與 ℗ 可對照**（兩個端點都查無，見事實表第三、四條）。韓文維基專條沒寫年份、只寫《정규 음반 1집》，樂團條目寫這團「2000 年前後」展示了 Joseon Punk 的可能性——**與 2000 這個年份相容但不是獨立票數**。**實質上只有 MB 一處給年份**，行文寫 2000 沒問題（MB 的 release-group 與其下 release 日期完全一致、精確到日），但**不要寫成「四處查證一致」**。**同名先行單曲：無**——1999 年那筆《청춘구십팔》是不同盤名的單曲。",
+  "notes": "**探測層 unavailable，覆核後確認是真的 unavailable。** 這是本組 20 張裡**唯二**經兩個端點都證實 Apple 目錄沒有的一張（另一張是 브로콜리 너마저《보편적인 노래》）：`search` 端點四種寫法全回 0 筆、藝人頁目錄 36 筆條目未達上限且 1999 與 2001 之間是空的。策展層 `curatorRisk` 的判斷正確，**固定試聽要走無來源狀態**。\\n**擋下一處：策展層與卡單都沒說這是雙片裝。** MB 那筆唯一的 KR Official CD 有**兩張碟、10＋8 共 18 軌**、全長 79 分 16 秒。卡單的 `mbNote` 只寫「轄下 1 個 release（KR/Official）」，數 release 沒錯，但**下游若照單片專輯的語感寫「十軌」或寫成一般長度的 punk 專輯就會錯**。行文要寫軌數必須寫 18 軌（或寫「兩片」），不得寫 10 軌。\\n**「出道正規盤」查證屬實、可以寫**：韓文維基專條寫《정규 음반 1집》，MB 藝人頁排序本張也在最前，兩處一致。**策展層排除 1999 年單曲《청춘구십팔》的做法正確**——MB 上它的 primary-type 是 Single。\\n**⚠ 但序數只能寫到「第一張」為止。** 同一份 MB 排序裡 2001 年有兩筆並存（《Never Mind The Sex Pistols, Here's The No Brain》只標到年、排在 2001-07-11 的《Viva No Brain》前面），韓文維基卻把《Viva No Brain》記成《정규 음반 2집》——**第二張是誰在 MB 與維基之間打架**，這張卡不要寫「之後第幾張」之類的相對序數。\\n廠牌 Ponycanyon Korea 與 catno PLCD 00009 在 MB 上查得到，可寫。"
  },
  {
   "key": "desc2:No Brain|Viva No Brain",
@@ -153,7 +153,7 @@
     "src": "https://itunes.apple.com/lookup?id=1555676583&country=us&entity=song&limit=200"
    },
    {
-    "f": "韓文維基〈Viva NoBrain〉（條目名把團名寫成一個詞）全文只有一句：「《Viva NoBrain》는 록 밴드 노브레인의 **정규 음반 2집**이다」——這是 No Brain 的第二張正規盤。**條目名的盤名寫法《Viva NoBrain》與 MB／Apple 的《Viva No Brain》差一個空格。**",
+    "f": "韓文維基〈Viva NoBrain〉（條目名把團名寫成一個詞）全文只有一句，直譯是「《Viva NoBrain》是搖滾樂團 No Brain 的**正規音盤第 2 輯**」——原文的關鍵詞組作《정규 음반 2집》。這是 No Brain 的第二張正規盤。**條目名的盤名寫法《Viva NoBrain》與 MB／Apple 的《Viva No Brain》差一個空格。**",
     "src": "https://ko.wikipedia.org/wiki/Viva_NoBrain"
    },
    {
@@ -177,7 +177,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，2001。MB release-group first-release-date **2001-07-11**、其下唯一那筆 KR CD 的 release-event 日期同為 2001-07-11、Apple us 1555676583 的 releaseDate **2001-07-11**（**與 MB 逐日相同、不是月初佔位**）、℗ 年份 2001；韓文維基專條沒寫年份。**三處同為 2001，其中 MB 與 Apple 連日期都一模一樣。****同名先行單曲：無。**⚠ 但同年另有一張別碟《Never Mind The Sex Pistols, Here's The No Brain》（MB b259c0ac，first-release-date 只標到 2001），**兩張同年並存，任何以「掛名＋年份」做的配對都可能落到另一張**。",
-  "notes": "**探測層 ready 覆核通過，配對正確。** `us` **1555676583**：14 軌全有 previewUrl、`trackCount` 欄與攤開的曲目列都是 14、曲名逐字與 MB 相同（諺文原題）、曲序逐位置相符、逐軌長度最大差 262 毫秒。**探測層記的 front 就是 us，維持原樣即可。**\\n**擋下策展層一處（序數口徑打架）**：`curatorWhy` 寫「出道盤次年的正規盤」沒有明說第幾張，但下游很容易補成「第二張」。**MB 與韓文維基在這裡不一致**——MB 藝人頁的 Album 排序裡，《Never Mind The Sex Pistols, Here's The No Brain》(b259c0ac) 的 first-release-date 只標到「2001」、因此排在 2001-07-11 的本張**前面**，機械數是第三張；韓文維基專條卻寫「정규 음반 2집」。Apple 目錄裡則根本沒有《Never Mind…》這張。**兩票對一票偏向「第二張」，但 MB 排序會數成第三張，且沒有第三方來源說明《Never Mind…》到底是正規盤、翻唱盤還是合輯。行文不得寫序數**，要寫就寫「出道盤次年的一張」。\\n**廠牌不得斷言**：MB 的 label-info 是空陣列，唯一線索是 Apple 的 ℗「G1 Creative」。行文若要提發行方，只能寫成「Apple 的 ℗ 記 G1 Creative」，不得直接說這張由誰發行。\\n**盤名兩種寫法**：MB／Apple／卡單《Viva No Brain》、韓文維基條目名《Viva NoBrain》（無空格）。行文取有空格的那一種。\\n**這一張的 Apple 曲名沒有英譯**，與同組其他九張（Crying Nut ×2、장기하와 얼굴들 ×2、브로콜리 너마저、9와 숫자들 ×2、언니네 이발관 ×2）都不同——引曲名時直接用諺文原題即可，不必註明「Apple 題作」。"
+  "notes": "**探測層 ready 覆核通過，配對正確。** `us` **1555676583**：14 軌全有 previewUrl、`trackCount` 欄與攤開的曲目列都是 14、曲名逐字與 MB 相同（諺文原題）、曲序逐位置相符、逐軌長度最大差 262 毫秒。**探測層記的 front 就是 us，維持原樣即可。**\\n**擋下策展層一處（序數口徑打架）**：`curatorWhy` 寫「出道盤次年的正規盤」沒有明說第幾張，但下游很容易補成「第二張」。**MB 與韓文維基在這裡不一致**——MB 藝人頁的 Album 排序裡，《Never Mind The Sex Pistols, Here's The No Brain》(b259c0ac) 的 first-release-date 只標到「2001」、因此排在 2001-07-11 的本張**前面**，機械數是第三張；韓文維基專條卻寫《정규 음반 2집》。Apple 目錄裡則根本沒有《Never Mind…》這張。**兩票對一票偏向「第二張」，但 MB 排序會數成第三張，且沒有第三方來源說明《Never Mind…》到底是正規盤、翻唱盤還是合輯。行文不得寫序數**，要寫就寫「出道盤次年的一張」。\\n**廠牌不得斷言**：MB 的 label-info 是空陣列，唯一線索是 Apple 的 ℗「G1 Creative」。行文若要提發行方，只能寫成「Apple 的 ℗ 記 G1 Creative」，不得直接說這張由誰發行。\\n**盤名兩種寫法**：MB／Apple／卡單《Viva No Brain》、韓文維基條目名《Viva NoBrain》（無空格）。行文取有空格的那一種。\\n**這一張的 Apple 曲名沒有英譯**，與同組其他九張（Crying Nut ×2、장기하와 얼굴들 ×2、브로콜리 너마저、9와 숫자들 ×2、언니네 이발관 ×2）都不同——引曲名時直接用諺文原題即可，不必註明「Apple 題作」。"
  },
  {
   "key": "desc2:NELL|Let It Rain",
@@ -197,11 +197,11 @@
     "src": "https://itunes.apple.com/lookup?id=1645517169&country=us&entity=song&limit=200"
    },
    {
-    "f": "韓文維基〈Let It Rain (넬의 음반)〉：2003 年 6 月 12 日發行，是 NELL 的「**통산 3집 앨범이자 정규 1집 앨범**」（通算第三張、正規第一張）；這是進入 서태지 經營的廠牌 괴수 인디진 之後發表的第一張碟，**製作人是 서태지**。內容比地下時期的作品更走大眾路線，多數曲子在地下時期就已寫成，〈어차피 그런거〉〈믿어선 안될 말〉〈낙엽의 비〉〈Eden〉四首是地下時期舊作的重新編曲。**主打曲是〈Stay〉、後續曲是〈고양이〉。**",
+    "f": "韓文維基〈Let It Rain (넬의 음반)〉：2003 年 6 月 12 日發行，是 NELL 的「通算第三張、正規第一張」（原文的關鍵詞組作《통산 3집 앨범이자 정규 1집 앨범》）；這是進入 Seo Taiji 經營的廠牌 Goesoo Indigene（原文作《괴수 인디진》）之後發表的第一張碟，**製作人是 Seo Taiji**。內容比地下時期的作品更走大眾路線，多數曲子在地下時期就已寫成，〈어차피 그런거〉〈믿어선 안될 말〉〈낙엽의 비〉〈Eden〉四首是地下時期舊作的重新編曲。**主打曲是〈Stay〉、後續曲是〈고양이〉。**",
     "src": "https://ko.wikipedia.org/wiki/Let_It_Rain_(%EB%84%AC%EC%9D%98_%EC%9D%8C%EB%B0%98)"
    },
    {
-    "f": "英文維基〈Nell (band)〉：1999 年組成、2001 年出道；早年在新村一帶的 club 演出，「released two **indie** rock albums, Reflection of and Speechless, in 2001」；在弘大 live club 演出時被 서태지 相中，2002 年成為 Seo Taiji Company 旗下廠牌 Goesoo Indigene 的第一支樂團。條目把〈Stay〉標為 from Let It Rain 的代表曲，並明寫「**Their third studio album Healing Process**」與「**Nell's fourth studio album Separation Anxiety**」——**照這個口徑往前推，Let It Rain 是第一張 studio album、Walk Through Me 是第二張。**",
+    "f": "英文維基〈Nell (band)〉：1999 年組成、2001 年出道；早年在新村一帶的 club 演出，「released two **indie** rock albums, Reflection of and Speechless, in 2001」；在弘大 live club 演出時被 Seo Taiji 相中，2002 年成為 Seo Taiji Company 旗下廠牌 Goesoo Indigene 的第一支樂團。條目把〈Stay〉標為 from Let It Rain 的代表曲，並明寫「**Their third studio album Healing Process**」與「**Nell's fourth studio album Separation Anxiety**」——**照這個口徑往前推，Let It Rain 是第一張 studio album、Walk Through Me 是第二張。**",
     "src": "https://en.wikipedia.org/wiki/Nell_(band)"
    },
    {
@@ -217,7 +217,7 @@
    "十一軌裡有九軌卡在三分半到五分之間，只有收尾的〈Eden〉放長到六分十二秒",
    "四首歌是地下時期的舊作重新編過——這張碟等於把兩年前沒人聽見的東西，換一個廠牌再唱一次"
   ],
-  "sound": "MB 只記一筆實體 release：單片 11 軌的 KR Official CD（Seo Taiji Company，catno YDCD-663，barcode 8809025358781），另一筆是沒有國別與日期的 Pseudo-Release。全碟 2952 秒（49:12），**十一軌裡九軌落在 3:31 到 5:00 這個很窄的區間**，最短〈기생충〉3:31、最長是收尾的〈Eden〉6:12——曲序把唯一一首拉長的曲子放在最後。曲名十一軌中九軌用諺文、兩軌用英文（〈Stay〉與〈Eden〉），Apple 的版本把九軌諺文換成英譯、兩軌英文原樣保留。韓文維基記主打曲是第 3 軌〈Stay〉、後續曲是第 2 軌〈고양이〉，**兩首都排在前三軌**；並記〈어차피 그런 거〉〈믿어선 안될 말〉〈낙엽의 비〉〈Eden〉四首是地下時期舊作的重新編曲，製作人是 서태지。Apple 的 ℗ 記「spotlight」，與 MB 的 Seo Taiji Company 不同字串。",
+  "sound": "MB 只記一筆實體 release：單片 11 軌的 KR Official CD（Seo Taiji Company，catno YDCD-663，barcode 8809025358781），另一筆是沒有國別與日期的 Pseudo-Release。全碟 2952 秒（49:12），**十一軌裡九軌落在 3:31 到 5:00 這個很窄的區間**，最短〈기생충〉3:31、最長是收尾的〈Eden〉6:12——曲序把唯一一首拉長的曲子放在最後。曲名十一軌中九軌用諺文、兩軌用英文（〈Stay〉與〈Eden〉），Apple 的版本把九軌諺文換成英譯、兩軌英文原樣保留。韓文維基記主打曲是第 3 軌〈Stay〉、後續曲是第 2 軌〈고양이〉，**兩首都排在前三軌**；並記〈어차피 그런 거〉〈믿어선 안될 말〉〈낙엽의 비〉〈Eden〉四首是地下時期舊作的重新編曲，製作人是 Seo Taiji。Apple 的 ℗ 記「spotlight」，與 MB 的 Seo Taiji Company 不同字串。",
   "keyTracks": [
    "Stay",
    "고양이",
@@ -225,6 +225,250 @@
   ],
   "status": "full",
   "yearVerified": "一致，2003。MB release-group first-release-date **2003-06-12**、其下 KR CD 的 release-event 日期同為 2003-06-12、Apple us 1645517169 的 releaseDate **2003-06-12**（**與 MB 逐日相同**）、℗ 年份 2003，韓文維基寫 2003 年 6 月 12 日。**四處同為 2003，而且四處的日期全部是 6/12、一天都不差**——本批年份最乾淨的幾張之一。**同名先行單曲：無。**",
-  "notes": "**探測層 ready，但釘的是 jp 店面（1645517169）。** 覆核結果：這個 collectionId 在 **us** 店面同樣攤得出 11 軌、11 軌全有 previewUrl、`trackCount` 欄與曲目列都是 11、前十軌長度與 MB 誤差 0 毫秒；它也列在 us 的 NELL 藝人頁目錄（artistId 660177479）裡，**不是日版、不是只在 jp 上架的條目**。依 c105/rulings.md 第 3 條「韓國線一律用 us」，**建議主線把店面改記成 us、id 不變**。\\n**⚠ 擋下策展層一處，這是本組最嚴重的一處：`curatorWhy` 寫「NELL 的第三張正規盤」，兩處具名來源都不支持。**韓文維基專條寫的是「**통산 3집 앨범이자 정규 1집 앨범**」（通算第三張、**正規第一張**）；英文維基樂團條目明寫 Healing Process 是 third studio album、Separation Anxiety 是 fourth studio album，往前推 **Let It Rain 就是第一張 studio album**，並把 2001 年的《Reflection of》與《Speechless》稱為 **indie** albums。Apple 目錄也沒有那兩張 2001 年的碟。**「第三」只有 MB 的機械排序這一票，「第一」有韓文維基與英文維基兩票。行文一律不得寫序數**——要提位置就寫「進 Seo Taiji Company 體系之後的第一張」（這一點三處都支持）。\\n**這條同時要傳給同批的《Separation Anxiety》那張**：韓文維基把它記成「통산 6집이자 정규 4집」，正好與英文維基的 fourth studio album 對得上，**MB 排序數出來的第六也對得上「통산 6집」**——同一位藝人的兩套口徑差兩張，不是隨機誤差。\\n**廠牌兩說**：MB 的 label-info 寫 Seo Taiji Company（catno YDCD-663），Apple 的 ℗ 寫 spotlight，韓文維基寫廠牌是 괴수 인디진（Goesoo Indigene，Seo Taiji Company 旗下）。**行文可寫「進 Seo Taiji Company 體系」，不要斷言單一發行方名稱。**\\n**掛名**：MB 的 artist-credit 印 Nell（首字大寫）、Apple 印 NELL（全大寫）、池中與 MB 藝人實體主名都是 NELL。卡單取 NELL 正確。"
+  "notes": "**探測層 ready，但釘的是 jp 店面（1645517169）。** 覆核結果：這個 collectionId 在 **us** 店面同樣攤得出 11 軌、11 軌全有 previewUrl、`trackCount` 欄與曲目列都是 11、前十軌長度與 MB 誤差 0 毫秒；它也列在 us 的 NELL 藝人頁目錄（artistId 660177479）裡，**不是日版、不是只在 jp 上架的條目**。依 c105/rulings.md 第 3 條「韓國線一律用 us」，**建議主線把店面改記成 us、id 不變**。\\n**⚠ 擋下策展層一處，這是本組最嚴重的一處：`curatorWhy` 寫「NELL 的第三張正規盤」，兩處具名來源都不支持。**韓文維基專條寫的是「通算第三張、**正規第一張**」（原文作《통산 3집 앨범이자 정규 1집 앨범》）；英文維基樂團條目明寫 Healing Process 是 third studio album、Separation Anxiety 是 fourth studio album，往前推 **Let It Rain 就是第一張 studio album**，並把 2001 年的《Reflection of》與《Speechless》稱為 **indie** albums。Apple 目錄也沒有那兩張 2001 年的碟。**「第三」只有 MB 的機械排序這一票，「第一」有韓文維基與英文維基兩票。行文一律不得寫序數**——要提位置就寫「進 Seo Taiji Company 體系之後的第一張」（這一點三處都支持）。\\n**這條同時要傳給同批的《Separation Anxiety》那張**：韓文維基把它記成《통산 6집이자 정규 4집》，正好與英文維基的 fourth studio album 對得上，**MB 排序數出來的第六也對得上那個「通算第六」的口徑**——同一位藝人的兩套口徑差兩張，不是隨機誤差。\\n**廠牌兩說**：MB 的 label-info 寫 Seo Taiji Company（catno YDCD-663），Apple 的 ℗ 寫 spotlight，韓文維基寫廠牌是 Goesoo Indigene（Seo Taiji Company 旗下）。**行文可寫「進 Seo Taiji Company 體系」，不要斷言單一發行方名稱。**\\n**掛名**：MB 的 artist-credit 印 Nell（首字大寫）、Apple 印 NELL（全大寫）、池中與 MB 藝人實體主名都是 NELL。卡單取 NELL 正確。"
+ },
+ {
+  "key": "desc4:장기하와 얼굴들|장기하와 얼굴들",
+  "artist": "장기하와 얼굴들",
+  "album": "장기하와 얼굴들",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 63b92310 的欄位：title「장기하와 얼굴들」、artist-credit「장기하와 얼굴들」（藝人實體 6e5c33a2，sort-name Kiha & The Faces）、first-release-date **2011-06-09**、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 KR/Official、日期都是 2011-06-09**：一筆 CD（標題「장기하와 얼굴들」，label-info《붕가붕가레코드》catno BGF-012，barcode 8809267370411，11 軌）、一筆 Digital Media（**標題印羅馬轉寫「Kiha & The Faces」**，label-info《두루두루 Artist Management Company》，11 軌）。**實體 KR Official 盤只有 CD 那一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/63b92310-8c99-4567-9782-c4264ff4448e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "同一個 release-group 底下的兩筆 release **曲名分屬兩種語言、曲序與長度完全相同**。CD（de900c6b）的諺文曲目：1〈뭘 그렇게 놀래〉4:08、2〈그렇고 그런 사이〉3:42、3〈모질게 말하지 말라며〉3:43、4〈TV를 봤네〉3:38、5〈보고 싶은 사람도 없는데〉4:18、6〈깊은 밤 전화번호부〉3:19、7〈우리 지금 만나〉3:31、8〈그 때 그 노래〉3:24、9〈마냥 걷는다〉5:27、10〈날 보고 뭐라 그런 것도 아닌데〉8:17、11〈TV를 봤네 (다시)〉1:02。數位盤（8f7aa19a）同樣 11 軌、同樣長度，曲名全部換成英譯（What's So Shocking About It?／A Sort of Relationship／Didn't You Tell Me Not to Be Hard on You?／I Watched TV／I Have Nobody to Miss But...／Midnight Phone Book／I Must See You Now／A Good Old Song／I Just Keep Walking／Although I Heard Nothing to Feel Bad About...／I Watched TV (Again)）。全碟 2669 秒（44:29）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=63b92310-8c99-4567-9782-c4264ff4448e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1450777498：collectionName「Kiha & the Faces」、artistName「Kiha & The Faces」、releaseDate 2011-06-09、copyright「℗ 2011 DOOROODOOROO ARTIST COMPANY」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，**曲名與 MB 那筆數位盤的英譯逐字相同、曲序逐位置相符**，逐軌長度與 MB 最大差 2480 毫秒、平均差 1119 毫秒（MB 那兩筆的長度是整秒手輸值，這個量級的差是四捨五入造成的，不是別版）。",
+    "src": "https://itunes.apple.com/lookup?id=1450777498&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 661985117，us，entity=album，回 8 筆、遠未達 200 上限）列出這團在 Apple 上的**全部**條目：1450774540《Living the Carefree Life》2009-02-27（13 軌）、**1450777498《Kiha & the Faces》2011-06-09（11 軌）**、1449552891 一首電影原聲單曲 2012-01-13、1450775627《Human Mind》2014-10-15（12 軌）、1550684903《New Year's Luck - EP》2015-02-11（5 軌）、1450772940《Who's Good At Their Own Love?》2016-06-16（10 軌）、1344670017 一筆 2018 混音單曲、1592040077《mono》2018-11-01（9 軌）。**Apple 目錄把這團五張正規盤全部改成英譯盤名、沒有一張標序數。**",
+    "src": "https://itunes.apple.com/lookup?id=661985117&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "韓文維基〈장기하와 얼굴들〉（樂團條目）：2008 年 3 月退伍後由 Chang Kiha 組成；2008 年 5 月以手工小量音盤形式製作的《싸구려 커피》賣出逾一萬張；**2009 年 2 月發表正規 1 輯《별일 없이 산다》**，與《싸구려 커피》的成績一起在 Korean Music Awards（한국대중음악상）拿下三個獎；2009 年 11 月結束 1 輯活動進入休止期，**2011 年 6 月發表第 2 輯《장기하와 얼굴들》**，這張碟讓他們在 2012 年第 9 屆 Korean Music Awards 拿下最優秀搖滾歌曲、最優秀搖滾音盤、年度音樂人與年度音盤**四個獎**，是該獎史上第一個四冠；2014 年 10 月 15 日發表正規 3 輯《사람의 마음》，2016 年 6 月 16 日正規 4 輯，2018 年 11 月 1 日最後一張正規盤《mono》。",
+    "src": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EA%B8%B0%ED%95%98%EC%99%80_%EC%96%BC%EA%B5%B4%EB%93%A4"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 6e5c33a2 名下**只有 8 個 release-group**，primary-type=Album 且 secondary-types 為空的 5 筆依 first-release-date 排序為《별일 없이 산다》2009-02-27、**《장기하와 얼굴들》2011-06-09**、《사람의 마음》2014-10-07、《내 사랑에 노련한 사람이 어딨나요》2016-06-16、《mono》2018-11-01——**本張排第二**；其餘 3 筆是 2008-06-01 的單曲《싸구려 커피》、2012-01-13 的電影原聲單曲、2015-02-11 的單曲《새해 복》。**名下沒有任何合輯或 Live，也沒有第二筆同名 release-group，MB 這份排序在這位藝人身上不會多算。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6e5c33a2-ec34-48ff-8869-d231554186c6&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Kiha & The Faces〉：韓國獨立搖滾樂團，由主唱 Chang Kiha 領軍，2008 年以單曲「Cheap Coffee」出道，後來成為韓國最受歡迎、商業上最成功的獨立搖滾樂團之一；2018 年 10 月 Chang 宣布第五張也是最後一張專輯《Mono》，同時宣布團員各奔東西。",
+    "src": "https://en.wikipedia.org/wiki/Kiha_%26_The_Faces"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟在 MB 上有兩份曲目：CD 那筆全是諺文，數位那筆整份換成英文，十一軌的長度一秒不差",
+   "第十軌〈날 보고 뭐라 그런 것도 아닌데〉八分十七秒，接著收尾的〈TV를 봤네 (다시)〉只有一分零二秒"
+  ],
+  "sound": "MB 記兩筆 release，**都是 KR Official、同一天（2011-06-09）**：一筆 CD（《붕가붕가레코드》，catno BGF-012，barcode 8809267370411）、一筆數位（《두루두루 Artist Management Company》，標題印羅馬轉寫）。**兩筆都是 11 軌、同曲序、逐軌長度完全相同，差別只在曲名用諺文還是英譯。**全碟 2669 秒（44:29）。前八軌全部落在 3:19 到 4:18 這個很窄的區間，第 9 軌〈마냥 걷는다〉5:27 開始拉長，第 10 軌〈날 보고 뭐라 그런 것도 아닌데〉**8:17**是全碟最長、幾乎是前面任一軌的兩倍，收尾的〈TV를 봤네 (다시)〉只有 1:02——**是第 4 軌〈TV를 봤네〉的再現版，全碟最短**。曲序等於前面八首短曲、一首中長、一首特長、一首短的再現。Apple 的 ℗ 記 DOOROODOOROO ARTIST COMPANY，與 MB 數位盤的廠牌欄同一家、只是拼寫方式不同。",
+  "keyTracks": [
+   "뭘 그렇게 놀래",
+   "날 보고 뭐라 그런 것도 아닌데",
+   "TV를 봤네"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2011。MB release-group first-release-date **2011-06-09**、其下兩筆 release 的日期都是 2011-06-09、Apple us 1450777498 的 releaseDate **2011-06-09**（**與 MB 逐日相同**）、℗ 年份 2011，韓文維基樂團條目寫「2011 年 6 月發表第 2 輯」。**四處同為 2011，MB 與 Apple 連日期都一樣。****同名先行單曲：無**——MB 名下只有 8 個 release-group，沒有第二筆叫《장기하와 얼굴들》的東西；2008 年那筆《싸구려 커피》是不同盤名的單曲。",
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆，其中 jp／us／gb／hk／tw／de／au 各回 12 筆候選但一筆都沒配上），但 Apple us 確實買得到。** 覆核結果：`us` **1450777498**（11 軌全有 previewUrl，`trackCount` 欄與曲目列都是 11，曲名與 MB 數位盤的英譯逐字相同、曲序逐位置相符，逐軌長度差在 2.5 秒內、來自 MB 的整秒手輸值）。查不到的原因是 **Apple 把掛名與盤名同時換成羅馬轉寫「Kiha & the Faces」**，與卡單的諺文兩層都對不上（裁定 185／176 的形狀，而且是掛名與盤名一起壞掉的雙層版）。**不改 `previews.json`，交主線補。**\\n**「第二張正規盤」查證屬實、可以寫**：韓文維基樂團條目明寫「2011 年 6 月發表第 2 輯」（1 輯是 2009 年的《별일 없이 산다》、3 輯是 2014 年的《사람의 마음》），MB 藝人頁的 5 筆 Album 排序本張也排第二，**兩處一致**。這位藝人在 MB 上名下只有 8 個 release-group、**沒有任何合輯、Live 或日版**，是本組序數最不會出錯的一位。\\n**盤名／掛名各有兩套寫法**：盤名諺文《장기하와 얼굴들》對 Apple 的《Kiha & the Faces》（Apple 的 the 小寫、MB 那筆 release 標題的 The 大寫，**同一個轉寫還有大小寫兩形**）；掛名諺文對轉寫 Kiha & The Faces。行文取諺文原題。\\n**曲名要小心選哪一套**：MB 的 CD 是諺文、數位是英譯，兩套都是 MB 官方建檔。`keyTracks` 給的是諺文那一套。\\n可寫的獎項（韓文維基有具名主辦者）：本作在 2012 年第 9 屆 Korean Music Awards 拿下四個獎，是該獎史上第一個四冠。依 c-111 裁定 2，獎項可寫。"
+ },
+ {
+  "key": "desc4:장기하와 얼굴들|사람의 마음",
+  "artist": "장기하와 얼굴들",
+  "album": "사람의 마음",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4c8b7a8f 的欄位：title「사람의 마음」、artist-credit「장기하와 얼굴들」、first-release-date **2014-10-07**、primary-type Album、secondary-types **空**。轄下 **4 個 release、全部 KR/Official**：bf2a7cc2「Human Mind」2014-10-07 Digital Media **12 軌**（《두루두루 Artist Management Company》）、46e1961e「사람의 마음」2014-10-15 Digital Media **12 軌**（同廠牌）、9978ee95「사람의 마음」2014-10-15 **CD 13 軌**（同廠牌，catno DK 0817，barcode 8808678308181）、b634a39b「사람의 마음」2014-10-15 **13 軌**（媒體格式未填，同 barcode）。**實體只有 CD 那一筆，而且它比數位盤多一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/4c8b7a8f-1a1e-4cbb-b9b8-d55269814f99?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**數位版與 CD 版的軌數與曲序都不一樣。**數位版（46e1961e，12 軌）：1〈사람의 마음〉3:54、2〈내 이름을 불러주세요〉2:33、3〈내 사람〉4:33、4〈구두쇠〉4:34、5〈올 생각을 않네〉4:01、6〈알 수 없는 사람〉3:50、7〈좋다 말았네〉4:15、8〈기억 안 나〉4:30、9〈잊혀지지 않네〉3:50、10〈착한 건 나쁜 게 아니야 Pt. 1〉6:38、11〈착한 건 나쁜 게 아니야 Pt. 2〉3:42、12〈기상시간은 정해져 있다〉1:37，合計 2877 秒（47:57）。CD 版（9978ee95，13 軌）**把〈별 일 없었니〉3:48 放在第 1 軌**，同名曲〈사람의 마음〉退到第 10 軌，中段 6/7/8/9 四軌的順序也與數位版不同，合計 3105 秒（51:45）。第四筆 b634a39b 的曲目列直接把第 1 軌標成〈별 일 없었니 [CD Only]〉、長度 0。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4c8b7a8f-1a1e-4cbb-b9b8-d55269814f99&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1450775627：collectionName「Human Mind」、artistName「Kiha & The Faces」、releaseDate **2014-10-15**、copyright「℗ 2014 DOOROODOOROO ARTIST COMPANY」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，**曲序與 MB 的數位版逐位置相符**（不是 CD 版的曲序），曲名用英譯（Human Mind／Call My Name／Mine／Cheapskate／Not Coming／A Doubtful Person／Almost Had It (2014 Remastered)／Don't Remember／Can't Forget／Not Bad to Be Good, Pt. 1／Not Bad to Be Good, Pt. 2 (feat. Jeon Inkwon)／Wakeup Time），逐軌長度與 MB 最大差 200 毫秒、平均 50 毫秒。**Apple 這一筆是 12 軌的數位版，沒有 CD 版那首〈별 일 없었니〉。**",
+    "src": "https://itunes.apple.com/lookup?id=1450775627&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "韓文維基〈사람의 마음〉專條：這是 장기하와 얼굴들 的**第三張正規專輯**（原文作《세 번째 정규앨범》）；全碟曲子由 Chang Kiha 一人所寫，他與 Hasegawa Yohei 共同製作，編曲由全體團員參與。**發行日 2014 年 10 月 15 日**，距前作《장기하와 얼굴들》的發行日隔了 3 年 4 個月；收錄曲〈내 사람〉先在 10 月 7 日搶先公開，2013 年 3 月 29 日先行公開的〈좋다 말았네〉也收在裡面。**專輯做成線上版與線下版兩種：線上版含同名主打曲共 12 軌，線下版（實體）多收一首〈별 일 없었니〉當 bonus track。**封面與前作同樣由廠牌首席設計師 Kim Kijo 設計，用的是連血管都畫得出來的心臟圖像。發行後商業成績良好，樂評與大眾反應皆正面；10 月 23 日起自首爾展開全國巡演。",
+    "src": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%8C%EC%9D%98_%EB%A7%88%EC%9D%8C"
+   },
+   {
+    "f": "MB 藝人頁分頁全列名下 8 個 release-group，primary-type=Album 且 secondary-types 為空的 5 筆依 first-release-date 排序為《별일 없이 산다》2009-02-27、《장기하와 얼굴들》2011-06-09、**《사람의 마음》2014-10-07**、《내 사랑에 노련한 사람이 어딨나요》2016-06-16、《mono》2018-11-01——**本張排第三**。名下沒有合輯、Live 或日版，也沒有第二筆同名 release-group。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6e5c33a2-ec34-48ff-8869-d231554186c6&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 661985117，us，entity=album，回 8 筆、未達上限）在 2014 年只有 1450775627《Human Mind》2014-10-15（12 軌）一筆，前一筆是 1449552891 的 2012 年電影原聲單曲、後一筆是 1550684903《New Year's Luck - EP》2015-02-11（5 軌）。**Apple 目錄沒有 CD 版那個 13 軌的條目。**",
+    "src": "https://itunes.apple.com/lookup?id=661985117&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "線上版十二軌、實體版十三軌，多出來的〈별 일 없었니〉還被放在第一軌——同一張碟，兩種開場",
+   "封面是一顆連血管都畫出來的心臟，不是那個對稱的圖案；碟名叫《사람의 마음》"
+  ],
+  "sound": "MB 記四筆 release、全部 KR Official，實體只有一張 CD（《두루두루 Artist Management Company》，catno DK 0817，barcode 8808678308181）。**數位版 12 軌 2877 秒（47:57）、CD 版 13 軌 3105 秒（51:45）**，多出來的〈별 일 없었니〉3:48 在 CD 上被放在**第 1 軌**，同名曲〈사람의 마음〉因此退到第 10 軌，中段四軌的順序也跟著換過——兩個版本不只是多一首，是兩種曲序。數位版以〈사람의 마음〉3:54 開場，第 2 軌〈내 이름을 불러주세요〉2:33 是全碟第二短；十二軌裡九軌落在 3:42 到 4:34 之間，只有〈착한 건 나쁜 게 아니야 Pt. 1〉6:38 明顯拉長，緊接著 Pt. 2 3:42，收在 1:37 的〈기상시간은 정해져 있다〉。Apple 的英譯把 Pt. 2 標了 feat. Jeon Inkwon、把〈좋다 말았네〉標成 2014 Remastered——那首在 2013 年 3 月就先行公開過。全碟曲子由 Chang Kiha 一人所寫，他與 Hasegawa Yohei 共同製作。",
+  "keyTracks": [
+   "사람의 마음",
+   "착한 건 나쁜 게 아니야 Pt. 1",
+   "별 일 없었니"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2014，但**日期在 10/7 與 10/15 之間分歧、而且分歧有實質原因**。MB release-group first-release-date 記 **2014-10-07**，那個日期來自轄下標題印英譯「Human Mind」的那筆數位 release；**其餘三筆 release 的日期都是 2014-10-15**。Apple us 1450775627 的 releaseDate 是 **2014-10-15**、℗ 年份 2014。韓文維基專條明寫發行日 **2014 年 10 月 15 日**，並記收錄曲〈내 사람〉先在 **10 月 7 日**搶先公開——**MB 的 10-07 幾乎確定是搶先公開那一天漏進 release-group 的 first-release-date**。四處同為 2014。**行文只寫年份，不要寫發行日**；真要寫就寫 10 月 15 日（維基與三筆 release 加 Apple 共四票）。**同名先行單曲：無。**",
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆），但 Apple us 確實買得到。** 覆核結果：`us` **1450775627**（12 軌全有 previewUrl，`trackCount` 欄與曲目列都是 12，曲序與 MB 的**數位版**逐位置相符，逐軌長度最大差 200 毫秒）。查不到的原因同 2011 年那張：Apple 把掛名換成 Kiha & The Faces、盤名換成《Human Mind》，兩層都對不上卡單的諺文。**不改 `previews.json`，交主線補。**\\n**「第三張正規盤」查證屬實、可以寫**：韓文維基專條明寫《세 번째 정규앨범》，MB 的 5 筆 Album 排序本張也排第三，**兩處一致**。\\n**⚠ 擋下策展層一處（軌數，不是序數）**：`curatorWhy` 只引了 Apple 的「12 軌」，`curatorRisk` 也只提日期分歧。**MB 那四筆 release 裡有兩筆是 13 軌**——實體 CD 版多收〈별 일 없었니〉當 bonus track 且放在第 1 軌，韓文維基專條明文記載線上版 12 軌／線下版多一首。**行文寫軌數要指明是哪一版**：只寫「十二軌」而不說是數位版，對實體盤來說是錯的；卡片釘的是 release-group、涵蓋兩版。\\n**同一個 release-group 內有兩種曲序**，不只是多一首歌：CD 版把同名曲從第 1 軌挪到第 10 軌。行文不得寫「以同名曲開場」這類話。\\n**盤名兩種**：諺文《사람의 마음》對 Apple／MB 那筆數位的英譯《Human Mind》。行文取諺文原題。\\n**廠牌與前作不同**：2011 年那張的實體掛《붕가붕가레코드》、本張實體掛《두루두루 Artist Management Company》，MB 的 label-info 兩張都查得到，這個對照可寫。"
+ },
+ {
+  "key": "desc4:브로콜리 너마저|보편적인 노래",
+  "artist": "브로콜리 너마저",
+  "album": "보편적인 노래",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 064cf571 的欄位：title「보편적인 노래」、artist-credit「브로콜리 너마저」（**中間有空格**；藝人實體 653d5235，sort-name Broccoli, You Too?）、first-release-date **2008-12-09**、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 Official、日期都是 2008-12-09**：KR 的 CD（label-info **Luova Factory**，barcode 8809285780018，12 軌）與 XW 的 Digital Media（**標題印英譯「Song Is Universal」**，label-info《[no label]》，12 軌）。**實體 KR Official 盤只有一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/064cf571-301e-3310-b2d3-d66cdf57efae?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（75014dce）的逐軌曲目與長度：1〈춤〉3:59、2〈이웃에 방해가 되지 않는 선에서〉3:31、3〈봄이오면〉4:19、4〈두근두근〉3:20、5〈속좁은 여학생〉4:22、6〈2009년의 우리들〉4:11、7〈말〉3:56、8〈안녕〉4:26、9〈편지〉3:16、10〈앵콜요청금지〉4:06、11〈보편적인 노래〉6:22、12〈유자차〉2:38。單片 12 軌、合計 2906 秒（48:26）。**同名曲〈보편적인 노래〉6:22 是全碟最長、排在倒數第二軌**，最短是收尾的〈유자차〉2:38。XW 那筆數位盤同樣 12 軌、同序同長，曲名全部換成英譯（Dance／Dancing in the Moonlight／When the Spring Comes／Pit-A-Pat／Timid Girl／Ours of 2009／Words／Bye／Letter／No More Encore／Song Is Universal／Citrus Tea）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=064cf571-301e-3310-b2d3-d66cdf57efae&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple 兩個端點都確認查無。**（一）`search` 端點跑了四種寫法：《브로콜리 너마저 보편적인 노래》回 25 筆但**全部是這團的別張**（Graduation／No More Encore.／We all know we will fail／Snobs／1/10 - EP 等），沒有一筆是本張；《보편적인 노래》只回 3 筆，第一筆是別人唱的伴唱單曲、另兩筆是這團的《We all know we will fail》與《The early tropical nights - EP》；《Broccoli you too Song is Universal》與《Song Is Universal Broccoli》各回 **0 筆**。（二）藝人頁目錄端點（artistId 1109560681，us，entity=album）回 **29 筆條目、未觸及 200 上限**，時間軸**從 2010-11-01 的《Graduation》開始**——2008 年那一格根本不存在。依裁定 173，本張的結論是 **Apple 目錄確實沒有這張碟**。",
+    "src": "https://itunes.apple.com/lookup?id=1109560681&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "Apple `search` 端點對《브로콜리너마저》（無空格）在 us 店面回 **25 筆**、全部是這團的條目——**同一個端點、同一個店面、同一位藝人，別張查得到、這一張查不到**，所以本張的 0 筆不是端點對諺文失效，是目錄裡真的沒有。",
+    "src": "https://itunes.apple.com/search?term=%EB%B8%8C%EB%A1%9C%EC%BD%9C%EB%A6%AC%EB%84%88%EB%A7%88%EC%A0%80&country=us&media=music&entity=album&limit=25"
+   },
+   {
+    "f": "韓文維基〈보편적인 노래〉專條全文只有兩句：這是 브로콜리너마저 的**第一張正規音盤**（原文作《첫 번째 정규 음반》）；**收錄新曲 8 首、EP《앵콜요청금지》的 3 首、Demo《봄이 오면/꾸꾸꾸》的 1 首**。",
+    "src": "https://ko.wikipedia.org/wiki/%EB%B3%B4%ED%8E%B8%EC%A0%81%EC%9D%B8_%EB%85%B8%EB%9E%98"
+   },
+   {
+    "f": "韓文維基〈브로콜리 너마저〉（樂團條目）：Yoon Deokwon（貝斯、主唱）、Jandi（鍵盤）、Ryuji（鼓）三人編制的韓國現代搖滾樂團；2007 年的 EP〈앵콜요청금지〉只靠口碑就傳開，**2008 年的正規 1 輯《보편적인 노래》賣出約四萬張、進入長銷榜**；之後成立獨立廠牌 Studio Broccoli，2010 年發行的正規 2 輯《졸업》在完成度等各方面都獲得好評。**1 輯收錄曲〈보편적인 노래〉與 2 輯收錄曲〈졸업〉分別在 2010 年（第 7 屆）與 2011 年（第 8 屆）連兩年拿下 Korean Music Awards 的最優秀現代搖滾歌曲獎。**公演與音盤的企劃、製作到流通全程不靠專業經紀公司自己完成。",
+    "src": "https://ko.wikipedia.org/wiki/%EB%B8%8C%EB%A1%9C%EC%BD%9C%EB%A6%AC_%EB%84%88%EB%A7%88%EC%A0%80"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 653d5235 名下 13 個 release-group，primary-type=Album 且 secondary-types 為空的**只有 3 筆**，依 first-release-date 排序為 **《보편적인 노래》2008-12-09**、《졸업》2010-10-25、《우리는 모두 실패할 것을 알고 있어요》2024-10-01——**本張排最前**。其餘 10 筆是 EP 與單曲（2007-10-31《앵콜요청금지》EP、2009-10-30《브로콜리 너마저》EP+Demo、2012-06-22《골든-힛트 모음집 [앵콜요청금지.]》Album+Compilation、2019-05-17《속물들》EP 等）。⚠ **英文維基把 2019 年的《속물들》算成第三張 studio album，MB 卻把它標成 EP，兩邊的「共幾張」不一致**（但這不影響本張排最前）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=653d5235-52c8-4614-8ba1-81c11660798e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Broccoli, You Too?〉：韓國獨立樂團，現由 Jandi、Deokwon、Ryuji 三人組成；2005 年成軍以來發表三張 studio album——**Song is Universal (보편적인 노래) (2008)**、Graduation (졸업) (2010)、Snobs (속물들) (2019)；樂團在 2010 與 2011 年的 Korean Music Awards 拿下 Best Modern Song。",
+    "src": "https://en.wikipedia.org/wiki/Broccoli,_You_Too%3F"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌裡有四首是舊的：三首來自前一年的 EP、一首來自更早的 Demo——出道正規盤有三分之一是重錄的過去",
+   "同名曲六分二十二秒、放在倒數第二軌，全碟最長；收尾的〈유자차〉兩分三十八秒，全碟最短"
+  ],
+  "sound": "MB 記兩筆 release、都是 2008-12-09：一張 KR Official CD（Luova Factory，barcode 8809285780018）與一筆 XW 數位（廠牌欄記《[no label]》、標題印英譯）。**兩筆都是 12 軌、同序同長**，全碟 2906 秒（48:26）。曲序自〈춤〉3:59 起，十二軌裡十軌落在 2:38 到 4:26 之間，只有**倒數第二軌的同名曲〈보편적인 노래〉6:22 明顯拉長**——它比全碟平均長了兩分半，而收尾的〈유자차〉2:38 又是全碟最短，等於用一長一短兩軌收場。第 10 軌〈앵콜요청금지〉4:06 是前一年那張 EP 的同名曲。韓文維基記全碟 12 軌裡**新曲只有 8 首**，另外 3 首來自 2007 年的 EP《앵콜요청금지》、1 首來自 Demo《봄이 오면/꾸꾸꾸》。XW 數位盤的英譯曲名把題材攤得很白：Dance／Dancing in the Moonlight／When the Spring Comes／Pit-A-Pat／Timid Girl／Ours of 2009／Words／Bye／Letter／Citrus Tea。編制是貝斯兼主唱、鍵盤、鼓三人。",
+  "keyTracks": [
+   "보편적인 노래",
+   "앵콜요청금지",
+   "유자차"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2008。MB release-group first-release-date **2008-12-09**、其下兩筆 release 的日期都是 2008-12-09。**Apple 沒有這張碟，所以沒有 releaseDate 與 ℗ 可對照**（兩個端點都查無，見事實表第三、四條）。韓文維基專條沒寫日期、樂團條目寫「2008 年的正規 1 輯」，英文維基寫 Song is Universal (2008)。**三處同為 2008**（MB／韓文維基／英文維基），MB 的年月日內部一致。**⚠ 年底發行要小心的一張**：12 月 9 日離跨年只剩三週，若下游看到某些通路標 2009 年不必跟著改。**同名先行單曲：無**——MB 名下 13 個 release-group 裡沒有第二筆叫《보편적인 노래》的東西；2009 年那筆同掛名的《브로콜리 너마저》是 EP+Demo、盤名與掛名同形，是另一回事。",
+  "notes": "**探測層 unavailable，覆核後確認是真的 unavailable。** 這是本組 20 張裡**唯二**經兩個端點都證實 Apple 目錄沒有的一張（另一張是 No Brain《청년폭도맹진가》）：藝人頁目錄 29 筆條目未達上限、**時間軸從 2010 年的《Graduation》才開始**，2008 年那一格不存在；`search` 端點四種寫法也全部撈不到本張。策展層 `curatorRisk` 的判斷正確，**固定試聽要走無來源狀態**。\\n**「第一張正規盤」查證屬實、可以寫**：韓文維基專條寫《첫 번째 정규 음반》、樂團條目寫「2008 年的正規 1 輯」、英文維基把它列為三張 studio album 的第一張、MB 的 3 筆 Album 排序也排最前——**四處一致，本組序數最穩的一張。**\\n**⚠ 但只有「第一張」是穩的，「共幾張」不穩**：MB 把 2019 年的《속물들》標成 EP、英文維基卻把它算成第三張 studio album，兩邊的總數差一張。**行文不得寫這團「共有幾張正規盤」。**\\n**擋下策展層一處（曲目來源）**：`curatorWhy` 把這張寫成 2007 年 EP 之後的第一張正規盤，沒有提**這張碟本身有三分之一是舊曲**——韓文維基專條明寫 12 軌裡新曲只有 8 首，3 首來自 EP《앵콜요청금지》、1 首來自 Demo。這是可寫也該寫的事實，但也代表**不能把它寫成「全新錄音的出道正規盤」**。\\n**盤名兩種**：諺文《보편적인 노래》對 MB 那筆數位盤與英文維基的英譯《Song Is Universal》（英文維基寫 Song is Universal、MB 寫 Song Is Universal，**連英譯自己都有大小寫兩形**）。行文取諺文原題。\\n**掛名有無空格兩說**：MB 實體與 artist-credit 都寫「브로콜리 너마저」（有空格），韓國一般寫法多為無空格，兩種都要進 queryAlias（裁定 139）。卡單取有空格的寫法正確。\\n可寫的商業與獎項事實（韓文維基樂團條目有具名主辦者）：本作賣出約四萬張；收錄曲〈보편적인 노래〉獲 2010 年第 7 屆 Korean Music Awards 最優秀現代搖滾歌曲。"
+ },
+ {
+  "key": "desc4:브로콜리 너마저|졸업",
+  "artist": "브로콜리 너마저",
+  "album": "졸업",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 956623a8 的欄位：title「졸업」、artist-credit「브로콜리 너마저」、first-release-date **2010-10-25**、primary-type Album、secondary-types **空**。轄下 2 個 release、都是 Official：KR 的 CD（**2010-10-25**，label-info **Studio Broccoli**，barcode 8809267370275，**12 軌**）與 XW 的 Digital Media（**2010-11-01**，label-info **THE VAULT**，標題印英譯「Graduation」，**12 軌**）。**實體 KR Official 盤只有一筆，兩筆的日期差一週。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/956623a8-716c-4fa3-a94c-f3a0ee8c8102?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（e60b5a8d）的逐軌曲目與長度：1〈열두시 반〉3:21、2〈사랑한다는 말로도 위로가 되지 않는〉4:55、3〈변두리 소년, 소녀〉4:09、4〈커뮤니케이션의 이해〉4:31、5〈울지마〉4:30、6〈마음의 문제〉4:43、7〈이젠 안녕〉3:34、8〈할머니〉4:38、9〈환절기〉5:06、10〈졸업〉5:25、11〈다섯시 반〉5:56、**12〈다섯시 반 (reprise)〉1:16**。單片 12 軌、合計 3129 秒（52:09）。**最後那軌是第 11 軌的再現版、只有 1:16**，其餘十一軌全部在 3:21 以上，同名曲〈졸업〉5:25 排在第 10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=956623a8-716c-4fa3-a94c-f3a0ee8c8102&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1770925209：collectionName「Graduation」、artistName「Broccoli you too」、releaseDate **2010-11-01**、copyright「℗ 2010 Studio broccoli, under license to THE VAULT」、trackCount **11**。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致（都是 11）。**與 MB 的 12 軌逐位置比對：第 1 至 11 軌曲名對得上、曲序相同、逐軌長度差在 2.9 秒以內（MB 那筆是精確毫秒值、Apple 略短），Apple 缺的正是 MB 的第 12 軌〈다섯시 반 (reprise)〉。**曲名全部英譯（12:30／Can't Soothe by Love／Suburb Boy And Girl／Introduction to Communication／Don't Cry／A Matter of Mind／Bye Now／Grandma／Seasons Changing／Graduation／5:30）。",
+    "src": "https://itunes.apple.com/lookup?id=1770925209&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "韓文維基〈졸업 (브로콜리 너마저의 음반)〉專條：這是 브로콜리 너마저 的**第二張正規音盤**（原文作《두 번째 정규 음반》）；**收錄 11 首正規曲目與 1 首隱藏曲目**，另有 Demo《잔인한 사월》與《브로콜리O마저》各收一首在裡面。",
+    "src": "https://ko.wikipedia.org/wiki/%EC%A1%B8%EC%97%85_(%EB%B8%8C%EB%A1%9C%EC%BD%9C%EB%A6%AC_%EB%84%88%EB%A7%88%EC%A0%80%EC%9D%98_%EC%9D%8C%EB%B0%98)"
+   },
+   {
+    "f": "英文維基〈Graduation (Broccoli, You Too? album)〉：這是韓國獨立搖滾樂團 Broccoli, You Too? 的 **second studio album**，**released on 25 October 2010**；同名主打曲〈Graduation〉拿下 2011 年 Korean Music Awards 的 best modern rock song。Background 節記前作《Song is Universal》(2008) 之後團員 Gyepi 離團，樂團自己創了廠牌 **Studio Broccoli**；Yoon Deokwon 談同名曲時說寫的時候並不知道，做完才發現這些是他們二十幾歲時的煩惱，而能把這些全部涵蓋起來的詞就是「畢業」。Critical reception 引 IZM 的 Wi Sooji 與 Weiv 的 Lee Sooyeon 兩篇評論，後者說本作在編曲與整張的一致性上都優於前作。",
+    "src": "https://en.wikipedia.org/wiki/Graduation_(Broccoli,_You_Too%3F_album)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 653d5235 名下 13 個 release-group，primary-type=Album 且 secondary-types 為空的只有 3 筆，依 first-release-date 排序為《보편적인 노래》2008-12-09、**《졸업》2010-10-25**、《우리는 모두 실패할 것을 알고 있어요》2024-10-01——**本張排第二**。名下沒有第二筆叫《졸업》的 release-group。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=653d5235-52c8-4614-8ba1-81c11660798e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 1109560681，us，entity=album，回 29 筆、未達 200 上限）**時間軸的第一筆就是本張**：1770925209《Graduation》2010-11-01（11 軌），之後依序是 1770929811《A Cruel April - Single》2012-06-08、1770513601《No More Encore.》2012-06-22（17 軌）、1770930851《1/10 - EP》2012-12-06（4 軌）、1747822704《No More Encore - EP》2016-05-03（6 軌）、1770947670《Snobs》2019-05-17（8 軌）、1770500268《We all know we will fail》2024-10-01（12 軌）。**《No More Encore.》與《No More Encore - EP》兩筆同源近名條目確實存在，與本卡無關。**",
+    "src": "https://itunes.apple.com/lookup?id=1109560681&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡最後一軌只有一分十六秒，是前一軌〈다섯시 반〉的再現——Apple 上架時把它砍了，只剩十一軌",
+   "第一軌叫〈열두시 반〉、第十一軌叫〈다섯시 반〉，中間那九首從畢業唱到換季"
+  ],
+  "sound": "MB 記兩筆 release：KR Official CD（2010-10-25，Studio Broccoli，barcode 8809267370275）與 XW 數位（2010-11-01，THE VAULT，標題印英譯），**兩筆都是 12 軌**。全碟 3129 秒（52:09），是前作的 48 分半再拉長三分半。**十二軌裡十一軌全部在 3:21 以上、六軌超過四分半**，最後一軌〈다섯시 반 (reprise)〉1:16 是前一軌的再現、也是全碟唯一的短軌——韓文維基把它記成隱藏曲目。曲序自〈열두시 반〉3:21 起，中段〈환절기〉5:06、同名曲〈졸업〉5:25、〈다섯시 반〉5:56 三首連著放在後段，是全碟最長的三軌。廠牌從前作的 Luova Factory 換成自家的 Studio Broccoli——英文維基記這是前作之後團員 Gyepi 離團、樂團自建廠牌的結果。Apple 上架的版本把第 12 軌拿掉、只剩 11 軌，曲名全部換成英譯。",
+  "keyTracks": [
+   "졸업",
+   "다섯시 반",
+   "열두시 반"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2010。MB release-group first-release-date **2010-10-25**、其下 KR CD 的日期同為 2010-10-25、XW 數位盤記 2010-11-01，Apple us 1770925209 的 releaseDate **2010-11-01**、℗ 年份 2010，英文維基專條明寫 **released on 25 October 2010**。**四處同為 2010**，日期分歧只在 10/25（CD 與英文維基）與 11/1（數位與 Apple）之間，兩者是實體與數位上架日的差別、不是矛盾。**同名先行單曲：無。**",
+  "notes": "**探測層這張標的是 unavailable（八個店面全部 0 筆，其中 jp／us／gb／hk／tw／de／au 各回 2 筆候選但沒配上），但 Apple us 確實買得到。** 覆核結果：`us` **1770925209**（11 軌全有 previewUrl，`trackCount` 欄與曲目列都是 11，第 1 至 11 軌的曲名與曲序與 MB 逐位置對得上、長度差在 2.9 秒以內）。查不到的原因是 **Apple 把掛名寫成羅馬轉寫「Broccoli you too」、盤名換成英譯《Graduation》**，兩層都對不上卡單的諺文。**這一張同時也不在 `batch-progress/c105/apple-candidates.md` 裡（那份把它列成「目錄裡找不到」）——那份是用另一支回撈工具跑的，本次重跑藝人頁目錄端點就抓到了。不改 `previews.json`，交主線補。**\\n**⚠ 軌數以曲目列為準（裁定 175 的反向形狀）**：Apple 的 `trackCount` 欄與攤開的曲目列一致（都是 11），**不一致的是 Apple 與 MB**——MB 兩筆 release 都是 12 軌，Apple 缺的是第 12 軌〈다섯시 반 (reprise)〉。韓文維基寫「11 首正規曲目＋1 首隱藏曲目」，正好解釋這個差：**Apple 上架的是不含隱藏曲的 11 軌版**。`curatorWhy` 寫「11 軌」是照 Apple 抄的，**對實體盤來說少一軌**；行文寫軌數要指明版本，或直接寫「十一首正歌加一首隱藏曲」。\\n**「第二張正規盤」查證屬實、可以寫**：韓文維基專條寫《두 번째 정규 음반》、英文維基專條寫 second studio album、MB 的 3 筆 Album 排序本張也排第二——**三處一致。**\\n**盤名兩種**：諺文《졸업》對 Apple／英文維基的英譯《Graduation》。**《졸업》是兩個字的常用詞**，跨藝人字串比對誤中率高，配對一律走 collectionId 1770925209。\\n**廠牌兩層**：MB 的 CD 記 Studio Broccoli、數位記 THE VAULT，Apple 的 ℗ 記「Studio broccoli, under license to THE VAULT」——**三處其實是同一件事，不是三說**，可以寫成「自家廠牌 Studio Broccoli 發行、數位由 THE VAULT 代理」。\\n可寫的獎項（英文維基有具名主辦者）：同名曲獲 2011 年 Korean Music Awards 的 best modern rock song。可寫的評論來源：IZM 的 Wi Sooji、Weiv 的 Lee Sooyeon。"
+ },
+ {
+  "key": "desc2:The Black Skirts|Don't You Worry Baby (I'm Only Swimming)",
+  "artist": "The Black Skirts",
+  "album": "Don't You Worry Baby (I'm Only Swimming)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6346c2bb 的欄位：title「Don't You Worry Baby (I'm Only Swimming)」、artist-credit「**검정치마**」（諺文；藝人實體 a697464c，主名亦為諺文、sort-name Black Skirts, The）、first-release-date **2011-07-13**、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 KR/Official**：CD（2011-07-13，label-info **Doggy Rich** catno S90361C，barcode 8803581193619，12 軌）與 Digital Media（**2011-07-29**，同廠牌，12 軌）。**實體 KR Official 盤只有一筆，數位盤晚了十六天。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/6346c2bb-bcf8-4b72-a5a2-a1b91f16302d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 兩筆 release 的曲目**都用英譯曲名**（MB 這份建檔沒有留諺文原題）：1〈Goodbye〉3:03、2〈Freeloader〉2:24、3〈Love Shine〉4:19、4〈Only Son〉3:49、5〈International Love Song〉4:17、6〈Weather〉3:17、7〈Breakfast〉3:10、8〈The Music in Her〉3:33、9〈Young Love〉3:50、10〈Ariel〉4:18、11〈Chivalry〉2:45、12〈Parrot〉5:08。單片 12 軌、合計 2639 秒（43:59）。**十二軌裡十一軌都在 2:24 到 4:19 之間，只有收尾的〈Parrot〉5:08 超過五分鐘**，最短是第 2 軌〈Freeloader〉2:24。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6346c2bb-bcf8-4b72-a5a2-a1b91f16302d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "韓文維基〈Don't You Worry Baby (I'm Only Swimming)〉專條記這是 검정치마 的**第二張正規音盤**，並列出**諺文原題的曲目**：〈이별노래〉〈무임승차〉〈Love shine〉〈외아들〉〈International love song〉〈날씨〉〈아침식사〉〈음악하는 여자〉〈젊은 우리 사랑〉〈Ariel〉〈기사도〉〈앵무새〉。**十二軌、順序與 MB 的英譯完全對得上**——〈이별노래〉對 Goodbye、〈무임승차〉對 Freeloader、〈외아들〉對 Only Son、〈날씨〉對 Weather、〈아침식사〉對 Breakfast、〈음악하는 여자〉對 The Music in Her、〈젊은 우리 사랑〉對 Young Love、〈기사도〉對 Chivalry、〈앵무새〉對 Parrot，其中 Love shine、International love song、Ariel 三軌原題本來就是英文。",
+    "src": "https://ko.wikipedia.org/wiki/Don't_You_Worry_Baby_(I'm_Only_Swimming)"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1316316551：collectionName「Don't You Worry Baby (I'm Only Swimming)」（**與 MB 完全同名**）、artistName「The Black Skirts」、releaseDate **2011-07-13**、copyright「℗ 2011 DOGGYRICH FOREVER, BESPOK., under license to YG PLUS」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，**曲名與 MB 的英譯逐字相同、曲序逐位置相符**，逐軌長度與 MB 最大差 1653 毫秒（Apple 一律略長）。",
+    "src": "https://itunes.apple.com/lookup?id=1316316551&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "韓文維基〈검정치마〉（藝人條目）：《검정치마》（The Black Skirts）是韓國獨立搖滾樂團，2004 年在美國紐約以三人 punk rock 編制成軍，現在是在美僑胞創作歌手 Jo Hyu-il 一人的單人樂團。**2008 年 11 月 13 日發行首張正規音盤《201》**、以此在第 7 屆 Korean Music Awards 拿下最優秀現代搖滾音盤；**2011 年 7 月 13 日發行第二張正規音盤《Don't You Worry Baby (I'm Only Swimming)》**；到條目撰寫時為止各張專輯合計售出約五萬張以上。",
+    "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 a697464c 名下 15 個 release-group，primary-type=Album 且 secondary-types 為空的 5 筆依 first-release-date 排序為《201》2008-11-13、**《Don't You Worry Baby (I'm Only Swimming)》2011-07-13**、《TEAM BABY》2017-05-30、《THIRSTY》2019-02-12、《TEEN TROUBLES》2022-09-15——**本張排第二**。其餘 10 筆全部是 Single 或 EP，**名下沒有合輯、沒有 Live、沒有日版**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a697464c-69b1-4bbc-88cc-570c025a25e5&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈The Black Skirts〉：조휴일（Jo Hyu-il，1982 年生），以 The Black Skirts 為名的韓國獨立搖滾樂手；「In **2010**, he released his debut album, **201**, which won Best Modern Rock Album at the **2010** Korean Music Awards」，之後發表《Don't You Worry Baby (I'm Only Swimming)》(2011)、《Team Baby》(2017)、《Thirsty》(2019)、《Teen Troubles》(2022)。⚠ **英文維基把首張《201》的年份寫成 2010，韓文維基與 MB 都寫 2008-11-13**——兩邊差兩年，但兩邊都把本張列在《201》之後的第二張。",
+    "src": "https://en.wikipedia.org/wiki/The_Black_Skirts"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 365442996，us，entity=album，回 16 筆、未達 200 上限）：**1316404325《201 (Special Edition)》releaseDate 2010-03-18（13 軌）**、**1316316551《Don't You Worry Baby (I'm Only Swimming)》2011-07-13（12 軌）**、1242154383《TEAM BABY》2017-05-30（10 軌）、1558959940《THIRSTY》2019-02-12（12 軌）、1644821406《TEEN TROUBLES》2022-09-15（18 軌）。**Apple 上架的《201》是 2010 年的 Special Edition（13 軌），不是 2008 年的原盤——這正是英文維基那個 2010 年說法的來源形狀。**",
+    "src": "https://itunes.apple.com/lookup?id=365442996&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "MB 上這張碟十二軌全是英文曲名，韓文維基那份曲目卻大半是諺文——〈Goodbye〉在韓國叫〈이별노래〉",
+   "十二首歌只有最後的〈Parrot〉超過五分鐘，前面十一首擠在兩分二十四秒到四分十九秒之間"
+  ],
+  "sound": "MB 記兩筆 release、都是 KR Official、都掛 Doggy Rich：CD（2011-07-13，catno S90361C，barcode 8803581193619）與晚十六天的數位（2011-07-29），**兩筆都是 12 軌**。全碟 2639 秒（43:59）——本組最短的一張正規盤。**十二軌裡十一軌落在 2:24 到 4:19 之間**，最短〈Freeloader〉2:24，**只有收尾的〈Parrot〉5:08 超過五分鐘**，等於整張碟以短曲推進、最後放一首長的收。曲序自〈Goodbye〉3:03 起，中段〈Love Shine〉4:19、〈International Love Song〉4:17、〈Ariel〉4:18 三軌長度幾乎一樣。曲名有兩套：MB 與 Apple 都用英譯，韓文維基列的是諺文原題（〈이별노래〉〈무임승차〉〈외아들〉〈날씨〉〈아침식사〉〈음악하는 여자〉〈젊은 우리 사랑〉〈기사도〉〈앵무새〉），其中 Love shine、International love song、Ariel 三軌原題本來就是英文。這是 Jo Hyu-il 一人的單人樂團，2004 年在紐約以三人 punk 編制起家。",
+  "keyTracks": [
+   "이별노래",
+   "앵무새",
+   "International love song"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2011。MB release-group first-release-date **2011-07-13**、其下 CD 同為 2011-07-13、數位盤 2011-07-29，Apple us 1316316551 的 releaseDate **2011-07-13**（**與 MB 逐日相同**）、℗ 年份 2011，韓文維基藝人條目明寫發行日為 2011 年 7 月 13 日，英文維基把本張記為 (2011)。**五處同為 2011，四處連日期都是 7/13。****同名先行單曲：無。**⚠ 但同一位藝人 2016-01-29 有一筆單曲《EVERYTHING》、2016-03-15 有《내 고향 서울엔》，兩者都與 2017 年《TEAM BABY》的曲目同名，**與本張無關但會干擾同批另一張卡的配對**。",
+  "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面（1316316551）。** 覆核結果：這個 collectionId 在 **us** 店面同樣攤得出 12 軌、12 軌全有 previewUrl、`trackCount` 欄與曲目列都是 12、曲名與 MB 逐字相同、曲序逐位置相符、逐軌長度差在 1.7 秒內；它也列在 us 的藝人頁目錄（artistId 365442996）裡，**不是日版**。依 c105/rulings.md 第 3 條，**建議主線把店面改記成 us、id 不變**。\\n**「第二張正規盤」查證屬實、可以寫**：韓文維基藝人條目明寫 2011 年 7 月 13 日發行第二張正規音盤、英文維基把它列在《201》之後、MB 的 5 筆 Album 排序本張也排第二——**三處一致。**\\n**⚠ 但序數的參照點《201》年份兩說，行文不要提《201》的年份**：韓文維基與 MB 都記 2008-11-13，英文維基卻寫 In 2010 he released his debut album 201、並說它拿 2010 年的 Korean Music Awards；Apple 目錄上架的又是 **2010-03-18 的《201 (Special Edition)》**（13 軌）而不是 2008 年的原盤。三邊各說各話，源頭是那張 Special Edition。**本卡只需要「第二張」這個位置，不需要引《201》的年份。**\\n**曲名有兩套、而且 MB 那一套不是原題**：MB 兩筆 release 與 Apple 都只有英譯曲名，**韓文維基專條列的諺文原題才是原文**（十二軌逐位置對得上）。`keyTracks` 給的是諺文原題。行文引曲名時**要嘛全用諺文原題、要嘛註明是英譯**，不要混用。\\n**掛名分裂（本張這一側）**：本 release-group 的 artist-credit 印的是諺文《검정치마》、MB 藝人實體主名也是諺文，**只有同批 2017 年那張《TEAM BABY》的 artist-credit 印 The Black Skirts**——MB 自己兩形都有。卡單沿用池中的 The Black Skirts 正確，諺文要進 queryAlias。\\n可寫的商業事實（韓文維基藝人條目）：這位到條目撰寫時為止各張專輯合計售出約五萬張以上。"
  }
 ]
