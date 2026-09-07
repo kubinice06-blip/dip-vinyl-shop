@@ -66,8 +66,9 @@
   <div class="ctl">
     <button class="on" data-s="0">① 推門進來</button>
     <button data-s="1">② 老闆放唱片</button>
-    <button data-s="2">③ 老闆走出櫃檯</button>
-    <button data-s="3">④ 男子推門嗆聲</button>
+    <button data-s="2">③ 結帳</button>
+    <button data-s="3">④ 走到門口撞見</button>
+    <button data-s="4">⑤ 老闆出來緩頰</button>
   </div>
 
   <div class="rpg">
@@ -101,9 +102,15 @@
   // 櫃檯 x 102–307、檯面上緣 y=299（前景層從這裡開始遮住小人）、檯身下緣 400
   // 檯面器材：左喇叭挪到 103–141、唱盤 190–247、右喇叭 257–290 → 老闆站 cx 165 的空檔
   const POS = {
-    p:{ door:[48,345], browse:[150,430], mid:[175,445], leave:[205,455] },
-    o:{ counter:[165,325], aisle:[72,345], out:[86,448], between:[128,452] },
-    f:{ outside:[48,330], door:[48,338], in:[52,450] },
+    p:{ door:[48,408],        // 剛推門進來，站在門口
+        browse:[190,455],     // 自己逛（離櫃檯夠遠，不會疊到）
+        pay:[168,430],        // 結帳：站在櫃檯前（腳底 > 402 → 蓋在櫃檯上面）
+        leaving:[132,418],    // 準備離開，往門口走
+        atdoor:[128,420] },   // 在門口撞見男子（跟男子拉開，中間留給老闆）
+    o:{ counter:[165,325],    // 櫃檯後面（腳底貼著牆，被檯面擋到胸口）
+        aisle:[72,345],       // 繞出櫃檯左端
+        between:[85,452] },   // 站到兩人中間緩頰（腳底最前面 → 蓋在兩人上面）
+    f:{ outside:[42,336], door:[42,344], in:[42,396] },
   };
 
   const SPRITES = {
@@ -117,10 +124,16 @@ document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES
   document.getElementById('f').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES.foe, 96));
 
   const $ = id => document.getElementById(id);
+  // 前景層（z-index 6）無條件蓋在小人上面，所以站在櫃檯「前面」的人會被切掉頭。
+  // 用腳底 y 判斷深度：比櫃檯下緣（400）還前面的，拉到前景層之上；
+  // 而且小人彼此之間也要照深度排（不然老闆走到最前面時會被玩家蓋住）。
+  const FG_BOTTOM = 402;
+  const zOf = y => y >= FG_BOTTOM ? 10 + Math.round(y / 4) : 2;
   function put(id, group, key, instant){
     const el=$(id), q=POS[group][key], s=pc(q[0],q[1]);
     if(instant){ el.style.transition='none'; }
     el.style.left=s.left; el.style.bottom=s.bottom;
+    el.style.zIndex = zOf(q[1]);
     if(instant){ void el.offsetWidth; el.style.transition=''; }
   }
   const wait = ms => new Promise(r=>setTimeout(r,ms));
@@ -149,22 +162,36 @@ document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES
         $('anger').classList.remove('on'); $('door').src='art/shop2-door-0.png';
         await wait(300); $('notes').classList.add('on');
       } },
-    { name:'③ 老闆走出櫃檯', who:'老闆', text:'「這四張也很適合你，跟你很有緣，收下吧。」',
+    { name:'③ 結帳（五張到手）', who:'老闆', text:'「這四張也很適合你，跟你很有緣，收下吧。」',
       run: async ()=>{
-        put('p','p','mid',true); $('f').classList.add('hide');
+        put('o','o','counter',true); $('f').classList.add('hide');
         $('notes').classList.remove('on'); $('anger').classList.remove('on');
         $('door').src='art/shop2-door-0.png';
-        await ownerOut();
+        put('p','p','browse',true); await wait(80);
+        put('p','p','pay');                       // 玩家走到櫃檯前結帳
+        await wait(900);
       } },
-    { name:'④ 男子推門嗆聲', who:'男子', text:'「……這品味，也敢出來丟臉？」',
+    { name:'④ 走到門口撞見', who:'男子', text:'「……這品味，也敢出來丟臉？」',
       run: async ()=>{
-        put('p','p','leave',true); put('o','o','between',true);
-        put('f','f','outside',true); $('notes').classList.remove('on');
+        put('o','o','counter',true);              // 老闆還在櫃檯裡
+        put('p','p','pay',true); put('f','f','outside',true);
+        $('notes').classList.remove('on'); $('anger').classList.remove('on');
+        await wait(80);
+        put('p','p','leaving'); await wait(700);  // 玩家往門口走
         $('f').classList.remove('hide');
-        await doorAnim(true);
-        put('f','f','in'); await wait(880);
-        await doorAnim(false);
+        await doorAnim(true);                      // 門開，男子進來
+        put('f','f','in'); put('p','p','atdoor');
+        await wait(850); await doorAnim(false);
         $('anger').classList.add('on');
+      } },
+    { name:'⑤ 老闆出來緩頰', who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」',
+      run: async ()=>{
+        put('p','p','atdoor',true); put('f','f','in',true);
+        $('f').classList.remove('hide'); $('anger').classList.add('on');
+        $('notes').classList.remove('on'); $('door').src='art/shop2-door-0.png';
+        put('o','o','counter',true); await wait(120);
+        put('o','o','aisle');   await wait(900);   // 沿檯後往左，繞出櫃檯
+        put('o','o','between'); await wait(800);   // 走到兩人之間
       } },
   ];
 
