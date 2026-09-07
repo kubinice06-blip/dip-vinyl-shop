@@ -118,5 +118,473 @@
   "status": "full",
   "yearVerified": "一致，1975（**發行年，錄音年同為 1975**）。release-group first-release-date 1975、最早的 release 是 1975 JP 的 Iskra ISKRA-001（Official）。**錄音年查得到**：三軌的 recording relationship 都記 **1975-03-14**，與發行同年，**沒有演奏／發行落差**。之後三筆是 2006-08 的日本 CD 與 2022-04-18 的美國黑膠／全球數位。串流側沒有本張的上架版本可對照 ℗ 年，四處對照只成立三處（RG 的 first-release-date、原盤 release 的 date、錄音關係的日期），仍指向 1975。",
   "notes": "**擋下策展層一處、修正一處。**｜（一）**「創廠編號」不得寫死**：`curatorWhy` 寫「也是他自己的廠牌 Iskra 的**創廠編號** ISKRA-001」。廠牌端點查得到的只有「Iskra 名下 4 筆 release、本張的編號是 ISKRA-001、同年另有一張 ISKRA-002」——**「這家廠牌是他自營的」與「001 是創廠第一張」在資料庫端都沒有欄位可證**。**行文可以寫「編號 ISKRA-001」，不得寫「他自己的廠牌」或「創廠第一張」。**｜（二）修正：`curatorWhy` 說 2006 年 P.S.F. 重發「把 1970 年代的自由爵士自主盤直接接到 1980 年代之後的地下即興廠牌譜系上」——**廠牌與年份查證屬實**（2006-08 PSFD-8025），但「譜系」那半句是評述不是事實，行文寫廠牌與年份即可。｜（三）2022 年的兩筆是**同日發行的美國黑膠（BE-014/JOJO2）與全球數位**，不是兩次發行；`mbNote` 把它們列成兩筆是對的，但**行文寫「2022 年在美國發行」時不要說成發行兩次**。｜可以寫、而且很好用：**錄音日期 1975-03-14 與四人編制（電吉他／木管／電貝斯／鼓＋打擊）、工程師 青木幹夫 都有 relationship 背書**。｜盤名含 ASCII 斜線，三個再發版本標題在《侵蝕 (Eclipse)》《Eclipse》《ECLIPSE》之間變動，**行文提到盤名一律照卡片的《Eclipse/侵蝕》**。｜**回撈候選：本張無候選，兩店逐筆核對後皆非本碟，無固定試聽來源。**"
+ },
+ {
+  "key": "desc4:高柳昌行|April Is the Cruellest Month",
+  "artist": "高柳昌行",
+  "album": "April Is the Cruellest Month",
+  "facts": [
+   {
+    "f": "release-group ef3f2c0a 的欄位：title「April Is the Cruellest Month」、artist-credit「Masayuki Takayanagi New Direction Unit」（藝人實體 34592934 ＋ 團體實體 a46c3fb1）、first-release-date **1991**、primary-type Album、secondary-types 空。轄下 **4 個 release，四筆全部 Official**：1991 JP **April Disk AP-1（CD，4 軌）**、2007-06-27 JP Jinya Disc B-12（CD，4 軌）、2019-05-31 XW Blank Forms Editions BF-008（數位，**3 軌**）、2019-06-07 US Blank Forms Editions BF-008（12 吋黑膠，**3 軌**）。**1991 年的首版載體是 CD 不是黑膠；2019 年的兩筆比 1991／2007 兩筆少一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/ef3f2c0a-3ed3-42c0-a148-eacab86ab189?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1991 首版（April Disk AP-1）逐軌與長度：1〈We Have Existed〉10:29、2〈What Have We Given?〉6:50、3〈My Friend, Blood Shaking My Heart〉**19:46**、4〈We Have Existed [alternate take]〉10:10。**四軌裡第四軌是第一軌的另一次演奏（alternate take），2019 年的黑膠與數位版就是把這一軌拿掉、只留前三軌。** 三個曲名連讀是一句一句的英文短句，盤名本身也是一句英文（四月是最殘酷的月份）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ef3f2c0a-3ed3-42c0-a148-eacab86ab189&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1991 首版的四軌**沒有任何 recording-level relationship**：沒有錄音日期、沒有場地、沒有樂手掛名，release 的 annotation 也是空的。**這張碟的錄音年在資料庫端完全是空白。** 另一方面藝人實體 34592934 的生卒登錄為 **1932-12-22–1991-06-23**——**這張碟問世的 1991 年就是他過世的那一年。**",
+    "src": "https://musicbrainz.org/ws/2/release/a7ece6f6-8fb8-4d0c-af20-6342b4a783b3?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "串流店面 jp／us 同一個 collectionId **1660293959**：collectionName「April is the cruellest month」、artistName「Masayuki Takayanagi New Direction Unit」、releaseDate **1991-06-28**、trackCount **3**、copyright「**℗ 2019 Blank Forms Editions**」，`entity=song` 攤得出 **3 軌、3 軌全部有 previewUrl**：〈We Have Existed〉10:29、〈What Have We Given?〉6:50、〈My Friend, Blood Shaking My Heart〉19:44。**逐軌與 1991 首版的前三軌相符（長度差 2 秒內），但上架的是 2019 年那個少一軌的版本，第四軌〈We Have Existed [alternate take]〉不在上面。**",
+    "src": "https://itunes.apple.com/lookup?id=1660293959&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "廠牌端點：April Disk（label 9c0da04c）名下**只有 1 筆 release**，就是本張的 AP-1。藝人端點分頁全列 36 個 release-group、純 Album 9 個，**本張是九張裡年份最晚的一張純錄音室／非現場條目**（其後只有 2002、2012、2020 三筆）。",
+    "src": "https://musicbrainz.org/ws/2/release?label=9c0da04c-2865-4fa2-8a3e-add192cfd006&fmt=json&limit=100&inc=labels"
+   }
+  ],
+  "hookCandidates": [
+   "1991 年的首版四首裡，第四首是第一首的另一次演奏",
+   "2019 年重發時把那一首另一次演奏拿掉了，只剩三首"
+  ],
+  "sound": "1991 年 April Disk AP-1 的首版是 CD、四軌：〈We Have Existed〉10:29、〈What Have We Given?〉6:50、〈My Friend, Blood Shaking My Heart〉19:46，最後是〈We Have Existed [alternate take]〉10:10——第四軌是第一軌的另一次演奏，同一段素材在一張碟裡放了兩遍。三個曲名各自是一句英文短句，盤名也是一句英文。2007 年 Jinya Disc 的 CD 照四軌復刻；2019 年 Blank Forms Editions 的美國黑膠與全球數位版則把那一軌 alternate take 拿掉，只留前三首，串流上架的也是這三首的版本。",
+  "keyTracks": [
+   "My Friend, Blood Shaking My Heart",
+   "We Have Existed",
+   "What Have We Given?"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991（**發行年**）。release-group first-release-date 1991、最早的 release 是 1991 JP 的 April Disk AP-1（Official）。**演奏年：資料庫未登錄**——四軌零 recording relationship、annotation 空白，**這是本組五張「演奏／發行有落差但錄音年查不到」的碟之一**。串流側的 releaseDate 記 1991-06-28、℗ 欄卻是「℗ 2019 Blank Forms Editions」，**那個 ℗ 是 2019 年再發的錄製聲明，不是原盤年**。⚠ **行文不得把 1991 說成錄音年、也不得說「1970 年代的錄音」**——年代在資料庫端沒有依據。可以寫的是：1991 年既是這張碟問世的年份，也是掛名這位藝人（生卒 1932-12-22–1991-06-23）過世的年份。",
+  "notes": "**擋下策展層三處。**｜（一）**「創廠編號」不得寫**：`curatorWhy` 寫「1991 年才由 April Disk 以**創廠編號** AP-1 首次做成唱片」。廠牌端點只查得到「April Disk 名下 1 筆 release、編號 AP-1」——**只有一筆並不能證明它是創廠第一張**。**行文寫「編號 AP-1」可以，不得寫「創廠編號」。**｜（二）**「樂團全盛期」不得寫**：`curatorWhy` 說本張「屬樂團全盛期的碟」、`curatorRisk` 說是「早年錄音的延後發行」。**錄音年在資料庫端是空白**（四軌零關係），**任何「這是哪個時期的錄音」的說法都沒有來源，行文一律不寫**。｜（三）`curatorWhy` 的「2019 年**紐約的** Blank Forms Editions……把這批錄音帶進英語圈的當代前衛樂評視野」：廠牌名、編號 BF-008、2019 年的美國與全球兩筆發行**查證屬實**，但**「紐約」與「樂評視野」查不到來源，不要寫**。｜**軌數要指明版本（裁定 174）**：1991 與 2007 兩版 4 軌、2019 兩版 3 軌，**行文寫軌數必須說是哪一版**。｜**回撈候選採信但要標版本**：collectionId 1660293959（jp／us 同號）逐軌覆核成立，**但它是 2019 年那個三軌版**——**行文若同時寫「四首」與「可試聽」會自相矛盾**，寫試聽時以三軌版為準。"
+ },
+ {
+  "key": "desc4:阿部薫|スタジオ・セッション1976.3.12",
+  "artist": "阿部薫",
+  "album": "スタジオ・セッション1976.3.12",
+  "facts": [
+   {
+    "f": "release-group dbb18777 的欄位：title「スタジオ・セッション1976.3.12」、artist-credit **「阿部 薫」（姓名之間有一個半形空白）**、first-release-date **1992**、primary-type Album、secondary-types 空。轄下 **5 個 release，五筆全部 Official、全部是 CD、全部 6 軌**：1992 JP ViViD SOUND **VSCD-304**、**1999-09-15 JP ViViD SOUND VSCD-3053**、2001-11-06 JP ANY OLD TIME AOCD-1101（標題《STUDIO SESSION 1976.3.12》）、2004-02-18 JP P.J.L MTCJ 5522（《スタジオセッション1976.3.12》）、2015-04-08 JP POCS POCS-9344（《スタジオセッション 1976.3.12》）。**同一張碟在資料庫端有五個版本、四種標題寫法。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/dbb18777-64cc-4584-8731-7f4c6f1f0fdc?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1992 首版（ViViD SOUND VSCD-304）逐軌與長度：1〈PIANO〉5:34、2〈HARMONICA〉6:55、3〈HARMONICA〉6:20、4〈ALTO SAXOPHONE〉4:42、5〈ALTO SAXOPHONE〉8:48、6〈ALTO SAXOPHONE〉**44:49**。**六首的曲名就是六段各自用的樂器名，同名的重複兩次或三次；最後一軌 44:49 比前五軌加起來還長（前五軌合計 32:19）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dbb18777-64cc-4584-8731-7f4c6f1f0fdc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1992 首版的錄音關係（六軌逐軌登錄）：**錄音日期 1976-03-12、地點 Victor Big Box Studio（錄音室）**；演奏掛名逐軌對應曲名——**阿部薫 piano（1 軌）、harmonica（2 軌）、alto saxophone（3 軌）**；**錄音工程 Kunio Arai**，製作 **稲岡邦弥、Kazuo Harada、Tetsuo Fukushima**（三人皆六軌）。**盤名上的日期與錄音關係登錄的日期完全一致，而且是錄音室不是現場。**",
+    "src": "https://musicbrainz.org/ws/2/release/58ebf08e-fdf3-444c-8c53-22f6d0c9115a?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "藝人端點分頁全列 **49 個 release-group**：**Album/Live 42、Album/Compilation+Live 3、Album/Compilation 1、EP/Live 1、EP 1、純 Album（secondary-types 空）只有 1 個——就是本張。** 藝人實體 e6d03f96（Person／JP／disambiguation「Japanese alto sax player」）的生卒登錄為 **1949-05-05–1978-09-09**。**同名實體另有鼓手 4960f39f 與演員 28d6582e，本張掛的是 e6d03f96。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e6d03f96-e66c-4910-bd6a-23ee3edbb09e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側：本張**沒有任何條目**。jp 店以「阿部薫」搜到 2 筆（《The Last Recording - EP》《心に太陽》）、us 店搜「Kaoru Abe」**0 筆**，**兩邊都沒有本碟**；回撈候選清單本張標「目錄裡找不到」。**維持無固定試聽來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1660293959&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六首的曲名就是六段各自吹的樂器名，鋼琴一首、口琴兩首、中音薩克斯風三首",
+   "最後一首四十四分四十九秒，比前面五首加起來還長"
+  ],
+  "sound": "1976 年 3 月 12 日在一間錄音室裡錄的六段獨奏，1992 年才由 ViViD SOUND 以 VSCD-304 做成 CD。六首的標題就是六段用的樂器：〈PIANO〉5:34，〈HARMONICA〉6:55 與 6:20 兩段，〈ALTO SAXOPHONE〉4:42、8:48，最後一段 44:49。前五軌合計 32:19，第六軌一首就 44:49，整張的重心壓在最後那一段上。錄音關係登錄的樂器與曲名逐軌對得上：鋼琴一軌、口琴兩軌、中音薩克斯風三軌，全部由同一個人演奏。這張碟之後在 1999、2001、2004、2015 年又發過四次，六軌與曲序沒有變過，只有標題在片假名與全大寫英文之間換寫法。",
+  "keyTracks": [
+   "ALTO SAXOPHONE",
+   "PIANO",
+   "HARMONICA"
+  ],
+  "status": "full",
+  "yearVerified": "**分歧，卡片取演奏年 1976，發行年是 1992。** release-group 的 first-release-date 是 **1992**（ViViD SOUND VSCD-304 首版），**演奏年 1976-03-12 有兩重實據**：一是盤名本身把日期印在臉上，二是**六軌的 recording relationship 全部登錄 1976-03-12、地點 Victor Big Box Studio**——策展層只引了盤名，**錄音關係這一重更硬**。卡片年份取 1976 是本批年份裁定的例外條（盤名載明錄音年），**行文可以寫「1976 年 3 月 12 日錄的」，但不得寫「1976 年發行」——這張碟到 1992 年才第一次問世，中間隔了十六年。**",
+  "notes": "**擋下策展層兩處、補正一處。**｜（一）數字：`curatorRisk`／`mbNote` 都寫「轄下 **4 個** release」並逐一列出 1992／2001／2004／2015。**實際是 5 個**——漏掉 **1999-09-15 的 ViViD SOUND VSCD-3053**（同廠牌的第二次發行）。**行文若要寫再發次數，是五個版本不是四個。**｜（二）`curatorWhy` 寫「名下 49 個 release-group 裡……**其餘 48 個全部帶 Live 或 Compilation 次類型**」。**不對**：48 個裡有 **1 個是 secondary-types 為空的 EP**，不帶 Live 也不帶 Compilation。**「唯一一個 primary-type=Album 且 secondary-types 為空」這句查證屬實可以寫；「其餘全部帶 Live 或 Compilation」不得寫。**｜（三）掛名：release-group 的 credit 是「阿部 薫」（中間有半形空白），卡片寫無空白的「阿部薫」，**行文一律照卡片寫**；⚠ 另注意「薫」(U+85AB) 與「薰」(U+858B) 是兩個字，**行文一律用卡片的 U+85AB**。｜可以寫、而且是本張最硬的一段：**錄音日期、錄音室、以及「鋼琴一軌／口琴兩軌／中音薩克斯風三軌」的樂器對應都在資料庫端逐軌登錄**。｜**這是錄音室錄音不是現場**（secondary-types 空、錄音關係的地點是 Victor Big Box Studio），**行文不得寫成現場**。｜**回撈候選：本張無候選，兩店逐筆核對後皆無，無固定試聽來源。**"
+ },
+ {
+  "key": "desc4:吉沢元治|Oops!",
+  "artist": "吉沢元治",
+  "album": "Oops!",
+  "facts": [
+   {
+    "f": "release-group 38eccf2a 的欄位：title「Oops!」、artist-credit **「Yoshizawa Motoharu + Haga Takao」**（藝人實體 86f25ec7「吉沢元治」，Person／JP，生卒 **1931–1998-09-12**；第二位 fe0cd892「**芳賀隆夫**」，Person／JP，disambiguation「**improvising alto saxophonist**」）、first-release-date **1980**、primary-type Album、secondary-types 空。轄下**只有 1 個 release**：1980 JP，**label-info 是「[no label]」、catno T.H.I.S.-0200**，12 吋黑膠、3 軌、status Official。**沒有任何再發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/38eccf2a-8f58-4d85-9ea3-16040d441b67?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1980 原盤逐軌與長度：A〈R-1〉**28:52**（整個 A 面一首）、B1〈G-1〉10:50、B2〈G-2〉17:55。**三首的曲名是一個字母加編號，沒有曲題。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=38eccf2a-8f58-4d85-9ea3-16040d441b67&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1980 原盤的錄音關係（三軌逐軌登錄）：**A 面〈R-1〉錄於 1980-03-23、地點「√-R」；B 面〈G-1〉〈G-2〉錄於 1980-05-03、地點「Goodman」。** **三首來自兩個不同場地、相隔一個半月的兩場錄音——而曲名開頭的字母正好對上場地名的第一個字母（R-1 對 √-R，G-1／G-2 對 Goodman）。** 錄音關係沒有登錄樂手分工，release 的 annotation 也是空的。",
+    "src": "https://musicbrainz.org/ws/2/release/2110ce3f-c858-46df-9789-27c4343321b2?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "藝人端點分頁全列 **17 個 release-group**：純 Album（secondary-types 空）6 個、Album/Live 10 個、EP 1 個。六張純 Album 依 first-release-date 排序：**1975-07-27《割れた鏡 または 化石の鳥》、1980 本張、1986《Kozan》、1996《Uzu》、2018-01《Oh My, Those Boys!》、2020-05-20《Dreams》**。**1980 年代之前的純 Album 只有 1975 那張與本張兩個，這一點查證屬實。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=86f25ec7-bc73-4e0c-bfff-570d44d4bcd7&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側：本張**沒有任何條目**。jp 店以「吉沢元治」搜到 4 筆，**逐筆核對後只有《インランド・フィッシュ》(1329346498) 是本組另一張卡的碟，本碟不在其中**；us 店搜「Motoharu Yoshizawa」4 筆亦無本碟。回撈候選清單本張標「目錄裡找不到」。**維持無固定試聽來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1329346498&country=jp&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三首的曲名是字母加編號，而字母正好是錄那一段的場地名開頭",
+   "A 面整面一首二十八分五十二秒，B 面兩首來自一個半月後的另一場"
+  ],
+  "sound": "1980 年的一張 12 吋，廠牌欄空白、只留下 T.H.I.S.-0200 這個目錄編號，三軌。A 面整面是〈R-1〉28:52，B 面是〈G-1〉10:50 與〈G-2〉17:55。三首沒有曲題，只有一個字母加編號——而錄音關係說明了那個字母的來歷：〈R-1〉錄於 1980 年 3 月 23 日的「√-R」，〈G-1〉〈G-2〉錄於同年 5 月 3 日的「Goodman」，曲名的字母就是場地名的開頭。整張碟因此是兩場、兩地、相隔一個半月的錄音拼成的一張唱片，而且從發行到現在沒有再發過第二版。",
+  "keyTracks": [
+   "R-1",
+   "G-2",
+   "G-1"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1980（**發行年，錄音年同為 1980**）。release-group first-release-date 1980，其下唯一一筆 release 是 1980 JP、無廠牌名、catno T.H.I.S.-0200 的 12 吋黑膠（Official），**沒有再發、沒有更早的版本**。**錄音年查得到而且比發行年更細**：三軌的 recording relationship 分別記 **1980-03-23（√-R）** 與 **1980-05-03（Goodman）**，都在 1980 年內，**演奏與發行同年、無落差**。串流側沒有本張的上架版本可對照 ℗ 年。",
+  "notes": "**擋下策展層兩處，其中一處是人名。**｜（一）**人名寫錯（裁定 241／250）**：`curatorWhy`／`queryAlias` 把合奏者寫成「**芳賀敬雄**」。**資料庫端的藝人實體 fe0cd892 正名是「芳賀隆夫」**（Haga Takao）——**行文若要提這位，一律寫「芳賀隆夫」，「芳賀敬雄」不得寫**。｜（二）**樂器寫錯**：`curatorRisk` 說這是「與**鼓手** 芳賀敬雄 的二重奏」。**同一個實體的 disambiguation 寫的是「improvising alto saxophonist」（即興中音薩克斯風手）**，資料庫端沒有任何把他記成鼓手的欄位。**「鼓手」不得寫**；本張的 recording relationship 也沒有登錄誰演奏什麼，**行文不要指派樂器分工**。｜（三）可以寫、而且是本張最好的材料：**兩個錄音日期與兩個場地（1980-03-23 的「√-R」、1980-05-03 的「Goodman」）都有 relationship 背書，而且曲名的字母對得上場地名**。⚠ 但**資料庫端沒有說這是現場演出**（secondary-types 是空的），**行文只能寫「在某處錄的」，不得寫成「現場演出實況」**。｜（四）掛名：credit 是羅馬字「Yoshizawa Motoharu + Haga Takao」，卡片寫漢字「吉沢元治」；⚠ 姓有「吉沢」與「吉澤」兩種寫法，**行文一律照卡片的「吉沢」**。｜**回撈候選：本張無候選，兩店逐筆核對後皆無，無固定試聽來源。**"
+ },
+ {
+  "key": "desc4:豊住芳三郎|Cosmos Has Spirit",
+  "artist": "豊住芳三郎",
+  "album": "Cosmos Has Spirit",
+  "facts": [
+   {
+    "f": "release-group e2e14461 的欄位：title「Cosmos Has Spirit」、artist-credit **「Wadada Leo Smith / Sabu Toyozumi」**（第一位是藝人實體 11ce83c2「Wadada Leo Smith」，Person／**US**；第二位 8773fb93「豊住芳三郎」，Person／JP／1943 生）、first-release-date **1992**、primary-type Album、secondary-types 空。轄下**只有 1 個 release**：1992 JP **Scissors SCISSORS-001**，CD、4 軌，**status 是 null（不是 Official）**。**沒有再發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e2e14461-189d-4acc-9584-64a7a5a8194e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1992 原盤逐軌與長度：1〈Cosmos Has Spirit (Dedicated To Toshihiko Shimizu)〉**32:21**、2〈Basho〉10:02、3〈Safi-Sui-Pure〉8:17、4〈Sarhanna〉2:13。**第一軌 32:21 佔掉整張的大半，最後一軌只有 2:13；同名曲的標題裡直接寫著這一段是獻給某個人的。** 四軌都沒有登錄任何 recording-level relationship（無錄音日期、無場地、無樂器分工），release 的 annotation 也是空的。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e2e14461-189d-4acc-9584-64a7a5a8194e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **14 個 release-group**：純 Album（secondary-types 空）**5 個**、Album/Live 9 個。五張純 Album 依 first-release-date 排序：**1983《What Are You Talking About?》、1992 本張、1994-03-25《Two Strings Will Do It》、2003-04《The Crushed Pellet》、2017《The Conscience》**。**1990 年代的純 Album 有兩張（1992 本張與 1994 那張），不是一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8773fb93-87fa-425b-b2cc-2600aa9a71ae&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌端點：Scissors（label 93eb2d6e）名下**只有 1 筆 release**，就是本張的 SCISSORS-001。串流側本張**沒有任何條目**：jp 店以「豊住芳三郎」搜到 4 筆、us 店以「Sabu Toyozumi」搜到 6 筆，**逐筆核對後都不是本碟**；回撈候選清單本張標「目錄裡找不到」。**維持無固定試聽來源狀態。**",
+    "src": "https://musicbrainz.org/ws/2/release?label=93eb2d6e-699a-42bd-90b1-258025fa2907&fmt=json&limit=100&inc=labels"
+   }
+  ],
+  "hookCandidates": [
+   "四首裡第一首就三十二分二十一秒，最後一首只有兩分十三秒",
+   "同名的那一首在標題裡直接寫著是獻給誰的"
+  ],
+  "sound": "1992 年 Scissors SCISSORS-001，一張 CD、四軌，發行到現在沒有第二版。開頭的同名曲〈Cosmos Has Spirit (Dedicated To Toshihiko Shimizu)〉一首就 32:21，標題括號裡直接寫著這一段獻給誰；接著是〈Basho〉10:02、〈Safi-Sui-Pure〉8:17，收尾的〈Sarhanna〉只有 2:13。四首的長度呈階梯狀一路縮短，最後一首連前一首的三分之一都不到。曲名分成兩路，一路是日本的地名人名（〈Basho〉），一路是拼寫上看不出語言的造字（〈Safi-Sui-Pure〉〈Sarhanna〉）。",
+  "keyTracks": [
+   "Cosmos Has Spirit (Dedicated To Toshihiko Shimizu)",
+   "Basho",
+   "Sarhanna"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1992（**發行年**）。release-group first-release-date 1992，其下唯一一筆 release 是 1992 JP 的 Scissors SCISSORS-001，**status 欄是 null 不是 Official**（自主小廠常見，不影響身分）。**演奏年：資料庫未登錄**——四軌零 recording relationship、annotation 空白，**行文不得把 1992 說成錄音年**，只能寫發行年。串流側沒有本張的上架版本可對照 ℗ 年，四處對照只成立兩處（RG 的 first-release-date 與唯一 release 的 date），仍指向 1992。",
+  "notes": "**擋下策展層兩處。**｜（一）極值：`curatorWhy` 寫「他名下 14 個 release-group 裡純 Album 只有 5 個，**1990 年代只有這一張**」。**前半對、後半錯**——同一份目錄裡 **1994-03-25 的《Two Strings Will Do It》也是 secondary-types 為空的 Album**，1990 年代因此有兩張。**「1990 年代只有這一張」不得寫**；要寫只能寫「1990 年代的兩張之一」。｜（二）**「創廠編號」不得寫**：`curatorWhy` 寫「以**創廠編號** SCISSORS-001 發行」。廠牌端點只查得到「Scissors 名下 1 筆 release、編號 SCISSORS-001」，**一筆不能證明是創廠第一張**；**行文寫「編號 SCISSORS-001」可以，不得寫「創廠」**。｜（三）`curatorWhy` 的「豊住 從 1970 年代起就是日本自由即興與芝加哥 AACM 圈之間的固定通道」是人事敘事，**資料庫端查不到，不要寫**。｜（四）掛名：credit 是「Wadada Leo Smith / Sabu Toyozumi」二人平列、**而且領銜的是美國那一位**，卡片掛在 豊住芳三郎 名下是策展判斷；**行文不得寫成「他一個人的碟」，也不要把合作者的名字寫成主角**。｜（五）**別寫時間以外的演奏細節**：四軌有長度可用，但**沒有錄音日期、場地與樂器分工**，行文不得寫「某年某地錄的」或誰吹什麼。｜**素材只夠 120–180 字**：可寫的事實格只有「四軌曲名與長度」「單一版本無再發」「目錄位置」三格，**status 標 partial**。｜**回撈候選：本張無候選，兩店逐筆核對後皆無，無固定試聽來源。**"
+ },
+ {
+  "key": "desc4:富樫雅彦|ソング・フォー・マイセルフ",
+  "artist": "富樫雅彦",
+  "album": "ソング・フォー・マイセルフ",
+  "facts": [
+   {
+    "f": "release-group 29122404 的欄位：title「ソング・フォー・マイセルフ」、artist-credit「富樫雅彦」（單人；藝人實體 77de7e8d，Person／JP，生卒 **1940-03-22–2007-08-22**）、first-release-date **1974**、primary-type Album、secondary-types 空。轄下 **4 個 release，四筆全部 Official、全部 4 軌**：1974 JP **EAST WIND EW-7006**（12 吋黑膠，release 標題是英文《Song For Myself》）、2000-06-01 JP EAST WIND PHCF-8001（CD，片假名標題）、2002-09-25 JP EAST WIND UCCJ-9008（CD，《Song for Myself》）、**2015-02-04 JP EAST WIND UCCJ-9136（CD，片假名標題）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/29122404-da7c-325e-9815-4f14edb7cc72?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1974 原盤（EAST WIND EW-7006）逐軌與長度：A1〈Haze〉9:54、A2〈Fairytale〉10:52、B1〈Song For Myself〉8:10、B2〈Song For My Friends〉11:37。**四首每首都在八到十二分鐘之間，是四段等重的長篇，沒有小品。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=29122404-da7c-325e-9815-4f14edb7cc72&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1974 原盤的錄音關係（逐軌登錄，日期一律 **1974**）：**富樫雅彦 percussion ＋ drums (drum set) 四軌全員**；此外 **A1〈Haze〉有 渡辺貞夫 flute、A2〈Fairytale〉有 佐藤允彦 piano、B2〈Song For My Friends〉有 菊地雅章 piano**。**四軌裡只有 B1〈Song For Myself〉一軌是他一個人；另外三軌各有一位客座，而且三軌的客座各不相同。** 未登錄錄音場地。",
+    "src": "https://musicbrainz.org/ws/2/release/884a13f8-64cc-446b-be59-2652c9880b4e?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "串流店面 jp 的 collectionId **1467950255**：collectionName「ソング・フォー・マイセルフ」、artistName「富樫雅彦」、releaseDate **1976-01-01**、trackCount 4、copyright「℗ **1976** Universal Classics & Jazz」，`entity=song` 攤得出 **4 軌、4 軌全部有 previewUrl**（〈ヘイズ〉9:48／〈フェアリー・テイル〉10:48／〈ソング・フォー・マイセルフ〉8:07／〈ソング・フォー・マイ・フレンズ〉11:39），**逐位置與 1974 原盤相符、長度差都在 6 秒內**。**但店面把年份記成 1976，與 release-group 的 1974 差兩年。** us 店 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=1467950255&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **55 個 release-group**：純 Album（secondary-types 空）**35 個**、Album/Live 18、Album/Compilation 1、Album/Soundtrack 1。三十五張純 Album 依 first-release-date 排序，**本張排第 4**（前面是 1969《ミュージカル・プレイ・イン・ジャズ》、1971《Poesy: The Man Who Keeps Washing His Hands》、1971《牡牛座の詩》），**不是他最早的長篇**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=77de7e8d-cbc5-417a-975e-1d28c7ba6a60&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "四首裡只有同名的那一首真的是一個人，另外三首各有一位客座",
+   "三位客座三首各換一位，兩位彈鋼琴、一位吹長笛"
+  ],
+  "sound": "1974 年 EAST WIND EW-7006 的原盤是一張 12 吋、四軌，四首都在八到十二分鐘之間：〈Haze〉9:54、〈Fairytale〉10:52、〈Song For Myself〉8:10、〈Song For My Friends〉11:37。錄音關係逐軌登錄的編制說明了盤名的用法——打擊與鼓四軌全員，但〈Haze〉多一支長笛、〈Fairytale〉與〈Song For My Friends〉各多一台鋼琴，四首裡只有同名的〈Song For Myself〉是他一個人。三位客座在三首裡各出現一次，沒有人跨兩首。這四軌與曲序之後在 2000、2002、2015 年的三次再發裡沒有變過，只有盤名在片假名與英文之間換寫法。",
+  "keyTracks": [
+   "Song For Myself",
+   "Haze",
+   "Song For My Friends"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974（**發行年，錄音年同為 1974**）。release-group first-release-date **1974**、最早的 release 是 1974 JP 的 EAST WIND EW-7006（Official），另外三筆是 2000-06-01、2002-09-25、2015-02-04 的再發。**錄音年查得到**：四軌的 recording relationship 都記 **1974**，與發行同年、無落差。⚠ **串流側 jp 的 1467950255 把 releaseDate 記成 1976-01-01、℗ 欄也寫 1976，比原盤晚兩年**——依裁定 91／95 以 release-group 為準取 **1974**，**行文不得寫 1976**。",
+  "notes": "**擋下策展層三處，其中一處是全張定性。**｜（一）**「獨奏碟」是錯的**：`curatorWhy` 寫「1969 年……之後的**獨奏碟**……是這條線最常被引用的『**一個人的打擊樂**』錄音」。**錄音關係逐軌登錄的編制是：四軌裡只有〈Song For Myself〉一軌是他一個人，〈Haze〉有 渡辺貞夫 的長笛、〈Fairytale〉有 佐藤允彦 的鋼琴、〈Song For My Friends〉有 菊地雅章 的鋼琴。** **「獨奏碟」「一個人的打擊樂」不得寫**；要寫只能寫「四首裡只有同名那首是獨奏」。｜（二）`curatorWhy` 的「**1969 年下半身癱瘓、改以左手鈸與小鼓重新設計打擊法**」是生平敘事，**資料庫端沒有任何欄位可引，行文一律不得寫**。｜（三）數字：`curatorRisk`／`mbNote` 寫「轄下 **3 個** release」。**實際是 4 個**——漏掉 **2015-02-04 的 EAST WIND UCCJ-9136**。**行文若寫再發次數，是三次再發（2000／2002／2015）。**｜（四）序位：本張在藝人目錄三十五張純 Album 裡排第 4，**不得寫成「第一張」或「最早的長篇」**。｜（五）人名可以寫：渡辺貞夫、佐藤允彦、菊地雅章 三位都有 relationship 背書，**但要標明各自只出現在哪一首**。｜**回撈候選採信**：collectionId 1467950255（jp）逐軌覆核成立（4 軌對 4 軌、長度差 6 秒內），**是可用的固定試聽來源**；但**該筆的年份欄是 1976，行文取 1974**。"
+ },
+ {
+  "key": "desc4:富樫雅彦|スピリチュアル・ネイチャー",
+  "artist": "富樫雅彦",
+  "album": "スピリチュアル・ネイチャー",
+  "facts": [
+   {
+    "f": "release-group e35ca460 的欄位：title「スピリチュアル・ネイチャー」、artist-credit「富樫雅彦」（單人）、first-release-date **1975**、primary-type Album、secondary-types 空。轄下 **3 個 release，三筆全部 Official、全部 5 軌**：1975 JP **EAST WIND EW 8013**（12 吋黑膠）、2000-06-01 JP EAST WIND PHCF-8002（CD，release 標題是英文《Spiritual Nature》）、2015-02-04 JP EAST WIND UCCJ-9143（CD，片假名標題）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e35ca460-d15f-3eee-8dc9-a362c8501665?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1975 原盤（EAST WIND EW 8013）逐軌與長度：A1〈ビギニング〉4:03、A2〈ムーヴィング〉13:44、A3〈オン・ザ・フットパス (畦道にて)〉4:58、B1〈スピリチュアル・ネイチャー〉**22:37**、B2〈エピローグ〉**1:13**。**B 面就是一首 22:37 的同名曲加一首 1:13 的收尾；整張最長與最短的兩首並排在同一面。** 第三軌的標題自帶漢字副題（畦道にて）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e35ca460-d15f-3eee-8dc9-a362c8501665&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1975 原盤的五軌**沒有任何 recording-level relationship**：無錄音日期、無場地、**無樂器與樂手分工**，release annotation 也是空的。**這張碟的編制在資料庫端是空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/c8d75652-aa26-4f0e-860f-ca0511ea7e35?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "串流店面 jp 的 collectionId **1443860040**：collectionName「Spiritual Nature」、artistName「富樫雅彦」、releaseDate **1975-08-25**、trackCount 5、copyright「℗ **1975** Universal Classics & Jazz」，`entity=song` 攤得出 **5 軌、5 軌全部有 previewUrl**（〈ビギニング〉4:05／〈ムーヴィング〉13:46／〈オン・ザ・フット・パス(畦道にて)〉4:59／〈スピリチュアル・ネイチャー〉22:43／〈エピローグ〉1:16），**逐位置與原盤相符、長度差都在 6 秒內，年份也與 release-group 一致**。**us 店同一個號 0 筆。**",
+    "src": "https://itunes.apple.com/lookup?id=1443860040&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 55 個 release-group、純 Album 35 個。**再發次數的橫向比較**：本張轄下 3 個 release（原盤＋2 次再發），同一位藝人的《リングス》(1976) 與《ソング・フォー・マイセルフ》(1974) **各有 4 個 release（原盤＋3 次再發）**。**本張不是他 1970 年代再發最多的一張。** 另注意目錄裡有近名別碟 **1982《スピリチュアル・モーメンツ》(1a821970)**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=77de7e8d-cbc5-417a-975e-1d28c7ba6a60&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "B 面只有兩首：二十二分半的同名曲，加上一分十三秒的收尾",
+   "五首裡只有第三首帶漢字副題，寫的是田埂"
+  ],
+  "sound": "1975 年 EAST WIND EW 8013 的原盤是一張 12 吋、五軌。A 面三首：〈ビギニング〉4:03 開場、〈ムーヴィング〉13:44、〈オン・ザ・フットパス (畦道にて)〉4:58；B 面只有兩首，同名曲〈スピリチュアル・ネイチャー〉22:37 幾乎佔滿一整面，再用 1:13 的〈エピローグ〉收尾。整張最長的一首與最短的一首因此並排在同一面上，長度差近二十倍。曲名清一色是片假名的外來語，只有第三首多了一個漢字副題「畦道にて」。2000 年與 2015 年的兩次 CD 再發都是同樣五軌、同樣曲序，串流上架的也是這五軌。",
+  "keyTracks": [
+   "スピリチュアル・ネイチャー",
+   "ムーヴィング",
+   "エピローグ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975（**發行年**）。release-group first-release-date 1975、最早的 release 是 1975 JP 的 EAST WIND EW 8013（Official），另兩筆是 2000-06-01 與 2015-02-04 的再發。**演奏年：資料庫未登錄**（五軌零 recording relationship），**行文不得把 1975 說成錄音年**。串流側 jp 的 1443860040 releaseDate 記 **1975-08-25**、℗ 欄「℗ 1975」，**與 release-group 一致，這是本組少數店面年份不打架的一張**。四處對照後年份是 1975。",
+  "notes": "**擋下策展層三處。**｜（一）極值：`curatorWhy` 寫「是他 1970 年代中期**最常被再版的一張**——2000 年與 2015 年各重發一次」。**兩次再發查證屬實，但『最常被再版』不成立**——同一位藝人的《ソング・フォー・マイセルフ》與《リングス》**各有三次再發**，都比本張多。**「最常被再版」不得寫。**｜（二）編制：`curatorWhy` 寫「**編制從獨奏擴到大編組**」。**本張五軌零 recording relationship，資料庫端查不到任何樂手或樂器**；而且前一張《ソング・フォー・マイセルフ》本身也不是全張獨奏（見該卡）。**「從獨奏擴到大編組」不得寫，行文不要描述編制人數。**｜（三）`curatorWhy` 說「Apple jp 店的條目也是這張」而 `curatorRisk` 說「us 店 0 筆」——**us 店確實 0 筆，這半句對**；但要注意同一位藝人的《ギルド・フォー・ヒューマン・ミュージック》在 **us 店查得到**（見該卡），**不要把「他的碟在 us 店都沒有」寫成通則**。｜（四）近名別碟：目錄裡另有 1982《スピリチュアル・モーメンツ》，**行文提到盤名時不要與它混寫**。｜**回撈候選採信**：回撈清單給本張列了 6 個候選，**逐筆攤開後只有 `1443860040` 是本碟**（5 軌逐位置相符、長度差 6 秒內）；其餘 5 筆全部駁回——`1444096041`《Rings》12 軌是同一位藝人的《リングス》（本組另一張卡，見該卡）、`1853786046`《C·P·U》2 軌是三人合掛的別碟、`1467950255`《ソング・フォー・マイセルフ》4 軌是本組另一張卡、`1853787079`《Guild for Human Music》6 軌是本組另一張卡、`1853786285`《Story of Wind Behind Left》6 軌是目錄裡 1975-11 的另一張碟。**這五筆與本張的五軌無一同名。**"
+ },
+ {
+  "key": "desc4:富樫雅彦|ギルド・フォー・ヒューマン・ミュージック",
+  "artist": "富樫雅彦",
+  "album": "ギルド・フォー・ヒューマン・ミュージック",
+  "facts": [
+   {
+    "f": "release-group 868a9b1b 的欄位：title「ギルド・フォー・ヒューマン・ミュージック」、artist-credit「富樫雅彦」（單人）、first-release-date **1976**、primary-type Album、secondary-types 空。轄下 **2 個 release，兩筆都 Official、都是 6 軌**：1976 JP **DENON YX-7504-ND**（12 吋黑膠）、2000-06-21 JP **Columbia COCP-30975**（CD）。**兩筆的標題都是片假名，沒有英文題的版本。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/868a9b1b-3222-4210-9b0d-104f7a233e6e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1976 原盤（DENON YX-7504-ND）逐軌與長度：A1〈First Expression〉8:07、A2〈Second Expression〉4:29、A3〈Third Expression〉8:15、B1〈Fourth Expression〉6:45、B2〈Fifth Expression〉2:44、B3〈Sixth Expression〉10:18。**六首的曲名就是第一到第六個 Expression，沒有一首有別的標題；長度從 2:44 到 10:18 不等，兩面各三首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=868a9b1b-3222-4210-9b0d-104f7a233e6e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1976 原盤的錄音關係（六軌逐軌登錄）：**錄音時間 1976-05、地點「日本コロムビア第1スタジオ」（錄音室）**。**六軌全部指向同一個月、同一間錄音室**；未登錄樂手分工，release annotation 空白。",
+    "src": "https://musicbrainz.org/ws/2/release/de76401b-0736-42ce-886f-5e7d310a313d?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "串流側**兩店都查得到，collectionId 都是 1853787079**：collectionName「Guild for Human Music」、artistName jp 店「富樫雅彦」／us 店「Masahiko Togashi」、releaseDate **1976-11-25**、trackCount 6、copyright「℗ 1976 Nippon Columbia Co., Ltd./NIPPONOPHONE」，`entity=song` 攤得出 **6 軌、6 軌全部有 previewUrl**（First 8:04／Second 4:23／Third 8:20／Fourth 6:42／Fifth 2:46／Sixth 10:16），**逐位置與原盤相符、長度差都在 6 秒內**。",
+    "src": "https://itunes.apple.com/lookup?id=1853787079&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "同名的團體實體確實存在：藝人 **8d4b5168「富樫雅彦とギルド・フォー・ヒューマン・ミュージック」（Group，life-span 未登錄）**，但**本 release-group 的 artist-credit 掛的是單人「富樫雅彦」，不是那個團體實體**。藝人端點分頁全列 55 個 release-group、純 Album 35 個，1976 年有兩張（本張與《リングス》）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=77de7e8d-cbc5-417a-975e-1d28c7ba6a60&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "六首的曲名就是第一到第六個 Expression，一首別的標題都沒有",
+   "六首在同一個月、同一間錄音室錄完"
+  ],
+  "sound": "1976 年 DENON YX-7504-ND 的原盤是一張 12 吋、六軌，兩面各三首。六首的標題就是〈First Expression〉到〈Sixth Expression〉，一路編號下去，沒有任何一首另有題名。長度不平均：開頭 8:07、第二首縮到 4:29、第三首回到 8:15，B 面 6:45、2:44，最後以全片最長的 10:18 收尾，最長與最短差近四倍。錄音關係把六軌全部指向 1976 年 5 月的同一間錄音室，是一次錄完的一張碟。2000 年 Columbia 的 CD 再發照六軌復刻，串流上架的也是這六軌。",
+  "keyTracks": [
+   "Sixth Expression",
+   "First Expression",
+   "Fifth Expression"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976（**發行年，錄音年同為 1976**）。release-group first-release-date 1976、最早的 release 是 1976 JP 的 DENON YX-7504-ND（Official），另一筆是 2000-06-21 的 Columbia CD。**錄音年查得到**：六軌的 recording relationship 都記 **1976-05**，與發行同年、無落差。串流側兩店的 1853787079 releaseDate 記 **1976-11-25**、℗ 欄「℗ 1976」，**與 release-group 同年**（月日更細但不衝突）。四處對照後年份是 1976。",
+  "notes": "**擋下策展層兩處。**｜（一）`curatorWhy` 寫「也是他把自己的常設編組**命名為 Guild for Human Music 的起點**」。**資料庫端只查得到「同名的團體實體 8d4b5168 存在、life-span 空白」，而且本張的 artist-credit 掛的是單人不是那個團體**——**「起點」「命名」在資料庫端無法驗證，行文不得寫**；要提那個編組只能寫「後來有一個同名的編組」。｜（二）店面：`curatorRisk`／`curatorWhy` 寫「Apple：collectionId 1853787079（jp 店），**us 店 0 筆**」。**不對——us 店同一個 collectionId 開得出來，6 軌全部有試聽**，只是 artistName 顯示羅馬字。**行文不要寫「只有日本店有」。**｜（三）可以寫：**錄音月份 1976-05 與錄音室名稱有 relationship 背書**；但**沒有樂手分工，行文不得寫編制人數或誰演奏什麼**。｜（四）盤名：兩個版本都用片假名，英文《Guild for Human Music》只出現在店面側，**行文提盤名照卡片寫**。｜**回撈候選採信**：回撈清單給本張列了 8 個候選，**逐筆攤開後只有 `1853787079` 是本碟**（6 軌逐位置相符）；其餘 7 筆全部駁回——`1443860040`《Spiritual Nature》5 軌、`1444096041`《Rings》12 軌、`1467950255`《ソング・フォー・マイセルフ》4 軌是本組另外三張卡，`1746265440`《Twilight》3 軌是二人合掛的 1977 年別碟、`1853786046`《C·P·U》2 軌、`1853786806`《Sketch》4 軌、`1853786431`《Motion》4 軌是目錄裡的其他碟，**七筆與本張的六個 Expression 無一同名**。"
+ },
+ {
+  "key": "desc4:富樫雅彦|リングス",
+  "artist": "富樫雅彦",
+  "album": "リングス",
+  "facts": [
+   {
+    "f": "release-group f97fb312 的欄位：title「リングス」、artist-credit「富樫雅彦」（單人）、first-release-date **1976**、primary-type Album、secondary-types 空。轄下 **4 個 release，四筆全部 Official、全部 12 軌**：1976 JP **EAST WIND EW-9001～2**（**兩張 12 吋黑膠、每張 6 軌**）、2001-06-01 JP EAST WIND PHCF-8003（CD，release 標題是英文《Rings》）、2002-09-25 JP EAST WIND UCCJ-9010（CD）、2015-02-04 JP EAST WIND UCCJ-9194（CD）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f97fb312-8fdf-4229-b213-3092a7dd258a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1976 原盤（EW-9001～2）逐軌與長度：第一張 A1〈リング1〉7:28、A2〈リング2〉6:04、A3〈リング3〉6:02、B1〈リング4〉6:45、B2〈リング5〉4:29、B3〈リング6〉5:54；第二張 C1〈リング7〉**15:23**、C2〈リング8〉**1:33**、D1〈リング9〉6:54、D2〈リング10〉4:03、D3〈リング11〉4:35、D4〈リング12〉3:37。**十二首全部叫「リング」加編號，一到十二號一路排下去；第三面把全片最長的 15:23 與最短的 1:33 排在一起。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f97fb312-8fdf-4229-b213-3092a7dd258a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1976 原盤的錄音關係（十二軌逐軌登錄）：**演奏掛名 富樫雅彦、錄音時間 1975-11**（十二軌全部）；**錄音工程 David Baker 與 鈴木良博（十二軌）**；**其中一軌另記 1975-07-14 於「Nukaji Hill」的追加錄音（Masaaki Sasada 與 Seiichi Yoshida 掛 additional／assistant）**。**主錄音是 1975 年 11 月，唱片是 1976 年才發——演奏年與發行年差一年。**",
+    "src": "https://musicbrainz.org/ws/2/release/25b29512-a54d-4a74-aadd-89964752ef66?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "串流店面 jp 的 collectionId **1444096041**：collectionName「Rings」、artistName「富樫雅彦」、releaseDate **1976-10-25**、trackCount **12**、copyright「℗ 1976 Universal Classics & Jazz」，`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名是〈リング1〉到〈リング12〉、**逐位置與 1976 原盤相符、長度差都在 8 秒內**。**這一筆就是本張，不是別碟。**",
+    "src": "https://itunes.apple.com/lookup?id=1444096041&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 55 個 release-group、純 Album 35 個；**1976 年有兩張純 Album（本張與《ギルド・フォー・ヒューマン・ミュージック》），分屬 EAST WIND 與 DENON 兩家廠牌**。再發次數：本張 3 次（2001／2002／2015），與《ソング・フォー・マイセルフ》同為他 1970 年代再發最多的一組。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=77de7e8d-cbc5-417a-975e-1d28c7ba6a60&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "兩張黑膠十二首，全部叫「リング」加編號，從一號排到十二號",
+   "第三面把最長的十五分二十三秒與最短的一分三十三秒排在一起"
+  ],
+  "sound": "1976 年 EAST WIND EW-9001～2 的原盤是兩張 12 吋、每張六軌共十二軌。十二首沒有曲題，只有〈リング1〉到〈リング12〉的編號。長度分佈很不平均：前六首都在四到七分半之間，第三面一開頭就是全片最長的〈リング7〉15:23，緊接著是全片最短的〈リング8〉1:33，落差近十倍；第四面再回到三到七分鐘的尺度收尾。錄音關係把十二軌指向 1975 年 11 月，另有一軌帶著同年 7 月 14 日在另一處的追加錄音，工程掛了兩個名字。2001、2002、2015 年的三次 CD 再發都照十二軌復刻。",
+  "keyTracks": [
+   "リング7",
+   "リング8",
+   "リング1"
+  ],
+  "status": "full",
+  "yearVerified": "**卡片取發行年 1976，演奏年是 1975-11。** release-group first-release-date 1976、最早的 release 是 1976 JP 的 EAST WIND EW-9001～2（Official），之後 2001／2002／2015 三次再發。**演奏年這次查得到**：十二軌的 recording relationship 全部記 **1975-11**，另有一軌帶 **1975-07-14** 的追加錄音——**演奏在 1975 年、唱片在 1976 年，差一年**。策展層的 `mbNote` 只寫「1976＝發行年」、沒有交代錄音年，**行文不得把 1976 說成錄音年**；要提年份寫「1975 年 11 月錄、1976 年發行」。串流側 jp 的 1444096041 releaseDate 記 1976-10-25、℗ 欄 1976，與發行年一致。",
+  "notes": "**擋下策展層兩處，其中一處是回撈的反向誤判。**｜（一）**⚠ 最重的一處：`curatorRisk` 寫「Apple：jp／us 兩店搜『富樫雅彦 リングス』『Masahiko Togashi Rings』皆 0 筆……唯獨這張雙片裝沒有，試聽預期沒有」——這是誤判。** jp 店的 **collectionId `1444096041`《Rings》就是本張**：12 軌、曲名〈リング1〉到〈リング12〉、逐位置與 1976 原盤相符、長度差 8 秒內、℗ 1976。**該筆在回撈清單裡被列成《スピリチュアル・ネイチャー》與《ギルド》的候選，實際上是這一張的。採信：本張有固定試聽來源（jp 店 1444096041），行文不得寫「查不到試聽」。**｜（二）極值：`curatorWhy` 寫「也是這條線上**再發次數最多**的一張——2001、2002、2015 三次重發」。**三次再發查證屬實，但同一位藝人的《ソング・フォー・マイセルフ》也是三次**（2000／2002／2015），**「最多」不成立，不得寫**。｜（三）`curatorWhy` 的「**他 1970 年代規模最大的一次錄音**」：資料庫端只能證明「這是兩張一組、十二軌」，**「規模最大」是評述不得寫**；寫「兩張黑膠十二軌」即可。｜（四）年份：**行文必須把 1975-11 的錄音與 1976 的發行分開寫**（見 yearVerified）。｜（五）人名：錄音工程 David Baker、鈴木良博 有 relationship 背書可寫，**但沒有登錄任何合奏樂手，行文不得寫編制**。"
+ },
+ {
+  "key": "desc4:山下洋輔トリオ|Frozen Days",
+  "artist": "山下洋輔トリオ",
+  "album": "Frozen Days",
+  "facts": [
+   {
+    "f": "release-group e960fdda 的欄位：title「Frozen Days」、artist-credit「山下洋輔トリオ」（團體實體 404e6f08，Group，**life-span 1966 – 1983-12-31、ended true**）、first-release-date **1975**、primary-type Album、secondary-types 空。轄下**只有 1 個 release**：1975 JP **CROWN，catno「JAW 1001」**，黑膠、5 軌、Official。**沒有任何再發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e960fdda-730a-4873-b646-66fe115c4b94?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1975 原盤逐軌：A1〈Prophase〉、A2〈Double Helix〉、A3〈Chiasma〉、B1〈Interphase〉、B2〈Mitochondria〉。**五首全部沒有登錄長度。** **五個曲名全部是細胞生物學的名詞（前期、雙螺旋、交叉、間期、粒線體），整張碟的曲名是一組同一主題的術語。** ⚠ 其中〈Chiasma〉與這個三重奏 1976 年的另一張碟同名。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e960fdda-730a-4873-b646-66fe115c4b94&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1975 原盤的五軌**沒有任何 recording-level relationship**：無錄音日期、無場地、無樂手掛名，release annotation 也是空的。",
+    "src": "https://musicbrainz.org/ws/2/release/c9c619b5-95fe-4bb5-8f25-0ff624ba4d01?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "廠牌端點：CROWN（label aed4df6c）名下共 **676 筆 release**，其中 catno 帶「JAW」的**只有兩筆，而且都是 1975 年**：**JAW 1001《Frozen Days》** 與 **JAW 2001 - 2《Up-To-Date》**。**資料庫端沒有名為「JAW」的獨立廠牌實體，JAW 只是 CROWN 底下的目錄編號前綴。**",
+    "src": "https://musicbrainz.org/ws/2/release?label=aed4df6c-8d6c-4b97-b949-0f1adb239f1a&fmt=json&limit=100&inc=labels"
+   },
+   {
+    "f": "藝人端點分頁全列 **17 個 release-group**：純 Album（secondary-types 空）**11 個**、Album/Live 5、Album/Soundtrack 1。十一張純 Album 依 first-release-date 排序：1971《イントロデューシング・タケオ・モリヤマ》、**1975《Up-To-Date》、1975《Frozen Days》**、1976《Chiasma》、1976《Montreux Afterglow》、1977《Arashi》、1977《Inner Space》、1978《Umbrella Dance》、1980《A Tribute To Mal Waldron》、1990《Ghosts By Albert Ayler》、2015《トリオ・バイ・トリオ・プラス・ワン（ライヴ）》。**1975 年有兩張，兩張都只記到年、記不到月日。** 串流側本張兩店皆無條目（jp 搜「山下洋輔トリオ」7 筆、us 搜「Yosuke Yamashita Trio」21 筆，逐筆核對後皆非本碟）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=404e6f08-fc84-4b89-86c6-64a72d57d018&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "五首的曲名全部是細胞生物學的術語，從前期排到粒線體",
+   "其中一首的曲名，隔年變成了這個三重奏另一張碟的盤名"
+  ],
+  "sound": "1975 年 CROWN 以 JAW 1001 發的一張黑膠，五軌，發行到現在沒有第二版。五首的曲名是一整組細胞生物學術語：〈Prophase〉（前期）、〈Double Helix〉（雙螺旋）、〈Chiasma〉（交叉）、〈Interphase〉（間期）、〈Mitochondria〉（粒線體），A 面三首 B 面兩首，整張碟的命名邏輯是把顯微鏡下的名詞排成一份曲目單。其中〈Chiasma〉這個字隔年成了同一個三重奏另一張碟的盤名。這五軌沒有留下長度紀錄，錄音日期與場地在資料庫端也是空白。",
+  "keyTracks": [
+   "Prophase",
+   "Chiasma",
+   "Mitochondria"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1975（**發行年**）。release-group first-release-date 1975，其下唯一一筆 release 是 1975 JP 的 CROWN／JAW 1001（Official），**沒有再發、沒有更早的版本**。**演奏年：資料庫未登錄**（五軌零 recording relationship），**行文不得把 1975 說成錄音年**。**同一年同一個前綴另有一張 JAW 2001 - 2《Up-To-Date》，兩張都只記到年、無法定先後。** 串流側沒有本張的上架版本可對照 ℗ 年。",
+  "notes": "**擋下策展層兩處，並要求本張不寫時間。**｜（一）**廠牌敘事不得寫**：`curatorWhy` 寫「1975 年替 Crown 唱片**新開的爵士副標 JAW** 錄的第一張——目錄編號 JAW 1001 就是那條副標的**創廠號**」。**資料庫端沒有名為 JAW 的廠牌實體**，label 欄記的是 CROWN、JAW 只是 catno 前綴；而且**同年還有一張 JAW 2001 - 2，兩張都只記到年、無法判定哪一張在先**。**「新開的爵士副標」「創廠號」「第一張」都不得寫**，行文寫「目錄編號 JAW 1001」即可。｜（二）數字：`mbNote` 寫藝人名下「純 Album **10 個**」。**實際是 11 個**（17 個 release-group 裡 Album/Live 5、Album/Soundtrack 1）。**行文不要引 10 這個數字。**｜（三）⚠ **本張沒有逐軌長度來源**：五軌在資料庫端全部無長度，店面也沒有本碟可補。**行文一律不得寫任何時間長度**（不能寫「開場十分鐘的……」這類）。｜（四）可以寫、而且是本張唯一的強材料：**五個曲名是一整組細胞生物學術語**，這是逐字看曲目列得到的。｜（五）⚠ **〈Chiasma〉同名陷阱**：本張第三軌與這個三重奏 1976 年的另一張碟同名，**行文提到這首時要說清楚是本張的曲目，不要寫成那張碟**。｜**素材只夠 120–180 字**（可寫的事實格只有「五個曲名」「單一版本無再發」「目錄位置」三格，且無長度、無錄音資料），**status 標 partial**。｜**回撈候選：本張無候選，兩店逐筆核對後皆無，無固定試聽來源。**"
+ },
+ {
+  "key": "desc4:山下洋輔|バンスリカーナ",
+  "artist": "山下洋輔",
+  "album": "バンスリカーナ",
+  "facts": [
+   {
+    "f": "release-group 17ac6c25 的欄位：title「バンスリカーナ」、artist-credit「山下洋輔」（藝人實體 55a95705，Person／JP／1942-02-26 生，disambiguation「jazz pianist」；與三重奏實體 404e6f08 是兩個不同實體）、first-release-date **1976**、primary-type Album、secondary-types 空。轄下 **9 個 release，九筆全部 Official、全部 8 軌**——**最早的一筆是 1976 年的德國版：DE 1976 enja **enja 2080**（12 吋黑膠）**；其後是 JP 1977 enja RJ-7137、JP 1981-12 enja 28MJ 3106、**XG 1982 AMIGA 8 55 943（標題《Yosuke Yamashita》）**、JP 1984 enja 3112-28 (35PO)（CD）、JP 1985-04-05 enja 15MJ 9056、JP 2020-04-22 的 CD 與數位兩筆、JP 2021-05-12 enja／SOLID／ULTRA‐VYBE 的 CD。",
+    "src": "https://musicbrainz.org/ws/2/release-group/17ac6c25-8d31-4e2e-ad2b-499b87899212?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1976 德國原盤（enja 2080）逐軌與長度：A1〈A Night in Tunesia〉4:09、A2〈Stella〉3:54、A3〈Banslikana〉7:54、A4〈Chiasma〉3:55、B1〈Autumn Leaves〉6:23、B2〈Ko's Daydream〉3:28、B3〈Lullaby〉4:00、B4〈Bird〉5:09。**八首每面四首，只有同名曲〈Banslikana〉超過七分鐘，其餘七首都在三分半到六分半之間。** 曲目混著標準曲（〈A Night in Tunesia〉〈Autumn Leaves〉〈Stella〉）與自己的題目（〈Banslikana〉〈Chiasma〉〈Ko's Daydream〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=17ac6c25-8d31-4e2e-ad2b-499b87899212&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1976 德國原盤的錄音關係（八軌逐軌登錄）：**錄音日期 1976-07-05、地點 Bauer Studios（錄音室）**；**演奏掛名只有 山下洋輔 piano 一個人（八軌全員）——這是一張鋼琴獨奏碟，資料庫端可證**；**製作 Horst Weber 與 Matthias Winckelmann、錄音工程 Carlos Albrecht**。",
+    "src": "https://musicbrainz.org/ws/2/release/c5b9fcfd-7c06-470f-aa9c-af30423a2620?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "串流店面 jp 的 collectionId **1509861343**：collectionName「**BANSLIKANA (Remaster)**」、artistName「山下洋輔」、releaseDate **2020-04-22**、trackCount 8、copyright「℗ ENJA」，`entity=song` 攤得出 **8 軌、8 軌全部有 previewUrl**（A Night In Tunisia 4:15／Stella 3:58／Banslikana 7:58／Chiasma 3:59／Autumn Leaves 6:26／Ko's Daydream 3:41／Lullaby 4:09／Bird 5:12），**逐位置與 1976 原盤相符、長度差都在 13 秒內**。**上架的是 2020 年那次重製，releaseDate 記的是 2020 不是 1976。** us 店 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=1509861343&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **41 個 release-group**（個人實體，與三重奏實體分開）：純 Album 33、Album/Live 6、Album/Soundtrack 1。三十三張純 Album 依 first-release-date 排序，**1970 年代有三張：1970《Mokujiki》、1975《Breathtake》、1976 本張**（另有同年的《家》是二人合掛）。**本張不是他個人名下 1970 年代唯一的長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=55a95705-8d03-4478-b57c-de976206f3cf&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "一個人一台鋼琴，八首裡只有同名曲超過七分鐘",
+   "1976 年 7 月 5 日在德國一間錄音室錄完，同年就在德國發了唱片"
+  ],
+  "sound": "1976 年 7 月 5 日在德國一間錄音室錄的鋼琴獨奏，同年就由 enja 以 enja 2080 在德國發行，一張 12 吋、八軌。八首每面四首：〈A Night in Tunesia〉4:09、〈Stella〉3:54、同名曲〈Banslikana〉7:54、〈Chiasma〉3:55，B 面〈Autumn Leaves〉6:23、〈Ko's Daydream〉3:28、〈Lullaby〉4:00、〈Bird〉5:09。只有同名曲超過七分鐘，其餘七首都在三分半到六分半，是這條線上少見的短曲編排。曲目一半是美國標準曲，一半是自己的題目。這張碟在日本、東德與後來的 CD、重製版之間前後發過九個版本，八軌與曲序始終沒有變。",
+  "keyTracks": [
+   "Banslikana",
+   "Autumn Leaves",
+   "A Night in Tunesia"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，1976，而且 1976 同時是錄音年與首次發行年——策展層在這一欄整段判斷錯誤，必須推翻。** release-group first-release-date 1976。**轄下九筆 release 裡最早的是 DE 1976 的 enja 2080（Official，12 吋黑膠）**——**1976 年有一次真正的發行**。**錄音年也查得到**：八軌的 recording relationship 都記 **1976-07-05、Bauer Studios**。**所以 1976 既是錄音年也是首版年，兩者同年、沒有落差。** 1981-12 的 enja 28MJ 3106 是**第三個**版本、不是首版。⚠ 卡單 `label` 欄寫的「enja（catno 28MJ 3106，JP 1981-12 **首版**；錄音 1976）」與 `curatorRisk`／`mbNote` 的「轄下三個 release、最早的是 1981-12」「1976 對應錄音年而非任何一次發行」**全部與資料庫不符**。串流側 1509861343 的 releaseDate 記 2020-04-22、℗ 欄「℗ ENJA」，那是 2020 年重製，不是原盤年。",
+  "notes": "**擋下策展層四處，是本組最重的一張。**｜（一）**⚠ 版本數與首版年整段錯**：`curatorRisk`／`mbNote` 寫「轄下 **3 個** release……最早的是 **1981-12** 的 enja 28MJ 3106」「**沒有 1976 年的 release 可取**」。**實際轄下 9 個 release，最早的是 DE 1976 的 enja 2080。** **行文不得寫「1981 年才首次發行」，也不得寫「1976 只是錄音年、沒有發行」。**｜（二）**⚠ 卡單 `label` 欄本身帶錯**：欄內寫「JP 1981-12 首版」——**首版是 1976 年的德國盤**。下游若照 label 欄行文會出錯，**行文提首版一律寫 1976 年德國 enja 2080**。｜（三）**「唯一封面可解的碟」不得寫**：`curatorWhy` 寫「是他個人名下 1970 年代**唯一封面可解**的碟」。封面能不能解出來不是本層查得到的東西，而**他個人名下 1970 年代的純 Album 有三張**（1970《Mokujiki》、1975《Breathtake》、本張）。**「唯一」不得寫。**｜（四）**可以寫、而且是本張最好的材料**：**這是一張鋼琴獨奏碟**——八軌的 relationship 只掛 山下洋輔 piano 一人；**錄音日期 1976-07-05 與德國那間錄音室、製作 Horst Weber／Matthias Winckelmann、工程 Carlos Albrecht 也都有背書**。｜（五）1982 年的 AMIGA 版：release 的 country 欄記 **XG**、標題改成《Yosuke Yamashita》。**行文若要提「東德版」，依據只有這個 country 碼與廠牌名，寫「1982 年還出過一個改用他名字當標題的版本」比較穩。**｜**回撈候選採信**：collectionId 1509861343（jp）逐軌覆核成立（8 軌對 8 軌、長度差 13 秒內），**是可用的固定試聽來源**；**但它是 2020 年的重製版，年份欄記 2020，行文取 1976。**"
+ },
+ {
+  "key": "desc4:山下洋輔トリオ|Arashi",
+  "artist": "山下洋輔トリオ",
+  "album": "Arashi",
+  "facts": [
+   {
+    "f": "release-group d0024635 的欄位：title「Arashi」、artist-credit **「山下洋輔トリオ、大駱駝艦、ジェラルド大下」三方平列**（團體實體 404e6f08；**3b982fd8「大駱駝艦」，Group／JP，disambiguation「butoh dance troupe」**＝舞踏團；**af0fd86f「Gerald Oshita」，Person／US，disambiguation「US musician, composer & sound recordist」**）、first-release-date **1977**、primary-type Album、secondary-types 空。轄下 **2 個 release，兩筆都 Official、都是 17 軌**：1977 JP **Frasco FS-7019.20**（**兩張 12 吋黑膠，第一張 9 軌、第二張 8 軌**）、2008-08-22 JP **SUPER FUJI DISCS FJSP-38 ＋ FJSP-39**（兩張 CD，release 標題改成漢字《嵐》）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/d0024635-2986-41ba-9c52-264640799eb5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1977 原盤（Frasco FS-7019.20）逐軌與長度（十七軌）：A1〈月の砂漠〉12:02、A2〈屍花〉6:06、A3〈ゴングと人声によるプレリュード〉3:29、A4〈ゴースト パートⅠ〉2:16／B1〈ゴースト パートⅡ〉4:21、B2〈黄金の葉脈〉4:06、B3〈虚無軍団、足音によるインタルード〉2:00、B4〈時代は森の木もれ陽〉10:22、B5〈嵐のテーマ〉2:59／C1〈大虚無会議〉**21:07**、C2〈毛棒と小人 パートⅠ〉0:53／D1〈毛棒と小人 パートⅡ〉**0:18**、D2〈扇子と人形〉0:49、D3〈未来戦争、舞踏家による物音とパーカッション〉0:46、D4〈森の小陰の森〉1:02、D5〈嵐のテーマ〉18:43、D6〈月の砂漠〉2:55。**十七軌從 0:18 到 21:07，落差七十倍；〈嵐のテーマ〉與〈月の砂漠〉各出現兩次、而且兩次的長度天差地遠（2:59 對 18:43、12:02 對 2:55）。** 曲名裡有三首直接寫著這是甚麼段落（プレリュード、インタルード、「舞踏家による物音とパーカッション」）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d0024635-2986-41ba-9c52-264640799eb5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1977 原盤的十七軌**沒有任何 recording-level relationship**：無錄音日期、無場地、無樂手分工，release annotation 也是空的。**這張碟只有 artist-credit 這一層可以確認舞踏團與 Gerald Oshita 有參與，樂手分工在資料庫端是空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/69589a6e-8f2f-4272-b1b7-a86782899782?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "藝人端點分頁全列 17 個 release-group、純 Album 11 個；1977 年有兩張（本張與《Inner Space》）。串流側本張**兩店皆無條目**（jp 搜「山下洋輔トリオ」7 筆、us 搜「Yosuke Yamashita Trio」21 筆，逐筆核對後皆非本碟，2008 年的 SUPER FUJI 版也沒有上架）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=404e6f08-fc84-4b89-86c6-64a72d57d018&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "兩張黑膠十七首，最短的十八秒、最長的二十一分七秒",
+   "〈嵐のテーマ〉出現兩次，一次不到三分鐘、一次十八分四十三秒"
+  ],
+  "sound": "1977 年 Frasco FS-7019.20 是兩張 12 吋、十七軌，第一張九軌第二張八軌。十七首的長度落差極大：最長的〈大虚無会議〉21:07 佔掉第三面大半，最短的〈毛棒と小人 パートⅡ〉只有 0:18，中間還有一串一分鐘上下的小段落。〈嵐のテーマ〉與〈月の砂漠〉各出現兩次，而且兩次的規模完全不同——同名主題一次 2:59、一次 18:43，另一組 12:02 與 2:55。曲名有三首直接標明功能（前奏、間奏、以及「舞踏家的物音與打擊」），掛名也把舞踏團與一位美國樂手並列進來。2008 年的兩張 CD 再發照十七軌復刻，只把盤名換成漢字。",
+  "keyTracks": [
+   "大虚無会議",
+   "嵐のテーマ",
+   "月の砂漠"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（**發行年**）。release-group first-release-date 1977、最早的 release 是 1977 JP 的 Frasco FS-7019.20（Official，兩張黑膠），另一筆是 2008-08-22 的兩張 CD 再發。**演奏年：資料庫未登錄**（十七軌零 recording relationship），**行文不得把 1977 說成錄音年或演出年**。串流側沒有本張的上架版本可對照 ℗ 年。",
+  "notes": "**擋下策展層一處、要求兩處寫法。**｜（一）`curatorWhy` 寫「這是這條線上少見的『**自由爵士與舞踏同台**』的唱片實體」。**資料庫端能證明的只有 artist-credit 把舞踏團（disambiguation「butoh dance troupe」）與這個三重奏並列，以及曲名裡有一首寫著「舞踏家による物音とパーカッション」**；**「同台」（＝現場同場演出）沒有來源——這張的 secondary-types 是空的、也沒有錄音場地**。**行文只能寫「掛名把舞踏團並列進來」「有一首曲名寫著舞踏家的物音」，不得寫成現場同台實況。**｜（二）第三位 credit 是 **Gerald Oshita（Person／US）**，卡單的 queryAlias 寫成片假名「ジェラルド大下」——**兩者是同一個實體，行文若要提這位，用資料庫端的正名 Gerald Oshita 比較穩，且不得指派他演奏什麼樂器**（無 relationship）。｜（三）盤名：1977 原盤題羅馬字《Arashi》、2008 再發題漢字《嵐》，卡片取《Arashi》，**行文提盤名照卡片寫**。｜（四）可以放心寫的是曲目結構：**十七軌的長度、兩組同名曲各出現兩次、0:18 到 21:07 的落差**，全部逐軌可查。｜**回撈候選：本張無候選，兩店逐筆核對後皆無，無固定試聽來源。**"
+ },
+ {
+  "key": "desc4:山下洋輔トリオ|Umbrella Dance",
+  "artist": "山下洋輔トリオ",
+  "album": "Umbrella Dance",
+  "facts": [
+   {
+    "f": "release-group cd14f299 的欄位：title「Umbrella Dance」、artist-credit「山下洋輔トリオ」（團體實體 404e6f08，Group，**life-span 1966 – 1983-12-31**）、first-release-date **1978**、primary-type Album、secondary-types 空。轄下 **2 個 release，兩筆都 Official、都是 3 軌**：1978 JP **Frasco FS-7022**（12 吋黑膠）、2009-07-15 JP Frasco **UCCJ-9111**（**SHM-CD**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/cd14f299-aa9c-4d90-b763-ff7b84489bbd?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1978 原盤（Frasco FS-7022）逐軌：A1〈Umbrella Dance Part I〉、A2〈Umbrella Dance Part II〉、B〈Umbrella Dance Part III〉。**三軌全部沒有登錄長度。** **整張碟只有一個曲名，分成第一到第三部分——A 面兩部分、B 面一部分。** 2009 年的 SHM-CD 版曲名與曲序完全相同，也是三軌、同樣無長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cd14f299-aa9c-4d90-b763-ff7b84489bbd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1978 原盤的三軌**沒有任何 recording-level relationship**：無錄音日期、無場地、無樂手掛名，release annotation 也是空的。",
+    "src": "https://musicbrainz.org/ws/2/release/c1da4458-98c0-4bd9-abd5-24d2b16a8132?fmt=json&inc=recordings+recording-level-rels+place-rels+artist-rels+event-rels+annotation"
+   },
+   {
+    "f": "藝人端點分頁全列 **17 個 release-group**、純 Album 11 個。**本張是這個團體實體名下 1970 年代最後一張純 Album**（其後是 1980《A Tribute To Mal Waldron》、1990《Ghosts By Albert Ayler》、2015 的現場盤）。⚠ **團體實體的 life-span 記到 1983-12-31**，不是 1979。串流側本張兩店皆無條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=404e6f08-fc84-4b89-86c6-64a72d57d018&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有一個曲名，切成第一到第三部分",
+   "1978 年的黑膠與 2009 年的再發，三段的曲名與順序一模一樣"
+  ],
+  "sound": "1978 年 Frasco FS-7022 的原盤是一張 12 吋、三軌，而三軌其實是同一個題目的三個部分：A 面〈Umbrella Dance Part I〉與〈Part II〉，B 面〈Part III〉。整張碟沒有第二個曲名，也沒有留下任何一軌的長度紀錄。2009 年 Frasco 以 UCCJ-9111 做成 SHM-CD 再發時，三段的曲名與順序原樣照搬，同樣沒有長度。錄音日期、場地與編制在資料庫端都是空白，這張碟能查到的就是廠牌、編號、載體與這三個部分。",
+  "keyTracks": [
+   "Umbrella Dance Part I",
+   "Umbrella Dance Part II",
+   "Umbrella Dance Part III"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1978（**發行年**）。release-group first-release-date 1978、最早的 release 是 1978 JP 的 Frasco FS-7022（Official），另一筆是 2009-07-15 的 SHM-CD 再發。**演奏年：資料庫未登錄**（三軌零 recording relationship），**行文不得把 1978 說成錄音年**。串流側沒有本張的上架版本可對照 ℗ 年。",
+  "notes": "**擋下策展層一處。**｜（一）**⚠ 解散年錯**：`curatorWhy` 寫「1978 年在 Frasco 的最後一批錄音之一，**隔年這個編制就解散改組**」。**團體實體 404e6f08 的 life-span 登錄是 1966 – 1983-12-31**，而且名下 1980 年還有一張《A Tribute To Mal Waldron》。**「隔年解散」不得寫**；要寫只能寫「這是這個編制 1970 年代最後一張長篇」。｜（二）`curatorWhy` 引藍圖「先確認第一張該有的在不在」那段是產線內部話術，**不是碟的事實，行文不要用**。｜（三）⚠ **本張沒有逐軌長度來源**：三軌在資料庫端全部無長度，店面也沒有本碟可補。**行文一律不得寫任何時間長度。**｜（四）可以寫的：**整張只有一個曲名分成三個部分**、**兩個版本（1978 黑膠／2009 SHM-CD）曲名曲序完全相同**。｜**素材只夠 120–180 字**（可寫的事實格只有「三段同名曲目」「兩個版本」「目錄位置」三格，無長度、無錄音資料、無編制），**status 標 partial**。｜**回撈候選：本張無候選，兩店逐筆核對後皆無，無固定試聽來源。**"
  }
 ]
