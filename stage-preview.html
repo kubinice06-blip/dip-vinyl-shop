@@ -6,38 +6,49 @@
 <title>唱片行舞台 · 配置預覽</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root{ --black:#111; --gold:#b8860b; --dmg:#c11628; --mono:'Space Mono',monospace; }
+  :root{ --black:#111; --gold:#b8860b; --mono:'Space Mono',monospace; }
   *{box-sizing:border-box;}
   body{margin:0;background:#f4f2ec;color:#111;font-family:var(--mono);font-size:12px;}
-  .wrap{max-width:560px;margin:0 auto;padding:10px 14px 40px;}
+  .wrap{max-width:520px;margin:0 auto;padding:10px 14px 40px;}
   h1{font-size:14px;letter-spacing:.1em;margin:14px 0 4px;}
-  .note{font-size:10px;color:#888;line-height:1.8;margin-bottom:10px;}
+  .note{font-size:10px;color:#888;line-height:1.85;margin-bottom:10px;}
   .ctl{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0;}
   .ctl button{font-family:var(--mono);font-size:10px;font-weight:700;padding:6px 9px;border:1px solid #111;background:#fff;cursor:pointer;}
   .ctl button.on{background:#111;color:#fff;}
 
-  /* ══════════ 新版舞台：背景改成 art/shop-room.png（scripts/build-shop-bg.py 產） ══════════
-     圖左邊貼齊舞台左邊，所以站位一律用 px（跟圖裡的家具座標對齊）；
-     寬螢幕只是多露出右邊那個挖寶櫃，家具不會位移。 */
+  /* ══════════ 舞台：三層疊圖 ══════════════════════════════════
+     背景 shop-bg.png（牆／門洞／封面牆／地板／地毯）
+       └ 門板 shop-door-{0,1,2}.png（會開會關）
+         └ 小人（z-index 4）
+           └ 前景 shop-fg.png（櫃檯、器材、挖寶櫃、紙箱；z-index 6）
+     前景蓋在小人上面，所以老闆站櫃檯後面自然被檯身擋到腰，
+     走出來也一定要先往左移出櫃檯範圍再往前，不會再穿過櫃檯。
+     場景邏輯尺寸 380×320，站位一律換算成 %，手機桌機比例一致。 */
   .rpg{border:2px solid var(--black);background:#000;margin:6px 0 12px;}
-  .rpg-stage{position:relative;height:232px;overflow:hidden;background:#c49a60 url('art/shop-room.png') left bottom / auto 232px no-repeat;
-    image-rendering:pixelated;}
-
-  /* 小人：走道（圖上 x 0–160）淨空，老闆站櫃檯後面靠 bottom 抬高假裝深度 */
-  .rpg-spr{position:absolute;bottom:18px;left:26px;z-index:4;line-height:0;transition:left .9s ease,bottom .9s ease;}
-  .rpg-spr svg{display:block;}
-  .rpg-spr.o.behind{z-index:2;}
-  .rpg-anger{position:absolute;left:-9px;top:-13px;font-size:16px;line-height:1;opacity:0;}
+  .rpg-stage{position:relative;width:100%;aspect-ratio:380/320;overflow:hidden;
+    background:#3a2a18 url('art/shop-bg.png') center center / 100% 100% no-repeat;}
+  .rpg-fg{position:absolute;inset:0;width:100%;height:100%;z-index:6;pointer-events:none;}
+  .rpg-door{position:absolute;z-index:2;pointer-events:none;
+    left:1.58%;top:28.75%;width:18.95%;}
+  .rpg-spr{position:absolute;width:11.5%;z-index:4;line-height:0;
+    transition:left .85s ease-in-out, bottom .7s ease-in-out, opacity .3s;}
+  .rpg-spr svg{display:block;width:100%;height:auto;}
+  .rpg-spr.hide{opacity:0;}
+  .rpg-anger{position:absolute;left:-20%;top:-26%;line-height:1;opacity:0;
+    font-size:min(3.8vw,18px);}
   .rpg-anger.on{opacity:1;}
-  .rpg-notes{position:absolute;left:150px;bottom:112px;width:60px;height:70px;z-index:5;pointer-events:none;opacity:0;}
+  .rpg-notes{position:absolute;z-index:5;width:16%;height:22%;pointer-events:none;opacity:0;
+    left:60%;bottom:42%;}
   .rpg-notes.on{opacity:1;}
-  .rpg-notes span{position:absolute;left:8px;bottom:0;font-size:16px;font-weight:700;color:#2a1c0e;text-shadow:0 1px 0 rgba(255,255,255,.4);}
-  .rpg-notes.on span{animation:rpgNote 1.8s ease-out infinite;}
-  .rpg-notes.on span:nth-child(2){left:24px;animation-delay:.6s;} .rpg-notes.on span:nth-child(3){left:40px;animation-delay:1.2s;}
-  @keyframes rpgNote{0%{transform:translateY(0) scale(.7);opacity:0;}15%{opacity:1;}100%{transform:translateY(-56px) translateX(8px) scale(1.1);opacity:0;}}
+  .rpg-notes span{position:absolute;left:6%;bottom:0;font-size:min(4.2vw,19px);font-weight:700;
+    color:#2a1c0e;text-shadow:0 1px 0 rgba(255,255,255,.45);}
+  .rpg-notes.on span{animation:rpgNote 1.9s ease-out infinite;}
+  .rpg-notes.on span:nth-child(2){left:38%;animation-delay:.63s;}
+  .rpg-notes.on span:nth-child(3){left:70%;animation-delay:1.26s;}
+  @keyframes rpgNote{0%{transform:translateY(0) scale(.7);opacity:0;}15%{opacity:1;}
+    100%{transform:translateY(-64px) translateX(9px) scale(1.1);opacity:0;}}
 
-  /* 對話窗（照現行樣式，只為了看整體比例） */
-  .rpg-win{position:relative;background:#000;color:#fff;border:4px double #fff;padding:16px 16px 22px;min-height:96px;}
+  .rpg-win{position:relative;background:#000;color:#fff;border:4px double #fff;padding:16px 16px 22px;min-height:92px;}
   .rpg-name{position:absolute;left:12px;top:-12px;background:#000;color:#fff;border:2px solid #fff;padding:1px 10px;font-size:11px;font-weight:700;letter-spacing:.1em;}
   .rpg-name.foe{border-color:#ff6b7a;color:#ff6b7a;}
   .rpg-text{font-size:13px;line-height:1.95;letter-spacing:.04em;}
@@ -48,26 +59,29 @@
 <div class="wrap">
   <h1>唱片行舞台 · 新配置預覽</h1>
   <div class="note">
-    像素背景圖（<code>scripts/build-shop-bg.py</code> 產 <code>art/shop-room.png</code>）＋小人疊在上面。牆上封面展示 3×4、牆架唱片書背、櫃檯（喇叭＋唱盤＋擴大機）、
-    地上兩個挖寶櫃與兩個紙箱、木板牆與木地板。舞台高度 190 → <b>230px</b>。<br>
-    下面三顆按鈕＝序章的三個時間點，看人物走位有沒有被家具擋到。
+    背景與家具由 <code>scripts/build-shop-art.py</code> 產（3 倍解析度像素圖，封面上是卡池裡真的盤）。
+    <b>櫃檯／挖寶櫃／紙箱是獨立的前景層、蓋在小人上面</b>，所以老闆站櫃檯後面會被檯身擋住，
+    要走出來只能先往左移出櫃檯再往前。門板另外三格，客人推門會開。
   </div>
   <div class="ctl">
     <button class="on" data-s="0">① 推門進來</button>
-    <button data-s="1">② 老闆放唱片（音符）</button>
-    <button data-s="2">③ 男子嗆聲（三人同框）</button>
+    <button data-s="1">② 老闆放唱片</button>
+    <button data-s="2">③ 老闆走出櫃檯</button>
+    <button data-s="3">④ 男子推門嗆聲</button>
   </div>
 
   <div class="rpg">
     <div class="rpg-stage" id="stage">
+      <img class="rpg-door" id="door" src="art/shop-door-0.png" alt="">
       <div class="rpg-notes" id="notes"><span>♪</span><span>♫</span><span>♪</span></div>
-      <div class="rpg-spr o behind" id="o"></div>
-      <div class="rpg-spr p" id="p"><div class="rpg-anger" id="anger">💢</div></div>
-      <div class="rpg-spr f" id="f"></div>
+      <div class="rpg-spr" id="o"></div>
+      <div class="rpg-spr" id="p"><div class="rpg-anger" id="anger">💢</div></div>
+      <div class="rpg-spr hide" id="f"></div>
+      <img class="rpg-fg" src="art/shop-fg.png" alt="">
     </div>
     <div class="rpg-win">
       <div class="rpg-name" id="wname">老闆</div>
-      <div class="rpg-text" id="wtext">下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。</div>
+      <div class="rpg-text" id="wtext"></div>
       <div class="rpg-next">▼</div>
     </div>
   </div>
@@ -77,42 +91,92 @@
 
 <script src="dip-character.js?v=2"></script>
 <script>
-  // 舞台用得到的三個小人（與 roguelike.html 同一份定義）
-  const SPR = {
+  const LW=380, LH=320, SPR=43.7;           // 場景邏輯尺寸與小人寬度（邏輯 px）
+  const pc = (cx,y)=>({ left:((cx-SPR/2)/LW*100).toFixed(2)+'%', bottom:((LH-y)/LH*100).toFixed(2)+'%' });
+
+  // 站位（邏輯座標；跟 build-shop-art.py 的家具座標對齊）
+  // 櫃檯 x 138–330、檯面上緣 200（前景層從 y=192 起遮住小人）
+  const POS = {
+    p:{ door:[42,214], browse:[96,262], mid:[128,282], leave:[182,300] },
+    o:{ counter:[294,214], aisle:[104,214], out:[110,290], between:[118,296] },
+    f:{ outside:[44,210], door:[44,212], in:[58,294] },
+  };
+
+  const SPRITES = {
     owner: sprRows(['................','.....dddddd.....','....dddddddd....','....dssssssd....','....ekkeekke....','....sdssssds....','.....dddddd.....'],
       'w','d',{8:'...wnnnnnnnnw...',9:'...snnnnnnnns...',10:'...snnnnnnnns...',11:'....nnnnnnnn....'}),
-    e0: sprRows(['.....gggggg.....','.....kkkkkk.....','....kkkkkkkk....','...gksssssskg...','...gssksskssg...','....ssssssss....','.....ssssss.....'],'w','b'),
+    foe: sprRows(['.....gggggg.....','.....kkkkkk.....','....kkkkkkkk....','...gksssssskg...','...gssksskssg...','....ssssssss....','.....ssssss.....'],'w','b'),
   };
   const AV = { head:'neat', hair:'k', shirt:'b', pants:'k', skin:'s' };
-  document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPR.owner, 40));
-  document.getElementById('p').insertAdjacentHTML('afterbegin', pixArtHTML(avatarRows(AV), 40));
-  document.getElementById('f').insertAdjacentHTML('afterbegin', pixArtHTML(SPR.e0, 40));
+  document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES.owner, 64));
+  document.getElementById('p').insertAdjacentHTML('afterbegin', pixArtHTML(avatarRows(AV), 64));
+  document.getElementById('f').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES.foe, 64));
 
-  // 新版站位（left%／bottom px）
-  // px（對齊 art/shop-room.png 的家具座標）：走道 0–160、櫃檯 130–255、前景家具 x>168
-  const POS = {
-    p:{ door:[26,18], shelf:[62,18], mid:[92,18], leave:[118,18] },
-    o:{ counter:[152,62], floor:[105,18], between:[70,18] },
-    f:{ out:[-46,18], door:[16,18] },
-  };
+  const $ = id => document.getElementById(id);
+  function put(id, group, key, instant){
+    const el=$(id), q=POS[group][key], s=pc(q[0],q[1]);
+    if(instant){ el.style.transition='none'; }
+    el.style.left=s.left; el.style.bottom=s.bottom;
+    if(instant){ void el.offsetWidth; el.style.transition=''; }
+  }
+  const wait = ms => new Promise(r=>setTimeout(r,ms));
+  async function doorAnim(open){
+    const seq = open ? [1,2] : [1,0];
+    for(const f of seq){ $('door').src='art/shop-door-'+f+'.png'; await wait(190); }
+  }
+
+  // 老闆離開櫃檯：先沿著檯後往左（被檯身擋住），繞出櫃檯範圍後才往前走
+  async function ownerOut(){
+    put('o','o','counter',true); await wait(60);
+    put('o','o','aisle');  await wait(900);
+    put('o','o','out');    await wait(760);
+  }
+
   const SCENES = [
-    { p:'door', o:'counter', f:'out', notes:false, anger:false, who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。' },
-    { p:'mid',  o:'counter', f:'out', notes:true,  anger:false, who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。' },
-    { p:'leave',o:'between', f:'door', notes:false, anger:true, who:'男子', text:'「……這品味，也敢出來丟臉？」' },
+    { name:'① 推門進來', who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。',
+      run: async ()=>{
+        put('p','p','door',true); put('o','o','counter',true); $('f').classList.add('hide');
+        $('notes').classList.remove('on'); $('anger').classList.remove('on');
+        await doorAnim(true); await wait(420); await doorAnim(false);
+      } },
+    { name:'② 老闆放唱片', who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。',
+      run: async ()=>{
+        put('p','p','browse',true); put('o','o','counter',true); $('f').classList.add('hide');
+        $('anger').classList.remove('on'); $('door').src='art/shop-door-0.png';
+        await wait(300); $('notes').classList.add('on');
+      } },
+    { name:'③ 老闆走出櫃檯', who:'老闆', text:'「這四張也很適合你，跟你很有緣，收下吧。」',
+      run: async ()=>{
+        put('p','p','mid',true); $('f').classList.add('hide');
+        $('notes').classList.remove('on'); $('anger').classList.remove('on');
+        $('door').src='art/shop-door-0.png';
+        await ownerOut();
+      } },
+    { name:'④ 男子推門嗆聲', who:'男子', text:'「……這品味，也敢出來丟臉？」',
+      run: async ()=>{
+        put('p','p','leave',true); put('o','o','between',true);
+        put('f','f','outside',true); $('notes').classList.remove('on');
+        $('f').classList.remove('hide');
+        await doorAnim(true);
+        put('f','f','in'); await wait(880);
+        await doorAnim(false);
+        $('anger').classList.add('on');
+      } },
   ];
-  function put(id,key,pos){ const el=document.getElementById(id), q=POS[key][pos]; el.style.left=q[0]+'px'; el.style.bottom=q[1]+'px'; }
-  function show(i){
+
+  let busy=false;
+  async function show(i){
+    if(busy) return; busy=true;
     const s=SCENES[i];
-    put('o','o',s.o); put('p','p',s.p); put('f','f',s.f);
-    document.getElementById('notes').classList.toggle('on', s.notes);
-    document.getElementById('anger').classList.toggle('on', s.anger);
-    const nm=document.getElementById('wname');
-    nm.textContent=s.who; nm.style.display=s.who?'':'none'; nm.className='rpg-name'+(s.who==='男子'?' foe':'');
-    document.getElementById('wtext').textContent=s.text;
+    const nm=$('wname'); nm.textContent=s.who; nm.style.display=s.who?'':'none';
+    nm.className='rpg-name'+(s.who==='男子'?' foe':'');
+    $('wtext').textContent=s.text;
     document.querySelectorAll('.ctl button').forEach((b,j)=>b.classList.toggle('on', j===i));
-    const st=document.getElementById('stage').getBoundingClientRect();
-    document.getElementById('posnote').textContent =
-      `舞台 ${Math.round(st.width)}×${Math.round(st.height)}px　·　背景圖 540×232（左貼齊，寬螢幕多露右邊）　·　站位：你 ${POS.p[s.p][0]}px／老闆 ${POS.o[s.o][0]}px／男子 ${POS.f[s.f][0]}px`;
+    await s.run();
+    const st=$('stage').getBoundingClientRect();
+    $('posnote').textContent = `舞台 ${Math.round(st.width)}×${Math.round(st.height)}px（邏輯 380×320）`
+      + `　·　背景 1140×960（3 倍）　·　前景層蓋在小人上面`;
+    busy=false;
   }
   document.querySelectorAll('.ctl button').forEach(b=>b.addEventListener('click',()=>show(+b.dataset.s)));
   show(0);

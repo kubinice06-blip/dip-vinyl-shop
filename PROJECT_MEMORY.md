@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-07｜dip-vinyl-shop｜唱片行舞台重做：3 倍解析度像素圖、前景層擋人、門會開（預覽，尚未換進遊戲）
+
+同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。
+
+店主看完前一版預覽後給了三點：**「畫素高一點沒問題、要跟範例一樣精緻、封面看得出專輯」**、
+**「人物都會疊在櫃檯，走出來也是直接跨過櫃檯很奇怪」**、**「客人走進來要開門」**。
+前一版的 `build-shop-bg.py` 與 `art/shop-room.png` 整個報廢，改成 `scripts/build-shop-art.py`。
+
+**1. 解析度與封面。** 場景邏輯尺寸改 380×320（原本 540×232 的寬條），出圖 **3 倍**＝1140×960；
+前台 `background-size:100% 100%`，手機 3× DPR 剛好 1:1，站位改回 **%**（不再是 px），手機桌機比例一致。
+牆上 6×4＝24 格封面，每張 111×111 圖素，用 Liberation Sans／Serif／Mono 與文泉驛正黑**排真的字**，
+盤是從 `seed_cards.json` 挑的 27 張（Miles Davis／Coltrane／Fela Kuti／Joy Division／Pink Floyd／
+Nirvana／Radiohead／Swans／Bobb Trimble／YMO／J Dilla…），團名盤名都看得出來。
+版型 9 種通用（Blue Note、全字體、人像、City Pop、團體、黑膠、色帶、四宮格、Mono、半張照片）
+＋ 5 種「一眼認得出來」的特例（Dark Side 的稜鏡、Unknown Pleasures 的稜線、Loveless 的粉紅殘影、
+Nevermind 的水下、OK Computer 的淡藍）。連續三張不重複版型，避免整排都是黑膠盤。
+
+**2. 前景層解決「人疊在櫃檯上」。** 美術拆成三層：`shop-bg.png`（牆／門洞雨夜／封面牆／地板／地毯）
+→ 小人（z-index 4）→ **`shop-fg.png`（櫃檯＋器材、挖寶櫃、紙箱；z-index 6，蓋在小人上面）**。
+老闆站櫃檯後面（腳底 y=214）自然被檯身（上緣 y=192）擋到腰，不必再靠 z-index 硬喬。
+走出櫃檯改成**兩段動線**：先沿檯後往左移到走道（x 294→104，被檯身擋著），出了櫃檯範圍（x<138）才往前走到
+y=290。不會再穿過櫃檯。
+
+**3. 門會開。** 門洞、雨夜街景、門框、鈴鐺畫在背景；門板另外出三格 `shop-door-0/1/2.png`
+（關／半開／全開，往內開、鉸鏈在左、開闔邊有透視收窄與投影），推門就換圖。
+玩家推門進來、男子推門嗆聲都跑同一段動畫。
+
+其他：門口地墊、從門口斜鋪到櫃檯的舊地毯（填住空曠地板也把動線指出來）、牆上手寫木牌
+「本日推薦／自己翻 別問我」、檯面一疊牛皮紙袋與收銀鐵盒、挖寶櫃的分類牌、紙箱的膠帶與手寫紙標。
+
+- 主要檔案：`scripts/build-shop-art.py`（新增，取代 `build-shop-bg.py`）、
+  `art/shop-bg.png`＋`shop-fg.png`＋`shop-door-0/1/2.png`（新增）、
+  `art/shop-room.png` 與 `scripts/build-shop-bg.py`（刪除）、`stage-preview.html`（改寫成三層疊圖）
+- **`roguelike.html` 這次一樣完全沒動**，等店主點頭才換。
+- 驗證：Chromium（400×900、DPR 3）跑 `stage-preview.html` 四個場景截圖——①推門進來（門開→關）
+  ②老闆放唱片（音符）③老闆走出櫃檯（抓走位中途三幀：檯後只露頭肩 → 繞出櫃檯 → 走到前面）
+  ④男子推門嗆聲（三人同框、💢 沒被家具擋）。前景層遮擋與門動畫都正確。已交店主過目。
+
 ### 2026-09-07｜dip-vinyl-shop｜唱片行舞台改成像素背景圖：`build-shop-bg.py` ＋ `stage-preview.html`（預覽，尚未換進遊戲）
 
 同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。
