@@ -397,5 +397,100 @@
   "why": "今井和雄 與低音提琴手 Barre Phillips 的二重奏，1999 年由 Station Kids 以 SKCY-1002 發行。今井 是 1976 年 East Bionic Symphonia 的成員之一、後來又是 Marginal Consort 的四人之一，是把 1970 年代的集體即興實踐一路帶到 1990 年代的關鍵人物。實掃 seed_cards.json 全 14,424 列（漢字「今井和雄」與羅馬字「Kazuo Imai」都查——池中的「Nobuko Imai 今井信子」是中提琴家、不同人）：**池中 0 張**。他名下只有 6 個 release-group，其中 primary-type=Album 且 secondary-types 為空的有 5 個，但 CAA 有封面的只有本張。來源：MB release-group 63cd362e 轄下 release 的 label-info；藝人實體 37020a36。",
   "risk": "撞卡：實掃全池，今井和雄 0 張；⚠ 實掃時「今井」這個姓會命中池中的「Nobuko Imai 今井信子」（中提琴家，Berlioz 那張）與「今井美樹」，**兩者都不是同一人**，逐筆核對後排除。掛名：本 RG 的 artist-credit 是「Barre Phillips & Kazuo Imai」——外國樂手在前、且是二重奏；卡片取 MB 藝人實體主名的漢字「今井和雄」（08-11 裁定），把卡片掛在日本這一側是策展判斷（Barre Phillips 池中 0 張、本批的主題是日本地下即興），下游藝人比對閘要放行（裁定 194）。曲風：`jazz`（自由即興／低音提琴與吉他的二重奏），與本組其他 rock／electronic 卡分流。年份：MB first-release-date 1999-12，只有一個 release，無再發、無演奏／發行落差。封面 CAA：release-group/63cd362e 回 200。Apple：jp／us 兩店搜「今井和雄 Play em as They Fall」「Kazuo Imai Barre Phillips」皆 0 筆，試聽預期沒有。",
   "mbNote": "釘 release-group 63cd362e-0da0-4e98-9cd2-f67593476b21。回問確認：title「Play 'em as They Fall」、artist-credit「Barre Phillips & Kazuo Imai」、first-release-date 1999-12、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1999-12 Station Kids SKCY-1002，Official）。藝人 MBID 37020a36-1a05-49f5-9f59-e3885961c47b（Person／JP／1955-09-24／disambiguation「Japanese free improv guitarist」），名下 6 個 RG。年份取 1999＝發行年。刻意不釘：57515d65-23ff-4f71-b12b-7cf6a51a2227《How Will We Change?》（1995 P.S.F. Records PSFD-70，**CAA 回 404 且 release status 為 null**，本批未收、記入未收清單）、85853cd7《Une chance pour l'ombre》(2004)、190d1c53《Orbit 2: Voyaging Antipodes》(2006)、60393038《Molecules》(2018)（皆超出 1970s–90s 窗口）、2383c32b《Soloworks (Far and Wee)》（2004，Album/Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Les Rallizes Denudes Mizutani；MIZUTANI / Les Rallizes Dénudés；水谷孝；RIVISTA SIXE-0203",
+  "reissuedBy": "Tuff Beats（2022-10-12，UBCA-1074／JP）、Temporal Drift ＋ The Last One Musique ＋ Tuff Beats（2022-11-29，XW）",
+  "g": "b",
+  "artist": "裸のラリーズ",
+  "album": "MIZUTANI / Les Rallizes Dénudés",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "RIVISTA INC.（catno SIXE-0203，JP 1991-08-15）",
+  "why": "裸のラリーズ 1991 年由 RIVISTA 一次發行的三張官方盤之一（SIXE-0101／0203／另一張《’77 LIVE》），是這支樂團二十多年活動裡第一批經團方認可的唱片。2022 年由 Temporal Drift 與 Tuff Beats 重新母帶處理再發，才第一次進入串流。⚠ 實掃 seed_cards.json 全 14,424 列：**池中有兩張、掛在兩個分裂的掛名下**——`裸のラリーズ《The Oz Tapes》(2022)` 與 `Les Rallizes Dénudés《'77 Live》(1991)`，**是同一團**。本批依 08-11 裁定用漢字假名混寫的 `裸のラリーズ`（＝MB 實體主名），並**把那兩張都當成「池中已有」算撞卡**：《’77 LIVE》(RG bb9f0f5c) 與《The OZ Tapes》(RG 313f7bca) 因此都不收，本批只補 MB 上剩下的兩張官方盤。Apple jp／us 兩店同一個 collectionId `1653743312`。來源：MB release-group ad0cc954 轄下 3 個 release 的 label-info；Apple lookup jp／us。",
+  "risk": "**這是現場錄音**（`secondary-types` 含 `Live`），依主線 2026-09-07 解除的新規則收錄。⚠ **掛名分裂**：池中 `裸のラリーズ`(1) 與 `Les Rallizes Dénudés`(1) 是同一團的兩種寫法，`chk-prop` 的 `k()` 摺不掉（裁定 49），**本批用漢字假名混寫的 `裸のラリーズ` ＝ MB 實體 1ba797b6 的主名**；本機上架前應把 `Les Rallizes Dénudés《'77 Live》` 一併正規化，否則池中會有三種掛名。本 RG 的 artist-credit 是「MIZUTANI / 裸のラリーズ」（把盤名的前半塞進了 credit），與掛名不同字，下游比對閘要放行（裁定 194）。⚠ 盤名含 é（U+00E9）與斜線，**不是連字號，`chk-prop` 不擋**，但字串比對會失準。年份：MB first-release-date 1991-08-15＝RIVISTA 首版年；**演奏年遠早於此（1970 年代的錄音），MB 未載確切錄音日期，依池中先例（`'77 Live` 卡片記 1991＝發行年）取發行年 1991**；2022 再發不取。⚠ Apple 的 releaseDate 記成 **2006**（既非演奏年也非任何一次發行年），依裁定 91／95 一律取 MB。封面 CAA：release-group/ad0cc954 回 200。Apple：collectionId 1653743312（jp＋us），試聽可期。",
+  "mbNote": "釘 release-group ad0cc954-4f9c-4c27-ada6-a7be2c63c945。回問確認：title「MIZUTANI / Les Rallizes Dénudés」、artist-credit「MIZUTANI / 裸のラリーズ」、first-release-date 1991-08-15、primary-type **Album**、**secondary-types ['Live']——這是現場錄音**、轄下 3 個 release（JP 1991-08-15 RIVISTA INC. SIXE-0203／JP 2022-10-12 Tuff Beats UBCA-1074／XW 2022-11-29 Temporal Drift; The Last One Musique; Tuff Beats，全數 Official）。藝人 MBID 1ba797b6-b445-4c04-b6b3-458ba9730ad9（Group／JP／1967-11），分頁全列 77 個 RG。**年份：取發行年 1991；演奏年為 1970 年代但 MB 未登錄確切日期，不寫未查證的數字。** 刻意不釘：bb9f0f5c-f2ab-3814-9c21-3701d5173be1《’77 LIVE》（1991 同日 SIXE-0102，**＝池中 `Les Rallizes Dénudés《'77 Live》`**）、313f7bca-0167-45e9-ae32-db9f907fa997《The OZ Tapes》（2022，**＝池中 `裸のラリーズ《The Oz Tapes》`**）、aaf3bf6d-f747-3c3e-bfa4-35b084a491f9《Heavier Than a Death in the Family》與 cb95a824-84df-472e-bf8e-26293b19d66a《Blind Baby Has Its Mother’s Eyes》（**主線點名要收，但轄下 release 全數 status=Bootleg**，依本批第 8 條與 c-116 的先例不收，已記入未收清單）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Les Rallizes Denudes 67 69 Studio et Live；’67–’69 STUDIO et LIVE；'67-'69 Studio Et Live；1967-1969 Studio & Live；RIVISTA SIXE-0101",
+  "reissuedBy": "Temporal Drift ＋ The Last One Musique ＋ Tuff Beats（2022-11-29，XW）",
+  "g": "b",
+  "artist": "裸のラリーズ",
+  "album": "'67-'69 STUDIO et LIVE",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "RIVISTA INC.（catno SIXE-0101，JP 1991-08-15）",
+  "why": "裸のラリーズ 1991 年 RIVISTA 三張官方盤裡編號最前的一張（SIXE-0101），收的是樂團 1967–69 年最早期的錄音室與現場素材——這是 PSF 前史往前推得最遠的一份文件，比本批任何一張都早。2022 年由 Temporal Drift 與 Tuff Beats 重新母帶處理再發（Apple collectionId `1653740028`，jp／us 兩店同一個）。實掃 seed_cards.json 全 14,424 列：池中兩張分別掛 `裸のラリーズ`（The Oz Tapes）與 `Les Rallizes Dénudés`（'77 Live），本張不在；本批只補 MB 上剩下的兩張官方盤。來源：MB release-group b6fe2d90 轄下 4 個 release 的 label-info；Apple lookup jp／us。",
+  "risk": "**這是現場錄音**（`secondary-types` 含 `Live`）。⚠ **盤名必須改寫成 ASCII，這是本批第二個 `chk-prop` 連字號衝突**：MB RG 主標題是「’67–’69 STUDIO et LIVE」，中間那個是 **U+2013 EN DASH**，直接落在 `chk-prop` 的非 ASCII 連字號檢查（裁定 186）裡；撇號也是 U+2019。**卡片因此寫成全 ASCII 的「'67-'69 STUDIO et LIVE」**，與 RG 標題差三個字元——這與本批第 3 條（Ché-SHIZU 的 U+2010）是同一條裁定，**MB 原文一律寫進 mbNote 與 queryAlias**。Apple 兩店的 collectionName 也是 ASCII 撇號版「'67-'69 Studio Et Live」，與本卡一致。掛名分裂同組內另一張（池中兩種寫法都當已有）。⚠ 轄下有一筆 **2009 年的 Bootleg**（Zero Mile Records CD002《1967-1969 Studio & Live》）與一筆 status 為 null 的 2009 JP release，本機做 release 比對時要跳過。年份：MB first-release-date 1991-08-15＝RIVISTA 首版年；**演奏年是 1967–69（盤名載明），但盤名載的是「錄音年區間」不是單一年份，無法當卡片年份用，依池中先例取發行年 1991**；Apple 的 releaseDate 記 2022（再發年），依裁定 91／95 不取。封面 CAA：release-group/b6fe2d90 回 200。Apple：collectionId 1653740028（jp＋us）。",
+  "mbNote": "釘 release-group b6fe2d90-5b22-424e-95ff-03d63994dce8。回問確認：**RG title「’67–’69 STUDIO et LIVE」（含 U+2019 撇號與 U+2013 EN DASH）**、artist-credit「裸のラリーズ」、first-release-date 1991-08-15、primary-type **Album**、**secondary-types ['Live']——這是 1967–69 年錄音室與現場素材的合集**、轄下 4 個 release（JP 1991-08-15 RIVISTA INC. SIXE-0101 Official／JP 2009 無廠牌 status null／JP 2009 Zero Mile Records CD002《1967-1969 Studio & Live》**Bootleg**／XW 2022-11-29 Temporal Drift; The Last One Musique; Tuff Beats Official）。**卡片盤名寫成 ASCII 的「'67-'69 STUDIO et LIVE」，與 RG 標題不相等（裁定 95 允許，理由見 risk）。** 藝人 MBID 1ba797b6。**年份：取發行年 1991；演奏年為 1967–69（區間，非單一年份）。** 刻意不釘：bb9f0f5c《’77 LIVE》與 313f7bca《The OZ Tapes》（皆＝池中已有）、6e91bcc4-a916-4437-a82d-608c8c37a299《Disque 4 –’76 Studio et Live–》（2026-04-01，Apple 1895804639，**盤名同樣含 EN DASH**，且是未來發行）、67264632《December's Black Children》(1989)、4bc32b61《裸のラリーズ》（1992-09-15 同名盤）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "East Bionic Symphonia Recorded Live；東方バイオニック交響楽団；ALM RECORDS AL-3001；Kazuo Imai",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "East Bionic Symphonia",
+  "album": "Recorded Live",
+  "year": 1976,
+  "genres": [
+   "rock"
+  ],
+  "label": "ALM RECORDS（catno AL-3001，JP 1976）",
+  "why": "East Bionic Symphonia 是 小杉武久 在美學校開的即興課程裡長出來的七人集體，1976 年由 ALM RECORDS 以 AL-3001 發行的這張是他們唯一的原盤——也是派工信點名的「ALM／Uranus」廠牌線索上最早的一張。成員之一 今井和雄 後來是 Marginal Consort 的四人之一，本組另收他 1999 年的《Play 'em as They Fall》，兩張正好把同一條人脈的頭尾接起來。實掃 seed_cards.json 全 14,424 列：**池中 0 張**。名下只有 2 個 release-group，本張是唯一的原盤。來源：MB release-group 9b0da5fd 轄下 release 的 label-info；藝人實體 e731f892。",
+  "risk": "**這是現場錄音**（`secondary-types` 含 `Live`），依主線 2026-09-07 解除的新規則收錄——**在解除之前這支團是「無論如何都建不了卡」的**：唯一 `secondary-types` 為空的 RG（`be006d63`，2000 年 Lam Records LA-3001）**轄下唯一的 release status 是 Bootleg**，兩條路都堵死；解除之後 1976 年的原盤就直接可收。**短掛名回問（第 179 條）已跑**：MB 搜「East Bionic Symphonia」回 25 個實體，完全同名者只有 1 個（e731f892，Group／JP／1976-03／disambiguation「Japanese free improv group」），其餘全是「Symphonia」與「Bionic」的分詞命中；依第 250 條只用 disambiguation 判定。撞卡：實掃全池，0 筆。⚠ 盤名極通用（Recorded Live），且 MB 上同一個團有**兩個同題 RG**（1976 原盤 9b0da5fd 與 2000 的 Bootleg 再發 be006d63）——`chk-prop` 的 `k()` 對兩者完全相同，本批只收前者，後續批不得再收後者。年份：MB first-release-date 1976，只有一個 release，**演奏年與發行年同年**。封面 CAA：release-group/9b0da5fd 回 200。Apple：jp／us 兩店搜「East Bionic Symphonia Recorded Live」皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group 9b0da5fd-f497-40b3-a499-aa6e8235449d。回問確認：title「Recorded Live」、artist-credit「East Bionic Symphonia」、first-release-date 1976、primary-type **Album**、**secondary-types ['Live']——這是 1976 年的現場錄音，演奏年與發行年同為 1976**、轄下 1 個 release（JP 1976 ALM RECORDS AL-3001，Official）。藝人 MBID e731f892-6965-4813-a4f1-09adeec1413a（Group／JP／1976-03／「Japanese free improv group」），名下只有 2 個 RG。年份取 1976＝發行年（＝演奏年）。刻意不釘：be006d63-6f14-4f49-a218-68372760b27d《Recorded Live》（2000 Lam Records LA-3001，**同題、`secondary-types` 為空，但轄下唯一 release 的 status 是 Bootleg**，不收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Taj-Mahal Travelers July 15 1972；一九七二年七月十五日；タージ・マハル旅行団；CBS/Sony SOLM 1",
+  "reissuedBy": "SHOWBOAT ＋ Special Products（2002-01-25，SWAX-501／TDCD 90621／JP）、SHOWBOAT ＋ Sony Music Special Products（2018-12-10，SWAX-501A／JP）",
+  "g": "b",
+  "artist": "Taj Mahal Travellers",
+  "album": "July 15, 1972",
+  "year": 1972,
+  "genres": [
+   "rock"
+  ],
+  "label": "CBS／Sony（catno SOLM 1，JP 1972）",
+  "why": "タージ・マハル旅行団 1972 年 7 月 15 日在草月會館的現場，同年由 CBS/Sony 以 SOLM 1 發行——這是這個以電子處理的弦樂與人聲做長時間持續音的集體的第一張唱片，也是日本地下即興進入大廠發行系統最早的一例。實掃 seed_cards.json 全 14,424 列（「Taj Mahal Travellers」「Taj Mahal」「タージ」都查）：池中只有 1 張《August 1974》(1975)，本張補的是它之前那一張、也是這個團僅有的兩張原盤中的另一張。2002 與 2018 由 SHOWBOAT 兩次重發，Apple us 店有 collectionId `1537208166`（漢數字題《一九七二年七月十五日》）。來源：MB release-group 904a0052 轄下 3 個 release 的 label-info；Apple lookup us。",
+  "risk": "**這是現場錄音**（`secondary-types` 含 `Live`），依主線 2026-09-07 解除的新規則收錄——**在解除之前這個團名下 10 個 RG 只有 1 個能收，而那 1 個就是池中已有的《August 1974》**。**短掛名回問（第 179 條）已跑**：MB 搜「Taj Mahal Travellers」回 25 個實體，完全同名者只有 1 個（d2d9dbce，Group／JP／1969／disambiguation「early 1970's japanese free improvisation/drone group」），其餘是美國藍調的 Taj Mahal 及三個同名的 rapper／producer／DJ；**實掃池中也要注意 `Taj Mahal`(3)、`Taj Mahal & Keb' Mo'`(1) 是那位美國藍調樂手、不是本團**。掛名：本 RG 的 artist-credit 是「The Taj-Mahal Travelers」（**帶 The、Mahal 前有連字號、Travelers 單 l**），與池中既有寫法「Taj Mahal Travellers」四處不同；依裁定 177 取池中寫法，下游藝人比對閘要放行（裁定 194）。⚠ 盤名分歧：Apple us 店的 collectionName 是漢數字《一九七二年七月十五日》，另有一筆 `1627688130`《July 15, 1972 & August 1974 (Remastered)》是**把本碟與池中那張合起來的雙碟包**，本機配 collectionId 要認 1537208166、不要認 1627688130（會與池中卡撞版本）。年份：MB first-release-date 1972，**演奏年與發行年同為 1972（盤名就是演奏日 1972-07-15）**，無落差。封面 CAA：release-group/904a0052 回 200。",
+  "mbNote": "釘 release-group 904a0052-caf0-3c71-8cb2-bda06189357f。回問確認：title「July 15, 1972」、artist-credit「The Taj-Mahal Travelers」、first-release-date 1972、primary-type **Album**、**secondary-types ['Live']——這是 1972-07-15 的現場錄音，演奏年與發行年同為 1972**、轄下 3 個 release（JP 1972 CBS/Sony SOLM 1／JP 2002-01-25 SHOWBOAT SWAX-501 ＋ Special Products TDCD 90621／JP 2018-12-10 SHOWBOAT SWAX-501A ＋ Sony Music Special Products TDCD 90621，全數 Official）。藝人 MBID d2d9dbce-7ac6-4bf4-bbd6-7e453927b429，名下 10 個 RG。年份取 1972＝發行年（＝演奏年）。刻意不釘：41c2784c-a7b2-35ff-9e6a-7b2a9fa49609《August 1974》（1975-05，**＝池中已有**）、f43e2f42《Live in Stockholm 1971》(2000)、3495df87／d4acbf8c 兩張《Live at Moderna Museet in Stockholm》(2011，同一趟巡演分卷)、49b1fa1e《Live at Sohgetsu Hall in Tokyo, July, 15 1972》（2011，**與本碟是同一場演出的另一次發行**，第 174 條的形狀，收了會與本卡重複）、6f923d17／d3571f2e《Live in Tokyo, August, 19th 1974, Part One／Part Two》。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kousokuya First Live 1979 Kichijoji Minor；ファースト・ライブ1979 吉祥寺マイナー；光速夜 ファースト・ライブ；P.S.F. PSFD-166",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "光束夜",
+  "album": "ファースト・ライブ1979 吉祥寺マイナー [First live 1979 Kichijoji Minor]",
+  "year": 1979,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-166，JP 2006）",
+  "why": "光束夜 1979 年在吉祥寺「マイナー」的第一場演出，2006 年才由 P.S.F. Records 以 PSFD-166 做成唱片。**マイナー 是 1978–80 年間東京地下即興最重要的展演空間**，灰野敬二、不失者、Che-SHIZU、東京的自由即興圈都從那裡出來——這張是本批唯一一份直接記錄那個場所的錄音，也是「PSF 前史」這條線名字的由來。實掃 seed_cards.json 全 14,424 列（「光束夜」「光速夜」「Kousokuya」三種都查）：池中 0 張；本組另收《1st》(1990) 與《The Dark Spot》(1997)，本張把時間軸往前推到 1979 年。來源：MB release-group d5b84838 轄下 release 的 label-info；藝人實體 ac1cda27。",
+  "risk": "**這是現場錄音**（`secondary-types` 含 `Live`），依主線 2026-09-07 解除的新規則收錄。⚠ **年份是本張最需要交代的欄位，也是本批演奏／發行落差最大的一張**：**演奏年 1979（盤名載明「ファースト・ライブ1979」）、發行年 2006（P.S.F. PSFD-166），相差 27 年。** 依本批第 2 條的例外款——**盤名自身載明錄音年份的身後／延後發行盤取原始演奏年**（與 a 組 阿部薫《スタジオ・セッション1976.3.12》同一條）——**year 取 1979**，發行年 2006 記在 mbNote。若取 2006，卡面年份會與盤名上的「1979」自相矛盾。撞卡：實掃全池，三種寫法皆 0 筆；與本組另兩張 光束夜 盤名不同。⚠ 團名正字是「光束夜」（束，不是速），派工信寫的「光速夜」已進 queryAlias。⚠ 盤名極長且日英併寫（含方括號），`chk-prop` 不擋，但 Apple／CAA 字串比對必然失準，一律以 rgMbid 解。年份窗口：**1979 是本批最早的一張**，落在 1970s–90s 窗口內。封面 CAA：release-group/d5b84838 回 200。Apple：jp／us 兩店搜「光束夜 ファースト・ライブ1979」「Kousokuya First Live 1979 Kichijoji Minor」皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group d5b84838-b8b5-4145-b280-438eb083fb5f。回問確認：title「ファースト・ライブ1979 吉祥寺マイナー [First live 1979 Kichijoji Minor]」、artist-credit「光束夜」、first-release-date 2006、primary-type **Album**、**secondary-types ['Live']——這是 1979 年在吉祥寺マイナー 的現場錄音**、轄下 1 個 release（JP 2006 P.S.F. Records PSFD-166，Official）。藝人 MBID ac1cda27-347f-4756-bf97-ee9272134a9b（Group／JP／1979；MB 正名是漢字「光束夜」，搜「Kousokuya」只回這 1 個實體），名下 7 個 RG。**年份：取原始演奏年 1979（盤名載明）；發行年 2006。這是本批兩張取演奏年的其中一張（另一張是 a 組 阿部薫《スタジオ・セッション1976.3.12》）。** 刻意不釘：80431aee《1st》與 07eb2643《The Dark Spot》（本批另收）、d497efb7《Ray Night 1991-1992 Live》（primary-type 為空）、62753c84《Live 逆流虚空》(2004)、50027559《Ray Night》(2007)、8514d30a《Echoes from Deep Underground》(2008)。"
  }
 ]
