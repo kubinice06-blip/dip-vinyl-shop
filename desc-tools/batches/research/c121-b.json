@@ -1,0 +1,336 @@
+[
+ {
+  "key": "desc4:灰野敬二|So, Black Is Myself",
+  "artist": "灰野敬二",
+  "album": "So, Black Is Myself",
+  "facts": [
+   {
+    "f": "release-group d7189513 的欄位：title「So, Black Is Myself」、artist-credit **「灰野敬二」（漢字）**、first-release-date **1997-04-10**、primary-type Album、**secondary-types 空**。轄下 **2 筆 release，都是 Official**：1997-04-10 的 CA 盤（Alien8 Recordings **ALIENCD3**，CD）與 2023-01-13 的 XW 數位版（Alien8 Recordings，無 catno）。⚠ **1997 那筆 release 層的 artist-credit 印的是羅馬字「Keiji Haino」**，只有 release-group 層是漢字——同一張碟在資料庫裡兩種掛名並存。",
+    "src": "https://musicbrainz.org/ws/2/release-group/d7189513-9915-3350-9309-7560c4e3902f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**這張碟只有一軌，長 67:30，而且那一軌的標題是一整句話**：〈Wisdom that will bless I, who live in the spiral joy born at the utter end of a black prayer.〉（含句點，共 15 個字）。1997 CD 與 2023 數位版的長度相同，但**2023 那版把軌名改成與盤名同字的〈So, Black Is Myself〉**——同一段 67 分半的錄音，兩版軌名完全不同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d7189513-9915-3350-9309-7560c4e3902f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "廠牌實體 216f5cd5「Alien8 Recordings」：area **Montréal**、type Original Production、**life-span 1996-07 起、2012-07 止（已結束）**。本張 catno ALIENCD3 發於 1997-04，**距離該廠開張只有九個月**。",
+    "src": "https://musicbrainz.org/ws/2/label/216f5cd5-9227-46e9-9826-5fd40c07d7a0?fmt=json"
+   },
+   {
+    "f": "藝人實體 00f58b1e：name「灰野敬二」、type Person、country JP、begin **1952-05-03**，別名欄同時登錄「Keiji Haino」「Haino Keiji」「Hanio Keiji」。分頁全列 **121 個 release-group**：primary-type Album 115、EP 3、Single 1、無 primary-type 2；**其中 secondary-types 為空的純 Album 66 個、帶 Live 的 44 個**。純 Album 依年份排最早的是 1981-09《わたしだけ？》，本張 1997 排在《滲有無》(1990)、《Beginning and End, Interwoven》(1994)、《運命への挑戦》(1994)、《I Said, This Is the Son of Nihilism》(1995)、《The Book of \"Eternity Set Aflame\"》(1996) 之後。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=00f58b1e-fdb3-4971-8cb0-dc5a3f188ade&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人關係欄：他是 **不失者 的成員（1978 起，attributes 標 guitar／lead vocals／original）**，也是 滲有無、Lost Aaraaff、Vajra、Nazoranai、哀秘謡、Black Stage 等團的成員——**「不失者 是他的樂團」這件事在實體關係欄查得到，不是推測**。",
+    "src": "https://musicbrainz.org/ws/2/artist/00f58b1e-fdb3-4971-8cb0-dc5a3f188ade?fmt=json&inc=artist-rels+aliases"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有一軌，長六十七分半，軌名是一整句十五個字的話",
+   "二○二三年再發時把那句話換成盤名，同一段錄音兩個名字"
+  ],
+  "sound": "整張碟就是一軌，長 67:30，軌名寫成一整句話：〈Wisdom that will bless I, who live in the spiral joy born at the utter end of a black prayer.〉——句尾還帶著句點。1997 年那張 CD 與 2023 年的數位版長度分秒不差，但後者把軌名整個換掉，改成與盤名同字的〈So, Black Is Myself〉，於是同一段六十七分半的錄音在資料庫裡留下兩個完全不同的名字。除此之外沒有第二軌、沒有分段、沒有任何一個更短的段落可以引。",
+  "keyTracks": [
+   "Wisdom that will bless I, who live in the spiral joy born at the utter end of a black prayer."
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997-04-10**，轄下最早（也是唯一的實體）release 就是 1997-04-10 的 CA 盤 ALIENCD3，另一筆是 2023-01-13 的數位再發。**演奏年與發行年沒有落差可查**——MB 沒有登錄錄音日期，**不得替它補一個錄音年**。串流店面兩店查無此碟，沒有第三個年份來源。**同名先行單曲：無。**",
+  "notes": "**`curatorWhy` 的「無伴奏人聲碟」不得寫**——MB 的 release、track、artist 三層都沒有任何編制或樂器欄位可以支撐，唯一能引的是那一軌的長度與標題。｜**`curatorWhy` 的「這是他第一次由北美獨立廠牌直接簽下的錄音」不得寫，而且與本批自己的資料相反**：同一位藝人 1996-02-21 的《The Book of \"Eternity Set Aflame\"》由 **US 的 Forced Exposure** 發行、1995 年的《I Said, This Is the Son of Nihilism》由 **US 的 Table of the Elements** 發行，**兩張都早於 1997 年的這張**。｜**「PSF 那條日本國內流通線之外的另一條出口」不得寫**（無來源的敘事）。｜**「蒙特婁的 Alien8 Recordings」查證屬實**（廠牌實體 area＝Montréal），**「創廠期編號」也站得住**（該廠 1996-07 開張、本張 1997-04 發行）。｜**「121 個 release-group、66 個純 Album」查證屬實。**｜**人名從嚴（裁定 241／250）：除了「灰野敬二」本人與掛名，本張不得寫任何個別成員或廠牌主事者的名字**——資料庫端查不到。｜⚠ **掛名分裂是實體層的事實不是推測**：1997 那筆 release 的 artist-credit 印的是羅馬字「Keiji Haino」，release-group 層才是漢字。**行文一律照卡片寫「灰野敬二」。**｜回撈候選：本張在回撈清單上記「目錄裡找不到」，本層以藝人名兩種寫法逐一覆核串流店面，**確認兩店皆無，駁回 0 筆、採信 0 筆**——**沒有逐軌時間以外的第二來源，但 MB 本身有長度，時間可以寫。**"
+ },
+ {
+  "key": "desc4:灰野敬二|Beginning and End, Interwoven",
+  "artist": "灰野敬二",
+  "album": "Beginning and End, Interwoven",
+  "facts": [
+   {
+    "f": "release-group 90c6a4e6 的欄位：title「Beginning and End, Interwoven」、artist-credit「灰野敬二」、first-release-date **1994**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：1994 年 DE 的 Streamline **STREAMLINE 1002**（CD、Official）——**沒有任何再發，版本問題在本張不存在。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/90c6a4e6-276d-36d4-8f65-5bf15171829f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1994 DE 原盤的逐軌曲目與長度（**11 軌，全部有長度**）：1〈Caught〉**1:30**、2〈Beginning and End, Interwoven〉5:10、3〈Surrounded by You〉4:02、4〈My Friend〉4:05、5〈Secretly〉3:41、6〈The Active Voice Revealed〉6:34、**7〈In Between〉14:39**、8〈Different〉8:06、9〈Even One〉6:25、10〈As It Is Now〉5:47、11〈To Excess〉3:34。**最短的〈Caught〉1:30 擺在第一軌，最長的〈In Between〉14:39 擺在正中間的第七軌**；全張合計約 63 分。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=90c6a4e6-276d-36d4-8f65-5bf15171829f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "廠牌實體 8b8141b4「Streamline」：country **DE**、area Germany、type Original Production、**begin 1993**、disambiguation「German label, continuation of Dom」。本張 catno STREAMLINE 1002，**發行於該廠成立的隔年**。",
+    "src": "https://musicbrainz.org/ws/2/label/8b8141b4-91c7-4960-9793-ed0065db69e8?fmt=json"
+   },
+   {
+    "f": "藝人實體 00f58b1e 名下 **121 個 release-group、66 個純 Album**。1994 這一年他有 3 個純 Album：本張、《運命への挑戦》、《Two Strings Will Do It》（1994-03-25，與另一位樂手合掛）。**本張是他 1990 年代第一張由日本以外的廠牌發行的純 Album**（1990《滲有無》是 JP，1995 的 Table of the Elements 與 1996 的 Forced Exposure 都在本張之後）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=00f58b1e-fdb3-4971-8cb0-dc5a3f188ade&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡最短的一分半擺在開頭，最長的十四分半擺在正中間",
+   "這張碟自始至終只發行過一次，沒有再發、沒有第二種軌數"
+  ],
+  "sound": "十一軌全部留下長度，攤開來是一條先短後長再收束的線：開場的〈Caught〉只有 1:30，是全張最短的一軌；接著〈Beginning and End, Interwoven〉5:10、〈Surrounded by You〉4:02、〈My Friend〉4:05、〈Secretly〉3:41 四軌都落在三到五分之間；到第六軌〈The Active Voice Revealed〉6:34 開始拉長，正中間的第七軌〈In Between〉一口氣走了 14:39，是全張最長也是唯一超過十分鐘的一軌；其後〈Different〉8:06、〈Even One〉6:25、〈As It Is Now〉5:47 逐級縮短，末軌〈To Excess〉3:34 收在接近開頭的尺度上。全張約 63 分，只發行過這一次。",
+  "keyTracks": [
+   "Caught",
+   "In Between",
+   "To Excess"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1994。release-group first-release-date **1994**（只到年，無月日），**轄下唯一的 release 也是 1994 年的 DE 盤**，沒有再發、沒有第二個年份可比。**演奏年 MB 未登錄，不得補寫。** 串流店面兩店查無此碟，沒有第三個年份來源。**同名先行單曲：無。**",
+  "notes": "**`curatorWhy` 的「Streamline 是 Christoph Heemann 主持的實驗音樂小廠」不得寫**——廠牌實體只登錄到 country DE、begin 1993 與「continuation of Dom」，**主事者的名字資料庫端查不到（裁定 241／250）**。｜**「STREAMLINE 1002 是該廠第二號」不得當成事實寫**：那是從 catno 尾數推出來的，MB 沒有廠牌編號序列可以佐證；**可以寫的是 catno 本身與「該廠 1993 年成立、本張 1994 年發行」**。｜**「把 灰野 帶進歐洲實驗音樂流通網的第一步」不得寫**（無來源）。｜**可以寫的序數**：以藝人目錄實數，**本張是他 1990 年代第一張由日本以外廠牌發行的純 Album**（1995 US／1996 US 兩張都在其後）——這一條經 121 個 RG 逐筆排序確認。｜**軌數與長度：11 軌全部有長度，可以放心寫時間。**｜**只有一筆 release，沒有版本歧異**——這是本組三張 灰野 裡唯一不必擔心軌數的一張。｜掛名照卡片寫「灰野敬二」。｜回撈候選：清單記「目錄裡找不到」，本層以漢字與羅馬字兩種寫法覆核串流店面，**確認兩店皆無，採信 0、駁回 0**。"
+ },
+ {
+  "key": "desc4:灰野敬二|The Book of \"Eternity Set Aflame\"",
+  "artist": "灰野敬二",
+  "album": "The Book of \"Eternity Set Aflame\"",
+  "facts": [
+   {
+    "f": "release-group 86b1999e 的欄位：title「The Book of \"Eternity Set Aflame\"」（**盤名自己帶一對半形雙引號**）、artist-credit「灰野敬二」、first-release-date **1996-02-21**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：1996-02-21 的 US 盤（Forced Exposure **FE-036**，CD、Official）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/86b1999e-a1c5-41c1-8d9a-f06b7175a698?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 US 原盤只有 **3 軌**，而且三軌是同一個標題編號排下去的：1〈Eternity Set Aflame I〉**18:41**、2〈Eternity Set Aflame II〉**12:01**、3〈Eternity Set Aflame III〉**39:32**。**全張合計 70:14，末軌一軌就佔了全張的 56%**，而且比前兩軌加起來還長 8 分半。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=86b1999e-a1c5-41c1-8d9a-f06b7175a698&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "廠牌實體 4f310838「Forced Exposure」：**area 是 Malden（麻州）、不是波士頓**，type Production，country 欄空白，life-span 全空。",
+    "src": "https://musicbrainz.org/ws/2/label/4f310838-54c0-4728-a454-30e9d80f2d04?fmt=json"
+   },
+   {
+    "f": "藝人實體 00f58b1e 名下 **121 個 release-group、其中純 Album 66 個、帶 Live 的 44 個**。1996 這一年他另有《進化してゆく恥じらい、或いは加速する原罪》與《寄り添い合いし 秩序と無秩序の気配かな》兩個純 Album（本批未收）。**本組三張（1994 DE／1996 US／1997 CA）分屬三個不同國家的廠牌，是他 1990 年代目錄裡少見的連續三年由三國廠牌接手的一段。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=00f58b1e-fdb3-4971-8cb0-dc5a3f188ade&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "三軌用同一個名字編號排下去，第三軌一軌就佔掉整張的一半以上",
+   "末軌三十九分半，比前面兩軌加起來還長八分半"
+  ],
+  "sound": "整張碟只有三軌，三軌共用同一個標題、以羅馬數字編號排下去：〈Eternity Set Aflame I〉18:41、〈Eternity Set Aflame II〉12:01、〈Eternity Set Aflame III〉39:32。全張 70:14，末軌一軌就佔掉 56%，比前面兩軌加起來還長八分半；中間那軌反而是三軌裡最短的，長度只有末軌的三成。三軌之間沒有其他曲名可引，整張的形狀就是「長—短—更長」這一條。盤名本身帶著一對半形雙引號，字串比對時會失準。",
+  "keyTracks": [
+   "Eternity Set Aflame I",
+   "Eternity Set Aflame II",
+   "Eternity Set Aflame III"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。release-group first-release-date **1996-02-21**，**轄下唯一的 release 就是這一筆**，沒有再發、沒有第二個年份。**演奏年 MB 未登錄，不得補寫。** 串流店面兩店查無此碟。**同名先行單曲：無。**",
+  "notes": "**`curatorWhy` 寫「波士頓的 Forced Exposure」要改**：廠牌實體登錄的 area 是 **Malden**（麻州的另一個城市），**不是波士頓**；**行文若要提城市只能寫 Malden，或乾脆只寫美國**。｜**「Forced Exposure 從樂評雜誌起家、後來成為美國進口地下音樂的總代理」「日本 PSF 那一批碟進入美國就是走它這條管道」「等於把代理關係翻成了發行關係」三段全部不得寫**——廠牌實體只有名字、area 與 type Production 三個欄位，其餘全是無來源敘事。｜**盤名的一對半形雙引號是實體文字的一部分**（RG title 就長這樣），**行文照卡片寫**。｜**軌名的羅馬數字是 I／II／III（大寫拉丁字母），不是阿拉伯數字**。｜**三軌都有長度，時間可以寫。**｜人名從嚴：本張不得寫任何個別成員或廠牌主事者的名字。｜回撈候選：清單記「目錄裡找不到」，本層覆核串流店面兩店皆無，**採信 0、駁回 0**。｜⚠ 與同組《So, Black Is Myself》的關係要寫對：**本張（1996 US）早於那張（1997 CA）**，行文不要把 1997 那張講成他第一次由北美廠牌發行。"
+ },
+ {
+  "key": "desc4:不失者|悲愴",
+  "artist": "不失者",
+  "album": "悲愴",
+  "facts": [
+   {
+    "f": "release-group b9ac8f9b 的欄位：title「悲愴」、artist-credit「不失者」、first-release-date **1994-09-21**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：1994-09-21 的 JP 盤（P.S.F. Records **PSFD-50**，CD、Official）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b9ac8f9b-e631-3fba-88cb-be654b3a1be9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1994 原盤 **4 軌，四軌全部是無題（MB 登錄成 [untitled]）**，但四軌都有長度：1 **5:00**、2 **9:34**、3 **15:58**、4 **44:23**。**四軌的長度是嚴格遞增的，而且末軌 44:23 比前三軌加起來（30:32）還長 14 分鐘**；全張約 74:55，幾乎把一張 CD 塞滿。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b9ac8f9b-e631-3fba-88cb-be654b3a1be9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人實體 19184fd0：name「不失者」、type Group、country JP、**begin 1978**、別名「Fushitsusha」。**成員關係欄第一列就是 灰野敬二（1978 起，attributes 標 guitar／lead vocals／original）**，其餘登錄了 小沢靖（bass，至 2008）、三浦真樹（guitar）、高橋幾郎（drums）等 8 人。",
+    "src": "https://musicbrainz.org/ws/2/artist/19184fd0-fdff-4d80-aaf6-c196d7f21946?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "藝人目錄分頁全列 **24 個 release-group、全部是 primary-type=Album**；**其中 secondary-types 為空的純 Album 14 個、帶 Live 的 9 個**。依年份排：最早的兩個 RG 是 1989-07 與 1991-07-25 兩張**同題《不失者》的現場盤**，第一張純 Album 是 1993《Allegorical Misunderstanding》，**本張 1994-09-21 是他們第二張純 Album、第五個 RG**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=19184fd0-fdff-4d80-aaf6-c196d7f21946&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "四軌全部無題，長度卻嚴格遞增：五分、九分半、十六分、四十四分",
+   "末軌一軌四十四分半，比前面三軌加起來還長十四分鐘"
+  ],
+  "sound": "四軌全部無題，資料庫裡就寫成四個空白，但四軌都留下長度，攤開來是一條嚴格遞增的線：5:00、9:34、15:58、44:23。第一軌五分鐘，第二軌接近它的兩倍，第三軌又接近第二軌的兩倍，到末軌一口氣拉到 44:23——那一軌比前面三軌加起來的 30:32 還長十四分鐘，單軌就佔掉全張的六成。全張約 74:55，幾乎把一張 CD 的容量用滿。沒有曲名可引，這張碟能講的形狀全在這四個數字上。",
+  "keyTracks": [],
+  "status": "full",
+  "yearVerified": "一致，1994。release-group first-release-date **1994-09-21**，**轄下唯一的 release 就是這一筆**，沒有再發、沒有第二個年份。**演奏年 MB 未登錄，不得補寫。** 串流店面兩店查無此碟。**同名先行單曲：無。**",
+  "notes": "**`curatorWhy` 的「他們名下 24 個 release-group 裡 primary-type=Album 且 secondary-types 為空的只有 11 個」數字錯了**：藝人目錄實數是 **24 個 RG 全部是 Album，其中純 Album 14 個、帶 Live 9 個**（另有 1 個帶 Soundtrack）。**行文若要引這個數字，寫 14 不是 11。**｜**「灰野敬二 的樂團 不失者」查證屬實**——藝人實體的成員關係欄登錄 灰野敬二 1978 起、attributes 標 original，**這是實體欄位不是推測，可以寫**；**但除了 灰野敬二 本人以外的成員名字一律不得寫**（資料庫雖有登錄，卻沒有任何欄位說他們參與的是本張）。｜**「P.S.F. 取自 High Rise 首張的盤名」不得寫成因果**：可以查證的只有「High Rise 1984 年的首張 RG 標題就是《Psychedelic Speed Freaks》」與「該樂團實體有一條 artist rename 關係，1984 年由 Psychedelic Speed Freaks 改名為 High Rise」；**廠牌因此得名這件事資料庫端查不到**。｜**「不失者 從 1989 年的雙唱片現場起就一直是它的招牌之一」不得寫**（無來源；MB 只能查到 1989-07 有一個同題現場 RG）。｜**四軌全部無題，`keyTracks` 只能留空**——下游行文不得虛構曲名。｜**四軌都有長度，時間可以寫。**｜⚠ **序數要寫對**：本張是他們**第二張純 Album**（1993《Allegorical Misunderstanding》在前），**不是第一張**。｜回撈候選：清單記「目錄裡找不到」，本層以團名漢字與羅馬字覆核串流店面，**確認兩店都只有他們 1998 年之後的別碟，本碟兩店皆無，採信 0、駁回 0**。"
+ },
+ {
+  "key": "desc4:不失者|来たる時",
+  "artist": "不失者",
+  "album": "来たる時",
+  "facts": [
+   {
+    "f": "release-group 779ecbeb 的欄位：title「来たる時」、artist-credit「不失者」、first-release-date **1997-04-21**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：1997-04-21 的 JP 盤（J‐FACTORY **TKCF-77015**，CD、Official）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/779ecbeb-d248-31a3-8668-2d03f59874fd?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 原盤 **4 軌，四軌都有曲名也都有長度**：1〈ほんの少し前に〉**4:56**、2〈僕の大事なもの〉**21:08**、3〈黒き塊〉**29:13**、4〈来たる時〉**19:49**。**開場那軌不到五分鐘，其後三軌全部超過十九分鐘**；全張約 75:06，與三年前的《悲愴》幾乎等長。**末軌與盤名同字。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=779ecbeb-d248-31a3-8668-2d03f59874fd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **24 個 release-group**，其中 **1997-04-21 這一天同時有兩個 RG**：本張（TKCF-77015）與《完結されもしない死》（`e438aba0`，TKCF-77014）——**同日、同廠、編號相鄰的雙生盤**（裁定 126 的形狀）。同一位藝人在 J‐FACTORY 的第三張是 1998-06-24 的《すでに用意されていた想い》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=19184fd0-fdff-4d80-aaf6-c196d7f21946&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 3c3026bb「J‐FACTORY」：country **JP**、area Japan，**type 欄空白、life-span 全空、disambiguation 空**——資料庫對這家廠牌只登錄到「日本」兩個字。",
+    "src": "https://musicbrainz.org/ws/2/label/3c3026bb-a6c1-4774-a7db-578849fb1877?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "開場不到五分鐘，剩下三軌每一軌都超過十九分鐘",
+   "同一天、同一家廠牌、相鄰的兩個編號，發了兩張不同的碟"
+  ],
+  "sound": "四軌，四軌都有名字也都有長度，而且長度分佈極不平均：開場的〈ほんの少し前に〉只有 4:56，其後三軌一軌比一軌重——〈僕の大事なもの〉21:08、〈黒き塊〉29:13、與盤名同字的末軌〈来たる時〉19:49，三軌全部超過十九分鐘。全張約 75:06，與三年前那張 PSF 盤幾乎等長，但那張四軌全部無題，這張四軌都取了名字。同一天、同一家廠牌、相鄰的兩個編號，還發了另一張不同的碟。",
+  "keyTracks": [
+   "ほんの少し前に",
+   "黒き塊",
+   "来たる時"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997-04-21**，**轄下唯一的 release 就是這一筆**，沒有再發。**演奏年 MB 未登錄，不得補寫。** 串流店面兩店查無此碟。⚠ **同日雙生盤的年份完全相同**（《完結されもしない死》也是 1997-04-21），**年份不能拿來區分這兩張，只能靠盤名與 catno**。**同名先行單曲：無。**",
+  "notes": "**`curatorWhy` 的「德間系的 J‐FACTORY」不得寫**——廠牌實體只登錄 country JP／area Japan，**母公司、系統歸屬資料庫端查不到**；catno 的 TKCF 字首不足以當來源。｜**「離開 P.S.F.」「地下即興進大廠發行系統」兩段不得寫**（無來源的敘事；而且他們 1996 年那張也在 J‐FACTORY，並非 1997 才轉過去）。｜**「同日發行的兩張之一」查證屬實**：779ecbeb 與 e438aba0 的 first-release-date 都是 1997-04-21、catno 相鄰（TKCF-77015／77014），**這一條可以寫**。｜**四軌都有曲名與長度，時間可以寫。**｜**末軌與盤名同字**（〈来たる時〉），下游做曲名比對時不要摺掉。｜**人名從嚴**：本張除了團名與掛名，不得寫任何成員名字。｜⚠ **軌數不是識別鍵（裁定 174）**：同一位藝人名下 24 個 RG 裡有 9 個帶 Live、多是同批素材的分卷，**行文只能引本 RG 這一筆 release 的 4 軌**。｜回撈候選：清單記「目錄裡找不到」，本層以團名漢字與羅馬字覆核串流店面，**確認兩店皆無，採信 0、駁回 0**。"
+ },
+ {
+  "key": "desc2:High Rise|High Rise II",
+  "artist": "High Rise",
+  "album": "High Rise II",
+  "facts": [
+   {
+    "f": "release-group 84dbdd71 的欄位：title「High Rise II」、artist-credit「High Rise」、first-release-date **1986**、primary-type Album、**secondary-types 空**。⚠ **轄下是 6 筆 release、不是策展層寫的 4 筆**：1986 JP **P.S.F. Records PSF-2（12\" 黑膠、6 軌）**、1993 JP **P.S.F. Records PSFD-2（CD、8 軌）**、1998 US Squealer SQLREV-1000（**12\" 黑膠、8 軌**）、1998 US Squealer SQLREV-1000（**CD、8 軌**）、2018-01-26 US Black Editions BE-002/002（12\" 黑膠、6 軌）、2018-02-09 XW Black Editions（數位、8 軌）——**全部 Official。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/84dbdd71-fd91-3582-a1ca-e1f86d9be4d5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**卡單 label 記的 1986 PSF-2 黑膠是 6 軌，而且六軌全部沒有登錄長度**：1〈Cycle Goddess〉、2〈Turn You Cry〉、3〈Cotton Top〉、4〈Last Rites〉、5〈Wipe Out〉、6〈Pop Sicle〉。**1993 年同廠的 CD（PSFD-2）把它擴成 8 軌**，多出末尾的〈Monster a Go Go〉5:22 與〈Induced Depression〉3:58，並且**在 CD 上才第一次登錄長度**：0:54／3:05／4:18／2:49／5:13／13:09。**2018 年 Black Editions 的黑膠回到 6 軌、數位版則是 8 軌——載體決定軌數。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=84dbdd71-fd91-3582-a1ca-e1f86d9be4d5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**藝人實體 2f3eb5a0 有一條 artist rename 關係：1984 年由「Psychedelic Speed Freaks」改名為「High Rise」**（begin 1984、end 1984）。實體欄位：Group／JP／begin 1984／disambiguation「Japanese heavy psych band」。廠牌實體 1d1685d5「P.S.F. Records」：country JP、area Japan、type Original Production、**begin 1984**。",
+    "src": "https://musicbrainz.org/ws/2/artist/2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "藝人目錄分頁全列 **15 個 release-group**：primary-type Album 13、無 primary-type 2；**純 Album 7 個、帶 Live 的 5 個、帶 Compilation 的 1 個**。依年份排最早的是 **1984《Psychedelic Speed Freaks》——但那一筆的 secondary-types 是 ['Live']，不是純 Album**；**本張 1986 是他們第一張 `secondary-types` 為空的 Album**，同年還有另一張《Tapes》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流店面的 collectionId **1334370094**（jp 店）：collectionName「High Rise II (High Rise II) - EP」、artistName「HIGH RISE」、releaseDate **1986-01-01**、trackCount **6**、copyright「℗ 1986 PSF Records」。`entity=song` **攤得出 6 軌、6 軌全部有 previewUrl**，曲序與 1986 黑膠逐位置相符：〈Cycle Goddess〉0:54／〈Turn You Cry〉3:06／〈Cotton Top〉4:19／**〈Last Rights〉2:49**／〈Wipe Out〉5:13／〈Pop Sicle〉13:10。⚠ **第四軌店面寫成〈Last Rights〉，MB 六個版本全部寫〈Last Rites〉——差一個字母。** 這一筆的軌數對得上 1986 黑膠，**但六個時間與 1993 年那張 CD 的登錄值分秒相符**。",
+    "src": "https://itunes.apple.com/lookup?id=1334370094&country=jp&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "一九八六年的黑膠六軌、一九九三年同廠的 CD 八軌，多出來的兩軌擺在末尾",
+   "這支樂團一九八四年才改的名，改名前叫的正是他們首張的盤名"
+  ],
+  "sound": "卡單記的是 1986 年那張 12 吋黑膠，六軌：〈Cycle Goddess〉〈Turn You Cry〉〈Cotton Top〉〈Last Rites〉〈Wipe Out〉〈Pop Sicle〉——**這六軌在原盤上沒有留下任何長度**。時間要到 1993 年同廠的 CD 才第一次登錄，而那張 CD 已經是八軌，末尾多出〈Monster a Go Go〉5:22 與〈Induced Depression〉3:58；六軌的長度在那一版上是 0:54、3:05、4:18、2:49、5:13、13:09——開場只有五十四秒，末軌〈Pop Sicle〉走了十三分鐘，兩者相差十四倍。2018 年復刻時黑膠回到六軌、數位版維持八軌，載體決定軌數這件事從頭到尾沒變過。",
+  "keyTracks": [
+   "Cycle Goddess",
+   "Last Rites",
+   "Pop Sicle"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986**，轄下最早的 release 是 1986 JP 的 PSF-2（Official、12\" 黑膠、6 軌），其後是 1993、1998×2、2018×2 共五筆再發。**串流店面那一路的年份也記 1986-01-01、℗ 也寫「℗ 1986 PSF Records」，三處一致**。**演奏年 MB 未登錄，不得補寫。** 四處對照後年份仍取 1986。**同名先行單曲：無。**",
+  "notes": "**`mbNote` 寫「轄下 4 個 release」要改成 6 個**——策展層漏掉了 **1993 JP 的 P.S.F. PSFD-2（CD、8 軌）** 與 **2018-01-26 US 的 Black Editions BE-002/002（黑膠、6 軌）**，其中漏掉的那張 1993 CD **正是本張長度資料的唯一 MB 來源**。｜**`curatorRisk` 說 1998 年 Squealer 那兩筆是「重複建檔」是錯的**：兩筆的 media 一筆是 **12\" 黑膠**、一筆是 **CD**，是兩種載體不是同一筆建兩次。（同樣的誤判也出現在同組《Dispersion》。）｜**版本與軌數是本張最大的坑（裁定 157／174）**：卡單 label 欄記的是 **1986 PSF-2（6 軌、無長度）**，**行文只能引那六軌與那六個曲名**；〈Monster a Go Go〉與〈Induced Depression〉**不是本張曲目**。**若要寫時間，必須知道那六個時間來自 1993 年的 CD 版與店面條目、不是原盤登錄值**——下游行文寧可只寫軌數與曲名、不寫秒數。｜**`curatorWhy` 的「廠牌名 Psychedelic Speed Freaks 就取自 High Rise 1984 年的首張盤名」不得寫成因果**。**可以寫的是兩件經查證的事**：(1) 樂團實體有一條 **artist rename 關係——1984 年由「Psychedelic Speed Freaks」改名為「High Rise」**；(2) 該廠牌實體的 begin 也是 **1984**。**「廠牌因此得名」資料庫端沒有來源。**｜**「P.S.F. Records 的第二號唱片」只能當 catno 陳述寫**（catno 就是 PSF-2），不得寫成「該廠第二張出版品」。｜⚠ **序數要寫對**：1984 年的《Psychedelic Speed Freaks》**secondary-types 是 ['Live']**，**本張才是他們第一張 `secondary-types` 為空的 Album**；行文寫「第二張」要說清楚是接在哪一張後面。｜**回撈候選 1334370094：逐軌比對後採信**——6 軌、曲序與 1986 黑膠逐位置相符，**但第四軌店面寫〈Last Rights〉、MB 六版全寫〈Last Rites〉，行文一律照 MB**；**店面把它標成「- EP」與 MB 的 primary-type=Album 不符，這一點策展層提醒無誤，不要因此退卡**。"
+ },
+ {
+  "key": "desc2:High Rise|Dispersion",
+  "artist": "High Rise",
+  "album": "Dispersion",
+  "facts": [
+   {
+    "f": "release-group a2239a30 的欄位：title「Dispersion」、artist-credit「High Rise」、first-release-date **1992**、primary-type Album、**secondary-types 空**。轄下 **4 筆 release**：1992 JP **P.S.F. Records PSFD-26（CD、7 軌、Official）**、1998 US Squealer SQLREV-1001（**黑膠、7 軌**、Official）、1998 US Squealer SQLREV-1001（**CD、7 軌**、Official）、2023-08-11 US Black Editions BE-016/26（**兩張 12\" 黑膠、5+4＝9 軌、status 欄空白**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a2239a30-783a-3fe8-84d5-dc40ed8f8cf9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**卡單 label 記的 1992 PSFD-26 是 7 軌，七軌全部有長度**：1〈Outside Gentiles〉5:15、2〈Nuit〉**3:57**、3〈Sadducees Faith〉**15:01**、4〈Sanctuary〉4:27、5〈Eucharist〉7:04、6〈Mainliner〉10:26、7〈Deuteronomy〉13:07。**全張約 59:17；最長的〈Sadducees Faith〉15:01 排在第三軌，最短的〈Nuit〉3:57 就緊挨在它前面**。1998 年美國的黑膠與 CD 兩筆逐軌與長度完全照抄這七軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2239a30-783a-3fe8-84d5-dc40ed8f8cf9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**2023 年 Black Editions 的兩張黑膠把它改成 9 軌並重排曲序**：第一張 1〈Outside Gentiles〉2〈Sadducees Faith〉3〈Nuit〉4〈Sanctuary〉5〈Mainliner〉、第二張 1〈Eucharist〉2〈Deuteronomy〉3〈Monster A Go Go〉4〈Induced Depression〉——**末尾兩軌是同組《High Rise II》CD 版才有的曲子，1992 年的原盤上不存在**；這一筆九軌全部沒有登錄長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2239a30-783a-3fe8-84d5-dc40ed8f8cf9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**回撈之外新查到的串流條目：collectionId 1707587883，jp 與 us 兩店都取得到**。collectionName「Dispersion」、artistName「HIGH RISE」、releaseDate **1992-01-01**、trackCount **9**、copyright「**℗ 2023 Black Editions**」。`entity=song` 攤得出 **9 軌、9 軌全部有 previewUrl**：〈Outside Gentiles〉5:17／〈Sadducees Faith〉15:03／〈Nuit〉3:58／〈Sanctuary〉4:29／〈Mainliner〉10:28／〈Eucharist〉7:07／〈Deuteronomy〉13:06／**〈Monster a Go Go (Bonus Track)〉5:22**／**〈Induced Depression (Bonus Track)〉4:00**。**曲序與末兩軌的 Bonus Track 字樣與 2023 年那套黑膠逐位置相符——上架的不是 1992 年那張七軌 CD。**",
+    "src": "https://itunes.apple.com/lookup?id=1707587883&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "藝人目錄分頁全列 **15 個 release-group**（純 Album 7、帶 Live 5、帶 Compilation 1）。依年份排：1984《Psychedelic Speed Freaks》(Album/Live)、1986《High Rise II》、1986《Tapes》、**1992 本張**、1994《Live》(Album/Live)、1996《Disallow》、1997《Psychedelic Speed Freaks 84–85》、1998《Desperado》、1999《Speed Free Sonic》……**本張是他們第三張純 Album。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "全張最長的十五分鐘那軌，緊挨在全張最短的三分五十七秒後面",
+   "三十一年後的復刻把七軌重排成九軌，多出來的兩軌來自上一張碟"
+  ],
+  "sound": "卡單記的 1992 年那張 CD 是七軌，七軌都有長度：〈Outside Gentiles〉5:15、〈Nuit〉3:57、〈Sadducees Faith〉15:01、〈Sanctuary〉4:27、〈Eucharist〉7:04、〈Mainliner〉10:26、〈Deuteronomy〉13:07，全張約 59:17。最短的〈Nuit〉3:57 與最長的〈Sadducees Faith〉15:01 是連著的兩軌，中間沒有過渡；後半段〈Mainliner〉10:26 與〈Deuteronomy〉13:07 又把長度拉回十分鐘以上，七軌裡有三軌超過十分鐘。1998 年美國的黑膠與 CD 照抄這七軌，2023 年的復刻卻重排成九軌、末尾補上兩首原盤沒有的曲子。",
+  "keyTracks": [
+   "Outside Gentiles",
+   "Nuit",
+   "Sadducees Faith"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992**，轄下最早的 release 是 1992 JP 的 PSFD-26（Official、CD、7 軌），其餘三筆是 1998×2 與 2023-08-11。**串流條目 1707587883 的 releaseDate 也記 1992-01-01，但 copyright 寫「℗ 2023 Black Editions」、曲目列也是 2023 那套九軌**——**年份標成 1992、內容卻是三十一年後那一版**。四處對照後年份仍取 1992。**演奏年 MB 未登錄，不得補寫。同名先行單曲：無。**",
+  "notes": "**⚠ `curatorRisk` 說「jp／us 兩店搜『High Rise Dispersion』皆無此碟」是錯的，本層以藝人目錄反查推翻**：串流店面 **jp 與 us 兩店都有 collectionId 1707587883**，9 軌全部有試聽。**這是本組第一筆「策展層判成查無、實際是本張」的反向更正（裁定 238／247／248）。**｜**但採信要附條件**：那 9 軌是 **2023 年復刻的曲序**（℗ 2023），**末兩軌〈Monster a Go Go〉〈Induced Depression〉不是 1992 年原盤的曲目**，且原盤第二軌是〈Nuit〉、店面第二軌是〈Sadducees Faith〉——**曲序不同**。**行文只能引 1992 年那七軌與那個曲序。**｜**`curatorRisk` 說 1998 年 Squealer 那兩筆是「同編號出現兩次、重複建檔」是錯的**：一筆是**黑膠**、一筆是**CD**，兩種載體。（同一個誤判也出現在同組《High Rise II》。）｜**`curatorWhy` 的「是這支樂團從 LP 時代進入 CD 時代之後的第一張」不得寫**——要成立必須逐一確認他們 1992 年以前每一個 RG 的載體，MB 上 1986《Tapes》的載體本層未查證；**而且同組《High Rise II》的 CD 版（PSFD-2）是 1993 年，比本張晚**，行文很容易寫反。｜**「1990 年代被美國廠牌反覆重發」查證屬實**（1998 Squealer 兩筆、2023 Black Editions 一筆）。｜**七軌都有長度，時間可以寫**——但只能寫 1992 那一版的值。｜**序數**：本張是他們**第三張純 Album**（1986 兩張在前）。｜人名從嚴：本張不得寫個別成員的名字。"
+ },
+ {
+  "key": "desc4:光束夜|1st",
+  "artist": "光束夜",
+  "album": "1st",
+  "facts": [
+   {
+    "f": "release-group 80431aee 的欄位：**RG title「1st」**、artist-credit「光束夜」、first-release-date **1990**、primary-type Album、**secondary-types 空**。轄下 **3 筆 release**：1990 JP **Ray Night Music RNM0001（12\" 黑膠、4 軌、Official，release 標題印的是《光束夜》＝團名）**、2003-04-25 JP **P.S.F. Records PSFD-132（CD、5 軌、Official，標題《1st》）**、2003 US 的一筆 **Pseudo-Release**（無廠牌、CD、5 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/80431aee-6e61-4456-9fd9-ec66402076f7?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**卡單 label 記的 1990 黑膠只有 4 軌，四軌都有長度**：1〈奇跡〉**18:42**、2〈記憶の夢〉**6:42**、3〈移り〉**15:06**、4〈暗黒場〉**7:26**，全張約 47:56。**2003 年 PSF 的 CD 版才變成 5 軌**，末尾多出〈苦痛壊歌〉**14:36**，並把前四軌微調成 18:44／6:39／15:10／7:36。**2003 年那筆美國 Pseudo-Release 則把五軌全部改成英文題**：〈The Miracle〉〈The Dreams of the Recollections〉〈Removal〉〈The Dark Spot〉〈Suffering Broken Song〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=80431aee-6e61-4456-9fd9-ec66402076f7&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人實體 ac1cda27：name **「光束夜」（束，不是速）**、type Group、country JP、**begin 1979**、別名只有「Kousokuya」與「Kōsokuya」兩筆羅馬字。成員關係欄只登錄一位：**金子寿徳（1978–2007，attributes 標 guitar／original）**。",
+    "src": "https://musicbrainz.org/ws/2/artist/ac1cda27-347f-4756-bf97-ee9272134a9b?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "藝人目錄全列 **7 個 release-group**（**純 Album 5 個**、帶 Live 1 個、無 primary-type 1 個）。依年份排：**1990 本張**、1992《Ray Night 1991-1992 Live》（無 primary-type）、1997《The Dark Spot》、2004《Live 逆流虚空》、**2006《ファースト・ライブ1979 吉祥寺マイナー》(Album/Live)**、2007-10-01《Ray Night》、2008《Echoes from Deep Underground》。**本張是他們最早的一個 release-group。** ⚠ **2007 年那張碟的標題《Ray Night》與 1990 年發行本張的廠牌同名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ac1cda27-347f-4756-bf97-ee9272134a9b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 498208a6「Ray Night Music」：country **JP**、area Japan、type Original Production，**life-span 全空、disambiguation 空**——資料庫對這家廠牌只登錄到「日本」與「原始發行」兩件事。",
+    "src": "https://musicbrainz.org/ws/2/label/498208a6-e249-43e6-bb50-2174d3c2fc80?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "原盤四軌、十三年後的再發五軌，末尾那首十四分半是後來才補上去的",
+   "同一張碟三個版本三套曲名：日文原題、日文再發、全英文的第三版"
+  ],
+  "sound": "卡單記的 1990 年那張 12 吋只有四軌，四軌都有長度：〈奇跡〉18:42、〈記憶の夢〉6:42、〈移り〉15:06、〈暗黒場〉7:26，全張約 47:56。四軌裡有兩軌超過十五分鐘，兩軌不到八分鐘，長短交錯著排。十三年後 PSF 的 CD 版才把它變成五軌——末尾補上 14:36 的〈苦痛壊歌〉，並把前四軌的長度各自微調幾秒；同一年另一個版本更把五軌全部換成英文題，〈奇跡〉變成〈The Miracle〉、〈暗黒場〉變成〈The Dark Spot〉。原盤的封面上印的還不是《1st》，是與團名同字的《光束夜》。",
+  "keyTracks": [
+   "奇跡",
+   "移り",
+   "暗黒場"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**，轄下最早的 release 是 1990 JP 的 Ray Night Music RNM0001（Official、12\" 黑膠、4 軌），其後是 2003-04-25 的 PSF CD 與同年一筆 Pseudo-Release。**演奏年 MB 未登錄，不得補寫**——⚠ 策展層說「1979 年起的演出期與發行期相差十年以上」是從**另一個 release-group（2006 年那張現場盤）的標題**推來的，**不是本張的錄音年**，行文不得把 1979 掛在這張碟上。串流店面兩店查無此碟。**同名先行單曲：無。**",
+  "notes": "**⚠ 軌數是本張最大的坑，而策展層完全沒有記到**：卡單 label 欄記的是 **1990 年的黑膠＝4 軌**，但 **2003 年的兩個版本都是 5 軌**（多出末軌〈苦痛壊歌〉）。**行文只能引四軌與那四個曲名**；〈苦痛壊歌〉**不是本張曲目**。｜**四軌都有長度，時間可以寫**，但要用 1990 黑膠那一組（18:42／6:42／15:06／7:26），**不要用 2003 CD 的 18:44／6:39／15:10／7:36**。｜**`curatorWhy` 的「由團方自營的 Ray Night Music」不得寫**——廠牌實體只登錄 JP／Original Production，**擁有者資料庫端查不到**；**可以寫的是「2007 年他們有一張碟的標題與這家廠牌同名」**（RG 50027559《Ray Night》）。｜**「這支 1979 年就在吉祥寺マイナー 演出的樂團」可以寫，但來源要說對**：能查證的是 **(1) 藝人實體 begin＝1979**、**(2) 他們 2006 年那個 release-group 的標題就寫著「ファースト・ライブ1979 吉祥寺マイナー」**——**兩件都是實體欄位**。｜**「是 PSF 前史裡活動最早、留下唱片最晚的一支」不得寫**（跨藝人的極值，本層無法回數）。｜**`curatorWhy` 說「名下 7 個 release-group，純 Album 只有 4 個」數字錯了**：藝人目錄實數是 **7 個 RG、純 Album 5 個**。｜**團名正字是「光束夜」**（藝人實體主名），別名欄只有羅馬字兩筆、**沒有「光速夜」**。｜**人名從嚴**：成員關係欄雖登錄了一位吉他手，但**沒有任何欄位說他參與的是本張**，**不得寫個別成員的名字**。｜回撈候選：清單記「目錄裡找不到」，本層以團名漢字與羅馬字覆核串流店面兩店，**確認皆無，採信 0、駁回 0**。"
+ },
+ {
+  "key": "desc4:光束夜|The Dark Spot",
+  "artist": "光束夜",
+  "album": "The Dark Spot",
+  "facts": [
+   {
+    "f": "release-group 07eb2643 的欄位：title「The Dark Spot」、**artist-credit 是「光束夜 / Masayoshi Urabe」（兩個名字用斜線並列）**、first-release-date **1997**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：1997 JP（P.S.F. Records **PSFD-90**，CD、Official）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/07eb2643-2fdb-4092-b8b0-46ffd1099c80?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 原盤 **6 軌，六軌都有長度**：1〈暗黒場〉**8:24**、2〈夢の影〉**14:23**、3〈苦痛壊歌〉**14:27**、4〈Wild Wind〉6:35、5〈平原 -Scene.1-〉**15:01**、6〈夢の影〉**10:35**。⚠ **〈夢の影〉在同一張碟上出現兩次（第 2 軌 14:23 與第 6 軌 10:35），是全張唯一重複的曲名**；全張約 69:25。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=07eb2643-2fdb-4092-b8b0-46ffd1099c80&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**本張與同組《1st》共用兩個曲名**：〈暗黒場〉在 1990 年的黑膠上是 7:26、在本張上是 8:24；〈苦痛壊歌〉在 2003 年那張 CD 上是 14:36、在本張上是 14:27。**兩軌都是同一批曲名的另一次錄音，長度各差不到一分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=80431aee-6e61-4456-9fd9-ec66402076f7&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄全列 **7 個 release-group、純 Album 5 個**，依年份排本張（1997）是**第二個 release-group、也是第二張純 Album**（1990《1st》在前）。藝人實體 ac1cda27：Group／JP／begin 1979，別名只有「Kousokuya」「Kōsokuya」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ac1cda27-347f-4756-bf97-ee9272134a9b&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一個曲名在一張碟上出現兩次，一次十四分半、一次十分半",
+   "六軌裡有三軌超過十四分鐘，最長那軌走了十五分零一秒"
+  ],
+  "sound": "六軌，六軌都有長度，而且長度全部壓在偏長那一側：〈暗黒場〉8:24、〈夢の影〉14:23、〈苦痛壊歌〉14:27、〈Wild Wind〉6:35、〈平原 -Scene.1-〉15:01、〈夢の影〉10:35，全張約 69:25，六軌裡有三軌超過十四分鐘。最特別的是〈夢の影〉在同一張碟上出現了兩次——第二軌 14:23、末軌 10:35，是全張唯一重複的曲名。另外兩個曲名〈暗黒場〉與〈苦痛壊歌〉則是七年前那張碟上就有的曲子，這次各自又錄了一遍，長度相差不到一分鐘。",
+  "keyTracks": [
+   "暗黒場",
+   "夢の影",
+   "平原 -Scene.1-"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997**（只到年），**轄下唯一的 release 也是 1997**，沒有再發、沒有第二個年份。**演奏年 MB 未登錄，不得補寫**——策展層 `mbNote` 寫「年份取 1997＝發行年，與錄音年同年」，**「與錄音年同年」這半句查不到來源，不得寫**。串流店面兩店查無此碟。**同名先行單曲：無。**",
+  "notes": "**⚠ 這個 release-group 的 artist-credit 是「光束夜 / Masayoshi Urabe」，是兩名並列的合掛**（本批第 7 條處理的形狀）。**credit 字串本身是實體欄位、可以引**，但 **`curatorWhy` 寫的「薩克斯風手」與漢字寫法「浦邊雅祥」都不得寫**——樂器與漢字名資料庫端都查不到（裁定 241／250）。**行文一律照卡片寫「光束夜」。**｜**「是這支樂團由自營盤轉進 PSF 目錄之後的代表作」不得寫**——「代表作」是極值，本層無法回數；**可以寫的是它是他們第二個 release-group、也是第二張純 Album**。｜**「本張與《1st》是他們僅有的兩張封面可解的純 Album」不得寫**：藝人目錄實數是**純 Album 5 個**，封面能不能解是策展層自己的篩選結果、不是碟的性質。｜**六軌都有長度，時間可以寫。**｜**〈夢の影〉在同一張碟出現兩次**，下游做曲名去重時不要把它摺成一軌；**`keyTracks` 只列一次。**｜**與同組《1st》共用〈暗黒場〉〈苦痛壊歌〉兩個曲名**，行文提到時要說清楚是哪一張上的哪一次。｜**曲名 5〈平原 -Scene.1-〉的連字號與句點是實體文字的一部分**，照抄。｜回撈候選：清單記「目錄裡找不到」，本層覆核串流店面兩店皆無，**採信 0、駁回 0**。"
+ }
+]
