@@ -310,5 +310,85 @@
   "why": "落差草原 WWWW 第二張專輯，2018 年自主發行，11 軌，MB release 的 label-info 是 [no label]。與三年前的《泥土 Soil》是同一團在自主發行條件下的前後兩張。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：這個團池中 0 張，兩張一起補才有目錄可言。盤名「盤 / Pán」的雙寫（漢字＋台羅拼音）本身就是這條線常見的命名方式，與裝咖人《Tsng-kha-lâng》那種寫法同形。",
   "risk": "封面：CAA release-group/4d8483c6-551c-42b3-ad5b-8f41b3dabc13 回 200，有圖。試聽：Apple 店面 tw collectionId 1434687256（落差草原 WWWW《盤》2018），**Apple 那邊盤名只寫「盤」一個字、MB 寫「盤 / Pán」**——配對要允許前綴比對，不能要求全等。撞卡風險：**盤名折疊後只剩「pán」與「盤」，是極短鍵**，跨批與線上池比對必須先過藝人閘。「á」是帶重音的拉丁字母不是非 ASCII 連字號，chk-prop 的連字號檢查不會誤報，但 NFKD 正規化會把它拆成 a＋組合符，跨系統比對時兩種形態都要試。年份分歧：無。",
   "mbNote": "釘 release-group 4d8483c6-551c-42b3-ad5b-8f41b3dabc13。回問確認：title「盤 / Pán」、artist-credit「落差草原 WWWW」、first-release-date 2018-09-05、primary-type Album、secondary-types 空、轄下 1 個 release（2018-09-05/XW/Official，[no label]）。Apple 端 collectionId 1434687256 攤開 11 軌（雨連結天與地的通道／碎花星辰／遊／渡／生長／精靈／灰色的人／慈悲／肥胖的光芒／符號學／新中心），℗ 2018 Prairie WWWW，與自主發行一致。藝人 MBID 2c2f9c19-d060-4a1d-af6a-7bf3f3c5f902。刻意不釘：a13a924c-50d6-415a-b2bb-e9779fd2ba6b《泥土 Soil》（2015，同批另一張，不是不收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "林生祥 大佛普拉斯；《大佛普拉斯》電影原聲帶；The Great Buddha+；山下民謠",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "林生祥",
+  "album": "大佛普拉斯",
+  "year": 2017,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "山下民謠 Foothills Folk（catno FHFCD170505），TW 2017-06-02",
+  "why": "林生祥為黃信堯導演《大佛普拉斯》寫的配樂，2017 年由他自營的山下民謠發行（FHFCD170505）。**簡報 2026-09-07 更正後，`secondary-types` 含 `Soundtrack` 不再是排除理由**（原文只排除 `Compilation`），這張因此收得進來。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：林生祥／生祥樂隊池中 6 張全是樂隊編制的社會題材專輯，**沒有任何一張是電影配樂**——而配樂正是他 2017 年之後產量最大的一塊（MB 上他名下 9 個 RG 有 5 個是 Soundtrack）。收這張，池中這位創作者才不是只有一種形態。**c-89 那批收了林強的四張電影原聲，林生祥這一端一張都沒有**，形狀上剛好對稱。",
+  "risk": "封面：CAA release-group/cbf1edb7-132d-436e-9315-d2ee2535ad75 回 200，有圖。試聽：Apple 店面 tw collectionId 1249258266，**Apple 的 collectionName 是《大佛普拉斯》電影原聲帶（帶書名號與「電影原聲帶」後綴）、MB 的 RG title 只有「大佛普拉斯」**——配對要用 collectionId，不能用盤名全等。撞卡風險：**盤名裡的書名號在折疊時會被剝掉，兩邊折疊後都是「大佛普拉斯」與「大佛普拉斯電影原聲帶」，不同鍵**；池中無此盤。**這張是 Soundtrack，`mbNote` 已寫明 secondary-types**；跨批要注意 c-101／c-102 那兩條原聲線是遊戲與動畫，本批這張是真人電影，不撞。年份分歧：無。",
+  "mbNote": "釘 release-group cbf1edb7-132d-436e-9315-d2ee2535ad75。回問確認：title「大佛普拉斯」、artist-credit「林生祥」、first-release-date 2017-06-02、primary-type Album、**secondary-types [Soundtrack]**、轄下 1 個 release（2017-06-02/TW/Official，catno FHFCD170505，山下民謠的編號序）。**依簡報 2026-09-07 更正（`Live`／`Soundtrack`／`Remix` 都不構成排除理由，只有 `Compilation` 要特別處理），本卡照一般 Album 寫，不填例外欄位。**藝人 MBID a6802fa4-84e0-48cc-8b16-d501a4ffae83（林生祥，Person／Taiwan／1971-11-25，alias Lin Sheng Xiang），名下 9 個 RG 全列。刻意不釘：db9ba922-d1da-48d9-938d-c8db15d588a5《電影《男人與他的海》原聲配樂》（2020）、d348386d-1316-464f-85f4-d1ebe40249d8《唱歌給你聽 電視電影原聲帶》（2024）、6c1cadd1-c84a-49dd-bb43-4324b7c3baf6《紀錄片《民主之眼》配樂原聲帶》（2025）——**三張都是 Album＋Soundtrack、CAA 狀態未逐一探測，本批名額已滿，MBID 已備妥，可直接進下一批**。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "林生祥 陽光普照；A Sun；山下民謠",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "林生祥",
+  "album": "電影《陽光普照》配樂",
+  "year": 2019,
+  "genres": [
+   "folk",
+   "classical"
+  ],
+  "label": "山下民謠 Foothills Folk（catno FHFCD190915），TW 2019-10-29，bc 4713012743174",
+  "why": "林生祥為鍾孟宏導演《陽光普照》寫的配樂，2019 年山下民謠發行（FHFCD190915，barcode 4713012743174），是《大佛普拉斯》之後兩年的第二部長片配樂。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：林生祥線池中 6 張全是專輯、0 張配樂。與同批的《大佛普拉斯》一起收，池中才看得出他 2017 之後這條完整的第二軌道；兩張同一間自營廠牌、編號相隔兩年（FHFCD170505 → FHFCD190915），目錄關係一目了然。",
+  "risk": "封面：CAA release-group/71853125-a4fb-4ddf-a44d-29334d47172e 回 200，有圖。試聽：Apple 店面 tw collectionId 1487087444（林生祥《電影《陽光普照》配樂》2019），**盤名與 MB 完全一致，這是本批少數兩邊全等的一張**。撞卡風險：**盤名含中文書名號《》**，折疊後是「電影陽光普照配樂」；池中無近似字串。**這張是 Soundtrack**，處理同《大佛普拉斯》那張。年份分歧：無。",
+  "mbNote": "釘 release-group 71853125-a4fb-4ddf-a44d-29334d47172e。回問確認：title「電影《陽光普照》配樂」、artist-credit「林生祥」、first-release-date 2019-10-29、primary-type Album、**secondary-types [Soundtrack]**、轄下 1 個 release（2019-10-29/TW/Official，山下民謠 Foothills Folk FHFCD190915，bc 4713012743174）。**依簡報 2026-09-07 更正照一般 Album 寫，不填例外欄位。**藝人 MBID a6802fa4-84e0-48cc-8b16-d501a4ffae83。刻意不釘：見同批《大佛普拉斯》那張所列的三張後期配樂。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "李英宏 誰先愛上他的；Dear Ex；顏社 KAO!INC.",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "李英宏",
+  "album": "電影《誰先愛上他的》原聲帶",
+  "year": 2018,
+  "genres": [
+   "pop",
+   "hiphop"
+  ],
+  "label": "顏社 KAO!INC.，XW 2018-11-02",
+  "why": "李英宏為徐譽庭、許智彥《誰先愛上他的》寫的電影原聲帶，2018 年由顏社發行。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：李英宏池中 0 張，整位藝人不存在。**本批原本要收他的兩張台語嘻哈專輯《台北直直撞》2016 與《水哥 2020》2020，但那兩張 CAA 404 且 Apple 店面 tw 三種查法皆 0，依本批裁定第 259 條退掉**（見 rulings 第四節 C 類）；這張是他名下唯一一張封面與試聽都查得到的碟，也是把顏社那條線在池中補到三位藝人（春艷、Leo王、李英宏）的最後一塊。**簡報 2026-09-07 更正後 Soundtrack 不再是排除理由**，這張才收得進來。",
+  "risk": "封面：CAA release-group/ae72a88f-bd51-469b-9231-287f6b77e4c3 回 200，有圖。試聽：Apple 店面 tw collectionId 1441091390（李英宏《電影《誰先愛上他的》原聲帶》2018），盤名與 MB 一致；**同片另有兩首單曲（1440132963《峇里島》、1436280779《愛上你》feat. 萬芳），配對要挑 1441091390 那一筆**。撞卡風險：池中無此盤也無此人。**這張是 Soundtrack**，處理同林生祥那兩張。年份分歧：無。",
+  "mbNote": "釘 release-group ae72a88f-bd51-469b-9231-287f6b77e4c3。回問確認：title「電影《誰先愛上他的》原聲帶」、artist-credit「李英宏」、first-release-date 2018-11-02、primary-type Album、**secondary-types [Soundtrack]**、轄下 1 個 release（2018-11-02/XW/Official，顏社）。**依簡報 2026-09-07 更正照一般 Album 寫，不填例外欄位。**藝人 MBID bef9d994-7df9-484d-acd9-3d26a37161d1（李英宏，Person／Taiwan／1986-07-06），名下 3 個 RG 全列。刻意不釘：91316452-9af8-4d87-b263-3e67e7deae82《台北直直撞》（2016，顏社；**CAA 404＋Apple tw 0，封面無來源，退進未收清單 C 類**）、4ee9c35f-5e5a-493a-ad6b-50d5b112e6bb《水哥 2020》（2020，顏社 bc 4712862000260；同上）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "生祥樂隊 把自己種回來；菊花夜行軍15週年紀念演唱會；The Night March of the Chrysanthemums 15th Anniversary Concert Highlights；Sheng Xiang & Band",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "生祥樂隊",
+  "album": "把自己種回來",
+  "year": 2022,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "好有感覺音樂（catno FHFCD220324）＋山下民謠 Foothills Folk，TW 2022-04-29，bc 4713012745246",
+  "why": "生祥樂隊 2022 年的現場錄音精選，紀念《菊花夜行軍》十五週年，由好有感覺音樂與山下民謠共同發行（FHFCD220324，barcode 4713012745246）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：生祥／林生祥線池中 6 張全是錄音室專輯，**沒有一張現場**；而《菊花夜行軍》（2001，交工樂隊）本身就在池中（掛 `交工樂隊`），這張正是那張碟十五年後的現場回望，兩張放在一起才有對照。**簡報 2026-09-07 更正後 `secondary-types` 含 `Live` 不再是排除理由**（原文只排除 `Compilation`），這張因此收得進來。**廠牌之一「好有感覺音樂」也是本批 prop-a 勞動服務那張的廠牌**，同一間獨立廠牌在池中會有兩位藝人。",
+  "risk": "封面：CAA release-group/87142d3c-b65e-43db-83e0-4ca43b909226 回 200，有圖。試聽：Apple 店面 tw 以「生祥樂隊 把自己種回來」查回 0 筆，**依第 231 條記為 tw 未上架**，試聽走無來源狀態，封面走 CAA。撞卡風險：**MB 的 RG 標題是「把自己種回來：菊花夜行軍15週年紀念演唱會 現場錄音精選 The Night March of the Chrysanthemums 15th Anniversary Concert Highlights」，中英全寫、極長；卡片只取「把自己種回來」**，依第 95 條允許，但**跨批去重時長短兩種寫法都要掃**。池中《菊花夜行軍》掛的是 `交工樂隊`，與本卡掛名不同，不撞。年份取發行年 2022；**現場演出年是 2022 年的紀念演唱會，不是 2001**，`mbNote` 已交代。",
+  "mbNote": "釘 release-group 87142d3c-b65e-43db-83e0-4ca43b909226。回問確認：title「把自己種回來：菊花夜行軍15週年紀念演唱會 現場錄音精選 The Night March of the Chrysanthemums 15th Anniversary Concert Highlights」、artist-credit「生祥樂隊」、first-release-date 2022-04-29、primary-type Album、**secondary-types [Live]**、轄下 1 個 release（2022-04-29/TW/Official，好有感覺音樂 FHFCD220324＋山下民謠 Foothills Folk，bc 4713012745246）。**依簡報 2026-09-07 更正，`Live` 不構成排除理由，照一般 Album 寫、不填例外欄位；此處明寫：這是現場錄音精選，錄音與發行同為 2022 年的十五週年紀念演唱會，不是 2001 年《菊花夜行軍》的現場。**卡片盤名只取「把自己種回來」，與 RG 標題不相等，依第 95 條允許。藝人 MBID 4d668604-473d-4eb2-8317-503e1273bf18（生祥樂隊，disambiguation「Sheng Xiang & Band」）。刻意不釘：daeb870d-d2d3-4d95-ba15-91b570216356《我庄 I-Village》、7121337a-462f-4b8b-aed3-4fe8be383ddc《圍庄》、b8145412-b16f-488b-8e76-b702002ade2d《野蓮出庄》（三張池中已有）、468f6e3f-7281-41f8-b578-f413cc1908f7《動身》（形態存疑，見 rulings 第四節 D 類）。"
  }
 ]
