@@ -1,0 +1,401 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Keiji Haino So Black Is Myself；灰野敬二 So, Black Is Myself；Haino Keiji",
+  "reissuedBy": "Alien8 Recordings（2023-01-13，XW 全球數位／實體再版）",
+  "g": "b",
+  "artist": "灰野敬二",
+  "album": "So, Black Is Myself",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "Alien8 Recordings（catno ALIENCD3，CA 1997-04-10）",
+  "why": "灰野敬二 的無伴奏人聲碟，1997 年由蒙特婁的 Alien8 Recordings 以創廠期編號 ALIENCD3 發行——這是他第一次由北美獨立廠牌直接簽下的錄音，也是 PSF 那條日本國內流通線之外的另一條出口。實掃 seed_cards.json 全 14,424 列（漢字「灰野敬二」與羅馬字「Keiji Haino」「Haino」三種都查）：池中只有 1 張，而且是**掛在羅馬字 `Keiji Haino` 底下**的《Watashi Dake?》（卡片年份記 2017）；c-116 另收了《滲有無》(1990) 尚未上架。他名下 121 個 release-group、其中 66 個是 primary-type=Album 且 secondary-types 為空，是本批深度最大的一位。本張與《Beginning and End, Interwoven》(1994)、《The Book of \"Eternity Set Aflame\"》(1996) 三張構成他 1990 年代由海外廠牌發行的一組。來源：MB release-group d7189513 轄下 2 個 release 的 label-info；藝人實體 00f58b1e。",
+  "risk": "⚠ **掛名分裂是本張最大的風險，而且是第二次記到**：池中既有那張用羅馬字 `Keiji Haino`，本批依 08-11 裁定一律用漢字 `灰野敬二`（＝MB 藝人實體主名與本 RG 的 artist-credit）。c-116 第 4 條已記過同一件事、上架時未處理，**本批再提報一次：`Keiji Haino` → `灰野敬二` 的正規化是本批上架的前置條件**，三處要同步（seed_cards.json／KV 的 desc2·rating4／Firestore card_catalog）；不改就會生出第二組分裂卡。撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 的 22 張逐筆比對，該批只取《滲有無》(1990)，不撞。**另注意池中《Watashi Dake?》就是 MB 的 67e1cebc《わたしだけ？》(1981) 的再發卡**——c-116 第 4.3 節把 67e1cebc 列進備妥名單，本批**不收**，因為那是同一張碟的異寫（裁定 49）。年份：MB first-release-date 1997-04-10＝Alien8 首版年，無演奏／發行落差。封面 CAA：release-group/d7189513 回 200。Apple：jp 店以「灰野敬二」搜到 40 筆他的其他碟（1654036944、1657259516、1462277380 等），**本碟兩店皆無**，試聽預期沒有。",
+  "mbNote": "釘 release-group d7189513-9915-3350-9309-7560c4e3902f（MBID 由 c-116 rulings 第 4.3 節備妥、本批回問覆核）。回問確認：title「So, Black Is Myself」、artist-credit「灰野敬二」、first-release-date 1997-04-10、primary-type Album、secondary-types 空、轄下 2 個 release（CA 1997-04-10 Alien8 Recordings ALIENCD3／XW 2023-01-13 Alien8 Recordings，皆 Official）。藝人 MBID 00f58b1e-fdb3-4971-8cb0-dc5a3f188ade（Person／1952-05-03），以 release-group?artist=…&limit=100&offset= 分頁全列 121 個 RG，純 Album 66 個。年份取 1997＝發行年。刻意不釘：67e1cebc-233a-34a9-b0cb-45e7d5955342《わたしだけ？》（1981，＝池中《Watashi Dake?》同碟異寫）、ee8732e3-2a6c-40c2-a55a-92b33de7d08c《滲有無》（1990，c-116 已收）、8fc8e203-0098-3fba-9c7f-34040e8b1677《I Said, This Is the Son of Nihilism》（1995 Table of the Elements TOE-CD-18，CAA 404，本批未收）、131014b7／c01f80fe《Black Blues [violent]》《Black Blues [soft]》（2004 同日發行的雙生盤，裁定 126 的形狀）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Keiji Haino Beginning and End Interwoven；灰野敬二 Beginning and End, Interwoven；Streamline",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "灰野敬二",
+  "album": "Beginning and End, Interwoven",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "Streamline（catno STREAMLINE 1002，DE 1994）",
+  "why": "灰野敬二 1994 年由德國 Streamline 發行的碟，目錄編號 STREAMLINE 1002 是該廠第二號——Streamline 是 Christoph Heemann 主持的實驗音樂小廠，這張是它把 灰野 帶進歐洲實驗音樂流通網的第一步。實掃 seed_cards.json 全 14,424 列：池中 灰野敬二 只有羅馬字掛名的 1 張（《Watashi Dake?》），1990 年代這一整段是空的，c-116 收的《滲有無》是 1990、本批這三張補的是 1994–97。他名下 66 個純 Album 裡，1990 年代由海外廠牌發行且 CAA 有封面的正是本張與《So, Black Is Myself》《The Book of \"Eternity Set Aflame\"》這三張。來源：MB release-group 90c6a4e6 轄下 release 的 label-info。",
+  "risk": "撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 逐筆比對不撞。掛名：同上一張，本批用漢字 `灰野敬二`，池中既有那張是 `Keiji Haino`，**本機上架前必須先正規化池中那張**（c-116 第 4 條、本批 rulings 第 4 條）。年份：MB first-release-date 1994，只有一個 release，無再發、無演奏／發行落差。⚠ 盤名含逗號，Apple 與 CAA 的字串比對會失準，本機以 rgMbid 解封面。封面 CAA：release-group/90c6a4e6 回 200。Apple：jp／us 兩店以「灰野敬二 Beginning and End, Interwoven」與「Keiji Haino Beginning and End Interwoven」搜尋皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group 90c6a4e6-276d-36d4-8f65-5bf15171829f。回問確認：title「Beginning and End, Interwoven」、artist-credit「灰野敬二」、first-release-date 1994、primary-type Album、secondary-types 空、轄下 1 個 release（DE 1994 Streamline STREAMLINE 1002，Official）。藝人 MBID 00f58b1e。年份取 1994＝發行年。第 174 條：他名下同一份即興錄音分成多張、以及同曲目重錄極多（《Black Blues》就有 violent／soft 兩版），軌數不是識別鍵，只以 rgMbid 判身分。刻意不釘：a775e8f5《1991 テーゼ With 灰野敬二・石塚俊明》（1992，合掛企畫盤）、ee691990《運命への挑戦》（1994 同年，本批因組內配額未收）、3f9435e4《Two Strings Will Do It》（1994 同年，與 豊住芳三郎 二重奏，掛名無法乾淨落到一人）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Keiji Haino The Book of Eternity Set Aflame；灰野敬二 Eternity Set Aflame；Forced Exposure FE-036",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "灰野敬二",
+  "album": "The Book of \"Eternity Set Aflame\"",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "Forced Exposure（catno FE-036，US 1996-02-21）",
+  "why": "灰野敬二 1996 年由波士頓的 Forced Exposure 以 FE-036 發行的碟。Forced Exposure 從樂評雜誌起家、後來成為美國進口地下音樂的總代理，日本 PSF 那一批碟在 1990 年代進入美國就是走它這條管道；這張是它直接為 灰野 發的碟，等於把代理關係翻成了發行關係。實掃 seed_cards.json 全 14,424 列：池中 灰野敬二 只有 1 張且掛羅馬字，本張不在。與 c-116 的分工：那批取的是 1990 年 PSF 的《滲有無》（噪音／ジャパコア 那一側），本批這三張取的是他 1994–97 年由歐美廠牌發行的一組，形態與流通路徑不同。來源：MB release-group 86b1999e 轄下 release 的 label-info。",
+  "risk": "⚠ **盤名含成對的半形雙引號**（The Book of \"Eternity Set Aflame\"）：JSON 已轉義，但本機在做 Apple 搜尋與 CAA 比對時字串會失準，一律以 rgMbid 解；queryAlias 已備無引號版本。撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 逐筆比對不撞。掛名：本批用漢字 `灰野敬二`（＝MB 實體主名與 artist-credit），池中那張的 `Keiji Haino` 待本機正規化。年份：MB first-release-date 1996-02-21，只有一個 release，無再發、無落差。封面 CAA：release-group/86b1999e 回 200。Apple：jp／us 兩店搜尋皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group 86b1999e-a1c5-41c1-8d9a-f06b7175a698。回問確認：title「The Book of \"Eternity Set Aflame\"」、artist-credit「灰野敬二」、first-release-date 1996-02-21、primary-type Album、secondary-types 空、轄下 1 個 release（US 1996-02-21 Forced Exposure FE-036，Official）。藝人 MBID 00f58b1e，名下 121 個 RG。年份取 1996＝發行年。刻意不釘：03daed07《進化してゆく恥じらい、或いは加速する原罪》與 10170979《寄り添い合いし 秩序と無秩序の気配かな》（皆 1996 同年，本批因組內配額未收）、b528b285《Vol. 2》（1997，與 Loren MazzaCane Connors 合掛，Apple jp 79488926）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fushitsusha Hisou；不失者 悲愴；Pathetique；P.S.F. PSFD-50",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "不失者",
+  "album": "悲愴",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-50，JP 1994-09-21）",
+  "why": "灰野敬二 的樂團 不失者 1994 年在 P.S.F. Records 的碟，目錄編號 PSFD-50。P.S.F.（Psychedelic Speed Freaks，取自 High Rise 首張的盤名）是這條線的核心廠牌，不失者 從 1989 年的雙唱片現場起就一直是它的招牌之一。實掃 seed_cards.json 全 14,424 列：池中 不失者 只有 1 張《不失者 (Double Live)》(1989)；c-116 另收了《Allegorical Misunderstanding》(1993) 尚未上架。他們名下 24 個 release-group 裡 primary-type=Album 且 secondary-types 為空的只有 11 個，本張與《来たる時》(1997) 是其中 CAA 有封面、又落在 1990 年代 PSF／J-FACTORY 兩段的兩張。來源：MB release-group b9ac8f9b 轄下 release 的 label-info；MBID 由 c-116 rulings 第 4.3 節備妥。",
+  "risk": "撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 的《Allegorical Misunderstanding》(1993) 逐筆比對不撞。⚠ 池中那張的盤名寫成「不失者 (Double Live)」——**掛名與盤名同字**，若後續批用《不失者》當盤名提案就會撞上它；本批兩張都不是同名盤，無此問題。年份：MB first-release-date 1994-09-21，只有一個 release，無再發、無演奏／發行落差。掛名：artist-credit「不失者」與池中既有寫法一致，無分裂；MB 藝人實體 19184fd0 的 disambiguation 為空但 type=Group／country=JP／begin=1978，回問已排除同名實體（搜「不失者」回 25 筆，其餘皆為「失いP」「失频」等無關實體）。封面 CAA：release-group/b9ac8f9b 回 200。Apple：jp／us 兩店搜「不失者 悲愴」「Fushitsusha Hisou」共回 2 筆，都是《Classic 100 Beethoven》這種以「悲愴」為曲名的古典合輯，**本碟兩店皆無**，試聽預期沒有。",
+  "mbNote": "釘 release-group b9ac8f9b-e631-3fba-88cb-be654b3a1be9。回問確認：title「悲愴」、artist-credit「不失者」、first-release-date 1994-09-21、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1994-09-21 P.S.F. Records PSFD-50，Official）。藝人 MBID 19184fd0-fdff-4d80-aaf6-c196d7f21946（Group／JP／1978），分頁全列 24 個 RG，純 Album 11 個。年份取 1994＝發行年。刻意不釘：cbea5a38-7796-3d54-946d-092b519453cb 與 c6849d15-7ba9-4f8e-99ec-418c81895e51 兩個同題《不失者》的 RG（1989-07／1991-07-25，皆帶 Live 次類型，前者＝池中《不失者 (Double Live)》）、a7c14229《Allegorical Misunderstanding》（1993，c-116 已收）、c2fd9e17-fb8a-325c-ad37-f51088c8ee26《もう少しこのまま》（1996，MB 的 first-release 落在一個 **Pseudo-Release** 上、實體 Official 版是 1998-06-24，且 CAA 404，本批未收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fushitsusha Kitaru Toki；不失者 来たる時；来る時；J-FACTORY TKCF-77015",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "不失者",
+  "album": "来たる時",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "J‐FACTORY（catno TKCF-77015，JP 1997-04-21）",
+  "why": "不失者 1997 年離開 P.S.F.、轉到德間系的 J‐FACTORY 之後同日發行的兩張之一（另一張是《完結されもしない死》TKCF-77014）。這一步是這條線少見的「地下即興進大廠發行系統」的實例。實掃 seed_cards.json 全 14,424 列：池中 不失者 只有 1989 年那張現場，1990 年代後半完全空白；本張與《悲愴》(1994) 一起把 PSF 期與 J‐FACTORY 期各補一張。來源：MB release-group 779ecbeb 轄下 release 的 label-info。",
+  "risk": "撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 逐筆比對不撞。⚠ 同日雙生盤：MB 上 779ecbeb《来たる時》與 e438aba0《完結されもしない死》的 first-release-date 都是 1997-04-21、廠牌與編號相鄰（TKCF-77015／77014），**是裁定 126 的典型雙胞胎**；本批只收前者，理由是後者 CAA 回 404、封面解不出來（§4：抓不到可靠封面就停止該筆）。盤名：「来たる時」有「来る時」這種常見的誤寫法，queryAlias 已補。年份：MB first-release-date 1997-04-21，只有一個 release，無再發、無落差。封面 CAA：release-group/779ecbeb 回 200。Apple：jp／us 兩店搜「不失者 来たる時」「Fushitsusha Kitaru Toki」回 40 筆，全部是 久石譲 那一掛的無關結果（Apple 的日文分詞把「時」拆開所致），**本碟兩店皆無**，試聽預期沒有。",
+  "mbNote": "釘 release-group 779ecbeb-d248-31a3-8668-2d03f59874fd。回問確認：title「来たる時」、artist-credit「不失者」、first-release-date 1997-04-21、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1997-04-21 J‐FACTORY TKCF-77015，Official）。藝人 MBID 19184fd0。年份取 1997＝發行年。刻意不釘：e438aba0-2ca2-3c40-a45f-9934749b9db1《完結されもしない死》（1997-04-21 同日，TKCF-77014，CAA 404，另有一個無日期的 Pseudo-Release《A Death Never to Be Complete》）、f79d0077《すでに用意されていた想い》（1998-06-24）、11336a21《I saw it! That which before I could only sense…》（2000）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "High Rise II；ハイライズ；High Rise 2；P.S.F. PSF-2",
+  "reissuedBy": "Squealer（1998，SQLREV-1000／US）、Black Editions（2018-02-09，XW）",
+  "g": "b",
+  "artist": "High Rise",
+  "album": "High Rise II",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSF-2，JP 1986）",
+  "why": "P.S.F. Records 的第二號唱片（PSF-2），也是這家廠牌名稱由來的樂團的第二張——廠牌名 Psychedelic Speed Freaks 就取自 High Rise 1984 年的首張盤名。這張因此同時是樂團的碟與廠牌的奠基文件，是本批「PSF 前史」這條線最核心的一張。實掃 seed_cards.json 全 14,424 列（「High Rise」與「ハイライズ」都查）：**池中 0 張**；c-116 收了首張《Psychedelic Speed Freaks》(1984) 尚未上架，本張接的就是它的下一張。1998 年美國 Squealer 以 SQLREV-1000 重發、2018 年 Black Editions 再發。來源：MB release-group 84dbdd71 轄下 4 個 release 的 label-info；MBID 由 c-116 rulings 第 4.3 節備妥。",
+  "risk": "**短掛名回問（第 179 條）已跑**：MB 搜「High Rise」回 25 個實體，名稱完全相同的只有 1 個（2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa，Group／JP／1984／disambiguation「Japanese heavy psych band」），其餘是 High Rise Bombers、High Rise Robots、High Rise Trombone Quartet 等加詞實體與 Rise Against、Rise 等噪音命中；**依第 250 條沒有用 score 排序，只用 disambiguation 判定**，且該唯一同名實體的 disambiguation 有填，可以背書。撞卡：實掃全池，High Rise 0 張，本碟不在池中；與 c-116 prop-b 的《Psychedelic Speed Freaks》(1984) 逐筆比對不撞。⚠ Apple 的形態標示有誤：jp 店 collectionId 1334370094 的 collectionName 是「High Rise II (High Rise II) - EP」，被標成 EP，但 MB 的 primary-type 是 Album、secondary-types 為空，原盤 PSF-2 是 LP；**本機不要因 Apple 的 - EP 後綴退回這張**。年份分歧：MB first-release-date 1986＝PSF 原盤年，Apple jp 的 releaseDate 也記 1986，一致。封面 CAA：release-group/84dbdd71 回 200。Apple：collectionId 1334370094（jp 店），us 店 0 筆。",
+  "mbNote": "釘 release-group 84dbdd71-fd91-3582-a1ca-e1f86d9be4d5。回問確認：title「High Rise II」、artist-credit「High Rise」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1986 P.S.F. Records PSF-2／US 1998 Squealer SQLREV-1000 ×2 筆／XW 2018-02-09 Black Editions，全數 Official）。藝人 MBID 2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa，分頁全列 15 個 RG。年份取 1986＝發行年。刻意不釘：42f31afe-8070-49ff-b96a-db3e0fac3d6d《Psychedelic Speed Freaks》（1984，c-116 已收）、9ac57505-7b51-40e7-aa8f-03ad090c87e9《Tapes》（1986 同年，**與 非常階段 的同名碟 49758e5d 撞盤名不撞卡**，本批未收）、773b4045《Psychedelic Speed Freaks 84–85》（1997，首張的擴充再發、盤名含非 ASCII 連字號）、507f5d0c《Destination: Best of High Rise》（Album+Compilation）、35f38ec2-453a-3b4c-9593-d615b9cb043a《Disallow》（1996 PSFD-78，CAA 404）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "High Rise Dispersion；ハイライズ ディスパージョン；P.S.F. PSFD-26",
+  "reissuedBy": "Squealer（1998，SQLREV-1001／US）、Black Editions（2023-08-11，BE-016／26／US）",
+  "g": "b",
+  "artist": "High Rise",
+  "album": "Dispersion",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-26，JP 1992）",
+  "why": "High Rise 1992 年在 P.S.F. 的碟，目錄編號 PSFD-26，是這支樂團從 LP 時代進入 CD 時代之後的第一張，也是他們在 1990 年代被美國廠牌反覆重發的那一張（1998 Squealer SQLREV-1001、2023 Black Editions BE-016/26）。實掃 seed_cards.json 全 14,424 列：High Rise 池中 0 張；c-116 收 1984、本批補 1986 與 1992，三張把 PSF 時期的骨幹排完。來源：MB release-group a2239a30 轄下 4 個 release 的 label-info；MBID 由 c-116 rulings 第 4.3 節備妥。",
+  "risk": "短掛名回問同上一張（唯一同名實體 2f3eb5a0，disambiguation「Japanese heavy psych band」，第 250 條的做法）。撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 不撞。⚠ **同盤名別碟**：Squealer 的兩筆 1998 release 在 MB 上是重複建檔（同編號 SQLREV-1001 出現兩次），本機做 UPC／release 比對時會看到兩筆一樣的東西，不是兩個版本。⚠ 再發 status：2023 年 Black Editions 那筆 release 的 status 是 **null**（不是 Official），其餘 3 筆為 Official；不影響身分。年份：MB first-release-date 1992＝PSF 原盤年，1998 與 2023 兩次再發都不取。封面 CAA：release-group/a2239a30 回 200。Apple：jp／us 兩店搜「High Rise Dispersion」皆無此碟（jp 店只有 High Rise II 的 1334370094），試聽預期沒有。",
+  "mbNote": "釘 release-group a2239a30-783a-3fe8-84d5-dc40ed8f8cf9。回問確認：title「Dispersion」、artist-credit「High Rise」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1992 P.S.F. Records PSFD-26 Official／US 1998 Squealer SQLREV-1001 Official ×2／US 2023-08-11 Black Editions BE-016/26 status null）。藝人 MBID 2f3eb5a0。年份取 1992＝發行年。刻意不釘：c3ed63f1《Live》（1994，Album/Live）、11fd9668《Abstract》與 ea9e32c9《Black Box》（primary-type 為空的 Live 條目）、b671e29c《Desperado》(1998) 與 a3d2187f《Speed Free Sonic》(1999)（本批因組內配額未收，可進後續批）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kousokuya 1st；光速夜；光束夜 1st；Ray Night Music RNM0001；P.S.F. PSFD-132",
+  "reissuedBy": "P.S.F. Records（2003-04-25，PSFD-132／JP，題《1st》）",
+  "g": "b",
+  "artist": "光束夜",
+  "album": "1st",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Ray Night Music（catno RNM0001，JP 1990，原題《光束夜》）",
+  "why": "光束夜 1990 年的第一張，由團方自營的 Ray Night Music 以 RNM0001 自主發行，原盤與團名同題《光束夜》；2003 年 P.S.F. Records 以 PSFD-132 重發時改題《1st》。這支 1979 年就在吉祥寺マイナー 那個場景演出的樂團，是 PSF 前史裡活動最早、留下唱片最晚的一支。實掃 seed_cards.json 全 14,424 列（「光束夜」「光速夜」「Kousokuya」三種都查）：**池中 0 張**。⚠ 派工信與 c-119 簡報寫的是「光速夜」，**MB 藝人實體的正字是「光束夜」**（束，不是速）——本批一律用 MB 的寫法，queryAlias 已補誤寫版以防後續批撞卡。名下 7 個 release-group，純 Album 只有 4 個。來源：MB release-group 80431aee 轄下 3 個 release 的 label-info；藝人實體 ac1cda27。",
+  "risk": "⚠ **盤名改過名，且原題與團名同字**：1990 原盤題《光束夜》＝團名（self-titled），2003 PSF 版題《1st》＝MB RG 主標題。依裁定 45（改過名的碟取再發名）卡片取《1st》，`selfTitled` 因此填 false；**但若後續批有人用《光束夜》當盤名提案，就會生出一張撞不到的重複卡**（裁定 49 跨文字系統＋改名雙重失準），rulings 已記。撞卡：實掃全池，三種寫法皆 0 筆。掛名回問：MB 搜「Kousokuya」只回 1 個實體（ac1cda27，Group／JP／1979，MB 上的正名是漢字「光束夜」），無同名競爭者。年份：MB first-release-date 1990＝Ray Night Music 自主盤年；2003 PSF 版不取；1979 年起的演出期與發行期相差十年以上，但 MB 未載錄音年，**不寫未查證的錄音年**。⚠ 轄下有一筆 2003 年的 US **Pseudo-Release**（無廠牌），身分比對時要跳過。封面 CAA：release-group/80431aee 回 200。Apple：jp／us 兩店搜「光束夜 1st」「Kousokuya The Dark Spot」皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group 80431aee-6e61-4456-9fd9-ec66402076f7。回問確認：RG title「1st」、artist-credit「光束夜」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1990 Ray Night Music RNM0001，release 標題為《光束夜》，Official／JP 2003-04-25 P.S.F. Records PSFD-132《1st》Official／US 2003 Pseudo-Release 無廠牌）。藝人 MBID ac1cda27-347f-4756-bf97-ee9272134a9b（Group／JP／1979），名下 7 個 RG。年份取 1990＝原盤發行年。刻意不釘：50027559-4aad-410f-be95-7f434842976b《Ray Night》（2007，與自營廠牌同名的別碟）、d497efb7《Ray Night 1991-1992 Live》（primary-type 為空＋Live）、d5b84838《ファースト・ライブ1979 吉祥寺マイナー》（2006，Album/Live，**盤名載明 1979 年演奏、2006 年才發行**，是本條線演奏／發行落差最大的一張，因帶 Live 次類型不收）、62753c84《Live 逆流虚空》(2004)、8514d30a《Echoes from Deep Underground》(2008)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kousokuya The Dark Spot；光速夜 The Dark Spot；光束夜 / Masayoshi Urabe；浦邊雅祥；P.S.F. PSFD-90",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "光束夜",
+  "album": "The Dark Spot",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-90，JP 1997）",
+  "why": "光束夜 1997 年在 P.S.F. Records 的碟（PSFD-90），與薩克斯風手 浦邊雅祥 合作，是這支樂團由自營盤轉進 PSF 目錄之後的代表作。實掃 seed_cards.json 全 14,424 列：光束夜 池中 0 張，本張與《1st》(1990) 是他們僅有的兩張封面可解的純 Album。這兩張分屬自營廠牌與 PSF 兩個階段，正好對應本批「PSF 前史」到 PSF 本體的過渡。來源：MB release-group 07eb2643 轄下 release 的 label-info；藝人實體 ac1cda27。",
+  "risk": "撞卡：實掃全池，本碟不在池中。掛名：本 RG 的 artist-credit 是「光束夜 / Masayoshi Urabe」（樂團＋客座樂手併寫），卡片取 MB 藝人實體主名「光束夜」，下游藝人比對閘要放行（裁定 194）；**注意合作者名在 credit 裡是羅馬字，但 浦邊雅祥 有漢字名**，queryAlias 已補，避免後續批用漢字寫法生出重複卡。⚠ 團名正字：派工信寫「光速夜」，MB 與本卡用「光束夜」，兩種寫法在 chk-prop 的 k() 下是不同鍵。年份：MB first-release-date 1997，只有一個 release，無再發、無落差。封面 CAA：release-group/07eb2643 回 200。Apple：jp／us 兩店搜尋皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group 07eb2643-2fdb-4092-b8b0-46ffd1099c80。回問確認：title「The Dark Spot」、artist-credit「光束夜 / Masayoshi Urabe」、first-release-date 1997、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1997 P.S.F. Records PSFD-90，Official）。藝人 MBID ac1cda27，名下 7 個 RG、純 Album 4 個。年份取 1997＝發行年，與錄音年同年。刻意不釘：80431aee《1st》（本批另收）、50027559《Ray Night》(2007)、8514d30a《Echoes from Deep Underground》(2008)——後兩張超出 1970s–90s 窗口。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "White Heaven Out；ホワイト・ヘヴン；P.S.F. PSFD-11；Black Editions BE-005",
+  "reissuedBy": "Black Editions（2020-02-28，BE-005／011／US、XW）",
+  "g": "b",
+  "artist": "White Heaven",
+  "album": "Out",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-11，JP 1991）",
+  "why": "White Heaven 1991 年在 P.S.F. Records 的第一張（PSFD-11），是這條線上除了 High Rise 之外最早被 PSF 簽下的樂團之一。2020 年由洛杉磯的 Black Editions 以 BE-005／011 重發——Black Editions 這家廠牌的整個計畫就是把 PSF 目錄逐張以黑膠復刻，本張是它前五號之一。實掃 seed_cards.json 全 14,424 列：**池中 0 張**。名下 6 個 release-group、5 個是純 Album，本批取 1991／1993／1994 三張，正好是 PSF 兩張加 Noon Disk 一張。Apple jp 店有 collectionId 1500102789。來源：MB release-group 91edf156 轄下 3 個 release 的 label-info；Apple lookup jp。",
+  "risk": "**短掛名回問（第 179 條）已跑**：MB 搜「White Heaven」回 25 個實體，名稱完全相同的只有 1 個（44f2c4a8-95e3-4eb4-9a95-ca2242b02d0b，Group／JP／1985／disambiguation「Japanese rock band」），其餘是 Bull of Heaven、Heaven 17、Barry White、The White Stripes 等分詞命中；**依第 250 條沒有用 score 排序，只用 disambiguation 判定**。撞卡：實掃全池，White Heaven 0 張，本碟不在池中。⚠ 盤名極短（Out）：Apple 搜尋噪音極高（jp 店回 42 筆裡只有 1 筆是本碟），本機配 collectionId 要認 1500102789 那一筆、不要用搜尋首筆（§4 禁止 iTunes 模糊搜尋當封面來源）。年份：MB first-release-date 1991＝PSF 原盤年，Apple jp 的 releaseDate 也記 1991，一致；2020 Black Editions 再發不取。封面 CAA：release-group/91edf156 回 200。",
+  "mbNote": "釘 release-group 91edf156-91a3-40f2-92eb-a57386ebd2bf。回問確認：title「Out」、artist-credit「White Heaven」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1991 P.S.F. Records PSFD-11／XW 2020-02-28 Black Editions／US 2020-02-28 Black Editions BE-005/011，全數 Official）。藝人 MBID 44f2c4a8-95e3-4eb4-9a95-ca2242b02d0b，名下 6 個 RG。年份取 1991＝發行年。刻意不釘：c99692e6-4282-472a-a95c-534ca1f3860a《Souvenir 1995》（2025，Album/Live，**盤名載明 1995 年演奏、2025 年才發行**，演奏／發行差三十年，因帶 Live 次類型不收）、29340b3d-2858-3ee8-87cc-d257b727c251《Levitation》（1998，本批因組內配額未收，可進後續批）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "White Heaven Strange Bedfellow；ホワイト・ヘヴン；P.S.F. PSF-27",
+  "reissuedBy": "Black Editions（2023-01-13 與 2023-01-20，XW 兩筆）",
+  "g": "b",
+  "artist": "White Heaven",
+  "album": "Strange Bedfellow",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSF-27，JP 1993）",
+  "why": "White Heaven 1993 年在 P.S.F. 的第二張（PSF-27），與 1991 年的《Out》構成他們在這家廠牌的完整段落。2023 年由 Black Editions 在全球重發兩筆。實掃 seed_cards.json 全 14,424 列：White Heaven 池中 0 張，本批三張是這支樂團的第一批卡。名下 6 個 release-group 裡純 Album 5 個，本批取 1991／1993／1994 三張，把 PSF 期與 Noon Disk 期各補上。來源：MB release-group 630fa569 轄下 3 個 release 的 label-info。",
+  "risk": "短掛名回問同《Out》那張（MB 搜「White Heaven」回 25 個實體，完全同名者唯一，44f2c4a8，disambiguation「Japanese rock band」；第 250 條的做法）。撞卡：實掃全池，本碟不在池中；本批三張 White Heaven 彼此盤名不同，跨組重複 0。⚠ MB 上 2023 年的兩筆 Black Editions release 日期相差一週（01-13／01-20）、廠牌相同、無目錄編號，**很可能是同一次發行的重複建檔**，本機做 release 比對時不要當成兩個版本。年份：MB first-release-date 1993＝PSF 原盤年，2023 再發不取。封面 CAA：release-group/630fa569 回 200。Apple：jp／us 兩店搜「White Heaven Strange Bedfellow」在本碟上 0 筆（jp 店只有《Out》1500102789 與《Next To Nothing》6766332340 兩張），試聽預期沒有。",
+  "mbNote": "釘 release-group 630fa569-57c0-42c8-9265-f608c570b7c3。回問確認：title「Strange Bedfellow」、artist-credit「White Heaven」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1993 P.S.F. Records PSF-27／XW 2023-01-13 Black Editions／XW 2023-01-20 Black Editions，全數 Official）。藝人 MBID 44f2c4a8。年份取 1993＝發行年。刻意不釘：91edf156《Out》與 4c077e57《Next to Nothing》（本批另收）、7126c55d-35f1-37c8-be75-f185cfd33ce3《Electric Cool Acid》（1995）、29340b3d《Levitation》（1998）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "White Heaven Next to Nothing；Next To Nothing；Noon Disk NOON CD-9401",
+  "reissuedBy": "Noon Disk（1996，NOON-LP-9601／JP 黑膠版）、Black Editions（2026-05-29，XW）",
+  "g": "b",
+  "artist": "White Heaven",
+  "album": "Next to Nothing",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "Noon Disk（catno NOON CD-9401，JP 1994）",
+  "why": "White Heaven 1994 年離開 P.S.F.、轉到 Noon Disk 之後的碟，先出 CD（NOON CD-9401）、1996 年才補出黑膠（NOON-LP-9601）。實掃 seed_cards.json 全 14,424 列：White Heaven 池中 0 張。本張是他們三張裡唯一不在 PSF 目錄上的，補的是這支樂團離開招牌廠牌之後那一段。Apple jp 店有 collectionId 6766332340（releaseDate 記 1994，與 MB 一致）。來源：MB release-group 4c077e57 轄下 3 個 release 的 label-info；Apple lookup jp。",
+  "risk": "短掛名回問同前兩張（44f2c4a8 唯一同名，disambiguation 有填）。撞卡：實掃全池，本碟不在池中。⚠ 盤名短且是常見英文片語（Next to Nothing）：Apple jp 店回 22 筆裡只有 1 筆是本碟，本機要認 collectionId 6766332340、不得用搜尋首筆。⚠ **MB 上有一筆未來日期的 release（XW 2026-05-29 Black Editions）**，是已公告的再發；本機取年份時要用 RG 的 first-release-date 1994，不要被最新 release 蓋掉（裁定 220 的形狀）。年份：MB first-release-date 1994＝Noon Disk CD 首版年，1996 的黑膠版與 2026 的再發都不取。封面 CAA：release-group/4c077e57 回 200。",
+  "mbNote": "釘 release-group 4c077e57-acbf-4002-9e5a-ff8553b41f27。回問確認：title「Next to Nothing」、artist-credit「White Heaven」、first-release-date 1994、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1994 Noon Disk NOON CD-9401／JP 1996 Noon Disk NOON-LP-9601／XW 2026-05-29 Black Editions，全數 Official）。藝人 MBID 44f2c4a8，名下 6 個 RG。年份取 1994＝發行年。刻意不釘：91edf156《Out》、630fa569《Strange Bedfellow》（本批另收）、c99692e6《Souvenir 1995》（2025，Album/Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Ghost Japanese psych rock；ゴースト；P.S.F. PSFD-9；Drag City DC127CD",
+  "reissuedBy": "Drag City（1997-07-08，DC127CD／US；另有無日期的 XW 版）",
+  "g": "b",
+  "artist": "Ghost",
+  "album": "Ghost",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-9，JP 1990）",
+  "why": "Ghost 1990 年的同名首張，P.S.F. Records 第九號（PSFD-9），1997 年由芝加哥的 Drag City 以 DC127CD 在美國重發——Drag City 之後接手了這支樂團整個 1990 年代之後的目錄，是 PSF 這條線通往美國獨立圈最粗的一條管道。⚠ 實掃 seed_cards.json 全 14,424 列：**池中掛「Ghost」的兩張是瑞典金屬樂團 Ghost 的《Opus Eponymous》(2010) 與《Meliora》(2015)，不是這支日本樂團——派工信與 c-119 簡報寫的「Ghost（已有 2）」是誤判，日本 Ghost 池中其實 0 張。** 本張與《Second Time Around》(1992)、《Lama Rabi Rabi》(1996) 三張是這支樂團的第一批卡。來源：MB release-group d250ffcc 轄下 3 個 release 的 label-info。",
+  "risk": "⚠ **短掛名回問（第 179 條）是本張最重要的一步，實測結果**：MB 搜「Ghost」回 25 個實體，其中名稱完全等於「Ghost」的有 **11 個**——瑞典金屬 (2bcf2e02)、**日本 psych rock (97ea6a8e，本卡)**、GHOST AND PALS (3baf9bc6)、牙買加 reggae (47c108ae)、日本視覺系 (80ced534)、法國 wall noise (e7ef330e)、義大利搖滾 (0c91bec9)、電子 Kenny Parish (cb771a40)、英國 hip hop 製作人 (ed81302a)、波蘭死金 (64b43044)、英國 garage (57647f66)。**11 個全部有填 disambiguation**，依第 250 條不看 score、只用 disambiguation 判，選中 97ea6a8e（Group／JP／1984／「Japanese psych rock」），擋下另外 10 個同名實體。撞卡：⚠ **`chk-prop` 的 k() 對「Ghost｜Ghost」與池中瑞典團的「Ghost｜Opus Eponymous」不會撞**，但**卡池顯示上會出現兩支同名不同國的樂團**，這是真實存在的同名而非分裂，rulings 已記、上架時建議在卡片備註區分。`selfTitled: true`：盤名＝團名，依 §1 屬高風險，身分以 rgMbid d250ffcc 釘死（§1 允許 rgMbid 作為 selfTitledVerified 的證據）。年份：MB first-release-date 1990＝PSF 原盤年，1997 Drag City 版不取。封面 CAA：release-group/d250ffcc 回 200。Apple：jp／us 兩店在本碟上 0 筆（jp 店有同團的 82941639《Second Time Around》與 81741406《Lama Rabi Rabi》），試聽預期沒有。",
+  "mbNote": "釘 release-group d250ffcc-df39-3fe3-a4a0-d7abc5a86924。回問確認：title「Ghost」、artist-credit「Ghost」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1990 P.S.F. Records PSFD-9／US 1997-07-08 Drag City DC127CD／XW 無日期 Drag City，全數 Official）。藝人 MBID 97ea6a8e-2011-45f0-895e-8bb082b1aa64（Group／JP／1984／disambiguation「Japanese psych rock」），名下 12 個 RG、純 Album 8 個。**同名實體回問已做，見 risk 欄的 11 個。** 年份取 1990＝發行年。刻意不釘：2bcf2e02-5bc3-4c76-bf76-41126cb11444（瑞典金屬樂團 Ghost，＝池中兩張的實體）、80ced534-a15a-4aa8-bd71-f322df296c87（日本視覺系 GHOST，同國同名）、e3faba16-66c3-3dbd-9337-2cc4d19de2fa《Damon & Naomi with Ghost》（2000，合掛盤）、dc3fb34b《Hypnotic Underworld》(2004，Apple jp 41780259) 與 43f61ac0《In Stormy Nights》(2007)（本批因 1970s–90s 窗口未收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ghost Second Time Around；ゴースト；P.S.F. PSFD-25；Drag City DC128CD；Strange Ways WAY 75",
+  "reissuedBy": "Strange Ways Records（1994，WAY 75／DE）、Drag City（1997-07-08，DC128CD／US；另有無日期的 XW 版）",
+  "g": "b",
+  "artist": "Ghost",
+  "album": "Second Time Around",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-25，JP 1992）",
+  "why": "Ghost 1992 年在 P.S.F. 的第二張（PSFD-25），是這支樂團第一張被歐洲廠牌接手的碟——1994 年德國 Strange Ways Records 以 WAY 75 發行，比 1997 年 Drag City 的美版還早三年。實掃 seed_cards.json 全 14,424 列：日本 Ghost 池中 0 張（池中掛 Ghost 的兩張是瑞典金屬樂團，見同組首張的說明）。本張與《Ghost》(1990)、《Lama Rabi Rabi》(1996) 三張把這支樂團從 PSF 到 Drag City 的路徑排完。Apple jp 店有 collectionId 82941639（releaseDate 記 1992，與 MB 一致）。來源：MB release-group fdc6d4be 轄下 4 個 release 的 label-info；Apple lookup jp。",
+  "risk": "短掛名回問同組內首張：MB 搜「Ghost」的 11 個完全同名實體全部有 disambiguation，選 97ea6a8e（「Japanese psych rock」），依第 250 條不用 score。撞卡：實掃全池，本碟不在池中；⚠ 卡池上會與瑞典團的兩張同掛「Ghost」，是真同名不是分裂。年份：MB first-release-date 1992＝PSF 原盤年，1994 德版與 1997 美版都不取；Apple jp 的 releaseDate 也是 1992，一致。封面 CAA：release-group/fdc6d4be 回 200。Apple：collectionId 82941639（jp 店），us 店 0 筆。",
+  "mbNote": "釘 release-group fdc6d4be-3991-3c2b-98e9-69298d859fad。回問確認：title「Second Time Around」、artist-credit「Ghost」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1992 P.S.F. Records PSFD-25／DE 1994 Strange Ways Records WAY 75／US 1997-07-08 Drag City DC128CD／XW 無日期 Drag City，全數 Official）。藝人 MBID 97ea6a8e。年份取 1992＝發行年。刻意不釘：2bcf2e02（瑞典 Ghost）、80ced534（日本視覺系 GHOST）、1cf3b525《Tune In, Turn On, Free Tibet》與 9bf4200b《Snuffbox Immanence》（1999-04-20 同日發行的雙生盤，裁定 126 的形狀，Apple jp 81974492）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ghost Lama Rabi Rabi；ゴースト ラマ・ラビ・ラビ；Drag City DC113CD",
+  "reissuedBy": "Drag City（2018-04-01，DC113／XW 黑膠再發）",
+  "g": "b",
+  "artist": "Ghost",
+  "album": "Lama Rabi Rabi",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "Drag City（catno DC113CD，US 1996-11-19）",
+  "why": "Ghost 1996 年直接由 Drag City 在美國發行的碟（DC113CD），是他們第一張首發不在日本的專輯——PSF 那條國內線到這裡交棒給美國獨立廠牌。2018 年 Drag City 以 DC113 重發黑膠。實掃 seed_cards.json 全 14,424 列：日本 Ghost 池中 0 張。本張是三張裡唯一非 PSF 首發的，補的是這支樂團 1990 年代後半的國際段。Apple jp 店有 collectionId 81741406（releaseDate 記 1996，與 MB 一致）。來源：MB release-group 14b8ccf7 轄下 2 個 release 的 label-info；Apple lookup jp。",
+  "risk": "短掛名回問同組內另兩張（11 個完全同名實體、全部有 disambiguation、選 97ea6a8e；第 250 條）。撞卡：實掃全池，本碟不在池中；卡池上與瑞典團同掛「Ghost」是真同名。年份：MB first-release-date 1996-11-19＝Drag City 首版；Apple jp 的 releaseDate 也記 1996，一致；2018 再發不取。⚠ 店面：本張是本組唯一首發於美國的碟，Apple 命中卻只在 **jp** 店（us 店 0 筆），與本批「店面 jp」的預設一致，但與碟的國別相反——本機不要因為是美版就只查 us 店（裁定 158／173 的形狀）。封面 CAA：release-group/14b8ccf7 回 200。",
+  "mbNote": "釘 release-group 14b8ccf7-9358-3740-92e9-f9423b8097a7。回問確認：title「Lama Rabi Rabi」、artist-credit「Ghost」、first-release-date 1996-11-19、primary-type Album、secondary-types 空、轄下 2 個 release（US 1996-11-19 Drag City DC113CD／XW 2018-04-01 Drag City DC113，皆 Official）。藝人 MBID 97ea6a8e，名下 12 個 RG。年份取 1996＝發行年。刻意不釘：2bcf2e02（瑞典 Ghost）、e3faba16《Damon & Naomi with Ghost》（2000-09-05，合掛盤，掛名無法乾淨落到 Ghost 一方）、dc3fb34b《Hypnotic Underworld》(2004-01-27) 與 43f61ac0《In Stormy Nights》(2007-01-23)（超出 1970s–90s 窗口）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Che-SHIZU A Journey；Ché-SHIZU；シェシズ；P.S.F. PSFD-53；Black Editions BE-004",
+  "reissuedBy": "Black Editions（2018-05-25，BE-004／53／US、XW）",
+  "g": "b",
+  "artist": "Ché-SHIZU",
+  "album": "A Journey",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "P.S.F. Records（catno PSFD-53，JP 1994）",
+  "why": "Ché-SHIZU 1994 年在 P.S.F. Records 的碟（PSFD-53）。這支由 向井千惠 領軍、從 1980 年代初就在東京地下場景演出的樂團，是 PSF 目錄裡最不像搖滾的一支。2018 年 Black Editions 以 BE-004／53 重發，是該廠復刻 PSF 目錄的前四號之一。實掃 seed_cards.json 全 14,424 列（「Che-SHIZU」「Ché-SHIZU」「シェシズ」都查）：**池中 0 張**。名下只有 4 個 release-group、3 個純 Album，本張是其中唯一 CAA 有封面又有 Apple 條目的。Apple jp／us 兩店同一個 collectionId 1376746822。來源：MB release-group fe806b08 轄下 3 個 release 的 label-info；Apple lookup jp／us。",
+  "risk": "⚠ **掛名的連字號是本張唯一的技術風險**：MB 藝人實體的正名是「Ché‐SHIZU」，中間那個字元是 **U+2010 HYPHEN（非 ASCII）**，`chk-prop` 的 `artist` 欄連字號檢查（裁定 186）會直接亮紅燈。本卡因此寫成 ASCII 連字號的「Ché-SHIZU」，與所釘 RG 的 artist-credit 差一個字元，**下游藝人比對閘要放行**（裁定 194）；rulings 已把這條記成本批裁定。Apple us 店顯示的也是 ASCII 連字號版「Ché-SHIZU」，jp 店則顯示片假名「シェシズ」——同一個 collectionId 三種寫法，queryAlias 已全部補上。撞卡：實掃全池，三種寫法皆 0 筆。年份分歧：MB first-release-date 1994＝PSF 原盤年，**Apple 兩店的 releaseDate 都記 2018**（Black Editions 再發年），依裁定 91／95 取 MB 的 1994。封面 CAA：release-group/fe806b08 回 200。Apple：collectionId 1376746822（jp／us 兩店同一個），試聽可期。",
+  "mbNote": "釘 release-group fe806b08-5121-44d9-a665-d23c44566870。回問確認：title「A Journey」、artist-credit「Ché‐SHIZU」（含 U+2010）、first-release-date 1994、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1994 P.S.F. Records PSFD-53／US 2018-05-25 Black Editions BE-004/53／XW 2018-05-25 Black Editions，全數 Official）。藝人 MBID 11e13bd9-3939-41f0-b9f2-881f86d82ddc（Group／JP／1980），名下 4 個 RG。**卡片掛名把 U+2010 換成 ASCII 連字號**，理由見 risk。年份取 1994＝發行年。刻意不釘：e9711519-80b1-43e4-b318-f6239a00458d《約束はできない》（1984 Zero Records O-1284，2001 Alchemy ARCD-135 再發，**是他們的首張、也是 Zero Records 這條廠牌線索的實例，但 CAA 回 404**，本批未收、記入未收清單）、f148c00a《Glimmering Star》(2002)、f4e351db《Live (1986–1988)》（2023，Album/Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Maher Shalal Hash Baz 第1集；maher shalal hash baz dai isshu；マヘル・シャラル・ハシュ・バズ；D's レーベル D-021",
+  "reissuedBy": "無廠牌名（2021-05-31，XW 再版）",
+  "g": "b",
+  "artist": "Maher Shalal Hash Baz",
+  "album": "maher shalal hash baz 第１集",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "D'sレーベル（catno D-021，JP 1985-01-01）",
+  "why": "工藤冬里 的樂團 Maher Shalal Hash Baz 的第一張，1985 年由 D'sレーベル 以 D-021 發行。這支團從 1980 年代初就以「排練不足、成員隨到隨演」的方式做大編制流行曲，是日本地下場景裡與噪音／即興並行的另一條路徑。實掃 seed_cards.json 全 14,424 列（「Maher Shalal Hash Baz」「Maher」「マヘル」都查）：**池中 0 張**。名下 65 個 release-group、32 個純 Album，本批取 1985 首張與 1996 年 Org Records 的《Return Visit to Rock Mass》兩張，分別是他們的起點與 1990 年代代表作。來源：MB release-group a96ddeee 轄下 2 個 release 的 label-info；藝人實體 23404102。",
+  "risk": "**短掛名回問（第 179 條）已跑**：MB 搜「Maher Shalal Hash Baz」回 25 個實體，完全同名者只有 1 個（23404102-1093-4170-a361-bbbd89eb6c14，Group／JP／1984／disambiguation「Japanese band」），其餘全是「Baz」的分詞命中（英國舞曲歌手、MadMusic rapper、比利時 rapper 等）；依第 250 條只用 disambiguation 判定。撞卡：實掃全池，0 筆。⚠ **盤名含全形數字「１」（U+FF11）**：`chk-prop` 的 k() 只剝非文字非數字字元、**不做 NFKC 正規化**，所以「第１集」與半形的「第1集」會摺成兩個不同的鍵——後續批若用半形提案就會生出重複卡，queryAlias 已補半形版，rulings 已記。年份：MB first-release-date 1985-01-01＝D'sレーベル 首版年，2021 的 XW 再版不取。封面 CAA：release-group/a96ddeee 回 200。Apple：jp 店以團名搜到 46 筆他們的其他碟（From a Summer to Another Summer 80967381、L'Autre Cap 1592441347、Osaka Bridge 1664469074 等），**本碟兩店皆無**，試聽預期沒有。",
+  "mbNote": "釘 release-group a96ddeee-64be-4d0c-a77e-7d8105881d70。回問確認：title「maher shalal hash baz 第１集」（全小寫＋全形數字，MB 原文照抄）、artist-credit「Maher Shalal Hash Baz」、first-release-date 1985-01-01、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1985-01-01 D'sレーベル D-021／XW 2021-05-31 無廠牌名，皆 Official）。藝人 MBID 23404102-1093-4170-a361-bbbd89eb6c14，分頁全列 65 個 RG、純 Album 32 個。年份取 1985＝發行年。刻意不釘：19ff43c3-fd4a-418c-92cb-b825ab88c7a2《pass over musings》（1985-01-01 **同日**，裁定 126 的雙生形狀）、063a3229-34d5-35fb-ab84-06583545d33b《from a summer to another summer (an egypt to another egypt)》（2000 Geographic，Apple jp 80967381 有條目但 **CAA 回 404**，本批未收、記入未收清單）、5110e90f《January 14th 1989 Kyoto/Maher Goes To Gothic Country.》（1991）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Maher Shalal Hash Baz Return Visit to Rock Mass；マヘル・シャラル・ハシュ・バズ；Org Records ORG-008CD",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Maher Shalal Hash Baz",
+  "album": "Return Visit to Rock Mass",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "Org Records（catno ORG-008CD／ORG-009CD／ORG-010CD，JP 1996，三片裝）",
+  "why": "Maher Shalal Hash Baz 1996 年在 Org Records 的三片裝——MB 的 label-info 一次列出 ORG-008CD、ORG-009CD、ORG-010CD 三個編號，是他們規模最大的一次發行。這張之後 工藤冬里 才被蘇格蘭的 Geographic／Domino 簽下、把這支團帶進英國獨立圈。實掃 seed_cards.json 全 14,424 列：Maher Shalal Hash Baz 池中 0 張。本張與 1985 年首張一組，把這支團在被英國廠牌接手之前的日本國內段落補上。來源：MB release-group eb5d9b77 轄下 release 的 label-info。",
+  "risk": "短掛名回問同組內首張（唯一同名實體 23404102，disambiguation「Japanese band」；第 250 條）。撞卡：實掃全池，本碟不在池中。⚠ 三片裝：MB 只建了一個 release、三個目錄編號寫在同一筆 label-info 裡，本機做 UPC 與 release 比對時不要期待有三筆。年份：MB first-release-date 1996，只有一個 release，無再發、無演奏／發行落差。封面 CAA：release-group/eb5d9b77 回 200。Apple：jp／us 兩店以團名與盤名搜尋共回 46 筆，全部是他們 2000 年之後由 Geographic／Domino 系發行的碟，**本碟兩店皆無**，試聽預期沒有——這與 c-116 第 6 條的規律一致（有歐美廠牌接手的碟才上得了 Apple，1990 年代的日本自主盤幾乎全空）。",
+  "mbNote": "釘 release-group eb5d9b77-4b54-4b6a-a719-3deb2f2537bc。回問確認：title「Return Visit to Rock Mass」、artist-credit「Maher Shalal Hash Baz」、first-release-date 1996、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1996 Org Records ORG-008CD; ORG-009CD; ORG-010CD，Official）。藝人 MBID 23404102，名下 65 個 RG。年份取 1996＝發行年。刻意不釘：063a3229《from a summer to another summer (an egypt to another egypt)》（2000 Geographic，CAA 404）、77106014《Souvenir de mauve》(2000)、7dd9cb5b《thinkin' bout you baby》(1991-10-26)、35611b45《法政学館 Hosei University Student Hall》(2000-11-24)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hijokaidan Romance；Hijyokaidan Romance；非常階段 ロマンス；Alchemy Records ARCD-018",
+  "reissuedBy": "Alchemy Records（2006-09-25，ARCD-173／JP）、réveil（2014-05-21，TECH-25399／JP）",
+  "g": "b",
+  "artist": "非常階段",
+  "album": "Romance",
+  "year": 1990,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Alchemy Records（catno ARCD-018，JP 1990）",
+  "why": "非常階段 1990 年在 Alchemy Records 的碟（ARCD-018），是他們從 1980 年代的現場噪音轉向錄音室構成之後的一張。Alchemy 是 JOJO広重 自己的廠牌，這條線與本批 PSF 那一側是同時期並行的兩個自主體系。實掃 seed_cards.json 全 14,424 列（漢字「非常階段」與羅馬字「Hijokaidan」「Hijyokaidan」三種都查）：池中 2 張（《Viva Angel》1984、《King of Noise》1985），c-116 另收《蔵六の奇病》(1982)、《Modern》(1989) 尚未上架；**1990 年代這一段目前是空的**，本張與《Windom》(1991) 補的就是那一段。MBID 由 c-116 rulings 第 4.3 節備妥。來源：MB release-group f8b1930d 轄下 3 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 的兩張 非常階段 逐筆比對不撞。掛名：c-116 第 3 條已記這支團在 MB 上有**三種 credit 並存**（漢字「非常階段」／羅馬字「Hijokaidan」／拼法不同的「Hijyokaidan」）；本 RG 的 credit 是漢字，與池中既有寫法一致，但**同組的《Windom》credit 是「Hijokaidan」**，兩張掛名要一起寫成漢字（裁定 177 第一步）。曲風：依 c-116 的先例，非常階段 一律歸 `electronic`（該批 prop-b 的 17 張噪音卡全部如此），與本組其他 rock 卡分流。年份：MB first-release-date 1990＝Alchemy 原盤年，2006 與 2014 兩次再發不取。封面 CAA：release-group/f8b1930d 回 200。Apple：jp／us 兩店搜「非常階段 Romance」「Hijokaidan Romance」皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group f8b1930d-9601-4d0e-ade4-e92da726863f。回問確認：title「Romance」、artist-credit「非常階段」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1990 Alchemy Records ARCD-018／JP 2006-09-25 Alchemy Records ARCD-173／JP 2014-05-21 réveil TECH-25399，全數 Official）。藝人 MBID d8e649be-873a-412c-84b5-2f186a9a9c73（Group／JP／1979），分頁全列 62 個 RG。年份取 1990＝發行年。刻意不釘：290a6d01《蔵六の奇病》與 f6f05cce《Modern》（c-116 已收）、47cdc236《Viva Angel》與 5e070ace《King of Noise》（池中已有）、49758e5d-9629-31a4-8372-ea8df7439dc1《Tapes》（1986 ARLP012，CAA 200，本批因組內配額未收、可進後續批）、b928c001／74fce452 兩個同題《終末処理場》（Album+Compilation）、936f9b95 等 8 個《Legendary Live Collection》（primary-type Other）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hijokaidan Windom；Hijyokaidan Windom；非常階段 ウィンダム；Alchemy Records ARCD-038",
+  "reissuedBy": "réveil（2014-05-21，TECH-25400／JP）",
+  "g": "b",
+  "artist": "非常階段",
+  "album": "Windom",
+  "year": 1991,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Alchemy Records（catno ARCD-038，JP 1991）",
+  "why": "非常階段 1991 年在 Alchemy Records 的碟（ARCD-038），緊接 1990 年的《Romance》，是他們 1990 年代初連續兩年在自家廠牌發片的第二張。實掃 seed_cards.json 全 14,424 列：池中 2 張都是 1980 年代中期（《Viva Angel》1984、《King of Noise》1985），c-116 收的兩張是 1982 與 1989；本張是這支團在池中年份最晚的一張，把 1980–91 這十年排成連續。2014 年由 réveil 以 TECH-25400 重發。MBID 由 c-116 rulings 第 4.3 節備妥。來源：MB release-group 1f519c79 轄下 2 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池，本碟不在池中；與 c-116 prop-b 不撞；與同組《Romance》盤名不同、跨組重複 0。⚠ 掛名：**本 RG 的 artist-credit 是羅馬字「Hijokaidan」，同組《Romance》卻是漢字「非常階段」**——c-116 第 3 條記的三形並存在本批同一組內同時出現。依裁定 177 第一步（池中已有這位藝人 → 沿用池中寫法）兩張一律寫漢字「非常階段」，下游藝人比對閘要放行 credit 與掛名不同字（裁定 194）。曲風 `electronic`，理由同《Romance》。年份：MB first-release-date 1991＝Alchemy 原盤年，2014 再發不取。封面 CAA：release-group/1f519c79 回 200。Apple：jp／us 兩店搜「非常階段 Windom」「Hijokaidan Tapes」皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group 1f519c79-10dc-3687-97b1-2f84538ecec2。回問確認：title「Windom」、artist-credit「Hijokaidan」（羅馬字）、first-release-date 1991、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1991 Alchemy Records ARCD-038／JP 2014-05-21 réveil TECH-25400，皆 Official）。藝人 MBID d8e649be，名下 62 個 RG。年份取 1991＝發行年。刻意不釘：f8b1930d《Romance》（本批另收）、f690c131《Originals》（1982-06，credit 為第三種寫法「Hijyokaidan」）、f66a6cd7《Δ8000 / Prelude to Pallo》(1985)、983fbdf5《Limited Edition》(1987)、e5c06a47《No Paris / No Harm》(1988)（皆 CAA 未查、本批因組內配額未收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kazuo Imai Play em as They Fall；Barre Phillips & Kazuo Imai；今井和雄 プレイ・エム・アズ・ゼイ・フォール；Station Kids SKCY-1002",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "今井和雄",
+  "album": "Play 'em as They Fall",
+  "year": 1999,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Station Kids（catno SKCY-1002，JP 1999-12）",
+  "why": "今井和雄 與低音提琴手 Barre Phillips 的二重奏，1999 年由 Station Kids 以 SKCY-1002 發行。今井 是 1976 年 East Bionic Symphonia 的成員之一、後來又是 Marginal Consort 的四人之一，是把 1970 年代的集體即興實踐一路帶到 1990 年代的關鍵人物。實掃 seed_cards.json 全 14,424 列（漢字「今井和雄」與羅馬字「Kazuo Imai」都查——池中的「Nobuko Imai 今井信子」是中提琴家、不同人）：**池中 0 張**。他名下只有 6 個 release-group，其中 primary-type=Album 且 secondary-types 為空的有 5 個，但 CAA 有封面的只有本張。來源：MB release-group 63cd362e 轄下 release 的 label-info；藝人實體 37020a36。",
+  "risk": "撞卡：實掃全池，今井和雄 0 張；⚠ 實掃時「今井」這個姓會命中池中的「Nobuko Imai 今井信子」（中提琴家，Berlioz 那張）與「今井美樹」，**兩者都不是同一人**，逐筆核對後排除。掛名：本 RG 的 artist-credit 是「Barre Phillips & Kazuo Imai」——外國樂手在前、且是二重奏；卡片取 MB 藝人實體主名的漢字「今井和雄」（08-11 裁定），把卡片掛在日本這一側是策展判斷（Barre Phillips 池中 0 張、本批的主題是日本地下即興），下游藝人比對閘要放行（裁定 194）。曲風：`jazz`（自由即興／低音提琴與吉他的二重奏），與本組其他 rock／electronic 卡分流。年份：MB first-release-date 1999-12，只有一個 release，無再發、無演奏／發行落差。封面 CAA：release-group/63cd362e 回 200。Apple：jp／us 兩店搜「今井和雄 Play em as They Fall」「Kazuo Imai Barre Phillips」皆 0 筆，試聽預期沒有。",
+  "mbNote": "釘 release-group 63cd362e-0da0-4e98-9cd2-f67593476b21。回問確認：title「Play 'em as They Fall」、artist-credit「Barre Phillips & Kazuo Imai」、first-release-date 1999-12、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1999-12 Station Kids SKCY-1002，Official）。藝人 MBID 37020a36-1a05-49f5-9f59-e3885961c47b（Person／JP／1955-09-24／disambiguation「Japanese free improv guitarist」），名下 6 個 RG。年份取 1999＝發行年。刻意不釘：57515d65-23ff-4f71-b12b-7cf6a51a2227《How Will We Change?》（1995 P.S.F. Records PSFD-70，**CAA 回 404 且 release status 為 null**，本批未收、記入未收清單）、85853cd7《Une chance pour l'ombre》(2004)、190d1c53《Orbit 2: Voyaging Antipodes》(2006)、60393038《Molecules》(2018)（皆超出 1970s–90s 窗口）、2383c32b《Soloworks (Far and Wee)》（2004，Album/Live）。"
+ }
+]
