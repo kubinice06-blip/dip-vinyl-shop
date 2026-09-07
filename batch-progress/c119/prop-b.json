@@ -4,463 +4,233 @@
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "落日飛車 Soft Storm；Sunset Rollercoaster；落日飛車 Sunset Rollercoaster",
+  "queryAlias": "閃靈 醒靈寺大決戰；醒靈寺大決戦；Final Battle at Sing Ling Temple；ChthoniC；閃靈 CHTHONIC",
   "reissuedBy": "",
   "g": "b",
-  "artist": "落日飛車",
-  "album": "SOFT STORM",
-  "year": 2020,
+  "artist": "閃靈",
+  "album": "醒靈寺大決戰",
+  "year": 2012,
+  "genres": [
+   "rock"
+  ],
+  "label": "Ciong Zo 閃靈自營（catno CHVA120202），TW 2012-02-15，bc 4717954160549；日本版 Howling Bull HWCY-1302",
+  "why": "閃靈 2012 年的現場錄音，錄的是他們在南投醒靈寺的演出，台灣版由樂團自營的 Ciong Zo 發行（CHVA120202），日本版由 Howling Bull Records 發行（HWCY-1302）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：閃靈池中 4 張、分在 `閃靈`(2) 與 `閃靈 CHTHONIC`(2) 兩個掛名下，全部是錄音室專輯；c-91/a 另已認領五張錄音室盤。**這支台語金屬樂團在池中一張現場都沒有**，而現場正是他們 2010 年代最主要的發表形態（MB 名下六張 Album＋Live 全在 2012–2021）。**簡報 2026-09-07 第 253 條把「secondary-types 為空」更正掉之後，這一段才收得進來。**",
+  "risk": "封面：CAA release-group/7c184858-2573-4d75-b40a-1f320ac64b6f 回 200，有圖。試聽：Apple 店面 tw 查到 collectionId 6780782681，**但那筆是 2026 年重新上架的《醒靈寺大決戰:演唱會實錄 (Live)》**——同一場演出、不同的商品年份，配對時要接受年份不一致（卡片取 MB 原盤年 2012）。**⚠ 異體字**：MB 的 RG 標題用日式「戦」，卡片依店主 2026-09-06「中文一律繁體」的裁定寫「戰」，Apple 端也是「戰」；`chk-prop` 的 NFKC 摺不掉「戦／戰」，跨批比對兩種都要試。撞卡風險：**掛名依 08-11 裁定寫 `閃靈`，砍掉併寫的 CHTHONIC**；池中四張分在 `閃靈`(2) 與 `閃靈 CHTHONIC`(2) 兩個掛名下，**本機併名之前兩種寫法都要掃**。**MB 的 artist-credit 在這幾筆現場盤上多半記成拉丁 `ChthoniC`**，比對不要拿 artist-credit 當鍵（第 20 條）。年份分歧：MB 2012-02-15（TW 原盤）／Apple 2026（重新上架），卡片取 2012。",
+  "mbNote": "釘 release-group 7c184858-2573-4d75-b40a-1f320ac64b6f。回問確認：title「醒靈寺大決戦: Final Battle at Sing Ling Temple」、artist-credit「ChthoniC」、first-release-date 2012-02-15、primary-type Album、**secondary-types [Live]**、轄下 4 個 release（2012-02-15/TW/Official Ciong Zo 4717954160594 ×2、2012-02-22/JP/Official Howling Bull Records HWCY-1302 bc 4527313113020、2012-02-15/TW/Official Ciong Zo CHVA120202 bc 4717954160549）。**依第 253 條 `Live` 不構成排除理由，照一般 Album 寫、不填例外欄位；此處明寫：現場錄音，演出與發行同為 2011–2012 年的醒靈寺演出，不是身後整編。**卡片盤名取繁體「醒靈寺大決戰」，與 RG 標題不相等，依第 95 條允許。藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650（MB 主名 ChthoniC，Group／Taiwan／1995，disambiguation「Taiwanese death metal band」），名下 RG 以 release-group?artist=…&limit=100&offset= 分頁全列 48 筆。刻意不釘：01bc3a74-697e-438c-b1ca-3b32b0f3abe2《Takasago Army: 高砂軍》（2011，池中已有）、a456d342-2863-3506-ae55-4479ddebaecb《永劫輪迴》與 7fb51ed0-345c-475d-a9e7-46c8abb1efe7《祖靈之流》與 01630d9a-b270-4b14-a3eb-80f297fb3461《Seediq Bale》（池中已有）、63a65eb3-0b7d-40a8-9334-65a03224515e《Bú-Tik》／7d2cff58-ae5e-4a6e-8b41-ceb3f369b351《失竊千年》／098341af-6e4f-4c88-b426-8d393e0a4e7c《Battlefields of Asura》／2c6eb5b4-13f2-4a23-8a8d-80de177be0a8《靈魄之界》／abfaaaf6-e1c3-496a-8310-4aaa43b887e8《十殿》（**五張都在 c-91/a**）、061685f9-749a-4f44-ac97-2acf2d745403《鎮魂護國精選集暨紀錄DVD》（2016，Album＋Live，但盤名自陳是「精選集暨紀錄 DVD」，形態存疑，依第 227 條不收，見 rulings 未收清單）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "閃靈 演武；演武 Ián-Bú；Ián-Bú；ChthoniC；閃靈 CHTHONIC",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "閃靈",
+  "album": "演武",
+  "year": 2013,
+  "genres": [
+   "rock"
+  ],
+  "label": "Ciong Zo 閃靈自營（catno CHVA131102），TW 2013-11-02；日本版 Ward Records VQBD-10169／10170、歐美版 Eagle Vision",
+  "why": "《武德 Bú-Tik》（2013）那一輪巡演的現場錄音，同年 11 月由樂團自營的 Ciong Zo 發行（CHVA131102），隔年另有日本 Ward Records 與歐美 Eagle Vision 五個版本。**盤名的台羅拼音 `Ián-Bú` 與《Bú-Tik》同一套拼寫系統**，是這條線少見的、把台語羅馬字印在封面上的碟。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中閃靈 4 張皆為錄音室盤、零現場；c-91/a 已認領《武德》這張錄音室盤，**這張正是它的現場對照**，兩張一起進池才有意義。",
+  "risk": "封面：CAA release-group/0f336b56-d8ee-4204-9a1f-bb7891344027 回 200，有圖。試聽：Apple 店面 tw collectionId 6780784685，**盤名是 2026 年重新上架的《演武:演唱會實錄 (Live)》**，同一場演出、商品年份不同，卡片取 MB 原盤年 2013。**⚠ 台羅拼音的長音符**：MB 標題「演武 Ián-Bú」含 `á` 與 `ú`，NFKD 正規化會把它們拆成基字母＋組合符，跨系統比對兩種形態都要試；`chk-prop` 的非 ASCII 連字號檢查不會誤報（那是重音不是連字號）。撞卡風險：**掛名依 08-11 裁定寫 `閃靈`，砍掉併寫的 CHTHONIC**；池中四張分在 `閃靈`(2) 與 `閃靈 CHTHONIC`(2) 兩個掛名下，**本機併名之前兩種寫法都要掃**。**MB 的 artist-credit 在這幾筆現場盤上多半記成拉丁 `ChthoniC`**，比對不要拿 artist-credit 當鍵（第 20 條）。**卡片盤名只取「演武」**，與 RG 標題不相等，依第 95 條允許，但跨批去重時長短兩種寫法都要掃。年份分歧：MB 2013-11-02，海外版 2014，卡片取 2013。",
+  "mbNote": "釘 release-group 0f336b56-d8ee-4204-9a1f-bb7891344027。回問確認：title「演武 Ián-Bú」、artist-credit「ChthoniC」、first-release-date 2013-11-02、primary-type Album、**secondary-types [Live]**、轄下 5 個 release（2013-11-02/TW/Official Ciong Zo CHVA131102、2014-02-05/JP/Official Ward Records VQBD-10169 bc 4562387194049、2014-02-05/JP/Official Ward Records VQBD-10170 bc 4562387194056、2014/XE/Official Eagle Vision EREDV1019 bc 5034504101975、2014/US/Official Eagle Vision EV306409 bc 801213064090）。**依第 253 條照一般 Album 寫、不填例外欄位；明寫：現場錄音，演出與首發同為 2013 年《武德》巡演，不是身後整編。⚠ Eagle Vision 那兩個版本的目錄編號是影音品（EREDV／EV），探測層抓 release 時優先取 TW 的 CHVA131102。**藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650（MB 主名 ChthoniC，Group／Taiwan／1995，disambiguation「Taiwanese death metal band」），名下 RG 以 release-group?artist=…&limit=100&offset= 分頁全列 48 筆。刻意不釘：01bc3a74-697e-438c-b1ca-3b32b0f3abe2《Takasago Army: 高砂軍》（2011，池中已有）、a456d342-2863-3506-ae55-4479ddebaecb《永劫輪迴》與 7fb51ed0-345c-475d-a9e7-46c8abb1efe7《祖靈之流》與 01630d9a-b270-4b14-a3eb-80f297fb3461《Seediq Bale》（池中已有）、63a65eb3-0b7d-40a8-9334-65a03224515e《Bú-Tik》／7d2cff58-ae5e-4a6e-8b41-ceb3f369b351《失竊千年》／098341af-6e4f-4c88-b426-8d393e0a4e7c《Battlefields of Asura》／2c6eb5b4-13f2-4a23-8a8d-80de177be0a8《靈魄之界》／abfaaaf6-e1c3-496a-8310-4aaa43b887e8《十殿》（**五張都在 c-91/a**）、061685f9-749a-4f44-ac97-2acf2d745403《鎮魂護國精選集暨紀錄DVD》（2016，Album＋Live，但盤名自陳是「精選集暨紀錄 DVD」，形態存疑，依第 227 條不收，見 rulings 未收清單）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "閃靈 武德殿不插電演唱會實況；ChthoniC unplugged；閃靈 CHTHONIC",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "閃靈",
+  "album": "武德殿不插電演唱會實況",
+  "year": 2015,
   "genres": [
    "rock",
-   "pop"
+   "folk"
   ],
-  "label": "夕陽音樂產業有限公司（自營），TW 2020-10-30，bc 4710679475783",
-  "why": "落日飛車在《Cassa Nova》（2018）之後的一張，2020 年由樂團自營的夕陽音樂產業發行，barcode 4710679475783。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：落日飛車池中有 3 張，全部掛在 `落日飛車 Sunset Rollercoaster` 這個併寫名下（《Bossa Nova》2011、《Jinji Kikko》2016、《Cassa Nova》2018），2018 之後那一端是空的。**只查 `落日飛車` 或只查 `Sunset Rollercoaster` 都會得到假的零**（audits/pool-artist-name-splits.md 已列此組）。這張補在《Cassa Nova》之後，池中這支樂團才不是停在 2018。",
-  "risk": "封面：CAA release-group/a95ac96c-67c2-4f20-ab9f-25b789ff64ff 回 200，有圖。試聽：Apple 店面 tw collectionId 1752999086（落日飛車《SOFT STORM》2020）。撞卡風險：**掛名依 08-11 裁定寫 `落日飛車`，砍掉併寫的 Sunset Rollercoaster**，但池中三張仍是併寫形，**本機併名之前，撞卡掃描要兩種寫法都掃**。另 MB 上同團有兩種 artist-credit（《SOFT STORM》記中文、《Quit Quietly》記 Sunset Rollercoaster），比對 artist-credit 字串會分裂（第 20 條）。年份分歧：無。",
-  "mbNote": "釘 release-group a95ac96c-67c2-4f20-ab9f-25b789ff64ff。回問確認：title「SOFT STORM」、artist-credit「落日飛車」、first-release-date 2020-10-30、primary-type Album、secondary-types 空、轄下 1 個 release（2020-10-30/TW/Official，夕陽音樂產業有限公司，bc 4710679475783）。藝人 MBID 75c5edb5-796d-46f3-bac3-9b59da658023（落日飛車，Group／Taiwan，disambiguation「Taiwanese indie band」），以 release-group?artist=…&limit=100&offset= 分頁全列。刻意不釘：4e8b191a-b20e-40c9-9834-42a909c5b79e《Bossa Nova》（2011，池中已有）、bf97fd42-a269-4191-9942-c901c6efa34c《Cassa Nova》（2018，池中已有）、a4647cf0-3497-4624-a54d-1a2540259233《AAA》（2024，**artist-credit 是「HYUKOH & Sunset Rollercoaster」的合作盤，不是落日飛車單獨作，掛名歸屬另議**，本批不收）。"
+  "label": "Ciong Zo 閃靈自營（catno 4717954165575），TW 2015-01-10",
+  "why": "《武德 Bú-Tik》那一輪的不插電現場，2015 年由樂團自營的 Ciong Zo 發行。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中閃靈 4 張皆為錄音室盤。這張與同批的《演武》（2013）是同一張錄音室專輯衍生的兩種現場形態——一種是巡演實況、一種是不插電改編，**池中沒有任何一位藝人有這種「同一張專輯、兩種現場」的對照**。自營廠牌發行，符合只收獨立那條裁定。",
+  "risk": "封面：CAA release-group/c446922d-6542-4f1e-b327-0800672aeadc 回 200，有圖。試聽：Apple 店面 tw 以「閃靈 武德殿不插電」查回 4 筆全是不相干的古典輯，依第 231 條記為 tw 未上架，走無來源狀態。撞卡風險：**掛名依 08-11 裁定寫 `閃靈`，砍掉併寫的 CHTHONIC**；池中四張分在 `閃靈`(2) 與 `閃靈 CHTHONIC`(2) 兩個掛名下，**本機併名之前兩種寫法都要掃**。**MB 的 artist-credit 在這幾筆現場盤上多半記成拉丁 `ChthoniC`**，比對不要拿 artist-credit 當鍵（第 20 條）。盤名九個字、無同名風險。年份分歧：無。",
+  "mbNote": "釘 release-group c446922d-6542-4f1e-b327-0800672aeadc。回問確認：title「武德殿不插電演唱會實況」、artist-credit「閃靈」（**這一筆 MB 用的是漢字，與其他幾筆的 ChthoniC 不同**）、first-release-date 2015-01-10、primary-type Album、**secondary-types [Live]**、轄下 1 個 release（2015-01-10/TW/Official，Ciong Zo，catno 4717954165575）。**依第 253 條照一般 Album 寫、不填例外欄位；明寫：現場錄音，演出與發行同為 2014–2015 年的武德殿不插電場次。**藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650（MB 主名 ChthoniC，Group／Taiwan／1995，disambiguation「Taiwanese death metal band」），名下 RG 以 release-group?artist=…&limit=100&offset= 分頁全列 48 筆。刻意不釘：01bc3a74-697e-438c-b1ca-3b32b0f3abe2《Takasago Army: 高砂軍》（2011，池中已有）、a456d342-2863-3506-ae55-4479ddebaecb《永劫輪迴》與 7fb51ed0-345c-475d-a9e7-46c8abb1efe7《祖靈之流》與 01630d9a-b270-4b14-a3eb-80f297fb3461《Seediq Bale》（池中已有）、63a65eb3-0b7d-40a8-9334-65a03224515e《Bú-Tik》／7d2cff58-ae5e-4a6e-8b41-ceb3f369b351《失竊千年》／098341af-6e4f-4c88-b426-8d393e0a4e7c《Battlefields of Asura》／2c6eb5b4-13f2-4a23-8a8d-80de177be0a8《靈魄之界》／abfaaaf6-e1c3-496a-8310-4aaa43b887e8《十殿》（**五張都在 c-91/a**）、061685f9-749a-4f44-ac97-2acf2d745403《鎮魂護國精選集暨紀錄DVD》（2016，Album＋Live，但盤名自陳是「精選集暨紀錄 DVD」，形態存疑，依第 227 條不收，見 rulings 未收清單）。"
  },
  {
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "落日飛車 Quit Quietly；Sunset Rollercoaster Quit Quietly",
+  "queryAlias": "閃靈 台灣大凱旋；Taiwan Victory；ChthoniC；閃靈 CHTHONIC",
   "reissuedBy": "",
   "g": "b",
-  "artist": "落日飛車",
-  "album": "Quit Quietly",
-  "year": 2025,
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "夕陽音樂產業有限公司（自營），XW 2025-08-07",
-  "why": "落日飛車目前最新的一張，2025 年仍在自營的夕陽音樂產業。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中三張停在 2018；同批的《SOFT STORM》補 2020、這張補 2025，池中這支樂團就從「三張同一時期的碟」變成橫跨 2011–2025 的目錄。自營廠牌發行，符合 2026-09-06 只收獨立那條裁定。廠牌由 MB release label-info 查證。",
-  "risk": "封面：CAA release-group/2b7ec400-1ac4-4f08-bf8c-09d9a3e5bb8d 回 200，有圖。試聽：Apple 店面 tw collectionId 1830256521，Apple 盤名寫全大寫「QUIT QUIETLY」、MB 寫「Quit Quietly」，配對要不分大小寫。撞卡風險：**這一筆 MB 的 artist-credit 是「Sunset Rollercoaster」（拉丁），不是「落日飛車」**——卡片掛名依 08-11 裁定取漢字 `落日飛車`，與 MB artist-credit 字串不相等，這是允許的（第 6／70／120 條講的是實體的文字，掛名裁定另有規範）；比對時不要拿 artist-credit 當鍵。年份分歧：無。",
-  "mbNote": "釘 release-group 2b7ec400-1ac4-4f08-bf8c-09d9a3e5bb8d。回問確認：title「Quit Quietly」、artist-credit「Sunset Rollercoaster」、first-release-date 2025-08-07、primary-type Album、secondary-types 空、轄下 1 個 release（2025-08-07/XW/Official，夕陽音樂產業有限公司）。藝人 MBID 75c5edb5-796d-46f3-bac3-9b59da658023。刻意不釘：見同批《SOFT STORM》那張。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "大象體操 水底；Elephant Gym Underwater；大象體操 Elephant Gym",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "大象體操",
-  "album": "水底",
-  "year": 2018,
-  "genres": [
-   "rock"
-  ],
-  "label": "Space Circle（自營，catno EG-001），TW 2018-11-17；日本版 WORDS Recordings WDSR-003、美國版 Topshelf Records TSR201",
-  "why": "大象體操在《角度》（2014）與《夢境》（2022）之間的一張，2018 年由樂團自營的 Space Circle 發行（EG-001），同時有日本 WORDS Recordings（WDSR-003）與美國 Topshelf Records（TSR201）兩個海外版，五個 release 都查得到條碼。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：大象體操池中有 2 張，掛在 `大象體操 Elephant Gym` 這個併寫名下——《角度》2014 與《夢境》2022，中間那八年是空的。這張正好補在中間，而且它是這支高雄樂團第一次同時由三地獨立廠牌發行的碟，池中沒有這個形狀的卡。",
-  "risk": "封面：CAA release-group/14165569-4114-43ca-b040-140898f5855d 回 200，有圖。試聽：Apple 店面 tw 三種查法（「大象體操 水底」、「Elephant Gym Underwater」、term=大象體操 的 60 筆目錄）全部沒有這張，**依第 231 條這是三次不同查法都落空，記為 tw 未上架**，試聽走無來源狀態，封面走 CAA。撞卡風險：掛名依 08-11 裁定寫 `大象體操`，池中是併寫形 `大象體操 Elephant Gym`，**本機併名之前兩種寫法都要掃**。年份分歧：RG 記 2018-11-14（日本版），台灣版 2018-11-17，卡片取 2018。",
-  "mbNote": "釘 release-group 14165569-4114-43ca-b040-140898f5855d。回問確認：title「水底」、artist-credit「大象體操」、first-release-date 2018-11-14、primary-type Album、secondary-types 空、轄下 5 個 release（2018-11-14/JP/Official WORDS Recordings WDSR-003 bc 4522197131092、2019-03-22/US/Official Space Circle EG-001＋Topshelf Records TSR201 bc 634457813427、2018-11-14/XW/Official Topshelf Records bc 634457914643、2018-12-07/AI/Official Topshelf Records、2018-11-17/TW/Official Space Circle EG-001）。藝人 MBID 9fdc68d1-98ac-463c-a309-181b58c74aed（大象體操，Group／Taiwan）。刻意不釘：e0ac3da3-5279-47de-9e42-8d06897962fb《角度》（2014，池中已有）、e5c00483-80f6-440f-8bdc-ac070010eebf《夢境》（2022，池中已有）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "大象體操 世界；Elephant Gym World",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "大象體操",
-  "album": "世界",
-  "year": 2023,
-  "genres": [
-   "rock"
-  ],
-  "label": "Topshelf Records（catno TSR277），US 2023-12-14，bc 634457165977；台灣版 catno EG-004",
-  "why": "大象體操 2023 年的專輯，美國版由 Topshelf Records 發行（TSR277），台灣版目錄編號 EG-004，共五個 release。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中大象體操只有《角度》2014 與《夢境》2022 兩張，2023 這一端是空的。與同批的《水底》一起補，這支樂團在池中就有 2014／2018／2022／2023 四個時間點。Topshelf 是美國獨立廠牌，台灣端是樂團自營的 Space Circle 那條線，符合只收獨立那條裁定。",
-  "risk": "封面：CAA release-group/4515810e-ceda-4b41-b39a-abd9611fcdda 回 200，有圖。試聽：Apple 店面 tw collectionId 1721312985（大象體操《世界》2023）。撞卡風險：**盤名「世界」是兩個字的極常見標題**，池中與跨批比對都必須先過藝人閘（MBID 9fdc68d1），只比盤名一定會誤判；同一批 c-90/b 有四分衛《世界》2008，**兩張都叫《世界》、掛名不同，chk-prop 折疊鍵不會撞，但人工複核時要分清楚**。掛名分裂同《水底》那張。年份分歧：無。",
-  "mbNote": "釘 release-group 4515810e-ceda-4b41-b39a-abd9611fcdda。回問確認：title「世界」、artist-credit「大象體操」、first-release-date 2023-12-14、primary-type Album、secondary-types 空、轄下 5 個 release（2023-12-14/US/Official Topshelf TSR277 bc 634457165977、2023-12-14/TW/Official [no label] bc 193017136661、2023-12-14/XW/Official Topshelf TSR277 bc 634457164291、2023-12-14/TW/Official catno EG-004、2023-12-14/XW/Official Topshelf bc 634457164291）。藝人 MBID 9fdc68d1-98ac-463c-a309-181b58c74aed。刻意不釘：14165569-4114-43ca-b040-140898f5855d《水底》（2018，同批另一張）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "老王樂隊 吾日三省吾身；壞鄰居",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "老王樂隊",
-  "album": "吾日三省吾身",
-  "year": 2019,
-  "genres": [
-   "rock"
-  ],
-  "label": "壞鄰居有限公司（catno YWSWO1902），TW 2019-11-08",
-  "why": "老王樂隊在《吾十有五而志於學》（2017）之後的第二張，2019 年由壞鄰居有限公司發行，目錄編號 YWSWO1902。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：老王樂隊池中只有 1 張，就是 2017 那張首作；2019 之後整段空白。**注意 Apple 店面 tw 把池中那張 2017 的碟標成 Single（collectionId 1597707484）**，本卡與它不是同一張，也不受那個型別爭議影響。廠牌可由 MB release label-info 查證。",
-  "risk": "封面：CAA release-group/aa61052f-75ae-4862-875e-fb5331289638 回 200，有圖。試聽：Apple 店面 tw collectionId 1483746774（老王樂隊《吾日三省吾身》2019）。撞卡風險：盤名是成語化的長句，池中無近似字串；掛名「老王樂隊」四個字，MB artist:\"老王樂隊\" 精確查詢回 1 筆（52d7718d-fb8e-4bb9-adce-41e7151f847e，Group／Taiwan／2017-09-28，disambiguation 空），無同名實體。年份分歧：無。",
-  "mbNote": "釘 release-group aa61052f-75ae-4862-875e-fb5331289638。回問確認：title「吾日三省吾身」、artist-credit「老王樂隊」、first-release-date 2019-11-08、primary-type Album、secondary-types 空、轄下 1 個 release（2019-11-08/TW/Official，壞鄰居有限公司 YWSWO1902）。藝人 MBID 52d7718d-fb8e-4bb9-adce-41e7151f847e，名下 RG 分頁全列。刻意不釘：f055c622-8894-47b6-b907-7754fd84a5b5《你啊你啊》（2020；**轄下唯一 release 沒有 status、沒有國別，掛「制作家」，且 Apple 店面 tw 三種查法皆無**，形態存疑，依第 227 條不收，見 rulings 未收清單）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "老王樂隊 暮夜徐行；壞鄰居",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "老王樂隊",
-  "album": "暮夜徐行",
-  "year": 2025,
-  "genres": [
-   "rock"
-  ],
-  "label": "壞鄰居有限公司，XW 2025-10-30，bc 193017189414",
-  "why": "老王樂隊 2025 年的專輯，仍在壞鄰居有限公司，barcode 193017189414。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中這支樂團只有 2017 一張。同批的《吾日三省吾身》補 2019、這張補 2025，三張連起來才看得出 2017 之後的六年。廠牌與條碼由 MB release label-info 查證，屬獨立發行。",
-  "risk": "封面：CAA release-group/17855f09-d329-4474-8211-546def21082f 回 200，有圖。試聽：Apple 店面 tw collectionId 1848832453（老王樂隊《暮夜徐行》2025）。撞卡風險：池中無此盤；盤名四字、無同名風險。年份分歧：無（MB 2025-10-30、Apple 2025）。**這張是本批年份最接近今天的兩張之一，冷門軸的 listeners 還沒長起來，三軸留給本機人工看**（c-111／c-112 新譜批同樣的提醒）。",
-  "mbNote": "釘 release-group 17855f09-d329-4474-8211-546def21082f。回問確認：title「暮夜徐行」、artist-credit「老王樂隊」、first-release-date 2025-10-30、primary-type Album、secondary-types 空、轄下 1 個 release（2025-10-30/XW/Official，壞鄰居有限公司，bc 193017189414）。藝人 MBID 52d7718d-fb8e-4bb9-adce-41e7151f847e。刻意不釘：同《吾日三省吾身》那張所列。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "傷心欲絕 喔我沒有靈魂；Wayne’s So Sad",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "傷心欲絕",
-  "album": "喔 我沒有靈魂",
-  "year": 2011,
-  "genres": [
-   "rock"
-  ],
-  "label": "StreetVoice 街聲，XW 2011-06-12，bc 887375512747",
-  "why": "傷心欲絕在《我愛您》（2010）之後的第二張，2011 年由 StreetVoice 發行，barcode 887375512747。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：傷心欲絕池中只有 1 張，就是 2010 年的《我愛您》。這張緊接在它後面，是同一支樂團連續兩年的兩張碟，補進去池中才有這條線的最早兩個點。StreetVoice 是獨立平台廠牌，符合只收獨立那條裁定。",
-  "risk": "封面：CAA release-group/69166d39-04fe-4052-a4b4-ba7962e50074 回 200，有圖。試聽：Apple 店面 tw 兩種查法（盤名查回 4 筆全是莫札特詠嘆調輯；term=傷心欲絕 的目錄查回 6 筆只有 2019 與 2023 兩張專輯）都沒有這張，依第 231 條記 tw 未上架，走無來源狀態。撞卡風險：**盤名含空白，折疊後是「喔我沒有靈魂」**，池中無近似字串；池中《我愛您》與本卡不同盤。年份分歧：無。",
-  "mbNote": "釘 release-group 69166d39-04fe-4052-a4b4-ba7962e50074。回問確認：title「喔 我沒有靈魂」、artist-credit「傷心欲絕」、first-release-date 2011-06-12、primary-type Album、secondary-types 空、轄下 2 個 release（2011-06-12/XW/Official StreetVoice bc 887375512747、2011-06-12/XW/Official 無廠牌）。藝人 MBID 4ed2a395-6c24-45ec-a319-d86d09bef6a5（傷心欲絕，Group／Taiwan）。刻意不釘：acf9285f-885f-4222-a029-bbcc3ebb749b《我愛您 | I Love You》（2010，池中已有）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "傷心欲絕 還是偶爾想要偉大；映象唱片",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "傷心欲絕",
-  "album": "還是偶爾想要偉大",
-  "year": 2017,
-  "genres": [
-   "rock"
-  ],
-  "label": "映象唱片（catno CON032），TW 2017-08，bc 4715219892488；另有 XW 無廠牌版",
-  "why": "傷心欲絕 2017 年的專輯，台灣實體版由映象唱片發行（CON032，barcode 4715219892488）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中這支樂團只有 2010 那一張。本批一次補四張（2011、2017、2019、2023），把 2010 到 2023 這十三年連成一條線——這正是廣度批「先確認第一張該有的在不在，再談深度」之後該做的事，而池中第一張已經在了。廠牌與目錄編號由 MB release label-info 查證。",
-  "risk": "封面：CAA release-group/1c4540a4-ceb4-43ca-8ae5-982d86741ef9 回 200，有圖。試聽：Apple 店面 tw 兩種查法皆無此盤（藝人目錄 6 筆裡沒有 2017 這張），依第 231 條記 tw 未上架，走無來源狀態。撞卡風險：池中無近似盤名；同批另外三張傷心欲絕盤名互不重疊。年份分歧：MB RG first-release-date 2017-07-28（XW 數位），台灣實體 2017-08，卡片取 2017。",
-  "mbNote": "釘 release-group 1c4540a4-ceb4-43ca-8ae5-982d86741ef9。回問確認：title「還是偶爾想要偉大」、artist-credit「傷心欲絕」、first-release-date 2017-07-28、primary-type Album、secondary-types 空、轄下 2 個 release（2017-07-28/XW/Official 無廠牌、2017-08/TW/Official 映象唱片 CON032 bc 4715219892488）。藝人 MBID 4ed2a395-6c24-45ec-a319-d86d09bef6a5。刻意不釘：見同批《喔 我沒有靈魂》那張。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "傷心欲絕 遜到簡直是個藝術品；The Art of Embarrassment",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "傷心欲絕",
-  "album": "遜到簡直是個藝術品",
-  "year": 2019,
-  "genres": [
-   "rock"
-  ],
-  "label": "無廠牌（自主發行），TW 2019-11，bc 4713249232403",
-  "why": "傷心欲絕 2019 年的專輯，自主發行（MB 兩個 release 的 label-info 都是「無廠牌」，barcode 4713249232403），Apple 端版權標示 ℗ 2019 Wayne’s So Sad，是樂團自己的名義。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中這支樂團只有 2010 那一張。這張與同批另三張一起把目錄補齊。**盤名要注意**：MB 的 RG 標題是英文「The Art of Embarrassment」，Apple 店面 tw 與唱片實體用的是中文《遜到簡直是個藝術品》（同名末軌），本卡依第 95 條取中文名，並把英文名放進 queryAlias。",
-  "risk": "封面：CAA release-group/353c8597-0420-4c04-b76f-bb9559791a01 回 200，有圖。試聽：Apple 店面 tw collectionId 1487087579，**Apple 的 collectionName 是「遜到簡直是個藝術品」、MB 的 RG title 是「The Art of Embarrassment」——同一張碟兩個名字，字串去重看不見（第 49 條的形狀）**，配對必須用 collectionId 或 barcode，不能用盤名。Apple 攤開 10 軌（留職停薪／如果她離開你 你會不會瘋掉啊／父親的教誨／台北流浪指南／悲劇成癮CEO／妳是不是我編出的一個謊?／自詡為暗夜偵探的小江／沒有夜歸人／下一步絕望／遜到簡直是個藝術品）。撞卡風險：本卡盤名與 MB 標題不同，跨批去重時兩種寫法都要掃。年份分歧：無。",
-  "mbNote": "釘 release-group 353c8597-0420-4c04-b76f-bb9559791a01。回問確認：title「The Art of Embarrassment」、artist-credit「傷心欲絕」、first-release-date 2019-11-09、primary-type Album、secondary-types 空、轄下 2 個 release（2019-11/TW/Official 無廠牌 bc 4713249232403、2019-11-09/XW/Official 無廠牌）。**卡片盤名取中文《遜到簡直是個藝術品》，與 RG 標題不相等，依第 95 條允許**。藝人 MBID 4ed2a395-6c24-45ec-a319-d86d09bef6a5。刻意不釘：1470932201 是 Apple 的《下一步絕望》單曲（MB 未建檔），不是 RG。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "傷心欲絕 無名氏敬上；Wayne’s So Sad",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "傷心欲絕",
-  "album": "無名氏敬上",
-  "year": 2023,
-  "genres": [
-   "rock"
-  ],
-  "label": "StreetVoice 街聲，XW 2023-09-07，bc 193017127669；TW 版 2023-09-15，catno WSS2304",
-  "why": "傷心欲絕 2023 年的專輯，數位版由 StreetVoice 發行、台灣實體版目錄編號 WSS2304。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中這支樂團只有 2010 那一張，2023 這一端是空的。這是本批補它的四張裡最晚的一張，補完之後池中就有 2010／2011／2017／2019／2023 五張。獨立發行，符合硬規則第 2 條。",
-  "risk": "封面：CAA release-group/27451d75-2e0b-4138-9df9-8fc095cc5e98 回 200，有圖。試聽：Apple 店面 tw collectionId 1705833543（傷心欲絕《無名氏敬上》2023）。撞卡風險：**MB 轄下有一筆 Pseudo-Release（無日期、無國別、無廠牌）**，抓 release 時要跳過。池中無此盤。年份分歧：RG 2023-09-07（數位）／TW 實體 2023-09-15，卡片取 2023。",
-  "mbNote": "釘 release-group 27451d75-2e0b-4138-9df9-8fc095cc5e98。回問確認：title「無名氏敬上」、artist-credit「傷心欲絕」、first-release-date 2023-09-07、primary-type Album、secondary-types 空、轄下 3 個 release（無日期/--/Pseudo-Release 無廠牌、2023-09-07/XW/Official StreetVoice bc 193017127669、2023-09-15/TW/Official catno WSS2304 bc 4713249234582）。藝人 MBID 4ed2a395-6c24-45ec-a319-d86d09bef6a5。刻意不釘：Apple 端另有《把附近的影子都摘了》EP（2026，collectionId 1876174726），MB 未建檔且是 EP，不在本批。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "麋先生 嗜愛動物；MIXER",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "麋先生",
-  "album": "嗜愛動物",
+  "artist": "閃靈",
+  "album": "台灣大凱旋",
   "year": 2020,
   "genres": [
    "rock"
   ],
-  "label": "無廠牌（XW 數位，bc 4713052737874）／相信音樂（catno BT0027A），TW 2020-10-08",
-  "why": "麋先生在《野生》（2016）之後的一張，2020 年，XW 數位版是無廠牌、台灣實體版目錄編號 BT0027A，另有 2020-11-28 的 BT0027 版。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：麋先生池中 0 張，整個團不存在。**這團在 2010 年代台灣獨立場景的位置與池中已有的告五人、康士坦的變化球同代**，池中卻只有那兩位；補這張是把同一代補齊，不是加一張同形狀的碟。廠牌註記：相信音樂是台灣本土獨立廠牌，不在硬規則第 2 條點名的五家跨國大廠裡，尺度與同批的告五人首張一致。",
-  "risk": "封面：CAA release-group/5bd697c4-7416-4e72-9798-dbe76fd61cec 回 200，有圖。試聽：Apple 店面 tw collectionId 1533034559（麋先生《嗜愛動物》2020）。撞卡風險：池中無此團；掛名「麋先生」三個字，MB 上該實體 disambiguation 寫「TaIwan Rock Band」（原文如此，含拼寫錯誤），area Taiwan，無同名實體。**同團的《馬戲團運動》（2013，ed8c4278）本批不收——MB 標 Album 但 Apple 店面 tw 標成「馬戲團運動 - EP」（collectionId 888636954），依第 227 條形態存疑**（見 rulings 未收清單）。年份分歧：無。",
-  "mbNote": "釘 release-group 5bd697c4-7416-4e72-9798-dbe76fd61cec。回問確認：title「嗜愛動物」、artist-credit「麋先生」、first-release-date 2020-10-08、primary-type Album、secondary-types 空、轄下 3 個 release（2020-10-08/XW/Official 無廠牌 bc 4713052737874、2020-10-08/TW/Official 相信音樂 BT0027A bc 4713052737874、2020-11-28/TW/Official catno BT0027 bc 4710616561289）。藝人 MBID c245230b-f02f-4d01-8ad4-e8e219113875（麋先生，Group／Taiwan，disambiguation「TaIwan Rock Band」），名下 5 個 Album 型 RG 分頁全列。刻意不釘：ed8c4278-964c-4ede-8fcc-2921d16cb3f4《馬戲團運動》（2013，Apple 端標 EP，形態存疑）、27c759a3-7fd9-46f3-b6ce-764181169810《沒名字的人類》（2015）、60823366-847b-4101-9c77-6b80435a8615《野生》（2016）、04335c66-26ca-4ebb-a647-41b5f93b12f8《都是浪漫害的》（2023）——**後三張都是 Album 且 secondary-types 空，本批名額已滿，MBID 已備妥，可直接進下一批**。"
+  "label": "Wind Music 風潮，XW 2020-05-20，bc 600568073654",
+  "why": "閃靈 2020 年的現場專輯，由風潮音樂（Wind Music）發行，barcode 600568073654。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中閃靈 4 張、零現場。這張是他們 2018 年《政治 Battlefields of Asura》（在 c-91/a）之後的現場，也是本批閃靈五張現場裡最晚、也是唯一由外部獨立廠牌（風潮）而非自營 Ciong Zo 發行的一張——**發行條件的變化本身就是這位藝人在池中值得留下的對照**。風潮是台灣獨立廠牌，不在硬規則第 2 條點名的五家跨國大廠裡。",
+  "risk": "封面：CAA release-group/c6ad923c-39f8-4c3f-a33c-becf52c4810c 回 200，有圖。試聽：Apple 店面 tw collectionId 1513278707（閃靈《台灣大凱旋》2020），**盤名與 MB 的中文段一致**。撞卡風險：**掛名依 08-11 裁定寫 `閃靈`，砍掉併寫的 CHTHONIC**；池中四張分在 `閃靈`(2) 與 `閃靈 CHTHONIC`(2) 兩個掛名下，**本機併名之前兩種寫法都要掃**。**MB 的 artist-credit 在這幾筆現場盤上多半記成拉丁 `ChthoniC`**，比對不要拿 artist-credit 當鍵（第 20 條）。**MB 轄下有一筆 Pseudo-Release（無日期、無國別、無廠牌）**，抓 release 時要跳過。**卡片盤名取「台灣大凱旋」，MB 的 RG 標題是「台灣大凱旋 Taiwan Victory (Live)」**（含括號 Live 後綴），依第 95 條允許；跨批去重時 `dedup-crossbatch` 會把括號內的 Live 當裝飾詞剝掉，兩種寫法折疊後一致。年份分歧：無。",
+  "mbNote": "釘 release-group c6ad923c-39f8-4c3f-a33c-becf52c4810c。回問確認：title「台灣大凱旋 Taiwan Victory (Live)」、artist-credit「ChthoniC」、first-release-date 2020-05-20、primary-type Album、**secondary-types [Live]**、轄下 2 個 release（無日期/--/Pseudo-Release 無廠牌、2020-05-20/XW/Official Wind Music bc 600568073654）。**依第 253 條照一般 Album 寫、不填例外欄位；明寫：現場錄音，演出年與發行年同為 2019–2020，不是身後整編。**藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650（MB 主名 ChthoniC，Group／Taiwan／1995，disambiguation「Taiwanese death metal band」），名下 RG 以 release-group?artist=…&limit=100&offset= 分頁全列 48 筆。刻意不釘：01bc3a74-697e-438c-b1ca-3b32b0f3abe2《Takasago Army: 高砂軍》（2011，池中已有）、a456d342-2863-3506-ae55-4479ddebaecb《永劫輪迴》與 7fb51ed0-345c-475d-a9e7-46c8abb1efe7《祖靈之流》與 01630d9a-b270-4b14-a3eb-80f297fb3461《Seediq Bale》（池中已有）、63a65eb3-0b7d-40a8-9334-65a03224515e《Bú-Tik》／7d2cff58-ae5e-4a6e-8b41-ceb3f369b351《失竊千年》／098341af-6e4f-4c88-b426-8d393e0a4e7c《Battlefields of Asura》／2c6eb5b4-13f2-4a23-8a8d-80de177be0a8《靈魄之界》／abfaaaf6-e1c3-496a-8310-4aaa43b887e8《十殿》（**五張都在 c-91/a**）、061685f9-749a-4f44-ac97-2acf2d745403《鎮魂護國精選集暨紀錄DVD》（2016，Album＋Live，但盤名自陳是「精選集暨紀錄 DVD」，形態存疑，依第 227 條不收，見 rulings 未收清單）。"
  },
  {
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "告五人 我肯定在幾百年前就說過愛你；Accusefive；告五人 Accusefive",
+  "queryAlias": "閃靈 台灣閃閃爍；MEGAPORT 2021；大港開唱；ChthoniC；閃靈 CHTHONIC",
   "reissuedBy": "",
   "g": "b",
-  "artist": "告五人",
-  "album": "我肯定在幾百年前就說過愛你",
-  "year": 2019,
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "相信音樂（catno RW0035），TW 2019-07-23，bc 4713052737980；XW 版 bc 4710616560145；CN 版掛 StreetVoice",
-  "why": "告五人的首張專輯，2019 年，台灣版由相信音樂發行（RW0035）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：告五人池中只有 1 張，是 2020 年的《運氣來得若有似無》，掛在併寫名 `告五人 Accusefive` 下。**池中已有第二張、卻沒有第一張**——依廣度批的判準（先確認第一張該有的在不在），這張是必補的那一張。廠牌註記：相信音樂是台灣本土獨立廠牌，不在硬規則第 2 條點名的華納／環球／索尼／滾石／杰威爾五家裡，且池中已收該團 2020 那張，尺度一致。",
-  "risk": "封面：CAA release-group/62c4b1f2-f4a2-45ca-9370-97b3bdc03e19 回 200，有圖。試聽：Apple 店面 tw collectionId 1546062804。撞卡風險：掛名依 08-11 裁定寫 `告五人`，池中是併寫形 `告五人 Accusefive`，**本機併名之前兩種寫法都要掃，只掃一種會得到假的零**。**廠牌邊界**：相信音樂是五月天所屬廠牌，店主 2026-09-05 曾裁定刪池中五月天三張；本卡的判斷是「刪的是那三張特定的碟，不是整間廠牌」，若店主要收緊，這張是本批第一個該退的（可逆，改的是卡單不是卡池結構）。年份分歧：RG 2019-06-14（數位）／TW 實體 2019-07-23，卡片取 2019。",
-  "mbNote": "釘 release-group 62c4b1f2-f4a2-45ca-9370-97b3bdc03e19。回問確認：title「我肯定在幾百年前就說過愛你」、artist-credit「告五人」、first-release-date 2019-06-14、primary-type Album、secondary-types 空、轄下 4 個 release（2019-06-14/XW/Official 相信音樂國際 bc 4710616560145、2019-06-14/CN/Official StreetVoice、2019-07-23/TW/Official 相信音樂 RW0035 bc 4713052737980、2019-06/SG/Official 相信音樂）。藝人 MBID 9607d222-f506-4106-8131-87a344d732ca（告五人，Group／Taiwan／2017；**短掛名回問：artist:\"告五人\" 精確查詢回 1 筆，無 disambiguation 但無同名實體**）。刻意不釘：6e9e4dea-09e6-4c66-b4b2-bbfca563a6da《運氣來得若有似無》（2020，池中已有）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "告五人 帶你飛；Accusefive",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "告五人",
-  "album": "帶你飛",
-  "year": 2023,
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "無廠牌（自主發行），TW 2023-02-14",
-  "why": "告五人 2023 年的專輯，MB 轄下唯一 release 的 label-info 是「無廠牌」，是樂團離開廠牌體制後的自主發行。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中只有 2020 那一張。同批的首張補 2019、這張補 2023，池中這支樂團就有三個時間點，而且橫跨「廠牌發行」與「自主發行」兩種條件——**這正是這一批想在池中留下的對照**。",
-  "risk": "封面：CAA release-group/d46ddbf3-305c-48dd-bc93-27579cdf5315 回 200，有圖。試聽：Apple 店面 tw collectionId 1670343367（告五人《帶你飛》2023）。撞卡風險：**盤名「帶你飛」是三個字的常見標題**，比對要先過藝人閘（MBID 9607d222）；Apple 端以「告五人 帶你飛」搜尋會撞到巴哈清唱劇與 Purcell 的輯（實測 4 筆裡 3 筆是古典），配對用 collectionId 直查。掛名分裂同首張那張。年份分歧：無。",
-  "mbNote": "釘 release-group d46ddbf3-305c-48dd-bc93-27579cdf5315。回問確認：title「帶你飛」、artist-credit「告五人」、first-release-date 2023-02-14、primary-type Album、secondary-types 空、轄下 1 個 release（2023-02-14/TW/Official，無廠牌）。藝人 MBID 9607d222-f506-4106-8131-87a344d732ca。刻意不釘：6e9e4dea-09e6-4c66-b4b2-bbfca563a6da《運氣來得若有似無》（2020，池中已有）、66c69c52-0300-478a-a5a7-ddd78435b709《我們就像那些要命的傻瓜》（2025，本批名額已滿，**MBID 已備妥，可直接進下一批**）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "康士坦的變化球 擱淺的人；Constant & Change；康士坦的變化球 Constant & Change",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "康士坦的變化球",
-  "album": "擱淺的人",
-  "year": 2016,
+  "artist": "閃靈",
+  "album": "台灣閃閃爍 MEGAPORT 2021",
+  "year": 2021,
   "genres": [
    "rock"
   ],
-  "label": "海邊的卡夫卡，TW／XW 2016-12-01，bc 4710679457154",
-  "why": "康士坦的變化球的首張專輯，2016 年由台北的海邊的卡夫卡發行，barcode 4710679457154。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：這支樂團池中只有 1 張，是 2020 年的《更迭》，掛在併寫名 `康士坦的變化球 Constant & Change` 下。**池中有第二張沒有第一張**，這張補的正是起點。海邊的卡夫卡是獨立展演空間兼廠牌，符合只收獨立那條裁定。",
-  "risk": "封面：CAA release-group/cb42dadd-5ec0-4f31-9435-00e83c95dd9c 回 200，有圖。試聽：Apple 店面 tw collectionId 1800751034（康士坦的變化球《擱淺的人》2016）。撞卡風險：掛名依 08-11 裁定寫 `康士坦的變化球`，池中是併寫形，**本機併名之前兩種寫法都要掃**；另注意 **Apple 端《更迭》有兩筆——1800765531 標成 Single、1801507621 標成 Album**，處理池中那張時不要抓錯，本卡不受影響。年份分歧：無。",
-  "mbNote": "釘 release-group cb42dadd-5ec0-4f31-9435-00e83c95dd9c。回問確認：title「擱淺的人」、artist-credit「康士坦的變化球」、first-release-date 2016-12-01、primary-type Album、secondary-types 空、轄下 2 個 release（2016-12-01/XW/Official 海邊的卡夫卡 bc 4710679457154、2016-12-01/TW/Official 海邊的卡夫卡）。藝人 MBID cff696d7-d383-4654-b4a7-078e1a321842（康士坦的變化球，Group／Taiwan，disambiguation「Constant & Change」）。刻意不釘：d3d8f736-cac7-4941-b387-11b2b4858f8b《更迭》（2020，池中已有）。"
+  "label": "Wind Music 風潮，XW 2021-05-19，bc 600568079359；TW 版 2021-05-26 掛 Ciong Zo",
+  "why": "閃靈在 2021 年大港開唱（MEGAPORT）的現場錄音，數位版由風潮發行、台灣版回到樂團自營的 Ciong Zo。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中閃靈 4 張、零現場；本批這五張現場把 2012／2013／2015／2020／2021 五個時間點一次補齊。**大港開唱是這條台語搖滾線最核心的年度場景**，池中至今沒有任何一張以它為現場來源的卡。",
+  "risk": "封面：CAA release-group/a7fd83df-41e4-42ed-853f-15ff6254459a 回 200，有圖。試聽：Apple 店面 tw collectionId 1567530548（閃靈《台灣閃閃爍》2021），**Apple 的盤名沒有「MEGAPORT 2021」後綴、MB 有**，配對要允許前綴比對。撞卡風險：**掛名依 08-11 裁定寫 `閃靈`，砍掉併寫的 CHTHONIC**；池中四張分在 `閃靈`(2) 與 `閃靈 CHTHONIC`(2) 兩個掛名下，**本機併名之前兩種寫法都要掃**。**MB 的 artist-credit 在這幾筆現場盤上多半記成拉丁 `ChthoniC`**，比對不要拿 artist-credit 當鍵（第 20 條）。**盤名含年份數字**，折疊後是「台灣閃閃爍megaport2021」；池中無近似字串。**注意同一場活動另有珂拉琪與閃靈的合作單曲《CHTHONIC x COLLAGE MEGAPORT 2023》（301438b3，primary-type Single＋Live），不是這一張。**年份分歧：MB 2021-05-19（XW 數位）／TW 版 2021-05-26，卡片取 2021。",
+  "mbNote": "釘 release-group a7fd83df-41e4-42ed-853f-15ff6254459a。回問確認：title「台灣閃閃爍 MEGAPORT 2021」、artist-credit「ChthoniC」、first-release-date 2021-05-19、primary-type Album、**secondary-types [Live]**、轄下 3 個 release（2021-05-26/TW/Official Ciong Zo、2021-05-19/XW/Official Wind Music bc 600568079359、2021-05/TW/Official Ciong Zo）。**依第 253 條照一般 Album 寫、不填例外欄位；明寫：現場錄音，演出年與發行年同為 2021 年大港開唱。**藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650（MB 主名 ChthoniC，Group／Taiwan／1995，disambiguation「Taiwanese death metal band」），名下 RG 以 release-group?artist=…&limit=100&offset= 分頁全列 48 筆。刻意不釘：01bc3a74-697e-438c-b1ca-3b32b0f3abe2《Takasago Army: 高砂軍》（2011，池中已有）、a456d342-2863-3506-ae55-4479ddebaecb《永劫輪迴》與 7fb51ed0-345c-475d-a9e7-46c8abb1efe7《祖靈之流》與 01630d9a-b270-4b14-a3eb-80f297fb3461《Seediq Bale》（池中已有）、63a65eb3-0b7d-40a8-9334-65a03224515e《Bú-Tik》／7d2cff58-ae5e-4a6e-8b41-ceb3f369b351《失竊千年》／098341af-6e4f-4c88-b426-8d393e0a4e7c《Battlefields of Asura》／2c6eb5b4-13f2-4a23-8a8d-80de177be0a8《靈魄之界》／abfaaaf6-e1c3-496a-8310-4aaa43b887e8《十殿》（**五張都在 c-91/a**）、061685f9-749a-4f44-ac97-2acf2d745403《鎮魂護國精選集暨紀錄DVD》（2016，Album＋Live，但盤名自陳是「精選集暨紀錄 DVD」，形態存疑，依第 227 條不收，見 rulings 未收清單）。 另刻意不釘：301438b3-592a-4a31-b9fc-68033390ca17《CHTHONIC x COLLAGE MEGAPORT 2023》（primary-type Single，且是與珂拉琪的合作）。"
  },
  {
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "康士坦的變化球 眠月線；Constant & Change",
+  "queryAlias": "生祥樂隊 江湖卡夫卡；Sheng Xiang & Band；Sheng-Xiang & Band；林生祥",
   "reissuedBy": "",
   "g": "b",
-  "artist": "康士坦的變化球",
-  "album": "眠月線",
-  "year": 2023,
-  "genres": [
-   "rock"
-  ],
-  "label": "海邊的卡夫卡（catno KFK2309），TW 2023-09-02，bc 4711232854410",
-  "why": "康士坦的變化球 2023 年的專輯，仍在海邊的卡夫卡（KFK2309）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：池中這支樂團只有 2020 一張。同批的首張補 2016、這張補 2023，池中就有 2016／2020／2023 三個點，而且三張都在同一間獨立廠牌，看得出一支樂團與一間廠牌的長期關係——池中台灣獨立那一段很少有這種形狀的卡。",
-  "risk": "封面：CAA release-group/cea106bb-d6c4-4adb-b284-27905658c3a9 回 200，有圖。試聽：Apple 店面 tw collectionId 1817166552（康士坦的變化球《眠月線》2023）。撞卡風險：池中無此盤；盤名三字，比對先過藝人閘。年份分歧：RG first-release-date 2023-08-22（XW 數位）、TW 實體 2023-09-02，卡片取 2023。",
-  "mbNote": "釘 release-group cea106bb-d6c4-4adb-b284-27905658c3a9。回問確認：title「眠月線」、artist-credit「康士坦的變化球」、first-release-date 2023-08-22、primary-type Album、secondary-types 空、轄下 2 個 release（2023-09-02/TW/Official 海邊的卡夫卡 KFK2309 bc 4711232854410、2023-08-22/XW/Official 海邊的卡夫卡 bc 4711232854410）。藝人 MBID cff696d7-d383-4654-b4a7-078e1a321842。刻意不釘：d3d8f736-cac7-4941-b387-11b2b4858f8b《更迭》（2020，池中已有）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "脆樂團 有多少光就有多少黑；Crispy",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "脆樂團",
-  "album": "有多少光就有多少黑",
-  "year": 2019,
-  "genres": [
-   "rock"
-  ],
-  "label": "何樂音樂，TW／XW 2019-08-23，bc 4710281290040",
-  "why": "脆樂團 2019 年的專輯，由何樂音樂發行，barcode 4710281290040。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：脆樂團池中 0 張，整個團不存在（查 `脆樂團` 與 `Crispy` 兩種寫法都掃過，池中唯一命中 Crispy 的是 1982 年的英國團 Crispy Ambulance，不是同一團）。這張是它進池的第一張。何樂音樂是獨立廠牌，符合硬規則第 2 條。",
-  "risk": "封面：CAA release-group/685c917e-6c6c-4254-b682-3653faa5d87b 回 200，有圖。試聽：Apple 店面 tw collectionId 1530516591（脆樂團《有多少光就有多少黑》2019）。撞卡風險：**掛名「脆樂團」三個字**，MB artist:\"脆樂團\" 精確查詢回 1 筆（236cd27d-b703-4c53-8628-8928362afdc6，Group／Taiwan／2010，disambiguation「Taiwanese duo」），無同名實體；但**池中的 `Crispy Ambulance` 在子字串掃描時會命中「Crispy」**，掃描不能只用子字串。**同團的《你快樂，嗎》（2017，fb758866）廠牌是台灣索尼音樂，落在硬規則第 2 條點名的索尼，本批不收**（見 rulings 未收清單）。年份分歧：無。",
-  "mbNote": "釘 release-group 685c917e-6c6c-4254-b682-3653faa5d87b。回問確認：title「有多少光就有多少黑」、artist-credit「脆樂團」、first-release-date 2019-08-23、primary-type Album、secondary-types 空、轄下 2 個 release（2019-08-23/TW/Official 何樂音樂、2019-08-23/XW/Official 何樂音樂 bc 4710281290040）。藝人 MBID 236cd27d-b703-4c53-8628-8928362afdc6。刻意不釘：fb758866-6620-4ec3-95c6-f96e68661ff3《你快樂，嗎》（2017，label-info 台灣索尼音樂娛樂股份有限公司 bc 889854254629，**大廠掛名，依硬規則第 2 條不收**，且 CAA 404）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "脆樂團 愛是我們必經的辛苦；Crispy",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "脆樂團",
-  "album": "愛是我們必經的辛苦",
-  "year": 2022,
-  "genres": [
-   "rock"
-  ],
-  "label": "銀翼文創有限公司，XW 2022-09-19",
-  "why": "脆樂團 2022 年的專輯，改由銀翼文創有限公司發行——與 2017 那張的台灣索尼、2019 那張的何樂音樂都不同，是這支樂團第三種發行條件。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：脆樂團池中 0 張。與同批的 2019 那張一起收，池中就有這支樂團在兩間不同獨立廠牌下的兩張碟，而不是一張孤卡。",
-  "risk": "封面：CAA release-group/c1f0d714-9991-40c4-bbaa-1d743209fc1d 回 200，有圖。試聽：Apple 店面 tw collectionId 1644823778（專輯）；**Apple 另有同名單曲 1641661358，配對要挑專輯那一筆**。撞卡風險：池中無此團；盤名長、無同名風險。年份分歧：無。",
-  "mbNote": "釘 release-group c1f0d714-9991-40c4-bbaa-1d743209fc1d。回問確認：title「愛是我們必經的辛苦」、artist-credit「脆樂團」、first-release-date 2022-09-19、primary-type Album、secondary-types 空、轄下 1 個 release（2022-09-19/XW/Official，銀翼文創有限公司）。藝人 MBID 236cd27d-b703-4c53-8628-8928362afdc6。刻意不釘：fb758866-6620-4ec3-95c6-f96e68661ff3《你快樂，嗎》（索尼，見同批另一張）。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "椅子樂團 Cheers Land；The Chairs；椅子乐团",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "椅子樂團",
-  "album": "Cheers!Land",
-  "year": 2016,
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "Sound Of Tomorrow，XW 2016-03-03，bc 4717954167142；2022 台灣再版掛禾廣娛樂 SOTMR006",
-  "why": "椅子樂團的首張專輯，2016 年由 Sound Of Tomorrow 發行（barcode 4717954167142），2022 年由禾廣娛樂在台灣再版（SOTMR006）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：椅子樂團池中 0 張，整個團不存在。這是它進池的第一張，也是同批兩張裡較早的那一張。兩間廠牌都是獨立發行，符合硬規則第 2 條。",
-  "risk": "封面：CAA release-group/cd8423eb-9bc9-4d2f-bacb-4b53b7b31b09 回 200，有圖。試聽：Apple 店面 tw collectionId 1470198629（椅子樂團《Cheers!Land》2016）。撞卡風險：**盤名含驚嘆號且無空白（Cheers!Land）**，折疊後是「cheersland」，池中無近似字串；MB 上另有中國樂團以簡體「椅子乐团」合作的單曲（Apple 端 1861765655 橘子海 feat. 椅子乐团），**簡繁折疊 chk-prop 抓不到，掛名一律寫繁體 `椅子樂團`**（2026-09-06 店主裁定）。年份分歧：RG 2016-03-03、台灣再版 2022-03-03，**卡片取原盤年 2016，不取再版年**（第 220 條的形狀）。",
-  "mbNote": "釘 release-group cd8423eb-9bc9-4d2f-bacb-4b53b7b31b09。回問確認：title「Cheers!Land」、artist-credit「椅子樂團」、first-release-date 2016-03-03、primary-type Album、secondary-types 空、轄下 2 個 release（2016-03-03/XW/Official Sound Of Tomorrow bc 4717954167142、2022-03-03/TW/Official 禾廣娛樂 SOTMR006 bc 4713249233882）。藝人 MBID 03a25129-3371-4ab4-b30b-f5d9dcfbec7c（椅子樂團，Group／Taiwan／2016，disambiguation「indie pop trio」）。刻意不釘：c1dc58b9-0827-4951-94e5-5fa3a8b01e5b《Real Love Is...》（2020）、0f20aa27-e348-4fe0-8f17-0eb55759207d《Shangri-La Is Calling》（2022）、983e16e3-2e04-46fa-9eae-9c63aec3c4ad《The Great Escape Of Our Time》（2023）、2d068cc4-a873-4d04-aad0-73e68ac36823《Love Dialogue》（2025）——**四張都是 Album 且 secondary-types 空，本批名額已滿，MBID 已備妥，可直接進下一批**。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "椅子樂團 Lovely Sunday；The Chairs",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "椅子樂團",
-  "album": "LOVELY SUNDAY",
-  "year": 2018,
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "禾廣娛樂（catno CHAIRS02），TW 2018-08-01，bc 4713249230775；XW 版掛 Sound Of Tomorrow",
-  "why": "椅子樂團第二張專輯，2018 年，台灣版目錄編號 CHAIRS02、barcode 4713249230775。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：這個團池中 0 張。與同批的《Cheers!Land》一起收，池中才有這支樂團連續兩張的對照，而不是一張孤卡——這是本批對每位新進藝人一致的做法。廠牌由 MB release label-info 查證，屬獨立發行。",
-  "risk": "封面：CAA release-group/52c88b25-e1f5-467d-99e0-47b5f7769490 回 200，有圖。試聽：Apple 店面 tw collectionId 1470175139（椅子樂團《LOVELY SUNDAY》2018）。撞卡風險：**盤名全大寫**，比對要不分大小寫；池中無近似字串。年份分歧：RG first-release-date 2018-06-29（XW），台灣實體 2018-08-01，卡片取 2018。",
-  "mbNote": "釘 release-group 52c88b25-e1f5-467d-99e0-47b5f7769490。回問確認：title「LOVELY SUNDAY」、artist-credit「椅子樂團」、first-release-date 2018-06-29、primary-type Album、secondary-types 空、轄下 2 個 release（2018-08-01/TW/Official 禾廣娛樂 CHAIRS02 bc 4713249230775、2018-06-29/XW/Official Sound Of Tomorrow bc 4713249230775）。藝人 MBID 03a25129-3371-4ab4-b30b-f5d9dcfbec7c。刻意不釘：見同批《Cheers!Land》那張所列的四張後期盤。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "好樂團 在遊蕩的路上學會寬容；GoodBand；We Learn to Let Go in the Ongoing",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "好樂團",
-  "album": "在遊蕩的路上學會寬容",
+  "artist": "生祥樂隊",
+  "album": "江湖卡夫卡",
   "year": 2022,
   "genres": [
    "folk",
    "rock"
   ],
-  "label": "禾廣娛樂股份有限公司（catno GOOD003），TW 2022-11-02",
-  "why": "好樂團的首張專輯，2022 年由禾廣娛樂發行，目錄編號 GOOD003。在此之前他們出的是《把悲傷留在這裡》（2018）與《至少我想感同你的身受》（2019）兩張 EP（Apple 端 collectionId 1800790440 與 1814209598），這張是第一張整張的專輯。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：好樂團池中 0 張。禾廣娛樂這條線在池中也只有透過椅子樂團的再版才會出現，本批一併補上。",
-  "risk": "封面：CAA release-group/c71ca4c1-b6be-4a02-b746-ebf361a6ea91 回 200，有圖。試聽：Apple 店面 tw collectionId 1802208393。撞卡風險：**MB 的 RG 標題是「在遊蕩的路上學會寬容 We Learn to Let Go in the Ongoing」（中英併寫），卡片只取中文段**，依第 95 條允許，但跨批去重時兩種寫法都要掃。**掛名「好樂團」三個字且是普通詞**，MB artist:\"好樂團\" 精確查詢回 1 筆（ad4883ca-f71a-4e57-b1dc-560db6b2e43c，Group／Taiwan／2015-06，**disambiguation 空**）——依第 250 條，沒有 disambiguation 就不能靠 score 背書，本卡是靠 area＋begin＋名下作品與 Apple 目錄三者相符才確認的。年份分歧：無。",
-  "mbNote": "釘 release-group c71ca4c1-b6be-4a02-b746-ebf361a6ea91。回問確認：title「在遊蕩的路上學會寬容 We Learn to Let Go in the Ongoing」、artist-credit「好樂團」、first-release-date 2022-11-02、primary-type Album、secondary-types 空、轄下 1 個 release（2022-11-02/TW/Official，禾廣娛樂股份有限公司 GOOD003）。**卡片盤名取中文段，與 RG 標題不相等，依第 95 條允許。**藝人 MBID ad4883ca-f71a-4e57-b1dc-560db6b2e43c，名下 2 個 Album 型 RG。刻意不釘：35be36fe-1cbb-4ea3-9597-6dd726dafd17《懂》（2025；Album 且 secondary-types 空，Apple tw collectionId 1837478469，**本批名額已滿，MBID 已備妥，可直接進下一批**）。"
+  "label": "StreetVoice 街聲，TW 2022-10-20",
+  "why": "生祥樂隊在《野蓮出庄》（2020）之後的一張，2022 年由 StreetVoice 發行。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：林生祥這條線池中共 6 張，分掛兩個名字——`生祥樂隊`《我庄》2013、《圍庄》2016，`林生祥`《臨暗》2004、《種樹》2006、《大地書房》2010、《野蓮出庄》2020。也就是 2020 之後那一端是空的，這張是目前 MB 上唯一補得進去的正規盤。廠牌可由 MB release label-info 查證（StreetVoice，TW 2022-10-20）。本批把它收在「台灣本土語言獨立」這一組而不是華語組，理由見 rulings 第 254 條。",
+  "risk": "封面：CAA release-group/e2cf938d-20ac-44ff-863d-075b990af8b3 回 200，有圖。試聽：Apple 店面 tw collectionId 1650712802（生祥樂隊《江湖卡夫卡》2022）。撞卡風險：`生祥樂隊` 與 `林生祥` 在池中是兩個掛名、MB 上也是兩個實體（4d668604 與 a6802fa4），**掃撞卡時兩個名字都要掃，只掃一個會得到假的零**；MB 的 alias 另有 Sheng Xiang & Band／Sheng-Xiang & Band 兩種羅馬化寫法，queryAlias 要帶。年份分歧：無。",
+  "mbNote": "釘 release-group e2cf938d-20ac-44ff-863d-075b990af8b3。回問確認：title「江湖卡夫卡」、artist-credit「生祥樂隊」、first-release-date 2022-10-20、primary-type Album、secondary-types 空、轄下 1 個 release（2022-10-20/TW/Official，StreetVoice）。藝人 MBID 4d668604-473d-4eb2-8317-503e1273bf18（生祥樂隊，Group／Taiwan，disambiguation「Sheng Xiang & Band」），名下 7 個 RG 全列。刻意不釘：daeb870d-d2d3-4d95-ba15-91b570216356《我庄 I-Village》（2013，池中已有）、7121337a-462f-4b8b-aed3-4fe8be383ddc《圍庄》（2016，池中已有）、b8145412-b16f-488b-8e76-b702002ade2d《野蓮出庄》（2020，池中已有）、87142d3c-b65e-43db-83e0-4ca43b909226《把自己種回來》（secondary-types 含 Live）、468f6e3f-7281-41f8-b578-f413cc1908f7《動身》（2016；secondary-types 雖空，但 Apple 端 9 軌中〈毋願〉〈農業學工業〉〈坔地無失業〉〈戒塑膠毒〉皆與池中《圍庄》重疊，依第 227 條判為《圍庄》的另一種包裝，且 CAA 404，**不收**，見 rulings 未收清單）。"
  },
  {
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "那我懂你意思了 原諒我不明白你的悲傷；IGotU",
+  "queryAlias": "林生祥 頭擺頭擺；林生祥童謠專輯；Lin Sheng Xiang；山下民謠",
   "reissuedBy": "",
   "g": "b",
-  "artist": "那我懂你意思了",
-  "album": "原諒我不明白你的悲傷",
-  "year": 2012,
+  "artist": "林生祥",
+  "album": "林生祥童謠專輯: 頭擺頭擺",
+  "year": 2018,
   "genres": [
-   "rock"
+   "folk"
   ],
-  "label": "中子文化股份有限公司，TW 2012-12-20；2021 再版掛禾廣娛樂 SVCD1203，bc 4713249233608",
-  "why": "那我懂你意思了在 2011 年首張之後的第二張，2012 年由中子文化（StreetVoice 那一系）發行，2021 年由禾廣娛樂再版（SVCD1203）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：這個團池中 0 張。它是 2010 年代初台北獨立場景與 StreetVoice 平台那一代的樂團，池中同代的透明雜誌（《我們的靈魂樂》2010）與甜梅號都在，卻獨缺這一團。收這張把那一代補齊。",
-  "risk": "封面：**CAA release-group/866b0242-fb43-4e7b-8328-93eab371b3bd 回 404，沒有圖**；改走 Apple 店面 tw，collectionId 1588833904（那我懂你意思了《原諒我不明白你的悲傷》2012），封面與試聽都靠 Apple 這一路。撞卡風險：池中無此團；MB alias 是 IGotU，queryAlias 要帶。**同團首張《没有的, 啊!?》（2f97e2c8）MB 標題是簡體、release 是 CN／喜瑪拉雅、CAA 也 404，本批不收**（簡繁與國別兩個問題疊在一起，見 rulings 未收清單）。年份分歧：RG 2012-12-20，2021 那筆是再版，**卡片取原盤年 2012**。",
-  "mbNote": "釘 release-group 866b0242-fb43-4e7b-8328-93eab371b3bd。回問確認：title「原諒我不明白你的悲傷」、artist-credit「那我懂你意思了」、first-release-date 2012-12-20、primary-type Album、secondary-types 空、轄下 2 個 release（2012-12-20/TW/Official 中子文化股份有限公司、2021-10-06/TW/Official 禾廣娛樂 SVCD1203 bc 4713249233608）。藝人 MBID d25a2100-9eae-4c87-ac1f-3f964cbf126c（那我懂你意思了，Group／Taiwan／2007，alias IGotU）。刻意不釘：2f97e2c8-2840-4418-9831-87a19e1692b5《没有的, 啊!?》（2011，MB 標題簡體、release 為 CN/喜瑪拉雅、CAA 404）、63c99dce-734d-480a-bfac-9f91d93fcbd4《Nobody Cares》與 7d2d5d67-3d5b-4a67-ba02-91529beb3d11《没有人在乎你在乎的事》（2014，**同一張碟的中英兩筆 RG，MB 內部重複建檔**，本批不收）。"
+  "label": "山下民謠 Foothills Folk（catno FHFCD180509），TW 2018-05-20，bc 4713012741903",
+  "why": "林生祥 2018 年的客語童謠專輯，由他自己那條線的山下民謠（Foothills Folk）發行，目錄編號 FHFCD180509、barcode 4713012741903，是創作者自營廠牌的碟。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：林生祥／生祥樂隊池中 6 張（《臨暗》2004、《種樹》2006、《大地書房》2010、《野蓮出庄》2020、《我庄》2013、《圍庄》2016），全部是樂隊編制的社會題材專輯；2018 這一年在池中是空的，而且池中沒有任何一張是他童謠／自營廠牌那一面。這張補進去，才不是六張同形狀的碟再加第七張。",
+  "risk": "封面：CAA release-group/f12b30bc-4319-4b89-8418-da8c1962824c 回 200，有圖。試聽：Apple 店面 tw collectionId 1446856782（林生祥《林生祥童謠專輯: 頭擺頭擺》2018），盤名與 MB 一致。撞卡風險：盤名帶半形冒號與空白，撞卡折疊時會被剝掉，剩「林生祥童謠專輯頭擺頭擺」；池中沒有近似字串。**盤名裡「林生祥」三個字與掛名重複**，以「掛名子字串」掃池會把這張與其他林生祥卡混在一起，掃描要用「掛名＋盤名」兩段鍵。**掛名以 `林生祥` 寫，不寫 Lin Sheng Xiang（08-11 裁定）**；池中既有卡也是 `林生祥`，一致。年份分歧：無。",
+  "mbNote": "釘 release-group f12b30bc-4319-4b89-8418-da8c1962824c。回問確認：title「林生祥童謠專輯: 頭擺頭擺」、artist-credit「林生祥」、first-release-date 2018-05-20、primary-type Album、secondary-types 空、轄下 1 個 release（2018-05-20/TW/Official，山下民謠 Foothills Folk FHFCD180509，bc 4713012741903）。藝人 MBID a6802fa4-84e0-48cc-8b16-d501a4ffae83（林生祥，Person／Taiwan／1971-11-25，alias Lin Sheng Xiang），名下 9 個 RG 全列。刻意不釘：cbf1edb7-132d-436e-9315-d2ee2535ad75《大佛普拉斯》、71853125-a4fb-4ddf-a44d-29334d47172e《電影《陽光普照》配樂》、db9ba922-d1da-48d9-938d-c8db15d588a5《電影《男人與他的海》原聲配樂》、d348386d-1316-464f-85f4-d1ebe40249d8《唱歌給你聽 電視電影原聲帶》、6c1cadd1-c84a-49dd-bb43-4324b7c3baf6《紀錄片《民主之眼》配樂原聲帶》——五張 secondary-types 皆含 Soundtrack，依硬規則第 3 條不收。"
  },
  {
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "南西肯恩 你是平靜的；Nancy Kern；黑市音樂",
+  "queryAlias": "巴奈 愛不到；巴奈 Panai；Panai Kusui",
   "reissuedBy": "",
   "g": "b",
-  "artist": "南西肯恩",
-  "album": "你是平靜的",
-  "year": 2023,
+  "artist": "巴奈",
+  "album": "愛，不到",
+  "year": 2020,
   "genres": [
-   "rock",
+   "folk"
+  ],
+  "label": "無廠牌（自主發行），TW 2020-11-23",
+  "why": "巴奈 2020 年的自主發行專輯，MB 轄下唯一 release 的 label-info 是「無廠牌」，屬創作者自主發行。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：巴奈在池中有 2 張，而且掛名是分裂的——`巴奈 Panai`《泥娃娃》2000 與 `巴奈`《夜婆 Iā-Pô》2023（依 audits/pool-artist-name-splits.md 第一節，正規形是 `巴奈`）。**這一組正是那份稽核警告的「查一種寫法會得到假的零」**：只掃 `巴奈 Panai` 會漏掉 2023 那張，只掃 `巴奈` 會漏掉 2000 那張。實際情況是 2000 與 2023 兩端有卡、2020 這一張沒有，補進去就把她從《泥娃娃》到《夜婆》之間的空檔接上。",
+  "risk": "封面：CAA release-group/7a3ee8d2-5548-4cc9-bc13-548b3027a0c2 回 200，有圖。試聽：Apple 店面 tw collectionId 1540705111，**Apple 那邊盤名寫「愛, 不到」（半形逗號＋空白），MB 與本卡寫「愛，不到」（全形逗號）**——配對時標點必須先剝掉，否則會判成兩張碟。撞卡風險：掛名寫 `巴奈`（08-11 裁定，砍掉併寫的 Panai），與池中 2023 那張一致；**本機日後要把池中 `巴奈 Panai` 併成 `巴奈`**，併完之後這位藝人會是 3 張。年份分歧：無。",
+  "mbNote": "釘 release-group 7a3ee8d2-5548-4cc9-bc13-548b3027a0c2。回問確認：title「愛，不到」、artist-credit「巴奈」、first-release-date 2020-11-23、primary-type Album、secondary-types 空、轄下 1 個 release（2020-11-23/TW/Official，無廠牌）。藝人 MBID 8d17787a-bd4f-4830-89e5-50dc67a67650（巴奈，Person／Taiwan／1969，disambiguation 空）——**短掛名回問（第 179 條）**：artist:\"巴奈\" 精確查詢回 2 筆、名稱完全相同者 1 筆，就是這一個；另一筆名稱不同，不採。名下 6 個 RG 全列。刻意不釘：7b098956-54d0-43bc-b56e-35eb2d92a79e《泥娃娃》（2000，池中已有）、8fdf3e7f-7275-4d1a-8d9d-6454b8fbb59b《夜婆 Iā-Pô》（2023，池中已有）、0bc1ca3f-e0c3-42b4-84d8-1b3a1caa4c29《凱道上的稻穗》（primary-type EP）、eb586c45-1c39-40f3-b818-65c5f7e16298《夜婆 Iā-Pô (落雨版)》（Single）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "舒米恩 Bondada；Suming；Suming Rupi；舒米恩·魯碧",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "舒米恩",
+  "album": "Bondada",
+  "year": 2019,
+  "genres": [
+   "folk",
    "pop"
   ],
-  "label": "黑市音樂（catno 8752091），TW 2023-12-23，bc 4718487520916",
-  "why": "南西肯恩在 MB 上唯一一張非有聲書形態的專輯，2023 年由黑市音樂發行，目錄編號 8752091、barcode 4718487520916。黑市音樂是台灣長期經營地下與獨立樂團的廠牌。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：南西肯恩池中 0 張，黑市音樂這條線在池中也沒有代表。這是它進池的第一張。",
-  "risk": "封面：**CAA release-group/48e2b780-53e3-426f-b632-6381eb32e0f5 回 404，沒有圖**；改走 Apple 店面 tw，collectionId 1814696349（南西肯恩《你是平靜的》2023）。撞卡風險：**MB 這個藝人實體沒有 type（不是 Group 也不是 Person）、沒有 area、沒有 disambiguation，只有 begin 2017-06**——依第 250 條，連 disambiguation 都沒有的實體不得只憑 score 背書；本卡是靠 MB 名下這張 2023 專輯與 Apple 店面 tw 同名同年的 collection 兩者相符才確認的，**若本機要更嚴，可退回未收清單**。年份分歧：無。",
-  "mbNote": "釘 release-group 48e2b780-53e3-426f-b632-6381eb32e0f5。回問確認：title「你是平靜的」（RG disambiguation 也寫「你是平靜的」）、artist-credit「南西肯恩」、first-release-date 2023-12-23、primary-type Album、secondary-types 空、轄下 1 個 release（2023-12-23/TW/Official，黑市音樂 8752091，bc 4718487520916）。藝人 MBID ebbff668-b8e3-4b6a-b3cf-db3337ac34ff（南西肯恩，type 空／area 空／begin 2017-06／無 alias／無 disambiguation），名下 2 個 RG。刻意不釘：00502313-9a3c-4432-9e17-514903d20142《一個不屬於自己的地方》（2021，**secondary-types 含 Audiobook**，不是音樂專輯）。"
+  "label": "米大創意有限公司（自營），XW 2019-11-23，bc 4711548139706；TW 版 2019-12-03 掛 AsiaMuse",
+  "why": "舒米恩在 MB 上 2010 年首張之後的第二張專輯，2019 年由他自己的米大創意發行（XW 版），台灣版 2019-12-03 掛亞神音樂。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：舒米恩池中只有 1 張，是 2010 年的《Suming》（MB 上那筆的標題是「首張個人創作專輯」，是同一張碟的另一個名字，**不是可以再收一次的第二張**）。2010 之後整段空白，這張是 MB 上唯一補得進去的正規盤。自營廠牌發行，符合只收獨立那條裁定。",
+  "risk": "封面：CAA release-group/07b51de8-db7a-42ff-b2c8-1276a95acc8c 回 200，有圖。試聽：Apple 店面 tw collectionId 1868627241（舒米恩《Bondada》2019）。撞卡風險：**MB 上 2010 那筆的標題是「首張個人創作專輯」、池中那張寫《Suming》——同一張碟兩個名字，字串去重看不見（第 49 條的形狀）**，本批不收 2010 那筆就是因為這個。掛名寫 `舒米恩`（08-11 裁定），MB alias 另有 Suming／Suming Rupi／舒米恩·魯碧與兩個簡體形，queryAlias 要帶。年份分歧：RG 記 2019-11-23，TW 實體版 2019-12-03，卡片取 2019。",
+  "mbNote": "釘 release-group 07b51de8-db7a-42ff-b2c8-1276a95acc8c。回問確認：title「Bondada」、artist-credit「舒米恩」、first-release-date 2019-11-23、primary-type Album、secondary-types 空、轄下 3 個 release（2019-11-23/XW/Official 無廠牌 bc 4711548139706、2019-11-23/XW/Official 米大創意有限公司 bc 4711548139706、2019-12-03/TW/Official AsiaMuse bc 4711228291717）。藝人 MBID 6b99e789-fcbe-45f3-bb58-b62e043a0aff（舒米恩，Person／Taiwan／1978-07-17），名下 2 個 RG。刻意不釘：f50b8b5f-c7a3-4970-bb59-d436a9d16243《首張個人創作專輯》（2010，即池中的《Suming》，同碟異名）。"
  },
  {
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "巨大的轟鳴 老子有的是時間；Gigantic Roar",
+  "queryAlias": "落差草原 WWWW 泥土；Prairie WWWW Soil；落差草原",
   "reissuedBy": "",
   "g": "b",
-  "artist": "巨大的轟鳴",
-  "album": "老子有的是時間",
-  "year": 2016,
+  "artist": "落差草原 WWWW",
+  "album": "泥土 Soil",
+  "year": 2015,
   "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "自主發行（MB label-info：[no label]／無廠牌），TW／XW 2015-07-25",
+  "why": "落差草原 WWWW 的首張專輯，2015 年自主發行，MB 轄下兩個 release 的 label-info 分別是 [no label] 與「無廠牌」，是典型的自壓／自主發行。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：這個團池中 0 張。池中台灣的器樂與迷幻那一段只有甜梅號 4 張與大象體操 2 張，都是 post-rock／math rock 那一路；把台灣民間信仰與環境聲響那一條線放進來的團，池中一張也沒有。這張是它的起點。",
+  "risk": "封面：**CAA release-group/a13a924c-50d6-415a-b2bb-e9779fd2ba6b 回 404，沒有圖**；改走 Apple 店面 tw，collectionId 1598273865（落差草原 WWWW《泥土》2015），封面與試聽都要靠 Apple 這一路，若 Apple 側失效就整張沒有來源。撞卡風險：**掛名「落差草原 WWWW」不是「漢字＋羅馬化」併寫**——MB alias 是 Prairie WWWW（Prairie 才是「落差草原」的英譯），WWWW 四個字母是團名本身的一部分，因此 08-11 裁定「砍掉 Latin 那半」不適用，掛名保留 `落差草原 WWWW`（見 rulings 第 255 條）。盤名「泥土 Soil」與 c-92/a 的謝銘祐《泥土》2004 折疊後不同鍵（一個帶 Soil），但**兩張都叫泥土，人工複核時不要誤併**。年份分歧：無。",
+  "mbNote": "釘 release-group a13a924c-50d6-415a-b2bb-e9779fd2ba6b。回問確認：title「泥土 Soil」、artist-credit「落差草原 WWWW」、first-release-date 2015-07-25、primary-type Album、secondary-types 空、轄下 2 個 release（2015-07-25/XW/Official [no label]、2015-07-25/TW/Official 無廠牌）。藝人 MBID 2c2f9c19-d060-4a1d-af6a-7bf3f3c5f902（落差草原 WWWW，Group／Taiwan／2010-01，alias Prairie WWWW），名下 2 個 Album 型 RG，兩張都收進本批。刻意不釘：Apple 端另有《Wu-Hai》EP（2016，collectionId 1141625291）與《碎花星辰》EP（2017，collectionId 1598279217），**MB 未建檔**，且都是 EP，不在本批。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "落差草原 WWWW 盤；Prairie WWWW Pán；Pan",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "落差草原 WWWW",
+  "album": "盤 / Pán",
+  "year": 2018,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "自主發行（MB label-info：[no label]），XW 2018-09-05",
+  "why": "落差草原 WWWW 第二張專輯，2018 年自主發行，11 軌，MB release 的 label-info 是 [no label]。與三年前的《泥土 Soil》是同一團在自主發行條件下的前後兩張。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：這個團池中 0 張，兩張一起補才有目錄可言。盤名「盤 / Pán」的雙寫（漢字＋台羅拼音）本身就是這條線常見的命名方式，與裝咖人《Tsng-kha-lâng》那種寫法同形。",
+  "risk": "封面：CAA release-group/4d8483c6-551c-42b3-ad5b-8f41b3dabc13 回 200，有圖。試聽：Apple 店面 tw collectionId 1434687256（落差草原 WWWW《盤》2018），**Apple 那邊盤名只寫「盤」一個字、MB 寫「盤 / Pán」**——配對要允許前綴比對，不能要求全等。撞卡風險：**盤名折疊後只剩「pán」與「盤」，是極短鍵**，跨批與線上池比對必須先過藝人閘。「á」是帶重音的拉丁字母不是非 ASCII 連字號，chk-prop 的連字號檢查不會誤報，但 NFKD 正規化會把它拆成 a＋組合符，跨系統比對時兩種形態都要試。年份分歧：無。",
+  "mbNote": "釘 release-group 4d8483c6-551c-42b3-ad5b-8f41b3dabc13。回問確認：title「盤 / Pán」、artist-credit「落差草原 WWWW」、first-release-date 2018-09-05、primary-type Album、secondary-types 空、轄下 1 個 release（2018-09-05/XW/Official，[no label]）。Apple 端 collectionId 1434687256 攤開 11 軌（雨連結天與地的通道／碎花星辰／遊／渡／生長／精靈／灰色的人／慈悲／肥胖的光芒／符號學／新中心），℗ 2018 Prairie WWWW，與自主發行一致。藝人 MBID 2c2f9c19-d060-4a1d-af6a-7bf3f3c5f902。刻意不釘：a13a924c-50d6-415a-b2bb-e9779fd2ba6b《泥土 Soil》（2015，本批另一張，不是不收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "生祥樂隊 把自己種回來；菊花夜行軍15週年紀念演唱會；The Night March of the Chrysanthemums 15th Anniversary Concert Highlights；Sheng Xiang & Band",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "生祥樂隊",
+  "album": "把自己種回來",
+  "year": 2022,
+  "genres": [
+   "folk",
    "rock"
   ],
-  "label": "無廠牌（自主發行），TW 2016-05-13",
-  "why": "巨大的轟鳴在 MB 上唯一的一張專輯，2016 年自主發行。在此之前只有 Apple 端查得到的《1st Demo 突然決定去泡溫泉》單曲（2013，collectionId 1021907205）與《登鸛雀樓》EP（2014，888637605），這張是它唯一一張整張的碟。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：這個團池中 0 張。池中 2010 年代台灣的噪音／硬蕊那一段幾乎沒有卡（血肉果汁機那兩張已被 c-91/b 認領），這張補的是那個空缺。",
-  "risk": "封面：CAA release-group/32b82538-8ffa-4d08-a2a3-8a8b4fab6791 回 200，有圖。試聽：Apple 店面 tw 以 term=巨大的轟鳴 查藝人目錄回 3 筆（兩首單曲與一張 EP），**沒有這張專輯**，依第 231 條記 tw 未上架，走無來源狀態。撞卡風險：池中無此團；**盤名「老子有的是時間」與掛名都很長，無同名風險**。MB alias 是 Gigantic Roar，queryAlias 要帶。年份分歧：無。",
-  "mbNote": "釘 release-group 32b82538-8ffa-4d08-a2a3-8a8b4fab6791。回問確認：title「老子有的是時間」、artist-credit「巨大的轟鳴」、first-release-date 2016-05-13、primary-type Album、secondary-types 空、轄下 1 個 release（2016-05-13/TW/Official，無廠牌）。藝人 MBID 7b72823d-73f0-4ef4-b5f7-de7625457a1d（巨大的轟鳴，Group／Taiwan，disambiguation「Taiwanese band」，alias Gigantic Roar），名下 1 個 RG——**沒有對照組可寫「刻意不釘」**。"
- },
- {
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "selfTitled": false,
-  "queryAlias": "Leo王船 燒聲；Leo王 燒聲；Leo Wang；倒吃甘蔗音樂工作室",
-  "reissuedBy": "",
-  "g": "b",
-  "artist": "Leo王",
-  "album": "Leo王船 - 燒聲",
-  "year": 2024,
-  "genres": [
-   "hiphop"
-  ],
-  "label": "倒吃甘蔗音樂工作室（自營），XW 2024-08-06，bc 4711508078946",
-  "why": "Leo王 2024 年的專輯，由他自己的倒吃甘蔗音樂工作室發行，barcode 4711508078946——與他早期在顏社的幾張不同，這張是自營發行。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：**Leo王 池中已經有 1 張，就是 2018 年顏社那張《無病呻吟有情抒情》**（本批第一版原本要收那一張，實掃時撞卡，改收這一張）。池中他只有 2018 一個點，2024 這一端是空的；補這張，池中就有他從顏社到自營廠牌兩個階段的對照。盤名裡的「王船」是台灣民間信仰的送王船儀式，與本批 prop-a 那條台語／本土題材是同一條線。",
-  "risk": "封面：CAA release-group/41d56abc-8627-4f25-96f4-6d9bc12ea3da 回 200，有圖。試聽：Apple 店面 tw 兩種查法（「Leo王船 燒聲」回 5 筆全是舒伯特藝術歌曲輯、「Leo王 燒聲」回 0 筆），加上 term=Leo王 的 30 筆藝人目錄裡也沒有這張專輯，**三次查法都落空，依第 231 條記為 tw 未上架**，試聽走無來源狀態。撞卡風險：**掛名「Leo王」是拉丁字母＋一個漢字的混合形**——08-11 裁定講的是「漢字＋羅馬化併寫要砍拉丁那半」，而 Leo 不是「王」的羅馬化、是名字本身的一部分，因此不適用砍半，掛名照 MB 主名寫 `Leo王`（判準見 rulings 第 255 條），與池中那張既有卡的寫法一致。**盤名含 ASCII 連字號與空白**，折疊後是「leo王船燒聲」，與池中《無病呻吟有情抒情》不同鍵，不撞。年份分歧：無。",
-  "mbNote": "釘 release-group 41d56abc-8627-4f25-96f4-6d9bc12ea3da。回問確認：title「Leo王船 - 燒聲」、artist-credit「Leo王」、first-release-date 2024-08-06、primary-type Album、secondary-types 空、轄下 1 個 release（2024-08-06/XW/Official，倒吃甘蔗音樂工作室，bc 4711508078946）。藝人 MBID acf92994-57ba-4b36-9a04-28a943db5cba（Leo王，Person／Taiwan，無 alias、無 disambiguation），以 release-group?artist=…&limit=100&offset= 分頁全列 6 個 Album 型 RG。刻意不釘：5cb91be6-cea7-49b2-8fb8-25ccbc5a43c1《無病呻吟有情抒情》（2018，顏社 bc 4712862000222，**池中已有**）、62757a14-3cef-46e7-b1ff-c269c47e632c《羊肉》（2016）、3795c268-4e60-4cca-b8bc-cc10917e1853《藝術家脾氣》（2016）、19410533-71d1-40e3-8756-8e054d27d1e0《信歌》（2025）、a3d6c6e5-8e76-44ef-8400-432a03b4a609《薯條雷鬼》（2026）——**後四張都是 Album 且 secondary-types 空，本批名額已滿，MBID 已備妥，可直接進下一批**。"
+  "label": "好有感覺音樂（catno FHFCD220324）＋山下民謠 Foothills Folk，TW 2022-04-29，bc 4713012745246",
+  "why": "生祥樂隊 2022 年的現場錄音精選，紀念《菊花夜行軍》十五週年，由好有感覺音樂與山下民謠共同發行（FHFCD220324，barcode 4713012745246）。實掃 seed_cards.json 全 14,424 列（漢字、羅馬字、括號合寫三種寫法都掃）：生祥／林生祥線池中 6 張全是錄音室專輯，**沒有一張現場**；而《菊花夜行軍》（2001，交工樂隊）本身就在池中（掛 `交工樂隊`），這張正是那張碟十五年後的現場回望，兩張放在一起才有對照。**簡報 2026-09-07 更正後 `secondary-types` 含 `Live` 不再是排除理由**（原文只排除 `Compilation`），這張因此收得進來。**廠牌之一「好有感覺音樂」也是本批 prop-a 勞動服務那張的廠牌**，同一間獨立廠牌在池中會有兩位藝人。",
+  "risk": "封面：CAA release-group/87142d3c-b65e-43db-83e0-4ca43b909226 回 200，有圖。試聽：Apple 店面 tw 以「生祥樂隊 把自己種回來」查回 0 筆，**依第 231 條記為 tw 未上架**，試聽走無來源狀態，封面走 CAA。撞卡風險：**MB 的 RG 標題是「把自己種回來：菊花夜行軍15週年紀念演唱會 現場錄音精選 The Night March of the Chrysanthemums 15th Anniversary Concert Highlights」，中英全寫、極長；卡片只取「把自己種回來」**，依第 95 條允許，但**跨批去重時長短兩種寫法都要掃**。池中《菊花夜行軍》掛的是 `交工樂隊`，與本卡掛名不同，不撞。年份取發行年 2022；**現場演出年是 2022 年的紀念演唱會，不是 2001**，`mbNote` 已交代。",
+  "mbNote": "釘 release-group 87142d3c-b65e-43db-83e0-4ca43b909226。回問確認：title「把自己種回來：菊花夜行軍15週年紀念演唱會 現場錄音精選 The Night March of the Chrysanthemums 15th Anniversary Concert Highlights」、artist-credit「生祥樂隊」、first-release-date 2022-04-29、primary-type Album、**secondary-types [Live]**、轄下 1 個 release（2022-04-29/TW/Official，好有感覺音樂 FHFCD220324＋山下民謠 Foothills Folk，bc 4713012745246）。**依簡報 2026-09-07 更正，`Live` 不構成排除理由，照一般 Album 寫、不填例外欄位；此處明寫：這是現場錄音精選，錄音與發行同為 2022 年的十五週年紀念演唱會，不是 2001 年《菊花夜行軍》的現場。**卡片盤名只取「把自己種回來」，與 RG 標題不相等，依第 95 條允許。藝人 MBID 4d668604-473d-4eb2-8317-503e1273bf18（生祥樂隊，disambiguation「Sheng Xiang & Band」）。刻意不釘：daeb870d-d2d3-4d95-ba15-91b570216356《我庄 I-Village》、7121337a-462f-4b8b-aed3-4fe8be383ddc《圍庄》、b8145412-b16f-488b-8e76-b702002ade2d《野蓮出庄》（三張池中已有）、468f6e3f-7281-41f8-b578-f413cc1908f7《動身》（形態存疑，見 rulings 第四節 D 類）。"
  }
 ]
