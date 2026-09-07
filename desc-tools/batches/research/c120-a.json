@@ -638,5 +638,129 @@
   "status": "full",
   "yearVerified": "一致，1989。release-group first-release-date **1989**，其下最早（也是唯一的黑膠）是 US 1989 的 Caroline CAR 01381／CAROL 1381（Official）；1998 年的 Go‐Kart CD 是唯一一筆再發。**裁定 220 的形狀成立**：1998 那筆會把年份推到 1998，`year` 取 1989。**串流側沒有本張的上架版本**（唯一命中的是 2010 年的 26 軌整編，已駁回），**四處對照只成立兩處（release-group 的 first-release-date 與原盤 release 的 date），仍指向 1989。**｜**盤名分歧**：release-group title《Vanishing Point》、1989 年 release title《The Vanishing Point》、1998 年 CD 又回到無定冠詞——**依卡單取 release-group 文字。同名先行單曲：無。**",
   "notes": "**擋下策展層一處、補實一處。**(1) `curatorWhy` 寫「接在同廠 Youth of Today《We're Not in This Alone》(CAROL 1351) 與 Warzone《Open Your Eyes》(CAROL 1361) 之後，三個相鄰編號就是 Caroline 這條線的完整形狀」——**方向對，但「三個」漏了一筆**：實查另有 **Caroline 1352**（Warzone 前作 1988 年再壓，label-info 同時掛 Caroline 與 Fist Records）。四個編號 1351／1352／1361／1381 都已逐筆回問，**行文要寫這條線就寫四個，不要寫三個。**(2) `curatorRisk` 寫「Apple：三店皆 MISS」——**方向對但理由要補**：以盤名加掛名搜尋回 0 筆；以掛名搜尋命中的 collectionId 714246601《Matchless》是 **26 軌的全目錄整編**（前 15 軌全標 Demo，第 16–26 軌才是本張十一軌、曲序逐位置相同）。**依裁定 247 駁回，本張維持無串流來源狀態，封面走另一路。**｜**軌數混版（裁定 251，本張是本批最大的一組）**：卡單 label 欄釘 1989 的 12 吋 **11 軌**，行文引軌數只能引 11；1998 CD 的 24 軌要寫就得說明多出來的十三軌是另一批錄音（其中六首與原盤同名但長度不同）。｜**版本差在「有沒有長度」**：1989 黑膠十一軌全無長度紀錄，**要引秒數只能引 1998 CD 記的那組數字並註明出處版本。**｜**可寫的最強序數**：該藝人名下**只有 4 個 release-group，本張是唯一一張 primary-type=Album 且 secondary-types 為空的碟**。｜**人名從嚴**：藝人實體 life-span 未填，**不得寫個別成員的名字，也不得寫成軍年份。**"
+ },
+ {
+  "key": "desc2:Supertouch|The Earth Is Flat",
+  "artist": "Supertouch",
+  "album": "The Earth Is Flat",
+  "facts": [
+   {
+    "f": "release-group 9090ef0c 的欄位：title「The Earth Is Flat」、artist-credit「Supertouch」（藝人實體 ae7c0f49，type Group、country US、area United States、**life-span 未填**、disambiguation「NY hardcore punk」）、first-release-date **1990**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：US 1990 **Revelation Records，catalog-number 登錄為「Revelation: 21」**（CD、11 軌、Official，barcode 未填）。**1990 年的 12 吋黑膠在實體欄位裡沒有建檔——本張只查得到 CD 一種載體，也沒有任何再發。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9090ef0c-ed5f-3e35-b8ac-662733de6087&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1990（Revelation: 21）逐軌與長度：1〈Engine〉3:06、2〈What If?〉3:11、3〈Anything It Takes〉4:00、4〈Vendor〉2:53、5〈Lock Out〉3:54、6〈Detectives〉1:59、7〈The Painted Sky〉2:56、8〈How Do You Feel?〉3:43、9〈Grabbing Hold〉3:02、10〈Understanding〉**5:05**、11〈Shame〉4:30。**十一軌總長 38 分 19 秒，平均一首 3 分 29 秒；十一軌裡只有〈Detectives〉1:59 一首短於兩分鐘，四首超過四分鐘。**這個曲長分布在本批 22 張裡是最長的一組。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9090ef0c-ed5f-3e35-b8ac-662733de6087&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 3 個 release-group**：**primary-type=Album 且 secondary-types 為空的只有本張一個**，另兩筆是 5017e778《What Did We Learn》（1989，EP）與 3a5262ad《Lost My Way》（2010，EP）。**本張是這份目錄裡唯一一張長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ae7c0f49-c885-4b94-9424-fe4d890a5d6a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Revelation Records（48ed026d）：type「Production」、country US、area United States、**disambiguation「US hardcore punk label」**、life-span 未填。**本批另有三筆同廠的 label-info**：Warzone《Don't Forget the Struggle…》的 XW 數位版、Warzone《Open Your Eyes》的數位版與 2018 CD（**REV173**）、以及同藝人 1987 年那張 7 吋（REV 003）——**本張登錄的編號寫法「Revelation: 21」與那幾筆的寫法不同，是同一家廠牌在不同時期的編號格式。**",
+    "src": "https://musicbrainz.org/ws/2/label/48ed026d-bf1a-4c6e-8860-d21cd440b60e?fmt=json"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **91762185**《The Earth Is Flat》，artistName「Supertouch」、releaseDate 1990-01-01、trackCount 11、**℗ 1990 Revelation Records**，十一軌 3:06／3:11／4:00／2:53／3:54／1:59／2:56／3:43／3:02／5:05／4:31，**與實體欄位十一軌逐位置零誤差相符（僅末軌差 1 秒）**，十一軌全部有 previewUrl。第 8 軌上架端作〈How Do You Feel〉（無問號），實體欄位作〈How Do You Feel?〉。",
+    "src": "https://itunes.apple.com/lookup?id=91762185&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一首平均一首三分半，只有一首不到兩分鐘",
+   "這支團名下只有三筆條目，兩張七吋加這一張長篇"
+  ],
+  "sound": "1990 年 Revelation 用「Revelation: 21」這個編號發的十一軌、38 分 19 秒。〈Engine〉3:06 開場，接〈What If?〉3:11、〈Anything It Takes〉4:00、〈Vendor〉2:53、〈Lock Out〉3:54、〈Detectives〉1:59、〈The Painted Sky〉2:56、〈How Do You Feel?〉3:43、〈Grabbing Hold〉3:02，然後是全張最長的〈Understanding〉5:05，收在〈Shame〉4:30。十一首平均一首 3 分 29 秒，只有〈Detectives〉一首不到兩分鐘，四首破四分鐘——同一批同城的碟多半是一首一分多鐘。曲名一路是問句與單詞：〈What If?〉〈How Do You Feel?〉〈Understanding〉〈Shame〉。實體欄位裡這張只有一筆發行，沒有任何再壓。",
+  "keyTracks": [
+   "Engine",
+   "Understanding",
+   "Shame"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**，其下**唯一一筆 release** 就是 US 1990 的 Revelation Records（Revelation: 21，CD、Official）。**裁定 220 的形狀在本張不成立**——沒有任何再發可以蓋掉年份。串流側 91762185 的 releaseDate 標 1990-01-01、**℗ 1990 Revelation Records**（與實體欄位的廠牌與年份都相符），**四處對照成立**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處。**(1) `curatorWhy` 寫「**Mark Ryan 的唱法**與長曲式讓這張在 1990 年當時被同儕視為『不像硬蕊』」——**藝人實體 life-span 未填、release 與 release-group 沒有任何成員資料**，依裁定 241／250 **不得寫個別成員的名字，也不得寫當年同儕怎麼看**。(2) `curatorWhy` 寫「youth crew 那一批團裡最早往迷幻與慢速轉向的一張」與「後來卻成為 Quicksand、Burn 那條 post-hardcore 支線的直接前身」——**極值與跨藝人的影響力斷言都查不到來源，不得寫。**｜**「長曲式」這件事本身可以寫，但要走數字**：十一軌 38 分 19 秒、平均 3 分 29 秒、只有一首短於兩分鐘、四首超過四分鐘、最長〈Understanding〉5:05——**這些全部在實體欄位裡。**｜**反向陷阱**：本張只有 CD 一筆 release，**1990 年的 12 吋黑膠沒有建檔**，行文不得寫「1990 年的黑膠」。｜**串流採信 91762185：十一軌長度逐位置比對全中（僅末軌差 1 秒），十一軌皆有 previewUrl，且 ℗ 行的廠牌與年份與實體欄位一致，採信。**第 8 軌上架端無問號，**`keyTracks` 與行文一律用實體欄位的〈How Do You Feel?〉**。｜**封面**：`curatorRisk` 說封面來源回 404 屬實，本張要靠另一路補圖，**這件事不進行文**。｜**可寫的最強序數**：該藝人名下只有 3 個 release-group，**本張是唯一一張 primary-type=Album 且 secondary-types 為空的碟**。"
+ },
+ {
+  "key": "desc2:Sheer Terror|Just Can't Hate Enough",
+  "artist": "Sheer Terror",
+  "album": "Just Can't Hate Enough",
+  "facts": [
+   {
+    "f": "release-group d7d0db12 的欄位：title「Just Can't Hate Enough」、artist-credit「Sheer Terror」（藝人實體 11a683e2，type Group、country US、**area New York**、**life-span begin 1984-12**、**disambiguation 空白**）、first-release-date **1989**、primary-type Album、secondary-types **空**。轄下 **4 筆 release**：**DE 1989 Starving Missile S.M.R. 054（12\" Vinyl、11 軌、Official）**／US 1991-07-01（**format 是 CD-R、label-info 全空**、15 軌、Official）／DE 1993 **Starving Missile SMR054-CD**（CD、15 軌、Official）／US 1993 **Blackout! Records BL-07CD**（CD、15 軌、Official）。**美國第一次出現量產載體與掛名廠牌，是 1993 年那一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d7d0db12-6fbf-35f2-a607-d410b6252e8c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "DE 1989 的 12 吋（S.M.R. 054，卡單所釘的那一支）逐軌與長度：A 面 1〈Here to Stay〉2:37、2〈Twisting and Turning〉2:46、3〈Ashes, Ashes〉2:31、4〈Cup O' Joe〉2:44、5〈Just Can't Hate Enough〉2:25、6〈Roses〉1:41；B 面 1〈Owe You Nothing〉3:05、2〈Ready to Halt〉2:52、3〈Walls〉2:44、4〈Only 13〉2:05、5〈Burning Time〉3:58。**十一軌總長 29 分 28 秒，十一軌沒有一首短於 1:41、也沒有一首長過 3:58。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d7d0db12-6fbf-35f2-a607-d410b6252e8c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版：11 軌與 15 軌差的是四軌，而且是另一套錄音。**1993 年兩張 CD 的十五軌＝原盤十一首（曲序相同但長度全部不同，例〈Just Can't Hate Enough〉黑膠 2:25／CD 2:28、〈Roses〉黑膠 1:41／CD 1:44）＋末尾四軌 **〈I, Spoiler〉3:11、〈Just Can't Hate Enough〉（第二次出現）2:03、〈Boys Don't Cry〉3:11、〈I Need Lunch〉3:34**。**多出來的四軌裡有一首是同名曲的另一個版本。**1991 年那筆 CD-R 也是同樣十五軌，但曲序不同（追加四軌排在第 12–15 位、且〈Roses〉挪到第 6 位之後）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d7d0db12-6fbf-35f2-a607-d410b6252e8c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **15 個 release-group**：Album 6（secondary-types 全空）、EP 4、Single 1、Album+Live 1、Album+Compilation 2、Other+Live 1。6 張乾淨長篇依 first-release-date 排序：**1989 本張、1992《Thanks Fer Nuthin'》、1992《Ugly and Proud》、1995-08-01《Love Songs for the Unloved》、2014-06《Standing Up for Falling Down》、2017-12-15《Unheard Unloved》。本張排第 1。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=11a683e2-c855-4b93-934c-0ecb053fb5ac&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體：Starving Missile（c0841d95）type「Production」、**area München**、life-span begin **1983**（country 未填）——**「德國廠牌」這件事在實體欄位上是靠 area 成立的**。Blackout! Records（471d40b6）type「Original Production」、**area New York**、life-span begin **1988**（country 未填）。",
+    "src": "https://musicbrainz.org/ws/2/label/c0841d95-afa8-4b25-88c7-4c2a566bee06?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，採信（但採信的不是黑膠那一版）**：collectionId **1742234170**《Just Can't Hate Enough》，artistName「Sheer Terror」、releaseDate **1994-02-08**、trackCount **14**、℗ 2016 Blackout! Records，十四軌 2:24／2:50／2:35／2:48／1:45／2:18／3:11／3:10／2:54／2:28／2:46／2:08／4:01／2:56。**與 1991 年那筆 CD-R 的十五軌逐位置比對：十四軌的長度全部命中（〈Here to Stay〉2:24、〈Twisting and Turning〉2:50、〈Ashes, Ashes〉2:34–2:35、〈Cup O' Joe〉2:48、〈Just Can't Hate Enough〉1:45、〈I, Spoiler〉2:18、〈Boys Don't Cry〉3:11、〈Roses〉3:10、〈Owe You Nothing〉2:54、〈Ready to Halt〉2:28、〈Walls〉2:46、〈Only 13〉2:08、〈Burning Time〉4:01、同名曲第二版 2:56），只少了〈I Need Lunch〉3:33 一軌，曲序重排。**與 1989 黑膠十一軌的長度則沒有一軌對得上。**十四軌全部有 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1742234170&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1989 年的黑膠十一首，德國先出；美國第一張掛廠牌的量產版要等到四年後",
+   "十五軌版多出的四首裡，有一首是同名曲的另一個版本"
+  ],
+  "sound": "1989 年 Starving Missile 的 S.M.R. 054 是 12 吋、十一軌、29 分 28 秒。A 面〈Here to Stay〉2:37 起，接〈Twisting and Turning〉2:46、〈Ashes, Ashes〉2:31、〈Cup O' Joe〉2:44、同名的〈Just Can't Hate Enough〉2:25、〈Roses〉1:41；B 面是〈Owe You Nothing〉3:05、〈Ready to Halt〉2:52、〈Walls〉2:44、〈Only 13〉2:05，收在最長的〈Burning Time〉3:58。十一首沒有一首短於一分四十一秒、也沒有一首破四分鐘，全張的曲長被壓在一個窄區間裡。1993 年的兩張 CD 把同樣十一首重錄一遍長度、再在末尾接上四首，其中一首還是同名曲的另一個版本——十一軌與十五軌之間差的不只是數量。",
+  "keyTracks": [
+   "Here to Stay",
+   "Just Can't Hate Enough",
+   "Burning Time"
+  ],
+  "status": "full",
+  "yearVerified": "**原盤 1989（德國）、擴充版 1993（德／美各一）。** release-group first-release-date **1989**，其下最早的 release 是 DE 1989 的 Starving Missile S.M.R. 054（12 吋、Official）；1991-07-01 那筆是 **CD-R、label-info 全空**，1993 年才有德美兩張量產 CD。**裁定 220 的形狀成立**：1993 兩筆會把年份推到 1993，`year` 取 1989。**串流側採信的 1742234170 releaseDate 標 1994-02-08、℗ 2016**，與 MB 的 1989 差了五年——**年份一律以實體欄位為準取 1989**；四處對照成立。**同名先行單曲：無**（〈Just Can't Hate Enough〉是同名曲，在 A 面第五首）。",
+  "notes": "**擋下策展層三處，其中一處是硬錯。**(1) `curatorWhy` 寫「美國要到 **1991 年才由 Blackout! Records 補上**」——**不成立**：1991-07-01 那筆的 **format 是 CD-R 且 label-info 全空**，掛 Blackout! Records（BL-07CD）的是 **1993 年**那一筆。**行文不得寫「1991 年 Blackout! 補上」，只能寫「1993 年才有掛廠牌的美國量產版」。**(2) `curatorRisk` 寫「CD 版**併入早期 7 吋**」——**多出來的只有四軌**（〈I, Spoiler〉〈Just Can't Hate Enough〉的第二個版本〈Boys Don't Cry〉〈I Need Lunch〉），**沒有任何欄位證明這四軌來自某張 7 吋，不得寫**。(3) `curatorRisk` 與 `curatorWhy` 都說「Apple：三店皆 MISS」——**實測不成立**。｜**串流採信 1742234170：十四軌與 1991 年那筆十五軌版的長度逐位置全部命中（只少〈I Need Lunch〉一軌、曲序重排），與 1989 黑膠十一軌則沒有一軌對得上，十四軌皆有 previewUrl，採信**——但**必須註明採信的是擴充版、不是卡單所釘的 1989 黑膠，且上架端的年份 1994 不得拿來當本卡年份。**｜**軌數混版（裁定 251）**：卡單 label 欄釘德版 12 吋 **11 軌**，行文引軌數只能引 11；**11→15 差的不只是四軌，連原有十一首的長度都全部換過一套。**｜**廠牌地緣可以寫**：Starving Missile 的 **area 是 München**、begin 1983；Blackout! Records 的 **area 是 New York**、begin 1988——**兩家的所在地是實體欄位裡查得到的，可以寫。**｜**人名從嚴（裁定 250 的另一半）**：**這張的藝人實體 11a683e2 的 disambiguation 也是空白的**（與本批 Born Against 同形），`curatorWhy` 的「布魯克林 Paul Bearer 那一支」**不得寫個別成員的名字**，「布魯克林」也不得寫（area 只填到 New York）。可寫的是 **area New York、life-span begin 1984-12**。"
+ },
+ {
+  "key": "desc2:Madball|Set It Off",
+  "artist": "Madball",
+  "album": "Set It Off",
+  "facts": [
+   {
+    "f": "release-group 07019183 的欄位：title「Set It Off」、artist-credit「Madball」（藝人實體 c9e0a0f5，type Group、country US、area United States、**life-span begin 1988**、**disambiguation 空白**）、first-release-date **1994-07**、primary-type Album、secondary-types **空**。轄下 **5 筆 release，全部 Official、全部掛 Roadrunner Records**（日版另掛一家）：XE 1994 **RR 8991-2**（CD、14 軌）／**US 1994-07 RR 8991-2（CD、14 軌）**／JP **1994-09-21 Far East Metal Syndicate APCY-8201 ＋ Roadrunner APCY-8201**（CD、**13 軌**）／XE 2006 RR 8991-2（CD、14 軌）／XW（**無日期**）Roadrunner（Digital、14 軌）。**五筆的 barcode 全部是 016861899127，連日版與 2006 年版都相同。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=07019183-ca17-354b-a302-0b20a9bb4416&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1994-07（Roadrunner RR 8991-2，卡單所釘的那一支）逐軌與長度：1〈Set It Off〉3:26、2〈Lockdown〉1:45、3〈New York City〉2:02、4〈Never Had It〉0:57、5〈It's Time〉2:15、6〈C.T.Y.C. (R.I.P.)〉2:09、7〈Across Your Face〉1:10、8〈Down by Law〉2:49、9〈Spit on Your Grave〉1:49、10〈Face to Face〉1:54、11〈Smell the Bacon (What's With You?)〉0:47、12〈Get Out〉0:55、13〈The World Is Mine〉3:02、14〈Friend or Foe?〉1:36。**十四軌總長 26 分 36 秒；開場的同名曲 3:26 是全張最長，最短的〈Smell the Bacon〉0:47，十四軌裡有五首不到兩分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=07019183-ca17-354b-a302-0b20a9bb4416&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版：日版少的正好是末軌。**1994-09-21 的日版（APCY-8201）13 軌，**前十三軌與美歐版逐位置同曲同長，缺的是第 14 軌〈Friend or Foe?〉1:36**。其餘四筆都是 14 軌。**這是本批唯一一張「差異只在最後一首」的碟。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=07019183-ca17-354b-a302-0b20a9bb4416&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **21 個 release-group**：Album 10（secondary-types 全空）、EP 4、Single 5、Album+Compilation 1、Album+Live 1，**primary-type=Compilation 0 個**。10 張乾淨長篇依 first-release-date 排序：**1994-07 本張、1996-06-18《Demonstrating My Style》、1998-06-09《Look My Way》、2000-06-20《Hold It Down》、2005-08-01《Legacy》、2007-08-21《Infiltrate the System》、2010-10-12《Empire》、2014-06-27《Hardcore Lives》、2018-06-15《For the Cause》、2026-07-24《Not Your Kingdom》。本張排第 1。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c9e0a0f5-9f53-4247-a52d-a3f29d975e17&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**串流側逐筆覆核，駁回（實為查無）**：以「Madball Set It Off」搜尋 us 店回 9 筆，**沒有任何一筆的 artistName 是 Madball**——回的是另一支同名樂團 Set It Off 的《Cinematics》兩版、Offset 的《SET IT OFF》、以及六筆同名單曲。改以掛名「Madball」搜尋回 15 筆，**全部是 2005 年以後的碟與單曲（最早是 2005-08-02《Legacy》），沒有 1994 年這張**。**本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/search?term=Madball&country=us&entity=album&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十四首二十六分半，最短的一首四十七秒",
+   "日版只少一首，少的正好是最後那首"
+  ],
+  "sound": "1994 年 7 月 Roadrunner 的 RR 8991-2 是十四軌、26 分 36 秒。開場的同名曲〈Set It Off〉3:26 就是全張最長的一首，接著〈Lockdown〉1:45、〈New York City〉2:02、〈Never Had It〉0:57、〈It's Time〉2:15、〈C.T.Y.C. (R.I.P.)〉2:09、〈Across Your Face〉1:10、〈Down by Law〉2:49、〈Spit on Your Grave〉1:49、〈Face to Face〉1:54、〈Smell the Bacon (What's With You?)〉0:47、〈Get Out〉0:55、〈The World Is Mine〉3:02，收在〈Friend or Foe?〉1:36。十四首裡有五首不到兩分鐘，最短的〈Smell the Bacon〉只有 47 秒。同年 9 月的日版是十三軌——前十三首一模一樣，唯獨末尾那首〈Friend or Foe?〉沒有收進去。",
+  "keyTracks": [
+   "Set It Off",
+   "New York City",
+   "The World Is Mine"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1994。release-group first-release-date **1994-07**，1994 年有三筆 release（XE、US 1994-07、JP 1994-09-21，皆 Official）；2006 年的歐版與一筆無日期的數位版是後續。**裁定 220 的形狀成立**：2006 那筆會把年份推到 2006，`year` 取 1994。**串流側查無本張的上架版本**，四處對照只成立三處（release-group 的 first-release-date、US 首版 release 的 date、JP 版的 date），仍指向 1994。**同名先行單曲：無**（〈Set It Off〉是同名曲，也是首軌）。",
+  "notes": "**擋下策展層兩處、確認一處。**(1) `curatorWhy` 寫「Madball 原本是 Agnostic Front 的側案（**Freddy Cricien 是 Roger Miret 的弟弟**），1994 年這張首張長篇由 Roadrunner 發行後才變成獨立的一支」——**藝人實體 c9e0a0f5 的 disambiguation 空白、只填到 begin 1988**，成員姓名與親屬關係、以及「原本是側案」這件事**全部查不到來源，依裁定 241／250 不得寫個別成員的名字**。可寫的是 **life-span begin 1988，而首張長篇是 1994-07**——**中間隔了六年。**(2) `curatorWhy` 寫「1990 年代中期『NYHC 進入國際發行體系』的標誌」——場景敘述無來源，**不得寫**。｜(3) `curatorRisk` 說「盤名同名極多、Apple 三店皆 MISS、配對一律用 collectionId 不得用盤名」——**實測完全成立**：以盤名加掛名搜尋回的 9 筆沒有一筆的 artistName 是 Madball；改以掛名搜尋回的 15 筆全部是 2005 年以後的碟。**駁回全部候選，本張維持無串流來源狀態。**｜**軌數混版（裁定 251）**：卡單 label 欄釘 **14 軌**，行文引軌數只能引 14；**日版 13 軌的差別只是缺末軌〈Friend or Foe?〉1:36**，其餘十三軌逐位置同曲同長——行文若提日版，要把這一點寫清楚。｜**可寫的細節**：五筆 release 的 **barcode 全部相同（016861899127）**，連日版與 2006 年版都是；以及本張是該藝人 10 張乾淨長篇裡的第 1 張。"
  }
 ]
