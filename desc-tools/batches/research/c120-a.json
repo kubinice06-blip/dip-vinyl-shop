@@ -382,5 +382,261 @@
   "status": "full",
   "yearVerified": "**原盤 1987、再壓 1988，無其他再發。** release-group first-release-date **1987-01-01**，但**這個日期掛在 XW 的數位版那一筆**（裁定 220 在本批的第二種形狀）；實體首版是 US 1987 的 Fist Records 001（12 吋），日期只標到「1987」。1988 年的美國再壓會把年份推到 1988，`year` 取 1987。串流側 1152622035 的 releaseDate 標 1987-01-01（與數位版同日，℗ 寫 2016），**四處對照成立**。**同名先行單曲：無**（同名曲在 B 面第一首）。",
   "notes": "**擋下策展層三處。**(1) `curatorRisk` 寫「Apple：us／gb／de 三店 album 搜尋皆 MISS」——**實測不成立**。**串流採信 1152622035：十二軌曲序與長度逐位置比對全中（與數位版零誤差、與 1987 黑膠差 1 秒），十二軌皆有 previewUrl，採信。** (2) `curatorWhy` 寫「Raymond「Raybeez」Barbieri 帶著 Fist Records 的創廠編號 001 在 1987 年自壓出片，是紐約硬蕊『自營廠牌自己出自己的碟』這個模式最早的完整案例之一」——**Fist Records 的實體欄位 type／country／area／life-span／disambiguation 全空**，沒有任何欄位能證明它是誰開的、與樂團什麼關係。依裁定 241／250 **不得寫成員或創辦人的本名，也不得寫「自壓」「自營廠牌」**。**可以寫的只有：這張的目錄編號是 001，而該廠牌在實體欄位上除了這個編號別無資料。** (3) `curatorWhy` 寫「是紐約硬蕊……最早的完整案例之一」——極值敘述，**不得寫**；可寫的序數是**該藝人目錄 14 個 release-group、7 張乾淨長篇裡本張排第 1**。｜**本張無軌數混版**（三版皆 12 軌），但要交代另一種版本差：**1988 年的再壓同時掛 Caroline Records 1352 與 Fist Records**。｜**Caroline 編號帶實查成立**：1352（本張 1988 再壓）／1361（Warzone《Open Your Eyes》1988）／1381（Underdog《Vanishing Point》1989），**另加同廠 CAROL 1351（1988，本批 b 組那張）**——四個相鄰編號都已逐筆回問。｜**字形**：實體欄位盤名用彎引號，**卡片與行文一律 ASCII 直引號**（本批第 5 條裁定）。"
+ },
+ {
+  "key": "desc2:Warzone|Open Your Eyes",
+  "artist": "Warzone",
+  "album": "Open Your Eyes",
+  "facts": [
+   {
+    "f": "release-group da5e62c5 的欄位：title「Open Your Eyes」、artist-credit「Warzone」（藝人實體 496da466，life-span **1983～1997**、disambiguation「American hardcore punk band from NYC」）、first-release-date **1988**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 10 軌、全部 Official**：**US 1988 Caroline Records CAROL 1361（media format 只標「Vinyl」，未標尺寸）**／XW **1989-01-01** Revelation Records **REV173**（Digital）／US 2018 Revelation Records **REV173**（CD，disambiguation「remastered」）。**數位版與 2018 年的 CD 共用同一個目錄編號 REV173。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=da5e62c5-afef-4bd4-a2d0-f17bd6287ec4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1988（Caroline CAROL 1361，卡單所釘的那一支）逐軌與長度：1〈**Open Up Your Eyes**〉4:29、2〈Dance Hard or Die〉1:17、3〈Face Up to It〉2:06、4〈Always - A Friend for Life〉2:41、5〈Racism - World History, Part 1〉2:44、6〈Back to School Again〉3:01、7〈The American Movement〉2:31、8〈Fight the Oppressor〉2:50、9〈Deceive Us - No More〉2:37、10〈Striving Higher for a Better Life〉2:22。**十軌總長 26 分 38 秒。開場曲 4:29 是全張最長，也是本團前一張碟十二軌裡任何一軌的一點五倍。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=da5e62c5-afef-4bd4-a2d0-f17bd6287ec4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**盤名與首軌名的落差**：release-group 的 title 是《Open Your Eyes》，但 **1988 年原盤的第 1 軌被登錄為〈Open Up Your Eyes〉（多一個 Up）**；1989 數位版與 2018 CD 都把首軌寫成〈Open Your Eyes〉。三個版本的其餘九軌曲序與長度一致（誤差 1 秒），**本張無軌數混版**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=da5e62c5-afef-4bd4-a2d0-f17bd6287ec4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 14 個 release-group、7 張 secondary-types 為空的 Album。依 first-release-date 排序，**本張排第 2**（前面是 1987-01-01《Don't Forget the Struggle, Don't Forget the Streets》），其後是 1989《Warzone》。**這支團 1987、1988、1989 連續三年各出一張長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=496da466-68e9-4cbb-9e86-cbb57eda861a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**Caroline 編號帶實查**（本張的核心事實）：本張 **CAROL 1361**（1988）／同團前作 1988 年再壓的 **Caroline 1352**／Underdog《Vanishing Point》1989 的 **CAR 01381＋CAROL 1381**／Youth of Today《We're Not in This Alone》1988 的 **CAROL 1351**（release 169f21ba，US 1988、12\" Vinyl、13 軌、Official）——**四個編號 1351／1352／1361／1381 全部逐筆回問屬實。**廠牌實體 Caroline Records（a14fd98c）country US、area United States、**disambiguation「1973–76 Virgin subsidiary, UK; 1986– pseudo-indie label, US/worldwide」**。",
+    "src": "https://musicbrainz.org/ws/2/label/a14fd98c-9b89-481a-b7b8-eea8be6b2816?fmt=json"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1441170429**《Open Your Eyes》，artistName「Warzone」、releaseDate **1989-01-01**（＝數位版那一筆的日期，不是黑膠的 1988）、trackCount 10、℗ 2018 Revelation Records，十軌 4:29／1:17／2:06／2:41／2:44／3:01／2:31／2:50／2:37／2:23，**與 1989 數位版十軌逐位置零誤差相符**，十軌全部有 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1441170429&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "開場那首四分二十九秒，比前一張碟裡最長的一首還多一半",
+   "原盤上的第一首叫〈Open Up Your Eyes〉，比盤名多一個字"
+  ],
+  "sound": "1988 年 Caroline 的 CAROL 1361 是十軌、26 分 38 秒。開場的〈Open Up Your Eyes〉4:29 就是全張最長的一首——比同團前一年那張十二軌裡任何一首都長出一半。接著是〈Dance Hard or Die〉1:17、〈Face Up to It〉2:06、〈Always - A Friend for Life〉2:41、〈Racism - World History, Part 1〉2:44、〈Back to School Again〉3:01、〈The American Movement〉2:31、〈Fight the Oppressor〉2:50、〈Deceive Us - No More〉2:37，收在〈Striving Higher for a Better Life〉2:22。曲名一路帶破折號、把主張和它的補語分成兩截。後來的數位版與 2018 年的 CD 都把首軌的名字改回與盤名一致的〈Open Your Eyes〉，十軌其餘部分一動未動。",
+  "keyTracks": [
+   "Open Up Your Eyes",
+   "Racism - World History, Part 1",
+   "Striving Higher for a Better Life"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**，其下最早的 release 是 US 1988 的 Caroline CAROL 1361（Official）；XW 那筆數位版標 **1989-01-01**、2018 年的 CD 是 remaster。**裁定 220 的形狀成立**：數位版與 2018 CD 會把年份推到 1989／2018，`year` 取 1988。**串流側 1441170429 的 releaseDate 標 1989-01-01（＝數位版年份、不是黑膠年份）**，`year` 一律以實體欄位為準取 1988；四處對照成立。**同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處。**(1) `curatorWhy` 寫「由 Caroline（**Virgin 旗下的獨立部門**）以 CAROL 1361 發行」——**廠牌實體的 disambiguation 明確把兩個時期分開：「1973–76 Virgin subsidiary, UK; 1986– pseudo-indie label, US/worldwide」**。本張是 1988 年，屬於後一個時期，**不得寫「Virgin 旗下」**。(2) `curatorWhy` 說 Caroline 三張構成一條編號帶——**方向對，但數字要補完**：實查到的相鄰編號其實有四個，**CAROL 1351（Youth of Today《We're Not in This Alone》1988，已逐筆回問屬實）／Caroline 1352（同團前作 1988 年再壓）／CAROL 1361（本張）／CAR 01381＋CAROL 1381（Underdog 1989）**。行文若要引這條線，**1352 那一筆不能漏**，因為它證明 Caroline 是先接手再壓、再簽新碟。｜**首軌名的落差要守住（裁定 157）**：**1988 原盤的第 1 軌是〈Open Up Your Eyes〉、比盤名多一個 Up**，1989 之後的版本才改成〈Open Your Eyes〉。`keyTracks` 依卡單所釘的 1988 原盤寫〈Open Up Your Eyes〉。｜**本張無軌數混版**（三版皆 10 軌），但 **1988 那筆的 media format 只標「Vinyl」、未標 12 吋**，卡單 label 欄寫「黑膠 10 軌」與欄位一致，**行文不要自行補「12 吋」**。｜**串流採信 1441170429：十軌長度逐位置零誤差比對全中，十軌皆有 previewUrl，採信**；但**上架端的年份是 1989，不得拿來當本卡年份**。｜**人名從嚴**：藝人實體只填到 country US、area United States，**不得寫個別成員的名字，也不得寫任何區級地名。**"
+ },
+ {
+  "key": "desc2:Leeway|Born to Expire",
+  "artist": "Leeway",
+  "album": "Born to Expire",
+  "facts": [
+   {
+    "f": "release-group 6e2880d9 的欄位：title「Born to Expire」、artist-credit「Leeway」（藝人實體 121193a5，type Group、country US、**life-span 1984～1996**、disambiguation「Crossover thrash band from NYC」）、first-release-date **1988**、primary-type Album、secondary-types **空**。轄下 **7 筆 release**：**US 1988 Profile PRO-1257（12\" Vinyl、12 軌、Official）**／US 1988 **Profile PCD-1257**（CD、**11 軌**、Official）／DE 1988 **Moshroom Records CD 2004**（CD、11 軌、Official）／GB 1989 **Profile FILECD 257**（CD、12 軌、Official）／BR 2014-12-09 **Marquee Records MR 065**（CD、**21 軌**、**status 為 null**）／XW 2016-01-23 **Reality Records**（Digital、21 軌、Official）／US（無日期）Digital、11 軌、Official。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e2880d9-6f92-3ffd-b912-6b2666c4c838&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1988 的 12 吋（Profile **PRO-1257**，卡單所釘的那一支）逐軌與長度：A 面 1〈Rise and Fall〉3:53、2〈Mark of the Squealer〉3:39、3〈Be Loud〉2:16、4〈On the Outside〉3:21、5〈Defy You〉3:05、6〈Enforcer〉3:46；B 面 1〈Tools for War〉3:06、2〈Born to Expire〉4:08、3〈Marathon〉2:11、4〈Self Defense〉1:21、5〈Catholic High Scool (Girls in Trouble)〉1:59、6〈Unexpected〉4:32。**十二軌總長 37 分 18 秒，九軌超過三分鐘。B5 的曲名在原盤上被打成「High Scool」（少一個 h），CD 版才改回「High School」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e2880d9-6f92-3ffd-b912-6b2666c4c838&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版：11 軌與 12 軌的差別不是少了一首歌，而是併軌。**1988 年的兩張 CD（US PCD-1257 與 DE Moshroom）把黑膠的前兩軌合成一軌 **〈Rise and Fall / Mark of the Squealer〉7:34**，因此變成 11 軌；1989 年的英版 CD（FILECD 257）又拆回 12 軌。**十二軌的曲名與內容在四個版本裡完全一樣。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e2880d9-6f92-3ffd-b912-6b2666c4c838&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**21 軌版的來源**：2014 年巴西版與 2016 年數位版的第 13–21 軌全部是同一場現場錄音，MB 的軌名逐首標著「**live at the Ritz, New York, 1986**」——〈Enforcer〉3:43、〈Marathon〉2:09、〈On the Outside〉3:30、〈Defy You〉3:06、〈Self Defense〉1:39、**〈Silver Tongue〉1:42（這一首不在原盤十二軌裡）**、〈Be Loud〉2:11、〈Tools for War〉2:52、〈Unexpected〉3:17。**這九軌是 1986 年的現場演奏，比原盤早兩年。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e2880d9-6f92-3ffd-b912-6b2666c4c838&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 5 個 release-group**：Album 4（secondary-types 全空）、EP+Demo 1。4 張乾淨長篇依 first-release-date 排序：**1988 本張、1991《Desperate Measures》、1994《Adult Crash》、1995《Open Mouth Kiss》。本張排第 1，而這支團名下總共只有五筆條目。**廠牌實體 Profile（e832b688）country US、begin 1981、**disambiguation「US hip‐hop label」**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=121193a5-cb8b-4182-968c-8ba607856fa2&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1073945653**《Born to Expire》，artistName「Leeway」、releaseDate 1988-01-01、trackCount **21**、℗ **2015 Reality Records**，前十二軌 3:53／3:39／2:15／3:22／3:05／3:47／3:06／4:05／2:11／1:22／1:59／4:32、第 13–21 軌逐首標「(Live at the Ritz, New York, 1986)」，**與 2016 數位版 21 軌逐位置零誤差相符**，二十一軌全部有 previewUrl。**這不是卡單所釘的 12 軌黑膠，是 21 軌的擴充版。**",
+    "src": "https://itunes.apple.com/lookup?id=1073945653&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌版不是少了一首，是把開頭兩首接成七分三十四秒的一軌",
+   "原盤封套把 High School 打成 High Scool，CD 版才改回來"
+  ],
+  "sound": "1988 年 Profile 的 PRO-1257 是十二軌、37 分 18 秒，九軌超過三分鐘。A 面〈Rise and Fall〉3:53 接〈Mark of the Squealer〉3:39、〈Be Loud〉2:16、〈On the Outside〉3:21、〈Defy You〉3:05、〈Enforcer〉3:46；B 面是〈Tools for War〉3:06、同名的〈Born to Expire〉4:08、〈Marathon〉2:11、〈Self Defense〉1:21、〈Catholic High Scool (Girls in Trouble)〉1:59、〈Unexpected〉4:32。同年兩張 CD 標的是十一軌，但那不是少了一首——是把開頭兩首接成一條 7:34 的〈Rise and Fall / Mark of the Squealer〉；隔年的英版 CD 又拆回十二軌。曲名把〈Self Defense〉1:21 這種短句和〈Catholic High Scool (Girls in Trouble)〉這種長標題擺在一起，連拼錯的 Scool 都留在原盤上。",
+  "keyTracks": [
+   "Rise and Fall",
+   "Born to Expire",
+   "Unexpected"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**，1988 年有三筆 release（US 12 吋、US CD、DE CD，皆 Official）；1989 英版、2014 巴西版、2016 數位版、以及一筆無日期的美國數位版是後續。**裁定 220 的形狀成立**：2014／2016 會把年份推後，`year` 取 1988。**串流側 1073945653 的 releaseDate 標 1988-01-01 但 ℗ 寫 2015**，年份仍指向 1988，四處對照成立。**同名先行單曲：無**（〈Born to Expire〉是同名曲，在 B 面第二首）。",
+  "notes": "**擋下策展層三處。**(1) `curatorWhy` 寫「Leeway 1984 年在**皇后區**成軍」——**藝人實體只填 country US、area United States**，disambiguation 也只寫到「from NYC」，**區級地名查不到來源，不得寫**；可以寫的是 **life-span 1984～1996**。(2) `curatorWhy` 寫「把硬蕊的節奏放進金屬的riff裡，是 Cro-Mags《Best Wishes》之外另一條把兩邊縫起來的路」——**跨藝人的風格斷言查不到來源，不得寫**；可以寫的是 disambiguation 本身寫著「Crossover thrash band from NYC」。(3) `curatorRisk` 只說「12 吋 12 軌／CD 11 軌／2014 CD 21 軌曲數三種」——**理由沒說清楚，寫作層照抄會出錯**：**11 軌版不是少一首歌，而是把黑膠前兩軌併成一條 7:34 的〈Rise and Fall / Mark of the Squealer〉**；**21 軌版多出的九軌全部是同一場 1986 年的現場錄音**（其中〈Silver Tongue〉不在原盤十二軌裡）。｜**軌數混版（裁定 251）**：卡單 label 欄釘 12 吋 **12 軌**，行文引軌數只能引 12。｜**串流採信 1073945653：二十一軌長度逐位置零誤差比對全中，皆有 previewUrl，採信**——但**必須註明採信的是 21 軌的擴充版（原盤十二軌＋1986 年現場九軌），不是卡單所釘的 12 軌黑膠**。｜**可寫的最強細節**：原盤 B5 曲名被打成〈Catholic High Scool (Girls in Trouble)〉，CD 版才改回 School；以及**該藝人名下總共只有 5 個 release-group、4 張長篇，本張排第 1**。｜**同廠對照屬實**：Profile 的 PCD-1218（Cro-Mags 1986）／PCD-1225（Murphy's Law 1986）／PCD-1257 與 PRO-1257（本張 1988）／PCD-1274（Cro-Mags 1989）皆已逐筆回問；該廠牌實體的 disambiguation 是「US hip‐hop label」。"
+ },
+ {
+  "key": "desc2:Murphy's Law|Murphy's Law",
+  "artist": "Murphy's Law",
+  "album": "Murphy's Law",
+  "facts": [
+   {
+    "f": "release-group c432b56b 的欄位：title「Murphy’s Law」（**彎撇 U+2019**）、artist-credit「Murphy’s Law」（藝人實體 4a9fae02，type Group、country US、**life-span begin 1982**、disambiguation「USA hardcore punk」）、first-release-date **1986**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：US 1986 **Profile PCD-1225**（CD、12 軌、Official、barcode 015151122525）。**1986 年的 12 吋黑膠在實體欄位裡沒有建檔——本張只查得到 CD 一種載體。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c432b56b-9347-4bc9-8c52-a6e29eafe798&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1986（Profile PCD-1225）逐軌與長度：1〈Murphy's Law〉1:47、2〈California Pipeline〉1:25、3〈Sit Home & Rot〉1:29、4〈Fun〉1:59、5〈Beer〉1:46、6〈Wahoo Day〉**0:27**、7〈Crucial Bar-B-Q〉2:27、8〈A Day in the Life〉1:46、9〈Care Bear〉2:52、10〈Ilsa〉2:33、11〈Skinhead Rebel〉1:15、12〈I Got a Right〉2:33。**十二軌總長 22 分 14 秒，最短的〈Wahoo Day〉只有 27 秒、最長的〈Care Bear〉2:52。**曲名把〈Beer〉〈Crucial Bar-B-Q〉〈Care Bear〉〈Wahoo Day〉這類生活場景擺進同一張碟。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c432b56b-9347-4bc9-8c52-a6e29eafe798&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **18 個 release-group**：Album 6（secondary-types 全空）、EP 2、Single 7、Album+Live 1、EP+Live 1、Album+Compilation 1，**primary-type=Compilation 0 個**。6 張乾淨長篇依 first-release-date 排序：**1986 本張、1989-01-01《Back With a Bong》、1991《The Best of Times》、1996-05-14《Dedicated》、2001-06-05《The Party's Over》、2005《Covered》。本張排第 1。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4a9fae02-7de0-4cb8-97d7-1fd790d9675e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Profile（e832b688）：type「Original Production」、country US、area United States、life-span begin **1981**、**disambiguation「US hip‐hop label」**。本批同廠另有三個相鄰編號：**PCD-1218**（Cro-Mags《The Age of Quarrel》1986）、**PCD-1257／PRO-1257**（Leeway《Born to Expire》1988）、**PCD-1274**（Cro-Mags《Best Wishes》1989）。**本張的 PCD-1225 與 Cro-Mags 1986 那張的 PCD-1218 只差七號。**",
+    "src": "https://musicbrainz.org/ws/2/label/e832b688-546b-45e3-83e5-9f8db5dcde1d?fmt=json"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1532999951**《Murphy's Law》（**上架端用 ASCII 直撇**），artistName「Murphy's Law」、releaseDate 1986-01-01、trackCount **13**、℗ **1986 Rock Hotel/Astor Place**，十三軌 1:50／1:35／1:37／2:08／1:57／0:34／2:32／1:52／2:58／2:40／1:18／2:38／**〈Sit Home and Rot (Bonus)〉1:27**——**前十二軌與實體欄位十二軌同曲同序（各長 3–7 秒，是另一套母帶），第 13 軌是額外的 bonus**。十三軌全部有 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1532999951&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首二十二分鐘，其中一首只有二十七秒",
+   "同一年同一家廠牌，這張的編號跟另一支團那張只差七號"
+  ],
+  "sound": "1986 年 Profile 的 PCD-1225 是十二軌、22 分 14 秒。同名的〈Murphy's Law〉1:47 開場，接〈California Pipeline〉1:25、〈Sit Home & Rot〉1:29、〈Fun〉1:59、〈Beer〉1:46，然後是全張最短的〈Wahoo Day〉——只有 27 秒——再走〈Crucial Bar-B-Q〉2:27、〈A Day in the Life〉1:46、〈Care Bear〉2:52、〈Ilsa〉2:33、〈Skinhead Rebel〉1:15，收在〈I Got a Right〉2:33。十二首裡有八首不到兩分鐘，最長的〈Care Bear〉2:52 也沒破三分。曲名清單本身就是這張碟的性格：啤酒、烤肉、卡通熊、一個叫「Wahoo Day」的二十七秒。實體欄位裡這張只留下 CD 一種載體。",
+  "keyTracks": [
+   "Murphy's Law",
+   "Wahoo Day",
+   "Crucial Bar-B-Q"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986**，其下**唯一一筆 release** 就是 US 1986 的 Profile PCD-1225（Official）。**裁定 220 的形狀在本張不成立**——沒有任何再發可以蓋掉年份。串流側 1532999951 的 releaseDate 標 1986-01-01、℗ 1986，**四處對照只成立三處（release-group 的 first-release-date、唯一 release 的 date、串流側的 ℗ 年），仍指向 1986**。**同名先行單曲：無**（〈Murphy's Law〉是同名曲，也是首軌）。",
+  "notes": "**擋下策展層三處。**(1) `curatorWhy` 寫「Jimmy Gestapo（**原 Agnostic Front 鼓手**）1982 年組團」——**藝人實體只填到 type Group／country US／begin 1982／disambiguation「USA hardcore punk」，沒有任何成員或前團資料**，依裁定 241／250 **不得寫個別成員的名字，也不得寫誰在哪一團待過**。可寫的只有 **life-span begin 1982**。(2) `curatorWhy` 寫「是 CBGB 午場那一批團裡少數被電台播過的」——**電台播放紀錄查不到任何可引來源，不得寫。**(3) `curatorWhy` 寫「把 ska 與飲酒歌塞進硬蕊的節奏裡」——風格斷言無來源，**但曲名清單可以自己說話**：〈Beer〉〈Crucial Bar-B-Q〉〈Care Bear〉〈Wahoo Day〉0:27 都在實體欄位裡，**行文請走曲名與長度，不要走風格標籤。**｜**反向陷阱**：實體欄位只有一筆 release、且是 **CD**，**1986 年的 12 吋黑膠沒有建檔**，行文不得寫「1986 年的黑膠」。｜**串流採信 1532999951：前十二軌與實體欄位十二軌同曲同序（各長 3–7 秒，另一套母帶），第 13 軌是額外的〈Sit Home and Rot (Bonus)〉1:27，十三軌皆有 previewUrl，採信**——但**必須註明採信的是 13 軌版，卡單所釘的是 12 軌**。｜**「Rock Hotel」這個字串只出現在串流側的 ℗ 行，不是廠牌欄位**；本批 Cro-Mags《The Age of Quarrel》的 `curatorWhy` 把 Rock Hotel 寫成該張的發行方，那是錯的（見該卡 notes），**本張也不得把 ℗ 行的字串當成廠牌事實寫出來**。｜**字形**：實體欄位掛名與盤名用 U+2019，**卡片與行文一律 ASCII 直撇「Murphy's Law」**（本批第 5 條裁定）。"
+ },
+ {
+  "key": "desc2:Killing Time|Brightside",
+  "artist": "Killing Time",
+  "album": "Brightside",
+  "facts": [
+   {
+    "f": "release-group 244112b1 的欄位：title「Brightside」、artist-credit「Killing Time」（藝人實體 9e3c100d，type Group、country US、**life-span begin 1988**、disambiguation「New York Hardcore band」）、first-release-date **1989-11**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，同月同廠、全部 11 軌、全部 Official**，三種載體共用同一組編號的三個尾碼：**In-Effect 88561-3008-1（12\" Vinyl）／88561-3008-2（CD）／88561-3008-4（Cassette）**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=244112b1-e673-3b52-ba1a-21881d16ac58&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "12 吋（88561-3008-1，卡單所釘的那一支）逐軌與長度：A 面 1〈Cheap Thrills〉1:05、2〈Brightside〉2:29、3〈Fools Die〉2:20、4〈Telltale〉1:28、5〈What I Want〉2:10；B 面 1〈No More Mr. Nice Guy〉2:43、2〈My Reason〉2:12、3〈New Release〉1:42、4〈Backtrack〉2:34、5〈Wall of Hate〉1:26、6〈Wisdom〉2:52。**十一軌總長 23 分 01 秒；黑膠與卡帶都是 A 面五軌、B 面六軌，CD 版則是連續十一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=244112b1-e673-3b52-ba1a-21881d16ac58&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同廠編號實查（本張的核心事實）**：本張三筆的 In-Effect 編號是 **88561-3008-1／-2／-4**（1989-11），本批 Sick of It All《Blood, Sweat, and No Tears》兩筆是 **88561-3005-1／-2**（1989-05）——**同一家廠牌、同一年、兩張碟的編號只差三號，前者五月、後者十一月。**廠牌實體 In-Effect（2a7d9419）的 **life-span 是 1988～1991**，country 與 area 皆未填。",
+    "src": "https://musicbrainz.org/ws/2/label/2a7d9419-ad51-4187-b278-8bfa695fd227?fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 6 個 release-group**：Album 3（secondary-types 全空）、EP 2、Album+Compilation 1。3 張乾淨長篇依 first-release-date 排序：**1989-11 本張、1997-04《The Method》、2010《Three Steps Back》。本張排第 1，而本張與下一張長篇之間隔了七年五個月。**另有同名雙胞胎 release-group 4e675f91《Brightside》（1995），其型別是 **Album+Compilation**、與本張是不同實體。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9e3c100d-51c9-43da-b21d-4dcead9a3142&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **279062194**《Brightside》，artistName「Killing Time」、releaseDate **1989-11-01**（**與 release-group 的 1989-11 同月**）、trackCount 11、℗ 2008 Killing Time，十一軌 1:06／2:31／2:22／1:29／2:12／2:44／2:13／1:42／2:37／1:29／2:53，**曲序與實體欄位十一軌逐位置相符（各長 1–3 秒，是另一套母帶）**，十一軌全部有 previewUrl。第 4 軌上架端作〈Tell Tale〉（分寫兩字），實體欄位作〈Telltale〉。",
+    "src": "https://itunes.apple.com/lookup?id=279062194&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "黑膠、CD、卡帶同月出，編號只差最後一碼",
+   "同一家廠牌同一年的另一張碟，編號只差三號"
+  ],
+  "sound": "1989 年 11 月 In-Effect 一次出了三種載體：12 吋是 88561-3008-1、CD 是 -2、卡帶是 -4，十一軌、23 分 01 秒。A 面〈Cheap Thrills〉1:05 開場，接同名的〈Brightside〉2:29、〈Fools Die〉2:20、〈Telltale〉1:28、〈What I Want〉2:10；B 面六首從〈No More Mr. Nice Guy〉2:43 起，走〈My Reason〉2:12、〈New Release〉1:42、〈Backtrack〉2:34、〈Wall of Hate〉1:26，收在全張最長的〈Wisdom〉2:52。十一軌沒有一首超過三分鐘，最短的開場曲只有 1:05。黑膠與卡帶都切成前五後六，CD 版則一路連著放完。",
+  "keyTracks": [
+   "Cheap Thrills",
+   "Brightside",
+   "Wisdom"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989-11**，其下三筆 release 全部標 1989-11、全部 Official、全部 11 軌，**沒有任何一筆再發**。裁定 220 的形狀在本張不成立。串流側 279062194 的 releaseDate 標 **1989-11-01**（與 first-release-date 同月，℗ 寫 2008），**四處對照成立**。**同名先行單曲：無**（〈Brightside〉是同名曲，在 A 面第二首）。**另注意同名雙胞胎**：藝人目錄裡 1995 年還有一個叫《Brightside》的 release-group（4e675f91），型別是 Album+Compilation，**年份與型別都與本張不同**。",
+  "notes": "**擋下策展層兩處。**(1) `curatorWhy` 寫「這支團原名 Raw Deal，**因商標問題**改名 Killing Time」——**改名這件事在 MB 上只有一個可引依據：另一個藝人實體 Raw Deal（a940eaf6）的 disambiguation 寫「New York hardcore punk band aka Killing Time」。「商標問題」這個原因查不到任何來源，不得寫。**(2) `curatorWhy` 寫「In-Effect 1989 年那批發行裡最被後人翻出來的一張」——極值敘述無來源，**不得寫**。｜**編號相鄰屬實、可以放心寫**：本張 88561-3008-1／-2／-4（1989-11）與本批 Sick of It All 那張的 88561-3005-1／-2（1989-05），**同廠同年、編號差三號、相隔六個月**，四筆都已逐筆回問。可以再補：**該廠牌實體的 life-span 只有 1988～1991 三年。**｜**本張無軌數混版**：三種載體全部 11 軌，**差別只在分面**（黑膠與卡帶是五＋六，CD 是連續十一軌），行文引 11 軌是安全的。｜**串流採信 279062194：十一軌曲序逐位置比對全中（各長 1–3 秒，另一套母帶），十一軌皆有 previewUrl，上架月份與 first-release-date 同為 1989 年 11 月，採信**；第 4 軌上架端作〈Tell Tale〉，**`keyTracks` 與行文一律用實體欄位的〈Telltale〉**。｜**人名從嚴**：藝人實體只填到 begin 1988 與 disambiguation，**不得寫個別成員的名字。**"
+ },
+ {
+  "key": "desc2:Token Entry|From Beneath the Streets",
+  "artist": "Token Entry",
+  "album": "From Beneath the Streets",
+  "facts": [
+   {
+    "f": "release-group ac20f06a 的欄位：title「From Beneath the Streets」、artist-credit「Token Entry」（藝人實體 535d0a8d，type Group、country US、area United States、**life-span 未填**、**disambiguation 空白**）、first-release-date **1987**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 14 軌、全部 Official**：**US 1987 Positive Force PF-11（12\" Vinyl）**／US 1998 **Go‐Kart Records GOK40**（CD）／DE 2014-05-01 **Mad at the World Records**（Digital）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ac20f06a-db58-3ecd-a5a2-522b94606920&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1987 的 12 吋（Positive Force **PF-11**，卡單所釘的那一支）逐軌：A 面 1〈Intro〉、2〈Revelation〉、3〈Psycho〉、4〈Antidote〉、5〈Latent Images〉、6〈Think About It〉、7〈Over You〉；B 面 1〈Actions〉、2〈The Edge〉、3〈Forbidden Zone〉、4〈Look Around〉、5〈Decide〉、6〈Death Row〉、7〈Tragic Magic〉。**這一筆十四軌全部沒有記錄長度**，A 面七軌、B 面七軌對半切。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ac20f06a-db58-3ecd-a5a2-522b94606920&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**長度要從 1998 年的 CD（GOK40）與 2014 年的數位版取，兩者完全相同**：〈Intro〉0:13、〈Revelation〉2:24、〈Psycho〉3:00、〈Antidote〉2:07、〈Latent Images〉3:35、〈Think About It〉2:00、〈Over You〉2:36、〈Actions〉2:17、〈The Edge〉2:57、〈Forbidden Zone〉2:21、〈Look Around〉1:03、〈Decide〉3:45、**〈Death Row〉7:06**、〈Tragic Magic〉0:42。**十四軌總長 34 分 06 秒，而〈Death Row〉一首就佔了 7:06——是第二長的〈Latent Images〉3:35 的兩倍，也是全批硬蕊碟裡少見的長度。**曲序與 1987 年黑膠逐位置相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ac20f06a-db58-3ecd-a5a2-522b94606920&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 3 個 release-group，三個全部是 primary-type=Album 且 secondary-types 為空**：**1987 本張、1990《The Weight of the World》、1998-12-29《Jaybird》**。**本張排第 1；這支團名下沒有任何 EP、Single、Live 或整編條目。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=535d0a8d-1f4c-4f0b-a384-b7d9fcadb7d3&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Positive Force（36046cfc）：type「Original Production」、country US、area United States，**life-span 起訖皆未填、disambiguation 空白**——這家廠牌是誰開的、開在哪個城市，實體欄位查不到。1998 年那筆的 Go‐Kart Records（e52012af）則填了 **area New York、life-span 1995～2005**。",
+    "src": "https://musicbrainz.org/ws/2/label/36046cfc-e6d8-4c3f-9c52-4c113089cbf9?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，採信**：collectionId **900334871**《From Beneath the Streets》，artistName「Token Entry」、releaseDate 1987-01-01、trackCount 14、℗ 2014 Hungry Eye Records，十四軌 0:14／2:24／3:00／2:07／3:36／2:01／2:37／2:17／2:58／2:22／1:03／3:46／**7:06**／0:43，**與 1998 CD／2014 數位版十四軌逐位置相符（誤差 ±1 秒）**，十四軌全部有 previewUrl。**末兩軌上架端作〈Death Row/ Tragic Magic〉7:06 與〈Outro〉0:43**，對應實體欄位的〈Death Row〉7:06 與〈Tragic Magic〉0:42。",
+    "src": "https://itunes.apple.com/lookup?id=900334871&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十四首裡有一首七分零六秒，是第二長那首的兩倍",
+   "這支團名下只有三張碟，三張全是長篇，一張 EP 都沒有"
+  ],
+  "sound": "1987 年 Positive Force 的 PF-11 是 12 吋、十四軌，A 面七首、B 面七首對半切：〈Intro〉起頭，走〈Revelation〉〈Psycho〉〈Antidote〉〈Latent Images〉〈Think About It〉〈Over You〉，翻面接〈Actions〉〈The Edge〉〈Forbidden Zone〉〈Look Around〉〈Decide〉〈Death Row〉〈Tragic Magic〉。黑膠那筆沒有留下長度，後來的 CD 與數位版把十四軌記成 34 分 06 秒——〈Intro〉只有 0:13、〈Look Around〉1:03、末軌〈Tragic Magic〉0:42，而 B 面倒數第二首〈Death Row〉一首就 7:06，是第二長的〈Latent Images〉3:35 的兩倍。一張硬蕊唱片把最長的段落放在收尾之前，這個配置在同期的碟裡並不常見。",
+  "keyTracks": [
+   "Revelation",
+   "Latent Images",
+   "Death Row"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987。release-group first-release-date **1987**，其下最早的 release 就是 US 1987 的 Positive Force PF-11（Official）；1998 美版 CD 與 2014-05-01 德版數位是再發。**裁定 220 的形狀成立**：兩筆再發會把年份推到 1998／2014，`year` 取 1987。串流側 900334871 的 releaseDate 標 1987-01-01（℗ 寫 2014），**四處對照成立**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 與 `curatorWhy` 都說「Apple：us／gb／de 三店 album 搜尋皆 MISS」「試聽要靠 YouTube 官方 Album playlist 人工核對」——**實測不成立**。**串流採信 900334871：十四軌曲序與長度逐位置比對全中（誤差 ±1 秒），十四軌皆有 previewUrl，採信**；上架端把末兩軌寫成〈Death Row/ Tragic Magic〉與〈Outro〉，**`keyTracks` 與行文一律用實體欄位的〈Death Row〉〈Tragic Magic〉**。(2) `curatorWhy` 寫「Positive Force（**7 Seconds 兄弟開的 Reno 廠牌**）唯一一張紐約團的 LP」——**廠牌實體只填了 type、country US 與 area United States，life-span 與 disambiguation 全空**：誰開的、開在哪座城市、名下有幾張紐約團的碟，**三件事全部查不到來源，整句不得寫**（「唯一一張」還是極值，依裁定 241／250 更不得留）。(3) `curatorWhy` 寫「皇后區 Astoria 那一支」與「速度與旋律的比例比同期 Agnostic Front 明顯偏向後者，是後來 Gorilla Biscuits 那條『melodic NYHC』支線的先聲」——**藝人實體的 area 只填到 United States、disambiguation 空白，區級地名與跨藝人的支線斷言都不得寫。**｜**本張無軌數混版**（三版皆 14 軌），但**版本差在「有沒有長度」**：卡單所釘的 1987 黑膠那筆十四軌全部沒有長度紀錄，**行文要引秒數只能引 1998 CD／2014 數位版的數字，並說明那是後出版本記的。**｜**可寫的最強序數**：該藝人名下**只有 3 個 release-group，三個全是 secondary-types 為空的 Album**，本張排第 1，且**名下沒有任何 EP、Single 或 Live 條目**。｜**人名從嚴**：藝人實體 life-span 未填、disambiguation 空白，**不得寫個別成員的名字。**"
+ },
+ {
+  "key": "desc2:Underdog|Vanishing Point",
+  "artist": "Underdog",
+  "album": "Vanishing Point",
+  "facts": [
+   {
+    "f": "release-group e5c98dae 的欄位：title「Vanishing Point」、artist-credit「Underdog」（藝人實體 de38fbd3，type Group、country US、area United States、**life-span 未填**、disambiguation「New York hardcore group」）、first-release-date **1989**、primary-type Album、secondary-types **空**。轄下**只有 2 筆 release**：**US 1989 Caroline Records「CAR 01381」＋「CAROL 1381」兩組編號並列（12\" Vinyl、11 軌、Official，release title 是《The Vanishing Point》，帶定冠詞）**／US 1998 **Go‐Kart Records GK030CD**（CD、**24 軌**、Official，release title 是《Vanishing Point》，無定冠詞）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e5c98dae-5aa7-34ef-a67e-bc53657eb165&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1989 的 12 吋（CAROL 1381，卡單所釘的那一支）逐軌：A 面 1〈From Now On〉、2〈A Lot to Learn〉、3〈Over the Edge〉、4〈Mass Movement〉、5〈Never Too Late〉、6〈Back to Back〉；B 面 1〈Underdog〉、2〈Without Fear〉、3〈Blindside〉、4〈The Vanishing Point〉、5〈No Matter What〉。**這一筆十一軌全部沒有記錄長度**；B 面第四首與 release title 同名、也帶定冠詞。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e5c98dae-5aa7-34ef-a67e-bc53657eb165&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版（本批最大的一組差距）**：1998 年的 CD 是 **24 軌** ＝原盤十一軌（長度為〈From Now On〉1:53、〈A Lot to Learn〉4:28、〈Over the Edge〉2:38、〈Mass Movement〉4:42、〈Never Too Late〉1:22、〈Back to Back〉2:52、〈Underdog〉2:13、〈Without Fear〉4:16、〈Blindside〉2:50、〈The Vanishing Point〉4:55、〈No Matter What〉3:58，**十一軌 36 分 09 秒**）＋**末尾追加的十三軌**〈Friends Like Them〉2:40／〈Reachout〉3:24／〈Get Together〉5:03／〈Let's Be Friends〉1:36／〈Back to Back〉2:18／〈Underdog〉1:37／〈True Blue〉1:24／〈Not Like You〉2:56／〈Say It to My Face〉2:52／〈Mass Movement〉3:27／〈Reachout〉2:44／〈Vanishing Point〉4:53／〈Friends Like Them〉2:21。**追加的十三軌裡有六首與原盤同名但長度不同，是另一批錄音。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e5c98dae-5aa7-34ef-a67e-bc53657eb165&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 4 個 release-group**：**primary-type=Album 且 secondary-types 為空的只有本張一個**，其餘是 8a63df90《Underdog》（2010，EP）、16073c23《Matchless》（Album+Compilation）、d3dc39e3《Demos》（primary-type 為 null）。**本張是這份目錄裡唯一一張乾淨長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=de38fbd3-7155-497a-bf3c-1a8db3091859&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**Caroline 編號帶實查**：本張 **CAR 01381／CAROL 1381**（1989）／Warzone《Open Your Eyes》**CAROL 1361**（1988）／Warzone 前作 1988 年再壓的 **Caroline 1352**／Youth of Today《We're Not in This Alone》**CAROL 1351**（release 169f21ba，US 1988、12\" Vinyl、13 軌、Official）——**四個編號全部逐筆回問屬實。**廠牌實體 Caroline Records（a14fd98c）country US、area United States，disambiguation 明確把 1973–76 的英國時期與 1986 年起的美國時期分開。",
+    "src": "https://musicbrainz.org/ws/2/label/a14fd98c-9b89-481a-b7b8-eea8be6b2816?fmt=json"
+   },
+   {
+    "f": "**串流側逐筆覆核，駁回**：以掛名與盤名搜尋 us 店，「Underdog Vanishing Point」**回 0 筆**；改以掛名搜尋，命中的是 collectionId **714246601**《Matchless》（2010-05-18、**26 軌**、This Compilation ℗ 2010 Bridge Nine Records）——攤開曲目後確認：**第 1–15 軌全部標「(Demo)」，第 16–26 軌才是本張十一軌、曲序與原盤逐位置相同**（〈From Now On〉1:52／〈A Lot To Learn〉4:26／〈Over the Edge〉2:37／〈Mass Movement〉4:39／〈Never Too Late〉1:20／〈Back To Back〉2:50／〈Underdog〉2:11／〈Without Fear〉4:12／〈Blindside〉2:48／〈The Vanishing Point〉4:52／〈No Matter What〉3:58）。**它是 26 軌的全目錄整編、不是本張，駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=714246601&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1989 年的黑膠十一軌，九年後的 CD 版變成二十四軌",
+   "唱片上的題名比盤名多一個定冠詞"
+  ],
+  "sound": "1989 年 Caroline 的 CAROL 1381 是 12 吋、十一軌，唱片上的題名是《The Vanishing Point》——比 release-group 的盤名多一個定冠詞。A 面〈From Now On〉起，接〈A Lot to Learn〉〈Over the Edge〉〈Mass Movement〉〈Never Too Late〉〈Back to Back〉；B 面是〈Underdog〉〈Without Fear〉〈Blindside〉〈The Vanishing Point〉〈No Matter What〉。黑膠那筆沒有留下長度，1998 年的 CD 版把這十一軌記成 36 分 09 秒——最長的〈The Vanishing Point〉4:55、最短的〈Never Too Late〉1:22——然後在後面再接十三首，整張變成二十四軌。追加的十三軌裡有六首與原盤同名卻長度不同，是另一批錄音。這支團名下總共只有四筆條目，這是其中唯一一張長篇。",
+  "keyTracks": [
+   "From Now On",
+   "Mass Movement",
+   "The Vanishing Point"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989**，其下最早（也是唯一的黑膠）是 US 1989 的 Caroline CAR 01381／CAROL 1381（Official）；1998 年的 Go‐Kart CD 是唯一一筆再發。**裁定 220 的形狀成立**：1998 那筆會把年份推到 1998，`year` 取 1989。**串流側沒有本張的上架版本**（唯一命中的是 2010 年的 26 軌整編，已駁回），**四處對照只成立兩處（release-group 的 first-release-date 與原盤 release 的 date），仍指向 1989。**｜**盤名分歧**：release-group title《Vanishing Point》、1989 年 release title《The Vanishing Point》、1998 年 CD 又回到無定冠詞——**依卡單取 release-group 文字。同名先行單曲：無。**",
+  "notes": "**擋下策展層一處、補實一處。**(1) `curatorWhy` 寫「接在同廠 Youth of Today《We're Not in This Alone》(CAROL 1351) 與 Warzone《Open Your Eyes》(CAROL 1361) 之後，三個相鄰編號就是 Caroline 這條線的完整形狀」——**方向對，但「三個」漏了一筆**：實查另有 **Caroline 1352**（Warzone 前作 1988 年再壓，label-info 同時掛 Caroline 與 Fist Records）。四個編號 1351／1352／1361／1381 都已逐筆回問，**行文要寫這條線就寫四個，不要寫三個。**(2) `curatorRisk` 寫「Apple：三店皆 MISS」——**方向對但理由要補**：以盤名加掛名搜尋回 0 筆；以掛名搜尋命中的 collectionId 714246601《Matchless》是 **26 軌的全目錄整編**（前 15 軌全標 Demo，第 16–26 軌才是本張十一軌、曲序逐位置相同）。**依裁定 247 駁回，本張維持無串流來源狀態，封面走另一路。**｜**軌數混版（裁定 251，本張是本批最大的一組）**：卡單 label 欄釘 1989 的 12 吋 **11 軌**，行文引軌數只能引 11；1998 CD 的 24 軌要寫就得說明多出來的十三軌是另一批錄音（其中六首與原盤同名但長度不同）。｜**版本差在「有沒有長度」**：1989 黑膠十一軌全無長度紀錄，**要引秒數只能引 1998 CD 記的那組數字並註明出處版本。**｜**可寫的最強序數**：該藝人名下**只有 4 個 release-group，本張是唯一一張 primary-type=Album 且 secondary-types 為空的碟**。｜**人名從嚴**：藝人實體 life-span 未填，**不得寫個別成員的名字，也不得寫成軍年份。**"
  }
 ]
