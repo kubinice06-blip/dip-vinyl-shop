@@ -41,7 +41,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1984。release-group first-release-date **1984**，其下最早的 release 就是 1984 US 的 Ratcage MOTR 29（Official）；1986 卡帶、2009 的三筆 Bridge Nine 是後續。**裁定 220 的形狀在本張成立但不影響取值**：2009 那三筆同日發行會把年份往後推到 2009，`year` 仍取 1984。串流側採信的 1609512833 releaseDate 標 **1984-01-01**、℗ 1984，與 MB 同年，**四處對照成立**。**同名先行單曲：無。**",
-  "notes": "**擋下策展層兩處。**(1) `curatorRisk` 與 `curatorWhy` 都說「Apple：us／gb／de 三店 album 搜尋皆 MISS（Apple 沒有這張的可播版本）」「試聽要靠 YouTube 官方 Album playlist 人工核對」——**實測不成立**：回撈候選 1609512833 是本張十一軌的完整上架版本，逐軌長度與 2009 數位版逐位置相同、每軌都有 previewUrl。**串流採信 1609512833：十一軌曲序與長度逐位置比對全中（0:48／1:04／1:26／0:47／1:09／1:45／1:21／2:04／1:13／1:34／2:16），採信。** 另一筆 1609512985《United Blood e.p.》1983、10 軌，逐軌等同 2009 CD 末尾追加的那十軌，**駁回**（是 7 吋、不是本張）。｜(2) `curatorWhy` 寫「紐約硬蕊第一張站得住的長篇唱片」「把 CBGB 週日午場那一批團的聲音第一次壓成 12 吋」——**這兩句都是跨藝人的極值與場景敘述，實體欄位查不到任何可引來源，不得寫**。可以寫的序數只有一種：**這是該藝人目錄裡最早的一張長篇**（34 個 RG、14 張乾淨長篇，本張排第 1）。｜(3) `curatorWhy` 說 1986 年的卡帶版——**該筆 status 是 null 不是 Official**，且廠牌是 Combat Core（catno 88561-8046-4），行文若提 1986 年要說清楚。｜**軌數混版（裁定 251）**：卡單 label 欄釘 1984 的 12 吋 **11 軌**，行文引軌數只能引 11；2009 CD 的 21 軌要寫就得同時說明那是 CD 版、多出來的是末尾十軌。｜**人名從嚴（裁定 241／250）**：Ratcage Records 實體的 life-span 與 disambiguation 全空，**不得寫廠牌創辦人或任何個別成員的名字**。"
+  "notes": "**擋下策展層兩處。**(1) `curatorRisk` 與 `curatorWhy` 都說「三店 album 搜尋皆 MISS、沒有這張的可播版本」「試聽要靠影音平台的官方 Album playlist 人工核對」——**實測不成立**：回撈候選 1609512833 是本張十一軌的完整上架版本，逐軌長度與 2009 數位版逐位置相同、每軌都有 previewUrl。**串流採信 1609512833：十一軌曲序與長度逐位置比對全中（0:48／1:04／1:26／0:47／1:09／1:45／1:21／2:04／1:13／1:34／2:16），採信。** 另一筆 1609512985《United Blood e.p.》1983、10 軌，逐軌等同 2009 CD 末尾追加的那十軌，**駁回**（是 7 吋、不是本張）。｜(2) `curatorWhy` 寫「紐約硬蕊第一張站得住的長篇唱片」「把 CBGB 週日午場那一批團的聲音第一次壓成 12 吋」——**這兩句都是跨藝人的極值與場景敘述，實體欄位查不到任何可引來源，不得寫**。可以寫的序數只有一種：**這是該藝人目錄裡最早的一張長篇**（34 個 RG、14 張乾淨長篇，本張排第 1）。｜(3) `curatorWhy` 說 1986 年的卡帶版——**該筆 status 是 null 不是 Official**，且廠牌是 Combat Core（catno 88561-8046-4），行文若提 1986 年要說清楚。｜**軌數混版（裁定 251）**：卡單 label 欄釘 1984 的 12 吋 **11 軌**，行文引軌數只能引 11；2009 CD 的 21 軌要寫就得同時說明那是 CD 版、多出來的是末尾十軌。｜**人名從嚴（裁定 241／250）**：Ratcage Records 實體的 life-span 與 disambiguation 全空，**不得寫廠牌創辦人或任何個別成員的名字**。"
  },
  {
   "key": "desc2:Agnostic Front|Cause for Alarm",
@@ -261,7 +261,7 @@
   "album": "Blood, Sweat, and No Tears",
   "facts": [
    {
-    "f": "release-group 2982b044 的欄位：title「Blood, Sweat, and No Tears」、artist-credit「Sick of It All」（藝人實體 e204ed91，type Group、country US、life-span begin **1986**、**disambiguation 空白**）、first-release-date **1989-05**、primary-type Album、secondary-types **空**。轄下 **4 筆 release**：**US 1989-05 In-Effect 88561-3005-1（12\" Vinyl、17 軌、Official）**／US 1989-05 In-Effect **88561-3005-2**（CD、**19 軌**、Official）／DE 1999 Century Media 66007-2（CD、19 軌、**status=Promotion，不是 Official**）／RU 2004 Фоно FO356CD（CD、19 軌、Official）。",
+    "f": "release-group 2982b044 的欄位：title「Blood, Sweat, and No Tears」、artist-credit「Sick of It All」（藝人實體 e204ed91，type Group、country US、life-span begin **1986**、**disambiguation 空白**）、first-release-date **1989-05**、primary-type Album、secondary-types **空**。轄下 **4 筆 release**：**US 1989-05 In-Effect 88561-3005-1（12\" Vinyl、17 軌、Official）**／US 1989-05 In-Effect **88561-3005-2**（CD、**19 軌**、Official）／DE 1999 Century Media 66007-2（CD、19 軌、**status=Promotion，不是 Official**）／RU 2004 俄版廠牌，catno FO356CD（CD、19 軌、Official）。",
     "src": "https://musicbrainz.org/ws/2/release?release-group=2982b044-7e29-383c-964e-b8d112f738c4&fmt=json&inc=media+labels+recordings&limit=100"
    },
    {
@@ -297,7 +297,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1989。release-group first-release-date **1989-05**，1989 年 5 月有兩筆 release（12 吋與 CD，皆 In-Effect、皆 Official）；1999 德版是 **Promotion**、2004 俄版是再發。**裁定 220 的形狀成立**：兩筆再發會把年份推後，`year` 取 1989。串流側 278093099 的 releaseDate 標 **1989-07-12**（比 MB 的 1989-05 晚兩個月，℗ 寫 2008），**年份仍一致，四處對照成立**。**同名先行單曲：無。**",
-  "notes": "**擋下策展層三處。**(1) `curatorRisk` 與 `curatorWhy` 都說「Apple：us／gb／de 三店 album 搜尋皆 MISS」「試聽要靠 YouTube 官方 Album playlist 人工核對」——**實測不成立**，回撈候選有兩筆都是本張的完整上架版本。**串流採信 278093099：十九軌長度逐位置零誤差比對全中，十九軌皆有 previewUrl，採信**；另一筆 980766970 是同一張碟的第二個上架條目（同 19 軌、誤差 ±2 秒），**不另採信、也不視為別張碟**。(2) `curatorRisk` 寫「CD 版把 1987 年的 7 吋併進去，這正是硬蕊線常見的形狀」——**實測不成立**：CD 版只比 12 吋多**兩軌**（〈Pete's Sake〉〈Stick Together〉），而 1987 年那張 7 吋（REV 003）有**八軌**，其中只有〈Pete's Sake〉出現在新增的兩軌裡，〈Stick Together〉根本不在該 7 吋上。**行文不得寫「CD 版把七吋併進去」，只能寫「CD 版多了兩首」。**(3) `curatorWhy` 寫「Koller 兄弟把 Cro-Mags 的速度縮短成三十秒一首的形態，成為 1990 年代紐約硬蕊的標準句法」——**成員姓氏、跨藝人的影響斷言都查不到來源（藝人實體 disambiguation 亦空白），依裁定 241／250 不得寫個別成員的名字**；「三十秒一首」也與實測不符（最短 0:42、十七軌總長 21 分 39 秒）。｜(4) `curatorWhy` 寫「In-Effect（Relativity 旗下專做紐約硬蕊的子廠）」——**廠牌實體只填了 type 與 life-span 1988～1991，country／area 皆空，沒有任何欄位說它隸屬誰或專做什麼**。可以寫的是：**這家廠牌在實體欄位上只存在 1988 到 1991 三年**，以及**同廠 88561-3005 與 88561-3008 兩個相鄰編號分別是本張與本批 Killing Time 那張**。｜**軌數混版（裁定 251）**：卡單 label 欄釘 12 吋 **17 軌**，行文引軌數只能引 17。"
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 與 `curatorWhy` 都說「三店 album 搜尋皆 MISS」「試聽要靠影音平台的官方 Album playlist 人工核對」——**實測不成立**，回撈候選有兩筆都是本張的完整上架版本。**串流採信 278093099：十九軌長度逐位置零誤差比對全中，十九軌皆有 previewUrl，採信**；另一筆 980766970 是同一張碟的第二個上架條目（同 19 軌、誤差 ±2 秒），**不另採信、也不視為別張碟**。(2) `curatorRisk` 寫「CD 版把 1987 年的 7 吋併進去，這正是硬蕊線常見的形狀」——**實測不成立**：CD 版只比 12 吋多**兩軌**（〈Pete's Sake〉〈Stick Together〉），而 1987 年那張 7 吋（REV 003）有**八軌**，其中只有〈Pete's Sake〉出現在新增的兩軌裡，〈Stick Together〉根本不在該 7 吋上。**行文不得寫「CD 版把七吋併進去」，只能寫「CD 版多了兩首」。**(3) `curatorWhy` 寫「Koller 兄弟把 Cro-Mags 的速度縮短成三十秒一首的形態，成為 1990 年代紐約硬蕊的標準句法」——**成員姓氏、跨藝人的影響斷言都查不到來源（藝人實體 disambiguation 亦空白），依裁定 241／250 不得寫個別成員的名字**；「三十秒一首」也與實測不符（最短 0:42、十七軌總長 21 分 39 秒）。｜(4) `curatorWhy` 寫「In-Effect（Relativity 旗下專做紐約硬蕊的子廠）」——**廠牌實體只填了 type 與 life-span 1988～1991，country／area 皆空，沒有任何欄位說它隸屬誰或專做什麼**。可以寫的是：**這家廠牌在實體欄位上只存在 1988 到 1991 三年**，以及**同廠 88561-3005 與 88561-3008 兩個相鄰編號分別是本張與本批 Killing Time 那張**。｜**軌數混版（裁定 251）**：卡單 label 欄釘 12 吋 **17 軌**，行文引軌數只能引 17。"
  },
  {
   "key": "desc2:Sick of It All|Just Look Around",
@@ -305,7 +305,7 @@
   "album": "Just Look Around",
   "facts": [
    {
-    "f": "release-group 92293bbc 的欄位：title「Just Look Around」、artist-credit「Sick of It All」、first-release-date **1992-10-06**、primary-type Album、secondary-types **空**。轄下 **6 筆 release，全部 13 軌、全部 Official**：US 1992 **Relativity Records 88561-3017-2**（CD）／DE 1992 **KINGfisher KF 017**（CD）／**US 1992-10-06 Relativity Records RR 9191 2（CD）**／XE 1999 Century Media 9962232（CD）／BE 1999-06-21（**format 為 null、label-info 全空**）／RU 2004 Фоно FO355CD（CD）。**同一年的美國版有兩個不同目錄編號的 CD（88561-3017-2 與 RR 9191 2）。**",
+    "f": "release-group 92293bbc 的欄位：title「Just Look Around」、artist-credit「Sick of It All」、first-release-date **1992-10-06**、primary-type Album、secondary-types **空**。轄下 **6 筆 release，全部 13 軌、全部 Official**：US 1992 **Relativity Records 88561-3017-2**（CD）／DE 1992 **KINGfisher KF 017**（CD）／**US 1992-10-06 Relativity Records RR 9191 2（CD）**／XE 1999 Century Media 9962232（CD）／BE 1999-06-21（**format 為 null、label-info 全空**）／RU 2004 俄版廠牌，catno FO355CD（CD）。**同一年的美國版有兩個不同目錄編號的 CD（88561-3017-2 與 RR 9191 2）。**",
     "src": "https://musicbrainz.org/ws/2/release?release-group=92293bbc-3b34-3f11-bb17-6695cd7c36b4&fmt=json&inc=media+labels+recordings&limit=100"
    },
    {
@@ -381,7 +381,7 @@
   ],
   "status": "full",
   "yearVerified": "**原盤 1987、再壓 1988，無其他再發。** release-group first-release-date **1987-01-01**，但**這個日期掛在 XW 的數位版那一筆**（裁定 220 在本批的第二種形狀）；實體首版是 US 1987 的 Fist Records 001（12 吋），日期只標到「1987」。1988 年的美國再壓會把年份推到 1988，`year` 取 1987。串流側 1152622035 的 releaseDate 標 1987-01-01（與數位版同日，℗ 寫 2016），**四處對照成立**。**同名先行單曲：無**（同名曲在 B 面第一首）。",
-  "notes": "**擋下策展層三處。**(1) `curatorRisk` 寫「Apple：us／gb／de 三店 album 搜尋皆 MISS」——**實測不成立**。**串流採信 1152622035：十二軌曲序與長度逐位置比對全中（與數位版零誤差、與 1987 黑膠差 1 秒），十二軌皆有 previewUrl，採信。** (2) `curatorWhy` 寫「Raymond「Raybeez」Barbieri 帶著 Fist Records 的創廠編號 001 在 1987 年自壓出片，是紐約硬蕊『自營廠牌自己出自己的碟』這個模式最早的完整案例之一」——**Fist Records 的實體欄位 type／country／area／life-span／disambiguation 全空**，沒有任何欄位能證明它是誰開的、與樂團什麼關係。依裁定 241／250 **不得寫成員或創辦人的本名，也不得寫「自壓」「自營廠牌」**。**可以寫的只有：這張的目錄編號是 001，而該廠牌在實體欄位上除了這個編號別無資料。** (3) `curatorWhy` 寫「是紐約硬蕊……最早的完整案例之一」——極值敘述，**不得寫**；可寫的序數是**該藝人目錄 14 個 release-group、7 張乾淨長篇裡本張排第 1**。｜**本張無軌數混版**（三版皆 12 軌），但要交代另一種版本差：**1988 年的再壓同時掛 Caroline Records 1352 與 Fist Records**。｜**Caroline 編號帶實查成立**：1352（本張 1988 再壓）／1361（Warzone《Open Your Eyes》1988）／1381（Underdog《Vanishing Point》1989），**另加同廠 CAROL 1351（1988，本批 b 組那張）**——四個相鄰編號都已逐筆回問。｜**字形**：實體欄位盤名用彎引號，**卡片與行文一律 ASCII 直引號**（本批第 5 條裁定）。"
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 寫「三店 album 搜尋皆 MISS」——**實測不成立**。**串流採信 1152622035：十二軌曲序與長度逐位置比對全中（與數位版零誤差、與 1987 黑膠差 1 秒），十二軌皆有 previewUrl，採信。** (2) `curatorWhy` 寫「Raymond「Raybeez」Barbieri 帶著 Fist Records 的創廠編號 001 在 1987 年自壓出片，是紐約硬蕊『自營廠牌自己出自己的碟』這個模式最早的完整案例之一」——**Fist Records 的實體欄位 type／country／area／life-span／disambiguation 全空**，沒有任何欄位能證明它是誰開的、與樂團什麼關係。依裁定 241／250 **不得寫成員或創辦人的本名，也不得寫「自壓」「自營廠牌」**。**可以寫的只有：這張的目錄編號是 001，而該廠牌在實體欄位上除了這個編號別無資料。** (3) `curatorWhy` 寫「是紐約硬蕊……最早的完整案例之一」——極值敘述，**不得寫**；可寫的序數是**該藝人目錄 14 個 release-group、7 張乾淨長篇裡本張排第 1**。｜**本張無軌數混版**（三版皆 12 軌），但要交代另一種版本差：**1988 年的再壓同時掛 Caroline Records 1352 與 Fist Records**。｜**Caroline 編號帶實查成立**：1352（本張 1988 再壓）／1361（Warzone《Open Your Eyes》1988）／1381（Underdog《Vanishing Point》1989），**另加同廠 CAROL 1351（1988，本批 b 組那張）**——四個相鄰編號都已逐筆回問。｜**字形**：實體欄位盤名用彎引號，**卡片與行文一律 ASCII 直引號**（本批第 5 條裁定）。"
  },
  {
   "key": "desc2:Warzone|Open Your Eyes",
@@ -593,7 +593,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1987。release-group first-release-date **1987**，其下最早的 release 就是 US 1987 的 Positive Force PF-11（Official）；1998 美版 CD 與 2014-05-01 德版數位是再發。**裁定 220 的形狀成立**：兩筆再發會把年份推到 1998／2014，`year` 取 1987。串流側 900334871 的 releaseDate 標 1987-01-01（℗ 寫 2014），**四處對照成立**。**同名先行單曲：無。**",
-  "notes": "**擋下策展層三處。**(1) `curatorRisk` 與 `curatorWhy` 都說「Apple：us／gb／de 三店 album 搜尋皆 MISS」「試聽要靠 YouTube 官方 Album playlist 人工核對」——**實測不成立**。**串流採信 900334871：十四軌曲序與長度逐位置比對全中（誤差 ±1 秒），十四軌皆有 previewUrl，採信**；上架端把末兩軌寫成〈Death Row/ Tragic Magic〉與〈Outro〉，**`keyTracks` 與行文一律用實體欄位的〈Death Row〉〈Tragic Magic〉**。(2) `curatorWhy` 寫「Positive Force（**7 Seconds 兄弟開的 Reno 廠牌**）唯一一張紐約團的 LP」——**廠牌實體只填了 type、country US 與 area United States，life-span 與 disambiguation 全空**：誰開的、開在哪座城市、名下有幾張紐約團的碟，**三件事全部查不到來源，整句不得寫**（「唯一一張」還是極值，依裁定 241／250 更不得留）。(3) `curatorWhy` 寫「皇后區 Astoria 那一支」與「速度與旋律的比例比同期 Agnostic Front 明顯偏向後者，是後來 Gorilla Biscuits 那條『melodic NYHC』支線的先聲」——**藝人實體的 area 只填到 United States、disambiguation 空白，區級地名與跨藝人的支線斷言都不得寫。**｜**本張無軌數混版**（三版皆 14 軌），但**版本差在「有沒有長度」**：卡單所釘的 1987 黑膠那筆十四軌全部沒有長度紀錄，**行文要引秒數只能引 1998 CD／2014 數位版的數字，並說明那是後出版本記的。**｜**可寫的最強序數**：該藝人名下**只有 3 個 release-group，三個全是 secondary-types 為空的 Album**，本張排第 1，且**名下沒有任何 EP、Single 或 Live 條目**。｜**人名從嚴**：藝人實體 life-span 未填、disambiguation 空白，**不得寫個別成員的名字。**"
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 與 `curatorWhy` 都說「三店 album 搜尋皆 MISS」「試聽要靠影音平台的官方 Album playlist 人工核對」——**實測不成立**。**串流採信 900334871：十四軌曲序與長度逐位置比對全中（誤差 ±1 秒），十四軌皆有 previewUrl，採信**；上架端把末兩軌寫成〈Death Row/ Tragic Magic〉與〈Outro〉，**`keyTracks` 與行文一律用實體欄位的〈Death Row〉〈Tragic Magic〉**。(2) `curatorWhy` 寫「Positive Force（**7 Seconds 兄弟開的 Reno 廠牌**）唯一一張紐約團的 LP」——**廠牌實體只填了 type、country US 與 area United States，life-span 與 disambiguation 全空**：誰開的、開在哪座城市、名下有幾張紐約團的碟，**三件事全部查不到來源，整句不得寫**（「唯一一張」還是極值，依裁定 241／250 更不得留）。(3) `curatorWhy` 寫「皇后區 Astoria 那一支」與「速度與旋律的比例比同期 Agnostic Front 明顯偏向後者，是後來 Gorilla Biscuits 那條『melodic NYHC』支線的先聲」——**藝人實體的 area 只填到 United States、disambiguation 空白，區級地名與跨藝人的支線斷言都不得寫。**｜**本張無軌數混版**（三版皆 14 軌），但**版本差在「有沒有長度」**：卡單所釘的 1987 黑膠那筆十四軌全部沒有長度紀錄，**行文要引秒數只能引 1998 CD／2014 數位版的數字，並說明那是後出版本記的。**｜**可寫的最強序數**：該藝人名下**只有 3 個 release-group，三個全是 secondary-types 為空的 Album**，本張排第 1，且**名下沒有任何 EP、Single 或 Live 條目**。｜**人名從嚴**：藝人實體 life-span 未填、disambiguation 空白，**不得寫個別成員的名字。**"
  },
  {
   "key": "desc2:Underdog|Vanishing Point",
@@ -637,7 +637,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1989。release-group first-release-date **1989**，其下最早（也是唯一的黑膠）是 US 1989 的 Caroline CAR 01381／CAROL 1381（Official）；1998 年的 Go‐Kart CD 是唯一一筆再發。**裁定 220 的形狀成立**：1998 那筆會把年份推到 1998，`year` 取 1989。**串流側沒有本張的上架版本**（唯一命中的是 2010 年的 26 軌整編，已駁回），**四處對照只成立兩處（release-group 的 first-release-date 與原盤 release 的 date），仍指向 1989。**｜**盤名分歧**：release-group title《Vanishing Point》、1989 年 release title《The Vanishing Point》、1998 年 CD 又回到無定冠詞——**依卡單取 release-group 文字。同名先行單曲：無。**",
-  "notes": "**擋下策展層一處、補實一處。**(1) `curatorWhy` 寫「接在同廠 Youth of Today《We're Not in This Alone》(CAROL 1351) 與 Warzone《Open Your Eyes》(CAROL 1361) 之後，三個相鄰編號就是 Caroline 這條線的完整形狀」——**方向對，但「三個」漏了一筆**：實查另有 **Caroline 1352**（Warzone 前作 1988 年再壓，label-info 同時掛 Caroline 與 Fist Records）。四個編號 1351／1352／1361／1381 都已逐筆回問，**行文要寫這條線就寫四個，不要寫三個。**(2) `curatorRisk` 寫「Apple：三店皆 MISS」——**方向對但理由要補**：以盤名加掛名搜尋回 0 筆；以掛名搜尋命中的 collectionId 714246601《Matchless》是 **26 軌的全目錄整編**（前 15 軌全標 Demo，第 16–26 軌才是本張十一軌、曲序逐位置相同）。**依裁定 247 駁回，本張維持無串流來源狀態，封面走另一路。**｜**軌數混版（裁定 251，本張是本批最大的一組）**：卡單 label 欄釘 1989 的 12 吋 **11 軌**，行文引軌數只能引 11；1998 CD 的 24 軌要寫就得說明多出來的十三軌是另一批錄音（其中六首與原盤同名但長度不同）。｜**版本差在「有沒有長度」**：1989 黑膠十一軌全無長度紀錄，**要引秒數只能引 1998 CD 記的那組數字並註明出處版本。**｜**可寫的最強序數**：該藝人名下**只有 4 個 release-group，本張是唯一一張 primary-type=Album 且 secondary-types 為空的碟**。｜**人名從嚴**：藝人實體 life-span 未填，**不得寫個別成員的名字，也不得寫成軍年份。**"
+  "notes": "**擋下策展層一處、補實一處。**(1) `curatorWhy` 寫「接在同廠 Youth of Today《We're Not in This Alone》(CAROL 1351) 與 Warzone《Open Your Eyes》(CAROL 1361) 之後，三個相鄰編號就是 Caroline 這條線的完整形狀」——**方向對，但「三個」漏了一筆**：實查另有 **Caroline 1352**（Warzone 前作 1988 年再壓，label-info 同時掛 Caroline 與 Fist Records）。四個編號 1351／1352／1361／1381 都已逐筆回問，**行文要寫這條線就寫四個，不要寫三個。**(2) `curatorRisk` 寫「三店皆 MISS」——**方向對但理由要補**：以盤名加掛名搜尋回 0 筆；以掛名搜尋命中的 collectionId 714246601《Matchless》是 **26 軌的全目錄整編**（前 15 軌全標 Demo，第 16–26 軌才是本張十一軌、曲序逐位置相同）。**依裁定 247 駁回，本張維持無串流來源狀態，封面走另一路。**｜**軌數混版（裁定 251，本張是本批最大的一組）**：卡單 label 欄釘 1989 的 12 吋 **11 軌**，行文引軌數只能引 11；1998 CD 的 24 軌要寫就得說明多出來的十三軌是另一批錄音（其中六首與原盤同名但長度不同）。｜**版本差在「有沒有長度」**：1989 黑膠十一軌全無長度紀錄，**要引秒數只能引 1998 CD 記的那組數字並註明出處版本。**｜**可寫的最強序數**：該藝人名下**只有 4 個 release-group，本張是唯一一張 primary-type=Album 且 secondary-types 為空的碟**。｜**人名從嚴**：藝人實體 life-span 未填，**不得寫個別成員的名字，也不得寫成軍年份。**"
  },
  {
   "key": "desc2:Supertouch|The Earth Is Flat",
@@ -721,7 +721,7 @@
   ],
   "status": "full",
   "yearVerified": "**原盤 1989（德國）、擴充版 1993（德／美各一）。** release-group first-release-date **1989**，其下最早的 release 是 DE 1989 的 Starving Missile S.M.R. 054（12 吋、Official）；1991-07-01 那筆是 **CD-R、label-info 全空**，1993 年才有德美兩張量產 CD。**裁定 220 的形狀成立**：1993 兩筆會把年份推到 1993，`year` 取 1989。**串流側採信的 1742234170 releaseDate 標 1994-02-08、℗ 2016**，與 MB 的 1989 差了五年——**年份一律以實體欄位為準取 1989**；四處對照成立。**同名先行單曲：無**（〈Just Can't Hate Enough〉是同名曲，在 A 面第五首）。",
-  "notes": "**擋下策展層三處，其中一處是硬錯。**(1) `curatorWhy` 寫「美國要到 **1991 年才由 Blackout! Records 補上**」——**不成立**：1991-07-01 那筆的 **format 是 CD-R 且 label-info 全空**，掛 Blackout! Records（BL-07CD）的是 **1993 年**那一筆。**行文不得寫「1991 年 Blackout! 補上」，只能寫「1993 年才有掛廠牌的美國量產版」。**(2) `curatorRisk` 寫「CD 版**併入早期 7 吋**」——**多出來的只有四軌**（〈I, Spoiler〉〈Just Can't Hate Enough〉的第二個版本〈Boys Don't Cry〉〈I Need Lunch〉），**沒有任何欄位證明這四軌來自某張 7 吋，不得寫**。(3) `curatorRisk` 與 `curatorWhy` 都說「Apple：三店皆 MISS」——**實測不成立**。｜**串流採信 1742234170：十四軌與 1991 年那筆十五軌版的長度逐位置全部命中（只少〈I Need Lunch〉一軌、曲序重排），與 1989 黑膠十一軌則沒有一軌對得上，十四軌皆有 previewUrl，採信**——但**必須註明採信的是擴充版、不是卡單所釘的 1989 黑膠，且上架端的年份 1994 不得拿來當本卡年份。**｜**軌數混版（裁定 251）**：卡單 label 欄釘德版 12 吋 **11 軌**，行文引軌數只能引 11；**11→15 差的不只是四軌，連原有十一首的長度都全部換過一套。**｜**廠牌地緣可以寫**：Starving Missile 的 **area 是 München**、begin 1983；Blackout! Records 的 **area 是 New York**、begin 1988——**兩家的所在地是實體欄位裡查得到的，可以寫。**｜**人名從嚴（裁定 250 的另一半）**：**這張的藝人實體 11a683e2 的 disambiguation 也是空白的**（與本批 Born Against 同形），`curatorWhy` 的「布魯克林 Paul Bearer 那一支」**不得寫個別成員的名字**，「布魯克林」也不得寫（area 只填到 New York）。可寫的是 **area New York、life-span begin 1984-12**。"
+  "notes": "**擋下策展層三處，其中一處是硬錯。**(1) `curatorWhy` 寫「美國要到 **1991 年才由 Blackout! Records 補上**」——**不成立**：1991-07-01 那筆的 **format 是 CD-R 且 label-info 全空**，掛 Blackout! Records（BL-07CD）的是 **1993 年**那一筆。**行文不得寫「1991 年 Blackout! 補上」，只能寫「1993 年才有掛廠牌的美國量產版」。**(2) `curatorRisk` 寫「CD 版**併入早期 7 吋**」——**多出來的只有四軌**（〈I, Spoiler〉〈Just Can't Hate Enough〉的第二個版本〈Boys Don't Cry〉〈I Need Lunch〉），**沒有任何欄位證明這四軌來自某張 7 吋，不得寫**。(3) `curatorRisk` 與 `curatorWhy` 都說「三店皆 MISS」——**實測不成立**。｜**串流採信 1742234170：十四軌與 1991 年那筆十五軌版的長度逐位置全部命中（只少〈I Need Lunch〉一軌、曲序重排），與 1989 黑膠十一軌則沒有一軌對得上，十四軌皆有 previewUrl，採信**——但**必須註明採信的是擴充版、不是卡單所釘的 1989 黑膠，且上架端的年份 1994 不得拿來當本卡年份。**｜**軌數混版（裁定 251）**：卡單 label 欄釘德版 12 吋 **11 軌**，行文引軌數只能引 11；**11→15 差的不只是四軌，連原有十一首的長度都全部換過一套。**｜**廠牌地緣可以寫**：Starving Missile 的 **area 是 München**、begin 1983；Blackout! Records 的 **area 是 New York**、begin 1988——**兩家的所在地是實體欄位裡查得到的，可以寫。**｜**人名從嚴（裁定 250 的另一半）**：**這張的藝人實體 11a683e2 的 disambiguation 也是空白的**（與本批 Born Against 同形），`curatorWhy` 的「布魯克林 Paul Bearer 那一支」**不得寫個別成員的名字**，「布魯克林」也不得寫（area 只填到 New York）。可寫的是 **area New York、life-span begin 1984-12**。"
  },
  {
   "key": "desc2:Madball|Set It Off",
@@ -761,6 +761,174 @@
   ],
   "status": "full",
   "yearVerified": "一致，1994。release-group first-release-date **1994-07**，1994 年有三筆 release（XE、US 1994-07、JP 1994-09-21，皆 Official）；2006 年的歐版與一筆無日期的數位版是後續。**裁定 220 的形狀成立**：2006 那筆會把年份推到 2006，`year` 取 1994。**串流側查無本張的上架版本**，四處對照只成立三處（release-group 的 first-release-date、US 首版 release 的 date、JP 版的 date），仍指向 1994。**同名先行單曲：無**（〈Set It Off〉是同名曲，也是首軌）。",
-  "notes": "**擋下策展層兩處、確認一處。**(1) `curatorWhy` 寫「Madball 原本是 Agnostic Front 的側案（**Freddy Cricien 是 Roger Miret 的弟弟**），1994 年這張首張長篇由 Roadrunner 發行後才變成獨立的一支」——**藝人實體 c9e0a0f5 的 disambiguation 空白、只填到 begin 1988**，成員姓名與親屬關係、以及「原本是側案」這件事**全部查不到來源，依裁定 241／250 不得寫個別成員的名字**。可寫的是 **life-span begin 1988，而首張長篇是 1994-07**——**中間隔了六年。**(2) `curatorWhy` 寫「1990 年代中期『NYHC 進入國際發行體系』的標誌」——場景敘述無來源，**不得寫**。｜(3) `curatorRisk` 說「盤名同名極多、Apple 三店皆 MISS、配對一律用 collectionId 不得用盤名」——**實測完全成立**：以盤名加掛名搜尋回的 9 筆沒有一筆的 artistName 是 Madball；改以掛名搜尋回的 15 筆全部是 2005 年以後的碟。**駁回全部候選，本張維持無串流來源狀態。**｜**軌數混版（裁定 251）**：卡單 label 欄釘 **14 軌**，行文引軌數只能引 14；**日版 13 軌的差別只是缺末軌〈Friend or Foe?〉1:36**，其餘十三軌逐位置同曲同長——行文若提日版，要把這一點寫清楚。｜**可寫的細節**：五筆 release 的 **barcode 全部相同（016861899127）**，連日版與 2006 年版都是；以及本張是該藝人 10 張乾淨長篇裡的第 1 張。"
+  "notes": "**擋下策展層兩處、確認一處。**(1) `curatorWhy` 寫「Madball 原本是 Agnostic Front 的側案（**Freddy Cricien 是 Roger Miret 的弟弟**），1994 年這張首張長篇由 Roadrunner 發行後才變成獨立的一支」——**藝人實體 c9e0a0f5 的 disambiguation 空白、只填到 begin 1988**，成員姓名與親屬關係、以及「原本是側案」這件事**全部查不到來源，依裁定 241／250 不得寫個別成員的名字**。可寫的是 **life-span begin 1988，而首張長篇是 1994-07**——**中間隔了六年。**(2) `curatorWhy` 寫「1990 年代中期『NYHC 進入國際發行體系』的標誌」——場景敘述無來源，**不得寫**。｜(3) `curatorRisk` 說「盤名同名極多、三店皆 MISS、配對一律用 collectionId 不得用盤名」——**實測完全成立**：以盤名加掛名搜尋回的 9 筆沒有一筆的 artistName 是 Madball；改以掛名搜尋回的 15 筆全部是 2005 年以後的碟。**駁回全部候選，本張維持無串流來源狀態。**｜**軌數混版（裁定 251）**：卡單 label 欄釘 **14 軌**，行文引軌數只能引 14；**日版 13 軌的差別只是缺末軌〈Friend or Foe?〉1:36**，其餘十三軌逐位置同曲同長——行文若提日版，要把這一點寫清楚。｜**可寫的細節**：五筆 release 的 **barcode 全部相同（016861899127）**，連日版與 2006 年版都是；以及本張是該藝人 10 張乾淨長篇裡的第 1 張。"
+ },
+ {
+  "key": "desc2:Merauder|Master Killer",
+  "artist": "Merauder",
+  "album": "Master Killer",
+  "facts": [
+   {
+    "f": "release-group e257f85c 的欄位：title「Master Killer」、artist-credit「Merauder」（藝人實體 395d7f1c，type Group、country US、area United States、**life-span begin 1990**、**disambiguation 空白**）、first-release-date **1995**、primary-type Album、secondary-types **空**。轄下 **3 筆 release**：**US 1995 Century Media「7804-2」（CD、10 軌、Official）**／**DE 1995 Century Media「77104-2」（CD、10 軌、Official）**／NL 2025 **Rebellion Records**（CD、**20 軌**、**status 為 null**、title「Master Killer - 30 year anniversary」）。**美版與德版是同一年同一家廠牌的兩個不同目錄編號。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e257f85c-bbd5-34ea-96b5-e2b67a44439e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1995 年兩張 CD 的逐軌與長度（兩版完全相同）：1〈Time Ends〉3:46、2〈Life Is Pain〉3:22、3〈Mirror Shows Black〉2:49、4〈Master Killer〉3:24、5〈Downfall of Christ〉3:16、6〈Dead End Path〉3:14、7〈Take by Force〉**4:25**、8〈Fear of Sin〉3:05、9〈Besiege the Masses〉3:38、10〈Crossfire〉3:34。**十軌總長 34 分 33 秒，十軌沒有一首短於 2:49、也沒有一首長過 4:25——是本批曲長最集中的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e257f85c-bbd5-34ea-96b5-e2b67a44439e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版（本張的形狀是「同一批曲子錄兩次」）**：2025 年荷蘭版 20 軌＝原盤十軌＋**十軌重錄／替代版本**〈Downfall Of Christ〉3:27、〈Mirror Shows Black〉3:01、〈Life Is Pain〉3:27、〈Besiege The Masses〉3:39、〈Crossfire〉3:23、〈Fear Of Sin〉3:08、〈Take By Force〉4:33、**〈Final War〉3:06（原盤沒有這首）**、〈John Doe (Instrumental)〉3:43、〈Dead End Path (Instrumental)〉3:36。**追加十軌裡有七首與原盤同名但長度不同，另有一首新曲與兩首器樂版。該筆 status 為 null，不得當版本依據。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e257f85c-bbd5-34ea-96b5-e2b67a44439e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **10 個 release-group**：Album 4（secondary-types 全空）、EP+Demo 2、Single 1、Album+Demo 1、Album+Compilation 2，**primary-type=Compilation 0 個**。4 張乾淨長篇依 first-release-date 排序：**1995 本張、1999-06-22《Five Deadly Venoms》、2003-01-28《Bluetality》、2009《God Is I》。本張排第 1，而 life-span begin 是 1990——成軍到首張長篇之間隔了五年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=395d7f1c-a912-4d0a-adc2-4510e8a53ee0&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1045613697**《Master Killer》，artistName「Merauder」、**releaseDate 標 1996-01-16、但 copyright 行寫「℗ 1995 Century Media Records Ltd.」**，trackCount 10，十軌 3:46／3:21／2:49／3:23／3:17／3:14／4:25／3:05／3:38／3:33，**與實體欄位十軌逐位置相符（誤差 ±1 秒）**，十軌全部有 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1045613697&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十首沒有一首短於兩分四十九秒、也沒有一首長過四分二十五秒",
+   "美版與德版同年同廠，目錄編號卻是兩組"
+  ],
+  "sound": "1995 年 Century Media 同年出了美版 7804-2 與德版 77104-2 兩張 CD，十軌完全一樣、34 分 33 秒。〈Time Ends〉3:46 開場，接〈Life Is Pain〉3:22、〈Mirror Shows Black〉2:49、同名的〈Master Killer〉3:24、〈Downfall of Christ〉3:16、〈Dead End Path〉3:14、全張最長的〈Take by Force〉4:25、〈Fear of Sin〉3:05、〈Besiege the Masses〉3:38，收在〈Crossfire〉3:34。十首沒有一首短於兩分四十九秒，也沒有一首長過四分二十五秒——整張的曲長擠在一分半的區間裡，是本批最集中的一組。三十年後的再發把這十首重錄一次接在後面，還多了一首原盤沒有的〈Final War〉與兩首器樂版。",
+  "keyTracks": [
+   "Time Ends",
+   "Master Killer",
+   "Take by Force"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995——**而且串流側的年份衝突可以就地解決。** release-group first-release-date **1995**，1995 年有兩筆 release（US 7804-2 與 DE 77104-2，皆 Century Media、皆 Official、皆 10 軌）；2025 年荷蘭版是唯一一筆再發且 **status 為 null**。裁定 220 的形狀成立：2025 那筆會把年份推到 2025，`year` 取 1995。**`curatorRisk` 說「us 店的 collectionId 1045613697 年份欄寫 1996，與 MB 的 1995 不符」——實測屬實，但同一筆的 copyright 行寫的是「℗ 1995 Century Media Records Ltd.」**，廠牌與年份都與實體欄位相符。**四處對照成立，1995 站得住。同名先行單曲：無**（〈Master Killer〉是同名曲，在第四軌）。",
+  "notes": "**擋下策展層兩處、補實一處。**(1) `curatorWhy` 寫「布魯克林 beatdown 那一支的定義之作」「把 Cro-Mags 的riff放慢成後來被稱作 beatdown 的節奏，是 Bulldoze、25 ta Life 那一整批的參照點」——**藝人實體的 area 只填到 United States、disambiguation 空白**，區級地名不得寫；跨藝人的風格起源與影響力斷言也**查不到任何可引來源，不得寫**。可寫的是 **life-span begin 1990、首張長篇 1995，中間隔五年**。(2) **卡單 label 欄要更正**：欄位寫「Century Media（catno 77104-2，DE／US 1995，CD 10 軌）」，但 **77104-2 是德版的編號，美版是 7804-2**——**行文若要引編號，不能把兩地寫成同一組。**(3) `curatorRisk` 的年份衝突處理正確，**且有更強的證據可用**：串流側那一筆雖然 releaseDate 標 1996-01-16，**它自己的 ℗ 行寫的是 1995 與 Century Media**，與實體欄位一致。｜**串流採信 1045613697：十軌長度逐位置比對全中（誤差 ±1 秒），十軌皆有 previewUrl，且 ℗ 行的廠牌與年份與實體欄位相符，採信**；**上架端的 releaseDate 1996 不得拿來當本卡年份。**｜**軌數混版（裁定 251）**：卡單 label 欄釘 **10 軌**，行文引軌數只能引 10；**2025 年那筆 20 軌的 status 是 null，依裁定 43／57 不得當版本依據**，也不要拿它的曲目說事。｜**人名從嚴**：藝人實體 disambiguation 空白，**不得寫個別成員的名字。**"
+ },
+ {
+  "key": "desc2:Nausea|Extinction",
+  "artist": "Nausea",
+  "album": "Extinction",
+  "facts": [
+   {
+    "f": "release-group 793e33a8 的欄位：title「Extinction」、artist-credit「Nausea」（藝人實體 31770d26，type Group、country US、area United States、**life-span 1985～1992**、disambiguation「USA NY punk band」）、first-release-date **1990**、primary-type Album、secondary-types **空**。轄下 **3 筆 release**：**US 1990 Profane Existence「EXIST 2」（12\" Vinyl、12 軌、Official）**／GB 1990 **Meantime Records COX 024**（12\" Vinyl、12 軌、**status 為 null**）／FI 2024-12-06 **Svart Records SRE715CD**（CD、**19 軌**、Official）。**同年英美各一張 12 吋，但只有美版標 Official。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=793e33a8-ddf9-4190-ad3a-7e7ec7eec833&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1990（Profane Existence EXIST 2，卡單所釘的那一支）逐軌與長度：1〈Tech-No-Logic-Kill〉**5:52**、2〈Inherit the Wasteland〉3:18、3〈Johnny Got His Gun〉1:46、4〈Self Destruct〉2:21、5〈Butchers〉2:15、6〈Sacrifice〉4:06、7〈Godless〉1:45、8〈Clutches〉2:55、9〈Extinction〉**6:34**、10〈Battened〉2:01、11〈Blackened Dove〉2:54、12〈Void〉3:17。**十二軌總長 39 分 04 秒；同名的〈Extinction〉6:34 與開場的〈Tech-No-Logic-Kill〉5:52 兩首加起來就佔掉全張三分之一，而〈Godless〉只有 1:45。**英版那筆的十二軌曲名曲序相同，但**沒有記錄任何長度**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=793e33a8-ddf9-4190-ad3a-7e7ec7eec833&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版**：2024 年芬蘭版 19 軌＝原盤十二軌（重新處理過的長度，例〈Extinction〉6:52 對原盤 6:34、〈Tech-No-Logic-Kill〉6:05 對 5:52）＋**末尾追加七軌**〈Cybergod〉4:10、〈Body of Christ〉4:35、〈Here Today〉3:03、**〈Lie Cycle〉6:38**、〈Fallout〉1:48、〈Right to Live〉2:52、〈Blood & Circus〉1:52。**這七軌只在 2024 CD 上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=793e33a8-ddf9-4190-ad3a-7e7ec7eec833&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 8 個 release-group**：Album 2（secondary-types 全空，**其中一筆《Tech.No.Logic Cancer Split Live Record》沒有日期**）、EP 1、Single 1、null+Live 1、Album+Compilation 3。**扣掉那筆無日期的，本張是這份目錄裡唯一一張有年份的乾淨長篇**；而藝人的 life-span 是 **1985～1992**，本張落在末期。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=31770d26-a5bb-407e-86c8-592478ee70c8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Profane Existence（c0666257）：type「Original Production」、country US、**area 只填到 United States**、**life-span begin 1989**——**這家廠牌成立的隔年就出了本張。**英版那筆的 Meantime Records（dab30e4c）country GB、area United Kingdom、disambiguation「UK label」。",
+    "src": "https://musicbrainz.org/ws/2/label/c0666257-d247-4c0e-acca-b77a3336183c?fmt=json"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1773374366**，collectionName「**Extinction (2024 Remaster)**」、artistName「Nausea」、**releaseDate 標 1990-01-01、℗ 2024 Svart Records**，trackCount **12**，十二軌逐首帶「(2024 Remaster)」後綴，長度 6:05／3:05／1:52／2:27／2:21／4:14／1:48／3:04／6:52／2:07／3:01／3:30，**與 2024 年 CD 版的前十二軌逐位置零誤差相符（該 CD 的後七軌不在這個上架版本裡）**，十二軌全部有 previewUrl。**曲目內容等同 1990 年原盤的十二軌，只是另一套處理。**",
+    "src": "https://itunes.apple.com/lookup?id=1773374366&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同名的〈Extinction〉六分三十四秒，跟開場那首加起來佔掉全張三分之一",
+   "發這張的廠牌成立才第二年，這是它的第二號發行"
+  ],
+  "sound": "1990 年 Profane Existence 用編號 EXIST 2 發的 12 吋是十二軌、39 分 04 秒。開場的〈Tech-No-Logic-Kill〉5:52 就把時間拉得很開，接〈Inherit the Wasteland〉3:18、〈Johnny Got His Gun〉1:46、〈Self Destruct〉2:21、〈Butchers〉2:15、〈Sacrifice〉4:06、〈Godless〉1:45、〈Clutches〉2:55，然後是同名的〈Extinction〉6:34——全張最長的一首——再走〈Battened〉2:01、〈Blackened Dove〉2:54，收在〈Void〉3:17。頭尾那兩首長曲加起來就佔掉整張三分之一，中間卻夾著只有 1:45 的〈Godless〉。同年英國也壓了一張十二軌的 12 吋，曲名曲序相同但沒有留下任何長度紀錄。",
+  "keyTracks": [
+   "Tech-No-Logic-Kill",
+   "Sacrifice",
+   "Extinction"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**，1990 年有兩筆 12 吋（US 的 Profane Existence EXIST 2 是 Official；**GB 的 Meantime COX 024 的 status 為 null**）；2024-12-06 的芬蘭 CD 是唯一一筆再發。**裁定 220 的形狀成立**：2024 那筆會把年份推到 2024，`year` 取 1990。**串流側 1773374366 的 releaseDate 標 1990-01-01（與實體欄位同年）但 collectionName 帶「(2024 Remaster)」、℗ 2024**，年份仍指向 1990，四處對照成立。**同名先行單曲：無**（〈Extinction〉是同名曲，在第九軌）。",
+  "notes": "**擋下策展層兩處。**(1) `curatorWhy` 寫「1990 年由**明尼亞波利斯的** Profane Existence 以 EXIST 2 發行」——**廠牌實體的 area 只填到 United States，沒有城市**，**不得寫明尼亞波利斯**。可以寫的是 **該廠牌的 life-span begin 是 1989，本張是隔年的發行，編號 EXIST 2**。(2) `curatorWhy` 寫「Nausea 1985 年在 Lower East Side 的**佔屋圈**成軍」「是紐約硬蕊與英式 crust 交會處最被引用的一張」——**藝人實體的 area 只填到 United States、disambiguation 只寫「USA NY punk band」**，佔屋圈這件事與「最被引用」的極值**都查不到來源，不得寫**。可寫的是 **life-span 1985～1992**（本張落在末期）。｜**同名藝人的處理正確**：`curatorRisk` 列的四個同名實體與「只能靠 disambiguation 分辨」屬實，**行文不得提同名這件事，也不得以 disambiguation 背書。**｜**軌數混版（裁定 251）**：卡單 label 欄釘 US 12 吋 **12 軌**，行文引軌數只能引 12；2024 CD 的 19 軌要寫就得說明多出來的是末尾七軌、且那一版連原有十二軌的長度都重新處理過。｜**英版的地位要寫清楚**：GB 1990 那筆的 **status 為 null**（依裁定 43／57 不得當版本依據），且**十二軌全部沒有長度紀錄**——行文可以提「同年英國也壓了一張」，但不得拿它的秒數說事。｜**串流採信 1773374366：十二軌長度與 2024 年 CD 前十二軌逐位置零誤差相符，曲目內容等同 1990 原盤十二軌，十二軌皆有 previewUrl，採信**——但**必須註明採信的是 2024 年重新處理的版本，卡單所釘的是 1990 年的 12 吋**。｜**人名從嚴**：**不得寫個別成員的名字。**"
+ },
+ {
+  "key": "desc2:Rorschach|Remain Sedate",
+  "artist": "Rorschach",
+  "album": "Remain Sedate",
+  "facts": [
+   {
+    "f": "release-group d1aee00e 的欄位：title「Remain Sedate」、artist-credit「Rorschach」（藝人實體 bfb77d72，type Group、country US、area United States、**life-span 1989-05～1993-08**、disambiguation「hardcore punk」）、first-release-date **1990**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：US 1990 **Vermiform，catalog-number「VMFM 02」**（12\" Vinyl、12 軌、Official，barcode 未填）。**沒有任何再發，也沒有 CD 或數位版本。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d1aee00e-ce2d-4584-8ea1-f83b67caf55a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1990（Vermiform VMFM 02）逐軌：A 面 1〈Pavlov's Dogs〉、2〈In The Year Of Our Lord〉、3〈Someone〉、4〈Impressions〉、5〈Clenching〉、6〈So It Goes〉；B 面 1〈Lightning Strikes Twice〉、2〈No One Dies Alone〉、3〈**My Mind's In A Vice (And It's Being Cranked Real Tight)**〉、4〈Checkmate〉、5〈Exist〉、6〈Oppress〉。**十二軌全部沒有記錄長度**，A 面六軌、B 面六軌對半切。**B3 那個帶括號補語的長標題，是全張十二個曲名裡唯一超過四個字的一個。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d1aee00e-ce2d-4584-8ea1-f83b67caf55a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 5 個 release-group**：Album 2（secondary-types 全空）、EP 1、Album+Compilation 2。2 張乾淨長篇是 **1990 本張與 1993《Protestant》**。**本張排第 1，而藝人的 life-span 是 1989-05～1993-08——四年多的活動期裡只留下兩張長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bfb77d72-8e36-4cf2-be10-7dcdd81d52b4&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Vermiform（49b98a7d）：type「Original Production」、country US、area United States，**life-span 與 disambiguation 皆空白**。本批另一張同廠：Born Against《Nine Patriotic Hymns for Children》，catalog-number **VMFM 06**（1991）——**兩張的編號 02 與 06 都已逐筆回問。**",
+    "src": "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，駁回**：collectionId **470032486**《**Remain Sedate/Protestant (Remix/Remaster)**》，artistName「Rorschach」、releaseDate 1990-01-01、trackCount **24**、℗ 2009 Gern Blandsten Records。攤開曲目後確認：**第 1–12 軌正是本張十二軌、曲序與原盤逐位置相同**（〈Pavlov's Dogs〉2:22／〈In the Year of Our Lord〉2:01／〈Someone〉2:17／〈Impressions〉1:16／〈Clenching〉2:07／〈So It Goes〉1:32／〈Lightning Strikes Twice〉1:41／〈No One Dies Alone〉3:06／〈My Mind's in a Vice〉0:34／〈Checkmate〉1:31／〈Exist〉1:40／〈Oppress〉3:40），**第 13–24 軌則是另一張碟《Protestant》**。**它是兩張碟的合體再發、不是本張，駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=470032486&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二個曲名裡只有一個帶括號補語，長得像一句完整的話",
+   "這支團只活了四年多，名下只有五筆條目"
+  ],
+  "sound": "1990 年 Vermiform 用編號 VMFM 02 發的 12 吋是十二軌，A 面六首、B 面六首對半切。A 面從〈Pavlov's Dogs〉起，走〈In The Year Of Our Lord〉〈Someone〉〈Impressions〉〈Clenching〉〈So It Goes〉；B 面是〈Lightning Strikes Twice〉〈No One Dies Alone〉〈My Mind's In A Vice (And It's Being Cranked Real Tight)〉〈Checkmate〉〈Exist〉〈Oppress〉。十二個曲名裡有十一個是一到三個字的短語——〈Someone〉〈Impressions〉〈Clenching〉〈Checkmate〉〈Exist〉〈Oppress〉——唯獨 B 面第三首拖著一整句括號補語。這一筆是這張碟在資料上唯一的發行，十二軌全部沒有留下長度。",
+  "keyTracks": [
+   "Pavlov's Dogs",
+   "My Mind's In A Vice (And It's Being Cranked Real Tight)",
+   "Oppress"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**，其下**唯一一筆 release** 就是 US 1990 的 Vermiform VMFM 02（12 吋、Official）。**裁定 220 的形狀在本張不成立**——實體欄位裡沒有任何再發。**串流側沒有本張的上架版本**（唯一命中的是兩張碟的合體再發，已駁回），**四處對照只成立兩處（release-group 的 first-release-date 與唯一 release 的 date），仍指向 1990。同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處、確認一處。**(1) `curatorWhy` 寫「Vermiform Records 的**第二號發行**」——**catalog-number 是 VMFM 02 屬實，但廠牌實體的 life-span 空白、也查不到該廠牌的發行序列**，「第二號發行」是從編號推出來的，**行文只能寫「編號 02」，不得寫「第二號發行」**。(2) `curatorWhy` 寫「這張首張把 Born Against 那一圈的政治性與更極端的曲式綁在一起，直接影響了後來的 Deadguy 與 Converge」——**跨藝人的影響力斷言查不到來源，不得寫。**(3) `curatorRisk` 對回撈候選的判斷**正確**：collectionId 470032486 是 24 軌的合體再發，**第 1–12 軌確實就是本張十二軌、曲序逐位置相同，但第 13–24 軌是另一張碟《Protestant》**——依裁定 247 **駁回**，本張維持無串流來源狀態。｜**「1989 年成軍」屬實可寫**：藝人 life-span 是 **1989-05～1993-08**，四年多的活動期裡只留下兩張乾淨長篇（本張與 1993《Protestant》）。｜**本張無軌數混版**（只有一筆 release），但**十二軌全部沒有長度紀錄**：**行文不得引任何秒數**——合體再發那一筆記的長度來自 2009 年的 remix／remaster，不是本張原盤。｜**素材夠寫 120–180 字：`status` 標 partial。**可寫的格數是：一筆 release、十二軌曲名與分面、藝人 life-span、5 個 release-group 的目錄形狀、廠牌編號 VMFM 02 與同廠 VMFM 06 的對照——**沒有長度、沒有第二個版本、沒有串流來源，撐不到 180 字。**｜**人名從嚴**：**不得寫個別成員的名字。**"
+ },
+ {
+  "key": "desc2:Born Against|Nine Patriotic Hymns for Children",
+  "artist": "Born Against",
+  "album": "Nine Patriotic Hymns for Children",
+  "facts": [
+   {
+    "f": "release-group ea06cc47 的欄位：title「Nine Patriotic Hymns for Children」、artist-credit「Born Against」（藝人實體 983825cd，type Group、country US、area United States、**life-span 1989～1993**、**disambiguation 空白**）、first-release-date **1991**、primary-type Album、secondary-types **空**。轄下 **2 筆 release，兩筆都是 Vermiform「VMFM 06」、都是 9 軌、都是 Official**：**US 1991（media format 只標「Vinyl」，未標尺寸）**／US 1995（**12\" Vinyl**，title 作「Nine Patriotic Hymns For Children」）。**兩筆共用同一個目錄編號。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ea06cc47-e624-480c-8f8a-15a1876c5929&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1991（Vermiform VMFM 06，卡單所釘的那一支）逐軌：1〈Mount the Pavement〉、2〈Shroud〉、3〈By the Throat〉、4〈Nine Years Later〉、5〈Test Pattern〉、6〈Mary and Child〉、7〈Jock Gestapo〉、8〈Organ of Hope〉、9〈Well Fed Fuck〉。**九軌全部沒有記錄長度**，且這一筆**沒有分面**（九軌連續編號）。1995 年那一筆才切成 A 面五軌、B 面四軌，曲名曲序完全相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ea06cc47-e624-480c-8f8a-15a1876c5929&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**盤名與軌數相符**：release-group 的 title 說「Nine」，實際就是 **9 軌**——**本批 22 張裡唯一一張盤名直接把軌數寫進去的碟。**兩筆 release 都沒有加曲減曲，**本張無軌數混版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ea06cc47-e624-480c-8f8a-15a1876c5929&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **12 個 release-group**：Album 2（secondary-types 全空）、EP 5、EP+Demo 1、Album+Live 2、Album+Compilation 2。**2 張乾淨長篇是 1991 本張與 1992《Battle Hymns of the Race War》**——本張排第 1；其餘十筆有六筆是 EP／split。**藝人的 life-span 是 1989～1993，四年裡只有兩張長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=983825cd-4c25-45c5-adbb-3f9cdced6285&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Vermiform（49b98a7d）：type「Original Production」、country US、area United States，**life-span 與 disambiguation 皆空白**。本張的 **VMFM 06** 與本批 Rorschach《Remain Sedate》的 **VMFM 02**（1990）是同一家廠牌的兩個編號，**兩張都已逐筆回問。**",
+    "src": "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，駁回**：collectionId **313926184**《**9 Patriotic Battle Hymns for Children**》，artistName「Born Against」、releaseDate 1991-01-01、trackCount **18**、℗ 2003 Kill Rock Stars。攤開曲目後確認：**第 1–9 軌正是本張九軌、曲序與原盤逐位置相同**（〈Mount The Pavement〉2:47／〈Shroud〉3:17／〈By The Throat〉1:52／〈Nine Years Later〉2:22／〈Test Pattern〉0:57／〈Mary & Child〉1:50／〈Jock Gestapo〉1:52／〈Organ Of Hope〉1:43／〈Well Fed F**k〉4:48），**第 10–18 軌是九首不在本張上的曲子**（〈Murder The Sons Of Bitches〉〈Mt. Dew〉〈Footbound And Hobbled〉〈This Trash Should've Been Free〉〈Poland〉〈Sendero〉〈Set Your A.M. Dial For White Empowerment〉〈Born Against Are F*****g Dead〉〈A Whopper Of A Tale〉）。**盤名也不同（「9 Patriotic Battle Hymns」對「Nine Patriotic Hymns」），是 18 軌的整編、不是本張，駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=313926184&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "盤名裡的「Nine」就是軌數，整張正好九首",
+   "1991 年那一版沒有分面，四年後的再壓才切成五加四"
+  ],
+  "sound": "1991 年 Vermiform 用編號 VMFM 06 發的這一張是九軌，盤名裡的「Nine」正好就是軌數。曲序是〈Mount the Pavement〉〈Shroud〉〈By the Throat〉〈Nine Years Later〉〈Test Pattern〉〈Mary and Child〉〈Jock Gestapo〉〈Organ of Hope〉〈Well Fed Fuck〉——九個曲名裡有〈Mary and Child〉〈Organ of Hope〉這種取自宗教語彙的、也有〈Jock Gestapo〉〈Well Fed Fuck〉這種直接罵人的，擺在一個叫「給孩子的九首愛國讚美詩」的盤名底下。1991 年那一筆的九軌是連續編號、沒有分面；1995 年同編號再壓的 12 吋才切成 A 面五軌、B 面四軌。兩個版本沒有任何一軌留下長度。",
+  "keyTracks": [
+   "Mount the Pavement",
+   "Jock Gestapo",
+   "Well Fed Fuck"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**，其下最早的 release 是 US 1991 的 Vermiform VMFM 06（Official）；1995 年那筆是同編號的 12 吋再壓。**裁定 220 的形狀成立**：1995 那筆會把年份推到 1995，`year` 取 1991。**串流側沒有本張的上架版本**（唯一命中的是 18 軌的整編、盤名也不同，已駁回），**四處對照只成立三處（release-group 的 first-release-date、1991 release 的 date、1995 再壓 release 的 date），仍指向 1991。同名先行單曲：無。**",
+  "notes": "**這張是本批 `disambiguation 空白` 那條裁定的主案。**`curatorRisk` 已標明不得以 disambiguation 背書，**本檔再確認一次：藝人實體 983825cd 的 disambiguation 確實是空白的，life-span 是 1989～1993**——**行文不得寫「MB 認證的 Born Against」這類說法，也不得寫個別成員的名字（`curatorWhy` 的「Sam McPheeters 的 Vermiform 自營廠牌」整句不得寫：廠牌實體的 life-span 與 disambiguation 全空，誰開的查不到來源）。**｜**另擋下兩處。**(1) `curatorWhy` 寫「1991 年這張首張長篇把 anarcho-punk 的文字與紐約硬蕊的形式綁在一起，是 1990 年代『反 NYHC 的 NYHC』那一支的宣言」——**場景定位與宣言式敘述都查不到來源，不得寫**；可寫的序數是 **12 個 release-group 裡只有 2 張乾淨長篇，本張排第 1**。(2) `curatorWhy` 寫「Born Against 1989 年在紐約成軍」——**年份屬實（life-span begin 1989），但藝人的 area 只填到 United States**，**「在紐約」不得寫。**｜**回撈候選駁回**：collectionId 313926184 是 18 軌的整編，**第 1–9 軌確實是本張九軌、曲序逐位置相同，但後九軌是別的曲子，盤名也不同**——依裁定 247 駁回，本張維持無串流來源狀態。｜**本張無軌數混版**（兩筆皆 9 軌），但**版本差在分面**：1991 那筆九軌連續編號、沒有分面，1995 那筆才切成五＋四；且 **1991 那筆的 media format 只標「Vinyl」、未標尺寸**，卡單 label 欄寫「黑膠 9 軌」與欄位一致，**行文不要自行補「12 吋」**。｜**九軌全部沒有長度紀錄，行文不得引任何秒數**（整編那一筆的長度來自 2003 年的版本，不是本張）。｜**素材夠寫 120–180 字：`status` 標 partial。**可寫的格數是：兩筆 release、九軌曲名、盤名與軌數相符、分面差異、藝人 life-span、目錄形狀、VMFM 06 與同批 VMFM 02 的對照——**沒有長度、沒有串流來源，撐不到 180 字。**"
  }
 ]
