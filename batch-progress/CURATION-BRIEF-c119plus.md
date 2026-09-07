@@ -16,6 +16,23 @@
 
 ## 二、三批共通的兩個前提
 
+### 0. ⚠ **2026-09-07 更正：`secondary-types` 含 `Live` 的碟要收**（第 253 條）
+
+本簡報原本寫「只收 `primary-type=Album` 且 `secondary-types` 為空」。**那一句寫過頭了。**
+
+`ALBUM_ONBOARDING.md` 第 287 行**只講 `Compilation`**，全文沒有任何一條排除 `Live`；
+**池中有 213 張盤名含 Live 字樣的卡**，包含《Live at the Regal》《The Köln Concert》
+《Live/Dead》《Live at Birdland》，而且 c-121 那條線自己就有
+`高柳昌行ニュー・ディレクション・ユニット《Live at Moers Festival》(1980)` 在池中。
+
+**正確的門檻**：`primary-type` 必須是 `Album`；
+`secondary-types` 只有 `Compilation` 需要特別處理（依第 167／190 條照一般 Album 寫），
+**`Live`／`Soundtrack`／`Remix` 都不構成排除理由**。
+**但 `Live` 的碟 `mbNote` 要寫明是現場錄音與演奏年。**
+
+⚠ 同時記著**第 227 條的反方向**：`secondary-types` 為空**也不代表**那是原盤
+（演歌線大量精選盤沒標）。**那個欄位本身不是判準，要看盤名與廠牌目錄。**
+
 ### 1. **`chk-prop` 沒有帶 §5.5 白名單分支**（三批都沒有）
 
 `batch-progress/c<批>/chk-prop.mjs` 是照 c-117 那一版複製的，
@@ -87,8 +104,8 @@ c-116 第 1 條已經記過：**hardcore／punk 沒有 §5.5 白名單**，
 照 c-116 的先例走，本批不開白名單。**
 
 **做法**：
-1. **只收 `primary-type=Album` 且 `secondary-types` 為空的碟**
-   （**第 227 條**：`secondary-types` 為空不代表是原盤，還要看盤名與廠牌目錄）。
+1. **只收 `primary-type=Album`**（`secondary-types` 含 `Live` 可收，見第二節第 0 點；
+   **第 227 條**：`secondary-types` 為空不代表是原盤，還要看盤名與廠牌目錄）。
 2. **7 吋 EP、split、demo 卡帶一律不收**，但**要逐張記進未收清單**，
    附 `rgMbid` 與封面狀態——**店主日後若開白名單，那份清單可以直接建卡**。
 3. straight edge 那一段（Youth of Today、Judge、Gorilla Biscuits、Bold、

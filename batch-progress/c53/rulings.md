@@ -5345,3 +5345,38 @@ Hit FM 專輯資料庫「發行月份 2003-Jan」＋ PlayMusic「發行時間 20
 **這是我第三次記到同一個形狀的錯**（第 231 條把間歇故障記成永久事實、
 第 242 條把 `status` 分布當偏差方向的判準）：**用一個看得見的表面特徵去推因果，
 而那個特徵剛好與真正的成因相關但不等同。**
+
+## 第 253 條（2026-09-07，c-121 策展層回報後主線查證）：**`secondary-types` 含 `Live` 從來就沒有被排除過——是我的派工信寫錯了**
+
+c-121（日本地下即興）的策展層依派工信「只收 `primary-type=Album` 且 `secondary-types` 為空」，
+把 **阿部薫 48/49 個 RG、裸のラリーズ 全部四張正典盤、山下洋輔トリオ《Dancing 古事記》、
+East Bionic Symphonia 原盤** 全部擋在未收清單裡——**這條線幾乎被清空**。
+
+**查證後推翻**：
+
+1. **`ALBUM_ONBOARDING.md` 第 287 行只講 `Compilation`**
+   （「primary-type 為 Album 但 secondary-type 含 Compilation 者，照一般 Album 寫法即可」）。
+   **全文沒有任何一條排除 `Live`。**
+2. **池中有 213 張盤名含 Live 字樣的卡**，其中不乏正典：
+   （B.B. King《Live at the Regal》、Keith Jarrett《The Köln Concert》、
+   Grateful Dead《Live/Dead》、John Coltrane《Live at Birdland》、Sam Cooke
+   《Live at the Harlem Square Club》）。
+3. **這條線自己就有先例**：`高柳昌行ニュー・ディレクション・ユニット《Live at Moers Festival》(1980)`
+   **已經在池中**。
+
+**所以「secondary-types 為空」是我在 `CURATION-BRIEF-c119plus.md` 裡寫過頭的條件，不是規格。**
+已解除，c-121 補收，`CURATION-BRIEF-c119plus.md` 同步改。
+
+**通則**：**`primary-type=Album` 是門檻，`secondary-types` 只有 `Compilation` 那一項需要特別處理**
+（依第 167／190 條照一般 Album 寫）。`Live`、`Soundtrack`、`Remix` 等其餘次類型
+**不構成排除理由**，但 `Live` 的碟 `mbNote` 要寫明是現場錄音與演奏年。
+
+**這是第 227 條的鏡像**：第 227 條說「`secondary-types` 為空**不代表**是原盤」（會誤收），
+這一條說「`secondary-types` 非空**不代表**不能收」（會誤拒）。
+**兩個方向都要防——那個欄位本身不是判準。**
+
+**第四次記到同一個形狀，而且第四次也是我自己**（第 231、242、252、253 條）：
+**用一個看得見的表面特徵當判準，而那個特徵剛好與真正的成因相關但不等同。**
+這次的成因是「這張碟是不是那位藝人的正典作品」，表面特徵是 `secondary-types` 欄位。
+**即興、自由爵士、雷鬼 dub、印度古典這幾條線的正典大量是現場錄音**——
+拿一個為錄音室專輯設計的欄位去篩它們，等於把整條線篩掉。
