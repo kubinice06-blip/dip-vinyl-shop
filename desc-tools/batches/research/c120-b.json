@@ -1,0 +1,122 @@
+[
+ {
+  "key": "desc2:Youth of Today|Break Down the Walls",
+  "artist": "Youth of Today",
+  "album": "Break Down the Walls",
+  "facts": [
+   {
+    "f": "release-group 7d0e92a6 的欄位：title「Break Down the Walls」、artist-credit「Youth of Today」（藝人實體 MBID 9ca27db4）、first-release-date **1987-04-05**、primary-type Album、secondary-types **空**。轄下 **6 筆 release，全部 US、全部 Official**：**1987-04-05 的 Wishingwell Records／catno WW4，12 吋黑膠、12 軌**（卡單釘的就是這一筆）／1988 的 Revelation Records／**REV008**，黑膠、**13 軌**／1993 的 Revelation Records／「Revelation: 8」，CD、13 軌／1997-11-11 的 Revelation Records／REV:8，CD、13 軌／2017-06-21 XW 的 Revelation Records 數位、13 軌／**無日期的 Wishingwell Records／WW-4C 卡帶、12 軌**。**六筆裡只有兩筆是 12 軌，其餘四筆都是 13 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7d0e92a6-2386-32c7-bd89-29fc6a90b197?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1987 首版（Wishingwell WW4，12 吋）的十二軌依序是**：1〈Make a Change〉、2〈Thinking Straight〉、3〈Stabbed in the Back〉、4〈Take a Stand〉、5〈Honesty〉、6〈One Family〉、7〈Break Down the Walls〉、8〈Shout It〉、9〈Time to Forgive〉、10〈Positive Outlook〉、11〈Standing Hard〉、12〈Free at Last〉。**這一筆十二軌全部沒有記錄長度**；長度只能引 1988 年以後的再壓（同十二軌逐軌同名同序）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7d0e92a6-2386-32c7-bd89-29fc6a90b197&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1988 年換到 Revelation（REV008）之後多出來的第十三軌是〈Youth of Today〉2:04——一首與團名同名的曲子，1987 年的十二軌版上沒有。** 逐軌長度（取 1988 REV008 那一筆）：〈Make a Change〉1:15／〈Thinking Straight〉2:03／〈Stabbed in the Back〉0:57／〈Take a Stand〉1:41／〈Honesty〉1:30／〈One Family〉2:04／〈Break Down the Walls〉2:04／〈Shout It〉1:44／〈Time to Forgive〉1:09／〈Positive Outlook〉1:18／**〈Standing Hard〉0:16**／〈Free at Last〉1:48／〈Youth of Today〉2:04。**十二軌版總長 17:50、十三軌版 19:54；最長的一軌 2:04，最短的〈Standing Hard〉只有 16 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7d0e92a6-2386-32c7-bd89-29fc6a90b197&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面的 collectionId **91071914**：collectionName「Break Down the Walls」、artistName「Youth of Today」、trackCount **13**、copyright「**℗ 1988 Revelation Records**」，而 releaseDate 欄寫 **1986**。`entity=song` 攤得出 13 軌、逐軌與 1988 年 Revelation 那一版同名同序同長（末軌〈Youth of Today〉2:05）。**上架的是十三軌的 Revelation 版，不是 1987 年那張十二軌的 12 吋**；℗ 年份 1988 與內容一致，releaseDate 欄的 1986 與三處資料都不符。",
+    "src": "https://itunes.apple.com/lookup?id=91071914&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **9 個 release-group**：primary-type=Album 且 secondary-types 為空的 **3 個**、Album+Compilation 1 個、Album+Live 2 個、EP 2 個、EP+Live 1 個。**那 3 張純長篇依日期是 1987-04-05 本張、1988《Can't Close My Eyes》（076b41ca）、1988《We're Not in This Alone》**——本張是三張裡最早的一張。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9ca27db4-f127-4aeb-ae87-29e21f558c13&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有一軌只有十六秒",
+   "第十三軌與團同名，一九八七年的首版上沒有這一軌，換了廠牌再壓才補上"
+  ],
+  "sound": "1987 年 Wishingwell WW4 的首版是一張 12 吋、十二軌，十二軌都沒有留下長度紀錄。照隔年同名同序的再壓看，這十二軌總長 17 分 50 秒，最長的〈One Family〉與〈Break Down the Walls〉都是 2:04，最短的〈Standing Hard〉只有 16 秒，其餘落在 0:57 到 2:03 之間——沒有一首超過兩分零四秒。曲名多半是兩三個字的祈使句或短語：〈Make a Change〉〈Take a Stand〉〈Shout It〉〈Positive Outlook〉。1988 年換到 Revelation 再壓時尾巴補上第十三軌〈Youth of Today〉2:04，總長才拉到 19 分 54 秒。",
+  "keyTracks": [
+   "Make a Change",
+   "Break Down the Walls",
+   "Standing Hard"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987。release-group first-release-date **1987-04-05**（帶完整月日），其下最早的 release 就是 1987-04-05 US 的 Wishingwell WW4（Official，12 吋 12 軌），與卡單 `year` 1987 相符。**再發年份四筆**：1988（Revelation REV008 黑膠 13 軌）、1993、1997-11-11、2017-06-21，四筆全部是 13 軌版；**照載體或照軌數取年都會取到 1988 以後**（裁定 220 的形狀）。**串流那一路的 releaseDate 欄寫 1986，比首版早一年**，而同一筆的 ℗ 欄寫「℗ 1988 Revelation Records」——**店面自身的兩個欄位就互相矛盾**，年份仍取 1987。**同名先行單曲：無**（〈Break Down the Walls〉只作為本張第 7 軌出現）。",
+  "notes": "**軌數混版：本張屬本批裁定 251 的典型。** 卡單 `label` 欄釘的是 **1987 Wishingwell WW4、12 吋、12 軌**；MB 六筆 release 裡有四筆是 13 軌。**行文只能引十二軌、只能引那十二個曲名**；**〈Youth of Today〉這一軌 1987 年的版本上沒有，1988 年 Revelation 再壓才加上去，不得當成本張曲目**。｜**長度要交代來源**：1987 那一筆十二軌全無長度，本檔引的秒數取自 1988 REV008 同名同序的那一版，行文若要寫「16 秒」「總長不到十八分鐘」，是可以的，但**不要寫成「首版唱片標示的長度」**。｜**擋下策展層三處**：(1) `why` 寫「Ray Cappo 與 Porcell 1985 年在康乃狄克組團、隨即遷入紐約」——**成員本名、成軍年與成軍地在實體欄位端完全查不到，依裁定 241／250 不得寫個別成員的名字**，行文只能寫廠牌與年份。(2) `why` 寫「youth crew 這個次類型的原型」與「正是 straight edge 唱片史的分水嶺」——**兩句都是斷語，查無來源，不得寫**。(3) `why` 寫「1988 年起才轉由 Revelation 接手」——**這一句查證屬實**（1988 US Revelation REV008，catno 本層補齊），可以留，但要寫成「1988 年起改由另一家廠牌再壓」這種只陳述事實的形狀。｜`risk` 提醒的「店面年份欄寫 1986」**查證屬實**。`risk` 說「US 卡帶 12 軌 Official」也屬實，**但那筆卡帶是 Wishingwell 的 WW-4C、MB 上無日期，不是 Revelation 的**，寫的時候不要接到 Revelation 那一段。｜**序數**：藝人目錄 9 個 RG、純長篇 3 張，本張是三張裡最早的一張，**「這支團的第一張長篇」可以寫**；但**不得寫「唯一一張」**。｜**不得寫任何與 straight edge 立場相關的評價或立場敘述**，只寫廠牌、年份、曲目、軌數、長度。"
+ },
+ {
+  "key": "desc2:Youth of Today|We're Not in This Alone",
+  "artist": "Youth of Today",
+  "album": "We're Not in This Alone",
+  "facts": [
+   {
+    "f": "release-group f7e373f4 的欄位：title「We're Not in This Alone」（**ASCII 直撇號，MB 實體本身就是直撇號，不需轉換**）、artist-credit「Youth of Today」、first-release-date **1988**（只有年、無月日）、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 US、全部 Official**：**1988 的 Caroline Records／catno CAROL 1351，12 吋黑膠、13 軌**（卡單釘的這一筆）／1997 的 Revelation Records／**REV059**，CD、13 軌／2013-07-16 的 Revelation Records／**REV059**（同一個 catno）、CD、**16 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f7e373f4-f745-30c4-8426-15ab582d1f78?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1988 Caroline CAROL 1351（12 吋）的逐軌曲目與長度**：1〈Flame Still Burns〉1:17、2〈Slow Down〉1:28、3〈Choose to Be〉1:29、4〈Put It Aside〉1:35、5〈Wake Up and Live〉1:14、6〈No More〉2:15、7〈What Goes Around〉1:27、8〈Potential Friends〉1:32、9〈A Time We'll Remember〉1:20、10〈Live Free〉1:32、11〈Understand〉1:36、12〈Prejudice〉1:23、13〈Keep It Up〉2:14。**十三軌總長 20:25，最短〈Wake Up and Live〉1:14、最長〈No More〉2:15——最長與最短只差 61 秒，十三軌裡有九軌落在 1:14 到 1:36 之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f7e373f4-f745-30c4-8426-15ab582d1f78&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1997 年那筆 CD 與 1988 年黑膠**逐軌同名、同序、同長，一秒不差**；**2013-07-16 那筆 CD 才變成 16 軌**，多出來的三軌是 14〈Disengage〉、15〈Modern Love Story〉、16〈Envy〉，**三軌都沒有記錄長度**。**這三軌不在 1988 年的版本上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f7e373f4-f745-30c4-8426-15ab582d1f78&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面的 collectionId **101896710**：collectionName「We're Not In This Alone」（**In 的大小寫與 MB 不同**）、artistName「Youth of Today」、releaseDate **1988**、trackCount **13**、copyright「**℗ 1997 Revelation Records**」。`entity=song` 攤得出 13 軌，**與 1988 年那一版逐軌同名同序**，長度逐軌短 1 到 2 秒（1:15／1:26／1:27／1:33／1:12／2:13／1:25／1:30／1:18／1:30／1:34／1:21／2:15）。**十三軌的內容確實是本張，但 ℗ 指向 1997 年那次再壓。**",
+    "src": "https://itunes.apple.com/lookup?id=101896710&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **9 個 release-group**，**primary-type=Album 且 secondary-types 為空的是 3 個**：1987-04-05《Break Down the Walls》、1988《Can't Close My Eyes》（076b41ca）、1988 本張。**是三張不是兩張**——本批的策展層依裁定第 2 條把 076b41ca 判為 1985 年 7 吋的 12 吋擴充版而不收，但**在藝人目錄的欄位上它仍然是一個 primary-type=Album、secondary-types 為空的 release-group**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9ca27db4-f127-4aeb-ae87-29e21f558c13&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十三首歌總共二十分二十五秒，其中九首的長度落在同一個二十二秒的區間裡",
+   "同一個廠牌編號 REV059 掛了兩次，一次十三軌、一次十六軌，中間隔了十六年"
+  ],
+  "sound": "1988 年 Caroline CAROL 1351 的 12 吋是十三軌、總長 20 分 25 秒，平均一首不到一分半。最短的〈Wake Up and Live〉1:14、最長的〈No More〉2:15，兩端只差六十一秒，中間九首全部擠在 1:14 到 1:36 之間，整張像是照同一個尺寸切出來的。開場〈Flame Still Burns〉1:17 與收尾〈Keep It Up〉2:14 是唯二在頭尾拉開的兩軌。曲名多為兩到三個字的短語或祈使句：〈Slow Down〉〈Put It Aside〉〈Live Free〉〈Keep It Up〉。1997 年的再壓逐軌一秒不差，要到 2013 年那一版才在尾巴加上三軌。",
+  "keyTracks": [
+   "Flame Still Burns",
+   "No More",
+   "Keep It Up"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**（只有年份、沒有月日），其下最早的 release 就是 1988 US 的 Caroline CAROL 1351（Official，12 吋 13 軌），與卡單 `year` 1988 相符。**再發兩筆**：1997（Revelation REV059 CD 13 軌）與 2013-07-16（Revelation REV059 CD 16 軌）——**兩筆共用同一個 catno REV059，只有軌數與年份不同**，照 catno 配對會分不出來（裁定 220 的變形）。**串流那一路的 releaseDate 欄寫 1988、與 MB 相符，但 ℗ 欄是「℗ 1997 Revelation Records」**，指向 1997 那次再壓；內容十三軌與 1988 年版相同，年份取 1988。**同名先行單曲：無。**",
+  "notes": "**軌數混版（裁定 251）**：卡單 `label` 釘的是 **1988 Caroline CAROL 1351、12 吋、13 軌**。**〈Disengage〉〈Modern Love Story〉〈Envy〉三軌只在 2013 年那張 16 軌 CD 上，不是本張曲目，行文不得引**。｜**擋下策展層三處**：(1) `why` 寫「Youth of Today **唯一一張**由獨立大廠發行的專輯」——**「唯一」與「獨立大廠」都不得寫**：可查證的只有「Caroline／CAROL 1351 這個廠牌在這支團名下 3 張純長篇裡只出現在本張」，**極值與廠牌規模的斷語一律砍掉**。(2) `why` 寫「Caroline 那條紐約硬蕊編號帶的第一號：CAROL 1351 →CAROL 1361（Warzone）→CAROL 1381（Underdog）」——**本層只回問了本張，那兩張是 a 組的卡，未經本層覆核，「第一號」這個序數不得寫**；行文可以寫本張的 catno 是 CAROL 1351，不要接後面那條編號帶。(3) `why` 寫「這支團**僅有的兩張**當年 LP」——**藝人目錄上 primary-type=Album 且 secondary-types 為空的是三張不是兩張**（多出 076b41ca《Can't Close My Eyes》）；**「僅有的兩張」不得寫**，要寫序數只能寫「1987 年那張之後的第二張」。｜`risk` 說「MB 用 ASCII 直引號『We're』，不需轉換」**查證屬實**。`risk` 說「1997 與 2013 Revelation 再發會蓋年」屬實，**且要補一句：兩筆再發共用同一個 catno REV059**。｜**串流採信 101896710：`entity=song` 攤出的 13 軌與 1988 年那一版逐軌同名同序、長度逐軌只差 1 到 2 秒，可確認是本張的內容；但 ℗ 欄指向 1997 年那次再壓，行文不要拿店面當「原盤」的證據。** 店面盤名的 In 是大寫，配對一律用 collectionId。｜**不得寫任何與 straight edge 立場相關的評價，也不得寫個別成員的名字**（裁定 241／250）。"
+ },
+ {
+  "key": "desc2:Gorilla Biscuits|Start Today",
+  "artist": "Gorilla Biscuits",
+  "album": "Start Today",
+  "facts": [
+   {
+    "f": "release-group 2076b5a3 的欄位：title「Start Today」、artist-credit「Gorilla Biscuits」（藝人實體 MBID 0320a32e）、first-release-date **1989-06-24**、primary-type Album、secondary-types **空**。轄下 **9 筆 release**：**1989-06-24 US 卡帶、Revelation Records／catno Revelation:12、12 軌**（first-release-date 掛在這一筆）／**1989 US 黑膠、Revelation:12、14 軌**（卡單釘的這一支）／1989 US CD、Revelation:12、14 軌／1989 US CD、Revelation:12、**media 的 track-count 是 99**、disambiguation「first cd pressing」／**1989 DE 黑膠、We Bite Records／WB 054、14 軌**／1989 DE CD、We Bite Records／**WE BITE 054 CD**、14 軌／1994-07-31 US CD、Revelation:12、**42 軌**／2006 US CD、Revelation:12、14 軌／2008 XW 數位、Revelation:12、14 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2076b5a3-b2c6-37f9-890d-3afcff50bd23?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1989 US 黑膠（Revelation:12，14 軌）的逐軌曲目與長度**：1〈New Direction〉2:31、2〈Stand Still〉2:10、3〈Degradation〉1:37、4〈Good Intentions〉**0:31**、5〈Forgotten〉1:34、6〈Things We Say〉1:44、7〈Start Today〉2:06、8〈Two Sides〉2:06、9〈First Failure〉1:42、10〈Competition〉2:06、11〈Time Flies〉1:47、12〈Cats and Dogs〉1:38、13〈Sitting 'round at Home〉1:46、14〈Biscuit Power〉1:25。**十四軌總長 24:45，最長〈New Direction〉2:31、最短〈Good Intentions〉0:31，三軌並列 2:06。** 同年的德版黑膠（We Bite WB 054）與德版 CD 逐軌同名同序同長。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2076b5a3-b2c6-37f9-890d-3afcff50bd23&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同一年的卡帶只有 12 軌、總長 21:33**——比黑膠少了末尾的〈Sitting 'round at Home〉與〈Biscuit Power〉兩軌。**那筆「99 軌」的 US CD 不是資料錯誤**：前 14 軌與黑膠同名同序（末兩軌標 [hidden track]），第 15 軌起是〈Five Minutes Of Silence〉5:00 與四組被切成數十段索引的隱藏內容（Short End Of The Stick 11 段、Hold Your Ground 18 段、Do It Yourself 19 段、GM1 13 段、Conversation 22 段），**每段 4 到 13 秒，整張 99 軌總長 43:10**。1994-07-31 那筆 42 軌同理：前 14 軌是本張、15 至 41 軌全部標 [silence]、第 42 軌 [untitled]，**42 軌沒有任何一軌記錄長度**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2076b5a3-b2c6-37f9-890d-3afcff50bd23&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面的 collectionId **91072644**：collectionName「Start Today」、artistName「Gorilla Biscuits」、releaseDate **1989**、trackCount **14**、copyright「**℗ 1989 Revelation Records**」。`entity=song` 攤得出 14 軌、**與 1989 年黑膠逐軌同名同序**，長度逐軌短約 2 秒（2:29／2:08／1:35／0:29／1:31／1:42／2:04／2:04／1:39／2:04／1:45／1:36／1:44／1:23），**末兩軌店面標成「Sitting Round At Home (Bonus Track)」與「Biscuit Power (Bonus Track)」**。逐軌覆核可確認就是十四軌那一版。",
+    "src": "https://itunes.apple.com/lookup?id=91072644&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **8 個 release-group**：primary-type=Album 且 secondary-types 為空的 **3 個**（1988《Gorilla Biscuits》96ae45ee、1989-06-24 本張、1997《Puzzle of 38 Pieces (Rare Bootleg Tracks)》2b98ada3），另有 EP+Demo 1、EP 1、Single 1、Other 1、Album+Live 1。**三張純長篇裡，96ae45ee 的實體是 1988 US 的 7 吋、2b98ada3 的標題自陳是盜錄集**——本張是三張裡唯一一張形態完整的當年長篇。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第一次壓成 CD 時，一段隱藏內容被切成八十五個索引，整張碟因此變成九十九軌",
+   "同一年的卡帶少了最後兩軌，黑膠十四軌、卡帶十二軌"
+  ],
+  "sound": "1989 年 Revelation 編號 12 的黑膠是十四軌、總長 24 分 45 秒。開場〈New Direction〉2:31 是全張最長的一軌，第四軌〈Good Intentions〉只有 31 秒是最短的一軌，中段〈Start Today〉〈Two Sides〉〈Competition〉三軌長度完全相同、都是 2:06。十四軌裡有十一軌落在 1:25 到 2:10 之間，沒有一首超過兩分半。曲名一半是短語、一半是名詞對（〈Two Sides〉〈Cats and Dogs〉〈Time Flies〉），最後兩軌〈Sitting 'round at Home〉與〈Biscuit Power〉在同年的卡帶版上並不存在。",
+  "keyTracks": [
+   "New Direction",
+   "Start Today",
+   "Good Intentions"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989-06-24**，**但那個日期掛在 US 卡帶那一筆（12 軌）上**，卡單釘的 1989 US 黑膠（Revelation:12，14 軌）在 MB 上只有年份沒有月日。同年還有 US CD 兩筆與 **DE 的 We Bite 黑膠／CD 兩筆**，全部 1989。**再發三筆**：1994-07-31、2006、2008，**照載體或照最新版取年都會取到 1994 以後**（裁定 220）。**串流那一路的 releaseDate 與 ℗ 都寫 1989**，四處對照後年份取 1989。**同名先行單曲：無**（〈Start Today〉只作為本張第 7 軌出現）。",
+  "notes": "**軌數混版（裁定 251，本張是全批最極端的一張）**：卡單 `label` 釘的是 **1989 US Revelation:12、黑膠、14 軌**。同一個 release-group 底下同時有 12 軌（卡帶）、14 軌（黑膠／CD／德版四筆／2006／2008）、**42 軌**（1994 CD）與 **99 軌**（1989 首版 CD）。**行文只能引十四軌**。｜**擋下策展層兩處資料誤讀**：(1) `mbNote` 把 99 軌那筆記成「資料有誤的一筆」——**不是資料錯誤**：那是 disambiguation 標「first cd pressing」的首版 CD，前 14 軌是本張、其後是被切成八十五個索引的隱藏內容（總長 43:10）。(2) `risk` 把 1994-07-31 的 42 軌記成「整編包」——**也不是**：前 14 軌仍是本張、第 15 到 41 軌全部標 [silence]、第 42 軌 [untitled]，是同一張碟加上一堆空白軌，**不是收錄別張曲目的整編**。這兩點若照策展層寫會寫錯。｜**擋下策展層三處斷語與人名**：(3) `why` 寫「Civ 與 Walter Schreifels（後來的 Quicksand、Rival Schools）」——**成員本名與後續去向在實體欄位端查不到，依裁定 241／250 不得寫個別成員的名字**。(4) `why` 寫「這條線至今**銷量最高、被翻唱最多**的一張」——**兩個極值都查無來源，不得寫**。(5) `why` 寫「youth crew 從 7 吋文化跨進 LP 形態最成功的一次」——斷語，**不得寫**。｜**可以留的**：「Revelation 目錄編號 12」**查證屬實**（catno 就是 Revelation:12）；「同年德版由 We Bite 以 WB 054 發行」**查證屬實**，**本層另補：德版同時有黑膠 WB 054 與 CD WE BITE 054 CD，兩者都是 14 軌**。｜**序數**：藝人目錄 8 個 RG、純長篇 3 張，其中一張實體是 7 吋、一張是盜錄集，**可以寫「這支團當年唯一一張形態完整的長篇」，但要照這個限定寫，不得寫成「唯一一張專輯」**。｜**串流採信 91072644：14 軌與 1989 年黑膠逐軌同名同序、長度逐軌只差約 2 秒，是可用的固定試聽來源**；店面把末兩軌標成 Bonus Track，**但那兩軌本來就在黑膠版上、不是加曲**，行文不要跟著寫成「特別收錄」。｜**不得寫任何與 straight edge 立場相關的評價或立場敘述。**"
+ }
+]
