@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-07｜dip-vinyl-shop｜牆上換成真封面：容器有外網，改抓 MusicBrainz ＋ Cover Art Archive
+
+同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。
+
+店主問「為何無法像例圖一樣精緻？」「換一個繪圖工具呢？」。
+
+**先查清楚再回答，結論是換工具沒用、換來源才有用。** 這台容器只有 Pillow，
+沒有 cairo／inkscape／imagemagick／numpy。但 `pip install` 通了 → **代表有外網**。
+換 cairo 只能改善收邊（抗鋸齒、貝茲曲線、漸層、模糊），畫不出一張 Miles Davis 的臉；
+瓶頸從來不是繪圖庫，是**封面的內容從哪來**。既然有網路，就別畫封面，直接抓真的。
+
+**1. 真封面（`scripts/fetch-shop-covers.py`，新增）。** MusicBrainz 查 release-group MBID
+（限速 1 req/sec）→ Cover Art Archive 要 `front-500` → 置中裁方 → 縮 168px 存進
+`art/covers/<slug>.jpg`。**快取進 repo**，`build-shop-art.py` 才能離線重跑產出同一張圖。
+27 張全部抓到（Kraftwerk 與 Anri 的標準查詢查不到，備援查詢寫進腳本的 `ALT`：
+Trans **Europa** Express、藝人名用「杏里」）。
+
+**2. 上牆與上櫃。** `make_cover` 改成有真封面就用真的，抓不到才退回程式生成的版型；
+真假混用會很明顯，所以真封面夠 24 張就全用真的。24 格塞不下 27 張，
+`Kind of Blue`／`Unknown Pleasures`／`Dark Side`／`Nevermind`／`OK Computer`／
+香蕉／`Cop`／`Iron Curtain Innocence` 用 `pin` 釘住不被洗掉。挖寶櫃也從色條書背改成
+**真封面面朝外一張疊一張**（`face_out()`），跟參考圖右邊那櫃一樣。
+
+**3. 木紋換成 numpy。** 原本是一條一條畫的隨機細線。改成 `wood()`：值雜訊沿板子方向拉長
+＋`sin` 年輪帶＋細絲紋，牆、地板、櫃檯檯身、櫃檯門片、挖寶櫃前板都吃這支。牆色調亮
+（`(196,156,102)`→`(202,172,130)`）、木紋對比降到 .085，免得跟封面搶。地毯加菱形織花。
+
+**4. 背景改存 JPEG。** 貼上真封面後 `shop-bg.png` 漲到 775KB，手機載太慢；
+內容已經是照片級的圖，改 `shop-bg.jpg`（quality 90、subsampling 0）→ 343KB。
+前景層有透明度所以維持 PNG。
+
+- 主要檔案：`scripts/fetch-shop-covers.py`（新增）、`art/covers/*.jpg`（新增 27 張）、
+  `scripts/build-shop-art.py`（真封面、face_out、numpy 木紋、pin、JPEG 輸出）、
+  `art/shop-bg.jpg`（取代 `shop-bg.png`）、`art/shop-fg.png`、`stage-preview.html`（背景改 .jpg）
+- **`roguelike.html` 一樣沒動**，等店主點頭才換。
+- 驗證：`python3 scripts/build-shop-art.py` 印「真封面 27 張 / 清單 27 張」；
+  Chromium（400×900、DPR 3）四個場景重拍，前景遮擋與門動畫仍正確。
+
 ### 2026-09-07｜dip-vinyl-shop｜唱片行舞台重做：3 倍解析度像素圖、前景層擋人、門會開（預覽，尚未換進遊戲）
 
 同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。

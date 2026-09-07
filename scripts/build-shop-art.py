@@ -24,6 +24,7 @@ CSS 漸層畫不出來。改成一次算好幾張 PNG，前台只要疊圖層。
   · 前景挖寶櫃與紙箱 x>200 且 y>232；左前方 x 20–200 留給三人同框。
 """
 import json, math, os, random
+import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 S = 3                       # 1 邏輯 px = 3 圖素（手機 3× DPR 剛好 1:1）
@@ -43,8 +44,8 @@ F_SERIF = '/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf'
 F_MONO  = '/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf'
 F_CJK   = '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc'
 
-WALL_A, WALL_B = (196, 156, 102), (207, 169, 113)
-WALL_SEAM   = (158, 119, 70)
+WALL_A, WALL_B = (202, 172, 130), (212, 183, 142)
+WALL_SEAM   = (166, 134, 90)
 SKIRT_C     = (116, 81, 44)
 FLOOR_A, FLOOR_B = (152, 110, 64), (166, 123, 75)
 FLOOR_SEAM  = (100, 68, 36)
@@ -56,6 +57,39 @@ BRASS       = (208, 168, 68)
 
 
 def lx(v): return int(round(v * S))
+
+
+# ══ 木紋 ═════════════════════════════════════════════════════════
+def _noise(w, h, seed, octaves=4, sx=1.0, sy=1.0):
+    """多層值雜訊。sx／sy 把雜訊拉長，木紋才會順著板子的方向跑。"""
+    rng = np.random.default_rng(seed)
+    acc = np.zeros((h, w), dtype=np.float32)
+    amp, tot = 1.0, 0.0
+    for o in range(octaves):
+        k = 2 ** (octaves - o)
+        gw = max(2, int(w / k / sx)); gh = max(2, int(h / k / sy))
+        g = (rng.random((gh, gw)) * 255).astype(np.uint8)
+        up = np.asarray(Image.fromarray(g).resize((w, h), Image.BICUBIC), dtype=np.float32) / 255
+        acc += up * amp; tot += amp; amp *= .5
+    return acc / tot
+
+
+def wood(w, h, base, seed, vertical=True, period=9.0, warp=5.0, contrast=.17):
+    """一塊木頭：年輪帶（sin 波）＋雜訊擾動＋細絲紋。回傳 RGB Image。"""
+    if w <= 0 or h <= 0:
+        return Image.new('RGB', (max(1, w), max(1, h)), base)
+    if vertical:                                   # 紋路縱走 → 雜訊縱向拉長
+        n = _noise(w, h, seed, 4, sx=1.0, sy=7.0)
+        axis = np.tile(np.arange(w, dtype=np.float32)[None, :], (h, 1))
+    else:
+        n = _noise(w, h, seed, 4, sx=7.0, sy=1.0)
+        axis = np.tile(np.arange(h, dtype=np.float32)[:, None], (1, w))
+    rings = np.abs(np.sin((axis / period + n * warp) * math.pi))
+    fine = _noise(w, h, seed + 977, 2, sx=1.0 if vertical else 14.0,
+                  sy=14.0 if vertical else 1.0)
+    k = 1.0 + (rings - .5) * contrast * 2 + (fine - .5) * .10
+    arr = np.stack([np.clip(base[i] * k, 0, 255) for i in range(3)], axis=2).astype(np.uint8)
+    return Image.fromarray(arr, 'RGB')
 def shade(c, k): return tuple(max(0, min(255, int(v * k))) for v in c[:3])
 def mix(a, b, t): return tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
 
@@ -98,22 +132,24 @@ def wrap(font, text, maxw, maxlines=2):
 # ══════════════════════════════════════════════════════════════════
 #  牆／地板
 # ══════════════════════════════════════════════════════════════════
-def draw_wall(d):
+def draw_wall(img, d):
     plank = 17
     for i, x0 in enumerate(range(-plank, LW + plank, plank)):
-        base = shade(WALL_A if i % 2 == 0 else WALL_B, 1 + (random.random() - .5) * .06)
-        lrect(d, x0, 0, plank, SKIRT_Y, base)
-        for _ in range(random.randint(6, 11)):
-            gx = lx(x0) + random.randint(2, max(3, lx(plank) - 3))
-            gy = random.randint(0, lx(SKIRT_Y) - 40)
-            rect(d, gx, gy, 1, random.randint(20, 110),
-                 shade(base, 1.06 if random.random() < .6 else .92))
+        base = shade(WALL_A if i % 2 == 0 else WALL_B, 1 + (random.random() - .5) * .05)
+        pw, ph = lx(plank), lx(SKIRT_Y)
+        img.paste(wood(pw, ph, base, 1000 + i, vertical=True,
+                       period=lx(plank) / 2.0, warp=2.2, contrast=.085), (lx(x0), 0))
+        d = ImageDraw.Draw(img)
         for _ in range(random.randint(1, 3)):        # 節疤
-            kx = lx(x0) + random.randint(4, max(5, lx(plank) - 5))
-            ky = random.randint(10, lx(SKIRT_Y) - 10)
-            d.ellipse([kx - 2, ky - 3, kx + 2, ky + 3], fill=shade(base, .80))
-            d.ellipse([kx - 1, ky - 1, kx + 1, ky + 1], fill=shade(base, .66))
-        rect(d, lx(x0) - 1, 0, 2, lx(SKIRT_Y), WALL_SEAM)
+            kx = lx(x0) + random.randint(5, max(6, pw - 5))
+            ky = random.randint(14, ph - 14)
+            rr = random.randint(3, 6)
+            for j in range(rr, 0, -1):
+                d.ellipse([kx - j, ky - j * 1.5, kx + j, ky + j * 1.5],
+                          outline=shade(base, .74 + (rr - j) * .045))
+            d.ellipse([kx - 1, ky - 2, kx + 1, ky + 2], fill=shade(base, .62))
+        rect(d, lx(x0) - 1, 0, 2, ph, WALL_SEAM)
+        rect(d, lx(x0) + 1, 0, 1, ph, shade(base, 1.12))
 
 
 def draw_skirt(d):
@@ -131,12 +167,10 @@ def draw_floor(img, d):
     ys.append(y1)
     for i in range(len(ys) - 1):
         a, b = ys[i], ys[i + 1]
-        base = shade(FLOOR_A if i % 2 == 0 else FLOOR_B, 1 + (random.random() - .5) * .07)
-        rect(d, 0, a, W, b - a, base)
-        for _ in range(max(2, (b - a) // 2)):
-            gy = random.randint(a, max(a, b - 2))
-            gx = random.randint(0, W - 80)
-            rect(d, gx, gy, random.randint(40, 200), 1, shade(base, 1.07))
+        base = shade(FLOOR_A if i % 2 == 0 else FLOOR_B, 1 + (random.random() - .5) * .06)
+        img.paste(wood(W, b - a, base, 2000 + i, vertical=False,
+                       period=max(2.5, (b - a) / 1.6), warp=2.4, contrast=.13), (0, a))
+        d = ImageDraw.Draw(img)
         rect(d, 0, b - 1, W, 1, FLOOR_SEAM)
     for k in range(-11, 12):                       # 對接縫：從消失點放射
         off = k * lx(38)
@@ -192,6 +226,16 @@ def draw_rug(d):
                 xr = lx(250) + (lx(296) - lx(250)) * t
                 pts.append((xl + (xr - xl) * u, lx(top) + lx(bot - top) * t))
             d.line(pts, fill=shade(base, 1.32 if edge < .08 else .74), width=2)
+    for k in range(9):                             # 菱形織花
+        v = (k + .5) / 9
+        for u in (.30, .70):
+            t0, t1 = max(0, v - .045), min(1, v + .045)
+            def px(t, uu):
+                xl = lx(74) + (lx(34) - lx(74)) * t
+                xr = lx(250) + (lx(296) - lx(250)) * t
+                return (xl + (xr - xl) * uu, lx(top) + lx(bot - top) * t)
+            c = shade(base, 1.30 if k % 2 else .78)
+            d.polygon([px(t0, u), px(v, u - .045), px(t1, u), px(v, u + .045)], outline=c)
     d.line([(lx(74), lx(top)), (lx(250), lx(top))], fill=shade(base, 1.38), width=2)
     d.line([(lx(34), lx(bot)), (lx(296), lx(bot))], fill=shade(base, .62), width=2)
 
@@ -557,9 +601,32 @@ SPECIAL = {
 
 
 _recent = []
+COVER_DIR = os.path.join(ART, 'covers')
+
+
+def cover_slug(a, t):
+    import re
+    return re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', f'{a}-{t}'.lower())).strip('-')[:60]
+
+
+def real_cover(key):
+    """art/covers/ 裡有真封面就用真的（scripts/fetch-shop-covers.py 抓的）。"""
+    if not key:
+        return None
+    p = os.path.join(COVER_DIR, cover_slug(*key) + '.jpg')
+    if not os.path.exists(p):
+        return None
+    im = Image.open(p).convert('RGB').resize((CS, CS), Image.LANCZOS)
+    a = np.asarray(im, dtype=np.float32)
+    a = np.clip((a - 128) * 1.06 + 128 - 4, 0, 255)        # 壓一點對比、退一點色
+    return Image.fromarray(a.astype(np.uint8), 'RGB')
 
 
 def make_cover(a, t, genres, key=None):
+    got = real_cover(key)
+    if got is not None:
+        d = ImageDraw.Draw(got)
+        return finish_cover(got, d)
     im = Image.new('RGB', (CS, CS), (20, 20, 20))
     d = ImageDraw.Draw(im)
     fn = SPECIAL.get(key)
@@ -579,7 +646,11 @@ def make_cover(a, t, genres, key=None):
     _recent.append(fn)
     fn(d, a, t, pal)
     paper(im, 11)
-    d = ImageDraw.Draw(im)
+    return finish_cover(im, ImageDraw.Draw(im))
+
+
+def finish_cover(im, d):
+    """套邊：左上受光、右下壓暗，偶爾一圈環狀磨損。"""
     d.line([(0, 0), (CS - 1, 0)], fill=(255, 255, 255))
     d.line([(0, 0), (0, CS - 1)], fill=(255, 255, 255))
     d.line([(0, CS - 1), (CS - 1, CS - 1)], fill=(0, 0, 0))
@@ -638,11 +709,27 @@ GX, GY, PITCH = 98, 10, 41
 
 def draw_cover_wall(img, d):
     albums = load_albums()
-    random.shuffle(albums)
+    real = [x for x in albums if os.path.exists(
+        os.path.join(ART, 'covers', cover_slug(*x[3]) + '.jpg'))]
+    # 真封面與程式生成的版型混在一起會很明顯，所以夠 24 張就全用真的
+    albums = real if len(real) >= 24 else albums
+    print(f'  牆上封面：真封面 {len(real)} 張 / 清單 {len(load_albums())} 張'
+          + ('' if len(real) >= 24 else '（不足 24，會混用程式生成的版型）'))
+    # 這幾張一定要在牆上（24 格塞不下 27 張，不釘住就會被洗掉）
+    pin = {('Miles Davis', 'Kind of Blue'), ('Joy Division', 'Unknown Pleasures'),
+           ('Pink Floyd', 'The Dark Side of the Moon'), ('Nirvana', 'Nevermind'),
+           ('Radiohead', 'OK Computer'), ('The Velvet Underground', 'The Velvet Underground & Nico'),
+           ('Swans', 'Cop'), ('Bobb Trimble', 'Iron Curtain Innocence')}
+    head = [x for x in albums if x[3] in pin]
+    tail = [x for x in albums if x[3] not in pin]
+    random.shuffle(head); random.shuffle(tail)
+    albums = head + tail
+    order = list(range(24)); random.shuffle(order)       # 釘住的別擠在同一排
+    slot_of = {n: i for i, n in enumerate(order)}
     k = 0
     for row in range(4):
         for col in range(6):
-            a, t, g, key = albums[k % len(albums)]; k += 1
+            a, t, g, key = albums[slot_of[k] % len(albums)]; k += 1
             x, y = GX + col * PITCH, GY + row * PITCH
             sh = Image.new('RGBA', (lx(COVER + 12), lx(COVER + 12)), (0, 0, 0, 0))
             ImageDraw.Draw(sh).rectangle([lx(3), lx(3), lx(COVER + 6), lx(COVER + 6)],
@@ -661,6 +748,7 @@ def draw_cover_wall(img, d):
             img.alpha_composite(ov, (lx(x), lx(y)))
             d = ImageDraw.Draw(img)
             lrect(d, x - 2, y - 2, COVER + 4, COVER + 4, None, outline=WOOD_D)
+            lrect(d, x - 3, y - 3, COVER + 6, COVER + 6, None, outline=shade(WOOD_D, 1.45))
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -766,7 +854,7 @@ SLEEVE_C = [(188, 32, 46), (30, 92, 172), (232, 222, 196), (240, 196, 84), (44, 
             (246, 244, 238), (92, 92, 96), (206, 96, 130), (56, 60, 140), (172, 176, 60)]
 
 
-def draw_counter(d):
+def draw_counter(img, d):
     x, w, off = CT_X, CT_W, 7
     d.polygon([(lx(x), lx(CT_TOP)), (lx(x + off), lx(CT_TOP - CT_D)),
                (lx(x + w + off), lx(CT_TOP - CT_D)), (lx(x + w), lx(CT_TOP))],
@@ -778,18 +866,21 @@ def draw_counter(d):
         gx = lx(x) + random.randint(4, lx(w) - 40)
         gy = lx(CT_TOP) - random.randint(1, lx(CT_D) - 1)
         rect(d, gx, gy, random.randint(14, 60), 1, shade(WOOD_M, 1.44))
-    for i in range(lx(CT_BOT - CT_TOP)):                      # 檯身：上亮下暗
-        t = i / lx(CT_BOT - CT_TOP)
-        rect(d, lx(x), lx(CT_TOP) + i, lx(w), 1, shade(WOOD_M, 1.06 - t * .42))
-    for _ in range(90):                                       # 檯身木紋
-        rect(d, lx(x) + random.randint(2, lx(w) - 50),
-             lx(CT_TOP) + random.randint(3, lx(CT_BOT - CT_TOP) - 4),
-             random.randint(18, 110), 1, shade(WOOD_M, 1.10))
+    face = wood(lx(w), lx(CT_BOT - CT_TOP), WOOD_M, 3001, vertical=False,
+                period=14.0, warp=2.6, contrast=.15)                # 檯身
+    fa = np.asarray(face, dtype=np.float32)
+    ramp = np.linspace(1.06, .64, fa.shape[0], dtype=np.float32)[:, None, None]
+    _paste(img, np.clip(fa * ramp, 0, 255).astype(np.uint8), lx(x), lx(CT_TOP))
+    d = ImageDraw.Draw(img)
     for k in range(3):                                        # 三格門片
         px = x + 6 + (w - 12) * k / 3
         pw = (w - 12) / 3 - 5
-        lrect(d, px, CT_TOP + 6, pw, CT_BOT - CT_TOP - 15, shade(WOOD_M, .80))
-        lrect(d, px + 1, CT_TOP + 7, pw - 2, CT_BOT - CT_TOP - 17, shade(WOOD_M, .93))
+        lrect(d, px, CT_TOP + 6, pw, CT_BOT - CT_TOP - 15, shade(WOOD_M, .74))
+        _paste(img, np.asarray(wood(lx(pw - 2), lx(CT_BOT - CT_TOP - 17), shade(WOOD_M, .93),
+                                    3100 + k, vertical=True, period=9.0, warp=2.2,
+                                    contrast=.13), dtype=np.uint8),
+               lx(px + 1), lx(CT_TOP + 7))
+        d = ImageDraw.Draw(img)
         lrect(d, px + 1, CT_TOP + 7, pw - 2, 1, shade(WOOD_M, 1.28))
         lrect(d, px, CT_TOP + 6, 1, CT_BOT - CT_TOP - 15, shade(WOOD_M, .62))
         d.ellipse([lx(px + pw * .5 - 1.2), lx(CT_BOT - CT_TOP + CT_TOP - 14),
@@ -882,23 +973,50 @@ def sleeves(d, x, y, w, h, n, lean=1.0):
                    fill=shade(c, 2.0) if sum(c) < 380 else shade(c, .35), width=1)
 
 
+def face_out(img, d, x, y, w, h):
+    """櫃子裡的唱片面朝外、一張疊一張往後倒：看得到真的封面，跟參考圖一樣。"""
+    pool = [p for p in sorted(os.listdir(os.path.join(ART, 'covers')))
+            if p.endswith('.jpg')] if os.path.isdir(os.path.join(ART, 'covers')) else []
+    if not pool:
+        sleeves(d, x, y, w, h, max(12, int(w / 2.6)), lean=1.8)
+        return
+    cw = min(h * 1.02, w * .34)                      # 封面邊長（邏輯）
+    step = cw * .46
+    n = max(2, int((w - cw) / step) + 1)
+    picks = random.sample(pool, min(n, len(pool)))
+    while len(picks) < n:
+        picks.append(random.choice(pool))
+    for i in range(n - 1, -1, -1):                   # 由後往前畫，前面那張蓋住後面
+        cx = x + i * step
+        lean = (n - 1 - i) * .5
+        px, py, pw_ = lx(cx), lx(y + lean), lx(cw)
+        try:
+            cv = Image.open(os.path.join(ART, 'covers', picks[i])).convert('RGB')
+        except Exception:
+            continue
+        cv = cv.resize((pw_, pw_), Image.LANCZOS)
+        k = 1.0 - (i / max(1, n - 1)) * .42          # 越後面越暗
+        cv = Image.fromarray((np.asarray(cv, dtype=np.float32) * k).astype(np.uint8), 'RGB')
+        img.paste(cv, (px, py))
+        d = ImageDraw.Draw(img)
+        d.rectangle([px, py, px + pw_ - 1, py + pw_ - 1], outline=(28, 22, 16))
+        d.line([(px + pw_ - 1, py), (px + pw_ - 1, py + pw_ - 1)], fill=(12, 10, 8), width=2)
+    d = ImageDraw.Draw(img)
+
+
 def draw_bin(d, x, y, w, h):
     """挖寶櫃：木櫃 + 凹進去的內槽 + 插滿的唱片 + 擋住下半截的前緣板。"""
     slot = h * .62
     lrect(d, x, y, w, h, WOOD_M)                                   # 櫃體
-    for i in range(lx(h)):
-        rect(d, lx(x), lx(y) + i, lx(w), 1, shade(WOOD_M, 1.10 - (i / lx(h)) * .46))
     lrect(d, x + 4, y + 2, w - 8, slot, shade(WOOD_D, 1.02))       # 內槽
     lrect(d, x + 4, y + 2, w - 8, 2, shade(WOOD_D, .70))
-    sleeves(d, x + 5, y + 3, w - 10, slot - 1, max(12, int(w / 2.6)), lean=1.8)
-    lrect(d, x, y + slot + 2, w, h - slot - 2, WOOD_M)             # 前緣板
-    for i in range(lx(h - slot - 2)):
-        t = i / max(1, lx(h - slot - 2))
-        rect(d, lx(x), lx(y + slot + 2) + i, lx(w), 1, shade(WOOD_M, 1.12 - t * .48))
-    for _ in range(40):
-        rect(d, lx(x) + random.randint(2, lx(w) - 40),
-             lx(y + slot + 3) + random.randint(0, max(1, lx(h - slot - 4))),
-             random.randint(16, 70), 1, shade(WOOD_M, 1.14))
+    face_out(_IMG[0], d, x + 5, y + 2, w - 10, slot - 1)
+    fh = lx(h - slot - 2)                                          # 前緣板
+    fa = np.asarray(wood(lx(w), fh, WOOD_M, 4000 + int(x), vertical=False,
+                         period=11.0, warp=2.4, contrast=.15), dtype=np.float32)
+    fa *= np.linspace(1.12, .62, fh, dtype=np.float32)[:, None, None]
+    _paste(_IMG[0], np.clip(fa, 0, 255).astype(np.uint8), lx(x), lx(y + slot + 2))
+    d = ImageDraw.Draw(_IMG[0])
     lrect(d, x, y + slot + 2, w, 1, shade(WOOD_M, 1.62))
     lrect(d, x, y, 4, h, shade(WOOD_M, 1.22))                      # 左右側板
     lrect(d, x + w - 4, y, 4, h, shade(WOOD_M, .62))
@@ -937,6 +1055,13 @@ def draw_box(d, x, y, w, h):
                font=fz, fill=(74, 56, 36), anchor='ma')
 
 
+_IMG = [None]
+
+
+def _paste(img, arr, x, y):
+    img.paste(Image.fromarray(arr, 'RGB'), (x, y))
+
+
 def shadow(img, x, y, w, h, blur=5, alpha=118):
     sh = Image.new('RGBA', (lx(w) + blur * 6, lx(h) + blur * 6), (0, 0, 0, 0))
     ImageDraw.Draw(sh).ellipse([blur * 2, blur * 2, lx(w) + blur * 4, lx(h) + blur * 4],
@@ -949,7 +1074,8 @@ def shadow(img, x, y, w, h, blur=5, alpha=118):
 def build_bg():
     img = Image.new('RGBA', (W, H), (0, 0, 0, 255))
     d = ImageDraw.Draw(img)
-    draw_wall(d)
+    draw_wall(img, d)
+    d = ImageDraw.Draw(img)
     draw_floor(img, d)
     d = ImageDraw.Draw(img)
     draw_skirt(d)
@@ -963,9 +1089,10 @@ def build_bg():
 
 def build_fg():
     img = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    _IMG[0] = img
     shadow(img, CT_X - 6, CT_BOT - 10, CT_W + 12, 14, blur=6, alpha=130)
     d = ImageDraw.Draw(img)
-    draw_counter(d)
+    draw_counter(img, d)
     draw_speaker(d, 146, 170, 23, CT_TOP - 170 - CT_D + 5)
     draw_amp(d, 175, 184, 33, CT_TOP - 184 - CT_D + 5)
     draw_turntable(d, 214, 178, 52, CT_TOP - 178 - CT_D + 5)
@@ -988,11 +1115,12 @@ def build_fg():
 
 
 def main():
-    build_bg().convert('RGB').save(os.path.join(ART, 'shop-bg.png'), optimize=True)
+    build_bg().convert('RGB').save(os.path.join(ART, 'shop-bg.jpg'), quality=90,
+                                   subsampling=0, optimize=True)
     build_fg().save(os.path.join(ART, 'shop-fg.png'), optimize=True)
     for k in range(3):
         door_panel(k).save(os.path.join(ART, f'shop-door-{k}.png'), optimize=True)
-    for f in ('shop-bg.png', 'shop-fg.png', 'shop-door-0.png', 'shop-door-1.png',
+    for f in ('shop-bg.jpg', 'shop-fg.png', 'shop-door-0.png', 'shop-door-1.png',
               'shop-door-2.png'):
         p = os.path.join(ART, f)
         print(f'{f:20s} {os.path.getsize(p)/1024:7.1f} KB  {Image.open(p).size}')
