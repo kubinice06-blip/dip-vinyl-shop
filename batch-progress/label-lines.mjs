@@ -89,6 +89,10 @@ export const LINES = {
   c116: { lineType: '深掘', scene: { a: '日本自主 hardcore／ジャパコア', b: '日本 noise 小廠' } },
   c117: { lineType: '深掘', scene: { a: '英國 folk-rock 私壓：Leader／Trailer 系', b: '英國 folk-rock 小廠：Broadside／Village Thing 系' } },
   c118: { lineType: '深掘', scene: { a: '芝加哥 house 二線小廠 12 吋', b: '底特律與紐澤西 techno／house 二線小廠' } },
+  // c-119～c-121（店主 2026-09-07 指定的三條線）
+  c119: { lineType: '深掘', scene: { a: '台語獨立：創作者與本土語言', b: '台語獨立：樂團與廠牌' } },
+  c120: { lineType: '深掘', scene: { a: '紐約硬蕊', b: 'youth crew／straight edge：Revelation 系' } },
+  c121: { lineType: '深掘', scene: { a: '日本フリージャズ與即興演奏', b: '日本地下即興：PSF 前史' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
