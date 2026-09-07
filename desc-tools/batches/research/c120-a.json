@@ -1,0 +1,386 @@
+[
+ {
+  "key": "desc2:Agnostic Front|Victim in Pain",
+  "artist": "Agnostic Front",
+  "album": "Victim in Pain",
+  "facts": [
+   {
+    "f": "release-group 48cce2bc 的欄位：title「Victim in Pain」、artist-credit「Agnostic Front」（藝人實體 40b8a690，type Group、country US、life-span begin **1981**、disambiguation「American hardcore punk band」）、first-release-date **1984**、primary-type Album、secondary-types **空**。轄下 **5 筆 release**：US 1984 Ratcage Records **MOTR 29**（12\" Vinyl、11 軌、Official）／US 1986 **Combat Core 88561-8046-4**（Cassette、11 軌、**status 為 null，不是 Official**）／US 2009-11-17 Bridge Nine **B9R129**（CD、**21 軌**、Official）／US 2009-11-17 Bridge Nine B9R129（12\" Vinyl、11 軌、Official）／XW 2009-11-17 Bridge Nine（Digital、11 軌、Official）。**卡單 label 欄釘的是 1984 那張 12 吋，軌數該引 11。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=48cce2bc-1bd7-3842-996d-a90d1bfe4483&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1984 原盤（MOTR 29）逐軌與長度：A 面 1〈Victim in Pain〉0:51、2〈Remind Them〉1:07、3〈Blind Justice〉1:28、4〈Last Warning〉0:49、5〈United & Strong〉1:11、6〈Power〉1:47；B 面 1〈Hiding Inside〉1:23、2〈Fascist Attitudes〉2:06、3〈Society Sucker〉1:15、4〈Your Mistake〉1:36、5〈With Time〉2:15。**十一軌只有兩軌超過兩分鐘，最短的〈Victim in Pain〉0:51，全張加起來 15 分 28 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=48cce2bc-1bd7-3842-996d-a90d1bfe4483&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版的實據（本張是最極端的一例）**：2009 CD 版 21 軌＝原盤 11 軌＋末尾多出的 10 軌〈No One Rules〉0:25／〈Final War〉0:22／〈Last Warning〉0:48／〈Traitor〉0:25／〈Friend or Foe〉1:16／〈United Blood〉1:13／〈Fight〉0:15／〈Discriminate Me〉0:42／〈In Control〉0:30／〈Crucial Changes〉0:26。**這 10 軌只在 2009 CD 上，黑膠與數位版都沒有；十軌合計 6 分 22 秒，每一軌都短於 1 分 20 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=48cce2bc-1bd7-3842-996d-a90d1bfe4483&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **34 個 release-group**：Album 14（secondary-types 全空）、EP 6、Single 5、Album+Live 4、Album+Compilation 4、EP+Live 1，**primary-type=Compilation 0 個**。14 張乾淨長篇依 first-release-date 排序：**1984 本張、1986《Cause for Alarm》、1987《Liberty and Justice For…》、1992《One Voice》、1998-07-14《Something's Gotta Give》**…直到 2025-11-07《Echoes In Eternity》。**本張是這份目錄裡最早的一張長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=40b8a690-94e4-4c82-ad0f-73f4b841e46a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體：Ratcage Records（46597fde）type「Original Production」、country US、area United States，**life-span 起訖皆未填、disambiguation 空**——「Rat Cage 是誰開的、開在哪裡」在實體欄位查不到。Bridge Nine Records（b6543dc1）是 2009 年那三筆的廠牌。",
+    "src": "https://musicbrainz.org/ws/2/label/46597fde-78e7-429f-bde3-3ae6a485e302?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，一採一駁**：collectionId **1609512833**《Victim In Pain》，artistName「Agnostic Front」、releaseDate 1984-01-01、trackCount 11、℗ 1984 Agnostic Front，十一軌〈Victim in Pain〉0:48／〈Remind Them〉1:04／〈Blind Justice〉1:26／〈Last Warning〉0:47／〈United and Strong〉1:09／〈Power〉1:45／〈Hiding Inside〉1:21／〈Fascist Attitudes〉2:04／〈Society Suckers〉1:13／〈Your Mistake〉1:34／〈With Time〉2:16，**與 2009 數位版十一軌的曲序與長度逐位置完全相同，十一軌全部有 previewUrl**。→ **採信。** collectionId 1609512985《United Blood e.p.》1983、10 軌，逐軌就是 2009 CD 末尾那 10 軌，**是 1983 年的 7 吋、不是本張**。→ **駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=1609512833&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一首唱完只花十五分半，最短的一首五十一秒",
+   "二十五年後的 CD 版把十一首變成二十一首，多出來的十首全部不到八十秒"
+  ],
+  "sound": "1984 年 Ratcage Records 的 MOTR 29 是一張 12 吋、十一軌。A 面〈Victim in Pain〉0:51 開場，接〈Remind Them〉1:07、〈Blind Justice〉1:28、〈Last Warning〉0:49、〈United & Strong〉1:11、〈Power〉1:47；B 面是〈Hiding Inside〉1:23、〈Fascist Attitudes〉2:06、〈Society Sucker〉1:15、〈Your Mistake〉1:36、〈With Time〉2:15。十一軌只有〈Fascist Attitudes〉與〈With Time〉超過兩分鐘，全張總長 15 分 28 秒。曲名一路是控訴句式——受害、提醒、盲目的正義、法西斯的姿態、賣社會的人。2009 年 Bridge Nine 的 CD 版把這十一軌原封留在前段，末尾再接十首每首都不到八十秒的早期錄音；同日的黑膠與數位版則維持十一軌。",
+  "keyTracks": [
+   "Victim in Pain",
+   "Fascist Attitudes",
+   "With Time"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。release-group first-release-date **1984**，其下最早的 release 就是 1984 US 的 Ratcage MOTR 29（Official）；1986 卡帶、2009 的三筆 Bridge Nine 是後續。**裁定 220 的形狀在本張成立但不影響取值**：2009 那三筆同日發行會把年份往後推到 2009，`year` 仍取 1984。串流側採信的 1609512833 releaseDate 標 **1984-01-01**、℗ 1984，與 MB 同年，**四處對照成立**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處。**(1) `curatorRisk` 與 `curatorWhy` 都說「Apple：us／gb／de 三店 album 搜尋皆 MISS（Apple 沒有這張的可播版本）」「試聽要靠 YouTube 官方 Album playlist 人工核對」——**實測不成立**：回撈候選 1609512833 是本張十一軌的完整上架版本，逐軌長度與 2009 數位版逐位置相同、每軌都有 previewUrl。**串流採信 1609512833：十一軌曲序與長度逐位置比對全中（0:48／1:04／1:26／0:47／1:09／1:45／1:21／2:04／1:13／1:34／2:16），採信。** 另一筆 1609512985《United Blood e.p.》1983、10 軌，逐軌等同 2009 CD 末尾追加的那十軌，**駁回**（是 7 吋、不是本張）。｜(2) `curatorWhy` 寫「紐約硬蕊第一張站得住的長篇唱片」「把 CBGB 週日午場那一批團的聲音第一次壓成 12 吋」——**這兩句都是跨藝人的極值與場景敘述，實體欄位查不到任何可引來源，不得寫**。可以寫的序數只有一種：**這是該藝人目錄裡最早的一張長篇**（34 個 RG、14 張乾淨長篇，本張排第 1）。｜(3) `curatorWhy` 說 1986 年的卡帶版——**該筆 status 是 null 不是 Official**，且廠牌是 Combat Core（catno 88561-8046-4），行文若提 1986 年要說清楚。｜**軌數混版（裁定 251）**：卡單 label 欄釘 1984 的 12 吋 **11 軌**，行文引軌數只能引 11；2009 CD 的 21 軌要寫就得同時說明那是 CD 版、多出來的是末尾十軌。｜**人名從嚴（裁定 241／250）**：Ratcage Records 實體的 life-span 與 disambiguation 全空，**不得寫廠牌創辦人或任何個別成員的名字**。"
+ },
+ {
+  "key": "desc2:Agnostic Front|Cause for Alarm",
+  "artist": "Agnostic Front",
+  "album": "Cause for Alarm",
+  "facts": [
+   {
+    "f": "release-group cbfbf656 的欄位：title「Cause for Alarm」、artist-credit「Agnostic Front」（藝人實體 40b8a690）、first-release-date **1986**、primary-type Album、secondary-types **空**。轄下 **5 筆 release，五筆全部 Official、全部 10 軌**：US 1986 **Relativity Records（label-info 有廠牌、catalog-number 為空）**（12\" Vinyl）／DE 1986 **KINGfisher KF 010**（CD）／DE 1999 **Century Media 66001-2 ＋ KINGfisher KF 010**（CD）／DE 2010 Century Media 9962242（CD）／2015-04-10 無國別 **Legacy**（Digital）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cbfbf656-4254-37d2-a4ac-ff0d56044d9a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1986 US 12 吋（Relativity）逐軌與長度：A 面 1〈The Eliminator〉3:12、2〈Existence of Hate〉2:20、3〈Time Will Come〉1:27、4〈Growing Concern〉4:10、5〈Your Mistake〉1:28；B 面 1〈Out for Blood〉2:14、2〈Toxic Shock〉2:27、3〈Bomber Zee〉2:29、4〈Public Assistance〉2:45、5〈Shoot His Load〉1:30。**十軌總長 24 分 02 秒，比 1984 年那張多了將近九分鐘，最長的〈Growing Concern〉4:10 是前作最長曲的兩倍。**〈Your Mistake〉與 1984 年《Victim in Pain》B4 同名，是同一首在兩張碟上各錄一次。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cbfbf656-4254-37d2-a4ac-ff0d56044d9a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**五個 release 的十軌曲序完全一致、無任何一版加曲減曲**；差別只在混音長度的秒數（例：〈Time Will Come〉1986 兩版 1:27、1999 版 1:22、2015 數位 1:24）。**本張沒有軌數混版問題，這在本批 22 張裡是少數。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cbfbf656-4254-37d2-a4ac-ff0d56044d9a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 34 個 release-group，14 張 secondary-types 為空的 Album 依 first-release-date 排序，**本張排第 2**（前面只有 1984《Victim in Pain》），後面緊接 1987《Liberty and Justice For…》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=40b8a690-94e4-4c82-ad0f-73f4b841e46a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體：Relativity Records（2bfb17b6）type「Original Production」、country US、area United States、life-span begin **1985**（本張 1986 年發行時該廠牌成立才一年）。**Combat Core（70b31b4d）在 MB 上是獨立的廠牌實體，但它掛在同藝人 1986 年《Victim in Pain》卡帶那一筆上，本張五個 release 的 label-info 沒有任何一筆出現 Combat Core。**",
+    "src": "https://musicbrainz.org/ws/2/label/2bfb17b6-95da-44f8-9cd2-9cc661083901?fmt=json"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **980766071**《Cause for Alarm》，artistName「Agnostic Front」、releaseDate 1986-01-01、trackCount 10、℗ 1986 Columbia Records，十軌 3:12／2:19／1:24／4:10／1:27／2:14／2:27／2:29／2:45／1:32，**曲序與長度和 2015 數位版逐位置相符（誤差 ±2 秒）**，十軌全部有 previewUrl。**唯一差異是第 6 軌被打成〈Out of Blood〉（實體欄位作〈Out for Blood〉），是上架端的錯字。**",
+    "src": "https://itunes.apple.com/lookup?id=980766071&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十首二十四分鐘，比兩年前那張多了將近九分鐘",
+   "〈Your Mistake〉在兩張碟上各錄過一次"
+  ],
+  "sound": "1986 年的十軌從〈The Eliminator〉3:12 開場，接〈Existence of Hate〉2:20、〈Time Will Come〉1:27、〈Growing Concern〉4:10、〈Your Mistake〉1:28；翻面是〈Out for Blood〉2:14、〈Toxic Shock〉2:27、〈Bomber Zee〉2:29、〈Public Assistance〉2:45、〈Shoot His Load〉1:30。全張 24 分 02 秒，最長的〈Growing Concern〉4:10 已經是兩年前那張最長曲的兩倍長度，十軌裡有六軌超過兩分鐘——同一支團在 1984 年的十一軌只有兩軌做得到。〈Your Mistake〉是 1984 年那張 B 面第四首的同名再錄。五個 release 從 1986 到 2015 一路是同樣的十軌同樣的曲序，沒有任何一版加曲。",
+  "keyTracks": [
+   "The Eliminator",
+   "Growing Concern",
+   "Public Assistance"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986**，其下 1986 年有兩筆（US 12 吋與 DE CD），皆 Official；1999／2010 的德版 CD 與 2015-04-10 的數位版是再發。**裁定 220 的形狀成立**：三筆再發會把年份推到 1999／2010／2015，`year` 仍取 1986。串流側 980766071 的 releaseDate 標 1986-01-01、℗ 1986，**四處對照成立**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處。**(1) `curatorWhy` 寫「1986 年由 Relativity 旗下 Combat Core 系列發行」——**五個 release 的 label-info 沒有任何一筆掛 Combat Core**；US 那筆只寫 Relativity Records 且 catalog-number 為空。Combat Core 在 MB 上確實是獨立廠牌實體，但它出現在同藝人 1986 年《Victim in Pain》**卡帶**那一筆。**行文不得寫「Combat Core 系列」，也不得替 US 首版補任何目錄編號。** (2) `curatorWhy` 寫「Peter Steele（Carnivore、後來的 Type O Negative）掛名寫了兩首」——**release、release-group 與藝人端點都查不到任何詞曲掛名資料**，依裁定 241／250 **不得寫個別成員或客座作者的名字**，也不得寫「兩首」這個數字。｜(3) `curatorRisk` 說「同年另有德版 CD 10 軌」屬實，但要補一句：那是 **KINGfisher KF 010**，1999 年 Century Media 再發時沿用同一個 KF 010 編號並列在 label-info 裡。｜**串流採信 980766071：十軌曲序與長度逐位置比對全中（誤差 ±2 秒），十軌皆有 previewUrl，採信**；但上架端第 6 軌打成〈Out of Blood〉，**`keyTracks` 與行文一律用實體欄位的〈Out for Blood〉**。｜**本張無軌數混版**：五個 release 全部 10 軌，是本批少數不用擔心版本差的一張。"
+ },
+ {
+  "key": "desc2:Agnostic Front|One Voice",
+  "artist": "Agnostic Front",
+  "album": "One Voice",
+  "facts": [
+   {
+    "f": "release-group 4469f58f 的欄位：title「One Voice」、artist-credit「Agnostic Front」、first-release-date **1992**、primary-type Album、secondary-types **空**。轄下 **5 筆 release，全部 12 軌、全部 Official**：**US 1992 Relativity Records 88561-3022-2（CD）**／NL 1992 **Roadrunner Records RO 9222-1（12\" Vinyl）**／NL 1992 **Roadracer Records RO 9222-2（CD）**／US 1999-03-30（**format 為 null、label-info 全空**）／DE 2010 Century Media 9962272（CD，disambiguation「Reissue」）。**三個 1992 年版本分屬三個不同廠牌實體。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4469f58f-a83f-3452-abb2-eb4942df48fd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "NL 1992 的 12 吋（Roadrunner RO 9222-1，卡單所釘的那一支）逐軌與長度：A 面 1〈New Jack〉3:40、2〈One Voice〉3:17、3〈Infiltrate〉1:20、4〈The Tombs〉3:25、5〈Your Fall〉1:49、6〈Over the Edge〉3:56；B 面 1〈Undertow〉3:38、2〈Now & Then〉2:26、3〈Crime Without Sin〉2:42、4〈Retaliate〉3:22、5〈Force Feed〉2:49、6〈Bastard〉3:08。**十二軌總長 35 分 32 秒，只有〈Infiltrate〉1:20 短於兩分鐘，八軌超過三分鐘——與 1984 年那張「十一軌十五分半」正好相反。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4469f58f-a83f-3452-abb2-eb4942df48fd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**五個 release 的十二軌曲序完全一致，沒有任何一版加曲減曲**，差別只在單軌秒數（〈Infiltrate〉US CD 1:21／NL 兩版 1:20）。**本張無軌數混版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4469f58f-a83f-3452-abb2-eb4942df48fd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **34 個 release-group、14 張 secondary-types 為空的 Album**。依 first-release-date 排序，**本張排第 4**（1984、1986、1987 之後），**其後還有十張**：1998-07-14《Something's Gotta Give》、1999-09-21《Riot, Riot, Upstart》、2001-09-25《Dead Yuppies》、2004《Another Voice》、2007-11-09《Warriors》、2011-03-22《My Life My Way》、2015-04-03《The American Dream Died》、2019-11-08《Get Loud!》、2023-05-01《United Blood l.p.》、2025-11-07《Echoes In Eternity》。**本張之後到下一張長篇之間隔了六年（1992 → 1998-07-14），是這份目錄裡最長的一段空白。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=40b8a690-94e4-4c82-ad0f-73f4b841e46a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體：Roadracer Records（ce105941）country **NL**、area Netherlands；Relativity Records（2bfb17b6）country **US**、area United States、begin 1985。**兩者是不同的廠牌實體，本張的荷蘭 CD 掛 Roadracer、美國 CD 掛 Relativity，只有荷蘭的 12 吋掛 Roadrunner。**",
+    "src": "https://musicbrainz.org/ws/2/label/ce105941-dc16-4291-9d18-5fed7edc5e5a?fmt=json"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **980765024**《One Voice》，artistName「Agnostic Front」、releaseDate 1992-01-01、trackCount 12、℗ 1992 Columbia Records，十二軌 3:41／3:15／1:21／3:23／1:48／3:55／3:37／2:25／2:41／3:21／2:49／3:09，**曲序與長度和實體欄位十二軌逐位置相符（誤差 ±2 秒）**，十二軌全部有 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=980765024&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首裡有八首超過三分鐘，八年前那張十一首只有兩首破兩分鐘",
+   "同一年的三個版本分屬三個不同廠牌，只有荷蘭的黑膠掛 Roadrunner"
+  ],
+  "sound": "1992 年荷蘭壓的 12 吋（RO 9222-1）是十二軌、35 分 32 秒。A 面〈New Jack〉3:40 起頭，接同名的〈One Voice〉3:17、〈Infiltrate〉1:20、〈The Tombs〉3:25、〈Your Fall〉1:49、〈Over the Edge〉3:56；B 面是〈Undertow〉3:38、〈Now & Then〉2:26、〈Crime Without Sin〉2:42、〈Retaliate〉3:22、〈Force Feed〉2:49、〈Bastard〉3:08。十二軌只有〈Infiltrate〉短於兩分鐘，八軌超過三分鐘——同一支團 1984 年那張十一軌加起來才十五分半。同年的三個版本（荷蘭黑膠、荷蘭 CD、美國 CD）曲序完全一樣，1999 與 2010 年的再壓也沒有動過任何一軌。",
+  "keyTracks": [
+   "New Jack",
+   "One Voice",
+   "The Tombs"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992**，1992 年有三筆 release（US CD、NL 12 吋、NL CD），皆 Official 且皆 12 軌；1999-03-30 US 那筆與 2010 DE 那筆是再發。**裁定 220 的形狀成立**：1999 與 2010 會把年份推後，`year` 取 1992。串流側 980765024 releaseDate 1992-01-01、℗ 1992，**四處對照成立**。**同名先行單曲：無**（〈One Voice〉是同名曲，不是先行單曲）。",
+  "notes": "**擋下策展層三處，其中兩處是硬錯。**(1) `curatorWhy` 寫「Agnostic Front 解散前的最後一張」——**藝人目錄裡本張之後還有十張 secondary-types 為空的 Album（1998 到 2025）**，這句直接與目錄相牴觸，**不得寫**。可以寫的是：本張之後到下一張長篇隔了六年（1992 → 1998-07-14），是該目錄裡最長的一段空白。(2) `curatorWhy` 寫「1992 年由 Roadrunner 在荷蘭與美國同步發行」——**美國那筆掛的是 Relativity Records（88561-3022-2）、荷蘭的 CD 掛的是 Roadracer Records（RO 9222-2），只有荷蘭的 12 吋掛 Roadrunner（RO 9222-1）**。三個 1992 年版本分屬三個廠牌實體，**「Roadrunner 在兩地同步發行」不成立**。(3) `curatorWhy` 寫「是這支團第一次以歐洲廠牌為主體出片」——同年美國版由美國廠牌發行，這個序數在實體欄位裡站不住，**不得寫**。｜**人名從嚴（裁定 241／250）**：`curatorWhy` 的「Vinnie Stigma 與 Roger Miret 在 Miret 入獄前錄完」在 release／release-group／藝人端點全部查不到，**不得寫個別成員的名字，也不得寫入獄這件事**。｜**本張無軌數混版**：五個 release 全部 12 軌。｜**串流採信 980765024：十二軌曲序與長度逐位置比對全中（誤差 ±2 秒），十二軌皆有 previewUrl，採信。**"
+ },
+ {
+  "key": "desc2:Cro-Mags|The Age of Quarrel",
+  "artist": "Cro-Mags",
+  "album": "The Age of Quarrel",
+  "facts": [
+   {
+    "f": "release-group eb781e95 的欄位：title「The Age of Quarrel」、artist-credit「Cro‐Mags」（**U+2010 連字號**；藝人實體 9ffa627f，type Group、country US、life-span begin **1982**、**disambiguation 空白**）、first-release-date **1986**、primary-type Album、secondary-types **空**。轄下 **6 筆 release，全部 Official**：US 1986 **Profile PCD-1218**（CD、15 軌）／NL 1987 **Roadrunner RR 9613**（12\" Vinyl、15 軌）／JP 1991-02-21 **GWR Records TECP-25641**（CD、15 軌）／US 2008 **Cash Only Records**（CD、**18 軌**）／XW 2021-01-05 **Cro Mag**（Digital、15 軌）／XW 2021-07-17 **Profile BFD-288**（12\" Vinyl、15 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eb781e95-4c6a-3f55-9222-b6514b5795a9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1986 US CD（Profile PCD-1218，卡單所釘的那一支）逐軌與長度：1〈We Gotta Know〉3:24、2〈World Peace〉2:13、3〈Show You No Mercy〉1:58、4〈Malfunction〉3:43、5〈Street Justice〉1:33、6〈Survival of the Streets〉1:06、7〈Seekers of the Truth〉4:02、8〈It's the Limit〉1:43、9〈Hard Times〉1:40、10〈By Myself〉2:35、11〈Don't Tread on Me〉1:20、12〈Face the Facts〉1:41、13〈Do Unto Others〉1:50、14〈Life of My Own〉2:53、15〈Signs of the Times〉2:01。**十五軌總長 33 分 42 秒，最長〈Seekers of the Truth〉4:02、最短〈Survival of the Streets〉1:06。**1987 年荷蘭的 12 吋是同樣十五軌，A 面七軌、B 面八軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eb781e95-4c6a-3f55-9222-b6514b5795a9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版**：2008 年 Cash Only 的 CD 是 18 軌＝十五軌＋末尾三軌 **〈You'd Be the Death of Me (original)〉2:06、〈When Push Comes to Shove (original)〉1:46、〈Hard Times (original)〉1:29**。**這三軌只在 2008 CD 上**，1986／1987／1991／2021 的四筆都是十五軌。2008 版的前十五軌長度也整體比 1986 年短 1–5 秒（例：〈We Gotta Know〉3:20 對 3:24），是另一套母帶。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eb781e95-4c6a-3f55-9222-b6514b5795a9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **21 個 release-group**：Album 8（secondary-types 全空）、EP 3、Single 5、Album+Live 3、Album+Compilation 2、**primary-type=Compilation 0 個**。8 張乾淨長篇依 first-release-date 排序：**1985《Age Of Quarrel》（雙胞胎 RG 16f15abd）、1986 本張、1989《Best Wishes》、1992《We Gotta Know》、1992《Alpha‐Omega》、1993《Near Death Experience》、2000《Revenge》、2020-06-19《In the Beginning》**。**注意：1985 那筆的 primary-type 同樣是 Album、secondary-types 同樣為空，光看型別欄分不出它是 demo／盜版那一支。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9ffa627f-32c2-4cb1-bfad-00cf348abc70&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Profile（e832b688）：type「Original Production」、country US、area United States、life-span begin **1981**、**disambiguation「US hip‐hop label」**。本批另有兩張同廠：Leeway《Born to Expire》（PRO-1257／PCD-1257，1988）與 Murphy's Law 同名首張（PCD-1225，1986）——**三張的目錄編號 PCD-1218／PCD-1225／PCD-1274 落在同一段**。",
+    "src": "https://musicbrainz.org/ws/2/label/e832b688-546b-45e3-83e5-9f8db5dcde1d?fmt=json"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1474115345**《The Age of Quarrel》，artistName「Cro-Mags」（**上架端用 ASCII 連字號**）、releaseDate **1986-09-12**、trackCount 15、℗ **2019** Cro Mag Recordings，十五軌 3:20／2:13／1:55／3:38／1:31／1:02／4:02／1:39／1:37／2:31／1:18／1:40／1:46／2:52／2:06，**與 2021 數位版十五軌逐位置完全相同**，十五軌全部有 previewUrl。末軌上架端作〈Signs of the Time〉（實體欄位作〈Signs of the Times〉）。",
+    "src": "https://itunes.apple.com/lookup?id=1474115345&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十五首三十三分鐘，最短的一首一分零六秒",
+   "發這張的廠牌，在資料庫裡的註記是一家嘻哈廠牌"
+  ],
+  "sound": "1986 年 Profile 的 PCD-1218 是十五軌、33 分 42 秒：〈We Gotta Know〉3:24 開場，接〈World Peace〉2:13、〈Show You No Mercy〉1:58、〈Malfunction〉3:43、〈Street Justice〉1:33、〈Survival of the Streets〉1:06、〈Seekers of the Truth〉4:02，後半是〈It's the Limit〉1:43、〈Hard Times〉1:40、〈By Myself〉2:35、〈Don't Tread on Me〉1:20、〈Face the Facts〉1:41、〈Do Unto Others〉1:50、〈Life of My Own〉2:53、〈Signs of the Times〉2:01。最長的〈Seekers of the Truth〉4:02 與最短的〈Survival of the Streets〉1:06 差了將近四倍。1987 年荷蘭壓的 12 吋把同樣十五軌切成 A 面七軌、B 面八軌；2008 年的 CD 版才在末尾多出三首標著「original」的舊錄音。",
+  "keyTracks": [
+   "We Gotta Know",
+   "Seekers of the Truth",
+   "Signs of the Times"
+  ],
+  "status": "full",
+  "yearVerified": "**原盤 1986、黑膠首版 1987、再發 1991／2008／2021（兩筆）。** release-group first-release-date **1986**，最早的 release 是 1986 US 的 Profile PCD-1218（CD）；**第一張黑膠要到 1987 年荷蘭的 Roadrunner RR 9613**。裁定 220 的形狀在本張成立：2008 Cash Only 與 2021 的兩筆都會把年份蓋掉，`year` 取 1986。串流側 1474115345 的 releaseDate 標 **1986-09-12**（比 MB 的年份精確到日，但 ℗ 寫 2019），**四處對照仍指向 1986**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `curatorWhy` 寫「1986 年由 Profile／Rock Hotel 發行」——**六個 release 的 label-info 沒有任何一筆出現 Rock Hotel**，1986 那筆只掛 Profile（PCD-1218）。**不得寫 Rock Hotel。**（附記：Rock Hotel 這個字串出現在本批 Murphy's Law 那張的串流側 ℗ 行，與本張無關。）(2) `curatorWhy` 寫「John Joseph 與 Harley Flanagan 把 Bad Brains 那條線的速度接到布魯克林的街頭語彙」——**藝人實體 9ffa627f 的 disambiguation 空白、release 與 release-group 都沒有成員資料**，依裁定 241／250 **不得寫個別成員的名字**，也不得寫「布魯克林」這個地緣斷言（藝人 area 只填到 United States）。(3) `curatorWhy` 寫「紐約硬蕊被引用最多的一張」與「後來 Sick of It All、Madball、Biohazard 全從這張出發」——**跨藝人的影響力斷言查不到任何可引來源，不得寫。**｜**軌數混版（裁定 251）**：卡單 label 欄釘 1986 CD **15 軌**，行文引軌數只能引 15；2008 CD 的 18 軌要寫就得說明多出來的是末尾三首標「original」的舊錄音，且那一版是另一套母帶（前十五軌各短 1–5 秒）。｜**雙胞胎 RG 覆核屬實但理由要補**：藝人目錄裡 1985《Age Of Quarrel》的 primary-type 同樣是 Album、secondary-types 同樣為空，**光看型別欄分不出來**——這是裁定 227 的形狀，行文不要寫「1985 那張不是專輯」。｜**字形**：實體欄位的掛名與盤名用 U+2010，**卡片與行文一律 ASCII「Cro-Mags」**（本批第 5 條裁定）。｜**串流採信 1474115345：十五軌曲序與長度逐位置比對全中，十五軌皆有 previewUrl，採信**；末軌上架端作〈Signs of the Time〉，`keyTracks` 用實體欄位的〈Signs of the Times〉。"
+ },
+ {
+  "key": "desc2:Cro-Mags|Best Wishes",
+  "artist": "Cro-Mags",
+  "album": "Best Wishes",
+  "facts": [
+   {
+    "f": "release-group 936e9e22 的欄位：title「Best Wishes」、artist-credit「Cro‐Mags」（U+2010）、first-release-date **1989**、primary-type Album、secondary-types **空**。轄下**只有 2 筆 release，兩筆都是 8 軌、都是 Official**：US 1989 **Profile PCD-1274**（CD）／XW 2021-01-05 **Cro-Mag Recordings**（Digital）。**1989 年的 12 吋黑膠在 MB 上沒有建檔——本張在實體欄位裡只查得到 CD 與數位兩種載體。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=936e9e22-2d9c-3073-96e4-634a9a0fcafc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1989 US CD（Profile PCD-1274）逐軌與長度：1〈Death Camps〉5:22、2〈Days of Confusion〉2:19、3〈The Only One〉4:55、4〈Down, But Not Out〉3:59、5〈Crush the Demoniac〉3:56、6〈Fugitive〉4:40、7〈Then and Now〉3:12、8〈Age of Quarrel〉4:45。**只有八軌，卻長 33 分 08 秒——與同團 1986 年那張十五軌 33 分 42 秒幾乎一樣長。**最短的〈Days of Confusion〉2:19 比前作最長的一軌還長。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=936e9e22-2d9c-3073-96e4-634a9a0fcafc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**第 8 軌叫〈Age of Quarrel〉4:45，與同團 1986 年那張碟同名，但那張碟的十五軌裡沒有一軌叫這個名字**——同名的是盤名不是曲名。兩筆 release 的八軌曲序與長度完全相同（僅第 4 軌標點差異：CD 作〈Down, But Not Out〉、數位版作〈Down But Not Out〉）。**本張無軌數混版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=936e9e22-2d9c-3073-96e4-634a9a0fcafc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 21 個 release-group、8 張 secondary-types 為空的 Album。依 first-release-date 排序：1985《Age Of Quarrel》、1986《The Age of Quarrel》、**1989 本張**、1992《We Gotta Know》、1992《Alpha‐Omega》、1993《Near Death Experience》、2000《Revenge》、2020-06-19《In the Beginning》。**本張排第 3；若把 1985 那筆（demo／盜版那一支）排除才是第 2。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9ffa627f-32c2-4cb1-bfad-00cf348abc70&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1475367892**《Best Wishes》，artistName「Cro-Mags」、releaseDate **1989-04-26**、trackCount 8、℗ 2019 Cro Mag Recordings，八軌 5:22／2:19／4:55／3:59／3:56／4:40／3:12／4:45，**與實體欄位八軌逐位置完全相同（零誤差）**，八軌全部有 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1475367892&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八首就唱掉三十三分鐘，跟三年前那張十五首一樣長",
+   "最後一首叫〈Age of Quarrel〉，而那是上一張碟的名字"
+  ],
+  "sound": "1989 年 Profile 的 PCD-1274 只有八軌，卻長 33 分 08 秒——與同團 1986 年那張十五軌的碟幾乎等長。〈Death Camps〉5:22 開場就是全張最長的一首，接〈Days of Confusion〉2:19、〈The Only One〉4:55、〈Down, But Not Out〉3:59、〈Crush the Demoniac〉3:56、〈Fugitive〉4:40、〈Then and Now〉3:12，末軌〈Age of Quarrel〉4:45 用的是上一張碟的盤名——而那張碟的十五軌裡並沒有同名曲。八軌有六軌超過三分半，最短的一首也有 2:19，比前作最長的一軌還長。2021 年的數位版照八軌原樣復刻，沒有加曲。",
+  "keyTracks": [
+   "Death Camps",
+   "The Only One",
+   "Age of Quarrel"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989**，其下最早（也是唯一的實體載體）是 1989 US 的 Profile PCD-1274（CD、Official）；2021-01-05 的數位版是唯一一筆再發。裁定 220 的形狀在本張只有一個方向：2021 會把年份蓋掉，`year` 取 1989。串流側 1475367892 的 releaseDate 標 **1989-04-26**（比 MB 精確到日，℗ 寫 2019），**四處對照仍指向 1989**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `curatorWhy` 寫「John Joseph 離團後由 Harley Flanagan 與 Parris Mitchell Mayhew 主導」——**藝人實體 disambiguation 空白、release 與 release-group 都沒有成員或製作掛名**，依裁定 241／250 **不得寫個別成員的名字，也不得寫誰離團誰主導**。(2) `curatorWhy` 寫「紐約硬蕊『crossover』這條支線的定型之作」「把池中已有的 Anthrax、Type O Negative 那一段紐約金屬接回硬蕊源頭」——**跨藝人的支線斷言與影響力敘述查不到來源，不得寫。**(3) `curatorRisk` 寫「Cro-Mags 的第二張」——**藝人目錄依 first-release-date 排序本張排第 3**（前面有 1985《Age Of Quarrel》與 1986《The Age of Quarrel》兩筆，且 1985 那筆的型別欄同樣乾淨）。**要寫序數只能寫「1989 年的長篇」或「Profile 時期的第二張」，不得寫「第二張」。**｜**本張無軌數混版**，但要注意反向陷阱：**1989 年的 12 吋黑膠在實體欄位裡查不到**，全張只有 CD 與數位兩種載體，行文不得說「1989 年的黑膠」。｜**可寫的最強對照**：八軌 33 分 08 秒 vs 同團 1986 年十五軌 33 分 42 秒；末軌〈Age of Quarrel〉與前一張盤名同名而前作無同名曲。｜**字形**：掛名一律 ASCII「Cro-Mags」。｜**串流採信 1475367892：八軌長度逐位置零誤差比對全中，八軌皆有 previewUrl，採信。**"
+ },
+ {
+  "key": "desc2:Cro-Mags|Alpha-Omega",
+  "artist": "Cro-Mags",
+  "album": "Alpha-Omega",
+  "facts": [
+   {
+    "f": "release-group e1f032d0 的欄位：title「Alpha‐Omega」（**U+2010**）、artist-credit「Cro‐Mags」（U+2010）、first-release-date **1992**、primary-type Album、secondary-types **空**。轄下 **5 筆 release，全部 Official，軌數三種**：**XE 1992 Century Media 84 9730-2（CD、8 軌）**／**US 1992 Century Media CM 7730-2（CD、9 軌，release disambiguation「bonus track version」）**／**JP 1992 Metal Mania TECX-25292（CD、8 軌）**／US 2016-08-12 **Divebomb Records DIVE118**（CD、10 軌，title「Alpha Omega」，disambiguation「with bonus track and separated hidden track」）／XW 2023-11-27 Century Media（Digital、9 軌，title「Alpha Omega」）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e1f032d0-1568-34bd-bb6a-fe5385a7b31b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "XE 1992（Century Media 84 9730-2，卡單所釘的那一支）逐軌與長度：1〈See the Signs〉4:08、2〈Eyes of Tomorrow〉3:28、3〈The Other Side of Madness (Revenge)〉6:03、4〈Apocalypse Now〉8:09、5〈The Paths of Perfection〉3:06、6〈Victims〉4:41、7〈Kuruksetra〉4:11、8〈Changes / Cro-Mags Jam〉**12:12**。**八軌總長 45 分 58 秒，末軌一首就佔了 12 分 12 秒、超過全張四分之一；〈Apocalypse Now〉8:09 是第二長。**日版（Metal Mania TECX-25292）是同樣八軌同樣長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e1f032d0-1568-34bd-bb6a-fe5385a7b31b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版的差別點只有一軌**：US 1992 的 9 軌版在第 7 位多插一軌 **〈VII〉1:19**，其餘八軌與 XE 版同曲同序。2016 年 Divebomb 的 10 軌版另外把末軌拆成〈Changes〉7:10 與〈Omega Jam〉4:37（合計 11:47），並保留〈VII〉。**8／9／10 三種軌數的差異全部來自〈VII〉這一分十九秒，以及末軌是否拆開。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e1f032d0-1568-34bd-bb6a-fe5385a7b31b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 21 個 release-group、8 張 secondary-types 為空的 Album。**1992 年有兩張同年的乾淨長篇：《We Gotta Know》與本張，兩筆的 first-release-date 都只精確到「1992」，無法判斷孰先孰後。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9ffa627f-32c2-4cb1-bfad-00cf348abc70&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **1045105590**，collectionName「**Alpha Omega**」（無連字號）、artistName「Cro-Mags」、releaseDate 1992-01-01、trackCount **9**、℗ 1992 Century Media Records Ltd.，九軌 4:07／3:29／6:03／8:09／3:06／4:41／**1:19**／4:11／12:12，**與 US 1992 的 9 軌版（CM 7730-2）逐位置完全相符**——第 7 軌上架端作「Untitled Track」1:19，實體欄位作〈VII〉1:19。九軌全部有 previewUrl。**這不是卡單所釘的 XE 8 軌版，是同一個 release-group 底下的 US bonus track 版。**",
+    "src": "https://itunes.apple.com/lookup?id=1045105590&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "最後一首十二分十二秒，一首就吃掉全張四分之一",
+   "八軌、九軌、十軌三種版本，差別只在一首一分十九秒的插曲"
+  ],
+  "sound": "1992 年 Century Media 的 84 9730-2 是八軌、45 分 58 秒。〈See the Signs〉4:08 起頭，接〈Eyes of Tomorrow〉3:28、〈The Other Side of Madness (Revenge)〉6:03、〈Apocalypse Now〉8:09、〈The Paths of Perfection〉3:06、〈Victims〉4:41、〈Kuruksetra〉4:11，最後是〈Changes / Cro-Mags Jam〉12:12——一首就佔掉全張四分之一還多。同年的美國版在第七位多插一首一分十九秒的〈VII〉變成九軌，日版則與歐版同樣八軌。2016 年的再發把末軌拆成〈Changes〉7:10 與〈Omega Jam〉4:37，成了十軌。八首裡有三首超過六分鐘，這是這支團所有碟裡曲子拉得最開的一張。",
+  "keyTracks": [
+   "See the Signs",
+   "Apocalypse Now",
+   "Changes / Cro-Mags Jam"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992**，1992 年有三筆 release（XE／US／JP，皆 Official）；2016-08-12 與 2023-11-27 是再發。**裁定 220 的形狀成立**：兩筆再發會把年份推到 2016／2023，`year` 取 1992。串流側 1045105590 releaseDate 1992-01-01、℗ 1992 Century Media，**四處對照成立**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 寫「2016 年 Century Media 再發把盤名寫成無連字號的『Alpha Omega』」——**2016-08-12 那筆的廠牌是 Divebomb Records（DIVE118），不是 Century Media**；掛 Century Media 的無連字號版本是 2023-11-27 的數位版。**不得寫「2016 年 Century Media 再發」。**(2) `curatorWhy` 寫「這支團第一次離開 Profile、由德國 Century Media 主導國際發行」——**同年還有另一張乾淨長篇《We Gotta Know》，兩筆的日期都只到「1992」，孰先孰後在實體欄位裡判不出來，「第一次」這個序數不得寫**；且日版掛的是 **Metal Mania（TECX-25292）**，不是 Century Media，「Century Media 主導國際發行」也要收斂成「歐版與美版由 Century Media 發行、日版由另一家廠牌發行」。(3) `curatorWhy` 寫「John Joseph 回歸主唱，把《Best Wishes》的金屬化路線與《The Age of Quarrel》的街頭語彙合在一起」——**成員異動與風格綜述都查不到來源，依裁定 241／250 不得寫個別成員的名字。**｜**軌數混版（裁定 251，本張是最細的一例）**：卡單 label 欄釘 XE **8 軌**，行文引軌數只能引 8。8／9／10 三種軌數的全部差異就是〈VII〉1:19 這一軌與末軌是否拆開，**行文若要提「三版曲數不同」必須把這一點寫清楚，不能含混說成「加了曲目」。**｜**串流採信 1045105590：九軌長度逐位置比對全中（第 7 軌上架端作「Untitled Track」1:19＝實體欄位的〈VII〉），九軌皆有 previewUrl，採信**——但**必須註明採信的是 9 軌的美版，不是卡單所釘的 8 軌歐版**。｜**字形**：掛名與盤名一律 ASCII「Cro-Mags」「Alpha-Omega」。"
+ },
+ {
+  "key": "desc2:Sick of It All|Blood, Sweat, and No Tears",
+  "artist": "Sick of It All",
+  "album": "Blood, Sweat, and No Tears",
+  "facts": [
+   {
+    "f": "release-group 2982b044 的欄位：title「Blood, Sweat, and No Tears」、artist-credit「Sick of It All」（藝人實體 e204ed91，type Group、country US、life-span begin **1986**、**disambiguation 空白**）、first-release-date **1989-05**、primary-type Album、secondary-types **空**。轄下 **4 筆 release**：**US 1989-05 In-Effect 88561-3005-1（12\" Vinyl、17 軌、Official）**／US 1989-05 In-Effect **88561-3005-2**（CD、**19 軌**、Official）／DE 1999 Century Media 66007-2（CD、19 軌、**status=Promotion，不是 Official**）／RU 2004 Фоно FO356CD（CD、19 軌、Official）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2982b044-7e29-383c-964e-b8d112f738c4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "12 吋（88561-3005-1，卡單所釘的那一支）逐軌與長度：A 面 1〈The Blood & The Sweat〉1:50、2〈Clobberin' Time / Pay the Price〉1:37、3〈Give Respect〉1:08、4〈Breeders of Hate〉1:12、5〈Pushed Too Far〉0:56、6〈Friends Like You〉1:07、7〈B.S. Justice〉1:30、8〈Rat Pack〉0:44；B 面 1〈G.I. Joe Headstomp〉1:19、2〈Alone〉1:58、3〈My Life〉0:42、4〈World Full of Hate〉2:05、5〈My Revenge〉1:12、6〈No Labels〉0:59、7〈Disillusion〉2:05、8〈The Deal〉1:08、9〈Injustice System!〉2:07。**十七軌總長 21 分 39 秒，十七軌裡有十四軌短於一分半，最短的〈My Life〉0:42。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2982b044-7e29-383c-964e-b8d112f738c4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**軌數混版（本張的關鍵）**：同月的 CD 版 19 軌＝十七軌**在第 9、10 位插入兩軌**〈Pete's Sake〉0:58 與〈Stick Together〉0:55，其餘曲序不變。**只多兩軌，不是整張併入別的碟。**另查同藝人 1987 年那張 7 吋（release-group 6f214e60，US 1987 Revelation Records **REV 003**、Vinyl **8 軌**）：其八軌為〈It's Clobberin' Time / Just Lies〉〈Pete's Sake〉〈Friends Like You〉〈Bullshit Justice〉〈Pay the Price〉〈Pushed Too Far / Give Respect〉〈The Deal〉〈N.S./My Revenge〉——**八軌裡只有〈Pete's Sake〉是 CD 版新增的那兩軌之一，〈Stick Together〉不在該 7 吋上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6f214e60-b1d8-3e79-8297-ed7ea762f10a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **27 個 release-group**：Album 12（secondary-types 全空）、EP 4、Single 5、Album+Live 4、Album+Compilation 1、Other+Demo 1，**primary-type=Compilation 0 個**。12 張乾淨長篇依 first-release-date 排序：**1989-05 本張、1992-10-06《Just Look Around》、1994-10-18《Scratch the Surface》、1997-02-11《Built to Last》**…到 2018-11-02《Wake the Sleeping Dragon!》。**本張排第 1。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e204ed91-3684-4561-b29b-d0b53f8459a7&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 In-Effect（2a7d9419）：type「Original Production」、**country 與 area 皆未填**、**life-span 1988～1991**——這家廠牌在實體欄位上只存在三年。本批另一張同廠：Killing Time《Brightside》（**88561-3008-1**，1989-11），**與本張的 88561-3005-1 只差三號**。",
+    "src": "https://musicbrainz.org/ws/2/label/2a7d9419-ad51-4187-b278-8bfa695fd227?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，兩筆都是本張的 CD 版**：collectionId **278093099**《Blood, Sweat and No Tears》，releaseDate 1989-07-12、trackCount 19、℗ 2008 In Effect / Relativity，十九軌長度 1:50／1:49／1:12／1:55／0:58／1:09／1:32／0:47／0:58／0:55／1:19／2:14／0:45／2:05／1:22／1:01／2:05／1:10／2:21，**與 CD 版十九軌逐位置零誤差相符**。collectionId **980766970**《Blood, Sweat & No Tears》，同日期、同 19 軌、℗ 1989 Columbia Records，長度誤差 ±2 秒。**兩筆是同一張碟的兩個上架條目，取誤差為零的 278093099。**",
+    "src": "https://itunes.apple.com/lookup?id=278093099&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十七首唱完只有二十一分半，十四首不到一分半",
+   "同月的 CD 版只比黑膠多兩首，其中一首來自兩年前的七吋"
+  ],
+  "sound": "1989 年 5 月 In-Effect 的 88561-3005-1 是一張 12 吋、十七軌、21 分 39 秒。A 面八首從〈The Blood & The Sweat〉1:50 起，接〈Clobberin' Time / Pay the Price〉1:37、〈Give Respect〉1:08、〈Breeders of Hate〉1:12、〈Pushed Too Far〉0:56、〈Friends Like You〉1:07、〈B.S. Justice〉1:30、〈Rat Pack〉0:44；B 面九首以〈G.I. Joe Headstomp〉1:19 開始，收在〈Injustice System!〉2:07。十七軌裡有十四軌短於一分半，最短的〈My Life〉0:42，最長的〈Injustice System!〉也只有 2:07。同月的 CD 版在第九、十位插進〈Pete's Sake〉0:58 與〈Stick Together〉0:55 成為十九軌，其餘曲序一動未動。",
+  "keyTracks": [
+   "The Blood & The Sweat",
+   "Rat Pack",
+   "Injustice System!"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989-05**，1989 年 5 月有兩筆 release（12 吋與 CD，皆 In-Effect、皆 Official）；1999 德版是 **Promotion**、2004 俄版是再發。**裁定 220 的形狀成立**：兩筆再發會把年份推後，`year` 取 1989。串流側 278093099 的 releaseDate 標 **1989-07-12**（比 MB 的 1989-05 晚兩個月，℗ 寫 2008），**年份仍一致，四處對照成立**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 與 `curatorWhy` 都說「Apple：us／gb／de 三店 album 搜尋皆 MISS」「試聽要靠 YouTube 官方 Album playlist 人工核對」——**實測不成立**，回撈候選有兩筆都是本張的完整上架版本。**串流採信 278093099：十九軌長度逐位置零誤差比對全中，十九軌皆有 previewUrl，採信**；另一筆 980766970 是同一張碟的第二個上架條目（同 19 軌、誤差 ±2 秒），**不另採信、也不視為別張碟**。(2) `curatorRisk` 寫「CD 版把 1987 年的 7 吋併進去，這正是硬蕊線常見的形狀」——**實測不成立**：CD 版只比 12 吋多**兩軌**（〈Pete's Sake〉〈Stick Together〉），而 1987 年那張 7 吋（REV 003）有**八軌**，其中只有〈Pete's Sake〉出現在新增的兩軌裡，〈Stick Together〉根本不在該 7 吋上。**行文不得寫「CD 版把七吋併進去」，只能寫「CD 版多了兩首」。**(3) `curatorWhy` 寫「Koller 兄弟把 Cro-Mags 的速度縮短成三十秒一首的形態，成為 1990 年代紐約硬蕊的標準句法」——**成員姓氏、跨藝人的影響斷言都查不到來源（藝人實體 disambiguation 亦空白），依裁定 241／250 不得寫個別成員的名字**；「三十秒一首」也與實測不符（最短 0:42、十七軌總長 21 分 39 秒）。｜(4) `curatorWhy` 寫「In-Effect（Relativity 旗下專做紐約硬蕊的子廠）」——**廠牌實體只填了 type 與 life-span 1988～1991，country／area 皆空，沒有任何欄位說它隸屬誰或專做什麼**。可以寫的是：**這家廠牌在實體欄位上只存在 1988 到 1991 三年**，以及**同廠 88561-3005 與 88561-3008 兩個相鄰編號分別是本張與本批 Killing Time 那張**。｜**軌數混版（裁定 251）**：卡單 label 欄釘 12 吋 **17 軌**，行文引軌數只能引 17。"
+ },
+ {
+  "key": "desc2:Sick of It All|Just Look Around",
+  "artist": "Sick of It All",
+  "album": "Just Look Around",
+  "facts": [
+   {
+    "f": "release-group 92293bbc 的欄位：title「Just Look Around」、artist-credit「Sick of It All」、first-release-date **1992-10-06**、primary-type Album、secondary-types **空**。轄下 **6 筆 release，全部 13 軌、全部 Official**：US 1992 **Relativity Records 88561-3017-2**（CD）／DE 1992 **KINGfisher KF 017**（CD）／**US 1992-10-06 Relativity Records RR 9191 2（CD）**／XE 1999 Century Media 9962232（CD）／BE 1999-06-21（**format 為 null、label-info 全空**）／RU 2004 Фоно FO355CD（CD）。**同一年的美國版有兩個不同目錄編號的 CD（88561-3017-2 與 RR 9191 2）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92293bbc-3b34-3f11-bb17-6695cd7c36b4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1992-10-06（Relativity RR 9191 2，卡單所釘的那一支）逐軌與長度：1〈We Want the Truth〉2:55、2〈Locomotive〉2:13、3〈The Pain Strikes〉3:06、4〈Shut Me Out〉2:12、5〈What's Goin' On〉2:11、6〈Never Measure Up〉1:38、7〈Just Look Around〉2:42、8〈Violent Generation〉1:32、9〈The Shield〉2:38、10〈Now It's Gone〉2:11、11〈We Stand Alone〉2:45、12〈Will We Survive〉1:32、13〈Indust.〉2:03。**十三軌總長 29 分 38 秒，十三軌裡有九軌超過兩分鐘——同團三年前那張十七軌只有三軌做得到。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92293bbc-3b34-3f11-bb17-6695cd7c36b4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**六個 release 的十三軌曲序與曲名完全一致，沒有任何一版加曲減曲**，差別只在末軌〈Indust.〉的 2:03／2:04 一秒差。**本張無軌數混版**，是本批 22 張裡少數版本完全乾淨的一張。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92293bbc-3b34-3f11-bb17-6695cd7c36b4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 27 個 release-group、12 張 secondary-types 為空的 Album。依 first-release-date 排序，**本張排第 2**（前面只有 1989-05《Blood, Sweat, and No Tears》），後面是 1994-10-18《Scratch the Surface》。**本張與前作相隔三年五個月。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e204ed91-3684-4561-b29b-d0b53f8459a7&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側逐軌覆核：collectionId **980766457**《Just Look Around》，artistName「Sick Of It All」、releaseDate **1992-10-06**（**與 release-group 的 first-release-date 同日**）、trackCount 13、℗ 1992 Columbia Records，十三軌 2:56／2:12／3:06／2:13／2:11／1:36／2:41／1:32／2:37／2:10／2:45／1:32／2:04，**與實體欄位十三軌逐位置相符（誤差 ±2 秒）**，十三軌全部有 previewUrl。第 5 軌上架端作〈What's Going On〉、末軌作〈Indust〉（無句點）。",
+    "src": "https://itunes.apple.com/lookup?id=980766457&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十三首有九首破兩分鐘，三年前那張十七首只有三首做得到",
+   "同一年的美國版有兩個目錄編號，曲目一軌不差"
+  ],
+  "sound": "1992 年 10 月 6 日 Relativity 的 RR 9191 2 是十三軌、29 分 38 秒。〈We Want the Truth〉2:55 開場，〈Locomotive〉2:13 緊接，然後是〈The Pain Strikes〉3:06、〈Shut Me Out〉2:12、〈What's Goin' On〉2:11、〈Never Measure Up〉1:38、同名的〈Just Look Around〉2:42、〈Violent Generation〉1:32、〈The Shield〉2:38、〈Now It's Gone〉2:11、〈We Stand Alone〉2:45、〈Will We Survive〉1:32，收在〈Indust.〉2:03。十三軌有九軌超過兩分鐘、最長的〈The Pain Strikes〉3:06——同一支團三年前那張十七軌裡只有三軌破得了兩分鐘。六個版本從 1992 到 2004 一路是同樣十三軌、同樣曲序。",
+  "keyTracks": [
+   "We Want the Truth",
+   "Locomotive",
+   "The Shield"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992-10-06**，1992 年有三筆 release（US 兩筆、DE 一筆，皆 Official、皆 13 軌）；1999 的 XE 與 BE 兩筆、2004 的 RU 一筆是再發。**裁定 220 的形狀成立**：三筆再發會把年份推到 1999／2004，`year` 取 1992。串流側 980766457 的 releaseDate **與 release-group 的 first-release-date 同為 1992-10-06**、℗ 1992，**四處對照成立且日期精確到同一天**。**同名先行單曲：無**（〈Just Look Around〉是同名曲）。",
+  "notes": "**擋下策展層兩處。**(1) `curatorWhy` 寫「紐約硬蕊在 1990 年代初被主流搖滾媒體點名的起點」與「〈Locomotive〉與〈We Want the Truth〉的錄音方式成為後續 Madball、Biohazard 那一批的參照」——**媒體評價與跨藝人影響力都查不到任何可引來源，不得寫。**(2) `curatorWhy` 寫「從地下子廠走上 Relativity 本體的那一張」——**同年美國有兩筆 Relativity 的 CD（88561-3017-2 與 RR 9191 2），德版則掛 KINGfisher KF 017**；「走上本體」是敘事不是欄位事實。可以寫的序數是：**本張是該藝人目錄裡第 2 張乾淨長篇，與前作相隔三年五個月。**｜(3) `curatorRisk` 寫「六個 release 曲數相同但廠牌不同」屬實，可補：**1999-06-21 的比利時那筆 format 為 null、label-info 全空**，不宜當版本依據。｜**本張無軌數混版**：六個 release 全部 13 軌，行文可安心引 13。｜**串流採信 980766457：十三軌曲序與長度逐位置比對全中（誤差 ±2 秒），十三軌皆有 previewUrl，且上架日期與 first-release-date 同為 1992-10-06，採信**；第 5 軌與末軌上架端的字形（〈What's Going On〉／〈Indust〉）與實體欄位不同，**`keyTracks` 與行文一律用實體欄位的〈What's Goin' On〉〈Indust.〉**。｜**人名從嚴**：藝人實體 disambiguation 空白，**不得寫個別成員的名字**。"
+ },
+ {
+  "key": "desc2:Warzone|Don't Forget the Struggle, Don't Forget the Streets",
+  "artist": "Warzone",
+  "album": "Don't Forget the Struggle, Don't Forget the Streets",
+  "facts": [
+   {
+    "f": "release-group 3017d7bf 的欄位：title「Don’t Forget the Struggle, Don’t Forget the Streets」（**彎引號 U+2019**）、artist-credit「Warzone」（藝人實體 496da466，type Group、country US、**life-span 1983～1997**、disambiguation「American hardcore punk band from NYC」）、first-release-date **1987-01-01**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 12 軌、全部 Official**：**US 1987 Fist Records 001（12\" Vinyl）**／XW 1987-01-01 **Revelation Records**（Digital，title 無逗號作「Don't Forget the Struggle Don't Forget the Streets」）／US 1988 **Caroline Records 1352 ＋ Fist Records（無編號）**（12\" Vinyl）。**`first-release-date` 的 1987-01-01 掛在那筆數位版上，實體首版只標到「1987」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3017d7bf-9cd0-3ec1-8f18-5f36d299c70e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "US 1987 的 12 吋（Fist Records **001**，卡單所釘的那一支）逐軌與長度：A 面 1〈Intro Bust〉2:11、2〈It's Your Choice〉1:50、3〈Crazy but Not Insane〉2:14、4〈Fuck Your Attitude〉1:27、5〈As One〉1:49、6〈We're the Crew〉2:02；B 面 1〈Don't Forget the Struggle, Don't Forget the Streets〉2:35、2〈In the Mirror〉2:42、3〈Skinhead Youth〉1:23、4〈Growing-Up, the Next Step〉2:52、5〈Judgement Day〉1:24、6〈Fighting for Our Country〉3:03。**十二軌總長 25 分 32 秒，十二軌沒有一軌短於 1:23、也沒有一軌長過 3:03——是本批曲長分布最平均的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3017d7bf-9cd0-3ec1-8f18-5f36d299c70e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**三個 release 的十二軌曲序完全一致、無加曲減曲**（僅秒數差 1 秒與標點字形不同）。**本張無軌數混版**，但有另一種版本差：**1988 年的美國再壓在 label-info 上同時掛 Caroline Records 1352 與 Fist Records**。本批另兩張 Caroline 的碟編號分別是 CAROL 1361（Warzone《Open Your Eyes》1988）與 CAR 01381／CAROL 1381（Underdog《Vanishing Point》1989），**再加上本張再壓的 1352，四個相鄰編號實查成立**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3017d7bf-9cd0-3ec1-8f18-5f36d299c70e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **14 個 release-group**：Album 7（secondary-types 全空）、EP 3、EP+Live 1、Album+Compilation 2、Album+Compilation/Live 1，**primary-type=Compilation 0 個**。7 張乾淨長篇依 first-release-date 排序：**1987-01-01 本張、1988《Open Your Eyes》、1989《Warzone》、1994《Old School to New School》、1996-10-08《The Sound of Revolution》、1997-10-21《Fight for Justice》，另一筆《Tommy Rat Demo》無日期。本張排第 1。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=496da466-68e9-4cbb-9e86-cbb57eda861a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Fist Records（c343bd0c）：**type、country、area、life-span、disambiguation 全部為空**——除了目錄編號 001 之外，這家廠牌在實體欄位上查不到任何資料。相對地 Caroline Records（a14fd98c）填了 country US、area United States，disambiguation 寫「1973–76 Virgin subsidiary, UK; 1986– pseudo-indie label, US/worldwide」。",
+    "src": "https://musicbrainz.org/ws/2/label/c343bd0c-b8c5-4fe9-82d7-31129ecd5f3f?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，採信**：collectionId **1152622035**《Don't Forget the Struggle Don't Forget the Streets》，artistName「Warzone」、releaseDate 1987-01-01、trackCount 12、℗ 2016 Revelation Records，十二軌 2:11／1:50／2:14／1:27／1:50／2:03／2:35／2:42／1:24／2:53／1:25／3:04，**與 XW 數位版十二軌逐位置零誤差相符**（與 1987 黑膠僅差 1 秒），十二軌全部有 previewUrl。第 4 軌上架端作〈F**k Your Attitude〉。",
+    "src": "https://itunes.apple.com/lookup?id=1152622035&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首沒有一首短於一分二十三秒、也沒有一首長過三分零三秒",
+   "發這張的廠牌用的是編號 001，而那家廠牌在資料庫裡只剩下這個編號"
+  ],
+  "sound": "1987 年 Fist Records 用編號 001 壓的這張 12 吋是十二軌、25 分 32 秒。A 面從〈Intro Bust〉2:11 起，接〈It's Your Choice〉1:50、〈Crazy but Not Insane〉2:14、〈Fuck Your Attitude〉1:27、〈As One〉1:49、〈We're the Crew〉2:02；B 面以同名的〈Don't Forget the Struggle, Don't Forget the Streets〉2:35 開頭，再走〈In the Mirror〉2:42、〈Skinhead Youth〉1:23、〈Growing-Up, the Next Step〉2:52、〈Judgement Day〉1:24，收在〈Fighting for Our Country〉3:03。十二軌沒有一首短於一分二十三秒，也沒有一首長過三分零三秒——整張的曲長被壓在一個很窄的區間裡。1988 年的美國再壓曲目一軌未動，只是封底多掛了另一家廠牌的編號。",
+  "keyTracks": [
+   "Intro Bust",
+   "Don't Forget the Struggle, Don't Forget the Streets",
+   "Fighting for Our Country"
+  ],
+  "status": "full",
+  "yearVerified": "**原盤 1987、再壓 1988，無其他再發。** release-group first-release-date **1987-01-01**，但**這個日期掛在 XW 的數位版那一筆**（裁定 220 在本批的第二種形狀）；實體首版是 US 1987 的 Fist Records 001（12 吋），日期只標到「1987」。1988 年的美國再壓會把年份推到 1988，`year` 取 1987。串流側 1152622035 的 releaseDate 標 1987-01-01（與數位版同日，℗ 寫 2016），**四處對照成立**。**同名先行單曲：無**（同名曲在 B 面第一首）。",
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 寫「Apple：us／gb／de 三店 album 搜尋皆 MISS」——**實測不成立**。**串流採信 1152622035：十二軌曲序與長度逐位置比對全中（與數位版零誤差、與 1987 黑膠差 1 秒），十二軌皆有 previewUrl，採信。** (2) `curatorWhy` 寫「Raymond「Raybeez」Barbieri 帶著 Fist Records 的創廠編號 001 在 1987 年自壓出片，是紐約硬蕊『自營廠牌自己出自己的碟』這個模式最早的完整案例之一」——**Fist Records 的實體欄位 type／country／area／life-span／disambiguation 全空**，沒有任何欄位能證明它是誰開的、與樂團什麼關係。依裁定 241／250 **不得寫成員或創辦人的本名，也不得寫「自壓」「自營廠牌」**。**可以寫的只有：這張的目錄編號是 001，而該廠牌在實體欄位上除了這個編號別無資料。** (3) `curatorWhy` 寫「是紐約硬蕊……最早的完整案例之一」——極值敘述，**不得寫**；可寫的序數是**該藝人目錄 14 個 release-group、7 張乾淨長篇裡本張排第 1**。｜**本張無軌數混版**（三版皆 12 軌），但要交代另一種版本差：**1988 年的再壓同時掛 Caroline Records 1352 與 Fist Records**。｜**Caroline 編號帶實查成立**：1352（本張 1988 再壓）／1361（Warzone《Open Your Eyes》1988）／1381（Underdog《Vanishing Point》1989），**另加同廠 CAROL 1351（1988，本批 b 組那張）**——四個相鄰編號都已逐筆回問。｜**字形**：實體欄位盤名用彎引號，**卡片與行文一律 ASCII 直引號**（本批第 5 條裁定）。"
+ }
+]
