@@ -20,7 +20,7 @@ for(const it of list){
         rec[s]=m.length?m.slice(0,2).map(x=>`${x.collectionId}｜${x.artistName}｜${x.collectionName}`):(j.resultCount+'筆無對得上');
       } else rec[s]='HTTP '+r.status;
     }catch(e){rec[s]='timeout';}
-    await sleep(700);
+    await sleep(2500);
   }
   out[it.key]=rec;
   fs.writeFileSync(OUT,JSON.stringify(out,null,1));
