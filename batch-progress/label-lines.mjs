@@ -93,6 +93,8 @@ export const LINES = {
   c119: { lineType: '深掘', scene: { a: '台語獨立：創作者與本土語言', b: '台語獨立：樂團與廠牌' } },
   c120: { lineType: '深掘', scene: { a: '紐約硬蕊', b: 'youth crew／straight edge：Revelation 系' } },
   c121: { lineType: '深掘', scene: { a: '日本フリージャズ與即興演奏', b: '日本地下即興：PSF 前史' } },
+  // c-122（店主 2026-09-08 核定為 hardcore 開 §5.5 白名單後成立）
+  c122: { lineType: '深掘', scene: { a: '紐約硬蕊 7 吋與 demo', b: 'youth crew／straight edge 7 吋' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。

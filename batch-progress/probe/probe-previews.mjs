@@ -134,7 +134,7 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   c103: JPN, c104: KOR, c105: KOR, c106: TWN, c107: CHN, c108: LATAM, c109: FRA, c110: DEIT,
   c111: NEW, c112: NEW, c113: JPN, c114: USB, c115: UKB, c116: JPN, c117: UKB, c118: USB,
   // c-119～c-121（2026-09-07）：台語獨立走 TWN、紐約硬蕊走 USB、日本地下即興走 JPN。
-  c119: TWN, c120: USB, c121: JPN };
+  c119: TWN, c120: USB, c121: JPN, c122: USB };
 
 const cards = [];
 for (const b of BATCHES)

@@ -17,7 +17,9 @@ const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual', 'apple-ve
 // 曲風 release type 例外（白名單制）：非 Album 只開放給有 12 吋／mix 文化的曲風，見 ALBUM_ONBOARDING.md
 const EXCEPTION_RELEASE_TYPES = new Set(['EP', 'Single', 'DJ-mix']);
 // asia-mini-album（2026-08-23）：日本ミニアルバム與韓國正規 EP，MB 標 EP 但母國市場當專輯發行
-const EXCEPTION_GENRES = new Set(['electronic', 'asia-mini-album']);
+// 2026-09-08 店主核定增列 hardcore-7inch：1980–90 年代 hardcore／punk 的 7 吋、split 與 demo。
+// c-120 實測不開的代價是 99 個 release-group、33 支團收不進來，其中 9 支團全滅。
+const EXCEPTION_GENRES = new Set(['electronic', 'hardcore-7inch', 'asia-mini-album']);
 // 外部識別硬規則（2026-07-24 起新開批次適用）：新卡一律記 release-group MBID，
 // 讓「當初指的是哪張碟」不再單點依賴 Apple collectionId。生效日之前的批次不回溯檢查。
 const MBID_RULE_EFFECTIVE = '2026-07-24';
