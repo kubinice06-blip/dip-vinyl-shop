@@ -701,7 +701,7 @@
     "src": "https://musicbrainz.org/ws/2/release/6cd90bfd-f07a-4e21-96d4-9e06c713df76?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
    },
    {
-    "f": "串流側三種查法都跑了。**採信 collectionId 295995656**《Alenar》10 軌、℗ 1977 BMG Music Spain、頁面年份標 1977：**十軌與 1977 原盤同名同序、長度逐軌只差 1 到 3 秒**（4:56／1:45／2:42／1:26／4:55／2:23／2:01／1:39／2:24／5:10）。⚠ **上架版本有兩處字形差異**：A3 的〈Eivissa〉被寫成「**Elvissa**」（i 誤成 l）、A5 的〈Es fa llarg esperar〉被寫成「Es fa llarg, es fa llarg esperar」。**藝人目錄 lookup（店端）另有《Cancons de Festa》（℗ 1976）、《Saba de Terrer》（℗ 1979）、《Quico》（℗ 1979）、《Jardi tancat》（℗ 1981）、《L'aguila negra》（℗ 1971）等十餘筆，逐筆核對後皆非本張，全部駁回**；另有三個俄語系的同名近名藝人目錄（Алёна Апина 等），**與本人無關**。",
+    "f": "串流側三種查法都跑了。**採信 collectionId 295995656**《Alenar》10 軌、℗ 1977 BMG Music Spain、頁面年份標 1977：**十軌與 1977 原盤同名同序、長度逐軌只差 1 到 3 秒**（4:56／1:45／2:42／1:26／4:55／2:23／2:01／1:39／2:24／5:10）。⚠ **上架版本有兩處字形差異**：A3 的〈Eivissa〉被寫成「**Elvissa**」（i 誤成 l）、A5 的〈Es fa llarg esperar〉被寫成「Es fa llarg, es fa llarg esperar」。**藝人目錄 lookup（店端）另有《Cancons de Festa》（℗ 1976）、《Saba de Terrer》（℗ 1979）、《Quico》（℗ 1979）、《Jardi tancat》（℗ 1981）、《L'aguila negra》（℗ 1971）等十餘筆，逐筆核對後皆非本張，全部駁回**；另有三個俄語系的同名近名藝人目錄，**與本人無關**。",
     "src": "https://itunes.apple.com/lookup?id=295995656&country=es&entity=song&limit=200"
    }
   ],
@@ -718,5 +718,285 @@
   "status": "full",
   "yearVerified": "一致，1977（**發行年**）。release-group 的 first-release-date 記 1977，其下最早的 release 就是 1977 年的西班牙 Ariola 25.125-I（Official、10 軌黑膠），另一筆是 2003 年 Ariola 與 BMG Spain 合掛的 CD。**復刻年 2003 不得寫進 year 欄（裁定 220）。****錄音年：資料庫端未登錄**——十軌零 recording-level relationship、annotation 空白，**1977 只能當發行年寫**。串流側 295995656 的 ℗ 記 1977 BMG，**與發行年一致，但那是現行權利人的 ℗ 標示、不是獨立的原盤年佐證**。",
   "notes": "**擋下策展層四處，其中一處是序數。**｜（一）**⚠ 序數不成立**：`curatorWhy` 寫「本張是她**第一張有專屬盤名的作品**」。**藝人目錄裡 1975 年的《A l'Olympia》與 1976 年的《Cançons de festa》都有專屬盤名、都排在本張之前**——**這句不得寫**。可以替代的說法有兩條、都站得住：「**這是她第四張錄音室專輯**」、「**1969、1971、1974 三張都叫同一個名字，1976 年起才開始有專屬盤名**」。｜（二）**編制與樂手**：`curatorWhy` 寫「編制交給 **Manel Camp 與 Fusioon 一系的樂手**」。**十軌零 recording-level relationship、沒有任何樂手或編曲掛名**，**人名與樂團名都不得寫**。｜（三）**取材地區**：`curatorWhy` 寫「把地中海的傳統曲調（**馬約卡、希臘、北非**）…放在同一張碟上」。**端上沒有任何文本或曲調來源的登錄**，**三個地名都不得寫**；⚠ **唯一有依據的地名是曲名本身——A3 就叫〈Eivissa〉**，那是曲目表寫出來的。｜（四）**出身與團體**：`curatorWhy` 寫「**馬約卡出身**」「是 **Els Setze Jutges** 的成員」。**藝人實體的 begin-area 是空的、area 只記到 Spain，也沒有任何團體關係登錄**，**兩項都不得寫**；可以寫的只有 life-span 的 1947-04-27。｜**查證屬實、可以直接寫的**：`label`「Ariola（ES，catno 25.125-I）」正確；兩筆發行都是十軌、同曲序；**1969／1971／1974 三張自我同名專輯確實存在**（撞卡風險屬實）。｜**軌數（裁定 174）**：兩筆發行都是 10 軌，**不需要指明版本**；**逐軌長度原盤欄位有登錄，時間可以寫。**｜**⚠ 曲名字形**：上架版本把〈Eivissa〉寫成「Elvissa」、把〈Es fa llarg esperar〉寫成重複句式。**行文引曲名一律照原盤欄位的寫法，也不得譯成西班牙語。**｜**串流採信 295995656：10 軌與原盤同名同序、長度只差 1 到 3 秒、℗ 1977。有固定試聽來源。** 駁回同目錄下十餘筆別碟與三個俄語系同名近名藝人的目錄。｜⚠ **政治敘述邊界**：可寫佛朗哥時期加泰隆尼亞語出版受限這一可查證的史實與這張碟十首全部以該語言出版的事實，**不得寫對該體制的價值判斷**，也不得由曲名（〈Nosaltres les dones〉〈Què volen aquesta gent?〉）推論歌詞內容或立場。"
+ },
+ {
+  "key": "desc2:Kaka de Luxe|Las canciones malditas",
+  "artist": "Kaka de Luxe",
+  "album": "Las canciones malditas",
+  "facts": [
+   {
+    "f": "release-group ecadd328 的欄位：title「Las canciones malditas」、artist-credit「Kaka de Luxe」（藝人實體 8dfa0f49，Group／country **ES**、area 記 Spain、**begin-area 記 Madrid**，disambiguation 空，**life-span 1977 起、1978 結束**）、first-release-date **1983**、primary-type Album、**secondary-types 空**。⚠ **裁定 227 的反向覆核在這一張特別重要**：**藝人的 life-span 在 1978 年就結束，這張碟卻記 1983 年首次發行——`secondary-types` 為空並不代表 1983 是錄音年。** 轄下 **4 個 release，四筆全部是西班牙盤**：**1983 ES El Fantasma del Paraíso FAN LP-1**（12 吋黑膠、**11 軌**）、**1983 ES El Fantasma del Paraíso FAN-MC-1（卡帶、11 軌）**、1994 ES Chapa Discos 50610001（CD、11 軌）、**1997 ES BMG Music Spain 74321 50413 2（CD、只有 9 軌）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ecadd328-4f5a-3efd-bc56-0b1848fa1ef2?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1983 年黑膠（El Fantasma del Paraíso FAN LP-1）逐軌與長度：A1〈La tentación〉4:18、A2〈Rosario / Toca el pito〉4:16、**A3〈Pero me aburro〉1:27**、A4〈Pero qué público más tonto tengo〉3:57、A5〈Viva el metro〉2:43；**B1〈La pluma eléctrica〉1:39**、B2〈Pondré mil voltios en tu lengua〉2:55、B3〈La alegría de vivir〉3:09、**B4〈Borracho no se puede conducir por la ciudad (peligrosos sociales)〉1:37**、**B5〈¿Y por qué no?〉1:44**、B6〈Música para embrollar (huye de mí)〉2:48。**十一軌裡有四首不到一分四十五秒，而 A 面前兩首都超過四分鐘**——**長曲全部集中在 A 面開頭，B 面幾乎都是短曲**。⚠ **1997 年那張 CD 只有 9 軌，少掉的正是 B3〈La alegría de vivir〉與 B5〈¿Y por qué no?〉，而且 B4 的括號副題也被拿掉了。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ecadd328-4f5a-3efd-bc56-0b1848fa1ef2&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 3 個 release-group**：**1978《Kaka de Luxe》（EP）**、1982《Kaka de Luxe / Paraíso》（Album/Compilation，artist-credit 是兩團合掛）、**1983《Las canciones malditas》（純 Album，本張）**。**這個掛名在資料庫端只有一張 EP、一張分軌合輯與本張——本張是名下唯一一筆 `secondary-types` 為空的專輯，也是最後一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8dfa0f49-a1e3-4d67-99aa-3f75b68d64e1&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1983 年黑膠的十一軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**錄音年、團員名單與「這批錄音來自哪一年」在資料庫端全部空白**——⚠ **唯一的間接線索是藝人 life-span 記 1977–1978，以及串流側那筆上架版本的 ℗ 標的是 1978，兩者都指向錄音早於發行，但都不是錄音年的直接欄位。**",
+    "src": "https://musicbrainz.org/ws/2/release/93e49048-46be-4e88-b9da-72fb4663581e?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 951089118**《Las Canciones Malditas》11 軌、**℗ 1978 Sony Music Entertainment España**（頁面年份也標 1978）：**十一軌與 1983 年黑膠同名同序、長度逐軌只差 0 到 5 秒**（4:19／4:19／1:28／4:02／2:42／1:41／2:57／3:09／1:37／1:45／2:49）。⚠ **這個上架版本的 ℗ 年與頁面年份都是 1978，比資料庫端的首次發行年 1983 早五年**——**兩邊的年份不一致，這是本張最需要小心的一點**。同一個掛名在店端沒有其他條目。",
+    "src": "https://itunes.apple.com/lookup?id=951089118&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一首裡有四首不到一分四十五秒，而最長的兩首都擠在 A 面開頭",
+   "唱這張碟的樂團在資料庫端記的存續期是 1977 到 1978，碟卻要到 1983 年才出版"
+  ],
+  "sound": "1983 年 El Fantasma del Paraíso 的 FAN LP-1 是一張 12 吋、十一軌，同年還出過一捲同內容的卡帶。A 面〈La tentación〉4:18 與〈Rosario / Toca el pito〉4:16 兩首長曲開場，接只有 1:27 的〈Pero me aburro〉、〈Pero qué público más tonto tengo〉3:57、〈Viva el metro〉2:43；B 面幾乎都是短曲——1:39 的〈La pluma eléctrica〉、〈Pondré mil voltios en tu lengua〉2:55、〈La alegría de vivir〉3:09、1:37 的〈Borracho no se puede conducir por la ciudad (peligrosos sociales)〉、1:44 的〈¿Y por qué no?〉，收在〈Música para embrollar (huye de mí)〉2:48。十一首裡四首不到一分四十五秒。1997 年的 CD 把十一軌砍成九軌。",
+  "keyTracks": [
+   "La tentación",
+   "Pero me aburro",
+   "Pondré mil voltios en tu lengua"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **兩邊不一致，year 取 1983（資料庫端的首次發行年）**。release-group 的 first-release-date 記 1983，其下最早的兩筆 release 都是 1983 年的西班牙 El Fantasma del Paraíso（黑膠 FAN LP-1 與卡帶 FAN-MC-1，兩筆都是 Official、11 軌），再往後是 1994 年 Chapa Discos 的 CD 與 1997 年 BMG 的 9 軌 CD。**復刻年 1994／1997 不得寫進 year 欄（裁定 220）。**⚠ **但串流側 951089118 的 ℗ 年與頁面年份都是 1978，比 1983 早五年**；⚠ **藝人 life-span 也記 1977–1978**。**三個訊號一起看：錄音幾乎確定早於發行，但錄音年在資料庫端沒有任何欄位登錄（十一軌零 recording relationship、annotation 空白）。****行文只能寫「1983 年出版」，不得寫錄音年、不得寫「1978 年的錄音」，也不得把 1978 那個 ℗ 年當成錄音年的證據。**（裁定 227：`secondary-types` 為空不代表這是原始錄音年份的原盤。）",
+  "notes": "**擋下策展層兩處，另補正一處軌數。**｜（一）**團員名單**：`curatorWhy` 點名「**Alaska、Carlos Berlanga、Nacho Canut、Fernando Márquez 與 Enrique Sierra**」並寫「成員接著散進 Alaska y los Pegamoides、Radio Futura 與 Parálisis Permanente」。**藝人實體沒有任何成員關係、也沒有跨團關係登錄，十一軌零 recording relationship**——**五個人名與三條去向全部不得寫**。⚠ **本組另外三張卡（Alaska y los Pegamoides、Parálisis Permanente、Radio Futura）在端上與本張沒有任何可查的關聯欄位，行文不得把四張碟串成人事線。**｜（二）**錄音年**：`curatorWhy` 寫「樂團 1978 年只出過一張 EP 就解散」「這張…是他們錄音**第一次以整張專輯形態出版**」。**前半有依據**（藝人目錄裡 1978 年確實只有一張 EP，life-span 也記 1977–1978）；**後半是推論**——端上沒有任何欄位說這批錄音是哪一年錄的。**行文寫到這裡只能停在「1983 年出版」與「名下只有一張 EP、一張分軌合輯與這張專輯」。**｜（三）**⚠ 軌數要指明版本（裁定 174）**：`mbNote` 把四筆 release 並列卻沒提軌數——**1983 黑膠、1983 卡帶、1994 CD 都是 11 軌，1997 年那張 BMG 的 CD 只有 9 軌**（少掉〈La alegría de vivir〉與〈¿Y por qué no?〉）。**行文寫軌數必須說是 1983 年那一版。**｜**查證屬實、可以直接寫的**：`label`「El Fantasma del Paraíso（ES，catno FAN LP-1）」正確，**而且同年還有一捲同編號系列的卡帶 FAN-MC-1**；四筆發行全部是西班牙盤；**begin-area 記 Madrid**；**藝人 life-span 記 1977 起、1978 結束**（這是可寫的欄位，而且與發行年的落差本身就是材料）。｜**⚠ 曲目表的形狀是本張最好的材料**：十一軌裡四首不到 1:45，兩首超過四分鐘的長曲都擠在 A 面開頭。**逐軌長度原盤欄位有登錄，時間可以寫。**｜**串流採信 951089118：11 軌與 1983 年黑膠同名同序、長度只差 0 到 5 秒**；⚠ **但它的 ℗ 年與頁面年份都標 1978，與卡片的 1983 差五年，行文不得引用那個年份。****有固定試聽來源。**｜⚠ **政治敘述邊界**：可寫佛朗哥過世後馬德里出版環境改變這一可查證的史實（就本張而言，可寫的具體事實是「1983 年由一家獨立廠牌出版，那家廠牌給這張碟的編號是 LP 第一號」），**不得寫對體制的價值判斷**，也不得由曲名推論歌詞立場。"
+ },
+ {
+  "key": "desc2:Parálisis Permanente|El acto",
+  "artist": "Parálisis Permanente",
+  "album": "El acto",
+  "facts": [
+   {
+    "f": "release-group 995e1b43 的欄位：title「El acto」、artist-credit「Parálisis Permanente」（藝人實體 8b4d7237，Group／country **ES**、area 記 Spain、**begin-area 記 Madrid**，disambiguation 空，**life-span 1981 起、1983 結束**）、first-release-date **1982**、primary-type Album、**secondary-types 空**。轄下 **2 個 release，兩筆都是西班牙盤、都是 13 軌**：**1982 ES 3 Cipreses 3C-003**（12 吋黑膠）與 **1995 ES DRO 4509 99401 2**（CD）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/995e1b43-2bf2-3098-b106-a046398f0367?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1982 年原盤（3 Cipreses 3C-003）逐軌與長度：A1〈Adictos a la lujuria〉3:29、A2〈Vamos a jugar〉3:22、A3〈Te gustará〉3:09、A4〈Héroes〉3:42、A5〈Tengo un precio〉3:58、**A6〈Jugando a las cartas〉2:08**；**B1〈El acto〉2:26**、B2〈Esto no es〉2:14、B3〈Quiero ser tu perro〉2:33、B4〈Bacanal〉2:48、**B5〈Todo el mundo〉2:06**、B6〈Tengo un pasajero〉3:58、B7〈Esa extraña sonrisa〉3:51。**十三軌、A 面六首 B 面七首，兩面不對稱**；⚠ **A 面前五首全部超過三分鐘，B 面前五首全部不到三分鐘**——**長短曲以面為單位分開排**，同名曲排在 B 面第一首。全片最長 3:58（兩首並列）、最短 2:06。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=995e1b43-2bf2-3098-b106-a046398f0367&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **10 個 release-group**：**純 Album 只有 1 個（1982 本張）**、EP 2 個（1982《Quiero ser santa》、**1982-01-29《Parálisis Permanente / Gabinete Caligari》**，後者是與本組另一張卡的樂團合掛的分軌 EP）、Single 1 個（1983《Nacidos para dominar》）、Album/Compilation 5 個（1984《Los singles》、1991《Heroes de los 80》、1995《Singles y primeras grabaciones》、2001《Grabaciones completas 1981 - 1983》、2006-05-29《Singles Y Primeras Grabaciones / El Acto》）、Other/Compilation 1 個（2003-12-01《El Acto + Singles + Maquetas》）。**「這張是他們唯一的正規專輯」查證屬實**——名下 `secondary-types` 為空的專輯只有這一筆，**其餘九筆全是 EP、單曲或合輯**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8b4d7237-5ec8-4201-a702-4b95819d3890&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1982 原盤的十三軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**團員名單、樂器分工與「誰是鼓手」在資料庫端全部空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/d41dbb44-1f45-41f8-9d67-d4e9900c8df1?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 1659490648**《El Acto》13 軌、℗ 1982 dro east west（頁面年份標 1982）：**十三軌與 1982 原盤同名同序、長度逐軌只差 0 到 9 秒**（3:28／3:21／3:08／3:43／3:59／2:11／2:17／2:14／2:32／2:47／2:05／3:58／3:51）。同一個掛名在店端另有 1659454965《Los singles》10 軌（℗ 1990）與 101248201《Los Singlés y Primeras Grabaciones》13 軌（℗ 1990）兩筆合輯，**逐軌覆核後與本張曲目不同，駁回**；另有十餘筆盤名同為《El Acto》的不相干藝人條目（Sir Flansi、Luz Maggio、Madame Hyde、Valdes、Joaquin Lastiris 等），**全部駁回**。⚠ **店端把掛名寫成不帶重音符號的「Paralisis Permanente」，與卡片的「Parálisis Permanente」不同，撞卡掃描要一併帶上。**",
+    "src": "https://itunes.apple.com/lookup?id=1659490648&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "A 面五首全部超過三分鐘，B 面前五首全部不到三分鐘——長短曲以面為單位分開排",
+   "名下十筆條目裡只有這一張是專輯，其餘九筆全是 EP、單曲或合輯"
+  ],
+  "sound": "1982 年 3 Cipreses 的 3C-003 是一張 12 吋、十三軌，A 面六首、B 面七首。A 面〈Adictos a la lujuria〉3:29、〈Vamos a jugar〉3:22、〈Te gustará〉3:09、〈Héroes〉3:42、〈Tengo un precio〉3:58，前五首全部超過三分鐘，收在 2:08 的〈Jugando a las cartas〉；B 面以同名曲〈El acto〉2:26 開頭，接〈Esto no es〉2:14、〈Quiero ser tu perro〉2:33、〈Bacanal〉2:48、〈Todo el mundo〉2:06 五首短曲，最後才用〈Tengo un pasajero〉3:58 與〈Esa extraña sonrisa〉3:51 兩首長的收尾。長短曲幾乎以面為單位分開排，全片最長 3:58、最短 2:06。",
+  "keyTracks": [
+   "El acto",
+   "Adictos a la lujuria",
+   "Esa extraña sonrisa"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982（**發行年**）。release-group 的 first-release-date 記 1982，其下最早的 release 就是 1982 年的西班牙 3 Cipreses 3C-003（Official、13 軌黑膠），另一筆是 1995 年 DRO 的 CD。**復刻年 1995 不得寫進 year 欄（裁定 220）。****錄音年：資料庫端未登錄**——十三軌零 recording-level relationship、annotation 空白，**1982 只能當發行年寫**。⚠ **藝人 life-span 記 1981–1983，本張的發行年正好落在中間，但那是團體存續期不是錄音年。** 串流側 1659490648 的 ℗ 記 1982，與發行年一致，**但那是現行權利人的 ℗ 標示、不是獨立的原盤年佐證**。",
+  "notes": "**擋下策展層三處。**｜（一）**團員與人事**：`curatorWhy` 寫「**Eduardo Benavente（Alaska y los Pegamoides 的鼓手）**另組的樂團」「Benavente **1983 年車禍過世**，樂團就此結束」。**藝人實體沒有任何成員關係、十三軌零 recording relationship**——**人名、樂器（鼓手）、死因全部不得寫**。⚠ **可以寫的只有 life-span：1981 起、1983 結束**，那是欄位。｜（二）**廠牌敘述**：`curatorWhy` 寫「3 Cipreses 是 **DRO 系統下最早的西班牙獨立廠牌之一**，編號才排到第三號」。**「DRO 系統下最早之一」是極值兼從屬關係，端上沒有欄位**，**不得寫**；⚠ **可以寫的是編號本身——這張碟的目錄編號是 3C-003**，而 1995 年的再版由 DRO 發行（那是 label-info 寫的）。｜（三）**曲風描述**：`curatorWhy` 寫「聲音是**低音突出、鼓機與吉他反覆**的暗色 post-punk」。零樂器掛名，**不得寫**；要講聲音只能從曲目長度的排法講。｜**查證屬實、可以直接寫的**：`label`「3 Cipreses（ES，catno 3C-003）」正確；**「唯一的正規專輯」查證屬實**（名下十筆條目裡只有這一筆是 `secondary-types` 為空的專輯）；**begin-area 記 Madrid**；⚠ **1982-01-29 那張與 Gabinete Caligari 合掛的分軌 EP 確實存在**（本組第 23 張卡就是那支樂團），**但那只能寫成「有一張兩團合掛的 EP」，不得寫成人事或影響關係**。｜**⚠ 曲目表的形狀是本張最好的材料**：A 面前五首全部破三分鐘、B 面前五首全部不到三分鐘，同名曲排在 B 面第一首。**逐軌長度原盤欄位有登錄，時間可以寫。**｜**軌數（裁定 174）**：兩筆發行都是 13 軌，**不需要指明版本**。｜**⚠ 掛名兩種寫法**：店端寫成不帶重音符號的「Paralisis Permanente」，撞卡掃描要帶上；**卡片與行文照卡單的「Parálisis Permanente」。**｜**串流採信 1659490648：13 軌與 1982 原盤同名同序、長度只差 0 到 9 秒、℗ 1982。有固定試聽來源。** 駁回同掛名的兩筆合輯與十餘筆同名盤的不相干藝人條目。｜⚠ **政治敘述邊界**：可寫佛朗哥過世後獨立廠牌出現這一可查證的史實（就本張而言，具體可寫的是「1982 年由一家獨立廠牌發行、編號排在第三號」），**不得寫對體制的價值判斷**，也不得由曲名推論歌詞立場。"
+ },
+ {
+  "key": "desc2:Alaska y los Pegamoides|Grandes éxitos",
+  "artist": "Alaska y los Pegamoides",
+  "album": "Grandes éxitos",
+  "facts": [
+   {
+    "f": "release-group 62fed6c3 的欄位：title「Grandes éxitos」、artist-credit「Alaska y los Pegamoides」（藝人實體 d7a16aab，Group／country **ES**、area 記 Spain、**begin-area 記 Madrid**，disambiguation 空，**life-span 1979 起、1982-11 結束**）、first-release-date **1982-04**（**記到月**）、primary-type Album、**secondary-types 空**。轄下 **9 個 release，九筆全部是 14 軌**：**1982-04 ES Hispavox S 60.722（12 吋黑膠）與 C 60.722（卡帶）同月發行**、1986 ES Hispavox 530 40 3186 1（黑膠）、1986 ES Hispavox（卡帶）、**1987 MX EMI SLEM-1481（12 吋黑膠）**、1991 ES Hispavox 7 96400 2（CD）、2006 ES EMI 兩筆 CD、2009 ES EMI CD。⚠ **策展層寫「另有 MX 盤」時把它記在 1982 年——實際上墨西哥那一筆是 1987 年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/62fed6c3-0fdf-3869-b6c7-55a71f9c2b34?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "**⚠ 裁定 227 的反向覆核在這一張有直接答案**：1982-04 那一筆 release 的 **annotation 欄寫著「This album is called Grandes éxitos (Greatest Hits) but it is NOT a compilation.」**——**「盤名叫《精選》但這不是精選輯」是唱片條目自己寫在說明欄裡的，不是推論**。同一筆 release 另有一筆 recording-level relationship：**B1〈La línea se cortó〉的 producer 掛的是樂團自己（Alaska y los Pegamoides）**。除此之外十四軌沒有其他錄音關係，**沒有錄音日期、沒有場地、沒有樂手分工**。",
+    "src": "https://musicbrainz.org/ws/2/release/71d99a5f-525e-375b-b5bc-0e00cef9029e?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "1982-04 原盤逐軌與長度：A1〈**Bailando**〉**5:13**、A2〈El plan〉2:48、A3〈La tribu de las Chochoni〉3:03、**A4〈Rosa y verde〉1:43**、A5〈Alta tensión〉2:52、A6〈No sé por qué〉2:45；B1〈**La línea se cortó**〉4:31、B2〈Redrum〉2:15、**B3〈¿Qué piensas de los insectos?〉1:21**、B4〈Estrategia militar〉3:06、B5〈Tokyo〉2:24、**B6〈Secretos de belleza〉1:21**、**B7〈Vicky〉1:18**、B8〈Llegando hasta el final〉2:02。**十四軌、A 面六首 B 面八首**；**十四首裡有四首不到一分四十五秒（最短的三首都在 1:18–1:21）**，而開場的〈Bailando〉5:13 是全片最長、幾乎是最短那首的四倍。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=62fed6c3-0fdf-3869-b6c7-55a71f9c2b34&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 11 個 release-group**：**純 Album 只有 1 個（1982-04 本張）**、Single 4 個（1980《Horror en el hipermercado / El hospital / Odio》、1981《Otra dimensión / Bote de Colón / Quiero salir》、1982《Bailando》、1982《La línea se cortó》、1982《Alaska y los Pegamoides》）、Album/Compilation 3 個（1982《Alaska y los Pegamoides》、1997《Simplemente lo mejor》、1998《Mundo indómito》、2013-06-21《Los Singles (1980–1982)》）、Album/Live 1 個（1996《Llegando hasta el final》）。**「這是他們唯一的一張 LP」查證屬實**——名下 `secondary-types` 為空的專輯只有這一筆。⚠ **藝人 life-span 在 1982-11 結束，也就是本張發行後七個月。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d7a16aab-6822-4d14-985e-8f87a2602051&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了，**第三種查法找回了策展層判成「收藏版、不必然對應原盤」的那條線**。策展層在 es 店 `search` 命中的是 726350129《Grandes Éxitos - Edición Para Coleccionistas》（**28 軌**收藏版），判為不必然對應原盤，正確。**改走 collectionId 直查後採信 699611005《Alaska y Los Pegamoides - Grandes Éxitos (Remastered)》14 軌、℗ 1982 Parlophone Music Spain（頁面年份標 1982）**——**十四軌與 1982-04 原盤同名同序、十四軌的長度逐軌完全相同**（5:13／2:48／3:03／1:43／2:52／2:45／4:31／2:15／1:21／3:06／2:24／1:21／1:18／2:02）。⚠ **上架版本有三處字形差異**：「No Sé por Qúe」「¿Qúe Piensas de los Insectos?」（重音位置錯）與「**Tokio**」（原盤欄位寫「Tokyo」）。同批候選裡 1764800086《Alaska y Los Pegamoides》11 軌（℗ 1982）**逐軌覆核後收的是〈La rebelión de los electrodomésticos〉〈Vértigo〉〈Horror en el hipermercado〉等單曲期的曲子、與本張十四軌毫無交集**，是那張同名分軌合輯，**駁回**；734693412《Bailando - Single》3 軌與 726350129（28 軌）一併**駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=699611005&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "唱片條目的說明欄直接寫著：這張碟雖然叫《精選》，但它不是精選輯",
+   "十四首裡有三首只有一分二十秒上下，而開場那首 5:13 幾乎是它們的四倍"
+  ],
+  "sound": "1982 年 4 月 Hispavox 同月發了黑膠 S 60.722 與卡帶 C 60.722，都是十四軌，A 面六首、B 面八首。A 面以全片最長的〈Bailando〉5:13 開場，接〈El plan〉2:48、〈La tribu de las Chochoni〉3:03、只有 1:43 的〈Rosa y verde〉、〈Alta tensión〉2:52、〈No sé por qué〉2:45；B 面〈La línea se cortó〉4:31、〈Redrum〉2:15、1:21 的〈¿Qué piensas de los insectos?〉、〈Estrategia militar〉3:06、〈Tokyo〉2:24、1:21 的〈Secretos de belleza〉、1:18 的〈Vicky〉，收在〈Llegando hasta el final〉2:02。十四首裡有三首只有一分二十秒上下，開場曲幾乎是它們的四倍長。這張碟的說明欄特別註記：盤名雖然叫《精選》，但它不是精選輯。",
+  "keyTracks": [
+   "Bailando",
+   "La línea se cortó",
+   "Vicky"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982（**發行年，日期記到 1982-04**）。release-group 的 first-release-date 是 1982-04，其下最早的兩筆 release 都是 1982-04 的西班牙 Hispavox（黑膠 S 60.722 與卡帶 C 60.722，兩筆都是 Official、14 軌），之後是 1986 年兩筆、**1987 年的墨西哥黑膠**、1991、2006×2、2009 各一筆。**復刻年 1986／1987／1991／2006／2009 都不得寫進 year 欄（裁定 220）**；⚠ **策展層把墨西哥盤記成 1982 年，實際是 1987 年，這一處要更正。**⚠ **裁定 227 的反向覆核已做，而且有直接證據**：1982-04 那筆 release 的 annotation 明寫「盤名叫《精選》但這不是精選輯」，`secondary-types` 為空與盤名的矛盾**由唱片條目自己解決了**。**錄音年：資料庫端未登錄**——十四軌只有一筆 producer 關係、沒有錄音日期，**1982 只能當發行年寫**。串流側 699611005 的 ℗ 記 1982，與發行年一致，**但那是現行權利人的 ℗ 標示**。",
+  "notes": "**擋下策展層兩處，另更正一處年份、補上一條直接證據。**｜（一）**團員與前身**：`curatorWhy` 寫「Kaka de Luxe 解散後 **Alaska、Carlos Berlanga 與 Nacho Canut** 組成的樂團」。**藝人實體沒有任何成員關係、也沒有與前身樂團的關係登錄**——**三個人名與「Kaka de Luxe 解散後」這條人事線都不得寫**（本組第 19 張卡是那支樂團，兩張碟在端上沒有任何可查的關聯欄位）。⚠ **唯一有掛名依據的人事欄位是〈La línea se cortó〉的 producer——掛的是樂團自己。**｜（二）**樂評與流傳**：`curatorWhy` 寫「盤名〈Grandes éxitos〉的反差**在西班牙樂評裡被反覆提及**」。**樂評的引用端上沒有來源，不得寫**；⚠ **但這句話想講的事情有更好、而且可查的講法**——**1982-04 那筆 release 的 annotation 欄直接寫著「這張碟叫《Grandes éxitos》但它不是精選輯」**，**行文要碰這個反差，就引唱片條目自己的說明欄，不要引樂評。**｜（三）**⚠ 更正年份**：`curatorWhy` 與 `mbNote` 都寫「轄下九個 release、**含 1982 年墨西哥盤**」。**九筆的數字對，但墨西哥那一筆是 1987 年，不是 1982 年。**｜**（四）裁定 227 的反向覆核結果**：`curatorRisk` 要求「由曲目與壓片核實再下筆」——**已核**：九筆 release 全部 14 軌、曲序一致，最早的兩筆是 1982-04 同月的黑膠與卡帶，**加上 annotation 的明文，「不是精選輯」這一點成立**，可以寫。｜**查證屬實、可以直接寫的**：`label`「Hispavox（ES，catno S 60.722／C 60.722）」正確，**而且黑膠與卡帶是同月發行的兩個編號**；**「唯一的一張 LP」查證屬實**（名下十一筆條目裡只有這一筆是 `secondary-types` 為空的專輯）；**begin-area 記 Madrid**；**life-span 1979 起、1982-11 結束——比本張的發行月晚七個月。**｜**⚠ 曲目表的形狀是本張最好的材料**：十四軌裡三首只有 1:18–1:21，開場曲 5:13 是全片最長。**逐軌長度原盤欄位有登錄，時間可以寫。**｜**軌數（裁定 174）**：九筆 release 全部 14 軌，**不需要指明版本**；**但串流側有 11 軌、28 軌等不同包裝，引用時要指明是 699611005 那一份。**｜**⚠ 曲名字形**：上架版本把〈Tokyo〉寫成「Tokio」，另有兩處重音位置錯。**行文引曲名一律照原盤欄位的寫法。**｜**第三種查法的成果**：策展層命中的 726350129 是 28 軌收藏版（判斷正確）；**改走 collectionId 直查找到 699611005，14 軌與原盤同名同序、長度逐軌完全相同。採信 699611005**，駁回 726350129、734693412 與 1764800086（後者逐軌核對後是單曲期的分軌合輯、與本張毫無交集）。**有固定試聽來源。**｜⚠ **政治敘述邊界**：可寫佛朗哥過世後馬德里出版環境改變這一可查證的史實，**不得寫對體制的價值判斷**，也不得把盤名的反差寫成對什麼的態度。"
+ },
+ {
+  "key": "desc2:Décima Víctima|Décima Víctima",
+  "artist": "Décima Víctima",
+  "album": "Décima Víctima",
+  "facts": [
+   {
+    "f": "release-group 5568e92c 的欄位：title「Décima Víctima」、artist-credit「Décima Víctima」（**掛名與盤名逐字相同，自我同名**；藝人實體 f3243cd7，Group／country **ES**、area 記 Spain、**begin-area 是空的**，disambiguation 空，**life-span 1981 起、1984 結束**）、first-release-date **1982-12**（**記到月**）、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：**1982-12 ES Grabaciones Accidentales GA-007**（12 吋黑膠、12 軌、Official）。**沒有任何再發。**⚠ **同一家廠牌的編號序列裡，本組第 24 張卡（Derribos Arias）拿的是 GA-013——兩張碟的目錄編號都查證過，確實出自同一組序列。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/5568e92c-a8e1-492d-8dc5-2313426ddcbc?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1982-12 原盤（Grabaciones Accidentales GA-007）逐軌，**十二軌一筆長度都沒有登錄**，曲序是：A1〈La voz que me persigue〉、A2〈Más allá del silencio〉、A3〈Inseguridad〉、A4〈Escombros de un triunfo〉、A5〈Otro futuro〉、A6〈Almas perdidas〉；B1〈Hacia la luz〉、B2〈Fe en ti mismo〉、B3〈Detrás de la mirada〉、B4〈Desde el acantilado〉、B5〈Hasta el límite〉、B6〈Decisión〉。**十二軌六加六、兩面對稱**；**十二個曲名全部是西班牙語，而且沒有一首與掛名或盤名同名**（自我同名的碟卻沒有同名曲）。⚠ **B3〈Detrás de la mirada〉在藝人目錄裡另有一筆 1982 年的同名 Single，兩者分開建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5568e92c-a8e1-492d-8dc5-2313426ddcbc&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "**1982-12 原盤有五筆 release-level relationship**（本組少數有職位掛名的一張）：**producer 兩筆——樂團自己（Décima Víctima）與 Paco Trinidad**、**engineer 兩筆——Jesús N. Gómez 與 Paco Trinidad**、**graphic design → Lars Mertanen**。⚠ **Paco Trinidad 同時掛在製作與錄音工程兩個職位上，這是欄位寫出來的。****十二軌本身沒有任何 recording-level relationship**（沒有錄音日期、沒有場地、沒有樂手分工），annotation 也是空的。",
+    "src": "https://musicbrainz.org/ws/2/release/5f8c7a09-b70c-4ccd-b318-0d5ac92e3a5c?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **13 個 release-group**：純 Album 4 個（**1982-12 本張**、1984-08《Un hombre solo》、2010《Los Que Faltan》、2019-10-04《En El Garaje》）、EP 3 個（**1982-03《El vacío》、1982-09《Tan lejos》**、1983《Un lugar en el pasado》）、Single 2 個（1982《Detrás de la mirada》、1983《Un lugar en el pasado》）、Album/Compilation 4 個（1994《Resumen》、2010-12《Decima Victima》、2020-01-15《Larga duración》、2025-05-12《Singles》）。**「首張專輯」查證屬實**（本張是名下最早的純 Album）；⚠ **但同一年 1982 的 3 月與 9 月各有一張 EP、還有一張單曲排在本張之前——「第一張唱片」不成立。**⚠ **樂團的 life-span 只有 1981 到 1984 三年，名下 1984 年之後的四筆全是後出版的合輯或重組後的錄音。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f3243cd7-3ef3-4e68-b02d-61fcfab3e405&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了，**本張沒有獨立的上架條目**。（一）八個 storefront 的 `search`：**八店全部零命中**（策展層的觀察屬實）；（二）**藝人目錄 lookup**（店端 id 362628341）：目錄**只有 3 筆**——1019459285《Los Que Faltan》（2010）、1518049120《Resumen》（1994）、1496300458《Larga Duración》（2020），**沒有 1982 年那張同名專輯的獨立條目**；（三）`collectionId` 直查 1496300458《Larga Duración》22 軌、℗ 2020：⚠ **它的第 1 到第 12 軌逐軌就是 1982 年原盤的十二首、同序**（La Voz Que Me Persigue 4:54／Más Allá del Silencio 2:36／Inseguridad 2:05／Escombros de un Triunfo 2:38／Otro Futuro 2:17／Almas Perdidas 4:21／Hacia la Luz 2:06／Fe en Ti Mismo 2:43／Detrás de la Mirada 3:32／Desde el Acantilado 2:55／Hasta el Limite 2:17／Decisión 4:05），**第 13–22 軌是後續碟的曲子**；**但它是 22 軌的合輯、盤名也不是本盤名，因此駁回作為本張的試聽來源**。**維持無固定試聽來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1496300458&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "掛名與盤名一模一樣，碟上十二首卻沒有一首叫這個名字",
+   "同一個人的名字同時出現在製作與錄音工程兩個欄位上"
+  ],
+  "sound": "1982 年 12 月 Grabaciones Accidentales 的 GA-007 是一張 12 吋、十二軌，也是這張碟唯一的一筆發行。A 面〈La voz que me persigue〉、〈Más allá del silencio〉、〈Inseguridad〉、〈Escombros de un triunfo〉、〈Otro futuro〉、〈Almas perdidas〉；B 面〈Hacia la luz〉、〈Fe en ti mismo〉、〈Detrás de la mirada〉、〈Desde el acantilado〉、〈Hasta el límite〉、〈Decisión〉。六加六、兩面對稱，十二個曲名全部是西班牙語，而且沒有一首用掛名或盤名當標題。唱片的製作欄掛了樂團自己與 Paco Trinidad 兩筆，錄音工程欄掛 Jesús N. Gómez 與 Paco Trinidad，美術欄掛 Lars Mertanen——同一個人同時出現在製作與工程兩欄。",
+  "keyTracks": [
+   "La voz que me persigue",
+   "Detrás de la mirada",
+   "Decisión"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982（**發行年，日期記到 1982-12**）。release-group 的 first-release-date 是 1982-12，其下**唯一一筆** release 就是 1982-12 的西班牙 Grabaciones Accidentales GA-007（Official、12 軌黑膠），**沒有再發、沒有更早的版本，也沒有復刻年可能混進來的問題**。**錄音年：資料庫端未登錄**——十二軌零 recording-level relationship（release 層雖有五筆職位掛名，但**都不帶日期**），annotation 空白，**1982 只能當發行年寫**。⚠ **同一年 3 月與 9 月各有一張 EP、還有一張單曲，都排在本張之前，行文寫序位要小心。** 串流側沒有本張獨立的上架版本可對照 ℗ 年（唯一含全碟內容的是一份 ℗ 2020 的 22 軌合輯）。",
+  "notes": "**擋下策展層四處。**｜（一）**⚠ 地名與人數**：`curatorWhy` 寫「**馬德里**的**三人編制**」。**藝人實體的 begin-area 是空的、area 只記到 Spain**，**「馬德里」不得寫**；**沒有任何成員關係登錄**，**「三人編制」也不得寫**。可以寫的只有 country ES 與 life-span 1981–1984。｜（二）**團名由來**：`curatorWhy` 寫「團名取自小說《第十個受害者》」。端上沒有欄位，**不得寫**。｜（三）**廠牌極值**：`curatorWhy` 寫「GA 是 la Movida 時期**最重要的獨立廠牌之一**」。極值主張，**不得寫**；⚠ **可以寫的是編號本身——本張是 GA-007，而本組第 24 張卡（Derribos Arias）是 GA-013，兩個編號都在 label-info 欄裡查證過，確實同出一組序列。**｜（四）**曲風與比較**：`curatorWhy` 寫「聲音是**貝斯領頭、吉他冷硬**的 post-punk，與英國同期的路線**同時發生而非追隨**」。零樂器掛名、跨國比較也沒有依據，**整句不得寫**。｜**查證屬實、可以直接寫的**：`label`「Grabaciones Accidentales（ES，catno GA-007）」正確；**自我同名（掛名與盤名逐字相同）**，而且**碟上十二首沒有一首與盤名同名**；**「首張專輯」成立、「第一張唱片」不成立**；⚠ **release 層的五筆職位掛名是本張最好的材料**：製作兩筆（樂團自己＋Paco Trinidad）、工程兩筆（Jesús N. Gómez＋Paco Trinidad）、美術一筆（Lars Mertanen），**Paco Trinidad 同時掛兩個職位**。｜**⚠ 逐軌長度的來源**：**原盤欄位十二軌全部沒有長度**，長度只有那份 2020 年的 22 軌合輯有。**行文最好不要寫時間**；真要寫必須知道那不是原盤欄位的數字。｜**軌數（裁定 174）**：原盤 12 軌、唯一含全碟的上架包裝是 22 軌，**行文寫軌數必須說是 1982 年那一版**。｜**回撈候選：策展層判「八店全未命中」，三種查法覆核後屬實**——店端的藝人目錄只有三筆，沒有本張的獨立條目；唯一含全碟內容的 1496300458 是 22 軌合輯（前十二軌與原盤同序），**駁回作為試聽來源**。**無固定試聽來源，行文不要暗示可試聽。**｜⚠ **政治敘述邊界**：可寫佛朗哥過世後獨立廠牌出現這一可查證的史實（就本張而言，具體可寫的是「1982 年 12 月由一家獨立廠牌發行、編號 GA-007」），**不得寫對體制的價值判斷**，也不得由曲名推論歌詞立場。"
+ },
+ {
+  "key": "desc2:Gabinete Caligari|Que Dios reparta suerte",
+  "artist": "Gabinete Caligari",
+  "album": "Que Dios reparta suerte",
+  "facts": [
+   {
+    "f": "release-group 024e4109 的欄位：title「Que Dios reparta suerte」、artist-credit「Gabinete Caligari」（藝人實體 aa179aa4，Group／country **ES**、area 記 Spain、**begin-area 記 Madrid**，disambiguation 空，**life-span 1981 起、1999 結束**）、first-release-date **1983-12**（**記到月**）、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：**1983-12 ES 3 Cipreses 3C-104**（12 吋黑膠、**track-count 記 11**、Official）。**沒有任何再發。**⚠ **同一家廠牌的編號序列裡，本組第 20 張卡（Parálisis Permanente）拿的是 3C-003、本張是 3C-104——兩個編號都查證過。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/024e4109-41c2-4583-9e71-67ffa9094cf2?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "⚠ **1983-12 原盤在資料庫端只登錄了軌數，沒有登錄任何曲名與長度**——回問 release 端點時 medium 的 track-count 是 11，**但 tracks 陣列是空的**，recording-level relationship 與 annotation 也都是空的。**這張碟的曲目在資料庫端查不到（本組第二張這種情況，另一張是第 17 張卡）。**",
+    "src": "https://musicbrainz.org/ws/2/release/2d9dcee0-a5e2-46df-aa5c-8854db023a87?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "**曲目只能從串流側取得，而且軌數對得上。****collectionId 1689039127《Que Dios Reparta Suerte》11 軌、℗ 1984 Warner Music Spain**，逐軌是：1〈Tierra de nadie〉2:58、2〈Mentir〉3:31、3〈**Que Dios reparta suerte**〉**4:36**、4〈**Heroes de la Unión Sovietica**〉3:38、5〈Perdidas blancas〉2:23、6〈**Un día en Texas**〉2:32、7〈**Sangre española**〉3:36、8〈Grado 33〉3:44、9〈**Maquis**〉2:59、10〈**Gresca gitana**〉3:33、11〈**El arte de amar**〉**5:04**。**十一軌的軌數與資料庫端記的 11 完全相符**；同名曲排在第三軌，全片最長的是收尾的〈El arte de amar〉5:04、最短的是〈Perdidas blancas〉2:23。⚠ **上架版本的 ℗ 年是 1984，比資料庫端的 1983-12 晚一年（差不到一個月的跨年）。**",
+    "src": "https://itunes.apple.com/lookup?id=1689039127&country=es&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **23 個 release-group**：純 Album 8 個、Album/Compilation 10 個、EP 3 個、Single 2 個、Album/Live 1 個。八張純 Album 依 first-release-date 排：**1983-12 本張**、1986-02《Al calor del amor en un bar》、1987《Camino Soria》、1989-09-01《Privado》、1991《Cien mil vueltas》、1995《Gabinetíssimo》、1998《Subid la música》。**「首張專輯」查證屬實**（本張是名下最早的純 Album）；⚠ **但前面有 1982 年的單曲《Olor a carne quemada》、1982-11 的單曲《Obediencia》與 1982-01-29 那張與 Parálisis Permanente 合掛的分軌 EP——「第一張唱片」不成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=aa179aa4-5bfc-4814-b113-a6476fe26cbc&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 1689039127**（見上）。同一位藝人在店端的目錄還有 80813837《Al Calor del Amor en un Bar》（℗ 1986）、101001577《4 Rosas y Que Dios Reparta Suerte》（**17 軌、℗ 1984，把本張與 EP《Cuatro rosas》併成一份**）、1689035166《Cuatro Rosas - EP》（6 軌）、101002586《Los Singles》、695640043《Privado》等，**逐筆核對後皆非本張的獨立條目，全部駁回**；⚠ **特別要防的是 101001577——它的盤名含本張標題、℗ 年也是 1984，但軌數 17 是兩張碟併盤，不是本張。** 另有 1823968014 是另一位藝人（Jose León）31 軌的同名碟，**駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=1689039127&country=es&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡最長的是收尾那首 5:04，同名曲反而排在第三軌",
+   "這張碟的曲名在資料庫端是空白的，只留下「十一軌」這個數字"
+  ],
+  "sound": "1983 年 12 月 3 Cipreses 的 3C-104 是一張 12 吋，也是這張碟唯一的一筆發行。資料庫端只記下十一軌這個數字，曲名要從上架版本才看得到：〈Tierra de nadie〉2:58 開場，接〈Mentir〉3:31、同名曲〈Que Dios reparta suerte〉4:36、〈Heroes de la Unión Sovietica〉3:38、只有 2:23 的〈Perdidas blancas〉、〈Un día en Texas〉2:32、〈Sangre española〉3:36、〈Grado 33〉3:44、〈Maquis〉2:59、〈Gresca gitana〉3:33，最後收在全片最長的〈El arte de amar〉5:04。十一首落在 2:23 到 5:04 之間，同名曲排在第三軌而不是開頭或收尾。同一家廠牌兩年前給另一支樂團的編號是 3C-003，這張是 3C-104。",
+  "keyTracks": [
+   "Que Dios reparta suerte",
+   "El arte de amar",
+   "Sangre española"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1983（**發行年，日期記到 1983-12**）。release-group 的 first-release-date 是 1983-12，其下**唯一一筆** release 就是 1983-12 的西班牙 3 Cipreses 3C-104（Official、11 軌黑膠），**沒有再發、沒有更早的版本**。**錄音年：資料庫端未登錄**——這張碟連曲名都沒有登錄，更沒有 recording-level relationship 或 annotation，**1983 只能當發行年寫**。⚠ **串流側 1689039127 的 ℗ 年是 1984，與資料庫端的 1983-12 差一年**（兩者只差不到一個月的跨年，但仍是兩個不同的年份標示）——**行文一律寫 1983，不得引那個 ℗ 年**。",
+  "notes": "**擋下策展層三處。**｜（一）**團名由來**：`curatorWhy` 寫「團名取自電影《卡里加利博士的小屋》」。端上沒有欄位，**不得寫**。｜（二）**曲風與極值**：`curatorWhy` 寫「聲音把 post-punk 的冷硬接到西班牙的 **pasodoble 與鬥牛意象**上，後來被歸為「**rock torero**」的**起點**」。**零樂器掛名、沒有任何 tag 或 annotation**，「起點」又是極值，**整句不得寫**；⚠ **要碰這條線只能引曲名本身**——〈Sangre española〉〈Gresca gitana〉〈Maquis〉〈Heroes de la Unión Sovietica〉〈Un día en Texas〉這幾個標題是曲目表寫出來的。｜（三）**成軍**：`curatorWhy` 寫「**1981 年在馬德里組成**」——⚠ **這一句查證屬實而且可以寫**：藝人實體的 **life-span begin 記 1981、begin-area 記 Madrid**，兩個都是欄位。｜**查證屬實、可以直接寫的**：`label`「3 Cipreses（ES，catno 3C-104）」正確；**這張碟端上只有一筆發行、沒有任何再版**；**「首張專輯」成立、「第一張唱片」不成立**（前面有兩張單曲與一張分軌 EP）；⚠ **1982-01-29 那張與 Parálisis Permanente 合掛的 EP 確實存在**（本組第 20 張卡就是那支樂團），**但只能寫成「有一張兩團合掛的 EP」，不得寫成人事或影響關係**。｜**⚠ 曲目的唯一來源是串流側**：資料庫端只登錄了 track-count 11、**tracks 陣列是空的**。**行文引曲名與長度都只有這一個來源；軌數 11 兩邊一致，這一點是雙來源確認的。**｜**⚠ 最容易誤採的是 101001577**——盤名含本張標題、℗ 年也是 1984，**但它是 17 軌的兩張碟併盤**。**串流採信 1689039127（11 軌、軌數與資料庫端相符）。有固定試聽來源。**｜⚠ **政治敘述邊界**：可寫佛朗哥過世後獨立廠牌出現這一可查證的史實（就本張而言，具體可寫的是「1983 年 12 月由一家獨立廠牌發行、編號 3C-104」），**不得寫對體制的價值判斷**；⚠ **本張特別要防的是由曲名反推立場**——〈Sangre española〉〈Maquis〉〈Heroes de la Unión Sovietica〉三個標題都指向政治語彙，**但端上沒有歌詞、沒有任何文本來源，行文只能把它們當成曲名列出，不得解釋。**"
+ },
+ {
+  "key": "desc2:Derribos Arias|En la guía, en el listín",
+  "artist": "Derribos Arias",
+  "album": "En la guía, en el listín",
+  "facts": [
+   {
+    "f": "release-group 978c167b 的欄位：title「En la guía, en el listín」、artist-credit「Derribos Arias」（藝人實體 99e62a7d，Group／country **ES**、area 記 Spain、**begin-area 記 Madrid**，disambiguation 空，**life-span 1981 起、未標結束**）、first-release-date **1983-06**（**記到月**）、primary-type Album、**secondary-types 空**。轄下 **2 個 release**：**1983-06 ES Grabaciones Accidentales GA-013**（12 吋黑膠、**10 軌**、Official）與 **2002 ES Munster Records**（黑膠、**12 軌**、Official、**沒有目錄編號**）。⚠ **策展層寫「2002 年由 Munster 復刻」時沒提軌數——那一版比原盤多兩軌。**⚠ **同一家廠牌的編號序列裡，本組第 22 張卡（Décima Víctima）拿的是 GA-007、本張是 GA-013。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/978c167b-a3c9-38c7-a6e8-ef704b3dfd01?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1983-06 原盤（Grabaciones Accidentales GA-013）逐軌與長度：**A1〈Introducción〉1:06**、A2〈Europa〉4:11、A3〈Pobre Cowboy Bill〉3:30、A4〈Lo que hay〉3:47、A5〈Aprenda alemán en 7 días〉3:25；B1〈Íntima decoración〉2:12、B2〈Crematorio〉2:50、B3〈Misiles hacia Cuba〉3:07、B4〈La chica del Brasil〉2:47、**B5〈Derribos Arias〉5:27**。**只有十軌，五加五、兩面對稱**；⚠ **第一軌叫〈Introducción〉、只有 1:06，而最後一軌的曲名就是樂團自己的名字、5:27，是全片最長的一首**——**開場是一段一分鐘的引子，收尾是一首以團名為題的長曲**。⚠ **2002 年 Munster 那一版在原序裡插入〈Tupés en crecimiento〉（排第 6）、並在最後加上〈Estrellas, sol y luna〉，成為 12 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=978c167b-a3c9-38c7-a6e8-ef704b3dfd01&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "1983-06 原盤的十軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**團員名單、前一支樂團與編制在資料庫端全部空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/4890921d-198c-4388-9dcf-ccd87e2723e5?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 7 個 release-group**：**純 Album 只有 1 個（1983-06 本張）**、EP 1 個（1982-05《Branquias bajo el agua》）、Single 3 個（1982-11《A flúor》、**1983-06《Aprenda alemán en 7 días》**、1984-06《Disco Pocho》）、Album/Compilation 2 個（1996《CD》、2001《La centralita de información》）。**「這張是他們唯一的正規專輯」查證屬實**；⚠ **1983-06 那張單曲與本張同月，曲名〈Aprenda alemán en 7 días〉就是本張的 A5**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=99e62a7d-6ad2-41e5-af11-863fce599d91&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了，**本張沒有獨立的上架條目**。（一）八個 storefront 的 `search`：**八店全部零命中**（策展層的觀察屬實）；（二）**藝人目錄 lookup**（店端 id 41296879）：目錄**只有 2 筆**——111280993《CD》20 軌（℗ 1996）與 121064930《La Centralita de Informacion》21 軌（℗ 2001），**都是合輯，沒有本張的獨立條目**；（三）`collectionId` 直查這兩筆：⚠ **111280993 的第 7 到第 16 軌逐軌就是 1983 年原盤的十首、同序、長度與原盤欄位只差 0 到 1 秒**（Introducción 1:06／Europa 4:10／Pobre Cowboy Bill 3:30／Lo Que Hay 3:46／Aprenda Aleman en 7 Días 3:25／Intima Decoración 2:12／Crematorío 2:50／Misiles Hacia Cuba 3:06／La Chica del Brasíl 2:47／Derribos Arias 5:26），前六軌與後四軌是 EP、單曲與別處的錄音；121064930 是同一份內容多插一軌〈Lili Marlen〉的 21 軌版。**兩筆都是合輯、盤名也不是本盤名，因此駁回作為本張的試聽來源。****維持無固定試聽來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=111280993&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌叫〈Introducción〉、只有 1 分 06 秒，最後一軌的曲名就是樂團自己的名字、5 分 27 秒",
+   "名下七筆條目裡只有這一張是專輯，其餘全是 EP、單曲與合輯"
+  ],
+  "sound": "1983 年 6 月 Grabaciones Accidentales 的 GA-013 是一張 12 吋、十軌，五加五、兩面對稱。A 面以只有 1:06 的〈Introducción〉開場，接〈Europa〉4:11、〈Pobre Cowboy Bill〉3:30、〈Lo que hay〉3:47、〈Aprenda alemán en 7 días〉3:25；B 面〈Íntima decoración〉2:12、〈Crematorio〉2:50、〈Misiles hacia Cuba〉3:07、〈La chica del Brasil〉2:47，最後是以樂團自己的名字為題的〈Derribos Arias〉5:27——那也是全片最長的一首。開場一分鐘的引子、收尾一首五分半的同名曲。2002 年 Munster 的復刻在原序裡多插了一首、末尾再加一首，成為十二軌。",
+  "keyTracks": [
+   "Derribos Arias",
+   "Aprenda alemán en 7 días",
+   "Introducción"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1983（**發行年，日期記到 1983-06**）。release-group 的 first-release-date 是 1983-06，其下最早的 release 就是 1983-06 的西班牙 Grabaciones Accidentales GA-013（Official、10 軌黑膠），另一筆是 2002 年 Munster Records 的 12 軌黑膠。**復刻年 2002 不得寫進 year 欄（裁定 220）。****錄音年：資料庫端未登錄**——十軌零 recording-level relationship、annotation 空白，**1983 只能當發行年寫**。⚠ **同月另有一張同名於本張 A5 的單曲，兩者分開建檔、日期都只到 1983-06，端上無法判定先後。** 串流側沒有本張獨立的上架版本可對照 ℗ 年。",
+  "notes": "**擋下策展層三處。**｜（一）**人名與前一支樂團**：`curatorWhy` 寫「**Poch（Ignacio Gasca）**在 **Ejecutivos Agresivos** 之後組的樂團」。**藝人實體沒有任何成員關係、也沒有與其他樂團的關係登錄，十軌零 recording relationship**——**人名、化名與前團名全部不得寫**；`curatorRisk` 自己也寫了「不得由掛名反推背書本名」，覆核屬實。｜（二）**歌詞與編制**：`curatorWhy` 寫「歌詞把西語的固定詞組拆開重組，**編制刻意保持乾澀**」。歌詞內容與編制端上都沒有來源，**不得寫**；⚠ **要碰「詞組」這條線只能引盤名本身**——「en la guía, en el listín」（在電話簿上、在名冊上）與曲名〈Aprenda alemán en 7 días〉是標題寫出來的。｜（三）**廠牌敘述**：`curatorWhy` 寫「2002 年由**馬德里的** Munster Records 復刻——Munster 正是**近十年重挖伊比利目錄的幾家之一**」。**label-info 只寫了廠牌名，沒有地點；「幾家之一」是無來源的評價**——**「馬德里的」與那半句都不得寫**；**「2002 年由 Munster Records 復刻」本身查證屬實，可以寫**，⚠ **而且要補上策展層漏掉的一點：那一版是 12 軌，比原盤多兩軌。**｜**查證屬實、可以直接寫的**：`label`「Grabaciones Accidentales（ES，catno GA-013）」正確；**「唯一的正規專輯」查證屬實**（名下七筆只有這一筆是 `secondary-types` 為空的專輯）；**begin-area 記 Madrid、life-span begin 1981**；⚠ **同一組編號序列裡本組第 22 張卡是 GA-007、本張是 GA-013，兩個編號都查證過。**｜**⚠ 曲目表的形狀是本張最好的材料**：第一軌是 1:06 的〈Introducción〉、最後一軌是以團名為題的 5:27。**逐軌長度原盤欄位有登錄，時間可以寫。**｜**軌數要指明版本（裁定 174）**：原盤 10 軌、2002 年 Munster 版 12 軌，**行文寫軌數必須說是 1983 年那一版**。｜**回撈候選：策展層判「八店全未命中」，三種查法覆核後屬實**——店端的藝人目錄只有兩筆合輯；其中 111280993 的第 7–16 軌與原盤十軌同序、長度只差 0 到 1 秒（可作長度的交叉核對），**但它是 20 軌合輯，駁回作為試聽來源**。**無固定試聽來源，行文不要暗示可試聽。**｜⚠ **政治敘述邊界**：可寫佛朗哥過世後獨立廠牌出現這一可查證的史實，**不得寫對體制的價值判斷**，也不得由曲名（〈Misiles hacia Cuba〉〈Europa〉）推論歌詞立場。"
+ },
+ {
+  "key": "desc2:Radio Futura|La ley del desierto, la ley del mar",
+  "artist": "Radio Futura",
+  "album": "La ley del desierto, la ley del mar",
+  "facts": [
+   {
+    "f": "release-group 98ef186e 的欄位：title「La ley del desierto, la ley del mar」、artist-credit「Radio Futura」（藝人實體 f7616ee5，Group／country **ES**、area 記 Spain、**begin-area 記 Madrid**，disambiguation 空，**life-span 1979 起、1992 結束**）、first-release-date **1984**、primary-type Album、**secondary-types 空**。轄下 3 個 release，**三筆全部是西班牙 Ariola 盤，但軌數不一樣**：**1984 ES Ariola（卡帶、14 軌、沒有目錄編號）**、**1984 ES Ariola I-206131（12 吋黑膠、12 軌）**、1986 ES Ariola 9D 256131（CD、12 軌）。⚠ **策展層列了三筆卻沒提軌數——同年的卡帶比黑膠多兩軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/98ef186e-9490-319d-a9a1-e6b0250a2ab0?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1984 年黑膠（Ariola I-206131）逐軌與長度：A1〈Tormenta de arena〉4:12、A2〈Hadaly〉3:09、**A3〈Escuela de calor〉3:31**、**A4〈Escuela de calor (instrumental)〉3:09**、A5〈Historia de play-back〉3:11、A6〈La ley〉4:08；B1〈En Portugal〉3:41、B2〈Oscuro affaire〉3:25、B3〈La secta del mar〉3:36、B4〈Un africano por la Gran Vía〉3:27、B5〈El nadador〉3:39、B6〈Semilla negra〉4:15。**十二軌六加六、兩面對稱**；⚠ **同一首〈Escuela de calor〉以人聲版與器樂版連續排在 A3、A4 兩軌**。**十二首全部落在 3:09 到 4:15 之間——這是本組長度最平均的一張碟，最長與最短只差 66 秒。**⚠ **同年的卡帶在同樣十二軌之後多接〈Duda〉2:57 與〈Dub〉3:34 兩軌；1986 年的 CD 則與黑膠一樣是十二軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=98ef186e-9490-319d-a9a1-e6b0250a2ab0&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "1984 年黑膠的十二軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**團員名單與「誰主導」在資料庫端全部空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/a65aaaab-ae59-491b-a969-bad4e7ddeed0?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **23 個 release-group**：純 Album 6 個、Album/Live 2 個、Album/Compilation 若干、Single 5 個。純 Album 依 first-release-date 排：1980《Música moderna》、**1984《La ley del desierto, la ley del mar》**、**1984《Radio Futura》**、1985《De un país en llamas》、1987《La canción de Juan Perro》、1990《Veneno en la piel》。⚠ **1984 這一年名下同時有兩個純 Album（本張與自我同名的《Radio Futura》），兩張的 first-release-date 都只記到年、記不到月日——資料庫端無法判定哪一張在先，「第二張專輯」這個序數在端上站不住。** 另有 1984 年的兩張單曲《Escuela de calor》與《Semilla negra》，**曲名都是本張的曲目**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f7616ee5-bad8-45c9-986f-0cf47d4407df&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 256074137**、℗ 1984 BMG Music Spain（頁面年份標 1984）：**十二軌與 1984 年黑膠同名同序、長度逐軌只差 0 到 4 秒**（4:11／3:08／3:31／3:07／3:09／4:09／3:40／3:23／3:35／3:27／3:39／4:19）。⚠ **這個上架條目的盤名被截短成《La Ley del Desierto》，逗號後面的半句不見了**——**盤名以資料庫端的完整寫法為準**。同一位藝人在店端的目錄另有 283079060《De un País en Llamas》（1985）、697150895《Musica Moderna》（1980）、693449873《Radio Futura》10 軌（℗ 1982）、283081528《La Canción de Juan Perro》（1987）等，**逐筆核對後皆非本張，全部駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=256074137&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一首〈Escuela de calor〉的人聲版與器樂版連著排在第三、第四軌",
+   "十二首全部壓在 3:09 到 4:15 之間，最長與最短只差 66 秒"
+  ],
+  "sound": "1984 年 Ariola 的 I-206131 是一張 12 吋、十二軌，六加六、兩面對稱。A 面〈Tormenta de arena〉4:12、〈Hadaly〉3:09，接著是連續兩軌的〈Escuela de calor〉3:31 與〈Escuela de calor (instrumental)〉3:09，再是〈Historia de play-back〉3:11、〈La ley〉4:08；B 面〈En Portugal〉3:41、〈Oscuro affaire〉3:25、〈La secta del mar〉3:36、〈Un africano por la Gran Vía〉3:27、〈El nadador〉3:39，收在〈Semilla negra〉4:15。十二首全部落在 3:09 到 4:15 之間，最長與最短只差 66 秒，是一張長度非常平均的碟。同年 Ariola 還發過一捲卡帶，在同樣十二軌之後多接了〈Duda〉與〈Dub〉兩首。",
+  "keyTracks": [
+   "Escuela de calor",
+   "Semilla negra",
+   "Un africano por la Gran Vía"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984（**發行年**）。release-group 的 first-release-date 記 1984，其下有兩筆 1984 年的西班牙 Ariola 發行（黑膠 I-206131 十二軌、卡帶十四軌，**兩筆都只記到年、端上無法判定先後**），另一筆是 1986 年的 CD。**復刻年 1986 不得寫進 year 欄（裁定 220）。****錄音年：資料庫端未登錄**——十二軌零 recording-level relationship、annotation 空白，**1984 只能當發行年寫**。⚠ **序數警告：1984 年名下同時有兩個純 Album（本張與自我同名的《Radio Futura》），兩張都只記到年，「第二張專輯」在端上無法確認。** 串流側 256074137 的 ℗ 記 1984，與發行年一致，**但那是現行權利人的 ℗ 標示**。",
+  "notes": "**擋下策展層四處，其中一處是序數。**｜（一）**⚠ 序數不成立**：`curatorWhy` 寫「這張 1984 年的**第二張**」。**藝人目錄裡 1984 年同時有兩個純 Album——本張與自我同名的《Radio Futura》，兩張的日期都只記到年、沒有月日，端上無法定序**。**「第二張」不得寫**；要寫序位只能寫「1980 年的《Música moderna》之後」或「1984 年的兩張長篇之一」。｜（二）**團員**：`curatorWhy` 寫「**Santiago Auserón 與 Enrique Sierra（Kaka de Luxe 舊成員）**主導」。**藝人實體沒有任何成員關係、十二軌零 recording relationship**——**人名與跨團的人事線都不得寫**（本組第 19 張卡是 Kaka de Luxe，兩張碟在端上沒有任何可查的關聯欄位）。｜（三）**極值與敘事**：`curatorWhy` 寫「1980 年的《Música moderna》是 la Movida 的**新浪潮起點**」「是 la Movida 從『馬德里現象』**走向全西語圈的轉折**」。兩句都是極值與敘事化的因果斷言，**不得寫**；**《Música moderna》1980 這張碟本身在藝人目錄裡查得到，可以當成「1980 年的前一張長篇」提。**｜（四）**曲風**：`curatorWhy` 寫「換掉電子鍵盤取向、把**加勒比與非洲的節拍**放進西語搖滾」。零樂器掛名、零 tag，**不得寫**；⚠ **要碰這條線只能引曲名**——〈Un africano por la Gran Vía〉〈En Portugal〉〈La secta del mar〉〈Tormenta de arena〉是曲目表寫出來的。｜**查證屬實、可以直接寫的**：`label`「Ariola（ES，catno I-206131）」正確；**begin-area 記 Madrid、life-span 1979 起 1992 止**（「1979 年在馬德里組成」這一句兩個欄位都對得上，可以寫）；⚠ **1984 年另有《Escuela de calor》與《Semilla negra》兩張單曲，曲名都是本張的曲目。**｜**⚠ 軌數要指明版本（裁定 174）**：**黑膠與 CD 是 12 軌、同年的卡帶是 14 軌**（多〈Duda〉與〈Dub〉），**行文寫軌數必須說是黑膠那一版**。｜**⚠ 曲目表的形狀是本張最好的材料**：〈Escuela de calor〉的人聲版與器樂版連續排在 A3、A4；十二首全部壓在 3:09–4:15。**逐軌長度原盤欄位有登錄，時間可以寫。**｜**⚠ 盤名被截短**：串流側的條目寫成《La Ley del Desierto》，**逗號後面的半句不見了**。**行文一律用資料庫端的完整盤名。**｜**串流採信 256074137：12 軌與 1984 年黑膠同名同序、長度只差 0 到 4 秒、℗ 1984。有固定試聽來源。** 駁回同目錄下的《Musica Moderna》《Radio Futura》《De un País en Llamas》等別碟。｜⚠ **政治敘述邊界**：可寫佛朗哥過世後出版環境改變這一可查證的史實，**不得寫對體制的價值判斷**，也不得由曲名推論歌詞立場或把這張碟寫成某個時期的轉折點。"
  }
 ]
