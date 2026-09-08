@@ -79,6 +79,10 @@ FILL = {'counter': [(1258, 1600, 800, 1210)]}    # 檯身：挖寶櫃原本擋�
 # 是因為偵測器在有器材的欄位讀到的是器材底部（1226），才把檯面補成鋸齒。
 # 既然是水平的，直接從乾淨的一段（左喇叭與唱盤之間 x 650–748）橫向鏡射抄過去就好。
 TILE_FILL = {'counter': (1156, 1320, 462, 1162, 650, 748)}  # (y0,y1, 洞x0,洞x1, 來源x0,x1)
+# 有些件的遮罩上緣要硬切：補回去的牆跟原本的牆在板縫處有色差，
+# 超過門檻就會被當成家具切進來，變成黏在櫃檯上的一條牆碎片（浮在檯面上方的牆上）。
+# 櫃檯的檯面上緣在 y≈1164，那條以上不該有任何東西（器材已經是獨立件）。
+TOP_CLIP = {'counter': 1158}
 # 個別調門檻：器材是牆上的深色方塊，門檻低會把牆的細微色差也算進來
 # 參考圖裡兩個紙箱的**底部本來就被原圖下緣切掉**（畫到 y=1970 就沒了），
 # 所以不管挪到哪都會露出一個平口。這裡把箱身往下接長、再壓一條底緣與接地陰影。
@@ -162,6 +166,8 @@ def cut(ref, empty, box, name=None, wall_thr=105, floor_thr=40, min_blob=3000):
         sizes = ndi.sum(m, lab, range(1, n + 1))
         m = np.isin(lab, 1 + np.where(sizes > min_blob)[0])
     m = ndi.binary_dilation(m, np.ones((3, 3)))
+    if name in TOP_CLIP:                              # 上緣硬切，去掉黏上來的牆碎片
+        m[:max(0, TOP_CLIP[name] - y0), :] = False
     for other in OCCLUDED_BY.get(name, []):           # 扣掉擋在前面那件
         ox0, oy0, ox1, oy1 = PIECES[other]
         m[max(0, oy0-y0):max(0, oy1-y0), max(0, ox0-x0):max(0, ox1-x0)] = False
