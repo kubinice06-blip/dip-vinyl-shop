@@ -1,128 +1,518 @@
 [
-{
- "key": "desc2:Youth of Today|Can't Close My Eyes EP",
- "artist": "Youth of Today",
- "album": "Can't Close My Eyes EP",
- "facts": [
-  {"f":"release-group e056c9e5 的欄位：title「Can't Close My Eyes EP」、artist-credit「Youth of Today」（藝人實體 9ca27db4，**disambiguation 空白**）、first-release-date **1985**（只有年、無月日）、primary-type EP、secondary-types **空**。**轄下只有 1 筆 release**：1985 US Official、**7\" Vinyl、7 軌**，label-info **Positive Force／catno「Number 4」**（catno 欄位就是這四個字，不是數字編號格式）。","src":"https://musicbrainz.org/ws/2/release-group/e056c9e5-04b3-4e49-bff7-da9dc0be6b28?fmt=json&inc=artist-credits+releases+media"},
-  {"f":"**1985 年 Positive Force 7 吋的七軌依序是**：1〈Expectations〉、2〈Crucial Times〉、3〈I Have Faith〉、4〈Youth of Today〉、5〈Positive Outlook〉、6〈Can't Close My Eyes〉、7〈Youth Crew〉。**七軌沒有任何一軌記錄長度**——這一筆是本張唯一的實體 release，所以 MB 端拿不到本張的秒數。**第 4 軌與樂團同名，第 7 軌的曲名就是〈Youth Crew〉。**","src":"https://musicbrainz.org/ws/2/release?release-group=e056c9e5-04b3-4e49-bff7-da9dc0be6b28&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"藝人端點分頁全列 **9 個 release-group**（release-group-count 9）：EP 3 個（**本張 1985**、1990-03-04《Disengage》、1991《Benefit 7\"》＋Live）、Album 6 個（1987-04-05《Break Down the Walls》、1988《Can't Close My Eyes》076b41ca、1988《We're Not in This Alone》、1989《Break Down the Walls / Can't Close My Eyes》＋Compilation、1989《Take a Stand》＋Live、無日期《Anarchy in Vienna》＋Live）。**依日期排序，本張 1985 是全目錄最早的一筆。**","src":"https://musicbrainz.org/ws/2/release-group?artist=9ca27db4-f127-4aeb-ae87-29e21f558c13&fmt=json&limit=100&offset=0"},
-  {"f":"**同名陷阱（同一支團、兩個 release-group）**：076b41ca《Can't Close My Eyes》(1988、primary-type **Album**) 與本張 e056c9e5《Can't Close My Eyes EP》(1985、EP) 是**兩筆不同的 release-group**，盤名正規化後只差一個「EP」。**兩者一律以 rgMbid 分辨，不得以盤名字串配對。**","src":"https://musicbrainz.org/ws/2/release-group?artist=9ca27db4-f127-4aeb-ae87-29e21f558c13&fmt=json&limit=100&offset=0"},
-  {"f":"串流店面的 collectionId **111654959**：collectionName「Can't Close My Eyes」、artistName「Youth of Today」、releaseDate **1985**、trackCount **14**、copyright「**℗ 1997 Revelation Records**」、collectionExplicitness notExplicit。`entity=song` 攤出的 14 軌是：1〈Expectations〉2:08／2〈Crucial Times〉1:26／3〈I Have Faith〉1:43／4〈Youth of Today〉2:12／**5〈Take a Stand〉0:43**／6〈Positive Outlook〉1:22／7〈Can't Close My Eyes〉0:49／**8〈We Just Might〉1:17**／9〈Youth Crew〉2:33／**10〈Take a Stand〉0:37／11〈Stabbed In the Back〉1:02／12〈We Just Might〉1:12／13〈Wake Up and Live〉1:10／14〈Standing Hard〉0:18**。**本張的七軌全在裡面、相對順序完全一致（落在第 1、2、3、4、6、7、9 軌），但中間插入兩軌、尾巴另有五軌，合計七軌不是本張的曲目。**","src":"https://itunes.apple.com/lookup?id=111654959&country=us&entity=song&limit=200"}
- ],
- "hookCandidates": [
-  "七首歌的第四首與團同名，第七首的曲名就叫〈Youth Crew〉",
-  "唱片上七首歌，一首的長度都沒有留下紀錄"
- ],
- "sound": "1985 年 Positive Force 的 7 吋是七軌，MB 端這七軌**一格長度都沒有**，所以本張的秒數只能從後來那個十四軌的版本借看：〈Expectations〉2:08、〈Crucial Times〉1:26、〈I Have Faith〉1:43、〈Youth of Today〉2:12、〈Positive Outlook〉1:22、〈Can't Close My Eyes〉0:49、〈Youth Crew〉2:33——七首加起來約十二分鐘，最短的〈Can't Close My Eyes〉不到五十秒。曲名一半是名詞短語（〈Expectations〉〈Crucial Times〉〈Positive Outlook〉），另一半直接把團名與場景的名字寫成標題：第四軌〈Youth of Today〉與樂團同名，第七軌就叫〈Youth Crew〉。",
- "keyTracks": ["Expectations","Can't Close My Eyes","Youth Crew"],
- "status": "full",
- "yearVerified": "一致，1985。release-group first-release-date **1985**（只有年份、沒有月日），其下唯一的 release 就是 1985 US 的 Positive Force／Number 4（Official、7\" Vinyl、7 軌），與卡單 `year` 1985 相符。**本 release-group 名下沒有任何再發**——但同一支團另有 076b41ca《Can't Close My Eyes》(1988、Album)，盤名幾乎相同、年份晚三年，**照盤名配對就會取到 1988**（裁定 220 的形狀，本層以 rgMbid 排除）。**串流那一路的 releaseDate 欄寫 1985、與 MB 相符，但 ℗ 欄是「℗ 1997 Revelation Records」**，且內容是十四軌不是七軌——**店面的年份欄與它自己的內容不是同一回事**，年份仍取 1985。**同名先行單曲：無**（〈Can't Close My Eyes〉只作為本張第 6 軌出現）。",
- "notes": "**擋下策展層五處**：(1) `exceptionReason` 寫「**youth crew 這個詞成立之前的那張 7 吋**」——**與本張自己的曲目直接衝突**：第 7 軌的曲名就是〈Youth Crew〉，這個詞印在唱片上。**「這個詞成立之前」不得寫。** (2) `exceptionReason` 寫「七首歌把 straight edge 從華府的 Minor Threat 挪到**康乃狄克與紐約**」——**華府、康乃狄克、紐約三個地名在實體欄位端全部查不到**，依裁定 241／250 一律不得寫；與另一支團的承接關係同樣是斷語，**不得寫**。 (3) `exceptionReason` 寫「之後**整條 Revelation 目錄都建立在這個模板上**」——查無來源的斷語，**不得寫**；而且**本張的廠牌是 Positive Force、不是 Revelation**，行文不得把兩個廠牌接在一起。 (4) `why` 寫「**影響最直接**的一張」——斷語，**不得寫**；同句的「年代最早」**查證屬實**（本張 1985 是該藝人目錄 9 個 release-group 裡最早的一筆），可以留。 (5) `why` 寫「c-120 收的《Break Down the Walls》(1987) 與《We're Not in This Alone》(1988) 都在這張之後」**查證屬實**（目錄日期 1987-04-05 與 1988）。｜**軌數與長度（裁定 251）**：卡單 `label` 釘的是 **1985 Positive Force、7 吋、7 軌**，**行文只能引這七軌、只能引這七個曲名**。〈Take a Stand〉〈We Just Might〉〈Stabbed In the Back〉〈Wake Up and Live〉〈Standing Hard〉**五個曲名都不是本張的曲目**，一個都不得引。**本張七軌在 MB 端全無長度**；本檔引的秒數取自十四軌那一版，行文可以寫「約十二分鐘」「不到五十秒」，但**不得寫成「首版唱片標示的長度」**。｜**串流採信 111654959：`entity=song` 攤出的十四軌裡，本張七軌同名、相對順序完全一致（第 1、2、3、4、6、7、9 軌），可確認內容包含本張全部曲目；但它是十四軌的版本、℗ 欄寫 1997 Revelation Records，不是 1985 年那張 Positive Force 7 吋。可以當試聽來源，但不是本張原盤的證據；不是本張的七軌是第 5 軌〈Take a Stand〉、第 8 軌〈We Just Might〉與第 10 到 14 軌。**｜**不得寫個別成員的名字**（裁定 241／250），**也不得寫任何與 straight edge 立場相關的評價或立場敘述**，只寫廠牌、catno、年份、載體、曲目與軌數。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1985、Positive Force／Number 4、7 吋、7 軌」；`Youth_of_Today` 條目支持樂團自 1985 年起活動；**`Youth_crew` 條目只證明這個詞作為次類型存在，不支持 `exceptionReason` 裡除了「1985 年 Positive Force 發行」以外的任何一句**——尤其不支持「這個詞成立之前」那半句。"
-},
-{
- "key": "desc2:Gorilla Biscuits|demo 1987",
- "artist": "Gorilla Biscuits",
- "album": "demo 1987",
- "facts": [
-  {"f":"release-group 1c997f24 的欄位：title「**demo 1987**」（**全小寫，MB 實體本身就是小寫的 demo**）、artist-credit「Gorilla Biscuits」（藝人實體 0320a32e，disambiguation「hardcore punk」）、first-release-date **1987**（只有年）、primary-type EP、**secondary-types [\"Demo\"]**。轄下 **2 筆 release**：**1987 US Official、Cassette、6 軌**（卡單釘的這一筆，label-info 欄有一筆但廠牌名是 **[no label]**、catno **[none]**）／**1991 US、status Bootleg、media format 為 null、6 軌**。","src":"https://musicbrainz.org/ws/2/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790?fmt=json&inc=artist-credits+releases+media"},
-  {"f":"**1987 年那捲卡帶的六軌依序是**：1〈No Reason Why〉、2〈Big Mouth〉、3〈Better Than You〉、4〈Gorilla Biscuits〉、5〈Do It Yourself〉、6〈Finish What You Started〉。**六軌全部沒有記錄長度。** 長度只能引 1991 那筆 Bootleg：〈No Reason Why〉2:09／〈Big Mouth〉2:21／〈Better Than You〉1:47／**〈GB〉1:19**／〈Do It Yourself〉1:50／〈Finish What You Started〉1:47，**六軌合計 11:13**。**兩筆的第 4 軌曲名不同**：1987 卡帶寫〈Gorilla Biscuits〉、1991 Bootleg 縮寫成〈GB〉。","src":"https://musicbrainz.org/ws/2/release?release-group=1c997f24-75ad-3b2b-bfaa-1891c79fa790&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"藝人端點分頁全列 **8 個 release-group**（release-group-count 8）：**1987 本張（EP＋Demo，全目錄最早的一筆）**、1988《Gorilla Biscuits》(96ae45ee、Album)、1989-06-24《Start Today》(2076b5a3、Album)、1991《We're Gorilla Biscuits From N.Y.C. And This Is Called .... A New Direction !!!!》(EP)、1997《Puzzle of 38 Pieces (Rare Bootleg Tracks)》(Album)、2006《At the Matinee》(Single)、無日期《Walter Sings the Hits...》(Other)、無日期《Having A Great Time... Wish You Were There》(Album＋Live)。**secondary-types 含 Demo 的只有本張一個。**","src":"https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0"},
-  {"f":"**逐軌比對推翻「隔年的 7 吋 CD 版把這捲 demo 併進去」這個說法**：1988 年同名唱片（96ae45ee）的各版 CD 是 12 軌，比 7 軌黑膠多出的五軌是〈Sitting Around at Home〉〈Biscuit Power〉〈Short End of the Stick〉〈Hold Your Ground（另一版）〉〈Slut〉——**這五個曲名沒有一個出現在 1987 年這捲 demo 上**；反過來，demo 的〈Better Than You〉與〈Do It Yourself〉**在 1988 年那張唱片的任何一版上都不存在**。**兩張碟真正重疊的只有〈No Reason Why〉〈Big Mouth〉〈Finish What You Started〉三個曲名。**","src":"https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"店面回撈的候選 **90254613** 是 collectionName「Gorilla Biscuits」、releaseDate **1988**、trackCount **12**、℗ 1988 Revelation Records——**那是 1988 年那張同名唱片的十二軌版，不是本張**。它的十二軌裡只有〈Big Mouth〉〈No Reason Why〉〈Finish What You Started〉與本張同名，**本張的〈Better Than You〉〈Do It Yourself〉與那首與團同名的〈Gorilla Biscuits〉一軌都不在**。以「Gorilla Biscuits demo」在 us 店搜尋回 4 筆，另三筆分別是《Start Today》與兩個同名不同人的碟，**無一筆是本張**。","src":"https://itunes.apple.com/lookup?id=90254613&country=us&entity=song&limit=200"}
- ],
- "hookCandidates": [
-  "六首歌裡有一首與團同名，四年後被翻成兩個字母重印",
-  "自製卡帶的廠牌欄位上，填的是「沒有廠牌」"
- ],
- "sound": "1987 年那捲卡帶是六軌，MB 端這六軌**一格長度都沒有**；本檔引的秒數取自四年後那筆私製盤，六首合計 11 分 13 秒，最長的〈Big Mouth〉2:21、最短的與團同名那軌 1:19，其餘四首都落在 1:47 到 2:09 之間——除了最短那一首，整捲幾乎是同一個尺寸切出來的。曲名多是完整的短句而不是單詞：〈No Reason Why〉〈Better Than You〉〈Do It Yourself〉〈Finish What You Started〉，只有第四軌直接用團名當標題。同一軌在 1987 年寫作〈Gorilla Biscuits〉、在 1991 那筆上縮成〈GB〉。",
- "keyTracks": ["No Reason Why","Gorilla Biscuits","Finish What You Started"],
- "status": "partial",
- "yearVerified": "一致，1987。release-group first-release-date **1987**（只有年份、沒有月日），其下 1987 US 的那筆 Official 卡帶就是卡單所釘的版本，與卡單 `year` 1987 相符。**再發年份一筆：1991 US**，但**那一筆的 status 是 Bootleg、media format 為 null**（裁定 43／57 的形狀），**不是可用的再發，年份也不得引**。**店面沒有本張**——回撈候選 90254613 的 releaseDate 是 1988、指向的是另一張碟。**同名先行單曲：無。**",
- "notes": "**擋下策展層四處**：(1) `exceptionReason` 寫「這捲 demo 在紐約硬蕊的**翻錄鏈裡流通了整整一年**」——流通方式與「整整一年」在任何實體欄位端都查不到，**不得寫**；MB 只能證明 1987 有一筆 Official 卡帶、1991 有一筆 Bootleg。 (2) `exceptionReason` 寫「**Gorilla Biscuits 在 Revelation 簽下他們之前**的六首歌卡帶」——「簽下」是合約敘述、查無來源，**不得寫**；可查證的只有「本張 label-info 的廠牌欄填的是 [no label]、catno [none]，1988 年那張才出現 Revelation Records／Revelation:4」。 (3) `why` 寫「加上 c-120 的《Start Today》正好構成 demo → 7 吋 → LP **三級**」——**《Start Today》(2076b5a3) 與 1988 年同名唱片 (96ae45ee) 在 MB 的 primary-type 都是 Album**，「7 吋 → LP」這個分級在型別欄位上不成立，**不得寫成三級遞進**。 (4) **最重的一處**：卡單 `label` 與 c-122 策展稿都寫 1988 年那張的 CD 版「是把 1987 年 demo 併進來的另一版」——**逐軌比對推翻**：CD 多出的五軌沒有一軌出現在本張，本張的〈Better Than You〉〈Do It Yourself〉在那張的任何版本上都不存在，兩張真正重疊的只有三個曲名。**「CD 版把這捲 demo 併進去」不得寫。**｜**軌數與長度（裁定 251）**：卡單 `label` 釘的是 **1987 US Official 卡帶、6 軌**，行文只能引這六軌。**本張六軌在 MB 端全無長度**，本檔的秒數取自 1991 那筆 **Bootleg**——**行文若要用秒數，不得寫成「這捲卡帶標示的長度」，也不得提到那筆私製盤的年份或存在**。｜**串流駁回 90254613：`entity=song` 攤出的十二軌是 1988 年同名唱片的版本（℗ 1988 Revelation Records、releaseDate 1988），與本張只重疊三個曲名，本張半數曲目不在其中——不採為本張的試聽來源。** 三店以「掛名＋盤名」搜尋另回 4 筆，無一筆是本張。｜**序數**：藝人目錄 8 個 release-group，**本張 1987 是全目錄最早的一筆、也是唯一一個 secondary-types 含 Demo 的**，「這支團目錄上最早的一筆錄音」可以寫；**不得寫「唯一的 demo 卡帶」**（1991 那筆私製盤同屬本 release-group）。｜**不得寫個別成員的名字**，**不得寫區級地名**（紐約市以下的地名一律不得寫），**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**素材不足以寫到 180 字**：可寫的事實格只有「1987／US／Official 卡帶／6 軌／廠牌欄 [no label]／catno [none]／六個曲名／第四軌與團同名／目錄最早的一筆／全無長度」十項，**本張標 partial**（裁定 252 的判準是可寫的事實格數，不是曲名長度）。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1987、US、Official 卡帶、6 軌、廠牌欄 [no label]」；`Gorilla_Biscuits` 條目支持樂團存在與 1986 年成軍（**但條目裡的成員名與城市名一律不得寫**）；**`Demo_(music)` 是「什麼是 demo」的通用定義條目，與本張沒有任何關係，不支持 `exceptionReason` 的任何一句**。"
-},
-{
- "key": "desc2:Gorilla Biscuits|Gorilla Biscuits",
- "artist": "Gorilla Biscuits",
- "album": "Gorilla Biscuits",
- "facts": [
-  {"f":"release-group 96ae45ee 的欄位：title「Gorilla Biscuits」、artist-credit「Gorilla Biscuits」（0320a32e，disambiguation「hardcore punk」）、first-release-date **1988**（只有年）、**primary-type Album**、secondary-types **空**。轄下 **8 筆 release**：**1988 US Official／Revelation Records／catno「Revelation:4」／media format 只寫「Vinyl」（未標尺寸）／7 軌**（卡單釘的這一筆）／1991 DE 兩筆 We Bite Records（WB 077CD、WE BITE 077CD）CD 12 軌，**其中一筆 status 為 null**／1992 US Official Revelation:4 CD 12 軌／1995 US Official REV004＋Revelation:4 CD 12 軌／**2011 US Official Revelation:4、7\" Vinyl、7 軌**／無日期 US Official CD 12 軌／無日期 XW Official Digital Media 12 軌。","src":"https://musicbrainz.org/ws/2/release-group/96ae45ee-871c-40b1-9f50-ca0c6c4f5c16?fmt=json&inc=artist-credits+releases+media"},
-  {"f":"**1988 Revelation:4 的七軌與長度**：1〈High Hopes〉2:23、2〈Big Mouth〉1:59、3〈No Reason Why〉1:51、**4〈GM2〉0:18**、5〈Hold Your Ground〉2:01、6〈Breaking Free〉1:10、7〈Finish What You Started〉1:40。**七軌總長 11:22，最長〈High Hopes〉2:23、最短〈GM2〉只有 18 秒**；扣掉 18 秒那軌，其餘六軌落在 1:10 到 2:23 之間。","src":"https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"**十二軌的 CD 版多出來的五軌是**〈Sitting Around at Home〉1:41–1:43、〈Biscuit Power〉1:22–1:24、〈Short End of the Stick〉1:29–1:32、**第二次出現的〈Hold Your Ground〉**（1992 US 版標作「Hold Your Ground (alternate version)」、無日期數位版標作「Hold Your Ground (demo)」）2:02–2:04、〈Slut〉1:13–1:14（數位版標作「Slut (demo)」）。**各版對同幾軌的命名互不一致**：第 9 軌在 1991／1992 版叫〈Biscuit Power〉、在 1995 版叫〈Gorilla Biscuit〉、在無日期那筆 CD 叫〈Gorilla Biscuits〉；1995 那筆更把第 11、12 軌寫成〈Hold Your Ground 1〉與〈GM2 1〉。","src":"https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"**那五軌不是 1987 年那捲 demo**：demo（1c997f24）的六軌是〈No Reason Why〉〈Big Mouth〉〈Better Than You〉〈Gorilla Biscuits〉〈Do It Yourself〉〈Finish What You Started〉，**與 CD 多出的五軌零重疊**；demo 的〈Better Than You〉〈Do It Yourself〉在本 release-group 的任何一筆 release 上都不存在。**兩張碟真正重疊的只有〈No Reason Why〉〈Big Mouth〉〈Finish What You Started〉三軌。**","src":"https://musicbrainz.org/ws/2/release?release-group=1c997f24-75ad-3b2b-bfaa-1891c79fa790&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"串流店面的 collectionId **90254613**：collectionName「Gorilla Biscuits」、artistName「Gorilla Biscuits」、releaseDate **1988**、trackCount **12**、copyright「**℗ 1988 Revelation Records**」、notExplicit。`entity=song` 攤出 12 軌，**第 1 到 7 軌與 1988 年那筆黑膠逐軌同名同序**（2:24／1:59／1:52／0:20／2:02／1:12／1:41，逐軌差 1 到 2 秒），**第 8 到 12 軌的曲名後面店面自己標了「(Bonus Track)」**：〈Sitting Round At Home (Bonus Track)〉〈Biscuit Power (Bonus Track)〉〈Short End of the Stick (Bonus Track)〉〈Hold Your Ground (demo) [Bonus Track]〉〈Slut (demo) [Bonus Track]〉。","src":"https://itunes.apple.com/lookup?id=90254613&country=us&entity=song&limit=200"},
-  {"f":"藝人端點分頁全列 **8 個 release-group**，**primary-type=Album 且 secondary-types 為空的是 3 個**：1988 本張、1989-06-24《Start Today》、1997《Puzzle of 38 Pieces (Rare Bootleg Tracks)》。**依日期排序，本張是三張裡最早的一張。**","src":"https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0"}
- ],
- "hookCandidates": [
-  "七首歌裡有一首只有十八秒，曲名是兩個字母加一個數字",
-  "同一個廠牌編號掛了二十三年，一次七軌、一次還是七軌，中間的 CD 全是十二軌"
- ],
- "sound": "1988 年 Revelation:4 的首版是七軌、總長 11 分 22 秒，平均一首一分半出頭。最長的開場〈High Hopes〉2:23、最短的第四軌〈GM2〉只有 18 秒——把 18 秒那軌拿掉，其餘六首整齊地落在 1:10 到 2:23 之間。收尾的〈Finish What You Started〉1:40 與開場相差四十三秒，是七軌裡拉得最開的一對。曲名短而直接：〈High Hopes〉〈Big Mouth〉〈No Reason Why〉〈Hold Your Ground〉〈Breaking Free〉，只有〈GM2〉不是詞句。後來的 CD 版一律十二軌，多出的五軌店面自己標成 bonus。",
- "keyTracks": ["High Hopes","GM2","Finish What You Started"],
- "status": "full",
- "yearVerified": "一致，1988。release-group first-release-date **1988**（只有年份、沒有月日），其下最早的 release 就是 1988 US 的 Revelation Records／Revelation:4（Official、format 欄只寫「Vinyl」、7 軌），與卡單 `year` 1988 相符。**再發六筆會蓋年**：1991 DE 兩筆（We Bite Records，CD 12 軌，**其中一筆的 status 是 null**）、1992 US（CD 12 軌）、1995 US（CD 12 軌）、**2011 US（7\" Vinyl、7 軌）**、另有兩筆無日期（US CD 12 軌與 XW 數位 12 軌）——**照載體或照軌數取年都會取到 1991 以後**（裁定 220 的形狀）。**catno「Revelation:4」從 1988 一路掛到 2011，跨越 23 年、四種載體**，照 catno 配對完全分不出版本。**串流那一路的 releaseDate 欄寫 1988、℗ 欄也寫 1988 Revelation Records，兩欄與 MB 首版一致，但內容是十二軌不是七軌。** **同名先行單曲：無**（本張是同名碟，曲目中沒有同名曲）。",
- "notes": "**⚠ 載體：不得寫「7 吋」。** 卡單 `label` 與策展稿都寫「實體是 7 吋」，但**所釘的 1988 那筆 release，`media.format` 欄只寫「Vinyl」、沒有尺寸**（c-120 交接第六節列的同一種形狀）。**唯一標成「7\" Vinyl」的是 2011 年那筆再發**，同 catno、同 7 軌。行文可以寫「1988 年的黑膠、七軌」，**不得寫「1988 年的 7 吋」**；若要提 7 吋，只能寫成「同一個編號在 2011 年再壓時標的是 7 吋」。｜**軌數混版（裁定 251）**：卡單釘的是 **1988 Revelation:4、7 軌**，**行文只能引這七軌**。〈Sitting Around at Home〉〈Biscuit Power〉〈Short End of the Stick〉〈Slut〉與第二次出現的〈Hold Your Ground〉**五軌都不是本張曲目，一個都不得引**；那五軌各版命名不一致（〈Biscuit Power〉／〈Gorilla Biscuit〉／〈Gorilla Biscuits〉三種寫法），更不得當成穩定的曲名引用。｜**擋下策展層三處**：(1) 卡單 `label` 寫「1991 起的 DE／US CD 版一律 12 軌，**是把 1987 年 demo 併進來的另一版**」——**逐軌比對推翻**：CD 多出的五軌與 1987 年 demo 的六軌**零重疊**，demo 的〈Better Than You〉〈Do It Yourself〉在本 release-group 的任何版本上都不存在，兩張真正重疊的只有三軌。**「CD 版把 demo 併進來」不得寫。** (2) `why` 寫「**youth crew 這一支最被反覆引用的 7 吋**」——極值斷語＋尺寸都站不住，**不得寫**。 (3) `why` 寫「**Revelation 目錄第四號**」——**可查證的只有 catno 字串「Revelation:4」**（1995 那筆另寫作 REV004）；MB 端沒有回問過該廠牌的完整目錄，**「第四號」這個序數不得寫**，只能寫 catno 本身。｜**串流採信 90254613，但限定用途**：`entity=song` 攤出的 12 軌，第 1 到 7 軌與 1988 年那筆黑膠**逐軌同名同序、長度差 1 到 2 秒**，第 8 到 12 軌**店面自己標了「(Bonus Track)」**，且 ℗ 欄寫 1988 Revelation Records、與首版年份一致。**可以當試聽來源，但上架的是十二軌的 CD 編排、不是 1988 年那張七軌黑膠的證據；行文不得引第 8 到 12 軌，也不得引十二這個軌數。**｜**序數**：藝人目錄 8 個 release-group、純 Album（secondary-types 為空）3 張，**本張是三張裡最早的一張**，「這支團目錄上第一張 Album」可以寫；**不得寫「唯一一張」**。｜**不得寫個別成員的名字**（裁定 241／250），**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：本卡的 `releaseType` 是 **Album**、`exceptionReason` 為空字串、`exceptionEvidenceUrls` 為空陣列（本批裁定第 2 條），**沒有要覆核的例外舉證**；「實體是 7 吋」這句只出現在 `risk` 與 `mbNote`，而**如上所述那句本身也與 MB 的 format 欄不符**。"
-},
-{
- "key": "desc2:Judge|New York Crew",
- "artist": "Judge",
- "album": "New York Crew",
- "facts": [
-  {"f":"release-group 1c287987 的欄位：title「New York Crew」、artist-credit「Judge」（藝人實體 3827fbb6，**disambiguation「US straight edge punk band」**）、first-release-date **1988**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release**：**1988 US Official／Schism／catno「Skiz-2」／7\" Vinyl／5 軌**（卡單釘的這一筆）／**1992-01-01 XW Official／Revelation Records（catno 欄為空）／Digital Media／5 軌**，barcode 098796001479。","src":"https://musicbrainz.org/ws/2/release-group/1c287987-a434-4beb-9005-00d376698c42?fmt=json&inc=artist-credits+releases+media"},
-  {"f":"**1988 Schism／Skiz-2 的五軌與長度**：1〈Fed Up!〉1:46、2〈In My Way〉1:53、3〈I've Lost〉1:42、4〈New York Crew〉2:15、5〈Warriors〉2:54。**五軌總長 10:30**；最短〈I've Lost〉1:42、最長〈Warriors〉2:54，兩端差 72 秒，中間三軌全部落在 1:42 到 2:15 之間。**第 4 軌與盤名同名。**","src":"https://musicbrainz.org/ws/2/release?release-group=1c287987-a434-4beb-9005-00d376698c42&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"**1992-01-01 那筆數位版與 1988 年黑膠同名同序、長度差 1 到 3 秒**（1:45／1:54／1:43／2:15／2:51），但**兩軌的寫法不同**：第 1 軌寫成〈Fed up!〉（小寫 u）、第 3 軌寫成〈I've Lost...〉（尾巴多了三點）。**兩筆的廠牌不同**：1988 那筆是 Schism、1992 那筆是 Revelation Records 且 catno 欄為空。","src":"https://musicbrainz.org/ws/2/release?release-group=1c287987-a434-4beb-9005-00d376698c42&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"藝人端點分頁全列 **7 個 release-group**（release-group-count 7）：**1988 本張《New York Crew》(EP)**、1989《Bringin' It Down》(Album)、1989《Chung King Can Suck It LP》(Album)、1990《There Will Be Quiet...》(EP)、1992《No Apologies》(Album)、2005《What It Meant - The Complete Discography》(Album＋Compilation)、2018-04-12《Serial Killer》(Single)。**依日期排序，本張 1988 是全目錄最早的一筆。**","src":"https://musicbrainz.org/ws/2/release-group?artist=3827fbb6-e219-4e2d-9af8-35cc9a7d8d8e&fmt=json&limit=100&offset=0"},
-  {"f":"串流店面的 collectionId **1471235742**：collectionName「New York Crew」、artistName「Judge」、**releaseDate 1989**（比 MB 的 1988 晚一年）、trackCount **5**、copyright「**℗ 1989 Revelation Records**」、notExplicit。`entity=song` 攤出 5 軌，**與 1988 年黑膠逐軌同名同序、長度逐軌差 1 到 3 秒**（〈Fed Up!〉1:45／〈In My Way〉1:54／〈I've Lost...〉1:43／〈New York Crew〉2:15／〈Warriors〉2:51），**與 1992 年那筆數位版的長度一秒不差**。","src":"https://itunes.apple.com/lookup?id=1471235742&country=us&entity=song&limit=200"}
- ],
- "hookCandidates": [
-  "五首歌十分半，第四首與唱片同名",
-  "同一張唱片，1988 年那版掛的廠牌與 1992 年那版不是同一家"
- ],
- "sound": "1988 年 Schism／Skiz-2 的 7 吋是五軌、總長 10 分 30 秒。最短的〈I've Lost〉1:42 與最長的〈Warriors〉2:54 差七十二秒，中間三首擠在 1:42 到 2:15 的窄帶裡；收尾那軌是全片唯一超過兩分半的一首，比開場的〈Fed Up!〉長了整整六十八秒。曲名有兩個帶標點的祈使或斷語（〈Fed Up!〉〈I've Lost〉），第四軌〈New York Crew〉與唱片同名。四年後那筆數位版逐軌同名同序、只差一到三秒，但把第一軌寫成小寫的〈Fed up!〉、第三軌尾巴加了三點。",
- "keyTracks": ["Fed Up!","New York Crew","Warriors"],
- "status": "full",
- "yearVerified": "一致，1988。release-group first-release-date **1988**（只有年份、沒有月日），其下最早的 release 就是 1988 US 的 Schism／Skiz-2（Official、7\" Vinyl、5 軌），與卡單 `year` 1988 相符。**再發一筆：1992-01-01 XW 的 Revelation Records 數位版**（5 軌、catno 欄空），**照日期完整度取年會取到 1992-01-01**（裁定 220 的形狀）。**串流那一路的 releaseDate 欄寫 1989、比 MB 的首版晚一年**，同一筆的 ℗ 欄也寫「℗ 1989 Revelation Records」——**店面兩個欄位互相一致，但兩個都與 MB 的 1988 與 Schism 不符**；年份仍取 1988。**同名先行單曲：無**（〈New York Crew〉只作為本張第 4 軌出現）。",
- "notes": "**⚠ §5.5 舉證有一個站不住**：`exceptionEvidenceUrls` 的 `https://en.wikipedia.org/wiki/Schism_Records` **雖然回 200，但它是一個轉址**——實際落到的條目是一位**樂手的個人傳記**（條目標題與內容都是人物，不是廠牌）。**這個網址不支持 `exceptionReason` 裡「Schism 這條廠牌線」的任何一句**，而且它落到的是人名條目，**依裁定 241／250 那頁的內容一個字都不得寫進正文**。**這一筆舉證應視為無效，需策展層補一個真正記錄該廠牌的來源。** 另兩個網址（MB release-group 與 `Judge_(band)`）回 200 且內容對得上樂團與唱片。｜**擋下策展層三處**：(1) `exceptionReason` 寫「Schism 這條**由 Youth of Today 成員自營**的廠牌線」——成員關係查無實體欄位來源，且唯一提到它的來源是人名條目，**不得寫**。 (2) `exceptionReason` 寫「1988 年五首歌把 straight edge **從正面號召翻成對立與審判的語氣**，整條 90 年代 hardline 由此起算」——**立場敘述＋斷語，兩句都不得寫**（派工信第 4 條明令不得寫與 straight edge 立場相關的評價）。 (3) `exceptionReason` 寫「Judge 的**第一張實體**」——**查證屬實**：藝人目錄 7 個 release-group，本張 1988 是依日期最早的一筆，「這支團目錄上最早的一筆」可以寫；但**不得寫成「第一張唱片」以外的更強說法**，也不得寫「唯一的 EP」（1990 年還有一個 EP）。｜`risk` 說「c-120 收的《Bringin' It Down》(1989) 在這張之後」**查證屬實**（目錄日期 1989）。｜**軌數（裁定 251）**：兩筆 release 都是 5 軌，本張沒有軌數分歧；**行文引 5 軌、引這五個曲名都安全**。｜**廠牌**：**1988 那筆掛 Schism、catno Skiz-2；1992 那筆掛 Revelation Records、catno 欄是空的。** 行文寫本張的廠牌一律寫 Schism，**不得寫成「Revelation 發行」**。｜**串流採信 1471235742：`entity=song` 攤出的五軌與 1988 年黑膠逐軌同名同序、長度差 1 到 3 秒，與 1992 年那筆數位版一秒不差，可確認就是本張的內容。但 releaseDate 與 ℗ 兩欄都指向 1989 與 Revelation Records，行文不得引店面的年份，也不得拿它當「1988 年 Schism 那一版」的證據。**｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場、宗教相關的評價或立場敘述**。"
-},
-{
- "key": "desc2:Side by Side|You're Only Young Once...",
- "artist": "Side by Side",
- "album": "You're Only Young Once...",
- "facts": [
-  {"f":"release-group d217f68a 的欄位：**title 在 MB 上寫作「You’re Only Young Once…」（U+2019 彎引號＋U+2026 省略號）**、artist-credit「Side by Side」（藝人實體 8dc812b1，**disambiguation「Hardcore / youth crew band」**）、first-release-date **1988**（只有年）、**primary-type Album**、secondary-types **空**。轄下 **3 筆 release，全部標 1988**：**兩筆 US Official／Revelation Records／catno 同時記作「5」與「REVELATION:5」／7\" Vinyl／7 軌**（卡單釘的是其中一筆）／**一筆 XW Official／Revelation Records（catno 欄空）／Digital Media／10 軌**。","src":"https://musicbrainz.org/ws/2/release-group/d217f68a-dc71-4608-9d20-94d2e4692a2f?fmt=json&inc=artist-credits+releases+media"},
-  {"f":"**1988 年兩筆 7 吋的七軌完全相同、依序是**：1〈Backfire〉、2〈My Life to Live〉、3〈Living a Lie〉、4〈Look Back〉、5〈You’re Only Young Once〉、6〈Friends〉、7〈Side by Side〉。**七軌沒有任何一軌記錄長度。** **第 5 軌與盤名同名（但盤名多了省略號）、第 7 軌與樂團同名。**","src":"https://musicbrainz.org/ws/2/release?release-group=d217f68a-dc71-4608-9d20-94d2e4692a2f&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"**十軌的數位版比 7 吋多出三軌**：8〈Dead Serious〉、9〈The Time Is Now〉、10〈Violence to Fade〉——**十軌裡只有第 10 軌記了長度 1:41，其餘九軌全空**。數位版把第 5 軌的引號改成 ASCII 直撇號（〈You're Only Young Once〉），7 吋那兩筆用的是彎引號。","src":"https://musicbrainz.org/ws/2/release?release-group=d217f68a-dc71-4608-9d20-94d2e4692a2f&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"藝人端點分頁全列 **3 個 release-group**（release-group-count 3）：**1988 本張（Album、secondary-types 空）**、1992《You're Only Young Once... So Do It Right》(Album＋**Compilation**)、1997《You're Only Young Once》(Album＋**Compilation**)。**三個 release-group 的盤名互相包含**，正規化後極易折成同一鍵；**本張是三者裡唯一 secondary-types 為空的一個，也是日期最早的一個。**","src":"https://musicbrainz.org/ws/2/release-group?artist=8dc812b1-d387-4c45-8173-f0d5bd0c318f&fmt=json&limit=100&offset=0"},
-  {"f":"串流店面的 collectionId **1606212228**：collectionName「**You're Only Young Once...**」（**ASCII 直撇號＋三個 ASCII 句點**）、artistName「**Side By Side**」（B 大寫）、releaseDate **1988**、trackCount **10**、copyright「**℗ 1988 Revelation Records**」、notExplicit。`entity=song` 攤出 10 軌，**與 MB 那筆十軌數位版逐軌同名同序**：〈Backfire〉2:08、〈My Life To Live〉1:39、〈Living a Lie〉1:14、〈Look Back〉1:32、〈You're Only Young Once〉1:42、〈Friends〉1:11、〈Side By Side〉1:00、**〈Dead Serious〉1:24、〈The Time Is Now〉2:04、〈Violence To Fade〉1:41**。**十軌總長 15:35；前七軌（本張的曲目）合計 10:26，最短〈Side By Side〉整整 1:00、最長〈Backfire〉2:08。** 第 10 軌的 1:41 與 MB 那筆數位版唯一記錄的長度一秒不差。","src":"https://itunes.apple.com/lookup?id=1606212228&country=us&entity=song&limit=200"}
- ],
- "hookCandidates": [
-  "七首歌裡有一首正好一分鐘整，一秒不多一秒不少",
-  "同一年三筆發行，兩筆是七軌的黑膠，一筆是十軌的數位"
- ],
- "sound": "1988 年 Revelation 那兩筆 7 吋是七軌，MB 端七軌**一格長度都沒有**；照後來十軌那版同名同序的秒數看，這七首合計 10 分 26 秒——最長的開場〈Backfire〉2:08、最短的〈Side by Side〉正好一分鐘整，中間五首落在 1:11 到 1:42 之間，沒有一首超過兩分十秒。曲名幾乎都是三到四個字的短句：〈My Life to Live〉〈Living a Lie〉〈Look Back〉〈Friends〉。第五軌與唱片同名，收尾第七軌與樂團同名，一張七吋把盤名與團名各放了一次。",
- "keyTracks": ["Backfire","You're Only Young Once","Side by Side"],
- "status": "full",
- "yearVerified": "一致，1988。release-group first-release-date **1988**（只有年份、沒有月日），**轄下三筆 release 全部標 1988**——兩筆 US 7 吋與一筆 XW 數位同年，與卡單 `year` 1988 相符。**本 release-group 名下沒有跨年的再發**，但同一支團另有兩個 Compilation release-group（1992、1997），**盤名互相包含、照盤名配對會取到 1992 或 1997**（裁定 220 的形狀，本層以 rgMbid 排除）。**串流那一路的 releaseDate 欄與 ℗ 欄都寫 1988、與 MB 一致**，但內容是十軌不是七軌。**同名先行單曲：無**（〈You're Only Young Once〉只作為本張第 5 軌出現）。",
- "notes": "**盤名字形**：MB 實體寫作 **You’re Only Young Once…**（U+2019＋U+2026），卡單依本批裁定第 3 條收斂成 ASCII 的 **You're Only Young Once...**。**店面 1606212228 的 collectionName 就是 ASCII 形**，與卡單一致——**這一點查證屬實**，可作為該裁定的獨立佐證。｜**軌數混版（裁定 251）**：卡單 `label` 釘的是 **1988 US Revelation／catno「5」與「REVELATION:5」／7\" Vinyl／7 軌**。**〈Dead Serious〉〈The Time Is Now〉〈Violence to Fade〉三軌只在十軌的數位版上，不是本張曲目，一軌都不得引**；**十軌與十五分半這兩個數字也不得引**。｜**長度要交代來源**：**本張七軌在 MB 端全無長度**，本檔引的秒數取自十軌那版（店面與 MB 數位版同名同序）。行文可以寫「七首約十分半」「有一首正好一分鐘」，**不得寫成「1988 年那張 7 吋標示的長度」**。｜**擋下策展層三處**：(1) `why` 寫「**Revelation 目錄第五號**」——**可查證的只有 catno 字串「5」與「REVELATION:5」**，MB 端沒有回問過該廠牌完整目錄，**「第五號」這個序數不得寫**，只能寫 catno 本身。 (2) `why` 寫「**youth crew 正典裡最常被列入必聽的一張 7 吋**」——極值斷語、查無來源，**不得寫**。 (3) `why` 寫「c-120『一張都收不到』的九支團之一，池中零」——這是卡池側的事實、與唱片無關，**不得寫進正文**。｜**序數**：藝人目錄只有 3 個 release-group，**本張是唯一 secondary-types 為空的一個、也是日期最早的一個**，「這支團目錄上最早、也是唯一一張不是整編的碟」可以寫；**另兩張都是 Compilation，行文提到它們時必須寫成整編、不得寫成「後來的專輯」**。｜**串流採信 1606212228，但限定用途**：`entity=song` 攤出的十軌與 MB 那筆十軌數位版逐軌同名同序，第 10 軌長度與 MB 唯一記錄的一格一秒不差，可確認是同一個編排；**℗ 欄與 releaseDate 欄都寫 1988、與首版同年，但上架的是十軌的數位版，不是 1988 年那張七軌 7 吋的證據**。**可以當試聽來源；不是本張原盤的證據，第 8 到 10 軌不是本張的曲目。** 店面掛名寫作「Side By Side」（B 大寫），**配對一律用 collectionId，不得用盤名或掛名字串**。｜**不得寫個別成員的名字**（裁定 241／250），**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：本卡的 `releaseType` 是 **Album**、`exceptionReason` 為空字串、`exceptionEvidenceUrls` 為空陣列（本批裁定第 2 條），**沒有要覆核的例外舉證**；**但「實體是 7 吋」這句在本張是站得住的**——所釘的兩筆 release 的 `media.format` 欄就寫著「7\" Vinyl」（與同組的 Gorilla Biscuits 同名碟不同，那張只寫「Vinyl」）。"
-},
-{
- "key": "desc2:Chain of Strength|True Till Death",
- "artist": "Chain of Strength",
- "album": "True Till Death",
- "facts": [
-  {"f":"release-group f84a15aa 的欄位：title「True Till Death」、artist-credit「Chain of Strength」（藝人實體 81a3c11e，**disambiguation 空白**）、first-release-date **1989**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release，都是 1989 US Official／Revelation Records／7\" Vinyl／6 軌**，catno 兩筆都同時記作「10」與「Revelation:10」（其中一筆寫成大寫「REVELATION:10」）。","src":"https://musicbrainz.org/ws/2/release-group/f84a15aa-5ea5-3880-ac3b-41cc029785de?fmt=json&inc=artist-credits+releases+media"},
-  {"f":"**1989 年那筆有長度的 7 吋，六軌依序是**：1〈Just How Much?〉2:04、2〈True Till Death〉2:15、3〈There Is a Difference〉3:02、4〈Never Understand〉2:18、5〈Let Down〉1:39、6〈Best of Times〉1:50。**六軌總長 13:08**；最長〈There Is a Difference〉3:02、最短〈Let Down〉1:39，**六軌裡有四軌落在 1:50 到 2:18 之間**。**另一筆同規格的 1989 US 7 吋六軌同名同序，但六軌全無長度。** **第 2 軌與盤名同名。**","src":"https://musicbrainz.org/ws/2/release?release-group=f84a15aa-5ea5-3880-ac3b-41cc029785de&fmt=json&inc=media+labels+recordings&limit=100"},
-  {"f":"藝人端點分頁全列 **3 個 release-group**（release-group-count 3）：**1989 本張《True Till Death》(EP、secondary-types 空)**、1990《What Holds Us Apart》(EP、secondary-types 空)、1995《The One Thing That Still Holds True》(EP＋**Compilation**)。**三個 release-group 的 primary-type 全部是 EP，沒有任何一個是 Album**；**本張 1989 是三者裡最早的一筆。**","src":"https://musicbrainz.org/ws/2/release-group?artist=81a3c11e-ac20-4bb4-8614-06b157e802d8&fmt=json&limit=100&offset=0"},
-  {"f":"**店面沒有本張，但 1995 年那張整編（collectionId 91072229、11 軌、℗ 1995 Revelation Records）把本張六軌全部收了進去**——它的第 6 到 11 軌是〈True Till Death〉2:23、〈Just How Much〉1:56、〈There Is a Difference〉2:47、〈Never Understand〉2:18、〈Let Down〉1:44、〈Best of Times〉1:53：**六個曲名與本張完全對應，但順序被重排（本張的第 1 軌在那裡排第 7），而且長度逐軌不同**——〈There Is a Difference〉差 15 秒、〈Just How Much〉差 8 秒、〈True Till Death〉差 8 秒，只有〈Never Understand〉2:18 兩邊一致。以「Chain of Strength True Till Death」在 us 店搜尋回 **0 筆**；以「Chain of Strength」搜尋回 2 筆，一筆是那張整編、一筆是同名不同人的碟。","src":"https://itunes.apple.com/lookup?id=91072229&country=us&entity=song&limit=200"}
- ],
- "hookCandidates": [
-  "六首歌十三分鐘，第二首與唱片同名",
-  "同一批六首歌，六年後重排順序再壓一次，長度整組都不一樣了"
- ],
- "sound": "1989 年 Revelation 那筆 7 吋是六軌、總長 13 分 08 秒，是這條線上少數平均超過兩分鐘的一張。最長的第三軌〈There Is a Difference〉3:02 是全片唯一破三分的一首，最短的〈Let Down〉1:39；扣掉這兩端，其餘四首整齊落在 1:50 到 2:18 之間。開場〈Just How Much?〉2:04 是六個曲名裡唯一帶問號的一個，第二軌〈True Till Death〉與唱片同名，收尾〈Best of Times〉1:50。同一批六首歌六年後被重排順序再壓一次，那一版的長度整組都跟這裡對不上。",
- "keyTracks": ["Just How Much?","True Till Death","There Is a Difference"],
- "status": "full",
- "yearVerified": "一致，1989。release-group first-release-date **1989**（只有年份、沒有月日），**轄下兩筆 release 都標 1989 US、都是 Revelation Records 的 7\" Vinyl 6 軌**，與卡單 `year` 1989 相符。**本 release-group 名下沒有跨年的再發**；但同一支團 1995 年另有一個 release-group（e37fc43e）把本張六軌整批收進去，**照那張取年會取到 1995**（裁定 220 的形狀，本層以 rgMbid 排除）。**catno 重複**：本張與 1995 年那張在 MB 上都掛 Revelation 的 10／REV10，**照 catno 配對分不出兩者**。**店面沒有本張。** **同名先行單曲：無**（〈True Till Death〉只作為本張第 2 軌出現）。",
- "notes": "**擋下策展層四處**：(1) `exceptionReason` 寫「**Revelation 目錄第十號**」——可查證的只有 catno 字串「10」與「Revelation:10」，**MB 端沒有回問過該廠牌完整目錄，「第十號」這個序數不得寫**，只能寫 catno 本身。 (2) `exceptionReason` 寫「『一支團只有兩張 7 吋卻定義了一個世代』**最極端的例子**」——極值斷語，**不得寫**；同句前半「名下三個 release-group 全部不是長篇」**查證屬實**（三個 primary-type 全是 EP、無 Album），可以留。 (3) `exceptionReason` 寫「youth crew **從紐約擴散到加州之後最被引用的一張**」——地名與極值都查無來源，**兩段都不得寫**（依裁定 241／250 與派工信第 4 條）。 (4) `why` 寫「這批把它的**原盤 7 吋與 1995 年的完整記錄**各收一張」——這是卡池側的敘述，**不得寫進正文**。｜**軌數（裁定 251）**：兩筆 release 都是 6 軌，本張沒有軌數分歧；**行文引 6 軌、引這六個曲名都安全**。**但要注意兩筆 7 吋只有一筆記了長度，另一筆六軌全空。**｜**串流：本張三店皆未命中，這一點查證屬實。但 1995 年那張整編（91072229）確實把本張六軌全部收了進去**——六個曲名完全對應，**順序被重排、長度逐軌不同（最大差 15 秒）**。**若管線要拿它當本張的試聽來源，必須寫明：可以當試聽來源，但那是 1995 年那張十一軌整編的版本，不是 1989 年這張 7 吋的證據，順序與長度都不是本張的；另外五軌（〈Impact〉〈Too Deep Until Now〉〈The Space Between〉〈Through These Eyes〉〈Hurts to Ask〉）不是本張的曲目。**｜**藝人實體 81a3c11e 的 disambiguation 是空白的**——依裁定 250 後半，**行文不得以 disambiguation 背書本名**，身分依據只能用名下目錄與 catno。｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1989、US、Revelation、7 吋、6 軌、catno 10」；**`Revelation_Records` 條目的內文確實列出了 Chain of Strength 這個掛名**，支持「這支團在該廠牌發行過」；**`Youth_crew` 條目只證明這個詞作為次類型存在，不支持 `exceptionReason` 裡的目錄序數與極值那兩句**。"
-}
+ {
+  "key": "desc2:Youth of Today|Can't Close My Eyes EP",
+  "artist": "Youth of Today",
+  "album": "Can't Close My Eyes EP",
+  "facts": [
+   {
+    "f": "release-group e056c9e5 的欄位：title「Can't Close My Eyes EP」、artist-credit「Youth of Today」（藝人實體 9ca27db4，**disambiguation 空白**）、first-release-date **1985**（只有年、無月日）、primary-type EP、secondary-types **空**。**轄下只有 1 筆 release**：1985 US Official、**7\" Vinyl、7 軌**，label-info **Positive Force／catno「Number 4」**（catno 欄位就是這四個字，不是數字編號格式）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e056c9e5-04b3-4e49-bff7-da9dc0be6b28?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1985 年 Positive Force 7 吋的七軌依序是**：1〈Expectations〉、2〈Crucial Times〉、3〈I Have Faith〉、4〈Youth of Today〉、5〈Positive Outlook〉、6〈Can't Close My Eyes〉、7〈Youth Crew〉。**七軌沒有任何一軌記錄長度**——這一筆是本張唯一的實體 release，所以 MB 端拿不到本張的秒數。**第 4 軌與樂團同名，第 7 軌的曲名就是〈Youth Crew〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e056c9e5-04b3-4e49-bff7-da9dc0be6b28&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **9 個 release-group**（release-group-count 9）：EP 3 個（**本張 1985**、1990-03-04《Disengage》、1991《Benefit 7\"》＋Live）、Album 6 個（1987-04-05《Break Down the Walls》、1988《Can't Close My Eyes》076b41ca、1988《We're Not in This Alone》、1989《Break Down the Walls / Can't Close My Eyes》＋Compilation、1989《Take a Stand》＋Live、無日期《Anarchy in Vienna》＋Live）。**依日期排序，本張 1985 是全目錄最早的一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9ca27db4-f127-4aeb-ae87-29e21f558c13&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**同名陷阱（同一支團、兩個 release-group）**：076b41ca《Can't Close My Eyes》(1988、primary-type **Album**) 與本張 e056c9e5《Can't Close My Eyes EP》(1985、EP) 是**兩筆不同的 release-group**，盤名正規化後只差一個「EP」。**兩者一律以 rgMbid 分辨，不得以盤名字串配對。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9ca27db4-f127-4aeb-ae87-29e21f558c13&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流店面的 collectionId **111654959**：collectionName「Can't Close My Eyes」、artistName「Youth of Today」、releaseDate **1985**、trackCount **14**、copyright「**℗ 1997 Revelation Records**」、collectionExplicitness notExplicit。`entity=song` 攤出的 14 軌是：1〈Expectations〉2:08／2〈Crucial Times〉1:26／3〈I Have Faith〉1:43／4〈Youth of Today〉2:12／**5〈Take a Stand〉0:43**／6〈Positive Outlook〉1:22／7〈Can't Close My Eyes〉0:49／**8〈We Just Might〉1:17**／9〈Youth Crew〉2:33／**10〈Take a Stand〉0:37／11〈Stabbed In the Back〉1:02／12〈We Just Might〉1:12／13〈Wake Up and Live〉1:10／14〈Standing Hard〉0:18**。**本張的七軌全在裡面、相對順序完全一致（落在第 1、2、3、4、6、7、9 軌），但中間插入兩軌、尾巴另有五軌，合計七軌不是本張的曲目。**",
+    "src": "https://itunes.apple.com/lookup?id=111654959&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "七首歌的第四首與團同名，第七首的曲名就叫〈Youth Crew〉",
+   "唱片上七首歌，一首的長度都沒有留下紀錄"
+  ],
+  "sound": "1985 年 Positive Force 的 7 吋是七軌，MB 端這七軌**一格長度都沒有**，所以本張的秒數只能從後來那個十四軌的版本借看：〈Expectations〉2:08、〈Crucial Times〉1:26、〈I Have Faith〉1:43、〈Youth of Today〉2:12、〈Positive Outlook〉1:22、〈Can't Close My Eyes〉0:49、〈Youth Crew〉2:33——七首加起來約十二分鐘，最短的〈Can't Close My Eyes〉不到五十秒。曲名一半是名詞短語（〈Expectations〉〈Crucial Times〉〈Positive Outlook〉），另一半直接把團名與場景的名字寫成標題：第四軌〈Youth of Today〉與樂團同名，第七軌就叫〈Youth Crew〉。",
+  "keyTracks": [
+   "Expectations",
+   "Can't Close My Eyes",
+   "Youth Crew"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1985。release-group first-release-date **1985**（只有年份、沒有月日），其下唯一的 release 就是 1985 US 的 Positive Force／Number 4（Official、7\" Vinyl、7 軌），與卡單 `year` 1985 相符。**本 release-group 名下沒有任何再發**——但同一支團另有 076b41ca《Can't Close My Eyes》(1988、Album)，盤名幾乎相同、年份晚三年，**照盤名配對就會取到 1988**（裁定 220 的形狀，本層以 rgMbid 排除）。**串流那一路的 releaseDate 欄寫 1985、與 MB 相符，但 ℗ 欄是「℗ 1997 Revelation Records」**，且內容是十四軌不是七軌——**店面的年份欄與它自己的內容不是同一回事**，年份仍取 1985。**同名先行單曲：無**（〈Can't Close My Eyes〉只作為本張第 6 軌出現）。",
+  "notes": "**擋下策展層五處**：(1) `exceptionReason` 寫「**youth crew 這個詞成立之前的那張 7 吋**」——**與本張自己的曲目直接衝突**：第 7 軌的曲名就是〈Youth Crew〉，這個詞印在唱片上。**「這個詞成立之前」不得寫。** (2) `exceptionReason` 寫「七首歌把 straight edge 從華府的 Minor Threat 挪到**康乃狄克與紐約**」——**華府、康乃狄克、紐約三個地名在實體欄位端全部查不到**，依裁定 241／250 一律不得寫；與另一支團的承接關係同樣是斷語，**不得寫**。 (3) `exceptionReason` 寫「之後**整條 Revelation 目錄都建立在這個模板上**」——查無來源的斷語，**不得寫**；而且**本張的廠牌是 Positive Force、不是 Revelation**，行文不得把兩個廠牌接在一起。 (4) `why` 寫「**影響最直接**的一張」——斷語，**不得寫**；同句的「年代最早」**查證屬實**（本張 1985 是該藝人目錄 9 個 release-group 裡最早的一筆），可以留。 (5) `why` 寫「c-120 收的《Break Down the Walls》(1987) 與《We're Not in This Alone》(1988) 都在這張之後」**查證屬實**（目錄日期 1987-04-05 與 1988）。｜**軌數與長度（裁定 251）**：卡單 `label` 釘的是 **1985 Positive Force、7 吋、7 軌**，**行文只能引這七軌、只能引這七個曲名**。〈Take a Stand〉〈We Just Might〉〈Stabbed In the Back〉〈Wake Up and Live〉〈Standing Hard〉**五個曲名都不是本張的曲目**，一個都不得引。**本張七軌在 MB 端全無長度**；本檔引的秒數取自十四軌那一版，行文可以寫「約十二分鐘」「不到五十秒」，但**不得寫成「首版唱片標示的長度」**。｜**串流採信 111654959：`entity=song` 攤出的十四軌裡，本張七軌同名、相對順序完全一致（第 1、2、3、4、6、7、9 軌），可確認內容包含本張全部曲目；但它是十四軌的版本、℗ 欄寫 1997 Revelation Records，不是 1985 年那張 Positive Force 7 吋。可以當試聽來源，但不是本張原盤的證據；不是本張的七軌是第 5 軌〈Take a Stand〉、第 8 軌〈We Just Might〉與第 10 到 14 軌。**｜**不得寫個別成員的名字**（裁定 241／250），**也不得寫任何與 straight edge 立場相關的評價或立場敘述**，只寫廠牌、catno、年份、載體、曲目與軌數。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1985、Positive Force／Number 4、7 吋、7 軌」；`Youth_of_Today` 條目支持樂團自 1985 年起活動；**`Youth_crew` 條目只證明這個詞作為次類型存在，不支持 `exceptionReason` 裡除了「1985 年 Positive Force 發行」以外的任何一句**——尤其不支持「這個詞成立之前」那半句。"
+ },
+ {
+  "key": "desc2:Gorilla Biscuits|demo 1987",
+  "artist": "Gorilla Biscuits",
+  "album": "demo 1987",
+  "facts": [
+   {
+    "f": "release-group 1c997f24 的欄位：title「**demo 1987**」（**全小寫，MB 實體本身就是小寫的 demo**）、artist-credit「Gorilla Biscuits」（藝人實體 0320a32e，disambiguation「hardcore punk」）、first-release-date **1987**（只有年）、primary-type EP、**secondary-types [\"Demo\"]**。轄下 **2 筆 release**：**1987 US Official、Cassette、6 軌**（卡單釘的這一筆，label-info 欄有一筆但廠牌名是 **[no label]**、catno **[none]**）／**1991 US、status Bootleg、media format 為 null、6 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1987 年那捲卡帶的六軌依序是**：1〈No Reason Why〉、2〈Big Mouth〉、3〈Better Than You〉、4〈Gorilla Biscuits〉、5〈Do It Yourself〉、6〈Finish What You Started〉。**六軌全部沒有記錄長度。** 長度只能引 1991 那筆 Bootleg：〈No Reason Why〉2:09／〈Big Mouth〉2:21／〈Better Than You〉1:47／**〈GB〉1:19**／〈Do It Yourself〉1:50／〈Finish What You Started〉1:47，**六軌合計 11:13**。**兩筆的第 4 軌曲名不同**：1987 卡帶寫〈Gorilla Biscuits〉、1991 Bootleg 縮寫成〈GB〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1c997f24-75ad-3b2b-bfaa-1891c79fa790&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **8 個 release-group**（release-group-count 8）：**1987 本張（EP＋Demo，全目錄最早的一筆）**、1988《Gorilla Biscuits》(96ae45ee、Album)、1989-06-24《Start Today》(2076b5a3、Album)、1991《We're Gorilla Biscuits From N.Y.C. And This Is Called .... A New Direction !!!!》(EP)、1997《Puzzle of 38 Pieces (Rare Bootleg Tracks)》(Album)、2006《At the Matinee》(Single)、無日期《Walter Sings the Hits...》(Other)、無日期《Having A Great Time... Wish You Were There》(Album＋Live)。**secondary-types 含 Demo 的只有本張一個。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**逐軌比對推翻「隔年的 7 吋 CD 版把這捲 demo 併進去」這個說法**：1988 年同名唱片（96ae45ee）的各版 CD 是 12 軌，比 7 軌黑膠多出的五軌是〈Sitting Around at Home〉〈Biscuit Power〉〈Short End of the Stick〉〈Hold Your Ground（另一版）〉〈Slut〉——**這五個曲名沒有一個出現在 1987 年這捲 demo 上**；反過來，demo 的〈Better Than You〉與〈Do It Yourself〉**在 1988 年那張唱片的任何一版上都不存在**。**兩張碟真正重疊的只有〈No Reason Why〉〈Big Mouth〉〈Finish What You Started〉三個曲名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "店面回撈的候選 **90254613** 是 collectionName「Gorilla Biscuits」、releaseDate **1988**、trackCount **12**、℗ 1988 Revelation Records——**那是 1988 年那張同名唱片的十二軌版，不是本張**。它的十二軌裡只有〈Big Mouth〉〈No Reason Why〉〈Finish What You Started〉與本張同名，**本張的〈Better Than You〉〈Do It Yourself〉與那首與團同名的〈Gorilla Biscuits〉一軌都不在**。以「Gorilla Biscuits demo」在 us 店搜尋回 4 筆，另三筆分別是《Start Today》與兩個同名不同人的碟，**無一筆是本張**。",
+    "src": "https://itunes.apple.com/lookup?id=90254613&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六首歌裡有一首與團同名，四年後被翻成兩個字母重印",
+   "自製卡帶的廠牌欄位上，填的是「沒有廠牌」"
+  ],
+  "sound": "1987 年那捲卡帶是六軌，MB 端這六軌**一格長度都沒有**；本檔引的秒數取自四年後那筆私製盤，六首合計 11 分 13 秒，最長的〈Big Mouth〉2:21、最短的與團同名那軌 1:19，其餘四首都落在 1:47 到 2:09 之間——除了最短那一首，整捲幾乎是同一個尺寸切出來的。曲名多是完整的短句而不是單詞：〈No Reason Why〉〈Better Than You〉〈Do It Yourself〉〈Finish What You Started〉，只有第四軌直接用團名當標題。同一軌在 1987 年寫作〈Gorilla Biscuits〉、在 1991 那筆上縮成〈GB〉。",
+  "keyTracks": [
+   "No Reason Why",
+   "Gorilla Biscuits",
+   "Finish What You Started"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1987。release-group first-release-date **1987**（只有年份、沒有月日），其下 1987 US 的那筆 Official 卡帶就是卡單所釘的版本，與卡單 `year` 1987 相符。**再發年份一筆：1991 US**，但**那一筆的 status 是 Bootleg、media format 為 null**（裁定 43／57 的形狀），**不是可用的再發，年份也不得引**。**店面沒有本張**——回撈候選 90254613 的 releaseDate 是 1988、指向的是另一張碟。**同名先行單曲：無。**",
+  "notes": "**擋下策展層四處**：(1) `exceptionReason` 寫「這捲 demo 在紐約硬蕊的**翻錄鏈裡流通了整整一年**」——流通方式與「整整一年」在任何實體欄位端都查不到，**不得寫**；MB 只能證明 1987 有一筆 Official 卡帶、1991 有一筆 Bootleg。 (2) `exceptionReason` 寫「**Gorilla Biscuits 在 Revelation 簽下他們之前**的六首歌卡帶」——「簽下」是合約敘述、查無來源，**不得寫**；可查證的只有「本張 label-info 的廠牌欄填的是 [no label]、catno [none]，1988 年那張才出現 Revelation Records／Revelation:4」。 (3) `why` 寫「加上 c-120 的《Start Today》正好構成 demo → 7 吋 → LP **三級**」——**《Start Today》(2076b5a3) 與 1988 年同名唱片 (96ae45ee) 在 MB 的 primary-type 都是 Album**，「7 吋 → LP」這個分級在型別欄位上不成立，**不得寫成三級遞進**。 (4) **最重的一處**：卡單 `label` 與 c-122 策展稿都寫 1988 年那張的 CD 版「是把 1987 年 demo 併進來的另一版」——**逐軌比對推翻**：CD 多出的五軌沒有一軌出現在本張，本張的〈Better Than You〉〈Do It Yourself〉在那張的任何版本上都不存在，兩張真正重疊的只有三個曲名。**「CD 版把這捲 demo 併進去」不得寫。**｜**軌數與長度（裁定 251）**：卡單 `label` 釘的是 **1987 US Official 卡帶、6 軌**，行文只能引這六軌。**本張六軌在 MB 端全無長度**，本檔的秒數取自 1991 那筆 **Bootleg**——**行文若要用秒數，不得寫成「這捲卡帶標示的長度」，也不得提到那筆私製盤的年份或存在**。｜**串流駁回 90254613：`entity=song` 攤出的十二軌是 1988 年同名唱片的版本（℗ 1988 Revelation Records、releaseDate 1988），與本張只重疊三個曲名，本張半數曲目不在其中——不採為本張的試聽來源。** 三店以「掛名＋盤名」搜尋另回 4 筆，無一筆是本張。｜**序數**：藝人目錄 8 個 release-group，**本張 1987 是全目錄最早的一筆、也是唯一一個 secondary-types 含 Demo 的**，「這支團目錄上最早的一筆錄音」可以寫；**不得寫「唯一的 demo 卡帶」**（1991 那筆私製盤同屬本 release-group）。｜**不得寫個別成員的名字**，**不得寫區級地名**（紐約市以下的地名一律不得寫），**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**素材不足以寫到 180 字**：可寫的事實格只有「1987／US／Official 卡帶／6 軌／廠牌欄 [no label]／catno [none]／六個曲名／第四軌與團同名／目錄最早的一筆／全無長度」十項，**本張標 partial**（裁定 252 的判準是可寫的事實格數，不是曲名長度）。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1987、US、Official 卡帶、6 軌、廠牌欄 [no label]」；`Gorilla_Biscuits` 條目支持樂團存在與 1986 年成軍（**但條目裡的成員名與城市名一律不得寫**）；**`Demo_(music)` 是「什麼是 demo」的通用定義條目，與本張沒有任何關係，不支持 `exceptionReason` 的任何一句**。"
+ },
+ {
+  "key": "desc2:Gorilla Biscuits|Gorilla Biscuits",
+  "artist": "Gorilla Biscuits",
+  "album": "Gorilla Biscuits",
+  "facts": [
+   {
+    "f": "release-group 96ae45ee 的欄位：title「Gorilla Biscuits」、artist-credit「Gorilla Biscuits」（0320a32e，disambiguation「hardcore punk」）、first-release-date **1988**（只有年）、**primary-type Album**、secondary-types **空**。轄下 **8 筆 release**：**1988 US Official／Revelation Records／catno「Revelation:4」／media format 只寫「Vinyl」（未標尺寸）／7 軌**（卡單釘的這一筆）／1991 DE 兩筆 We Bite Records（WB 077CD、WE BITE 077CD）CD 12 軌，**其中一筆 status 為 null**／1992 US Official Revelation:4 CD 12 軌／1995 US Official REV004＋Revelation:4 CD 12 軌／**2011 US Official Revelation:4、7\" Vinyl、7 軌**／無日期 US Official CD 12 軌／無日期 XW Official Digital Media 12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/96ae45ee-871c-40b1-9f50-ca0c6c4f5c16?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1988 Revelation:4 的七軌與長度**：1〈High Hopes〉2:23、2〈Big Mouth〉1:59、3〈No Reason Why〉1:51、**4〈GM2〉0:18**、5〈Hold Your Ground〉2:01、6〈Breaking Free〉1:10、7〈Finish What You Started〉1:40。**七軌總長 11:22，最長〈High Hopes〉2:23、最短〈GM2〉只有 18 秒**；扣掉 18 秒那軌，其餘六軌落在 1:10 到 2:23 之間。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**十二軌的 CD 版多出來的五軌是**〈Sitting Around at Home〉1:41–1:43、〈Biscuit Power〉1:22–1:24、〈Short End of the Stick〉1:29–1:32、**第二次出現的〈Hold Your Ground〉**（1992 US 版標作「Hold Your Ground (alternate version)」、無日期數位版標作「Hold Your Ground (demo)」）2:02–2:04、〈Slut〉1:13–1:14（數位版標作「Slut (demo)」）。**各版對同幾軌的命名互不一致**：第 9 軌在 1991／1992 版叫〈Biscuit Power〉、在 1995 版叫〈Gorilla Biscuit〉、在無日期那筆 CD 叫〈Gorilla Biscuits〉；1995 那筆更把第 11、12 軌寫成〈Hold Your Ground 1〉與〈GM2 1〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**那五軌不是 1987 年那捲 demo**：demo（1c997f24）的六軌是〈No Reason Why〉〈Big Mouth〉〈Better Than You〉〈Gorilla Biscuits〉〈Do It Yourself〉〈Finish What You Started〉，**與 CD 多出的五軌零重疊**；demo 的〈Better Than You〉〈Do It Yourself〉在本 release-group 的任何一筆 release 上都不存在。**兩張碟真正重疊的只有〈No Reason Why〉〈Big Mouth〉〈Finish What You Started〉三軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1c997f24-75ad-3b2b-bfaa-1891c79fa790&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面的 collectionId **90254613**：collectionName「Gorilla Biscuits」、artistName「Gorilla Biscuits」、releaseDate **1988**、trackCount **12**、copyright「**℗ 1988 Revelation Records**」、notExplicit。`entity=song` 攤出 12 軌，**第 1 到 7 軌與 1988 年那筆黑膠逐軌同名同序**（2:24／1:59／1:52／0:20／2:02／1:12／1:41，逐軌差 1 到 2 秒），**第 8 到 12 軌的曲名後面店面自己標了「(Bonus Track)」**：〈Sitting Round At Home (Bonus Track)〉〈Biscuit Power (Bonus Track)〉〈Short End of the Stick (Bonus Track)〉〈Hold Your Ground (demo) [Bonus Track]〉〈Slut (demo) [Bonus Track]〉。",
+    "src": "https://itunes.apple.com/lookup?id=90254613&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **8 個 release-group**，**primary-type=Album 且 secondary-types 為空的是 3 個**：1988 本張、1989-06-24《Start Today》、1997《Puzzle of 38 Pieces (Rare Bootleg Tracks)》。**依日期排序，本張是三張裡最早的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "七首歌裡有一首只有十八秒，曲名是兩個字母加一個數字",
+   "同一個廠牌編號掛了二十三年，一次七軌、一次還是七軌，中間的 CD 全是十二軌"
+  ],
+  "sound": "1988 年 Revelation:4 的首版是七軌、總長 11 分 22 秒，平均一首一分半出頭。最長的開場〈High Hopes〉2:23、最短的第四軌〈GM2〉只有 18 秒——把 18 秒那軌拿掉，其餘六首整齊地落在 1:10 到 2:23 之間。收尾的〈Finish What You Started〉1:40 與開場相差四十三秒，是七軌裡拉得最開的一對。曲名短而直接：〈High Hopes〉〈Big Mouth〉〈No Reason Why〉〈Hold Your Ground〉〈Breaking Free〉，只有〈GM2〉不是詞句。後來的 CD 版一律十二軌，多出的五軌店面自己標成 bonus。",
+  "keyTracks": [
+   "High Hopes",
+   "GM2",
+   "Finish What You Started"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**（只有年份、沒有月日），其下最早的 release 就是 1988 US 的 Revelation Records／Revelation:4（Official、format 欄只寫「Vinyl」、7 軌），與卡單 `year` 1988 相符。**再發六筆會蓋年**：1991 DE 兩筆（We Bite Records，CD 12 軌，**其中一筆的 status 是 null**）、1992 US（CD 12 軌）、1995 US（CD 12 軌）、**2011 US（7\" Vinyl、7 軌）**、另有兩筆無日期（US CD 12 軌與 XW 數位 12 軌）——**照載體或照軌數取年都會取到 1991 以後**（裁定 220 的形狀）。**catno「Revelation:4」從 1988 一路掛到 2011，跨越 23 年、四種載體**，照 catno 配對完全分不出版本。**串流那一路的 releaseDate 欄寫 1988、℗ 欄也寫 1988 Revelation Records，兩欄與 MB 首版一致，但內容是十二軌不是七軌。** **同名先行單曲：無**（本張是同名碟，曲目中沒有同名曲）。",
+  "notes": "**⚠ 載體：不得寫「7 吋」。** 卡單 `label` 與策展稿都寫「實體是 7 吋」，但**所釘的 1988 那筆 release，`media.format` 欄只寫「Vinyl」、沒有尺寸**（c-120 交接第六節列的同一種形狀）。**唯一標成「7\" Vinyl」的是 2011 年那筆再發**，同 catno、同 7 軌。行文可以寫「1988 年的黑膠、七軌」，**不得寫「1988 年的 7 吋」**；若要提 7 吋，只能寫成「同一個編號在 2011 年再壓時標的是 7 吋」。｜**軌數混版（裁定 251）**：卡單釘的是 **1988 Revelation:4、7 軌**，**行文只能引這七軌**。〈Sitting Around at Home〉〈Biscuit Power〉〈Short End of the Stick〉〈Slut〉與第二次出現的〈Hold Your Ground〉**五軌都不是本張曲目，一個都不得引**；那五軌各版命名不一致（〈Biscuit Power〉／〈Gorilla Biscuit〉／〈Gorilla Biscuits〉三種寫法），更不得當成穩定的曲名引用。｜**擋下策展層三處**：(1) 卡單 `label` 寫「1991 起的 DE／US CD 版一律 12 軌，**是把 1987 年 demo 併進來的另一版**」——**逐軌比對推翻**：CD 多出的五軌與 1987 年 demo 的六軌**零重疊**，demo 的〈Better Than You〉〈Do It Yourself〉在本 release-group 的任何版本上都不存在，兩張真正重疊的只有三軌。**「CD 版把 demo 併進來」不得寫。** (2) `why` 寫「**youth crew 這一支最被反覆引用的 7 吋**」——極值斷語＋尺寸都站不住，**不得寫**。 (3) `why` 寫「**Revelation 目錄第四號**」——**可查證的只有 catno 字串「Revelation:4」**（1995 那筆另寫作 REV004）；MB 端沒有回問過該廠牌的完整目錄，**「第四號」這個序數不得寫**，只能寫 catno 本身。｜**串流採信 90254613，但限定用途**：`entity=song` 攤出的 12 軌，第 1 到 7 軌與 1988 年那筆黑膠**逐軌同名同序、長度差 1 到 2 秒**，第 8 到 12 軌**店面自己標了「(Bonus Track)」**，且 ℗ 欄寫 1988 Revelation Records、與首版年份一致。**可以當試聽來源，但上架的是十二軌的 CD 編排、不是 1988 年那張七軌黑膠的證據；行文不得引第 8 到 12 軌，也不得引十二這個軌數。**｜**序數**：藝人目錄 8 個 release-group、純 Album（secondary-types 為空）3 張，**本張是三張裡最早的一張**，「這支團目錄上第一張 Album」可以寫；**不得寫「唯一一張」**。｜**不得寫個別成員的名字**（裁定 241／250），**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：本卡的 `releaseType` 是 **Album**、`exceptionReason` 為空字串、`exceptionEvidenceUrls` 為空陣列（本批裁定第 2 條），**沒有要覆核的例外舉證**；「實體是 7 吋」這句只出現在 `risk` 與 `mbNote`，而**如上所述那句本身也與 MB 的 format 欄不符**。"
+ },
+ {
+  "key": "desc2:Judge|New York Crew",
+  "artist": "Judge",
+  "album": "New York Crew",
+  "facts": [
+   {
+    "f": "release-group 1c287987 的欄位：title「New York Crew」、artist-credit「Judge」（藝人實體 3827fbb6，**disambiguation「US straight edge punk band」**）、first-release-date **1988**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release**：**1988 US Official／Schism／catno「Skiz-2」／7\" Vinyl／5 軌**（卡單釘的這一筆）／**1992-01-01 XW Official／Revelation Records（catno 欄為空）／Digital Media／5 軌**，barcode 098796001479。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1c287987-a434-4beb-9005-00d376698c42?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1988 Schism／Skiz-2 的五軌與長度**：1〈Fed Up!〉1:46、2〈In My Way〉1:53、3〈I've Lost〉1:42、4〈New York Crew〉2:15、5〈Warriors〉2:54。**五軌總長 10:30**；最短〈I've Lost〉1:42、最長〈Warriors〉2:54，兩端差 72 秒，中間三軌全部落在 1:42 到 2:15 之間。**第 4 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1c287987-a434-4beb-9005-00d376698c42&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1992-01-01 那筆數位版與 1988 年黑膠同名同序、長度差 1 到 3 秒**（1:45／1:54／1:43／2:15／2:51），但**兩軌的寫法不同**：第 1 軌寫成〈Fed up!〉（小寫 u）、第 3 軌寫成〈I've Lost...〉（尾巴多了三點）。**兩筆的廠牌不同**：1988 那筆是 Schism、1992 那筆是 Revelation Records 且 catno 欄為空。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1c287987-a434-4beb-9005-00d376698c42&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **7 個 release-group**（release-group-count 7）：**1988 本張《New York Crew》(EP)**、1989《Bringin' It Down》(Album)、1989《Chung King Can Suck It LP》(Album)、1990《There Will Be Quiet...》(EP)、1992《No Apologies》(Album)、2005《What It Meant - The Complete Discography》(Album＋Compilation)、2018-04-12《Serial Killer》(Single)。**依日期排序，本張 1988 是全目錄最早的一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3827fbb6-e219-4e2d-9af8-35cc9a7d8d8e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流店面的 collectionId **1471235742**：collectionName「New York Crew」、artistName「Judge」、**releaseDate 1989**（比 MB 的 1988 晚一年）、trackCount **5**、copyright「**℗ 1989 Revelation Records**」、notExplicit。`entity=song` 攤出 5 軌，**與 1988 年黑膠逐軌同名同序、長度逐軌差 1 到 3 秒**（〈Fed Up!〉1:45／〈In My Way〉1:54／〈I've Lost...〉1:43／〈New York Crew〉2:15／〈Warriors〉2:51），**與 1992 年那筆數位版的長度一秒不差**。",
+    "src": "https://itunes.apple.com/lookup?id=1471235742&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "五首歌十分半，第四首與唱片同名",
+   "同一張唱片，1988 年那版掛的廠牌與 1992 年那版不是同一家"
+  ],
+  "sound": "1988 年 Schism／Skiz-2 的 7 吋是五軌、總長 10 分 30 秒。最短的〈I've Lost〉1:42 與最長的〈Warriors〉2:54 差七十二秒，中間三首擠在 1:42 到 2:15 的窄帶裡；收尾那軌是全片唯一超過兩分半的一首，比開場的〈Fed Up!〉長了整整六十八秒。曲名有兩個帶標點的祈使或斷語（〈Fed Up!〉〈I've Lost〉），第四軌〈New York Crew〉與唱片同名。四年後那筆數位版逐軌同名同序、只差一到三秒，但把第一軌寫成小寫的〈Fed up!〉、第三軌尾巴加了三點。",
+  "keyTracks": [
+   "Fed Up!",
+   "New York Crew",
+   "Warriors"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**（只有年份、沒有月日），其下最早的 release 就是 1988 US 的 Schism／Skiz-2（Official、7\" Vinyl、5 軌），與卡單 `year` 1988 相符。**再發一筆：1992-01-01 XW 的 Revelation Records 數位版**（5 軌、catno 欄空），**照日期完整度取年會取到 1992-01-01**（裁定 220 的形狀）。**串流那一路的 releaseDate 欄寫 1989、比 MB 的首版晚一年**，同一筆的 ℗ 欄也寫「℗ 1989 Revelation Records」——**店面兩個欄位互相一致，但兩個都與 MB 的 1988 與 Schism 不符**；年份仍取 1988。**同名先行單曲：無**（〈New York Crew〉只作為本張第 4 軌出現）。",
+  "notes": "**⚠ §5.5 舉證有一個站不住**：`exceptionEvidenceUrls` 的 `https://en.wikipedia.org/wiki/Schism_Records` **雖然回 200，但它是一個轉址**——實際落到的條目是一位**樂手的個人傳記**（條目標題與內容都是人物，不是廠牌）。**這個網址不支持 `exceptionReason` 裡「Schism 這條廠牌線」的任何一句**，而且它落到的是人名條目，**依裁定 241／250 那頁的內容一個字都不得寫進正文**。**這一筆舉證應視為無效，需策展層補一個真正記錄該廠牌的來源。** 另兩個網址（MB release-group 與 `Judge_(band)`）回 200 且內容對得上樂團與唱片。｜**擋下策展層三處**：(1) `exceptionReason` 寫「Schism 這條**由 Youth of Today 成員自營**的廠牌線」——成員關係查無實體欄位來源，且唯一提到它的來源是人名條目，**不得寫**。 (2) `exceptionReason` 寫「1988 年五首歌把 straight edge **從正面號召翻成對立與審判的語氣**，整條 90 年代 hardline 由此起算」——**立場敘述＋斷語，兩句都不得寫**（派工信第 4 條明令不得寫與 straight edge 立場相關的評價）。 (3) `exceptionReason` 寫「Judge 的**第一張實體**」——**查證屬實**：藝人目錄 7 個 release-group，本張 1988 是依日期最早的一筆，「這支團目錄上最早的一筆」可以寫；但**不得寫成「第一張唱片」以外的更強說法**，也不得寫「唯一的 EP」（1990 年還有一個 EP）。｜`risk` 說「c-120 收的《Bringin' It Down》(1989) 在這張之後」**查證屬實**（目錄日期 1989）。｜**軌數（裁定 251）**：兩筆 release 都是 5 軌，本張沒有軌數分歧；**行文引 5 軌、引這五個曲名都安全**。｜**廠牌**：**1988 那筆掛 Schism、catno Skiz-2；1992 那筆掛 Revelation Records、catno 欄是空的。** 行文寫本張的廠牌一律寫 Schism，**不得寫成「Revelation 發行」**。｜**串流採信 1471235742：`entity=song` 攤出的五軌與 1988 年黑膠逐軌同名同序、長度差 1 到 3 秒，與 1992 年那筆數位版一秒不差，可確認就是本張的內容。但 releaseDate 與 ℗ 兩欄都指向 1989 與 Revelation Records，行文不得引店面的年份，也不得拿它當「1988 年 Schism 那一版」的證據。**｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場、宗教相關的評價或立場敘述**。"
+ },
+ {
+  "key": "desc2:Side by Side|You're Only Young Once...",
+  "artist": "Side by Side",
+  "album": "You're Only Young Once...",
+  "facts": [
+   {
+    "f": "release-group d217f68a 的欄位：**title 在 MB 上寫作「You’re Only Young Once…」（U+2019 彎引號＋U+2026 省略號）**、artist-credit「Side by Side」（藝人實體 8dc812b1，**disambiguation「Hardcore / youth crew band」**）、first-release-date **1988**（只有年）、**primary-type Album**、secondary-types **空**。轄下 **3 筆 release，全部標 1988**：**兩筆 US Official／Revelation Records／catno 同時記作「5」與「REVELATION:5」／7\" Vinyl／7 軌**（卡單釘的是其中一筆）／**一筆 XW Official／Revelation Records（catno 欄空）／Digital Media／10 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/d217f68a-dc71-4608-9d20-94d2e4692a2f?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1988 年兩筆 7 吋的七軌完全相同、依序是**：1〈Backfire〉、2〈My Life to Live〉、3〈Living a Lie〉、4〈Look Back〉、5〈You’re Only Young Once〉、6〈Friends〉、7〈Side by Side〉。**七軌沒有任何一軌記錄長度。** **第 5 軌與盤名同名（但盤名多了省略號）、第 7 軌與樂團同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d217f68a-dc71-4608-9d20-94d2e4692a2f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**十軌的數位版比 7 吋多出三軌**：8〈Dead Serious〉、9〈The Time Is Now〉、10〈Violence to Fade〉——**十軌裡只有第 10 軌記了長度 1:41，其餘九軌全空**。數位版把第 5 軌的引號改成 ASCII 直撇號（〈You're Only Young Once〉），7 吋那兩筆用的是彎引號。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d217f68a-dc71-4608-9d20-94d2e4692a2f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **3 個 release-group**（release-group-count 3）：**1988 本張（Album、secondary-types 空）**、1992《You're Only Young Once... So Do It Right》(Album＋**Compilation**)、1997《You're Only Young Once》(Album＋**Compilation**)。**三個 release-group 的盤名互相包含**，正規化後極易折成同一鍵；**本張是三者裡唯一 secondary-types 為空的一個，也是日期最早的一個。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8dc812b1-d387-4c45-8173-f0d5bd0c318f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流店面的 collectionId **1606212228**：collectionName「**You're Only Young Once...**」（**ASCII 直撇號＋三個 ASCII 句點**）、artistName「**Side By Side**」（B 大寫）、releaseDate **1988**、trackCount **10**、copyright「**℗ 1988 Revelation Records**」、notExplicit。`entity=song` 攤出 10 軌，**與 MB 那筆十軌數位版逐軌同名同序**：〈Backfire〉2:08、〈My Life To Live〉1:39、〈Living a Lie〉1:14、〈Look Back〉1:32、〈You're Only Young Once〉1:42、〈Friends〉1:11、〈Side By Side〉1:00、**〈Dead Serious〉1:24、〈The Time Is Now〉2:04、〈Violence To Fade〉1:41**。**十軌總長 15:35；前七軌（本張的曲目）合計 10:26，最短〈Side By Side〉整整 1:00、最長〈Backfire〉2:08。** 第 10 軌的 1:41 與 MB 那筆數位版唯一記錄的長度一秒不差。",
+    "src": "https://itunes.apple.com/lookup?id=1606212228&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "七首歌裡有一首正好一分鐘整，一秒不多一秒不少",
+   "同一年三筆發行，兩筆是七軌的黑膠，一筆是十軌的數位"
+  ],
+  "sound": "1988 年 Revelation 那兩筆 7 吋是七軌，MB 端七軌**一格長度都沒有**；照後來十軌那版同名同序的秒數看，這七首合計 10 分 26 秒——最長的開場〈Backfire〉2:08、最短的〈Side by Side〉正好一分鐘整，中間五首落在 1:11 到 1:42 之間，沒有一首超過兩分十秒。曲名幾乎都是三到四個字的短句：〈My Life to Live〉〈Living a Lie〉〈Look Back〉〈Friends〉。第五軌與唱片同名，收尾第七軌與樂團同名，一張七吋把盤名與團名各放了一次。",
+  "keyTracks": [
+   "Backfire",
+   "You're Only Young Once",
+   "Side by Side"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**（只有年份、沒有月日），**轄下三筆 release 全部標 1988**——兩筆 US 7 吋與一筆 XW 數位同年，與卡單 `year` 1988 相符。**本 release-group 名下沒有跨年的再發**，但同一支團另有兩個 Compilation release-group（1992、1997），**盤名互相包含、照盤名配對會取到 1992 或 1997**（裁定 220 的形狀，本層以 rgMbid 排除）。**串流那一路的 releaseDate 欄與 ℗ 欄都寫 1988、與 MB 一致**，但內容是十軌不是七軌。**同名先行單曲：無**（〈You're Only Young Once〉只作為本張第 5 軌出現）。",
+  "notes": "**盤名字形**：MB 實體寫作 **You’re Only Young Once…**（U+2019＋U+2026），卡單依本批裁定第 3 條收斂成 ASCII 的 **You're Only Young Once...**。**店面 1606212228 的 collectionName 就是 ASCII 形**，與卡單一致——**這一點查證屬實**，可作為該裁定的獨立佐證。｜**軌數混版（裁定 251）**：卡單 `label` 釘的是 **1988 US Revelation／catno「5」與「REVELATION:5」／7\" Vinyl／7 軌**。**〈Dead Serious〉〈The Time Is Now〉〈Violence to Fade〉三軌只在十軌的數位版上，不是本張曲目，一軌都不得引**；**十軌與十五分半這兩個數字也不得引**。｜**長度要交代來源**：**本張七軌在 MB 端全無長度**，本檔引的秒數取自十軌那版（店面與 MB 數位版同名同序）。行文可以寫「七首約十分半」「有一首正好一分鐘」，**不得寫成「1988 年那張 7 吋標示的長度」**。｜**擋下策展層三處**：(1) `why` 寫「**Revelation 目錄第五號**」——**可查證的只有 catno 字串「5」與「REVELATION:5」**，MB 端沒有回問過該廠牌完整目錄，**「第五號」這個序數不得寫**，只能寫 catno 本身。 (2) `why` 寫「**youth crew 正典裡最常被列入必聽的一張 7 吋**」——極值斷語、查無來源，**不得寫**。 (3) `why` 寫「c-120『一張都收不到』的九支團之一，池中零」——這是卡池側的事實、與唱片無關，**不得寫進正文**。｜**序數**：藝人目錄只有 3 個 release-group，**本張是唯一 secondary-types 為空的一個、也是日期最早的一個**，「這支團目錄上最早、也是唯一一張不是整編的碟」可以寫；**另兩張都是 Compilation，行文提到它們時必須寫成整編、不得寫成「後來的專輯」**。｜**串流採信 1606212228，但限定用途**：`entity=song` 攤出的十軌與 MB 那筆十軌數位版逐軌同名同序，第 10 軌長度與 MB 唯一記錄的一格一秒不差，可確認是同一個編排；**℗ 欄與 releaseDate 欄都寫 1988、與首版同年，但上架的是十軌的數位版，不是 1988 年那張七軌 7 吋的證據**。**可以當試聽來源；不是本張原盤的證據，第 8 到 10 軌不是本張的曲目。** 店面掛名寫作「Side By Side」（B 大寫），**配對一律用 collectionId，不得用盤名或掛名字串**。｜**不得寫個別成員的名字**（裁定 241／250），**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：本卡的 `releaseType` 是 **Album**、`exceptionReason` 為空字串、`exceptionEvidenceUrls` 為空陣列（本批裁定第 2 條），**沒有要覆核的例外舉證**；**但「實體是 7 吋」這句在本張是站得住的**——所釘的兩筆 release 的 `media.format` 欄就寫著「7\" Vinyl」（與同組的 Gorilla Biscuits 同名碟不同，那張只寫「Vinyl」）。"
+ },
+ {
+  "key": "desc2:Chain of Strength|True Till Death",
+  "artist": "Chain of Strength",
+  "album": "True Till Death",
+  "facts": [
+   {
+    "f": "release-group f84a15aa 的欄位：title「True Till Death」、artist-credit「Chain of Strength」（藝人實體 81a3c11e，**disambiguation 空白**）、first-release-date **1989**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release，都是 1989 US Official／Revelation Records／7\" Vinyl／6 軌**，catno 兩筆都同時記作「10」與「Revelation:10」（其中一筆寫成大寫「REVELATION:10」）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f84a15aa-5ea5-3880-ac3b-41cc029785de?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1989 年那筆有長度的 7 吋，六軌依序是**：1〈Just How Much?〉2:04、2〈True Till Death〉2:15、3〈There Is a Difference〉3:02、4〈Never Understand〉2:18、5〈Let Down〉1:39、6〈Best of Times〉1:50。**六軌總長 13:08**；最長〈There Is a Difference〉3:02、最短〈Let Down〉1:39，**六軌裡有四軌落在 1:50 到 2:18 之間**。**另一筆同規格的 1989 US 7 吋六軌同名同序，但六軌全無長度。** **第 2 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f84a15aa-5ea5-3880-ac3b-41cc029785de&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **3 個 release-group**（release-group-count 3）：**1989 本張《True Till Death》(EP、secondary-types 空)**、1990《What Holds Us Apart》(EP、secondary-types 空)、1995《The One Thing That Still Holds True》(EP＋**Compilation**)。**三個 release-group 的 primary-type 全部是 EP，沒有任何一個是 Album**；**本張 1989 是三者裡最早的一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=81a3c11e-ac20-4bb4-8614-06b157e802d8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**店面沒有本張，但 1995 年那張整編（collectionId 91072229、11 軌、℗ 1995 Revelation Records）把本張六軌全部收了進去**——它的第 6 到 11 軌是〈True Till Death〉2:23、〈Just How Much〉1:56、〈There Is a Difference〉2:47、〈Never Understand〉2:18、〈Let Down〉1:44、〈Best of Times〉1:53：**六個曲名與本張完全對應，但順序被重排（本張的第 1 軌在那裡排第 7），而且長度逐軌不同**——〈There Is a Difference〉差 15 秒、〈Just How Much〉差 8 秒、〈True Till Death〉差 8 秒，只有〈Never Understand〉2:18 兩邊一致。以「Chain of Strength True Till Death」在 us 店搜尋回 **0 筆**；以「Chain of Strength」搜尋回 2 筆，一筆是那張整編、一筆是同名不同人的碟。",
+    "src": "https://itunes.apple.com/lookup?id=91072229&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六首歌十三分鐘，第二首與唱片同名",
+   "同一批六首歌，六年後重排順序再壓一次，長度整組都不一樣了"
+  ],
+  "sound": "1989 年 Revelation 那筆 7 吋是六軌、總長 13 分 08 秒，是這條線上少數平均超過兩分鐘的一張。最長的第三軌〈There Is a Difference〉3:02 是全片唯一破三分的一首，最短的〈Let Down〉1:39；扣掉這兩端，其餘四首整齊落在 1:50 到 2:18 之間。開場〈Just How Much?〉2:04 是六個曲名裡唯一帶問號的一個，第二軌〈True Till Death〉與唱片同名，收尾〈Best of Times〉1:50。同一批六首歌六年後被重排順序再壓一次，那一版的長度整組都跟這裡對不上。",
+  "keyTracks": [
+   "Just How Much?",
+   "True Till Death",
+   "There Is a Difference"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989**（只有年份、沒有月日），**轄下兩筆 release 都標 1989 US、都是 Revelation Records 的 7\" Vinyl 6 軌**，與卡單 `year` 1989 相符。**本 release-group 名下沒有跨年的再發**；但同一支團 1995 年另有一個 release-group（e37fc43e）把本張六軌整批收進去，**照那張取年會取到 1995**（裁定 220 的形狀，本層以 rgMbid 排除）。**catno 重複**：本張與 1995 年那張在 MB 上都掛 Revelation 的 10／REV10，**照 catno 配對分不出兩者**。**店面沒有本張。** **同名先行單曲：無**（〈True Till Death〉只作為本張第 2 軌出現）。",
+  "notes": "**擋下策展層四處**：(1) `exceptionReason` 寫「**Revelation 目錄第十號**」——可查證的只有 catno 字串「10」與「Revelation:10」，**MB 端沒有回問過該廠牌完整目錄，「第十號」這個序數不得寫**，只能寫 catno 本身。 (2) `exceptionReason` 寫「『一支團只有兩張 7 吋卻定義了一個世代』**最極端的例子**」——極值斷語，**不得寫**；同句前半「名下三個 release-group 全部不是長篇」**查證屬實**（三個 primary-type 全是 EP、無 Album），可以留。 (3) `exceptionReason` 寫「youth crew **從紐約擴散到加州之後最被引用的一張**」——地名與極值都查無來源，**兩段都不得寫**（依裁定 241／250 與派工信第 4 條）。 (4) `why` 寫「這批把它的**原盤 7 吋與 1995 年的完整記錄**各收一張」——這是卡池側的敘述，**不得寫進正文**。｜**軌數（裁定 251）**：兩筆 release 都是 6 軌，本張沒有軌數分歧；**行文引 6 軌、引這六個曲名都安全**。**但要注意兩筆 7 吋只有一筆記了長度，另一筆六軌全空。**｜**串流：本張三店皆未命中，這一點查證屬實。但 1995 年那張整編（91072229）確實把本張六軌全部收了進去**——六個曲名完全對應，**順序被重排、長度逐軌不同（最大差 15 秒）**。**若管線要拿它當本張的試聽來源，必須寫明：可以當試聽來源，但那是 1995 年那張十一軌整編的版本，不是 1989 年這張 7 吋的證據，順序與長度都不是本張的；另外五軌（〈Impact〉〈Too Deep Until Now〉〈The Space Between〉〈Through These Eyes〉〈Hurts to Ask〉）不是本張的曲目。**｜**藝人實體 81a3c11e 的 disambiguation 是空白的**——依裁定 250 後半，**行文不得以 disambiguation 背書本名**，身分依據只能用名下目錄與 catno。｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1989、US、Revelation、7 吋、6 軌、catno 10」；**`Revelation_Records` 條目的內文確實列出了 Chain of Strength 這個掛名**，支持「這支團在該廠牌發行過」；**`Youth_crew` 條目只證明這個詞作為次類型存在，不支持 `exceptionReason` 裡的目錄序數與極值那兩句**。"
+ },
+ {
+  "key": "desc2:Alone in a Crowd / Inside Out|Alone in a Crowd / Inside Out",
+  "artist": "Alone in a Crowd / Inside Out",
+  "album": "Alone in a Crowd / Inside Out",
+  "facts": [
+   {
+    "f": "release-group 23715865 的欄位：title「Alone in a Crowd / Inside Out」、**artist-credit 是合掛：「Alone in a Crowd」（實體 1639f026，disambiguation 空白）／「Inside Out」（實體 **ed113a79**，disambiguation「**New York hardcore band**」）**、first-release-date **1989**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release**：**1989 US Official／Flux Records／catno「FR-2」／7\" Vinyl／4 軌**（卡單釘的這一筆）／**1994 XE Official／Lost and Found Records（catno 欄空）／CD／7 軌**，barcode 4015977006555。",
+    "src": "https://musicbrainz.org/ws/2/release-group/23715865-c3a9-3afc-aeeb-6723d15fc2fe?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**⚠ 1989 年那張 7 吋的四軌，逐軌的 artist-credit 全部是「Alone in a Crowd」，沒有任何一軌掛 Inside Out**：1〈Is Anybody There ?〉1:43、2〈Commitment〉1:31、3〈Who You Know〉1:43、4〈When Tigers Fight〉2:47。**四軌總長 7:44**——是本組二十張裡最短的一張，最長的收尾〈When Tigers Fight〉2:47 幾乎是最短的〈Commitment〉1:31 的兩倍。**曲名第一軌的問號前面有一個空格（Is Anybody There ?），這是 MB 實體的原字形。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=23715865-c3a9-3afc-aeeb-6723d15fc2fe&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Inside Out 的三軌只出現在 1994 年那筆七軌 CD 上**：第 5〈Above All〉4:54、第 6〈Beat Life〉1:39、第 7〈Crackin Up〉2:10，三軌的 artist-credit 才是「Inside Out」。**換句話說，兩支團同時出現在同一張實體上是 1994 年那筆 CD 的事，1989 年那張 7 吋在 MB 的曲目上是單面四軌、只有一支團。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=23715865-c3a9-3afc-aeeb-6723d15fc2fe&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列：**Alone in a Crowd（1639f026）名下 2 個 release-group**——1989 本張、2014-06-16《Alone In A Crowd》(**primary-type 為 null**)；**這張 split 是它唯一一個 primary-type 不為 null 的 release-group**。**Inside Out（ed113a79，紐約那一個）名下只有 1 個 release-group，就是這張 split。** 本組另一張卡的 Inside Out 是 **0049c4d7**（disambiguation「Los Angeles area hardcore band」）、名下 5 個 release-group，**兩者是不同的藝人實體，不是同一支團。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1639f026-7a51-4762-a3f4-53a10353f4a8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**回撈候選判成「目錄裡找不到」，但實測店面有一筆對得上（裁定 248 的形狀）**：collectionId **897067238**，collectionName「Alone in a Crowd - EP」、artistName「Alone in a Crowd」、releaseDate **2014-07-05**、trackCount **5**、copyright「**℗ 2014 Atomic Action! Records**」、notExplicit。`entity=song` 攤出 5 軌：〈Is Anybody There?〉1:41、〈Commitment〉1:29、〈Who You Know〉1:41、〈When Tigers Fight〉2:44、**〈Teenager in a Box〉1:13**。**前四軌與 1989 年那張 7 吋逐軌同名同序、長度逐軌只差 2 到 3 秒**；**第 5 軌〈Teenager in a Box〉不在 1989 年那張上，而且整張同樣沒有任何一軌掛 Inside Out。**",
+    "src": "https://itunes.apple.com/lookup?id=897067238&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "唱片封面上並列兩支團的名字，唱片裡的四首歌卻只有一支團",
+   "四首歌合計七分四十四秒，最後一首比第二首整整長了一倍"
+  ],
+  "sound": "1989 年 Flux／FR-2 的 7 吋是四軌、總長只有 7 分 44 秒，是這一組二十張裡最短的一張。收尾的〈When Tigers Fight〉2:47 幾乎是第二軌〈Commitment〉1:31 的兩倍長，中間兩軌〈Is Anybody There ?〉與〈Who You Know〉都是 1:43，一秒不差地並排在一起。曲名三個是問句或短句、一個是意象（〈When Tigers Fight〉），開場那軌的問號前面還留著一個空格。唱片的名字掛了兩支團，四首歌的掛名卻只有一支；另一支團的三首歌要到五年後那張七軌 CD 上才出現。",
+  "keyTracks": [
+   "Is Anybody There ?",
+   "Who You Know",
+   "When Tigers Fight"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989**（只有年份、沒有月日），其下最早的 release 就是 1989 US 的 Flux Records／FR-2（Official、7\" Vinyl、4 軌），與卡單 `year` 1989 相符。**再發一筆：1994 XE 的 Lost and Found Records CD、7 軌**——**軌數多三軌、國別從 US 變成 XE、年份晚五年**，照載體或軌數取年都會取到 1994（裁定 220 的形狀）。**店面那一筆 897067238 的 releaseDate 是 2014-07-05、℗ 2014 Atomic Action! Records，比首版晚二十五年**，年份仍取 1989。**同名先行單曲：無**（本張是雙掛名的同名碟，曲目中無同名曲）。",
+  "notes": "**⚠ 最重的一處：`exceptionReason` 寫「1989 年紐約與加州兩支 straight edge 團**對切的 split 7 吋**」——逐軌覆核推翻。** **1989 年那張 7 吋的四軌，artist-credit 全部是 Alone in a Crowd，沒有一軌掛 Inside Out**；Inside Out 的三軌（〈Above All〉〈Beat Life〉〈Crackin Up〉）只出現在 1994 年那筆七軌 CD 上。**「兩支團對切」「一人一面」這類寫法一律不得寫**；行文只能寫「唱片的掛名並列兩支團，1989 年那張 7 吋上的四首歌都掛在其中一支名下」。｜**⚠ 第二重的一處：「紐約與加州兩支」的**加州**是錯的。** 本張合掛的 Inside Out 是實體 **ed113a79，disambiguation 寫「New York hardcore band」**；加州那一支是 **0049c4d7**（disambiguation「Los Angeles area hardcore band」），**是本組另一張卡的團、不是這一張的**。**「加州」不得寫**；同時**「紐約」也不得寫**——區級與城市地名依裁定 241／250 與派工信第 4 條一律不得寫。｜**擋下策展層第三處**：`exceptionReason` 寫「**Ray Cappo 一系的人脈**把兩地場景接上」——**人名一律不得寫**（裁定 241／250），人脈關係在實體欄位端也查不到。｜`why` 寫「收這張不是因為它是 Alone in a Crowd 最重要的錄音，而是因為它是 MB 上唯一收得進來的實體」**查證屬實**：該藝人名下只有 2 個 release-group，另一個（2014-06-16）的 primary-type 為 null。**依 c-120 第 3 條，`notes` 在此寫死：不得寫成「代表作」或「最重要的一張」**，只能寫成「這支團在資料端唯一一筆型別完整的錄音」。｜**軌數（裁定 251）**：卡單釘的是 **1989 US Flux／FR-2、7 吋、4 軌**，**行文只能引這四軌**。〈Above All〉〈Beat Life〉〈Crackin Up〉三軌只在 1994 年那筆 CD 上，**一軌都不得引**；**七軌這個數字也不得引**。｜**串流採信 897067238（裁定 248：策展層判成「找不到」，實測是有的）**：`entity=song` 攤出的五軌，前四軌與 1989 年那張 7 吋**逐軌同名同序、長度逐軌只差 2 到 3 秒**，可確認是本張四軌的內容。**但它是 2014 年的五軌版（℗ 2014 Atomic Action! Records），可以當試聽來源，不是 1989 年那張 7 吋的證據；第 5 軌〈Teenager in a Box〉不是本張的曲目。**｜**封面 CAA 回 404**，本張屬「整支團唯一收得進來的碟」的例外。｜**不得寫個別成員的名字**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**，但**兩個非 MB 的都站不住**：`Youth_crew` 與 `Split_album` 都是**通用類別條目**（前者解釋這個次類型、後者解釋什麼是 split 唱片），**沒有一句提到本張、本團或 Flux Records**，**不支持 `exceptionReason` 的任何具體主張**；而 `Split_album` 這一筆在本張尤其尷尬——**MB 的曲目根本不支持「這是一張 split」**。**這兩筆舉證應視為無效，需策展層補真正記錄本張的來源。**"
+ },
+ {
+  "key": "desc2:Inside Out|No Spiritual Surrender",
+  "artist": "Inside Out",
+  "album": "No Spiritual Surrender",
+  "facts": [
+   {
+    "f": "release-group 87d45a29 的欄位：title「No Spiritual Surrender」、artist-credit「Inside Out」（藝人實體 **0049c4d7**，disambiguation「**Los Angeles area hardcore band**」）、first-release-date **1990**（只有年）、primary-type EP、secondary-types **空**。轄下 **4 筆 release，全部 US、全部 Official**：**1990／Revelation Records／catno「REV019」／media format 只寫「Vinyl」（未標尺寸）／4 軌**（卡單釘的這一筆）／1994-07-01／Revelation Records／「Revelation: 19 CD」／CD／**6 軌**／1994-07-01／Revelation Records（catno 欄空）／Cassette／**6 軌**／1996-06-25／Revelation Records／「REV19」／Vinyl／**6 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/87d45a29-ae5e-351e-935e-1f0eb4ad8147?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1990 REV019 的四軌與長度**：1〈Burning Fight〉3:27、2〈Undertone〉1:42、3〈By a Thread〉2:20、4〈No Spiritual Surrender〉2:59。**四軌總長 10:28**；開場〈Burning Fight〉3:27 是全片最長的一軌，第二軌〈Undertone〉1:42 是最短的，**兩端差 105 秒**。**第 4 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=87d45a29-ae5e-351e-935e-1f0eb4ad8147&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1994 與 1996 三筆再發一律六軌**，前四軌與 1990 年那版同名同序、長度逐軌只差 1 秒（3:26／1:41／2:20／2:58），**多出來的兩軌是第 5〈Sacrifice〉2:30 與第 6〈Redemption〉2:09**——**這兩軌不在 1990 年的版本上**。**1994 年那兩筆（CD 與卡帶）同日、1996 年那筆是黑膠；三筆的 catno 分別寫成「Revelation: 19 CD」「（空）」「REV19」，與 1990 年那筆的「REV019」都不一樣。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=87d45a29-ae5e-351e-935e-1f0eb4ad8147&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **5 個 release-group**（release-group-count 5）：1989《Demo》(EP＋**Demo**)、**1990 本張《No Spiritual Surrender》(EP、secondary-types 空)**、1991《1991: KXLU, Los Angeles, CA, USA》(Album＋**Live**)、1991《Benefit 7\"》(EP＋**Live**)、無日期《1990-06-15: Anthrax, Norwalk, CT, USA》(Album＋**Live**)。**本張是五者裡唯一 secondary-types 為空的一個**，但**不是唯一一筆錄音**——1989 年那筆 Demo 比它早。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0049c4d7-6459-4b54-a865-fd19969f427f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流店面的 collectionId **91742440**：collectionName「No Spiritual Surrender - EP」、artistName「Inside Out」、releaseDate **1990**、trackCount **6**、copyright「**℗ 1990 Revelation Records**」、notExplicit。`entity=song` 攤出 6 軌：〈Burning Fight〉3:26／〈Undertone〉1:41／〈By a Thread〉2:20／〈No Spiritual Surrender〉2:58／**〈Sacrifice〉2:30／〈Redemption〉2:09**——**與 1994／1996 那三筆六軌版逐軌同名同序、長度一秒不差**，不是 1990 年那張四軌黑膠。",
+    "src": "https://itunes.apple.com/lookup?id=91742440&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "外部條目端（`No_Spiritual_Surrender`）**明寫本張是 7-inch EP、1990 年由 Revelation Records 發行**，並寫成「their only release before their breakup in 1991」。**這一句與 MB 的藝人目錄不一致**：MB 上該藝人名下另有 1989 年的 Demo 與三筆 Live release-group。",
+    "src": "https://en.wikipedia.org/api/rest_v1/page/summary/No_Spiritual_Surrender"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十分半，開場那首比第二首長了一分四十五秒",
+   "同一個編號寫過四種樣子：REV019、Revelation: 19 CD、REV19，還有一次乾脆空著"
+  ],
+  "sound": "1990 年 Revelation／REV019 的黑膠是四軌、總長 10 分 28 秒。開場〈Burning Fight〉3:27 是全片最長的一軌，緊接著的〈Undertone〉只有 1:42——一分四十五秒的落差擺在第一與第二軌之間，是這一組二十張裡最陡的一次開場。第三軌〈By a Thread〉2:20、收尾與唱片同名的〈No Spiritual Surrender〉2:59，把長度又拉回三分鐘附近。四個曲名有兩個是意象短語（〈Burning Fight〉〈By a Thread〉）、一個是單詞（〈Undertone〉）。四年後的再壓在尾巴補上兩軌，同樣四軌的前段一秒不差。",
+  "keyTracks": [
+   "Burning Fight",
+   "Undertone",
+   "No Spiritual Surrender"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**（只有年份、沒有月日），其下最早的 release 就是 1990 US 的 Revelation Records／REV019（Official、format 欄只寫「Vinyl」、4 軌），與卡單 `year` 1990 相符。**再發三筆會蓋年**：1994-07-01 兩筆（CD 與卡帶，皆 6 軌）與 1996-06-25 一筆（Vinyl、6 軌），**照日期完整度或軌數取年都會取到 1994 以後**（裁定 220 的形狀）。**串流那一路的 releaseDate 欄寫 1990、℗ 欄也寫 1990 Revelation Records，兩欄都與首版一致，但內容是六軌不是四軌**——**店面的年份欄與它自己上架的版本不是同一回事**。**同名先行單曲：無**（〈No Spiritual Surrender〉只作為本張第 4 軌出現）。",
+  "notes": "**⚠ 載體：所釘的 1990 那筆 `media.format` 只寫「Vinyl」、沒有尺寸**（c-120 交接第六節列的同一種形狀）。**但本張有例外**：外部條目端明寫它是 7-inch EP，**要寫「7 吋」必須靠這一筆條目、不能靠 MB**；`notes` 建議行文寫「1990 年的黑膠」最安全。｜**擋下策展層四處**：(1) `exceptionReason` 寫「Inside Out **解散前唯一的錄音**」——**查證推翻**：MB 藝人目錄 5 個 release-group，1989 年另有一筆 Demo、另有三筆 Live。**「唯一的錄音」不得寫**；可寫的極值只有「這支團目錄上唯一一個 secondary-types 為空的 release-group」。（外部條目寫的是「their only release before their breakup」，**與 MB 目錄不一致，兩邊打架時不得採信更強的那一句**。） (2) `exceptionReason` 寫「**Zack de la Rocha** 在 Rage Against the Machine 之前的樂團」——**人名一律不得寫**（裁定 241／250），另一支團的名字同樣是人物沿革敘述，**不得寫**。 (3) `exceptionReason` 寫「四首歌成為 90 年代 straight edge **往情緒硬蕊分岔的起點**，被後續作品反覆引用」——**立場評價＋斷語，查無來源，兩句都不得寫**。 (4) `why` 寫「名下五個 release-group 裡三個是 Live、一個是 CAA 404 的 demo，這張是唯一形態與封面都齊備的碟，**也正好是這支團的代表作**」——前半**查證屬實**（5 個 RG、3 個 Live、1 個 Demo），**「代表作」是斷語、不得寫**。｜**軌數混版（裁定 251）**：卡單釘的是 **1990 REV019、4 軌**，**行文只能引這四軌**。**〈Sacrifice〉〈Redemption〉兩軌只在 1994／1996 那三筆六軌版上，不是本張曲目，一軌都不得引；六軌這個數字也不得引。**｜**catno 分歧**：同一張碟在四筆 release 上寫成 REV019／Revelation: 19 CD／（空）／REV19 四種樣子，**照 catno 配對分不出版本**；行文引 catno 一律引所釘那筆的「REV019」。｜**串流採信 91742440，但限定用途**：`entity=song` 攤出的六軌與 1994／1996 那三筆**逐軌同名同序、長度一秒不差**，**可確認上架的是六軌的再發版本，不是 1990 年那張四軌黑膠**；℗ 欄雖然寫 1990，但內容明確是六軌版。**可以當試聽來源，不是本張原盤的證據；不是本張的兩軌是第 5〈Sacrifice〉與第 6〈Redemption〉。**｜**同名不同團**：本張的 Inside Out 是 **0049c4d7**；本組另一張卡（1989 年的 split）合掛的是 **ed113a79**，**兩者不是同一支團，行文不得把兩張碟的沿革寫在一起。**｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1990、US、Revelation、REV019、4 軌」；**`No_Spiritual_Surrender` 條目是本張的專屬條目，支持「7-inch EP、1990、Revelation Records」**——**這是本組唯一一個真正對得上本張的非 MB 舉證**，但它那句「their only release before their breakup」與 MB 目錄衝突，**不得引用**；`Inside_Out_(band)` 條目指的確實是本張這一支（加州橙縣那一支），**但條目內容以人物沿革為主，依裁定 241／250 一個字都不得寫進正文**。"
+ },
+ {
+  "key": "desc2:Judge|There Will Be Quiet...",
+  "artist": "Judge",
+  "album": "There Will Be Quiet...",
+  "facts": [
+   {
+    "f": "release-group a219a35b 的欄位：title「There Will Be Quiet...」（**尾巴是三個 ASCII 句點，MB 實體本身就是 ASCII**）、artist-credit「Judge」（3827fbb6，disambiguation「US straight edge punk band」）、first-release-date **1990**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release**：**1990 US Official／Revelation Records／catno「Revelation: 20」（中間有一個空格）／CD／3 軌**（卡單釘的這一筆）／**1994-09-27 XW Official／Revelation Records（catno 欄空）／Digital Media／3 軌**，barcode 098796002025。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a219a35b-85a8-35a1-b3e3-c5efcdaddbab?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1990 Revelation: 20 的三軌與長度**：1〈Forget This Time〉3:57、2〈The Storm II〉4:00、3〈**When the Levee Breaks**〉5:38。**三軌總長 13:35，平均一首 4 分 32 秒**——**是本組二十張裡平均軌長最長的一張**，而且三軌沒有一首短於三分半。**第 2 軌的曲名帶羅馬數字 II，第 3 軌 5:38 比第 1 軌長了 101 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a219a35b-85a8-35a1-b3e3-c5efcdaddbab&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1994-09-27 那筆數位版三軌同名同序，長度逐軌短 2 到 3 秒**（3:55／3:57／5:38）。**兩筆的載體不同（CD 對數位）、catno 一有一無，但軌數與曲名完全一致。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a219a35b-85a8-35a1-b3e3-c5efcdaddbab&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **7 個 release-group**：1988《New York Crew》(EP)、1989《Bringin' It Down》(Album)、1989《Chung King Can Suck It LP》(Album)、**1990 本張《There Will Be Quiet...》(EP)**、**1992《No Apologies》(Album)**、2005《What It Meant - The Complete Discography》(Album＋Compilation)、2018-04-12《Serial Killer》(Single)。**本張不是目錄上最後一筆錄音——1992、2005、2018 都在它之後**；**它是目錄裡第二個、也是最後一個 primary-type=EP 的 release-group。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3827fbb6-e219-4e2d-9af8-35cc9a7d8d8e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**回撈候選的三筆裡有一筆其實就是本張（裁定 248 的形狀）**：collectionId **1471238213**，店面標題寫成「**The Storm - Single**」、artistName「Judge」、releaseDate **1990**、trackCount **3**、copyright「℗ 1990 Revelation Records」、notExplicit。`entity=song` 攤出的三軌是〈Forget This Time〉3:55、〈The Storm II〉3:57、〈When the Levee Breaks〉5:38——**與本張逐軌同名同序，且與 1994 年那筆數位版的長度一秒不差**。**盤名完全對不上（店面叫《The Storm》、本張叫《There Will Be Quiet...》），只有逐軌比對才配得起來。** 另兩筆候選 1471453134《Bringin' It Down》(9 軌) 與 1471235742《New York Crew》(5 軌) **是同一支團的另外兩張碟，不是本張**。",
+    "src": "https://itunes.apple.com/lookup?id=1471238213&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三首歌十三分半，是這一批裡唯一一張每首都超過三分半的碟",
+   "唱片叫《There Will Be Quiet...》，店面上架時改叫《The Storm》"
+  ],
+  "sound": "1990 年 Revelation: 20 的 CD 只有三軌，卻是本組二十張裡平均最長的一張：〈Forget This Time〉3:57、〈The Storm II〉4:00、〈When the Levee Breaks〉5:38，合計 13 分 35 秒，平均一首 4 分 32 秒，沒有一首短於三分半。收尾那軌 5:38 比開場長了一分四十一秒，是三軌裡明顯拉出去的一首。曲名的形狀也不一樣：一句祈使式的〈Forget This Time〉、一個帶羅馬數字 II 的〈The Storm II〉，以及一個完整的敘述句〈When the Levee Breaks〉。四年後那筆數位版三軌同名同序，只短了兩三秒。",
+  "keyTracks": [
+   "Forget This Time",
+   "The Storm II",
+   "When the Levee Breaks"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**（只有年份、沒有月日），其下最早的 release 就是 1990 US 的 Revelation Records／「Revelation: 20」（Official、CD、3 軌），與卡單 `year` 1990 相符。**再發一筆：1994-09-27 XW 的 Revelation Records 數位版**（3 軌），**照日期完整度取年會取到 1994-09-27**（裁定 220 的形狀）。**串流那一筆 1471238213 的 releaseDate 與 ℗ 都寫 1990、與 MB 首版同年**，但它的長度與 1994 年那筆數位版一秒不差、與 1990 年那筆 CD 差 2 到 3 秒。**同名先行單曲：無**（三個曲名都不等於盤名；〈The Storm II〉與盤名無關）。",
+  "notes": "**⚠ 載體：本張是 CD，不是 7 吋。** 所釘的 1990 那筆 `media.format` 是 **CD**、另一筆是 Digital Media，**本 release-group 名下沒有任何一筆黑膠**。**行文一律不得寫「7 吋」「黑膠」**——這一點與同組多數卡相反，特別容易寫錯。｜**擋下策展層三處**：(1) `exceptionReason` 寫「Judge 在《Bringin' It Down》之後、**解散之前的最後一份錄音**」——**查證推翻**：藝人目錄上本張之後還有 **1992《No Apologies》(Album)**、2005 的整編與 2018 的單曲。**「最後一份錄音」不得寫**；可寫的序數只有「目錄裡第二個、也是最後一個 primary-type=EP 的 release-group」。 (2) `exceptionReason` 寫「**Revelation 目錄第二十號**」——可查證的只有 catno 字串「**Revelation: 20**」（中間有空格），**MB 端沒有回問過該廠牌完整目錄，「第二十號」這個序數與「Revelation 前二十號目錄的終點」都不得寫**。 (3) `exceptionReason` 寫「三首歌**收束了 1988–1990 那一波 straight edge 最強硬的一支**」——立場評價＋斷語，**不得寫**。｜**軌數（裁定 251）**：兩筆 release 都是 3 軌，本張沒有軌數分歧；**行文引 3 軌、引這三個曲名都安全**。｜**串流採信 1471238213（裁定 248：策展層的回撈候選判成三筆「年份相符」，其中一筆其實就是本張）**：`entity=song` 攤出的三軌與本張**逐軌同名同序**，長度與 1994 年那筆數位版**一秒不差**，可確認就是本張的內容。**⚠ 但店面的標題是《The Storm - Single》、與盤名完全對不上，配對一律用 collectionId，不得用盤名字串。** 上架的長度指向 1994 年那筆數位版，**可以當試聽來源，不是 1990 年那張 CD 的證據**。**另兩筆候選 1471453134 與 1471235742 是同團的另外兩張碟，一律駁回**（後者是本組另一張卡的碟）。｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1990、US、Revelation、Revelation: 20、CD、3 軌」；`Judge_(band)` 條目支持樂團存在（**但條目開頭就是兩個成員本名，一個字都不得寫進正文**）；**`Revelation_Records` 條目的內文列出了 Judge 這個掛名**，支持「這支團在該廠牌發行過」，**但不支持「目錄第二十號」與「前二十號的終點」這兩個序數主張**。"
+ },
+ {
+  "key": "desc2:Integrity|In Contrast of Sin",
+  "artist": "Integrity",
+  "album": "In Contrast of Sin",
+  "facts": [
+   {
+    "f": "release-group b6666c33 的欄位：title「In Contrast of Sin」、artist-credit「Integrity」（藝人實體 f626335d，disambiguation「**US metalcore/hardcore punk band**」）、first-release-date **1990**（只有年）、primary-type EP、secondary-types **空**。轄下 **3 筆 release**：**1990／country 欄為空／Official／Dark Empire／catno「DARK 003-7」／7\" Vinyl／5 軌**（卡單釘的這一筆）／2019-02-05 XW Official／**label-info 整個空**／Digital Media／5 軌／**無日期 XW Official／Relapse Records（catno 欄空）／Digital Media／8 軌**，barcode 781676534517。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b6666c33-4091-48e2-b3c3-dad5b38a780c?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1990 Dark Empire／DARK 003-7 的五軌與長度**：1〈Live It Down〉1:43、2〈In Contrast of Sin〉2:33、3〈Bringing It Back〉2:00、4〈Dead Wrong〉1:28、5〈Harder They Fall〉2:31。**五軌總長 10:15**；最短〈Dead Wrong〉1:28、最長〈In Contrast of Sin〉2:33，**兩端只差 65 秒，五軌全部落在一分半到兩分半這一格裡**。**第 2 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b6666c33-4091-48e2-b3c3-dad5b38a780c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**2019-02-05 那筆數位版五軌同名同序、但曲名全部改成大寫**（LIVE IT DOWN／IN CONTRAST OF SIN／…），長度逐軌長 3 到 5 秒（1:46／2:37／2:04／1:32／2:36）。**無日期那筆 Relapse Records 的八軌版，前五軌與 2019 那筆一秒不差，多出來的三軌是第 6〈Live It Down〉1:45、第 7〈Bringing It Back〉2:08、第 8〈Dead Wrong〉1:35——三軌的曲名與第 1、3、4 軌重複，是同曲的另一次錄音。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b6666c33-4091-48e2-b3c3-dad5b38a780c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **38 個 release-group**（release-group-count 38）。**1990 年以前只有一個**：1989《Harder They Fall》(EP＋**Demo**)。**同為 1990 年的另有一個**：《Grace of the Unholy》(**Single**)，**MB 只給年份、無月日，與本張分不出先後**。**本張不是目錄上最早的一筆，也無法確認是 1990 年最早的一筆。** 目錄裡 primary-type=EP 的共 **9 個**（1989、1990 本張、1991《Scar of a Woman》、1992 兩個、2008、2011、2016、2018、2019 等），**不是五個**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f626335d-d234-408d-a67c-37a3c2c7e98a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**回撈候選兩筆，一筆採信一筆駁回。採信的是 collectionId 1749380659**：collectionName「In Contrast of Sin」、artistName「Integrity」、releaseDate **1990-01-06**、trackCount **8**、copyright「**℗ 2024 Relapse Records, Inc.**」、**collectionExplicitness explicit**。`entity=song` 攤出 8 軌，**與 MB 那筆 Relapse 八軌數位版逐軌同名同序、長度一秒不差**（1:46／2:37／2:04／1:32／2:36／1:45／2:08／1:35），**第 6 到 8 軌店面標成 (Demo Version)**。**駁回的是 1608635754**《Those Who Fear Tomorrow (Deluxe Edition)》：**十五軌的曲名全部帶「(2022 Mix)」尾註、℗ 2022 Relapse Records**，是另一張碟的重混版（c-120 已就同一筆做過同樣的判斷）。",
+    "src": "https://itunes.apple.com/lookup?id=1749380659&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "五首歌十分十五秒，最長與最短只差六十五秒",
+   "同一張唱片後來被拆成八軌上架，多出來的三軌其實是同三首歌的另一次錄音"
+  ],
+  "sound": "1990 年 Dark Empire／DARK 003-7 的 7 吋是五軌、總長 10 分 15 秒，五首整齊得少見：最短的〈Dead Wrong〉1:28、最長的〈In Contrast of Sin〉2:33，兩端只差六十五秒，中間三首落在 1:43 到 2:31 之間，沒有一首破兩分四十秒。與盤名同名的第二軌擺在開場之後，收尾的〈Harder They Fall〉2:31 幾乎與它同長。曲名多是兩三個字的斷語：〈Live It Down〉〈Bringing It Back〉〈Dead Wrong〉。後來的數位版把同樣五軌整組拉長三到五秒，另一版更在尾巴補上同三首歌的另一次錄音。",
+  "keyTracks": [
+   "Live It Down",
+   "In Contrast of Sin",
+   "Harder They Fall"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**（只有年份、沒有月日），其下最早的 release 就是那筆 Dark Empire／DARK 003-7（Official、7\" Vinyl、5 軌）——**但那一筆的 `country` 欄是空的，MB 沒有記國別**。與卡單 `year` 1990 相符。**再發兩筆會蓋年**：2019-02-05 的數位版（5 軌、label-info 整個空）與無日期的 Relapse Records 數位版（**8 軌**），**照日期完整度取年會取到 2019-02-05**（裁定 220 的形狀）。**串流那一路的 releaseDate 欄寫 1990-01-06、帶完整月日，但 MB 只有年份**——**店面那個月日在 MB 端沒有任何依據，不得引用**；同一筆的 ℗ 欄寫「℗ 2024 Relapse Records, Inc.」，指向 2024 年那次重發。**同名先行單曲：無**（〈In Contrast of Sin〉只作為本張第 2 軌出現）。",
+  "notes": "**⚠ 國別：所釘的 1990 那筆 `country` 欄是空的。** 行文**不得寫「美國發行」或任何國別**，只能寫年份、廠牌與 catno。｜**擋下策展層四處**：(1) `exceptionReason` 寫「Integrity 的**第一張黑膠**」——**查證推翻**：藝人目錄上 1989 年已有《Harder They Fall》(EP＋Demo)，同為 1990 年另有《Grace of the Unholy》(Single) 且 **MB 只給年份、與本張分不出先後**。**「第一張黑膠」不得寫**（而且那兩筆的載體本層未回問，連比較的基礎都沒有）。 (2) `exceptionReason` 寫「1990 年這張 7 吋把 straight edge 的道德語言接上**克里夫蘭**的極端金屬語法」——**克里夫蘭是區級地名，依裁定 241／250 與派工信第 4 條不得寫**；「道德語言」是立場敘述，**同樣不得寫**。 (3) `exceptionReason` 寫「後來被稱作 **holy terror** 的整條支線都以這張為起點」——斷語、查無來源，**不得寫**。 (4) `why` 寫「Integrity **名下五張 EP** 裡有四張 CAA 回 404」——**查證推翻**：藝人目錄裡 primary-type=EP 的有 **9 個**，不是五個。**「五張 EP」不得寫。**｜`why` 寫「c-120 收的《Those Who Fear Tomorrow》(1991) 在這張之後」**查證屬實**（目錄日期 1991-10-31）。｜**軌數混版（裁定 251）**：卡單釘的是 **1990 DARK 003-7、7 吋、5 軌**，**行文只能引這五軌**。**八軌版尾巴那三軌（〈Live It Down〉〈Bringing It Back〉〈Dead Wrong〉的另一次錄音）不是本張曲目，一軌都不得引；八軌這個數字也不得引。** 另注意**曲名大小寫**：2019 那筆整組是全大寫，行文一律用 1990 那筆的原字形。｜**串流採信 1749380659，但限定用途**：`entity=song` 攤出的八軌與 MB 那筆 Relapse 八軌數位版**逐軌同名同序、長度一秒不差**，第 6 到 8 軌店面自己標了「(Demo Version)」，可確認上架的是**八軌的現代重發版本**、℗ 欄寫 2024 Relapse Records。**可以當試聽來源，不是 1990 年那張 7 吋的證據**；**前五軌的長度比 1990 年那版整組長 3 到 5 秒，行文引秒數一律引 1990 那一版。** **候選 1608635754 駁回**：十五軌全部帶「(2022 Mix)」、℗ 2022，是另一張碟的 2022 重混版（裁定 247 的形狀，c-120 已就同一筆判過一次）。｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場、宗教相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1990、Dark Empire、DARK 003-7、7 吋、5 軌」；`Integrity_(band)` 條目支持樂團存在，**但條目第一句就是成軍城市與年份，那半句依規則不得寫**；**`Metalcore` 是通用類型條目，沒有一句提到本張，不支持 `exceptionReason` 的任何具體主張**（尤其不支持「第一張黑膠」與「holy terror 起點」）。"
+ },
+ {
+  "key": "desc2:Snapcase|Snapcase",
+  "artist": "Snapcase",
+  "album": "Snapcase",
+  "facts": [
+   {
+    "f": "release-group f7f3de35 的欄位：title「Snapcase」、artist-credit「Snapcase」（藝人實體 90f7f8df，**disambiguation 空白**）、first-release-date **1991**（只有年）、primary-type EP、secondary-types **空**（**MB 沒有標 Demo**）。**轄下只有 1 筆 release**：1991 US Official、**Cassette、4 軌**，label-info 欄有一筆但**廠牌名是 [no label]、catno 是 none**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f7f3de35-310d-4346-add5-70cadd9486c7?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1991 年那捲卡帶的四軌與長度**：1〈Break The Silence〉2:46、2〈The Voyage〉2:38、3〈Die Laughing〉2:08、4〈Undertow〉2:54。**四軌總長 10:26**；**四軌全部落在 2:08 到 2:54 之間，最長與最短只差 46 秒**——是本組二十張裡長度最平均的一張。**四個曲名沒有一個與團名或盤名相同**（本張是自名碟，但曲目中沒有同名曲）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f7f3de35-310d-4346-add5-70cadd9486c7&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **14 個 release-group**（release-group-count 14）：**1991 本張（EP、全目錄最早的一筆）**、1992《Comatose》(Single)、1993《Lookinglasself》(Album)、1995《Steps》(EP)、1996-08-27《The California Takeover... Live》(Album＋Live)、1997《Progression Through Unlearning》(Album)、1998《Firestorm / Steps》(Album＋Compilation)、1999-07-27《snapcase vs boysetsfire》(EP)、2000-01-25《Designs for Automotion》(Album)、2000-02-22《Energy Dome》(Single)、2002《Two Songs》(EP)、2002-09-24《End Transmission》(Album)、2003-11-04《Bright Flashes》(Album)、2025-05-26《Back To Square One》(Single)。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=90f7f8df-db45-4a6c-89fb-9e912f77eabd&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**店面確實沒有本張，而且盤名比對必然誤中。** 以「Snapcase Snapcase」在 us 店搜尋回 15 筆，**沒有一筆的四軌與本張對得上**；回傳的第一批全是 1993 年以後的長篇（《Progression Through Unlearning》《Designs For Automation》《Lookinglasself》《End Transmission》《Steps - EP》《Bright Flashes》），另有 **493675039《Snapcase vs. Boy Sets Fire - EP》——那是本組另一張卡的碟**（`snapcase` 是 `snapcase vs boysetsfire` 的子字串，包含式比對在自名碟上必然誤配）。再以「Snapcase demo 1991」搜尋回 **0 筆**。",
+    "src": "https://itunes.apple.com/search?term=Snapcase%20Snapcase&entity=album&country=us&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌全部在兩分零八秒到兩分五十四秒之間，最長與最短只差四十六秒",
+   "自製卡帶的廠牌欄位上，填的是「沒有廠牌」"
+  ],
+  "sound": "1991 年那捲卡帶是四軌、總長 10 分 26 秒，四首的長度貼得極近：〈Break The Silence〉2:46、〈The Voyage〉2:38、〈Die Laughing〉2:08、〈Undertow〉2:54，最長與最短只差四十六秒，是本組二十張裡長度分佈最窄的一張，也是少數四首平均超過兩分半的一張。四個曲名兩個是祈使或動作短語（〈Break The Silence〉〈Die Laughing〉），兩個是單一名詞（〈The Voyage〉〈Undertow〉）；唱片以團名為名，四首歌裡卻沒有一首同名。",
+  "keyTracks": [
+   "Break The Silence",
+   "Die Laughing",
+   "Undertow"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**（只有年份、沒有月日），其下**唯一**的 release 就是 1991 US 的那捲 Official 卡帶（4 軌），與卡單 `year` 1991 相符。**本 release-group 名下沒有任何再發，沒有可蓋年的版本。** **店面沒有本張**——三店以掛名＋盤名搜尋皆未命中，且盤名比對會誤配到本組另一張卡。**同名先行單曲：無**（本張是自名碟，四個曲名都不等於團名）。",
+  "notes": "**⚠ 型別：MB 的 secondary-types 是空的，沒有標 Demo。** 卡單與策展稿把它當 demo 處理（實體確實是卡帶、廠牌欄是 [no label]），**行文可以寫「自製卡帶」「廠牌欄是空的」，但不得寫成「MB 標為 demo」**。｜**擋下策展層三處**：(1) `exceptionReason` 寫「**水牛城**這支團」——**區級地名，依裁定 241／250 與派工信第 4 條不得寫**（外部條目雖然寫了同一個城市名，仍然不得寫）。 (2) `exceptionReason` 寫「是 Snapcase 把 straight edge **往後來那種切分節奏推進的最早樣本**」——立場敘述＋樂風斷語，查無來源，**不得寫**。 (3) `exceptionReason` 寫「在 **Victory 簽下他們之前**的第一份錄音」——「簽下」是合約敘述、**不得寫**；可查證的只有「本張 label-info 的廠牌欄填的是 [no label]、catno 是 none，該掛名下最早出現 Victory Records 的是 1995 年那張 EP」。｜**序數可以寫**：藝人目錄 14 個 release-group，**本張 1991 是依日期最早的一筆**，「這支團目錄上最早的一筆錄音」查證屬實。`why` 寫「c-120 收的《Lookinglasself》(1993)…這張補的是那之前的一級」**查證屬實**（目錄日期 1993）。｜**軌數（裁定 251）**：唯一一筆 release，4 軌，**沒有軌數分歧，行文引 4 軌與這四個曲名都安全**。｜**串流三店皆未命中，查證屬實；且本張是自名碟，盤名包含式比對會配到本組另一張卡 493675039《Snapcase vs. Boy Sets Fire - EP》——兩張一律以 collectionId 或 rgMbid 分辨，不得用盤名字串。** 本層不採任何候選。｜**藝人實體 90f7f8df 的 disambiguation 是空白的**——依裁定 250 後半，**行文不得以 disambiguation 背書本名**。｜**不得寫個別成員的名字**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**素材不足以寫到 180 字**：可寫的事實格只有「1991／US／Official 卡帶／4 軌／廠牌欄 [no label]／catno none／四個曲名／四段長度／總長 10:26／長度差 46 秒／目錄最早的一筆／無再發／店面無」十二項，**且無廠牌、無國別以外的發行脈絡可寫，本張標 partial**（裁定 252 的判準是可寫的事實格數）。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1991、US、Official 卡帶、4 軌、廠牌欄 [no label]」；`Snapcase` 條目支持樂團存在（**條目第一句的城市名不得寫**）；**`Demo_(music)` 是「什麼是 demo」的通用定義條目，與本張沒有任何關係，不支持 `exceptionReason` 的任何一句**——而且 **MB 根本沒有把本張標成 Demo**，這一筆舉證等於在替一個 MB 上不存在的欄位背書。"
+ },
+ {
+  "key": "desc2:Ressurection|Ressurection",
+  "artist": "Ressurection",
+  "album": "Ressurection",
+  "facts": [
+   {
+    "f": "release-group 25770842 的欄位：title「**Ressurection**」（**兩個 s、MB 實體本身就是這個拼法，不是 Resurrection**）、artist-credit「Ressurection」（藝人實體 6401b0cd，disambiguation「hardcore band from New Jersey」）、first-release-date **1991**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release，都是 US Official、都掛 New Age Records／catno「NA10」**：**1991／7\" Vinyl／4 軌**（卡單釘的這一筆）／**1995／CD／4 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/25770842-41a3-496d-818e-e56f0e9b6878?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1991 New Age／NA10 的四軌與長度**：1〈Blindside〉3:17、2〈Why〉2:03、3〈Sympathy〉2:03、4〈Suffocate〉4:41。**四軌總長 12:04**；**中間兩軌〈Why〉與〈Sympathy〉的長度一秒不差，都是 2:03**；收尾的〈Suffocate〉4:41 比它們長了 158 秒，**是最短軌的兩倍還多**。**1995 那筆 CD 四軌同名同序、長度逐軌一秒不差，兩版完全一致。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=25770842-41a3-496d-818e-e56f0e9b6878&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **4 個 release-group**（release-group-count 4）：**1991 本張《Ressurection》(EP、secondary-types 空)**、1992《Culture》(Single)、1994《I Refuse.》(Album)、2011《I Am Not: The Discography》(Album＋**Compilation**)。**本張 1991 是全目錄最早的一筆**；**目錄裡只有一個 primary-type=Album 且 secondary-types 為空的 release-group（1994 那張）。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6401b0cd-4e09-4e27-a46e-af80275d366b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**回撈候選兩筆，全部駁回：兩筆都不是這支團。** collectionId **262535810**《Civil Rites》(1991、12 軌) 與 **262572274**《XX Years Live》(1992、30 軌) 的 artistName 都是「**Resurrection Band**」（一個 s、加了 Band）、copyright 都是「℗ 1991／1992 **Grrr Records**」，**曲目與本張零重疊**（〈Lovespeak〉〈Mission Bells〉〈Comatose〉…）。以「Ressurection」在 us 店搜尋回 24 筆，**沒有一筆是本團**（回的是 Bloodbath《Ressurection Through Carnage》與一批同名單曲）；以「Ressurection Blindside」搜尋回 **0 筆**、「Ressurection I Refuse」回 **0 筆**。",
+    "src": "https://itunes.apple.com/lookup?id=262535810&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "中間兩首歌的長度一秒不差，都是兩分零三秒",
+   "同一個廠牌編號掛了兩次，一次七吋一次 CD，四首歌一秒都沒變"
+  ],
+  "sound": "1991 年 New Age／NA10 的 7 吋是四軌、總長 12 分 04 秒，四首的形狀分成兩組：中間的〈Why〉與〈Sympathy〉都是 2:03，一秒不差地並排；兩端的〈Blindside〉3:17 與〈Suffocate〉4:41 則各自拉長，收尾那軌比中間兩首長了兩分三十八秒，是本組少見的長軌。四個曲名全是單詞或單一動作（〈Blindside〉〈Why〉〈Sympathy〉〈Suffocate〉），沒有一個超過兩個字。四年後的 CD 版四軌同名同序，長度一秒不差地照搬，連廠牌編號都沒有換。",
+  "keyTracks": [
+   "Blindside",
+   "Sympathy",
+   "Suffocate"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**（只有年份、沒有月日），其下最早的 release 就是 1991 US 的 New Age Records／NA10（Official、7\" Vinyl、4 軌），與卡單 `year` 1991 相符。**再發一筆：1995 US 的 New Age Records CD**，**軌數、曲名、長度與 1991 年那版一秒不差，而且共用同一個 catno NA10**——**照 catno 或照軌數配對完全分不出兩版，只有 `media.format` 與年份分得出來**（裁定 220／251 的變形）。**店面沒有本張。** **同名先行單曲：無**（本張是自名碟，四個曲名都不等於團名）。",
+  "notes": "**⚠ 掛名拼法**：MB 實體與盤名都寫作 **Ressurection（兩個 s）**，**不是 Resurrection**。**這正是誤配的根源**——回撈候選的兩筆都是「Resurrection Band」。**行文一律照 MB 原字形寫兩個 s，不得「訂正」成一般拼法。**｜**擋下策展層三處**：(1) `exceptionReason` 寫「**New Age Records 目錄第十號**」——可查證的只有 catno 字串「NA10」，**MB 端沒有回問過該廠牌完整目錄，「第十號」這個序數不得寫**，只能寫 catno 本身。 (2) `exceptionReason` 寫「這支**紐澤西**團的出道 7 吋是**加州** New Age 這條 straight edge 廠牌線把**東岸**樂團納進目錄的**早期案例**」——**紐澤西、加州、東岸三個地名依裁定 241／250 與派工信第 4 條一律不得寫**（藝人實體的 disambiguation 雖然寫了 New Jersey，依裁定 250 後半不得以 disambiguation 背書）；「早期案例」是未經回問的序數斷語，**同樣不得寫**。 (3) `why` 寫「本張封面 CAA 回 200，而 c-120 記錄《I Refuse.》的 CAA 是 404」——卡池側的敘述，**不得寫進正文**。｜**序數可以寫**：藝人目錄 4 個 release-group，**本張 1991 是依日期最早的一筆**，「這支團目錄上最早的一筆、也是出道作」查證屬實；`why` 寫「c-120 收的《I Refuse.》(1994) 在這張之後」**查證屬實**。**但不得寫「唯一一張 EP」以外的極值**——目錄裡 EP 只有本張一個，這一句可以寫。｜**軌數（裁定 251）**：兩筆 release 都是 4 軌、逐軌同名同序同長，本張沒有軌數分歧；**行文引 4 軌、引這四個曲名與這四段長度都安全**。｜**串流駁回兩筆：262535810 與 262572274 的 artistName 都是「Resurrection Band」（一個 s、多了 Band）、廠牌是 Grrr Records、曲目與本張零重疊，是完全不同的一組人，不採為對應。** 另跑三組字串搜尋（「Ressurection」「Ressurection Blindside」「Ressurection I Refuse」）皆未命中本團，**三店確實沒有本張**。｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**。MB 那筆支持「1991、US、New Age Records、NA10、7 吋、4 軌」；**`New_Age_Records` 條目確實是這條硬蕊廠牌的條目**（內文列出 Turning Point 等掛名），支持「這個廠牌存在且屬於這條線」，**但沒有一句提到本張或本團，不支持「目錄第十號」與「早期案例」這兩個主張**；**`Straight_edge` 是通用次文化條目，與本張沒有任何關係，且其內容全屬立場敘述、依派工信第 4 條一個字都不得寫進正文**。"
+ },
+ {
+  "key": "desc2:Turning Point / No Escape|Split",
+  "artist": "Turning Point / No Escape",
+  "album": "Split",
+  "facts": [
+   {
+    "f": "release-group 1d04e65f 的欄位：title「**Split**」（**盤名就是這個字，不是兩個團名並列**）、**artist-credit 是合掛：「Turning Point」（實體 19b7cbc9，disambiguation「USA punk band」）／「No Escape」（實體 9212b1ae，disambiguation「American hardcore band from Ocean City, New Jersey」）**、first-release-date **1991**（只有年）、primary-type EP、secondary-types **空**。轄下 **2 筆 release，都是 US Official、都掛 Temperance Records**：**1991／catno「TEMP-2」／7\" Vinyl／4 軌**（卡單釘的這一筆）／**1997／catno「TEMP11」／CD／4 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1d04e65f-986f-4420-9d70-fcccc2ddb0fc?fmt=json&inc=artist-credits+releases+media"
+   },
+   {
+    "f": "**1991 年那張 7 吋的四軌，兩支團各兩軌，No Escape 排在前面**：1〈Framework〉（No Escape）、2〈Guilty〉（No Escape）、3〈Thursday〉（Turning Point）、4〈Behind This Wall〉（Turning Point）。**四軌沒有任何一軌記錄長度。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1d04e65f-986f-4420-9d70-fcccc2ddb0fc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1997 年那筆 CD 把順序整組對調：Turning Point 的兩軌排到前面**——1〈Thursday〉2:14、2〈Behind This Wall〉3:52、3〈Framework〉3:03、4〈Guilty〉2:51。**四軌總長 12:00**；**最長〈Behind This Wall〉3:52 與最短〈Thursday〉2:14 差 98 秒**。**本張的長度只能從這一筆引——1991 年那張 7 吋四軌全空。** 兩筆的 catno 也不同（TEMP-2 對 TEMP11）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1d04e65f-986f-4420-9d70-fcccc2ddb0fc&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "兩支團的藝人端點各分頁全列：**Turning Point 名下 6 個 release-group**——1990《It's Always Darkest Before the Dawn》(Album)、**1991 本張《Split》(EP)**、1995《The Few and the Proud》(Album＋Compilation)、2000-05-30《1988-1991》(Album＋Compilation)、2009-10-13《A Tribute to Skip Candelori》(Album＋Compilation)、**無日期《No Escape》(EP)**（**同一支團名下另有一個盤名叫「No Escape」的 release-group，與本張合掛的那支團同名，極易混淆**）。**No Escape 名下 4 個 release-group**——**1991 本張（全目錄最早的一筆）**、1993《Just Accept It》(Album)、2020-10-02《Beyond Reality》(Album)、2024-11-08《1990-1993》(Album＋Compilation)。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9212b1ae-4720-41ca-938d-71fb5d620586&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**店面沒有本張，回撈候選也不成立。** 以「Turning Point No Escape」在 us 與 gb 兩店搜尋各回 1 筆，都是同名不同人的單曲；「Turning Point split」回 **0 筆**。**最接近的一筆是 1537169814《Behind This Wall: 1988-1991》**（Turning Point、2020-10-28、12 軌、℗ 2020 Revelation Records）：它的第 1 軌〈Behind This Wall〉3:48 與第 2 軌〈Thursday〉2:12 **就是本張 Turning Point 那兩軌**（與 1997 年 CD 版差 2 到 4 秒），**但整張十二軌裡沒有〈Framework〉也沒有〈Guilty〉——本張另一支團的兩軌一軌都不在**。",
+    "src": "https://itunes.apple.com/lookup?id=1537169814&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "一九九一年那張唱片先放一支團，一九九七年重壓時把順序整組對調",
+   "四首歌各佔一半，最長的一首比最短的長了九十八秒"
+  ],
+  "sound": "1991 年 Temperance／TEMP-2 的 7 吋是四軌，兩支團各兩首，MB 端這四軌**一格長度都沒有**；照六年後那筆 CD 同四軌的秒數看，合計 12 分整——最長的〈Behind This Wall〉3:52 與最短的〈Thursday〉2:14 差九十八秒，另外兩首〈Framework〉3:03 與〈Guilty〉2:51 落在中間。四個曲名都是單詞或短語：一個工程用語、一個判詞、一個星期幾、一句方位描述。1991 年那張把其中一支團的兩軌排在前面，1997 年重壓時整組對調，先後順序在兩個版本上是相反的。",
+  "keyTracks": [
+   "Framework",
+   "Thursday",
+   "Behind This Wall"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**（只有年份、沒有月日），其下最早的 release 就是 1991 US 的 Temperance Records／TEMP-2（Official、7\" Vinyl、4 軌），與卡單 `year` 1991 相符。**再發一筆：1997 US 的 Temperance Records CD**（4 軌、catno **TEMP11**），**軌數相同但曲序相反、catno 也不同**，照 catno 或曲序配對都會分岔（裁定 220／251 的變形）。**店面沒有本張。** **同名先行單曲：無**（盤名是「Split」，四個曲名都不等於盤名）。",
+  "notes": "**⚠ 盤名**：MB 的 release-group title 就是單字「**Split**」，**不是兩個團名並列**，卡單一致。行文提到盤名時照寫，**不得自行擴寫成「Turning Point / No Escape」當盤名**（那是掛名）。｜**擋下策展層三處**：(1) `exceptionReason` 寫「**紐澤西** straight edge 兩支團在 1991 年對切的 split 7 吋」——**紐澤西是區級地名，依裁定 241／250 與派工信第 4 條不得寫**（No Escape 的 disambiguation 雖然寫了 Ocean City, New Jersey，依裁定 250 後半不得以 disambiguation 背書）；「straight edge」的立場標籤**同樣不得寫**。**「兩支團在同一張唱片上各佔兩軌」這一句查證屬實，可以留。** (2) `exceptionReason` 寫「Turning Point 在**解散前**把 youth crew **推向更慢更內省的寫法**」——「解散」在實體欄位端查不到（該掛名名下 2009 年還有一個 release-group），樂風描述是斷語，**兩句都不得寫**。 (3) `exceptionReason` 寫「是**該地區場景**在同一張唱片上的**雙面切片**」——地名指涉＋修辭斷語，**不得寫**。｜`why` 寫「c-120 收的 Turning Point《It's Always Darkest Before the Dawn》(1990) 是單獨作品，與本張不同碟」**查證屬實**（該掛名目錄裡 1990 那筆是獨立的 Album release-group）。｜**⚠ 命名陷阱**：**Turning Point 名下另有一個盤名就叫「No Escape」的 release-group（無日期、EP）**，與本張合掛的另一支團同名。**行文提到「No Escape」時必須明確指的是樂團，配對一律用 rgMbid。**｜**軌數與曲序（裁定 251）**：卡單釘的是 **1991 TEMP-2、7 吋、4 軌**。兩筆都是 4 軌、曲名相同，**但曲序相反**——**行文若要寫「誰的歌排在前面」，只能照 1991 那一筆寫（No Escape 的兩軌在前）**。｜**長度要交代來源**：**1991 那筆四軌全無長度**，本檔引的秒數取自 1997 年那筆 CD。行文可以寫「四首約十二分鐘」，**不得寫成「1991 年那張 7 吋標示的長度」**。｜**串流：三店確實沒有本張，查證屬實。候選 1537169814《Behind This Wall: 1988-1991》駁回**——它只收了本張四軌裡屬於其中一支團的**兩軌**（長度差 2 到 4 秒），**另一支團的〈Framework〉〈Guilty〉一軌都不在**，而且它是 2020 年的十二軌整編（℗ 2020 Revelation Records）。**逐軌覆核未過半、且缺的正好是合掛的另一半，不採為本張的試聽來源。**｜**不得寫個別成員的名字**，**不得寫區級地名**，**不得寫任何與 straight edge 立場相關的評價或立場敘述**。｜**§5.5 舉證覆核**：三個網址**全部回 200**，但**兩個非 MB 的都站不住**：`Youth_crew` 與 `Split_album` 都是**通用類別條目**，**沒有一句提到本張、兩支團或 Temperance Records**，**不支持 `exceptionReason` 的任何具體主張**。**這兩筆舉證應視為無效，需策展層補真正記錄本張的來源。**"
+ }
 ]

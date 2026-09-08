@@ -426,5 +426,389 @@
   "status": "full",
   "yearVerified": "一致，1989。release-group first-release-date **1989**，其下最早的 release 就是 1989 US 的 In-Effect 88561-3003-7（Official、7\" Vinyl、8 軌）。**再發年不蓋原盤年（裁定 220）**：1997 年那張 23 軌 CD 是八年後的版本、廠牌換成另一家，`year` 取 1989。藝人實體 life-span begin **1988**，早本張一年。**三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
   "notes": "**擋下策展層四處。**(1) **本批 rulings 第 7 條與 `label` 欄都寫「1997 年 CD 23 軌是『把早期 EP 整批併進來』」——實地逐軌覆核後不成立。**23 軌 ＝ 原盤 8 軌 ＋ **14 段現場錄音（全部標 live）** ＋ **1 段 3 分 11 秒的電台訪談**。**沒有任何一軌來自別張 EP。這是本張最重的一處，必須改。**｜(2) `mbNote` 記「1997 US Official CD 23 軌」但**沒寫廠牌**——實體欄位記的是 **Century Media（catno 7830-2、country DE、type Imprint）**，**不是 In-Effect**。**兩張碟的廠牌不同、國別也不同，行文不得把 1997 那版算在 In-Effect 名下。**｜(3) `exceptionReason` 寫「1989 年由 **Agnostic Front 主唱的弟弟 Freddy Cricien** 掛名主唱錄成的 7 吋」——**人名（裁定 241／250）：實體欄位查無任何成員資料，藝人實體 disambiguation 是空的，這個名字與這層親屬關係都不得寫。**｜(4) `exceptionReason` 寫「是紐約硬蕊『**側案變成正團**』這條**世代交棒最具體的一份文件**」、`curatorWhy` 寫「c-120 收的《Set It Off》(1994) 已是 Madball **成為獨立團體五年之後**」——**「側案／正團／世代交棒／成為獨立團體」都是查無來源的沿革敘述，不得寫**；可以寫的序數只有一種：**這是該藝人目錄 21 個 release-group 裡最早的一筆**，1992 的《Droppin' Many Suckers》排第 2、1994-07 的《Set It Off》排第 3。｜**軌數（裁定 251）**：卡單釘 1989 的 7 吋 **8 軌**，行文引軌數只能引 8；要提 23 軌就得同時說明那是 1997 年另一家廠牌的 CD、多出來的是現場錄音與訪談。｜**人名與地名從嚴**：藝人實體 disambiguation 空（同名實體 3 個），**不得以 disambiguation 背書本名**；begin-area 只到 New York，**不得寫任何區級地名**；兩家廠牌實體都查不到創辦人，**不得寫。**｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**§5.5 舉證**：兩個網址皆回 200，`Madball` 與 `Agnostic_Front` 兩頁都提到本團與本盤名，**網址本身站得住——但要注意 `exceptionReason` 裡那個人名不因為維基頁存在就可以寫，實體欄位查不到就是不得寫。**"
+ },
+ {
+  "key": "desc2:Born Against|Born Against",
+  "artist": "Born Against",
+  "album": "Born Against",
+  "facts": [
+   {
+    "f": "release-group 1ce4cc19 的欄位：title「Born Against」、artist-credit「Born Against」、primary-type **EP**、secondary-types **空**、first-release-date **1990**。轄下**只有 1 筆 release**：1990 US Official **7\" Vinyl 5 軌**，label-info **Vermiform、catno 為 null（廠牌有、目錄編號沒有）**、無包裝資料、無條碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1ce4cc19-22a3-410b-bbe6-0507f6a96ab5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1990 原盤五軌與長度：1〈Half Mast〉2:32、2〈X-Mas Eve〉1:07、3〈9 Years Later〉2:01、4〈Born Again〉2:24、5〈Witness to a Rape〉**3:04**。**五軌合計 11 分 8 秒，平均一軌 2 分 14 秒；最短的〈X-Mas Eve〉1 分 7 秒，最長的末軌〈Witness to a Rape〉3 分 4 秒——這五軌比本組同期的紐約 7 吋每一軌都長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1ce4cc19-22a3-410b-bbe6-0507f6a96ab5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**這五首裡有四首在前一年就錄過**：藝人目錄裡 1989 年的 d2800466《My Country Tis of Thee, Enemy of All Tribes》(EP＋**Demo**) 是一筆 1989 US Official **Cassette 7 軌**、label-info 記為 `[no label]`、無 catno，七軌是〈The Good Father〉〈Eulogy〉〈**Nine Years Later**〉〈**Born Again**〉〈**Witness to a Rape**〉〈**X-Mas Eve**〉〈Resist Control〉（**無任何軌長**）。**本張五軌裡只有〈Half Mast〉不在那捲卡帶上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d2800466-e27a-40ab-b5be-bfa4dba7063e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **12 個 release-group**，依日期排序：**1989《My Country Tis of Thee, Enemy of All Tribes》(EP＋Demo) 排第 1、1990 本張排第 2**、1991《Alive With Pleasure / Suckerpunch》(EP)、1991《Nine Patriotic Hymns for Children》(Album)、1992《Battle Hymns of the Race War》(Album)、1993 與 1994 的三張 split (EP)、1994《Patriotic Battle Hymns》(Album＋Compilation)、1995-05-19《The Rebel Sound of Shit and Failure》(Album＋Compilation)，另有兩筆無日期的電台現場 (Album＋Live)。**本張不是目錄裡最早的一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=983825cd-4c25-45c5-adbb-3f9cdced6285&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人實體 983825cd：type Group、country US、**begin-area New York**、**life-span 1989～1993（起訖都有，只有五年）**、**disambiguation 空**（同名實體 3 個）。廠牌實體 Vermiform（49b98a7d）：type Original Production、country US、area United States、**life-span 起訖皆空、disambiguation 空**——**「這家廠牌開在哪一年、由誰經營」在實體欄位查不到。**",
+    "src": "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，一筆駁回**：collectionId 313926184《9 Patriotic Battle Hymns for Children》1991-01-01、**18 軌**、℗ 2003 Kill Rock Stars，十八軌裡**只有第 4 軌〈Nine Years Later〉2:22 與本張的〈9 Years Later〉2:01 同名**，且長度差 21 秒；其餘十七軌（〈Mount The Pavement〉〈Shroud〉〈By The Throat〉…）**與本張五軌無一相同** → **駁回**。**本張無串流試聽來源。**",
+    "src": "https://itunes.apple.com/lookup?id=313926184&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "五首歌十一分八秒，末尾那首三分零四秒",
+   "五首裡有四首前一年已經錄在一捲七軌的卡帶上，只有開場那首是新的"
+  ],
+  "sound": "1990 年 Vermiform 那張 7 吋是五軌：〈Half Mast〉2:32、〈X-Mas Eve〉1:07、〈9 Years Later〉2:01、〈Born Again〉2:24、〈Witness to a Rape〉3:04。五軌合計 11 分 8 秒，平均一軌超過兩分鐘——同組同期的紐約 7 吋多半一軌不到一分鐘，這張反過來。廠牌欄有名字，目錄編號欄卻是空的。前一年有一捲七軌的卡帶，這五首裡的〈X-Mas Eve〉〈9 Years Later〉〈Born Again〉〈Witness to a Rape〉都已經在上面，只有開場的〈Half Mast〉是這張才有的；那捲卡帶的廠牌欄被明確標成「沒有廠牌」。",
+  "keyTracks": [
+   "Half Mast",
+   "Born Again",
+   "Witness to a Rape"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**，轄下唯一 release 也是 1990 US Official（7\" Vinyl、5 軌、Vermiform）。**沒有再發**（名下只有這一筆），`year` 取 1990 無爭議。**但序數要小心**：藝人目錄裡 **1989 年的《My Country Tis of Thee, Enemy of All Tribes》比本張早一年**，且本張五軌有四軌已在那捲卡帶上。藝人實體 life-span **1989～1993**。**三店查無串流對應（回撈候選那筆已駁回），無第三處可交叉對年。同名先行單曲：無。**",
+  "notes": "**擋下策展層四處。**(1) `exceptionReason` 寫「Vermiform 這條線的起手式：**Sam McPheeters 自營廠牌與樂團同時開張**」——**人名（裁定 241／250）：實體欄位查無任何人名**，廠牌實體的 life-span 起訖與 disambiguation 全空，**這個名字與「自營」「同時開張」三件事都不得寫。**｜(2) `exceptionReason` 寫「1990 年這張 7 吋把紐約硬蕊**推向更政治、更難聽也更自覺的一側，後來整條 90 年代 DIY 硬蕊都從這裡分岔**」——**跨藝人的場景敘述與極值，查無來源，不得寫。**｜(3) **`curatorWhy` 與 `mbNote` 把 1989 年那筆只當成「刻意不釘的 CAA 404 demo」，漏掉最關鍵的一件事**：**本張五軌裡有四軌（〈X-Mas Eve〉〈9 Years Later〉〈Born Again〉〈Witness to a Rape〉）在 1989 那捲七軌卡帶上就已經錄過**，**因此行文絕不得寫本張是「這支團的第一張」「第一份錄音」或任何等義的序數**——目錄裡它排第 2。｜(4) `curatorRisk` 記「1990 US Official 7\" Vinyl×5」與「label-info 未填 catno」——**這兩處正確，予以確認**；補一項：**廠牌名有、catno 是 null，行文可以點出這個空白，但不得自行補一個目錄編號。**｜**串流：回撈候選 313926184 逐軌覆核後駁回**——十八軌裡只有一軌與本張同名（〈Nine Years Later〉2:22 對本張〈9 Years Later〉2:01，差 21 秒），**其餘十七軌完全不同，不是本張，也不能當試聽來源。確認本張無試聽來源。**｜**人名與地名從嚴**：藝人實體 disambiguation 空（同名實體 3 個），**不得以 disambiguation 背書本名**；begin-area 只到 New York，**不得寫任何區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，`Vermiform_Records` 與 `Born_Against` 兩頁都提到本團與廠牌，**網址站得住——但 `exceptionReason` 裡的人名不因維基頁存在就可以寫。**"
+ },
+ {
+  "key": "desc2:Quicksand|Quicksand",
+  "artist": "Quicksand",
+  "album": "Quicksand",
+  "facts": [
+   {
+    "f": "release-group 1859eb08 的欄位：title「Quicksand」、artist-credit「Quicksand」、primary-type **EP**、secondary-types **空**、first-release-date **1990**。轄下 **2 筆 release，同年、同軌、不同載體**：**1990 US Official CD 4 軌**（Revelation Records，catno **REV 018**，包裝 Cardboard/Paper Sleeve，條碼 098796001820）／1990 US Official **Vinyl**（未標尺寸）4 軌（Revelation，catno 寫成 **`Revelation: 18`**，無條碼）。**卡單 label 欄釘的是 CD 那一版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1859eb08-b460-319e-82f9-2ddb78ac0bba&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "四軌與長度（兩個版本逐位置完全相同）：1〈Omission〉2:26、2〈Clean Slate〉2:49、3〈Unfulfilled〉3:15、4〈Hypno Jam With Dan〉1:57。**四軌合計 10 分 27 秒；最長的〈Unfulfilled〉3 分 15 秒，最短的末軌〈Hypno Jam With Dan〉1 分 57 秒——四軌全部超過一分五十秒，沒有一軌像同組那些 7 吋一樣壓在一分鐘以內。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1859eb08-b460-319e-82f9-2ddb78ac0bba&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **21 個 release-group**，依日期排序：**1990 本張排第 1**、1992《Dine Alone / Can Opener》(Single)、1993 的四張 Single、**1993-02-09《Slip》(Album)**、1994／1995 的四張 Single、1995-02-28《Manic Compression》(Album)、2007-05-28《B-sides and Rarities》、2017-11-10《Interiors》、2018-04-21《Triptych Continuum》(EP)、2021-08-13《Distant Populations》、2024-10-29《Split》(EP)、2026-07-17《Bring on the Psychics》(Album)。**本張是這份目錄裡最早的一筆，也是目錄裡三張 EP 中最早的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3c9f8bef-a658-4204-9ee8-7e95d2535b32&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人實體 3c9f8bef：type Group、country US、area United States、**begin-area New York**、**life-span begin 1990**（與本張同年）、disambiguation「American post-hardcore band」。廠牌實體 Revelation Records（48ed026d）：type Production、country US、**life-span 起訖皆空**、disambiguation「US hardcore punk label」。",
+    "src": "https://musicbrainz.org/ws/2/artist/3c9f8bef-a658-4204-9ee8-7e95d2535b32?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，採信一筆**：collectionId **91742212**《Quicksand - EP》，掛名「Quicksand」、releaseDate 1990-01-01、trackCount **4**、**℗ 1990 Revelation Records**、notExplicit，四軌〈Omission〉2:26／〈Clean Slate〉2:49／〈Unfulfilled〉3:15／〈Hypno Jam With Dan〉1:57，**與所釘版本四軌逐位置一秒不差**，全部有 previewUrl → **採信。這是本組二十三張裡少數「串流版本與所釘原盤軌數、曲序、長度、廠牌、年份五項全對」的一筆。**",
+    "src": "https://itunes.apple.com/lookup?id=91742212&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十分二十七秒，最短的一首還有一分五十七秒",
+   "同一年壓了 CD 和黑膠兩種，四軌一秒不差"
+  ],
+  "sound": "1990 年 Revelation REV 018 是四軌：〈Omission〉2:26、〈Clean Slate〉2:49、〈Unfulfilled〉3:15、〈Hypno Jam With Dan〉1:57，合計 10 分 27 秒。同一年還壓了一張黑膠，目錄編號寫成另一種格式，四軌的曲序與長度與 CD 逐位置相同。四軌全部超過一分五十秒——同組同期那些一首唱不到一分鐘的 7 吋在這裡完全不適用，最長的〈Unfulfilled〉三分十五秒。曲名依序是省略、乾淨的一頁、未被滿足、以及一段以人名收尾的即興。",
+  "keyTracks": [
+   "Omission",
+   "Unfulfilled",
+   "Hypno Jam With Dan"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。release-group first-release-date **1990**，轄下兩筆 release 都是 1990 US Official（CD 4 軌／Vinyl 4 軌）。**沒有再發**，`year` 取 1990 無爭議，**裁定 220 的再發覆蓋在本張不成立**。藝人實體 life-span begin **1990**，與本張同年。串流側採信的 91742212 releaseDate 標 **1990-01-01**、℗ 1990 Revelation Records，**四處對照成立（年份、廠牌、軌數、逐軌長度）**。**同名先行單曲：無**（目錄裡最早的 Single 是 1992 年）。",
+  "notes": "**擋下策展層兩處，並確認一處。**(1) `exceptionReason` 寫「**Walter Schreifels 離開 Gorilla Biscuits 之後的第一份錄音**」——**人名（裁定 241／250）：實體欄位查無任何成員資料，這個名字不得寫**；「離開某團之後」這層跨藝人沿革也查無來源，**一併不得寫**。可以寫的序數只有一種：**這是該藝人目錄 21 個 release-group 裡最早的一筆**，且藝人實體 life-span begin 與本張同為 1990。｜(2) `exceptionReason` 寫「四首歌**把紐約硬蕊的重量轉譯成後硬蕊語法**，《Slip》整張專輯的方法在這張 EP 上**已經成形**」——**跨碟的風格因果敘述，查無來源，不得寫**；可以寫的是目錄順序（本張 1990 排第 1、《Slip》1993-02-09 排第 7）與四軌的長度分佈。｜(3) `curatorRisk` 採信 collectionId 91742212——**這一處正確，予以確認並升級為完整覆核。串流採信 91742212：四軌逐位置比對（2:26／2:49／3:15／1:57）與所釘 CD 版一秒不差，℗ 1990 Revelation Records 與廠牌欄相符，四軌全有試聽，採信。**｜(4) `label` 欄寫「catno REV 018，US 1990，CD 4 軌與黑膠 4 軌兩種同年版本」——**正確，予以確認**；補一項：**黑膠那筆的 catno 字串是 `Revelation: 18`（帶空格與冒號），與 CD 的 `REV 018` 不同寫法，行文若引 catno 要指明是哪一版。⚠ 黑膠那筆的 format 只寫「Vinyl」、未標尺寸，不得自行補「7 吋」或「12 吋」。**｜**軌數（裁定 251）**：兩版皆 **4 軌**，行文引 4 軌安全。｜**人名與地名從嚴**：**不得寫個別成員的名字**；begin-area 只到 New York，**不得寫任何區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，但 **`Quicksand_(band)` 實際是一個消歧義頁（標題為「Quicksand (disambiguation)」），不是本團的條目——這個舉證站不住**，本層實測 `Quicksand_(American_band)` 回 200 且是本團條目，**建議換成該網址**；`Revelation_Records` 那頁站得住。"
+ },
+ {
+  "key": "desc2:The Icemen|Rest in Peace E.P.",
+  "artist": "The Icemen",
+  "album": "Rest in Peace E.P.",
+  "facts": [
+   {
+    "f": "release-group bd95ebd4 的欄位：title「Rest in Peace E.P.」、artist-credit「The Icemen」、primary-type **EP**、secondary-types **空**、first-release-date **1991**。轄下**只有 1 筆 release**：1991 US Official **CD 4 軌**（**不是 7 吋**），label-info **Blackout! Records、catno BL-11CD**，條碼 723631001122。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bd95ebd4-64dd-4e33-bf98-194e5ac8897c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1991 原盤四軌與長度：1〈Rest in Peace〉**4:06**、2〈Shadow Out of Time〉**4:44**、3〈The Harsh Truth〉**4:42**、4〈No Guts No Glory〉2:20。**四軌合計 15 分 52 秒，平均一軌將近四分鐘——這是本組二十三張裡每軌平均最長的一張**（對照同組同為四軌的 Rorschach／Neanderthal split 合計只有 4 分 37 秒）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bd95ebd4-64dd-4e33-bf98-194e5ac8897c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列，**release-group 只有 1 個，就是本張**——「名下唯一實體」經目錄分頁確認成立。藝人實體 b9cfa4ae：type Group、country US、area United States、**begin-area New York**、**life-span 1982～1992（起訖都有，跨十年）**、disambiguation「**US metal/punk/crossover band from NY**」。**成軍年 1982 與本張 1991 相差九年，而 life-span 結束於 1992——名下唯一的一筆碟出現在存在期的最後兩年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b9cfa4ae-4e8b-4827-812c-547c3da84998&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Blackout! Records（471d40b6）：type Original Production、**area New York**、**life-span begin 1988**、disambiguation 空。本張 catno **BL-11CD**（同組另一張 Outburst《Miles to Go》是 **BL-3**，1989）。",
+    "src": "https://musicbrainz.org/ws/2/label/471d40b6-2df1-4f74-bc92-1aecce56bb6c?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，採信一筆（策展層判成三店皆未命中，實測不成立）**：collectionId **1686435375**《Rest in Peace - EP》，掛名「The Icemen」、releaseDate **1991-06-01**、trackCount **4**、**℗ 2020 Blackout! Records**、notExplicit，四軌〈Rest in Peace〉4:10／〈Shadow out of Time〉4:47／〈The Harsh Truth〉4:44／〈No Guts, No Glory〉2:22，**曲名、曲序、軌數與所釘版本全同，四軌長度各差 2–4 秒**，全部有 previewUrl → **採信**。另本層以掛名＋盤名重跑三店搜尋，**us／gb／de 三店都各回這一筆、且只回這一筆**。",
+    "src": "https://itunes.apple.com/lookup?id=1686435375&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**封面在封面庫回 404**——本張是本批三張「整支團唯一收得進來的碟」之一。**但串流側有完整上架版本（見上一格），試聽來源成立。**",
+    "src": "https://itunes.apple.com/search?term=The%20Icemen%20Rest%20in%20Peace&entity=album&country=us&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十五分五十二秒，平均一首將近四分鐘",
+   "成軍到解散橫跨十年，留下的碟只有這一張"
+  ],
+  "sound": "1991 年 Blackout! 的 BL-11CD 是一張 CD、四軌：〈Rest in Peace〉4:06、〈Shadow Out of Time〉4:44、〈The Harsh Truth〉4:42、〈No Guts No Glory〉2:20，合計 15 分 52 秒。四軌裡有三軌超過四分鐘，平均一軌將近四分——同一組同樣是四軌的 split 7 吋，全張只有四分三十七秒。曲名從安息開始，經過時間之外的影子與難堪的真相，收在沒膽就沒有榮耀。這個掛名在資料庫裡只有這一張碟，而實體記載的存在期橫跨 1982 到 1992，這張出現在最後兩年。",
+  "keyTracks": [
+   "Rest in Peace",
+   "Shadow Out of Time",
+   "No Guts No Glory"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**，轄下唯一 release 也是 1991 US Official（CD、4 軌、Blackout! BL-11CD）。**沒有再發**（名下只有這一筆），`year` 取 1991 無爭議。串流側採信的 1686435375 releaseDate 標 **1991-06-01**（**比實體欄位多給了月日，但實體欄位只有年，不得把 6 月 1 日寫成事實**）、**℗ 2020 Blackout! Records**——**℗ 年是 2020，那是後來上架的年份，絕不得取為 `year`。**藝人實體 life-span **1982～1992**。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處，其中一處是方向相反的漏採。**(1) `curatorRisk` 說「Apple：us／gb／de **三店以掛名＋盤名搜尋皆未命中（三店各回 0 筆）**」——**實測不成立，這是本批的「c-120 Quicksand 形狀」**：本層以同樣方式重跑，**三店都各回 1 筆、且就是本張**。**串流採信 1686435375：四軌曲名與曲序逐位置全中，長度 4:10／4:47／4:44／2:22 對原盤 4:06／4:44／4:42／2:20，各差 2–4 秒，四軌全有試聽，採信。⚠ ℗ 標 2020、Apple 日期標 1991-06-01，是後來的上架版本；可以當試聽來源，年份與月日都不得引。**｜(2) `mbNote` 已更正 c-120 清單把本張記成 7 吋、確認實體是 **CD**——**這一處正確，予以確認**；**行文絕不得寫「7 吋」。**｜(3) `exceptionReason` 寫「**1982 年就成軍**的紐約團一路到 1991 年才留下這四首歌」——**「1982 年成軍」這一件在實體欄位查得到（life-span begin 1982），可以寫**；但同句的「是 **CBGB 硬蕊與金屬交界那一區少數被壓成唱片的證據**」是**跨藝人的極值排名，查無來源，不得寫**。｜(4) `curatorWhy` 已依 c-120 第 3 條寫明「收的是唯一收得進來的碟，不是最重要的錄音」——**這一處正確，予以確認。⚠ 行文絕不得寫成「代表作」或「最重要的一張」**，只能寫「名下唯一的一筆」（藝人目錄分頁確認 release-group 數為 1）。｜**人名與地名從嚴**：藝人實體無成員資料、廠牌實體查不到創辦人，**不得寫個別成員或廠牌創辦人的名字**；begin-area 只到 New York、廠牌 area 也只到 New York，**不得寫任何區級地名**（disambiguation 裡的「NY」同樣只到州／市層級）。｜**軌數（裁定 251）**：本張 **4 軌**，名下無其他版本，串流那版也是 4 軌，行文引 4 軌安全。｜**§5.5 舉證**：兩個網址皆回 200，`The_Icemen` 與 `Blackout!_Records`（實際跳轉到「Blackout Records」）**兩頁都提到本團與廠牌，舉證站得住。**"
+ },
+ {
+  "key": "desc2:Rorschach / Neanderthal|Rorschach / Neanderthal",
+  "artist": "Rorschach / Neanderthal",
+  "album": "Rorschach / Neanderthal",
+  "facts": [
+   {
+    "f": "release-group a2a9e14f 的欄位：title「Rorschach / Neanderthal」、**artist-credit 是兩個實體並列**（Rorschach bfb77d72 ＋ Neanderthal 801a222a）、primary-type **EP**、secondary-types **空**、first-release-date **1991**。轄下**只有 1 筆 release**：1991 US Official **7\" Vinyl 4 軌**，label-info **Vermiform、catno VMFM 04.5**，包裝 Cardboard/Paper Sleeve、無條碼。**catno 帶小數點的 `04.5` 本身就說明它被編在目錄的兩號之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2a9e14f-a5c8-3b19-bedc-2baeb0aed83f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1991 原盤四軌與長度：1〈Brainhandle〉1:39、2〈Hardware〉1:25、3〈Fighting Music (Let the Games Begin)〉**0:40**、4〈Fluids〉0:53。**四軌合計 4 分 37 秒——這是本組二十三張裡最短的一張全碟**（對照同組同為四軌的 The Icemen 是 15 分 52 秒，同為 Vermiform 發行的 Born Against 五軌是 11 分 8 秒）。**後兩軌合起來只有 1 分 33 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2a9e14f-a5c8-3b19-bedc-2baeb0aed83f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "兩個掛名各自的實體欄位：**Rorschach（bfb77d72）** type Group、country US、**begin-area New Jersey**、**life-span 1989-05～1993-08（起訖都精確到月）**、disambiguation「**hardcore punk**」（**沒有國別也沒有年代**）。**Neanderthal（801a222a）** type Group、country US、**begin-area California**、**life-span 起訖皆空**、disambiguation「**punk band**」（**同樣沒有國別也沒有年代**）。",
+    "src": "https://musicbrainz.org/ws/2/artist/bfb77d72-8e36-4cf2-be10-7dcdd81d52b4?fmt=json"
+   },
+   {
+    "f": "兩邊的目錄各分頁全列：**Rorschach 5 個 release-group**——1990《Remain Sedate》(Album)、**1991 本張排第 2**、1993《Protestant》(Album)、1995-08-01《Autopsy》(Album＋Compilation)、2010-01-12《Remain Sedate / Protestant》(Album＋Compilation)。**Neanderthal 5 個**——1990《Fighting Music》(EP)、**1991 本張**、1991-03《Ox-Compilation #8 - Neanderthal / Blatant Yobs》(EP)、1996《Complete Fighting Music》(primary-type null)、2017-09-22《A History Of Violence》(null＋Compilation)。**本張第 3 軌的曲名〈Fighting Music (Let the Games Begin)〉與 Neanderthal 前一年那張 EP 同名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=801a222a-7843-4a8d-aced-31a45e1a7370&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Vermiform（49b98a7d）：type Original Production、country US、area United States、**life-span 起訖皆空、disambiguation 空**。**同組另一張 Vermiform 發行是 Born Against 1990 年的同名 7 吋（該筆 catno 為 null）——本張的 VMFM 04.5 是本組兩張 Vermiform 裡唯一有目錄編號的。**",
+    "src": "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json"
+   },
+   {
+    "f": "**回撈候選與三店搜尋皆查無**：回撈候選表記「目錄裡找不到」；另以兩個掛名並列在 us／gb／de 三店各做一次專輯搜尋，**三店皆回 0 筆**。**本張無串流試聽來源。**",
+    "src": "https://itunes.apple.com/search?term=Rorschach%20Neanderthal&entity=album&country=us&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌四分三十七秒，後兩首加起來只有一分三十三秒",
+   "目錄編號寫著 04.5，這張被編在兩號之間"
+  ],
+  "sound": "1991 年 Vermiform 的 VMFM 04.5 是一張 7 吋、四軌，兩個掛名各佔一半：〈Brainhandle〉1:39、〈Hardware〉1:25、〈Fighting Music (Let the Games Begin)〉0:40、〈Fluids〉0:53。四軌合計 4 分 37 秒，是這一組二十三張裡最短的一張——同樣四軌的另一張碟用掉十五分五十二秒，同一家廠牌前一年那張五軌用掉十一分八秒。後兩軌加起來只有一分三十三秒。目錄編號帶著小數點，被編在兩號之間；第三軌的曲名與其中一個掛名前一年那張 EP 同名。",
+  "keyTracks": [
+   "Brainhandle",
+   "Fighting Music (Let the Games Begin)",
+   "Fluids"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**，轄下唯一 release 也是 1991 US Official（7\" Vinyl、4 軌、Vermiform VMFM 04.5）。**沒有再發**（名下只有這一筆），`year` 取 1991 無爭議。兩邊掛名的目錄裡 1991 年各另有一筆：Rorschach 那側沒有、Neanderthal 那側有 1991-03 的《Ox-Compilation #8》——**本張與它同年，序數不得斷言。**Rorschach 實體 life-span **1989-05～1993-08**，本張落在中段。**三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處，確認兩處。**(1) `exceptionReason` 寫「**紐澤西的 Rorschach 與加州的 Neanderthal**」——**這一處查證後成立，可以寫**：兩個藝人實體的 begin-area 分別明載 **New Jersey** 與 **California**（與 c-120 那批「區級地名全部查無來源」的情形不同，本張是查得到的）。**但只能寫到這兩個地名為止，不得再細分到城市或街區。**｜(2) `exceptionReason` 寫「是 90 年代初 DIY 硬蕊**兩條地理支線唯一一次正面對照**」與「**split 這種形態在這條線上作用的教科書例子**」——**兩句都是跨藝人的極值排名，查無來源，不得寫**；**Neanderthal 那側 1991-03 另有一張與別團並列的 EP，「唯一一次」在目錄上就不成立。**｜(3) `curatorWhy` 寫「這張是 **Vermiform 目錄中最常被回指的一張 split**」——**極值，查無來源，不得寫**；可以寫的是 catno **VMFM 04.5** 這個帶小數點的目錄編號本身。｜(4) `curatorRisk` 已依裁定 250 後半註明 Neanderthal 一側的 disambiguation 只有「punk band」、不得據以背書本名——**這一處正確，予以確認**；補一項：**Rorschach 一側的 disambiguation 也只有「hardcore punk」，同樣沒有國別與年代，兩側都不得以 disambiguation 背書。**｜(5) `mbNote` 記「artist-credit 是兩個實體並列，卡片掛名照 MB 原字串寫」——**正確，予以確認。**｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**人名從嚴**：兩個藝人實體與廠牌實體都查不到成員或創辦人，**不得寫任何個別成員的名字。**｜**軌數（裁定 251）**：本張 **4 軌**，名下無其他版本，行文引 4 軌安全。｜**§5.5 舉證**：兩個網址皆回 200，`Rorschach_(band)` 提到本團與本盤，但 **`Split_album` 是形態通論頁、通篇查不到本張任一掛名，不支持 `exceptionReason` 講的那件事，站不住，建議更換**（可改用 Vermiform 或另一側掛名的條目）。"
+ },
+ {
+  "key": "desc2:Madball|Droppin' Many Suckers",
+  "artist": "Madball",
+  "album": "Droppin' Many Suckers",
+  "facts": [
+   {
+    "f": "release-group 3d87f25a 的欄位：title「Droppin' Many Suckers」、artist-credit「Madball」、primary-type **EP**、secondary-types **空**、first-release-date **1992**。轄下 **4 筆 release**：**1992 US Official CD 12 軌**（**Wreck-Age，catno WAR010-2**，條碼 766815001020）／1995 US Official CD 12 軌（Wreck-Age，同 catno、同條碼，Jewel Case）／1995-10-13 US Official CD 12 軌（**label-info 空陣列**）／**日期為 null 的 XW Official Digital Media 7 軌**（**label-info 空**，條碼 617513602449）。**卡單 label 欄釘的是 1992 那張 CD，軌數 12。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d87f25a-d0ec-35c1-880a-b2e4b96a0359&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1992 原盤（WAR010-2）十二軌與長度：1〈Spit on Your Grave〉1:48、2〈Never Had It〉0:57、3〈Across Your Face〉1:10、4〈Step to You〉1:08、5〈No Return〉1:13、6〈The Blame〉**1:58**、7〈Smell the Bacon〉**0:36**、8〈We Should Care〉1:11、9〈Get Out〉0:49、10〈It's My Life〉0:58、11〈Ready to Fight〉0:57、12〈Friend or Foe〉1:38。**十二軌合計 14 分 23 秒，最長的〈The Blame〉1 分 58 秒、最短的〈Smell the Bacon〉36 秒，十二軌裡有八軌不到 1 分 15 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d87f25a-d0ec-35c1-880a-b2e4b96a0359&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**7 軌的數位版是「少了五軌」，不是另一批錄音**：該版七軌是原盤的第 1–6 軌加上第 12 軌（〈Spit on Your Grave〉1:45／〈Never Had It〉0:56／〈Across Your Face〉1:09／〈Step to You〉1:06／〈No Return〉1:11／〈The Blame〉1:58／〈Friend or Foe〉1:35，各差 0–3 秒），**被拿掉的是第 7–11 軌〈Smell the Bacon〉〈We Should Care〉〈Get Out〉〈It's My Life〉〈Ready to Fight〉——而這五首正好都是同組另一張卡（1989 年那張 7 吋）上的曲目。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d87f25a-d0ec-35c1-880a-b2e4b96a0359&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **21 個 release-group**：**1989《Ball of Destruction》(EP) 排第 1、1992 本張排第 2**、1994-07《Set It Off》(Album) 排第 3。**本張是這份目錄裡的第二筆，不是第一筆。**藝人實體 c9e0a0f5：type Group、country US、**begin-area New York**、**life-span begin 1988**、**disambiguation 空**（同名實體 3 個）。廠牌實體 Wreck-Age（809052d1）：type Original Production、**area New York**、**life-span 1989～1999（起訖都有，只存在十年）**、disambiguation 空。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c9e0a0f5-9f53-4247-a52d-a3f29d975e17&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，採信一筆**：collectionId **1690200309**《Droppin' Many Suckers》，掛名「Madball」、releaseDate **1992-12-04**、trackCount **7**、℗ 1992 Madball, LLC.、explicit，七軌 1:45／0:56／1:09／1:06／1:11／1:58／1:35 **與那筆無日期的 7 軌數位版逐位置一秒不差**，全部有 previewUrl → **採信為試聽來源。⚠ 它是 7 軌版，不是本張 12 軌 CD 的證據：缺的五軌是〈Smell the Bacon〉〈We Should Care〉〈Get Out〉〈It's My Life〉〈Ready to Fight〉。**",
+    "src": "https://itunes.apple.com/lookup?id=1690200309&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌十四分二十三秒，八首不到一分十五秒",
+   "串流那版只有七首，被拿掉的五首正好是三年前那張 7 吋上的"
+  ],
+  "sound": "1992 年 Wreck-Age 的 WAR010-2 是一張 CD、十二軌：〈Spit on Your Grave〉1:48、〈Never Had It〉0:57、〈Across Your Face〉1:10、〈Step to You〉1:08、〈No Return〉1:13、〈The Blame〉1:58、〈Smell the Bacon〉0:36、〈We Should Care〉1:11、〈Get Out〉0:49、〈It's My Life〉0:58、〈Ready to Fight〉0:57、〈Friend or Foe〉1:38。十二軌合計 14 分 23 秒，八軌不到一分十五秒，最短的〈Smell the Bacon〉三十六秒。三年後同一家廠牌用同一個目錄編號再壓一次，軌數與長度幾乎不動；後來的數位版反而只剩七軌，被拿掉的五首正好是三年前那張 7 吋上的曲目。",
+  "keyTracks": [
+   "Spit on Your Grave",
+   "The Blame",
+   "Friend or Foe"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992**，其下最早的 release 就是 1992 US 的 Wreck-Age WAR010-2（Official、CD、12 軌）。**再發年不蓋原盤年（裁定 220）**：1995 與 1995-10-13 兩筆 CD、以及那筆無日期的數位版都是後續，`year` 取 1992。串流側採信的 1690200309 releaseDate 標 **1992-12-04**（**比實體欄位多給了月日，實體欄位只有年，不得把 12 月 4 日寫成事實**）、℗ 1992，與原盤同年。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 說「三店以掛名＋盤名搜尋皆未命中（us 0 筆、gb 0 筆、de 0 筆）」——**逐筆覆核後不成立**：回撈候選 **1690200309 就是本盤名的上架版本**。**串流採信 1690200309：七軌逐位置比對（1:45／0:56／1:09／1:06／1:11／1:58／1:35）與那筆無日期的 7 軌數位版一秒不差，採信——⚠ 它是 7 軌版，可以當試聽來源，但不是本張 12 軌 CD 原盤的證據；缺的五軌是〈Smell the Bacon〉〈We Should Care〉〈Get Out〉〈It's My Life〉〈Ready to Fight〉。**｜(2) `exceptionReason` 寫「Madball 從 Agnostic Front **側案轉成獨立團體的轉折點**」——**「側案／獨立團體」是查無來源的沿革敘述，不得寫**（實體欄位查不到任何團際關係）；可以寫的序數只有一種：**這是該藝人目錄 21 個 release-group 裡的第二筆**，第一筆是 1989 年那張 7 吋、第三筆是 1994-07 的《Set It Off》。｜(3) `exceptionReason` 寫「也是 **Wreck-Age 這條紐約廠牌線的代表作之一**」——**「代表作」是極值排名，查無來源，不得寫**；可以寫的是廠牌實體的兩個硬欄位：**area New York、life-span 1989～1999（只存在十年）**。｜(4) `curatorRisk` 記「XW 數位版卻只有 7 軌，且該筆 release 無日期」——**正確，予以確認**；補一項：**那七軌是原盤的第 1–6 軌加第 12 軌，是「少了五軌」而不是「另一批錄音」，而被拿掉的五軌正好與同組 1989 年那張卡的曲目重疊——行文若要提這件事，兩張卡都要對得上。**｜**軌數（裁定 251）**：卡單釘 1992 的 CD **12 軌**，行文引軌數只能引 12；1995 兩筆同為 12 軌，**數位版的 7 軌絕不得引為本張軌數。**｜**人名與地名從嚴**：藝人實體 disambiguation 空（同名實體 3 個），**不得以 disambiguation 背書本名**；begin-area 只到 New York，**不得寫任何區級地名**；廠牌實體查不到創辦人，**不得寫。**｜**§5.5 舉證**：兩個網址皆回 200，`Madball` 那頁提到本團與本盤名，但 **`New_York_hardcore` 那頁查不到本盤名（只泛提本團），對 `exceptionReason` 講的那件事支持力弱，建議更換。**"
+ },
+ {
+  "key": "desc2:Warzone|Live At CBGB",
+  "artist": "Warzone",
+  "album": "Live At CBGB",
+  "facts": [
+   {
+    "f": "release-group 015f2e10 的欄位：title「Live At CBGB」、artist-credit「Warzone」（**這一張的 credited-as 就是 Warzone，與同組 1987 年那張寫成「War Zone」不同**）、primary-type **EP**、**secondary-types `[\"Live\"]`**、first-release-date **1993**。轄下**只有 1 筆 release**：1993 US Official **7\" Vinyl 5 軌**，label-info **Victory Records、catno VR11**、無包裝資料、無條碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=015f2e10-b3b8-44e3-b74f-cd7c9b276965&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1993 原盤五軌曲名（**實體欄位沒有任何一軌記長度**）：1〈Face Up To It〉、2〈Feels Like One Thousand Years〉、3〈Judgement Day〉、4〈In The Mirror〉、5〈As One〉。**實體欄位只給發行年 1993，沒有記演奏日期。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=015f2e10-b3b8-44e3-b74f-cd7c9b276965&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**演奏日期在別處找得到，而且指向 1992 年**：同一掛名 1994 年的《Old School To New School》(collectionId 1558597411、11 軌、℗ 1994) 的第 8–11 軌，曲名逐軌標成〈Face Up To It (Live At CBGB's, New York, NY / **December 20, 1992**)〉2:16／〈Judgment Day (同上)〉1:41／〈In The Mirror (同上)〉3:04／〈As One (同上)〉2:23。**這四首正是本張五軌裡的四首，缺的是〈Feels Like One Thousand Years〉。也就是說：本張標的是 1993 年發行，但同一批現場錄音在別處被標成 1992 年 12 月 20 日的演出——實體欄位查不到這個日期，行文若要寫演奏年只能引這個來源，且必須說明它與發行年不同。**",
+    "src": "https://itunes.apple.com/lookup?id=1558597411&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人目錄分頁全列 **14 個 release-group**，其中 secondary-types 含 Live 的有三筆：**1993 本張（EP＋Live）**、無日期的《Crucial Recordings 1984-1988》(Album＋Compilation,Live)、以及 1994《Old School to New School》(Album，**secondary-types 空**)。**本張是這份目錄裡唯一一筆 primary-type 為 EP 而 secondary-types 只有 Live 的碟。**藝人實體 496da466：**begin-area New York、life-span 1983～1997**、disambiguation「American hardcore punk band from NYC」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=496da466-68e9-4cbb-9e86-cbb57eda861a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Victory Records（f4d6991e）：type Original Production、**area Chicago**、**life-span begin 1989**、disambiguation「US label, bulldog in logo」。**發行本張現場 7 吋的廠牌登記在 Chicago，不在紐約——與演出場地不同城市。**同組另一張掛 Victory 的是 Cause for Alarm 1994 年那張 CD（catno VR019 CD），本張是 **VR11**。",
+    "src": "https://musicbrainz.org/ws/2/label/f4d6991e-3385-46aa-b643-9223ee94354f?fmt=json"
+   },
+   {
+    "f": "**三店搜尋與回撈候選皆查無本張**：回撈候選表給的是 1558597411《Old School To New School》1994、11 軌，**那是另一個 release-group、且只含本張五軌裡的四軌** → **駁回為本張證據**；另以掛名＋盤名在三店各做一次專輯搜尋，**三店皆回 0 筆**。**本張本身無串流試聽來源，但上述那筆可以聽到其中四軌的同一批現場錄音。**",
+    "src": "https://itunes.apple.com/search?term=Warzone%20Live%20At%20CBGB&entity=album&country=us&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "五首現場錄音壓成一張 7 吋，實體資料只給了發行年",
+   "發行標 1993，同一批錄音在別處被標成 1992 年 12 月 20 日"
+  ],
+  "sound": "1993 年 Victory 的 VR11 是一張 7 吋、五軌現場錄音：〈Face Up To It〉、〈Feels Like One Thousand Years〉、〈Judgement Day〉、〈In The Mirror〉、〈As One〉。實體欄位一軌長度都沒有記，也沒有記演奏日期——只給了發行年與場地寫在盤名裡。隔年一張十一軌的碟把其中四首放進末段，逐軌標明是同一場演出，並附上一個 1992 年 12 月的日期；那四軌的長度介於 1 分 41 秒到 3 分 4 秒之間，缺的是〈Feels Like One Thousand Years〉。發行這張現場 7 吋的廠牌登記在另一個城市。",
+  "keyTracks": [
+   "Face Up To It",
+   "In The Mirror",
+   "As One"
+  ],
+  "status": "full",
+  "yearVerified": "**發行年一致，1993；但演奏年另有其數。**release-group first-release-date **1993**，轄下唯一 release 也是 1993 US Official（7\" Vinyl、5 軌、Victory VR11），**沒有再發**，`year` 取 1993 無爭議。**⚠ 裁定 253 的現場錄音註記**：本張 secondary-types 為 `[\"Live\"]`，**實體欄位只記發行年 1993、完全沒有演奏日期**；同一批現場錄音的四軌在 1994 年那張碟上被標成 **1992 年 12 月 20 日**的演出。**因此 1993 是發行年、不是演奏年，兩者相差一年，卡上絕不得把 1993 當成演奏年斷言。同名先行單曲：無。**",
+  "notes": "**擋下策展層三處，並補上策展層要求另尋的演奏日期。**(1) `mbNote` 寫「⚠ 現場錄音：MB 僅記發行年 1993，未記演奏年與演奏日期，**研究層回撈時需另尋來源確認演出日期**」——**已完成**：同掛名 1994 年那張碟（collectionId 1558597411）的第 8–11 軌逐軌標成「Live At CBGB's, New York, NY / **December 20, 1992**」，那四軌正是本張五軌裡的四軌。**演奏日期指向 1992-12-20，比發行年早一年；這個日期在實體欄位查不到，只有這一個來源，行文引用時必須說明它與發行年不同，且不得寫成實體記載。**｜(2) `exceptionReason` 寫「把 CBGB **週日午場**錄成 7 吋」「Warzone 是那個場地的**固定班底**」「是少數把**該場景的空間感直接壓進黑膠**的實體」——**三句都是查無來源的場景敘述與極值，全部不得寫**；可以寫的只有：盤名本身寫著場地、secondary-types 是 Live、以及上一格那個帶場地與日期的曲名標註。｜(3) `exceptionReason` 寫「**由 Victory 發行**的現場 7 吋」——**這一處成立（label-info Victory Records、catno VR11）**，但可以再補一項策展層沒查的硬事實：**該廠牌實體的 area 登記在 Chicago、life-span begin 1989**，與演出場地不同城市。｜(4) `curatorRisk` 已依裁定 253 註明「卡上不得把發行年當成演奏年斷言」——**這一處正確，予以確認，且本層已找到與之相符的反證（演奏在 1992 年 12 月）。**｜**串流：回撈候選 1558597411 駁回為本張證據**（是另一個 release-group 的十一軌碟，只含本張四軌）；三店搜尋各回 0 筆。**本張本身無試聽來源；若要用那筆當四軌的試聽入口，必須寫明它不是本張原盤。**｜**軌數與長度**：本張 **5 軌**，**五軌全部沒有長度資料，不得寫任何「幾分幾秒」或全張總長**；1994 那版四軌的長度只能在明說「那是另一張碟」時引用。｜**人名與地名從嚴**：藝人實體 begin-area 只到 New York，**不得寫任何區級地名**；廠牌查不到創辦人，**不得寫個別成員或創辦人的名字。**｜**§5.5 舉證**：兩個網址皆回 200，`CBGB` 那頁提到本團與場地，但 **`Victory_Records` 那頁通篇查不到本團名**，對 `exceptionReason` 的支持力弱，**建議更換。**"
+ },
+ {
+  "key": "desc2:Vision of Disorder|Demo '93",
+  "artist": "Vision of Disorder",
+  "album": "Demo '93",
+  "facts": [
+   {
+    "f": "release-group eab1d55a 的欄位：title「Demo '93」、artist-credit「Vision of Disorder」、primary-type **EP**、**secondary-types `[\"Demo\"]`**、first-release-date **1993**。轄下**只有 1 筆 release**：1993 US Official **Cassette 4 軌**，**label-info 記為 `[no label]`、catno 為 null**，**包裝 Cassette Case**、無條碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eab1d55a-3f34-4e55-82ae-1bca5aa33ebb&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1993 那捲卡帶四軌與長度：1〈Formula for Failure〉**4:34**、2〈7/13〉3:16、3〈Take Them Out〉3:21、4〈Society〉**5:31**。**四軌合計 16 分 42 秒，平均一軌 4 分 11 秒——這是本組二十三張裡每軌平均最長的兩張之一**（另一張是同組的 Bulldoze 1993 年那捲卡帶，四軌 16 分 37 秒）。**末軌〈Society〉5 分 31 秒是本組二十三張裡最長的單軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eab1d55a-3f34-4e55-82ae-1bca5aa33ebb&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **13 個 release-group**，依日期排序：**1993 本張排第 1**、1994《Demo '94 (The \"Extra Shit\" Demo)》(EP＋Demo)、1995《Still》(EP)、1995《Demo '95》(EP＋Demo)、1996-10-21《Vision of Disorder》(Album)、1998《Resurrecting Reality》(EP)、1998-07-14《Imprint》(Album)……**本張是這份目錄裡最早的一筆，目錄裡標 Demo 的共三筆（1993、1994、1995），本張是其中最早。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=618a18b1-dec3-4c4a-813b-988d9c065722&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**第 1 軌的曲名兩年後再出現一次**：同一掛名 1995 年的《Still》(release-group 0e7b2cbe) 那筆 2014 年的數位版第 7 軌是〈Formula for Failure (Still Sessions 1995)〉4:26，**與本張第 1 軌同名、長度差 8 秒**——**但那是 1995 年的另一次錄音，不是本張這一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e7b2cbe-ec50-3c12-83ad-5c2df0b99137&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人實體 618a18b1：type Group、country US、area United States、**begin-area 記的是 Northport**、**life-span begin 1992**（比本張早一年）、**disambiguation 空**（同名實體 1 個）。廠牌側：本張掛的 `[no label]`（157afde4）是資料庫的特殊用途實體，disambiguation 寫明是「white labels、self-published releases 與其他無廠牌發行」專用——**這捲卡帶被明確標成「沒有廠牌」，不是「廠牌欄沒填」。**",
+    "src": "https://musicbrainz.org/ws/2/artist/618a18b1-dec3-4c4a-813b-988d9c065722?fmt=json"
+   },
+   {
+    "f": "**回撈候選與三店搜尋皆查無**：回撈候選表記「目錄裡找不到」；另以掛名＋盤名在 us／gb／de 三店各做一次專輯搜尋，**三店皆回 0 筆**。**本張無串流試聽來源。**",
+    "src": "https://itunes.apple.com/search?term=Vision%20of%20Disorder%20Demo%20'93&entity=album&country=us&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十六分四十二秒，末尾那首五分三十一秒",
+   "一捲卡帶、四首歌、廠牌欄被寫成「沒有廠牌」"
+  ],
+  "sound": "1993 年那捲卡帶四軌：〈Formula for Failure〉4:34、〈7/13〉3:16、〈Take Them Out〉3:21、〈Society〉5:31，合計 16 分 42 秒。四首都超過三分鐘，末尾的〈Society〉五分三十一秒——同一組裡那些一首唱不到一分鐘的 7 吋，在這捲卡帶面前是另一種尺度。廠牌欄被明確標成「沒有廠牌」，目錄編號是空的，包裝欄只寫了卡帶盒。開場那首〈Formula for Failure〉兩年後又被錄過一次，收在同一掛名 1995 年那批錄音的數位版末尾，長度差八秒。",
+  "keyTracks": [
+   "Formula for Failure",
+   "Take Them Out",
+   "Society"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1993。release-group first-release-date **1993**，轄下唯一 release 也是 1993 US Official（Cassette、4 軌）。**沒有再發**（名下只有這一筆），`year` 取 1993 無爭議。藝人實體 life-span begin **1992**，早本張一年。**⚠ 曲名撞年份的陷阱**：第 1 軌〈Formula for Failure〉在 1995 年那批錄音的 2014 年數位版上也有一軌同名（標「Still Sessions 1995」），**那是另一個 release-group、另一次錄音，不得混寫。三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `exceptionReason` 寫「**長島**這支團在被 Roadrunner 簽走之前的第一份錄音」——**「長島」不得寫**：藝人實體的 **begin-area 記的是 Northport**（村級地名），**「長島」是從它推出來的，實體欄位查不到**；**「被 Roadrunner 簽走」也查無來源**（藝人目錄裡查不到任何廠牌關係），**一併不得寫**。**「第一份錄音」這一件成立**——目錄 13 個 release-group 裡本張排第 1。｜(2) `exceptionReason` 寫「是紐約硬蕊往 90 年代中期 metalcore 過渡時**最早的樣本之一**」——**跨藝人的極值排名，查無來源，不得寫。**｜(3) `curatorRisk`／`label` 欄寫「MB label-info 未填廠牌」——**錯**，與同組 Cause for Alarm 那張同一個形狀：實體欄位填的是 **`[no label]`**，那是資料庫用來標「**明確沒有廠牌**」的專用實體。**行文可以寫「這捲卡帶沒有廠牌」，不能寫「資料不全」。**｜(4) `curatorRisk` 寫「secondary-types 含 Demo：本張為 demo 卡帶，**非商業發行的正式版本**」——**後半不得寫**：該筆的 status 明明是 **Official**，「非商業發行」是與實體欄位相反的推論。｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**軌數（裁定 251）**：本張 **4 軌**，名下無其他版本，行文引 4 軌安全。｜**曲名陷阱**：〈Formula for Failure〉在同掛名 1995 年那批錄音上另有一次，**兩軌不得混寫。**｜**人名與地名從嚴**：藝人實體 disambiguation 空，**不得以 disambiguation 背書本名，不得寫個別成員的名字**；**begin-area 只到 Northport，不得擴寫成「長島」或任何其他區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，`Vision_of_Disorder` 那頁提到本團與本盤名，但 **`Demo_(music)` 是形態通論頁、通篇查不到本團名，不支持 `exceptionReason`，站不住，建議更換。**"
+ },
+ {
+  "key": "desc2:Bulldoze|Cleaning Shit Up!!",
+  "artist": "Bulldoze",
+  "album": "Cleaning Shit Up!!",
+  "facts": [
+   {
+    "f": "release-group 642337ab 的欄位：title「Cleaning Shit Up!!」、artist-credit「Bulldoze」、primary-type **EP**、secondary-types **空**（**不是 Demo**）、first-release-date **1993**。轄下**只有 1 筆 release**：1993 **country 為 XW（無單一國別）** Official **Cassette 4 軌**，**label-info 是空陣列（沒有廠牌、沒有 catno）**、無包裝資料、無條碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=642337ab-cbd7-427c-a1d8-ae92370ba39c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1993 那捲卡帶四軌與長度：1〈The Truth〉2:30、2〈Hypocrite〉**4:54**、3〈Herb〉4:11、4〈Suffering〉**5:02**。**四軌合計 16 分 37 秒，平均一軌 4 分 9 秒；後三軌每一首都超過四分鐘，末軌〈Suffering〉5 分 2 秒。**（對照同組同年的另一捲卡帶：Vision of Disorder 四軌 16 分 42 秒——兩者相差只有 5 秒。）",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=642337ab-cbd7-427c-a1d8-ae92370ba39c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**這四首後來全部進了同掛名 1996 年那張長篇**：release-group 8785d829《The Final Beatdown》(Album) 的 1996 US Official CD（**Time Records，catno `[none]`**）是 14 軌，曲序為〈Beatdown〉〈**The Truth**〉〈Bulldoze〉〈All I Have〉〈**Suffering**〉〈Our Way〉〈**Herb**〉〈Respect Through Fear〉〈Remember Who's Strong〉〈**Hypocrite**〉，再加四軌標 (live) 的〈The Truth〉〈Bulldoze〉〈Beatdown〉〈Herb〉。**本張四軌全部在內，但被拆散在十軌之間，且該版沒有記任何一軌的長度。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8785d829-5ea1-3118-9f6f-2f442ad40775&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **只有 3 個 release-group**：**1993 本張排第 1**、1994《Remember Who's Strong》(EP)、1996《The Final Beatdown》(Album)。**本張是這份目錄裡最早的一筆。**藝人實體 d397a0ae：type Group、country US、area United States、**begin-area 記的是 Irvington**、**life-span begin 1992**（比本張早一年）、disambiguation「**NYC hardcore band**」——**disambiguation 說紐約、begin-area 卻寫了另一個地名，兩欄不一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d397a0ae-deb3-4ba5-9d94-f094071ed0cd&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**回撈候選與三店搜尋皆查無**：回撈候選表給的是 collectionId 1539240454（gb 店）《Dance Got Sick (feat. DR. Dope) - EP》1992-12-02、4 軌、**掛名是 BULLDOZER（不是 Bulldoze）**、℗ 1992 Bulldozer E B. Sinclaire，四軌全是同一首歌的四個版本 → **駁回，掛名與曲目都不是本團**。另以掛名＋盤名在三店各做一次專輯搜尋，**三店皆回 0 筆**。**本張無串流試聽來源。**",
+    "src": "https://itunes.apple.com/lookup?id=1539240454&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十六分三十七秒，後三首每首都超過四分鐘",
+   "國別欄寫的是「無單一國別」，廠牌欄整個是空的"
+  ],
+  "sound": "1993 年那捲卡帶四軌：〈The Truth〉2:30、〈Hypocrite〉4:54、〈Herb〉4:11、〈Suffering〉5:02，合計 16 分 37 秒。開場那首兩分半，後面三首每一首都超過四分鐘，末尾的〈Suffering〉五分零二秒——四首歌用掉的時間，比同組某些一整張十軌的 7 吋多出兩倍以上。國別欄寫的不是任何一個國家而是「無單一國別」，廠牌欄與目錄編號欄整個是空的。三年後同一掛名那張十四軌的長篇把這四首全部收進去，但拆散在十軌之間，而且一軌長度都沒有記。",
+  "keyTracks": [
+   "Hypocrite",
+   "Herb",
+   "Suffering"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1993。release-group first-release-date **1993**，轄下唯一 release 也是 1993 XW Official（Cassette、4 軌）。**沒有再發**（名下只有這一筆），`year` 取 1993 無爭議。藝人實體 life-span begin **1992**，早本張一年。**⚠ country 是 XW（無單一國別），不得寫成「美國發行」。三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `exceptionReason` 寫「**紐約／紐澤西 beatdown 這一支的起點錄音**」「1993 年的卡帶 demo **定義了後來被稱作 beatdown hardcore 的節奏語法，往後二十年的 moshpart 幾乎都能回指到這裡**」——**後半整句是跨藝人的極值與因果斷言，查無來源，不得寫**；前半的地名也要收：**藝人實體的 disambiguation 寫「NYC hardcore band」、begin-area 卻記成 Irvington，兩欄不一致，因此「紐澤西」不得寫，「紐約」只能引 disambiguation 的字面。**｜(2) `curatorRisk` 與 `mbNote` 都沒提到 **secondary-types 是空的**——**本張在實體欄位裡並沒有被標成 Demo**（本批 rulings 第 9 條把它算進「MB 未標 Demo 但實體是卡帶 demo」是對的，但行文**不得寫成「資料庫標為 demo」**，只能寫「載體是卡帶」）。｜(3) `curatorRisk` 記「所釘 release 的 country 為 XW（無單一國別）、label-info 未填廠牌」——**正確，予以確認**；補一項：**label-info 是空陣列（與同組 Cause for Alarm、Vision of Disorder 那種明確標 `[no label]` 的情形不同），行文只能寫「沒有廠牌資料」，不能寫「明確標為沒有廠牌」。**｜(4) `curatorWhy` 寫「c-120 把 beatdown 那一區整批留到下一輪，**但本張正是該區在這個形態上的核心**」——**「核心」是極值，查無來源，不得寫。**｜**串流：回撈候選 1539240454 駁回**（掛名是另一個團、四軌是同一首歌的四個版本）；三店搜尋各回 0 筆。**確認本張無試聽來源。**｜**軌數（裁定 251）**：本張 **4 軌**，行文引 4 軌；1996 那張長篇是 **14 軌**，**絕不得引為本張軌數**，要提就得說明那是三年後的另一張碟。｜**人名與地名從嚴**：藝人實體查不到成員、無廠牌實體，**不得寫個別成員的名字**；**begin-area 只到 Irvington，不得擴寫成任何州級或區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，`Bulldoze_(band)` 提到本團與本盤名，`Beatdown_hardcore` 提到本團名但查不到本盤名，**支持力中等；前者站得住，後者偏弱。**"
+ },
+ {
+  "key": "desc2:Bulldoze|Remember Who's Strong",
+  "artist": "Bulldoze",
+  "album": "Remember Who's Strong",
+  "facts": [
+   {
+    "f": "release-group 7fdc3204 的欄位：title「Remember Who's Strong」、artist-credit「Bulldoze」、primary-type **EP**、secondary-types **空**、first-release-date **1994**。轄下**只有 1 筆 release**：**1994 FR（法國）Official 7\" Vinyl 4 軌**，label-info **Hardway Records、catno HR 04**，包裝 Cardboard/Paper Sleeve、無條碼。**這是本組二十三張裡唯一一張 country 不是 US 也不是 XW／XE 的碟。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7fdc3204-fb53-47ae-b1b3-0f96b3031022&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1994 原盤四軌曲名（**實體欄位沒有任何一軌記長度**）：1〈Nothing but a Beatdown〉、2〈Bulldoze〉、3〈All I Have〉、4〈Remember Who's Strong〉。**第 2 軌與掛名同名，第 4 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7fdc3204-fb53-47ae-b1b3-0f96b3031022&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "廠牌實體 Hardway Records（cf3a3f5e）：**type 為空、country 為空**、**area 記的是 Paris**、**life-span 起訖皆空**、disambiguation「**Hardcore punk French label**」。**「法國壓片」這件事在兩處對得上：release 的 country 是 FR，廠牌實體的 area 是 Paris。**",
+    "src": "https://musicbrainz.org/ws/2/label/cf3a3f5e-4cd4-4530-880b-6568574adf45?fmt=json"
+   },
+   {
+    "f": "藝人目錄分頁全列 **只有 3 個 release-group**：1993《Cleaning Shit Up!!》(EP)、**1994 本張排第 2**、1996《The Final Beatdown》(Album)。**本張是這份目錄裡唯一一張黑膠**（另兩筆分別是卡帶與 CD）。藝人實體 d397a0ae：**begin-area Irvington**、**life-span begin 1992**、disambiguation「NYC hardcore band」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d397a0ae-deb3-4ba5-9d94-f094071ed0cd&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**四軌裡有三軌兩年後進了同掛名那張長篇**：release-group 8785d829《The Final Beatdown》1996 US Official CD（Time Records，catno `[none]`）14 軌裡有〈Bulldoze〉（第 3 軌）、〈All I Have〉（第 4 軌）、〈Remember Who's Strong〉（第 9 軌），**但沒有〈Nothing but a Beatdown〉**——該版第 1 軌只寫〈Beatdown〉。**另有一筆 2023 US Official CD（DAZE/DAZE066、Streets of Hate/SOH57、Triple-B Records/TBR186 三家並列）19 軌，其中第 5 軌才寫成〈Nothing But A Beatdown〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8785d829-5ea1-3118-9f6f-2f442ad40775&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**回撈候選與三店搜尋皆查無**：回撈候選表記「目錄裡找不到」；另以掛名＋盤名在 us／gb／de 三店各做一次專輯搜尋，**三店皆回 0 筆**。**本張無串流試聽來源。**",
+    "src": "https://itunes.apple.com/search?term=Bulldoze%20Remember%20Who's%20Strong&entity=album&country=us&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌壓成 7 吋，壓片國別寫的是法國",
+   "名下三張碟，只有這一張是黑膠"
+  ],
+  "sound": "1994 年 Hardway 的 HR 04 是一張 7 吋、四軌：〈Nothing but a Beatdown〉、〈Bulldoze〉、〈All I Have〉、〈Remember Who's Strong〉。第二軌與掛名同名、第四軌與盤名同名。實體欄位一軌長度都沒有記，能引的只有曲序與曲名，以及一件不常見的事——這張的發行國別欄寫的是法國，廠牌實體的所在地登記在巴黎。名下三張碟裡，只有這一張是黑膠，另外兩張分別是卡帶與 CD。兩年後那張十四軌的長篇收了其中三首，唯獨開場那首在該版上只留下一個縮短的曲名。",
+  "keyTracks": [
+   "Nothing but a Beatdown",
+   "Bulldoze",
+   "Remember Who's Strong"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1994。release-group first-release-date **1994**，轄下唯一 release 也是 1994 FR Official（7\" Vinyl、4 軌、Hardway HR 04）。**沒有再發**（名下只有這一筆），`year` 取 1994 無爭議。藝人實體 life-span begin **1992**。**⚠ country 是 FR，不是 US——行文不得寫「美國發行」。三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `exceptionReason` 寫「Bulldoze 的**第一張黑膠**」——**這一件成立**：目錄三筆分別是 1993 卡帶、1994 本張（7\" Vinyl）、1996 CD，**本張是唯一一張黑膠**，可以寫。｜(2) 同一句寫「也是紐約 beatdown 在 1994 年**被歐洲廠牌接手發行的實例**，**說明這條線在當時已經跨出本地流通**」——**後半是推論，不得寫**；可以寫的硬事實是兩處對得上的地緣：**release 的 country 是 FR、廠牌實體的 area 是 Paris、disambiguation 寫「Hardcore punk French label」。**｜(3) **`exceptionEvidenceUrls` 的第二個網址是 `Split_album`——但本張根本不是 split**（artist-credit 只有一個掛名、四軌全掛 Bulldoze）。**這個舉證既與本張形態不符、頁面也查不到本團名，站不住，必須更換。**第一個網址 `Beatdown_hardcore` 回 200 且提到本團名，但查不到本盤名，支持力偏弱。｜(4) `curatorRisk` 記「country 為 FR（法國壓片），非美國本地發行——店面設為 us 時，這張的可得性與其他張不同」——**正確，予以確認。**｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**軌數與長度**：本張 **4 軌**，**四軌全部沒有長度資料，不得寫任何「幾分幾秒」或全張總長**；1996 那張長篇是 14 軌、2023 那張是 19 軌，**都絕不得引為本張軌數。**｜**曲名差異**：本張第 1 軌是〈Nothing but a Beatdown〉，1996 那版寫成〈Beatdown〉、2023 那版才寫回〈Nothing But A Beatdown〉——**行文若比對曲目要說明這個字串差異。**｜**人名與地名從嚴**：藝人與廠牌實體都查不到人名，**不得寫個別成員或廠牌創辦人的名字**；**begin-area 只到 Irvington，不得擴寫成任何州級或區級地名。**｜**素材量**：可寫的事實格只有「四軌曲名／無軌長／FR＋Paris 的地緣對照／catno HR 04／目錄唯一的黑膠／1996 版的曲名差異」六格，**無長度、無串流、無再發可寫，標 partial（只夠 120–180 字）。**"
  }
 ]
