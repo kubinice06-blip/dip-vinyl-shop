@@ -321,7 +321,7 @@
   ],
   "status": "full",
   "yearVerified": "**資料庫端一致，1994；串流端給的是兩個再發年，不構成第二個原盤年來源。** release-group first-release-date **1994-06-17**，**轄下唯一的 release 也是 1994-06-17**（FR、Official、CD 5 軌、Buda Records 92583-2、barcode 3229269258329）。**串流端找回的兩個條目都是後來的再發**：111046189 標示日期 **1999-01-18**、版權標示 ℗ 1999 Caltex Records；6793087184 標示日期 **2000-09-01**、℗ 2000 Caltex Records——**兩者的廠牌都不是資料庫端的 Buda Records，年份也在 1994 之後，因此它們與 1994 不衝突，但也不能算 1994 的獨立佐證。** **結論：1994 只有資料庫端一個來源，但沒有任何來源與它矛盾；簡介可以寫年，不要寫成「已驗證」。錄音年未登錄，不得補寫。**",
-  "notes": "**擋下策展層四處。**(1) `label` 欄寫「MB 該 release 未填 label-info；**法國田野錄音系列**」——**前半不成立、後半查無來源**。release 端點回問到 **Buda Records（實體 0d60309a）、catalog-number 92583-2**；「田野錄音系列」則**沒有任何欄位背書，不得寫**。`label` 欄要改寫成「Buda Records 92583-2，1994-06-17 FR Official CD 5 軌，barcode 3229269258329」。｜(2) ⚠ **`curatorRisk` 的店面結論被推翻**：它寫「Apple 只在 nl 對到 **North** Khorassan，不是本張的南呼羅珊……五店皆 0 筆可對得上」。**第三種查法（藝人目錄端 62199659，46 筆逐筆掃）撈到 collectionId 111046189「The Music of South Khorassan」，直查 5 軌、逐軌只差 3 秒、曲名一一對應——本張有串流來源。**｜(3) `curatorWhy` 寫「本張是她 **1990 年代在法國錄的**呼羅珊南部民謠選」——**錄音地查無來源，不得寫**。可寫的只有 release 的 country 欄記為 FR、廠牌是 Buda Records 這兩件事；**「在法國錄的」與「在法國發行的」不是同一件事，一律不得寫成前者。**｜(4) **策展層漏了最貼題的一個欄位**：藝人實體的 **begin-area 記的是 Khorāsān-e Janūbī（南呼羅珊）**——**與盤名裡的地名是同一個地方**，這是欄位事實、可以寫。她的 disambiguation 空白、關係欄 0 筆，**依硬規則第 7 條不得背書本名、不得補生平**；可寫的欄位只有 area Iran／begin 1945-01-04／begin-area Khorāsān-e Janūbī。**另外，她名下只有 6 個 release-group、本張是最早的一筆**，這個序數覆核通過。｜**串流採信 111046189：5 軌逐位置比對（26:06／4:02／16:16／7:36／3:07）對資料庫端（26:03／4:05／16:13／7:33／3:10），逐軌差 3 秒、曲序全中、曲名是同一批曲目的英譯對法文，採信。同一份目錄裡的 6793087184（2000-09-01、5 軌）是同一批錄音的第二個上架條目，五軌長度與 111046189 完全相同，一併記錄、主線取 111046189。** **駁回候選 2 筆**：111045892「The Music of **North** Khorassan」（**7 軌**、℗ 1998，對應的是另一個 release-group 3678d22b、也就是 1995 年的北呼羅珊卷）與 1086934699「Persian Classical Music」（**19 軌**、℗ 1995 Wyastone），**軌數與內容都不是本張**。**回撈候選採信 1（另記 1 個同錄音條目）、駁回 2。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、盤面編號、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **末軌曲名裡的 Nowrouz 是曲名的一部分、可以照引，但不得由曲名推演任何節慶或宗教上的敘述。**｜**軌數與長度：唯一一筆 release、5 軌、長度全備，可以寫時間。**"
+  "notes": "**擋下策展層四處。**(1) `label` 欄寫「MB 該 release 未填 label-info；**法國田野錄音系列**」——**前半不成立、後半查無來源**。release 端點回問到 **Buda Records（實體 0d60309a）、catalog-number 92583-2**；「田野錄音系列」則**沒有任何欄位背書，不得寫**。`label` 欄要改寫成「Buda Records 92583-2，1994-06-17 FR Official CD 5 軌，barcode 3229269258329」。｜(2) ⚠ **`curatorRisk` 的店面結論被推翻**：它寫「店面只在 nl 對到 **North** Khorassan，不是本張的南呼羅珊……五店皆 0 筆可對得上」。**第三種查法（藝人目錄端 62199659，46 筆逐筆掃）撈到 collectionId 111046189「The Music of South Khorassan」，直查 5 軌、逐軌只差 3 秒、曲名一一對應——本張有串流來源。**｜(3) `curatorWhy` 寫「本張是她 **1990 年代在法國錄的**呼羅珊南部民謠選」——**錄音地查無來源，不得寫**。可寫的只有 release 的 country 欄記為 FR、廠牌是 Buda Records 這兩件事；**「在法國錄的」與「在法國發行的」不是同一件事，一律不得寫成前者。**｜(4) **策展層漏了最貼題的一個欄位**：藝人實體的 **begin-area 記的是 Khorāsān-e Janūbī（南呼羅珊）**——**與盤名裡的地名是同一個地方**，這是欄位事實、可以寫。她的 disambiguation 空白、關係欄 0 筆，**依硬規則第 7 條不得背書本名、不得補生平**；可寫的欄位只有 area Iran／begin 1945-01-04／begin-area Khorāsān-e Janūbī。**另外，她名下只有 6 個 release-group、本張是最早的一筆**，這個序數覆核通過。｜**串流採信 111046189：5 軌逐位置比對（26:06／4:02／16:16／7:36／3:07）對資料庫端（26:03／4:05／16:13／7:33／3:10），逐軌差 3 秒、曲序全中、曲名是同一批曲目的英譯對法文，採信。同一份目錄裡的 6793087184（2000-09-01、5 軌）是同一批錄音的第二個上架條目，五軌長度與 111046189 完全相同，一併記錄、主線取 111046189。** **駁回候選 2 筆**：111045892「The Music of **North** Khorassan」（**7 軌**、℗ 1998，對應的是另一個 release-group 3678d22b、也就是 1995 年的北呼羅珊卷）與 1086934699「Persian Classical Music」（**19 軌**、℗ 1995 Wyastone），**軌數與內容都不是本張**。**回撈候選採信 1（另記 1 個同錄音條目）、駁回 2。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、盤面編號、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **末軌曲名裡的 Nowrouz 是曲名的一部分、可以照引，但不得由曲名推演任何節慶或宗教上的敘述。**｜**軌數與長度：唯一一筆 release、5 軌、長度全備，可以寫時間。**"
  },
  {
   "key": "desc2:The Kamkars|Nightingale With a Broken Wing",
@@ -533,7 +533,7 @@
   ],
   "status": "full",
   "yearVerified": "**只有資料庫端一個來源，1990 沒有第二個來源可對。** release-group first-release-date **1990**（只到年、無月日），**轄下唯一的 release 也是 1990**（country XW、Official、**media 的 format 欄為空**、label-info 陣列為空、barcode 欄空）。**串流版本 288939826 的標示日期是 2008-08-16、版權標示 ℗ 2008 Taraneh Enterprises Inc**，那是再發年、**不是原盤年，不得寫進 `year`**，也不構成 1990 的佐證。**結論：1990 只有資料庫端一個來源；簡介可以寫年，但不要寫成「已驗證」。錄音年未登錄，不得補寫。⚠ 載體查無——`label` 欄與簡介一律不得補任何載體名。**",
-  "notes": "**擋下策展層三處。**(1) ✅ **`label` 欄說「MB 該 release 未填 label-info 與載體」——這一張兩半都成立**，用 release 端點回問過，label-info 陣列是空的、media 的 format 欄也是空的。**這是本組唯一一張廠牌與載體兩欄同時查無的碟**，`label` 欄要維持不填推測值，簡介也不得補「CD」「卡帶」這類字眼。｜(2) `curatorWhy` 寫「a 組已釘他 1973 年的《Tapesh》……本張是 1990 年的碟、MB release country 記為 XW（跨國），**兩張跨過 1979 這條界線**」——**「跨過界線」是策展分組語言、簡介不得照抄**；可寫的欄位只有兩筆 release 的 country 值（IR 與 XW）。**而且策展層漏了目錄本身的形狀**：22 張純 Album 依年份排，**1973 到 1990 之間只有兩筆（1986《یارب》、1988《Ba To》），1990 之後才密集起來**，本張排第四。｜(3) `curatorRisk` 說「**該 release 的 media format 欄是空的（記為「?×10」），載體待研究層核**」——**覆核結果：核不出來**。資料庫端只有那一筆 release、format 欄就是空的，店面端那筆是 2008 年的數位再發、也不能反推 1990 年的原始載體。**這一格確認查無，不得補寫。**｜(4) **策展層漏了關係欄那一筆**：實體的關係欄有 **member of band（forward）指向 Black Cats**，⚠ **本組第 13 張 Shahram Shabpareh 與第 15 張 Leila Forouhar 的關係欄也各有一筆指向同一個團體實體**——**三張卡共用同一個團名，這是欄位背書的關聯**。策展層在 a 組提過 Black Cats「在 MB 上有 23,196 個同名實體」，**但從這三位掛名的關係欄反查，指到的是同一個實體，不需要靠字串比對。** **除這一筆之外的合作者一律不得寫**（關係欄沒有別的）。｜**串流採信 288939826：10 軌逐位置比對（4:24／5:25／5:06／4:10／4:23／4:32／5:19／6:48／4:40／3:37）對資料庫端（4:25／5:25／5:07／4:10／4:24／5:20／4:33／6:49／4:40／3:37），曲序與曲名全中、八軌差 0–1 秒，採信；⚠ 第六與第七軌的長度在兩邊互相對調（串流 4:32／5:19、資料庫 5:20／4:33），其中一邊填反了，行文引用這兩軌的時間時要避開或寫明分歧。** 藝人目錄端（4927972，63 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **實體的 country 記為 US、begin-area 記為 Tehran 是兩個可查證的欄位，只能照欄位敘述，不得寫成因果句；盤名〈Khalij〉也不得拿來推演任何地緣上的說法。**｜**軌數與長度：唯一一筆 release、10 軌、長度全備，可以寫時間（第六、七軌除外）；廠牌與載體兩欄都真的空，行文不得補。**"
+  "notes": "**擋下策展層三處。**(1) ✅ **`label` 欄說「MB 該 release 未填 label-info 與載體」——這一張兩半都成立**，用 release 端點回問過，label-info 陣列是空的、media 的 format 欄也是空的。**這是本組唯一一張廠牌與載體兩欄同時查無的碟**，`label` 欄要維持不填推測值，簡介也不得補「CD」「卡帶」這類字眼。｜(2) `curatorWhy` 寫「a 組已釘他 1973 年的《Tapesh》……本張是 1990 年的碟、MB release country 記為 XW（跨國），**兩張跨過 1979 這條界線**」——**「跨過界線」是策展分組語言、簡介不得照抄**；可寫的欄位只有兩筆 release 的 country 值（IR 與 XW）。**而且策展層漏了目錄本身的形狀**：22 張純 Album 依年份排，**1973 到 1990 之間只有兩筆（1986《یارب》、1988《Ba To》），1990 之後才密集起來**，本張排第四。｜(3) `curatorRisk` 說「**該 release 的 media format 欄是空的（記為「?×10」），載體待研究層核**」——**覆核結果：核不出來**。資料庫端只有那一筆 release、format 欄就是空的，店面端那筆是 2008 年的數位再發、也不能反推 1990 年的原始載體。**這一格確認查無，不得補寫。**｜(4) **策展層漏了關係欄那一筆**：實體的關係欄有 **member of band（forward）指向 Black Cats**，⚠ **本組第 13 張 Shahram Shabpareh 與第 15 張 Leila Forouhar 的關係欄也各有一筆指向同一個團體實體**——**三張卡共用同一個團名，這是欄位背書的關聯**。策展層在 a 組提過 Black Cats 這個字串在掛名搜尋端會回上萬筆同名實體，**但從這三位掛名的關係欄反查，指到的是同一個實體，不需要靠字串比對。** **除這一筆之外的合作者一律不得寫**（關係欄沒有別的）。｜**串流採信 288939826：10 軌逐位置比對（4:24／5:25／5:06／4:10／4:23／4:32／5:19／6:48／4:40／3:37）對資料庫端（4:25／5:25／5:07／4:10／4:24／5:20／4:33／6:49／4:40／3:37），曲序與曲名全中、八軌差 0–1 秒，採信；⚠ 第六與第七軌的長度在兩邊互相對調（串流 4:32／5:19、資料庫 5:20／4:33），其中一邊填反了，行文引用這兩軌的時間時要避開或寫明分歧。** 藝人目錄端（4927972，63 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **實體的 country 記為 US、begin-area 記為 Tehran 是兩個可查證的欄位，只能照欄位敘述，不得寫成因果句；盤名〈Khalij〉也不得拿來推演任何地緣上的說法。**｜**軌數與長度：唯一一筆 release、10 軌、長度全備，可以寫時間（第六、七軌除外）；廠牌與載體兩欄都真的空，行文不得補。**"
  },
  {
   "key": "desc2:Shahram Shabpareh|Deyar",
@@ -661,5 +661,269 @@
   "status": "full",
   "yearVerified": "**一致，1990。** release-group first-release-date **1990-01-02**，**轄下唯一的 release 也是 1990-01-02**（country IR、Official、CD 7 軌、Pars Video、packaging Clamshell Case）。**第三種查法找回的串流版本 6808067848 標示日期 1990-09-27、版權標示 ℗ 1990 Pars Video**——**年份與資料庫端一致、廠牌也是同一家，是第二個獨立年份來源**。⚠ **月日不同（01-02 對 09-27），兩邊各有一組，行文只寫年、不要寫月日。** ⚠ **release 的 country 記為 IR，與同批多數 1980–90 年代條目的 XW／US 不同**，策展層要研究層核這一格——**核不出第二個來源，行文一律不提發行地**。**錄音年未登錄，不得補寫。**",
   "notes": "**擋下策展層三處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Pars Video（實體 0b2eb705）**、catno 欄空、**packaging 記為 Clamshell Case**（這一格策展層也沒抓到）。`label` 欄要改寫成「Pars Video，1990-01-02 IR Official CD 7 軌，packaging 記為 Clamshell Case」。｜(2) ⚠ **`curatorRisk` 的店面結論被推翻**：它寫「us／gb／de／nl 各回 0 筆可對得上、fr 回 HTTP 403」。**第三種查法（藝人目錄端 83504798，88 筆逐筆掃）撈到 collectionId 6808067848「Makhmale Naz」，直查 6 軌、與資料庫端前六軌逐軌差 0–9 秒、版權標示的廠牌與 label-info 是同一家——本張有串流來源。**｜(3) `curatorRisk` 要研究層核「release country 記為 **IR** 但年份 1990、載體 CD，與該時期的實際發行地未必相符」——**覆核結果：核不出第二個來源**。串流端那筆沒有國別欄可對，資料庫端也只有這一筆 release。**這一格確認查無佐證，行文一律不提發行地。**｜(4) `curatorWhy` 說「她是骨幹名單裡 1980–90 年代**女性流行掛名的代表**」——**地位判斷、查無來源、不得寫**。**「本張是她名下 16 個 release-group 裡年份最早的一筆」這一句覆核通過、可以留**（8 張純 Album 依年份排，本張排第一）。｜(5) **策展層漏了關係欄那一筆**：實體的關係欄有 **member of band（forward）指向 Black Cats**，⚠ **本組第 12 張 Ebi 與第 13 張 Shahram Shabpareh 的關係欄也各有一筆指向同一個團體實體，三張卡共用同一個團名，這是欄位背書的關聯**。**除這一筆之外的合作者一律不得寫**（關係欄沒有別的）。另：實體的 **begin-area 記為 Eşfahān**、country 記為 US，兩個都是可寫的欄位。｜**串流採信 6808067848：6 軌逐位置比對（4:55／4:48／7:48／4:45／5:37／4:29）對資料庫端前六軌（5:04／4:49／7:49／4:45／5:36／4:30），五軌差 0–1 秒、首軌差 9 秒，曲序與曲名全中（串流盤名作「Makhmale Naz」），採信。⚠ 串流那一版只有 6 軌、少了資料庫端的第七軌〈Bahar〉；同一份目錄裡另有 6808462251《Bahar - Single》（1991、1 軌），是同名曲另外成條的單軌條目，一併記錄、不併入本張。** **駁回候選 5 筆**：同目錄的《60 Leila Golden Songs, Vol. 1》(289974291、60 軌)、《Chance (Shance)》(105208541、9 軌)、《Shance》(6793105447、9 軌)、《Hedeyeh》(105206257、7 軌)、《Hediyeh》(6793116750、7 軌)——**軌數或曲目都不是本張**（其中《Hedeyeh》在資料庫端是 1991-05-28 與 Shahram Solati 合掛的另一個 release-group）。**回撈候選採信 1、駁回 5。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、載體、packaging、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **實體的 country 記為 US、begin-area 記為 Eşfahān 是兩個可查證的欄位，只能照欄位敘述，不得寫成因果句。**｜**軌數與長度：唯一一筆 release、7 軌、長度全備，可以寫時間；串流那版是 6 軌，引用時要寫明取的是哪一版。**"
+ },
+ {
+  "key": "desc2:Googoosh|Akharin Khabar",
+  "artist": "Googoosh",
+  "album": "Akharin Khabar",
+  "facts": [
+   {
+    "f": "release-group 6c70e76e 的欄位：title「Akharin Khabar」、artist-credit「Googoosh」、primary-type Album、**secondary-types 空**、first-release-date **2004-04-15**、genre 與 tag 欄皆空。**轄下 2 筆 release**：2b98499a（2004-04-15、country **XW**、Official、Digital Media 8 軌、packaging None）與 b4226b86（title 作「Akharin Khabar (Last News)」、2004、country **US**、Official、**CD 8 軌**、**barcode 035265251522**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6c70e76e-39db-4bf9-8f92-57c906e01070?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **兩筆的廠牌都查得到，策展層說的「兩筆皆未填 label-info」不成立**：兩筆的 label-info 都是 **Caltex Records**（廠牌實體 17eb5823），其中 **US 那筆的 catalog-number 是「2515 CD」**、barcode 035265251522；XW 那筆的 catno 欄空。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6c70e76e-39db-4bf9-8f92-57c906e01070&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **US 那筆的逐軌 artist-credit 是兩個人：「Googoosh, Mehrdad Asemani」**——八軌全部如此，而且**那一筆的曲名是波斯文與拉丁轉寫並列**（〈اتاق من (Otaghe Man)〉〈چله نشین (Chelleh Nesheen)〉〈آخرین خبر (Aakharin Khabar Last News)〉…）。**這個第二個名字有逐軌 artist-credit 背書、可以寫**（裁定 241／250 的門檻過得了）；XW 那筆則只掛 Googoosh 一人、曲名只有拉丁轉寫。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6c70e76e-39db-4bf9-8f92-57c906e01070&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度（XW 那筆），**8 軌全部有長度、合計 38:01**：1〈Otaghe Man〉4:35、2〈Chelleh Neshin〉**5:25**、3〈Akharin Khabar〉4:45、4〈Ahooye Eshgh〉4:35、5〈Eyde Aashegh〉**5:28**、6〈Peere Mashregh〉4:53、7〈Ba Ham〉**3:55**、8〈Delkook〉4:25。**八軌全部落在 3:55 到 5:28 這一分三十三秒的窄帶裡，是本組長度最集中的一張**；與盤名同字的第三軌 4:45，剛好落在中間。US 那筆的同八軌長度差 1–2 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6c70e76e-39db-4bf9-8f92-57c906e01070&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 0d9b88f3：name「Googoosh」、type Person、country IR、area Iran、begin **1951-02-02**、begin-area **Tehran**、end 欄空、disambiguation「Iranian singer」。**別名欄六筆**：「Googoosh」「Gougoush」（義大利語）「Faiqə Atəşin」與「Ququş」（兩筆亞塞拜然語）「فائقه آتشین」「گوگوش」。**關係欄四筆**：married（forward）指向 Mahmoud Ghorbani、member of band（forward）指向 Son Soul Brothers、parent（forward）指向 Kambiz Ghorbani 與 Shahrum Kashani。",
+    "src": "https://musicbrainz.org/ws/2/artist/0d9b88f3-054a-4f53-b447-2f3f503c8290?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "目錄分頁全列 **38 個 release-group**（primary-type Album 29、Single 6、Other 1、無 primary-type 2；其中 secondary-types 為空的純 Album 24）。⚠ **這份目錄的日期有嚴重的批次形狀**：**1990-12-13 這一天出現五次**（《Jadeh》《Golden Songs: Volume 1》《Golden Songs: Volume 2》《Persian Music: Googoosh 3, Dou Mahi》《Googoosh 4, Dou Panjareh》），**而店面那邊同一天出現十四次**。本張 **2004-04-15 在兩份目錄裡都只出現一次**，其後是 2004-09-30《Akse Fori (Snapshot)》。**24 張純 Album 依年份排，本張排第十一。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0d9b88f3-054a-4f53-b447-2f3f503c8290&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 82230456**「Googoosh — Akharin Khabar - Last News - Persian Music」得 **8 軌**、標示日期 **2004-04-15**（**與資料庫端的 first-release-date 完全相同**）、版權標示「℗ 2004 Caltex Records」——**廠牌也與 label-info 是同一家**。八軌長度 4:36／5:26／4:45／4:35／5:28／4:54／3:55／4:25，**與資料庫端 XW 那筆逐軌只差 0–1 秒**。**藝人目錄端（藝人頁 82230386，全 71 筆）逐筆掃過，另撈到 collectionId 6793098941「Googoosh & Mehrdad Asemani — Akharin Khabar (Last News)」（2005-12-18、8 軌、℗ 2005 Caltex Records）**——**盤名與掛名都與資料庫端 US 那筆的形態一致（含 Mehrdad Asemani 的合掛），八軌長度與 US 那筆差 1–2 秒，是同一張的另一個上架條目。**",
+    "src": "https://itunes.apple.com/lookup?id=82230456&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌全部擠在一分三十三秒寬的帶子裡",
+   "同一張碟的兩個版本，一個只掛一個名字，另一個八軌都掛兩個"
+  ],
+  "sound": "八軌全部留下長度，合計 38 分 01 秒，而且是本組長度最集中的一張：八軌全部落在 3:55 到 5:28 這一分三十三秒的帶子裡，沒有任何一軌跳出去。首軌〈Otaghe Man〉4:35 起手，〈Chelleh Neshin〉5:25 把上緣推到五分半以內，與盤名同字的第三軌〈Akharin Khabar〉4:45 剛好落在整張的中間值。第四軌〈Ahooye Eshgh〉4:35 與首軌等長，第五軌〈Eyde Aashegh〉5:28 是全張最長的一軌——但也只比最短的〈Ba Ham〉3:55 多出一分三十三秒。後段〈Peere Mashregh〉4:53、〈Ba Ham〉3:55、〈Delkook〉4:25 一路收窄，末軌收在四分半以內。整張沒有長篇、沒有短插曲，八軌像被裁成同一個尺寸；同一張碟另有一個版本，八軌的曲名是波斯文與拉丁轉寫並列，而且每一軌都掛著兩個名字。",
+  "keyTracks": [
+   "Otaghe Man",
+   "Akharin Khabar",
+   "Ba Ham"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，2004，而且兩個來源給的是同一天。** release-group first-release-date **2004-04-15**，轄下兩筆 release 分別是 2004-04-15（XW）與 2004（US）。**串流版本 82230456 的標示日期同樣是 2004-04-15、版權標示 ℗ 2004 Caltex Records**——年月日全同、廠牌也對得上，是第二個獨立年份來源。⚠ **而且這個日期沒有批次形狀**：他的資料庫端目錄裡 2004-04-15 只出現一次、店面目錄裡也只出現一次（**對照組：1990-12-13 在資料庫端出現五次、在店面出現十四次**），**因此這個一致可以採信**。⚠ 另一個上架條目 6793098941 的標示日期是 2005-12-18、版權標示 ℗ 2005，**那是同一張的另一個上架年、不是原盤年，不得寫進 `year`**。**錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層三處。**(1) `label` 欄寫「MB 兩筆皆未填 label-info」——**兩筆都不成立**。release 端點回問到兩筆的 label-info 都是 **Caltex Records（實體 17eb5823）**，其中 **US 那筆的 catalog-number 是「2515 CD」**、barcode 035265251522。`label` 欄要改寫成「Caltex Records，2004-04-15 XW Official Digital Media 8 軌；2004 US Official CD 8 軌，catno 2515 CD、barcode 035265251522」。｜(2) ⚠ **策展層完全沒提第二個掛名**：資料庫端 **US 那筆的八軌 artist-credit 全部是「Googoosh, Mehrdad Asemani」**，而**店面藝人目錄端也有一筆掛名寫成「Googoosh & Mehrdad Asemani」的同名條目（6793098941）**——**兩個來源互相印證，這個名字有逐軌 artist-credit 背書、可以寫**。策展層的 `curatorRisk` 只寫「兩筆 release 的盤名不同」，漏了更重要的掛名差。⚠ 另：**US 那筆的曲名是波斯文與拉丁轉寫並列**，XW 那筆只有拉丁轉寫，**行文取哪一版就要寫明。**｜(3) `curatorWhy` 說本張的年份「見一份外部百科的 Googoosh 作品條列」——**本層不採外部條列當年份來源**，覆核走的是資料庫端與店面端兩條；**兩邊都給 2004-04-15、而且都不是批次日期，年份成立**。⚠ **但 `curatorWhy` 說「a 組已釘她 1971、1974、1975 三張革命前的碟」——本層在她的資料庫端目錄裡看到的是 1990《Mordaab》、1990-12-13《Persian Music: Googoosh 3, Dou Mahi》、1992《Pol》，也就是說那三張的原盤年不在資料庫端、而且它們正落在 1990-12-13 那個批次日期上**（同日五筆、店面同日十四筆）。**這是 a 組的問題，但要記下來提醒：那三張的年份在資料庫端沒有支持，a 組研究層要另外處理。**｜(4) `curatorRisk` 說「查『Gougoush』時第 1 名是法國的同名實體、目標掉到第 2」——⚠ **成立，而且原因查得到**：「Gougoush」登錄在她的別名欄裡、標的是**義大利語 locale**，另有兩筆亞塞拜然語別名（Faiqə Atəşin、Ququş）；**轉寫換一種 score 就翻掉，是別名欄的 locale 造成的，不是資料錯誤。**｜(5) **關係欄可寫的名字有四個**：married 指向 Mahmoud Ghorbani、member of band 指向 Son Soul Brothers、parent 指向 Kambiz Ghorbani 與 Shahrum Kashani。⚠ **這四筆是親屬與團體關係，本身可寫，但不得由它們展開任何生平敘述**；**除這四筆與逐軌的 Mehrdad Asemani 之外，任何合作者、樂手、製作人的名字一律不得寫。**｜**串流採信 82230456：8 軌逐位置比對（4:36／5:26／4:45／4:35／5:28／4:54／3:55／4:25）對資料庫端 XW 那筆（4:35／5:25／4:45／4:35／5:28／4:53／3:55／4:25），逐軌差 0–1 秒、曲序曲名全中，採信。** 第三種查法（藝人目錄端 82230386，71 筆）**另採信 1 筆**：6793098941「Googoosh & Mehrdad Asemani — Akharin Khabar (Last News)」（2005-12-18、8 軌、℗ 2005 Caltex），**對得上資料庫端 US 那筆的形態（含合掛），八軌差 1–2 秒，是同一張的另一個上架條目**，主線取 82230456。**駁回候選 1 筆**：同目錄的《Akse Fori (Snapshot)》（6793103806、2006-01-10、8 軌）**是 2004-09-30 那張別碟**。**回撈候選採信 2、駁回 1。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、盤面編號、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **她的 area 欄記為 Iran、begin-area 記為 Tehran，是兩個可查證的欄位，只能照欄位敘述；「2004 年的新作」不得寫成任何復出、解禁或回歸的敘事。**｜**軌數與長度：兩筆 release、各 8 軌、長度全備，可以寫時間，但要寫明取的是哪一筆。**"
+ },
+ {
+  "key": "desc2:O-Hum|Nahal-e Heyrat",
+  "artist": "O-Hum",
+  "album": "Nahal-e Heyrat",
+  "facts": [
+   {
+    "f": "release-group 1bd75257 的欄位：title「Nahal-e Heyrat」、artist-credit「O‐Hum」（**中間那個是 U+2010、不是 ASCII 連字號**）、primary-type Album、**secondary-types 空**、first-release-date **1999**（只到年）、RG 的 genre／tag 欄各一筆票數 1：`rock`。**轄下 3 筆 release**：5d3840fa（title「Nahal-e Heyrat (Remastered)」、1999、XW、Official、Digital Media **11 軌**、**barcode 886296365685**、packaging None）、cb2ecf56（title「Nahale Heyrat」、1999、XW、Official、**載體欄空、10 軌**）、9b3d4802（title「Nahale Heyrat」、**無日期、status 空、載體欄空、11 軌**）。⚠ **三筆的 label-info 陣列全部是空的**（用 release 端點回問過），策展層說對了。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1bd75257-e9c6-3284-9e6b-d0de02ffb176&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**三筆 release 的曲目是同一組，差別只在末軌與長度。** Remastered 那筆 **11 軌、合計 54:14**：1〈Darvish〉3:37、2〈Ala Ya Ayyohal Saghi〉5:19、3〈Dar Deyr-e Moghan〉4:28、4〈Nahal-e Heyrat〉**6:06**、5〈In Sham-e del Afrooz〉5:44、6〈Goftam Gham-e to Daram〉5:19、7〈Eyb-e Rendan Makon!〉5:37、8〈Dide Darya Konam〉**3:42**、9〈Cho Baad...〉4:32、10〈Afsoon〉5:32、11〈Pir-e May Foroosh〉4:18。**無日期那筆的同 11 軌逐軌長 0–8 秒（合計 54:50）**；**1999 年那筆 10 軌的曲目就是無日期那筆去掉末軌〈Pir-e May Foroosh〉**——**三筆之間唯一真正的差別是末軌在不在。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1bd75257-e9c6-3284-9e6b-d0de02ffb176&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 5fe4270c：name「O‐Hum」（含 U+2010）、sort-name「O-Hum」、**type Group**、country IR、area Iran、**begin 1999**、end 欄空、disambiguation「Iranian band」、**別名欄 0 筆**。**關係欄兩筆，都是團員（member of band, backward）：Babak Riahipour、Shahram Sharbaf**——**這兩個名字有 relationship 背書、可以寫**（裁定 241／250 的門檻過得了）。",
+    "src": "https://musicbrainz.org/ws/2/artist/5fe4270c-aa67-4002-93e7-3278c13d4ed8?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "⚠ **策展層要研究層核的「另一個 ASCII 寫法的實體」，覆核結果是不存在。** 目錄分頁全列，實體 5fe4270c 名下 **7 個 release-group**（primary-type Album 7；純 Album 5）：**1999 本張、2002《Hafez In Love》、2005《Aloodeh》、2014-06-20《O Hum Dar Azadi》、2022-03-15《Shatt-e Sharab》**，另有 2009《E+HUM》(Remix) 與 2024-07-20《25th Anniversary (Live)》。**策展層擔心掛在別的實體上的《Shatt-e Sharab》(76c618ab、2022-03-15) 就在這份目錄裡**，**同一性確認、不是另一個團**。**本張是這份目錄裡最早的一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5fe4270c-aa67-4002-93e7-3278c13d4ed8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 1054829223**「O-Hum — Nahal-e Heyrat (Remastered)」得 **11 軌**、標示日期 **1999-01-01**、版權標示「℗ 1999 O-Hum Media Productions」。**十一軌長度 3:37／5:19／4:28／6:06／5:44／5:19／5:37／3:42／4:32／5:32／4:18，與資料庫端 Remastered 那筆逐軌 0 秒差、曲名全同。** 藝人目錄端（藝人頁 **126990002**，全 10 筆）逐筆掃過，**目錄裡除本張外還有《Hafez in Love - EP (Remastered)》《Aloodeh》《Shatt-e Sharab》《O Hum Dar Azadi》（兩個重複條目）《E-HUM: O-Hum Remixes (1999/2009)》《25th Anniversary (Live)》，與資料庫端那 7 個 release-group 幾乎一一對應**——**其中 2022-03-15《Shatt-e Sharab》在店面也掛在同一個藝人頁下，是同一性的第二個佐證**；目錄裡沒有第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=1054829223&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三個版本之間唯一真正的差別，是最後一軌在不在",
+   "十一軌的曲名有九軌帶著同一位詩人的句子"
+  ],
+  "sound": "十一軌全部留下長度，合計 54 分 14 秒。首軌〈Darvish〉3:37 起手，第二軌〈Ala Ya Ayyohal Saghi〉5:19 就把尺度定下來——此後十一軌裡有七軌落在 4:28 到 5:44 這一分十六秒的帶子裡，是相當平的一條線。與盤名同字的第四軌〈Nahal-e Heyrat〉6:06 是全張最長的一軌，也是唯一一支越過六分的曲子；第八軌〈Dide Darya Konam〉3:42 是全張第二短的一軌，與第四軌之間差了兩分二十四秒，是整張唯一一次明顯的落差。第五軌〈In Sham-e del Afrooz〉5:44、第七軌〈Eyb-e Rendan Makon!〉5:37、第十軌〈Afsoon〉5:32 三軌幾乎等長，把後半撐住；末軌〈Pir-e May Foroosh〉4:18 收尾。而這一軌正是三個版本之間唯一真正的分歧——另一個版本只有十軌，就是把它拿掉。",
+  "keyTracks": [
+   "Darvish",
+   "Nahal-e Heyrat",
+   "Pir-e May Foroosh"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，1999。** release-group first-release-date **1999**（只到年、無月日），**轄下三筆 release 有兩筆記為 1999、一筆完全沒有日期**。**串流版本 1054829223 的標示日期是 1999-01-01、版權標示 ℗ 1999 O-Hum Media Productions**，是第二個獨立年份來源、與資料庫端一致。⚠ **「1999-01-01」這個月日看起來是補齊用的預設值，不得當成實際發行日引用；資料庫端只到年。** ⚠ **串流那筆的版權標示是本張唯一出現過的廠牌名，但資料庫端三筆 release 的 label-info 全部是空的——那是版權標示、不是盤面廠牌，`label` 欄要維持不填。** **錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層兩處，另有兩處查證通過。**(1) ✅ **`label` 欄說「MB 三筆 release 皆未填 label-info」——成立**，三筆的 label-info 陣列確實都是空的。⚠ **串流端的版權標示寫的是「O-Hum Media Productions」，那是版權標示、不是盤面廠牌，`label` 欄不得拿它填。**｜(2) ✅ `curatorRisk` 要研究層核「MB 上另有一個 **ASCII 寫法的實體**掛著 76c618ab《Shatt-e Sharab》(2022-03-15)，與所釘的 5fe4270c 是否同一團」——**核完了，不是另一個實體**：**《Shatt-e Sharab》(2022-03-15) 就在 5fe4270c 名下的 7 個 release-group 裡**，而且**店面藝人目錄端（126990002）也把它掛在同一個藝人頁下**，兩個來源都指向同一個團。**這一格的疑慮解除。**｜(3) `curatorRisk` 說「三筆 release 的盤名有兩種寫法、軌數 11／10／11 不一致（裁定 251）」——**結論對，但漏了關鍵**：**三筆的曲目是同一組，差別只在末軌〈Pir-e May Foroosh〉在不在**（10 軌那筆就是 11 軌那筆去掉末軌），**不是載體造成的軌數差**；另外兩個 11 軌版之間逐軌差 0–8 秒。**行文一律用 Remastered 那筆的十一軌與長度，並寫明取的是哪一筆。**｜(4) `curatorWhy` 寫本張「把 **Hafez 的詩**配上樂團編制，是伊朗國內 1990 年代末樂團錄音**在網路上流通的最早一批**」——⚠ **後半查無來源、不得寫**；**前半也不得直接寫成「Hafez 的詩」**——**可寫的是曲名本身**（〈Ala Ya Ayyohal Saghi〉〈Dar Deyr-e Moghan〉〈Eyb-e Rendan Makon!〉〈Goftam Gham-e to Daram〉等），**至於這些句子出自誰，資料庫端沒有任何欄位背書，不得斷言。** **可安全寫的序數只有一種：目錄 7 個 release-group 裡本張是最早的一筆。**｜(5) **關係欄可寫的人名有兩個**：**Babak Riahipour 與 Shahram Sharbaf**（member of band 關係背書）。**除這兩位之外的成員名一律不得寫**（裁定 241／250）；實體的 **begin 記為 1999、與本張的 first-release-date 同年**，這是可寫的欄位事實。｜**串流採信 1054829223：11 軌逐位置比對（3:37／5:19／4:28／6:06／5:44／5:19／5:37／3:42／4:32／5:32／4:18）對資料庫端 Remastered 那筆的同一組數字，逐軌 0 秒差、曲名全中，採信；⚠ 串流上架的是 Remastered 版，行文寫時間要寫明取的是那一版。** 藝人目錄端（126990002，10 筆）逐筆掃過，**與資料庫端 7 個 release-group 幾乎一一對應**，未再撈到第二筆對得上本張的條目（⚠ 目錄裡《O Hum Dar Azadi》有兩個重複條目 1550856764 與 1633105447，與本張無關）。**回撈候選採信 1、駁回 0。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、載體、barcode、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **曲名裡的 Saghi、Moghan、Rendan、Darvish 這些字是曲名的一部分、可以照引，但不得由曲名推演任何宗教內容、詩作歸屬或審查相關的敘述。**｜**軌數與長度：三筆 release、Remastered 那筆 11 軌長度全備，可以寫時間，但要寫明取的是哪一筆。**"
+ },
+ {
+  "key": "desc2:Kiosk|Ordinary Man",
+  "artist": "Kiosk",
+  "album": "Ordinary Man",
+  "facts": [
+   {
+    "f": "release-group 6efdcb6f 的欄位：title「Ordinary Man」、artist-credit「Kiosk」、primary-type Album、**secondary-types 空**、first-release-date **2005**（只到年）。**RG 的 genre 欄三筆（各 1 票）：`alternative rock`、`blues rock`、`rock`；tag 欄八筆**，除上述三個之外還有 `persian`、`contemporary`，以及**三個人名標籤**（見 notes）。**轄下只有 1 筆 release**：bf39aea3，2005、country **XW**、Official、**CD 9 軌**、**barcode 837101066617**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6efdcb6f-7ceb-485a-a763-9cc1d2cb94fa?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌查得到，策展層說的「未填 label-info」不成立**：release bf39aea3 的 label-info 是 **Bamahang Productions**（廠牌實體 1175418e），catalog-number 欄空、barcode 837101066617。**串流端那筆的版權標示也是 Bamahang Productions，兩邊對得上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6efdcb6f-7ceb-485a-a763-9cc1d2cb94fa&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**9 軌全部有長度、合計 38:39**，⚠ **九軌的曲名全部是「波斯文轉寫 ＋ 括號裡的英譯」雙語形式**：1〈Roozmaregi (Dailiness)〉5:15、2〈Taraneh (Song)〉4:56、3〈Adameh Mamooli (Ordinary Man)〉4:24、4〈Taghseereh Man Bood (My Bad)〉4:55、5〈Zorbaye Malayeri (Zorba the Malayeri)〉**3:01**、6〈Sobh Shod (It's Morning)〉4:02、7〈Ey Dad Az Eshgh (What About Love)〉3:48、8〈Ghanooneh Kham Shode Blues (Bent Rules Blues)〉**5:12**、9〈Jaddeh Khoshbakhti (Road to Happiness)〉3:06。**盤名「Ordinary Man」就是第三軌那個括號裡的英譯，波斯文原名是 Adameh Mamooli。** 最長 5:15、最短 3:01。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6efdcb6f-7ceb-485a-a763-9cc1d2cb94fa&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 4a34038c：name「Kiosk」、**type Group**、country IR、area Iran、**begin 2003**、begin-area **Tehran**、end 欄空、**disambiguation 是波斯文「کیوسک」**、別名欄 0 筆。**關係欄只有一筆：member of band（backward）指向 Arash Sobhani**——**這一個名字有 relationship 背書、可以寫**；**其餘成員名在資料庫端只出現在 tag 欄（見 notes），不得寫**。",
+    "src": "https://musicbrainz.org/ws/2/artist/4a34038c-85b9-4666-b289-90fdf51e2875?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "目錄分頁全列 **11 個 release-group**（primary-type Album 11；其中 secondary-types 為空的純 Album 9、Live 2）。純 Album 依年份排：**2005 本張是最早的一筆**，其後 2007-04-02《Eshghe Sorat (amor de la velocidad)》、2008-11-14《Global Zoo》、2011-12-01《Natijeh e Mozakerat (Outcome of Negotiations)》、2013-02-01《Parallel Establishments》、2014《Zang Bezan Azhans (Call A Cab)》、2016-08-20、2021-08-20、2023-12-01。⚠ **實體的 begin 記為 2003、本張的 first-release-date 是 2005，兩者相差兩年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4a34038c-85b9-4666-b289-90fdf51e2875&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**店面第三種查法把這張找回來了（策展層判「us／gb／nl 各回 0 筆可對得上、de／fr 回 HTTP 403」）。** 直查 **collectionId 78578000「Kiosk — Adameh Mamooli (Ordinary Man)」**得 **9 軌**、標示日期 **2005-07-21**、版權標示「℗ 2005 Bamahang Productions」——**廠牌與資料庫端的 label-info 是同一家、年份也對得上**。**九軌長度 5:15／4:56／4:24／4:55／3:01／4:02／3:48／5:12／3:06，與資料庫端逐軌 0 秒差、曲名全同**（串流端把英譯的首字母改成小寫）。**店面上這張的盤名用的是波斯文原名 Adameh Mamooli、把英譯放在括號裡，與資料庫端 release-group 只取英譯的寫法相反——策展層用英文盤名查不到，就是因為這個。**",
+    "src": "https://itunes.apple.com/lookup?id=78578000&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "九軌的曲名全部是兩種語言並排寫的",
+   "盤名在一邊只留英譯、在另一邊只留原名，兩邊剛好相反"
+  ],
+  "sound": "九軌全部留下長度，合計 38 分 39 秒，而且九軌的曲名全部是同一種形式：波斯文轉寫在前、英譯在括號裡。首軌〈Roozmaregi (Dailiness)〉5:15 是全張最長的一軌，第二軌〈Taraneh (Song)〉4:56 貼著它走，到第三軌〈Adameh Mamooli (Ordinary Man)〉4:24——這一軌括號裡的英譯就是整張碟的盤名。第四軌〈Taghseereh Man Bood (My Bad)〉4:55 之後，第五軌〈Zorbaye Malayeri (Zorba the Malayeri)〉忽然縮到 3:01，是全張最短的一軌，與首軌差了兩分十四秒。後半〈Sobh Shod (It's Morning)〉4:02、〈Ey Dad Az Eshgh (What About Love)〉3:48 維持在四分以內，第八軌〈Ghanooneh Kham Shode Blues (Bent Rules Blues)〉5:12 是後半唯一一支越過五分的曲子、曲名裡直接寫著 Blues，末軌〈Jaddeh Khoshbakhti (Road to Happiness)〉3:06 收得極快。九軌裡有四軌在五分上下、五軌在三、四分之間，前後兩半的重量分得很清楚。",
+  "keyTracks": [
+   "Roozmaregi (Dailiness)",
+   "Adameh Mamooli (Ordinary Man)",
+   "Ghanooneh Kham Shode Blues (Bent Rules Blues)"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，2005。** release-group first-release-date **2005**（只到年、無月日），**轄下唯一的 release 也是 2005**（country XW、Official、CD 9 軌、Bamahang Productions、barcode 837101066617）。**第三種查法找回的串流版本 78578000 標示日期 2005-07-21、版權標示 ℗ 2005 Bamahang Productions**——**年份與資料庫端一致、廠牌也是同一家，是第二個獨立年份來源**。⚠ **月日 2005-07-21 只有串流端有，資料庫端只到年，不得當成資料庫值引用。** ⚠ **樂團實體的 begin 記為 2003、比本張的年份早兩年，那是團體成立年、不是錄音年，兩者不得混寫。錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層三處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Bamahang Productions（實體 1175418e）**、catno 欄空、**barcode 837101066617**，而且串流端的版權標示與它是同一家。`label` 欄要改寫成「Bamahang Productions，2005 XW Official CD 9 軌，barcode 837101066617」。｜(2) ⚠ **`curatorRisk` 的店面結論被推翻，而且原因很具體**：它寫「us／gb／nl 各回 0 筆可對得上、de／fr 回 HTTP 403」。**第三種查法直查 collectionId 78578000 得 9 軌、逐軌 0 秒差、版權標示的廠牌與 label-info 同一家——本張有串流來源。** **查不到的原因是盤名的方向相反**：**店面上寫的是波斯文原名「Adameh Mamooli」、把英譯放在括號裡，資料庫端的 release-group 只取英譯「Ordinary Man」**；用英文盤名查自然對不上。⚠ **這一條要記進下一批的查法：盤名有雙語形態時，兩個方向都要查。**｜(3) ⚠ **人名從嚴的一個具體案例**：**RG 的 tag 欄裡有三個人名標籤（`arash sobhani`、`ardalan payvar`、`shadi yousefian`）**，**但 tag 是使用者標籤、不是 artist-credit 也不是 relationship，依裁定 241／250 不算背書**。**三個名字裡只有 Arash Sobhani 同時出現在藝人實體的關係欄（member of band, backward），只有他可以寫**；**另外兩個名字一律不得寫**。｜(4) `curatorWhy` 說「與 O-Hum、127、Mohsen Namjoo 同屬 2000 年前後那條樂團線，**四張一起收才看得出這一段的形狀**」——策展判斷、簡介不得照抄。**可安全寫的序數只有一種：目錄 9 張純 Album 依年份排，本張是最早的一筆**；⚠ **樂團實體的 begin 是 2003、比本張早兩年，這一格也可以寫，但不得寫成「成軍兩年後的首作」以外的任何因果。**｜**串流採信 78578000：9 軌逐位置比對（5:15／4:56／4:24／4:55／3:01／4:02／3:48／5:12／3:06）對資料庫端的同一組數字，逐軌 0 秒差、曲序曲名全中（串流端把括號英譯的首字母改成小寫），採信。** 藝人目錄端未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、barcode、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **第八軌的曲名裡有「Bent Rules」這個英譯、樂團的 area 記為 Iran，兩者都是欄位事實、可以照引，但不得由曲名或欄位推演任何體制或審查相關的敘述。**｜**軌數與長度：唯一一筆 release、9 軌、長度全備，可以放心寫時間。**"
+ },
+ {
+  "key": "desc2:127|Khal Punk",
+  "artist": "127",
+  "album": "Khal Punk",
+  "facts": [
+   {
+    "f": "release-group bb6cd343 的欄位：title「Khal Punk」、artist-credit「127」、primary-type Album、**secondary-types 空**、first-release-date **2008**（只到年）、genre 與 tag 欄皆空。**轄下只有 1 筆 release**：bd90fcf0，2008、country **XW**、Official、**CD 17 軌**、**barcode 634479822995**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/bb6cd343-a3cf-3b3f-b478-337149e8edd0?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌查得到，策展層說的「未填 label-info」不成立**：release bd90fcf0 的 label-info 是 **Minor Key**（廠牌實體 1f1df08d），catalog-number 欄空、barcode 634479822995。**串流端那筆的版權標示是「Minor Key Records」，與它對得上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bb6cd343-a3cf-3b3f-b478-337149e8edd0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**17 軌全部有長度、合計 1:06:12**：1〈Nobar〉4:21、2〈Ostokhoon〉3:12、3〈Salvatore〉3:34、4〈Charand Goft〉3:13、5〈Doktor〉4:11、6〈Khosro-e Khooban〉3:37、7〈Tico Tico〉**2:03**、8〈Mellat-e Sarfaraz〉4:18、9〈No Jazz〉**6:10**、10〈Hamash Dood Bood (Khabari Nabood Az Kabab)〉3:53、11〈Man Kiam?〉4:06、12〈Shahr-e Laghzan〉4:21、13〈Azab-Haye Panbeh〉3:47、14〈Introduction to Khal-Punk〉**1:35**、15〈Salvatore〉3:34、16〈Doctor〉4:08、17〈No Jazz In the Army〉6:09。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bb6cd343-a3cf-3b3f-b478-337149e8edd0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **十七軌其實是「十三軌 ＋ 一段引子 ＋ 三軌重錄」的結構。** 第 14 軌〈Introduction to Khal-Punk〉只有 **1:35**，是全張最短的一軌；緊接在它後面的第 15、16、17 三軌，**與第 3、5、9 三軌是同一批曲子**——〈Salvatore〉3:34 對 3:34（**長度完全相同**）、〈Doctor〉4:08 對〈Doktor〉4:11（差 3 秒、拼法從 k 改成 c）、〈No Jazz In the Army〉6:09 對〈No Jazz〉6:10（差 1 秒、曲名加了三個字）。**串流端把這三軌明寫成 English Version**（見下一格）。**扣掉引子與這三軌，正片是 13 軌、合計 50:49。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bb6cd343-a3cf-3b3f-b478-337149e8edd0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 2fd207b3：name「127」、**type Group**、country IR、area Iran、**begin 2001**、begin-area **Tehran**、end 欄空、disambiguation「Iranian five piece band」、別名欄兩筆（「127」與波斯數字「١٢٧」）。**關係欄 0 筆——任何成員名都沒有 relationship 背書。** 目錄分頁全列 **5 個 release-group、5 個都是 secondary-types 為空的純 Album**：2005《Subterranean Tehran Blues》、2007-09-11《Magnitazdat (Songs of Terror & Hope)》、**2008 本張排第三**、2011-11-11《Pop Emergency》、2019-12-26《به راه خود》。",
+    "src": "https://musicbrainz.org/ws/2/artist/2fd207b3-0f88-4bab-88c0-e1373161b8a2?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 480902689**「127 — Khal Punk」得 **17 軌**、標示日期 **2008-01-01**、版權標示「℗ 2008 Minor Key Records」——**廠牌與資料庫端的 label-info 對得上**。**十七軌逐位置與資料庫端全部對得上、長度差 0–1 秒**；⚠ **串流端的第 15、16、17 三軌曲名明寫「Salvatore (English Version)」「Illuminating Doctor (Doktor English Version)」「No Jazz in the Army (No Jazz English Version)」**，**資料庫端把這個註記省掉了**——**重錄三軌的性質由串流端補上**。藝人目錄端（藝人頁 250991601，全 9 筆）逐筆掃過，目錄裡沒有第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=480902689&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十七軌裡有一軌一分三十五秒，只是替後面三軌開個場",
+   "同一支曲子在同一張碟上出現兩次，長度分毫不差"
+  ],
+  "sound": "十七軌全部留下長度，合計一小時六分十二秒，但這十七軌不是平鋪的十七首。前十三軌是正片，合計 50:49：〈Nobar〉4:21 起手，〈Ostokhoon〉3:12、〈Salvatore〉3:34、〈Charand Goft〉3:13 三軌連著壓在三分出頭，第七軌〈Tico Tico〉只有 2:03、是正片裡最短的一軌，第九軌〈No Jazz〉6:10 則是全張最長的一軌，兩者差了四分鐘以上。此後〈Hamash Dood Bood (Khabari Nabood Az Kabab)〉3:53、〈Man Kiam?〉4:06、〈Shahr-e Laghzan〉4:21、〈Azab-Haye Panbeh〉3:47 一路走回三分半到四分半的區間。真正特別的是第十四軌之後：〈Introduction to Khal-Punk〉只有 1:35，是全張最短的一軌，替後面三軌開個場——而那三軌〈Salvatore〉3:34、〈Doctor〉4:08、〈No Jazz In the Army〉6:09，正是第 3、5、9 軌的重錄。第一支的長度與前面那次分毫不差，另外兩支各差三秒與一秒。",
+  "keyTracks": [
+   "Tico Tico",
+   "No Jazz",
+   "Introduction to Khal-Punk"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，2008。** release-group first-release-date **2008**（只到年、無月日），**轄下唯一的 release 也是 2008**（country XW、Official、CD 17 軌、Minor Key、barcode 634479822995）。**串流版本 480902689 的標示日期是 2008-01-01、版權標示 ℗ 2008 Minor Key Records**，是第二個獨立年份來源、與資料庫端一致，廠牌也對得上。⚠ **「2008-01-01」這個月日看起來是補齊用的預設值，不得當成實際發行日引用；資料庫端只到年。** ⚠ **樂團實體的 begin 記為 2001、比本張早七年，那是團體成立年、不是錄音年。錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層兩處，另有一處要補。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Minor Key（實體 1f1df08d）**、catno 欄空、**barcode 634479822995**，串流端的版權標示「Minor Key Records」與它對得上。`label` 欄要改寫成「Minor Key，2008 XW Official CD 17 軌，barcode 634479822995」。｜(2) `curatorWhy` 說「127 是德黑蘭 2000 年代那批樂團裡**在國際上巡演最多的一支**……本張 17 軌，是他們名下 5 個 Album 裡**曲目最完整**的一張」——⚠ **「巡演最多」查無來源、不得寫**；**「曲目最完整」也不成立**：資料庫端只有本張的逐軌建了檔，另外四張的軌數在 release-group 層看不到，**沒有可比的基準**。**可安全寫的序數只有一種：目錄 5 張純 Album 依年份排，本張排第三。**｜(3) ⚠ **策展層完全沒看出十七軌的結構**：第 14 軌〈Introduction to Khal-Punk〉只有 **1:35**，而第 15、16、17 三軌與第 3、5、9 三軌是同一批曲子的重錄——**〈Salvatore〉兩次的長度完全相同（3:34 對 3:34）**、〈Doctor〉4:08 對〈Doktor〉4:11、〈No Jazz In the Army〉6:09 對〈No Jazz〉6:10。**資料庫端把註記省掉了，串流端則明寫成「English Version」**（Salvatore (English Version)／Illuminating Doctor (Doktor English Version)／No Jazz in the Army (No Jazz English Version)）——**兩個來源合起來才看得出這張碟是「十三軌正片 ＋ 一段引子 ＋ 三軌英文重錄」**。｜(4) **人名一律不得寫**：藝人實體的**關係欄 0 筆**，`disambiguation` 雖然寫著「Iranian five piece band」（五人團），**但五個人是誰在資料庫端完全沒有建檔**，**任何成員名一律不得寫**（裁定 241／250）。可寫的欄位只有 area Iran、begin 2001、begin-area Tehran，以及那句 disambiguation 裡的「五人」。｜**串流採信 480902689：17 軌逐位置比對（4:21／3:12／3:35／3:13／4:12／3:38／2:04／4:19／6:10／3:54／4:07／4:22／3:47／1:35／3:35／4:08／6:09）對資料庫端（4:21／3:12／3:34／3:13／4:11／3:37／2:03／4:18／6:10／3:53／4:06／4:21／3:47／1:35／3:34／4:08／6:09），逐軌差 0–1 秒、曲序全中，採信；⚠ 第 15、16、17 三軌的「English Version」註記只有串流端有，行文若要提重錄三軌，要寫明那個註記出自哪一邊。** 藝人目錄端（250991601，9 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、barcode、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **第八軌叫〈Mellat-e Sarfaraz〉、目錄裡另有一張副標寫著 Songs of Terror & Hope、還有一張的唯一 release 是 Bootleg——這三件事都是欄位事實，但一律不得拿來推演樂團的處境或體制評述。**｜**軌數與長度：唯一一筆 release、17 軌、長度全備，可以放心寫時間。**"
+ },
+ {
+  "key": "desc2:Mohsen Namjoo|Toranj",
+  "artist": "Mohsen Namjoo",
+  "album": "Toranj",
+  "facts": [
+   {
+    "f": "release-group 75083939 的欄位：title「Toranj」、artist-credit「Mohsen Namjoo」、primary-type Album、**secondary-types 空**、first-release-date **2007-09**（到月、無日）、genre 與 tag 欄皆空。**轄下只有 1 筆 release**：80f6a8a9，2007-09、country **IR**、Official、**CD 9 軌**、**barcode 6260605100534**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/75083939-4750-31ec-8fb3-645a28e4f64c?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌查得到，策展層說的「未填 label-info」不成立**：release 80f6a8a9 的 label-info 是 **Barbad Music**（廠牌實體 077eb345），catalog-number 欄空、barcode 6260605100534。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=75083939-4750-31ec-8fb3-645a28e4f64c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**9 軌全部有長度、合計 48:43**：1〈Toranj〉**6:35**、2〈Ro Sar Beneh〉5:29、3〈Talkhi Nakonad〉5:11、4〈Vava Leyli〉5:40、5〈Tarsam Ke...〉**3:37**、6〈Del Miravad〉4:44、7〈Jorah-baz〉5:19、8〈Dar Miane Jan〉5:47、9〈Zolf〉**6:21**。**與盤名同字的首軌 6:35 是全張最長的一軌，末軌 6:21 是第二長——最長與第二長分別站在頭尾兩端**；中間七軌裡有六軌落在 4:44 到 5:47 這一分三秒的窄帶裡，只有第五軌 3:37 掉出去，是全張最短的一軌。**逐軌 artist-credit 全部只有 Mohsen Namjoo 一人。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=75083939-4750-31ec-8fb3-645a28e4f64c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 2c310708：name「Mohsen Namjoo」、type Person、**country US、area United States**、begin **1976-03-04**、**begin-area Torbat-e Jam**、end 欄空、disambiguation「Iranian Singer」、別名欄兩筆（「Namjoo」「محسن نامجو」）。**關係欄 0 筆——任何合作者、樂手、製作人的名字都沒有 relationship 背書。**",
+    "src": "https://musicbrainz.org/ws/2/artist/2c310708-c4ed-4dec-9d10-ce08ed46be8b?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "⚠ **目錄分頁全列，本張不是他的第一張。** 名下 **26 個 release-group**（primary-type Album 17、Single 9；其中 secondary-types 為空的純 Album 12、Live 5）。純 Album 依年份排：**2005《Damavand》、2006-10-01《Gis》、2007-09 本張排第三**，其後 2008《JABR \"Geographical determinism\"》、2009《Oy》、2011-02-13《Useless Kisses》。**店面藝人目錄端也是同樣的順序**：《Damavand》2005-11-01（11 軌、℗ 2005）、《Gis》2006-10-01（7 軌、℗ 2006）、《Toranj》2007（9 軌）。**兩個來源都把本張排在第三。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2c310708-c4ed-4dec-9d10-ce08ed46be8b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑，**而且改了策展層採到的那一筆**）：藝人目錄端（藝人頁 **267858899**，全 50 筆）逐筆掃過，**目錄裡有兩個《Toranj》**。策展層採的 **1570098295**（2007-10-10、9 軌、℗ 2007 Raha Records）**逐軌比資料庫端短 3–4 秒**（6:31／5:26／5:08／5:36／3:33／4:40／5:16／5:43／6:22），**而且九軌的曲名後面都掛著一長串 feat. 名單**。另一筆 **1535707979**（2007-09-08、9 軌、℗ 2007 Mohsen Namjoo）直查得 **6:35／5:30／5:12／5:40／3:37／4:45／5:20／5:47／6:22**，**與資料庫端逐軌只差 0–1 秒**，曲名也沒有 feat. 名單，**而且標示日期 2007-09-08 與資料庫端的 2007-09 同月**——**這一筆才是對得上本張的版本。**",
+    "src": "https://itunes.apple.com/lookup?id=1535707979&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "全張最長與第二長的兩軌，分別站在第一軌與最後一軌",
+   "同一張碟在店面有兩個版本，其中一個每一軌都短了三四秒"
+  ],
+  "sound": "九軌全部留下長度，合計 48 分 43 秒，而重量壓在頭尾兩端。與盤名同字的首軌〈Toranj〉6:35 是全張最長的一軌，末軌〈Zolf〉6:21 是第二長——兩支超過六分的曲子分別站在第一軌與第九軌，把中間七軌夾住。中間那七軌裡有六軌落在 4:44 到 5:47 這一分三秒的窄帶裡：〈Ro Sar Beneh〉5:29、〈Talkhi Nakonad〉5:11、〈Vava Leyli〉5:40、〈Del Miravad〉4:44、〈Jorah-baz〉5:19、〈Dar Miane Jan〉5:47，六軌幾乎等長，是全張最平的一段。唯一掉出去的是第五軌〈Tarsam Ke...〉3:37，全張最短，比首軌少了將近三分鐘，剛好落在九軌的正中間，把那條平線切成前後兩截。首尾兩支長軌、中間六支等長、正中間一支短軌——整張的形狀對稱得很乾淨。",
+  "keyTracks": [
+   "Toranj",
+   "Tarsam Ke...",
+   "Zolf"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，2007。** release-group first-release-date **2007-09**（到月、無日），**轄下唯一的 release 也是 2007-09**（country IR、Official、CD 9 軌、Barbad Music、barcode 6260605100534）。**本層改採的串流版本 1535707979 標示日期 2007-09-08、版權標示 ℗ 2007**——**年月都與資料庫端相同**，是第二個獨立年份來源。⚠ **月日 09-08 只有串流端有，資料庫端只到月，不得當成資料庫值引用。** ⚠ **策展層採的那一筆 1570098295 標示日期是 2007-10-10、版權標示 ℗ 2007 Raha Records，年份雖然也是 2007，但月份與資料庫端不同、廠牌也與 label-info 的 Barbad Music 不是同一家**，是另一個上架版本。**錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層三處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Barbad Music（實體 077eb345）**、catno 欄空、**barcode 6260605100534**。`label` 欄要改寫成「Barbad Music，2007-09 IR Official CD 9 軌，barcode 6260605100534」。｜(2) ⚠ **最重的一處：`curatorWhy` 寫本張是「Mohsen Namjoo 2007 年的**首張正式專輯**」——不成立**。目錄分頁全列，**12 張純 Album 依年份排，本張排第三**：前面有 **2005《Damavand》與 2006-10-01《Gis》**；**店面藝人目錄端也是同樣的順序**（Damavand 2005-11-01、Gis 2006-10-01），**兩個來源都把本張排在第三**。「首張」「首作」一律不得寫。｜(3) ⚠ **串流那一筆要換**：策展層採的 **1570098295（2007-10-10、℗ Raha Records）逐軌比資料庫端短 3–4 秒**，而且九軌的曲名後面都掛著一長串 feat. 名單（MUD Band、Omid Nikbin、Shahryar Masrour、Kiarash Etemadseifi、Kaveh Etemadseifi、Mehdi Ebrahimi）。**同一份目錄裡的 1535707979（2007-09-08、℗ Mohsen Namjoo）逐軌只差 0–1 秒、曲名乾淨、月份也與資料庫端相同——主線要採這一筆。** ⚠ **而且那串 feat. 名單一律不得寫成編制**：那些名字**只出現在其中一個上架版本的曲名字串裡**，**資料庫端九軌的 artist-credit 全部只有 Mohsen Namjoo 一人、藝人實體的關係欄也是 0 筆**，依裁定 241／250 **沒有 artist-credit 或 relationship 背書，不得寫**。｜(4) `curatorRisk` 說「他名下 17 個 Album 有 5 個是 Live；依裁定 253 現場盤可收，但本批只取這一張錄音室作」——**數字覆核通過**（Live 5 筆：《Alaki》《13/8》《Voices From the East》《Axis of Solitude》《Solo Concert》）。｜**串流採信 1535707979：9 軌逐位置比對（6:35／5:30／5:12／5:40／3:37／4:45／5:20／5:47／6:22）對資料庫端（6:35／5:29／5:11／5:40／3:37／4:44／5:19／5:47／6:21），逐軌差 0–1 秒、曲序曲名全中，採信。** **駁回候選 1 筆**：1570098295（2007-10-10、℗ Raha Records）**逐軌短 3–4 秒、曲名帶 feat. 名單，是另一個上架版本，不採為主線**。**回撈候選採信 1、駁回 1。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、barcode、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **實體的 country 記為 US、begin-area 記為 Torbat-e Jam、而本張 release 的 country 記為 IR——三個欄位可以照欄位敘述，但不得把它們串成任何離境或返鄉的敘事。**｜**軌數與長度：唯一一筆 release、9 軌、長度全備，可以寫時間，但要寫明取的是資料庫端那筆（店面兩個版本的長度不同）。**"
+ },
+ {
+  "key": "desc2:Sussan Deyhim|Madman of God: Divine Love Songs of the Persian Sufi Masters",
+  "artist": "Sussan Deyhim",
+  "album": "Madman of God: Divine Love Songs of the Persian Sufi Masters",
+  "facts": [
+   {
+    "f": "release-group 4fec7c69 的欄位：title「Madman of God: Divine Love Songs of the Persian Sufi Masters」、artist-credit「Sussan Deyhim」、primary-type Album、**secondary-types 空**、first-release-date **2000**（只到年）、RG 的 genre／tag 欄各兩筆（各 1 票）：`electronic`、`folk`。**轄下只有 1 筆 release**：607be1d0，2000、country **BE**、Official、**CD 8 軌**、**barcode 5410377000803**、**packaging Digipak**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4fec7c69-61e1-39fc-bb0b-135a62fbf3e2?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌與盤面編號都查得到，策展層說的「未填 label-info」不成立**：release 607be1d0 的 label-info 是 **CramWorld**（廠牌實體 4ed5cf8d）、**catalog-number「craw 22」**，barcode 5410377000803、packaging Digipak。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4fec7c69-61e1-39fc-bb0b-135a62fbf3e2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**8 軌全部有長度、合計 47:04**，⚠ **八軌的曲名全部是「原名 ＋ 括號裡的英文副題」雙語形式**：1〈Gereyley (Nocturnal Dialogue)〉5:57、2〈The Candle & the Moth〉**5:09**、3〈Daylaman (Inextricable)〉6:21、4〈Meykhaneh (Wine Cave)〉5:39、5〈Bade Saba (The Wind of Saba)〉**6:23**、6〈Negara (Mesmerized Mirror)〉5:50、7〈Hamcho Farhad (Our Tears, Our Wine, Our Sight)〉5:22、8〈Navai (Savage Bird)〉**6:23**。⚠ **八軌全部落在 5:09 到 6:23 這一分十四秒的帶子裡——最長與最短只差七十四秒，是本組二十一張裡長度分布最窄的一張**；而且第五軌與第八軌的長度**完全相同**（6:23）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4fec7c69-61e1-39fc-bb0b-135a62fbf3e2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 738f1b1b：name「Sussan Deyhim」、type Person、**country US、area United States**、begin **1958-12-14**、**begin-area Tehran**、end 欄空、**disambiguation 空白**、**關係欄 0 筆**。**別名欄三筆，全部是同一個名字的拼法變體**：「Susan Deyhim」「Sussan Deihim」「Susssan Deyhim」。",
+    "src": "https://musicbrainz.org/ws/2/artist/738f1b1b-ff9c-4156-b509-95060fe47b52?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "目錄分頁全列 **14 個 release-group**（primary-type Album 12、EP 1、Single 1；其中 secondary-types 為空的純 Album 9）。純 Album 依年份排：**1986《Desert Equations: Azax Attra》、1997《Majoun》、2000 本張與《Turbulent》**、其後 2011-07-19《City of Leaves》、2020-02-21《La Belle et La Bete》。⚠ **策展層說「三個 first-release-date 全是 2001-01-01」——實數是四個**：《Logic Of The Birds》《Soliloquy》《Out Of Faze》三張純 Album **再加上 EP《Possessed》**，四筆同日。**店面那邊同一天也出現五次**（前四筆加上《Trouble Man - EP》，全部 ℗ 2001 Venus Rising）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=738f1b1b-ff9c-4156-b509-95060fe47b52&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 1760204667**「Sussan Deyhim — Madman of God」得 **8 軌**、標示日期 **1996-03-14**、版權標示「**℗ 2000 Crammed Discs**」。**八軌長度 5:57／5:09／6:21／5:39／6:23／5:50／5:22／6:23，與資料庫端逐軌 0 秒差**；曲名逐位置對得上，串流端**每一軌後面都加了「(Original)」**，另有兩處寫法差（第二軌串流作〈Candle〉、第七軌串流作〈Hamcho Farad〉少一個 h）。⚠ **那筆的標示日期 1996-03-14 與它自己的版權標示 2000 互相矛盾。** 藝人目錄端（藝人頁 **238608**，全 14 筆）逐筆掃過，另可見 1586684317《Desert Equations: Azax Attra (Made to Measure, Vol. 8)》（1986-01-01、11 軌、℗ 1986 Crammed Discs）與 551411887《Shy Angels》（2002、℗ 2002 Crammed Discs），**與資料庫端的廠牌線對得上**；目錄裡沒有第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=1760204667&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌全部關在七十四秒寬的帶子裡，其中兩軌分毫不差",
+   "同一筆條目上的年份與版權標示，自己差了四年"
+  ],
+  "sound": "八軌全部留下長度，合計 47 分 04 秒，而且是本組二十一張裡長度分布最窄的一張：八軌全部落在 5:09 到 6:23 這一分十四秒的帶子裡，最長與最短只差七十四秒。首軌〈Gereyley (Nocturnal Dialogue)〉5:57 起手，第二軌〈The Candle & the Moth〉5:09 是全張最短、也是唯一一支不到五分十秒的曲子；第三軌〈Daylaman (Inextricable)〉6:21 立刻把線拉到上緣。第四軌〈Meykhaneh (Wine Cave)〉5:39 回到中段，第五軌〈Bade Saba (The Wind of Saba)〉6:23 與末軌〈Navai (Savage Bird)〉6:23 的長度分毫不差——全張最長的兩軌是同一個數字，一支在中間、一支在最後。第六軌〈Negara (Mesmerized Mirror)〉5:50 與第七軌〈Hamcho Farhad (Our Tears, Our Wine, Our Sight)〉5:22 把後半墊住。八軌的曲名全部是原名加括號英文副題的雙語形式，長度也幾乎一樣，整張像被裁成同一個尺寸的八塊。",
+  "keyTracks": [
+   "Gereyley (Nocturnal Dialogue)",
+   "The Candle & the Moth",
+   "Navai (Savage Bird)"
+  ],
+  "status": "full",
+  "yearVerified": "**資料庫端一致，2000；串流端那一筆自己前後矛盾，不採。** release-group first-release-date **2000**（只到年、無月日），**轄下唯一的 release 也是 2000**（country BE、Official、CD 8 軌、CramWorld「craw 22」、barcode 5410377000803、Digipak）。**串流版本 1760204667 的版權標示是「℗ 2000 Crammed Discs」——與資料庫端的年份一致、廠牌線也對得上**（CramWorld 與 Crammed Discs 在店面端同一個目錄裡並存）；⚠ **但同一筆的標示日期卻是 1996-03-14，與它自己的版權標示差了四年**。**這種內部矛盾的日期不採為年份來源，也不得寫進卡片**；可用的是它的版權標示那一半。**結論：2000 由資料庫端與串流端的版權標示各支持一次，年份成立；1996 這個數字一律不寫。錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層三處，另有一處數字要更正。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **CramWorld（實體 4ed5cf8d）、catalog-number「craw 22」**、barcode 5410377000803、**packaging Digipak**（後兩格策展層也沒抓到）。`label` 欄要改寫成「CramWorld craw 22，2000 BE Official CD 8 軌，barcode 5410377000803、Digipak」。｜(2) `curatorWhy` 寫本張「把波斯蘇非詩的唱段放進**電子處理的編制**……她是 b 組**唯一一位以電子聲響為主要編制**的掛名」——⚠ **兩句都不得寫**。編制在資料庫端**完全沒有建檔**（藝人關係欄 0 筆、逐軌 artist-credit 只有她一人）；**唯一沾得上邊的是 RG 的 genre／tag 欄各有一筆 1 票的 `electronic` 與 `folk`——那是使用者標籤、票數 1，不足以當成編制的依據**（裁定 241／250）。**「蘇非詩」同理不得斷言**；**可寫的是曲名本身**（八軌的原名與括號裡的英文副題）與盤名的副標。｜(3) `curatorRisk` 說她的 **disambiguation 空白**、不得背書本名——**成立、要照做**；⚠ **而且更嚴**：她的**別名欄三筆全部是同一個名字的拼法變體**（Susan Deyhim／Sussan Deihim／Susssan Deyhim），**沒有任何本名或其他身分資訊**，**關係欄也是 0 筆**。可寫的欄位只有 country US／area United States／begin 1958-12-14／begin-area Tehran 四個，**任何合作者、樂手、製作人的名字一律不得寫**。｜(4) `curatorRisk` 說「她名下 14 個 release-group 有**三個** first-release-date 全是 2001-01-01」——**實數是四個**（三張純 Album 加上 EP《Possessed》），**店面那邊同一天更是出現五次**（多一筆《Trouble Man - EP》，全部 ℗ 2001 Venus Rising）。**這個批次日期的形狀比策展層寫的更明顯，但它落在別的碟上、與本張的 2000 無關。** **可安全寫的序數只有一種：9 張純 Album 依年份排，本張排第三**（前兩是 1986《Desert Equations: Azax Attra》、1997《Majoun》）。｜**串流採信 1760204667：8 軌逐位置比對（5:57／5:09／6:21／5:39／6:23／5:50／5:22／6:23）對資料庫端的同一組數字，逐軌 0 秒差、曲序全中，採信；⚠ 串流端每一軌後面都加了「(Original)」，另有兩處寫法差（第二軌作〈Candle〉、第七軌作〈Hamcho Farad〉少一個 h），行文取資料庫端的曲名。⚠ 串流盤名沒有副標「Divine Love Songs of the Persian Sufi Masters」，資料庫端有——這是策展層要辨的那一格，覆核結果是同一張（8 軌逐軌 0 秒差），只是店面把副標省了。** 藝人目錄端（238608，14 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`，本張是全組最需要收住的一張）**：**盤名的副標裡有「Persian Sufi Masters」、曲名裡有 Meykhaneh、Bade Saba、Navai 這些字——它們是盤名與曲名的一部分、可以照引，但一律不得展開任何宗教內容、教派、修行或神祕主義的說明或評價**，也不得寫政治立場、對體制的價值判斷，或把「流亡」「被禁」寫成敘事。**她的 country 記為 US、begin-area 記為 Tehran，只能照欄位敘述。**｜**軌數與長度：唯一一筆 release、8 軌、長度全備，可以放心寫時間。**"
  }
 ]
