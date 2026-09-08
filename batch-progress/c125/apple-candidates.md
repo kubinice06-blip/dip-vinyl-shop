@@ -33,3 +33,17 @@
 ## Adriano Correia de Oliveira《Gente de Aqui e de Agora》1971 — **目錄裡找不到**
 
 ## Paulo de Carvalho《Paulo》1974 — **目錄裡找不到**
+
+## Vitorino《Semear Salsa Ao Reguinho》1975 — **目錄裡找不到**
+
+## Grupo de Acção Cultural《Pois Canté !!》1975 — **目錄裡找不到**
+
+## Fausto《Madrugada dos Trapeiros》1977 — **目錄裡找不到**
+
+## Trovante《Chão Nosso》1977 — **目錄裡找不到**
+
+## Carlos do Carmo《Um homem na cidade》1977
+- `6805133149` es｜《Os Putos - Single》1978｜2 軌｜依據：年份
+- `6798724277` es｜《Lisboa Menina E Moça - Single》1976｜2 軌｜依據：年份
+
+## Jorge Palma《Qualquer Coisa Pá Música》1979 — **目錄裡找不到**
