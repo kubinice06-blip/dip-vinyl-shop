@@ -30,7 +30,11 @@
     唱盤擴大機挪到 x 201–252、右喇叭挪到 x 267–302。
     **老闆站在左喇叭與唱盤之間的空檔（cx≈174、寬 55）**，頭肩才露得出來。
   · 右邊挖寶櫃 x 299–448、y 255–396。
-  · 前方 x 0–245 / y 330–492 淨空留給三人同框與老闆的動線。
+  · **前方右半是折疊長桌**（邏輯 x 247–460、桌面 y 371、桌腳落地 y 467）：
+    桌上兩個木箱、桌下三個黑色塑膠籃，全部在 `shop2-fg-front`。
+    桌子把右前方整片佔滿，所以**老闆翻片要站在桌子左端**（cx≈205–230、腳底 420–440），
+    站到桌子後面會被桌面與木箱整個蓋住。
+  · 前方 x 0–245 / y 400–492 淨空留給三人同框與老闆的動線。
   · **前景分兩層**：`shop2-fg-back`（櫃檯／喇叭／右邊挖寶櫃，下緣 y≤400）與
     `shop2-fg-front`（挖寶櫃／紙箱，下緣 y≥402）。小人依腳底 y 夾在兩層之間，
     才能「站在櫃檯前面、但在挖寶櫃後面」。
@@ -92,8 +96,7 @@ LAYOUT = {
     'gear':    (805, 1098, 1.0, False),    # 唱盤＋擴大機往右挪 57px
     'spkR':    (1069, 1052, 1.0, False),   # 右喇叭往右挪 53px，貼到檯面右端
     'rbins':   None,                       # 右邊那組貼右牆，不動
-    'crate':   (1024, 1618, 0.52, True),   # 縮小挪到中右前「最下面」：上緣要低於 y=405，
-                                           #  老闆到右邊唱片區翻找時才不會整個被擋住
+    'crate':   'drop',                     # 前方改放折疊長桌＋木箱＋黑籃（見 PROPS）
     'box1':    'drop',                     # 參考圖裡的紙箱沒有底，改用 PROPS 裡另外畫好的
     'box2':    'drop',                     # 兩個紙箱疊在一起太擠，收掉一個
 }
@@ -198,9 +201,19 @@ def soft_shadow(img, x, y, w, h):
 # ── 外掛道具：不是從參考圖描出來的，是店主另外產、已經去背的完整物件 ──────
 #   （參考圖裡的紙箱下緣被原圖切掉、沒有底，補出來的總是不對；改用畫好的整個箱子）
 #   name: (檔案, 目的地左上角 x, y, 縮放, 疊在哪一層, 要不要影子)   ── 全部原圖座標
+#   name: (檔案, x, y, 縮放, 圖層, 影子, 色調)   ── 色調用來壓成店裡的暖暗光
+#   **順序＝合成順序**：桌下的先畫，桌子後畫（桌腳才會蓋在前面），桌上的最後畫。
+_T = (990, 1352)                    # 桌子左上角
+_TOP, _LEG = _T[1] + 132, _T[1] + 516     # 桌面前緣 / 桌腳落地
+_DIM, _LIT = (0.76, 0.74, 0.72), (0.94, 0.92, 0.90)
 PROPS = {
-    # 上緣同樣要低於 y≈410（邏輯），否則會擋住在右邊唱片區前面翻找的老闆
-    'boxA': ('art/props/box-a.png', 1400, 1644, 0.71, 'front', True),
+    'crateB1': ('art/props/crate-black.png',   1052, _LEG - 236, 1.0, 'front', True, _DIM),
+    'crateB2': ('art/props/crate-black-2.png', 1307, _LEG - 236, 1.0, 'front', True, _DIM),
+    'crateB3': ('art/props/crate-black-3.png', 1562, _LEG - 236, 1.0, 'front', True, _DIM),
+    'table':   ('art/props/table.png',         _T[0], _T[1],     1.0, 'front', True,
+                (0.84, 0.80, 0.76)),
+    'crateW1': ('art/props/crate-wood.png',    1024, _TOP - 240, 1.0, 'front', False, _LIT),
+    'crateW2': ('art/props/crate-wood-2.png',  1404, _TOP - 240, 1.0, 'front', False, _LIT),
 }
 
 
@@ -234,14 +247,19 @@ def main():
             soft_shadow(fg, dx + pw * .04, dy + ph * .80, pw * .92, ph * .26)
         fg.alpha_composite(piece, (dx, dy))
 
-    for name, (path, dx, dy, sc, layer, shadow) in PROPS.items():   # 外掛道具
+    for name, (path, dx, dy, sc, layer, shadow, tint) in PROPS.items():   # 外掛道具
         prop = Image.open(os.path.join(ROOT, path)).convert('RGBA')
         pw, ph = int(prop.width * sc), int(prop.height * sc)
-        prop = prop.resize((pw, ph), Image.LANCZOS)
+        if sc != 1.0:
+            prop = prop.resize((pw, ph), Image.LANCZOS)
+        if tint:
+            a = np.asarray(prop).astype(np.float32)
+            a[..., :3] *= np.array(tint, np.float32)
+            prop = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8), 'RGBA')
         if dy + ph > H:
             print(f'  ⚠ {name} 會超出畫布下緣 {dy + ph - H}px')
         if shadow:
-            soft_shadow(layers[layer], dx + pw * .06, dy + ph * .86, pw * .88, ph * .20)
+            soft_shadow(layers[layer], dx + pw * .06, dy + ph * .88, pw * .88, ph * .16)
         layers[layer].alpha_composite(prop, (dx, dy))
         print(f'  道具 {name}: {pw}×{ph} @ ({dx},{dy}) → 邏輯 x {dx//SCALE}–{(dx+pw)//SCALE}'
               f'、y {dy//SCALE}–{(dy+ph)//SCALE}')

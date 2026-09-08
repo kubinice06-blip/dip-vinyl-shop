@@ -29,7 +29,7 @@
     background:#3a2a18 url('art/shop2-bg.jpg') center center / 100% 100% no-repeat;}
   .rpg-fg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
   .rpg-fg.back{z-index:6;}          /* 櫃檯＋喇叭＋右邊挖寶櫃：下緣 y≤400 */
-  .rpg-fg.front{z-index:20;}        /* 挖寶櫃＋紙箱：下緣 y≥402 */
+  .rpg-fg.front{z-index:20;}        /* 折疊長桌＋桌上木箱＋桌下黑籃：下緣 y≥402 */
   .rpg-door{position:absolute;z-index:2;pointer-events:none;
     left:2.68%;top:31.50%;width:17.14%;}
   .rpg-spr{position:absolute;width:17.41%;z-index:4;line-height:0;
@@ -63,9 +63,7 @@
 <div class="wrap">
   <h1>唱片行舞台 · 新配置預覽</h1>
   <div class="note">
-背景與家具是<b>描</b>店主提供的參考圖（<code>art/ref-shop.jpg</code>）而來：把家具從圖上挖掉、補回牆與地板當背景層，挖下來的家具當前景層（<code>scripts/trace-shop-art.py</code>）。
-    <b>櫃檯／挖寶櫃／紙箱是獨立的前景層、蓋在小人上面</b>，所以老闆站櫃檯後面會被檯身擋住，
-    要走出來只能先往左移出櫃檯再往前。門板另外三格，客人推門會開。
+背景與牆邊家具是<b>描</b>店主提供的參考圖（<code>art/ref-shop.jpg</code>）而來；前方的折疊長桌、桌上木箱、桌下黑色塑膠籃是另外畫的道具（<code>scripts/make-table.py</code>、<code>make-crates.py</code>），箱子裡放的是卡池的真封面。前景分兩層，小人依腳底深度夾在中間。
   </div>
   <div class="ctl">
     <button class="on" data-s="0">① 推門進來</button>
@@ -109,17 +107,18 @@
   // 檯面器材：左喇叭挪到 105–146、唱盤 201–252、右喇叭 267–302 → 老闆站空檔 cx 174（寬 55）
   const POS = {
     p:{ door:[48,408],        // 剛推門進來，站在門口
-        browse:[190,455],     // 自己逛（離櫃檯夠遠，不會疊到）
+        browse:[136,458],     // 自己逛（離櫃檯與長桌都夠遠）
         pay:[168,430],        // 結帳：站在櫃檯前（腳底 > 402 → 蓋在櫃檯上面）
         leaving:[132,418],    // 準備離開，往門口走
         atdoor:[128,420] },   // 在門口撞見男子（跟男子拉開，中間留給老闆）
     o:{ counter:[174,325],    // 櫃檯後面（腳底貼著牆，被檯面擋到胸口）
         aisle:[72,345],       // 繞出櫃檯左端
-        // 右邊唱片區翻找。前景前層（挖寶櫃／紙箱）上緣壓到 y≈405 以下，
-        // 所以腳底 ≤404 站在這一帶都不會被擋住。
-        dig1:[316,408],       // 腳底一定要 ≥402，否則會掉到前景後層之後、整個被櫃子擋住
-        dig2:[382,406],
-        dig3:[346,412],
+        // 翻片：折疊長桌（邏輯 x 247–460）把右前方整片佔滿，站到桌子後面會被
+        // 桌面與木箱整個蓋住，所以老闆是**站在桌子左端**伸手翻。
+        // 腳底一定要 ≥402，否則會掉到前景後層之後、被櫃子擋住。
+        dig1:[196,432],
+        dig2:[228,420],
+        dig3:[210,440],
         back:[150,424],       // 拿著四張走回櫃檯
         between:[85,452] },   // 站到兩人中間緩頰（腳底最前面 → 蓋在兩人上面）
     f:{ outside:[42,336], door:[42,344], in:[42,396] },
@@ -174,7 +173,7 @@ document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES
         $('anger').classList.remove('on'); $('door').src='art/shop2-door-0.png';
         await wait(300); $('notes').classList.add('on');
       } },
-    { name:'③ 老闆去挖片', who:'', text:'老闆不發一語，走出櫃檯，在右邊那排唱片裡翻翻找找。',
+    { name:'③ 老闆去挖片', who:'', text:'老闆不發一語，走出櫃檯，在那張長桌上的木箱裡翻翻找找。',
       run: async ()=>{
         put('p','p','browse',true); $('f').classList.add('hide');
         $('notes').classList.remove('on'); $('anger').classList.remove('on');
