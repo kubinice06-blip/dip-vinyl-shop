@@ -85,7 +85,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1983。release-group first-release-date **1983-01-01**。**裁定 220 的「日期掛在數位那筆」形狀在本張成立**：帶 1983-01-01 完整日期的是 XW 數位那筆，實體首版是 1983 US 的 7 吋（只有年份、無月日）。`year` 取 1983。**再發年不蓋原盤年**：1994 US CD（VR019 CD）是十一年後的版本。串流側採信的 1558948656 releaseDate 標 **1983-01-01**，與原盤同年。**同名先行單曲：無**——串流側那筆《Cause for Alarm - Single》(804864429) ℗ 2014，**不是 1983 年的先行單曲，也不是本團的錄音，已駁回**。",
-  "notes": "**擋下策展層六處（本批最重的一張）。**(1) `curatorRisk` 與 `label` 欄都寫「**MB label-info 未填廠牌**」——**錯**。實體欄位填的是 `[no label]`／catno `[none]`，那是資料庫用來標「**明確沒有廠牌**」的專用實體，與「欄位沒填」是兩件事。行文可以寫「這張沒有廠牌」，**不能寫「資料不全」**。｜(2) `exceptionReason` 寫「**後來被 Another Planet 併成 CD 流通**」——**實體欄位查無 Another Planet**，1994 那張 CD 與 1983 數位版掛的都是 **Victory Records（1994 CD 的 catno 是 VR019 CD）**。**「Another Planet」不得寫，要改成 Victory Records。**｜(3) `curatorRisk` 採信 collectionId **804864429** 為本張的串流對應——**駁回**：那是一張 **1 軌** 的單曲、℗ **2014** Spanky & Fleck Records，曲名〈Cause for Alarm〉2:14 不在本張八軌之內。**正確的是 1558948656。串流採信 1558948656：九軌逐位置比對（0:48／1:05／1:08／1:32／0:46／0:57／1:08／1:02／2:10）與九軌數位版一秒不差，採信——但它是 9 軌版，不是本張 8 軌原盤的證據，第 9 軌〈Time Will Tell〉不在 7 吋上。**｜(4) `exceptionReason` 寫「是 **Lower East Side** 那一批團在有廠牌之前自己壓片的實證」——**區級地名不得寫**：藝人實體的 area 是 New York、**begin-area 記的是 West Berlin**，實體欄位查不到 Lower East Side。「有廠牌之前自己壓片」這半句反而站得住（`[no label]`），可以留。｜(5) `curatorWhy`／`exceptionReason` 寫「與《United Blood》**同年**、同一個場景」——同年成立（都是 1983），**但「同一個場景」是跨藝人敘述，不得寫**。｜(6) `curatorWhy` 說本張是「1983 年那一層的**第二塊拼圖**」——目錄裡 1983-01-01 同時有本張與《Cause for Alarm / Warzone》兩筆，**序數無從數起，不得寫任何「第一／第二張」**。｜**人名從嚴**：藝人實體 disambiguation 空、廠牌實體無人名，**不得寫個別成員的名字**；**West Berlin 這個 begin-area 值明顯可疑，也不得拿來寫團的出身地。**｜**§5.5 舉證**：三個網址實測皆回 200，但兩個維基頁（`New_York_hardcore`、`Hardcore_punk`）是場景通論頁，**只泛提本團名而沒有支持 `exceptionReason` 講的那件事（自費壓片、Another Planet）**，**舉證偏弱，建議換成本盤或廠牌層級的來源。**"
+  "notes": "**擋下策展層六處（本批最重的一張）。**(1) `curatorRisk` 與 `label` 欄都寫「**MB label-info 未填廠牌**」——**錯**。實體欄位填的是 `[no label]`／catno `[none]`，那是資料庫用來標「**明確沒有廠牌**」的專用實體，與「欄位沒填」是兩件事。行文可以寫「這張沒有廠牌」，**不能寫「資料不全」**。｜(2) `exceptionReason` 寫「**後來被 Another Planet 併成 CD 流通**」——**實體欄位查無 Another Planet**，1994 那張 CD 與 1983 數位版掛的都是 **Victory Records（1994 CD 的 catno 是 VR019 CD）**。**「Another Planet」不得寫，要改成 Victory Records。**｜(3) `curatorRisk` 採信 collectionId **804864429** 為本張的串流對應——**駁回**：那是一張 **1 軌** 的單曲、℗ **2014** Spanky & Fleck Records，曲名〈Cause for Alarm〉2:14 不在本張八軌之內。**正確的是 1558948656。串流採信 1558948656：九軌逐位置比對（0:48／1:05／1:08／1:32／0:46／0:57／1:08／1:02／2:10）與九軌數位版一秒不差，採信——但它是 9 軌版，不是本張 8 軌原盤的證據，第 9 軌〈Time Will Tell〉不在 7 吋上。**｜(4) `exceptionReason` 寫「是 **Lower East Side** 那一批團在有廠牌之前自己壓片的實證」——**區級地名不得寫**：藝人實體的 area 是 New York、**begin-area 記的是 West Berlin**，實體欄位查不到 Lower East Side。「有廠牌之前自己壓片」這半句反而站得住（`[no label]`），可以留。｜(5) `curatorWhy`／`exceptionReason` 寫「與《United Blood》**同年**、同一個場景」——同年成立（都是 1983），**但「同一個場景」是跨藝人敘述，不得寫**。｜(6) `curatorWhy` 說本張是「1983 年那一層的**第二塊拼圖**」——目錄裡 1983-01-01 同時有本張與《Cause for Alarm / Warzone》兩筆，**序數無從數起，不得寫任何「第一／第二張」**。｜**人名從嚴**：藝人實體 disambiguation 空、廠牌實體無人名，**不得寫個別成員的名字**；**West Berlin 這個 begin-area 值明顯可疑，也不得拿來寫團的出身地。**｜**§5.5 舉證**：三個網址實測皆回 200，但兩個舉證頁（`New_York_hardcore`、`Hardcore_punk`）是場景通論頁，**只泛提本團名而沒有支持 `exceptionReason` 講的那件事（自費壓片、Another Planet）**，**舉證偏弱，建議換成本盤或廠牌層級的來源。**"
  },
  {
   "key": "desc2:Sick of It All|Sick of It All",
@@ -213,7 +213,7 @@
   ],
   "status": "partial",
   "yearVerified": "一致，1988。release-group first-release-date **1988**，轄下唯一 release 就是這一筆（1988 US Official Cassette、7 軌）。**沒有再發**（本 release-group 名下只有一筆），`year` 取 1988 無爭議。藝人實體 life-span **1988～1989**，與盤的年份相符。**串流側那筆 1441032966 標 2018-11-23、℗ 2018，是三十年後的上架，`year` 絕不取 2018。**策展層存疑的 1818931687 標 **2025**，已駁回，**與年份無關。同名先行單曲：無。**",
-  "notes": "**擋下策展層三處，並補上一筆策展層與回撈候選表都漏掉的串流對應。**(1) `curatorRisk` 說「Apple：**gb 店命中 collectionId 1818931687**……身分存疑，不採為對應」——**方向對、結論對，但理由要換**：那筆的四軌是〈September〉〈Tell Me Something Good〉〈Nothing Compares 2 U〉〈Proud Mary〉，**與本張七軌無一相同**，是「曲目對不上」而不只是「年份差 37 年」。｜(2) **策展層與回撈候選表都判本張無串流對應——不成立。**改以藝人實體 disambiguation 明寫的另一個團名反查，**命中 1441032966。串流採信 1441032966：七軌曲名與曲序逐位置比對全中（Wall of Hate／Telltale／New Release／Only the Strong Survive／My Reason／No More Mr. Nice Guy／The Lines Are Drawn），軌數 7 對 7，全軌有試聽；因本張實體欄位無任何軌長，無法做長度比對，採信。⚠ 它掛的是樂團後來的名字、2018 年才上架、每軌都標 demo 版本——可以當試聽來源，但不是 1988 年原盤本身的證據。**｜(3) `exceptionReason` 寫「1988 年的卡帶 demo **在紐約硬蕊的翻錄鏈裡流通多年**，才有後來的《Brightside》」——**「翻錄鏈流通多年」查無來源，不得寫**；**《Brightside》掛在另一個藝人實體之下，本張的目錄裡查不到它，也不得寫。**可以寫的是實體 disambiguation 記的「aka」關係本身。｜(4) `curatorWhy` 已依 c-120 第 3 條寫明「收的是唯一收得進來的碟，不是最重要的錄音」——**這一處正確，予以確認。⚠ 行文絕不得寫成「代表作」或「最重要的一張」**，只能寫「名下唯一的一筆」（藝人目錄分頁確認 release-group 數為 1）。｜**人名從嚴**：藝人實體無成員資料、無廠牌實體，**不得寫個別成員的名字**；begin-area 只到 New York，**不得寫任何區級地名。**｜**軌數與長度**：**7 軌，且原盤一軌長度都沒有，不得寫任何「幾分幾秒」**；串流那版的長度只能在明說「是後來的上架版本」時引用。｜**§5.5 舉證**：兩個網址皆回 200，但 `Raw_Deal_(band)` **實際跳轉到另一個團名的條目**（頁面存在、支持 aka 關係，但網址與標題不一致，建議改成跳轉後的正式網址）；`New_York_hardcore` 那頁**通篇查不到本團名，不支持 `exceptionReason`，建議更換**。｜**素材量**：可寫的事實格只有「唯一 release／7 軌曲名／無廠牌無 catno／無軌長／目錄唯一／串流採信」六格，**無長度、無廠牌、無再發可寫，標 partial（只夠 120–180 字）。**"
+  "notes": "**擋下策展層三處，並補上一筆策展層與回撈候選表都漏掉的串流對應。**(1) `curatorRisk` 說「串流側：**gb 店命中 collectionId 1818931687**……身分存疑，不採為對應」——**方向對、結論對，但理由要換**：那筆的四軌是〈September〉〈Tell Me Something Good〉〈Nothing Compares 2 U〉〈Proud Mary〉，**與本張七軌無一相同**，是「曲目對不上」而不只是「年份差 37 年」。｜(2) **策展層與回撈候選表都判本張無串流對應——不成立。**改以藝人實體 disambiguation 明寫的另一個團名反查，**命中 1441032966。串流採信 1441032966：七軌曲名與曲序逐位置比對全中（Wall of Hate／Telltale／New Release／Only the Strong Survive／My Reason／No More Mr. Nice Guy／The Lines Are Drawn），軌數 7 對 7，全軌有試聽；因本張實體欄位無任何軌長，無法做長度比對，採信。⚠ 它掛的是樂團後來的名字、2018 年才上架、每軌都標 demo 版本——可以當試聽來源，但不是 1988 年原盤本身的證據。**｜(3) `exceptionReason` 寫「1988 年的卡帶 demo **在紐約硬蕊的翻錄鏈裡流通多年**，才有後來的《Brightside》」——**「翻錄鏈流通多年」查無來源，不得寫**；**《Brightside》掛在另一個藝人實體之下，本張的目錄裡查不到它，也不得寫。**可以寫的是實體 disambiguation 記的「aka」關係本身。｜(4) `curatorWhy` 已依 c-120 第 3 條寫明「收的是唯一收得進來的碟，不是最重要的錄音」——**這一處正確，予以確認。⚠ 行文絕不得寫成「代表作」或「最重要的一張」**，只能寫「名下唯一的一筆」（藝人目錄分頁確認 release-group 數為 1）。｜**人名從嚴**：藝人實體無成員資料、無廠牌實體，**不得寫個別成員的名字**；begin-area 只到 New York，**不得寫任何區級地名。**｜**軌數與長度**：**7 軌，且原盤一軌長度都沒有，不得寫任何「幾分幾秒」**；串流那版的長度只能在明說「是後來的上架版本」時引用。｜**§5.5 舉證**：兩個網址皆回 200，但 `Raw_Deal_(band)` **實際跳轉到另一個團名的條目**（頁面存在、支持 aka 關係，但網址與標題不一致，建議改成跳轉後的正式網址）；`New_York_hardcore` 那頁**通篇查不到本團名，不支持 `exceptionReason`，建議更換**。｜**素材量**：可寫的事實格只有「唯一 release／7 軌曲名／無廠牌無 catno／無軌長／目錄唯一／串流採信」六格，**無長度、無廠牌、無再發可寫，標 partial（只夠 120–180 字）。**"
  },
  {
   "key": "desc2:Life's Blood|Defiance",
@@ -293,7 +293,7 @@
   ],
   "status": "partial",
   "yearVerified": "一致，1989。release-group first-release-date **1989**，轄下唯一 release 也是 1989 US Official（7\" Vinyl、6 軌、Common Cause NR-18183）。**沒有再發**（名下只有這一筆），`year` 取 1989 無爭議，**裁定 220 的再發覆蓋在本張不成立**。**三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
-  "notes": "**擋下策展層兩處。**(1) `exceptionReason` 寫「Krakdown 存在過的**全部證據**就是這張 1989 年的 7 吋：六首歌、一次發行、**之後再無錄音**」——**「名下只有一個 release-group」經目錄分頁確認成立，可以寫；但「之後再無錄音」是對現實世界的斷言，資料庫只能證明「沒有第二筆建檔」，不得寫成「再無錄音」。**｜(2) `exceptionReason` 寫「是紐約硬蕊 1988–1990 年那一波『**一張 7 吋就是一支團全部作品**』**最乾淨的例子**」——**跨藝人的極值排名，查無來源，不得寫。**｜(3) `curatorRisk` 已依裁定 250 後半註明 disambiguation 為空、改以名下目錄與 catno 為身分依據——**這一處正確，予以確認。**｜**人名與地名從嚴**：藝人實體的 begin-area／life-span／disambiguation **三欄全空**，廠牌實體的 life-span 與 disambiguation **也全空**，**不得寫個別成員的名字、不得寫廠牌創辦人、不得寫任何區級地名**（連「紐約」都只能從場景層面泛稱，實體欄位只寫到 United States）。｜**軌數（裁定 251）**：本張 **6 軌**，名下無其他版本，行文引 6 軌安全。｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**§5.5 舉證**：兩個網址皆回 200，但 `Hardcore_punk` 那頁**通篇查不到本團名**，**不支持 `exceptionReason` 講的那件事，站不住，建議更換**；本團**沒有專屬的維基條目**（以團名直接查回 404），可改用廠牌或本盤層級的來源。｜**素材量**：可寫的事實格只有「六軌曲名與長度／總長 8:05／catno／唯一 release／目錄唯一／廠牌欄位皆空」六格，**無再發、無串流、無成員與地緣可寫，標 partial（只夠 120–180 字）。**"
+  "notes": "**擋下策展層兩處。**(1) `exceptionReason` 寫「Krakdown 存在過的**全部證據**就是這張 1989 年的 7 吋：六首歌、一次發行、**之後再無錄音**」——**「名下只有一個 release-group」經目錄分頁確認成立，可以寫；但「之後再無錄音」是對現實世界的斷言，資料庫只能證明「沒有第二筆建檔」，不得寫成「再無錄音」。**｜(2) `exceptionReason` 寫「是紐約硬蕊 1988–1990 年那一波『**一張 7 吋就是一支團全部作品**』**最乾淨的例子**」——**跨藝人的極值排名，查無來源，不得寫。**｜(3) `curatorRisk` 已依裁定 250 後半註明 disambiguation 為空、改以名下目錄與 catno 為身分依據——**這一處正確，予以確認。**｜**人名與地名從嚴**：藝人實體的 begin-area／life-span／disambiguation **三欄全空**，廠牌實體的 life-span 與 disambiguation **也全空**，**不得寫個別成員的名字、不得寫廠牌創辦人、不得寫任何區級地名**（連「紐約」都只能從場景層面泛稱，實體欄位只寫到 United States）。｜**軌數（裁定 251）**：本張 **6 軌**，名下無其他版本，行文引 6 軌安全。｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**§5.5 舉證**：兩個網址皆回 200，但 `Hardcore_punk` 那頁**通篇查不到本團名**，**不支持 `exceptionReason` 講的那件事，站不住，建議更換**；本團**沒有專屬的獨立條目**（以團名直接查回 404），可改用廠牌或本盤層級的來源。｜**素材量**：可寫的事實格只有「六軌曲名與長度／總長 8:05／catno／唯一 release／目錄唯一／廠牌欄位皆空」六格，**無再發、無串流、無成員與地緣可寫，標 partial（只夠 120–180 字）。**"
  },
  {
   "key": "desc2:Outburst|Miles to Go",
@@ -337,7 +337,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1989。release-group first-release-date **1989**，其下最早的 release 就是 1989 US 的 Blackout! BL-3（Official、7\" Vinyl、7 軌）。**再發年不蓋原盤年（裁定 220）**：2000 年 CD（BLK-49）與 2017-12-15 數位版是後續，`year` 取 1989。串流側採信的 1687344809 releaseDate 標 **1989-01-01**、℗ 1989，與原盤同年——**但它排的是 2000 年那版的十四軌，年份標示與內容不同步，這件事本身要在行文外註記。⚠ 2017 那筆日期標 2017-12-15、曲名卻標「(2020 Remaster)」，年份自相矛盾，不得引。同名先行單曲：無。**",
-  "notes": "**擋下策展層三處。**(1) `curatorRisk` 只寫「us 店命中 collectionId 1687344809（Apple 標題「Miles To Go」、Apple 年份 1989）」，**沒有說它是幾軌**——**逐軌覆核後：那是 14 軌版，不是本張 7 軌原盤。串流採信 1687344809：十四軌逐位置比對（1:54／1:55／2:07／1:52／1:39／0:12／1:53／1:21／1:41／1:25／1:52／1:31／2:16／1:09）與 2000 年 14 軌 CD 一秒不差，採信——可以當試聽來源，但不是本張原盤的證據；第 8–14 軌（〈Intro/Outburst〉〈Learn To Care〉〈Think For Yourself〉〈Mission Impossible〉〈Mad At The World〉〈True〉的 demo 版本與一軌無曲名器樂）不屬於本張。**｜(2) `exceptionReason` 寫「Blackout! Records **目錄第三號**」——**catno 是 BL-3 沒錯，但實體欄位沒有「目錄序」這個欄位，只能寫成「catno 記為 BL-3」，不得斷言是第三號發行。**｜(3) `exceptionReason` 寫「是紐約硬蕊在 Revelation 之外**另一條廠牌線（Blackout!）成形時的代表作**」、`curatorWhy` 寫「同時是 Blackout! 這條廠牌線在卡池中的第一張」——**「代表作」是跨藝人極值、查無來源，不得寫**；可以寫的是廠牌實體的兩個硬欄位：**area New York、life-span begin 1988**。｜(4) `curatorRisk` 記「2017-12-15 XW Official Digital Media×15」——**軌數正確，但漏了關鍵一項：該版十五軌的曲名全部帶「(2020 Remaster)」，與 2017 的發行日期矛盾，行文不得引用該版的年份或把它說成 2017 年的後製。**｜**軌數（裁定 251）**：卡單釘 1989 的 7 吋 **7 軌**，行文引軌數只能引 7；要提 14 軌就得同時說明那是 2000 年的 CD 版、多出來的是 demo 版本。｜**人名與地名從嚴**：藝人實體 begin-area 與 life-span 皆空、disambiguation 只寫「USA punk band」，**不得寫個別成員的名字、不得寫任何城市或區級地名**；廠牌創辦人在實體欄位查不到，**不得寫。**｜**§5.5 舉證**：兩個網址皆回 200，`Blackout!_Records` 那頁提到本團名（支持廠牌那半句），但 `New_York_hardcore` 那頁**通篇查不到本團名，站不住，建議更換。**"
+  "notes": "**擋下策展層三處。**(1) `curatorRisk` 只寫「us 店命中 collectionId 1687344809（串流側標題「Miles To Go」、標示年份 1989）」，**沒有說它是幾軌**——**逐軌覆核後：那是 14 軌版，不是本張 7 軌原盤。串流採信 1687344809：十四軌逐位置比對（1:54／1:55／2:07／1:52／1:39／0:12／1:53／1:21／1:41／1:25／1:52／1:31／2:16／1:09）與 2000 年 14 軌 CD 一秒不差，採信——可以當試聽來源，但不是本張原盤的證據；第 8–14 軌（〈Intro/Outburst〉〈Learn To Care〉〈Think For Yourself〉〈Mission Impossible〉〈Mad At The World〉〈True〉的 demo 版本與一軌無曲名器樂）不屬於本張。**｜(2) `exceptionReason` 寫「Blackout! Records **目錄第三號**」——**catno 是 BL-3 沒錯，但實體欄位沒有「目錄序」這個欄位，只能寫成「catno 記為 BL-3」，不得斷言是第三號發行。**｜(3) `exceptionReason` 寫「是紐約硬蕊在 Revelation 之外**另一條廠牌線（Blackout!）成形時的代表作**」、`curatorWhy` 寫「同時是 Blackout! 這條廠牌線在卡池中的第一張」——**「代表作」是跨藝人極值、查無來源，不得寫**；可以寫的是廠牌實體的兩個硬欄位：**area New York、life-span begin 1988**。｜(4) `curatorRisk` 記「2017-12-15 XW Official Digital Media×15」——**軌數正確，但漏了關鍵一項：該版十五軌的曲名全部帶「(2020 Remaster)」，與 2017 的發行日期矛盾，行文不得引用該版的年份或把它說成 2017 年的後製。**｜**軌數（裁定 251）**：卡單釘 1989 的 7 吋 **7 軌**，行文引軌數只能引 7；要提 14 軌就得同時說明那是 2000 年的 CD 版、多出來的是 demo 版本。｜**人名與地名從嚴**：藝人實體 begin-area 與 life-span 皆空、disambiguation 只寫「USA punk band」，**不得寫個別成員的名字、不得寫任何城市或區級地名**；廠牌創辦人在實體欄位查不到，**不得寫。**｜**§5.5 舉證**：兩個網址皆回 200，`Blackout!_Records` 那頁提到本團名（支持廠牌那半句），但 `New_York_hardcore` 那頁**通篇查不到本團名，站不住，建議更換。**"
  },
  {
   "key": "desc2:Absolution|Absolution",
@@ -381,7 +381,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1989。release-group first-release-date **1989**，轄下唯一 release 也是 1989 US（7\" Vinyl、4 軌、Combined Effort CER-03）。**⚠ 該筆的 status 欄是 null**——**不是 Official，行文不得寫「正式發行」**（與裁定 43／57 排除的 Bootleg 是不同的情形，仍可收）。**再發年不蓋原盤年（裁定 220）**：1997-07-01 的整編與 2014 的《Dusty Road》是後續，`year` 取 1989。**三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
-  "notes": "**擋下策展層三處。**(1) `exceptionReason` 寫「是紐約硬蕊往 Quicksand、Into Another 那條較慢、較重的後硬蕊支線轉向時**最常被回指的來源**」——**跨藝人的極值排名，查無來源，不得寫**；可以寫的是本張自己的硬事實：**四軌 11 分 34 秒、末軌 4 分 11 秒，比同年同組的兩張 7 吋每一軌都長。**｜(2) `exceptionReason` 寫「**成員後來散進 Beyond 與 Engine Kid 一帶**」——**實體欄位查無任何成員資料**（life-span 起訖皆空），**這句不得寫，一個人名都不得出現。**｜(3) `curatorRisk` 說「三店以掛名＋盤名搜尋皆未命中（us 回 15 筆、gb 15 筆、de 15 筆）」——**方向正確，本層另跑一次三店搜尋各回 25 筆，同樣沒有一筆掛名對得上（回的是同盤名的其他作品）**，**確認本張無串流試聽來源；並提醒配對絕不能用「Absolution」這個字串，只能用 collectionId。**｜(4) `mbNote` 記「1997-07-01《Complete Discography》24 軌」——**軌數正確，但要補一件事**：那 24 軌**有大量重複曲名**（〈Dead and Gone〉與〈In the Meantime〉各出現三次，另有三個曲名各出現兩次），**是多批錄音疊起來的整編，不是本張的擴充版；行文引軌數只能引 4，絕不得引 24。**｜(5) `curatorRisk` 已註明所釘 release 的 **status 為空**——**這一處正確，予以確認；但行文要跟著嚴：不得寫「正式發行」「官方發行」。**｜**人名與地名從嚴**：廠牌實體**五個欄位全空**，**不得寫廠牌創辦人或成立年**；藝人 begin-area 只到 New York，**不得再細分成任何區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，但 `New_York_hardcore` 與 `Hardcore_punk` **兩頁通篇都查不到本團名**——**兩個舉證網址都站不住，是本組最嚴重的一筆，必須更換**；本團**沒有專屬的維基條目**（以團名直接查回 404），建議改用廠牌或本盤層級的來源。"
+  "notes": "**擋下策展層三處。**(1) `exceptionReason` 寫「是紐約硬蕊往 Quicksand、Into Another 那條較慢、較重的後硬蕊支線轉向時**最常被回指的來源**」——**跨藝人的極值排名，查無來源，不得寫**；可以寫的是本張自己的硬事實：**四軌 11 分 34 秒、末軌 4 分 11 秒，比同年同組的兩張 7 吋每一軌都長。**｜(2) `exceptionReason` 寫「**成員後來散進 Beyond 與 Engine Kid 一帶**」——**實體欄位查無任何成員資料**（life-span 起訖皆空），**這句不得寫，一個人名都不得出現。**｜(3) `curatorRisk` 說「三店以掛名＋盤名搜尋皆未命中（us 回 15 筆、gb 15 筆、de 15 筆）」——**方向正確，本層另跑一次三店搜尋各回 25 筆，同樣沒有一筆掛名對得上（回的是同盤名的其他作品）**，**確認本張無串流試聽來源；並提醒配對絕不能用「Absolution」這個字串，只能用 collectionId。**｜(4) `mbNote` 記「1997-07-01《Complete Discography》24 軌」——**軌數正確，但要補一件事**：那 24 軌**有大量重複曲名**（〈Dead and Gone〉與〈In the Meantime〉各出現三次，另有三個曲名各出現兩次），**是多批錄音疊起來的整編，不是本張的擴充版；行文引軌數只能引 4，絕不得引 24。**｜(5) `curatorRisk` 已註明所釘 release 的 **status 為空**——**這一處正確，予以確認；但行文要跟著嚴：不得寫「正式發行」「官方發行」。**｜**人名與地名從嚴**：廠牌實體**五個欄位全空**，**不得寫廠牌創辦人或成立年**；藝人 begin-area 只到 New York，**不得再細分成任何區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，但 `New_York_hardcore` 與 `Hardcore_punk` **兩頁通篇都查不到本團名**——**兩個舉證網址都站不住，是本組最嚴重的一筆，必須更換**；本團**沒有專屬的獨立條目**（以團名直接查回 404），建議改用廠牌或本盤層級的來源。"
  },
  {
   "key": "desc2:Madball|Ball of Destruction",
@@ -425,7 +425,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1989。release-group first-release-date **1989**，其下最早的 release 就是 1989 US 的 In-Effect 88561-3003-7（Official、7\" Vinyl、8 軌）。**再發年不蓋原盤年（裁定 220）**：1997 年那張 23 軌 CD 是八年後的版本、廠牌換成另一家，`year` 取 1989。藝人實體 life-span begin **1988**，早本張一年。**三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
-  "notes": "**擋下策展層四處。**(1) **本批 rulings 第 7 條與 `label` 欄都寫「1997 年 CD 23 軌是『把早期 EP 整批併進來』」——實地逐軌覆核後不成立。**23 軌 ＝ 原盤 8 軌 ＋ **14 段現場錄音（全部標 live）** ＋ **1 段 3 分 11 秒的電台訪談**。**沒有任何一軌來自別張 EP。這是本張最重的一處，必須改。**｜(2) `mbNote` 記「1997 US Official CD 23 軌」但**沒寫廠牌**——實體欄位記的是 **Century Media（catno 7830-2、country DE、type Imprint）**，**不是 In-Effect**。**兩張碟的廠牌不同、國別也不同，行文不得把 1997 那版算在 In-Effect 名下。**｜(3) `exceptionReason` 寫「1989 年由 **Agnostic Front 主唱的弟弟 Freddy Cricien** 掛名主唱錄成的 7 吋」——**人名（裁定 241／250）：實體欄位查無任何成員資料，藝人實體 disambiguation 是空的，這個名字與這層親屬關係都不得寫。**｜(4) `exceptionReason` 寫「是紐約硬蕊『**側案變成正團**』這條**世代交棒最具體的一份文件**」、`curatorWhy` 寫「c-120 收的《Set It Off》(1994) 已是 Madball **成為獨立團體五年之後**」——**「側案／正團／世代交棒／成為獨立團體」都是查無來源的沿革敘述，不得寫**；可以寫的序數只有一種：**這是該藝人目錄 21 個 release-group 裡最早的一筆**，1992 的《Droppin' Many Suckers》排第 2、1994-07 的《Set It Off》排第 3。｜**軌數（裁定 251）**：卡單釘 1989 的 7 吋 **8 軌**，行文引軌數只能引 8；要提 23 軌就得同時說明那是 1997 年另一家廠牌的 CD、多出來的是現場錄音與訪談。｜**人名與地名從嚴**：藝人實體 disambiguation 空（同名實體 3 個），**不得以 disambiguation 背書本名**；begin-area 只到 New York，**不得寫任何區級地名**；兩家廠牌實體都查不到創辦人，**不得寫。**｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**§5.5 舉證**：兩個網址皆回 200，`Madball` 與 `Agnostic_Front` 兩頁都提到本團與本盤名，**網址本身站得住——但要注意 `exceptionReason` 裡那個人名不因為維基頁存在就可以寫，實體欄位查不到就是不得寫。**"
+  "notes": "**擋下策展層四處。**(1) **本批 rulings 第 7 條與 `label` 欄都寫「1997 年 CD 23 軌是『把早期 EP 整批併進來』」——實地逐軌覆核後不成立。**23 軌 ＝ 原盤 8 軌 ＋ **14 段現場錄音（全部標 live）** ＋ **1 段 3 分 11 秒的電台訪談**。**沒有任何一軌來自別張 EP。這是本張最重的一處，必須改。**｜(2) `mbNote` 記「1997 US Official CD 23 軌」但**沒寫廠牌**——實體欄位記的是 **Century Media（catno 7830-2、country DE、type Imprint）**，**不是 In-Effect**。**兩張碟的廠牌不同、國別也不同，行文不得把 1997 那版算在 In-Effect 名下。**｜(3) `exceptionReason` 寫「1989 年由 **Agnostic Front 主唱的弟弟 Freddy Cricien** 掛名主唱錄成的 7 吋」——**人名（裁定 241／250）：實體欄位查無任何成員資料，藝人實體 disambiguation 是空的，這個名字與這層親屬關係都不得寫。**｜(4) `exceptionReason` 寫「是紐約硬蕊『**側案變成正團**』這條**世代交棒最具體的一份文件**」、`curatorWhy` 寫「c-120 收的《Set It Off》(1994) 已是 Madball **成為獨立團體五年之後**」——**「側案／正團／世代交棒／成為獨立團體」都是查無來源的沿革敘述，不得寫**；可以寫的序數只有一種：**這是該藝人目錄 21 個 release-group 裡最早的一筆**，1992 的《Droppin' Many Suckers》排第 2、1994-07 的《Set It Off》排第 3。｜**軌數（裁定 251）**：卡單釘 1989 的 7 吋 **8 軌**，行文引軌數只能引 8；要提 23 軌就得同時說明那是 1997 年另一家廠牌的 CD、多出來的是現場錄音與訪談。｜**人名與地名從嚴**：藝人實體 disambiguation 空（同名實體 3 個），**不得以 disambiguation 背書本名**；begin-area 只到 New York，**不得寫任何區級地名**；兩家廠牌實體都查不到創辦人，**不得寫。**｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**§5.5 舉證**：兩個網址皆回 200，`Madball` 與 `Agnostic_Front` 兩頁都提到本團與本盤名，**網址本身站得住——但要注意 `exceptionReason` 裡那個人名不因為舉證頁存在就可以寫，實體欄位查不到就是不得寫。**"
  },
  {
   "key": "desc2:Born Against|Born Against",
@@ -469,7 +469,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1990。release-group first-release-date **1990**，轄下唯一 release 也是 1990 US Official（7\" Vinyl、5 軌、Vermiform）。**沒有再發**（名下只有這一筆），`year` 取 1990 無爭議。**但序數要小心**：藝人目錄裡 **1989 年的《My Country Tis of Thee, Enemy of All Tribes》比本張早一年**，且本張五軌有四軌已在那捲卡帶上。藝人實體 life-span **1989～1993**。**三店查無串流對應（回撈候選那筆已駁回），無第三處可交叉對年。同名先行單曲：無。**",
-  "notes": "**擋下策展層四處。**(1) `exceptionReason` 寫「Vermiform 這條線的起手式：**Sam McPheeters 自營廠牌與樂團同時開張**」——**人名（裁定 241／250）：實體欄位查無任何人名**，廠牌實體的 life-span 起訖與 disambiguation 全空，**這個名字與「自營」「同時開張」三件事都不得寫。**｜(2) `exceptionReason` 寫「1990 年這張 7 吋把紐約硬蕊**推向更政治、更難聽也更自覺的一側，後來整條 90 年代 DIY 硬蕊都從這裡分岔**」——**跨藝人的場景敘述與極值，查無來源，不得寫。**｜(3) **`curatorWhy` 與 `mbNote` 把 1989 年那筆只當成「刻意不釘的 CAA 404 demo」，漏掉最關鍵的一件事**：**本張五軌裡有四軌（〈X-Mas Eve〉〈9 Years Later〉〈Born Again〉〈Witness to a Rape〉）在 1989 那捲七軌卡帶上就已經錄過**，**因此行文絕不得寫本張是「這支團的第一張」「第一份錄音」或任何等義的序數**——目錄裡它排第 2。｜(4) `curatorRisk` 記「1990 US Official 7\" Vinyl×5」與「label-info 未填 catno」——**這兩處正確，予以確認**；補一項：**廠牌名有、catno 是 null，行文可以點出這個空白，但不得自行補一個目錄編號。**｜**串流：回撈候選 313926184 逐軌覆核後駁回**——十八軌裡只有一軌與本張同名（〈Nine Years Later〉2:22 對本張〈9 Years Later〉2:01，差 21 秒），**其餘十七軌完全不同，不是本張，也不能當試聽來源。確認本張無試聽來源。**｜**人名與地名從嚴**：藝人實體 disambiguation 空（同名實體 3 個），**不得以 disambiguation 背書本名**；begin-area 只到 New York，**不得寫任何區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，`Vermiform_Records` 與 `Born_Against` 兩頁都提到本團與廠牌，**網址站得住——但 `exceptionReason` 裡的人名不因維基頁存在就可以寫。**"
+  "notes": "**擋下策展層四處。**(1) `exceptionReason` 寫「Vermiform 這條線的起手式：**Sam McPheeters 自營廠牌與樂團同時開張**」——**人名（裁定 241／250）：實體欄位查無任何人名**，廠牌實體的 life-span 起訖與 disambiguation 全空，**這個名字與「自營」「同時開張」三件事都不得寫。**｜(2) `exceptionReason` 寫「1990 年這張 7 吋把紐約硬蕊**推向更政治、更難聽也更自覺的一側，後來整條 90 年代 DIY 硬蕊都從這裡分岔**」——**跨藝人的場景敘述與極值，查無來源，不得寫。**｜(3) **`curatorWhy` 與 `mbNote` 把 1989 年那筆只當成「刻意不釘的 CAA 404 demo」，漏掉最關鍵的一件事**：**本張五軌裡有四軌（〈X-Mas Eve〉〈9 Years Later〉〈Born Again〉〈Witness to a Rape〉）在 1989 那捲七軌卡帶上就已經錄過**，**因此行文絕不得寫本張是「這支團的第一張」「第一份錄音」或任何等義的序數**——目錄裡它排第 2。｜(4) `curatorRisk` 記「1990 US Official 7\" Vinyl×5」與「label-info 未填 catno」——**這兩處正確，予以確認**；補一項：**廠牌名有、catno 是 null，行文可以點出這個空白，但不得自行補一個目錄編號。**｜**串流：回撈候選 313926184 逐軌覆核後駁回**——十八軌裡只有一軌與本張同名（〈Nine Years Later〉2:22 對本張〈9 Years Later〉2:01，差 21 秒），**其餘十七軌完全不同，不是本張，也不能當試聽來源。確認本張無試聽來源。**｜**人名與地名從嚴**：藝人實體 disambiguation 空（同名實體 3 個），**不得以 disambiguation 背書本名**；begin-area 只到 New York，**不得寫任何區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，`Vermiform_Records` 與 `Born_Against` 兩頁都提到本團與廠牌，**網址站得住——但 `exceptionReason` 裡的人名不因舉證頁存在就可以寫。**"
  },
  {
   "key": "desc2:Quicksand|Quicksand",
@@ -553,7 +553,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1991。release-group first-release-date **1991**，轄下唯一 release 也是 1991 US Official（CD、4 軌、Blackout! BL-11CD）。**沒有再發**（名下只有這一筆），`year` 取 1991 無爭議。串流側採信的 1686435375 releaseDate 標 **1991-06-01**（**比實體欄位多給了月日，但實體欄位只有年，不得把 6 月 1 日寫成事實**）、**℗ 2020 Blackout! Records**——**℗ 年是 2020，那是後來上架的年份，絕不得取為 `year`。**藝人實體 life-span **1982～1992**。**同名先行單曲：無。**",
-  "notes": "**擋下策展層三處，其中一處是方向相反的漏採。**(1) `curatorRisk` 說「Apple：us／gb／de **三店以掛名＋盤名搜尋皆未命中（三店各回 0 筆）**」——**實測不成立，這是本批的「c-120 Quicksand 形狀」**：本層以同樣方式重跑，**三店都各回 1 筆、且就是本張**。**串流採信 1686435375：四軌曲名與曲序逐位置全中，長度 4:10／4:47／4:44／2:22 對原盤 4:06／4:44／4:42／2:20，各差 2–4 秒，四軌全有試聽，採信。⚠ ℗ 標 2020、Apple 日期標 1991-06-01，是後來的上架版本；可以當試聽來源，年份與月日都不得引。**｜(2) `mbNote` 已更正 c-120 清單把本張記成 7 吋、確認實體是 **CD**——**這一處正確，予以確認**；**行文絕不得寫「7 吋」。**｜(3) `exceptionReason` 寫「**1982 年就成軍**的紐約團一路到 1991 年才留下這四首歌」——**「1982 年成軍」這一件在實體欄位查得到（life-span begin 1982），可以寫**；但同句的「是 **CBGB 硬蕊與金屬交界那一區少數被壓成唱片的證據**」是**跨藝人的極值排名，查無來源，不得寫**。｜(4) `curatorWhy` 已依 c-120 第 3 條寫明「收的是唯一收得進來的碟，不是最重要的錄音」——**這一處正確，予以確認。⚠ 行文絕不得寫成「代表作」或「最重要的一張」**，只能寫「名下唯一的一筆」（藝人目錄分頁確認 release-group 數為 1）。｜**人名與地名從嚴**：藝人實體無成員資料、廠牌實體查不到創辦人，**不得寫個別成員或廠牌創辦人的名字**；begin-area 只到 New York、廠牌 area 也只到 New York，**不得寫任何區級地名**（disambiguation 裡的「NY」同樣只到州／市層級）。｜**軌數（裁定 251）**：本張 **4 軌**，名下無其他版本，串流那版也是 4 軌，行文引 4 軌安全。｜**§5.5 舉證**：兩個網址皆回 200，`The_Icemen` 與 `Blackout!_Records`（實際跳轉到「Blackout Records」）**兩頁都提到本團與廠牌，舉證站得住。**"
+  "notes": "**擋下策展層三處，其中一處是方向相反的漏採。**(1) `curatorRisk` 說「串流側：us／gb／de **三店以掛名＋盤名搜尋皆未命中（三店各回 0 筆）**」——**實測不成立，這是本批的「c-120 Quicksand 形狀」**：本層以同樣方式重跑，**三店都各回 1 筆、且就是本張**。**串流採信 1686435375：四軌曲名與曲序逐位置全中，長度 4:10／4:47／4:44／2:22 對原盤 4:06／4:44／4:42／2:20，各差 2–4 秒，四軌全有試聽，採信。⚠ ℗ 標 2020、串流側日期標 1991-06-01，是後來的上架版本；可以當試聽來源，年份與月日都不得引。**｜(2) `mbNote` 已更正 c-120 清單把本張記成 7 吋、確認實體是 **CD**——**這一處正確，予以確認**；**行文絕不得寫「7 吋」。**｜(3) `exceptionReason` 寫「**1982 年就成軍**的紐約團一路到 1991 年才留下這四首歌」——**「1982 年成軍」這一件在實體欄位查得到（life-span begin 1982），可以寫**；但同句的「是 **CBGB 硬蕊與金屬交界那一區少數被壓成唱片的證據**」是**跨藝人的極值排名，查無來源，不得寫**。｜(4) `curatorWhy` 已依 c-120 第 3 條寫明「收的是唯一收得進來的碟，不是最重要的錄音」——**這一處正確，予以確認。⚠ 行文絕不得寫成「代表作」或「最重要的一張」**，只能寫「名下唯一的一筆」（藝人目錄分頁確認 release-group 數為 1）。｜**人名與地名從嚴**：藝人實體無成員資料、廠牌實體查不到創辦人，**不得寫個別成員或廠牌創辦人的名字**；begin-area 只到 New York、廠牌 area 也只到 New York，**不得寫任何區級地名**（disambiguation 裡的「NY」同樣只到州／市層級）。｜**軌數（裁定 251）**：本張 **4 軌**，名下無其他版本，串流那版也是 4 軌，行文引 4 軌安全。｜**§5.5 舉證**：兩個網址皆回 200，`The_Icemen` 與 `Blackout!_Records`（實際跳轉到「Blackout Records」）**兩頁都提到本團與廠牌，舉證站得住。**"
  },
  {
   "key": "desc2:Rorschach / Neanderthal|Rorschach / Neanderthal",
@@ -810,5 +810,181 @@
   "status": "partial",
   "yearVerified": "一致，1994。release-group first-release-date **1994**，轄下唯一 release 也是 1994 FR Official（7\" Vinyl、4 軌、Hardway HR 04）。**沒有再發**（名下只有這一筆），`year` 取 1994 無爭議。藝人實體 life-span begin **1992**。**⚠ country 是 FR，不是 US——行文不得寫「美國發行」。三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
   "notes": "**擋下策展層三處。**(1) `exceptionReason` 寫「Bulldoze 的**第一張黑膠**」——**這一件成立**：目錄三筆分別是 1993 卡帶、1994 本張（7\" Vinyl）、1996 CD，**本張是唯一一張黑膠**，可以寫。｜(2) 同一句寫「也是紐約 beatdown 在 1994 年**被歐洲廠牌接手發行的實例**，**說明這條線在當時已經跨出本地流通**」——**後半是推論，不得寫**；可以寫的硬事實是兩處對得上的地緣：**release 的 country 是 FR、廠牌實體的 area 是 Paris、disambiguation 寫「Hardcore punk French label」。**｜(3) **`exceptionEvidenceUrls` 的第二個網址是 `Split_album`——但本張根本不是 split**（artist-credit 只有一個掛名、四軌全掛 Bulldoze）。**這個舉證既與本張形態不符、頁面也查不到本團名，站不住，必須更換。**第一個網址 `Beatdown_hardcore` 回 200 且提到本團名，但查不到本盤名，支持力偏弱。｜(4) `curatorRisk` 記「country 為 FR（法國壓片），非美國本地發行——店面設為 us 時，這張的可得性與其他張不同」——**正確，予以確認。**｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**軌數與長度**：本張 **4 軌**，**四軌全部沒有長度資料，不得寫任何「幾分幾秒」或全張總長**；1996 那張長篇是 14 軌、2023 那張是 19 軌，**都絕不得引為本張軌數。**｜**曲名差異**：本張第 1 軌是〈Nothing but a Beatdown〉，1996 那版寫成〈Beatdown〉、2023 那版才寫回〈Nothing But A Beatdown〉——**行文若比對曲目要說明這個字串差異。**｜**人名與地名從嚴**：藝人與廠牌實體都查不到人名，**不得寫個別成員或廠牌創辦人的名字**；**begin-area 只到 Irvington，不得擴寫成任何州級或區級地名。**｜**素材量**：可寫的事實格只有「四軌曲名／無軌長／FR＋Paris 的地緣對照／catno HR 04／目錄唯一的黑膠／1996 版的曲名差異」六格，**無長度、無串流、無再發可寫，標 partial（只夠 120–180 字）。**"
+ },
+ {
+  "key": "desc2:Vision of Disorder|Still",
+  "artist": "Vision of Disorder",
+  "album": "Still",
+  "facts": [
+   {
+    "f": "release-group 0e7b2cbe 的欄位：title「Still」、artist-credit「Vision of Disorder」、primary-type **EP**、secondary-types **空**、first-release-date **1995**。轄下 **3 筆 release**：**1995 XE（歐洲，無單一國別）Official 7\" Vinyl 4 軌**（**Striving for Togetherness，catno SFT-10**）／1996 DE Official CD 6 軌（**Striving for Togetherness，catno 寫成 `SFT10`——與 7 吋的 `SFT-10` 差一個連字號**）／2014-10-09 XW Official Digital Media 7 軌（**Dignified Bastard**，無 catno，條碼 888831852070）。**卡單 label 欄釘的是 1995 那張 7 吋，軌數 4。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e7b2cbe-ec50-3c12-83ad-5c2df0b99137&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1995 原盤（SFT-10）四軌與長度：1〈Through My Eyes〉3:47、2〈Choke〉2:36、3〈Beneath The Green〉**4:13**、4〈Watch Out〉2:14。**四軌合計 12 分 50 秒。**1996 德版 CD 在同樣四軌之後多接〈D.T.O.〉4:10 與〈No Regrets〉2:09，共 6 軌；**2014 數位版是 7 軌，且每一軌的曲名都帶「(Still Sessions 1995)」或「(Still Sessions, 1995)」字樣**，比 CD 版再多一軌〈Formula for Failure〉4:26。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e7b2cbe-ec50-3c12-83ad-5c2df0b99137&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**2014 那版與 1995 原盤的四軌長度逐位置都短 3–5 秒**：3:43／2:31／4:08／2:11 對原盤 3:47／2:36／4:13／2:14。**同一批錄音、不同轉檔，數字不能互相替代。**另外該版第 6 軌寫〈No Regret〉（單數）、1996 CD 寫〈No Regrets〉（複數）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e7b2cbe-ec50-3c12-83ad-5c2df0b99137&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "廠牌實體 Striving for Togetherness（5bea980a）：type Original Production、**country 為空**、**area 記的是 Bayreuth**、**life-span begin 1990**、disambiguation 空。**這家廠牌在實體欄位裡登記的所在地不在紐約，而是 Bayreuth；1996 年那張 CD 的 release country 也是 DE。**2014 那版的 Dignified Bastard（4bba3927）：**type、country、area、life-span、disambiguation 五欄全空。**",
+    "src": "https://musicbrainz.org/ws/2/label/5bea980a-fecc-46e4-b64f-9b209c2639b2?fmt=json"
+   },
+   {
+    "f": "藝人目錄分頁全列 **13 個 release-group**，依日期排序：1993《Demo '93》(EP＋Demo) 排第 1、1994《Demo '94》(EP＋Demo)、**1995 本張與 1995《Demo '95》(EP＋Demo) 並列**、1996-10-21《Vision of Disorder》(Album) 排第 5……**本張不是目錄裡最早的一筆，且同年另有一筆，序數不得斷言。**藝人實體 618a18b1：**begin-area Northport**、**life-span begin 1992**、**disambiguation 空**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=618a18b1-dec3-4c4a-813b-988d9c065722&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，一採兩駁**：collectionId **918911483**《Still》，掛名「Vision of Disorder」、releaseDate 1995-01-01、trackCount **7**、**℗ 1995 Dignified Bastard Inc**、explicit，七軌 3:43／2:31／4:08／2:11／4:03／2:06／4:26 **與 2014 那版七軌逐位置一秒不差、曲名同樣帶「Still Sessions 1995」標註**，全部有 previewUrl → **採信為試聽來源**。collectionId 215211851《Vision of Disorder》1996-10-21、12 軌（℗ 1996 The All Blacks B.V.）與 1688864295 同名同軌數 → **兩筆皆駁回**（是 1996 年那張長篇，只有〈Through My Eyes〉〈D.T.O.〉與本張系出同源）。",
+    "src": "https://itunes.apple.com/lookup?id=918911483&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十二分五十秒，最長的一首四分十三秒",
+   "同一批錄音在後來的數位版上每一軌都短了三到五秒"
+  ],
+  "sound": "1995 年 SFT-10 那張 7 吋是四軌：〈Through My Eyes〉3:47、〈Choke〉2:36、〈Beneath The Green〉4:13、〈Watch Out〉2:14，合計 12 分 50 秒。四首都超過兩分鐘，最長的〈Beneath The Green〉四分十三秒。隔年的德版 CD 把這四軌原封留在前段，末尾接上〈D.T.O.〉與〈No Regrets〉湊成六軌；再十八年後的數位版又多一軌，而且每一軌的曲名都被加上一行括號，標著這批錄音的年份——那一版四軌的長度比原盤逐位置都短三到五秒。發行這張 7 吋的廠牌，實體欄位登記的所在地並不在美國。",
+  "keyTracks": [
+   "Through My Eyes",
+   "Beneath The Green",
+   "Watch Out"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995**，其下最早的 release 就是 1995 XE 的 Striving for Togetherness SFT-10（Official、7\" Vinyl、4 軌）。**再發年不蓋原盤年（裁定 220）**：1996 德版 CD 與 2014-10-09 數位版是後續，`year` 取 1995。串流側採信的 918911483 releaseDate 標 **1995-01-01**、℗ 1995，與原盤同年——**但它排的是 2014 那版的七軌，年份標示與內容不同步。⚠ country 是 XE（歐洲，無單一國別），不得寫成「美國發行」。同名先行單曲：無**（同年另有《Demo '95》，但那是另一個 release-group）。",
+  "notes": "**擋下策展層四處。**(1) `exceptionReason` 寫「由**紐約的** Striving for Togetherness 發行」——**錯，這是本張最重的一處**：該廠牌實體的 **area 記的是 Bayreuth、country 欄是空的**，且 1996 年那張 CD 的 release country 是 **DE**；**「紐約的」不得寫，要改。**｜(2) `curatorRisk` 說「三店以掛名＋盤名搜尋皆未命中（us 回 6 筆）」——**逐筆覆核後不成立**：**918911483 就是本盤名的上架版本。串流採信 918911483：七軌逐位置比對（3:43／2:31／4:08／2:11／4:03／2:06／4:26）與 2014 年七軌數位版一秒不差，採信——⚠ 它是 7 軌版、曲名全部帶「Still Sessions 1995」標註，可以當試聽來源，但不是本張 4 軌 7 吋原盤的證據；多出的三軌〈D.T.O.〉〈No Regret〉〈Formula for Failure〉不在 7 吋上，且四軌的長度逐位置比原盤短 3–5 秒，數字不得互換。**另兩筆候選 215211851／1688864295 是 1996 年那張長篇，**駁回**。｜(3) `exceptionReason` 寫「Vision of Disorder 簽進大廠之前**唯一的黑膠**」——**「唯一的黑膠」在目錄上成立**（13 筆裡其餘是卡帶、CD 與數位），可以寫；但同句「四首歌把**長島**硬蕊往 metalcore 推進的那一步定型，**1996 年同名專輯的聲音由此而來**」——**「長島」不得寫**（begin-area 記的是 Northport）、**「聲音由此而來」是跨碟的因果推論，查無來源，不得寫。**｜(4) `curatorWhy` 寫「本批 VOD 取 2 張（1993 demo 與本張），**皆在 1996 年那張之前**」——**成立**；但**行文不得把本張寫成「第一張 EP」或任何序數**：目錄裡 1993、1994 兩筆 demo 在前，**且 1995 年同年另有一筆《Demo '95》。**｜**軌數（裁定 251）**：卡單釘 1995 的 7 吋 **4 軌**，行文引軌數只能引 4；6 軌是 1996 德版、7 軌是 2014 數位版，**都要說明版本才能提。**｜**catno 字串**：7 吋是 `SFT-10`、1996 CD 是 `SFT10`，**引 catno 要指明版本。**｜**人名與地名從嚴**：藝人實體 disambiguation 空，**不得以 disambiguation 背書本名、不得寫個別成員的名字**；**begin-area 只到 Northport，不得擴寫成「長島」。**｜**§5.5 舉證**：兩個網址皆回 200，`Striving_for_Togetherness_Records` 與 `Vision_of_Disorder` 兩頁都提到本團與本盤，**網址站得住——但廠牌所在地那句仍以實體欄位為準（Bayreuth）。**"
+ },
+ {
+  "key": "desc2:Maximum Penalty|Demo EP",
+  "artist": "Maximum Penalty",
+  "album": "Demo EP",
+  "facts": [
+   {
+    "f": "release-group b8d2ab2d 的欄位：title「Demo EP」、artist-credit「Maximum Penalty」、primary-type **EP**、secondary-types **空**（**不是 Demo**）、first-release-date **1995**。轄下**只有 1 筆 release**：1995 US Official **7\" Vinyl 4 軌**，label-info **Astor Records、catno AR 99002**、無包裝資料、無條碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b8d2ab2d-70a7-40f6-babc-9c3941aab968&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1995 原盤（AR 99002）四軌與長度：1〈Acceptance〉3:05、2〈No Where to Turn To〉1:40、3〈Brutality〉3:34、4〈All Your Boyz〉2:25。**四軌合計 10 分 44 秒；最長的〈Brutality〉3 分 34 秒、最短的〈No Where to Turn To〉1 分 40 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b8d2ab2d-70a7-40f6-babc-9c3941aab968&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**這四軌全部來自六年前那捲九軌的卡帶，而且是從中挑出來的**：藝人名下 5add24e8《Demo '89》(primary-type null＋secondary-type Demo) 的 1989 US Official **Cassette 9 軌**（label-info 記為 `[no label]`、無 catno）曲序是〈**Acceptance**〉3:05、〈Hate〉1:39、〈Time Flies Fast〉2:19、〈**Brutality**〉3:34、〈Be Yourself〉1:19、〈**Nowhere to Turn To**〉1:39、〈Living in Darkness〉1:58、〈**All Your Boyz**〉2:24、〈Immaculate Conception〉2:55。**四軌長度與本張逐位置只差 0–1 秒，但本張把九軌挑成四軌、順序也重排過（卡帶是第 1、4、6、8 軌，本張排成 1、3、2、4）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5add24e8-d90d-4dd1-b9e7-bcb33a00d2fd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **7 個 release-group**，依日期排序：1989《Demo '89》(null＋Demo) 排第 1、**1995 本張排第 2**、1996《East Side Story》(EP)、1996-08-27《Independent》(Album)、1997《Superlife》(Album)、2006-04-04《Demo '89 / East Side Story E.P.》(EP)、2009《Life & Times》(Album)。**本張不是目錄裡最早的一筆。**藝人實體 1ab485e7：type Group、country US、area United States、**begin-area 空**、**life-span 起訖皆空**、**disambiguation 空**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1ab485e7-50af-4312-85c5-c10cc3f7a940&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Astor Records（306befd8）：**type 為空**、country US、area United States、**life-span 起訖皆空**、disambiguation「**'90s US hardcore label**」——**成立年與經營者在實體欄位查不到，只有這一行年代與國別的描述。**",
+    "src": "https://musicbrainz.org/ws/2/label/306befd8-3aeb-45a4-806a-78fa0c85a21c?fmt=json"
+   },
+   {
+    "f": "**回撈候選判查無，但另從藝人目錄反查到一筆整編（逐軌覆核後採信為試聽來源）**：collectionId **453863865**《Demo 89 & East Side Story E.P.》，掛名「Maximum Penalty」、releaseDate **2006-04-04**（與目錄裡 2006-04-04 那筆 release-group 同日）、trackCount **14**、℗ 2011 I SCREAM RECORDS，**第 1、4、6、8 軌分別是〈Acceptance〉3:05／〈Brutality〉3:34／〈Nowhere to Turn to〉1:40／〈All Your Boyz〉2:25——與本張四軌長度逐位置只差 0–1 秒**，全部有 previewUrl → **採信為試聽來源。⚠ 它是 14 軌的整編、排的是 1989 那捲卡帶加另一張 EP，不是本張 4 軌 7 吋的證據。**（另一筆 1524091561 同一套內容但 13 軌、第 8 軌曲名寫成〈All Your Boys〉。）",
+    "src": "https://itunes.apple.com/lookup?id=453863865&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四首歌十分四十四秒，四首全部來自六年前那捲九軌的卡帶",
+   "九軌挑成四軌，順序還重排過"
+  ],
+  "sound": "1995 年 Astor 的 AR 99002 是一張 7 吋、四軌：〈Acceptance〉3:05、〈No Where to Turn To〉1:40、〈Brutality〉3:34、〈All Your Boyz〉2:25，合計 10 分 44 秒。這四首不是新錄的——六年前有一捲九軌的卡帶，四首全在上面，長度逐位置只差不到一秒；差別在挑選與順序：卡帶上它們排在第一、第四、第六、第八，這張 7 吋把它們重排成一到四，其餘五首沒有收進來。那捲卡帶的廠牌欄被明確標成「沒有廠牌」，這張 7 吋則有廠牌與目錄編號。",
+  "keyTracks": [
+   "Acceptance",
+   "Brutality",
+   "All Your Boyz"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995**，轄下唯一 release 也是 1995 US Official（7\" Vinyl、4 軌、Astor AR 99002）。**沒有再發**（名下只有這一筆），`year` 取 1995 無爭議。**⚠ 但錄音年與發行年不同**：四軌與 1989 那捲卡帶逐位置只差 0–1 秒，**錄音來源指向 1989 年，卡上寫年份時要分清「發行 1995」與「錄音出自 1989 年那批」。**串流側採信的 453863865 標 **2006-04-04**、℗ 2011，**都是後來的年份，絕不得取為 `year`。同名先行單曲：無。**",
+  "notes": "**擋下策展層三處，並補上一筆策展層與回撈候選表都漏掉的串流對應。**(1) `exceptionReason` 寫「把 1989 年那捲**流通已久的** demo **正式壓成 7 吋**」——**「四軌來自 1989 那捲卡帶」這一件查證後成立且比策展層說得更準**：本張四軌與那捲九軌卡帶的第 1、4、6、8 軌長度逐位置只差 0–1 秒，**但本張只挑了四軌、順序還重排過，不是「把那捲 demo 壓成 7 吋」**；「**流通已久**」則查無來源，**不得寫**。｜(2) `exceptionReason` 寫「是紐約硬蕊『demo 先於唱片、多年後才補發黑膠』這種**流通方式的直接證據**」——**跨藝人的場景敘述，查無來源，不得寫。**｜(3) **策展層與回撈候選表都判本張無串流對應——不成立。**改以藝人目錄反查，**命中 453863865。串流採信 453863865：本張四軌在該版的第 1、4、6、8 軌，長度逐位置比對（3:05／3:34／1:40／2:25）與原盤只差 0–1 秒，四軌全有試聽，採信。⚠ 它是 14 軌的整編（1989 那捲卡帶加另一張 EP），可以當試聽來源，但不是本張 4 軌 7 吋的證據；其餘十軌不屬於本張。**另一筆 1524091561 是同一套內容的 13 軌版、曲名寫成〈All Your Boys〉，**不採。**｜(4) `curatorRisk` 寫「盤名『Demo EP』是 MB 的 release-group 標題原文」——**正確，予以確認**；補一項：**本張的 secondary-types 是空的，實體欄位並沒有把它標成 Demo，行文不得寫「資料庫標為 demo」。**｜**軌數（裁定 251）**：本張 **4 軌**，行文引 4 軌；1989 那捲是 9 軌、串流整編是 14 軌，**都要說明版本才能提。**｜**人名與地名從嚴**：藝人實體的 **begin-area、life-span、disambiguation 三欄全空**，廠牌實體只有一行年代國別描述，**不得寫個別成員的名字、不得寫廠牌創辦人、不得寫任何城市或區級地名。**｜**§5.5 舉證**：兩個網址皆回 200，但 `New_York_hardcore` 與 `Demo_(music)` **兩頁通篇都查不到本團名——兩個舉證網址都站不住，與同組 Absolution 並列本組最嚴重的兩筆，必須更換**；本團**沒有專屬的獨立條目**（以團名直接查回 404），建議改用廠牌或本盤層級的來源。"
+ },
+ {
+  "key": "desc2:Crown of Thornz|Train Yard Blues",
+  "artist": "Crown of Thornz",
+  "album": "Train Yard Blues",
+  "facts": [
+   {
+    "f": "release-group c1960bd0 的欄位：title「Train Yard Blues」、artist-credit「Crown of Thornz」、primary-type **EP**、secondary-types **空**、first-release-date **1995-08-01**（**本組少數精確到月日的一筆**）。轄下**只有 1 筆 release**：1995-08-01 US Official **CD 5 軌**（**不是黑膠**），label-info **Equal Vision Records、catno EVR020**、無包裝資料、無條碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c1960bd0-7844-331f-8044-beb0003842db&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1995 原盤（EVR020）五軌與長度：1〈Juggernaut〉**4:59**、2〈Head Check〉3:13、3〈Mental Masquerade〉3:02、4〈Crown Of Thorns〉4:10、5〈Feelings〉**5:27**。**五軌合計 20 分 51 秒，平均一軌 4 分 10 秒——這是本組二十三張裡總長最長的一張。**第 4 軌〈Crown Of Thorns〉的拼法與掛名 Crown of Thornz **差一個字母**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c1960bd0-7844-331f-8044-beb0003842db&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **只有 4 個 release-group**：**1995-08-01 本張排第 1**、1996《Mentally Vexed》(Album)、**2013-06-13《Train Yard Blues/Mentally Vexed》(Album＋Compilation)**、2015-08-14《Nothing But Tragedy》(Single)。**本張是這份目錄裡最早的一筆；那張把兩碟併成一張的整編掛的是 2013 年，不是 1996 年。**藝人實體 e7b3e015：type Group、country US、**area New York**、**begin-area 空**、**life-span begin 1994**（早本張一年）、**disambiguation 空**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e7b3e015-81fa-4180-aa7b-7bfcf821209d&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Equal Vision Records（545c16ff）：type Original Production、**country 為空**、**area 記的是 Albany**、**life-span begin 1991**、disambiguation 空。**這家廠牌實體登記的所在地是 Albany，不是紐約市；成立年 1991，早本張四年。**",
+    "src": "https://musicbrainz.org/ws/2/label/545c16ff-f0b6-4d00-8143-1759b641144a?fmt=json"
+   },
+   {
+    "f": "**回撈候選逐軌覆核，採信一筆**：collectionId **661880635**《Train Yard Blues / Mentally Vexed》，掛名「Crown of Thornz」、releaseDate **1996-09-03**、trackCount **15**、**℗ 2013 Durty Mick Records**、notExplicit，**第 1–5 軌是〈Juggernaut〉5:00／〈Head Check〉3:12／〈Mental Masquerade〉3:02／〈Crown of Thorns〉4:10／〈Feelings〉5:27——與本張五軌逐位置只差 0–1 秒**，全部有 previewUrl → **採信為試聽來源。⚠ 它是 15 軌的併輯，第 6–15 軌（〈Icepick〉〈God Or Government〉〈Love Sick〉〈Juggernaut〉的另一版本〈No Remorse〉〈Falafel〉〈Unemployed〉〈Mentally Vexed〉〈Shattered Dreams〉〈Crown of Thornz〉）不屬於本張；而且它的年份標 1996、℗ 標 2013，兩個數字都與本張的 1995 不符。**",
+    "src": "https://itunes.apple.com/lookup?id=661880635&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "同組另一張掛 Equal Vision 的碟在 b 組（catno EVR51，1999）。**本張 catno EVR020 與廠牌 life-span begin 1991 是本張可引的兩個廠牌側硬事實**；至於「這家廠牌之前做什麼、之後轉向什麼」，**實體欄位的 disambiguation 是空的，查不到。**",
+    "src": "https://musicbrainz.org/ws/2/label/545c16ff-f0b6-4d00-8143-1759b641144a?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "五首歌二十分五十一秒，是這一組二十三張裡最長的一張",
+   "第四軌的曲名跟團名差一個字母"
+  ],
+  "sound": "1995 年 8 月 1 日發行的 EVR020 是一張 CD、五軌：〈Juggernaut〉4:59、〈Head Check〉3:13、〈Mental Masquerade〉3:02、〈Crown Of Thorns〉4:10、〈Feelings〉5:27，合計 20 分 51 秒。平均一軌四分十秒——同一組裡有整張十軌只唱六分二十一秒的 7 吋，這張五首歌就用掉二十分鐘。開場的〈Juggernaut〉將近五分鐘，收尾的〈Feelings〉五分二十七秒是全張最長。第四軌的曲名與樂團的名字只差一個字母。發行這張的廠牌，實體欄位登記的所在地不在紐約市。",
+  "keyTracks": [
+   "Juggernaut",
+   "Crown Of Thorns",
+   "Feelings"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995-08-01**，轄下唯一 release 也是 1995-08-01 US Official（CD、5 軌、Equal Vision EVR020）。**沒有再發**（名下只有這一筆），`year` 取 1995 無爭議。**⚠ 年份分歧（裁定 220）確實存在，但方向與策展層說的不同**：串流側採信的 661880635 標 **1996-09-03**、**℗ 2013**，而藝人目錄裡那張併輯的 release-group 掛的是 **2013-06-13**——**三個數字（1995／1996／2013）各不相同，`year` 一律取 1995，且併輯的年份絕不得寫進本張。**藝人實體 life-span begin **1994**，早本張一年。**同名先行單曲：無。**",
+  "notes": "**擋下策展層三處。**(1) `exceptionReason` 寫「Equal Vision 從 **Krishnacore 廠牌轉向紐約街頭硬蕊的關鍵一張**」「也讓 EVR 的目錄從 Shelter、108 那一側**跨到 Lower East Side**」——**兩句都是查無來源的廠牌沿革與極值**：廠牌實體的 **disambiguation 是空的**，只查得到 **area Albany、life-span begin 1991**。**「Krishnacore」「轉向」「Lower East Side」全部不得寫**；**連「紐約的 Equal Vision」都要改——實體欄位登記的是 Albany。**｜(2) `exceptionReason` 寫「1995 年這張五首歌的 EP 是 Crown of Thornz 的**出道實體**」——**這一件成立**（目錄 4 個 release-group 裡本張排第 1），可以寫。｜(3) `curatorRisk` 採信 collectionId 661880635 並註明是併輯、年份 1996——**方向正確，本層升級為逐軌覆核。串流採信 661880635：第 1–5 軌逐位置比對（5:00／3:12／3:02／4:10／5:27）與本張五軌只差 0–1 秒，五軌全有試聽，採信。⚠ 它是 15 軌併輯、℗ 標 2013、串流側年份標 1996，可以當試聽來源，但不是本張原盤的證據；第 6–15 軌（含另一版本的〈Juggernaut〉與整張《Mentally Vexed》）不屬於本張，且該版的年份與軌數一律不得引。**｜(4) `reissuedBy` 寫「串流側流通的是併輯（標示年份 1996）」——**正確，予以確認**；補一項：**藝人目錄裡那張併輯的 release-group 掛的是 2013-06-13，與串流側標的 1996 又差十七年，三個年份互不相同。**｜**載體**：所釘 release 是 **CD，不是黑膠，行文不得寫「7 吋」或「黑膠」。**｜**軌數（裁定 251）**：本張 **5 軌**，行文引 5 軌；併輯 15 軌**絕不得引為本張軌數。**｜**人名與地名從嚴**：藝人實體 disambiguation 空、begin-area 空，**不得以 disambiguation 背書本名、不得寫個別成員的名字、不得寫任何區級地名**（area 只到 New York）；廠牌查不到創辦人，**不得寫。**｜**§5.5 舉證**：兩個網址皆回 200，`Crown_of_Thornz` 那頁提到本團與本盤名，`Equal_Vision_Records` 那頁提到本團但查不到本盤名，**前者站得住、後者偏弱；但無論如何，廠牌沿革那兩句仍不得寫。**"
+ },
+ {
+  "key": "desc2:Breakdown|Blacklisted",
+  "artist": "Breakdown",
+  "album": "Blacklisted",
+  "facts": [
+   {
+    "f": "release-group baeda30c 的欄位：title「Blacklisted」、artist-credit「Breakdown」、primary-type **EP**、secondary-types **空**、first-release-date **1997**。轄下**只有 1 筆 release**：1997 US Official **CD 6 軌**（**不是黑膠**），label-info **Eyeball Records、catno EB007**、無包裝資料、無條碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=baeda30c-894b-3e48-a378-73eb58326a4e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "1997 原盤（EB007）六軌與長度：1〈Blacklisted〉2:01、2〈(I Wanna See A) Street Fight〉2:31、3〈What It Is〉**1:31**、4〈Jail of Depression〉**3:13**、5〈Stuck in the City〉2:46、6〈Don't Give Up〉2:40。**六軌合計 14 分 42 秒；最長的〈Jail of Depression〉3 分 13 秒、最短的〈What It Is〉1 分 31 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=baeda30c-894b-3e48-a378-73eb58326a4e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**這六軌與 1987 年那捲 demo 沒有任何一首重疊（推翻策展層的說法）**：藝人名下 dc5bd1c0《Demo》(Album＋**Demo**，1987) 有兩筆 release——1987 US Official **Cassette 9 軌**（label-info `[no label]`、catno `[none]`，**無任何軌長**）曲序〈Sick People〉〈Safe in a Crowd〉〈You Gotta Fight〉〈Kickback〉〈Labelled〉〈Life of Bullshit〉〈Vengence〉〈Your Problems〉〈Pipe Dream〉，與 2002 US Official CD 9 軌（**Blackout! Records，catno BLK-0056-2**）曲序〈Sick People〉1:35〈Kickback〉1:56〈Labeled〉3:00〈Safe in a Crowd〉2:22〈You Gotta Fight〉2:25〈Life of Bullshit〉2:21〈Vengeance〉1:50〈Your Problems〉2:32〈Pipe Dream〉2:15。**九個曲名與本張六軌逐一比對，重疊為零。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dc5bd1c0-c5ad-4edd-90a6-b19dca0aa91a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人目錄分頁全列 **6 個 release-group**，依日期排序：1987《Demo》(Album＋Demo) 排第 1、1989《Runnin' Scared》(primary-type null＋Demo) 排第 2、**1997 本張排第 3**、1998-10-13《Plus Minus》(Album)、2000《Battle Hymns for an Angry Planet》(Album)、2014-01《Runnin' Scared》(Album＋Compilation)。**本張不是目錄裡最早的一筆，也不是第一張正式錄音。**藝人實體 6ae8d2e0：type Group、country US、area United States、**begin-area 空**、**life-span 起訖皆空**、disambiguation「**USA punk band**」（**只寫到國別，沒有城市也沒有年代**；同名實體 71 個）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6ae8d2e0-1c27-4995-981d-bc8ba65844d1&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌實體 Eyeball Records（424575c7）：type Original Production、**country 為空**、**area 記的是 New Jersey**、**life-span begin 1994**、disambiguation 空。**發行本張的廠牌實體登記在 New Jersey，早本張三年成立。**（同組 1987 那捲 demo 的 2002 年 CD 版掛的是 Blackout! Records，area New York、life-span begin 1988——**兩家廠牌不同、所在地也不同。**）",
+    "src": "https://musicbrainz.org/ws/2/label/424575c7-bd8b-45f7-b9c8-752e19a3af2c?fmt=json"
+   },
+   {
+    "f": "**回撈候選與三店搜尋皆查無**：回撈候選表記「目錄裡找不到」；另以掛名＋盤名在 us／gb／de 三店各做一次專輯搜尋，**三店皆回 0 筆**。**本張無串流試聽來源。⚠ 「Breakdown」是本批同名實體最多的掛名之一（71 個），配對絕不能用盤名或掛名字串，只能用識別碼。**",
+    "src": "https://itunes.apple.com/search?term=Breakdown%20Blacklisted&entity=album&country=us&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "六首歌十四分四十二秒，最短的一首一分三十一秒",
+   "十年前那捲九軌的 demo 跟這六首沒有一首重疊"
+  ],
+  "sound": "1997 年 Eyeball 的 EB007 是一張 CD、六軌：〈Blacklisted〉2:01、〈(I Wanna See A) Street Fight〉2:31、〈What It Is〉1:31、〈Jail of Depression〉3:13、〈Stuck in the City〉2:46、〈Don't Give Up〉2:40，合計 14 分 42 秒。六首都在一分半到三分十五秒之間，沒有一首特別短也沒有一首拖長。曲名連成一串：被列入黑名單、我想看一場街頭打架、事情就是這樣、憂鬱的牢房、困在城裡、別放棄。這個掛名十年前有一捲九軌的卡帶，那九首與這六首沒有任何一首同名；發行這張的廠牌，實體欄位登記的所在地與那捲卡帶後來的 CD 版廠牌並不相同。",
+  "keyTracks": [
+   "Blacklisted",
+   "Jail of Depression",
+   "Don't Give Up"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997**，轄下唯一 release 也是 1997 US Official（CD、6 軌、Eyeball EB007）。**沒有再發**（名下只有這一筆），`year` 取 1997 無爭議，**裁定 220 的再發覆蓋在本張不成立**。廠牌實體 life-span begin **1994**，早本張三年。**三店查無串流對應，無第三處可交叉對年。同名先行單曲：無。**",
+  "notes": "**擋下策展層四處。**(1) `exceptionReason` 寫「1997 年這張 EP 是他們**重組後把那批曲目正式錄成唱片的版本**」（指 1987 那捲 demo）——**逐軌覆核後完全不成立，這是本張最重的一處**：1987 那捲九軌卡帶的曲目是〈Sick People〉〈Safe in a Crowd〉〈You Gotta Fight〉〈Kickback〉〈Labelled〉〈Life of Bullshit〉〈Vengence〉〈Your Problems〉〈Pipe Dream〉，**與本張六軌重疊為零**。**這句必須整句刪掉。**｜(2) `exceptionReason` 寫「**Yonkers 出身**」——**不得寫**：藝人實體的 **begin-area 是空的**、life-span 起訖也空，**實體欄位查不到任何城市**；disambiguation 只寫「USA punk band」。｜(3) `exceptionReason` 寫「1987 年那捲 demo **在紐約硬蕊翻錄鏈裡地位極高**」——**極值排名，查無來源，不得寫**；可以寫的是那捲卡帶的硬事實（9 軌、廠牌欄標為「沒有廠牌」、2002 年才有 CD 版且換了另一家廠牌）。｜(4) `curatorWhy` 寫「本張是這支團**唯一封面已備妥的碟**，收的是『收得進來的那一張』」——**「收得進來的那一張」的框架正確，予以確認；但序數要收**：目錄 6 個 release-group 裡本張排第 3，**行文不得寫成「第一張」「出道作」或任何等義的序數。**｜(5) `curatorRisk` 已註明同名實體 71 個、不得單靠 disambiguation 斷言團籍細節——**這一處正確，予以確認**；補一項：**串流配對絕不能用「Breakdown」或「Blacklisted」這兩個字串，只能用識別碼。**｜**串流：三店各回 0 筆、回撈候選表亦記查無，確認本張無試聽來源。**｜**載體**：所釘 release 是 **CD，不是黑膠，行文不得寫「7 吋」或「黑膠」。**｜**軌數（裁定 251）**：本張 **6 軌**，名下無其他版本，行文引 6 軌安全；1987 那捲是 9 軌，**要提就得說明那是另一張碟。**｜**人名與地名從嚴**：藝人實體 begin-area 與 life-span 全空，**不得寫個別成員的名字、不得寫任何城市或區級地名**；廠牌查不到創辦人，**不得寫**——**但廠牌實體的 area（New Jersey）與 life-span begin（1994）是查得到的硬欄位，可以寫。**｜**§5.5 舉證**：兩個網址皆回 200，`Breakdown_(band)` 那頁提到本團與本盤名，`New_York_hardcore` 那頁提到本團名但查不到本盤名，**前者站得住、後者偏弱；且無論如何，`exceptionReason` 裡的 Yonkers 與「重錄 1987 demo」兩件事都不得寫。**"
  }
 ]
