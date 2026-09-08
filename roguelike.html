@@ -136,37 +136,40 @@
   .tally .verdict{margin-top:8px;border-top:1px solid var(--line);padding-top:8px;line-height:1.8;font-size:11px;}
   /* ===== 🎮 序章 RPG 場景：上半唱片行舞台、下半勇者鬥惡龍式黑底白框對話窗 ===== */
   .rpg{border:2px solid var(--black);background:#000;margin:6px 0 12px;}
-  .rpg-stage{position:relative;height:190px;overflow:hidden;background:#efe8d8;}
-  .rpg-wall{position:absolute;inset:0 0 40px 0;background:repeating-linear-gradient(0deg,#efe8d8 0 14px,#e6dfcc 14px 16px);}
-  .rpg-shelf{position:absolute;left:22%;top:30px;width:40%;height:38px;border:2px solid #4a3620;background:
-    repeating-linear-gradient(90deg,#2b2b2b 0 4px,#b8860b 4px 6px,#1f5fae 6px 10px,#111 10px 12px,#c11628 12px 15px,#333 15px 19px,#6a3fa0 19px 21px,#e8e8e8 21px 23px);box-shadow:0 4px 0 #4a3620;}
-  .rpg-shelf.s2{top:84px;width:34%;left:24%;}
-  .rpg-door{position:absolute;left:2%;top:18px;width:14%;height:132px;border:2px solid #4a3620;background:linear-gradient(#cfe3ee,#b9d3e2);}
-  .rpg-door::after{content:'';position:absolute;right:6px;top:60px;width:5px;height:5px;background:#b8860b;}
-  .rpg-floor{position:absolute;left:0;right:0;bottom:0;height:40px;background:repeating-linear-gradient(90deg,#b58a5a 0 22px,#a87d4f 22px 24px);border-top:2px solid #6b4a2b;}
-  .rpg-counter{position:absolute;left:64%;bottom:10px;width:32%;height:46px;background:#6b4a2b;border:2px solid #3f2a16;border-top:8px solid #8d6a45;z-index:3;}
-  .rpg-speaker{position:absolute;left:10px;top:-30px;width:20px;height:24px;background:#111;border:1px solid #444;}
-  .rpg-speaker i{position:absolute;left:5px;width:8px;height:8px;border-radius:50%;background:#555;border:1px solid #888;}
-  .rpg-speaker i:first-child{top:3px;} .rpg-speaker i:last-child{top:13px;}
-  .rpg-tt{position:absolute;right:10px;top:-14px;width:34px;height:8px;background:#222;border:1px solid #555;}
-  .rpg-tt::after{content:'';position:absolute;left:8px;top:-7px;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle,#c11628 0 3px,#111 3px 8px);}
-  .rpg-spr{position:absolute;bottom:14px;left:10%;z-index:4;line-height:0;transition:left .9s ease,bottom .9s ease;}
-  .rpg-spr svg{display:block;}
-  .rpg-spr.o.behind{z-index:2;}
+  /* 舞台＝描 art/ref-shop.jpg 而來的三層：背景 → 門板 → 小人 → 前景（後／前）。
+     邏輯尺寸 448×492，站位一律用 %。座標契約寫在 scripts/trace-shop-art.py 的 docstring。 */
+  .rpg-stage{position:relative;width:100%;aspect-ratio:448/492;overflow:hidden;
+    background:#3a2a18 url('art/shop2-bg.jpg') center center / 100% 100% no-repeat;}
+  .rpg-fg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
+  .rpg-fg.back{z-index:6;}          /* 櫃檯＋器材＋牆邊唱片櫃：下緣 y≤400 */
+  .rpg-fg.front{z-index:20;}        /* 折疊長桌＋桌上木箱＋桌下黑籃：下緣 y≥402 */
+  .rpg-door{position:absolute;z-index:2;pointer-events:none;left:2.68%;top:31.50%;width:17.14%;}
+  .rpg-spr{position:absolute;width:17.41%;z-index:4;line-height:0;
+    transition:left .85s ease-in-out, bottom .7s ease-in-out, opacity .3s;}
+  .rpg-spr svg{display:block;width:100%;height:auto;}
+  .rpg-spr.hide{opacity:0;}
   .rpg-spr.o.busy svg{animation:rpgBusy 1.1s steps(1,end) infinite;}
   @keyframes rpgBusy{0%,100%{transform:translateY(0);}50%{transform:translateY(2px);}}
+  .rpg-spr.dig{animation:rpgDig .62s ease-in-out infinite;}
+  @keyframes rpgDig{0%,100%{transform:translateY(0);}50%{transform:translateY(3%);}}
   .rpg-spr.p svg{animation:sprBob 1.3s steps(1,end) infinite;}
   .rpg-spr.p.shake{animation:rpgShake .5s steps(2,end) 3;}
   @keyframes rpgShake{0%,100%{transform:translateX(0);}50%{transform:translateX(-4px);}}
-  .rpg-anger{position:absolute;left:30px;top:-16px;font-size:16px;line-height:1;opacity:0;transition:opacity .2s;}
+  /* 💢 掛玩家頭頂偏右；掛左上角的話三人同框時會飄到男子旁邊，變成男子在生氣 */
+  .rpg-anger{position:absolute;left:46%;top:-22%;line-height:1;opacity:0;transition:opacity .2s;
+    font-size:min(4.4vw,20px);}
   .rpg-anger.on{opacity:1;animation:rpgPop .5s steps(3,end) infinite;}
   @keyframes rpgPop{0%,100%{transform:scale(1);}50%{transform:scale(1.25);}}
-  .rpg-notes{position:absolute;left:66%;bottom:88px;width:60px;height:70px;z-index:5;pointer-events:none;opacity:0;transition:opacity .3s;}
+  .rpg-notes{position:absolute;left:47%;bottom:43%;width:14%;height:18%;z-index:5;
+    pointer-events:none;opacity:0;transition:opacity .3s;}
   .rpg-notes.on{opacity:1;}
-  .rpg-notes span{position:absolute;left:8px;bottom:0;font-size:16px;font-weight:700;color:#111;}
-  .rpg-notes.on span{animation:rpgNote 1.8s ease-out infinite;}
-  .rpg-notes.on span:nth-child(2){left:24px;animation-delay:.6s;} .rpg-notes.on span:nth-child(3){left:40px;animation-delay:1.2s;}
-  @keyframes rpgNote{0%{transform:translateY(0) scale(.7);opacity:0;}15%{opacity:1;}100%{transform:translateY(-56px) translateX(8px) scale(1.1);opacity:0;}}
+  .rpg-notes span{position:absolute;left:6%;bottom:0;font-weight:700;color:#2a1c0e;
+    font-size:min(4.2vw,19px);text-shadow:0 1px 0 rgba(255,255,255,.45);}
+  .rpg-notes.on span{animation:rpgNote 1.9s ease-out infinite;}
+  .rpg-notes.on span:nth-child(2){left:38%;animation-delay:.63s;}
+  .rpg-notes.on span:nth-child(3){left:70%;animation-delay:1.26s;}
+  @keyframes rpgNote{0%{transform:translateY(0) scale(.7);opacity:0;}15%{opacity:1;}
+    100%{transform:translateY(-64px) translateX(9px) scale(1.1);opacity:0;}}
   .rpg-panel{background:#fff;padding:10px 10px 8px;border-top:2px solid var(--black);}
   .rpg-win{position:relative;background:#000;color:#fff;border:4px double #fff;margin:0;padding:16px 16px 22px;min-height:104px;cursor:pointer;user-select:none;-webkit-user-select:none;}
   .rpg-win.foe{border-color:#ff6b7a;}
@@ -2141,29 +2144,48 @@ function shopCheckout(){
 //  🎮 唱片行序章的 RPG 場景（勇者鬥惡龍式：上半場景、下半黑底白框對話窗，點一下進下一段，右下角 ▼ 閃爍）
 //  beats＝一段段對話；stage 只寫「這一段有變化的站位／特效」，其餘沿用上一段。ui＝這一段要玩家操作的面板。
 // =========================================================================
-const RPG_POS = {   // 站位（left%／bottom px），舞台 100%×190px；櫃台在右側，老闆站櫃台後面（腳被櫃台擋住）
-  p:{ door:[9,14], shelf:[36,14], mid:[50,14], leave:[22,14] },
-  o:{ counter:[71,44], floor:[58,14], between:[40,14] },
-  f:{ out:[-30,14], door:[5,14] },
+// 站位（邏輯座標 [中心 x, 腳底 y]，場景 448×492）。座標契約見 scripts/trace-shop-art.py：
+// 牆／地板交界 y=325；櫃檯 x 102–307、檯面上緣 y=299、檯身下緣 400；
+// 折疊長桌 x 247–460、桌面 y 371、桌腳落地 467；前方 x 0–245 / y 400–492 淨空。
+const RPG_LW=448, RPG_LH=492, RPG_SVG=78, RPG_FOOT=5;
+const RPG_POS = {
+  p:{ door:[48,408],      // 剛推門進來，站在門口
+      browse:[136,458],   // 自己逛（離櫃檯與長桌都夠遠）
+      pay:[168,430],      // 結帳：站在櫃檯前
+      leaving:[132,418],  // 準備離開，往門口走
+      atdoor:[128,420] }, // 在門口撞見男子
+  o:{ counter:[174,325],  // 櫃檯後面（腳底貼著牆，被檯面擋到只露頭肩）
+      aisle:[72,345],     // 繞出櫃檯左端
+      frontleft:[74,424], // 櫃檯左前方的轉角（走回櫃檯要先到這裡）
+      dig1:[196,432], dig2:[228,420], dig3:[210,440],   // 在長桌左端翻片
+      between:[85,452] }, // 站到兩人中間緩頰
+  f:{ out:[42,336], door:[42,344], in:[42,396] },
 };
+// 前景分兩層（back z6、front z20），小人依腳底 y 夾進去；同一層裡再照深度互相排序。
+const rpgZ = y => y < 402 ? 2
+               : y < 458 ? 7  + Math.round((y - 402) / 8)
+                         : 21 + Math.round((y - 458) / 8);
+const rpgPc = q => ({ left:((q[0]-RPG_SVG/2)/RPG_LW*100).toFixed(2)+'%',
+                      bottom:((RPG_LH-(q[1]+RPG_FOOT))/RPG_LH*100).toFixed(2)+'%' });
 let RPG_BEATS = [   // ✏️ 後台「序章劇本」可整份覆寫（gameConfig/roguelike.script.beats）
-  { who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage:{p:'door',o:'counter',f:'out'} },
+  { who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage:{p:'door',o:'counter',f:'out',door:'swing'} },
   { who:'', text:'櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
-  { who:'', text:'你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', stage:{p:'shelf'} },
+  { who:'', text:'你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', stage:{p:'browse'} },
   { who:'', text:'這時候，店裡的音響傳出一段旋律。', stage:{notes:true,oBusy:false} },
   { who:'', text:'……很迷人。你停下腳步，不自覺跟著點起頭來。' },
-  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', stage:{p:'mid'} },
+  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。' },
   { who:'老闆', text:'「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」', ui:'aces', prompt:'（挑一張。）' },
   { who:'老闆', text:'「……你眼光真不錯。」老闆終於抬起頭來，看著你。', stage:{notes:false} },
   { who:'老闆', text:'「這張是我的私人收藏。今天讓給你。」' },
-  { who:'', text:'老闆走出櫃檯，在店裡翻翻找找。', stage:{o:'floor'} },
+  { who:'', text:'老闆不發一語，走出櫃檯，在那張長桌上的木箱裡翻翻找找。', stage:{oPath:['aisle','dig1','dig2','dig3'],oDig:true} },
   { who:'老闆', text:'「這四張也很適合你。跟你有緣，收下吧。」', ui:'recs', prompt:'（老闆把四張盤遞給你。）' },
-  { who:'', text:'你抱著五張唱片，心滿意足，正準備離開。', stage:{p:'leave',o:'counter'} },
-  { who:'', text:'這時，門開了。', stage:{f:'door'} },
-  { who:'', text:'一名男子走進來。他的視線，落在你手上的那幾張專輯上。' },
+  { who:'', text:'你把五張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。', stage:{p:'pay',oPath:['frontleft','aisle','counter'],oDig:false} },
+  { who:'', text:'你抱著紙袋，心滿意足，往門口走去。', stage:{p:'leaving'} },
+  { who:'', text:'這時，門開了。', stage:{f:'door',door:'open'} },
+  { who:'', text:'一名男子走進來。他的視線，落在你手上的那幾張專輯上。', stage:{f:'in',p:'atdoor',door:'shut'} },
   { who:'男子', text:'「……這品味，也敢出來丟臉？」' },
   { who:'', text:'你的憤怒表露無遺。', stage:{anger:true} },
-  { who:'', text:'老闆不發一語，緩步走出櫃檯，站在兩人之間。', stage:{o:'between',anger:false} },
+  { who:'', text:'老闆不發一語，緩步走出櫃檯，站在兩人之間。', stage:{oPath:['aisle','between'],anger:false} },
   { who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」', ui:'choice' },
 ];
 let _rpg=null;
@@ -2171,19 +2193,22 @@ let _rpg=null;
 function rpgStart(beats, stage, beat){
   document.body.classList.remove('in-battle');
   if(_rpg && _rpg.timer) clearInterval(_rpg.timer);
-  _rpg = { beats, beat:beat||0, typing:false, timer:null, uiOpen:false, stage:Object.assign({p:'door',o:'counter',f:'out',fSpr:'e0',notes:false,anger:false,oBusy:false}, stage||{}), shown:'' };
+  if(_rpg && _rpg.walk) clearTimeout(_rpg.walk);
+  if(_rpg && _rpg.doorT) _rpg.doorT.forEach(clearTimeout);
+  _rpg = { beats, beat:beat||0, typing:false, timer:null, uiOpen:false, walk:null, walkKey:null, doorT:[],
+           stage:Object.assign({p:'door',o:'counter',f:'out',fSpr:'e0',notes:false,anger:false,oBusy:false,oDig:false}, stage||{}), shown:'' };
   const pl = avatarRows(META.avatar);
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='pvp.html'">← 回品味生死鬥</button><span class="pill" style="margin-left:auto">🏪 巷子裡的唱片行</span></div>
     <div class="rpg" id="rpg">
       <div class="rpg-stage" id="rpgStage">
-        <div class="rpg-wall"></div><div class="rpg-shelf"></div><div class="rpg-shelf s2"></div><div class="rpg-door"></div>
-        <div class="rpg-spr o" id="rpgO">${pixArtHTML(SPR.owner, 40)}</div>
-        <div class="rpg-counter"><div class="rpg-speaker"><i></i><i></i></div><div class="rpg-tt"></div></div>
+        <img class="rpg-door" id="rpgDoor" src="art/shop2-door-0.png" alt="">
         <div class="rpg-notes" id="rpgNotes"><span>♪</span><span>♫</span><span>♪</span></div>
-        <div class="rpg-spr p" id="rpgP">${pixArtHTML(pl, 40)}<div class="rpg-anger" id="rpgAnger">💢</div></div>
-        <div class="rpg-spr f" id="rpgF">${pixArtHTML(SPR[_rpg.stage.fSpr]||SPR.e0, 40)}</div>
-        <div class="rpg-floor"></div>
+        <div class="rpg-spr o" id="rpgO">${pixArtHTML(SPR.owner, 96)}</div>
+        <div class="rpg-spr p" id="rpgP">${pixArtHTML(pl, 96)}<div class="rpg-anger" id="rpgAnger">💢</div></div>
+        <div class="rpg-spr f hide" id="rpgF">${pixArtHTML(SPR[_rpg.stage.fSpr]||SPR.e0, 96)}</div>
+        <img class="rpg-fg back" src="art/shop2-fg-back.png" alt="">
+        <img class="rpg-fg front" src="art/shop2-fg-front.png" alt="">
       </div>
       <div id="rpgPanelWrap"></div>
       <div class="rpg-win" id="rpgWin" onclick="rpgTap()">
@@ -2199,13 +2224,41 @@ function rpgStart(beats, stage, beat){
 }
 // 序章（推門 → 三選一 → 四張 → 男子嗆聲 → 對決）
 function renderShopScene(beat){ shopState(); rpgStart(RPG_BEATS, {p:'door',o:'counter',f:'out'}, beat||0); }
+function rpgPut(id, key, pos){
+  const el=document.getElementById(id), q=RPG_POS[key] && RPG_POS[key][pos];
+  if(!el || !q) return;
+  const c=rpgPc(q); el.style.left=c.left; el.style.bottom=c.bottom; el.style.zIndex=rpgZ(q[1]);
+}
+// 走一段路線：斜線跨越 z 門檻（腳底 402）會在起步瞬間就切到錯的層、人直接穿進家具裡，
+// 所以繞路一律拆成幾段，每段的 z 值在整段裡都成立。
+function rpgWalk(id, key, path){
+  if(_rpg.walk) clearTimeout(_rpg.walk);
+  const legs=[].concat(path); let i=0;
+  const step=()=>{ if(!_rpg || _rpg.walkKey!==key) return;
+    rpgPut(id, key, legs[i]); _rpg.stage[key==='o'?'o':'p']=legs[i];
+    if(++i<legs.length) _rpg.walk=setTimeout(step, 780); };
+  _rpg.walkKey=key; step();
+}
+// 門板三格：關／半開／全開。推門進來就開了再關。
+function rpgDoor(mode){
+  const el=document.getElementById('rpgDoor'); if(!el) return;
+  if(_rpg.doorT) _rpg.doorT.forEach(clearTimeout); _rpg.doorT=[];
+  const set=f=>{ el.src='art/shop2-door-'+f+'.png'; };
+  if(mode==='open'){ [1,2].forEach((f,k)=>_rpg.doorT.push(setTimeout(()=>set(f), k*190))); }
+  else if(mode==='swing'){        // 開→停一下→關（有人推門進來）
+    [[1,0],[2,190],[1,900],[0,1090]].forEach(([f,d])=>_rpg.doorT.push(setTimeout(()=>set(f), d)));
+  } else set(0);
+}
 function rpgApplyStage(st){
   Object.assign(_rpg.stage, st||{});
   const S=_rpg.stage;
-  const put=(id,key,pos)=>{ const el=document.getElementById(id); const p=RPG_POS[key][pos]; if(el&&p){ el.style.left=p[0]+'%'; el.style.bottom=p[1]+'px'; } };
-  put('rpgP','p',S.p); put('rpgO','o',S.o); put('rpgF','f',S.f);
-  const o=document.getElementById('rpgO'); if(o){ o.classList.toggle('busy', !!S.oBusy); o.classList.toggle('behind', S.o==='counter'); }
-  const f=document.getElementById('rpgF'); if(f && st && st.fSpr){ f.innerHTML=pixArtHTML(SPR[st.fSpr]||SPR.e0, 40); }
+  if(st && st.oPath) rpgWalk('rpgO','o',st.oPath); else if(S.o){ _rpg.walkKey=null; rpgPut('rpgO','o',S.o); }
+  rpgPut('rpgP','p',S.p); rpgPut('rpgF','f',S.f);
+  if(st && st.door) rpgDoor(st.door);
+  const o=document.getElementById('rpgO');
+  if(o){ o.classList.toggle('busy', !!S.oBusy); o.classList.toggle('dig', !!S.oDig); }
+  const f=document.getElementById('rpgF');
+  if(f){ f.classList.toggle('hide', S.f==='out'); if(st && st.fSpr) f.innerHTML=pixArtHTML(SPR[st.fSpr]||SPR.e0, 96); }
   const n=document.getElementById('rpgNotes'); if(n) n.classList.toggle('on', !!S.notes);
   const a=document.getElementById('rpgAnger'); if(a) a.classList.toggle('on', !!S.anger);
   const p=document.getElementById('rpgP'); if(p){ p.classList.toggle('shake', !!S.anger); }
@@ -2309,22 +2362,22 @@ function shopLeave(how){
 // =========================================================================
 let TUT_EPILOGUE_BEATS = [   // ✏️ 同上（…script.epilogue）；stage／ui 由後台原樣帶回，只有 who／text 給店主改
 
-  { who:'', text:'對決結束。店裡安靜了幾秒。', stage:{p:'leave',o:'between',f:'door',fSpr:'e0',anger:false,notes:false} },
+  { who:'', text:'對決結束。店裡安靜了幾秒。', stage:{p:'atdoor',o:'between',f:'in',fSpr:'e0',anger:false,notes:false} },
   { who:'男子', text:'「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。' },
   { who:'男子', text:'「搵休督欸丟！」' },
-  { who:'', text:'門上的鈴鐺又響了一聲。他走了。', stage:{f:'out'} },
-  { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'floor'} },
+  { who:'', text:'門上的鈴鐺又響了一聲。他走了。', stage:{f:'out',door:'swing'} },
+  { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'between'} },
   { who:'老闆', text:'「我看你對音樂脈絡，很有天份。」' },
-  { who:'老闆', text:'「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃檯底下拖出一個木箱。）' },
+  { who:'老闆', text:'「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從長桌底下拖出一個木箱。）' },
   { who:'老闆', text:'「年輕人，有空再來這邊走走，與大家交流音樂。」' },
-  { who:'', text:'你正要道謝，門又開了。', stage:{f:'door',fSpr:'e1'} },
+  { who:'', text:'你正要道謝，門又開了。', stage:{f:'door',fSpr:'e1',door:'open'} },
   { who:'？？？', text:'「聽說這裡有個新來的，品味不錯？」' },
   { who:'', text:'無止盡的品味試煉，開始了。', ui:'go' },
 ];
 function tutEpilogueBeats(){ return TUT_EPILOGUE_BEATS; }
 function renderTutEpilogue(){
   saveRun('epilogue');
-  rpgStart(tutEpilogueBeats(), {p:'leave',o:'between',f:'door',fSpr:'e0'}, 0);
+  rpgStart(tutEpilogueBeats(), {p:'atdoor',o:'between',f:'in',fSpr:'e0'}, 0);
 }
 // 老闆的木箱：固定這三件（守／攻／續三個方向，都是 tier 1）——序章走完就是新手，
 // 不會有已持有的重複；「再玩一次教學」時撞到同款仍照藏家規則升一級並整新。

@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-08｜dip-vinyl-shop｜序章舞台正式換進 roguelike.html（描圖美術＋新走位）
+
+店主：「先推上去 之後要改再說」。把 `stage-preview.html` 上定案的那一套搬進遊戲。
+
+**換掉的東西**：原本用 CSS 漸層拼的 `.rpg-wall`／`.rpg-shelf`／`.rpg-counter`／
+`.rpg-speaker`／`.rpg-tt`／`.rpg-floor` 全部刪除，改成描圖來的三層：
+`shop2-bg.jpg` → 門板 `shop2-door-{0,1,2}.png` → 小人 → `shop2-fg-back/front.png`。
+舞台從 `height:190px` 改成 `aspect-ratio:448/492`，站位全部改用 %。
+
+**新增的機制**（都從預覽頁搬過來）：
+· `rpgZ(y)` 依腳底 y 把小人夾進前景兩層之間（<402 → z2；402–458 → z7–14；≥458 → z21+）。
+· `rpgWalk(id,key,path)` 走多段路線——**斜線跨越 z 門檻會在起步瞬間切到錯的層、人直接穿進家具**，
+  所以繞路一律拆段。beat 用 `stage:{oPath:[...]}` 指定。
+· `rpgDoor(mode)` 門板三格：`'open'`／`'swing'`（開→停→關）／預設關。
+
+**劇本改動**（18 句 → 19 句）：照店主要求，老闆找完五張後**兩人一起到櫃檯結帳**
+（新增一句），玩家再往門口走，**到門口才撞見剛推門進來的男子**，老闆這時才繞出櫃檯。
+翻片改成在長桌左端（`oPath:['aisle','dig1','dig2','dig3']` ＋ `.dig` 上下微晃）。
+尾聲的站位也跟著改（`p:'leave'`→`atdoor`、`o:'floor'`→`between`、開門加 `door` 動畫）。
+
+**後台同步**：`admin.html` 的 `DEF_SCRIPT` 用腳本從 `roguelike.html` 重新抓一次
+（beats 19、epilogue 11），不然後台顯示的預設劇本會跟前台對不起來。
+
+- 主要檔案：`roguelike.html`（舞台 CSS／HTML、`RPG_POS`、`rpgApplyStage`、`RPG_BEATS`、
+  `TUT_EPILOGUE_BEATS`）、`admin.html`（DEF_SCRIPT）
+- 驗證：Chromium 載入 `roguelike.html?prologue=1`——**沒有 JS 錯誤**，
+  `RPG_POS`／`rpgPc`／`rpgZ`／`rpgWalk`／`rpgDoor`／`rpgApplyStage` 都在，beats 19、epi 11；
+  沙箱連不到 Firebase，改用 `renderShopScene(0)` 直接叫出舞台截圖確認：
+  房間、門、櫃檯、長桌、木箱都正確，老闆站櫃檯後只露頭肩，玩家在門口。
+  （Firebase 相關的完整流程要在預覽站上實測。）
+
 ### 2026-09-08｜dip-vinyl-shop｜櫃檯切圖黏了一條牆碎片（TOP_CLIP）
 
 店主圈出櫃檯上方牆面有「一條東西」。查法：把 `shop2-fg-back.png` 的透明區塗成洋紅
