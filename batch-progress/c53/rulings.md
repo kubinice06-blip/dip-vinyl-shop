@@ -5507,3 +5507,33 @@ c-122 兩組合計 **109 個舉證網址實測全部回 200、0 個打不開**�
    **通用類別條目（`Youth_crew`、`Straight_edge`、`Split_album` 這種）一律不算證據。**
 2. **研究層**要逐筆覆核，把站不住的列出來。
 3. **站不住的張數要寫進 HANDOFF**——**上架前必須補齊，否則白名單的舉證形同虛設。**
+
+## 第 258 條（2026-09-08，追第 256 條追出來的真正病灶）：**`genreException` 從來沒有被帶進卡單——所有 §5.5 白名單批都受影響**
+
+第 256 條修好 `fix-rgmbid.mjs` 的 `epOk` 之後，**Chain of Strength 那個警告還在**。
+往上追才發現真正的病灶不在計分函式，在更前面一層：
+
+**`batch-progress/make-cards-generic.mjs` 只把 `releaseType`、`exceptionReason`、
+`exceptionEvidenceUrls` 三個欄位帶進卡單，`genreException` 從來沒帶。**
+
+實測：`c122-cards.json` 43 張，**帶 `genreException` 的是 0 張**。
+
+**影響範圍比 c-122 大得多**：
+- **`fix-rgmbid` 的 `epOk` 永遠判不出來**——就算第 256 條修對了，讀到的仍是 `undefined`。
+- **本機組 manifest 時 `scripts/verify-album-onboarding.mjs` 會擋**：
+  §5.5 明文要求 `identity` 帶 `genreException`，而卡單裡沒有這個欄位。
+- **`electronic` 與 `asia-mini-album` 的既有批同樣受影響**——
+  c-97、c-118 那幾批的 §5.5 卡到了本機都缺這個欄位。
+
+**已修**：`make-cards-generic.mjs` 加
+`genreException: r.genreException || r.releaseTypeException || ''`，
+c-122 重跑後 **41/43 張帶上了**（另 2 張是 primary-type=Album，本來就不該有）。
+
+**⚠ 給本機**：**c-97、c-118 以及其他走過 §5.5 的批，卡單裡都沒有 `genreException`**，
+組 manifest 時要從各批的 `prop-*.json` 補回來。
+
+**這一條是第 256 條的下一層**，兩條合起來是同一個教訓：
+**一個欄位被 N 個地方讀，就要確認它在 N 個地方都到得了。**
+第 256 條修的是「讀的人用錯值」，這一條修的是「那個值根本沒送到」——
+**而兩者的外顯症狀一模一樣**（工具回報「標題都對不上」）。
+**修好上層之後症狀沒消失，才是往下追的訊號。**

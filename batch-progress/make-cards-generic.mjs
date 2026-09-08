@@ -26,6 +26,13 @@ for (const g of groups) {
       curatorWhy: r.why || '', curatorRisk: r.risk || '', mbNote: r.mbNote || '',
       releaseType: r.releaseType, exceptionReason: r.exceptionReason || '',
       exceptionEvidenceUrls: r.exceptionEvidenceUrls || [],
+      // 2026-09-08（c-122 抓到）：`genreException` 原本沒被帶進卡單，
+      // 於是 §5.5 白名單卡到了下游全部看不見自己的例外身分——
+      // `fix-rgmbid` 的 epOk 判不出來（每張 EP 先扣 12 分），
+      // 本機組 manifest 時 `verify-album-onboarding.mjs` 也會擋
+      // （§5.5 要求 identity 帶 genreException）。
+      // `electronic` 與 `asia-mini-album` 的既有批同樣受影響，本機組卡時要補。
+      genreException: r.genreException || r.releaseTypeException || '',
       selfTitled: !!r.selfTitled, apex: null, group: g,
       // 類型標示（2026-09-02 店主指示）：深掘／廣度＋場景，未來好分類。
       // 查表在 label-lines.mjs 的 LINES；新開批次要先在那裡登記。
