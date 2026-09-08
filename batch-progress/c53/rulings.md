@@ -5631,3 +5631,37 @@ Ruja《Algus》取 1971、Mess 取 1975、Pērkons 取 1981，都站得住——
 
 **做法**：一張碟有多筆 release 時，**日期、廠牌、catno、載體要出自同一筆**；
 要跨筆就得在正文裡講清楚是兩個版本。這道檢查目前沒有工具會做。
+
+## 第 263 條（2026-09-08，c-124 §5.6 舉證補齊）：**廠牌總覽頁在合輯批也一樣不算舉證，而且它掩護了兩個廠牌欄錯誤**
+
+裁定 257 是在 c-122 的 §5.5 抓到的（通用類別條目不算證據）。
+**c-124 的 §5.6 八張裡有四張踩同一個坑**，形狀更糟：
+
+| 碟 | 原本掛的兩個非資料庫網址 | 實測 |
+|---|---|---|
+| Raks Raks Raks | `rateyourmusic.com/label/pharaway_sounds/`、`honestjons.com/shop/label/Pharaway_Sounds` | 一個 403，另一個 200 但**逐字搜過整頁「Raks」零次** |
+| Mehrpouya《Soul Raga》 | Discogs 與 RYM 的 **Pharaway Sounds 廠牌頁** | **兩個都 403** |
+| Ramesh 同名 | Discogs 與 Honest Jon's 的 **Pharaway Sounds 廠牌頁** | 一個 403，另一個 200 但**「Ramesh」零次** |
+| Marjan《كوير دل》 | 另一輯的商品頁＋MB 的**藝人**頁 | 都可讀，但**沒有一筆是本輯自己的頁面** |
+
+**四張全部掛在「廠牌總覽頁」這一種形狀上，而廠牌總覽頁掩護了兩個實際的欄位錯誤**：
+- **Raks Raks Raks 的廠牌根本不是 Pharaway Sounds**，release 端點記的是
+  **Raks Discos、編號 RAKS-DISCOS 001**。掛著 Pharaway 的廠牌頁當證據，
+  **等於拿一家沒關係的廠牌替另一家背書**，而且因為頁面「打得開」，沒有任何檢查會發現。
+- **Marjan 那張的 `label` 欄寫著「MB 該 release 未填 label-info」**——那是裁定 259 的形狀
+  （問 release-group 端點），release 端點記的是 **Taraneh 193 CD**。
+
+**做法**：四張的舉證一律改成 **release-group ＋ release 兩個資料庫網址**
+（沿用 c-123 Grünberg 那張的先例）。理由：**release 網址記的正是 `exceptionReason` 引的那幾格**
+——廠牌、編號、載體、軌數、國別、日期，**逐格對得上**，比任何一個打得開卻沒提到本輯的商品頁都強。
+`exceptionReason` 同步重寫，刪掉「唯一成輯流通的文獻」「第一批樂手之一」這類無來源斷言，
+只留資料庫端查得到的事實，並把兩個廠牌欄錯誤寫進理由本身當紀錄。
+
+**另外三張（Pomegranates、Zendooni、Khana Khana）維持原狀**：
+它們各有一個網址回 403，但**剩下兩個都讀得到、也都真的提到本輯**，已滿足 §5.6 的兩份門檻。
+**Kourosh Yaghmaei《Back From the Brink》是這八張唯一三份全成立的一張。**
+
+**實測補記**：`musicbrainz.org` 的**網頁版**目前擋機器抓取
+（任何 UA 都回一個「Verifying your browser」的 JS 挑戰頁，1396 bytes），
+**`ws/2` API 正常**。所以「拿 curl 驗 MB 網址」會得到假的失敗——
+覆核 MB 舉證要打 API，不要打網頁。
