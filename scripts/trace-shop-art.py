@@ -78,7 +78,7 @@ TILE_FILL = {'counter': (1156, 1320, 462, 1162, 650, 748)}  # (y0,y1, 洞x0,洞x
 # 個別調門檻：器材是牆上的深色方塊，門檻低會把牆的細微色差也算進來
 # 參考圖裡兩個紙箱的**底部本來就被原圖下緣切掉**（畫到 y=1970 就沒了），
 # 所以不管挪到哪都會露出一個平口。這裡把箱身往下接長、再壓一條底緣與接地陰影。
-EXTEND = {'box1': 96}                            # piece: 往下補幾列
+EXTEND = {}                                      # piece: 往下補幾列（目前用不到）
 CUT_OPTS = {'gear': dict(wall_thr=150, min_blob=1200),
             'spkL': dict(wall_thr=190, min_blob=1200),
             'spkR': dict(wall_thr=190, min_blob=1200)}
@@ -92,8 +92,9 @@ LAYOUT = {
     'gear':    (805, 1098, 1.0, False),    # 唱盤＋擴大機往右挪 57px
     'spkR':    (1069, 1052, 1.0, False),   # 右喇叭往右挪 53px，貼到檯面右端
     'rbins':   None,                       # 右邊那組貼右牆，不動
-    'crate':   (1020, 1540, 0.60, True),   # 原本擋在左前方 → 縮小挪到中右前，讓出走道
-    'box1':    (1396, 1470, 0.82, True),   # 往右挪；箱底是補出來的，要留空間別再被下緣切到
+    'crate':   (1024, 1618, 0.52, True),   # 縮小挪到中右前「最下面」：上緣要低於 y=405，
+                                           #  老闆到右邊唱片區翻找時才不會整個被擋住
+    'box1':    'drop',                     # 參考圖裡的紙箱沒有底，改用 PROPS 裡另外畫好的
     'box2':    'drop',                     # 兩個紙箱疊在一起太擠，收掉一個
 }
 
@@ -194,6 +195,15 @@ def soft_shadow(img, x, y, w, h):
     img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(14)))
 
 
+# ── 外掛道具：不是從參考圖描出來的，是店主另外產、已經去背的完整物件 ──────
+#   （參考圖裡的紙箱下緣被原圖切掉、沒有底，補出來的總是不對；改用畫好的整個箱子）
+#   name: (檔案, 目的地左上角 x, y, 縮放, 疊在哪一層, 要不要影子)   ── 全部原圖座標
+PROPS = {
+    # 上緣同樣要低於 y≈410（邏輯），否則會擋住在右邊唱片區前面翻找的老闆
+    'boxA': ('art/props/box-a.png', 1400, 1644, 0.71, 'front', True),
+}
+
+
 # 前景要分兩層，小人才能「站在櫃檯前面、但在挖寶櫃後面」
 FG_BACK  = ['counter', 'rbins', 'spkL', 'gear', 'spkR']   # 下緣在 y=400 以上
 FG_FRONT = ['crate', 'box1', 'box2']       # 下緣在 y=402 以下
@@ -223,6 +233,18 @@ def main():
         if shadow:
             soft_shadow(fg, dx + pw * .04, dy + ph * .80, pw * .92, ph * .26)
         fg.alpha_composite(piece, (dx, dy))
+
+    for name, (path, dx, dy, sc, layer, shadow) in PROPS.items():   # 外掛道具
+        prop = Image.open(os.path.join(ROOT, path)).convert('RGBA')
+        pw, ph = int(prop.width * sc), int(prop.height * sc)
+        prop = prop.resize((pw, ph), Image.LANCZOS)
+        if dy + ph > H:
+            print(f'  ⚠ {name} 會超出畫布下緣 {dy + ph - H}px')
+        if shadow:
+            soft_shadow(layers[layer], dx + pw * .06, dy + ph * .86, pw * .88, ph * .20)
+        layers[layer].alpha_composite(prop, (dx, dy))
+        print(f'  道具 {name}: {pw}×{ph} @ ({dx},{dy}) → 邏輯 x {dx//SCALE}–{(dx+pw)//SCALE}'
+              f'、y {dy//SCALE}–{(dy+ph)//SCALE}')
 
     # ── 門板三格：全開（原樣）／半開／關（往右拉寬填滿門洞）──
     panel = cut(ref, empty, PANEL, wall_thr=40, min_blob=800)
