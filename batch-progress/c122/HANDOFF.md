@@ -1,6 +1,6 @@
 # c-122 交接（2026-09-08）：紐約硬蕊與 straight edge 的 7 吋，43 張走完雲端段
 
-**⚠ 這批上架前有一件必做的事**（第三節）：**§5.5 的舉證有 20 個站不住，要補齊。**
+**⚠ 原本有一件必做的事：§5.5 的舉證有 20 個站不住。2026-09-08 已補齊 31 張**（第三節、裁定 265）。
 
 ## 一、這批是什麼
 
@@ -61,7 +61,25 @@ Krakdown、Outburst、The Icemen、Life's Blood、Side by Side。
 
 **`chk-prop` 只檢查「是不是兩個 HTTPS 網址」，驗證器也只檢查數量——
 沒有任何一道自動檢查會讀那個頁面。**
-**上架前要補齊，否則白名單的舉證形同虛設。**
+**2026-09-08 已補齊（裁定 265）**：**改了 31 張**（43 − 11 張研究層判站得住 − 1 張同名 Album 不走 §5.5）。
+**26 張補到了本盤或本團層級的維基來源**，每一個都逐頁讀過並在紀錄裡指名支持哪一句；
+**5 張確實找不到任何本張／本團層級的來源**（Cause for Alarm、Krakdown、Absolution、
+Maximum Penalty、Alone in a Crowd / Inside Out——這幾支團在英文維基根本沒有條目），
+**`exceptionReason` 縮到那筆 release 能支持的範圍**，第二個網址改用 `musicbrainz.org/release/<id>`
+（先例：c-123 Grünberg、c-124 §5.6 四張）。**逐張紀錄在 `batch-progress/c122/evidence-fix.md`。**
+
+**這一輪還推翻了研究層的兩處判斷、又多抓到兩個站不住的網址**：
+- 維基的純文字 extract **會吃掉表格**，改讀 wikitext 之後——
+  `New_Age_Records` 的發行表確實有一列「10｜Ressurection [sic]」，**「目錄第十號」有來源，予以保留**；
+  `108_(band)` 的 EPs 一欄逐條列著本團兩張 EP 的盤名。
+- **`Victory_Records` 條目通篇查不到 Earth Crisis，也查不到 Snapcase**——
+  它既不記錄本張也不記錄本團，**從 Firestorm、Steps、Live At CBGB 三張全部移除**
+  （研究層當時只說「支持力弱」）。
+
+**走過但沒有替代品的路**（省得下次重走）：Common Cause／Combined Effort／Wreck-Age／
+Flux／Positive Force 五家廠牌**維基都沒有條目**；`Astor Records` 條目是另一家廠牌；
+`Cause for Alarm (album)` 是 Agnostic Front 的專輯條目不是本團條目；
+`Alone in a Crowd` 與 `Turning Point (band)` 都是消歧義頁。
 
 ## 四、⚠ 這批的載體：**43 張裡有 9 張不是 7 吋**
 

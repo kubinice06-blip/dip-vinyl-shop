@@ -5688,3 +5688,36 @@ Ruja《Algus》取 1971、Mess 取 1975、Pērkons 取 1981，都站得住——
 4. 本次已同步修正四層（research／hooks／writer-input／output）的四個檔，
    Leila 的 hook 由「五軌」改「六軌」（加權 28，仍在上限內）、desc 199 字不變；
    Raks 的 desc 由 183 變 186 字，仍在 180–240 內。
+
+## 第 265 條（2026-09-08，c-122 §5.5 舉證補齊層）：**補舉證時「查得到替代品」與「這支團根本沒有條目」要分開記，而且維基的純文字 extract 會吃掉表格**
+
+裁定 257 判了 c-122 有 20 個舉證站不住。這一輪把 43 張逐張重補，**改了 31 張**，結果分成三堆：
+
+- **26 張補到了本盤或本團層級的來源**（本盤專屬條目 > 本團專屬條目 > 內文列出本團掛名的廠牌條目）。
+- **5 張確實找不到**：Cause for Alarm、Krakdown、Absolution、Maximum Penalty、
+  Alone in a Crowd / Inside Out——**這幾支團在英文維基根本沒有條目**
+  （insource 全文檢索只回場景／曲風通論頁）。這幾張的 `exceptionReason`
+  **縮到那筆 release 能支持的範圍**，第二個網址用 `musicbrainz.org/release/<id>`。
+- **「走過但沒有替代品」也要記**：Common Cause／Combined Effort／Wreck-Age／Flux／
+  Positive Force 五家廠牌維基都沒有條目；`Astor Records` 是另一家廠牌；
+  `Cause for Alarm (album)` 是 Agnostic Front 的專輯條目；
+  `Alone in a Crowd` 與 `Turning Point (band)` 都是消歧義頁。
+  **不記下來，下一批會再走一次同樣的死路。**
+
+**兩個技術發現**：
+
+1. **⚠ 維基的純文字 extract 會吃掉表格，改讀 wikitext 才看得到。**
+   研究層據此判了兩處「不支持」，**兩處都被推翻**：
+   `New_Age_Records` 的發行表確實有一列「10｜Ressurection [sic]」——**「目錄第十號」有來源**；
+   `108_(band)` 的 EPs 一欄逐條列著本團兩張 EP 的盤名。
+   **「頁面裡查不到」要先確認自己讀的是哪一種形態的頁面**，這是裁定 257 的鏡像：
+   **257 是「打得開不等於站得住」，265 是「讀不到不等於不存在」。**
+2. **`musicbrainz.org` 的人類網頁在這個環境一律讀不到內文**（回 200，但只有 1396 bytes
+   的「Verifying your browser」JS 挑戰頁，curl 與 WebFetch 皆然）。
+   **覆核要打 `ws/2` API；但存進 `exceptionEvidenceUrls` 的仍用人類網址形式**
+   （`/release/<id>`、`/release-group/<id>`），因為那才是店主與稽核者會點開的東西。
+
+**另外多抓到兩個站不住的網址**（研究層當時只說「支持力弱」）：
+**`Victory_Records` 條目通篇查不到 Earth Crisis，也查不到 Snapcase**——
+它既不記錄本張也不記錄本團，已從 Firestorm、Steps、Live At CBGB 三張全部移除。
+**「支持力弱」這個評語本身就該當成待覆核**，它和「站不住」之間沒有可靠的界線。
