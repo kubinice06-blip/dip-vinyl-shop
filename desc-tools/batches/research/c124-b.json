@@ -1,0 +1,138 @@
+[
+ {
+  "key": "desc2:Mohammad Reza Shajarian|Astan e Janan",
+  "artist": "Mohammad Reza Shajarian",
+  "album": "Astan e Janan",
+  "facts": [
+   {
+    "f": "release-group 57fb49d6 的欄位：title「Astan e Janan」、artist-credit「Mohammad Reza Shajarian」、primary-type Album、**secondary-types 空**、first-release-date **1985**（只到年、無月日）。**轄下只有 1 筆 release**：release c256db0c，date 1985、**country 欄空、status 欄空、barcode 欄空**、CD **11 軌**。RG 的 genre／tag 欄各只有一筆、票數 1：`persian classical`。",
+    "src": "https://musicbrainz.org/ws/2/release-group/57fb49d6-0617-4766-905e-97b3c8baf940?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌查得到，策展層說的「未填 label-info」不成立**：改用 release 端點回問，release c256db0c 的 label-info 是 **Delawaz Records**（廠牌實體 0e5f0b96），**catalog-number 欄填的是字串「[none]」**（不是空值，是明寫沒有盤面編號）。packaging 欄空、barcode 欄空。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=57fb49d6-0617-4766-905e-97b3c8baf940&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1985 盤的逐軌曲目與長度，**11 軌全部有長度、合計 1:14:58**：1〈Pish Daramad Sar Andaz〉6:34、2〈Santur Solo〉1:08、3〈Chaharmezrab Sarv - e Naz〉2:31、4〈Saz - o Avaz〉15:07、5〈Saz - o Avaz〉4:21、6〈Tafnif Astan - e Janan〉6:01、7〈Santur Solo〉1:56、8〈Santur Solo〉2:06、9〈Saz - o Avaz〉11:18、10〈Saz - o Avaz〉**18:56**、11〈Tasnif Sehida'e〉5:00。**十一軌只用四種曲名**：〈Saz - o Avaz〉四軌（15:07／4:21／11:18／18:56）、〈Santur Solo〉三軌（1:08／1:56／2:06）、兩支 Tasnif、一支 Pish Daramad、一支 Chaharmezrab。**最長的第十軌 18:56 比最短的第二軌 1:08 長十六倍以上**；四軌〈Saz - o Avaz〉合計 49:42，占全張三分之二。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=57fb49d6-0617-4766-905e-97b3c8baf940&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 1e6c8164：**MB 主名是波斯文「محمدرضا شجريان」**、sort-name「Shajarian, Mohammadreza」、type Person、country IR、area Iran、begin **1940-09-23**（begin-area **Mashhad**）、**end 2020-10-08（ended=true，end-area Tehran）**、disambiguation「Persian singer」。別名欄登錄「Mohammad Reza Shadjarian」與英文別名「Mohammad-Reza Shajarian」。**關係欄四筆**：Masters of Persian Music 的團員、Homayoun Shajarian 與 Mojgan Shajarian 的 parent、Mohammad Esfahani 的 teacher。",
+    "src": "https://musicbrainz.org/ws/2/artist/1e6c8164-a1a1-457f-9c39-efbef12942c6?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "藝人目錄分頁全列 **39 個 release-group**：primary-type Album 26 個（其中 **secondary-types 為空的純 Album 21 個**）、Single 9、EP 1、DJ-mix 併 Single 2、無 primary-type 1。純 Album 依年份排，最早是 1975《Golhaye Tazeh No. 23: Abu Ata》，**1985 年一年就有三個**：《Jane Oshagh / Gonbade Mina》《Astan e Janan》《Bidad》；其後 1986-07-07《Nava》、1986-08-06《Serre Eshgh》。**依年份排本張與《Bidad》同年，資料庫端無月日、排不出先後。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1e6c8164-a1a1-457f-9c39-efbef12942c6&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查候選 **collectionId 1791744034**（掛名寫作連寫的「Mohammadreza Shajarian」、盤名「Astan E Janan」）得 **11 軌**、標示日期 **1985-05-02**、版權標示「℗ 2025 GrandCube」。逐軌曲序與曲名與 1985 盤全同，長度九軌差 1–11 秒，**第八軌與第十軌差得多**（見 notes）。第三種查法另從藝人目錄端覆核，未再撈到第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=1791744034&country=nl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌只用四種曲名，其中一種就占掉全張三分之二",
+   "盤面編號欄不是空的，上面明寫著「沒有編號」"
+  ],
+  "sound": "十一軌全部留下長度，合計一小時十四分五十八秒。曲名只有四種：〈Saz - o Avaz〉四軌、〈Santur Solo〉三軌，加上兩支 Tasnif、一支 Pish Daramad、一支 Chaharmezrab。開場〈Pish Daramad Sar Andaz〉6:34，第二軌〈Santur Solo〉只有 1:08、是全張最短的一軌，第三軌〈Chaharmezrab Sarv - e Naz〉2:31，到第四軌〈Saz - o Avaz〉一口氣走了 15:07，尺度整個換了一級。第五軌同名只有 4:21，第六軌〈Tafnif Astan - e Janan〉6:01 與盤名同字。中段第七、第八兩軌又是〈Santur Solo〉，1:56 與 2:06，短得像是把前面那條長線切開來喘一口氣；接著第九軌 11:18、第十軌 18:56 兩軌連著把全張推到最長，第十軌一軌就抵得上第二軌的十六倍。末軌〈Tasnif Sehida'e〉5:00 收得乾脆。四軌〈Saz - o Avaz〉合計 49:42，占全張三分之二，這張碟的重量幾乎全壓在同一個曲名上。",
+  "keyTracks": [
+   "Saz - o Avaz",
+   "Tafnif Astan - e Janan",
+   "Tasnif Sehida'e"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，1985。** release-group first-release-date **1985**（只到年、無月日），**轄下唯一的 release 也是 1985**（country／status 兩欄都空）。串流版本 1791744034 的標示日期是 **1985-05-02**，是第二個獨立年份來源、與資料庫端的年一致。⚠ **月日 1985-05-02 只有串流端有，資料庫端只到年，不得當成資料庫值引用**；串流那筆的版權標示是 **2025 年**的再發關係，**既不是原盤年也不是盤面廠牌，不得寫進 label**。**錄音年未登錄，不得補寫。** 藝人目錄裡 1985 年另有兩個 release-group，**資料庫端無月日、排不出本張與《Bidad》的先後**。",
+  "notes": "**擋下策展層五處。**(1) `label` 欄與 `curatorRisk` 都寫「MB 該 release 未填 label-info」——**不成立**。策展層是用 release-group 端點回問的，那個端點本來就不回 label-info；改用 release 端點，**廠牌是 Delawaz Records（實體 0e5f0b96）**，而且 **catalog-number 欄填的是字串「[none]」——不是空值，是明寫沒有盤面編號**。`label` 欄的正確寫法是「Delawaz Records（catno 欄明寫 [none]），1985，CD 11 軌，release 的 country 與 status 欄為空」。｜(2) `curatorWhy` 寫本張與《Bidad》「同屬他 **1980 年代中期最密的那批錄音**」——**這是主觀評價、不是欄位事實，不得寫**。可寫的只有一句：藝人目錄裡 1985 年有三個 release-group（本張、《Bidad》、《Jane Oshagh / Gonbade Mina》），**而且三者都只到年、排不出先後**。｜(3) `curatorWhy` 說本張「是補在《Bidad》旁邊**最直接**的一張」——策展判斷，簡介不得寫成作品之間的高下或代表性。｜(4) 生卒與地名：策展層只記到 begin 1940-09-23。**實體欄位另有 end 2020-10-08（ended=true）、begin-area Mashhad、end-area Tehran**，三個都是可寫的欄位事實；**除這四個欄位以外的生平一律不得補寫**。｜(5) 關係欄可寫的人名只有四個（Masters of Persian Music 團員、Homayoun Shajarian 與 Mojgan Shajarian 的 parent、Mohammad Esfahani 的 teacher）；**本張沒有任何伴奏者、製作人或錄音關係建檔，樂手名一律不得寫**（裁定 241／250）——⚠ 特別注意本張有三軌叫〈Santur Solo〉，**不得由曲名反推是誰彈的**。｜**串流採信 1791744034：11 軌逐位置比對（6:34／1:09／2:32／15:14／4:24／6:04／2:07／1:20／11:02／16:28／5:17）對 1985 盤（6:34／1:08／2:31／15:07／4:21／6:01／1:56／2:06／11:18／18:56／5:00），曲序與曲名逐軌對得上，九軌差 1–11 秒；⚠ 第八軌差 46 秒（1:20 對 2:06）、第十軌差 2 分 28 秒（16:28 對 18:56），第七、八兩軌在串流端是分得出來的兩個曲名（其一標為 Gheteye Zarbi）、資料庫端則同名。整體曲序與軌數全中，採信；但引用長度時一律取資料庫端那組，不得混用。** 第三種查法（藝人目錄端）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、盤面編號欄、載體、曲目、長度與實體欄位（area／begin／end）；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。**〈Tasnif〉〈Saz - o Avaz〉這些是曲式名，照曲名引用可以，不得由曲名推演任何事件。**｜**軌數與長度：唯一一筆 release、11 軌、長度全備，可以寫時間，但要寫明那是資料庫端 1985 盤的數字。**"
+ },
+ {
+  "key": "desc2:Shahram Nazeri|Atashi Dar Neyestan",
+  "artist": "Shahram Nazeri",
+  "album": "Atashi Dar Neyestan",
+  "facts": [
+   {
+    "f": "release-group 2e5ef7bc 的欄位：title「Atashi Dar Neyestan」、**artist-credit 記的是波斯文「شهرام ناظری」**、primary-type Album、**secondary-types 空**、first-release-date **1991-12-06**、genre 與 tag 欄皆空。轄下 **4 筆 release，全部 Official**，軌數 6／2／6／6。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2e5ef7bc-341f-43ca-99cd-e94ef04f0d4e?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **四筆 release 的廠牌全部查得到，策展層說的「未填 label-info」不成立**（用 release 端點回問）：1991-12-06 XW Digital Media×6（title 拼作「Atash Dar Neyestan」）**Caltex Records**、barcode 035265207925、packaging None；1991 IR CD×2（disambiguation 欄明寫「2 track release」）**Caltex Records，catno 2079 CD**、Jewel Case；2009-02-03 IR CD×6 **IranGaam**；2009-04-11 XW Digital Media×6 **Avakhorshid Records**、barcode 5060121830653。**兩輪發行、三家廠牌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2e5ef7bc-341f-43ca-99cd-e94ef04f0d4e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **逐軌 artist-credit 是兩個人：「Shahram Nazeri, Jalal Zolfonoun」**——四筆 release 裡有三筆的每一軌都這樣記（1991-12-06 那筆、2009-04-11 那筆的全部六軌，以及 2009-02-03 那筆）。**Jalal Zolfonoun 這個名字有逐軌 artist-credit 背書，可以寫**；RG 層的 artist-credit 則只有 Nazeri 一人。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2e5ef7bc-341f-43ca-99cd-e94ef04f0d4e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**同一批錄音在資料庫端有三種切法。** ①1991 年的 IR CD 只切成 **2 軌**，而且曲名把每一面的三首連寫、**括號裡標的是詞的來源**：第 1 軌〈Sepideh (Khayam) / Atash Dar Neyestan (Majzoob Ali Shah) / Yar Mara (Molana)〉**27:54**、第 2 軌〈Ghat'eyeh Zarby (Jalal Zolfonoon) / Aan Keest… (Hafez) / Arghavan (Hafez)〉**26:37**，合計 54:31。②1991-12-06 的六軌版：4:17／11:40／11:52／9:15／8:05／9:17，合計 54:26。③2009-04-11 的六軌版：〈Sepideh (Avaze Hejaz)〉4:23、〈Atashi Dar Neyestan〉11:53、〈Yar Mara (Zarbie Hejaz)〉12:03、〈Zarbi (Melody Mazandarani)〉3:58、〈An Kist (Improvization)〉13:38、〈Arghavan (Tasnif)〉9:26，合計 55:21。**同樣六段，1991 版的第四軌 9:15、2009 版只有 3:58，第五軌反過來 8:05 對 13:38。** 2009-02-03 的 IR CD×6 第四軌**沒有長度**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2e5ef7bc-341f-43ca-99cd-e94ef04f0d4e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 dc8cab1c：**name 欄是拉丁轉寫「Shahram Nazeri」**（不是波斯文）、sort-name「Nazeri , Shahram」、type Person、country IR、area Iran、begin **1950-02-18**、begin-area **Kermanshah**、end 空、disambiguation「Iranian tenor」。別名欄三筆：拉丁「Shahram Nazeri」、庫德語「Şehram Nazirî」、波斯文「شهرام ناظری」。**關係欄兩筆：Dastan Ensemble 的團員、Hafez Nazeri 的 parent。** 目錄分頁全列 **28 個 release-group、28 個都是 primary-type Album**（其中 secondary-types 為空的純 Album 23 個、Live 4、Compilation 1）。純 Album 依年份排：1985-01-08《گل صدبرگ》、1986-02-08《Yadegare Doust》、1991-01-28《Shoor Angiz》、**1991-12-06 本張排第四**。",
+    "src": "https://musicbrainz.org/ws/2/artist/dc8cab1c-207f-4f04-9118-02c753c8a69a?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 314871934**「Shahram Nazeri — Atashi Dar Neyestan」得 **6 軌**、標示日期 **1997-03-11**、版權標示「℗ 2009 Avakhorshid」。**六軌長度 4:23／11:53／12:03／3:58／13:38／9:26 與資料庫端 2009-04-11 那筆完全相同（逐軌 0 秒差）**，曲名也一一對得上——**串流端上架的是 2009 年那一版，不是 1991 年那一版**。藝人目錄端（藝人頁 62199434，54 筆）覆核後未再撈到第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=314871934&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一批錄音在資料庫裡有三種切法：一種切成兩軌，兩種切成六軌",
+   "六段一樣的東西，兩個版本的第四軌差了五分鐘，第五軌又反過來差五分鐘"
+  ],
+  "sound": "同一批錄音留下三種切法。最極端的是 1991 年那張只有兩軌的 CD：第一軌 27:54、第二軌 26:37，一面一軌，而且曲名把三首連寫、括號裡標著詞的來源——Khayam、Majzoob Ali Shah、Molana 在第一軌，Jalal Zolfonoon 與兩支 Hafez 在第二軌。另外兩種把同樣的東西切成六軌。1991-12-06 那版是 4:17／11:40／11:52／9:15／8:05／9:17，合計 54:26；2009-04-11 那版是 4:23／11:53／12:03／3:58／13:38／9:26，合計 55:21。兩版的頭三軌幾乎重疊，差別全在後半：第四軌 1991 版 9:15、2009 版縮到 3:58，第五軌反過來從 8:05 拉到 13:38，等於把同樣的五分鐘從一軌挪到了另一軌。開場〈Sepideh〉四分出頭在三種切法裡都是全張最短的一段，末軌〈Arghavan〉九分半收尾，兩版只差九秒。",
+  "keyTracks": [
+   "Sepideh",
+   "Atashi Dar Neyestan",
+   "Arghavan"
+  ],
+  "status": "full",
+  "yearVerified": "**不一致，本卡維持 1991，但只能算資料庫端可得的年份、不得對外宣稱已驗證。** release-group first-release-date **1991-12-06**，轄下最早的兩筆 release 也都是 1991（1991-12-06 的 XW 數位版與一筆只記到年的 1991 IR CD），另兩筆是 2009-02-03 與 2009-04-11。**但串流版本 314871934 的標示日期是 1997-03-11**，與資料庫端的 1991 差了六年、且與 2009 也對不上；那筆的版權標示是 **2009 年**（Avakhorshid），而它的六軌長度與資料庫端 2009-04-11 那筆逐軌 0 秒差——**串流那個 1997 的日期沒有其他來源支持，本層不採為原盤年，也不寫進卡片**。**結論：1991 只有資料庫端一個來源，第二個獨立來源查無；簡介不得寫成「這張是 1991 年的作品」這種已驗證的口氣。** 再發年 2009 **不得寫進 `year`**。**錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層六處。**(1) `label` 欄寫「1991 IR Official CD（MB 該 release 未填 label-info）」——**四筆全部不成立**。release 端點回問到：1991-12-06 **Caltex Records**（barcode 035265207925）、1991 IR CD **Caltex Records catno 2079 CD**、2009-02-03 **IranGaam**、2009-04-11 **Avakhorshid Records**（barcode 5060121830653）。`label` 欄要照這四筆改寫。｜(2) **本批裁定 255 把 Nazeri 列進「MB 主名是波斯文的 9 個目標實體」——不成立**。藝人實體 dc8cab1c 的 **name 欄就是拉丁轉寫「Shahram Nazeri」**，波斯文只在別名欄；**是本張 release-group 的 artist-credit 記成波斯文，兩者不是同一個欄位**。卡片掛名取 Shahram Nazeri 的結論不變，但理由要改。｜(3) `curatorWhy` 寫他「是骨幹名單裡與 Shajarian **並列的兩位古典聲樂大家之一**」——**排名與地位判斷不是欄位事實，不得寫**。可寫的序數只有一種：目錄 23 張純 Album 依年份排，本張是**第四張**（前三是 1985-01-08《گل صدبرگ》、1986-02-08《Yadegare Doust》、1991-01-28《Shoor Angiz》）。｜(4) `curatorRisk` 說「四筆 release 的軌數是 6／2／6／6……**軌數與拼法都不是識別鍵**」——結論對，但漏了關鍵：**2 軌那筆的 disambiguation 欄明寫「2 track release」，而且兩軌的曲名把三首連寫、括號標著詞的來源**，不是殘缺版而是另一種切法。｜(5) **策展層完全沒提逐軌的第二個掛名**：四筆 release 裡有三筆的每一軌 artist-credit 都是「Shahram Nazeri, Jalal Zolfonoun」，**這個名字有逐軌 artist-credit 背書、可以寫**（裁定 241／250 的門檻過得了）；1991 那張 2 軌版的曲名裡也有「Ghat'eyeh Zarby (Jalal Zolfonoon)」。｜(6) 關係欄可寫的只有兩筆：**Dastan Ensemble 的團員**、Hafez Nazeri 的 parent。⚠ 前者與本組第 6 張《Shoorideh》的 Ensemble Dastan 是同一個實體（3396823d），**兩張卡的關聯有關係欄背書**。**除這兩筆之外的合作者一律不得寫。**｜**串流採信 314871934：6 軌逐位置比對（4:23／11:53／12:03／3:58／13:38／9:26）對資料庫端 2009-04-11 那筆（4:23／11:53／12:03／3:58／13:38／9:26），**逐軌 0 秒差、曲名全中，採信**；⚠ 但它對得上的是 2009 年那一版，**不是 1991 年那一版**（1991 版是 4:17／11:40／11:52／9:15／8:05／9:17），行文若寫時間必須寫明取的是哪一版。** 藝人目錄端（62199434，54 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、盤面編號、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **曲名括號裡的 Khayam／Molana／Hafez／Majzoob Ali Shah 是曲名本身的一部分、可以照引，但不得由此推演任何宗教或思想上的評述。**｜**軌數與長度：四筆 release 三種切法、長度幾乎全備（只有 2009-02-03 那筆第四軌缺長度），可以寫時間，但每次都要寫明取的是哪一版。**"
+ },
+ {
+  "key": "desc2:Hossein Alizadeh & Hossein Omoumi|Chahargah & Bayat-e Tork",
+  "artist": "Hossein Alizadeh & Hossein Omoumi",
+  "album": "Chahargah & Bayat-e Tork",
+  "facts": [
+   {
+    "f": "release-group 95e32073 的欄位：**資料庫端的 title 是「Châhârgâh & Bayât–e Tork」**（帶變音符號，而且中間那個是 U+2013 短破折號、不是 ASCII 連字號）、artist-credit「Hossein Alizadeh & Hossein Omoumi」、primary-type Album、**secondary-types 空**、first-release-date **1987-04-03**、genre 與 tag 欄皆空。**轄下只有 1 筆 release**：3bf94317，1987-04-03、country **XW**、Official、**Digital Media 15 軌**、barcode **6260608000039**、packaging None。",
+    "src": "https://musicbrainz.org/ws/2/release-group/95e32073-d160-469e-808f-a8726ea51cd3?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌查得到，策展層說的「未填 label-info」不成立**：release 3bf94317 的 label-info 是 **Mahoor Institute of Culture and Art**（廠牌實體 091e58c8），catalog-number 欄空。barcode 6260608000039 是這筆唯一的盤面識別碼。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=95e32073-d160-469e-808f-a8726ea51cd3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**15 軌全部有長度、合計 54:42**：1〈Pishdarâmad (Lezgi)〉8:14、2〈Châhârmezrâb, Pt. 1〉1:38、3〈Naghme〉2:11、4〈Pish Zangule & Zangule〉3:36、5〈Zâbol & Muye〉2:31、6〈Mokhâlef〉2:33、7〈Tasnif–e Sârebân〉5:33、8〈Pishdarâmad Bayât Tork〉3:51、9〈Darâmad〉**0:34**、10〈Châhârmezrâb, Pt. 2〉4:06、11〈Qatâr〉3:57、12〈Âvâz, Darâmad〉2:51、13〈Shekasteh〉3:02、14〈Delkash〉6:27、15〈Tasnif–e Afshâri〉3:38。**盤名的兩個字在曲名裡各自出現一次以上**：第 2 與第 10 軌都叫〈Châhârmezrâb〉並標成 Pt. 1／Pt. 2，第 8 軌〈Pishdarâmad Bayât Tork〉是第二個字的起點。**最長 8:14、最短 0:34，差十四倍以上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=95e32073-d160-469e-808f-a8726ea51cd3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **逐軌 artist-credit 出現第三個名字：Mohammad Qavihelm**，掛在第 7、8、10、15 四軌（credit 寫成「Hossein Alizadeh, Hossein Omoumi, Mohammad Qavihelm」）。另有兩軌只掛 Alizadeh 一人：第 1〈Pishdarâmad (Lezgi)〉與第 9〈Darâmad〉；其餘九軌掛兩人。**這個第三個名字有逐軌 artist-credit 背書、可以寫**（裁定 241／250 的門檻過得了）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=95e32073-d160-469e-808f-a8726ea51cd3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "兩位掛名的藝人實體：**Hossein Alizadeh 9e167c32**——name 欄寫作「Hossein Alizâdeh」（帶 â）、Person、country IR、area Iran、begin **1951-08-23**、begin-area **Tehran**、disambiguation「Iranian musician, composer, and scholar」；關係欄四筆（Masters of Persian Music 團員、گروه عارف 團員、هم‌آوایان 團員、Amir Nasrollah 的 teacher）。**Hossein Omoumi aa56bc41**——name「Hossein Omoumi」、Person、**country US、area United States**、begin **1944**、**begin-area Eşfahān**、**disambiguation 空白、別名欄空、關係欄 0 筆**。",
+    "src": "https://musicbrainz.org/ws/2/artist/aa56bc41-827e-4981-bc18-eef96a773b5b?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "**兩位掛名的目錄裡，本張都是年份最早的一筆。** Alizadeh 分頁全列 **42 個 release-group**（primary-type Album 38、EP 2、Single 2；其中 secondary-types 為空的純 Album 27）：純 Album 依年份排，**1987-04-03 本張排第一**，第二是 1990《Raz-o-niaz》。Omoumi 名下**只有 5 個 release-group、全部是純 Album**：**1987-04-03 本張、1995-04-16《Persian Classical Music》、2000-01-01《Iran, Persian Classical Music》、2015-11-23《Earthly Exile》、2016-02-05《Ateş-i Aşk》**——**本張同時是他名下最早也是唯一一張與 Alizadeh 合掛的碟。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9e167c32-23e9-40c7-be71-9987f1676dc9&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑，**結論是查無**）：搜尋端以「Alizadeh Chahargah Bayat」回 0 筆可對得上；藝人目錄端兩邊都掃過——Alizadeh 的藝人頁 86092117 全 46 筆、201211997 全 2 筆，Omoumi 的藝人頁 62308518 全 8 筆，**三份目錄裡都沒有本張**。Omoumi 那 8 筆最早是 1984-01-01《Bayât - E Shirâz》（與 Afsaneh Rasaei 合掛），與本張不是同一張。**駁回一個形近候選**：Alizadeh 目錄裡的《The Dastgahs of Persian Music: Dastgah-e Chahargah》（1771284715，2024-09-27，Ejazz，**27 軌**）盤名帶同一個 dastgah 名，但年份、廠牌、軌數全不對，**不是本張**。",
+    "src": "https://itunes.apple.com/lookup?id=62308518&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌裡最短的一軌只有三十四秒，最長的那軌是它的十四倍",
+   "兩位掛名的目錄各有四十二張與五張，這一張在兩邊都排在最前面"
+  ],
+  "sound": "十五軌全部留下長度，合計 54 分 42 秒，而且尺度落差極大：最長的開場〈Pishdarâmad (Lezgi)〉8:14，最短的第九軌〈Darâmad〉只有 0:34，兩者差十四倍以上。前七軌走的是盤名的第一個字：〈Châhârmezrâb, Pt. 1〉1:38、〈Naghme〉2:11、〈Pish Zangule & Zangule〉3:36、〈Zâbol & Muye〉2:31、〈Mokhâlef〉2:33 五軌全部壓在一分半到三分半之間，是全張最密的一段，直到第七軌〈Tasnif–e Sârebân〉5:33 才把線拉開。第八軌〈Pishdarâmad Bayât Tork〉3:51 換到盤名的第二個字，緊接著第九軌那三十四秒像一個換氣，然後〈Châhârmezrâb, Pt. 2〉4:06 與前面的 Pt. 1 遙遙相對——同一個曲名一前一後，後面那次長了兩倍半。後半〈Qatâr〉3:57、〈Âvâz, Darâmad〉2:51、〈Shekasteh〉3:02 之後，〈Delkash〉6:27 是後半最長的一軌，末軌〈Tasnif–e Afshâri〉3:38 收尾。",
+  "keyTracks": [
+   "Pishdarâmad (Lezgi)",
+   "Châhârmezrâb, Pt. 2",
+   "Delkash"
+  ],
+  "status": "full",
+  "yearVerified": "**只有資料庫端一個來源，1987 沒有第二個來源可對。** release-group first-release-date **1987-04-03**，**轄下唯一的 release 也是 1987-04-03**（country XW、Official、barcode 6260608000039）。⚠ **但那筆的載體記為 Digital Media**——1987 年不會有這個載體，**資料庫裡建的是後來數位上架的那一版、卻沿用了 1987-04-03 這個日期**，因此「1987 年發行的實體盤」在資料庫端**查無建檔**。店面端三種查法都沒有本張，**第二個獨立年份來源查無**。**結論：`year` 維持 1987，但簡介不得寫成「這張是 1987 年的作品」這種已驗證的口氣，也不得把 Digital Media 寫成原始載體。錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層四處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Mahoor Institute of Culture and Art**（實體 091e58c8），catno 欄確實是空的，但廠牌不是。`label` 欄要改寫成「Mahoor Institute of Culture and Art（catno 欄空、barcode 6260608000039），1987-04-03 XW Official Digital Media 15 軌」。｜(2) `curatorWhy` 說本張「是他名下 42 個 release-group 裡**年份最早**的一筆」——**這一句覆核通過、可以留**：42 筆分頁全列，1987-04-03 確實排第一（第二是 1990《Raz-o-niaz》）。**而且策展層漏了更強的一條**：Omoumi 名下**只有 5 個 release-group**，本張同樣是最早的一筆，也是兩人唯一合掛的一張。｜(3) **策展層漏標一位 disambiguation 空白的掛名**：本批裁定列了 5 位（Kalhor、Homayoun Shajarian、Sima Bina、The Kâmkârs、Pari Zanganeh、Sussan Deyhim），**但 Hossein Omoumi（aa56bc41）的 disambiguation、別名欄與關係欄全是空的**，依硬規則第 7 條**同樣不得背書本名、不得補生平**；他可寫的欄位只有 country US／area United States／begin 1944／begin-area Eşfahān 四個。｜(4) **策展層完全沒提逐軌的第三個掛名**：第 7、8、10、15 四軌的 artist-credit 是三個人，第三位是 **Mohammad Qavihelm**；另有第 1、9 兩軌只掛 Alizadeh 一人。**這個名字有逐軌 artist-credit 背書、可以寫**，但**不得補寫他彈什麼**（沒有 relationship 背書）。｜**第三種查法跑完，結論是店面查無：**搜尋端 0 筆，藝人目錄端三份（Alizadeh 86092117 的 46 筆、201211997 的 2 筆、Omoumi 62308518 的 8 筆）**都沒有本張**。**駁回候選 1 筆**：Alizadeh 目錄裡 2024-09-27 的《The Dastgahs of Persian Music: Dastgah-e Chahargah》（27 軌、Ejazz）只是盤名帶同一個 dastgah 名，年份、廠牌、軌數全不對。**回撈候選採信 0、駁回 1；本張確認無串流來源，寫作層不要寫試聽相關的話。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、barcode、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **Omoumi 的 country 欄記為 US、begin-area 記為 Eşfahān 是兩個可查證的欄位，只能照欄位敘述，不得寫成「他離開了伊朗」這種因果句。**｜**軌數與長度：唯一一筆 release、15 軌、長度全備，可以寫時間。盤名的變音符號與 U+2013 在資料庫端是原樣，卡片已拉平，行文用卡片的寫法。**"
+ }
+]
