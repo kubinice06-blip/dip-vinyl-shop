@@ -95,6 +95,10 @@ export const LINES = {
   c121: { lineType: '深掘', scene: { a: '日本フリージャズ與即興演奏', b: '日本地下即興：PSF 前史' } },
   // c-122（店主 2026-09-08 核定為 hardcore 開 §5.5 白名單後成立）
   c122: { lineType: '深掘', scene: { a: '紐約硬蕊 7 吋與 demo', b: 'youth crew／straight edge 7 吋' } },
+  // c-123～c-125（店主 2026-09-08：「找出獨裁體制下的音樂」）
+  c123: { lineType: '廣度', scene: { a: '蘇聯愛沙尼亞地下', b: '蘇聯拉脫維亞與立陶宛地下' } },
+  c124: { lineType: '廣度', scene: { a: '伊朗巴列維末期流行與 funk', b: '伊朗革命後：流亡、地下與古典' } },
+  c125: { lineType: '廣度', scene: { a: '西班牙佛朗哥時期與 la Movida', b: '葡萄牙薩拉查時期與康乃馨革命' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
