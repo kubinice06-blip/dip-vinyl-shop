@@ -392,5 +392,385 @@
   "status": "partial",
   "yearVerified": "**端上一致，1979（只到年）**：release-group 的 first-release-date 與其下唯一那筆 release 的 date 都是 1979，country 記 IR、status Official，**端上沒有第二個版本、沒有更早的日期**。⚠ **但這個 1979 沒有第二個來源可以交叉驗證**——零 recording-level relationship、annotation 空、串流側查無條目；**外部那份英語百科條目提到《Sol-e 1》時寫的是 1979，方向一致，但同一頁在其他年份上已被查出三處自相矛盾（見同批《Gol-e Yakh》那張的覆核），不宜單獨拿來當佐證。** **可以寫「端上記 1979」，不得寫「1979 年錄的」**（錄音年端上完全空白，而且盤名帶「(Live)」也不足以推定錄音場合）。",
   "notes": "**擋下策展層三處。**｜（一）⚠ **「(Live)」不得寫成現場錄音**：盤名字串裡有 Live，**但 secondary-types 是空的**——端上沒有把它標成現場，也沒有任何場地或錄音關係。**「現場專輯」「某年某地的演出」一律不得寫。**｜（二）⚠ **載體不得寫**：卡單 `label` 欄寫「媒體記為 CD×1」——**這筆 release 的 date 是 1979、country 是 IR，format 欄卻記 CD，兩個欄位不相容**。`sound` 與簡介**一律不得提載體**。｜（三）**補正：廠牌查到了**。卡單寫「MB 該 release 未填 label-info」——**用 `release?...+labels` 回問，label-info 掛的是 Ahangrooz（無編號）**。⚠ **順帶：這個廠牌名只出現在本張，策展層把它寫進同批《Gol-e Yakh》那張的 `label` 欄是搬錯地方了。**｜**序數**：藝人目錄三十二個條目數過，**本張是名下 first-release-date 最早的 Album，但前面還有四張 1973 與 1977 的 Single**——**要寫「最早的專輯」可以，不得寫「第一張唱片」。**｜⚠ **本張最大的限制：端上只登錄了一「軌」、且沒有長度**，曲目與時間都無從寫起（別寫時間）。可寫的欄位只剩年份、發行國、廠牌、狀態與目錄位置——**素材格數只夠 120–180 字，因此標 `partial`。**｜**串流側三種查法都跑了：藝人目錄十七筆逐筆看過，唯一形似的 111010661 反向驗證指向端上另一個 release-group，駁回。無固定試聽來源。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Googoosh|Mordaab",
+  "artist": "Googoosh",
+  "album": "Mordaab",
+  "facts": [
+   {
+    "f": "release-group 151ab6a5 的欄位：title「Mordaab」、artist-credit **「گوگوش」**（藝人實體 0d9b88f3，sort-name「Googoosh」，Person／**area Iran、begin-area Tehran**，disambiguation「Iranian singer」，life-span **1951-02-02 起、未結束**，gender Female；alias 欄記有 Googoosh(en,primary)／Gougoush(it)／Faiqə Atəşin(az)／Ququş(az,primary)／فائقه آتشین(fa)／گوگوش(fa)）、**first-release-date 1990**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：**1990、country 欄空、Official、CD 14 軌、label-info 空、無 barcode**。⚠ **裁定 227：secondary-types 為空不代表這是原盤**——端上這個 release-group 掛得住的只有 1990 年那一筆。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=151ab6a5-a010-483a-abbc-03eb4da5af35&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "14 軌逐軌與長度：1〈Daryaie〉6:04、2〈Shab〉5:34、3〈Mordab〉5:36、4〈Begoo〉4:25、**5〈Ageh Mishod〉7:40**、6〈Angoshtar〉4:25、7〈Koli〉4:45、8〈Kooh〉4:16、9〈Bia〉3:41、10〈Bemoon Ta Bemoonam〉3:43、11〈Eshareh〉3:39、12〈Yeh Rooz Miay〉3:37、13〈Bad Az To〉4:52、14〈Ghalibaf〉2:43。⚠ **十四軌最短 2:43、最長 7:40，前五軌就有三軌超過五分半，後面九軌只有一軌破五分鐘**——長度分布明顯前重後輕。**十四軌零 recording-level relationship、annotation 欄空。**",
+    "src": "https://musicbrainz.org/ws/2/release/7785a4d8-80c6-4d63-a99a-4270a7012307?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **38 個 release-group**：**primary-type Album 29 個**（其中 secondary-types 空的 24 個、Album/Compilation 5 個）、Single 5 個、Single/Remix 1 個、Other/Live 1 個、無類型 2 個。⚠ **依 first-release-date 排，名下最早的是一筆 1974 年、沒有類型的《بهترین ترانه هایش》(13fa8f30)**；接著是 **1990 年的《Mordaab》（本張）**、1990-03-02《Kavir》，再來是 **1990-12-13 同一天的五個條目**（《Jadeh》《Golden Songs: Volume 2》《Persian Music: Googoosh 3, Dou Mahi》《Golden Songs: Volume 1》《Googoosh 4, Dou Panjareh》）。**同一天五個條目是同批灌檔的形狀，端上這位掛名沒有任何 1971 年的條目。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0d9b88f3-054a-4f53-b447-2f3f503c8290&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "⚠ **策展層引的那份外部年份來源（英語百科的作品年表頁）逐字讀過**：表格裡確實列著 1970 Do Panjareh／**1971 Mordab**／1972 Hamsafar／1972 Kooh／**1974 Do Mahi**／1975 Mosabbeb／**1975 Pol**／1977 Dar Emtedâde Šab／1978 Ageh Bemooni Ageh Namooni。**但整頁掛著「More citations needed」與「Expand Persian」兩個維護模板，這張表一列都沒有附註來源**——它是這三張碟原盤年的**唯一**來源，方向一致，但撐不到「已驗證」的程度。",
+    "src": "https://en.wikipedia.org/w/index.php?title=Googoosh_discography&action=raw"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 6793110138**《Mordab, Googoosh 2》10 軌、releaseDate 1990-12-13、℗ 1990 Caltex Records：**盤名主字串與端上盤名對得上、℗ 年與端上的 1990 一致、10/10 都有試聽**。⚠ **但逐軌只有四首對得上端上那十四軌**——〈Mordab〉4:54（端上 5:36）、〈Koli〉3:41（端上 4:45）、〈Eshareh〉3:37（端上 3:39）、〈Angoshtare Hezar Negin〉4:58（端上〈Angoshtar〉4:25）；上架端另外六軌（Komakam Kon／Bia Dareh Dir Misheh／Lalaee／Adama／Un Manam／Digeh Geryeh Delo Va Nemikoneh）端上沒有，端上另外十軌上架端也沒有。**軌數與逐軌長度兩端都對不上，只能當「同名同廠牌同年的另一種包裝」採信，不得逐軌互引。** 同目錄另有 89976675《Googoosh 2, Kouh》12 軌（℗1990 Caltex，**十二軌與本張零重疊，駁回**）與七十餘筆其他條目。⚠ **這一筆是策展層判「目錄裡找不到」而第三種查法找回來的。**",
+    "src": "https://itunes.apple.com/lookup?id=6793110138&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌裡最長的〈Ageh Mishod〉七分四十秒，最短的末軌〈Ghalibaf〉只有兩分四十三秒",
+   "這位掛名在端上的三十八個條目裡，有五個共用 1990 年 12 月 13 日同一個日期"
+  ],
+  "sound": "端上釘住的是 1990 年那一筆：一張 CD、十四軌，發行國與廠牌欄都是空的。曲序是〈Daryaie〉6:04、〈Shab〉5:34、同名曲〈Mordab〉5:36、〈Begoo〉4:25、全片最長的〈Ageh Mishod〉7:40、〈Angoshtar〉4:25、〈Koli〉4:45、〈Kooh〉4:16、〈Bia〉3:41、〈Bemoon Ta Bemoonam〉3:43、〈Eshareh〉3:39、〈Yeh Rooz Miay〉3:37、〈Bad Az To〉4:52，收在只有 2:43 的〈Ghalibaf〉。前五軌有三軌超過五分半，後面九軌只有一軌破五分鐘，整張碟的重量壓在前半。",
+  "keyTracks": [
+   "Mordab",
+   "Ageh Mishod",
+   "Bemoon Ta Bemoonam"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **端上與卡單差了十九年，`year` 欄的 1971 只有一個外部來源。** 端上：release-group 的 first-release-date 是 **1990**，轄下唯一那筆 release 也記 1990（country 欄空、label-info 空），**1971 年的原盤在端上沒有建 release**；**藝人目錄三十八個條目裡沒有任何一個的 first-release-date 是 1971**（最早的一筆是 1974 年、沒有類型的一個條目，其次就跳到 1990）。外部：策展層引的作品年表頁確實寫 1971 Mordab，**但整頁掛著「需要更多來源」的維護模板、表格一列都沒有附註**。串流側對得上的那筆 ℗ 記 1990。**結論：1971 有一個方向一致但無附註的來源，1990 是端上唯一有支撐的年份。行文可以寫「這批錄音的年份在資料庫端只留下 1990 這個再發年」，不得寫成「1971 年的專輯」已驗證。**",
+  "notes": "**擋下策展層兩處。**｜（一）⚠ **作曲者不得寫**：`why` 寫「作曲 Hassan Shamaizadeh」。**端上十四軌零 recording-level relationship、annotation 空，沒有任何作曲掛名**；那份外部年表頁的 Composer 欄雖然填了這個名字，**但整頁沒有附註來源**——**依人名從嚴（裁定 241／250），不得寫。**｜（二）**原盤年的檔位要降一級**：策展層把本張放進「原盤年有第三方來源」那一檔。**覆核後：來源存在、方向一致，但它是一張沒有附註的年表，而端上完全沒有 1971 這個年份。** 行文**不得寫「1971 年的專輯」**，只能寫端上記的 1990。｜**覆核屬實、可以直接寫的**：藝人目錄「38 個 release-group、其中 29 個 primary-type Album」逐筆數過、屬實；⚠ **更好的一句是「1990-12-13 同一天有五個條目」**——那是同批灌檔的形狀，本身就是這位掛名在端上的資料形態。十四軌的長度分布（2:43–7:40、前重後輕）可寫。藝人實體的 area Iran／begin-area Tehran／life-span 1951-02-02 起可寫。｜**掛名寫法**：卡片取羅馬轉寫「Googoosh」（卡單寫法、與撞卡偵測一致），端上這個 release-group 的 artist-credit 是波斯文「گوگوش」；查詢別名 Gougoush／Gugush／Ququş／فائقه آتشین。｜**廠牌與發行國都是空的，行文不得寫。**｜**串流採信 6793110138：盤名主字串、℗ 年（1990）與端上一致，10/10 有試聽；⚠ 十軌只有四首與端上十四軌對得上、逐軌長度也不同，不得逐軌互引。** 駁回 89976675《Googoosh 2, Kouh》（十二軌與本張零重疊）。**這是本組第三種查法找回的一張。逐軌長度以端上 1990 年那一版的欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Googoosh|Pol",
+  "artist": "Googoosh",
+  "album": "Pol",
+  "facts": [
+   {
+    "f": "release-group b9a1d398 的欄位：title「Pol」、artist-credit「Googoosh」、**first-release-date 1992**、primary-type Album、**secondary-types 空**。轄下 **2 個 release，只有一筆可用**：（一）**1992 US Official，Taraneh、catno TAR-CD9，CD 10 軌**，release title 是波斯文「پل」、artist-credit 寫成呈現形「ﮔﻮﮔﻮش」；（二）**2018 US 12 吋黑膠 10 軌，Taraneh Enterprises Inc.、catno LP 10355，status 是 Bootleg**。⚠ **第二筆是 Bootleg，一切欄位（含它的曲目拼寫）都不得引用。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b9a1d398-8fa0-3116-87dc-4fef6f31853d&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "1992 年官方盤（TAR-CD9）逐軌與長度（端上曲名全為波斯文）：1〈پل〉5:49、2〈باروكن〉3:16、3〈خوابم با بيدارم〉3:42、4〈مخلوق〉3:52、5〈طلاق〉4:49、6〈من آمد ام〉4:39、7〈ماه پشونى〉3:35、8〈معشوق〉3:30、9〈همسفر〉4:30、10〈گهواره〉4:26。⚠ **十軌全部壓在 3:16 到 5:49 之間，開場那首同名曲 5:49 是全片最長、也是唯一破五分鐘的一首**，其餘九軌沒有一首超過 4:49。**十軌零 recording-level relationship、annotation 欄空。** 那筆 Bootleg 黑膠把同樣十首寫成羅馬轉寫（Pol／Bavar Kon／Khabam Ya Bidaram／Makhlough／Talagh／Man Amadeam／Mah Pishooni／Mashough／Hamsafar／Gahvareh）、**長度欄全空**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b9a1d398-8fa0-3116-87dc-4fef6f31853d&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **38 個 release-group**：primary-type Album 29 個（純 Album 24、Album/Compilation 5）、Single 5、Single/Remix 1、Other/Live 1、無類型 2。**本張（1992）排在 1990 與 1990-12-13 那一批之後**；端上這位掛名**沒有任何 1975 年的條目**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0d9b88f3-054a-4f53-b447-2f3f503c8290&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "⚠ **策展層引的那份外部年份來源（英語百科的作品年表頁）逐字讀過**：表格裡確實列著 1970 Do Panjareh／**1971 Mordab**／1972 Hamsafar／1972 Kooh／**1974 Do Mahi**／1975 Mosabbeb／**1975 Pol**／1977 Dar Emtedâde Šab／1978 Ageh Bemooni Ageh Namooni。**但整頁掛著「More citations needed」與「Expand Persian」兩個維護模板，這張表一列都沒有附註來源**——它是這三張碟原盤年的**唯一**來源，方向一致，但撐不到「已驗證」的程度。",
+    "src": "https://en.wikipedia.org/w/index.php?title=Googoosh_discography&action=raw"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 289302769**《Googoosh - Pol》10 軌、releaseDate 2008-08-14、℗ 2008 Taraneh Enterprises Inc：**十軌與端上 1992 年官方盤逐軌同序、逐軌長度分毫不差**（Pol 5:49／Baavar Kon 3:16／Khaabam Yaa Bidaaram 3:42／Makhloogh 3:52／Talaagh 4:49／Man Aamadeh-Am 4:39／Maah Pishooni 3:35／Ma’Shoogh 3:30／Hamsafar 4:30／Gahvaareh 4:26），**上架端用的是羅馬轉寫、廠牌 Taraneh 與端上一致，10/10 都有試聽**。⚠ **℗ 記 2008，那是再版的 ℗ 年，不是原盤年。** 同目錄另有 1440527756《Talagh - Single》2 軌（℗2018）與 1636391162《Maah Pishooni (Remix) - Single》（℗2022），**都是拆軌或改編的單曲，駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=289302769&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十軌只有開場的同名曲破五分鐘，其餘九首全部壓在三分十六秒到四分四十九秒之間",
+   "同一張碟端上掛著兩筆，一筆是 1992 年的官方 CD，另一筆是 2018 年被標成非官方的黑膠"
+  ],
+  "sound": "端上可用的是 1992 年的美國盤：一張 CD、十軌，掛 Taraneh、編號 TAR-CD9，曲名全部以波斯文登錄。開場同名曲〈پل〉5:49 是全片最長，之後〈باروكن〉3:16、〈خوابم با بيدارم〉3:42、〈مخلوق〉3:52、〈طلاق〉4:49、〈من آمد ام〉4:39、〈ماه پشونى〉3:35、〈معشوق〉3:30、〈همسفر〉4:30，收在〈گهواره〉4:26。十軌全部落在三分十六秒到五分四十九秒之間，除了開場那首，沒有一首超過四分五十秒。",
+  "keyTracks": [
+   "پل",
+   "طلاق",
+   "گهواره"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **端上與卡單差了十七年，`year` 欄的 1975 只有一個外部來源。** 端上：release-group 的 first-release-date 是 **1992**，轄下可用的那筆 release 是 1992 年美國 Taraneh TAR-CD9（Official）；**另一筆 2018 年的黑膠 status 是 Bootleg，不得當作版本依據**；**1975 年的原盤在端上沒有建 release**，藝人目錄三十八個條目裡也沒有任何一個記 1975。外部：作品年表頁寫 1975 Pol，**整頁掛「需要更多來源」維護模板、表格無附註**。串流側對得上的那筆 ℗ 記 2008（再版 ℗ 年）。**結論：三個年份 1975（無附註的外部年表）／1992（端上唯一有支撐）／2008（再版 ℗）都不是同一件事，行文不得寫「1975 年的專輯」已驗證。**",
+  "notes": "**擋下策展層兩處。**｜（一）**原盤年的檔位要降一級**：與同批《Mordaab》同一個問題——**外部來源存在、方向一致，但是一張沒有附註、且整頁掛著維護模板的年表**，端上完全沒有 1975。**不得寫「1975 年的專輯」。**｜（二）⚠ **版本要指明，Bootleg 那筆一切不得引用**：`mbNote` 已註明 2018 那筆是 Bootleg（覆核屬實），**但要再說一次——它的羅馬轉寫曲名、載體（12 吋黑膠）、編號 LP 10355 全部不得寫進行文**。本張可寫的版本只有 1992 年的 Taraneh TAR-CD9。｜**覆核屬實、可以直接寫的**：1992 年官方盤的廠牌與編號、十軌的長度分布（3:16–5:49、只有開場破五分鐘）、曲名在端上以波斯文登錄這件事本身。｜**盤名與掛名寫法**：卡片盤名取「Pol」（卡單寫法）、掛名取「Googoosh」；⚠ **端上那筆官方 release 的 title 是波斯文「پل」、artist-credit 寫成呈現形「ﮔﻮﮔﻮش」**，引曲名時照端上波斯文欄位、引羅馬轉寫時照上架版本。｜**串流採信 289302769：10 軌與端上 1992 年官方盤逐軌同序、逐軌長度分毫不差，廠牌兩端一致，10/10 有試聽；℗ 2008（再版 ℗ 年）**。駁回 1440527756（單曲）與 1636391162（Remix 單曲）。**有固定試聽來源，逐軌長度兩端一致，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Googoosh|Persian Music: Googoosh 3, Dou Mahi",
+  "artist": "Googoosh",
+  "album": "Persian Music: Googoosh 3, Dou Mahi",
+  "facts": [
+   {
+    "f": "release-group 83716429 的欄位：title「Persian Music: Googoosh 3, Dou Mahi」、artist-credit「Googoosh」、**first-release-date 1990-12-13**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：1990-12-13 **XW（全球）** Official、**Caltex Records（label-info 有廠牌、沒有 catalog-number）**、CD **14 軌**、無 barcode。⚠ **release 的 title 是「Do Mahi」，與 release-group 的 title 不同**——盤名的長版本只存在於 release-group 這一層。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=83716429-2319-3451-be18-bbe2aeed64cd&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "14 軌逐軌與長度：1〈Gol Bi Goldoun〉4:27、2〈Sahel va Darya〉4:25、3〈Bizaar〉4:23、4〈Sekkeye Khorshid〉3:14、**5〈Do Mahi〉5:55**、6〈Yadet Basheh〉4:36、7〈Anrouz〉2:56、8〈Sabz o Sefeed〉2:59、9〈Gol e Gham〉4:25、10〈Daryaye Entezar〉2:35、11〈Koucheh〉3:51、12〈Felfel Nabin Che Rizeh〉3:11、13〈Jomeh〉4:18、14〈Shad E Shad〉2:56。⚠ **同名曲〈Do Mahi〉5:55 是唯一破五分鐘的一首，十四軌裡有四軌不到三分鐘**（2:35／2:56／2:56／2:59）。**十四軌零 recording-level relationship、annotation 欄空。** ⚠ **第 1 軌〈Gol Bi Goldoun〉同名於同批那張十六軌選輯的末軌〈Gol Bi Goldoun〉（Googoosh），端上沒有 recording 層的關係把兩者連起來。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=83716429-2319-3451-be18-bbe2aeed64cd&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **38 個 release-group**（Album 29／Single 5／Single/Remix 1／Other/Live 1／無類型 2）。⚠ **本張與另外四個條目共用 1990-12-13 這同一個日期**（《Jadeh》《Golden Songs: Volume 1》《Golden Songs: Volume 2》《Googoosh 4, Dou Panjareh》），**五個條目同一天，是同批灌檔的形狀，不是五張碟在同一天出版**；端上這位掛名**沒有任何 1974 年的條目**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0d9b88f3-054a-4f53-b447-2f3f503c8290&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "⚠ **策展層引的那份外部年份來源（英語百科的作品年表頁）逐字讀過**：表格裡確實列著 1970 Do Panjareh／**1971 Mordab**／1972 Hamsafar／1972 Kooh／**1974 Do Mahi**／1975 Mosabbeb／**1975 Pol**／1977 Dar Emtedâde Šab／1978 Ageh Bemooni Ageh Namooni。**但整頁掛著「More citations needed」與「Expand Persian」兩個維護模板，這張表一列都沒有附註來源**——它是這三張碟原盤年的**唯一**來源，方向一致，但撐不到「已驗證」的程度。",
+    "src": "https://en.wikipedia.org/w/index.php?title=Googoosh_discography&action=raw"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 89976006**《Persian Music: Googoosh 3, Dou Mahi》12 軌、releaseDate **1990-12-13**、℗ 1990 Caltex Records：**盤名與端上 release-group 的 title 逐字相同、日期與端上 release 完全相同（1990-12-13）、廠牌同為 Caltex，12/12 都有試聽**。⚠ **但逐軌只有四首對得上端上那十四軌**——〈Dou Mahi〉5:52（端上〈Do Mahi〉5:55）、〈Jomeh〉4:17（端上 4:18）、〈Sahelo Darya〉4:24（端上〈Sahel va Darya〉4:25）、〈Koocheye Entexar〉3:50（端上〈Koucheh〉3:51 與〈Daryaye Entezar〉2:35 皆非全同）；上架端另外八軌（Ma Beh Ham Mohtajim／Mordab／Begoo／Baad Az Tou／Kavir／Ageh Bemooni／Nefrin Beh Zendegi／Safar Bekheir）端上這張沒有。**盤名、日期、廠牌三項完全對得上，但曲目是另一套，不得逐軌互引。** 同目錄另有 6793098581《Dou Mahi, Googoosh 3》10 軌（同 ℗1990 Caltex，**又是第三套曲目，駁回**）、460ca408 對應的《The Best of Googoosh 3 - Doe Mahi》系列條目（端上另一個 release-group，駁回）。",
+    "src": "https://itunes.apple.com/lookup?id=89976006&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌裡有四首不到三分鐘，只有同名曲〈Do Mahi〉破了五分鐘",
+   "同一天，這位掛名名下有五個條目一起被灌進資料庫"
+  ],
+  "sound": "端上釘住的是 1990 年 12 月 13 日那筆全球發行：一張 CD、十四軌，掛 Caltex Records、沒有編號，release 那一層的標題只寫作《Do Mahi》。曲序是〈Gol Bi Goldoun〉4:27、〈Sahel va Darya〉4:25、〈Bizaar〉4:23、〈Sekkeye Khorshid〉3:14、同名曲〈Do Mahi〉5:55、〈Yadet Basheh〉4:36、〈Anrouz〉2:56、〈Sabz o Sefeed〉2:59、〈Gol e Gham〉4:25、〈Daryaye Entezar〉2:35、〈Koucheh〉3:51、〈Felfel Nabin Che Rizeh〉3:11、〈Jomeh〉4:18，收在〈Shad E Shad〉2:56。十四軌裡四首不到三分鐘，只有同名曲超過五分鐘。",
+  "keyTracks": [
+   "Do Mahi",
+   "Gol Bi Goldoun",
+   "Daryaye Entezar"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **端上與卡單差了十六年，`year` 欄的 1974 只有一個外部來源。** 端上：release-group 的 first-release-date 是 **1990-12-13**，轄下唯一那筆 release 同日；**1974 年的原盤在端上沒有建 release**，藝人目錄三十八個條目裡沒有任何一個記 1974。⚠ **而且 1990-12-13 這個日期本身就有問題**——名下有**五個條目共用它**，那是同批灌檔的形狀，**連「1990 年 12 月 13 日發行」都不宜寫成發行事實**。外部：作品年表頁寫 1974 Do Mahi，**整頁掛「需要更多來源」維護模板、表格無附註**。串流側對得上的那筆 releaseDate 與 ℗ 也都記 1990。**結論：1974 不得寫成已驗證的原盤年；1990-12-13 只能寫成「資料庫端登錄的日期」，不得寫成出版日。**",
+  "notes": "**擋下策展層三處。**｜（一）⚠ **作詞作曲者不得寫**：`why` 寫「作詞 Shahyar Ghanbari、作曲 Varoujan」。**端上十四軌零 recording-level relationship、annotation 空**；外部那份年表頁的 Lyrics／Composer 欄雖然有名字，**但整頁無附註**——**依人名從嚴，兩個名字都不得寫。**｜（二）**原盤年的檔位要降一級**：同《Mordaab》《Pol》的問題，**不得寫「1974 年的專輯」**。｜（三）⚠ **1990-12-13 也不能當發行日寫**：名下五個條目共用這一天，**是灌檔日的形狀**（策展層在 Elaheh 那幾張已用同一判準，這裡也適用）。行文只能寫「資料庫端登錄的日期」。｜**覆核屬實、可以直接寫的**：release 那一層的標題是《Do Mahi》、release-group 那一層才是長盤名（⚠ **卡片盤名取卡單的長版本，行文引盤名時可以指出兩層不同**）；廠牌 Caltex Records（**無編號**）；十四軌的長度分布（四軌不到三分鐘、只有同名曲破五分鐘）。｜⚠ **第 1 軌〈Gol Bi Goldoun〉與同批那張十六軌選輯的末軌同名，端上沒有關係把兩者連起來，只能寫「曲名相同」。**｜**串流採信 89976006：盤名與端上 release-group 逐字相同、日期 1990-12-13 與端上 release 完全相同、廠牌同為 Caltex，12/12 有試聽；⚠ 十二軌只有四首與端上十四軌對得上，曲目是另一套，不得逐軌互引。** 駁回 6793098581《Dou Mahi, Googoosh 3》（第三套曲目）與《The Best of Googoosh 3 - Doe Mahi》系列（端上另一個 release-group）。**有固定試聽來源；逐軌長度以端上欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Ebi|Tapesh",
+  "artist": "Ebi",
+  "album": "Tapesh",
+  "facts": [
+   {
+    "f": "release-group d48fe1a6 的欄位：title「Tapesh」、artist-credit「Ebi」（藝人實體 a499bc6f，Person／**area United States、begin-area Tehran**，disambiguation「Iranian singer」，life-span **1949-06-19 起、未結束**，gender Male；alias 欄記有 Ebi Hamedi／Ebrahim Hamedi／ابراهیم حامدی／ابی）、**first-release-date 1973**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：**1973、country IR、Official、label-info 空、無 barcode、media 的 format 欄空白、8 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d48fe1a6-b91b-4688-8049-403ce1592846&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "8 軌逐軌與長度：1〈Kavir〉4:08、2〈Tapesh〉6:01、3〈Jodaie〉5:04、4〈Chera Chera〉5:15、**5〈Iran〉7:24**、6〈Asir〉3:43、7〈Cheshmeh〉3:46、8〈Papa〉3:39。⚠ **八軌只有 34:20 上下，卻有三軌超過五分鐘、最長的第五軌 7:24 幾乎是最短那軌（3:39）的兩倍**；⚠ **前五軌一路變長（4:08→6:01→5:04→5:15→7:24），後三軌全部縮到四分鐘以內**，是很清楚的前重後輕。**八軌零 recording-level relationship、annotation 欄空。**",
+    "src": "https://musicbrainz.org/ws/2/release/0f097f2f-087f-41a2-b7cb-58f40183baba?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **30 個 release-group**：**primary-type Album 25 個**（純 Album 22、Album/Compilation 2、Album/Live 1）、Single 4、Single/Live 1。⚠ **依 first-release-date 排，本張（1973）是名下最早的一個條目，第二早的跳到 1986**——**中間十三年端上沒有任何條目**。**「名下最早的條目」與「唯一一個 first-release-date 早於 1979 的條目」兩句都數過、成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a499bc6f-4add-4aba-aa02-51a55574df76&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 288939986**《Tapesh》8 軌、releaseDate 2008-08-16、℗ 2008 Taraneh Enterprises Inc：**八軌與端上逐軌同名同序**（Kavir 4:02／Tapesh 5:54／Jodayi 4:58／Chera Chera 5:10／Iran 7:19／Asir 3:38／Cheshmeh 3:41／Papa 3:32），**每一軌都比端上短 3–7 秒（八軌一致地短，是母帶頭尾裁切的形狀），8/8 都有試聽**。⚠ **℗ 記 2008，那是再版的 ℗ 年，不是原盤年。** 同目錄另有 287079501《48 Golden Hits of Ebi》48 軌、322594935《Ebi Golden Music》12 軌（℗1979）、1772143266《Ebi》10 軌（℗2024）等六十餘筆，**都不是本張，駁回**；⚠ **另一位掛名（Shahram Shabpareh）名下也有一張同名的《Tapesh》，端上是另一個 release-group，一併駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=288939986&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌從四分零八秒一路拉長到七分二十四秒，最後三軌又全部縮到四分鐘以內",
+   "這是這位掛名在端上最早的條目，下一個條目要等到十三年後"
+  ],
+  "sound": "端上這張碟只有一筆發行：1973 年、發行國記伊朗、Official，廠牌與載體欄都是空的，八軌。曲序是〈Kavir〉4:08、同名曲〈Tapesh〉6:01、〈Jodaie〉5:04、〈Chera Chera〉5:15、全片最長的〈Iran〉7:24、〈Asir〉3:43、〈Cheshmeh〉3:46，收在〈Papa〉3:39。前五軌越走越長，第五軌拉到七分二十四秒，之後三軌一起收進四分鐘以內。八軌裡三軌超過五分鐘，最長與最短差了一倍。",
+  "keyTracks": [
+   "Tapesh",
+   "Iran",
+   "Kavir"
+  ],
+  "status": "full",
+  "yearVerified": "**端上一致，1973（只到年）**：release-group 的 first-release-date 與其下唯一那筆 release 的 date 都是 1973，country 記 IR、status Official，**端上沒有第二個版本、沒有更早的日期，也沒有復刻年混進這個 release-group**。⚠ **但這個 1973 沒有第二個來源可以交叉驗證**：八軌零 recording-level relationship、annotation 空；串流側對得上的那筆 releaseDate 記 2008-08-16、℗ 記 2008，**那是再版的 ℗ 年，不能拿來佐證原盤年**。**可以寫「端上記 1973、發行國記伊朗」，不得寫「1973 年錄的」**（錄音年端上空白）。**⚠ 藝人目錄的排序給了一個間接支持**：本張是名下最早的條目，第二早的要跳到 1986——這個間隔本身是可查的欄位事實。",
+  "notes": "**擋下策展層零處，補正兩處。**｜（一）**載體不得寫**：卡單 `label` 欄寫「MB 該 release 未填 label-info 與載體」——覆核屬實，**label-info 是空的、media 的 format 欄也是空的**，`sound` 與簡介**不得寫載體、不得寫廠牌**。｜（二）**序數要說清楚範圍**：`why` 寫「名下 30 個 release-group 裡唯一一個 first-release-date 落在 1979 年之前」——**逐筆數過，成立**；⚠ **可以再加一句更有力的：本張是名下最早的條目，第二早的條目跳到 1986，中間十三年端上是空的。** 藝人目錄「30 個 release-group、其中 25 個 primary-type Album」也數過、屬實。｜**可以寫的**：八軌的長度分布（3:39–7:24、三軌破五分鐘、前重後輕）、發行國 IR、藝人實體的 area **United States**／begin-area Tehran／life-span 1949-06-19 起。⚠ **area 是欄位值，寫成「他後來去了美國」就是敘事化，不可以。**｜**掛名寫法**：卡片取「Ebi」（卡單寫法）；⚠ **本名只出現在 alias 欄（Ebrahim Hamedi／ابراهیم حامدی），disambiguation 只寫「Iranian singer」——依硬規則不得背書本名、下游不要補生平**（策展層在 `risk` 已提醒，覆核同意；⚠ **順帶更正派工單的說法：這個掛名的 disambiguation 並不是空白，是「Iranian singer」，空白的是本名那一層**）。｜**串流採信 288939986：8 軌與端上逐軌同名同序、八軌一致地比端上短 3–7 秒，8/8 有試聽；℗ 2008（再版 ℗ 年）**。駁回 287079501（48 軌選輯）、322594935（℗1979 的另一張）、1772143266（2024 年同名碟）與另一位掛名名下的同名《Tapesh》。**有固定試聽來源，逐軌長度以端上 1973 年那一筆的欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Siavash Ghomayshi|Farangis",
+  "artist": "Siavash Ghomayshi",
+  "album": "Farangis",
+  "facts": [
+   {
+    "f": "release-group 0951b560 的欄位：title「Farangis」、artist-credit「Siavash Ghomayshi」（藝人實體 554b4286，Person／**area United States、begin-area Dezful**，disambiguation「Iranian Singer」，life-span **1945-06-11 起、未結束**，gender Male；alias 欄記有 Siavash／Siavash Ghomeishi／Siyāvash Qumayshī／سياوش قميشي(ar,primary)／سیاوش قمیشی(fa)）、**first-release-date 1973**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：**1973、country 欄空、Official、label-info 空、media format 記 Cassette、10 軌**。⚠ **這是 a 組唯二 media 記為卡帶的條目之一**（另一張是同組的《دلمشغولی‌ها》）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0951b560-7aeb-4688-b997-7e72feb3e5f0&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "10 軌逐軌與長度：1〈Paeez〉5:25、2〈Hobab〉4:55、**3〈Khosh Khial〉2:31**、4〈Toloo〉5:48、5〈Khali〉4:10、6〈Tanha〉4:45、7〈Faseleh〉3:20、8〈Gharghabe Dard〉4:56、9〈Baham〉3:26、10〈Farangis〉3:49。⚠ **十軌裡最短的第三軌只有 2:31，最長的第四軌 5:48 是它的兩倍多**；**同名曲〈Farangis〉排在最後、只有 3:49，不是全片最長的一首**。**十軌零 recording-level relationship、annotation 欄空。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0951b560-7aeb-4688-b997-7e72feb3e5f0&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **20 個 release-group**：**primary-type Album 18 個（全部 secondary-types 空）**、Single 2 個。⚠ **依 first-release-date 排，本張（1973）是名下最早的一個條目，第二早的跳到 1992**——**中間十九年端上沒有任何條目**。**「名下唯一一個 first-release-date 早於 1979 的條目」與「名下最早的條目」兩句都數過、成立。** 名下另有 7db71d78《Khabe Baroon (Farangis)》(1993)，**盤名含同一個字、是另一個 release-group**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=554b4286-0e16-4a84-b884-3e0dffe9dd77&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 289798759**《Farangis》10 軌、releaseDate 2008-08-26、℗ 2008 Taraneh Enterprises Inc：**十軌與端上逐軌同名同序**（Payeez 5:21／Hobab 4:51／Kosh Khial 4:57／Toloo 5:43／Khali 4:05／Tanha 4:40／Faseleh 3:16／Gharghabe Dard 4:52／Baham 3:22／Farangis 3:45），**九軌都比端上短 3–5 秒，10/10 都有試聽**。⚠ **只有第 3 軌對不上：端上〈Khosh Khial〉2:31，上架端〈Kosh Khial〉4:57，差了將近兩分半**——**那一軌的長度兩端只能各自標明版本，不得混寫。** ⚠ **℗ 記 2008，是再版的 ℗ 年。** 同目錄另有 1784815151《Farangis》7 軌（℗1993 Pars Video，**軌數對不上，駁回**）、7db71d78 對應的 1993《Khabe Baroon (Farangis)》系列條目（端上另一個 release-group，駁回）與其餘七十筆。",
+    "src": "https://itunes.apple.com/lookup?id=289798759&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡最短的第三軌只有兩分三十一秒，最長那軌五分四十八秒，差了一倍多",
+   "同名曲排在最後一軌，三分四十九秒，不是全片最長的"
+  ],
+  "sound": "端上這張碟只有一筆發行：1973 年、Official、載體記卡帶、十軌，發行國與廠牌欄都是空的。曲序是〈Paeez〉5:25、〈Hobab〉4:55、只有 2:31 的〈Khosh Khial〉、全片最長的〈Toloo〉5:48、〈Khali〉4:10、〈Tanha〉4:45、〈Faseleh〉3:20、〈Gharghabe Dard〉4:56、〈Baham〉3:26，收在同名曲〈Farangis〉3:49。十軌的長度落差集中在第三與第四軌之間，最短與最長差了一倍多；同名曲排在末尾，長度只在中段。",
+  "keyTracks": [
+   "Farangis",
+   "Toloo",
+   "Khosh Khial"
+  ],
+  "status": "full",
+  "yearVerified": "**端上一致，1973（只到年）**：release-group 的 first-release-date 與其下唯一那筆 release 的 date 都是 1973，status Official，**端上沒有第二個版本、沒有更早的日期，也沒有復刻年混進這個 release-group**。⚠ **這個 1973 沒有第二個來源可以交叉驗證**：十軌零 recording-level relationship、annotation 空；串流側對得上的那筆 releaseDate 記 2008-08-26、℗ 記 2008，**那是再版的 ℗ 年**；同目錄另有一筆同名七軌的 ℗1993，**年份與軌數都不同**。**可以寫「端上記 1973、載體記卡帶」，不得寫「1973 年錄的」。⚠ 也不得寫發行國**（country 欄是空的）。**藝人目錄的排序給了間接支持**：本張是名下最早的條目，第二早的跳到 1992。",
+  "notes": "**擋下策展層一處。**｜（一）⚠ **「卡帶是那個流通形態的證據」不得寫**：`why` 從 media 的 Cassette 欄位推到「巴列維末期伊朗國內的自主流通大量靠卡帶」。**載體欄是可查的事實，那句流通史的推論不是**——而且**這筆 release 的 country 欄是空的**，連發行國都沒有。**可以寫「端上這一筆的載體記卡帶」，不得寫它代表什麼流通形態，更不得往體制或政治的方向延伸。**｜**覆核屬實、可以直接寫的**：藝人目錄「20 個 release-group、其中 18 個 primary-type Album」逐筆數過、屬實；**「名下唯一一個 first-release-date 早於 1979 的條目」成立**；⚠ **更好的一句：本張是名下最早的條目，第二早的跳到 1992，中間十九年端上是空的。** 十軌的長度分布（2:31–5:48、同名曲排末軌）可寫。藝人實體的 area United States／**begin-area Dezful**／life-span 1945-06-11 起可寫（**begin-area 這一格是本張少見的細地名，值得用**）。｜**廠牌與發行國都是空的，不得寫。**｜**掛名寫法**：卡片取「Siavash Ghomayshi」（卡單寫法），查詢別名 Siavash Ghomeishi／Siyāvash Qumayshī／سیاوش قمیشی。｜**串流採信 289798759：10 軌與端上逐軌同名同序、九軌一致地短 3–5 秒，10/10 有試聽；⚠ 第 3 軌兩端差近兩分半（端上 2:31、上架端 4:57），那一軌的時間必須標明是哪一版；℗ 2008（再版 ℗ 年）**。駁回 1784815151（同名七軌、℗1993）與 1993 年那張盤名含同一個字的別碟。**有固定試聽來源，逐軌長度以端上 1973 年那一筆的欄位為準，可以寫時間（第 3 軌除外，要標版本）。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Habib Mohebian|Salame Hamsayeh",
+  "artist": "Habib Mohebian",
+  "album": "Salame Hamsayeh",
+  "facts": [
+   {
+    "f": "release-group 0a650cdc 的欄位：title「Salame Hamsayeh」、artist-credit「Habib Mohebian」（藝人實體 c7a21981，Person／**area Iran、begin-area Tehran、end-area Ramsar**，disambiguation「Iranian Singer」，**life-span 1947-09-26 生、2016-06-10 卒**，gender Male；alias 欄只有一筆 Habib Mohebian(en,primary)）、**first-release-date 1978**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：**1978、country 欄空、status 欄空（連 Official 都沒填）、media format 欄空、10 軌、無 barcode**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0a650cdc-7d45-4c0f-a2d6-6d2befa1bfc4&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠ **卡單說「未填 label-info」——已補上**：這筆 release（aa32a212）的 label-info 掛的是 **Taraneh**（沒有 catalog-number）。10 軌逐軌（**length 欄全部是空的**）：1〈Shame Ghariban〉、2〈Salam Hamsayeh〉、3〈Dela Barkhiz〉、4〈Aaber〉、5〈Fasle Eshgh〉、6〈Hargez〉、7〈Shabhaye Gham Abad〉、8〈Ziba Tarin Taraneh〉、9〈Lahzeh Ha〉、**10〈Khana Khana〉**。**十軌零 recording-level relationship、annotation 欄空。**",
+    "src": "https://musicbrainz.org/ws/2/release/aa32a212-0000-0000-0000-000000000000?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "⚠ **與 a 組另一張碟的交叉點**：本張末軌〈Khana Khana〉**同名於同批那張十九軌選輯的盤名與第 9 軌**（該軌的 artist-credit 就寫 Habib Mohebian）。**端上沒有 recording 層的關係把兩者連起來，只能寫「曲名相同、掛名相同」。** 藝人端點分頁全列 **16 個 release-group**：**primary-type Album 14 個（全部 secondary-types 空）**、Single 2 個。**依 first-release-date 排，本張（1978）是名下最早的一個條目，第二早的跳到 1984**——**「名下唯一一個 first-release-date 早於 1979 的條目」數過、成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c7a21981-b00e-4f0a-a7aa-e69ef7e3d92f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 291179461**《Salaame Hamsayeh》10 軌、releaseDate 2008-09-09、℗ 2008 Taraneh Enterprises Inc：**十軌與端上十軌一首不多一首不少、曲名逐一對得上，廠牌 Taraneh 與端上 label-info 一致，10/10 都有試聽**，並**補上了端上完全空白的逐軌長度**（Shaame Ghariban 6:27／Salaam Hamsayeh 3:25／Dela Barkhiz 4:56／Fasle Eshgh 4:39／Aaber 4:11／Hargez 4:36／Shab Haaye Gham Aabaad 5:35／Ziba Tarin Taraneh 4:50／Lahzeh Ha 4:16／Khana Khana 3:15）。⚠ **只有第 4 與第 5 軌的順序兩端相反**（端上 4〈Aaber〉、5〈Fasle Eshgh〉；上架端 4〈Fasle Eshgh〉、5〈Aaber〉），其餘八軌同序。⚠ **℗ 記 2008，是再版的 ℗ 年。** 同目錄另有 1614733757《Khaana Khaana - Single》單軌、℗ **1976** Nasser Cheshmazar（**與本張末軌同名的單曲條目，年份比本張的 1978 還早兩年，端上沒有對應的 release-group，駁回但值得記一筆**）與三十二筆其他條目（含多筆孟加拉語同名掛名的碟），**一併駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=291179461&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "末軌的曲名〈Khana Khana〉後來成了另一張十九軌選輯的盤名",
+   "端上這一筆連發行國、狀態、載體三個欄位都是空的，只留下年份、廠牌與十個曲名"
+  ],
+  "sound": "端上這張碟只有一筆發行：1978 年，發行國、狀態與載體三個欄位都是空的，廠牌記 Taraneh、沒有編號，十軌。曲序是〈Shame Ghariban〉、〈Salam Hamsayeh〉、〈Dela Barkhiz〉、〈Aaber〉、〈Fasle Eshgh〉、〈Hargez〉、〈Shabhaye Gham Abad〉、〈Ziba Tarin Taraneh〉、〈Lahzeh Ha〉，收在〈Khana Khana〉。十軌的長度端上一軌都沒有登錄；上架版本十軌逐一對得上，最長的首軌六分二十七秒、最短的末軌三分十五秒。",
+  "keyTracks": [
+   "Salam Hamsayeh",
+   "Khana Khana",
+   "Shame Ghariban"
+  ],
+  "status": "full",
+  "yearVerified": "**端上一致，1978（只到年）**：release-group 的 first-release-date 與其下唯一那筆 release 的 date 都是 1978，**端上沒有第二個版本、沒有更早的日期**。⚠ **但這筆 release 的 status 欄是空的**（連 Official 都沒填），**「1978 年正式發行」這種說法不得寫，只能寫「端上記 1978」**。⚠ **有一個反向線索要記下來**：串流側同一位掛名的目錄裡有一筆《Khaana Khaana》單曲、**℗ 記 1976**，與本張末軌同名、比本張的 1978 早兩年——**端上沒有對應的條目，不能拿來改年份，但它說明這些曲子的原始年份可能早於 1978**。**逐軌錄音年端上完全空白**（零 recording-level relationship、annotation 空），**不得寫「1978 年錄的」**。串流側對得上的那筆 ℗ 記 2008（再版 ℗ 年）。",
+  "notes": "**擋下策展層一處、補正一處。**｜（一）**補正：廠牌查到了**。卡單 `label` 與 `mbNote` 都寫「status／country／label-info 皆空」——**status 與 country 確實是空的，但 label-info 不是：用 `release?...+labels` 回問，掛的是 Taraneh（無編號）**，且串流側對得上的那筆 ℗ 也記 Taraneh，兩端一致。**`label` 欄可以補成「Taraneh（無編號）」。**｜（二）**擋下「a 組年份最晚的原盤」**：`why` 這句是排序主張。**本組另有兩張的 `year` 是 1979（同批那張現場專輯）與 1996，端上的 first-release-date 也各不相同**——「年份最晚的原盤」在卡單這一組裡不成立，**不得寫**。｜**覆核屬實、可以直接寫的**：藝人目錄「16 個 release-group、其中 14 個 primary-type Album」逐筆數過、屬實；**「名下唯一一個 first-release-date 早於 1979 的條目」成立**；⚠ **更好的一句：本張是名下最早的條目，第二早的跳到 1984。** 藝人實體的 area Iran／begin-area Tehran／**end-area Ramsar**／life-span 1947-09-26–2016-06-10 都是欄位值，可寫。｜⚠ **末軌〈Khana Khana〉與同批那張十九軌選輯的盤名相同、該輯第 9 軌的掛名也是他**——**端上沒有 recording 層的關係，只能寫「曲名相同、掛名相同」，不得寫成「被收進那張選輯」。**｜**發行國、狀態、載體三欄都空，一律不得寫。**｜**掛名寫法**：卡片取「Habib Mohebian」（卡單寫法）；⚠ **端上的短掛名「Habib」在同名候選裡完全沒有辨識力，本張靠的是 disambiguation「Iranian Singer」與 area Iran——下游不要用短掛名去撈，也不要補生平。**｜**串流採信 291179461：10 軌與端上一首不多一首不少、曲名逐一對得上，廠牌兩端一致，10/10 有試聽，並補上端上全空的逐軌長度；⚠ 第 4 與第 5 軌順序兩端相反；℗ 2008（再版 ℗ 年）**。駁回 1614733757《Khaana Khaana - Single》（℗1976，端上無對應條目）與其餘三十二筆。**有固定試聽來源；⚠ 端上逐軌長度全空，寫時間必須說明是上架版本的長度。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Soli|Persian Music Hits 8",
+  "artist": "Soli",
+  "album": "Persian Music Hits 8",
+  "facts": [
+   {
+    "f": "release-group 877dc00f 的欄位：title「Persian Music Hits 8」、artist-credit「Soli」（藝人實體 13649d23，Person／**area Toronto、begin-area Tehran**，disambiguation「Iranian Singer」，life-span **1946 起、未結束**，gender Male；alias 欄記有 Sally／Soleyman Vaseghi／Solomon Vaseghi／سلیمان واثقی）、**first-release-date 1976-05-25**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：1976-05-25 **US** Official、**Caspian（label-info 有廠牌、沒有 catalog-number）**、**media format 記 CD、10 軌**、無 barcode。⚠ **1976-05-25 這個日期與 CD 這個載體不相容，兩個欄位至少有一個是錯的。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=877dc00f-f793-46e2-89ea-a8b2dc1cbe10&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠⚠ **本張最重要的一項覆核：這不是一張個人專輯。** release 那一層的 artist-credit 雖然寫「Soli」，**但十軌的 track-level artist-credit 掛的是十個不同的名字**：1〈Ghame Tanhai〉4:52 **Fereydoon Forooghi**、2〈Az Mast Ke Bar Mast 4;35〉**Siavash Ghomayshi**、3〈Gol Khashkhash〉3:50 **Leila Forouhar**、4〈Moseme Gol〉3:38 **Ahdieh**、5〈Esskele〉4:57 **Neli**、6〈Khobtarin Khoba〉3:12 **Feridoun Farahi**、7〈Hamdi Fil〉3:50 **Soli**、8〈Fahmet Bere Bala〉2:18 **Aki**、9〈Nazanin〉4:19 **Nasser Masoudi**、10〈Yeki Ra Doust Midaram〉7:59 **Nasrollah Moein**。**卡單掛名的那位只唱第 7 軌一首。** ⚠ **第 2 軌的 title 欄被寫成「Az Mast Ke Bar Mast 4;35」——長度被打進了曲名裡，那一軌的 length 欄因此是空的。** **十軌零 recording-level relationship、annotation 欄空。**",
+    "src": "https://musicbrainz.org/ws/2/release/61b596bb-ba43-4037-a7ee-96db33d6677c?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **1 個 release-group**——**這位掛名在端上除了本輯沒有第二個條目**，策展層「名下只有一個 release-group」數過、屬實。⚠ **但這一個條目本身是十個掛名的合輯**，所以嚴格說端上沒有任何一張以這個掛名為主體的碟。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=13649d23-e7ed-4044-9e73-4a9c14951323&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了，**沒有一筆可採信**。以盤名搜尋回 15 筆，**沒有一筆對得上**（回的是《Best of 90's Persian Music》系列、《Persian Dance Party》《Persian Disco Party》等 Caltex 的選輯，以及數筆阿拉伯語單曲）；以第 7 軌曲名搜尋回 4 筆，**四筆全是別的語種、別的掛名**；藝人目錄端的候選實體 203538441「Soli」名下 17 筆**全是瑞典語的單曲與 EP**（℗ 2015–2024），**與本張無關，駁回**；以「Soli Persian singer」查 musicArtist **回 0 筆**。**本輯在串流側查無上架條目。**",
+    "src": "https://itunes.apple.com/search?term=Persian%20Music%20Hits%208&entity=album&limit=15&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "一張掛在單一名字底下的碟，十軌卻掛了十個不同的名字，掛名的那位只唱第七軌",
+   "第二軌的長度被人打進了曲名欄裡，那一軌因此沒有長度"
+  ],
+  "sound": "端上這張碟只有一筆發行：1976 年 5 月 25 日、美國、Official，掛 Caspian、沒有編號，十軌。十軌各掛不同的名字：〈Ghame Tanhai〉4:52、〈Az Mast Ke Bar Mast〉、〈Gol Khashkhash〉3:50、〈Moseme Gol〉3:38、〈Esskele〉4:57、〈Khobtarin Khoba〉3:12、〈Hamdi Fil〉3:50、〈Fahmet Bere Bala〉2:18、〈Nazanin〉4:19，收在全片最長的〈Yeki Ra Doust Midaram〉7:59。九軌有長度的裡面，最短 2:18、最長 7:59，末軌幾乎是倒數第二長那軌（4:57）的一倍半。",
+  "keyTracks": [
+   "Hamdi Fil",
+   "Yeki Ra Doust Midaram",
+   "Fahmet Bere Bala"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **端上記 1976-05-25，但這個日期與同一筆 release 的載體欄互相矛盾，不能當已驗證的發行日。** release-group 的 first-release-date 與其下唯一那筆 release 的 date 都是 1976-05-25、country US、status Official，**端上沒有第二個版本**；**但 media 的 format 欄記 CD，1976 年的美國盤不會是 CD**——**年份欄與載體欄至少有一個是錯的（策展層在 `risk` 已註明，覆核屬實）**。逐軌錄音年端上完全空白（零 recording-level relationship、annotation 空）。**串流側查無條目，沒有第二個年份來源可以比對。** **結論：1976 只能寫成「端上登錄的日期」，不得寫成已驗證的原盤年；載體一律不得寫。**",
+  "notes": "**擋下策展層三處，其中第一處是本組最重的三處之一。**｜（一）⚠⚠ **這不是一張個人專輯，不得寫成「Soli 的碟」**：release 那一層的 artist-credit 雖然是這個掛名，**但十軌的 track-level artist-credit 是十個不同的名字（Fereydoon Forooghi／Siavash Ghomayshi／Leila Forouhar／Ahdieh／Neli／Feridoun Farahi／Soli／Aki／Nasser Masoudi／Nasrollah Moein），掛名的那位只唱第 7 軌〈Hamdi Fil〉一首**。盤名本身也叫「Persian Music Hits 8」，是選輯的形狀。**簡介若寫成「他的專輯」「他的十首歌」就是事實錯誤；`why` 的「這個掛名唯一可釘的條目」可以留，但要說清楚它是一張十個掛名的合輯。**（⚠ **下游若要重新評估 releaseType，這是唯一一張形態上像合輯卻沒填例外欄位的卡。**）｜（二）**補正：廠牌查到了**。卡單 `label` 寫「MB 該 release 未填 label-info」——**掛的是 Caspian（無編號）**。**`label` 欄可以補成「Caspian（US，無編號）」。**｜（三）⚠ **載體與年份互斥，載體不得寫**：1976-05-25 配 format CD，兩者不相容。｜**覆核屬實、可以直接寫的**：「名下只有一個 release-group」數過、成立；十軌的掛名分布（十個名字）；九軌的長度分布（2:18–7:59，末軌 7:59 特別突出）；⚠ **第 2 軌的 title 欄被打成「Az Mast Ke Bar Mast 4;35」、length 欄因此是空的——這是端上的資料傷，行文引第 2 軌時不得寫時間。**｜**人名從嚴的例外**：那九個名字**是 track-level 的 artist-credit，屬於欄位、可以寫**；但**任何樂手、編曲、製作人的名字端上都沒有，不得寫**。｜**掛名寫法**：卡片取「Soli」（卡單寫法）；⚠ **短掛名在同名候選裡完全沒有辨識力，本張靠 disambiguation「Iranian Singer」＋area Toronto＋名下唯一條目三項一起認的；本名只在 alias 欄，不得背書。**｜**串流側三種查法都跑了：盤名搜尋 15 筆全不對、曲名搜尋 4 筆全不對、藝人目錄的候選實體是瑞典語掛名，全部駁回。無固定試聽來源。逐軌長度以端上欄位為準（第 2 軌除外），可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Faramarz Aslani|دلمشغولی‌ها",
+  "artist": "Faramarz Aslani",
+  "album": "دلمشغولی‌ها",
+  "facts": [
+   {
+    "f": "release-group 0a422a5b 的欄位：title「دلمشغولی‌ها」、artist-credit **「فرامرز اصلانی」**（藝人實體 3ef9da0a，sort-name「Aslani, Faramarz」，Person／**area United States、begin-area Tehran、end-area Maryland**，disambiguation「Iranian singer」，**life-span 1954-07-13 生、2024-03-20 卒**，gender Male；alias 欄記有 Faramarz Aslani(en,primary)／فرامرز اصلانی(fa,primary)）、**first-release-date 1977**、primary-type Album、**secondary-types 空**。轄下 **3 個 release**：（一）**1977 IR Official，CBS、catno 40-82399，Cassette 10 軌**；（二）1993 **US** Official，**Taraneh、兩組編號 CD 82 與 CD 86**，CD 10 軌，release title「اگه یه روز」；（三）2008-07-11 **Withdrawn**，Taraneh，Digital Media 10 軌，barcode 891689002795。⚠ **第三筆 status 是 Withdrawn，一切欄位不得引用。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0a422a5b-9d44-38a1-9beb-a7cce4a07221&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠ **卡單說「未填 label-info」——大錯，1977 年那筆的廠牌與編號都有**：label-info 掛 **CBS**、catalog-number **40-82399**。1977 年原盤（1aa6e9f3）逐軌與長度（端上曲名全為波斯文，**且有 A／B 面編號**）：A1〈اگه یه روز〉4:00、A2〈دیوار〉4:42、A3〈دل اسیره〉3:08、A4〈عبور〉4:09、A5〈یارم کو〉4:11、B1〈آهوی وحشی〉5:50、B2〈دریغ〉2:47、B3〈پرستوهای خسته〉4:39、B4〈یاد گذشته〉2:59、B5〈شب〉3:55。⚠ **兩面各五軌、A 面五軌全部落在 3:08–4:42、B 面的落差大得多（2:47–5:50）**；全片最長的 B1 5:50 與最短的 B2 2:47 緊挨在一起。**十軌零 recording-level relationship、annotation 欄空。** 1993 年的 CD 十軌同名同序、長度只差 1–2 秒。",
+    "src": "https://musicbrainz.org/ws/2/release/1aa6e9f3-46c9-4381-bf27-0356d458e1b3?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **13 個 release-group**：**primary-type Album 只有 5 個**（全部 secondary-types 空）、Single 6 個、Single/Remix 1 個、Single/Live 1 個。⚠ **依 first-release-date 排，本張（1977）是名下最早的一個條目，第二早的跳到 1994**——**中間十七年端上沒有任何條目**；名下五張 Album 依序是 **1977《دلمشغولی‌ها》、1994《بیاد حافظ》、1999-08-04《Days Of Song & Sorrow》、2010-07-13《Khate Sevom》、2017-09-24《Midnight to Dawn》**。**「名下最早、也是唯一一個 first-release-date 早於 1979 的條目」數過、成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=3ef9da0a-b7cb-461f-91a1-598e29d10f4f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 302867917**《Age Yeh Rooz》10 軌、releaseDate 1992-01-01、℗ 1992 Pars Video：**十軌與端上 1977 年原盤逐軌同序、曲名一一對得上羅馬轉寫**（Age Yeh Rooz 4:00／Divar 4:41／Del Asireh 3:07／Obour 4:09／Yaaram Koo 4:08／Aahooye Vahshi 5:47／Darigh 2:46／Parastouhaye Khasteh 2:59／Yade Gozashteh 2:59／Shab 3:56），**10/10 都有試聽**。⚠ **第 8 軌兩端差很多**：端上〈پرستوهای خسته〉4:39、上架端〈Parastouhaye Khasteh〉2:59（與第 9 軌同長），**那一軌的時間必須標明版本**；其餘九軌兩端只差 1–3 秒。⚠ **上架端用的是 1993 年那個再發的盤名（اگه یه روز 的羅馬轉寫），不是原盤名。** 同目錄另有 1566007957《Age Ye Rooz (Remix) - Single》、1501545113《Age Ye Rooz Beri Safar (Mehran Abbasi Remix) - Single》、1825125635《Age Ye Rooz - Single》等多筆單曲與 Remix，**全部駁回**。⚠ **這一筆是策展層判「目錄裡找不到」而第三種查法找回來的。**",
+    "src": "https://itunes.apple.com/lookup?id=302867917&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "A 面五軌全部壓在三分零八秒到四分四十二秒，B 面卻從兩分四十七秒一路開到五分五十秒",
+   "這是這位掛名在端上最早的條目，下一個條目要等十七年"
+  ],
+  "sound": "1977 年的伊朗盤是一捲卡帶、十軌，掛 CBS、編號 40-82399，端上還留著 A／B 面的編號。A 面〈اگه یه روز〉4:00、〈دیوار〉4:42、〈دل اسیره〉3:08、〈عبور〉4:09、〈یارم کو〉4:11；B 面〈آهوی وحشی〉5:50、〈دریغ〉2:47、〈پرستوهای خسته〉4:39、〈یاد گذشته〉2:59、〈شب〉3:55。A 面五軌全部落在三分零八秒到四分四十二秒之間，B 面的落差大得多：全片最長的 5:50 與最短的 2:47 就緊挨在一起。1993 年的美國 CD 十軌同名同序，長度只差一兩秒。",
+  "keyTracks": [
+   "اگه یه روز",
+   "آهوی وحشی",
+   "دیوار"
+  ],
+  "status": "full",
+  "yearVerified": "**端上一致，1977（只到年）**：release-group 的 first-release-date 與其下最早那筆 release 的 date 都是 1977，**country 記 IR、status Official、載體記卡帶、廠牌 CBS／40-82399**——**這是 a 組裡少數幾張「年份、發行國、廠牌、編號、載體五格都填齊」的原盤條目，年份的可信度在本組屬於最高的一級**。轄下另兩筆分別是 1993（美國 CD 再發，另一個盤名）與 2008-07-11（**Withdrawn**），**兩個都是後來的年份、不得拿來當原盤年**。⚠ **錄音年端上仍是空白**（零 recording-level relationship、annotation 空），**只能寫「1977 年發行」，不得寫「1977 年錄的」**。串流側對得上的那筆 ℗ 記 1992（再版 ℗ 年）。",
+  "notes": "**擋下策展層兩處、補正一處。**｜（一）⚠⚠ **補正：廠牌與編號都在，卡單寫錯了**。卡單 `label` 寫「1977 IR Official 卡帶 10 軌（MB 該 release 未填 label-info）」——**用 `release?...+labels` 回問，1977 年那筆掛的是 CBS、catalog-number 40-82399**，1993 年那筆掛 Taraneh、有兩組編號 CD 82 與 CD 86。**`label` 欄可以改寫成「CBS（IR，catno 40-82399）」，這是本組資料最完整的一張原盤。**｜（二）**擋下「載體與國別對得上巴列維末期的流通形態」**：`why` 從 Cassette＋IR 兩個欄位推到流通史。**欄位可寫、推論不可寫**，更不得往體制的方向延伸。｜（三）**Withdrawn 那筆不得引用**：2008-07-11 那一筆 status 是 Withdrawn（`mbNote` 已註明，覆核屬實），**它的載體、barcode 一律不得寫**。｜**覆核屬實、可以直接寫的**：藝人目錄「13 個 release-group」屬實，⚠ **但「其中 5 個 primary-type Album」要說清楚——名下十三個條目裡有八個是單曲，Album 只有五個**；**本張是名下最早的條目，第二早的跳到 1994，中間十七年端上是空的**（這是很好的一句）。⚠ **端上留著 A／B 面編號，兩面的長度分布明顯不同**（A 面 3:08–4:42、B 面 2:47–5:50），這是本張最好的材料。藝人實體的 area United States／begin-area Tehran／**end-area Maryland**／life-span 1954-07-13–2024-03-20 都是欄位值，可寫。｜**盤名與掛名寫法**：卡片盤名照端上實體文字「دلمشغولی‌ها」、掛名取羅馬轉寫「Faramarz Aslani」（卡單寫法）；⚠ **1993 年再發改名「اگه یه روز」，那是另一個盤名，行文提到再發時要說清楚。**｜**串流採信 302867917：10 軌與端上 1977 年原盤逐軌同序、曲名一一對得上，10/10 有試聽；⚠ 第 8 軌兩端差 1 分 40 秒，寫時間要標版本；上架端用的是 1993 年再發的盤名；℗ 1992（再版 ℗ 年）**。駁回三筆《Age Ye Rooz》系列的單曲與 Remix。**這是本組第三種查法找回的一張。有固定試聽來源，逐軌長度以端上 1977 年那一筆的欄位為準，可以寫時間（第 8 軌除外）。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Elaheh, Aref & Emad Raam|Elaheh, Vol 5",
+  "artist": "Elaheh, Aref & Emad Raam",
+  "album": "Elaheh, Vol 5",
+  "facts": [
+   {
+    "f": "release-group 91f3fc31 的欄位：title「Elaheh, Vol 5」、**artist-credit 是三個實體並列**——Elaheh（9b642ebf，Person／area Iran、begin-area Tehran、**end-area Tehran**，disambiguation「Iranian singer」，life-span 1934-04-22–2007-08-15，Female）、Aref（a40ea636，Person／area **United States**、begin-area Tehran，**disambiguation「Iranian Singer [Aref Arefkia]」**，life-span 1941-08-15–2026-03-20，Male）、**Emad Raam（1e7055a3，Person，disambiguation 空、area 空、begin-area 空、life-span 全空、alias 空）**；first-release-date **1972-08-01**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：1972-08-01 **XW（全球）** Official、**Digital Media**、14 軌、barcode 00003526565725。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=91f3fc31-40b5-440f-8e89-dcfd5d55b722&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠ **卡單說「未填 label-info」——已補上，而且是兩家合掛**：這筆 release（eb716692）的 label-info 有 **Caltex Records** 與 **Caspian** 兩筆（兩者都沒有 catalog-number）。⚠ **annotation 欄不是空的，寫著「Copyright: © 1972 Caltex Records／℗ 1972 Caltex Records」**——**這是判斷 1972-08-01 這個日期性質的關鍵：那個 ℗ 年是後來的數位發行方自己填的，不是原盤的出版紀錄。**",
+    "src": "https://musicbrainz.org/ws/2/release/eb716692-a68e-410e-ba01-85de1261efd4?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "14 軌逐軌、track-level 掛名與長度：1〈Chegooneh Mikhandam〉4:13 **Elaheh＆Emad Raam**、2〈Monajat〉5:40 Elaheh、3〈Aseman〉2:10 Elaheh、4〈Ghesehe Nagofteh〉3:33 Elaheh、5〈Pooneha〉4:17 Elaheh、**6〈Bitaraneh〉6:21 Elaheh**、7〈Gol Kashti〉3:05 Elaheh、8〈Tou Va Golha〉4:03 Elaheh、9〈Doostet Daram〉3:11 **Elaheh＆Aref**、10〈Negahe Ou〉4:09 Elaheh、11〈Nasime Sahra〉4:34 Elaheh、12〈Eshghe Degar〉4:22 Elaheh、13〈Ashena〉5:45 Elaheh、14〈Gisoo〉2:51 Elaheh。⚠ **十四軌裡十二軌是單掛名，另外兩軌各多一個名字：第 1 軌多 Emad Raam、第 9 軌多 Aref**——**盤名掛三個人，實際上另外兩位各只出現在一軌。** ⚠ **最短的第 3 軌 2:10 與最長的第 6 軌 6:21 差了將近三倍。** **十四軌零 recording-level relationship。**",
+    "src": "https://musicbrainz.org/ws/2/release/eb716692-a68e-410e-ba01-85de1261efd4?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "兩個掛名的目錄都數過。**Elaheh 名下 30 個 release-group**（primary-type Album 25 個、Single 5 個）：⚠ **其中七個條目共用 1972-08-01 這同一天**（《Best Of》《Vol 1》《Vol 2》《Vol 3》《Vol 4》《Vol 5》《Vol 6》），**七個同日，是同批灌檔的形狀**。**Aref 名下 15 個 release-group**：**本輯（1972-08-01）是唯一一個 first-release-date 早於 1979 的條目**，第二早的跳到 1992-02-21——**策展層「Aref 革命前唯一可釘的條目」數過、成立**。**Emad Raam 名下只有 1 個 release-group，就是本輯。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a40ea636-6123-4629-910e-eaefcb93eb6b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 6793102336**《Elaheh, Vol 5》14 軌、releaseDate 1972-08-01、℗ 1972 Caltex Records：**十四軌與端上逐軌同名、同序、逐軌長度分毫不差**，**連 track-level 的掛名都一樣**（第 1 軌標 Elaheh & Emad Raam、第 9 軌標 Elaheh & Aref、其餘十二軌標 Elaheh），**14/14 都有試聽**。同目錄另有 **295285892《Best of Elaheh, Vol. 5 (Persian Music)》14 軌、℗ 1972 Caspian**——**盤名不同、軌數相同、℗ 記的正好是端上 label-info 的另一家（Caspian），是同一批音檔的另一個包裝，記一筆但不採信**；另有六筆《Best of Elaheh, Vol. 1–6》《Elaheh, Vol 1–6》系列（℗1972 Caltex／Caspian，**對應端上另外六個同日的 release-group，全部駁回**）與 295556596《Best of Elaheh》70 軌（駁回）。",
+    "src": "https://itunes.apple.com/lookup?id=6793102336&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "盤名掛三個人，另外兩位各只出現在一軌：第一軌與第九軌",
+   "這位掛名名下有七個條目共用 1972 年 8 月 1 日同一天"
+  ],
+  "sound": "端上這張碟只有一筆發行：日期記 1972 年 8 月 1 日、全球、Official，載體記數位媒體，Caltex Records 與 Caspian 兩家合掛、都沒有編號，十四軌。開場〈Chegooneh Mikhandam〉4:13 是全片唯二的合唱之一，接〈Monajat〉5:40、只有 2:10 的〈Aseman〉、〈Ghesehe Nagofteh〉3:33、〈Pooneha〉4:17、全片最長的〈Bitaraneh〉6:21、〈Gol Kashti〉3:05、〈Tou Va Golha〉4:03、另一首合唱〈Doostet Daram〉3:11、〈Negahe Ou〉4:09、〈Nasime Sahra〉4:34、〈Eshghe Degar〉4:22、〈Ashena〉5:45，收在 2:51 的〈Gisoo〉。十四軌裡十二軌是單掛名，最短與最長差了將近三倍。",
+  "keyTracks": [
+   "Bitaraneh",
+   "Doostet Daram",
+   "Aseman"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **1972-08-01 是灌檔日的形狀，不得寫成發行日，策展層的判斷覆核屬實、而且證據比策展層拿到的更硬。** 端上：release-group 的 first-release-date 與其下唯一那筆 release 的 date 都是 1972-08-01，**但（a）同一位掛名名下有七個條目共用這一天**、**（b）那筆 release 的載體是 Digital Media**（1972 年不可能）、**（c）annotation 欄明寫「© 1972 Caltex Records／℗ 1972 Caltex Records」——那是後來的數位發行方自己填的 ℗ 年**。三項合起來，**1972-08-01 只能寫成「資料庫端唯一可得的日期」，不得對外宣稱已驗證，也不得寫成「1972 年 8 月 1 日發行」**。串流側對得上的那筆 releaseDate 與 ℗ 也都是 1972-08-01／1972 Caltex，**是同一組資料的下游，不算獨立來源**。**錄音年端上完全空白。**",
+  "notes": "**擋下策展層兩處、補正一處。**｜（一）⚠ **補正：廠牌查到了，而且是兩家合掛**。卡單 `label` 寫「MB 該 release 未填 label-info」——**掛的是 Caltex Records 與 Caspian 兩家（都沒有編號）**。⚠ **這一點還連著年份**：串流側同一批音檔有兩個包裝，一個 ℗ Caltex、一個 ℗ Caspian，**正好對上端上這兩家**。**`label` 欄可以補成「Caltex Records ＋ Caspian（兩家合掛，均無編號）」。**｜（二）⚠ **「編曲掛 Emad Raam」不得寫**：`why` 這句把第三位掛名說成編曲。**端上他只是 release-group 的 artist-credit 之一、並在第 1 軌的 track-level artist-credit 出現，沒有任何角色或關係欄位說他是編曲**；而且**他的 disambiguation、area、begin-area、life-span、alias 全部是空的**——**依硬規則不得背書本名、不得補生平、更不得指派角色。可以寫的只有「盤名掛三個人，他出現在第 1 軌」。**｜（三）**載體要小心**：Digital Media 配 1972-08-01，**兩個欄位不相容**，`sound` 提載體時必須連著說這是資料庫端登錄的形態。｜**覆核屬實、可以直接寫的**：Elaheh 名下 30 個條目、**七個共用 1972-08-01**（數過）；**Aref 名下 15 個條目裡本輯是唯一一個早於 1979 的**（數過，這是本張最有力的一句）；Emad Raam 名下只有這一個條目；十四軌的掛名分布（十二軌單掛名、第 1 與第 9 軌各多一人）與長度分布（2:10–6:21）。｜**掛名寫法**：卡片取卡單的「Elaheh, Aref & Emad Raam」；⚠ **Aref 的 disambiguation 寫著本名，那是欄位、可以引用；Emad Raam 的什麼都沒有，不得背書。**｜**串流採信 6793102336：14 軌與端上逐軌同名同序、逐軌長度分毫不差、連 track-level 掛名都一樣，14/14 有試聽；℗ 1972 Caltex（與端上 annotation 同源，不算獨立佐證）**。記一筆但不採信 295285892《Best of Elaheh, Vol. 5》（同 14 軌、℗1972 Caspian，同批音檔的另一個包裝）；駁回六筆《Vol 1–6》系列與 295556596《Best of Elaheh》70 軌。**有固定試聽來源，逐軌長度兩端一致，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Elaheh, Mohammad-Reza Shajarian & Jalil Shahnaz|Golhaye Tazeh No. 23: Abu Ata",
+  "artist": "Elaheh, Mohammad-Reza Shajarian & Jalil Shahnaz",
+  "album": "Golhaye Tazeh No. 23: Abu Ata",
+  "facts": [
+   {
+    "f": "release-group afd03621 的欄位：title「Golhaye Tazeh No. 23: Abu Ata」、**artist-credit 三個實體並列**——Elaheh（9b642ebf）、Mohammad-Reza Shajarian（1e6c8164，**主名是波斯文「محمدرضا شجريان」**，disambiguation「Persian singer」）、**Jalil Shahnaz（89040d46，Person／area Iran、**end-area Tehran**，**disambiguation 空、begin-area 空、alias 空**，life-span 1921-05-22–2013-06-17，Male）；first-release-date **1975**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：1975 **XW（全球）** Official、**Digital Media**、10 軌、barcode 197189809293、**label-info 空**（這一格卡單說的沒錯）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=afd03621-6898-4603-bef6-c517db1cb8e6&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠ **annotation 欄不是空的，而且是本組最有用的一格**：這筆 release（2da75025）的 annotation 寫著 **「Copyright: © 2023 IRANICA／℗ 1975 NIRT」**。**℗ 年記 1975、℗ 持有者記 NIRT（伊朗國家廣播電視），© 年記 2023 的另一個名字**——**這一格同時給了原始年份的來源（1975 NIRT）與數位發行年（2023），是 a 組唯一一張兩個年份都在欄位裡分得開的碟。** 端上 **十軌零 recording-level relationship**。",
+    "src": "https://musicbrainz.org/ws/2/release/2da75025-36af-48b8-9197-53a44e3a0aa5?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "10 軌逐軌、track-level 掛名與長度：1〈Taraneh Abu Ata, Overture〉2:55 **Elaheh＆Ali Tajvidi＆Golha Orchestra＆Fakhri Nikzad**、**2〈Daramad Abu Ata〉0:37 Jalil Shahnaz＆Fakhri Nikzad**、3〈Chaharmezrab Abu Ata〉2:43 Jalil Shahnaz＆**Amir Naser Eftetah**＆Fakhri Nikzad、4〈Sazo Avaz Abu Ata, Daramad: Cho Ney Be Sineh Khorooshad Deli Ke Man Daram〉1:54 Mohammad-Reza Shajarian＆Jalil Shahnaz、5 同段另一則 1:40、6〈…Sayakhi…〉3:19、7〈…Hejaz…〉1:58、8〈…Forud Va Owj Hejaz…〉1:45、9〈…Forud…〉1:53（第 9 軌多掛 Fakhri Nikzad）、**10〈Taraneh Abu Ata (Namandeh Chera da Zamaneye Ma)〉5:58 Elaheh＆Ali Tajvidi＆Golha Orchestra**。⚠ **十軌總長不到 25 分鐘，中間六軌（第 4–9 軌）全部在 1:40 到 3:19 之間、其中四軌不到兩分鐘，最短的第 2 軌只有 0:37**；**頭尾兩軌（2:55 與 5:58）是唯二掛樂團的**。⚠ **track-level 的 artist-credit 帶出四個端上背書的名字：Ali Tajvidi、Golha Orchestra、Fakhri Nikzad、Amir Naser Eftetah。**",
+    "src": "https://musicbrainz.org/ws/2/release/2da75025-36af-48b8-9197-53a44e3a0aa5?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "三個掛名的目錄都查過。**Jalil Shahnaz 名下只有 3 個 release-group**：1971《Musique Persane》（**同批 a 組另收的那張**）、**1975《Golhaye Tazeh No. 23: Abu Ata》（本張）**、2006《Daftare Tar》。**Elaheh 名下 30 個**（本張是她名下 1972-08-01 那七個同日條目之後、first-release-date 第八早的）。Shajarian 名下 **39 個 release-group**——⚠ **本張的 1975 是他名下 first-release-date 最早的一個**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=89040d46-8f03-4fb7-9cb8-5fc68602d393&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了，**沒有一筆可採信**。以盤名加調式名搜尋 **回 0 筆**；三個掛名的目錄端都翻過——Jalil Shahnaz 的兩個候選實體名下共 33 筆，**最接近的是 1680691097《Masterpieces of Jalil Shahnaz: Abou Ata - EP》4 軌、℗ 2023 Yahaghi Foundation**，⚠ **逐軌覆核：那四軌（Pishdaramad 4:04／Abou Ata 4:01／Hejaz 2:50／Foroud 0:45）與本張十軌沒有一軌在名稱與長度上同時對得上，而且本張是三人並列、那張只掛他一人，反向驗證不通過，駁回**；Elaheh 目錄 48 筆、Hayedeh 目錄 80 筆裡的《Golhaye Tazeh No. 31 & 25》（6793089722，℗1974 Caltex）**是別輯，駁回**。**本輯在串流側查無上架條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1680691097&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十軌總長不到二十五分鐘，最短那軌只有三十七秒",
+   "頭尾兩軌是唯二掛樂團的，中間六軌全部在一分四十秒到三分十九秒之間"
+  ],
+  "sound": "端上這張碟只有一筆發行：日期記 1975 年、全球、Official，載體記數位媒體，十軌，廠牌欄是空的。第一軌〈Taraneh Abu Ata, Overture〉2:55 掛 Elaheh、Ali Tajvidi、Golha Orchestra 與 Fakhri Nikzad；第二軌〈Daramad Abu Ata〉只有 0:37；第三軌〈Chaharmezrab Abu Ata〉2:43。中段第四到第九軌是六段〈Sazo Avaz Abu Ata〉，長度分別是 1:54、1:40、3:19、1:58、1:45、1:53，其中四段不到兩分鐘。末軌〈Taraneh Abu Ata〉5:58 是全片最長的一軌，也是唯二掛樂團的另一軌。十軌加起來不到二十五分鐘。",
+  "keyTracks": [
+   "Taraneh Abu Ata, Overture",
+   "Daramad Abu Ata",
+   "Taraneh Abu Ata (Namandeh Chera da Zamaneye Ma)"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **本組年份最紮實的一張，而且策展層把它歸進「資料庫日期看得出是灌檔日」那一檔是低估了。** 端上：release-group 的 first-release-date 與其下唯一那筆 release 的 date 都是 **1975**（只到年）。⚠ **關鍵在 annotation 欄——它明寫「© 2023 IRANICA／℗ 1975 NIRT」**：**℗ 年 1975 有具名的持有者（NIRT，伊朗國家廣播電視），© 年 2023 則是後來的數位發行**。**這是 a 組唯一一張把「原始年份」與「數位發行年」分在兩個欄位裡寫清楚的碟**，1975 因此比同組其他「只有一個日期」的條目可信得多。**但仍然要守住兩條**：（一）**載體記 Digital Media，那是 2023 年那一層的形態，不是 1975 年的**；（二）**錄音年端上仍是空白**（十軌零 recording-level relationship），**只能寫「℗ 年記 1975」，不得寫「1975 年錄的」**。串流側查無條目，沒有第二個來源可比對。",
+  "notes": "**擋下策展層三處、升級一處。**｜（一）⚠⚠ **升級：這張的年份比策展層評估的可信**。策展層把它放進「資料庫日期看得出是灌檔日」那一檔（與同批那幾張同日灌檔的並列）。**覆核後不同意**——**這筆 release 的 annotation 欄明寫「℗ 1975 NIRT／© 2023 IRANICA」，兩個年份與兩個持有者分得清清楚楚**，這不是同日灌檔的形狀。**建議下游把它的年份風險降一級，但仍不得寫「1975 年錄的」。**｜（二）⚠ **「tar 由 Jalil Shahnaz 擔任」不得寫**：`why` 指派了樂器。**端上他只是 artist-credit（release-group 層與第 2–9 軌的 track-level），沒有任何樂器或角色關係**；⚠ **而且他的 disambiguation、begin-area、alias 全部是空的——依硬規則不得背書本名、不得補生平、不得指派樂器。**｜（三）⚠ **「Golha 是伊朗國家廣播從 1956 年做到 1979 年的節目系列」不得寫**：這是節目史的斷言，**端上唯一可查的只有 annotation 那一格的「℗ 1975 NIRT」**。**可以寫「℗ 持有者記的是伊朗國家廣播電視」，不得寫節目的起訖年、集數規模或它在體制裡的位置。**｜**人名從嚴的例外——這一張反而有料**：⚠ **track-level 的 artist-credit 帶出四個端上背書的名字：Ali Tajvidi、Golha Orchestra、Fakhri Nikzad、Amir Naser Eftetah**，**這四個是欄位值、可以寫**（是本組除了那張十六軌選輯之外唯一有具名協作者的碟）。｜**覆核屬實、可以直接寫的**：Jalil Shahnaz 名下只有三個條目，其中兩個都在本批 a 組（本張與 1971 年那張）；**本張的 1975 是 Shajarian 名下 39 個條目裡 first-release-date 最早的一個**（數過，這是本張最好的一句）；十軌的長度分布（總長不到 25 分鐘、最短 0:37、頭尾兩軌掛樂團）。｜**label-info 確實是空的**（卡單這一格沒寫錯），**廠牌不得寫**。｜**掛名寫法**：卡片取卡單的三人並列寫法；Shajarian 端上主名是波斯文「محمدرضا شجريان」，⚠ **池中既有兩張他的卡用的是羅馬轉寫，撞卡偵測靠的就是這個，不得改寫成波斯文。**｜**串流側三種查法都跑了：三個掛名的目錄共翻過一百六十餘筆，唯一形似的 1680691097 四軌與本張十軌對不上、掛名也只有一人，反向驗證不通過，駁回。無固定試聽來源。逐軌長度以端上欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
  }
 ]
