@@ -6,6 +6,9 @@
 // 用法：node batch-progress/fix-rgmbid.mjs <批名>
 import fs from 'node:fs';
 const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+// §5.5 白名單，與 scripts/verify-album-onboarding.mjs 的 EXCEPTION_GENRES 同步。
+// 增列新曲風時三處要一起改：那支驗證器、各批的 chk-prop.mjs、這裡。
+const EXCEPTION_GENRES = new Set(['electronic', 'hardcore-7inch', 'asia-mini-album']);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const MBID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g;
 // 2026-09-05：逾時從 25 秒放寬到 120 秒。當天 MB 的實測回應時間是 **28–34 秒**（回 200，不是 503），
@@ -132,8 +135,12 @@ for (const c of cards) {
     // 策展層在 mbNote 明寫「本卡釘 Album 那個、EP 那個刻意不釘」，
     // 這支腳本卻因為 EP 的年份剛好等於卡片年份（+2）而把它換掉——
     // 標題同分、合輯同分，年份就成了決勝項，等於用年份推翻了 §1 的型別要求。
-    // §1 只收 primary-type=Album；EP 只在 §5.5 的 asia-mini-album 白名單卡才允許。
-    const epOk = c.genreException === 'asia-mini-album' || c.releaseTypeException === 'asia-mini-album';
+    // §1 只收 primary-type=Album；EP／Single 只在 §5.5 白名單卡才允許。
+    // 2026-09-08（c-122 研究層抓到）：這裡原本硬寫 `asia-mini-album`，
+    // 於是店主當天新開的 `hardcore-7inch` 白名單卡**每一張 EP 都先被扣 12 分**，
+    // 標題全中的 +10 加年份 +2 仍是負分，工具因此回報「標題都對不上」——
+    // **一個假陽性，而且長得跟真的釘錯一模一樣**。改讀白名單集合。
+    const epOk = EXCEPTION_GENRES.has(c.genreException) || EXCEPTION_GENRES.has(c.releaseTypeException);
     if (x.type === 'Album') s += 5;
     else if (x.type === 'EP' || x.type === 'Single') s += epOk ? 5 : -12;
     if (x.date && c.year && String(x.date).slice(0, 4) === String(c.year)) s += 2;

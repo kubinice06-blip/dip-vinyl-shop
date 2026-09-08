@@ -5447,3 +5447,63 @@ c-120 附上逐筆 `rgMbid` 與封面狀態的清單，店主就開了。
 
 **⚠ c-120 已上架的 44 張不受影響**——那批收的都是純 Album，白名單開了也不用回頭改。
 新開的 7 吋走 c-122。
+
+## 第 256 條（2026-09-08，c-122 研究層）：**開新白名單會在別的工具裡生出假陽性——`fix-rgmbid` 的 `epOk` 硬寫著舊白名單**
+
+店主 2026-09-08 開了 `hardcore-7inch` 之後，主線同步改了三處：
+`ALBUM_ONBOARDING.md` §5.5、`scripts/verify-album-onboarding.mjs` 的 `EXCEPTION_GENRES`、
+`c122/chk-prop.mjs` 的 §5.5 分支。**漏了第四處：`batch-progress/fix-rgmbid.mjs`。**
+
+那支腳本的計分函式裡寫著：
+```js
+const epOk = c.genreException === 'asia-mini-album' || c.releaseTypeException === 'asia-mini-album';
+if (x.type === 'Album') s += 5;
+else if (x.type === 'EP' || x.type === 'Single') s += epOk ? 5 : -12;
+```
+
+於是 c-122 的**每一張 EP 都先被扣 12 分**。
+**Chain of Strength《The One Thing That Still Holds True》** 標題全中（+10）、年份對（+2），
+但它同時帶 `secondary-types: Compilation` 而卡片 `releaseType` 是 EP，`wantComp` 再扣 6 分
+——總分 −6，工具因此回報「**`mbNote` 的 release-group 標題都對不上**」。
+
+**主線把它當成真的釘錯了**，寫進提交訊息、列為研究層要覆核的第一件事。
+**研究層回問後證明 MBID 完全正確，是工具的假陽性。**
+
+**這是「失敗與正常長得一樣」的第八個實例**，形狀是新的：
+**一個規格變更在 A 處生效、在 B 處沒生效，B 處的輸出看起來像一個真實的資料問題。**
+本批 43 張裡**唯一帶 `Compilation` 的就是那一張**，所以只有它亮警告——
+**假陽性的稀有度讓它更像真的。**
+
+**已修**：`fix-rgmbid.mjs` 的 `epOk` 改讀 `EXCEPTION_GENRES` 集合。
+
+**通則**：`genreException` 這個欄位目前被**四個地方**讀：
+1. `scripts/verify-album-onboarding.mjs` 的 `EXCEPTION_GENRES`
+2. 各批的 `chk-prop.mjs`（c-122 起改成讀集合，不再硬寫）
+3. **`batch-progress/fix-rgmbid.mjs` 的 `epOk`**（本條修的）
+4. `ALBUM_ONBOARDING.md` 的規格文字
+
+**往後增列白名單曲風，這四處要一起改**，並在該批第一次跑 `fix-rgmbid` 後
+**逐筆看警告是不是集中在新白名單的卡上**——集中就是這條的重演。
+
+## 第 257 條（同批）：**§5.5／§5.6 的舉證網址「打得開」不等於「站得住」**
+
+c-122 兩組合計 **109 個舉證網址實測全部回 200、0 個打不開**，
+但**逐頁讀過之後有 20 個站不住**：頁面裡查不到那支團，或與 `exceptionReason` 講的事無關。
+
+| 形狀 | 例 |
+|---|---|
+| **轉址落到不相干的條目** | Judge 掛 `Schism_Records`，**轉址後是一位樂手的個人傳記**，既不記錄那個廠牌，內容又全是人名（依裁定 241／250 一個字都不能用） |
+| **通用類別條目** | `Youth_crew` ×2、`Straight_edge`、`Krishnacore`、`Split_album` ×2——**沒有一句提到本張** |
+| **消歧義頁** | Quicksand 掛 `Quicksand_(band)`，正解是 `Quicksand_(American_band)` |
+| **被本張自己的曲目推翻** | Bulldoze《Remember Who's Strong》掛 `Split_album`，**但本張根本不是 split** |
+| **完全不支持** | Absolution 與 Maximum Penalty——**兩張的兩個非資料庫網址全都不支持**，且兩團都沒有專屬條目 |
+
+**`chk-prop` 只檢查「是不是兩個 HTTPS 網址」，驗證器也只檢查數量。**
+**沒有任何一道自動檢查會讀那個頁面。**
+
+**做法**：
+1. **策展層**交件時，`exceptionEvidenceUrls` 每一個都要**自己讀過**，
+   並在 `exceptionReason` 裡指明那個網址支持的是哪一句。
+   **通用類別條目（`Youth_crew`、`Straight_edge`、`Split_album` 這種）一律不算證據。**
+2. **研究層**要逐筆覆核，把站不住的列出來。
+3. **站不住的張數要寫進 HANDOFF**——**上架前必須補齊，否則白名單的舉證形同虛設。**
