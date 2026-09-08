@@ -1,0 +1,149 @@
+{
+ "id": "prologue",
+ "name": "序章 · 巷子裡的唱片行",
+ "scene": "shop2",
+ "beats": [
+  {
+   "who": "",
+   "text": "下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。",
+   "stage": {
+    "p": "door",
+    "o": "counter",
+    "f": "out",
+    "door": "swing"
+   }
+  },
+  {
+   "who": "",
+   "text": "櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。",
+   "stage": {
+    "oBusy": true
+   }
+  },
+  {
+   "who": "",
+   "text": "你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。",
+   "stage": {
+    "p": "browse"
+   }
+  },
+  {
+   "who": "",
+   "text": "這時候，店裡的音響傳出一段旋律。",
+   "stage": {
+    "notes": true,
+    "oBusy": false
+   }
+  },
+  {
+   "who": "",
+   "text": "……很迷人。你停下腳步，不自覺跟著點起頭來。"
+  },
+  {
+   "who": "",
+   "text": "你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。"
+  },
+  {
+   "who": "老闆",
+   "text": "「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」",
+   "ui": "aces",
+   "prompt": "（挑一張。）"
+  },
+  {
+   "who": "老闆",
+   "text": "「……你眼光真不錯。」老闆終於抬起頭來，看著你。",
+   "stage": {
+    "notes": false
+   }
+  },
+  {
+   "who": "老闆",
+   "text": "「這張是我的私人收藏。今天讓給你。」"
+  },
+  {
+   "who": "",
+   "text": "老闆不發一語，走出櫃檯，在那張長桌上的木箱裡翻翻找找。",
+   "stage": {
+    "oPath": [
+     "aisle",
+     "dig1",
+     "dig2",
+     "dig3"
+    ],
+    "oDig": true
+   }
+  },
+  {
+   "who": "老闆",
+   "text": "「這四張也很適合你。跟你有緣，收下吧。」",
+   "ui": "recs",
+   "prompt": "（老闆把四張盤遞給你。）"
+  },
+  {
+   "who": "",
+   "text": "你把五張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。",
+   "stage": {
+    "p": "pay",
+    "oPath": [
+     "frontleft",
+     "aisle",
+     "counter"
+    ],
+    "oDig": false
+   }
+  },
+  {
+   "who": "",
+   "text": "你抱著紙袋，心滿意足，往門口走去。",
+   "stage": {
+    "p": "leaving"
+   }
+  },
+  {
+   "who": "",
+   "text": "這時，門開了。",
+   "stage": {
+    "f": "door",
+    "door": "open"
+   }
+  },
+  {
+   "who": "",
+   "text": "一名男子走進來。他的視線，落在你手上的那幾張專輯上。",
+   "stage": {
+    "f": "in",
+    "p": "atdoor",
+    "door": "shut"
+   }
+  },
+  {
+   "who": "男子",
+   "text": "「……這品味，也敢出來丟臉？」"
+  },
+  {
+   "who": "",
+   "text": "你的憤怒表露無遺。",
+   "stage": {
+    "anger": true
+   }
+  },
+  {
+   "who": "",
+   "text": "老闆不發一語，緩步走出櫃檯，站在兩人之間。",
+   "stage": {
+    "oPath": [
+     "aisle",
+     "between"
+    ],
+    "anger": false
+   }
+  },
+  {
+   "who": "老闆",
+   "text": "「既然雙方都不服氣，不如來一場品味對決如何？」",
+   "ui": "choice"
+  }
+ ],
+ "notes": "與 roguelike.html 的 RPG_BEATS 同一份、同一套 stage 語彙（p/o/f、oPath、door、oDig、notes、anger）；「複製 beats」的結果可以直接貼回去。ui／prompt 是遊戲的面板掛點（aces／recs／choice），編輯器不顯示但原樣保留。",
+ "updatedAt": 1788881710620
+}

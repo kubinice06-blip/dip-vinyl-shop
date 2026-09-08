@@ -1027,6 +1027,7 @@
         <button class="subtab-btn" data-sub="sub-rogue">🎮 Roguelike</button>
         <button class="subtab-btn" data-sub="sub-script">🎬 序章劇本</button>
         <button class="subtab-btn" data-sub="sub-draw">🎰 抽卡動畫</button>
+        <button class="subtab-btn" data-sub="sub-pixel">🎨 像素工坊</button>
       </div>
 
       <div class="subpanel active" id="sub-battle">
@@ -1169,6 +1170,22 @@
         </div>
       </div>
       </div><!-- end sub-draw -->
+
+      <div class="subpanel" id="sub-pixel">
+      <div class="section">
+        <div class="section-label">像素工坊（art/pixel/ · 與 Claude Code 共用的物件／場景／劇本）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">
+          自己畫像素物件 → 排成場景 → 寫成一句句對白，資料是 <code>art/pixel/</code> 的 JSON，Claude 讀得懂也改得動同一份。
+          用法與格式見 <b>PIXEL_STUDIO.md</b>。畫的東西先存在這個瀏覽器；做完到「🔁 交接」分頁推進 repo。<br>
+          內嵌畫布比較小，<b>建議另開新視窗</b>畫。
+        </p>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px;">
+          <a class="gbtn" href="pixel-studio.html" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;">↗ 另開新視窗</a>
+          <button class="gbtn" id="pixelReload">重新載入內嵌頁</button>
+        </div>
+        <iframe id="pixelFrame" title="像素工坊" style="width:100%;height:calc(100vh - 220px);min-height:620px;border:1px solid var(--line);background:#f4f2ec;"></iframe>
+      </div>
+      </div><!-- end sub-pixel -->
     </div>
   </div><!-- end panel-game -->
 
@@ -1190,6 +1207,7 @@
     'sub-battle': () => loadBattleCfg(),
     'sub-rogue': () => loadRogueCfg(),
     'sub-draw': () => loadDrawCfg(),
+    'sub-pixel': () => { const f = document.getElementById('pixelFrame'); if (f && !f.getAttribute('src')) f.src = 'pixel-studio.html'; },
   };
 
   // Tab 切換（consolidated handler）
@@ -1212,6 +1230,7 @@
     if (activeSub && SUB_LOADERS[activeSub.id]) SUB_LOADERS[activeSub.id]();
   });
 
+  document.getElementById('pixelReload')?.addEventListener('click', () => { const f = document.getElementById('pixelFrame'); if (f) f.src = 'pixel-studio.html?t=' + Date.now(); });
   // 子分頁切換
   document.addEventListener('click', e => {
     const sb = e.target.closest('.subtab-btn');

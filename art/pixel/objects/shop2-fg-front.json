@@ -1,0 +1,20 @@
+{
+ "id": "shop2-fg-front",
+ "name": "前景前層（折疊長桌＋木箱＋黑籃）",
+ "kind": "image",
+ "w": 1120,
+ "h": 1231,
+ "frames": [
+  "art/shop2-fg-front.png"
+ ],
+ "anchor": {
+  "x": 560,
+  "y": 1231
+ },
+ "tags": [
+  "圖檔",
+  "圖層"
+ ],
+ "notes": "整張前景圖。放場景時 scale 0.4、depth 457.5：腳底 y < 458 的小人排在它後面。",
+ "updatedAt": 1788881710620
+}

@@ -30,6 +30,38 @@
   網址轉成 `?prologue=1`，序章第一頁（捏角色）正常畫出來，全程無 JS 錯誤。
   （雲端那段要登入才測得到，沙盒連不到 Firebase。）
 
+### 2026-09-08｜dip-vinyl-shop｜像素工坊：線上像素繪圖器＋場景合成＋劇本，資料落 art/pixel/ 與 Claude 共用
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（從 `claude/card-game-character-creation-xpgz1f` 長出來，PR 以它為 base，**未合併 main**）。
+
+店主問：能不能做一個線上像素繪圖器，在後台自己畫物件、排成場景，再跟 Claude Code 合作搭場景與故事。
+做法的核心不是畫布，是**資料格式**：`dip-character.js` 的 `sprRows` 早就把小人存成「一列一字串、一字元一像素」，
+把它擴成物件／場景／劇本三層 JSON（`art/pixel/`），人用 GUI 畫、Claude 直接改同一份字串，兩邊不用翻譯。
+
+**新增：**
+- `pixel-studio.html`：單檔編輯器，四個分頁。🖌 物件（1–256px 畫布、筆／擦／填／線／框／圓／吸色／位移／腳點、
+  每物件自己的色盤（預設＝PIX_PAL 17 色）、多格動畫＋洋蔥皮、參考圖描圖、PNG 依色盤量化匯入、PNG／SVG／JSON 匯出、復原）；
+  🏞 場景（背景圖＋物件實例＋站位，深度照腳底 y 排、`depth` 可覆寫、拖曳／方向鍵、讀數直接給 stage-preview 式 left%/bottom%）；
+  🎬 劇本（beats 與 `RPG_BEATS` **同一套語彙**：p/o/f、`oPath` 多段走位、`door` open/swing/shut、`oDig`、♪、💢，
+  點一句就補間走位播到那句，`ui`／`prompt` 欄位原樣保留，「複製 beats」可直接貼回 `roguelike.html`）；
+  🔁 交接（從本站載入 `art/pixel/index.json`、匯出／匯入 bundle、「複製給 Claude 的交接」、貼上 JSON 匯入、
+  fine-grained token 直接推 GitHub Contents API）。資料存 localStorage `dipPixelStudio_v1`。
+- `dip-pixel.js`：編輯器與前台共用的格式＋繪製庫（`toSVG` 與 `pixArtHTML` 同形、`drawScene`、`stageAt` 與 `rpgApplyStage` 同一累積規則、`placeAt`／`findAnchor`）。
+  PIX_PAL 複製了一份，刻意不載入 `dip-character.js`——那支在預覽站會清 localStorage，會把草稿洗掉。
+- `art/pixel/`：16 物件（老闆／玩家／男子三個 16×16 小人、門三格、兩張前景圖層、十件道具圖檔）、場景 `shop2`
+  （站位＝`roguelike.html` 的 `RPG_POS` 一字不差、前景後層 depth 401.5／前層 457.5 ＝ `rpgZ` 門檻）、
+  劇本 `prologue`（＝`RPG_BEATS` 一字不差，含 `oPath`／`door`／`oDig`）。
+  這條分支長出來的當下，另一個工作階段剛把描圖舞台換進 `roguelike.html`（2669b9d），rebase 上去後把語彙對齊了。
+- `scripts/pixel-seed.mjs`（一次性種子，從 dip-character.js 借 sprRows）、`scripts/pixel-index.mjs`（驗證所有 JSON 形狀＋重建 index，改完必跑）。
+- `PIXEL_STUDIO.md`：用法、格式規格、三條協作路徑、接進 roguelike 的下一步、限制。
+- `admin.html`：🎮 遊戲設定加 **🎨 像素工坊** 子分頁（iframe 內嵌、另開新視窗鈕）。
+
+**還沒做**：`roguelike.html` 還是寫死的 `RPG_POS`／`RPG_BEATS`，沒有讀 `art/pixel/`；目前靠「複製 POS／beats」貼過去。
+直接 fetch JSON 的接法寫在 PIXEL_STUDIO.md §5。
+
+- 驗證：`node scripts/pixel-index.mjs` 全過；Chromium（Playwright）開 `pixel-studio.html`——從本站載入 16/1/1、
+  場景遮擋與 stage-preview 一致（老闆櫃檯後只露頭肩、玩家在門前）、選老闆讀數 left 30.13%／width 17.41% 與 stage-preview 完全相同、
+  劇本播到第 14／19 句走位正確、畫筆拖一筆＋Ctrl+Z 復原正確、console 零錯誤；`admin.html` 子分頁存在。
 ### 2026-09-08｜dip-vinyl-shop｜序章舞台正式換進 roguelike.html（描圖美術＋新走位）
 
 店主：「先推上去 之後要改再說」。把 `stage-preview.html` 上定案的那一套搬進遊戲。
