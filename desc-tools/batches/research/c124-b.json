@@ -134,5 +134,105 @@
   "status": "full",
   "yearVerified": "**只有資料庫端一個來源，1987 沒有第二個來源可對。** release-group first-release-date **1987-04-03**，**轄下唯一的 release 也是 1987-04-03**（country XW、Official、barcode 6260608000039）。⚠ **但那筆的載體記為 Digital Media**——1987 年不會有這個載體，**資料庫裡建的是後來數位上架的那一版、卻沿用了 1987-04-03 這個日期**，因此「1987 年發行的實體盤」在資料庫端**查無建檔**。店面端三種查法都沒有本張，**第二個獨立年份來源查無**。**結論：`year` 維持 1987，但簡介不得寫成「這張是 1987 年的作品」這種已驗證的口氣，也不得把 Digital Media 寫成原始載體。錄音年未登錄，不得補寫。**",
   "notes": "**擋下策展層四處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Mahoor Institute of Culture and Art**（實體 091e58c8），catno 欄確實是空的，但廠牌不是。`label` 欄要改寫成「Mahoor Institute of Culture and Art（catno 欄空、barcode 6260608000039），1987-04-03 XW Official Digital Media 15 軌」。｜(2) `curatorWhy` 說本張「是他名下 42 個 release-group 裡**年份最早**的一筆」——**這一句覆核通過、可以留**：42 筆分頁全列，1987-04-03 確實排第一（第二是 1990《Raz-o-niaz》）。**而且策展層漏了更強的一條**：Omoumi 名下**只有 5 個 release-group**，本張同樣是最早的一筆，也是兩人唯一合掛的一張。｜(3) **策展層漏標一位 disambiguation 空白的掛名**：本批裁定列了 5 位（Kalhor、Homayoun Shajarian、Sima Bina、The Kâmkârs、Pari Zanganeh、Sussan Deyhim），**但 Hossein Omoumi（aa56bc41）的 disambiguation、別名欄與關係欄全是空的**，依硬規則第 7 條**同樣不得背書本名、不得補生平**；他可寫的欄位只有 country US／area United States／begin 1944／begin-area Eşfahān 四個。｜(4) **策展層完全沒提逐軌的第三個掛名**：第 7、8、10、15 四軌的 artist-credit 是三個人，第三位是 **Mohammad Qavihelm**；另有第 1、9 兩軌只掛 Alizadeh 一人。**這個名字有逐軌 artist-credit 背書、可以寫**，但**不得補寫他彈什麼**（沒有 relationship 背書）。｜**第三種查法跑完，結論是店面查無：**搜尋端 0 筆，藝人目錄端三份（Alizadeh 86092117 的 46 筆、201211997 的 2 筆、Omoumi 62308518 的 8 筆）**都沒有本張**。**駁回候選 1 筆**：Alizadeh 目錄裡 2024-09-27 的《The Dastgahs of Persian Music: Dastgah-e Chahargah》（27 軌、Ejazz）只是盤名帶同一個 dastgah 名，年份、廠牌、軌數全不對。**回撈候選採信 0、駁回 1；本張確認無串流來源，寫作層不要寫試聽相關的話。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、barcode、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **Omoumi 的 country 欄記為 US、begin-area 記為 Eşfahān 是兩個可查證的欄位，只能照欄位敘述，不得寫成「他離開了伊朗」這種因果句。**｜**軌數與長度：唯一一筆 release、15 軌、長度全備，可以寫時間。盤名的變音符號與 U+2013 在資料庫端是原樣，卡片已拉平，行文用卡片的寫法。**"
+ },
+ {
+  "key": "desc2:Kayhan Kalhor, Brooklyn Rider|Silent City",
+  "artist": "Kayhan Kalhor, Brooklyn Rider",
+  "album": "Silent City",
+  "facts": [
+   {
+    "f": "release-group 9d47870f 的欄位：title「Silent City」、artist-credit「Kayhan Kalhor, Brooklyn Rider」（兩個實體並列，joinphrase 是逗號）、primary-type Album、**secondary-types 空**、first-release-date **2008-09-09**、genre 與 tag 欄各一筆票數 1：`western classical`。**轄下只有 1 筆 release**：519bc9c4，2008-09-09、country **US**、Official、**CD 4 軌**、barcode **713746807825**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9d47870f-55de-49a1-a6eb-6bf3e5c2daa9?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌與盤面編號都查得到，策展層說的「未填 label-info」不成立**：release 519bc9c4 的 label-info 是 **World Village**（廠牌實體 5518f9d4）、**catalog-number 468078**。barcode 713746807825。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9d47870f-55de-49a1-a6eb-6bf3e5c2daa9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**4 軌全部有長度、合計 53:01**：1〈Ascending Bird〉6:54、2〈Silent City〉**29:10**、3〈Parvaz〉6:23、4〈Beloved, do not let me be discouraged〉10:34。**與盤名同字的第二軌一軌就占 29:10，比其餘三軌加起來（23:51）還長**；四軌的 artist-credit 全部都是兩個實體並列。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9d47870f-55de-49a1-a6eb-6bf3e5c2daa9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 dd2a84cc「Kayhan Kalhor」：type Person、country IR、area Iran、begin **1963-11-24**、begin-area **Kermanshah**、end 空、**disambiguation 空白**。別名欄三筆：庫德語「Keyhan Kelhur」「کەیھان کەڵھوڕ」、波斯文「کیهان کلهر」。**關係欄三筆，全部是團體關係：Silk Road Ensemble 的 collaboration、Masters of Persian Music 的團員、Ghazal 的團員。**",
+    "src": "https://musicbrainz.org/ws/2/artist/dd2a84cc-0d01-45fd-ba64-a0f7df21a226?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "藝人實體 0c4ac6e7「Brooklyn Rider」：**type Group**、country US、area United States、**begin 2005**、disambiguation 空白、別名欄空。**關係欄五筆，全部是團員（member of band, backward）：Michael Nicholas、Eric Jacobsen、Nicholas Cords、Jonathan Gandelsman、Colin Jacobsen**——**這五個名字有 relationship 背書、可以寫**（裁定 241／250 的門檻過得了）。",
+    "src": "https://musicbrainz.org/ws/2/artist/0c4ac6e7-ebc0-43dd-9c1e-35ff7dd2fbe9?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "兩份目錄分頁全列。**Kalhor 名下 17 個 release-group**（primary-type Album 16、Single 1；secondary-types 為空的純 Album 13）：依年份 1998《Scattering Stars Like Dust》、2000-09-12《Night Silence Desert》、2001-07-05《Ghazal Ensemble》、2004-05-08《In the Mirror of the Sky》、2006《Ta Bikaran-e-Doordast》、2007-11-05《The Wind / Rüzgar》、**2008-09-09 本張排第七**。**《Blue as the Turquoise Night》確實有兩個 first-release-date 都是 2021-11-12 的重複 release-group，覆核屬實。** **Brooklyn Rider 名下 21 個 release-group**（純 Album 20）：**2008-07-22《Passport》是第一張，2008-09-09 本張是第二張**，其後 2010-04-06《Dominant Curve》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0c4ac6e7-ebc0-43dd-9c1e-35ff7dd2fbe9&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**與池中既有卡的關係（逐張核過）**：池中 8910《Night Silence Desert》與 8913《Scattering Stars Like Dust》在 Kalhor 目錄裡分別是 2000-09-12 與 1998 那兩筆，**與本張是三個不同的 release-group**；池中 8914 Ghazal《The Rain》與 8915 Masters of Persian Music《Without You》掛的是團名，而 **Kalhor 的關係欄正好有「Ghazal 的團員」與「Masters of Persian Music 的團員」兩筆**——**四張的關聯有實體關係欄背書，不是推測**。本張的 4 軌與那四張無一重複。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=dd2a84cc-0d01-45fd-ba64-a0f7df21a226&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 586280803**「Kayhan Kalhor & Brooklyn Rider — Silent City - EP」得 **4 軌**、標示日期 **2008-08-12**、版權標示「℗ 2008 world village」——**版權標示的廠牌與資料庫端的 label-info 是同一家**。四軌長度 6:54／29:10／6:23／10:34，**與資料庫端逐軌 0 秒差、曲名全同**。藝人目錄端（Kalhor 的藝人頁 7180580，22 筆）覆核後未再撈到第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=586280803&country=nl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四軌裡的第二軌一軌就比其餘三軌加起來還長",
+   "同一張碟在一邊掛四軌的專輯，在另一邊被叫做 EP"
+  ],
+  "sound": "只有四軌，合計 53 分 01 秒，重量卻幾乎全壓在第二軌。開場〈Ascending Bird〉6:54 起手，接著與盤名同字的〈Silent City〉一口氣走了 29:10——一軌就比其餘三軌加起來的 23:51 還長，占掉全張五分之三。〈Parvaz〉6:23 回到與開場幾乎等長的尺度，兩軌只差三十一秒；末軌〈Beloved, do not let me be discouraged〉10:34 是全張第二長的一軌，把長度重新拉開一次再收掉。四軌的 artist-credit 全部是兩個實體並列，沒有任何一軌只掛其中一邊。",
+  "keyTracks": [
+   "Ascending Bird",
+   "Silent City",
+   "Beloved, do not let me be discouraged"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，2008。** release-group first-release-date **2008-09-09**，**轄下唯一的 release 也是 2008-09-09**（US、Official、CD 4 軌、World Village 468078、barcode 713746807825）。串流版本 586280803 的標示日期是 **2008-08-12**、版權標示 **℗ 2008**，是第二個獨立年份來源，**年份與資料庫端一致，只有月日早了將近一個月**。⚠ **月日的分歧（09-09 對 08-12）兩邊各有一組，行文只寫年、不要寫月日。** **錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層四處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **World Village（實體 5518f9d4）、catalog-number 468078**，而且串流端的版權標示「℗ 2008 world village」與它是同一家。`label` 欄要改寫成「World Village 468078，2008-09-09 US Official CD 4 軌，barcode 713746807825」。｜(2) `curatorRisk` 寫「串流那筆**標為 EP，與本張 Album 不是同一個版本**，上架時要辨」——**駁回**。直查 586280803 的逐軌結果是 **4 軌、6:54／29:10／6:23／10:34，與資料庫端逐軌 0 秒差、曲名全同**；那只是店面在盤名後綴加了「- EP」，**內容是同一張**，不是另一個版本。｜(3) `curatorWhy` 寫本張「是他 **2000 年代之後的另一條線**」——策展判斷、不是欄位事實，簡介不得照抄。可寫的序數有兩個、而且方向相反：**在 Kalhor 的 13 張純 Album 裡本張排第七；在 Brooklyn Rider 的 20 張純 Album 裡本張排第二**（第一是同年 2008-07-22 的《Passport》，早了七週）。｜(4) `curatorRisk` 說 Kalhor「**disambiguation 空白**——不得背書本名」——**這條成立、要照做**（實體 dd2a84cc 的 disambiguation 確實是空的），但**關係欄不是空的**：Silk Road Ensemble 的 collaboration、Masters of Persian Music 與 Ghazal 的團員三筆都有建檔，**這三個團名可以寫**。**Brooklyn Rider 那邊更寬**：五位團員（Michael Nicholas、Eric Jacobsen、Nicholas Cords、Jonathan Gandelsman、Colin Jacobsen）都有 member of band 關係背書、可以寫。｜**跨批與跨池去重覆核**：池中 8910《Night Silence Desert》(2000-09-12)、8913《Scattering Stars Like Dust》(1998) 在他目錄裡是另外兩個 release-group；8914 Ghazal《The Rain》與 8915 Masters of Persian Music《Without You》掛團名，**而他的關係欄正好有這兩個團的團員關係——四張的關聯有欄位背書**。本張與四張的 rgMbid、曲目逐筆比對後互不相同。｜**串流採信 586280803：4 軌逐位置比對（6:54／29:10／6:23／10:34）對資料庫端（6:54／29:10／6:23／10:34），逐軌 0 秒差、曲名全中，採信；盤名後綴的「- EP」只是店面寫法，不是另一版。** 藝人目錄端（7180580，22 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、盤面編號、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **盤名〈Silent City〉與末軌曲名不得拿來推演任何事件或題旨**，只照曲名與長度寫。｜**軌數與長度：唯一一筆 release、4 軌、長度全備，可以放心寫時間。**"
+ },
+ {
+  "key": "desc2:Homayoun Shajarian & Ali Ghamsari|Naghshe Khial",
+  "artist": "Homayoun Shajarian & Ali Ghamsari",
+  "album": "Naghshe Khial",
+  "facts": [
+   {
+    "f": "release-group bc28d1d3 的欄位：title「Naghshe Khial」、artist-credit「Homayoun Shajarian & Ali Ghamsari」、primary-type Album、**secondary-types 空**、first-release-date **2005-05-27**、genre 與 tag 欄皆空。**轄下只有 1 筆 release**：a395a9aa，2005-05-27、**country 記為 AF**、Official、**Digital Media 8 軌**、barcode **859734034559**、packaging None。",
+    "src": "https://musicbrainz.org/ws/2/release-group/bc28d1d3-b103-4508-9421-891ad6fc55b1?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌查得到，而且它正好解釋了那個奇怪的 country 欄**：release a395a9aa 的 label-info 是 **Yaletown Technologies Inc**（廠牌實體 dc5b23f6），catalog-number 欄空。**這個實體 ＋ 載體 Digital Media ＋ barcode ＋ country AF 四個欄位放在一起，指的是一筆數位發行的建檔，不是 2005 年那張實體盤的發行方**；策展層要研究層核的「country AF 存疑」，可核的結論是：**這筆 release 本身就不是原始的實體發行，AF 這個值沒有第二個來源支持，不得寫進行文。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bc28d1d3-b103-4508-9421-891ad6fc55b1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**8 軌全部有長度、合計 59:40**：1〈Moghadameye Nava〉7:32、2〈Saz Va Avaze Naghshe Khial〉**14:16**、3〈Tasnife Tobeh Shekan〉5:09、4〈Tasnife Do Ey Del〉8:27、5〈Hamnavazi'ye Taro Tonbak〉7:21、6〈Tasnife Ba Savaran〉6:21、7〈Avaze Gonahe Eshegh〉4:59、8〈Rakhse Zaar〉5:35。**與盤名同字的第二軌 14:16 是全張最長的一軌，比第二長的第四軌（8:27）多出將近六分鐘。** 三支曲名帶 Tasnif、一支帶 Saz Va Avaz、一支帶 Avaz、一支寫明是 Tar 與 Tonbak 的對奏。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bc28d1d3-b103-4508-9421-891ad6fc55b1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **末軌的 artist-credit 只掛一個人**：第 8 軌〈Rakhse Zaar〉的 artist-credit 是 **Ali Ghamsari 一人**，其餘七軌都是兩人並列。**這是逐軌 artist-credit 背書的事實、可以寫。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bc28d1d3-b103-4508-9421-891ad6fc55b1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "兩位掛名的藝人實體：**Homayoun Shajarian a5120e5e**——Person、country IR、area Iran、begin **1975-05-21**、begin-area **Tehran**、**disambiguation 空白**、別名欄兩筆（「Homayoun Shajarian」「Homâyun Shajariyân」）；**關係欄三筆：Shahrzad Quartet 的 collaboration、Masters of Persian Music 的團員、以及 parent（backward）指向「محمدرضا شجريان」——也就是本組第 1 張的掛名實體 1e6c8164**。**Ali Ghamsari 57608f5f**——Person、country IR、**area Tehran**、**begin 空、disambiguation 空白、別名欄空、關係欄 0 筆**。",
+    "src": "https://musicbrainz.org/ws/2/artist/a5120e5e-0cb5-4212-8de0-fda40639007b?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "兩份目錄分頁全列。**Homayoun 名下 41 個 release-group**（primary-type Album 29、Single 10、EP 1、無 primary-type 1；其中 secondary-types 為空的純 Album 21）：純 Album 依年份排，2003-11-08《Nasime Vasl》、2004-07-02《Naashakiba》、2004-08-23《Shoghe Doost》、**2005-05-27 本張排第四**。**Ali Ghamsari 名下 10 個 release-group、其中純 Album 只有 3 個**（**2005-05-27 本張最早**、2009-08-01《Ab,Nan,Avaz》、2013-07-01《Barfkhani》）——**本張是他名下最早的一筆**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=57608f5f-1591-4d68-abbf-7417cbcb38a0&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 1145687274**「Homayoun Shajarian — Naghshe Khial」得 **8 軌**、標示日期 **2010-07-03**、版權標示「℗ 2010 Homayoun Shajarian」。八軌長度 7:32／14:16／5:09／8:27／7:21／**6:22**／4:59／5:35，**與資料庫端逐軌只差 0–1 秒**（唯一差 1 秒的是第六軌）；曲名七軌對得上，**只有第八軌不同**：串流作〈Naghshe Khial (Instrumental)〉、資料庫作〈Rakhse Zaar〉，長度都是 5:35。⚠ **串流那筆的掛名只寫 Homayoun Shajarian，沒有 Ali Ghamsari。** 藝人目錄端（藝人頁 326585383，84 筆）覆核後未再撈到第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=1145687274&country=nl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌裡有一軌的掛名只剩一個人",
+   "同一軌五分三十五秒，一邊叫它盤名的器樂版，一邊給了它自己的曲名"
+  ],
+  "sound": "八軌全部留下長度，合計 59 分 40 秒。開場〈Moghadameye Nava〉7:32 之後，與盤名同字的第二軌〈Saz Va Avaze Naghshe Khial〉一口氣走了 14:16——全張最長的一軌，比第二長的〈Tasnife Do Ey Del〉8:27 還多出將近六分鐘。第三軌〈Tasnife Tobeh Shekan〉5:09 把尺度縮回一半，第四軌再拉到 8:27，第五軌〈Hamnavazi'ye Taro Tonbak〉7:21 的曲名直接寫明是 Tar 與 Tonbak 的對奏。後段〈Tasnife Ba Savaran〉6:21 與〈Avaze Gonahe Eshegh〉4:59 一路收窄，末軌〈Rakhse Zaar〉5:35 收在五分半——而這一軌的掛名只剩下 Ali Ghamsari 一個人，是八軌裡唯一一次。八軌裡三支帶 Tasnif、一支帶 Saz Va Avaz、一支帶 Avaz，曲名本身就把這張碟的段落分好了。",
+  "keyTracks": [
+   "Saz Va Avaze Naghshe Khial",
+   "Hamnavazi'ye Taro Tonbak",
+   "Rakhse Zaar"
+  ],
+  "status": "full",
+  "yearVerified": "**不一致，本卡維持 2005，但只能算資料庫端可得的年份、不得對外宣稱已驗證。** release-group first-release-date **2005-05-27**，**轄下唯一的 release 也是 2005-05-27**。**但串流版本 1145687274 的標示日期是 2010-07-03、版權標示 ℗ 2010**，與資料庫端差了五年，**而兩邊的八軌長度逐軌只差 0–1 秒，確定是同一批錄音**。⚠ 資料庫端那筆的**載體是 Digital Media、廠牌是一家數位發行商、country 記為 AF**，三個欄位都說明它不是 2005 年的原始實體發行建檔；**串流端的 2010 也只是上架年、不是原盤年**。**結論：2005 只有資料庫端一個來源，第二個獨立來源不但沒有支持、反而給了另一個年份；簡介不得寫成「這張是 2005 年的作品」，也不得改用 2010。錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層五處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Yaletown Technologies Inc（實體 dc5b23f6）**、catno 欄空、barcode 859734034559。｜(2) `curatorRisk` 要研究層核「release country 記為 AF（阿富汗），**很可能是 MB 的資料錯誤**」——**覆核結果：不必當成單純的填錯**。那筆 release 的載體是 Digital Media、廠牌是一家數位發行商、又有 barcode，**四個欄位合起來說明它是一筆數位發行的建檔、不是 2005 年的原始實體盤**；AF 這個值沒有第二個來源支持，**行文一律不提發行地**。｜(3) `curatorWhy` 寫本張是「他名下 41 個 release-group 裡**年份較早**、與 tar 手 Ali Ghamsari 對奏的一筆」——**「年份較早」覆核通過**（21 張純 Album 依年份排本張第四），**但「tar 手」查無來源**：Ghamsari 的實體關係欄 0 筆、disambiguation 空白，**不得寫他彈什麼**。⚠ **可以寫的只有曲名本身**：第五軌叫〈Hamnavazi'ye Taro Tonbak〉，Tar 與 Tonbak 兩個字在曲名裡；**但不得由曲名反推是誰彈的**（裁定 241／250）。｜(4) **策展層漏了 Ghamsari 的兩件事**：他的 disambiguation 也是空白（**依硬規則第 7 條同樣不得背書本名**），而且**他名下只有 3 張純 Album、本張是最早的一筆**——這比 Homayoun 那邊的序數更有內容。｜(5) **策展層漏了末軌的掛名**：第 8 軌〈Rakhse Zaar〉的 artist-credit **只有 Ali Ghamsari 一人**，其餘七軌都是兩人；**這是逐軌 artist-credit 背書的事實、可以寫**。｜**關係欄可寫的名字**：Homayoun 的關係欄有 parent（backward）指向本組第 1 張的掛名實體 1e6c8164，**「父子」這一層有欄位背書、可以寫**；另有 Shahrzad Quartet 的 collaboration 與 Masters of Persian Music 的團員兩筆。**除這三筆之外的合作者一律不得寫。**｜**串流採信 1145687274：8 軌逐位置比對（7:32／14:16／5:09／8:27／7:21／6:22／4:59／5:35）對資料庫端（7:32／14:16／5:09／8:27／7:21／6:21／4:59／5:35），逐軌差 0–1 秒、曲序全中，採信；⚠ 第八軌串流作〈Naghshe Khial (Instrumental)〉、資料庫作〈Rakhse Zaar〉，長度同為 5:35、是同一軌的兩種寫法，行文取資料庫端的曲名。⚠ 串流那筆的掛名只有 Homayoun Shajarian、沒有 Ali Ghamsari，卡片掛名照資料庫端的 artist-credit 取兩人。** 藝人目錄端（326585383，84 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。｜**軌數與長度：唯一一筆 release、8 軌、長度全備，可以寫時間。**"
  }
 ]

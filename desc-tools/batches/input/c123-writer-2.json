@@ -1,0 +1,481 @@
+[
+ {
+  "key": "desc2:Zodiac|Music in the Universe",
+  "artist": "Zodiac",
+  "album": "Music in the Universe",
+  "hook": "每一軌的軌名都是俄語與英語兩截並排。",
+  "note": "重心是那兩截軌名。開頭止於兩截並排→接俄語那半七軌從頭到尾沒動，英語那半在 1983 年再壓後整批改寫→接 1982 年原壓是 Мелодия С60-18365-6、12 吋七軌，四筆實體盤共用一個編號→最後才提第五軌 5:17 最長、第六軌 3:47 最短；字數不夠時先捨這一格。⚠ 軌名是俄語與英語，整張沒有一個拉脫維亞語軌名，別沿用「拉脫維亞語／俄語雙盤面」。⚠ 別寫銷量數字與「蘇聯最暢銷的電子樂團」。⚠ 別寫「里加成立」，能寫的只有 country LV 與 1979 年 12 月至 1995。⚠ 別寫「壓片走 Rīga 分廠」。⚠ 掛名一律寫 Zodiac。⚠ 別替誰安上創團者或主腦。⚠ 第五、六軌的英語軌名在店面端互換，引軌名避開。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group d68de909 的欄位：title 是雙語的「Музыка во Вселенной = Music in the Universe」、**artist-credit 是拉丁的「Zodiac」**、first-release-date 1982、primary-type Album、**secondary-types 空**、無 disambiguation。轄下 **5 筆 release，全部 Official**：1982 SU 原壓、1983 SU 三筆再壓、2021 RU 數位版（title 才是純拉丁的「Music in the Universe」）。",
+   "1982 SU 原壓 8756c521：label-info **Мелодия、catno С60-18365-6**、media **12\" Vinyl 7 軌**、packaging Cardboard/Paper Sleeve、無條碼。逐軌（軌名本身就是「俄語 = 英語」雙語）：1〈Таинственная галактика = A Mysterious Galaxy〉4:45、2〈Лазерная иллюминация = Laser Illuminations〉4:11、3〈Серебряная мечта = A Silver Dream〉3:32、4〈Фотофиниш = Photofinish〉4:43、**5〈Обратная сторона неба = The Sky's Back〉5:17**、6〈В свете Сатурна = The Saturn's Light〉3:47、7〈Полет над Эльдорадо = Flight Over El Dorado〉5:07。**七軌全部有長度，合計約 31 分半。**",
+   "**三筆 1983 再壓的目錄號在資料庫裡被打成三種不同字串**：e1408af4 是「С60-18365-6」、5ddc06d1 是「С60 - 18365-6」、d893d987 是**用拉丁字母 C 開頭的「C60 - 18365-6」**——三者的廠牌欄都是 Мелодия、media 都是 12\" Vinyl 7 軌、逐軌長度與 1982 原壓分秒相同。**同一組錄音、同一個目錄號，四筆實體盤的建檔字串卻沒有一筆完全一樣。**",
+   "**英語軌名在不同壓次之間換過一輪**：1982 原壓與 e1408af4 寫〈A Mysterious Galaxy〉〈A Silver Dream〉〈Photofinish〉〈The Sky's Back〉〈The Saturn's Light〉；5ddc06d1、d893d987 與 2021 年的數位版（Мелодия，catno **MEL CO 0725**、Digital Media 7 軌）改寫成〈The Mysterious Galaxy〉〈Silver Dream〉〈Photo Finish〉〈The Other Side of Heaven〉〈In the Light of Saturn〉。**俄語軌名七軌全程未動，變的只有等號後面那半。**",
+   "藝人實體 505894dc：**資料庫登錄的本名是拉脫維亞語的「Zodiaks」**（本卡掛名「Zodiac」是該實體的 en 別名，也是本 RG 的 artist-credit）、type Group、country **LV**、life-span **1979-12 起、1995 止（已結束）**、disambiguation「Latvian space-disco band」；別名欄另有 Зодиак(ru) 與「Инструментальная рок-группа «Зодиак»」(ru)。成員關係共 11 筆，其中 **Jānis Lūsēns 登錄為 1979-12 至 1995 全程在團**、Ainārs Ašmanis 1979-12 至 1981、Zigfrīds Muktupāvels 1987 至 1991、Gatis Zvirgzdiņš 1987-07 起。",
+   "藝人目錄分頁全列 **12 個 release-group**。落在 1970–1991 這段的只有四張：《Disco Alliance》(1980)、《Музыка из кинофильмов》(1982，secondary-types 含 Soundtrack)、本張 (1982)、《In Memoriam》(1989)、《Mākoņi》(1991)——**本張與那張電影配樂同年**，是這個掛名 1982 年的兩張之一。其餘七個 RG 全在 1995 年之後，且多為 Compilation 或 Remix Single。",
+   "串流店面第三種查法（直查 collectionId）：**1556224450 在 lv 店面回得出完整曲目**，條目寫「Zodiac —《Музыка во Вселенной》、1982-01-01、7 軌、℗ 1982 АО \"Фирма Мелодия\"」。逐軌覆核七軌全對得上，但**第 5、6 軌的軌名與資料庫互換**：串流端第 5 軌寫〈In the Light of Saturn〉5:22、第 6 軌寫〈The Other Side of Heaven〉3:52，而資料庫第 5 軌 5:17 的那一軌叫〈The Other Side of Heaven〉、第 6 軌 3:47 的叫〈In the Light of Saturn〉。**長度對得上、名字對調**，其餘五軌名稱與長度皆一致（差 0–5 秒）。"
+  ],
+  "sound": "七軌全部留下長度，攤開來是一條起伏不大的線：開場〈Таинственная галактика = A Mysterious Galaxy〉4:45、〈Лазерная иллюминация = Laser Illuminations〉4:11、〈Серебряная мечта = A Silver Dream〉3:32、〈Фотофиниш = Photofinish〉4:43，四軌都落在三分半到四分三刻之間；第五軌 5:17 是全張最長的一軌，第六軌 3:47 是最短，末軌〈Полет над Эльдорадо = Flight Over El Dorado〉5:07 收在接近最長的尺度上。全張七軌合計約 31 分半，攤在一張十二吋盤的兩面上。每一軌的軌名都是「俄語 = 英語」兩截並排，等號兩邊在四筆實體盤與一筆數位版之間對不齊：俄語那半七軌從頭到尾沒動，英語那半在 1983 年的兩筆再壓之後整批改寫，5:17 與 3:47 這兩軌的英語名還在資料庫與串流店面之間互換了位置。",
+  "keyTracks": [
+   "Таинственная галактика = A Mysterious Galaxy",
+   "Обратная сторона неба = The Sky's Back",
+   "Полет над Эльдорадо = Flight Over El Dorado"
+  ],
+  "researchNotes": "**`why` 的「1980 年的《Disco Alliance》賣破兩千萬張」不得寫**——銷量資料庫端查不到，任何數字都沒有來源。｜**「蘇聯最暢銷的電子樂團」「兩張合起來就是蘇聯 space-disco 的全部正典」不得寫**（價值判斷與無來源斷言）。｜**「1979 年在里加成立」的「里加」不得寫**：藝人實體只登錄 country LV、life-span begin 1979-12，**begin-area 欄位給的是「Soviet Union」而不是里加**；可以寫的是「1979 年 12 月起、1995 年止」與 country LV。｜⚠ **`label` 欄的「拉脫維亞語／俄語雙盤面」是錯的，不得沿用**：逐軌覆核七軌，軌名是「**俄語 = 英語**」兩截並排，**整張沒有一個拉脫維亞語軌名**；正確寫法是「俄語與英語雙語軌名」。｜**「壓片走 Rīga 分廠」不得當事實寫**：label-info 只有「Мелодия」四個字，分廠是本批裁定 256 說明的推論。｜**目錄號可以寫**：1982 原壓 С60-18365-6（三筆 1983 再壓的字串各異，見 facts）。｜**人名從嚴（裁定 241／250）**：成員名以實體關係欄背書者為限（Jānis Lūsēns、Ainārs Ašmanis、Zigfrīds Muktupāvels、Gatis Zvirgzdiņš 等 11 筆），**關係欄沒有任何一筆標「創團者」或「主腦」，不得替誰安上這個身分**。｜⚠ **掛名分裂是實體層的事實**：實體本名是「Zodiaks」，本 RG 的 artist-credit 才是「Zodiac」；同掛名 1989 年那張的 artist-credit 又寫回「Zodiaks」。**行文一律照卡片寫「Zodiac」。**｜**逐軌長度七軌齊全，可以放心寫時間。**｜串流採信 1556224450：lv 店面回得出完整七軌，名稱與長度逐軌對上，**惟第 5、6 軌軌名與資料庫互換（長度不換）**，行文若要引軌名，以資料庫版本為準並避開這兩軌。"
+ },
+ {
+  "key": "desc2:Zodiac|In Memoriam",
+  "artist": "Zodiac",
+  "album": "In Memoriam",
+  "hook": "同一個編號底下的兩筆原壓，一種盤面七軌、一種八軌。",
+  "note": "重心是那兩筆原壓。開頭止於一種八軌→接俄語盤面把 9:06 的開場拆成兩軌，那兩軌都沒有登錄長度→接兩筆同掛 Мелодия С60 28301 009，拉脫維亞語盤面從〈In Memoriam. Kurzemē〉9:06 起頭，其餘六軌壓在 3:31 到 5:20→最後才提 1996 年的 CD 再發改名《Dedication》、補進兩軌成為十軌；字數不夠時先捨這一格。⚠ 別寫「蘇聯時期最後一張 LP」，1991 年還有《Mākoņi》。⚠ 別寫曲風轉向那類斷語。⚠ 別寫「里加成立」與「壓片走 Rīga 分廠」。⚠ 掛名一律寫 Zodiac。⚠ 別替誰安上創團者或主腦。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 822bc2fc 的欄位：title「In Memoriam」、**artist-credit 是拉脫維亞語的「Zodiaks」**（與同掛名 1982 年那張的「Zodiac」不同）、first-release-date 1989、primary-type Album、**secondary-types 空**。轄下 **6 筆 release，全部 Official**：兩筆 1989 SU、1996-10-21 與 2005-08 兩筆 LV、2001 DE、2021 RU。",
+   "**兩筆 1989 SU 原壓掛同一個目錄號 Мелодия С60 28301 009，內容卻不是同一種切法**：b8a16abb 是 **12\" Vinyl 7 軌、軌名為拉脫維亞語**（1〈In Memoriam. Kurzemē〉9:06、2〈Moricsala〉3:53、3〈Brīvdabas Muzejā〉5:16、4〈Rundāles Pils〉3:50、5〈Vecrīgas Nami〉4:32、6〈Pastorāle〉3:31、7〈Zilā Kalnā〉5:20）；6f986c32 是 **Vinyl 8 軌、軌名為俄語**，把 9 分多的開場拆成〈In Memoriam〉與〈В Курземе〉兩軌（這兩軌未登錄長度），其餘六軌與拉脫維亞語版同長。**同一張碟、同一個編號，一種盤面七軌一種八軌。**",
+   "**1996-10-21 與 2005-08 兩筆 LV 再發把盤名整個換成《Dedication》**，廠牌 **Mikrofona ieraksti、catno 皆為 MRCD 063**、CD **10 軌**——比 1989 年的黑膠多出兩軌：第 4 軌〈Dedication〉與第 7 軌〈Game〉，其餘八軌是把拉脫維亞語軌名譯成英語（〈Kurzeme〉〈Moricsala〉〈Palace of Rundāle〉〈Open Air Museum〉〈The Old Riga Houses〉〈Pastorāle〉〈Blue Mountain〉）。兩筆的逐軌長度略有出入（如〈Kurzeme〉1996 版 4:15、2005 版 3:51）。",
+   "另兩筆版本：2001 DE 的 CD（Мелодия，catno **MRCE-04110**、條碼 4600317041107）走 **7 軌俄語軌名**、開場〈In Memoriam / В Курземе〉9:10；2021 RU 的 Digital Media（Мелодия，catno **MEL CO 0775**）同樣 7 軌，軌名改為英語（〈In Memoriam. Courland〉9:10、〈Moricsala Island〉、〈In Open-Air Museum〉、〈Rundāle Palace〉、〈Houses of Old Riga〉、〈Pastoral〉、〈On the Mount Zilaiskalns〉）。**四種語言版本各有一套軌名，長度大致同一組。**",
+   "藝人實體 505894dc：本名「Zodiaks」、Group、country LV、**life-span 1979-12 至 1995**、disambiguation「Latvian space-disco band」。成員關係 11 筆，其中三筆的起始年正落在本張之前的 1987 年：**Gatis Zvirgzdiņš（1987-07 起）、Zigfrīds Muktupāvels（1987 至 1991）、Maija Lūsēna（1987 起）**；Jānis Lūsēns 則登錄為 1979-12 至 1995 全程在團。",
+   "藝人目錄分頁全列 12 個 release-group，1970–1991 這段共四張正規專輯：1980《Disco Alliance》、1982《Музыка во Вселенной = Music in the Universe》、**1989 本張**、1991《Mākoņi》。**本張是這個掛名在蘇聯時期的第三張**，其後只剩 1991 那張仍在窗口內。",
+   "串流店面第三種查法（直查 collectionId）：**1569073250 在 lv 店面回得出完整曲目**，條目寫「Zodiac —《In Memoriam》、1989-01-01、7 軌、℗ 1989 АО \"Фирма Мелодия\"」。逐軌覆核：七軌的軌名與 2021 年數位版那一套英語軌名**完全相同**（〈In Memoriam. Courland〉9:11、〈Moricsala Island〉3:57、〈In Open-Air Museum〉5:23、〈Rundāle Palace〉3:55、〈Houses of Old Riga〉4:38、〈Pastoral〉3:33、〈On the Mount Zilaiskalns〉5:23），長度差 0–2 秒。**不是 10 軌的《Dedication》版本。**"
+  ],
+  "sound": "以拉脫維亞語軌名的那筆 1989 年原壓為準，七軌只有一軌超過六分鐘：開場的〈In Memoriam. Kurzemē〉一口氣走了 9:06，接近全張的四分之一；其後〈Moricsala〉3:53、〈Brīvdabas Muzejā〉5:16、〈Rundāles Pils〉3:50、〈Vecrīgas Nami〉4:32、〈Pastorāle〉3:31、〈Zilā Kalnā〉5:20，六軌全部壓在三分半到五分二十之間，沒有第二個長段落。俄語盤面那一版把開場那九分鐘拆成〈In Memoriam〉與〈В Курземе〉兩軌，於是同一張碟在資料庫裡一種算七軌、一種算八軌。 1996 年的 CD 再發又把整張改名《Dedication》，補進〈Dedication〉與〈Game〉兩軌成為十軌，開場那一段則縮到 4:55——這是三種版本裡唯一一次動到曲目本身。",
+  "keyTracks": [
+   "In Memoriam. Kurzemē",
+   "Vecrīgas Nami",
+   "Zilā Kalnā"
+  ],
+  "researchNotes": "**`why` 的「從前兩張的 space-disco 轉向較沉的合成器音景」不得寫**——曲風轉向資料庫端沒有任何欄位可以支撐，能寫的只有曲目、長度與版本差異。｜**「Zodiac 第三張、也是蘇聯時期最後一張 LP」要改**：目錄實數是**第三張正規專輯沒錯，但不是最後一張**——同掛名 1991 年還有《Mākoņi》，仍在 1970–1991 窗口內。**「最後一張」不得寫。**｜**「1979 年在里加成立」的「里加」不得寫**（begin-area 欄位是 Soviet Union，見同掛名另一卡）。｜**「壓片走 Rīga 分廠」不得當事實寫**（label-info 只有「Мелодия」）。｜**目錄號可以寫**：С60 28301 009（1989 兩筆原壓共用）、MRCD 063（1996／2005 LV）、MRCE-04110（2001 DE）、MEL CO 0775（2021 RU）。｜⚠ **掛名分裂**：本 RG 的 artist-credit 是「Zodiaks」，同掛名 1982 那張是「Zodiac」，實體本名亦為「Zodiaks」；**行文一律照卡片寫「Zodiac」**。｜**人名從嚴**：只有實體關係欄的 11 位成員可寫，**關係欄沒有標任何人是創團者或主腦**。｜**逐軌長度：拉脫維亞語盤面七軌齊全、CD 版十軌齊全，可以寫時間；惟俄語盤面拆出來的〈In Memoriam〉與〈В Курземе〉兩軌未登錄長度，引這兩軌時別寫時間。**｜串流採信 1569073250：lv 店面七軌全對，軌名與 2021 數位版那套英語名一致、長度差 0–2 秒，**確認上架的是七軌原盤那一版而非十軌的《Dedication》**。"
+ },
+ {
+  "key": "desc2:Pērkons|Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem",
+  "artist": "Pērkons",
+  "album": "Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem",
+  "hook": "盤名寫的是七首半，碟上排的是八軌。",
+  "note": "重心是那個數字落差。開頭止於八軌→接廠牌、編號與條碼三欄全空，形態欄記的是 CD、八軌→接八軌都沒有長度，能引的只有〈Tumsa un migla〉起頭、〈Kad niknas vētras...〉收尾這個順序→最後才提這是名下年份最早的一筆，樂團的起訖是 1981 至 1992；字數不夠時先捨這一格。⚠ 別寫時間，八軌都沒有長度。⚠ 別寫禁演、審查或任何事件，端上一個欄位都沒有。⚠ 別寫「用他的詩是繞過審查的手法」這種因果句。⚠ 別寫「最重要的搖滾團」。⚠ 別寫「1981 年在里加成立」，實體只有 country LV。⚠ 別名欄那句可以引，但別據此稱誰是創團者或主腦。⚠ 這張沒有試聽來源。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group e273e54d 的欄位：title「Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem」、artist-credit「Pērkons」、first-release-date 1987、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：3c8e237a，1987 年、country **LV**、status Official——**沒有任何再發，版本問題在本張不存在。**",
+   "那唯一一筆 release 的實情：**label-info 整欄為空**（沒有廠牌、沒有目錄號、沒有條碼）、media 的 format 欄寫的是 **CD**、8 軌，**八軌沒有任何一軌登錄長度**。逐軌：1〈Tumsa un migla〉、2〈Viss ir joks〉、3〈Pēc Goda, pēc Varas〉、4〈Reiz zaļoja jaunība〉、5〈Viens otru par〉、6〈Vēders dievs visaugstākais〉、7〈Vēl desmit, divdesmit gadu〉、8〈Kad niknas vētras...〉。",
+   "藝人實體 7ca8e322：name「Pērkons」、type Group、country **LV**、**life-span 1981 起、1992 止（已結束）**、無 disambiguation；**別名欄只登錄一個名字：「Grupa Jura Kulakova vadībā」**（拉脫維亞語，字面是「由 Juris Kulakovs 帶領的樂團」）。成員關係共 10 筆：Dainis Strazdiņš（1980 至 1988-07）、**Ieva Akuratere、Raimonds Bartaševičs、Juris Kulakovs、Juris Sējāns、Leons Sējāns 五位皆為 1981 至 1992 全程**、Nauris Puntulis（1982 至 1992）、Ikars Ruņģis（1988-06-06 至 1992）、Māris Students（標 additional、至 1991）、Alberts Bartaševičs（無起訖）。",
+   "藝人目錄分頁全列 **13 個 release-group**。**本張 1987 是整份目錄裡年份最早的一筆**（另有一個未填年份、primary-type 標 Other 的《Veidenbauma cikls》）；其後依序是 1988《Koncerts》、1990《Ballīte / A Hoedown》，1994 年起才出現《Ei, jūs tur!》與《Dziesmu izlase》系列等六筆 Compilation。**1970–1991 窗口內這個掛名只有三筆。**",
+   "**成員名單與本批另一張卡直接交叉**：Juris Kulakovs、Juris Sējāns、Leons Sējāns、Raimonds Bartaševičs、Alberts Bartaševičs 五個名字同時出現在 Menuets（fdbc0ae2）的成員關係欄裡——Kulakovs 在 Menuets 登錄為 1976 至 1981、在本團為 1981 至 1992，**兩段年份首尾相接**。",
+   "串流店面第三種查法：以掛名兩種寫法（帶變音與不帶）在 lv／lt／ee／ru 四個店面查藝人目錄，**回得出的 Perkons 條目共 6 張**——《Balle!》(2020)、《Dziesmu Izlase, Vol.1 (1981-1982)》(1994)、《Ei, jūs tur!》(2021)、《Labu Vakar - Klusā Daba Ar Perspektīvu》(1996)、《Latviskā Virtuve - Ballīte》(1990)，以及與男聲合唱團合掛的《Kulakovs. Veidenbaums. Mīlestībā viļņo krūts》(2024)——**本張 1987 年這一張不在其中**。",
+   "**駁回一筆最像的候選**：collectionId 1752722929《Kulakovs. Veidenbaums. Mīlestībā viļņo krūts》(2024-06-19、21 軌) 盤名同樣掛 Veidenbaums，逐軌覆核後確認**與本張八軌只有〈Reiz zaļoja jaunība〉一個軌名重疊（1/8）**，其餘二十軌全是本張沒有的曲目，掛名也是三方合掛。**不是本卡的條目，駁回。**"
+  ],
+  "sound": "八軌一首接一首，卻沒有一軌留下長度可引——資料庫在這張碟上只給得出曲名的順序：〈Tumsa un migla〉開場，接〈Viss ir joks〉、〈Pēc Goda, pēc Varas〉、〈Reiz zaļoja jaunība〉，翻面之後是〈Viens otru par〉、〈Vēders dievs visaugstākais〉、〈Vēl desmit, divdesmit gadu〉，末軌〈Kad niknas vētras...〉的標題還帶著刪節號。八個曲名都取自盤名點名的那位詩人的詩句，盤名本身則寫成「七首半」——歌只有八首，數字卻寫成七又二分之一。整張碟在資料庫裡只有這一筆建檔，沒有第二個版本、沒有再發，連廠牌與編號欄都是空的。",
+  "keyTracks": [
+   "Tumsa un migla",
+   "Reiz zaļoja jaunība",
+   "Kad niknas vētras..."
+  ],
+  "researchNotes": "**`why` 的「1982 年因一場演唱會引發的騷動被禁演多年」不得寫**——資料庫端沒有任何欄位登錄禁演、審查或事件，這是本張最需要擋下的一處。｜**`label` 欄的「樂團 1981–1986 年遭禁演期間的曲目集結」同樣不得寫**（同上，無來源）；`label` 欄可寫的只有「1987、LV、label-info 為空、資料庫記為 CD 8 軌」。｜**「用他的詩是繞過審查的常見手法」不得寫**（因果斷言）。｜**「拉脫維亞最重要的搖滾團」不得寫**（價值判斷）。｜**「1981 年在里加成立」的「里加」不得寫**：實體只登錄 country LV 與 life-span 1981–1992，**沒有城市欄位**。｜**可以寫的事實**：盤名字面（「七首半以某位詩人的詞寫成的歌」）、八個軌名、1987、LV、label-info 為空、資料庫記為 CD 8 軌、樂團 1981–1992、十筆成員關係、目錄 13 個 RG 且本張年份最早。｜**人名從嚴（裁定 241／250）**：可寫的成員名以關係欄十筆為限；**別名欄的「Grupa Jura Kulakova vadībā」是實體欄位值，可以引，但不得據此稱誰是「創團者」或「主腦」**——關係欄沒有這個標記。｜⚠ **沒有逐軌長度來源，別寫時間。**｜串流駁回 1752722929：三方合掛的 2024 年碟，逐軌覆核與本張八軌只重疊 1 軌（〈Reiz zaļoja jaunība〉），**不是本卡**；藝人目錄回得出的 6 張裡亦無本張，**採信 0、駁回 1**。"
+ },
+ {
+  "key": "desc2:Pērkons|Dziesmu izlase #1 (1981-1982)",
+  "artist": "Pērkons",
+  "album": "Dziesmu izlase #1 (1981-1982)",
+  "hook": "二十軌裡最長的一首與樂團同名，排在正中間的第十二軌。",
+  "note": "重心是那一軌。開頭止於第十二軌→接〈Pērkons〉5:51 是二十軌最長，最短的〈Iedzer, brāli!〉2:22 後面緊接著另一首勸酒歌→接出版年是 1994、廠牌 Mikrofona ieraksti、編號 MRCD 006、CD 二十軌，副標括號裡的 1981-1982 只是盤名標的年份區間→最後才提同系列三集各對應一段區間，這一集最早；字數不夠時先捨這一格。⚠ 別寫「錄於 1981 年」，那個區間只出現在副標裡。⚠ 別寫禁演、地名事件與「那批錄音因此從未出成唱片」。⚠ 別寫「里加成立」。⚠ 成員名以關係欄十筆為限。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group cbad796b 的欄位：title「Dziesmu izlase #1 (1981-1982)」、artist-credit「Pērkons」、**first-release-date 1994**、primary-type Album、**secondary-types [Compilation]**。**轄下只有 1 筆 release**：2b7456ff，1994 年 LV、Official、廠牌 **Mikrofona ieraksti、catno MRCD 006**、media **CD 20 軌**。副標題括號裡的 1981-1982 是錄音年，與 release 的 1994 是兩個不同的年份。",
+   "**二十軌全部有長度**：1〈Dziesma par sapumpuroto zaru〉3:50、2〈Lapas birst〉2:32、3〈Šeiks pie loga〉3:19、4〈Pie baltas lapas〉4:03、**5〈Melnbaltā dziesma〉5:20**、6〈Mākoņstūmējs〉2:35、7〈Protesta dziesma pret apkārtējās vides piesārņošanu〉3:26、8〈Dziesmiņa par zelta blusu〉4:46、9〈Balāde par gulbi〉4:59、10〈Lakstu gailis〉4:16、11〈Mākslas darbi rodas mokās〉3:23、**12〈Pērkons〉5:51（全張最長，與樂團同名）**、13〈Iepūt... un paklausies kā skan!〉3:04、14〈Piemineklis kazai〉3:19、15〈Vidus laiks〉3:00、**16〈Iedzer, brāli!〉2:22（全張最短）**、17〈Dzērājdziesmiņa〉3:28、18〈Dzied dzejnieks dziesmu〉2:51、19〈Tā gribējās man saules lēkta〉4:38、20〈Troksnis〉3:46。合計約 71 分半。",
+   "藝人實體 7ca8e322：name「Pērkons」、Group、country LV、**life-span 1981 起、1992 止**、別名欄唯一一筆是「Grupa Jura Kulakova vadībā」。成員關係 10 筆，**Ieva Akuratere、Raimonds Bartaševičs、Juris Kulakovs、Juris Sējāns、Leons Sējāns 五位標為 1981 至 1992 全程在團**——本輯副標所寫的 1981-1982，正是這五筆關係起算的頭兩年。",
+   "藝人目錄分頁全列 **13 個 release-group**，其中 **Compilation 有六筆**：本輯《Dziesmu izlase #1 (1981-1982)》(1994)、《Zibens Pa Dibenu》(1994)、《Dziesmu izlase #2 (1985-1987)》(1996)、《Latviskā Virtuve - Ballīte》(2003)、《Dziesmu izlase #3 (1990-1991)》(2003-08-14)、《7-os no rīta》(2018)。**同一個系列切成三集，各自對應一段年份區間，本輯是最早的那一段。** 這個掛名在 1970–1991 窗口內只有 1987《Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem》、1988《Koncerts》、1990《Ballīte / A Hoedown》三筆。",
+   "串流店面第三種查法（直查 collectionId）：**930979653 在 lv 店面回得出完整曲目**，條目寫「Perkons —《Dziesmu Izlase, Vol.1 (1981-1982)》、1994-01-01、20 軌、℗ 1994 Microphone Records」。逐軌覆核 **二十軌名稱與順序完全相同、長度分秒不差**（僅第 13 軌的刪節號寫成五個點）。**盤名格式不同（Vol.1 對 #1）、掛名去了變音（Perkons），但內容是同一張。**"
+  ],
+  "sound": "二十軌全部留下長度，攤開來是一張以三、四分鐘為主軸的長盤：開場〈Dziesma par sapumpuroto zaru〉3:50，接著〈Lapas birst〉2:32、〈Šeiks pie loga〉3:19、〈Pie baltas lapas〉4:03，到第五軌〈Melnbaltā dziesma〉5:20 才第一次拉長。全張只有兩軌超過五分鐘，另一軌是排在正中間的第十二軌〈Pērkons〉5:51——與樂團同名，也是二十軌裡最長的一軌。最短的是第十六軌〈Iedzer, brāli!〉2:22，後面緊接著〈Dzērājdziesmiņa〉3:28，兩首勸酒歌並排。末尾〈Tā gribējās man saules lēkta〉4:38 與〈Troksnis〉3:46 收尾，全張二十軌合計約 71 分半。曲名裡有一首直接叫〈反環境污染的抗議歌〉，長 3:26。",
+  "keyTracks": [
+   "Melnbaltā dziesma",
+   "Pērkons",
+   "Protesta dziesma pret apkārtējās vides piesārņošanu"
+  ],
+  "researchNotes": "**`why` 的「1982 年在利耶帕亞的演出引發騷動後被禁演數年」不得寫**——地名、事件、禁演全都在資料庫端查不到，這是本張最重的一處。｜**`exceptionReason` 裡「1981–1982 年的曲目正是導致樂團被當局禁演的那一批」同樣不得寫**（同上，且是因果斷言）；§5.6 的舉證改以可查證的兩件事撐：**這個掛名在 1970–1991 窗口內最早的建檔是 1987 年那張，1981-1982 這段年份區間只出現在 1994 年這套合輯的副標裡**。｜**「那批錄音因此從未出成唱片」不得寫成斷言**——資料庫只能證明「窗口內沒有建檔」，不能證明「沒有發行過」。｜**§5.6 舉證覆核（裁定 257）**：`exceptionEvidenceUrls` 兩個網址都**打得開也站得住**——第一個是本 RG 本身（Compilation、1994、MRCD 006），第二個 lv 店面條目直查 collectionId 回得出二十軌完整曲目、逐軌與資料庫分秒相同，**確實是本卡這一張，不是通用類別頁**。｜**可以寫的序數**：同系列 #1／#2／#3 三集分別對應 1981-1982、1985-1987、1990-1991 三段年份，本輯是最早的一集（目錄實數）。｜**人名從嚴**：成員名以關係欄十筆為限；**別名欄「Grupa Jura Kulakova vadībā」可引，但不得據此稱誰是主腦。**｜**二十軌長度齊全，可以放心寫時間。**｜串流採信 930979653：lv 店面二十軌逐軌對上、長度分秒不差，**採信 1、駁回 0**。"
+ },
+ {
+  "key": "desc2:Menuets|Dzeguzes balss",
+  "artist": "Menuets",
+  "album": "Dzeguzes balss",
+  "hook": "末軌 8:52 是全張最長，同名曲 2:44 反而最短。",
+  "note": "重心是那兩個端點。開頭止於反而最短→接第四軌〈Septiņas skumjas zvaigznes〉6:03 撐開前半，末軌的長度是同名曲的三倍多→接 1979 年 Мелодия С60-11303-4、12 吋八軌→最後才提名下只有四個發行品，這一張與下一張之間隔了十七年；字數不夠時先捨這一格。⚠ 同一張碟有兩筆 1979 原壓，另一筆八軌都沒有長度，引時間要說清楚取哪一筆。⚠ 別寫「作曲全部出自 Imants Kalniņš」，能寫的只有掛名字串是「Imants Kalniņš / Menuets」，關係欄沒有把他連到這支團。⚠ 別寫「1968 年在里加成立」，可以寫那個精確到日的 1968-11-04。⚠ 別寫「壓片走 Rīga 分廠」與任何價值判斷。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group cfb9d0e7 的欄位：title「Dzeguzes balss」、**artist-credit 是帶斜線的合掛名「Imants Kalniņš / Menuets」**、first-release-date 1979、primary-type Album、**secondary-types 空**。轄下 **3 筆 release，全部 Official**：兩筆 1979 SU 的 12\" Vinyl（186fc69e、16da2f34，皆為 Мелодия、**catno С60-11303-4**、8 軌、Cardboard/Paper Sleeve），以及一筆**沒有日期也沒有國別**的 Digital Media（26d7f40d，8 軌，label-info 掛 **Baltic Records Group 與 Мелодия 兩個廠牌、兩者都沒有目錄號**）。",
+   "1979 SU 原壓 186fc69e 的逐軌與長度（**八軌全部有長度**）：1〈Dziesmiņa dziedama pusčetros no rīta〉4:42、2〈Viņi dejoja vienu vasaru〉3:12、3〈Dzeguzes balss〉2:44、**4〈Septiņas skumjas zvaigznes〉6:03**、5〈Piedod, piedod, piedod man!〉3:54、6〈Dziesma par Floridas smiltīm〉3:37、7〈Dziesmiņa par to gadījumu ar Džordāno Bruno〉2:48、**8〈Raganas dziesmiņa pēc sprieduma pasludināšanas〉8:52**。**同一張碟的另一筆 1979 原壓（16da2f34）八軌一軌長度都沒登錄**——兩筆建檔的差別只在長度欄有沒有填。全張約 36 分。",
+   "樂團實體 fdbc0ae2：name「Menuets」、type Group、country **LV**、**life-span begin 1968-11-04（精確到日）、未登錄結束**。成員關係共 18 筆，其中六筆標 **original 且起始日皆為 1968-11-04**：Andris Kronbergs（至 1972）、Adrians Kukuvass（至 1978）、Alberts Bartaševičs、Raimonds Bartaševičs、Juris Sējāns、Andris Sējāns。**Juris Kulakovs 登錄為 1976 至 1981 在團**——與本批 Pērkons 卡的 1981 至 1992 首尾相接。",
+   "樂團目錄分頁全列 **只有 4 個 release-group**：本張《Dzeguzes balss》(1979)、《In Memoriam》(1996-08-05)、《Kamēr Saule vēl nenoriet》(1998-07-03)、《Cilvēks, kas smejas》(2005-11-29)。**1970–1991 這段窗口內只有本張一筆，而且與下一筆之間隔了十七年。**",
+   "合掛名另一半的實體 c0c0027c「Imants Kalniņš」：type **Person**、country LV、**begin 1941-05-26**、無 disambiguation，別名欄登錄 I. Kalniņš／Im. Kalniņš 等四種縮寫。關係欄：**member of band 2xBBM（1969-08 至 1970-09）與 Turaidas Roze（標 original，1984 至 1988）**、parent → Rēzija Kalniņa 與 Marts Kristiāns Kalniņš、sibling → Viktors Kalniņš。**關係欄沒有任何一筆把他連到 Menuets**——他與本張的連結是 release-group 的 artist-credit 字串，不是實體關係。他名下分頁全列 30 個 release-group，本張同時列在其中。",
+   "串流店面第三種查法（直查 collectionId）：**1349735639 在 lv／ee／lt／de／fi／gb／us 七個店面都回得出**，條目寫「Menuets —《Dzeguzes Balss》、1979-01-01、8 軌、℗ 1979 RSF \"Melodija\"」。逐軌覆核八軌名稱與順序完全相同（第 1 軌的 pusčetros 在店面端被打成 pučetros），**長度則整批比 1979 原壓長 5 到 9 秒（4:47／3:17／2:49／6:11／4:00／3:43／2:53／9:01），與資料庫那筆無日期的數位版分秒相同**——上架的就是那個數位版。"
+  ],
+  "sound": "八軌全部留下長度，收在兩個長段落之間：開場〈Dziesmiņa dziedama pusčetros no rīta〉4:42，接著〈Viņi dejoja vienu vasaru〉3:12 與同名曲〈Dzeguzes balss〉2:44——同名曲是全張最短的一軌，只有兩分四十四秒。第四軌〈Septiņas skumjas zvaigznes〉6:03 把一面撐開，翻面之後〈Piedod, piedod, piedod man!〉3:54、〈Dziesma par Floridas smiltīm〉3:37、〈Dziesmiņa par to gadījumu ar Džordāno Bruno〉2:48 三軌連著壓在四分鐘以內，末軌〈Raganas dziesmiņa pēc sprieduma pasludināšanas〉一口氣走了 8:52，是全張最長的一軌，長度接近同名曲的三倍多。全張八軌約 36 分。串流店面上架的那一版八軌整批比原壓長 5 到 9 秒，末軌在那裡是 9:01。",
+  "keyTracks": [
+   "Dzeguzes balss",
+   "Septiņas skumjas zvaigznes",
+   "Raganas dziesmiņa pēc sprieduma pasludināšanas"
+  ],
+  "researchNotes": "**`why` 的「作曲全部出自 Imants Kalniņš」不得寫**——可查證的只有 release-group 的 artist-credit 字串是「Imants Kalniņš / Menuets」，**資料庫端沒有逐曲的作曲關係可以支撐「全部」**。｜**「拉脫維亞非官方音樂最核心的作曲家」「拉脫維亞最早的搖滾團之一」不得寫**（價值判斷）。｜**「1968 年在里加成立」的「里加」不得寫**：實體只有 country LV 與 begin 1968-11-04，**沒有城市欄位**；可以寫的是那個精確到日的成立日期。｜**「唯一在蘇聯時期發行的 LP」可以寫**——藝人目錄實數支撐：名下 4 個 RG，1970–1991 窗口內只有本張。｜**「壓片走 Rīga 分廠」不得當事實寫**（label-info 只有「Мелодия」）。｜**掛名取捨照卡片寫「Menuets」**：artist-credit 原字串是帶斜線的「Imants Kalniņš / Menuets」，這一點是實體層事實、可以在行文裡點出，但**卡面掛名不變**。｜**人名從嚴（裁定 241／250）**：可寫的成員名以樂團關係欄 18 筆為限（六位標 original 的 1968-11-04 起算者最有把握）；**Imants Kalniņš 與本團之間沒有實體關係**，只能說 artist-credit 這樣掛。｜**八軌長度齊全（取 186fc69e），可以寫時間**；但**另一筆 1979 原壓一軌長度都沒有，引長度時要說清楚取的是哪一筆**。｜串流採信 1349735639：七個店面回得出，八軌逐軌對上、長度整批 +5～9 秒且與資料庫的數位版分秒相同，**採信 1、駁回 0**。"
+ },
+ {
+  "key": "desc2:Līvi|Iedomu pilsēta",
+  "artist": "Līvi",
+  "album": "Iedomu pilsēta",
+  "hook": "最長的一軌 4:34、最短的 2:51，整張長短差不到兩分鐘。",
+  "note": "重心是那個窄幅。開頭止於不到兩分鐘→接最長的是〈Saldus saule〉、最短的是〈Līviskā ziņģe〉，其餘七軌全落在中間→接第四軌就是同名曲〈Iedomu pilsēta〉4:02，九軌合計約 34 分→最後才提 1986 年 Мелодия С60 23627 009、12 吋九軌，是名下第一張十二吋九軌的全長盤；字數不夠時先捨這一格。⚠ 別寫「1976 年在利耶帕亞成立」，可以寫「別名欄登錄的是利耶帕亞市文化宮合奏團的名字」。⚠ 別寫「硬搖滾的代表團」與「壓片走 Rīga 分廠」。⚠ 掛名有同名實體，別背書本名。⚠ 成員名以關係欄為限，關係欄沒有標創團者或主唱。⚠ 有固定試聽，但條目是 19 軌的併輯、只採信前九軌，別把 19 軌當本張軌數。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group e03f9dc3 的欄位：title「Iedomu pilsēta」、artist-credit「Līvi」、first-release-date 1986、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：0772fc33，1986 年 SU、Official、**Мелодия、catno С60 23627 009**、media **12\" Vinyl 9 軌**、Cardboard/Paper Sleeve。**沒有再發，這個 RG 底下就這一筆。**",
+   "**九軌全部有長度**：1〈Mazais sapnītis〉3:24、2〈Saulgriežu rīts〉3:12、3〈Uz lietiem〉4:00、4〈Iedomu pilsēta〉4:02（同名曲）、**5〈Līviskā ziņģe〉2:51（全張最短）**、6〈Rožu laukums〉3:21、**7〈Zušu dziesmiņa〉4:33**、**8〈Saldus saule〉4:34（全張最長）**、9〈Ledus zieds〉3:57。**九軌全部落在 2:51 到 4:34 之間，最長與最短只差 1 分 43 秒**，合計約 34 分。",
+   "**裁定 227 的實例，本層親自回問覆核過**：同掛名 1985 年的《Aprīļa pilieni》(RG 08742e9c) 在 MB 上 primary-type 是 Album、secondary-types 空，但其唯一 release cb3c35b6 的 media 是 **7\" Vinyl、只有 4 軌**（〈Durvis〉2:33、〈Jānītis pīpē〉3:40、〈Slimības〉3:15、〈Aprīļa pilieni〉3:40）、catno **Мелодия С52 22639 009**——**與本張的 С60 系列不同號段**。策展層據此改取 1986 年這張的判斷，本層覆核屬實。",
+   "藝人實體 e695947f：name「Līvi」、type Group、country LV、**life-span begin 1976-07、未登錄結束**；**別名欄登錄的兩個拉脫維亞語別名是機構名**——「Liepājas pilsētas kultūras nama ansamblis」與「Liepājas pilsētas kultūras nama vokāli instrumentālais ansamblis」（利耶帕亞市文化宮的合奏團／聲樂器樂合奏團），另有俄語別名「Ливы」。**成員關係多達 38 筆**，是本組最龐大的一份；與本張 1986 年前後相關的幾筆：**Igo（1980 至 1985-02）、Ēriks Ķiģelis（1980 至 1985-10-05）、Aivars Brīze（1985-01 起）、Valdis Štarks（1985-04-15 至 1987-12）、Ainars Virga（1985-10 至 1990-09）、Guntars Mucenieks（1985-12 至 1992）**——**1985 年一年之內就有三筆關係結束、四筆關係開始。**",
+   "藝人目錄分頁全列 **21 個 release-group**。1970–1991 窗口內共四筆：1985《Aprīļa pilieni》（7 吋，見上）、**1986 本張**、1988《Līvi》、1988《Kurzemei - saules ceļš》。**本張是這個掛名第一張十二吋九軌的全長盤。** 2006 年另有兩筆把舊盤兩兩併在一起的再發（《Iedomu pilsēta / Aprīļa pilieni》與《Kurzemei - saules ceļš / Līvi dzīvi》）。",
+   "串流店面第三種查法（直查 collectionId）：**869564186 在 lv 店面回得出完整曲目，但那是併輯**——條目寫「Līvi —《Iedomu pilsēta un Aprīļa pilieni》、2006-01-01、**19 軌**、℗ 2006 Microphone Records」。逐軌覆核：**第 1 至 9 軌就是本卡這張的九軌，名稱與順序完全相同、長度各長 1 到 3 秒**（3:25／3:14／4:03／4:08／2:54／3:24／4:35／4:37／4:00）；第 10 軌起是另一張碟的十軌，其中〈Durvis〉〈Jānīts pīpē〉〈Slimība〉〈Aprīļa pilieni〉四軌正對應上述 1985 年那張 7 吋。**本卡的九軌確實上架了，但是包在一個 19 軌的併輯條目裡，沒有單獨條目。**"
+  ],
+  "sound": "九軌全部留下長度，而且擠得異常整齊：最長的〈Saldus saule〉4:34、最短的〈Līviskā ziņģe〉2:51，兩者只差 1 分 43 秒，其餘七軌全部落在這兩個數字之間，沒有任何一軌越過五分鐘、也沒有任何一軌短於兩分半。順序上，前三軌〈Mazais sapnītis〉3:24、〈Saulgriežu rīts〉3:12、〈Uz lietiem〉4:00 一路推到第四軌的同名曲〈Iedomu pilsēta〉4:02，接著第五軌〈Līviskā ziņģe〉2:51 是全張最短的一次收束；後半〈Rožu laukums〉3:21、〈Zušu dziesmiņa〉4:33、〈Saldus saule〉4:34 兩軌並排成全張最長的一段，末軌〈Ledus zieds〉3:57 收尾。全張約 34 分，攤在一張十二吋盤上。",
+  "keyTracks": [
+   "Iedomu pilsēta",
+   "Līviskā ziņģe",
+   "Saldus saule"
+  ],
+  "researchNotes": "**`why` 的「1976 年在利耶帕亞成立」要改寫**：實體只有 country LV 與 begin 1976-07，**沒有城市欄位**；不過**別名欄兩個機構名都含「Liepājas pilsētas kultūras nama」，這是實體欄位值、可以引**——寫法要是「別名欄登錄的是利耶帕亞市文化宮合奏團的名字」，**不得直接寫成「樂團在利耶帕亞成立」**。｜**「拉脫維亞硬搖滾的代表團」不得寫**（價值判斷）。｜**「第一張全長 LP」可以寫**，但要說清楚依據是**目錄實數＋形態欄**：1985 年那張是 7 吋 4 軌，本張是 12 吋 9 軌。｜**「壓片走 Rīga 分廠」不得當事實寫**（label-info 只有「Мелодия」）。｜**人名從嚴（裁定 241／250）**：可寫的成員名以關係欄 38 筆為限，**關係欄沒有標任何人是創團者或主唱**，只有起訖年份與 additional／original 標記。｜⚠ **掛名「Līvi」在資料庫另有一筆只填曲風、無國別無年份的同名實體（裁定 250），本張不得背書本名**——行文只提樂團，不提「Līvi 這個名字屬於誰」。｜**九軌長度齊全，可以放心寫時間。**｜串流採信 869564186（**併輯，非單獨條目**）：lv 店面 19 軌，**第 1 至 9 軌逐軌對上本卡整張、長度各 +1～3 秒**，第 10 軌起屬 1985 年那張 7 吋與其他曲目；**採信 1（限前九軌）、駁回 0**，行文不得把 19 軌當成本張的軌數。"
+ },
+ {
+  "key": "desc2:Zigmars Liepiņš & Opus|Pēc likuma",
+  "artist": "Zigmars Liepiņš & Opus",
+  "album": "Pēc likuma",
+  "hook": "第一軌的軌名是兩個標題用一個句點串起來的。",
+  "note": "重心是那個軌名。開頭止於串起來的→接第四軌〈Love Time〉是七軌裡唯一的英語軌名→接 1988 年 Мелодия С60 27423 007、12 吋七軌，這個掛名名下就只有這一張碟→最後才提成員關係的起訖年與樂團 1982 至 1989 的存續年完全重合；字數不夠時先捨這一格。⚠ 端上七軌都沒有長度，寫時間只能引店面那一版，而且要連著「那一版是八軌、開場被拆成兩軌」一起講。⚠ 軌數挑定一版，別混用。⚠ 別寫歌劇院院長那類職務，也別寫「Opus 是他組的樂團」，關係欄只寫他 1982 至 1989 在團。⚠ 別寫「最重要的作曲家」與「壓片走 Rīga 分廠」。⚠ 末軌那五個客串名字是店面端的軌級掛名，別寫成本張的樂手編制。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 2a140ff8 的欄位：title「Pēc likuma」、**artist-credit 就是合掛名「Zigmars Liepiņš & Opus」**（& 是 join phrase，兩個實體各自獨立）、first-release-date 1988、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：b5ee24a6，1988 年、country **LV**、Official、**Мелодия、catno С60 27423 007**、media **12\" Vinyl 7 軌**、Cardboard/Paper Sleeve。",
+   "**資料庫端七軌沒有一軌登錄長度**，只有軌名與順序：1〈Vārdi. Agrā rītā〉、2〈Mans laiks〉、3〈Pēc likuma〉、4〈Love Time〉、5〈Zvans no komandējuma〉、6〈Kas tā par lietu?〉、7〈Sena kalpu dziesma〉。**第 1 軌的軌名本身是兩個標題用句點串起來的**，第 4 軌〈Love Time〉是全張唯一的英語軌名。",
+   "樂團實體 6527d992：name「Opus」、type Group、country **LV**、**life-span 1982 起、1989 止（已結束）**、disambiguation「Latvian pop-rock group」。成員關係 11 筆，**Zigmars Liepiņš 登錄為 1982 至 1989 在團**（與樂團的存續年份完全重合），同期還有 Oļegs Upenieks、Imants Vanzovičs、Guntis Vecgailis、Mirdza Zīvere 四位同為 1982 至 1989、Uldis Marhilēvičs 與 Aivars Hermanis 為 1982 至 1984、Harijs Zariņš 1984 至 1989、Kaspars Dimiters 1983 至 1985。",
+   "**這個掛名在資料庫裡只有這一張碟**：藝人目錄分頁全列，Opus（6527d992）名下 **release-group 總數就是 1**，即本張。合掛名另一半的 Zigmars Liepiņš（454263e9，Person／LV／**begin 1952-10-14**）名下則有 **17 個 release-group**，1970–1991 窗口內六筆：1979《Estrādes dziesmas》(EP)、1981《Ko manā ielā meklē tu? / Spēlē vēl》、1983《Ceļojums》、1985《Путешествие》、1985《Пульс 2: Советская электронная музыка》、1985 的電影配樂《Mūzika no kinofilmas \"Vajadzīga soliste\"》，**本張 1988 是其中最晚的一筆**。他的關係欄另登錄 member of band：Santa（1969 至 1970-10）、Modo（1973 至 1982）、Studija（1974 起）、Zvaigznīte（1976 至 1978，並標 artistic director 1976 至 1977）、**Opus（1982 至 1989）**。",
+   "串流店面第三種查法（直查 collectionId）：**1616105112 在 lv 店面回得出完整曲目**，條目寫「Zigmars Liepins & Opus —《Pēc Likuma》、1988-01-01、**8 軌**、℗ 1988 Zigmars Liepiņš」。**軌數對不上的原因查出來了**：店面把資料庫的第 1 軌〈Vārdi. Agrā rītā〉拆成〈Vārdi〉3:53 與〈Agrā Rītā〉4:26 兩軌，其餘六軌一一對應（〈Mans Laiks〉4:39、〈Pēc Likuma〉5:58、〈Love Time〉3:54、〈Zvans No Komandējuma〉2:57、〈Kas Tā Par Lietu〉4:03、〈Sena Kalpu Dziesma〉6:20）。**店面版本有長度、資料庫版本沒有。**",
+   "**末軌在店面端掛了一串合唱名單**：〈Sena Kalpu Dziesma〉6:20 的軌名後面標 feat. **Uldis Marhilēvičs、Ainars Virga、Aivars Brīze、IGO、Zigfrīds Muktupāvels** 五個名字。其中 **Uldis Marhilēvičs 正是 Opus 成員關係欄裡 1982 至 1984 那一筆**；另外三個名字（Ainars Virga、Aivars Brīze、IGO）出現在本批 Līvi 卡的成員關係欄、Zigfrīds Muktupāvels 出現在本批 Zodiac 卡的成員關係欄——**五個名字全部能在資料庫的成員關係裡找到對應**。"
+  ],
+  "sound": "資料庫端這張碟七軌一軌長度都沒有，能引的只有順序與軌名：開場〈Vārdi. Agrā rītā〉的軌名本身就是兩個標題用一個句點串起來，接著〈Mans laiks〉、同名曲〈Pēc likuma〉、全張唯一的英語軌名〈Love Time〉、〈Zvans no komandējuma〉、帶問號的〈Kas tā par lietu?〉，末軌〈Sena kalpu dziesma〉。串流店面那一版把開場那一軌拆成〈Vārdi〉3:53 與〈Agrā Rītā〉4:26 兩軌，於是同一張碟一邊算七軌、一邊算八軌；在那一版裡最長的是末軌 6:20、其次是同名曲 5:58，最短的是〈Zvans No Komandējuma〉2:57。末軌在店面端還掛著五個客串名字，是全張唯一一軌帶合掛名的。",
+  "keyTracks": [
+   "Vārdi. Agrā rītā",
+   "Pēc likuma",
+   "Sena kalpu dziesma"
+  ],
+  "researchNotes": "**`why` 的「後來當過拉脫維亞國家歌劇院院長」不得寫**——職務資料庫端查不到。｜**「Opus 是他 1982 年組的樂團」要改寫**：關係欄只登錄他 **1982 至 1989 是 Opus 的成員**，**沒有任何一筆標「創團」**；可以寫的是「成員關係的起訖年份與樂團 1982–1989 的存續年份完全重合」。｜**「1980 年代最重要的流行搖滾作曲家」不得寫**（價值判斷）。｜**「這個組合唯一的 LP，也是 Opus 名下唯一一張碟」可以寫**——目錄實數：Opus 名下 release-group 總數為 1。｜**「壓片走 Rīga 分廠」不得當事實寫**（label-info 只有「Мелодия」）。｜⚠ **軌數要看清楚是哪一版**：資料庫是 **7 軌**、串流店面是 **8 軌**（開場那一軌被拆成兩軌）。**行文寫軌數必須挑定一版，不可混用。**｜⚠ **資料庫端沒有逐軌長度，別寫資料庫的時間**；若要寫時間，只能引店面那一版，而且要連著「那一版是八軌」一起講。｜**人名從嚴（裁定 241／250）**：Opus 十一位成員名有關係欄背書、Zigmars Liepiņš 的五段樂團經歷有關係欄背書；**末軌那五個客串名字是店面端的軌級合掛名**，其中 Uldis Marhilēvičs 另有 Opus 成員關係背書，其餘三位見本批 Līvi 卡、一位見本批 Zodiac 卡的關係欄——**要寫就照這個來源說清楚，不得把他們寫成本張的樂手編制**。｜串流採信 1616105112：lv 店面八軌對應資料庫七軌（第 1 軌被拆成兩軌），其餘六軌軌名逐一對上，**採信 1、駁回 0**。"
+ },
+ {
+  "key": "desc2:Credo|Melnais kliedziens",
+  "artist": "Credo",
+  "album": "Melnais kliedziens",
+  "hook": "隔年換成俄語盤名再發一次，六軌一首一首對譯過去。",
+  "note": "重心是那次對譯。開頭止於對譯過去→接兩個編號只差兩位數（24883 對 24881），發行國別從 LV 換成 SU，俄語盤名是《Крик》→接六軌都沒有登錄長度，第一與第五軌的軌名都是兩個標題用句點串起來的→最後才提別名欄登錄的是利耶帕亞火柴廠與一間企業的合奏團名；字數不夠時先捨這一格。⚠ 別寫「1974 年成立於里加」，別名欄那兩個工廠名反而指向利耶帕亞，實體只有 country LV 與 1974-10-04。⚠ 端上沒有逐軌長度，寫時間只能引 2004 年那張併輯的條目，而且那裡開場被拆成兩軌、六軌變七軌，要一起講。⚠ 別寫「與 Raimonds Pauls 長期合作」。⚠ 別寫「主力團之一」「較被記得的一張」「壓片走 Rīga 分廠」。⚠ 短掛名，別背書本名。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group fa282f81 的欄位：title「Melnais kliedziens」、artist-credit「Credo」、first-release-date 1986、primary-type Album、**secondary-types 空**。轄下 **2 筆 release，都是 Official**：f8506903，1986 年 **LV**、Мелодия、**catno С60 24883 003**、12\" Vinyl **6 軌**；77452aae，1987 年 **SU**、Мелодия、**catno С60 24881 009**、Vinyl 6 軌、**title 是俄語的《Крик》**。",
+   "**兩筆 release 的六軌是一對一的對譯，順序完全相同**：拉脫維亞語盤〈Uguns bulta. Sāpe〉→ 俄語盤〈Огненные стрелы. Боль〉、〈Melnais kliedziens〉→〈Крик〉、〈Ēna〉→〈Тень〉、〈Lūgums ugunij〉→〈Заклинаю огонь〉、〈Nakts. Pieskāriens〉→〈Ночь. Прикосновение〉、〈Epilogs〉→〈Эпилог〉。**兩筆都沒有登錄任何一軌的長度。** 兩個目錄號只差兩位數（24883 對 24881），發行國別則從 LV 換成 SU。**第 1 軌與第 5 軌的軌名都是兩個標題用句點串起來的。**",
+   "藝人實體 d2693422：name「Credo」、type Group、country **LV**、**life-span begin 1974-10-04（精確到日）、未登錄結束**、disambiguation「Latvian pop-rock」。**別名欄登錄的三個拉脫維亞語別名都是工廠與企業的合奏團名**：「Liepājas sērkociņu fabrikas vokāli-instrumentālais ansamblis」（利耶帕亞火柴廠聲樂器樂合奏團）、「Ražošanas apvienības \"Baltija\" vokāli instrumentālais ansambis」、以及「Kredo」。**成員關係多達 41 筆**，1986 年前後在團的包括 Aldis Langbaums（1975 至 1990）、Raivis Krūms（1976 至 1990）、Guntis Veits（1979 至 1990）、Armands Alksnis（1980-12-02 至 1988）、Guntars Brečs（1984-02 至 1988）、**Eduards Glotovs（1986 起至 1988-11）**。",
+   "藝人目錄分頁全列 **13 個 release-group**。1970–1991 窗口內只有三筆：1982《Vējlukturis》(primary-type **EP**)、**1986 本張**、1986《Baltais ceļš》。**本層回問確認那張同年的《Baltais ceļš》**（RG be72de50）：其唯一 release 529e0f2e 是 **1986 年 SU、Мелодия С60 24271 000、12\" Vinyl 9 軌**，且**九軌全部有長度**（〈Mūsu baltais ceļš〉5:30、〈Livonija〉4:05、〈Ko tu dungo savā kabatā?〉3:33、〈Ilūzija〉5:23 等）——**與本張同年、不同目錄號號段、軌數與長度登錄狀況也完全不同。**",
+   "串流店面第三種查法（直查 collectionId）：**958785064 在 lv 店面回得出完整曲目，但那是併輯**——條目寫「**Credo & Raimonds Pauls** —《Melnais Kliedziens Un Austrumu Motīvi》、2004-01-01、**12 軌**、℗ 2004 Microphone Records」。逐軌覆核：**第 1 至 7 軌就是本卡這張的六軌**，其中資料庫第 1 軌〈Uguns bulta. Sāpe〉在店面被拆成〈Uguns Bulta〉7:30 與〈Sāpe〉4:57 兩軌，其後〈Melnais Kliedziens〉3:49、〈Ēna〉3:08、〈Lūgums Ugunij〉7:17、〈Nakts. Pieskāriens〉8:47、〈Epilogs〉1:38 一一對應；**第 8 軌起的五軌屬另一張碟**。**這是本張唯一能取得逐軌長度的來源。**"
+  ],
+  "sound": "資料庫端兩筆盤面都沒有登錄長度，能確定的只有六軌的順序與兩套軌名：拉脫維亞語盤從〈Uguns bulta. Sāpe〉開場，接同名曲〈Melnais kliedziens〉、〈Ēna〉、〈Lūgums ugunij〉、〈Nakts. Pieskāriens〉，末軌〈Epilogs〉；隔年的俄語盤把六軌一首一首譯過去，順序一模一樣，盤名換成《Крик》。第一軌與第五軌的軌名都是兩個標題用句點串成的一段，六軌裡有兩軌是這種寫法。逐軌長度只能從 2004 年那張併輯的店面條目取得：在那裡開場被拆成 7:30 與 4:57 兩段，最長的是〈Nakts. Pieskāriens〉8:47，最短的是收尾的〈Epilogs〉1:38——一分三十八秒的尾聲，接在八分四十七秒的長段之後。",
+  "keyTracks": [
+   "Uguns bulta. Sāpe",
+   "Nakts. Pieskāriens",
+   "Epilogs"
+  ],
+  "researchNotes": "**`why` 的「與 Raimonds Pauls 長期合作」不得寫成事實**——資料庫的藝人關係欄沒有任何一筆把兩人連起來；**能引的只有兩個間接痕跡**：2004 年那張併輯在串流店面的掛名是「Credo & Raimonds Pauls」，以及該掛名目錄裡有一張 2011 年的《Raimonda Paula 75. jubilejas koncerts》(Live)。**要寫就寫這兩個痕跡本身，不得推成「長期合作」。**｜**「1974 年成立於里加」的「里加」不得寫**：實體只有 country LV 與 begin 1974-10-04，**沒有城市欄位**；反倒是**別名欄的兩個工廠合奏團名都指向利耶帕亞（Liepājas sērkociņu fabrikas…），與「里加」相牴觸**——這一項是本張最值得寫的可查證事實。｜**「1980 年代流行搖滾的主力團之一」不得寫**（價值判斷）。｜**「同年兩張 LP 中較被記得的一張」不得寫**（無來源的比較）；可以寫的是**同年確有兩張、本層已回問覆核《Baltais ceļš》的形態與目錄號**。｜**「同批錄音隔年另以俄語盤名《Крик》在全蘇發行」可以寫**（release 欄位直接支撐：1987、SU、六軌對譯）。｜**「壓片走 Rīga 分廠」不得當事實寫**（label-info 只有「Мелодия」）。｜⚠ **資料庫端兩筆盤面都沒有逐軌長度，別寫資料庫的時間**；唯一的長度來源是 2004 年併輯的店面條目，**而且那裡開場被拆成兩軌（六軌變七軌）**，引時間必須連這一點一起講。｜**人名從嚴**：成員名以關係欄 41 筆為限，**關係欄沒有標任何人是創團者或主唱**。｜⚠ **短掛名（裁定 250）**：「Credo」在資料庫另有兩個愛沙尼亞同名實體，**本張不得背書本名**。｜串流採信 958785064（**併輯，非單獨條目**）：lv 店面 12 軌，**第 1 至 7 軌逐軌對上本卡的六軌**（第 1 軌被拆成兩軌），第 8 軌起屬另一張碟；**採信 1（限前七軌）、駁回 0**，行文不得把 12 軌當成本張軌數。"
+ },
+ {
+  "key": "desc2:Sīpoli|Sīpoli",
+  "artist": "Sīpoli",
+  "album": "Sīpoli",
+  "hook": "十一軌沒有一軌超過五分鐘，最短的只有 2:09。",
+  "note": "重心是那個長度上限。開頭止於 2:09→接最長的〈Es nesatiku tevi〉4:32，最後四軌沒有一軌到三分鐘，十一軌合計約 37 分→接串流那份把前五軌標成同一組叫「Svīta Alberts」的組曲，端上十一軌是平的、沒有這個分組→最後才提 1987 年 Мелодия С60 25559 006、12 吋十一軌；字數不夠時先捨這一格。⚠ 別寫「1975 年在里加成立」，實體只有 country LV 與 1975。⚠ 別寫曲風。⚠ 「成立十二年後才出現第一筆建檔」可以寫，別寫成「等了十二年才拿到唱片」這種因果句。⚠ Mārtiņš Brauns 的成員關係到 1986 年結束，早於本張的出版年，別寫成他在這張碟上。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 6bdaf392 的欄位：title「Sīpoli」（與掛名同字）、artist-credit「Sīpoli」、first-release-date 1987、primary-type Album、**secondary-types [Compilation]**。**轄下只有 1 筆 release**：4e4ca7cd，1987 年 **LV**、Official、**Мелодия、catno С60 25559 006**、media **12\" Vinyl 11 軌**、Cardboard/Paper Sleeve。**合輯的出版年與唯一實體盤的年份是同一年，沒有落差。**",
+   "**十一軌全部有長度**：1〈Divi Alberti Rīgā〉4:23、2〈Es nesatiku tevi〉4:32、3〈Ej, skrej, steidzies〉3:57、4〈Divas sirdis〉3:06、5〈Mūžīgā pilsēta〉3:11、6〈Zirgs〉3:27、7〈Līzei〉4:10、8〈Putniņš〉2:47、**9〈Tautu meita〉2:23**、**10〈Zaķenes dziesma〉2:09（全張最短）**、11〈Kranča Dēmona ārija〉2:51。**全張約 37 分，十一軌沒有一軌超過五分鐘。**",
+   "**串流店面把前五軌標成一組組曲**：collectionId 1625495459 的第 1 至 5 軌軌名全部帶「Svīta Alberts-」前綴（〈Svīta Alberts-Divi Alberti Rīgā〉4:20、〈…-Es nesatiku Tevi〉4:31、〈…-Ej, skrej, steidzies〉3:54、〈…-Divas sirdis〉3:03、〈…-Mūžīgā pilsēta〉3:09），第 6 軌起才是獨立曲目。**資料庫端十一軌是平的，沒有這個分組**——前五軌合計約 19 分，接近全張的一半。",
+   "藝人實體 fac651c6：name「Sīpoli」、type Group、country **LV**、**life-span 1975 起、2009 止（已結束）**、別名欄只有俄語的「Сиполи」。成員關係 20 筆，**六位標為 1975 至 1978 的最早一批**（Juris Garbovskis、Tamāra Krauze-Kanberga、Ingvars Leitis、Jānis Macarovskis、Valērijs Razdobrejevs、Juris Sējāns）；**Mārtiņš Brauns 登錄為 1978 至 1986**——**在本張 1987 年出版的前一年就結束了**。1986 年另有四筆新關係起算（Tālis Gžibovskis、Raimonds Macats、Vīgants Murelis、Normunds Šnē，皆至 1988）。",
+   "**藝人目錄分頁全列只有 3 個 release-group，而且沒有一筆是「純專輯」**：本張 1987《Sīpoli》(secondary-types [Compilation])、2010-12-09《Kamēr tu šo spēli spēlē》([Live])、2011-11-10《Agrāk un tagad...》([Compilation])。**這個掛名存續 34 年（1975–2009），資料庫端留下的三筆全部是合輯或現場輯，1970–1991 窗口內只有本張一筆。**"
+  ],
+  "sound": "十一軌全部留下長度，而且沒有一軌超過五分鐘：最長的〈Es nesatiku tevi〉4:32、最短的〈Zaķenes dziesma〉2:09，全張約 37 分。前五軌〈Divi Alberti Rīgā〉4:23、〈Es nesatiku tevi〉4:32、〈Ej, skrej, steidzies〉3:57、〈Divas sirdis〉3:06、〈Mūžīgā pilsēta〉3:11 在串流店面被標成同一組叫「Svīta Alberts」的組曲，五軌合計約 19 分，接近全張的一半；資料庫端則沒有這個分組，十一軌一路排下去。第六軌〈Zirgs〉3:27 之後全張越走越短，〈Putniņš〉2:47、〈Tautu meita〉2:23、〈Zaķenes dziesma〉2:09 三軌連著壓在三分鐘以內，末軌〈Kranča Dēmona ārija〉2:51 收尾——最後四軌沒有一軌到三分鐘。",
+  "keyTracks": [
+   "Divi Alberti Rīgā",
+   "Zaķenes dziesma",
+   "Kranča Dēmona ārija"
+  ],
+  "researchNotes": "**`why` 的「1975 年在里加成立」的「里加」不得寫**：實體只有 country LV 與 begin 1975。｜**「走民謠搖滾一路」不得寫**（曲風欄位資料庫端沒有）。｜**「演了十二年才拿到唯一一張 LP」要改口徑**：可查證的是**存續 1975 至 2009、名下只有三個 release-group、窗口內只有 1987 這一筆**；「十二年」是從 1975 到 1987 自行相減，可以寫成「成立十二年後才出現第一筆建檔」，**但不得寫成「等了十二年才拿到唱片」這種帶因果的說法**。｜**§5.6 舉證覆核（裁定 257）**：`exceptionEvidenceUrls` 兩個網址**都站得住**——第一個是本 RG（secondary-types [Compilation]、1987、С60 25559 006），第二個 lv 店面條目直查 collectionId 回得出十一軌完整曲目、逐軌與資料庫對上（差 0～3 秒），**是本卡這一張，不是通用類別頁**。**舉證還可以再補一條更硬的**：藝人目錄三筆全部是 Compilation 或 Live，**這個掛名在資料庫裡根本沒有「非合輯」的形態**。｜**人名從嚴（裁定 241／250）**：成員名以關係欄 20 筆為限。**Mārtiņš Brauns 的成員關係是 1978 至 1986，早於本張 1987 年的出版年**——**不得寫成「他在這張碟上」**，只能寫關係欄的年份本身。｜**十一軌長度齊全，可以放心寫時間。**｜串流採信 1625495459：lv 店面十一軌逐軌對上、長度差 0～3 秒，**惟前五軌帶「Svīta Alberts-」前綴、資料庫端無此分組**；掛名在店面寫成無變音的「Sipoli」、盤名保留變音。**採信 1、駁回 0。**"
+ },
+ {
+  "key": "desc2:Imants Kalniņš|4. simfonija",
+  "artist": "Imants Kalniņš",
+  "album": "4. simfonija",
+  "hook": "四個樂章名就是四個速度術語，三次壓片都沒有登錄長度。",
+  "note": "重心是那四個名字。開頭止於登錄長度→接四軌是〈Allegretto〉〈Andante tranquillo〉〈Grave molto〉〈Moderato rubato〉→接差別只在編號與國別：1974 年 SU 的 С-04503-4、1975 年 LV 在編號前多了「33」、1978 年再壓回原號→最後才提名下有三個標題一樣的獨立條目，本張的說明欄寫著「1974 version」；字數不夠時先捨這一格。⚠ 別寫時間，三筆都沒有逐軌長度，2009 年那筆條目的時間屬於另一個錄音。⚠ 別寫作品完成年、風格斷語與「體制邊緣」「中心人物」。⚠ 別寫任何演奏者、指揮或樂團名，那三筆沒有登錄演出者。⚠ 別寫他與 Menuets 的關係，關係欄沒有這一筆。⚠ 這張沒有試聽來源。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 9672db05 的欄位：title「4. simfonija」、artist-credit「Imants Kalniņš」、first-release-date 1974、primary-type Album、**secondary-types 空**，**disambiguation 欄直接寫著「1974 version」**——資料庫自己用這一欄把它與同名的另外兩個 release-group 分開。轄下 **3 筆 release，全部 Official**：f845f967（1974／SU／Мелодия **С-04503-4**）、9fd9452e（1975／**LV**／Мелодия **33С-04503-4**）、3e4d3be7（1978／SU／Мелодия С-04503-4）。",
+   "三筆 release 的內容完全一致：**都是 12\" Vinyl、都是 4 軌、都是 Cardboard/Paper Sleeve、三筆都沒有登錄任何一軌的長度**。四軌的軌名是四個速度術語：1〈Allegretto〉、2〈Andante tranquillo〉、3〈Grave molto〉、4〈Moderato rubato〉。**1975 年那筆的目錄號在原編號前面多了「33」（33С-04503-4），另兩筆是 С-04503-4**；發行國別則是 1974 SU、1975 LV、1978 SU。",
+   "藝人實體 c0c0027c：name「Imants Kalniņš」、type **Person**、country LV、**begin 1941-05-26**、無 disambiguation；別名欄登錄 I. Kalniņš／I.Kalniņš／Im. Kalniņš／Im.Kalniņš 四種縮寫寫法。關係欄：member of band **2xBBM（1969-08 至 1970-09）** 與 **Turaidas Roze（標 original，1984 至 1988）**、parent → Rēzija Kalniņa 與 Marts Kristiāns Kalniņš、sibling → Viktors Kalniņš。**關係欄沒有任何一筆把他連到樂團 Menuets**，儘管本批另一張卡的 release-group artist-credit 是「Imants Kalniņš / Menuets」。",
+   "藝人目錄分頁全列 **30 個 release-group**，**其中標題完全是「4. simfonija」的就有三個**：本張 1974、1998-07-04、2009-09-23，**三者是三個獨立的 release-group**。1970–1991 窗口內他名下共六筆：1974《Pūt, vējiņi!》(EP／Soundtrack)、**1974 本張**、1979《Dzeguzes balss》（本批以 Menuets 掛名另收一卡）、1981《5. simfonija》、1981《Oratorija · Rīta cēliens ·》、1982《Oratorija Dzejnieks un nāra》、1985《Kora dziesmas》。**1967 年的《Oktobra oratorija》早於窗口。**",
+   "串流店面第三種查法（直查 collectionId）：以掛名兩種寫法在 lv／lt／ee／ru 查藝人目錄，**回得出的相關條目裡最接近的是 389592790**——條目寫「**Liepāja Symphony Orchestra** —《Imants Kalniņš 4 Symhony (Volume One)》、2009-10-01、4 軌、℗ 2009 **UPE TT**」。逐軌覆核：四軌〈Allegertto〉14:53、〈Andante Tranquillo〉8:51、**〈Grave Molto. Allegro Festivamente〉9:11**、〈Moderato Rubato〉16:02——**樂章名對得上，但掛名是樂團不是作曲家、年份是 2009、第三軌的標題還多了一截**，對應的是資料庫裡 2009 年那個獨立的同名 release-group。**不是本卡的 1974 年版本，駁回。**"
+  ],
+  "sound": "這張碟在資料庫裡只留下四個樂章名與三次壓片的編號，四軌沒有一軌有長度可引：〈Allegretto〉、〈Andante tranquillo〉、〈Grave molto〉、〈Moderato rubato〉——四個速度術語一路排下去，就是全部的曲目資料。三筆實體盤的形態一模一樣：十二吋、四軌、紙套；差別只在目錄號與國別， 1974 年那筆是 С-04503-4／SU， 1975 年那筆在編號前多了「33」、國別記成 LV， 1978 年再壓又回到 С-04503-4／SU。要聽見長度得繞到三十五年後：同一首曲子 2009 年由一支交響樂團重錄的版本在串流店面上留下四個樂章的時間，最長的末樂章十六分零二秒——但那是另一筆錄音、另一個條目，不是這張碟。",
+  "keyTracks": [
+   "Allegretto",
+   "Grave molto",
+   "Moderato rubato"
+  ],
+  "researchNotes": "**`why` 的「1972 年的第四號交響曲」不得寫**——作品完成年資料庫端查不到。｜**「把披頭四式的旋律語彙寫進交響編制」不得寫**（無來源的風格斷言）。｜**「當年在拉脫維亞被視為體制邊緣的作品」不得寫**（無來源，且是價值判斷）。｜**「拉脫維亞非官方音樂的中心人物」不得寫**（價值判斷）。｜**「本批 Menuets《Dzeguzes balss》全部出自他手」不得寫**——**關係欄沒有把他連到 Menuets**，能引的只有那張 RG 的 artist-credit 字串是「Imants Kalniņš / Menuets」，以及本張與那張同時列在他名下的 30 個 RG 裡。｜**可以寫的**：生年 1941-05-26、Person／LV、四種縮寫別名、兩段樂團成員關係（2xBBM 1969-08 至 1970-09、Turaidas Roze 1984 至 1988 標 original）、**目錄裡有三個同名的獨立 RG（1974／1998／2009）**、**disambiguation 欄「1974 version」**、三筆壓片的目錄號差異。｜**人名從嚴（裁定 241／250）**：除掛名本人外，只有關係欄那幾個親屬名有背書，**本張不得寫任何演奏者、指揮或樂團名**——1974 年那三筆 release 沒有登錄任何演出者。｜⚠ **三筆 release 都沒有逐軌長度，別寫時間**；2009 年那筆店面條目的時間屬於另一個錄音，**不得挪來當本張的長度**。｜串流駁回 389592790：掛名是交響樂團、年份 2009、廠牌 UPE TT、第三軌標題多一截，對應的是資料庫 2009 年那個獨立 RG；**採信 0、駁回 1**。"
+ },
+ {
+  "key": "desc2:Jumprava|Pilsēta",
+  "artist": "Jumprava",
+  "album": "Pilsēta",
+  "hook": "同名曲 7:12 是全張最長，七軌裡有四軌超過五分鐘。",
+  "note": "重心是那一軌。開頭止於超過五分鐘→接〈Pilsēta〉之外，〈Vēl jāgaida〉5:35、〈Šeit lejā〉5:50、〈Vēlreiz〉5:08 也都過五分→接 1989 年 Мелодия С60 28945 006，形態欄只寫「Vinyl」、沒有登錄尺寸→最後才提三位團員的成員關係在同一天結束：1991-12-15；字數不夠時先捨這一格。⚠ 形態欄照實寫，別補成 12 吋。⚠ 串流那份少了〈Ziemeļmeita〉整軌、同名曲短 27 秒，引店面版本要說明那是六軌的版本。⚠ 別寫「第一張 Melodiya LP」，能寫的是窗口內只有 1985 與 1989 兩筆、本張是第二筆。⚠ 別寫「里加成立」「合成器流行的代表團」「壓片走 Rīga 分廠」。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 7fe254c8 的欄位：title「Pilsēta」、artist-credit「Jumprava」、first-release-date 1989、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：3a9d09e1，1989 年 SU、Official、**Мелодия、catno С60 28945 006**、Cardboard/Paper Sleeve。⚠ **media 的 format 欄只寫「Vinyl」，沒有登錄尺寸**（不是本組其他碟常見的「12\" Vinyl」），**7 軌**。",
+   "**七軌全部有長度，而且是本組平均最長的一張**：1〈Lielais notikums〉4:42、2〈\"Cosmas\" klubā〉4:15、3〈Vēl jāgaida〉5:35、4〈Ziemeļmeita〉4:26、**5〈Pilsēta〉7:12（同名曲，全張最長）**、6〈Šeit lejā〉5:50、7〈Vēlreiz〉5:08。**七軌合計約 37 分，四軌超過五分鐘。**",
+   "藝人實體 0f8218b0：name「Jumprava」、type Group、country **LV**、**life-span begin 1984-04、未登錄結束**、別名欄只有俄語的「Юмправа」。成員關係 26 筆，其中 **Ainārs Ašmanis 與 Aigars Grāvers 皆為 1984-04 至 1991-12-15、Aigars Krēsla 為 1986-04 至 1991-12-15**——**三筆關係的結束日是同一天（1991-12-15）**，同三人另有 1997 起的第二段關係。Aigars Grauba 登錄為 1986-03 至 1989-05-04。**Ainārs Ašmanis 與 Andris Reinis 兩個名字同時出現在本批 Zodiac 那張卡的成員關係欄裡**（Ašmanis 在該團為 1979-12 至 1981）。",
+   "藝人目錄分頁全列 **18 個 release-group**，**1970–1991 窗口內只有兩筆**：1985《No tēvu zemes》與 **1989 本張**。其後 1994-12 一口氣出了四筆同系列的 Compilation（《Jumprava 1》至《Jumprava 4》），1995 與 1996 又各有一筆以年份區間命名的合輯（《'84 - '87》《'88 - '90》）——**這個掛名在資料庫裡的十八筆有八筆是 Compilation。**",
+   "串流店面第三種查法（直查 collectionId）：**1626922379 在八個店面都回得出**（lv／lt／ee／ru／de／fi／gb／us），條目寫「Jumprava —《Pilsēta》、**1989-10-01**、**6 軌**、℗ 1989 Jumprava」。**逐軌覆核抓到一個實質差異：店面版本比資料庫少一軌**——〈Ziemeļmeita〉4:26 整軌不見了，其餘六軌順序不變（〈Lielais Notikums〉4:24、〈'Cosmos' Klubā〉4:14、〈Vēl Jāgaida〉5:34、〈Pilsēta〉**6:45**、〈Šeit Lejā〉5:49、〈Vēlreiz〉5:06）。**同名曲在店面短了 27 秒，第 2 軌的曲名在資料庫寫「Cosmas」、店面寫「Cosmos」。**"
+  ],
+  "sound": "七軌全部留下長度，是一張長曲子居多的碟：開場〈Lielais notikums〉4:42 與〈\"Cosmas\" klubā〉4:15 之後，〈Vēl jāgaida〉5:35 就把尺度拉開，〈Ziemeļmeita〉4:26 稍收，接著同名曲〈Pilsēta〉一口氣走了 7:12，是全張最長的一軌；其後〈Šeit lejā〉5:50 與〈Vēlreiz〉5:08 收尾，七軌裡有四軌超過五分鐘，合計約 37 分。串流店面上架的那一版只有六軌——〈Ziemeļmeita〉整軌不在裡面，同名曲也縮到 6:45，比原盤短了 27 秒；第二軌的曲名在兩邊還差一個字母，一邊寫 Cosmas、一邊寫 Cosmos。",
+  "keyTracks": [
+   "Pilsēta",
+   "Ziemeļmeita",
+   "Vēlreiz"
+  ],
+  "researchNotes": "**`why` 的「1984 年在里加成立」的「里加」不得寫**：實體只有 country LV 與 begin 1984-04。｜**「合成器流行／新浪潮的代表團」不得寫**（曲風與代表性資料庫端都沒有）。｜**「第一張 Melodiya LP」不得寫成斷言**——1985 年的《No tēvu zemes》本層未回問其 release，**不知道它的廠牌與形態**，因此無法確認本張是不是「第一張」；可以寫的是**目錄實數：窗口內只有 1985 與 1989 兩筆，本張是第二筆**。｜**「壓片走 Rīga 分廠」不得當事實寫**（label-info 只有「Мелодия」）。｜⚠ **形態欄要照實寫**：media format 只有「Vinyl」、**沒有尺寸**，不得補寫成 12 吋。｜**人名從嚴（裁定 241／250）**：成員名以關係欄 26 筆為限；**三筆關係同日結束（1991-12-15）與 Ašmanis 跨團（見本批 Zodiac 卡）都是關係欄直接讀得到的事實，可以寫。**｜**七軌長度齊全，可以放心寫時間**；但**若引店面版本必須說明那是六軌的版本**。｜串流採信 1626922379（**八店面全命中**）：六軌逐軌對上資料庫的七軌之六，**缺〈Ziemeļmeita〉一軌、同名曲短 27 秒、第 2 軌曲名一字之差**；**採信 1（限六軌）、駁回 0**，行文不得把 6 軌當成本張軌數。"
+ },
+ {
+  "key": "desc2:Dzeltenie pastnieki|Bolderājas dzelzceļš",
+  "artist": "Dzeltenie pastnieki",
+  "album": "Bolderājas dzelzceļš",
+  "hook": "1981 年 10 月的首發是一捲盤帶，廠牌與編號欄都是空的。",
+  "note": "重心是那個載體。開頭止於都是空的→接十軌全部有長度，開場〈Zaļais garais vilciens〉7:28 最長、〈Āvū āvū baltas kājas〉2:18 最短→接 2003 年的 CD 再發才有廠牌「Ingus Baušķenieka ieraksti」、編號 IBCD 201，那個人名正是成員關係之一→最後才提末軌〈Dzeltenais viltus pastnieks〉把樂團名字改了一個字；字數不夠時先捨這一格。⚠ 廠牌欄絕不可填 Melodiya。⚠ 別寫「自製」「地下流通」「另闢通路」，能寫的只有欄位事實。⚠ 別寫「最早的新浪潮樂團之一」。⚠ 別寫「里加成立」。⚠ 五筆成員關係都沒有年份，別寫成某人在某年做了什麼。⚠ 這張沒有試聽來源。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 1b673be2 的欄位：title「Bolderājas dzelzceļš」、artist-credit「Dzeltenie pastnieki」、**first-release-date 1981-10（精確到月）**、primary-type Album、**secondary-types 空**。轄下 2 筆 release，都是 Official：**cd93ca55（1981-10／SU）與 b7d50307（2003／LV）**。",
+   "**1981-10 那筆原始發行的形態，是本組最該寫清楚的一件事**：**label-info 整欄為空（沒有廠牌、沒有目錄號、沒有條碼）**，而 **media 的 format 欄寫的是「Reel-to-reel」——盤帶**，10 軌，連 packaging 欄都是空的。**這不是唱片，是一捲盤帶。**",
+   "**十軌全部有長度，而且盤帶版與 2003 年的 CD 版分秒相同**：1〈Zaļais garais vilciens〉**7:28（全張最長）**、2〈Sliktā dziesma par Zaķu salu〉3:53、3〈Čemodāns〉5:28、4〈Lai tu aizmirstu〉4:47、5〈Lokomotīve jūras krastā〉2:42、6〈Nāc ārā no ūdens〉5:27、**7〈Āvū āvū baltas kājas〉2:18（全張最短）**、8〈Trijos naktī〉3:37、9〈Mana kafejnīca ir salauzta〉4:02、**10〈Dzeltenais viltus pastnieks〉4:38**（末軌的曲名把樂團名字改了一個字：「黃色的假郵差」）。合計約 44 分。",
+   "2003 年的 LV 再發 b7d50307 才有廠牌：**「Ingus Baušķenieka ieraksti」、catno IBCD 201**、media **CD 10 軌**。**這個廠牌名裡的人名，正是樂團成員關係欄五個名字之一**（Ingus Baušķenieks）——**二十二年後把這捲盤帶做成 CD 的，是一個以團員名字命名的廠牌。**",
+   "藝人實體 07223b8f：name **小寫 p 的「Dzeltenie pastnieki」**、type Group、country **LV**、**life-span 1981 起、1989 止（已結束）**；別名欄兩筆：「Dz. Pastnieki」(lv) 與 **「Жёлтые почтальоны」(ru)**。**成員關係只有五筆，而且五筆全都沒有起訖年份**：Ingus Baušķenieks、Roberts Gobziņš、Ilgvars Rišķis、Viesturs Slava、Zigmunds Streiķis。",
+   "藝人目錄分頁全列 **8 個 release-group，其中六筆連續落在 1981 至 1987**：1981-10 本張、1982《Man ļoti patīk jaunais vilnis》、1984《Alise》、1985《Vienmēr klusi》、1986《Depresīvā pilsēta》、1987《Naktis》；另兩筆是 2003《Kaķis》與 2017-05-22 的《Lentu Gabaliņi》(Compilation)。**樂團存續九年（1981–1989），窗口內就留下六筆。**",
+   "串流店面第三種查法（直查 collectionId）：這個掛名在 lv／lt／ee／ru 的藝人目錄裡**只有兩張碟**，**兩張都不是本卡**。1265330325《Lentu Gabalini》(2017-05-22、10 軌、℗ 2017 **Dark Entries Records**) 逐軌覆核後**只有〈Mana Kafejnica ir Salauzta〉3:55 一軌與本張重疊（1/10），而且長度比本張的 4:02 短 7 秒**；1273806575《Mēness Dejas》(1995-12-01、8 軌) 八軌與本張**沒有任何一軌重疊**。**兩筆都駁回。**"
+  ],
+  "sound": "十軌全部留下長度，開場就是全張最長的一軌：〈Zaļais garais vilciens〉7:28，接著〈Sliktā dziesma par Zaķu salu〉3:53、〈Čemodāns〉5:28、〈Lai tu aizmirstu〉4:47。中段〈Lokomotīve jūras krastā〉2:42 與第七軌〈Āvū āvū baltas kājas〉2:18 是全張僅有的兩軌短曲，後者只有兩分十八秒，是十軌裡最短的一軌；夾在中間的〈Nāc ārā no ūdens〉5:27 則是後半最長的一段。收尾〈Trijos naktī〉3:37、〈Mana kafejnīca ir salauzta〉4:02、〈Dzeltenais viltus pastnieks〉4:38，末軌的曲名把樂團名字改了一個字。全張約 44 分，十軌的長度在盤帶版與二十二年後的 CD 版之間分秒不差。",
+  "keyTracks": [
+   "Zaļais garais vilciens",
+   "Āvū āvū baltas kājas",
+   "Dzeltenais viltus pastnieks"
+  ],
+  "researchNotes": "⚠ **`label` 欄照實寫「label-info 為空、media 為 Reel-to-reel 10 軌」是對的，本層覆核屬實，label 欄絕不可填 Melodiya。**｜**`why` 的「蘇聯境內最早的新浪潮／合成器樂團之一」不得寫**（價值判斷＋無來源）。｜**「1981 年在里加成立」的「里加」不得寫**：實體只有 country LV 與 life-span 1981–1989。｜**「也就是蘇聯地下流通的 magnitizdat（自製錄音帶）」不得寫**——**資料庫只給得出「Reel-to-reel、label-info 為空」這兩個欄位值，「地下流通」「自製」是推論**；行文只能寫欄位事實：**原始發行的形態欄是盤帶、廠牌與目錄號欄都是空的**。｜**「這是本批最能直接說明『國營唱片壟斷下另闢通路』的一張」不得寫**（因果斷言）。｜**可以寫的**：1981-10 這個精確到月的日期、盤帶形態、空的 label-info、十軌與長度、2003 年 CD 再發的廠牌與編號、**廠牌名與成員關係欄名字的重合**、樂團 1981–1989、五筆無年份的成員關係、目錄八筆中六筆連續落在 1981–1987。｜**人名從嚴（裁定 241／250）**：五個成員名有關係欄背書，**但五筆都沒有起訖年份，不得寫成「某人在 1981 年做了什麼」**；廠牌名「Ingus Baušķenieka ieraksti」是 label-info 的欄位值，可以引。｜**十軌長度齊全，可以放心寫時間。**｜串流駁回 1265330325 與 1273806575：前者十軌只有一軌與本張同名且長度差 7 秒（1/10），後者八軌零重疊；**採信 0、駁回 2**。"
+ },
+ {
+  "key": "desc2:Dzeltenie pastnieki|Man ļoti patīk jaunais vilnis",
+  "artist": "Dzeltenie pastnieki",
+  "album": "Man ļoti patīk jaunais vilnis",
+  "hook": "這捲盤帶的八軌長度，二十一年後的 CD 版一秒不差地照抄。",
+  "note": "重心是那組長度。開頭止於照抄→接第四軌〈Ko labāk vēlies〉6:14 最長，末軌就是與盤名同字的〈Man ļoti patīk jaunais vilnis〉5:10，八軌合計約 36 分半→接 1982 年那筆的形態欄同樣是盤帶、廠牌與編號欄同樣是空的→最後才提 2003 年那張 CD 的編號 IBCD 202 正好接在前一張的 IBCD 201 後面；字數不夠時先捨這一格。⚠ 廠牌欄絕不可填 Melodiya。⚠ 別寫「自製盤帶」與「本身就是這條線的註腳」這類詮釋，盤名字面意思可以寫。⚠ 別寫「1981 年在里加成立」。⚠ 五筆成員關係都沒有年份。⚠ 這張沒有試聽來源。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 1cc6f732 的欄位：title「Man ļoti patīk jaunais vilnis」、artist-credit「Dzeltenie pastnieki」、first-release-date 1982、primary-type Album、**secondary-types 空**。轄下 2 筆 release，都是 Official：**8842ed0e（1982／SU）與 146c1425（2003／LV）**。",
+   "**1982 那筆原始發行與樂團前一張一樣不是唱片**：**label-info 整欄為空**（沒有廠牌、沒有目錄號、沒有條碼），**media 的 format 欄寫「Reel-to-reel」——盤帶**，8 軌，packaging 欄亦空。2003 年的 LV 再發 146c1425 才有廠牌：**「Ingus Baušķenieka ieraksti」、catno IBCD 202、條碼 4751005880055、CD 8 軌**——**編號正好接在前一張的 IBCD 201 後面。**",
+   "**八軌全部有長度，盤帶版與 2003 年 CD 版分秒相同**：1〈Kāpēc tu mani negribi?〉4:26、2〈Bezcerīgā dziesma〉4:17、3〈Ai, sūnu zaļais (koši dzeltenais)〉3:29、**4〈Ko labāk vēlies〉6:14（全張最長）**、5〈Nāc un piedod〉5:37、6〈Man vasara aiziet〉3:30、**7〈Trakais pastnieks〉3:45**、8〈Man ļoti patīk jaunais vilnis〉**5:10（同名曲收尾）**。合計約 36 分半。**第三軌的軌名自己帶著一個括號補述，第七軌的曲名又出現一次「pastnieks」（郵差）。**",
+   "藝人實體 07223b8f：name 小寫 p 的「Dzeltenie pastnieki」、Group、country LV、**life-span 1981 至 1989**、別名「Dz. Pastnieki」(lv) 與「Жёлтые почтальоны」(ru)；**成員關係五筆，五筆全部沒有起訖年份**（Ingus Baušķenieks、Roberts Gobziņš、Ilgvars Rišķis、Viesturs Slava、Zigmunds Streiķis）。",
+   "藝人目錄分頁全列 **8 個 release-group**，**本張 1982 是第二筆**，前一筆是 1981-10 的《Bolderājas dzelzceļš》，其後 1984《Alise》、1985《Vienmēr klusi》、1986《Depresīvā pilsēta》、1987《Naktis》——**1981 至 1987 連續六年、一年一筆**，另兩筆是 2003《Kaķis》與 2017《Lentu Gabaliņi》(Compilation)。",
+   "串流店面第三種查法（直查 collectionId）：這個掛名在四個店面的藝人目錄裡只有兩張碟，**兩張都不是本卡**。1265330325《Lentu Gabalini》(2017-05-22、10 軌、℗ 2017 Dark Entries Records) 與本張**只有兩個軌名重疊，而且長度都對不上**（〈Kapec tu Mani Negribi〉4:19 對本張 4:26、〈Mana Vasara Aiziet〉3:24 對本張 3:30）；1273806575《Mēness Dejas》(1995-12-01、8 軌) 同樣有這兩個軌名，但**長度是 6:23 與 6:20，比本張各長了兩到三分鐘**，顯然是另一種錄音。**兩筆都駁回。**"
+  ],
+  "sound": "八軌全部留下長度，前後各有一個長段落：開場〈Kāpēc tu mani negribi?〉4:26 與〈Bezcerīgā dziesma〉4:17 之後，第三軌〈Ai, sūnu zaļais (koši dzeltenais)〉3:29 是前半最短的一軌，軌名自己還帶著一個括號補述；第四軌〈Ko labāk vēlies〉一口氣走了 6:14，是全張最長的一軌，緊接著〈Nāc un piedod〉5:37 撐住後半的開頭。其後〈Man vasara aiziet〉3:30 與〈Trakais pastnieks〉3:45 兩軌收短，末軌是與盤名同字的〈Man ļoti patīk jaunais vilnis〉5:10。全張八軌合計約 36 分半，這八個長度在 1982 年那捲盤帶與 2003 年的 CD 版之間分秒相同。",
+  "keyTracks": [
+   "Ko labāk vēlies",
+   "Trakais pastnieks",
+   "Man ļoti patīk jaunais vilnis"
+  ],
+  "researchNotes": "⚠ **`label` 欄照實寫「label-info 為空、media 為 Reel-to-reel 8 軌」是對的，本層覆核屬實，label 欄絕不可填 Melodiya。**｜**`why` 的「在 1982 年的蘇維埃拉脫維亞公開這樣命名一張自製盤帶，本身就是這條線的註腳」不得寫**——**「自製」是推論、「註腳」是價值判斷**；可以寫的只有欄位事實：**形態欄是盤帶、廠牌與目錄號欄都是空的、盤名字面意思是「我非常喜歡新浪潮」。**｜**「1981 年在里加成立」的「里加」不得寫**（實體只有 country LV）。｜**可以寫的**：1982、SU、盤帶 8 軌、八軌長度、2003 年 CD 再發的廠牌與編號（IBCD 202，**接在前一張的 IBCD 201 之後**）、樂團 1981–1989、目錄八筆中六筆連續落在 1981–1987、**本張是目錄裡的第二筆**。｜**人名從嚴（裁定 241／250）**：五個成員名有關係欄背書但**五筆都沒有年份**，不得寫成某人在某年做了什麼；廠牌名是 label-info 欄位值，可以引。｜**八軌長度齊全，可以放心寫時間。**｜串流駁回 1265330325 與 1273806575：兩筆各有兩個軌名與本張重疊但**長度全部對不上**（後者相差兩到三分鐘），**採信 0、駁回 2**。"
+ },
+ {
+  "key": "desc2:Antis|Kažkas atsitiko",
+  "artist": "Antis",
+  "album": "Kažkas atsitiko",
+  "hook": "1986 年那筆發行連載體都沒有登錄，只知道裡面有十七軌。",
+  "note": "重心是那三個空欄位。開頭止於十七軌→接廠牌、編號與形態三欄都沒有值，十七軌卻全部有長度→接最短的〈Kada kada〉1:36、最長的〈Lietaus melodija〉6:04，八軌不到三分鐘，第十六軌的曲名〈3-10-52〉是一串數字→最後才提樂團的起訖是 1984-12-31 至 1990-11，窗口內三筆連著三年；字數不夠時先捨這一格。⚠ 廠牌欄絕不可填 Melodiya。⚠ 別寫搖滾遊行、Sąjūdis 與諷刺蘇維埃官僚那三句。⚠ 別寫「建築師」「考納斯」「成立」，關係欄只有一個名字、連年份都沒有。⚠ 有固定試聽，但上架的是 2003 年再發版、年份標 2003，第十軌在那一版是 3:37。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 4422e3c0 的欄位：title「Kažkas atsitiko」、artist-credit「Antis」、first-release-date 1986、primary-type Album、**secondary-types 空**。轄下 **3 筆 release，全部 Official**：1c228d6c（1986／SU）、c1632701（2003-01-01／XW／Digital Media、條碼 0669910231869）、4693433f（2003／LT／CD）。",
+   "**1986 那筆原始發行的兩個欄位都是空的**：**label-info 整欄為空**（無廠牌、無目錄號），**media 的 format 欄也沒有值**——**資料庫只知道它有 17 軌，不知道它是什麼載體**。2003 年那兩筆再發同樣沒有 label-info（LT 那筆的 format 是 CD、XW 那筆是 Digital Media）。**這個 release-group 底下三筆 release，沒有一筆掛得出廠牌。**",
+   "**十七軌全部有長度，是本組軌數最多的一張**：1〈Ko tu stovi?〉2:53、2〈Kada kada〉**1:36（全張最短）**、3〈Oi, netvarkoj〉3:04、4〈Alio, alio〉5:55、5〈Klasėj mane kalbina〉3:06、6〈Sveika, aš myliu〉2:08、7〈Kažkas atsitiko〉3:22、8〈Taip, taip, taip〉1:37、9〈Taksas vaksas〉3:36、10〈Laima〉3:11、11〈Neplanuoti augalai〉2:10、**12〈Lietaus melodija〉6:04（全張最長）**、13〈Halėjo kometa〉3:14、14〈Alyvos〉3:31、15〈Vyturio daina〉2:25、**16〈3-10-52〉2:45（曲名是一串數字）**、17〈Zombiai〉2:56。**十七軌合計約 53 分半，其中八軌短於三分鐘。**",
+   "藝人實體 db7bb413：name「Antis」、type Group、country **LT**、**life-span begin 1984-12-31、end 1990-11（已結束）**、disambiguation「Lithuanian rock band」、**沒有登錄任何別名**。**成員關係只有一筆：Algirdas Kaušpėdas，而且沒有起訖年份、沒有任何 attribute。**",
+   "藝人目錄分頁全列 **16 個 release-group**，**1970–1991 窗口內只有三筆，而且是連續三年**：**1986 本張**、1987《Antis》（與掛名同字）、1988《Ša!》（本批另收一卡）。其後要隔到 2003 年才有下一筆《Dovanėlė》——**資料庫登錄的樂團存續期是 1984-12-31 至 1990-11，三張碟全部落在這五年多之內。**",
+   "串流店面第三種查法（直查 collectionId）：**1760384569 在 lt 店面回得出完整曲目**，條目寫「Antis —《Kažkas atsitiko》、**2003-04-01**、17 軌、℗ 2003 **Muzikos Zona**」。逐軌覆核 **十七軌名稱、順序與長度全部對上**（差 0～1 秒，只有第 10 軌〈Laima〉店面標 3:37、資料庫的 1986 版標 3:11，與資料庫 2003 數位版的 3:37 相同）——**上架的是 2003 年那個再發版本，年份標的也是再發年，不是本卡的 1986。**"
+  ],
+  "sound": "十七軌全部留下長度，是一張以短曲堆起來的長盤：最短的〈Kada kada〉只有 1:36，〈Taip, taip, taip〉1:37 緊隨其後，全張有八軌不到三分鐘；最長的〈Lietaus melodija〉6:04 擺在第十二軌，另一個長段落〈Alio, alio〉5:55 則在第四軌——兩個超過五分半的段落一前一後把十七軌撐開。開場〈Ko tu stovi?〉2:53 這個曲名兩年後還會在同一團的下一張碟上再出現一次，第十一軌〈Neplanuoti augalai〉2:10 也是。第十六軌的曲名〈3-10-52〉是一串數字，末軌〈Zombiai〉2:56 收尾。十七軌合計約 53 分半。",
+  "keyTracks": [
+   "Kada kada",
+   "Lietaus melodija",
+   "3-10-52"
+  ],
+  "researchNotes": "⚠ **`label` 欄照實寫「label-info 為空、media 形態欄亦空」是對的，本層覆核屬實，label 欄絕不可填 Melodiya。**｜**`why` 的「由建築師 Algirdas Kaušpėdas 在考納斯成立」三個要素要拆開看**：**人名有關係欄背書（唯一一筆成員關係）**，但**「建築師」「考納斯」「成立」三項資料庫端全部查不到**——關係欄那一筆連起訖年份都沒有，**不得寫成「他創了這個團」**。｜**「搖滾遊行（Roko maršas）運動的核心團」「用荒謬劇式的舞台諷刺蘇維埃官僚」「被視為立陶宛獨立運動 Sąjūdis 的文化前奏」三句全部不得寫**（無來源＋因果斷言，這是本張最重的一組）。｜**可以寫的**：1986、SU、**三個空欄位（廠牌、編號、形態）**、十七軌與長度、樂團 country LT 與 **life-span 1984-12-31 至 1990-11**、disambiguation「Lithuanian rock band」、目錄 16 筆中窗口內連續三年三筆、**〈Ko tu stovi?〉與〈Neplanuoti augalai〉兩個曲名在 1988 年那張上再出現一次**。｜**人名從嚴（裁定 241／250）**：**全張只有 Algirdas Kaušpėdas 一個名字有背書**，其餘一律不得寫。｜**十七軌長度齊全，可以放心寫時間**（若引店面版本，第 10 軌〈Laima〉要用 3:37 那個值）。｜串流採信 1760384569：lt 店面十七軌逐軌對上、長度差 0～1 秒，**惟上架的是 2003 年再發版、年份標 2003**；**採信 1、駁回 0**。"
+ },
+ {
+  "key": "desc2:Antis|Ša!",
+  "artist": "Antis",
+  "album": "Ša!",
+  "hook": "兩年前那張碟上的兩個曲名又出現在這裡，兩次都比上次長。",
+  "note": "重心是那兩個曲名。開頭止於比上次長→接〈Ko tu stovi?〉從 2:53 變 2:55、〈Neplanuoti augalai〉從 2:10 變 2:26→接十二軌全部有長度，最長的〈Mafija〉7:03 擺在第九軌，最短的〈Duokit medalį〉2:14，合計約 46 分半→最後才提 1988 那筆的廠牌與形態欄都是空的，唯一掛得出廠牌的是 2003 年那筆數位版的「Muzikos zona」；字數不夠時先捨這一格。⚠ 廠牌欄絕不可填 Melodiya。⚠ 別寫 Sąjūdis、搖滾遊行巡演與「一個字就把自我審查說完」。⚠ 序數要寫成「窗口內第三筆」或「存續期內最後一張錄音室專輯」。⚠ 只有 Algirdas Kaušpėdas 一個名字有背書。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 013bf980 的欄位：title「Ša!」、artist-credit「Antis」、first-release-date 1988、primary-type Album、**secondary-types 空**。轄下 **3 筆 release，全部 Official**：af29018e（1988／SU）、2272e100（2003-01-01／XW／Digital Media、條碼 0669910231661）、563e0d23（2003／LT）。",
+   "**1988 那筆原始發行與樂團前一張一樣，label-info 整欄為空、media 的 format 欄也沒有值**，只知道 12 軌。**三筆 release 裡唯一掛得出廠牌的是 2003 年那筆 XW 數位版：label 寫「Muzikos zona」、無目錄號**；2003 LT 那筆的 label-info 同樣是空的、format 欄也空。",
+   "**十二軌全部有長度**：1〈Bergždžias darbas〉4:23、2〈Ko tu stovi?〉2:55、3〈Ša, inteligente〉3:37、**4〈Tremtis〉6:20**、5〈Kontrolierė〉4:09、**6〈Duokit medalį〉2:14（全張最短）**、7〈Neplanuoti augalai〉2:26、8〈Fiesta〉3:15、**9〈Mafija〉7:03（全張最長）**、10〈Salomėja, būk šlavėja!〉2:32、11〈Pokštas〉3:44、12〈Krantas〉4:16。**十二軌合計約 46 分半，兩軌超過六分鐘。**",
+   "**兩張碟之間有兩軌同名**：〈Ko tu stovi?〉在 1986 年那張是第 1 軌 2:53、在本張是第 2 軌 2:55；〈Neplanuoti augalai〉在 1986 年那張是第 11 軌 2:10、在本張是第 7 軌 2:26。**兩軌都是本張比較長，各差 2 秒與 16 秒。** 盤名〈Ša!〉本身沒有同名曲，但第 3 軌〈Ša, inteligente〉以同一個字開頭。",
+   "藝人實體 db7bb413：Group、country LT、**life-span 1984-12-31 至 1990-11**、disambiguation「Lithuanian rock band」、**無別名**、**成員關係只有 Algirdas Kaušpėdas 一筆且無年份**。藝人目錄分頁全列 16 個 release-group，窗口內連續三年三筆（1986、1987《Antis》、**1988 本張**）；**本張是資料庫登錄的存續期內最後一張錄音室專輯**，下一筆要等到 2003 年。",
+   "串流店面第三種查法（直查 collectionId）：**1760384937 在 lt 店面回得出完整曲目**，條目寫「Antis —《Ša!》、**2003-04-01**、12 軌、℗ 2003 **Muzikos Zona**」——**版權行的廠牌名與資料庫 2003 XW 那筆 release 的 label 欄（Muzikos zona）對得上**。逐軌覆核十二軌名稱、順序與長度**全部對上**（差 0～1 秒）。"
+  ],
+  "sound": "十二軌全部留下長度，長短拉得比前一張開：最短的〈Duokit medalį〉2:14 與最長的〈Mafija〉7:03 之間差了將近五分鐘，而〈Mafija〉就擺在第九軌、全張後段最重的位置；另一個長段落是第四軌〈Tremtis〉6:20。開場〈Bergždžias darbas〉4:23 之後，第二軌〈Ko tu stovi?〉2:55 與第七軌〈Neplanuoti augalai〉2:26 這兩個曲名兩年前就在同一團的上一張碟上出現過，兩次都是這一版比較長。第三軌〈Ša, inteligente〉3:37 是全張唯一以盤名那個字開頭的曲名——盤名本身沒有同名曲。末段〈Salomėja, būk šlavėja!〉2:32、〈Pokštas〉3:44、〈Krantas〉4:16 收尾，十二軌合計約 46 分半。",
+  "keyTracks": [
+   "Tremtis",
+   "Mafija",
+   "Ša, inteligente"
+  ],
+  "researchNotes": "⚠ **`label` 欄照實寫「label-info 為空、media 形態欄亦空」是對的，本層覆核屬實，label 欄絕不可填 Melodiya。**｜**`why` 的「出在 1988 年——立陶宛改革運動 Sąjūdis 成立的那一年，也是搖滾遊行巡演規模最大的一年」不得寫**（兩項都無來源）。｜**「一個字就把當年的自我審查說完」不得寫**（詮釋）。｜**「Antis 的第二張」要小心**：目錄實數是**窗口內第三筆**（1986、1987《Antis》、1988 本張），若要說序數，**得說「1988 這張是資料庫登錄的存續期內最後一張錄音室專輯」**。｜**可以寫的**：1988、SU、三個空欄位、十二軌與長度、**2003 年 XW 那筆的廠牌「Muzikos zona」是本 RG 唯一掛得出廠牌的一筆**、樂團 life-span 1984-12-31 至 1990-11、**兩個曲名與 1986 年那張重複且各長 2 秒與 16 秒**。｜**人名從嚴（裁定 241／250）**：**全張只有 Algirdas Kaušpėdas 一個名字有背書**（且關係欄無年份、無 attribute）。｜**十二軌長度齊全，可以放心寫時間。**｜串流採信 1760384937：lt 店面十二軌逐軌對上、長度差 0～1 秒，版權行廠牌與資料庫 2003 XW 那筆的 label 欄一致；**採信 1、駁回 0**。"
+ },
+ {
+  "key": "desc2:Foje|Geltoni krantai",
+  "artist": "Foje",
+  "album": "Geltoni krantai",
+  "hook": "首發的載體欄寫的是卡帶，包裝欄寫的是卡帶盒。",
+  "note": "重心是那個載體。開頭止於卡帶盒→接廠牌、編號與條碼三欄全空，九軌卻全部有長度→接第五軌〈Laužo šviesa〉8:42 最長，三軌超過七分鐘，只有開場〈Paskutinė žiema〉4:02 短於四分半，合計約 55 分→最後才提第六軌〈Žodžiai į tylą〉的曲名，一年後成了同一團下一張碟的盤名；字數不夠時先捨這一格。⚠ 廠牌欄絕不可填 Melodiya。⚠ 別寫「維爾紐斯」與創團身分，兩筆成員關係都沒有年份。⚠ 別寫「最重要的搖滾團」「地下音樂當年的主要通路」。⚠ 那個同名的曲名是專輯軌，別寫成先行單曲。⚠ 這張沒有試聽來源。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 805420f8 的欄位：title「Geltoni krantai」、artist-credit「Foje」、first-release-date 1989、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：ea6a487c，1989 年 SU、Official、**label-info 整欄為空**（無廠牌、無目錄號、無條碼）。**沒有再發。**",
+   "**這張碟的載體欄位有值，而且不是黑膠**：media 的 format 寫 **Cassette（卡帶）**、packaging 寫 **Cassette Case**、9 軌。**在本組二十一張裡，這是唯一一張形態欄明寫卡帶的碟**（另兩張明寫盤帶的是本批 Dzeltenie pastnieki 的兩張）。",
+   "**九軌全部有長度，而且整張長得不尋常**：1〈Paskutinė žiema〉4:02、2〈Geltoni krantai〉4:59、3〈Kita diena〉6:07、4〈Vaikystės stogas〉4:08、**5〈Laužo šviesa〉8:42（全張最長）**、6〈Žodžiai į tylą〉6:14、7〈Tu nieko dar nepažinai〉7:34、8〈Žvakių šviesoje〉5:36、9〈Aš gimsiu rytoj〉7:50。**九軌合計約 55 分，其中三軌超過七分鐘、只有一軌短於四分半。**",
+   "藝人實體 617f85a4：name「Foje」、type Group、country **LT**、**life-span 1983 起、1997 止（已結束）**、disambiguation「Lithuanian rock band」、無別名。**成員關係只有兩筆，而且都沒有起訖年份**：**Andrius Mamontovas 與 Algis Kriščiūnas**。",
+   "藝人目錄分頁全列 **20 個 release-group**，**本張 1989 是整份目錄裡年份最早的一筆**；1970–1991 窗口內共三筆：**1989 本張**、1990《Žodžiai į tylą》（本批另收一卡）、1991《Gali skambėti keistai》。1994 年一年之內就有五筆（含三筆 Live 與一筆 Remix），**其中一筆現場輯《Tikras garsas》與本批 Bix 卡那個掛名 1994 年的碟同名**。",
+   "串流店面第三種查法（直查 collectionId）：這個掛名在四個店面的藝人目錄裡**只有一張碟**——1300398167《Foje》(2017-10-25、**62 軌**、℗ 2017 Mono Stereo Įrašai)。逐軌覆核：本張九軌裡有**八個軌名出現在那 62 軌裡**（缺〈Aš gimsiu rytoj〉），**但長度幾乎沒有一個對得上**（〈Geltoni Krantai〉5:03 對本張 4:59、〈Kita Diena〉5:07 對 6:07、〈Vaikystės Stogas〉2:42 對 4:08、〈Žvakių Šviesoje〉5:39 對 5:36、〈Tu Nieko Dar Nepažinai〉7:42 對 7:34、〈Žodžiai Į Tylą〉5:38 對 6:14、〈Paskutinė Žiema〉4:05 對 4:02），**只有〈Laužo Šviesa〉8:42 分秒相同**；該輯還夾雜多軌標「Live'93」。**那是一張跨全部生涯的六十二軌合輯，不是本卡的條目，駁回。**"
+  ],
+  "sound": "九軌全部留下長度，是一張由長曲構成的碟：開場〈Paskutinė žiema〉4:02 是全張唯一一軌短於四分半的曲子，接著〈Geltoni krantai〉4:59、〈Kita diena〉6:07、〈Vaikystės stogas〉4:08，第五軌〈Laužo šviesa〉一口氣走了 8:42，是全張最長的一軌。後半沒有回到短曲：〈Žodžiai į tylą〉6:14、〈Tu nieko dar nepažinai〉7:34、〈Žvakių šviesoje〉5:36，末軌〈Aš gimsiu rytoj〉7:50 再撐起一個接近八分鐘的段落。九軌合計約 55 分，三軌超過七分鐘。第六軌那個曲名，一年後成了同一團下一張碟的盤名；那一版短了 39 秒。",
+  "keyTracks": [
+   "Laužo šviesa",
+   "Žodžiai į tylą",
+   "Aš gimsiu rytoj"
+  ],
+  "researchNotes": "⚠ **`label` 欄照實寫「label-info 為空、media 為 Cassette 9 軌」是對的，本層覆核屬實，label 欄絕不可填 Melodiya。**｜**`why` 的「1983 年由 Andrius Mamontovas 在維爾紐斯成立」三項要拆**：**人名有關係欄背書（兩筆成員關係之一）**，但**「維爾紐斯」與「成立」資料庫端查不到**——關係欄那兩筆連年份都沒有，**不得寫成誰創了這個團**。｜**「立陶宛 1980–90 年代最重要的搖滾團」不得寫**（價值判斷）。｜**「立陶宛地下音樂當年的主要通路」不得寫**（無來源的通路斷言）；**可以寫的只有欄位事實：這張碟的形態欄是卡帶、廠牌與編號欄是空的**。｜**「首發」可以寫**——藝人目錄實數：20 筆 RG 裡本張年份最早。｜**可以寫的**：1989、SU、卡帶、Cassette Case、九軌與長度、樂團 country LT 與 life-span 1983–1997、兩筆無年份的成員關係、窗口內三筆、**〈Žodžiai į tylą〉這個曲名與次年盤名同字**。｜**人名從嚴（裁定 241／250）**：只有 Andrius Mamontovas 與 Algis Kriščiūnas 兩個名字有背書。｜**九軌長度齊全，可以放心寫時間。**｜串流駁回 1300398167：62 軌的跨生涯合輯，本張九軌有八個軌名在其中但**長度只有一軌分秒相同**，且該輯多軌標 Live'93；**採信 0、駁回 1**。"
+ },
+ {
+  "key": "desc2:Foje|Žodžiai į tylą",
+  "artist": "Foje",
+  "album": "Žodžiai į tylą",
+  "hook": "四個曲名與前一張重複，三首變短，只有一首兩次都是 4:02。",
+  "note": "重心是那四個重複的曲名。開頭止於 4:02→接〈Žodžiai į tylą〉從 6:14 縮到 5:35、〈Kita diena〉從 6:07 縮到 5:02、〈Geltoni krantai〉從 4:59 縮到 4:50→接九軌全部落在 3:03 到 5:35 之間，沒有一軌超過六分鐘，合計約 41 分半→最後才提這筆發行的國別欄是 LT、前一張記的是 SU，廠牌與形態欄都是空的；字數不夠時先捨這一格。⚠ 那個國別差異只能寫成欄位差異，別寫成「因為獨立所以改了」，也別提任何日期或事件。⚠ 廠牌欄絕不可填 Melodiya。⚠ 盤名字面意思可以寫，別延伸成沉默或審查的解讀。⚠ 別寫「維爾紐斯」與創團身分。⚠ 這張沒有試聽來源。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 05f23c5c 的欄位：title「Žodžiai į tylą」、artist-credit「Foje」、first-release-date 1990、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：5e0a0c72，1990 年、**country 是 LT**、Official、**label-info 整欄為空**、**media 的 format 欄也沒有值**，9 軌。**與前一張最直接的差別在 country 欄：前一張記 SU、本張記 LT。**",
+   "**九軌全部有長度**：1〈Žodžiai į tylą〉5:35、2〈Krantas〉5:10、3〈Kita diena〉5:02、4〈Mes visi〉5:06、5〈Aš čia esu〉4:22、6〈Geltoni krantai〉4:50、7〈Paskutinė žiema〉4:02、8〈Tu krenti〉3:03、9〈Tamsoje〉4:26。**九軌合計約 41 分半，全部落在 3:03 到 5:35 之間——沒有一軌超過六分鐘，與前一張三軌破七分鐘的形狀完全相反。**",
+   "**九軌裡有四軌的軌名與前一張重複，而且長度全部不同**：〈Žodžiai į tylą〉前一張 6:14、本張 5:35（短 39 秒）；〈Kita diena〉前一張 6:07、本張 5:02（短 65 秒）；〈Geltoni krantai〉前一張 4:59、本張 4:50（短 9 秒）；**〈Paskutinė žiema〉兩張都是 4:02，是唯一分秒相同的一軌**。**前一張的盤名〈Geltoni krantai〉成了本張的第六軌，本張的盤名則是前一張的第六軌。**",
+   "藝人實體 617f85a4：Group、country **LT**、**life-span 1983 至 1997**、disambiguation「Lithuanian rock band」、無別名、**成員關係兩筆且皆無年份**（Andrius Mamontovas、Algis Kriščiūnas）。藝人目錄分頁全列 **20 個 release-group**，窗口內三筆連續三年（1989、**1990 本張**、1991《Gali skambėti keistai》）；1994 一年內五筆、其後多為 Compilation。",
+   "串流店面第三種查法（直查 collectionId）：這個掛名在四個店面的藝人目錄裡**只有 1300398167《Foje》(2017-10-25、62 軌、℗ 2017 Mono Stereo Įrašai) 一張**。逐軌覆核：本張**九個軌名全部出現在那 62 軌裡**，**但沒有一軌長度對得上**（〈Žodžiai Į Tylą〉5:38 對 5:35、〈Krantas〉5:12 對 5:10、〈Kita Diena〉5:07 對 5:02、〈Mes Visi〉5:10 對 5:06、〈Geltoni Krantai〉5:03 對 4:50、〈Paskutinė Žiema〉4:05 對 4:02、〈Tu Krenti〉3:06 對 3:03），而且**〈Aš čia Esu〉與〈Tamsoje〉在該輯裡都標成「Live'93」的現場版**（4:56 與 4:18）。**是合輯不是本卡，駁回。**"
+  ],
+  "sound": "九軌全部留下長度，整張壓得比前作短而齊：最長的是開場的同名曲〈Žodžiai į tylą〉5:35，最短的是第八軌〈Tu krenti〉3:03，其餘七軌全部落在四分到五分十之間——沒有任何一軌越過六分鐘，而前一張有三軌超過七分鐘。前半〈Krantas〉5:10、〈Kita diena〉5:02、〈Mes visi〉5:06 三軌長度幾乎一樣，像同一個尺度連著走三次；後半〈Aš čia esu〉4:22、〈Geltoni krantai〉4:50、〈Paskutinė žiema〉4:02 逐步收短，末軌〈Tamsoje〉4:26 收尾。九軌裡有四個曲名在前一張出現過，三首在這裡都變短了，只有〈Paskutinė žiema〉兩次都是 4:02。全張合計約 41 分半。",
+  "keyTracks": [
+   "Žodžiai į tylą",
+   "Tu krenti",
+   "Tamsoje"
+  ],
+  "researchNotes": "⚠ **`label` 欄照實寫「label-info 為空、media 形態欄亦空」是對的，label 欄絕不可填 Melodiya。**｜**`why` 的「出在 1990 年三月立陶宛宣布恢復獨立之後」不得寫**——**日期與事件資料庫端查不到**；**可以寫的只有欄位事實：前一張 release 的 country 欄是 SU、本張是 LT**，**而且必須寫成欄位差異，不得寫成「因為獨立所以改了」**（因果斷言）。｜**「是本批唯一一組能從 release country 直接讀出政治轉折的前後作」不得寫**（詮釋）。｜**「1983 年由 Andrius Mamontovas 在維爾紐斯成立」的城市與創團身分不得寫**（見同掛名另一卡）。｜**盤名字面意思可以寫**（「送進寂靜的話」），但**不得延伸成任何關於沉默或審查的解讀**。｜**可以寫的**：1990、LT、空的廠牌與形態欄、九軌與長度、**四個軌名與前一張重複且三短一同**、樂團 life-span 1983–1997、目錄 20 筆中窗口內三筆連續三年。｜**人名從嚴（裁定 241／250）**：只有兩個成員名有背書。｜**九軌長度齊全，可以放心寫時間。**｜串流駁回 1300398167：62 軌合輯，本張九個軌名全在其中但**沒有一軌長度對得上**，其中兩軌還是標 Live'93 的現場版；**採信 0、駁回 1**。"
+ },
+ {
+  "key": "desc2:Bix|Akli kariai",
+  "artist": "Bix",
+  "album": "Akli kariai",
+  "hook": "開場那一軌的軌名一半是英語，括號裡一半是立陶宛語。",
+  "note": "重心是那個軌名。開頭止於立陶宛語→接廠牌、編號與形態三欄都是空的，十軌只留下曲名與順序→接時間只能從店面那一版取，第三軌的同名曲 6:02 最長、末軌 2:58 最短，十軌合計約 42 分→最後才提那一版把十個曲名全寫成立陶宛語與英語兩截並排，連盤名也是；字數不夠時先捨這一格。⚠ 端上十軌沒有長度，寫時間必須說明是店面那一版，並帶到雙語軌名這件事。⚠ 廠牌欄絕不可填 Melodiya。⚠ 策展稿寫的那位主導者在端上完全找不到，成員關係只有 Aurimas Povilaitis 一筆，別寫別的名字。⚠ 別寫「考納斯」與「另類搖滾的代表團」，說明欄原文「Lithuanian cult band」可以引。⚠ 1991 這個年份可以寫，別寫成蘇聯解體的因果。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 5504d57c 的欄位：title「Akli kariai」、artist-credit「Bix」、first-release-date 1991、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：814abf0b，1991 年、country **LT**、Official、**label-info 整欄為空**（無廠牌、無目錄號）、**media 的 format 欄也沒有值**，10 軌，**而且十軌沒有一軌登錄長度**。",
+   "資料庫端的十軌只有軌名與順序：1〈Sex Revolution (Neverk mama)〉、2〈Tarp Europos ir Honkongo〉、3〈Akli kariai〉、4〈Kiaulė〉、5〈Musė〉、6〈Fara〉、7〈Kas iš to〉、8〈Vynas ir laikas〉、9〈Himalajai〉、10〈Kuo blogiau, tuo geriau〉。**第 1 軌的軌名一半是英語、括號裡一半是立陶宛語。**",
+   "**第三種查法找回一張策展層判「沒有」的碟**：直查 collectionId **1584131144**，lt 店面回得出完整曲目——條目寫「Bix —《Akli kariai = Blind Soldiers》、**1991-11-04**、10 軌、℗ **1991 Bix / 2021 M.P.3 = BUYMUSIC.LT**」。**十軌名稱與順序與資料庫完全一致**，而且**店面端的每一軌都是「立陶宛語 = 英語」雙語軌名**：1〈Sex Revolution (Neverk, mama) = Sex Revolution (Don't Cry Mother)〉3:49、2〈Tarp Europos ir Honkongo = Between Europe and Hong Kong〉4:21、**3〈Akli kariai = Blind Soldiers〉6:02（全張最長）**、4〈Kiaulė = The Pig〉3:02、5〈Musė = The Fly〉4:33、6〈Fara = Fara〉3:51、7〈Kas iš to = So What of That〉3:52、8〈Vynas ir laikas = Wine and Time〉4:53、9〈Himalajai = Himalaya〉4:43、**10〈Kuo blogiau, tuo geriau = The Worse the Better〉2:58（全張最短）**。**這是本張唯一的逐軌長度來源，合計約 42 分。**",
+   "藝人實體 759f60eb：name「Bix」、type Group、country **LT**、**life-span begin 1987、未登錄結束**、**disambiguation「Lithuanian cult band」**、無別名。**成員關係只有一筆：Aurimas Povilaitis，沒有起訖年份、沒有 attribute。**",
+   "藝人目錄分頁全列 **12 個 release-group**，**本張 1991 是年份最早的一筆，也是 1970–1991 窗口內唯一的一筆**；其後 1992《La bomba》、1993《Doozgle》、**1994《Tikras garsas》(secondary-types [Live])**、1995《7》、1996《Žiurkių miestas》、1997《Wor's》，再往後是兩筆 Compilation（2008《XX》、2017《XXX》）與兩筆 2022 年的現場輯（《Vilnius '21》《Berlin '89》）。**1994 那張現場輯的盤名，與本批 Foje 卡那個掛名 1994 年的現場輯同名——兩個掛名各有一張《Tikras garsas》。**"
+  ],
+  "sound": "資料庫端這張碟十軌一個長度也沒有，只能從串流店面那一版取時間——在那裡十軌全部寫成「立陶宛語 = 英語」兩截並排，連盤名都是。第三軌的同名曲〈Akli kariai = Blind Soldiers〉6:02 是全張最長的一軌，也是唯一超過五分鐘的一段；開場〈Sex Revolution (Neverk, mama)〉3:49 與〈Tarp Europos ir Honkongo〉4:21 之後就是它。後半〈Kiaulė〉3:02、〈Musė〉4:33、〈Fara〉3:51、〈Kas iš to〉3:52 四軌壓在三到四分半之間，〈Vynas ir laikas〉4:53 與〈Himalajai〉4:43 撐起收尾前的兩段，末軌〈Kuo blogiau, tuo geriau〉2:58 是全張最短的一軌。十軌合計約 42 分。第一軌的軌名在資料庫端就已經是一半英語一半立陶宛語。",
+  "keyTracks": [
+   "Akli kariai",
+   "Kiaulė",
+   "Kuo blogiau, tuo geriau"
+  ],
+  "researchNotes": "⚠ **`why` 的「Saulius Urbonavičius-Samas 主導」不得寫，而且與資料庫相反**：這個掛名的**成員關係只有一筆，名字是 Aurimas Povilaitis**，`why` 說的那個名字**在藝人實體上完全查不到**。**這是本張最重的一處。**｜**`label` 欄照實寫「label-info 為空、media 形態欄亦空」是對的，label 欄絕不可填 Melodiya。**｜**「1987 年在考納斯成立」的「考納斯」不得寫**（實體只有 country LT 與 begin 1987）。｜**「立陶宛另類搖滾的代表團」不得寫**（價值判斷）；**但 disambiguation 欄的原文「Lithuanian cult band」是欄位值，可以引。**｜**「首發」可以寫**（目錄實數：12 筆裡本張年份最早，也是窗口內唯一一筆）。｜**「出在 1991 年——蘇聯解體」不得寫成因果**；年份本身可以寫。｜⚠ **資料庫端十軌沒有長度**：**要寫時間只能引店面那一版，而且要說明那一版的軌名是雙語形式。**｜**人名從嚴（裁定 241／250）**：只有 Aurimas Povilaitis 一個名字有背書。｜**串流採信 1584131144（第三種查法找回）**：策展層記「八店面搜出 0 筆、兩種查法未命中」，**直查 collectionId 後在 lt 店面命中，十軌名稱與順序逐軌對上**，並補回全張唯一的逐軌長度；**採信 1、駁回 0**。⚠ 另注意 apple-candidates 清單上以年份撈到的六筆 Bix Beiderbecke 爵士條目**全部無關**，已逐筆排除。"
+ },
+ {
+  "key": "desc2:Katedra|Mors Ultima Ratio",
+  "artist": "Katedra",
+  "album": "Mors Ultima Ratio",
+  "hook": "第一軌與最後一軌同名，末軌只多了一個 II。",
+  "note": "重心是那個框架。開頭止於一個 II→接中間七軌是〈Šmėklos〉〈Requiem mamai〉〈Dvasių šėlsmas〉〈Fėja〉〈St. Vitus〉〈Pilnatis〉〈Budelis〉，除了拉丁文與那位聖人的名字之外全是立陶宛語→接 1990 年 Мелодия С60 30149 009、12 吋九軌，底下就一筆→最後才提成員關係欄完全空白，名下只有四個發行品、本張最早；字數不夠時先捨這一格。⚠ 別寫時間，九軌都沒有長度。⚠ 一個人名都別寫。⚠ 別寫「第一支重金屬團」與「維爾紐斯成立」。⚠ 別寫「唯一有 Melodiya 目錄號的立陶宛碟」，同批 Argo 那兩筆也掛同一家。⚠ 別寫「國營唱片替極端金屬團出 LP」這類詮釋。⚠ 這張沒有試聽來源。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group 152a84fa 的欄位：title「Mors Ultima Ratio」、artist-credit「Katedra」、first-release-date 1990、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：66694a26，1990 年 SU、Official、**Мелодия、catno С60 30149 009**、media **12\" Vinyl 9 軌**、packaging Cardboard/Paper Sleeve。**沒有再發。**",
+   "**九軌沒有一軌登錄長度**，只有軌名與順序：1〈Mors Ultima Ratio〉、2〈Šmėklos〉、3〈Requiem mamai〉、4〈Dvasių šėlsmas〉、5〈Fėja〉、**6〈St. Vitus〉**、7〈Pilnatis〉、8〈Budelis〉、**9〈Mors Ultima Ratio II〉**。**第一軌與第九軌用同一個拉丁文標題把整張碟框起來，末軌多一個 II**；第三軌〈Requiem mamai〉與第六軌〈St. Vitus〉是全張僅有的兩個非立陶宛語標題來源（拉丁文與聖人名）。",
+   "藝人實體 108440cb：name「Katedra」、type Group、country **LT**、**life-span begin 1986、未登錄結束**、**沒有 disambiguation、沒有別名、沒有任何成員關係**。實體上掛的是四個外部連結（其中兩個是官方網站，網域分別是 katedrainrock.com 與 katedra.tinkle.lt）。**這是本組唯一一個成員關係欄完全空白的掛名。**",
+   "藝人目錄分頁全列 **只有 4 個 release-group**：**1990 本張（年份最早、也是 1970–1991 窗口內唯一一筆）**、1992《Natus in Articulo Mortis》、1993《Death Comes》、2006《III》。**四張碟裡有三張的盤名是拉丁文或英文。**",
+   "**本層另行覆核一句策展層的斷言，結果是不成立**：本組八張立陶宛卡裡，**掛得出 Мелодия 廠牌與目錄號的不只本張**——Argo《Discophonia》(1981) 的兩筆 1981 SU release 同樣掛 **Мелодия、catno С 60—15173-4**。**「立陶宛這條線只有 Katedra 一張有 Melodiya 目錄號」不成立，正確說法是兩張。**",
+   "串流店面第三種查法（直查 collectionId）：以「Katedra Mors Ultima Ratio」與掛名單查在 lv／lt／ee／ru 四個店面跑搜尋與藝人目錄，**回得出的「Katedra」是波蘭的另一個同名團**（artistId 1048556842，曲風標 Prog-Rock，名下《Zapraszamy Na Łąki》2015、《Człowiek Za Dużo Myślący》2018、《We Are Not Alone》2019 三張，**盤名全是波蘭文**）；另有一筆 1839681230《Mors Ultima Ratio》是 2025 年 Lex Gallica 的三軌單曲。**兩者都與本卡無關，逐筆駁回；本張在店面查無。**"
+  ],
+  "sound": "九軌一軌長度也沒有，資料庫在這張碟上給得出的只有九個標題的順序：開場的〈Mors Ultima Ratio〉與收尾的〈Mors Ultima Ratio II〉用同一個拉丁文標題把整張框起來，末軌只多一個羅馬數字。中間七軌是〈Šmėklos〉、〈Requiem mamai〉、〈Dvasių šėlsmas〉、〈Fėja〉、〈St. Vitus〉、〈Pilnatis〉、〈Budelis〉——除了拉丁文的 Requiem 與那位聖人的名字之外全是立陶宛語。實體那一面倒是登錄得清楚：十二吋黑膠、九軌、紙套、Мелодия、目錄號 С60 30149 009、 1990 年，而且這個 release-group 底下就這麼一筆，沒有再發、沒有第二種軌序可比。",
+  "keyTracks": [
+   "Mors Ultima Ratio",
+   "St. Vitus",
+   "Mors Ultima Ratio II"
+  ],
+  "researchNotes": "**`why` 的「立陶宛第一支重金屬／死亡金屬團」不得寫**——**這個實體連 disambiguation 都沒有，曲風與序數資料庫端完全查不到**。｜**「1986 年在維爾紐斯成立」的「維爾紐斯」不得寫**（實體只有 country LT 與 begin 1986）。｜**「蘇聯國營唱片在解體前一年替一支立陶宛極端金屬團出 LP，本身就是這條線最反直覺的一筆」整句不得寫**（價值判斷＋詮釋）；可以寫的是欄位事實：**1990、SU、Мелодия、С60 30149 009、12 吋九軌**。｜⚠ **`risk` 的「這是本批立陶宛五張裡唯一一張確定有 Melodiya 廠牌與目錄號」不成立**——本層回問確認 **Argo《Discophonia》(1981) 的兩筆 SU release 也掛 Мелодия С 60—15173-4**，**正確說法是兩張**，行文不得用「唯一」。｜**可以寫的**：九個軌名與首尾同名的框架、樂團 country LT 與 begin 1986、**成員關係欄完全空白**、兩個官方網站網址存在、目錄只有四筆且本張最早。｜**人名從嚴（裁定 241／250）**：**本張一個人名都不能寫**——實體上沒有任何成員關係，release 也沒有登錄演出者。｜⚠ **九軌沒有長度來源，別寫時間。**｜串流駁回 1048556842 名下三張與 1839681230：前者是波蘭同名團（盤名全為波蘭文）、後者是 2025 年的三軌單曲；**採信 0、駁回 2（含一個同名掛名整份目錄）**。"
+ },
+ {
+  "key": "desc2:Vytautas Kernagis|Dainos teatras - Žvilgsnis nuo kalno",
+  "artist": "Vytautas Kernagis",
+  "album": "Dainos teatras - Žvilgsnis nuo kalno",
+  "hook": "盤名的前半也是一個樂團的名字，他登錄為那個團的成員。",
+  "note": "重心是那個團名。開頭止於團的成員→接那筆成員關係沒有起訖年份，關於這個團的內容形式端上一個欄位都沒有→接九軌全部有長度，最短的〈Kai sirpsta vyšnios Suvalkijoj〉2:30、最長的〈Jau Vasaris Baigias〉6:41，前四軌就把幅度走完一遍，合計約 38 分→最後才提這筆發行的廠牌欄與國別欄都是空的，形態欄記的是 CD、九軌；字數不夠時先捨這一格。⚠ 別把那個基金會名字寫成廠牌，它只出現在店面 ℗ 2018 的版權行。⚠ 別寫「創作歌手運動的開創者」與那個系列的內容形式。⚠ 除他本人（1951-05-19 至 2008-03-15）與那個團名外別寫任何人名。⚠ 「這個系列的第一張」可以寫。⚠ 有固定試聽。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group f52726e1 的欄位：title「Dainos teatras - Žvilgsnis nuo kalno」、artist-credit「Vytautas Kernagis」、**first-release-date 1985-01-01（精確到日）**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：f342866b，日期同樣是 1985-01-01、**country 欄是空的**、status Official、**label-info 整欄為空**（無廠牌、無目錄號、無條碼）、media 的 format 欄寫 **CD**、9 軌。",
+   "**九軌全部有長度**：1〈Gera žino iš anksto〉3:56、2〈Vakaras〉5:39、**3〈Kai sirpsta vyšnios Suvalkijoj〉2:30（全張最短）**、**4〈Jau Vasaris Baigias〉6:41（全張最長）**、5〈Žiūriu į grožį su ironija〉4:11、6〈Patogios, gražios…〉3:21、7〈Kyla rūkas po nakties〉2:37、**8〈Santechnikas iš Ukmergės〉4:14**、9〈Paukščiai〉5:05。**九軌合計約 38 分**；第六軌的軌名結尾是一個刪節號，第八軌的曲名帶著一個立陶宛地名。",
+   "藝人實體 a436e72b：name「Vytautas Kernagis」、type **Person**、country **LT**、**life-span 1951-05-19 至 2008-03-15（已標 ended）**、disambiguation「Lithuanian singer‐songwriter and actor」、無別名。**藝人關係只有一筆，而且正是盤名的前半**：**member of band → 「Dainos teatras」**（無起訖年份）——**「歌之劇場」在資料庫裡是一個獨立的樂團實體，他登錄為其成員**。其餘十六筆關係全是外部連結（含 IMDb、VIAF、國會圖書館與德國國家圖書館的名稱權威檔）。",
+   "藝人目錄分頁全列 **11 個 release-group**。**盤名帶「Dainos teatras」的在資料庫裡只有三筆**：**1985-01-01 本張**、1987《Dainos Teatras (Eik Savo Keliu...)》、1993-01-01《Dainos teatras - Abėcėlė》。**本張是整份目錄裡年份最早的一筆，也是 1970–1991 窗口內的兩筆之一**（另一筆是 1987 那張）。目錄裡另有一筆未填年份、secondary-types 標 Soundtrack 的《Maža išpažintis》。",
+   "串流店面第三種查法（直查 collectionId）：**1395600642 在八個店面都回得出**（lv／lt／ee／ru／de／fi／gb／us），條目寫「Vytautas Kernagis —《Dainos teatras - Žvilgsnis nuo kalno》、**1985-01-01**、9 軌、**℗ 2018 Vytauto Kernagio fondas**」。逐軌覆核 **九軌名稱、順序與長度全部對上**（差 0～3 秒）。**店面端還有兩張同系列的碟是資料庫目錄裡沒有的**：1395987016《Dainos Teatras (Povo Link...)》(1988、8 軌) 與 1395488065《Dainos teatras - Apie Medžioklę》(1989、14 軌)——**兩張都落在 1970–1991 窗口內，資料庫目錄卻查不到。**"
+  ],
+  "sound": "九軌全部留下長度，長短交替得很規律：開場〈Gera žino iš anksto〉3:56 之後是〈Vakaras〉5:39，接著突然收到全張最短的〈Kai sirpsta vyšnios Suvalkijoj〉2:30，再由〈Jau Vasaris Baigias〉6:41 撐開成全張最長的一軌——前四軌就把 2:30 到 6:41 的幅度走完一遍。後半〈Žiūriu į grožį su ironija〉4:11、〈Patogios, gražios…〉3:21（軌名結尾是一個刪節號）、〈Kyla rūkas po nakties〉2:37 一路收短，第八軌〈Santechnikas iš Ukmergės〉4:14 的曲名帶著一個立陶宛地名，末軌〈Paukščiai〉5:05 收尾。九軌合計約 38 分。串流店面上架的那一版九軌名稱順序與長度全部對得上，差不到三秒。",
+  "keyTracks": [
+   "Kai sirpsta vyšnios Suvalkijoj",
+   "Jau Vasaris Baigias",
+   "Santechnikas iš Ukmergės"
+  ],
+  "researchNotes": "⚠ **`label` 欄的「Vytauto Kernagio fondas 名下建檔」不得沿用**：本層回問確認**這筆 1985 的 release 的 label-info 是整欄空的**，那個基金會名字只出現在**串流店面的 ℗ 2018 版權行**。`label` 欄正確寫法是「label-info 為空、country 欄為空、資料庫記為 CD 9 軌；串流端的版權行是 ℗ 2018 的藝人基金會」。｜**`why` 的「立陶宛創作歌手運動的開創者」「立陶宛唯一持續多年、體制內外都容得下的另類演出形式」不得寫**（價值判斷＋無來源）。｜**「1980 年代主持的『Dainos teatras』把詩、戲劇與吟唱結合」不得寫**——**可查證的只有：資料庫裡有一個叫「Dainos teatras」的樂團實體，而他登錄為該團成員（無年份）**，內容形式資料庫端沒有欄位。｜**「這個系列的第一張」可以寫**（目錄實數：盤名帶 Dainos teatras 的三筆裡本張最早，也是整份目錄年份最早的一筆）。｜⚠ **`risk` 說同系列在資料庫與店面上還有六張，本層覆核後要修正**：**資料庫目錄裡只有三筆**（1985／1987／1993），**《Dainos Teatras (Povo Link...)》(1988) 與《Dainos teatras - Apie Medžioklę》(1989) 只在串流店面查得到、資料庫沒有**——**這兩張是下一批的現成線索。**｜**人名從嚴（裁定 241／250）**：除掛名本人（生卒 1951-05-19～2008-03-15）與那個團名之外，**本張不得寫任何其他人名**。｜**九軌長度齊全，可以放心寫時間。**｜串流採信 1395600642：八店面命中，九軌逐軌對上、差 0～3 秒；**採信 1、駁回 0**。"
+ },
+ {
+  "key": "desc2:Argo|Discophonia",
+  "artist": "Argo",
+  "album": "Discophonia",
+  "hook": "七軌沒有曲名，登錄的軌名就是 A1 到 B3 的盤面位置。",
+  "note": "重心是那七個位置名。開頭止於盤面位置→接 A 面四軌 7:55、4:30、3:28、3:41，B 面三軌 7:44、6:20、4:52，兩個近八分鐘的長段落各擺在一面的開頭→接 1981 年兩筆原壓都是 Мелодия、目錄號 С 60—15173-4、12 吋七軌→最後才提 2004 年的 CD 再發補了三軌有名字的曲子，那三軌反而沒有登錄長度；字數不夠時先捨這一格。⚠ 七軌沒有曲名，別憑空生出曲名。⚠ 說明欄原文那句可以引，但要說清楚那是說明欄的字串、不是成員關係，「考納斯」別寫。⚠ 別寫「第一支電子音樂團體」與跨團比較的價值判斷。⚠ 別寫「壓片走 Vilnius 分廠」。⚠ 目錄號中間是長破折號。⚠ 有固定試聽，但店面那一版年份標 1980、B2 短 19 秒。⚠ full",
+  "status": "full",
+  "facts": [
+   "release-group c22e443a 的欄位：title 是雙語的「Discophonia = Дискофония」、artist-credit「Argo」、first-release-date 1981、primary-type Album、**secondary-types 空**。轄下 **3 筆 release，全部 Official**：811a9998（1981／SU、**title 是純拉丁的「Discophonia」**）、a5ee373b（1981／SU、title 為雙語）、bf9250f5（2004／RU、title 為純拉丁）。",
+   "**兩筆 1981 SU 原壓的實體資料完全相同**：Мелодия、**catno「С 60—15173-4」（中間那個是長破折號，不是連字號）**、12\" Vinyl 7 軌、Cardboard/Paper Sleeve。**兩筆的差別只在 release 的 title 一個是雙語、一個是純拉丁。**",
+   "⚠ **這張碟最該記住的一件事：七軌沒有曲名**。資料庫登錄的軌名就是盤面位置本身——**〈A1〉7:55、〈A2〉4:30、〈A3〉3:28、〈A4〉3:41、〈B1〉7:44、〈B2〉6:20、〈B3〉4:52**，A 面四軌、B 面三軌，**七軌全部有長度、合計約 38 分半**。2004 年的 RU 再發（Мелодия、catno **MEL CD 60 00848**、條碼 4600317008483、CD 10 軌）沿用同樣的 A1–B3 七軌，**只有後面三軌 bonus 才有真正的曲名**：〈Prelude For Carillion〉、〈Daina〉、〈Prelude In Memory Of M. K. Čiurlionis〉——**而這三軌反而沒有登錄長度。**",
+   "藝人實體 cfd7a560：name「Argo」、type Group、country **LT**、**life-span 1979 起、1987 止（已結束）**、**disambiguation 欄的原文是「Lithuanian electronic music band formed by composer Giedrius Kuprevičius」**——**作曲家的名字寫在 disambiguation 這個欄位裡，不是成員關係**；實體上**沒有任何成員關係**，只有三個外部連結。",
+   "藝人目錄分頁全列 **只有 3 個 release-group**：**1981 本張**、1983《Свет》（全西里爾盤名）、1986《Žemė L》。**三筆全部落在 1970–1991 窗口內，也全部落在樂團 1979–1987 的存續期內——這個掛名在資料庫裡沒有任何窗口外的碟。**",
+   "串流店面第三種查法（直查 collectionId）：**1499993113 在 lt 店面回得出完整曲目**，條目寫「Argo —《Discophonia》、**1980-01-01**、7 軌、℗ **1980 Vinilo Studija**」。逐軌覆核：**七軌同樣只有 A1 到 B3 的位置名、順序一致**，長度為 8:02／4:34／3:32／3:45／7:49／**6:01**／4:59——**六軌比資料庫各長 4 到 7 秒，唯獨 B2 比資料庫的 6:20 短了 19 秒**。**年份也差一年：店面標 1980、資料庫是 1981。**"
+  ],
+  "sound": "七軌全部留下長度，卻沒有一軌留下名字——資料庫登錄的軌名就是盤面位置本身。A 面四軌從 7:55 開始，是全張最長的一軌，接著 4:30、3:28、3:41 逐級收短；翻面之後 B1 又是一個 7:44 的長段落，B2 6:20、B3 4:52 收尾。七軌合計約 38 分半，兩個接近八分鐘的長段落各自擺在一面的開頭，其餘五軌全部落在三分半到六分二十之間。二十三年後的 CD 再發把這七軌原封不動搬過去，另補三軌有名字的 bonus——〈Prelude For Carillion〉、〈Daina〉、〈Prelude In Memory Of M. K. Čiurlionis〉——但那三軌一個長度也沒登錄。串流店面上架的那一版同樣是 A1 到 B3 七個位置名，六軌各長四到七秒，只有 B2 短了 19 秒。",
+  "keyTracks": [
+   "A1",
+   "B1",
+   "B2"
+  ],
+  "researchNotes": "**`why` 的「1979 年由作曲家 Giedrius Kuprevičius 在考納斯成立」要拆開**：**人名與「作曲家」「electronic music band」這幾項有欄位背書——它們是 disambiguation 欄的原文字串**（「Lithuanian electronic music band formed by composer Giedrius Kuprevičius」），**可以引，但要說清楚那是 disambiguation 欄位值，不是成員關係**（該實體**沒有任何成員關係**）；**「考納斯」不得寫**（實體只有 country LT 與 life-span 1979–1987）。｜**「立陶宛第一支電子音樂團體」不得寫**（序數無來源）。｜**「比拉脫維亞 Zodiac 的《Disco Alliance》晚一年——兩張合起來就是蘇聯波羅的海電子音樂的起點」不得寫**（後半是價值判斷；年份先後可以寫，但要各自標明來源）。｜**「壓片走 Vilnius 分廠」不得當事實寫**（label-info 只有「Мелодия」）。｜**目錄號可以寫**，注意**「С 60—15173-4」裡是長破折號**。｜⚠ **本張最重要的可寫事實是「七軌沒有曲名」**——`why`／`risk` 完全沒提到這一點，**寫作層若照策展稿行文會憑空生出曲名**。｜**人名從嚴（裁定 241／250）**：除 disambiguation 欄那個名字外不得寫任何人名；**2004 年 bonus 軌名裡的 M. K. Čiurlionis 是曲名的一部分，只能當曲名引。**｜**七軌長度齊全（A1–B3），可以寫時間；2004 年那三軌 bonus 沒有長度，引它們時別寫時間。**｜串流採信 1499993113：lt 店面七軌位置名與順序逐軌對上，六軌 +4～7 秒、**B2 短 19 秒**、**年份標 1980 比資料庫早一年**；**採信 1、駁回 0**。"
+ }
+]
