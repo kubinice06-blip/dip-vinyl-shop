@@ -5605,3 +5605,29 @@ Ruja《Algus》取 1971、Mess 取 1975、Pērkons 取 1981，都站得住——
 **hook 與寫作層當時已經照研究層的注記寫對了**（desc 開頭就是「三片裝八十六軌裡，只有六軌標著 1979 那部片」），
 **錯的只有卡單欄位**——這是「下游寫對了、上游欄位還錯著」的形狀，
 表示 `year` 欄沒有任何一道檢查會拿它跟正文比對。
+
+## 第 262 條（2026-09-08，主線把裁定 259 回頭套到 c-122 與 c-125）：**七張複驗，六張站得住、一張錯**
+
+裁定 259 是在 c-124 抓到的（`release-group` 端點不回 `label-info`，
+25 張「MB 未填廠牌」是問錯端點）。主線把同一個問題回頭問了 c-122 與 c-125：
+
+- **c-122 的 11 筆不受影響**——那批寫的是「廠牌欄 `[no label]`」，
+  **`[no label]` 是 `label-info` 陣列裡真的有一筆、只是廠牌名為空**，
+  只有 `release` 端點回得出來，代表那批本來就問對了端點。
+- **c-125 有 7 筆寫「廠牌欄空」**，逐筆拿 `release?release-group=…&inc=media+labels` 複驗：
+  **六筆站得住**（Quarteto 1111 同名、Sérgio Godinho《Os Sobreviventes》、
+  Fausto《Madrugada dos Trapeiros》、Brigada Víctor Jara《Eito fora》、
+  Jorge Palma《Qualquer Coisa Pá Música》、Salada de Frutas《Sem Açúcar》——
+  這六張都只有一筆 release，`label-info` 陣列**確實是空的**）。
+- **錯的是 José Cid《10000 Anos Depois Entre Vénus e Marte》**：
+  它有 **8 筆 release**，1978 年那張 12 吋是 **Orfeu FPAT 6001**，
+  另有 Movieplay、Art Sublime、M2U 三家再發。
+
+**而且這張的 desc 還踩到第二個坑**：正文寫「**1978 年 8 月 15 日由 Orfeu 發行**」，
+但 **1978-08-15 那一筆是 `[no label]` 的 Digital Media**，
+**Orfeu 那筆的日期只有「1978」、沒有月日**——
+**日期取自一筆、廠牌取自另一筆，兩個事實被接成一句。**
+已改成「1978 年由 Orfeu 以 FPAT 6001 發行」（194 字，仍在 180–240 內）。
+
+**做法**：一張碟有多筆 release 時，**日期、廠牌、catno、載體要出自同一筆**；
+要跨筆就得在正文裡講清楚是兩個版本。這道檢查目前沒有工具會做。
