@@ -59,7 +59,7 @@ PIECES = {                         # 家具：挖掉，並且切成前景圖層
     'gear':    (748, 1098, 1008, 1238),  # 唱盤＋擴大機
     'spkR':    (1016, 1052, 1156, 1238), # 右喇叭
     'crate':   (352, 1392, 792, 1970),
-    'box1':    (1112, 1560, 1462, 1970),
+    'box1':    (1085, 1572, 1498, 1970),
     'box2':    (1440, 1560, 1792, 1970),
 }
 HUMAN = (205, 1340, 378, 1592)     # 參考圖自帶的小人：挖掉，不留（前台用自己的像素人）
@@ -76,6 +76,9 @@ FILL = {'counter': [(1258, 1600, 800, 1210)]}    # 檯身：挖寶櫃原本擋�
 # 既然是水平的，直接從乾淨的一段（左喇叭與唱盤之間 x 650–748）橫向鏡射抄過去就好。
 TILE_FILL = {'counter': (1156, 1320, 462, 1162, 650, 748)}  # (y0,y1, 洞x0,洞x1, 來源x0,x1)
 # 個別調門檻：器材是牆上的深色方塊，門檻低會把牆的細微色差也算進來
+# 參考圖裡兩個紙箱的**底部本來就被原圖下緣切掉**（畫到 y=1970 就沒了），
+# 所以不管挪到哪都會露出一個平口。這裡把箱身往下接長、再壓一條底緣與接地陰影。
+EXTEND = {'box1': 96}                            # piece: 往下補幾列
 CUT_OPTS = {'gear': dict(wall_thr=150, min_blob=1200),
             'spkL': dict(wall_thr=190, min_blob=1200),
             'spkR': dict(wall_thr=190, min_blob=1200)}
@@ -90,7 +93,7 @@ LAYOUT = {
     'spkR':    (1069, 1052, 1.0, False),   # 右喇叭往右挪 53px，貼到檯面右端
     'rbins':   None,                       # 右邊那組貼右牆，不動
     'crate':   (1020, 1540, 0.60, True),   # 原本擋在左前方 → 縮小挪到中右前，讓出走道
-    'box1':    (1392, 1516, 0.86, True),   # 往右挪；不能太下面，會被畫面下緣切掉底部
+    'box1':    (1396, 1470, 0.82, True),   # 往右挪；箱底是補出來的，要留空間別再被下緣切到
     'box2':    'drop',                     # 兩個紙箱疊在一起太擠，收掉一個
 }
 
@@ -173,7 +176,16 @@ def cut(ref, empty, box, name=None, wall_thr=105, floor_thr=40, min_blob=3000):
             src = np.array([mirror(x0 + i, sx0, sx1) for i in idx]) - x0
             px[row, idx] = px[row, np.clip(src, 0, px.shape[1] - 1)]
             m[row, idx] = True
-    return Image.fromarray(np.dstack([px, (m * 255).astype(np.uint8)]), 'RGBA')
+    a = (m * 255).astype(np.uint8)
+    k = EXTEND.get(name)
+    if k:                                         # 箱底被原圖切掉 → 往下接長並收一條底緣
+        tail_px, tail_a = px[-k:][::-1], a[-k:][::-1]        # 上下翻轉接下去，紋理才不會是拉絲
+        px = np.vstack([px, tail_px]); a = np.vstack([a, tail_a])
+        for i in range(10):                       # 最後 10 列壓暗＝箱子的下緣
+            f = 0.86 - i * 0.055
+            px[-10 + i] = np.clip(px[-10 + i] * max(f, 0.30), 0, 255).astype(np.uint8)
+        px[-2:] = np.clip(px[-2:] * 0.55, 0, 255).astype(np.uint8)
+    return Image.fromarray(np.dstack([px, a]), 'RGBA')
 
 
 def soft_shadow(img, x, y, w, h):
