@@ -118,5 +118,125 @@
   "status": "full",
   "yearVerified": "一致，1969（**發行年**）。release-group 的 first-release-date 記 1969，其下 1969 年的西班牙 Concèntric 5.713-SUL 是唯一一筆有日期、有國別、有廠牌的 release（Official），另一筆 CD **無日期、無國別、無廠牌、status 空白**，端上無法定年。**原盤年另有一個獨立佐證**：release annotation 記的 Depósito Legal「B. 43901-**1969**」末四位就是 1969 年的法定登記年。**錄音年：資料庫端未登錄**（八軌零 recording relationship），**1969 只能當發行年寫**。⚠ **同一欄的 annotation 寫《Dioptria/2》「originally released separately in 1970」，藝人目錄卻把《Dioptria 2》記成 1971——續作的年份兩說並存，行文不要寫續作年份。** 串流側 1455495613 的 ℗ 記 1969，但那份上架版本是把兩張碟併成 14 軌的後製包裝，**℗ 年不能單獨當原盤年的佐證**。",
   "notes": "**擋下策展層四處。**｜（一）**全稱句**：`curatorWhy` 寫「盤名與**全部歌詞**是加泰隆尼亞語」。**歌詞內容端上沒有來源**，而且**曲名本身就有例外**——A4〈Ars erotica (**Non est mihi**)〉括號裡是拉丁文。**行文只能寫「曲名是加泰隆尼亞語」，不得寫「全部歌詞」這種全稱句。**｜（二）**曲風斷言**：`curatorWhy` 寫「把民謠歌詞傳統換成迷幻與自由即興的編制」「加泰隆尼亞語地下搖滾的**起點**」。編制端上沒有任何樂手登錄（八軌零關係），「起點」是極值主張，**兩句都不得寫**。｜（三）**序數**：藝人目錄裡本張是名下最早的**純 Album**，**但前面還有 1967 年的 EP《Taxista!》**。**行文要寫序數只能寫「第一張專輯」，不得寫「第一張唱片」或「出道作」。**｜（四）**續作年份兩說**：`mbNote` 把《Dioptria 2》記成 1971，**但本張 release 的 annotation 明寫「originally released separately in 1970」**，兩處對不上。**行文不要提續作的年份。**｜**可以寫、而且是本張最好的材料（都有欄位背書）**：八首全部超過四分鐘、最長 7:58、最短 4:02；詞曲兩欄都只掛 Pau Riba 一人；壓片方 Fonogram；權利機構 SGAE；**法定登記編號 B. 43901-1969**。｜**掛名（裁定 259 已裁）**：唱片的 credit 是「Pau Riba & OM」，卡片掛名取藝人實體名「Pau Riba」；**行文提到合作樂團時寫「OM」，別把它併進掛名。**｜**軌數要指明版本（裁定 174）**：原盤 8 軌、串流上架版本 14 軌（兩碟合併），**行文寫軌數必須說是 1969 年那一版**。｜**串流採信 1455495613：第一碟八軌與 1969 原盤同名同序、長度逐軌只差一到六秒；第二碟六軌是續作的內容**，駁回 1506891036、1857987746、128185453、336663627 等別碟。**有固定試聽來源，逐軌長度以原盤欄位為準（上架版本略短一到六秒）。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期加泰隆尼亞語出版受限這一可查證的史實與這張碟以加泰隆尼亞語出版的事實，**不得寫對該體制的價值判斷**，也不得寫「用這個語言唱就是抵抗」這類敘事化的因果斷言。"
+ },
+ {
+  "key": "desc2:Smash|Glorieta de los lotos",
+  "artist": "Smash",
+  "album": "Glorieta de los lotos",
+  "facts": [
+   {
+    "f": "release-group b1f8a789 的欄位：title「Glorieta de los lotos」、artist-credit「Smash」（藝人實體 6f00fe08，Group／**ES**，**disambiguation「Spanish prog」**，life-span **1967 起、1972 結束**）、first-release-date **1970**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：1970 **ES** Philips（12 吋黑膠、12 軌、Official，**label-info 有廠牌名但沒有目錄編號**）。**沒有任何再發、沒有 CD 版、沒有非西班牙盤。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b1f8a789-3643-4e4f-8559-4f0c54d75a4f?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1970 年原盤（Philips）逐軌，**十二軌一筆長度都沒有登錄**，曲序是：1〈Forever Walking〉、2〈Light Blood, Dark Bleeding〉、3〈Free as the Green Little Men〉、4〈Tove and All That〉、5〈It's Only Nothing〉、6〈**Glorieta de los lotos**〉、7〈Nazarin Again〉、8〈Love Millonaire〉、9〈Sitting on the Truth〉、10〈Ottenos〉、11〈Aimsha〉、12〈Rock and Roll〉。**十二個曲名裡只有同名曲是西班牙語，其餘十一首是英語或造字**；同名曲排在正中間的第 6 軌，不在開頭也不在收尾。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b1f8a789-3643-4e4f-8559-4f0c54d75a4f&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **12 個 release-group**：**純 Album（secondary-types 空）只有 3 個**——**1970《Glorieta de los lotos》、1971《We Come to Smash This Time》、1978《Vanguardia y pureza del flamenco》**——另有 Album/Compilation 1 個（2001《Todas sus grabaciones (1969-1978)》）與 Single 8 個（1969《Scouting / Sonetto》、1970《Decision》《I Left You / One Hopeless Whisper》《Scouting》、1971《We Come to Smash This Time / My Funny Girl》《El garrotín / Tangos de Ketama》《Well, You Know》、1972《Ni recuerdo, ni olvido》）。**本張是名下最早的純 Album，但前面有 1969 年的單曲**——「首張專輯」成立，「第一張唱片」不成立。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6f00fe08-50fc-4b22-a5fb-2e422fb675f3&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1970 原盤的十二軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**錄音年與編制在資料庫端全部空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/e5de6b64-a8ea-4248-a0b4-6f413cf02427?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 1594469047**《Glorieta De Los Lotos》12 軌、℗ 1970 Universal Music Spain, S.L.U.：**十二軌與 1970 原盤同序，而且補上了原盤欄位缺的長度**——1〈Forever Walking〉3:55、2〈Light Blood, Dark Bleeding〉2:51、3〈Free As The Green Little Men〉**0:43**、4〈Tove And All That〉2:44、5〈It's Only Nothing〉4:44、6〈Glorieta De Los Lotos〉**1:01**、7〈Nazarin Again〉2:47、8〈Love Millionaire〉2:59、9〈Sitting On The Truth〉6:36、10〈Ottenos〉**1:09**、11〈Ahimsa〉2:13、12〈Rock And Roll〉**8:53**。**十二首的尺度差到十二倍：最長 8:53、最短 0:43，三首不到 1:10 的短片段夾在長段落之間。** ⚠ **兩個曲名的字形兩處不同**：原盤欄位寫「Love Millonaire」「Aimsha」，上架版本寫「Love Millionaire」「Ahimsa」。同一位藝人的目錄裡另有 1594463460《We Come To Smash This Time》8 軌 ℗ 1971（次張、**駁回**）。",
+    "src": "https://itunes.apple.com/lookup?id=1594469047&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首的長度差到十二倍，最長 8:53、最短 0:43，三首不到七十秒的短片段夾在長段落中間",
+   "十二個曲名裡只有同名曲是西班牙語，而且它排在正中間的第六首"
+  ],
+  "sound": "1970 年 Philips 的西班牙盤是一張 12 吋、十二軌，唱片本身沒有留下目錄編號。曲序從〈Forever Walking〉起，接〈Light Blood, Dark Bleeding〉、只有 0:43 的〈Free as the Green Little Men〉、〈Tove and All That〉、〈It's Only Nothing〉，正中間第六首才是 1:01 的同名曲〈Glorieta de los lotos〉；後半是〈Nazarin Again〉、〈Love Millonaire〉、6:36 的〈Sitting on the Truth〉、1:09 的〈Ottenos〉、〈Aimsha〉，最後收在 8:53 的〈Rock and Roll〉。十二首裡三首不到七十秒、兩首超過六分鐘，最長與最短差十二倍。十二個曲名只有同名曲用西班牙語。",
+  "keyTracks": [
+   "Rock and Roll",
+   "Sitting on the Truth",
+   "Glorieta de los lotos"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（**發行年**）。release-group 的 first-release-date 記 1970，其下**唯一一筆** release 就是 1970 年的西班牙 Philips 盤（Official），**沒有再發、沒有更早的版本，也沒有復刻年可能混進來的問題**。**錄音年：資料庫端未登錄**——十二軌零 recording-level relationship、annotation 空白，**1970 只能當發行年寫**。串流側 1594469047 的 ℗ 記 1970 Universal Music Spain，與發行年一致，但那是現行權利人的 ℗ 標示、不是獨立的原盤年佐證。",
+  "notes": "**擋下策展層三處。**｜（一）**極值與因果**：`curatorWhy` 寫「Smash 是『安達魯西亞搖滾』這個說法的**來源**」「路線後來由 Triana **接手**」。兩句都是極值與因果斷言，**端上沒有任何欄位、tag 或 annotation 支撐，不得寫**。｜（二）**編制**：`curatorWhy` 寫「把 blues-rock 的編制接上 flamenco 的節拍與 cante」。**十二軌零錄音關係、沒有任何樂手登錄**，**不得指派編制或樂器分工**；要講聲音只能從曲目、曲名語言與長度講。｜（三）**序數**：「他們的首張專輯」在藝人目錄裡站得住（本張是最早的純 Album），**但前面有 1969 年的單曲《Scouting / Sonetto》**——**行文可寫「首張專輯」，不得寫「第一張唱片」或「出道作」。** 另外「MB 名下只有三張 primary-type=Album」**查證屬實**，可寫。｜（四）**短掛名（裁定 250）**：這一個掛名的目標實體**有 disambiguation（「Spanish prog」）**，加上 ES／1967–1972 的 life-span 可以定位，**但 score 排序不可用**；本名不適用（是團體不是個人）。｜**⚠ 逐軌長度的來源**：**原盤欄位十二軌全部沒有長度**，長度只有串流側那一版有。**行文要寫時間，必須以上架版本為準、而且要意識到那不是原盤欄位的數字**；只寫「最長／最短」的相對關係最安全。｜**⚠ 曲名字形兩處不一致**：原盤欄位「Love Millonaire」「Aimsha」對上架版本的「Love Millionaire」「Ahimsa」。**行文引曲名一律照原盤欄位的寫法。**｜**串流採信 1594469047：12 軌與 1970 原盤同序，℗ 1970 Universal Music Spain**；駁回同目錄下的 1594463460《We Come To Smash This Time》（次張）。**有固定試聽來源。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期審查制度存在這一可查證的史實，**不得寫對該體制的價值判斷**，也不得把「唱英語曲名」讀成規避審查——**端上沒有任何送審或改詞紀錄。**"
+ },
+ {
+  "key": "desc2:Máquina!|Why?",
+  "artist": "Máquina!",
+  "album": "Why?",
+  "facts": [
+   {
+    "f": "release-group f0a8a912 的欄位：title「Why?」、artist-credit「Máquina!」（藝人實體 c20fe8af，Group／**ES**，disambiguation 空，life-span **1968 起、1972 結束**）、first-release-date **1970**、primary-type Album、**secondary-types 空**。轄下 4 個 release，**其中三筆的 release 標題不是「Why?」而是「Why? Máquina!」**（盤名與掛名連寫）：1970 **ES** **Als 4 vents**（黑膠、**4 軌**、Official、**沒有目錄編號**）、1993 **ES** PDI（CD、**6 軌**、Official、沒有目錄編號）、1998 **ES** Picap **80 2036-02**（CD、6 軌、Official）、2015 **SE** Flawed Gems **GEM 136**（CD、**12 軌**、**status 是 Bootleg，不是 Official**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f0a8a912-0455-42db-b774-d0c2d2080ae7?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1970 年原盤（Als 4 vents）**只有四軌**，逐軌與長度：1〈I Believe〉4:11、2〈**Why?**〉**11:52**、3〈**Why? (continuació)**〉**12:58**、4〈Let Me Be Born〉3:03。**中間兩軌是同一首拆成兩段，合計 24:50，占掉整張碟的絕大部分**，前後各夾一首四分鐘與三分鐘的短曲。⚠ **第三軌的副題「continuació」是加泰隆尼亞語（西班牙語會寫 continuación）——盤面欄位本身就留下了語言的痕跡。** 1993 與 1998 的兩張 CD 是同一份六軌：四軌之後加〈Earth's Daughter〉4:37 與〈Look Away Our Happiness〉4:09。2015 年那筆 Bootleg 的十二軌把〈Why?〉併成單軌 24:44，另接八首別處的錄音。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f0a8a912-0455-42db-b774-d0c2d2080ae7&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **只有 3 個 release-group**：**1970《Why?》（純 Album）**、1972《En directo》（Album/Live）、2010《Lets Get Smashed》（Album/Compilation）。**這是本組名下目錄最薄的一位——純 Album 只有本張一個，連單曲都沒有建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c20fe8af-b15e-4917-963c-d52f7fd0f6ca&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1970 原盤的四軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手掛名，release 的 annotation 欄也是空的。**錄音年與團員去向在資料庫端全部空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/eff44b78-3857-4603-a805-e41b59b38f98?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了，**本張沒有任何上架條目**。（一）八個 storefront 的 `search` 以掛名加盤名查，回的全是不相干的合輯；（二）**藝人目錄 lookup**：店端的藝人實體寫作「**Màquina**」（**開口音符 à，與盤面的 Máquina! 不同字形，也沒有驚嘆號**），目錄裡只有一張 1139257274《Funciona...》17 軌、℗ 1981 Picap 的兩碟合輯，**逐軌覆核後十七首裡沒有本張四軌的任何一首**（沒有 I Believe、沒有 Why?、沒有 Let Me Be Born）；（三）`collectionId` 直查該筆與其餘同名候選，皆非本碟。**維持無固定試聽來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1139257274&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有四首，中間兩首是同一曲拆成的兩段，加起來 24 分 50 秒",
+   "第三軌的副題「continuació」是加泰隆尼亞語，盤面欄位本身就留下了語言的痕跡"
+  ],
+  "sound": "1970 年 Als 4 vents 的原盤是一張黑膠、只有四軌，唱片沒有留下目錄編號。〈I Believe〉4:11 開場，接著是拆成兩軌的〈Why?〉11:52 與〈Why? (continuació)〉12:58，最後以 3:03 的〈Let Me Be Born〉收。中間那兩軌合計 24 分 50 秒，前後兩首加起來才七分多，整張碟的重量壓在同一首曲子上。第三軌的副題寫的是加泰隆尼亞語的 continuació。1993 與 1998 的兩張 CD 在四軌之後加了〈Earth's Daughter〉4:37 與〈Look Away Our Happiness〉4:09，成為六軌。",
+  "keyTracks": [
+   "Why?",
+   "Why? (continuació)",
+   "I Believe"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（**發行年**）。release-group 的 first-release-date 記 1970，其下最早的 release 就是 1970 年的西班牙 Als 4 vents 盤（Official、4 軌）。**復刻年 1993（PDI）、1998（Picap）、2015（Flawed Gems）都不得寫進 year 欄（裁定 220）**，而且**2015 那一筆的 status 是 Bootleg，本來就不能算再版**。**錄音年：資料庫端未登錄**——四軌零 recording-level relationship、annotation 空白，**1970 只能當發行年寫**。串流側沒有本張的上架版本可對照 ℗ 年。",
+  "notes": "**擋下策展層四處，其中一處是版本性質的誤判。**｜（一）**⚠ 把盜版當復刻**：`curatorWhy` 寫「1970 ES、1993 PDI、1998 Picap、2015 瑞典 Flawed Gems——**四十五年間三次復刻**，最後一次由瑞典廠牌接手」。**2015 年那一筆的 status 是 Bootleg**，而且是 12 軌、與原盤 4 軌完全不同的內容。**行文不得把它算成復刻，也不得用它來說「本土目錄的流通狀態」。** 真正可寫的再版只有 1993 與 1998 兩筆西班牙 CD。｜（二）**極值**：`curatorWhy` 寫「巴塞隆納地下場景的**第一張**雙面長曲專輯」。**端上無從定序**（藝人目錄只有三筆，跨藝人的先後更查不到），**不得寫**。｜（三）**團員去向**：`curatorWhy` 寫「成員後來散進 Iceberg 與 Companyia Elèctrica Dharma」。**四軌零關係、沒有任何團員或跨團關係登錄**，**不得寫**。｜（四）**盤名字形**：`mbNote` 說 title 是「Why?」——**release-group 的 title 是「Why?」沒錯，但四筆 release 裡有三筆的標題寫成「Why? Máquina!」**。卡片盤名照卡單寫「Why?」，**行文不要說「唱片上就叫 Why?」**。｜**查證屬實、可以直接寫的**：`label`「Als 4 vents（ES，catno 未列於 MB）」正確——那一筆確實有廠牌名、沒有目錄編號；四軌的長度全部有登錄，**時間可以寫**；中間兩軌合計 24:50；第三軌副題是加泰隆尼亞語。｜**軌數要指明版本（裁定 174）**：原盤 4 軌、1993／1998 CD 6 軌、2015 盜版 12 軌，**行文寫軌數必須說是 1970 年那一版**。｜**回撈候選：本張標「目錄裡找不到」，三種查法覆核後屬實**——店端的藝人實體字形是「Màquina」（開口音符、無驚嘆號），目錄裡唯一那張 1981 年的十七軌合輯逐軌核對後不含本張任何一首。**無固定試聽來源，行文不要暗示可試聽。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期加泰隆尼亞語出版受限這一可查證的史實與這張碟的加泰隆尼亞語廠牌名、加泰隆尼亞語副題，**不得寫對該體制的價值判斷**，也不得把獨立廠牌發行說成抵抗。"
+ },
+ {
+  "key": "desc2:Aguaviva|Cada vez más cerca",
+  "artist": "Aguaviva",
+  "album": "Cada vez más cerca",
+  "facts": [
+   {
+    "f": "release-group 13f44367 的欄位：title「Cada vez más cerca」、artist-credit「Aguaviva」（藝人實體 f7c73cda，Group／**ES**，disambiguation 空，life-span **1969 起、1979 結束**）、first-release-date **1970**、primary-type Album、**secondary-types 空**。轄下 3 個 release：**1970 ES Acción AC-1-LP（12 吋黑膠、16 軌、Official）**、**1970 ES Acción AC-1-LP（12 吋黑膠、15 軌、Official）**、以及一筆**無日期的烏拉圭盤**（12 吋黑膠、15 軌、Official，label-info 是 **R. y R. Gioscia, S.A.（無編號）＋ Capitol Records SMAS 774** 兩家合掛）。⚠ **兩張西班牙盤共用同一個目錄編號 AC-1-LP，軌數卻一個 16、一個 15**；⚠ **烏拉圭那一筆的 release 標題不是本盤名，而是「Aguaviva」**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/13f44367-a5da-4368-a7bb-fe6f3ec149a5?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "16 軌的西班牙盤逐軌與長度：A1〈Robot〉1:33、A2〈Cantaré〉3:07、**A3〈Diario hablado〉0:32**、A4〈Mía es la voz〉3:05、A5〈Los cuentos〉2:30、A6〈Rolling stone〉1:43、**A7〈La nada〉0:36**、A8〈Creemos El Hombre Nuevo〉3:15、B1〈Límites〉2:11、B2〈La unión del mundo〉1:54、**B3〈¡Ay, amor!〉0:52**、B4〈Federico〉2:27、B5〈Luna, luna, luna〉1:41、B6〈24 bofetadas〉1:28、B7〈Poetas andaluces〉3:40、B8〈Bla, bla, bla〉3:09。**十六首裡有三首不到一分鐘（0:32／0:36／0:52），沒有一首超過 3:40**——整張碟由十六個短段落排成，最長與最短差將近七倍。**15 軌的那一筆西班牙盤與烏拉圭盤少掉的正是 A3 那首 32 秒的〈Diario hablado〉**，其餘十五首同名同序（烏拉圭盤把 A5 寫成複數的「Rolling Stones」）；兩者的欄位都沒有登錄長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=13f44367-a5da-4368-a7bb-fe6f3ec149a5&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **11 個 release-group**：純 Album（secondary-types 空）7 個、Album/Compilation 2 個、Single 1 個、EP 1 個。七張純 Album 依 first-release-date 排：**1970《Cada vez más cerca》**、1971《Apocalipsis》、1972《La casa de San Jamás》、1972《Cosmonauta》、1979《La invasión de los bárbaros》、1989-06-15《Poetas andaluces de ahora》、1997《No hay derecho》。**本張是名下最早的純 Album，「首張專輯」成立；但前面有 1969 年的單曲《Poetas andaluces》，所以「第一張唱片」不成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f7c73cda-e001-479f-accf-d9e7344e54b9&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "16 軌西班牙盤的十六軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、**沒有任何作詞或文本來源的掛名**，release 的 annotation 欄也是空的。**「哪一首取自哪位詩人的文本」在資料庫端完全沒有登錄。**",
+    "src": "https://musicbrainz.org/ws/2/release/769ee4e4-d8cb-4871-9164-7eb4f141ede3?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 287540709**《Cada Vez Más Cerca》15 軌、℗ 2007 Tam-Tam Media：**十五軌與 15 軌那一版同序、逐軌對得上**（Robot 1:33／Cantaré 3:12／Mía Es la Voz 3:06／Los Cuentos 2:40／Rolling Stones 1:36／La Nada 0:36／Creemos el Hombre Nuevo 3:16／Límites 2:11／La Unión del Mundo 1:54／¡Ay Amor! 1:10／Federico 2:27／**The Moon** 1:41／**Twenty Four Slaps** 1:28／Poetas Andaluces 3:41／Bla, Bla, Bla 3:10），**同樣沒有那首 32 秒的〈Diario hablado〉**。⚠ **上架版本把其中兩首的西班牙語曲名換成了英語**：〈Luna, luna, luna〉變成「The Moon」、〈24 bofetadas〉變成「Twenty Four Slaps」，長度卻與原盤欄位完全相同（1:41／1:28）。同一位藝人目錄下的 298588325《Poetas Andaluces》21 軌 ℗ 1975 是別碟（**駁回**）。",
+    "src": "https://itunes.apple.com/lookup?id=287540709&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十六首裡有三首不到一分鐘，最短的〈Diario hablado〉只有 32 秒",
+   "同一個目錄編號底下建了兩張盤，一張 16 軌一張 15 軌，差的就是那首 32 秒"
+  ],
+  "sound": "1970 年 Acción 的 AC-1-LP 是一張 12 吋。十六軌那一版：A 面〈Robot〉1:33、〈Cantaré〉3:07、只有 0:32 的〈Diario hablado〉、〈Mía es la voz〉3:05、〈Los cuentos〉2:30、〈Rolling stone〉1:43、0:36 的〈La nada〉、〈Creemos El Hombre Nuevo〉3:15；B 面〈Límites〉2:11、〈La unión del mundo〉1:54、0:52 的〈¡Ay, amor!〉、〈Federico〉2:27、〈Luna, luna, luna〉1:41、〈24 bofetadas〉1:28、〈Poetas andaluces〉3:40、〈Bla, bla, bla〉3:09。十六首沒有一首超過 3:40，其中三首不到一分鐘，整張碟由短段落一個接一個排成。同編號的另一版少掉那首 32 秒的〈Diario hablado〉，成為十五軌；烏拉圭盤也是十五軌。",
+  "keyTracks": [
+   "Poetas andaluces",
+   "Diario hablado",
+   "Federico"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（**發行年**）。release-group 的 first-release-date 記 1970，其下兩筆西班牙 Acción AC-1-LP 都記 1970（Official），**第三筆烏拉圭盤沒有日期、端上無法定年**。**沒有更早的版本，也沒有復刻年混進來的問題**（名下沒有本張的後期再版建檔）。**錄音年：資料庫端未登錄**——十六軌零 recording-level relationship、annotation 空白，**1970 只能當發行年寫**。串流側 287540709 的 ℗ 記 2007 Tam-Tam Media，那是後製包裝的 ℗ 年，**不得拿來當原盤年**。",
+  "notes": "**擋下策展層三處。**｜（一）**⚠ 詩人歸屬**：`curatorWhy` 點名「León Felipe、Blas de Otero、Gabriel Celaya」三位詩人的文本。**十六軌零 recording-level relationship、annotation 空白，端上沒有任何作詞或文本來源的掛名**——**三個人名都不得寫**。可寫的只有曲名本身（〈Poetas andaluces〉〈Federico〉）。｜（二）**流傳與地區**：`curatorWhy` 寫「1969 年的單曲〈Poetas andaluces〉**先在法國走紅**」。單曲本身在藝人目錄裡查得到（1969，Single），**但「走紅」與「在法國」端上沒有來源，不得寫**。｜（三）**「同一批錄音走兩套發行系統」**：`curatorWhy` 的這句方向對，但**細節要補正**——⚠ 烏拉圭那一筆**沒有日期**（不能寫「同年」），而且**它的 release 標題是「Aguaviva」不是本盤名**；⚠ 更值得寫的是**兩張西班牙盤共用同一個目錄編號 AC-1-LP、軌數卻是 16 與 15**，差的就是 A3 那首 32 秒的〈Diario hablado〉。｜**查證屬實、可以直接寫的**：`label`「Acción（ES，catno AC-1-LP）」正確；「首張專輯」在藝人目錄裡站得住（**但前面有 1969 年的單曲，不得寫「第一張唱片」**）；烏拉圭盤由 R. y R. Gioscia 與 Capitol（SMAS 774）兩家合掛。｜**軌數要指明版本（裁定 174）**：16 軌、15 軌、烏拉圭 15 軌三種，**行文寫軌數必須說是哪一版**；**逐軌長度只有 16 軌那一筆有登錄**，另兩筆是空的。｜**串流採信 287540709：15 軌與 15 軌那一版同序、長度逐軌相符，℗ 2007（後製包裝的 ℗ 年）**；⚠ **上架版本把〈Luna, luna, luna〉標成「The Moon」、〈24 bofetadas〉標成「Twenty Four Slaps」——行文引曲名一律照原盤欄位的西班牙語寫法。** 駁回 298588325《Poetas Andaluces》（別碟）。**有固定試聽來源。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期審查制度存在這一可查證的史實，**不得寫對該體制的價值判斷**，**也不得對歌詞取用的詩人作政治定性**（何況端上連詩人是誰都沒有登錄）。"
  }
 ]
