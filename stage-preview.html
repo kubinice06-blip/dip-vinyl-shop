@@ -38,7 +38,9 @@
   .rpg-spr.hide{opacity:0;}
   .rpg-spr.dig{animation:rpgDig .62s ease-in-out infinite;}
   @keyframes rpgDig{0%,100%{transform:translateY(0);}50%{transform:translateY(3%);}}
-  .rpg-anger{position:absolute;left:-20%;top:-26%;line-height:1;opacity:0;
+  /* 💢 原本 left:-20% 在小人左上角，三人同框時剛好飄到男子旁邊，
+     看起來變成男子在生氣。改成掛在玩家頭頂偏右。 */
+  .rpg-anger{position:absolute;left:46%;top:-22%;line-height:1;opacity:0;
     font-size:min(3.8vw,18px);}
   .rpg-anger.on{opacity:1;}
   .rpg-notes{position:absolute;z-index:5;width:14%;height:18%;pointer-events:none;opacity:0;
@@ -120,6 +122,7 @@
         dig2:[228,420],
         dig3:[210,440],
         back:[150,424],       // 拿著四張走回櫃檯
+        frontleft:[74,424],   // 櫃檯左前方的轉角：走回櫃檯要先橫走到這裡再往後
         between:[85,452] },   // 站到兩人中間緩頰（腳底最前面 → 蓋在兩人上面）
     f:{ outside:[42,336], door:[42,344], in:[42,396] },
   };
@@ -192,8 +195,11 @@ document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES
         put('o','o','dig2',true); put('p','p','browse',true); await wait(100);
         put('o','o','back'); put('p','p','pay');  // 兩人一起移到櫃檯
         await wait(850);
-        put('o','o','aisle'); await wait(700);
-        put('o','o','counter'); await wait(700);  // 老闆回到櫃檯裡
+        // 走回櫃檯要拆三段：先橫走到櫃檯左前方 → 再往後繞出走道 → 才沿檯後往右。
+        // 直接斜線過去會穿過櫃檯（z 值一開始就切成「櫃檯後面」，人就消失在檯身裡）。
+        put('o','o','frontleft'); await wait(760);
+        put('o','o','aisle');     await wait(620);
+        put('o','o','counter');   await wait(720);
       } },
     { name:'⑤ 走到門口撞見', who:'男子', text:'「……這品味，也敢出來丟臉？」',
       run: async ()=>{
