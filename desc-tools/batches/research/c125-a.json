@@ -238,5 +238,125 @@
   "status": "full",
   "yearVerified": "一致，1970（**發行年**）。release-group 的 first-release-date 記 1970，其下兩筆西班牙 Acción AC-1-LP 都記 1970（Official），**第三筆烏拉圭盤沒有日期、端上無法定年**。**沒有更早的版本，也沒有復刻年混進來的問題**（名下沒有本張的後期再版建檔）。**錄音年：資料庫端未登錄**——十六軌零 recording-level relationship、annotation 空白，**1970 只能當發行年寫**。串流側 287540709 的 ℗ 記 2007 Tam-Tam Media，那是後製包裝的 ℗ 年，**不得拿來當原盤年**。",
   "notes": "**擋下策展層三處。**｜（一）**⚠ 詩人歸屬**：`curatorWhy` 點名「León Felipe、Blas de Otero、Gabriel Celaya」三位詩人的文本。**十六軌零 recording-level relationship、annotation 空白，端上沒有任何作詞或文本來源的掛名**——**三個人名都不得寫**。可寫的只有曲名本身（〈Poetas andaluces〉〈Federico〉）。｜（二）**流傳與地區**：`curatorWhy` 寫「1969 年的單曲〈Poetas andaluces〉**先在法國走紅**」。單曲本身在藝人目錄裡查得到（1969，Single），**但「走紅」與「在法國」端上沒有來源，不得寫**。｜（三）**「同一批錄音走兩套發行系統」**：`curatorWhy` 的這句方向對，但**細節要補正**——⚠ 烏拉圭那一筆**沒有日期**（不能寫「同年」），而且**它的 release 標題是「Aguaviva」不是本盤名**；⚠ 更值得寫的是**兩張西班牙盤共用同一個目錄編號 AC-1-LP、軌數卻是 16 與 15**，差的就是 A3 那首 32 秒的〈Diario hablado〉。｜**查證屬實、可以直接寫的**：`label`「Acción（ES，catno AC-1-LP）」正確；「首張專輯」在藝人目錄裡站得住（**但前面有 1969 年的單曲，不得寫「第一張唱片」**）；烏拉圭盤由 R. y R. Gioscia 與 Capitol（SMAS 774）兩家合掛。｜**軌數要指明版本（裁定 174）**：16 軌、15 軌、烏拉圭 15 軌三種，**行文寫軌數必須說是哪一版**；**逐軌長度只有 16 軌那一筆有登錄**，另兩筆是空的。｜**串流採信 287540709：15 軌與 15 軌那一版同序、長度逐軌相符，℗ 2007（後製包裝的 ℗ 年）**；⚠ **上架版本把〈Luna, luna, luna〉標成「The Moon」、〈24 bofetadas〉標成「Twenty Four Slaps」——行文引曲名一律照原盤欄位的西班牙語寫法。** 駁回 298588325《Poetas Andaluces》（別碟）。**有固定試聽來源。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期審查制度存在這一可查證的史實，**不得寫對該體制的價值判斷**，**也不得對歌詞取用的詩人作政治定性**（何況端上連詩人是誰都沒有登錄）。"
+ },
+ {
+  "key": "desc2:Raimon|Per destruir aquell qui l'ha desert",
+  "artist": "Raimon",
+  "album": "Per destruir aquell qui l'ha desert",
+  "facts": [
+   {
+    "f": "release-group 863797de 的欄位：title「Per destruir aquell qui l'ha desert」、artist-credit「Raimon」（藝人實體 0c209518，**Person**／**ES**，**disambiguation 空**，life-span **1940-12-02 起、未結束**）、first-release-date **1970**、primary-type Album、**secondary-types 空**。轄下 **只有 1 個 release**：1970 **ES** Discophon **STER. 30**（12 吋黑膠、12 軌、Official）。**沒有任何再發、沒有 CD 版、沒有非西班牙盤。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/863797de-6ef0-4621-ad66-a11c58fb62b5?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1970 年原盤（Discophon STER. 30）逐軌，**十二軌一筆長度都沒有登錄**，曲序是：A1〈Desert d'amics〉、A2〈Així com cell qui es veu prop de la mort〉、A3〈Quins tan segurs consells vas encercant〉、A4〈Veles e vents han mos desigs complir〉、A5〈Si com lo taur〉、A6〈Elogi dels diners〉、B1〈Societat de consum〉、B2〈Quan creus que ja s'acaba〉、B3〈De nit a casa, junts〉、B4〈T'ho devia〉、B5〈Indesinenter〉、B6〈Sobre la pau〉。**十二個曲名全部是加泰隆尼亞語（瓦倫西亞變體），沒有一首西班牙語曲名**；**A 面的頭五首用的是古加泰隆尼亞語的拼法與句法**（cell、mos desigs、si com lo taur），**與 B 面〈Societat de consum〉這種現代詞彙形成明顯的兩段**。盤名本身就取自 A 面那一組的句法。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=863797de-6ef0-4621-ad66-a11c58fb62b5&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **18 個 release-group**：純 Album（secondary-types 空）6 個、Album/Live 4 個、Album/Compilation 6 個、EP 2 個。**1963–1976 年間 primary-type=Album 的只有四筆**——1964《Disc antològic de les seves cançons》、**1970 本張**、1974《A Víctor Jara》、1976《El Recital De Madrid》（**這一筆是 Album/Live，不是錄音室盤**）——**扣掉現場盤，1976 年之前的錄音室專輯只有三張**。兩張 EP 分別是 1963《Raimon (I)》與 1967《Diguem no》。1985 年另有《Raimon canta Espriu》、1989 年有 Album/Live 的《Raimon canta Ausiàs March》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0c209518-e6bc-43d5-93c6-961d27eda85c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1970 原盤的十二軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、**沒有任何作詞或文本來源的掛名**，release 的 annotation 欄也是空的。**「哪一首取自哪位詩人」在資料庫端沒有登錄**——只有藝人目錄裡 1985 與 1989 兩張碟的**標題**分別寫著 Espriu 與 Ausiàs March，那是別張碟的標題、不是本張的曲目歸屬。",
+    "src": "https://musicbrainz.org/ws/2/release/a46f593d-5843-4f42-80a8-f7bf443bada4?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 1225577036**《Per Destruir Aquell Qui L'ha Desert》、℗ 1970 Picap：**逐軌與 1970 原盤同名同序**，而且**補上了原盤欄位缺的長度**——1〈Desert D'amics〉3:25、2〈Així Com Cell...〉2:39、3〈Quins Tan Segurs Consells〉2:49、4〈Veles e Vents〉4:07、5〈Si Com Lo Taur〉**1:27**、6〈Elogi dels Diners〉2:27、7〈Societat de Consum〉1:47、8〈Quan Creus Que Ja S'acaba〉**1:27**、9〈De Nit a Casa〉2:27、10〈T'ho Devia〉1:52、11〈Indesinenter〉3:34、12〈Sobre la Pau〉2:44。⚠ **該條目的 trackCount 標 13、實際只回 12 軌**；⚠ **四個曲名在上架版本被截短**（Així com cell...／Quins tan segurs consells／Veles e vents／De nit a casa）。同一位藝人的目錄裡另有 1221507320《À L'Olympia (En Directe)》、1221509513《Disc Antològic...》、128146325《El Recital de Madrid》、1225576297《Raimon Canta Espriu》等十餘筆別碟，**全部駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=1225577036&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "A 面五首用的是古加泰隆尼亞語的拼法，B 面第一首的曲名卻叫〈Societat de consum〉",
+   "十二個曲名沒有一個是西班牙語，盤名本身就取自 A 面那一組的句法"
+  ],
+  "sound": "1970 年 Discophon 的 STER. 30 是一張 12 吋、十二軌，也是這張碟唯一的一筆發行。A 面〈Desert d'amics〉、〈Així com cell qui es veu prop de la mort〉、〈Quins tan segurs consells vas encercant〉、〈Veles e vents han mos desigs complir〉、〈Si com lo taur〉、〈Elogi dels diners〉；B 面〈Societat de consum〉、〈Quan creus que ja s'acaba〉、〈De nit a casa, junts〉、〈T'ho devia〉、〈Indesinenter〉、〈Sobre la pau〉。十二個曲名全部是加泰隆尼亞語的瓦倫西亞變體，一首西班牙語曲名都沒有。A 面頭五首用的是古拼法與古句法，B 面第一首的曲名卻是〈Societat de consum〉，兩面的語言年代明顯不同。原盤欄位沒有登錄長度，上架版本的十二軌落在 1:27 到 4:07 之間。",
+  "keyTracks": [
+   "Veles e vents han mos desigs complir",
+   "Indesinenter",
+   "Societat de consum"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（**發行年**）。release-group 的 first-release-date 記 1970，其下**唯一一筆** release 就是 1970 年的西班牙 Discophon STER. 30（Official），**沒有再發、沒有更早的版本，也沒有復刻年可能混進來的問題**。**錄音年：資料庫端未登錄**——十二軌零 recording-level relationship、annotation 空白，**1970 只能當發行年寫**。串流側 1225577036 的 ℗ 記 1970 Picap，與發行年一致，**但那是後來取得權利的廠牌所標的 ℗ 年、不是獨立的原盤年佐證**（1970 年的原盤廠牌是 Discophon）。",
+  "notes": "**擋下策展層三處。**｜（一）**⚠ 詩人歸屬**：`curatorWhy` 寫「把中世紀詩人 **Ausiàs March** 與現代詩人 **Salvador Espriu** 的文本入歌」。**十二軌零 recording-level relationship、annotation 空白，端上沒有任何作詞或文本來源的掛名**——**兩個人名都不得寫**。可寫的只有曲名本身的語言特徵，以及**這位藝人名下另有兩張碟的標題點名了那兩位**（1985《Raimon canta Espriu》、1989《Raimon canta Ausiàs March》）——**但那是別張碟的標題，不能反推本張的曲目歸屬。**｜（二）**本名**：`curatorRisk` 已自標「這一位的本名不得由掛名反推背書」——覆核屬實，**藝人實體的 disambiguation 是空的**，`queryAlias` 裡那個本名端上沒有欄位支撐，**不得寫**。｜（三）**序數措辭**：`curatorWhy` 寫「MB 名下 1963–1976 只有四個 primary-type=Album 建檔」——**數字對，但四筆裡有一筆（1976《El Recital De Madrid》）是 Album/Live**。**行文要寫這個數字必須說清楚，或改寫成「1976 年之前的錄音室專輯只有三張」。**｜**查證屬實、可以直接寫的**：`label`「Discophon（ES，catno STER. 30）」正確；這張碟**端上只有一筆發行、沒有任何再版**；十二個曲名全部是加泰隆尼亞語（瓦倫西亞變體）；A 面的古拼法與 B 面〈Societat de consum〉的對比。｜**⚠ 逐軌長度的來源**：**原盤欄位十二軌全部沒有長度**，長度只有串流側那一版有。**行文要寫時間必須以上架版本為準**；只寫相對關係最安全。｜**⚠ 曲名字形**：上架版本把四個曲名截短（Així com cell...／Quins tan segurs consells／Veles e vents／De nit a casa）。**行文引曲名一律照原盤欄位的完整寫法，也不得譯成西班牙語。**｜**串流採信 1225577036：12 軌與 1970 原盤同名同序、℗ 1970 Picap；該條目的 trackCount 標 13 但實際只回 12 軌**。駁回同目錄下十餘筆別碟。**有固定試聽來源。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期加泰隆尼亞語出版受限這一可查證的史實，以及這張碟十二首全部以該語言出版的事實，**不得寫對該體制的價值判斷**，也不得把曲名讀成政治宣告——**端上沒有歌詞、沒有送審或禁令紀錄。**"
+ },
+ {
+  "key": "desc2:Paco Ibáñez|Paco Ibáñez en el Olympia (París)",
+  "artist": "Paco Ibáñez",
+  "album": "Paco Ibáñez en el Olympia (París)",
+  "facts": [
+   {
+    "f": "release-group d131f60f 的欄位：title「Paco Ibáñez en el Olympia (París)」、artist-credit「Paco Ibáñez」（藝人實體 06110fec，**Person**／**ES**，**disambiguation「Spanish singer, songwriter and guitarist」**，life-span **1934-11-20 起、未結束**）、first-release-date **1970**、primary-type Album、**secondary-types [Live]（現場錄音，依裁定 253 可收）**。轄下 5 個 release：**1970 FR Moshé-Naïm MN 10 007/08**（**兩張 12 吋黑膠、11＋12＝23 軌**、Official，⚠ **這一筆的 release 標題是法文的「Paco Ibañez à l'Olympia」、而且姓氏的波浪符位置寫成 Ibañez**）、1989 **FR** Musidisc 100432 MU 760 ＋ Emen（CD、**22 軌單片**）、1996 **ES** Moshé-Naïm ＋ PDI（兩片 CD、11＋13＝24 軌，catno 兩家同為 80.4222）、2000 **ES** Emen ＋ Moshé-Naïm ＋ PDI（**三家合掛**、兩片 CD、11＋13）、以及一筆**無日期、無國別、無廠牌**、標題寫成「…(disc 1)」的 11 軌 CD。**四種有日期的版本，軌數分別是 23、22、24、24——沒有兩個版本的軌數一樣。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/d131f60f-9178-3c74-831b-ea10792acc15?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1970 年法國原盤（Moshé-Naïm MN 10 007/08）逐軌與長度，**第一片 11 軌**：A1〈Déjame en paz, amor tirano〉3:06、A2〈Es amarga la verdad〉3:01、A3〈Lo que puede el dinero〉3:37、A4〈Nocturno〉3:35、A5〈Soldadito boliviano〉3:43、A6〈A galopar〉2:58、B1〈Canción de jinete〉3:09、B2〈Coplas por la muerte de su padre〉4:49、B3〈Y ríase la gente〉2:32、B4〈Como tú〉3:40、B5〈España en marcha〉3:57；**第二片 12 軌**：C1〈Balada del que nunca fue a Granada〉4:30、C2〈Proverbios y cantares〉3:42、C3〈Palabras para Julia〉4:09、C4〈Érase una vez〉2:11、C5〈La mala reputación〉4:01、C6〈Me llamarán〉2:58、D1〈Me queda la palabra〉2:53、D2〈Villancico〉2:56、D3〈Me lo decía mi abuelito〉3:02、D4〈Un español habla de su tierra〉4:02、D5〈Andaluces de Jaén〉3:36、D6〈La poesía es una arma cargada de futuro〉5:12。**二十三首全部是西班牙語曲名，沒有一首法語**；**二十三首裡有二十首落在 2:11 到 4:09 之間**，最長的是收尾的〈La poesía es una arma cargada de futuro〉5:12。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d131f60f-9178-3c74-831b-ea10792acc15&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **23 個 release-group**：純 Album 14 個、**Album/Live 4 個**（**1970 本張**、1991《A galopar》、2002《Le concert mémorable au Teatro Opera, Buenos Aires, 1971》、2002《Le Concert Historique De Paco Ibañez au Teatro de la Comedia (Madrid 1968)》）、Single 1 個、Single/Soundtrack 1 個。**本張是名下最早的一筆現場錄音，另外三筆現場盤都是 1991 年之後才出版的。** 名下大量專輯以「唱某某詩人」為標題：1964《Poemes de Federico García Lorca et Luis de Gongora》、1977《Paco Ibáñez canta a Pablo Neruda》、2002《Canta a José Agustín Goytisolo》、2002-10-21《Canta Brassens》、2009-09-13《Canta a los poetas andaluces》、2012《Canta a los poetas latinoamericanos》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=06110fec-532b-4e1b-8c77-cbcac347eebf&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1970 年法國原盤的二十三軌**一筆 recording-level relationship 都沒有**：**沒有錄音日期、沒有場地登錄、沒有伴奏樂手掛名**，release 的 annotation 欄也是空的。**這是一張現場盤，但演奏年、演奏日期與場地在資料庫端完全是空白**——場地只出現在盤名字串裡（Olympia／París），不是可查的欄位。",
+    "src": "https://musicbrainz.org/ws/2/release/4b872cf8-5173-410d-9382-69c30cd845fa?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了，**本張沒有任何上架條目**。（一）八個 storefront 的 `search` 以掛名加盤名查，**八店全部零命中**；改用「Paco Ibanez Olympia」「Paco Ibanez a l'Olympia」在 es 與 fr 兩店重查，**仍然零命中**；（二）**藝人目錄 lookup**：店端這位藝人的 id 是 42266405，**es 與 fr 兩店的目錄各只有 6 筆**，逐筆核對後是 1747571787《A flor de Tiempo》（1979）、912703492《Hommage à Atahualpa Yupanqui》（1962，與 Pedro Ibáñez 合掛）、386895620《Gul Pembe》（2003）、895781974《Chansons de Lorca par Mara》（1960，客座）、886960289《La Salvadora》（1958，客座）、6786204400《Antologia de Cants Íntims》（1977，客座），**本碟不在其中**；（三）`collectionId` 直查那六筆，**皆非本碟**。**維持無固定試聽來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=42266405&country=fr&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四個有日期的版本，軌數分別是 23、22、24、24——沒有兩個版本的軌數一樣",
+   "1970 年那套法國原盤的唱片標題寫的是法文，二十三首曲名卻沒有一首是法語"
+  ],
+  "sound": "1970 年法國 Moshé-Naïm 的 MN 10 007/08 是兩張 12 吋，第一片 11 軌、第二片 12 軌，合計二十三首。第一片從〈Déjame en paz, amor tirano〉3:06 起，經〈Lo que puede el dinero〉3:37、〈Soldadito boliviano〉3:43、〈A galopar〉2:58，到〈Coplas por la muerte de su padre〉4:49 與收尾的〈España en marcha〉3:57；第二片從〈Balada del que nunca fue a Granada〉4:30 到最後 5:12 的〈La poesía es una arma cargada de futuro〉，中間有 2:11 的〈Érase una vez〉與〈Palabras para Julia〉4:09。二十三首裡有二十首壓在 2:11 到 4:09 之間，沒有長段落，也沒有短到一分鐘的片段。二十三個曲名全部是西班牙語，唱片本身的標題卻是法文的《Paco Ibañez à l'Olympia》。",
+  "keyTracks": [
+   "La poesía es una arma cargada de futuro",
+   "Palabras para Julia",
+   "Coplas por la muerte de su padre"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（**發行年**）。release-group 的 first-release-date 記 1970，其下最早的 release 就是 1970 年的法國 Moshé-Naïm MN 10 007/08（Official、兩張黑膠 23 軌），之後是 1989 FR、1996 ES、2000 ES 三筆再版，以及一筆無日期的單片 CD。**復刻年 1989／1996／2000 不得寫進 year 欄（裁定 220）。**⚠ **演奏年（裁定 253）：資料庫端未登錄**——二十三軌零 recording-level relationship，**沒有錄音日期、沒有場地欄位**。**「1969 年」與「12 月 4 日」在端上都查不到，不得寫；只能寫「這是一張現場錄音的專輯」，演出年份不寫。** 串流側沒有本張的上架版本可對照 ℗ 年。",
+  "notes": "**擋下策展層三處。**｜（一）**⚠ 演出日期**：`curatorWhy` 與 `mbNote` 都寫「**1969 年 12 月 4 日**在巴黎 Olympia 的現場」。**二十三軌零 recording-level relationship、沒有 place 關係、annotation 空白——演奏年與日期在端上完全空白**。**「1969」與「12 月 4 日」都不得寫。** 場地只能照盤名字串提（Olympia、París），不得當成查得到的欄位。｜（二）**居住地**：`curatorWhy` 寫「長年住在巴黎」。**藝人實體的國別欄記的是 ES，disambiguation 只寫「Spanish singer, songwriter and guitarist」，沒有任何居住地欄位**，**不得寫**。｜（三）**詩人歸屬與編制**：`curatorWhy` 寫「把 Góngora、Quevedo、García Lorca、Blas de Otero 的詩譜成**獨唱加吉他**的形式」。**逐軌沒有作詞掛名、沒有伴奏樂手登錄**，四個詩人名與「獨唱加吉他」的編制**都不得寫**。可以替代的寫法有兩條、都有欄位背書：**藝人實體的 disambiguation 本身就寫著「歌手、詞曲作者兼吉他手」**；**名下有六張專輯的標題直接寫著「唱某某詩人」**（Lorca 與 Góngora、Neruda、Goytisolo、Brassens、安達魯西亞詩人、拉丁美洲詩人）。｜**查證屬實、可以直接寫的**：`label`「Moshé-Naïm（FR，catno MN 10 007/08）」正確；發行路徑（1970 法國原盤 → 1989 法國 Musidisc → 1996／2000 西班牙三家合掛）查證屬實；⚠ **但 1970 那一筆的 release 標題是法文的「Paco Ibañez à l'Olympia」，不是卡片盤名**，行文提到唱片標題要說清楚。｜**⚠ 軌數要指明版本（裁定 174）**：1970 兩張黑膠 23 軌、1989 單片 CD 22 軌、1996 與 2000 兩片 CD 24 軌，**四個版本沒有兩個軌數一樣**，**行文寫軌數必須說是 1970 年那一套**。｜**現場盤註記（裁定 253）**：`secondary-types` 是 [Live]，**這是現場錄音**；**演奏年端上未登錄，不得補**。｜**回撈候選：本張標「目錄裡找不到」，三種查法覆核後屬實**——八店搜尋零命中、藝人目錄六筆逐筆核對皆非本碟、六筆 collectionId 直查亦否。**無固定試聽來源，行文不要暗示可試聽。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期詩作出版受限這一可查證的史實與這張碟在法國發行、四筆再版才回到西班牙的路徑，**不得寫對該體制的價值判斷**，也不得由曲名（〈España en marcha〉〈Andaluces de Jaén〉）推論歌詞內容或立場。"
+ },
+ {
+  "key": "desc2:Vainica Doble|Vainica Doble",
+  "artist": "Vainica Doble",
+  "album": "Vainica Doble",
+  "facts": [
+   {
+    "f": "release-group 7ceb457c 的欄位：title「Vainica Doble」、artist-credit「Vainica Doble」（**掛名與盤名逐字相同，自我同名**；藝人實體 bd70f31b，Group／**ES**，disambiguation 空，life-span **1971 起、2000-07-23 結束**）、first-release-date **1971**、primary-type Album、**secondary-types 空**。轄下 **2 個 release**：**1971 ES Ópalo OPL-1/LP**（12 吋黑膠、**12 軌**、Official）與 **2009 ES Wah Wah Records WCD009**（CD、**20 軌**、Official）。**⚠ 藝人實體的 life-span 起始年是 1971，與本張的發行年同年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7ceb457c-8ca6-484f-9175-643395e678c5?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1971 年原盤（Ópalo OPL-1/LP）逐軌與長度：A1〈Caramelo de limón〉2:46、A2〈Dime, Félix〉4:25、A3〈El duende〉3:07、A4〈¿Quién le pone el cascabel al gato?〉2:46、A5〈Mariluz〉3:14、A6〈La cigarra y la hormiga〉1:54、B1〈La ballena azul〉3:17、B2〈La cotorra〉**1:21**、B3〈Roberto querido〉**4:58**、B4〈Fulgencio Pimentel〉2:43、B5〈Guru zakun kin kon〉4:47、B6〈Pájaro de mal agüero〉1:40。**十二首裡有四首是人名或稱謂當標題**（Félix、Mariluz、Roberto querido、Fulgencio Pimentel），**另有三首是動物**（蟬與螞蟻、藍鯨、鸚鵡、兆頭不好的鳥）。最長 4:58、最短 1:21。2009 年 Wah Wah 的 CD 把這十二軌原序保留，後面再接八首：〈La bruja〉5:32、〈Un metro cuadrado〉3:41、〈Refranes〉2:55、〈Las doce caras de Eva〉2:36、〈Oh, Jesus〉4:07、〈El evangelo segun San Lucas〉4:28、〈El rigor de las desdichas〉3:57、〈Someone Like You〉2:55。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7ceb457c-8ca6-484f-9175-643395e678c5&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "1971 原盤有**兩筆 release-level relationship**（本組少數有掛名登錄的一張）：**arranger（編曲）José Nieto**、**producer（製作）Manolo Díaz**。**十二軌本身沒有任何 recording-level relationship**（沒有錄音日期、沒有場地、沒有樂手分工），release 的 annotation 欄也是空的。**所以編曲與製作兩個職位查得到名字，錄音年與演奏編制查不到。**",
+    "src": "https://musicbrainz.org/ws/2/release/b99fa191-4535-4f66-9e7d-478bea6b2a0c?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **16 個 release-group**：純 Album 10 個、Album/Compilation 4 個、Single 1 個、EP 1 個。純 Album 依 first-release-date 排：**1971 本張**、1973《Heliotropo》、1976《Contracorriente》、1980《El eslabón perdido》、1981《El tigre del Guadarrama》、1984《Taquicardia》、1991《1970》、1997《Carbono 14》、2000《En familia》、2017《A la manera de Vainica Doble》。**本張是名下最早的純 Album，但前面有 1970 年的單曲《La bruja / Un metro cuadrado》**——「首張專輯」成立，「第一張唱片」不成立；⚠ **而那張 1970 年單曲的兩面，正是 2009 年 CD 加的第 13、14 兩軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bd70f31b-96c5-4bc5-8951-9a6a48478a94&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了，**本張本身沒有上架條目**。（一）八個 storefront 的 `search`：**gb 命中的是 287439491《Vainica Doble, Grandes Éxitos》**；（二）**藝人目錄 lookup**（店端藝人 id 35417742）：目錄只有 **11 筆**，逐筆核對是《Vainica Doble, Grandes Éxitos》《Heliotropo》《En Familia》《Miss-labores》《Taquicardia》《1970》×2、《2 en 1》《A la Manera de Vainica Doble》《Carbono 14》×2，**沒有 1971 年那張同名專輯的獨立條目**；（三）`collectionId` 直查 287439491：**16 軌、℗ 2007 Tam-Tam Media**，**第 2 到第 13 軌逐軌就是 1971 原盤的十二首、同序同長度**（Caramelo de Limón 2:47／Dime, Félix 4:25／El Duende 3:07／Quién Le Pone el Cascabel Al Gato 2:46／Mariluz 3:14／La Cigarra y la Hormiga 1:54／La Ballena Azul 3:17／La Cotorra 1:21／Roberto Querido 4:58／Fulgencio Pimentel 2:43／Guru Zakun Kin Kon 4:48／Pájaro de Mal Agüero 1:40），**但它的第 1 軌是〈Refranes〉、第 14–16 軌是別處的三首，盤名也是精選包裝的名字**——**駁回作為本張的試聽來源**。**維持無固定試聽來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=287439491&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首裡四首用人名當標題、三首用動物當標題，最長 4:58、最短 1:21",
+   "2009 年的 CD 在原盤十二軌之後補的第 13、14 兩軌，正是他們 1970 年那張單曲的兩面"
+  ],
+  "sound": "1971 年 Ópalo 的 OPL-1/LP 是一張 12 吋、十二軌。A 面〈Caramelo de limón〉2:46、〈Dime, Félix〉4:25、〈El duende〉3:07、〈¿Quién le pone el cascabel al gato?〉2:46、〈Mariluz〉3:14、〈La cigarra y la hormiga〉1:54；B 面〈La ballena azul〉3:17、只有 1:21 的〈La cotorra〉、4:58 的〈Roberto querido〉、〈Fulgencio Pimentel〉2:43、〈Guru zakun kin kon〉4:47、〈Pájaro de mal agüero〉1:40。十二首裡四首拿人名當標題、三首拿動物當標題，最長與最短差將近四倍。唱片的編曲欄記著 José Nieto、製作欄記著 Manolo Díaz。2009 年 Wah Wah 的 CD 保留這十二軌原序，後面再接八首。",
+  "keyTracks": [
+   "Caramelo de limón",
+   "Roberto querido",
+   "La cotorra"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971（**發行年**）。release-group 的 first-release-date 記 1971，其下最早的 release 就是 1971 年的西班牙 Ópalo OPL-1/LP（Official、12 軌黑膠），另一筆是 2009 年 Wah Wah Records 的 20 軌 CD。**復刻年 2009 不得寫進 year 欄（裁定 220）。****錄音年：資料庫端未登錄**——十二軌零 recording-level relationship、annotation 空白，**1971 只能當發行年寫**；⚠ **藝人實體的 life-span 起始年也記 1971，與發行年同年，但那是團體成立年不是錄音年，不得混用。** 串流側沒有本張獨立的上架版本可對照 ℗ 年（唯一含全碟內容的是一份 ℗ 2007 的精選包裝）。",
+  "notes": "**擋下策展層三處。**｜（一）**團員本名**：`curatorWhy` 寫「**Carmen Santonja 與 Gloria van Aerssen** 的雙人組」。**藝人實體沒有任何團員關係登錄、disambiguation 空白**，兩個人名端上沒有來源，**不得寫**。｜（二）**編制與歌詞內容**：`curatorWhy` 寫「編制是**兩把吉他與兩個聲部**，歌詞用家常語彙寫**中產家庭的內部**」。**十二軌零 recording-level relationship，沒有任何樂器或聲部登錄**；歌詞內容端上也沒有來源。**兩句都不得寫。** 可以替代、而且有欄位背書的是：**編曲掛 José Nieto、製作掛 Manolo Díaz**（release-level relationship 兩筆），以及**曲名本身的規律**（四首人名、三首動物）。｜（三）**與「男性主導的抗議歌曲路線」對比**：這是評價與比較斷言，端上沒有任何欄位支撐，**不得寫**。｜（四）**復刻脈絡**：`curatorWhy` 說 2009 年 Wah Wah 的復刻是「Guerssen／Munster 這一圈重挖伊比利目錄的典型案例」——**端上只有「2009 ES Wah Wah Records WCD009」這一筆事實，「這一圈」的說法沒有來源，不得寫**；`label`「Ópalo（ES，catno OPL-1/LP）」查證屬實。｜**查證屬實、可以直接寫的**：自我同名（掛名與盤名逐字相同，端上確認）；「首張專輯」在藝人目錄裡站得住，**但前面有 1970 年的單曲，不得寫「第一張唱片」**；⚠ **最好的一條材料**：2009 年 CD 補的第 13、14 兩軌〈La bruja〉〈Un metro cuadrado〉**正是 1970 年那張單曲的兩面**（藝人目錄與曲目對得起來）。｜**軌數要指明版本（裁定 174）**：原盤 12 軌、2009 年 CD 20 軌，**行文寫軌數必須說是 1971 年那一版**；**逐軌長度兩版都有登錄，時間可以寫。**｜**回撈候選：策展層在 gb 命中的 287439491 是精選包裝——逐軌覆核後，它的第 2–13 軌確實就是 1971 原盤的十二首、同序同長度，但第 1 軌與第 14–16 軌是別處的曲子，盤名也不是本盤名，因此駁回作為試聽來源。**藝人目錄十一筆逐筆核對後**沒有本張的獨立條目**。**無固定試聽來源，行文不要暗示可試聽。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期審查制度存在這一可查證的史實，**不得寫對該體制的價值判斷**，也不得把曲名或這組人的性別讀成對體制的回應——**端上沒有歌詞、沒有送審紀錄。**"
  }
 ]
