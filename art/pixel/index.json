@@ -1,0 +1,134 @@
+{
+ "version": 1,
+ "generatedAt": "2026-09-08T15:35:10.699Z",
+ "objects": [
+  {
+   "id": "box-a",
+   "name": "紙箱 A",
+   "kind": "image",
+   "file": "art/pixel/objects/box-a.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "box-b",
+   "name": "紙箱 B",
+   "kind": "image",
+   "file": "art/pixel/objects/box-b.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "crate-black-2",
+   "name": "黑色塑膠籃 2",
+   "kind": "image",
+   "file": "art/pixel/objects/crate-black-2.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "crate-black-3",
+   "name": "黑色塑膠籃 3",
+   "kind": "image",
+   "file": "art/pixel/objects/crate-black-3.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "crate-black",
+   "name": "黑色塑膠籃 1",
+   "kind": "image",
+   "file": "art/pixel/objects/crate-black.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "crate-new-wide",
+   "name": "NEW ARRIVALS 木箱（寬）",
+   "kind": "image",
+   "file": "art/pixel/objects/crate-new-wide.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "crate-new",
+   "name": "NEW ARRIVALS 木箱",
+   "kind": "image",
+   "file": "art/pixel/objects/crate-new.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "crate-wood-2",
+   "name": "木箱（SOUL / FUNK）",
+   "kind": "image",
+   "file": "art/pixel/objects/crate-wood-2.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "crate-wood",
+   "name": "木箱（PROGRESSIVE ROCK）",
+   "kind": "image",
+   "file": "art/pixel/objects/crate-wood.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "foe",
+   "name": "男子",
+   "kind": "pixel",
+   "file": "art/pixel/objects/foe.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "owner",
+   "name": "老闆",
+   "kind": "pixel",
+   "file": "art/pixel/objects/owner.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "player",
+   "name": "玩家（預設造型）",
+   "kind": "pixel",
+   "file": "art/pixel/objects/player.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "shop2-door",
+   "name": "門",
+   "kind": "image",
+   "file": "art/pixel/objects/shop2-door.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "shop2-fg-back",
+   "name": "前景後層（櫃檯＋器材＋右邊唱片櫃）",
+   "kind": "image",
+   "file": "art/pixel/objects/shop2-fg-back.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "shop2-fg-front",
+   "name": "前景前層（折疊長桌＋木箱＋黑籃）",
+   "kind": "image",
+   "file": "art/pixel/objects/shop2-fg-front.json",
+   "updatedAt": 1788881710620
+  },
+  {
+   "id": "table",
+   "name": "折疊長桌",
+   "kind": "image",
+   "file": "art/pixel/objects/table.json",
+   "updatedAt": 1788881710620
+  }
+ ],
+ "scenes": [
+  {
+   "id": "shop2",
+   "name": "巷子裡的唱片行",
+   "file": "art/pixel/scenes/shop2.json",
+   "updatedAt": 1788881710620
+  }
+ ],
+ "stories": [
+  {
+   "id": "prologue",
+   "name": "序章 · 巷子裡的唱片行",
+   "file": "art/pixel/stories/prologue.json",
+   "updatedAt": 1788881710620
+  }
+ ]
+}
