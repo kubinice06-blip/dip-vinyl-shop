@@ -1,0 +1,474 @@
+[
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "youth crew 這個詞成立之前的那張 7 吋：1985 年 Positive Force 發行，七首歌把 straight edge 從華府的 Minor Threat 挪到康乃狄克與紐約，之後整條 Revelation 目錄都建立在這個模板上。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/e056c9e5-04b3-4e49-bff7-da9dc0be6b28",
+   "https://en.wikipedia.org/wiki/Youth_of_Today",
+   "https://en.wikipedia.org/wiki/Youth_crew"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Youth of Today Cant Close My Eyes 7\"；YOT Positive Force Number 4；Cant Close My Eyes EP 1985",
+  "reissuedBy": "1988 年 US 12 吋 9 軌（release-group 076b41ca）是同一批曲目的擴充版，屬另一個 release-group",
+  "g": "b",
+  "artist": "Youth of Today",
+  "album": "Can't Close My Eyes EP",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Positive Force（catno Number 4，US 1985，7 吋黑膠 7 軌；1988 年的 12 吋 9 軌是另一個 release-group，不是同一版）",
+  "why": "b 組的起點卡：這條線的年代最早、影響最直接的一張。池中 0 張；c-120 收的《Break Down the Walls》(1987) 與《We're Not in This Alone》(1988) 都在這張之後。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Youth of Today 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Youth of Today」回 1 個同名實體，所釘的 9ca27db4 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1985，year 取 1985（裁定 220：再發年不得蓋掉原盤年）。轄下 release 1 筆：1985 US Official 7\" Vinyl×7（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/e056c9e5/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 0 筆、de 0 筆，無一筆掛名與盤名同時對得上）。 同批同名風險：MB 另有 release-group 076b41ca《Can't Close My Eyes》(1988，US 12 吋 9 軌)，是本張的擴充版；本批只釘 1985 年的 7 吋，若日後再收 1988 年那張，兩者盤名在正規化後極為接近，須以 rgMbid 分辨。掛名回問：artist:\"Youth of Today\" 只回 1 個實體、score 100，但 disambiguation 為空白——依裁定 250 後半，行文不得以 disambiguation 背書本名。",
+  "mbNote": "釘 release-group e056c9e5-04b3-4e49-bff7-da9dc0be6b28。primary-type EP、secondary-types 空、first-release-date 1985。轄下唯一 release：1985 US Official 7\" Vinyl 7 軌，label-info Positive Force（Number 4）。刻意不釘：076b41ca《Can't Close My Eyes》(1988 US 12 吋 9 軌，c-120 第 2 條已判定為 1985 年 7 吋的擴充版)、d79f8961《Disengage》(1990，CAA 404)、f6db3d13《Benefit 7\"》(1991，CAA 404)。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Gorilla Biscuits 在 Revelation 簽下他們之前的六首歌卡帶：這捲 demo 在紐約硬蕊的翻錄鏈裡流通了整整一年，才有 1988 年的 Revelation 7 吋與 1989 年的《Start Today》。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790",
+   "https://en.wikipedia.org/wiki/Gorilla_Biscuits",
+   "https://en.wikipedia.org/wiki/Demo_(music)"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Gorilla Biscuits demo 1987；GB 1987 demo tape；Gorilla Biscuits demo tape",
+  "reissuedBy": "1991 年另有一筆標為 Bootleg 的 US release（6 軌），本批不釘",
+  "g": "b",
+  "artist": "Gorilla Biscuits",
+  "album": "demo 1987",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB label-info 未填廠牌（US 1987，卡帶 6 軌，樂團自製 demo；1991 年那筆 US release 在 MB 標為 Bootleg）",
+  "why": "派工信明列 demo 屬本批範圍。池中 0 張；本批 Gorilla Biscuits 取 2 張（本張與 1988 年的同名 7 吋），加上 c-120 的《Start Today》正好構成 demo → 7 吋 → LP 三級。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Gorilla Biscuits 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Gorilla Biscuits」回 1 個同名實體，所釘的 0320a32e 排第 1、score 100，disambiguation「hardcore punk」。 年份：MB first-release-date 1987，year 取 1987（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1987 US Official Cassette×6／1991 US Bootleg ?×6（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/1c997f24/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 0 筆、de 0 筆，無一筆掛名與盤名同時對得上）。 secondary-types 含 Demo：本張為自製卡帶。轄下第二筆 1991 US release 在 MB 標為 Bootleg（裁定 43／57 的形狀），本卡所釘的是 1987 年那筆 Official 卡帶。掛名回問：artist:\"Gorilla Biscuits\" 只回 1 個實體、score 100、disambiguation「hardcore punk」。",
+  "mbNote": "釘 release-group 1c997f24-75ad-3b2b-bfaa-1891c79fa790。primary-type EP、secondary-types [\"Demo\"]、first-release-date 1987。轄下 2 筆：1987 US Official Cassette 6 軌（所釘，label-info 未填）／1991 US Bootleg（format 未填）6 軌。"
+ },
+ {
+  "releaseType": "Album",
+  "genreException": "",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Gorilla Biscuits s/t 7\"；Revelation 4；GB 1988 EP",
+  "reissuedBy": "1991 DE CD 12 軌起的各版皆為 12 軌（把 1987 年 demo 併進來），2011 US 7 吋復刻仍為 7 軌",
+  "g": "b",
+  "artist": "Gorilla Biscuits",
+  "album": "Gorilla Biscuits",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Revelation Records（catno Revelation:4，US 1988，黑膠 7 軌——實體是 7 吋；1991 起的 DE／US CD 版一律 12 軌，是把 1987 年 demo 併進來的另一版）",
+  "why": "Revelation 目錄第四號，youth crew 這一支最被反覆引用的 7 吋。c-120 因這張在 MB 上被建成 Album 而不是 EP，反而是以「實體其實是 7 吋」為由退掉（該批第 2 條）；白名單開了之後這個矛盾消失——它在 MB 的型別本來就是 Album，走一般 Album 路徑即可收，不需動用 §5.5。池中 0 張。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Gorilla Biscuits 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Gorilla Biscuits」回 1 個同名實體，所釘的 0320a32e 排第 1、score 100，disambiguation「hardcore punk」。 年份：MB first-release-date 1988，year 取 1988（裁定 220：再發年不得蓋掉原盤年）。轄下 release 8 筆：1988 US Official Vinyl×7／1991 DE Official CD×12／1991 DE status 未填 CD×12／1992 US Official CD×12／1995 US Official CD×12／2011 US Official 7\" Vinyl×7／無日期 US Official CD×12／無日期 XW Official Digital Media×12（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/96ae45ee/front 實測回 200。Apple：us 店命中 collectionId 90254613（Apple 標題「Gorilla Biscuits」、Apple 年份 1988），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。 型別與實體不一致（c-120 第 2 條）：MB primary-type 為 Album、secondary-types 為空，但 1988 年首版 release 的 media 是 Vinyl 7 軌，實體是 7 吋。本卡依 MB 型別以 Album 收錄，例外欄位（genreException／exceptionReason／exceptionEvidenceUrls）依 §5.5 規則留空——非 Album 才走白名單，帶了例外欄位反而會被 chk-prop 判為「非合輯卻帶例外欄位」。版本軌數分歧（裁定 251）：黑膠 7 軌、CD 12 軌，差距來自 CD 版併入 1987 年 demo，label 欄已寫明所釘的是哪一版。",
+  "mbNote": "釘 release-group 96ae45ee-871c-40b1-9f50-ca0c6c4f5c16。回問 inc=artist-credits+releases+media 確認 primary-type Album、secondary-types 空、first-release-date 1988。轄下 8 筆：1988 US Official Vinyl 7 軌（所釘，label-info Revelation Records／Revelation:4）／1991 DE Official CD 12 軌／1991 DE CD 12 軌（status 未填）／1992 US Official CD 12 軌／1995 US Official CD 12 軌／2011 US Official 7\" Vinyl 7 軌／無日期 US Official CD 12 軌／無日期 XW Official 數位 12 軌。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Judge 的第一張實體，也是 Schism 這條由 Youth of Today 成員自營的廠牌線的代表作：1988 年五首歌把 straight edge 從 Youth of Today 的正面號召翻成對立與審判的語氣，整條 90 年代 hardline 由此起算。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/1c287987-a434-4beb-9005-00d376698c42",
+   "https://en.wikipedia.org/wiki/Judge_(band)",
+   "https://en.wikipedia.org/wiki/Schism_Records"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Judge New York Crew 7\"；Schism Skiz-2；Judge NYC 1988",
+  "reissuedBy": "1992-01-01 XW 數位 5 軌",
+  "g": "b",
+  "artist": "Judge",
+  "album": "New York Crew",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Schism（catno Skiz-2，US 1988，7 吋黑膠 5 軌；1992-01-01 的 XW 數位版同為 5 軌）",
+  "why": "池中 0 張；c-120 收的《Bringin' It Down》(1989) 在這張之後，而 Judge 被記住的第一份錄音是這張 7 吋。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Judge 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Judge」回 149 個同名實體，所釘的 3827fbb6 排第 4、score 90，disambiguation「US straight edge punk band」。 年份：MB first-release-date 1988，year 取 1988（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1988 US Official 7\" Vinyl×5／1992-01-01 XW Official Digital Media×5（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/1c287987/front 實測回 200。Apple：us 店命中 collectionId 1471235742（Apple 標題「New York Crew」、Apple 年份 1989），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。 ⚠ 短掛名回問（裁定 179／250 的最極端實例之一）：artist:\"Judge\" 回 149 個同名實體，所釘 3827fbb6 排第 4、score 90——排序前三名都不是目標，score 完全不可作判準，唯一分得出來的是 disambiguation「US straight edge punk band」。年份分歧（裁定 220）：MB first-release-date 1988，Apple 命中的 collectionId 1471235742 標 1989，year 取 MB 的 1988。",
+  "mbNote": "釘 release-group 1c287987-a434-4beb-9005-00d376698c42。primary-type EP、secondary-types 空、first-release-date 1988。轄下 2 筆：1988 US Official 7\" Vinyl 5 軌（所釘，label-info Schism／Skiz-2）／1992-01-01 XW Official 數位 5 軌。刻意不釘：898d0538《No Apologies》(1992)——c-120 回問確認唯一 release 是德版 Bootleg（裁定 43／57）；f8a7f887《Chung King Can Suck It LP》——RG 標題把「LP」寫進盤名，c-120 第 4.5 節留待本機裁定。"
+ },
+ {
+  "releaseType": "Album",
+  "genreException": "",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Side by Side You're Only Young Once；Side by Side Revelation 5；You’re Only Young Once…（MB 彎引號原字形）",
+  "reissuedBy": "1992 年《You're Only Young Once... So Do It Right》與 1997 年《You're Only Young Once》為兩個另建的整編 release-group",
+  "g": "b",
+  "artist": "Side by Side",
+  "album": "You're Only Young Once...",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Revelation Records（catno Revelation:5，US 1988，7 吋黑膠 7 軌，MB 名下有兩筆同規格的 1988 US 7 吋；另有一筆 1988 XW 數位 10 軌）",
+  "why": "c-120「一張都收不到」的九支團之一，池中零。Revelation 目錄第五號，youth crew 正典裡最常被列入必聽的一張 7 吋。c-120 是以「MB 標 Album 但實體是 7 吋」為由退掉（該批第 2 條）；本批照 MB 型別以 Album 收，那個矛盾自然消解。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Side by Side 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Side by Side」回 3 個同名實體，所釘的 8dc812b1 排第 1、score 100，disambiguation「Hardcore / youth crew band」。 年份：MB first-release-date 1988，year 取 1988（裁定 220：再發年不得蓋掉原盤年）。轄下 release 3 筆：1988 US Official 7\" Vinyl×7／1988 US Official 7\" Vinyl×7／1988 XW Official Digital Media×10（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/d217f68a/front 實測回 200。Apple：us 店命中 collectionId 1606212228（Apple 標題「You're Only Young Once...」、Apple 年份 1988），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。 字形裁定（延伸 c-120 第 5 條）：MB 原標題是「You’re Only Young Once…」，用 U+2019 彎引號與 U+2026 省略號。實掃卡池 14,424 列，ASCII 直引號 774 張 vs 彎引號 26 張、ASCII 三點 82 張 vs U+2026 26 張，兩項都是 ASCII 為多數形；Apple 命中的 collectionId 1606212228 標題也寫成 ASCII 的「You're Only Young Once...」。因此盤名一律寫 ASCII 直引號與三個 ASCII 句點，MB 原字形記入 queryAlias。型別與實體不一致（c-120 第 2 條）：MB primary-type Album、secondary-types 空，但兩筆 1988 US release 的 media 都是 7\" Vinyl 7 軌；依 MB 型別以 Album 收錄，例外欄位留空。同名整編風險：名下另有 1992 與 1997 兩個整編 release-group，盤名與本張高度接近，須以 rgMbid 分辨。",
+  "mbNote": "釘 release-group d217f68a-dc71-4608-9d20-94d2e4692a2f。primary-type Album、secondary-types 空、first-release-date 1988。轄下 3 筆：1988 US Official 7\" Vinyl 7 軌 ×2（所釘其一，label-info Revelation Records，catno 記為「5」與「REVELATION:5」兩式）／1988 XW Official 數位 10 軌。刻意不釘：8e9406cf《You're Only Young Once... So Do It Right》(1992，Album＋Compilation)、11040c78《You're Only Young Once》(1997，Album＋Compilation)。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Revelation 目錄第十號，也是「一支團只有兩張 7 吋卻定義了一個世代」最極端的例子：Chain of Strength 名下三個 release-group 全部不是長篇，這張 1989 年的 7 吋是 youth crew 從紐約擴散到加州之後最被引用的一張。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/f84a15aa-5ea5-3880-ac3b-41cc029785de",
+   "https://en.wikipedia.org/wiki/Revelation_Records",
+   "https://en.wikipedia.org/wiki/Youth_crew"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Chain of Strength True Till Death 7\"；Revelation 10；CoS True Till Death",
+  "reissuedBy": "1995 年的《The One Thing That Still Holds True》(CD) 把本張與 1990 年的 7 吋一併收錄",
+  "g": "b",
+  "artist": "Chain of Strength",
+  "album": "True Till Death",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "Revelation Records（catno Revelation:10，US 1989，7 吋黑膠 6 軌，MB 名下有兩筆同規格的 1989 US 7 吋）",
+  "why": "c-120「一張都收不到」的九支團之一，池中零，而且是九支裡最徹底的一支——名下三個 release-group 全是 EP，不開白名單就永遠是零。這批把它的原盤 7 吋與 1995 年的完整記錄各收一張。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Chain of Strength 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Chain of Strength」回 1 個同名實體，所釘的 81a3c11e 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1989，year 取 1989（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1989 US Official 7\" Vinyl×6／1989 US Official 7\" Vinyl×6（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/f84a15aa/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 0 筆、de 0 筆，無一筆掛名與盤名同時對得上）。 掛名回問：artist:\"Chain of Strength\" 只回 1 個實體、score 100，但 disambiguation 為空白——依裁定 250 後半，行文不得以 disambiguation 背書本名，改以名下目錄（三個 release-group 全在 Revelation 系）為身分依據。catno 重複：本張與 1995 年的 CD 在 MB 上都記為 Revelation 10／REV10，兩者是不同 release-group，須以 rgMbid 分辨。",
+  "mbNote": "釘 release-group f84a15aa-5ea5-3880-ac3b-41cc029785de。primary-type EP、secondary-types 空、first-release-date 1989。轄下 2 筆同規格：1989 US Official 7\" Vinyl 6 軌 ×2，label-info Revelation Records（catno「10」與「Revelation:10」兩式）。刻意不釘：4da4d192《What Holds Us Apart》(1990，7 吋 4 軌，CAA 404)。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Alone in a Crowd 在 MB 上唯一收得進來的實體，也是 1989 年紐約與加州兩支 straight edge 團對切的 split 7 吋：Ray Cappo 一系的人脈把兩地場景接上，Flux 這張是那次接合的實物。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/23715865-c3a9-3afc-aeeb-6723d15fc2fe",
+   "https://en.wikipedia.org/wiki/Youth_crew",
+   "https://en.wikipedia.org/wiki/Split_album"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Alone in a Crowd Inside Out split 7\"；Flux FR-2；AIAC Inside Out split 1989",
+  "reissuedBy": "1994 XE CD 7 軌",
+  "g": "b",
+  "artist": "Alone in a Crowd / Inside Out",
+  "album": "Alone in a Crowd / Inside Out",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "Flux Records（catno FR-2，US 1989，7 吋黑膠 4 軌，split；1994 XE CD 版 7 軌是另一版）",
+  "why": "派工信明列 split 屬本批範圍。依 c-120 第 3 條寫明：收這張不是因為它是 Alone in a Crowd 最重要的錄音，而是因為它是 MB 上唯一收得進來的實體——該團名下另一個 release-group 是 2014 年的數位版、primary-type 為 null。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Alone in a Crowd 0 張、Inside Out 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Alone in a Crowd」回 1 個同名實體，所釘的 1639f026 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1989，year 取 1989（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1989 US Official 7\" Vinyl×4／1994 XE Official CD×7（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/23715865/front 實測回 404。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 2 筆、gb 2 筆、de 2 筆，無一筆掛名與盤名同時對得上）。 封面 CAA 回 404（屬「唯一收得到的碟」的例外，依派工信第 1 條照收）。⚠ 同名不同團：本張 artist-credit 的「Inside Out」是紐約的實體 ed113a79（disambiguation「New York hardcore band」，artist:\"Inside Out\" 15 個同名實體中排第 7、score 94），與本組另一張《No Spiritual Surrender》所釘的洛杉磯實體 0049c4d7（disambiguation「Los Angeles area hardcore band」，排第 1、score 100）是兩支不同的團。兩張卡的掛名字串不同（本張為 joint credit「Alone in a Crowd / Inside Out」），不會在卡池折成同一鍵，但文案不得把兩者當同一支團。Alone in a Crowd 一側：artist:\"Alone in a Crowd\" 只回 1 個實體、score 100，disambiguation 為空白，依裁定 250 後半不得以 disambiguation 背書本名。",
+  "mbNote": "釘 release-group 23715865-c3a9-3afc-aeeb-6723d15fc2fe。primary-type EP、secondary-types 空、first-release-date 1989。artist-credit 為 1639f026（Alone in a Crowd）＋ ed113a79（Inside Out，紐約實體）。轄下 2 筆：1989 US Official 7\" Vinyl 4 軌（所釘，label-info Flux Records／FR-2）／1994 XE Official CD 7 軌。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Inside Out 解散前唯一的錄音，Revelation REV019：Zack de la Rocha 在 Rage Against the Machine 之前的樂團，四首歌成為 90 年代 straight edge 往情緒硬蕊分岔的起點，被後續作品反覆引用。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/87d45a29-ae5e-351e-935e-1f0eb4ad8147",
+   "https://en.wikipedia.org/wiki/No_Spiritual_Surrender",
+   "https://en.wikipedia.org/wiki/Inside_Out_(band)"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Inside Out No Spiritual Surrender 7\"；Revelation REV019；Inside Out Zack de la Rocha",
+  "reissuedBy": "1994-07-01 US CD 6 軌與卡帶 6 軌、1996-06-25 US 黑膠 6 軌",
+  "g": "b",
+  "artist": "Inside Out",
+  "album": "No Spiritual Surrender",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Revelation Records（catno REV019，US 1990，黑膠 4 軌；1994-07-01 起的 CD／卡帶與 1996 年黑膠一律 6 軌，是加料再發）",
+  "why": "c-120「一張都收不到」的九支團之一，池中零。名下五個 release-group 裡三個是 Live、一個是 CAA 404 的 demo，這張是唯一形態與封面都齊備的碟，也正好是這支團的代表作。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Inside Out 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Inside Out」回 15 個同名實體，所釘的 0049c4d7 排第 1、score 100，disambiguation「Los Angeles area hardcore band」。 年份：MB first-release-date 1990，year 取 1990（裁定 220：再發年不得蓋掉原盤年）。轄下 release 4 筆：1990 US Official Vinyl×4／1994-07-01 US Official CD×6／1994-07-01 US Official Cassette×6／1996-06-25 US Official Vinyl×6（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/87d45a29/front 實測回 200。Apple：us 店命中 collectionId 91742440（Apple 標題「No Spiritual Surrender - EP」、Apple 年份 1990），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。 ⚠ 同名不同團：所釘的是洛杉磯／橙縣的實體 0049c4d7（disambiguation「Los Angeles area hardcore band」，artist:\"Inside Out\" 15 個同名實體中排第 1、score 100）；本組另一張 split《Alone in a Crowd / Inside Out》掛的是紐約的實體 ed113a79，兩者不是同一支團。版本軌數分歧（裁定 251）：1990 年首版 4 軌，1994 與 1996 的再發皆 6 軌，label 欄已寫明所釘的是哪一版。",
+  "mbNote": "釘 release-group 87d45a29-ae5e-351e-935e-1f0eb4ad8147。primary-type EP、secondary-types 空、first-release-date 1990。轄下 4 筆：1990 US Official Vinyl 4 軌（所釘，label-info Revelation Records／REV019）／1994-07-01 US Official CD 6 軌／1994-07-01 US Official Cassette 6 軌／1996-06-25 US Official Vinyl 6 軌。刻意不釘：25ee1b30《Demo》(1989，CAA 404)、f6db3d13《Benefit 7\"》(1991，EP＋Live，CAA 404)、63e9499a 與 aaae682b 兩張現場錄音。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Judge 在《Bringin' It Down》之後、解散之前的最後一份錄音，Revelation 目錄第二十號：三首歌收束了 1988–1990 那一波 straight edge 最強硬的一支，也是 Revelation 前二十號目錄的終點。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/a219a35b-85a8-35a1-b3e3-c5efcdaddbab",
+   "https://en.wikipedia.org/wiki/Judge_(band)",
+   "https://en.wikipedia.org/wiki/Revelation_Records"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Judge There Will Be Quiet After the Storm；Revelation 20；Judge 1990 EP",
+  "reissuedBy": "1994-09-27 XW 數位 3 軌",
+  "g": "b",
+  "artist": "Judge",
+  "album": "There Will Be Quiet...",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Revelation Records（catno Revelation: 20，US 1990，CD 3 軌；1994-09-27 的 XW 數位版同為 3 軌）",
+  "why": "本批 Judge 取 2 張（1988 的《New York Crew》與本張），與 c-120 的《Bringin' It Down》構成完整三級。池中 0 張。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Judge 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Judge」回 149 個同名實體，所釘的 3827fbb6 排第 4、score 90，disambiguation「US straight edge punk band」。 年份：MB first-release-date 1990，year 取 1990（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1990 US Official CD×3／1994-09-27 XW Official Digital Media×3（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/a219a35b/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 1 筆、gb 1 筆、de 1 筆，無一筆掛名與盤名同時對得上）。 ⚠ 短掛名回問：artist:\"Judge\" 回 149 個同名實體，所釘 3827fbb6 排第 4、score 90，只有 disambiguation「US straight edge punk band」分得出來（裁定 250）。盤名結尾的三個句點是 MB release-group 標題原文（ASCII 句點，非 U+2026）。",
+  "mbNote": "釘 release-group a219a35b-85a8-35a1-b3e3-c5efcdaddbab。primary-type EP、secondary-types 空、first-release-date 1990。轄下 2 筆：1990 US Official CD 3 軌（所釘，label-info Revelation Records／「Revelation: 20」）／1994-09-27 XW Official 數位 3 軌。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Integrity 的第一張黑膠：1990 年這張 7 吋把 straight edge 的道德語言接上克里夫蘭的極端金屬語法，後來被稱作 holy terror 的整條支線都以這張為起點。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/b6666c33-4091-48e2-b3c3-dad5b38a780c",
+   "https://en.wikipedia.org/wiki/Integrity_(band)",
+   "https://en.wikipedia.org/wiki/Metalcore"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Integrity In Contrast of Sin 7\"；Dark Empire DARK 003-7；Integrity 1990 EP",
+  "reissuedBy": "2019-02-05 XW 數位 5 軌，另有一筆無日期的 XW 數位 8 軌",
+  "g": "b",
+  "artist": "Integrity",
+  "album": "In Contrast of Sin",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dark Empire（catno DARK 003-7，1990，7 吋黑膠 5 軌，MB 未填國別；2019-02-05 數位版 5 軌、另一筆無日期數位版 8 軌）",
+  "why": "池中 0 張；c-120 收的《Those Who Fear Tomorrow》(1991) 在這張之後。Integrity 名下五張 EP 裡有四張 CAA 回 404，這張是唯一封面已備妥者。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Integrity 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Integrity」回 18 個同名實體，所釘的 f626335d 排第 1、score 100，disambiguation「US metalcore/hardcore punk band」。 年份：MB first-release-date 1990，year 取 1990（裁定 220：再發年不得蓋掉原盤年）。轄下 release 3 筆：1990 無國別 Official 7\" Vinyl×5／2019-02-05 XW Official Digital Media×5／無日期 XW Official Digital Media×8（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/b6666c33/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 0 筆、de 0 筆，無一筆掛名與盤名同時對得上）。 所釘 release 的 country 欄在 MB 為空。版本軌數分歧（裁定 251）：7 吋 5 軌、2019 數位 5 軌、另一筆無日期數位 8 軌。掛名回問：artist:\"Integrity\" 回 18 個同名實體，所釘 f626335d 排第 1、score 100，disambiguation「US metalcore/hardcore punk band」。地理邊界：本團為克里夫蘭而非紐約，收入 b 組是依 straight edge 這條線而非地理。",
+  "mbNote": "釘 release-group b6666c33-4091-48e2-b3c3-dad5b38a780c。primary-type EP、secondary-types 空、first-release-date 1990。轄下 3 筆：1990 Official 7\" Vinyl 5 軌（所釘，國別未填，label-info Dark Empire／DARK 003-7）／2019-02-05 XW Official 數位 5 軌／無日期 XW Official 數位 8 軌。刻意不釘：0aca9215《Harder They Fall》(1989)、8eac40b8《Scar of a Woman》(1991)、55a2f96c《Integrity》(1992)、bf08a755《Les 120 journees de Sodome》(1992)——CAA 皆回 404。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "水牛城這支團在 Victory 簽下他們之前的第一份錄音：1991 年四首歌的卡帶，是 Snapcase 把 straight edge 往後來那種切分節奏推進的最早樣本。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/f7f3de35-310d-4346-add5-70cadd9486c7",
+   "https://en.wikipedia.org/wiki/Snapcase",
+   "https://en.wikipedia.org/wiki/Demo_(music)"
+  ],
+  "selfTitled": true,
+  "queryAlias": "Snapcase 1991 demo；Snapcase s/t cassette；Snapcase first demo",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Snapcase",
+  "album": "Snapcase",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB label-info 未填廠牌（US 1991，卡帶 4 軌，樂團自製；MB 名下只有這一筆 release）",
+  "why": "池中 0 張；c-120 收的《Lookinglasself》(1993) 是他們的 Victory 首作，這張補的是那之前的一級。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Snapcase 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Snapcase」回 1 個同名實體，所釘的 90f7f8df 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1991，year 取 1991（裁定 220：再發年不得蓋掉原盤年）。轄下 release 1 筆：1991 US Official Cassette×4（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/f7f3de35/front 實測回 200。Apple：us 店命中 collectionId 493675039（Apple 標題「Snapcase vs. Boy Sets Fire - EP」、Apple 年份 1999），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。 ⚠ Apple 盤名字串比對陷阱：以「Snapcase Snapcase」查 us 店會配到 1999 年的 split《Snapcase vs. Boy Sets Fire - EP》(collectionId 493675039)，那是本組另一張卡的碟、不是本張——本張三店實為未命中，Apple 配對一律用 collectionId、不得用盤名字串。掛名回問：artist:\"Snapcase\" 只回 1 個實體、score 100，但 disambiguation 為空白，依裁定 250 後半不得以 disambiguation 背書本名。",
+  "mbNote": "釘 release-group f7f3de35-310d-4346-add5-70cadd9486c7。primary-type EP、secondary-types 空、first-release-date 1991。轄下唯一 release：1991 US Official Cassette 4 軌，label-info 未填。刻意不釘：274f0873《Two Songs》(2002)。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "New Age Records 目錄第十號：這支紐澤西團的出道 7 吋是加州 New Age 這條 straight edge 廠牌線把東岸樂團納進目錄的早期案例，四首歌之後才有 1994 年的《I Refuse.》。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/25770842-41a3-496d-818e-e56f0e9b6878",
+   "https://en.wikipedia.org/wiki/New_Age_Records",
+   "https://en.wikipedia.org/wiki/Straight_edge"
+  ],
+  "selfTitled": true,
+  "queryAlias": "Ressurection 1991 7\"；New Age NA10；Ressurection s/t（團名拼寫為 Ressurection，非 Resurrection）",
+  "reissuedBy": "1995 US CD 4 軌",
+  "g": "b",
+  "artist": "Ressurection",
+  "album": "Ressurection",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "New Age Records（catno NA10，US 1991，7 吋黑膠 4 軌；1995 年 US CD 版同為 4 軌）",
+  "why": "池中 0 張；c-120 收的《I Refuse.》(1994) 在這張之後。本張封面 CAA 回 200，而 c-120 記錄《I Refuse.》的 CAA 是 404——先補這張等於先補上這支團封面齊備的那一端。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Ressurection 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Ressurection」回 4 個同名實體，所釘的 6401b0cd 排第 1、score 100，disambiguation「hardcore band from New Jersey」。 年份：MB first-release-date 1991，year 取 1991（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1991 US Official 7\" Vinyl×4／1995 US Official CD×4（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/25770842/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 15 筆、de 15 筆，無一筆掛名與盤名同時對得上）。 拼寫：團名在 MB 與唱片上都寫作「Ressurection」（少一個 r），非一般拼法 Resurrection，查詢與比對時兩種拼法都要試。掛名回問：artist:\"Ressurection\" 回 4 個同名實體，所釘 6401b0cd 排第 1、score 100，disambiguation「hardcore band from New Jersey」。",
+  "mbNote": "釘 release-group 25770842-41a3-496d-818e-e56f0e9b6878。primary-type EP、secondary-types 空、first-release-date 1991。轄下 2 筆：1991 US Official 7\" Vinyl 4 軌（所釘，label-info New Age Records／NA10）／1995 US Official CD 4 軌。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "紐澤西 straight edge 兩支團在 1991 年對切的 split 7 吋：Turning Point 在解散前把 youth crew 推向更慢更內省的寫法，這張與 No Escape 並置，是該地區場景在同一張唱片上的雙面切片。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/1d04e65f-986f-4420-9d70-fcccc2ddb0fc",
+   "https://en.wikipedia.org/wiki/Youth_crew",
+   "https://en.wikipedia.org/wiki/Split_album"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Turning Point No Escape split 7\"；Temperance TEMP-2；Turning Point split 1991",
+  "reissuedBy": "1997 US CD 4 軌",
+  "g": "b",
+  "artist": "Turning Point / No Escape",
+  "album": "Split",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "Temperance Records（catno TEMP-2，US 1991，7 吋黑膠 4 軌，split；1997 年 US CD 版同為 4 軌）",
+  "why": "派工信明列 split 屬本批範圍。池中兩支團都是 0 張；c-120 收的 Turning Point《It's Always Darkest Before the Dawn》(1990) 是單獨作品，與本張不同碟。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Turning Point 0 張、No Escape 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Turning Point」回 7 個同名實體，所釘的 19b7cbc9 排第 2、score 98，disambiguation「USA punk band」。 年份：MB first-release-date 1991，year 取 1991（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1991 US Official 7\" Vinyl×4／1997 US Official CD×4（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/1d04e65f/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 0 筆、de 0 筆，無一筆掛名與盤名同時對得上）。 盤名：MB 的 release-group 標題就是「Split」（該唱片本身無題名），依裁定 6／70／120 照 MB 文字寫，未自行改寫。joint artist-credit：19b7cbc9（Turning Point）＋9212b1ae（No Escape）。掛名回問：artist:\"Turning Point\" 回 7 個同名實體，所釘排第 2、score 98，disambiguation「USA punk band」；artist:\"No Escape\" 回 3 個，所釘排第 1、score 100，disambiguation「American hardcore band from Ocean City, New Jersey」。",
+  "mbNote": "釘 release-group 1d04e65f-986f-4420-9d70-fcccc2ddb0fc。primary-type EP、secondary-types 空、first-release-date 1991。轄下 2 筆：1991 US Official 7\" Vinyl 4 軌（所釘，label-info Temperance Records／TEMP-2）／1997 US Official CD 4 軌。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Earth Crisis 的出道 7 吋：1992 年四首歌把 straight edge 的素食與環境立場推成綱領，Syracuse 這一支後來被稱作 vegan straight edge 的路線由這張定調。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/6916eda3-6e2e-384a-8e33-8fbd7c44ae59",
+   "https://en.wikipedia.org/wiki/Earth_Crisis",
+   "https://en.wikipedia.org/wiki/Straight_edge"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Earth Crisis All Out War 7\"；Conviction Records 1992；EC All Out War EP",
+  "reissuedBy": "1995-03-30 US CD 4 軌、1995 US 7 吋 4 軌",
+  "g": "b",
+  "artist": "Earth Crisis",
+  "album": "All Out War",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "Conviction Records（MB label-info 未填 catno，US 1992，7 吋黑膠 4 軌；1995 年另有 US CD 與 US 7 吋兩筆再發，皆 4 軌）",
+  "why": "池中 0 張；c-120 收的《Destroy the Machines》(1995) 在這張與《Firestorm》之後。本批把 Earth Crisis 在 Victory 長篇之前的兩張 EP 一次補齊。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Earth Crisis 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Earth Crisis」回 1 個同名實體，所釘的 88a6037e 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1992，year 取 1992（裁定 220：再發年不得蓋掉原盤年）。轄下 release 3 筆：1992 US Official 7\" Vinyl×4／1995-03-30 US Official CD×4／1995 US Official 7\" Vinyl×4（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/6916eda3/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 7 筆、de 8 筆，無一筆掛名與盤名同時對得上）。 MB label-info 有廠牌名（Conviction Records）但 catalog-number 為空。掛名回問：artist:\"Earth Crisis\" 只回 1 個實體、score 100，但 disambiguation 為空白，依裁定 250 後半不得以 disambiguation 背書本名。",
+  "mbNote": "釘 release-group 6916eda3-6e2e-384a-8e33-8fbd7c44ae59。primary-type EP、secondary-types 空、first-release-date 1992。轄下 3 筆：1992 US Official 7\" Vinyl 4 軌（所釘，label-info Conviction Records，catno 未填）／1995-03-30 US Official CD 4 軌／1995 US Official 7\" Vinyl 4 軌。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "90 年代 hardcore 最被反覆引用的一張 EP：三首歌讓 Victory Records 的目錄與 vegan straight edge 這條路線同時定型，後續整條 metalcore 的節奏語法都能回指到這張的主riff。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/740d6f30-07cf-3176-9975-c5d879ead228",
+   "https://en.wikipedia.org/wiki/Firestorm_(EP)",
+   "https://en.wikipedia.org/wiki/Victory_Records"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Earth Crisis Firestorm EP；Victory VE12 CD；Firestorm 1993",
+  "reissuedBy": "1993 US CD 3 軌、1995 US CD 3 軌",
+  "g": "b",
+  "artist": "Earth Crisis",
+  "album": "Firestorm",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "Victory Europe（catno VE12 CD，DE 1993，CD 3 軌，MB 名下最早的一筆；另有 1993 US CD 與 1995 US CD 各 3 軌）",
+  "why": "這條線在 1993 年的節點，也是 b 組歷史地位最高的一張 EP 之一。池中 0 張。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Earth Crisis 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Earth Crisis」回 1 個同名實體，所釘的 88a6037e 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1993，year 取 1993（裁定 220：再發年不得蓋掉原盤年）。轄下 release 3 筆：1993 DE Official CD×3／1993 US Official CD×3／1995 US Official CD×3（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/740d6f30/front 實測回 200。Apple：us 店命中 collectionId 1558948772（Apple 標題「Firestorm - Single」、Apple 年份 1995），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。 年份分歧（裁定 220）：MB first-release-date 1993，Apple 命中的 collectionId 1558948772 標 1995（Apple 標題為「Firestorm - Single」），year 取 MB 的 1993。載體：MB 名下三筆全是 CD，最早一筆為德國 Victory Europe 版，label 欄已寫明所釘的是哪一版。",
+  "mbNote": "釘 release-group 740d6f30-07cf-3176-9975-c5d879ead228。primary-type EP、secondary-types 空、first-release-date 1993。轄下 3 筆：1993 DE Official CD 3 軌（所釘，label-info Victory Europe／VE12 CD）／1993 US Official CD 3 軌／1995 US Official CD 3 軌。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Chain of Strength 兩張 7 吋的完整記錄：這支團從未出過長篇，這張 1995 年由 Revelation 發行的 CD 是他們全部錄音第一次以單一實體流通，也是後來所有人認識這支團的入口。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/e37fc43e-3b87-38dd-8461-1f610b5249bb",
+   "https://en.wikipedia.org/wiki/Revelation_Records",
+   "https://en.wikipedia.org/wiki/Youth_crew"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Chain of Strength One Thing That Still Holds True；Revelation REV10 CD；CoS discography CD",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Chain of Strength",
+  "album": "The One Thing That Still Holds True",
+  "year": 1995,
+  "genres": [
+   "rock"
+  ],
+  "label": "Revelation Records（catno REV10，US 1995，CD；MB 名下兩筆同年 US CD，一筆 10 軌、一筆 11 軌）",
+  "why": "本批 Chain of Strength 取 2 張：1989 年的原盤 7 吋，加上這張把兩張 7 吋收攏的實體。九支「一張都收不到」的團裡，這支是名下三個 release-group 全為 EP 的一支，兩張一起收才把它的全貌立起來。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Chain of Strength 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Chain of Strength」回 1 個同名實體，所釘的 81a3c11e 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1995，year 取 1995（裁定 220：再發年不得蓋掉原盤年）。轄下 release 2 筆：1995 US Official CD×10／1995 US Official CD×11（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/e37fc43e/front 實測回 200。Apple：us 店命中 collectionId 91072229（Apple 標題「The One Thing That Still Holds True」、Apple 年份 1995），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。 secondary-types 含 Compilation：MB primary-type 為 EP、secondary-types [\"Compilation\"]，本卡依 MB primary-type 以 EP 走 §5.5 白名單，非走 §5.6。版本軌數分歧（裁定 251）：兩筆同年 US CD 一筆 10 軌、一筆 11 軌。catno 重複：與 1989 年的 7 吋在 MB 上都記為 Revelation 10／REV10，兩者是不同 release-group。年份（裁定 220）：year 取 MB 的 1995（本張本身即 1995 年發行的整編實體），原盤年 1989／1990 已寫入 why 與 mbNote。",
+  "mbNote": "釘 release-group e37fc43e-3b87-38dd-8461-1f610b5249bb。primary-type EP、secondary-types [\"Compilation\"]、first-release-date 1995。轄下 2 筆：1995 US Official CD 10 軌（所釘，label-info Revelation Records／REV10）／1995 US Official CD 11 軌。收錄內容為 1989 年《True Till Death》(f84a15aa) 與 1990 年《What Holds Us Apart》(4da4d192) 兩張 7 吋。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "Snapcase 在《Lookinglasself》與《Progression Through Unlearning》之間的接點：1995 年這張四首歌的 EP 是 Victory 目錄裡把 straight edge 推向更機械化節奏的一步，後段 90 年代的 metalcore 寫法由此擴散。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/7f3f8ed1-974d-364c-9df4-dacd673a9823",
+   "https://en.wikipedia.org/wiki/Snapcase",
+   "https://en.wikipedia.org/wiki/Victory_Records"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Snapcase Steps EP；Victory VR024 CD；Snapcase 1995 EP",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Snapcase",
+  "album": "Steps",
+  "year": 1995,
+  "genres": [
+   "rock"
+  ],
+  "label": "Victory Records（catno VR024 CD，US 1995，CD 4 軌；MB 名下只有這一筆 release）",
+  "why": "本批 Snapcase 取 3 張（1991 demo、本張、1999 split），把 c-120 只收一張 Album 的空白補成一條完整的軌跡。池中 0 張。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Snapcase 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Snapcase」回 1 個同名實體，所釘的 90f7f8df 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1995，year 取 1995（裁定 220：再發年不得蓋掉原盤年）。轄下 release 1 筆：1995 US Official CD×4（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/7f3f8ed1/front 實測回 200。Apple：us 店命中 collectionId 1558948326（Apple 標題「Steps - EP」、Apple 年份 1995），非 cleaned 版；配對一律用 collectionId、不得用盤名字串。",
+  "mbNote": "釘 release-group 7f3f8ed1-974d-364c-9df4-dacd673a9823。primary-type EP、secondary-types 空、first-release-date 1995。轄下唯一 release：1995 US Official CD 4 軌，label-info Victory Records（VR024 CD）。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "108 在 Equal Vision 兩張長篇之間留下的 EP：五首歌把 Krishnacore 的教義語言推到最不妥協的一端，也是這條 Krishna 硬蕊支線在歐洲被獨立發行的實例。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/5b0f62c9-e89c-3b3d-b3eb-de9b6ed6438e",
+   "https://en.wikipedia.org/wiki/108_(band)",
+   "https://en.wikipedia.org/wiki/Krishnacore"
+  ],
+  "selfTitled": false,
+  "queryAlias": "108 Curse of Instinct EP；Lost and Found LF 251CD；108 1996 EP",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "108",
+  "album": "Curse of Instinct",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "Lost and Found Records（catno LF 251CD，DE 1996，CD 5 軌——德國壓片；MB 名下只有這一筆 release）",
+  "why": "池中 0 張；c-120 收的《Songs of Separation》(1994) 與《Threefold Misery》(1996) 都是 Album，本批補的是同期的 EP 形態。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，108 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「108」回 17 個同名實體，所釘的 7f0c252a 排第 1、score 100，disambiguation「Krishna-hardcore band」。 年份：MB first-release-date 1996，year 取 1996（裁定 220：再發年不得蓋掉原盤年）。轄下 release 1 筆：1996 DE Official CD×5（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/5b0f62c9/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 0 筆、de 0 筆，無一筆掛名與盤名同時對得上）。 所釘 release 的 country 為 DE（德國壓片），非美國本地發行——店面設為 us 時，這張的可得性與其他張不同。⚠ 短掛名回問：artist:\"108\" 回 17 個同名實體，所釘 7f0c252a 排第 1、score 100，disambiguation「Krishna-hardcore band」——純數字掛名在字串比對上極易誤中，配對務必用 MBID。",
+  "mbNote": "釘 release-group 5b0f62c9-e89c-3b3d-b3eb-de9b6ed6438e。primary-type EP、secondary-types 空、first-release-date 1996。轄下唯一 release：1996 DE Official CD 5 軌，label-info Lost and Found Records（LF 251CD）。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "108 解散前最後一批錄音之一：四首歌收束了 90 年代 Krishnacore 最激烈的一支，也是 Lost and Found 這條把美國硬蕊帶進歐洲流通的廠牌線在該時期的代表發行。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/f08eebd1-287b-4d05-b48a-e2f09f0086eb",
+   "https://en.wikipedia.org/wiki/Krishnacore",
+   "https://en.wikipedia.org/wiki/108_(band)"
+  ],
+  "selfTitled": false,
+  "queryAlias": "108 Serve And Defy EP；Lost and Found LF 254；108 1997 EP",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "108",
+  "album": "Serve And Defy",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "Lost and Found Records（catno LF 254，DE 1997，CD 4 軌——德國壓片；MB 名下只有這一筆 release）",
+  "why": "本批 108 取 2 張 EP，與 c-120 的兩張 Album 併起來構成這支團的完整形態。池中 0 張。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，108 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「108」回 17 個同名實體，所釘的 7f0c252a 排第 1、score 100，disambiguation「Krishna-hardcore band」。 年份：MB first-release-date 1997，year 取 1997（裁定 220：再發年不得蓋掉原盤年）。轄下 release 1 筆：1997 DE Official CD×4（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/f08eebd1/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 0 筆、gb 0 筆、de 0 筆，無一筆掛名與盤名同時對得上）。 所釘 release 的 country 為 DE（德國壓片）。⚠ 短掛名回問：artist:\"108\" 回 17 個同名實體，純數字掛名在字串比對上極易誤中，配對務必用 MBID。盤名的「And」在 MB 原文為大寫，照 MB 文字寫（裁定 6／70／120）。",
+  "mbNote": "釘 release-group f08eebd1-287b-4d05-b48a-e2f09f0086eb。primary-type EP、secondary-types 空、first-release-date 1997。轄下唯一 release：1997 DE Official CD 4 軌，label-info Lost and Found Records（LF 254）。"
+ },
+ {
+  "releaseType": "EP",
+  "genreException": "hardcore-7inch",
+  "exceptionReason": "把兩支團互相翻唱對方曲目做成的雙 7 吋 split：Equal Vision 在 1999 年用這張把 90 年代 straight edge 與新一代情緒硬蕊放在同一張唱片上，是這條線世代交替時最明確的一份文件。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/5e229884-8d49-3b6f-b349-71ca9f4207e4",
+   "https://en.wikipedia.org/wiki/Equal_Vision_Records",
+   "https://en.wikipedia.org/wiki/Boysetsfire"
+  ],
+  "selfTitled": true,
+  "queryAlias": "Snapcase vs Boy Sets Fire；Equal Vision EVR51；snapcase boysetsfire split 7\"",
+  "reissuedBy": "1999-08-17 US CD 4 軌、2003-03-11 XW 數位 4 軌",
+  "g": "b",
+  "artist": "snapcase vs boysetsfire",
+  "album": "snapcase vs boysetsfire",
+  "year": 1999,
+  "genres": [
+   "rock"
+  ],
+  "label": "Equal Vision Records（catno EVR51，US 1999-07-27，雙 7 吋黑膠 2 軌＋2 軌；1999-08-17 的 US CD 版 4 軌與 2003 數位版 4 軌是另外兩版）",
+  "why": "派工信明列 split 屬本批範圍，這張是 b 組年份最晚的一張，收束整組的時間軸。池中兩支團皆 0 張。",
+  "risk": "撞卡：實掃 seed_cards.json 全 14,424 列，Snapcase 0 張、boysetsfire 0 張。 掛名回問（裁定 179／250）：MB artist 搜尋「Snapcase」回 1 個同名實體，所釘的 90f7f8df 排第 1、score 100，disambiguation「（空白）」。 年份：MB first-release-date 1999-07-27，year 取 1999（裁定 220：再發年不得蓋掉原盤年）。轄下 release 3 筆：1999-07-27 US Official 7\" Vinyl×2+7\" Vinyl×2／1999-08-17 US Official CD×4／2003-03-11 XW Official Digital Media×4（裁定 251：軌數隨載體變動，label 欄已寫明所釘的是哪一版）。封面 CAA release-group/5e229884/front 實測回 200。Apple：us／gb／de 三店以「掛名＋盤名」搜尋皆未命中（us 回 1 筆、gb 1 筆、de 1 筆，無一筆掛名與盤名同時對得上）。 joint artist-credit：MB 的 artist-credit 是「snapcase vs boysetsfire」（90f7f8df＋ba561cc7），全小寫為 MB 原字形，依裁定 6／70／120 照寫。⚠ 盤名字串比對陷阱：以「Snapcase Snapcase」查 Apple us 店會誤中本張的 collectionId 493675039——本組的 Snapcase 同名 demo 卡與本張必須以 collectionId 或 rgMbid 分辨，不得用盤名字串。以「snapcase vs boysetsfire」查 artist 回 0 個實體（那是 joint credit、不是 MB 藝人實體）。",
+  "mbNote": "釘 release-group 5e229884-8d49-3b6f-b349-71ca9f4207e4。primary-type EP、secondary-types 空、first-release-date 1999-07-27。轄下 3 筆：1999-07-27 US Official 雙 7\" Vinyl（2 軌＋2 軌，所釘，label-info Equal Vision Records／EVR51）／1999-08-17 US Official CD 4 軌／2003-03-11 XW Official 數位 4 軌。"
+ }
+]
