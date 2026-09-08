@@ -1,0 +1,122 @@
+[
+ {
+  "key": "desc2:Los Bravos|Black Is Black",
+  "artist": "Los Bravos",
+  "album": "Black Is Black",
+  "facts": [
+   {
+    "f": "release-group 5f568f57 的欄位：title「Black Is Black」、artist-credit「Los Bravos」（藝人實體 78357965，Group／**ES**，disambiguation 空，life-span **1965 起、1968 結束**）、first-release-date **1966**、primary-type Album、**secondary-types 空**、disambiguation 空。轄下 **只有 2 個 release，兩筆都不是西班牙盤**：1966 **US** Press Records **PR73003**（12 吋黑膠、12 軌、Official、text-representation language **eng**）與 2009-01-29 **XW（全球）** BMG Special Products（Digital Media、12 軌、Official、barcode 888880986924）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5f568f57-1bda-4b71-9960-bb9a4916b7ca?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1966 年 US 原盤（Press Records PR73003）逐軌與長度：A1〈Black Is Black〉2:53、A2〈Trapped〉2:18、A3〈Baby, Baby〉2:33、A4〈Make It Easy for Me〉2:39、A5〈She Believes in Me〉2:58、A6〈I Want a Name〉2:38、B1〈I Don't Care〉2:23、B2〈Stop That Girl〉2:34、B3〈I'm Cuttin' Out〉2:57、B4〈Don't Be Left Out in the Cold〉2:10、B5〈You Won't Get Far〉2:15、B6〈Baby, Believe Me〉2:14。**12 首沒有一首超過三分鐘**：最長 2:58、最短 2:10，全片十二首的長度差只有 48 秒。**12 個曲名全部是英語，一首西班牙語曲名都沒有。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5f568f57-1bda-4b71-9960-bb9a4916b7ca&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **20 個 release-group**：純 Album（secondary-types 空）5 個、Album/Soundtrack 1 個、Album/Compilation 9 個、Single 5 個。五張純 Album 依 first-release-date 排：**1966《Black Is Black》、1966《Los Bravos》**、1968《Bring A Little Lovin'》、1968《Las canciones de la película Dame un poco de amor》、1969《Ilustrisimos Bravos》，另有一個無年份的《Los Bravos》。**1966 這一年名下同時有兩個純 Album，兩者的 first-release-date 都只記到年、記不到月日——資料庫端無法判定哪一張在先。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=78357965-ea3e-409b-90e7-8c0dfb116288&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1966 原盤的十二軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有錄音地點、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**錄音年、錄音地與團員組成在資料庫端全部是空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/a31dde20-ad8c-4776-a1a7-2dabb1f8c9d0?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 303141527**《Black Is Black》12 軌、℗ 1999 BMG Special Products：**逐軌與 1966 原盤同名同序**（Black Is Black／Trapped／Baby, Baby／Make It Easy for Me／She Believes In Me／I Want a Name／I Don't Care／Stop That Girl／I'm Cuttin' Out／Don't Be Left Out In the Cold／You Won't Get Far／Baby, Believe Me），對得上資料庫端那筆 BMG Special Products 的數位發行。**駁回策展層回報的 306366988**——那是單軌的《Black Is Black (New Stereo Version)》、℗ 2009 Great American Music Company，不是本張。同一批候選裡另有 255263774《Los Bravos》24 軌（℗ 2002，把本張十二軌打散重排、再混進十二首西語曲）、1548796929《Black is Black (Live)》單軌、1676185432／1548232267 等多筆 remix 與 dance mix 單曲，以及兩筆第三方卡拉 OK 版，**全部駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=303141527&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌沒有一首超過三分鐘，最長 2:58、最短 2:10，整張碟的長度差只有 48 秒",
+   "資料庫端這張碟只有兩筆發行，一筆 1966 年的美國盤、一筆 2009 年的全球數位盤，沒有西班牙盤"
+  ],
+  "sound": "1966 年美國 Press Records 的 PR73003 是一張 12 吋、十二軌。A 面〈Black Is Black〉2:53 開場，接〈Trapped〉2:18、〈Baby, Baby〉2:33、〈Make It Easy for Me〉2:39、〈She Believes in Me〉2:58、〈I Want a Name〉2:38；B 面〈I Don't Care〉2:23、〈Stop That Girl〉2:34、〈I'm Cuttin' Out〉2:57、〈Don't Be Left Out in the Cold〉2:10、〈You Won't Get Far〉2:15、〈Baby, Believe Me〉2:14。十二首全部壓在 2:10 到 2:58 之間，沒有一首破三分鐘，也沒有一首拉長的段落。十二個曲名清一色英語，發行國記的是美國，語言欄記的是英語。",
+  "keyTracks": [
+   "Black Is Black",
+   "She Believes in Me",
+   "I'm Cuttin' Out"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1966（**發行年**）。release-group 的 first-release-date 記 1966，其下最早的 release 就是 1966 年美國 Press Records 的 PR73003（Official），另一筆是 2009-01-29 的全球數位版，**沒有更早的版本、也沒有西班牙盤建檔**。**錄音年：資料庫端未登錄**——十二軌零 recording-level relationship、annotation 空白，**1966 只能當發行年寫，不得寫成「1966 年錄的」**。串流側 303141527 的頁面年份標 1966，但 ℗ 記的是 1999 BMG Special Products，**那是再版的 ℗ 年、不是原盤年**，不得拿來當佐證。復刻年 2009（全球數位）與 1999（℗）都不得寫進 year 欄。",
+  "notes": "**擋下策展層五處。**｜（一）**極值與序數**：`curatorWhy` 寫「西班牙**第一支**打進英美排行榜的樂團的**首張**專輯」，並寫出「英國榜第 2、美國 Hot 100 第 4」。**榜位在可查證的來源裡查不到**，「第一支」是極值主張；序數也不成立——**藝人目錄裡 1966 年同時有兩個純 Album（本張與《Los Bravos》），兩張都只記到年、沒有月日，端上無法定序**。**「第一支」「首張」與具體榜位三者都不得寫。**｜（二）**團員組成與本名**：`curatorWhy` 寫「由馬德里的 Los Sonor 與德國歌手 Mike Kennedy（Michael Volker Kogel）組成」。**藝人實體沒有任何團員關係登錄、disambiguation 是空的**，人名與本名都沒有來源，**不得寫，也不得背書本名**。｜（三）**錄音地**：`curatorWhy` 寫「在倫敦錄音」。**十二軌零錄音關係、annotation 空白**，錄音地在端上是空白，**不得寫**。｜（四）**本土發行方**：`curatorRisk` 已自標「本土發行方兩說（Columbia／Decca 系）不得斷言」——覆核屬實，**端上根本沒有西班牙盤這筆 release**，行文連「本土盤」都不要提。`label` 欄「Press Records（US，catno PR73003）」查證屬實，可寫。｜（五）**軌數要指明版本（裁定 174）**：原盤與 2009 數位版都是 12 軌，但串流側另有 24 軌、單軌等多種包裝，**行文寫軌數要說是 1966 年那一版**。｜**可以寫、而且是本張最好的材料**：十二首的長度全部落在 2:10–2:58、無一破三分鐘；十二個曲名全是英語；兩筆發行分別是美國盤與全球數位盤。｜**串流採信 303141527：12 軌與 1966 原盤同名同序，℗ 1999 BMG Special Products（再版 ℗ 年）**；駁回 306366988（單軌 New Stereo Version）、255263774（24 軌重排）、1548796929（單軌 Live）與多筆 remix／卡拉 OK。**有固定試聽來源，逐軌長度以原盤欄位為準。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期審查制度存在這一可查證的史實，**不得寫對該體制的價值判斷**，也不得寫「唱英語就是往外走」「這張碟推倒了什麼」這類敘事化的因果斷言。"
+ },
+ {
+  "key": "desc2:Los Brincos|Contrabando",
+  "artist": "Los Brincos",
+  "album": "Contrabando",
+  "facts": [
+   {
+    "f": "release-group e127d7f7 的欄位：title「Contrabando」、artist-credit「Los Brincos」（藝人實體 73414ffa，Group／**ES**，disambiguation 空，life-span **1964 起、2003-07-05 結束**）、first-release-date **1968-04-02**（**記到日**）、primary-type Album、**secondary-types 空**。轄下 **4 個 release，四筆全部是西班牙盤**：1968-04-02 ES Novola **NL 1010／NL-1.010**（12 吋黑膠、12 軌、**Official**）、1968 ES Novola 同一組編號（12 吋黑膠、12 軌、**status 是 Promotion 不是 Official**）、1998 ES Arcade Music Company España, S.A. **CD 3201402**（CD、12 軌）、2001 ES Serdisco（CD、**26 軌**）。**兩筆 1968 年的黑膠共用同一個目錄編號，差別在一筆是宣傳片。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e127d7f7-dd10-3910-9dff-6c38e6d44c3c?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1968 年黑膠（Novola NL 1010）逐軌與長度：A1〈Lola〉2:33、A2〈Pequeño pájaro〉2:49、A3〈El pasaporte〉2:37、A4〈Rápidamente〉2:03、A5〈**The Train**〉2:32、A6〈Un mundo diferente〉2:25、B1〈Nadie te quiere ya〉2:21、B2〈**Contrabando**〉2:13、B3〈**Big Temptation**〉2:45、B4〈Soy como quiero〉2:23、B5〈**So Good to Dance**〉3:04、B6〈Nunca cambiarás〉2:28。**十二首裡有三首是英語曲名（The Train／Big Temptation／So Good to Dance），其餘九首是西班牙語**；同名曲〈Contrabando〉不在開頭、排在 B 面第二首。全片只有一首破三分鐘（B5 的 3:04），最短 2:03。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e127d7f7-dd10-3910-9dff-6c38e6d44c3c&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "藝人端點分頁全列 **23 個 release-group**：純 Album（secondary-types 空）6 個、Album/Compilation 8 個、Single 7 個、EP 2 個。六張純 Album 依 first-release-date 排序：**1964-12《Los Brincos》、1966《Los Brincos II》、1968-04-02《Contrabando》**、1970《Mundo, demonio y carne》、1970《World Devil Body》、2000《Eterna juventud》。**「第三張正規專輯」查證屬實**——本張前面確實只有 1964-12 與 1966 兩張純 Album，而且三張的日期沒有並列打結的問題。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=73414ffa-27ce-4028-8c92-e2b11ae76a1d&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "1968 年黑膠的十二軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**錄音年與團員異動在資料庫端是空白。**",
+    "src": "https://musicbrainz.org/ws/2/release/19c5b940-f5e6-4fa1-b326-ed0b89f7d079?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 255658977**《Contrabando》、℗ 1968 Serdisco：**開頭十二軌與 1968 年黑膠同名同序、長度逐軌相同**（Lola 2:33／Pequeño Pájaro 2:49／El Pasaporte 2:37／Rapidamente 2:03／The Train 2:32／Un Mundo Diferente 2:25／Nadie Te Quiere Ya 2:21／Contrabando 2:13／Big Temptation 2:45／Soy Como Quiero 2:23／So Good to Dance 3:04／Nunca Cambiarás 2:28），**但這個上架版本總共 26 軌**，第 13 軌起另接〈You Know〉〈Amiga Mía〉〈Érase una Vez〉〈Sol en Julio〉〈Ananai〉〈Gracias Por Tu Amor〉〈El Domingo〉〈Las Alegres Chicas de San Diego〉〈Apolo〉〈¡Oh, Mamá!〉〈La Fuente〉〈Pareces Gitana〉〈Más Alegre〉〈Story of Glory〉十四首，**軌數與廠牌都對得上資料庫端那筆 2001 年 Serdisco 的 26 軌 CD，不是 1968 年的十二軌黑膠**。同批候選裡 255682662《Mundo, Demonio y Carne》、255682702《Mejor》、927541715《Los Brincos》皆為別碟，**駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=255658977&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首裡有三首掛英語曲名，同名曲〈Contrabando〉排在 B 面第二首、不在開頭",
+   "1968 年兩筆黑膠共用同一個目錄編號，差別只在一筆的狀態是宣傳片"
+  ],
+  "sound": "1968 年 4 月 2 日的 Novola NL 1010 是一張 12 吋、十二軌。A 面〈Lola〉2:33、〈Pequeño pájaro〉2:49、〈El pasaporte〉2:37、〈Rápidamente〉2:03、〈The Train〉2:32、〈Un mundo diferente〉2:25；B 面〈Nadie te quiere ya〉2:21、〈Contrabando〉2:13、〈Big Temptation〉2:45、〈Soy como quiero〉2:23、〈So Good to Dance〉3:04、〈Nunca cambiarás〉2:28。十二首裡九首西班牙語曲名、三首英語曲名，同名曲排在 B 面第二首。全片只有〈So Good to Dance〉破三分鐘，其餘全部壓在 2:03 到 2:49 之間。2001 年的 CD 把這十二軌原序保留，後面再接十四首。",
+  "keyTracks": [
+   "Lola",
+   "Contrabando",
+   "So Good to Dance"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（**發行年，日期記到 1968-04-02**）。release-group 的 first-release-date 是 1968-04-02，其下最早且為 Official 的 release 就是這一筆 1968-04-02 的西班牙 Novola NL 1010；另一筆 1968 年同編號的黑膠 **status 是 Promotion**，再往後是 1998 年 Arcade 的 CD 與 2001 年 Serdisco 的 26 軌 CD。**沒有更早的版本，四筆全部是西班牙盤。****錄音年：資料庫端未登錄**——十二軌零 recording-level relationship、annotation 空白，**1968 只能當發行年寫**。串流側 255658977 的 ℗ 記 1968 Serdisco，但它的軌數是 26 軌、對應的是 2001 年那一版，**℗ 年不能拿來當原盤的佐證**。復刻年 1998／2001 不得寫進 year 欄。",
+  "notes": "**擋下策展層四處。**｜（一）**團員異動**：`curatorWhy` 寫「錄於 Juan y Junior 離團、Ricky Morales 與 Fernando Arbex 改組之後」。**資料庫端沒有任何團員關係、沒有錄音日期、annotation 空白**，這段人事時序沒有可引來源，**行文不得寫**，人名也不得背書。｜（二）**廠牌從屬**：`curatorWhy` 寫「原盤是 **Zafiro 旗下的** Novola」。**label-info 欄只記到「Novola」，母公司關係端上沒有**，**「Zafiro 旗下」不得寫**；`label` 欄「Novola（ES，catno NL 1010）」查證屬實，可寫。｜（三）**曲風斷言**：`curatorWhy` 寫「把 1964–66 年的 beat 語彙推進到 psych 與錄音室拼貼」。這是評價不是欄位，端上沒有任何 tag 或 annotation 支撐，**行文不要照抄**；要講聲音只能從曲目與長度講。｜（四）**發行狀態被漏掉**：`mbNote` 把 1968 年那兩筆並列寫成「1968 ES ×2」，**實際上其中一筆的 status 是 Promotion**，兩筆共用同一組目錄編號。**行文要寫「兩張 1968 年的黑膠」時必須說清楚只有一筆是正式發行。**｜**查證屬實、可以直接寫的**：「第三張正規專輯」在藝人目錄裡站得住（前面只有 1964-12 與 1966 兩張純 Album）；四筆發行全部是西班牙盤；十二軌裡三首英語曲名；同名曲排在 B 面第二首。｜**軌數要指明版本（裁定 174）**：黑膠與 1998 年 CD 是 12 軌、2001 年 CD 是 26 軌，**行文寫軌數必須說是哪一版**。｜**串流採信 255658977：開頭十二軌與 1968 年黑膠同名同序、長度逐軌相同，但整份上架版本是 26 軌、對應 2001 年那一版**；駁回 255682662《Mundo, Demonio y Carne》、255682702《Mejor》、927541715《Los Brincos》三筆別碟。**有固定試聽來源，逐軌長度可寫（原盤欄位與上架版本一致）。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期審查制度存在這一可查證的史實，**不得寫對該體制的價值判斷**，也不得把曲名〈Contrabando〉〈El pasaporte〉讀成政治隱喻——**端上沒有歌詞或送審紀錄可佐證**。"
+ },
+ {
+  "key": "desc2:Pau Riba|Dioptria",
+  "artist": "Pau Riba",
+  "album": "Dioptria",
+  "facts": [
+   {
+    "f": "release-group b7c4aad2 的欄位：title「Dioptria」、artist-credit **「Pau Riba & OM」**（第一位是藝人實體 b1c41495「Pau Riba」，Person／**ES**，life-span **1948-08-07–2022-03-06**）、first-release-date **1969**、primary-type Album、**secondary-types 空**。轄下 **2 個 release**：1969 **ES** Concèntric **5.713-SUL**（12 吋黑膠、**8 軌**、Official）與一筆**無日期、無國別、無廠牌、status 也空白**的 CD（8 軌）。**只有 1969 那一筆是正式建檔完整的發行。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b7c4aad2-ac73-3226-bb97-ffe4c0a2d439?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "1969 年原盤（Concèntric 5.713-SUL）逐軌與長度：A1〈Kithou〉4:07、A2〈Rosa d'abril (L'amor s'hi posa)〉5:05、A3〈Noia de porcellana〉4:09、A4〈**Ars erotica (Non est mihi)**〉7:58、B1〈Ja s'ha mort la besàvia〉7:35、B2〈Helena, desenganya't〉4:02、B3〈Mareta bufona〉4:45、B4〈Vostè (Tu, tu mateixa)〉5:22。**八首全部超過四分鐘，最長 7:58、最短 4:02**，每面各有一首七分半以上的長段落（A4 與 B1）。**曲名是加泰隆尼亞語，唯一的例外是 A4 括號裡的「Non est mihi」——那是拉丁文，不是加泰隆尼亞語。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b7c4aad2-ac73-3226-bb97-ffe4c0a2d439&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "1969 原盤的 annotation 欄有登錄（**本批少數有 annotation 的一張**）：**Manufactured By – Fonogram, S.A.**、**Words By, Music By – Pau Riba**（詞曲兩欄都只掛他一人）、**Rights Society: SGAE**、**Depósito Legal: B. 43901-1969**（「B.」是巴塞隆納的省別代碼，末四位就是登記年 1969）。同一欄還寫著「Dioptria originally released in 1969 as one record only. **Dioptria/2 originally released separately in 1970.**」——**但藝人目錄把《Dioptria 2》記成 1971，兩處對不上，這一點不得單邊採信。** 八軌**沒有任何 recording-level relationship**：錄音日期、場地、樂手全部空白。",
+    "src": "https://musicbrainz.org/ws/2/release/77d47297-8491-4ce1-a4b3-1b69986c3fca?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **13 個 release-group**：純 Album（secondary-types 空）11 個、EP 1 個、Album/Compilation 1 個。依 first-release-date 排：**1967《Taxista!》（EP）、1969《Dioptria》、1971《Dioptria 2》、1971《Jo, la donya i el gripau》**、1975《Electròccid àccid alquimístic xoc》、1977《Licors》、1993《Disc dur》、1997《Cosmossoma》、2001《Nadadales》、2008《Virus laics》、2013《Mosques de colors》、2022-06-07《Segona Florada》，另有 2006 年的同名合輯《Dioptria》。**本張是名下最早的純 Album，但前面還有 1967 年的 EP——「第一張唱片」不成立，「第一張專輯」才成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b1c41495-8a2b-4eab-a73d-516f916205e4&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 1455495613**《Dioptria》、℗ 1969 Pau Riba：**這是一份兩碟合併的上架版本，共 14 軌**——**第一碟八軌與 1969 原盤同名同序、長度逐軌只差一到六秒**（Kithou 4:04／Rosa d'abril 5:03／Noia de porcellana 4:04／Ars eròtica 7:52／Ja s'ha mort la besàvia 7:31／Helena, desenganya't 4:01／Mareta bufona 4:43／Vostè 5:20），**第二碟六軌是《Dioptria 2》的內容**（Cançó 7ª en colors／L'home estàtic／三首 Simfonia／Taxista）。每一軌的掛名都加註「feat. Om」。同一位藝人目錄裡另有 1506891036《Ars Eròtica (feat. Om) - Single》（2 軌、℗ 1970）、1857987746《Jo, la donya i el gripau》、128185453《Electroccid Accid Alquimistic Soc》、336663627《Licors》等別碟，**全部駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=1455495613&country=es&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八首歌全部超過四分鐘，兩面各壓著一首七分半以上的長段落",
+   "唱片背面的法定登記編號末四碼就是 1969，登記地代碼是巴塞隆納"
+  ],
+  "sound": "1969 年 Concèntric 的 5.713-SUL 是一張 12 吋、八軌。A 面〈Kithou〉4:07 開場，接〈Rosa d'abril (L'amor s'hi posa)〉5:05、〈Noia de porcellana〉4:09，最後是 7:58 的〈Ars erotica (Non est mihi)〉；B 面以 7:35 的〈Ja s'ha mort la besàvia〉起頭，接〈Helena, desenganya't〉4:02、〈Mareta bufona〉4:45、〈Vostè (Tu, tu mateixa)〉5:22。八首沒有一首短於四分鐘，兩面各有一首七分半以上的長段落。曲名是加泰隆尼亞語，只有〈Ars erotica〉括號裡的拉丁文是例外。唱片的詞曲兩欄都只掛 Pau Riba 一人，壓片方另記 Fonogram。",
+  "keyTracks": [
+   "Kithou",
+   "Ars erotica (Non est mihi)",
+   "Ja s'ha mort la besàvia"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（**發行年**）。release-group 的 first-release-date 記 1969，其下 1969 年的西班牙 Concèntric 5.713-SUL 是唯一一筆有日期、有國別、有廠牌的 release（Official），另一筆 CD **無日期、無國別、無廠牌、status 空白**，端上無法定年。**原盤年另有一個獨立佐證**：release annotation 記的 Depósito Legal「B. 43901-**1969**」末四位就是 1969 年的法定登記年。**錄音年：資料庫端未登錄**（八軌零 recording relationship），**1969 只能當發行年寫**。⚠ **同一欄的 annotation 寫《Dioptria/2》「originally released separately in 1970」，藝人目錄卻把《Dioptria 2》記成 1971——續作的年份兩說並存，行文不要寫續作年份。** 串流側 1455495613 的 ℗ 記 1969，但那份上架版本是把兩張碟併成 14 軌的後製包裝，**℗ 年不能單獨當原盤年的佐證**。",
+  "notes": "**擋下策展層四處。**｜（一）**全稱句**：`curatorWhy` 寫「盤名與**全部歌詞**是加泰隆尼亞語」。**歌詞內容端上沒有來源**，而且**曲名本身就有例外**——A4〈Ars erotica (**Non est mihi**)〉括號裡是拉丁文。**行文只能寫「曲名是加泰隆尼亞語」，不得寫「全部歌詞」這種全稱句。**｜（二）**曲風斷言**：`curatorWhy` 寫「把民謠歌詞傳統換成迷幻與自由即興的編制」「加泰隆尼亞語地下搖滾的**起點**」。編制端上沒有任何樂手登錄（八軌零關係），「起點」是極值主張，**兩句都不得寫**。｜（三）**序數**：藝人目錄裡本張是名下最早的**純 Album**，**但前面還有 1967 年的 EP《Taxista!》**。**行文要寫序數只能寫「第一張專輯」，不得寫「第一張唱片」或「出道作」。**｜（四）**續作年份兩說**：`mbNote` 把《Dioptria 2》記成 1971，**但本張 release 的 annotation 明寫「originally released separately in 1970」**，兩處對不上。**行文不要提續作的年份。**｜**可以寫、而且是本張最好的材料（都有欄位背書）**：八首全部超過四分鐘、最長 7:58、最短 4:02；詞曲兩欄都只掛 Pau Riba 一人；壓片方 Fonogram；權利機構 SGAE；**法定登記編號 B. 43901-1969**。｜**掛名（裁定 259 已裁）**：唱片的 credit 是「Pau Riba & OM」，卡片掛名取藝人實體名「Pau Riba」；**行文提到合作樂團時寫「OM」，別把它併進掛名。**｜**軌數要指明版本（裁定 174）**：原盤 8 軌、串流上架版本 14 軌（兩碟合併），**行文寫軌數必須說是 1969 年那一版**。｜**串流採信 1455495613：第一碟八軌與 1969 原盤同名同序、長度逐軌只差一到六秒；第二碟六軌是續作的內容**，駁回 1506891036、1857987746、128185453、336663627 等別碟。**有固定試聽來源，逐軌長度以原盤欄位為準（上架版本略短一到六秒）。**｜⚠ **政治敘述邊界**：可寫佛朗哥時期加泰隆尼亞語出版受限這一可查證的史實與這張碟以加泰隆尼亞語出版的事實，**不得寫對該體制的價值判斷**，也不得寫「用這個語言唱就是抵抗」這類敘事化的因果斷言。"
+ }
+]
