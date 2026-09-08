@@ -22,6 +22,19 @@ function readDir(kind){
   }).filter(Boolean);
 }
 const objects = readDir('objects'), scenes = readDir('scenes'), stories = readDir('stories');
+// 有 layers 的物件：layers 是來源，frames 要等於壓平結果。這裡直接重壓（跟編輯器同一支 flattenLayers），不一致就改寫檔案。
+await import('../dip-pixel.js');
+const DP = globalThis.DipPixel;
+let reflattened = 0;
+for(const { rel, o } of objects){
+  if(o.kind !== 'pixel' || !Array.isArray(o.layers) || !o.layers.length) continue;
+  o.layers.forEach((L, li) => {
+    if(!Array.isArray(L.frames)) { err(rel, `layers[${li}] 缺 frames`); return; }
+    L.frames.forEach((rows, fi) => { if(!Array.isArray(rows) || rows.length !== o.h) err(rel, `layers[${li}] frame ${fi} 列數 ${rows && rows.length} ≠ h ${o.h}`); (rows||[]).forEach((r, y) => { if(typeof r !== 'string' || r.length !== o.w) err(rel, `layers[${li}] frame ${fi} 第 ${y} 列長度 ≠ w`); }); });
+  });
+  const before = JSON.stringify(o.frames); DP.flattenLayers(o);
+  if(JSON.stringify(o.frames) !== before){ reflattened++; if(!checkOnly) fs.writeFileSync(path.join(ROOT, rel), JSON.stringify(o, null, 1) + '\n'); else err(rel, 'frames 跟 layers 壓平結果不一致（跑一次不帶 --check 會自動重壓）'); }
+}
 const objIds = new Set(objects.map(x => x.o.id)), sceneIds = new Set(scenes.map(x => x.o.id));
 
 for(const { rel, o } of objects){
@@ -78,5 +91,5 @@ const ent = (kind, list) => list.map(({ o }) => ({ id: o.id, name: o.name, kind:
 const index = { version: 1, generatedAt: new Date().toISOString(), objects: ent('objects', objects), scenes: ent('scenes', scenes), stories: ent('stories', stories) };
 
 if(errors.length){ console.error('✗ 發現問題：\n  ' + errors.join('\n  ')); process.exit(1); }
-console.log(`✓ ${objects.length} 物件、${scenes.length} 場景、${stories.length} 劇本，全部通過。`);
+console.log(`✓ ${objects.length} 物件、${scenes.length} 場景、${stories.length} 劇本，全部通過。${reflattened ? `（重新壓平 ${reflattened} 個有圖層的物件）` : ''}`);
 if(!checkOnly){ fs.mkdirSync(DIR, { recursive: true }); fs.writeFileSync(path.join(DIR, 'index.json'), JSON.stringify(index, null, 1) + '\n'); console.log('  已重建 art/pixel/index.json'); }

@@ -8,15 +8,24 @@
 做法的核心不是畫布，是**資料格式**：`dip-character.js` 的 `sprRows` 早就把小人存成「一列一字串、一字元一像素」，
 把它擴成物件／場景／劇本三層 JSON（`art/pixel/`），人用 GUI 畫、Claude 直接改同一份字串，兩邊不用翻譯。
 
+店主第二輪：「不只唱片行，對戰畫面、劇情畫面都要用它畫，給我功能齊全的像素繪圖器」→ 繪圖分頁整個重寫成
+正式像素軟體等級（內部索引陣列 Uint8Array、IndexedDB 儲存、畫布到 1024）。
+
 **新增：**
-- `pixel-studio.html`：單檔編輯器，四個分頁。🖌 物件（1–256px 畫布、筆／擦／填／線／框／圓／吸色／位移／腳點、
-  每物件自己的色盤（預設＝PIX_PAL 17 色）、多格動畫＋洋蔥皮、參考圖描圖、PNG 依色盤量化匯入、PNG／SVG／JSON 匯出、復原）；
+- `pixel-studio.html`：單檔編輯器，四個分頁。🖌 繪圖（畫布 1–1024＋尺寸預設；筆／擦／填（相連或全圖）／線／矩形／橢圓（框或實心）／
+  框選／魔術棒／移動／吸色／平移／腳點；筆刷 1–64 方圓、網點、像素完美、Shift 約束；X／Y 對稱；選取的加減選、全選反選、
+  剪貼（跨物件自動補色）、方向鍵微移、選取內翻轉旋轉、裁到選取、選取→新物件；**圖層**（增刪複製排序合併壓平顯示鎖定）；
+  每物件自己的色盤（預設＝PIX_PAL 17 色，加改刪、全圖換色、色相排序、清未用、預設色盤 PICO-8／DB16／Sweetie16、hex 清單匯入匯出）；
+  格動畫（fps＋每格毫秒、洋蔥皮前後、雪碧圖匯出切入）；畫布（九宮格錨調整、×2÷2、翻轉旋轉、裁到內容、環繞位移＋平鋪預覽、深色底）；
+  參考圖（上下、透明、位置倍率）；圖片→像素量化（新圖層／取代）、拖圖、Ctrl+V 貼圖、圖檔物件轉像素；PNG／SVG／JSON 匯出；
+  1:1 預覽；快捷鍵總表；60 步復原）；
   🏞 場景（背景圖＋物件實例＋站位，深度照腳底 y 排、`depth` 可覆寫、拖曳／方向鍵、讀數直接給 stage-preview 式 left%/bottom%）；
   🎬 劇本（beats 與 `RPG_BEATS` **同一套語彙**：p/o/f、`oPath` 多段走位、`door` open/swing/shut、`oDig`、♪、💢，
   點一句就補間走位播到那句，`ui`／`prompt` 欄位原樣保留，「複製 beats」可直接貼回 `roguelike.html`）；
   🔁 交接（從本站載入 `art/pixel/index.json`、匯出／匯入 bundle、「複製給 Claude 的交接」、貼上 JSON 匯入、
   fine-grained token 直接推 GitHub Contents API）。資料存 localStorage `dipPixelStudio_v1`。
-- `dip-pixel.js`：編輯器與前台共用的格式＋繪製庫（`toSVG` 與 `pixArtHTML` 同形、`drawScene`、`stageAt` 與 `rpgApplyStage` 同一累積規則、`placeAt`／`findAnchor`）。
+- `dip-pixel.js`：編輯器與前台共用的格式＋繪製庫（`toSVG` 與 `pixArtHTML` 同形、`drawScene`（含場景底色）、`stageAt` 與 `rpgApplyStage` 同一累積規則、
+  `placeAt`／`findAnchor`、`flattenLayers`：有 `layers` 的物件壓平成 `frames`，前台只讀 `frames`；`pixel-index.mjs` 在 node 也用同一支重壓）。
   PIX_PAL 複製了一份，刻意不載入 `dip-character.js`——那支在預覽站會清 localStorage，會把草稿洗掉。
 - `art/pixel/`：16 物件（老闆／玩家／男子三個 16×16 小人、門三格、兩張前景圖層、十件道具圖檔）、場景 `shop2`
   （站位＝`roguelike.html` 的 `RPG_POS` 一字不差、前景後層 depth 401.5／前層 457.5 ＝ `rpgZ` 門檻）、
@@ -29,7 +38,10 @@
 **還沒做**：`roguelike.html` 還是寫死的 `RPG_POS`／`RPG_BEATS`，沒有讀 `art/pixel/`；目前靠「複製 POS／beats」貼過去。
 直接 fetch JSON 的接法寫在 PIXEL_STUDIO.md §5。
 
-- 驗證：`node scripts/pixel-index.mjs` 全過；Chromium（Playwright）開 `pixel-studio.html`——從本站載入 16/1/1、
+- 驗證（繪圖器重寫後）：Playwright 31 項全過——筆／復原重做／實心矩形／填色／橢圓／框選／剪貼／移動／魔術棒／Delete／
+  圖層新增與壓平（隱藏層不進 frames）／對稱＋網點／格複製與空白格／預設色盤追加與清未用／九宮格調整／×2／旋轉／
+  圖片匯入為圖層／重載後 IndexedDB 還在且圖層格數完整／場景與劇本分頁照舊。
+- 驗證（第一版）：`node scripts/pixel-index.mjs` 全過；Chromium（Playwright）開 `pixel-studio.html`——從本站載入 16/1/1、
   場景遮擋與 stage-preview 一致（老闆櫃檯後只露頭肩、玩家在門前）、選老闆讀數 left 30.13%／width 17.41% 與 stage-preview 完全相同、
   劇本播到第 14／19 句走位正確、畫筆拖一筆＋Ctrl+Z 復原正確、console 零錯誤；`admin.html` 子分頁存在。
 ### 2026-09-08｜dip-vinyl-shop｜序章舞台正式換進 roguelike.html（描圖美術＋新走位）

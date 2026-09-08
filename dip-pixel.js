@@ -8,11 +8,15 @@
 //     // kind=pixel：w,h、palette{字元:'#hex'}、frames[ rows[] ]，rows 每列一個字串，
 //     //   一個字元＝一個像素，'.' 或 ' ' ＝透明，其餘字元查 palette。
 //     // kind=image：frames[ 'art/props/table.png', ... ]（同一物件多格＝動畫或狀態），w,h 是圖檔像素。
-//     anchor:{x,y}    // 「腳點」：物件座標系裡的哪一點要對到場景的站位；預設 (w/2, h)
+//     // 圖層（可選）：layers:[ { name, visible, locked, frames:[ rows[] ] } ]，由下往上。
+//     //   有 layers 時它是來源，frames 是把可見圖層壓平後的結果（上面的圖層蓋下面的），
+//     //   前台永遠只讀 frames；改了 layers 要重新壓平（編輯器每次存檔都會，node 跑 scripts/pixel-index.mjs 也會）。
+//     anchor:{x,y},   // 「腳點」：物件座標系裡的哪一點要對到場景的站位；預設 (w/2, h)
+//     fps, durations:[ms,...]   // 動畫（可選）
 //   }
 // 場景 scene：
 //   { id, name, w, h,                     // 邏輯尺寸，例：448×492
-//     bg:{ src:'art/shop2-bg.jpg' }|null,
+//     bgColor:'#hex'|null, bg:{ src:'art/shop2-bg.jpg' }|null,   // 先填底色再貼背景圖（都可省）
 //     items:[ { iid, obj, name, x, y, scale, flip, layer:'auto'|'back'|'front',
 //               depth:null|數字, role:''|'p'|'o'|'f'|其他, frame:0, hidden:false, lock:false } ],
 //     anchors:[ { name, group:'p'|'o'|'f'|'', x, y } ],   // 站位＝腳點位置（cx, footY）
@@ -46,6 +50,29 @@
     const s = sizeOf(obj);
     if(obj && obj.anchor && isFinite(obj.anchor.x) && isFinite(obj.anchor.y)) return { x:+obj.anchor.x, y:+obj.anchor.y };
     return { x: s.w/2, y: s.h };
+  }
+
+  // ── 圖層壓平：可見圖層由下往上疊，上面非透明的像素蓋掉下面的 → 寫回 obj.frames
+  function flattenLayers(obj){
+    if(!obj || obj.kind !== 'pixel' || !Array.isArray(obj.layers) || !obj.layers.length) return obj;
+    const w = obj.w|0, h = obj.h|0;
+    const n = Math.max(1, ...obj.layers.map(l => (l.frames||[]).length));
+    const frames = [];
+    for(let f=0; f<n; f++){
+      const out = [];
+      for(let y=0; y<h; y++){
+        const row = new Array(w).fill(TRANSPARENT);
+        for(const L of obj.layers){
+          if(L.visible === false) continue;
+          const r = (L.frames||[])[f] && L.frames[f][y]; if(!r) continue;
+          for(let x=0; x<w; x++){ const ch = r[x]; if(!isClear(ch)) row[x] = ch; }
+        }
+        out.push(row.join(''));
+      }
+      frames.push(out);
+    }
+    obj.frames = frames;
+    return obj;
   }
 
   // ── 像素物件 → SVG（跟 dip-character.js 的 pixArtHTML 同形，但用物件自己的色盤、同色連段合併）
@@ -148,6 +175,7 @@
     ctx.imageSmoothingEnabled = false;
     if(!opts.skipBg){
       ctx.clearRect(0, 0, scene.w, scene.h);
+      if(scene.bgColor){ ctx.fillStyle = scene.bgColor; ctx.fillRect(0, 0, scene.w, scene.h); }
       if(scene.bg && scene.bg.src){
         const im = await loadImage(scene.bg.src);
         if(im) ctx.drawImage(im, 0, 0, scene.w, scene.h);
@@ -211,7 +239,7 @@
     return { id, name: name||id, kind:'image', w, h, frames:[src], anchor:{ x: Math.floor(w/2), y: h }, tags:[], notes:'', updatedAt: Date.now() };
   }
   function newScene(id, name, w, h){
-    return { id, name: name||id, w: w||448, h: h||492, bg:null, items:[], anchors:[], notes:'', updatedAt: Date.now() };
+    return { id, name: name||id, w: w||448, h: h||492, bgColor:null, bg:null, items:[], anchors:[], notes:'', updatedAt: Date.now() };
   }
   function newStory(id, name, sceneId){
     return { id, name: name||id, scene: sceneId||'', beats:[], updatedAt: Date.now() };
@@ -219,6 +247,6 @@
   function emptyDB(){ return { version:1, objects:{}, scenes:{}, stories:{} }; }
 
   global.DipPixel = { DEFAULT_PALETTE, TRANSPARENT, isClear, paletteOf, framesOf, frameOf, sizeOf, anchorOf,
-    toSVG, rasterize, loadImage, itemRect, itemFoot, itemZ, sortedItems, placeAt, footPoint, toPercent,
+    flattenLayers, toSVG, rasterize, loadImage, itemRect, itemFoot, itemZ, sortedItems, placeAt, footPoint, toPercent,
     drawScene, stageAt, findAnchor, DOOR_FRAME, DOOR_SWING, slug, emptyRows, newPixelObject, newImageObject, newScene, newStory, emptyDB };
 })(typeof window !== 'undefined' ? window : globalThis);
