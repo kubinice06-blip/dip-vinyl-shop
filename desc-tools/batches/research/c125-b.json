@@ -1,0 +1,202 @@
+[
+ {
+  "key": "desc2:José Afonso|Cantares do andarilho",
+  "artist": "José Afonso",
+  "album": "Cantares do andarilho",
+  "facts": [
+   {
+    "f": "release-group 643f4ee7 的欄位：title「Cantares do andarilho」、artist-credit「José Afonso」、first-release-date **1968**、primary-type Album、**secondary-types 空**。轄下 **4 筆 release，全部 Official，全部 12 軌**：1968 PT Orfeu **STAT 002**（12\" Vinyl）、1987 PT Movieplay SO 3036（CD）、2012-04-09 PT Orfeu 35.020（CD，條碼 5600364460196）、2021 PT Mais 5 LM5006（CD，條碼 8720205592651）。**五十三年四個版本，軌數一次也沒動過。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/643f4ee7-0105-3736-a42c-bf6da787fba5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1968 原盤（release 06abdea1）的逐軌曲目與長度，**12 軌全部有長度、合計 38:35**：1〈Natal dos simples〉2:56、2〈Balada do sino〉2:15、3〈Resineiro engraçado〉2:55、4〈Canção de embalar〉4:04、5〈O cavaleiro e o anjo〉3:01、6〈Saudadinha〉4:06、7〈Tecto na montanha〉3:58、8〈Endechas a Bárbara escrava〉2:06、9〈Chamaram-me cigano〉2:29、10〈Senhora do Almortão〉3:10、11〈Vejam bem〉4:07、12〈Cantares do andarilho〉3:28。**全張最長的兩軌是 4:06 與 4:07，末軌與盤名同字。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=643f4ee7-0105-3736-a42c-bf6da787fba5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "廠牌實體 c6c4061e「Orfeu」：country **PT**、area Portugal、**type 記的是 Distributor（不是 Original Production）**、life-span **1965 起、1990 止（已結束）**、disambiguation 空。本張 catno **STAT 002**。同一組 STAT 序列在本組另外三張碟上回問到：STAT 005（1970《Traz outro amigo também》）、STAT 010（1971 Adriano Correia de Oliveira《Gente de Aqui e de Agora》）、STAT 031（1975 Vitorino《Semear Salsa Ao Reguinho》）。",
+    "src": "https://musicbrainz.org/ws/2/label/c6c4061e-2d96-437d-8280-32c278d915bf?fmt=json"
+   },
+   {
+    "f": "藝人實體 d06e7e71：name「José Afonso」、type Person、country PT、begin **1929-08-02**、end **1987-02-23**（已故）、**begin-area 記的是 Aveiro、end-area Setúbal**，別名欄登錄「Zeca Afonso」「Dr. José Afonso」「José Manuel Cerqueira Afonso dos Santos」。**關係欄只有一筆親屬關係（父 José Nepomuceno Afonso），沒有任何伴奏者、製作人或樂團關係。** 分頁全列 **28 個 release-group**：Album 22、EP 4、Single 1、無 primary-type 1；**其中 secondary-types 為空的純 Album 16 個**。純 Album 依年份最早是 1964《Baladas e canções》，**本張 1968 排第二**。",
+    "src": "https://musicbrainz.org/ws/2/artist/d06e7e71-0178-4e66-8150-044ff6047d64?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：搜尋八個店面全部回同一筆 **collectionId 1806612919《Cantares do Andarilho》**；藝人目錄（藝人頁 24205789，66 筆）確認目錄裡只有這一筆對應本張；直查該 collectionId 得 **12 軌、標示日期 1968-12-13、版權標示 © ℗ 1968**，逐軌曲序與曲名與 1968 原盤全同，長度逐軌差 1–2 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1806612919&country=pt&entity=song&limit=250"
+   }
+  ],
+  "hookCandidates": [
+   "同一組編號一路排到 002、005、010、031，四張碟四位歌手",
+   "五十三年裡出過四個版本，十二軌一次也沒動過"
+  ],
+  "sound": "十二軌全部留下長度，攤開來是一條在兩分到四分半之間來回的線，沒有任何一軌越過四分半。開場〈Natal dos simples〉2:56 與〈Balada do sino〉2:15 走得快，第四軌〈Canção de embalar〉4:04 第一次把尺度拉開，第六軌〈Saudadinha〉4:06 與第七軌〈Tecto na montanha〉3:58 連著兩軌停在四分上下；中段〈Endechas a Bárbara escrava〉2:06 與〈Chamaram-me cigano〉2:29 是全張最短的兩軌，接著〈Senhora do Almortão〉3:10 回到三分、〈Vejam bem〉4:07 是全張最長的一軌，末軌〈Cantares do andarilho〉3:28 與盤名同字，收在三分半。全張合計 38:35，1968 年的原盤到2021 年的第四個版本，十二軌的數目一次也沒有動過。",
+  "keyTracks": [
+   "Natal dos simples",
+   "Vejam bem",
+   "Cantares do andarilho"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968。release-group first-release-date **1968**（只到年、無月日），**轄下最早的 release 也是 1968 年的 PT 盤（Orfeu STAT 002）**，其後 1987／2012／2021 三次再版。串流版本標示日期 **1968-12-13**、版權標示 **© ℗ 1968**，是第三個獨立年份來源，與前兩者一致。⚠ **月日 1968-12-13 只有串流端有，資料庫端只到年，不得當成資料庫值引用。** **錄音年未登錄，不得補寫。** **同名先行單曲：無。**",
+  "notes": "**擋下策展層六處。**(1) `curatorWhy` 寫「1960 年代中期起把伴奏交給 **Rui Pato** 的吉他」——**藝人實體關係欄只有一筆親屬關係，查不到任何伴奏者或製作人關係，這個名字不得寫**（裁定 241／250）。｜(2) `curatorWhy` 寫「**出身科英布拉**的 fado de Coimbra 傳統」——藝人實體 **begin-area 記的是 Aveiro、end-area 是 Setúbal**，**「出身科英布拉」不得當出生地寫**；可寫的地名只有這兩個。｜(3) `curatorWhy` 寫本張「是他離開學院 fado、**進入 Orfeu 廠牌長期合作的第一張**」——1964《Baladas e canções》的廠牌欄位沒有回問到，**「與該廠合作的第一張」查不到來源、不得寫**；**可以寫的序數只有一種：藝人目錄 16 張純 Album 依年份排，本張是第二張**（第一張是 1964《Baladas e canções》）。｜(4) `label` 欄：**廠牌實體 type 記的是 Distributor**，行文**不得把它寫成「這家唱片公司」**；廠牌來歷除 life-span 1965–1990 之外查無來源，**誰開的、什麼時候開的一律不得寫**。｜(5) `curatorWhy` 說「歌詞轉向鄉間勞動與流浪的題材」——**題材判斷不是欄位事實，不得寫**；可寫的是曲名本身。｜(6) 跨批去重覆核：池中已有本藝人《Cantigas do Maio》1971（c-63）與《Venham mais cinco》1973（c-98），本批另收《Traz outro amigo também》1970；**四張的 rgMbid、曲目、release 清單逐筆比對後互不相同**，本張的 12 軌與另三張無一重複。｜**⚠ 政治敘述邊界（照搬 `curatorRisk`）**：〈Grândola, Vila Morena〉在 1974 年 4 月 25 日被用作行動信號是**可查證的史實、可以寫**；**但那首曲子不在本張的 12 軌裡**，行文若提及必須寫明不是本張的曲目。**不得寫對該事件或對 Estado Novo 的價值判斷**，只寫發行年、廠牌、曲目與播放紀錄。｜**串流採信 1806612919：12 軌逐位置比對（2:53／2:14／2:57／4:02／3:01／4:06／3:57／2:07／2:28／3:10／4:08／3:30）對原盤（2:56／2:15／2:55／4:04／3:01／4:06／3:58／2:06／2:29／3:10／4:07／3:28），逐軌差 1–2 秒、曲序曲名全中，採信。** 第三種查法（藝人目錄 24205789，66 筆）確認目錄裡只有這一筆對應本張，**回撈候選採信 1、駁回 0**。｜**軌數與長度：四個版本全部 12 軌，長度全備，行文可以放心寫時間。**"
+ },
+ {
+  "key": "desc2:Quarteto 1111|Quarteto 1111",
+  "artist": "Quarteto 1111",
+  "album": "Quarteto 1111",
+  "facts": [
+   {
+    "f": "release-group 92d603b9 的欄位：title「Quarteto 1111」、artist-credit「Quarteto 1111」、first-release-date **1970**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：1970 PT、Official、**label-info 空、format 欄空、11 軌**（release ad532b6b）。**自我同名：掛名與盤名逐字相同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/92d603b9-42e4-3c7c-b9e7-e9f6162f2e6a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970 盤的 11 軌曲目——**資料庫端 11 軌一條長度都沒有**：1〈Prólogo〉、2〈João Nada〉、3〈Domingo em Bidonville〉、4〈Estrada Para a Minha Aldeia〉、5〈A Fuga dos Grilos〉、6〈As Trovas do Vento Que Passa〉、7〈Pigmentação〉、8〈Maria Negra〉、9〈Lenda de Nambuangongo〉、10〈Escravatura〉、11〈Epílogo〉。**首軌〈Prólogo〉與末軌〈Epílogo〉把中間九首夾住。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92d603b9-42e4-3c7c-b9e7-e9f6162f2e6a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**第三種查法找回本張的上架版本：collectionId 1460716589《Quarteto 1111》，標示日期 1970-03-13、11 軌、版權標示「© ℗ 1970 Edições Valentim de Carvalho, S.A.」。** 逐軌對上，只有第 4 軌店面作〈Uma Estrada para a Minha Aldeia〉、資料庫作〈Estrada Para a Minha Aldeia〉。**它補上了資料庫缺的全部 11 軌長度**：2:10／3:34／2:15／2:21／2:55／3:36／4:24／3:00／2:14／2:12／2:51，**合計 31:32**。",
+    "src": "https://itunes.apple.com/lookup?id=1460716589&country=pt&entity=song&limit=250"
+   },
+   {
+    "f": "藝人實體 d60d5997：type Group、country PT、**life-span 1967 起、1974 止（已結束）**、begin-area 空、disambiguation 空、別名欄空。**關係欄登錄四位成員：José Cid、Tozé Brito（attributes 標 lead vocals 與 bass guitar 兩筆）、Mike Sergeant（attributes 標 guitar）、Guilherme Inês。** ⚠ **Guilherme Inês 同時是本組 Salada de Frutas 的成員**（該實體的關係欄同樣登錄）。名下 **9 個 release-group**：EP 2、Single 1、Album 6；**secondary-types 為空的純 Album 4 個**（1970 本張、1973《Bruma Azul Do Desejado》、1975《Onde, Quando, Como, Porquê, Cantamos Pessoas Vivas》、1996《A Lenda D'El-Rei D. Sebastião》），另兩張標 Compilation。**本張是名下最早的 Album。**",
+    "src": "https://musicbrainz.org/ws/2/artist/d60d5997-1579-45ff-bd0f-a5e83b5cfc5d?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "駁回的兩筆同掛名候選：**1461663031《A Lenda do Quarteto 1111》1993-05-25、20 軌、© ℗ 1993**——曲目含〈Os Faunos〉〈Balada para D. Inês〉〈Dona Victória〉〈Ode To The Beatles〉等本張沒有的曲子，且缺〈Prólogo〉〈Epílogo〉〈A Fuga dos Grilos〉〈Escravatura〉四軌，**是後出合輯**；**1437582092《Quarteto 1111》2016-10-22、14 軌、© ℗ 2014**——同樣是合輯，只與本張共用〈As Trovas do Vento Que Passa〉〈Pigmentação〉兩軌。",
+    "src": "https://itunes.apple.com/lookup?id=1461663031&country=pt&entity=song&limit=250"
+   }
+  ],
+  "hookCandidates": [
+   "首軌叫〈序〉、末軌叫〈跋〉，中間九首被夾在裡面",
+   "資料庫十一軌一條長度都沒有，串流那版把三十一分半補齊"
+  ],
+  "sound": "十一軌的長度資料庫端一條也沒有，全部來自串流上架版：開場〈Prólogo〉2:10 與收尾〈Epílogo〉2:51 是一對括號，中間九首全部落在兩分到四分半之間。〈João Nada〉3:34 與〈As Trovas do Vento Que Passa〉3:36 是前後兩段的支點，第七軌〈Pigmentação〉4:24 是全張最長的一軌，也是唯一超過四分的；緊接著的〈Maria Negra〉3:00、〈Lenda de Nambuangongo〉2:14、〈Escravatura〉2:12 一路縮短，把尺度收回開頭那一側。全張十一軌合計約 31 分半，是這批葡萄牙碟裡篇幅最短的幾張之一。",
+  "keyTracks": [
+   "Prólogo",
+   "Pigmentação",
+   "Epílogo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**（只到年），**轄下唯一的 release 也是 1970 年的 PT 盤**，沒有第二個版本可比。串流上架版標示 **1970-03-13**、版權標示 **© ℗ 1970**，是第二個獨立年份來源，與資料庫一致。⚠ **月日只有串流端有，資料庫端只到年。** 藝人 life-span 1967–1974 與 1970 相容。**錄音年未登錄，不得補寫。** **同名先行單曲：無**（1969《Nas terras do fim do mundo》是別名別曲）。",
+  "notes": "**擋下策展層六處（本組回撈最重要的一張）。**(1) `curatorRisk` 判「es 命中的是《A Lenda do Quarteto 1111》（1461663031），是後出的合輯、不是本張」——**這半句對，但停在那裡就漏了本張**：**跑第三種查法（藝人目錄 27512547，13 筆）就找得到本張的完整上架版本 1460716589**。**串流採信 1460716589：11 軌逐位置比對（2:10／3:34／2:15／2:21／2:55／3:36／4:24／3:00／2:14／2:12／2:51），曲序與曲名全中，第 4 軌店面作〈Uma Estrada para a Minha Aldeia〉、資料庫作〈Estrada Para a Minha Aldeia〉，同一首，採信。** **駁回 1461663031（20 軌合輯）與 1437582092（14 軌合輯）。回撈候選採信 1、駁回 2。**｜(2) `curatorWhy` 寫「是葡萄牙**第一支**把 beat 與 psych 編制做成整張 LP 的樂團」——**跨藝人極值，查不到任何來源，不得寫**。｜(3) `curatorWhy` 寫「他們的曲目**在送審階段被要求刪改**是可查證的出版紀錄」——**實體欄位查不到任何送審或刪改紀錄，不得寫**；要寫審查只能寫「Estado Novo 時期送審制度存在」這個一般史實，**不得把它掛到本張的曲目上**。｜(4) `curatorWhy` 寫本張是「他們**唯一一張**在 Estado Novo 時期發行的正規專輯」——**不成立**：目錄裡 1973《Bruma Azul Do Desejado》同樣是 primary-type Album、年份也在 1974 之前。**「唯一一張」不得寫**，可寫的是「名下最早的 Album」。｜(5) `curatorWhy` 寫「1967 年的**單曲**〈A Lenda de El-Rei D. Sebastião〉是他們的起點」——目錄裡 05d084b3 的 primary-type 是 **EP、不是 Single**，寫法要改。｜(6) `label` 欄寫「MB 轄下唯一 release（1970 PT）未掛廠牌」——正確；**但串流版帶出了版權標示「Edições Valentim de Carvalho, S.A.」，那是串流端的權利標示、不是廠牌實體**，**只能寫成「串流版的版權標示記為……」，不得填進 `label` 欄當盤面廠牌**。｜**人名從嚴**：四位成員名（José Cid、Tozé Brito、Mike Sergeant、Guilherme Inês）**都有實體關係欄背書，可以寫**；但 `curatorWhy` 的「**José Cid 領軍**」是評價語，**只能寫成「成員之一」**。｜**軌數與長度**：11 軌一致；**長度只有串流端有，行文要寫時間必須寫明是串流版的長度**（裁定 251）。｜**⚠ 政治敘述邊界（照搬 `curatorRisk`）**：行文可寫 Estado Novo 時期送審制度存在這一可查證的史實，**但不得寫對該體制的價值判斷**。｜**自我同名**：掛名與盤名逐字相同，去重一律以 rgMbid 為準。"
+ },
+ {
+  "key": "desc2:José Afonso|Traz outro amigo também",
+  "artist": "José Afonso",
+  "album": "Traz outro amigo também",
+  "facts": [
+   {
+    "f": "release-group 53321612 的欄位：title「Traz outro amigo também」、artist-credit「José Afonso」、first-release-date **1970**、primary-type Album、**secondary-types 空**。轄下 **5 筆 release，全部 Official、全部 11 軌**：1970 PT Orfeu **STAT 005**（12\" Vinyl）、1987 PT Movieplay SO 3038（CD）、1996 PT Movieplay JA 8003（CD，條碼 5602896033824）、2012 PT Orfeu 35.022（CD，條碼 5600364460219）、2021 PT Mais 5 LM5014（CD，條碼 8720205952097）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/53321612-f528-31c5-9996-f91912fe802b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970 原盤（release 422b7ce9）的逐軌曲目與長度，**11 軌全部有長度、合計 29:04**：1〈Traz outro amigo também〉3:57、2〈Maria Faia〉3:13、3〈Canto moço〉2:03、4〈Epígrafe para a arte de furtar〉2:06、5〈Moda do entrudo〉2:01、6〈Os eunucos (No Reino da Etiópia)〉**1:54**、7〈Avenida de Angola〉**4:18**、8〈Canção do desterro (Emigrantes)〉2:23、9〈Verdes são os campos〉2:15、10〈Carta a Miguel Djéje〉2:26、11〈Cantiga do monte〉2:23。**全張最短的 1:54 與最長的 4:18 是連在一起的第六、第七軌；盤名曲擺第一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=53321612-f528-31c5-9996-f91912fe802b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "廠牌實體 e06785ff「Movieplay」：**country ES**、area Spain、type Imprint、begin 1968、disambiguation「name in logo within 3 concentric ovals; Spanish/Portuguese label run originally by Movieplay S.A., 1968–1983」。本張的 1987 與 1996 兩筆再版 release 的 country 是 PT，**但廠牌實體本身登記在西班牙**。2012 與 2021 兩筆分別回到 Orfeu（c6c4061e，PT，Distributor，1965–1990）與 Mais 5（e1bfbec9，PT，Imprint，life-span 空）。",
+    "src": "https://musicbrainz.org/ws/2/label/e06785ff-7235-4671-813b-c27987369f6f?fmt=json"
+   },
+   {
+    "f": "藝人實體 d06e7e71 名下 **28 個 release-group、16 個純 Album**。純 Album 依年份排：1964《Baladas e canções》、1968《Cantares do andarilho》、1969《Contos velhos, rumos novos》、**1970 本張（第四張）**、1971《Cantigas do Maio》、1972《Eu vou ser como a toupeira》、1973《Venham mais cinco》……**1970 這一年他名下只有本張一筆 release-group。** 藝人 begin 1929-08-02（begin-area Aveiro）、end 1987-02-23，**關係欄只有一筆親屬關係，沒有任何伴奏者或製作人**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d06e7e71-0178-4e66-8150-044ff6047d64&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：搜尋八個店面全部回同一筆 **collectionId 1806612599《Traz Outro Amigo Também》**；藝人目錄（24205789，66 筆）確認只有這一筆對應本張；直查得 **11 軌、標示日期 1970-04-24、版權標示 © ℗ 1970**，逐軌曲序曲名全同，長度逐軌差 1–3 秒。⚠ 該目錄裡另有 1971 年獨立上架的〈Grândola, Vila Morena〉單曲（1806612844），**與本張無關**。",
+    "src": "https://itunes.apple.com/lookup?id=1806612599&country=pt&entity=song&limit=250"
+   }
+  ],
+  "hookCandidates": [
+   "全張最短的一分五十四秒與最長的四分十八秒，是連在一起的第六、第七軌",
+   "五十一年之間出過五個版本，十一軌從沒動過"
+  ],
+  "sound": "十一軌全部留下長度，合計只有 29 分 4 秒，是這批葡萄牙碟裡最短的一張。開場的盤名曲〈Traz outro amigo também〉3:57 與第二軌〈Maria Faia〉3:13 是前段僅有的兩條長線，接下來〈Canto moço〉2:03、〈Epígrafe para a arte de furtar〉2:06、〈Moda do entrudo〉2:01 三軌壓在兩分整上下，到第六軌〈Os eunucos (No Reino da Etiópia)〉1:54 縮到全張最短；緊接著的第七軌〈Avenida de Angola〉4:18 一口氣拉成全張最長的一軌，落差就發生在相鄰的兩條軌之間。其後〈Canção do desterro (Emigrantes)〉2:23、〈Verdes são os campos〉2:15、〈Carta a Miguel Djéje〉2:26、〈Cantiga do monte〉2:23 四軌幾乎等長，把全張收在同一個尺度上。",
+  "keyTracks": [
+   "Traz outro amigo também",
+   "Os eunucos (No Reino da Etiópia)",
+   "Avenida de Angola"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**（只到年），**轄下最早的 release 也是 1970 年的 PT 盤（Orfeu STAT 005）**，其後 1987／1996／2012／2021 四次再版。串流版標示 **1970-04-24**、版權標示 **© ℗ 1970**，是第三個獨立年份來源，三者一致。⚠ **月日只有串流端有。** **錄音年與錄音地點都未登錄，不得補寫。** **同名先行單曲：無。**",
+  "notes": "**擋下策展層五處。**(1) `curatorWhy` 寫「**錄音在倫敦完成**」——**實體欄位查不到任何錄音地點，不得寫**。｜(2) `curatorWhy` 寫「伴奏仍以 **Rui Pato** 的吉他為主軸」——藝人關係欄只有一筆親屬關係，**查不到任何伴奏者關係，這個名字不得寫**（裁定 241／250）。｜(3) `curatorWhy` 寫「五十年四次再版，是**本批葡萄牙側再版次數最多的一張**」——**不成立**：本組逐張回問 release 清單後，**José Cid《10000 Anos Depois Entre Vénus e Marte》轄下有 8 筆 release**，比本張的 5 筆多。**「最多」不得寫**；可寫的是實數「轄下 5 筆 release、四次再版」。｜(4) `curatorWhy` 寫「是他從科英布拉學院 fado 走出來之後**語彙最集中**的一張」——**評價語，不得寫**。｜(5) `reissuedBy` 把 1987／1996 兩筆記成「Movieplay（PT）」——**要修正**：那兩筆 release 的 country 確實是 PT，**但廠牌實體 Movieplay 登記的 country 是 ES**（disambiguation 明寫是西班牙／葡萄牙兩地經營的廠牌），**行文不得把它寫成葡萄牙廠牌**。｜**可以寫的序數**：藝人目錄 16 張純 Album 依年份排，**本張是第四張**（1964／1968／1969 之後），且 **1970 這一年他名下只有這一筆 release-group**——兩條都經逐筆排序確認。｜**跨批去重覆核**：池中已有《Cantigas do Maio》1971（c-63）、《Venham mais cinco》1973（c-98），本批另收《Cantares do andarilho》1968；**四張 rgMbid 與曲目逐筆比對後互不相同，本張 11 軌與另三張無一重複**。｜**⚠ 政治敘述邊界（照搬 `curatorRisk`）**：〈Grândola, Vila Morena〉在 1974 年 4 月 25 日被用作行動信號是可查證的史實、可以寫，**但那首不在本張 11 軌裡**（串流目錄裡它是 1971 年獨立上架的單曲 1806612844）。**不得寫對該事件或對 Estado Novo 的價值判斷**，只寫發行年、廠牌、曲目與播放紀錄。｜**串流採信 1806612599：11 軌逐位置比對（3:54／3:09／1:59／2:02／1:58／1:53／4:16／2:20／2:15／2:25／2:27）對原盤（3:57／3:13／2:03／2:06／2:01／1:54／4:18／2:23／2:15／2:26／2:23），逐軌差 1–3 秒、曲序曲名全中，採信。回撈候選採信 1、駁回 0。**｜**軌數與長度：五個版本全部 11 軌，長度全備，可以寫時間。**"
+ },
+ {
+  "key": "desc2:Adriano Correia de Oliveira|Gente de Aqui e de Agora",
+  "artist": "Adriano Correia de Oliveira",
+  "album": "Gente de Aqui e de Agora",
+  "facts": [
+   {
+    "f": "release-group 41e3c397 的欄位：title「Gente de Aqui e de Agora」、artist-credit「Adriano Correia de Oliveira」、first-release-date **1971**、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：1971 PT、Official、Orfeu **STAT 010**、**12\" Vinyl、10 軌**（release d19db982，條碼欄空）。**沒有任何再版，版本歧異在本張不存在。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/41e3c397-70b2-48ab-97d4-22d8ad196f44?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971 原盤的逐軌曲目與長度，**10 軌全部有長度、合計 30:26**：1〈Emigração〉3:05、2〈E Alegre Se Fez Triste〉3:14、3〈O Senhor Morgado〉3:11、4〈Cana Verde〉3:24、5〈A Vila de Alvito〉**2:29**、6〈Canção Tão Simples〉**3:48**、7〈Cantiga de Amigo〉2:33、8〈Para Rosália〉2:46、9〈Roseira Brava〉3:06、10〈História do Quadrilheiro Manuel Domingos Louzeiro〉2:50。**十軌全部落在 2:29 到 3:48 之間，是本組長度分佈最平的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=41e3c397-70b2-48ab-97d4-22d8ad196f44&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人實體 d6d5d052：name「Adriano Correia de Oliveira」、type Person、country PT、**disambiguation「Portuguese musician」**、begin **1942-04-09**（**begin-area Porto**）、end **1982-10-16**（end-area Vila Nova de Gaia），別名欄登錄「Adriano Maria Correia Gomes de Oliveira」。**關係欄空——沒有任何成員、伴奏者或親屬關係。** 名下 **11 個 release-group**：Album 10、無 primary-type 1；**secondary-types 為空的純 Album 4 個**（1970《Cantaremos》、**1971 本張**、1975《Que Nunca Mais》、一筆無年份的《Cantigas Portuguesas - Fados e Baladas de Coimbra》），另 6 筆標 Compilation。**本張在有年份的純 Album 裡排第二。**",
+    "src": "https://musicbrainz.org/ws/2/artist/d6d5d052-abdb-4b53-92fe-acccbb5b818d?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "廠牌實體 c6c4061e「Orfeu」：country PT、**type Distributor**、life-span **1965–1990（已結束）**。本張 catno **STAT 010**。本組回問到的 Orfeu STAT 編號共四個：**002**（1968 José Afonso《Cantares do andarilho》）、**005**（1970 José Afonso《Traz outro amigo também》）、**010**（本張）、**031**（1975 Vitorino《Semear Salsa Ao Reguinho》）。",
+    "src": "https://musicbrainz.org/ws/2/label/c6c4061e-2d96-437d-8280-32c278d915bf?fmt=json"
+   },
+   {
+    "f": "店面覆核（三種查法都跑，**結論是本張未上架**）：搜尋八個店面回的全是別碟；**藝人目錄跑了兩個同名藝人頁——605065873（22 筆，最早 2014，全部是後出的單曲與 2026 年的《Adriano: A Obra》五卷）與 1661905664（2 筆：1963 單曲與 1969《O Canto e as Armas》）——兩份目錄共 24 筆，沒有一筆是本張**。直查搜尋命中的 1661941999《O Canto e as Armas》得 13 軌（〈E de Súbito um Sino〉〈Raíz〉〈Peregrinação〉……），**與本張 10 軌無一重複，駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=605065873&country=pt&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十軌全部落在兩分半到三分五十秒之間，沒有一軌越線",
+   "1971 年壓過一次之後，這張碟再也沒有第二個版本"
+  ],
+  "sound": "十軌全部留下長度，合計 30 分 26 秒，而且十條線幾乎一樣長——最短的〈A Vila de Alvito〉2:29、最長的〈Canção Tão Simples〉3:48，全張的落差只有一分十九秒，是本組長度分佈最平的一張。開場〈Emigração〉3:05、〈E Alegre Se Fez Triste〉3:14、〈O Senhor Morgado〉3:11、〈Cana Verde〉3:24 四軌連著壓在三分上下；第五軌〈A Vila de Alvito〉2:29 短暫收束，第六軌〈Canção Tão Simples〉3:48 是唯一越過三分四十的一條；後半〈Cantiga de Amigo〉2:33、〈Para Rosália〉2:46、〈Roseira Brava〉3:06、〈História do Quadrilheiro Manuel Domingos Louzeiro〉2:50 又回到同一個尺度。這張碟在資料庫裡只有1971 年那一次壓片，沒有再版、沒有第二種軌數。",
+  "keyTracks": [
+   "Emigração",
+   "Canção Tão Simples",
+   "História do Quadrilheiro Manuel Domingos Louzeiro"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。release-group first-release-date **1971**（只到年），**轄下唯一的 release 也是 1971 年的 PT 盤（Orfeu STAT 010）**，沒有再版、沒有第二個年份可比。**串流端三種查法全部查無本張，沒有第三個年份來源。** 藝人 life-span 1942-04-09 至 1982-10-16 與 1971 相容。**錄音年未登錄，不得補寫。** **同名先行單曲：無。**",
+  "notes": "**擋下策展層五處。**(1) `curatorWhy` 寫「與 José Afonso **同出科英布拉的學生 fado 圈**」——藝人實體 **begin-area 記的是 Porto、end-area 是 Vila Nova de Gaia**，**「出身科英布拉」不得寫**；可寫的地名只有這兩個。｜(2) `curatorWhy` 寫「**STAT 002／010／017** 分屬三張本批相關的碟」——**STAT 017 查不到**：本組逐張回問 label-info 後，Orfeu 的 STAT 序列只出現 **002、005、010、031** 四個編號，**017 不得寫**，要改寫成這四個。｜(3) `curatorWhy` 寫「**嗓音低沉、伴奏維持古典吉他編制**」——**藝人關係欄是空的，查不到任何伴奏者或編制資料，兩句都不得寫**。｜(4) `curatorWhy` 寫「是 Estado Novo 末期葡萄牙 canção de intervenção 的**核心目錄之一**」——**評價語，不得寫**。｜(5) `curatorWhy` 寫「正規目錄**只有三張**加後出的全集」——**要修正**：secondary-types 為空的 Album 有 **4 筆**（多一筆無年份的《Cantigas Portuguesas - Fados e Baladas de Coimbra》），標 Compilation 的有 6 筆。**可以寫的序數是「有年份的純 Album 裡排第二」。**｜**可以寫的**：「他 1982 年去世」有 life-span end **1982-10-16** 背書，可寫。｜**串流覆核**：`curatorRisk` 記「八個 storefront 全未命中」——**第三種查法覆核後這個結論成立**：兩個同名藝人頁（605065873 與 1661905664）的目錄共 24 筆都沒有本張，搜尋命中的《O Canto e as Armas》(1661941999) 13 軌與本張 10 軌無一重複。**回撈候選採信 0、駁回 1（1661941999）。本張串流端查無，行文不得寫任何試聽或上架敘述。**｜**⚠ 政治敘述邊界（照搬 `curatorRisk`）**：行文可寫 Estado Novo 時期送審制度存在這一可查證的史實，**但不得寫對該體制的價值判斷**，只寫發行年、廠牌、曲目。｜**軌數與長度：只有一筆 release、10 軌、長度全備，可以放心寫時間。**"
+ },
+ {
+  "key": "desc2:Carlos Paredes|Movimento perpétuo",
+  "artist": "Carlos Paredes",
+  "album": "Movimento perpétuo",
+  "facts": [
+   {
+    "f": "release-group e87ab389 的欄位：title「Movimento perpétuo」、artist-credit「Carlos Paredes」、primary-type Album、**secondary-types 空**、**first-release-date 記的是 1988**。轄下 **2 筆 release，都是 11 軌**：1988 PT EMI **0777 7 91312 2 8**（CD，條碼 077779131228）、2007 PT Som Livre **VSL 1214-2**（CD，條碼 5604931121428）。**資料庫端沒有任何 1971 年的 release 建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e87ab389-43cd-34f6-b60f-f5b38bded319?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 CD（release 27cb5af1）的逐軌曲目與長度，**11 軌全部有長度、合計 31:58**：1〈Movimento perpétuo〉**1:28**、2〈Variações em ré menor〉3:26、3〈Danças Portuguesas Nº 2〉3:40、4〈Variações em mi menor〉**3:53**、5〈Fantasia Nº 2〉2:21、6〈Valsa〉2:43、7〈Variações sob uma dança popular〉2:20、8〈Mudar de vida - Tema〉2:36、9〈Mudar de vida - Música de fundo〉**4:21**、10〈António Marinheiro〉2:57、11〈Canção〉2:09。**盤名曲 1:28 是全張最短的一軌，擺在第一軌；最長的 4:21 是〈Mudar de vida〉拆成兩軌的後半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e87ab389-43cd-34f6-b60f-f5b38bded319&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**串流版本 280167463《Movimento Perpétuo》的版權標示寫「© ℗ 1971, Edições Valentim De Carvalho S.A.」**——11 軌逐位置與 1988 CD 對得上（1:26／3:23／3:38／3:51／2:18／2:41／2:18／2:35／4:18／2:54／2:06，逐軌差 2–3 秒）。**這是原盤年 1971 的獨立第三方佐證。** 同一藝人頁（14154534，24 筆）另有 1539159695，同樣 11 軌，**但版權標示是 © ℗ 2003**，且第 8–10 軌標題寫法不同（〈Mudar de Vida (Tema)〉〈Mudar de Vida (Música de Fundo)〉〈António Marinheiro (Tema da Peça)〉）。",
+    "src": "https://itunes.apple.com/lookup?id=280167463&country=pt&entity=song&limit=250"
+   },
+   {
+    "f": "藝人實體 278e5176：name「Carlos Paredes」、type Person、country PT、**disambiguation 空**、begin **1925-02-16**（**begin-area Coimbra**）、end **2004-07-23**（end-area Lisboa）、**別名欄空**。**關係欄只有一筆親屬關係：父 Artur Paredes。** 名下 **18 個 release-group，全部 primary-type Album**；**secondary-types 為空的純 Album 11 個**。純 Album 依年份排：1967《Guitarra Portuguesa》、1970《Meu País》、1974《É Preciso Um País》、1986《Invenções Livres》、1987《Espelho de Sons》、**1988 本張（資料庫年份）**、1989《Asas sobre o mundo》……",
+    "src": "https://musicbrainz.org/ws/2/artist/278e5176-b4f2-4a77-8ab3-5da847765b9e?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "兩家再版廠牌的實體欄位：**EMI（c029628b）country GB、area United Kingdom、type Original Production、begin 1972**；**Som Livre（4c7506c5）country BR、area Brazil、type Production、begin 1969-03、disambiguation「Brazilian record label」**。2007 那筆 release 的 country 雖然是 PT，**廠牌實體本身登記在巴西**。",
+    "src": "https://musicbrainz.org/ws/2/label/4c7506c5-5fe0-4cf8-94bf-8d1de8530883?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "與盤名同字的那一軌只有一分二十八秒，是全張最短的一條，而且擺在第一軌",
+   "同一段錄音在兩個地方標了兩個年份，差了十七年"
+  ],
+  "sound": "十一軌全部留下長度，合計 31 分 58 秒，全張沒有一軌越過四分半。開場與盤名同字的〈Movimento perpétuo〉只有 1:28，是十一軌裡最短的一條，卻擺在第一軌；接著〈Variações em ré menor〉3:26、〈Danças Portuguesas Nº 2〉3:40、〈Variações em mi menor〉3:53 三軌把尺度一路推到全張前段的高點。中段〈Fantasia Nº 2〉2:21、〈Valsa〉2:43、〈Variações sob uma dança popular〉2:20 縮回兩分多。第八、第九兩軌是同一個標題拆成的兩半——〈Mudar de vida - Tema〉2:36 與〈Mudar de vida - Música de fundo〉4:21，後者是全張最長的一軌。末尾〈António Marinheiro〉2:57 與〈Canção〉2:09 收在開頭那一側的尺度上。",
+  "keyTracks": [
+   "Movimento perpétuo",
+   "Mudar de vida - Música de fundo",
+   "Canção"
+  ],
+  "status": "full",
+  "yearVerified": "**不一致，本卡取 1971（裁定 220／257 的處置成立）。** release-group first-release-date 記的是 **1988**，**轄下最早的 release 也是 1988 年的 EMI CD，資料庫端完全沒有 1971 年的 release 建檔**。但**串流版本 280167463 的版權標示寫「© ℗ 1971, Edições Valentim De Carvalho S.A.」，而它的 11 軌逐位置與 1988 CD 只差 2–3 秒**——**這是原盤年 1971 的獨立第三方佐證，覆核通過，`year` 取 1971 成立**。⚠ **但原盤發行方仍然查不到**：1971 年那筆壓片資料庫沒有建檔，串流的版權標示只證明權利年份與權利人、**不足以當作盤面廠牌**，`label` 欄**維持不填推測值**。再版年 1988（EMI）與 2007（Som Livre）**都不得寫進 `year`**。另一筆串流版 1539159695 的版權年是 2003，**不得引為年份來源**。",
+  "notes": "**擋下策展層四處。**(1) `curatorWhy` 寫「他 **1958 至 1961 年間因政治案入獄**」——**實體欄位查不到任何入獄或司法紀錄，不得寫**（裁定 241／250 從嚴）。這是本張最重的一處：政治敘述必須有來源，沒有來源就一個字都不能寫。｜(2) `curatorWhy` 寫「同名曲**被反覆用於電影配樂**」——**查不到來源，不得寫**；**可以寫的是曲目本身**：第八、第九軌是同一標題拆成的〈Mudar de vida - Tema〉與〈Mudar de vida - Música de fundo〉，2003 年那個串流版還把第十軌標成〈António Marinheiro (Tema da Peça)〉——**曲名裡有「Tema」這個字是欄位事實，但「用於哪一部片」不得補寫**。｜(3) `curatorWhy` 寫「是葡萄牙吉他從 fado 伴奏樂器變成獨奏樂器的**關鍵人物**」與「是他**最常被引用**的一張」——**兩句都是評價，不得寫**。｜(4) `curatorWhy` 寫「出獄後的錄音**維持純器樂形態**」——**「純器樂」在實體欄位查不到（曲目沒有任何人聲標記，但沒有標記不等於沒有人聲），不得斷言**。｜**人名從嚴**：藝人關係欄唯一的人名是父 **Artur Paredes**（親屬關係），**這一個可以寫；其他任何合作者、製作人的名字都不得寫**。｜**地名**：begin-area **Coimbra**、end-area **Lisboa**，只能寫這兩個。｜**跨批去重覆核**：池中已有本藝人《Guitarra Portuguesa》1967（rgMbid 8e6ff336），**與本張不同 release-group、11 軌曲目也不同**。｜**串流採信 280167463：11 軌逐位置比對（1:26／3:23／3:38／3:51／2:18／2:41／2:18／2:35／4:18／2:54／2:06）對 1988 CD（1:28／3:26／3:40／3:53／2:21／2:43／2:20／2:36／4:21／2:57／2:09），逐軌差 2–3 秒、曲序全中，採信；且它的版權年 1971 是本卡年份覆核的關鍵證據。** **駁回 1539159695（同 11 軌但版權年 2003）。回撈候選採信 1、駁回 1。**｜**廠牌**：2007 那筆掛的 Som Livre **廠牌實體 country 是 BR**，行文不得寫成葡萄牙廠牌；EMI 實體 country GB、begin 1972。｜**⚠ 政治敘述邊界（照搬 `curatorRisk`）**：行文可寫 Estado Novo 時期審查制度存在這一可查證的史實，**但不得寫對該體制的價值判斷，也不得寫這位藝人的任何個人政治遭遇**（見第 1 點）。｜**軌數與長度：兩個版本都是 11 軌，長度全備，可以寫時間，但要寫明那是 1988 年 CD 的數字。**"
+ }
+]
