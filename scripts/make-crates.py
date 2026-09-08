@@ -12,6 +12,7 @@
     python3 scripts/make-crates.py
 """
 import os, random
+import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,6 +28,46 @@ SLEEVE = [(188,42,52),(36,88,158),(226,216,192),(232,190,86),(52,118,84),
           (98,64,146),(212,128,44),(64,166,186),(34,32,34),(132,84,44),
           (238,234,226),(96,94,98),(198,96,124),(58,62,132),(164,168,66),
           (150,150,152),(74,52,38),(206,178,140)]
+
+
+COVERS = os.path.join(ROOT, 'art', 'covers')
+
+
+def face_out(im, x, y, w, h, n, label_every=5):
+    """箱子裡的唱片：**封面朝外**、一張疊一張往後倒（用 art/covers 的真封面）。
+    只有露在箱口以上的部分看得到，所以封面畫得比開口高、下半截被箱身蓋住。"""
+    pool = sorted(p for p in os.listdir(COVERS) if p.endswith('.jpg')) \
+        if os.path.isdir(COVERS) else []
+    d = ImageDraw.Draw(im)
+    if not pool:
+        sleeves(d, x, y, w, h, n, label_every); return
+    size = int(h * 2.0)                      # 封面是方的，下半截藏在箱子裡
+    pad = int(h * .5)                        # 上方留給比較高的分類卡
+    layer = Image.new('RGBA', (w, size + pad), (0, 0, 0, 0))   # 先畫在暫存層，再裁齊箱口
+    ld = ImageDraw.Draw(layer)
+    step = max(8, (w - size * .42) / max(1, n - 1))
+    picks = [random.choice(pool) for _ in range(n)]
+    for i in range(n - 1, -1, -1):           # 由後往前畫，前面那張蓋住後面
+        cx, ly = int(i * step), pad + int((n - 1 - i) * 1.1)
+        cv = Image.open(os.path.join(COVERS, picks[i])).convert('RGB').resize(
+            (size, size), Image.LANCZOS)
+        k = 0.60 + (1 - i / max(1, n - 1)) * 0.40          # 越後面越暗
+        cv = Image.fromarray(
+            np.clip(np.asarray(cv, np.float32) * k, 0, 255).astype(np.uint8), 'RGB')
+        layer.paste(cv, (cx, ly))
+        ld = ImageDraw.Draw(layer)
+        ld.rectangle([cx, ly, cx + size - 1, ly + size - 1], outline=(26, 22, 20))
+        ld.line([(cx + size - 1, ly), (cx + size - 1, ly + size - 1)], fill=(12, 10, 10),
+                width=2)
+        if i % label_every == 2:             # 分類卡：比唱片高一截
+            lh, lw = int(h * .40), int(step) + 4
+            ld.rectangle([cx - 2, ly - lh, cx + lw, ly + 4], fill=(246, 244, 238),
+                         outline=(150, 148, 142))
+            f = ImageFont.truetype(F_BOLD, max(7, int(lh * .46)))
+            ld.text((cx + lw / 2, ly - lh + 3),
+                    random.choice(['ROCK', 'SOUL', 'JAZZ', 'CITY']), font=f,
+                    fill=(60, 58, 56), anchor='ma')
+    im.alpha_composite(layer, (int(x), int(y - pad)))
 
 
 def sleeves(d, x, y, w, h, n, label_every=7):
@@ -64,8 +105,9 @@ def wood_crate(w_cm=68, h_cm=30, label='PROGRESSIVE ROCK'):
     rim = int(14 * PX_CM)                               # 唱片露出箱口的高度
     body_top = rim + int(6 * PX_CM)
     body_bot = H + 4
-    sleeves(d, x0 + 8, rim - int(9 * PX_CM), W - 16, body_top - rim + int(10 * PX_CM),
-            max(10, int(w_cm / 3.2)))
+    face_out(im, x0 + 6, rim - int(9 * PX_CM), W - 12, int(13 * PX_CM),
+             max(7, int(w_cm / 7)))
+    d = ImageDraw.Draw(im)
     # 箱身（前板）
     d.rectangle([x0, body_top, x1, body_bot], fill=(214, 176, 118), outline=INK)
     for gy in range(body_top + 4, body_bot - 2, 9):     # 木紋
@@ -98,21 +140,34 @@ def black_crate(w_cm=46, h_cm=30):
     x0, x1 = 4, W + 4
     rim = int(10 * PX_CM)
     body_top, body_bot = rim + int(4 * PX_CM), H + 4
-    sleeves(d, x0 + 7, rim - int(7 * PX_CM), W - 14, body_top - rim + int(8 * PX_CM),
-            max(8, int(w_cm / 3.0)), label_every=9)
+    face_out(im, x0 + 5, rim - int(6.5 * PX_CM), W - 10, int(9.5 * PX_CM),
+             max(5, int(w_cm / 8)), label_every=7)
+    d = ImageDraw.Draw(im)
     d.rectangle([x0, body_top, x1, body_bot], fill=(38, 38, 40), outline=(16, 16, 18))
-    d.rectangle([x0, body_top, x1, body_top + 7], fill=(78, 78, 82))     # 籃口
-    for gx in range(x0 + 10, x1 - 8, 16):                                # 格柵
-        d.rectangle([gx, body_top + 12, gx + 8, body_bot - 10], fill=(24, 24, 26))
-        d.line([(gx, body_top + 12), (gx, body_bot - 10)], fill=(62, 62, 66))
+    d.rectangle([x0, body_top, x1, body_top + 8], fill=(84, 84, 88))     # 籃口
+    gy0, gy1 = body_top + 13, body_bot - 12
+    gw, gh = x1 - x0 - 12, gy1 - gy0                                     # 菱形格柵
+    mesh = Image.new('RGBA', (gw, gh), (0, 0, 0, 0))
+    md = ImageDraw.Draw(mesh)
+    for gx in range(-gh, gw + gh, 17):
+        md.line([(gx, 0), (gx + gh, gh)], fill=(74, 74, 80), width=3)
+        md.line([(gx + gh, 0), (gx, gh)], fill=(74, 74, 80), width=3)
+    im.alpha_composite(mesh, (x0 + 6, gy0))
+    d = ImageDraw.Draw(im)
+    d.rectangle([x0, gy0 - 4, x1, gy0], fill=(22, 22, 24))
+    d.rectangle([x0, gy1, x1, gy1 + 4], fill=(22, 22, 24))
+    d.rectangle([x0, body_top, x1, body_bot], outline=(14, 14, 16), width=3)
     d.rectangle([x0, body_bot - 8, x1, body_bot], fill=(20, 20, 22), outline=(12, 12, 14))
     return im
 
 
 def main():
+    # 同一張圖重複貼三次會看出內容一模一樣，所以各出幾個變體
     outs = [('crate-wood', wood_crate(label='PROGRESSIVE ROCK')),
             ('crate-wood-2', wood_crate(label='SOUL / FUNK')),
-            ('crate-black', black_crate())]
+            ('crate-black', black_crate()),
+            ('crate-black-2', black_crate()),
+            ('crate-black-3', black_crate())]
     for name, im in outs:
         p = os.path.join(OUT, name + '.png')
         im.save(p, optimize=True)
