@@ -1,0 +1,762 @@
+[
+ {
+  "key": "desc2:Ruja|Ruja",
+  "artist": "Ruja",
+  "album": "Ruja",
+  "facts": [
+   {
+    "f": "release-group c51a3b39 的欄位：title「Ruja」、artist-credit「Ruja」（藝人實體 bac75c73，Group／EE，life-span **1971-09 – 1988，ended=true**）、first-release-date **1982**、primary-type Album、**secondary-types 空**。轄下 **3 個 release，全部 1982／SU**，但只有 **一筆 Official**：7f57d7a7（Мелодия **С60-16885-6**、**12\" Vinyl、10 軌**、text-representation script=Latn／language=est）；另兩筆是 Pseudo-Release——ae762eb4（title「Руя」、artist-credit「Руя」、script=Cyrl／lang=rus）與 c9c0a76e（title「Ruja」、script=Latn／**lang=eng**）。三筆掛同一個目錄號。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**同一張盤在資料庫端有三套曲名，十個位置與十個長度完全相同，只有語言不同**：1〈Õunalaul〉＝〈Песня о яблоке〉＝〈Apple Song〉3:11、2〈Doktor Noormann〉＝〈Доктор Ноорманн〉＝〈Dr. Noormann〉2:54、3〈To Mr. Lennon〉＝〈Мистеру Леннону〉＝〈To Mr. Lennon〉3:38、4〈Tule minuga sööklasse〉2:35、5〈Inimene õpib〉4:20、6〈Kus on see mees?〉3:45、7〈Lapsena televisioonis〉2:55、8〈Rahu〉＝〈Покой〉＝〈Calmness〉3:33、9〈Eile nägin ma eestimaad!〉＝〈Видел я Эстонию!〉＝〈I Saw Estonia Yesterday〉1:49、10〈Siin oled sündinud〉4:51。**第三軌是三套裡唯一拼寫完全相同的一首。** 兩筆 Pseudo-Release 都掛 transl-tracklisting 關係指回 Official 那筆。",
+    "src": "https://musicbrainz.org/ws/2/release/7f57d7a7-f30a-449a-b67b-16769617b3b8?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels"
+   },
+   {
+    "f": "藝人端點分頁全列 **20 個 release-group**。1982 之前名下只有 **1979 年的 EP《Ruja》**（2c415596）；本張是 primary-type Album 裡最早的一個。之後是 1988《Kivi veereb》、1989《Пусть будет все》、1994《Must lind》(Compilation)。**2020-08-20 同一天出現 9 個 Compilation**（Algus／Algu／Esimene／Teine／Kirjanduslik I、II／Pop RUJA／Rahvuslik Rokk／Hiline i、II）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 bac75c73 的 member-of-band 關係（有起訖年）：**Urmas Alender 1971-09–1988**（跨完整團史）、**Rein Rannap 1971-09–1975 與 1980–1983 兩段**、Jaanus Nõgisto 1972–1988、Tiit Haagma 1972-02–1978 與 1980–1983、Margus Kappel（piano／synthesizer）1975–1980、Jaan Karp 1981–1983、Andrus Vaht 1971–1976 與 1977–1978、Raul Sepper 1971-09–1972-02。**1982 這一年落在 Alender／Rannap／Nõgisto／Haagma／Karp 的在團區間內。**",
+    "src": "https://musicbrainz.org/ws/2/artist/bac75c73-9d3b-4819-800c-0e1050eb8ff0?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端逐軌覆核：`1525882777`《Esimene》（℗ 1981 RUJA、店面標 1981-01-01、**12 軌**）的第 1–10 軌與本張十軌**同名同序**，但**長度對不上**：〈Inimene õpib〉3:29（盤面 4:20）、〈Eile nägin ma eestimaad〉2:14（盤面 1:49）、〈Õunalaul〉3:14（3:11），且第 3 軌標成〈To mr.Lennon (**Live**)〉；第 11、12 軌〈Ootan sind〉4:11、〈Suudlus läbi jäätunud klaasi〉3:20 是盤面沒有的。**這個條目對應的是 2020-08-20 那批 Compilation 之一（22c924b8《Esimene》），不是 1982 年的原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1525882777&entity=song&country=ee&limit=200"
+   },
+   {
+    "f": "跨卡比對：曲名〈Doktor Noormann〉同時出現在本張（第 2 軌 2:54）與同年 Gunnar Graps ja Magnetic Band《Roosid papale》（第 10 軌 3:25）。**兩者在資料庫端是兩個不同的 recording 實體，長度也不同**——同名，不是同一段錄音。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f8c2cb64-0a06-44a4-b902-535796b8bceb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "同一張盤在資料庫端留下三套曲名：愛沙尼亞語、俄語、英語各一套，十個位置與十個長度完全相同",
+   "三套曲名裡只有第三軌〈To Mr. Lennon〉三種寫法一模一樣",
+   "樂團 1971 年 9 月成立，名下第一個 primary-type Album 要到 1982 年才出現，中間只有一張 1979 年的 EP"
+  ],
+  "sound": "1982 年 Мелодия С60-16885-6 的原盤是 12 吋、十軌。開場〈Õunalaul〉3:11，接〈Doktor Noormann〉2:54 與〈To Mr. Lennon〉3:38；中段〈Tule minuga sööklasse〉2:35、〈Inimene õpib〉4:20、〈Kus on see mees?〉3:45、〈Lapsena televisioonis〉2:55；尾段〈Rahu〉3:33、全片最短的〈Eile nägin ma eestimaad!〉1:49，收在最長的〈Siin oled sündinud〉4:51。十首都在 1:49 到 4:51 之間，沒有長篇段落。曲名全是愛沙尼亞語日常語彙——蘋果、醫生、食堂、電視、和平——只有第三軌用英文寫成〈To Mr. Lennon〉。",
+  "keyTracks": [
+   "Õunalaul",
+   "To Mr. Lennon",
+   "Siin oled sündinud"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982（**發行年**）。release-group 的 first-release-date 記 1982，其下三筆 release 全部標 1982／SU，Official 那筆的目錄號 С60-16885-6 與之相符。**錄音年：資料庫端空白**——十軌沒有任何 recording-level relationship，release 也沒有 annotation，**所以 1982 只能當發行年寫，不得寫成「1982 年錄的」**。串流端唯一相近的條目標 ℗ 1981，但那是另一份曲目不同的合輯（見 facts 第五條），**不可拿來當 1982 的旁證**。",
+  "notes": "**擋下策展層四處。**｜（一）`curatorWhy` 寫「主腦 Rein Rannap 與詞人 Urmas Alender 把 Betti Alver、Juhan Liiv 的詩譜成搖滾曲」。**兩位詩人的名字、「主腦」「詞人」這兩個角色，本輪在資料庫端一項都查不到來源**——關係欄只給得出「member of band」與起訖年，沒有作詞、作曲或改編關係。**行文不得寫詩人名，也不得寫誰是主腦、誰寫詞**；要寫成員只能寫「1971 年 9 月到 1988 年都在團裡的 Urmas Alender」「1971 至 1975、1980 至 1983 兩度在團的 Rein Rannap」這種有起訖年背書的講法。｜（二）`curatorWhy` 寫「是愛沙尼亞蘇維埃時期最被反覆引用的樂團」。**這是價值判斷，無來源，行文不得寫。**｜（三）`curatorWhy` 寫「樂團成立十一年後才拿到第一張 Melodiya 正式 LP」。年差本身算得出來（1971-09 到 1982），但**「第一張 Melodiya」不成立**——1979 年那張 EP 的廠牌本輪沒回問到，資料庫端無從判斷它是不是同一家。**行文只能寫「名下第一個 Album 形態的發行品」，不可寫「第一張 Melodiya」。**｜（四）`curatorRisk` 寫「兩種查法未命中」。**第三種查法（直查候選編號的逐軌清單）找到了一個高度相似的條目但已駁回**，見下。｜**串流駁回 1525882777：十二軌裡前十軌與盤面同名同序，但三軌長度對不上（4:20→3:29、1:49→2:14、3:11→3:14），第三軌另標 Live，又多出兩首盤面沒有的曲子；該條目對應的是 2020 年那批合輯之一，不是 1982 原盤。** 本張**無固定試聽來源，行文不要暗示可試聽**。｜可以寫的：三套曲名（愛沙尼亞語／俄語／英語）位置與長度逐格相同，這是逐筆比對過的；十軌長度齊全，**可以寫時間**。｜**軌數與長度都要指明是 1982 年那筆 Official**（另兩筆是同內容的 Pseudo-Release）。｜政治敘述：本張在資料庫端沒有任何禁演、改詞或審查的記載，**不得自行補上**。"
+ },
+ {
+  "key": "desc2:Ruja|Algus (Studio 1971-1975)",
+  "artist": "Ruja",
+  "album": "Algus (Studio 1971-1975)",
+  "facts": [
+   {
+    "f": "release-group 71cbc804 的欄位：title「Algus (Studio 1971-1975)」、artist-credit「Ruja」、first-release-date **2020-08-20**、primary-type Album、**secondary-types [Compilation]**。轄下只有 **1 個 release**（c5df899e、2020-08-20／**XW**／Official、**Digital Media 9 軌**、barcode 3616407775624、script=Latn／lang=est）。**label-info 是空的——這張在資料庫端沒有任何廠牌欄位值。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=71cbc804-92f3-4fd8-815c-75d63bc79567&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "九軌與長度：1〈Zeppelini triumf〉6:15、2〈Nii vaikseks kõik on jäänud〉3:35、3〈Rukkilõikus〉3:45、4〈Ah, ma teadsin...〉2:45、5〈Vana auruvedur〉3:32、6〈Pajats〉2:33、7〈Ikaros〉4:13、8〈Eks sa vaata〉3:18、9〈Laul näidendist \"Protsess\" (Avameelsest abielust)〉3:47。**開場那首 6:15 比其餘八首都長，最短的〈Pajats〉2:33。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=71cbc804-92f3-4fd8-815c-75d63bc79567&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**串流採信 `1525889897`：九軌逐軌覆核，曲名與順序 9/9 完全一致，長度亦逐格相符**（6:15／3:36／3:46／2:45／3:32／2:33／4:13／3:18／3:48，與盤面最多差 1 秒）。店面掛名寫成全大寫「RUJA」，版權行是 **℗ 2020 RUJA**，曲風標 Prog-Rock/Art Rock。**八個店面（ee／lv／lt／ru／de／fi／us／gb）逐一 lookup 全部回得到，8/8。**",
+    "src": "https://itunes.apple.com/lookup?id=1525889897&entity=song&country=ee&limit=200"
+   },
+   {
+    "f": "同一天（2020-08-20）藝人名下另有 **8 個 Compilation**：《Algu (Live 1971-1974)》（secondary-types 是 Compilation+**Live**）、《Esimene》、《Teine (Ilmumata 1982)》、《Kirjanduslik I (1976-1977)》、《Kirjanduslik II (1978-1980)》、《Pop RUJA (1981-1982)》、《Rahvuslik Rokk (1980-1984)》、《Hiline i (1982-1985)》、《Hiline II (1986-1987)》。**本張是這批切法裡唯一標「Studio」且年份區間從樂團起點 1971 開始的一種。** 逐筆覆核《Algu (Live 1971-1974)》的九軌，與本張九軌**無一重疊**（全是不同曲名，且全標 (Live)）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "資料庫端 Ruja 名下 1971–1975 這段沒有任何 release-group：最早的是 1979 年的 EP，最早的 Album 是 1982 年那張。**本張的 1971–1975 這個區間，來源是盤名本身的括號，不是欄位值。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "樂團最早五年的曲目要等到成立四十九年後才成套發行，而且只有數位一種形態",
+   "同一天出了九種切法，這一種是唯一標「Studio」、年份從樂團起點算起的",
+   "開場〈Zeppelini triumf〉6:15，比其餘八首都長；最短的〈Pajats〉2:33"
+  ],
+  "sound": "九軌、全數位形態。開場〈Zeppelini triumf〉6:15 是全片最長，之後長度收攏在 2:33 到 4:13 之間：〈Nii vaikseks kõik on jäänud〉3:35、〈Rukkilõikus〉3:45、〈Ah, ma teadsin...〉2:45、〈Vana auruvedur〉3:32、〈Pajats〉2:33、〈Ikaros〉4:13、〈Eks sa vaata〉3:18，收在〈Laul näidendist \"Protsess\" (Avameelsest abielust)〉3:47——最後一首的曲名直接寫明是某齣戲的插曲。曲名從飛船、收割、蒸汽火車到伊卡洛斯與小丑，九首都是愛沙尼亞語。",
+  "keyTracks": [
+   "Zeppelini triumf",
+   "Ikaros",
+   "Laul näidendist \"Protsess\" (Avameelsest abielust)"
+  ],
+  "status": "full",
+  "yearVerified": "**兩個年份要分開講。** 出版年：**2020-08-20**（release-group 的 first-release-date、唯一那筆 release 的日期、店面版權行 ℗ 2020 三處一致）。卡單取的 1971 是**錄音區間的起點**，唯一來源是**盤名括號裡的「Studio 1971-1975」**——**資料庫端沒有任何欄位登記這批母帶的錄音年月**，九軌零 recording-level relationship，release 沒有 annotation。**所以行文可以寫「盤名標的錄音區間是 1971 到 1975」，不可寫「錄於 1971 年」或把 1971 當成發行年。**",
+  "notes": "**擋下策展層三處。**｜（一）`label` 欄寫「Eesti Rahvusringhääling／Ruja 遺產計畫」。**資料庫端這筆 release 的 label-info 是空的，店面版權行是 ℗ 2020 RUJA——兩邊都查不到愛沙尼亞公共廣播這個名字。行文不得寫廠牌名。**｜（二）`curatorWhy` 與 `exceptionReason` 都寫「1971–1975 這五年只有電台錄音室母帶」「以愛沙尼亞廣播的錄音室母帶留存」。**「電台／廣播母帶」這個來源在資料庫端與店面端都查不到任何背書**，能查到的只有盤名括號裡的「Studio」兩個字。**行文不得寫「電台母帶」「廣播錄音」**；要寫只能寫「盤名標明是 1971 至 1975 年的錄音室錄音」。｜（三）`curatorWhy` 寫「2020 年的遺產計畫」。**「遺產計畫」不是任何一端的欄位值，是策展層的描述**，行文不要當事實引用；可以寫的是「同一天一次出了九種不同切法」，這是逐筆列過的。｜**§5.6 舉證覆核：站得住。** 兩個證據網址都逐一回問過內容——release-group 71cbc804 確實存在且 secondary-types 標 Compilation、轄下就這一筆數位發行；店面條目 1525889897 的九軌與盤面 9/9 同名同序、長度逐格相符。**「唯一形態」這一點也成立**：藝人名下 1971–1975 區間確實沒有任何 release-group。｜**串流採信 1525889897：九軌逐軌覆核 9/9 同名同序、長度最多差 1 秒，八店面全數回得到。** 這是本組覆蓋最好的一張，**行文可以寫時間**。｜掛名：店面寫全大寫 RUJA，資料庫端 artist-credit 是「Ruja」，**取後者**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Vitamiin|Ansambel \"Vitamiin\"",
+  "artist": "Vitamiin",
+  "album": "Ansambel \"Vitamiin\"",
+  "facts": [
+   {
+    "f": "release-group e078bae3 的欄位：title「Ansambel \"Vitamiin\"」、artist-credit「Vitamiin」（藝人實體 c2cab48e，Group／EE，disambiguation「Estonian pop rock band」，**life-span 1978–1989，ended=true**，別名欄有「Vitamin」(en)）、first-release-date **1983**、primary-type Album、secondary-types 空。轄下 **1 個 release**：46dc4055（1983／SU／Official、Мелодия **С60 19587 005**、**12\" Vinyl、10 軌**、script=Latn／lang=est）。release 掛 other-databases 關係指向愛沙尼亞國家書目編號 b2047783。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e078bae3-d618-41f7-942c-99752732b9c3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十軌與長度：1〈Lolita〉3:03、2〈Talv〉4:00、3〈Hookus-Pookus〉2:45、4〈Pulmapäev〉3:15、5〈Festival〉4:40、6〈Tour〉4:45、7〈Rabatapp〉3:38、8〈Ave Maria〉4:00、9〈Julius Caesar〉3:23、10〈Viimane vaatus〉2:55。**最長的〈Tour〉4:45 與最短的〈Viimane vaatus〉2:55 差不到兩分鐘，十首長度非常平均。** 盤名本身帶引號（Ansambel「Vitamiin」＝「Vitamiin」合奏團）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e078bae3-d618-41f7-942c-99752732b9c3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**跨卡的硬證據：第 9 軌〈Julius Caesar〉的 recording 實體 95e830da 同時掛在本張與同年的 Anne Veski ja Muusik-Seif《Anne Veski ja ansambel «Muusik-Seif»》上**（在後者是第 11 軌，愛沙尼亞語盤面寫〈Julius Caesar〉、俄語盤面寫〈Юлий Цезарь〉，長度 3:26 對本張 3:23）。**兩張都是 1983 年的 Мелодия 盤，是同一段錄音跨兩張碟。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b1182283-b9ca-40f3-b828-7ef40c653261&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人 c2cab48e 的 member-of-band 關係：**Anne Veski 1979–1982**、Marju Länik 1981–1984、Rein Laaneorg（original）1978–1989、Jüri Mitt／Priit Nettan／Jaan Rello／Joel Steinfeldt 皆標 original 1978 起、Mait Maltis 1980–1984、Raul Sepper 1978–1980、Siiri Sisask 1988。**本張出版的 1983 年，Anne Veski 的在團區間已在前一年結束。**",
+    "src": "https://musicbrainz.org/ws/2/artist/c2cab48e-453e-4573-b41f-24b8565aaa94?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "藝人端點全列 **7 個 release-group**：1981 EP《Vitamiin》、1983 EP《Группа \"Витамин\"》、**1983 Album《Ansambel \"Vitamiin\"》（本張）**、1984 Album《Vitamiin》、1987 Album《Vitamiin》、1997 與 2005 兩張 Compilation。**1983 這一年同時出了一張愛沙尼亞語盤名的 Album 與一張俄語盤名的 EP。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c2cab48e-453e-4573-b41f-24b8565aaa94&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流端第三種查法逐筆覆核：藝人目錄（281166352）下有六個條目（I／II／III／IV／V／《Enne Ja Pärast Viimast Vaatust》），**沒有一個是本張**。逐一直查曲目後，本張十軌**散在兩個不同條目裡**：《II》有〈Viimane vaatus〉2:14、〈Festival〉4:43、〈Julius Caesar〉3:27，《III》有〈Hookus-pookus〉2:48、〈Lolita〉3:04；**單一條目最多只湊到 3/10，且長度與盤面對不上**（〈Viimane vaatus〉2:14 對盤面 2:55）。**駁回：串流端沒有本張的整張條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1734693368&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第九軌〈Julius Caesar〉的錄音實體同時掛在另一張同年同廠的碟上——同一段錄音跨了兩張 1983 年的盤",
+   "十首長度全擠在 2:55 到 4:45 之間，最長與最短差不到兩分鐘",
+   "同一年這個掛名出了兩種盤面：愛沙尼亞語盤名的長片與俄語盤名的小碟"
+  ],
+  "sound": "1983 年 Мелодия С60 19587 005 的原盤是 12 吋、十軌，長度收得極整齊：〈Lolita〉3:03 開場，接〈Talv〉4:00、〈Hookus-Pookus〉2:45、〈Pulmapäev〉3:15；B 面是全片最長的兩首〈Festival〉4:40 與〈Tour〉4:45，然後〈Rabatapp〉3:38、〈Ave Maria〉4:00、〈Julius Caesar〉3:23，收在最短的〈Viimane vaatus〉2:55。曲名一半愛沙尼亞語、一半是跨語言的專名——羅莉塔、霍克斯波克斯、聖母頌、凱撒——最後一首直譯是「最後一幕」。",
+  "keyTracks": [
+   "Tour",
+   "Julius Caesar",
+   "Viimane vaatus"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1983（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 的日期都是 1983，目錄號 С60 19587 005 與之相符。**錄音年：資料庫端空白**，十軌零 recording-level relationship，release 無 annotation，**1983 只能當發行年寫**。⚠ **同掛名另有 1984 與 1987 兩張都叫《Vitamiin》的 Album**，行文提到盤名時要用完整的《Ansambel \"Vitamiin\"》，不可簡寫成《Vitamiin》。",
+  "notes": "**擋下策展層兩處。**｜（一）`curatorWhy` 寫「是 1980 年代愛沙尼亞最紅的流行搖滾團之一」。**價值判斷，無來源，行文不得寫。**｜（二）`curatorWhy` 寫「也是少數同時發愛沙尼亞語與俄語盤面的團」。**「少數」這個比較級查不到來源**——本組另有三張（Ruja 1982、Anne Veski 1983、Sven Grünberg 1988）在資料庫端同樣有俄語盤面或俄語條目，**這個「少數」實際上並不成立**。行文只能寫「同一年名下同時有愛沙尼亞語盤名的長片與俄語盤名的小碟」，不可加「少數」。｜可以寫的：藝人實體有 disambiguation、國別 EE 與 1978–1989 的完整起訖年，**這是本組少數不必靠旁證排除同名實體的掛名**；十軌長度齊全，**可以寫時間**。｜**跨卡最強的一條事實：第 9 軌〈Julius Caesar〉的錄音實體與本批 Anne Veski 那張是同一個**，兩張都是 1983 年同一家的盤。**寫的時候要說是同一段錄音，不要說成「翻唱」或「重錄」。**｜成員：**Anne Veski 的在團區間是 1979 到 1982，本張出版時她已經不在團裡**——行文如果要把兩張碟連起來，只能靠上面那條錄音實體，**不可寫成「主唱同一人」**。｜**串流駁回：藝人目錄六個條目逐一直查曲目後，本張十軌散在《II》與《III》兩個條目裡，單一條目最多 3/10，長度也對不上。無固定試聽來源，行文不要暗示可試聽。**｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Kaseke|Põletus",
+  "artist": "Kaseke",
+  "album": "Põletus",
+  "facts": [
+   {
+    "f": "release-group 623be7c7 的欄位：title「Põletus」、artist-credit「Kaseke」（藝人實體 839a2dad，Group／EE，**life-span 1980–1984，ended=true**）、first-release-date **1983**、primary-type Album、secondary-types 空。轄下 **1 個 release**：6eb8e828（1983／SU／Official、Мелодия **С60 19829 008**、**12\" Vinyl、9 軌**、script=Latn／lang=est）。該 release 掛一筆 **design/illustration 關係：Margus Haavamägi**，另掛 other-databases 指向愛沙尼亞國家書目 b2048287。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "九軌與長度：1〈Elevant〉4:20、2〈Valhalla〉4:17、3〈Elevantsi hirmulaul〉3:38、4〈Salajane rõõm〉3:51、5〈Põletaja〉3:42、6〈Tantsija〉5:54、7〈Näotused〉4:52、8〈Pikk päevatee〉4:50、9〈Põlenud maa〉3:48。**九首全部在 3:38 到 5:54 之間，沒有一首短於三分半。** 盤名〈Põletus〉與第 5 軌〈Põletaja〉、第 9 軌〈Põlenud maa〉共用同一個字根。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點全列 **3 個 release-group**：1981 **EP**《Sõnum》、1983 **Album**《Põletus》（本張）、2000 Album/**Compilation**《Põletus / Sõnum》。**樂團四年團史（1980–1984）在資料庫端只留下這兩張當年的發行品，本張是唯一的 Album。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=839a2dad-24b9-46b7-ac80-57f700dcc15f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 839a2dad 的 member-of-band 關係：Priit Kuulberg（original）1980–1984、Peeter Malkov（flute，original）1980–1984、Ain Varts（original）1980–1984、**Riho Sibul 1980–1984**、Ivo Varts（original）1980–1981、**Tõnu Naissoo 1981**、Mart Metsala 1981–1984、Andrus Vaht 1981–1984；另有一筆 collaboration：Margus Kappel。**其中 Tõnu Naissoo 在資料庫端是本批另一張卡的掛名 Uno Naissoo 的兒子**（Uno Naissoo 實體掛 parent 關係指向 Tõnu Naissoo）。",
+    "src": "https://musicbrainz.org/ws/2/artist/839a2dad-24b9-46b7-ac80-57f700dcc15f?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）只回到 Doctor Kaseke、DR Pardon Kaseke、Nyasha Kaseke 等無關實體；藝人目錄查不到本團；以盤面曲名〈Elevantsi hirmulaul〉〈Põlenud maa〉〈Valhalla〉逐一直查也**沒有任何一軌命中本團**。**駁回：串流端查無本張。**",
+    "src": "https://itunes.apple.com/lookup?id=1786734646&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "樂團四年團史在資料庫端只留下兩張當年的發行品，這張是唯一一張長片",
+   "九首全部長於三分半，最長的〈Tantsija〉5:54",
+   "盤名與第五、第九軌共用同一個字根：Põletus／Põletaja／Põlenud maa"
+  ],
+  "sound": "1983 年 Мелодия С60 19829 008 的原盤是 12 吋、九軌，每首都在三分半以上。A 面〈Elevant〉4:20 開場，接〈Valhalla〉4:17、〈Elevantsi hirmulaul〉3:38、〈Salajane rõõm〉3:51；B 面〈Põletaja〉3:42、全片最長的〈Tantsija〉5:54、〈Näotused〉4:52、〈Pikk päevatee〉4:50，收在〈Põlenud maa〉3:48。曲名在大象、瓦爾哈拉、舞者、無臉之間跳，盤名與其中兩首共用同一個字根。封套的美術設計在資料庫端掛的是 Margus Haavamägi。",
+  "keyTracks": [
+   "Tantsija",
+   "Elevant",
+   "Põlenud maa"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1983（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1983，目錄號 С60 19829 008 相符。**錄音年：資料庫端空白**，九軌零 recording-level relationship、release 無 annotation，**1983 只能當發行年寫**。樂團的 life-span 是 1980–1984，本張落在區間內。",
+  "notes": "**擋下策展層兩處。**｜（一）`curatorWhy` 寫「是愛沙尼亞融合爵士搖滾一路最常被列進正典的樂團」。**「最常被列進正典」是價值判斷，無來源，行文不得寫。**｜（二）`curatorWhy` 寫「1981 年只出過 EP《Sõnum》」——這一句查得到、成立（藝人端點確實只有那一張 EP 在本張之前），**但「唯一的 LP」要說清楚是「名下唯一的 Album 形態發行品」**，2000 年那張把兩者併起來的 Compilation 也在名下。｜可以寫的：**封套美術 Margus Haavamägi 是關係欄背書的，可以寫**；成員名（Priit Kuulberg、Peeter Malkov、Riho Sibul、Ain Varts、Mart Metsala、Andrus Vaht、Ivo Varts、Tõnu Naissoo）全部有起訖年背書，**可以寫，但要帶區間**。｜**跨卡可用的一條**：1981 年短暫在團的 Tõnu Naissoo，在資料庫端是本批另一張卡的掛名 Uno Naissoo 的兒子（親子關係是欄位值）。｜**串流駁回：三種查法都跑過（掛名搜尋八店面、藝人目錄、以三個盤面曲名直查逐軌），全部未命中本團。無固定試聽來源，行文不要暗示可試聽。**｜九軌長度齊全，**可以寫時間**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Mess|Sven Grünberg's Proge-Rock Group Mess",
+  "artist": "Mess",
+  "album": "Sven Grünberg's Proge-Rock Group Mess",
+  "facts": [
+   {
+    "f": "release-group e5ad9b28 的欄位：title「Sven Grünberg's Proge-Rock Group Mess」、artist-credit「Mess」（藝人實體 a5d97a6f，Group／EE，disambiguation「Estonian prog rock group」，**life-span 起 1974-01，ended=true 但無結束年**）、first-release-date **1995**、primary-type Album、**secondary-types [Compilation]**。轄下 **1 個 release**：92e45e7c（**1995／DE**／Official、**Bella Musica BM-CD 31.4199**、**CD、9 軌**、barcode 4014513013415、script=Latn／lang=est）。**這張不是蘇聯系統的發行品，是德國廠牌的 CD。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e5ad9b28-520e-3d72-90ce-86cd62e9142a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "九軌與長度：1〈Avamäng〉1:48、2〈Rohelised leed〉7:17、3〈Valged hommikud〉6:32、4〈Pilvini〉4:22、5〈Tiik〉9:44、6〈Lugu〉6:11、7〈Üksi〉4:39、8〈Küsi Eneselt〉**10:39**、9〈Taevas (Koda)〉2:43。**尺度差極大：最長 10:39、最短 1:48，兩首兩分鐘以內的短曲夾住中間五首六到十分鐘的長段落，第一首與最後一首的曲名直譯就是「序曲」與「天空（尾聲）」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e5ad9b28-520e-3d72-90ce-86cd62e9142a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**串流採信 `287441442`：九軌逐軌覆核，順序與長度 9/9 完全相同（1:48／7:17／6:32／4:22／9:44／6:11／4:39／10:39／2:43，一秒不差），但曲名整套換成英譯**——Overture／Green Hearths／Bright Mornings／To the Clouds／Pond／Story／Alone／Ask Yourself／Sky。店面掛名寫「Sven Grünberg's Proge-Rock-Group」（多一個連字號）、盤名只寫「Mess」、年份標 2008、版權行 **℗ 2008 Bella Musica**。**八店面（ee／lv／lt／ru／de／fi／us／gb）逐一 lookup 全部回得到，8/8。**",
+    "src": "https://itunes.apple.com/lookup?id=287441442&entity=song&country=ee&limit=200"
+   },
+   {
+    "f": "藝人端點全列 **3 個 release-group**：**1980 EP《Mess》**、1995 本張（Compilation）、2004 Album《Küsi eneselt》。**蘇維埃時期名下只有 1980 年那張 EP，沒有任何 Album。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a5d97a6f-70d1-4376-b585-3126e475d890&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 a5d97a6f 的 member-of-band 關係：**Sven Grünberg（keyboard／lead vocals，original）1974–1976**、**Elmu Värk（guitar，original）1974–1976**、Matti Timmermann（bass，original）無起訖、Ivar Sipra（drums）無起訖、Andrus Vaht（drums）無起訖；另有一筆 collaboration：Härmo Härm。**兩位標 original 的成員，在團區間都只寫到 1974–1976。**",
+    "src": "https://musicbrainz.org/ws/2/artist/a5d97a6f-70d1-4376-b585-3126e475d890?fmt=json&inc=artist-rels+annotation"
+   }
+  ],
+  "hookCandidates": [
+   "九軌的尺度差到六倍：最長 10:39、最短 1:48，兩首短曲夾住中間五首六到十分鐘的長段落",
+   "串流端那份的順序與長度與碟上一秒不差，但九個曲名整套換成了英譯",
+   "樂團在蘇維埃時期名下只有一張小碟，這批曲目要到 1995 年才在德國成套出版"
+  ],
+  "sound": "1995 年 Bella Musica BM-CD 31.4199 的 CD 是九軌。〈Avamäng〉1:48 當序曲起頭，隨即進入五首長段落：〈Rohelised leed〉7:17、〈Valged hommikud〉6:32、〈Pilvini〉4:22、〈Tiik〉9:44、〈Lugu〉6:11；接〈Üksi〉4:39，然後是全片最長的〈Küsi Eneselt〉10:39，最後用 2:43 的〈Taevas (Koda)〉收尾——首尾兩首的曲名直譯就是「序曲」與「天空（尾聲）」，中間夾著六到十分鐘級的段落，最長與最短差到六倍。串流上那份的順序與長度一秒不差，只是曲名全換成了英譯。",
+  "keyTracks": [
+   "Küsi Eneselt",
+   "Tiik",
+   "Rohelised leed"
+  ],
+  "status": "full",
+  "yearVerified": "**兩個年份要分開講，而且卡單取的 1975 在資料庫端查不到直接來源。** 出版年：**1995**（release-group 的 first-release-date 與唯一那筆 release 一致；店面版權行寫 ℗ 2008，那是後來上架的年份，**不可拿來覆蓋 1995**）。卡單取的 1975 落在**樂團成員關係的在團區間 1974–1976** 之內，也落在藝人 life-span 起點 1974-01 之後——**但沒有任何欄位登記過「1975」這個錄音年**，九軌零 recording-level relationship、release 無 annotation。**所以行文絕不可寫「1975 年錄的」；可以寫的是「兩位原始成員的在團區間都只寫到 1974 至 1976」。**",
+  "notes": "**擋下策展層三處。**｜（一）`label` 欄與 `exceptionReason` 都寫「原始母帶為 1974–1976 年愛沙尼亞廣播與 Melodiya 錄音」。**「愛沙尼亞廣播」與「Melodiya 錄音」兩個來源在資料庫端與店面端都查不到任何背書**——這筆 release 的 label-info 只有 Bella Musica，沒有第二個廠牌。**行文不得寫母帶出處。**｜（二）`exceptionReason` 寫「1974–1976 年的完整曲目」。**「完整」查不到來源**——資料庫端無從得知這批錄音一共有多少，行文不可寫「完整」「全部」。｜（三）`exceptionReason` 寫「是愛沙尼亞前衛搖滾史最常被引用的一份文獻」。**價值判斷，無來源，行文不得寫。**｜**§5.6 舉證覆核：站得住。** 兩個證據網址都逐一回問過內容——release-group e5ad9b28 存在、secondary-types 標 Compilation、轄下只有 1995 年德國那一筆；店面條目 287441442 的九軌與碟上 9/9 同序、長度一秒不差。**「蘇維埃時期只出過 1980 年一張 EP」也成立**（藝人端點只有三個 release-group，本張之前只有那張 EP）。｜**串流採信 287441442：九軌順序與長度 9/9 一秒不差，八店面全數回得到；但曲名整套是英譯（Overture／Green Hearths／Pond／Ask Yourself／Sky…）。行文若要引曲名，必須用碟上的愛沙尼亞語原名，並說明串流那份用的是英譯名。**｜**「不是蘇聯系統的發行品」是本張最硬的一條事實**：release 的 country 是 DE、廠牌是德國的 Bella Musica，可以寫。｜九軌長度齊全，**可以寫時間**。｜政治敘述：資料庫端沒有任何禁演、審查或發行受阻的記載，**「當年出不了」這種因果斷言不得寫**；能寫的只有「蘇維埃時期名下只有一張小碟，這批曲目到 1995 年才在德國成套出版」這個可查的形狀。"
+ },
+ {
+  "key": "desc2:In Spe|In Spe",
+  "artist": "In Spe",
+  "album": "In Spe",
+  "facts": [
+   {
+    "f": "release-group f6447446 的欄位：title「In Spe」、artist-credit「In Spe」（藝人實體 2c3ef15a，Group／EE，**life-span 起 1979，ended=true**）、first-release-date **1983**、primary-type Album、secondary-types 空。轄下 **2 個 release，兩筆都是 Official**：d3377f94（**1983／SU**、Мелодия **С60 19367 001**、**12\" Vinyl、6 軌**、lang=est）與 212c56db（**1999-12／EE**、**Eesti Raadio ERCD-028**、**CD、6 軌**、lang=mul）。release-group 另掛一筆 review 類型的 url 關係。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f6447446-8307-3aed-a9c0-c2554adc26f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1983 原盤六軌與長度：1〈Ostium〉4:24、2〈Iluminatio〉6:50、3〈Mare Vitreum〉8:15、4〈Antidolorosum〉4:46、5〈Päikesevene〉8:58、6〈Sfääride võitlus〉7:19。**六首裡有三首超過七分鐘，最長〈Päikesevene〉8:58、最短〈Ostium〉4:24。前四首曲名是拉丁文，後兩首是愛沙尼亞語。** 1999 年那張 CD 是同六軌同序，長度各多出 3 到 5 秒（4:29／6:55／8:20／4:51／9:03／7:20），且第 2 軌拼成〈Illuminatio〉（多一個 l）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f6447446-8307-3aed-a9c0-c2554adc26f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**1999 年那筆 CD（212c56db）掛了整組 relationship，是本組唯一有樂手名單的 release**：instrument 關係列出 **Erkki-Sven Tüür**（flute／Minimoog／recorder／synthesizer）、**Riho Sibul**（guitar family）、**Anne Tüür**（electric piano／Rhodes piano）、Peeter Brambat（flute／tenor recorder）、Toivo Kopli（bass guitar）、Priit Kuulberg（vocoder）、Mart Metsala（Hammond organ／synthesizer）、Arvo Urb（membranophone）；另有 mastering：Priit Kuulberg、producer（executive）：Tiia Teder、design/illustration：Atko Januson。**1983 那筆原盤沒有任何 relationship。**",
+    "src": "https://musicbrainz.org/ws/2/release/212c56db-010a-4aa6-82ff-0820c494b7f6?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels"
+   },
+   {
+    "f": "藝人 2c3ef15a 的 member-of-band 關係（有起訖年）：**Erkki-Sven Tüür（lead vocals／flute／keyboard，original）1979–1983**、Peeter Brambat（flute，original）1979–1989、Riho Sibul（guitar，original）1979–1979、Toivo Kopli（bass guitar，original）1979 起、Mart Metsala（keyboard，original）1979 起、Anne Tüür（piano／keyboard，original）1979 起、Vello Annuk（bass guitar）1983–1985、**Alo Mattiisen（keyboard）1983 起**、Arvo Urb（drums，original）無起訖、Jaanus Nõgisto（guitar）無起訖。**1983 是 Erkki-Sven Tüür 在團區間的最後一年，也是 Alo Mattiisen 進團的那一年。**",
+    "src": "https://musicbrainz.org/ws/2/artist/2c3ef15a-75bb-4208-b184-8d8fda50b627?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "藝人端點全列 **只有 3 個 release-group**：1983《In Spe》（本張）、1985《In Spe》、2019《In Spe》。**三個 release-group 的 title 一模一樣。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2c3ef15a-75bb-4208-b184-8d8fda50b627&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）只回到 Charmeurs In Spe 這個無關實體；藝人目錄查不到本團；以盤面曲名〈Mare Vitreum〉〈Päikesevene〉〈Sfääride võitlus〉逐一直查，回到的是 Finnugor、Pray Latina 與 Estonian Cello Ensemble 的同名曲，**沒有一筆是本團**。**駁回：串流端查無本張。**",
+    "src": "https://itunes.apple.com/lookup?id=1491967855&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六首曲名前四首是拉丁文、後兩首是愛沙尼亞語，三首超過七分鐘",
+   "1999 年那份重發把同樣六軌各拉長了三到五秒，還把第二軌的拼法改掉一個字母",
+   "1983 這一年正好是團裡一位原始成員在團區間的最後一年"
+  ],
+  "sound": "1983 年 Мелодия С60 19367 001 的原盤是 12 吋、只有六軌。〈Ostium〉4:24 開場，接〈Iluminatio〉6:50、〈Mare Vitreum〉8:15；後半是〈Antidolorosum〉4:46、全片最長的〈Päikesevene〉8:58，收在〈Sfääride võitlus〉7:19。六首裡三首超過七分鐘，最短的也有四分半——沒有一首是短曲。曲名前四首用拉丁文（門、照明、玻璃海、止痛），後兩首換回愛沙尼亞語（太陽之舟、天球之戰）。1999 年那張 CD 是同樣六軌同序，每首各多三到五秒。",
+  "keyTracks": [
+   "Päikesevene",
+   "Mare Vitreum",
+   "Sfääride võitlus"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1983（**發行年**）。release-group 的 first-release-date 是 1983，其下最早的 release 就是 1983／SU 的 Мелодия С60 19367 001；另一筆 212c56db 是 **1999-12 年愛沙尼亞的 CD 重發**（Eesti Raadio ERCD-028），**復刻年寫在這裡，不進卡片年份**。**錄音年：資料庫端空白**——1983 原盤零 relationship，**1983 只能當發行年寫**。",
+  "notes": "**擋下策展層兩處。**｜（一）樂手名單：`curatorWhy`／`mbNote` 沒寫成員，但下游很容易想寫。**可以寫的樂手名只有 1999 年那筆 CD 的 relationship 列到的八位**（Erkki-Sven Tüür、Riho Sibul、Anne Tüür、Peeter Brambat、Toivo Kopli、Priit Kuulberg、Mart Metsala、Arvo Urb），**而且必須說明那組名單掛在 1999 年那份重發上，不是 1983 年的原盤**（原盤零 relationship）。要寫在團區間，用藝人端的 member 關係，那組有起訖年。｜（二）`curatorRisk` 記「兩種查法未命中」。**第三種查法（以三個盤面曲名逐一直查逐軌）也跑了，同樣未命中**——回到的是三組完全不相干的同名曲。**駁回，無固定試聽來源，行文不要暗示可試聽。**｜⚠ **軌數與長度要指明版本（裁定 174）**：1983 原盤與 1999 CD 都是六軌但長度不同（8:58 對 9:03 這種），**行文寫時間必須說是哪一版**。｜⚠ **同掛名的三個 release-group 標題一模一樣**（1983／1985／2019），行文不可只寫《In Spe》就當作指本張，要帶年份。第二軌的拼法兩版不同（Iluminatio／Illuminatio），**引曲名時以 1983 原盤的寫法為準**。｜六軌長度齊全，**可以寫時間**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:In Spe|Typewriter Concerto in D",
+  "artist": "In Spe",
+  "album": "Typewriter Concerto in D",
+  "facts": [
+   {
+    "f": "release-group c9feb38d 的欄位：**title 是「In Spe」，不是「Typewriter Concerto in D」**、artist-credit「In Spe」、first-release-date **1985**、primary-type Album、secondary-types 空。轄下 **2 個 release，兩筆都是 Official**：00e61f8a（**1985／SU**、Мелодия **С60-23199-000**、**12\" Vinyl、6 軌**、title 也叫「In Spe」、**text-representation lang=eng**）與 2118b5a5（**1994／FR**、**Musea FGBG 4118.AR**、**CD、8 軌**、barcode 3426300041180、**title 才是「Typewriter Concerto in D」**）。**卡片取的盤名是 1994 年法國那筆再發的 title。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**兩版曲目不一樣，不是單純的重發。** 1985 原盤六軌：1〈Typewriter Concerto in D major: Allegro vivace e marcato〉5:43、2〈…: Largo molto tranquillo - Allegro agitato - Finale〉**12:27**、3〈Feeling of Eternity〉5:53、4〈Rondo of the Broken Arm〉4:29、5〈**You Will Not Lie Buried in Obscurity**〉3:49、6〈Vallis Mariae〉3:27。1994 CD 八軌：協奏曲被拆成四個樂章（5:44／6:18／5:15／**0:50**），〈Feeling of Eternity〉6:02、〈Rondo of the Broken Arm〉4:38、〈Vallis Mariae〉3:33，最後多出一首 **〈Departure〉11:16**。**CD 版少了原盤第 5 軌〈You Will Not Lie Buried in Obscurity〉，多了原盤沒有的〈Departure〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**1985 年這筆蘇聯壓片的 text-representation 語言欄是 eng**——盤上六個曲名本來就是英文與拉丁文（Typewriter Concerto、Feeling of Eternity、Rondo of the Broken Arm、Vallis Mariae），**沒有一首用愛沙尼亞語**。這與同掛名 1983 年那張（六軌裡四首拉丁文、兩首愛沙尼亞語，lang=est）形成直接對照。",
+    "src": "https://musicbrainz.org/ws/2/release/00e61f8a-d298-4dbc-9321-2035a9d0de7a?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels"
+   },
+   {
+    "f": "藝人 2c3ef15a 的 member-of-band 關係裡，**Erkki-Sven Tüür（lead vocals／flute／keyboard，original）的在團區間是 1979–1983，到 1985 年已經結束**；1983 年進團的是 **Alo Mattiisen（keyboard）**，Vello Annuk（bass guitar）的區間是 1983–1985。Peeter Brambat（flute，original）1979–1989、Toivo Kopli／Mart Metsala／Anne Tüür 皆標 1979 起無結束年。**藝人端點全列只有 3 個 release-group，title 全叫「In Spe」（1983／1985／2019）。**",
+    "src": "https://musicbrainz.org/ws/2/artist/2c3ef15a-75bb-4208-b184-8d8fda50b627?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）只回到 Charmeurs In Spe；藝人目錄查不到本團；以〈Rondo of the Broken Arm〉〈Vallis Mariae〉〈Typewriter Concerto in D〉逐一直查，回到的是 Phil Collins、Alabama、Saint-Saëns 與 Leroy Anderson 的〈The Typewriter〉等純噪音，**沒有一筆是本團**。**駁回：串流端查無本張。**",
+    "src": "https://itunes.apple.com/lookup?id=1452378847&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "一張蘇聯壓片上六個曲名全是英文與拉丁文，一首愛沙尼亞語都沒有",
+   "1994 年那版把協奏曲拆成四個樂章，最短的一段只有 50 秒",
+   "再發版少了原盤的第五軌，卻多出一首十一分鐘的曲子"
+  ],
+  "sound": "1985 年 Мелодия С60-23199-000 的原盤是 12 吋、六軌，前兩軌就是打字機協奏曲的兩個段落：5:43 的快板，接 12:27 的長段落——那一首佔了整張近三分之一。之後是〈Feeling of Eternity〉5:53、〈Rondo of the Broken Arm〉4:29、〈You Will Not Lie Buried in Obscurity〉3:49，收在最短的〈Vallis Mariae〉3:27。六個曲名全是英文與拉丁文。1994 年法國那版把協奏曲改拆成四個樂章（其中一段只有 0:50），拿掉原盤第五軌，另接上一首十一分鐘的〈Departure〉。",
+  "keyTracks": [
+   "Typewriter Concerto in D major: Largo molto tranquillo - Allegro agitato - Finale",
+   "Feeling of Eternity",
+   "Vallis Mariae"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1985（**發行年**）。release-group 的 first-release-date 是 1985，其下最早的 release 就是 1985／SU 的 Мелодия С60-23199-000。**1994 是法國 Musea 那筆再發的年份，寫在這裡，不進卡片年份**（裁定 220）。**錄音年：資料庫端空白**，兩筆 release 都沒有 recording-level relationship 也沒有 annotation，**1985 只能當發行年寫**。",
+  "notes": "**擋下策展層兩處。**｜（一）**盤名的來源要說清楚**：release-group 的 title 是「In Spe」，「Typewriter Concerto in D」只出現在 **1994 年法國那筆再發**的 release title 上。卡片取再發名是為了與 1983 年那張區分（同掛名三個 release-group 的 title 一模一樣）。**行文不可寫成「1985 年出了一張叫《Typewriter Concerto in D》的碟」**——1985 年那筆盤面上寫的是「In Spe」。｜（二）`label` 欄寫「1994 年法國 Musea 以《Typewriter Concerto in D》之名再發（FGBG 4118.AR，CD 8 軌）」——**這句成立，但漏了最重要的一點：兩版曲目不同**。CD 版少了原盤第 5 軌〈You Will Not Lie Buried in Obscurity〉，多了原盤沒有的〈Departure〉11:16，協奏曲也從兩軌拆成四樂章。**行文寫軌數必須指明版本（裁定 174）：原盤 6 軌、1994 CD 8 軌，不可只寫「這張有八首」。**｜可以寫的：**1985 年那筆蘇聯壓片的語言欄是 eng、六個曲名全是英文與拉丁文**，這是逐筆比對過的，也是與同掛名 1983 年那張最乾淨的對照。｜成員：**1985 年時那位原始成員的在團區間（1979–1983）已經結束**，這點有起訖年背書可以寫；**但不得寫他「離團去做什麼」——資料庫端沒有那個資訊。**｜**串流駁回：三種查法都跑過（掛名搜尋八店面、藝人目錄、以三個盤面曲名直查逐軌），回到的全是同名噪音。無固定試聽來源，行文不要暗示可試聽。**｜兩版長度都齊全，**可以寫時間，但一定要標版本**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Radar|Trofee",
+  "artist": "Radar",
+  "album": "Trofee",
+  "facts": [
+   {
+    "f": "release-group 6e2b0208 的欄位：title「Trofee」、artist-credit「Radar」（藝人實體 5a6b2909，Group／EE，disambiguation「Estonian band」，**life-span 1978–1988，ended=true**）、first-release-date **1985**、primary-type Album、secondary-types 空。轄下 **1 個 release**：cdaa0ada（1985／SU／Official、Мелодия **С60 21713 006**、**12\" Vinyl、8 軌**、script=Latn／lang=est）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八軌與長度：1〈Tipptund kesklinnas〉4:46、2〈Promenaad〉5:00、3〈Trofee〉5:10、4〈Portree〉5:02、5〈Sünnipäev〉4:17、6〈Habanera〉3:04、7〈**Konflikt**〉**8:08**、8〈Mäng〉2:30。**中間四首都貼著五分鐘，第七首 8:08 突出來，最後用 2:30 的〈Mäng〉收掉——最長與最短差三倍多。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點全列 **5 個 release-group**：1981 **EP《Radar》**、1981 **EP《Jaak Joala & Radar》**、1985 Album《Trofee》（本張）、1987 Album《Baltic Coast》、2017-03-20 Album/Compilation《Minu elu》。**名下只有兩張 Album，本張是第一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5a6b2909-7f30-48fd-8338-5fdce2dee4c5&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 5a6b2909 的 member-of-band 關係（十八筆，全部有起訖年）：**Jaak Joala（lead vocals，original）1978–1984**、Sergei Pedersen（keyboard，original）1978–1988、Paap Kõlar（drums）1979–1988、Riho Lilje（guitar，original）1978–1982、Vladimir Šeripov（bass guitar，original）1978–1980、**Raul Vaigla（bass guitar）1982–1985**、Aare Põder（keyboard）1982–1985、Nevil Blumberg（guitar）1981–1985、**Valeri Belinov（guitar）1985–1987**、Paul Kikerpuu（bass guitar）1985–1988、Raivo Narits（keyboard）1985–1988、Ele Kõlar 與 Kaja Kõlar 1982–1984。**1985 這一年正好是三位成員區間的結束年、另外三位的起始年。**",
+    "src": "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "**串流第三種查法的部分命中，逐軌覆核後駁回作為本張的來源**：以曲名〈Tipptund kesklinnas〉直查，回到 `1796234879`——2025 年的合輯《Crate Diggers: Soviet Progressive Disco & Funk Gems, Vol. 1》（掛名 Various Artists、11 軌、℗ 2025 soul research），**其中第 5 軌〈Tipptund Kesklinnas〉4:47 掛在 Radar 名下，長度與盤面第 1 軌 4:46 只差 1 秒**。**但那是十一軌合輯裡的一軌，本張其餘七軌一軌都不在**（該合輯其餘十軌是土庫曼、哈薩克、立陶宛、拉脫維亞等地的曲目）。該合輯在七個店面回得到（ee／lv／lt／de／fi／us／gb，ru 查無）。**駁回：不是本張的條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1796234879&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "中間四首都貼著五分鐘，第七首 8:08 突出來，最後用 2:30 收掉",
+   "樂團十年團史在資料庫端只留下兩張長片，這是第一張",
+   "1985 這一年是三位團員在團區間的結束年，也是另外三位的起始年"
+  ],
+  "sound": "1985 年 Мелодия С60 21713 006 的原盤是 12 吋、八軌。〈Tipptund kesklinnas〉4:46 開場，接〈Promenaad〉5:00、與盤名同字的〈Trofee〉5:10、〈Portree〉5:02——中段四首幾乎等長，全部貼著五分鐘。之後〈Sünnipäev〉4:17、〈Habanera〉3:04 把尺度收小，第七軌〈Konflikt〉8:08 突然拉到全片最長，最後用 2:30 的〈Mäng〉收掉，長短差了三倍多。曲名是市中心的尖峰時刻、散步、獎盃、肖像、生日、哈巴涅拉、衝突、遊戲——八個都是日常名詞。",
+  "keyTracks": [
+   "Konflikt",
+   "Trofee",
+   "Mäng"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1985（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1985，目錄號 С60 21713 006 相符。**錄音年：資料庫端空白**，八軌零 recording-level relationship、release 無 annotation，**1985 只能當發行年寫**。串流端那個 2025 年的合輯條目標 ℗ 2025，**不可拿來當年份旁證**。",
+  "notes": "**擋下策展層一處，並補回一筆策展層判為「未命中」的串流。**｜（一）掛名風險：`curatorRisk` 已記 Radar 是短掛名。**實測確認：以掛名在八個店面搜尋，回到的全是嘻哈、電音、德語饒舌等十幾個同名實體，藝人目錄一個都不是本團**——外部比對只能靠曲名，不能靠掛名。｜（二）**第三種查法有部分命中但已駁回**：以盤面第一軌曲名直查，找到 2025 年一張合輯 1796234879，其中一軌〈Tipptund Kesklinnas〉4:47 掛在 Radar 名下、與盤面 4:46 只差 1 秒；**但那是十一軌合輯裡的單獨一軌，本張其餘七軌一軌都不在**。**駁回作為本張的試聽來源；行文不得暗示整張可試聽**，若要提可以寫「其中一首後來被收進一張跨共和國的選輯」，**但不可寫選輯名或平台名**。｜可以寫的：成員名單十八筆全部有起訖年背書，**可以寫，但要帶區間**；**1985 這一年同時是三位成員的結束年與另外三位的起始年**，這是逐筆數過的。｜⚠ **主唱與本批另一張卡的交集**：資料庫端 Jaak Joala 的在團區間是 1978–1984，**本張出版的 1985 年他的區間已經結束**——**不可寫成「主唱 Jaak Joala 唱的這張」**。｜八軌長度齊全，**可以寫時間**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Radar|Baltic Coast",
+  "artist": "Radar",
+  "album": "Baltic Coast",
+  "facts": [
+   {
+    "f": "release-group 4215b661 的欄位：title「Baltic Coast」、artist-credit「Radar」（藝人實體 5a6b2909，Group／EE，1978–1988）、first-release-date **1987**、primary-type Album、secondary-types 空。轄下 **1 個 release**：84fcf30c（1987／SU／Official、Мелодия **С60 25125 006**、**12\" Vinyl、7 軌**、script=Latn／**lang=est**）。**盤名是英文，但語言欄與七個曲名都是愛沙尼亞語。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4215b661-570a-4777-8906-56f27d31a5f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "七軌與長度：1〈Viraaž〉3:30、2〈**Suitsune valgus**〉**9:12**、3〈**Päiksepiste**〉**9:37**、4〈Balti kallas〉4:15、5〈Avamine〉4:00、6〈Kiirtelegramm〉3:38、7〈Pikk tee〉7:00。**第二、第三軌連著兩首九分半上下，兩首加起來就佔了 18 分 49 秒；其餘五首都在 3:30 到 7:00 之間。第四軌〈Balti kallas〉的愛沙尼亞語直譯就是盤名「Baltic Coast」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4215b661-570a-4777-8906-56f27d31a5f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "與同掛名 1985 年那張《Trofee》的對照：本張 **7 軌**、前者 **8 軌**；本張最長 9:37、前者最長 8:08；本張的長段落集中在第二、三軌連放，前者的長段落是單獨一首插在第七位。**兩張都是 12\" Vinyl，都只有一筆 Official release，目錄號分別是 С60 25125 006 與 С60 21713 006。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人 5a6b2909 的 member-of-band 關係裡，**1987 這一年在區間內的是**：Sergei Pedersen（keyboard，original）1978–1988、Paap Kõlar（drums）1979–1988、Valeri Belinov（guitar）1985–1987、Paul Kikerpuu（bass guitar）1985–1988、Raivo Narits（keyboard）1985–1988。**1978 年那批原始成員裡，到 1987 年只剩 Sergei Pedersen 一位還在區間內。** 藝人端點全列 5 個 release-group，本張是名下第二張、也是最後一張蘇維埃時期的 Album。",
+    "src": "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）回到的全是同名噪音；藝人目錄無本團；以盤面曲名〈Balti kallas〉〈Suitsune valgus〉〈Kiirtelegramm〉逐一直查也**沒有一筆命中本團**（〈Baltic Coast〉那組回到的是 State Choir LATVIJA 與德語 chill-out 選輯）。**駁回：串流端查無本張。**",
+    "src": "https://itunes.apple.com/lookup?id=860048158&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第二、第三軌連著兩首九分半上下，兩首加起來就佔掉近十九分鐘",
+   "盤名是英文的，七個曲名卻全是愛沙尼亞語——第四軌就是盤名的愛沙尼亞語直譯",
+   "到 1987 年，1978 年那批原始團員只剩一位還在名單上"
+  ],
+  "sound": "1987 年 Мелодия С60 25125 006 的原盤是 12 吋、七軌。〈Viraaž〉3:30 開場之後立刻進入全片的重心：〈Suitsune valgus〉9:12 與〈Päiksepiste〉9:37 連放，兩首合計就近十九分鐘。之後〈Balti kallas〉4:15——那是盤名「Baltic Coast」的愛沙尼亞語直譯——再接〈Avamine〉4:00、〈Kiirtelegramm〉3:38，最後用 7:00 的〈Pikk tee〉收尾。盤名是英文，七個曲名全是愛沙尼亞語：轉彎、煙霧中的光、日灼、波羅的海岸、開啟、加急電報、長路。",
+  "keyTracks": [
+   "Päiksepiste",
+   "Suitsune valgus",
+   "Pikk tee"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1987，目錄號 С60 25125 006 相符。**錄音年：資料庫端空白**，七軌零 recording-level relationship、release 無 annotation，**1987 只能當發行年寫**。",
+  "notes": "**擋下策展層一處。**｜（一）掛名風險同前一張：**Radar 在八個店面搜出的十幾個同名實體全部無關，藝人目錄一個都不是本團**，外部比對不能靠掛名。｜可以寫的：**盤名是英文、七個曲名全是愛沙尼亞語、第四軌就是盤名的愛沙尼亞語直譯**，這三點都是逐筆比對過的；兩張 Radar 的形狀對照（7 軌對 8 軌、長段落連放對單獨一首）也是逐筆數過的。｜成員：**到 1987 年，1978 年那批標 original 的成員只剩一位還在區間內**，這是逐筆比對起訖年得到的，可以寫；**其餘成員名要寫就要帶區間。**｜**串流駁回：三種查法都跑過（掛名搜尋八店面、藝人目錄、以三個盤面曲名直查逐軌），全部未命中。無固定試聽來源，行文不要暗示可試聽。**｜七軌長度齊全，**可以寫時間**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Rein Rannap|Improvisatsioonid",
+  "artist": "Rein Rannap",
+  "album": "Improvisatsioonid",
+  "facts": [
+   {
+    "f": "release-group 757c144c 的欄位：title「Improvisatsioonid」、artist-credit「Rein Rannap」（藝人實體 47e2a032，**Person**／EE，disambiguation「Estonian composer and pianist」，life-span 起 **1953-10-06**，未標結束）、first-release-date **1982**、primary-type Album、secondary-types 空。轄下 **1 個 release**：2d2df305（1982／SU／Official、Мелодия **С60 19989 001**、**12\" Vinyl**、script=Latn／lang=est）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=757c144c-0e7d-49f9-8eeb-3c2e580d4f8c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**這張 12 吋上只有兩軌，而且兩軌同名**：1〈Improvisatsioonid〉、2〈Improvisatsioonid〉——**與盤名同字**。**兩軌都沒有長度**（length 欄為 null），資料庫端也**沒有面別（A／B）欄位**。裁定 174 的反面情形：軌數少不代表是單曲，這筆的 media format 明寫是 12\" Vinyl。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=757c144c-0e7d-49f9-8eeb-3c2e580d4f8c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點全列 **12 個 release-group**，**本張 1982 是最早的一個**；第二早的是 1986 年的《Сольные импровизации / Solo Improvisations》（雙語盤名），其餘十個全在 2002 年以後。**蘇維埃時期名下就這兩張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=47e2a032-0cf3-42b3-8b6a-a1de8ae87c1d&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 47e2a032 的關係欄：member of band **→ Ruja（original）1971-09–1975** 與 **→ Ruja 1980–1983 兩段**、→ Hõim（keyboard，original）1980 起、→ Noor Eesti（無起訖）；另有兩筆 parent 關係（Heino Rannap、Ikevald Rannap）。**本張出版的 1982 年落在他第二段在 Ruja 的區間（1980–1983）之內——同一年他在本批另一張卡的樂團裡。**",
+    "src": "https://musicbrainz.org/ws/2/artist/47e2a032-0cf3-42b3-8b6a-a1de8ae87c1d?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）回到的唯一相關條目是 CNU Wind Ensemble 的《Kuuvalge (Wind Music of Estonia)》，不是本人的碟；**以掛名查藝人目錄，八個店面都查不到這位的藝人實體**；以盤名與掛名組合直查逐軌也是 0 筆。**駁回：串流端查無本張，也查無這位的藝人條目。**",
+    "src": "https://itunes.apple.com/lookup?id=823915284&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "一張 12 吋上只有兩軌，兩軌同名，而且與盤名同字",
+   "這是他名下最早的一個發行品，蘇維埃時期名下只有兩張",
+   "同一年他還在本批另一張碟的那支樂團裡，關係欄的區間是 1980 到 1983"
+  ],
+  "sound": "1982 年 Мелодия С60 19989 001 是一張 12 吋，可是整張只登記了兩軌，兩軌都叫〈Improvisatsioonid〉——與盤名同一個字。資料庫端沒有給這兩軌任何長度，也沒有面別欄位，所以能確定的只有形態：一張 12 吋長片，兩個段落，其餘什麼都沒寫。這是他名下最早的一個發行品；同一個掛名要到 1986 年才出現第二張（那張的盤名是俄文與英文並列的《Сольные импровизации / Solo Improvisations》），之後就跳到 2002 年以後。",
+  "keyTracks": [
+   "Improvisatsioonid"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1982（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1982，目錄號 С60 19989 001 相符。**錄音年：資料庫端空白**，兩軌零 recording-level relationship、release 無 annotation，**1982 只能當發行年寫**。",
+  "notes": "⚠ **兩軌都沒有長度來源——別寫時間。**｜**擋下策展層一處。**｜（一）`curatorRisk`／c-123 裁定文件裡寫「各佔一面的長篇即興」。**「各佔一面」在資料庫端查不到**——這筆 release 只有一個 medium、兩個 track position，**沒有任何面別欄位**。**行文不得寫「一面一首」「A 面／B 面各一首」**；能寫的只有「一張 12 吋上只登記了兩軌」。｜可以寫的：**兩軌同名、且與盤名同字**（逐筆確認）；**這是他名下最早的一個 release-group、蘇維埃時期名下只有兩張**（藝人端點分頁全列 12 個，逐一比對過日期）；**1982 年落在他第二段在本批另一支樂團的在團區間內**（關係欄有起訖年）。｜⚠ **軌數少不代表是單曲**（裁定 174 的反面）：media format 明寫 12\" Vinyl，**行文不可把這張講成小碟或單曲**。｜**串流駁回：三種查法都跑過，連這位的藝人條目在八個店面都查不到。無固定試聽來源，行文不要暗示可試聽。**｜**本張素材偏薄——可寫的事實格數只夠 120–180 字，標 `partial`。** 形態（12 吋兩軌）、盤名與曲名同字、目錄號、名下序位、跨卡的在團區間，就是全部可寫的；**不要靠曲名長度充字數**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Gunnar Graps ja Magnetic Band|Roosid papale",
+  "artist": "Gunnar Graps ja Magnetic Band",
+  "album": "Roosid papale",
+  "facts": [
+   {
+    "f": "release-group f8c2cb64 的欄位：title「Roosid papale」、**artist-credit 是兩個藝人實體串起來的**——**Gunnar Graps**（18f30f5f，**Person**／EE，life-span **1951-11-27 – 2004-05-17，ended=true**）＋ **Magnetic Band**（0d56fb92，Group／EE，life-span 起 **1976**）、first-release-date **1982**、primary-type Album、secondary-types 空。轄下 **1 個 release**：7a39b977（1982／SU／Official、Мелодия **С60-17019-20**、**12\" Vinyl、11 軌**、script=Latn／lang=est）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f8c2cb64-0a06-44a4-b902-535796b8bceb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十一軌與長度：1〈Rahatuvi〉3:22、2〈Meie teisikud〉4:58、3〈Odüsseuse eksirännakud〉4:22、4〈Lady Blues〉4:45、5〈Leidmine〉3:16、6〈Varsti〉2:50、7〈Sügisõhtu blues〉3:50、8〈**Roosid papale**〉4:05、9〈Lillekimp imet teeb ehk vanaemad on unustanud muinasjutud〉3:28、10〈Doktor Noormann〉3:25、11〈Kohtumine〉2:16。**十一首全部在 2:16 到 4:58 之間，沒有一首破五分鐘；與盤名同字的第 8 軌 4:05 剛好落在正中間的長度。第 9 軌的曲名長到二十三個字。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f8c2cb64-0a06-44a4-b902-535796b8bceb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**跨卡比對：第 10 軌〈Doktor Noormann〉3:25 與同年 Ruja《Ruja》的第 2 軌同名（那邊是 2:54）**，**但兩者在資料庫端是兩個不同的 recording 實體，長度也差 31 秒——同名，不是同一段錄音。** 兩張都是 1982 年的 Мелодия 盤（С60-17019-20 與 С60-16885-6）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "兩個掛名的名下情形：**Magnetic Band（0d56fb92）只有 3 個 release-group**——1980 EP《Magnetic Band》、1982 本張、1988 Album《Põlemine》；別名欄登記了 **GGG／Gunnar Graps Group／Gunnar Grapsi Grupp** 三種寫法。**Gunnar Graps（18f30f5f）名下 5 個**——1982 本張、1995 Compilation《Tühjad pihud》、2002 Compilation《Eesti kullafond》、2003 Album《Rajalt maas》、2018-08-10 Compilation《**Rahatuvi**》（**盤名就是本張第 1 軌的曲名**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0d56fb92-b486-46a8-ab6d-0d6d4c852b0a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "成員關係：Magnetic Band 的 member-of-band 有 **Gunnar Graps（original）1976 起**、Priit Kuulberg（original）1976–1977、Heini Vaikmaa 1978–1980、Nevil Blumberg 1979–1981、Jaak Ahelik（drums）1980–1981、Vjatšeslav Kobrin 1983–1984 等十四筆。Gunnar Graps 本人的 member-of 關係是 **→ Mikronid（drums）1967–1972、→ Ornament（drums／lead vocals）1973–1975、→ Magnetic Band（original）1976 起**；另有一筆 parent 關係指向 Igor Graps。**他在前兩支團裡登記的樂器是鼓。**",
+    "src": "https://musicbrainz.org/ws/2/artist/18f30f5f-3714-4c16-9b0d-6acacd0e82ac?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）與藝人目錄，Gunnar Graps（aid 534257678）與 Magnetic Band（aid 449901455）兩個目錄合計只有四個條目，**其中三個是印尼語單曲、一個是 2025 年的〈Tühjad pihud〉單曲**，沒有一個是本張；以盤面曲名〈Roosid papale〉〈Rahatuvi〉〈Odüsseuse eksirännakud〉逐一直查也是 0 筆。**駁回：串流端查無本張。**",
+    "src": "https://itunes.apple.com/lookup?id=1850976393&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一首全部在 2:16 到 4:58 之間，沒有一首破五分鐘",
+   "第九軌的曲名長到二十三個字，第十一軌只有 2:16",
+   "第十軌與同年另一張碟的第二軌同名，但在資料庫端是兩段不同的錄音，長度差三十一秒"
+  ],
+  "sound": "1982 年 Мелодия С60-17019-20 的原盤是 12 吋、十一軌，全部擠在 2:16 到 4:58 之間，沒有一首破五分鐘。〈Rahatuvi〉3:22 開場，接全片最長的〈Meie teisikud〉4:58、〈Odüsseuse eksirännakud〉4:22、〈Lady Blues〉4:45；後半〈Leidmine〉3:16、〈Varsti〉2:50、〈Sügisõhtu blues〉3:50，與盤名同字的〈Roosid papale〉4:05 排在第八位，接著是全片曲名最長的〈Lillekimp imet teeb ehk vanaemad on unustanud muinasjutud〉3:28、〈Doktor Noormann〉3:25，最後用 2:16 的〈Kohtumine〉收掉。",
+  "keyTracks": [
+   "Roosid papale",
+   "Meie teisikud",
+   "Lillekimp imet teeb ehk vanaemad on unustanud muinasjutud"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1982，目錄號 С60-17019-20 相符。**錄音年：資料庫端空白**，十一軌零 recording-level relationship、release 無 annotation，**1982 只能當發行年寫**。",
+  "notes": "**擋下策展層一處。**｜（一）掛名：卡片的 `artist` 是「Gunnar Graps ja Magnetic Band」，**資料庫端 artist-credit 就是這兩個實體串起來的，取法正確**；但 Magnetic Band 的別名欄另有 **GGG／Gunnar Graps Group／Gunnar Grapsi Grupp** 三種寫法，**行文只用卡片上這個寫法，不要混用**。⚠ 策展層在未收清單裡把 1988 年那張《Põlemine》記在「Gunnar Grapsi Grupp」名下——**那其實就是 Magnetic Band 這個實體的第三個 release-group，不是另一個掛名。**｜可以寫的：**十一軌長度齊全**，長度分布（全部 2:16–4:58）、第 9 軌超長曲名、與盤名同字的第 8 軌，都是逐筆數過的，**可以寫時間**。｜**跨卡要小心**：第 10 軌與本批 Ruja 1982 那張的第 2 軌同名，**但是兩個不同的 recording 實體、長度差 31 秒**——**行文若要提，必須寫成「同名的兩首」，絕不可寫成同一段錄音或互相翻唱**（後者資料庫端沒有背書）。｜成員：關係欄顯示他在 1976 年之前的兩支團裡登記的樂器是鼓，**這點有欄位背書可以寫**；其餘成員名要寫就要帶起訖年。**生卒年 1951-11-27 – 2004-05-17 是 life-span 欄位值，可以寫。**｜**串流駁回：三種查法都跑過（掛名搜尋八店面、兩個藝人目錄逐條目核對、以三個盤面曲名直查逐軌），四個條目沒有一個是本張。無固定試聽來源，行文不要暗示可試聽。**｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Apelsin|Apelsin",
+  "artist": "Apelsin",
+  "album": "Apelsin",
+  "facts": [
+   {
+    "f": "release-group b0c66523 的欄位：title「Apelsin」、artist-credit「Apelsin」（藝人實體 0f6a9099，Group／EE，life-span 起 **1974**，未標結束）、first-release-date **1978**、primary-type Album、secondary-types 空。轄下 **1 個 release**：8cb08d34（1978／SU／Official、Мелодия **С60-07809-10**、**12\" Vinyl、14 軌**、script=Latn／lang=est）。**盤名與掛名同字。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b0c66523-8058-488b-9a46-2d6a42291cb0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**十四軌，一軌都沒有長度**（length 欄全部為 null）：1〈Western〉、2〈Jambolaya〉、3〈Capri saarel〉、4〈Roosi〉、5〈Rahvamatk〉、6〈Purjed〉、7〈Suupillilugu〉、8〈Tuukri laul〉、9〈Hommik keskturul〉、10〈Hop-hopp〉、11〈Armurõõm〉、12〈Kaks punast huult〉、13〈Igatsus〉、14〈Suvepäeva rock〉。**十四軌是本組單張軌數最多的一張**（其餘各張在 2 到 11 軌之間）。**曲名混著愛沙尼亞語與外來詞：Western、Jambolaya、Capri saarel（在卡布里島）、rock。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b0c66523-8058-488b-9a46-2d6a42291cb0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點全列 **12 個 release-group**，**本張 1978 是最早的一個**。之後依序是 1979 **EP/Compilation《Бони М / Апельсин》**（**與另一組掛名並列的合輯**）、1981 Album《Illuusio》、1981 Album《Apelsin》、1988 Album《Apelsin》、1989 Album《Апельсин》，其餘六個在 1994 年以後。**同掛名一共有三個 title 叫「Apelsin」的 Album（1978／1981／1988），本張是其中最早的。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0f6a9099-6380-4cbd-a9a3-6d720f3793b3&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 0f6a9099 的 member-of-band 關係：**Tõnu Aare（original）1974–2021-07-21**（四十七年）、Jaan Arder 1974–2014-07-24、**Ivo Linna 1975–1980**、**Mati Nuude 1975–1985**、Aleksander Vilipere（drums）至 2011-05-13、另有 Allan Jakobi（accordion）、Argo Toomel（bass guitar）、Vladimir Šeripov（bass guitar）等無起訖年的六筆。**本張出版的 1978 年落在 Tõnu Aare、Jaan Arder、Ivo Linna、Mati Nuude 四位的在團區間之內。**",
+    "src": "https://musicbrainz.org/ws/2/artist/0f6a9099-6380-4cbd-a9a3-6d720f3793b3?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）回到 Green Apelsin、Механiчний Апельсин、Dom Blå Apelsinerna 等同名實體；**藝人目錄（aid 526692356）只有三個條目，全是 2015 年以後的單曲，沒有一個是本團**；以盤面曲名〈Suvepäeva rock〉〈Hommik keskturul〉〈Purjed〉逐一直查也未命中。**駁回：串流端查無本張。**",
+    "src": "https://itunes.apple.com/lookup?id=985486103&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌，是本組單張軌數最多的一張",
+   "曲名一半是愛沙尼亞語、一半是外來詞：Western、Jambolaya、卡布里島、rock",
+   "樂團 1974 年開始，第一個發行品要到 1978 年才出現；隔年名下就出現一張與別人並列的合輯"
+  ],
+  "sound": "1978 年 Мелодия С60-07809-10 的原盤是 12 吋，一口氣塞了十四軌——本組單張軌數最多的一張。順序是〈Western〉、〈Jambolaya〉、〈Capri saarel〉、〈Roosi〉、〈Rahvamatk〉、〈Purjed〉、〈Suupillilugu〉、〈Tuukri laul〉、〈Hommik keskturul〉、〈Hop-hopp〉、〈Armurõõm〉、〈Kaks punast huult〉、〈Igatsus〉、〈Suvepäeva rock〉。曲名一半是愛沙尼亞語的日常景物（帆、口琴曲、潛水員之歌、中央市場的早晨、兩片紅唇、思念），一半直接用外來詞（Western、Jambolaya、卡布里島、rock）。盤名與掛名同一個字。",
+  "keyTracks": [
+   "Suvepäeva rock",
+   "Hommik keskturul",
+   "Capri saarel"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1978，目錄號 С60-07809-10 相符。**錄音年：資料庫端空白**，十四軌零 recording-level relationship、release 無 annotation，**1978 只能當發行年寫**。⚠ **同掛名另有 1981 與 1988 兩張 title 也叫「Apelsin」的 Album**，行文提到盤名時必須帶年份。",
+  "notes": "⚠ **十四軌一軌都沒有長度來源——別寫時間。**｜**擋下策展層一處。**｜（一）策展層在未收清單裡把 1981 年的《Illuusio》記成「芬蘭 Kansankulttuuri Oy KK-48，是另一張不經 Melodiya 的碟」。**本輪沒有回問那個 release-group 的 release 欄位，這句在本卡的可查範圍內無法覆核**——**本張行文一律不要引用它**。｜可以寫的：**十四軌是本組單張軌數最多的一張**（逐張比對過本組其餘二十三張，範圍是 2 到 11 軌）；曲名的混語現象是逐筆看過的；**1978 是名下最早的一個 release-group**（藝人端點分頁全列 12 個，逐一比對日期）；1979 年名下出現一張與另一組掛名並列的合輯（EP/Compilation）。｜成員：四位在 1978 年落在區間內的成員名有起訖年背書，**可以寫，但要帶區間**；**Tõnu Aare 的在團區間長達四十七年（1974–2021-07-21）**，這是欄位值。｜**盤名與掛名同字**：卡單的 `selfTitled` 欄填 false，**但盤名確實與掛名同一個字**——行文可以照實寫，不必迴避。｜**串流駁回：三種查法都跑過（掛名搜尋八店面、藝人目錄三個條目逐一核對、以三個盤面曲名直查逐軌），全部未命中本團。無固定試聽來源，行文不要暗示可試聽。**｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Collage|Collage",
+  "artist": "Collage",
+  "album": "Collage",
+  "facts": [
+   {
+    "f": "release-group 90f5b6a3 的欄位：title「Collage」、artist-credit「Collage」（藝人實體 fd6e98fc，Group／EE，disambiguation「Estonian band」，**life-span 1966–1979，ended=true**）、first-release-date **1971**、primary-type Album、secondary-types 空。轄下 **1 個 release**：9c945f36（1971／SU／Official、Мелодия **Д 028231-2**、**12\" Vinyl、12 軌**、script=Latn／lang=est）；掛 other-databases 關係指向愛沙尼亞國家書目 b2044144，release-group 另掛 wikidata 關係。**目錄號用的是 Д 系列，不是本組其餘各張的 С60 系列——這是本組年份最早的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=90f5b6a3-cd36-469b-bcfe-7c907c3dfb91&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**資料庫端十二軌一軌都沒有長度**：1〈Kee, pada!〉、2〈Tähemõrsja〉、3〈Linad liulaskijalle〉、4〈Talgulaul〉、5〈Ketra, vokikene!〉、6〈Vikerkaar〉、7〈Bossanova hing〉、8〈Tallinna blues〉、9〈Me rändame linnast linna〉、10〈Nokturn〉、11〈Spordihalli blues〉、12〈Alfabeet〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=90f5b6a3-cd36-469b-bcfe-7c907c3dfb91&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**串流採信 `1100185950`：十二軌同序、九軌完全同名，長度在串流端補齊**——1〈Kee, Pada!〉2:01、2〈Tähemõrsja〉4:26、3〈**Vastlalaul**〉2:03、4〈**Talgulugu**〉1:26、5〈Ketra, Vokikene!〉1:34、6〈Vikerkaar〉2:53、7〈Bossanova Hing〉3:44、8〈**Tallinna Blues**〉**5:36**、9〈Me Rändame Linnast Linna〉2:30、10〈Nokturn〉2:17、11〈Spordihalli Blues〉2:41、12〈**Alfa-Beat**〉4:43。**三軌的曲名寫法不同**（第 3 軌盤面寫〈Linad liulaskijalle〉、第 4 軌盤面寫〈Talgulaul〉、第 12 軌盤面寫〈Alfabeet〉）。條目標 ℗ **1971 Hyper.records**、曲風 Jazz。**逐店面 lookup：七個店面回得到（ee／lv／lt／ru／de／fi／gb），只有 us 查無。**",
+    "src": "https://itunes.apple.com/lookup?id=1100185950&entity=song&country=ee&limit=200"
+   },
+   {
+    "f": "藝人端點全列 **8 個 release-group**：1970 **EP《Collage》**、**1971 Album《Collage》（本張）**、1975 Album《Kadriko》、1977 Album《Käokiri》、1995 Compilation《Laula kuni elad》、2002 Compilation《Parimad lood 1970-1976》、2009 EP《Ten Minutes Twenty Seven Seconds》、2009-11-09 Compilation《Forty Seven Minutes Four Seconds》。**十三年團史（1966–1979）在資料庫端只留下三張 Album 與一張 EP，本張是三張裡最早的。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=fd6e98fc-609c-45f5-875d-153ff4b84374&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 fd6e98fc 的 member-of-band 關係只有六筆，**且都是女性成員**：**Anne Erm（original）1966–1972**、Anne Velli 1966–1968、**Lea Gabral（lead vocals）1966–1975**、Maire Eliste 1970–1980、Marje Aare（無起訖）、Aarne Vahuri（無起訖）。**本張出版的 1971 年落在前四位的在團區間之內。**",
+    "src": "https://musicbrainz.org/ws/2/artist/fd6e98fc-609c-45f5-875d-153ff4b84374?fmt=json&inc=artist-rels+annotation"
+   }
+  ],
+  "hookCandidates": [
+   "十三年團史在資料庫端只留下三張長片，這是最早的一張",
+   "目錄號用的是比本組其餘各張都早一個世代的系列",
+   "串流那份把碟上的十二軌補上了長度，但其中三首的曲名寫法與盤面不一樣"
+  ],
+  "sound": "1971 年 Мелодия Д 028231-2 的原盤是 12 吋、十二軌，長度分布在串流那份上補得齊：〈Kee, pada!〉2:01 開場，接全片第二長的〈Tähemõrsja〉4:26，然後是三首短的——2:03、1:26、1:34；中段〈Vikerkaar〉2:53、〈Bossanova hing〉3:44，第八軌〈Tallinna blues〉5:36 是全片最長；尾段〈Me rändame linnast linna〉2:30、〈Nokturn〉2:17、〈Spordihalli blues〉2:41，收在 4:43 的〈Alfabeet〉。十二首從 1:26 到 5:36，短曲與長段落交錯排。曲名在鍋子、星辰新娘、彩虹、波沙諾瓦、塔林藍調、體育館藍調之間走。",
+  "keyTracks": [
+   "Tallinna blues",
+   "Tähemõrsja",
+   "Alfabeet"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1971，目錄號 Д 028231-2 相符；**串流端條目的版權行也是 ℗ 1971**，三處一致。**錄音年：資料庫端空白**，十二軌零 recording-level relationship、release 無 annotation，**1971 只能當發行年寫**。",
+  "notes": "**擋下策展層一處——而且是本組最重的一處。**｜（一）c-123 的裁定文件第七節寫「Collage《Kadriko》/《Käokiri》(ru／de／fi／gb 四店面，**ee／lv／lt／us 反而是 0**）」，本張《Collage》(1971) 則根本沒列進命中清單。**逐店面 lookup 實測推翻**：本張的條目 1100185950 在 **ee／lv／lt／ru／de／fi／gb 七個店面都回得到，只有 us 查無**；同掛名另兩張（1100185926、1100185959）也是同樣的七個店面。**「ee／lv／lt 是 0」不成立，「本張未命中」也不成立。**｜**串流採信 1100185950：十二軌同序、九軌完全同名、長度在串流端補齊，七店面回得到。** ⚠ **三軌曲名寫法不同**（盤面〈Linad liulaskijalle〉／〈Talgulaul〉／〈Alfabeet〉，串流端寫〈Vastlalaul〉／〈Talgulugu〉／〈Alfa-Beat〉）——**行文引曲名一律用盤面寫法**。｜⚠ **長度來源要標版本（裁定 174）**：**資料庫端十二軌全無長度，上面那組時間全部來自串流那份**——**行文若寫時間，必須說明是串流版的長度，不可寫成盤面長度。**｜可以寫的：**目錄號是 Д 系列**（本組其餘各張是 С60／СМ 系列），這是本組年份最早的一張；**六筆成員關係都是女性**，其中四位的區間涵蓋 1971 年，**可以寫，但要帶區間**。｜**盤名與掛名同字**：卡單 `selfTitled` 填 false，行文照實寫即可。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Collage|Kadriko",
+  "artist": "Collage",
+  "album": "Kadriko",
+  "facts": [
+   {
+    "f": "release-group e4ed3dbc 的欄位：title「Kadriko」、artist-credit「Collage」（藝人實體 fd6e98fc，Group／EE，1966–1979）、first-release-date **1975**、primary-type Album、secondary-types 空。轄下 **1 個 release**：198c7278（1975／SU／Official、Мелодия **СМ 02821-2**、**12\" Vinyl、15 軌**、script=Latn／lang=est）；掛 other-databases 指向愛沙尼亞國家書目 b2018740，release-group 另掛 wikidata。**目錄號是 СМ 系列，與同掛名 1971 年那張的 Д 系列、1977 年那張的 С60 系列各不相同——同一支團的三張碟走了三種目錄號系列。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e4ed3dbc-7b5d-4900-9663-74df2ee54b05&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**資料庫端十五軌一軌都沒有長度**：1〈Kutse õitsile〉、2〈Kadrilaul〉、3〈Une sulased〉、4〈Halb sirp〉、5〈Petis peiu〉、6〈Uni, tule silma peale!〉、7〈Venna sõjalugu〉、8〈Millal saame sinna maale!〉、9〈Tütar nutab ema〉、10〈Neiut pole kodus〉、11〈Miks sa mulle ei tulnud!〉、12〈Kiik tahab kindaid〉、13〈Neiud lähevad ära〉、14〈Kaevul kosija〉、15〈Mardilaul〉。**十五軌是本組單張軌數第二多的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e4ed3dbc-7b5d-4900-9663-74df2ee54b05&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**串流採信 `1100185926`：十五軌 15/15 同序同名，長度在串流端補齊**——1:21／2:41／3:59／2:26／3:29／2:33／**6:14**／2:44／4:34／2:14／1:42／2:59／2:11／**1:28**／2:11。**第 7 軌〈Venna sõjalugu〉6:14 比第二長的那首多出一分四十秒，其餘十四軌全部在 1:21 到 4:34 之間。** 條目標 ℗ **1975 Hyper.records**、曲風 Jazz。**七個店面回得到（ee／lv／lt／ru／de／fi／gb），us 查無。** ⚠ 兩軌的標點不同：盤面第 8、11 軌用驚嘆號，串流端寫成問號。",
+    "src": "https://itunes.apple.com/lookup?id=1100185926&entity=song&country=ee&limit=200"
+   },
+   {
+    "f": "與同掛名另兩張的形狀對照：1971《Collage》12 軌、1975《Kadriko》**15 軌**、1977《Käokiri》12 軌；三張都是 12\" Vinyl、都只有一筆 Official release。**《Kadriko》的十五個曲名全部是愛沙尼亞語，而且清一色是民歌題材的名詞句**（凱瑟琳之歌、夢的僕役、壞鐮刀、騙人的求婚者、哥哥的戰事、女兒哭母親、鞦韆要手套、井邊的求婚者、馬丁節之歌），**與 1971 年那張夾雜著 bossanova、blues、Alfabeet 的曲名構成直接對照。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=90f5b6a3-cd36-469b-bcfe-7c907c3dfb91&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人 fd6e98fc 的 member-of-band 關係六筆全是女性：Anne Erm（original）1966–1972、Anne Velli 1966–1968、**Lea Gabral（lead vocals）1966–1975**、**Maire Eliste 1970–1980**、Marje Aare、Aarne Vahuri。**本張出版的 1975 年是 Lea Gabral 在團區間的最後一年。**",
+    "src": "https://musicbrainz.org/ws/2/artist/fd6e98fc-609c-45f5-875d-153ff4b84374?fmt=json&inc=artist-rels+annotation"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌裡第七軌 6:14，比第二長的那首多出一分四十秒",
+   "同一支團的三張碟走了三種不同的目錄號系列",
+   "十五個曲名全是愛沙尼亞語的民歌題材名詞句，和同團前一張夾著 bossanova 與 blues 的曲名完全兩樣"
+  ],
+  "sound": "1975 年 Мелодия СМ 02821-2 的原盤是 12 吋、十五軌——本組單張軌數第二多的一張。開場〈Kutse õitsile〉只有 1:21，接〈Kadrilaul〉2:41、〈Une sulased〉3:59、〈Halb sirp〉2:26、〈Petis peiu〉3:29、〈Uni, tule silma peale!〉2:33；第七軌〈Venna sõjalugu〉6:14 是全片唯一的長段落，比第二長的〈Tütar nutab ema〉4:34 還多出一分四十秒。之後一路是兩三分鐘的短曲，〈Kaevul kosija〉只有 1:28，收在〈Mardilaul〉2:11。十五個曲名全是愛沙尼亞語的民歌題材：夢的僕役、壞鐮刀、騙人的求婚者、哥哥的戰事、女兒哭母親、鞦韆要手套、馬丁節之歌。",
+  "keyTracks": [
+   "Venna sõjalugu",
+   "Tütar nutab ema",
+   "Mardilaul"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1975，目錄號 СМ 02821-2 相符；**串流端條目的版權行也是 ℗ 1975**，三處一致。**錄音年：資料庫端空白**，十五軌零 recording-level relationship、release 無 annotation，**1975 只能當發行年寫**。",
+  "notes": "**擋下策展層一處。**｜（一）c-123 的裁定文件第七節寫本張只在「ru／de／fi／gb 四店面」命中、「**ee／lv／lt／us 反而是 0**」。**逐店面 lookup 實測推翻**：條目 1100185926 在 **ee／lv／lt／ru／de／fi／gb 七個店面都回得到，只有 us 查無**。｜**串流採信 1100185926：十五軌 15/15 同序同名，長度在串流端補齊，七店面回得到。** ⚠ 盤面第 8、11 軌的結尾標點是驚嘆號，串流端寫成問號，**引曲名一律用盤面寫法**。｜⚠ **長度來源要標版本（裁定 174）**：**資料庫端十五軌全無長度，上面那組時間全部來自串流那份**——**行文若寫時間，必須說明是串流版的長度。**｜可以寫的：**十五軌是本組單張軌數第二多的一張**（逐張比對過本組二十四張）；**同一支團三張碟走了三種目錄號系列（Д／СМ／С60）**，這是逐張抄過目錄號的；**十五個曲名的題材與同團 1971 年那張的曲名構成對照**，是逐筆看過的。｜成員：**1975 年是主唱那一位在團區間的最後一年**，有起訖年背書可以寫；**要寫成員名就要帶區間。**｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**；曲名的民歌題材**不得引申成任何關於民族認同或體制的斷言**。"
+ },
+ {
+  "key": "desc2:Collage|Käokiri",
+  "artist": "Collage",
+  "album": "Käokiri",
+  "facts": [
+   {
+    "f": "release-group e2e28e8f 的欄位：title「Käokiri」、artist-credit「Collage」（藝人實體 fd6e98fc，Group／EE，1966–1979）、first-release-date **1977**、primary-type Album、secondary-types 空。轄下 **1 個 release**：9fb84d50（1977／SU／Official、Мелодия **С60-08739-40**、**12\" Vinyl、12 軌**、script=Latn／lang=est）；release-group 掛 wikidata 關係。**這是三張裡最後一張，也是唯一用 С60 系列目錄號的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e2e28e8f-96ae-4732-8aa7-a647e8c21055&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**資料庫端十二軌一軌都沒有長度**：1〈Mets neiude vahel〉、2〈Laula kuni elad〉、3〈Loomine〉、4〈Kodu kaugel〉、5〈Joodiku kojukutse〉、6〈Memme vaev〉、7〈Hällilaul〉、8〈**Käokiri**〉（與盤名同字）、9〈Õhtu ilu〉、10〈Suur tamm〉、11〈Kohus koju minna〉、12〈Blues-polka〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e2e28e8f-96ae-4732-8aa7-a647e8c21055&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**串流採信 `1100185959`，但軌數不同——這是本組最需要標版本的一張**：串流那份只有 **11 軌**，因為它把盤面第 11 軌〈Kohus koju minna〉與第 12 軌〈Blues-polka〉併成一軌〈Kohus koju minna/ Blues-polka〉3:34；其餘十軌 1:1 對應。串流端長度：3:36／3:07／**4:30**／3:37／3:37／3:53／2:55／2:47／**1:31**／3:47／3:34。**第 3 軌〈Loomine〉4:30 最長、第 9 軌〈Õhtu ilu〉1:31 最短。** 條目標 ℗ **1977 Hyper.records**、曲風 Jazz。**七個店面回得到（ee／lv／lt／ru／de／fi／gb），us 查無。**",
+    "src": "https://itunes.apple.com/lookup?id=1100185959&entity=song&country=ee&limit=200"
+   },
+   {
+    "f": "與同掛名另兩張的曲目交集（逐筆比對過三張的全部曲名）：本張第 1 軌〈Mets neiude vahel〉、第 2 軌〈Laula kuni elad〉、第 6 軌〈Memme vaev〉、第 7 軌〈Hällilaul〉、第 10 軌〈Suur tamm〉這五首，**都出現在 2009 年那張 Compilation《Forty Seven Minutes Four Seconds》上**；1975 年《Kadriko》的〈Petis peiu〉〈Halb sirp〉〈Neiud lähevad ära〉〈Tütar nutab ema〉〈Kiik tahab kindaid〉〈Mardilaul〉〈Une sulased〉也在同一張選輯上。**那張選輯把兩張碟的曲子混編在一起。**",
+    "src": "https://itunes.apple.com/lookup?id=1359726480&entity=song&country=ee&limit=200"
+   },
+   {
+    "f": "藝人端點全列 8 個 release-group，**本張 1977 是團史裡最後一個當年的發行品**——樂團 life-span 記到 1979，之後名下的東西全在 1995 年以後。member-of-band 六筆全是女性：Anne Erm（original）1966–1972、Anne Velli 1966–1968、Lea Gabral（lead vocals）1966–1975、**Maire Eliste 1970–1980**、Marje Aare、Aarne Vahuri。**本張出版的 1977 年，六筆裡只有 Maire Eliste 的區間還涵蓋得到。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=fd6e98fc-609c-45f5-875d-153ff4b84374&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "碟上的最後兩軌，在串流那份上被併成了一軌",
+   "團史十三年，這是最後一張當年出的碟——下一次名下有東西已經是十八年後",
+   "第八軌與盤名同字，1:31 的第九軌是全片最短"
+  ],
+  "sound": "1977 年 Мелодия С60-08739-40 的原盤是 12 吋、十二軌。〈Mets neiude vahel〉起頭，接〈Laula kuni elad〉、全片最長的〈Loomine〉4:30、〈Kodu kaugel〉、〈Joodiku kojukutse〉——中段五首都貼著三分半上下；然後〈Memme vaev〉3:53、〈Hällilaul〉2:55，第八軌就是與盤名同字的〈Käokiri〉2:47，接著是全片最短的〈Õhtu ilu〉1:31、〈Suur tamm〉3:47，最後兩軌〈Kohus koju minna〉與〈Blues-polka〉收尾——那兩首在串流那份上被併成了一軌 3:34。曲名從少女之間的森林、活著就唱、創世、遠方的家、酒鬼的歸家召喚，一路走到搖籃曲與大橡樹。",
+  "keyTracks": [
+   "Loomine",
+   "Käokiri",
+   "Blues-polka"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1977，目錄號 С60-08739-40 相符；**串流端條目的版權行也是 ℗ 1977**，三處一致。**錄音年：資料庫端空白**，十二軌零 recording-level relationship、release 無 annotation，**1977 只能當發行年寫**。",
+  "notes": "**擋下策展層一處。**｜（一）同前兩張：c-123 的裁定文件第七節寫本張只在「ru／de／fi／gb 四店面」命中、「ee／lv／lt／us 反而是 0」。**逐店面 lookup 實測推翻**：條目 1100185959 在 **ee／lv／lt／ru／de／fi／gb 七個店面都回得到，只有 us 查無**。｜**串流採信 1100185959：十軌 1:1 對應、長度在串流端補齊，七店面回得到。** ⚠ **軌數必須指明版本（裁定 174）——盤面 12 軌、串流那份 11 軌**，因為最後兩軌被併成一軌。**行文絕不可只寫「這張有十一首」。**｜⚠ **長度來源要標版本**：**資料庫端十二軌全無長度，上面那組時間全部來自串流那份**——**行文若寫時間，必須說明是串流版的長度，而且最後那個 3:34 是併軌後的長度，不是任一首單獨的長度。**｜可以寫的：**第 8 軌與盤名同字**；**本張是團史裡最後一個當年的發行品**（藝人端點 8 個 release-group 逐一比對日期，下一個已經是 1995 年）；**本張與 1975 年那張各有五到七首後來被混編進 2009 年的同一張選輯**，這是逐筆比對三張曲名得到的。｜成員：**1977 年時六筆成員關係裡只有一位的區間還涵蓋得到**，有起訖年背書可以寫。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Anne Veski ja Muusik-Seif|Anne Veski ja ansambel «Muusik-Seif»",
+  "artist": "Anne Veski ja Muusik-Seif",
+  "album": "Anne Veski ja ansambel «Muusik-Seif»",
+  "facts": [
+   {
+    "f": "release-group b1182283 的欄位：title「Anne Veski ja ansambel «Muusik-Seif»」、**artist-credit 是兩個實體串起來的**——**Anne Veski**（05c8ba8b，Person／EE，life-span 起 **1956-02-27**；別名欄有「Анне Вески」(ru)）＋ **Muusik Seif**（d7ccef98，Group／EE，life-span 起 **1981**；別名欄有「Music Seif」與「Мюзик-Сейф」(ru)）、first-release-date **1983**、primary-type Album、secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b1182283-b9ca-40f3-b828-7ef40c653261&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**轄下 2 個 release，兩筆都是 Official，而且掛同一個目錄號 Мелодия С60 19801 007**：d0b18413（title「Anne Veski ja ansambel «Muusik-Seif»」、artist-credit Anne Veski + Muusik-Seif、script=Latn／lang=est）與 4217f98a（title「**Поет Анне Вески**」、**artist-credit 只有「Анне Вески」一個實體、沒有樂團**、script=Cyrl／lang=rus）。**兩筆都是 12\" Vinyl、11 軌，十一個長度逐格相同——同一張碟的兩套盤面，而且俄語那套把樂團從掛名裡拿掉了。**",
+    "src": "https://musicbrainz.org/ws/2/release/4217f98a-0a25-4013-a7be-950210fa4895?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels"
+   },
+   {
+    "f": "十一軌與長度（愛沙尼亞語盤面／俄語盤面）：1〈Unes või ilmsi〉＝〈Во сне или наяву〉3:43、2〈Ära räägi mulle〉＝〈Не говори〉3:23、3〈Ei salli ma tujukust〉＝〈Не люблю капризных〉3:38、4〈Maailm pöörleb〉＝〈Кружится мир〉3:40、5〈Väike koll〉＝〈Чертёнок〉2:38、6〈Vallatu päev〉＝〈Озорной день〉3:37、7〈Hapud õunad〉＝〈Яблоки〉3:04、8〈Kui kaotad au〉＝〈Если потеряешь честь〉3:37、9〈Pihtimus〉＝〈Исповедь〉3:30、10〈**Veel**〉＝〈Ещё раз〉**5:12**、11〈Julius Caesar〉＝〈Юлий Цезарь〉3:26。**十一首裡十首在 2:38 到 3:43 之間，只有第 10 軌 5:12 破格。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b1182283-b9ca-40f3-b828-7ef40c653261&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**跨卡的硬證據：第 11 軌〈Julius Caesar〉的 recording 實體 95e830da，同時掛在本張與本批 Vitamiin《Ansambel \"Vitamiin\"》（1983）上**（在那邊是第 9 軌 3:23）。**兩張都是 1983 年的 Мелодия 盤，是同一段錄音跨兩張碟。** 另一條相關的欄位事實：Anne Veski 的 member-of-band 關係寫 **→ Vitamiin 1979–1982**，另有 → Nemo（lead vocals）、→ Mobile（lead vocals）；她的關係欄還有 married：Jaak Veski、sibling：**Mati Vaarmann**——而 **Mati Vaarmann 正是 Muusik Seif 的成員之一**。",
+    "src": "https://musicbrainz.org/ws/2/artist/05c8ba8b-39e9-4087-a0b9-d796e640a1c9?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "Muusik Seif（d7ccef98）名下只有 **4 個 release-group**：1982 EP《Tõnis Mägi & Music Seif》、**1983 Album《Mäe kaks nõlva》**、**1983 Album《Anne Veski ja ansambel «Muusik-Seif»》（本張）**、2009 Compilation《Muusik Seif》。**這支樂團 1983 年一年出了兩張 Album，兩張都在本批。** 成員關係：**Tõnis Mägi（original）1981–1986**、Jaak Ahelik（drums）1981–1986、Riho Sibul 1984、Aare Põder（keyboard）、Mati Vaarmann、Vello Annuk。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d7ccef98-987f-4cd9-99c3-39beadde0726&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）與藝人目錄，回到的是四個不同的 Anne Veski 藝人實體與二十多個俄語盤條目；**逐一直查其中最相近的七個條目的逐軌清單後，本張十一軌散落在多處**——最接近的是 `1878925931`《60 Parimat Laulu (Plaat 2)》（20 軌、℗ 2020），**其中只有三軌對得上**：〈Maailm pöörleb〉3:39（盤面 3:40）、〈Unes või ilmsi〉3:43（3:43）、〈Väike koll〉2:36（2:38）。**單一條目最多 3/11，駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=1878925931&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟出了兩套盤面，掛同一個目錄號、十一軌長度逐格相同，但俄語那套把樂團從掛名裡拿掉了",
+   "第十一軌的錄音實體同時掛在另一張同年同廠的碟上——同一段錄音跨了兩張 1983 年的盤",
+   "樂團 1983 年一年出了兩張長片，兩張的掛名都不是樂團自己"
+  ],
+  "sound": "1983 年 Мелодия С60 19801 007 的原盤是 12 吋、十一軌，而且同一個目錄號下有兩套盤面：一套愛沙尼亞語、一套俄語，十一軌的長度逐格相同。〈Unes või ilmsi〉3:43 開場，接〈Ära räägi mulle〉3:23、〈Ei salli ma tujukust〉3:38、〈Maailm pöörleb〉3:40；中段〈Väike koll〉2:38 是全片最短，之後〈Vallatu päev〉3:37、〈Hapud õunad〉3:04、〈Kui kaotad au〉3:37、〈Pihtimus〉3:30。十一首裡有十首擠在 2:38 到 3:43 之間，只有第十軌〈Veel〉5:12 明顯拉長，最後用〈Julius Caesar〉3:26 收尾。",
+  "keyTracks": [
+   "Veel",
+   "Julius Caesar",
+   "Unes või ilmsi"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1983（**發行年**）。release-group 的 first-release-date 與兩筆 release 都是 1983，兩筆共用目錄號 С60 19801 007。**錄音年：資料庫端空白**，十一軌零 recording-level relationship、兩筆 release 都無 annotation，**1983 只能當發行年寫**。串流端相近條目標 ℗ 2020，**不可拿來當年份旁證**。",
+  "notes": "**擋下策展層兩處。**｜（一）掛名：卡片的 `artist` 取「Anne Veski ja Muusik-Seif」，**與愛沙尼亞語那筆 release 的 artist-credit 一致，取法正確**；⚠ **俄語那筆 release 的 artist-credit 只有歌手一個實體，樂團被拿掉了**——**行文若提到俄語盤面，必須說清楚這件事，不可寫成「兩套盤面只是語言不同」。**｜（二）`curatorWhy`／`curatorRisk` 沒提兩筆 release 都是 Official。**這一點很重要**：本組其他有俄語盤面的卡（例如 Ruja 1982）那兩筆是 Pseudo-Release，**本張的俄語盤面是 Official**，形態不同，**行文不要把兩件事講成一樣的**。｜**跨卡最強的一條事實：第 11 軌〈Julius Caesar〉的錄音實體與本批 Vitamiin 那張是同一個。寫的時候要說是同一段錄音，不要說成翻唱或重錄。** 另可寫：歌手的 member-of 關係寫她 1979 到 1982 年在 Vitamiin，**但本張與那張都是 1983 年出版，她的區間已經結束**——**不可寫成「她同時在兩邊」。**｜⚠ **人名從嚴**：可以寫的名字只有關係欄背書的——歌手本人、樂團六筆成員（Tõnis Mägi 1981–1986、Jaak Ahelik 1981–1986、Riho Sibul 1984、Aare Põder、Mati Vaarmann、Vello Annuk），**其餘任何編曲、作詞、製作人的名字資料庫端都查不到，不得寫。**｜**串流駁回：三種查法都跑過，最相近的條目十一軌裡只對得上三軌（3/11）。無固定試聽來源，行文不要暗示可試聽。**｜十一軌長度齊全，**可以寫時間**。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ },
+ {
+  "key": "desc2:Jaak Joala|Jaak Joala",
+  "artist": "Jaak Joala",
+  "album": "Jaak Joala",
+  "facts": [
+   {
+    "f": "release-group 1af5041a 的欄位：title「Jaak Joala」、artist-credit「Jaak Joala」（藝人實體 8118fcdb，**Person**，disambiguation「Soviet and Estonian pop singer」，life-span **1950-06-26 – 2014-09-25，ended=true**；**⚠ country 欄是 null——資料庫端沒有給他國別**；別名欄有「Jaak Joala」(et)、「Jaks Joala」(lv)、「Яак Йоала」(ru)、「Яак Арнович Йоала」(ru)、「Я. Йоала」(ru)）、first-release-date **1975**、primary-type Album、secondary-types 空。轄下 **1 個 release**：9619e2b7（1975／SU／Official、Мелодия **С60-05965-6**、**12\" Vinyl、13 軌**、script=Latn／lang=est）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1af5041a-047c-4c2d-ae06-c11d464a9a8d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**資料庫端十三軌一軌都沒有長度**：1〈Laul verelilledest〉、2〈Viimne lahing (filmist \"Vabastamine\")〉、3〈Meri, mu tuhandenäoline meri〉、4〈Mu kodu〉、5〈Keegi on hea〉、6〈Aja hoolde jätan kõik〉、7〈Neli sõlme〉、8〈Öölaul〉、9〈Vihmapiisad〉、10〈Unustuse jõel〉、11〈Suveöö〉、12〈Sind hüüan〉、13〈Elavate laul〉。**第 2 軌的曲名括號裡直接寫明出自某部影片。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1af5041a-047c-4c2d-ae06-c11d464a9a8d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點全列 **16 個 release-group**：1972 **EP《Jaak Joala》**、**1975 Album《Jaak Joala》（本張，名下第一個 Album）**、1980 Single《Здравствуй / Еще не поздно》、1980 Album《Фотографии любимых》、**1981 EP《Jaak Joala & Radar》**、1982 Single、1982 EP《Поет Яак Йоала》、1985 Album《Сама любовь》、1986 Single《Лаванда》，1996 年以後七個。**1980 年之後名下的盤名幾乎全是俄文。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8118fcdb-0d7c-4f61-9c64-f631ad259a23&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "藝人 8118fcdb 的 member-of-band 關係：**→ Radar（lead vocals，original）1978–1984**、→ Virmalised 1968–1968-11、→ Lainer（bass guitar／keyboard／lead vocals，無起訖）。**本批另有兩張 Radar 的卡（1985《Trofee》與 1987《Baltic Coast》），他的在團區間在那兩張出版之前就結束了。** 1981 年那個 EP《Jaak Joala & Radar》同時掛在他與 Radar 兩個藝人端點下。",
+    "src": "https://musicbrainz.org/ws/2/artist/8118fcdb-0d7c-4f61-9c64-f631ad259a23?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過。藝人目錄（aid 1601891823）有十四個條目，**逐一直查其中十個的逐軌清單後，本張十三軌散在三個不同條目裡**：《See Kaunis Maa》有〈Elavate Laul〉3:02、〈Sind Hüüan〉2:15、〈Neli Sõlme〉2:40、〈Keegi On Hea〉2:34（**4/13**），《Suveöö》有〈Suveöö〉3:04、〈Mu Kodu〉3:16（2/13），《Unustuse Jõel》有〈Unustuse Jõel〉4:09（1/13）。**單一條目最多 4/13**，且**〈Meri, mu tuhandenäoline meri〉在串流端寫成〈Meri, Mu Tuhandenäoline Sõber〉——最後一個字不一樣**。**駁回：串流端沒有本張的整張條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1688599435&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "這是他名下第一張長片；1980 年之後名下的盤名幾乎全換成了俄文",
+   "第二軌的曲名括號裡直接寫明出自某部影片",
+   "同一批曲子在串流端散在三個不同的選輯裡，單一張最多只湊得到四首"
+  ],
+  "sound": "1975 年 Мелодия С60-05965-6 的原盤是 12 吋、十三軌，資料庫端一軌長度都沒登記，能確定的是順序：〈Laul verelilledest〉起頭，接〈Viimne lahing (filmist \"Vabastamine\")〉——曲名括號裡直接寫明出自某部影片——再是〈Meri, mu tuhandenäoline meri〉、〈Mu kodu〉、〈Keegi on hea〉、〈Aja hoolde jätan kõik〉、〈Neli sõlme〉、〈Öölaul〉、〈Vihmapiisad〉、〈Unustuse jõel〉、〈Suveöö〉、〈Sind hüüan〉，收在〈Elavate laul〉。十三個曲名全是愛沙尼亞語：血花之歌、最後一戰、我那千面的海、我的家、四個結、夜之歌、雨滴、遺忘之河、夏夜、活人之歌。",
+  "keyTracks": [
+   "Laul verelilledest",
+   "Meri, mu tuhandenäoline meri",
+   "Elavate laul"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975（**發行年**）。release-group 的 first-release-date 與唯一那筆 release 都是 1975，目錄號 С60-05965-6 相符。**錄音年：資料庫端空白**，十三軌零 recording-level relationship、release 無 annotation，**1975 只能當發行年寫**。",
+  "notes": "⚠ **十三軌一軌都沒有長度來源——別寫時間。**｜**擋下策展層兩處。**｜（一）`label` 欄寫「壓片走 Tallinn 分廠」（依裁定 256 是從盤面語言與 release country 推得）。**但這位的藝人實體 country 欄是 null——資料庫端沒有給他國別**，disambiguation 只寫「Soviet and Estonian pop singer」。**行文不得把他寫成「愛沙尼亞歌手」而不加保留**；能寫的是「盤面語言是愛沙尼亞語」與 disambiguation 的原字串。｜（二）策展層的未收清單把 1985 年的《Сама любовь》記為「全西里爾盤名」不收。**這句成立**（藝人端點確實有那個 release-group），但**本張行文不要引用它去論證任何趨勢**；能寫的只有可數的形狀：**十六個 release-group 裡，1980 年以後的盤名幾乎全是俄文**，這是逐筆看過的。｜可以寫的：**本張是名下第一個 Album**（1972 年那個是 EP）；**第 2 軌曲名括號裡寫明出自某部影片**；**他的 member-of 關係寫他 1978 到 1984 年在本批另一支樂團裡當主唱**，而本批那兩張碟（1985、1987）都在他的區間之後。｜**串流駁回：三種查法都跑過，藝人目錄十四個條目逐一直查後，本張十三軌散在三個選輯裡，單一條目最多 4/13；且第 3 軌的曲名在串流端最後一個字不一樣。無固定試聽來源，行文不要暗示可試聽。**｜**盤名與掛名同字**：卡單 `selfTitled` 填 false，行文照實寫即可。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**；第 2 軌那部影片的內容與背景資料庫端沒有，**不得延伸**。"
+ },
+ {
+  "key": "desc2:Ultima Thule|Ultima Thule",
+  "artist": "Ultima Thule",
+  "album": "Ultima Thule",
+  "facts": [
+   {
+    "f": "release-group c8b8a5a3 的欄位：title「Ultima Thule」、artist-credit「Ultima Thule」（藝人實體 a54f8952，Group／EE，disambiguation「Estonian band」，**life-span 起 1987**；別名欄有「Ультима Тхуле」(ru)）、first-release-date **1988**、primary-type Album、secondary-types 空。轄下 **2 個 release，兩筆都是 Official**：8f11e1e9（**1988／SU**、Мелодия **С60 27763 009**、**12\" Vinyl、8 軌**、lang=est）與 30faa743（**2007／EE**、**label-info 掛的是「[no label]」、沒有目錄號**、**CD、8 軌**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c8b8a5a3-33d4-4acf-ac77-83b992c30204&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1988 原盤八軌與長度：1〈Turbatuli〉3:42、2〈Vägev vähk〉4:39、3〈Hingan〉3:47、4〈**Aed**〉**5:58**、5〈Muuseas〉4:00、6〈Hallaöö〉4:04、7〈Tuulemeelne〉4:56、8〈**Laulev jõgi**〉**5:38**。**八首全部在 3:42 到 5:58 之間，是本組長度最平均的一張；最長的兩首分別排在第四與第八，把整張切成兩半。** 2007 年那張 CD 是同八軌同序，長度多半只差一兩秒，**唯獨第 2 軌〈Vägev vähk〉從 4:39 變成 4:11，差了 28 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c8b8a5a3-33d4-4acf-ac77-83b992c30204&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**跨卡的硬證據：第 6 軌〈Hallaöö〉的 recording 實體 ee76a942，同時掛在本張的 1988 原盤、2007 年那張 CD，以及本批同掛名的 1991 年《Eesti asi / Pro Estonia》上**（在那張是第 8 軌）。**同一段錄音跨了三筆 release、兩張不同的碟、兩個不同的發行國（SU 與 FI）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cef444ac-c2c4-455a-8143-7cdf98e8f8c1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "兩筆 release 的關係欄：**1988 原盤掛一筆 remaster 關係指向 Ultima Thule 自己**；2007 那張另掛 **mastering：Priit Kuulberg**、**recording：Elmu Värk**、remaster：Ultima Thule。**1988 原盤沒有任何樂手 relationship。**",
+    "src": "https://musicbrainz.org/ws/2/release/30faa743-4fa0-40c9-8e51-6a02e36ee7a9?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels"
+   },
+   {
+    "f": "藝人 a54f8952 的 member-of-band 關係：**Vjatšeslav Kobrin（original）1986-07–1990**、**Aare Põder（keyboard，original）1986-07 起**、**Raul Vaigla（original）1986-07 起**、**Riho Sibul（original）1986-07 起**、**Tõnis Mägi 1987–1989**、Jaak Ahelik（drums）1987–1988、Elmu Värk 1987、Peeter Jõgioja 1988–1990、Toomas Rull 1991 起、Kalle Vilpuu 1991 起。**⚠ 四位標 original 的成員區間從 1986-07 起算，但藝人 life-span 的 begin 欄寫 1987——兩個欄位對不上。** 藝人端點全列 9 個 release-group，本張 1988 是最早的一個。",
+    "src": "https://musicbrainz.org/ws/2/artist/a54f8952-adc3-4769-b805-0cfa48c0206e?fmt=json&inc=artist-rels+annotation"
+   },
+   {
+    "f": "串流端三種查法全部跑過：以掛名搜尋（八店面）回到瑞典、電音與拉丁語系的多個同名實體；**目標之外唯一叫 Ultima Thule 的藝人目錄（aid 1727874679）底下只有一個 2024 年的三軌單曲**；以盤面曲名〈Turbatuli〉〈Vägev vähk〉〈Laulev jõgi〉逐一直查，〈Vägev vähk〉回到的是 Revals 的同名曲，其餘 0 筆。**駁回：串流端查無本張。**",
+    "src": "https://itunes.apple.com/lookup?id=1441591931&entity=song&country=ee&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第六軌的錄音實體同時出現在三筆發行品上，跨了兩張碟、兩個不同的發行國",
+   "八首全部在 3:42 到 5:58 之間，最長的兩首剛好把整張切成兩半",
+   "2007 年那張重發除了第二軌短了二十八秒，其餘七軌只差一兩秒"
+  ],
+  "sound": "1988 年 Мелодия С60 27763 009 的原盤是 12 吋、八軌，長度非常平均——全部落在 3:42 到 5:58 之間，沒有短曲也沒有長篇。〈Turbatuli〉3:42 開場，接〈Vägev vähk〉4:39、〈Hingan〉3:47，第四軌〈Aed〉5:58 是全片最長；後半〈Muuseas〉4:00、〈Hallaöö〉4:04、〈Tuulemeelne〉4:56，收在 5:38 的〈Laulev jõgi〉。最長的兩首剛好排在第四與第八，把整張切成對稱的兩半。曲名是泥炭火、大螯蝦、我呼吸、園子、順帶一提、霜夜、隨風、歌唱的河。",
+  "keyTracks": [
+   "Aed",
+   "Laulev jõgi",
+   "Hallaöö"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988（**發行年**）。release-group 的 first-release-date 是 1988，其下最早的 release 就是 1988／SU 的 Мелодия С60 27763 009；另一筆 30faa743 是 **2007 年愛沙尼亞的 CD 重發**，**復刻年寫在這裡，不進卡片年份**（裁定 220）。**錄音年：資料庫端空白**，1988 原盤零樂手 relationship、無 annotation，**1988 只能當發行年寫**。",
+  "notes": "**擋下策展層兩處。**｜（一）掛名風險：`curatorRisk` 已記這是短掛名。**實測確認：以掛名在資料庫端精確查詢，排第 1 名的是瑞典的同名團——政治聯想完全不同，絕不可混**；店面端八個店面搜出的也全是別人。**外部比對一律不能靠掛名。**｜（二）⚠ **兩個欄位對不上**：藝人 life-span 的 begin 寫 **1987**，但四位標 original 的成員區間全部從 **1986-07** 起算。**行文不得斷言「樂團成立於 1987 年」**；要寫只能寫「藝人欄位記的起始年是 1987，四位原始成員的在團區間卻從 1986 年 7 月起算」，或乾脆不寫成立年。｜**跨卡最強的一條事實：第 6 軌〈Hallaöö〉的錄音實體同時掛在本張 1988 原盤、2007 年 CD 與本批同掛名 1991 年那張碟上。寫的時候要說是同一段錄音跨了三筆發行品，不要說成重錄。**｜⚠ **軌數與長度要指明版本（裁定 174）**：1988 原盤與 2007 CD 都是 8 軌，但第 2 軌差 28 秒，**行文寫時間必須說是哪一版**。｜可以寫的：**2007 那筆的 label-info 掛的是「[no label]」、連目錄號都沒有**——這是欄位值，可以照實寫；2007 那筆的 mastering 與 recording 兩個名字有關係欄背書，**但必須說明那組掛在 2007 年的重發上，不是 1988 年的原盤**。｜**串流駁回：三種查法都跑過（掛名搜尋八店面、藝人目錄逐條目核對、以三個盤面曲名直查逐軌），全部未命中本團。無固定試聽來源，行文不要暗示可試聽。**｜**盤名與掛名同字**：卡單 `selfTitled` 填 false，行文照實寫即可。｜政治敘述：本張沒有任何禁演或審查記載，**不得補寫**。"
+ }
+]
