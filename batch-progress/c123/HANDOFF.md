@@ -107,7 +107,7 @@
 | Mess | **站得住** |
 | Pērkons《Dziesmu izlase #1》 | **站得住**（直查回 20 軌完整曲目、逐軌對上） |
 | Sīpoli《Sīpoli》 | **站得住**，研究層另補一條更硬的：該掛名名下 3 筆 RG 全是 Compilation 或 Live，**資料庫裡根本沒有「非合輯」形態** |
-| **Grünberg《Hukkunud Alpinisti hotell》** | **站不住一半**——網址打得開、release 實體也對，**但「1979 年電影配樂的唯一形態」與 86 軌實情不符**。上架前要改寫 `exceptionReason` |
+| **Grünberg《Hukkunud Alpinisti hotell》** | ~~站不住一半~~ **2026-09-08 已修（裁定 261）**：`year` 1979 → **2001**（release-group 的 first-release-date），`exceptionReason` 重寫成「86 軌、1977–2001、其中 6 軌標 1979」，並刪掉兩個最高級與「Melodiya 從未發成唱片」這句無來源否定斷言。卡單與 `prop-a.json` 都已改，`chk-prop` 標記 0 |
 
 **策展層另自行裁定一條規則衝突**：`CURATION-BRIEF-c93plus.md` 要求合輯取「合輯出版年」，
 本批要求「取原盤年」，窗口又限死 1991——**三者不可能同時成立**
