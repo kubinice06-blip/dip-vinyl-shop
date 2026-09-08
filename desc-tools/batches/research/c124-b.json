@@ -234,5 +234,93 @@
   "status": "full",
   "yearVerified": "**不一致，本卡維持 2005，但只能算資料庫端可得的年份、不得對外宣稱已驗證。** release-group first-release-date **2005-05-27**，**轄下唯一的 release 也是 2005-05-27**。**但串流版本 1145687274 的標示日期是 2010-07-03、版權標示 ℗ 2010**，與資料庫端差了五年，**而兩邊的八軌長度逐軌只差 0–1 秒，確定是同一批錄音**。⚠ 資料庫端那筆的**載體是 Digital Media、廠牌是一家數位發行商、country 記為 AF**，三個欄位都說明它不是 2005 年的原始實體發行建檔；**串流端的 2010 也只是上架年、不是原盤年**。**結論：2005 只有資料庫端一個來源，第二個獨立來源不但沒有支持、反而給了另一個年份；簡介不得寫成「這張是 2005 年的作品」，也不得改用 2010。錄音年未登錄，不得補寫。**",
   "notes": "**擋下策展層五處。**(1) `label` 欄寫「MB 該 release 未填 label-info」——**不成立**。release 端點回問到 **Yaletown Technologies Inc（實體 dc5b23f6）**、catno 欄空、barcode 859734034559。｜(2) `curatorRisk` 要研究層核「release country 記為 AF（阿富汗），**很可能是 MB 的資料錯誤**」——**覆核結果：不必當成單純的填錯**。那筆 release 的載體是 Digital Media、廠牌是一家數位發行商、又有 barcode，**四個欄位合起來說明它是一筆數位發行的建檔、不是 2005 年的原始實體盤**；AF 這個值沒有第二個來源支持，**行文一律不提發行地**。｜(3) `curatorWhy` 寫本張是「他名下 41 個 release-group 裡**年份較早**、與 tar 手 Ali Ghamsari 對奏的一筆」——**「年份較早」覆核通過**（21 張純 Album 依年份排本張第四），**但「tar 手」查無來源**：Ghamsari 的實體關係欄 0 筆、disambiguation 空白，**不得寫他彈什麼**。⚠ **可以寫的只有曲名本身**：第五軌叫〈Hamnavazi'ye Taro Tonbak〉，Tar 與 Tonbak 兩個字在曲名裡；**但不得由曲名反推是誰彈的**（裁定 241／250）。｜(4) **策展層漏了 Ghamsari 的兩件事**：他的 disambiguation 也是空白（**依硬規則第 7 條同樣不得背書本名**），而且**他名下只有 3 張純 Album、本張是最早的一筆**——這比 Homayoun 那邊的序數更有內容。｜(5) **策展層漏了末軌的掛名**：第 8 軌〈Rakhse Zaar〉的 artist-credit **只有 Ali Ghamsari 一人**，其餘七軌都是兩人；**這是逐軌 artist-credit 背書的事實、可以寫**。｜**關係欄可寫的名字**：Homayoun 的關係欄有 parent（backward）指向本組第 1 張的掛名實體 1e6c8164，**「父子」這一層有欄位背書、可以寫**；另有 Shahrzad Quartet 的 collaboration 與 Masters of Persian Music 的團員兩筆。**除這三筆之外的合作者一律不得寫。**｜**串流採信 1145687274：8 軌逐位置比對（7:32／14:16／5:09／8:27／7:21／6:22／4:59／5:35）對資料庫端（7:32／14:16／5:09／8:27／7:21／6:21／4:59／5:35），逐軌差 0–1 秒、曲序全中，採信；⚠ 第八軌串流作〈Naghshe Khial (Instrumental)〉、資料庫作〈Rakhse Zaar〉，長度同為 5:35、是同一軌的兩種寫法，行文取資料庫端的曲名。⚠ 串流那筆的掛名只有 Homayoun Shajarian、沒有 Ali Ghamsari，卡片掛名照資料庫端的 artist-credit 取兩人。** 藝人目錄端（326585383，84 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。｜**軌數與長度：唯一一筆 release、8 軌、長度全備，可以寫時間。**"
+ },
+ {
+  "key": "desc2:Parissa & Ensemble Dastan|Shoorideh",
+  "artist": "Parissa & Ensemble Dastan",
+  "album": "Shoorideh",
+  "facts": [
+   {
+    "f": "release-group 544c4a8e 的欄位：title「Shoorideh」、artist-credit「Parissa & Ensemble Dastan」、primary-type Album、**secondary-types 空**、first-release-date **2003-08-12**、genre 與 tag 欄皆空。**轄下只有 1 筆 release**：dfa40d9d，2003-08-12、**country 欄空**、Official、packaging **Jewel Case**、barcode 欄空、**兩片 CD：8 軌 ＋ 7 軌，共 15 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/544c4a8e-cb57-4001-bf9c-0644c80046c8?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌查得到，策展層說的「未填 label-info」不成立**：release dfa40d9d 的 label-info 是 **Network**（廠牌實體 1455a71d），catalog-number 欄空、barcode 欄空。**串流端那筆的版權標示寫的是「Network Medien GmbH」，與資料庫端的廠牌實體對得上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=544c4a8e-cb57-4001-bf9c-0644c80046c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**15 軌全部有長度、兩片合計 2:05:45**。**第一片 8 軌、66:15**：1〈Hekayat〉8:04、2〈Mathnavi〉8:26、3〈Tasnif-e Nagozir〉8:19、4〈Jamehdaran〉6:26、5〈Tasnif-e Raz-e Penhan〉7:52、6〈Shoorideh〉**14:14**、7〈Rohab〉**4:52**、8〈Tasnif-e Navay-e Chang〉8:02。**第二片 7 軌、59:30**：1〈Gilaki〉**17:21**、2〈Tasnif-e Sehrafarin〉7:59、3〈Daramad〉**3:43**、4〈Tasnif-e Chashm-e To〉5:39、5〈Owj〉8:21、6〈Parvaz-e Khial〉10:04、7〈Tasnif-e Mehrgiah〉6:23。**全張最長的是第二片首軌 17:21，最短的是第二片第三軌 3:43；五支曲名帶 Tasnif，兩片各有一支超過十四分的長軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=544c4a8e-cb57-4001-bf9c-0644c80046c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 dfca4221「Parissa」：type Person、country IR、**area Tehran**、**begin 欄空、end 欄空**、begin-area **Iran**、**disambiguation「Iranian Fatemeh Vaezi」**（不是空的）、**別名欄 0 筆、關係欄 0 筆**。目錄分頁全列：**名下只有 1 個 release-group，就是本張**——**她在資料庫端的全部作品就是這一張**。",
+    "src": "https://musicbrainz.org/ws/2/artist/dfca4221-8342-4ef1-badf-57c303be1ce8?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "第二個掛名的實體 3396823d：**資料庫端的 name 欄是「Dastan Ensemble」（不是 release-group artist-credit 上寫的「Ensemble Dastan」）**、type **Group**、country IR、area Iran、**begin 1991**、disambiguation「Persian classical music ensemble」。**關係欄四筆：三筆 member of band（backward）——「حدادي, پژمان」、「حسین بهروزی‌نیا」、以及 Shahram Nazeri；一筆 subgroup（backward）——Dastan Trio。** ⚠ **第三筆正是本組第 2 張的掛名實體 dc8cab1c，兩張卡的關聯有實體關係欄背書。** 目錄分頁全列 **9 個 release-group、8 個純 Album**：1999-10-26《Through Eternity》、2001《Shâram Nazéri et l'Ensemble Dastan》、**2003-08-12 本張排第三**、2007《The Endless Ocean》、2007-08-04《Gheyzhake Koli》、2009-04-13、2010、2012-01-21。",
+    "src": "https://musicbrainz.org/ws/2/artist/3396823d-b78f-424c-bc5d-75eb698784be?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "店面覆核（三種查法都跑）：直查 **collectionId 511196488**「Parissa & Ensemble Dastan — Shoorideh」得 **15 軌（8+7，兩片的軌序都從 1 重新起算）**、標示日期 **2003-08-12**、版權標示「℗ 2012 Network Medien GmbH」。**十五軌逐位置與資料庫端全部對得上，長度逐軌 0 秒差**（8:04／8:26／8:19／6:26／7:52／14:14／4:52／8:02 ＋ 17:21／7:59／3:43／5:39／8:21／10:04／6:23），**曲名只有一處拼寫差**：第二片第四軌串流作〈Tasnif-e Chash-e to〉、資料庫作〈Tasnif-e Chashm-e To〉。藝人目錄端（藝人頁 81150985，6 筆）覆核後未再撈到第二筆對得上本張的條目。",
+    "src": "https://itunes.apple.com/lookup?id=511196488&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "資料庫裡她名下只有一個條目，就是這兩片碟",
+   "兩片碟各有一支超過十四分的長軌，第二片那支比第一片還多三分鐘"
+  ],
+  "sound": "兩片碟十五軌全部留下長度，合計兩小時五分四十五秒。第一片八軌 66:15，前五軌〈Hekayat〉8:04、〈Mathnavi〉8:26、〈Tasnif-e Nagozir〉8:19、〈Jamehdaran〉6:26、〈Tasnif-e Raz-e Penhan〉7:52 幾乎等長，全部壓在六分半到八分半這兩分鐘的區間裡，是全張最平的一段；第六軌與盤名同字的〈Shoorideh〉忽然拉到 14:14，接著第七軌〈Rohab〉只剩 4:52——第一片最長與最短的兩軌就這樣挨在一起。末軌〈Tasnif-e Navay-e Chang〉8:02 回到前五軌的尺度。第二片七軌 59:30，一開頭〈Gilaki〉就是全張最長的 17:21，比第一片那支長軌還多三分鐘;第三軌〈Daramad〉3:43 是全張最短的一軌，兩者差將近五倍。後段〈Owj〉8:21、〈Parvaz-e Khial〉10:04 再把線拉長一次，末軌〈Tasnif-e Mehrgiah〉6:23 收尾。十五軌裡五支曲名帶 Tasnif。",
+  "keyTracks": [
+   "Shoorideh",
+   "Gilaki",
+   "Tasnif-e Mehrgiah"
+  ],
+  "status": "full",
+  "yearVerified": "**一致，2003，而且是本組唯一三個來源對到同一天的一張。** release-group first-release-date **2003-08-12**，**轄下唯一的 release 也是 2003-08-12**，**串流版本 511196488 的標示日期同樣是 2003-08-12**——年月日三邊全同。⚠ **串流那筆的版權標示是 2012 年**（Network Medien GmbH），那是再發或上架的授權年、**不是原盤年，不得寫進 `year`**；不過它指的廠牌與資料庫端的 label-info（Network）是同一家。**錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層四處。**(1) `label` 欄寫「MB 該 release 未填 label-info 與 country」——**廠牌那半不成立**。release 端點回問到 **Network（實體 1455a71d）**；country 欄確實是空的，這半成立。`label` 欄要改寫成「Network，2003-08-12 Official Jewel Case 2CD 8+7 軌，release 的 country 與 barcode 欄為空」。｜(2) **派工單與本批裁定把 Parisa 列進「disambiguation 空白、不得背書本名」的名單——不成立**。實體 dfca4221 的 **disambiguation 明寫「Iranian Fatemeh Vaezi」**，不是空的。**裁定 250 說的是她的 score 排序沒有辨識力（那一條成立），兩件事被混在一起了。** ⚠ 但即使如此，**本名只有 disambiguation 這一個自由文字欄支持、沒有別名欄或關係欄背書**，行文寫本名時要寫成「實體的 disambiguation 欄記為 Iranian Fatemeh Vaezi」，**不得寫成生平敘述**；她的 begin 欄是空的，**生年一律不得補寫**（策展層提到的 1950-03-15 在另一個未釘的重複實體上，不是本卡釘的這一個）。｜(3) `curatorWhy` 說「**女性古典聲樂在池中完全沒有，這張是最直接的第一張**」——策展判斷，簡介不得照抄。**可寫的序數只有一個、而且比策展層寫的更強**：她名下**只有 1 個 release-group，就是本張**，資料庫端她的全部作品就是這兩片碟。｜(4) **策展層漏了第二個掛名的三件事**：①實體的 name 欄是「Dastan Ensemble」、**與 release-group artist-credit 上的「Ensemble Dastan」語序相反**；②**begin 1991**、disambiguation「Persian classical music ensemble」；③**關係欄有三位團員與一個子團**，其中一位是 **Shahram Nazeri（dc8cab1c）——本組第 2 張的掛名實體**，**兩張卡的關聯有欄位背書、可以寫**；另兩位團員名（حدادي, پژمان 與 حسین بهروزی‌نیا）在資料庫端只有波斯文寫法，**要寫就照原文，不得自行轉寫**。這個團名下 8 張純 Album，本張排第三。｜**串流採信 511196488：15 軌逐位置比對（8:04／8:26／8:19／6:26／7:52／14:14／4:52／8:02 ＋ 17:21／7:59／3:43／5:39／8:21／10:04／6:23）對資料庫端的同一組數字，逐軌 0 秒差、兩片的軌序與曲名全中，採信；唯一差異是第二片第四軌串流作〈Tasnif-e Chash-e to〉、資料庫作〈Tasnif-e Chashm-e To〉，同一首的拼寫差。** 藝人目錄端（81150985，6 筆）未再撈到第二筆對得上本張的條目，**回撈候選採信 1、駁回 0**。｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **十五軌裡有五支曲名帶 Tasnif、一支叫〈Mathnavi〉，這些是曲式與體裁名、照曲名引用可以，但不得由曲名推演任何宗教內容或評價。**｜**軌數與長度：唯一一筆 release、兩片 15 軌、長度全備，可以放心寫時間，但要寫明是兩片分開計軌序。**"
+ },
+ {
+  "key": "desc2:Sima Bina|Iran: Musique du Sud du Khorassan",
+  "artist": "Sima Bina",
+  "album": "Iran: Musique du Sud du Khorassan",
+  "facts": [
+   {
+    "f": "release-group ab31d530 的欄位：title「Iran: Musique du Sud du Khorassan」、**artist-credit 記的是波斯文「سیما بینا」**、primary-type Album、**secondary-types 空**、first-release-date **1994-06-17**、genre 與 tag 欄皆空。**轄下只有 1 筆 release**：29543bc9，1994-06-17、country **FR**、Official、packaging **Jewel Case**、**CD 5 軌**、barcode **3229269258329**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ab31d530-5aa3-427b-911d-f0d0ffdf461f?fmt=json&inc=artist-credits+releases+media+genres+tags"
+   },
+   {
+    "f": "⚠ **廠牌與盤面編號都查得到，策展層說的「未填 label-info」不成立**：release 29543bc9 的 label-info 是 **Buda Records**（廠牌實體 0d60309a）、**catalog-number 92583-2**，barcode 3229269258329。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ab31d530-5aa3-427b-911d-f0d0ffdf461f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "逐軌曲目與長度，**5 軌全部有長度、合計 57:04**，而且**曲名是法文、每一軌都把數首連寫**：1〈My Gazelle / Quatrain / Nazanine / Quatrain / Leïla / Quatrains〉**26:03**、2〈La Marchande d'Abricots〉**4:05**、3〈La Jeune Marièe / Quatrains / La Basanée〉16:13、4〈Quatrains / Danse populaire / Quatrain〉7:33、5〈Chant de Nowrouz〉3:10。**五軌裡有三軌的曲名帶「Quatrain(s)」（四行詩）**；**首軌 26:03 一軌就占全張將近一半，比第二軌 4:05 長六倍以上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ab31d530-5aa3-427b-911d-f0d0ffdf461f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人實體 a3708eff：**MB 主名是波斯文「سیما بینا」**、sort-name「Bina, Sima」、type Person、country IR、area Iran、begin **1945-01-04**、end 欄空、**begin-area 記的是 Khorāsān-e Janūbī（南呼羅珊）**、**disambiguation 空白**、**關係欄 0 筆**；別名欄只有一筆英文別名「Sima Bina」。⚠ **begin-area 這個欄位與盤名裡的地名是同一個地方，這是欄位事實、可以寫。**",
+    "src": "https://musicbrainz.org/ws/2/artist/a3708eff-4a47-4fbf-977c-155c79175836?fmt=json&inc=artist-rels+aliases"
+   },
+   {
+    "f": "目錄分頁全列 **6 個 release-group**（純 Album 5、無 primary-type 1）。純 Album 依年份排：**1994-06-17 本張是最早的一筆**，其後 1995《Iran: Musique du Nord du Khorassan》、1997《Sounds From The Plain》、2000《عشق گل》、以及一筆無日期的《Nawai》；另有一筆無 primary-type 的《Sima Bina, Hossein Omoumi》。**資料庫端她名下只有六個條目，本張排第一。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a3708eff-4a47-4fbf-977c-155c79175836&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**店面第三種查法把這張找回來了（策展層判「五店皆 0 筆可對得上」）。** 走藝人目錄端（藝人頁 62199659，全 46 筆）逐筆掃過，撈到 **collectionId 111046189「Sima Bina — The Music of South Khorassan」**，直查得 **5 軌**、標示日期 **1999-01-18**、版權標示「℗ 1999 Caltex Records」。**五軌長度 26:06／4:02／16:16／7:36／3:07，與資料庫端的 26:03／4:05／16:13／7:33／3:10 逐軌只差 3 秒**，曲名逐位置一一對應（英譯對法文：My Ghazelle=My Gazelle、The Apricot Seller=La Marchande d'Abricots、The Young Bride=La Jeune Marièe、Popular Dance=Danse populaire、Norouz Song=Chant de Nowrouz）。**同一批錄音在同一份目錄裡還有第二個條目 6793087184「The Music Of Southern Khorassan」（2000-09-01、5 軌、℗ 2000 Caltex Records），五軌長度與 111046189 完全相同。**",
+    "src": "https://itunes.apple.com/lookup?id=111046189&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "五軌的曲名有三軌帶著「四行詩」三個字",
+   "首軌二十六分鐘，一軌就占掉全張將近一半"
+  ],
+  "sound": "只有五軌，合計 57 分 04 秒，而且長度落差極大。首軌〈My Gazelle / Quatrain / Nazanine / Quatrain / Leïla / Quatrains〉一口氣走了 26:03——一軌就占全張將近一半，曲名把六段連寫在一起，其中三段是「四行詩」。第二軌〈La Marchande d'Abricots〉只有 4:05，比首軌短了六倍以上，是全張落差最大的一次轉折。第三軌〈La Jeune Marièe / Quatrains / La Basanée〉16:13 又把尺度拉回長篇，同樣是三段連寫。第四軌〈Quatrains / Danse populaire / Quatrain〉7:33 縮到中段長度，末軌〈Chant de Nowrouz〉3:10 是全張最短的一軌，收得極快。五軌裡有三軌的曲名帶「Quatrain(s)」，兩軌只有單一標題——長的那三軌都是連寫的組曲，短的兩軌都是單一曲目，長度與曲名的形狀完全對得上。",
+  "keyTracks": [
+   "My Gazelle / Quatrain / Nazanine / Quatrain / Leïla / Quatrains",
+   "La Marchande d'Abricots",
+   "Chant de Nowrouz"
+  ],
+  "status": "full",
+  "yearVerified": "**資料庫端一致，1994；串流端給的是兩個再發年，不構成第二個原盤年來源。** release-group first-release-date **1994-06-17**，**轄下唯一的 release 也是 1994-06-17**（FR、Official、CD 5 軌、Buda Records 92583-2、barcode 3229269258329）。**串流端找回的兩個條目都是後來的再發**：111046189 標示日期 **1999-01-18**、版權標示 ℗ 1999 Caltex Records；6793087184 標示日期 **2000-09-01**、℗ 2000 Caltex Records——**兩者的廠牌都不是資料庫端的 Buda Records，年份也在 1994 之後，因此它們與 1994 不衝突，但也不能算 1994 的獨立佐證。** **結論：1994 只有資料庫端一個來源，但沒有任何來源與它矛盾；簡介可以寫年，不要寫成「已驗證」。錄音年未登錄，不得補寫。**",
+  "notes": "**擋下策展層四處。**(1) `label` 欄寫「MB 該 release 未填 label-info；**法國田野錄音系列**」——**前半不成立、後半查無來源**。release 端點回問到 **Buda Records（實體 0d60309a）、catalog-number 92583-2**；「田野錄音系列」則**沒有任何欄位背書，不得寫**。`label` 欄要改寫成「Buda Records 92583-2，1994-06-17 FR Official CD 5 軌，barcode 3229269258329」。｜(2) ⚠ **`curatorRisk` 的店面結論被推翻**：它寫「Apple 只在 nl 對到 **North** Khorassan，不是本張的南呼羅珊……五店皆 0 筆可對得上」。**第三種查法（藝人目錄端 62199659，46 筆逐筆掃）撈到 collectionId 111046189「The Music of South Khorassan」，直查 5 軌、逐軌只差 3 秒、曲名一一對應——本張有串流來源。**｜(3) `curatorWhy` 寫「本張是她 **1990 年代在法國錄的**呼羅珊南部民謠選」——**錄音地查無來源，不得寫**。可寫的只有 release 的 country 欄記為 FR、廠牌是 Buda Records 這兩件事；**「在法國錄的」與「在法國發行的」不是同一件事，一律不得寫成前者。**｜(4) **策展層漏了最貼題的一個欄位**：藝人實體的 **begin-area 記的是 Khorāsān-e Janūbī（南呼羅珊）**——**與盤名裡的地名是同一個地方**，這是欄位事實、可以寫。她的 disambiguation 空白、關係欄 0 筆，**依硬規則第 7 條不得背書本名、不得補生平**；可寫的欄位只有 area Iran／begin 1945-01-04／begin-area Khorāsān-e Janūbī。**另外，她名下只有 6 個 release-group、本張是最早的一筆**，這個序數覆核通過。｜**串流採信 111046189：5 軌逐位置比對（26:06／4:02／16:16／7:36／3:07）對資料庫端（26:03／4:05／16:13／7:33／3:10），逐軌差 3 秒、曲序全中、曲名是同一批曲目的英譯對法文，採信。同一份目錄裡的 6793087184（2000-09-01、5 軌）是同一批錄音的第二個上架條目，五軌長度與 111046189 完全相同，一併記錄、主線取 111046189。** **駁回候選 2 筆**：111045892「The Music of **North** Khorassan」（**7 軌**、℗ 1998，對應的是另一個 release-group 3678d22b、也就是 1995 年的北呼羅珊卷）與 1086934699「Persian Classical Music」（**19 軌**、℗ 1995 Wyastone），**軌數與內容都不是本張**。**回撈候選採信 1（另記 1 個同錄音條目）、駁回 2。**｜⚠ **政治與宗教敘述邊界（照搬 `curatorRisk`）**：只寫發行年、廠牌、盤面編號、載體、曲目、長度與實體欄位；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」寫成敘事**。⚠ **末軌曲名裡的 Nowrouz 是曲名的一部分、可以照引，但不得由曲名推演任何節慶或宗教上的敘述。**｜**軌數與長度：唯一一筆 release、5 軌、長度全備，可以寫時間。**"
  }
 ]
