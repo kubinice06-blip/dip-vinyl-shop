@@ -18,17 +18,21 @@
 
 輸出（art/）：
   shop2-bg.jpg         背景層：牆、封面、地板、門洞（雨夜）
-  shop2-fg.png         前景層（透明底）：櫃檯、挖寶櫃、紙箱 ── 疊在小人「上面」
+  shop2-fg-back.png    前景後層：櫃檯＋器材、右邊挖寶櫃（下緣 y≤400）
+  shop2-fg-front.png   前景前層：挖寶櫃、紙箱（下緣 y≥402）
   shop2-door-0/1/2.png 門板三格：關／半開／全開
 
 座標契約（前台站位要跟這裡對齊；邏輯尺寸 448×492，前台站位用 %）：
   · 牆／地板交界 y=325。門洞 x 12–86、y 156–325。
   · 櫃檯 x 102–307、檯面上緣 y=299、檯身下緣 y=400。
     老闆站櫃檯後面時腳底 y=325（＝貼著牆），會被檯面擋到只露頭肩。
-    檯面器材：左喇叭 x 120–152、唱盤擴大機 x 190–247、右喇叭 x 257–290。
-    **老闆站在左喇叭與唱盤之間的空檔（cx≈171）**，頭才不會被器材擋住。
+    檯面器材：唱盤擴大機 x 190–247、右喇叭 x 257–290（左喇叭已拿掉）。
+    **老闆站在檯面左半的空檔（cx≈145）**，頭才不會被器材擋住。
   · 右邊挖寶櫃 x 299–448、y 255–396。
   · 前方 x 0–245 / y 330–492 淨空留給三人同框與老闆的動線。
+  · **前景分兩層**：`shop2-fg-back`（櫃檯／喇叭／右邊挖寶櫃，下緣 y≤400）與
+    `shop2-fg-front`（挖寶櫃／紙箱，下緣 y≥402）。小人依腳底 y 夾在兩層之間，
+    才能「站在櫃檯前面、但在挖寶櫃後面」。
 """
 import os
 import numpy as np
@@ -47,7 +51,8 @@ WALL_SRC = (110, 212)              # 乾淨牆：天花板燈之下、封面之�
 
 # ── 要從背景挖掉的東西（原圖座標）────────────────────────────────
 PIECES = {                         # 家具：挖掉，並且切成前景圖層
-    'spkL':    (456, 1026, 652, 1252),   # 左喇叭單獨切出來，才能往左挪出老闆站的空檔
+    'spkL':    (468, 1032, 634, 1240),   # 左喇叭單獨切出來（框要貼緊，鬆的話會黏到牆的碎片；
+                                         #  下緣要含到底座壓在檯面上那截，不然舊位置會留殘影）
     'counter': (408, 1038, 1228, 1600),
     'rbins':   (1196, 1020, 1792, 1562),
     'crate':   (352, 1392, 792, 1970),
@@ -61,13 +66,23 @@ DOORWAY = (36, 600, 358, 1310)     # 門洞：不挖，但不能拿來當地板�
 # 誰擋在誰前面：前面那件的框會咬掉後面那件的遮罩，所以要把它從後面那件扣掉，
 # 再用「同一列、換一欄」把被咬掉的地方補回來（家具搬走後那塊才不會是破洞）。
 OCCLUDED_BY = {'counter': ['crate', 'spkL']}
-FILL = {'counter': (415, 1190, 1215, 1600, 800, 1210)}   # 補洞範圍 + 乾淨取樣欄
+# 補洞只補「櫃檯檯身」（挖寶櫃原本擋住的那塊）；檯面那條有器材，抄過去會抄到唱盤
+# 補洞：(y0, y1, sx0, sx1) —— 被前面那件咬掉的地方，用同一列的乾淨欄抄回來。
+# 檯面（y 1180–1258）與檯身（y 1258–1600）的乾淨欄不一樣：檯面上有器材，不能亂抄。
+FILL = {'counter': [(1258, 1600, 800, 1210)]}    # 檯身：挖寶櫃原本擋住的那塊
+# 檯面有透視斜邊，不能用左右鏡射補——斜邊會被複製成鋸齒。
+# 改成偵測「檯面上緣在第幾列」的 y(x)，拿一條乾淨欄照斜率上下平移抄過去。
+SLOPE_FILL = {'counter': (1150, 1250, 466, 638, 646)}   # (y0, y1, 洞x0, 洞x1, 乾淨來源欄)
+# 個別調門檻：喇叭是牆上的深色方塊，門檻低會把牆的細微色差也算進來
+CUT_OPTS = {'spkL': dict(wall_thr=190, min_blob=1200)}
 
 # ── 家具重排（改這裡就好）───────────────────────────────────────
 #   piece:  (目的地左上角 x, y, 縮放, 要不要在腳下加陰影)   ── 全部原圖座標
 #   None ＝ 維持原位；'drop' ＝ 這件不要了
 LAYOUT = {
-    'spkL':    (404, 1028, 1.0, False),    # 往左挪 54px：檯面讓出 x 141–190 給老闆站
+    # 左喇叭：底座壓在檯面上，挪走怎麼切都會在舊位置留破綻（試過收框、提門檻、補洞都不乾淨）。
+    # 直接拿掉，檯面左半 x 102–190 整片空出來給老闆站——現實中那裡本來就是店員的位置。
+    'spkL':    'drop',
     'counter': None,                       # 櫃檯貼牆，不動
     'rbins':   None,                       # 右邊那組貼右牆，不動
     'crate':   (1020, 1540, 0.60, True),   # 原本擋在左前方 → 縮小挪到中右前，讓出走道
@@ -139,16 +154,33 @@ def cut(ref, empty, box, name=None, wall_thr=105, floor_thr=40, min_blob=3000):
     for other in OCCLUDED_BY.get(name, []):           # 扣掉擋在前面那件
         ox0, oy0, ox1, oy1 = PIECES[other]
         m[max(0, oy0-y0):max(0, oy1-y0), max(0, ox0-x0):max(0, ox1-x0)] = False
-    if name in FILL:                                  # 被咬掉的部分補回來
-        fx0, fy0, fx1, fy1, sx0, sx1 = FILL[name]
+    if name in SLOPE_FILL:                            # 檯面：照斜邊平移抄
+        fy0, fy1, hx0, hx1, sxc = SLOPE_FILL[name]
+
+        def edge(xx):                                 # 這一欄的檯面上緣落在第幾列
+            for yy in range(fy0, fy1):
+                r, g, b = (int(v) for v in ref[yy, xx][:3])
+                if r < 205 and b < 130 and r - b > 40 and g < 150:
+                    return yy
+            return fy0
+        e_src = edge(sxc)
+        col = px[fy0 - y0:fy1 - y0, sxc - x0].copy()
+        for xx in range(hx0, hx1):
+            dy = edge(xx) - e_src
+            for k in range(fy1 - fy0):
+                sk = k - dy
+                if 0 <= sk < col.shape[0]:
+                    px[fy0 - y0 + k, xx - x0] = col[sk]
+                    m[fy0 - y0 + k, xx - x0] = True
+    for fy0, fy1, sx0, sx1 in FILL.get(name, []):     # 被咬掉的部分補回來
         for y in range(max(fy0, y0), min(fy1, y1)):
             row = y - y0
-            gap = ~m[row, max(0, fx0-x0):min(x1, fx1)-x0]
+            gap = ~m[row, :]
             if not gap.any():
                 continue
-            idx = np.arange(max(0, fx0-x0), min(x1, fx1)-x0)[gap]
+            idx = np.arange(x1 - x0)[gap]
             src = np.array([mirror(x0 + i, sx0, sx1) for i in idx]) - x0
-            px[row, idx] = px[row, np.clip(src, 0, px.shape[1]-1)]
+            px[row, idx] = px[row, np.clip(src, 0, px.shape[1] - 1)]
             m[row, idx] = True
     return Image.fromarray(np.dstack([px, (m * 255).astype(np.uint8)]), 'RGBA')
 
@@ -159,19 +191,26 @@ def soft_shadow(img, x, y, w, h):
     img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(14)))
 
 
+# 前景要分兩層，小人才能「站在櫃檯前面、但在挖寶櫃後面」
+FG_BACK  = ['spkL', 'counter', 'rbins']    # 下緣在 y=400 以上
+FG_FRONT = ['crate', 'box1', 'box2']       # 下緣在 y=402 以下
+
+
 def main():
     room = Image.open(REF).convert('RGB').crop(ROOM)
     ref = np.asarray(room)
     H, W, _ = ref.shape
     empty = build_empty(ref)
 
-    # ── 前景層：把每一件搬到 LAYOUT 指定的位置 ──
-    fg = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    # ── 前景層：把每一件搬到 LAYOUT 指定的位置，分成前後兩張 ──
+    layers = {'back': Image.new('RGBA', (W, H), (0, 0, 0, 0)),
+              'front': Image.new('RGBA', (W, H), (0, 0, 0, 0))}
     for name, box in PIECES.items():
         plan = LAYOUT.get(name)
         if plan == 'drop':
             continue
-        piece = cut(ref, empty, box, name)
+        fg = layers['front' if name in FG_FRONT else 'back']
+        piece = cut(ref, empty, box, name, **CUT_OPTS.get(name, {}))
         if plan is None:
             fg.alpha_composite(piece, (box[0], box[1]))
             continue
@@ -195,13 +234,15 @@ def main():
     oh = round(H * OUT_W / W)
     Image.fromarray(empty).resize((OUT_W, oh), Image.LANCZOS).save(
         os.path.join(ART, 'shop2-bg.jpg'), quality=88, subsampling=0, optimize=True)
-    fg.resize((OUT_W, oh), Image.LANCZOS).save(os.path.join(ART, 'shop2-fg.png'), optimize=True)
+    for k, im in layers.items():
+        im.resize((OUT_W, oh), Image.LANCZOS).save(
+            os.path.join(ART, f'shop2-fg-{k}.png'), optimize=True)
 
     print(f'邏輯尺寸 {W//SCALE}×{H//SCALE}　輸出 {OUT_W}×{oh}')
     print(f'門板左上角（邏輯）x={PANEL[0]/SCALE:.0f} y={PANEL[1]/SCALE:.0f}'
           f'　寬 {(open_w+8)/SCALE:.0f} 高 {(PANEL[3]-PANEL[1])/SCALE:.0f}')
-    for f in ('shop2-bg.jpg', 'shop2-fg.png', 'shop2-door-0.png', 'shop2-door-1.png',
-              'shop2-door-2.png'):
+    for f in ('shop2-bg.jpg', 'shop2-fg-back.png', 'shop2-fg-front.png',
+              'shop2-door-0.png', 'shop2-door-1.png', 'shop2-door-2.png'):
         p = os.path.join(ART, f)
         print(f'  {f:20s} {os.path.getsize(p)/1024:7.1f} KB  {Image.open(p).size}')
 

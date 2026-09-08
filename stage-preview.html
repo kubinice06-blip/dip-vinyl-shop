@@ -27,13 +27,17 @@
   .rpg{border:2px solid var(--black);background:#000;margin:6px 0 12px;}
   .rpg-stage{position:relative;width:100%;aspect-ratio:448/492;overflow:hidden;
     background:#3a2a18 url('art/shop2-bg.jpg') center center / 100% 100% no-repeat;}
-  .rpg-fg{position:absolute;inset:0;width:100%;height:100%;z-index:6;pointer-events:none;}
+  .rpg-fg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
+  .rpg-fg.back{z-index:6;}          /* 櫃檯＋喇叭＋右邊挖寶櫃：下緣 y≤400 */
+  .rpg-fg.front{z-index:20;}        /* 挖寶櫃＋紙箱：下緣 y≥402 */
   .rpg-door{position:absolute;z-index:2;pointer-events:none;
     left:2.68%;top:31.50%;width:17.14%;}
   .rpg-spr{position:absolute;width:17.41%;z-index:4;line-height:0;
     transition:left .85s ease-in-out, bottom .7s ease-in-out, opacity .3s;}
   .rpg-spr svg{display:block;width:100%;height:auto;}
   .rpg-spr.hide{opacity:0;}
+  .rpg-spr.dig{animation:rpgDig .62s ease-in-out infinite;}
+  @keyframes rpgDig{0%,100%{transform:translateY(0);}50%{transform:translateY(3%);}}
   .rpg-anger{position:absolute;left:-20%;top:-26%;line-height:1;opacity:0;
     font-size:min(3.8vw,18px);}
   .rpg-anger.on{opacity:1;}
@@ -66,9 +70,10 @@
   <div class="ctl">
     <button class="on" data-s="0">① 推門進來</button>
     <button data-s="1">② 老闆放唱片</button>
-    <button data-s="2">③ 結帳</button>
-    <button data-s="3">④ 走到門口撞見</button>
-    <button data-s="4">⑤ 老闆出來緩頰</button>
+    <button data-s="2">③ 老闆去挖片</button>
+    <button data-s="3">④ 結帳</button>
+    <button data-s="4">⑤ 走到門口撞見</button>
+    <button data-s="5">⑥ 老闆出來緩頰</button>
   </div>
 
   <div class="rpg">
@@ -78,7 +83,8 @@
       <div class="rpg-spr" id="o"></div>
       <div class="rpg-spr" id="p"><div class="rpg-anger" id="anger">💢</div></div>
       <div class="rpg-spr hide" id="f"></div>
-      <img class="rpg-fg" src="art/shop2-fg.png" alt="">
+      <img class="rpg-fg back" src="art/shop2-fg-back.png" alt="">
+      <img class="rpg-fg front" src="art/shop2-fg-front.png" alt="">
     </div>
     <div class="rpg-win">
       <div class="rpg-name" id="wname">老闆</div>
@@ -100,15 +106,19 @@
 
   // 站位（邏輯座標；跟 scripts/trace-shop-art.py 的家具座標對齊）
   // 櫃檯 x 102–307、檯面上緣 y=299（前景層從這裡開始遮住小人）、檯身下緣 400
-  // 檯面器材：左喇叭挪到 103–141、唱盤 190–247、右喇叭 257–290 → 老闆站 cx 165 的空檔
+  // 檯面器材：唱盤 190–247、右喇叭 257–290（左喇叭拿掉）→ 老闆站檯面左半 cx 145
   const POS = {
     p:{ door:[48,408],        // 剛推門進來，站在門口
         browse:[190,455],     // 自己逛（離櫃檯夠遠，不會疊到）
         pay:[168,430],        // 結帳：站在櫃檯前（腳底 > 402 → 蓋在櫃檯上面）
         leaving:[132,418],    // 準備離開，往門口走
         atdoor:[128,420] },   // 在門口撞見男子（跟男子拉開，中間留給老闆）
-    o:{ counter:[165,325],    // 櫃檯後面（腳底貼著牆，被檯面擋到胸口）
+    o:{ counter:[145,325],    // 櫃檯後面（腳底貼著牆，被檯面擋到胸口）
         aisle:[72,345],       // 繞出櫃檯左端
+        dig1:[318,410],       // 右邊唱片區：翻找（腳底 402–458 → 櫃檯前、挖寶櫃後）
+        dig2:[372,404],
+        dig3:[340,414],
+        back:[150,424],       // 拿著四張走回櫃檯
         between:[85,452] },   // 站到兩人中間緩頰（腳底最前面 → 蓋在兩人上面）
     f:{ outside:[42,336], door:[42,344], in:[42,396] },
   };
@@ -124,11 +134,11 @@ document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES
   document.getElementById('f').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES.foe, 96));
 
   const $ = id => document.getElementById(id);
-  // 前景層（z-index 6）無條件蓋在小人上面，所以站在櫃檯「前面」的人會被切掉頭。
-  // 用腳底 y 判斷深度：比櫃檯下緣（400）還前面的，拉到前景層之上；
-  // 而且小人彼此之間也要照深度排（不然老闆走到最前面時會被玩家蓋住）。
-  const FG_BOTTOM = 402;
-  const zOf = y => y >= FG_BOTTOM ? 10 + Math.round(y / 4) : 2;
+  // 前景分兩層：back（櫃檯／喇叭／右櫃，下緣 y≤400）z6、front（挖寶櫃／紙箱，下緣 y≥402）z20。
+  // 小人依腳底 y 夾進去，才會「站在櫃檯前面、但在挖寶櫃後面」；同一層裡再照深度互相排序。
+  const zOf = y => y < 402 ? 2                        // 還在櫃檯後面
+                 : y < 458 ? 7 + Math.round((y - 402) / 8)    // 櫃檯前、挖寶櫃後
+                           : 21 + Math.round((y - 458) / 8);  // 全部之前
   function put(id, group, key, instant){
     const el=$(id), q=POS[group][key], s=pc(q[0],q[1]);
     if(instant){ el.style.transition='none'; }
@@ -162,16 +172,29 @@ document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES
         $('anger').classList.remove('on'); $('door').src='art/shop2-door-0.png';
         await wait(300); $('notes').classList.add('on');
       } },
-    { name:'③ 結帳（五張到手）', who:'老闆', text:'「這四張也很適合你，跟你很有緣，收下吧。」',
+    { name:'③ 老闆去挖片', who:'', text:'老闆不發一語，走出櫃檯，在右邊那排唱片裡翻翻找找。',
       run: async ()=>{
-        put('o','o','counter',true); $('f').classList.add('hide');
+        put('p','p','browse',true); $('f').classList.add('hide');
         $('notes').classList.remove('on'); $('anger').classList.remove('on');
         $('door').src='art/shop2-door-0.png';
-        put('p','p','browse',true); await wait(80);
-        put('p','p','pay');                       // 玩家走到櫃檯前結帳
-        await wait(900);
+        put('o','o','counter',true); await wait(120);
+        put('o','o','aisle'); await wait(820);    // 繞出櫃檯左端
+        for(const k of ['dig1','dig2','dig3','dig2']){   // 在右邊唱片區東翻西找
+          put('o','o',k); $('o').classList.add('dig'); await wait(720);
+        }
+        $('o').classList.remove('dig');
       } },
-    { name:'④ 走到門口撞見', who:'男子', text:'「……這品味，也敢出來丟臉？」',
+    { name:'④ 結帳（五張到手）', who:'老闆', text:'「這四張也很適合你，跟你很有緣，收下吧。」',
+      run: async ()=>{
+        $('f').classList.add('hide'); $('notes').classList.remove('on');
+        $('anger').classList.remove('on'); $('door').src='art/shop2-door-0.png';
+        put('o','o','dig2',true); put('p','p','browse',true); await wait(100);
+        put('o','o','back'); put('p','p','pay');  // 兩人一起移到櫃檯
+        await wait(850);
+        put('o','o','aisle'); await wait(700);
+        put('o','o','counter'); await wait(700);  // 老闆回到櫃檯裡
+      } },
+    { name:'⑤ 走到門口撞見', who:'男子', text:'「……這品味，也敢出來丟臉？」',
       run: async ()=>{
         put('o','o','counter',true);              // 老闆還在櫃檯裡
         put('p','p','pay',true); put('f','f','outside',true);
@@ -184,7 +207,7 @@ document.getElementById('o').insertAdjacentHTML('afterbegin', pixArtHTML(SPRITES
         await wait(850); await doorAnim(false);
         $('anger').classList.add('on');
       } },
-    { name:'⑤ 老闆出來緩頰', who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」',
+    { name:'⑥ 老闆出來緩頰', who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」',
       run: async ()=>{
         put('p','p','atdoor',true); put('f','f','in',true);
         $('f').classList.remove('hide'); $('anger').classList.add('on');
