@@ -169,13 +169,20 @@ def black_crate(w_cm=46, h_cm=30):
     return im
 
 
+def counter_crate(w_cm=50, label='NEW ARRIVALS'):
+    """櫃檯／桌面用的小木箱：比賣場的木箱窄，放得進櫃檯的空檔。"""
+    return wood_crate(w_cm=w_cm, h_cm=26, label=label)
+
+
 def main():
     # 同一張圖重複貼三次會看出內容一模一樣，所以各出幾個變體
     outs = [('crate-wood', wood_crate(label='PROGRESSIVE ROCK')),
             ('crate-wood-2', wood_crate(label='SOUL / FUNK')),
             ('crate-black', black_crate()),
             ('crate-black-2', black_crate()),
-            ('crate-black-3', black_crate())]
+            ('crate-black-3', black_crate()),
+            ('crate-new', counter_crate(36, 'NEW ARRIVALS')),
+            ('crate-new-wide', wood_crate(68, label='NEW ARRIVALS'))]
     for name, im in outs:
         p = os.path.join(OUT, name + '.png')
         im.save(p, optimize=True)
