@@ -33,19 +33,28 @@ SLEEVE = [(188,42,52),(36,88,158),(226,216,192),(232,190,86),(52,118,84),
 COVERS = os.path.join(ROOT, 'art', 'covers')
 
 
-def face_out(im, x, y, w, h, n, label_every=5):
+LP_CM = 31.5                             # LP 封面永遠是 31.5cm 見方
+LP_PX = int(LP_CM * PX_CM)               # → 173 原圖 px
+
+
+def face_out(im, x, y, w, h, n=None, label_every=5, step_px=34):
     """箱子裡的唱片：**封面朝外**、一張疊一張往後倒（用 art/covers 的真封面）。
-    只有露在箱口以上的部分看得到，所以封面畫得比開口高、下半截被箱身蓋住。"""
+    只有露在箱口以上的部分看得到，下半截被箱身蓋住。
+
+    **封面尺寸固定 LP_PX，不跟著箱子大小縮放**——一度讓木箱裡的唱片變 26cm、
+    黑籃裡的變 19cm，同一個畫面裡兩種大小，一眼就看得出來不對。
+    h 只決定「露出箱口多高」，不決定唱片多大。"""
     pool = sorted(p for p in os.listdir(COVERS) if p.endswith('.jpg')) \
         if os.path.isdir(COVERS) else []
     d = ImageDraw.Draw(im)
     if not pool:
         sleeves(d, x, y, w, h, n, label_every); return
-    size = int(h * 2.0)                      # 封面是方的，下半截藏在箱子裡
+    size = LP_PX                             # 封面是方的，下半截藏在箱子裡
     pad = int(h * .5)                        # 上方留給比較高的分類卡
     layer = Image.new('RGBA', (w, size + pad), (0, 0, 0, 0))   # 先畫在暫存層，再裁齊箱口
     ld = ImageDraw.Draw(layer)
-    step = max(8, (w - size * .42) / max(1, n - 1))
+    step = step_px                           # 每張露出的寬度（＝翻片時看到的厚度感）
+    n = n or max(2, int((w - size * .42) / step) + 1)
     picks = [random.choice(pool) for _ in range(n)]
     for i in range(n - 1, -1, -1):           # 由後往前畫，前面那張蓋住後面
         cx, ly = int(i * step), pad + int((n - 1 - i) * 1.1)
@@ -105,8 +114,7 @@ def wood_crate(w_cm=68, h_cm=30, label='PROGRESSIVE ROCK'):
     rim = int(14 * PX_CM)                               # 唱片露出箱口的高度
     body_top = rim + int(6 * PX_CM)
     body_bot = H + 4
-    face_out(im, x0 + 6, rim - int(9 * PX_CM), W - 12, int(13 * PX_CM),
-             max(7, int(w_cm / 7)))
+    face_out(im, x0 + 6, rim - int(9 * PX_CM), W - 12, int(13 * PX_CM))
     d = ImageDraw.Draw(im)
     # 箱身（前板）
     d.rectangle([x0, body_top, x1, body_bot], fill=(214, 176, 118), outline=INK)
@@ -141,7 +149,7 @@ def black_crate(w_cm=46, h_cm=30):
     rim = int(10 * PX_CM)
     body_top, body_bot = rim + int(4 * PX_CM), H + 4
     face_out(im, x0 + 5, rim - int(6.5 * PX_CM), W - 10, int(9.5 * PX_CM),
-             max(5, int(w_cm / 8)), label_every=7)
+             label_every=7, step_px=30)
     d = ImageDraw.Draw(im)
     d.rectangle([x0, body_top, x1, body_bot], fill=(38, 38, 40), outline=(16, 16, 18))
     d.rectangle([x0, body_top, x1, body_top + 8], fill=(84, 84, 88))     # 籃口
