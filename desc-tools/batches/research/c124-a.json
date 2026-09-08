@@ -1,0 +1,198 @@
+[
+ {
+  "key": "desc2:Various Artists|Pomegranates",
+  "artist": "Various Artists",
+  "album": "Pomegranates",
+  "facts": [
+   {
+    "f": "release-group 8b0d08f0 的欄位：title「Pomegranates」、artist-credit「Various Artists」（實體 89ad4ac3，type Other，disambiguation「add compilations to this artist」）、first-release-date **2009**、primary-type Album、**secondary-types [Compilation]**、disambiguation 空。轄下 **2 個 release**：**2009 GB Official，Finders Keepers，catno FKR029CD，Jewel Case，barcode 5060099502125，CD 16 軌**；**2010 US Official，B-Music，catno BMS019，CD 16 軌**（無 barcode）。⚠ **兩筆的廠牌與編號都不同**：英國盤掛 Finders Keepers／FKR029CD，美國盤掛 B-Music／BMS019。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b0d08f0-9f10-4c70-b4e7-fb819619adf7&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "2009 GB 盤（FKR029CD）逐軌、掛名與長度：1〈Helelyos〉4:35 Zia、2〈Biya Bar‐e Safar Bandim〉3:53 Mohammad Nouri、3〈Soul Raga〉4:07 Mehrpouya、4〈Talagh〉4:46 Googoosh、5〈Gol‐e Yakh〉5:14 Kourosh Yaghmaei、6〈Mosem‐e Gol〉4:33 Parva、7〈Gol‐e Aftab Gardoon〉3:24 Nosoh Afarin、8〈Miravi〉3:24 Soli、9〈Kavir‐e Del〉4:26 Marjan、10〈Naz Kardanet Vaveyla〉3:12 سیما بینا、11〈Negar〉4:05 Soli、12〈Bemoun Ta Bemounam〉2:53 Googoosh、13〈Kofriam〉4:58 Zia、14〈Sharm‐e Boos‐e〉4:01 Ramesh、15〈Cheshm‐e Man〉4:57 Dariush、16〈Gol Bi Goldoun〉4:24 Googoosh。**十六軌掛了十三個不同掛名，其中 Googoosh 三軌、Zia 兩軌、Soli 兩軌**；最長 5:14、最短 2:53。2010 US 盤十六軌同名同序，長度差最多 1 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b0d08f0-9f10-4c70-b4e7-fb819619adf7&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠ **這是本組唯一有製作人員關係登錄的 release**：2009 GB 盤（3d4a8f01）的 release-level relationship 共 14 筆——**compiler 兩人：Mahssa、Arash Saedinia**；**liner notes 同樣是這兩人**；**photography 九筆**：Reza Behigan、Behrad、B. Hedayat、Mahssa、Pedram Missaghi、Nazli、Maryam Neshat、Pullniro、Arash Saedinia、Sussan Tahmasebi。**annotation 欄空、十六軌零 recording-level relationship**（沒有錄音年、錄音地、樂手掛名）。2010 US 盤（a86628d4）**一筆關係都沒有、annotation 也空**。",
+    "src": "https://musicbrainz.org/ws/2/release/3d4a8f01-4d1f-4e89-92cd-2b0058febdef?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "§5.6 舉證逐筆讀過（三個網址）：（一）資料庫端條目——以 API 覆核屬實（欄位如上）。（二）發行方商品頁——實際讀到頁面，**頁內出現 FKR029 一百一十五次，並逐軌列出十六個掛名，其中「Marjan - Kavir-e Del」原文可查**，**舉證成立**。（三）第三個網址是唱片資料庫的 master 頁，**實測回 HTTP 403、讀不到內容**，**不能算已讀過的證據**。",
+    "src": "https://www.finderskeepersrecords.com/shop/pomegranates/"
+   },
+   {
+    "f": "串流側三種查法都跑了：以盤名與副標搜尋 **回 0 筆**；以「Finders Keepers」加盤名搜尋 **回 0 筆**；十六個掛名各自的目錄端也沒有任何一筆與本輯盤名對得上的合輯條目。**本輯在串流側查無上架條目**。",
+    "src": "https://itunes.apple.com/search?term=Pomegranates%20Persian%20Pop%20Funk&entity=album&limit=15&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十六軌掛了十三個不同的掛名，Googoosh 一個人就佔三軌",
+   "同一張碟的英國盤與美國盤掛的是兩個不同廠牌、兩組不同編號"
+  ],
+  "sound": "2009 年英國盤是一張 CD、十六軌，編號 FKR029CD。開場〈Helelyos〉4:35 掛 Zia，接〈Biya Bar-e Safar Bandim〉3:53、〈Soul Raga〉4:07、〈Talagh〉4:46、〈Gol-e Yakh〉5:14、〈Mosem-e Gol〉4:33、〈Gol-e Aftab Gardoon〉3:24、〈Miravi〉3:24、〈Kavir-e Del〉4:26、〈Naz Kardanet Vaveyla〉3:12、〈Negar〉4:05、〈Bemoun Ta Bemounam〉2:53、〈Kofriam〉4:58、〈Sharm-e Boos-e〉4:01、〈Cheshm-e Man〉4:57，收在〈Gol Bi Goldoun〉4:24。十六軌全部壓在 2:53 到 5:14 之間，掛名十三個，Googoosh 三軌、Zia 與 Soli 各兩軌。隔年的美國盤十六軌同名同序，換成另一個廠牌與另一組編號。",
+  "keyTracks": [
+   "Helelyos",
+   "Gol-e Yakh",
+   "Kavir-e Del"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2009（**合輯的首次出版年**，不是任何一軌的錄音年）。release-group 的 first-release-date 記 2009，其下最早的 release 就是 2009 年的英國盤（FKR029CD，Official），另一筆是 2010 年的美國盤（BMS019）。**沒有更早的版本、也沒有復刻年混進來的問題**。**⚠ 十六軌各自的原始錄音年在資料庫端完全沒有登錄**：十六軌零 recording-level relationship、兩筆 release 的 annotation 都是空的，**「1960–70 年代」這個時間範圍只出現在盤名副標與商品頁的行銷文案裡，端上查不到逐軌的年份**，行文不得替任何一軌標年。",
+  "notes": "**擋下策展層兩處。**｜（一）**證據可讀性**：`exceptionEvidenceUrls` 三個網址逐筆抓過，**第三個（唱片資料庫 master 頁）回 HTTP 403 讀不到內容，不能算舉證**；另兩個成立（資料庫端條目以 API 覆核屬實；發行方商品頁確實列出 FKR029 與十六個掛名，含「Marjan - Kavir-e Del」）。**§5.6 這一張站得住，但只有兩份證據不是三份。**｜（二）**廠牌欄要分版本**：卡單 `label` 寫「Finders Keepers Records（FKR029，GB 2009；US 版 2010）」，**美國盤在端上掛的是另一個廠牌 B-Music、編號 BMS019**，行文若提美國盤不得寫成同一個廠牌。｜**查證屬實、而且是本張最好的材料**：⚠ **本組唯一有製作人員關係登錄的一張**——compiler 與 liner notes 都是 Mahssa 與 Arash Saedinia 兩人，photography 九筆掛名，**這些是端上的關係欄位，可以寫**（人名從嚴的門檻在這裡是通過的）。十六軌的掛名分布（十三個掛名、Googoosh 三軌）與長度分布（2:53–5:14）都可寫。｜`mbNote` 寫的「刻意不釘 Sedayeh Del 與 Persian Funk」覆核屬實，兩者確實是同一條復刻線上的另外兩張。｜**串流側三種查法都跑了，全部 0 筆：無固定試聽來源。逐軌長度以資料庫端 2009 年英國盤的欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。合輯的十六個掛名裡有多位藝人的所在地欄位不是伊朗，**那是 area 欄位，不是可以拿來鋪陳的故事**。"
+ },
+ {
+  "key": "desc2:Various Artists|Zendooni: Funk, Psychedelia and Pop from the Iranian Pre-Revolution Generation",
+  "artist": "Various Artists",
+  "album": "Zendooni: Funk, Psychedelia and Pop from the Iranian Pre-Revolution Generation",
+  "facts": [
+   {
+    "f": "release-group 3d286ee7 的欄位：title 與卡單逐字相同、artist-credit「Various Artists」、first-release-date **2012-08-07**、primary-type Album、**secondary-types [Compilation]**。轄下 **2 個 release，同日、同國（ES）、皆 Official**：**CD 版 catno PHS001CD、barcode 4040824082666、Jewel Case、19 軌**；**黑膠版 catno PHS001、barcode 4040824082659、Cardboard/Paper Sleeve、2 片 12 吋、9＋9 共 18 軌**。⚠ **兩個版本軌數不同**：CD 十九軌、黑膠十八軌，黑膠少的是第 19 軌〈Gheseh Raftan〉（Neli）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d286ee7-f401-49ed-a032-6261fd0ef7c1&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "CD 版（PHS001CD）逐軌、掛名與長度：1〈Shab Labane Dagh Khesh〉5:43 Ahmad Wali＆Hangama、2〈Ouj〉3:31 Nooshafarin、3〈Khoda Kafez〉4:36 Farzin、4〈Parastesh〉4:15 Nooshafarin、5〈Ey Vatan Iran〉2:52 Emad Raam、6〈Ghebleh〉4:43 Nooshafarin、7〈Shahre Khali〉3:35 Fereshteh、8〈Safar〉3:57 Hassan Shamaizadeh、9〈Bi Vafa〉3:18 Kambiz、10〈Aroos Khanom〉4:57 Amir Rassaei、11〈Rahgozar〉5:35 Morteza、12〈Gholake Cheshat〉4:58 Simin Ghanem、13〈Setareh〉3:04 Azita、14〈Molla Mamad Jan〉3:46 Pouran、15〈Zendooni〉3:51 Farzin、16〈Hamishe Tanha〉4:05 Pooneh、17〈Ghoroobaa Ghashangan〉3:03 Ramesh、18〈Baaghe Geryeh〉5:14 Taherzadeh、19〈Gheseh Raftan〉3:48 Neli。**Nooshafarin 一人佔三軌、Farzin 兩軌，其餘十四個掛名各一軌**；最長 5:43、最短 2:52。⚠ **黑膠版把三個掛名寫成另一種拼法**（Emad Ram、Amir Rassaie、曲名 Khodahafez），同一批錄音、兩套拼寫。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d286ee7-f401-49ed-a032-6261fd0ef7c1&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "§5.6 舉證逐筆讀過（三個網址）：（一）資料庫端條目——以 API 覆核屬實。（二）美國郵購商的商品頁——**實際讀到頁面，頁內出現 PHS001 二十五次、Zendooni 十一次、Pharaway 五次，並點名 Nooshafarin 與 Farzin，舉證成立**。（三）英國唱片行的商品頁——**實測回 HTTP 403、讀不到內容，不能算已讀過的證據**。",
+    "src": "https://www.forcedexposure.com/Catalog/va-zendooni-cd/PHS.001CD.html"
+   },
+   {
+    "f": "串流側三種查法都跑了。以盤名搜尋回 9 筆，**沒有一筆是本輯**：前兩名是 Dariush 名下 1991-03-08 的《Zendooni, Dariush 5》（8 軌與 9 軌兩個條目、℗ 1991 Caltex Records），其餘七筆是六個不同掛名的同名單曲（2004–2025）。**盤名撞名嚴重但全部駁回**；十九個掛名的目錄端也沒有任何一筆與本輯對得上。**本輯在串流側查無上架條目**。",
+    "src": "https://itunes.apple.com/search?term=Zendooni&entity=album&limit=15&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十九軌裡 Nooshafarin 一個人就唱了三首",
+   "同一天發的 CD 與黑膠差一軌，黑膠少掉最後那首三分四十八秒的〈Gheseh Raftan〉"
+  ],
+  "sound": "2012 年 8 月 7 日同日出的兩個版本：CD 是 PHS001CD、十九軌；黑膠是 PHS001、兩片 12 吋、九加九共十八軌。CD 從〈Shab Labane Dagh Khesh〉5:43 開場，接〈Ouj〉3:31、〈Khoda Kafez〉4:36、〈Parastesh〉4:15、〈Ey Vatan Iran〉2:52、〈Ghebleh〉4:43、〈Shahre Khali〉3:35、〈Safar〉3:57、〈Bi Vafa〉3:18、〈Aroos Khanom〉4:57、〈Rahgozar〉5:35、〈Gholake Cheshat〉4:58、〈Setareh〉3:04、〈Molla Mamad Jan〉3:46、〈Zendooni〉3:51、〈Hamishe Tanha〉4:05、〈Ghoroobaa Ghashangan〉3:03、〈Baaghe Geryeh〉5:14，收在〈Gheseh Raftan〉3:48。十九軌全部落在 2:52 到 5:43 之間；黑膠版少掉最後一軌。",
+  "keyTracks": [
+   "Zendooni",
+   "Ouj",
+   "Gholake Cheshat"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2012-08-07（**合輯的首次出版年月日**）。release-group 的 first-release-date 與其下兩筆 release 的日期完全相同，**沒有更早的版本、也沒有復刻年爭議**。⚠ **十九軌各自的原始錄音年在端上完全沒有登錄**：CD 版與黑膠版都沒有 recording-level relationship、annotation 欄空，**「Pre-Revolution Generation」只是盤名副標，不是可引用的年份欄位**，行文不得替任何一軌標年。",
+  "notes": "**擋下策展層一處。**｜（一）**證據可讀性**：三個 `exceptionEvidenceUrls` 逐筆抓過，**第三個（英國唱片行商品頁）回 HTTP 403 讀不到內容，不能算舉證**；另兩個成立（資料庫端條目屬實；郵購商商品頁確實有 PHS001 與本輯曲目資訊）。**§5.6 這一張站得住，但實際可讀的證據是兩份。**｜**軌數要指明版本（裁定 174）**：⚠ **CD 十九軌、黑膠十八軌**，行文寫軌數必須說是哪一版；黑膠少掉的是〈Gheseh Raftan〉。｜⚠ **同一批錄音有兩套拼寫**：黑膠版把 Emad Raam 寫成 Emad Ram、Amir Rassaei 寫成 Amir Rassaie、〈Khoda Kafez〉寫成〈Khodahafez〉。**引掛名與曲名一律照 CD 版（PHS001CD）的欄位寫法。**｜**盤名撞名要小心**：串流側以盤名搜尋回的九筆全部不是本輯，其中兩筆是另一位掛名 1991 年的同名專輯——**行文不得把那張與本輯混為一談**。｜`mbNote` 說「刻意不釘 Dariush 1991 的同名別碟」覆核屬實。｜**串流側三種查法都跑了，全部駁回：無固定試聽來源。逐軌長度以資料庫端 CD 版欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Various Artists|Khana Khana: Funk, Psychedelia and Pop from the Iranian Pre-Revolution Generation",
+  "artist": "Various Artists",
+  "album": "Khana Khana: Funk, Psychedelia and Pop from the Iranian Pre-Revolution Generation",
+  "facts": [
+   {
+    "f": "release-group 35c7406f 的欄位：title 與卡單逐字相同、artist-credit「Various Artists」、first-release-date **2012-10-08**、primary-type Album、**secondary-types [Compilation]**。轄下 **2 個 release，country 欄兩筆都空**：**2012-10-08 Official，catno PHS003CD，barcode 4040824082697，CD 19 軌**；**2012 Official，catno PHS003，2 片 12 吋黑膠，9＋10 共 19 軌**。⚠ **黑膠那筆只記到年、記不到月日**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=35c7406f-2345-4570-8802-7cbfaaa4b99d&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "CD 版（PHS003CD）逐軌、掛名與長度：1〈Ki Bood (Instrumental)〉2:57 Neli、2〈Baanoye Sahar Aavaaz〉4:56 Soli、3〈Jodayee〉4:06 Afsar Shahidi、4〈Be Omidat Mimoonam〉4:57 Afshin Moghadam、5〈Nefrim Nameh (Instrumental)〉5:11 Dariush、6〈Dokhtar Khoshgel〉4:37 Aghassi、7〈Gharibaneh〉4:06 Beti、8〈Moondam Az Boodanet〉2:45 Fereidoon Farrokhzad＆Ramesh、9〈Khana Khana〉3:24 Habib Mohebian、10〈Hamvelayate Eshgh〉3:51 Hassan Shamaizadeh、11〈Do Ta Chesmoon〉3:58 Mahasti、12〈Kavire Del〉4:22 Marjan、13〈Bia Bare Safar Bandim〉3:53 Mohammed Noori、14〈Ghazal〉1:15 Morteza、15〈Payam〉3:29 Neli、16〈Woman〉3:56 Shahram、17〈Aloonak〉4:23 Shahrokh、18〈Ay Dokhtar〉2:30 Amir Rassaie、19〈Shaadi〉3:06 Soli。**十九軌十七個掛名，Neli 與 Soli 各兩軌**；⚠ **最短的〈Ghazal〉只有 1:15，最長〈Nefrim Nameh〉5:11**，差距超過四倍。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=35c7406f-2345-4570-8802-7cbfaaa4b99d&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠ **與 a 組另外兩張的重疊點（端上可查）**：本輯第 9 軌〈Khana Khana〉（Habib Mohebian）**同名於 Habib Mohebian 1978 年《Salame Hamsayeh》的第 10 軌**；本輯第 12 軌〈Kavire Del〉（Marjan）**同名於 Marjan 名下唯一那張碟的同名首軌**；本輯第 13 軌〈Bia Bare Safar Bandim〉（Mohammed Noori）**同名於《Pomegranates》第 2 軌〈Biya Bar‐e Safar Bandim〉（Mohammad Nouri）**。⚠ **三處都只是「曲名相同」——端上沒有 recording 層的關係把它們連起來，不得寫成「同一個錄音」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0a650cdc-7d45-4c0f-a2d6-6d2befa1bfc4&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "§5.6 舉證逐筆讀過（三個網址）：（一）資料庫端條目——以 API 覆核屬實。（二）英國唱片行商品頁——**實測回 HTTP 403、讀不到內容，不能算證據**。（三）美國唱片行的商品頁——**實際讀到頁面，頁內出現 khana khana 三次、pharaway 六次、phs003 一次，並點名 Marjan 與 Mahasti，舉證成立**。",
+    "src": "https://bentcrayonrecords.com/product/various-khana-khana-funk-psychedelia-and-pop-from-the-iranian-pre-revolution-generation-2lp-pharaway-sounds"
+   },
+   {
+    "f": "串流側三種查法都跑了。以盤名搜尋回 15 筆，**十五筆全部無關**（印地語電影配樂、普什圖語單曲、一張 2009 年的英語專輯等），沒有一筆掛名或盤名對得上；十九個掛名的目錄端也查不到本輯。**本輯在串流側查無上架條目**。",
+    "src": "https://itunes.apple.com/search?term=Khana%20Khana&entity=album&limit=15&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十九軌裡最短的〈Ghazal〉只有一分十五秒，最長的〈Nefrim Nameh〉五分十一秒，差了四倍",
+   "第九軌的曲名〈Khana Khana〉同時是另一位掛名 1978 年那張碟的最後一軌"
+  ],
+  "sound": "2012 年 10 月 8 日的 CD 是 PHS003CD、十九軌；另有一套兩片 12 吋黑膠，編號 PHS003、九加十同樣十九軌，日期只記到年。CD 從器樂曲〈Ki Bood〉2:57 開場，接〈Baanoye Sahar Aavaaz〉4:56、〈Jodayee〉4:06、〈Be Omidat Mimoonam〉4:57、器樂曲〈Nefrim Nameh〉5:11、〈Dokhtar Khoshgel〉4:37、〈Gharibaneh〉4:06、〈Moondam Az Boodanet〉2:45、〈Khana Khana〉3:24、〈Hamvelayate Eshgh〉3:51、〈Do Ta Chesmoon〉3:58、〈Kavire Del〉4:22、〈Bia Bare Safar Bandim〉3:53、只有 1:15 的〈Ghazal〉、〈Payam〉3:29、〈Woman〉3:56、〈Aloonak〉4:23、〈Ay Dokhtar〉2:30，收在〈Shaadi〉3:06。十九軌掛十七個名字，兩首標成器樂曲。",
+  "keyTracks": [
+   "Khana Khana",
+   "Kavire Del",
+   "Ghazal"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2012-10-08（**合輯的首次出版年月日**）。release-group 的 first-release-date 記 2012-10-08，其下 CD 那筆同日，**黑膠那筆只記到 2012、記不到月日**；沒有更早的版本。⚠ **十九軌各自的錄音年端上完全沒有登錄**，零 recording-level relationship、annotation 空，**副標的「Pre-Revolution Generation」不是年份欄位**，不得替任何一軌標年。",
+  "notes": "**擋下策展層一處。**｜（一）**證據可讀性**：三個 `exceptionEvidenceUrls` 逐筆抓過，**第二個（英國唱片行商品頁）回 HTTP 403 讀不到內容，不能算舉證**；另兩個成立（資料庫端條目屬實；美國唱片行商品頁確實有盤名、廠牌、編號與兩位掛名）。**§5.6 這一張站得住，可讀的證據是兩份。**｜⚠ **最該當心的一處**：本輯有三首曲名與 a 組另外三張碟上的曲目同名（〈Khana Khana〉對 Habib Mohebian 1978 年那張的末軌、〈Kavire Del〉對 Marjan 那張的首軌、〈Bia Bare Safar Bandim〉對另一張合輯的第二軌）。**端上沒有 recording 層的關係把它們連起來，行文只能寫「曲名相同」，不得寫成「同一個錄音」或「收錄自那張碟」。**｜**軌數：CD 與黑膠都是十九軌**（黑膠是 9＋10），這一張不像同系列前一輯那樣有軌數落差。｜⚠ **黑膠版的兩處拼法不同**（〈Gharibanch〉〈Khana Jhana〉〈Moondam Az Boodant〉），**引曲名一律照 CD 版寫法**。｜**兩筆 release 的 country 欄都是空的**，行文不得寫發行國。｜**串流側三種查法都跑了，十五筆全部駁回：無固定試聽來源。逐軌長度以資料庫端 CD 版欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Various Artists|Raks Raks Raks: 27 Golden Garage Psych Nuggets From The Iranian 60s Scene",
+  "artist": "Various Artists",
+  "album": "Raks Raks Raks: 27 Golden Garage Psych Nuggets From The Iranian 60s Scene",
+  "facts": [
+   {
+    "f": "release-group 98c023a6 的欄位：title 與卡單逐字相同、artist-credit「Various Artists」、first-release-date **2009**、primary-type Album、**secondary-types [Compilation]**。轄下 **只有 1 個 release**：2009 **NL** Official、CD、**27 軌**，**label-info 記的是「Raks Discos」、catno「RAKS-DISCOS 001」**，無 barcode、無 packaging。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=98c023a6-888d-4614-a7f8-57347e9bf247&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "⚠ **廠牌與卡單不符**：卡單 `label` 與策展層 `mbNote` 都寫「Pharaway Sounds」，**但端上這筆 release 的 label-info 掛的是 Raks Discos、編號 RAKS-DISCOS 001**，`release?...+labels` 的回傳裡沒有任何一處出現 Pharaway。**端上可寫的廠牌只有 Raks Discos。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=98c023a6-888d-4614-a7f8-57347e9bf247&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "27 軌逐軌、掛名與長度：1〈Fatemah Sultan〉2:26 Littles、2〈Sheesh va Hesht Moho Jamin〉2:22 Moha Jamin、3〈Meekshi Manoo〉2:03 The Flowers、4〈4x8 Jadee〉1:31 Littles、5〈Dokhtar E Darya〉3:00 Group Takhala Ha、6〈Man Kiam?〉1:34 Zia、7〈Sartegar Nakesh Chen〉3:32 Ojoobe Ha、8〈Dance Music〉3:46 Penahi、9〈Ashke Roya E Bashkahe〉3:03 Moha Jamin、10〈Bar Ay Dakhtar Ha〉2:29 Golden Ring、11〈Raks Raks Raks〉2:35 Moha Jamin、12〈Indian Rebels〉2:51 Rebels、13〈Hadjme Khali〉3:25 Kourosh、14〈Respect〉3:46 Googoosh、15〈Mosh Va Karnah〉2:56 Saeed、16〈Shekar Dar Kohestan〉3:31 Golden Ring、17〈Mehtaab〉1:42 Littles、18〈Sha La La〉2:05 Rebels、19〈Kocheh Asha〉4:00 Saeed、20〈Pasar Ha Naz Kaneed〉2:26 Golden Ring、21〈Atal Matal〉2:12 Zinguala Ha、22〈A B C D〉3:41 Shakayik、23〈Baroun Behar Do Barah〉2:46 Zia、24〈Beware〉2:00 Ojoobe Ha、25〈Baroon Omad〉2:46 Bijan、26〈What He Can Do〉2:57 Rebels、27〈I Need Somebody to Love〉5:19 Shabah。**二十七軌掛十七個名字**（Littles 三軌、Moha Jamin 三軌、Golden Ring 三軌、Rebels 三軌、Zia 兩軌、Saeed 兩軌、Ojoobe Ha 兩軌）；⚠ **最短〈4x8 Jadee〉1:31、最長〈I Need Somebody to Love〉5:19，二十七軌裡有十四軌不到三分鐘**。四個曲名是英語（〈Dance Music〉〈Respect〉〈Sha La La〉〈Beware〉〈What He Can Do〉〈I Need Somebody to Love〉共六個）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=98c023a6-888d-4614-a7f8-57347e9bf247&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "§5.6 舉證逐筆讀過（三個網址）：（一）資料庫端條目——以 API 覆核屬實。（二）評分網站的**廠牌總覽頁**——實測回 HTTP 403，**且本來就是通用類別條目、不是本輯的頁面**。（三）英國唱片行的**廠牌總覽頁**——實際抓到頁面（HTTP 200、32 KB），**逐字搜過整頁：出現「Pharaway」二十五次，但「Raks」「Raks Raks Raks」一次都沒有，頁面上根本沒有本輯的條目**。⚠ **兩個非資料庫證據一個讀不到、一個讀到了卻查不到本輯——本張的 §5.6 舉證只剩資料庫端一份。**",
+    "src": "https://honestjons.com/shop/label/Pharaway_Sounds"
+   },
+   {
+    "f": "串流側三種查法都跑了。以盤名搜尋回 15 筆，**十五筆全部無關**（土耳其語、庫德語單曲與埃及肚皮舞選輯）；十七個掛名多為單字藝名，目錄端查不到任何與本輯對得上的條目。**本輯在串流側查無上架條目**。",
+    "src": "https://itunes.apple.com/search?term=Raks%20Raks%20Raks&entity=album&limit=15&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "二十七軌裡有十四軌不到三分鐘，最短的只有一分三十一秒",
+   "一張碟二十七軌只掛十七個名字，四個團各佔三軌"
+  ],
+  "sound": "2009 年的荷蘭盤是一張 CD、二十七軌，編號 RAKS-DISCOS 001。從〈Fatemah Sultan〉2:26 開場，接〈Sheesh va Hesht Moho Jamin〉2:22、〈Meekshi Manoo〉2:03、只有 1:31 的〈4x8 Jadee〉、〈Dokhtar E Darya〉3:00、〈Man Kiam?〉1:34、〈Sartegar Nakesh Chen〉3:32、〈Dance Music〉3:46、〈Ashke Roya E Bashkahe〉3:03、〈Bar Ay Dakhtar Ha〉2:29、同名曲〈Raks Raks Raks〉2:35、〈Indian Rebels〉2:51、〈Hadjme Khali〉3:25、〈Respect〉3:46⋯⋯一路到〈I Need Somebody to Love〉5:19 收尾。二十七軌裡十四軌不到三分鐘，只有最後一軌超過五分鐘；二十七個曲名裡有六個是英語。",
+  "keyTracks": [
+   "Raks Raks Raks",
+   "4x8 Jadee",
+   "I Need Somebody to Love"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2009（**合輯的首次出版年**）。release-group 的 first-release-date 記 2009，其下唯一那筆 release 也記 2009（荷蘭、Official），**端上沒有第二個版本、沒有復刻年爭議**。⚠ **二十七軌各自的錄音年端上完全沒有登錄**：零 recording-level relationship、annotation 空。**副標寫的「Iranian 60s Scene」是盤名的一部分，不是年份欄位**——⚠ **本張最容易出事的一句就是把「1960 年代」當成已驗證的錄音年來寫，不可以。**",
+  "notes": "**擋下策展層三處，其中兩處是本組最重的。**｜（一）⚠ **廠牌整個寫錯**：卡單 `label` 與 `mbNote` 都寫「Pharaway Sounds」，**端上這筆 release 的 label-info 掛的是 Raks Discos、catno RAKS-DISCOS 001**，回傳裡沒有一處出現 Pharaway。**行文只能寫 Raks Discos／RAKS-DISCOS 001，不得寫 Pharaway。**｜（二）⚠ **§5.6 舉證站不住**：三個 `exceptionEvidenceUrls` 裡有兩個是**廠牌總覽頁這種通用類別條目**，本來就不算舉證；其中一個回 403 讀不到，另一個讀到了（HTTP 200、32 KB）但**逐字搜過整頁、「Raks」一次都沒出現，頁面上根本沒有本輯**。**本張實際可用的證據只剩資料庫端那一份，下游若要保留 §5.6 例外欄位，證據要重補。**｜（三）**「同一廠牌系列」的說法不成立**：`why` 把本張放進同一條復刻線敘述，**但端上的廠牌不同（Raks Discos 而非該系列）、編號體系也不同**，不得寫成同系列的第幾輯。｜**查證屬實、可以寫的**：二十七軌的長度分布（十四軌不到三分鐘、最短 1:31、最長 5:19）、掛名分布（十七個掛名、四個各佔三軌）、六個英語曲名、載體與軌數（荷蘭盤 CD 27 軌）。｜⚠ **年份界線**：「1960 年代」只出現在盤名副標，**端上零錄音關係，不得寫成錄音年**。｜**串流側三種查法都跑了，十五筆全部駁回：無固定試聽來源。逐軌長度以資料庫端欄位為準，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。"
+ },
+ {
+  "key": "desc2:Kourosh Yaghmaei|Back From the Brink",
+  "artist": "Kourosh Yaghmaei",
+  "album": "Back From the Brink",
+  "facts": [
+   {
+    "f": "release-group 9d14a076 的欄位：title「Back From the Brink」、artist-credit「Kourosh Yaghmaei」（藝人實體 1c11fabc，Person／**Iran**，**begin-area Shahrud**，disambiguation「Iranian singer-songwriter, composer and producer」，life-span 1946-12-03 起、未結束，gender Male）、first-release-date **2011-06-15**、primary-type Album、**secondary-types [Compilation]**。轄下 **只有 1 個 release**：2011-06-15 **US** Official、Now-Again Records、**catno NA 5066**、barcode 659457506629、**2 片 CD、16＋14 共 30 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9d14a076-e862-4271-bb1f-be7d1c85c004&inc=media+labels+recordings+artist-credits&limit=100&fmt=json"
+   },
+   {
+    "f": "30 軌逐軌與長度。CD1：〈Gole Yakh〉5:07、〈Dar Enteha〉4:09、〈Hajme Khali〉2:43、〈Paiz〉4:20、〈Leila〉4:28、〈Del Dareh Pir Misheh〉2:54、〈Akhm Nakon〉3:25、〈Shirin Joon〉3:31、〈Ghazal〉5:18、〈Tavalode Yek Seda〉4:23、〈Saghe〉3:25、〈Entezar〉4:23、〈Niyayesh〉5:34、〈Saraabe Toe〉4:35、〈Reyhan〉3:49、〈Baroona〉4:27。CD2：〈Mosafere Shar Baran〉6:01、〈Khaar〉6:49、〈Havar Havar〉3:46、〈Ashiooneh〉4:36、〈Bachehaye Khoobe Koocheh〉3:39、〈Akhtare Asemanha〉4:01、〈Tak Derakht〉5:06、〈Share Cheshmat〉4:20、〈Dokhtare Delkhasteye Shahr〉4:49、〈Daas〉5:07、〈Ghahr〉2:52、〈Aabere Shab〉3:56、〈Ghad Boland〉3:12、〈Kei Toe Miayee〉3:35。**三十軌最短 2:43、最長 6:49**；**三十軌一筆 recording-level relationship 都沒有、annotation 欄空**——錄音年、錄音地、樂手掛名端上全是空白。",
+    "src": "https://musicbrainz.org/ws/2/release/95b466b7-309d-471f-8284-4fde17a033e4?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+   },
+   {
+    "f": "藝人端點分頁全列 **32 個 release-group**：純 Album（secondary-types 空）**16 個**、Album/Compilation **1 個（就是本輯）**、Single 15 個。**本輯是這位掛名名下唯一一個帶 Compilation 次類型的 release-group。**依 first-release-date 排，名下最早的兩筆是 **1973 年的兩張 Single**：《Gole Yakh / Del Dareh Pir Misheh》（be2ee7eb）與《Hajm-e Khali》（ce6fd5f6），再來是 1977 年兩張 Single、1979《Sol-e 1 (Live)》、1980《Sol-e 2 (Live)》⋯⋯**名下標成 Album 的《Gol-e Yakh》(1d42ec40) 的 first-release-date 是 1991-10-21，不是 1973。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1c11fabc-c4e2-4228-b37e-92e0a4dff840&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "§5.6 舉證逐筆讀過（三個網址，**本組唯一三個全部可讀且全部成立的一張**）：（一）資料庫端條目——以 API 覆核屬實。（二）發行方自家的商品頁——**HTTP 200、45 KB，頁內出現掛名 Kourosh 四十四次、盤名十二次、1973 十三次、1979 十三次**，舉證成立。（三）英語百科的本輯專條——**HTTP 200、138 KB，頁內掛名一百三十二次、Track listing 段落十六處、發行方十五次**，舉證成立。",
+    "src": "https://www.nowagainrecords.com/kourosh-back-from-the-brink-2/"
+   },
+   {
+    "f": "串流側三種查法都跑了。**採信 collectionId 1705353375**《Back From The Brink (Pre-Revolution Psychedelic Rock From Iran: 1973-1979)》30 軌、℗ 記 1976 Now-Again Records：**三十軌與資料庫端的 16＋14 同名同序、逐軌長度完全相同**（只有第 8 軌上架端寫成〈Shirin Nakon〉、端上寫〈Shirin Joon〉），**三十軌 30/30 都有試聽**。⚠ **上架端的 releaseDate 記 1976-05-28、℗ 記 1976，與端上的 2011-06-15 差了三十五年，那個年份明顯是錯的、不得引用**。同一位掛名目錄下另有 110951957《Gole Yakh》13 軌（℗1991 Caltex，那是 a 組另一張卡的條目）、471646714《Persian Bandari Songs, Vol. 1 - 4》32 軌與 470475471《Persian Bandari Songs # 3》8 軌（策展層回撈清單裡列的兩筆，**都不是本輯，駁回**）。",
+    "src": "https://itunes.apple.com/lookup?id=1705353375&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三十軌分成兩片，最短 2:43、最長 6:49，中間沒有一軌破七分鐘",
+   "這是這位掛名名下三十二個條目裡唯一一個帶 Compilation 次類型的"
+  ],
+  "sound": "2011 年的美國盤是兩片 CD、三十軌，編號 NA 5066。第一片以〈Gole Yakh〉5:07 開場，接〈Dar Enteha〉4:09、〈Hajme Khali〉2:43、〈Paiz〉4:20、〈Leila〉4:28、〈Del Dareh Pir Misheh〉2:54、〈Akhm Nakon〉3:25、〈Shirin Joon〉3:31、〈Ghazal〉5:18、〈Tavalode Yek Seda〉4:23、〈Saghe〉3:25、〈Entezar〉4:23、〈Niyayesh〉5:34、〈Saraabe Toe〉4:35、〈Reyhan〉3:49、〈Baroona〉4:27。第二片從〈Mosafere Shar Baran〉6:01 起，接 6:49 的〈Khaar〉、〈Havar Havar〉3:46、〈Ashiooneh〉4:36⋯⋯收在〈Kei Toe Miayee〉3:35。三十軌最短 2:43、最長 6:49，兩片的長度分布幾乎一樣。",
+  "keyTracks": [
+   "Gole Yakh",
+   "Khaar",
+   "Hajme Khali"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2011-06-15（**合輯的首次出版年月日**）。release-group 的 first-release-date 與其下唯一那筆美國 release 的日期完全相同，**端上沒有第二個版本**。⚠ **兩個年份陷阱**：（一）**上架端那筆的 releaseDate 記 1976-05-28、℗ 記 1976**，與端上差三十五年，**明顯是錯的欄位，不得拿來當佐證、更不得寫進行文**；（二）**盤名副標寫的「1973–1979」是選輯所涵蓋的錄音年範圍，不是本輯的發行年**，而且**三十軌零 recording-level relationship、annotation 空，端上查不到任何一軌的錄音年**——**「1973–1979」只能當成盤名的一部分引用，不得寫成「這三十軌錄於 1973 到 1979」。**",
+  "notes": "**擋下策展層兩處。**｜（一）⚠ **序數與極值**：`why`／`exceptionReason` 把本輯寫成「1973–1979 錄音唯一經授權的完整成輯形態」。**「唯一」與「經授權」端上都查不到來源**，不得寫。**可以寫的序數只有一條**：藝人目錄三十二個 release-group 裡，**本輯是唯一一個帶 Compilation 次類型的**（純 Album 十六個、Single 十五個），這一句數過、成立。｜（二）**「以藝人自存母帶修復」**：`exceptionReason` 這句在端上沒有任何欄位或關係支撐（三十軌零關係、annotation 空），**不得寫**。｜**§5.6 舉證：本組唯一三個網址全部可讀且全部成立的一張**（資料庫端條目、發行方商品頁 HTTP 200 且頁內有掛名與年份、英語百科專條 HTTP 200 且有完整曲目段落）。**這一張的例外欄位站得最穩。**｜**人名從嚴**：三十軌零 recording-level relationship，**任何樂手、製作人、錄音室的名字都不得寫**。可寫的藝人欄位只有 area 記 Iran、begin-area 記 **Shahrud**、life-span 記 1946-12-03 起。｜**串流採信 1705353375：30 軌與資料庫端 16＋14 同名同序、逐軌長度完全相同，30/30 有試聽；℗ 記 1976（欄位錯誤、不得引用）**。駁回 471646714《Persian Bandari Songs, Vol. 1 - 4》與 470475471《Persian Bandari Songs # 3》（策展層回撈清單的兩筆，都不是本輯）。**有固定試聽來源，逐軌長度兩端一致，可以寫時間。**｜⚠ 行文界線（本批硬規則）：可以寫發行年、廠牌、盤面編號、載體、曲目、編制，以及資料庫端 artist 的 area／begin-area／life-span 這類欄位值；**不得寫政治立場、宗教評價、對體制的價值判斷，也不得把「流亡」「被禁」「審查」寫成敘事或因果斷言**。這位掛名 1979 年之後的際遇在第三方條目上有大量敘述，**一句都不要寫**。"
+ }
+]
