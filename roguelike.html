@@ -624,9 +624,11 @@
         try { const s = await getDoc(doc(db,'users',u.uid)); return s.exists() ? (s.data().rogueMeta||null) : null; }
         catch(e){ return null; }
       };
+      // 回傳寫入的 promise：一般存檔照樣 fire-and-forget，但「重跑序章」那種存完就跳頁的
+      // 情境要 await 它，否則 location.replace 會把還沒送出的那筆寫入直接砍掉。
       window.__saveRogueMeta = (m) => {
-        const u = auth.currentUser; if(!u) return;
-        try { setDoc(doc(db,'users',u.uid),{ rogueMeta:m, rogueMetaUpdatedAt:Date.now() },{merge:true}).catch(()=>{}); } catch(e){}
+        const u = auth.currentUser; if(!u) return null;
+        try { return setDoc(doc(db,'users',u.uid),{ rogueMeta:m, rogueMetaUpdatedAt:Date.now() },{merge:true}).catch(()=>{}); } catch(e){ return null; }
       };
       // 進行中那一趟的存檔也跟著帳號走（同一份 users/{uid}，一樣免改規則）：
       // rogueRun＝快照本體、rogueRunClearedAt＝墓碑（別台把這趟打完／放棄的時間）
@@ -1587,7 +1589,8 @@ function loadMeta(){
 function saveMeta(){
   try{ localStorage.setItem(metaStoreKey(), JSON.stringify(META)); }catch(e){}
   // 登入中 → 同步寫雲端（fire-and-forget；JSON 轉一圈把 undefined 洗掉，Firestore 不收）；沙盒不寫雲端
-  if(_cloudUid && !SANDBOX && window.__saveRogueMeta){ try{ window.__saveRogueMeta(JSON.parse(JSON.stringify(META))); }catch(e){} }
+  if(_cloudUid && !SANDBOX && window.__saveRogueMeta){ try{ return window.__saveRogueMeta(JSON.parse(JSON.stringify(META))); }catch(e){} }
+  return null;   // 沒登入／沙盒：沒有雲端寫入可等
 }
 // 併兩份樂歷：以 xp 較高者為底（天賦跟著它），紀錄取最大值、收藏／待補綁卡聯集
 function mergeMeta(a,b){
@@ -2444,13 +2447,16 @@ function adminPanelHTML(){
   if(!SANDBOX && !isAdminUser()) return '';
   if(!SANDBOX) return `<div class="muted" style="border:1px dashed #999;padding:8px 10px;margin:10px 0;font-size:10px;line-height:1.9">
     🧪 管理員測試：<button class="btn" style="font-size:10px" onclick="enterSandbox()">以訪客身分瀏覽</button>
-    等級／卡牌全新開始，正式帳號進度完全不受影響，隨時可切回。</div>`;
+    等級／卡牌全新開始，正式帳號進度完全不受影響，隨時可切回。
+    <button class="btn" style="font-size:10px;margin-left:4px" onclick="resetPrologue()">🏪 重跑序章</button>
+    只清角色與序章送的五張，樂歷／配件／現金保留。</div>`;
   return `<div style="border:1px dashed var(--gold);background:#fffbe9;padding:8px 10px;margin:10px 0;font-size:10px;line-height:1.9">
     <b style="color:var(--gold)">🧪 訪客測試中</b>——樂歷／卡牌／配件照常累積，但獨立存本機、不寫雲端與正式帳號。
     <div class="row" style="gap:6px;margin-top:4px;flex-wrap:wrap">
       <button class="btn" style="font-size:10px" onclick="sbSetLevel()">設定等級…</button>
       <button class="btn" style="font-size:10px" onclick="sbResetXp()">樂歷歸零</button>
       <button class="btn" style="font-size:10px" onclick="sbResetAll()">全部重置</button>
+      <button class="btn" style="font-size:10px" onclick="resetPrologue()">🏪 重跑序章</button>
       <button class="btn" style="font-size:10px" onclick="exitSandbox()">離開訪客模式 →</button>
     </div></div>`;
 }
@@ -2467,9 +2473,31 @@ function sbSetLevel(){
 function sbResetXp(){ if(!SANDBOX) return; META.xp=0; META.talents={atk:0,def:0,qir:0}; saveMeta(); renderClassSelect(); }
 function sbResetAll(){
   if(!SANDBOX) return;
-  if(!confirm('全部重置：訪客的樂歷、卡牌、配件、現金、教學進度與進行中的一趟都會清空，回到全新玩家。確定？')) return;
+  if(!confirm('全部重置：訪客的樂歷、卡牌、配件、現金、角色、教學進度與進行中的一趟都會清空，回到全新玩家（序章也會重跑）。確定？')) return;
   try{ localStorage.removeItem(RUNSAVE_KEY); localStorage.removeItem(metaStoreKey()); }catch(e){}
   location.reload();
+}
+// 🏪 重跑序章：清掉角色（名字／外觀／耳朵）與序章送的那五張，回到「沒逛過唱片行」的狀態。
+// 樂歷、配件、現金、圖鑑、解鎖都保留——只有序章本身重來。
+// ⚠️ 這裡一定要寫成 null 而不是 delete：雲端是 setDoc({rogueMeta},{merge:true})，
+//    欄位「不存在」不會蓋掉雲端那份，而 mergeMeta 又是 `hi.profile || lo.profile`，
+//    下次登入就會把舊角色併回來。寫 null 才真的清得掉。
+async function resetPrologue(){
+  if(!SANDBOX && !isAdminUser()) return;
+  const who = SANDBOX ? '訪客' : '你的正式帳號';
+  if(!confirm(`重跑序章：清掉${who}的角色（名字／外觀／耳朵）與序章送的那五張唱片，`
+    + `回到沒逛過唱片行的狀態。\n樂歷、配件、現金、圖鑑都保留。\n\n確定？`)) return;
+  const starter = new Set(((META.profile && META.profile.ace) ? [META.profile.ace] : [])
+    .concat((META.profile && META.profile.albums) || []).map(keyOf));
+  if(Array.isArray(META.collection) && starter.size)
+    META.collection = META.collection.filter(c => !starter.has(keyOf(c)));   // 免得換一軸就多五張
+  META.profile = null; META.name = ''; META.avatar = null;
+  try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){}   // 進行中那一趟綁著舊角色
+  // 一定要等雲端那筆寫完再跳頁：不等的話 location.replace 會砍掉還在飛的 setDoc，
+  // 下次登入 mergeMeta 又把雲端的舊 profile 併回來，序章等於沒重跑。
+  const p = saveMeta();
+  if(p) { try{ await Promise.race([p, new Promise(r=>setTimeout(r,3000))]); }catch(e){} }
+  location.replace('roguelike.html?prologue=1');
 }
 
 // 開新的一趟前的共用守門：上一趟還沒打完 → 先問一聲（同 chooseClass）

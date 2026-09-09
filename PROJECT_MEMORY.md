@@ -1,5 +1,35 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-09｜dip-vinyl-shop｜管理員／訪客面板加「🏪 重跑序章」
+
+店主：「我的帳號重置功能也要讓我可以重跑序章」。原本只有沙盒的「全部重置」
+（`sbResetAll()`，`if(!SANDBOX) return;`），正式帳號完全沒有重跑序章的路。
+
+**做法**：新增 `resetPrologue()`，把序章的閘門 `META.profile` 打掉即可
+（`bootstrap()` 裡 `_wantPro` 那條：`if(META.profile) → pvp.html`），
+順便把序章送的那五張（`profile.ace` ＋ `profile.albums`）從 `collection` 移除，
+免得換一軸重走又多五張。樂歷、天賦、配件、現金、圖鑑、教學旗標全部保留。
+按鈕掛在 `adminPanelHTML()` 的兩個分支（正式帳號管理員面板＋訪客面板）。
+
+**兩個非做不可的細節**（漏掉就等於沒清）：
+1. **寫 `null` 不能用 `delete`。** 雲端是 `setDoc({rogueMeta},{merge:true})`，
+   欄位「不存在」不會蓋掉雲端那份；而 `mergeMeta` 是 `hi.profile || lo.profile`，
+   下次登入舊角色就被併回來。寫成 `META.profile = null` 才真的清得掉。
+2. **要等雲端寫入落地再跳頁。** `saveMeta()` 對雲端是 fire-and-forget，
+   後面緊接著 `location.replace` 會把還在飛的 `setDoc` 直接砍掉。
+   因此把 `window.__saveRogueMeta` 與 `saveMeta()` 都改成**回傳那個 promise**
+   （既有呼叫端不受影響），`resetPrologue()` 改 `async`、
+   `await Promise.race([p, 3 秒逾時])` 之後才 `location.replace('roguelike.html?prologue=1')`。
+
+- 主要檔案：`roguelike.html`（`__saveRogueMeta` 回傳值、`saveMeta` 回傳值、
+  `resetPrologue()`、`adminPanelHTML()` 兩處按鈕、`sbResetAll()` 提示字）
+- 驗證：Chromium ＋ 本機 http 伺服器，沙盒種一份「有角色、13 張收藏、xp 5000、
+  現金 999、配件 1 件」的樂歷 → 點「🏪 重跑序章」→ localStorage 落地結果：
+  收藏 **13 → 8**（序章那五張被移除）、`name:''`／`profile:null`／`avatar:null`，
+  而 `xp 5000`／`cash 999`／`tutorialDone`／`relicsOwned` **原封不動**；
+  網址轉成 `?prologue=1`，序章第一頁（捏角色）正常畫出來，全程無 JS 錯誤。
+  （雲端那段要登入才測得到，沙盒連不到 Firebase。）
+
 ### 2026-09-08｜dip-vinyl-shop｜序章舞台正式換進 roguelike.html（描圖美術＋新走位）
 
 店主：「先推上去 之後要改再說」。把 `stage-preview.html` 上定案的那一套搬進遊戲。
