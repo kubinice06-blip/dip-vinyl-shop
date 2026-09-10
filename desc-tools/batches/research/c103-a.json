@@ -1,0 +1,879 @@
+[
+ {
+  "key": "desc4:美空ひばり|ひばり端唄草紙",
+  "artist": "美空ひばり",
+  "album": "ひばり端唄草紙",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ec8df141 的欄位：title「ひばり端唄草紙 Hibari Hauta Zōshi」（原題後面掛一段羅馬拼音副標，是這份建檔的寫法）、artist-credit「美空ひばり」（藝人實體 ebb2a572，country JP、type Person、sort-name「Misora, Hibari」）、first-release-date **1958**（只到年、沒有月日）、primary-type Album、secondary-types **空**。轄下只有 1 個 release：JP／Official，text-representation 標 script Jpan、language jpn。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ec8df141-5bf4-4a8a-90cc-32106d987540?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 JP release（eafff374）的實體規格與曲目：媒體是 **10 吋黑膠、8 軌**，label-info 為 Columbia、catno **AL-123**，無 barcode。曲序照 A／B 面編號排：A1〈春雨〉A2〈深川〉A3〈奴さん〉A4〈かっぽれ〉／B1〈さのさ節〉B2〈都々逸〉B3〈縁かいな〉B4〈槍さび〉。**八首全部是端唄・小唄・俗曲的既有曲目，沒有一首是為這張新寫的歌謡曲**，每軌都沒有登錄長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ec8df141-5bf4-4a8a-90cc-32106d987540&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈美空ひばり〉的 10 吋 LP 一覽把這張記成「**美空ひばり端唄草紙（1958年12月10日 AL-123）10インチ**」——**盤名前面多兩個字（美空ひばり端唄草紙），發行日精確到 1958 年 12 月 10 日**，catno 與規格與 MB 那筆 release 完全相同。同一份清單裡她 1958 年前後的 10 吋盤還有〈ひばりのマドロスさん〉（AL-101）與〈ひばりの歌変化〉，可見這批 AL 番號是同一條 10 吋企劃線。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A"
+   },
+   {
+    "f": "以 release-group?artist=ebb2a572&limit=100&offset= 分頁全列美空ひばり名下 43 個 release-group，其中 primary-type=Album 且 secondary-types 為空的只有 13 筆，依 first-release-date 排序最早的五筆是《ひばり端唄草紙》1958、《美空ひばりのマドロスさん》1958-05、《ひばりの歌変化》1958-12、《ひばりの哀愁波止場》1961-05、《ひばりの渡り鳥だよ》1962-04。**其餘 30 筆多半標了 Compilation 或 Live**。本張在這份資料裡是她名下最早、且轄下 release 標 Official 的專輯。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ebb2a572-3424-4e2c-b468-102c4308e4c3&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple Music jp 店面以「美空ひばり」查 entity=album，回來的是《美空ひばり ベスト30》（collectionId 1466908524，COCP-40838）這類後世精選；以本張盤名查 jp 與 us 兩個店面的 search，**沒有任何一筆 collectionName 對得上《ひばり端唄草紙》**。藝人頁目錄端點（artistId 75493933）攤開後同樣沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E3%81%B2%E3%81%B0%E3%82%8A%E7%AB%AF%E5%94%84%E8%8D%89%E7%B4%99&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "八首全是端唄・小唄的既有曲目——她把一張 10 吋盤整個交給邦樂的既有曲目，而不是電影主題歌",
+   "MB 那筆 release 的規格欄只有兩個字：10 吋、8 軌；每一軌都沒有長度"
+  ],
+  "sound": "1958 年日本コロムビア的 10 吋單聲道盤，八首端唄・小唄・俗曲（春雨、深川、奴さん、かっぽれ、さのさ節、都々逸、縁かいな、槍さび）。三味線與囃子為主的邦樂編制，唱法貼近座敷唄的節與間，不是同期歌謡曲那種樂團伴奏。曲目全部沒有登錄長度，一面四首的短篇形制。",
+  "keyTracks": [
+   "春雨",
+   "奴さん",
+   "かっぽれ",
+   "都々逸"
+  ],
+  "status": "thin",
+  "yearVerified": "1958 ✓。MB release-group first-release-date 1958（無月日），轄下唯一 release 也是 1958；日文維基〈美空ひばり〉的 10 吋盤一覽記 1958 年 12 月 10 日、catno AL-123 相符。兩處年份一致，維基多給了月日。",
+  "notes": "**素材極少，只夠一兩段。** 這張沒有專屬維基條目、Apple 兩個店面都查無、MB 只有一筆 release 且逐軌無長度。可寫的實料就是：規格（10 吋 8 軌）、廠牌 catno（Columbia AL-123）、八首曲名、以及「整張都是端唄小唄既有曲目」這件事。**維基把盤名記成《美空ひばり端唄草紙》、MB 記成《ひばり端唄草紙》**，卡片取後者，行文照卡片。**擋下策展層**：curatorWhy 說這是「MB 上她最早的專輯」——這句在 MB 資料內成立（43 個 RG 分頁全查過，Album 且 st 空的最早就是這筆），但**不等於她生涯第一張 LP**，行文不得寫「首張／第一張」。label 欄與我查到的 Columbia／AL-123 相符。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:美空ひばり|美空ひばりのマドロスさん",
+  "artist": "美空ひばり",
+  "album": "美空ひばりのマドロスさん",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 55fc14a4 的欄位：title「美空ひばりのマドロスさん」、artist-credit「美空ひばり」（ebb2a572）、first-release-date **1958-05**、primary-type Album、secondary-types **空**、disambiguation 空。轄下 1 個 release：JP／Official／1958-05。",
+    "src": "https://musicbrainz.org/ws/2/release-group/55fc14a4-5695-46f6-b0d3-6a5265b8a503?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（69964257）的規格與曲目：**10 吋黑膠、8 軌**，Columbia／catno **AL-101**，無 barcode。A1〈ひばりのマドロスさん〉A2〈娘船頭さん〉A3〈君はマドロス海つばめ〉A4〈港は別れてゆくところ〉／B1〈波止場だよお父っあん〉B2〈港町十三番地〉B3〈波止場小僧〉B4〈浜っ子マドロス〉。**八首曲名裡出現「マドロス」四次、「港／波止場」四次**——整張是以水手與碼頭為單一題材編成的選曲，每軌未登錄長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=55fc14a4-5695-46f6-b0d3-6a5265b8a503&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈美空ひばり〉的 10 吋 LP 一覽把這張記成「**ひばりのマドロスさん（1958年5月15日 AL-101）10インチ**」——**盤名沒有開頭的「美空」兩字，發行日精確到 1958 年 5 月 15 日**，catno AL-101 與規格 10 吋皆與 MB 相符。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A"
+   },
+   {
+    "f": "同一條目記載她 1958 年的處境：4 月起成為神戸芸能社專屬，7 月離開新芸プロ，8 月 1 日設立ひばりプロダクション、田岡一雄任副社長，8 月 18 日與東映簽下電影演出專屬契約，並在京都市左京区岡崎法勝寺町置屋。**本盤發行的 5 月，正落在這一連串經紀與電影合約重組的當口。**",
+    "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面，以「美空ひばり 美空ひばりのマドロスさん」與單以盤名各查一次 search（entity=album），**沒有任何一筆 collectionName 對得上**；藝人頁目錄端點（artistId 75493933，jp）攤開後也沒有這張，回來的都是《美空ひばり ベスト30》一類後世精選。",
+    "src": "https://itunes.apple.com/search?term=%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A%20%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A%E3%81%AE%E3%83%9E%E3%83%89%E3%83%AD%E3%82%B9%E3%81%95%E3%82%93&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "八首曲名裡「マドロス」出現四次、「港」與「波止場」再四次——一張盤只講一件事",
+   "1958 年 5 月：她設立自己的製作公司、與東映簽約的同一年，先出了一張水手歌集"
+  ],
+  "sound": "1958 年日本コロムビア 10 吋單聲道盤，八首以水手（マドロス）與港町為題材的歌謡曲，含〈港町十三番地〉這類同期流行曲。管樂與手風琴色彩的歌謡樂團伴奏，節奏偏行進與探戈調，唱腔比端唄盤外放。一面四首，各軌未登錄長度。",
+  "keyTracks": [
+   "ひばりのマドロスさん",
+   "港町十三番地",
+   "娘船頭さん",
+   "浜っ子マドロス"
+  ],
+  "status": "thin",
+  "yearVerified": "1958 ✓。MB first-release-date 1958-05、轄下 release 同為 1958-05；日文維基〈美空ひばり〉10 吋盤一覽記 1958 年 5 月 15 日、AL-101，年月完全相符。",
+  "notes": "**thin。** 無專屬維基條目、Apple 查無、MB 逐軌無長度。實料只有規格（10 吋 8 軌）、Columbia AL-101、八首曲名與題材集中這件事，加上 1958 年她本人的經紀／電影合約背景（可用來對位，但那是藝人條目的內容、不是這張盤的內容，行文要說清楚）。**盤名兩說**：維基作《ひばりのマドロスさん》、MB 作《美空ひばりのマドロスさん》，卡片取 MB 寫法。label 欄與查到的 Columbia／AL-101 相符。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:美空ひばり|ひばりの哀愁波止場",
+  "artist": "美空ひばり",
+  "album": "ひばりの哀愁波止場",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group aaa742b4 的欄位：title「ひばりの哀愁波止場」、artist-credit「美空ひばり」（ebb2a572）、first-release-date **1961-05**、primary-type Album、secondary-types **空**。轄下 1 個 release：JP／Official／1961-05。",
+    "src": "https://musicbrainz.org/ws/2/release-group/aaa742b4-4a53-400a-856e-94bf65b15dc5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（453e7e23）的規格與曲目：**10 吋黑膠、8 軌**，label-info **兩組同一廠牌**——Columbia／「AL 270」與 Columbia／「AL-270」（同一個號碼、兩種書寫），無 barcode。A1〈哀愁波止場〉A2〈ふるさとの港〉A3〈ひばりの船長さん〉A4〈かもめとそよ風〉／B1〈追分道中〉B2〈鳶ヒョロヒョロ燕がスイ〉B3〈絵日傘剣法〉B4〈すたこらマンボ〉。A 面四首全是港與海的題材，B 面轉成道中物與マンボ，**兩面的路線明顯分開**。各軌未登錄長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=aaa742b4-4a53-400a-856e-94bf65b15dc5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈美空ひばり〉的 10 吋 LP 一覽記「**ひばりの哀愁波止場（1961年5月20日 AL-270）10インチ**」，發行日精確到 1961 年 5 月 20 日，catno 與規格與 MB 相符。同一份清單裡相鄰的還有《美空ひばりの哀愁出船》（1963 年 6 月 15 日 ALS-195）與《ひばりの哀愁出船》（1963 年 9 月 20 日 ASS-2），**「哀愁」系列在她的 10 吋／12 吋盤上反覆出現過三次**。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A"
+   },
+   {
+    "f": "以 release-group?artist=ebb2a572&limit=100&offset= 分頁全列的 43 筆裡，Album 且 secondary-types 為空的 13 筆依序為 1958《ひばり端唄草紙》、1958-05《美空ひばりのマドロスさん》、1958-12《ひばりの歌変化》、1961-05 本張、1962-04《ひばりの渡り鳥だよ》、1965《ステレオ 美空ひばりの花ステージ (第２集)》、1966《美空ひばりの花のステージ 第３集》，其後就跳到 1995 年以後的整編盤。**1958 到 1962 這四年是這份目錄裡她原盤最密集的一段。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ebb2a572-3424-4e2c-b468-102c4308e4c3&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 店面以盤名與「藝人＋盤名」各查一次 search（entity=album），**兩個店面都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 75493933）攤開後同樣沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E3%81%B2%E3%81%B0%E3%82%8A%E3%81%AE%E5%93%80%E6%84%81%E6%B3%A2%E6%AD%A2%E5%A0%B4&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "A 面四首寫港與海，B 面四首轉進道中物與マンボ——一張 10 吋盤把兩條路線各放一面",
+   "MB 那筆 release 的 label-info 登了兩次同一個號碼：AL 270 與 AL-270"
+  ],
+  "sound": "1961 年日本コロムビア 10 吋盤。A 面〈哀愁波止場〉起四首港町題材的哀調歌謡，B 面〈追分道中〉起轉向道中物與〈すたこらマンボ〉這類節奏曲。歌謡樂團編制，弦與管樂鋪底，B 面帶拉丁打擊。各軌未登錄長度，一面四首。",
+  "keyTracks": [
+   "哀愁波止場",
+   "ふるさとの港",
+   "追分道中",
+   "すたこらマンボ"
+  ],
+  "status": "thin",
+  "yearVerified": "1961 ✓。MB first-release-date 1961-05、轄下 release 1961-05；日文維基〈美空ひばり〉10 吋盤一覽記 1961 年 5 月 20 日 AL-270。年月一致。",
+  "notes": "**thin。** 無專屬維基條目、Apple 兩店面皆無、逐軌無長度。可用實料：10 吋 8 軌、Columbia AL-270（MB 把同一號碼登了兩種寫法）、八首曲名與 A／B 面題材分工、以及她名下「哀愁」系列出現過三次這件事。label 欄與查到的相符。Apple 無可用 collectionId。**行文不得寫序數**（這張在 MB 目錄裡排第四，但那只是 MB 這份資料的順序，不是實際發行序）。"
+ },
+ {
+  "key": "desc4:美空ひばり|ひばりの渡り鳥だよ",
+  "artist": "美空ひばり",
+  "album": "ひばりの渡り鳥だよ",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 42a2afb5 的欄位：title「ひばりの渡り鳥だよ」、artist-credit「美空ひばり」（ebb2a572）、first-release-date **1962-04**、primary-type Album、secondary-types **空**。轄下 1 個 release：JP／Official／1962-04。",
+    "src": "https://musicbrainz.org/ws/2/release-group/42a2afb5-90e8-4992-b31d-5352bde03fd9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（b62a4327）的規格與曲目：**10 吋黑膠、8 軌**，label-info 兩組同號 Columbia／「AL 349」與 Columbia／「AL-349」，無 barcode。A1〈ひばりの渡り鳥だよ〉A2〈母さんギター〉A3〈鼻唄マドロス〉A4〈瀬戸の通い船〉／B1〈裸念仏ぁ岩の上〉B2〈車屋さん〉B3〈祭り花笠喧嘩旅〉B4〈旅唄ざんげ〉。**A1 與 B4 正是同名單曲的 A／B 兩面**（見下條）。各軌未登錄長度。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=42a2afb5-90e8-4992-b31d-5352bde03fd9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈美空ひばり〉：單曲一覽記「**1961年12月10日 ひばりの渡り鳥だよ／旅唄ざんげ**」，10 吋 LP 一覽記「**ひばりの渡り鳥だよ（1962年4月20日 AL-349）10インチ**」。**同名單曲比這張 10 吋盤早四個月出，LP 的 A1 與 B4 就是那張單曲的兩面。** 同一條目的紅白出場表另記：1961 年第 12 回 NHK 紅白歌合戦她唱的曲目就是〈ひばりの渡り鳥だよ〉。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A"
+   },
+   {
+    "f": "Apple jp 店面 search 查得到 collectionId **295268729**「ひばりの渡り鳥だよ - Single」（artistName 美空ひばり，releaseDate 標 1961-01-01，**trackCount 2**）——那是同名**單曲**的數位條目，不是本張 8 軌的 10 吋盤；兩個店面都沒有 8 軌版本的 collectionName。**不採為本張的 collectionId。**",
+    "src": "https://itunes.apple.com/search?term=%E3%81%B2%E3%81%B0%E3%82%8A%E3%81%AE%E6%B8%A1%E3%82%8A%E9%B3%A5%E3%81%A0%E3%82%88&country=jp&entity=album&limit=25"
+   },
+   {
+    "f": "MB 藝人頁分頁全列的 43 個 release-group 裡，**沒有第二筆與《ひばりの渡り鳥だよ》同名的 release-group**；Album 且 secondary-types 為空的 13 筆中，這張是 1960 年代前半最後一筆原盤，其後要到 1965 年《ステレオ 美空ひばりの花ステージ (第２集)》才再有一筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ebb2a572-3424-4e2c-b468-102c4308e4c3&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同名單曲 1961 年 12 月先出，四個月後這張 10 吋盤把它的 A 面放第一軌、B 面放最後一軌",
+   "1961 年的紅白她唱的就是這首〈ひばりの渡り鳥だよ〉——LP 是隔年春天才追上來的"
+  ],
+  "sound": "1962 年日本コロムビア 10 吋盤，八首股旅・道中物與港町題材的歌謡曲。三味線與尺八色彩混進歌謡樂團，節奏以二拍的道中調為主，〈車屋さん〉〈祭り花笠喧嘩旅〉一類帶祭囃子的輕快段落穿插其間。各軌未登錄長度，一面四首。",
+  "keyTracks": [
+   "ひばりの渡り鳥だよ",
+   "旅唄ざんげ",
+   "瀬戸の通い船",
+   "祭り花笠喧嘩旅"
+  ],
+  "yearVerified": "1962 ✓。MB first-release-date 1962-04、轄下 release 1962-04；日文維基 10 吋盤一覽記 1962 年 4 月 20 日 AL-349。**注意同名單曲是 1961 年 12 月 10 日**，Apple 那筆 2 軌條目又把日期標成 1961-01-01——三個 1961／1962 的日期分屬單曲、Apple 數位條目與本 LP，不可混用。",
+  "status": "thin",
+  "notes": "**thin。** 無專屬維基條目、Apple 只有同名 2 軌單曲（collectionId 295268729，jp，releaseDate 1961-01-01）**不是本盤、不採**。可用實料：10 吋 8 軌、Columbia AL-349、曲序、以及「同名單曲先行四個月、A1 與 B4 就是單曲兩面」這個對位。label 欄與查到的相符。**擋下策展層**：不得寫「唯一／最後一張」；MB 目錄裡 1962 年後到 1965 年之間沒有原盤，但那是 MB 收錄不全，不是事實。"
+ },
+ {
+  "key": "desc4:石川さゆり|あなたの私",
+  "artist": "石川さゆり",
+  "album": "あなたの私",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 338b8985 的欄位：title「あなたの私」、first-release-date **1975**（只到年）、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1975）。**這一筆的 artist-credit 名字寫的是羅馬字「Sayuri Ishikawa」**，但指向的藝人實體與漢字寫法完全同一個（MBID 4939764f，JP／Person）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/338b8985-45aa-4ed6-b82d-92bdfc23b87e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（01a7c294）的規格、廠牌與逐軌長度：**12 吋黑膠、12 軌**，Columbia／catno **ACE-7117**。A1〈あなたの私〉3:19、A2〈ともしび〉3:31、A3〈面影の君〉3:49、A4〈酒場にて〉3:14、A5〈昭和枯れすゝき〉4:35、A6〈心の手紙〉3:44／B1〈青い山脈〉3:28、B2〈ふたりの秘密〉3:00、B3〈心のこり〉3:35、B4〈ひと雨くれば〉3:10、B5〈夜の訪問者〉3:21、B6〈タ風〉3:40。**十二軌只有 A1 是她的同名新曲，其餘多是當時或戰後的既有流行曲**（〈青い山脈〉〈昭和枯れすゝき〉〈心のこり〉〈酒場にて〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=338b8985-45aa-4ed6-b82d-92bdfc23b87e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈石川さゆり〉的 LP 一覽記「**1975年9月1日 あなたの私 ACE-7117**」；同一條目的單曲表另記同名單曲〈あなたの私〉A 面發行日為 **1975 年 7 月 1 日**。**單曲先出兩個月，LP 隨後。** catno 與 MB 相符，MB 只登到年、維基給到日。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E3%81%95%E3%82%86%E3%82%8A"
+   },
+   {
+    "f": "MB 藝人查詢兩種寫法都跑過：query「石川さゆり」與 query「Sayuri Ishikawa」**都只回同一個藝人實體 4939764f（score 100）**，沒有第二個羅馬字專用的藝人實體。以 release-group?artist=4939764f&limit=100&offset= 分頁全列該實體名下 **158 個 release-group**，其中 primary-type=Album 且 secondary-types 為空的 56 筆依 first-release-date 排序，本張 1975《あなたの私》是最早一筆，其後為 1976-07-25《あいあい傘》、1976-11-25《365日恋もよう・花供養》、1978-07《火の国へ／砂になりたい》、1979-03-25《春一輪》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4939764f-0c93-42ad-bfc0-4f18431933f8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面，以「石川さゆり あなたの私」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 452654736，jp 與 us 都跑）攤開後也沒有 1970 年代的原盤。",
+    "src": "https://itunes.apple.com/search?term=%E7%9F%B3%E5%B7%9D%E3%81%95%E3%82%86%E3%82%8A%20%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E7%A7%81&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌只有第一軌是她自己的新曲，其餘十一軌是戰後到當年的既有流行曲",
+   "同名單曲七月出、LP 九月才跟上——盤名跟著單曲走，內容卻是一整張別人的歌"
+  ],
+  "sound": "1975 年日本コロムビア 12 吋盤，十二軌各三到四分半。同名新曲之外全是既有流行曲的重唱：〈青い山脈〉〈昭和枯れすゝき〉〈心のこり〉〈酒場にて〉〈ともしび〉。歌謡樂團編制，弦樂與電風琴鋪底，唱腔還在十七歲出道後的清亮位置，尚未走到 1980 年代那種壓低喉位的演歌唱法。",
+  "keyTracks": [
+   "あなたの私",
+   "昭和枯れすゝき",
+   "心のこり",
+   "青い山脈"
+  ],
+  "status": "partial",
+  "yearVerified": "1975 ✓。MB first-release-date 1975（無月日）、轄下 release 同；日文維基 LP 一覽記 1975 年 9 月 1 日 ACE-7117。**同名單曲是同年 7 月 1 日**，兩個日期不同物，行文若要寫月份要說清楚是 LP 的 9 月。",
+  "notes": "**裁定 187／189 實測結果：石川さゆり在 MB 裡是一個藝人實體（4939764f），漢字與羅馬字只是 artist-credit 的兩種書寫**——本張的 credit 寫「Sayuri Ishikawa」、同一目錄裡《春一輪》寫「石川さゆり」。用 query 兩種寫法搜藝人，回來的都是同一個 MBID，score 都 100；**沒有第二個羅馬字藝人實體，所以照 MBID 分頁就抓得全**（158 筆已全列）。**內容性質**：十二軌只有 A1 是本人新曲，其餘是既有流行曲重唱，屬「同名曲＋翻唱編成」的演歌 LP 常見形制——不是 secondary-types 標得出的 Compilation，但行文不可寫成「原創專輯」。label 欄與查到的 Columbia／ACE-7117 相符。Apple 無可用 collectionId。MB 第 12 軌寫〈タ風〉，字形上疑為〈夕風〉之誤，行文照 MB 保留原樣或避開該軌。"
+ },
+ {
+  "key": "desc4:石川さゆり|春一輪",
+  "artist": "石川さゆり",
+  "album": "春一輪",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 58ccef20 的欄位：title「春一輪」、artist-credit **「石川さゆり」（漢字寫法，藝人實體 4939764f 與《あなたの私》那筆的羅馬字 credit 同一個）**、first-release-date **1979-03-25**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1979-03-25）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/58ccef20-6a0f-41b4-b2d2-44c6c6995a30?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（d2463640）的規格與逐軌長度：**12 吋黑膠、12 軌**，Columbia／catno **AX-7200**。A1〈春一輪〉3:08、A2〈哀愁にふりむいて〉3:22、A3〈流氷〉3:31、A4〈美しいあなた〉3:33、A5〈待っててよかった〉2:57、A6〈風よつたえて〉3:52／B1〈季節の中で〉3:08、B2〈夢一夜〉4:15、B3〈いい日旅立ち〉4:08、B4〈飛んでイスタンブール〉3:16、B5〈かもめはかもめ〉4:21、B6〈青葉城恋唄〉3:52。**B 面六軌全部是 1978–79 年其他歌手的流行曲**（〈いい日旅立ち〉〈飛んでイスタンブール〉〈かもめはかもめ〉〈青葉城恋唄〉〈夢一夜〉），A 面則以同名新曲領頭。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=58ccef20-6a0f-41b4-b2d2-44c6c6995a30&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈石川さゆり〉的 LP 一覽記「**1979年3月25日 春一輪 AX-7200**」，**與 MB 的 first-release-date 逐日相符**；同一條目的單曲表記同名單曲〈春一輪〉A 面發行日為 1979 年 3 月 1 日，**單曲只早 LP 二十四天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E3%81%95%E3%82%86%E3%82%8A"
+   },
+   {
+    "f": "以 release-group?artist=4939764f&limit=100&offset= 分頁全列的 158 筆裡，Album 且 secondary-types 為空的 56 筆依日期排序，本張排第五（1975《あなたの私》→1976-07-25《あいあい傘》→1976-11-25《365日恋もよう・花供養》→1978-07《火の国へ／砂になりたい》→**1979-03-25《春一輪》**→1979-07《命燃やして》）。名下**沒有第二筆與《春一輪》同名的 release-group**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4939764f-0c93-42ad-bfc0-4f18431933f8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面，以「石川さゆり 春一輪」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 452654736）也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E7%9F%B3%E5%B7%9D%E3%81%95%E3%82%86%E3%82%8A%20%E6%98%A5%E4%B8%80%E8%BC%AA&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "B 面六軌全是 1978–79 年別人的暢銷曲，A 面才是她自己的新歌——一張盤把當年的歌謡榜整面翻過來",
+   "同名單曲三月一日出、LP 三月二十五日跟上：二十四天的時差"
+  ],
+  "sound": "1979 年日本コロムビア 12 吋盤。A 面以同名新曲〈春一輪〉起，走她這時期的抒情演歌路線；B 面整面翻唱 1978–79 年的流行曲，從谷村新司系的〈いい日旅立ち〉到庄野真代〈飛んでイスタンブール〉、研ナオコ〈かもめはかもめ〉。編制是弦樂加電子琴的歌謡樂團，兩面的曲風落差比同期演歌盤明顯。",
+  "keyTracks": [
+   "春一輪",
+   "いい日旅立ち",
+   "かもめはかもめ",
+   "青葉城恋唄"
+  ],
+  "status": "partial",
+  "yearVerified": "1979 ✓。MB first-release-date 1979-03-25、轄下 release 同日；日文維基 LP 一覽記 1979 年 3 月 25 日 AX-7200，**逐日相符**。同名單曲 1979 年 3 月 1 日為另一件事。",
+  "notes": "partial。有 MB 完整規格＋逐軌長度＋維基逐日對得上的發行日，但沒有專屬維基條目、Apple 兩店面皆查無。**內容性質**：B 面整面是他人流行曲的重唱，屬「同名曲＋當年暢銷曲翻唱」的編成，行文不可寫成整張原創。label 欄與查到的 Columbia／AX-7200 相符。**行文不得寫序數**：MB 目錄裡本張排第五，但 MB 收錄不全（維基 LP 一覽在 1974–1979 之間另有《おもいで・青い山脈》《ちいさな秘密》《霧のわかれ》《能登半島》《沈丁花》等多筆 MB 沒有），實際發行序不是第五。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:石川さゆり|波止場しぐれ",
+  "artist": "石川さゆり",
+  "album": "波止場しぐれ",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4fa0e714 的欄位：title「波止場しぐれ」、artist-credit「石川さゆり」（4939764f）、first-release-date **1985**（只到年）、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1985）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4fa0e714-e322-4481-a932-c1b1564fd605?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（2f7b021b）的規格與曲目：**12 吋黑膠、10 軌**，Columbia／catno **AF-7368**，各軌未登錄長度。A1〈ふたり傘〉A2〈紫陽花ばなし〉A3〈波止場しぐれ〉A4〈天気雨〉A5〈なごり雨〉／B1〈夕雨子〉B2〈雨の戻り橋〉B3〈石狩暮色〉B4〈三人づれ〉B5〈雨あがり〉。**十軌裡曲名帶「雨」字的有五軌**（天気雨、なごり雨、夕雨子、雨の戻り橋、雨あがり），另有〈紫陽花ばなし〉〈ふたり傘〉——整張以雨為串連。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4fa0e714-e322-4481-a932-c1b1564fd605&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈石川さゆり〉的 LP 一覽把這張的盤名記成「**波止場しぐれ〜雨に咲く花物語〜**」（1985 年 8 月 21 日、AF-7368，同時列了 1985 年 CD 版 33C31-7598）——**維基版盤名帶副標「雨に咲く花物語」，正好對上曲目裡那五個「雨」**；MB 的 title 只有主標。catno 與 MB 相符，MB 只登到年、維基給到日。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E3%81%95%E3%82%86%E3%82%8A"
+   },
+   {
+    "f": "日文維基〈波止場しぐれ〉（單曲條目）：〈波止場しぐれ〉是 1985 年 7 月 21 日發行的單曲，發行元日本コロムビア，作詞吉岡治、作曲岡千秋、編曲斉藤恒夫，B 面〈夕雨子〉；infobox 的 Album 欄直接填「**波止場しぐれ〜雨に咲く花物語〜**」。條目並記這首以瀬戸内海・香川県小豆島的土庄港為舞台，1992 年在香川県小豆郡土庄町立了記念碑。**單曲的 A／B 兩面就是本盤的 A3 與 B1。**",
+    "src": "https://ja.wikipedia.org/wiki/%E6%B3%A2%E6%AD%A2%E5%A0%B4%E3%81%97%E3%81%90%E3%82%8C"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以盤名 search（entity=album），回來的只有他人條目——jp／us 都有 collectionId 6796824572「波止場しぐれ - Single」（artistName **Ganiyeok Trot Dabang**，releaseDate 2026-08-07，1 軌）與 1877818786「『北の波止場しぐれ』- Single」（同一藝人，2026-02-20）——**都不是石川さゆり，不採**。藝人頁目錄端點（artistId 452654736）沒有本盤。",
+    "src": "https://itunes.apple.com/search?term=%E6%B3%A2%E6%AD%A2%E5%A0%B4%E3%81%97%E3%81%90%E3%82%8C&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡五軌的曲名帶著雨；維基版盤名的副標就叫「雨に咲く花物語」",
+   "同名單曲的 A 面與 B 面，在這張盤上被拆成 A3 與 B1"
+  ],
+  "sound": "1985 年日本コロムビア 12 吋盤，十軌，一面五首。以雨與港町為單一意象串起整張：〈天気雨〉〈なごり雨〉〈夕雨子〉〈雨の戻り橋〉〈雨あがり〉。同名曲由吉岡治作詞、岡千秋作曲、斉藤恒夫編曲，是她 1980 年代中期那種壓低喉位、尾音拖長的演歌唱法。各軌未登錄長度。",
+  "keyTracks": [
+   "波止場しぐれ",
+   "夕雨子",
+   "雨の戻り橋",
+   "石狩暮色"
+  ],
+  "status": "partial",
+  "yearVerified": "1985 ✓。MB first-release-date 1985（無月日）、轄下 release 1985；日文維基 LP 一覽記 1985 年 8 月 21 日 AF-7368。同名單曲為同年 7 月 21 日（維基單曲條目），**LP 晚一個月**，兩個日期不可混用。",
+  "notes": "partial。**盤名兩說**：維基作《波止場しぐれ〜雨に咲く花物語〜》、MB 與卡片作《波止場しぐれ》；行文照卡片，但副標正好解釋了曲目為何五軌帶「雨」，可寫成「維基版盤名帶的副標」。單曲條目給了作詞／作曲／編曲與舞台（小豆島土庄港）、記念碑（1992 年土庄町）等實料。**Apple 兩店面的同名條目全是他人 2026 年的單曲（6796824572、1877818786，artistName Ganiyeok Trot Dabang），不是本人、不採。** label 欄與查到的 Columbia／AF-7368 相符。MB 各軌無長度。"
+ },
+ {
+  "key": "desc4:石川さゆり|天城越え",
+  "artist": "石川さゆり",
+  "album": "天城越え",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 518042be 的欄位：title「天城越え」、artist-credit「石川さゆり」（4939764f）、first-release-date **1986-09-21**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1986-09-21）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/518042be-c5ec-40ab-a16a-662c2cabb778?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（ef8f0b59）的規格與廠牌：**12 吋黑膠、12 軌**，label-info 為 **DENON／catno AF-7422**（不是 Columbia 本廠名義），各軌未登錄長度。A1〈お吉物語〉A2〈長崎物語〉A3〈湯島の白梅〉A4〈星の流れに〉A5〈おんなの宿〉A6〈矢切の渡し〉／B1〈夢芝居〉B2〈夢一夜〉B3〈北の螢〉B4〈魅せられて〉B5〈ジェラシー〉B6〈天城越え〉。**同名新曲被放在整張的最後一軌，前十一軌都是既有的歌謡曲**（〈星の流れに〉〈長崎物語〉〈矢切の渡し〉〈夢芝居〉〈魅せられて〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=518042be-c5ec-40ab-a16a-662c2cabb778&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈石川さゆり〉的 LP 一覽記「**1986年9月21日 天城越え LP AF-7422**」（同筆並列 1986 年 10 月 21 日的 CD 33CA-1123），**與 MB 的 first-release-date 逐日相符**；單曲表另記同名單曲〈天城越え〉A 面為 1986 年 7 月 21 日。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E3%81%95%E3%82%86%E3%82%8A"
+   },
+   {
+    "f": "日文維基〈天城越え (曲)〉：1986 年 7 月 21 日發行，發行元日本コロムビア，作詞吉岡治、作曲弦哲也，B 面〈隠れんぼ〉，擔任的 A&R 是日本コロムビア的中村一好；獲第 28 回日本レコード大賞金賞。條目記 1985 年吉岡治、弦哲也與桜庭伸幸三人在静岡県天城湯ケ島町（現・伊豆市）的溫泉旅館「白壁荘」住了兩晚寫成，是以伊豆半島天城山為舞台的ご当地ソング，歌詞裡的浄蓮の滝現場立有歌碑；製作意圖是在卡拉 OK 熱潮中做「只有石川唱得動、難度高的作品」。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E5%9F%8E%E8%B6%8A%E3%81%88_(%E6%9B%B2)"
+   },
+   {
+    "f": "Apple jp／us 兩個店面以「天城越え」search（entity=album），回來的全是卡拉 OK 伴唱與翻唱條目（歌っちゃ王 1512324790／1563906823／1895090930、キズナ 1470837996 的鋼琴翻彈、カラオケサウンド 1602180680）以及同名戲劇原聲（fox capture plan 6793047006，2026-08-05，25 軌），**沒有一筆是石川さゆり 1986 年的原盤，全部不採**。藝人頁目錄端點（artistId 452654736）也沒有本盤。",
+    "src": "https://itunes.apple.com/search?term=%E5%A4%A9%E5%9F%8E%E8%B6%8A%E3%81%88&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "同名新曲擺在整張的最後一軌，前面十一軌都是別人的老歌",
+   "作詞與作曲的人在天城湯ケ島的溫泉旅館住了兩晚，才把這首寫出來"
+  ],
+  "sound": "1986 年 DENON 名義的 12 吋盤，十二軌。前十一軌是戰前戰後到 1980 年代的既有歌謡曲重唱（〈星の流れに〉〈湯島の白梅〉〈矢切の渡し〉〈夢芝居〉〈魅せられて〉），最後一軌才是吉岡治作詞、弦哲也作曲的同名新曲。編制為弦樂與尺八色彩的歌謡樂團，同名曲刻意寫在高難度的音域上。各軌未登錄長度。",
+  "keyTracks": [
+   "天城越え",
+   "星の流れに",
+   "矢切の渡し",
+   "夢芝居"
+  ],
+  "status": "partial",
+  "yearVerified": "1986 ✓。MB first-release-date 1986-09-21、轄下 release 同日；日文維基 LP 一覽記 1986 年 9 月 21 日 AF-7422，**逐日相符**。同名單曲 1986 年 7 月 21 日、CD 版 1986 年 10 月 21 日為另兩件事。",
+  "notes": "partial。**label 欄要修正／補註**：卡片寫「日本コロムビア／DENON（catno AF-7422）」，MB 那筆 release 的 label-info **只有 DENON**（catno AF-7422）；單曲條目則記發行元為日本コロムビア。兩者並存合理（DENON 是日本コロムビア的廠牌），卡片寫法可用，但行文若只提一個，宜依 MB 寫 DENON。**內容性質**：同名新曲在最後一軌、前十一軌為既有曲重唱，行文不可寫成原創專輯。**日本レコード大賞金賞是頒給同名單曲（1986 年第 28 回）、不是頒給這張 LP**，行文不得把獎掛在專輯上。Apple 兩店面只有卡拉 OK／翻唱／同名戲劇原聲，無可用 collectionId。"
+ },
+ {
+  "key": "desc4:八代亜紀|演歌のすべて \"おんなの涙\"",
+  "artist": "八代亜紀",
+  "album": "演歌のすべて \"おんなの涙\"",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 35ae5df7 的欄位：title「演歌のすべて \"おんなの涙\"」、artist-credit「八代亜紀」（藝人實體 694ba29c，JP／Person）、first-release-date **1973-07-01**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1973-07-01）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/35ae5df7-caa2-4e69-9522-6fdc45623ef6?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（1e0efee5）的規格與曲目：**12 吋黑膠、12 軌**，Teichiku Records／catno **CF-34**，各軌未登錄長度。A1〈おんなの涙〉A2〈年上の女〉A3〈過去〉A4〈恋あざみ〉A5〈長崎はみなと町〉A6〈新宿ブルース〉／B1〈港町・涙町・別れ町〉B2〈ひとり花〉B3〈ひとり酒場で〉B4〈未練恋〉B5〈逢わずに愛して〉B6〈鴎の来る町〉。**曲名裡「町」出現四次、「ひとり」兩次、「恋」三次**，題材集中在盛り場與港町。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=35ae5df7-caa2-4e69-9522-6fdc45623ef6&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈八代亜紀〉的專輯表列「**1973年7月1日 おんなの涙**」——**盤名只寫《おんなの涙》、沒有「演歌のすべて」這段前綴**，但發行日與 MB 的 first-release-date 逐日相符。同表相鄰的是 1973 年 3 月 1 日《なみだ恋》、9 月 1 日《演歌ごころ》、10 月 25 日《女ごころ》、11 月 25 日《演歌の旅路》——**1973 一年之內她就出了五張以上的專輯**。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%85%AB%E4%BB%A3%E4%BA%9C%E7%B4%80"
+   },
+   {
+    "f": "同一條目記她的來歷：參加よみうりテレビ的選拔節目《全日本歌謡選手権》連續十週勝出成為總冠軍後唱片才開始賣動；**1973 年〈なみだ恋〉大賣**，其後〈しのび恋〉〈愛ひとすじ〉〈おんなの夢〉〈ともしび〉〈花水仙〉〈もう一度逢いたい〉〈おんな港町〉〈愛の終着駅〉等「唱女人心」的曲子接連走紅。本盤正落在〈なみだ恋〉之後四個月。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%85%AB%E4%BB%A3%E4%BA%9C%E7%B4%80"
+   },
+   {
+    "f": "以 release-group?artist=694ba29c&limit=100&offset= 全列八代亜紀名下 **23 個 release-group**，primary-type=Album 且 secondary-types 為空的只有 8 筆，依日期排序**本張 1973-07-01 是最早一筆**，其後為 1974-03《二人の旅路》、1975《池玲子がささやく・夜のムード歌謡》、1979《舟唄》；其餘 15 筆全部標了 Compilation。**MB 對她 1970 年代目錄的收錄極不完整**（維基專輯表同期還有十餘張）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=694ba29c-5b5f-46ae-ba19-0ad3b3c5b24f&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面，以「八代亜紀 演歌のすべて \"おんなの涙\"」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 103827518，jp 與 us）攤開後也沒有 1970 年代的原盤。",
+    "src": "https://itunes.apple.com/search?term=%E5%85%AB%E4%BB%A3%E4%BA%9C%E7%B4%80%20%E6%BC%94%E6%AD%8C%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌的曲名裡「町」出現四次——港町、涙町、別れ町，一張盤走完盛り場的地名",
+   "維基那張表把盤名只記成《おんなの涙》，前面的「演歌のすべて」在唱片公司那邊才有"
+  ],
+  "sound": "1973 年テイチク 12 吋盤，十二軌，A／B 面各六首。以〈おんなの涙〉領頭，走盛り場與港町題材的哀調演歌，〈新宿ブルース〉〈港町・涙町・別れ町〉一類的ブルース調與〈年上の女〉〈逢わずに愛して〉這種既有歌謡曲並置。歌謡樂團編制，薩克斯風與弦樂鋪底，她那把沙啞低沉的聲線在這時期已定型。各軌未登錄長度。",
+  "keyTracks": [
+   "おんなの涙",
+   "港町・涙町・別れ町",
+   "新宿ブルース",
+   "ひとり酒場で"
+  ],
+  "status": "thin",
+  "yearVerified": "1973 ✓。MB first-release-date 1973-07-01、轄下 release 同日；日文維基〈八代亜紀〉專輯表記 1973 年 7 月 1 日（盤名記作《おんなの涙》），**逐日相符**。",
+  "notes": "**thin。** 無專屬維基條目、Apple 兩店面查無、MB 逐軌無長度、也沒有製作人員資料。可用實料只有：規格（12 吋 12 軌）、テイチク CF-34、曲序與題材、發行日，以及她 1973 年的處境（〈なみだ恋〉走紅後四個月）。**盤名兩說**：維基作《おんなの涙》、MB 與卡片作《演歌のすべて \"おんなの涙\"》。**維基那張專輯表是以商業排行為收錄門檻的表格，表內的名次欄一律不採、不得寫入行文。** label 欄與查到的テイチク／CF-34 相符。Apple 無可用 collectionId。**行文不得寫序數**：MB 目錄裡本張是最早一筆，但 MB 對她的收錄不完整（1973 年 3 月《なみだ恋》就早於本盤），不是她的第一張。"
+ },
+ {
+  "key": "desc4:八代亜紀|舟唄",
+  "artist": "八代亜紀",
+  "album": "舟唄",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 77fceba3 的欄位：title「舟唄」、artist-credit「八代亜紀」（694ba29c）、first-release-date **1979**（只到年）、primary-type Album、secondary-types **空**。轄下 1 個 release（JP，**status 欄是 null、不是 Official**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/77fceba3-9a60-4af5-a2a7-087d263f282d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（61e01e1c）的規格與曲目：MB 登成 **12 吋黑膠、16 軌**（A1–A8／B1–B8），Teichiku Records／catno **GM-88**，各軌未登錄長度。A1〈舟唄〉A2〈夢追い酒〉A3〈みちづれ〉A4〈ひとり酒〉A5〈港夜景〉A6〈花と竜〉A7〈時には娼婦のように〉A8〈やすらぎ〉／B1〈北国の春〉B2〈あなたが欲しい〉B3〈すきま風〉B4〈昔の名前で出ています〉B5〈あいつ〉B6〈他人船〉B7〈くちなしの花〉B8〈涙の酒〉。**十六軌裡除同名曲外，多數是 1977–79 年其他歌手的暢銷曲**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=77fceba3-9a60-4af5-a2a7-087d263f282d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈舟唄〉開宗明義寫：「『舟唄』は、**1979年5月25日に同日発売された、八代亜紀のシングルおよびアルバム（2枚組）の名称、および、両者に収録された表題曲**である」——**同名的單曲與 2 枚組專輯在 1979 年 5 月 25 日同日發行**。表題曲作詞阿久悠、作曲浜圭介，B 面〈長いプラットホーム〉，發行元テイチク，1979 年版長 3 分 54 秒、調性イ短調；2000 年以後的 CD 多改用降一個全音（変イ短調）、約 4 分 20 秒的慢速重錄版。",
+    "src": "https://ja.wikipedia.org/wiki/%E8%88%9F%E5%94%84"
+   },
+   {
+    "f": "同一條目：〈舟唄〉是**八代的第一首「男歌」**（以男性視角寫的歌），テイチク當年是衝著日本レコード大賞而推出；八代第一次聽到阿久悠的詞、只聽完第一句就直覺會紅。日文維基〈八代亜紀〉另記：〈舟唄〉與 1980 年〈雨の慕情〉、〈港町絶唱〉合稱阿久悠・浜圭介・竜崎孝路三人組的「哀憐三部作」，她並連兩年在 NHK 紅白歌合戦擔任大トリ。",
+    "src": "https://ja.wikipedia.org/wiki/%E8%88%9F%E5%94%84"
+   },
+   {
+    "f": "Apple jp 店面 search 查到的「舟唄」條目是 collectionId **1103116206**「スーパー・カップリング・シリーズ 舟唄 / なみだ恋 - EP」（artistName 八代亜紀，releaseDate 2016-04-27，4 軌）與一批歌っちゃ王的卡拉 OK 條目（1581084524、1620518844、1512071236）——**都不是 1979 年的原盤，全部不採**。us 店面同樣沒有原盤。",
+    "src": "https://itunes.apple.com/search?term=%E5%85%AB%E4%BB%A3%E4%BA%9C%E7%B4%80%20%E8%88%9F%E5%94%84&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "同名單曲與這張專輯在 1979 年 5 月 25 日同一天出，表題曲是她的第一首男歌",
+   "十六軌裡屬於她自己的只有開頭那首，其餘是那兩年別人的暢銷曲"
+  ],
+  "sound": "1979 年テイチク盤，十六軌。開頭是阿久悠作詞、浜圭介作曲的〈舟唄〉——她第一首以男性視角唱的歌，1979 年版イ短調、約三分五十四秒；其後十五軌是〈北国の春〉〈昔の名前で出ています〉〈くちなしの花〉〈時には娼婦のように〉這類同期暢銷曲的重唱。歌謡樂團編制，她的低音區與氣聲收尾是全盤的統一色。各軌未登錄長度。",
+  "keyTracks": [
+   "舟唄",
+   "北国の春",
+   "昔の名前で出ています",
+   "他人船"
+  ],
+  "status": "partial",
+  "yearVerified": "1979 ✓。MB first-release-date 1979（無月日）；日文維基〈舟唄〉記同名單曲與 2 枚組專輯**同在 1979 年 5 月 25 日**發行，日文維基〈八代亜紀〉的專輯表也列 1979 年 5 月 25 日《舟唄》。年份一致。",
+  "notes": "partial。**兩處要注意**：(1) **規格不一致**——維基兩處都寫「2 枚組」，MB 卻把它登成單片 12 吋、16 軌（A1–A8／B1–B8，一面八首），若真是 2 枚組應為四面各四首；MB 那筆 release 的 **status 欄還是 null（未標 Official）**。行文不宜斷言片數。(2) **內容是同名曲＋同期暢銷曲重唱的編成**，GM 開頭的番號在テイチク屬企劃盤系列，行文不可寫成原創專輯。**日本レコード大賞相關敘述只適用於同名單曲，不適用於這張盤。** 維基〈八代亜紀〉專輯表帶商業名次欄，一律不採。label 欄與查到的テイチク／GM-88 相符。Apple 無可用 collectionId（1103116206 是 2016 年的 EP、歌っちゃ王各筆是卡拉 OK）。"
+ },
+ {
+  "key": "desc4:森進一|森進一 女ごころを唄う",
+  "artist": "森進一",
+  "album": "森進一 女ごころを唄う",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e24087b9 的欄位：title「森進一 女ごころを唄う」、artist-credit「森進一」（藝人實體 1968db90，JP／Person）、first-release-date **1968-08-15**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1968-08-15）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e24087b9-c65b-485b-a754-ee5d49fbb55e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（ec719f75）的規格與曲目：**黑膠、12 軌**（MB 未細分 A／B 面，軌號 1–12），Victor／catno **SJX-4**，各軌未登錄長度。1〈恋のしずく〉2〈ゆうべの秘密〉3〈涙のかわくまで〉4〈小指の想い出〉5〈恋のシャロック〉6〈あなたのとりこ〉7〈虹色の湖〉8〈恍惚のブルース〉9〈淋しいから〉10〈あなたの時計〉11〈ウナ・セラ・ディ・東京〉12〈涙いろの恋〉。**十二軌全部是 1960 年代由女性歌手唱紅的既有曲**，由他以男聲重唱——盤名「女ごころを唄う」講的就是這件事。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e24087b9-c65b-485b-a754-ee5d49fbb55e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈森進一〉的 LP 一覽記「**1968年8月15日 森進一 女ごころを唄う LP SJX-4**」（並列 2008 年 10 月 1 日的 CD 化 VICL-63050），**與 MB 的 first-release-date 逐日相符**。同表前一筆是 1968 年 5 月 25 日《影を慕いて》（SJX-1），後一筆是 1969 年 12 月 5 日《無情の夢》（SJX-10）——**SJX 這條番號線就是他在ビクター的原盤序**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80"
+   },
+   {
+    "f": "同一條目記他這時期的定位：他與幾乎同時出道的**青江三奈一起被以「ため息路線」推出**；在美聲歌手為主流的當年，用沙啞聲唱女人心的出道方式被外界批為「ゲテモノ」「一発屋」。他本人不喜歡被稱為演歌歌手、自認是流行歌手。條目並記他自 1968 年第 19 回起連續入選 NHK 紅白歌合戦。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80"
+   },
+   {
+    "f": "以 release-group?artist=1968db90&limit=100&offset= 分頁全列森進一名下 **163 個 release-group**，其中 primary-type=Album 且 secondary-types 為空的 30 筆依日期排序，**本張 1968-08-15 是最早一筆**，其後為 1969-12-05《無情の夢》、1970-07-05《森進一のブルース》、1970-09-05《波止場女のブルース》、1971《演歌〜デビュー５周年記念》。（維基 LP 一覽另有 1968-05-25《影を慕いて》早於本盤，**MB 那筆不在 Album／空 st 之列**。）",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1968db90-74ec-4a67-bd20-8bc01c02a96b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面，以「森進一 森進一 女ごころを唄う」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 275368573，jp 與 us）攤開後也沒有 1960 年代的原盤。",
+    "src": "https://itunes.apple.com/search?term=%E6%A3%AE%E9%80%B2%E4%B8%80%20%E5%A5%B3%E3%81%94%E3%81%93%E3%82%8D%E3%82%92%E5%94%84%E3%81%86&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌全是女性歌手唱紅的歌，由一個男聲從頭唱到尾——盤名說的就是這件事",
+   "第八軌是〈恍惚のブルース〉：唱紅它的青江三奈，當年跟他被歸在同一條「ため息路線」上"
+  ],
+  "sound": "1968 年日本ビクター盤，十二軌，全部是 1960 年代女性歌手的既有曲：〈恋のしずく〉〈小指の想い出〉〈ゆうべの秘密〉〈虹色の湖〉〈恍惚のブルース〉〈ウナ・セラ・ディ・東京〉。歌謡樂團編制，他用出道時那把沙啞的低音去唱原本屬於女聲的旋律線，音域與情緒的落差就是這張盤的方法。各軌未登錄長度。",
+  "keyTracks": [
+   "恍惚のブルース",
+   "小指の想い出",
+   "ウナ・セラ・ディ・東京",
+   "恋のしずく"
+  ],
+  "status": "partial",
+  "yearVerified": "1968 ✓。MB first-release-date 1968-08-15、轄下 release 同日；日文維基〈森進一〉LP 一覽記 1968 年 8 月 15 日 SJX-4，**逐日相符**。",
+  "notes": "partial。有 MB 完整規格與曲序、維基逐日對得上的發行日與 catno、以及藝人條目給的「ため息路線」與同期評價；但沒有專屬維基條目、Apple 兩店面查無、逐軌無長度、無製作人員。**內容性質**：整張是女聲既有曲的男聲重唱，行文不可寫成原創專輯——但這正是盤名與企劃的重點，可以正面寫。label 欄與查到的 Victor／SJX-4 相符。**行文不得寫序數**：MB 目錄裡本張是 Album／空 st 的最早一筆，但維基 LP 一覽在它之前還有 1968-05-25《影を慕いて》（SJX-1），**不是他的第一張 LP**。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:森進一|森進一のブルース",
+  "artist": "森進一",
+  "album": "森進一のブルース",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cec44c76 的欄位：title「森進一のブルース」、artist-credit「森進一」（1968db90）、first-release-date **1970-07-05**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1970-07-05）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/cec44c76-4507-4c2c-8978-d37c0d880b55?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（d96ebd2e）的規格與曲目：**黑膠、12 軌**，Victor／catno **SJX-48**，各軌未登錄長度。1〈夜霧のブルース〉2〈恍惚のブルース〉3〈裏町人生〉4〈港町ブルース〉5〈男のブルース〉6〈星の流れに〉7〈白樺の小径〉8〈かりそめの恋〉9〈盛り場ブルース〉10〈雨の酒場で〉11〈東京ブルース〉12〈誰よりも君を愛す〉。**十二軌裡曲名帶「ブルース」的有六軌**；第 4 軌〈港町ブルース〉是他自己前一年的曲子，其餘多為戰後到 1960 年代的既有歌謡曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cec44c76-4507-4c2c-8978-d37c0d880b55&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈森進一〉的 LP 一覽記「**1970年7月5日 森進一のブルース LP SJX-48**」（並列 2005 年 3 月 9 日 CD 化 VICL-41183），**與 MB 的 first-release-date 逐日相符**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80"
+   },
+   {
+    "f": "同一條目關於本盤第 4 軌：〈港町ブルース〉是 1969 年 4 月 15 日發行的單曲（作詞深津武志、作曲猪俣公章、編曲森岡賢一郎），詞裡織入全國各地港町的地名；他以 22 歲之齡憑此曲獲第 11 回日本レコード大賞・最優秀歌唱賞，並在出場第二次的 1969 年第 20 回 NHK 紅白歌合戦擔任白組トリ。**這張以「ブルース」為題的選集，就是把這首之後一年的成果收進來。**",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「森進一 森進一のブルース」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 275368573）也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E6%A3%AE%E9%80%B2%E4%B8%80%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡有六軌的曲名帶著「ブルース」——夜霧、恍惚、港町、男、盛り場、東京",
+   "第四軌是他自己前一年的〈港町ブルース〉，前後包夾的都是戰後別人的歌"
+  ],
+  "sound": "1970 年日本ビクター盤，十二軌。以日本歌謡曲脈絡裡的「ブルース」為題編成：〈夜霧のブルース〉〈恍惚のブルース〉〈盛り場ブルース〉〈東京ブルース〉，中間放進他自己的〈港町ブルース〉，另有〈星の流れに〉〈裏町人生〉這類戰後流行曲。管樂與弦樂的歌謡樂團編制，他那把沙啞聲線在慢速三拍與四拍間拖長尾音。各軌未登錄長度。",
+  "keyTracks": [
+   "港町ブルース",
+   "夜霧のブルース",
+   "恍惚のブルース",
+   "星の流れに"
+  ],
+  "status": "partial",
+  "yearVerified": "1970 ✓。MB first-release-date 1970-07-05、轄下 release 同日；日文維基〈森進一〉LP 一覽記 1970 年 7 月 5 日 SJX-48，**逐日相符**。",
+  "notes": "partial。有 MB 規格曲序、維基逐日相符的發行日與 catno、以及〈港町ブルース〉的完整背景；缺專屬條目、Apple、逐軌長度與製作人員。**內容性質**：以「ブルース」為題的重唱編成（含他自己一首），行文不可寫成原創專輯。**日本レコード大賞最優秀歌唱賞是 1969 年頒給單曲〈港町ブルース〉，不是頒給這張盤。** label 欄與查到的 Victor／SJX-48 相符。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:森進一|輪廻",
+  "artist": "森進一",
+  "album": "輪廻",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f057df2f 的欄位：title「輪廻」、artist-credit「森進一」（1968db90）、first-release-date **1972-08-25**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1972-08-25）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f057df2f-6f11-4a1e-ae1b-d8c1857f43e0?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（952534b9）的規格與曲目：**黑膠、12 軌**，label-info 為 **JVC／catno SJX-107**（同一條 SJX 番號線，但 MB 這筆的廠牌欄寫 JVC 而非 Victor），各軌未登錄長度。1〈輪廻〉2〈少年の恋〉3〈恋日記〉4〈傷痕〉5〈あした〉6〈蝶の季節〉7〈旅路のはてに〉8〈汽笛〉9〈受身〉10〈親不知〉11〈出来ることなら〉12〈霧にむせぶ夕子〉。**十二軌的曲名沒有一首與他此前的暢銷曲重複**，是一整組為這張盤編成的曲目。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f057df2f-6f11-4a1e-ae1b-d8c1857f43e0&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈森進一〉的 LP 一覽把這張的盤名記成「**輪廻〜愛と哀しみのさすらい〜**」（1972 年 8 月 25 日、LP、SJX-107）——**維基版帶副標「愛と哀しみのさすらい」**，MB 的 title 只有主標；發行日與 catno 與 MB **逐日相符**。同表前一筆是 1971 年 12 月 5 日《再会》（SJX-83），後一筆是 1973 年 1 月 25 日《森進一物語〜ある歌手の限りなき道〜》（SJX-111）。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80"
+   },
+   {
+    "f": "以 release-group?artist=1968db90&limit=100&offset= 分頁全列的 163 筆裡，Album 且 secondary-types 為空的 30 筆依日期排序，本張排在 1971-12-05《再会》之後、1973-11-25《ベスト・コレクション》之前，是 1970 年代前半那段最後一張非精選的原盤。名下**沒有第二筆與《輪廻》同名的 release-group**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=1968db90-74ec-4a67-bd20-8bc01c02a96b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「森進一 輪廻」與單以盤名各查一次 search（entity=album），對得上的只有他人條目（jp 的 1820167316〈輪廻転生〉- Single，artistName 優里，2025-06-28）——**不是本盤、不採**；藝人頁目錄端點（artistId 275368573）也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E6%A3%AE%E9%80%B2%E4%B8%80%20%E8%BC%AA%E5%BB%BB&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌沒有一首是他既有的暢銷曲——在翻唱盤成群的 1972 年，這張整組是新編的",
+   "維基把盤名記全了：《輪廻〜愛と哀しみのさすらい〜》"
+  ],
+  "sound": "1972 年ビクター系（MB 廠牌欄作 JVC）盤，十二軌。曲名從〈輪廻〉〈傷痕〉〈受身〉〈親不知〉到〈霧にむせぶ夕子〉，是一組圍繞流離與宿命的自製曲目，不走同期演歌盤那種暢銷曲重唱路線。歌謡樂團編制，弦樂與管樂鋪底，他的沙啞聲線在中低音區推進。各軌未登錄長度。",
+  "keyTracks": [
+   "輪廻",
+   "霧にむせぶ夕子",
+   "親不知",
+   "旅路のはてに"
+  ],
+  "status": "partial",
+  "yearVerified": "1972 ✓。MB first-release-date 1972-08-25、轄下 release 同日；日文維基〈森進一〉LP 一覽記 1972 年 8 月 25 日 SJX-107，**逐日相符**。",
+  "notes": "partial。**盤名兩說**：維基作《輪廻〜愛と哀しみのさすらい〜》、MB 與卡片作《輪廻》，行文照卡片、副標可當一句實料。**label 欄**：卡片寫「日本ビクター／JVC（catno SJX-107）」，MB 那筆 release 的 label-info **只寫 JVC**；同一條 SJX 番號線在維基與 MB 其他筆是 Victor，卡片的並列寫法可用。**這張與同組其他幾張不同**：曲目沒有一首與他既有暢銷曲重複，是少數不走重唱編成的一張，但**查不到製作人員與錄音資料**，也沒有專屬維基條目、Apple 兩店面查無、逐軌無長度。**行文不得寫「唯一」**。"
+ },
+ {
+  "key": "desc4:森進一|悲しい歌が流行ります",
+  "artist": "森進一",
+  "album": "悲しい歌が流行ります",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bc1f1711 的欄位：title「悲しい歌が流行ります」、artist-credit「森進一」（1968db90）、first-release-date **1992-07-22**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1992-07-22）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/bc1f1711-569c-4c78-b909-888ed10e370d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（54f43859）的規格與曲目：**CD、12 軌**（本組唯一一張以 CD 為原始媒體的盤），Victor／catno **VICL-320**，各軌未登錄長度。1〈悲しい歌が流行ります〉2〈ゆうすげの恋〉3〈昭和流れうた〉4〈噂ばなし〉5〈人を恋うる唄〉6〈泣かせ雨〉7〈それは恋〉8〈京都去りがたし〉9〈十六夜舟〉10〈指輪〉11〈夢うつつ〉12〈冬のリヴィエラ〉。**第 11 軌〈夢うつつ〉正是同名單曲的 B 面**，第 12 軌〈冬のリヴィエラ〉則是他 1982 年的曲子。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bc1f1711-569c-4c78-b909-888ed10e370d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈森進一〉的單曲表記：第 82 張單曲**〈悲しい歌が流行ります〉1992 年 5 月 21 日發行（規格品番 VIDL-10246），作詞阿久悠、作曲三木たかし、編曲川村栄二；B 面〈夢うつつ〉編曲若草恵**。同條目的專輯表另記「**1992年7月22日 悲しい歌が流行ります VICL-320**」——**單曲先出兩個月、專輯隨後，且 MB 的專輯日期與維基逐日相符**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80"
+   },
+   {
+    "f": "同一條目關於末軌：〈冬のリヴィエラ〉是 1982 年 11 月 21 日發行的單曲，**作詞松本隆、作曲大瀧詠一（兩人都是はっぴいえんど 出身）、編曲前田憲男**；條目寫這首流行曲路線的作品替他開拓了與過去不同的新聽眾層。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「森進一 悲しい歌が流行ります」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 275368573）也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E6%82%B2%E3%81%97%E3%81%84%E6%AD%8C%E3%81%8C%E6%B5%81%E8%A1%8C%E3%82%8A%E3%81%BE%E3%81%99&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲是阿久悠寫詞、三木たかし作曲；壓軸那首則是松本隆與大瀧詠一十年前給他的歌",
+   "本組四十四張裡，這是少數一開始就以 CD 為原始媒體的盤"
+  ],
+  "sound": "1992 年日本ビクター CD 盤，十二軌。同名曲由阿久悠作詞、三木たかし作曲、川村栄二編曲；整張從〈昭和流れうた〉〈人を恋うる唄〉這類回望昭和的曲目，走到末軌松本隆作詞、大瀧詠一作曲的〈冬のリヴィエラ〉。編制已是 1990 年代的錄音室歌謡編曲，弦樂與電子鍵盤並用，他的聲線比 1960 年代厚重。各軌未登錄長度。",
+  "keyTracks": [
+   "悲しい歌が流行ります",
+   "冬のリヴィエラ",
+   "昭和流れうた",
+   "夢うつつ"
+  ],
+  "status": "partial",
+  "yearVerified": "1992 ✓。MB first-release-date 1992-07-22、轄下 release 同日；日文維基〈森進一〉專輯表記 1992 年 7 月 22 日 VICL-320，**逐日相符**。同名單曲為同年 5 月 21 日（VIDL-10246），兩個日期不可混用。",
+  "notes": "partial。有 MB 規格曲序、維基逐日相符的發行日與 catno、同名曲與末軌兩首的完整製作人員（阿久悠／三木たかし／川村栄二；松本隆／大瀧詠一／前田憲男）；缺專屬維基條目、Apple 兩店面查無、逐軌無長度、其餘十軌無製作人員。**單曲的 B 面〈夢うつつ〉收在本盤第 11 軌**，可寫。label 欄與查到的 Victor／VICL-320 相符。Apple 無可用 collectionId。**行文不得寫序數**（維基把單曲編為第 82 張，那是單曲序、不是專輯序）。"
+ },
+ {
+  "key": "desc4:島倉千代子|千代ちゃんの一日",
+  "artist": "島倉千代子",
+  "album": "千代ちゃんの一日",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5e967e71 的欄位：title「千代ちゃんの一日」、artist-credit「島倉千代子」（藝人實體 e5dd1991，JP／Person）、first-release-date **1958-08**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1958-08）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5e967e71-1fca-4cf2-9ea6-af3d281a06e2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（36d37253）的規格與曲目：**10 吋黑膠、8 軌**，Columbia／catno **AL-109**，無 barcode、各軌未登錄長度。A1〈思い出さん今日は〉A2〈忘れ得ぬ人〉A3〈お姉さんと呼んだ人〉A4〈北京の小鳥売り〉／B1〈初恋の人さようなら〉B2〈あの人いつ来るかしら〉B3〈娘仲乗さん〉B4〈明日になれば〉。**八首曲名有五首直接用「人」或第二人稱在講一個對象**（思い出さん、忘れ得ぬ人、お姉さんと呼んだ人、初恋の人、あの人）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5e967e71-1fca-4cf2-9ea6-af3d281a06e2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈島倉千代子〉的「オリジナル・アルバム」表記「**1958年8月 千代ちゃんの一日 LP AL-109**」，**年月與 MB 相符**。同表第一筆是 1958 年 5 月《島倉千代子歌謡アルバム》（AL-102），其後為 1959 年 2 月《千代子の悲恋物語》（AL-131）、1959 年 12 月《千代ちゃんの歌日記》（AL-183）、1960 年 6 月《千代ちゃんと私のうた》（AL-212）——**「千代ちゃん」系列在她的 10 吋盤上連做了好幾張**。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E5%80%89%E5%8D%83%E4%BB%A3%E5%AD%90"
+   },
+   {
+    "f": "同一條目的生平：1938 年 3 月 30 日生於品川区北品川，父為警察官；1945 年疏散到長野県松本市，途中打破水瓶割傷左手腕到手肘、縫了 47 針而免於截肢；1947 年回東京，為患小兒麻痺而無法當歌手的姐姐敏子立志出道，因左手負擔小而在鄰里樂團擔任手風琴手兼主唱。1949 年 3 月テイチク發行的童謡〈お山のお猿〉因誤植成「戸倉千代子」，**不算她的出道作**。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E5%80%89%E5%8D%83%E4%BB%A3%E5%AD%90"
+   },
+   {
+    "f": "以 release-group?artist=e5dd1991&limit=100&offset= 全列島倉千代子名下 **39 個 release-group**，Album 且 secondary-types 為空的 33 筆依日期排序，**本張 1958-08 是最早一筆**，其後為 1964-02《島倉千代子の花のステージ 第2集》、1969-09《すみだ川 - 東海林太郎を歌う》、1973-03《歌手生活二十周年記念 島倉千代子全集》、1973-07《九段の母 / 戦時の女性をうたう》。（維基原創專輯表在本盤前另有 1958-05《島倉千代子歌謡アルバム》，MB 未收。）",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e5dd1991-8e80-431d-80f1-4e58d14d0788&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「島倉千代子 千代ちゃんの一日」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（jp 的 Chiyoko Shimakura #103821545 與 島倉千代子 #584189439、us 同兩筆）攤開後也沒有 1950 年代的原盤。",
+    "src": "https://itunes.apple.com/search?term=%E5%B3%B6%E5%80%89%E5%8D%83%E4%BB%A3%E5%AD%90%20%E5%8D%83%E4%BB%A3%E3%81%A1%E3%82%83%E3%82%93%E3%81%AE%E4%B8%80%E6%97%A5&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "八首曲名裡有五首在對著一個人說話：思い出さん、忘れ得ぬ人、初恋の人、あの人",
+   "「千代ちゃん」不只是這張的盤名——之後的《千代ちゃんの歌日記》《千代ちゃんと私のうた》一路做下去"
+  ],
+  "sound": "1958 年日本コロムビア 10 吋單聲道盤，八首，一面四首。以少女視角的抒情歌謡為主，〈思い出さん今日は〉〈初恋の人さようなら〉這類第二人稱的告白式歌詞貫穿全盤，另有〈北京の小鳥売り〉〈娘仲乗さん〉這種異國與職業題材的小品。歌謡樂團編制，她二十歲上下那把細而直的高音是全盤的中心。各軌未登錄長度。",
+  "keyTracks": [
+   "思い出さん今日は",
+   "初恋の人さようなら",
+   "北京の小鳥売り",
+   "娘仲乗さん"
+  ],
+  "status": "thin",
+  "yearVerified": "1958 ✓。MB first-release-date 1958-08、轄下 release 1958-08；日文維基〈島倉千代子〉原創專輯表記 1958 年 8 月 AL-109，**年月相符**（兩處都沒有日）。",
+  "notes": "**thin。** 無專屬維基條目、Apple 兩店面查無、逐軌無長度、無製作人員。可用實料：10 吋 8 軌、Columbia AL-109、曲序與題材、以及「千代ちゃん」系列的延續；藝人條目給的少年時期（左手 47 針、為姐姐立志、1949 年誤植成「戸倉千代子」的童謡）可用來鋪陳，但那不是這張盤的內容，行文要分清。label 欄與查到的 Columbia／AL-109 相符。**擋下策展層／行文不得寫序數**：MB 目錄裡本張是最早一筆，但維基原創專輯表在它前面還有 1958 年 5 月《島倉千代子歌謡アルバム》（AL-102），**不是她的第一張 LP**。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:島倉千代子|すみだ川 - 東海林太郎を歌う",
+  "artist": "島倉千代子",
+  "album": "すみだ川 - 東海林太郎を歌う",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b769ad8c 的欄位：title「すみだ川 - 東海林太郎を歌う」、artist-credit「島倉千代子」（e5dd1991）、first-release-date **1969-09**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1969-09）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b769ad8c-c37e-4ade-bd9e-ee1979693003?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（942fbf0d）的規格與曲目：**12 吋黑膠、12 軌**，Columbia／catno **ALS-5099**，各軌未登錄長度。A1〈赤城の子守唄〉A2〈野崎小唄〉A3〈すみだ川〉A4〈国境の町〉A5〈むらさき小唄〉A6〈踏絵〉／B1〈名月赤城山〉B2〈お夏清十郎〉B3〈築地明石町〉B4〈上海の街角で〉B5〈城ヶ島夜〉B6〈お駒恋姿〉。**十二軌全部是東海林太郎在 1930 年代唱紅的曲目**（〈赤城の子守唄〉〈国境の町〉〈野崎小唄〉〈名月赤城山〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b769ad8c-c37e-4ade-bd9e-ee1979693003&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈島倉千代子〉把這張放在「**カバー・アルバム**」表（不是原創專輯表），記「**1969年9月1日 すみだ川〜島倉千代子 東海林太郎を歌う〜 LP ALS-5099**」，並列 1988 年 10 月 21 日 CD 28CA-2674 與 2014 年 10 月 22 日 COCP-38783。**維基版盤名帶完整副標，發行日精確到 1969 年 9 月 1 日**，catno 與 MB 相符。同表下一筆是 1971 年 9 月 25 日《服部メロディを歌う 夜のプラットホーム》（ALS-5163）——**「唱某位前輩的作品集」是她這條線上反覆做的企劃**。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E5%80%89%E5%8D%83%E4%BB%A3%E5%AD%90"
+   },
+   {
+    "f": "同一條目的單曲表另記她自己的〈すみだ川〉A 面發行日為 **1969 年 11 月 1 日**（作詞佐藤惣之助、作曲山田栄一），並記她以〈すみだ川〉出場 1969 年第 20 回 NHK 紅白歌合戦、1972 年第 23 回再唱一次。**單曲比這張 LP 晚兩個月**。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E5%80%89%E5%8D%83%E4%BB%A3%E5%AD%90"
+   },
+   {
+    "f": "日文維基〈東海林太郎〉：1898 年 12 月 11 日生於秋田県秋田市、1972 年 10 月 4 日歿於東京都立川市，流行歌歌手，先後在大日本雄辯會講談社レコード部、日本ポリドール蓄音機、テイチク、キングレコード等廠牌灌錄。**本盤致敬的對象在這張發行時（1969 年）仍在世，三年後過世。**",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E6%9E%97%E5%A4%AA%E9%83%8E"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「島倉千代子 すみだ川 - 東海林太郎を歌う」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E3%81%99%E3%81%BF%E3%81%A0%E5%B7%9D%20%E6%9D%B1%E6%B5%B7%E6%9E%97%E5%A4%AA%E9%83%8E%E3%82%92%E6%AD%8C%E3%81%86&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌全是東海林太郎 1930 年代唱紅的歌，而被致敬的人在這張出版時還在世",
+   "同名曲的單曲比這張 LP 晚兩個月才出——盤先走，單曲後到"
+  ],
+  "sound": "1969 年日本コロムビア 12 吋盤，十二軌。整張重唱東海林太郎的戰前流行歌：〈赤城の子守唄〉〈国境の町〉〈野崎小唄〉〈名月赤城山〉〈築地明石町〉。編曲是 1960 年代末的歌謡樂團手法（弦樂與管樂），把原本直立不動、字正腔圓的東海林唱腔換成她的女聲抒情線。各軌未登錄長度。",
+  "keyTracks": [
+   "すみだ川",
+   "赤城の子守唄",
+   "国境の町",
+   "名月赤城山"
+  ],
+  "status": "partial",
+  "yearVerified": "1969 ✓。MB first-release-date 1969-09、轄下 release 1969-09；日文維基カバー・アルバム表記 1969 年 9 月 1 日 ALS-5099。**同名單曲是同年 11 月 1 日**，晚於 LP，兩個日期不可混用。",
+  "notes": "partial。**盤名兩說**：維基作《すみだ川〜島倉千代子 東海林太郎を歌う〜》、MB 與卡片作《すみだ川 - 東海林太郎を歌う》。**性質明確**：維基把它歸在「カバー・アルバム」表，整張是東海林太郎作品的重唱——這不是 §4 要排除的「全曲集／ベスト」（不是自己舊作的彙編），可收，但行文必須寫成致敬／翻唱盤。致敬對象的生卒與廠牌來歷查得到（東海林太郎條目）。缺：專屬條目、Apple、逐軌長度、編曲者。label 欄與查到的 Columbia／ALS-5099 相符。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:島倉千代子|九段の母 / 戦時の女性をうたう",
+  "artist": "島倉千代子",
+  "album": "九段の母 / 戦時の女性をうたう",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2214e7c2 的欄位：title「九段の母 / 戦時の女性をうたう」、artist-credit「島倉千代子」（e5dd1991）、first-release-date **1973-07**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1973-07）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2214e7c2-c7b8-47fd-85b7-7208d342b8ef?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（d8ba5afa）的規格與曲目：**12 吋黑膠、12 軌**，Columbia／catno **ALS-5251**，各軌未登錄長度。A1〈九段の母〉A2〈皇国の母〉A3〈明日はお立ちか〉A4〈軍国舞扇〉A5〈夜霧の馬車〉A6〈愛国の花〉／B1〈ほんとにほんとに御苦労ね〉B2〈上海だより〉B3〈愛馬花嫁〉B4〈流沙の護り〉B5〈軍国子守唄〉B6〈軍国の母〉。**十二軌全部是戰前戰中的軍國歌謡與銃後歌**，其中〈軍国の母〉〈皇国の母〉〈軍国子守唄〉〈軍国舞扇〉四首的曲名直接把國策二字寫進去。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2214e7c2-c7b8-47fd-85b7-7208d342b8ef&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈島倉千代子〉把這張放在「**カバー・アルバム**」表，記「**1973年7月 戦時の女性をうたう〜九段の母〜 LP ALS-5251**」——**維基版把主副標對調（主標是「戦時の女性をうたう」、副標才是「九段の母」）**，年月與 catno 與 MB 相符。同表相鄰的是 1971 年 9 月《服部メロディを歌う 夜のプラットホーム》與 1974 年 4 月《柿の木坂の家〜島倉千代子 懐しのメロディをうたう〜》。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E5%80%89%E5%8D%83%E4%BB%A3%E5%AD%90"
+   },
+   {
+    "f": "日文維基〈九段の母〉：這是一首**軍國歌謡**，作詞石松秋二、作曲能代八郎，1939 年 4 月由テイチクレコード發行、塩まさる 演唱。歌詞寫戰死之子被祀於靖國神社、年邁的母親從鄉下上京參拜，母親不把喪子之痛說出口，只說被祀在這麼氣派的社裡太過惶恐；由男性的塩まさる 唱出這樣的內容，在當年打動士兵而大賣。戰後由二葉百合子的翻唱再度走紅。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B9%9D%E6%AE%B5%E3%81%AE%E6%AF%8D"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「島倉千代子 九段の母 / 戦時の女性をうたう」與單以盤名各查一次 search（entity=album），對得上的只有他人條目（jp 的 311747975《九段》，artistName 井上陽水，1998-03-18）——**不是本盤、不採**；藝人頁目錄端點也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E4%B9%9D%E6%AE%B5%E3%81%AE%E6%AF%8D%20%E5%B3%B6%E5%80%89%E5%8D%83%E4%BB%A3%E5%AD%90&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌全是戰前戰中的銃後歌，〈軍国の母〉〈皇国の母〉〈軍国子守唄〉〈軍国舞扇〉一路排下來——1973 年錄的",
+   "維基把主副標對調著記：那邊的主標是「戦時の女性をうたう」"
+  ],
+  "sound": "1973 年日本コロムビア 12 吋盤，十二軌。整張是戰前戰中軍國歌謡與銃後歌的重唱，從 1939 年的〈九段の母〉到〈愛国の花〉〈軍国の母〉〈ほんとにほんとに御苦労ね〉。以 1970 年代的歌謡樂團編制重錄，弦樂與管樂鋪底，她的高音抒情唱法把原本進行曲式的曲子拉成慢速的哀調。各軌未登錄長度。",
+  "keyTracks": [
+   "九段の母",
+   "愛国の花",
+   "軍国の母",
+   "ほんとにほんとに御苦労ね"
+  ],
+  "status": "partial",
+  "yearVerified": "1973 ✓。MB first-release-date 1973-07、轄下 release 1973-07；日文維基カバー・アルバム表記 1973 年 7 月 ALS-5251，**年月相符**（兩處都沒有日）。",
+  "notes": "partial。**盤名主副標兩說**：MB／卡片作《九段の母 / 戦時の女性をうたう》、維基作《戦時の女性をうたう〜九段の母〜》。**性質明確**：維基歸在「カバー・アルバム」表，是戰時歌謡的重唱企劃，不是自己舊作的彙編，§4 可收，但行文必須寫成翻唱／企劃盤。〈九段の母〉本身的來歷（1939 年テイチク、塩まさる、作詞石松秋二／作曲能代八郎、戰後二葉百合子翻唱）查得到。缺：專屬條目、Apple、逐軌長度、編曲者。label 欄與查到的 Columbia／ALS-5251 相符。**題材敏感**：這是軍國歌謡的重錄盤，行文須以史料語氣處理，不作價值評斷。"
+ },
+ {
+  "key": "desc4:五木ひろし|流転",
+  "artist": "五木ひろし",
+  "album": "流転",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 97ff0e77 的欄位：title「流転」、artist-credit「五木ひろし」（藝人實體 7197f5ed，JP／Person）、first-release-date **1971-11**、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1971-11）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/97ff0e77-7a1f-4fd0-b8a6-283cfac96f1f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（45adf5cc）的規格、廠牌與逐軌長度：**12 吋黑膠、12 軌**，**minoruphone／catno KC-7002**。MB 把兩面的**母盤號直接當成軌號前綴**——LS-237 面：1〈勘太郎月夜唄〉3:01、2〈名月赤城山〉4:05、3〈おしどり道中〉3:44、4〈一本刀土俵入り〉3:34、5〈沓掛時次郎〉3:22、6〈流転〉2:56；LS-238 面：1〈旅姿三人男〉3:39、2〈妻恋道中〉3:27、3〈次郎坊鴉〉3:32、4〈花の三度笠〉2:50、5〈涙を抱いた渡り鳥〉3:21、6〈旅笠道中〉3:08。**十二軌全部是戰前到戰後的股旅歌謡既有曲**，最短 2:50、最長 4:05。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=97ff0e77-7a1f-4fd0-b8a6-283cfac96f1f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈五木ひろし〉的「オリジナル・アルバム」編號清單把這張記成「**股旅歌謡アルバム 流転（1971年11月）**」——**維基版盤名前面帶著「股旅歌謡アルバム」這段類型標示**，年月與 MB 相符。同清單前兩筆是《よこはま・たそがれ》（1971 年）與《長崎・よこはま・みなと唄》（1971 年），後兩筆是《ぼくの新しい十二曲》（1972 年）與《心の歌アルバム ぼくの十二ヶ月》（1972 年 8 月）——**他 1971–72 年是一年出好幾張企劃盤的節奏**。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BA%94%E6%9C%A8%E3%81%B2%E3%82%8D%E3%81%97"
+   },
+   {
+    "f": "以 release-group?artist=7197f5ed&limit=100&offset= 全列五木ひろし名下 **28 個 release-group**，Album 且 secondary-types 為空的 11 筆依日期排序，**本張 1971-11 是最早一筆**，其後跳到 1978《ひろしとギター① ここに真実の詩がある》、1992-03-01《ひろしとギター⑨〜おしどり〜》。**MB 對他 1970 年代的收錄極不完整**（維基原創專輯清單同期另有十餘張）。他名下另有 2001-06-27《股旅》一筆——**同一題材他後來又做過一次**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7197f5ed-5167-4e73-8ee6-bebf18831fb2&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「五木ひろし 流転」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 193509312，jp 與 us）攤開後也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E4%BA%94%E6%9C%A8%E3%81%B2%E3%82%8D%E3%81%97%20%E6%B5%81%E8%BB%A2&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌全是股旅歌謡的老曲子——維基那份清單索性把類型寫進盤名：股旅歌謡アルバム",
+   "MB 把兩面的母盤號當成軌號用：LS-237 面六首、LS-238 面六首"
+  ],
+  "sound": "1971 年ミノルフォン 12 吋盤，十二軌，每面六首、各軌兩分五十秒到四分五秒。整張是股旅歌謡的既有曲重唱：〈勘太郎月夜唄〉〈名月赤城山〉〈沓掛時次郎〉〈旅笠道中〉〈妻恋道中〉。三味線與尺八混進歌謡樂團，節奏以道中調的二拍為主，他出道初期那把亮而穩的高音貫穿全盤。",
+  "keyTracks": [
+   "流転",
+   "名月赤城山",
+   "旅笠道中",
+   "沓掛時次郎"
+  ],
+  "status": "thin",
+  "yearVerified": "1971 ✓。MB first-release-date 1971-11、轄下 release 1971-11；日文維基〈五木ひろし〉原創專輯清單記「股旅歌謡アルバム 流転（1971年11月）」，**年月相符**（兩處都沒有日）。",
+  "notes": "**thin。** 無專屬維基條目、Apple 兩店面查無、無製作人員與錄音資料。可用實料：12 吋 12 軌與**逐軌長度**（本組 1970 年代盤裡少見有長度的一張）、ミノルフォン KC-7002、母盤號 LS-237／LS-238、十二首曲名與股旅題材、以及維基版盤名帶的類型標示。**內容性質**：整張是既有股旅歌謡的重唱企劃，不可寫成原創專輯。label 欄與查到的 minoruphone／KC-7002 相符。**行文不得寫序數**：MB 目錄裡是最早一筆，但維基清單在它前面還有《よこはま・たそがれ》《長崎・よこはま・みなと唄》兩張，不是他的第一張。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:細川たかし|望郷／民謡アルバム",
+  "artist": "細川たかし",
+  "album": "望郷／民謡アルバム",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f5ed8491 的欄位：title「望郷／民謡アルバム」、artist-credit「細川たかし」（藝人實體 9390d969，JP／Person）、first-release-date **1978**（只到年）、primary-type Album、secondary-types **空**、轄下 1 個 release（JP／Official／1978）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f5ed8491-6db7-4521-ba50-e89c0882ce05?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（e11f0ec3）的規格與曲目：**12 吋黑膠、10 軌**，Columbia／catno **AX-7195**，各軌未登錄長度。**MB 在每一首曲名後面直接標了該曲的出身縣名**——A1〈津軽じょんがら節 (青森)〉A2〈田原坂 (熊本)〉A3〈新相馬節 (福島)〉A4〈津軽山唄 (青森)〉A5〈よさこい節 (高知)〉／B1〈南部牛追い唄 (岩手)〉B2〈津軽弥三郎節 (青森)〉B3〈江差追分(前唄) (北海道)〉B4〈斉太郎節 (宮城)〉B5〈木曽節 (長野)〉。**十軌覆蓋八個道縣，青森一地就佔三軌**，且全部是民謡曲目、沒有一首歌謡曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f5ed8491-6db7-4521-ba50-e89c0882ce05&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "以 release-group?artist=9390d969&limit=100&offset= 全列細川たかし名下**只有 6 個 release-group**，其中 primary-type=Album 且 secondary-types 為空的 3 筆為：**1978 本張**、2010-08-04《芸道35周年記念アルバム 三橋美智貴 民謡のこころ》、2015-01-21《芸道40年記念 細川たかし全集 心のこり〜艶歌船》。**MB 對他的收錄近乎空白**（他 1975 年出道，名下只登了 6 筆），本張是這份目錄裡他最早的一筆。**2010 那張同樣是民謡題材**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9390d969-87d7-479b-9818-05918a67bfb4&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "日文維基〈細川たかし〉全文以「望郷」「民謡アルバム」「AX-7195」三組字串逐行掃過，**沒有任何一行提到這張盤**——他的條目沒有列出這個時期的 LP 目錄。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%B4%B0%E5%B7%9D%E3%81%9F%E3%81%8B%E3%81%97"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「細川たかし 望郷／民謡アルバム」與單以盤名各查一次 search（entity=album），對得上的只有他人條目（jp 的 1636814509《アルバム》，artistName 森七菜，2022-08-31）——**不是本盤、不採**；藝人頁目錄端點（artistId 103899257，jp 與 us）攤開後也沒有這張。",
+    "src": "https://itunes.apple.com/search?term=%E7%B4%B0%E5%B7%9D%E3%81%9F%E3%81%8B%E3%81%97%20%E6%B0%91%E8%AC%A1%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "MB 在每首曲名後面標了縣名：十軌走過八個道縣，光青森就佔三軌",
+   "整張沒有一首歌謡曲——出道第四年，他錄了一張全是民謡的盤"
+  ],
+  "sound": "1978 年日本コロムビア 12 吋盤，十軌，A 面五首、B 面五首，全部是各地民謡：〈津軽じょんがら節〉〈江差追分〉〈南部牛追い唄〉〈よさこい節〉〈木曽節〉。三味線、尺八、太鼓的民謡編制，唱法用的是民謡的こぶし與長音處理，與他同期的歌謡曲單曲是兩套發聲。各軌未登錄長度。",
+  "keyTracks": [
+   "津軽じょんがら節",
+   "江差追分",
+   "南部牛追い唄",
+   "木曽節"
+  ],
+  "status": "thin",
+  "yearVerified": "1978（僅 MB 單一來源）。MB first-release-date 1978（無月日）、轄下 release 1978。**日文維基〈細川たかし〉完全沒有列到這張盤，Apple 兩店面也查無——年份無法交叉驗證，只有 MB 一處。** 卡片年份與 MB 相同，但這是本組年份支撐最薄的一張。",
+  "notes": "**thin，而且是本組素材最少的一張。** 唯一的實料來源是 MB 那筆 release：規格（12 吋 10 軌）、Columbia AX-7195、十首曲名與 MB 附註的縣名。**維基查無、Apple 查無、無製作人員、無錄音資料、無逐軌長度、年份無第二來源。** 可寫的角度只有「全民謡的選曲」與「縣名分布」。label 欄與查到的 Columbia／AX-7195 相符。**行文不得寫序數與「唯一」**：MB 只收了他 6 筆，任何「第一張／唯一一張民謡盤」的說法都不成立（MB 自己另有 2010 年的民謡題材盤）。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:坂本冬美|祝い酒",
+  "artist": "坂本冬美",
+  "album": "祝い酒",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ebe4941e 的欄位：title「祝い酒」、artist-credit「坂本冬美」（藝人實體 12a9f509，JP／Person）、first-release-date **1988-04-29**、primary-type Album、secondary-types **空**。轄下 1 個 release（JP，**status 欄是 null、不是 Official**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ebe4941e-ed5c-40ae-ba51-d8a87ef020a1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "那筆 release（9a85866a）的規格、廠牌與逐軌長度：**CD、12 軌**，Toshiba Records／catno **CT32-5170**。1〈祝い酒〉4:07、2〈憂き世川〉4:28、3〈春の雨〉4:41、4〈帰りの連絡船〉4:03、5〈冬の蝶〉4:03、6〈北のおんな唄〉3:52、7〈花の勝負師〉3:56、8〈無錫旅情〉4:11、9〈雨あがり〉4:28、10〈しのび恋〉4:11、11〈人生いろいろ〉3:49、12〈角番〉4:03。**十二軌全部落在 3:49 到 4:41 之間**，第 4 軌〈帰りの連絡船〉正是同名單曲的 B 面。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ebe4941e-ed5c-40ae-ba51-d8a87ef020a1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈坂本冬美〉的專輯表把這張編為**第 3 號**，記「**祝い酒／1988年4月29日／CD CT32-5170／CT ZT28-5170**」。同表第 2 號是 1987 年 11 月 25 日《あばれ太鼓 〜無法一代入り〜》（CT32-5067），第 4 號是 1989 年 4 月 12 日《男の情話》。**MB 的 first-release-date 與維基的發行日、catno 逐日逐號相符。**",
+    "src": "https://ja.wikipedia.org/wiki/%E5%9D%82%E6%9C%AC%E5%86%AC%E7%BE%8E"
+   },
+   {
+    "f": "日文維基〈祝い酒〉（單曲條目）：〈祝い酒〉是坂本冬美的第 3 張單曲，**作詞たかたかし、作曲猪俣公章、編曲小杉仁三**，B 面〈帰りの連絡線〉（作詞池田充男、作曲猪俣公章、編曲小杉仁三），發行元東芝EMI，獲第 30 回日本レコード大賞・金賞（大賞提名）；她並以此曲首度出場 1988 年末的第 39 回 NHK 紅白歌合戦，之後在 2006 年第 57 回、2015 年第 66 回、2019 年第 70 回（以〈祝い酒〜祝!令和バージョン〜〉）又唱了三次。**該條目的 infobox 把單曲發行日寫成 1988 年 4 月 6 日、內文卻寫 4 月 26 日，同一頁自相矛盾。**",
+    "src": "https://ja.wikipedia.org/wiki/%E7%A5%9D%E3%81%84%E9%85%92"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「坂本冬美 祝い酒」與單以盤名各查一次 search（entity=album），**兩邊都沒有對得上的 collectionName**；藝人頁目錄端點（artistId 335459363，jp 與 us）攤開後也沒有 1988 年這張。",
+    "src": "https://itunes.apple.com/search?term=%E5%9D%82%E6%9C%AC%E5%86%AC%E7%BE%8E%20%E7%A5%9D%E3%81%84%E9%85%92&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌全部落在三分四十九秒到四分四十一秒之間——一張長度幾乎齊平的盤",
+   "同名曲由たかたかし作詞、猪俣公章作曲；她唱這首時出道還不到兩年"
+  ],
+  "sound": "1988 年東芝系（MB 廠牌欄作 Toshiba Records）CD 盤，十二軌，長度全在四分上下。同名曲由たかたかし作詞、猪俣公章作曲、小杉仁三編曲，是她出道初期那條「男歌」路線的代表；其餘曲目從〈憂き世川〉〈冬の蝶〉這類自家新曲，到〈無錫旅情〉〈人生いろいろ〉這種同期他人的歌謡曲。1980 年代末的錄音室演歌編制，弦樂與電子鍵盤鋪底。",
+  "keyTracks": [
+   "祝い酒",
+   "帰りの連絡船",
+   "人生いろいろ",
+   "無錫旅情"
+  ],
+  "status": "partial",
+  "yearVerified": "1988 ✓。MB first-release-date 1988-04-29、轄下 release 同日；日文維基〈坂本冬美〉專輯表記 1988 年 4 月 29 日 CT32-5170，**逐日逐號相符**。**同名單曲的日期在維基自相矛盾**（infobox 4 月 6 日、內文 4 月 26 日），行文提到單曲時**不要寫日期**、只寫 1988 年。",
+  "notes": "partial。有 MB 完整規格與**逐軌長度**、維基逐日相符的發行日與 catno、同名曲的完整製作人員（たかたかし／猪俣公章／小杉仁三）。缺：專輯本身無專屬條目、Apple 兩店面查無、其餘十一軌無製作人員。**序數**：維基專輯表把本作編為第 3 號、單曲條目也稱第 3 張單曲——這是單一來源的編號，行文若要用**要寫成「維基那份表把它編為第三張」而不是斷言**。**日本レコード大賞金賞頒給同名單曲、不是這張專輯。** MB 那筆 release 的 status 欄是 null。label 欄與查到的 Toshiba Records／CT32-5170 相符。Apple 無可用 collectionId。"
+ },
+ {
+  "key": "desc4:小林幸子|おもいで酒",
+  "artist": "小林幸子",
+  "album": "おもいで酒",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f0e98338 的欄位：title「おもいで酒」、artist-credit「小林幸子」（藝人實體 29b8b5ea，JP／Person）、first-release-date **1979-07-25**、primary-type Album、secondary-types **空**。**轄下有 3 個 release**：1979-07-25 的 JP 12 吋黑膠、2023-10-11 的 XW 數位、以及一筆無日期的 Pseudo-Release（羅馬字轉寫版《Omoidezake》）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f0e98338-3fc2-49af-9218-b4ff08046b99?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "原盤那筆 release（ec2995c5）：**12 吋黑膠、12 軌**，**WARNER‐PIONEER／catno L-10148W**，1979-07-25／JP／Official，各軌未登錄長度。2023-10-11 的數位版（293d4c43，Warner Music Japan，barcode 5054197823732）同樣 12 軌**並且有逐軌長度**：1〈おもいで酒〉3:49、2〈旅の終りに〉3:18、3〈津軽海峡冬景色〉3:55、4〈ひとり酒〉4:07、5〈涙の朝〉3:24、6〈カスマプゲ〉4:44、7〈夢追い酒〉3:58、8〈花街の母〉3:57、9〈北の宿から〉4:01、10〈酒と泪と男と女〉4:31、11〈みちづれ〉3:50、12〈北国の春〉4:03。**十二軌只有第一軌是她自己的曲子，其餘是同期其他歌手的暢銷曲。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f0e98338-3fc2-49af-9218-b4ff08046b99&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈小林幸子〉的專輯表記「**おもいで酒／1979年7月25日**」，**與 MB 的 first-release-date 逐日相符**；同表前一筆是 1978 年 6 月《春待ちれんげ草》、後一筆是 1979 年 11 月 28 日《幸子抄》。條目本文另記：1979 年〈おもいで酒〉靠有線放送慢慢傳開而大賣，她同年首度出場第 30 回 NHK 紅白歌合戦，並獲全日本有線放送大賞グランプリ與第 21 回日本レコード大賞最優秀歌唱賞。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9E%97%E5%B9%B8%E5%AD%90"
+   },
+   {
+    "f": "日文維基〈おもいで酒〉（單曲條目）：這是她的**第 28 張單曲**，1979 年 1 月 25 日由ワーナー・パイオニア發行，作詞高田直和、作曲梅谷忠洋，長 3 分 43 秒。**發售當初的表題曲其實是另一面的〈六時、七時、八時あなたは…〉；發售後〈おもいで酒〉在大阪的有線放送拿到綜合第一，才把封面與曲序換過來重新發售。**（藝人條目的註腳寫的是同一件事：〈おもいで酒〉原本是 B 面。）",
+    "src": "https://ja.wikipedia.org/wiki/%E3%81%8A%E3%82%82%E3%81%84%E3%81%A7%E9%85%92"
+   },
+   {
+    "f": "Apple jp 與 us 兩個店面以「小林幸子 おもいで酒」與單以盤名各查一次 search（entity=album），對得上的只有合唱企劃單曲（jp 的 561332968《究曲伝唱 最強カバー みちづれ/おもいで酒/矢切の渡し》，artistName 美空ひばり, 都 はるみ & 細川たかし，2012-09-26，3 軌）——**不是本盤、不採**；藝人頁目錄端點（artistId 103829961，jp 與 us）攤開後也沒有 1979 年的原盤。",
+    "src": "https://itunes.apple.com/search?term=%E5%B0%8F%E6%9E%97%E5%B9%B8%E5%AD%90%20%E3%81%8A%E3%82%82%E3%81%84%E3%81%A7%E9%85%92&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲原本是單曲的 B 面，靠大阪的有線放送翻上來，才被換到 A 面重新發售",
+   "十二軌只有開頭那首是她的，其餘十一軌是那三年間別人的暢銷曲"
+  ],
+  "sound": "1979 年ワーナー・パイオニア 12 吋盤，十二軌（2023 年數位版的長度落在 3:18 到 4:44）。開頭是高田直和作詞、梅谷忠洋作曲的〈おもいで酒〉，其後整面是 1975–79 年的暢銷曲重唱：〈津軽海峡冬景色〉〈北の宿から〉〈夢追い酒〉〈酒と泪と男と女〉〈みちづれ〉〈北国の春〉。歌謡樂團編制，弦樂與電子琴鋪底，她的高音在慢速三拍上拉長。",
+  "keyTracks": [
+   "おもいで酒",
+   "津軽海峡冬景色",
+   "北の宿から",
+   "カスマプゲ"
+  ],
+  "status": "partial",
+  "yearVerified": "1979 ✓。MB first-release-date 1979-07-25、原盤 release 同日；日文維基〈小林幸子〉專輯表記 1979 年 7 月 25 日，**逐日相符**。**同名單曲是同年 1 月 25 日**（單曲條目），比 LP 早半年，兩個日期不可混用。",
+  "notes": "partial。MB 有三筆 release（1979 原盤、2023 數位、羅馬字 Pseudo-Release），**逐軌長度只有 2023 數位版才有**，行文若引長度應說是後來的數位版。**內容性質**：十二軌只有第一軌是本人曲目，其餘為同期暢銷曲重唱，行文不可寫成原創專輯。單曲的 A／B 面對調故事是這張最好用的一段實料。**日本レコード大賞最優秀歌唱賞與有線放送大賞グランプリ都是頒給單曲、不是頒給這張 LP。** label 欄與查到的 WARNER‐PIONEER／L-10148W 相符（MB 那筆的廠牌名用的是半形連字號變體）。Apple 無可用 collectionId（561332968 是 2012 年三人合唱的企劃單曲）。"
+ }
+]

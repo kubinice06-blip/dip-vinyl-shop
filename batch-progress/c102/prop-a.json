@@ -1,0 +1,431 @@
+[
+ {
+  "artist": "菅野よう子",
+  "album": "マクロスプラス オリジナルサウンドトラック",
+  "year": 1994,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Victor（catno VICL-570）",
+  "why": "菅野よう子在光栄的遊戲配樂時期之後，第一次替動畫寫整張劇伴的作品，也是她與河森正治合作的起點。原盤 1994-10-21 由 Victor 以 VICL-570 發行，隔年 JVC 在美國以 JVC-1004-2、Demon Records 在英國以 DSCD-12 各發一版，2014 年 flying DOG 再以 VEAHD-10406 重出。池中菅野よう子只有一張（菅野よう子、シートベルツ《COWBOY BEBOP》1998，實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法都查過），也就是說她 1994–2014 這二十年的動畫目錄在池中整段空白，這張是該補的起點。",
+  "risk": "MB 的 artist-credit 是羅馬拼音「Yoko Kanno; Israel Philharmonic Orchestra」，與藝人實體名（菅野よう子）不同；卡片依 §0.5 與裁定第 11 條取通行名 菅野よう子，credit 變體與以色列愛樂進 queryAlias 與本欄。盤名的羅馬拼音是 Macross Plus Original Soundtrack，Apple jp 記成「MACROSS PLUS ORIGINAL SOUNDTRACK (with MEMBERS OF ISRAEL/ PHILHARMONIC ORCHESTRA)」collectionId 469332697（11 軌，releaseDate 1994-10-21，藝人頁 lookup id=272956503 撈到；search 用日文盤名查 jp 撈不到這一筆，是裁定第 166 條的形狀）。同系列另有 OST2 與 for fans only，盤名極近，去重要連 II／PLUS 尾綴一起比。MB 的 JP release catno 實測寫成 VICL‐570（U+2010），本欄改用 ASCII。",
+  "mbNote": "釘 release-group d35764b6-6b8a-35bd-9236-59ee55aec298。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「マクロスプラス オリジナルサウンドトラック」、artist-credit「Yoko Kanno; Israel Philharmonic Orchestra」、first-release-date 1994-10-21、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 2、US/Official 2、GB/Official 1）。刻意不釘：fc27ec5e-5cbd-37dd-b723-d0aadbf72298《マクロスプラス オリジナル・サウンドトラック2》（續集非本張）、0929a589-70af-33de-af94-ebbf725a0f45《MACROSS PLUS ORIGINAL SOUNDTRACK PLUS ~for fans only》（追加盤，非原盤）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45，用 release-group?artist=…&limit=100&offset= 分頁全列共 112 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；Macross Plus Original Soundtrack；MACROSS PLUS ORIGINAL SOUNDTRACK；Israel Philharmonic Orchestra",
+  "reissuedBy": "flying DOG（2014，VEAHD-10406）",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子",
+  "album": "天空のエスカフローネ オリジナルサウンドトラック",
+  "year": 1996,
+  "genres": [
+   "classical"
+  ],
+  "label": "Victor（catno VICL-769）",
+  "why": "《マクロスプラス》之後、《COWBOY BEBOP》之前的一張，也是菅野よう子第一次替 TV 系列從頭寫到尾的原聲盤；同一部作品她後來續出 OST 2、OST 3 與 lovers only，四張構成她 1996–97 年的主要產出。原盤 1996-06-05 由 Victor 以 VICL-769 發行。池中菅野よう子只有《COWBOY BEBOP》一張（實掃 seed_cards.json 全 14,424 列），這條線的 1990 年代前半整段沒有代表。",
+  "risk": "MB 只有一個 JP Official release，其餘三筆是 Pseudo-Release 與 MIYA RECORDS 的 TW 盜版（MICA-0197），下游判再發授權狀態時要照裁定第 43 條擋掉盜版那幾筆。盤名的羅馬拼音是 Tenkuu no Escaflowne Original Soundtrack；Apple jp 用英文盤名建檔——藝人頁 lookup（id=272956503）撈到「The Vision of Escaflowne (Original Soundtrack)」collectionId 491294074（16 軌，releaseDate 1996-05-22），用日文盤名搜 jp／us／gb／de／fr／ca／au 七個店面全部 0 筆，這正是裁定第 158 條「原文盤名對上英文建檔」的反面。Apple 的 1996-05-22 與 MB 的 1996-06-05 差半個月，依裁定第 77 條只當訊號。同一部另有 OST 2、OST 3、lovers only 與劇場版，盤名只差一個尾碼。",
+  "mbNote": "釘 release-group 425cb5dc-6f33-3f1b-a68a-4a9ba9288ae9。回問確認：title「天空のエスカフローネ オリジナルサウンドトラック」、artist-credit「菅野よう子」、first-release-date 1996-06-05、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 1、Bootleg 1、Pseudo-Release 2）。刻意不釘：5f228da6-0118-3749-8fd7-76d489869db0《天空のエスカフローネ オリジナルサウンドトラック 2》、42f2993f-b01a-343a-bd46-fb649aaeee55《同 3》（皆續集非本張）、10edde4c-5105-3548-a2f5-d7662ced3768《天空のエスカフローネ lovers only》（選輯型追加盤）、f3db2d1a-d3f9-3233-9fbf-71bb747bc923《劇場用アニメーション エスカフローネ オリジナル・サウンドトラック》（劇場版另一部作品）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；The Vision of Escaflowne Original Soundtrack；Tenkuu no Escaflowne",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子、シートベルツ",
+  "album": "COWBOY BEBOP Original Soundtrack 2: No Disc",
+  "year": 1998,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Victor（catno VICL-60202）",
+  "why": "《COWBOY BEBOP》三張原聲盤的第二張，1998-10-21 由 Victor 以 VICL-60202 發行；第一張 VICL-60129 已在池中（菅野よう子、シートベルツ《COWBOY BEBOP》1998，實掃 seed_cards.json 全 14,424 列），第三張《BLUE》VICL-60203 與本張同批補進本批。2012 年 flying DOG 以 VTCL-60327 重出，2015 年再發一次。掛名沿用池中既有那張卡的鍵「菅野よう子、シートベルツ」，與 MB 的 artist-credit 字串完全相同，不製造分裂鍵。",
+  "risk": "MB 轄下 7 個 release 有 3 筆是台灣與馬來西亞的盜版（長榮國際 A8-933、Music Factory T0088），依裁定第 43 條這些不算再發背書。2012 年 flying DOG 版把盤名改成「COWBOY BEBOP NO DISC オリジナルサウンドトラック２」（全形２），與本卡盤名字串零重疊，去重要兩種都比。Apple jp collectionId 489810535「Cowboy Bebop (Original Soundtrack 2) No Disc」，掛名記成「菅野よう子 & シートベルツ」（& 而非頓號）、releaseDate 1998-10-21，同一頁還列出 489780131（OST 1，池中已有）與 489778227（OST 3 Blue），三張盤名互為最強的假陽性。",
+  "mbNote": "釘 release-group 15895db2-b904-32e3-9333-e9a57574fc7c。回問確認：title「COWBOY BEBOP Original Soundtrack 2: No Disc」、artist-credit「菅野よう子、シートベルツ」、first-release-date 1998-10-21、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（JP/Official 3、TW/Bootleg 2、MY/Bootleg 1、Official 1）。刻意不釘：2fd0a042-8c07-3c57-9189-d158e0c1cde1《COWBOY BEBOP》（OST 1，池中已有）、fd97fbfc-aead-3084-ade2-4f0bf56fa6f4《COWBOY BEBOP: Vitaminless》（迷你盤）、c9b5a2f0-78b3-3f07-aca4-9b3fd1f26de8《Cowboy Bebop: CD-Box: Original Sound Track》（套裝）、5e8aba3f-4fd4-4171-beef-55ee91bb9c51《COWBOY BEBOP Soundtrack From The Netflix Series》（2021 影集版，另一部作品）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45；シートベルツ 實體 b5fb0f1a-2cd4-4759-9d80-648643f70c43。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；Seatbelts；菅野よう子 & シートベルツ；Cowboy Bebop (Original Soundtrack 2) No Disc；COWBOY BEBOP NO DISC オリジナルサウンドトラック2",
+  "reissuedBy": "flying DOG（2012，VTCL-60327）",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子、シートベルツ",
+  "album": "COWBOY BEBOP BLUE",
+  "year": 1999,
+  "genres": [
+   "jazz",
+   "blues"
+  ],
+  "label": "Victor（catno VICL-60203）",
+  "why": "《COWBOY BEBOP》TV 系列三張原聲盤的收尾之作，1999-05-01 由 Victor 以 VICL-60203 發行。池中這條線目前只有第一張（菅野よう子、シートベルツ《COWBOY BEBOP》1998，實掃 seed_cards.json 全 14,424 列），第二張《No Disc》與本張同批補進；三張補齊之後，菅野よう子最被引用的那套劇伴在池中才成套。",
+  "risk": "MB 轄下 8 個 release 裡有 4 筆是台灣盜版（長榮國際 A8-991、笙美 GGG-290、K-O Records KO-88150、MIYA MICA-0032），且盜版把盤名寫成「Cowboy Bebop: Blue」（帶冒號），與 MB 官方 release 的「COWBOY BEBOP BLUE」字串不同，去重兩種都要比。盤名只有一個常見英文字 BLUE，依裁定第 124 條這類短通名的子字串比對特別脆弱，配對時要看掛名與軌數。Apple jp collectionId 489778227「Cowboy Bebop (Original Soundtrack 3) Blue」，掛名「菅野よう子 & シートベルツ」、releaseDate 1999-05-01；注意 Apple 把它編為 Original Soundtrack 3、MB 與原盤沒有這個序號。",
+  "mbNote": "釘 release-group 0b654bae-a26c-3b7e-8ed0-acf3a97d4acf。回問確認：title「COWBOY BEBOP BLUE」、artist-credit「菅野よう子、シートベルツ」、first-release-date 1999-05-01、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（JP/Official 3、TW/Bootleg 4、XW/Official 1）。刻意不釘：d717a824-ecce-352c-b448-1deb02bd9309《Cowboy Bebop: Knockin' on Heaven's Door: Future Blues》（劇場版，另一部作品）、9143236f-f045-433e-be3b-a62f0f1bb417《The Real Folk Blues》與 4b7e365d-6a0a-4c4b-89a0-80781ed2743a《「Real Folk Blues」For these days》（2020 單曲，盤名含 Blues 是本張最像的假陽性）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；Seatbelts；Cowboy Bebop (Original Soundtrack 3) Blue；Cowboy Bebop: Blue",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子",
+  "album": "∀GUNDAM ORIGINAL SOUND TRACKS",
+  "year": 1999,
+  "genres": [
+   "classical"
+  ],
+  "label": "STARCHILD（catno KICA-473）",
+  "why": "菅野よう子唯一一次替富野由悠季的 Gundam 正傳寫劇伴，1999-07-23 由 STARCHILD 以 KICA-473 發行，同系列後續有 II（DIANNA & KIHEL）與 III（COCOA）；2020 年 SUNRISE Music Label 把三張整套重新發行並改名為《∀ガンダム Original Soundtrack I》。池中菅野よう子只有《COWBOY BEBOP》一張（實掃 seed_cards.json 全 14,424 列），Gundam 這條線池中則完全沒有原聲盤。",
+  "risk": "盤名的字首是全稱量詞符號 ∀（U+2200），任何 ASCII 正規化都會把它整個丟掉、剩下「GUNDAM ORIGINAL SOUND TRACKS」，與同名系列的其他盤幾乎無法區分——這是裁定第 49 條的變體，去重要連 ∀／Turn A／∀ガンダム 三種寫法一起比。Apple 的建檔完全是另一套：us 店面 collectionId 1522451466「TURN A GUNDAM (Original MoCon Picture Soundtrack I)」掛 Various Artists、releaseDate 1999-07-23（MoCon 是 Apple 那邊的錯字）；jp 藝人頁（id=272956503）只列得到 1522480080「∀ガンダム Original Soundtrack III - COCOA」，第一集在 jp 撈不到。掛名在 Apple 被記成 Various Artists，實際是菅野よう子單一作曲，卡片取作曲者掛名。",
+  "mbNote": "釘 release-group 9704795d-8992-4016-9a55-2d1260aaf30b。回問確認：title「∀GUNDAM ORIGINAL SOUND TRACKS」、artist-credit「菅野よう子」、first-release-date 1999-07-23、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 2〔STARCHILD KICA-473 與 2020 SUNRISE 版〕、Official 1、Pseudo-Release 1）。刻意不釘：1e63a2c6-58eb-4601-9f5e-7f3d8f0d84c1《∀GUNDAM ORIGINAL SOUND TRACKS II: DIANNA & KIHEL》與 40a14c9d-f71a-37b7-9fb4-61b2f6782db9《同 III: COCOA》（續集非本張）、3084c17e-cd95-3e09-b9b3-cec4037e47e5《∀ the concert》（Live）、52b9b3a4-51a3-4ae9-8372-abf0b06b27aa《劇場版∀ガンダム 地球光・月光蝶 Soundtracks》（劇場版另一部）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；Turn A Gundam Original Soundtrack；TURN A GUNDAM (Original Motion Picture Soundtrack I)；∀ガンダム Original Soundtrack I",
+  "reissuedBy": "SUNRISE Music Label（2020）",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子",
+  "album": "攻殻機動隊 STAND ALONE COMPLEX O.S.T.",
+  "year": 2003,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Victor（catno VICL-61051）",
+  "why": "菅野よう子接手《攻殻機動隊》影集版的第一張劇伴，2003-01-22 由 Victor 以 VICL-61051 發行，之後同系列出到 O.S.T. 4 與 Solid State Society，Bandai Entertainment 在美國以 25199 發行 O.S.T.+ 版。池中《攻殻機動隊》只有川井憲次 1995 年劇場版那一張（川井憲次《攻殻機動隊/オリジナル・サウンドトラック》），影集版這一整條線完全沒有；菅野よう子池中也只有《COWBOY BEBOP》一張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "同一部作品在池中已有川井憲次的劇場版原聲盤，盤名前四個字相同，去重要看清楚是「攻殻機動隊」還是「攻殻機動隊 STAND ALONE COMPLEX」。MB 轄下 11 筆 release 裡的 O.S.T.+ 是加曲版、與本張同一個 release-group，US 版 Bandai 25199 用的就是 O.S.T.+ 的標題——依裁定第 91 條，RG 標題與卡片盤名不必相等，本卡取 JP 原盤的 VICL-61051 標題。TW Bootleg 2 筆（Alion ALCA-8121）不算再發背書。Apple jp 藝人頁（id=272956503）列得出 O.S.T. 2（423769953）、O.S.T.+（423766251）、O.S.T.3（423771800）與 Solid State Society（423773033），唯獨第一張 O.S.T. 沒有；jp／us／gb／de／fr／ca／au 用原文盤名搜也只回這幾筆，固定試聽多半要退到 O.S.T.+ 或 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group 43a7c706-d3a0-37f8-b270-11a9a6ad9877。回問確認：title「攻殻機動隊 STAND ALONE COMPLEX O.S.T.」、artist-credit「菅野よう子」、first-release-date 2003-01-22、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（JP/Official 3、US/Official 2、DE/Official 1、GB/Official 1、TW/Bootleg 2、Pseudo-Release 2）。刻意不釘：63ced78f-cb6f-3f8a-a78b-28fb3097ec09《攻殻機動隊 STAND ALONE COMPLEX O.S.T. 2》、ad405857-06a3-3c67-a49b-bc3bb7e22a42《同 O.S.T. 3》、9a4dbddc-1532-4f8c-ba99-bea85260e4ea《同 O.S.T. 4 - Smooth in the Shell》（皆續集）、41f3c338-4d78-34bf-b7de-77db61e6d229《攻殻機動隊 STAND ALONE COMPLEX be Human》（角色曲集）、64fc2d81-cf78-3055-8c61-762bb40aa028《攻殻機動隊 STAND ALONE COMPLEX CD-BOX》（套裝）、eef47478-8515-44c1-9f63-191dcf607fa5《攻殻機動隊 superb music》（2021 精選，非原聲）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；Ghost in the Shell: Stand Alone Complex O.S.T.；Koukaku Kidoutai Stand Alone Complex",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子",
+  "album": "WOLF'S RAIN",
+  "year": 2003,
+  "genres": [
+   "classical",
+   "rock"
+  ],
+  "label": "Victor（catno VICL-61082）",
+  "why": "菅野よう子與《COWBOY BEBOP》的渡辺信一郎再度合作的作品，2003-03-29 由 Victor 以 VICL-61082 發行，隔年 Bandai Entertainment 在美國以 23999 發行、2005 年 Edel 在德國以 0158512ERE 發行，2015 年 Victor 又以 VEATP-32432 重出，是她少數在歐美都有正規發行的原聲盤。池中菅野よう子只有《COWBOY BEBOP》一張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "MB 的 release-group 標題用彎引號寫成「WOLF’S RAIN」（U+2019），卡片依裁定第 50 條（同一個盤名的兩種寫法，取通行的那一種）改用 ASCII 直引號，兩種寫法都要進去重比對。盤名的英文組合很常見：池中已有 31 筆盤名或掛名含 Wolf 的卡（Steppenwolf、Howlin' Wolf、Wolf Alice、Tyler, The Creator《Wolf》等），但沒有一筆是 WOLF'S RAIN，非撞卡。Apple jp collectionId 969906387「Wolf's Rain」掛 菅野よう子、releaseDate 2003-03-29；同一次搜尋還回了三筆與本張無關的《Wolf's Rain》單曲（93、The Real Frasier Crane），配對要看軌數。TW Bootleg 1 筆（K-O Records KO-88257）不算背書。",
+  "mbNote": "釘 release-group aa8d20f8-709a-3f4c-b531-b2c12da8c8d7。回問確認：title「WOLF’S RAIN」（MB 用 U+2019）、artist-credit「菅野よう子」、first-release-date 2003-03-29、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（JP/Official 1、US/Official 1、DE/Official 1、XW/Official 2、TW/Bootleg 1）。刻意不釘：57084d7c-27ac-3686-8e59-fd14ffe6f1b0《WOLF'S RAIN O.S.T. 2》（續集非本張）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；WOLF’S RAIN；Wolf's Rain Original Soundtrack；ウルフズレイン",
+  "reissuedBy": "Victor（2015，VEATP-32432）",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子",
+  "album": "マクロスF O.S.T.1 娘フロ。",
+  "year": 2008,
+  "genres": [
+   "pop",
+   "classical"
+  ],
+  "label": "flying DOG（catno VTCL-60060）",
+  "why": "菅野よう子第三度替 Macross 系列寫劇伴（前兩次是 1994 年《マクロスプラス》與 1995 年的續集盤），2008-06-04 由 flying DOG 以 VTCL-60060 發行，同年續出 O.S.T.2《娘トラ☆》與 VOCAL COLLECTION《娘たま♀》，2014 年再以 VEAHD-10183 重出。池中菅野よう子只有《COWBOY BEBOP》一張（實掃 seed_cards.json 全 14,424 列），Macross 這條線池中一張都沒有。",
+  "risk": "盤名混用片假名、拉丁字母與日文句號「。」，Apple 那邊則整個改成羅馬拼音：jp collectionId 469356626「MACROSS FRONTIER Original Soundtrack1 Nyan FRO.」（24 軌，releaseDate 2008-06-04），用日文盤名搜 jp 七個店面全 0 筆，是靠藝人頁 lookup（id=272956503）撈出來的——裁定第 158／166 條的雙重形狀。MB 轄下 5 筆有 3 筆是 Pseudo-Release，其中就用「Macross Frontier O.S.T.1 Nyan FRO.」這個拼寫，兩種寫法都要進去重。同系列的 O.S.T.2《娘トラ☆》盤名只差兩字。",
+  "mbNote": "釘 release-group daa7d240-d94a-322c-9110-9bab450f4dde。回問確認：title「マクロスF O.S.T.1 娘フロ。」、artist-credit「菅野よう子」、first-release-date 2008-06-04、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 2、Pseudo-Release 3）。刻意不釘：cc6e6c2d-e1bf-3677-92a0-766f948d2611《マクロスF O.S.T.2 娘トラ☆》（續集）、e4bf0c16-2f1e-37ac-944d-49b3f58c778c《マクロスF VOCAL COLLECTION 娘たま♀》（歌曲集，非原聲盤）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；MACROSS FRONTIER Original Soundtrack1 Nyan FRO.；Macross Frontier O.S.T.1 Nyan FRO.",
+  "reissuedBy": "flying DOG（2014，VEAHD-10183）",
+  "g": "a"
+ },
+ {
+  "artist": "菅野よう子",
+  "album": "残響のテロル オリジナル・サウンドトラック",
+  "year": 2014,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Aniplex（catno SVWC-70009）",
+  "why": "菅野よう子與渡辺信一郎的第三次合作，也是她 2010 年代最被引用的一張原聲盤，2014-07-09 由 Aniplex 同日發行日本盤（SVWC-70009 等四種編號）與韓國盤（S50437C，盤名作 Terror in Resonance）。池中菅野よう子只有《COWBOY BEBOP》一張（實掃 seed_cards.json 全 14,424 列），她 2010 年後的作品在池中完全沒有代表。",
+  "risk": "MB 的 release-group 標題把作品名括在「」裡（「残響のテロル」オリジナル・サウンドトラック），但轄下四個 release 有三個的標題就是不帶括號的「残響のテロル オリジナル・サウンドトラック」；卡片依裁定第 91 條取 release 的寫法，MB 的 RG 標題進 queryAlias。Apple jp collectionId 1537789392「残響のテロル オリジナル・サウンドトラック」掛 菅野よう子、releaseDate 2014-07-09，與卡片盤名逐字相同；同一頁還有 1537789877《残響のテロル オリジナル・サウンドトラック 2 -crystalized-》掛 Various Artists，是本張最像的假陽性。韓國盤盤名 Terror in Resonance 屬跨文字系統的第二種寫法，去重要一起比。",
+  "mbNote": "釘 release-group a65190c9-6b3c-4351-ae0a-b9e81c70e452。回問確認：title「「残響のテロル」オリジナル・サウンドトラック」、artist-credit「菅野よう子」、first-release-date 2014-07-09、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 3〔Aniplex ANXX00535B00Z、SVWC 70009、SVWC70009B00Z〕、KR/Official 1〔Aniplex S50437C，標題 Terror in Resonance〕）。刻意不釘：ff422c7a-729e-49f7-a1ee-86db822a212d《残響のテロル ORIGINAL SOUNDTRACK 2 -crystalized-》（續集非本張）。藝人 MBID 5ffb73c0-b739-4231-ba22-f8d361be1d45。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Kanno；「残響のテロル」オリジナル・サウンドトラック；Terror in Resonance；Zankyou no Terror",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "久石譲",
+  "album": "魔女の宅急便 サントラ音楽集",
+  "year": 1989,
+  "genres": [
+   "pop",
+   "classical"
+  ],
+  "label": "Animage（catno 32ATC-184）",
+  "why": "久石譲替宮崎駿寫的第四張原聲盤，1989-08-25 原盤由德間的 Animage 以 32ATC-184 發行、盤名只作《魔女の宅急便》，1996-11-21 STUDIO GHIBLI RECORDS 以 TKCA-71031 重出時才定名為《サントラ音楽集》，2004 年再以 TKCA-72742 發行一次，2013 年 Ponycanyon Korea 出韓國盤 PCKD-20216。池中久石譲已有 6 張（風の谷のナウシカ／天空の城ラピュタ／となりのトトロ／もののけ姫／千と千尋の神隠し／HANA-BI，實掃 seed_cards.json 全 14,424 列），另有一張掛「Joe Hisaishi 久石讓」的《Piano Stories》；宮崎駿系列在《ラピュタ》1986 與《もののけ姫》1997 之間只缺《魔女の宅急便》《紅の豚》兩張，這是其中之一。",
+  "risk": "池中同一位作曲家有兩個掛名鍵——「久石譲」（新字体，6 張）與「Joe Hisaishi 久石讓」（繁體讓，1 張），這是裁定第 49 條的分裂鍵形狀，本卡沿用張數較多、也是 MB 實體名的「久石譲」，不製造第三個鍵。盤名有三種：原盤《魔女の宅急便》、1996 再發《魔女の宅急便 サントラ音楽集》、英文《Kiki's Delivery Service》。Apple jp collectionId 667779054「魔女の宅急便 サントラ音楽集」掛 久石譲、releaseDate 記 2004-09-29（那是第三次發行的日期，依裁定第 77 條只當訊號、不當版本門檻）。TW Bootleg 1 筆（MIYA MICA-0487）不算再發背書。",
+  "mbNote": "釘 release-group f4206679-7c54-3e04-b573-453fdabc17de。回問確認：title「魔女の宅急便 サントラ音楽集」、artist-credit「久石譲」、first-release-date 1989-08-25、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release（JP/Official 3〔Animage 32ATC-184 1989、STUDIO GHIBLI RECORDS TKCA-71031 1996、TKCA-72742 2004〕、KR/Official 1、DZ/Official 1、MX/Official 1、TW/Bootleg 1、Pseudo-Release 2）。刻意不釘：b95354ac-229f-373b-8349-bd88e9abd41c《魔女の宅急便 イメージ・アルバム》（1989-04 形象專輯，非原聲盤）、6437a7bc-20bf-4ed7-ba69-c106f63d55a0《魔女の宅急便 ヴォーカル編 カラオケ》（卡拉OK盤）。藝人 MBID 44c64a30-1d58-49c5-b314-6e02fba49526，用 release-group?artist=…&limit=100&offset= 分頁全列共 266 個 RG（預設 25 筆的 browse 會漏掉九成）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Hisaishi；久石讓；魔女の宅急便；Kiki's Delivery Service；마녀배달부 키키",
+  "reissuedBy": "STUDIO GHIBLI RECORDS（1996，TKCA-71031）",
+  "g": "a"
+ },
+ {
+  "artist": "久石譲",
+  "album": "紅の豚 サウンドトラック",
+  "year": 1992,
+  "genres": [
+   "classical",
+   "jazz"
+  ],
+  "label": "Animage（catno TKCA-30596）",
+  "why": "久石譲替宮崎駿寫的第五張原聲盤，1992-07-25 原盤由 Animage 以 TKCA-30596 發行、盤名只作《紅の豚》，1997-05-21 STUDIO GHIBLI RECORDS 以 TKCA-71156 重出時定名為《紅の豚 サウンドトラック》。池中久石譲已有 6 張（風の谷のナウシカ／天空の城ラピュタ／となりのトトロ／もののけ姫／千と千尋の神隠し／HANA-BI，實掃 seed_cards.json 全 14,424 列），宮崎駿系列缺《魔女の宅急便》與本張兩塊，兩張同批補上之後 1984–2023 這條線才連得起來。",
+  "risk": "同一位作曲家在池中有「久石譲」與「Joe Hisaishi 久石讓」兩個鍵（裁定第 49 條的分裂鍵），本卡沿用 MB 實體名「久石譲」。盤名兩種寫法（原盤《紅の豚》／再發《紅の豚 サウンドトラック》）加英文《Porco Rosso》，去重三種都要比。Apple jp collectionId 667811530 的 collectionName 是「紅の豚 サウンドトラック - 飛ばねえ豚はただの豚だ!」——系列名與台詞副標串進同一個字串，正是裁定第 152 條那個會讓標題比對整組失準的形狀；releaseDate 記 1997-05-21（再發日）。",
+  "mbNote": "釘 release-group c51f5e25-f22d-37ba-a187-f8323f8e8110。回問確認：title「紅の豚 サウンドトラック」、artist-credit「久石譲」、first-release-date 1992-07-25、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（JP/Official 2〔Animage TKCA-30596 1992、STUDIO GHIBLI RECORDS TKCA-71156 1997〕、Official 2、Pseudo-Release 2、Bootleg 1）。刻意不釘：2996d7b1-6e7a-31af-b05a-d086dc1ed572《紅の豚: イメージアルバム》（1992-05 形象專輯，非原聲盤）。藝人 MBID 44c64a30-1d58-49c5-b314-6e02fba49526。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Hisaishi；久石讓；紅の豚；Porco Rosso；Kurenai no Buta",
+  "reissuedBy": "STUDIO GHIBLI RECORDS（1997，TKCA-71156）",
+  "g": "a"
+ },
+ {
+  "artist": "久石譲",
+  "album": "ハウルの動く城 サウンドトラック",
+  "year": 2004,
+  "genres": [
+   "classical"
+  ],
+  "label": "STUDIO GHIBLI RECORDS（catno TKCA-72775）",
+  "why": "久石譲替宮崎駿寫的第七張原聲盤，2004-11-19 由 STUDIO GHIBLI RECORDS 以 TKCA-72775 在日本發行，同日另出國際版《Howl's Moving Castle (Original Soundtrack)》，2004-12-15 Ponycanyon Korea 發韓國盤 PCKD-20167。池中久石譲已有 6 張（風の谷のナウシカ／天空の城ラピュタ／となりのトトロ／もののけ姫／千と千尋の神隠し／HANA-BI，實掃 seed_cards.json 全 14,424 列），2001 年《千と千尋》之後到 2023 年《君たちはどう生きるか》之間池中一張都沒有，本張是那段空白的第一塊。",
+  "risk": "同一位作曲家在池中有「久石譲」與「Joe Hisaishi 久石讓」兩個鍵（裁定第 49 條），本卡沿用 MB 實體名。盤名的英文寫法是 Howl's Moving Castle，去重要兩種都比；池中另有 10 筆盤名或掛名含 Howl 的卡（Howlin' Wolf 六張、Mogwai《The Hawk Is Howling》等），字串上很近但沒有一筆是本張。同一部作品另有《ハウルの動く城 イメージ交響組曲》（2004-01），是先行的交響組曲盤、不是原聲盤。Apple jp collectionId 668939082「ハウルの動く城 サウンドトラック」掛 久石譲、releaseDate 2004-11-19，與 MB 完全一致。TW Bootleg 2 筆（MIYA MICA-0376 與一筆無編號）不算再發背書。",
+  "mbNote": "釘 release-group 464c5f95-7877-3701-92a3-292de7cbe7c5。回問確認：title「ハウルの動く城 サウンドトラック」、artist-credit「久石譲」、first-release-date 2004-11-19、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（JP/Official 1〔TKCA-72775〕、XW/Official 1、KR/Official 1、TW/Bootleg 2、Pseudo-Release 2）。刻意不釘：85218db6-d726-3131-9424-b2283c3c7999《ハウルの動く城 イメージ交響組曲》（2004-01-21 交響組曲盤，非原聲）、1aa911a3-446e-4403-b89a-5951f58ab199《Hisaishi Meets Miyazaki Films》與 b0701a74-cce4-46f2-a392-72eadad32ef4《Hayao Miyazaki - Princess Mononoke / Spirited Away》（皆精選，非原聲）。藝人 MBID 44c64a30-1d58-49c5-b314-6e02fba49526（266 個 RG，分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Hisaishi；久石讓；Howl's Moving Castle (Original Soundtrack)；하울의 움직이는 성",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "久石譲",
+  "album": "崖の上のポニョ サウンドトラック",
+  "year": 2008,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "STUDIO GHIBLI RECORDS（catno TKCA-73340）",
+  "why": "久石譲替宮崎駿寫的第八張原聲盤，2008-07-16 由 STUDIO GHIBLI RECORDS 以 TKCA-73340 發行，同日另有國際版《Ponyo on the Cliff by the Sea Soundtrack》，同年 12 月香港 Forward 出 FW2065J、新加坡亦有正規發行。池中久石譲已有 6 張（風の谷のナウシカ／天空の城ラピュタ／となりのトトロ／もののけ姫／千と千尋の神隠し／HANA-BI，實掃 seed_cards.json 全 14,424 列），2001 年之後的宮崎駿作品在池中全數缺席。",
+  "risk": "MB 的 release-group 標題只作「崖の上のポニョ」，但同名的還有藤岡藤巻と大橋のぞみ 2007 年的主題曲單曲（Apple jp collectionId 283505074，標成 EP）——盤名完全相同、是兩張不同的唱片。卡片因此取 JP 官方 release 的完整標題《崖の上のポニョ サウンドトラック》（TKCA-73340），這與裁定第 45 條同型：原盤短名會指到別張碟時，取指得住的那個寫法；MB 的 RG 短標題進 queryAlias。Apple jp collectionId 669819819「崖の上のポニョ サウンドトラック」掛 久石譲、releaseDate 2008-07-16。同一位作曲家在池中有「久石譲」與「Joe Hisaishi 久石讓」兩個鍵。TW Bootleg 1 筆（MIYA MICA-0975）不算背書。",
+  "mbNote": "釘 release-group aef2b315-c613-36db-b147-5845096a151f。回問確認：title「崖の上のポニョ」（RG 用短標題）、artist-credit「久石譲」、first-release-date 2008-07-16、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release，其中 JP/Official 的 TKCA-73340 標題就是「崖の上のポニョ サウンドトラック」（依裁定第 91 條，RG 標題與卡片盤名不必相等）；另有 Official 1、HK/Official 1、SG/Official 1、TW/Bootleg 1、Pseudo-Release 2。刻意不釘：ff7e73c9-3141-3565-ba97-6637b7877a98《崖の上のポニョ イメージアルバム》（2008-03 形象專輯，非原聲盤）。藝人 MBID 44c64a30-1d58-49c5-b314-6e02fba49526。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Hisaishi；久石讓；崖の上のポニョ；Ponyo on the Cliff by the Sea Soundtrack；Gake no Ue no Ponyo",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "久石譲",
+  "album": "風立ちぬ サウンドトラック",
+  "year": 2013,
+  "genres": [
+   "classical"
+  ],
+  "label": "STUDIO GHIBLI RECORDS（catno TKCA-73920）",
+  "why": "久石譲替宮崎駿寫的第九張原聲盤，2013-07-17 由 STUDIO GHIBLI RECORDS 以 TKCA-73920 發行（另有 PSCD-2458 的雙編號版），法國同期發《Le Vent se lève》、韓國 2013 年亦有正規盤。池中久石譲已有 6 張（實掃 seed_cards.json 全 14,424 列），宮崎駿系列在池中的最後一張是 2001 年《千と千尋の神隠し》，本張與《君たちはどう生きるか》一起把 2013 與 2023 兩塊補上。",
+  "risk": "池中已有松田聖子 1981 年的《風立ちぬ》（pop／folk），盤名的前四個字完全相同、藝人不同，不是撞卡但任何只比盤名的去重都會誤報，這是裁定第 71 條「以盤名為主鍵掃一次」的正面用例。同一位作曲家在池中有「久石譲」與「Joe Hisaishi 久石讓」兩個鍵。MB 的 RG first-release-date 記 2013-07-16、轄下 JP release 記 2013-07-17（法國盤 07-16），Apple jp collectionId 669312749「風立ちぬ サウンドトラック」記 2013-07-17，一天的落差依裁定第 77 條只當訊號；本卡年份取 2013。另有 d3ccdaa6-c49d-434d-9da5-90c8acca70e6《風立ちぬ 音源》是另一個 release-group。",
+  "mbNote": "釘 release-group 9c06b4ab-6822-4456-8074-2a91150762e8。回問確認：title「風立ちぬ サウンドトラック」、artist-credit「久石譲」、first-release-date 2013-07-16、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（JP/Official 2〔TKCA-73920、PSCD-2458+TKCA-73920〕、FR/Official 1〔Le Vent se lève〕、Official 2、KR/Official 1、Pseudo-Release 2）。刻意不釘：d3ccdaa6-c49d-434d-9da5-90c8acca70e6《風立ちぬ 音源》（另一個編輯版本）、709010fd-d965-4989-9b2c-25fd4d3f09c7《スタジオジブリ「宮崎駿&久石譲」サントラBOX》（套裝精選）。藝人 MBID 44c64a30-1d58-49c5-b314-6e02fba49526。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Hisaishi；久石讓；The Wind Rises (Original Soundtrack)；Le Vent se lève；Kaze Tachinu",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "久石譲",
+  "album": "かぐや姫の物語 サウンドトラック",
+  "year": 2013,
+  "genres": [
+   "classical"
+  ],
+  "label": "STUDIO GHIBLI RECORDS（catno TKCA-74030）",
+  "why": "久石譲唯一一次替高畑勲寫的原聲盤，也是他在吉卜力體系內離開宮崎駿作品的一次，2013-11-20 由 STUDIO GHIBLI RECORDS 以 TKCA-74030 發行，同日另出國際版《The Tale of the Princess Kaguya》，2014 年 5 月 Ponycanyon Korea 發韓國盤 PCKD-20219。池中久石譲已有 6 張、全部是宮崎駿或北野武的片子（實掃 seed_cards.json 全 14,424 列），高畑勲這條線在池中沒有任何代表。",
+  "risk": "池中已有樂團「かぐや姫」的兩張卡（《かぐや姫さあど》1973、《三階建の詩》1974），掛名前三字與本張盤名前三字相同——是裁定第 71 條那種「掛名與盤名跨欄相似」的假陽性來源，實際不是撞卡。盤名的英文寫法 The Tale of the Princess Kaguya、韓文寫法 가구야 공주 이야기，去重要一起比。同一位作曲家在池中有「久石譲」與「Joe Hisaishi 久石讓」兩個鍵。Apple jp collectionId 738985972「かぐや姫の物語 サウンドトラック」掛 久石譲、releaseDate 2013-11-20，jp 用原文盤名搜只回這一筆，是本批命中最乾淨的一張。同一日另有 06cd47b4-7b53-4c1e-a980-fe9bc9cdf5ad《かぐや姫の物語 音源》。",
+  "mbNote": "釘 release-group f7fad1da-5601-43d6-9ffc-ccd09c44fdb8。回問確認：title「かぐや姫の物語 サウンドトラック」、artist-credit「久石譲」、first-release-date 2013-11-20、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 1〔TKCA-74030〕、XW/Official 1、KR/Official 1、JP/Pseudo-Release 1）。刻意不釘：06cd47b4-7b53-4c1e-a980-fe9bc9cdf5ad《かぐや姫の物語 音源》（同日另一個編輯版本）。藝人 MBID 44c64a30-1d58-49c5-b314-6e02fba49526。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Hisaishi；久石讓；The Tale of the Princess Kaguya；가구야 공주 이야기；Kaguyahime no Monogatari",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "久石譲",
+  "album": "君たちはどう生きるか サウンドトラック",
+  "year": 2023,
+  "genres": [
+   "classical"
+  ],
+  "label": "STUDIO GHIBLI RECORDS（catno TKCA-75200）",
+  "why": "久石譲替宮崎駿寫的第十張、也是目前最新的一張原聲盤，2023-08-09 由 STUDIO GHIBLI RECORDS 以 TKCA-75200 發行，同日出國際版《The Boy and the Heron (Original Soundtrack)》，2024-07-03 再以 TJJA-10063 出黑膠版。池中久石譲已有 6 張（實掃 seed_cards.json 全 14,424 列），最新的一張是 2001 年《千と千尋の神隠し》；本張補的是這條線的另一端。",
+  "risk": "盤名是一整句日文，Apple 與 MB 都同名（jp collectionId 1701720253「君たちはどう生きるか サウンドトラック」掛 久石譲、releaseDate 2023-08-09），但同名的還有米津玄師的主題曲單曲《地球儀》以及吉野源三郎同名小說的有聲書條目，搜尋時要看掛名。英文盤名 The Boy and the Heron 與日文盤名零重疊，跨文字系統的去重兩邊都要掃。同一位作曲家在池中有「久石譲」與「Joe Hisaishi 久石讓」兩個鍵。2024 年 TJJA-10063 那一筆是黑膠再發，年份仍取原盤 2023。",
+  "mbNote": "釘 release-group d706bb3a-65be-4ec0-9cac-d6f41e452ad5。回問確認：title「君たちはどう生きるか サウンドトラック」、artist-credit「久石譲」、first-release-date 2023-08-09、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（JP/Official 3〔TKCA-75200 兩筆、TJJA-10063 黑膠〕、XW/Official 2〔The Boy and the Heron〕、Pseudo-Release 2）。刻意不釘：ac75b658-009c-4743-aa29-c8823d01d2e8《Studio Ghibli: Anime Music》與 14974895-db97-4afe-a614-c0720ea032ee《Studio Ghibli Soundtracks》（皆精選，非原聲盤）。藝人 MBID 44c64a30-1d58-49c5-b314-6e02fba49526。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Hisaishi；久石讓；The Boy and the Heron (Original Soundtrack)；Kimitachi wa Dou Ikiru ka",
+  "reissuedBy": "STUDIO GHIBLI RECORDS（2024 黑膠，TJJA-10063）",
+  "g": "a"
+ },
+ {
+  "artist": "梶浦由記",
+  "album": "NOIR ORIGINAL SOUNDTRACK I",
+  "year": 2001,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Victor（catno VICL-60737）",
+  "why": "梶浦由記離開 See-Saw、開始以個人名義接動畫劇伴之後的第一套代表作，2001-06-21 由 Victor 以 VICL-60737 發行，同年 10 月續出 II、11 月出《blanc dans NOIR》；2004 年 Edel 在德國以 0157092ERE、2005 年 Geneon 在美國以 5317-2 各發一版，2014 年 Victor 再以同編號重出。池中梶浦由記一張都沒有（實掃 seed_cards.json 全 14,424 列，梶浦由記與 Kajiura 兩種寫法都查過，皆 0 筆），本張是這位作曲家在池中的第一張。",
+  "risk": "掛名兩種寫法：MB 實體名是日文「梶浦由記」，Apple 的藝人條目卻掛羅馬拼音 Yuki Kajiura（jp artistId 251013990），卡片依 §0.5 與裁定第 120 條取 MB 實體的日文寫法，羅馬拼音進 queryAlias。Apple jp collectionId 948526533，collectionName 記成「Noir  Original Soundtrack I」（大小寫不同、Noir 與 Original 之間兩個空格），artistName 記成「梶浦由記/ALI PROJECT/新居昭乃」——把合作歌手串進掛名，是裁定第 152 條那個形狀；releaseDate 2001-06-21 與 MB 一致。盤名只有 NOIR 一個常見詞，池中另有三張盤名含 noir 的卡（Carly Simon《Film Noir》、Anouar Brahem《Le pas du chat noir》、Barbara《L'Aigle noir》），子字串比對很容易誤中。",
+  "mbNote": "釘 release-group 2c954bd1-21ee-346e-96f9-0eeaf691f5f6。回問確認：title「NOIR ORIGINAL SOUNDTRACK I」、artist-credit「梶浦由記」、first-release-date 2001-06-21、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（JP/Official 3、XW/Official 1、DE/Official 1、US/Official 1、Pseudo-Release 2）。刻意不釘：84c451d8-5613-35a6-b417-a30a8bce1d31《NOIR ORIGINAL SOUNDTRACK II》（續集）、63ab1dc4-8703-397b-a53a-f1b67fb7a420《Original TV Animation NOIR blanc dans NOIR ～黒の中の白～》（追加盤）、cb8307ab-9cd3-46fd-9799-4bfa6a5a6089《The Works for Soundtrack》（2010 精選，非原聲）。藝人 MBID 67e344da-ec54-4e26-b2a4-8351d744a14c，用 release-group?artist=…&limit=100&offset= 分頁全列共 122 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuki Kajiura；Noir Original Soundtrack I；ノワール",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "梶浦由記",
+  "album": ".hack//SIGN Original Sound & Song Track 1",
+  "year": 2002,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Victor（catno VICL-60905）",
+  "why": "梶浦由記在《NOIR》之後接的第二套大型企劃，2002-07-24 由 Victor 以 VICL-60905 發行，同年 9 月續出第二張與《.hack//Liminality》、10 月出《.hack//EXTRA SOUNDTRACKS》；2003 年 Bandai Entertainment 在美國以 2217-CD、Edel 在德國以 0157152ERE 各發一版，兩地都把盤名改成 .hack//SIGN Original Soundtrack 1。池中梶浦由記一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "盤名帶兩個斜線與一個 &，字串正規化很容易把 //SIGN 壓成 sign，池中盤名含 sign 的卡有 22 張（Albert King《Born Under a Bad Sign》、Ace of Base《The Sign》等），子字串比對誤中率高，配對必須連 .hack 一起看。同一張碟在 MB 有三種標題寫法：JP 官方作「.hack//SIGN ORIGINAL SOUND & SONG TRACK 1」（全大寫）、XW 版用全形１、歐美版作「.hack//SIGN Original Soundtrack 1」；本卡取 RG 標題，三種都進 queryAlias。Apple jp collectionId 964743880「.hack//SIGN ORIGINAL SOUND & SONG TRACK1」掛 梶浦由記、releaseDate 2002-07-24；同一頁的 1342125343 是第二張。TW Bootleg 1 筆（Alion ALCA-8046）不算背書。",
+  "mbNote": "釘 release-group c922ca15-6828-4e8a-8312-48180b5bca77。回問確認：title「.hack//SIGN Original Sound & Song Track 1」、artist-credit「梶浦由記」、first-release-date 2002-07-24、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（JP/Official 2、XW/Official 1、US/Official 1、DE/Official 1、TW/Bootleg 1）。刻意不釘：ed3d13cf-183e-3300-aab5-f4dce256cc2b《.hack//SIGN Original Sound & Song Track 2》（續集）、eac2a470-d758-3fbe-a87e-f2e4be5d78e9《.hack//Liminality Original Soundtrack》（另一部作品）、192c3362-cd24-3867-9a33-89f44d96f4c8《.hack//EXTRA SOUNDTRACKS》（追加盤）。藝人 MBID 67e344da-ec54-4e26-b2a4-8351d744a14c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuki Kajiura；.hack//SIGN ORIGINAL SOUND & SONG TRACK1；.hack//SIGN Original Soundtrack 1；ドットハックサイン",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "梶浦由記",
+  "album": "MADLAX O.S.T.",
+  "year": 2004,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Victor（catno VICL-61319）",
+  "why": "《NOIR》的同一組製作班底三年後的作品，2004-07-21 由 Victor 以 VICL-61319 發行，同年 9 月出 O.S.T.2，2005 年 Geneon 在美國以 53222 發行、盤名改成 Madlax Original Soundtrack。這張與《NOIR》《エル・カザド》被視為同一條系列。池中梶浦由記一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "MB 的 RG 標題用縮寫 O.S.T.、美國版與 Apple 都用全稱 Original Soundtrack，兩種寫法在任何點號正規化下都會分岔。Apple jp collectionId 1554832043「Madlax Original Soundtrack」掛 梶浦由記、releaseDate 2004-07-21，是靠藝人頁 lookup（id=251013990）撈到的——用 MB 的原文盤名 MADLAX O.S.T. 搜 jp／us／gb／de／fr／ca／au 七個店面全部 0 筆（裁定第 166 條）。同一頁的 1554831992 是 O.S.T.2。TW Bootleg 1 筆（MIYA MICA-0282）不算背書。掛名 MB 用日文、Apple 藝人條目用 Yuki Kajiura。",
+  "mbNote": "釘 release-group 665584a4-619a-3004-af72-0f2b55e8b8ae。回問確認：title「MADLAX O.S.T.」、artist-credit「梶浦由記」、first-release-date 2004-07-21、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（JP/Official 1〔VICL-61319〕、US/Official 1〔Geneon 53222〕、TW/Bootleg 1）。刻意不釘：d8caeef4-fd8e-30bb-a68b-baf51836d1a8《MADLAX O.S.T.2》（續集非本張）。藝人 MBID 67e344da-ec54-4e26-b2a4-8351d744a14c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuki Kajiura；Madlax Original Soundtrack；マドラックス",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "梶浦由記",
+  "album": "the Garden of sinners -劇場版「空の境界」音楽集-",
+  "year": 2011,
+  "genres": [
+   "classical"
+  ],
+  "label": "Aniplex（catno SVWC-7749／7750）",
+  "why": "《空の境界》七部劇場版的劇伴，MB 上以七張分章 OST 建檔（2008-05 至 2009-12，Aniplex ANZB-2882 起），2011-03-02 Aniplex 以 SVWC-7749／7750 把整套整編成這張兩片裝音楽集。依裁定第 87 條，分卷出版不算一張碟；本批因此釘整編盤而非任一分章。這也是唯一在串流上取得到的形態（Apple jp 只有這一筆）。池中梶浦由記一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "MB 的 primary-type 是 Album、secondary-types 含 Compilation 與 Soundtrack；依 §5.6 明文與 c-90 裁定第 3 條，primary-type=Album 照一般 Album 寫法、exceptionReason 與 exceptionEvidenceUrls 留空。盤名混用英文、日文與「」括號，且以連字號 - 收尾（U+002D，非全形），Apple jp collectionId 1576617520 的 collectionName 逐字相同（18 軌，releaseDate 2011-03-02）。同一組作品另有 44286407-75c1-42d8-94f4-d4bd71f44632《The Garden of Sinners Collector's Edition》（2012），盤名英文部分幾乎相同。掛名 MB 用日文、Apple 藝人條目用 Yuki Kajiura。",
+  "mbNote": "釘 release-group 4aaf1dff-d38f-49db-a768-c88cddead478。回問確認：title「the Garden of sinners -劇場版「空の境界」音楽集-」、artist-credit「梶浦由記」、first-release-date 2011-03-02、primary-type Album、secondary-types [Compilation, Soundtrack]、轄下 2 個 release（JP/Official 1〔Aniplex SVWC-7749、SVWC-7750〕、Pseudo-Release 1）。刻意不釘：6364dcc9-9e8c-364d-90fc-741da60e6027《空の境界 「俯瞰風景」 Original Soundtrack》、30bee44a-0a1b-3c26-8745-9086922a4d68《同「殺人考察（前）」》、928127c4-08b5-335d-8dde-015663ee2b27《同「痛覚残留」》、1414f8e6-aff6-3168-bcde-b682fa3a50b7《同「伽藍の洞」》、1d6892f7-ac4a-3b2b-9001-de3919f887ed《同「矛盾螺旋」》、6fb39a27-56e1-451f-ad32-855509b39e1d《同「忘却録音」》、d4fbb9d7-7890-4442-b7ae-9dd6365d4bfc《同「殺人考察（後）」》（七張分章 OST，依第 87 條分卷不釘）、44286407-75c1-42d8-94f4-d4bd71f44632《The Garden of Sinners Collector's Edition》（2012 套裝）。藝人 MBID 67e344da-ec54-4e26-b2a4-8351d744a14c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuki Kajiura；The Garden of Sinners - Movie. Music Collection；空の境界 音楽集；Kara no Kyoukai",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "梶浦由記",
+  "album": "魔法少女まどか☆マギカ ORIGINAL SOUNDTRACK I",
+  "year": 2011,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Aniplex（catno ANZX-9124）",
+  "why": "梶浦由記 2010 年代最被引用的一套劇伴，2011-05-25 由 Aniplex 以 ANZX-9124 隨 Blu-ray 發行，同年 7 月與 9 月續出 II 與 III，2012-02-14 Aniplex of America 在加拿大以 AOA-1201L 發行國際版。池中梶浦由記一張都沒有（實掃 seed_cards.json 全 14,424 列，梶浦由記與 Kajiura 兩種寫法皆 0 筆），這條線在池中完全沒有代表。",
+  "risk": "盤名含全形星號☆，任何 \\p{L}\\p{N} 以外的字元都會被正規化掉，剩下「魔法少女まどかマギカ ORIGINAL SOUNDTRACK I」；羅馬拼音是 Puella Magi Madoka Magica Original Soundtrack I（加拿大盤用這個），兩種寫法都要掃。Apple jp 用原文盤名搜只回 1537801000《「魔法少女まどか☆マギカ」 Ultimate Best》與 1563447948《「魔法少女まどか☆マギカ」 Music Collection》（皆 Various Artists 的精選），梶浦由記藝人頁（id=251013990）48 張裡也沒有這三張分冊 OST——固定試聽多半要退到 YouTube 官方專輯播放清單，或依 §4 走人工核對過的 collectionId。同系列的 II、III 與劇場版 OST 盤名只差一個尾碼。",
+  "mbNote": "釘 release-group d786d2ac-e66a-4567-aa55-ef38bac1b2c2。回問確認：title「魔法少女まどか☆マギカ ORIGINAL SOUNDTRACK I」、artist-credit「梶浦由記」、first-release-date 2011-05-25、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（JP/Official 2〔Aniplex ANZX-9124、ANXX00330B00Z〕、CA/Official 1〔Aniplex AOA-1201L，標題 Puella Magi Madoka Magica Original Soundtrack I〕）。刻意不釘：d8da337e-0b42-4b56-a4a4-968f6a1531cf《魔法少女まどか☆マギカ ORIGINAL SOUNDTRACK II》、f116396c-b469-4a1f-853c-be4ba0c0b955《同 III》（續集）、a2bc5aa3-d7df-44ef-ade7-7a2c6e1aa44a《劇場版 魔法少女まどか☆マギカ ORIGINAL SOUNDTRACK》與 29d1f1ea-36d2-4668-9eb1-4f4be902539e《劇場版［新編］叛逆の物語》（劇場版另一部）、1ec7f1f2-07c8-47f0-8a97-43ba075c1d97《魔法少女まどか☆マギカ Music Collection》（精選，非原聲）。藝人 MBID 67e344da-ec54-4e26-b2a4-8351d744a14c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuki Kajiura；Puella Magi Madoka Magica Original Soundtrack I；Mahou Shoujo Madoka Magica",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "梶浦由記",
+  "album": "Fate/Zero Original Soundtrack I",
+  "year": 2012,
+  "genres": [
+   "classical"
+  ],
+  "label": "Aniplex（catno ANZX-9436／9437）",
+  "why": "梶浦由記與 TYPE-MOON 作品的第二次合作（第一次是《空の境界》七部劇場版），2012-03-07 由 Aniplex 以 ANZX-9436／9437 與 Drama CD 一起發行，2013-11-05 Aniplex of America 在加拿大以 AOA-2304B-DISC5 單獨發行原聲盤。池中梶浦由記一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "身分要小心：日本首發那一筆 release 的標題是《Fate/Zero Drama CD I & Original Soundtrack I》（與廣播劇同封），單獨標成 Original Soundtrack I 的是 2013 年加拿大盤；依裁定第 91 條 RG 標題與 release 標題不必相等，卡片取 RG 標題。盤名含斜線，Fate 又是常見詞——池中已有 12 筆盤名或掛名含 Fate 的卡（Nusrat Fateh Ali Khan 六張、Mercyful Fate 兩張、Fates Warning 兩張等），子字串比對誤中率高。Apple jp 只有 1576623062《Fate/Zero Original Soundtrack》（2017-09-20，69 軌），那是把 I 與 II 併在一起的後出版本，不是本張；用原文盤名搜 jp 撈不到 2012 年那一筆，固定試聽要走 YouTube 官方專輯播放清單或人工核對的 collectionId。",
+  "mbNote": "釘 release-group b8125dcc-bc9a-4ee7-8f49-4197fcc36a31。回問確認：title「Fate/Zero Original Soundtrack I」、artist-credit「梶浦由記」、first-release-date 2012-03-07、primary-type Album、secondary-types [Soundtrack]、轄下 2 個 release（JP/Official 1〔Aniplex ANZX-9436、ANZX-9437，標題 Fate/Zero Drama CD I & Original Soundtrack I〕、CA/Official 1〔Aniplex AOA-2304B-DISC5〕）。刻意不釘：ffde13e0-9442-497d-9488-84c00eaea246《Fate/Zero Original Soundtrack II》（續集非本張）。藝人 MBID 67e344da-ec54-4e26-b2a4-8351d744a14c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuki Kajiura；Fate/Zero Drama CD I & Original Soundtrack I；フェイト／ゼロ",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

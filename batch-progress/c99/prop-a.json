@@ -1,0 +1,432 @@
+[
+ {
+  "artist": "Franco & le TPOK Jazz",
+  "album": "Mario 2",
+  "year": 1985,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Sonodisc（catno SD 17，FR）",
+  "why": "Franco 與 T.P.O.K. Jazz 1985 年《Mario》的直接續篇，兩張是同一組敘事分成上下集發行，《Mario》被視為 Franco 晚期最廣為流通的一張。池中這位藝人現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Mario》(1985，王牌 hall)、《Francophonic: A Retrospective, Vol. 1 (1953-1980)》(2008)，另有與 Tabu Ley 合作的《Omona Wapi》(1985)；也就是說池裡有上集沒有下集。MB 的 release-group 7ec291b4 由 Sonodisc 1985 年在法國發行、編號 SD 17，與《Mario》同一發行體系（MB release 端點實查）。RetroAfric／Sterns 這條剛果倫巴的再版線在池中只到 Francophonic 第一集為止。",
+  "risk": "掛名寫法至少五種，全部實掃過池與 MB：Franco、Franco Luambo、Franco Luambo Makiadi、Franco & le TPOK Jazz、Franco and T.P.O.K. Jazz、Orchestre T.P.O.K. Jazz、OK Jazz、Le Prince Youlou et Le T.P.O.K. Jazz。MB 這筆的 artist-credit 是「Franco et son tout puissant T.P. O.K. Jazz」，與卡片採用的池中通行寫法「Franco & le TPOK Jazz」不同字串，去重要兩邊都比。盤名《Mario 2》是《Mario》的子字串反例（裁定第 162 條的形狀）：任何以子字串比對的腳本都會把《Mario 2》配到池中已有的《Mario》，兩張是不同碟。Apple 十六個店面（us gb fr ng za ci sn jm eg in cu mx co br de ca）全試過，查無《Mario 2》；fr 店面只有 collectionId 1059528503「Le grand maître Franco et son T.P.O.K. Jazz dans Mario (Souvenir... souvenir)」(1987) 與 us 389199096「Mario」/Franco Luambo(2010)，兩筆都是上集不是本張，不得配上。cu 店面回 HTTP 400（Apple 沒有古巴店面），本批一律略過。封面預估要走 CAA 或 Discogs，固定試聽預估 unavailable。",
+  "mbNote": "釘 release-group 7ec291b4-e80f-4b01-9fae-8ed06cbbab59。回問 release-group?inc=artist-credits+releases 確認：title「Mario 2」、artist-credit「Franco et son tout puissant T.P. O.K. Jazz」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 1 個 release（FR／Official，Sonodisc SD 17）。刻意不釘：a9bb119d-0330-48dd-be15-d792e3ee8fa5《Mario》(1985 上集，池中已有王牌卡)、7f84ae93-d885-4345-8cb0-7ce4ddec2378《Franco Et Le T.P. OK Jazz Presents Madilu System》(1985 同年同廠但不同碟)、fea3dce1-294a-3ad2-9460-63c0f73770b2《Francophonic》(2008 合輯，池中已有)。藝人 MBID：Franco 2bafab0b-b22f-44d7-a046-119fb1298a85，名下 36 個 release-group；OK Jazz 102046a0-945f-41da-a8e9-3655fcaea310，名下 30 個；Franco and T.P.O.K. Jazz e928178b-614f-4e23-8d4f-3f931e4ac1d7 只有 2 個。三個實體都用 release-group?artist=<MBID>&limit=100&offset= 分頁列完（裁定第 116 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Franco；Franco Luambo；Franco Luambo Makiadi；Franco and T.P.O.K. Jazz；Franco et son tout puissant T.P. O.K. Jazz；Orchestre T.P.O.K. Jazz；OK Jazz；TPOK Jazz",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Franco & le TPOK Jazz",
+  "album": "20ème Anniversaire 6 Juin 1956 - 6 Juin 1976, Volume 2",
+  "year": 1989,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "African（catno CD 50383，FR）",
+  "why": "樂團 1956 年 6 月 6 日成立、1976 年滿二十年時錄製的紀念系列第二集，MB 的 artist-credit 直接寫作「Franco & le TPOK Jazz」，與池中現有兩張同一寫法。池中這位藝人現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Mario》(1985)、《Francophonic: A Retrospective, Vol. 1 (1953-1980)》(2008)。Francophonic 那一套是 Sterns 2008 年做的回顧選輯，涵蓋 1953–1980；本張則是樂團自己在週年當口發行的錄音，補的是「當年怎麼流通」這一層，不是後世回顧。MB release 端點實查：1989 年 African 廠 CD 50383 於法國發行，Official。",
+  "risk": "盤名極長且與 Volume 1 只差尾綴，撞卡與釘位兩邊都危險：MB 另有 86ec2678-e1fd-4127-8416-13b62f4d8275《20ème Anniversaire / 6 Juin 1956 - 6 Juin 1976》(1976，Volume 1)，兩者標題互為子字串，短的那個會被長的包住（裁定第 162 條的鏡像）。掛名寫法查過 Franco、Franco Luambo、Franco Luambo Makiadi、Franco & le TPOK Jazz、Franco & le OK Jazz、Orchestre T.P.O.K. Jazz、OK Jazz 七種。年份兩說：MB first-release-date 記 1989（African CD 再版），錄音與初版是 1976 年的週年盤；卡單取 MB 首發年 1989，因為 Volume 2 的曲目編成本身出自 African 這一版，行文不得斷言 1976 年就有 Volume 2。Apple us 命中 collectionId 981590446「20ème Anniversaire: 1956 - 1976, Vol. 2」/Franco/1989，與本張同一版本；封面與固定試聽都可從這一筆取。cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 095aefbd-05c3-43d0-ba6b-4a0935c4411e。回問確認：title「20ème Anniversaire 6 Juin 1956 - 6 Juin 1976, Volume 2」、artist-credit「Franco & le TPOK Jazz」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（FR／Official，African CD 50383）。刻意不釘：86ec2678-e1fd-4127-8416-13b62f4d8275《20ème Anniversaire / 6 Juin 1956 - 6 Juin 1976》(1976 Volume 1，另一張碟)、7ec291b4-e80f-4b01-9fae-8ed06cbbab59《Mario 2》(本批另一張)、a9bb119d-0330-48dd-be15-d792e3ee8fa5《Mario》(池中已有)。藝人 MBID Franco 2bafab0b-b22f-44d7-a046-119fb1298a85，名下 36 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Franco；Franco Luambo；Franco & le OK Jazz；Franco and T.P.O.K. Jazz；OK Jazz；TPOK Jazz；20eme Anniversaire",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Tabu Ley Rochereau",
+  "album": "Muzina",
+  "year": 1994,
+  "genres": [
+   "world"
+  ],
+  "label": "Rounder（catno CD5059，US）",
+  "why": "Tabu Ley 1990 年代流亡歐美期間、由 Rounder 在美國發行的專輯，是他被國際市場當成在世大師重新引介的那一批之一。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Babeti Soukous》(1989)、《The Voice of Lightness: Congo Classics 1961-1977》(2007 回顧選輯)、以及與 Franco 合作的《Omona Wapi》(1985)；1990 年代之後的正規目錄池中一張都沒有，本張補的正是這個斷點。MB release 端點實查：1994 年 Rounder CD5059（US／Official），另有 2010 年 Tamasha Corporation Limited 的數位再發。",
+  "risk": "掛名寫法查過 Tabu Ley Rochereau、Rochereau、Tabu Ley、Pascal Tabu Ley、Seigneur Rochereau、Tabu Ley Rochereau & L’Orchestre Afrisa International 六種；MB 藝人實體只有 85a694a0 一個，另有 African Fiesta National 69784825 是他 1966–1969 帶的樂團、不是別名，張數要分開算。Apple us 命中 collectionId 1444064527「Muzina」/Tabu Ley Rochereau & L’Orchestre Afrisa International/1994，掛名比 MB 多帶樂團名，封面與固定試聽走這一筆；gb fr ng za ci sn jm eg in mx co br de ca 未再逐一比對即已命中 us，cu 店面回 HTTP 400。同名風險低：MB 名下 22 個 release-group 沒有第二筆《Muzina》。",
+  "mbNote": "釘 release-group 9935abe0-489a-365f-807b-979cce48555d。回問確認：title「Muzina」、artist-credit「Tabu Ley Rochereau」、first-release-date 1994、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official 與 ??／Official）。刻意不釘：5f4c836e-bc60-41e0-bf53-fc6cc187e50c《Babeti Soukous》(1989，池中已有)、0be5a861-9335-3907-83e9-105684b7c1a3《The Voice of Lightness: Congo Classics 1961-1977》(2007 合輯，池中已有)、f1344adc-3425-4b60-b7f6-e4c77e2f13f7《The Voice of Lightness, Volume 2》(2010 合輯，Apple 十六店面全查無、本批未收)、a58d8583-70c8-399a-a4f5-910d1810d028《Omona Wapi》(池中已有)。藝人 MBID 85a694a0-dde9-4d79-a3b5-11950be0f3de，名下 22 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rochereau；Tabu Ley；Pascal Tabu Ley；Seigneur Rochereau；Tabu Ley Rochereau & L’Orchestre Afrisa International",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Tabu Ley Rochereau",
+  "album": "Africa Worldwide: 35th Anniversary Album",
+  "year": 1996,
+  "genres": [
+   "world"
+  ],
+  "label": "Rounder（catno Rounder CD 5039，US）",
+  "why": "Tabu Ley 出道三十五週年時錄製的紀念專輯，同樣由 Rounder 在美國發行，與《Muzina》構成他 1990 年代美國發行的一組。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Babeti Soukous》(1989)、《The Voice of Lightness: Congo Classics 1961-1977》(2007)、《Omona Wapi》(1985，與 Franco)。這張補的是「本人在世時自己交出的紀念盤」，與池中那張後世回顧選輯是兩種東西。MB release 端點實查：1996 年 Rounder CD 5039，US／Official，僅此一筆 release。",
+  "risk": "MB 上有兩筆極近的 release-group：本張 88f11e11《Africa Worldwide: 35th Anniversary Album》與 d7e69cc7《Africa Worldwide》(1996)，兩者同年、標題互為子字串，是本張最像的假陽性，釘位務必用長標題那一筆。掛名寫法查過 Tabu Ley Rochereau、Rochereau、Tabu Ley、Seigneur Rochereau、Tabu Ley Rochereau & L’Orchestre Afrisa International。Apple us 命中 collectionId 1443763479「Africa Worldwide: 35th Anniversary Album」/Tabu Ley Rochereau & L’Orchestre Afrisa International/1996，封面與固定試聽走這一筆；cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 88f11e11-4169-3833-9376-335ed83efe27。回問確認：title「Africa Worldwide: 35th Anniversary Album」、artist-credit「Tabu Ley Rochereau」、first-release-date 1996、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official，Rounder CD 5039）。刻意不釘：d7e69cc7-39fe-3906-9b68-40f5c61316f0《Africa Worldwide》(1996 同年短標題，MB 重複建檔)、9935abe0-489a-365f-807b-979cce48555d《Muzina》(本批另一張)、f1344adc-3425-4b60-b7f6-e4c77e2f13f7《The Voice of Lightness, Volume 2》(2010 合輯)。藝人 MBID 85a694a0-dde9-4d79-a3b5-11950be0f3de，名下 22 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rochereau；Tabu Ley；Seigneur Rochereau；Africa Worldwide；Tabu Ley Rochereau & L’Orchestre Afrisa International",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Toumani Diabaté",
+  "album": "Djelika",
+  "year": 1995,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Hannibal（catno HNCD 1380，US）",
+  "why": "Toumani Diabaté 在 1988 年首張《Kaira》之後、1999 年《New Ancient Strings》之前的作品，由 Hannibal 發行，是他從獨奏走向與 Keletigui Diabaté、Basekou Kouyaté 等人合奏編制的轉向之作。池中這位藝人以兩種掛名共有 6 張（實掃 seed_cards.json 全 14,424 列）：本名 2 張《Kaira》(1988)、《The Mandé Variations》(2008)；掛名帶合作者或樂團的 4 張《New Ancient Strings》(1999，與 Ballaké Sissoko，王牌 hall)、《In the Heart of the Moon》(2005，與 Ali Farka Touré)、《Boulevard de l’Indépendance》(2006，Symmetric Orchestra)、《Toumani & Sidiki》(2014)。1990 年代這十年池中完全空白，本張正落在那一格。MB release 端點實查：1995 年 Hannibal HNCD 1380（US／Official）與同年一筆 Promotion。",
+  "risk": "掛名有帶／不帶變音符號兩種寫法（Toumani Diabaté／Toumani Diabate）、外加 Toumani Diabaté’s Symmetric Orchestra 這個另一個 MB 實體（ca8da504），三種都拿去實掃過池與 MB；queryAlias 填無變音符號版本。Apple us 命中 collectionId 1629188488「Djelika」/Toumani Diabate/1995，Apple 那邊掛名不帶變音符號，正是第 152 條附錄那個「拆到只剩 ASCII」有效的同一書寫系統變形情形。cu 店面回 HTTP 400。年份無分歧。",
+  "mbNote": "釘 release-group 7c9943f8-ad2b-366f-ac4b-e5a878140c7c。回問確認：title「Djelika」、artist-credit「Toumani Diabaté」、first-release-date 1995、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official Hannibal HNCD 1380、??／Promotion）。刻意不釘：2cb9b638-c7da-3896-92bc-5a1b4760a2eb《Kaira》(1988，池中已有)、646d5738-7220-3969-a247-53dd070d1ca1《The Mandé Variations》(2008，池中已有)、0155ecb3-66fd-3129-b912-d48c553f924e《Jarabi: The Best of Toumani Diabaté, Master of the Kora》(2001 合輯)、43331f52-bdd8-4850-b8db-137a9d4913e7《King of the Kora: An Introduction》(2009 合輯)、229156df-ee1e-3d0e-8804-08405dbc23bc《Songhai》(1988，artist-credit 是 Ketama, Toumani Diabaté & Danny Thompson，掛名不同)。藝人 MBID b96ba7e7-d882-409a-9825-ed3d6dbb437d，名下 26 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Toumani Diabate；Toumani Diabaté；Toumani Diabate Symmetric Orchestra",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Orchestra Baobab",
+  "album": "Tribute to Ndiouga Dieng",
+  "year": 2017,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "World Circuit（catno WCD092，GB／XW）",
+  "why": "樂團 2016 年主唱 Ndiouga Dieng 過世後、隔年由 World Circuit 發行的專輯，是他們與《Specialist in All Styles》《Made in Dakar》同一家廠牌的第三張復出期作品。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Pirates Choice》(1989)、《Specialist in All Styles》(2002)、《Made in Dakar》(2007)；2007 年之後的目錄池中全無，本張是他們最近一張正規專輯。MB release 端點實查：2017-03-31 XW／Official 與 2017 GB／Official（World Circuit WCD092）兩筆。",
+  "risk": "樂團掛名在 MB 上至少四種寫法，全部拿去實掃過：Orchestra Baobab、Orchestre Baobab、Orchestre baobab Gouye Guy de Dakar、Baobab - Gouye - Gui de Dakar；卡片採池中通行的 Orchestra Baobab。MB 另有五個同名不同實體的 Baobab（法國雷鬼團、日本民謠雙人組、德國爵士、法國嘻哈、1980 年代電子團），`artist:` 字串查詢會全部混進來（裁定第 20 條）。Apple us 命中 collectionId 1470997536「Tribute to Ndiouga Dieng」/Orchestra Baobab/2017，封面與固定試聽走這一筆；cu 店面回 HTTP 400。年份無分歧。",
+  "mbNote": "釘 release-group f99d9a5a-a3dd-4030-af22-5044b61ca085。回問確認：title「Tribute to Ndiouga Dieng」、artist-credit「Orchestra Baobab」、first-release-date 2017-03-31、primary-type Album、secondary-types 空、轄下 2 個 release（XW／Official、GB／Official World Circuit WCD092）。刻意不釘：aae359c3-de20-31e2-a157-3c5a1b747aeb《Pirates Choice》、fcb686e1-6e6b-37b9-b67d-54f8fc449c3f《Specialist in All Styles》、d2bb2b92-a7d0-368f-9e08-e32c4e074143《Made in Dakar》（三張池中都已有）、1d1b6019-b2a9-32d9-85cf-a791d7779b53《Bamba》(1993 合輯)、418bf1da-af35-423e-b51f-7dffa91a4abd《La belle époque, Vol. 3: 1973-1976》與 7de4ab16-c3b3-4a5b-9b9a-6b8260d62268《La belle époque, Vol. 2: 1973-1976》(2011 合輯系列)。藝人 MBID 30331c85-26d4-4daa-9f66-3075cac4c20b，名下 23 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Orchestre Baobab；Orchestre baobab Gouye Guy de Dakar；Baobab - Gouye - Gui de Dakar；Baobab Gouye Gui de Dakar",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Orchestra Baobab",
+  "album": "Mouhamadou Bamba",
+  "year": 1980,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Productions Jambaar（catno JM 5000）／Le Kiosque d’Orphée（catno KO/80.0704，FR）",
+  "why": "樂團 1980 年在達卡時期的專輯，掛名記在 Baobab-Gouye-Gui de Dakar 這個當年的正式團名下，屬他們 1970 年代末到 1980 年代初原盤時期的錄音，與池中那三張（1989 年 World Circuit 的《Pirates Choice》以及 2002／2007 的復出期）分屬兩個階段。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Pirates Choice》(1989)、《Specialist in All Styles》(2002)、《Made in Dakar》(2007)——都是他們被國際廠牌挖出來之後的版本，原盤期一張都沒有，本張補的是這一格。MB release 端點實查：1980 年 Productions Jambaar JM 5000／Le Kiosque d’Orphée KO/80.0704（FR／Official），另有 2020-01-31 Stern’s Africa 的數位再發（Official）。",
+  "risk": "掛名分裂是本張最大的坑：MB 這筆的 artist-credit 是「Baobab - Gouye - Gui de Dakar」，Apple 那筆掛在「Orchestra Baobab」名下、盤名卻寫成「Mouhamadou Bamba (feat. Orchestra Baobab)」，卡片採池中通行的 Orchestra Baobab、盤名取 MB 的《Mouhamadou Bamba》。四種寫法（Orchestra Baobab／Orchestre Baobab／Baobab-Gouye-Gui de Dakar／Orchestre baobab Gouye Guy de Dakar）都拿去實掃過池與 MB。Apple us 命中 collectionId 1486902404「Mouhamadou Bamba (feat. Orchestra Baobab)」/Orchestra Baobab/1980，封面與固定試聽走這一筆；cu 店面回 HTTP 400。2020 年 Stern’s Africa 那次再發在 MB 上標 Official（第 43／57 條的判定單位是這一次再發，這一次是有授權的），但卡單年份仍取 1980 原盤年。",
+  "mbNote": "釘 release-group 45273d46-a33d-41c1-a219-6536ec603bce。回問確認：title「Mouhamadou Bamba」、artist-credit「Baobab - Gouye - Gui de Dakar」、first-release-date 1980、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official Productions Jambaar JM 5000 ＋ Le Kiosque d’Orphée KO/80.0704、??／Official Stern’s Africa 2020）。刻意不釘：032b689e-d1e3-4cf5-a111-a76a9621b9c8《Viva Bawobab S1 / Si Bou Odja》(2020)、bcd3ba55-7e00-4e86-b2d4-05a21e67111f《Ken Dou Werente》(1983，Apple 十六店面全查無、本批未收)、b964c9e2-38cb-4b00-86c5-532d67117e9e《Bawobab 75》(1975)。藝人 MBID 30331c85-26d4-4daa-9f66-3075cac4c20b，名下 23 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Orchestre Baobab；Baobab-Gouye-Gui de Dakar；Baobab Gouye Gui de Dakar；Mouhamadou Bamba feat. Orchestra Baobab",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ali Farka Touré & Toumani Diabaté",
+  "album": "Ali and Toumani",
+  "year": 2010,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "World Circuit（catno WCD083）／Nonesuch（catno 522937-2，US）",
+  "why": "Ali Farka Touré 2006 年過世前與 Toumani Diabaté 錄的第二張二重奏，2010 年由 World Circuit 發行，是 2005 年《In the Heart of the Moon》的續作。池中這一組合現有 1 張（實掃 seed_cards.json 全 14,424 列）：《In the Heart of the Moon》(2005)；Ali Farka Touré 本名下另有 5 張、Toumani Diabaté 相關 6 張，唯獨這張把兩人合作收完整的續作缺席。MB release 端點實查：2010-02-22 GB World Circuit WCD083、2010-05-03 GB WCV083（黑膠）、2010-02-23 US Nonesuch 522937-2 與 World Circuit、2010-02-22 XW 共四筆，全部 Official。",
+  "risk": "盤名有 and／& 兩種寫法：MB release-group 作《Ali and Toumani》，轄下 XW 那一筆 release 與 Apple 都作《Ali & Toumani》，任何把 & 正規化成空白的去重都會讓兩者不相等（與裁定第 49 條同型，只是同一書寫系統內）。掛名變音符號兩套（Ali Farka Touré／Ali Farka Toure、Toumani Diabaté／Toumani Diabate），四種組合都實掃過。Apple us 命中 collectionId 1716601796「Ali & Toumani」/Ali Farka Touré & Toumani Diabate/2010，同一店面另有 1471581781「In the Heart of the Moon」(池中已有) 是最像的假陽性、不得配上；cu 店面回 HTTP 400。年份無分歧。",
+  "mbNote": "釘 release-group ccf65293-2e07-4188-934c-e4cf873c31b9。回問確認：title「Ali and Toumani」、artist-credit「Ali Farka Touré & Toumani Diabaté」、first-release-date 2010-02-22、primary-type Album、secondary-types 空、轄下 4 個 release（GB／Official×2、US／Official、XW／Official）。刻意不釘：5b523d11-661c-3b73-8a54-dcbfcfdade3f《In the Heart of the Moon》(2005，池中已有)、7c9943f8-ad2b-366f-ac4b-e5a878140c7c《Djelika》(本批另一張)、9746a2b9-17e6-39a8-8b9b-eae46558a625《New Ancient Strings (Nouvelles cordes anciennes)》(池中已有王牌卡，且 MB 標 Live)。藝人 MBID Toumani Diabaté b96ba7e7-d882-409a-9825-ed3d6dbb437d，名下 26 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ali Farka Toure；Toumani Diabate；Ali & Toumani；Ali and Toumani",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "E.T. Mensah & the Tempos",
+  "album": "King of Highlife Anthology",
+  "year": 2015,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "RetroAfric（catno RETRO24CD，XE）",
+  "why": "RetroAfric 2015 年做的四片裝 E.T. Mensah 選輯，把他 1950 年代與 Tempos 的錄音整編成一套，是這位「highlife 之王」目前唯一一份成規模、可追溯的錄音文獻。池中這位藝人只有 1 張（實掃 seed_cards.json 全 14,424 列）：《All for You》(1986)——那是 RetroAfric 早年的單片選輯。整個 1950 年代迦納 dance-band highlife 這條線池中就只有那一張，本張是同一家廠牌三十年後把材料做齊的版本。MB release 端點實查：2015 年 RetroAfric RETRO24CD，XE／Official，僅此一筆。RetroAfric 這一次的發行在 MB 上標 Official（依裁定第 43／57 條，判定單位是這一次再發，不是這家廠牌一向如何）。",
+  "risk": "走 §5.6：MB primary-type 就是 Album、secondary-types 帶 Compilation，依 §5.6 明文與 c-90 裁定第 3 條，這種形狀要照一般 Album 寫、不填例外欄位。掛名寫法查過 E.T. Mensah、E. T. Mensah、E.T. Mensah & the Tempos、E. T. Mensah & His Tempo’s Band、E.T. Mensah & The Tempos、The Tempos 六種；MB 上是兩個藝人實體（23c8fdc8 個人、e81c7ff1 樂團）各自掛作品，兩邊都要 browse。年份取合輯首次出版年 2015（MB 與 Apple 一致）。Apple us 命中 collectionId 953680218「King of Highlife: Anthology」/E.T. Mensah & The Tempos/2015——Apple 的標題在 Highlife 後多一個冒號，卡片取 MB 寫法；cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 224f5a5c-69cf-4c3b-b197-b54d5f16eddc。回問確認：title「King Of Highlife Anthology」、artist-credit「E.T. Mensah & The Tempos」、first-release-date 2015、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（XE／Official，RetroAfric RETRO24CD）。刻意不釘：6b9c910a-c2f5-35cf-89b8-07b200f3a355《All for You》(1990 合輯，池中已有 1986 那張)、f2c55fbb-8755-448b-a0fb-dc633efd6608《E.T. Mensah Is Back Again》(1976)、9d94a573-71df-3907-a246-1045f9df6f9c《Day by Day》(1991)。藝人 MBID：E.T. Mensah 23c8fdc8-e593-48df-87f4-df448a85ba43 名下 2 個 release-group；E. T. Mensah & His Tempo’s Band e81c7ff1-0875-442f-bca5-17e61cf63117 名下 2 個。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "E.T. Mensah；E. T. Mensah；E. T. Mensah & His Tempo’s Band；E.T. Mensah & The Tempos；The Tempos；King of Highlife: Anthology",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "King Tubby",
+  "album": "The Roots of Dub",
+  "year": 1975,
+  "genres": [
+   "world",
+   "electronic"
+  ],
+  "label": "Total Sounds（catno TSL105，JM）／Grounation（catno GROL 502，GB）",
+  "why": "King Tubby 1975 年在 Total Sounds 發行的專輯，與同年的《Dub From the Roots》是同一批 Bunny Lee 母帶做出來的一對，兩張的盤名互為倒裝。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Dub from the Roots》(1975)、《Majestic Dub》(1983)、《King Tubby Meets the Upsetter at the Grass Roots of Dub》(1974)，另有掛在別人名下、實際是他混的《King Tubbys Meets Rockers Uptown》(Augustus Pablo)、《King Tubby’s Prophesy of Dub》(Yabby You)、《If Deejay Was Your Trade》(Various Artists)。也就是說 1975 年那一對池中只有其中一張。MB release 端點實查：1975 JM Total Sounds TSL105、1975 GB Grounation GROL 502 為原盤，之後有 1990 FR Blue Moon BM 146、2009 GB Greensleeves GRE2007、2010 GB Jamaican Recordings JRCD035 三次再發，MB 上全部標 Official。",
+  "risk": "撞卡風險是本張全批最高的一筆：池中已有《Dub from the Roots》，本張《The Roots of Dub》只是同一組詞倒過來，任何 token 排序不敏感的比對都會判成同一張；兩張是不同碟（Total Sounds TSL105 對 Grounation／Live & Love）。MB 轄下 release 的標題還有《Presents The Roots of Dub》《Roots of Dub》兩種變體，去重要一併比。King Tubby 名下 MB 有 154 個 release-group，`artist/<MBID>?inc=release-groups` 只會回前 25 筆，一律用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條，這位藝人正是該條的典型）。另有同名不同人：MB d12c2b81「King Tubby」是 Genesis P-Orridge 的化名，不得混。Apple us 命中 collectionId 818732583「The Roots of Dub」/King Tubby/1995（Apple 記的是再發年，卡單取 1975 原盤年，裁定第 77 條：Apple 日期只能當訊號）；cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 807ce802-0266-32f2-b978-b3ad76fdd903。回問確認：title「The Roots of Dub」、artist-credit「King Tubby」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 6 個 release（JM／Official、GB／Official×3、FR／Official、??／status 未填）。刻意不釘：1dd2a516-c3fd-30e7-b226-c34ce4d82d56《Dub From the Roots》(池中已有，本張最像的假陽性)、a88279f8-6fec-4b4a-a0c5-164ff83122fa《King Tubby meets The Upsetter at the Grass Roots of Dub》(池中已有)、b7fc5c0e-d72c-405a-b7ee-e17aefb695e5《In Dub Conference Volume One》(1976)、f1638110-268c-4e85-babc-3b12cd8d7570《Dub Gone Crazy》(1994 合輯)。藝人 MBID 576134a6-9f1f-4bfa-af04-4848195849ca，名下 154 個 release-group（分頁列完，共兩頁）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "King Tubbys；Osbourne Ruddock；Presents The Roots of Dub；Roots of Dub",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "King Tubby",
+  "album": "Shalom Dub",
+  "year": 1975,
+  "genres": [
+   "world",
+   "electronic"
+  ],
+  "label": "Klik（JM 原盤，MB 未記編號）／Jamaican Recordings（catno JRCD038，GB 再發）",
+  "why": "King Tubby 與 The Aggrovators 1975 年的專輯，與同年的《The Roots of Dub》《Dub From the Roots》同屬 Bunny Lee 那批母帶做出來的一組。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Dub from the Roots》(1975)、《Majestic Dub》(1983)、《King Tubby Meets the Upsetter at the Grass Roots of Dub》(1974)；1975 年那一組池中只有一張。MB release 端點實查：1975 JM／Official 原盤，2010 GB Jamaican Recordings JRCD038 再發，MB 上兩筆都標 Official。",
+  "risk": "MB 這筆的 artist-credit 是「King Tubby & The Aggrovators」，卡片採池中通行的 King Tubby，兩種寫法都要比。King Tubby 名下 154 個 release-group，一律用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條）。同名不同人：MB d12c2b81「King Tubby」是 Genesis P-Orridge 的化名。盤名《Shalom Dub》在 MB 上唯一，撞卡風險低；但池中的《Majestic Dub》《Dub from the Roots》都以 Dub 結尾，子字串比對要小心。Apple us 命中 collectionId 787445582「Shalom Dub」/King Tubby & The Aggrovators/1975，年份與 MB 一致，封面與固定試聽走這一筆；cu 店面回 HTTP 400。2010 年 Jamaican Recordings 那次再發標 Official（第 43／57 條），但本張原盤能釘，不靠再發舉證。",
+  "mbNote": "釘 release-group 11038854-aad0-3053-8d46-79783efac4ec。回問確認：title「Shalom Dub」、artist-credit「King Tubby & The Aggrovators」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（JM／Official、GB／Official Jamaican Recordings JRCD038）。刻意不釘：807ce802-0266-32f2-b978-b3ad76fdd903《The Roots of Dub》(本批另一張)、6fc8dab9-169d-48c3-b2f4-223ba5ca38ea《Majestic Dub》與 1dd2a516-c3fd-30e7-b226-c34ce4d82d56《Dub From the Roots》(池中已有)、d839e30f-4d87-47f1-8910-58e64de1c855《Dubbing With the Observer》(1975 同年)。藝人 MBID 576134a6-9f1f-4bfa-af04-4848195849ca，名下 154 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "King Tubby & The Aggrovators；King Tubbys；Osbourne Ruddock；The Aggrovators",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "U-Roy",
+  "album": "Rasta Ambassador",
+  "year": 1977,
+  "genres": [
+   "world"
+  ],
+  "label": "Virgin／Front Line（catno FL 1005 原盤；CD 再發 CDFL 9016／CDFL13）",
+  "why": "U-Roy 在 Virgin 旗下 Front Line 廠牌的第三張，接在《Dread in a Babylon》(1975) 與《Natty Rebel》(1976) 之後，是他 1970 年代英國發行三部曲的收尾。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Version Galore》(1970，王牌 hall)、《Dread in a Babylon》(1975)、《Natty Rebel》(1976)——前兩張是同一條 Front Line 線的頭兩張，本張正好把那一組補完。MB release 端點實查：1991-07-26 XE Virgin／Front Line CDFL 9016、2001 GB Front Line CDFL13 兩筆，皆 Official。",
+  "risk": "年份分歧要當面交代：MB 的 first-release-date 記 1991-07-26（那是 Virgin 的 CD 再發），Apple gb collectionId 724913612「Rasta Ambassador」/U-Roy 記 1977，Front Line 原盤是 1977 年的黑膠；卡單依既有年份政策取原盤年 1977，rgMbid 只當身分鍵不當年份來源（裁定第 91 條）。掛名寫法有陷阱：MB 藝人實體的名字用的是非 ASCII 連字號「U‐Roy」(U+2010)，池中與 Apple 都用 ASCII 的「U-Roy」，卡片採池中寫法、兩種都要拿去比（這是裁定第 49 條在同一書寫系統內的變形）。另查過 U Roy、Ewart Beckford、Daddy U-Roy、U. Roy 四種。Apple gb 命中；us 那一輪先回了不相干的結果才在 gb 命中，cu 店面回 HTTP 400。封面與固定試聽走 gb 724913612。",
+  "mbNote": "釘 release-group c5162767-0fb4-3a32-996b-62976248fe95。回問確認：title「Rasta Ambassador」、artist-credit「U‐Roy」（MB 用 U+2010 連字號）、first-release-date 1991-07-26、primary-type Album、secondary-types 空、轄下 2 個 release（XE／Official Virgin＋Front Line CDFL 9016、GB／Official Front Line CDFL13）。刻意不釘：ccc25c07-8c4d-33f8-b5a4-22c4760efbe8《Dread in a Babylon》與 4cd3dcd4-0fdc-39ae-af24-f7608ca4c62e《Natty Rebel》(池中已有)、e23e79c0-60a5-3527-b0ea-fd2e646c9034 與 89fd9803-82bc-4676-b3ad-ba64731bdbc8《Version Galore》(池中已有，MB 兩筆重複建檔)、3f5c4093-b1ca-46b0-9eb7-5000be9b7e58 與 5003a466-4996-4b73-a2cb-f6f997c564f5《The Originator》(1976 與 1990 兩筆)。藝人 MBID c40fa847-7501-4eee-9a20-12d5d1c5c0db，名下 57 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "U Roy；U‐Roy；Ewart Beckford；Daddy U-Roy；U. Roy",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "U-Roy",
+  "album": "Jah Son of Africa",
+  "year": 1978,
+  "genres": [
+   "world"
+  ],
+  "label": "Front Line（catno FL 1023，GB）／Virgin（catno 2933 765，FR）",
+  "why": "U-Roy 在 Front Line 的第四張，1978 年英法同步發行，是他 Virgin 時期的最後一張。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Version Galore》(1970)、《Dread in a Babylon》(1975)、《Natty Rebel》(1976)；1977–78 那兩張池中都沒有，本張與同批的《Rasta Ambassador》一起把 Front Line 這條線補齊。MB release 端點實查：1978 GB Front Line FL 1023、1978 FR Virgin 2933 765 為原盤，2000 年另有 US Caroline CAR49916 與 GB Front Line CDFL8 兩筆 CD 再發，五筆全部 Official。",
+  "risk": "掛名同上一張：MB 用非 ASCII 連字號的「U‐Roy」(U+2010)，池中與 Apple 用 ASCII「U-Roy」，另查過 U Roy、Ewart Beckford、Daddy U-Roy、U. Roy。年份兩說：MB first-release-date 記 1978，Apple gb collectionId 723875312「Jah Son of Africa」/U-Roy 記 1977；卡單取 MB 與原盤標籤一致的 1978，Apple 的年份不當版本門檻（裁定第 77 條）。盤名在 MB 名下唯一，撞卡風險低。cu 店面回 HTTP 400。封面與固定試聽走 gb 723875312。",
+  "mbNote": "釘 release-group 0531feac-acd4-34c9-b015-fc335fc0e190。回問確認：title「Jah Son of Africa」、artist-credit「U‐Roy」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 5 個 release（GB／Official×2、FR／Official、US／Official、??／Official）。刻意不釘：c5162767-0fb4-3a32-996b-62976248fe95《Rasta Ambassador》(本批另一張)、e7ad907e-eb65-43ae-897c-363ff340fa7b《African Roots》(1976，盤名同含 Africa，是本張最像的假陽性)、ccc25c07-8c4d-33f8-b5a4-22c4760efbe8《Dread in a Babylon》與 4cd3dcd4-0fdc-39ae-af24-f7608ca4c62e《Natty Rebel》(池中已有)。藝人 MBID c40fa847-7501-4eee-9a20-12d5d1c5c0db，名下 57 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "U Roy；U‐Roy；Ewart Beckford；Daddy U-Roy；U. Roy",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Big Youth",
+  "album": "Hit the Road Jack",
+  "year": 1976,
+  "genres": [
+   "world"
+  ],
+  "label": "Trojan Records（catno TRLS 137）",
+  "why": "Big Youth 1976 年在 Trojan 發行的專輯，夾在《Dreadlocks Dread》(1975) 與《Isaiah First Prophet of Old》(1978) 之間。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Screaming Target》(1972)、《Dreadlocks Dread》(1975)、《Natty Cultural Dread》(1976)——都在 1972–76 這一段，而同年的這張與其後的目錄全無。MB release 端點實查：1976 ??／Official Trojan TRLS 137 原盤，1995 GB Trojan CDTRL 137 為 CD 再發，兩筆皆 Official。",
+  "risk": "盤名與 Ray Charles 那首同名歌重疊，Apple 搜尋會混進大量不相干條目；比對必須連掛名一起看。掛名寫法查過 Big Youth、Manley Augustus Buchanan、Jah Youth 三種；MB 上另有 c3d82f33「The Ark Angel」的 disambiguation 寫著「big youth dub」，`artist:` 字串查詢會撈到（裁定第 20 條）。Apple us 命中 collectionId 304601009「Hit the Road Jack」/Big Youth/1976，年份與 MB 一致，封面與固定試聽走這一筆；cu 店面回 HTTP 400。Trojan 1995 年那次 CD 再發在 MB 上標 Official。",
+  "mbNote": "釘 release-group 9c7d8c17-1906-3533-beb4-061e83515634。回問確認：title「Hit the Road Jack」、artist-credit「Big Youth」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release（??／Official Trojan TRLS 137、GB／Official Trojan CDTRL 137）。刻意不釘：9c229423-9946-3a86-9052-2a08327d1600《Natty Cultural Dread》與 a7d8040e-5dfd-3b3f-b1b6-63d942052c5c《Dreadlocks Dread》、7a2aa34c-ab21-39f4-87fe-47bd0cb90b5e《Screaming Target》(三張池中都已有)、68f1da02-11b8-3971-a237-71460c2b9684《Reggae Phenomenon》(1977，MB 標 Album/Compilation)、7d7d1edd-015b-4070-a009-d6e45a463699《Everyday Skank - Best of Big Youth》(1980 合輯)。藝人 MBID 6e4cbcf5-1b18-4719-98c2-7a2c9eccaa6d，名下 44 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Manley Augustus Buchanan；Jah Youth；Big Youth",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Big Youth",
+  "album": "Isaiah First Prophet of Old",
+  "year": 1978,
+  "genres": [
+   "world"
+  ],
+  "label": "Front Line（catno FL 1011，GB）／Nicola Delita（catno DSR H 866，JM）",
+  "why": "Big Youth 1978 年由 Virgin 旗下 Front Line 在英國發行的專輯，是他從牙買加本地廠牌轉進英國大廠通路的那一張，同年在牙買加也有 Nicola Delita 的版本。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Screaming Target》(1972)、《Dreadlocks Dread》(1975)、《Natty Cultural Dread》(1976)，1976 年之後的目錄一張都沒有。MB release 端點實查：1978 GB Front Line FL 1011、1978 JM Nicola Delita DSR H 866、1978 IT、1997 GB Front Line 共四筆，全部 Official。",
+  "risk": "盤名長且含 of，容易被截斷比對誤判；MB 名下另有 f4d4be24《Reggae Gi Dem Dub》(1978) 是同年的 dub 對照組。掛名查過 Big Youth、Manley Augustus Buchanan、Jah Youth。Apple us 命中 collectionId 304605545「Isaiah First Prophet of Old」/Big Youth/1978，年份與 MB 一致，封面與固定試聽走這一筆；cu 店面回 HTTP 400。1997 年 Front Line 的 CD 再發在 MB 上標 Official。",
+  "mbNote": "釘 release-group 971758c4-7f0a-3428-87c6-975b95e07f09。回問確認：title「Isaiah First Prophet of Old」、artist-credit「Big Youth」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 4 個 release（GB／Official×2、JM／Official、IT／Official）。刻意不釘：f4d4be24-f9e9-4c8e-a8f7-04533866a0fd《Reggae Gi Dem Dub》(1978 同年 dub 對照組)、9c7d8c17-1906-3533-beb4-061e83515634《Hit the Road Jack》(本批另一張)、9c229423-9946-3a86-9052-2a08327d1600《Natty Cultural Dread》(池中已有)、61b2b626-22a3-420c-a5ee-a45588764e22《Progress》(1979)。藝人 MBID 6e4cbcf5-1b18-4719-98c2-7a2c9eccaa6d，名下 44 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Manley Augustus Buchanan；Jah Youth；Big Youth",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Yellowman",
+  "album": "King Yellowman",
+  "year": 1984,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Columbia（catno CK 39301，US）／Epic（catno ESCA 7549，JP 再發）",
+  "why": "Yellowman 與 Columbia 簽約後發行的專輯，是 1980 年代 dancehall 藝人少見地由美國大廠直接發行的一張，也是他從牙買加 sound system 體系走進國際唱片工業的節點。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Mister Yellowman》(1982，王牌 hall)、《Zungguzungguguzungguzeng》(1983)、《Nobody Move, Nobody Get Hurt》(1984)——全部是 Greensleeves／Shanachie 時期的牙買加線，Columbia 那一張缺席。MB release 端點實查：1984 US Columbia CK 39301、1994-06-22 JP Epic ESCA 7549 兩筆，皆 Official。",
+  "risk": "掛名寫法查過 Yellowman、King Yellowman、Winston Foster 三種；盤名《King Yellowman》本身就是掛名的變體，任何把「King Yellowman」當掛名處理的腳本會把這張讀成同名專輯（自我同名的邊界情形，`selfTitled` 仍填 false，因為卡片掛名是 Yellowman 不是 King Yellowman）。池中《Zungguzungguguzungguzeng》少一個驚嘆號、MB 作《Zungguzungguguzungguzeng!》，去重要兩種都比。Yellowman 名下 MB 有 81 個 release-group，一律分頁（裁定第 116 條）。Apple us 命中 collectionId 429801591「King Yellowman」/Yellowman/1984，年份與 MB 一致，封面與固定試聽走這一筆；cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 91ca13b8-4061-3115-860f-bd7e861923b2。回問確認：title「King Yellowman」、artist-credit「Yellowman」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official Columbia CK 39301、JP／Official Epic ESCA 7549）。刻意不釘：102f7bdd-3565-33ff-9183-92e65cd2a58a《Mister Yellowman》、ae134daa-48e5-3d94-8e89-f81d8a86d07d《Zungguzungguguzungguzeng!》、366a04d7-ed3c-33d3-bad5-e7eae41da6d9《Nobody Move Nobody Get Hurt》(三張池中都已有)、75de6e6b-f102-3d03-bf0c-a76e62d76e52《Duppy or Gunman》(1982)、01f4efae-97b6-4884-88ac-28a43108a9c0《The Yellow, The Purple, The Nancy》(1982，與 Sister Nancy 共掛)。藝人 MBID 870ec051-e50e-4bf9-b704-6098fe0e0297，名下 81 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "King Yellowman；Winston Foster；Yellowman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Mighty Diamonds",
+  "album": "Stand Up to Your Judgment",
+  "year": 1978,
+  "genres": [
+   "world"
+  ],
+  "label": "Channel One Records（JM，MB 未記編號）",
+  "why": "The Mighty Diamonds 1978 年回到 Channel One 錄的專輯，接在 1976 年《Right Time》與 1977 年《Ice on Fire》之後。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Right Time》(1976，王牌 hall)、《Ice on Fire》(1977)、《Deeper Roots (Back to the Channel)》(1979)——1978 年那一張正好卡在池中兩張之間缺席。MB release 端點實查：1978 JM Channel One Records，Official，僅此一筆 release。",
+  "risk": "盤名 Judgment／Judgement 兩種拼法並存：MB release-group 作「Stand Up to Your Judgment」（無 e），Apple 作「Stand up to Your Judgement」（有 e），卡片取 MB 寫法、兩種都進 queryAlias，否則去重會漏。MB 名下另有 c587bbec《Planet Mars Dub》(1978) 是同年的 dub 對照組，以及 446b3b7f《deeper roots》與 5f9081cc《Deeper Roots with Dubs》兩筆與池中《Deeper Roots (Back to the Channel)》極像的假陽性。掛名查過 The Mighty Diamonds、Mighty Diamonds 兩種（Apple 那筆不帶 The）。Apple us 命中 collectionId 1734234201「Stand up to Your Judgement」/Mighty Diamonds/1978，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1734234201。",
+  "mbNote": "釘 release-group ed1f2fb5-5970-38cb-910a-9f973f8de0c3。回問確認：title「Stand Up to Your Judgment」、artist-credit「The Mighty Diamonds」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（JM／Official，Channel One Records）。刻意不釘：c587bbec-21cc-4882-8600-a7c05f259677《Planet Mars Dub》(1978 同年 dub 對照組)、446b3b7f-a44a-488d-9367-092c7c832fd9《deeper roots》與 5f9081cc-506d-49c3-82bd-262ee18b8da3《Deeper Roots with Dubs》(池中已有《Deeper Roots (Back to the Channel)》)、a501f27e-ecf7-39a3-8afe-dc29138e29de《Ice on Fire》(池中已有)、8900f050-2ce5-3c46-b3e4-7d97b9a69dd2《When the Right Time Come (I Need a Roof)》(池中已有《Right Time》)。藝人 MBID e0885194-a186-4c9b-9643-f6d54aeb6bfd，名下 60 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mighty Diamonds；Stand up to Your Judgement；Stand Up to Your Judgement",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Yabby You",
+  "album": "Beware Dub",
+  "year": 1978,
+  "genres": [
+   "world",
+   "electronic"
+  ],
+  "label": "Grove Music（catno GMLP 4，GB）",
+  "why": "Yabby You 1978 年由 Grove Music 在英國發行的 dub 專輯，是他 1975–77 那三張之後、把同批節奏做成 dub 版的一張。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Conquering Lion》(1975)、《King Tubby’s Prophesy of Dub》(1976)、《Deliver Me From My Enemies》(1977)；1977 年之後的目錄池中全無。MB release 端點實查：1978 GB Grove Music GMLP 4 為原盤（Official），另有 US ROIR 188、2020-11-26 XW Graylan Records 兩筆 Official，以及 2004 NL Corn-Fed Productions CF 314 一筆在 MB 上標 Bootleg。",
+  "risk": "再發授權狀態分歧，依裁定第 43／57／65／78 條要逐筆看：本張的 2004 年 Corn-Fed Productions（NL，CF 314）那一次在 MB 上明標 Bootleg，不得當背書；原盤 Grove Music GMLP 4 能釘，所以本張不靠再發舉證。掛名分裂嚴重：MB 藝人實體名是「Yabby U」（3608221f），這筆的 artist-credit 又寫成「Vivian (Yabby U) Jackson & Prophets」，池中用「Yabby You」，Apple 上還有「Yabby You aka Jesus Dread」「Yabby You & The Prophets」；五種寫法全部實掃過。MB 另有 7c204190《Beware Dub》(2016，Album/Compilation) 是同名重複建檔，釘位務必取 1978 那一筆。Apple us 命中 collectionId 1165105352「Beware Dub (An Expanded Version of the Classic Album)」/Yabby You/1992（Apple 記的是擴充版年份，卡單取 1978 原盤年）；同店面另有 1891251455「Beware Dub」/Yabby You aka Jesus Dread/2016 是那筆 2016 重複建檔的線上版本，不得配上。cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 954933e1-6c3c-3c15-baf3-668a65043c40。回問確認：title「Beware Dub」、artist-credit「Vivian (Yabby U) Jackson & Prophets」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 4 個 release（GB／Official Grove Music GMLP 4、US／Official ROIR 188、XW／Official Graylan 2020、NL／Bootleg Corn-Fed CF 314）。刻意不釘：7c204190-e7b0-46aa-bd63-2f0435d4afaa《Beware Dub》(2016 同名重複建檔，Album/Compilation)、41e1aa8f-b289-39ad-ba9c-06c9c7b51483《Conquering Lion》、b04f74a1-9ff0-3c94-8edb-2cfd0dc12c7a《King Tubby’s Prophesy of Dub》、52ed2b79-4791-4ee3-b18e-dc1e5449c354《Deliver Me From My Enemies》(三張池中都已有)、32a27203-623b-4f85-b98c-fe7fff2cacfa《Jah Jah Way》(1980，Apple 十六店面全查無、本批未收)。藝人 MBID 3608221f-7ee6-4997-84e0-28353b2e5530（MB 主名 Yabby U），名下 34 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yabby U；Vivian Jackson；Vivian (Yabby U) Jackson & Prophets；Yabby You & The Prophets；Yabby You aka Jesus Dread",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Max Romeo",
+  "album": "Reconstruction",
+  "year": 1977,
+  "genres": [
+   "world",
+   "soul"
+  ],
+  "label": "Mango Records（catno MLPS 9503，GB）／Dynamic Sounds（catno DY 3378，JM）",
+  "why": "Max Romeo 在《War ina Babylon》(1976) 之後、與 Lee Perry 拆夥後的第一張專輯，1978 年由 Island 旗下 Mango 在英國、Dynamic Sounds 在牙買加同步發行。池中這位藝人現有 2 張（實掃 seed_cards.json 全 14,424 列）：《War ina Babylon》(1976，掛 Max Romeo & The Upsetters，王牌 hall)、《Revelation Time》(1975)；池中兩張都在 Upsetter 時期，之後的目錄空白，本張補的正是「離開 Perry 之後」這一格。MB release 端點實查：1978 GB Mango MLPS 9503、1978 JM Dynamic Sounds DY 3378 兩筆，皆 Official。",
+  "risk": "年份兩說：MB first-release-date 記 1978（與兩張原盤標籤一致），Apple us collectionId 1858685805「Reconstruction」/Max Romeo 記 1977；卡單取 1978，Apple 的日期只當訊號（裁定第 77 條）。掛名寫法查過 Max Romeo、Max Romeo & The Upsetters、Maxie Romeo、Maxwell Livingston Smith 四種，池中那張王牌用的是帶 The Upsetters 的長寫法。MB 名下另有兩筆《Let the Power Fall》(b262d399 1971 GB Pama PMP 2010，status 未填；decc932f 1972 JM Official) 是同一張碟的重複建檔，本批未收、記進未收清單。Max Romeo 名下 69 個 release-group，一律分頁。cu 店面回 HTTP 400。封面與固定試聽走 us 1858685805。",
+  "mbNote": "釘 release-group f8385a2f-60a0-328d-bd4b-d3d8f90acfa9。回問確認：title「Reconstruction」、artist-credit「Max Romeo」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 2 個 release（GB／Official Mango MLPS 9503、JM／Official Dynamic Sounds DY 3378）。刻意不釘：3da80584-65dc-31b0-8f2b-706e9edb2cc8《War Ina Babylon》與 b7bb8543-a670-463b-a14a-b6d2591bfc6f《Revelation Time》(池中已有)、f5003441-c5b4-3f63-ac59-5dc7db16fe3d《Open the Iron Gate 1973 - 1977》(1999 合輯) 與 570d564a-be54-46f6-8309-82d475253701《Open The Iron Gate》(1978 同名重複建檔)、b262d399-6bcd-4e0d-8e35-c17e8bff11d5 與 decc932f-024f-42ff-baeb-60700f676819《Let the Power Fall》(MB 重複建檔，本批未收)。藝人 MBID d82e9822-521a-4e20-bb22-9e944374cd40，名下 69 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Max Romeo & The Upsetters；Maxie Romeo；Maxwell Livingston Smith；Max Romeo",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Junior Murvin",
+  "album": "Bad Man Possee",
+  "year": 1982,
+  "genres": [
+   "world"
+  ],
+  "label": "Dread at the Controls（catno D.A.T.C. 007，GB）",
+  "why": "Junior Murvin 在《Police & Thieves》(1977) 之後的第二張專輯，1982 年由 Mikey Dread 的 Dread at the Controls 廠牌發行。池中這位藝人只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Police & Thieves》(1977，王牌 hall)——也就是說池裡有他最有名的那一張、卻沒有第二張，是本批「先確認第一張該有的在不在、再談深度」判準下最典型的補位對象。MB release 端點實查：1982 GB Dread at the Controls D.A.T.C. 007 兩筆（同編號）與 XW 一筆，皆 Official。",
+  "risk": "盤名有 Bad Man Possee／Badman Possee／Bad Man Posse 三種寫法，MB 轄下 release 就同時存在前兩種，Apple gb 那筆作「Badman Possee」；卡片取 MB release-group 的《Bad Man Possee》，三種都進 queryAlias。再發授權狀態要逐筆看（裁定第 43／57／65／78 條）：MB 名下這筆的 2022 年 Corn-Fed Productions CF354 那一版 status 未填，而同一家 Corn-Fed Productions 在本批 Yabby You《Beware Dub》上被 MB 標成 Bootleg——依第 78 條這是反面證據，這一次再發不得單獨當背書；本張原盤能釘，不靠再發舉證。掛名寫法查過 Junior Murvin、Murvin Junior、Junior Soul、Murvin Smith Hilton Junior 四種。MB 另有 19bc34e5《Muggers in the Street》(MB first-release-date 記 2007-11-13，實際原盤是 1984 年 Greensleeves)，年份與 MB 脫鉤太遠，本批未收。Apple gb 命中 collectionId 814851691「Badman Possee」/Junior Murvin/1982，年份與 MB 一致；us 那一輪查到的一筆不相符，cu 店面回 HTTP 400。封面與固定試聽走 gb 814851691。",
+  "mbNote": "釘 release-group becb70b0-6019-4e13-8687-b74ef2fb3b06。回問確認：title「Bad Man Possee」、artist-credit「Junior Murvin」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 4 個 release（GB／Official×2 Dread at the Controls D.A.T.C. 007、XW／Official、??／status 未填 Corn-Fed CF354 2022）。刻意不釘：b9678b82-d566-3c5e-bc55-bae400cd63de《Police & Thieves》(池中已有王牌卡) 與 5cde72be-fe41-4cc8-bcc6-77f4db198640《Police & Thieves》(2009 合輯同名)、19bc34e5-80f0-4a95-9aba-bf0057b7f202《Muggers in the Street》(MB 首發日期 2007 與 1984 原盤脫鉤，本批未收)、2b943259-74bb-4b73-9e28-1ff7ba0b7784《Apartheid》(1986)。藝人 MBID 8411d1f6-0f7a-4e9b-9745-a474780cd5b7，名下 17 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Badman Possee；Bad Man Posse；Junior Soul；Murvin Smith Hilton Junior；Junior Murvin",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Dr Alimantado",
+  "album": "Sons of Thunder",
+  "year": 1981,
+  "genres": [
+   "world"
+  ],
+  "label": "Greensleeves Records（catno GREL 22，GB）",
+  "why": "Dr Alimantado 在《Best Dressed Chicken in Town》(1978) 之後、由 Greensleeves 發行的專輯；同一張碟在 1987 年的 CD 版改名《Born for a Purpose》再發。池中這位藝人只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Best Dressed Chicken in Town》(1978)，其餘目錄全無。MB release 端點實查：1981 GB Greensleeves GREL 22、1987 GB Greensleeves GREL CD 22（標題《Born for a Purpose》）兩筆，皆 Official。",
+  "risk": "一碟兩名是本張最大的坑：MB release-group 標題《Sons of Thunder》，轄下 1987 年那筆 release 的標題卻是《Born for a Purpose》，Apple 更把兩者併在一起寫成「Born for a Purpose (Aka Sons of Thunder)」。卡片取 MB release-group 的《Sons of Thunder》，另一個名字進 queryAlias，否則去重看不見（與裁定第 45 條同型：改過名的碟要把兩個名字都留著）。掛名寫法查過 Dr Alimantado、Dr. Alimantado（帶點）、Doctor Alimantado、Winston James Thompson 四種；池中那張用不帶點的 Dr Alimantado，MB 藝人實體用帶點的 Dr. Alimantado，卡片沿用池中寫法。Apple us／gb 都命中 collectionId 1251027239「Born for a Purpose (Aka Sons of Thunder)」/Dr. Alimantado/2017（Apple 記的是再發年，卡單取 1981 原盤年）；cu 店面回 HTTP 400。封面與固定試聽走 us 1251027239。",
+  "mbNote": "釘 release-group 0a113056-b35a-3a4c-88d1-f28eb9a55519。回問確認：title「Sons of Thunder」、artist-credit「Dr. Alimantado」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 2 個 release（GB／Official Greensleeves GREL 22 1981、GB／Official Greensleeves GREL CD 22 1987 標題《Born for a Purpose》）。刻意不釘：ec8625b9-b81d-3019-a8f2-0f3ce959bdf1《Best Dressed Chicken in Town》(1978，池中已有) 與 0c5e9bcb-149b-446b-9d44-3a4c4b2e5ac4《Best Dressed Chicken In Town》(2007 同名重複建檔)、44c8ff55-b4d3-3b74-8bb6-380951ea3cd1《Kings Bread》與 f79c2697-ea82-3439-ac09-1f52811d6c23《Kings Bread Dub》(1979 一對)、b1124e20-cd65-432a-add6-533fc462f937《House of Singles》(2006 合輯)。藝人 MBID 0fc5dfc7-a5f6-4f01-9091-4c90f1df37e2，名下 16 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dr. Alimantado；Doctor Alimantado；Winston James Thompson；Born for a Purpose",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Prince Far I",
+  "album": "Psalms for I",
+  "year": 1976,
+  "genres": [
+   "world"
+  ],
+  "label": "Carib Gems（catno CGLP 1002，GB）",
+  "why": "Prince Far I 的首張專輯，1976 年由 Carib Gems 在英國發行，2002 年 Pressure Sounds 以 PSCD35 再發。池中這位藝人只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Under Heavy Manners》(1976)——同年那兩張裡池中只有其中一張，而首張缺席。MB release 端點實查：1976 GB Carib Gems CGLP 1002 原盤、2002 DE Fotofon CD 1002、2002-04-17 GB Pressure Sounds PSCD35 三筆，全部 Official。",
+  "risk": "再發授權狀態逐筆看（裁定第 43／57／65／78 條）：本張的三筆 release 在 MB 上全部標 Official，其中 Pressure Sounds PSCD35 是這條線公認的授權考古發行；但原盤 Carib Gems CGLP 1002 本身可釘，本張不靠再發舉證。掛名寫法查過 Prince Far I、Prince Farr I、Michael Williams、King Cry Cry 四種。MB 名下另有 bcc6e5d9《Under Heavy Manners》(1995 RG)，與池中那張 1976 年的同名，是本張最像的假陽性。盤名《Psalms for I》極短，容易被更長的別碟包住（裁定第 162 條的鏡像）。Apple 依 WLD 店面序試到 za 才命中 collectionId 130439310「Psalms for I」/Prince Far I/2002（Apple 記的是 Pressure Sounds 再發年，卡單取 1976 原盤年）；us／gb 兩輪回的都是不相干條目，cu 店面回 HTTP 400。封面與固定試聽走 za 130439310。",
+  "mbNote": "釘 release-group 1e617efa-96e2-30d9-95a7-162d85bdad70。回問確認：title「Psalms for I」、artist-credit「Prince Far I」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 3 個 release（GB／Official Carib Gems CGLP 1002、DE／Official Fotofon CD 1002、GB／Official Pressure Sounds PSCD35）。刻意不釘：bcc6e5d9-34bf-3fbf-8a03-a5831d787f62《Under Heavy Manners》(池中已有)、a3b712e4-3e16-32b9-94ff-cfe03046e1e8《Cry Tuff Dub Encounter, Chapter 2》與 2e15a4dc-49a4-3ed4-9fbf-70bcb092a4e0《Chapter 4》(dub 系列)、c1108320-1a2b-3a3b-93bd-244b9fa2b381《Showcase in a Suitcase》(1980 合輯)、dd4ff6bb-64a7-3e2e-a6e0-5ebd6bf929a5《Heavy Manners: Anthology 1977-83》(2003 合輯)。藝人 MBID 86f26c3e-c6ac-4829-ac22-f1a2133d4ffe，名下 32 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Prince Farr I；Michael Williams；King Cry Cry；Prince Far I",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

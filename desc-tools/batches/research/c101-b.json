@@ -1,0 +1,961 @@
+[
+ {
+  "key": "desc2:Toby Fox|UNDERTALE: Soundtrack",
+  "artist": "Toby Fox",
+  "album": "UNDERTALE: Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f98e6631 的欄位：title「UNDERTALE: Soundtrack」、artist-credit「Toby Fox」、first-release-date 2015-09-15、primary-type Album、secondary-types [Soundtrack]，轄下 12 個 release。",
+    "src": "https://musicbrainz.org/release-group/f98e6631-f10a-40e0-953e-c9b32ab18570"
+   },
+   {
+    "f": "回問該 release-group 轄下的 release 曲目：**2015-09-15 兩筆 XW／Official 數位版都是單片 101 軌**，其中一筆掛 Materia Collective、編號 MCOL-0004；2016-12-08 US／Official 那筆是 Materia Collective 8BIT-8048、**兩片 12 吋黑膠、26＋15＝41 軌**（黑膠是選輯，不是 101 軌全收）；另有一筆 2015-11-30 XW 標 Bootleg（《Undertale: Looped》，兩片 139＋118 軌）。",
+    "src": "https://musicbrainz.org/release-group/f98e6631-f10a-40e0-953e-c9b32ab18570"
+   },
+   {
+    "f": "英文維基〈Undertale〉記：遊戲 2015 年 9 月 15 日在 OS X 與 Windows 上發售，**官方原聲帶由遊戲音樂廠牌 Materia Collective 在與遊戲同一天發行**；2016 年另有 iam8bit 製作的 2xLP 黑膠版。",
+    "src": "https://en.wikipedia.org/wiki/Undertale"
+   },
+   {
+    "f": "英文維基〈Undertale〉的 Music 段落記：全部配樂由 Fox 一人以 **FL Studio** 寫成，他是自學的音樂人，多數曲子沒有反覆修改，**只有主題曲〈Undertale〉一首在開發中改過多個版本**；**九成以上的曲子是專為這款遊戲寫的**，例外之一是 Sans 對戰曲〈Megalovania〉——那首先前用在網路漫畫 Homestuck 與他做的一個 EarthBound ROM hack 裡。每一段場景他都**先寫音樂再寫程式**，因為那有助於決定場景怎麼走。",
+    "src": "https://en.wikipedia.org/wiki/Undertale"
+   },
+   {
+    "f": "同一段另記：這套原聲帶被視為遊戲成功的關鍵之一，**特別是跨曲反覆出現的角色主導動機（leitmotif）**；USgamer 的 Nadia Oxford 舉〈Hopes and Dreams〉為例，說它把多數主要角色的主題交織進來，是「替旅程收尾的完美方式」，並稱 Fox 擅長「把舊曲變成全新的體驗」。GameSpot 的 Tyler Hicks 則把這套音樂形容為「bit-based melodies」。",
+    "src": "https://en.wikipedia.org/wiki/Undertale"
+   },
+   {
+    "f": "英文維基〈Undertale〉記：開發資金來自 2013 年 6 月 24 日開跑、7 月 24 日結束的 Kickstarter，目標 5000 美元，最後由 2398 人集資 51124 美元；在 Undertale 之前，Fox 最為人知的身分是**自 2010 年起替網路漫畫 Homestuck 寫音樂**。",
+    "src": "https://en.wikipedia.org/wiki/Undertale"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1528217465，collectionName「Undertale Soundtrack」、artistName「トビー・フォックス」（artistId 1060915053）、releaseDate 2015-09-15、trackCount 101、copyright「℗ 2017 Toby Fox under license to Materia Collective」；`lookup?entity=song` 攤得開全部 **101 軌、101 軌都有 previewUrl**，曲序為第 1 軌〈Once Upon a Time〉1:29、第 15 軌〈Sans.〉、第 71 軌〈Undertale〉6:22、第 87 軌〈Hopes and Dreams〉3:01、第 100 軌〈Megalovania〉2:36、第 101 軌〈Good Night〉0:31。",
+    "src": "https://music.apple.com/jp/album/1528217465"
+   }
+  ],
+  "hookCandidates": [
+   "一百零一軌，那首人人會哼的〈Megalovania〉排在第一百軌",
+   "每一段場景都是先有音樂才有程式碼"
+  ],
+  "sound": "沒有具名來源逐曲談音色，因此不寫聲響形容。可寫的有據：英文維基記全碟由 Fox 一人用 FL Studio 完成，他是自學的音樂人；這套配樂的核心手法是**角色主導動機在多首曲子之間反覆出現**，USgamer 的 Nadia Oxford 以〈Hopes and Dreams〉把多數主角主題交織進來為例，並稱他擅長「把舊曲變成全新的體驗」；GameSpot 的 Tyler Hicks 把整體音色形容為「bit-based melodies」。曲長落差極大——Apple 那 101 軌裡最短的〈Dogbass〉7 秒，最長的〈Undertale〉6 分 22 秒。",
+  "keyTracks": [
+   "Once Upon a Time",
+   "Sans.",
+   "Undertale",
+   "Hopes and Dreams",
+   "Megalovania"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2015。**遊戲發售年與原聲帶發行年在這一張上是同一天**：英文維基記遊戲 2015-09-15 在 OS X／Windows 發售、官方原聲帶由 Materia Collective **同日**發行；MB release-group 的 first-release-date 2015-09-15 與轄下兩筆 XW／Official 數位版的日期一致；Apple 的 releaseDate 也是 2015-09-15。三個來源同日，年份無爭議。**Apple 的 ℗ 記 2017**——那是後來重新授權（under license to Materia Collective）的年份，不是原盤年，行文不得引用。黑膠版是 2016-12-08（Materia Collective 8BIT-8048），與本卡指的 101 軌數位原盤是**不同的曲目編排**。",
+  "notes": "**ready 覆核通過，配對正確。** Apple jp 1528217465 的 trackCount=101 **不是併了別的東西**：MB 轄下兩筆 2015-09-15 XW／Official 數位 release（含 Materia Collective MCOL-0004）**都是單片 101 軌**，與 Apple 逐數相符；曲序也對得上（首軌〈Once Upon a Time〉、末軌〈Good Night〉），依裁定 157 逐軌看過位置，固定試聽取首軌沒有問題。**要注意的是黑膠**：2016 年 8BIT-8048 那版只有 26＋15＝41 軌，**行文不得把黑膠說成「收齊 101 軌」**。｜**擋下策展層兩處**：(a) curatorWhy 稱本張是「**Toby Fox 名下唯一一張完整長篇原聲**」——**與來源相反**：同一位藝人名下的《DELTARUNE Chapter 1 OST》(2018) 就有 40 軌、《Deltarune Chapter 2》47 軌、《Deltarune Chapters 3+4》78 軌，全部是 Materia Collective 發行的完整原聲盤（Apple artistId 1060915053 目錄實查），**而且本批 b 組自己就收了 Chapter 1 那一張**。行文不得寫「唯一」。(b) curatorWhy 稱本張是「2010 年代獨立遊戲音樂在唱片業有形化的**起點**」——無來源的時序主張，且同批的 C418《Minecraft – Volume Alpha》數位版早在 2011-03-04 就上架、2015 年由 Ghostly International 做成黑膠與 CD。行文不得寫「起點」「第一張」。｜**可安全寫的時序主張**：〈Megalovania〉先用於 Homestuck 與 EarthBound ROM hack、後來才進本作（英文維基明載）；Fox 在本作之前以替 Homestuck 寫音樂為人所知（同上）。"
+ },
+ {
+  "key": "desc2:Toby Fox|DELTARUNE Chapter 1 OST",
+  "artist": "Toby Fox",
+  "album": "DELTARUNE Chapter 1 OST",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group db638f34 的欄位：title「DELTARUNE Chapter 1 OST」、artist-credit「Toby Fox」、first-release-date 2018-11-01、primary-type Album、secondary-types [Soundtrack]，轄下 7 個 release。",
+    "src": "https://musicbrainz.org/release-group/db638f34-9f14-4899-b0e0-40671f2fc184"
+   },
+   {
+    "f": "回問該 release-group 轄下的 release：**七筆全部都是 40 軌**——2018-11-01 XW／Official 數位版掛 Materia Collective、編號 MCOL-0169，標題作《DELTARUNE Chapter 1: Original Game Soundtrack》；同日另有 JP／Official 的《DELTARUNE, Chapter 1: オリジナルサウンドトラック》（Materia Collective）；2019-07-18 US／Official 是 Fangamer FG17 的 12 吋黑膠；另有 Fangamer 的 CD 兩筆（JP 與 2019-08 US）。轄下唯一一筆非 Official 的是 2018-11-01 XW 標 **Withdrawn**（撤下）的數位版，同樣 40 軌。",
+    "src": "https://musicbrainz.org/release-group/db638f34-9f14-4899-b0e0-40671f2fc184"
+   },
+   {
+    "f": "英文維基〈Deltarune〉記：Fox 在 2018 年 10 月 31 日**免費**釋出第一章（macOS 與 Windows），**一開始偽裝成一支「survey program」**，並說它是「給已經玩完 Undertale 的人」的作品；主機版（Nintendo Switch、PlayStation 4）於 2019 年 2 月 28 日同樣免費推出，由 8-4 開發與發行。",
+    "src": "https://en.wikipedia.org/wiki/Deltarune"
+   },
+   {
+    "f": "英文維基〈Deltarune〉的 Music 段落記：配樂主要由 Toby Fox 作曲，除了 Deltarune 自己的新主導動機外，**也把 Undertale 原聲帶的主導動機帶了進來**；各章的原聲盤都由 **Materia Collective** 發行，客座名單包含 Laura Shigihara、Lena Raine、Marcy Nabors、Alex Rosetti、Itoki Hana、insaneintherainmusic、Rakuichi、Camellia 與 Trevor Alan Gomes。",
+    "src": "https://en.wikipedia.org/wiki/Deltarune"
+   },
+   {
+    "f": "英文維基〈Deltarune〉記：這個企劃的念頭來自 Fox 2011 年大學時期的一場高燒夢，2012 年動工但在做出第一個房間之前就中止；**那次未完成的嘗試留下的音樂後來被回收進 Undertale**——主要對戰曲變成〈Bonetrousle〉，一首叫〈Joker Battle〉的曲子變成〈Heartache〉。書名 Deltarune 是 Undertale 的**易位構詞**。",
+    "src": "https://en.wikipedia.org/wiki/Deltarune"
+   },
+   {
+    "f": "英文維基〈Deltarune〉記：本作的配樂入圍 2019 年 G.A.N.G. Awards 的 Game Audio Network Guild／MAGFest People's Choice Award。",
+    "src": "https://en.wikipedia.org/wiki/Deltarune"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1443475587，collectionName「DELTARUNE Chapter 1 (Original Game Soundtrack)」、artistName「Toby Fox」（artistId 1060915053）、releaseDate 2018-11-01、trackCount 40、copyright「℗ 2018 Materia Collective LLC under exclusive license from Royal Sciences LLC」；`lookup?entity=song` 攤得開 **40 軌、40 軌都有 previewUrl**，第 1 軌〈Another Him〉0:48、第 39 軌〈Don't Forget (feat. Laura Shigihara)〉0:51、第 40 軌〈Before the Story〉1:29。該筆在 us／gb／de／ca／au 五個店面都上架。",
+    "src": "https://music.apple.com/us/album/1443475587"
+   },
+   {
+    "f": "Apple 日本店面另有同一張的日文條目 collectionId 1443724416「DELTARUNE Chapter 1 オリジナルサウンドトラック」，releaseDate 2018-11-01、trackCount 40，**只在 jp 店面**；亦即這張碟在 Apple 上是**日／英雙條目**。",
+    "src": "https://music.apple.com/jp/album/1443724416"
+   }
+  ],
+  "hookCandidates": [
+   "遊戲當年是免費放出來的，而且一開始偽裝成一支問卷程式",
+   "這些旋律的前身，七年前被回收進了另一款遊戲"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的有據：英文維基記本作配樂主要出自 Toby Fox 之手，除了新寫的主導動機外**也把 Undertale 的主導動機帶進來**；各章原聲盤都由 Materia Collective 發行，客座名單裡有 Laura Shigihara、Lena Raine、Camellia 等人（第 39 軌〈Don't Forget〉即掛 feat. Laura Shigihara）。曲長分佈：Apple 那 40 軌最短 0:27（〈Susie〉），最長 1:29（〈Before the Story〉一類），整體是短曲密集的編排。",
+  "keyTracks": [
+   "Another Him",
+   "Beginning",
+   "Don't Forget",
+   "Before the Story"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2018。**遊戲章節發售日與原聲帶發行日差一天，要分開寫**：英文維基記 Deltarune 第一章 **2018-10-31** 免費釋出；MB release-group 的 first-release-date 與轄下七筆 release 一致記 **2018-11-01**，Apple 的 releaseDate 也是 2018-11-01。同年，但不是同一天——行文若要寫日期，遊戲寫 10 月 31 日、原聲帶寫 11 月 1 日，不得混用。",
+  "notes": "**探測層誤記 unavailable，已救回（裁定 166 的同一形狀）。** 探測層在 jp/us/gb/de/fr/ca/au 七個店面各查到 1–2 筆卻全部沒配上，原因是**盤名變形**：卡片作《DELTARUNE Chapter 1 OST》，Apple 作《DELTARUNE Chapter 1 (Original Game Soundtrack)》——「OST」與「(Original Game Soundtrack)」在字串比對下零重疊。改走藝人目錄端點 `lookup?id=1060915053&entity=album&limit=200`（裁定 166）即命中。**正解 us 1443475587**（40 軌、℗2018 Materia Collective under exclusive license from Royal Sciences，us/gb/de/ca/au 五店），已依 c-97 第 11 條以 `lookup?entity=song` 覆核**曲目列攤得開且 40 軌全有 previewUrl**，曲序與 MB 轄下七筆 40 軌 release 相符，首軌〈Another Him〉可直接當固定試聽。**jp 店面是另一個 collectionId 1443724416（日文盤名，同樣 40 軌）**，策展層 risk 已預告這個雙條目，實查成立。｜**軌數無疑點**：MB 七筆 release 全部 40 軌，Apple 也是 40 軌，不是加曲版也不是二合一。｜**策展層說法無擋下項**：本卡的 curatorWhy 沒有時序或序數主張需要推翻。可安全寫的時序事實有兩條，都有英文維基直記：第一章 2018-10-31 免費釋出並偽裝成 survey program；2012 年那次流產的 Deltarune 留下的音樂被回收進 Undertale（〈Bonetrousle〉與〈Heartache〉）。"
+ },
+ {
+  "key": "desc2:C418|Minecraft - Volume Alpha",
+  "artist": "C418",
+  "album": "Minecraft - Volume Alpha",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7f4856cd 的欄位：title「Minecraft – Volume Alpha」（**MB 用 en dash U+2013**）、artist-credit「C418」、first-release-date 2011-03-04、primary-type Album、secondary-types [Soundtrack]，轄下 11 個 release、全部 Official。",
+    "src": "https://musicbrainz.org/release-group/7f4856cd-f078-4c0d-aef7-48474d8fa890"
+   },
+   {
+    "f": "回問該 release-group 轄下 release 的曲目：**數位／CD／卡帶是 24 軌，黑膠是 12 軌**——2011-03-04 XW 數位 24 軌；2015-08-21 US 的 Ghostly International **GI-243 CD 24 軌**、同日 XW 數位 24 軌；同一批的 **GI-243 LP 12 吋黑膠共五筆、全部 12 軌**（US 四筆、GB 一筆），2020 US 再壓一次仍是 12 軌；2024-05-17 XW 的黑膠 12 軌；2025-04-15 的卡帶回到 24 軌。",
+    "src": "https://musicbrainz.org/release-group/7f4856cd-f078-4c0d-aef7-48474d8fa890"
+   },
+   {
+    "f": "英文維基〈Minecraft – Volume Alpha〉開頭：這是德國電子音樂人 Daniel「C418」Rosenfeld 的**第一張原聲帶專輯**，為 2011 年的《Minecraft》所作，是他兩張 Minecraft 原聲盤裡的第一張；內容以簡素的環境音樂為主，也有幾首較輕快的曲子。",
+    "src": "https://en.wikipedia.org/wiki/Minecraft_%E2%80%93_Volume_Alpha"
+   },
+   {
+    "f": "同一條目的 Release 段落：本作 **2011 年 3 月 4 日經 Bandcamp 數位發行，是 Rosenfeld 的第一張商業發行**；2015 年 6 月 23 日由 Ghostly International 宣布實體化，**CD 與 LP 於 2015 年 8 月 21 日發行**，另有限量 1000 張的透明黑膠；2025 年 4 月 15 日 Ghostly 宣布卡帶版自 6 月 13 日起發售。**商業版收了幾首遊戲裡沒有的曲子**——有的是從遊戲砍掉的（如〈Excuse〉），有的來自他先前的專輯（如〈Droopy Likes Ricochet〉）。封面是一塊 3D 化的 Minecraft 草地方塊。",
+    "src": "https://en.wikipedia.org/wiki/Minecraft_%E2%80%93_Volume_Alpha"
+   },
+   {
+    "f": "同一條目的 Production and composition 段落：全碟以鋼琴與弦樂為主的簡素環境／原音音樂，**這個做法是被 Minecraft 音效引擎的技術限制逼出來的**——Rosenfeld 原本想寫戰鬥時播放的「史詩」音樂、依生態域切換的音樂、以及只在洞穴裡響起的音樂，全都因為引擎做不到或觸發時間太短而作罷，於是改寫安靜簡素的曲子；他的思路來自《Dwarf Fortress》(2006)。製作用 **Ableton Live**，並用了 Moog Voyager 等合成器。**全部曲子做完後他重新排序、必要時把曲子加長，讓每一首自然接進下一首**，目的是讓整張碟可以一次聽完、獨立於遊戲之外被當成一件作品。",
+    "src": "https://en.wikipedia.org/wiki/Minecraft_%E2%80%93_Volume_Alpha"
+   },
+   {
+    "f": "同一段另記：他替 Minecraft 做的**頭三首**是〈Minecraft〉〈Clark〉〈Sweden〉，在遊戲檔案裡分別叫 Calm 1、2、3；他後來認定這三首的寫法最受玩家歡迎，於是把它當成其餘曲目的基礎。但**不是全碟都這樣**——〈Cat〉與〈Dog〉是用合成器寫的輕快 chiptune。**遊戲裡的音樂是隨機播放的，沒有固定的觸發時點**，與這張碟的曲序無關。",
+    "src": "https://en.wikipedia.org/wiki/Minecraft_%E2%80%93_Volume_Alpha"
+   },
+   {
+    "f": "同一條目記：2025 年本作**入選美國國會圖書館的 National Recording Registry**，理由是「在文化、歷史或美學上具重要性」，**是繼《Super Mario Bros.》主題曲之後第二件入選的電玩音樂**。另記 2022 年入圍 Billboard Music Awards 的 Top Dance/Electronic Albums、2023 年 8 月 Rosenfeld 因本作登上 Billboard Emerging Artists 榜首、2026 年 7 月本作獲 RIAA 白金認證（〈Sweden〉2023 年 8 月先得金唱片，之後〈Minecraft〉與〈Subwoofer Lullaby〉也各得金唱片）。",
+    "src": "https://en.wikipedia.org/wiki/Minecraft_%E2%80%93_Volume_Alpha"
+   },
+   {
+    "f": "同一條目的樂評段落：AllMusic 的 Andy Kellman 說這張碟讓人「容易聽出他為什麼會被拿來與 Erik Satie 和 Brian Eno 相比」，並稱曲目變化得宜、「反覆出現的元素沒有一個突出到或簡單到會聽膩」；Mojo 的 Stephen Worthy 說它與一般大作遊戲那種大編制管弦樂相反，走的是小品路線。",
+    "src": "https://en.wikipedia.org/wiki/Minecraft_%E2%80%93_Volume_Alpha"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1867885113，collectionName「Minecraft - Volume Alpha」（**ASCII 連字號**）、artistName「C418」（artistId 424968471）、releaseDate 2011-03-04、trackCount 24、copyright「℗ 2011 C418」；`lookup?entity=song` 攤得開 **24 軌、24 軌都有 previewUrl**，第 1 軌〈Key〉1:05、第 3 軌〈Subwoofer Lullaby〉3:29、第 23 軌〈Droopy Likes Ricochet〉、第 24 軌〈Droopy Likes Your Face〉。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都是同一筆。",
+    "src": "https://music.apple.com/jp/album/1867885113"
+   }
+  ],
+  "hookCandidates": [
+   "他想寫的戰鬥曲、生態域曲、洞穴曲，遊戲引擎一首都跑不動",
+   "2025 年進了美國國會圖書館的錄音名錄，電玩音樂裡是第二件"
+  ],
+  "sound": "英文維基有具名依據，可寫：以鋼琴與弦樂為主的簡素環境／原音音樂，**這個簡素是被 Minecraft 音效引擎逼出來的**，不是風格選擇——原本設想的戰鬥曲、生態域切換曲與洞穴專用曲全部做不到。製作用 Ableton Live 與 Moog Voyager 等合成器；全部寫完後重新排序、必要時把曲子加長，讓每首自然接進下一首。**不是全碟都安靜**：〈Cat〉與〈Dog〉是合成器寫的輕快 chiptune。樂評面 AllMusic 的 Andy Kellman 提到他常被拿來與 Erik Satie、Brian Eno 相比。",
+  "keyTracks": [
+   "Key",
+   "Subwoofer Lullaby",
+   "Minecraft",
+   "Sweden",
+   "Droopy Likes Ricochet"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2011。**遊戲發售年與原聲帶發行年在這一張上要分開講**：英文維基把 Minecraft 記為 2011 年的遊戲（正式版 2011 年 11 月），而本張原聲帶 **2011-03-04 就先在 Bandcamp 上架**，是 Rosenfeld 的第一張商業發行——**原聲帶早於遊戲正式版**。MB 的 first-release-date 2011-03-04、Apple 的 releaseDate 2011-03-04 與 ℗ 2011 三處一致，年份無爭議。**實體版是四年後的事**（Ghostly International GI-243，2015-08-21 CD 與 LP），行文不得把 2015 當發行年。",
+  "notes": "**ready 覆核通過，配對正確；`collectionId` 很新但不是另一張碟。** Apple 的 1867885113 是個高號 id，實查是 **C418 整份目錄在 Apple 上重新遞送過**的結果——同一個 artistId 424968471 底下，2010 年的《Life Changing Moments Seem Minor in Pictures》是 1876720868、2011 年的《72 Minutes of Fame》是 1876359384、2013 年的《One》是 1876359570，全部是新 id 配舊日期與舊 ℗ 年。**六個店面（us/gb/jp/de/ca/au）都只有這一筆 Volume Alpha，沒有第二個候選**；releaseDate 2011-03-04 與 ℗ 2011 C418 都與 MB 的原盤逐項相符，24 軌也與 MB 的數位／CD 版逐數相符。已依 c-97 第 11 條覆核曲目列攤得開、24 軌全有 previewUrl。｜**軌數的坑要寫給下游**：**黑膠版只有 12 軌**（Ghostly GI-243 LP，MB 上五筆全是 12 軌），數位／CD／卡帶才是 24 軌。**行文不得說「黑膠收了 24 首」**。｜**另一個坑**：本張**不是遊戲內音樂的完整對應**——商業版收了遊戲裡沒有的曲子（〈Excuse〉是從遊戲砍掉的、〈Droopy Likes Ricochet〉來自他先前的專輯），而且遊戲內音樂是隨機播放、與碟上的曲序無關。**行文不得寫「照遊戲順序排」**。｜**盤名的連字號**：MB 用 en dash（Minecraft – Volume Alpha），卡單與 Apple 用 ASCII 連字號，依 c-101 策展層裁定第 4 條取 ASCII 版，本研究層照卡單原樣（裁定 6／70）。｜**時序主張查證結果**：策展層若要寫「第一張」，可以——英文維基明寫本作是 Rosenfeld 的**第一張原聲帶專輯**、也是他的**第一張商業發行**；「入選 National Recording Registry 的第二件電玩音樂（前一件是《Super Mario Bros.》主題曲）」同樣有英文維基直記，可寫。"
+ },
+ {
+  "key": "desc2:C418|Minecraft - Volume Beta",
+  "artist": "C418",
+  "album": "Minecraft - Volume Beta",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b109f08c 的欄位：title「Minecraft – Volume Beta」（**MB 用 en dash U+2013**）、artist-credit「C418」、first-release-date 2013-11-09、primary-type Album、secondary-types [Soundtrack]，轄下 4 個 release、全部 Official。",
+    "src": "https://musicbrainz.org/release-group/b109f08c-3368-4dff-9ab0-f11b27505eb8"
+   },
+   {
+    "f": "回問轄下 release 的曲目：**2013-11-09 XW／Official 數位版是單片 30 軌**（無廠牌）；2020-08-14 兩筆是 Ghostly International 的實體化——**CD 版 GI-360 是兩片 15＋15＝30 軌**，**黑膠版 GI-360LP 是兩片 7＋10＝17 軌**；2025-04-15 的卡帶回到 30 軌。**黑膠比數位少 13 軌。**",
+    "src": "https://musicbrainz.org/release-group/b109f08c-3368-4dff-9ab0-f11b27505eb8"
+   },
+   {
+    "f": "英文維基〈Music of Minecraft〉記：Volume Beta 是遊戲原聲的第二部，**2013 年 11 月 9 日**發行，內容涵蓋遊戲裡多數的音樂，**包括專為 Nether（下界）與主選單寫的曲子**，另外還收了預告片用的音樂與最終版遊戲裡沒用上的器樂曲。它 2013 與 2023 兩度進 Billboard Dance/Electronic Albums 榜，**兩次都停在第 14 名**；**2020 年才由 Ghostly 首度壓製黑膠與 CD**。",
+    "src": "https://en.wikipedia.org/wiki/Music_of_Minecraft"
+   },
+   {
+    "f": "同一條目記：這張以環境音樂為主的碟**整體色調比前一張暗**。Rosenfeld 說〈Alpha〉是一首組曲，是「對 Volume Alpha 舊曲的一次慶祝」；他第一首明確為了讓遊戲的「創造模式」有自己一套配樂而寫的曲子是〈Blind Spots〉；〈Taswell〉是寫給他過世的朋友、美國遊戲網站 Giant Bomb 共同創辦人 Ryan「Taswell」Davis 的，他說「我不想用死亡記住他們，而是用他們每天展現的快樂」。Rosenfeld 自己形容這張碟「極其多樣」，比 Volume Alpha「更有打擊感、更旋律化、也更進行式」。",
+    "src": "https://en.wikipedia.org/wiki/Music_of_Minecraft"
+   },
+   {
+    "f": "同一條目記：**碟上有四首是前作曲目的重製**——〈Ki〉〈Moog City 2〉〈Mutation〉〈Beginning 2〉分別重做自 Volume Alpha 的〈Key〉〈Moog City〉〈Minecraft〉〈Beginning〉。",
+    "src": "https://en.wikipedia.org/wiki/Music_of_Minecraft"
+   },
+   {
+    "f": "同一條目的背景段落記：Rosenfeld 從 15 歲起就以 C418 為名做音樂，受 Aphex Twin 的電子作品影響；2007 年起活躍於獨立遊戲社群 TIGSource，在那裡認識還在早期開發 Minecraft 的 Markus Persson。Persson 選擇的是**委託**而不是雇用，**因此他替 Minecraft 寫的所有音樂的所有權仍在他自己手上**；兩張原聲盤也都收了不是為遊戲寫的曲子，「把專輯延伸成一件可以獨立播放的完整作品」。",
+    "src": "https://en.wikipedia.org/wiki/Music_of_Minecraft"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1867890087，collectionName「Minecraft - Volume Beta」（**ASCII 連字號**）、artistName「C418」（artistId 424968471）、releaseDate 2013-11-09、trackCount 30、copyright「℗ 2013 C418」；`lookup?entity=song` 攤得開 **30 軌、30 軌都有 previewUrl**，第 1 軌〈Ki〉1:32、第 2 軌〈Alpha〉10:03、第 16 軌〈Taswell〉8:36、第 19 軌〈The End〉15:05、第 30 軌〈Intro〉4:36。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都是同一筆。",
+    "src": "https://music.apple.com/jp/album/1867890087"
+   }
+  ],
+  "hookCandidates": [
+   "第十六軌是寫給一位朋友的，八分半，名字就是他的網名",
+   "有四首是把前一張的曲子重做一遍，連曲名都只加了一個數字"
+  ],
+  "sound": "有具名依據可寫：Rosenfeld 自己說這張「極其多樣」，比 Volume Alpha「更有打擊感、更旋律化、也更進行式」；英文維基另記整體色調比前作暗。內容除了遊戲內音樂（含專為 Nether 與主選單寫的曲子）之外，還收了預告片音樂與最終版沒用上的器樂曲。長度差距很大——Apple 那 30 軌裡〈Eleven〉只有 1:11，〈The End〉長達 15:05。**不要寫成純環境音樂**：〈Alpha〉是一首十分鐘的組曲，Rosenfeld 說它是「對 Volume Alpha 舊曲的一次慶祝」。",
+  "keyTracks": [
+   "Ki",
+   "Alpha",
+   "Blind Spots",
+   "Taswell",
+   "The End"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2013。**遊戲與原聲帶的年份要分開講**：Minecraft 本體是 2011 年的遊戲，本張是 2013-11-09 發行的第二部原聲盤（英文維基另記它對應遊戲 1.7.2 版）。MB 的 first-release-date 2013-11-09、Apple 的 releaseDate 2013-11-09 與 ℗ 2013 三處一致，年份無爭議。**實體版是七年後**（Ghostly International GI-360／GI-360LP，2020-08-14），行文不得把 2020 當發行年。",
+  "notes": "**ready 覆核通過，配對正確；`collectionId` 很新但不是另一張碟。** 與 Volume Alpha 同因：C418 整份目錄在 Apple 上重新遞送過（同一 artistId 424968471 底下多張舊碟都配新 id）。六個店面都只有這一筆 Volume Beta，releaseDate 2013-11-09 與 ℗ 2013 C418 與 MB 原盤逐項相符，30 軌與 MB 數位版逐數相符；已依 c-97 第 11 條覆核曲目列攤得開、30 軌全有 previewUrl。｜**軌數的坑（比 Alpha 更嚴重）**：**黑膠版只有 17 軌**（Ghostly GI-360LP，7＋10），CD 版才是 30 軌（15＋15）。**行文不得說「黑膠兩片收齊三十首」**。｜**盤名的連字號**：MB 用 en dash，卡單與 Apple 用 ASCII 連字號，依 c-101 策展層裁定第 4 條取 ASCII 版，本研究層照卡單原樣（裁定 6／70）。｜**與前作的關係要寫準**：〈Ki〉〈Moog City 2〉〈Mutation〉〈Beginning 2〉是〈Key〉〈Moog City〉〈Minecraft〉〈Beginning〉的重製（英文維基直記），**不是同曲再收**。｜**Nether 的音樂不要寫成 Lena Raine 的那一批**：本張收的是 Rosenfeld 2013 年為 Nether 寫的曲子；Raine 是 2020 年「Nether Update」才加入的另一組音樂，兩者不同（英文維基同一條目分節記載）。"
+ },
+ {
+  "key": "desc2:Lena Raine|Celeste: Original Soundtrack",
+  "artist": "Lena Raine",
+  "album": "Celeste: Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1ca3f284 的欄位：title「Celeste: Original Soundtrack」、artist-credit「Lena Raine」、first-release-date 2018-01-25、primary-type Album、secondary-types [Soundtrack]，轄下 5 個 release、全部 Official。",
+    "src": "https://musicbrainz.org/release-group/1ca3f284-ac4d-40ee-b946-bde7adbf6c43"
+   },
+   {
+    "f": "回問轄下 release 的曲目：**2018-01-25 兩筆 XW／Official 數位版都是單片 21 軌**（其中一筆掛 Radical Dreamland、編號 RADL-0008）；**2018 年 Ship to Shore PhonoCo. STS-028 的兩片 12 吋黑膠是 9＋10＝19 軌**（MB 上三筆同編號條目皆同）。**黑膠比數位少兩軌。**",
+    "src": "https://musicbrainz.org/release-group/1ca3f284-ac4d-40ee-b946-bde7adbf6c43"
+   },
+   {
+    "f": "英文維基〈Celeste (video game)〉記：遊戲 2018 年 1 月 25 日在 Linux、macOS、Nintendo Switch、PlayStation 4 與 Windows 發售，隔天上 Xbox One；配樂由 **Lena Raine** 譜寫。",
+    "src": "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+   },
+   {
+    "f": "同一條目的 Music 段落記：Raine 寫了本作**大部分**的配樂，**B 面關卡的音樂多數是其他作曲家把她的曲子重混而成**；她的樂譜反過來影響了某些關卡的視覺設計。音效設計師 Kevin Regamey 會先在音樂上疊音效以對應玩法，Raine 再補上「musical ambience」。",
+    "src": "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+   },
+   {
+    "f": "同一段記：**遊戲裡每個角色各有一件代表樂器**——Madeline 是鋼琴、Badeline 是合成器、Theo 是吉他、Oshiro 是「像特雷門琴的」合成器；Granny 是例外，Raine 說她「體現的是山的力量、是個近乎無所不在的存在」。Badeline 的主題**全部寫在小調**，首次出現在〈Resurrections〉、之後在多首曲子裡再現；Madeline 的主題則「以明亮為主」，只偶爾轉小調。〈Anxiety〉一曲 Raine 想抓的是恐慌發作的感覺，做法是讓代表 Madeline 的鋼琴主題被代表 Badeline 的合成器「吞沒」。",
+    "src": "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+   },
+   {
+    "f": "同一段記：Raine 說〈In the Mirror〉是她寫過最奇怪的曲子之一，那些以合成器為主的段落她自認讓人想到 Vangelis 與《銀翼殺手》(1982)，用來對應 Madeline 遭遇的「宇宙級恐怖」；曲中那段人聲是 Raine 自己唱的、代表 Madeline 的內心獨白，**因為鏡子的主題而被倒放**——她把自己關在暗櫃裡錄，想錄出一種幾乎聽不清、只在背景低語的聲音。〈Resurrections〉則要在〈First Steps〉那種較單純的旋律進行之外，做出一種「疏離」而「像不太真實的空間」的縹緲聲響，因為它會在一段清醒夢的段落播放。",
+    "src": "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+   },
+   {
+    "f": "同一條目記：到 2018 年底，本作原聲帶在 Spotify 上被播放超過 400 萬次、售出逾 6000 份。2019 年 1 月 21 日宣布由 Trevor Alan Gomes 演奏的鋼琴改編盤《Celeste Piano Collections》（Materia Collective 的 Piano Collections 系列）於 1 月 25 日發行；**同年 7 月 Materia Collective 買下本作音樂的出版權，B 面音樂的那幾位作曲家因此有 17 個月沒有拿到版稅**。",
+    "src": "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1544899658，collectionName「Celeste (Original Soundtrack)」、artistName「Lena Raine」（artistId 1339902048）、releaseDate 2018-01-25、trackCount 21、copyright「℗ 2018 Radical Dreamland」；`lookup?entity=song` 攤得開 **21 軌、21 軌都有 previewUrl**，第 1 軌〈Prologue〉1:08、第 3 軌〈Resurrections〉9:39、第 10 軌〈Anxiety〉1:53、第 12 軌〈In the Mirror〉9:38、第 18 軌〈Reach for the Summit〉11:09、第 21 軌〈My Dearest Friends〉2:13。",
+    "src": "https://music.apple.com/jp/album/1544899658"
+   }
+  ],
+  "hookCandidates": [
+   "鏡子那一首的人聲是她自己關在暗櫃裡錄的，而且倒著放",
+   "每個角色配一件樂器：鋼琴、合成器、吉他，還有一台像特雷門琴的東西"
+  ],
+  "sound": "英文維基有具名依據，可寫：**角色即樂器**——Madeline 是鋼琴、Badeline 是合成器、Theo 是吉他、Oshiro 是「像特雷門琴的」合成器；Badeline 的主題整段寫在小調，Madeline 的以明亮為主。〈Anxiety〉的做法是讓鋼琴被合成器吞沒，用來對應恐慌發作。〈In the Mirror〉的合成器段落，Raine 自認讓人想到 Vangelis 與《銀翼殺手》，曲中那層低語人聲是她自己在暗櫃裡錄後倒放的。曲長極不平均：Apple 那 21 軌裡〈Prologue〉只有 1:08，〈Reach for the Summit〉長達 11:09。",
+  "keyTracks": [
+   "Prologue",
+   "First Steps",
+   "Resurrections",
+   "Anxiety",
+   "In the Mirror"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2018。**遊戲發售日與原聲帶發行日同一天**：英文維基記遊戲 2018-01-25 發售，MB release-group 的 first-release-date 與轄下兩筆數位 release 同記 2018-01-25，Apple 的 releaseDate 也是 2018-01-25，℗ 2018 Radical Dreamland。四處一致，年份無爭議。**黑膠是同年稍晚**（Ship to Shore PhonoCo. STS-028，MB 記 2018-05），不是另一個年份。",
+  "notes": "**ready 覆核通過，配對正確。** Apple jp 1544899658 的 21 軌與 MB 兩筆 2018-01-25 數位 release（含 Radical Dreamland RADL-0008）逐數相符，℗ 年與廠牌也對得上；已依 c-97 第 11 條覆核曲目列攤得開、21 軌全有 previewUrl，曲序首軌〈Prologue〉、末軌〈My Dearest Friends〉與原盤一致，固定試聽取首軌沒有問題（裁定 157 已逐軌看過位置）。｜**軌數的坑**：**黑膠版只有 19 軌**（Ship to Shore STS-028，9＋10），數位版才是 21 軌。**行文不得說「黑膠兩片收齊二十一首」**。｜**作者歸屬要寫準**：英文維基明寫 Raine 寫的是「大部分」配樂，**B 面關卡的音樂多數是其他作曲家把她的曲子重混的**——不過那些重混收在另一張《Celeste B-Sides》，不在本卡這 21 軌裡（策展層已把 B-Sides 列為刻意不釘）。**行文不得寫「全碟由她一人包辦」，也不得把 B 面那批算進本張**。｜**策展層說法無擋下項**：本卡的 curatorWhy 沒有需要推翻的時序或序數主張。｜**可安全寫的細節**：角色—樂器對應、〈In the Mirror〉的倒放人聲、〈Anxiety〉的鋼琴被合成器吞沒，三者都出自英文維基引 Raine 本人的說法。"
+ },
+ {
+  "key": "desc2:Austin Wintory|Journey",
+  "artist": "Austin Wintory",
+  "album": "Journey",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d1850227 的欄位：title「Journey」、artist-credit「Austin Wintory」、first-release-date 2012-04-10、primary-type Album、secondary-types [Soundtrack]，轄下 3 個 release、全部 Official：2012-04-10 XW 數位 18 軌、2012-10-09 US 的 Sumthing Else Music Works CD（SE-3009-2）18 軌、2015-08 US 的 iam8bit 兩片 12 吋黑膠（8BIT-8002）10＋8＝18 軌。**三種載體都是 18 軌。**",
+    "src": "https://musicbrainz.org/release-group/d1850227-c7c7-42c8-b469-6e99023412de"
+   },
+   {
+    "f": "英文維基〈Journey (2012 video game)〉記：遊戲 **2012 年 3 月 13 日**在 PlayStation Network（PS3）上架；**原聲帶專輯 4 月 10 日在 iTunes 與 PlayStation Network 發行**，是 Wintory 從整套配樂裡挑出「最重要」的段落、重新編排成可以脫離玩家操作獨立聽的版本，**共 18 軌、全長超過 58 分鐘**，最後一軌〈I Was Born for This〉有 Lisbeth Scott 的人聲。實體版由 Sumthing Else Music Works 於 **2012 年 10 月 9 日**發行，兩片裝黑膠則是 2015 年。",
+    "src": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)"
+   },
+   {
+    "f": "同一條目記：原聲帶發行後在 20 多個國家進了 iTunes 原聲榜前十，並在 Billboard 銷售榜上到第 **116** 名、首週售出逾 4000 份——**當時電玩音樂專輯在該榜上的第二高名次**。",
+    "src": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)"
+   },
+   {
+    "f": "同一條目記：本作原聲帶入圍 **2013 年葛萊美獎「Best Score Soundtrack for Visual Media」，是該獎項史上第一張入圍的電玩原聲帶**，最後沒有得獎。",
+    "src": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)"
+   },
+   {
+    "f": "同一條目的 Music 段落記：Jenova Chen 在開發之初與 Wintory 見面講他對這款遊戲的構想，**Wintory 走出會議、還沒走到車邊就已經想出主題的核心，當天晚上就把主要的大提琴主題寫完並錄好**；之後他花了三年與開發團隊來回：他先給一段音樂、團隊拿去做關卡，他再邊玩邊改、改完送回去。第一軌〈Nascence〉寫得很順，最後一軌〈Apotheosis〉則試過好幾種差異極大的版本。",
+    "src": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)"
+   },
+   {
+    "f": "同一段記：**不像多數遊戲替每個角色或場景各配一個主題，Wintory 讓所有曲子都建立在同一個主題上**，那個主題代表玩家與這趟旅程，大提琴獨奏尤其代表玩家本人。他自己的說法是「像一首大型大提琴協奏曲，你是獨奏者，其餘所有樂器是你周圍的世界」，但他也說那不必然算管弦樂，因為裡面有電子的成分：大提琴一開始「浸在一片電子聲響裡」，先獨自浮出，再融進整個管弦樂團，對應玩家走向山的過程。**玩家在遊戲裡遇到另一個人時，豎琴與中提琴會被動態加進音樂裡。**遊戲的美術取材自多種文化，但 Wintory 刻意把明顯的文化特徵從音樂裡拿掉，想讓它「盡可能普世、盡可能沒有文化歸屬」。",
+    "src": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)"
+   },
+   {
+    "f": "同一段記：大提琴由 **Tina Guo** 擔任；**所有非電子的樂器都是在北馬其頓斯科普里與 Macedonia Radio Symphonic Orchestra 錄的**。",
+    "src": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1553230092，collectionName「Journey (Original Video Game Soundtrack)」、artistName「Austin Wintory」（artistId 280949326）、releaseDate 2012-04-10、trackCount 18、copyright「℗ 2012 Sony Interactive Entertainment LLC, under exclusive license to Sony Music Entertainment」；`lookup?entity=song` 攤得開 **18 軌、18 軌都有 previewUrl**，第 1 軌〈Nascence〉1:47、第 5 軌〈Threshold〉6:05、第 17 軌〈Apotheosis〉7:10、第 18 軌〈I Was Born for This〉4:46。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都上架。",
+    "src": "https://music.apple.com/us/album/1553230092"
+   }
+  ],
+  "hookCandidates": [
+   "他走出那場會議、還沒走到車子旁，主題就已經在腦子裡了",
+   "十八首曲子只有一個主題，大提琴那條線就是玩家自己"
+  ],
+  "sound": "英文維基有具名依據，可寫：全碟十八軌建立在**同一個主題**上，大提琴獨奏代表玩家；Wintory 自述「像一首大型大提琴協奏曲，你是獨奏者，其餘樂器是你周圍的世界」，但因為含電子成分而不算純管弦。大提琴開場「浸在一片電子聲響裡」，先獨自浮出、再融入樂團。大提琴是 Tina Guo，非電子樂器在北馬其頓斯科普里與 Macedonia Radio Symphonic Orchestra 錄製；末軌〈I Was Born for This〉有 Lisbeth Scott 的人聲。他刻意把明顯的文化特徵從音樂裡移除。",
+  "keyTracks": [
+   "Nascence",
+   "The Call",
+   "Threshold",
+   "Apotheosis",
+   "I Was Born for This"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2012。**遊戲發售日與原聲帶發行日差了將近一個月，要分開寫**：英文維基記遊戲 **2012-03-13** 在 PSN 上架，原聲帶 **2012-04-10** 在 iTunes 與 PSN 發行。MB 的 first-release-date 2012-04-10 與 Apple 的 releaseDate 2012-04-10 都指原聲帶那一天。同年，日期不同——行文若要寫日期就要分清楚。實體 CD 是同年 10 月 9 日（Sumthing Else Music Works SE-3009-2）、黑膠是 2015 年（iam8bit 8BIT-8002），都不是發行年。",
+  "notes": "**探測層誤記 unavailable，已救回（裁定 166 的同一形狀）。** 探測層在 jp/us/gb/de/fr/ca/au 七個店面各查到 10–11 筆卻一筆都沒配上，原因是**盤名變形**：卡片作《Journey》（單字，四個字母），Apple 作《Journey (Original Video Game Soundtrack)》——依裁定 168 一族的長度差／子字串設計，這種「卡片盤名極短、Apple 盤名帶長副標」正是會被擋掉的形狀（同族先例：c-98《The Chieftains》）。改走藝人目錄端點 `lookup?id=280949326&entity=album&limit=200`（裁定 166）即命中。**正解 us 1553230092**（18 軌、℗2012 Sony Interactive Entertainment under exclusive license to Sony Music Entertainment，us/gb/jp/de/ca/au 六店都有），已依 c-97 第 11 條覆核曲目列攤得開、18 軌全有 previewUrl，曲序與 MB 三筆 18 軌 release 相符，首軌〈Nascence〉可直接當固定試聽。｜**同一位藝人名下有兩張像的碟，不要配錯**：`1614281095`《Traveler - A Journey™ Symphony》(2022，10 軌) 是十週年的**管弦重編盤**（倫敦交響樂團＋倫敦之聲合唱團＋Tina Guo，演出人數從約 30 人擴到約 130 人），**不是本卡這一張**；策展層已把它列為刻意不釘，探測與封面層都要避開。｜**時序主張查證通過，可以寫**：「2013 年葛萊美 Best Score Soundtrack for Visual Media 獎項**史上第一張入圍的電玩原聲帶**」——英文維基原文即為「the first video game soundtrack to be nominated for that category」，且明記最後沒有得獎，**行文不得寫成「得獎」**。另一條有來源的數字是 Billboard 銷售榜第 116 名、首週逾 4000 份，當時是電玩音樂專輯在該榜的第二高名次。｜**軌數無疑點**：MB 三種載體都是 18 軌，Apple 也是 18 軌。"
+ },
+ {
+  "key": "desc2:Austin Wintory|ABZÛ",
+  "artist": "Austin Wintory",
+  "album": "ABZÛ",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c0c72c43 的欄位：title「ABZÛ」、artist-credit「Austin Wintory」、first-release-date 2016-08-02、primary-type Album、secondary-types [Soundtrack]，轄下 5 個 release、全部 Official：2016-08-02 XW 數位 18 軌、同日 DZ 的 T-65b Records 數位 18 軌（標題作《Abzu》、無變音符號）、2016-10-21 US 的 Varèse Sarabande CD（302 067 453 8）18 軌、2017 年兩筆 iam8bit 兩片 12 吋黑膠（8BIT-8047）10＋8＝18 軌。**四種載體全是 18 軌。**",
+    "src": "https://musicbrainz.org/release-group/c0c72c43-c4b7-46e0-9b18-90eec38c465b"
+   },
+   {
+    "f": "英文維基〈Abzû〉記：遊戲由 Giant Squid 開發、505 Games 發行，**2016 年 8 月 2 日**先在 PS4（PSN）與 Windows（Steam）數位上架，實體版 2017 年 1 月 31 日才出。開發歷時三年、團隊十三人，其中導演 Matt Nava 與作曲家 Austin Wintory 都做過 2012 年的《Journey》——海洋的設定既是對《Journey》沙漠設定的反動，也來自 Nava 對潛水的愛好。",
+    "src": "https://en.wikipedia.org/wiki/Abz%C3%BB"
+   },
+   {
+    "f": "同一條目記：遊戲名取自蘇美神話——海洋女神 Tiamat 與淡水之神 Abzu 結合生出萬物；字面由蘇美語的「ab」（水）與「zu」（知）組成，開發團隊譯作「Ocean of Wisdom」。**蘇美拼法 Abzu 與阿卡德拼法 Apsû 不同，團隊把兩者合成了遊戲的標題**；而 u 上那個抑揚符（circumflex）一度讓團隊很頭痛，幾乎沒人知道怎麼打出來，程式在編碼上也常出問題。",
+    "src": "https://en.wikipedia.org/wiki/Abz%C3%BB"
+   },
+   {
+    "f": "同一條目的 Music 段落記：全碟由 Austin Wintory 作曲、指揮並製作。**音樂從一開始就寫成互動、動態的形態，而不是綁在特定的觸發點上**，為此他必須反覆玩遊戲、去體會玩家會經歷什麼。與《Journey》一樣，**第一首寫的是主題〈To Know, Water〉，其後三年的曲子都由那個主題長出來**。**第二首以後的曲名，不是取自《埃努瑪·埃利什》(Enūma Eliš) 的英譯，就是取自該關卡出現的海洋生物名**；片尾曲是純合唱，歌詞照正常速度唱。",
+    "src": "https://en.wikipedia.org/wiki/Abz%C3%BB"
+   },
+   {
+    "f": "同一段記：配器**以豎琴為基底起頭，之後才加入合唱**——合唱由 London Voices Choir 演唱，用來承載故事的靈性面，**歌詞是《埃努瑪·埃利什》的前十行，音節被拉長以求聽起來陌生**；再往後加進整個管弦樂團。如同他在《Journey》與《刺客教條：梟雄》的做法，**這一張也是「獨奏者＋合奏團」的形態，這次的獨奏樂器是雙簧管**，由 Kristin Naigus 演奏——Wintory 是在 YouTube 上聽到她翻奏《Journey》的曲子才找上她的。前段關卡的音樂改了又改，**約有五十分鐘的音樂被丟掉、只留下五分鐘進遊戲**；後段則多半一次就定案。潛水者的主題是全碟反覆出現的主導動機。",
+    "src": "https://en.wikipedia.org/wiki/Abz%C3%BB"
+   },
+   {
+    "f": "同一段記：官方原聲帶 **2016 年 8 月 2 日**經 Bandcamp 與 iTunes 數位發行，實體版 **10 月 22 日**由 Varèse Sarabande 發行。**專輯裡的〈Balaenoptera Musculus〉是一首遊戲裡沒有用到的長曲**，Wintory 因為喜歡它而放了進來。本作原聲帶拿下 2017 年 Game Audio Network Guild 的「Best Original Soundtrack Album」，入圍 2017 年 BAFTA Games Awards 的 Music 項（敗給《Virginia》），並在第 20 屆 D.I.C.E. Awards 入圍「Outstanding Achievement in Original Music Composition」（該獎最後由《Doom》拿下）。Wintory 另以本作拿下 2016 年 IFMCA 的「Best Original Score for a Video Game or Interactive Media」，**是他連續第二年得該獎**。",
+    "src": "https://en.wikipedia.org/wiki/Abz%C3%BB"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1138476050，collectionName「**Abzu**」（**無變音符號**）、artistName「オースティン・ウィントリー」（artistId 280949326）、releaseDate 2016-08-02、trackCount 18、copyright「℗ 2016 T-65b Records」；`lookup?entity=song` 攤得開 **18 軌、18 軌都有 previewUrl**，第 1 軌〈To Know, Water〉1:58、第 10 軌〈Balaenoptera Musculus〉3:58、第 17 軌〈Their Waters Were Mingled Together〉10:14、第 18 軌〈Then Were Created the Gods in the Midst of Heaven〉3:49。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都上架。",
+    "src": "https://music.apple.com/jp/album/1138476050"
+   }
+  ],
+  "hookCandidates": [
+   "第一首寫完之後，其餘三年的曲子都是從那個主題長出來的",
+   "前段關卡丟掉了五十分鐘的音樂，只留下五分鐘"
+  ],
+  "sound": "英文維基有具名依據，可寫：配器**從豎琴起家**，之後才疊上合唱，最後才是完整管弦樂團；合唱由 London Voices Choir 唱，歌詞取《埃努瑪·埃利什》前十行、音節拉長到聽起來陌生。全碟是「獨奏者＋合奏團」的形態，**獨奏樂器是雙簧管**（Kristin Naigus）。潛水者的主題是反覆出現的主導動機，第二首以後的曲名不是《埃努瑪·埃利什》英譯的句子，就是關卡裡那種海洋生物的學名。音樂寫成動態互動的形態，不綁固定觸發點。",
+  "keyTracks": [
+   "To Know, Water",
+   "Delphinus Delphis",
+   "Balaenoptera Musculus",
+   "Their Waters Were Mingled Together",
+   "Then Were Created the Gods in the Midst of Heaven"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2016。**遊戲數位上架日與原聲帶發行日是同一天**：英文維基記遊戲 2016-08-02 在 PSN 與 Steam 數位上架，官方原聲帶同日經 Bandcamp 與 iTunes 發行；MB 的 first-release-date 2016-08-02、Apple 的 releaseDate 2016-08-02 與 ℗ 2016 三處一致。**實體 CD 是同年 10 月 22 日**（Varèse Sarabande，MB 記 10-21），黑膠是 2017 年（iam8bit 8BIT-8047），都不是發行年；遊戲的實體版也要到 2017-01-31，**不要拿實體日期當遊戲或原聲的發行年**。",
+  "notes": "**ready 覆核通過，配對正確。** Apple jp 1138476050 的 18 軌與 MB 四種載體逐數相符（數位／CD／黑膠都是 18 軌），℗ 2016 T-65b Records 與 MB 那筆 DZ／T-65b 數位 release 的廠牌一致；已依 c-97 第 11 條覆核曲目列攤得開、18 軌全有 previewUrl，首軌〈To Know, Water〉可直接當固定試聽（裁定 157 已逐軌看過位置）。｜**盤名的變音符號**：卡片作《ABZÛ》（U+00DB），MB 同；**Apple 作《Abzu》，沒有抑揚符**。這正是探測層在這一批要防的形狀，本張因為 jp 店面第一筆就命中而沒出事，但**下游做字串比對時要記得兩邊不相等**。依裁定 6／70，盤名照卡單原樣寫《ABZÛ》。｜**曲目的坑**：**〈Balaenoptera Musculus〉（第 10 軌）是遊戲裡沒有用到的曲子**，Wintory 因為喜歡才收進專輯——**行文不得把它說成遊戲中的某個場景**。｜**時序主張查證**：策展層若要寫獎項，可寫的有據為「2017 年 G.A.N.G. Best Original Soundtrack Album 得獎」「2017 BAFTA Music 入圍未得（敗給《Virginia》）」「第 20 屆 D.I.C.E. 原創音樂項入圍未得（該獎由《Doom》拿下——**同批 b 組的另一張卡**）」「2016 年 IFMCA 電玩配樂獎得獎、**連續第二年**」。**不得寫成 BAFTA 或 D.I.C.E. 得獎。**｜**與同一位藝人另一張卡的關係**：本批同時收了 Wintory 的《Journey》(2012)，英文維基明記 Abzû 的海洋設定是對 Journey 沙漠設定的反動、且兩張都由他採「獨奏者＋合奏團」的做法（Journey 是大提琴、本張是雙簧管），這條可以安全寫。"
+ },
+ {
+  "key": "desc2:Mick Gordon|DOOM: Original Game Soundtrack",
+  "artist": "Mick Gordon",
+  "album": "DOOM: Original Game Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f40630d4 的欄位：title「DOOM: Original Game Soundtrack」、artist-credit「Mick Gordon」、first-release-date 2016-05-27、primary-type Album、secondary-types [Soundtrack]，轄下 6 個 release。**其中 Official 的四筆**是：**2016-09-28 XW 數位、Bethesda Softworks、單片 31 軌**；2018 XW 的 Laced Records 兩片 12 吋黑膠（BI 14351）11＋9＝20 軌；2018-07-27 XE 的 Laced Records 兩片 CD 16＋15＝31 軌；2019-10-21 XE 的 Laced Records 四片黑膠＋一支 USB 隨身碟（9＋7＋7＋8 黑膠、USB 收 31 軌）。**另兩筆是 Bootleg**：2016-05-27 的 27 軌數位、以及無日期的《DOOM Complete Video Game Score》三片 50＋37＋17 軌。**注意 first-release-date 2016-05-27 指的是那筆 Bootleg，不是官方盤。**",
+    "src": "https://musicbrainz.org/release-group/f40630d4-f52d-403f-81a2-c6904e8acc99"
+   },
+   {
+    "f": "英文維基〈Doom (2016 video game)〉記：遊戲由 id Software 開發、Bethesda Softworks 發行，**2016 年 5 月 13 日**在 PS4、Windows、Xbox One 全球發售（日本 5 月 19 日）；配樂由澳洲音樂人 **Mick Gordon** 作曲，美國電子音樂人與音效設計師 Richard Devine 亦有貢獻。",
+    "src": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+   },
+   {
+    "f": "同一條目的 Soundtrack 段落記：Gordon 2014 年年中到 id 位於達拉斯的總部談這份工作，**id 當場要求他不要用吉他、不要寫金屬樂**——儘管 1993 年初代《Doom》的配樂正是 Bobby Prince 寫的鞭擊金屬——理由是 id 覺得那個曲風已經變得「俗氣」。他們鼓勵他用合成器，於是他用合成器去做 Argent 能量可能發出的聲音：**設計了好幾串效果器鏈，把次低頻正弦波送進去，再疊上白噪音，好讓一般喇叭也聽得見**。Gordon 說「做了六到九個月純合成器」之後，他才說服 id 讓他用吉他，並開始實驗怎麼改造吉他的聲音。**主選單那首的主要 riff，是把一把九弦吉他和初代《Doom》裡電鋸的取樣疊在一起做出來的。**",
+    "src": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+   },
+   {
+    "f": "同一段記：Gordon 替火星與地獄設計了不同的音景，他對《Revolver》雜誌說：「因為（火星那些）環境是人造的……音樂聽起來也得像人造的。……這使得地獄那邊更無調、更不協和、更怪。」〈At Doom's Gate〉一類曲子含有向 Bobby Prince 初代配樂致敬的成分。他還在配樂裡藏了彩蛋：**遊戲 2016 年 5 月上市後不久，玩家用頻譜圖在〈Cyberdemon〉一曲裡找出五芒星與數字「666」**；2017 年他在 GDC 演講時透露某一軌裡藏了一句倒放的「Jesus loves you」，2019 年 2 月 7 日他在推特上確認最後一個彩蛋已被找到。",
+    "src": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+   },
+   {
+    "f": "同一條目記：**本作配樂拿下 The Game Awards 2016 的 Best Music / Sound Design 獎**；頒獎典禮上 Gordon 與 Periphery 鼓手 Matt Halpern、《Quake II》作曲家 Sascha Dikiciyan 一起演出了〈Rip and Tear〉〈BFG Division〉與《Quake II》〈Descent Into Cerberon〉的組曲。本作另入圍第 13 屆 BAFTA Games Awards 的 Audio Achievement 與 Best Music 兩項。PC Gamer 的 James Davenport 在 2016 年 12 月稱這套配樂是該年「最好的之一」。",
+    "src": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+   },
+   {
+    "f": "英文維基〈Abzû〉記：第 20 屆 D.I.C.E. Awards 的「Outstanding Achievement in Original Music Composition」由《Doom》拿下（同項入圍的還有《Abzû》）。",
+    "src": "https://en.wikipedia.org/wiki/Abz%C3%BB"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1885803215，collectionName「DOOM (Original Game Soundtrack)」、artistName「Mick Gordon」（artistId 469318624）、releaseDate **2016-09-28**、trackCount 31、copyright「℗ 2016 Bethesda Softworks」；`lookup?entity=song` 攤得開 **31 軌、31 軌都有 previewUrl**，第 1 軌〈I. Dogma〉0:45、第 2 軌〈Rip & Tear〉4:18、第 3 軌〈At Doom's Gate〉1:11、第 11 軌〈Bfg Division〉8:27、第 19 軌〈Cyberdemon〉6:18、第 31 軌〈IV. Doom〉1:47。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都上架。",
+    "src": "https://music.apple.com/jp/album/1885803215"
+   }
+  ],
+  "hookCandidates": [
+   "接案第一天，對方就說：不要吉他，不要金屬",
+   "主選單那段 riff，是九弦吉他疊上一把 1993 年的電鋸取樣"
+  ],
+  "sound": "英文維基有具名依據，可寫：出發點是**合成器**——把次低頻正弦波送過好幾串自製效果器鏈、再疊白噪音讓一般喇叭聽得見，那是「Argent 能量」的聲音；吉他是六到九個月之後才被允許加進來的，主選單那段 riff 是九弦吉他疊上初代《Doom》電鋸取樣。火星與地獄兩套音景刻意分開：Gordon 說火星的環境是人造的、音樂聽起來也得像人造的，因此地獄那邊「更無調、更不協和、更怪」。〈At Doom's Gate〉含向 Bobby Prince 初代配樂致敬的成分。曲長差距大：Apple 那 31 軌裡最短 0:45，〈Bfg Division〉8:27、〈Vega Core〉8:03。",
+  "keyTracks": [
+   "I. Dogma",
+   "Rip & Tear",
+   "At Doom's Gate",
+   "Bfg Division",
+   "Cyberdemon"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2016。**遊戲發售日與原聲帶發行日差了四個半月，這一張一定要分開寫**：英文維基記遊戲 **2016-05-13** 發售；**原聲帶是 2016-09-28**——MB 那筆 Bethesda Softworks 的 31 軌數位 release 與 Apple 的 releaseDate 都記這一天，℗ 2016 Bethesda Softworks。**MB release-group 的 first-release-date 記 2016-05-27，那是轄下一筆標 Bootleg 的 27 軌數位盤的日期，不是官方原聲的發行日，不得引用。**同一年，但行文若要寫日期，遊戲寫 5 月 13 日、原聲帶寫 9 月 28 日。實體版更晚（Laced Records，2018 年黑膠與 CD、2019 年四片黑膠盒裝），不是發行年。",
+  "notes": "**ready 覆核通過，配對正確；31 軌不是併了別的東西。** 疑點是 collectionId 1885803215 很新，實查：Apple 六個店面（us/gb/jp/de/ca/au）都是同一筆，releaseDate 2016-09-28 與 ℗ 2016 Bethesda Softworks，**與 MB 那筆 2016-09-28 XW／Official／Bethesda Softworks 的單片 31 軌數位 release 逐項相符**——所以 31 軌就是原盤軌數，不是加曲版。已依 c-97 第 11 條覆核曲目列攤得開、31 軌全有 previewUrl，首軌〈I. Dogma〉可直接當固定試聽（裁定 157 已逐軌看過位置）。**Mick Gordon 的 Apple 藝人目錄（artistId 469318624）裡與《DOOM》相關的只有這一筆專輯**，沒有同名雙胞胎。｜**軌數的坑**：**Laced Records 的兩片黑膠只有 20 軌**（11＋9），CD 版才是 31 軌（16＋15）。**行文不得說「黑膠收齊三十一首」**。｜**MB 的 first-release-date 是陷阱**：2016-05-27 那筆是 **Bootleg**（27 軌），轄下另有一筆無日期的《DOOM Complete Video Game Score》三片 104 軌也是 Bootleg，**兩筆都不得當來源**。｜**與本批另一張卡的交叉點**：第 20 屆 D.I.C.E. 原創音樂獎由本作拿下，同項入圍的是同批 b 組的 Wintory《ABZÛ》——兩張卡可互相參照，來源是英文維基〈Abzû〉。｜**時序主張查證**：可安全寫「The Game Awards 2016 Best Music / Sound Design 得獎」「第 13 屆 BAFTA Audio Achievement 與 Best Music 入圍」；**不得寫成 BAFTA 得獎**。｜**曲名照 Apple 原樣**：Apple 把〈BFG Division〉印成〈Bfg Division〉、〈UAC Report File; SHTO36U3〉印成〈Uac Report File; Shto36u3〉，那是 Apple 的大小寫正規化，**行文引用曲名時用通行的全大寫寫法即可，但不要據此判成別張碟**。"
+ },
+ {
+  "key": "desc2:Mick Gordon|DOOM Eternal (Original Game Soundtrack)",
+  "artist": "Mick Gordon",
+  "album": "DOOM Eternal (Original Game Soundtrack)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8782d6f7 的欄位：title「DOOM Eternal (Original Game Soundtrack)」、artist-credit「Mick Gordon」、first-release-date 2020-04-18、primary-type Album、secondary-types [Soundtrack]，轄下 6 個 release，**其中只有一筆是 Official**：2020-04-18 XW、Bethesda Softworks、**單片 59 軌**的數位版。其餘五筆全部標 **Bootleg**（《DOOM Eternal OST - Remastered》50 軌、《DOOM Eternal OST Remix》49 軌、《Eternal Gains - Doom Eternal (Gym Mix)》24 軌、2024 年《DOOM Eternal: Complete Soundtrack》五片 78 軌、2025 年《[KMK Remaster]》三片 54 軌）。",
+    "src": "https://musicbrainz.org/release-group/8782d6f7-183c-442d-9437-c6703f04361e"
+   },
+   {
+    "f": "英文維基〈Doom Eternal〉記：遊戲由 id Software 開發，**2020 年 3 月 20 日**在 PS4、Stadia、Windows、Xbox One 發售；Mick Gordon 回任作曲，**但他與 id Software 起了衝突，雙方最後斷了關係**。",
+    "src": "https://en.wikipedia.org/wiki/Doom_Eternal"
+   },
+   {
+    "f": "同一條目的 Music 段落記：2019 年 1 月，Gordon **公開徵求「metal screamers」來參與一場錄音**，組成的「heavy metal choir」包含 Helstar 的 James Rivera、Static-X 的 Tony Campos、Aborted 的 Sven de Caluwé、Black Crown Initiate 的 James Dorton，以及 Tengger Cavalry 的 Nature Ganganbaigal——**Ganganbaigal 在錄音之後、遊戲上市之前過世**。另有男低音（oktavist）Eric Hollaway 加入人聲。",
+    "src": "https://en.wikipedia.org/wiki/Doom_Eternal"
+   },
+   {
+    "f": "同一條目的 Soundtrack dispute 段落記：**原聲帶 2020 年 4 月 19 日開放給收藏版買家下載**。上線幾小時內，樂迷就發現專輯與遊戲內音樂有落差，例如〈BFG Division 2020〉的壓縮量遠大於 2016 年那版。**Gordon 證實他只混了其中少數幾軌**（如〈Meathook〉與〈Command and Control〉），metadata 顯示多數曲目是由 id 的音訊總監 Chad Mossholder 所混。Gordon 表示，以他在這個案子上的經歷，他懷疑自己不會再與 id 合作。",
+    "src": "https://en.wikipedia.org/wiki/Doom_Eternal"
+   },
+   {
+    "f": "同一段記：2020 年 5 月，執行製作人 Marty Stratton 發表聲明，稱 Gordon 有充裕時間混音卻一再拖延、錯過期限、不回電郵與電話；依 Stratton 的說法，Gordon 既沒在期限前混完、又拒絕依約提供母帶檔案，於是他提議由 Mossholder 協作，Gordon 同意並交出約 12 首完成的曲子，**其餘曲目由 Mossholder 用遊戲內的素材混音剪接而成，為了與其他遊戲音效平衡而壓縮得更重**。Stratton 後來寫道，id 原本打算繼續與 Gordon 合作，但往後會換作曲家。Gordon 則發表自己的版本，稱**在遊戲上市前兩天之前根本沒有原聲帶專輯的合約**，且 Mossholder 早在他被找來之前就已經做了六個月的專輯編排。Bethesda 隨後發聲明力挺 Stratton、Mossholder 與 id 團隊。**後續的 The Ancient Gods 擴充內容改由 Andrew Hulshult 與 David Levy 作曲。**",
+    "src": "https://en.wikipedia.org/wiki/Doom_Eternal"
+   },
+   {
+    "f": "Apple Music 覆核：以 Mick Gordon 的藝人目錄端點 `lookup?id=469318624&entity=album&limit=200` 逐店面列出 us／gb／jp／de／ca／au 六份完整目錄，**六份裡都沒有《DOOM Eternal》的任何一張專輯**（目錄裡的遊戲原聲只有《DOOM (Original Game Soundtrack)》1885803215 與《Wolfenstein: The New Order (Original Game Soundtrack)》1325867045）。改以關鍵字「DOOM Eternal」在 us／jp／gb 三個店面搜專輯，回來的全部是別人的翻奏、混音與單曲（The Scribe、Cyberpunkers、Morendo、Alt In The Halls 等），**沒有一筆是 Bethesda 官方的那張 59 軌原聲**。",
+    "src": "https://itunes.apple.com/lookup?id=469318624&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "他在網路上公開徵求會尖叫的金屬歌手，組了一個合唱團",
+   "專輯上線幾小時，樂迷就聽出它和遊戲裡的聲音不是同一回事"
+  ],
+  "sound": "沒有具名來源逐曲談這張的音色，因此不寫聲響形容。可寫的有據：2019 年 1 月 Gordon 公開徵求「metal screamers」錄了一個「heavy metal choir」，成員來自 Helstar、Static-X、Aborted、Black Crown Initiate 與 Tengger Cavalry，另有男低音 Eric Hollaway。**混音是這張碟最不能略過的一件事**：Gordon 只混了少數幾軌（〈Meathook〉〈Command and Control〉），其餘由 id 音訊總監 Chad Mossholder 以遊戲內素材混製、且**為了與遊戲音效平衡而壓縮得更重**，樂迷用〈BFG Division 2020〉與 2016 年版對比就聽得出來。",
+  "keyTracks": [
+   "Meathook",
+   "Command and Control",
+   "BFG Division 2020"
+  ],
+  "status": "thin",
+  "yearVerified": "卡單 2020。**遊戲發售日與原聲帶發行日差了約一個月，要分開寫**：英文維基記遊戲 **2020-03-20** 發售；原聲帶英文維基記 **2020-04-19** 開放給收藏版買家下載，MB 那筆唯一的 Official release 記 **2020-04-18**——**兩處差一天，依裁定 18／46／141，行文不得正面斷言原聲帶的確切發行日**，寫「2020 年 4 月」或改用有共識的錨點（遊戲 3 月 20 日上市）即可。年份 2020 三處一致，無爭議。",
+  "notes": "**unavailable 覆核成立，維持 unavailable——這是本組唯一一張經藝人目錄端點覆核後仍然查無的西方大作。** 依裁定 166 走目錄端點而非搜尋端點：`lookup?id=469318624&entity=album&limit=200` 在 us／gb／jp／de／ca／au **六個店面各回一份完整目錄，六份裡都沒有任何一張 DOOM Eternal**；再以關鍵字在 us／jp／gb 搜專輯，回來的全是第三方翻奏與混音單曲。**這與 c-101 策展層裁定第 9 條的判斷一致**（Bethesda 數位獨佔、版權方沒把碟放上串流），屬裁定 152 分界裡的「搜到了但目錄裡沒有這張」，不是比對擋掉。**不得為了湊數配到那些第三方的《Doom Eternal》單曲或《DOOM - Soundtrack Remade》（jp 1603974211，Alt In The Halls，23 軌）——那正是同組 Banjo-Kazooie 被配到重編曲盤的錯法。**｜**status 判 thin 的理由**：facts 全部集中在「這張碟是怎麼做出來、又為什麼吵起來」，**沒有任何具名來源談它的音樂內容或音色**（英文維基〈Doom Eternal〉全文沒有一段像〈Doom 2016〉那樣的作曲工法描述），可寫的素材密度不足以撐 full。｜**行文的紅線**：混音爭議雙方各執一詞、Bethesda 已公開力挺 id 一方，**行文只能寫雙方各自主張了什麼、不得判定誰對誰錯，也不得暗示任何一方說謊**。可安全寫的客觀事實有三條：Gordon 只混了少數幾軌（他本人證實）、其餘由 Chad Mossholder 完成（metadata 與雙方聲明都不否認）、後續 The Ancient Gods 換了作曲家。｜**MB 的坑**：轄下六筆 release 只有一筆 Official（59 軌），另外五筆全是 Bootleg 且軌數各異（24／49／50／54／78），**行文不得引用 59 以外的軌數**。"
+ },
+ {
+  "key": "desc2:Jesper Kyd|Assassin’s Creed II: The Original Game Soundtrack",
+  "artist": "Jesper Kyd",
+  "album": "Assassin’s Creed II: The Original Game Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5bf7477e 的欄位：title「Assassin’s Creed II: The Original Game Soundtrack」（**彎撇號 U+2019**）、artist-credit「Jesper Kyd」、first-release-date 2009-09-20、primary-type Album、secondary-types [Soundtrack]，轄下 5 個 release、全部 Official。**軌數分兩種**：2009-11-16 XW 的 Ubisoft Music 數位版有兩筆——一筆標題作《Assassin’s Creed 2 (Original Game Soundtrack)》、**兩片 17＋18＝35 軌**，另一筆作《Assassin’s Creed II》、**單片 35 軌**（編號 5284）；2015-10-02 US 的 Sumthing Else Music Works CD（SE-3145-2）同樣是**兩片 17＋18＝35 軌**。**另兩筆只有 14 軌**：2009-09-20 的 Ubisoft Entertainment DVD 與一筆無日期的《Assassin’s Creed II: Game Soundtrack》CD。",
+    "src": "https://musicbrainz.org/release-group/5bf7477e-8d21-4e52-a7c7-7ad93add0a5f"
+   },
+   {
+    "f": "英文維基〈Assassin's Creed II〉的 Music 段落記：本作配樂由 Jesper Kyd 譜寫，**在 Capitol Records 錄音，編制是 35 人的弦樂團與 13 人的合唱團**，Melissa Kaplan 擔任特邀人聲。**原聲帶 2009 年 11 月 16 日以下載形式發行**；另有 **14 軌**的版本收在預購特典「Black Edition」隨附的遊戲光碟上。",
+    "src": "https://en.wikipedia.org/wiki/Assassin%27s_Creed_II"
+   },
+   {
+    "f": "英文維基〈Jesper Kyd〉記：**〈Ezio's Family〉是 Kyd 為《刺客教條 II》所寫，後來成為整個《刺客教條》系列的非官方主題曲，在其後每一部作品的原聲帶裡都被重混或取樣。**",
+    "src": "https://en.wikipedia.org/wiki/Jesper_Kyd"
+   },
+   {
+    "f": "同一條目記：Jesper Kyd Jakobson，1972 年 2 月 3 日生，丹麥作曲家與音效設計師；幼時學鋼琴，之後受過幾年古典吉他、讀譜、合唱與鋼琴古典作曲的訓練，**但主要是自學**。他 14 歲起用 Commodore 64 作曲，後來換 Amiga，與 Mikael Balle 一起加入 demo 團體 Silents DK。他的配樂「使用管弦樂、合唱、原音素材的加工處理與電子音景」。《Hitman 2: Silent Assassin》用了布達佩斯交響樂團與匈牙利廣播合唱團共 110 位樂手；《刺客教條》一代他寫的是帶電影感的中東風格配樂，之後接連寫了 II（2009）、Brotherhood（2010）與 Revelations（2011）。",
+    "src": "https://en.wikipedia.org/wiki/Jesper_Kyd"
+   },
+   {
+    "f": "英文維基〈Assassin's Creed II〉記：遊戲 2009 年 11 月發售（PS3／Xbox 360），故事主線設在 1476 至 1499 年的義大利文藝復興盛期；六個月內銷量逾九百萬套。在第 13 屆 Interactive Achievement Awards（今 D.I.C.E. Awards）上，本作入圍包含「Original Music Composition」在內的多個獎項。",
+    "src": "https://en.wikipedia.org/wiki/Assassin%27s_Creed_II"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1640108379，collectionName「**Assassin's Creed 2 (Original Game Soundtrack)**」（**用阿拉伯數字 2、直撇號**）、artistName「Jesper Kyd」（artistId 39888247）、releaseDate 欄位是 **2007-01-01**（明顯的佔位值）、copyright「℗ 2009 Ubisoft Music」、trackCount 35；`lookup?entity=song` 攤得開 **35 軌、35 軌都有 previewUrl**，**分兩片**（第一片 17 軌、第二片 18 軌），第 1-1 軌〈Earth〉3:59、1-2〈Venice Rooftops〉3:18、1-3〈Ezio's Family〉3:58、2-18〈The Animus 2.0〉4:14。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都上架。",
+    "src": "https://music.apple.com/us/album/1640108379"
+   }
+  ],
+  "hookCandidates": [
+   "第三軌那首後來變成整個系列的招牌，二十年間每一部都要重混一次",
+   "三十五個人拉弦、十三個人唱，錄音室是 Capitol"
+  ],
+  "sound": "英文維基有具名依據，可寫：**在 Capitol Records 錄音，編制為 35 人弦樂團＋13 人合唱團**，Melissa Kaplan 擔任特邀人聲。Kyd 的作法（英文維基藝人條目原話）是「管弦樂、合唱、原音素材的加工處理與電子音景」並用。要注意的是這 35 軌**分成兩片**，Apple 上第一片 17 軌、第二片 18 軌。",
+  "keyTracks": [
+   "Earth",
+   "Venice Rooftops",
+   "Ezio's Family",
+   "Home in Florence",
+   "The Animus 2.0"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2009。**遊戲與原聲帶同年、同月，但不是同一天**：英文維基記遊戲 2009 年 11 月發售、**原聲帶 2009-11-16 以下載形式發行**；MB 那兩筆 35 軌的 Ubisoft Music 數位 release 也記 2009-11-16，Apple 的 ℗ 是 2009 Ubisoft Music。**MB release-group 的 first-release-date 記 2009-09-20，那是隨遊戲光碟附的 14 軌 DVD 版的日期，不是完整原聲帶的發行日**，行文不得引用。**Apple 的 releaseDate 欄位記 2007-01-01，那是佔位值**（裁定 140 附第 2 點講的形狀），與任何一個真實日期都不符，**下游不得採信**。年份取 2009，三處來源一致。實體 CD 是六年後（Sumthing Else Music Works SE-3145-2，2015-10-02），不是發行年。",
+  "notes": "**探測層誤記 unavailable，已救回（裁定 166 的同一形狀）。** 探測層在七個店面各查到 11–12 筆卻一筆都沒配上，原因是**兩層盤名變形同時發生**：(a) 卡片作「Assassin’s Creed **II**」，Apple 作「Assassin's Creed **2**」——羅馬數字對阿拉伯數字，正是裁定 168 那條卷號記號要處理的形狀的反面（那次是 Pt. II 被吃掉，這次是 II 與 2 對不上）；(b) 卡片的撇號是**彎撇號 U+2019**（依 MB 實體），Apple 用**直撇號**。改走藝人目錄端點 `lookup?id=39888247&entity=album&limit=200`（裁定 166）即命中。**正解 us 1640108379**（35 軌、℗2009 Ubisoft Music，六個店面都有），已依 c-97 第 11 條覆核曲目列攤得開、35 軌全有 previewUrl，且**與 MB 兩筆 2009-11-16 的 35 軌 Ubisoft Music release 逐數相符**（17＋18 的分片方式也一樣），確認是完整原聲不是別版。首軌〈Earth〉可當固定試聽。｜**⚠ 同一位藝人目錄裡有大量高相似度的假陽性，下游要避開**：`1640065664`《Assassin's Creed (Original Game Soundtrack)》(2007，11 軌，**一代**)、`1640078747`《Assassin's Creed Brotherhood》(2010，20 軌)、`1640101475`《Assassin's Creed Revelations (The Complete Recordings)》(2011，80 軌)、`1640067834`／`1640067425`《…Revelations, Vol. 1／Vol. 2》(各 28 軌)、`1640085309`《Assassin's Creed Unity (The Complete Edition)》(2014，56 軌)、`1640271819`《Assassin's Creed: The Best of Jesper Kyd》(2016，34 軌，**精選輯、軌數與本張只差一軌**)。**最危險的是那張 34 軌的精選輯**——盤名同樣以 Assassin's Creed 開頭、掛名同樣是 Jesper Kyd、軌數只差 1。｜**Valhalla 那一組另有一個坑**：`1536212285`（us/ca）與 `1536202998`（gb/jp/de/au）是**同一張碟在不同店面的兩個 collectionId、廠牌字串還不同**（Lakeshore Records vs Soundtrack Records d/b/a Lakeshore），與本卡無關但同一位藝人，記下來免得日後重查。｜**軌數的坑**：**14 軌那個版本是隨遊戲光碟附的節錄**（Black Edition），不是原聲帶本身。**行文不得寫「原聲帶只有十四首」**。｜**時序主張查證通過，可以寫**：〈Ezio's Family〉成為整個系列的非官方主題曲、在其後每一部原聲帶裡被重混或取樣——英文維基〈Jesper Kyd〉直記，可寫。"
+ },
+ {
+  "key": "desc2:Darren Korb|Bastion: Original Soundtrack",
+  "artist": "Darren Korb",
+  "album": "Bastion: Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f8f33c9d 的欄位：title「Bastion: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2011-08-05、primary-type Album、secondary-types [Soundtrack]，轄下 4 個 release、全部 Official：2011-08-05 XW 數位 22 軌、2011-08-27 XW 數位 22 軌、2011-09-02 US 的 Supergiant Games CD 22 軌、2017-06-20 US 的 Supergiant Games 兩片 12 吋黑膠（SGG-02）11＋11＝22 軌。**四種載體全是 22 軌。**",
+    "src": "https://musicbrainz.org/release-group/f8f33c9d-b938-43d6-a1dd-fc4010bee8c6"
+   },
+   {
+    "f": "英文維基〈Bastion (video game)〉記：遊戲是 Supergiant Games 的第一部作品，由七人團隊花將近兩年做成，2011 年 7 月 20 日先上 Xbox Live Arcade、8 月 16 日上 Steam；**Darren Korb 一人包辦音效與音樂**。",
+    "src": "https://en.wikipedia.org/wiki/Bastion_(video_game)"
+   },
+   {
+    "f": "同一條目的 Music 段落記：Korb 是被總監 Amir Rao 找來的——**兩人是兒時玩伴**；**這是 Korb 配樂的第一款電玩**，此前他只做過幾部小型電視節目與電影。他在企劃初期就加入，好幾首曲子甚至寫在對應關卡的最終設計定案之前。**Korb 自己把這套配樂的風格叫「acoustic frontier trip hop」**（原音的邊疆 trip hop），要同時喚起美國西部邊疆與一個異域奇幻世界；曲子把「層層堆疊的重取樣節拍與原音元素」結合起來，他之所以選這個路子，是因為它和他聽過的電玩配樂都不一樣。**音樂是在他紐約公寓的衣櫥裡錄的**，音效與 Cunningham 那三千多句旁白也是。",
+    "src": "https://en.wikipedia.org/wiki/Bastion_(video_game)"
+   },
+   {
+    "f": "同一段記：Korb 也寫了全部歌詞。**碟上有四首帶人聲的主題曲**：〈Build That Wall〉（Ashley Lynn Barrett 唱）、〈What's Left Undone〉（Logan Cunningham 唱）、〈Mother, I'm Here〉（Korb 自己唱）、〈Setting Sail, Coming Home〉（Korb 與 Barrett 對唱）。**Supergiant 原本沒打算發完整原聲專輯，是因為玩家要求才發的**：數位版 2011 年 8 月 5 日上架，**多收了兩首遊戲裡沒有的曲子**——〈Get Used to It〉（旁白由 Greg Kasavin 寫、Logan Cunningham 唸）與〈The Pantheon (Ain't Gonna Catch You)〉（Korb 作詞、Cunningham 演唱）。9 月 2 日出了 Korb 簽名的限量實體 CD；**到 2011 年 11 月原聲帶賣出三萬份**。兩片黑膠 2017 年由 Supergiant 發行，2023 年 iam8bit 再發。",
+    "src": "https://en.wikipedia.org/wiki/Bastion_(video_game)"
+   },
+   {
+    "f": "同一條目的 Awards 段落記：本作在 2011 年 Spike Video Game Awards 拿下 **Best Original Score**，**〈Build That Wall (Zia's Theme)〉拿下 Best Song in a Game**，〈Setting Sail, Coming Home (End Theme)〉同項入圍；GameSpot 年度獎把 Song of the Year 給了〈Build That Wall〉；音樂另拿下 Game Audio Network Guild 的 Best Audio in a Casual/Indie/Social Game，**Darren Korb 本人獲選該屆 Rookie of the Year**；Official Xbox Magazine 也把 Best Music 給了本作。",
+    "src": "https://en.wikipedia.org/wiki/Bastion_(video_game)"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 459457260，collectionName「Bastion (Original Soundtrack)」、artistName「Darren Korb」（artistId 459457290）、releaseDate 2011-08-05、trackCount 22、copyright「℗ 2011 Supergiant Games」；`lookup?entity=song` 攤得開 **22 軌、22 軌都有 previewUrl**，第 1 軌〈Get Used to It〉0:54、第 4 軌〈Bynn the Breaker〉4:10、第 21 軌〈Setting Sail, Coming Home (End Theme)〉2:55、第 22 軌〈The Pantheon (Ain't Gonna Catch You)〉2:27。",
+    "src": "https://music.apple.com/jp/album/459457260"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟是在紐約公寓的衣櫥裡錄的，連三千句旁白也是",
+   "他自己給這個聲音取了名字：原音的邊疆 trip hop"
+  ],
+  "sound": "英文維基有具名依據，可寫：Korb 自己把風格叫 **「acoustic frontier trip hop」**，要同時喚起美國西部邊疆與一個異域奇幻世界，做法是把層層堆疊的重取樣節拍與原音元素結合；他選這條路是因為它和他聽過的電玩配樂都不一樣。**錄音地點是他紐約公寓的衣櫥。**四首人聲曲的分工有據：〈Build That Wall〉Ashley Lynn Barrett、〈What's Left Undone〉Logan Cunningham、〈Mother, I'm Here〉Korb 本人、〈Setting Sail, Coming Home〉Korb 與 Barrett 對唱；歌詞全部由 Korb 寫。",
+  "keyTracks": [
+   "Get Used to It",
+   "Build That Wall (Zia's Theme)",
+   "Mother, I'm Here",
+   "Setting Sail, Coming Home (End Theme)",
+   "The Pantheon (Ain't Gonna Catch You)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2011。**遊戲發售日與原聲帶發行日相差兩週多，要分開寫**：英文維基記遊戲 2011-07-20 上 Xbox Live Arcade、8-16 上 Steam；**原聲帶數位版 2011-08-05 上架**（MB 的 first-release-date、Apple 的 releaseDate 與 ℗ 2011 Supergiant Games 三處一致）。同年，日期不同。實體 CD 是 2011-09-02、黑膠是 2017 年（SGG-02），都不是發行年。",
+  "notes": "**ready 覆核通過，配對正確。** Apple jp 459457260 的 22 軌與 MB 四種載體逐數相符（數位／CD／黑膠都是 22 軌），releaseDate 2011-08-05 與 MB 的 first-release-date 同日，℗ 2011 Supergiant Games 與 MB 的廠牌一致；已依 c-97 第 11 條覆核曲目列攤得開、22 軌全有 previewUrl，首軌〈Get Used to It〉與末軌〈The Pantheon〉的位置與英文維基所述的「多收的兩首」相符（裁定 157 已逐軌看過位置），固定試聽取首軌沒有問題。｜**曲目的坑**：**〈Get Used to It〉（第 1 軌）與〈The Pantheon (Ain't Gonna Catch You)〉（第 22 軌）是遊戲裡沒有的曲子**，是為了發專輯才加的——**行文不得把首軌說成遊戲的開場音樂**。｜**策展層說法無擋下項**，且兩條時序主張查證通過、可以寫：「Supergiant Games 的第一部作品」與「**Korb 配樂的第一款電玩**」都有英文維基直記（後者原文：Bastion was the first video game that Korb had scored）；「原本沒打算發原聲專輯、因玩家要求才發」同樣有直記。｜**獎項要寫準**：2011 Spike VGA 的 **Best Original Score 得獎**、**〈Build That Wall (Zia's Theme)〉Best Song in a Game 得獎**、G.A.N.G. 的 Best Audio in a Casual/Indie/Social Game 得獎、Korb 獲 G.A.N.G. Rookie of the Year。**〈Setting Sail, Coming Home (End Theme)〉是入圍不是得獎，不要寫混。**｜**同一位藝人本批有三張卡**（Bastion／Transistor／Hades），Apple artistId 都是 459457290，三張的盤名結構相同（作品名＋Original Soundtrack），**下游做比對時要靠作品名那一段分辨**。"
+ },
+ {
+  "key": "desc2:Darren Korb|Transistor: Original Soundtrack",
+  "artist": "Darren Korb",
+  "album": "Transistor: Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 16b60f17 的欄位：title「Transistor: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2014-05-20、primary-type Album、secondary-types [Soundtrack]，轄下 5 個 release、全部 Official。**軌數有三種**：2014-05-20 的 US CD（Supergiant Games）與同日的 XW 數位版都是 **23 軌**；同日另有一筆 XW 數位版是 **24 軌**；2016-03 的 US 兩片 12 吋黑膠是 12＋12＝**24 軌**；2017-05-20 的 XW 數位版是 **49 軌**（擴充版）。",
+    "src": "https://musicbrainz.org/release-group/16b60f17-aeca-4f2b-a8b8-f0ec1e7e88de"
+   },
+   {
+    "f": "英文維基〈Transistor (video game)〉記：遊戲由 Supergiant Games 自製自發，**2014 年 5 月 20 日**在 Windows（Steam）與北美 PS4 發售；團隊從《Bastion》的七人擴編到十二人，Darren Korb 是作曲與音訊總監。主要在舊金山 SoMa 的新辦公室開發，**部分音訊工作仍在紐約完成**。",
+    "src": "https://en.wikipedia.org/wiki/Transistor_(video_game)"
+   },
+   {
+    "f": "同一條目的 Music 段落記：原聲帶由 Darren Korb 作曲與製作，**與遊戲同日（2014-05-20）發行**。在《Bastion》擔任女聲的 **Ashley Lynn Barrett 回來唱了五首**：〈The Spine〉〈In Circles〉〈We All Become〉〈Signals〉〈Paper Boats〉。**Korb 自己把這套配樂的風格叫「old-world electronic post-rock」**（舊世界的電子後搖）；為了對上這個路子，用的樂器包含電吉他、豎琴、手風琴、曼陀林、電鋼琴與合成器襯底。另外，在遊戲的暫停與「Turn()」選單時，音樂上會覆一層 EQ 濾波，做出遙遠、模糊的聲音。",
+    "src": "https://en.wikipedia.org/wiki/Transistor_(video_game)"
+   },
+   {
+    "f": "同一段記：**原聲帶上架後十天內賣出四萬八千份**。**2015 年 11 月 2 日**為了紀念《Transistor》登上 Apple TV，Korb 新寫並製作了一首 bonus track〈She Shines〉加進原聲帶，人聲仍是 Ashley Barrett。",
+    "src": "https://en.wikipedia.org/wiki/Transistor_(video_game)"
+   },
+   {
+    "f": "英文維基〈Bastion (video game)〉記（同一位作曲家的前一張）：Korb 是《Bastion》總監 Amir Rao 的兒時玩伴，《Bastion》是他配樂的第一款電玩，他把那一張的風格叫「acoustic frontier trip hop」，音樂錄在他紐約公寓的衣櫥裡。",
+    "src": "https://en.wikipedia.org/wiki/Bastion_(video_game)"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 879693684，collectionName「Transistor (Original Soundtrack)」、artistName「Darren Korb」（artistId 459457290）、releaseDate 2014-05-20、trackCount 23、copyright「℗ 2014 Supergiant Games」；`lookup?entity=song` 攤得開 **23 軌、23 軌都有 previewUrl**，第 1 軌〈Old Friends〉3:21、第 4 軌〈The Spine (feat. Ashley Barrett)〉3:14、第 22 軌〈Blank Canvas〉0:53、第 23 軌〈Paper Boats (feat. Ashley Barrett)〉4:01。",
+    "src": "https://music.apple.com/jp/album/879693684"
+   }
+  ],
+  "hookCandidates": [
+   "上架十天賣了四萬八千份，那是一張電玩原聲帶",
+   "他給這個聲音取的名字是：舊世界的電子後搖"
+  ],
+  "sound": "英文維基有具名依據，可寫：Korb 自己把風格叫 **「old-world electronic post-rock」**；為了對上這個路子，用的樂器包含電吉他、豎琴、手風琴、曼陀林、電鋼琴與合成器襯底。女聲仍是 Ashley Lynn Barrett（《Bastion》那位），在〈The Spine〉〈In Circles〉〈We All Become〉〈Signals〉〈Paper Boats〉五首上。另有一個遊戲內的細節有來源：暫停與「Turn()」選單時音樂會被覆上 EQ 濾波，聽起來遙遠而模糊——**那是遊戲裡的處理，不是碟上的音軌**，行文要分清楚。",
+  "keyTracks": [
+   "Old Friends",
+   "The Spine",
+   "In Circles",
+   "We All Become",
+   "Paper Boats"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2014。**遊戲發售日與原聲帶發行日是同一天**：英文維基記遊戲與原聲帶都在 2014-05-20；MB 的 first-release-date 2014-05-20、Apple 的 releaseDate 2014-05-20 與 ℗ 2014 Supergiant Games 一致。年份無爭議。**要小心的是後續版本的年份**：2015-11-02 加了 bonus track〈She Shines〉、2016 年出兩片黑膠、2017-05-20 另有一個 49 軌的擴充數位版，**三者都不是本卡的發行年**。",
+  "notes": "**ready 覆核通過，配對正確；23 軌是原盤軌數。** Apple jp 879693684 的 23 軌與 MB 那筆 2014-05-20 US CD 及同日 XW 數位版逐數相符，releaseDate 與 ℗ 年也一致；已依 c-97 第 11 條覆核曲目列攤得開、23 軌全有 previewUrl，首軌〈Old Friends〉與末軌〈Paper Boats〉的位置與原盤相符（裁定 157 已逐軌看過位置）。｜**⚠ 這張碟在 MB 上有三種軌數，行文一定要鎖住 23**：23 軌（2014 原盤 CD 與數位）、**24 軌**（同日另一筆數位版與 2016 年兩片黑膠——那多出來的一軌對應英文維基記的 2015-11-02 bonus track〈She Shines〉）、**49 軌**（2017-05-20 的擴充數位版，即策展層列為刻意不釘的《Transistor: Original Soundtrack **Extended**》）。**行文不得寫「這張碟有二十四首／四十九首」**，也不得把〈She Shines〉當成本卡這一版的曲目。｜**策展層說法無擋下項。**｜**與同批另兩張卡的關係可安全寫**：Ashley Lynn Barrett 是《Bastion》的女聲、在本張回來唱五首（英文維基直記）；Korb 兩張碟各自給了風格一個自造的名字（acoustic frontier trip hop／old-world electronic post-rock），兩處都有來源。｜**下游比對提醒**：同一位藝人（artistId 459457290）名下三張卡的盤名都是「作品名 (Original Soundtrack)」，要靠作品名那一段分辨。"
+ },
+ {
+  "key": "desc2:Darren Korb|Hades: Original Soundtrack",
+  "artist": "Darren Korb",
+  "album": "Hades: Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group dc4818c3 的欄位：title「Hades: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2020-09-16、primary-type Album、secondary-types [Soundtrack]，轄下 2 個 release、都是 Official：2020-09-16 XW 的 Supergiant Games **數位版單片 30 軌**，以及 2020-09 US 的 Supergiant Games **兩片 CD、16＋14＝30 軌**。**兩種載體都是 30 軌。**",
+    "src": "https://musicbrainz.org/release-group/dc4818c3-a34f-40c6-9223-63570980694d"
+   },
+   {
+    "f": "英文維基〈Hades (video game)〉記：遊戲由 Supergiant Games 自製自發，**2018 年 12 月先以搶先體驗（early access）在 Epic Games Store 上架、2020 年 9 月 17 日正式發行**（macOS、Nintendo Switch、Windows 同日）。搶先體驗那近兩年賣了七十萬套，正式發行三天內再賣三十萬套、累計破百萬。Darren Korb 也是主角 Zagreus 的配音。",
+    "src": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+   },
+   {
+    "f": "英文維基〈Darren Korb〉的 Hades 段落記：**Korb 自己把這套配樂的風格叫「Mediterranean prog rock Halloween」**（地中海前衛搖滾萬聖節）。因為遊戲重度取材地中海，配樂用了**希臘的 bouzouki，以及土耳其的 lavta 與 baglama** 等傳統樂器，同時也有金屬吉他、管樂與打擊樂。Kotaku 的 Ari Notis 說這張是 Korb 音樂生涯的自然推進：「該有的都在：工業感的電子鼓、弦樂器的和聲，還有那個烤進骨子裡、幾乎嚐得到的酥脆音色。」",
+    "src": "https://en.wikipedia.org/wiki/Darren_Korb"
+   },
+   {
+    "f": "同一段記：**Austin Wintory 參與了這張碟**——他替〈On the Coast〉與〈In the Blood〉做管弦編曲。**部分曲目在 COVID-19 疫情爆發前不久於 Abbey Road 錄音。**Ashley Barrett 再度合作、人聲貫穿全碟。2018 年搶先體驗期間，Korb 先把〈Out of Tartarus〉當單曲發行；遊戲正式上市後，Korb 與 Supergiant 也把曲子逐首以單曲形式放出，因為他們「想讓音樂在遊戲之外馬上就聽得到」。",
+    "src": "https://en.wikipedia.org/wiki/Darren_Korb"
+   },
+   {
+    "f": "英文維基〈Darren Korb〉記：Korb 1983 年 11 月 5 日生，美國詞曲作者、作曲家與配音員，是 Supergiant Games 的音訊總監兼作曲家；他五歲起演音樂劇，高中在加州聖荷西的 Bellarmine College Preparatory 認識長期夥伴 Logan Cunningham，童年就與 Ashley Barrett 相識；大學在紐約大學讀音樂製作與音樂商務。他也是 Supergiant 的錄音負責人，親自替配音員錄音。",
+    "src": "https://en.wikipedia.org/wiki/Darren_Korb"
+   },
+   {
+    "f": "英文維基〈Hades (video game)〉的 Awards 段落記：本作拿下第 17 屆 BAFTA Games Awards、第 24 屆 D.I.C.E. Awards、第 10 屆 New York Game Awards、首屆 Gayming Awards、第 21 屆 Game Developers Choice Awards 與首屆 Global Industry Game Awards 的年度遊戲；**在第 10 屆 New York Game Awards 另拿下 Best Music**。另記本作是**第一款拿到雨果獎的電子遊戲**（2021 年雨果獎為此新設了一個電子遊戲特別類別）。",
+    "src": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1531339044，collectionName「Hades: Original Soundtrack」、artistName「Darren Korb」（artistId 459457290）、releaseDate 2020-09-16、trackCount 30、copyright「℗ 2020 Supergiant Games」；`lookup?entity=song` 攤得開 **30 軌、30 軌都有 previewUrl**，第 1 軌〈No Escape〉2:25、第 3 軌〈Out of Tartarus〉5:54、第 5 軌〈Lament of Orpheus〉3:13、第 27 軌〈On the Coast〉3:21、第 28 軌〈In the Blood (feat. Ashley Barrett)〉4:10、第 30 軌〈Good Riddance (feat. Ashley Barrett)〉2:59。",
+    "src": "https://music.apple.com/jp/album/1531339044"
+   }
+  ],
+  "hookCandidates": [
+   "作曲的人自己給這套音樂取的名字是：地中海前衛搖滾萬聖節",
+   "希臘的布祖基琴、土耳其的 lavta 與 baglama，加上一把金屬吉他"
+  ],
+  "sound": "英文維基有具名依據，可寫：Korb 自己把風格叫 **「Mediterranean prog rock Halloween」**；因為遊戲重度取材地中海，樂器用上**希臘 bouzouki、土耳其 lavta 與 baglama**，同時也有金屬吉他、管樂與打擊樂。人聲仍是 Ashley Barrett，貫穿全碟。**Austin Wintory 替〈On the Coast〉與〈In the Blood〉做管弦編曲**，部分曲目在疫情爆發前不久於 Abbey Road 錄音。Kotaku 的 Ari Notis 描述為「工業感的電子鼓、弦樂器的和聲，還有那個烤進骨子裡的酥脆音色」。",
+  "keyTracks": [
+   "No Escape",
+   "Out of Tartarus",
+   "Lament of Orpheus",
+   "In the Blood",
+   "Good Riddance"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2020。**這一張的「遊戲發售年」本身就分兩層，要寫清楚**：遊戲 **2018 年 12 月**先以搶先體驗上架，**2020 年 9 月 17 日**才正式發行。**原聲帶是 2020-09-16**——MB 的 first-release-date 與 Apple 的 releaseDate 都記這一天，℗ 2020 Supergiant Games。**原聲帶比遊戲正式版早一天**。年份 2020 無爭議；行文若寫「遊戲上市那年」要指正式發行的 2020，不要用 2018。",
+  "notes": "**ready 覆核通過，配對正確；30 軌是原盤軌數。** Apple jp 1531339044 的 30 軌與 MB 兩筆 release 逐數相符（數位單片 30 軌、CD 兩片 16＋14＝30 軌），releaseDate 與 ℗ 年一致；已依 c-97 第 11 條覆核曲目列攤得開、30 軌全有 previewUrl，首軌〈No Escape〉可當固定試聽（裁定 157 已逐軌看過位置）。｜**策展層裁定第 8 條點名的那組雙胞胎，實查成立且已釘對**：`bc728e2f`《Hades: Singles》(2018) 與本卡的 `dc4818c3`《Hades: Original Soundtrack》(2020) 是同一部作品的兩個 release-group、都掛 Darren Korb、盤名都以 Hades 開頭；分辨的依據就是軌數（本張 30 軌）。**〈Out of Tartarus〉（本張第 3 軌）2018 年曾以單曲形式先行發行**，那正是 Singles 那一組的來源，**行文不得把它寫成「新曲」**。｜**策展層說法無擋下項。**｜**時序主張查證**：「**第一款拿到雨果獎的電子遊戲**」有英文維基直記，但**那是頒給遊戲、不是頒給原聲帶**，行文若要用必須寫清楚主體。音樂本身有據的獎是第 10 屆 New York Game Awards 的 Best Music。｜**跨卡連結可安全寫**：**Austin Wintory 替本張的〈On the Coast〉與〈In the Blood〉做管弦編曲**——Wintory 是本批 b 組另外兩張卡（《Journey》《ABZÛ》）的作者，這是同一批裡兩位作曲家實際交手的一筆，來源是英文維基〈Darren Korb〉。｜**下游比對提醒**：本批 Korb 有三張卡，Apple artistId 都是 459457290。"
+ },
+ {
+  "key": "desc2:Disasterpeace|FEZ: Original Soundtrack",
+  "artist": "Disasterpeace",
+  "album": "FEZ: Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7a97a60d 的欄位：title「FEZ: Original Soundtrack」、artist-credit「Disasterpeace」、first-release-date 2012-04-20、primary-type Album、secondary-types [Soundtrack]，轄下 6 個 release、全部 Official：2012-04-20 三筆 XW 數位版都是 **26 軌**（其中一筆掛 Joypad Records JOY-546 與 OverClocked Records）、2015-11-27 XW 的 Polytron 數位版 26 軌，以及 2015-11-27 與 2016-11-21 兩筆 CA 的 **Polytron 兩片 12 吋黑膠、13＋13＝26 軌**（PO050001／PO050004）。**四種載體全是 26 軌。**",
+    "src": "https://musicbrainz.org/release-group/7a97a60d-1f30-45a5-807b-9d16375cac4d"
+   },
+   {
+    "f": "英文維基〈Fez (video game)〉記：遊戲由 Phil Fish 的 Polytron 開發，**2012 年 4 月 13 日**在 Xbox Live Arcade 發售，獨佔一年內賣出二十萬套，到 2013 年底累計一百萬套。五年的開發期與 Fish 本人在 2012 年紀錄片《Indie Game: The Movie》裡的高曝光，使它被稱為「獨立遊戲圈的弱者寵兒」。",
+    "src": "https://en.wikipedia.org/wiki/Fez_(video_game)"
+   },
+   {
+    "f": "同一條目的 Music 段落記：**Rich Vreeland（藝名 Disasterpeace）**寫了這套帶 chiptune 味的電子配樂；**儘管他的出身就是 chiptune，他在這張碟上刻意壓低了那個曲風的慣用語**——改用柔和的 synth pad 與殘響把聲音推向 1980 年代合成器的質地，減少對打擊樂的依賴，並用 bitcrushing、wow 之類的失真手法。他選擇速度會變化的慢板段落，好讓音樂「隨玩家起伏、流動、呼吸」，**並且刻意讓遊戲的某些段落完全沒有音樂**。這套配樂是他一邊替《Shoot Many Robots》配樂、一邊在夜裡花約 14 個月做出來的。",
+    "src": "https://en.wikipedia.org/wiki/Fez_(video_game)"
+   },
+   {
+    "f": "同一段記：**他替這款遊戲寫的第一首曲子〈Adventure〉，就成了原聲帶的第一軌**——那首是他見過程式設計師 Renaud Bédard 之後、還沒和 Fish 談配樂之前寫的，依據是他到職前既有的 Fez 音訊。他本想用磁帶錄音機取那種特有的聲音，但因為可能有同步問題而改用數位錄音。**碟上有些段落在遊戲裡會隨環境動態變化，由數十個組成元素拼合**——例如〈Puzzle〉的元素會依遊戲內的時間改變調性。有些曲子刻意模仿現實聲音（蝙蝠、雷雨、太鼓、鐘乳石滴水），有些由即興延伸而來。他的參照包括《魔戒》的夏爾主題、1980 年代恐怖片、demoscene 遊戲《Jasper's Journeys》的配樂、《薩爾達傳說》的地城音樂、《質量效應》的配樂、Tangerine Dream 與 Steve Reich。**〈Continuum〉是蕭邦《前奏曲》Op. 28 No. 4 的合成器版本。**錄音用到的樂器包含 Sonic Charge Synplant、minimoog、「合成長笛」與 Boomwhacker。",
+    "src": "https://en.wikipedia.org/wiki/Fez_(video_game)"
+   },
+   {
+    "f": "同一段記：**原聲帶 2012 年 4 月 20 日以數位形式發行**（比遊戲晚一週），**預購衝上 Bandcamp 排行榜首**。樂評面：The Verge 的 Janus Kopfstein 稱它「fantastic」，形容它介於「1980 年代 Vangelis 式的合成器奧德賽」與「一張泡在水裡的街機黑膠」之間；Eurogamer 形容這音樂「豐潤、陰森而帶電」；Edge 說它像「把霍爾斯特塞進 Mega Drive」；Eurogamer 的 Oli Welsh 聽出 1960 年代英國迷幻（Pink Floyd、Soft Machine）、1970 年代 Krautrock（Tangerine Dream、Kraftwerk）、1980 年代合成器（Jean Michel Jarre、Vangelis）與 Erik Satie 的影子，並說這套配樂對《Fez》的貢獻「無法估量」。",
+    "src": "https://en.wikipedia.org/wiki/Fez_(video_game)"
+   },
+   {
+    "f": "同一段記：**呼應《Fez》整部作品的密碼主題，原聲帶的音訊裡也埋了只有用頻譜圖才看得到的圖像。**Vreeland 一年後（2013-04-20）發了重混輯《FZ: Side F》，收有 Jim Guthrie 等人的作品，之後又發了《FZ: Side Z》。",
+    "src": "https://en.wikipedia.org/wiki/Fez_(video_game)"
+   },
+   {
+    "f": "英文維基〈Disasterpeace〉記：Richard Vreeland 是美國作曲家與音樂人，高中學吉他入門、約 17 歲開始寫曲，以 chiptune 音樂人的身分為人所知；**2014 年他接下 David Robert Mitchell 電影《It Follows》的配樂，起因就是 Mitchell 本人是他《Fez》作品的粉絲。**",
+    "src": "https://en.wikipedia.org/wiki/Disasterpeace"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1765770688，collectionName「FEZ (Original Game Soundtrack)」、artistName「Disasterpeace」（artistId 178209520）、releaseDate 2012-04-20、trackCount 26、copyright「℗ 2012 Polytron Corporation」；`lookup?entity=song` 攤得開 **26 軌、26 軌都有 previewUrl**，第 1 軌〈Adventure〉3:19、第 2 軌〈Puzzle〉2:15、第 25 軌〈Reflection〉9:02、第 26 軌〈Love〉1:03。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都上架。",
+    "src": "https://music.apple.com/us/album/1765770688"
+   }
+  ],
+  "hookCandidates": [
+   "他出身 chiptune，卻在這張碟上刻意不講那套語言",
+   "音訊裡藏了圖，只有把它畫成頻譜圖才看得見"
+  ],
+  "sound": "英文維基有具名依據，可寫：**出身 chiptune 卻刻意壓低 chiptune 的慣用語**——改用柔和的 synth pad 與殘響推向 1980 年代合成器質地，減少打擊樂，用 bitcrushing 與 wow 之類的失真手法；速度會變化的慢板段落，讓音樂「隨玩家起伏、流動、呼吸」，而且刻意讓遊戲某些段落完全沒有音樂。樂器包含 Sonic Charge Synplant、minimoog、「合成長笛」與 Boomwhacker。〈Continuum〉是蕭邦《前奏曲》Op. 28 No. 4 的合成器版本。樂評的比喻有據：The Verge 說它介於「1980 年代 Vangelis 式合成器奧德賽」與「一張泡在水裡的街機黑膠」之間；Edge 說像「把霍爾斯特塞進 Mega Drive」。",
+  "keyTracks": [
+   "Adventure",
+   "Puzzle",
+   "Continuum",
+   "Reflection",
+   "Love"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2012。**遊戲發售日與原聲帶發行日差一週，要分開寫**：英文維基記遊戲 **2012-04-13** 在 Xbox Live Arcade 發售，**原聲帶 2012-04-20** 數位發行。MB 的 first-release-date 2012-04-20、Apple 的 releaseDate 2012-04-20 與 ℗ 2012 Polytron Corporation 三處一致。黑膠是三年多之後（Polytron PO050001，2015-11-27），不是發行年。",
+  "notes": "**探測層誤記 unavailable，已救回（裁定 166 的同一形狀，而且是本組最徹底的一次落空）。** 探測層在 jp/us/gb/de/fr/ca/au **七個店面全部回 0 筆**——那是「搜尋端點完全查不到，目錄端點卻好端端地有」的形狀（裁定 166 的 GZA《Liquid Swords》同型）。改走藝人目錄端點 `lookup?id=178209520&entity=album&limit=200` 即命中。**正解 us 1765770688**（26 軌、℗2012 Polytron Corporation，us/gb/jp/de/ca/au 六店都有），已依 c-97 第 11 條覆核曲目列攤得開、26 軌全有 previewUrl，**與 MB 四種載體的 26 軌逐數相符**，首軌〈Adventure〉可當固定試聽。**盤名也有變形**：卡片作《FEZ: Original Soundtrack》（MB 同），Apple 作《FEZ (Original Game Soundtrack)》——多了「Game」一字、冒號換括號。｜**策展層說法無擋下項。**｜**這張與池中既有的一張碟直接相關，可安全寫**：c-101 策展層實掃時記到，池中第 11778 列是 Disasterpeace《It Follows: Original Motion Picture Soundtrack》(2015)——**英文維基〈Disasterpeace〉明寫，導演 David Robert Mitchell 之所以找他配《It Follows》，正是因為他是《Fez》配樂的粉絲**。這是「池中已有的那張」與「本次新收的這張」之間有來源的因果連結。｜**曲名的坑**：〈Continuum〉是蕭邦前奏曲的合成器版本（英文維基直記），**行文若提這首要寫清楚它是改編，不要寫成原創**。｜**「動態變化」要寫準**：那些依遊戲內時間改變調性的處理**發生在遊戲裡**，碟上是固定的 26 軌成品，不要混寫。"
+ },
+ {
+  "key": "desc2:Grant Kirkhope|Banjo-Kazooie",
+  "artist": "Grant Kirkhope",
+  "album": "Banjo-Kazooie",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 702de139 的欄位：title「Banjo‐Kazooie」（**MB 用 U+2010 連字號**）、artist-credit「Grant Kirkhope」、first-release-date 1998、primary-type Album、secondary-types [Soundtrack]，轄下 6 個 release。**原盤是 17 軌**：1998 US 的 **Nintendo of America CD 17 軌**、1999-02-17 兩筆 JP 的《バンジョーとカズーイの大冒険 オリジナルサウンドトラック》（**NINTENDO64 Sound Series，PCCG-00486**）17 軌、2013-04-02 XW 數位版 17 軌。**另兩筆不是原盤**：1998 DE 標 **Promotion** 的《Suuu…Bär! The Original Banjo-Kazooie Soundtrack》（Nintendo of Europe 94035）15 軌，以及 **2019-11-26 US 的 Fangamer／Xbox Game Studios 四片 12 吋黑膠（FG20）13＋10＋8＋10＝41 軌**。",
+    "src": "https://musicbrainz.org/release-group/702de139-4508-3423-a817-4d811413b7ac"
+   },
+   {
+    "f": "回問該 release-group 轄下 1998 年美版 Nintendo of America CD（release 0e0022e6）的曲目：**17 軌，依序為**〈Main Title〉〈Spiral Mountain〉〈Witch’s Lair〉〈Mumbo’s Mountain〉〈Treasure Trove Cove〉〈Clanker’s Cavern (Exterior)〉〈Bubble Gloop Swamp〉〈Freezeey Peak〉〈Gobi’s Valley〉〈Mad Monster Mansion (Exterior)〉〈Rusty Bucket Bay (Exterior)〉〈Click Clock Wood〉〈Quiz〉〈Credits〉〈Final Battle〉〈Banjo Overture〉〈Squirrel〉。**碟上把大廳那首記作〈Witch’s Lair〉，不是遊戲通稱的 Gruntilda's Lair。**",
+    "src": "https://musicbrainz.org/release/0e0022e6-a153-35c5-97fa-de808b413bd7"
+   },
+   {
+    "f": "英文維基〈Banjo-Kazooie (video game)〉的導言記：Rare 原本把它構思成 SNES 上的角色扮演遊戲《Dream》，那是做完《Donkey Kong Country 2: Diddy's Kong Quest》(1995) 之後的事；十五人團隊在 Gregg Mayles 帶領下轉到 Nintendo 64 並改做平台遊戲。**Grant Kirkhope 作曲；《Banjo-Kazooie》是最早採用「垂直重混」（vertical remixing）的遊戲之一——同一首曲子的不同聲部會依玩家所在位置淡入淡出。**遊戲 1998 年 6 月底在北美發售、隔月在歐洲，銷量逾三百萬套。",
+    "src": "https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game)"
+   },
+   {
+    "f": "同一條目的開發段落記：**音樂與音效全部由 Grant Kirkhope 一人包辦。**這不是他在 Rare 的第一個案子——他先前把 **David Wise 為《Diddy's Kong Quest》寫的配樂移植到 Game Boy 版**，也參與過《GoldenEye 007》(1997)——**但這是他第一次一人負責一款遊戲的全部音樂與音效**。他在《Dream》被取消前是該案的首席作曲，好幾首為《Dream》寫的曲子被沿用進《Banjo-Kazooie》。**他是聽了 Danny Elfman 替《陰間大法師》(1988) 寫的配樂之後才想通這款遊戲的音樂該怎麼寫**：「我發現你可以用很暗的和弦、很暗的和聲，只要節奏夠滑稽，就不會嚇到小孩。」Mad Monster Mansion 的和聲進行受 Elfman 另一部配樂——1989 年《蝙蝠俠》裡蝙蝠俠在大教堂那幾段——影響。曲子裡多處使用**三全音**，用來反映 Banjo 與 Kazooie 兩個角色的反差，這個想法是他寫 Mumbo's Mountain 的音樂時想到的。遊戲快做完時，Chris Stamper 說他不喜歡 Mumbo's Mountain 與 Treasure Trove Cove 這兩首關卡曲，Kirkhope 只好臨時改掉。",
+    "src": "https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game)"
+   },
+   {
+    "f": "同一條目記：**垂直重混這件事在遊戲史上有其重要性**——同一首曲子的不同聲部會依玩家移動到哪一區（例如從地面進到水下）而淡入淡出。**這是 Mayles 要求 Kirkhope 做出超越 1990 年代初 LucasArts 那套 iMUSE 的東西的結果**：iMUSE 是在不同主題之間淡接，而不是在聲部之間。**動物的音效有時候本身就被當成樂器用。**",
+    "src": "https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game)"
+   },
+   {
+    "f": "同一條目的評價段落記：音樂與音效獲得好評，尤其是動態音樂那一環對氣氛的貢獻——N64 Magazine 說它給了這款遊戲「比任何串流 CD 音樂都更多的氛圍」。評論也注意到它**借用童謠旋律**，例如 Gruntilda's Lair 用了〈Teddy Bears' Picnic〉。",
+    "src": "https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game)"
+   },
+   {
+    "f": "英文維基〈Grant Kirkhope〉記：Kirkhope 1962 年 7 月 10 日生於蘇格蘭愛丁堡，母親是歌舞廳舞者；**他 11 歲自學吉他，並受過古典小號的正規訓練**，唸完 Royal Northern College of Music 後在多個樂團演出（Zoot and the Roots、Big Bad Horns 等），**1995 年 10 月才加入 Rare**。他以《GoldenEye 007》《Banjo-Kazooie》《Donkey Kong 64》《Perfect Dark》等作品聞名，並曾以《Mario + Rabbids Sparks of Hope》拿下 Ivor Novello 獎。",
+    "src": "https://en.wikipedia.org/wiki/Grant_Kirkhope"
+   },
+   {
+    "f": "英文維基〈Banjo-Kazooie〉（系列條目）記：遊戲 **1998 年 6 月 29 日**在 Nintendo 64 發售；Nintendo 64 原版到 2021 年為止賣出 365 萬套。2019 年 9 月 4 日 Banjo 與 Kazooie 以 DLC 形式加入《任天堂明星大亂鬥 特別版》，同時附上 Banjo-Kazooie 的音樂改編版本，**其中一首出自原作曲者 Grant Kirkhope 之手**。",
+    "src": "https://en.wikipedia.org/wiki/Banjo-Kazooie"
+   },
+   {
+    "f": "Apple Music 覆核：以 Grant Kirkhope 的藝人目錄端點 `lookup?id=321277612&entity=album&limit=200` 逐店面列出 us／gb／jp／de／ca／au **六份完整目錄（每份 44–46 筆）**，**六份裡都沒有 1998 年那張原聲帶**。目錄裡唯一與 Banjo-Kazooie 同名的專輯是 **`1592541500`《Banjo Kazooie: Re - Jiggyed》，2021-10-28、10 軌、℗ 2021 Grant Kirkhope**——那是 2021 年的重編曲盤。同一份目錄裡其餘與 Rare 舊作有關的也全是後世重製：《Rare Treats: Donkey Kong 64 Revisited》(2024，18 軌)、《Rare Treats: Viva Piñata Revisited》(2026，25 軌)、《Donkey Kong 64 Orchestral Medley》(2024)、以及〈Jungle Japes〉〈Creepy Castle〉〈Frantic Factory〉〈Jinjo Village〉〈Discovering Banjoland〉等單曲。",
+    "src": "https://itunes.apple.com/lookup?id=321277612&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "他寫這套曲子的方法是先去聽《陰間大法師》：暗的和弦配滑稽的節奏，小孩就不會被嚇到",
+   "從地面潛進水裡，同一首曲子的聲部會自己淡進淡出"
+  ],
+  "sound": "英文維基有具名依據，可寫：**做法的源頭是 Danny Elfman 的《陰間大法師》配樂**——Kirkhope 的原話是「你可以用很暗的和弦、很暗的和聲，只要節奏夠滑稽，就不會嚇到小孩」；Mad Monster Mansion 的和聲進行取自 Elfman 1989 年《蝙蝠俠》大教堂那幾段。曲中多處用**三全音**來反映 Banjo 與 Kazooie 的反差。技術面最重要的一件事是**垂直重混**：同一首曲子的聲部依玩家所在位置淡入淡出（例如從地面到水下），這是 Gregg Mayles 要求他超越 LucasArts 的 iMUSE 的結果。**動物音效有時本身就當樂器用**；也借用童謠旋律，Gruntilda's Lair 用的是〈Teddy Bears' Picnic〉。",
+  "keyTracks": [
+   "Main Title",
+   "Mumbo’s Mountain",
+   "Treasure Trove Cove",
+   "Mad Monster Mansion (Exterior)",
+   "Banjo Overture"
+  ],
+  "status": "thin",
+  "yearVerified": "卡單 1998。**遊戲發售年與原聲帶發行年在這一張上重疊但要分開講**：英文維基記遊戲 **1998-06-29** 在 Nintendo 64 發售（北美 6 月底、歐洲隔月）；MB 的 first-release-date 只記到年份 **1998**，轄下那筆美版 Nintendo of America CD 也只有年份。**日版原聲帶是 1999-02-17**（NINTENDO64 Sound Series，PCCG-00486，17 軌）——**比遊戲晚了大半年**。取 1998（美版年份與遊戲同年），行文不得正面斷言原聲帶的確切發行日（依裁定 18／46）。**2019 年 Fangamer 的四片黑膠是後世商品，不是原盤。**",
+  "notes": "**⚠ 探測層原判 ready 是錯配，已推翻，改判 unavailable。** 探測層記 jp `1592541500`／「Banjo Kazooie: Re - Jiggyed」／10 軌／℗2021／`yearDrift: 23`——**那是 2021 年的重編曲盤，不是 1998 年的原聲帶**，而且**c-101 策展層在 mbNote 裡已經把它列為「刻意不釘」的對照組**（裁定 8 的編曲盤那一類）。這是裁定 153 附錄那個形狀的第二次：**策展層寫來當反例的識別碼，被下游腳本當成了指定值**。｜**覆核方法與結論**：依裁定 166 走藝人目錄端點 `lookup?id=321277612&entity=album&limit=200`，在 **us／gb／jp／de／ca／au 六個店面各取一份完整目錄（每份 44–46 筆）逐筆看過，六份裡都沒有 1998 年那張 17 軌原聲帶**；目錄裡與 Rare 舊作相關的全部是 2021 年之後的重編、重製與單曲。**這與 c-101 策展層裁定第 9 條的預估一致**（任天堂版權方沒把碟放上串流），屬裁定 152 分界裡的「搜到了但目錄裡沒有這張」。**維持 unavailable，且明令下游不得改配 1592541500。**｜**軌數要鎖 17**：原盤（美版 Nintendo of America CD、日版 PCCG-00486、2013 數位版）都是 17 軌；德國那筆 15 軌是 **Promotion** 盤、2019 年 Fangamer FG20 四片黑膠是 41 軌的後世擴充。**行文不得寫「這張碟有四十一首」。**｜**status 判 thin 的理由**：這張的 facts 全部來自遊戲條目與藝人條目，**沒有任何來源逐軌談原聲帶這張碟本身**（連曲目表都得靠 MB 的軌數推），而且拿不到固定試聽、無法核對曲名。keyTracks 已改用 MB 那筆 1998 美版 CD 的實際曲目名（17 軌全列已寫進 facts）。**注意碟上把大廳那首記作〈Witch’s Lair〉，不是遊戲通稱的 Gruntilda's Lair**——英文維基談〈Teddy Bears' Picnic〉借用時用的是遊戲裡的名字，行文引用碟上曲名時要用 MB 那一組。｜**跨卡連結可安全寫**：英文維基明記 Kirkhope 進 Rare 後的早期工作之一，是把 **David Wise 為《Diddy's Kong Quest》寫的配樂移植到 Game Boy 版**——David Wise 那張《Donkey Kong Country 2: Diddy's Kong Quest》正是本批 b 組的另一張卡。｜**盤名的連字號**：MB 用 U+2010，卡單用 ASCII 連字號，依 c-101 策展層裁定第 4 條取 ASCII 版，本研究層照卡單原樣（裁定 6／70）。"
+ },
+ {
+  "key": "desc2:David Wise|Donkey Kong Country 2: Diddy’s Kong Quest",
+  "artist": "David Wise",
+  "album": "Donkey Kong Country 2: Diddy’s Kong Quest",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1a3b20ad 的欄位：title「Donkey Kong Country 2: Diddy’s Kong Quest」（**彎撇號 U+2019**）、artist-credit「David Wise」、first-release-date 1995-10-01、primary-type Album、secondary-types [Soundtrack]，轄下 8 個 release。**Official 只有三筆**：1995-10-01 US 的 **Nintendo of America CD、55 軌**（編號 7250-Winter95）、1995-11-01 US 的《Donkey Kong Country 2 Diddy’s Kong Quest (The Original Donkey Kong Country 2 Soundtrack)》**55 軌**，以及 1996-03-25 JP 的《Super Donkey Kong 2: ディクシー&ディディー: Original Sound Version》（**NTT出版 PSCN-5049，34 軌**）。其餘五筆是 Bootleg 或無 status（37／47／54／108 軌與一筆雙片 33＋76 軌）。",
+    "src": "https://musicbrainz.org/release-group/1a3b20ad-34e8-3ad7-9fe5-bafdd473ad27"
+   },
+   {
+    "f": "回問 1995-10-01 那筆美版 CD（release d6c91822）的曲目：**帳面 55 軌，但真正的樂曲只有前 29 軌**——第 1 軌〈K. Rool Returns (Title Theme)〉到第 29 軌〈Donkey Kong Rescued (Credits Roll)〉；**第 30–34 軌是五段 [silence]**，第 35 軌起是〈Rare Logo〉與十六段〈Failure 1〉…〈Failure 16〉、〈Diddy’s Victory〉〈Dixie’s Victory〉〈False Triumph〉〈Game Over〉這些數秒長的音效片段。曲名採「碟上曲名（遊戲關卡名）」的並列格式，例如第 17 軌〈Stickerbush Symphony (Bramble Blast)〉、第 10 軌〈Forest Interlude (Web Woods)〉、第 25 軌〈In a Snow‐Bound Land (Clapper’s Cavern)〉。",
+    "src": "https://musicbrainz.org/release/d6c91822-ad3b-476c-a158-a585c1ebe91a"
+   },
+   {
+    "f": "英文維基〈Donkey Kong Country 2〉記：《Diddy's Kong Quest》的配樂由 David Wise 譜寫，**在美國以《The Original Donkey Kong Country 2 Soundtrack》之名發行**。這套音樂延續前作的特徵——打擊樂突出、曲風雜食，橫跨大樂團（big band）、迪斯可與嘻哈；旋律與節奏多半帶喜感，偶爾轉為憂鬱。某些主題讓人想起 Vangelis 與 Phil Collins 的作品。Wise 提過的影響來源包括近藤浩治為 Mario 與 Zelda 系列寫的音樂、Geoff 與 Tim Follin 為《Plok!》寫的音樂，以及 1980 年代以合成器為主的電影配樂。**本作那股管弦感受到普羅高菲夫、柴可夫斯基、穆索斯基等俄國古典作曲家的影響**，用來配合遊戲較暗的主題。與前作一樣，音樂是為 SNES 的 **SPC700 音源晶片**製作的，目標是讓它聽起來像 Korg Wavestation 合成器。",
+    "src": "https://en.wikipedia.org/wiki/Donkey_Kong_Country_2"
+   },
+   {
+    "f": "同一條目記：**〈Stickerbush Symphony〉一曲獲得的評價尤其突出。**《滾石》形容它是「一首夢幻而淒清的 new-age 抒情曲，跟我們平常在主機吉祥物遊戲裡聽到的東西完全不同」；Kotaku 的 Ethan Gach 說它「憂鬱而內省」卻又「夠快，稱得上是一首 bop」，配上它所在的關卡是「這個類型裡最超脫的平台遊戲時刻之一」；GamesRadar 的 Brett Elston 說它的情緒「正好落在沉鬱與激勵之間，像在號召我們行動，而我們卻陷在思緒裡動不了」；Vice 的 Luke Winkie 更直接說它是「有史以來最好的歌曲之一」，並稱它有「史上最好的 midi 薩克斯風之一」。",
+    "src": "https://en.wikipedia.org/wiki/Donkey_Kong_Country_2"
+   },
+   {
+    "f": "英文維基〈David Wise (composer)〉記：Wise 是英國電玩音樂作曲家，**1985 年到 2009 年在 Rare 任職，1994 年之前是公司唯一的音樂人**。他進 Rare 的緣由是在樂器行示範 Yamaha CX5 音樂電腦時遇到 Tim 與 Chris Stamper 兄弟，示範用的音樂是他自己寫的、也是他自己程式化的，兩人當場給了他工作。他配樂的第一款遊戲是 1986 年 NES 的《Slalom》。1996 年 1 月號《Electronic Gaming Monthly》上他說，**《Donkey Kong Country 2》的音樂寫於他所謂的「experimental Paris phase」（實驗性的巴黎時期）**；**他不用標準的 MIDI 音色，而是自己寫程式做出客製樂器**，Pitchfork 的 Billie Bugara 因此稱他是 Rare「最有野心的作曲家」。",
+    "src": "https://en.wikipedia.org/wiki/David_Wise_(composer)"
+   },
+   {
+    "f": "英文維基〈Donkey Kong Country 2〉記：本作是 1995 年第二暢銷的遊戲、SNES 上第六暢銷的遊戲，評價上被視為史上最好的 2D 平台遊戲之一，**配樂本身也被視為史上最好的原聲之一**。OverClocked ReMix 曾以本作配樂為題做過合輯《Serious Monkey Business》，其中一軌由 David Wise 本人重混，**Grant Kirkhope 彈電吉他、Robin Beanland 吹小號**。",
+    "src": "https://en.wikipedia.org/wiki/Donkey_Kong_Country_2"
+   },
+   {
+    "f": "英文維基〈Banjo-Kazooie (video game)〉記：Grant Kirkhope 進 Rare 之後的早期工作之一，就是**把 David Wise 為《Diddy's Kong Quest》寫的配樂移植到 Game Boy 版**。",
+    "src": "https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game)"
+   },
+   {
+    "f": "Apple Music 覆核：以「Donkey Kong Country 2」為關鍵字在 us／jp／gb／de 四個店面搜專輯，**回來的全部是第三方的翻奏、鋼琴改編與 lofi 重混**（Arcade Player《…Iconic Themes》30 軌、Ben Zimmermann《…Symphony》19 軌、CrazyGroupTrio《…On Piano》25 軌、3000m、Michael Staple & LoFi VGM、The Greatest Bits《Tribute to…》等），**沒有一筆是 Nintendo of America 的 1995 年原盤**；以「David Wise Donkey Kong」搜 us 店面，回來的三筆也都是別人掛 feat. David Wise 的單曲。",
+    "src": "https://itunes.apple.com/search?term=Donkey%20Kong%20Country%202&country=us&entity=album&limit=50"
+   }
+  ],
+  "hookCandidates": [
+   "帳面五十五軌，真正的曲子只有前二十九軌，中間還夾著五段靜音",
+   "他不用現成的 MIDI 音色，客製樂器是自己寫程式做出來的"
+  ],
+  "sound": "英文維基有具名依據，可寫：打擊樂突出、曲風雜食，橫跨大樂團、迪斯可與嘻哈；旋律與節奏多半帶喜感，偶爾轉為憂鬱。**那股管弦感的來源被明確指認為普羅高菲夫、柴可夫斯基與穆索斯基**，用來配合本作較暗的調性；某些主題讓人想起 Vangelis 與 Phil Collins。技術面：音樂是為 SNES 的 SPC700 音源晶片做的，目標是聽起來像 Korg Wavestation，**而 Wise 不用標準 MIDI 音色、自己寫程式做客製樂器**。〈Stickerbush Symphony〉的樂評形容有一整排來源可引（《滾石》「夢幻而淒清的 new-age 抒情曲」、Kotaku「憂鬱而內省」、Vice「史上最好的 midi 薩克斯風之一」）。",
+  "keyTracks": [
+   "K. Rool Returns (Title Theme)",
+   "Stickerbush Symphony (Bramble Blast)",
+   "Forest Interlude (Web Woods)",
+   "In a Snow‐Bound Land (Clapper’s Cavern)",
+   "Donkey Kong Rescued (Credits Roll)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1995。**遊戲發售年與原聲帶發行年同年，但原聲帶美日兩版差了半年**：MB 那兩筆 Nintendo of America 的美版 55 軌 CD 記 1995-10-01 與 1995-11-01，**日版《Super Donkey Kong 2: ディクシー&ディディー: Original Sound Version》（NTT出版 PSCN-5049，34 軌）要到 1996-03-25**。MB release-group 的 first-release-date 是 1995-10-01。取 1995（美版年份），行文不得正面斷言原聲帶的確切發行日（依裁定 18／46）。",
+  "notes": "**unavailable 覆核成立，維持 unavailable。** 依裁定 158／166 交叉試過：關鍵字「Donkey Kong Country 2」在 us／jp／gb／de 四個店面搜專輯，**回來的每一筆都是第三方的翻奏、鋼琴改編、交響改編或 lofi 重混**；以「David Wise Donkey Kong」搜 us 店面也只回別人掛 feat. 的單曲。**這與 c-101 策展層裁定第 9 條的判斷一致**（任天堂版權方沒把碟放上串流）。**⚠ 這一張是本組最容易被錯配的卡**：Apple 上「Donkey Kong Country 2」相關的第三方碟至少八張，其中 Arcade Player 那筆《Donkey Kong Country 2: Diddy's Kong Quest, Iconic Themes》**盤名幾乎完全包含卡片盤名、30 軌**，`titleOk` 的子字串比對會直接放行（裁定 162 那個「盤名短的被長的吃掉」的鏡像）。**明令：下游不得配 1574633423、1531238777、891790311、1073209065、966042566、1646722687、993047561、1725370354 或任何以 Donkey Kong Country 2 開頭的第三方條目。**｜**⚠ 軌數是這張卡最大的陷阱，行文一定要鎖住 29**：美版 CD 帳面 55 軌，但**第 30–34 軌是五段 [silence]**，第 35 軌以後全是〈Rare Logo〉〈Failure 1〉…〈Failure 16〉〈Game Over〉這類數秒的音效片段。**真正的樂曲只有前 29 軌**（〈K. Rool Returns〉到〈Donkey Kong Rescued〉）。日版只有 34 軌、曲名全為日文。**行文不得寫「這張碟有五十五首曲子」。**｜**盤名的撇號**：卡單與 MB 都用彎撇號 U+2019（Diddy’s），依裁定 6／70 照卡單原樣。｜**跨卡連結可安全寫**：同批 b 組的 Grant Kirkhope《Banjo-Kazooie》——英文維基明記 Kirkhope 進 Rare 後的早期工作就是把 Wise 這套配樂移植到 Game Boy 版；另外 OverClocked ReMix 的《Serious Monkey Business》裡 Wise 自己重混的那一軌，是 Kirkhope 彈電吉他、Robin Beanland 吹小號。**兩人在同一批裡有兩處實際交手，都有來源。**｜**一處來源內部不一致，行文避開**：〈Donkey Kong Country 2〉條目說 Wise 在該合輯重混的是最後一軌〈Donkey Kong Rescued〉，〈David Wise (composer)〉條目說他的那一軌叫〈Re-Skewed〉、是第 33 軌。**兩處都是英文維基、彼此矛盾，行文只寫「Kirkhope 在那一軌上彈電吉他」這個兩處一致的部分，不要寫曲名或軌號。**"
+ },
+ {
+  "key": "desc2:Christopher Larkin|Hollow Knight",
+  "artist": "Christopher Larkin",
+  "album": "Hollow Knight",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9df7cf82 的欄位：title「Hollow Knight」、artist-credit「Christopher Larkin」、first-release-date 2017-02-10、primary-type Album、secondary-types [Soundtrack]，轄下 3 個 release、全部 Official、**全部 26 軌**：2017-02-10 XW 數位、2017-02-25 XW 數位（標題作《Hollow Knight: Original Soundtrack》）、2017-06-01 US 的 IndieBox CD。",
+    "src": "https://musicbrainz.org/release-group/9df7cf82-6ea3-4021-829f-f2192977ac8d"
+   },
+   {
+    "f": "英文維基〈Hollow Knight〉記：遊戲由阿德萊德的 Team Cherry（美術 Ari Gibson 與網頁設計師 William Pellen 創辦）開發，概念出自 2013 年的 Ludum Dare game jam。**2014 年 11 月在 Kickstarter 上以 3 萬 5 千澳元為目標募資，最後由 2158 位支持者集資超過 5 萬 7 千澳元；正是這筆錢讓團隊得以擴編、把作曲家 Christopher Larkin 找進來**（同時進來的還有技術總監 David Kazi 與行銷發行經理 Matthew Griffin）。遊戲 **2017 年 2 月 24 日**先在 Windows 發售，Linux 與 macOS 版同年 4 月 11 日。",
+    "src": "https://en.wikipedia.org/wiki/Hollow_Knight"
+   },
+   {
+    "f": "同一條目記：2017 到 2018 年間釋出四個**免費**下載內容——2017-08-03 的 Hidden Dreams（**同時替原聲帶加了兩首曲子**）、2017-10-26 的 The Grimm Troupe、2018-04-20 的 Lifeblood、2018-08-23 的 Godmaster（**也含音樂**）。2019 年遊戲音樂廠牌 Materia Collective 發行了《Hollow Knight Piano Collections》鋼琴改編譜與專輯，由 David Peacock 改編、Augustine Mayuga Gonzales 演奏。",
+    "src": "https://en.wikipedia.org/wiki/Hollow_Knight"
+   },
+   {
+    "f": "同一條目記：遊戲上市後評價極高，**音樂是被點名稱讚的第一項**（原文列舉的順序是 music、art style、worldbuilding、atmosphere、combat、difficulty）；IGN 稱讚它的視覺、音效、音樂與「另外一百萬個細節」共同build 出的氣氛。銷量方面：2017 年 11 月逾 50 萬套、2018 年 6 月 11 日 PC 平台破百萬、2019 年 2 月逾 280 萬套，**到 2025 年 8 月累計超過 1500 萬套**。續作《Hollow Knight: Silksong》2025 年 9 月 4 日發行。",
+    "src": "https://en.wikipedia.org/wiki/Hollow_Knight"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 1263341718，collectionName「Hollow Knight (Original Soundtrack)」、artistName「Christopher Larkin」（artistId 168436294）、releaseDate 2017-02-10、trackCount 26、copyright「℗ 2017 Christopher Larkin」；`lookup?entity=song` 攤得開 **26 軌、26 軌都有 previewUrl**，第 1 軌〈Enter Hallownest〉1:30、第 2 軌〈Dirtmouth〉1:55、第 6 軌〈Hornet〉2:47、第 9 軌〈City of Tears〉2:59、第 24 軌〈Sealed Vessel〉5:45、第 25 軌〈Radiance〉2:18、第 26 軌〈Hollow Knight〉1:37。**曲名幾乎全部是遊戲裡的地名或首領名。**",
+    "src": "https://music.apple.com/jp/album/1263341718"
+   },
+   {
+    "f": "c-101 策展層 2026-09-05 實掃 `seed_cards.json` 全 14424 列的結果：`Christopher Larkin` 0 命中、`Hollow Knight` 0 命中；寬鬆查 `Larkin` 得 5 筆，全部無關（XTC《Skylarking》、Kenny Larkin ×2、Larkin Poe、Horace Andy《Skylarking》）。",
+    "src": "https://github.com/kubinice06/dip-vinyl-shop/blob/main/batch-progress/c101/rulings.md"
+   }
+  ],
+  "hookCandidates": [
+   "作曲家是靠一場募資才被請得起的，那場募資超標了兩萬多澳元",
+   "二十六個曲名幾乎都是地名，走到哪裡就聽到哪一首"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的有據：**曲名幾乎全部對應遊戲裡的地名或首領名**（Dirtmouth、Greenpath、City of Tears、Crystal Peak、Fungal Wastes、Queen's Gardens、Kingdom's Edge、White Palace…；首領則有 False Knight、Mantis Lords、Dung Defender、Broken Vessel、Nosk、Radiance），碟上的順序大致跟著遊戲的推進走。曲長分佈：Apple 那 26 軌裡最短的〈The White Lady〉1:20、最長的〈Sealed Vessel〉5:45。英文維基在評價段落把 music 列為被稱讚的第一項。",
+  "keyTracks": [
+   "Enter Hallownest",
+   "Dirtmouth",
+   "City of Tears",
+   "Sealed Vessel",
+   "Hollow Knight"
+  ],
+  "status": "thin",
+  "yearVerified": "卡單 2017。**這一張的原聲帶比遊戲早兩週，要分開寫**：英文維基記遊戲 **2017-02-24** 在 Windows 發售；MB release-group 的 first-release-date 與轄下第一筆數位 release、以及 Apple 的 releaseDate **都是 2017-02-10**，℗ 2017 Christopher Larkin。MB 轄下另一筆數位 release 記 2017-02-25（標題作《Hollow Knight: Original Soundtrack》），實體 CD（IndieBox）是 2017-06-01。**年份 2017 無爭議；行文若寫日期，遊戲寫 2 月 24 日、原聲帶寫 2 月 10 日，不得混用。**",
+  "notes": "**ready 覆核通過，配對正確。** Apple jp 1263341718 的 26 軌與 MB 三筆 release 逐數相符，releaseDate 與 ℗ 年一致；已依 c-97 第 11 條覆核曲目列攤得開、26 軌全有 previewUrl，首軌〈Enter Hallownest〉可當固定試聽（裁定 157 已逐軌看過位置）。｜**軌數的坑**：英文維基記 2017-08-03 的 Hidden Dreams DLC **替原聲帶加了兩首曲子**、2018-08-23 的 Godmaster 也含音樂。**本卡這 26 軌是 2017 年的原版，不含那些後加的曲子**——MB 三筆 release 全是 26 軌，可以確認。**行文不得把 DLC 的曲子算進來。**｜**⚠ 掛名撞名，下游要注意**：Apple 上「Christopher Larkin」至少有兩個 artistId——`168436294`（Soundtrack，本卡這位）與 `1437863520`（Classical，另一人）。**釘 168436294。**｜**擋下策展層一處（策展層自己已在 c-101 rulings 第 1 條擋過，本層覆核成立）**：派工信與 `CURATION-BRIEF-c93plus.md` 都寫「Christopher Larkin（Hollow Knight，**池中已 3 張**）」，**實掃是 0**。本層確認策展層的更正正確，**行文不得沿用「已有三張」的說法**。｜**status 判 thin 的理由**：facts 裡**沒有任何一條談這張碟怎麼寫出來的**——英文維基〈Hollow Knight〉全文沒有 Music 段落，只在募資段落提到 Larkin 是靠 Kickstarter 才請得起的人，Larkin 本人也沒有英文維基條目（Apple 與 MB 只給得出曲目與軌數）。可寫的素材密度不足以撐 full。"
+ },
+ {
+  "key": "desc2:Gareth Coker|Ori and the Blind Forest (Original Soundtrack)",
+  "artist": "Gareth Coker",
+  "album": "Ori and the Blind Forest (Original Soundtrack)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 36009069 的欄位：title「Ori and the Blind Forest (Original Soundtrack)」、artist-credit「Gareth Coker」、first-release-date 2015-03-10、primary-type Album、secondary-types [Soundtrack]，轄下 9 個 release、全部 Official。**軌數分三種**：**32 軌**（2015-03-10 XW 數位，掛 Microsoft Studios Music；另有 2015-06-10、2016-04-27、2020-03-10 三筆同為 32 軌的數位版）、**24 軌**（2016 年的三筆《Ori and the Blind Forest (Original Soundtrack **CD**)》，Microsoft Studios／Moon Studios／Nordic Games，US 與 GB）、以及 2017-02-24 US 的 **iam8bit 兩片 12 吋黑膠（8BIT-8023）12＋13＝25 軌**。",
+    "src": "https://musicbrainz.org/release-group/36009069-d3e9-4d57-9540-dd105ff4d76c"
+   },
+   {
+    "f": "英文維基〈Ori and the Blind Forest〉記：遊戲由 Moon Studios 開發、Microsoft Studios 發行，**2015 年 3 月**在 Windows 與 Xbox One 發售（Definitive Edition 2016 年 3 月、Nintendo Switch 版 2019 年 9 月）。Moon Studios 沒有單一辦公室，成員分散在奧地利、澳洲、以色列與美國遠端協作，開發歷時四年。評價上「音樂配樂」是被稱讚的項目之一。",
+    "src": "https://en.wikipedia.org/wiki/Ori_and_the_Blind_Forest"
+   },
+   {
+    "f": "英文維基〈Gareth Coker〉記：Coker 1984 年 5 月 7 日生，英國作曲家；幼時學鋼琴，學生時代加入管弦樂團與爵士樂團，後就讀 **Royal Academy of Music** 主修作曲。**他曾在日本住過三年，一邊教英文一邊研究各種民族樂器**，之後移居洛杉磯。他自陳的入行契機是 Alan Silvestri 的《阿甘正傳》配樂與《Star Wars: X-Wing vs. TIE Fighter》。",
+    "src": "https://en.wikipedia.org/wiki/Gareth_Coker"
+   },
+   {
+    "f": "同一條目的 Ori and the Blind Forest 段落記：**2011 年，工作室總監 Thomas Mahler 偶然看到 Coker 的作品，找他替遊戲的原型寫配樂**。Moon Studios 給了他完全自由去實驗，**他主要是照著畫面寫**。他的做法是**讓樂器去代表地區**——例如 Ginso Tree 那一區用木質打擊樂器、Forlorn Ruins 用管樂；他也與程式團隊密切合作，去調音樂的節奏與時機。**整套配樂在納許維爾的 Ocean Way Nashville Recording Studios 與 Nashville Studio Orchestra 錄音。**",
+    "src": "https://en.wikipedia.org/wiki/Gareth_Coker"
+   },
+   {
+    "f": "同一段記：這套配樂獲得樂評與玩家好評，入圍多項業界獎，**包括 BAFTA Game Award 的 Best Music**，並**在第 19 屆 D.I.C.E. Awards 拿下 Outstanding Achievement in Original Music Composition**。Kotaku 的 Kirk Hamilton 欣賞它的管弦寫法，**把它比作久石讓為吉卜力電影所寫的作品**；Yahoo 的 Ben Silverman 稱它「一套美妙的配樂」，說它讓人想起《霍爾的移動城堡》的配樂。",
+    "src": "https://en.wikipedia.org/wiki/Gareth_Coker"
+   },
+   {
+    "f": "Apple Music 日本店面 collectionId 971519718，collectionName「Ori and the Blind Forest (Original Soundtrack)」、artistName「Gareth Coker」（artistId 444813042）、releaseDate 2015-03-10、trackCount 32、copyright「℗ 2015 Microsoft」；`lookup?entity=song` 攤得開 **32 軌、32 軌都有 previewUrl**。**人聲分佈得出來**：〈Ori, Lost In the Storm〉〈The Spirit Tree〉〈Approaching the End〉〈The Sacrifice〉〈Light of Nibel〉掛 feat. **Aeralie Brighton**；〈Naru, Embracing the Light〉〈Riding the Wind〉〈Completing the Circle〉掛 feat. **Rachel Mellis**；〈Up the Spirit Caverns Walls〉〈Thornfelt Swamp〉〈The Waters Cleansed〉掛 feat. **Tom Boyd**。第 1 軌〈Ori, Lost In the Storm〉1:08、第 16 軌〈Climbing the Ginso Tree〉5:40、第 32 軌〈Light of Nibel〉4:19。",
+    "src": "https://music.apple.com/jp/album/971519718"
+   }
+  ],
+  "hookCandidates": [
+   "每一區配一組樂器：那棵樹用木頭敲，那片廢墟用管樂吹",
+   "他先在日本住了三年，一邊教英文一邊摸民族樂器"
+  ],
+  "sound": "英文維基有具名依據，可寫：**用樂器代表地區**——Ginso Tree 用木質打擊樂器、Forlorn Ruins 用管樂；Moon Studios 給了他完全自由，**他主要照著畫面寫**，並與程式團隊一起調音樂的節奏與時機。**錄音在納許維爾的 Ocean Way Nashville Recording Studios，樂團是 Nashville Studio Orchestra。**人聲三位（Apple 曲目列可查）：Aeralie Brighton、Rachel Mellis 與 Tom Boyd。樂評的比較有據：Kotaku 的 Kirk Hamilton 把它的管弦寫法比作久石讓的吉卜力配樂。",
+  "keyTracks": [
+   "Ori, Lost In the Storm",
+   "The Blinded Forest",
+   "Climbing the Ginso Tree",
+   "The Sacrifice",
+   "Light of Nibel"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2015。**遊戲發售與原聲帶發行同月，日期差一天**：英文維基記遊戲 2015 年 3 月在 Windows 與 Xbox One 發售（通行日期為 3 月 11 日）；MB release-group 的 first-release-date 與 Apple 的 releaseDate **都是 2015-03-10**，℗ 2015 Microsoft。年份無爭議。**後續版本的年份不要誤用**：2016 年才有 24 軌的 CD 版、2017-02-24 才有 iam8bit 的兩片黑膠。",
+  "notes": "**ready 覆核通過，配對正確；32 軌是原盤軌數。** Apple jp 971519718 的 32 軌與 MB 四筆 32 軌數位 release 逐數相符，releaseDate 2015-03-10 與 first-release-date 同日，℗ 2015 Microsoft 與 MB 的 Microsoft Studios Music 一致；已依 c-97 第 11 條覆核曲目列攤得開、32 軌全有 previewUrl，首軌〈Ori, Lost In the Storm〉可當固定試聽（裁定 157 已逐軌看過位置）。｜**⚠ 軌數三種，行文一定要鎖 32**：數位版 32 軌、**2016 年的 CD 版只有 24 軌**（MB 上三筆《…(Original Soundtrack CD)》皆同）、**iam8bit 兩片黑膠 25 軌**（12＋13）。**行文不得說「CD 收齊三十二首」或「黑膠收齊三十二首」。**｜**策展層說法無擋下項。**｜**時序主張查證**：可安全寫「**第 19 屆 D.I.C.E. Awards 原創音樂項得獎**」與「BAFTA Best Music **入圍**」——英文維基〈Gareth Coker〉分別用 win 與 nomination 兩個字，**不得把 BAFTA 寫成得獎**。｜**跨卡對照**：同批 b 組的 Mick Gordon《DOOM》拿的是**第 20 屆** D.I.C.E. 的同一個獎項（英文維基〈Abzû〉記），Coker 這張是**第 19 屆**——兩張卡連著兩年拿同一個獎，這條可以寫，但要把屆數分清楚。｜**掛名要注意**：本作的人聲三位（Aeralie Brighton、Rachel Mellis、Tom Boyd）在 Apple 的曲名裡以 feat. 形式出現，**藝人欄仍只掛 Gareth Coker**，不是合作掛名。"
+ },
+ {
+  "key": "desc2:Christopher Tin|Calling All Dawns: A Song Cycle",
+  "artist": "Christopher Tin",
+  "album": "Calling All Dawns: A Song Cycle",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 164e1861 的欄位：title「Calling All Dawns: A Song Cycle」、artist-credit「Christopher Tin」、first-release-date 2009-10-01、primary-type Album、**secondary-types 為空**（不是 Soundtrack，也不是 Compilation），轄下 6 個 release、全部 Official：2009-10-01 XW 的 Tin Works Publishing 數位版與 CD（皆 TW001，12 軌）、同日一筆 Tin Works／Universal Music Classics Group 的數位版 12 軌、2011-09-01 的《Calling All Dawns Surround Edition (CD+DVD)》（TW002，12＋12）、2015-05-11 的 4 軌節錄《Selections from Calling All Dawns》、2023-05-26 的數位版 12 軌。",
+    "src": "https://musicbrainz.org/release-group/164e1861-c100-4e1f-8472-5e4b91588106"
+   },
+   {
+    "f": "英文維基〈Calling All Dawns〉記：這是 Christopher Tin 2009 年發行的**古典跨界（classical crossover）專輯**。它**在第 53 屆葛萊美獎拿下兩座獎**——Best Classical Crossover Album，以及〈Baba Yetu〉的 Best Instrumental Arrangement Accompanying Vocalist(s)。〈Baba Yetu〉是 2005 年電子遊戲《文明帝國 IV》的主題曲，**這次得獎是史上第一次有葛萊美頒給為電子遊戲所寫的作品**。",
+    "src": "https://en.wikipedia.org/wiki/Calling_All_Dawns"
+   },
+   {
+    "f": "同一條目記：整張碟是**三個樂章的聯篇歌集**——day、night、dawn，分別對應生、死、重生。**十二首歌，每一首用不同的語言唱**；歌詞來源相當雜，包含希伯來聖經、《薄伽梵歌》、《魯拜集》這類長篇作品的節錄，也有主禱文、毛利諺語與日本俳句這類短句。演唱動用的聲樂傳統同樣多樣，**包含京劇、愛爾蘭的 keening（哭喪吟）與非洲合唱**。",
+    "src": "https://en.wikipedia.org/wiki/Calling_All_Dawns"
+   },
+   {
+    "f": "英文維基〈Christopher Tin〉記：Tin 1976 年 5 月 21 日生於加州帕羅奧圖，父母是香港移民；史丹佛大學雙主修作曲與英國文學、副修藝術史，1998 年畢業，1999 年再取得史丹佛的人文跨領域碩士。**〈Baba Yetu〉的緣起是 2005 年他在史丹佛的舊室友、遊戲設計師 Soren Johnson 請他替《文明帝國 IV》寫主題曲**——他寫成一首斯瓦希里語的合唱版主禱文，由他自己以前待過的無伴奏合唱團 Stanford Talisman 錄音。",
+    "src": "https://en.wikipedia.org/wiki/Christopher_Tin"
+   },
+   {
+    "f": "同一條目記：〈Baba Yetu〉**是第一首既獲葛萊美提名、也獲葛萊美獎的電子遊戲音樂**，並讓 Tin 進了金氏世界紀錄，紀錄項目是「第一首拿下葛萊美的電玩主題曲」。這次得獎被視為電玩音樂被主流樂界接受的重要里程碑：**在此之後，錄音學院把視覺媒體類獎項改名以納入電玩原聲，並在 2022 年另設了 Best Score Soundtrack for Video Games and Other Interactive Media 這個專屬獎項。**",
+    "src": "https://en.wikipedia.org/wiki/Christopher_Tin"
+   },
+   {
+    "f": "同一條目的 Calling All Dawns 段落記：十二首歌用**十二種語言**唱，包含斯瓦希里語、波蘭語、法語、波斯語與毛利語。**參與演出的有 Royal Philharmonic Orchestra（Lucas Richman 指揮）、Soweto Gospel Choir、Lia、Aoi Tada、大村香織、Jia Ruhan、Dulce Pontes、Anonymous 4、Frederica von Stade、Sussan Deyhim、Stanford Talisman 與 On Ensemble。**Tin 原本從沒打算讓這部作品被現場演出，後來卻有很多團體這樣做——最早的一場是 Derek Machan 帶威斯康辛州 Waterford Union High School 合唱團演的。",
+    "src": "https://en.wikipedia.org/wiki/Christopher_Tin"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1526759916，collectionName「Calling All Dawns」（**沒有副標**）、artistName「Christopher Tin」（artistId 129576352）、releaseDate 2009-10-01、trackCount 12、copyright「A Decca Gold Release; ℗ 2009 Tin Works Publishing, LLC, under exclusive license to UMG Recordings, Inc.」、primaryGenreName「Worldwide」；`lookup?entity=song` 攤得開 **12 軌、12 軌都有 previewUrl**：1〈Baba Yetu (feat. Soweto Gospel Choir)〉3:30、2〈Mado Kara Mieru (feat. Lia, Aoi Tada & Kaori Omura)〉4:46、3〈Dao Zai Fan Ye (feat. Jia Ruhan)〉3:16、4〈Se É Pra Vir Que Venha (feat. Dulce Pontes)〉4:15、5〈Rassemblons-Nous〉4:27、6〈Lux Aeterna〉3:59、7〈Caoineadh (feat. Anonymous 4)〉5:44、8〈Hymn Do Trójcy Świetęj (feat. Frederica von Stade)〉6:49、9〈Hayom Kadosh〉1:46、10〈Hamsafar (feat. Sussan Deyhim)〉2:52、11〈Sukla-Krsne〉2:01、12〈Kia Hora Te Marino〉3:18。該 collectionId 在 us／gb／jp／de／ca／au 六個店面都上架。",
+    "src": "https://music.apple.com/us/album/1526759916"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌，十二種語言，從斯瓦希里語一路唱到毛利語",
+   "開場那首本來是一款遊戲的主題曲，後來替電玩音樂拿到了第一座葛萊美"
+  ],
+  "sound": "英文維基有具名依據，可寫：**三個樂章的聯篇歌集**——day、night、dawn，對應生、死、重生；十二首歌各用一種語言，歌詞取自希伯來聖經、《薄伽梵歌》、《魯拜集》、主禱文、毛利諺語與日本俳句。**聲樂傳統本身就是編制的一部分**：京劇、愛爾蘭 keening（哭喪吟）、非洲合唱都在裡面。演出陣容有據：Royal Philharmonic Orchestra（Lucas Richman 指揮）、Soweto Gospel Choir、Anonymous 4、Frederica von Stade、Dulce Pontes、Sussan Deyhim、Stanford Talisman、On Ensemble 等。",
+  "keyTracks": [
+   "Baba Yetu",
+   "Mado Kara Mieru",
+   "Caoineadh",
+   "Hamsafar",
+   "Kia Hora Te Marino"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2009。MB 的 first-release-date 2009-10-01、轄下三筆 2009-10-01 的 Tin Works Publishing release（TW001 數位與 CD）、Apple 的 releaseDate 2009-10-01 與 ℗ 2009 四處一致，年份無爭議。**這一張沒有「遊戲發售年」這一層**——它不是遊戲原聲盤（見 notes）；但**開場曲〈Baba Yetu〉的來源年份要與本輯分開寫**：那首原是 2005 年《文明帝國 IV》的主題曲，本輯是 2009 年的**新錄音**，得葛萊美是 2011 年的第 53 屆。**三個年份不得混寫。**",
+  "notes": "**探測層誤記 unavailable，已救回（裁定 166 的同一形狀）。** 探測層在七個店面各只查到 1 筆卻沒配上，原因是**盤名變形**：卡片作《Calling All Dawns: A Song Cycle》（依 MB 實體），**Apple 作《Calling All Dawns》，沒有副標**——這是裁定 168 那一族「卡片盤名帶長副標、Apple 沒有」的形狀。改走藝人目錄端點 `lookup?id=129576352&entity=album&limit=200`（裁定 166）即命中。**正解 us 1526759916**（12 軌、℗2009 Tin Works Publishing／Decca Gold，六個店面都有），已依 c-97 第 11 條覆核曲目列攤得開、12 軌全有 previewUrl，與 MB 三筆 2009-10-01 的 12 軌 release 逐數相符，首軌〈Baba Yetu〉可當固定試聽。｜**⚠ 型態要照實記（裁定 167）：這不是遊戲原聲帶。** MB 的 primary-type 是 **Album、secondary-types 為空**——**本批 45 張裡唯一一張沒有 Soundtrack 次型別的碟**（c-101 策展層裁定第 2 條已記）。它是一張獨立的合唱／管弦聯篇歌集，只有開場曲〈Baba Yetu〉出自《文明帝國 IV》。**行文不得把它寫成遊戲原聲帶、不得說「這是某款遊戲的配樂」。**｜**時序主張查證通過，可以寫，但措辭要精確**：英文維基〈Calling All Dawns〉原文是「**The win marked the first time in history that a Grammy had been awarded to a composition written for a video game**」；〈Christopher Tin〉條目另記〈Baba Yetu〉是**第一首既獲提名也獲獎**的電玩音樂，並讓他進了金氏世界紀錄。**兩座獎要分清楚**：專輯拿的是 Best Classical Crossover Album，〈Baba Yetu〉拿的是 Best Instrumental Arrangement Accompanying Vocalist(s)，**都在第 53 屆（2011 年）**。**得獎的是本輯上的這個錄音，不是 2005 年遊戲裡那一版**——行文不得寫成「遊戲裡的那首歌拿了葛萊美」。｜**後續影響也有來源可寫**：得獎之後錄音學院把視覺媒體類獎項改名以納入電玩原聲，並在 2022 年另設電玩專屬的 Best Score Soundtrack for Video Games and Other Interactive Media。｜**軌數無疑點**：MB 與 Apple 都是 12 軌；2011 年的 Surround Edition 是 CD＋DVD（12＋12），2015 年另有 4 軌節錄盤《Selections from Calling All Dawns》，**兩者都不是本卡**。"
+ }
+]

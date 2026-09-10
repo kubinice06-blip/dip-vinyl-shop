@@ -27,7 +27,9 @@ const LINE_FRONTS = {
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB,
   c85: UKB, c86: USB, c87: JPN,
 };
-const FRONTS = LINE_FRONTS[String(process.argv[2] || '').slice(0, 3)] || JPN;
+// 2026-09-05：`slice(0, 3)` 對三位數批號（c-100 起）會截成 `c10`，靜默退回 JPN。
+// 與 probe-previews.mjs 是同一個 bug，一起修。
+const FRONTS = LINE_FRONTS[(String(process.argv[2] || '').match(/^c\d+/) || [])[0]] || JPN;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const P = path.join(ROOT, `batch-progress/${batch}/previews.json`);
 const prev = JSON.parse(fs.readFileSync(P, 'utf8'));

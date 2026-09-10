@@ -1,0 +1,898 @@
+[
+ {
+  "key": "desc2:Mr. Fox|The Gipsy",
+  "artist": "Mr. Fox",
+  "album": "The Gipsy",
+  "facts": [
+   {
+    "f": "release-group 31b0575a 的欄位：title「The Gipsy」、artist-credit「Mr. Fox」（藝人實體 MBID 745a29e9，type Group、area United Kingdom、begin 1970）、first-release-date **1971**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1971／GB／Official（12 吋，7 軌，label-info Transatlantic Records TRA 236）、2001／IT／Official（黑膠，7 軌，Get Back）、2005-07-22／JP／Official（CD，7 軌，Arcàngelo ARC7101）。**最早的 release 就是 1971／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/31b0575a-e5c6-3857-b72b-3056285bbe10?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971／GB 原盤（Transatlantic TRA 236，12 吋，release 3bee41ff）逐軌：1〈Mendle〉7:13、2〈The Gipsy〉**12:54**、3〈Aunt Lucy Broadwood〉2:23、4〈House Carpenter〉5:13、5〈Elvira Madigan〉4:20、6〈Dancing Song〉3:07、7〈All the Good Times〉5:25。**只有 7 軌、總長 40 分 35 秒；同名曲一首就佔 12 分 54 秒，接近整張的三分之一。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=31b0575a-e5c6-3857-b72b-3056285bbe10&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Mr Fox 是 1970 年代初的英國民謠搖滾團，核心是 Bob Pegg 與 Carole Butler（兩人皆 1944 年生），在 Nottingham Folk Workshop 認識、1963 年結婚後移居 Leeds。Bob 當時在大學的方言與民俗研究所研究 Yorkshire Dales 的民謠；他們 1969 年為製作人 Bill Leader 錄音時，**用了提琴、melodeon、大提琴、貝斯與鼓的編制，靈感來自 Yorkshire Dales 舊時的村莊樂隊——這成了 Mr Fox 的招牌**。Bill Leader 把帶子放給 Transatlantic Records 的 Nat Joseph 聽，樂團因此簽約。**團名取自他們的招牌曲，而那首歌出自一則血腥的英國民間故事——藍鬍子傳說的一個版本，年輕女子識破了連續殺人犯。**",
+    "src": "https://en.wikipedia.org/wiki/Mr._Fox"
+   },
+   {
+    "f": "同一條目對本張的敘述：大提琴手 Andrew Massey 與管樂手 John Myatt 在首張發行後不久因經濟因素離團，**因此第二張《The Gipsy》（1971）的配器較不複雜，卻更具實驗性**。這張仍以自己寫的素材為主，但收了兩首傳統曲——〈The House Carpenter〉與末軌〈All the Good Times〉，後者由 Bob Pegg 填了新詞。**〈All the Good Times〉的參與者掛名「The Gridley Tabernacle Choir and Orchestra」，那其實是一個臨時湊起來的樂手與歌手集合的虛構名號**——包括 Rod 與 Danny Stradling 以及 Swan Arcade 的成員——**疊錄三次做出巨大的合唱聲響**。1972 年鼓手 Alan Eden 與貝斯手 Barry Lyons 退團加入 Trees，同年 Carole 離開後樂團解散。",
+    "src": "https://en.wikipedia.org/wiki/Mr._Fox"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup，`Mr. Fox` 在店面上有四個同名實體，其中 artistId 1435971906 名下唯一的條目是 **1436337340《Join Us in Our Game》2004，17 軌**——攤開 `entity=song` 後可見 **第 11–17 軌正是本張的 7 軌**（〈Mendle〉7:12、〈The Gipsy〉12:52、〈Aunt Lucy Broadwood〉2:22、〈The House Carpenter〉5:12、〈Elvira Madigan Theme〉4:19、〈Dancing Song〉3:05、〈All the Good Times〉5:25，長度與原盤差 1–2 秒），**第 1–10 軌則是樂團 1970 年首張的內容。這是一個「兩張碟併成一個條目」的合輯，不是本張的條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1436337340&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 31b0575a 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/31b0575a-e5c6-3857-b72b-3056285bbe10/front"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲一首就走了十二分五十四秒，佔掉整張的三分之一",
+   "末軌掛名的那個合唱團與樂團其實不存在，是臨時湊的人疊錄三次"
+  ],
+  "sound": "1971 年 Transatlantic TRA 236 的 12 吋原盤只有 7 軌、總長 40 分 35 秒，同名曲〈The Gipsy〉一首就佔 12 分 54 秒，開場的〈Mendle〉也有 7 分 13 秒。核心是 Bob Pegg 與 Carole Butler 夫婦；Bob 研究過 Yorkshire Dales 的民謠，樂團的招牌編制——提琴、melodeon、大提琴、貝斯與鼓——正是從當地舊時的村莊樂隊來的。大提琴與管樂手在首張之後離團，這第二張的配器因此變得簡單，卻更放得開。素材以自己寫的為主，另收兩首傳統曲；末軌〈All the Good Times〉的參與者掛著「The Gridley Tabernacle Choir and Orchestra」的名號，其實是臨時湊起來的一群樂手與歌手疊錄三次做出的合唱聲響。",
+  "keyTracks": [
+   "Mendle",
+   "The Gipsy",
+   "All the Good Times"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。release-group first-release-date **1971**、**依裁定 220 回問轄下 release**，最早的一筆就是 1971／GB／Official 的 Transatlantic TRA 236，其餘兩筆是 2001 與 2005 的再發，沒有以再發日期建檔的問題；條目也把《The Gipsy》記為 1971 年的第二張。串流沒有本張的獨立條目，無第三處可對。**同名先行單曲：無**（同名曲是本張第 2 軌）。",
+  "notes": "⚠ **無來源狀態，但要記下發現**：串流上找到的 1436337340《Join Us in Our Game》2004（gb，17 軌）**是「兩張碟併成一個條目」的合輯**——第 1–10 軌是樂團 1970 年的首張、第 11–17 軌才是本張。**依策展層第八條操作判斷所記的同一形狀（Magna Carta 那筆），不可用它當本張的試聽來源。** 本張 status 維持無來源。｜⚠ **掛名撞名（裁定 179）**：`Mr Fox` 在 MB 上 score 最高的雖然是對的 745a29e9，但後面緊跟七個同名的 rapper／Afrobeat／dub 實體（score 92–96）；串流上四個同名實體也全部不是本團。**判準是 area 與 type，不是 score。**｜掛名寫法：池中與 MB 作 `Mr. Fox`（帶點號），條目內文作 `Mr Fox`（無點號），**照池中寫法**。｜曲名差異一處：原盤第 4 軌作〈House Carpenter〉（無 The），條目與串流作〈The House Carpenter〉，**行文照原盤**。｜條目提到首張獲得的媒體年度獎項**不得寫入**，且那是首張不是本張。｜條目對樂團現場表現好壞的敘述與樂評批評**一律不入行文**。"
+ },
+ {
+  "key": "desc2:Gryphon|Gryphon",
+  "artist": "Gryphon",
+  "album": "Gryphon",
+  "facts": [
+   {
+    "f": "release-group dc160fdc 的欄位：title「Gryphon」、artist-credit「Gryphon」（藝人實體 MBID 0cd7ff0b，type Group、area United Kingdom、begin 1973）、first-release-date **1973**、primary-type Album、secondary-types **空**。轄下 8 筆 release，最早的是 1973／GB／Official（12 吋，12 軌，label-info Transatlantic Records TRA 262），其後全部是 1992 之後的 CD 再發（PONY CANYON、Progressive International、Curio、Arcàngelo、Talking Elephant 等）。**最早的 release 就是 1973／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/dc160fdc-d7e8-345a-9591-176487e7d70f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1973／GB 原盤（Transatlantic TRA 262，12 吋，release 76b41752）逐軌：1〈Kemp's Jig〉3:11、2〈Sir Gavin Grimbold〉2:51、3〈Touch and Go〉1:35、4〈Three Jolly Butchers〉3:57、5〈Pastime With Good Company〉1:35、6〈The Unquiet Grave〉**5:46**、7〈Estampie〉4:55、8〈Crossing the Stiles〉2:30、9〈The Astrologer〉3:15、10〈Tea Wrecks〉**1:12**、11〈Juniper Suite〉4:47、12〈The Devil and the Farmer's Wife〉1:59。**12 軌、總長 37 分 33 秒，單軌多在一到四分鐘之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dc160fdc-d7e8-345a-9591-176487e7d70f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Gryphon 是 1972 年初在倫敦成軍的英國 progressive folk 團，**以中世紀與文藝復興風格的音樂為人所知**。四人編制是 Graeme Taylor、Richard Harvey、Dave Oberlé 與 Brian Gulland；**Harvey 與 Gulland 是倫敦皇家音樂學院的畢業生**，兩人以古典訓練的背景組了一個原聲樂團，混合英國民謠、當代搖滾與中世紀、文藝復興音樂，之後吉他手 Taylor 與鼓手 Oberlé 加入。樂團與民謠廠牌 Transatlantic Records 簽約，首場演出在 Buckinghamshire 的 Aylesbury 的 Stone Parish Church。**1973 年 6 月 Transatlantic 發行同名首張，錄音地點是錄音師 Adam Skeaping 的閣樓**；這張把電吉他、鍵盤與巴松管、krumhorn 等當時搖滾樂少用的管樂器加了進來。",
+    "src": "https://en.wikipedia.org/wiki/Gryphon_(band)"
+   },
+   {
+    "f": "同一條目：樂團早期演出包括在 St. Paul's 與 Southwark 兩座主教座堂的莎士比亞紀念活動；首張之後不久，他們在五天之內上遍 BBC 四個廣播頻道。1974 年 1 月在 Oxfordshire 的 Chipping Norton Recording Studios 錄第二張《Midnight Mushrumps》，同期受委託為倫敦國家劇院 Peter Hall 執導的莎劇《暴風雨》寫配樂，1974 年 4 月在 The Old Vic 首演。第三張《Red Queen to Gryphon Three》1974 年 12 月發行，是他們第一張在美國發行的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Gryphon_(band)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1382277093：collectionName「Gryphon」、artistName「Gryphon」、trackCount 12、℗ 欄「℗ 1973 Sanctuary Records Group Ltd., a BMG Company」、**releaseDate 記 1973-06-01**。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名與曲序與 1973 原盤**逐位置相符**、逐軌長度差多在 2 秒內。**上架的就是 12 軌的原盤內容，沒有加曲。** 字面差異一處：第 8 軌店面作〈Crossing the Styles〉。",
+    "src": "https://itunes.apple.com/lookup?id=1382277093&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group dc160fdc 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/dc160fdc-d7e8-345a-9591-176487e7d70f/front"
+   }
+  ],
+  "hookCandidates": [
+   "兩位創團者是皇家音樂學院的畢業生，帶進了巴松管與 krumhorn",
+   "這張錄在錄音師的閣樓裡，1973 年 6 月發行"
+  ],
+  "sound": "1973 年 6 月 Transatlantic TRA 262 的 12 吋原盤 12 軌、總長 37 分 33 秒。單軌短而密：〈Tea Wrecks〉1 分 12 秒、〈Touch and Go〉與〈Pastime With Good Company〉各 1 分 35 秒，最長的〈The Unquiet Grave〉也才 5 分 46 秒。樂團 1972 年初在倫敦成軍，Richard Harvey 與 Brian Gulland 是皇家音樂學院的畢業生，以古典訓練的底子把英國民謠、當代搖滾與中世紀、文藝復興的音樂混在一起，之後加入吉他手 Graeme Taylor 與鼓手 Dave Oberlé。這張錄在錄音師 Adam Skeaping 的閣樓，把電吉他、鍵盤與巴松管、krumhorn 這些當時搖滾樂少用的管樂器一起放了進來。串流上架的就是這 12 軌。",
+  "keyTracks": [
+   "Kemp's Jig",
+   "The Unquiet Grave",
+   "The Devil and the Farmer's Wife"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（月份亦對得上，6 月）。release-group first-release-date **1973**、**依裁定 220 回問轄下 release**，最早的一筆就是 1973／GB／Official 的 Transatlantic TRA 262，其餘七筆全部是 1992 年之後的 CD 再發，沒有以再發日期建檔的問題；條目寫「1973 年 6 月 Transatlantic 發行同名首張」；串流店面 gb 1382277093 的 releaseDate 正是 **1973-06-01**、℗ 欄同為 1973。**三處一致。同名先行單曲：無。**",
+  "notes": "⚠ **掛名撞名（裁定 179）**：`Gryphon` 在 MB 上 score 最高的雖然是對的 0cd7ff0b，但同名的還有加拿大的 Gryphon Trio、brony 藝人與遊戲音樂 remixer。**判準是 area、type 與 begin 年，不是 score。**｜**這是本批唯一踩在兩批邊界上的卡**（策展層第四節）：MB 的 disambiguation 把樂團寫成「70s UK progressive rock band」，形式上落在 prog 批的範圍，**本批收的是民謠側的首張**；1974 年的《Red Queen to Gryphon Three》已明寫進卡單的「刻意不釘」、留給日後的 prog 補遺批，**行文不要把兩張混談**。｜自我同名卡（掛名與盤名相同）。｜曲名差異一處：原盤〈Crossing the Stiles〉、店面〈Crossing the Styles〉，**行文照原盤的 Stiles**。｜條目關於《Midnight Mushrumps》與《暴風雨》配樂的段落**是下一張的事，不得挪用到本張**。"
+ },
+ {
+  "key": "desc2:Magna Carta|Seasons",
+  "artist": "Magna Carta",
+  "album": "Seasons",
+  "facts": [
+   {
+    "f": "release-group ce70b55e 的欄位：title「Seasons」、artist-credit「Magna Carta」、first-release-date **1970-08**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1970-08／GB／Official（12 吋，7 軌，label-info Vertigo 6360 003）、2004-07-12／GB／Official（CD，7 軌，Repertoire REPUK 1034）、一筆無日期的 Vertigo CD（846 447-2，7 軌）。**最早的 release 是 1970-08，與 first-release-date 完全相同**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ce70b55e-b485-3efa-8a5c-51d3904f7920?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970-08／GB 原盤（Vertigo 6360 003，12 吋，release 15be40db）逐軌：**1〈Seasons: Prologue / Winter Song / Spring Poem / Spring Song / Summer Poem / Summer Song / Autumn Song / Epilogue / Winter Song (reprise)〉22:14**、2〈Goin' My Way (Road Song)〉2:55、3〈Elizabethan〉2:38、4〈Give Me No Goodbye〉3:10、5〈Ring of Stones〉3:49、6〈Scarecrow〉2:17、7〈Airport Song〉3:41。**7 軌、總長 40 分 44 秒——第一軌是九段組曲、一軌就佔 22 分 14 秒，超過整張的一半；其餘六軌合計只有 18 分半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ce70b55e-b485-3efa-8a5c-51d3904f7920&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Magna Carta 是 1969 年 4 月在倫敦組成的民謠搖滾團，原始成員為 Chris Simpson（吉他、人聲）、Lyell Tranter（吉他）與 Glen Stuart（人聲），首場演出在 1969 年 5 月 10 日。首張同名專輯 1969 年由 Mercury 發行、Gus Dudgeon 製作、Tony Visconti 編曲。**三人組 1969 年簽 Mercury，之後轉到 Vertigo。1970 年的《Seasons》由 Gus Dudgeon 製作、Tony Visconti 編曲，錄音樂手包括風琴手 Rick Wakeman、鼓手 Barry Morgan 與爵士低音提琴手 Spike Heatley；這張之後 Tranter 回了澳洲。** 1971 年樂團與皇家愛樂在皇家亞伯特廳同台，Davey Johnstone 加入並參與《Songs From Wasties Orchard》（1971）與《In Concert》（1972），之後才離團去替 Elton John 工作。",
+    "src": "https://en.wikipedia.org/wiki/Magna_Carta_(band)"
+   },
+   {
+    "f": "串流店面 **de** 的 collectionId 988400303：collectionName「Seasons」、artistName「Magna Carta」、trackCount 7、℗ 欄「℗ 2004 Vertigo Records / Repertoire Records (UK) Ltd.」、releaseDate 記 1970。`entity=song` 攤得出 **7 軌、7 軌全部有 previewUrl**，每一軌都帶「(Remastered)」後綴，**截去後綴後與 1970 原盤逐位置相符**、逐軌長度差在 4 秒內（第一軌 22:18 對 22:14）。**上架的就是 7 軌的原盤內容。** 探測層在 gb／us／jp 三個店面各回 0 筆，**到 de 才命中**。",
+    "src": "https://itunes.apple.com/lookup?id=988400303&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group ce70b55e 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/ce70b55e-b485-3efa-8a5c-51d3904f7920/front"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌是九段組曲，一軌就佔了整張的一半以上",
+   "錄音時彈風琴的是 Rick Wakeman，編曲掛 Tony Visconti"
+  ],
+  "sound": "1970 年 8 月 Vertigo 6360 003 的 12 吋原盤 7 軌、總長 40 分 44 秒，但第一軌就是一首 22 分 14 秒的九段組曲——從序曲、冬之歌、春之詩、春之歌、夏之詩、夏之歌、秋之歌到尾聲與冬之歌的重奏——一軌吃掉超過整張的一半；剩下六軌合計只有十八分半，最短的〈Scarecrow〉2 分 17 秒。三人組由 Chris Simpson、Lyell Tranter 與 Glen Stuart 組成，1969 年 4 月在倫敦成軍。這張製作人是 Gus Dudgeon、編曲 Tony Visconti，錄音樂手包括彈風琴的 Rick Wakeman、鼓手 Barry Morgan 與爵士低音提琴手 Spike Heatley；錄完之後 Tranter 就回澳洲了。",
+  "keyTracks": [
+   "Seasons: Prologue / Winter Song / Spring Poem / Spring Song / Summer Poem / Summer Song / Autumn Song / Epilogue / Winter Song (reprise)",
+   "Elizabethan",
+   "Airport Song"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（月份亦一致，1970-08）。release-group first-release-date **1970-08**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970-08／GB／Official 的 Vertigo 6360 003，**連月份都相同**，其餘兩筆是 2004 年與無日期的 CD，沒有以再發日期建檔的問題；條目把《Seasons》記為 1970 年作品；串流店面 de 988400303 的 releaseDate 記 1970（℗ 欄的 2004 是再發權利方的錄製聲明）。**三處一致。同名先行單曲：無。**",
+  "notes": "⚠ **策展層第八條操作判斷要接手**：串流上另有一個 collectionId **1442886702《Seasons + Songs from Wasties Orchard (Remastered)》**（年份標 1999）是**兩張碟併成一個條目**，**不可用它當本張或另一張的來源**。本張用的是 de 店面的 988400303（單張 7 軌），**這一筆是對的**。｜**命中店面是 de 不是 gb**：gb／us／jp 三個店面都回 0 筆，到 de 才有。｜盤名與軌名都帶「(Remastered)」後綴，依裁定 175 截去後比對，**行文不要寫出後綴**。｜**第一軌的曲名極長（九段標題以斜線串接）**，行文引用時可只寫〈Seasons〉並說明它是九段組曲，**但 `keyTracks` 已照原樣完整保留**。｜條目提到的專輯排行榜名次**一律不得寫入**。｜同團的《Songs From Wasties Orchard》也在本批 b 組，兩張行文不要重複團史段落。"
+ },
+ {
+  "key": "desc2:Magna Carta|Songs From Wasties Orchard",
+  "artist": "Magna Carta",
+  "album": "Songs From Wasties Orchard",
+  "facts": [
+   {
+    "f": "release-group 8f3663e9 的欄位：title「Songs From Wasties Orchard」、artist-credit「Magna Carta」、first-release-date **1971**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1971／GB／Official（12 吋，12 軌，label-info Vertigo 6360 040）與 1994／DE／Official（CD，12 軌，Repertoire REP 4447-WP）。**最早的 release 就是 1971／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/8f3663e9-2c6a-33ce-bdee-5992db6e280f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971／GB 原盤（Vertigo 6360 040，12 吋，release 3b266568）逐軌：1〈The Bridge at Knaresborough Town〉5:00、2〈White Snow Dove〉2:11、3〈Parliament Hill〉2:46、4〈Wayfaring〉3:50、5〈Down Along Up〉2:11、6〈Country Jam〉1:51、7〈Time for the Leaving〉4:09、8〈Isle of Skye〉2:52、9〈Sponge〉2:23、10〈Sunday on the River〉3:33、11〈Good Morning Sun〉2:43、12〈Home Groan〉2:22。**12 軌、總長 35 分 51 秒，只有第 1 軌到 5 分整，其餘全部在四分鐘以內。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8f3663e9-2c6a-33ce-bdee-5992db6e280f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Songs from Wasties Orchard》是 Magna Carta **1971 年由 Vertigo Records 發行的錄音室專輯**。曲目分兩面，第一面六首、第二面六首（第 4 軌條目作〈Wayfarin'〉）。人員只有三位：**Davey Johnstone（人聲、木吉他、電吉他、曼陀林、西塔琴、大鍵琴、鈸）、Chris Simpson（人聲、木吉他、打擊）、Glen Stuart（人聲、里拉琴）**。條目另註盤名的由來：**Wasties Orchard 是牛津附近 Long Hanborough 村裡一小片 1960 年代末蓋的公寓，樂團錄這張時就住在那裡。**",
+    "src": "https://en.wikipedia.org/wiki/Songs_from_Wasties_Orchard"
+   },
+   {
+    "f": "樂團條目：Magna Carta 1969 年 4 月在倫敦成軍，1969 年簽 Mercury、之後轉到 Vertigo。1970 年的《Seasons》之後 Lyell Tranter 回了澳洲；1971 年樂團與皇家愛樂在皇家亞伯特廳同台，**Davey Johnstone 加入並參與《Songs From Wasties Orchard》（1971）與《In Concert》（1972），之後才離團去替 Elton John 工作，至今仍與他同台**。此後 Chris Simpson 與 Glen Stuart 找來 Stan Gordon 錄了 1973 年的《Lord of the Ages》。",
+    "src": "https://en.wikipedia.org/wiki/Magna_Carta_(band)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 524836580：collectionName「**Songs from Wasties Orchard (Remastered)**」、artistName「Magna Carta」、trackCount 12、℗ 欄「℗ 2012 Repertoire Records」、releaseDate 記 1971。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名與曲序與 1971 原盤**逐位置相符**、逐軌長度差在 2 秒內。**上架的就是 12 軌的原盤內容，沒有加曲。**",
+    "src": "https://itunes.apple.com/lookup?id=524836580&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 8f3663e9 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/8f3663e9-2c6a-33ce-bdee-5992db6e280f/front"
+   }
+  ],
+  "hookCandidates": [
+   "盤名的 Wasties Orchard 是他們錄音時住的那片公寓",
+   "彈吉他的 Davey Johnstone 錄完再一張就去替 Elton John 工作了"
+  ],
+  "sound": "1971 年 Vertigo 6360 040 的 12 吋原盤 12 軌、總長 35 分 51 秒：只有開場的〈The Bridge at Knaresborough Town〉滿 5 分鐘，其餘十一軌全部在四分鐘以內，最短的〈Country Jam〉1 分 51 秒。編制只有三位——Davey Johnstone 的人聲、木吉他、電吉他、曼陀林、西塔琴與大鍵琴，Chris Simpson 的人聲、木吉他與打擊，Glen Stuart 的人聲與里拉琴。Johnstone 只錄了這張與隔年的現場輯就離團，去替 Elton John 工作。盤名裡的 Wasties Orchard 是牛津附近 Long Hanborough 村的一小片公寓，樂團錄這張時就住在那裡。",
+  "keyTracks": [
+   "The Bridge at Knaresborough Town",
+   "Time for the Leaving",
+   "Home Groan"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。release-group first-release-date **1971**、**依裁定 220 回問轄下 release**，最早的一筆就是 1971／GB／Official 的 Vertigo 6360 040，另一筆是 1994 年的 CD，沒有以再發日期建檔的問題；專輯條目寫「1971 年由 Vertigo Records 發行」；串流店面 gb 524836580 的 releaseDate 記 1971（℗ 欄的 2012 是再發權利方的錄製聲明）。**三處一致。同名先行單曲：無。**",
+  "notes": "⚠ **策展層第八條操作判斷要接手**：串流上另有 collectionId **1442886702《Seasons + Songs from Wasties Orchard (Remastered)》**（年份標 1999）是**兩張碟併成一個條目**，**不可用它當本張的來源**。本張用的是 524836580（單張 12 軌），**這一筆是對的**。｜盤名帶「(Remastered)」後綴，依裁定 175 截去後比對，**行文不要寫出後綴**；另外**盤名的 From 在池中與 MB 是大寫、店面與條目作小寫 from，照池中寫法**。｜曲名差異一處：原盤與店面都作〈Wayfaring〉，專輯條目作〈Wayfarin'〉，**行文照兩處一致的〈Wayfaring〉**。｜同團的《Seasons》也在本批 b 組，兩張行文不要重複團史段落。"
+ },
+ {
+  "key": "desc2:Amazing Blondel|Evensong",
+  "artist": "Amazing Blondel",
+  "album": "Evensong",
+  "facts": [
+   {
+    "f": "release-group f01cb35a 的欄位：title「Evensong」、artist-credit「Amazing Blondel」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1970／GB／Official（12 吋，11 軌，label-info Island ILPS 9136）與 1995／GB／Official（CD，11 軌，Edsel Records EDCD 458）。**最早的 release 就是 1970／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f01cb35a-923c-3c0b-86b2-9e8f05bf8dae?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（Island ILPS 9136，12 吋，release ea8f5209）逐軌：1〈Pavan〉3:25、2〈St. Crispin's Day〉2:23、3〈Spring Season〉3:43、4〈Willowood〉3:27、5〈Evensong〉3:13、6〈Queen of Scots〉**1:45**、7〈The Ploughman〉3:11、8〈Old Moot Hall〉2:44、9〈Lady Marion's Galliard〉3:45、10〈Under the Greenwood Tree〉3:18、11〈Anthem〉3:00。**11 軌、總長 33 分 54 秒，每一軌都在 1 分 45 秒到 3 分 45 秒之間——全批長度最集中的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f01cb35a-923c-3c0b-86b2-9e8f05bf8dae&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Evensong》是 Amazing Blondel 的**第二張專輯**，呈現他們自稱的「pseudo-Elizabethan/Classical acoustic music sung with British accents」。**跨頁封套上樂團站在 Lincoln 主教座堂的迴廊裡、手持古樂器**，內頁列出製作名單與歌詞，中央是一張演出照。全部歌曲除註明者外都掛 Gladwin。人員：**John David Gladwin（主唱、魯特琴、theorbo、cittern、低音提琴）、Terence Alan Wincott（krumhorn、直笛、管風琴、人聲、tabor pipe、小鼓、長笛、簧風琴、魯特琴、大鍵琴）、Edward Baird（魯特琴、cittern、人聲）、Chris Karan（打擊）、Adam Skeaping（viola da gamba、violone）。**",
+    "src": "https://en.wikipedia.org/wiki/Evensong_(album)"
+   },
+   {
+    "f": "樂團條目：Amazing Blondel 是由 Eddie Baird、John Gladwin 與 Terry Wincott 組成的英國原聲 progressive folk 團，**音樂與其說是迷幻民謠或中世紀民謠搖滾，不如說是文藝復興音樂的再造，圍繞著魯特琴與直笛這類古樂器**。**團名取自獅心王理查宮廷裡的音樂家兼作曲家 Jean Blondel de Nesle**：傳說理查被囚時，Blondel 走遍中歐、在每一座城堡唱歌尋找國王。這個名字是廚師 Eugene McCoy 聽了他們的歌後說「Oh, very Blondel!」而來，樂團被建議加一個形容詞（比照 The Incredible String Band），於是成了 Amazing Blondel。**Baird 加入後，1970 年 9 月 19 日他們在第一屆 Glastonbury Festival 演出**；經 Free 的成員引介給 Island Records 的 Chris Blackwell 後簽約，**《Evensong》《Fantasia Lindum》《England》三張都錄在 Island 位於倫敦的 Basing Street Studios**。他們的現場常用到約四十件樂器。",
+    "src": "https://en.wikipedia.org/wiki/Amazing_Blondel"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1442389244：collectionName「Evensong」、artistName「Amazing Blondel」、trackCount 11、℗ 欄「℗ 2007 Universal Island Records Ltd. A Universal Music Company.」、releaseDate 記 1970。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1970 原盤**逐位置相符**、**逐軌長度差幾乎全為 0 秒**（僅一軌差 1 秒）。**上架的就是 11 軌的原盤內容，沒有加曲。** 字面差異一處：第 10 軌店面作〈Under the Greenwood〉（少了 Tree）。",
+    "src": "https://itunes.apple.com/lookup?id=1442389244&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group f01cb35a 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/f01cb35a-923c-3c0b-86b2-9e8f05bf8dae/front"
+   }
+  ],
+  "hookCandidates": [
+   "團名來自獅心王宮廷裡那位走遍中歐、在每座城堡唱歌找國王的樂師",
+   "十一軌全部落在一分四十五秒到三分四十五秒之間"
+  ],
+  "sound": "1970 年 Island ILPS 9136 的 12 吋原盤 11 軌、總長 33 分 54 秒，每一軌都落在 1 分 45 秒到 3 分 45 秒之間，沒有一首破例——是本批長度最集中的一張。編制圍繞古樂器：John Gladwin 的魯特琴、theorbo、cittern 與低音提琴，Terry Wincott 的 krumhorn、直笛、管風琴、tabor pipe 與大鍵琴，Eddie Baird 的魯特琴與 cittern，另有 Chris Karan 的打擊與 Adam Skeaping 的 viola da gamba 和 violone。樂團自稱這是「用英國口音唱的偽伊麗莎白時代／古典原聲音樂」。跨頁封套上三人站在 Lincoln 主教座堂的迴廊裡、手持古樂器。錄音在 Island 位於倫敦的 Basing Street Studios。",
+  "keyTracks": [
+   "Pavan",
+   "Evensong",
+   "Under the Greenwood Tree"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／GB／Official 的 Island ILPS 9136，另一筆是 1995 年的 CD，沒有以再發日期建檔的問題；樂團條目把《Evensong》列為簽入 Island 後錄的第一張；串流店面 gb 1442389244 的 releaseDate 記 1970（℗ 欄的 2007 是再發權利方的錄製聲明）。**三處一致。同名先行單曲：無**（同名曲是本張第 5 軌）。",
+  "notes": "**曲名差異一處**：原盤〈Under the Greenwood Tree〉、店面〈Under the Greenwood〉，**行文照原盤的完整曲名**。｜**「第二張」要小心**：專輯條目寫本張是第二張專輯，樂團條目則說首張《The Amazing Blondel》1969 年由 Bell Records 發行、Eddie Baird 是在那之後才加入。**行文若要寫序數，寫「第二張」可以；但不要寫成「三人編制的第一張」以外的說法**，因為首張的編制與掛名寫法都不同。｜同團的《Fantasia Lindum》也在本批 b 組，兩張行文不要重複團名由來那一段。｜條目引用的樂評網站評價**一律不入行文**。｜參與者 Adam Skeaping 與本批另一張（Gryphon 首張的錄音場地主人）是同一人，**但那是另一張碟的事，行文不要跨卡連結**。"
+ },
+ {
+  "key": "desc2:Amazing Blondel|Fantasia Lindum",
+  "artist": "Amazing Blondel",
+  "album": "Fantasia Lindum",
+  "facts": [
+   {
+    "f": "release-group baee323f 的欄位：title「Fantasia Lindum」、artist-credit「Amazing Blondel」、first-release-date **1971**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1971／GB／Official（12 吋，**6 軌**，label-info Island ILPS 9156）與 1995／GB／Official（CD，6 軌，Edsel Records EDCD459）。**最早的 release 就是 1971／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/baee323f-4fb7-37d6-ac05-e2d0b6ee31b9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971／GB 原盤（Island ILPS 9156，12 吋，release 2d6fd13e）逐軌：**1〈Fantasia Lindum〉20:08**、2〈Toye〉3:25、3〈Safety in God Alone〉4:20、4〈Two Dances: a/ Almaine; b/ Bransel \"For My Ladys' Delight\"〉1:53、5〈Three Season Almaine〉3:36、6〈Siege of Yaddlethorpe〉2:31。**只有 6 軌、總長 35 分 53 秒；第一軌 20 分 08 秒就佔掉整張的一半以上，第一面只有這一首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=baee323f-4fb7-37d6-ac05-e2d0b6ee31b9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Fantasia Lindum》是 Amazing Blondel **1971 年**的專輯。**盤名取自佔滿第一面的那組樂曲：fantasia 是根源於即興的自由形式作品，Lindum 則是 Lincoln 這座城市的拉丁文名。** 封面上那隻狗是 Terry Wincott 的大丹犬 Jacob。核心聲響是 Gladwin 與 Baird 的兩把魯特琴，加上 Wincott 的管樂。**第一面的〈Fantasia Lindum〉是樂團獻給 Lincoln 這座城市、Lincolnshire 鄉間與中世紀 Lincoln 主教座堂的組曲，由歌曲與器樂段落構成、主題反覆出現。** 第二面收了兩首類牧歌的曲子（〈To Ye〉與〈Three Seasons Almaine〉）、兩支器樂舞曲，以及一首讚美詩式的〈Safety In God Alone〉；**末軌〈Siege of Yaddlethorpe〉是「pipe and drum」式的器樂曲，有 Wincott 的 krumhorn 與客席的 Jim Capaldi 打軍樂式小鼓**。人員：John David Gladwin（第二魯特琴、主唱、低音提琴、theorbo）、Terence Alan Wincott（直笛、人聲、鋼琴、krumhorn、大鍵琴、簧風琴與其他木管）、Edward Baird（第一魯特琴、人聲、鐵琴、洋琴、吉他）、Jim Capaldi（末軌的鼓）。發行紀錄：Island ILPS-9156 12 吋 LP 1971、Edsel 459 CD 1996、Beat Goes On 626 的《Evensong/Fantasia Lindum》CD 2004。",
+    "src": "https://en.wikipedia.org/wiki/Fantasia_Lindum"
+   },
+   {
+    "f": "樂團條目：Amazing Blondel 由 Eddie Baird、John Gladwin 與 Terry Wincott 組成，1970 年代初在 Island Records 出片，音樂是文藝復興音樂的再造而非迷幻民謠。經 Free 的成員引介給 Chris Blackwell 後簽入 Island，**《Evensong》《Fantasia Lindum》《England》三張都錄在 Island 位於倫敦的 Basing Street Studios**。樂團巡演時曾為 Genesis、Procol Harum 與 Steeleye Span 暖場，現場常用到約四十件樂器。寫了大部分作品的 Gladwin 1973 年離團，剩下兩人以二人組繼續。",
+    "src": "https://en.wikipedia.org/wiki/Amazing_Blondel"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1442779728：collectionName「Fantasia Lindum」、artistName「Amazing Blondel」、trackCount 6、℗ 欄「℗ 2008 Universal Island Records Ltd. A Universal Music Company.」、releaseDate 記 1971。`entity=song` 攤得出 **6 軌、6 軌全部有 previewUrl**，曲序與 1971 原盤**逐位置相符**、逐軌長度差在 17 秒內（第一軌 20:25 對 20:08）。**上架的就是 6 軌的原盤內容，沒有加曲。** 字面差異三處：第 2 軌店面作〈To Ye〉（原盤〈Toye〉）、第 5 軌作〈Three Seasons Almaine〉（原盤〈Three Season Almaine〉）、第 6 軌作〈The Siege of Yaddlethorpe〉（原盤無 The）。",
+    "src": "https://itunes.apple.com/lookup?id=1442779728&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group baee323f 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/baee323f-4fb7-37d6-ac05-e2d0b6ee31b9/front"
+   }
+  ],
+  "hookCandidates": [
+   "Lindum 是 Lincoln 的拉丁文名，那組曲子佔滿了整個第一面",
+   "封面上那隻狗是團員養的大丹犬 Jacob"
+  ],
+  "sound": "1971 年 Island ILPS 9156 的 12 吋原盤只有 6 軌、總長 35 分 53 秒：第一面就是一首 20 分 08 秒的〈Fantasia Lindum〉，第二面才擠進其餘五首。fantasia 指根源於即興的自由形式作品，Lindum 是 Lincoln 的拉丁文名——這組曲子是獻給那座城市、Lincolnshire 鄉間與中世紀 Lincoln 主教座堂的。核心聲響是 Gladwin 與 Baird 的兩把魯特琴，加上 Wincott 的直笛、krumhorn、大鍵琴與簧風琴。第二面收了兩首類牧歌、兩支器樂舞曲與一首讚美詩式的〈Safety in God Alone〉，末軌〈Siege of Yaddlethorpe〉是 pipe and drum 式的器樂曲，客席的 Jim Capaldi 打軍樂式小鼓。封面上那隻狗是 Terry Wincott 的大丹犬 Jacob。",
+  "keyTracks": [
+   "Fantasia Lindum",
+   "Safety in God Alone",
+   "Siege of Yaddlethorpe"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。release-group first-release-date **1971**、**依裁定 220 回問轄下 release**，最早的一筆就是 1971／GB／Official 的 Island ILPS 9156，另一筆是 1995 年的 CD，沒有以再發日期建檔的問題；專輯條目的發行紀錄第一列即「Island ILPS-9156 12\" LP, 1971」；串流店面 gb 1442779728 的 releaseDate 記 1971（℗ 欄的 2008 是再發權利方的錄製聲明）。**三處一致。同名先行單曲：無**（同名曲是本張第 1 軌）。",
+  "notes": "**曲名有三處字面差異**：原盤〈Toye〉／店面與條目〈To Ye〉、原盤〈Three Season Almaine〉／店面與條目〈Three Seasons Almaine〉、原盤〈Siege of Yaddlethorpe〉／店面〈The Siege of Yaddlethorpe〉。**`keyTracks` 已照原盤寫法，行文亦照原盤。**｜第 4 軌的曲名含半形雙引號（`Bransel \"For My Ladys' Delight\"`），**行文若要引用請整段照抄或乾脆不引這一軌**。｜同團的《Evensong》也在本批 b 組，**團名由來與 Basing Street Studios 那兩段不要在兩張裡重複**。｜條目對〈Safety In God Alone〉和聲結構的比較（提到 the Eagles）屬評論推測，**不入行文**。"
+ },
+ {
+  "key": "desc2:Fotheringay|Fotheringay",
+  "artist": "Fotheringay",
+  "album": "Fotheringay",
+  "facts": [
+   {
+    "f": "release-group 123a3314 的欄位：title「Fotheringay」、artist-credit「Fotheringay」、first-release-date **1970-03**、primary-type Album、secondary-types **空**。轄下 6 筆 release：1970／US／Official（12 吋，9 軌，label-info A&M Records SP 4269）、**1970-03／GB／Official（12 吋，9 軌，Island ILPS 9125）**、1992-07-01／DE 的 CD（11 軌，Hannibal HNCD-4426）、2004-08-16／GB 的 CD（13 軌，Fledg'ling FLED 3044）、2008／XW 的數位版（9 軌）、2009-04-29／JP 的 CD（16 軌，Universal International UICY-94084）。**最早的兩筆都是 1970，其中 GB 那筆的日期 1970-03 與 first-release-date 完全相同**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/123a3314-ac23-3c85-bd15-7613b7b7d42d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970 原盤（A&M SP 4269，12 吋，release b99d424f）逐軌：1〈Nothing More〉4:37、2〈The Sea〉5:28、3〈The Ballad of Ned Kelly〉3:55、4〈Winter Winds〉2:12、5〈Peace in the End〉4:23、6〈The Way I Feel〉4:48、7〈The Pond and the Stream〉3:28、8〈Too Much of Nothing〉3:44、9〈Banks of the Nile〉**7:31**。**9 軌、總長 40 分 06 秒，末軌 7 分 31 秒是最長的一首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=123a3314-ac23-3c85-bd15-7613b7b7d42d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Fotheringay 是 1970 年由歌手兼創作者 Sandy Denny 離開 Fairport Convention 後組成的短命英國民謠搖滾團。**團名取自她 1968 年寫的歌〈Fotheringay〉，那首歌講的是囚禁蘇格蘭瑪麗女王的 Fotheringhay 城堡**，原本收在 1969 年 Fairport Convention 的《What We Did on Our Holidays》——她加入該團後的第一張。**原始的 Fotheringay 只出了一張同名專輯，1971 年初就在 Denny 轉向個人生涯時解散。** 五人編制由 Eclection 的吉他手 Trevor Lucas 與鼓手 Gerry Conway、Poet and the One Man Band 的 Jerry Donahue（吉他）與 Pat Donaldson（貝斯）補齊。樂團 1971 年 1 月在第二張專輯的錄音期間解散，那張未完成的專輯直到 2008 年才由 Donahue 用原始母帶中未曾發表的 take 完成、以《Fotheringay 2》發行。",
+    "src": "https://en.wikipedia.org/wiki/Fotheringay"
+   },
+   {
+    "f": "專輯條目：《Fotheringay》是該團**唯一一張在當時發行的專輯**，1970 年錄製，成員為 Sandy Denny（吉他、鋼琴、人聲）、Trevor Lucas（吉他、人聲）、Jerry Donahue（主奏吉他、人聲）、Pat Donaldson（貝斯、人聲）、Gerry Conway（鼓），另有 Linda Pettifer 與 Todd Lloyd 的人聲。**曲目含五首 Sandy Denny 的作品（其中一首與 Lucas 合寫）、一首 Lucas 的作品、一首傳統曲，以及兩首翻唱：Bob Dylan 的〈Too Much of Nothing〉與 Gordon Lightfoot 的〈The Way I Feel〉。** 製作人 Joe Boyd，錄音師 Jerry Boys 與 Todd Lloyd，封面插畫 Marion Appleton，跨頁攝影 Tony Evans。",
+    "src": "https://en.wikipedia.org/wiki/Fotheringay_(album)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1442552515：collectionName「Fotheringay」、artistName「Fotheringay」、trackCount 9、℗ 欄「℗ 2008 Universal Island Records Ltd. A Universal Music Company.」、releaseDate 記 1970。`entity=song` 攤得出 **9 軌、9 軌全部有 previewUrl**，曲名與曲序與 1970 原盤**逐位置相符**。**上架的就是 9 軌的原盤內容，不是 1992 年的 11 軌、2004 年的 13 軌或 2009 年的 16 軌 CD。** 但**逐軌長度與原盤有出入**：第 3 軌 3:35 對 3:55、第 5 軌 4:03 對 4:23、第 9 軌 8:07 對 7:31，其餘在 12 秒內。",
+    "src": "https://itunes.apple.com/lookup?id=1442552515&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 123a3314 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/123a3314-ac23-3c85-bd15-7613b7b7d42d/front"
+   }
+  ],
+  "hookCandidates": [
+   "團名來自她 1968 年寫的一首歌，歌裡是囚禁蘇格蘭瑪麗女王的那座城堡",
+   "九軌裡五首是 Sandy Denny 寫的，另外兩首翻唱來自 Bob Dylan 與 Gordon Lightfoot"
+  ],
+  "sound": "1970 年的原盤 9 軌、總長 40 分 06 秒，末軌〈Banks of the Nile〉7 分 31 秒最長，最短的〈Winter Winds〉2 分 12 秒。九軌裡有五首是 Sandy Denny 寫的（其中一首與 Trevor Lucas 合寫）、一首出自 Lucas、一首傳統曲，加上兩首翻唱——Bob Dylan 的〈Too Much of Nothing〉與 Gordon Lightfoot 的〈The Way I Feel〉。五人編制是 Denny 的吉他、鋼琴與歌，Lucas 與 Jerry Donahue 的吉他，Pat Donaldson 的貝斯，Gerry Conway 的鼓，五個人都唱。製作人 Joe Boyd，錄音師 Jerry Boys 與 Todd Lloyd，封面插畫 Marion Appleton。團名取自 Denny 1968 年寫的一首歌，歌裡是囚禁蘇格蘭瑪麗女王的那座城堡。這是樂團當時唯一發行的一張。",
+  "keyTracks": [
+   "Nothing More",
+   "The Pond and the Stream",
+   "Banks of the Nile"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（月份亦一致，1970-03）。release-group first-release-date **1970-03**、**依裁定 220 回問轄下 release**，最早的兩筆同為 1970——US 的 A&M SP 4269 與 **GB 的 Island ILPS 9125（日期 1970-03，與 first-release-date 完全相同）**，其後全部是 1992 年之後的 CD 與數位版，沒有以再發日期建檔的問題；兩份條目都把樂團與專輯記為 1970；串流店面 gb 1442552515 的 releaseDate 記 1970。**四處一致。同名先行單曲：無**——但要注意〈Fotheringay〉這首歌**比樂團與專輯都早**，1969 年就收在 Fairport Convention 的《What We Did on Our Holidays》上，**本張曲目裡沒有這首歌**。",
+  "notes": "⚠ **自我同名卡的陷阱**：樂團名、專輯名與那首歌〈Fotheringay〉是三件事，**而那首歌不在這張專輯上**（它 1969 年收在 Fairport Convention 的專輯裡）。**行文絕不可寫成「專輯收錄同名曲」。**｜**卡單 `label` 欄取美國的 A&M SP 4269**，但 MB 轄下另有同年的英國 Island ILPS 9125（且日期更精確）。**行文提廠牌時擇一寫清楚即可，不要並列成同一件事。**｜**單軌長度兩邊不一致**（第 3、5、9 軌差 20–36 秒），**行文引用單軌長度要謹慎，或只引原盤值並註明是原盤**。｜條目提到的排行榜名次與媒體讀者票選**一律不得寫入**。｜2008 年才完成發行的《Fotheringay 2》**與本張是兩張碟，行文不要混談**。"
+ },
+ {
+  "key": "desc2:Shirley & Dolly Collins|For as Many as Will",
+  "artist": "Shirley & Dolly Collins",
+  "album": "For as Many as Will",
+  "facts": [
+   {
+    "f": "release-group 6cd16663 的欄位：title「For as Many as Will」、artist-credit「Shirley & Dolly Collins」、first-release-date **1978**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1978／GB／Official（12 吋，**9 軌**，label-info Topic Records 12TS380）與 2011-05-16／GB／Official（CD，**10 軌**，Fledg'ling Records FLED 3019）。**最早的 release 就是 1978／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6cd16663-5c26-36c1-984d-2e40d3d3f1f1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1978／GB 原盤（Topic 12TS380，12 吋，release 08883aa5）逐軌：1〈Lancashire Lass〉3:02、2〈Never Again〉2:09、3〈Lord Allenwater〉5:35、**4〈Beggar's Opera Medley: Can Love Be Control'd by Advice? / O Polly You Might Have Toy'd and Kist / O What Pain It Is to Part / The Miser Thus a Shilling Sees / Youth's a Season Made for Joys / Hither, Dear Husband, Turn Your Eyes〉10:47**、5〈Gilderoy〉4:51、6〈Rockley Firs / Sweet Jenny Jones〉3:16、7〈German Tune〉2:13、8〈The Moon Shines Bright〉2:11、**9〈Harvest Home Medley: Peas, Beans, Oats and the Barley / The Mistress's Health / Poor Tom〉6:53**。**9 軌、總長 40 分 57 秒；兩組組曲（第 4 軌六段 10 分 47 秒、第 9 軌三段 6 分 53 秒）合計就佔掉 17 分 40 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6cd16663-5c26-36c1-984d-2e40d3d3f1f1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "姊姊的條目：Dorothy Ann「Dolly」Collins（1933 年 3 月 6 日–1995 年 9 月 22 日）是英國民謠樂手、編曲者與作曲家，Shirley Collins 的姊姊，生於 Sussex 的 Hastings，成長於一個藝術、社會主義、唱民謠的家庭；她在學校學鋼琴，後隨作曲家 Alan Bush 學習，同時在倫敦打零工、當過公車車掌。1960 年代中期起與妹妹合作，替 Shirley 的歌編曲，並在《Sweet Primeroses》上以 portative organ 伴奏。1968 年兩人做出由 BBC 廣播委製、為 David Munrow 指揮的六人古樂合奏而寫的《Anthems in Eden》。**她的最後一批錄音就是與 Shirley 合作的 1978 年《For As Many as Will》。** 1970 年代末她退出巡演與現場，靠園藝維生。",
+    "src": "https://en.wikipedia.org/wiki/Dolly_Collins"
+   },
+   {
+    "f": "妹妹的條目：**1978 年的《For As Many As Will》是 Shirley 與 Dolly Collins 錄的最後一張錄音室專輯**，此後只有 1979 年的現場錄音陸續發行，同年她另與 Bert Jansch 出了單曲〈The Mariner's Farewell〉。此前的合作包括 1969 年的《Anthems in Eden》（第一張掛「Shirley and Dolly Collins」的專輯）與 1970 年的《Love, Death and the Lady》。Shirley 1971 年與 Ashley Hutchings 結婚，兩人組過 Albion Country Band 與 1974 年不用電的 Etchingham Steam Band。",
+    "src": "https://en.wikipedia.org/wiki/Shirley_Collins"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1617289446：collectionName「For as Many as Will」、artistName「**Shirley Collins & Dolly Collins**」、trackCount **10**、℗ 欄「℗ 1978 Topic Records Ltd.」、releaseDate 記 1978。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**：第 1–3 軌與原盤相同，**第 4 軌是原盤沒有的〈The Blacksmith Courted Me〉**，其後原盤的第 4–9 軌整體往後推一位。**上架的是 10 軌的 2011 年再發版內容，不是 9 軌的原盤。** 另注意該條目第 4 軌與第 5 軌的曲名與長度欄位彼此對不上（第 4 軌標 10:47、第 5 軌的 Beggar's Opera Medley 只標 3:14），**店面的長度欄位本身不可信**。",
+    "src": "https://itunes.apple.com/lookup?id=1617289446&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 6cd16663 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/6cd16663-5c26-36c1-984d-2e40d3d3f1f1/front"
+   }
+  ],
+  "hookCandidates": [
+   "兩組組曲加起來就佔掉十七分半，剩下七首才分掉另外二十三分",
+   "這是姊姊 Dolly Collins 留下的最後一批錄音"
+  ],
+  "sound": "1978 年 Topic 12TS380 的 12 吋原盤 9 軌、總長 40 分 57 秒。兩組組曲吃掉大半：第 4 軌是六段串起的〈Beggar's Opera Medley〉10 分 47 秒，第 9 軌是三段的〈Harvest Home Medley〉6 分 53 秒，兩首合計 17 分 40 秒；其餘七首多在兩到五分鐘。掛名是 Collins 姊妹——妹妹 Shirley 唱、姊姊 Dolly 編曲並伴奏。Dolly 生於 Sussex 的 Hastings，成長於一個唱民謠的社會主義藝術家庭，學校裡學鋼琴、後來隨作曲家 Alan Bush 學習，在倫敦打零工時當過公車車掌；1960 年代中期起替妹妹編曲，兩人 1968 年做出由電台委製、為六人古樂合奏而寫的《Anthems in Eden》。這張是她留下的最後一批錄音。",
+  "keyTracks": [
+   "Lancashire Lass",
+   "Lord Allenwater",
+   "The Moon Shines Bright"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978。release-group first-release-date **1978**、**依裁定 220 回問轄下 release**，最早的一筆就是 1978／GB／Official 的 Topic 12TS380，另一筆是 2011 年的 CD，沒有以再發日期建檔的問題；兩份條目都把《For As Many as Will》記為 1978；串流店面 gb 1617289446 的 releaseDate 與 ℗ 欄同為 1978。**四處一致。同名先行單曲：無。**",
+  "notes": "⚠ **覆核推翻探測層的曲目對應（裁定 157）**：串流條目雖然掛名與盤名都對，但**是 10 軌的 2011 年再發版**——第 4 軌〈The Blacksmith Courted Me〉不在 1978 年原盤上，其後曲序整體位移。**行文只能引原盤 9 軌，不得引用〈The Blacksmith Courted Me〉。**｜⚠ **店面的長度欄位本身自相矛盾**（第 4 軌標 10:47、第 5 軌的六段組曲只標 3:14），**行文一律引原盤長度**。｜⚠ **掛名三種寫法**（裁定 217／208）：池中與 MB 作 `Shirley & Dolly Collins`（用 `&`），串流把 Shirley 的姓補全成 `Shirley Collins & Dolly Collins`（第三種），**照池中的 `&` 寫法**。｜**盤名大小寫兩種**：MB 與卡單作《For as Many as Will》（as 小寫），兩份條目作《For As Many As Will》，**照卡單寫法**。｜**「最後一張」有來源**：兩份條目都明寫這是姊妹倆的最後一張錄音室專輯，**行文可寫，但要寫成「兩人合作的最後一張錄音室專輯」，不要寫成任一人的最後一張**（Shirley 之後仍有作品）。｜第 4、9 軌的曲名極長（含斜線串接的段落名），`keyTracks` 已避開這兩軌。"
+ },
+ {
+  "key": "desc2:Shirley Collins|Adieu to Old England",
+  "artist": "Shirley Collins",
+  "album": "Adieu to Old England",
+  "facts": [
+   {
+    "f": "release-group 4061acb0 的欄位：title「Adieu to Old England」、artist-credit「Shirley Collins」、first-release-date **1974**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1974／GB／Official（12 吋，15 軌，label-info Topic Records 12TS238）與 1999／GB／Official（CD，15 軌，Fledg'ling Records FLED 3023）。**最早的 release 就是 1974／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4061acb0-380b-3f35-8525-5eb9837d505a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1974／GB 原盤（Topic 12TS238，12 吋，release d95c2c4b）逐軌：1〈Mistress's Health / Lumps of Plum Pudding〉2:13、2〈Down by the Seaside〉2:47、3〈Chiner's Song〉2:24、4〈Adieu to Old England〉2:01、5〈Ashen Faggot Wassail〉2:33、6〈I Sing of a Maiden That Is Makeless〉1:48、7〈The Banks of the Mossom〉3:17、8〈The Ram of Derbish Town〉1:56、9〈Portsmouth〉**1:03**、10〈Horkstow Grange〉1:55、11〈Come All You Little Streamers〉2:05、12〈Spaniard's Cry / Sherborne Jig〉1:42、13〈One Night as I Lay on My Bed〉4:43、14〈The Death of Nelson〉3:54、15〈Coronation Jig〉4:01。**15 軌、總長 38 分 22 秒——平均一軌只有 2 分半，最短的〈Portsmouth〉才 1 分 03 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4061acb0-380b-3f35-8525-5eb9837d505a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Shirley Collins 1971 年與第二任丈夫 Ashley Hutchings 結婚，兩人組了 Albion Country Band 為她 1971 年的《No Roses》伴奏。**1974 年，住在 Etchingham 的兩人受三日工作週的啟發，與 Terry Potter、Ian Holder、Vic Gammon 組了完全不用電的 Etchingham Steam Band，曲目取自 Sussex 的傳統音樂。** 該團當時唯一發表的錄音收在 1974 年的合輯《A Favourite Garland》上，**但 Terry Potter 與 Ian Holder（以及前 Albion Country Band 的 Simon Nicol 與 Roger Swallow）也參與了同在 1974 年發行的《Adieu to Old England》的部分曲目，該張由 Ashley Hutchings 製作**。",
+    "src": "https://en.wikipedia.org/wiki/Shirley_Collins"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup（artistId 3923104，genre 標 Folk）攤開名下 **43 個條目**逐一比對——含《Lodestar》2016、《Heart's Ease》2020、《Folk Roots, New Routes》1964、《The Power of the True Love Knot》1968、《The Sweet Primeroses》1967、《For as Many as Will》1978、《Amaranth》1976、《Snapshots》2006 等——**沒有本張**；另一個掛名實體 171675152（Shirley & Dolly Collins）名下只有《Anthems In Eden》1969 與《Love, Death and the Lady》1970 兩個條目。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=3923104&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 4061acb0 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/4061acb0-380b-3f35-8525-5eb9837d505a/front"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌只有三十八分，平均一首兩分半、最短的一分零三秒",
+   "同一年她與丈夫組了完全不用電的樂團，那幾個人也錄進了這張"
+  ],
+  "sound": "1974 年 Topic 12TS238 的 12 吋原盤 15 軌、總長 38 分 22 秒——軌數多、單軌短，平均一首只有兩分半，最短的〈Portsmouth〉1 分 03 秒，最長的〈One Night as I Lay on My Bed〉也只有 4 分 43 秒；十五軌裡有三軌是兩首曲子串成的組合。同一年，住在 Etchingham 的她與丈夫 Ashley Hutchings 受三日工作週的啟發，組了完全不用電的 Etchingham Steam Band，曲目取自 Sussex 的傳統音樂；那個團的 Terry Potter 與 Ian Holder，以及前 Albion Country Band 的 Simon Nicol 與 Roger Swallow，也參與了這張的部分曲目。整張由 Hutchings 製作。",
+  "keyTracks": [
+   "Adieu to Old England",
+   "Horkstow Grange",
+   "The Death of Nelson"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974。release-group first-release-date **1974**、**依裁定 220 回問轄下 release**，最早的一筆就是 1974／GB／Official 的 Topic 12TS238，另一筆是 1999 年的 CD，沒有以再發日期建檔的問題；條目也把本張記為「同在 1974 年發行」。串流查無條目，無第三處可對。**同名先行單曲：無**（同名曲是本張第 4 軌）。",
+  "notes": "**無來源狀態**：掛名鍵與盤名鍵、八個店面都查過，**藝人目錄 lookup 攤開了 43 個條目逐一比對**（裁定 185／173 走完），確定沒有試聽來源。｜**掛名要分清**：這張掛的是 `Shirley Collins` 一個人，本批另一張《For as Many as Will》掛的是 `Shirley & Dolly Collins`，**兩張是不同掛名、不要互相沿用**；池中另有以 `Shirley & Dolly Collins` 掛名的《Anthems in Eden》與《Love, Death & the Lady》，**行文不要把四張混談**。｜第 1、12 軌的曲名是兩首串成的組合（以斜線分隔），**行文引用時整段照抄**。｜條目關於 Etchingham Steam Band 的段落只支持「該團部分成員參與了本張」，**不得寫成「這張是 Etchingham Steam Band 錄的」**。"
+ },
+ {
+  "key": "desc2:Nic Jones|Ballads and Songs",
+  "artist": "Nic Jones",
+  "album": "Ballads and Songs",
+  "facts": [
+   {
+    "f": "release-group 9dfa2ccd 的欄位：title「Ballads and Songs」、artist-credit「Nic Jones」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1970／GB／Official（12 吋，9 軌，label-info **Trailer LER 2014**）與 2002／GB／Official（CD-R，9 軌，Leader LERCD2014）。**最早的 release 就是 1970／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9dfa2ccd-0cc7-42d3-a7d0-9c8ef6df8442?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（Trailer LER 2014，12 吋，release 521224b3）逐軌：1〈Sir Patrick Spens〉3:55、2〈The Butcher and the Tailor's Wife〉1:54、3〈The Duke of Marlborough〉4:11、4〈Annan Water〉**7:12**、5〈The Noble Lord Hawkins〉2:18、6〈Don't You Be Foolish, Pray〉1:34、7〈The Outlandish Knight〉4:20、8〈Reynard the Fox〉2:21、9〈Little Musgrave〉**6:25**。**9 軌、總長 34 分 10 秒；兩首長敘事曲〈Annan Water〉與〈Little Musgrave〉合計 13 分半，其餘七首合計才 20 分半。** 專輯條目所列的逐軌長度與此一致（差 3–14 秒）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9dfa2ccd-0cc7-42d3-a7d0-9c8ef6df8442&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人條目：Nic Jones（本名 Nicolas Paul Jones，1947 年 1 月 9 日生於 Kent 的 Orpington）是英國歌手兼樂手。他兩歲時全家搬到 Essex 的 Brentwood，青少年時期開始彈吉他，早期受 The Shadows、Duane Eddy、Chet Atkins、Wes Montgomery 與 Ray Charles 影響；**對民謠的興趣來自舊校友 Nigel Paterson——他是民謠團 The Halliard 的成員，該團轉職業時有人退出，Jones 被找去頂替。在 The Halliard 期間他學會了小提琴，也學會怎麼研究與改編傳統素材。** 該團 1964 至 1968 年間在英國巡演。**1969 年他開始接職業演出，1970 年為 Trailer Records 發行第一張專輯《Ballads and Songs》；1971 至 1980 年間又錄了四張，其中三張仍在 Trailer，最後一張《Penguin Eggs》在 Topic。** 他也是搶手的錄音樂手，替 June Tabor、Shirley Collins、Barbara Dickson、Richard Thompson 等人的專輯客串。",
+    "src": "https://en.wikipedia.org/wiki/Nic_Jones"
+   },
+   {
+    "f": "專輯條目：《Ballads and Songs》是 Nic Jones **1970 年**發行的專輯，曲目九首依序為〈Sir Patrick Spens〉3:53、〈The Butcher and the Tailor's Wife〉1:51、〈The Duke of Marlborough〉4:04、〈Annan Water〉7:04、〈The Noble Lord Hawkins〉2:12、〈Don't You Be Foolish, Pray〉1:31、〈The Outlandish Knight〉4:11、〈Reynard the Fox〉2:17、〈Little Musgrave〉6:11。",
+    "src": "https://en.wikipedia.org/wiki/Ballads_and_Songs"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup（artistId 78443287，genre 標 Folk）攤開名下全部 5 個條目：《Penguin Eggs》1980、《Game Set Match》2006、《An Introduction to Nic Jones》2019、《An Introduction to Nic Jones (Remastered 2019)》2019、《Canadee - I - O - Single》2016——**沒有本張**；另兩個同名實體（1686815458 標 Country、1839403078 標 Hip-Hop/Rap）都不是他。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=78443287&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 9dfa2ccd 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/9dfa2ccd-0cc7-42d3-a7d0-9c8ef6df8442/front"
+   }
+  ],
+  "hookCandidates": [
+   "他是頂替退團的人進 The Halliard 的，小提琴與改編傳統素材都在那裡學會",
+   "九軌裡兩首長敘事曲就佔掉十三分半"
+  ],
+  "sound": "1970 年 Trailer LER 2014 的 12 吋原盤 9 軌、總長 34 分 10 秒。兩首長敘事曲——〈Annan Water〉7 分 12 秒與〈Little Musgrave〉6 分 25 秒——合計十三分半，其餘七首加起來才二十分半，最短的〈Don't You Be Foolish, Pray〉只有 1 分 34 秒。作者 Nic Jones 生於 Kent 的 Orpington，兩歲搬到 Essex 的 Brentwood，青少年時期開始彈吉他，早期聽的是 The Shadows、Duane Eddy、Chet Atkins 與 Ray Charles；他是頂替退團的人加入民謠團 The Halliard 的，小提琴與研究、改編傳統素材的方法都在那段期間學會。1969 年轉職業，這是隔年為 Trailer 錄的第一張專輯。",
+  "keyTracks": [
+   "Sir Patrick Spens",
+   "Annan Water",
+   "Little Musgrave"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／GB／Official 的 Trailer LER 2014，另一筆是 2002 年的 CD-R，沒有以再發日期建檔的問題；藝人條目寫「1970 年為 Trailer Records 發行第一張專輯《Ballads and Songs》」，專輯條目亦記 1970。串流查無條目。**三處一致。同名先行單曲：無。**",
+  "notes": "**無來源狀態**：兩個鍵、八個店面、藝人目錄 lookup（5 個條目逐一比對）都走完（裁定 185／173），確定沒有試聽來源。｜**逐軌長度兩個來源略有出入**（原盤與專輯條目差 3–14 秒），**行文引用長度時以原盤為準**。｜**掛名撞名（裁定 179）**：串流上 `Nic Jones` 有三個實體，另兩個分別標 Country 與 Hip-Hop/Rap。｜藝人條目 1982 年車禍那一段**與本張無關**（本張早了十二年），**行文不要寫進去**。｜盤名《Ballads and Songs》是通用詞組，**配對一律用 collectionId 或 MBID，不要用盤名字串**。｜同一藝人的《The Noah's Ark Trap》已在 c-98 提案（策展層第 3.2 節），**本批取的是這張首作，行文不要提另一張**。"
+ },
+ {
+  "key": "desc2:Martin Carthy|Shearwater",
+  "artist": "Martin Carthy",
+  "album": "Shearwater",
+  "facts": [
+   {
+    "f": "release-group a7cc4ab3 的欄位：title「Shearwater」、artist-credit「Martin Carthy」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下 4 筆 release：1972／GB／Official（12 吋，10 軌，label-info **Pegasus Records PEG 12**）、1991／GB／Official（CD，10 軌，Mooncrest CRESTCD 008）、2005-03／GB／Official（CD，**13 軌**，Castle Music CMQCD1096）、2006／JP（CD，13 軌，Strange Days POCE-1018）。**最早的 release 就是 1972／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a7cc4ab3-78a7-32de-88f1-1f9defb4993d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972／GB 原盤（Pegasus PEG 12，12 吋，release f74e6c6e）逐軌：1〈I Was a Young Man〉2:46、2〈Banks of Green Willow〉4:31、3〈Handsome Polly-o〉2:32、4〈Outlandish Knight〉5:25、5〈He Called for a Candle〉2:49、6〈John Blunt〉3:25、7〈Lord Randall〉4:35、8〈William Taylor〉3:43、9〈Famous Flower of Serving Men〉**9:23**、10〈Betsy Bell and Mary Gray〉**1:33**。**10 軌、總長 40 分 44 秒；第 9 軌 9 分 23 秒之後，末軌只用 1 分 33 秒收場。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a7cc4ab3-78a7-32de-88f1-1f9defb4993d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Shearwater》是 Martin Carthy **1972 年在 Pegasus 廠牌以編號 PEG12 發行**的專輯，1973／74 年由 Mooncrest 以 CREST25 再壓黑膠，1995 年 Mooncrest 出 CD（CRESTCD 008），2005 年 3 月 Castle Music 再出 CD（CMQCD1096）。**全部曲目皆為傳統曲、由 Martin Carthy 改編**，條目並逐首標出 Roud 與 Child 編號（例如〈Banks of Green Willow〉Roud 172／Child 24、〈Outlandish Knight〉Roud 21／Child 4、〈Lord Randall〉Roud 10／Child 12、〈Famous Flower of Serving Men〉Roud 199／Child 106）。人員：**Martin Carthy（人聲、吉他、洋琴）、Maddy Prior（〈Betsy Bell and Mary Gray〉的人聲）**、〈William Taylor〉上有一段未具名的持續低音。製作 Terry Brown（為 September Productions Ltd），錄音師 Jerry Boys，美術 David Berney Wade。2005 年 Castle CD 的三首追加曲來自 1972 年 5 月 22 日在倫敦 Playhouse Theatre 錄、5 月 30 日播出的電台 session。",
+    "src": "https://en.wikipedia.org/wiki/Shearwater_(album)"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup（artistId 2416045，genre 標 Folk）攤開名下 **31 個條目**逐一比對——含《Martin Carthy (feat. Dave Swarbrick)》1965、《Second Album (feat. Dave Swarbrick)》1966、《Byker Hill (feat. Dave Swarbrick)》1967、《Prince Heathen (feat. Dave Swarbrick)》1969、《Crown of Horn (feat. Dave Swarbrick)》1971、《Landfall》1971、《Sweet Wivelsfield》1971、《But Two Came By (feat. Dave Swarbrick)》1968、《Out of the Cut》1982 等——**沒有本張**。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=2416045&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group a7cc4ab3 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/a7cc4ab3-78a7-32de-88f1-1f9defb4993d/front"
+   }
+  ],
+  "hookCandidates": [
+   "第九軌走了九分二十三秒，末軌只用一分三十三秒收場",
+   "十首全部是傳統曲，全部由他自己改編"
+  ],
+  "sound": "1972 年 Pegasus PEG 12 的 12 吋原盤 10 軌、總長 40 分 44 秒。第 9 軌〈Famous Flower of Serving Men〉一首走了 9 分 23 秒，緊接著的末軌〈Betsy Bell and Mary Gray〉只用 1 分 33 秒收場，落差極大。十首全部是傳統曲、全部由 Martin Carthy 自己改編，多首帶有 Roud 與 Child 編號。他自己唱、彈吉他兼洋琴，末軌的人聲是 Maddy Prior，〈William Taylor〉上另有一段未具名的持續低音。製作人 Terry Brown，錄音師 Jerry Boys。",
+  "keyTracks": [
+   "Banks of Green Willow",
+   "Famous Flower of Serving Men",
+   "Betsy Bell and Mary Gray"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。release-group first-release-date **1972**、**依裁定 220 回問轄下 release**，最早的一筆就是 1972／GB／Official 的 Pegasus PEG 12，其後是 1991、2005、2006 的 CD，沒有以再發日期建檔的問題；專輯條目開宗明義寫「1972 年在 Pegasus 廠牌以編號 PEG12 發行」。串流查無條目。**兩處一致，且廠牌編號兩處相同。同名先行單曲：無。**",
+  "notes": "⚠ **回撈候選全部要駁回**：回撈清單給本張列了四個候選（1620641622《Crown of Horn》、1616959003《Sweet Wivelsfield》、1617231188《Landfall》、1822643102《The Word Is Hugga Mugga...》），**依據只有年份，四張全部是同藝人的別碟**。其中《Sweet Wivelsfield》還是本批 b 組另一張卡的正確來源，**絕不可挪用到本張**。｜**無來源狀態**：兩個鍵、八個店面、藝人目錄 lookup（31 個條目逐一比對）都走完（裁定 185／173）。｜**2005 年 Castle CD 是 13 軌**（多三首電台 session 錄音），**行文只能引原盤 10 軌**。｜曲名字面：原盤第 3 軌作〈Handsome Polly-o〉（小寫 o），條目作〈Handsome Polly-O〉，**行文照原盤**。｜同一藝人的《Sweet Wivelsfield》與合掛的《But Two Came By》也在本批 b 組，**三張的行文不要重複同一段生平**。"
+ },
+ {
+  "key": "desc2:Martin Carthy|Sweet Wivelsfield",
+  "artist": "Martin Carthy",
+  "album": "Sweet Wivelsfield",
+  "facts": [
+   {
+    "f": "release-group 9fdb999d 的欄位：title「Sweet Wivelsfield」、artist-credit「Martin Carthy」、first-release-date **1974**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1974／GB／Official（12 吋，10 軌，label-info Deram SML1111）與 1996／GB／Official（CD，10 軌，Topic Records TSCD418）。**最早的 release 就是 1974／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9fdb999d-5959-4a40-ad32-fbebc5219c13?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1974／GB 原盤（Deram SML1111，12 吋，release 0e46e36d）逐軌：1〈Shepherd O Shepherd〉3:23、2〈Billy Boy〉2:51、3〈Three Jolly Sneaksmen〉4:14、4〈Trimdon Grange〉**6:25**、5〈All of a Row〉2:38、6〈Skewbald〉3:38、7〈Mary Neal〉3:58、8〈King Henry〉**6:20**、9〈John Barleycorn〉2:20、10〈The Cottage in the Wood〉**6:12**。**10 軌、總長 41 分 59 秒；三首六分多的長曲分別擺在第 4、8、10 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9fdb999d-5959-4a40-ad32-fbebc5219c13&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Sweet Wivelsfield》是 Martin Carthy **1974 年**的專輯，1981 年由 Topic Records 再壓黑膠、1996 年出 CD。**這是由 Fairport Convention 創始人、也是 Carthy 在 Steeleye Span 的前團友 Ashley Hutchings 製作的三部曲中的第一張。** 兩人此前都參與過 Steeleye Span 1971 年《Ten Man Mop, or Mr. Reservoir Butler Rides Again》上〈Skewbald〉的電聲版本。**全部曲目皆為傳統曲、由 Martin Carthy 改編。** 人員：Martin Carthy（人聲、木吉他，第 1–6、8、10 軌），製作 Ashley Hutchings，錄音師 Jerry Boys，攝影 Keith Morris，封面插畫 Keith Davis。",
+    "src": "https://en.wikipedia.org/wiki/Sweet_Wivelsfield"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1616959003：collectionName「Sweet Wivelsfield」、artistName「Martin Carthy」、trackCount 10、℗ 欄「℗ 2006 Topic」、**releaseDate 記 1971**。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1974 原盤**逐位置相符**、逐軌長度差全部在 1 秒內。**上架的就是 10 軌的原盤內容，沒有加曲。**",
+    "src": "https://itunes.apple.com/lookup?id=1616959003&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 9fdb999d 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/9fdb999d-5959-4a40-ad32-fbebc5219c13/front"
+   }
+  ],
+  "hookCandidates": [
+   "製作人是他在 Steeleye Span 的前團友 Ashley Hutchings，三張一組的第一張",
+   "十軌裡有三首超過六分鐘，分別擺在第四、第八與最後一軌"
+  ],
+  "sound": "1974 年 Deram SML1111 的 12 吋原盤 10 軌、總長 41 分 59 秒。三首六分多的長曲——〈Trimdon Grange〉6 分 25 秒、〈King Henry〉6 分 20 秒、末軌〈The Cottage in the Wood〉6 分 12 秒——分別擺在第 4、8、10 軌，其餘七首壓在二到四分鐘。十首全部是傳統曲、全部由 Martin Carthy 自己改編，他一個人唱並彈木吉他。製作人是 Fairport Convention 的創始人、也是他在 Steeleye Span 的前團友 Ashley Hutchings，這是兩人合作三張裡的第一張；曲目中的〈Skewbald〉他們此前已在 Steeleye Span 1971 年的專輯上做過電聲版。錄音師 Jerry Boys。串流上架的就是這 10 軌。",
+  "keyTracks": [
+   "Shepherd O Shepherd",
+   "Trimdon Grange",
+   "The Cottage in the Wood"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **一處分歧，取 1974。** release-group first-release-date **1974**、**依裁定 220 回問轄下 release**，最早的一筆就是 1974／GB／Official 的 Deram SML1111，另一筆是 1996 年的 CD，沒有以再發日期建檔的問題；專輯條目亦寫「1974 年的專輯」。**⚠ 串流店面 gb 1616959003 的 releaseDate 卻記 1971，那是錯的**（℗ 欄的 2006 則是再發權利方的錄製聲明）。依裁定 127 取有兩處佐證的 1974。**行文一律寫 1974。同名先行單曲：無。**",
+  "notes": "⚠ **串流的年份欄不可信**（記 1971，比實際早三年），**行文一律以原盤的 1974 為準**；回撈清單也是照這個錯誤年份把本張的 collectionId 誤列為《Shearwater》的候選——**兩張不要弄反：1616959003 是本張的正確來源。**｜**「三部曲的第一張」有來源**（條目明寫），但**條目沒有列出另外兩張是哪兩張，行文不要自行補上**。｜條目的人員欄註明 Carthy 的木吉他只出現在第 1–6、8、10 軌，**行文不要寫成「整張只有一把吉他」**。｜同一藝人的《Shearwater》與合掛的《But Two Came By》也在本批 b 組，**三張的行文不要重複同一段生平**。"
+ },
+ {
+  "key": "desc2:Martin Carthy & Dave Swarbrick|But Two Came By",
+  "artist": "Martin Carthy & Dave Swarbrick",
+  "album": "But Two Came By",
+  "facts": [
+   {
+    "f": "release-group 01149499 的欄位：title「But Two Came By」、artist-credit「Martin Carthy & Dave Swarbrick」、first-release-date **1968**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1968／GB／Official（12 吋，11 軌，label-info Fontana STL 5477）與 1994／GB／Official（CD，11 軌，Topic Records TSCD 343）。**最早的 release 就是 1968／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/01149499-793f-3996-a28b-73deed645b53?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1968／GB 原盤（Fontana STL 5477，12 吋，release eb4d0375）逐軌：1〈Ship in Distress〉2:36、2〈Banks of Sweet Primroses〉2:58、3〈Jack Orion〉4:10、4〈Matt Hyland〉4:52、5〈White Hare〉2:53、6〈Lord of the Dance〉2:44、7〈Poor Murdered Woman〉2:54、8〈Creeping Jane〉3:53、9〈Streets of Forbes〉3:21、10〈Long Lankin〉**5:48**、11〈Brass Band Music〉3:34。**11 軌、總長 39 分 42 秒，單軌從 2 分 36 秒到 5 分 48 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=01149499-793f-3996-a28b-73deed645b53&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "歌手條目：Martin Dominic Forbes Carthy，1941 年 5 月 21 日生於 Hertfordshire 的 Hatfield，在倫敦西北的 Hampstead 長大；母親是活躍的社會主義者，父親出身泰晤士河駁船工家庭、後成為工會人士。他在 Queen's Chapel of The Savoy 當唱詩班男童時開始接受聲樂與音樂訓練，聽了 Lonnie Donegan 的〈Rock Island Line〉後第一次拿起父親的舊吉他，十六歲在倫敦 Belsize Park 的咖啡館 The Loft 首度職業演出。**他主要是獨自演唱傳統歌謠，用一把 Martin 000-18 木吉他自伴，風格特徵是變則調弦（尤其是 CGCDGA）與強調旋律的敲擊式撥弦。** 1965 年的個人首張《Martin Carthy》上已有 Dave Swarbrick 拉小提琴，只是內頁沒有署名；**他與提琴手 Dave Swarbrick 維持了多年的創作夥伴關係。**",
+    "src": "https://en.wikipedia.org/wiki/Martin_Carthy"
+   },
+   {
+    "f": "提琴手條目：David Cyril Eric Swarbrick（1941 年 4 月 5 日–2016 年 6 月 3 日）是英國傳統民謠樂手兼詞曲作者，主要拉小提琴，是第二波英國民謠復興產出的樂手中評價極高的一位，也是搶手的錄音樂手。他 1941 年生於 Surrey 的 Stoneleigh，全家搬到 North Yorkshire 的 Linton（Grassington 附近）後開始學小提琴，1940 年代末又搬到 Birmingham，1950 年代末就讀 Birmingham College of Art。**他 1969 年加入 Fairport Convention，參與了被視為開啟英國民謠搖滾運動的《Liege & Lief》。**",
+    "src": "https://en.wikipedia.org/wiki/Dave_Swarbrick"
+   },
+   {
+    "f": "**串流上有本張，探測層漏掉了。** 店面 gb 的 collectionId **1620641866**：collectionName「**But Two Came By (feat. Dave Swarbrick)**」、**artistName 掛的是「Martin Carthy」一個人**、trackCount 11、℗ 欄「℗ 2006 Topic」、releaseDate 記 1968-06-03。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**（每一軌的曲名都帶「(feat. Dave Swarbrick)」後綴），**截去後綴後與 1968 原盤逐位置完全相符、逐軌長度差全部在 1 秒內**。**上架的就是 11 軌的原盤內容，沒有加曲。**",
+    "src": "https://itunes.apple.com/lookup?id=1620641866&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "以藝人目錄 lookup 找到上述條目：`Martin Carthy` 的 artistId 2416045 名下 31 個條目中含《But Two Came By (feat. Dave Swarbrick)》1968（11 軌）；`Dave Swarbrick` 的 artistId 7285888 名下 25 個條目中也列出同一筆。**探測層以合掛名「Martin Carthy & Dave Swarbrick」在八個店面各查一次全回 0 筆，就是因為店面把這張掛在 Carthy 一個人名下、把 Swarbrick 放進 feat. 後綴裡**（裁定 218 的掛名分裂形狀）。",
+    "src": "https://itunes.apple.com/lookup?id=2416045&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 01149499 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/01149499-793f-3996-a28b-73deed645b53/front"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌全部落在兩分半到六分鐘之間，末段的〈Long Lankin〉最長",
+   "他用一把 Martin 000-18 自伴，慣用 CGCDGA 那類變則調弦"
+  ],
+  "sound": "1968 年 Fontana STL 5477 的 12 吋原盤 11 軌、總長 39 分 42 秒，單軌從 2 分 36 秒到 5 分 48 秒，密度平均。這是 Martin Carthy 與提琴手 Dave Swarbrick 多年搭檔期間的一張：Carthy 唱並用一把 Martin 000-18 木吉他自伴，風格特徵是變則調弦與強調旋律的敲擊式撥弦；Swarbrick 早在 Carthy 1965 年的個人首張上就拉過琴，只是當時內頁沒署名。Swarbrick 生於 Surrey 的 Stoneleigh，在 North Yorkshire 的 Linton 學的小提琴，隔年加入 Fairport Convention。串流上架的就是這 11 軌，逐軌長度與原盤差不到一秒。",
+  "keyTracks": [
+   "Ship in Distress",
+   "Jack Orion",
+   "Long Lankin"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968，**且日期精確到 6 月 3 日**。release-group first-release-date **1968**、**依裁定 220 回問轄下 release**，最早的一筆就是 1968／GB／Official 的 Fontana STL 5477，另一筆是 1994 年的 CD，沒有以再發日期建檔的問題；串流店面 gb 1620641866 的 releaseDate 記 **1968-06-03**（℗ 欄的 2006 是再發權利方的錄製聲明）。**兩處一致，串流還多給了日期。同名先行單曲：無。**",
+  "notes": "⚠⚠ **這是本批唯一一張「探測層判 unavailable、研究層救回來」的卡（裁定 185／173／218）。** 探測層以合掛名在 gb／us／jp／de／fr／ie／ca／au 八個店面各查一次全回 0 筆，回撈清單也寫「目錄裡找不到」。**實際上串流有這張，只是掛在 `Martin Carthy` 一個人名下、把 Swarbrick 塞進「(feat. Dave Swarbrick)」後綴裡**——以藝人目錄 lookup 攤開 Carthy 名下 31 個條目就看得到。**可補的來源：key `desc2:Martin Carthy & Dave Swarbrick|But Two Came By`／店面 `gb`／collectionId `1620641866`／11 軌（與原盤同軌數，11 軌全有 previewUrl）。**（依派工信，本檔只記錄，不改 `previews.json`。）｜**盤名與每一軌都帶「(feat. Dave Swarbrick)」後綴**，依裁定 175 與策展層第九條操作判斷截去後比對，**行文不得寫出後綴**。｜**掛名照池中的 `Martin Carthy & Dave Swarbrick`**，不要改成店面的單掛寫法。｜同一藝人的《Shearwater》與《Sweet Wivelsfield》也在本批 b 組，**三張的行文不要重複同一段生平**。｜歌手條目的獎項與榮銜段落**一律不入行文**。"
+ },
+ {
+  "key": "desc2:Dick Gaughan|No More Forever",
+  "artist": "Dick Gaughan",
+  "album": "No More Forever",
+  "facts": [
+   {
+    "f": "release-group 94353a1c 的欄位：title「No More Forever」、artist-credit「Dick Gaughan」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1972／GB／Official（12 吋，11 軌，label-info **Trailer LER 2072**）、一筆無日期的 GB Official CD-R（11 軌，Leader LERCD2072）、一筆無日期的 GB Official CD（11 軌，Leader LER CD 2072）。**最早且唯一有日期的 release 就是 1972／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/94353a1c-2df8-3003-ad89-c1128a9c3597?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972／GB 原盤（Trailer LER 2072，12 吋，release e8e487f1）逐軌：1〈Rattlin' Roarin' Willie / The Friar's Britches〉2:17、2〈MacCrimmon's Lament / Mistress Jamieson's Favourite〉5:26、3〈Jock o' Hazeldean〉4:12、4〈Cam' Ye ower frae France〉1:58、5〈The Bonnie Banks o' Fordie〉**7:17**、6〈The Thatchers o' Glenrae〉1:58、7〈The Fair Flower of Northumberland〉5:25、8〈The Teatotaller / Da Tushker〉2:24、9〈The Three Healths〉2:30、10〈The John MacLean March〉2:33、11〈The Green Linnet〉**7:39**。**11 軌、總長 43 分 39 秒；十一軌裡有三軌是兩首曲子串成的組合。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=94353a1c-2df8-3003-ad89-c1128a9c3597&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Richard Peter Gaughan（1948 年 5 月 17 日生）是蘇格蘭創作歌手。他生於 Glasgow，一歲半後全家搬到 Edinburgh 外圍的港區 Leith。**他成長於蘇格蘭與愛爾蘭音樂環繞的家庭：母親是說蓋爾語的 Lochaber 高地人、童年曾在蓋爾語 Mòd 賽會贏得歌唱銀牌，父親彈吉他，愛爾蘭出生的祖父（Mayo 郡 Erris 人）拉小提琴，祖母彈鈕扣式手風琴並唱歌。** 他七歲開始彈吉他，青少年時在當地造紙廠當學徒，同時投入愛丁堡的民謠圈、與另兩人創辦了 Edinburgh Folk Centre，1970 年初轉職業並搬到倫敦。**他的第一張專輯《No More Forever》錄於 1971 年，他自己唱並彈木吉他，部分曲目由提琴手 Aly Bain 加入。除了一首之外全部是傳統曲，那首例外是 Hamish Henderson 寫的〈The John Maclean March〉——獻給 Glasgow 社會主義者 John Maclean 的作品，也預示了他日後大量的政治歌曲。** 1972 年、在這張專輯發行之前，他加入了 Aly Bain 等人的 The Boys of the Lough，待了約一年。",
+    "src": "https://en.wikipedia.org/wiki/Dick_Gaughan"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup（artistId 62503571）攤開名下全部 15 個條目：《A Different Kind of Love Song》1983、《Prentice Piece》2002、《Sail On》1996、《Outlaws & Dreamers》2001、《Redwood Cathedral》1998、《Handful of Earth》1981（另有兩個重製版條目）、《Lucky For Some》2006、《Sandy Bell's Ceilidh》2006、《The Harvard Tapes》2019、《Gaughan》1978、**《Coppers & Brass》1977**、《An Introduction to Dick Gaughan》2018、《The Bonnie Pit Laddie...》1975——**沒有本張**；另一個掛名實體 259031651（Dick Gaughan & Andy Irvine）名下只有一個條目。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=62503571&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 94353a1c 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/94353a1c-2df8-3003-ad89-c1128a9c3597/front"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡有三軌是兩首曲子串起來的組合",
+   "母親曾在蓋爾語賽會拿過歌唱銀牌，祖父拉琴、祖母彈手風琴"
+  ],
+  "sound": "1972 年 Trailer LER 2072 的 12 吋原盤 11 軌、總長 43 分 39 秒。末軌〈The Green Linnet〉7 分 39 秒與第 5 軌〈The Bonnie Banks o' Fordie〉7 分 17 秒是兩首長曲，最短的兩軌則只有 1 分 58 秒；十一軌裡有三軌是兩首曲子串成的組合。這是 Dick Gaughan 的第一張專輯，錄於 1971 年，他自己唱並彈木吉他，部分曲目由提琴手 Aly Bain 加入。除了 Hamish Henderson 寫的〈The John MacLean March〉之外全部是傳統曲。他生於 Glasgow、在 Edinburgh 外圍的港區 Leith 長大，家裡母親說蓋爾語並在賽會唱過歌、父親彈吉他、祖父拉小提琴、祖母彈鈕扣式手風琴；他七歲開始彈吉他，1970 年初才轉職業。",
+  "keyTracks": [
+   "Jock o' Hazeldean",
+   "The Bonnie Banks o' Fordie",
+   "The Green Linnet"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972（發行年）；**錄音年是 1971，兩者不同不要混**。release-group first-release-date **1972**、**依裁定 220 回問轄下 release**，最早且唯一有日期的一筆就是 1972／GB／Official 的 Trailer LER 2072，另兩筆是無日期的 Leader CD／CD-R，沒有以再發日期建檔的問題；條目寫「《No More Forever》錄於 1971 年」，並說他 1972 年、**在這張專輯發行之前**加入 The Boys of the Lough——兩句合起來支持發行年 1972。**行文寫 1972，若要提 1971 必須明講那是錄音年。同名先行單曲：無。**",
+  "notes": "**無來源狀態**：兩個鍵、八個店面、藝人目錄 lookup（15 個條目逐一比對）都走完（裁定 185／173），確定沒有試聽來源。｜⚠ **曲名的撇號**：來源端第 1、2、4、6、8、11 軌的撇號都是彎撇（U+2019），涉及〈Rattlin' Roarin' Willie〉〈Jock o' Hazeldean〉〈Cam' Ye ower frae France〉〈The Thatchers o' Glenrae〉等軌，**本檔與行文一律改成 ASCII 直撇**。｜**同一首歌兩種拼法**：原盤第 10 軌作〈The John MacLean March〉（MacLean），條目正文作「The John Maclean March」（Maclean），**行文照原盤的 MacLean**。｜**「第一張專輯」有來源**（條目明寫），行文可寫。｜同一藝人的《Coppers & Brass》也在本批 b 組，**兩張的行文不要重複同一段生平**。｜條目 1978 年之後的生涯危機段落**與本張無關**。"
+ },
+ {
+  "key": "desc2:Dick Gaughan|Coppers & Brass",
+  "artist": "Dick Gaughan",
+  "album": "Coppers & Brass",
+  "facts": [
+   {
+    "f": "release-group 39cd8e08 的欄位：title「Coppers & Brass」、artist-credit「Dick Gaughan」、first-release-date **1977**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1977／GB／Official（12 吋，13 軌，label-info **Topic Records 12TS315**）與 2012／XW／Official（數位版，13 軌，Topic Records TSDL315）。**最早的 release 就是 1977／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/39cd8e08-c96a-3be3-9396-cd3d82378a1c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1977／GB 原盤（Topic 12TS315，12 吋，release 69e3147d）逐軌：1〈Coppers and Brass / The Gander in the Pratie Hole〉2:45、2〈O'Keefe's / The Foxhunter's〉2:49、3〈The Flowing Tide / The Fairies' Hornpipe〉3:54、4〈The Oak Tree / The Music in the Glen〉3:05、5〈Planxty Johnson〉2:38、6〈Gurty's Frolics〉3:14、7〈The Spey in Spate / The Hurricane〉2:23、8〈Alan MacPherson of Mosspark / The Jig of Slurs〉3:52、9〈The Thrush in the Storm / The Flogging Reel〉3:00、10〈Ask My Father / Lads of Laoise / The Connaught Heifers〉3:47、11〈The Bird in the Bush / The Boy in the Gap / MacMahon's Reel〉3:37、12〈Strike the Gay Harp / Shores of Lough Gowna〉2:42、13〈Jack Broke the Prison Door / Donald Blue / Wha'll Dance wi' Wattie〉1:56。**13 軌、總長 39 分 43 秒——十三軌裡有十一軌是兩到三首曲子串成的組合，只有第 5、6 軌是單曲。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=39cd8e08-c96a-3be3-9396-cd3d82378a1c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Dick Gaughan 1976 至 1978 年間節奏極快，他在那三年內與凱爾特搖滾團 Five Hand Reel 錄了四張專輯，同時另出兩張個人作：**全器樂的《Coppers and Brass》與 1978 年的《Gaughan》——後者他同時彈木吉他與電吉他**。此前 1975 年錄的《Kist O Gold》他只用吉他伴奏、唱的多是傳統歌；同年他也在 The High Level Ranters 的《The Bonnie Pit Laddie》上錄了兩軌。他 1970 年初轉職業並搬到倫敦，第一張《No More Forever》錄於 1971 年。",
+    "src": "https://en.wikipedia.org/wiki/Dick_Gaughan"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1617172615：collectionName「Coppers & Brass」、artistName「Dick Gaughan」、trackCount 13、℗ 欄「℗ 2009 Topic Records Ltd.」、releaseDate 記 1977。`entity=song` 攤得出 **13 軌、13 軌全部有 previewUrl**，曲名與曲序與 1977 原盤**逐位置相符**、**逐軌長度差幾乎全為 0 秒**（僅末軌差 1 秒）。**上架的就是 13 軌的原盤內容，沒有加曲。** 差異只在撇號與大小寫（店面用 ASCII 直撇、`O'keefe's`／`Macmahon's` 的大小寫不同）。",
+    "src": "https://itunes.apple.com/lookup?id=1617172615&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 39cd8e08 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/39cd8e08-c96a-3be3-9396-cd3d82378a1c/front"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有十一軌是兩到三首曲子串起來的組合，只有兩軌是單曲",
+   "整張沒有一句歌詞，全部是器樂"
+  ],
+  "sound": "1977 年 Topic 12TS315 的 12 吋原盤 13 軌、總長 39 分 43 秒，整張全是器樂、沒有歌。曲目幾乎都是組曲式的串接：十三軌裡有十一軌由兩到三首曲子串成，只有〈Planxty Johnson〉與〈Gurty's Frolics〉是單曲；單軌從 1 分 56 秒到 3 分 54 秒，長度分佈很緊。這是 Dick Gaughan 1976 至 1978 那三年裡的兩張個人作之一——同一段時間他還與凱爾特搖滾團 Five Hand Reel 錄了四張。串流上架的就是這 13 軌，逐軌長度與原盤幾乎完全一致。",
+  "keyTracks": [
+   "Planxty Johnson",
+   "Gurty's Frolics",
+   "The Spey in Spate / The Hurricane"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **兩處分歧，取 1977。** release-group first-release-date **1977**、**依裁定 220 回問轄下 release**，最早的一筆就是 1977／GB／Official 的 Topic 12TS315，另一筆是 2012 年的數位版，沒有以再發日期建檔的問題；串流店面 gb 1617172615 的 releaseDate 亦記 1977。**⚠ 條目正文把這張寫成「the all-instrumental Coppers and Brass (1975)」**，與另外兩處差兩年，且該段同時把它放在「1976 至 1978 年間」的敘述裡、前後自相矛盾（1975 是他錄《Kist O Gold》的年份）。依裁定 127 取有兩處佐證、且有實體 release 與目錄編號的 1977。**行文一律寫 1977。同名先行單曲：無**（同名曲是本張第 1 軌組曲的前半）。",
+  "notes": "**盤名兩種寫法**：MB、串流與卡單都作《Coppers & Brass》（用 `&`），條目正文作「Coppers and Brass」（用 and）——**這正是裁定 217 的 &／and 分裂形狀，照卡單的 `&` 寫法**；同一張碟的第 1 軌曲名則作〈Coppers and Brass / ...〉（用 and），**曲名與盤名不要互相統一**。｜⚠ **撇號**：來源端曲名大量使用彎撇（U+2019），涉及〈O'Keefe's / The Foxhunter's〉〈The Fairies' Hornpipe〉〈Gurty's Frolics〉〈MacMahon's Reel〉〈Wha'll Dance wi' Wattie〉等，**本檔與行文一律改成 ASCII 直撇**。｜**全器樂**是條目明寫的，行文可寫。｜同一藝人的《No More Forever》也在本批 b 組，**兩張的行文不要重複同一段生平**。"
+ },
+ {
+  "key": "desc2:June Tabor|Ashes and Diamonds",
+  "artist": "June Tabor",
+  "album": "Ashes and Diamonds",
+  "facts": [
+   {
+    "f": "release-group 4d2508c7 的欄位：title「Ashes and Diamonds」、artist-credit「June Tabor」、first-release-date **1977**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1977／GB／Official（12 吋，11 軌，label-info **Topic Records 12TS360**）與 1989／GB／Official（CD，11 軌，Topic Records TSCD360）。**最早的 release 就是 1977／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4d2508c7-af1a-38b8-b52d-5f27babc9240?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1977／GB 原盤（Topic 12TS360，12 吋，release 79e19e50）逐軌：1〈Reynard the Fox〉2:09、2〈The Devil and Baliff Mcglynn〉**1:31**、3〈Streets of Forbes〉3:24、4〈Lord Maxwell's Last Goodnight〉3:16、5〈Now I'm Easy〉4:31、6〈Clerk Saunders〉**6:17**、7〈The Earl of Aboyne〉5:15、8〈Lisbon〉4:43、9〈The Easter Tree〉2:34、10〈Cold and Raw〉2:27、11〈No Man's Land / Flowers of the Forest〉**7:40**。**11 軌、總長 43 分 46 秒；末軌是兩首串成的 7 分 40 秒，最短的第 2 軌只有 1 分 31 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4d2508c7-af1a-38b8-b52d-5f27babc9240&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：June Tabor（1947 年 12 月 31 日生於英格蘭 Warwick）是英國民謠歌手。她十八歲時因聽到 Anne Briggs 1965 年的 EP《The Hazards of Love》而決定唱歌——**她自述把自己鎖在浴室兩星期，把那張 EP 上的歌一個音一個轉音地學下來**。她說自己完全沒受過音樂教育，只是把 Anne Briggs 與 Belle Stewart 兩人的唱法反覆聽、試著揉在一起再省掉幾處。她最早的公開演出在 1960 年代中期，地點是 Leamington Spa 的 Heart of England Folk Club；她就讀牛津 St Hugh's College，1968 年還當過學院代表隊的隊長上過益智節目。**1976 年她與 Maddy Prior 合作了《Silly Sisters》專輯與巡演，同年推出自己名下的第一張專輯《Airs and Graces》；1977 年起，Martin Simpson 進錄音室與她合作了三張專輯，直到他 1987 年移居美國。**",
+    "src": "https://en.wikipedia.org/wiki/June_Tabor"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1617416062：collectionName「Ashes and Diamonds」、artistName「June Tabor」、trackCount 11、℗ 欄「℗ 2006 Topic」、releaseDate 記 1977。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1977 原盤**逐位置相符**、逐軌長度差全部在 2 秒內。**上架的就是 11 軌的原盤內容，沒有加曲。** 字面差異一處：第 2 軌店面作〈The Devil and Bailiff Mcglynn〉（Bailiff 拼法不同）。",
+    "src": "https://itunes.apple.com/lookup?id=1617416062&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 4d2508c7 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/4d2508c7-af1a-38b8-b52d-5f27babc9240/front"
+   }
+  ],
+  "hookCandidates": [
+   "她十八歲時把自己鎖在浴室兩星期，一個轉音一個轉音地學會唱歌",
+   "十一軌從一分半到七分四十秒，末軌是兩首串成的"
+  ],
+  "sound": "1977 年 Topic 12TS360 的 12 吋原盤 11 軌、總長 43 分 46 秒。落差很大：末軌〈No Man's Land / Flowers of the Forest〉是兩首串成的 7 分 40 秒，第 6 軌〈Clerk Saunders〉6 分 17 秒，而第 2 軌只有 1 分 31 秒。歌者 June Tabor 生於英格蘭 Warwick，十八歲時聽到 Anne Briggs 的一張 EP 才決定唱歌——她自述把自己鎖在浴室兩星期，一個音一個轉音地把那張 EP 學下來，並說自己完全沒受過音樂教育，只是把兩位歌手的唱法揉在一起再省掉幾處。1976 年她與 Maddy Prior 合作了《Silly Sisters》，同年才推出自己名下的第一張專輯，這張是隔年的作品。串流上架的就是這 11 軌。",
+  "keyTracks": [
+   "Reynard the Fox",
+   "Clerk Saunders",
+   "No Man's Land / Flowers of the Forest"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977。release-group first-release-date **1977**、**依裁定 220 回問轄下 release**，最早的一筆就是 1977／GB／Official 的 Topic 12TS360，另一筆是 1989 年的 CD，沒有以再發日期建檔的問題；串流店面 gb 1617416062 的 releaseDate 亦記 1977（℗ 欄的 2006 是再發權利方的錄製聲明）。條目雖未直接寫本張的年份，但把 1976 年的《Airs and Graces》記為她名下的第一張、1977 年起 Martin Simpson 開始與她錄音，**與本張 1977 的時序相符**。**兩處直接一致、一處時序相符。同名先行單曲：無。**",
+  "notes": "**曲名字面差異一處**：原盤第 2 軌作〈The Devil and Baliff Mcglynn〉（Baliff，單 l），店面作〈The Devil and Bailiff Mcglynn〉。**兩邊都不是標準拼法，`keyTracks` 已避開這一軌；行文若要引用請照原盤。**｜⚠ **不要把 Martin Simpson 綁到這張**：條目只說「1977 年起 Martin Simpson 進錄音室與她合作了三張專輯」，**沒有說是哪三張**。**行文不得寫成他參與了本張。**｜本批另有她與 Maddy Prior 合掛的《Silly Sisters》（1976），**兩張的行文不要重複同一段生平**；同時要分清 **這張掛 `June Tabor` 一個人、那張掛 `Maddy Prior & June Tabor`**。｜條目引述的她本人談話已寫進 facts，**行文引用時請轉述、不要當作直接引語加引號**。｜策展層第 3.5 節提到她與 Martin Simpson 合掛的《A Cut Above》1980 留待下批，**與本張無關**。"
+ },
+ {
+  "key": "desc2:Maddy Prior & June Tabor|Silly Sisters",
+  "artist": "Maddy Prior & June Tabor",
+  "album": "Silly Sisters",
+  "facts": [
+   {
+    "f": "release-group c3cf63c3 的欄位：title「Silly Sisters」、artist-credit「Maddy Prior & June Tabor」、first-release-date **1976-03**、primary-type Album、secondary-types **空**。轄下 5 筆 release：1976-03／GB／Official（12 吋，13 軌，label-info **Chrysalis CHR 1101**）、1988／US 的 CD（Shanachie SH 79040）、1991-07／GB 的 CD（Chrysalis CCD 1101）、1994-02／GB 的 CD（Beat Goes On BGOCD 214）、2026-04-18／GB 的黑膠（disambiguation「50th anniversary」）——**全部都是 13 軌**。**最早的 release 是 1976-03，與 first-release-date 完全相同**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c3cf63c3-6fae-3bbc-92f6-0b4385b1eb4e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1976-03／GB 原盤（Chrysalis CHR 1101，12 吋，release 879b116c）逐軌：1〈Doffin' Mistress〉2:12、2〈Burning of Auchidoon〉**1:08**、3〈Lass of Loch Royal〉4:07、4〈The Seven Joys of Mary〉3:17、5〈My Husband's Got No Courage in Him〉3:10、6〈Singing the Travels〉2:49、7〈Silver Whistle〉4:11、8〈The Grey Funnel Line〉3:04、9〈Geordie〉4:00、10〈The Seven Wonders〉4:33、11〈Four Loom Weaver〉2:37、12〈The Game of Cards〉3:19、13〈Dame Durdan〉3:00。**13 軌、總長 41 分 27 秒，只有第 2 軌不到兩分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c3cf63c3-6fae-3bbc-92f6-0b4385b1eb4e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Silly Sisters》是英國民謠歌手 Maddy Prior 與 June Tabor **1976 年的專輯，也是兩人第一次以二人組形式合作**；兩人後來把 Silly Sisters 這個名字沿用到之後的計畫上。**曲目題材涵蓋勞動、宗教、性關係、幽默、悲劇與荒謬。錄音樂手包括 Martin Carthy、Nic Jones、Andy Irvine、Johnny Moynihan 與 Danny Thompson。** 條目逐首註記：〈Doffin' Mistress〉是傳統曲，**1963 年由 Anne Briggs 首度錄在《The Iron Muse》上，可能源自 Ulster 的棉紡廠——她那個版本正是促成 Tabor 與 Prior 兩人成為歌手的影響之一**；〈Burning of Auchindoon〉是 Child 183 號歌謠，講 1592 年 Huntly 家族與 Moray 伯爵的世仇；〈Lass of Loch Royal〉是 Child 76 號；〈The Seven Joys of Mary〉最早的版本可上溯十四世紀；〈Silver Whistle〉是一首 Jacobite 歌謠，來自 Flora MacNeil、由蓋爾語譯出，曲調由 Johnny Moynihan 所作；〈The Grey Funnel Line〉由 Cyril Tawney 依自身經歷寫成，寫皇家海軍水兵的日常。",
+    "src": "https://en.wikipedia.org/wiki/Silly_Sisters_(album)"
+   },
+   {
+    "f": "歌手條目：June Tabor **1976 年與 Maddy Prior 合作了《Silly Sisters》專輯與巡演，樂隊編制完整、其中包括 Nic Jones**；這張成了同年她推出自己名下第一張專輯《Airs and Graces》的跳板。她後來又與 Prior 合作，這一次直接以 Silly Sisters 作為二人組的名稱。",
+    "src": "https://en.wikipedia.org/wiki/June_Tabor"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1629187374：collectionName「Silly Sisters」、artistName「Maddy Prior & June Tabor」、trackCount 13、℗ 欄「℗ 1976 Chrysalis Records Limited」、releaseDate 記 1976。`entity=song` 攤得出 **13 軌、13 軌全部有 previewUrl**，曲名與曲序與 1976 原盤**逐位置相符**、逐軌長度差全部在 3 秒內。**上架的就是 13 軌的原盤內容，沒有加曲。** 字面差異兩處：第 2 軌店面作〈Burning of Auchindoon〉（原盤作 Auchidoon，少一個 n）、第 11 軌作〈Four Loom Weavers〉（複數）。",
+    "src": "https://itunes.apple.com/lookup?id=1629187374&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group c3cf63c3 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/c3cf63c3-6fae-3bbc-92f6-0b4385b1eb4e/front"
+   }
+  ],
+  "hookCandidates": [
+   "開場那首的 1963 年錄音，正是促成兩人成為歌手的影響之一",
+   "第二軌〈Burning of Auchidoon〉只有 1 分 08 秒，講的是 1592 年的一樁世仇"
+  ],
+  "sound": "1976 年 3 月 Chrysalis CHR 1101 的 12 吋原盤 13 軌、總長 41 分 27 秒，除了第 2 軌〈Burning of Auchidoon〉只有 1 分 08 秒，其餘全部落在兩分到四分半。這是 Maddy Prior 與 June Tabor 第一次以二人組形式合作，錄音樂手包括 Martin Carthy、Nic Jones、Andy Irvine、Johnny Moynihan 與 Danny Thompson。曲目題材跨得很開——勞動、宗教、性關係、幽默、悲劇與荒謬都有：〈Burning of Auchidoon〉講 1592 年 Huntly 家族與 Moray 伯爵的世仇，〈Silver Whistle〉是從蓋爾語譯出的 Jacobite 歌謠、曲調由 Johnny Moynihan 所作，〈The Grey Funnel Line〉是 Cyril Tawney 依自身經歷寫的皇家海軍水兵日常。開場的〈Doffin' Mistress〉可能源自 Ulster 的棉紡廠。",
+  "keyTracks": [
+   "Doffin' Mistress",
+   "Silver Whistle",
+   "The Grey Funnel Line"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976（月份亦一致，1976-03）。release-group first-release-date **1976-03**、**依裁定 220 回問轄下 release**，最早的一筆就是 1976-03／GB／Official 的 Chrysalis CHR 1101，**連月份都相同**，其後四筆全部是 1988 年之後的再發（含一筆 2026 年的五十週年黑膠），沒有以再發日期建檔的問題；兩份條目都把本張記為 1976；串流店面 gb 1629187374 的 releaseDate 與 ℗ 欄同為 1976。**四處一致。同名先行單曲：無**（Silly Sisters 是盤名，也是兩人後來沿用的二人組名稱，但不是曲名）。",
+  "notes": "**曲名字面差異兩處**：原盤第 2 軌作〈Burning of Auchidoon〉，**專輯條目與串流都作〈Burning of Auchindoon〉（多一個 n）**，且條目說城堡遺址至今仍在、寫作 Auchindoun Castle——**原盤的拼法看來是漏字，但依規則行文仍照原盤，或乾脆改引其他軌**；第 11 軌原盤作〈Four Loom Weaver〉、店面作〈Four Loom Weavers〉，**行文照原盤的單數**。｜**掛名要分清**：這張掛 `Maddy Prior & June Tabor`（用 `&`），本批另一張《Ashes and Diamonds》掛 `June Tabor` 一個人，**兩張不要互相沿用**。｜**「兩人第一次以二人組形式合作」有來源**，行文可寫；但**「Silly Sisters 後來成為二人組名稱」是後續的事，不要寫成本張當時就叫這個團名**。｜錄音樂手裡的 Nic Jones 與 Martin Carthy 在本批 b 組各有自己的卡，**行文不要跨卡互相指涉**。"
+ },
+ {
+  "key": "desc2:Peter Bellamy|Oak, Ash & Thorn",
+  "artist": "Peter Bellamy",
+  "album": "Oak, Ash & Thorn",
+  "facts": [
+   {
+    "f": "release-group b2fc811a 的欄位：title「Oak, Ash & Thorn」、artist-credit「Peter Bellamy」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1970／GB／Official（12 吋，12 軌，label-info **Argo ZFB 11**）與 2011-05-23／GB／Official（CD，12 軌，Talking Elephant TECD174）。**最早的 release 就是 1970／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b2fc811a-85d1-4312-9151-7195ac3a6989?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（Argo ZFB 11，12 吋，release 4e7d6b06）逐軌：1〈Frankie's Trade〉3:26、2〈Poor Honest Men〉3:56、3〈Cold Iron〉3:18、4〈Sir Richard's Song〉**6:06**、5〈The Looking Glass〉2:40、6〈Oak, Ash & Thorn〉2:45、7〈King Henry VII & The Shipwrights〉5:49、8〈The Brookland Road〉2:04、9〈A Three-Part Song〉**1:00**、10〈The Ballad of Minepit Shaw〉3:03、11〈Our Fathers of Old〉3:12、12〈Philadelphia〉4:27。**12 軌、總長 41 分 47 秒；第 9 軌整整 1 分鐘，是全張最短的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b2fc811a-85d1-4312-9151-7195ac3a6989&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Peter Franklyn Bellamy（1944 年 9 月 8 日–1991 年 9 月 24 日）是英國民謠歌手，生於 Bournemouth、在北 Norfolk 的 Warham 村度過成長期，先後就讀 Norwich School of Art 與 Maidstone College of Art。**他 1965 年在 Anne Briggs 的鼓勵下輟學，與 Royston Wood、Heather Wood 組成 The Young Tradition**，三人以緊密和聲、多半不用伴奏的方式唱傳統歌。該團 1969 年 10 月在 Cecil Sharp House 的告別演出後解散，Bellamy 想專心做英格蘭傳統音樂。**他 1968 年的個人首張《Mainly Norfolk》全部無伴奏演唱，第二張《Fair England's Shore》起他開始用 Anglo concertina 自伴。** **他對 Kipling 素材的探索不是從《Barrack Room Ballads》開始，而是先從 Kipling 兩本童書（《Puck of Pook's Hill》與《Rewards and Fairies》）裡的詩作入手，做出了《Oak Ash and Thorn》與《Merlyn's Isle of Gramarye》兩張專輯。**",
+    "src": "https://en.wikipedia.org/wiki/Peter_Bellamy"
+   },
+   {
+    "f": "素材來源條目：《Puck of Pook's Hill》是 Rudyard Kipling 1906 年出版的奇幻小說集，由設定在英格蘭不同歷史時期的短篇故事構成。**故事全部說給住在 Sussex 高地 Burwash 附近的兩個孩子聽，說故事的人是被精靈 Puck 從歷史裡魔法般拉出來的人物，或由 Puck 本人講述**——Puck 自稱是「英格蘭最老的老東西」。**每一則故事的前後都夾著一首與該篇主題相關的詩。** 故事原刊於 1906 年的《Strand Magazine》，四年後有續集《Rewards and Fairies》。",
+    "src": "https://en.wikipedia.org/wiki/Puck_of_Pook%27s_Hill"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次（盤名的 `&`／`and` 兩種寫法都查）都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup（artistId 171676262，genre 標 Folk）攤開名下全部 7 個條目：《Both Sides Then》1979、《The Barrack Room Ballads of Rudyard Kipling》1974、《Top 27 Sea Shanties - The Very Best of Peter Bellamy》2021、《The Maritime Suite...》2018、**《The Fox Jumps over the Parson's Gate》1970（14 軌）**、《Fair Annie & Peter Bellamy》1974、《Mr Bellamy, Mr Kipling & the Tradition》2001——**沒有本張**。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=171676262&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group b2fc811a 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/b2fc811a-85d1-4312-9151-7195ac3a6989/front"
+   }
+  ],
+  "hookCandidates": [
+   "十二首詞全部出自 Kipling 兩本童書裡夾在故事之間的詩",
+   "第九軌〈A Three-Part Song〉剛好一分鐘，是全張最短的一軌"
+  ],
+  "sound": "1970 年 Argo ZFB 11 的 12 吋原盤 12 軌、總長 41 分 47 秒。第 4 軌〈Sir Richard's Song〉6 分 06 秒與第 7 軌〈King Henry VII & The Shipwrights〉5 分 49 秒最長，第 9 軌〈A Three-Part Song〉剛好一分鐘、是全張最短。詞的來源很整齊：Peter Bellamy 對 Kipling 的探索不是從《Barrack Room Ballads》開始，而是先取兩本童書《Puck of Pook's Hill》與《Rewards and Fairies》裡的詩——那些詩原本就夾在每則故事的前後。前者 1906 年出版，故事說給住在 Sussex 高地 Burwash 附近的兩個孩子聽，說書人是被精靈 Puck 從歷史裡拉出來的人物。Bellamy 生於 Bournemouth、在北 Norfolk 長大，1965 年輟學組了 The Young Tradition，個人作品從第二張起用 Anglo concertina 自伴。",
+  "keyTracks": [
+   "Cold Iron",
+   "Oak, Ash & Thorn",
+   "Philadelphia"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／GB／Official 的 Argo ZFB 11，另一筆是 2011 年的 CD，沒有以再發日期建檔的問題。條目沒有直接寫本張的年份，但把 The Young Tradition 的解散記在 1969 年 10 月、把本張列為他 Kipling 系列的起點，**與 1970 的時序相符**。串流查無條目。**一處直接、一處時序相符。同名先行單曲：無**（同名曲是本張第 6 軌）。",
+  "notes": "**無來源狀態**：兩個鍵（盤名的 `&` 與 `and` 兩種寫法都掃過，裁定 217）、八個店面、藝人目錄 lookup（7 個條目逐一比對）都走完（裁定 185／173）。｜⚠ **回撈候選要駁回**：回撈清單把串流的 1617234179《The Fox Jumps over the Parson's Gate》1970（14 軌）列為本張候選（依據只有年份）。**那是同藝人的另一張碟，不得採用。**｜**盤名與姊妹作的拼法**：條目正文把兩張寫成《Oak Ash and Thorn》與《Merlyn's Isle of Gramarye》，**MB 與卡單則作《Oak, Ash & Thorn》與《Merlin's Isle of Gramarye》**（有逗號、用 `&`、Merlin 拼法不同）。**一律照卡單寫法。**｜**「Kipling 系列的起點」有來源**（條目明寫他不是從 Barrack Room Ballads 開始），行文可寫。｜本批另有他的《Merlin's Isle of Gramarye》（1972），**兩張的行文不要重複同一段生平，也不要把兩本童書的來源說重複**。"
+ },
+ {
+  "key": "desc2:Peter Bellamy|Merlin's Isle of Gramarye",
+  "artist": "Peter Bellamy",
+  "album": "Merlin's Isle of Gramarye",
+  "facts": [
+   {
+    "f": "release-group b9d80fd6 的欄位：title「Merlin's Isle of Gramarye」、artist-credit「Peter Bellamy」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1972／GB／Official（12 吋，15 軌，label-info **Argo ZFB 81**）與 2011-06-06／GB／Official（CD，15 軌，Talking Elephant TECD178）。**最早的 release 就是 1972／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b9d80fd6-7c34-40d4-9715-9fceb94a321b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972／GB 原盤（Argo ZFB 81，12 吋，release ab55dc3e）逐軌：1〈Puck's Song〉2:54、2〈A Smuggler's Song〉3:11、3〈The Run of the Downs〉1:20、4〈Eddi's Service〉2:20、5〈The Queen's Men〉3:11、6〈The Bee-Boy's Song〉1:24、7〈Harp Song of the Dane Women〉3:11、8〈Song of the Men's Side〉2:20、9〈The Heavens Above Us (An Astrologer's Song)〉**4:36**、10〈Prophets at Home〉**1:01**、11〈Who Shall Judge the Lord? (A Carol)〉2:13、12〈St. Helena (A St. Helena Lullaby)〉2:54、13〈The Way Through the Woods〉1:49、14〈The Bricklayer and the Shipwright (A Truthful Song)〉3:31、15〈Song of the Red War-Boat〉3:26。**15 軌、總長 39 分 23 秒——平均一軌只有 2 分半，最長的第 9 軌 4 分 36 秒、最短的第 10 軌只有 1 分 01 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b9d80fd6-7c34-40d4-9715-9fceb94a321b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Peter Franklyn Bellamy（1944 年 9 月 8 日–1991 年 9 月 24 日）是英國民謠歌手，1965 年在 Anne Briggs 的鼓勵下輟學、與 Royston Wood 和 Heather Wood 組成 The Young Tradition。**他對 Kipling 素材的探索不是從《Barrack Room Ballads》開始，而是先從 Kipling 兩本童書（《Puck of Pook's Hill》與《Rewards and Fairies》）裡的詩作入手，做出了《Oak Ash and Thorn》與《Merlyn's Isle of Gramarye》兩張專輯。** 他 1968 年的個人首張《Mainly Norfolk》全部無伴奏演唱、取材自 Norfolk 傳統歌手 Harry Cox 的曲目，第二張起開始用 Anglo concertina 自伴。**直到 1975 年的第八張他才錄自己寫的作品，同年他也錄了一整套 Kipling 的《Barrack Room Ballads》。** 他 1973 年寫了敘事歌劇《The Transports》，花了四年才找到願意製作的團隊。",
+    "src": "https://en.wikipedia.org/wiki/Peter_Bellamy"
+   },
+   {
+    "f": "素材來源條目：《Rewards and Fairies》是 Rudyard Kipling 1910 年出版的歷史奇幻小說集，是 1906 年《Puck of Pook's Hill》的續集，**書名取自 Richard Corbet 的詩〈Farewell, Rewards and Fairies〉**。故事同樣圍繞住在 Sussex Weald 的兩個孩子 Dan 與 Una 遇見精靈 Puck，由 Puck 召喚出 Sussex 過去的真實與虛構人物，向孩子講述這片地區的歷史與史前。**每一則故事前後都有一首詩，其中包括〈If—〉、〈Cold Iron〉與〈The Way through the Woods〉。**",
+    "src": "https://en.wikipedia.org/wiki/Rewards_and_Fairies"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup（artistId 171676262，genre 標 Folk）攤開名下全部 7 個條目：《Both Sides Then》1979、《The Barrack Room Ballads of Rudyard Kipling》1974、《Top 27 Sea Shanties - The Very Best of Peter Bellamy》2021、《The Maritime Suite: We Have Fed Our Sea for a Thousand Years...》2018、《The Fox Jumps over the Parson's Gate》1970、《Fair Annie & Peter Bellamy》1974、《Mr Bellamy, Mr Kipling & the Tradition》2001——**沒有本張**。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=171676262&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group b9d80fd6 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/b9d80fd6-7c34-40d4-9715-9fceb94a321b/front"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌只有三十九分，平均一首兩分半、最短的一分零一秒",
+   "第十三軌〈The Way Through the Woods〉的原詩出自 1910 年那本續集"
+  ],
+  "sound": "1972 年 Argo ZFB 81 的 12 吋原盤 15 軌、總長 39 分 23 秒——軌數多、單軌短，平均一首只有兩分半，最長的〈The Heavens Above Us (An Astrologer's Song)〉4 分 36 秒，最短的〈Prophets at Home〉只有 1 分 01 秒。詞的來源與兩年前那張同一條線：Peter Bellamy 取 Kipling 兩本童書《Puck of Pook's Hill》與 1910 年的續集《Rewards and Fairies》裡夾在故事前後的詩，第 13 軌〈The Way Through the Woods〉的原詩就出自後者。續集的書名本身取自 Richard Corbet 的一首詩，故事同樣圍繞住在 Sussex Weald 的兩個孩子遇見精靈 Puck。Bellamy 的個人作品從第二張起改用 Anglo concertina 自伴。",
+  "keyTracks": [
+   "Puck's Song",
+   "A Smuggler's Song",
+   "The Way Through the Woods"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。release-group first-release-date **1972**、**依裁定 220 回問轄下 release**，最早的一筆就是 1972／GB／Official 的 Argo ZFB 81，另一筆是 2011 年的 CD，沒有以再發日期建檔的問題。條目沒有直接寫本張的年份，但把它列為 Kipling 童書系列的第二張、並把 1975 年才錄的《Barrack Room Ballads》放在其後，**與 1972 的時序相符**。串流查無條目。**一處直接、一處時序相符。同名先行單曲：無。**",
+  "notes": "**無來源狀態**：兩個鍵、八個店面、藝人目錄 lookup（7 個條目逐一比對）都走完（裁定 185／173）。｜⚠ **盤名拼法兩種**：MB 與卡單作《Merlin's Isle of Gramarye》，**條目正文作《Merlyn's Isle of Gramarye》（Merlyn，y）**。**一律照卡單的 Merlin。**｜同批的《Oak, Ash & Thorn》（1970）是同一系列的前一張，**兩張的行文不要重複同一段生平，也不要把兩本童書的介紹說重複**；若要區隔，這張可著重 1910 年的續集《Rewards and Fairies》，前一張著重 1906 年的《Puck of Pook's Hill》。｜**曲名帶括號副標的有四軌**（第 9、11、12、14 軌），**行文引用時整段照抄或改引其他軌**。｜條目提到《The Transports》拿到的年度榮銜**不得寫入**。"
+ },
+ {
+  "key": "desc2:The Watersons|Sound, Sound Your Instruments of Joy",
+  "artist": "The Watersons",
+  "album": "Sound, Sound Your Instruments of Joy",
+  "facts": [
+   {
+    "f": "release-group 7fe179f2 的欄位：title「Sound, Sound Your Instruments of Joy」、artist-credit「The Watersons」、first-release-date **1977**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1977／GB／Official（黑膠，14 軌，label-info **Topic Records 12TS346**）與 2007-05-07／GB／Official（CD，14 軌，Topic Records TSCD564）。**最早的 release 就是 1977／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7fe179f2-001e-4073-917d-76d26c9c4e88?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1977／GB 原盤（Topic 12TS346，release c80bfab9）逐軌：1〈God Bless the Master〉3:11、2〈While Shepherds Watched Their Flocks〉3:20、3〈Windham〉2:05、4〈Heavenly Aeroplane〉2:25、5〈Christian's Hope〉1:57、6〈The Bitter Withy〉2:40、7〈Emmanuel〉2:49、8〈Idumea〉2:34、9〈Sound, Sound Your Instruments of Joy〉**4:31**、10〈Come All Ye Faithful Christians〉2:31、11〈Green Fields〉2:45、12〈David's Lamentation〉2:18、13〈Morning Trumpet〉3:10、14〈Joy, Health, Love and Peace〉**1:35**。**14 軌、總長 37 分 51 秒，只有同名曲超過四分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7fe179f2-001e-4073-917d-76d26c9c4e88&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：The Watersons 是來自 Yorkshire 的 Hull 的英國民謠團，**唱的多是傳統歌、幾乎不用或完全不用伴奏，招牌是緊密交織的和聲**。條目記他們的作法：**四人從未學過讀譜，最早是跟祖母一起唱獵歌、聖歌與頌歌；一個人唱主旋律，其餘的人加進來，旋律若超出自己的音域就自己挑一個和聲音。** 原始成員是 Norma、Mike 與 Elaine（人稱 Lal）三姊弟妹，加上表親 John Harrison。首張《Frost and Fire》1965 年發行，1966 年有《The Watersons》與《A Yorkshire Garland》，1968 年解散。**1972 年重組，同年 John Harrison 的替補 Bernie Vickers 又被 Norma 的丈夫 Martin Carthy 取代；這個陣容錄了《For Pence and Spicy Ale》（1975）、《Sound, Sound Your Instruments of Joy》（1977）與《Green Fields》（1981）。**",
+    "src": "https://en.wikipedia.org/wiki/The_Watersons"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1617167277：collectionName「Sound, Sound Your Instruments of Joy」、**artistName 作「Watersons」（無定冠詞）**、trackCount 14、℗ 欄「℗ 2007 Topic」、releaseDate 記 1977。`entity=song` 攤得出 **14 軌、14 軌全部有 previewUrl**，曲名與曲序與 1977 原盤**逐位置相符**、**逐軌長度差 14 軌全部為 0 秒**。**上架的就是 14 軌的原盤內容，沒有加曲，是本批比對得最乾淨的一張。**",
+    "src": "https://itunes.apple.com/lookup?id=1617167277&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 7fe179f2 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/7fe179f2-001e-4073-917d-76d26c9c4e88/front"
+   }
+  ],
+  "hookCandidates": [
+   "四個人沒有一個學過讀譜，和聲是從跟祖母一起唱歌那時來的",
+   "十四軌只有同名曲超過四分鐘，末軌一分三十五秒就收"
+  ],
+  "sound": "1977 年 Topic 12TS346 的原盤 14 軌、總長 37 分 51 秒。曲子短而密：只有同名曲〈Sound, Sound Your Instruments of Joy〉4 分 31 秒過四分鐘，末軌〈Joy, Health, Love and Peace〉1 分 35 秒就收，其餘多在兩到三分半。樂團來自 Yorkshire 的 Hull，唱的多是傳統歌、幾乎不用伴奏，靠緊密交織的和聲；四個人從未學過讀譜，最早是跟祖母一起唱獵歌、聖歌與頌歌——一個人唱主旋律，其餘的人加進來，旋律若超出自己的音域就自己挑一個和聲音。原始成員是 Norma、Mike 與 Lal 三姊弟妹加上表親 John Harrison；1972 年重組後，Norma 的丈夫 Martin Carthy 進了團，這張正是那個陣容錄的三張之一。",
+  "keyTracks": [
+   "God Bless the Master",
+   "Sound, Sound Your Instruments of Joy",
+   "Joy, Health, Love and Peace"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977。release-group first-release-date **1977**、**依裁定 220 回問轄下 release**，最早的一筆就是 1977／GB／Official 的 Topic 12TS346，另一筆是 2007 年的 CD，沒有以再發日期建檔的問題；條目把《Sound, Sound Your Instruments of Joy》明記為 1977；串流店面 gb 1617167277 的 releaseDate 亦記 1977（℗ 欄的 2007 是再發權利方的錄製聲明）。**三處一致。同名先行單曲：無**（同名曲是本張第 9 軌）。",
+  "notes": "**掛名有無定冠詞兩種寫法**：池中與 MB 作 `The Watersons`，串流作 `Watersons`（無 The），**照池中寫法**。｜⚠ **裁定 208 的實掃形狀**：這個家族在池中還可能以 `Lal & Mike Waterson`（**單數 Waterson**）等合掛名存在，**掃 `watersons` 掃不到**；本張的行文提到家族成員時只寫本張陣容，不要延伸。｜**Martin Carthy 在本批 b 組另有兩張自己的卡與一張合掛卡**，本張提到他時**只寫「Norma 的丈夫、1972 年進團」這個身分，不要重複他個人的生平**。｜**「最有名的家族」一類的稱號查無具名出處，不得寫入。**｜盤名含半形逗號，**行文引用時整段照抄**。"
+ },
+ {
+  "key": "desc2:Robin and Barry Dransfield|The Rout of the Blues",
+  "artist": "Robin and Barry Dransfield",
+  "album": "The Rout of the Blues",
+  "facts": [
+   {
+    "f": "release-group 93cb571b 的欄位：title「The Rout of the Blues」、artist-credit「Robin and Barry Dransfield」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1970／GB／Official（12 吋，10 軌，label-info **Trailer LER2011**）與 2001／GB／Official（CD，10 軌，Leader LERCD2011）。**最早的 release 就是 1970／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/93cb571b-cdad-4fb0-9c96-40f9decdd1c3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（Trailer LER2011，12 吋，release 16fede25）逐軌：1〈The Rout of the Blues〉2:37、2〈Scarborough Fair〉4:13、3〈English Medley〉2:53、4〈The Waters of Tyne〉2:38、5〈The Earl of Totnes〉4:08、6〈Tapestry〉2:37、7〈The Trees They Do Grow High〉**5:03**、8〈A Week Before Easter〉2:57、9〈A Fair Maid Walking All in Her Garden〉3:16、10〈Who's The Fool Now〉2:57。**10 軌、總長 33 分 19 秒——本批最短的整張之一，只有第 7 軌超過五分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=93cb571b-cdad-4fb0-9c96-40f9decdd1c3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "哥哥的條目：Robin Dransfield 是來自 Yorkshire 的 Harrogate 的英國民謠樂手，彈木吉他，常與弟弟 Barry Dransfield 以二人組形式演出與錄音。他 1960 年代開始演出，很快以帶著怪趣的 bluegrass、old-timey 聲響受到注意。**1969 年起兩兄弟已是全職的二人組，常在 Harrogate Folk Club 演出，同場的還有 Martin Carthy、Ewan MacColl 與 The Watersons。他 1970 年代錄過數張專輯，其中《The Rout of the Blues》（1970）與《Lord of All I Behold》（1971）都在 Trailer 廠牌。** 1971 年兩兄弟一起到加拿大的 Mariposa Folk Festival 演出。",
+    "src": "https://en.wikipedia.org/wiki/Robin_Dransfield"
+   },
+   {
+    "f": "弟弟的條目：Barry Dransfield（1947–2026）是英國民謠歌手、提琴手、大提琴手與吉他手，1947 年初生於 Yorkshire 西區的 Harrogate。**他青少年時期就與哥哥 Robin 一起待在一個 bluegrass／old-time 樂團裡；他一向避開電聲樂器，而且與多數提琴手不同（但與一些阿帕拉契樂手相同），他習慣把琴「架在胸前」拉，而不是夾在下巴底下。** 他的作品表把《Rout of the Blues》（1970，與 Robin Dransfield 合作）列在第一位，其次是《Lord of All I Behold》（1971）。",
+    "src": "https://en.wikipedia.org/wiki/Barry_Dransfield"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次（掛名的 `and` 與 `&` 兩種寫法都查）都回 0 筆，八個店面全數 0 筆；改走藝人目錄 lookup，找到四個相關實體：`Dransfield`（artistId 122075140）名下只有《The Fiddler's Dream》1976、`Robin Dransfield`（303938669）名下只有《Tidewave》1980、`Barry Dransfield`（165715960）名下 5 個條目（《Be Your Own Man》2007、《Barry Dransfield》1972、《Unruly》2007、《Wings of the Sphinx》2007、《Bowin' and Scrapin'》1978）、`Ben Dransfield` 則是別人——**四個目錄裡都沒有本張**。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=122075140&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 93cb571b 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/93cb571b-cdad-4fb0-9c96-40f9decdd1c3/front"
+   }
+  ],
+  "hookCandidates": [
+   "弟弟拉琴是把琴架在胸前，不夾在下巴底下",
+   "十軌三十三分鐘，只有〈The Trees They Do Grow High〉超過五分"
+  ],
+  "sound": "1970 年 Trailer LER2011 的 12 吋原盤 10 軌、總長 33 分 19 秒，是本批最短的整張之一：只有第 7 軌〈The Trees They Do Grow High〉5 分 03 秒過五分鐘，其餘全部壓在兩分半到四分半。兩兄弟來自 Yorkshire 的 Harrogate，哥哥 Robin 彈木吉他，弟弟 Barry 拉提琴、也拉大提琴與彈吉他；青少年時期他們待在同一個 bluegrass、old-time 樂團裡，那股帶著怪趣的聲響一直留著。Barry 一向避開電聲樂器，而且與多數提琴手不同——他習慣把琴架在胸前拉，不夾在下巴底下。1969 年起兩人已是全職的二人組，常在 Harrogate Folk Club 演出。這是他們在 Trailer 的第一張。",
+  "keyTracks": [
+   "The Rout of the Blues",
+   "The Waters of Tyne",
+   "The Trees They Do Grow High"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **兩種說法，取 1970。** release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／GB／Official 的 Trailer LER2011，另一筆是 2001 年的 CD，沒有以再發日期建檔的問題；哥哥的條目寫「《The Rout of the Blues》（1970）……都在 Trailer 廠牌」，弟弟條目的作品表第一列也寫「Rout of the Blues (1970)」。**⚠ 但弟弟條目的正文另有一句把本張寫成 1971 年**，與同一頁的作品表自相矛盾。依裁定 127 取有三處佐證的 1970。串流查無條目。**行文一律寫 1970。同名先行單曲：無**（同名曲是本張第 1 軌）。",
+  "notes": "**無來源狀態**：兩個鍵（掛名的 `and` 與 `&` 兩種寫法都掃過，裁定 217）、八個店面、四個相關藝人的目錄 lookup 都走完（裁定 185／173），確定沒有試聽來源。｜⚠ **掛名的連接詞是 `and` 不是 `&`**：池中與 MB 都寫 `Robin and Barry Dransfield`，**這正是裁定 217／208 點名的 &／and 分裂高危形狀，一律照池中寫法**。｜⚠ **弟弟條目提到的媒體年度榜名次與唱片估價**（把本張與《Barry Dransfield》分別寫成年度民謠專輯與最稀有民謠專輯、附上金額）**一律不得寫入行文**——那既是媒體榜單也是價格。｜**盤名帶定冠詞 The**，池中與 MB 一致，弟弟條目的作品表則省略了 The，**照卡單寫法**。｜曲名字面：第 10 軌原盤作〈Who's The Fool Now〉（The 大寫、無問號），**照原盤**。"
+ }
+]

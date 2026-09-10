@@ -1,0 +1,515 @@
+[
+ {
+  "artist": "MJ Lenderman",
+  "album": "Manning Fireworks",
+  "year": 2024,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Anti‐（catno 8013-2）",
+  "why": "MJ Lenderman 的第四張個人專輯，此前的《Boat Songs》（2022）掛 Dear Life Records，這張換到 ANTI- Records（MB 轄下三筆 release 的廠牌欄實查）。錄音在北卡 Asheville 的 Drop of Sun Studios，工程與共同製作是 Alex Farrar；Lenderman 同時是 Wednesday 的吉他手，這張的班底 The Wind 有 Xandy Chelmis（lap steel）與 Colin Miller。實掃 seed_cards.json 全 14,424 列：MJ Lenderman 池中 0 張，同一條 Asheville／Drop of Sun 線的 Wednesday 也是 0 張。池中 2024 年共 94 張，以 pop、hiphop、electronic 為主，這一路美國南方 indie rock 幾乎沒有。",
+  "risk": "掛名有 MJ Lenderman／Jake Lenderman 兩說，MB 實體名是 MJ Lenderman，queryAlias 補 Jake Lenderman。同名別碟風險低（名下只有這一張叫 Manning Fireworks）。ANTI- 的 2024 新譜在 Apple us／gb 兩個店面都上架，封面與試聽預估可直取；⚠ 三軸的冷門軸會失真（2024 新譜 Last.fm listeners 還沒長起來），留給本機人工。",
+  "mbNote": "釘 release-group 0c308741-7b98-4a36-b44e-1ba437b4e2c4。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Manning Fireworks」、artist-credit「MJ Lenderman」、first-release-date 2024-09-06、primary-type Album、secondary-types 空、轄下 3 個 release（國別 XE／US／XW；status Official）。廠牌欄實查：Anti‐。藝人 MBID：MJ Lenderman 4f52595e-652d-4894-95ea-f925234629fc（名下 32 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jake Lenderman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Waxahatchee",
+  "album": "Tigers Blood",
+  "year": 2024,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Anti‐／Epitaph（catno 7860-1）",
+  "why": "Katie Crutchfield 以 Waxahatchee 名義的第六張專輯，製作是 Brad Cook、錄音在德州 Tornillo 的 Sonic Ranch，班底含 MJ Lenderman（吉他與合聲）與 Spencer Tweedy（鼓）。這張延續前一張《Saint Cloud》（2020，同為 Brad Cook 製作）的鄉村路線。實掃 seed_cards.json 全 14,424 列：Waxahatchee 池中已有 3 張——《American Weekend》（2012）、《Ivy Tripp》（2015）、《Saint Cloud》（2020）——2020 年之後的目錄是空的，這張正好補在《Saint Cloud》旁邊。",
+  "risk": "同名別碟風險低。掛名單一寫法，無分裂。ANTI- 的 US 盤與歐洲盤並行，Apple us／gb 都查得到，封面與試聽預估可直取。⚠ 冷門軸失真（新譜），留本機人工。",
+  "mbNote": "釘 release-group f9aa9b53-2c89-4901-926e-e992f1e4d8c0。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Tigers Blood」、artist-credit「Waxahatchee」、first-release-date 2024-03-22、primary-type Album、secondary-types 空、轄下 3 個 release（國別 XW／XE；status Official）。廠牌欄實查：Anti‐、Epitaph。藝人 MBID：Waxahatchee 42321e24-42b6-4f08-b0d9-8325ee887a20（名下 44 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Tyler, The Creator",
+  "album": "CHROMAKOPIA",
+  "year": 2024,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Columbia（catno 198029264722）",
+  "why": "Tyler, The Creator 的第八張專輯，Columbia 發行，全碟由他自己以 Tyler Okonma 名義製作，客串包含 Daniel Caesar、Doechii、GloRilla、Lil Wayne、Schoolboy Q、Santigold，旁白由他母親 Bonita Smith 錄。實掃 seed_cards.json 全 14,424 列：池中已有他 5 張——《Wolf》（2013）、《Flower Boy》（2017）、《IGOR》（2019）、《Call Me If You Get Lost》（2021）、《DON'T TAP THE GLASS》（2025）——2024 這一張正好卡在《Call Me If You Get Lost》與 2025 那張之間，池中就缺這一張。",
+  "risk": "⚠ 同名 Live 版對照組存在（見 mbNote）。嘻哈卡要注意 Apple 的 collectionExplicitness：這張有 explicit 與 clean 兩版，上架時要辨淨化版（audits/cleaned-previews-hiphop.md、裁定 166）。掛名池中統一寫 Tyler, The Creator（大寫 The），與 MB artist-credit 一致。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group ae229bdd-2179-440c-bc78-acf0952914d4。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「CHROMAKOPIA」、artist-credit「Tyler, The Creator」、first-release-date 2024-10-28、primary-type Album、secondary-types 空、轄下 10 個 release（國別 US／XW；status Official）。廠牌欄實查：Columbia。刻意不釘：5f1cd85e-2b54-4389-ae52-26dac00cf7d5《CHROMAKOPIA (Live at Camp Flog Gnaw)》（2024-11-21，Album+Live，同名現場版，本張最像的假陽性）。藝人 MBID：Tyler, The Creator f6beac20-5dfe-4d1f-ae02-0b0a740aafd6（名下 85 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Mk.gee",
+  "album": "Two Star & The Dream Police",
+  "year": 2024,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "R&R Digital",
+  "why": "Michael Todd Gordon 以 Mk.gee 名義的正規專輯；MB 名下 12 個 release-group 裡，只有這一個是 primary-type=Album，其餘是 EP 與單曲（實查）。錄音與製作由 Gordon 自己與 Andrew Aged 完成，發行掛 R&R Partners／Verve Forecast。實掃 seed_cards.json 全 14,424 列：Mk.gee 池中 0 張。池中 2024 年 94 張裡，這一路以吉他為軸、混音刻意壓糊的美國另類流行沒有代表。",
+  "risk": "盤名 & 與 and 的分裂要防：MB 實體作「Two Star & The Dream Police」，串流上也有 and 的寫法，queryAlias 兩種都填（audits/pool-artist-name-splits.md 第三節記了池中六組 &／and 分裂）。掛名 Mk.gee 有 MK.gee／mk.gee 的大小寫變體。Apple us 應可命中，封面與試聽預估可直取。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group be4a083e-be93-4715-8a22-b06539ccacc4。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Two Star & The Dream Police」、artist-credit「Mk.gee」、first-release-date 2024-02-09、primary-type Album、secondary-types 空、轄下 1 個 release（國別 XW；status Official）。廠牌欄實查：R&R Digital。藝人 MBID：Mk.gee 262cf0ce-2af2-4686-a8cc-d6b33e97336d（名下 12 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Two Star and The Dream Police；MK.gee；mk.gee；Michael Gordon",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Kim Gordon",
+  "album": "The Collective",
+  "year": 2024,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Matador（catno OLE2029DA）",
+  "why": "Kim Gordon 的個人專輯，Matador 發行，製作是 Justin Raisen（他也製作了她 2019 年的《No Home Record》），這張把上一張的 trap 節拍底更推進一步。實掃 seed_cards.json 全 14,424 列：Kim Gordon 個人名下池中 0 張，但 Sonic Youth 有 10 張（《Confusion Is Sex》到《Rather Ripped》），也就是說她的人在池中、她自己的目錄不在。",
+  "risk": "同名別碟：The Collective 是很常見的盤名，撞卡與外部服務查詢都要靠掛名限定。掛名單一寫法。Matador 的 US／EU 盤並行，Apple us／gb 可命中。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group c35d3885-e1a2-4959-81ff-9c005c319b22。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「The Collective」、artist-credit「Kim Gordon」、first-release-date 2024-03-08、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XW／GB；status Official）。廠牌欄實查：Matador。藝人 MBID：Kim Gordon 19301485-ac9c-4dad-885b-cd8e8c8b4184（名下 32 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Clairo",
+  "album": "Charm",
+  "year": 2024,
+  "genres": [
+   "pop",
+   "soul"
+  ],
+  "label": "Clairo Records／Good Buddy（catno C-196922870590）",
+  "why": "Claire Cottrill 的第三張專輯，與 Leon Michels（El Michels Affair、Big Crown Records）共同製作，錄音在紐約州 Shokan 的 Allaire Studios，發行走她自己的 Clairo Records 經 Republic。這張離開了前作《Sling》（2021，Jack Antonoff 製作）的路子，改用 Michels 那條 70 年代錄音室配置。實掃 seed_cards.json 全 14,424 列：Clairo 池中只有 1 張——《Immunity》（2019）——《Sling》與這張都不在。",
+  "risk": "同名別碟：Charm 是短盤名，子字串比對容易被更長的別碟包住（裁定 162 的鏡像形狀），撞卡比對要連掛名一起。掛名單一寫法。Apple us／gb 可命中。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 6fb46378-9cb7-4693-b76d-a62f2cc09214。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Charm」、artist-credit「Clairo」、first-release-date 2024-07-12、primary-type Album、secondary-types 空、轄下 30 個 release（國別 XW／US／XE／JP；status Official）。廠牌欄實查：Clairo Records、Good Buddy、Virgin Music Group。藝人 MBID：Clairo d786f59b-1836-4ddb-8393-ab753edbe984（名下 113 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Claire Cottrill",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Nick Cave & the Bad Seeds",
+  "album": "Wild God",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "Play It Again Sam／Bad Seed Ltd（catno BS023VC）",
+  "why": "Nick Cave & the Bad Seeds 的第十八張專輯，Nick Cave 與 Warren Ellis 製作、David Fridmann 混音，錄音在法國普羅旺斯的 Miraval 與倫敦的 Soundtree，是自《Ghosteen》（2019）與《Carnage》（2021，Cave／Ellis 二人名義）之後樂團全編制回歸的一張。實掃 seed_cards.json 全 14,424 列：池中 Nick Cave 相關有 7 張，但掛在兩種寫法下——『Nick Cave and the Bad Seeds』4 張（《Tender Prey》《Let Love In》《Murder Ballads》《The Boatman's Call》）與『Nick Cave & the Bad Seeds』3 張（《From Her to Eternity》《Let Love In》《Murder Ballads》）——其中《Let Love In》與《Murder Ballads》兩張是真重複卡。2019 年之後的目錄池中全無。",
+  "risk": "⚠ 掛名分裂：audits/pool-artist-name-splits.md 第三節已裁定正規形為『Nick Cave & the Bad Seeds』，本卡照正規形寫；撞卡比對時 and／& 兩種寫法都要查（& 會被舊的正規化當標點刪掉，這一類過去抓不到）。⚠ 另有兩個同名 Single 對照組（見 mbNote）。Apple us／gb 可命中。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group cbe390d1-88b3-4ff2-8f53-b3b9d8a0e25c。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Wild God」、artist-credit「Nick Cave & the Bad Seeds」、first-release-date 2024-08-30、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XW；status Official）。廠牌欄實查：Play It Again Sam、Bad Seed Ltd。刻意不釘：3e9d0f57-200f-41eb-ac50-bb2073bb265b《Wild God》（2024-03-06，Single，同名先行單曲）、bcaf0067-bccf-4065-9f37-9b962744a151《Wild God》（2025-10-22，Single+Live，同名現場單曲）。藝人 MBID：Nick Cave & the Bad Seeds 172e1f1a-504d-4488-b053-6344ba63e6d0（名下 171 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nick Cave and the Bad Seeds；The Bad Seeds",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "English Teacher",
+  "album": "This Could Be Texas",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "Island／Nice Swan Records（catno 5885311）",
+  "why": "利茲四人組 English Teacher 的專輯，Island Records 發行；MB 名下 18 個 release-group 裡只有這一個是 primary-type=Album（實查），製作是 Marta Salogni（她也做過 Björk 與 Holly Herndon 的混音）。樂團此前只有 2022 年的 EP《Polyawkward》。實掃 seed_cards.json 全 14,424 列：English Teacher 池中 0 張。池中 2024 年 94 張裡的英國搖滾只有 Fontaines D.C.《Romance》、The Libertines、The Cure 三張，這一波利茲／南倫敦 post-punk 新團完全沒有。",
+  "risk": "⚠ 掛名是兩個常用英文單字，撞卡與外部服務查詢極易誤命中（English Teacher 會配到語言教材類條目），Apple 查詢一定要 artist ＋ album 併用。盤名單一寫法。Island 的 UK 盤為主，Apple gb 優先、us 次之。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 6a6b9cb9-92c1-45ff-b4ed-940887fc04ca。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「This Could Be Texas」、artist-credit「English Teacher」、first-release-date 2024-04-12、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XW／GB；status Official）。廠牌欄實查：Island、Nice Swan Records。藝人 MBID：English Teacher b60fd6f1-a47a-4021-b8df-83f8e8893e91（名下 18 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Magdalena Bay",
+  "album": "Imaginal Disk",
+  "year": 2024,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Mom+Pop（catno MP770）",
+  "why": "Mica Tenenbaum 與 Matthew Lewin 二人組的第二張專輯，Mom+Pop Music 發行，兩人自製自錄；封面是 Chantal Anderson 拍的、盤名取自昆蟲變態時的成蟲盤概念。這張接在《Mercurial World》（2021）之後。實掃 seed_cards.json 全 14,424 列：Magdalena Bay 池中 0 張。",
+  "risk": "同名別碟風險低。掛名單一寫法。Mom+Pop 的 US 盤為主，Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 9c710cb4-6b20-47d7-a31a-5adb064c6c6b。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Imaginal Disk」、artist-credit「Magdalena Bay」、first-release-date 2024-08-23、primary-type Album、secondary-types 空、轄下 2 個 release（國別 CA／XW；status Official）。廠牌欄實查：Mom+Pop。藝人 MBID：Magdalena Bay 68c261d5-48c8-4ea9-9466-9fc908dc79bb（名下 49 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Beth Gibbons",
+  "album": "Lives Outgrown",
+  "year": 2024,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Domino／Beat Records（catno WIGLP287X）",
+  "why": "Beth Gibbons 掛自己本名的個人專輯，Domino 發行，製作是 Gibbons、James Ford 與 Talk Talk 的鼓手 Lee Harris，錄期橫跨約十年。她此前的非 Portishead 作品是 2002 年與 Rustin Man 合掛的《Out of Season》與 2019 年的 Górecki 第三號交響曲錄音。實掃 seed_cards.json 全 14,424 列：Beth Gibbons 個人名下池中 0 張，Portishead 有 3 張（《Dummy》1994、《Portishead》1997、《Third》2008）。",
+  "risk": "掛名要與 Portishead 分開建卡，兩者在池中是不同鍵。同名別碟風險低。Domino 的 UK 盤為主，Apple gb／us 都應可命中。⚠ 冷門軸失真（新譜）。行文不得寫「首張個人專輯」——她 2002 年已有合掛作品，這個主張有爭議。",
+  "mbNote": "釘 release-group eaa72e4a-0e22-471f-bc92-97fd5d93d7d3。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Lives Outgrown」、artist-credit「Beth Gibbons」、first-release-date 2024-05-17、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XE／JP；status Official）。廠牌欄實查：Domino、Beat Records。藝人 MBID：Beth Gibbons 5adcb9d9-5ea2-428d-af46-ef626966e106（名下 13 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Blood Incantation",
+  "album": "Absolute Elsewhere",
+  "year": 2024,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Century Media（catno G0100052544008）",
+  "why": "丹佛死亡金屬團 Blood Incantation 的第三張正規專輯，Century Media 發行，錄音在柏林的 Hansa Tonstudio、工程與混音是 Arthur Rizk，客席鍵盤是 Tangerine Dream 的 Thorsten Quaeschning 與 Nicklas Sonne。全碟兩首各約二十分鐘的長曲〈The Stargate〉與〈The Message〉，把樂團 2022 年那張全合成器的《Timewave Zero》的路線併回金屬編制。實掃 seed_cards.json 全 14,424 列：Blood Incantation 池中只有 1 張——《Hidden History of the Human Race》（2019）。",
+  "risk": "同名別碟風險低。掛名單一寫法。Century Media 的 US／DE 盤並行，Apple us／gb／de 都可試。曲目只有兩軌、單軌長度約 20 分鐘，⚠ 試聽層以軌數判「是不是 EP」會誤判（裁定 141 的形狀），risk 先寫死：這張原盤就是兩軌。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 25267682-bdfc-435a-b6a7-89c266f7d0e8。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Absolute Elsewhere」、artist-credit「Blood Incantation」、first-release-date 2024-10-04、primary-type Album、secondary-types 空、轄下 6 個 release（國別 XW／DE／XE／US；status Official）。廠牌欄實查：Century Media。藝人 MBID：Blood Incantation a5f0f298-776a-4909-bc09-4fd56a680542（名下 16 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Jack White",
+  "album": "No Name",
+  "year": 2024,
+  "genres": [
+   "rock",
+   "blues"
+  ],
+  "label": "Third Man Records（catno TMR-1000）",
+  "why": "Jack White 的第六張個人專輯，Third Man Records 發行；最初是以無標籤白版黑膠在 Third Man 三家實體店隨購贈送，之後才正式上架。實掃 seed_cards.json 全 14,424 列：Jack White 個人名下池中只有 1 張——《Blunderbuss》（2012）——The White Stripes 則有 6 張（《The White Stripes》《De Stijl》《White Blood Cells》《Elephant》《Get Behind Me Satan》《Icky Thump》）。他 2014 年之後的個人目錄池中全無。",
+  "risk": "⚠ 盤名《No Name》極短且字面就是「沒有名字」，外部服務查詢與撞卡比對都容易空手或誤命中，Apple 查詢一定要 artist ＋ album 併用。另有同名近似的 Live EP 對照組（見 mbNote）。Third Man 的 US 盤為主，Apple us 優先。⚠ 冷門軸失真（新譜）。 ⚠ MB 轄下 release 含 status=Promotion 的宣傳盤，不採為背書。",
+  "mbNote": "釘 release-group 5ef2a512-3680-4661-bfea-870cb8bf6507。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「No Name」、artist-credit「Jack White」、first-release-date 2024-07-19、primary-type Album、secondary-types 空、轄下 7 個 release（國別 US／XW；status Official／Promotion）。廠牌欄實查：Third Man Records。刻意不釘：33830186-1a48-4e85-8370-324059002a8e《No Name Live》（2025-02-11，EP，同名現場 EP）。藝人 MBID：Jack White 3ae2fb37-8a23-429d-9920-bac811c4fc22（名下 87 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Arooj Aftab",
+  "album": "Night Reign",
+  "year": 2024,
+  "genres": [
+   "jazz",
+   "world"
+  ],
+  "label": "Verve（catno 602458980288）",
+  "why": "巴基斯坦裔紐約歌手 Arooj Aftab 的第四張專輯，Verve 發行；客席有 Vijay Iyer（鋼琴）、Moor Mother、Elvis Costello、Chocolate Genius，班底含貝斯手 Petros Klampanis 與豎琴 Maeve Gilchrist。這張接在《Vulture Prince》（2021）與她與 Vijay Iyer、Shahzad Ismaily 三人的《Love in Exile》（2023）之後。實掃 seed_cards.json 全 14,424 列：Arooj Aftab 池中 0 張；池中 2024 年 94 張裡的爵士有 Kamasi Washington、Nubya Garcia、Samara Joy、Nala Sinephro、Shabaka Hutchings 等，烏爾都語這一線沒有。",
+  "risk": "掛名的拉丁轉寫固定（Arooj Aftab），無分裂；曲名多為烏爾都語，跨書寫系統的比對要小心（裁定 49）。Verve 的 US 盤為主，Apple us 優先、gb 次之。⚠ 冷門軸失真（新譜）。 ⚠ MB 轄下 release 含 status=Promotion 的宣傳盤，不採為背書。",
+  "mbNote": "釘 release-group 4af815ea-5fe3-4649-a342-1e964aa3d6fd。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Night Reign」、artist-credit「Arooj Aftab」、first-release-date 2024-05-31、primary-type Album、secondary-types 空、轄下 4 個 release（國別 US／XE；status Promotion／Official）。廠牌欄實查：Verve。藝人 MBID：Arooj Aftab 12d0b276-b102-4779-ac35-6939c584d9da（名下 15 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Geese",
+  "album": "Getting Killed",
+  "year": 2025,
+  "genres": [
+   "rock"
+  ],
+  "label": "Partisan Records／Play It Again Sam（catno PTPS60CD）",
+  "why": "布魯克林四人組 Geese 的第三張專輯，Partisan Records 發行，製作是 Kenny Segal（他此前的工作多半在 billy woods 那條嘻哈線上），主唱 Cameron Winter 在 2024 年剛出過個人專輯《Heavy Metal》。這張接在《Projector》（2021）與《3D Country》（2023）之後。實掃 seed_cards.json 全 14,424 列：Geese 池中 0 張。池中 2025 年 86 張裡的美國另類搖滾只有 Big Thief、Lucy Dacus、Panda Bear 等幾張。",
+  "risk": "⚠ 掛名 Geese 是常用字（鵝），外部服務查詢與撞卡比對極易誤命中，Apple 查詢一定要 artist ＋ album 併用。另有兩個 From the Basement 現場轉播的對照組（見 mbNote）。Partisan 的 US／UK 盤並行，Apple us／gb 都可試。⚠ 冷門軸失真（新譜），三軸留本機人工。 ⚠ MB 轄下 release 有 status=Bootleg 的一筆，依裁定 43／57／65／78 不採為背書。",
+  "mbNote": "釘 release-group 3c18308c-9072-4810-b26e-0c573e46fb07。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Getting Killed」、artist-credit「Geese」、first-release-date 2025-09-26、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XW／US／XE；status Official／Bootleg）。廠牌欄實查：Partisan Records、Play It Again Sam。刻意不釘：d34f692b-cb12-4676-ab35-cbbc6cf21a46《Getting Killed: Live From The Basement》（2025-11-19，Broadcast）、ed0ff687-fe1d-44e4-8ee2-f3cf9e00e871《Geese - Getting Killed | From the Basement》（2025-11-19，Broadcast+Live）。藝人 MBID：Geese e0c97a4d-c392-41a9-a374-57af3e3eeab3（名下 29 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Wednesday",
+  "album": "Bleeds",
+  "year": 2025,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Dead Oceans（catno DOC428）",
+  "why": "北卡 Asheville 樂團 Wednesday 的第六張專輯，Dead Oceans 發行，錄音在 Asheville 的 Drop of Sun Studios、工程是 Alex Farrar，主唱 Karly Hartzman 與 lap steel 手 Xandy Chelmis 是固定核心。這張接在《Rat Saw God》（2023）之後，也是吉他手 MJ Lenderman 離團前後那一段的錄音。實掃 seed_cards.json 全 14,424 列：Wednesday 池中 0 張，同一個錄音室、同一批人的 MJ Lenderman 也是 0 張。",
+  "risk": "⚠ 掛名 Wednesday 是星期三，外部服務查詢與撞卡比對極易誤命中（池中另有多張盤名含 Wednesday 的碟），Apple 查詢一定要 artist ＋ album 併用。盤名 Bleeds 同樣是常用字。Dead Oceans 的 US 盤為主，Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 5bed2109-60ce-4c13-804a-fc04946ba7f7。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Bleeds」、artist-credit「Wednesday」、first-release-date 2025-09-19、primary-type Album、secondary-types 空、轄下 5 個 release（國別 US／XW／JP；status Official）。廠牌欄實查：Dead Oceans。藝人 MBID：Wednesday 9833b455-0da2-40b5-8e63-37816c910604（名下 20 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Clipse",
+  "album": "Let God Sort Em Out",
+  "year": 2025,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Roc Nation Distribution／Roc Nation（catno 810182964812）",
+  "why": "Pusha T 與 Malice 兄弟以 Clipse 名義回歸的專輯，Roc Nation 發行，全碟由 Pharrell Williams 製作，客串包含 Kendrick Lamar、Nas、Tyler, The Creator、John Legend、Stove God Cooks。這張距他們上一張《Til the Casket Drops》（2009）有十六年。實掃 seed_cards.json 全 14,424 列：Clipse 池中已有 2 張——《Lord Willin'》（2002）、《Hell Hath No Fury》（2006）——Pusha T 個人名下另有 3 張（《King Push - Darkest Before Dawn》《Daytona》《It's Almost Dry》）；2009 年之後的 Clipse 目錄池中全無。",
+  "risk": "⚠ 撞卡：池中有 Total Eclipse《Delta Aquarids》，子字串比對會把 clipse 配進去，去重要用完整掛名。嘻哈卡要注意 Apple 的 collectionExplicitness，這張有 explicit 與 clean 兩版，上架時要辨淨化版（裁定 166）。Roc Nation 的 US 盤為主，Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 18cdc08c-03a1-4e55-9624-b7f9dbb968f5。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Let God Sort Em Out」、artist-credit「Clipse」、first-release-date 2025-07-11、primary-type Album、secondary-types 空、轄下 15 個 release（國別 GB／XW／US；status Official／Withdrawn）。廠牌欄實查：Roc Nation Distribution、Roc Nation、Roc Nation [none]、Roc Nation Distribution [none]。藝人 MBID：Clipse e6424fa5-08d3-41c6-96f3-8549f733708c（名下 51 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Turnstile",
+  "album": "NEVER ENOUGH",
+  "year": 2025,
+  "genres": [
+   "rock"
+  ],
+  "label": "Roadrunner Records（catno 07578601422）",
+  "why": "巴爾的摩樂團 Turnstile 的第四張專輯，Roadrunner Records 發行，由樂團與 Mike Elizondo 共同製作，客席包含 Blood Orange 的 Dev Hynes、Faye Webster 與 Shabaka Hutchings。這張接在《Glow On》（2021）之後。實掃 seed_cards.json 全 14,424 列：Turnstile 池中 0 張。池中 2025 年 86 張裡的重型搖滾只有 Katatonia、Dream Theater、Deafheaven 未收，硬蕊這一線是空的。",
+  "risk": "⚠ 同名先行單曲與 2026 年的 VERSIONS 版都在 MB 上（見 mbNote），盤名完全相同或高度重疊，fix-rgmbid 很容易換錯釘位（裁定 162）。Roadrunner 的 US 盤為主，Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 58310aac-65aa-492e-83fb-ec50c58e5a1d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「NEVER ENOUGH」、artist-credit「Turnstile」、first-release-date 2025-06-06、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XE／XW／US；status Official）。廠牌欄實查：Roadrunner Records。刻意不釘：aeddf494-e368-4359-94b6-1816f704380f《NEVER ENOUGH》（2025-04-08，Single，同名先行單曲）、a83e421a-2cd8-4ca5-9942-80f30aa0ee07《NEVER ENOUGH: VERSIONS》（2026-08-28，Album，後出的改編版）。藝人 MBID：Turnstile 7b748dac-f5ce-45a7-9b95-c1d8b5b013ed（名下 24 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Hayley Williams",
+  "album": "Ego Death at a Bachelorette Party",
+  "year": 2025,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Post Atlantic（catno PA001CD）",
+  "why": "Paramore 主唱 Hayley Williams 的第三張個人專輯，與 Daniel James 共同製作，發行掛 Post Atlantic；曲目最初在 Nashville 一家唱片行以實體形式先放出，之後才上串流。她此前的個人作品是《Petals for Armor》（2020）與《Flowers for Vases / Descansos》（2021）。實掃 seed_cards.json 全 14,424 列：Hayley Williams 個人名下池中 0 張，Paramore 有 5 張（《All We Know Is Falling》《Riot!》《Brand New Eyes》《Paramore》《After Laughter》）。",
+  "risk": "⚠ 同名 Single 對照組存在（見 mbNote）。盤名很長，Apple 的 search 端點對長盤名容易落空（裁定 152），要同時跑藝人頁目錄端點（裁定 173）。掛名要與 Paramore 分開建卡。Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 15c3b397-9652-4537-a14b-7eb8489092ff。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Ego Death at a Bachelorette Party」、artist-credit「Hayley Williams」、first-release-date 2025-07-28、primary-type Album、secondary-types 空、轄下 9 個 release（國別 XW／US；status Official）。廠牌欄實查：Post Atlantic。刻意不釘：2511e534-1cfe-494f-b8ea-20a995700046《Ego Death at a Bachelorette Party》（2025-08-01，Single，同名單曲）。藝人 MBID：Hayley Williams b4b5b5a7-feff-47d0-9458-83d0d135a692（名下 54 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Dijon",
+  "album": "Baby",
+  "year": 2025,
+  "genres": [
+   "soul",
+   "rock"
+  ],
+  "label": "Warner Records（catno 093624827405）",
+  "why": "Dijon Duenas 的第二張專輯，Warner Records 發行（MB 轄下 release 的廠牌欄實查），與 Mk.gee（Michael Gordon）、Andrew Sarlo 一路合作的班底延續自《Absolutely》（2021），錄音以現場合奏一次錄下的作法為主。實掃 seed_cards.json 全 14,424 列：Dijon 池中 0 張。這張與同批提的 Mk.gee《Two Star & The Dream Police》是同一個洛杉磯錄音圈子的兩面。",
+  "risk": "⚠ 盤名《Baby》是最常見的英文字之一，掛名 Dijon 又同時是芥末與法國城市名，外部服務查詢與撞卡比對都極易誤命中，Apple 查詢一定要 artist ＋ album 併用並核對發行年。Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 1a1e8337-cd16-40e6-b04d-e1b5801b4c89。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Baby」、artist-credit「Dijon」、first-release-date 2025-08-15、primary-type Album、secondary-types 空、轄下 3 個 release（國別 US／XW；status Official）。廠牌欄實查：Warner Records。藝人 MBID：Dijon cceea21d-f3ec-4586-be7a-d2e939c15c78（名下 24 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dijon Duenas",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Lorde",
+  "album": "Virgin",
+  "year": 2025,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Universal Music New Zealand／Crush Music（catno 00602478121234）",
+  "why": "Ella Yelich-O'Connor 以 Lorde 名義的第四張專輯，發行掛 Universal Music New Zealand 與 Crush Music（MB 轄下 13 個 release 的廠牌欄實查），主要合作者是 Jim-E Stack，另有 Dan Nigro、Fabiana Palladino 參與；封面是骨盆 X 光片。這張接在《Solar Power》（2021）之後。實掃 seed_cards.json 全 14,424 列：Lorde 池中已有 3 張——《Pure Heroine》（2013）、《Melodrama》（2017）、《Solar Power》（2021）——池中就缺這一張。",
+  "risk": "同名別碟：Virgin 同時是 Virgin Records 的廠牌名，Apple 與 MB 的字串查詢容易被廠牌欄污染，一定要 artist ＋ album 併用。掛名單一寫法。Apple us／nz／gb 都可試。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group a3734ef9-80a8-40e0-8718-9eb39860ff4a。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Virgin」、artist-credit「Lorde」、first-release-date 2025-06-27、primary-type Album、secondary-types 空、轄下 13 個 release（國別 AU／XE／JP／US／AR／TW／XW；status Official）。廠牌欄實查：Universal Music New Zealand、Crush Music、環球音樂。藝人 MBID：Lorde 8e494408-8620-4c6a-82c2-c2ca4a1e4f12（名下 60 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ella Yelich-O'Connor",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Blood Orange",
+  "album": "Essex Honey",
+  "year": 2025,
+  "genres": [
+   "soul",
+   "pop"
+  ],
+  "label": "Domino／RCA（catno 19802944962）",
+  "why": "Dev Hynes 以 Blood Orange 名義的第五張專輯，Domino 與 RCA 共同發行（MB 廠牌欄實查）；客席包含 Caroline Polachek、Lorde、Mustafa、Daniel Caesar 與 Tariq Al-Sabir，盤名指向他成長的英國 Essex。這張接在《Negro Swan》（2018）與《Angel's Pulse》（2019）之後。實掃 seed_cards.json 全 14,424 列：Blood Orange 池中已有 2 張——《Cupid Deluxe》（2013）、《Freetown Sound》（2016）——2016 年之後的目錄池中全無。",
+  "risk": "⚠ MB 上另有一筆 2026 年的《Essex_Honey.mp3》單曲（見 mbNote），盤名高度重疊。掛名 Blood Orange 同時是血橙，外部服務查詢要 artist ＋ album 併用。Apple us／gb 都可試。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 778e2320-736e-4634-ae65-354d408c40e9。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Essex Honey」、artist-credit「Blood Orange」、first-release-date 2025-08-29、primary-type Album、secondary-types 空、轄下 3 個 release（國別 XE／US／XW；status Official）。廠牌欄實查：Domino、RCA、Sony Music。刻意不釘：8f630e6c-ce73-4764-88cb-7f9219a754ea《Essex_Honey.mp3》（2026-05-29，Single，盤名高度重疊的後出單曲）。藝人 MBID：Blood Orange 3d254f1e-7d18-431b-baeb-68e57695dfdb（名下 40 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dev Hynes",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Alex G",
+  "album": "Headlights",
+  "year": 2025,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "RCA／[no label]（catno 19802917132）",
+  "why": "Alex Giannascoli 的第十張專輯，也是他從 Domino 換到 RCA 之後的作品，製作是 Jacob Portrait 與 Giannascoli 自己。這張接在《God Save the Animals》（2022）與他為電影《Wolves》寫的配樂之後。實掃 seed_cards.json 全 14,424 列：Alex G 池中 0 張——這位從 Bandcamp 自壓時期一路做到大廠的費城歌手，整條目錄在池中都不存在。",
+  "risk": "⚠ 掛名有三種寫法：Alex G、(Sandy) Alex G、Alex Giannascoli，MB 實體主名是 Alex G，三種都要進 queryAlias 並在撞卡比對時一起查。盤名 Headlights 是常用字。RCA 的 US 盤為主，Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 2b86bcf2-220b-44d3-9ba1-75e1983e0684。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Headlights」、artist-credit「Alex G」、first-release-date 2025-07-18、primary-type Album、secondary-types 空、轄下 5 個 release（國別 US／XW；status Official）。廠牌欄實查：RCA、[no label]。藝人 MBID：Alex G 7df4c4de-3181-4a69-bd36-9d663970cebb（名下 71 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "(Sandy) Alex G；Alex Giannascoli；Sandy Alex G",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Stereolab",
+  "album": "Instant Holograms on Metal Film",
+  "year": 2025,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Duophonic Ultra High Frequency Disks／Warp Records（catno D-UHF-D46）",
+  "why": "Stereolab 睽違十五年的專輯，Duophonic UHF Disks 與 Warp 共同發行，Tim Gane 與 Lætitia Sadier 的核心編制加上 Cooper Crain 混音。樂團上一張正規專輯是《Not Music》（2010）。實掃 seed_cards.json 全 14,424 列：Stereolab 池中已有 3 張——《Transient Random-Noise Bursts with Announcements》（1993）、《Emperor Tomato Ketchup》（1996）、《Dots and Loops》（1997）——1997 年之後的目錄池中全無。",
+  "risk": "盤名長且獨特，撞卡風險低。掛名單一寫法。Duophonic 的 UK 盤與 Warp 的國際盤並行，Apple gb／us 都可試。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 446fc616-c4db-46ce-8d4c-e4efc019b3f8。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Instant Holograms on Metal Film」、artist-credit「Stereolab」、first-release-date 2025-05-23、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XE／XW／JP；status Official）。廠牌欄實查：Duophonic Ultra High Frequency Disks、Warp Records、Warp、Beat Records。藝人 MBID：Stereolab f1df0431-9250-4ec8-95d8-f19ce7cf7fb6（名下 119 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Deafheaven",
+  "album": "Lonely People With Power",
+  "year": 2025,
+  "genres": [
+   "rock"
+  ],
+  "label": "Roadrunner Records／Roadrunner Records [none]（catno 075678601361）",
+  "why": "舊金山樂團 Deafheaven 的第六張專輯，Roadrunner Records 發行，製作回頭找回《Sunbather》（2013）與《New Bermuda》（2015）的 Jack Shirley，把 2021 年《Infinite Granite》那張幾乎全清腔的路線收回到黑金屬編制。實掃 seed_cards.json 全 14,424 列：Deafheaven 池中已有 2 張——《Sunbather》（2013）、《New Bermuda》（2015）——2015 年之後的目錄池中全無。",
+  "risk": "同名別碟風險低。掛名單一寫法。Roadrunner 的 US 盤為主，Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group f88055a1-f78c-4344-8765-e4ec22eb8bf8。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Lonely People With Power」、artist-credit「Deafheaven」、first-release-date 2025-03-25、primary-type Album、secondary-types 空、轄下 11 個 release（國別 CA／US／XW／XE；status Official）。廠牌欄實查：Roadrunner Records、Roadrunner Records [none]。藝人 MBID：Deafheaven f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302（名下 28 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ethel Cain",
+  "album": "Willoughby Tucker, I’ll Always Love You",
+  "year": 2025,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Daughters of Cain Records（catno DOCCS02）",
+  "why": "Hayden Anhedönia 以 Ethel Cain 名義的專輯，自家廠牌 Daughters of Cain 發行，製作由她自己完成；故事線設定在《Preacher's Daughter》（2022）之前，同年她另發過實驗性質的《Perverts》。實掃 seed_cards.json 全 14,424 列：Ethel Cain 池中 0 張。",
+  "risk": "⚠ 盤名用的是彎撇號 I’ll（U+2019），池中與外部服務多有直撇號 I'll 的寫法，兩種都要進 queryAlias（audits/pool-artist-name-splits.md 第二節記了池中十四組彎／直撇號分裂）。另有同名的 demos 版對照組（見 mbNote）。Apple us 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group b812527c-30ac-4f38-82ce-85b971727248。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Willoughby Tucker, I’ll Always Love You」、artist-credit「Ethel Cain」、first-release-date 2025-08-08、primary-type Album、secondary-types 空、轄下 12 個 release（國別 US／XE／XW；status Official）。廠牌欄實查：Daughters of Cain Records。刻意不釘：1a3601c0-79ab-4b0c-90cd-840f32deb91d《willoughby tucker, i’ll always love you (demos)》（2025-12-29，Album+Demo，同名小寫的 demo 版）。藝人 MBID：Ethel Cain 677e31f1-4035-463c-8ca4-41175440c919（名下 45 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Willoughby Tucker, I'll Always Love You；Hayden Anhedönia",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "ROSALÍA",
+  "album": "LUX",
+  "year": 2025,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "Columbia／Sony Music（catno 19802990922）",
+  "why": "ROSALÍA 的第四張專輯，Columbia 發行，與 London Symphony Orchestra 合錄，製作班底含 Noah Goldstein、Dylan Wiggins 與她自己，歌詞跨十三種語言，客席有 Björk、Yves Tumor 與 Estrella Morente。這張接在《Motomami》（2022）之後。實掃 seed_cards.json 全 14,424 列：ROSALÍA 池中已有 3 張——《Los ángeles》（2017）、《El Mal Querer》（2018）、《Motomami》（2022）——池中就缺這一張。",
+  "risk": "⚠ 掛名含重音符號（ROSALÍA），池中已用全大寫帶重音的寫法，去重比對要與 Rosalia／Rosalía 三種一起查。盤名 LUX 只有三個字母，子字串比對會被大量別碟包住（裁定 162 的鏡像形狀）。Apple es／us／gb 都要試。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「LUX」、artist-credit「ROSALÍA」、first-release-date 2025-11-07、primary-type Album、secondary-types 空、轄下 6 個 release（國別 XE／US／XW；status Official）。廠牌欄實查：Columbia、Sony Music。藝人 MBID：ROSALÍA 25f3abd9-63b5-471a-bd25-feb9672dfa11（名下 55 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rosalia；Rosalía",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

@@ -245,8 +245,16 @@
 
 某些曲風的核心經典不是正規專輯（電子樂的 12 吋單曲、EP 與 DJ mix 文化）。對這些曲風開放非 Album 收錄，但採**白名單＋精選制**，不是通則：
 
-- **白名單目前有兩項**：
+- **白名單目前有三項**：
   - `electronic`（2026-07-22 店主核定）——12 吋單曲、EP 與 DJ mix 文化。
+  - `hardcore-7inch`（2026-09-08 店主核定）——1980–90 年代 hardcore／punk 的
+    **7 吋 EP、split 與 demo 卡帶**：這條線的核心實體有一半不是長篇，
+    Revelation、Blackout!、Wreck-Age、Victory、Bridge Nine 這些廠牌的目錄
+    大量以 7 吋為單位發行，樂團往往到解散都沒出過 LP。
+    **c-120 實測：不開這個白名單會讓 99 個 release-group、33 支團收不進來，
+    其中 9 支團一張都收不到**（Chain of Strength、Inside Out、Raw Deal、Krakdown、
+    Outburst、The Icemen、Life's Blood、Straight Ahead、Side by Side）。
+    這與 `electronic` 是同一個形狀：**MB 的建檔慣例與該樂種的發行實況不符**。
   - `asia-mini-album`（2026-08-23 增列）——日本的**ミニアルバム**與韓國的**正規 EP**：
     MusicBrainz 依曲數把它們標成 `EP`，但在母國市場它們是該藝人被當成專輯發行、
     宣傳與評論的作品（例：YOASOBI《THE BOOK》、カヒミ・カリィ《MY FIRST KARIE》、
@@ -260,7 +268,7 @@
   ```json
   "identity": {
     "releaseType": "Single",
-    "genreException": "electronic",   // 或 "asia-mini-album"
+    "genreException": "electronic",   // 或 "hardcore-7inch"、"asia-mini-album"
     "exceptionReason": "Detroit techno 起源核心 12 吋，無正規專輯版本",
     "exceptionEvidenceUrls": ["https://...", "https://..."],
     "aliasesChecked": true,

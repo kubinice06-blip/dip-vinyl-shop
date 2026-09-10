@@ -1,0 +1,298 @@
+[
+ {
+  "artist": "柴田聡子",
+  "album": "Your Favorite Things",
+  "year": 2024,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "AWDR/LR2（catno DDCB-12121）",
+  "why": "柴田聡子 2024 年 2 月的專輯，發行掛 AWDR/LR2；她從 2012 年自壓時期一路做到這張，中間的《がんばれ！メロディー》（2018）與《ぼちぼち銀河》（2021）都在同一條線上。這張的錄音班底以岡田拓郎為中心。實掃 seed_cards.json 全 14,424 列（含日文原文、羅馬拼音兩種寫法）：柴田聡子 池中 0 張。池中 2024 年 94 張裡的日本盤只有 Cornelius《Ethereal Essence》與 Cicada《回返》兩張，日本本地樂評圈這一年最常被列的名字一個都沒有。",
+  "risk": "⚠ 跨書寫系統：掛名要同時查『柴田聡子』與『Shibata Satoko／Satoko Shibata』（裁定 49），池中的字串去重看不見這種分裂。盤名是英文，反而不會有繁簡或假名問題。依 2026-08-11 東亞藝人命名裁定，掛名照原文漢字寫，不羅馬化。店面 jp 優先、us 次之。⚠ 冷門軸失真（新譜 Last.fm listeners 還沒長起來），三軸留本機人工。",
+  "mbNote": "釘 release-group f717cc8f-34a3-4edf-8f54-5d1e7b80f29d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Your Favorite Things」、artist-credit「柴田聡子」、first-release-date 2024-02-28、primary-type Album、secondary-types 空、轄下 2 個 release（國別 JP／XW；status Official）。廠牌欄實查：AWDR/LR2。藝人 MBID：柴田聡子 b9c0edaa-37ff-4115-847d-14ff604fa952（名下 19 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shibata Satoko；Satoko Shibata",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "ZAZEN BOYS",
+  "album": "らんど",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "Matsuri Studio（catno PEJF-9056~7）",
+  "why": "ZAZEN BOYS 睽違十二年的專輯（前作《すとーりーず》是 2012 年），向井秀徳自己的 Matsuri Studio 既是錄音室也是發行廠牌（catno PECF-3287），這張也是貝斯手換成 MIYA 之後的正規作。實掃 seed_cards.json 全 14,424 列：ZAZEN BOYS 池中只有 1 張——《ZAZEN BOYS III》（2006）；向井秀徳的前團 NUMBER GIRL 則有 3 張（《School Girl Distortional Addict》《Sappukei》《NUM-HEAVYMETALLIC》）。這張補在池中那條 1999–2006 的空缺之後。",
+  "risk": "⚠ 盤名『らんど』是全平假名，Apple 與 CAA 的字串比對容易落空，queryAlias 要補羅馬字 rando／LAND。掛名 ZAZEN BOYS 是全大寫拉丁字，與池中既有卡一致、無分裂。店面 jp 優先。⚠ 冷門軸失真（新譜）。 ⚠ MB 轄下 release 含 status=Pseudo-Release 的虛擬條目（非實體發行），不採為背書。",
+  "mbNote": "釘 release-group 513452fd-ff13-4410-9611-fa9e02ac849d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「らんど」、artist-credit「ZAZEN BOYS」、first-release-date 2024-01-24、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XW／JP；status Official／Pseudo-Release）。廠牌欄實查：Matsuri Studio。藝人 MBID：ZAZEN BOYS 3d2cd44b-9e77-4249-9d37-d8028e756693（名下 24 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "rando；LAND；ざぜんぼーいず",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "米津玄師",
+  "album": "LOST CORNER",
+  "year": 2024,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Sony Music Labels Inc.／Milan（catno SEXX02686B00Z）",
+  "why": "米津玄師 2024 年的原創專輯，發行掛 Sony Music Labels Inc.（MB 轄下 10 個 release 的廠牌欄實查：日本盤 SECL-3110～3118 共六筆、歐洲盤掛 Milan、韓國盤掛 Sony Music），收錄他為《劇場版 呪術廻戦》《シン・ウルトラマン》等作品寫的曲子與〈KICK BACK〉。這張接在《STRAY SHEEP》（2020）之後。實掃 seed_cards.json 全 14,424 列（漢字與羅馬拼音兩種寫法都查）：米津玄師 池中只有 1 張——《BOOTLEG》（2017）——2020 年之後的目錄池中全無。",
+  "risk": "⚠ 跨書寫系統：掛名要同時查『米津玄師』與『Kenshi Yonezu／Yonezu Kenshi』，另有他早期的 ハチ 名義（不同實體，不要混）。依 2026-08-11 裁定掛名照漢字寫。日本盤有初回限定盤多種形態，⚠ 版本很亂，釘的是原始 release-group。店面 jp 優先。⚠ 冷門軸失真（新譜）。 ⚠ MB 轄下 release 含 status=Pseudo-Release 的虛擬條目（非實體發行），不採為背書。",
+  "mbNote": "釘 release-group 3d764b39-b548-4157-9129-5770d4b5ed40。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「LOST CORNER」、artist-credit「米津玄師」、first-release-date 2024-08-08、primary-type Album、secondary-types 空、轄下 10 個 release（國別 XW／JP／XE／KR；status Official／Pseudo-Release）。廠牌欄實查：Sony Music Labels Inc.、Milan、Sony Music。藝人 MBID：米津玄師 09d4a85c-4916-4b4e-bc96-c4cfcf371046（名下 39 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kenshi Yonezu；Yonezu Kenshi",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "折坂悠太",
+  "album": "呪文",
+  "year": 2024,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "ORISAKAYUTA（catno ORSK-020）",
+  "why": "折坂悠太 2024 年 6 月的專輯，發行掛他自己的 ORISAKAYUTA（catno ORSK-020／021），接在《心理》（2021）之後；他的合奏班底『重奏』橫跨爵士與傳統歌謡的演奏者。實掃 seed_cards.json 全 14,424 列（漢字與羅馬拼音兩種寫法都查）：折坂悠太 池中 0 張。池中的日本創作歌手線集中在 1970 年代（はっぴいえんど／Happy End 一脈）與 2010 年代之前，2020 年代這一批完全沒有。",
+  "risk": "⚠ 跨書寫系統：掛名要同時查『折坂悠太』與『Yuta Orisaka／Orisaka Yuta』。盤名『呪文』只有兩個漢字，子字串比對容易被更長的別碟包住（裁定 162 的鏡像形狀）。依 2026-08-11 裁定掛名照漢字寫。店面 jp 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group ae1c8d2c-dc47-4963-81fe-7067d50fc799。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「呪文」、artist-credit「折坂悠太」、first-release-date 2024-06-26、primary-type Album、secondary-types 空、轄下 3 個 release（國別 JP／XW；status Official）。廠牌欄實查：ORISAKAYUTA。藝人 MBID：折坂悠太 b9c7b7f8-653c-42fb-b754-f212bb469438（名下 13 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuta Orisaka；Orisaka Yuta；Jumon",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "단편선 순간들",
+  "album": "음악만세",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "Mirrorball Music",
+  "why": "단편선（本名 김선기）帶的樂團 단편선 순간들 2024 年 9 月由 Mirrorball Music 發行的專輯，是第 22 屆한국대중음악상（韓國大眾音樂獎）올해의 음반與최우수 모던록 음반兩項的得獎作。單團此前的目錄以自主發行為主。實掃 seed_cards.json 全 14,424 列（諺文、羅馬拼音、英文別名三種寫法都查）：단편선 순간들 池中 0 張；池中的韓國卡集中在 K-pop 與 HYUKOH，韓國樂評圈這一線一張都沒有。",
+  "risk": "⚠ 跨書寫系統：諺文掛名在 Apple 與 CAA 的命中率通常低於羅馬轉寫，queryAlias 要填 Danpyunsun and the Sailors 等轉寫（裁定 25：alias 填外部服務認得的字串）。依 2026-08-11 裁定，韓文諺文名維持諺文，不改成 Danpyunsun。店面 kr 優先，⚠ 自動配對在韓國獨立盤上經常全滅，可能要走 collectionId 直查。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group b8d54db0-5918-456b-922a-b53d469e118c。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「음악만세」、artist-credit「단편선 순간들」、first-release-date 2024-09-10、primary-type Album、secondary-types 空、轄下 2 個 release（國別 XW／KR；status Official）。廠牌欄實查：Mirrorball Music。藝人 MBID：단편선 순간들 e4817d35-f071-4292-abbb-2705bb70fd85（名下 1 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Danpyunsun and the Sailors；Danpyunsun Moments；Music Manse",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "소음발광",
+  "album": "불과 빛",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "（MB release 未填廠牌）",
+  "why": "首爾三人組 소음발광 2024 年 10 月的專輯，是第 22 屆한국대중음악상 최우수 록 음반的得獎作。樂團從弘大場景的自主發行起家。實掃 seed_cards.json 全 14,424 列（諺文、羅馬拼音、英文別名三種寫法都查）：소음발광 池中 0 張。",
+  "risk": "⚠ 跨書寫系統：諺文掛名要補羅馬轉寫進 queryAlias（Soundgwang／Noise Glow 等寫法都有人用，以 MB 實體與樂團官方為準）。依 2026-08-11 裁定諺文名維持諺文。店面 kr 優先，⚠ 韓國獨立盤自動配對常全滅。⚠ 冷門軸失真（新譜）。 ⚠ MB 轄下 release 含 status=Pseudo-Release 的虛擬條目（非實體發行），不採為背書。",
+  "mbNote": "釘 release-group faec327b-b06d-44eb-9098-a20c232c53c5。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「불과 빛」、artist-credit「소음발광」、first-release-date 2024-10-07、primary-type Album、secondary-types 空、轄下 2 個 release（國別 KR／XW；status Official／Pseudo-Release）。廠牌欄實查：。藝人 MBID：소음발광 0a3f66d1-97cd-4dd4-9e76-6988cac797a5（名下 3 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Soeumbalgwang；Noise Glow",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "李竺芯",
+  "album": "Suí 水",
+  "year": 2024,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "（MB release 未填廠牌）",
+  "why": "李竺芯 2024 年底的台語專輯，發行方是果核音樂玫瑰森林農場，第 36 屆金曲獎年度專輯獎與最佳台語專輯獎都由這張拿下。實掃 seed_cards.json 全 14,424 列：李竺芯 池中 0 張；池中的台語線集中在伍佰 & China Blue（6 張）、林生祥（4 張）、滅火器（3 張）這幾位，2020 年代的台語新譜一張都沒有。",
+  "risk": "⚠ 盤名《Suí 水》混了台羅拼音與漢字，Apple 與 MB 的字串比對容易只命中其中一半，queryAlias 兩種寫法都要填。掛名是三個漢字，一律用繁體（chk-prop 的 NFKC 正規化摺不掉簡繁，工具不會幫忙抓）。店面 tw 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 14d8c860-cf27-412e-97ac-4cd6ea84a91d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Suí 水」、artist-credit「李竺芯」、first-release-date 2024-12-30、primary-type Album、secondary-types 空、轄下 1 個 release（國別 TW；status Official）。廠牌欄實查：。藝人 MBID：李竺芯 aa094838-40bd-4e51-a424-f35619480e54（名下 1 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Suí；水；Sui Water；Li Chu-Hsin",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "呂士軒",
+  "album": "好聲豪氣",
+  "year": 2024,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "任意門娛樂股份有限公司",
+  "why": "呂士軒 2024 年底的專輯，發行方是任意門娛樂，第 36 屆金曲獎最佳華語專輯獎由這張拿下。他此前的目錄從 國蛋 GorDoN 那一代的台北嘻哈場景一路過來。實掃 seed_cards.json 全 14,424 列：呂士軒 池中 0 張；池中的台灣嘻哈只有 頑童MJ116（3 張）與 大支（1 張，掛在『大支 Dwagie』的併寫形下）。",
+  "risk": "掛名四個漢字，一律用繁體。盤名《好聲豪氣》是台語諧音，Apple 的中文搜尋容易斷詞錯誤，queryAlias 要補拼音。嘻哈卡要注意 Apple 的 collectionExplicitness（裁定 166）。店面 tw 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 5ef91014-52b8-42c8-833a-59a09157ec23。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「好聲豪氣」、artist-credit「呂士軒」、first-release-date 2024-12-20、primary-type Album、secondary-types 空、轄下 1 個 release（國別 XW；status Official）。廠牌欄實查：任意門娛樂股份有限公司。藝人 MBID：呂士軒 01b3b6f8-02ad-4872-b4a0-3fbd16f1f7aa（名下 3 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Trout Fresh；Hao Sheng Hao Qi",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "星野源",
+  "album": "Gen",
+  "year": 2025,
+  "genres": [
+   "pop",
+   "soul"
+  ],
+  "label": "SPEEDSTAR（catno VICL-66033）",
+  "why": "星野源 2025 年 5 月的專輯，Speedstar Records 發行，是他自《POP VIRUS》（2018）之後隔了近七年的原創專輯。實掃 seed_cards.json 全 14,424 列（漢字與羅馬拼音兩種寫法都查）：星野源 池中只有 1 張——《POP VIRUS》（2018）。",
+  "risk": "⚠ 盤名《Gen》只有三個字母，且與掛名的漢字讀音同字，Apple 與 MB 的字串比對極易誤命中，一定要 artist ＋ album 併用。掛名要同時查『星野源』與『Gen Hoshino／Hoshino Gen』。依 2026-08-11 裁定掛名照漢字寫。日本盤有初回限定盤多形態，釘的是原始 release-group。店面 jp 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 30357773-d98d-4d0d-b3dd-0e74339a9b90。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Gen」、artist-credit「星野源」、first-release-date 2025-05-14、primary-type Album、secondary-types 空、轄下 3 個 release（國別 JP；status Official）。廠牌欄實查：SPEEDSTAR。藝人 MBID：星野源 2c6c53ea-09d4-4d98-b174-c9aa83d4fecf（名下 36 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gen Hoshino；Hoshino Gen",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "藤井風",
+  "album": "Prema",
+  "year": 2025,
+  "genres": [
+   "pop",
+   "soul"
+  ],
+  "label": "Republic Records／HEHN RECORDS（catno 1000186061）",
+  "why": "藤井風 2025 年 9 月的專輯，發行掛 HEHN RECORDS／Republic Records／UNIVERSAL SIGMA（MB 轄下 12 個 release 的廠牌欄實查），是他繼《HELP EVER HURT NEVER》（2020）與《LOVE ALL SERVE ALL》（2022）之後的第三張，也是他把發行重心移到國際市場後的全長作。實掃 seed_cards.json 全 14,424 列（漢字與羅馬拼音兩種寫法都查）：藤井風 池中只有 1 張——《HELP EVER HURT NEVER》（2020）。",
+  "risk": "⚠ MB 的 artist-credit 是羅馬字『Fujii Kaze』，但依 2026-08-11 裁定卡片掛名寫漢字『藤井風』（與池中既有那張一致），羅馬字進 queryAlias。⚠ MB 上另有一筆《Pre: Prema》的 EP+Compilation 對照組（見 mbNote）。店面 jp ＋ us 都要試。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 937eacf6-5bf6-416b-891b-05fd9f8ddd45。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Prema」、artist-credit「Fujii Kaze」、first-release-date 2025-09-05、primary-type Album、secondary-types 空、轄下 12 個 release（國別 US／XW／GB／JP；status Official）。廠牌欄實查：Republic Records、HEHN RECORDS、UNIVERSAL SIGMA、Polydor。刻意不釘：cda0abf8-01fb-43c1-8b7c-1d6bdecb74fb《Pre: Prema》（2025-09-05，EP+Compilation，同日發的先行合輯）。藝人 MBID：Fujii Kaze c3a4aeca-8f02-4d22-b1ff-693434ab09a8（名下 36 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fujii Kaze；Kaze Fujii",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "青葉市子",
+  "album": "Luminescent Creatures",
+  "year": 2025,
+  "genres": [
+   "folk",
+   "classical"
+  ],
+  "label": "Psychic Hotline／hermine（catno HERM003CD）",
+  "why": "青葉市子 2025 年 2 月的專輯，自家廠牌 hermine 發行、北美一側由 Psychic Hotline 代理（MB 轄下 8 個 release 的廠牌欄實查），全球同步上架，編曲與弦樂配置延續《アダンの風》（2020）那套以八重山群島為題的世界觀，錄音包含在島上採到的環境音。實掃 seed_cards.json 全 14,424 列（漢字與羅馬拼音兩種寫法都查）：青葉市子 池中 0 張——這位從 2010 年代初就在錄音的日本創作歌手整條目錄都不在池中。",
+  "risk": "⚠ 跨書寫系統：掛名要同時查『青葉市子』與『Ichiko Aoba／Aoba Ichiko』；注意池中已有 Orchestra Baobab 三張，子字串 Aoba 會誤命中。依 2026-08-11 裁定掛名照漢字寫。店面 jp ＋ us／gb 都要試（這張是全球同步發行）。⚠ 冷門軸失真（新譜）。 ⚠ MB 轄下 release 含 status=Pseudo-Release 的虛擬條目（非實體發行），不採為背書。",
+  "mbNote": "釘 release-group d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Luminescent Creatures」、artist-credit「青葉市子」、first-release-date 2025-02-28、primary-type Album、secondary-types 空、轄下 8 個 release（國別 US／XW／JP；status Official／Pseudo-Release）。廠牌欄實查：Psychic Hotline、hermine。藝人 MBID：青葉市子 fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705（名下 63 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ichiko Aoba；Aoba Ichiko",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "石橋英子",
+  "album": "Antigone",
+  "year": 2025,
+  "genres": [
+   "jazz",
+   "rock"
+  ],
+  "label": "Drag City（catno DC944）",
+  "why": "石橋英子 2025 年 3 月由芝加哥廠牌 Drag City 發行的專輯，接在她為濱口竜介《悪は存在しない》（2023）寫的配樂與《GIFT》現場企畫之後；她長年的合作者包含 Jim O'Rourke 與 山本達久。實掃 seed_cards.json 全 14,424 列（漢字與羅馬拼音兩種寫法都查）：石橋英子 池中 0 張。",
+  "risk": "⚠ MB 的 artist-credit 是羅馬字『Eiko Ishibashi』，用漢字『石橋英子』查 MB 會落空——這一張是本批唯一一筆要靠羅馬字才查得到 MB 實體的日本卡；依 2026-08-11 裁定卡片掛名仍寫漢字，羅馬字進 queryAlias。盤名 Antigone 是常見的古希臘劇名，同名別碟極多，撞卡比對要連掛名一起。Drag City 的 US 盤為主，店面 us 優先、jp 次之。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Antigone」、artist-credit「Eiko Ishibashi」、first-release-date 2025-03-28、primary-type Album、secondary-types 空、轄下 2 個 release（國別 XW／US；status Official）。廠牌欄實查：Drag City。藝人 MBID：Eiko Ishibashi 7a505472-ef0a-4a38-86cc-15e3f2a4261c（名下 58 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Eiko Ishibashi；Ishibashi Eiko",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "추다혜차지스",
+  "album": "소수민족",
+  "year": 2025,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "POCLANOS",
+  "why": "추다혜（前 씽씽 成員）帶的 추다혜차지스 2025 年 6 月由 POCLANOS 發行的專輯，是第 23 屆한국대중음악상 올해의 음반的得獎作；樂團的底是韓國巫俗歌謡（무가）與放克節奏組的接合。實掃 seed_cards.json 全 14,424 列（諺文、羅馬拼音、英文別名三種寫法都查）：추다혜차지스 池中 0 張，前身 씽씽 也是 0 張。",
+  "risk": "⚠ 跨書寫系統：諺文掛名在 Apple 的命中率低，queryAlias 要填 Chudahye Chagis 等轉寫。依 2026-08-11 裁定諺文名維持諺文。店面 kr 優先，⚠ 韓國獨立盤自動配對常全滅，可能要走 collectionId 直查。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 1b58fd0e-1856-4ccc-9e6b-2e7aed0e0b1e。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「소수민족」、artist-credit「추다혜차지스」、first-release-date 2025-06-13、primary-type Album、secondary-types 空、轄下 1 個 release（國別 XW；status Official）。廠牌欄實查：POCLANOS。藝人 MBID：추다혜차지스 76109ff2-a787-404d-8583-a218b1950704（名下 2 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Chudahye Chagis；Chu Da Hye Chagis；Minority",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "이찬혁",
+  "album": "EROS",
+  "year": 2025,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "YG Entertainment／YG PLUS",
+  "why": "AKMU（악동뮤지션）的 이찬혁 2025 年 7 月由 YG PLUS 發行的個人專輯，接在《ERROR》（2022）之後，同名的〈위험한 사랑〉在第 23 屆한국대중음악상拿下올해의 노래。實掃 seed_cards.json 全 14,424 列（諺文、羅馬拼音、英文別名三種寫法都查）：이찬혁 個人名下池中 0 張，AKMU／악동뮤지션 也是 0 張。",
+  "risk": "⚠ 跨書寫系統：掛名要同時查『이찬혁』『Lee Chan-hyuk』『CHANHYUK』。依 2026-08-11 裁定諺文名維持諺文。盤名 EROS 只有四個字母，同名別碟多，撞卡比對要連掛名一起。店面 kr 優先、us 次之。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group 13b4c618-8200-4c61-a4b5-7f0a4959e627。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「EROS」、artist-credit「이찬혁」、first-release-date 2025-07-14、primary-type Album、secondary-types 空、轄下 2 個 release（國別 XW；status Official）。廠牌欄實查：YG Entertainment、YG PLUS。藝人 MBID：이찬혁 810a4fc2-e368-4212-8494-a3934be6973d（名下 3 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lee Chanhyuk；Lee Chan-hyuk；CHANHYUK；AKMU",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "鄭宜農",
+  "album": "圓缺",
+  "year": 2025,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "（MB release 未填廠牌）",
+  "why": "鄭宜農 2025 年 5 月的台語專輯（MB 轄下只有一筆 TW／Official release，廠牌欄未填），接在《水逆》（2022）之後，第 37 屆金曲獎最佳台語專輯獎入圍名單中的一張。實掃 seed_cards.json 全 14,424 列：鄭宜農 池中只有 1 張——《海王星》（2011），那是她十四年前的首張個人作——中間整段目錄都不在池中。",
+  "risk": "掛名三個漢字，一律用繁體；外部服務上另有 Enno Cheng 的寫法，進 queryAlias。盤名《圓缺》只有兩個漢字，子字串比對容易被更長的別碟包住。店面 tw 優先。⚠ 冷門軸失真（新譜）。",
+  "mbNote": "釘 release-group e80098df-649a-4754-88f0-3f1c4c4f0e60。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「圓缺」、artist-credit「鄭宜農」、first-release-date 2025-05-01、primary-type Album、secondary-types 空、轄下 1 個 release（國別 TW；status Official）。廠牌欄實查：。藝人 MBID：鄭宜農 a1168584-1163-49b5-81ce-f7c289720cac（名下 15 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Enno Cheng；鄭宜農 Enno Cheng",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

@@ -1,0 +1,954 @@
+[
+ {
+  "key": "desc4:阿弟仔|平衡",
+  "artist": "阿弟仔",
+  "album": "平衡",
+  "year": 2003,
+  "genre": "rock",
+  "genres": [
+   "rock",
+   "hiphop"
+  ],
+  "label": "驚奇多媒體",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "店主 2026-09-06 指名要收的一張。阿弟仔本名張健偉，1976 年生於基隆，1999 年以台語歌〈我沒讀書〉出道，歌詞爭議讓他一開始被當成噱頭；《平衡》是他的第三張全創作專輯，整片壓在搖滾、Rap-Metal 與 Hardcore 上，卻把國樂器與京劇唱腔織進編曲——〈嗆〉是最清楚的示範，〈虎頭蜂〉是全片商業性最強的 Rap-Metal，〈地圖〉的饒舌詼諧帶刺，末曲〈敦倫〉用鋼琴配國樂器襯自寫的情色詩。同名曲〈平衡〉找來 Rapper 張睿銓對唱，中西兩種語彙互相頂住，PlayMusic 的樂評（游祥威，90 分）把整張的主題讀成「文化上的平衡」。中華音樂人交流協會把它選進年度十大專輯與年度十大單曲，2009 年的〈台灣流行音樂 200 最佳專輯〉（1993–2005 百張那半）把它排在**第 76 名**——那是台灣樂評界最常被引用的正典名單。他後來成為李玟、蔡依林、蕭亞軒、羅志祥、張惠妹的詞曲與製作核心（2008 年〈特務J〉、2010 年《阿密特》兩座金曲獎），但那些是替別人做的；《平衡》是他自己唱、自己寫、自己製作的那一張。池中實掃 seed_cards.json 全 14,424 列，阿弟仔／A-Di／平衡／張健偉四種寫法全數零命中。",
+  "curatorRisk": "撞卡：實掃全 14,424 列零命中，盤名「平衡」在池中亦無同名卡。⚠ **年份兩派**：中文維基的作品列與〈台灣流行音樂 200 最佳專輯〉表格都記 2002，但兩個帶明確日期的來源都指向 2003 年 1 月——Hit FM 專輯資料庫的「發行月份：2003-Jan」與 PlayMusic 樂評頁的「發行日期 2003-01-10」。依第 127 條「直記優先於推定」取 **2003**，維基的 2002 記在這裡（見 rulings 第 2 條）。中華音樂人交流協會把它列進**年度十大專輯的 2003 年度**，與 2003-01 發行相容。⚠ **Discogs 上完全沒有這張**：阿弟仔的 Discogs 藝人頁（3373388）46 筆裡，2002 年那張是《我是人》（Zruden Music ZD-A01002，勇士唱片），沒有《平衡》；廠牌 Zruden Music 的四個 label 頁逐一掃過也沒有。因此本卡是**全批唯一不以 Discogs 當來源**的一張（rulings 第 1 條）。封面與試聽：Apple tw 只有 2007 年的《Adia》（collectionId 264946479）與幾首單曲，**沒有《平衡》**，封面走 manual-scan——Hit FM 專輯資料庫的封面圖在 https://www.hitoradio.com/media/album_cover/normal/48.jpg，曲序十二軌（序／嗆／平衡／地圖／曖昧／鳥籠／塔／虎頭蜂／認錯／門／敦倫／跋）同頁可核。**試聽預估缺。** ⚠ 掛名「阿弟仔」與 Discogs 的英文別名 Aadia、Apple 的 Adia 並存，三種都進 queryAlias；MB 上另有 1957 年生的台語歌手「阿吉仔」（d9a637b1，score 42），不是同一人。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "Aadia / Adia / 張健偉",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=阿弟仔&limit=8 → score 100 命中「阿弟仔」f0438b9e-af7a-4340-955a-43e79b6be77a（Taiwan／Person／1976-07）；依第 179 條回問 area 與 type 確認不是 score 42 的「阿吉仔」（d9a637b1，Taiwan／Person／1957）或 score 40 的「仔仔」（3a3042fc）",
+    "release-group?artist=f0438b9e-af7a-4340-955a-43e79b6be77a&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "依第 187 條改查羅馬字與本名三種寫法：artist?query=A-Di → score 100 是「Ëver A. Di'」（a25e3fa2），與本人無關；artist?query=Adia → score 100 是美國 R&B 歌手 Adia Bushrah（3af71441）；artist?query=張健偉 → score 100 是「张健」（25f8338b）。**MB 上沒有第二個阿弟仔實體**",
+    "release-group?query=releasegroup:\"平衡\" AND artist:\"阿弟仔\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"平衡\"&limit=10 → count=4，全是別人：大象體操《平衡》2013 EP、和平饭店《平衡》2022 EP、理想混蛋《平衡木》2019 Single、Tia Ray《在与生俱来的不平衡里》2023，沒有一筆的 artist-credit 沾到阿弟仔"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "阿弟仔的藝人實體在 MB 上存在（f0438b9e，Taiwan／Person／1976-07），但 browse 分頁回 0 個 release-group——他名下什麼都沒建，不只是缺這一張；羅馬字 A-Di、藝名 Adia 與本名張健偉三種寫法反查都回不相干的實體，排除第 187 條的實體分裂。盤名加掛名反查 count=0，單以盤名反查的 4 筆全是別的藝人。查詢全部回 HTTP 200，走的是 limit=100 的 browse 端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.hitoradio.com/newweb/48album",
+   "https://www.playmusic.tw/music_critics_detail.php?id=193",
+   "https://zh.wikipedia.org/zh-tw/台灣流行音樂200最佳專輯"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」，卷宗見 batch-progress/c115/OWNER-REQUEST-adizai.md；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。Discogs 無條目，改以 Hit FM 專輯資料庫（發行公司、發行月份、完整曲序）與 PlayMusic 樂評頁（發行日期）兩個獨立來源立卡，第三個來源是〈台灣流行音樂 200 最佳專輯〉名單第 76 名，見 c-115 rulings 第 1 條。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:三橋美智也|三橋美智也歌謡史 第2集",
+  "artist": "三橋美智也",
+  "album": "三橋美智也歌謡史 第2集",
+  "year": 1963,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "King Records（KR 4）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "三橋美智也是 1950 年代日本賣得最凶的歌手，一個人扛起 King Records 的民謡系血脈：北海道函館出身、少年時代學的是津軽三味線與民謡，1954 年〈酒の苦さよ〉出道後〈おんな船頭唄〉〈哀愁列車〉〈古城〉一路連發，1950 年代末的單曲總銷量傳說破億。《三橋美智也歌謡史》是 King 在 1963 年替他做的分集式歌謡史，本片是第 2 集，十六軌，把他從民謡到歌謡曲的路徑整條排出來。這一整代的演歌與戰後歌謡在 MB 上幾乎是空白——他名下只有五個 release-group，四筆是單曲、一筆是 1963 年的三味線盤，唱紅的那些曲子的專輯零筆。池中實掃 seed_cards.json 全 14,424 列，三橋美智也零張；c-103 那批 56 位演歌藝人掃過 1,297 個 release-group，這一塊的缺口就是這樣量出來的。",
+  "curatorRisk": "撞卡：實掃全 14,424 列零命中。⚠ 盤名兩種寫法：Discogs 記「三橋美智也歌謡史 (第2集)」（括號），NDL 記「三橋美智也歌謡史 第1.2集」（第 1 集與第 2 集合併著錄）——依 c-113 第 6 條去掉裝飾括號，取「三橋美智也歌謡史 第2集」，兩種原寫法進 queryAlias。年份 1963 由 Discogs release 14204669 直記，NDL 那筆是 [19--]。封面：Apple jp 目錄沒有本片，走 manual-scan；Discogs 條目附 6 張實體掃圖，本機掃圖可行。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "三橋美智也歌謡史 (第2集) / 三橋美智也歌謡史 第1.2集 / Michiya Mihashi",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=三橋美智也&limit=8 → score 100 命中「三橋美智也」1b3a4776-6c8e-4569-bc3d-481cb6247169（Japan）；依第 187 條再以羅馬字 artist?query=Michiya Mihashi 查，score 100 回同一個實體，MB 內部沒有第二個實體",
+    "release-group?artist=1b3a4776-6c8e-4569-bc3d-481cb6247169&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 5 個 release-group：〈江差恋しや〉2006 Single、《三味線リサイタル》1963 Album、〈I'm A 北海道MAN〉1990 Single、〈二本松少年隊〉1965 Single、〈蝶々とかかし〉1970 Single；歌謡史系列一集都沒有",
+    "release-group?query=releasegroup:\"三橋美智也歌謡史\" AND artist:\"三橋美智也\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"三橋美智也歌謡史\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "三橋美智也的藝人實體在 MB 上存在，browse 分頁只回 5 個 release-group（四筆單曲＋一張三味線盤），1963 年 King 的歌謡史系列完全不在其中；盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/14204669",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008698641"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:村田英雄|王将",
+  "artist": "村田英雄",
+  "album": "王将",
+  "year": 1961,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "日本コロムビア（ALS-7035）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "〈王将〉是 1961 年的怪物單曲——船村徹作曲、西條八十作詞，唱的是大阪通天閣下的將棋棋士坂田三吉，村田英雄用浪曲底的喉嚨把它唱成三百萬張。村田本人九歲入浪曲門，是把浪曲聲腔整包搬進歌謡曲的第一人，這張同名 LP 就是 Columbia 趁單曲爆紅時做的十四軌整編，把〈王将〉與他的浪曲名段擺在同一面。MB 上村田英雄名下只有兩個 release-group，一筆是 1989 年與坂本冬美的對唱盤、一筆是 1999 年的《全曲集》，兩筆都掛 Compilation——1960 年代的原盤一張都沒有。池中實掃全 14,424 列，村田英雄零張。",
+  "curatorRisk": "撞卡：實掃零命中，盤名「王将」在池中亦無同名卡。⚠ Discogs release 13918278 的 year 欄是 0（未填），年份 1961 靠 NDL 的錄音資料記錄「王将 : 浪曲」Columbia c1961.9 定下——那筆的著者欄列了北条秀司原作、船村徹作曲、村田英雄，與本片對得上。⚠ Discogs 的 format 標「LP, Compilation」：這是 1961 年本家廠牌趁單曲爆紅做的同代整編盤，不是後世精選，依本批 rulings 第 3 條收為 Album，Comp 標記記在這裡。⚠ MB 上另有谷本知美〈女の王将〉1999 與山口瑠美的長編歌謡物語，盤名反查會撞到，都不是本片。封面：Discogs 只附 1 張掃圖，本機要另尋來源；Apple jp 沒有本片。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "Hideo Murata",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=村田英雄&limit=8 → score 100 命中「村田英雄」31c1f9f5-631e-4d69-ae8f-8fff85a6f8be（Japan）；依第 187 條再查 artist?query=Hideo Murata，score 100 回同一實體，另有 score 65 的作詞家「MURATA」（6e18dc40）與 score 64 的「Hideo」（d3dfc9c9，DJ Krush 客串），依第 179 條回問 area 與 disambiguation 排除",
+    "release-group?artist=31c1f9f5-631e-4d69-ae8f-8fff85a6f8be&limit=100&offset=0 → 名下僅 2 個 release-group：《演歌 村田英雄 VS. 坂本冬美》1989-08-30（Album/Compilation）與《全曲集》1999-10-20（Album/Compilation），兩筆都是後世盤",
+    "release-group?query=releasegroup:\"王将\" AND artist:\"村田英雄\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"王将\"&limit=10 → count=2，谷本知美〈女の王将〉1999 Single 與山口瑠美《長編・歌謡物語「至高の王将」》2007，沒有一筆的 artist-credit 沾到村田英雄"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "村田英雄的藝人實體在 MB 上存在但名下只有兩張後世的對唱盤與全曲集，1961 年的 Columbia 原盤不在其中；盤名加掛名反查 count=0，單以盤名反查的兩筆都是別人的碟。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/13918278",
+   "https://ndlsearch.ndl.go.jp/books/R100000136-I1970023484840490633"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:舟木一夫|ひたむきな青春",
+  "artist": "舟木一夫",
+  "album": "ひたむきな青春",
+  "year": 1966,
+  "genre": "pop",
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "日本コロムビア（ADX-28~9）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "舟木一夫 1963 年以〈高校三年生〉出道那年十八歲，學生服配詰襟的形象讓他和橋幸夫、西郷輝彦並稱「御三家」，是戰後日本第一代真正意義上的青春偶像。《ひたむきな青春〈舟木一夫の魅力〉》是 Columbia 1966 年替他做的兩張裝、二十八軌大盤，把出道三年的青春歌謡整條排出來，副標直接寫「舟木一夫の魅力」。MB 上他名下只有兩個 release-group——1999 年的〈燃えよドラゴンズ!'99〉EP 與 1963 年的〈高校三年生〉單曲，**primary-type=Album 是 0 筆**。池中實掃全 14,424 列，舟木一夫零張。",
+  "curatorRisk": "撞卡：實掃零命中。⚠ 盤名帶副標：Discogs 記「ひたむきな青春 <舟木一夫の魅力>」（角括號），NDL 記「ひたむきな青春-舟木一夫の魅力-」（破折號）——依 c-113 第 6 條去掉裝飾符號只留主標「ひたむきな青春」，兩種原寫法進 queryAlias。年份 1966 由 Discogs release 8778159 直記，NDL 那筆是 [19--]。⚠ 兩張裝二十八軌，是同代整編而非後世精選，Discogs format 標「2×LP, Stereo」沒有 Comp 標記。封面：Discogs 附 8 張掃圖，manual-scan 可行；Apple jp 沒有本片。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "ひたむきな青春 <舟木一夫の魅力> / ひたむきな青春-舟木一夫の魅力- / Kazuo Funaki",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=舟木一夫&limit=8 → score 100 命中「舟木一夫」48d11fc8-738b-4920-9290-e659908573bd（Japan）；依第 187 條再查 artist?query=Kazuo Funaki，score 100 回同一實體（另有 score 67 的「Funaki」3c3e303e 與 score 61 的日裔饒舌歌手「Kazuo」c5a8f406，依第 179 條回問 area／disambiguation 排除）",
+    "release-group?artist=48d11fc8-738b-4920-9290-e659908573bd&limit=100&offset=0 → 名下僅 2 個 release-group：〈燃えよドラゴンズ! '99〉1999-07-17 EP 與〈高校三年生〉1963-06-05 Single，**primary-type=Album 是 0 筆**",
+    "release-group?query=releasegroup:\"ひたむきな青春\" AND artist:\"舟木一夫\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"ひたむきな青春\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "舟木一夫的藝人實體在 MB 上存在但名下只有一筆 EP 與一筆單曲，primary-type=Album 整個是零；盤名加掛名與單盤名兩種反查都 count=0，這個盤名在 MB 上完全不存在。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/8778159",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008622992"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:鶴田浩二|男 傷だらけの人生",
+  "artist": "鶴田浩二",
+  "album": "男 傷だらけの人生",
+  "year": 1971,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Victor（SJV-525）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "鶴田浩二先是電影明星——1950 年代松竹的二枚目、後來東映任侠片的臉——才是歌手。1970 年的〈傷だらけの人生〉把他那種half-spoken、耳朵貼著麥克風的低音唱法變成一整個世代的聲音記號：「古い奴だとお思いでしょうが…」的口白開場，賣了一百多萬張，也讓他在紅白登場。這張 1971 年 Victor 的《男／傷だらけの人生 鶴田浩二男の世界》就是趁那波做的十二軌 LP。MB 上鶴田浩二名下只有兩個 release-group：1970-12-25 的〈傷だらけの人生〉**單曲**與 2005 年的《あゝ軍歌》，1970 年代的原盤 LP 一張都沒有。池中實掃全 14,424 列，鶴田浩二零張。",
+  "curatorRisk": "撞卡：實掃零命中。⚠ **MB 上有同名單曲**：〈傷だらけの人生〉1970-12-25（Single）——依第 179 條第 1 點與第 205 條，同名先行單曲不採計、年份一律取 LP 的 1971，且卡片盤名取 Discogs 的完整寫法「男 / 傷だらけの人生 鶴田浩二男の世界」去掉斜線與副標後的「男 傷だらけの人生」，避免與那筆單曲的摺疊比對相撞。Discogs 與 NDL 的原寫法都進 queryAlias。⚠ Discogs 只附 1 張掃圖，本機要另尋來源；Apple jp 沒有本片。**試聽預估缺。** ⚠ MB 另有「ジャンボ鶴田浩二」（2f41f3a9，score 95，名下 0 筆），不是同一人，已回問排除（第 179 條）。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "男 / 傷だらけの人生 鶴田浩二男の世界 / Koji Tsuruta",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=鶴田浩二&limit=8 → score 100 命中「鶴田浩二」71686201-a20c-4c57-8e9a-cff9bd7ee132（Japan）；score 95 的「ジャンボ鶴田浩二」（2f41f3a9）與 score 89 的任天堂作曲家「近藤浩治」（c376498a）依第 179 條回問 area／disambiguation 排除，前者 browse 回 0 筆",
+    "release-group?artist=71686201-a20c-4c57-8e9a-cff9bd7ee132&limit=100&offset=0 → 名下僅 2 個 release-group：〈傷だらけの人生〉1970-12-25（**Single**）與《あゝ軍歌》2005-09-26（Album）；1971 年 Victor 的 LP 不在其中",
+    "依第 187 條再查 artist?query=Koji Tsuruta（羅馬字）→ 回同一個實體，MB 內部沒有第二個鶴田浩二",
+    "release-group?query=releasegroup:\"傷だらけの人生\" AND artist:\"鶴田浩二\"&limit=10 → count=1，唯一那筆就是 1970-12-25 的 **Single**，不是本片的 LP"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "鶴田浩二的藝人實體在 MB 上存在但名下只有一筆 1970 年的同名單曲與一張 2005 年的軍歌盤，1971 年 Victor 的十二軌 LP《男／傷だらけの人生 鶴田浩二男の世界》不在其中；盤名反查唯一命中的那筆 primary-type 是 Single，依第 179 條第 1 點不能拿來當 LP 已建檔的證據。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/5869250",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008807774"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:北島三郎|函館の女",
+  "artist": "北島三郎",
+  "album": "函館の女",
+  "year": 1966,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "日本クラウン（LW-5130）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "〈函館の女〉1965 年出，是北島三郎「女（ひと）」系列的第一發，也是他從〈なみだ船〉之後真正站穩的那一首；函館是他的原鄉北海道的門戶，星野哲郎的詞把港町的風寫進去，之後〈加賀の女〉〈知床の女〉一路排下來成了系列。這張 1966 年日本クラウン的《函館の女（北島三郎ヒット集）》是趁那波做的十二軌 LP。MB 上北島三郎名下有十四個 release-group，卻**全部是 1998 年之後的ベスト／大全集與單曲**——1960 年代的原盤 LP 一張都沒建。池中實掃全 14,424 列，北島三郎只有一張《北島三郎全曲集》（後世全曲集，與本片不同型）。",
+  "curatorRisk": "撞卡：實掃全 14,424 列，北島三郎名下只有《北島三郎全曲集》一張，與本片盤名不重疊。⚠ **第 193 條的形狀**：這張碟有「函館の女」與「北島三郎ヒット集」兩種盤名，chk-prop 的摺疊比對兩邊零重疊，兩種寫法都已人工掃過池中（皆零命中）。卡片取主打曲名「函館の女」，Discogs 的括號寫法與 NDL 的「函館の女-北島三郎ヒット集-」進 queryAlias。⚠ **MB 上有同名單曲**〈函館の女〉1965-11（Single）——依第 179 條第 1 點與第 205 條不採計，年份取 LP 的 1966。⚠ Discogs 的 format 標「LP, Compilation」：1966 年本家クラウン的同代整編，依本批 rulings 第 3 條收為 Album。⚠ 掛名 Discogs 寫羅馬字「Saburo Kitajima」，池中已有的寫法是漢字「北島三郎」，依第 177 條照池中取漢字。封面：Discogs 附 4 張掃圖；Apple jp 沒有本片。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "函館の女（北島三郎ヒット集） / 函館の女-北島三郎ヒット集- / Saburo Kitajima",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=北島三郎&limit=8 → score 100 命中「北島三郎」4010c1c5-ec84-4604-9142-5048ef6c96c7（Japan）；依第 187 條再查 artist?query=Saburo Kitajima，score 100 回同一實體（另有 score 84 的「SABURO」758ea5bf 與 score 73 的「Nagai Saburo」a93ebe90，依第 179 條回問 area／disambiguation 排除）",
+    "release-group?artist=4010c1c5-ec84-4604-9142-5048ef6c96c7&limit=100&offset=0 → 名下 14 個 release-group，逐筆看過：〈まつり〉1984 Single、〈与作〉1978 Single、〈花の兄弟〉2003 Single、《大全集「この道ひとすじ」》2001、《ベスト16》2003、《これが聴きたい! ベスト》2005、《「魂の唄」ベスト50》2011 等——**全部是單曲或 1998 年之後的ベスト／大全集**，1966 年クラウン的原盤 LP 不在其中",
+    "release-group?query=releasegroup:\"函館の女\" AND artist:\"北島三郎\"&limit=10 → count=2，一筆是〈函館の女〉1965-11 的 **Single**、一筆是《ベスト35～竹、函館の女、根っこ》1998 精選，都不是 1966 年那張 LP",
+    "release-group?query=releasegroup:\"北島三郎ヒット集\"&limit=10 → count=0（第 193 條的第二種盤名也反查過）"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "北島三郎的藝人實體在 MB 上存在且名下有十四個 release-group，但逐筆看下來全是單曲與 1998 年之後的ベスト／大全集，1966 年日本クラウン的《函館の女（北島三郎ヒット集）》不在其中；盤名反查命中的兩筆分別是 1965 年的同名單曲與 1998 年的精選，依第 179 條第 1 點都不能當 LP 已建檔的證據。第 193 條的兩種盤名都反查過。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/18054976",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008712879"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:淡谷のり子|別れのブルース",
+  "artist": "淡谷のり子",
+  "album": "別れのブルース",
+  "year": 1972,
+  "genre": "jazz",
+  "genres": [
+   "jazz",
+   "pop"
+  ],
+  "label": "日本コロムビア（NZ-7026）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "淡谷のり子是東洋音楽学校聲樂科出身的女高音，1937 年唱服部良一作曲、藤浦洸作詞的〈別れのブルース〉時，把西洋唱法壓低、把爵士的藍調感搬進日本流行歌，等於一個人開了「ブルース歌手」這個類目——戰時被軍方嫌「敵性音楽」，她照樣化妝穿禮服上前線慰問。這張 1972 年日本コロムビア的《別れのブルース》是她親自重唱代表作的十二軌 LP，Discogs 的 styles 同時標 Kayōkyoku 與 Chanson。MB 上她名下**只有一個 release-group**——2023 年的《淡谷のり子の世界: 別れのブルース》，還是 Compilation。池中實掃全 14,424 列，淡谷のり子零張。",
+  "curatorRisk": "撞卡：實掃零命中。⚠ **同名不同碟**：MB 唯一那筆 2023 年《淡谷のり子の世界: 別れのブルース》與本片盤名高度重疊，但那是 2023 年的後世精選、與 1972 年的 Columbia NZ-7026 是兩張碟；判 §1 資格看的是 1972 那張有沒有建檔（沒有）。⚠ **Discogs 條目 0 張掃圖**（release 14715255 沒有附任何實體照），封面走 manual-scan 時本機一定要另尋來源，這是本批封面風險最高的一張。NDL 那邊有兩筆無年份的「淡谷のり子/別れのブル-ス」コロムビア [19--]（I000008726441、I000008727644），與 1972 年的 LP 相容但無法據以定年，年份仍由 Discogs 直記。⚠ 盤名與曲名同名，簡介不得把 1937 年的原唱單曲與這張 1972 年的重唱盤混為一談。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "Noriko Awaya",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=淡谷のり子&limit=8 → score 100 命中「淡谷のり子」aa39b1b7-22f3-4314-badd-7f24439a72f6（Japan）；依第 187 條再查 artist?query=Noriko Awaya，score 100 回同一實體（另有 score 60 的「Takumi Awaya」9289119b 與 score 59 的「Ringo Awaya」aba2cc9e，依第 179 條排除）",
+    "release-group?artist=aa39b1b7-22f3-4314-badd-7f24439a72f6&limit=100&offset=0 → **名下只有 1 個 release-group**：《淡谷のり子の世界: 別れのブルース》2023-07-19（Album/Compilation）",
+    "release-group?query=releasegroup:\"別れのブルース\" AND artist:\"淡谷のり子\"&limit=10 → count=1，就是上面那筆 2023 年的精選，不是 1972 年的 Columbia LP",
+    "release-group?query=releasegroup:\"別れのブルース\"&limit=10 → count=1，同一筆"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "淡谷のり子在 MB 上名下只有一個 release-group，是 2023 年的後世精選《淡谷のり子の世界: 別れのブルース》（secondary-types 含 Compilation）；1972 年日本コロムビア NZ-7026 那張十二軌重唱盤完全沒有建檔。盤名反查兩種方向都只回那一筆 2023 年的碟。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/14715255",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008726441"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:霧島昇|誰か故郷を想わざる",
+  "artist": "霧島昇",
+  "album": "誰か故郷を想わざる",
+  "year": 1967,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "日本コロムビア（ALS-4229）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "霧島昇是戰前戰後跨代的コロムビア看板男聲：1938 年〈旅の夜風〉（與ミス・コロムビア松原操對唱，後來兩人結婚）一炮而紅，1940 年西條八十作詞、古賀政男作曲的〈誰か故郷を想わざる〉唱進整個戰時世代的鄉愁，戰後又有〈胸の振子〉。這張 1967 年コロムビア的《誰か故郷を想わざる 霧島昇愛唱歌集》是他生前由本家做的十二軌愛唱歌集。MB 上霧島昇名下**只有一個 release-group**——2004 年的《全曲集》，掛 Compilation。池中實掃全 14,424 列，霧島昇零張。",
+  "curatorRisk": "撞卡：實掃零命中。⚠ Discogs 的 format 標「LP, Compilation」：1967 年本家コロムビア在藝人生前做的同代愛唱歌集，依本批 rulings 第 3 條收為 Album，Comp 標記記在這裡。⚠ 盤名兩截：Discogs 記「誰か故郷を想わざる 霧島昇愛唱歌集」，NDL 記「誰か故郷を想わざる;-霧島昇愛唱歌集-」（分號＋破折號），依 c-113 第 6 條去掉裝飾符號、保留主標與副標以空白分隔，NDL 的原寫法進 queryAlias。年份 1967 由 Discogs release 9951717 直記，NDL 那筆是 [19--]。⚠ 盤名與 1940 年的同名單曲同名，簡介不得寫成 1940 年的錄音。封面：Discogs 附 6 張掃圖；Apple jp 沒有本片。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "誰か故郷を想わざる;-霧島昇愛唱歌集- / Noboru Kirishima",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=霧島昇&limit=8 → score 100 命中「霧島昇」d381d2bb-50af-44a9-8201-88eb722214ba（Japan）；依第 187 條再查 artist?query=Noboru Kirishima，score 100 回同一實體（另有 score 56 的同人企劃「BLACK KIRISHIMA」c2d6dbf6 與 score 52 的 Vocaloid P「のぼる↑」18e340f1，依第 179 條排除）",
+    "release-group?artist=d381d2bb-50af-44a9-8201-88eb722214ba&limit=100&offset=0 → **名下只有 1 個 release-group**：《全曲集》2004-07-21（Album/Compilation）",
+    "release-group?query=releasegroup:\"誰か故郷を想わざる\" AND artist:\"霧島昇\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"誰か故郷を想わざる\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "霧島昇在 MB 上名下只有一個 release-group，是 2004 年的《全曲集》（secondary-types 含 Compilation）；1967 年日本コロムビア ALS-4229 那張愛唱歌集完全沒有建檔，盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/9951717",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008626532"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:都はるみ|都はるみ 魅力のすべて",
+  "artist": "都はるみ",
+  "album": "都はるみ 魅力のすべて",
+  "year": 1968,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "日本コロムビア（ALW-3~4）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "都はるみ十五歲出道，1964 年〈アンコ椿は恋の花〉一發成名，那種喉頭滾動的「うなり」唱法把演歌的表情整個推到極限，1970 年代與八代亞紀、石川さゆり並列女聲三強。這張 1968 年日本コロムビア的《都はるみ 魅力のすべて》是兩張裝三十軌的大盤，收的是她出道到 1968 年這五年的曲目。MB 上她名下只有五個 release-group，除了 1991 年的《BIRTHDAY》之外四筆全是 1990 年之後的精選與大全集——〈アンコ椿は恋の花〉那個時期的原盤零筆。池中實掃全 14,424 列，都はるみ零張。",
+  "curatorRisk": "撞卡：實掃零命中。⚠ **同名不同碟**：MB 上有西田佐知子《魅力のすべて》1974 與内田あかり《魅力のすべて》2012，都是同名不同人的碟；卡片盤名取 Discogs 與 NDL 都用的完整寫法「都はるみ 魅力のすべて」（帶掛名），避開只寫「魅力のすべて」造成的撞名。⚠ Discogs 的 format 標「2×LP, Compilation」：1968 年本家コロムビア在藝人當紅時做的同代整編，依本批 rulings 第 3 條收為 Album。年份 1968 由 Discogs release 7330045 直記；NDL 有三筆同名記錄（[19--] 的コロムビア盤 I000008627198、1987 年的日本コロムビア盤、2007 年的 CD），取無年份那筆當第二來源，1987／2007 兩筆是後來的再發。⚠ 掛名 Discogs 寫羅馬字「Harumi Miyako」，依第 177 條取漢字「都はるみ」。封面：Discogs 附 2 張掃圖。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "魅力のすべて / Harumi Miyako",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=都はるみ&limit=8 → score 100 命中「都はるみ」601cf2a4-f817-4d6f-ab8f-74f891265edf（Japan）；依第 187 條再查 artist?query=Harumi Miyako，score 100 回同一實體（另有 score 70 的 LOVEBITES 團員「Miyako」071fcfbd 與 score 68 的「Harumi」6752d176，依第 179 條回問 area／disambiguation 排除）",
+    "release-group?artist=601cf2a4-f817-4d6f-ab8f-74f891265edf&limit=100&offset=0 → 名下僅 5 個 release-group：《オリジナル大全集～デビュー40周年記念》2003、《スーパー・ツインDX》1990、《BIRTHDAY》1991、《スペシャルベスト》2005、《古賀メロディ～誕生70周年記念～》1998——除 BIRTHDAY 外四筆全是精選，1968 年的原盤不在其中",
+    "release-group?query=releasegroup:\"魅力のすべて\" AND artist:\"都はるみ\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"魅力のすべて\"&limit=10 → count=4，西田佐知子 1974、内田あかり 2012、研ナオコ 2011、森繁久彌 2012，沒有一筆的 artist-credit 沾到都はるみ"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "都はるみ在 MB 上名下只有五個 release-group，四筆是 1990 年之後的精選與大全集、一筆是 1991 年的《BIRTHDAY》，1968 年日本コロムビア那張兩張裝三十軌的《魅力のすべて》不在其中；盤名加掛名反查 count=0，單以盤名反查的四筆全是別的藝人。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/7330045",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008627198"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:森昌子|せんせい 同級生",
+  "artist": "森昌子",
+  "album": "せんせい 同級生",
+  "year": 1972,
+  "genre": "pop",
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "ミノルフォン（KC-7008）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "森昌子 1971 年上《スター誕生!》拿下第一屆優勝時十三歲，隔年以〈せんせい〉出道，一年後山口百惠與桜田淳子跟上，三個人成了「花の中三トリオ」。〈せんせい〉是阿久悠作詞、遠藤実作曲，唱的是女學生對老師那點說不出口的心事——遠藤自己開的ミノルフォン就是這張首張專輯的廠牌。《森昌子ファースト・アルバム せんせい・同級生》十二軌，把出道單曲與第二彈〈同級生〉一起收進去。MB 上森昌子名下有十個 release-group，primary-type=Album 且非精選的只有一筆 2011 年的翻唱集——1970 年代的原盤零筆。池中實掃全 14,424 列，森昌子零張。",
+  "curatorRisk": "撞卡：實掃零命中，「せんせい」與「同級生」兩個詞在池中都無同名卡。⚠ 盤名三種寫法：Discogs 記「森昌子ファースト・アルバム・せんせい・同級生」（全用中黑點），NDL 記「せんせい/同級生森昌子ファ-スト・アルバム」（斜線＋半形長音），依 c-113 第 6 條取「せんせい 同級生」（主標以空白分隔，去掉「ファースト・アルバム」這個形態說明），兩種原寫法進 queryAlias。年份 1972 由 Discogs release 16937370 直記，NDL 那筆是 [19--]。⚠ 廠牌兩種記法：Discogs 記「Minoruphone」，NDL 記「徳間（徳間ジャパン）」——ミノルフォン 1974 年併入徳間音工，NDL 是用後來的公司名著錄同一張碟，卡片取盤面的ミノルフォン。⚠ Discogs 只附 1 張掃圖，本機要另尋來源。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "森昌子ファースト・アルバム・せんせい・同級生 / せんせい/同級生森昌子ファ-スト・アルバム / Masako Mori",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=森昌子&limit=8 → score 100 命中「森昌子」3e331911-8e0e-479b-8884-fc2662e7064b（Japan）；依第 187 條再查 artist?query=Masako Mori，score 100 回同一實體（另有 score 76 的美國「Masako」a514a854 與 score 68 的「Mori Mori」b349ed58，依第 179 條回問 area 排除）",
+    "release-group?artist=3e331911-8e0e-479b-8884-fc2662e7064b&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下 10 個 release-group：《ベスト》2002、《ゴールデン☆アイドル》2015、《ベスト・コレクション》2008 三筆精選，〈しあわせのうた〉2003・〈じゃがいもの唄〉2004・〈なにはともあれ〉2004・〈孤愁人〉1986・〈中学三年生〉1973-02-05・〈心は哀しいものですね〉2015 六筆單曲，加一張 2011 年的翻唱集《清らかな唄声に魅せられる》——**1972 年ミノルフォン的首張專輯不在其中**",
+    "release-group?query=releasegroup:\"せんせい\" AND artist:\"森昌子\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"森昌子ファースト・アルバム\"&limit=10 → count=0（第 193 條的第二種盤名也反查過）"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "森昌子的藝人實體在 MB 上存在，browse 分頁回 10 個 release-group，逐筆看下來是三張後世精選、六筆單曲與一張 2011 年翻唱集；1972 年ミノルフォン KC-7008 那張首張專輯沒有建檔，盤名兩種寫法（せんせい／森昌子ファースト・アルバム，第 193 條）反查都 count=0。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/16937370",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008696166"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:殿さまキングス|なみだの操",
+  "artist": "殿さまキングス",
+  "album": "なみだの操",
+  "year": 1974,
+  "genre": "pop",
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "Victor（SJX-162）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "殿さまキングス是 1960 年代中期在關西起家的コミックバンド，穿著殿樣裝扮上台，本來走的是搞笑路線；1973 年宮路オサム接主唱之後路線一轉，1974 年〈なみだの操〉唱成兩百萬張的怪物單曲，那年的紅白也靠它上。同名 LP 十二軌，Victor SJX-162，是他們從笑鬧團變成演歌團的分水嶺。MB 上殿さまキングス名下沒有 primary-type=Album 的原盤條目。池中實掃全 14,424 列，殿さまキングス零張。",
+  "curatorRisk": "撞卡：實掃零命中。⚠ **MB 上有同名單曲的可能形狀**：〈なみだの操〉是 1973 年底發的單曲、LP 是 1974 年，依第 179 條第 1 點與第 205 條年份一律取 LP 的 1974。⚠ NDL 的第二來源是「なみだの操/殿さまキングス」ビクター [19--]（I000008841639），著錄格式是「曲名/團名」，與 Victor SJX-162 相容但無法據以定年，年份由 Discogs release 5869311 直記的 1974 為準。⚠ **MB 有一張帶同名副題的後世精選**《Best of Best なみだの操》1999-06-25（be51283b 名下），與 1974 年的原盤是兩張碟，摺疊比對會撞到，簡介與上架同名檢查都要看年份。⚠ Discogs 只附 1 張掃圖，本機要另尋來源；Apple jp 只有 2007 年的《エッセンシャル・ベスト》與 2008 年的《The昭和歌謡》兩張後世精選，沒有本片。**試聽預估缺。**",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "なみだの操/殿さまキングス / Tonosama Kings",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=殿さまキングス&limit=8 → score 100 命中「殿さまキングス」be51283b-42aa-4af6-a319-f104542108a5（Japan）；依第 187 條再查羅馬字 artist?query=Tonosama Kings，回同一實體（另有 score 51 的 Gipsy Kings 44a7f7d5 與 score 50 的「tonosama wasabii」08fbeb9f，依第 179 條回問 area 排除）",
+    "release-group?artist=be51283b-42aa-4af6-a319-f104542108a5&limit=100&offset=0 → **名下只有 2 個 release-group，兩筆都是精選**：《スーパー・コレクション》1984（Album/Compilation）與《Best of Best なみだの操》1999-06-25（Album/Compilation）；1974 年 Victor SJX-162 的原盤不在其中",
+    "release-group?query=releasegroup:\"なみだの操\" AND artist:\"殿さまキングス\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"なみだの操\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "殿さまキングス的藝人實體在 MB 上存在但名下只有兩張精選（1984 年《スーパー・コレクション》與 1999 年《Best of Best なみだの操》），1974 年 Victor SJX-162 那張十二軌原盤沒有建檔；盤名加掛名與單盤名兩種反查都 count=0。1999 年那張精選的副題雖然帶「なみだの操」，那是後世精選不是原盤。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），片假名與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/5869311",
+   "https://ndlsearch.ndl.go.jp/books/R100000002-I000008841639"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+  "coverSourceHint": "manual-scan"
+ },
+ {
+  "key": "desc4:謝雷|新娘與我",
+  "artist": "謝雷",
+  "album": "新娘與我",
+  "year": 1968,
+  "genre": "pop",
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "海山唱片（SL-2059）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "謝雷是 1960 年代台灣國語歌壇三大男聲之一（另兩位是青山與姚蘇蓉，池中都已有卡），1966 年〈苦酒滿杯〉一唱成名，那種帶點鼻腔、句尾往下滑的唱法是那個年代夜總會與歌廳的標準聲音。海山唱片是他的主場，SL 系列一張接一張，《新娘與我》1968 年 SL-2059，十二軌，收的是他當紅期的國語流行歌曲——Discogs 條目的備註欄直接寫「Chinese Mandarin Pop 國語流行歌曲」。這一整條台灣 1960 年代的國語與台語唱片在 MB 上是空的：亞洲、海山、宇宙、金馬、麗歌這些本土廠牌沒有任何一家被跨國公司接手，MB 的華語建檔幾乎全部來自 EMI／寶麗金／滾石那幾條線。池中實掃全 14,424 列，謝雷零張。",
+  "curatorRisk": "撞卡：實掃 seed_cards.json 全 14,424 列，謝雷名下零命中，本片盤名在池中亦無同名卡（第 193 條的兩種盤名寫法都掃過）。⚠ 掛名 Discogs 用羅馬字「Xie Lei」、Apple tw 用漢字「謝雷」，池中零張，依第 177 條第 2 步取 Apple 與盤面一致的漢字「謝雷」，羅馬字進 queryAlias。⚠ 海山唱片 1960 年代的 LP 盤面常同時印兩首主打曲（如「A 曲 / B 曲」），Discogs 有時把兩首都寫進標題——本卡取 Discogs 條目 6001080 的題名。封面：Apple tw 有精確 collectionId 1476232860，走 apple-verified-collection；Discogs 條目附 1 張實體掃圖可交叉核對。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "Xie Lei / Hsieh Lei",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+    "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"新娘與我\" AND artist:\"謝雷\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"新娘與我\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "謝雷的藝人實體在 MB 上存在（ad74b929，Taiwan／1940-02-02），但 browse 分頁回 0 個 release-group——他名下什麼都沒建，不只是缺這一張；羅馬字 Hsieh Lei 與 Xie Lei 兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/6001080",
+   "https://music.apple.com/tw/album/1476232860"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "key": "desc4:謝雷|往日的舊夢",
+  "artist": "謝雷",
+  "album": "往日的舊夢",
+  "year": 1968,
+  "genre": "pop",
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "海山唱片（SL-2049）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "《往日的舊夢》1968 年海山 SL-2049，十二軌，是謝雷在海山最好的一段時期——Discogs 把這張的 genre 標成 Rock／Pop、style 標 Vocal 與 Beat，那不是誤標：1960 年代末台北歌廳的伴奏班底大量吸收了電吉他與 beat 團的編制，謝雷這批海山盤的節奏組聽起來與同期的東南亞 a-go-go 是同一條線。這張與同年的《歡唱》《新娘與我》構成他 1968 年的三連發。MB 上謝雷名下 0 個 release-group，整位空白。池中實掃全 14,424 列，謝雷零張。",
+  "curatorRisk": "撞卡：實掃 seed_cards.json 全 14,424 列，謝雷名下零命中，本片盤名在池中亦無同名卡（第 193 條的兩種盤名寫法都掃過）。⚠ 掛名 Discogs 用羅馬字「Xie Lei」、Apple tw 用漢字「謝雷」，池中零張，依第 177 條第 2 步取 Apple 與盤面一致的漢字「謝雷」，羅馬字進 queryAlias。⚠ 海山唱片 1960 年代的 LP 盤面常同時印兩首主打曲（如「A 曲 / B 曲」），Discogs 有時把兩首都寫進標題——本卡取 Discogs 條目 6000794 的題名。封面：Apple tw 有精確 collectionId 1740242272，走 apple-verified-collection；Discogs 條目附 1 張實體掃圖可交叉核對。 ⚠ Apple 那筆的 releaseDate 記 2023-10-16，那是海山目錄數位化上架的日期不是原盤年份（第 188 條的形狀），年份取 Discogs 原盤條目的 1968。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "Xie Lei / Hsieh Lei",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+    "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"往日的舊夢\" AND artist:\"謝雷\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"往日的舊夢\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "謝雷的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；羅馬字兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人（第 187 條）。盤名加掛名與單盤名兩種反查都 count=0，這個盤名在 MB 上完全不存在。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/6000794",
+   "https://music.apple.com/tw/album/1740242272"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "key": "desc4:謝雷|歡唱",
+  "artist": "謝雷",
+  "album": "歡唱",
+  "year": 1968,
+  "genre": "pop",
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "海山唱片（SL-2045）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "《歡唱 Cheerful Song》1968 年海山 SL-2045，十一軌，盤面同時印中英文題名——那是 1960 年代台灣唱片賣進東南亞華人市場的做法。這張與《往日的舊夢》同年同系列，Discogs 的 style 一樣標 Vocal 與 Beat，是謝雷從歌廳男聲往流行編曲靠的那一段。海山唱片 1960 年代末在台北的地位相當於同期香港的百代：自己的錄音室、自己的樂隊、一年幾十張 LP，但整家公司的目錄在 MB 上一筆都沒有。池中實掃全 14,424 列，謝雷零張。",
+  "curatorRisk": "撞卡：實掃 seed_cards.json 全 14,424 列，謝雷名下零命中，本片盤名在池中亦無同名卡（第 193 條的兩種盤名寫法都掃過）。⚠ 掛名 Discogs 用羅馬字「Xie Lei」、Apple tw 用漢字「謝雷」，池中零張，依第 177 條第 2 步取 Apple 與盤面一致的漢字「謝雷」，羅馬字進 queryAlias。⚠ 海山唱片 1960 年代的 LP 盤面常同時印兩首主打曲（如「A 曲 / B 曲」），Discogs 有時把兩首都寫進標題——本卡取 Discogs 條目 6000265 的題名。封面：Apple tw 有精確 collectionId 1734178303，走 apple-verified-collection；Discogs 條目附 5 張實體掃圖可交叉核對。 ⚠ 盤名帶英文副題：Discogs 記「歡唱  Cheerful Song」（中間兩個半形空白），依 c-113 第 6 條只留中文主標「歡唱」，原寫法進 queryAlias。⚠ Apple 那筆 releaseDate 記 2023-08-07（數位化上架日，第 188 條），年份取 Discogs 的 1968。⚠ MB 上有苏紫旭《悲歌欢唱》2026，簡體字盤名反查會撞到，不是本片。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "歡唱 Cheerful Song / Xie Lei / Hsieh Lei",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+    "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"歡唱\" AND artist:\"謝雷\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"歡唱\"&limit=10 → count=1，苏紫旭 & The Paramecia《悲歌欢唱(Lamenting in Delight)》2026-05-15，與本片無關"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "謝雷的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；羅馬字兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人（第 187 條）。盤名加掛名反查 count=0，單以盤名反查唯一命中的是 2026 年的簡體字碟《悲歌欢唱》，artist-credit 與謝雷無關。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/6000265",
+   "https://music.apple.com/tw/album/1734178303"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "key": "desc4:謝雷|梨山痴情花",
+  "artist": "謝雷",
+  "album": "梨山痴情花",
+  "year": 1970,
+  "genre": "pop",
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "海山唱片（SL-2139）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "〈梨山痴情花〉是謝雷 1970 年的代表作之一，唱的是台中梨山的高山戀情，那種把地名寫進歌名的做法是 1960–70 年代台灣國語歌的固定套路（〈美麗的花蓮港〉〈阿里山之戀〉同一血脈）。海山 SL-2139，十軌。這張與《淚的小花》《我的妮妮》一起構成他跨進 1970 年代的那一段，也是他從歌廳唱到電視綜藝的分水嶺。MB 上謝雷名下 0 個 release-group。池中實掃全 14,424 列，謝雷零張。",
+  "curatorRisk": "撞卡：實掃 seed_cards.json 全 14,424 列，謝雷名下零命中，本片盤名在池中亦無同名卡（第 193 條的兩種盤名寫法都掃過）。⚠ 掛名 Discogs 用羅馬字「Xie Lei」、Apple tw 用漢字「謝雷」，池中零張，依第 177 條第 2 步取 Apple 與盤面一致的漢字「謝雷」，羅馬字進 queryAlias。⚠ 海山唱片 1960 年代的 LP 盤面常同時印兩首主打曲（如「A 曲 / B 曲」），Discogs 有時把兩首都寫進標題——本卡取 Discogs 條目 6003928 的題名。封面：Apple tw 有精確 collectionId 1715637662，走 apple-verified-collection；Discogs 條目附 1 張實體掃圖可交叉核對。 ⚠ 同一張碟的另一個 Discogs 條目（release 36824275）題名寫「情人再見 / 梨山痴情花」——第 193 條的形狀，兩種盤名都掃過池中，皆零命中；卡片取單標「梨山痴情花」，雙標寫法進 queryAlias。⚠ Apple 那筆 releaseDate 記 1970-01-01，與 Discogs 的 1970 一致，年份直記。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "情人再見 / 梨山痴情花 / Xie Lei / Hsieh Lei",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+    "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"梨山痴情花\" AND artist:\"謝雷\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"梨山痴情花\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "謝雷的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；羅馬字兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人（第 187 條）。盤名加掛名與單盤名兩種反查都 count=0，這個盤名在 MB 上完全不存在。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/6003928",
+   "https://music.apple.com/tw/album/1715637662"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "key": "desc4:白虹|醉人的口紅",
+  "artist": "白虹",
+  "album": "醉人的口紅",
+  "year": 1962,
+  "genre": "jazz",
+  "genres": [
+   "jazz",
+   "pop"
+  ],
+  "label": "百代 Pathé（CPA-164）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "白虹 1919 年生於北平，是上海時代曲第一代裡最早受過正規訓練的一位——1934 年拿下上海第一屆歌星比賽冠軍，〈郎是春日風〉〈拷紅〉〈我要你〉都是她的；黎錦暉的明月社出身，後來與周璇、龔秋霞同列。《醉人的口紅 Charming Lips》1962 年百代 CPA-164，十吋單聲道十軌，是她從上海到香港之後由百代做的整編盤，Discogs 的 style 同時標 Shidaiqu 與 Big Band，那正是時代曲最核心的編制。MB 上白虹的藝人實體有（a1963319，CN，1920-02-24）卻**名下 0 個 release-group**——EMI (HK) 的《百代中國時代曲名典》系列進了 MB 的那幾位（周璇、姚莉、吳鶯音、崔萍、潘秀瓊、靜婷、張露、龔秋霞、葛蘭、李香蘭）池中已收或已有，白虹正好是系列外的那一位。池中實掃全 14,424 列，白虹零張。",
+  "curatorRisk": "撞卡：實掃全 14,424 列，白虹零命中，盤名「醉人的口紅」在池中亦無同名卡。⚠ 盤名帶英文對照：Discogs 記「醉人的口紅 = Charming Lips」，依 c-113 第 6 條只留中文主標，英文名進 queryAlias。⚠ Discogs 的 format 標「10\", Album, Mono」，不是 Comp——1962 年百代在香港做的同代整編盤。⚠ 另有 2017 年 Universal Music HK 的《秋水伊人 + 醉人的口紅》兩張裝復刻（Discogs 32650998），與本片是兩張碟。⚠ 掛名短且撞名：MB 上 artist?query=Pai Hung／Bai Hong 會回 Brotha Lynch Hung、Dala Pai Pai 等一票不相干的實體，依第 179 條逐一回問 area 與 disambiguation 排除。封面：Apple tw 有精確 collectionId 1442687956（releaseDate 1962-06-30、10 軌，與 Discogs 的十軌一致），走 apple-verified-collection；Discogs 附 2 張實體掃圖可交叉核對。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "醉人的口紅 = Charming Lips / Bai Hong / Pai Hung",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=白虹&limit=8 → score 100 命中「白虹」a1963319-1889-45a9-807e-c5c959734fb7（CN／1920-02-24）；依第 187 條再查 artist?query=Bai Hong 與 Pai Hung，score≥85 的實體（pai 49f64e5a、Dala Pai Pai bab50b31、Hung a3f6e525／f544b89e、Tchao Paï Paï 3aeea906、Basta Paï Paï 531e6fe3、Brotha Lynch Hung f1fa0780）逐一 browse，全都是不相干的人，**MB 上沒有第二個白虹實體**",
+    "release-group?artist=a1963319-1889-45a9-807e-c5c959734fb7&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"醉人的口紅\" AND artist:\"白虹\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"醉人的口紅\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "白虹的藝人實體在 MB 上存在（a1963319，CN／1920-02-24）但 browse 分頁回 0 個 release-group——上海時代曲這一代裡系列外的幾位整位空白；羅馬字 Bai Hong 與 Pai Hung 兩種寫法查出的七個 score≥85 實體逐一 browse 都是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/8895275",
+   "https://music.apple.com/tw/album/1442687956"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "key": "desc4:劉福助 & 黃小冬|桃花過渡",
+  "artist": "劉福助 & 黃小冬",
+  "album": "桃花過渡",
+  "year": 1973,
+  "genre": "world",
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "樂風（LFLP 263）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "劉福助是台語「唸歌」與勸世歌一路傳下來最會講故事的那一個——〈祖母的話〉〈安童哥辦酒菜〉〈行行出狀元〉都是他，唱法半唸半唱、詞裡全是俚語與生活場景。《桃花過渡》1973 年樂風 LFLP 263，十一軌，收的是福建民謠系統的老曲：〈桃花過渡〉〈四季紅〉〈鬧五更〉〈六月田水〉〈風流阿狗兄〉，其中〈桃花過渡〉〈鬧五更〉〈四季紅〉三首與黃小冬對唱，是台語唱片裡少見的男女答嘴鼓形式。這一代台語唱片由亞洲、五虎、鈴鈴、樂風、藝海這些中南部與台北小廠發行，沒有任何一家被跨國廠牌接手，MB 這一整塊落在外面：劉福助的藝人實體在（82d63e66，TW／1940-10-06）卻名下 0 個 release-group。池中實掃全 14,424 列，劉福助與黃小冬都零張。",
+  "curatorRisk": "撞卡：實掃全 14,424 列，劉福助、黃小冬、桃花過渡三種寫法全數零命中。⚠ **掛名是雙人**：Discogs release 9541583 的 artists 欄列 Huang Xiao Dong 與 Liu Fu Zhu 兩位，Apple tw 的 collection artistName 是「劉福助 & 黃小冬」，兩邊一致；十一軌裡三首對唱、七首劉福助獨唱、一首黃小冬獨唱。依第 177 條第 2 步取兩邊都用的雙人掛名「劉福助 & 黃小冬」，不自行縮成單人。⚠ 盤名兩種：Apple 的 collectionName 是「最新流行福建民謠歌曲 桃花過渡」（帶系列前綴），Discogs 是「桃花過渡」——曲序十一軌逐首比對完全一致（桃花過渡／吃頭路的人／心心相愛／月月按／六月田水／風流做田人／鬧五更／四季紅／榴蓮歌／風流阿狗兄／紅燈青燈），確認是同一張；卡片取 Discogs 的短題名，Apple 寫法進 queryAlias。⚠ **年份兩派**：Discogs 記 1973（樂風 LFLP 263），Apple 記 1971-09-06。Apple 這一整批海山／樂風的數位化條目日期不穩（第 188 條），依第 127 條取 Discogs 原盤條目的 1973，Apple 的 1971 記在這裡。封面：Apple 有精確 collectionId 958006778，走 apple-verified-collection；Discogs 附 4 張實體掃圖。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "最新流行福建民謠歌曲 桃花過渡 / Liu Fu Zhu / Huang Xiao Dong",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=劉福助&limit=8 → score 100 命中「劉福助」82d63e66-7f13-4f80-bd66-923ae0ebd130（TW／1940-10-06）；依第 187 條再查羅馬字 artist?query=Liu Fu-Chu 與 Liu Fu Zhu，回的都是不相干的實體，**MB 上沒有第二個劉福助實體**；另查 artist?query=黃小冬 亦無可用實體",
+    "release-group?artist=82d63e66-7f13-4f80-bd66-923ae0ebd130&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"桃花過渡\" AND artist:\"劉福助\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"桃花過渡\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "劉福助的藝人實體在 MB 上存在（82d63e66，TW／1940-10-06）但 browse 分頁回 0 個 release-group，黃小冬連藝人實體都建不出來；羅馬字寫法反查回的都是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/9541583",
+   "https://music.apple.com/tw/album/958006778"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "key": "desc4:郭金發|伴你一生",
+  "artist": "郭金發",
+  "album": "伴你一生",
+  "year": 1982,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "鄉城機構（SC-9027）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "郭金發 1944 年生於高雄，十九歲以〈為著十萬元〉出道，1967 年翻唱日本曲的〈燒肉粽〉唱成台語歌史上最長壽的名曲之一——那把厚重的低音是台語男聲裡辨識度最高的。他一生橫跨電塔、皇冠、英倫、鄉城好幾家中南部小廠，1980 年代落在高雄的鄉城唱片，《伴你一生》1982 年鄉城 SC-9027，十二軌立體聲，是他中年期最完整的一張自家盤。MB 上郭金發的藝人實體在（2aac08c7，TW／1944-03-01）卻名下 0 個 release-group——1990 年代之後的台語復刻權分散在名流、吉馬、鄉城手上，沒有一家進得了 MB 的建檔線。池中實掃全 14,424 列，郭金發零張。",
+  "curatorRisk": "撞卡：實掃全 14,424 列，郭金發與「伴你一生」兩種寫法皆零命中。⚠ **第 199 條的形狀**：Discogs 藝人目錄裡這筆是 `type: master`（master 3772269），要打 /masters/<id> 取 main_release 才拿得到實體條目——本卡的實體是 release 33327054（鄉城機構 SC-9027，LP／Album／Stereo、12 軌、2 張掃圖），不是把 master id 丟進 /releases/。⚠ 年份 1982 由 Discogs master 與 release 一致直記，Apple tw 的 collectionId 1841344084 releaseDate 記 1982-10-01，兩邊相容。⚠ Discogs 只附 2 張掃圖，封面走 apple-verified-collection（1841344084，12 軌與 LP 曲目數一致）。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "Kuo Chin-Fa",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=郭金發&limit=8 → score 100 命中「郭金發」2aac08c7-a544-4a3b-81bb-b6dd5cda9877（TW／1944-03-01）；依第 187 條再查羅馬字 artist?query=Kuo Chin-Fa，回的是不相干的實體，**MB 上沒有第二個郭金發實體**",
+    "release-group?artist=2aac08c7-a544-4a3b-81bb-b6dd5cda9877&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"伴你一生\" AND artist:\"郭金發\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"伴你一生\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "郭金發的藝人實體在 MB 上存在（2aac08c7，TW／1944-03-01）但 browse 分頁回 0 個 release-group——這是「實體確鑿、發行品沒建檔」的典型形狀；羅馬字寫法反查回的是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/33327054",
+   "https://music.apple.com/tw/album/1841344084"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "key": "desc4:郭金發|人生的旅程",
+  "artist": "郭金發",
+  "album": "人生的旅程",
+  "year": 1983,
+  "genre": "world",
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "鄉城機構（SC·9028）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "《人生的旅程》1983 年鄉城 SC·9028，十二軌立體聲，是《伴你一生》的下一號——鄉城把郭金發的編號一路排下去，SC-9027、SC·9028 相鄰，兩張是同一個製作班底同一段時期的產物。1980 年代初的台語唱片正處在夜市卡帶與電視歌唱節目之間，鄉城這批 LP 是台語歌最後一段以黑膠為主的日子。MB 上郭金發名下 0 個 release-group。池中實掃全 14,424 列，郭金發零張。",
+  "curatorRisk": "撞卡：實掃全 14,424 列，郭金發與「人生的旅程」兩種寫法皆零命中。⚠ **第 199 條的形狀**：Discogs 藝人目錄裡這筆是 `type: master`（master 3770004），實體是 main_release 33306876（鄉城機構 SC·9028，LP／Album／Stereo、12 軌、2 張掃圖）。⚠ Discogs 的題名尾端帶一個多餘空白（「人生的旅程 」），卡片去掉。⚠ 廠牌編號用的是全形中點「SC·9028」，與前一張的半形連字號「SC-9027」不同，這是盤面原樣。⚠ 年份 1983 由 Discogs 直記，Apple tw collectionId 1841343836 releaseDate 記 1983-02-01，兩邊相容。封面走 apple-verified-collection（1841343836，12 軌與 LP 曲目數一致）。",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "apex": null,
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "演歌批轉來的 §1 候選",
+  "queryAlias": "Kuo Chin-Fa",
+  "republic": "",
+  "cover": null,
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=郭金發&limit=8 → score 100 命中「郭金發」2aac08c7-a544-4a3b-81bb-b6dd5cda9877（TW／1944-03-01）；依第 187 條再查羅馬字 artist?query=Kuo Chin-Fa，回的是不相干的實體",
+    "release-group?artist=2aac08c7-a544-4a3b-81bb-b6dd5cda9877&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+    "release-group?query=releasegroup:\"人生的旅程\" AND artist:\"郭金發\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"人生的旅程\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-06T12:00:00Z",
+   "conclusion": "郭金發的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；1983 年鄉城 SC·9028 那張十二軌 LP 沒有建檔，盤名加掛名與單盤名兩種反查都 count=0，這個盤名在 MB 上完全不存在。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/33306876",
+   "https://music.apple.com/tw/album/1841343836"
+  ],
+  "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+  "coverSourceHint": "apple-verified-collection"
+ }
+]

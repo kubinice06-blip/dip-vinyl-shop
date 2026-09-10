@@ -19,7 +19,9 @@ const head = async url => {
   for (let i = 0; i < 4; i++) {
     try {
       const r = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(20000) });
-      if (r.status === 503) { await sleep(2000 * (i + 1)); continue; }
+      // 2026-09-06（c-118 實測）：CAA 不是只回 503——Claude Young 那張回 **500**，重試就變 200。
+      // 任何 5xx 都是暫時性，一律退避重來（第 28 條的形狀：查詢失敗不是查無）。
+      if (r.status >= 500) { await sleep(2000 * (i + 1)); continue; }
       return r.ok ? { ok: true, status: r.status } : { ok: false, status: r.status };
     } catch (e) { if (i === 3) return { _err: String(e.name || e).slice(0, 40) }; await sleep(1500); }
   }
@@ -40,7 +42,7 @@ for (const c of cards) {
       for (let i = 0; i < 4 && !rel; i++) {
         const r = await fetch(`https://musicbrainz.org/ws/2/release?release-group=${c.rgMbid}&fmt=json&limit=25`,
           { headers: UA, signal: AbortSignal.timeout(25000) }).catch(() => null);
-        if (r && r.status === 503) { await sleep(2000 * (i + 1)); continue; }
+        if (r && r.status >= 500) { await sleep(2000 * (i + 1)); continue; }
         rel = r && r.ok ? await r.json().catch(() => null) : null;
         if (!r || !r.ok) break;
       }

@@ -1,0 +1,371 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoo-hoo; Yahho; Shintaro Sakamoto",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "坂本慎太郎",
+  "album": "ヤッホー",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "zelone records（catno zel-029）",
+  "why": "2026-01-23 由他自營的 zelone records 發行，編號 zel-029，MB 該 release-group 轄下 3 筆 release 全 Official、10 軌，兩筆是 JP 盤、一筆標題作羅馬字「Yoo-hoo」。池中坂本慎太郎個人掛名 0 張（實掃 seed_cards.json 全 14,424 列），他所屬的ゆらゆら帝国在池中有 2 張：《ゆらゆら帝国のしびれ》2003、《空洞です》2007——個人線是整個空的。",
+  "risk": "掛名分裂風險：同一人在池中只有ゆらゆら帝国那個團名鍵，個人鍵是新開的；日文假名／漢字／羅馬拼音三種寫法都要查（裁定 49）。盤名「ヤッホー」全片假名，同一 release-group 內另有一筆標題作「Yoo-hoo」的羅馬字 release，兩種寫法在字串比對下不相等，queryAlias 要填。zelone records 廠牌名 MB 作小寫。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group bf8f391b-3b13-47c5-a73b-0e1b94167153。回問確認：title「ヤッホー」、artist-credit「坂本慎太郎」、first-release-date 2026-01-23、primary-type Album、secondary-types 空、轄下 3 筆 release 全 Official（JP ×2、另一筆標題「Yoo-hoo」）。藝人 MBID b713fb44-7a24-41d0-827a-cc8777b1ce89，名下 14 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "儚くも美しき十二の変奏; Quruli; Hakanaku mo Utsukushiki 12 no Hensou",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "くるり",
+  "album": "儚くも美しき12の変奏",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "NOISE McCARTNEY RECORDS",
+  "why": "2026-02-11 由 NOISE McCARTNEY RECORDS 發行，MB 該 release-group 目前只有 1 筆 Official release、12 軌數位、實體與編號尚未建檔。池中くるり只有 1 張（實掃 seed_cards.json 全 14,424 列）：《図鑑》2000——2000 年之後整條目錄池中全無。",
+  "risk": "盤名混合漢字、平假名與阿拉伯數字「12」，國字「十二」與阿拉伯數字兩種寫法在任何正規化下都不相等（裁定 49 的同型問題），queryAlias 兩種都填。掛名平假名「くるり」與羅馬字「Quruli」兩種都要查撞卡。MB 上實體尚未建檔，行文不得斷言載體。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group 04e15eab-cb86-478a-a4c7-20648ff26ddc。回問確認：title「儚くも美しき12の変奏」、artist-credit「くるり」、first-release-date 2026-02-11、primary-type Album、secondary-types 空、轄下 1 筆 Official release（XW，Digital Media 12 軌）。藝人 MBID 252c9f8a-be04-4146-b73e-a24696b2f5ed，名下 72 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rhetorica; れをる; Bijigaku",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Reol",
+  "album": "美辞学",
+  "year": 2026,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "NeOFRONT（catno KSCL-3630〜3634）",
+  "why": "2026-01-21 由 NeOFRONT 發行，編號 KSCL-3630 到 KSCL-3634 五種，MB 該 release-group 轄下 6 筆 release 全 Official、11 軌，載體含 CD、DVD、Blu-ray 與數位，另有一筆標題作羅馬字「Rhetorica」的 pseudo-release。池中 Reol 0 張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "盤名漢字「美辞学」與 MB 自帶的羅馬轉寫「Rhetorica」兩種都要進 queryAlias——依裁定 26，轉寫只取 MB 標題自帶的、不自創。掛名「Reol」與「れをる」兩種寫法都要查撞卡。多種初回限定版共用同一 release-group，封面可能各不相同，取 CD 那筆。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group 3b53db49-d1a5-462d-9ee5-fdf3d5c8f013。回問確認：title「美辞学」、artist-credit「Reol」、first-release-date 2026-01-21、primary-type Album、secondary-types 空、轄下 6 筆 release 全 Official（JP ×3、XW ×2，另一筆標題「Rhetorica」）。藝人 MBID aea6ccea-deb0-44bb-886e-d91aa4c358bf，名下 83 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "鈴木実貴子ズ",
+  "album": "いばら",
+  "year": 2026,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "PANAM（catno CRCP-20619）",
+  "why": "2026-01-28 由 PANAM 發行，編號 CRCP-20619，MB 該 release-group 轄下 2 筆 release 全 Official（JP 與 XW）、10 軌，載體為 CD 與數位。池中鈴木実貴子ズ 0 張（實掃 seed_cards.json 全 14,424 列），日本二人編制的自主搖滾這一塊在池中沒有 2020 年代的碟。",
+  "risk": "掛名末字「ズ」是片假名複數尾，羅馬轉寫有「Suzuki Mikiko Zu」「Mikiko Suzuki Zu」多種寫法，MB 標題本身沒有自帶轉寫，依裁定 26 不自創、queryAlias 只填漢字＋假名原形。盤名「いばら」全平假名、僅三字，比對要帶掛名。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group 1d6a0885-f13f-4dd4-9015-aed27313aef5。回問確認：title「いばら」、artist-credit「鈴木実貴子ズ」、first-release-date 2026-01-28、primary-type Album、secondary-types 空、轄下 2 筆 release 全 Official（JP／XW）。藝人 MBID 2f2abdc2-1300-4dfc-a75a-bbd3e6aeefb4，名下 9 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "HANA 1st album; 花",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "HANA",
+  "album": "HANA",
+  "year": 2026,
+  "genres": [
+   "pop"
+  ],
+  "label": "NO LABEL MUSIC（catno SRCL-13610〜13613）",
+  "why": "2026-02-23 首發、JP 實體盤 2026-02-25，由 NO LABEL MUSIC 發行，編號 SRCL-13610 到 SRCL-13613 四種，MB 該 release-group 轄下 3 筆 release 全 Official、CD 11 軌、另附 7 曲 Blu-ray。這張是 Billboard JAPAN 2026 年上半期 Hot Albums 榜上榜的三張日本盤之一（另兩張為 BTS《ARIRANG》與 King & Prince《STARRING》），池中對應的只有 BTS 那張。池中 HANA 0 張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "⚠ 掛名與盤名同字串且只有四個大寫字母「HANA」，跨藝人跨語系撞卡風險是本批最高的一筆：日文「花」、韓文「하나」、以及多位同名藝人都會撞。撞卡檢查一定要用 MBID，不能靠字串。selfTitled 已標 true。多種初回限定版共用同一 release-group，封面各異，取 CD 那筆。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group ed7ad6b9-f05d-4ebd-a22c-01f175f7ac28。回問確認：title「HANA」、artist-credit「HANA」、first-release-date 2026-02-23、primary-type Album、secondary-types 空、轄下 3 筆 release 全 Official（未填國別一筆 2026-02-23、JP ×2 為 2026-02-25）。藝人 MBID 0c8c6c7a-aa33-400d-b297-d45ea1ecfc86，名下 12 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ZUTOMAYO; KEISOUDO; ずっと真夜中でいいのに",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "ずっと真夜中でいいのに。",
+  "album": "形藻土",
+  "year": 2026,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "EMI Records（catno UPCH-29503／UPCH-29504／UPCH-20717）",
+  "why": "2026-03-24 首發（HK 盤）、JP 盤 2026-03-25，由 EMI Records 發行，編號 UPCH-29503／29504／20717 三種，MB 該 release-group 轄下 6 筆 release，其中 4 筆 Official（HK 一筆、JP 三筆）、2 筆是標題作羅馬字「KEISOUDO」與「Keisoudo」的 pseudo-release，CD 有 18 軌、10 軌、8 軌三種切法。池中ずっと真夜中でいいのに。0 張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "掛名含句號結尾「。」，多數字串正規化會把它清掉，與不帶句號的寫法要一起查；羅馬字「ZUTOMAYO」是這團最通行的外部服務鍵，一定要進 queryAlias（裁定 25：alias 填外部服務認得的字串）。盤名「形藻土」三個漢字，MB 自帶的轉寫是「KEISOUDO」，依裁定 26 只取 MB 自帶的、不自創。CD 18／10／8 三種軌數，不填原盤軌數。封面與試聽走 jp 店面（HK 盤先出，hk 也要試）。",
+  "mbNote": "釘 release-group dbed9319-475b-4098-828e-41db4f6555db。回問確認：title「形藻土」、artist-credit「ずっと真夜中でいいのに。」、first-release-date 2026-03-24、primary-type Album、secondary-types 空、轄下 6 筆 release（HK Official 2026-03-24、JP Official ×3 為 2026-03-25、另兩筆 Pseudo-Release 標題「KEISOUDO」／「Keisoudo」）。藝人 MBID 14d2a235-30e2-489f-b490-f9dc7d2c0861，名下 58 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Odotte Bakari no Kuni",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "踊ってばかりの国",
+  "album": "PRISM",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "FIVELATER（catno FL1010）",
+  "why": "2026-06-10 由 FIVELATER 發行，編號 FL1010，MB 該 release-group 目前只有 1 筆 Official release、CD 11 軌。池中踊ってばかりの国 0 張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "掛名全為漢字＋平假名的長句型（8 字），Apple 端點對這種長掛名的命中率低，queryAlias 要填羅馬轉寫「Odotte Bakari no Kuni」——這是 MB 藝人 alias 有的寫法。盤名「PRISM」是極常見的英文單字，跨藝人撞卡風險高，比對要帶掛名。MB 上只有 1 筆 release，數位載體尚未建檔。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group cd4b4cd1-cd01-4445-b993-8789bb9a0010。回問確認：title「PRISM」、artist-credit「踊ってばかりの国」、first-release-date 2026-06-10、primary-type Album、secondary-types 空、轄下 1 筆 Official release（XW，CD 11 軌）。藝人 MBID ba1f06e9-6d2e-49b1-a51a-ce21cc452fca，名下 15 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kimishima Ozora; Ozora Kimishima",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "君島大空",
+  "album": "花落知多少",
+  "year": 2026,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Apollo Sounds（catno APLS2606）",
+  "why": "2026-06-17 由 Apollo Sounds 發行，編號 APLS2606，MB 該 release-group 目前只有 1 筆 Official release、9 軌數位。池中君島大空 0 張（實掃 seed_cards.json 全 14,424 列），日本 2020 年代的獨立創作歌手這一塊在池中是空的。",
+  "risk": "盤名「花落知多少」五個漢字，出自唐詩，中文圈與日文圈都讀得通，撞卡時要連華語藝人一起查（跨語系撞卡，裁定 49）。掛名「君島大空」全漢字，羅馬轉寫「Kimishima Ozora」是外部服務認得的形式，要進 queryAlias。MB 上只有數位載體，行文不得斷言實體發行。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group b957264f-5699-42aa-97de-b92b3554bd1e。回問確認：title「花落知多少」、artist-credit「君島大空」、first-release-date 2026-06-17、primary-type Album、secondary-types 空、轄下 1 筆 Official release（XW，Digital Media 9 軌）。藝人 MBID da7425bc-31f7-4b75-8e72-b6b4786196ad，名下 10 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "MONO Japan; モノ",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "MONO",
+  "album": "Snowdrop",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "Temporary Residence Limited（catno TRR453）",
+  "why": "2026-06-12 由 Temporary Residence Limited 發行，編號 TRR453，MB 該 release-group 轄下 2 筆 release 全 Official（US 與 XW）、8 軌，載體為 CD 與數位。池中 MONO 現有 4 張（實掃 seed_cards.json 全 14,424 列）：《Under the Pipal Tree》2001、《One Step More and You Die》2002、《You Are There》2006、《Hymn to the Immortal Wind》2009——2009 年之後整條目錄池中全無，且池中四張全部由同一廠牌 Temporary Residence 發行，這張與它們同一條線。",
+  "risk": "⚠ 掛名「MONO」四個大寫字母，MB 上至少有數個不同實體共用這個名字（本團藝人 MBID ffe02aed-ef7e-4736-a186-c2f1dd55ce8d），撞卡與封面配對都要用 MBID 不能用字串（裁定 29／126）。盤名「Snowdrop」是常見英文單字，跨藝人撞卡風險高。封面與試聽走 us／jp 店面。",
+  "mbNote": "釘 release-group e879c6f8-3697-4778-b238-7aa6a2360a5d。回問確認：title「Snowdrop」、artist-credit「MONO」、first-release-date 2026-06-12、primary-type Album、secondary-types 空、轄下 2 筆 release 全 Official（US／XW）。藝人 MBID ffe02aed-ef7e-4736-a186-c2f1dd55ce8d，名下 66 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "MOTFD; Iwaou; マスド",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "MASS OF THE FERMENTING DREGS",
+  "album": "祝おう",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "Flake Sounds（catno FLAKES-315）",
+  "why": "2026-08-12 由 Flake Sounds 發行，編號 FLAKES-315，MB 該 release-group 轄下 4 筆 release，3 筆 Official（JP 2026-08-12、JP 與 XW 2026-08-14）、6 軌，另一筆是標題作羅馬字「Iwaou」的 pseudo-release，載體為 CD 與數位。池中 MASS OF THE FERMENTING DREGS 0 張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "盤名「祝おう」漢字＋平假名共三字，MB 自帶轉寫「Iwaou」，依裁定 26 只取自帶的。掛名全大寫且長達 27 字元，Apple 端點對長掛名的命中率會掉，縮寫「MOTFD」是樂迷常用鍵、要進 queryAlias。全碟 6 軌，介於 EP 與專輯之間，但 MB primary-type 明載 Album、依裁定 167 照一般 Album 寫。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group 284a4afc-3462-46e4-abe9-b551a1ea76e4。回問確認：title「祝おう」、artist-credit「MASS OF THE FERMENTING DREGS」、first-release-date 2026-08-12、primary-type Album、secondary-types 空、轄下 4 筆 release（JP Official 2026-08-12、JP 與 XW Official 2026-08-14、另一筆 Pseudo-Release 標題「Iwaou」）。藝人 MBID 1a19b0cd-fa9d-4363-b130-b3eb394cf373，名下 14 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Atomew; テンパレイ",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Tempalay",
+  "album": "ATOMEW",
+  "year": 2026,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "SPACE SHOWER MUSIC",
+  "why": "2026-09-02 由 SPACE SHOWER MUSIC 發行，MB 該 release-group 目前只有 1 筆 Official release、9 軌數位、實體與編號尚未建檔。這是本批日期最晚的一張（收碟窗口是 2026 年 1 月到 9 月）。池中 Tempalay 0 張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "⚠ 發行日 2026-09-02、距今僅四天，MB 與 Apple 兩邊的資料都可能還在補建，封面與試聽的命中率是本批最低的一筆；若探測層查不到，先擱著不要判成查無（裁定 28／170）。盤名「ATOMEW」是造字、外部服務可能拼成「ATOME W」或「Atomew」，queryAlias 要填。掛名「Tempalay」與片假名「テンパレイ」兩種都要查。封面與試聽走 jp 店面。",
+  "mbNote": "釘 release-group 7c29ef20-c79a-4790-b66d-9293ca9ca3f5。回問確認：title「ATOMEW」、artist-credit「Tempalay」、first-release-date 2026-09-02、primary-type Album、secondary-types 空、轄下 1 筆 Official release（XW，Digital Media 9 軌）。藝人 MBID 0df05846-b031-4ed3-a8ed-ad4335ff6d02，名下 13 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "아이브 REVIVE+; IVE REVIVE",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "IVE",
+  "album": "REVIVE+",
+  "year": 2026,
+  "genres": [
+   "pop"
+  ],
+  "label": "STARSHIP Entertainment（catno L100006108／L200003530 等）／Ariola Japan",
+  "why": "2026-02-23 同日在 KR 與 JP 兩地發行，MB 該 release-group 轄下 13 筆 release 全 Official（KR 多筆、JP 一筆），12 軌，載體含 CD、下載卡與數位，韓國盤由 STARSHIP Entertainment 發行、日本盤掛 Ariola Japan。池中 IVE 0 張（實掃 seed_cards.json 全 14,424 列）；池中 2026 年的韓國盤目前只有 aespa《LEMONADE》與 BTS《ARIRANG》兩張。",
+  "risk": "⚠ 依 c-43 教訓與 c-105 的既有規矩，K-pop 卡要釘韓國母國正規盤、日版一律不釘；本張的 KR 與 JP release 同屬一個 release-group、同日發行，釘的是 release-group 本身，封面要取 KR 那筆、不要取 JP 盤。掛名在 MB 上有拉丁「IVE」與諺文「아이브」兩種 release 標題，兩種都要查撞卡（裁定 49）。盤名末尾的加號「+」在多數字串正規化下會被清掉、與「REVIVE」不相等。封面與試聽走 kr 店面（裁定：韓國盤自動配對常全滅，要走 collectionId 直查）。",
+  "mbNote": "釘 release-group 5a37b657-9f1d-4bce-b85f-9b1f5b72feca。回問確認：title「REVIVE+」、artist-credit「IVE」、first-release-date 2026-02-23、primary-type Album、secondary-types 空、轄下 13 筆 release 全 Official（JP 一筆、KR 多筆，KR 盤標題另有諺文「아이브」掛名寫法）。刻意不釘：6e3cc97c-db4b-4ede-9766-4974ea9696fe《LUCID DREAM》（2026-05-27 EP）、917cbaae-15ed-400d-b32a-cb3a3610cc1d《BLACKHOLE》（primary-type Other，2026-02-23 同日）、af154a09-c742-4dc1-86ec-af8a25b24c6a《BANG BANG》與 c8ddddd3-db0d-460e-8cce-ccfad9c1170c《Fashion》（單曲）。藝人 MBID b2f2216a-d7a9-4ce0-8b8f-f494d9a8c196，名下 40 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "FLOWERING; 악뮤; 악동뮤지션; Akdong Musician; Gaehwa",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "AKMU",
+  "album": "개화",
+  "year": 2026,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "영감의 샘터／YG PLUS（catno YP0829）",
+  "why": "2026-04-07 由 영감의 샘터 與 YG PLUS 共同發行，編號 YP0829，MB 該 release-group 轄下 3 筆 release 全 Official（KR ×2、未填國別一筆）、11 軌，載體為 CD 與數位；同一 release-group 內韓文盤標題作「개화」、另兩筆作英文「FLOWERING」。池中 AKMU 0 張（實掃 seed_cards.json 全 14,424 列，諺文「악뮤」與拉丁「AKMU」兩種寫法都查過）。",
+  "risk": "⚠ 同一 release-group 內兩種盤名並存（諺文「개화」與英文「FLOWERING」），卡片取韓國母國盤的諺文寫法（裁定 6：盤名採原始發行的寫法），英文寫法進 queryAlias。掛名「AKMU」是官方拉丁寫法（前身「악동뮤지션」／Akdong Musician），諺文「악뮤」與舊團名兩種都要查撞卡。封面與試聽走 kr 店面。",
+  "mbNote": "釘 release-group e05d8474-fde9-4cd2-89a0-5d83f9bc5493。回問確認：title「개화」、artist-credit「AKMU」、first-release-date 2026-04-07、primary-type Album、secondary-types 空、轄下 3 筆 release 全 Official（KR 兩筆，標題分別為「FLOWERING」與「개화」；另一筆未填國別、標題「FLOWERING」）。藝人 MBID a1eba844-8c3e-4c61-8f54-f5e086b58c01，名下 27 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "This & That; THIS AND THAT; 스트레이 키즈",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Stray Kids",
+  "album": "THIS & THAT",
+  "year": 2026,
+  "genres": [
+   "pop",
+   "hiphop"
+  ],
+  "label": "JYP Entertainment／Republic Records（catno BOH7F9N767）",
+  "why": "2026-08-07 由 JYP Entertainment 與 Republic Records 共同發行，編號 BOH7F9N767，MB 該 release-group 轄下 6 筆 release，載體含 CD（8 軌）、8 公分 CD（4 軌）、另一種 CD（2 軌）與數位（8 軌）。池中 Stray Kids 現有 2 張（實掃 seed_cards.json 全 14,424 列）：《THE SOUND》2023、《KARMA》2025。",
+  "risk": "⚠ 該 release-group 轄下有兩筆 status 為 null（未填）的 release，其餘 Official；未填 status 的不採為背書（裁定 167 附帶）。同一 release-group 內標題大小寫兩種並存（「THIS & THAT」與「This & That」），且「&」與「and」的分裂是池中已知的六組問題之一，兩種都要查撞卡。有兩筆 release 日期只填到年（2026），不能拿來當首發日。8 公分 CD 4 軌與主 CD 8 軌是不同載體的不同曲目切法，不填原盤軌數。封面與試聽走 kr／jp／us 店面。",
+  "mbNote": "釘 release-group 358208ef-eb2b-4bc5-9b65-5c8069c82c20。回問確認：title「THIS & THAT」、artist-credit「Stray Kids」、first-release-date 2026-08-07、primary-type Album、secondary-types 空、轄下 6 筆 release（KR 一筆 status 未填、XW 與另兩筆 Official、一筆 status 未填）。刻意不釘：f3efc4af-6e09-4ea6-b059-15f3b2852fec《SKZ-REPLAY 2026 Pt.1》（Album+Compilation，2026-07-31）、4840b7a1-4b5f-4e90-afe6-dc713f7cedb1《Endless Sun》、ad30176e-c9f0-4fbd-b473-3858f81f403a《RUN IT》（單曲）。藝人 MBID 142b343d-bf5a-428c-a64f-6d1a7566bbe9，名下 99 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "보이넥스트도어; BND",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "BOYNEXTDOOR",
+  "album": "HOME",
+  "year": 2026,
+  "genres": [
+   "pop"
+  ],
+  "label": "KOZ Entertainment（catno KOZ0772）",
+  "why": "2026-06-08 由 KOZ Entertainment 發行，編號 KOZ0772，MB 該 release-group 轄下 3 筆 release 全 Official（KR ×2、XW），數位版 8 軌、CD 版 9 軌。池中 BOYNEXTDOOR 0 張（實掃 seed_cards.json 全 14,424 列，諺文「보이넥스트도어」與拉丁兩種寫法都查過）。",
+  "risk": "⚠ 掛名在池中的既有分裂形狀已知：MB 上同時有「보이넥스트도어」與「BOYNEXTDOOR」兩種 artist-credit（2024 年《AND,》那張兩種都有），撞卡與封面配對兩種都要查（裁定 49）。盤名「HOME」四個大寫常用字，跨藝人撞卡風險是本組最高的幾筆之一，比對一定要帶掛名或 MBID。數位 8 軌 vs CD 9 軌，不填原盤軌數。封面與試聽走 kr 店面。",
+  "mbNote": "釘 release-group ced8da5a-06bf-4570-9834-4456e5bb2ca2。回問確認：title「HOME」、artist-credit「BOYNEXTDOOR」、first-release-date 2026-06-08、primary-type Album、secondary-types 空、轄下 3 筆 release 全 Official（KR ×2、XW）。藝人 MBID 656d0024-7b5f-4089-9d3e-ce383f15f1b7，名下 28 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Album 0; Lee Seung Yoon; 이승윤 0집",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "이승윤",
+  "album": "0집",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "MAREUMO",
+  "why": "2026-06-26 由 MAREUMO 發行，MB 該 release-group 轄下 2 筆 release 全 Official，KR 盤標題作「0집」、XW 盤作英文「Album 0」，數位版有 12 軌與 17 軌兩種切法，實體與編號尚未建檔。池中이승윤 0 張（實掃 seed_cards.json 全 14,424 列），韓國 2020 年代的創作歌手／樂團這一塊在池中是空的。",
+  "risk": "⚠ 盤名「0집」以阿拉伯數字開頭、第二字是諺文「집」（輯），多數字串正規化會把它變成「0」，與任何含數字 0 的盤名都可能相等（裁定 49 的極端形狀）；英文寫法「Album 0」要進 queryAlias。掛名諺文「이승윤」依 2026-08-11 裁定維持諺文不羅馬化，但外部服務認得的是「Lee Seung Yoon」，依裁定 25 把轉寫放進 queryAlias。12／17 兩種軌數，不填原盤軌數。封面與試聽走 kr 店面。",
+  "mbNote": "釘 release-group 99a6df27-c6ec-43cd-9ce7-f5c82b7e6663。回問確認：title「0집」、artist-credit「이승윤」、first-release-date 2026-06-26、primary-type Album、secondary-types 空、轄下 2 筆 release 全 Official（KR 標題「0집」、XW 標題「Album 0」）。藝人 MBID 5224328d-d1f9-4a5a-afc2-5c6e204a23db，名下 11 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "웨이브 투 어스; wavetoearth",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "wave to earth",
+  "album": "bad pieces",
+  "year": 2026,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Wavy International",
+  "why": "2026-08-07 由 Wavy International 發行，MB 該 release-group 目前只有 1 筆 Official release、11 軌數位、實體與編號尚未建檔。先行單曲《heaven and hell》2026-05-15。池中 wave to earth 0 張（實掃 seed_cards.json 全 14,424 列）。",
+  "risk": "掛名全小寫三個常用英文字「wave to earth」，跨藝人撞卡與 Apple 搜尋都容易誤中，比對要帶盤名或 MBID。盤名「bad pieces」同樣是兩個常用字。MB 上只有數位載體，行文不得斷言實體發行。掛名雖是拉丁字母，樂團是韓國團，封面與試聽 kr 與 us 兩個店面都要試。",
+  "mbNote": "釘 release-group 84243947-bc02-409b-a5b5-5109d2318876。回問確認：title「bad pieces」、artist-credit「wave to earth」、first-release-date 2026-08-07、primary-type Album、secondary-types 空、轄下 1 筆 Official release（XW，Digital Media 11 軌）。刻意不釘：b86eae70-2155-45aa-b8bd-f0be9fe1c843《heaven and hell》（2026-05-15 先行單曲）。藝人 MBID 89e95aa3-bd49-4af3-9c87-0d88b2093bb0，名下 15 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "在这里停一下; deca joins 2026",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "deca joins",
+  "album": "在這裡停一下",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "（MB 未填廠牌）",
+  "why": "2026-03-23 發行，MB 該 release-group 目前只有 1 筆 Official release、13 軌數位，廠牌與編號尚未建檔。池中 deca joins 現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Go Slow》2018、《鳥鳥鳥》2020——2020 年之後的目錄池中全無，這張接在《鳥鳥鳥》之後。",
+  "risk": "⚠ MB 上廠牌與編號都沒填，行文不得斷言發行方（裁定 128）。掛名「deca joins」全小寫，池中兩張同寫法，維持一致。盤名「在這裡停一下」六個繁體字，簡體寫法「在这里停一下」要一起查（本輪共用簡報第二節）。MB 上只有數位載體。封面與試聽走 tw 店面。",
+  "mbNote": "釘 release-group 34833e7e-e3c6-49fb-b421-714aa210424a。回問確認：title「在這裡停一下」、artist-credit「deca joins」、first-release-date 2026-03-23、primary-type Album、secondary-types 空、轄下 1 筆 Official release（XW，Digital Media 13 軌，label-info 空）。藝人 MBID 0ec64e22-aa09-48d3-9ec6-2f3f8575554f，名下 8 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "灵魂的回声; Echo Taiwan; 回聲樂團 Echo",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "回聲樂團",
+  "album": "靈魂的回聲",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "回聲社音樂有限公司（catno ECHOCD015）",
+  "why": "2026-08-28 由樂團自營的回聲社音樂有限公司發行，編號 ECHOCD015，MB 該 release-group 只有 1 筆 TW Official release，CD 兩片、分別是 10 軌與 6 軌。池中回聲樂團現有 2 張（實掃 seed_cards.json 全 14,424 列）：《感官駕馭》2002、《巴士底之日》2007——2007 年之後整條目錄池中全無。",
+  "risk": "⚠ 掛名「回聲樂團」的英文團名是「Echo」，池中「Echo」這個字串下已有 Echo & the Bunnymen 6 張與 Echobelly、Echospace 等共 11 筆，全部與本團無關；用英文團名查撞卡會全部誤中，一定要用繁體掛名或 MBID（裁定 29／49）。盤名「靈魂的回聲」含團名「回聲」二字，與團名字串互相包住（裁定 162 的鏡像）。簡體「灵魂的回声」也要查。MB 上該藝人只有 3 個 release-group，池中兩張都不在裡面，代表 MB 對這團的建檔不完整、不能用它反推目錄。封面與試聽走 tw 店面。",
+  "mbNote": "釘 release-group 5058e1ce-5d59-48d7-a48d-94a111ac9861。回問確認：title「靈魂的回聲」、artist-credit「回聲樂團」、first-release-date 2026-08-28、primary-type Album、secondary-types 空、轄下 1 筆 TW Official release（CD ×2，10 軌＋6 軌）。藝人 MBID 025522c5-dc7f-4037-9b81-167cf52b615b，名下僅 3 個 release-group（建檔不完整）。"
+ }
+]

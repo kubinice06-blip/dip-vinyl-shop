@@ -1,0 +1,415 @@
+[
+ {
+  "artist": "Zodiac",
+  "album": "Music in the Universe",
+  "year": 1982,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-18365-6，SU 1982；拉脫維亞語／俄語雙盤面，壓片走 Rīga 分廠",
+  "why": "Zodiac（拉脫維亞語 Zodiaks）1979 年在里加成立，是蘇聯最暢銷的電子樂團；1980 年的《Disco Alliance》賣破兩千萬張，1982 年這張《Music in the Universe》是續作，兩張合起來就是蘇聯 space-disco 的全部正典。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Zodiac 池中 1 張（《Disco Alliance》1980，同時見於 onboarding-manifest-c53-20260903.json），本卡補的就是緊接在它後面的第二張。MB 回問確認 primary-type Album、轄下 5 個 Official release（1982 SU 原盤 Мелодия С60-18365-6、12\" Vinyl 7 軌；1983 三次再壓；2021 RU 數位）。",
+  "risk": "⚠ 掛名寫法分歧（本批最需要注意的一組）：MB 的藝人實體名是拉脫維亞語的「Zodiaks」（505894dc…，Group／LV／1979-12，disambiguation「Latvian space-disco band」），但**本 RG 的 artist-credit 就是拉丁的「Zodiac」**；而同掛名 1989 年的《In Memoriam》RG artist-credit 又寫成「Zodiaks」——MB 內部就已分裂。池中既有卡寫「Zodiac」，依第 177 條第 1 步沿用「Zodiac」，兩種寫法都已掃過池、都是只有那 1 張。⚠ 盤名：MB RG title 是雙語的「Музыка во Вселенной = Music in the Universe」，2021 年 RU 再發 release 的 title 才是純拉丁的「Music in the Universe」；依第 45 條取再發名，也讓卡片盤名與池中既有的拉丁盤名一致。撞卡風險：池中《Disco Alliance》與本卡摺鍵不同。⚠ Apple 上另有 collectionId 219350985《Disco Alliance/Music In Universe》(1981) 是把兩張併在一起的合輯條目，**不是本卡**。年份分歧：MB 1982、Apple 標 1982（ee/lv 的 1556224450《Музыка во Вселенной》），一致。封面與試聽：CAA release-group 回 200、2 張圖；Apple 在 ee／lv 等店面命中 collectionId 1556224450，但盤名是西里爾的《Музыка во Вселенной》，配對要跨書寫系統放寬。",
+  "mbNote": "釘 release-group d68de909-f024-47be-a904-dd3aac320c56。回問確認：title「Музыка во Вселенной = Music in the Universe」、**artist-credit「Zodiac」**、first-release-date 1982、primary-type Album、secondary-types 空、轄下 5 個 release（8756c521… 1982/SU/Official、Мелодия С60-18365-6、12\" Vinyl 7 軌；e1408af4／5ddc06d1／d893d987 三筆 1983/SU 再壓；bbb0e482… 2021/RU/Official，title「Music in the Universe」）。**卡片盤名取 2021 再發名，第 45 條。** 藝人 MBID 505894dc-27fa-4dea-b802-963bf19c3cd6（MB 實體名「Zodiaks」），分頁全列 12 個 RG。刻意不釘：300286f7-076e-3760-bf46-58102d3556e6《Disco Alliance》(1980，**池中已有此卡**)、6f3e53c0-3ce4-4a74-9392-64ff0057ce11《Музыка из кинофильмов》(1982，secondary-types 含 Soundtrack 且全西里爾盤名)、622b593c-1b1d-475e-9491-2e6c2e536d99《Mākoņi》(1991，本批名額不足，可進下一批)、ea586041-cd0f-3c29-94df-5f3dfd9fb537《Disco Alliance / Music in Universe》(1995 Compilation，內容＝池中已有卡＋本卡，超出年份窗口)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zodiac Music in the Universe；Zodiaks Mūzika Visumā；Зодиак Музыка во Вселенной；Zodiac Melodiya С60-18365",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Zodiac",
+  "album": "In Memoriam",
+  "year": 1989,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 28301 009，SU 1989；壓片走 Rīga 分廠",
+  "why": "Zodiac 第三張、也是蘇聯時期最後一張 LP，從前兩張的 space-disco 轉向較沉的合成器音景。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Zodiac 池中 1 張（《Disco Alliance》1980），本批另收 1982 年的《Music in the Universe》，三張合起來是這團在蘇聯時期的完整 LP 目錄。MB 回問確認 primary-type Album、轄下 6 個 Official release（1989 SU 兩筆原壓 Мелодия С60 28301 009、Vinyl 8 軌；1996／2005 LV 以《Dedication》之名再發；2001 DE；2021 RU）。",
+  "risk": "⚠ 掛名寫法分歧：**本 RG 的 artist-credit 是「Zodiaks」**（與本批另一張《Music in the Universe》的「Zodiac」不同），Apple 的 de 店面也寫「Zodiaks」、ru 店面寫「Зодиак」——同一團在 MB／Apple 上共有三種寫法。依第 177 條第 1 步統一沿用池中既有的「Zodiac」，並在此註記，下游撞卡三種都要查。⚠ 1996 與 2005 年的 LV 再發把盤名改成《Dedication》，**但 MB RG title 仍是 In Memoriam、2021 RU 再發也用回 In Memoriam**，所以第 45 條的「取再發名」在這裡不適用，卡片取 RG 標題。撞卡風險：池中《Disco Alliance》與本卡摺鍵不同；與本批《Music in the Universe》也不撞。⚠ 盤名「In Memoriam」是極常見的拉丁詞組，Apple 搜出的 21 筆裡有英國皇家空軍軍樂隊與 Hardy Mertens 現場輯，**單用盤名比對必然回噪音**。年份分歧：無。封面與試聽：CAA release-group 回 200、1 張圖；Apple 在 ee／lv／ru／de 等店面命中 collectionId 1569073250（年份 1989，與 MB 一致）。",
+  "mbNote": "釘 release-group 822bc2fc-49ff-3d65-9a9f-91cb2e4fe3a2。回問確認：title「In Memoriam」、**artist-credit「Zodiaks」**、first-release-date 1989、primary-type Album、secondary-types 空、轄下 6 個 release（6f986c32… 與 b8a16abb… 皆 1989/SU/Official、Мелодия С60 28301 009、Vinyl 8 軌；8ed3b998… 1996-10-21/LV/Official《Dedication》；5c633a07… 2001/DE；83f4e7a8… 2005-08/LV《Dedication》；78a98b63… 2021/RU）。藝人 MBID 505894dc-27fa-4dea-b802-963bf19c3cd6。刻意不釘：見同掛名《Music in the Universe》卡的清單（300286f7… 池中已有、6f3e53c0…、622b593c…、ea586041…）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zodiac In Memoriam；Zodiaks In Memoriam；Zodiaks Dedication；Зодиак In Memoriam",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Pērkons",
+  "album": "Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "LV 1987 發行，MB label-info 未填廠牌與目錄號（CD 8 軌）；樂團 1981–1986 年遭禁演期間的曲目集結",
+  "why": "Pērkons（雷神）1981 年在里加成立，是拉脫維亞最重要的搖滾團，1982 年因一場演唱會引發的騷動被當局禁演多年——這是波羅的海三國最典型的「體制直接介入」案例。盤名意為「七首半以 Eduards Veidenbaums 的詩寫成的歌」，Veidenbaums 是十九世紀末的拉脫維亞詩人，用他的詩是繞過審查的常見手法。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Pērkons 池中 0 張（帶變音符號的 Pērkons 與不帶的 Perkons 兩種寫法都掃過）。MB 回問確認 primary-type Album、1 個 Official release（1987 LV/Official、CD 8 軌）。",
+  "risk": "⚠ 掛名變音符號：MB 實體名是「Pērkons」（帶 ē），Apple 上寫成無變音的「Perkons」——**兩種寫法都要查撞卡**，池中都是 0 張。MB 精確查詢首筆即為目標（7ca8e322…，Group／LV／1981），其餘三筆是 Jānis／Arturs／Valērijs Pērkons 等同姓者（其中一位是攝影師），靠 type=Group 與 begin=1981 分辨。⚠ 盤名極長（48 字），摺鍵後仍長，做外部比對建議只用「Veidenbauma」當關鍵詞。⚠ MB 該 release 沒有 label-info——**這張 1987 年的碟在 MB 上查不到廠牌與目錄號**，label 欄只能照實寫；它是否為 Melodiya Rīga 分廠壓片，MB 資料不足以判定。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Pērkons Veidenbauma」搜出 0 筆，`search` 與藝人目錄兩種查法未命中（同掛名的《Dziesmu izlase #1》有上架，見那張卡）。",
+  "mbNote": "釘 release-group e273e54d-5f10-46f7-9ad7-66eb638c2237。回問確認：title「Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem」、artist-credit「Pērkons」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 1 個 release（3c8e237a… 1987/LV/Official、CD 8 軌、**label-info 為空**）。藝人 MBID 7ca8e322-7902-46ce-af39-8c9b168907b9（Group／LV／1981），分頁全列 13 個 RG。刻意不釘：97bd1cc5-deca-4faa-94ae-09574af2dffa《Koncerts》(1988，**secondary-types 雖為空但盤名即「演唱會」、MB media 為 CD 18 軌，形態上是現場輯**，依裁定 227 不當成原盤處理，本批不收)、42b30245-3eab-491f-b5e9-e4c66b8b3e03《Ballīte / A Hoedown》(1990，本批名額不足，可進下一批)、9efb79d0-b778-4c6f-bd45-f002f47a391b《Zibens Pa Dibenu》(1994 Compilation)、8ef6efe5-1a19-3289-8061-b92d3c2e33d1《Dziesmu izlase #2 (1985-1987)》與 0bdf9fb0-f91d-305b-a60b-09902c68400c《Dziesmu izlase #3 (1990-1991)》（依 §5.6「同一批錄音的多種合輯只挑最權威的一種」，本批只取 #1）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pērkons Septiņarpus dziesmas；Perkons Veidenbauma；Pērkons Eduards Veidenbaums；Перконс",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Pērkons",
+  "album": "Dziesmu izlase #1 (1981-1982)",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Mikrofona ieraksti，MRCD 006，LV 1994（CD 20 軌）；原始錄音為 1981–1982 年、樂團被禁演之前",
+  "why": "Pērkons 1982 年在利耶帕亞的演出引發騷動後被禁演數年，1981–1982 這兩年的曲目因此從未出成唱片。1994 年 Mikrofona ieraksti 的《Dziesmu izlase》系列第一集把那批錄音整編出來。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Pērkons 池中 0 張。本批另收其 1987 年的 Veidenbaums 詩作專輯，兩張分別對應「被禁前」與「解禁後」。依 §5.6「同一批錄音的多種合輯只挑最權威的一種」，系列另有 #2 (1985-1987) 與 #3 (1990-1991)，本批只取涵蓋被禁前那兩年的 #1。",
+  "risk": "年份：依本批裁定取原始錄音年 1981（合輯副標即 1981-1982），1994 的出版年寫在 mbNote、label 與 exceptionReason，行文時兩個年份要分開講。⚠ 盤名含井號與括號「Dziesmu izlase #1 (1981-1982)」，Apple 上寫成「Dziesmu Izlase, Vol.1 (1981-1982)」——**盤名格式不同，配對要放寬**；Apple 的掛名也寫成無變音的「Perkons」。撞卡風險：池中無 Pērkons（兩種寫法都掃過）；與本批另一張 Pērkons 盤名不同。⚠ 盤名裡的連字號與括號內年份都是 ASCII，已確認。封面與試聽：CAA release-group 回 200、2 張圖；Apple 八店面全部命中 collectionId 930979653（年份標 1994＝合輯出版年，**與本卡的 year 1981 不同，下游不要拿 Apple 年份覆蓋**）。",
+  "mbNote": "釘 release-group cbad796b-fa51-3f77-8a68-a02deafee173。回問確認：title「Dziesmu izlase #1 (1981-1982)」、artist-credit「Pērkons」、first-release-date 1994、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（2b7456ff… 1994/LV/Official、Mikrofona ieraksti MRCD 006、CD 20 軌）。藝人 MBID 7ca8e322-7902-46ce-af39-8c9b168907b9。刻意不釘（§5.6 只挑一種）：8ef6efe5-1a19-3289-8061-b92d3c2e33d1《Dziesmu izlase #2 (1985-1987)》(1996)、0bdf9fb0-f91d-305b-a60b-09902c68400c《Dziesmu izlase #3 (1990-1991)》(2003)、9efb79d0-b778-4c6f-bd45-f002f47a391b《Zibens Pa Dibenu》(1994)、a4355d02-5693-4be2-b845-40078172503f《7-os no rīta》(2018)；另 97bd1cc5-deca-4faa-94ae-09574af2dffa《Koncerts》(1988，現場輯形態，見同掛名另一卡的說明)。",
+  "releaseType": "Compilation",
+  "exceptionReason": "Pērkons 1981–1982 年的曲目正是導致樂團被當局禁演的那一批，當年沒有機會發成唱片；1994 年拉脫維亞獨立廠 Mikrofona ieraksti 的《Dziesmu izlase #1》把那兩年的二十軌集結出版，是這批錄音唯一成套可得的形態，也是理解拉脫維亞搖滾與審查衝突的核心文獻。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/cbad796b-fa51-3f77-8a68-a02deafee173",
+   "https://music.apple.com/lv/album/930979653"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Pērkons Dziesmu izlase 1；Perkons Dziesmu Izlase Vol.1；Pērkons 1981-1982；Perkons Mikrofona ieraksti MRCD 006",
+  "reissuedBy": "Mikrofona ieraksti",
+  "g": "b"
+ },
+ {
+  "artist": "Menuets",
+  "album": "Dzeguzes balss",
+  "year": 1979,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-11303-4，SU 1979；拉脫維亞語盤面，壓片走 Rīga 分廠",
+  "why": "Menuets 1968 年在里加成立，是拉脫維亞最早的搖滾團之一；《Dzeguzes balss》（杜鵑之聲）是他們唯一在蘇聯時期發行的 LP，作曲全部出自 Imants Kalniņš——拉脫維亞非官方音樂最核心的作曲家。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Menuets 池中 0 張。MB 回問確認 primary-type Album、轄下 3 個 Official release（1979 SU 兩筆原壓 Мелодия С60-11303-4、12\" Vinyl 8 軌；一筆無日期）。",
+  "risk": "⚠ **掛名取捨要記清楚**：這張 RG 的 artist-credit 是「Imants Kalniņš / Menuets」（作曲家／演出樂團的合掛名），該 RG 同時列在 Imants Kalniņš（c0c0027c…）與 Menuets（fdbc0ae2…）兩個藝人名下。本卡取「Menuets」而非 artist-credit 原字串，理由有二：(1) 帶斜線的掛名進池後在卡面與比對上都會出問題；(2) Imants Kalniņš 在本批已有自己的一卡（《4. simfonija》），用合掛名會把同一位作曲家拆成兩個掛名。**這是本批立的裁定，偏離第 20／第 6 條的取字串慣例，寫進 rulings。** 下游撞卡要同時查「Menuets」「Imants Kalniņš」「Imants Kalniņš / Menuets」三種。撞卡風險：池中三種寫法都是 0 張。MB 精確查詢首筆即為目標（fdbc0ae2…，Group／LV／1968-11-04），第 2 筆是團員 Andris Sējāns。年份分歧：無。封面與試聽：CAA release-group 回 200、**5 張圖**；Apple 在 ee／lv／lt／de／fi／us／gb 七個店面命中 collectionId 1349735639（掛名寫「Menuets」、盤名寫「Dzeguzes Balss」、年份 1979，與本卡取捨一致）。",
+  "mbNote": "釘 release-group cfb9d0e7-582d-4806-a885-2d66b46002cb。回問確認：title「Dzeguzes balss」、**artist-credit「Imants Kalniņš / Menuets」**（本卡取「Menuets」，見 risk 與 rulings）、first-release-date 1979、primary-type Album、secondary-types 空、轄下 3 個 release（186fc69e… 1979/SU/Official、Мелодия С60-11303-4、12\" Vinyl 8 軌；16da2f34… 1979/SU/Official；26d7f40d… 無日期）。該 RG 同時列在藝人 fdbc0ae2-d6e9-4615-9e08-07e21718b950（Menuets，Group／LV／1968-11-04，4 個 RG）與 c0c0027c-11ac-4637-9a4c-a2693ca21d5b（Imants Kalniņš，30 個 RG）名下。刻意不釘：8ce51803-e64e-3998-8030-e70896143105《In Memoriam》(1996)、d245e42d-9266-3fc3-ba19-cac452886833《Kamēr Saule vēl nenoriet》(1998)、edc6339f-4e80-3c09-8838-c7d72456d930《Cilvēks, kas smejas》(2005)，皆超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Menuets Dzeguzes balss；Dzeguzes Balss 1979；Imants Kalniņš Menuets；Menuets Melodiya С60-11303",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Līvi",
+  "album": "Iedomu pilsēta",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 23627 009，SU 1986；拉脫維亞語盤面，壓片走 Rīga 分廠",
+  "why": "Līvi 1976 年在利耶帕亞成立，是拉脫維亞硬搖滾的代表團；《Iedomu pilsēta》（想像之城）是他們第一張全長 LP（1985 年只出過一張 4 軌 7 吋）。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Līvi 池中 0 張（帶長音符號的 Līvi 與不帶的 Livi 兩種寫法都掃過）。MB 回問確認 primary-type Album、1 個 Official release（1986 SU、Мелодия С60 23627 009、12\" Vinyl 9 軌）。",
+  "risk": "⚠ **裁定 227 的實例，要記進 rulings**：同掛名 1985 年的《Aprīļa pilieni》(08742e9c…) 在 MB 上 primary-type 是 Album、secondary-types 是空的，看起來像原盤 LP；但回問其 release（cb3c35b6…）後發現 media 是「7\" Vinyl、4 軌」——**那是一張 7 吋小碟，不是專輯**。本卡因此改取 1986 年的《Iedomu pilsēta》（12\" Vinyl 9 軌）。⚠ 掛名變音：MB 實體名「Līvi」（帶 ī），Apple 也寫 Līvi，但另有一個沒填國別的電子流行歌手「Līvi」（2762f11d…，score 90，**disambiguation 只寫「electronic pop singer」、無國別無年份，不得背書本名**），以及日本同人 Livi、韓國製作人 LiVi 等——共擋下 14 個同名實體。撞卡風險：池中兩種寫法都是 0 張。年份分歧：無。封面與試聽：CAA release-group 回 200、4 張圖；Apple 八店面命中 collectionId 869564186，但那是 2006 年把《Iedomu pilsēta》與《Aprīļa pilieni》併成一張的再發輯（盤名「Iedomu pilsēta un Aprīļa pilieni」），**不是本卡的單獨條目**，配對時要判是否接受併輯。",
+  "mbNote": "釘 release-group e03f9dc3-4a76-4a00-b817-6b6640e348a4。回問確認：title「Iedomu pilsēta」、artist-credit「Līvi」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 1 個 release（0772fc33… 1986/SU/Official、Мелодия С60 23627 009、12\" Vinyl 9 軌）。藝人 MBID e695947f-ec86-4ad1-a0a7-8edceab85814（Group／LV／1976-07），分頁全列 21 個 RG。刻意不釘：08742e9c-2b70-433f-8332-18e64bff6ef0《Aprīļa pilieni》(1985，**回問 release 後確認 media 為 7\" Vinyl 4 軌，形態上不是專輯**，裁定 227)、db2c5cbf-dbd9-4c3e-80b3-80ae8eeabb14《Kurzemei - saules ceļš》(1988，12\" LP，本批名額不足、可進下一批)、19b85bec-cf62-4d32-879a-ac09a3868655《Līvi》(1988)、e7b1befb-0cc2-34d6-a670-253f3078c516《Karogi (1984-1994)》(1994 Compilation)、7a90eb85-d3ed-390e-8229-c0f1c89c6e81《Kurzemei - saules ceļš / Līvi dzīvi》與 b4d99f8f-42c7-31d2-9d97-103af34b3967《Iedomu pilsēta / Aprīļa pilieni》(皆 2006 併輯，**後者內容含本卡**)，最後三者超出年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Līvi Iedomu pilsēta；Livi Iedomu pilseta；Līvi 1986；Livi Melodiya С60 23627",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Zigmars Liepiņš & Opus",
+  "album": "Pēc likuma",
+  "year": 1988,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 27423 007，LV 1988；拉脫維亞語盤面，壓片走 Rīga 分廠",
+  "why": "Zigmars Liepiņš 是拉脫維亞 1980 年代最重要的流行搖滾作曲家（後來當過拉脫維亞國家歌劇院院長），Opus 是他 1982 年組的樂團。《Pēc likuma》（依法）是這個組合唯一的 LP，也是 Opus 名下在 MB 上唯一一張碟。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Opus（拉脫維亞的那個）與 Zigmars Liepiņš 池中都是 0 張——池中唯一摺到的是義大利前衛團 Opus Avantra（2 筆），不是本人。MB 回問確認 artist-credit 是「Zigmars Liepiņš & Opus」，primary-type Album、1 個 Official release（1988 LV、Мелодия С60 27423 007、12\" Vinyl 7 軌）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250 的最極端案例）：單查「Opus」在 MB 回 15 筆，目標（6527d992…，Group／LV／1982，disambiguation「Latvian pop-rock group」）**排第 5、score 84**；前面依序是奧地利的 Opus（〈Live Is Life〉，score 100）、The Opus、英國 dubstep 的 Opus、南斯拉夫前衛團 Opus——**目標的 score 比第一名低 16 分，score 排序完全不可用**；後面還有荷蘭、美國龐克、孟加拉、紐西蘭合唱團、東德團等，共擋下 14 個同名實體，其中兩筆連 country 都沒填。**採用 RG 的 artist-credit「Zigmars Liepiņš & Opus」當掛名正好把這個歧義解掉**，這是本批處理短掛名的可複製作法。撞卡風險：池中無此掛名。⚠ 掛名含 ņ 變音與 ASCII 的 &，已確認無非 ASCII 連字號；`chk-prop` 會把 & 摺成 and，比對時要記著。年份分歧：無。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面全部命中 collectionId 1616105112（掛名寫成無變音的「Zigmars Liepins & Opus」、盤名「Pēc Likuma」、年份 1988），是本批店面覆蓋最好的幾張之一。",
+  "mbNote": "釘 release-group 2a140ff8-1247-402f-a73a-0f1dd50d6e76。回問確認：title「Pēc likuma」、artist-credit「Zigmars Liepiņš & Opus」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 1 個 release（b5ee24a6… 1988/LV/Official、Мелодия С60 27423 007、12\" Vinyl 7 軌）。藝人 MBID 6527d992-ef1d-4468-abe5-7d90587b6079（Opus，Group／LV／1982），**分頁全列只有 1 個 RG**——這個掛名在 MB 上僅此一張碟，無對照組可寫刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zigmars Liepiņš Opus Pēc likuma；Zigmars Liepins Opus Pec Likuma；Opus Latvia 1988；Opus Melodiya С60 27423",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Credo",
+  "album": "Melnais kliedziens",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 24883 003，LV 1986；拉脫維亞語盤面，壓片走 Rīga 分廠",
+  "why": "Credo 1974 年成立於里加，是拉脫維亞 1980 年代流行搖滾的主力團之一，與 Raimonds Pauls 長期合作。《Melnais kliedziens》（黑色的吶喊）是他們同年兩張 LP 中較被記得的一張，同批錄音隔年另以俄語盤名《Крик》在全蘇發行。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Credo 池中 0 張。MB 回問確認 primary-type Album、轄下 2 個 Official release（1986 LV 原盤 Мелодия С60 24883 003、12\" Vinyl 6 軌；1987 SU 俄語盤《Крик》）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Credo」在 MB 回 15 筆，目標（d2693422…，Group／LV／1974-10-04，disambiguation「Latvian pop-rock」）雖排第 1、score 100，但清單裡有**兩個愛沙尼亞的 Credo**（b2644505… disambiguation「Estonian ensemble」、9bc5b001… disambiguation「Estonian rock band」，score 都是 91）——**與本批 prop-a 的愛沙尼亞組同國，是本批最容易配錯的一組**；另有英國前衛、斯洛伐克、阿根廷、捷克、波蘭 hiphop、俄國 Mr. Credo 等，共擋下 14 個同名實體。撞卡風險：池中無 Credo。⚠ 同掛名 1986 年另有一張《Baltais ceļš》（白色的路，be72de50…），與本卡是同年配對發行的姊妹作，盤名一黑一白、極易混，本批只收《Melnais kliedziens》。年份分歧：無。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面命中 collectionId 958785064，但那是 2004 年把《Melnais kliedziens》與《Austrumu motīvi》併成一張的再發輯（掛名寫「Credo & Raimonds Pauls」、盤名「Melnais Kliedziens Un Austrumu Motīvi」），**不是本卡的單獨條目**。",
+  "mbNote": "釘 release-group fa282f81-05b1-4334-a7d9-3bedacb81379。回問確認：title「Melnais kliedziens」、artist-credit「Credo」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 2 個 release（f8506903… 1986/LV/Official、Мелодия С60 24883 003、12\" Vinyl 6 軌；77452aae… 1987/SU/Official《Крик》，同批錄音的俄語盤面）。藝人 MBID d2693422-78fe-49b3-af69-676f7e567d43（Group／LV／1974-10-04），分頁全列 13 個 RG。刻意不釘：be72de50-0e51-4c81-ad3c-c2bbd225b492《Baltais ceļš》(1986，同年姊妹作，本批名額不足、可進下一批)、160a1052-5247-4050-927a-49a6639f46b8《Vējlukturis》(1982，primary-type EP)、a620a1c6-4415-3ef5-9d6b-19b832accb17《Melnais kliedziens / Austrumu motīvi》(2004 併輯，**內容含本卡**)、0f9942ad-dc96-4b93-9f0d-080a2c70cfad《Raimonda Paula 75. jubilejas koncerts》(2011，secondary-types 含 Live)，後兩者超出年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Credo Melnais kliedziens；Credo Крик；Credo Latvia 1986；Credo Melodiya С60 24883",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Sīpoli",
+  "album": "Sīpoli",
+  "year": 1987,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 25559 006，LV 1987；拉脫維亞語盤面，壓片走 Rīga 分廠（12\" Vinyl 11 軌）",
+  "why": "Sīpoli（洋蔥）1975 年在里加成立，走民謠搖滾一路，Mārtiņš Brauns 是核心成員之一。他們演了十二年才在 1987 年拿到唯一一張 LP，MB 上標為 Compilation——**這正是 §5.6 的情形：合輯就是原盤**。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Sīpoli 池中 0 張（帶長音的 Sīpoli 與不帶的 Sipoli 兩種寫法都掃過）。MB 回問確認 primary-type Album、secondary-types [Compilation]、1 個 Official release（1987 LV、Мелодия С60 25559 006、12\" Vinyl 11 軌）。",
+  "risk": "年份：本卡的 1987 既是合輯出版年也是唯一實體盤年，**沒有原盤年與復刻年的落差**，是本批五張 §5.6 裡唯一不需要分開兩個年份講的一張。⚠ 掛名變音：MB 寫「Sīpoli」（帶 ī），Apple 寫成無變音的「Sipoli」——兩種都要查，池中都是 0 張。MB 精確查詢只回 1 筆（fac651c6…，Group／LV／1975），無同名實體。⚠ 盤名與掛名同字（self-titled），摺鍵是 sipoli|sipoli。撞卡風險：池中無。封面與試聽：CAA release-group 回 200、3 張圖；Apple 在 ee／lv／ru／de 等店面命中 collectionId 1625495459（掛名「Sipoli」、盤名「Sīpoli」、年份 1987，與 MB 一致），另有一筆 623997559 是 2013 年的現場輯《Grupa Sīpoli. Koncerts Dzintaros》，**不是本卡**。",
+  "mbNote": "釘 release-group 6bdaf392-dc21-4fca-8795-7a357fb58f5a。回問確認：title「Sīpoli」、artist-credit「Sīpoli」、first-release-date 1987、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（4e4ca7cd… 1987/LV/Official、Мелодия С60 25559 006、12\" Vinyl 11 軌）。藝人 MBID fac651c6-d21f-439e-a91f-bb8a9cddba70（Group／LV／1975），分頁全列 3 個 RG。刻意不釘：8ecdecd4-1c91-4728-b71c-1dee0128b703《Kamēr tu šo spēli spēlē》(2010，secondary-types 含 Live)、f6537bdb-a111-401c-aa76-5ffdc3d5f441《Agrāk un tagad...》(2011 Compilation)，兩者皆超出 1970–1991 年份窗口。",
+  "releaseType": "Compilation",
+  "exceptionReason": "Sīpoli 1975 年成立後在拉脫維亞演了十二年才拿到唯一一張唱片；1987 年這張同名 LP 由 Melodiya 把他們累積多年的曲目集結成盤，MB 因此標為 Compilation，但它同時就是這個樂團僅有的一張正式發行品，是拉脫維亞民謠搖滾這一路唯一可建檔的形態。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/6bdaf392-dc21-4fca-8795-7a357fb58f5a",
+   "https://music.apple.com/lv/album/1625495459"
+  ],
+  "selfTitled": true,
+  "queryAlias": "Sīpoli 1987；Sipoli；Grupa Sīpoli；Sipoli Melodiya С60 25559",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Imants Kalniņš",
+  "album": "4. simfonija",
+  "year": 1974,
+  "genres": [
+   "classical",
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С-04503-4，SU 1974；壓片走 Rīga 分廠",
+  "why": "Imants Kalniņš（1941 年生）是拉脫維亞非官方音樂的中心人物——同時替搖滾團寫歌（本批 Menuets《Dzeguzes balss》全部出自他手）與寫交響曲。1972 年的第四號交響曲把披頭四式的旋律語彙寫進交響編制，當年在拉脫維亞被視為體制邊緣的作品，1974 年由 Melodiya 錄成 LP。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Imants Kalniņš 池中 0 張（帶變音的 Imants Kalniņš 與不帶的 Imants Kalnins 兩種寫法都掃過）。MB 回問確認 primary-type Album、轄下 3 個 Official release（1974 SU 原盤 Мелодия С-04503-4、12\" Vinyl 4 軌；1975 LV；1978 SU 再壓）。",
+  "risk": "⚠ 同名雙胞胎：MB 上有兩個「Imants Kalniņš」——本卡的作曲家（c0c0027c…，Person／LV／1941-05-26，score 100）與另一位貝斯手（2b00859d…，disambiguation「Latvian bassists」，score 95）；**兩人 score 只差 5 分，只有 disambiguation 與生年分得出來**。另有 Ivars／Gunārs／Daumants／Madars Kalniņš 等同姓者與一整排 Imants 開頭的拉脫維亞人名，共擋下 14 個同名／近名實體。⚠ 掛名變音符號 ņ，拉丁化寫法 Imants Kalnins 也要查，池中兩種都是 0 張。⚠ 盤名「4. simfonija」很短且含數字加句點，**單用盤名比對必然回噪音**；同掛名在 MB 上還有 1998、2009 兩個獨立的《4. simfonija》RG（不同錄音），三者摺鍵完全相同，本批取 1974 原盤，另兩者寫入刻意不釘。年份分歧：作品完成年是 1972、唱片年是 1974，本卡取唱片年 1974（第 220 條），行文時兩個年份要分開講。封面與試聽：CAA release-group 回 200、4 張圖；Apple 八店面以「Imants Kalniņš simfonija」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 9672db05-46d2-3516-803a-d180474cf325。回問確認：title「4. simfonija」、artist-credit「Imants Kalniņš」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 3 個 release（f845f967… 1974/SU/Official、Мелодия С-04503-4、12\" Vinyl 4 軌；9fd9452e… 1975/LV/Official；3e4d3be7… 1978/SU/Official）。藝人 MBID c0c0027c-11ac-4637-9a4c-a2693ca21d5b（Person／LV／1941-05-26），分頁全列 30 個 RG。刻意不釘：02f732b1-3fa9-4c85-878d-c31ed70f934a《4. simfonija》(1998) 與 94b1d785-1d98-4ed2-8c8f-84eb6033a39d《4. simfonija》(2009)（**盤名與本卡完全相同、摺鍵互撞**，且超出年份窗口）、d6e6febb-b1d7-4714-95f1-07b56c95b496《5. simfonija》(1981，本批名額不足、可進下一批)、cfb9d0e7-582d-4806-a885-2d66b46002cb《Dzeguzes balss》(1979，**本批以「Menuets」掛名另收一卡**)、bbd873b9-6a07-4fd7-a6bf-8e225145d2f0《Oktobra oratorija》(1967，早於 1970 年份窗口)、4ca6ae04-883c-4bc5-8c07-95edc79a0cf6《Pūt, vējiņi!》(1974，primary-type EP 且含 Soundtrack)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Imants Kalniņš 4. simfonija；Imants Kalnins Fourth Symphony；Kalniņš Ceturtā simfonija；Имант Калныньш",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jumprava",
+  "album": "Pilsēta",
+  "year": 1989,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 28945 006，SU 1989；拉脫維亞語盤面，壓片走 Rīga 分廠",
+  "why": "Jumprava 1984 年在里加成立，是拉脫維亞合成器流行／新浪潮的代表團。《Pilsēta》（城市）是他們第一張 Melodiya LP，1985 年的《No tēvu zemes》之後隔了四年才拿到。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Jumprava 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1989 SU、Мелодия С60 28945 006、Vinyl 7 軌）。",
+  "risk": "撞卡風險：池中無 Jumprava；MB 精確查詢只回 1 筆（0f8218b0…，Group／LV／1984-04），無同名實體，是本批少數不必靠 disambiguation 排除的掛名。⚠ 盤名「Pilsēta」只有 7 個字母又是拉脫維亞語常用詞（城市），**單用盤名比對會回噪音**；同掛名 1986 年的 Dzeltenie pastnieki 也有一張《Depresīvā pilsēta》，本批未收但下游要留意子字串誤配。年份分歧：無。⚠ MB media 記為 Vinyl 7 軌，未標尺寸（不是 12\" 的欄位值），實體形態要由下游再確認。封面與試聽：CAA release-group 回 404；Apple 八店面全部命中 collectionId 1626922379（掛名「Jumprava」、盤名「Pilsēta」、年份 1989，與 MB 完全一致）——**這是本批少見的「CAA 無圖但 Apple 全店面有」的組合**。",
+  "mbNote": "釘 release-group 7fe254c8-b401-3b32-a8fa-346802d81050。回問確認：title「Pilsēta」、artist-credit「Jumprava」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（3a9d09e1… 1989/SU/Official、Мелодия С60 28945 006、Vinyl 7 軌）。藝人 MBID 0f8218b0-5c46-4c88-8505-851380b5cb7d（Group／LV／1984-04），分頁全列 18 個 RG。刻意不釘：d8aa0f39-d3c0-4c64-bf12-0f0c462b2efb《No tēvu zemes》(1985，本批名額不足、可進下一批)、f0857fa7-e368-3115-af8a-92af5f678339《Jumprava 1》與 458a3255-233e-3920-80cf-b8eed0331eb5《Jumprava 2》與 531d5584-e869-3c02-8186-24014bc241f4《Jumprava 3》與 1ae47d85-012d-3940-b657-4a531262a481《Jumprava 4》(皆 1994-12 Compilation)、5e73c810-460c-3d66-b89b-f8bee8944fe5《'84 - '87》(1995 Compilation)、89dbdc6b-eb57-3f78-b86d-b6fabceb8429《'88 - '90》(1996 Compilation)，後六者超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jumprava Pilsēta；Jumprava Pilseta；Jumprava 1989；Jumprava Melodiya С60 28945",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Dzeltenie pastnieki",
+  "album": "Bolderājas dzelzceļš",
+  "year": 1981,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "**無廠牌、無目錄號**：MB release 的 label-info 為空，media 是 **Reel-to-reel（盤帶）10 軌**，SU 1981-10——這張不經 Melodiya，是自製盤帶流通",
+  "why": "Dzeltenie pastnieki（黃色郵差）1981 年在里加成立，是蘇聯境內最早的新浪潮／合成器樂團之一。《Bolderājas dzelzceļš》（波爾德拉亞鐵路）是他們的首發，**當年沒有唱片形態——MB 記錄的 1981-10 原始發行 media 就是盤帶（Reel-to-reel）**，也就是蘇聯地下流通的 magnitizdat（自製錄音帶）。這是本批最能直接說明「國營唱片壟斷下另闢通路」的一張。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Dzeltenie pastnieki 池中 0 張。MB 回問確認 primary-type Album、轄下 2 個 Official release（1981-10 SU 盤帶原版、無廠牌；2003 LV CD 再發）。",
+  "risk": "⚠ **實體形態與本批其他碟不同**：這張的原始發行是盤帶不是黑膠，MB release 也沒有 label-info——**不要當成 Melodiya 盤處理，label 欄不可填 Melodiya**。2003 年 LV 的 CD 再發（b7d50307…）才是有實體唱片的形態。撞卡風險：池中無 Dzeltenie pastnieki；MB 精確查詢只回 1 筆（07223b8f…，Group／LV／1981，**MB 實體名寫成小寫 p 的「Dzeltenie pastnieki」**），無同名實體。⚠ 掛名大小寫：外部資料常寫成「Dzeltenie Pastnieki」（大寫 P），摺鍵相同不影響，但人工核對時要知道兩種都指同一團。年份分歧：取原始盤帶年 1981，2003 的 CD 再發年寫進 mbNote。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面以「Dzeltenie pastnieki Bolderājas dzelzceļš」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 1b673be2-cd8d-3486-94f3-caf2bd92239d。回問確認：title「Bolderājas dzelzceļš」、artist-credit「Dzeltenie pastnieki」、first-release-date 1981-10、primary-type Album、secondary-types 空、轄下 2 個 release（cd93ca55… 1981-10/SU/Official、**label-info 為空、media 為 Reel-to-reel 10 軌**；b7d50307… 2003/LV/Official CD 再發）。藝人 MBID 07223b8f-fbde-4789-b32b-0f6549d6dfc7（Group／LV／1981），分頁全列 8 個 RG。刻意不釘：04064fe9-2b41-3548-b004-66fd690735bc《Alise》(1984)、1a75fef8-10b6-3626-ac8e-dc1d0db6d91f《Vienmēr klusi》(1985)、704ef4f7-fa84-3f2e-b9f4-13ab0a51e560《Depresīvā pilsēta》(1986)、05073ee0-ef4f-3349-ae0b-b730809deea8《Naktis》(1987)（四張皆在年份窗口內、本批名額不足，**整批可進下一批**）、72c3a566-4e8f-334a-964c-ade13c71de0c《Kaķis》(2003) 與 3a02a01f-1c05-466d-8c12-f8fab6eae2ef《Lentu Gabaliņi》(2017 Compilation)（超出年份窗口）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dzeltenie pastnieki Bolderājas dzelzceļš；Dzeltenie Pastnieki Bolderajas dzelzcels；Yellow Postmen Bolderāja；Dzeltenie pastnieki 1981",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Dzeltenie pastnieki",
+  "album": "Man ļoti patīk jaunais vilnis",
+  "year": 1982,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "**無廠牌、無目錄號**：MB release 的 label-info 為空，media 是 **Reel-to-reel（盤帶）8 軌**，SU 1982——與首發一樣走自製盤帶通路",
+  "why": "Dzeltenie pastnieki 的第二張，盤名直譯就是「我非常喜歡新浪潮」——在 1982 年的蘇維埃拉脫維亞公開這樣命名一張自製盤帶，本身就是這條線的註腳。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：拉脫維亞與立陶宛這條線池中只有 2 張，都是拉脫維亞的：Zodiac《Disco Alliance》(1980) 與 Raimonds Pauls《Melodija, improvizācija, ritms》(1975)；**立陶宛池中 0 張**。骨幹 20 位裡 18 位是零。 Dzeltenie pastnieki 池中 0 張，本批另收其 1981 年首發《Bolderājas dzelzceļš》，兩張都是盤帶形態。MB 回問確認 primary-type Album、轄下 2 個 Official release（1982 SU 盤帶原版、無廠牌；2003 LV CD 再發）。",
+  "risk": "⚠ **實體形態同上一卡**：原始發行是盤帶、MB 無 label-info，**label 欄不可填 Melodiya**。⚠ 盤名含 ļ、ī 兩個變音符號且長達 26 字，摺鍵會去重音成 manlotipatikjaunaisvilnis；外部比對建議用「jaunais vilnis」當關鍵詞，但那是拉脫維亞語「新浪潮」的通用詞，**會回大量噪音**。撞卡風險：池中無 Dzeltenie pastnieki；與本批首發摺鍵不同。年份分歧：取原始盤帶年 1982，2003 的 CD 再發年寫進 mbNote。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面以「Dzeltenie pastnieki jaunais vilnis」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 1cc6f732-20f0-3461-be19-d06a7cea8eb9。回問確認：title「Man ļoti patīk jaunais vilnis」、artist-credit「Dzeltenie pastnieki」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 2 個 release（8842ed0e… 1982/SU/Official、**label-info 為空、media 為 Reel-to-reel 8 軌**；146c1425… 2003/LV/Official CD 再發）。藝人 MBID 07223b8f-fbde-4789-b32b-0f6549d6dfc7。刻意不釘：見同掛名《Bolderājas dzelzceļš》卡的清單（04064fe9…《Alise》、1a75fef8…《Vienmēr klusi》、704ef4f7…《Depresīvā pilsēta》、05073ee0…《Naktis》四張在窗口內可進下一批；72c3a566…、3a02a01f… 超出窗口）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dzeltenie pastnieki Man ļoti patīk jaunais vilnis；Man loti patik jaunais vilnis；Dzeltenie Pastnieki 1982；Yellow Postmen new wave",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Antis",
+  "album": "Kažkas atsitiko",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB release 的 label-info 為空、media 欄未標形態（17 軌），SU 1986——不經 Melodiya，是自製錄音流通",
+  "why": "Antis（鴨子）1984 年由建築師 Algirdas Kaušpėdas 在考納斯成立，是立陶宛「搖滾遊行」（Roko maršas）運動的核心團，用荒謬劇式的舞台諷刺蘇維埃官僚，被視為立陶宛獨立運動 Sąjūdis 的文化前奏。《Kažkas atsitiko》（發生了什麼事）是他們的首發。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 MB 回問確認 primary-type Album、轄下 3 個 Official release（1986 SU 原版、**無廠牌**；2003 XW 與 2003 LT 兩筆再發）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Antis」在 MB 精確查詢首筆即為目標（db7bb413…，Group／LT／1984-12-31，disambiguation「Lithuanian rock band」、score 100），清單噪音不大；但**在卡池端要注意**：實掃 seed_cards.json 時「Antis」會前綴摺到英國無政府龐克團 Antisect（《In Darkness, There Is No Choice》1983），那不是本團。⚠ 實體形態：MB 的 1986 原版 release **沒有 label-info、media 形態欄也是空的**（只知 17 軌）——**不可假設是 Melodiya 盤**；Antis 早期就是靠自製錄音在立陶宛流通。2003 年的兩筆再發才有明確發行方。撞卡風險：池中無 Antis。年份分歧：取 1986 原版年，2003 再發年寫進 mbNote；**Apple 的 collectionId 1760384569 年份標 2003（＝再發年），不要拿它覆蓋本卡的 1986**。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面全部命中 collectionId 1760384569（掛名「Antis」、盤名「Kažkas atsitiko」）。",
+  "mbNote": "釘 release-group 4422e3c0-8a79-322f-be01-996e6e32aa11。回問確認：title「Kažkas atsitiko」、artist-credit「Antis」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 3 個 release（1c228d6c… 1986/SU/Official、**label-info 為空、media 形態未標、17 軌**；c1632701… 2003-01-01/XW/Official；4693433f… 2003/LT/Official）。藝人 MBID db7bb413-9e53-40e4-8d73-3726fac48f9e（Group／LT／1984-12-31），分頁全列 16 個 RG。刻意不釘：3bb38b39-53e3-3141-b549-857b887c93a7《Antis》(1987，本批名額不足、可進下一批)、c4e0bbf4-e624-38d1-8209-f3eeded45921《Dovanėlė》(2003)、4d3ee4c2-5073-31fa-bd2c-b33c509002db《Geriausios dainos》(2006 Compilation)、c4edbd00-e082-4636-8ace-40b7741c7857《2xANTIS》(2013，secondary-types 含 Live)、2a87102c-c97c-4b91-82b3-7778edd10c9f《Antis Trakų pilyje. Atsisveikinimo koncertas (Live)》(2016)，後四者皆超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Antis Kažkas atsitiko；Antis Kazkas atsitiko；Antis Lietuva 1986；Algirdas Kaušpėdas Antis",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Antis",
+  "album": "Ša!",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB release 的 label-info 為空、media 欄未標形態（12 軌），SU 1988——與首發一樣不經 Melodiya",
+  "why": "Antis 的第二張，出在 1988 年——立陶宛改革運動 Sąjūdis 成立的那一年，也是「搖滾遊行」巡演規模最大的一年。盤名《Ša!》是立陶宛語的「噓！」，一個字就把當年的自我審查說完。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 本批另收其 1986 年首發《Kažkas atsitiko》，兩張分別對應運動的前夜與高峰。MB 回問確認 primary-type Album、轄下 3 個 Official release（1988 SU 原版、**無廠牌**；2003 XW 與 2003 LT 再發）。",
+  "risk": "⚠ 短掛名回問同上一卡；池中掃「Antis」會前綴摺到 Antisect，那不是本團。⚠ **盤名只有兩個字母加驚嘆號「Ša!」**，摺鍵後只剩 sa——**這是本批最短、最不可單獨用來比對的盤名**，任何外部查詢都必須連掛名一起帶；Apple 以「Antis Ša」搜出 16 筆，其中一半是突尼西亞製作人 Anouar Ben Abdessalem 的單曲。⚠ 實體形態：MB 的 1988 原版 release **沒有 label-info、media 形態欄也是空的**（只知 12 軌），不可假設是 Melodiya 盤。撞卡風險：池中無 Antis；與本批首發摺鍵不同。年份分歧：取 1988 原版年，**Apple collectionId 1760384937 年份標 2003（＝再發年），不要覆蓋**。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面全部命中 collectionId 1760384937。",
+  "mbNote": "釘 release-group 013bf980-3682-334b-a8df-c87de4648eae。回問確認：title「Ša!」、artist-credit「Antis」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（af29018e… 1988/SU/Official、**label-info 為空、media 形態未標、12 軌**；2272e100… 2003-01-01/XW/Official；563e0d23… 2003/LT/Official）。藝人 MBID db7bb413-9e53-40e4-8d73-3726fac48f9e。刻意不釘：3bb38b39-53e3-3141-b549-857b887c93a7《Antis》(1987，本批名額不足、可進下一批；**該 RG 的盤名與掛名同字，摺鍵會是 antis|antis**)、c4e0bbf4-e624-38d1-8209-f3eeded45921《Dovanėlė》(2003)、4d3ee4c2-5073-31fa-bd2c-b33c509002db《Geriausios dainos》(2006 Compilation)、c4edbd00-e082-4636-8ace-40b7741c7857《2xANTIS》(2013，secondary-types 含 Live)、2a87102c-c97c-4b91-82b3-7778edd10c9f《Antis Trakų pilyje. Atsisveikinimo koncertas (Live)》(2016)，後四者皆超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Antis Ša!；Antis Sa；Antis 1988；Antis Lietuva Sąjūdis",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Foje",
+  "album": "Geltoni krantai",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB release 的 label-info 為空，media 是 **Cassette（卡帶）9 軌**，SU 1989——首發是卡帶，不經 Melodiya",
+  "why": "Foje 1983 年由 Andrius Mamontovas 在維爾紐斯成立，是立陶宛 1980–90 年代最重要的搖滾團。《Geltoni krantai》（黃色的岸）是他們的首發，**原始形態是卡帶**——立陶宛地下音樂當年的主要通路。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 MB 回問確認 primary-type Album、1 個 Official release（1989 SU、**無廠牌、media 為 Cassette 9 軌**）。",
+  "risk": "⚠ 實體形態：**首發是卡帶不是黑膠，且 MB release 無 label-info**——label 欄不可填 Melodiya。這與本批 Dzeltenie pastnieki 的盤帶、Antis 的無廠牌錄音同屬一類：波羅的海地下音樂在 1980 年代末大量繞過國營唱片系統。撞卡風險：池中無 Foje；MB 精確查詢只回 1 筆（617f85a4…，Group／LT／1983，disambiguation「Lithuanian rock band」），無同名實體。⚠ 掛名「Foje」只有 4 個字母，外部比對要連盤名帶。年份分歧：無。封面與試聽：CAA release-group 回 200、1 張圖；Apple 以「Foje Geltoni krantai」在 ru／fi 兩店面各回 1 筆，但那是 2017 年的同名精選《Foje》（collectionId 1300398167），**不是本卡**；`search` 與藝人目錄兩種查法對本卡未命中。",
+  "mbNote": "釘 release-group 805420f8-5a8e-3524-a057-0959c3591c33。回問確認：title「Geltoni krantai」、artist-credit「Foje」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（ea6a487c… 1989/SU/Official、**label-info 為空、media 為 Cassette 9 軌**）。藝人 MBID 617f85a4-ca8a-454b-8502-902744b6fdb7（Group／LT／1983），分頁全列 20 個 RG。刻意不釘：2ea2e27e-bfeb-3373-97d6-3f98b18c4362《Gali skambėti keistai》(1991，仍在年份窗口內、本批名額不足、可進下一批)、48d97724-5b61-3fda-91f4-fc2afc460443《Kitoks pasaulis》(1992，超出窗口)、346308ff-ebc2-30ec-92b4-fe0960aead8d《Tikras garsas》(1994，secondary-types 含 Live)、43d95635-afb5-36d2-9b0d-4768d1dba798《Mokykla》(1997 Compilation)、3c93b176-d168-4456-a903-5fbbc4166442《Foje》(2017 Compilation，**即 Apple 上搜到的那一筆**)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Foje Geltoni krantai；Foje 1989；Andrius Mamontovas Foje；Foje pirmasis albumas",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Foje",
+  "album": "Žodžiai į tylą",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB release 的 label-info 為空、media 欄未標形態（9 軌），LT 1990——立陶宛已宣布獨立當年的發行",
+  "why": "Foje 的第二張，出在 1990 年三月立陶宛宣布恢復獨立之後——MB 的 release country 也從首發的 SU 變成 LT，是本批唯一一組能從 release country 直接讀出政治轉折的前後作。盤名意為「送進寂靜的話」。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 本批另收其 1989 年首發《Geltoni krantai》。MB 回問確認 primary-type Album、1 個 Official release（1990 LT、無廠牌、9 軌）。",
+  "risk": "⚠ 實體形態：MB release **沒有 label-info、media 形態欄也是空的**（只知 9 軌），label 欄不可填 Melodiya。⚠ 盤名含 ž、į 兩個立陶宛語變音符號，摺鍵會去重音成 zodziaiityla；**外部查詢要拉丁化與原文兩種都試**，本批實測 Apple 八店面兩種寫法（「Foje Žodžiai į tylą」與「Foje Žodžiai」）都是 0 筆。撞卡風險：池中無 Foje；與本批首發摺鍵不同。年份分歧：無。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面 `search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 05f23c5c-f857-34a3-b2c4-c717d9656c5a。回問確認：title「Žodžiai į tylą」、artist-credit「Foje」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 1 個 release（5e0a0c72… **1990/LT/Official**、label-info 為空、9 軌）。藝人 MBID 617f85a4-ca8a-454b-8502-902744b6fdb7。刻意不釘：見同掛名《Geltoni krantai》卡的清單（2ea2e27e…《Gali skambėti keistai》1991 可進下一批；48d97724…、346308ff…、43d95635…、3c93b176… 超出窗口或為 Live／Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Foje Žodžiai į tylą；Foje Zodziai i tyla；Foje 1990；Foje antrasis albumas",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Bix",
+  "album": "Akli kariai",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB release 的 label-info 為空、media 欄未標形態（10 軌），LT 1991——立陶宛獨立當年的發行",
+  "why": "Bix 1987 年在考納斯成立，是立陶宛另類搖滾的代表團（Saulius Urbonavičius-Samas 主導）。《Akli kariai》（盲眼戰士）是他們的首發，出在 1991 年——蘇聯解體、也是本批年份窗口的最後一年。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 Bix 池中 0 張（摺鍵 bix 掃全池 0 筆）。MB 回問確認 primary-type Album、1 個 Official release（1991 LT、無廠牌、10 軌）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Bix」只有 3 個字母，是本批最短的掛名之一；MB 精確查詢首筆即為目標（759f60eb…，Group／LT／1987，disambiguation「Lithuanian cult band」、score 100），清單噪音不大——**但只是因為 MB 上這個字串註冊的實體少，不代表外部來源安全**；Discogs／Apple 上「Bix」會撞到爵士小號手 Bix Beiderbecke 的大量條目，下游做任何外部比對都必須連盤名帶。撞卡風險：池中無 Bix。⚠ 實體形態：MB release **沒有 label-info、media 形態欄也是空的**（只知 10 軌），label 欄不可填 Melodiya。年份分歧：無，1991 在窗口內（蘇聯解體當年）。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面以「Bix Akli kariai」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 5504d57c-c138-3728-bd6a-cc8453fff852。回問確認：title「Akli kariai」、artist-credit「Bix」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（814abf0b… 1991/LT/Official、label-info 為空、10 軌）。藝人 MBID 759f60eb-4b82-4596-8aa6-ef6b8b2c5d6a（Group／LT／1987，disambiguation「Lithuanian cult band」），分頁全列 12 個 RG。刻意不釘：2cafc636-c082-39a9-b5ea-0539293126cb《La bomba》(1992)、aee83ec9-1570-3412-b2fe-e3cf75ac9c76《Doozgle》(1993)、df9ba38d-5f76-3cf7-a8bd-72b3be65792a《Tikras garsas》(1994，secondary-types 含 Live，**與 Foje 1994 年那張同名，是不同的碟**)、bb16708c-50ed-46fb-b81c-d8947993ef44《XX》(2008 Compilation)、ba0e157c-f4fe-4c10-a027-718abedc8c14《XXX》(2017 Compilation)，皆超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bix Akli kariai；Bix Lietuva 1991；Saulius Urbonavičius Bix；Bix pirmasis albumas",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Katedra",
+  "album": "Mors Ultima Ratio",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 30149 009，SU 1990；壓片走 Vilnius 分廠（12\" Vinyl 9 軌）",
+  "why": "Katedra（大教堂）1986 年在維爾紐斯成立，是立陶宛第一支重金屬／死亡金屬團。《Mors Ultima Ratio》（拉丁文「死亡是最後的手段」）1990 年由 Melodiya 發行——**蘇聯國營唱片在解體前一年替一支立陶宛極端金屬團出 LP**，本身就是這條線最反直覺的一筆。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 Katedra 池中 0 張（摺鍵掃到的 Ka 是美國饒舌歌手，不是本團）。MB 回問確認 primary-type Album、1 個 Official release（1990 SU、Мелодия С60 30149 009、12\" Vinyl 9 軌）。",
+  "risk": "撞卡風險：池中無 Katedra；MB 精確查詢只回 1 筆（108440cb…，Group／LT／1986），無同名實體。⚠ 卡池實掃時「Katedra」會前綴摺到美國饒舌歌手 Ka 的六張碟，那不是本團。⚠ 盤名是拉丁文短語「Mors Ultima Ratio」，Google／Discogs 上會撞到大量非音樂條目與同名格言引用，**外部比對必須連掛名帶**。年份分歧：無。實體形態：這是本批立陶宛五張裡**唯一一張確定有 Melodiya 廠牌與目錄號的黑膠**（其餘 Antis ×2、Foje ×2、Bix 全部無廠牌）。封面與試聽：CAA release-group 回 **404**；Apple 八店面以「Katedra Mors Ultima Ratio」與「Katedra Mors Ultima」兩種寫法搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 152a84fa-1c05-31e9-8d57-188fd55e3556。回問確認：title「Mors Ultima Ratio」、artist-credit「Katedra」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 1 個 release（66694a26… 1990/SU/Official、**Мелодия С60 30149 009**、12\" Vinyl 9 軌）。藝人 MBID 108440cb-a71e-4160-b40e-984cf3e32b4e（Group／LT／1986），分頁全列 4 個 RG。刻意不釘：1f110fa5-12df-3a3c-a3dd-f8d3614999c6《Natus in Articulo Mortis》(1992)、f86ac025-af11-4911-a720-224ebd7e10aa《Death Comes》(1993)、894eeefa-890a-36e7-ac5e-e0d8685ceac9《III》(2006)，皆超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Katedra Mors Ultima Ratio；Katedra Lietuva 1990；Katedra Melodiya С60 30149；Katedra death metal Lithuania",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Vytautas Kernagis",
+  "album": "Dainos teatras - Žvilgsnis nuo kalno",
+  "year": 1985,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Vytauto Kernagio fondas 名下建檔（MB 該系列的 release 未填國別與目錄號）；1985 年立陶宛「歌之劇場」演出錄音",
+  "why": "Vytautas Kernagis（1951–2008）是立陶宛創作歌手運動的開創者，1980 年代主持的「Dainos teatras」（歌之劇場）把詩、戲劇與吟唱結合，是立陶宛唯一持續多年、體制內外都容得下的另類演出形式。《Žvilgsnis nuo kalno》（自山上望去）是這個系列的第一張。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 Vytautas Kernagis 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1985-01-01、Official）。",
+  "risk": "⚠ 盤名含 ASCII 連字號「Dainos teatras - Žvilgsnis nuo kalno」（已確認為 ASCII `-`，非破折號）；同系列在 MB 與 Apple 上還有《Dainos Teatras (Eik Savo Keliu...)》(1987)、《Dainos Teatras (Povo Link...)》(1988)、《Dainos teatras - Apie Medžioklę》(1989)、《Dainos teatras - Abėcėlė》(1993)、《Dainos Teatras - Baltas paukštis》(1998)——**六張的盤名前綴完全相同，做子字串配對必然互撞，必須用完整盤名或年份分辨**。撞卡風險：池中無 Kernagis；MB 精確查詢首筆即為目標（a436e72b…，Person／LT／1951-05-19，disambiguation「Lithuanian singer-songwriter and actor」），其餘 11 筆是 Vytautas 開頭的立陶宛作曲家、指揮、饒舌歌手等同名字者，靠 disambiguation 分辨。年份分歧：無，MB first-release-date 1985-01-01 與 Apple 標的 1985 一致。⚠ MB 該 release 的 country 是空的、也沒有目錄號，只有 label「Vytauto Kernagio fondas」（藝人基金會，是後來的建檔方而非 1985 年的發行方）——**1985 年當年的發行方 MB 資料不足以判定**。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面全部命中 collectionId 1395600642（掛名「Vytautas Kernagis」、盤名「Dainos teatras - Žvilgsnis nuo kalno」、年份 1985，與 MB 完全一致）。",
+  "mbNote": "釘 release-group f52726e1-9b48-4c18-b701-008dbb11af86。回問確認：title「Dainos teatras - Žvilgsnis nuo kalno」、artist-credit「Vytautas Kernagis」、first-release-date 1985-01-01、primary-type Album、secondary-types 空、轄下 1 個 release（f342866b… 1985-01-01、country 空、Official）。藝人 MBID a436e72b-7021-4c5b-8f86-db10fa17613c（Person／LT／1951-05-19），分頁全列 11 個 RG。刻意不釘（同系列，盤名前綴相同）：ecb746a9-95e2-4ab4-9322-13f173c30450《Dainos Teatras (Eik Savo Keliu...)》(1987，仍在年份窗口內、本批名額不足、可進下一批；MB release f7ae33a6… label 為 Vytauto Kernagio fondas、CD 13 軌)、45e0972d-d250-4a54-a6a0-d4fed3566d74《Dainos teatras - Abėcėlė》(1993)、f1f72bf2-42fe-39af-ac1d-d3dff4f47093《Baltojo Nieko dainelės》(2000)、89c863a2-6708-4672-a8de-4bb4cc32c5f5《Mercedes-Benz》(2002 Compilation)、05950ce6-910d-4688-8415-47095f551400《Pirmieji》(2010)，後四者超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vytautas Kernagis Dainos teatras Žvilgsnis nuo kalno；Kernagis Zvilgsnis nuo kalno；Dainos teatras 1985；Витаутас Кернагис",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Argo",
+  "album": "Discophonia",
+  "year": 1981,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С 60—15173-4，SU 1981；壓片走 Vilnius 分廠（12\" Vinyl 7 軌）",
+  "why": "Argo 1979 年由作曲家 Giedrius Kuprevičius 在考納斯成立，是立陶宛第一支電子音樂團體。《Discophonia》1981 年由 Melodiya 發行，比拉脫維亞 Zodiac 的《Disco Alliance》晚一年——兩張合起來就是蘇聯波羅的海電子音樂的起點。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**立陶宛在池中是完全的空白：0 張**——骨幹十位（Antis、Foje、Bix、Katedra、Hiperbolė、Vytautas Kernagis、Modernaus Meno Ansamblis、Argo、Gėlių Vaikai、Rondo）逐一實掃全部歸零。 Argo 池中 0 張。MB 回問確認 primary-type Album、轄下 3 個 Official release（1981 SU 兩筆原壓，其一 title 為雙語的「Discophonia = Дискофония」、Мелодия С 60—15173-4、12\" Vinyl 7 軌；2004 RU 再發，title 為純拉丁的「Discophonia」）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Argo」在 MB 首筆即為目標（cfd7a560…，Group／LT／1979，disambiguation「Lithuanian electronic music band formed by composer Giedrius Kuprevičius」、score 97），MB 端噪音不大；**但「Argo」是常見詞（船名、品牌、電影名），外部來源必然大量誤配，下游做任何 Apple／Discogs 比對都必須連盤名帶**。撞卡風險：池中無 Argo。⚠ 盤名取捨：MB RG title 是雙語的「Discophonia = Дискофония」，但同 RG 底下 1981 年另一筆 release（811a9998…）與 2004 年 RU 再發（bf9250f5…）的 title 都是純拉丁的「Discophonia」，Apple 上也是「Discophonia」——**卡片盤名取純拉丁形，理由與本批 Zodiac《Music in the Universe》同（第 45 條）**。⚠ **MB 該 release 的目錄號「С 60—15173-4」裡含一個 U+2014 破折號**（不是 ASCII 連字號）；那只在 label 欄的目錄號字串裡，盤名與掛名皆為純 ASCII 連字號，已確認 `chk-prop` 不會擋。年份分歧：MB first-release-date 1981，**Apple collectionId 1499993113 標 1980**——兩者差一年，以 MB 與盤面目錄號為準取 1981。封面與試聽：CAA release-group 回 200、4 張圖；Apple 八店面全部命中 collectionId 1499993113（掛名「Argo」、盤名「Discophonia」）。",
+  "mbNote": "釘 release-group c22e443a-3400-4221-9bb8-b1871793b917。回問確認：title「Discophonia = Дискофония」、artist-credit「Argo」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 3 個 release（a5ee373b… 1981/SU/Official、**Мелодия С 60—15173-4**、12\" Vinyl 7 軌、title「Discophonia = Дискофония」；811a9998… 1981/SU/Official、title「Discophonia」；bf9250f5… 2004/RU/Official、title「Discophonia」）。**卡片盤名取純拉丁形「Discophonia」，第 45 條。** 藝人 MBID cfd7a560-a932-4531-837e-f19ba8f2a917（Group／LT／1979），分頁全列 3 個 RG。刻意不釘：72d3fc43-82ae-458b-bfa5-845f7791eea1《Свет》(1983，全西里爾盤名)、2cda2ea4-7a2e-4334-ba8d-db95cf6750f9《Žemė L》(1986，仍在年份窗口內、本批名額不足、可進下一批；CAA 回 200、2 張圖)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Argo Discophonia；Argo Дискофония；Giedrius Kuprevičius Argo；Argo Melodiya С60-15173",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

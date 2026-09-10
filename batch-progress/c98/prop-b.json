@@ -1,0 +1,416 @@
+[
+ {
+  "artist": "Georges Brassens",
+  "album": "Nº2 : Georges Brassens interprète ses dernières compositions",
+  "year": 1953,
+  "genres": [
+   "folk"
+  ],
+  "label": "Polydor（catno 530.024，25 公分盤）",
+  "why": "Brassens 在 Polydor 的第二張 25 公分盤，接續首張《Georges Brassens chante les chansons poétiques…》，兩張合起來就是他 1952–1953 年一口氣把積壓多年的歌錄完的那批。實掃 seed_cards.json 全 14,424 列，Georges Brassens 池中只有一張，就是 1952 年那張首作——法語香頌這條線最重要的作者在池裡沒有第二張。這張補的是緊接首張的下一格，也是同一批錄音的另一半。",
+  "risk": "盤名的編號前綴在三個來源各不相同：MB 用序數指示符「Nº2 :」、Apple fr collectionId 1442662491 用度數符寫成「(N°2)」放在句尾、Discogs master 191505 完全不帶編號而作「Interprète Ses Dernières Compositions, 2ème Série」。池中既有的 Jacques Brel 卡（《N°2 : Quand on n'a que l'amour》）用的是度數符 N°，而本張依 MB 實體文字取序數指示符 Nº——**兩個字元在任何正規化下都不相等**，去重與查詢兩種都要掃。年份兩說：MB 與 Apple 記 1953，Discogs master 191505 記 1954，卡單取 1953，行文不得正面斷言。1965 年 Philips 把同一批錄音重新編號成《Volume 2 : Les Amoureux des bancs publics》，那是同一批曲目的另一種包裝，不是本張。封面：CAA release-group 端點實測 200。試聽：Apple fr 1442662491，店面序 USB 在 us 落空、改試 fr 命中（第 158 條）。",
+  "mbNote": "釘 release-group 4f0e657a-ad8e-335f-860e-bb3ecd72ab97。回問確認：title「Nº2 : Georges Brassens interprète ses dernières compositions」、artist-credit「Georges Brassens」、first-release-date 1953-11、primary-type Album、secondary-types 空、轄下 3 個 release（FR／Official ×3）。刻意不釘：9b32ec2d-fa6c-31e0-9a18-cd836548df71《Nº1 : Georges Brassens chante… les chansons poétiques (… et souvent gaillardes) de… Georges Brassens》（1952 首張，池中已有）、87b64571-73b0-351e-92ec-215f002a5609《Volume 2 : Les Amoureux des bancs publics》（1965 重新編號的再版）、4965bfb7-eb96-32cc-acdc-1f68804a49c4《Volume 1 : La Mauvaise Réputation》（1965 同批重編號）。藝人 MBID b58165ba-ac55-49a1-8855-caf16c68f5f2，名下 203 個 release-group（release-group?artist=…&limit=100&offset= 分頁三次取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "N°2 : Georges Brassens interprète ses dernières compositions；Georges Brassens interprete ses dernieres compositions；Interprète Ses Dernières Compositions, 2ème Série",
+  "reissuedBy": "Philips（1965 年以《Volume 2 : Les Amoureux des bancs publics》重新編號）",
+  "g": "b"
+ },
+ {
+  "artist": "Georges Brassens",
+  "album": "Nº10 : Les Copains d'abord",
+  "year": 1964,
+  "genres": [
+   "folk"
+  ],
+  "label": "Philips（catno 77.894 L）",
+  "why": "Brassens 目錄裡最廣為人知的一張，標題曲此後成為他的代名詞。它與首張相距十二年，代表的是他從 25 公分盤時期走到 30 公分盤成熟期的另一端。實掃 seed_cards.json 全 14,424 列，Georges Brassens 池中只有 1952 年那張首作；補上本張之後，這位作者在池裡至少有「起點」與「頂峰」兩個錨。",
+  "risk": "與同批另一張《Nº2》一樣，編號前綴有序數指示符 Nº（MB）、度數符 N°（池中 Brel 卡的慣例）與完全不帶編號（Discogs master 361365 作「Les Copains D'abord」）三種寫法，全部要進去重比對。撇號有彎撇與 ASCII 兩種。年份兩說：MB 與 Apple 記 1964（Apple fr collectionId 1444007582 作《Les copains d'abord (N°10)》、releaseDate 1964），Discogs 的 361365 記 1965（Philips 437.042 BE，是 BE 版壓片），卡單取 1964。1965 年 Philips 的《Volume 8 : Les Copains d'abord》是同一批曲目的重新編號版，不是本張。封面：CAA release-group 端點實測 200。試聽：Apple fr 1444007582，collectionExplicitness notExplicit；us 店面落空，fr 命中。",
+  "mbNote": "釘 release-group f8335795-a806-3bfc-8113-8b0fc7f1ea8e。回問確認：title「Nº10 : Les Copains d'abord」、artist-credit「Georges Brassens」、first-release-date 1964-11、primary-type Album、secondary-types 空、轄下 4 個 release（FR／Official ×3、XW／Official ×1）。刻意不釘：0818fff0-0c58-37cb-9a38-5014e9bee08b《Volume 8 : Les Copains d’abord》（1965 重新編號的再版，盤名主體完全相同，是本張最像的假陽性）、1476ba0e-2e25-3ffc-bd4f-2595ceebd260《Nº9 : Les Trompettes de la renommée》（1962 前一張）、42124267-42a9-3a08-9737-6c2d94b4f05f《Volume 7 : Les Trompettes de la renommée》（1965 同批重編號）。藝人 MBID b58165ba-ac55-49a1-8855-caf16c68f5f2。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "N°10 : Les Copains d'abord；Les copains d'abord (N°10)；Les Copains d'abord",
+  "reissuedBy": "Philips（1965 年以《Volume 8 : Les Copains d'abord》重新編號）",
+  "g": "b"
+ },
+ {
+  "artist": "Léo Ferré",
+  "album": "Verlaine et Rimbaud chantés par Léo Ferré",
+  "year": 1964,
+  "genres": [
+   "folk"
+  ],
+  "label": "Barclay（catno 80 236/37，雙張）",
+  "why": "Léo Ferré 把 Verlaine 與 Rimbaud 的詩整批譜曲錄成的雙張唱片（Discogs master 163581 記 Barclay 80 236/37、1964），是他「詩人系列」裡規模最大的一次，也是法語香頌把十九世紀詩帶進流行唱片工業的關鍵一筆。實掃 seed_cards.json 全 14,424 列，Léo Ferré 池中只有一張《Amour Anarchie》(1970)——那是他 1970 年代政治轉向後的作品，前面二十年的目錄池中零張。這張補的是他最具代表性的一條線。",
+  "risk": "MB 的 release-group 標題是「Verlaine et Rimbaud chantés par Léo Ferré」，Apple fr collectionId 1444213326 作「Léo Ferré chante Verlaine et Rimbaud」（主詞與受詞對調），Discogs 另有把雙張拆成《Verlaine Et Rimbaud - Volume 1》(580206) 與《Verlaine Et Rimbaud Vol 2》(508502) 的兩筆——三種寫法都要進去重比對。池中既有的《Amour Anarchie》對應 MB 上其實是分成 Vol.1（c2367ac0）與 Vol.2（63abb734）兩個 release-group，本張與它無盤名重疊，但同一藝人的去重要注意這個分卷現象。封面：CAA release-group 端點實測 200。試聽：Apple fr 1444213326，notExplicit；us 落空，fr 命中。MB 轄下 2 個 release 皆 FR／Official。",
+  "mbNote": "釘 release-group 217f3aa1-41fa-470f-a3c1-99db6f3345a5。回問確認：title「Verlaine et Rimbaud chantés par Léo Ferré」、artist-credit「Léo Ferré」、first-release-date 1964-12、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official ×2）。刻意不釘：3444f724-3255-4731-9f64-0245fb9a1190《Charles Baudelaire: Les Fleurs du mal chantées par Léo Ferré》（1957，同一系列、句型完全相同，是本張最像的假陽性）、d3c61972-64fe-4b3d-aa33-11160bf588d5《Léo chante Baudelaire – Vol. III》（1967 同系列）、5dd4c55d-427b-301c-ba99-dbaf770ea373《Les Chansons d’Aragon chantées par Léo Ferré》（1961 同句型）。藝人 MBID 15b1cbac-060a-4136-9e07-4622c52c0f60，名下 192 個 release-group（分頁 browse 取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Léo Ferré chante Verlaine et Rimbaud；Verlaine et Rimbaud；Verlaine Et Rimbaud Chantes Par Leo Ferre",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Léo Ferré",
+  "album": "Il n'y a plus rien",
+  "year": 1973,
+  "genres": [
+   "folk"
+  ],
+  "label": "Barclay（catno 80483）",
+  "why": "Léo Ferré 1970 年代最極端的一張，開場的長篇朗誦體標題曲把他從香頌歌手推到近乎宣言的位置（Discogs master 266867 記 Barclay 80483、1973）。它與池中已有的《Amour Anarchie》(1970) 同屬 Barclay 後期，是那條線再往前走三年的樣子。實掃 seed_cards.json 全 14,424 列，Léo Ferré 池中只有《Amour Anarchie》一張。",
+  "risk": "盤名撇號兩種寫法（MB 作 Il n’y a plus rien 用彎撇，Apple 與 Discogs 用 ASCII），去重兩種都要掃。1989 年 Barclay 把本張與《L'Espoir》併成《Vol. IX Il N'Y A Plus Rien - L'Espoir》(Discogs 1090661) 發行——那是二合一套裝，不是本張，第 140 條的形狀，試聽與封面都不能取它。Apple fr collectionId 1442884628、releaseDate 1973、collectionExplicitness notExplicit；us 落空、fr 命中。封面：CAA release-group 端點實測 200。MB 轄下 3 個 release 皆 FR／Official。",
+  "mbNote": "釘 release-group 9ad2ae87-70e9-3861-b457-8cd44658f6a4。回問確認：title「Il n’y a plus rien」、artist-credit「Léo Ferré」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 3 個 release（FR／Official ×3）。刻意不釘：b10c7f8d-87f1-4fb7-a27b-ef51487d3287《Et… Basta !》(1973-12 同年)、62948af2-caeb-4a49-b4da-31c9f722785e《L’Espoir》(1974，1989 年與本張併成雙張再發)。藝人 MBID 15b1cbac-060a-4136-9e07-4622c52c0f60。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Il n’y a plus rien；Il ny a plus rien",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Víctor Jara",
+  "album": "Canto libre",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Odeon（catno LDC-36726）",
+  "why": "Víctor Jara 在 Odeon 的專輯，位置在《Pongo en tus manos abiertas》(1969) 與《El derecho de vivir en paz》(1971) 之間，是他 1970 年前後產量最密那三年的中間一張（Discogs master 312981 記 Odeon LDC-36726、1970）。實掃 seed_cards.json 全 14,424 列，Víctor Jara 池中三張：《Pongo en Tus Manos Abiertas》(1969)、《El Derecho de Vivir en Paz》(1971)、《La Población》(1972)——1970 這一格正好是空的，這張補的就是那一格。",
+  "risk": "掛名在池中已有兩種寫法並存：《El Derecho de Vivir en Paz》那張記成不帶重音的「Victor Jara」，另兩張記成「Víctor Jara」。**í 的有無在 NFKD 摺疊下會消失但在原字串比對下不會**，去重兩種都要掃；卡片依 MB 實體取「Víctor Jara」，無重音寫法進 queryAlias（第 49 條）。盤名大小寫兩種：MB 作「Canto libre」，Apple cl collectionId 713635889 作「Canto Libre」。Apple 該筆的 artistName 記「Victor Jara」（無重音），releaseDate 1970、collectionExplicitness notExplicit；店面序 USB 在 us 落空、改試 cl 命中（第 158 條）。封面：CAA release-group 端點實測 200。MB 轄下 2 個 release 皆 CL／Official。",
+  "mbNote": "釘 release-group bd37a91a-1af4-49e5-a127-0f96044ee47c。回問確認：title「Canto libre」、artist-credit「Víctor Jara」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（CL／Official ×2）。刻意不釘：713b1f00-cd05-4ee7-a48f-40173d020b66《Canciones folklóricas de América》（1970 同年，MB 同時掛在 Víctor Jara 與 Quilapayún 名下，是跨藝人的雙掛名碟）、951bb2bd-7287-4766-a1c6-92fb78ae9b2a《Canto por travesura》（1973，同批提案的另一張，盤名同樣以 Canto 開頭）、25bc25df-7968-49b4-8fc7-4400324cb62c《Canto a lo humano》（1994 後世整編）。藝人 MBID b7e6a7fb-1d38-4ad8-bd97-c125ad4421ab，名下 40 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Victor Jara；Canto Libre",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Víctor Jara",
+  "album": "Canto por travesura",
+  "year": 1973,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Dicap（Discoteca del Cantar Popular，catno DCP-47）",
+  "why": "Víctor Jara 生前最後一張專輯，1973 年 9 月由 Dicap 發行（Discogs master 373750 記 Dicap DCP-47、1973），曲目全是民間的諧謔與粗口歌 tonada，與他政治歌那一面剛好相反。實掃 seed_cards.json 全 14,424 列，Víctor Jara 池中三張，全部在 1969–1972 之間；他目錄的終點池中沒有。這張補的是終點，而且補的是他最少被引用的那一面。",
+  "risk": "掛名重音兩種寫法並存於池中（Victor Jara／Víctor Jara），兩種都要掃（第 49 條）。盤名大小寫：MB 作「Canto por travesura」、Apple cl collectionId 1446799751 作「Canto por Travesura」、artistName 記「Victor Jara」（無重音）。年份與錄音年同為 1973，但發行與 9 月 11 日政變的時間關係在行文中若要提及必須有具體來源，否則不寫。Apple releaseDate 1973、collectionExplicitness notExplicit；us 落空、cl 命中。封面：CAA release-group 端點實測 200。MB 轄下 10 個 release 全數 Official（CL ×5、ES ×3、EC ×1、XE ×1）——這是本批 b 組 release 數最多、授權狀態最乾淨的一張。",
+  "mbNote": "釘 release-group 951bb2bd-7287-4766-a1c6-92fb78ae9b2a。回問確認：title「Canto por travesura」、artist-credit「Víctor Jara」、first-release-date 1973-09、primary-type Album、secondary-types 空、轄下 10 個 release（CL／Official ×5、ES／Official ×3、EC／Official ×1、XE／Official ×1）。刻意不釘：bd37a91a-1af4-49e5-a127-0f96044ee47c《Canto libre》（1970，同批提案的另一張）、25bc25df-7968-49b4-8fc7-4400324cb62c《Canto a lo humano》（1994 後世整編，盤名同樣以 Canto 開頭）、9b38a59b-b848-30fe-8426-de2e8741e8b1《La población》（1972，池中已有）。藝人 MBID b7e6a7fb-1d38-4ad8-bd97-c125ad4421ab。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Victor Jara；Canto por Travesura",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Violeta Parra",
+  "album": "Recordando a Chile: Una chilena en París",
+  "year": 1965,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Odeon（Serie Estelar，catno LDC-36533）",
+  "why": "Violeta Parra 旅居巴黎期間錄、由智利 Odeon 發行的一張（Discogs master 1538590 記 Odeon LDC-36533、1965），是她 1960 年代兩地往返時期的核心文件，也是《Las últimas composiciones》前一年的作品。實掃 seed_cards.json 全 14,424 列，Violeta Parra 池中兩張：《Las Últimas Composiciones》(1966) 與《Canciones reencontradas en París》(1971)——兩張都在 1966 年之後，她 1950 年代末到 1965 年那整段 Odeon《El folklore de Chile》系列與巴黎時期池中零張。這張補在《Las últimas composiciones》左邊。",
+  "risk": "副標兩說：MB 的 release-group 標題是「Recordando a Chile: Una chilena en París」，Discogs 原盤 master 1538590 的標題是「Recordando A Chile: Canciones De Violeta Parra」，Apple cl collectionId 1647764240 只作「Recordando a Chile」——三種都要進去重比對。池中已有的《Canciones reencontradas en París》盤名同樣含「París」，但是另一張碟（1971 年 Le Chant du Monde 系統），不得混同。封面：CAA release-group 端點實測 **404**，改走 §4 apple-verified-collection：人工核對過的 Apple cl collectionId **1647764240**（artistName Violeta Parra、11 軌、首軌〈Defensa de V. Parra〉、皆有 previewUrl），依裁定第 134 條同一 collectionId 也作固定試聽來源；該筆 releaseDate 記 2022-10-04，那是再發日期，依第 77 條只當訊號不當版本門檻，卡單年份取 1965。店面序 USB 在 us 落空、改試 cl 命中。MB 轄下 3 個 release 全數 Official（CL ×2、XW ×1）。",
+  "mbNote": "釘 release-group fa3830b1-9f55-4880-b861-15364a743417。回問確認：title「Recordando a Chile: Una chilena en París」、artist-credit「Violeta Parra」、first-release-date 1965-08、primary-type Album、secondary-types 空、轄下 3 個 release（CL／Official ×2、XW／Official ×1）。刻意不釘：0a04b244-b893-4825-a05e-7656b732154f《El folklore de Chile según Violeta Parra》(1962)、de4864c4-2cb7-4d40-ac43-40257ae39257《El folklore de Chile, vol. VIII: Toda Violeta Parra》(1961)、705e96ab-3515-37d1-b3ce-629edc53ee16《Las últimas composiciones de Violeta Parra》(1966，池中已有)、aee2c6e3-deed-4739-8973-77e7f0925b2e《Canta sus últimas composiciones…》(2023 再編)。藝人 MBID bb92cd9f-0446-42bb-adc7-b6f7c5bea2e3，名下 37 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Recordando a Chile；Recordando A Chile: Canciones De Violeta Parra；Una chilena en Paris",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Atahualpa Yupanqui",
+  "album": "Basta ya",
+  "year": 1971,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Le Chant du Monde（Le Nouveau Chansonnier International，catno LDX 74457）",
+  "why": "Atahualpa Yupanqui 流亡歐洲期間由法國 Le Chant du Monde 發行的一張（Discogs master 340756 記 LDX 74457、1971），標題曲後來被整個 nueva canción 圈翻唱，是他從阿根廷內陸的 payador 傳統走向國際左翼歌謠圈的接點。實掃 seed_cards.json 全 14,424 列，Atahualpa Yupanqui 池中只有一張《El Payador Perseguido》(1964)——拉美民謠最重要的源頭作者之一在池裡只有一張，而且是最本土的那一張。這張補的是他在歐洲那一面。",
+  "risk": "盤名是兩個西語常用字，字串比對面很寬：Discogs 同一次搜尋就回了 Quilapayún 1969 年的《Basta》（master 311902），兩者盤名只差一個字，跨藝人撞卡要注意；釘位一律用 MBID。Apple ar collectionId 1340696107（artistName Atahualpa Yupanqui、collectionName Basta Ya）的 releaseDate 記 2006，那是數位再發，依第 77 條只當訊號，卡單年份取 1971。店面序 USB 在 us 落空、改試 ar 命中（第 158 條）。封面：CAA release-group 端點實測 200。MB 轄下 2 個 release（FR／Official、DE／Official）——原盤與德國授權盤都在歐洲，阿根廷本地無 release，行文不得說它在阿根廷發行。",
+  "mbNote": "釘 release-group ac41c4b4-2a9a-3e48-a3c6-b9ac5b14ab71。回問確認：title「Basta ya」、artist-credit「Atahualpa Yupanqui」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official、DE／Official）。刻意不釘：6a08a0aa-4858-4152-969f-5a5f39366edb《Una voz y una guitarra》(1953-10 他最早的 LP，CAA 與 Apple 兩路皆空，本批未收)、943cba22-5cb4-4fc8-93d9-e1d9ccd2a218《Yo me he criao a puro campo》(1971 同年)、0c15ce24-795e-379c-a6a1-837df0e3ed04《El Payador perseguido》(1964，池中已有)。藝人 MBID 291aaf6f-3553-462a-92ed-0f91f19f75fb，名下 97 個 release-group（分頁 browse 取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Basta Ya；Atahualpa Yupanqui Basta Ya",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Quilapayún",
+  "album": "La Fragua",
+  "year": 1973,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Dicap（Discoteca del Cantar Popular，catno JJLS-17）",
+  "why": "Sergio Ortega 為 Quilapayún 寫的清唱劇，1973 年由 Dicap 發行（Discogs master 1338009 把掛名記成 Sergio Ortega, Quilapayún），是他們繼《Cantata Santa María de Iquique》之後第二部整張規模的作品。實掃 seed_cards.json 全 14,424 列，Quilapayún 池中只有一張《Cantata Santa María de Iquique》(1970)——智利 nueva canción 的兩大團之一在池裡只有一部清唱劇。這張補的是同一形式的第二部，也是他們在政變前的最後一張。",
+  "risk": "掛名分歧：MB 的 artist-credit 只記「Quilapayún」，Discogs 記「Sergio Ortega, Quilapayún」（作曲者在前），卡片依 MB 與池中既有卡取「Quilapayún」，作曲者掛名進 queryAlias。盤名是兩個常用字，且 MB 上另有 1978 年的《Cantata Santa María de Iquique (nueva versión)》與池中既有卡盤名高度重疊，釘位用 MBID。MB 轄下 2 個 release：CL／Official 一筆、CL／status 未填一筆——後者不採為背書。Apple cl collectionId 1596952734（collectionName La Fragua、releaseDate 1973、notExplicit）；us 落空、cl 命中。封面：CAA release-group 端點實測 200。",
+  "mbNote": "釘 release-group 5ec07bc8-2521-439a-b9ca-8f0549ed9eed。回問確認：title「La Fragua」、artist-credit「Quilapayún」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（CL／Official ×1、CL／status 未填 ×1）。刻意不釘：b0d49795-dda8-36af-9e5f-12940750f20b《Cantata Santa María de Iquique》(1970，池中已有)、d8e7d3bb-7ac0-3363-91e4-1adeb2bd5a23《Cantata Santa María de Iquique (nueva versión)》(1978)、63481b1b-8216-3a33-82c6-f607ee015d6e《Basta》(1969)。藝人 MBID 46cbe388-52fe-410e-82ef-a5eae098c2d6，名下 64 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sergio Ortega Quilapayún La Fragua；La fragua",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Inti-Illimani",
+  "album": "Inti-Illimani 2: La nueva canción chilena",
+  "year": 1974,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "I Dischi dello Zodiaco／Vedette Records（catno VPA 8207）",
+  "why": "Inti-Illimani 1973 年政變時正在歐洲巡演、從此滯留義大利，這張是他們在米蘭錄的第一張流亡專輯（Discogs master 270834 記 I Dischi Dello Zodiaco／Vedette VPA 8207、1974）。它把他們此前在智利的曲目重新編成一份對外的目錄，是這個團往後十五年義大利時期的起點。實掃 seed_cards.json 全 14,424 列，Inti-Illimani 池中只有一張《Viva Chile!》(1973)——就是政變那年的那張，之後整段流亡期池中零張。這張補在它右邊。",
+  "risk": "掛名的連字號有兩種字元：MB 的藝人實體名寫成「Inti‐Illimani」（U+2010 非 ASCII 連字號），池中既有卡與 Discogs 用 ASCII「Inti-Illimani」——卡片取池中與 Discogs 的 ASCII 寫法，MB 寫法進 queryAlias；**盤名欄位若沿用 MB 的字元會踩 c-50 的非 ASCII 連字號反模式**，本卡的盤名已全部改用 ASCII 連字號。盤名編號「2」與 MB 上的《Inti-Illimani 4》《Inti-Illimani 5》《Inti-Illimani 6》同型，釘位用 MBID。Apple：cl／it／es／us 四個店面實搜皆無 1970 年代這批（Apple 上只有 1982 年之後的目錄與 Inti Illimani Historico 的另一個掛名），**試聽預估 unavailable，不留 URL，也不得取 Inti Illimani Historico 的條目充數**。封面走 CAA：release-group 端點實測 200。MB 轄下 4 個 release 全數 Official（IT ×1、CL ×1、國別未填 ×2）。",
+  "mbNote": "釘 release-group 0fef6dcb-5997-4abd-9b90-6f0dbf86ce8a。回問確認：title「Inti-Illimani 2: La nueva canción chilena」、artist-credit「Inti‐Illimani」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 4 個 release（IT／Official ×1、CL／Official ×1、國別未填 Official ×2）。刻意不釘：55b36198-d82d-3c31-819e-2cda0690549a《Viva Chile!》(1973，池中已有)、90243438-bb3e-3893-88ff-e9f568b3b0a4《Inti‐Illimani 4: Hacia la libertad》(1975)、9121932d-7e44-3f59-9abf-88d9de99de5c《Inti‐Illimani 5: Canto de pueblos andinos, vol. II》(1976)、ad22a351-78dc-3d40-b8ff-0cd4c6d7a313《Canto de pueblos andinos, Volume I》(1973)——後三筆與本張共用編號型盤名。藝人 MBID a962cd78-1f5f-4cef-838d-07e2f9d8b02d，名下 68 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Inti‐Illimani；Inti Illimani 2；La nueva cancion chilena",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Chavela Vargas",
+  "album": "La Llorona",
+  "year": 1993,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Turner Records（catno 5144562）",
+  "why": "Chavela Vargas 沉寂十餘年後在西班牙復出的一張，標題曲此後成為她的代名詞，也是她 1990 年代第二段生涯的起點（Discogs master 529160 記 Turner Records 5144562、1993）。實掃 seed_cards.json 全 14,424 列，Chavela Vargas 池中只有一張《Noche Bohemia》(1961)——池裡的她只有 1960 年代那一段，1990 年代讓她被世界重新聽見的那批唱片一張都沒有。這張補的是第二段生涯的入口。",
+  "risk": "本批 b 組同名撞卡風險最高的一張：她另有一張 1964 年 RCA Victor 的《La Llorona》（Discogs master 1704192，MKE-837），MB 上又有 2017 年的三筆同名 release-group（5f09734d、19d6519f、382490e6）與一筆《La Llorona (Remastered)》——**盤名完全相同、藝人相同、只有年份與廠牌不同**，字串比對必配錯，釘位一律用 MBID，行文也不得說這是她第一次錄〈La Llorona〉。Apple mx collectionId 1674222184（artistName Chavela Vargas、collectionName La Llorona）的 releaseDate 記 1996，與卡單的 1993 差三年，依第 77 條只當訊號；上架前要用 lookup 覆核曲數與曲序，確認取到的不是 1964 年 RCA 那一版。店面序 USB 在 us 落空、改試 mx 命中。封面：CAA release-group 端點實測 200。MB 轄下 3 個 release 皆 ES／Official。",
+  "mbNote": "釘 release-group 1629ef12-917e-3db1-9854-bec7a0fb8e11。回問確認：title「La Llorona」、artist-credit「Chavela Vargas」、first-release-date 1993-04、primary-type Album、secondary-types 空、轄下 3 個 release（ES／Official ×3）。刻意不釘：5f09734d-120b-40a5-a7bf-e2b4f50e4bff《La Llorona》(2017-11-17)、19d6519f-eaea-411b-9053-70b7005abbe2《La Llorona》(2017-11-27)、382490e6-69f9-40ba-8555-3781cc43a62e《La Llorona (Remastered)》(2017-12-01)、07310f36-9bab-4e86-b4e4-ddbf76daf489《Noche Bohemia》(1961，池中已有)——前三筆與本張盤名完全相同，是全批最危險的一組假陽性。藝人 MBID 77586a91-4586-4962-b836-e496d3a05432，名下 50 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Chavela Vargas La Llorona 1993；La Llorona Turner Records",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Alan Stivell",
+  "album": "Reflets",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Fontana（catno 6312.011）",
+  "why": "Alan Stivell 以現用藝名發表的第一張專輯（Discogs master 175093 記 Fontana 6312.011、1970），比《Renaissance de la harpe celtique》早一年，是布列塔尼語歌與凱爾特豎琴進入法國唱片工業的起點。實掃 seed_cards.json 全 14,424 列，Alan Stivell 池中三張：王牌卡《Renaissance de la harpe celtique》(1971)、《À l'Olympia》(1972)、《Chemins de terre》(1973)——全部在 1971 年之後。這張補的是他的第一張，也是那三張之所以會發生的前一步。",
+  "risk": "他 1964 年還有一張掛本名 Alan Cochevelou 的《Telenn geltiek (Harpe celtique)》（MB ecd4a5b2），與本張同屬豎琴主題但掛名不同，去重時要分開處理。盤名是單一常用法文字，字串比對面很寬，釘位用 MBID；MB 上另有 1990 年 PolyGram Master Serie 的自我同名《Alan Stivell》，也要避開。Apple fr collectionId 1677338476（collectionName Reflets、artistName Alan Stivell、releaseDate 1970、notExplicit）；店面序 USB 在 us 落空、改試 fr 命中。封面：CAA release-group 端點實測 200。MB 轄下 3 個 release 全數 Official（FR ×2、GB ×1）。",
+  "mbNote": "釘 release-group 95c078e0-78af-3d0b-acae-75e35f4d18fe。回問確認：title「Reflets」、artist-credit「Alan Stivell」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 3 個 release（FR／Official ×2、GB／Official ×1）。刻意不釘：ecd4a5b2-8ea2-3205-9763-374f4037255a《Telenn geltiek (Harpe celtique)》(1964，Alan Cochevelou 時期)、9bbcb3af-d8a9-3cc2-90e2-0b9151afa489《Renaissance de la harpe celtique》(1971，池中已有的王牌卡)。藝人 MBID abc61045-7ae3-48d9-91f2-d44689d53c9a，名下 48 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alan Stivell Reflets 1970",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Alan Stivell",
+  "album": "E langonned (A Langonnet)",
+  "year": 1974,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Fontana／Phonogram（catno 6325 332）",
+  "why": "Alan Stivell 在《Chemins de terre》之後、以家鄉朗戈內為題錄的一張（Discogs master 233359 記 Fontana 6325 332、1974，盤名作 E Langonned = A Langonnet），與前兩張走向國際市場的大製作相比，這張的規模明顯收回，是他在國際化與地方性之間往回走的一張。實掃 seed_cards.json 全 14,424 列，Alan Stivell 池中三張全部集中在 1971–1973；1974 年之後的目錄池中零張，這張是緊接《Chemins de terre》的下一格。",
+  "risk": "盤名有布列塔尼語與法語雙語並置，三種寫法：MB 作「E langonned (A Langonnet)」（括號）、Discogs 作「E Langonned = A Langonnet」（等號）、Apple fr collectionId 1677196014 只作「E Langonned」——三種都要進去重比對。池中已有的《Chemins de terre》在 MB 上 first-release-date 記 1974（池中卡記 1973），與本張同年，兩者要用 MBID 分辨。Apple releaseDate 1974、collectionExplicitness notExplicit；us 落空、fr 命中。封面：CAA release-group 端點實測 200。MB 轄下 2 個 release 皆 FR／Official。",
+  "mbNote": "釘 release-group 6c69672d-79c6-3861-ab43-fc1a08c34805。回問確認：title「E langonned (A Langonnet)」、artist-credit「Alan Stivell」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official ×2）。刻意不釘：a94757b8-2a6c-3bda-9ab5-4e4d2d902747《Chemins de terre》(MB first-release-date 1974，池中已有)、3c617033-fd21-3f45-9c0b-6aa0029e4338《Trema'n inis (vers l'île)》(1976，同樣是布列塔尼語加法語括號副標的同型盤名)。藝人 MBID abc61045-7ae3-48d9-91f2-d44689d53c9a。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "E Langonned；E Langonned = A Langonnet；A Langonnet",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Malicorne",
+  "album": "Le Bestiaire",
+  "year": 1979,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Ballon Noir／CBS（catno BAL 13012）",
+  "why": "Malicorne 第五張專輯，也是他們四張自我同名唱片之後第一張有獨立盤名的概念作（Discogs master 438255 記 Ballon Noir／CBS BAL 13012、1979）。實掃 seed_cards.json 全 14,424 列，Malicorne 池中只有一張《Almanach》(1976)——法國民謠復興最重要的團在池裡只有一張。這張補的是《Almanach》之後三年、他們把主題整合成整張的那一步。",
+  "risk": "這位藝人的撞卡問題不在本張而在鄰居：MB 上 Malicorne 有三張自我同名《Malicorne》（1974 f98959fa、1975 a54fb845、1977 1ae8e891），任何以團名做字串搜尋的工具都會在它們之間亂配，本張因為有獨立盤名反而是最安全的一張，但下游若要再補 Malicorne 就必須先解決那三張的識別問題。盤名大小寫兩種：MB 作「Le Bestiaire」、Apple fr collectionId 284010204 作「Le bestiaire」。Apple releaseDate 1979、collectionExplicitness notExplicit；us 落空、fr 命中。封面：CAA release-group 端點實測 200。MB 轄下 4 個 release 全數 FR／Official。",
+  "mbNote": "釘 release-group 8dbf14b0-ab66-3bfe-980d-eb764871e19c。回問確認：title「Le Bestiaire」、artist-credit「Malicorne」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 4 個 release（FR／Official ×4）。刻意不釘：f98959fa-9e42-3652-8a09-ba431997c63b《Malicorne》(1974)、a54fb845-2e95-32b5-9b63-bf899999db48《Malicorne》(1975)、1ae8e891-e763-3ce0-afb4-1b7fb64d6284《Malicorne》(1977)——三筆自我同名，是這位藝人下所有假陽性的來源；6d435009-0397-3710-ab6a-b1f075c5e89e《Almanach》(1976，池中已有)。藝人 MBID ce5f578f-5dec-455f-8f24-cc7dc3964a12，名下 15 個 release-group（全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Le bestiaire；Malicorne Le Bestiaire",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Planxty",
+  "album": "After the Break",
+  "year": 1979,
+  "genres": [
+   "folk"
+  ],
+  "label": "Tara Records（catno TARA 3001）",
+  "why": "Planxty 解散四年後重組的第一張，也是 Tara 廠牌的創業盤（Discogs master 479733 記 Tara TARA 3001、1979）；團名回來時陣容已換過，這張因此常被當成愛爾蘭傳統樂團「第二代」的分界。實掃 seed_cards.json 全 14,424 列，Planxty 池中三張：《Planxty》(1973)、《The Well Below the Valley》(1973)、《Cold Blow and the Rainy Night》(1974)——正好是解散前的三張，重組後的目錄池中零張。這張補的就是「重組之後」。",
+  "risk": "Apple ie collectionId 1504870809 的盤名是《After The Break (Remastered 2020)》——重製版，屬同一張碟的重新母帶處理，試聽可用但要標明；releaseDate 1979、collectionExplicitness notExplicit。店面序 USB 在 us 落空、改試 ie 命中（第 158 條）。盤名是三個常用英文字，字串比對面寬，釘位用 MBID。封面：CAA release-group 端點實測 200。MB 轄下 4 個 release 全數 Official（IE ×3、US ×1）。",
+  "mbNote": "釘 release-group af478204-dd9f-3d36-b3e8-0e42db14aa03。回問確認：title「After the Break」、artist-credit「Planxty」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 4 個 release（IE／Official ×3、US／Official ×1）。刻意不釘：09aa8076-1dab-367d-b4e0-f007793bf6a5《Words & Music》(1983)、cb0f3123-2815-3a0f-8917-27d7f5b6de88《The Woman I Loved So Well》(1992)——同屬重組後目錄，日後要補深可從這兩張接。藝人 MBID 3dc88d73-6125-48e6-9a6a-b3024d62ee51，名下 16 個 release-group（全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "After The Break (Remastered 2020)；Planxty After the Break",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Chieftains",
+  "album": "The Chieftains",
+  "year": 1963,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Claddagh Records（catno CC2）",
+  "why": "The Chieftains 的第一張唱片，由 Garech Browne 的 Claddagh 廠牌發行；此後他們一連十張都只以編號命名，這張就是那條編號序列的第一號。實掃 seed_cards.json 全 14,424 列，The Chieftains 池中三張：《The Chieftains 4》(1973)、《The Chieftains 5》(1975)、《The Long Black Veil》(1995)——編號序列從第四號才開始，前三號池中零張。這張補的是序列的起點，也是愛爾蘭傳統合奏團第一次以唱片形式被完整記錄的那一筆。",
+  "risk": "自我同名卡：MB 的 release-group 標題與藝人名完全相同，`selfTitled` 已標 true；身分靠 rgMbid 與人工核對過的 Apple collectionId 兩路釘死（§1 允許的證據形式）。盤名在再發後通行的寫法是《The Chieftains 1》（Apple ie collectionId 1573288169 就是這個寫法），與 MB／Discogs 原盤的《The Chieftains》並存——兩種都要進去重比對，且與池中已有的《The Chieftains 4》《The Chieftains 5》是子字串關係，第 162 條那個「盤名太短會被更長的別碟包住」的形狀在這裡完全成立，釘位一律用 MBID。年份兩說：MB 記 1963，Discogs master 334099（Claddagh CC2）與 Apple 都記 1964，卡單取 1963，行文不得正面斷言。試聽：Apple ie 1573288169，collectionExplicitness notExplicit；店面序 USB 在 us 落空、改試 ie 命中。封面：CAA release-group 端點實測 200。MB 轄下 8 個 release 全數 Official（US ×4、IE ×2、GB ×1、XW ×1）。",
+  "mbNote": "釘 release-group ddbab0c5-9d71-3831-b000-733f0434474f。回問確認：title「The Chieftains」、artist-credit「The Chieftains」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 8 個 release（US／Official ×4、IE／Official ×2、GB／Official ×1、XW／Official ×1）。刻意不釘：d457764d-cc6e-3dc9-b5eb-7cdcb9ff8673《The Chieftains 2》(1969)、64a61af7-f3b8-3048-9160-2754bcdf4ad9《The Chieftains 3》(1971)、a2fc7707-7aac-39fb-bd25-7e6e514a370b《The Chieftains 4》(1973，池中已有)、8871b8d0-82a6-32e6-aa42-a1a3b0cddc11《The Chieftains 5》(1975，池中已有)——四筆的盤名都以本張盤名為前綴。藝人 MBID fce5eb9a-95a7-4a54-b9e4-fe1b036fbe57，名下 54 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "The Chieftains 1；Chieftains 1；Claddagh CC2",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Nic Jones",
+  "album": "The Noah's Ark Trap",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Trailer（catno LER 2091）",
+  "why": "Nic Jones 在 Trailer 廠牌的最後一張，也是《Penguin Eggs》前的關鍵一步（Discogs master 439711 記 Trailer LER 2091、1977）。他 1982 年車禍後不再演出，全部作品只有六張，而 Trailer 那批因為廠牌後續的權利糾紛長年不得再發，流通程度遠低於《Penguin Eggs》。實掃 seed_cards.json 全 14,424 列，Nic Jones 池中只有一張《Penguin Eggs》(1980)——池裡的他只有那張人人都有的。這張補的是他前面那條被卡住的線。",
+  "risk": "試聽：gb／ie／us／de 四個店面實搜皆無此張——與 Trailer 目錄長期無法合法再發的狀況一致，**試聽預估 unavailable，不留 URL**；行文若要提再發受阻，必須指得出具體來源，否則只寫「Trailer 時期的唱片流通有限」這種可由缺席事實支持的說法（第 136 條：資料庫的缺席是缺席的證據，不是缺席本身）。封面走 CAA：release-group 端點實測 200。盤名撇號有彎撇與 ASCII 兩種。MB 轄下 2 個 release 全數 Official（GB ×1、US ×1）。",
+  "mbNote": "釘 release-group ea31e37e-72b4-36d1-acda-835251d95c36。回問確認：title「The Noah's Ark Trap」、artist-credit「Nic Jones」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 2 個 release（GB／Official、US／Official）。刻意不釘：7293e161-5e3a-3337-a5bb-f5aa59b9abe2《Nic Jones》(1971 自我同名)、b781087b-d329-41ac-97d2-ec435b6a04f9《From the Devil to a Stranger》(1978 下一張)、85150341-e4e0-3649-952d-471be6a9edc4《Penguin Eggs》(1980，池中已有)。藝人 MBID c8c48b19-2e0b-43cb-8967-de771061c16f，名下 11 個 release-group（全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Noah’s Ark Trap；Noahs Ark Trap",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Selda Bağcan",
+  "album": "Özgürlük ve Demokrasiyi Çizmek",
+  "year": 1988,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Majör Özgün Müzik Yapım（catno 002）",
+  "why": "Selda Bağcan 1980 年政變後三度入獄、護照被扣，1980 年代的錄音因此散在小廠牌，這張 1988 年的專輯是她那段時間題材最直接的一張（Discogs master 989966 記 Majör Özgün Müzik Yapım 002、1988）。實掃 seed_cards.json 全 14,424 列，她在池中有四張，但**分裂在兩種掛名底下**：「Selda」名下《Selda (1976)》一張，「Selda Bağcan」名下《Vurulduk ey halkım unutma bizi》(1976)、《Türkülerimiz 1》(1974)、《Yuh Yuh》(1976) 三張——四張全部集中在 1974–1976，1980 年代之後池中零張。這張補的是政變之後的她。",
+  "risk": "掛名分裂是本張最大的問題：池中「Selda」與「Selda Bağcan」兩種寫法並存（第 49 條的同型），而 MB 對本張的 artist-credit 記「Selda Bağcan」、對 1976 年那張《Selda》記「Selda」、對 1981 年《Yeni Bir Dünya》也記「Selda」——**三種寫法都要掃**。變音符號 ğ／ö／ç 在 NFKD 摺疊下會變形，`queryAlias` 已填無變音符號的 Selda Bagcan 與 Ozgurluk ve Demokrasiyi Cizmek。封面：CAA release-group 端點實測 200。試聽：Apple tr collectionId 1646471470（artistName Selda Bağcan、collectionName Özgürlük ve Demokrasiyi Çizmek、releaseDate 1988、notExplicit）；店面序 USB 在 us 落空、改試 tr 命中（第 158 條）。MB 轄下只有 1 個 release（TR／Official），釘位證據薄，但廠牌、編號與年份三項與 Discogs 對得上。",
+  "mbNote": "釘 release-group fbf80ad9-7881-4c53-80fd-0e7c7aa9eea6。回問確認：title「Özgürlük ve Demokrasiyi Çizmek」、artist-credit「Selda Bağcan」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 1 個 release（TR／Official）。刻意不釘：5360dad5-44cd-4777-a7ad-01170871f7b6《Yeni Bir Dünya》(1981，CAA 與 Apple tr 兩路皆空，本批未收)、c2ee9e0a-7be2-4619-8ef3-70fed15bfc75《Yürüyorum Dikenlerin Üstünde》(1987，CAA 404、Apple tr 371878862 有，是本批的次選)、6e95375f-a48b-3afd-b1a5-1a4b549023df《Selda》(1976，池中已有，掛名記成 Selda)、a536a9ee-8c26-4d76-bb65-df8cf1b97fea《Türkülerimiz 2》(1996)。藝人 MBID 5e51e09d-0713-4595-b858-d7e887238825，名下 70 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Selda；Selda Bagcan；Ozgurluk ve Demokrasiyi Cizmek",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Ruhi Su",
+  "album": "Pir Sultan Abdal",
+  "year": 1972,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "İmece Plakları（catno İM-20）",
+  "why": "Ruhi Su 以十六世紀 Alevi 詩人 Pir Sultan Abdal 的詩為題錄的整張唱片（Discogs master 1260048 記 İmece Plakları İM-20、1972），是他「一位詩人一張唱片」那套做法裡最常被引用的一張。實掃 seed_cards.json 全 14,424 列，Ruhi Su 池中只有一張《Seferberlik Türküleri Ve Kuvayi Milliye Destanı》(1971)——土耳其民謠運動的源頭人物在池裡只有一張。這張補的是他另一條主線。",
+  "risk": "盤名撞卡極多：他名下另有 1986 年《Pir Sultan'dan Levni'ye》、1993 年《Karacaoğlan / Pir Sultan Abdal》與《Sultan Suyu / Pir Sultan Abdal'dan Deyişler》，盤名全部包含「Pir Sultan」，釘位一律用 MBID。Apple tr 上這張只以併輯形式存在：collectionId 902820680 的 collectionName 是《Karacaoğlan - Pir Sultan Abdal》，把兩張碟併成一筆（第 140 條的二合一形狀），**不得直接當本張的試聽來源**；上架前若要用它，必須先 lookup 確認取到的軌屬本張那一半，否則試聽記 unavailable。封面走 CAA：release-group 端點實測 200，不需依賴 Apple。變音符號 ğ／İ 在摺疊下會變形，queryAlias 已填無變音符號寫法。MB 轄下 1 個 release（TR／Official）。",
+  "mbNote": "釘 release-group 403c1284-fc4d-4e0a-89c3-2880c110d7af。回問確認：title「Pir Sultan Abdal」、artist-credit「Ruhi Su」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（TR／Official）。刻意不釘：2cac7c48-8028-4ab4-bf1f-732459ce5a13《Karacaoğlan / Pir Sultan Abdal》(1993 二合一)、2685fb46-32ed-481f-bea3-bbd13cf706e7《Sultan Suyu / Pir Sultan Abdal'dan Deyişler》(1993)、c5386b88-a4e6-4dcc-8865-53d1d4a7b11e《Pir Sultan'dan Levni'ye》(1986)、6bde11d9-e5ab-4826-86d4-b2b2e573edf4《Yunus Emre》(1972 同年同型，CAA 404 故本批未收)。藝人 MBID 8237c155-fc42-4462-af0b-3423dcdba256，名下 28 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pir Sultan Abdal Ruhi Su；Karacaoğlan - Pir Sultan Abdal；Imece Plaklari IM-20",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Neşet Ertaş",
+  "album": "Gönül Dağı",
+  "year": 1999,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Uzelli（土耳其盤）",
+  "why": "Neşet Ertaş 是 Kırşehir 一帶 abdal 樂人傳統的最後一位大家，這張以他最知名的曲子命名，也是他 1990 年代末回到土耳其定居前後錄音裡最常被當入口的一張。實掃 seed_cards.json 全 14,424 列，Neşet Ertaş 池中兩張：《Kendim Ettim Kendim Buldum》(1988) 與《Zahidem》(1990)——都在 1980 年代末到 1990 年初。這張補的是他 1990 年代末那一段。",
+  "risk": "他名下 55 個 release-group，同日（1999-06-07）另有《Zülüf Dökülmüş Yüze》，1999 年還有《Ölmeyen Türküler 3》，同期作品密集且盤名互不相似但年份相同，釘位用 MBID。Discogs 上查不到本張的 master（實搜只回《Zahidem》與別人的致敬輯），廠牌與編號因此只能記到 Uzelli 這一層，行文不得寫具體目錄號。變音符號 ş／ö／ğ 在摺疊下會變形，queryAlias 已填無變音符號寫法。封面：CAA release-group 端點實測 200。試聽：Apple tr collectionId 256949343（artistName Neşet Ertaş、collectionName Gönül Dağı、releaseDate 1999、notExplicit）；店面序 USB 在 us 落空、改試 tr 命中。MB 轄下 2 個 release 全數 Official（TR ×1、XW ×1）。",
+  "mbNote": "釘 release-group 1958c753-f44e-3d88-a95a-bccd928b3dcc。回問確認：title「Gönül Dağı」、artist-credit「Neşet Ertaş」、first-release-date 1999-06-07、primary-type Album、secondary-types 空、轄下 2 個 release（TR／Official、XW／Official）。刻意不釘：ecc13eac-59b4-3895-a642-e026e98a3932《Zülüf Dökülmüş Yüze》(1999-06-07 同日)、05d338e7-4ca9-35db-88b4-80ba97c634b0《Ölmeyen Türküler 3》(1999-05-20)、3318595a-6212-307a-b611-0aaf4bd55029《Zahidem》(1990，池中已有)。藝人 MBID 9e42d92e-a2b4-426b-9b3f-51c36f86b785，名下 55 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gonul Dagi；Neset Ertas",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "José Afonso",
+  "album": "Venham mais cinco",
+  "year": 1973,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Orfeu（catno STAT 017）",
+  "why": "José Afonso 1973 年的專輯（Discogs master 267245 記 Orfeu STAT 017、1973），收錄〈Grândola, Vila Morena〉——1974 年 4 月 25 日康乃馨革命當晚，這首歌被電台當作行動信號播出。實掃 seed_cards.json 全 14,424 列，José Afonso 池中只有一張《Cantigas do Maio》(1971)——葡萄牙戰後最重要的作者在池裡只有一張。這張補的是緊接其後、也是他影響力外溢到政治事件的那一張。",
+  "risk": "1993 年 Orfeu 把本張與《Com As Minhas Tamanquinhas》併成《Grandola,Vila Morena & Com As Minhas Tamanquinhas》（MB 438e674a）發行——二合一套裝，第 140 條的形狀，試聽與封面都不能取它。西班牙另有 1974 年 Poplandia 的雙語盤《Venham Mais Cinco = ¡Choca Esos Cinco!》（Discogs 3188352），盤名不同但是同一張碟，去重要掃到。大小寫兩種：MB 作「Venham mais cinco」、Apple pt collectionId 1806614153 作「Venham Mais Cinco」。Apple releaseDate 1973、collectionExplicitness notExplicit；店面序 USB 在 us 落空、改試 pt 命中（第 158 條）。封面：CAA release-group 端點實測 200。MB 轄下 4 個 release 全數 PT／Official。行文提到革命當晚的播出時要指得出電台名稱與日期，否則不寫。",
+  "mbNote": "釘 release-group 7b8ec0d8-76d4-3a75-adb9-16532c02ea34。回問確認：title「Venham mais cinco」、artist-credit「José Afonso」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 4 個 release（PT／Official ×4）。刻意不釘：438e674a-3611-464c-abed-724ef6e776d4《Grandola,Vila Morena & Com As Minhas Tamanquinhas》(1993 二合一)、5a58f044-1d42-3587-bb7d-ef26582dcbe1《Coro dos tribunais》(1974 下一張)、53bfcea4-9240-343a-8634-597d7ff0e9ab《Com as minhas tamanquinhas》(1976，1993 年與本張併成雙張)。另注意 MB 上有第二個 José Afonso 藝人實體（c47513a1-ed09-4e20-bd98-1ebdc5c96f01，disambiguation 記 guitarist/vocalist），本張所釘的是 d06e7e71-0178-4e66-8150-044ff6047d64（名下 28 個 release-group）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Venham Mais Cinco；Venham Mais Cinco = ¡Choca Esos Cinco!；Zeca Afonso",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

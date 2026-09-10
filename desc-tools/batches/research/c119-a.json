@@ -1,0 +1,614 @@
+[
+ {
+  "key": "desc4:李英宏|台北直直撞",
+  "artist": "李英宏",
+  "album": "台北直直撞",
+  "facts": [
+   {
+    "f": "release-group 91316452 的欄位：title「台北直直撞」、artist-credit「李英宏」（藝人實體 MBID bef9d994，type Person、country TW、disambiguation 空）、first-release-date **2016-05-18**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2016-05-18／TW／Official，label-info「顏社」，CD 一張 12 軌，**barcode 欄位是空的**（卡單沒有替本張填 bc，與來源一致）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/91316452-9af8-4d87-b263-3e67e7deae82?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2016 TW 原盤逐軌曲目與長度，12 軌全部有長度：1〈台北直直撞〉4:20、2〈羞羞男〉5:06、3〈愛奴〉4:35、4〈媽媽十塊〉5:34、5〈什麼時候她〉4:59（軌上 artist-credit 記「李英宏 feat. 蛋堡Soft Lipa」）、6〈打與罵〉4:59、7〈一隻狗仔〉4:54、8〈我喜歡妳走起路來的樣子〉4:23、9〈古錐仔〉4:44（軌上 artist-credit 記「李英宏 feat. 國蛋GorDoN」）、10〈阿貓想要來撒嬌〉4:51、11〈慢慢阿流〉5:20、12〈讓子彈飛〉4:53。**12 軌的長度全部落在 4:20 到 5:34 之間，沒有一軌短於四分鐘、也沒有 skit 或間奏軌。**客座只有第 5、9 兩軌，兩位都寫在軌級 artist-credit 上。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=91316452-9af8-4d87-b263-3e67e7deae82&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **3 個 release-group**，依 first-release-date 排序：**2016-05-18 本張（Album，secondary-types 空）、2018-11-02《電影《誰先愛上他的》原聲帶》（Album＋Soundtrack）、2020-03《水哥 2020》（Album）**。**沒有 EP、沒有 Single。本張是這份目錄裡最早的一筆，也是兩張非原聲帶長篇中較早的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bef9d994-7df9-484d-acd9-3d26a37161d1&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1112089754 攤開逐軌覆核：collectionName「台北直直撞」、artistName「李英宏」、releaseDate 2016-05-10、trackCount **12**、℗ 2016 Kao Muziq Co. Ltd。**12 軌逐位置與資料庫端完全同序同名**（第 5 軌店面寫〈什麼時候她 (feat. 蛋堡)〉、第 9 軌寫〈古錐仔 (feat. 國蛋)〉，客座掛進曲名括號而不是軌級掛名，曲名本體相同），長度差最大 3 秒（第 5 軌 4:56 對 4:59），**12 軌全部有 previewUrl**。**採信。**",
+    "src": "https://itunes.apple.com/lookup?id=1112089754&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "店面端兩種查法的落差實測：以藝人名當 term 查 tw 店面回 25 筆，裡面**只有單曲與三張影視原聲帶，沒有本張**；但直接以 collectionId lookup 卻回得到完整 12 軌與 12 個 previewUrl。**同一個店面、同一張碟，目錄搜尋查不到、直查查得到**——這正是第 231 條說的間歇性失效的形狀。封面端另行實測：release-group 的封面查詢**回 404**，本張的封面確實沒有自動來源，但**試聽有**。",
+    "src": "https://itunes.apple.com/search?term=%E6%9D%8E%E8%8B%B1%E5%AE%8F&country=tw&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌的長度全部在四分二十秒到五分三十四秒之間，沒有一首是過場",
+   "客座只請了兩位，一位在第五首、一位在第九首"
+  ],
+  "sound": "2016 年 TW 原盤是一張 CD、12 軌，12 軌都留有長度。曲序從與盤名同名的〈台北直直撞〉4:20 開場，接〈羞羞男〉5:06、〈愛奴〉4:35、〈媽媽十塊〉5:34，中段是〈什麼時候她〉4:59、〈打與罵〉4:59、〈一隻狗仔〉4:54、〈我喜歡妳走起路來的樣子〉4:23，後半〈古錐仔〉4:44、〈阿貓想要來撒嬌〉4:51、〈慢慢阿流〉5:20，收在〈讓子彈飛〉4:53。整張最短 4:20、最長 5:34，沒有 skit、沒有 intro／outro 這類過場軌，十二首都是完整長度的歌。客座只有兩軌：第 5 軌與第 9 軌，兩位的名字寫在軌級掛名上。",
+  "keyTracks": [
+   "台北直直撞",
+   "媽媽十塊",
+   "讓子彈飛"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2016。release-group first-release-date **2016-05-18**、轄下唯一 release 的 date 也是 2016-05-18（TW／Official／顏社），串流側 collectionId 1112089754 的 releaseDate 2016-05-10、℗ 年 2016。**四處對照全部指向 2016**，串流上架日比實體早八天，不構成年份分歧。**同名先行單曲：無**——藝人目錄只有 3 筆，全是 Album 型，沒有任何 Single 或 EP 條目。",
+  "notes": "**擋下策展層四處。**｜**（1）最重的一處：`curatorRisk` 開頭寫「⚠ 封面與試聽都沒有自動來源，這張要走掃圖」「Apple 店面 tw 三種查法全部 0 筆，已超過第 231 條門檻，記為 tw 未上架」——串流側查得到，collectionId 1112089754，12 軌逐位置相符、12 軌全部有試聽。不得寫「沒有線上來源」，也不得沿用 rulings 第 259 條把本張列進「要掃圖的四張」的結論；正確的狀態是「封面無自動來源（release-group 封面查詢回 404）、試聽有來源」。落差的成因已查明：店面的藝人目錄搜尋漏掉這張，直查 collectionId 就回得到——第 231 條講的間歇性失效。**｜（2）`curatorWhy` 寫「2010 年代台語嘻哈最常被回頭引用的一張」：引用度、影響力沒有任何可查來源，**不得寫**。｜（3）`curatorWhy` 寫「顏社在 2015 之後的那一代一位都沒有」這類廠牌世代的說法：廠牌名「顏社」由 release 的 label-info 查得屬實，但**廠牌的來歷、世代、誰開的一律查不到可引來源，不得寫**。｜（4）序數「第一張個人專輯」：藝人目錄 3 筆，本張 first-release-date 最早，**可留**；但同一份目錄裡另有一張 2018 的影視原聲帶，行文寫「名下最早的一張長篇」比「第一張個人專輯」穩。｜**台語用字**：本張 12 軌在資料庫端與店面端沒有漢字分歧，只有客座標記的位置不同（軌級掛名 vs 曲名括號）。｜**時間可以寫**：12 軌在資料庫端就有長度，不必靠串流側。｜**串流採信 1112089754**：12 軌逐位置同序同名、長度差 ≤3 秒、全數有 previewUrl。"
+ },
+ {
+  "key": "desc4:李英宏|水哥 2020",
+  "artist": "李英宏",
+  "album": "水哥 2020",
+  "facts": [
+   {
+    "f": "release-group 4ee9c35f 的欄位：title「水哥 2020」、artist-credit「李英宏」（藝人實體 MBID bef9d994，type Person、country TW）、first-release-date **2020-03**（**只到月，沒有日**）、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2020-03／TW／Official，label-info「顏社」，barcode **4712862000260**，CD 一張 11 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4ee9c35f-5e5a-493a-ad6b-50d5b112e6bb?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2020 TW 盤逐軌曲目與長度，11 軌全部有長度：1〈我想和你瞎〉3:31（軌上掛名記「李英宏 ft. 馬念先」）、2〈水哥〉3:41（「李英宏 ft. 蛋堡」）、3〈蘆樂佛尼亞〉4:22、4〈大不了就分手〉5:11、5〈酒鬼〉4:20、6〈以黑擊黑〉3:51（「李英宏 ft. Leo王」）、7〈Skit-煙火〉3:20、8〈自躁浪漫〉4:52（「李英宏 ft. 李權哲」）、9〈無經驗可〉4:10、10〈就這樣吧〉4:53、11〈愛我就給我〉5:21。**11 軌裡有 4 軌帶客座**，比前一張的 2 軌多一倍。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4ee9c35f-5e5a-493a-ad6b-50d5b112e6bb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **3 個 release-group**：2016-05-18《台北直直撞》（Album）、2018-11-02《電影《誰先愛上他的》原聲帶》（Album＋Soundtrack）、2020-03 本張（Album）。**本張是目錄裡最晚的一筆，也是兩張非原聲帶長篇中較晚的一張。目錄裡沒有 EP、沒有 Single。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bef9d994-7df9-484d-acd9-3d26a37161d1&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1503482662 攤開逐軌覆核：collectionName「水哥 2020」、artistName「李英宏」、releaseDate 2020-03-27、trackCount **11**、℗ 2020 KAO!INC.。11 軌曲名集合與資料庫端**完全相同**，**但第 1、2 軌的曲名在兩端互換**：店面端 1〈水哥 (feat. 蛋堡)〉3:31、2〈我想和你瞎 (feat. 馬念先)〉3:41；資料庫端 1〈我想和你瞎〉3:31、2〈水哥〉3:41。**長度是跟著位置不動的（3:31 在前、3:41 在後），互換的只有曲名**——兩端其中一端把這兩軌的曲名對錯了位置。其餘 9 軌逐位置同名，長度差最大 3 秒（第 6 軌 3:50／3:51、第 7 軌 3:17／3:20）。11 軌全部有 previewUrl。**採信。**",
+    "src": "https://itunes.apple.com/lookup?id=1503482662&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "封面與店面查法實測：release-group 的封面查詢**回 404**，本張沒有自動封面；店面端以藝人名當 term 查 tw 回 25 筆，**目錄裡沒有本張**，但直接以 collectionId 1503482662 lookup 回得到完整 11 軌與 11 個 previewUrl。**與同一位藝人 2016 那張是同一個形狀：封面 404、試聽有。**",
+    "src": "https://itunes.apple.com/search?term=%E6%9D%8E%E8%8B%B1%E5%AE%8F&country=tw&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "盤名把年份寫進去了，可是碟上的日期只記到那年三月",
+   "十一首裡有四首找了客座，第七首是一段叫〈Skit-煙火〉的過場"
+  ],
+  "sound": "2020 年 TW 盤是一張 CD、11 軌，11 軌都有長度。曲序在資料庫端是〈我想和你瞎〉3:31、〈水哥〉3:41 開場（店面端把這兩軌的曲名對調，長度不變），接〈蘆樂佛尼亞〉4:22、〈大不了就分手〉5:11、〈酒鬼〉4:20、〈以黑擊黑〉3:51，第七軌是唯一一段過場〈Skit-煙火〉3:20，後半〈自躁浪漫〉4:52、〈無經驗可〉4:10、〈就這樣吧〉4:53，收在最長的〈愛我就給我〉5:21。11 軌裡有 4 軌帶客座，客座名字寫在軌級掛名上；四年前那張 12 軌只有 2 軌有客座。",
+  "keyTracks": [
+   "蘆樂佛尼亞",
+   "酒鬼",
+   "愛我就給我"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2020。release-group first-release-date **2020-03**（只到月）、轄下唯一 release 的 date 同樣是 2020-03（TW／Official／顏社，bc 4712862000260），串流側 collectionId 1503482662 的 releaseDate 2020-03-27、℗ 年 2020。**四處對照全部指向 2020**；資料庫端沒有日、串流端記到 3 月 27 日，不構成分歧。卡片盤名本身帶「2020」四個數字，**那是盤名的一部分不是版本後綴**。**同名先行單曲：無**——藝人目錄只有 3 筆，全是 Album 型。",
+  "notes": "**擋下策展層三處。**｜**（1）最重的一處：`curatorRisk` 開頭寫「⚠ 封面與試聽都沒有自動來源，這張要走掃圖」「Apple 店面 tw 三種查法皆 0」——串流側查得到，collectionId 1503482662，11 軌、全部有試聽。不得寫「沒有線上來源」；正確狀態是「封面 404、試聽有來源」，rulings 第 259 條把本張列進「要掃圖的四張」同樣不成立。**｜**（2）第 1、2 軌的曲名在兩端互換**：資料庫端 1〈我想和你瞎〉3:31／2〈水哥〉3:41，店面端 1〈水哥〉3:31／2〈我想和你瞎〉3:41，長度跟著位置不動。**行文不得把這兩首歌的長度綁在一起講，也不要說「開場曲是〈水哥〉」或「開場曲是〈我想和你瞎〉」——兩端說法相反，無法判定哪一端對。**若要寫這兩軌，只能寫「開場兩軌是〈我想和你瞎〉與〈水哥〉」，不排序。｜（3）序數「第二張個人專輯」：藝人目錄 3 筆，本張是兩張非原聲帶長篇中較晚的一張，**要留就得說明目錄裡另有一張影視原聲帶**，寫「名下最晚的一張長篇」最穩。｜**廠牌**：label-info 記「顏社」屬實，**但廠牌來歷不得寫**。｜**時間可以寫**：11 軌在資料庫端就有長度。｜**串流採信 1503482662**：11 軌曲名集合相同、9 軌逐位置同名、第 1／2 軌曲名互換但長度依位置對齊、全數有 previewUrl。"
+ },
+ {
+  "key": "desc4:大支|音政樂治",
+  "artist": "大支",
+  "album": "音政樂治",
+  "facts": [
+   {
+    "f": "release-group cd1457cf 的欄位：title「音政樂治」、artist-credit「大支」、first-release-date **2020-12**（只到月）、primary-type Album、secondary-types **空**。**藝人實體的主名不是「大支」而是「Dwagie」**（MBID f1e326c8，type Person、country TW），漢字「大支」只出現在這一筆的 artist-credit 上。轄下**只有 1 筆 release**：2020-12／TW／Official，**label-info 是空的（沒有掛任何廠牌）**、**barcode 也是空的**，CD 一張 13 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/cd1457cf-9c16-43b7-bd4f-5b5de85e69c7?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2020 TW 盤逐軌曲目：1〈INTRO〉、2〈辣台妹〉、3〈高舉拳頭〉、4〈霸凌王〉、5〈覺醒韓粉的自白〉、6〈明會會更好〉、7〈台灣隊長〉、8〈世姦情〉、9〈豪〉、10〈民主先生〉、11〈音政樂治〉、12〈阿華師情歌〉、13〈大支〉。**13 軌沒有任何一軌記錄長度**——這張在資料庫端完全沒有時間資料。**第 13 軌與掛名同名、第 11 軌與盤名同名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cd1457cf-9c16-43b7-bd4f-5b5de85e69c7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **10 個 release-group**：Album **5 個**（2002-07-31《舌粲莲花》、2013-12-31《Refuse to Listen》、2016-10-19《硬》、2018-09-07《暗網》、2020-12 本張）、Single 5 個（2014-12-30《火燒島 民謠版》、2019-05-31《鬼岛 (Ghost Island)》、2019-12-20《覺醒的鋼鐵韓粉 (Self-Confession of A Woke Han Fan)》、2020-03-11《WHO》、2025-02-21《Team Taiwan》）。**沒有 EP、沒有 Compilation、沒有 Live。本張是這份目錄裡最晚的一張 Album，五張長篇裡排第 5。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f1e326c8-424f-4e86-9d77-eb632e2e81a2&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1545548109 攤開逐軌覆核：collectionName「音政樂治」、artistName「大支」、releaseDate 2020-12-25、trackCount **13**、℗ 2020 人人有功練音樂工作室 ZenZen Nation。**13 軌逐位置與資料庫端同序**，只差兩個寫法：第 6 軌店面寫〈明天會更好〉、資料庫端寫「**明會會更好**」（少一個「天」、多一個「會」，是資料庫端的錯字）；第 7 軌店面寫〈台灣隊長 (Remix)〉、資料庫端只寫〈台灣隊長〉。**店面端 13 軌全部有長度與 previewUrl**：1〈Intro〉1:12、2〈辣台妹〉3:20、3〈高舉拳頭〉2:05、4〈霸凌王〉2:58、5〈覺醒韓粉的自白〉2:49、6 3:33、7 2:57、8〈世姦情〉3:59、9〈豪〉4:12、10〈民主先生〉3:32、11〈音政樂治〉3:33、12〈阿華師情歌〉4:05、13〈大支〉3:41。**採信。**",
+    "src": "https://itunes.apple.com/lookup?id=1545548109&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "另兩筆同期候選逐筆覆核，**兩筆都不是本張**：collectionId 1564252587《台灣隊長》2021、10 軌、℗ 2021 人人有功練音樂工作室——**這是資料庫端整份目錄裡沒有的一張碟**（10 個 release-group 裡沒有任何名為《台灣隊長》的 Album），與本張 13 軌只有一軌同名，**駁回**；collectionId 1489705706《燃燒の饒舌魂》2019、7 軌、℗ 2019 Kung Fu Entertainment，資料庫端同樣沒有這筆，年份也不符，**駁回**。封面端實測：release-group 的封面查詢**回 404**。",
+    "src": "https://itunes.apple.com/lookup?id=1564252587&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "整張十三首，最後一首的曲名就是這位饒舌歌手的名字",
+   "第十一首與盤名同名，第一首只有一分十二秒"
+  ],
+  "sound": "2020 年 TW 盤是一張 CD、13 軌。資料庫端 13 軌一律沒有記長度，時間全部來自串流側那筆逐軌對得上的上架版本：開場〈Intro〉只有 1:12，接〈辣台妹〉3:20、〈高舉拳頭〉2:05、〈霸凌王〉2:58、〈覺醒韓粉的自白〉2:49，中段〈世姦情〉3:59、〈豪〉4:12、〈民主先生〉3:32，第 11 軌是與盤名同名的〈音政樂治〉3:33，再接〈阿華師情歌〉4:05，收在與掛名同名的〈大支〉3:41。13 軌裡最長 4:12、最短 1:12，多數在三分鐘上下，比同一位創作者 2016 與 2018 那兩張都短。這一筆 release 的 label-info 是空的，沒有掛任何廠牌。",
+  "keyTracks": [
+   "辣台妹",
+   "世姦情",
+   "音政樂治"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2020。release-group first-release-date **2020-12**（只到月）、轄下唯一 release 的 date 同樣是 2020-12（TW／Official），串流側 collectionId 1545548109 的 releaseDate 2020-12-25、℗ 年 2020。**四處對照全部指向 2020。同名先行單曲：無**——但藝人目錄裡有一筆 2019-12-20 的 Single《覺醒的鋼鐵韓粉 (Self-Confession of A Woke Han Fan)》，與本張第 5 軌〈覺醒韓粉的自白〉**曲名不同、是不同的條目**，不要當成本張的先行單曲。",
+  "notes": "**擋下策展層四處。**｜**（1）`curatorRisk` 開頭寫「⚠ 封面與試聽都沒有自動來源，這張要走掃圖」「Apple 店面 tw 兩種查法皆 0」——串流側查得到，collectionId 1545548109，13 軌逐位置同序、全部有長度與試聽。不得寫「沒有線上來源」；正確狀態是「封面回 404、試聽有來源」。**｜**（2）廠牌：`label` 欄與 `curatorWhy` 寫「無廠牌（自主發行）」。資料庫端 label-info 確實是空的，這一半屬實；但「自主發行」是推論不是欄位，而且串流側的 ℗ 記的是一間有名字的工作室。**行文只能寫「這一筆發行沒有掛廠牌」，不得寫「自主發行」「自己出的」**。｜（3）`curatorWhy` 寫「這條台南出身的台語饒舌線」：**「台南」這一半有來源可留**——藝人實體的 area 欄位記 **Tainan**、life-span.begin 記 **1980**、alias 有 Dog G／Kuan-Jung Tseng／大支／曾冠榕四筆（`curatorRisk` 對 alias 的描述屬實）；**但「台語饒舌」是語言與曲風歸類，不是欄位，不得寫**。｜（4）`curatorRisk` 提醒的「Apple 端有一張《台灣隊長》2021（collectionId 1564252587）是 MB 完全沒有的專輯，不要搞混」——**這一處查證屬實，可留**：資料庫端 10 個 release-group 裡確實沒有這張，本層已逐筆駁回。｜**⚠ 曲名分歧兩軌**：第 6 軌資料庫端寫「明會會更好」（明顯是錯字）、店面端寫〈明天會更好〉；第 7 軌資料庫端〈台灣隊長〉、店面端〈台灣隊長 (Remix)〉。**這兩軌一律不要寫進行文**，`keyTracks` 已避開。｜**時間可以寫，但長度全部來自串流側**：資料庫端 13 軌一律無長度，行文引用時間時心裡要清楚來源只有一處、沒有第二處可交叉。｜**串流採信 1545548109**：13 軌逐位置同序、11 軌完全同名、2 軌寫法有差、全數有 previewUrl。**駁回 1564252587《台灣隊長》2021 與 1489705706《燃燒の饒舌魂》2019**：兩筆在資料庫端的藝人目錄裡都不存在，曲目與本張不符。"
+ },
+ {
+  "key": "desc4:濁水溪公社|裝潢",
+  "artist": "濁水溪公社",
+  "album": "裝潢",
+  "facts": [
+   {
+    "f": "release-group 7a04b96a 的欄位：title「裝潢」、artist-credit「濁水溪公社」（藝人實體 MBID e0859944，type Group、country TW、disambiguation 空）、first-release-date **2019-05**（只到月）、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2019-05／TW／Official，label-info **「禾廣娛樂股份有限公司」**，barcode **4713249231871**，CD 一張 11 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7a04b96a-b12e-410c-a21d-8cd6cd228e82?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2019 TW 盤逐軌曲目與長度，11 軌全部有長度：1〈失眠〉4:44、2〈犯太歲〉4:46、3〈矽利康槍子〉4:06、4〈雨季〉5:12、5〈麻菸〉4:17、6〈公投之歌〉4:05、7〈借問2〉3:14、8〈嬰仔歌〉3:13、9〈獵人〉4:35、10〈出外人〉4:15、11〈再會〉6:22。**收尾那軌 6:22 是全張最長，比第二長的〈雨季〉5:12 多出七十秒**；最短的兩軌〈借問2〉3:14 與〈嬰仔歌〉3:13 並排在第 7、8 位。**第 7 軌的曲名自帶一個阿拉伯數字 2**，是續作式的命名。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7a04b96a-b12e-410c-a21d-8cd6cd228e82&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **11 個 release-group**，依 first-release-date 排序：1995-12《1995台灣地下音樂檔案》、1997《赤聲搖滾第一集： SCUM》（**Album＋Compilation**）、1999-05-10《台客的復仇》、2001-04-04《臭死了》、2002-06《反中國併吞: Anti China Invasion Live》、2005-08-01《天涯棄逃人》、2008-12-26《藍寶石》、2012《鬼島社會檔案》、2014《鄉土．人民．勃魯斯》、2017-12-01《亞洲衝擊》、**2019-05 本張**。**十一筆全部是 primary-type Album，沒有 EP、沒有 Single。本張是這份目錄裡最晚的一筆，前一筆是 2017 年那張，中間沒有其他條目。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e0859944-2869-41c5-927d-cf894f331a50&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側與封面側逐一實測，**兩邊都沒有本張**：以掛名漢字當 term 查 tw 店面回 **0 筆**，以羅馬字別名 Loh Tsui Kweh Commune 查同樣回 **0 筆**——**整位藝人在該店面一張都沒有**，不是單張缺漏。release-group 的封面查詢**回 404**。**回撈候選檔對本張的結論就是「目錄裡找不到」，本層覆核相符，沒有可採信的 collectionId。**",
+    "src": "https://itunes.apple.com/search?term=%E6%BF%81%E6%B0%B4%E6%BA%AA%E5%85%AC%E7%A4%BE&country=tw&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "收尾那首六分二十二秒，比整張第二長的還多出七十秒",
+   "第七首的曲名結尾帶一個阿拉伯數字 2"
+  ],
+  "sound": "2019 年 TW 盤是一張 CD、11 軌，11 軌都有長度。開場〈失眠〉4:44 接〈犯太歲〉4:46，第三軌〈矽利康槍子〉4:06 把建材名稱寫進曲名，接最長之一的〈雨季〉5:12 與〈麻菸〉4:17。中段〈公投之歌〉4:05 之後是全張最短的兩軌並排——〈借問2〉3:14 與〈嬰仔歌〉3:13，前者的曲名結尾帶一個阿拉伯數字。後半〈獵人〉4:35、〈出外人〉4:15，收在 6:22 的〈再會〉，那是全張最長的一軌，比第二長的〈雨季〉多出七十秒。整張長度分佈很平，除了收尾那軌之外全部落在 3:13 到 5:12 之間。",
+  "keyTracks": [
+   "矽利康槍子",
+   "借問2",
+   "再會"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2019。release-group first-release-date **2019-05**（只到月）、轄下唯一 release 的 date 同樣是 2019-05（TW／Official／禾廣娛樂股份有限公司，bc 4713249231871）。**串流側沒有本張的上架版本可對照 ℗ 年**——整位藝人在該店面 0 筆，所以四處對照只成立兩處，兩處都指向 2019。**與另一份候選清單記的「裝潢 2002」的年份爭議：藝人目錄裡 2002 年那一筆是《反中國併吞: Anti China Invasion Live》，不是《裝潢》；整份 11 筆目錄裡只有這一筆叫《裝潢》，first-release-date 2019-05。取 2019 有據。**｜**同名先行單曲：無**——目錄 11 筆全是 Album。",
+  "notes": "**擋下策展層兩處。**｜（1）`curatorWhy` 寫「這支台語地下樂團從 2001 到 2019 就沒有斷點」：**藝人目錄實有 11 筆，卡單 `mbNote` 的「刻意不釘」只列了 6 筆**，漏掉 1995-12《1995台灣地下音樂檔案》、1997《赤聲搖滾第一集： SCUM》（Album＋Compilation）、1999-05-10《台客的復仇》、2002-06《反中國併吞: Anti China Invasion Live》四筆。**行文不得寫「沒有斷點」「完整目錄」這類覆蓋性說法**，也不得寫「2019 這一端是整條線唯一還空著的位置」——那是池況判斷，本層不背書。｜（2）`curatorWhy` 寫「這支台語地下樂團」：語言與場景歸類不是資料庫欄位，**不得寫**；藝人實體只查得到 type Group、country TW、disambiguation 空。｜**（3）反方向確認一處：`curatorRisk` 寫「⚠ 封面與試聽都沒有自動來源，這張要走掃圖」「Apple 店面 tw 是整位藝人 0 筆」——本層覆核屬實。**封面查詢回 404、掛名漢字與羅馬字兩種查法各回 0 筆，回撈候選檔對本張也直接記「目錄裡找不到」。**本批只有這一張是真的兩邊都沒有來源**；同一份 rulings 列的另外三張（同批兩張嘻哈長篇與另一張 2020 的碟）串流側都查得到。｜**廠牌**：label-info 記「禾廣娛樂股份有限公司」屬實，可寫；**廠牌來歷不得寫**。｜**時間可以寫**：11 軌在資料庫端就有長度。｜**串流覆核結果：無可採信的 collectionId**，本張維持無串流來源狀態。"
+ },
+ {
+  "key": "desc4:滅火器|進擊下半場",
+  "artist": "滅火器",
+  "album": "進擊下半場",
+  "facts": [
+   {
+    "f": "release-group 72eaf6d3 的欄位：title「進**撃**下半場」（**release-group 這一層用的是日式異體字「撃」**）、artist-credit「滅火器」（藝人實體 MBID 655ba39c，type Group、country TW、disambiguation「Taiwanese indie punk band」）、first-release-date **2017-04-14**、primary-type Album、**secondary-types [Compilation]**。轄下 **2 筆 release，兩筆同日、同 barcode 4713052732107、同掛「火氣音樂」、同為 Official**：2017-04-14／XW 的數位版（21 軌，**這一筆的 title 寫的是繁體「進擊下半場」**）與 2017-04-14／TW 的 CD 版（21 軌，catno **RW0025**，title 寫異體「進撃下半場」）。**兩種寫法都在資料庫端，繁體那一種就掛在數位版的 release 上，不是只有店面端才有。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/72eaf6d3-0a32-4ce6-9fd4-05d916b6044e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "TW CD 版逐軌曲目與長度，21 軌全部有長度：1〈Song For You〉3:12、2〈Let's Go〉3:31、3〈Pass Away〉3:34、4〈惡夢9125〉2:55、5〈日子〉3:01、6〈舊照片〉3:12、7〈夏天結束以前〉3:51、8〈南國的風〉3:54、9〈黃昏公路〉3:56、10〈海上的人〉4:06、11〈晚安台灣〉3:35、12〈島嶼天光〉4:20、13〈我在哪裡〉2:58、14〈欲走無路〉3:15、15〈憂愁戀歌〉4:03、16〈頂樓天光〉4:11、17〈十九〉3:57、18〈人生〉3:08、19〈站在這裡〉4:16、20〈長途夜車〉3:06、21〈繼續向前行〉4:10。**21 軌全部落在 2:55 到 4:20 之間，沒有一軌超過四分半**；XW 數位版的軌數與曲序完全相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=72eaf6d3-0a32-4ce6-9fd4-05d916b6044e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **17 個 release-group**：**Album 8 個**（2007-01-01《衝啦!》、2009-10-01《海上的人》、2013-05-07《再會！青春》、2016-03-25《REBORN》、**2017-04-14 本張（Album＋Compilation）**、2019-12-10《無名英雄》、2023-06-09《家和萬事興》、2025-09-10《Fire EX. 25th Anniversary 《Quarter Century》 Best Album》（Album＋Compilation））、Single 9 個。**目錄裡帶 Compilation 的只有兩筆，就是本張與 2025 那張；沒有任何 Live 條目。**本張 21 軌裡只有 2 軌能在同一份目錄上找到同名條目：第 10 軌〈海上的人〉對 2009 年那張長篇的盤名、第 12 軌〈島嶼天光〉對 2014-12-30 的 Single。**其餘 19 軌的出處在資料庫端查不到。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=655ba39c-f754-4ed1-adac-4b2258598ade&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側 collectionId 1547226960 攤開逐軌覆核：collectionName「進擊下半場」（**繁體**）、artistName「滅火器」、releaseDate 2017-04-14、trackCount **21**、℗ 2017 FIRE ON MUSIC Co., Ltd.。**21 軌逐位置同序同名、長度逐軌完全相同**（21 軌一秒不差），唯一差別是第 4 軌店面端寫〈惡夢 9125〉（數字前有半形空白）、資料庫端寫〈惡夢9125〉。21 軌全部有 previewUrl。**採信。**release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1547226960&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "二十一首歌，長度全部擠在兩分五十五秒到四分二十秒之間",
+   "盤名的第二個字在同一批發行裡有兩種寫法，數位版與實體版各用一種"
+  ],
+  "sound": "2017 年同日發了兩種載體：TW 的 CD（catno RW0025）與 XW 的數位版，兩筆同 barcode、同 21 軌、同曲序，只有盤名的第二個字寫法不同。21 軌都有長度，而且全部擠在 2:55 到 4:20 這個很窄的區間裡，沒有一軌超過四分半。曲序從英文曲名的〈Song For You〉3:12、〈Let's Go〉3:31、〈Pass Away〉3:34 開頭，之後轉成漢字曲名一路排到底：〈惡夢9125〉2:55、〈日子〉3:01、〈舊照片〉3:12、〈夏天結束以前〉3:51、〈南國的風〉3:54、〈黃昏公路〉3:56、〈海上的人〉4:06、〈晚安台灣〉3:35、〈島嶼天光〉4:20，後半〈我在哪裡〉〈欲走無路〉〈憂愁戀歌〉〈頂樓天光〉〈十九〉〈人生〉〈站在這裡〉〈長途夜車〉，收在〈繼續向前行〉4:10。其中〈海上的人〉與同一位藝人 2009 年那張長篇同名，〈島嶼天光〉與名下 2014 年的一筆單曲同名。",
+  "keyTracks": [
+   "海上的人",
+   "島嶼天光",
+   "繼續向前行"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2017。release-group first-release-date **2017-04-14**、轄下兩筆 release 的 date 都是 2017-04-14（XW 數位與 TW CD，同 barcode 4713052732107），串流側 collectionId 1547226960 的 releaseDate 2017-04-14、℗ 年 2017。**四處對照全部指向同一天，是本批年份最乾淨的一張。同名先行單曲：無**——藝人目錄 9 筆 Single 裡沒有與盤名同名者；第 12 軌〈島嶼天光〉與 2014-12-30 那筆 Single 同名，但那是本張三年前的條目，不是先行單曲。",
+  "notes": "**擋下策展層三處。**｜**（1）`curatorRisk` 與 rulings 第六節都寫「MB 的 RG 標題寫『進撃下半場』（日式異體字），Apple 與台灣實體寫『進擊下半場』；卡片取繁體是依店主 2026-09-06 裁定」——這個描述不準確：資料庫端的兩筆 release 裡，XW 數位版的 title 本來就寫繁體「進擊下半場」，異體字只出現在 release-group 那一層與 TW CD 那一筆。卡片取繁體有資料庫端的來源，不必只靠店面端背書。**行文若要提兩種寫法，要說「同一批發行的兩筆裡各用一種」，不要說「資料庫寫異體、店面寫繁體」。**｜（2）`curatorWhy` 寫「把樂團前十年的曲目重新收攏」：**21 軌裡只有 2 軌能在藝人目錄上找到同名條目**（第 10 軌對 2009 年的長篇盤名、第 12 軌對 2014 年的單曲），其餘 19 軌的出處在資料庫端查不到。**不得寫「收攏前十年曲目」「精選自哪幾張」**；能寫的只有「其中兩軌與名下 2009 年的長篇、2014 年的單曲同名」。｜（3）`curatorWhy` 寫「滅火器 2017 年由自營的火氣音樂發行」：label-info 記「火氣音樂」屬實，**但「自營」（誰開的、樂團自己的廠牌）查不到可引來源，不得寫**。｜**型別**：secondary-types 是 [Compilation]，依裁定第 167／190 條照一般 Album 寫、不填例外欄位——這一處卡單處理正確。｜**時間可以寫**：21 軌在資料庫端就有長度，而且與串流側逐軌一秒不差。｜**曲名分歧一軌**：第 4 軌資料庫端〈惡夢9125〉／店面端〈惡夢 9125〉，只差一個半形空白，非漢字用字分歧。｜**串流採信 1547226960**：21 軌逐位置同序同名、長度逐軌完全相同、全數有 previewUrl。"
+ },
+ {
+  "key": "desc4:滅火器|Quarter Century",
+  "artist": "滅火器",
+  "album": "Quarter Century",
+  "facts": [
+   {
+    "f": "release-group 5eaac0ae 的欄位：title **「Fire EX. 25th Anniversary 《Quarter Century》 Best Album」**（把掛名的拉丁寫法、週年、書名號與 Best Album 全串在同一行，卡片只取書名號裡的「Quarter Century」）、artist-credit「滅火器」（藝人實體 MBID 655ba39c，type Group、country TW、disambiguation「Taiwanese indie punk band」）、first-release-date **2025-09-10**、primary-type Album、**secondary-types [Compilation]**。轄下**只有 1 筆 release，而且是 JP 不是 TW**：2025-09-10／JP／Official，label-info **ZESTONE RECORDS**、catno **ZTTH-0104**、barcode **4580717704812**，CD 一張 **18 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5eaac0ae-59a2-470c-9c84-1fc324bc5db3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2025 JP 盤逐軌曲目與長度，18 軌全部有長度：1〈Let's Go〉3:31、2〈Pass Away〉3:34、3〈人生〉3:08、4〈十九〉3:57、5〈惡夢9125〉2:55、6〈日子〉3:01、7〈舊照片〉3:12、8〈站在這裡〉4:16、9〈晚安台灣〉3:35、10〈海上的人〉4:06、11〈島嶼天光〉4:20、12〈頂樓天光〉4:11、13〈長途夜車〉3:06、14〈人間條件〉3:48、15〈新歌六號〉3:38、16〈火山戀曲〉3:30、17〈一百夜〉3:55、18〈人生尾路〉3:49。**18 軌全部落在 2:55 到 4:20 之間。**（第 1 軌來源端寫成〈Let’s Go〉，用的是彎撇 U+2019，本檔依卡池慣例改直撇。）",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5eaac0ae-59a2-470c-9c84-1fc324bc5db3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "與同一位藝人 2017 年那張帶 Compilation 的長篇逐軌交叉比對：**18 軌裡有 13 軌與 2017 那張的 21 軌同名**（〈Let's Go〉〈Pass Away〉〈惡夢9125〉〈日子〉〈舊照片〉〈海上的人〉〈晚安台灣〉〈島嶼天光〉〈頂樓天光〉〈十九〉〈人生〉〈站在這裡〉〈長途夜車〉），而且這 13 軌的長度兩張**逐軌一秒不差**。**另外 5 軌是 2017 那張沒有的**：〈人間條件〉3:48、〈新歌六號〉3:38、〈火山戀曲〉3:30、〈一百夜〉3:55、〈人生尾路〉3:49。**其中前兩軌在藝人目錄上各有一筆同名的 Single**（2023-06-01《人間條件》、2023-05-05《新歌六號》），後三軌在目錄裡查不到同名條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=655ba39c-f754-4ed1-adac-4b2258598ade&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側兩個店面各查兩種寫法，**四種查法都沒有本張**：以掛名漢字當 term 查 tw 店面回 49 筆（含 2017 那張帶 Compilation 的長篇、2007／2009／2013／2016／2019／2023 的長篇與大量單曲），**沒有這一張**；以掛名的拉丁寫法當 term 查 jp 店面回 60 筆，同樣**沒有這一張**。**已超過第 231 條「隔時重試兩次」的門檻，記為兩個店面都未上架。**release-group 的封面查詢**回 200，有圖**——本張是封面有來源、試聽沒有來源的形狀。",
+    "src": "https://itunes.apple.com/search?term=Fire%20EX.&country=jp&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "十八首裡有十三首和八年前那張整編盤重複，連長度都一秒不差",
+   "唯一一筆發行是日本盤，目錄編號是日式的四碼加四碼"
+  ],
+  "sound": "2025 年只發了一種載體，而且是日本盤：ZESTONE RECORDS 的 ZTTH-0104，CD 一張 18 軌，18 軌都有長度、全部落在 2:55 到 4:20 之間。曲序從〈Let's Go〉3:31、〈Pass Away〉3:34 開頭，接〈人生〉3:08、〈十九〉3:57、〈惡夢9125〉2:55、〈日子〉3:01、〈舊照片〉3:12、〈站在這裡〉4:16、〈晚安台灣〉3:35、〈海上的人〉4:06、〈島嶼天光〉4:20、〈頂樓天光〉4:11、〈長途夜車〉3:06，最後五軌轉成 2017 年那張整編盤沒有的曲目：〈人間條件〉3:48、〈新歌六號〉3:38、〈火山戀曲〉3:30、〈一百夜〉3:55，收在〈人生尾路〉3:49。前十三軌與八年前那張逐軌同名、長度一秒不差；後五軌裡的前兩軌在同一份藝人目錄上各有一筆 2023 年的同名單曲。",
+  "keyTracks": [
+   "人間條件",
+   "新歌六號",
+   "人生尾路"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2025。release-group first-release-date **2025-09-10**、轄下唯一 release 的 date 同樣是 2025-09-10（JP／Official／ZESTONE RECORDS ZTTH-0104，bc 4580717704812）。**串流側沒有本張的上架版本可對照 ℗ 年**——tw 與 jp 兩個店面各查兩種寫法都是 0 筆，所以四處對照只成立兩處，兩處都指向 2025。盤名裡沒有年份數字。**同名先行單曲：無**；第 14、15 軌〈人間條件〉〈新歌六號〉在藝人目錄上各有一筆 2023 年的同名 Single，但那是本張兩年前的條目，不是先行單曲。",
+  "notes": "**擋下策展層兩處。**｜（1）`curatorWhy` 寫「**這是這支台語龐克樂團少數以日本盤為首發的碟**」：本層只確認到「本張轄下唯一一筆 release 是 JP」這一件事；**要說「少數」就得把名下 17 個 release-group 的 release 全部攤開數過，本層沒有做，也不建議做**（成本高於收益）。**行文只能寫「唯一一筆發行是日本盤」，不得寫「少數」「罕見」「第一次」。**同一句的「台語龐克樂團」也是語言與曲風歸類，不是欄位，不得寫。｜（2）`curatorWhy` 寫「成軍二十五週年的整編輯」：**release-group 的 title 自陳 25th Anniversary 與 Best Album，這一半有來源可留**；**「成軍」年份本層另外查了藝人實體：life-span.begin 記 2001、begin-area 記 Kaohsiung，這兩件有來源可寫**。⚠ 但 2025 減 2001 是 **24** 年，盤名自陳的是 **25th Anniversary**，**兩個數字對不起來——行文不得把週年數與 life-span 綁在一起算，也不得寫「出道二十五年」**，要提週年只能照盤名的字面寫。｜**（3）反方向確認一處：`curatorRisk` 寫「Apple 店面 tw 查回 12 筆全是不相干的碟，記為 tw 未上架；首發是日本盤，探測層可以另試店面 jp」——本層把 jp 也查了，jp 同樣 0 筆。**兩個店面都沒有，探測層不必再試 jp。**｜**型別**：secondary-types [Compilation]，依裁定第 167／190 條照一般 Album 寫、不填例外欄位——卡單處理正確。｜**盤名**：卡片取書名號內的「Quarter Century」，與 release-group title 不相等，依第 95 條允許；跨批去重長短兩種寫法都要掃。｜**撇號**：第 1 軌來源端寫〈Let’s Go〉（彎撇 U+2019），本檔 `sound` 與行文一律用 ASCII 直撇。｜**時間可以寫**：18 軌在資料庫端就有長度。｜**串流覆核結果：無可採信的 collectionId**，本張維持無串流來源狀態，封面走既有的那一路（封面查詢回 200）。"
+ },
+ {
+  "key": "desc4:淺堤|Live In 卡夫卡:十年社遊",
+  "artist": "淺堤",
+  "album": "Live In 卡夫卡:十年社遊",
+  "facts": [
+   {
+    "f": "release-group 90404cbc 的欄位：title「Live In 卡夫卡:十年社遊」（**半形冒號、In 的 I 大寫**）、artist-credit「淺堤」（藝人實體 MBID db8e32b0，type Group、country TW、disambiguation 空）、first-release-date **2022-05-17**、primary-type Album、**secondary-types [Live]**。轄下**只有 1 筆 release**：2022-05-17／XW／Official，label-info「海邊的卡夫卡」，**載體是 Digital Media 不是實體**，8 軌，**barcode 欄位空**、**catno 欄位空**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/90404cbc-727c-4c7d-a4e8-cbaf0a0fa707?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "逐軌曲目與長度，8 軌全部有長度，而且**每一軌的曲名都自帶同一個後綴「(Live in 卡夫卡:十年社遊)」**（**後綴裡的 in 是小寫 i，與 release-group title 的大寫 In 不同**）：1〈樹影〉3:55、2〈永和〉3:18、3〈水母漂〉2:44、4〈高雄〉5:04、5〈信天翁〉4:35、6〈陷眠〉3:51、7〈恆春花絮〉3:37、8〈怪手〉4:57。**8 軌全部落在 2:44 到 5:04 之間，全張約 32 分鐘。**曲名裡有三個地名（〈永和〉〈高雄〉〈恆春花絮〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=90404cbc-727c-4c7d-a4e8-cbaf0a0fa707&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **6 個 release-group**，依 first-release-date 排序：2017-09-16《湯與海》（EP）、2019-08-23《陷眠》（Single）、2020-06-18《不完整的村莊》（Album）、2021-12-01《婚禮之途》（Album）、**2022-05-17 本張（Album＋Live）**、2026-06-30《沈默的鉅作》（Album）。**這份目錄裡唯一一筆帶 Live 的就是本張。**本張第 6 軌〈陷眠〉與目錄裡 2019-08-23 那筆 Single 同名，**單曲比這場現場早三年**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=db8e32b0-62e2-4aea-b6a2-e07e0626f623&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側逐筆覆核，**本張沒有上架，兩筆同期的現場條目都不是本張**：以掛名當 term 查 tw 店面回 **21 筆**（含 2020／2021／2026 三張長篇、《湯與海》EP 與大量單曲），**沒有這一張**。回撈候選裡最像的兩筆各自攤開：collectionId 1610294528《Live on 臺華輪 - EP》2022-02-22，**只有 4 軌**（〈禮物 (Live)〉5:20、〈西邊 (Live)〉4:12、〈恬恬一下仔 (Live)〉4:49、〈水母漂 (Live)〉2:48），與本張 8 軌**只有〈水母漂〉一軌同名、長度還差 4 秒（2:48 對 2:44）**，是另一場現場，**駁回**；collectionId 1594841072《婚禮之途》2021-12-01、10 軌，是藝人目錄裡另一個 release-group，**駁回**。release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1610294528&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八首歌的曲名後面都掛著同一個場次名，連曲名本身都告訴你這是哪一場",
+   "八首裡有三首的曲名是地名"
+  ],
+  "sound": "這是現場錄音，資料庫端的 secondary-types 標 Live。唯一一筆發行是 2022-05-17 的數位版，掛「海邊的卡夫卡」，8 軌、全部有長度，總長約 32 分鐘。每一軌的曲名都拖著同一個場次後綴，等於曲目表自己就標明了出處。曲序是〈樹影〉3:55、〈永和〉3:18、〈水母漂〉2:44、〈高雄〉5:04、〈信天翁〉4:35、〈陷眠〉3:51、〈恆春花絮〉3:37，收在最長之一的〈怪手〉4:57。8 軌全部落在 2:44 到 5:04 之間，沒有一軌超過五分半，也沒有安可或串場的獨立軌。曲名裡有三個地名。第 6 軌〈陷眠〉與這支樂團名下 2019 年的一筆單曲同名，那筆單曲比這場現場早三年。",
+  "keyTracks": [
+   "樹影",
+   "高雄",
+   "怪手"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2022。release-group first-release-date **2022-05-17**、轄下唯一 release 的 date 同樣是 2022-05-17（XW／Official／海邊的卡夫卡，Digital Media）。**串流側沒有本張的上架版本可對照 ℗ 年**——掛名目錄 21 筆裡沒有這張，所以四處對照只成立兩處，兩處都指向 2022。**⚠ 演出年查不到**：資料庫端只記發行日期，**沒有任何欄位記錄這場演出是哪一年、哪一天錄的**；曲名後綴只寫場次名稱、不含年份。**同名先行單曲：無**；第 6 軌〈陷眠〉與 2019 年那筆 Single 同名，但那是三年前的獨立條目，不是本張的先行單曲。",
+  "notes": "**擋下策展層三處。**｜**（1）最重的一處：`mbNote` 寫「明寫：這是現場錄音，演出與發行同為 2022 年的『海邊的卡夫卡十年社遊』企劃，不是舊演出的身後發行」——「演出年＝發行年」在資料庫端查不到來源。**唯一一筆 release 只有發行日 2022-05-17，沒有任何錄音日期欄位、沒有 annotation、曲名後綴也不帶年份。rulings 第 260 條說「本批 6 張現場全部寫明，且全部是演出年＝發行年」，**那是推論不是查證**。行文只能寫「這是現場錄音，曲名後綴寫的是場次名稱」，**不得寫演出年、不得寫「不是身後發行」**。｜（2）`curatorWhy` 寫「台北獨立展演空間『海邊的卡夫卡』十週年企劃，由該空間自營的廠牌發行」：label-info 記「海邊的卡夫卡」屬實，**但「台北」「獨立展演空間」「該空間自營」「十週年」全部查不到可引來源**——release-group title 裡的「十年社遊」是場次名稱，不足以支撐「該場地成立十週年」。**廠牌來歷一律不得寫。**｜**（3）`curatorWhy` 寫「同一間廠牌也發行本批 prop-b 的康士坦線那兩張的前身」——本批 28 張卡單裡沒有任何一張掛康士坦的變化球，b 組是閃靈 5、生祥樂隊 2、林生祥 1、巴奈 1、舒米恩 1、落差草原 WWWW 2。這是前一版提案撤下後留在稿子裡的殘句，`chk-prop` 不會抓。不得寫。**｜**大小寫分歧一處**：release-group title 寫「Live **I**n」、8 軌的曲名後綴寫「Live **i**n」，**卡片盤名照卡單取大寫 In**。｜**時間可以寫**：8 軌在資料庫端就有長度。｜**串流覆核結果：無可採信的 collectionId。駁回 1610294528《Live on 臺華輪 - EP》**（4 軌，只有〈水母漂〉一軌同名且長度差 4 秒，是另一場現場）**與 1594841072《婚禮之途》**（是藝人目錄裡另一個 release-group）。本張維持無串流來源狀態。"
+ },
+ {
+  "key": "desc4:鄭宜農|水逆",
+  "artist": "鄭宜農",
+  "album": "水逆",
+  "facts": [
+   {
+    "f": "release-group b256a2f0 的欄位：title「水逆」、artist-credit「鄭宜農」（藝人實體 MBID a1168584，type Person、country TW、disambiguation 空）、first-release-date **2022-03-04**、primary-type Album、secondary-types **空**。轄下 **2 筆 release，同日、同掛「火氣音樂」、同為 Official、同 11 軌**：2022-03-04／TW 的 CD（catno **FIREON-0074**，**barcode 欄位空**）與 2022-03-04／XW 的數位版（**barcode 196626391032**、無 catno）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b256a2f0-b27e-4605-a85c-00c5d98fbbc2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "TW CD 版逐軌曲目與長度，11 軌全部有長度：1〈人如何學會語言〉5:06（軌上掛名「鄭宜農 feat. Chunho」）、2〈新世紀的女兒〉4:14（同上）、3〈Speechless〉0:53（**這一軌的軌級 artist-credit 只有「Chunho」，沒有專輯掛名**）、4〈天已經要光〉4:11、5〈親愛的〉4:06、6〈Duludilida〉3:31、7〈最好的距離〉4:07（「鄭宜農 feat. deca joins」）、8〈囡仔汗 (Album Version)〉4:16、9〈做風颱〉3:23、10〈或許就變成書裡的風景 (Album Version)〉4:44（「鄭宜農 feat. 阿爆 (阿仍仍) feat. Chunho」）、11〈無人看見的所在〉4:24。**11 軌裡有 2 軌自帶版本標記，第 3 軌 0:53 是全張唯一的短軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b256a2f0-b27e-4605-a85c-00c5d98fbbc2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **15 個 release-group**：**Album 5 個**（2011-07-08《海王星》、2017-04-28《Pluto》、2019-12-06《給天王星》、**2022-03-04 本張**、2025-05-01《圓缺》）、**Single 10 個**（2018-06-16《人生很難》、2018-12-07《玉仔的心》、2023-04-07《金黃色的》、2023-07-07《diminished》、2023-12-08《咱》、2025-02-18《如果你也想起來 (《第一次遇見花香的那刻》第二季主題曲)》、2025-02-28《留佇咱的血內底》、2025-07-11《Right Here (北流五週年音樂共創計畫)》、2025-11-12《你是真的不懂 (2025《看你聽的》系列主題曲)》、2026-03-19《有時候我會想要傷害我的朋友》）。**沒有 EP、沒有 Live、沒有 Compilation。五張長篇裡本張排第 4。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a1168584-1163-49b5-81ce-f7c289720cac&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側 collectionId 1609044189 攤開逐軌覆核：collectionName「水逆」、artistName「鄭宜農」、releaseDate 2022-03-04、trackCount **11**、℗ 2022 FIRE ON MUSIC Co., Ltd.。**11 軌逐位置同序同名、長度逐軌完全相同**（11 軌一秒不差），差別只在兩軌的版本標記：第 8 軌店面端寫〈囡仔汗 (Mercury Retrograde Version)〉、第 10 軌寫〈或許就變成書裡的風景 (Mercury Retrograde Version)〉，資料庫端兩軌都寫 (Album Version)。11 軌全部有 previewUrl。**採信。**release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1609044189&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "那兩軌帶版本標記的曲子，**在店面端各查得到一筆更早的獨立單曲條目，而資料庫端沒有建這兩筆**：collectionId 1545583311《或許就變成書裡的風景 - Single》2020-12-25、2 軌、℗ 2020；collectionId 1558992649《囡仔汗 - Single》2021-03-26、1 軌、℗ 2021。**兩筆都比本張的 2022-03-04 早**，這正是專輯上那兩軌被標成另一個版本的原因。**兩筆都不是本張，只作為版本標記的旁證，不採信為本張的試聽來源。**",
+    "src": "https://itunes.apple.com/lookup?id=1558992649&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第三軌只有五十三秒，而且那一軌的掛名不是專輯掛名",
+   "十一軌裡有兩軌標了版本，兩首在一兩年前各自先出過一次"
+  ],
+  "sound": "2022 年同日發了兩種載體：TW 的 CD（catno FIREON-0074）與 XW 的數位版（bc 196626391032），兩筆同 11 軌、同曲序，都掛火氣音樂。11 軌都有長度。開場〈人如何學會語言〉5:06 是全張最長，接〈新世紀的女兒〉4:14，第三軌〈Speechless〉只有 0:53，是全張唯一的短軌，而且那一軌的軌級掛名不是專輯掛名、是客座那一位單獨掛。之後〈天已經要光〉4:11、〈親愛的〉4:06、〈Duludilida〉3:31、〈最好的距離〉4:07，後半〈囡仔汗〉4:16、〈做風颱〉3:23、〈或許就變成書裡的風景〉4:44，收在〈無人看見的所在〉4:24。除了第三軌那 53 秒，其餘十軌全部在 3:23 到 5:06 之間。第 8 與第 10 軌在盤上帶版本標記，那兩首在一兩年前各自出過一次獨立條目。",
+  "keyTracks": [
+   "人如何學會語言",
+   "天已經要光",
+   "無人看見的所在"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2022。release-group first-release-date **2022-03-04**、轄下兩筆 release 的 date 都是 2022-03-04（TW CD 與 XW 數位），串流側 collectionId 1609044189 的 releaseDate 2022-03-04、℗ 年 2022。**四處對照全部指向同一天。⚠ 同名先行單曲：有兩首曲子有**——第 8 軌〈囡仔汗〉與第 10 軌〈或許就變成書裡的風景〉在店面端各有一筆更早的單曲條目（2021-03-26 與 2020-12-25），**資料庫端的藝人目錄裡沒有建這兩筆**（10 筆 Single 裡沒有它們）。**與盤名同名的先行單曲：無。**",
+  "notes": "**擋下策展層四處。**｜**（1）最重的一處：`curatorWhy` 寫「鄭宜農離開自然捲之後第一張以台語為主體的個人專輯」——這句話裡三件事全部沒有來源。**團體歸屬在藝人實體上查不到（本層只取到 type Person、country TW、disambiguation 空，沒有取到任何團體關係）；「以台語為主體」是語言判定，不是欄位；「第一張」的序數在藝人目錄上也不成立——五張長篇裡本張排第 4。**整句不得寫。**｜（2）`curatorWhy` 寫「發行商是獨立廠牌不是大廠，符合只收獨立那條裁定」：label-info 只給廠牌名「火氣音樂」與 catno FIREON-0074，**廠牌是不是獨立、規模多大，資料庫端沒有這個欄位**。廠牌名可寫，**「獨立廠牌」這個屬性不得寫**。｜（3）`curatorWhy` 寫「池中只有 2011 年的《海王星》，2017 之後轉向台語書寫的這一段在池中完全是空的」：池況本層不覆核，但**「轉向台語書寫」同樣是語言判定，不得寫**。｜（4）`curatorRisk` 寫「池中掛名寫『鄭宜農』，與本卡一致，沒有 08-11 裁定的併寫分裂問題」——池況不覆核；資料庫端這一側可確認的是 artist-credit 就是漢字「鄭宜農」，沒有併寫形。｜**（5）反方向確認一處：`curatorRisk` 寫「Apple 店面 tw 查到 collectionId 1609044189，可走自動配對」——屬實**，本層逐軌覆核 11 軌一秒不差。｜**⚠ 第 3 軌的掛名不是專輯掛名**：〈Speechless〉0:53 的軌級 artist-credit 只有客座那一位，**行文若提這一軌要說清楚**。｜**版本標記兩軌有分歧**：資料庫端 (Album Version)／店面端 (Mercury Retrograde Version)，**行文一律不要引版本標記的字面**。｜**時間可以寫**：11 軌在資料庫端就有長度，且與串流側逐軌一秒不差。｜**串流採信 1609044189**：11 軌逐位置同序同名、長度逐軌完全相同、全數有 previewUrl。**1545583311 與 1558992649 兩筆單曲條目駁回為本張來源**，只作版本標記的旁證。"
+ },
+ {
+  "key": "desc4:鄭宜農|給天王星",
+  "artist": "鄭宜農",
+  "album": "給天王星",
+  "facts": [
+   {
+    "f": "release-group 9452b670 的欄位：title「給天王星」、artist-credit「鄭宜農」（藝人實體 MBID a1168584，type Person、country TW）、first-release-date **2019-12-06**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2019-12-06／TW／Official，label-info「火氣音樂」、catno **RW0039**、barcode **4713052739298**，CD 一張 10 軌。**同一位藝人三年後那張的 catno 前綴換成 FIREON，這一張還是 RW。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/9452b670-1ade-4e88-82dc-f2c8042e38f4?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2019 TW 盤逐軌曲目與長度，10 軌全部有長度：1〈2017，你〉3:49（**曲名裡是全形逗號**）、2〈街仔路雨落袂停〉4:05（軌上掛名「鄭宜農 feat. 陳嫺靜」）、3〈591〉5:38、4〈輕輕觸碰〉5:08、5〈賊〉4:20、6〈深深地〉4:24、7〈去你的旅程〉3:53、8〈玉仔的心〉4:54、9〈就算我放棄了世界〉3:46、10〈千千萬萬〉5:51。**10 軌全部在 3:46 到 5:51 之間，沒有短軌也沒有間奏**；曲名有兩軌是數字起頭（第 1 軌與第 3 軌〈591〉）。客座只有第 2 軌一位。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9452b670-1ade-4e88-82dc-f2c8042e38f4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **15 個 release-group**：Album 5 個（2011-07-08《海王星》、2017-04-28《Pluto》、**2019-12-06 本張**、2022-03-04《水逆》、2025-05-01《圓缺》）、Single 10 個。**五張長篇裡本張排第 3。**本張第 8 軌〈玉仔的心〉與目錄裡 2018-12-07 那筆 Single 同名，**單曲比專輯早將近一年**；同一份目錄裡另有 2018-06-16 的 Single《人生很難》，**那首不在本張的 10 軌裡**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a1168584-1163-49b5-81ce-f7c289720cac&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1547210968 攤開逐軌覆核：collectionName「給天王星」、artistName「鄭宜農」、releaseDate 2019-12-06、trackCount **10**、℗ 2019 FIRE ON MUSIC Co., Ltd.。**10 軌逐位置同序同名**，兩處小差：第 1 軌店面端寫〈2017,你。〉（**半形逗號＋句號**）、資料庫端寫〈2017，你〉（全形逗號、無句號）；第 10 軌長度店面 5:50、資料庫 5:51。第 2 軌店面把客座掛進曲名括號〈街仔路雨落袂停 (feat. 陳嫺靜)〉。**10 軌全部有 previewUrl。採信。**release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1547210968&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**店面端兩種查法的落差實測**：以掛名當 term 查 tw 店面回 **29 筆**（含 2011《Neptune》、2017《PLUTO》、2022《水逆》、2023 的一張現場長篇與大量單曲），**目錄裡沒有本張**；但直接以 collectionId 1547210968 lookup 回得到完整 10 軌與 10 個 previewUrl。**與本批另外幾張是同一個形狀：目錄搜尋查不到、直查查得到。**另可確認第 8 軌對應的單曲條目確實存在：collectionId 1547225242《玉仔的心 - Single》2018-12-07、1 軌、℗ 2018。",
+    "src": "https://itunes.apple.com/search?term=%E9%84%AD%E5%AE%9C%E8%BE%B2&country=tw&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌沒有一首短於三分四十六秒，整張沒有過場",
+   "第八首在一年前先以單曲出過一次"
+  ],
+  "sound": "2019 年只發了一種載體：TW 的 CD，catno RW0039、barcode 4713052739298，掛火氣音樂，10 軌全部有長度。開場〈2017，你〉3:49 的曲名用全形逗號分開年份與人稱，接〈街仔路雨落袂停〉4:05——那是全張唯一帶客座的一軌。之後〈591〉5:38、〈輕輕觸碰〉5:08、〈賊〉4:20、〈深深地〉4:24、〈去你的旅程〉3:53、〈玉仔的心〉4:54、〈就算我放棄了世界〉3:46，收在全張最長的〈千千萬萬〉5:51。10 軌全部落在 3:46 到 5:51 之間，沒有短軌、沒有 intro 也沒有 skit，是一張長度分佈很整齊的碟。第 8 軌〈玉仔的心〉在這位創作者名下 2018 年就有一筆同名單曲，比專輯早將近一年。",
+  "keyTracks": [
+   "街仔路雨落袂停",
+   "玉仔的心",
+   "千千萬萬"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2019。release-group first-release-date **2019-12-06**、轄下唯一 release 的 date 同樣是 2019-12-06（TW／Official／火氣音樂 RW0039，bc 4713052739298），串流側 collectionId 1547210968 的 releaseDate 2019-12-06、℗ 年 2019。**四處對照全部指向同一天。⚠ 同名先行單曲：第 8 軌有**——〈玉仔的心〉在藝人目錄上是 2018-12-07 的一筆 Single，在店面端也查得到同一筆（collectionId 1547225242、1 軌、℗ 2018），**比專輯早將近一年**。**與盤名同名的先行單曲：無。**",
+  "notes": "**擋下策展層五處，其中兩處最重。**｜**（1）`curatorRisk` 寫「Apple 店面 tw 以盤名查回 0 筆，再以藝人目錄查（term=鄭宜農、limit=60）回 29 筆仍無此盤——依第 231 條這是兩次不同查法都落空，記為 tw 未上架，走無來源狀態」——結論錯。**兩次查法落空的觀察屬實（本層也查到目錄 29 筆裡沒有本張），**但直查 collectionId 1547210968 回得到完整 10 軌、10 個 previewUrl**。第 231 條講的正是這種目錄搜尋間歇性失效，**不得據此寫「tw 未上架」「無試聽來源」**。｜**（2）`curatorRisk` 與 `mbNote` 都寫「同批已收《水逆》與《Pluto》，三張盤名互不重疊」——本批 28 張卡單裡沒有《Pluto》**（a 組是李英宏 2、大支 3、濁水溪公社 1、滅火器 2、淺堤 1、鄭宜農 2、勞動服務 1、春艷 2、無妄合作社 2）。《Pluto》只存在於藝人目錄裡，是前一版提案撤下後留在稿子裡的殘句。**不得寫。**｜（3）`curatorWhy` 寫「這張是鄭宜農把台語歌與華語歌並置在同一張專輯裡的第一次」：語言判定加序數，**兩件都查不到來源，不得寫**。｜（4）`curatorWhy` 寫「三張連起來才看得出『華語首作—雙語過渡—台語專輯』的順序」：同上，**語言標籤一律不得寫**。｜（5）`curatorWhy` 寫「單曲〈玉仔的心〉（2018）也是從這條線延伸出來的」：**「〈玉仔的心〉是本張第 8 軌」與「名下 2018-12-07 有一筆同名 Single」兩件事屬實可留**，但「從這條線延伸出來」是敘事，行文只能寫「同名單曲比專輯早將近一年」。｜**序數**：五張長篇裡本張排第 3，`curatorWhy` 的「《海王星》與《水逆》之間的轉折盤」在時間順序上成立（2011 → 2017 → 本張 → 2022），**但中間還有一張 2017 的長篇，不得寫成「兩張之間只有這一張」**。｜**曲名分歧一軌**：第 1 軌資料庫端〈2017，你〉（全形逗號）／店面端〈2017,你。〉（半形逗號＋句號），**行文引這一軌時照資料庫端的字**。｜**時間可以寫**：10 軌在資料庫端就有長度（末軌與串流側差 1 秒）。｜**串流採信 1547210968**：10 軌逐位置同序同名、長度差 ≤1 秒、全數有 previewUrl。"
+ },
+ {
+  "key": "desc4:大支|硬",
+  "artist": "大支",
+  "album": "硬",
+  "facts": [
+   {
+    "f": "release-group effe7a0e 的欄位：title「硬」（單字）、artist-credit「大支」、first-release-date **2016-10-19**、primary-type Album、secondary-types **空**。**藝人實體主名是「Dwagie」**（MBID f1e326c8，type Person、**area Tainan**、life-span.begin **1980**、disambiguation 空、alias 四筆：Dog G／Kuan-Jung Tseng／**大支**／曾冠榕）——漢字掛名只存在於 alias 與 artist-credit 上。轄下**只有 1 筆 release**：2016-10-19／TW／Official，**label-info 是空陣列（一個廠牌條目都沒有）**、barcode **4712931524666**、**media 的 format 欄位是 null（載體未標）**、10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/effe7a0e-b467-4d42-b5a0-b3031e50b322?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2016 TW 盤逐軌曲目與長度，10 軌全部有長度：1〈小丑〉4:33（軌級掛名「大支 & J. Wu」）、2〈扣板機〉4:56、3〈王董〉3:47、4〈表面〉3:07（「大支 & Hello Nico」）、5〈抗議〉3:37、6〈9527〉4:31、7〈長江一號〉4:12、8〈夢蝶〉5:27、9〈途中相見〉4:27、10〈Nylon〉6:33。**收尾那軌 6:33 是全張最長，比第二長的〈夢蝶〉5:27 多出六十六秒**；最短的〈表面〉3:07。**資料庫端只在第 1、4 兩軌記了客座掛名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=effe7a0e-b467-4d42-b5a0-b3031e50b322&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **10 個 release-group**：Album 5 個（2002-07-31《舌粲莲花》、2013-12-31《Refuse to Listen》、**2016-10-19 本張**、2018-09-07《暗網》、2020-12《音政樂治》）、Single 5 個。**沒有 EP、沒有 Compilation、沒有 Live。五張長篇裡本張排第 3**；前一張是 2013 年那張，中間隔了三年、只有一筆 2014 的 Single。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f1e326c8-424f-4e86-9d77-eb632e2e81a2&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1164010629 攤開逐軌覆核：collectionName「硬」、artistName「大支」、releaseDate 2016-10-19、trackCount **10**、℗ 2016 Kung Fu Entertainment。**10 軌逐位置同序同名、長度差最大 1 秒**（第 3 軌 3:48／3:47、第 6 軌 4:32／4:31、第 7 軌 4:13／4:12、第 8 軌 5:28／5:27、第 10 軌 6:34／6:33）。**店面端另外在五軌的曲名括號裡標了客座**：第 1 軌 (feat. J. Wu)、第 4 軌 (feat. Hello Nico)、第 8 軌 (feat. 潘琪妮)、第 9 軌 (feat. 柯泯薰)、第 10 軌 (feat. 葉菊蘭)——**其中後三位在資料庫端的軌級掛名裡完全沒有**。10 軌全部有 previewUrl。**採信。**release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1164010629&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "店面端目錄查法實測：以掛名當 term 查 tw 店面回 **60 筆**，裡面**只有兩張長篇**（collectionId 828767673《不聽》2013、11 軌，與 collectionId 1564252587《台灣隊長》2021、10 軌），**本張、《暗網》、《音政樂治》三張一張都沒有出現在目錄裡**；但三張各自直查 collectionId 都回得到完整曲目與試聽。**同一位藝人、同一個店面，目錄搜尋漏掉三張長篇。**",
+    "src": "https://itunes.apple.com/search?term=%E5%A4%A7%E6%94%AF&country=tw&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "收尾那首六分三十三秒，比整張第二長的多出一分多鐘",
+   "盤名只有一個字，最短的那首只有三分零七秒"
+  ],
+  "sound": "2016 年只發了一種載體，而且資料庫端連載體種類都沒有標——format 欄位是 null，只知道是一份 10 軌的發行，barcode 4712931524666，label-info 是空的、一個廠牌條目都沒有。10 軌全部有長度。開場〈小丑〉4:33 帶一位客座，接〈扣板機〉4:56、〈王董〉3:47、〈表面〉3:07——那是全張最短的一軌，也帶一位客座。之後〈抗議〉3:37、〈9527〉4:31、〈長江一號〉4:12、〈夢蝶〉5:27、〈途中相見〉4:27，收在 6:33 的〈Nylon〉，比第二長的〈夢蝶〉多出六十六秒。盤名只有一個字，整張十首的長度從 3:07 一路撐到 6:33，是這位創作者名下五張長篇裡跨幅最大的一張。",
+  "keyTracks": [
+   "扣板機",
+   "9527",
+   "Nylon"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2016。release-group first-release-date **2016-10-19**、轄下唯一 release 的 date 同樣是 2016-10-19（TW／Official，bc 4712931524666），串流側 collectionId 1164010629 的 releaseDate 2016-10-19、℗ 年 2016。**四處對照全部指向同一天。同名先行單曲：無**——藝人目錄 5 筆 Single 分別是 2014、2019×2、2020、2025，沒有與盤名或任何一軌同名者。",
+  "notes": "**擋下策展層三處。**｜**（1）`curatorRisk` 寫「Apple 店面 tw 兩種查法（盤名＋藝人、以及 term=大支 的藝人目錄 60 筆）都沒有這張，依第 231 條記為 tw 未上架，試聽走無來源狀態」——結論錯。**目錄 60 筆裡沒有本張這件事本層覆核屬實（60 筆裡只有 2013 與 2021 兩張長篇），**但直查 collectionId 1164010629 回得到 10 軌、長度差 ≤1 秒、全部有試聽**。同一位藝人在同一個店面被目錄搜尋漏掉的是三張長篇，不是一張。**不得寫「tw 未上架」。**｜（2）`curatorWhy` 寫「2016 年自主發行，MB 轄下唯一 release 的 label-info 是『無廠牌』，屬創作者自主發行那一類」：**資料庫端的 label-info 是空陣列，不是一筆寫著「無廠牌」的條目**——這兩件事不一樣，前者是沒有資料、後者是有資料且內容為無廠牌。而且串流側的 ℗ 記的是一間有名字的公司。**行文只能寫「這一筆發行沒有掛廠牌」，不得寫「自主發行」。**｜**（3）人名從嚴：店面端在第 8、9、10 三軌的曲名括號裡標了三位客座，資料庫端的軌級掛名完全沒有這三位**（資料庫端只在第 1、4 軌記客座）。依裁定第 241／250 條，**這三位不得寫進行文**；要寫客座只能寫第 1、4 兩軌那兩位，或者只寫「十軌裡有兩軌在盤上記了客座」。｜**載體**：media 的 format 是 null，**不得寫「CD」「黑膠」或任何載體名**。｜**時間可以寫**：10 軌在資料庫端就有長度，且與串流側差 ≤1 秒。｜**串流採信 1164010629**：10 軌逐位置同序同名、長度差 ≤1 秒、全數有 previewUrl。"
+ },
+ {
+  "key": "desc4:大支|暗網",
+  "artist": "大支",
+  "album": "暗網",
+  "facts": [
+   {
+    "f": "release-group 95844f51 的欄位：title「暗網」、artist-credit「大支」（藝人實體 MBID f1e326c8，主名 Dwagie、area Tainan）、first-release-date **2018-09-07**、primary-type Album、secondary-types **空**。轄下 **2 筆 release，兩筆都掛「AsiaMuse」（label 實體 MBID 57047e87，type Imprint）、都是 Official、catno 都是空的**：2018-09-14／TW 的 **CD，10 軌**；2018-09-07／XW 的**數位版，只有 9 軌**，barcode 194491653453。**同一張碟兩種載體軌數不同，這是本張最要緊的版本差別。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/95844f51-e54a-4506-9eb7-d9727336cc08?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "TW CD 版（10 軌）逐軌曲目與長度：1〈支董〉4:34、2〈大叔〉3:18（軌級掛名「大支 feat. 大叔們」）、3〈肉片啊〉4:11（feat. 高瀨杏）、4〈PUMA〉4:22（feat. Puma）、5〈廟會〉4:10（feat. 玉勅良寶宮妙法團 & 吳政憲道長）、6〈台南〉4:03（feat. 潘威倫）、7〈樂透〉3:32、8〈Angel〉4:44（feat. Angel）、**9〈兄弟 2〉4:05**、10〈凍蒜〉3:58（feat. 台灣人）。**XW 數位版的 9 軌就是把第 9 軌〈兄弟 2〉整軌拿掉、其餘九軌曲名曲序與長度完全相同**（〈凍蒜〉在數位版上排第 9）。**10 軌裡有 6 軌帶客座，其中第 5 軌的客座是一個宮廟團體加一位道長、第 10 軌的客座欄位寫的是「台灣人」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=95844f51-e54a-4506-9eb7-d9727336cc08&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **10 個 release-group**：Album 5 個（2002-07-31、2013-12-31、2016-10-19《硬》、**2018-09-07 本張**、2020-12《音政樂治》）、Single 5 個。**五張長篇裡本張排第 4**，與前一張《硬》只隔兩年，是這份目錄裡最密的一段。目錄裡另有兩筆同期的政治題材 Single（2019-05-31《鬼岛 (Ghost Island)》、2019-12-20《覺醒的鋼鐵韓粉 (Self-Confession of A Woke Han Fan)》），**都在本張之後、不是先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f1e326c8-424f-4e86-9d77-eb632e2e81a2&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1435039632 攤開逐軌覆核：collectionName「暗網」、artistName「大支」、releaseDate 2018-09-07、**trackCount 標 10、實際只回得到 9 首**、℗ 2018 Kung Fu Entertainment。**回得到的 9 首逐位置與資料庫端的 CD 版相符，缺的正是第 9 軌〈兄弟 2〉**（曲目列從第 8 軌直接跳到第 10 軌〈凍蒜〉）——**與資料庫端數位版少的那一軌是同一軌**，兩端互相印證。長度逐軌完全相同（9 軌一秒不差），客座標記寫在曲名括號裡而不是軌級掛名。9 首全部有 previewUrl。**採信。**release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1435039632&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "實體版十軌、數位版九軌，差的是同一首〈兄弟 2〉",
+   "十軌裡有六軌帶客座，其中一軌的客座是一個宮廟團體加一位道長"
+  ],
+  "sound": "2018 年發了兩種載體，而且軌數不一樣：TW 的 CD 是 10 軌，XW 的數位版只有 9 軌（barcode 194491653453），兩筆都掛 AsiaMuse。少掉的那一軌是 CD 版第 9 軌〈兄弟 2〉4:05，其餘九軌的曲名、曲序與長度兩版完全相同。CD 版曲序是〈支董〉4:34、〈大叔〉3:18、〈肉片啊〉4:11、〈PUMA〉4:22、〈廟會〉4:10、〈台南〉4:03、〈樂透〉3:32、〈Angel〉4:44、〈兄弟 2〉4:05，收在〈凍蒜〉3:58。10 軌全部落在 3:18 到 4:44 之間，是這位創作者名下長度最集中的一張。10 軌裡有 6 軌帶客座，客座名字寫在軌級掛名上——第 5 軌那一軌掛的是一個宮廟團體加一位道長，第 10 軌的客座欄位寫的是「台灣人」三個字。",
+  "keyTracks": [
+   "廟會",
+   "台南",
+   "凍蒜"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2018。release-group first-release-date **2018-09-07**（數位版先行）、轄下兩筆 release 分別是 2018-09-07／XW 與 2018-09-14／TW，串流側 collectionId 1435039632 的 releaseDate 2018-09-07、℗ 年 2018。**四處對照全部指向 2018**，卡片取 2018 沒有分歧；數位先行、實體晚七天。**同名先行單曲：無**——藝人目錄 5 筆 Single 裡沒有本張任何一軌的同名條目；兩筆政治題材的 Single 都在 2019，是本張之後的東西。",
+  "notes": "**擋下策展層兩處。**｜**（1）`curatorRisk` 寫「Apple 店面 tw 兩種查法皆 0，記為 tw 未上架（第 231 條），走無來源狀態」——結論錯。**直查 collectionId 1435039632 回得到 9 首、長度與資料庫端逐軌一秒不差、全部有試聽。目錄搜尋 60 筆裡沒有本張這件事屬實，但那是目錄搜尋的問題。**不得寫「tw 未上架」。**｜（2）`curatorWhy` 寫「亞神是獨立廠牌不是華納／環球／索尼／滾石／杰威爾那五家，符合硬規則第 2 條」：label 實體只給名字 AsiaMuse 與 type Imprint，**「獨立廠牌」這個屬性資料庫端沒有欄位**。廠牌名可寫，**屬性判定不得寫**。｜（3）`curatorRisk` 寫「盤名『暗網』在 MB 上另有他人同名作的可能，藝人閘要以 f1e326c8 過濾」：這是操作提醒不是事實主張，可留。｜**⚠ 版本差別要寫進行文的話務必寫準**：**實體 10 軌、數位 9 軌，差的是第 9 軌〈兄弟 2〉**，而且串流側那筆雖然 trackCount 標 10、實際也只回得到 9 首、缺的同樣是那一軌。**不要寫成「這張是十軌專輯」而不交代版本差**。｜**時間可以寫**：兩版在資料庫端都有長度，且與串流側逐軌一秒不差。｜**客座**：本張的六位客座全部寫在資料庫端的軌級掛名上，**與同批《硬》那張不同，這一張的客座名字可以寫**。｜**串流採信 1435039632**：9 首逐位置與資料庫端 CD 版相符、缺的一軌兩端一致、長度一秒不差、全數有 previewUrl。"
+ },
+ {
+  "key": "desc4:勞動服務|海島聲事",
+  "artist": "勞動服務",
+  "album": "海島聲事",
+  "facts": [
+   {
+    "f": "release-group 8a94cd21 的欄位：title「海島聲事」、artist-credit「勞動服務」（藝人實體 MBID e507cf18，type Group、country TW、**disambiguation「Community Service (Taiwan)」**、**alias 一筆都沒有**、life-span 全空）、first-release-date **2016-05-27**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2016-05-27／TW／Official，label-info **「好有感覺音樂」**、catno **CMS001**、barcode **4713012740135**，CD 一張 11 軌。**catno 的流水號是 001。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/8a94cd21-b31b-4f8c-a290-1222881c6356?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2016 TW 盤逐軌曲目與長度，11 軌全部有長度：1〈人權地景〉3:40、2〈鹽分地帶〉5:12、3〈坪仔田〉3:01、4〈夜市仔〉4:30、5〈阮住佇艋舺〉4:13、6〈徛出來〉4:12、7〈核邪〉4:37、8〈老佛山傳奇〉5:12、9〈眉溪四莊的過年〉4:48、10〈嫁來台北〉3:46、11〈嶼民〉4:03。**11 軌全部落在 3:01 到 5:12 之間**，最長的兩軌〈鹽分地帶〉與〈老佛山傳奇〉都是 5:12。**曲名裡有五個地名或地域詞**（〈鹽分地帶〉〈坪仔田〉〈阮住佇艋舺〉〈眉溪四莊的過年〉〈嫁來台北〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8a94cd21-b31b-4f8c-a290-1222881c6356&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **1 個 release-group**，就是本張。**這位藝人在資料庫端只有這一張碟，沒有 EP、沒有 Single、沒有任何對照組可寫「刻意不釘」。**串流側的掛名目錄同樣只回 2 筆：本張（collectionId 1590072871）與一首多人合作的單曲（collectionId 1470902108《撐》2019-06-28）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e507cf18-7014-4899-bb61-fcd98cdeabfe&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側 collectionId 1590072871 攤開逐軌覆核：collectionName「海島聲事」、artistName「勞動服務」、releaseDate 2016-05-27、trackCount **11**、℗ 2016 Blaire Ko, Fish Lin, Mickey Yu, Roger Hsiao, Chris Hsiao & Charles Chen（**℗ 掛的是六個人名，不是公司**）。**11 軌曲名集合與資料庫端相同，但曲序不同**：店面端把〈徛出來〉排在第 9、資料庫端排在第 6，中間的〈核邪〉〈老佛山傳奇〉〈眉溪四庄的過年〉各往前挪一位。長度差最大 3 秒，**唯一的例外是〈嫁來台北〉：資料庫端 3:46、店面端 3:16，差 30 秒**。**採信**（曲名集合相同、九軌長度差 ≤3 秒）。release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1590072871&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "策展層提到的多人合作單曲逐筆覆核：collectionId 1470902108《撐》2019-06-28，1 軌，artistName 欄位完整列出十七個掛名——**何韻詩、黃耀明、大支、巴奈、吉那罐子樂團、拍謝少年、林理惠、Sonic Deadhorse、張雅淳、勞動服務、舒米恩、Zi Xuan Huang、楊秀卿、滅火器、董事長樂團、儲見智、謝銘祐**。**策展層點名的六位（巴奈、拍謝少年、舒米恩、滅火器、董事長樂團、謝銘祐）全部在這份名單裡，本層覆核屬實。**但這是另一筆單曲條目，**不是本張的來源**，不採信為試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1470902108&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "發行的目錄編號流水號是 001",
+   "十一首裡有五首的曲名帶地名"
+  ],
+  "sound": "2016 年只發了一種載體：TW 的 CD，catno CMS001、barcode 4713012740135，掛好有感覺音樂，11 軌全部有長度。曲序在資料庫端是〈人權地景〉3:40、〈鹽分地帶〉5:12、〈坪仔田〉3:01、〈夜市仔〉4:30、〈阮住佇艋舺〉4:13、〈徛出來〉4:12、〈核邪〉4:37、〈老佛山傳奇〉5:12、〈眉溪四莊的過年〉4:48、〈嫁來台北〉3:46，收在〈嶼民〉4:03。11 軌全部落在 3:01 到 5:12 之間，最長的兩軌一樣長。曲名裡有五個地名或地域詞，從鹽分地帶、艋舺、眉溪四莊一路到台北。這張是這個團在資料庫端唯一的一張碟，發行的目錄編號流水號是 001。",
+  "keyTracks": [
+   "鹽分地帶",
+   "阮住佇艋舺",
+   "嶼民"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2016。release-group first-release-date **2016-05-27**、轄下唯一 release 的 date 同樣是 2016-05-27（TW／Official／好有感覺音樂 CMS001，bc 4713012740135），串流側 collectionId 1590072871 的 releaseDate 2016-05-27、℗ 年 2016。**四處對照全部指向同一天。同名先行單曲：無**——藝人目錄只有這一筆 release-group，沒有任何 Single 條目。",
+  "notes": "**擋下策展層兩處，另有兩處覆核屬實。**｜（1）`curatorWhy` 寫「這是台語饒舌從地下場景往專輯形態走的那一批之一」：語言、曲風與場景敘事**全部不是欄位，不得寫**。藝人實體能寫的只有 type Group、country TW、disambiguation「Community Service (Taiwan)」、**沒有 alias**、life-span 全空。｜（2）`curatorWhy` 寫「收這張等於把台語饒舌在池中的起點從大支一個人擴成兩個團」：池況本層不覆核，且同樣夾帶語言歸類，**不得寫**。｜**（3）覆核屬實可留：`curatorWhy` 寫「樂團也出現在 2019 年多人合作單曲〈撐〉的掛名裡（同曲掛名包含巴奈、拍謝少年、舒米恩、滅火器、董事長樂團、謝銘祐）」——本層攤開那筆條目的掛名欄，十七個掛名裡這六位一個不少。**若要寫，只能寫「這個團的名字也出現在 2019 年一首多人合寫的單曲掛名裡」，**不要列名單**（十七個掛名列不完，挑六個列會失真）。｜（4）覆核屬實可留：`curatorRisk` 寫「MB 上 artist:『勞動服務』精確查詢只回 1 筆，沒有同名實體；但 Apple 端以這四個字搜尋會撞到非音樂內容，配對要用 collectionId 直查」——藝人目錄確實只有 1 個 release-group，掛名目錄也只回 2 筆。｜**⚠ 台語用字分歧一軌**：第 9 軌資料庫端寫〈眉溪四**莊**的過年〉、店面端寫〈眉溪四**庄**的過年〉。**行文一律照資料庫端的「莊」**，`keyTracks` 已避開這一軌。｜**⚠ 曲序兩端不同**：〈徛出來〉在資料庫端排第 6、店面端排第 9。**行文不要寫任何一軌的軌號。**｜**⚠ 一軌長度差 30 秒**：〈嫁來台北〉資料庫端 3:46／店面端 3:16。**這一軌的時間不要寫。**｜**時間可以寫**：其餘十軌兩端差 ≤3 秒。｜**串流採信 1590072871**：11 軌曲名集合完全相同、十軌長度差 ≤3 秒、全數有 previewUrl；曲序與一軌長度的差異已逐項記明。**駁回 1470902108《撐》**：那是另一筆單曲條目，不是本張。"
+ },
+ {
+  "key": "desc4:春艷|鬧青",
+  "artist": "春艷",
+  "album": "鬧青",
+  "facts": [
+   {
+    "f": "release-group da8a9d01 的欄位：title「鬧青」、artist-credit「春艷」（藝人實體 MBID 22a2e32d，type Person、country TW、area Taiwan、begin-area Taiwan、life-span.begin **1992-12-26**、disambiguation「Taiwanese rapper」、**alias 一筆都沒有**）、first-release-date **2015-03-28**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2015-03-28／**XW**（不是 TW）／Official，label-info「顏社」、**catno 空**、barcode **4713616005197**，**載體是 Digital Media**，15 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/da8a9d01-42cf-4a5f-95a4-a48fe2726df8?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "逐軌曲目與長度，15 軌全部有長度：1〈A Side 湯姆上校 (Intro)〉2:12、2〈超級大壞蛋〉2:21、3〈你在麵攤打架〉2:29、4〈惡夜仰德大道〉1:28、5〈你是我的養樂多〉3:23、6〈鬼壓床〉3:46、7〈藝術家〉3:42、8〈壞掉了 (Skit)〉0:36、9〈我沒有壞掉〉2:53、10〈B Side (Skit)〉1:03、11〈那天 轉捩點〉3:14（軌級掛名「春艷 & 88男」）、12〈消波塊 (Skit)〉1:33、13〈你還好嗎〉2:09、14〈很遠的夢裡〉2:26、15〈晴天 (Outro)〉4:35。**15 軌裡有 5 軌是過場**——第 1 軌 Intro、第 8／10／12 三軌 Skit、第 15 軌 Outro；**曲名把 A Side 與 B Side 寫成兩個分隔點**（第 1 軌與第 10 軌）。**最短的〈壞掉了 (Skit)〉只有 0:36，最長的收尾 4:35。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=da8a9d01-42cf-4a5f-95a4-a48fe2726df8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **4 個 release-group（不是 2 個）**，依 first-release-date 排序：**2014-12-30《大男孩主義》（EP）**、2015-03-28 本張（Album）、2020-12-29《感恩的心》（Album）、**2021-02-05《顏社煮場秀: 春艷 Live at Thai Street》（EP＋Live）**。**兩張 Album 都在本批，另外兩筆 EP 不在。本張是目錄裡最早的 Album，但不是最早的一筆條目——2014 那張 EP 比它早三個月。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=22a2e32d-cbc1-40ca-84cd-a0e45d020d12&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 981484043 攤開逐軌覆核：collectionName「鬧青」、artistName「春艷」、releaseDate 2015-03-28、trackCount **15**、℗ 2015 Kao Muziq Co. Ltd。**15 軌逐位置同序同名、長度逐軌完全相同（15 軌一秒不差）**，唯一差別是第 11 軌店面端把客座掛進曲名括號〈那天 轉捩點 (feat. 88男)〉、資料庫端寫在軌級掛名。15 軌全部有 previewUrl。**採信。**另一筆候選 collectionId 950227153《大男孩主義 - EP》2014-12-30、**只有 5 軌**、℗ 2014 KAO!INC.，是藝人目錄裡 2014 那筆 EP，**不是本張，駁回**。release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=981484043&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "短掛名的同名實體實測：以掛名兩字當 term 查 tw 店面回 60 筆，**裡面確實混進三位名字帶同樣兩字的別位歌手**——高春艷（多筆單曲）、邱春艷（《新网络情缘》《爱上大草原》）、伍春艷（《山下的小啊哥》《回眸一笑》），全部是簡體曲名、與本張無關。**資料庫端這一側乾淨**：藝人實體只有 22a2e32d 一個，disambiguation 就寫「Taiwanese rapper」。**策展層說「擋下的是店面側的同名撞卡，不是資料庫側」，本層覆核屬實。**",
+    "src": "https://itunes.apple.com/search?term=%E6%98%A5%E8%89%B7&country=tw&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌裡有五軌是過場，最短的那段只有三十六秒",
+   "曲名把 A Side 與 B Side 當成兩個分隔點寫進去"
+  ],
+  "sound": "2015 年只發了一種載體，而且是數位版：XW 的 Digital Media，barcode 4713616005197，掛顏社，15 軌全部有長度。這張把載體的兩面寫進曲名——第 1 軌叫〈A Side 湯姆上校 (Intro)〉2:12，第 10 軌叫〈B Side (Skit)〉1:03，兩軌各自當一個分隔點。15 軌裡有 5 軌是過場：一段 Intro、三段 Skit、一段 Outro，最短的〈壞掉了 (Skit)〉只有 0:36。歌的部分是〈超級大壞蛋〉2:21、〈你在麵攤打架〉2:29、〈惡夜仰德大道〉1:28、〈你是我的養樂多〉3:23、〈鬼壓床〉3:46、〈藝術家〉3:42、〈我沒有壞掉〉2:53、〈那天 轉捩點〉3:14、〈你還好嗎〉2:09、〈很遠的夢裡〉2:26，收在最長的〈晴天 (Outro)〉4:35。除了收尾那軌，沒有一首超過四分鐘。客座只有第 11 軌一位。",
+  "keyTracks": [
+   "你在麵攤打架",
+   "惡夜仰德大道",
+   "晴天 (Outro)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2015。release-group first-release-date **2015-03-28**、轄下唯一 release 的 date 同樣是 2015-03-28（XW／Official／顏社，bc 4713616005197），串流側 collectionId 981484043 的 releaseDate 2015-03-28、℗ 年 2015。**四處對照全部指向同一天。同名先行單曲：無**——藝人目錄 4 筆裡沒有 Single，最接近的是 2014-12-30 的 EP《大男孩主義》，那是另一張碟、5 軌、與本張 15 軌無一同名。",
+  "notes": "**擋下策展層三處。**｜**（1）`mbNote` 寫「藝人 MBID 22a2e32d…，名下 2 個 RG 全列，兩張都收進本批」——藝人目錄實有 4 個 release-group**，除了本批這兩張 Album，另有 2014-12-30 的 EP《大男孩主義》與 2021-02-05 的 EP＋Live《顏社煮場秀: 春艷 Live at Thai Street》。**「名下只有兩張」不成立**，行文不得寫「名下唯一兩張」「總共只出過兩張」。｜**（2）`curatorRisk` 寫「Apple 店面 tw 兩種查法都沒有這張（盤名查 0 筆；term=春艷 的目錄回 60 筆…），依第 231 條記 tw 未上架」——結論錯。**直查 collectionId 981484043 回得到 15 軌，長度與資料庫端逐軌一秒不差、全部有試聽。**不得寫「tw 未上架」「無試聽來源」。**｜（3）`curatorWhy` 寫「顏社是台灣獨立嘻哈廠牌，同廠牌的李英宏、Leo王、蛋堡都在同一條線上」：label-info 只給廠牌名，**廠牌的屬性與旗下名單資料庫端沒有欄位，不得寫**。｜**（4）覆核屬實可留**：`curatorRisk` 說 Apple 端撞到的高春艷／邱春艷／伍春艷是不同人、資料庫端這一側乾淨——本層在 60 筆目錄裡逐筆確認了這三位的存在，資料庫端藝人實體也確實只有一個。｜（5）序數「在顏社發的第一張專輯」：目錄裡本張是最早的 Album，**可留**；但 2014 那張 EP 比它早三個月，**行文寫「名下最早的一張長篇」比「第一張」穩**。｜**載體**：是 Digital Media 不是實體，**不得寫「CD」「唱片」**。｜**時間可以寫**：15 軌在資料庫端就有長度，且與串流側一秒不差。｜**串流採信 981484043**：15 軌逐位置同序同名、長度逐軌完全相同、全數有 previewUrl。**駁回 950227153《大男孩主義 - EP》**：5 軌，是藝人目錄裡另一筆 EP。"
+ },
+ {
+  "key": "desc4:春艷|感恩的心",
+  "artist": "春艷",
+  "album": "感恩的心",
+  "facts": [
+   {
+    "f": "release-group 52c2ba6a 的欄位：title「感恩的心」、artist-credit「春艷」（藝人實體 MBID 22a2e32d，type Person、country TW、life-span.begin 1992-12-26、disambiguation「Taiwanese rapper」、**無 alias**）、first-release-date **2020-12-29**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2020-12-29／TW／Official，label-info「顏社」、**catno 空**、barcode **4712862000284**，CD 一張 12 軌。**與同一位藝人 2015 那張是 XW 數位版不同，這一張是 TW 實體。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/52c2ba6a-c152-4e4c-8f74-57a7241accdc?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2020 TW 盤逐軌曲目與長度，12 軌全部有長度：1〈小石頭〉4:38、2〈我是你的 fan〉3:09（軌級掛名「春艷 feat. 薩麥爾 SMY」）、3〈88 的車〉3:02、4〈It's 2020〉2:26、5〈深呼吸〉3:05（feat. 李權哲 Jerry Li）、6〈麻煩你了喔〉2:21、7〈Birth Day〉3:20（feat. A2dac）、8〈Coco〉3:34、9〈深深地接觸〉2:35、10〈proud〉3:12、11〈魔法 BOY〉3:21（feat. 持修 ChihSiou）、12〈感覺〉2:28。**12 軌全部落在 2:21 到 4:38 之間，開場那軌是全張最長**；**沒有任何 Intro、Skit 或 Outro**——與同一位藝人五年前那張十五軌裡塞五軌過場的做法正好相反。客座四位，全部寫在軌級掛名上、而且都是「漢字＋拉丁」的雙寫形。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=52c2ba6a-c152-4e4c-8f74-57a7241accdc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **4 個 release-group（不是 2 個）**：2014-12-30《大男孩主義》（EP）、2015-03-28《鬧青》（Album）、**2020-12-29 本張（Album）**、2021-02-05《顏社煮場秀: 春艷 Live at Thai Street》（**EP＋Live**）。**本張是兩張 Album 裡較晚的一張，但不是目錄裡最晚的一筆**——2021 那張現場 EP 比它晚兩個月。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=22a2e32d-cbc1-40ca-84cd-a0e45d020d12&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1545327183 攤開逐軌覆核：collectionName「感恩的心」、artistName「春艷」、releaseDate 2020-12-29、trackCount **12**、℗ 2020 KAO!INC.。**12 軌逐位置同序、長度逐軌完全相同（12 軌一秒不差）**，四軌的**空白與大小寫**寫法不同：第 2 軌資料庫端〈我是你的 fan〉／店面端〈我是你的Fan〉、第 3 軌〈88 的車〉／〈88的車〉、第 10 軌〈proud〉／〈Proud〉、第 11 軌〈魔法 BOY〉／〈魔法Boy〉。12 軌全部有 previewUrl。**採信。**另一筆候選 collectionId 1551768485《顏社煮場秀: 春艷 Live at Thai Street - EP》2021、6 軌，是藝人目錄裡 2021 那筆 EP＋Live，**不是本張，駁回**。release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1545327183&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十二首全部是歌，沒有一段過場——五年前那張十五軌裡有五軌是過場",
+   "開場那首四分三十八秒，是全張最長的一首"
+  ],
+  "sound": "2020 年只發了一種載體：TW 的 CD，barcode 4712862000284，掛顏社，12 軌全部有長度。開場〈小石頭〉4:38 就是全張最長的一軌，之後一路縮短：〈我是你的 fan〉3:09、〈88 的車〉3:02、〈It's 2020〉2:26、〈深呼吸〉3:05、〈麻煩你了喔〉2:21、〈Birth Day〉3:20、〈Coco〉3:34、〈深深地接觸〉2:35、〈proud〉3:12、〈魔法 BOY〉3:21，收在最短之一的〈感覺〉2:28。12 軌全部在 2:21 到 4:38 之間，而且沒有任何 Intro、Skit 或 Outro——同一位創作者五年前那張十五軌裡有五軌是過場，這張一軌都沒有。四位客座寫在軌級掛名上，四位的名字在盤上都是漢字加拉丁的雙寫形。",
+  "keyTracks": [
+   "小石頭",
+   "It's 2020",
+   "感覺"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2020。release-group first-release-date **2020-12-29**、轄下唯一 release 的 date 同樣是 2020-12-29（TW／Official／顏社，bc 4712862000284），串流側 collectionId 1545327183 的 releaseDate 2020-12-29、℗ 年 2020。**四處對照全部指向同一天。同名先行單曲：無**——藝人目錄 4 筆裡沒有任何 Single。",
+  "notes": "**擋下策展層四處。**｜**（1）`mbNote` 寫「這位藝人 MB 上沒有 EP／Single／Live 條目可寫『刻意不釘』」——不成立。**藝人目錄 4 筆裡有兩筆 EP：2014-12-30《大男孩主義》與 2021-02-05《顏社煮場秀: 春艷 Live at Thai Street》（**後者的 secondary-types 含 Live**）。｜**（2）`mbNote` 同一句寫「Apple 端另有《大男孩主義》EP（2014，collectionId 950227153），MB 未建檔，不在本批」——「MB 未建檔」是錯的**，資料庫端有這筆 EP（release-group 4ddac9d9）。**兩處連在一起等於把「名下只有兩張碟」這個判斷立在錯的前提上。**｜**（3）`curatorWhy` 寫「春艷在 MB 上的第二張、也是最後一張專輯」——「第二張」在目錄上成立可留，「最後一張」不得寫**：目錄裡本張之後還有一筆 2021 的 EP＋Live，而且「最後一張」是生涯極值、沒有任何欄位支撐。行文寫「兩張長篇裡較晚的一張」。｜**（4）`curatorRisk` 寫「Apple 店面 tw 兩種查法皆無，記 tw 未上架（第 231 條），走無來源狀態」——結論錯**：直查 collectionId 1545327183 回得到 12 軌、長度與資料庫端一秒不差、全部有試聽。｜（5）`curatorRisk` 寫「盤名『感恩的心』是華語歌壇的高頻標題，撞卡與封面配對一定要先過藝人閘」：這是操作提醒不是事實主張，可留。｜**大小寫與空白分歧四軌**（第 2、3、10、11 軌），**都不是漢字用字分歧**；`keyTracks` 已避開其中三軌，行文若要寫這幾軌一律照資料庫端的字。｜**時間可以寫**：12 軌在資料庫端就有長度，且與串流側一秒不差。｜**串流採信 1545327183**：12 軌逐位置同序、長度逐軌完全相同、全數有 previewUrl。**駁回 1551768485**：那是藝人目錄裡 2021 那筆 6 軌的現場 EP。"
+ },
+ {
+  "key": "desc4:無妄合作社|二十一世紀的破青年",
+  "artist": "無妄合作社",
+  "album": "二十一世紀的破青年",
+  "facts": [
+   {
+    "f": "release-group 5d7d4c77 的欄位：title「二十一世紀的破青年」、artist-credit「無妄合作社」（藝人實體 MBID 7c62c7cc，type Group、country TW、disambiguation「Taiwanese band」、**alias 一筆：No-nonsense Collective**、life-span 全空）、first-release-date **2019-10-01**、primary-type Album、secondary-types **空**。轄下 **3 筆 release**：2019-10-10／TW／Official 的 **CD**（label **Airhead Records**、MBID df2fd50b、catno **AR-012**、barcode 空、8 軌）、**一筆 Pseudo-Release（無日期、無國別、無廠牌，title 是英文「21st Century Post Youth」、8 軌）**、2019-10-01／XW／Official 的數位版（同一間 Airhead Records、無 catno、barcode **193017013962**、8 軌）。**三筆軌數相同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/5d7d4c77-6ab8-4ca2-b593-551cc4e787b2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "TW CD 版逐軌曲目與長度，8 軌全部有長度：1〈青春之歌〉5:10、2〈二十一世紀的破青年〉5:56、3〈在圍城時與你失散〉4:07、4〈精神分析的大師〉3:30、5〈夢遊少女〉3:52、6〈紅孩兒〉5:48、7〈山頭〉6:37、8〈人們來了〉5:35。**8 軌裡有 5 軌超過五分鐘、最長的〈山頭〉6:37，全張總長約 40 分鐘、平均一軌五分鐘**——**8 軌卻撐到 40 分鐘，是本批 a 組軌數最少、單軌最長的一張。**第 2 軌與盤名同名。**8 軌全部沒有客座**，軌級掛名一律只有樂團自己。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5d7d4c77-6ab8-4ca2-b593-551cc4e787b2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **6 個 release-group（不是 2 個）**，依 first-release-date 排序：**2017-11《逃脫時間的鎖》（EP）**、2019-10-01 本張（Album）、**2021《No Mercy》（EP）**、2024-10-23《開往天堂的海盜船》（Album）、**2024-12-27《賣火柴的大酒鬼》（Single）**、**2026-08《快樂的人在路上走》（EP）**。**兩張 Album 都在本批，另外四筆（三張 EP、一張 Single）不在。本張是目錄裡最早的 Album，但不是最早的一筆條目——2017 那張 EP 比它早兩年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7c62c7cc-c814-4d3b-a56f-701475e03bff&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流側 collectionId 1482100405 攤開逐軌覆核：collectionName「二十一世紀的破青年」、artistName「無妄合作社」、releaseDate 2019-10-01、trackCount **8**、℗ 2019 無妄合作社 No-nonsense Collective（**℗ 掛的就是樂團自己的漢字加英文雙寫名**）。**8 軌逐位置同序同名、長度逐軌完全相同（8 軌一秒不差）**，一個字都沒有差。8 軌全部有 previewUrl。**採信。**release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1482100405&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八首歌撐到四十分鐘，有五首超過五分鐘",
+   "三筆發行裡有一筆是沒有日期沒有國別的，盤名還是英文的"
+  ],
+  "sound": "2019 年在資料庫端留下三筆發行：TW 的 CD（catno AR-012）、XW 的數位版（barcode 193017013962），加上一筆沒有日期、沒有國別、沒有廠牌的 Pseudo-Release——那一筆的盤名是英文的《21st Century Post Youth》。三筆都是 8 軌。8 軌全部有長度，而且是本批 a 組軌數最少、單軌最長的一張：〈青春之歌〉5:10、與盤名同名的〈二十一世紀的破青年〉5:56、〈在圍城時與你失散〉4:07、〈精神分析的大師〉3:30、〈夢遊少女〉3:52、〈紅孩兒〉5:48、〈山頭〉6:37、〈人們來了〉5:35。八首裡有五首超過五分鐘，最長的〈山頭〉6:37，八軌加起來約四十分鐘，平均一軌五分鐘。八軌一位客座都沒有，軌級掛名一律只有樂團自己。",
+  "keyTracks": [
+   "二十一世紀的破青年",
+   "紅孩兒",
+   "山頭"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2019。release-group first-release-date **2019-10-01**（XW 數位先行）、轄下 TW 實體版是 2019-10-10、另一筆 Pseudo-Release 無日期，串流側 collectionId 1482100405 的 releaseDate 2019-10-01、℗ 年 2019。**四處對照全部指向 2019**，數位先行、實體晚九天，卡片取 2019 沒有分歧。**同名先行單曲：無**——藝人目錄唯一一筆 Single 是 2024-12-27 的《賣火柴的大酒鬼》，比本張晚五年。",
+  "notes": "**擋下策展層兩處，另有兩處覆核屬實。**｜**（1）`mbNote` 寫「藝人 MBID 7c62c7cc…，名下 2 個 RG，兩張都收進本批」——藝人目錄實有 6 個 release-group**：另有 2017-11《逃脫時間的鎖》（EP）、2021《No Mercy》（EP）、2024-12-27《賣火柴的大酒鬼》（Single）、2026-08《快樂的人在路上走》（EP）。**「名下只有兩張」不成立**，行文不得寫「總共只出過兩張」。｜（2）`curatorWhy` 寫「這是 2010 年代後半台語樂團那一批裡少數在 MB 上建檔完整的」：語言歸類加「少數」的極值，**兩件都查不到來源，不得寫**。｜**（3）覆核屬實可留**：`curatorRisk` 寫「MB 轄下有一筆 Pseudo-Release（無日期、無國別、無廠牌），配對抓 release 時要跳過它，只認 2019-10-10／TW／Official 那筆（Airhead Records AR-012）」——完全屬實，**補一件卡單沒寫的**：那筆 Pseudo-Release 的 title 是英文的「21st Century Post Youth」，與另外兩筆的漢字盤名不同，**跨批比對時它會以英文形出現**。｜**（4）覆核屬實可留**：`curatorRisk` 寫「MB alias 有英文名 No-nonsense Collective，queryAlias 要帶」「Apple 店面 tw collectionId 1482100405」——兩件都對，而且串流側那筆的 ℗ 欄寫的就是「無妄合作社 No-nonsense Collective」這個雙寫名。｜（5）序數「首張專輯」：目錄裡本張是最早的 Album，**可留**；但 2017 那張 EP 比它早兩年，**行文寫「名下最早的一張長篇」比「首張專輯」穩**。｜**廠牌**：label 實體是 Airhead Records（MBID df2fd50b），catno AR-012；**廠牌所在地與來歷不得寫**。｜**時間可以寫**：8 軌在資料庫端就有長度，且與串流側一秒不差。｜**串流採信 1482100405**：8 軌逐位置同序同名、長度逐軌完全相同、全數有 previewUrl，是本批對得最乾淨的一筆。"
+ },
+ {
+  "key": "desc4:無妄合作社|開往天堂的海盜船",
+  "artist": "無妄合作社",
+  "album": "開往天堂的海盜船",
+  "facts": [
+   {
+    "f": "release-group 9639901e 的欄位：title「開往天堂的海盜船」、artist-credit「無妄合作社」（藝人實體 MBID 7c62c7cc，type Group、country TW、disambiguation「Taiwanese band」、alias No-nonsense Collective）、first-release-date **2024-10-23**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：2024-10-23／XW／Official，**載體是 Digital Media**、13 軌、barcode **4711508087535**、**catno 空**，label-info 記的是 **「空氣腦唱片有限公司」（label 實體 MBID e25d6b2f）**。**⚠ 這與五年前那張掛的「Airhead Records」（MBID df2fd50b）是兩個不同的 label 實體，名字不同、MBID 也不同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/9639901e-f605-488b-bc00-f86e94a79af4?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "逐軌曲目與長度，13 軌全部有長度：1〈揚帆〉2:32、2〈人造人之歌〉4:12、3〈賣火柴的大酒鬼 Pt.1〉1:53（軌級掛名記「無妄合作社 feat .布妲菈·碧海」，**來源端的 feat 後面多一個空白再接點號**）、4〈我的手不是我的手〉2:33、5〈神的孩子都在摔跤〉5:46、6〈How Can You Sleep at Night〉3:37、7〈助禱詞〉3:44、8〈審判日〉4:19、9〈賣火柴的大酒鬼 Pt.2〉3:46（feat. 布妲菈·碧海）、10〈迷航〉2:23、11〈都出來吧〉4:02、12〈天堂〉6:13、13〈秋去冬來〉2:12。**同一首歌拆成 Pt.1 與 Pt.2 分放在第 3 與第 9 軌，中間隔了五軌**；最長的〈天堂〉6:13、最短的〈賣火柴的大酒鬼 Pt.1〉1:53。**13 軌裡只有那兩軌帶客座，客座是同一位。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9639901e-f605-488b-bc00-f86e94a79af4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **6 個 release-group**：2017-11《逃脫時間的鎖》（EP）、2019-10-01《二十一世紀的破青年》（Album）、2021《No Mercy》（EP）、**2024-10-23 本張（Album）**、**2024-12-27《賣火柴的大酒鬼》（Single）**、2026-08《快樂的人在路上走》（EP）。**本張與那筆同名 Single 只差兩個月，而且 Single 在後**——本張第 3、9 兩軌就叫〈賣火柴的大酒鬼 Pt.1／Pt.2〉，**所以那是後出的單曲，不是先行單曲**。目錄裡本張是最晚的一張 Album。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7c62c7cc-c814-4d3b-a56f-701475e03bff&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選 collectionId 1773342648 攤開逐軌覆核：collectionName「開往天堂的海盜船」、artistName「無妄合作社」、releaseDate 2024-10-23、trackCount **13**、℗ 2024 無妄合作社 No-nonsense Collective。**13 軌逐位置同序同名、長度逐軌完全相同（13 軌一秒不差）**，唯一差別是第 3、9 軌店面端把客座掛進曲名括號。13 軌全部有 previewUrl。**採信。**另一筆候選 collectionId 1787243387《賣火柴的大酒鬼 (feat. 布妲菈·碧海) - Single》2024、1 軌，就是藝人目錄裡 2024-12-27 那筆後出的單曲，**不是本張，駁回**。release-group 的封面查詢**回 200，有圖**。",
+    "src": "https://itunes.apple.com/lookup?id=1773342648&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "店面端目錄查法實測：以掛名當 term 查 tw 店面回 **4 筆**——《快樂的人在路上走》2026、《二十一世紀的破青年》2019、《逃脫時間的鎖 - EP》2017、一首合輯單曲，**目錄裡確實沒有本張**；但直查 collectionId 1773342648 回得到完整 13 軌與 13 個 previewUrl。**與本批另外六張是同一個形狀。**另可確認 collectionId 1308804571《逃脫時間的鎖 - EP》2017-11-03、4 軌確實存在，**而且資料庫端也有這筆 EP（release-group c84f1c89）**。",
+    "src": "https://itunes.apple.com/search?term=%E7%84%A1%E5%A6%84%E5%90%88%E4%BD%9C%E7%A4%BE&country=tw&entity=album&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "同一首歌拆成上下兩半，分別放在第三軌和第九軌，中間隔了五首",
+   "兩張長篇掛的廠牌在資料庫端是兩個不同的實體，一個寫英文一個寫漢字"
+  ],
+  "sound": "2024 年只發了一種載體：XW 的數位版，barcode 4711508087535，13 軌全部有長度。整張最搶眼的安排是把同一首歌拆成兩半——〈賣火柴的大酒鬼 Pt.1〉1:53 放在第 3 軌、〈賣火柴的大酒鬼 Pt.2〉3:46 放在第 9 軌，中間隔了五首。曲序是〈揚帆〉2:32、〈人造人之歌〉4:12、Pt.1、〈我的手不是我的手〉2:33、〈神的孩子都在摔跤〉5:46、〈How Can You Sleep at Night〉3:37、〈助禱詞〉3:44、〈審判日〉4:19、Pt.2、〈迷航〉2:23、〈都出來吧〉4:02、〈天堂〉6:13，收在最短的〈秋去冬來〉2:12。長度跨幅從 1:53 到 6:13，比五年前那張八軌全長的做法散得多。13 軌裡只有拆成兩半的那一首帶客座，前後兩半是同一位。",
+  "keyTracks": [
+   "神的孩子都在摔跤",
+   "審判日",
+   "天堂"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2024。release-group first-release-date **2024-10-23**、轄下唯一 release 的 date 同樣是 2024-10-23（XW／Official／空氣腦唱片有限公司，bc 4711508087535），串流側 collectionId 1773342648 的 releaseDate 2024-10-23、℗ 年 2024。**四處對照全部指向同一天。同名先行單曲：沒有先行的，只有後出的**——藝人目錄裡 2024-12-27 的 Single《賣火柴的大酒鬼》與本張第 3、9 軌同名，但它比專輯晚兩個月，**不能寫成先行單曲**。",
+  "notes": "**擋下策展層三處。**｜**（1）最重的一處：`curatorWhy` 寫「2024 年仍在空氣腦唱片…與五年前的首張是同一間獨立廠牌」——資料庫端不是這樣。**本張的 label-info 記「空氣腦唱片有限公司」（label 實體 e25d6b2f），2019 那張兩筆 release 記的是「Airhead Records」（label 實體 df2fd50b）——**兩個不同的 label 實體，名字不同、MBID 也不同**。卡單 `label` 欄寫「空氣腦唱片有限公司（Airhead Records）」把兩者當成同一間，**資料庫端沒有任何欄位支持這個等同**。**行文不得寫「同一間廠牌」「還在同一間」**；要提廠牌只能各寫各的名字。｜**（2）`curatorRisk` 寫「Apple 店面 tw 以 term=無妄合作社 查藝人目錄回 4 筆…沒有這張 2024 的專輯，依第 231 條兩種查法都落空，記 tw 未上架，試聽走無來源狀態」——結論錯。**目錄 4 筆裡沒有本張這件事本層覆核屬實，**但直查 collectionId 1773342648 回得到 13 軌、長度與資料庫端逐軌一秒不差、全部有試聽**。｜**（3）`mbNote` 寫「藝人 MBID 7c62c7cc，名下 2 個 RG。刻意不釘：Apple 端另有《逃脫時間的鎖》EP（2017，collectionId 1308804571），MB 未建檔，無 RG 可釘」——兩件都錯**：藝人目錄實有 6 個 release-group，而且 2017 那張 EP 在資料庫端建了檔（release-group c84f1c89，2017-11）。｜**同名 Single 的方向要寫對**：目錄裡 2024-12-27 的 Single《賣火柴的大酒鬼》**比本張晚兩個月**，**不得寫成先行單曲或主打先行**。｜**曲名分歧**：無漢字用字分歧；第 3 軌來源端的軌級掛名寫成「feat .布妲菈·碧海」（feat 後多一個空白再接點號），**那是來源端的排版瑕疵，行文不要照抄**。｜**載體**：是 Digital Media，**不得寫「CD」**。｜**時間可以寫**：13 軌在資料庫端就有長度，且與串流側一秒不差。｜**串流採信 1773342648**：13 軌逐位置同序同名、長度逐軌完全相同、全數有 previewUrl。**駁回 1787243387**：那是目錄裡 2024-12-27 那筆 1 軌的後出單曲。"
+ }
+]

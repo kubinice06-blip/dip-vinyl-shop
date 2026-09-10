@@ -1,0 +1,1122 @@
+[
+ {
+  "key": "desc2:Roscoe Mitchell|Old / Quartet",
+  "artist": "Roscoe Mitchell",
+  "album": "Old / Quartet",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 07af4d38 的欄位：title《Old / Quartet》、artist-credit「Roscoe Mitchell」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/release-group/07af4d38-7cc3-3cfd-816d-1b02c96ddc94"
+   },
+   {
+    "f": "該 release-group 底下 1975 年的 US release 由 Nessa Records 發行、編號「N- 5」、載體標 12\" Vinyl、包裝 Cardboard/Paper Sleeve，4 軌：〈Old〉8:09、〈Quartet, Part 1〉19:40、〈Quartet, Part 2〉18:03、〈Solo〉5:34。",
+    "src": "https://musicbrainz.org/release/f6cdb913-ecbf-4ffc-860d-536f8bc7a735"
+   },
+   {
+    "f": "同一個 release-group 底下另有 1997 年的日本 release，由 Bomba Records 發行（編號 BOM 22049）、載體 CD、Jewel Case，曲目與曲長與 1975 年那筆逐軌相同。",
+    "src": "https://musicbrainz.org/release/586f185f-a248-4eea-aca7-785086a8a54d"
+   },
+   {
+    "f": "英文維基〈Old/Quartet〉開頭寫：這是 Roscoe Mitchell 的 Art Ensemble（後來成為 Art Ensemble of Chicago）1967 年錄的專輯，1975 年由 Nessa 發行，參與者為 Mitchell、Lester Bowie、Malachi Favors Maghostut 與 Phillip Wilson。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "同一條目的曲目表註明錄音日期：〈Old〉錄於 1967 年 5 月 18 日、〈Quartet〉錄於 1967 年 5 月 19 日、〈Solo〉錄於 1967 年 11 月 25 日；除註明者外全部由 Roscoe Mitchell 作曲。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "同一條目的 Personnel 欄：Mitchell 演奏中音與高音薩克斯風、單簧管、長笛與打擊樂器；Lester Bowie 小號與粗管短號、Malachi Favors Maghostut 貝斯、Phillip Wilson 鼓，三人皆註明「Side Two track 2 除外」（即〈Solo〉一軌）。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "同一條目引 Allmusic 的 Brian Olewnick 給四顆半星，評語為「雖然也許比《Congliptious》低一小階，它本身仍是一張美麗的專輯，在 Roscoe Mitchell 的作品目錄裡排名很高」。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "英文維基〈Roscoe Mitchell〉開頭：Mitchell 生於 1940 年 8 月 3 日，是美國作曲家、爵士樂器演奏者與教育者；除了自己領銜的作品，他以共同創辦 Art Ensemble of Chicago 與 AACM（Association for the Advancement of Creative Musicians）著稱。",
+    "src": "https://en.wikipedia.org/wiki/Roscoe_Mitchell"
+   },
+   {
+    "f": "Apple Music 美國店面 Roscoe Mitchell 藝人頁（artistId 29756753）以 lookup 端點列出 48 張專輯，其中沒有《Old / Quartet》或《Old Quartet》；Roscoe Mitchell Quartet 藝人頁（305846932）只有《Live At \"A Space\" 1975》與《The Flow of Things》兩筆。",
+    "src": "https://itunes.apple.com/lookup?id=29756753&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "唱片封面印的是 1975 年，錄音室裡的日子是 1967 年 5 月的兩個下午",
+   "四人裡有三人在最後一軌缺席——那一軌的標題就叫〈Solo〉"
+  ],
+  "sound": "MB 的曲目表顯示這是四軌的一張碟：8:09 的〈Old〉之後，〈Quartet〉被切成 19:40 與 18:03 兩段佔滿一整面，收在 5:34 的〈Solo〉。維基的 Personnel 欄註明 Bowie、Favors、Wilson 三人都不在最後那一軌上。（本欄由 MB release f6cdb913 的曲長與維基 Personnel 欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Old",
+   "Quartet, Part 1",
+   "Solo"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1975 與 MB release-group first-release-date 1975 一致（Nessa N-5 的發行年）。**錄音年是 1967**：英文維基〈Old/Quartet〉的曲目表註明〈Old〉1967-05-18、〈Quartet〉1967-05-19、〈Solo〉1967-11-25。兩者相差八年，**不得互寫**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1967 與出版年 1975 不得互寫。** 行文寫「1967 年錄的」可以，寫「1967 年發行」不行；寫「1975 年 Nessa 發行」可以，寫「1975 年錄的」不行。\n⚠ **擋下策展層兩處無來源主張**：\n（1）curatorWhy 寫「Nessa 1975 年把兩段錄音併成一張雙 LP：1967 年芝加哥的四重奏場次與 **1975 年的重聚錄音**」——**這一句與唯一找得到的直述來源相反**。英文維基〈Old/Quartet〉明列三個錄音日期全部落在 1967 年（5/18、5/19、11/25），沒有任何 1975 年的錄音。**「1975 年重聚錄音」不得入文。**\n（2）同句的「**雙 LP**」也擋。MB 的 1975 US release 只有一個 medium、載體標 12\" Vinyl、4 軌；日本 CD 版同樣 4 軌。**沒有來源支持雙 LP，不得寫。**\n（3）curatorWhy 的「是 AACM 第一代編制怎麼變成 Art Ensemble of Chicago 的直接紀錄」——維基只說這是「Roscoe Mitchell 的 Art Ensemble（後來成為 Art Ensemble of Chicago）」錄的，**可以寫「後來成為 Art Ensemble of Chicago 的那組人」，不得寫成因果式的「直接紀錄」**。\n**盤名斜線**：MB 的 RG 與兩筆 release 標題都是「Old / Quartet」（斜線兩側有空格），維基條目名是「Old/Quartet」（無空格）。兩種都指同一張，卡片取「Old / Quartet」沒問題。\n**試聽（本層覆核，維持 unavailable）**：探測層十個店面全部 `0→0`（`us gb fr dk se de nl jp ca au`），無一命中。依第 166 條改打藝人頁 lookup：`id=29756753&entity=album&limit=200&country=us` 回 48 張，**沒有本盤**；Roscoe Mitchell Quartet 頁（305846932）只有《Live At \"A Space\" 1975》(664917302) 與《The Flow of Things》(305846927) 兩筆，兩者都不是本盤（策展層已預判，本層確認）。**維持 unavailable，無異議。** Nessa 是芝加哥小廠牌，維基列出的 Nessa 目錄（Nonaah、L-R-G、Snurdy McGurdy 等）在 Apple 同樣查無。\n**互斥分派——本張獨占「AACM／Art Ensemble of Chicago 前身編制」這條線與 Nessa 廠牌。**\n**本張禁用**：任何「雙 LP」「兩段錄音併成一張」「1975 年重聚」的說法。"
+ },
+ {
+  "key": "desc2:Albert Ayler|My Name Is Albert Ayler",
+  "artist": "Albert Ayler",
+  "album": "My Name Is Albert Ayler",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a119e23e 的欄位：title《My Name Is Albert Ayler》、artist-credit「Albert Ayler」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 3 個 release（DK 1964、GB 1964、GB 1995）。",
+    "src": "https://musicbrainz.org/release-group/a119e23e-6007-3c8a-82f6-1654a0cacecd"
+   },
+   {
+    "f": "該 release-group 底下 1964 年的丹麥 release 由 Debut 發行（編號 DEB 140，同筆另掛 Fontana DEB-140），載體 12\" Vinyl、Cardboard/Paper Sleeve，6 軌：〈[introduction]〉1:16、〈Bye Bye Blackbird〉7:17、〈Billie's Bounce〉5:59、〈Summertime〉8:47、〈On Green Dolphin Street〉9:07、〈C.T.〉12:03。",
+    "src": "https://musicbrainz.org/release/6bbc7194-3729-490e-9b5b-635160252cb5"
+   },
+   {
+    "f": "英文維基〈My Name Is Albert Ayler〉開頭：這是薩克斯風手 Albert Ayler 1963 年在哥本哈根錄、首度由荷蘭的 Debut 廠牌發行的專輯；伴奏是 Niels Brosted（鋼琴）、Niels-Henning Ørsted Pedersen（貝斯）與 Ronnie Gardiner（鼓），開頭是 Ayler 的一段口白，之後是五首以標準曲為主的演奏。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目：〈C.T.〉是全碟唯一一首 Ayler 自己的曲子，題獻給幾個月前才與他見面同台的 Cecil Taylor；Ayler 原本希望與 Taylor 的樂團錄這張，因檔期衝突改與 Brosted、Pedersen、Gardiner 合作。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目：〈Bye Bye Blackbird〉是 Ayler 少數的高音薩克斯風錄音之一；Personnel 欄記 Ayler 在第 3–6 軌吹次中音、第 2 軌吹高音、第 1 軌是人聲。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目引貝斯手兼 Ayler 傳記作者 Jeff Schwartz：本張與**前一張《Something Different!!!!!》**有同樣的問題，例如臨時湊的樂手讓他只能吹標準曲，鋼琴手的在場「似乎讓 Ayler 沒辦法掙脫這些曲子去追自己的想像」；但 Schwartz 也指出，到這個時間點 Ayler 已經確立了「一種一致而獨特的音樂風格」。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目引 Allmusic 的 Thom Jurek 給三顆星，說這是「一張奇怪的唱片，像是把一位獨奏者錯配到另一個樂團的錄音上」，並指節奏組「不管他怎麼吹都照直硬 bop 打」，但稱〈Summertime〉「美得不可思議」。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 152606352：標題《My Name Is Albert Ayler》、掛名 Albert Ayler、releaseDate 1963-01-14、6 軌、collectionExplicitness **cleaned**、copyright「℗ 1996 1201 Music (Americas) LLC」；逐軌為〈Introduction〉1:16、〈Bye Bye Blackbird〉7:17、〈Billie's Bounce〉5:59、〈Summertime〉8:47、〈On Green Dolphin Street〉9:07、〈C.T.〉12:03。",
+    "src": "https://music.apple.com/us/album/152606352"
+   },
+   {
+    "f": "Apple Music 英國店面另有 collectionId 652749380：標題《Albert Ayler: My Name Is Albert Ayler》、releaseDate 1963-01-14、6 軌、collectionExplicitness **notExplicit**、copyright「℗ 2013 Universe」；逐軌為〈Introduction By Albert Ayler〉1:18、〈Bye, Bye, Blackbird〉7:19、〈Billie's Bounce〉5:58、〈Summertime〉8:45、〈On Green Dolphin Street〉9:06、〈C.t.〉11:58。",
+    "src": "https://music.apple.com/gb/album/652749380"
+   }
+  ],
+  "hookCandidates": [
+   "全碟只有一首是他自己寫的，標題是兩個字母，寫給幾個月前才認識的 Cecil Taylor",
+   "他想找的樂團檔期排不開，於是這張由三個在哥本哈根找得到的人伴奏"
+  ],
+  "sound": "六軌裡第一軌是 1:16 的口白，其餘五首依 MB 的曲長從 5:59 到 12:03；維基的 Personnel 欄記他只有第 2 軌〈Bye Bye Blackbird〉吹高音薩克斯風，其餘吹次中音。Allmusic 的 Thom Jurek 說節奏組「不管他怎麼吹都照直硬 bop 打」。（本欄由 MB release 6bbc7194 的曲長與維基 Personnel／評論歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Summertime",
+   "C.T.",
+   "Bye Bye Blackbird"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1964 與 MB release-group first-release-date 1964 一致。**錄音年是 1963**：英文維基寫「recorded in Copenhagen in 1963」，Apple 兩筆條目的 releaseDate 都填 1963-01-14（那是錄音日、不是發行日）。策展層 curatorRisk 已自記「錄音年 1963-10」，但**維基只寫 1963、沒有寫月份**——**「1963 年 10 月」這個月份在本層找不到直述來源，不得入文，只能寫 1963 年**。廠牌國別另有一處分歧：MB 把 1964 年首發那筆的國別記 DK（丹麥），維基說 Debut 是「Dutch」（荷蘭）廠牌；**兩說並列，不得單邊斷言**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1963 與出版年 1964 不得互寫。**\n⚠ **擋下策展層一處時序主張（本張最重要的一條）**：curatorWhy 寫「**這一張是他的首張錄音室專輯**」——**與來源相反，不得入文**。英文維基本條目引 Jeff Schwartz 明講本張「exhibits some of the same flaws found on **its predecessor, Something Different!!!!!**」，也就是本張之前還有一張。**「首張」「第一張錄音室專輯」「出道作」一律禁用。**\n⚠ **試聽陷阱已解（策展層預告的那個）**：探測層取 us / **152606352**，該筆 `collectionExplicitness=cleaned`、`cleanedOnly=true`，依 §6 淨化版屬不同版本。本層依第 166 條逐店面回查藝人頁：`id=28102&entity=album&limit=200&country=us` 的 20 張裡**沒有同名的 explicit 或 notExplicit 雙胞胎**（us 只有那一筆 cleaned）；**改打 gb 才找到**：`country=gb` 的藝人頁有 **652749380**《Albert Ayler: My Name Is Albert Ayler》、6 軌、**notExplicit**、℗ 2013 Universe。本層以 `lookup?id=652749380&country=gb&entity=song` 逐軌核對 MB 的 6 軌 Debut release：**曲名、曲序相同，曲長逐項差在 1–5 秒內**（第 1 軌兩邊都是口白、第 6 軌兩邊都是〈C.T.〉）。\n**本層裁定：試聽改判 ready，front 改 `gb`、collectionId 改 `652749380`；us / 152606352 因 cleaned 不採。** 兩筆的軌數與曲序完全一致，只差製作方與店面，**風險低、可逆（改的是卡單值不是卡池結構）**，依下放判準第 2 條直接定。⚠ **gb 那筆的盤名帶藝人名前綴「Albert Ayler: 」，鎖 collectionId、不要用字串比對。**\n**掛名**：MB 的 artist-credit 原文是「Albert Ayler」（不是 Trio 或 Quartet），與卡片掛名一致，無分歧。\n**互斥分派——本張獨占「哥本哈根／臨時節奏組／標準曲」與〈C.T.〉題獻 Cecil Taylor 這兩條線。** 同批另一張 Ayler（《Spirits Rejoice》）不得重述。\n**本張禁用**：Judson Hall、Donald Ayler、ESP-Disk、Gary Peacock（都是《Spirits Rejoice》的，見該卡）。"
+ },
+ {
+  "key": "desc2:Albert Ayler|Spirits Rejoice",
+  "artist": "Albert Ayler",
+  "album": "Spirits Rejoice",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 08842066 的欄位：title《Spirits Rejoice》、artist-credit「Albert Ayler」、first-release-date 1965、primary-type Album、secondary-types 空、轄下 5 個 release（US 1965、DE 1993、IT 2006、US 2006、XW 2016-10-12）。",
+    "src": "https://musicbrainz.org/release-group/08842066-6bb8-3146-bf1c-fea470990daf"
+   },
+   {
+    "f": "該 release-group 底下 1965 年的 US release 由 ESP‐Disk' 發行（編號 ESP 1020）、載體 12\" Vinyl，5 軌：〈Spirits Rejoice〉11:31、〈Holy Family〉2:10、〈D.C.〉7:55、〈Angels〉5:24、〈Prophet〉5:25。",
+    "src": "https://musicbrainz.org/release/06bb1c0a-5bf1-49ed-8b15-8e35e72f9dc9"
+   },
+   {
+    "f": "英文維基〈Spirits Rejoice〉開頭：這是 Albert Ayler 1965 年在紐約錄、首度由 ESP-Disk 發行的**現場專輯**；錄音在 Judson Hall 進行，場地是專為錄音租下的、**現場沒有觀眾**。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目：這張是貝斯手 Gary Peacock 最後一次與 Ayler 同場；Personnel 欄記 Albert Ayler 次中音薩克斯風、Donald Ayler 小號（第 1–3 與 5 軌）、Charles Tyler 中音薩克斯風（第 1–3 與 5 軌）、Call Cobbs 大鍵琴（第 4 軌）、Henry Grimes 與 Gary Peacock 貝斯、Sunny Murray 鼓。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目引 ESP 創辦人 Bernard Stollman 自述：〈Holy Family〉是他在 Judson Hall 錄音當下要求 Ayler 錄一首短曲的產物，長度不到三分鐘；Stollman 說他事後懊悔違背了「由藝人單獨決定作品內容」的承諾，並發誓不再這麼做。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目引 Allmusic 的 Steve Huey 給四顆半星，稱它是「Ayler 最狂野、最吵的專輯之一」，並說「儘管表面混亂，《Spirits Rejoice》常常出乎意料地是預先安排好的」；All About Jazz 的 Mark Corroto 指出標題曲取材自〈馬賽曲〉。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目的 Legacy 段：加拿大藝術家 Stan Douglas 與 George E. Lewis 合作、1992 年做成錄像裝置《Hors-champs》，內容是 Lewis 與 Douglas Ewart、Kent Carter、Oliver Johnson 即興演奏 Ayler 的〈Spirits Rejoice〉，該裝置在德國卡塞爾的 documenta 9 展出；標題曲也用在 2023 年 Ira Sachs 執導的電影《Passages》片尾主題。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1233967311：標題《Spirits Rejoice》、掛名 Albert Ayler、releaseDate 1965-09-23、5 軌、notExplicit、copyright「℗ 2012 ESP Disk」；逐軌為〈Spirits Rejoice〉11:43、〈Holy Family〉2:13、〈D.C.〉8:02、〈Angels〉5:33、〈Prophet〉5:36。",
+    "src": "https://music.apple.com/us/album/1233967311"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌老闆插嘴要了一首短曲，換來兩分多鐘的〈Holy Family〉與他事後的道歉",
+   "音樂廳是租下來錄音用的，台下一個聽眾也沒有"
+  ],
+  "sound": "MB 的 ESP 原盤是五軌：11:31 的標題曲之後接 2:10 的〈Holy Family〉，再到 7:55 的〈D.C.〉、5:24 的〈Angels〉、5:25 的〈Prophet〉。維基的 Personnel 欄記大鍵琴只出現在第 4 軌〈Angels〉，小號與中音薩克斯風則在第 4 軌之外全程在場。Allmusic 的 Steve Huey 稱它「儘管表面混亂，常常出乎意料地是預先安排好的」。（本欄由 MB release 06bb1c0a 的曲長與維基 Personnel／評論歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Spirits Rejoice",
+   "Holy Family",
+   "D.C."
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1965 與 MB release-group first-release-date 1965 一致（ESP 1020 的發行年）。**錄音年也是 1965**（維基：recorded in New York City in 1965），Apple 條目的 releaseDate 1965-09-23 是同一年的日期。本張是本組少數錄音年與出版年同年的一張。",
+  "notes": "**錄音年與出版年同為 1965**，不必分寫；但**不得因此把別張的「錄音年≠出版年」句型套進來**。\n⚠ **策展層一處要修正**：curatorWhy 稱本張是「1965 年 9 月在 Judson Hall 錄的**錄音室盤**」，另一處寫「ESP-Disk 的另一張**錄音室盤**」——**英文維基把它定義為 live album**（「a live album ... recorded in New York City in 1965」），只是場地租下來、沒有觀眾。**行文不得寫「錄音室盤」**；要寫就照維基的形狀寫「在租下來的音樂廳錄、台下沒有觀眾」。\n⚠ **擋下策展層兩處無來源主張**：（1）「是 ESP-Disk 三張 Ayler 裡編制最大的一張」——沒有直述來源，且需要跨碟比較，**不得寫**；（2）「是自由爵士把進行曲與聖歌旋律當素材這條做法**最常被引用的例子**」——「最常被引用」無來源，**不得寫**。可寫的替代是 All About Jazz 的 Mark Corroto 說標題曲取材自〈馬賽曲〉（有源）。\n**編制的可寫範圍**：維基 Personnel 欄可支持「七個人」的名單與各自軌次，**但「從三重奏擴到七人」這種跨碟的變化敘述沒有來源，不得寫**。\n**試聽（本層覆核通過）**：探測層 `us:1→1`、front `us`、collectionId **1233967311**、5 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=1233967311&country=us&entity=song` 逐軌核對 MB 的 ESP 原盤：**曲名、曲序逐項相同**（第 1 軌兩邊都是〈Spirits Rejoice〉），曲長差在 3–12 秒內（2012 年 ESP 數位版與 1965 年 LP 的母帶差異）。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**無異議。**\n**互斥分派——本張獨占 Judson Hall／無觀眾錄音、Bernard Stollman 的〈Holy Family〉插曲、Donald Ayler 與 Call Cobbs 的編制，以及《Hors-champs》與《Passages》這條後世流傳線。** 同批另一張 Ayler（《My Name Is Albert Ayler》）不得重述。\n**本張禁用**：哥本哈根、Debut 廠牌、Cecil Taylor、〈C.T.〉、Niels-Henning Ørsted Pedersen（都是《My Name Is Albert Ayler》的，見該卡）。"
+ },
+ {
+  "key": "desc2:Benny Carter|Jazz Giant",
+  "artist": "Benny Carter",
+  "album": "Jazz Giant",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0b0bcd45 的欄位：title《Jazz Giant》、artist-credit「Benny Carter」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 7 個 release（US 1958、XE 1987、JP 1996-09-28、US 2001、US 2004-11-30、XW 2022-12-16、US 2023-03-10）。",
+    "src": "https://musicbrainz.org/release-group/0b0bcd45-ef72-3d17-bb82-885bbaff231e"
+   },
+   {
+    "f": "該 release-group 底下 1958 年的 US release 掛兩家廠牌與同一個編號：Contemporary S7028 與 Stereo Records S7028，載體 12\" Vinyl、Cardboard/Paper Sleeve，7 軌：〈Old Fashioned Love〉7:46、〈I'm Coming Virginia〉5:45、〈A Walkin' Thing〉5:55、〈Blue Lou〉5:02、〈Ain't She Sweet〉3:32、〈How Can You Lose〉6:12、〈Blues My Naughty Sweetie Gives to Me〉4:32。",
+    "src": "https://musicbrainz.org/release/c43c5bf5-6c4c-490d-aad1-b0daaac6f1ff"
+   },
+   {
+    "f": "英文維基〈Jazz Giant (Benny Carter album)〉開頭：這是薩克斯風手 Benny Carter 的專輯，**錄於 1957 與 1958 年**，由 Contemporary Records 發行。",
+    "src": "https://en.wikipedia.org/wiki/Jazz_Giant_(Benny_Carter_album)"
+   },
+   {
+    "f": "同一條目的 Personnel 欄：Benny Carter 中音薩克斯風、小號與編曲；Frank Rosolino 長號（第 1–4 與 6 軌）、Ben Webster 次中音薩克斯風（第 1–4 與 6 軌）、André Previn 鋼琴（第 1 與 4–7 軌）、Jimmy Rowles 鋼琴（第 2 與 3 軌）、Barney Kessel 吉他、Leroy Vinnegar 低音提琴、Shelly Manne 鼓。",
+    "src": "https://en.wikipedia.org/wiki/Jazz_Giant_(Benny_Carter_album)"
+   },
+   {
+    "f": "同一條目引 AllMusic 的 Scott Yanow 稱本張是「特別強的七重奏場次」，並說「這份不受時間影響的音樂已經超出『swing』或『bop』這種簡單分類，就該被稱作『classic』」；《The Penguin Guide to Jazz》寫本張「是一張了不起的小編制唱片，充滿想像與創意，與 Webster 的往來是經典」。",
+    "src": "https://en.wikipedia.org/wiki/Jazz_Giant_(Benny_Carter_album)"
+   },
+   {
+    "f": "同一條目的曲目表附作曲者：〈Old Fashioned Love〉是 James P. Johnson 與 Cecil Mack 的曲子、〈Blue Lou〉是 Irving Mills 與 Edgar Sampson、〈A Walkin' Thing〉與〈How Can You Lose〉是 Carter 自己寫的。",
+    "src": "https://en.wikipedia.org/wiki/Jazz_Giant_(Benny_Carter_album)"
+   },
+   {
+    "f": "英文維基〈Benny Carter〉開頭：Carter（1907 年 8 月 8 日–2003 年 7 月 12 日）是美國爵士薩克斯風手、單簧管手、小號手、作曲家、編曲家與樂團領班；與 Johnny Hodges 同為中音薩克斯風的開路者。他從 1920 年代出道起就以編曲為業，包括為 Fletcher Henderson 大樂團寫的譜——那些譜形塑了 swing 的風格。他的職業生涯異常地長，一直延續到 1990 年代。",
+    "src": "https://en.wikipedia.org/wiki/Benny_Carter"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1657783137：標題《Jazz Giant》、掛名 Benny Carter、releaseDate 1958-01-01、7 軌、notExplicit、copyright「℗ 2022 Craft Recordings, A Concord Label Group Release.」；逐軌曲名與曲序與 MB 的 1958 年 Contemporary release 完全相同，曲長差在 1–10 秒內。",
+    "src": "https://music.apple.com/us/album/1657783137"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟的鋼琴椅上坐過兩個人：七軌裡有兩軌換了人",
+   "第一軌是 James P. Johnson 三十多年前寫的曲子"
+  ],
+  "sound": "MB 的 Contemporary 原盤七軌，曲長從 3:32 的〈Ain't She Sweet〉到 7:46 的〈Old Fashioned Love〉。維基的 Personnel 欄記長號與次中音薩克斯風只出現在第 1–4 與第 6 軌，鋼琴則由 André Previn 與 Jimmy Rowles 分軌擔任。《The Penguin Guide to Jazz》寫這是「一張了不起的小編制唱片」。（本欄由 MB release c43c5bf5 的曲長與維基 Personnel／評論歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Old Fashioned Love",
+   "A Walkin' Thing",
+   "Blues My Naughty Sweetie Gives to Me"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1958 與 MB release-group first-release-date 1958 一致。**錄音跨兩年**：英文維基寫「recorded in 1957 and 1958」。**因此本張不能寫單一錄音年**——要提就得寫「1957 到 1958 年間錄的」。廠牌另有一處要留意：卡單標「Contemporary（C 3555）」，MB 的 1958 US release 記的卻是 Contemporary **S7028** 與 Stereo Records **S7028**（立體聲版編號）；**兩個編號都不得單獨當唯一說法**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年（1957–1958）與出版年（1958）不得互寫，而且錄音年是跨年區間、不是單一年份。**\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫本張「**長年被當成他戰後目錄的入口**」——沒有直述來源，**不得入文**。可用的有源替代：AllMusic 的 Scott Yanow 稱它「特別強的七重奏場次」、《Penguin Guide》稱它「了不起的小編制唱片」。\n⚠ **另一處要修正**：curatorWhy 說同場有「Ben Webster、Barney Kessel、Jimmy Rowles」——維基 Personnel 欄確認三人都在，**但 Rowles 只在第 2、3 兩軌**，Webster 只在第 1–4 與 6 軌。**行文不得寫成「全程同場」。** 名單裡還有 André Previn、Frank Rosolino、Leroy Vinnegar、Shelly Manne，維基有列。\n**編號兩說**：卡單 C 3555（單聲道）vs MB 的 S7028（Stereo Records）。**行文不要寫編號**，或兩個都寫。\n**試聽（本層覆核通過，並解掉策展層預警的雙胞胎）**：探測層 `us:2→2`、front `us`、collectionId **1657783137**、7 軌、notExplicit、cleanedOnly false。策展層 curatorRisk 警告 Apple 有兩筆同名同軌數（1657783137 與 1532292753），要求擇一鎖死並核對曲序。本層以 `lookup?id=1657783137&country=us&entity=song` 逐軌核對 MB 的 1958 Contemporary release：**七軌曲名與曲序逐項相同**（第 1 軌兩邊都是〈Old Fashioned Love〉，第 7 軌兩邊都是〈Blues My Naughty Sweetie Gives to Me〉）。**探測層選的這一筆是對的，維持 ready / us / 1657783137。**\n**掛名**：MB 的 artist-credit 原文是「Benny Carter」（不是 and His Orchestra、不是 Quartet），與卡片一致。\n**互斥分派——本張獨占「編曲家出身／為 Fletcher Henderson 寫譜」這條 Carter 生平線與 Contemporary 的七重奏編制。**\n**本張禁用**：《Further Definitions》（策展層 curatorRisk 說明它不收，**不是本卡素材，不得提**）。同批 Fletcher Henderson《Tidal Wave》那張要寫 Henderson 樂團，**Carter 為 Henderson 寫譜這件事分派給本張**，Henderson 卡不得從 Carter 這一側切入。"
+ },
+ {
+  "key": "desc2:Bix Beiderbecke|Singin' the Blues",
+  "artist": "Bix Beiderbecke",
+  "album": "Singin' the Blues",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 06f62d64 的欄位：title 是《**Volume 1: Singin' the Blues**》（不是卡片的《Singin' the Blues》）、artist-credit「Bix Beiderbecke」、first-release-date 1990、primary-type Album、**secondary-types [Compilation]**、轄下 3 個 release。",
+    "src": "https://musicbrainz.org/release-group/06f62d64-fa5c-313e-9a1a-d62eeba39460"
+   },
+   {
+    "f": "該 release-group 底下 1990 年的 US release 由 Columbia 發行（編號 CK 45450、barcode 074644545029）、載體 CD、Jewel Case，20 軌，第 1 軌〈Trumbology〉3:03、第 3 軌〈Singin' the Blues〉3:03、第 12 軌〈In a Mist (Bixology)〉2:47、第 20 軌〈I'm Wonderin' Who〉2:50。",
+    "src": "https://musicbrainz.org/release/651b78d8-f763-403b-9719-09bdff37e179"
+   },
+   {
+    "f": "同一個 release-group 底下另有 1990 年的荷蘭 release，標題寫成《Volume 1 - Singin' The Blues》（barcode 5099746630928），以及一筆國別空白、barcode 0886972380827 的 release。",
+    "src": "https://musicbrainz.org/release-group/06f62d64-fa5c-313e-9a1a-d62eeba39460"
+   },
+   {
+    "f": "英文維基〈Bix Beiderbecke〉開頭：Beiderbecke（1903 年 3 月 10 日–1931 年 8 月 6 日）是美國爵士短號手、鋼琴家與作曲家，是 1920 年代最有影響力的爵士獨奏者之一；他在〈Singin' the Blues〉與〈I'm Coming, Virginia〉（皆 1927 年）等錄音上的獨奏展現了延伸即興的天分，預告了 jazz ballad 的風格。",
+    "src": "https://en.wikipedia.org/wiki/Bix_Beiderbecke"
+   },
+   {
+    "f": "同一條目：〈Singin' the Blues〉錄於 **1927 年 2 月 4 日**，與〈Clarinet Marmalade〉同日在紐約錄下，發行為 Okeh 40772；該獨奏「被譽為 jazz ballad 風格的重要範例——一首慢速或中速、彈得溫柔甜美但不膩、也沒有失去筋骨的曲子」。",
+    "src": "https://en.wikipedia.org/wiki/Bix_Beiderbecke"
+   },
+   {
+    "f": "同一條目的年表：1977 年，Beiderbecke 1927 年的〈Singin' the Blues〉錄音入選 Grammy Hall of Fame；2006 年，同一份與 Frankie Trumbauer、Eddie Lang 合作的 1927 年錄音被美國國會圖書館列入 National Recording Registry。",
+    "src": "https://en.wikipedia.org/wiki/Bix_Beiderbecke"
+   },
+   {
+    "f": "同一條目：〈In a Mist〉（1927）是 Beiderbecke 已出版鋼琴作品中最知名的一首，也是他唯一自己錄過的一首；他一生出版的五首鋼琴作品都由 Robbins Music 發行。",
+    "src": "https://en.wikipedia.org/wiki/Bix_Beiderbecke"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 193147812：標題《**Bix Beiderbecke, Vol. I - Singin' the Blues**》、掛名 Bix Beiderbecke、releaseDate 1990-01-01、20 軌、notExplicit、copyright「℗ Originally Released 1927 SONY BMG MUSIC ENTERTAINMENT」；逐軌曲名與曲序與 MB 的 Columbia CK 45450 完全相同（第 1 軌〈Trumbology〉、第 3 軌〈Singin' the Blues〉、第 20 軌〈I'm Wonderin' Who〉），曲長差在 3–6 秒內。",
+    "src": "https://music.apple.com/us/album/193147812"
+   }
+  ],
+  "hookCandidates": [
+   "碟名那首曲子錄於 1927 年 2 月 4 日，唱片行架上的這張碟卻是 1990 年的",
+   "他只錄過自己的一首鋼琴作品，就收在這張的第十二軌"
+  ],
+  "sound": "Columbia CK 45450 收二十軌，MB 的曲長顯示每一軌都落在 2:47 到 3:19 之間——那是 78 轉單面的長度。碟名那一軌〈Singin' the Blues〉排在第三，第十二軌是他唯一自己錄過的鋼琴作品〈In a Mist〉。（本欄由 MB release 651b78d8 的曲目表與逐軌曲長、以及維基對〈In a Mist〉的敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Singin' the Blues",
+   "I'm Coming Virginia",
+   "In a Mist"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1990 與 MB release-group first-release-date 1990 一致（Columbia／Legacy 整編的出版年）。**錄音年是 1927**：英文維基寫〈Singin' the Blues〉錄於 1927 年 2 月 4 日，Apple 的 copyright 欄也寫「Originally Released 1927」。**六十三年的落差，兩者絕不得互寫。** ⚠ 另需注意：這是一張二十軌的整編，**維基只給了〈Singin' the Blues〉與〈Clarinet Marmalade〉的 1927-02-04 這一個日期，其餘十八軌的錄音日期沒有來源**——**不得把「1927 年」套到全碟二十軌上**，只能寫「碟名那一軌錄於 1927 年」。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1927 與出版年 1990 不得互寫；而且 1927 這個年份只有來源支持碟名那一軌，不得擴及全碟。**\n⚠ **盤名帶卷號，本張是第 168 條的形狀**：**MB 的 RG 標題是《Volume 1: Singin' the Blues》、Apple 的標題是《Bix Beiderbecke, Vol. I - Singin' the Blues》——兩邊都帶「Volume 1／Vol. I」，卡片盤名《Singin' the Blues》把卷號拿掉了。** 策展層已依裁定第 91／95 條處理（RG 標題與卡片盤名不必相等），本層無異議，**但行文不得寫成「這張叫《Singin' the Blues》」的斷言式**，也**不得暗示它是同系列的唯一一輯**——Apple 藝人頁上還有《Bix Beiderbecke, Vol. 2: At the Jazz Band Ball》(193590086)。\n⚠ **secondary-types 是 [Compilation]**：這是整編盤，**行文不得寫成「他的專輯」「他錄的一張碟」**，要寫成「Columbia／Legacy 整編的一輯」。\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫「二十八歲**死於酒精中毒**」——維基開頭只給生卒日（1903-03-10／1931-08-06），**本層在維基開頭與年表段都找不到「死於酒精中毒」的直述**；**死因不得入文**（年齡也涉及算術，第 4 條，同樣不寫）。\n**試聽（本層推翻探測層的 unavailable，改判 ready）**：探測層十個店面回 `us:8→0`、其餘九國 `12→0`，判 unavailable——**這正是第 166 條說的 Apple `search` 系統性漏碟**：本盤在 Apple 的標題是《Bix Beiderbecke, **Vol. I -** Singin' the Blues》，字串比對打不中。本層改打藝人頁 `lookup?id=180726&entity=album&limit=200&country=us`，18 張裡第一筆就是 **collectionId 193147812**、20 軌、1990-01-01、notExplicit。再以 `lookup?id=193147812&country=us&entity=song` 逐軌核對 MB 的 CK 45450：**二十軌曲名與曲序逐項相同**（第 1 軌兩邊都是〈Trumbology〉、第 18 軌兩邊都是第二次出現的〈There's a Cradle in Caroline〉、第 20 軌兩邊都是〈I'm Wonderin' Who〉），曲長差在 3–6 秒內。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。\n**本層裁定：試聽改判 ready，front `us`、collectionId **193147812**。** 依下放判準第 1 條（有先例：第 166 條）與第 2 條（可逆）直接定。\n**互斥分派——本張獨占 Frankie Trumbauer 的 OKeh 面、〈In a Mist〉與 Grammy Hall of Fame／National Recording Registry 這條後世認證線。**"
+ },
+ {
+  "key": "desc2:Mary Lou Williams|Zodiac Suite",
+  "artist": "Mary Lou Williams",
+  "album": "Zodiac Suite",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bf0ae0c9 的欄位：title《Zodiac Suite》、artist-credit「Mary Lou Williams」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（US 1975、US 1995）。",
+    "src": "https://musicbrainz.org/release-group/bf0ae0c9-7d4e-42ed-a782-da48f565daa4"
+   },
+   {
+    "f": "該 release-group 底下 1975 年的 US release 由 Folkways Records 發行、編號 **FTS 32844**（卡單記的是 FJ 2966）、載體 12\" Vinyl，12 軌，曲名依序為〈Aries〉〈Taurus〉〈Gemini〉〈Cancer〉〈Leo〉〈Virgo〉〈Libra〉〈Scorpio〉〈Saggitarius〉〈Capricornus〉〈Aquarius〉〈Pisces〉（MB 上這 12 軌都沒有登記曲長）。",
+    "src": "https://musicbrainz.org/release/52fbfb02-843a-4aa2-b23d-42ceb9d7f1c4"
+   },
+   {
+    "f": "同一個 release-group 底下另有 1995 年的 US release（barcode 093074081020）。",
+    "src": "https://musicbrainz.org/release-group/bf0ae0c9-7d4e-42ed-a782-da48f565daa4"
+   },
+   {
+    "f": "英文維基〈Zodiac Suite〉開頭：這是美國爵士鋼琴家、作曲家 Mary Lou Williams 寫的十二段組曲，**1945 年首演**；組曲把古典音樂的元素放進爵士裡，Williams 寫作時受現代主義影響。每一段都以一個星座、以及生於該星座的樂手或表演者為靈感。她 1942 年開始寫，1945 年完成。",
+    "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+   },
+   {
+    "f": "同一條目：她先以三重奏形式為 **Asch Records** 錄下這套組曲，之後有兩場重要演出——1945 年 12 月 31 日在 Town Hall 與 Edmond Hall 的室內爵士團合作，以及 1946 年 6 月在卡內基音樂廳與七十人編制的交響樂團合作（由 Norman Granz 接洽）。",
+    "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+   },
+   {
+    "f": "同一條目的 Recordings 段明列 Mary Lou Williams 的兩筆：《Zodiac Suite》（Asch Records, 1945）為原始發行、（Smithsonian/Folkways, 1995）為再發行。",
+    "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+   },
+   {
+    "f": "同一條目：組曲原本寫給小編制——六首給三重奏、五首給獨奏鋼琴、一首給鋼琴與貝斯二重奏；〈Aries〉在頭一分半內就從 boogie-woogie 走到不協和，全曲使用掛留和弦、全音音階與大小調對比。各段的題獻對象包括〈Aries〉給 Ben Webster 與 Billie Holiday、〈Taurus〉給 Duke Ellington、〈Libra〉給 Art Tatum、Dizzy Gillespie、Bud Powell、Thelonious Monk、Charlie Parker 與 John Coltrane。",
+    "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+   },
+   {
+    "f": "同一條目：Town Hall 那場的錄音帶在 Williams 去取時已不見，被懷疑遭丹麥爵士愛好者 Timme Rosenkrantz 竊走用於歐洲的盜版唱片；1946 年卡內基那場的錄音帶她請 Rosenkrantz 看守，結果同樣失蹤。2020 年，Asch 的那份錄音入選 Grammy Hall of Fame。",
+    "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 261233781：標題《Zodiac Suite》、掛名 Mary Lou Williams、releaseDate 1945-01-01、**17 軌**、notExplicit、copyright「℗ 1995 Smithsonian Folkways Recordings」；前十二軌依序是〈Aries〉到〈Pisces〉（曲長 1:45–3:41），第 13–17 軌是〈Aries〉〈Cancer〉〈Virgo〉〈Scorpio〉〈Aquarius〉五首重覆曲名。",
+    "src": "https://music.apple.com/us/album/261233781"
+   }
+  ],
+  "hookCandidates": [
+   "十二段各對一個星座，題獻名單裡有 Duke Ellington、Art Tatum 與 Billie Holiday",
+   "兩場音樂會的錄音帶都不見了，兩次都是同一個丹麥人被懷疑"
+  ],
+  "sound": "MB 的 Folkways 版列十二軌、依黃道十二宮排序，Apple 那份 1995 年的 Smithsonian Folkways 版把同樣的十二軌放在前面、再多出五首重覆曲名的錄音，前十二軌的曲長落在 1:45 到 3:41 之間。維基寫組曲原本寫給小編制：六首三重奏、五首獨奏鋼琴、一首鋼琴與貝斯二重奏。（本欄由 MB release 52fbfb02、Apple 261233781 的曲目表與維基的編制敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Aries",
+   "Libra",
+   "Taurus"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1975 與 MB release-group first-release-date 1975 一致（Folkways 再發行年）。**錄音／首演年是 1945**：英文維基寫組曲 1945 年首演，並在 Recordings 段明列「《Zodiac Suite》（Asch Records, 1945）為原始發行」。Apple 條目的 releaseDate 1945-01-01 對應的是這個原始年份、不是 Folkways 版的年份。**三十年的落差，不得互寫。** ⚠ **編號分歧**：卡單記 Folkways **FJ 2966**，MB 的 1975 US release 記的是 Folkways **FTS 32844**。兩個編號本層都找不到互相印證的來源，**行文不要寫編號**。",
+  "notes": "**鐵則（本批第 3 條）：1945（Asch 原始錄音／首演）與 1975（Folkways 再發行）不得互寫。** 另外 Apple 那筆是 **1995 年 Smithsonian Folkways** 的第三個年份，三個年份都不同，**行文最多只提其中兩個、而且必須各自說明是什麼年**。\n⚠ **卡單盤名沒有卷號問題，但版本層數多**：Asch 1945 原始版 →（維基）→ Folkways 1975（MB 記 FTS 32844）→ Smithsonian Folkways 1995（Apple 那筆）。**行文不得寫成「這一張」的單一物件**，也**不得寫死軌數**——MB 的 Folkways 版是 12 軌、Apple 的 1995 版是 17 軌（第 141 條的形狀）。\n**試聽（本層覆核，判定 ready 但要標明版本偏差）**：探測層 `us:12→1`、front `us`、collectionId **261233781**、17 軌、notExplicit、cleanedOnly false、yearDrift 30。本層以 `lookup?id=261233781&country=us&entity=song` 逐軌核對：**Apple 是 17 軌、MB 的 1975 Folkways release 是 12 軌**，⚠ **版本偏差成立**。但（a）Apple 的前十二軌曲名與曲序與 MB 逐項相同（第 1 軌兩邊都是〈Aries〉，第 12 軌兩邊都是〈Pisces〉），（b）Apple 的 copyright 是「℗ 1995 Smithsonian Folkways Recordings」，正對應 MB 同一個 release-group 底下 1995 那筆 US release（625caf71，barcode 093074081020），**同 RG、非別碟**。第 157 條要求的位置比對通過（第 1 軌相同），固定試聽不會取錯曲。\n**本層裁定：維持 ready / us / 261233781，但在卡上標明「這一筆對應的是 1995 年 Smithsonian Folkways 的十七軌版，不是 1975 年 Folkways 的十二軌版」。** 依下放判準第 2 條（可逆：改的是卡單值）直接定。⚠ **yearDrift 30 已解釋**：Apple 的 1945 是原始錄音年，不是建檔錯誤。\n⚠ **策展層兩處要留意**：（1）curatorWhy 寫「**是搖擺時代女性作曲家把爵士寫成長篇形式最早的例子之一**」——帶「之一」的軟主張，維基有可對應的來源（「Both Lawn and the Encyclopedia of African American Music view the suite as a breakthrough for women composers」），**可寫但必須保留「之一」，不得升級成「最早」**。（2）curatorWhy 說「同年在 Asch 錄了三重奏版、**也在紐約市政廳演過管弦版**」——**維基把兩場分開了**：Town Hall（1945-12-31）是 Edmond Hall 的**室內爵士團**，卡內基音樂廳（1946 年 6 月）才是**七十人交響樂團**。**「市政廳＋管弦」是把兩場混成一場，不得入文。**\n**互斥分派——本張獨占 Asch／Town Hall／卡內基這條 1940 年代演出史，以及錄音帶失竊那條線。** 同批另一張 Mary Lou Williams（《Zoning》）不得重述。\n**本張禁用**：Mary Records、Bob Cranshaw、Mickey Roker、Gary Giddins 的年度十大（都是《Zoning》的，見該卡）。"
+ },
+ {
+  "key": "desc2:Mary Lou Williams|Zoning",
+  "artist": "Mary Lou Williams",
+  "album": "Zoning",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ac5f2664 的欄位：title《Zoning》、artist-credit「Mary Lou Williams」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（US 1974、US 1995 barcode 093074081129）。",
+    "src": "https://musicbrainz.org/release-group/ac5f2664-c1f3-31ea-96bc-52566f650a3b"
+   },
+   {
+    "f": "該 release-group 底下 1974 年的 US release 在 MB 上沒有登記廠牌與編號、載體欄空白，13 軌：〈Syl-o-gism〉3:30、〈Olinga〉4:06、〈Medi II〉2:10、〈Gloria〉4:42、〈Intermission〉2:25、〈Zoning Fungus II〉6:54、〈Holy Ghost〉5:27、〈Medi I〉4:59、〈Rosa Mae〉4:40、〈Ghost of Love〉4:59、〈Praise the Lord〉6:40、〈Gloria〉6:38、〈Play It Momma〉4:22。",
+    "src": "https://musicbrainz.org/release/f8bdce21-8eee-4ab6-8552-7ad5ebe1659a"
+   },
+   {
+    "f": "英文維基〈Zoning (Mary Lou Williams album)〉開頭：這是 Mary Lou Williams 1974 年由 **Mary Records** 發行的錄音室專輯，由 Williams 自己編曲，以二重奏與三重奏形式為主，搭檔多為貝斯手 Bob Cranshaw 與鼓手 Mickey Roker。**1995 年 Smithsonian Folkways 以 CD 再發，曲目表不同、封面重做，並加入兩段先前未發表的錄音。**",
+    "src": "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)"
+   },
+   {
+    "f": "同一條目：本張 1974 年發行時評價一致良好，爵士樂評 Gary Giddins 在《Village Voice》專欄把它選進當年度十大專輯；他先前的評論寫 Williams「將近四十年來一直在為未來開門，《Zoning》——一份對她鋼琴演奏與寫作的細膩研究——也不例外」。",
+    "src": "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)"
+   },
+   {
+    "f": "同一條目引《Ebony》雜誌的 Phyl Garland 稱本張是「一張炸藥般的專輯」，並特別點名〈Zoning Fungus II〉裡「她先用無調性和聲，才落回穩定的 funky 基底」；Garland 稱 Williams 為「爵士第一夫人」。《Billboard》則把〈Medi I〉與〈Medi II〉列為 Best Cuts。",
+    "src": "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)"
+   },
+   {
+    "f": "同一條目的曲目表把 LP 與 CD 分開列：1974 年 LP 的 Side 1 是〈Intermission〉〈Holy Ghost〉〈Zoning Fungus II〉〈Ghost of Love〉〈Medi II〉〈Gloria〉，Side 2 是〈Rosa Mae〉〈Olinga〉〈Praise the Lord〉〈Play It Momma〉〈Medi I〉；1995 年 CD 版共 13 軌，以〈Syl-O-Gism〉開頭並註明該軌與第二首〈Gloria〉為 previously unreleased。",
+    "src": "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)"
+   },
+   {
+    "f": "同一條目的 Personnel 欄：Mary Lou Williams 鋼琴、編曲、製作；Zita Carno 鋼琴、Bob Cranshaw 貝斯、Milton Suggs 貝斯、Mickey Roker 鼓、Tony Waters 康加鼓，各人標明所屬軌次。〈Olinga〉的作曲者是 Dizzy Gillespie，〈Holy Ghost〉與〈Rosa Mae〉由 Larry Gales 參與作曲。",
+    "src": "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)"
+   },
+   {
+    "f": "英文維基〈Mary Lou Williams〉開頭：Williams（1910 年 5 月 8 日–1981 年 5 月 28 日）是美國爵士鋼琴家、編曲家與作曲家，寫過數百首作品與編曲、錄過超過一百張唱片；她為 Duke Ellington 與 Benny Goodman 寫作與編曲，也是 Thelonious Monk、Charlie Parker、Miles Davis、Tadd Dameron、Bud Powell 與 Dizzy Gillespie 的朋友、導師與老師。她 1954 年改宗天主教，此後暫別音樂、回歸後作品性質也隨之轉變。",
+    "src": "https://en.wikipedia.org/wiki/Mary_Lou_Williams"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 261235738：標題《Zoning》、掛名 Mary Lou Williams、releaseDate 1974-01-01、13 軌、notExplicit、copyright「℗ 1995 Smithsonian Folkways Recordings」；十三軌的曲名與曲序與 MB 那筆 1974 release 逐項相同，曲長也逐項相同（第 1 軌 Apple 寫成〈Syl-O-G**m〉，是 Apple 自己的字元遮蔽）。",
+    "src": "https://music.apple.com/us/album/261235738"
+   }
+  ],
+  "hookCandidates": [
+   "唱片是她自己的廠牌發的，二十一年後的 CD 版換了曲序、換了封面、多了兩段沒發表過的錄音",
+   "同一張碟上有兩首〈Gloria〉，一首四分多鐘、一首六分多鐘"
+  ],
+  "sound": "MB 與 Apple 那份十三軌的曲目表上有兩首〈Gloria〉（4:42 與 6:38）與兩首〈Medi〉（II 是 2:10、I 是 4:59），最長的是 6:54 的〈Zoning Fungus II〉。維基的 Personnel 欄記這張以二重奏與三重奏為主，康加鼓只出現在部分軌。《Ebony》的 Phyl Garland 寫〈Zoning Fungus II〉是「先用無調性和聲，才落回穩定的 funky 基底」。（本欄由 MB release f8bdce21 的曲長、維基 Personnel 欄與 Garland 的評論歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Zoning Fungus II",
+   "Medi I",
+   "Play It Momma"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1974 與 MB release-group first-release-date 1974 一致，維基也寫「released in 1974 by Mary Records」。**本張沒有錄音年與出版年的落差問題**（維基未給錄音年，也未暗示兩者不同）。⚠ 但**版本年份有兩個**：1974 年 Mary Records 的 LP 與 1995 年 Smithsonian Folkways 的 CD，後者是 Apple 那筆的來源。",
+  "notes": "**不得從別張搬「錄音年≠出版年」的句型過來**：本張沒有這個落差的來源。\n⚠ **軌數與曲序必須指明版本（第 141 條的形狀）**：維基把 1974 年 LP（Side 1 六軌＋Side 2 五軌，共 11 軌）與 1995 年 CD（13 軌）分開列，兩者**曲序不同、曲目也不同**（CD 多了〈Syl-O-Gism〉與第二首〈Gloria〉，維基註明兩者 previously unreleased）。**MB 那筆掛 1974 年的 release 登記的其實是 13 軌的 CD 曲目表**——這是 MB 的建檔問題，**本層不修 MB，但行文不得引用「1974 年那張有十三軌」**。要提軌數就得寫成「1995 年的 CD 版有十三軌」。\n⚠ **廠牌**：維基明寫 Mary Records、卡單也寫 Mary Records（M 103），但 **MB 的 1974 release 沒有登記任何廠牌**。以維基為準可寫 Mary Records，**編號 M 103 只有卡單一個來源，不要寫編號**。\n⚠ **擋下策展層兩處無來源主張**：（1）curatorWhy 寫本張「是她晚期目錄裡**最常被後來的鋼琴手（如 Geri Allen）指名的一張**」——沒有直述來源，**不得入文**（維基的 Geri Allen 只出現在《Zodiac Suite》條目、且是《Zodiac Suite: Revisited》那張，與本卡無關）。（2）curatorWhy 寫「這一張把她三十年前寫的和聲語言放進當時的節奏底下」——**這是把《Zodiac Suite》的年代硬接到本張上的推論，沒有來源，不得入文**。有源的替代是 AllMusic 的 Scott Yanow 說她「聽起來年輕了四十歲，顯出 McCoy Tyner 的影響，某些地方帶點自由爵士的意思」。\n**試聽（本層覆核通過）**：探測層 `us:1→1`、front `us`、collectionId **261235738**、13 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=261235738&country=us&entity=song` 逐軌核對 MB 的 f8bdce21：**十三軌曲名、曲序、曲長逐項相同**（第 1 軌兩邊都是〈Syl-o-gism〉、第 13 軌兩邊都是〈Play It Momma〉）。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**無異議。** ⚠ Apple 把第 1 軌曲名顯示成〈Syl-O-G**m〉（Apple 端的字元遮蔽），**卡片與行文一律用 MB 的正寫〈Syl-o-gism〉**。⚠ 這一筆 Apple 條目的 copyright 是「℗ 1995 Smithsonian Folkways」——**對應的是 CD 版**，不是 1974 年 Mary Records 的原盤。\n**互斥分派——本張獨占 Mary Records 自營廠牌、Gary Giddins 年度十大、《Ebony》的評論與 Bob Cranshaw／Mickey Roker 這條七〇年代編制線。** 同批另一張 Mary Lou Williams（《Zodiac Suite》）不得重述。\n**本張禁用**：Asch、Town Hall、卡內基音樂廳、十二星座、錄音帶失竊（都是《Zodiac Suite》的，見該卡）。"
+ },
+ {
+  "key": "desc2:Helen Merrill|Helen Merrill",
+  "artist": "Helen Merrill",
+  "album": "Helen Merrill",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3ec00147 的欄位：title《Helen Merrill》、artist-credit「Helen Merrill」、first-release-date 1955、primary-type Album、secondary-types 空、轄下 5 個 release（US 1955、JP 1989-10-05、US 2022-12-30，另兩筆日期空白的 JP）。",
+    "src": "https://musicbrainz.org/release-group/3ec00147-068d-3ae2-82cf-444f43c60c92"
+   },
+   {
+    "f": "該 release-group 底下 1955 年的 US release 由 EmArcy 發行、編號 MG 36006、載體 12\" Vinyl、Cardboard/Paper Sleeve，7 軌：〈Don't Explain〉5:14、〈You'd Be So Nice to Come Home To〉4:20、〈What's New〉5:01、〈Falling in Love With Love〉3:55、〈Yesterdays〉6:00、〈Born to Be Blue〉5:15、〈'S Wonderful〉3:14。",
+    "src": "https://musicbrainz.org/release/fb68391f-16e0-4d76-94cd-d63fb6e83a0e"
+   },
+   {
+    "f": "英文維基〈Helen Merrill (album)〉開頭：這是歌手 Helen Merrill 的**首張錄音室專輯**，由小號手 Clifford Brown 伴奏、Quincy Jones 編曲。Brown 在此**幾天前**（1954 年 12 月 16 日與 18 日）才與 Sarah Vaughan 錄過一張性質相近的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Helen_Merrill_(album)"
+   },
+   {
+    "f": "同一條目：Brown 於 1956 年死於車禍，也就是這張合作專輯發行的隔年；1995 年 Merrill 錄了一張向 Brown 致敬的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Helen_Merrill_(album)"
+   },
+   {
+    "f": "同一條目的 Personnel 欄：Helen Merrill 人聲、Clifford Brown 小號、Danny Bank 低音單簧管／長笛／上低音薩克斯風、Jimmy Jones 鋼琴、Barry Galbraith 吉他、Milt Hinton 低音提琴（第 1、2、6、7 軌）、Osie Johnson 鼓（第 1、2、6、7 軌）、Oscar Pettiford 大提琴與低音提琴（第 3、4、5 軌）、Bobby Donaldson 鼓（第 3、4、5 軌）、Quincy Jones 編曲與指揮。",
+    "src": "https://en.wikipedia.org/wiki/Helen_Merrill_(album)"
+   },
+   {
+    "f": "同一條目引 AllMusic 的 Scott Yanow：「音樂本質上是直來直往的 bop，但這七首標準曲……因為 Merrill（狀態極佳）與 Brown 的在場而被抬高。」David Rickert 在評 2007 年 Lone Hill Jazz 重發時單獨點名〈'S Wonderful〉，稱它是「我這幾年聽過最好的 Gershwin 版本之一」。",
+    "src": "https://en.wikipedia.org/wiki/Helen_Merrill_(album)"
+   },
+   {
+    "f": "同一條目的曲目表附作曲者：〈Don't Explain〉是 Arthur Herzog Jr. 與 **Billie Holiday** 的曲子、〈You'd Be So Nice to Come Home To〉是 Cole Porter、〈Yesterdays〉是 Otto Harbach 與 Jerome Kern、〈'S Wonderful〉是 George 與 Ira Gershwin。",
+    "src": "https://en.wikipedia.org/wiki/Helen_Merrill_(album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1434912013：標題拼成《**Helen Merill**》（少一個 r）、掛名 Helen Merrill、releaseDate 1955-01-01、7 軌、notExplicit、copyright「A Verve Label Group release; ℗ 1990 UMG Recordings, Inc.」；七軌曲名與曲序與 MB 的 EmArcy MG 36006 逐項相同，曲長差在 0–2 秒內。",
+    "src": "https://music.apple.com/us/album/1434912013"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌是 Billie Holiday 的曲子，編曲者當時還沒滿二十二歲",
+   "同一位小號手幾天前才替另一位歌手錄過一張，一年多後死於車禍"
+  ],
+  "sound": "EmArcy 原盤七軌，MB 的曲長從 3:14 的〈'S Wonderful〉到 6:00 的〈Yesterdays〉。維基的 Personnel 欄顯示節奏組在碟中換過人：第 1、2、6、7 軌是 Milt Hinton 與 Osie Johnson，第 3、4、5 軌換成 Oscar Pettiford 與 Bobby Donaldson。AllMusic 的 Scott Yanow 說這「本質上是直來直往的 bop」。（本欄由 MB release fb68391f 的曲長與維基 Personnel／評論歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Don't Explain",
+   "'S Wonderful",
+   "You'd Be So Nice to Come Home To"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1955 與 MB release-group first-release-date 1955 一致（EmArcy MG 36006）。**錄音年是 1954**：英文維基寫 Clifford Brown 在此「幾天前」的 1954 年 12 月 16、18 日錄了 Sarah Vaughan 那張，也就是本張的場次緊接在 1954 年 12 月之後（策展層 curatorWhy 亦記「1954 年 12 月的首張專輯」）。⚠ **維基沒有直接寫出本張的錄音日期**，只寫了 Sarah Vaughan 那張的日期與「a few days previously」；**行文可以寫「1954 年 12 月錄的」，但不得寫出具體日期**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1954（12 月）與出版年 1955 不得互寫。**\n✅ **策展層的時序主張這一次站得住**：curatorWhy 說「這一張是她 1954 年 12 月的**首張專輯**」——英文維基開頭直述「the **debut studio album** by vocalist Helen Merrill」。**可寫。**（本組其他卡的「首張」主張多數擋掉了，這一張是例外，不要一併連坐。）\n⚠ **擋下策展層一處軟主張的措辭**：curatorWhy 寫 Brown「隔年就車禍身亡，這是他**為數不多的人聲伴奏錄音之一**」——維基只提到 Brown 在幾天前也替 Sarah Vaughan 錄過一張性質相近的專輯，**沒有「為數不多」的計數來源**。**「為數不多」不得寫**；可寫的是「同一位小號手幾天前才替 Sarah Vaughan 錄過一張性質相近的」。Brown 1956 年車禍身亡維基有寫，可用。\n⚠ **自我同名盤（selfTitled）**：MB 的 RG 標題與 artist-credit 都是「Helen Merrill」，Apple 的標題**拼錯成《Helen Merill》**（少一個 r）。**行文一律用正確拼法《Helen Merrill》，Apple 的錯拼只寫進備註、不入文。**\n**試聽（本層覆核通過，並解掉策展層預警的三胞胎）**：探測層 `us:12→1`、front `us`、collectionId **1434912013**、7 軌、notExplicit、cleanedOnly false。策展層 curatorRisk 指出 Apple 有三筆 1955 年的 Merrill 條目（1434912013 七軌、1434909069《Helen Merrill With Clifford Brown & Gil Evans》十五軌、1443786386《Helen Merrill With Strings》十二軌），只有第一筆軌數對得上 EmArcy MG 36006。本層以 `lookup?id=1434912013&country=us&entity=song` 逐軌核對 MB 的 fb68391f：**七軌曲名、曲序逐項相同**（第 1 軌兩邊都是〈Don't Explain〉、第 7 軌兩邊都是〈'S Wonderful〉），曲長差 0–2 秒。**探測層選的這一筆是對的，維持 ready / us / 1434912013。** ⚠ **鎖 collectionId，不要用字串比對**——Apple 的標題錯拼會讓比對落空、也可能誤命中另外兩筆十五軌／十二軌的碟。\n**互斥分派——本張獨占 Clifford Brown、Quincy Jones 編曲與 EmArcy 這條線。**\n**本張禁用**：任何跨到 Merrill 池中另一張《The Nearness of You》的比較。"
+ },
+ {
+  "key": "desc2:Jimmy Rushing|The Jazz Odyssey of James Rushing Esq.",
+  "artist": "Jimmy Rushing",
+  "album": "The Jazz Odyssey of James Rushing Esq.",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1b3c217e 的欄位：title《The Jazz Odyssey Of James Rushing Esq.》、artist-credit「Jimmy Rushing」、first-release-date 1957、primary-type Album、secondary-types 空、**轄下只有 1 個 release**。",
+    "src": "https://musicbrainz.org/release-group/1b3c217e-7d80-476b-8366-33279367abc6"
+   },
+   {
+    "f": "唯一那筆 release 是 1957 年的 US 版、由 Columbia 發行、編號 CL 963、載體 12\" Vinyl，12 軌：〈New Orleans〉3:24、〈Tricks Ain't Walkin' No More〉2:53、〈Baby Won't You Please Come Home〉3:35、〈Doctor Blues〉3:45、〈Careless Love〉3:29、〈Rosetta〉2:47、〈Piney Brown Blues〉3:33、〈'Tain't Nobody's Biz-ness If I Do〉3:22、〈I'm Gonna Move to the Outskirts of Town〉2:55、〈Lullaby of Broadway〉3:24、〈Old Fashioned Love〉2:37、〈Some of These Days〉4:48。",
+    "src": "https://musicbrainz.org/release/1599506f-a475-408c-9902-f26209ef224a"
+   },
+   {
+    "f": "英文維基〈Jimmy Rushing〉的 Discography 段把本張列為「**1956**: The Jazz Odyssey of James Rushing Esq. (Columbia, **1957**) with **Buck Clayton**」——錄音年與發行年在同一行分開標示。",
+    "src": "https://en.wikipedia.org/wiki/Jimmy_Rushing"
+   },
+   {
+    "f": "同一條目開頭：James Andrew Rushing（1901 年 8 月 26 日–1972 年 6 月 8 日）是來自奧克拉荷馬市的美國歌手與鋼琴家，以擔任 **Count Basie Orchestra 1935 至 1948 年的主唱**最為人知；他被稱作「Mr. Five by Five」，1942 年有一首同名流行曲以他為題。",
+    "src": "https://en.wikipedia.org/wiki/Jimmy_Rushing"
+   },
+   {
+    "f": "同一條目：Rushing 1927 年加入 Walter Page 的 Blue Devils、1929 年進 Bennie Moten 的樂團，Moten 1935 年去世後轉入 Count Basie 樂團，一待十三年；Basie 說 Rushing 身為藍調歌手「從沒有過對手」，不過 Rushing「其實把自己當成一個唱抒情曲的人」。",
+    "src": "https://en.wikipedia.org/wiki/Jimmy_Rushing"
+   },
+   {
+    "f": "同一條目的 Critical assessment 段：《紐約客》樂評 Whitney Balliett 寫 Rushing「柔韌豐厚的嗓音與優雅的咬字，有一種奇特的效果——讓典型粗野的藍調歌詞聽起來像 Noël Coward 寫的歌」；Nat Hentoff 把他列為「最偉大的藍調歌手」之一，並認為節奏藍調「根源就在 Jimmy Rushing 的藍調吼唱」。",
+    "src": "https://en.wikipedia.org/wiki/Jimmy_Rushing"
+   },
+   {
+    "f": "同一條目：1950 年 Basie 樂團解散後 Rushing 短暫退休，之後自組樂團；1957 年他在電視特別節目《Sound of Jazz》裡唱〈I Left My Baby〉，由多位前 Basie 樂團同事伴奏；1958 年他也在 Art Kane 為《Esquire》拍的那張後來成為紀錄片《A Great Day in Harlem》主題的合照裡。",
+    "src": "https://en.wikipedia.org/wiki/Jimmy_Rushing"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 306321094：標題《The Jazz Odyssey of James Rushing Esq.》、掛名 Jimmy Rushing、releaseDate **1957-05-30**、12 軌、notExplicit、copyright「℗ 2009 Marathon Media International Ltd」；十二軌的曲名與 MB 的 Columbia CL 963 相同，**但第 4 軌起曲序不同**（Apple 為 4〈Piney Brown Blues〉5〈Tain't Nobody's Bizz-ness If I Do〉6〈I'm Gonna Move to the Outskirts of Town〉7〈Careless Love〉8〈Doctor Blues〉9〈Rosetta〉）。",
+    "src": "https://music.apple.com/gb/album/306321094"
+   }
+  ],
+  "hookCandidates": [
+   "他在 Count Basie 樂團前面站了十三年，這是離開之後自己領銜的一張",
+   "《紐約客》的樂評說他讓粗野的藍調歌詞聽起來像 Noël Coward 寫的歌"
+  ],
+  "sound": "Columbia CL 963 收十二軌，MB 的曲長從 2:37 的〈Old Fashioned Love〉到 4:48 的〈Some of These Days〉，其餘多半落在三分多鐘。曲目一半是藍調（〈Doctor Blues〉〈Piney Brown Blues〉〈Careless Love〉），一半是百老匯與流行標準曲（〈Lullaby of Broadway〉〈Some of These Days〉）。Whitney Balliett 寫他的嗓音「柔韌豐厚」、咬字「優雅」。（本欄由 MB release 1599506f 的曲目表與曲長、以及維基引 Balliett 的評語歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Piney Brown Blues",
+   "Some of These Days",
+   "New Orleans"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1957 與 MB release-group first-release-date 1957 一致（Columbia CL 963）。**錄音年是 1956**：英文維基〈Jimmy Rushing〉的 Discography 段把本張寫成「1956: The Jazz Odyssey of James Rushing Esq. (Columbia, 1957)」，行首年份是錄音年、括號裡是發行年。Apple 的 releaseDate 1957-05-30 與 MB 的 1957 同年，可視為發行日的細化，**但那是 2009 年 Marathon Media 重發條目上的日期，不得當成 Columbia 原盤的確切發行日**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1956 與出版年 1957 不得互寫。**\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫本張「是搖擺與都市藍調交界**最常被引用的一張**」——沒有直述來源，**不得入文**。有源的替代是維基引 Nat Hentoff 說節奏藍調「根源就在 Jimmy Rushing 的藍調吼唱」，以及 Whitney Balliett 的那句評語。\n⚠ **Buck Clayton 的角色要照來源寫**：維基 Discography 只寫「with Buck Clayton」，**沒有寫「用 Buck Clayton 的樂團」或任何編制細節**；curatorWhy 的「用 Buck Clayton 的樂團把堪薩斯城藍調吼唱那一支從大樂團編制裡拆出來單獨呈現」**是推論，不得入文**。可寫的只有「與 Buck Clayton 合作」。\n**MB 只有一筆 release**：這張在 MB 上沒有再發條目，**行文不得提任何再發版本**。\n**試聽（本層覆核通過，但要記一處曲序偏差）**：探測層 `us:0→0` → `gb:2→1`，front `gb`、collectionId **306321094**、12 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=306321094&country=gb&entity=song` 逐軌核對 MB 的 CL 963：**十二軌是同一組曲名、軌數相同，第 1–3 軌曲名與曲序完全相同**（第 1 軌兩邊都是〈New Orleans〉）；⚠ **第 4 軌起曲序被重排**（Apple 把〈Piney Brown Blues〉提到第 4，MB 那裡是〈Doctor Blues〉）。第 157 條要求的位置比對以第 1 軌為準已通過，固定試聽不會取錯曲。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。\n**本層裁定：維持 ready / gb / 306321094，並在卡上記「Apple 這一筆是 2009 年 Marathon Media 的授權重發、曲序與 Columbia 原盤自第 4 軌起不同」。** 依下放判準第 2 條（可逆）直接定。⚠ **行文不得寫「第幾軌是什麼」的位置式敘述**（兩個版本序位不同，第 157 條的形狀）。\n**互斥分派——本張獨占 Count Basie 樂團主唱那十三年、「Mr. Five by Five」與 Balliett／Hentoff 的評語。**"
+ },
+ {
+  "key": "desc2:Roy Eldridge & Dizzy Gillespie|Roy & Diz",
+  "artist": "Roy Eldridge & Dizzy Gillespie",
+  "album": "Roy & Diz",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8a5a5fcf 的欄位：title《Roy & Diz》、**artist-credit 原文是「Dizzy Gillespie • Roy Eldridge」（Gillespie 在前）**、first-release-date 1955、primary-type Album、secondary-types 空、轄下 4 個 release（FR 1955、US 1955、GB 1956-05、XE 2011）。",
+    "src": "https://musicbrainz.org/release-group/8a5a5fcf-9b1f-4c1a-a5d1-56bddae9b242"
+   },
+   {
+    "f": "該 release-group 底下 1955 年的 US release 標題寫成《Roy and Diz》（and 不是 &）、由 Clef Records 發行、編號 MGC-641、載體 12\" Vinyl，**只有 5 軌**：〈I've Found A New Baby〉9:15、〈I Can't Get Started〉10:59、〈Trumpet Blues〉7:55、〈Alga Bueno〉6:12、〈Pretty Eyed Baby〉5:34。",
+    "src": "https://musicbrainz.org/release/9cbeb151-8c8e-4d6c-a4cd-2213a5e50c9e"
+   },
+   {
+    "f": "英文維基〈Roy and Diz〉開頭：這是小號手 Roy Eldridge 與 Dizzy Gillespie 的專輯，**錄於 1954 年**，原本在 Clef 廠牌**分成兩輯發行**；同一批場次的選曲也出過《Trumpet Battle》與《The Trumpet Kings》兩張。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目在曲目表之後明列四張碟各自的曲序：**《Roy & Diz》是第 6、8、3、2、7 首**（〈I've Found a New Baby〉〈I Can't Get Started〉〈Trumpet Blues〉〈Algo Bueno〉〈Pretty Eyed Baby〉）；《Roy & Diz #2》是第 1、4、9、5 首（〈Sometimes I'm Happy〉〈Ballad Medley〉〈Limehouse Blues〉〈Blue Moon〉）；《Trumpet Battle》是 6、8、1、4；《The Trumpet Kings》是 3、2、7、9、5。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目的 Personnel 欄：Roy Eldridge 與 Dizzy Gillespie 小號與人聲、Oscar Peterson 鋼琴、Herb Ellis 吉他、Ray Brown 貝斯、Louis Bellson 鼓。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目引 1955 年《Billboard》對第二輯的評論：「第一套 Roy–Diz 雖然引人，卻讓許多人覺得比較像一場『cutting contest』而不是合作。第二套裡競爭的成分並未消失，但在這裡它變成了互相的刺激。」AllMusic 給三顆星。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目的曲目表附作曲者：〈Algo Bueno (Woody 'n' You)〉是 Dizzy Gillespie 寫的、〈Trumpet Blues〉是 Roy Eldridge 與 Gillespie 合寫、〈Pretty Eyed Baby〉是 Mary Lou Williams、Snub Mosley 與 William Luther Johnson 合寫。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1443173406：標題《Roy and Diz》、掛名「Roy Eldridge & Dizzy Gillespie」、releaseDate 1954-01-01、**9 軌**、notExplicit、copyright「℗ 1994 Verve Label Group」；九軌依序為〈Sometimes I'm Happy〉〈Algo Bueno (Woody'n You)〉〈Trumpet Blues〉〈Ballad Medley〉〈Blue Moon〉〈I've Found a New Baby〉〈Pretty Eyed Baby〉〈I Can't Get Started〉〈Limehouse Blues〉。",
+    "src": "https://music.apple.com/us/album/1443173406"
+   }
+  ],
+  "hookCandidates": [
+   "同一批錄音被切成四張碟賣過：兩輯正編，外加《Trumpet Battle》與《The Trumpet Kings》",
+   "《Billboard》說第一套聽起來像一場對砍，第二套才變成互相刺激"
+  ],
+  "sound": "Clef 原盤五軌，MB 的曲長從 5:34 的〈Pretty Eyed Baby〉到 10:59 的〈I Can't Get Started〉——每一軌都在五分半以上，兩支小號各有大段。維基的 Personnel 欄記節奏組是 Oscar Peterson、Herb Ellis、Ray Brown 與 Louis Bellson。（本欄由 MB release 9cbeb151 的曲長與維基 Personnel 欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "I Can't Get Started",
+   "Trumpet Blues",
+   "I've Found a New Baby"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1955 與 MB release-group first-release-date 1955 一致（Clef MGC-641）。**錄音年是 1954**：英文維基〈Roy and Diz〉開頭寫「recorded in 1954」，Apple 條目的 releaseDate 1954-01-01 也是錄音年（策展層 curatorRisk 已自記這一點）。**不得互寫。** ⚠ 另有一處 MB 內部落差：GB release 記 1956-05，比 US／FR 的 1955 晚一年。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1954 與出版年 1955 不得互寫。**\n⚠ **掛名順序分歧（策展層已標，本層確認並補上 MB 原文）**：**MB 的 artist-credit 原文是「Dizzy Gillespie • Roy Eldridge」，Gillespie 在前**；Apple 的掛名是「Roy Eldridge & Dizzy Gillespie」，Roy 在前。卡片取 Apple 那一種（見 rulings.md 第 3 條）。**行文不得寫「誰領銜」「誰的名字排在前面」**——兩個來源相反。\n⚠ **盤名兩種寫法**：MB 的 RG 標題用「&」、MB 的三筆 1950 年代 release 與 Apple 都用「and」。維基條目名是〈Roy and Diz〉。都是同一張。\n⚠ **這是第 168 條的卷號盤（本張最重要的一條）**：維基明講原本**分成兩輯**發行，《Roy & Diz》與《Roy & Diz #2》是**不同的兩張碟**。**行文不得把第二輯的曲目寫進來**，尤其〈Sometimes I'm Happy〉〈Ballad Medley〉〈Blue Moon〉〈Limehouse Blues〉這四首**屬於 #2、不是本盤**。同一批場次還被切成《Trumpet Battle》與《The Trumpet Kings》兩張，這件事本身可寫（維基有列），但**不得寫成本盤包含它們**。\n⚠ **試聽（本層推翻探測層的 unavailable，改判 ready，但附鎖曲要求）**：探測層十個店面 `us:0→0 gb:0→0 fr:1→0 …`，判 unavailable。依第 166 條改打藝人頁 `lookup?id=119743&entity=album&limit=200&country=us`（Roy Eldridge），命中 **collectionId 1443173406**《Roy and Diz》、9 軌、℗ 1994 Verve。本層以 `lookup?id=1443173406&country=us&entity=song` 逐軌核對：**Clef 原盤那 5 軌全部在裡面，但被打散在第 2、3、6、7、8 位，第 1 軌是《Roy & Diz #2》的〈Sometimes I'm Happy〉**。也就是說**這一筆 Apple 條目是把兩輯合成一張的 1994 年 CD，不是本盤的數位版**。\n**本層裁定：試聽改判 ready，front `us`、collectionId **1443173406**，但固定試聽**必須鎖第 6 軌〈I've Found a New Baby〉**（Clef 原盤的第 1 軌），不得取預設的第 1 軌〈Sometimes I'm Happy〉——那首不在本盤上（第 157 條的形狀）。** 依下放判準第 2 條（可逆：改的是卡單值）與第 3 條（不決定就沒有試聽）直接定。⚠ **若管線不支援鎖軌，本張寧可退回 unavailable，也不得用〈Sometimes I'm Happy〉當固定試聽。**\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫這是「Norman Granz 安排他與 Gillespie 對吹的錄音……是搖擺到咆勃這條接縫**最直接的一份文獻**」——「最直接的一份文獻」無來源，**不得入文**；**「Norman Granz 安排」在維基本條目裡也沒有直述**（維基只說原本在 Clef 分兩輯發行），**同樣不得寫**。有源的替代是《Billboard》那句「cutting contest／互相刺激」。\n**互斥分派——本張獨占「兩支小號對吹」「同一批錄音被切成四張碟」與 Oscar Peterson 節奏組這條線。**"
+ },
+ {
+  "key": "desc2:Bunk Johnson|Bunk Johnson and His Superior Jazz Band",
+  "artist": "Bunk Johnson",
+  "album": "Bunk Johnson and His Superior Jazz Band",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 722df9b1 的欄位：title《Bunk Johnson and His Superior Jazz Band》、artist-credit「Bunk Johnson」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release（US 1962、US 1991）。",
+    "src": "https://musicbrainz.org/release-group/722df9b1-2ae3-41bb-86da-58687306bb44"
+   },
+   {
+    "f": "該 release-group 底下 1962 年的 US release 由 Good Time Jazz 發行、編號 **M12048**（卡單記 L-12048）、載體 12\" Vinyl，10 軌：〈Panama〉2:58、〈Down by the Riverside〉3:01、〈Storyville Blues〉3:12、〈Ballin' the Jack〉3:08、〈Make Me a Pallet on the Floor〉3:26、〈Weary Blues〉2:46、〈Moose March〉3:26、〈Bunk's Blues〉2:46、〈Yes, Lord I'm Crippled〉2:51、**〈Bunk Johnson Talking Records〉9:27**。",
+    "src": "https://musicbrainz.org/release/58d85a5d-16eb-4210-9e7b-066616e9b4a2"
+   },
+   {
+    "f": "英文維基〈Bunk Johnson〉開頭：Willie Gary「Bunk」Johnson（1889 年 12 月 27 日–1949 年 7 月 7 日）是來自紐奧良的美國爵士小號手。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目：**1931 年他在路易斯安那州 Rayne 的一場舞會上因為打架掉了小號與門牙，演奏因此中斷**；此後他做粗工，偶爾教音樂。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目的 Career revival 段：1938 與 1939 年，早期爵士史著作《Jazzmen》的作者群訪問了 Louis Armstrong、Sidney Bechet、Clarence Williams 等人，這些人都盛讚 Johnson 當年在紐奧良的表現。作者群找到 Johnson 的地址、與他通了幾封信。Johnson 說只要有新牙與新小號他就能再吹。作家與樂手們發起募款，**由 Bechet 當牙醫的哥哥 Leonard 替他裝了一副假牙**，並送他一支新小號。**他 1942 年為 Jazz Man Records 錄下了他的第一批唱片。**",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目：「這批最早的錄音把 Johnson（連同單簧管手 George Lewis）推進了公眾視野。」Johnson 與他的樂團接著在紐奧良、舊金山、波士頓與紐約演出，錄了更多唱片。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目的 Selected discography 段列出 1942 年 6 月那批 Jazz Man 單曲：〈Down By The River / Panama〉（Jazz Man 8）、〈Weary Blues / Moose March〉（Jazz Man 9）、〈Storyville Blues / Bunk's Blues〉（Jazz Man 10），三筆都註明「Recorded in New Orleans, 1942」。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目對他 1940 年代狀態的描述：「他最好的日子裡演奏充滿想像、細膩而優美，同時也說明了他為什麼沒有更早成名——他難以預測、脾氣大、帶著被動攻擊的性格，而且愛喝酒喝到影響演出。」",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1532292817：標題《Bunk Johnson And His Superior Jazz Band》、掛名 Bunk Johnson、releaseDate **1957-01-01**、10 軌、notExplicit、copyright「℗ 1957 Good Time Jazz, Distributed by Concord.」；十軌曲名、曲序與 MB 的 M12048 逐項相同，曲長差在 0–4 秒內，末軌同樣是 9:27 的〈Bunk Johnson Talking Records〉。",
+    "src": "https://music.apple.com/us/album/1532292817"
+   }
+  ],
+  "hookCandidates": [
+   "他 1931 年在一場打架裡掉了小號與門牙，十一年後才靠一副募款買來的假牙重新錄音",
+   "最後一軌不是音樂，是九分二十七秒的說話"
+  ],
+  "sound": "Good Time Jazz 這一輯十軌，前九軌的曲長全部落在 2:46 到 3:26 之間——那是 78 轉單面的長度；末軌〈Bunk Johnson Talking Records〉9:27，是他自己說話。維基列出的 1942 年 Jazz Man 單曲曲名（〈Panama〉〈Weary Blues〉〈Moose March〉〈Storyville Blues〉〈Bunk's Blues〉）在這份曲目表上都找得到。（本欄由 MB release 58d85a5d 的曲目表與曲長、以及維基 Selected discography 段歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Panama",
+   "Storyville Blues",
+   "Bunk Johnson Talking Records"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1962 與 MB release-group first-release-date 1962 一致（Good Time Jazz）。**錄音年是 1942**：英文維基寫他 1942 年為 Jazz Man Records 錄下第一批唱片，並在 Selected discography 段把〈Panama〉〈Weary Blues〉〈Moose March〉〈Storyville Blues〉〈Bunk's Blues〉五個曲名逐一標「Recorded in New Orleans, 1942」——這五首都在本輯的曲目表上。**二十年落差，不得互寫。** ⚠ **Apple 記 1957**：探測層抓到的 collectionId 1532292817 標 releaseDate 1957-01-01、copyright 也寫 ℗ 1957 Good Time Jazz，**與 MB 的 1962 差五年**（探測層記 yearDrift 5）。**三個年份（1942 錄音／1957 Apple／1962 MB）並存，行文最多寫「1942 年錄的」與「後來由 Good Time Jazz 成套發行」，不得寫死發行年。** ⚠ **編號兩說**：卡單 L-12048、MB 記 M12048，**不要寫編號**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1942 與出版年（MB 1962／Apple 1957）不得互寫，而且出版年本身兩說並存、不得寫死。**\n⚠ **擋下策展層一處因果主張**：curatorWhy 寫 1942 年那批錄音「**直接催生了** 1940 年代的紐奧良復興運動，**也是 Kid Ory、George Lewis 那一波復出的起點**」——維基只寫「These first recordings propelled Johnson (along with clarinetist George Lewis) into public attention」（把 Johnson 與 George Lewis 推進公眾視野）。**「直接催生復興運動」與「Kid Ory 復出的起點」都超出來源，不得入文。** 可寫的是「這批錄音把他與單簧管手 George Lewis 推進了公眾視野」。⚠ 尤其 **Kid Ory 那一句絕對不能寫**——同批就有 Kid Ory 的卡，維基〈Kid Ory〉自己的敘述是他 1943 年才復出、1944 年起靠 Orson Welles 的廣播節目帶起復興，與 Bunk Johnson 沒有因果關係的來源。\n✅ **策展層另外兩處查得住，可寫**：（1）「1930 年代已在路易斯安那的稻田當工人」——維基寫他 1920 年代初定居 New Iberia、在碾米廠（rice mills）與公立學校系統工作，**要照來源寫「碾米廠」，不要寫「稻田」**；（2）「1942 年被一群爵士研究者找出來裝了假牙重新錄音」——維基有 Jazzmen 作者群、募款與 Bechet 哥哥 Leonard 裝假牙的完整敘述，**可寫，而且假牙那條線只有本張能用**。\n**掛名**：MB 的 artist-credit 原文是「Bunk Johnson」（不是 Superior Jazz Band、不是 Bunk Johnson's Band），與卡片一致。\n**試聽（本層覆核通過）**：探測層 `us:1→1`、front `us`、collectionId **1532292817**、10 軌、notExplicit、cleanedOnly false、yearDrift 5。本層以 `lookup?id=1532292817&country=us&entity=song` 逐軌核對 MB 的 M12048：**十軌曲名、曲序逐項相同**（第 1 軌兩邊都是〈Panama〉、第 10 軌兩邊都是 9:27 的〈Bunk Johnson Talking Records〉），曲長差 0–4 秒。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**無異議。** yearDrift 5 已在 yearVerified 說明，不是配錯碟。\n**互斥分派——本張獨占「掉牙／假牙／Jazzmen 作者群把他找出來」這條復出線與 Good Time Jazz。**\n**本張禁用**：Kid Ory 的任何事（同批有 Kid Ory 的卡）、Orson Welles 的廣播節目、Crescent 廠牌。"
+ },
+ {
+  "key": "desc2:Kid Ory|Kid Ory Plays W.C. Handy",
+  "artist": "Kid Ory",
+  "album": "Kid Ory Plays W.C. Handy",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group beefa6aa 的欄位：title 是《**Kid Ory Plays W.C Handy**》（W.C 後面沒有句點）、artist-credit「Kid Ory」、first-release-date 1959、primary-type Album、**secondary-types [Compilation]**、轄下 2 個 release（US 1959、US 2013）。",
+    "src": "https://musicbrainz.org/release-group/beefa6aa-5986-4388-aa4a-6d39ab058ac1"
+   },
+   {
+    "f": "該 release-group 底下 1959 年的 US release 由 Verve 發行、編號 MGV-1017、載體 12\" Vinyl、Cardboard/Paper Sleeve，7 軌：〈Aunt Hagar's Blues〉6:19、〈St. Louis Blues〉5:33、〈Harlem Blues〉5:41、〈Friendless Blues〉5:10、〈Joe Turner Blues〉4:38、〈Way Down South Where The Blues Began〉4:54、〈Yellow Dog Blues〉3:57。",
+    "src": "https://musicbrainz.org/release/dc33c95a-0ae9-499c-9d64-8942e2cf008a"
+   },
+   {
+    "f": "英文維基〈Kid Ory〉開頭：Edward「Kid」Ory（1886 年 12 月 25 日–1973 年 1 月 23 日）是美國爵士作曲家、長號手與樂團領班；他是滑音（glissando）技法最早的使用者之一，把它確立為紐奧良爵士的核心元素。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "同一條目：1919 年 Ory 遷居洛杉磯，1922 年在當地與 Mutt Carey、Dink Johnson、Ed Garland 一起錄音，錄下〈Ory's Creole Trombone〉與〈Society Blues〉兩首器樂曲。維基對這批錄音的定性是「**They were the first jazz recordings made on the West Coast by an African American jazz band from New Orleans, Louisiana**」（來自紐奧良的非裔美國爵士樂團在西岸錄下的第一批爵士錄音）。他的樂團與 Nordskog Records 合作，Ory 自付壓片費、再以自己的品牌「Kid Ory's Sunshine Orchestra」在洛杉磯的 Spikes Brothers Music Store 販售。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "同一條目：1925 年 Ory 遷居芝加哥，與 Louis Armstrong、Jelly Roll Morton、King Oliver、Johnny Dodds、Bessie Smith、Ma Rainey 等人工作與錄音；他是 Louis Armstrong 的 Hot Five 原始陣容成員，該團 1925 年 11 月 12 日首度錄音，他的作品〈Muskrat Ramble〉收在 1926 年 2 月的 Hot Five 場次裡。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "同一條目：大蕭條期間 Ory 退出音樂，直到 1943 年才重新演奏；1941 年他是 Jelly Roll Morton 在洛杉磯葬禮的抬棺者之一。1944 到約 1961 年他領導當時最好的紐奧良風格樂團之一。「Ory 的樂團是重新喚起大眾對紐奧良爵士興趣的重要力量」，靠的是 1940 年代的廣播——從 1944 年 3 月 15 日起在《The Orson Welles Almanac》節目上的每週固定時段開始。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "英文維基〈W. C. Handy〉開頭：William Christopher Handy（1873 年 11 月 16 日–**1958 年 3 月 28 日**）是自稱「Father of the Blues」的美國作曲家與音樂家；他不是藍調的創造者，卻是最早把藍調形式付印出版的人之一，因而把藍調從觀眾有限的地方性風格帶到新的流行高度。",
+    "src": "https://en.wikipedia.org/wiki/W._C._Handy"
+   },
+   {
+    "f": "同一條目：1912 年〈The Memphis Blues〉樂譜出版，引介了他的十二小節藍調寫法；到 1917 年底他最成功的幾首歌已經出版，包括〈Memphis Blues〉〈Beale Street Blues〉與〈Saint Louis Blues〉。1919 年他與 Victor 簽約，第三度錄製他 1915 年不成功的〈Yellow Dog Blues〉，Joe Smith 的那個版本賣得很好，訂單數以十萬計。",
+    "src": "https://en.wikipedia.org/wiki/W._C._Handy"
+   },
+   {
+    "f": "Apple Music 美國店面的三個 Kid Ory 藝人頁——Kid Ory（artistId 2736339，27 張）、Kid Ory & His Creole Jazz Band（186304432，16 張）、Kid Ory's Creole Jazz Band（192783646，11 張）——以 lookup 端點全列後，**沒有任何一筆標題含「Handy」的專輯**。",
+    "src": "https://itunes.apple.com/lookup?id=2736339&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟七首曲子出自同一個人的筆下，而那個人在錄音期間過世",
+   "七首曲名裡有六首帶著 Blues 兩個字"
+  ],
+  "sound": "Verve MGV-1017 收七軌，MB 的曲長從 3:57 的〈Yellow Dog Blues〉到 6:19 的〈Aunt Hagar's Blues〉，七首全部是 W.C. Handy 的曲子、其中六首曲名帶 Blues。維基對 Ory 的定性是「滑音技法最早的使用者之一，把它確立為紐奧良爵士的核心元素」。（本欄由 MB release dc33c95a 的曲目表與曲長、以及維基〈Kid Ory〉開頭的敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "St. Louis Blues",
+   "Aunt Hagar's Blues",
+   "Yellow Dog Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1959 與 MB release-group first-release-date 1959 一致（Verve MGV-1017）。⚠ **錄音年沒有可靠來源**：策展層 curatorWhy 寫「Verve **1958–1959 年**讓他整張演 W.C. Handy 曲目的錄音」，**本層在維基〈Kid Ory〉與〈W. C. Handy〉都找不到本張的錄音日期**，MB 也沒有登記。**「1958–1959 年錄的」不得入文，只能寫 1959 年 Verve 發行。** ⚠ 另一個可寫的時間點是 W.C. Handy 本人**卒於 1958 年 3 月 28 日**（維基有明確日期），與本張 1959 年的發行年相鄰。",
+  "notes": "**鐵則（本批第 3 條）：本張的錄音年查無來源，因此只能寫出版年 1959，不得寫任何錄音年份。**\n⚠ **擋下策展層一處時序主張（本張最重要的一條）**：curatorWhy 寫「1922 年在洛杉磯灌的《Ory's Creole Trombone》是**第一張由黑人紐奧良樂團發行的唱片**」——**與來源不符，不得照抄**。英文維基〈Kid Ory〉的原話有兩層限定：「the first jazz recordings made **on the West Coast** by an African American jazz band from New Orleans」——限定在**西岸**、而且說的是「錄音」不是「發行的唱片」。**要寫就照維基的完整限定寫「來自紐奧良的非裔美國爵士樂團在西岸錄下的第一批爵士錄音」，任何把「西岸」拿掉的寫法一律禁用。**\n⚠ **另一處要修正**：curatorWhy 寫本張是「他晚期領銜盤裡**最完整的一份**」——無來源，**不得入文**。\n⚠ **secondary-types 是 [Compilation]**：MB 把這個 release-group 標成整編。**行文不得寫成「他進錄音室錄的一張新碟」**；也**不得因此斷言它是選輯**——1959 年那筆 release 只有一個 medium、七軌，形狀像一張完整 LP。**最安全的寫法是只描述曲目與廠牌，不定性。**\n⚠ **盤名少一個句點**：MB 的 RG 與 release 標題都是「Kid Ory Plays W.C Handy」，卡片取正式寫法「Kid Ory Plays W.C. Handy」。策展層已依裁定第 91／95 條處理，本層無異議。\n**試聽（本層覆核，維持 unavailable）**：探測層十個店面 `0→0` 全滅。依第 166 條改打藝人頁 lookup，**三個 Kid Ory 藝人實體全列**（2736339 的 27 張、186304432 的 16 張、192783646 的 11 張），**沒有任何一筆標題含 Handy**。策展層 curatorRisk 提到的 gb collectionId 844518067《Kid Ory joue W. C. Handy (Mono Version) - EP》是六軌 EP、掛名 Edward Kid' Ory Orchestra，**軌數與掛名都對不上 Verve 的七軌原盤，不得當試聽來源**（本層同意策展層的判斷）。**維持 unavailable，無異議。**\n**互斥分派——本張獨占 W.C. Handy 這個作曲者、Ory 的長號滑音、1922 年洛杉磯 Nordskog 那批錄音，以及 Orson Welles 廣播節目帶起復興這條線。**\n**本張禁用**：Bunk Johnson 的假牙／Jazzmen 作者群（同批有 Bunk Johnson 的卡）；也**不得寫成 Bunk Johnson 那批錄音帶起了 Ory 的復出**——沒有來源。"
+ },
+ {
+  "key": "desc2:James P. Johnson|Carolina Shout",
+  "artist": "James P. Johnson",
+  "album": "Carolina Shout",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 573ca4f6 的欄位：title《Carolina Shout》、artist-credit「James P. Johnson」、first-release-date 1988、primary-type Album、**secondary-types [Compilation]**、**轄下只有 1 個 release**。",
+    "src": "https://musicbrainz.org/release-group/573ca4f6-67c7-380a-b5d5-227e110c362b"
+   },
+   {
+    "f": "唯一那筆 release 是 1988 年的 US 版、由 Biograph Records 發行、編號「BCD-105 DDD」、barcode 092631050028、載體 CD、Jewel Case，14 軌：〈Steeplechase Rag〉2:28、〈Twilight Rag〉2:20、〈Carolina Shout〉4:00、〈Baltimore Buzz〉2:48、〈Gypsy Blues〉3:50、〈Harlem Strut〉2:59、〈Eccentricity〉4:06、〈Don't Mess With Me〉2:51、〈Nervous Blues〉3:37、〈Ole Miss Blues〉3:29、〈I Ain't Givin' Nothin' Away〉2:55、〈Muscle Shoal Blues〉3:24、〈Farewell Blues〉4:15、〈Charleston〉2:35。",
+    "src": "https://musicbrainz.org/release/aa88a4f0-8de6-4fa0-80ff-1a127be8f021"
+   },
+   {
+    "f": "英文維基〈James P. Johnson〉開頭：James Price Johnson（1894 年 2 月 1 日–1955 年 11 月 17 日）是美國鋼琴家與作曲家，stride piano 的開路者，也是錄音早期最重要的鋼琴家之一；他對 Count Basie、Duke Ellington、Art Tatum、Thelonious Monk 與他的學生 Fats Waller 都有重大影響。音樂學者 David Schiff 稱他為「The Invisible Pianist」。",
+    "src": "https://en.wikipedia.org/wiki/James_P._Johnson"
+   },
+   {
+    "f": "同一條目：1920 年之前 Johnson 已在東岸取得與 Eubie Blake、Luckey Roberts 相當的名聲，並錄下數十份自動鋼琴紙卷（player piano roll），最初記錄他自己的 ragtime 作品，之後在 **1917 到 1927 年間**為 Aeolian、Perfection、Artempo、Rythmodik 與 **QRS** 錄製；同一時期他認識了同樣在 Aeolian 做紙卷的 George Gershwin。",
+    "src": "https://en.wikipedia.org/wiki/James_P._Johnson"
+   },
+   {
+    "f": "同一條目：他 **1921 年**的留聲機錄音——〈Harlem Strut〉〈Keep Off the Grass〉〈**Carolina Shout**〉〈Worried and Lonesome Blues〉——與 Jelly Roll Morton 1923 年的 Gennett 錄音，同屬最早被錄下的爵士鋼琴獨奏；這些技術困難的作品會被同輩學走，並成為紐約鋼琴手獨奏競賽裡的考題。",
+    "src": "https://en.wikipedia.org/wiki/James_P._Johnson"
+   },
+   {
+    "f": "同一條目的 Pianist 段：「他的〈Carolina Shout〉是每一位當代鋼琴手的標準考題與成年禮：**Duke Ellington 是照著 1921 年那捲 QRS 的 Johnson 紙卷一個音一個音學下來的**。」Johnson 教過 Fats Waller，並替他弄到第一批紙卷與錄音的工作。",
+    "src": "https://en.wikipedia.org/wiki/James_P._Johnson"
+   },
+   {
+    "f": "同一條目：〈The Charleston〉是他寫的曲子，1923 年在他的百老匯秀《Runnin' Wild》裡首度亮相（歌詞由 Cecil Mack 合寫），成為咆哮二十年代最流行的歌曲之一；2020 年〈Carolina Shout〉入選 Grammy Hall of Fame。",
+    "src": "https://en.wikipedia.org/wiki/James_P._Johnson"
+   },
+   {
+    "f": "英文維基〈Biograph Records〉：這家廠牌 1967 年由 Arnold S. Caplin 創立，專門再發行美國早期的 ragtime、爵士與藍調；**1970 年 Biograph 向 QRS Records 買下了以鋼琴紙卷製成之錄音的發行權**，其中包括 Scott Joplin 與 Fats Waller 的作品。",
+    "src": "https://en.wikipedia.org/wiki/Biograph_Records"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 203053431：標題《Carolina Shout》、掛名 James P. Johnson、releaseDate 1988-01-01、14 軌、notExplicit、copyright「℗ 2006 Biography Records」；十四軌曲名、曲序與 MB 的 BCD-105 逐項相同，曲長差在 0–1 秒內。",
+    "src": "https://music.apple.com/us/album/203053431"
+   }
+  ],
+  "hookCandidates": [
+   "Duke Ellington 是照著一捲紙卷，一個音一個音把〈Carolina Shout〉學下來的",
+   "廠牌 1970 年向 QRS 買下的，是用鋼琴紙卷做成的錄音"
+  ],
+  "sound": "Biograph 這一輯十四軌，MB 的曲長從 2:20 的〈Twilight Rag〉到 4:15 的〈Farewell Blues〉，全部是獨奏鋼琴。曲目一半是 rag（〈Steeplechase Rag〉〈Twilight Rag〉），一半是他自己的招牌曲（〈Carolina Shout〉〈Harlem Strut〉〈Charleston〉）。維基寫他的 stride 有別於 ragtime 之處，在於左手打的拍子與右手之間那種「先行與張弛」。（本欄由 MB release aa88a4f0 的曲目表與曲長、以及維基 Pianist 段對 stride 的定義歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Carolina Shout",
+   "Harlem Strut",
+   "Charleston"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1988 與 MB release-group first-release-date 1988 一致（Biograph BCD-105），Apple 的 releaseDate 1988-01-01 也相同。⚠ **原始錄製年份沒有單一來源**：維基寫他的紙卷錄製期間是 **1917–1927 年**（不是策展層 curatorWhy 寫的 1917–1925），另外〈Carolina Shout〉還有一個 **1921 年的留聲機錄音**版本。**行文不得寫「1917–1925」這個區間**（無來源），也**不得斷言本輯收的是紙卷還是留聲機錄音**——見 notes。",
+  "notes": "**鐵則（本批第 3 條）：原始錄製年份（1917–1927 之間）與出版年 1988 不得互寫。而且錄製區間本身要照維基寫 1917–1927，不是策展層寫的 1917–1925。**\n⚠ **本張最需要擋的一處：載體來源**。curatorWhy 斷言「這一輯收的是……1917–1925 年的**鋼琴捲（piano roll）**」——**本層找不到任何來源說明 Biograph BCD-105 這一輯的十四軌是紙卷轉錄還是留聲機錄音**。可以查證的只有兩件事：（a）維基〈Biograph Records〉寫該廠牌 1970 年向 QRS 買下紙卷錄音的發行權；（b）維基〈James P. Johnson〉寫〈Carolina Shout〉同時存在 1921 年的 QRS 紙卷與 1921 年的留聲機錄音。**行文不得斷言本輯是紙卷輯**；要提紙卷，只能用 Biograph 買下 QRS 版權這條有源的事實，並且**不得把它寫成「所以這張是紙卷」的推論**。\n✅ **策展層另一處查得住**：「Duke Ellington 年輕時就是靠……這捲紙卷把它學下來的」——維基原話是「Duke Ellington learned it note for note from the 1921 QRS Johnson piano roll」。**可寫，但「慢速播放」這個細節無來源，不得加。**\n⚠ **secondary-types 是 [Compilation]，而且 MB 只有一筆 release**：行文要寫成「Biograph 整理的一輯」，不得寫成「他錄的一張專輯」。\n⚠ **盤名同時是曲名**：策展層 curatorRisk 已標 MB 另有 75322682《Carolina Shout》(2000) 與 Apple 兩筆同名單曲（568149112、548352703）。**鎖 collectionId 203053431，不要用字串比對。**\n**封面**：策展層記 CAA release-group 端點實測 404，改走 apple-verified-collection（§4 允許）。本層不動封面。\n**試聽（本層覆核通過）**：探測層 `us:5→1`、front `us`、collectionId **203053431**、14 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=203053431&country=us&entity=song` 逐軌核對 MB 的 BCD-105：**十四軌曲名、曲序、曲長逐項相同**（第 1 軌兩邊都是〈Steeplechase Rag〉、第 14 軌兩邊都是〈Charleston〉）。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**無異議。** ⚠ Apple 的 copyright 欄把廠牌名拼成「Biography Records」（多一個 y），MB 與維基都是「Biograph Records」；**行文用 Biograph。**\n**互斥分派——本張獨占 stride piano 的定義、Duke Ellington 學紙卷、〈The Charleston〉與《Runnin' Wild》這條線。**"
+ },
+ {
+  "key": "desc2:Art Tatum|God Is in the House",
+  "artist": "Art Tatum",
+  "album": "God Is in the House",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 79bca8f7 的欄位：title 是《**God Is in the House: Original 1940-41 Recordings**》、artist-credit「Art Tatum」、first-release-date 1973、primary-type Album、**secondary-types 空（不是 Live）**、轄下 2 個 release（DE 1973、US 1998-06-23）。",
+    "src": "https://musicbrainz.org/release-group/79bca8f7-b190-3dba-9584-a64e7ff548ca"
+   },
+   {
+    "f": "該 release-group 底下 1973 年那筆的國別是 **DE**，同時掛 Polydor（編號 2310 325）與 **Onyx Records（Onyx 2310 325）**，載體 12\" Vinyl，13 軌：〈Georgia on My Mind〉2:23、〈Beautiful Love〉1:46、〈Laughing at Life〉1:08、〈Sweet Lorraine〉3:09、〈Fine and Dandy〉4:12、〈Begin the Beguine〉3:58、〈Mighty Lak a Rose〉3:40、〈Knockin' Myself Out〉4:08、〈Toledo Blues〉3:38、〈Body and Soul〉3:36、〈There'll Be Some Changes Made〉3:33、〈Lady Be Good〉4:35、〈Sweet Georgia Brown〉7:18。",
+    "src": "https://musicbrainz.org/release/49978c75-3591-4d2c-8870-668175b2f58c"
+   },
+   {
+    "f": "同一個 release-group 底下 1998-06-23 的 US release 由 **HighNote Records** 發行（編號 HCD 7030、barcode 632375703028）、載體 CD，13 軌，曲名、曲序與曲長與 1973 年那筆逐項相同。",
+    "src": "https://musicbrainz.org/release/07bd7d83-031b-47d9-8997-a1d07e664b07"
+   },
+   {
+    "f": "英文維基〈God Is in the House (Art Tatum album)〉開頭：這是鋼琴家 Art Tatum 的專輯，收的是 **1940 與 1941 年在俱樂部非正式錄下的演奏**，1973 年首度由 Onyx Records 發行，並贏得兩座葛萊美獎。",
+    "src": "https://en.wikipedia.org/wiki/God_Is_in_the_House_(Art_Tatum_album)"
+   },
+   {
+    "f": "同一條目的 Recording and music 段：Jerry Newman 當時是紐約的學生與爵士迷，用一台唱片刻錄機與醋酸鹽盤，在 1940 與 1941 年於哈林的俱樂部裡非正式錄下 Tatum 的演奏。其中三首是 1940 年 11 月 11 日的獨奏；1941 年 3 月 7 日那次，Reuben Harris 用掃帚敲擊手提箱伴奏；同年 7 月 26 日又錄了與 Chocolate Williams（貝斯與人聲）的二重奏，Tatum 自己也在〈Knockin' Myself Out〉與〈Toledo Blues〉兩首裡唱；〈There'll Be Some Changes Made〉是隔天與 Williams 及歌手 Ollie Potter 錄的；9 月 16 日錄下 Tatum、小號手 Frankie Newton 與貝斯手 Ebenezer Paul 三人的〈Lady Be Good〉與〈Sweet Georgia Brown〉。",
+    "src": "https://en.wikipedia.org/wiki/God_Is_in_the_House_(Art_Tatum_album)"
+   },
+   {
+    "f": "同一條目的 Release and reception 段：**盤名出自一則關於 Tatum 與 Fats Waller 的故事——某晚 Waller 在俱樂部演奏時看見 Tatum 走進來，向台下宣布：「各位女士先生，我彈鋼琴，但今晚上帝在場。」** 專輯 1973 年由 Onyx 以 LP 發行，製作人是 Newman 與 Don Schlitten；HighNote Records 1998 年發行 CD 版。",
+    "src": "https://en.wikipedia.org/wiki/God_Is_in_the_House_(Art_Tatum_album)"
+   },
+   {
+    "f": "同一條目：**1956 年即已去世的 Tatum，以本輯的演奏獲得 1973 年葛萊美的 Best Jazz Performance by a Soloist；Dan Morgenstern 則以本輯拿下 Best Album Notes。** 樂評 Doug Ramsey 2015 年寫道：「我現在推薦它，是擔心你們有些人一直沒讓自己聽到這些不可或缺的 Tatum 天才快照。」AllMusic 的評者指出這批錄音的音質比 Newman 其他發行來得高，並稱本輯「Highly recommended」。",
+    "src": "https://en.wikipedia.org/wiki/God_Is_in_the_House_(Art_Tatum_album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1438004708：標題《**God Is In the House (Live)**》、掛名 Art Tatum、releaseDate 1973-01-01、13 軌、notExplicit、copyright「℗ 1998 HighNote Records, Inc.」；十三軌曲名、曲序與 MB 逐項相同（每個曲名後面都加了「(Live)」尾綴），曲長差在 0–2 秒內。",
+    "src": "https://music.apple.com/us/album/1438004708"
+   }
+  ],
+  "hookCandidates": [
+   "盤名出自 Fats Waller 某晚的一句台詞：「我彈鋼琴，但今晚上帝在場。」",
+   "錄音的人是個帶著刻錄機混俱樂部的學生，得獎的人已經去世十七年"
+  ],
+  "sound": "十三軌的曲長從 1:08 的〈Laughing at Life〉到 7:18 的〈Sweet Georgia Brown〉，落差很大——那是俱樂部裡想彈多久就彈多久的長度。維基記其中一次錄音的伴奏是 Reuben Harris 用掃帚敲手提箱，另外兩軌是 Tatum 與小號、貝斯的三人編制，還有兩軌 Tatum 自己開口唱。AllMusic 的評者指出這批的音質比 Newman 其他發行來得高。（本欄由 MB release 49978c75 的曲長與維基 Recording and music 段歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Sweet Georgia Brown",
+   "Toledo Blues",
+   "Sweet Lorraine"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1973 與 MB release-group first-release-date 1973 一致（Onyx 首發年），維基也寫「first released by Onyx Records in 1973」。**錄音年是 1940–1941**：維基給出五個確切日期（1940-11-11、1941-03-07、1941-07-26、7 月 27 日、1941-09-16）。**三十二年落差，不得互寫。** ⚠ **廠牌與國別要留意**：卡單記「Onyx（ORI 205）」，**MB 的 1973 那筆記的是德國版、Polydor 2310 325／Onyx 2310 325**，編號完全不同。**不要寫編號**，也不要寫「美國首發」。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1940–1941 與出版年 1973 不得互寫。**\n⚠ **盤名三種、而且 Apple 那筆多了 (Live) 尾綴**：MB 的 RG 標題是《God Is in the House: Original 1940-41 Recordings》、**MB 的 secondary-types 是空的（不是 Live）**，Apple 卻標《God Is In the House (Live)》而且每一軌曲名都加了「(Live)」。策展層已把三種寫法進 queryAlias，本層無異議。⚠ **行文不得寫「這是一張現場專輯」**——維基的用詞是「informally recorded club performances」（在俱樂部裡非正式錄下的演奏），與商業現場錄音不同；**要寫就照維基寫「有人帶著刻錄機在俱樂部裡側錄」。**\n✅ **策展層兩處都查得住，可寫**：（1）「1940–1941 年在哈林幾家 after-hours 俱樂部用私人錄音機側錄」——維基有 Jerry Newman、disc recorder、acetate discs 的完整敘述；（2）「盤名出自 Fats Waller 某晚見他走進店裡對台下說的那句話」——維基有原句。\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫本輯「1973 年 Onyx 首次整理發行後成為他目錄裡**最常被引用的一份**」——無來源，**不得入文**。有源的替代是它拿下 1973 年葛萊美的 Best Jazz Performance by a Soloist（Tatum 已於 1956 年去世），以及 Dan Morgenstern 拿下 Best Album Notes——**這兩座獎維基有明確直述，是本張最硬的素材。**\n⚠ **不得做算術**：獎項年與去世年相差幾年、錄音到發行隔幾年，**一律不寫數字差**（第 4 條）。\n**試聽（本層覆核通過）**：探測層 `us:2→1`、front `us`、collectionId **1438004708**、13 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=1438004708&country=us&entity=song` 逐軌核對 MB 的 49978c75：**十三軌曲名、曲序、曲長逐項相同**（第 1 軌兩邊都是〈Georgia on My Mind〉、第 13 軌兩邊都是 7:18 的〈Sweet Georgia Brown〉），只差 Apple 每軌都掛了「(Live)」尾綴。⚠ 這一筆 Apple 條目的 copyright 是「℗ 1998 HighNote Records」，**對應的是 MB 同 RG 底下 1998 年的 HighNote CD（07bd7d83），不是 1973 年的 Onyx LP**——但兩筆的十三軌曲名、曲序、曲長在 MB 上完全相同，**版本差異不影響試聽正確性**。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**無異議。**\n**互斥分派——本張獨占 Jerry Newman 的側錄、Fats Waller 那句台詞與兩座葛萊美這條線。**"
+ },
+ {
+  "key": "desc2:Jelly Roll Morton|The Pearls",
+  "artist": "Jelly Roll Morton",
+  "album": "The Pearls",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b34cfd15 的欄位：title《The Pearls》、artist-credit「Jelly Roll Morton」、first-release-date 1988、primary-type Album、**secondary-types [Compilation]**、**轄下只有 1 個 release**。",
+    "src": "https://musicbrainz.org/release-group/b34cfd15-c52f-3a01-b5f7-2ecc636f674a"
+   },
+   {
+    "f": "唯一那筆 release 是 1988 年的 US 版、同時掛 Bluebird 與 RCA（兩家共用編號 6588-2-RB）、barcode 078635658828、載體 CD、Jewel Case，**23 軌**：〈Black Bottom Stomp〉3:12、〈Smokehouse Blues〉3:26、〈The Chant〉3:11、〈Sidewalk Blues〉3:32、〈Dead Man Blues〉3:13、〈Steamboat Stomp〉3:07、〈Grandpa's Spells〉2:53、〈Original Jelly Roll Blues〉3:07、〈Doctor Jazz〉3:26、〈Cannon Ball Blues〉2:51、〈The Pearls〉3:24、〈Wolverine Blues〉3:18、〈Mr. Jelly Lord〉2:50、〈Georgia Swing〉2:30、〈Kansas City Stomps〉2:53、〈Shreveport Stomp〉3:14、〈Mournful Serenade〉3:25、〈Red Hot Pepper Stomp〉3:09、〈Deep Creek〉3:27、〈Freakish〉2:55、〈Tanktown Bump〉3:09、〈I Thought I Heard Buddy Bolden Say〉3:13、〈Winin' Boy Blues〉3:11。",
+    "src": "https://musicbrainz.org/release/312b8e0e-08a9-4250-8286-a08e4936bbbd"
+   },
+   {
+    "f": "英文維基〈Jelly Roll Morton〉開頭：Ferdinand Joseph LaMothe（約 1890 年 9 月 20 日–1941 年 7 月 10 日），藝名 Jelly Roll Morton，是路易斯安那克里奧爾裔的美國藍調與爵士鋼琴家、樂團領班與作曲家。「Morton 是爵士的第一位編曲者，他證明了一個根植於即興的樂種，即使被寫成譜也能保有它的本質。」他 1915 年出版的〈Jelly Roll Blues〉是最早付印的爵士作品之一。",
+    "src": "https://en.wikipedia.org/wiki/Jelly_Roll_Morton"
+   },
+   {
+    "f": "同一條目：他也寫了〈King Porter Stomp〉〈Wolverine Blues〉〈Black Bottom Stomp〉與〈I Thought I Heard Buddy Bolden Say〉，最後一首是向二十世紀之交的紐奧良樂手致敬。",
+    "src": "https://en.wikipedia.org/wiki/Jelly_Roll_Morton"
+   },
+   {
+    "f": "同一條目：**1926 年 Morton 與 Victor Talking Machine Company 簽約**，得以帶一支排練充分的樂團到 Victor 在芝加哥的錄音室演奏他的編曲；這些以 Jelly Roll Morton and His Red Hot Peppers 名義錄下的作品，參與者包括 **Kid Ory**、Omer Simeon、George Mitchell、Johnny St. Cyr、Barney Bigard、Johnny Dodds、Baby Dodds 與 Andrew Hilaire。",
+    "src": "https://en.wikipedia.org/wiki/Jelly_Roll_Morton"
+   },
+   {
+    "f": "同一條目：Morton 自稱 1902 年發明了爵士，此說受到批評。樂評 Scott Yanow 寫：「Jelly Roll Morton 誇大自己的分量，反而在身後害了自己……他身為早期創新者的成就如此巨大，其實根本不需要拉長事實。」另一方面 Gunther Schuller 認為他那些「誇張的斷言」也「沒有反證」，而且他「相當可觀的成就本身就提供了合理的佐證」。",
+    "src": "https://en.wikipedia.org/wiki/Jelly_Roll_Morton"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId **302055819**：標題《The Pearls (Remastered - 1988)》、掛名 Jelly Roll Morton、releaseDate 1988-01-01、**23 軌**、notExplicit、copyright「℗ 1988 BMG Music」；二十三軌曲名、曲序與 MB 的 6588-2-RB 逐項相同（第 1 軌〈Black Bottom Stomp〉、第 11 軌〈The Pearls〉、第 23 軌〈Winin' Boy Blues〉），曲長差在 0–2 秒內。",
+    "src": "https://music.apple.com/us/album/302055819"
+   },
+   {
+    "f": "Apple Music 英國店面另有 collectionId 504543940：標題同樣是《The Pearls》、掛名 Jelly Roll Morton、releaseDate 1938-05-01、**20 軌**、copyright「℗ 2012 Bold As Brass Music」；它的曲目表與 MB 的 6588-2-RB **完全不同**（第 1 軌是〈The Pearls〉、其後為〈I'm Looking for a Little Bluebird〉〈Dr. Jazz〉〈Oh, Didn't He Ramble〉〈Perfect Rag〉……），末軌是〈Mamie's Blues〉。",
+    "src": "https://music.apple.com/gb/album/504543940"
+   }
+  ],
+  "hookCandidates": [
+   "碟名那一首排在第十一軌，前面十首都不是它",
+   "他自稱 1902 年發明了爵士——樂評說他根本不需要拉長事實"
+  ],
+  "sound": "Bluebird 這一輯二十三軌，MB 的曲長從 2:30 的〈Georgia Swing〉到 3:32 的〈Sidewalk Blues〉，每一軌都卡在三分鐘上下——那是 78 轉單面的長度。碟名那一首〈The Pearls〉排在第十一軌，前後被〈Doctor Jazz〉〈Cannon Ball Blues〉與〈Wolverine Blues〉夾著。（本欄由 MB release 312b8e0e 的曲目表與逐軌曲長歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Black Bottom Stomp",
+   "The Pearls",
+   "Doctor Jazz"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1988 與 MB release-group first-release-date 1988 一致（Bluebird／RCA 6588-2-RB），Apple 的正解條目 302055819 也記 1988-01-01、℗ 1988 BMG Music。**原始錄音年沒有單一來源**：維基只寫 Morton 1926 年與 Victor 簽約、以 Red Hot Peppers 名義錄音，**沒有給本輯二十三軌各自的錄音年**。策展層 curatorRisk 自記「錄音年 1926–1939」，**本層查不到來源，不得入文**；行文只能寫「Victor 的母帶」與 1988 年的整編年。⚠ 另外 curatorWhy 說「盤名取自他 **1923 年**寫的〈The Pearls〉」——**1923 這個年份本層在維基找不到直述來源，不得入文。**",
+  "notes": "**鐵則（本批第 3 條）：錄音年與出版年不得互寫；而且本張的錄音年查無來源，只能寫出版年 1988。**\n🚨 **抓到探測層配錯碟（本組最重要的一筆，形狀同 a 組的 Earl Hooker）**：探測層取 `us:0→0` → `gb:4→1`，front **gb**、collectionId **504543940**、20 軌、yearDrift 50，判 ready。**這一筆不是本盤。** 本層以 `lookup?id=504543940&country=gb&entity=song` 取出它的二十軌，**與 MB 的 6588-2-RB 二十三軌逐項比對：第 1 軌不同（Apple 是〈The Pearls〉、MB 是〈Black Bottom Stomp〉），整份曲目表只有少數曲名重疊、順序全不同，末軌〈Mamie's Blues〉根本不在 MB 那一輯上**。它的 copyright 是「℗ 2012 Bold As Brass Music」、releaseDate 1938-05-01，是一份 2012 年的公版整編、與 Bluebird 6588-2-RB 無關。\n**本層裁定：`504543940`（gb）改判不採並列黑名單；試聽改判 front `us`、collectionId **302055819**《The Pearls (Remastered - 1988)》。** 本層以 `lookup?id=302055819&country=us&entity=song` 逐軌核對 MB：**二十三軌曲名、曲序逐項相同**（第 1 軌兩邊都是〈Black Bottom Stomp〉、第 11 軌兩邊都是〈The Pearls〉、第 23 軌兩邊都是〈Winin' Boy Blues〉），曲長差 0–2 秒，collectionName 的「(Remastered - 1988)」不是 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**策展層 curatorRisk 本來就指名 302055819「年份與軌數都對得上」——探測層的 gb 命中覆蓋掉了策展層的正解，本層把它改回來。** 依下放判準第 1 條（有先例：a 組 Earl Hooker 1283483865）與第 2 條（可逆）直接定。\n⚠ **盤名同時是曲名**：MB 另有 633692e4《The Pearls》(1924-11 單曲) 與 4d084473《The Pearls / King Porter Stomp》(1926-06 單曲)，Apple 另有 568181055《The Pearls (Remastered) - Single》。**一律鎖 collectionId 302055819。**\n⚠ **secondary-types 是 [Compilation]，而且 MB 只有一筆 release**：行文寫成「Bluebird 從 Victor 母帶整理的一輯」，不得寫成「他錄的一張專輯」。\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫〈The Pearls〉是「他作曲身分（而不是樂團領班身分）**最常被引用的一首**」——無來源，**不得入文**。維基明列的 Morton 代表作是〈King Porter Stomp〉〈Wolverine Blues〉〈Black Bottom Stomp〉與〈I Thought I Heard Buddy Bolden Say〉，**沒有〈The Pearls〉**——這一點行文要小心，**不要把〈The Pearls〉寫成他的代表作。**\n**互斥分派——本張獨占「爵士第一位編曲者」「1926 年與 Victor 簽約／Red Hot Peppers 陣容」與「自稱 1902 年發明爵士」這三條線。** ⚠ Red Hot Peppers 陣容裡有 **Kid Ory**，同批就有 Kid Ory 的卡：**「Red Hot Peppers 的成員名單」這條分派給本張**；Kid Ory 那張只能從自己那邊寫「1925 年到芝加哥後與 Morton 等人工作與錄音」（維基〈Kid Ory〉有源），**不得複述 Red Hot Peppers 的陣容名單或 1926 年 Victor 合約。**"
+ },
+ {
+  "key": "desc2:King Oliver|The New York Sessions (1929-1930)",
+  "artist": "King Oliver",
+  "album": "The New York Sessions (1929-1930)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1a6ee8f3 的欄位：title《The New York Sessions (1929-1930)》、artist-credit「King Oliver」、first-release-date 1989、primary-type Album、**secondary-types [Compilation]**、**轄下只有 1 個 release**。",
+    "src": "https://musicbrainz.org/release-group/1a6ee8f3-5272-47cb-8633-6a3632eb32f5"
+   },
+   {
+    "f": "唯一那筆 release 是 1989 年的 **DE**（德國）版、同時掛 Bluebird、BMG 與 RCA（三家共用編號 ND90410）、barcode 0035629041028、載體 CD，22 軌：〈What You Want Me to Do〉3:09、〈Sweet Like This〉3:17、〈Too Late〉3:09、〈I'm Lonesome, Sweetheart〉2:44、〈Frankie and Johnny (take 3)〉3:15、〈New Orleans Shout〉2:41、〈Everybody Does It in Hawaii〉2:53、〈Frankie and Johnny (take 4)〉3:11、〈I Must Have It〉2:56、〈Rhythm Club Stomp〉2:57、〈You're Just My Type〉2:30、〈Edna〉2:39、〈Mule Face Blues〉2:52、〈Struggle Buggy〉2:55、〈Don't You Think I Love You〉2:45、〈Olga (take 1)〉3:12、〈Olga (take 2)〉3:21、〈Shake It and Break It〉2:28、〈Stingaree Blues〉3:08、〈Nelson Stomp (take 2)〉3:10、〈Nelson Stomp (take 3)〉3:07、〈Stealing Love〉3:20。",
+    "src": "https://musicbrainz.org/release/0c9559df-89b9-4e77-aba6-5ed8e71d3135"
+   },
+   {
+    "f": "英文維基〈King Oliver〉開頭：Joseph Nathan「King」Oliver（1881 年 12 月 19 日–約 1938 年 4 月 10 日）是美國爵士短號手與樂團領班，以他的演奏風格與在爵士裡開創性地使用弱音器著稱；他也寫過至今仍在演奏的曲子，包括〈Dippermouth Blues〉〈Sweet Like This〉〈Canal Street Blues〉與〈Doctor Jazz〉。他是 Louis Armstrong 的導師與老師，Armstrong 說「要不是 Joe Oliver，爵士不會是今天這樣」。",
+    "src": "https://en.wikipedia.org/wiki/King_Oliver"
+   },
+   {
+    "f": "同一條目：1920 年代中期他把樂團擴編成九人、以 King Oliver and his Dixie Syncopators 之名演出，並開始使用更多寫好的編曲搭配爵士獨奏。1927 年樂團去了紐約，他解散樂團改接零工。**「1920 年代後期，他因為牙齦疾病越來越吹不動小號，於是僱人代吹獨奏，包括他的外甥 Dave Nelson、Louis Metcalf 與 Red Allen。他 1928 年重組樂團，一年後為 Victor Talking Machine Company 錄音。」**",
+    "src": "https://en.wikipedia.org/wiki/King_Oliver"
+   },
+   {
+    "f": "同一條目：他的健康問題是 pyorrhea（牙周病），部分肇因於他愛吃糖三明治，這讓他很難吹奏、開始把獨奏交給更年輕的樂手；**到 1935 年他已完全吹不動小號**。他被困在喬治亞州薩凡納，典當了小號與最好的西裝，短暫經營水果攤，之後在一家娛樂場當清潔工。1937 年他不再演奏音樂。",
+    "src": "https://en.wikipedia.org/wiki/King_Oliver"
+   },
+   {
+    "f": "同一條目：Oliver 的生意頭腦跟不上他的音樂才華——經紀人一個接一個侵吞他的錢；他向 Savoy Ballroom 要的價碼超過對方願付而丟了工作，也因為堅持加價而錯過紐約棉花俱樂部的重要檔期——那個檔期由年輕的 Duke Ellington 接下，Ellington 隨後一舉成名。大蕭條讓他把積蓄賠在一家倒閉的芝加哥銀行裡。他約於 1938 年 4 月死於薩凡納一間出租房，「死於動脈硬化，窮到付不起治療費」。",
+    "src": "https://en.wikipedia.org/wiki/King_Oliver"
+   },
+   {
+    "f": "同一條目：1922 年他帶樂團回芝加哥、以 King Oliver and his Creole Jazz Band 之名在 Lincoln Gardens 演出，成員包括他的門徒 Louis Armstrong（第二短號）、Baby Dodds、Johnny Dodds、Lil Hardin、Honoré Dutrey 與 Bill Johnson；這個編制 1923 年為 Gennett、Okeh、Paramount 與 Columbia 錄下的作品，把紐奧良的集體即興帶給更廣的聽眾。",
+    "src": "https://en.wikipedia.org/wiki/King_Oliver"
+   },
+   {
+    "f": "Apple Music 美國店面 King Oliver 的兩個藝人頁——King Oliver（artistId 2815301）與 King Oliver and His Orchestra（158229077）——以 lookup 端點全列後，**沒有任何一筆標題是《The New York Sessions (1929-1930)》**；標題含 1929／1930 的只有《The Originals: The Legendary King Oliver 1930 Recordings (Remastered)》（131184356、16 軌、℗ 2006 YOYO USA）、《In Chronological Order 1928-1929: Four or Fives Times》（519505998、16 軌、℗ 2012 Crates Digger）、《I'm Crazy 'Bout My Baby (In Chronological Order 1930-1931)》（519399383、17 軌）與《St. James Infirmary (In Chronological Order 1929-1930)》（519846106、16 軌），四筆的軌數都與 MB 的 22 軌對不上。",
+    "src": "https://itunes.apple.com/lookup?id=2815301&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "他因為牙齦的病吹不動了，就僱人替他吹獨奏——包括他自己的外甥",
+   "他嫌棉花俱樂部給的錢太少而放掉那個檔期，接手的是年輕的 Duke Ellington"
+  ],
+  "sound": "Bluebird 這一輯二十二軌，MB 的曲長從 2:28 的〈Shake It and Break It〉到 3:21 的〈Olga (take 2)〉，全部卡在兩分半到三分半——78 轉單面的長度。曲目表上有三組同曲不同 take：〈Frankie and Johnny〉的 take 3 與 take 4、〈Olga〉的 take 1 與 take 2、〈Nelson Stomp〉的 take 2 與 take 3。（本欄由 MB release 0c9559df 的曲目表與逐軌曲長歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Sweet Like This",
+   "Mule Face Blues",
+   "Rhythm Club Stomp"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1989 與 MB release-group first-release-date 1989 一致（Bluebird ND90410，德國版）。**錄音年是 1929–1930**：盤名副標本身就是這個區間，維基也寫他 1928 年重組樂團、「一年後為 Victor Talking Machine Company 錄音」。**六十年落差，不得互寫。** ⚠ **國別**：MB 唯一那筆 release 的國別是 **DE**，不是美國；**行文不得寫「美國發行」。**",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1929–1930 與出版年 1989 不得互寫。**\n✅ **策展層的牙齒／替補小號那一段查得住，可寫**：維基原話是「1920 年代後期，他因為牙齦疾病越來越吹不動小號，於是僱人代吹獨奏，包括他的外甥 Dave Nelson、Louis Metcalf 與 Red Allen」，並在別段補上病名 pyorrhea 與「到 1935 年已完全吹不動」。**可寫，而且三個代吹者的名字有源。**\n⚠ **擋下策展層兩處主張**：（1）curatorWhy 寫這是「他把紐奧良合奏語法帶進紐約編制的**最後嘗試**」——「最後」是時序主張、無來源，**不得入文**（維基寫他 1937 年才不再演奏音樂，1930 年之後仍有活動）。（2）curatorWhy 寫這一段「是他目錄裡**最少被整編、也最能說明時代轉折**的一段」——兩個最高級都無來源，**不得入文**。\n⚠ **secondary-types 是 [Compilation]，MB 只有一筆 release**：行文寫成「Bluebird 從 Victor 母帶整理的一輯」，不得寫成「他錄的一張專輯」。\n⚠ **卒年帶「約」**：維基寫「c. April 10, 1938」（約 1938 年 4 月 10 日）。**要寫就寫「約 1938 年 4 月」，不得寫成確定日期。**\n**試聽（本層覆核，維持 unavailable）**：探測層 `us:0→0 gb:0→0 fr:9→0 dk:ratelimited-after-retries → dk:9→0 se:9→0 de:0→0 nl:9→0 jp:9→0 ca:0→0 au:0→0`——⚠ **dk 那一筆先出現 `ratelimited-after-retries` 再重跑成 `9→0`，重試已生效（第 163 條修好的行為），不是限流誤判。** 依第 166 條改打藝人頁 lookup：`id=2815301`（King Oliver）與 `id=158229077`（King Oliver and His Orchestra）全列後**都沒有本盤**，四筆標題含 1929／1930 的整編軌數分別是 16／16／17／16，**沒有一筆對得上 MB 的 22 軌**（而且發行方分別是 YOYO USA 與 Crates Digger，都不是 Bluebird／RCA）。**維持 unavailable，無異議**（策展層預估 unavailable，本層確認）。\n**互斥分派——本張獨占牙周病與代吹小號、棉花俱樂部檔期讓給 Ellington、以及 Lincoln Gardens 那個 1923 年編制這三條線。**"
+ },
+ {
+  "key": "desc2:Fletcher Henderson|Tidal Wave",
+  "artist": "Fletcher Henderson",
+  "album": "Tidal Wave",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d58c366b 的欄位：title《Tidal Wave》、artist-credit「Fletcher Henderson」、first-release-date **1994-09-07**、primary-type Album、secondary-types 空、**轄下只有 1 個 release**。",
+    "src": "https://musicbrainz.org/release-group/d58c366b-df80-4e34-a46d-550d9575a19a"
+   },
+   {
+    "f": "唯一那筆 release 是 1994-09-07 的 US 版，**MB 上登記的廠牌是「Squirrel Thing Recordings」、編號 B01IOLFDCG**，載體 CD，21 軌：〈Hocus Pocus〉3:14、〈Hocus Pocus (alternative version)〉3:15、〈Phantom Phantasy〉3:14、〈Harlem Madness〉3:29、〈Tidal Wave〉3:02、〈Limehouse Blues〉2:37、〈Shanghai Shuffle〉3:03、〈Big John's Special〉2:49、〈Happy as the Day Is Long〉2:46、〈Tidal Wave〉3:03、〈Down South Camp Meeting〉2:56、〈Wrappin' It Up〉2:39、〈Memphis Blues〉2:34、〈Wild Party〉3:00、〈Rug Cutter's Swing〉3:00、〈Hotter Than 'Ell〉2:50、〈Liza (All the Clouds'll Roll Away)〉2:36、〈Christopher Columbus〉3:01、〈Grand Terrace Swing (Big Chief de Sota)〉2:59、〈Blue Lou〉3:06、〈Stealin' Apples〉2:57。",
+    "src": "https://musicbrainz.org/release/09399262-2372-4f4d-a8d0-424ec0b21f05"
+   },
+   {
+    "f": "英文維基〈Fletcher Henderson〉開頭：James Fletcher Hamilton Henderson（1897 年 12 月 18 日–1952 年 12 月 29 日）是美國鋼琴家、樂團領班、編曲家與作曲家，在大樂團爵士與 swing 的發展上很重要；他是最多產的黑人音樂編曲家之一，**與 Duke Ellington 並列為爵士史上最有影響力的編曲家與樂團領班之一**。他協助銜接了 Dixieland 與 swing 兩個時代，因為嘴唇發出的響聲而常被叫做「Smack」Henderson。",
+    "src": "https://en.wikipedia.org/wiki/Fletcher_Henderson"
+   },
+   {
+    "f": "同一條目的 Discography 段把本輯列為「**1931–1934** Tidal Wave (The Original Decca Recordings), **GRP, 1994**」——行首是錄音年區間、後面是廠牌與發行年。",
+    "src": "https://en.wikipedia.org/wiki/Fletcher_Henderson"
+   },
+   {
+    "f": "英文維基〈Benny Carter〉開頭記 Carter「從 1920 年代出道起就以編曲為業，包括為 **Fletcher Henderson 大樂團**寫的譜——那些譜形塑了 swing 的風格」。",
+    "src": "https://en.wikipedia.org/wiki/Benny_Carter"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1444079959：標題《Tidal Wave》、掛名 Fletcher Henderson、releaseDate **1994-09-27**、21 軌、notExplicit、copyright「This Compilation ℗ 1994 UMG Recordings Inc.」；二十一軌依序為〈I'm Crazy 'Bout My Baby (And My Baby's Crazy 'Bout Me)〉〈Sugar Foot Stomp〉〈Just Blues〉〈Singin' the Blues (Till My Daddy Comes Home)〉〈Low Down on the Bayou〉〈The House of David Blues〉〈Radio Rhythm〉〈You Rascal You〉〈Limehouse Blues〉〈Shanghai Shuffle〉〈Big John's Special〉〈Happy as the Day Is Long〉〈Tidal Wave〉〈Down South Camp Meeting〉〈Wrappin' It Up (The Lindy Glide)〉〈Memphis Blues (Take A)〉〈Memphis Blues (Take B)〉〈Wild Party〉〈Rug Cutter's Swing〉〈Hotter Than 'Ell〉〈Liza (All the Clouds'll Roll Away)〉。",
+    "src": "https://music.apple.com/us/album/1444079959"
+   }
+  ],
+  "hookCandidates": [
+   "碟名那一首在曲目表上出現兩次，兩個版本只差一秒",
+   "他被叫做 Smack，是因為嘴唇發出的響聲"
+  ],
+  "sound": "MB 那份二十一軌的曲目表上，曲長全部落在 2:34 到 3:29 之間——78 轉單面的長度；碟名那一首〈Tidal Wave〉在同一份表上出現兩次（3:02 與 3:03），〈Hocus Pocus〉也有正式版與另一個版本並列。維基寫 Henderson 是最多產的黑人音樂編曲家之一，「協助銜接了 Dixieland 與 swing 兩個時代」。（本欄由 MB release 09399262 的曲目表與曲長、以及維基開頭的敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Tidal Wave",
+   "Down South Camp Meeting",
+   "Wrappin' It Up"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1994 與 MB release-group first-release-date 1994-09-07 一致。**錄音年是 1931–1934**：英文維基〈Fletcher Henderson〉的 Discography 段把本輯寫成「1931–1934 Tidal Wave (The Original Decca Recordings), GRP, 1994」。**六十年落差，不得互寫，而且錄音年是區間、不是單一年份**——⚠ **策展層 curatorRisk 自記「錄音年 1934」是錯的（維基寫 1931–1934），不得沿用。** ⚠ **發行日兩說**：MB 記 1994-09-07、Apple 記 1994-09-27，**同年不同日，不要寫確切日期。**",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1931–1934 與出版年 1994 不得互寫；錄音年必須寫成區間。**\n🚨 **本張最大的問題：MB 與 Apple 的曲目表對不上，兩邊都不能單獨當唯一說法。** MB 那筆 release 與 Apple 的 1444079959 **都是 21 軌**，但曲目只有中段重疊：Apple 的第 1–8 軌（〈I'm Crazy 'Bout My Baby〉〈Sugar Foot Stomp〉〈Just Blues〉〈Singin' the Blues〉〈Low Down on the Bayou〉〈The House of David Blues〉〈Radio Rhythm〉〈You Rascal You〉）**MB 上一首都沒有**；MB 的最後四軌（〈Christopher Columbus〉〈Grand Terrace Swing〉〈Blue Lou〉〈Stealin' Apples〉）**Apple 上一首都沒有**；從〈Limehouse Blues〉到〈Liza〉這一段兩邊順序一致，但 Apple 把〈Memphis Blues〉拆成 Take A／Take B、MB 那邊只有一軌。\n**本層裁定：以 Apple 的 1444079959 為試聽來源，MB 那筆 release 的曲目表視為存疑。** 理由：（a）維基把本輯定性為「(The Original Decca Recordings), GRP, 1994」，Apple 的 copyright 是「℗ 1994 **UMG** Recordings」（Decca／GRP 屬 UMG 體系），對得上；（b）**MB 那筆 release 登記的廠牌是「Squirrel Thing Recordings」、編號 B01IOLFDCG（一個 Amazon ASIN 形狀的字串）**，與卡單記的 Decca Jazz／GRP（GRD-643）和維基的 GRP 都不符，**是 MB 建檔可疑的一側**。依下放判準第 3 條（不決定就沒有試聽）當場定。**本層不修 MB。**\n🚫 **因此本張行文有一條硬禁令：不得寫任何具體曲目、曲序、軌數或「第幾軌是什麼」。** 兩份曲目表打架，寫哪一邊都可能錯（第 141 與 157 條的形狀）。**〈Tidal Wave〉這個曲名兩邊都有，可以提；其餘曲名一律不提。** keyTracks 欄裡的三首都是兩邊都有的曲子，僅供內部參考、**不保證位置**。\n⚠ **擋下策展層兩處主張**：（1）curatorWhy 寫「Henderson 是大樂團編曲法的**發明者**」——維基的用詞是「與 Duke Ellington 並列為爵士史上最有影響力的編曲家與樂團領班之一」，**「發明者」超出來源，不得入文**。（2）curatorWhy 寫本輯「包括他把〈King Porter Stomp〉那批編曲賣給 Benny Goodman 之前自己樂團的版本」——**兩份曲目表上都沒有〈King Porter Stomp〉**，這句**不得入文**。\n⚠ **同名假陽性（策展層已標）**：MB 另有 f7eb208a《Tidal Wave》(1994、secondary-types [Compilation])；Apple 另有 490617043《Tidal Wave (Remastered) - Single》。**鎖 collectionId 1444079959。**\n**試聽（本層覆核通過，但附上述曲目表警語）**：探測層 `us:2→1`、front `us`、collectionId **1444079959**、21 軌、notExplicit、cleanedOnly false。**維持 ready / us / 1444079959。** ⚠ **固定試聽會取到 Apple 的第 1 軌〈I'm Crazy 'Bout My Baby〉**——那首不在 MB 的曲目表上，**行文絕不可寫「開場是哪一首」。**\n**互斥分派——本張獨占 Henderson 身為編曲家的地位與「Smack」這個綽號。** ⚠ **Benny Carter 為 Henderson 寫譜這件事已分派給同批的 Benny Carter《Jazz Giant》，本張不得從 Carter 那一側切入。**"
+ },
+ {
+  "key": "desc2:Machito|Afro-Cuban Jazz: The Music of Chico O'Farrill",
+  "artist": "Machito",
+  "album": "Afro-Cuban Jazz: The Music of Chico O'Farrill",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 881fe44b 的欄位：title《Afro-Cuban Jazz: The Music of Chico O'Farrill》、artist-credit「Machito」、first-release-date 1956、primary-type Album、secondary-types 空、轄下 2 個 release（US 1956、JP 1999-07-14）。",
+    "src": "https://musicbrainz.org/release-group/881fe44b-3f47-44aa-9f38-aea5bf39c00b"
+   },
+   {
+    "f": "該 release-group 底下 1956 年的 US release 標題用彎撇號寫成《Afro-Cuban Jazz: The Music Of Chico O'Farrill》，**MB 上登記的廠牌是 Clef Records、編號 MG C-689**（卡單記的是 Norgran MG N-1085），載體 12\" Vinyl、Cardboard/Paper Sleeve，14 軌：〈Introductory〉〈Pregon〉〈6/8〉〈Jazz〉〈Cancion Antigua〉〈Rhumba Finale〉〈Havana Special〉〈Fiesta Time〉〈Cancion〉〈Mambo〉〈(Cont´d.) Mambo〉〈6/8〉〈Jazz〉〈Rhumba Abierta〉（MB 上這 14 軌都沒有登記曲長）。",
+    "src": "https://musicbrainz.org/release/98aa2bbc-f265-474d-9006-014e3c9b235d"
+   },
+   {
+    "f": "同一個 release-group 底下另有 1999-07-14 的日本 release（barcode 4988005235473）。",
+    "src": "https://musicbrainz.org/release-group/881fe44b-3f47-44aa-9f38-aea5bf39c00b"
+   },
+   {
+    "f": "英文維基〈Machito〉開頭：Frank Grillo（本名 Francisco Raúl Gutiérrez Grillo，1909 年 12 月 3 日–1984 年 4 月 15 日），藝名 Machito，是拉丁爵士樂手，協助精煉了 Afro-Cuban jazz，並在 Cubop 與 salsa 的形成中扮演關鍵角色。他 1940 年在紐約組成 the Afro-Cubans，由 Mario Bauzá 擔任音樂總監，把古巴節奏與大樂團編曲放進同一個團裡。George Shearing、Dizzy Gillespie、Charlie Parker、Cab Calloway 與 Stan Kenton 都把 Machito 列為影響來源。",
+    "src": "https://en.wikipedia.org/wiki/Machito"
+   },
+   {
+    "f": "英文維基〈Afro-Cuban jazz〉列出 Machito 樂團的多項「第一」，其中一條是：「**第一支從 Afro-Cuban 節奏視角探索大規模延伸型作品的大樂團，例如 Chico O'Farrill 的〈The Afro-Cuban Jazz Suite〉。**」同一份清單還包括「第一支持續以爵士編曲手法處理 Afro-Cuban 節奏、並因此有了可辨識聲音的樂團」與「美國第一支多種族樂團」。",
+    "src": "https://en.wikipedia.org/wiki/Afro-Cuban_jazz"
+   },
+   {
+    "f": "英文維基〈Chico O'Farrill〉開頭：Arturo「Chico」O'Farrill（1921 年 10 月 28 日–2001 年 6 月 27 日）是古巴作曲家、編曲家與指揮，最為人知的是他在拉丁語彙、特別是 Afro-Cuban jazz 或「Cubop」上的作品；他為 Machito 寫過作品（**「Afro-Cuban suite with Charlie Parker, 1950」**），也為 Benny Goodman 的 Bebop Orchestra 寫過〈Undercurrent Blues〉。",
+    "src": "https://en.wikipedia.org/wiki/Chico_O%27Farrill"
+   },
+   {
+    "f": "同一條目在生平段寫得更細：他在紐約期間為 Stan Kenton、Count Basie、Art Farmer 與 Machito 編曲，其中「**the Afro-Cuban Jazz Suite feat. Charlie Parker, recorded on December 21, 1950**」（1950 年 12 月 21 日錄音）。同一段也提到他 1954 年 5 月 24 日錄的〈Manteca Theme〉。",
+    "src": "https://en.wikipedia.org/wiki/Chico_O%27Farrill"
+   },
+   {
+    "f": "同一條目對這套組曲的分析：「O'Farrill 的風格最好被形容為他成長時聽的古巴音樂、他在學校迷上的爵士、以及他在音樂院學的歐洲古典的融合，而這一點在他的 Afro-Cuban Jazz Suite 裡總結得最好。光是標題就暗示了這三個元素——有幾個樂章取材自拉丁語彙（Canción、Mambo、Rhumba Abierta），其他幾個更偏爵士（6/8、Jazz），全部被收攏在歐洲組曲的秩序形式裡。」O'Farrill 自述：「我從來不是古巴音樂的專家。我在那套組曲裡做的事完全是直覺……他們叫我『Chico，寫一套組曲』，我就照我最好的理解寫，多數時候讓我的爵士感覺帶著我走。」",
+    "src": "https://en.wikipedia.org/wiki/Chico_O%27Farrill"
+   },
+   {
+    "f": "Apple Music 美國店面的 Machito 相關藝人頁（413738、124608、58639、151644323、1053169356）與 Chico O'Farrill 藝人頁（383206）以 lookup 端點全列後，**沒有任何一筆是本盤的 14 軌完整版**；最接近的是 collectionId 1443148498《Afro-Cuban Jazz - EP》（Machito、1951-01-01、6 軌、℗ 1951 Verve），其六軌為〈Cancion〉2:55、〈Mambo, Pt. 1〉3:15、〈Mambo, Pt. 2〉2:40、〈6/8〉2:12、〈Jazz〉3:40、〈Rhumba Abierta〉2:34——**對應的是 MB 那份 14 軌曲目表的第 9 到第 14 軌，不是整張**。",
+    "src": "https://itunes.apple.com/lookup?id=413738&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "寫這套組曲的人說：「我從來不是古巴音樂的專家，那完全是直覺。」",
+   "曲名裡有〈6/8〉也有〈Jazz〉，被收在一個歐洲組曲的框架裡"
+  ],
+  "sound": "MB 那份 14 軌的曲目表上，樂章名一半是拉丁語彙（〈Pregon〉〈Cancion〉〈Mambo〉〈Rhumba Abierta〉），一半直接叫〈6/8〉與〈Jazz〉，而且這兩個名字各出現兩次。維基對 O'Farrill 的分析正是說這套組曲把古巴、爵士與歐洲古典三個元素收攏在組曲的秩序形式裡。（本欄由 MB release 98aa2bbc 的曲目表與維基〈Chico O'Farrill〉的分析歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Cancion",
+   "Rhumba Abierta",
+   "Havana Special"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1956 與 MB release-group first-release-date 1956 一致。**錄音年至少有一部分是 1950**：英文維基〈Chico O'Farrill〉寫 Afro-Cuban Jazz Suite「recorded on December 21, 1950」。⚠ **但那只是組曲那幾個樂章的日期，本輯 14 軌裡還有〈Havana Special〉〈Fiesta Time〉等曲目，沒有錄音日期來源**——**不得把 1950-12-21 套到全碟**，只能寫「組曲的錄音日期是 1950 年 12 月 21 日」。⚠ **廠牌兩說**：卡單記 **Norgran MG N-1085**、MB 的 1956 US release 記 **Clef Records MG C-689**。兩說本層無法互相印證，**行文不要寫廠牌編號**，廠牌名也宜避開或兩說並列。",
+  "notes": "**鐵則（本批第 3 條）：組曲的錄音日期 1950-12-21 與出版年 1956 不得互寫，而且 1950 這個年份只涵蓋組曲那幾軌、不得擴及全碟。**\n✅ **策展層三處查得住，可寫**：（1）「Chico O'Farrill 為他樂團寫的《Afro-Cuban Jazz Suite》」——維基〈Chico O'Farrill〉直述；（2）「1950 年……找來 **Charlie Parker** ……合錄」——維基寫「the Afro-Cuban Jazz Suite feat. Charlie Parker, recorded on December 21, 1950」，**Parker 有源可寫**；（3）「是 Afro-Cuban jazz 這個名詞的來源作品**之一**」——維基〈Afro-Cuban jazz〉把它列為 Machito 樂團的「第一」之一（第一支從 Afro-Cuban 節奏視角探索大規模延伸型作品的大樂團），**保留「之一」可寫**。\n⚠ **擋下策展層兩處無來源細節**：（1）curatorWhy 說 1950 那場是「Norman Granz 找來 Charlie Parker、**Flip Phillips、Buddy Rich** 與 Machito 樂團合錄」——**維基只寫 Charlie Parker，Norman Granz、Flip Phillips、Buddy Rich 三個名字本層找不到直述來源，不得入文。**（2）curatorWhy 說那是「**五樂章**長篇」——**維基沒有給樂章數**，MB 的曲目表也不是五軌，**不得寫數字。**\n⚠ **盤名撇號**：MB 的 RG 用直撇「O'Farrill」、1956 那筆 release 用彎撇「O'Farrill」。卡片取直撇，兩種都該在 queryAlias（策展層已處理）。\n**試聽（本層覆核，維持 unavailable）**：探測層十個店面 `0→0` 全滅。依第 166 條改打藝人頁 lookup：Machito 的五個藝人實體（413738 的 31 張、124608 的 15 張、58639 的 18 張、151644323 的 1 張、1053169356 的 4 張）與 Chico O'Farrill 的 383206（15 張）**全列後都沒有 14 軌的本盤**。唯一沾邊的 **1443148498《Afro-Cuban Jazz - EP》只有 6 軌**，本層以 `lookup?id=1443148498&country=us&entity=song` 取出曲目，**確認它對應的是 MB 那份 14 軌表的第 9–14 軌（〈Cancion〉〈Mambo〉兩段〈6/8〉〈Jazz〉〈Rhumba Abierta〉），是本輯的一部分、不是本輯**。策展層 curatorRisk 已預判「是 10 吋原盤的數位版、不是本張的 12 吋擴充版」，**本層同意並確認：不得當試聽來源。維持 unavailable。**\n**互斥分派——本張獨占 Chico O'Farrill、Charlie Parker、Mario Bauzá 與「Afro-Cubans」這條線。**"
+ },
+ {
+  "key": "desc2:Sidney Bechet|The Fabulous Sidney Bechet",
+  "artist": "Sidney Bechet",
+  "album": "The Fabulous Sidney Bechet",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 53537ba8 的欄位：title《The Fabulous Sidney Bechet》、artist-credit「Sidney Bechet」、**first-release-date 2001-01-09**、primary-type Album、**secondary-types [Compilation]**、**轄下只有 1 個 release**。",
+    "src": "https://musicbrainz.org/release-group/53537ba8-d1d4-4fba-90d4-b9b0877c5b8f"
+   },
+   {
+    "f": "唯一那筆 release 的日期是 2001-01-09、**國別欄空白**、由 Blue Note 發行（編號 30607）、barcode 724353060725、載體 CD，17 軌：〈There'll Be Some Changes Made〉3:58、〈Original Dixieland One Step〉4:15、〈Blues My Naughty Sweetie Gives to Me〉5:43、〈That's a Plenty〉4:16、〈Ballin' the Jack〉3:52、〈Avalon〉4:56，其後為〈There'll Be Some Changes Made (alternate take)〉〈Blues My Naughty Sweetie Gives to Me (alternate take)〉〈Ballin' the Jack (alternate take)〉〈Rose of the Rio Grande〉〈Black and Blue〉〈Sweet Georgia Brown〉〈All of Me〉〈I'm a Ding Dong Daddy (From Dumas)〉〈Shine〉〈Rose of the Rio Grande (alternate take)〉〈Black and Blue (alternate take)〉。",
+    "src": "https://musicbrainz.org/release/ab7b2dca-f825-4845-a262-de3616d55027"
+   },
+   {
+    "f": "英文維基〈Sidney Bechet〉開頭：Sidney Joseph Bechet（1897 年 5 月 14 日–1959 年 5 月 14 日）是美國爵士薩克斯風手、單簧管手與作曲家，是爵士最早的重要獨奏者之一，首度錄音在 1923 年 7 月——比小號手 Louis Armstrong 隨 King Oliver's Creole Jazz Band 的錄音首秀晚幾個月。他反覆無常的脾氣妨礙了他的音樂生涯，直到 1940 年代後期才獲得廣泛讚譽。他晚年大半住在法國。",
+    "src": "https://en.wikipedia.org/wiki/Sidney_Bechet"
+   },
+   {
+    "f": "英文維基〈Blue Note Records〉的 Early years 段：Alfred Lion 1939 年錄下 Albert Ammons 與 Meade Lux Lewis 之後創立了這家廠牌，起初與撰稿人 Max Margulis 合資。「這家廠牌最早的發行是傳統的『hot』爵士與 boogie woogie，而**廠牌的第一支熱門作品，是知名高音薩克斯風手 Sidney Bechet 演奏的〈Summertime〉——那是 Bechet 一直無法在既有大公司錄下的曲子**。」",
+    "src": "https://en.wikipedia.org/wiki/Blue_Note_Records"
+   },
+   {
+    "f": "同一條目：「以較早期爵士語彙演奏的樂手——例如 Sidney Bechet 與單簧管手 George Lewis——的錄音，一路延續進 1950 年代。」",
+    "src": "https://en.wikipedia.org/wiki/Blue_Note_Records"
+   },
+   {
+    "f": "英文維基〈Sidney Bechet〉：1951 年他在巴黎爵士博覽會擔任獨奏後人氣大漲，同年永久移居法國並在 Antibes 結婚；1953 年他與 Disques Vogue 簽下維持終生的錄音合約，錄下〈Les Oignons〉〈Promenade aux Champs-Élysées〉與國際熱門曲〈Petite Fleur〉。法國有些存在主義者稱他為 le dieu（神）。",
+    "src": "https://en.wikipedia.org/wiki/Sidney_Bechet"
+   },
+   {
+    "f": "同一條目：1958 年他在布魯塞爾世界博覽會（Expo 58）的美國館以獨奏者身分演出，同場還有 Buck Clayton 與 Sarah Vaughan 等人。",
+    "src": "https://en.wikipedia.org/wiki/Sidney_Bechet"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 725210025：標題《The Fabulous Sidney Bechet》、掛名 Sidney Bechet、releaseDate **1958-01-01**、17 軌、notExplicit、copyright「℗ 2000 Blue Note Records」；十七軌與 MB 是同一組曲名、曲長差在 0–2 秒內，**只有第 1、2 軌互換**（Apple 第 1 軌是〈Original Dixieland One-Step〉、MB 第 1 軌是〈There'll Be Some Changes Made〉）。",
+    "src": "https://music.apple.com/us/album/725210025"
+   }
+  ],
+  "hookCandidates": [
+   "這家廠牌的第一支熱門作品，是別人不肯讓他錄的〈Summertime〉",
+   "同一個曲名在曲目表上出現兩次：正式版與另一個 take"
+  ],
+  "sound": "MB 那份 CD 的十七軌裡有五組「正式版＋alternate take」的並列（〈There'll Be Some Changes Made〉〈Blues My Naughty Sweetie Gives to Me〉〈Ballin' the Jack〉〈Rose of the Rio Grande〉〈Black and Blue〉），曲長從 2:13 到 5:55。維基寫 Bechet 是爵士最早的重要獨奏者之一。（本欄由 MB release ab7b2dca 的曲目表與曲長、以及維基〈Sidney Bechet〉開頭的敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Blues My Naughty Sweetie Gives to Me",
+   "Avalon",
+   "Sweet Georgia Brown"
+  ],
+  "status": "full",
+  "yearVerified": "🚨 **本張的年份是本組落差最大的一筆，主線必須看**：**MB release-group 的 first-release-date 是 2001-01-09**（Blue Note CD、編號 30607、barcode 724353060725），**而卡單 year=1958**。策展層 curatorRisk 已自記這一點，依裁定第 91 條（rgMbid 是身分鍵不是年份來源）取 1958，理由是 Blue Note **BLP 1207** 原盤是 1958 年、Apple 的 725210025 也記 1958-01-01。⚠ **本層要補一句：Apple 的 releaseDate 1958-01-01 是本層唯一找得到、且與卡單一致的 1958 年來源；英文維基〈Sidney Bechet〉與〈Blue Note Records〉都沒有提到這張碟或 BLP 1207 這個編號。** 也就是說「1958」目前只有 Apple 一個外部背書、MB 明確給的是 2001。**行文不得斷言「1958 年 Blue Note 發行」為既成事實**；要寫年份就得寫成「Apple 的條目記 1958」或乾脆不寫年份。**MB 的 2001 是 RVG 系 CD 的年份，同樣不得單獨寫成發行年。**",
+  "notes": "**鐵則（本批第 3 條的變形）：本張是「MB 年份 ≠ 卡單年份」的衝突卡，不是單純的錄音年／出版年落差。** 錄音年本層完全查不到來源（策展層 curatorWhy 說是「1951–1953 年的 Bechet 面」，**維基沒有這個說法，不得入文**）。\n🚩 **需要主線裁定的一筆（本組唯一一件我沒有辦法自己收乾淨的）**：**MB 的 RG 只有一筆 2001 年的 CD，沒有 1958 年的 BLP 1207 LP。** 這代表兩種可能——（a）MB 建檔不全，本 RG 確實對應 1958 年那張 LP；（b）這個 RG 其實就是 2001 年那張 RVG CD 的 RG，1958 年的 LP 在 MB 上是另一個 RG（策展層 curatorRisk 提到的 9691085f《12 Years On Blue Note. The Fabulous Sidney Bechet》(1952) 是另一筆包住本盤盤名的條目）。**兩者的差別會影響卡片 year 該不該保留 1958。本層依「可逆」原則暫時照策展層留 1958、並把落差寫進 yearVerified，但這一條建議主線覆核**（不決定也不擋線，所以不算下放判準第 3 條的「卡住」）。\n⚠ **secondary-types 是 [Compilation]、而且曲目表上有五組 alternate take**：**行文不得寫軌數**。BLP 1207 那張 12 吋 LP 的曲目表本層沒有來源，**十七軌是 2001 年 CD 的數字，不能拿來代表 1958 年那張碟**（第 141 條的形狀）。\n✅ **策展層一處查得住，可寫**：「Bechet 1939 年為 Blue Note 錄的〈Summertime〉是這家廠牌創業初期最暢銷的一面」——維基〈Blue Note Records〉原話是「the label's **first hit** was a performance of 'Summertime' by ... Sidney Bechet, which Bechet had been unable to record for the established companies」。⚠ **要照來源寫「廠牌的第一支熱門作品」，不要寫成「最暢銷」**（維基沒有銷量比較）；**1939 這個年份維基也沒有直接掛在〈Summertime〉上**（只寫 Lion 1939 年錄了 Ammons 與 Lewis），**年份不得寫**。\n⚠ **擋下策展層一處主張**：curatorWhy 寫本張「是他與這家廠牌**十餘年關係的總結**」——無來源，**不得入文**。\n**掛名**：MB 的 artist-credit 原文是「Sidney Bechet」，與卡片一致；池中另有「Sidney Bechet All Stars」是第三種寫法，本卡不製造新分裂（策展層已處理）。\n**試聽（本層覆核通過，附一處曲序偏差）**：探測層 `us:1→1`、front `us`、collectionId **725210025**、17 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=725210025&country=us&entity=song` 逐軌核對 MB 的 ab7b2dca：**十七軌是同一組曲名、曲長差 0–2 秒**；⚠ **第 1 與第 2 軌互換**（Apple 開場是〈Original Dixieland One-Step〉，MB 開場是〈There'll Be Some Changes Made〉），第 3 軌之後完全一致。第 157 條的位置比對在第 1 軌**不通過**，但兩軌互換屬同一張碟內的排序差異、不是配錯碟（十七軌全同、alternate take 也全同）。**維持 ready / us / 725210025，並在卡上記「開場軌兩個來源不一致」。** 依下放判準第 2 條（可逆）直接定。⚠ **行文不得寫「開場是哪一首」。**\n**互斥分派——本張獨占 Blue Note 與〈Summertime〉那條創業史、以及 Bechet 移居法國／Disques Vogue／〈Petite Fleur〉這條晚年線。**"
+ },
+ {
+  "key": "desc2:Django Reinhardt|The Great Artistry of Django Reinhardt",
+  "artist": "Django Reinhardt",
+  "album": "The Great Artistry of Django Reinhardt",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 739cf2a8 的欄位：title《The Great Artistry of Django Reinhardt》、artist-credit「Django Reinhardt」、**first-release-date 1953-11**、primary-type Album、secondary-types 空、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/release-group/739cf2a8-7ca7-4521-8769-2b3569bef7f8"
+   },
+   {
+    "f": "該 release-group 底下 1953-11 的 US release 由 Clef Records 發行、編號 MGC-516、**載體是 10\" Vinyl**、Cardboard/Paper Sleeve，8 軌：〈Night and Day〉〈Blues for Ike〉〈Nuages〉〈Insensiblement〉〈Brazil〉〈September Song〉〈Confessin'〉〈Manoir de mes rêves〉（MB 上這 8 軌都沒有登記曲長）。",
+    "src": "https://musicbrainz.org/release/4bd9e59d-daae-4778-8933-e5d94d8ccac7"
+   },
+   {
+    "f": "同一個 release-group 底下另有一筆 2016 年的 release，**標題被改成《Nuages》**（barcode 8437016248065）。",
+    "src": "https://musicbrainz.org/release-group/739cf2a8-7ca7-4521-8769-2b3569bef7f8"
+   },
+   {
+    "f": "英文維基〈Django Reinhardt〉開頭：Jean「Django」Reinhardt（1910 年 1 月 23 日–1953 年 5 月 16 日）是比利時爵士吉他手與作曲家，是最早在歐洲出現的重要爵士人物之一。他與小提琴家 Stéphane Grappelli 1934 年在巴黎組成 Quintette du Hot Club de France，那是最早以吉他為主奏樂器演奏爵士的樂團之一。他 1953 年因腦溢血猝逝，得年 43。",
+    "src": "https://en.wikipedia.org/wiki/Django_Reinhardt"
+   },
+   {
+    "f": "同一條目的 Releases in his lifetime 段：「Reinhardt 錄音生涯（1928 到 1953 年）錄過九百多面，多數是當時流行的 78 轉唱片的單面，其餘是醋酸盤、轉錄盤、私人與空中側錄，以及一部電影配樂的一部分。**只有 1953 年 3 月的一場錄音（八軌）是 Norman Granz 特地為當時新出現的 LP 格式錄的，但 Reinhardt 在專輯發行之前就過世了。**」同一段也寫：他最早的錄音是彈班鳩吉他替手風琴手與歌手伴奏，「而在他死前的最後一批錄音裡，他與一群更年輕、更現代的法國樂手一起，以 bebop 語彙彈**放大音量的吉他**」。",
+    "src": "https://en.wikipedia.org/wiki/Django_Reinhardt"
+   },
+   {
+    "f": "同一條目：1953 年 5 月 16 日，他從 Fontainebleau–Avon 車站走路回家、在巴黎一家俱樂部演出之後，於自家門外因腦溢血倒下。",
+    "src": "https://en.wikipedia.org/wiki/Django_Reinhardt"
+   },
+   {
+    "f": "同一條目：他最流行的作品已成為吉普賽爵士的標準曲，包括〈Minor Swing〉〈Daphne〉〈Belleville〉〈Djangology〉〈Swing '42〉與**〈Nuages〉**；吉他手 Frank Vignola 說世界上幾乎每一位重要的流行音樂吉他手都受過他的影響。",
+    "src": "https://en.wikipedia.org/wiki/Django_Reinhardt"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1442207211：標題《The Great Artistry of Django Reinhardt》、掛名 Django Reinhardt、releaseDate **1954-01-01**、8 軌、notExplicit、copyright「℗ 2010 Decca Records France」；八軌是同一組曲名（每軌後加「(Instrumental)」尾綴），**但曲序與 MB 不同**——Apple 為〈Nuages〉〈Night and Day〉〈Insensiblement〉〈Blues for Ike〉〈Brazil〉〈September Song〉〈Confessin' That I Love You〉〈Manoir De Mes Rêves〉。",
+    "src": "https://music.apple.com/us/album/1442207211"
+   }
+  ],
+  "hookCandidates": [
+   "他一生錄過九百多面，只有一場八軌是特地為 LP 這個新格式錄的",
+   "同一個 release-group 底下，2016 年那筆把碟名整個換成了〈Nuages〉"
+  ],
+  "sound": "Clef MGC-516 是一張 10 吋唱片、八軌，MB 上沒有登記曲長。曲目一半是美國標準曲（〈Night and Day〉〈September Song〉〈Brazil〉），一半是他自己那一支的曲子（〈Nuages〉〈Manoir de mes rêves〉〈Blues for Ike〉）。維基寫他死前最後一批錄音是與更年輕的法國樂手一起、以 bebop 語彙彈放大音量的吉他。（本欄由 MB release 4bd9e59d 的曲目表與載體欄、以及維基 Releases in his lifetime 段歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Nuages",
+   "Night and Day",
+   "Manoir de mes rêves"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1953 與 MB release-group first-release-date **1953-11** 一致（Clef MGC-516）。⚠ **Apple 記 1954-01-01**，策展層 curatorRisk 自記那是「美國發行年」——**本層找不到來源支持這個解釋，只能寫成「Apple 那筆記 1954」，不得寫「美國 1954 年才發行」。** **錄音年方面**：維基寫「只有 1953 年 3 月的一場錄音（八軌）是 Norman Granz 特地為 LP 格式錄的」，本輯正好是八軌、Clef（Granz 的廠牌）、1953 年 11 月發行——**但維基沒有把那場錄音與《The Great Artistry of Django Reinhardt》這個盤名連起來**。**「本張就是 1953 年 3 月那場」是推論，不得寫成斷言**，見 notes。",
+  "notes": "**鐵則（本批第 3 條）：錄音年與出版年不得互寫；而且本張的錄音年只能寫成「查無直述來源」。**\n🚩 **本張最需要小心的一處：維基那段話與本盤的對應是推論，不是來源。** 維基〈Django Reinhardt〉寫「只有 1953 年 3 月的一場錄音（八軌）是 Norman Granz 特地為當時新出現的 LP 格式錄的，但 Reinhardt 在專輯發行之前就過世了」——**它沒有給出那張專輯的名字**。本盤的八軌、Clef 廠牌與 1953 年 11 月的發行日與它高度吻合，但**吻合不是來源**。**行文可以分別寫這兩件事（維基那句話；本盤是 Clef 1953 年 11 月的八軌 10 吋唱片），但不得寫成「本張就是他為 LP 錄的那一場」或「本張是他生前最後一場錄音」。** 這正是本批第 4 條（策展層的時序主張一律當待查證）要擋的形狀。\n⚠ **擋下策展層三處主張**：（1）curatorWhy 寫本張「是他 1953 年 3 月在巴黎最後幾次錄音室工作的成果」——同上，**不得斷言**；（2）「改用**電吉他**、配 bebop 節奏組」——維基的用詞是「amplified guitar」（放大音量的吉他）而且是**泛指他死前的最後一批錄音、不是指本盤**，**不得掛到本盤上**；（3）「Norman Granz 的 Clef **在他死後**把這批母帶發行成 LP……**是他目錄的終點**」——「他死後發行」在時序上與維基相容（他 5 月過世、MB 記 11 月發行），**但「這批母帶」的指認與「目錄的終點」都是推論，不得入文。**\n✅ **可以寫、而且有源的死因與日期**：維基寫 1953 年 5 月 16 日他在自家門外因**腦溢血**倒下。⚠ **策展層寫「中風」，維基寫的是 brain hemorrhage（腦溢血）——照維基寫。**\n⚠ **載體是 10 吋，不是 12 吋**：MB 的 4bd9e59d 明確記 10\" Vinyl。策展層 curatorRisk 也寫「8 軌與 Clef 10 吋原盤相符」。**要提載體就寫 10 吋。**\n⚠ **同名假陽性（策展層已標）**：MB 另有 530a7d0d《The Great Artistry of Django Reinhardt》（1955-03-09、secondary-types [Compilation]）；Apple 另有 1615472183（1954-01-01、17 軌）。**鎖 collectionId 1442207211。** ⚠ 另外本 RG 底下的 2016 年那筆把標題換成《Nuages》，**那不是另一張碟，但也不是可用的盤名**。\n**試聽（本層覆核通過，附曲序偏差）**：探測層 `us:2→2`、front `us`、collectionId **1442207211**、8 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=1442207211&country=us&entity=song` 逐軌核對 MB 的 MGC-516：**八軌是同一組曲名**（Apple 每軌多了「(Instrumental)」尾綴、〈Confessin'〉寫成〈Confessin' That I Love You〉），**但曲序不同**：Apple 開場是〈Nuages〉、MB 開場是〈Night and Day〉。第 157 條的位置比對在第 1 軌不通過，但八軌全同、軌數相符，屬排序差異而非配錯碟（Apple 那筆的 copyright 是 ℗ 2010 Decca Records France，是法國方的數位重排）。**維持 ready / us / 1442207211，並在卡上記「開場軌兩個來源不一致」。** ⚠ **行文不得寫「開場是哪一首」。** ⚠ **「(Instrumental)」尾綴不是第 43／57 條要擋的翻唱標記**（本輯本來就全是器樂），不影響判定。\n**互斥分派——本張獨占 Quintette du Hot Club de France、九百多面 78 轉、以及 1953 年 5 月 16 日那天這條線。**"
+ },
+ {
+  "key": "desc2:Teddy Wilson|With Billie in Mind",
+  "artist": "Teddy Wilson",
+  "album": "With Billie in Mind",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c88ff9cd 的欄位：title《With Billie in Mind》、artist-credit「Teddy Wilson」、first-release-date 1972、primary-type Album、secondary-types 空、**轄下只有 1 個 release**。",
+    "src": "https://musicbrainz.org/release-group/c88ff9cd-f8ea-4f8a-b07d-bbcb06e803eb"
+   },
+   {
+    "f": "唯一那筆 release 是 1972 年的 US 版、由 Chiaroscuro Records 發行、編號 CR 111、載體 12\" Vinyl，**14 軌**：〈What a Little Moonlight Can Do〉〈This Year's Kisses〉〈When You're Smiling〉〈Easy to Love〉〈Sugar〉〈Easy Living〉〈Body and Soul〉〈Miss Brown to You〉〈If You Were Mine〉〈Them There Eyes〉〈I'll Never Be the Same〉〈I Wished on the Moon〉〈Why Was I Born〉〈What a Night, What a Moon, What a Girl〉（MB 上這 14 軌都沒有登記曲長）。",
+    "src": "https://musicbrainz.org/release/cc9c82a7-b68d-4173-aeaf-716f7ee1576f"
+   },
+   {
+    "f": "英文維基〈With Billie in Mind〉開頭：這是鋼琴家 Teddy Wilson 的**獨奏**致敬專輯，選的是與 Billie Holiday 有關的曲目，**1972 年在紐約錄**、由 Chiaroscuro 廠牌發行；**該專輯 1990 年以 CD 再發，多加了六軌。**",
+    "src": "https://en.wikipedia.org/wiki/With_Billie_in_Mind"
+   },
+   {
+    "f": "同一條目引 AllMusic 的 Scott Yanow：「製作人 Hank O'Neal 向這位資深的搖擺鋼琴手 Teddy Wilson 提議，錄一整套 Billie Holiday 的曲子，因為『Lady Day』最偉大的幾面就是與 Wilson 在 1930 年代錄的……Wilson 狀態極佳，顯然很享受重彈那些他多年沒碰的曲子，處於他的巔峰。經典的搖擺樂。」",
+    "src": "https://en.wikipedia.org/wiki/With_Billie_in_Mind"
+   },
+   {
+    "f": "同一條目的曲目表把 CD 加軌逐一標出：〈I Cried for You〉〈If Dreams Come True〉〈Fooling Myself〉〈Mean to Me〉〈Nice Work If You Can Get It〉〈I'll Get By (As Long as I Have You)〉六首都註明「Additional track on CD reissue」；Personnel 欄只有一行——Teddy Wilson，鋼琴。",
+    "src": "https://en.wikipedia.org/wiki/With_Billie_in_Mind"
+   },
+   {
+    "f": "英文維基〈Teddy Wilson〉開頭：Theodore Shaw Wilson（1912 年 11 月 24 日–1986 年 7 月 31 日）是美國爵士鋼琴家，樂評 Scott Yanow 稱他為「the definitive swing pianist」，說他的鋼琴風格溫和、優雅而技巧超群，深受 Earl Hines 與 Art Tatum 影響。**「與 Goodman 合作時，他是最早與白人樂手同台顯著演出的黑人樂手之一。」**",
+    "src": "https://en.wikipedia.org/wiki/Teddy_Wilson"
+   },
+   {
+    "f": "同一條目：1935 年他在 Mildred Bailey 的家庭派對上與 Benny Goodman、Carl Bellinger 即興，引起製作人 John Hammond 注意，Hammond 替他們安排了幾次錄音；這些錄音成了 Benny Goodman Trio 的基礎——Goodman、Wilson 與鼓手 Gene Krupa（後來加入鐵琴手 Lionel Hampton）。三重奏在 Goodman 大樂團的中場時段演出。「加入這個三重奏，讓 Wilson 成為最早在種族融合的團體裡顯著演出的黑人樂手之一。」",
+    "src": "https://en.wikipedia.org/wiki/Teddy_Wilson"
+   },
+   {
+    "f": "同一條目：Hammond 也促成 Wilson 1935 到 1939 年與 Brunswick Records 的合約，錄下當時流行歌曲的 hot swing 編曲；他有 38 首錄音成為熱門，多數是與 Lena Horne、Helen Ward、Ella Fitzgerald、Mildred Bailey 與 Billie Holiday 等歌手合作的室內爵士錄音。「**光是 1935 年一年，Billie Holiday 與 Teddy Wilson 就一起錄了十四面。**」",
+    "src": "https://en.wikipedia.org/wiki/Teddy_Wilson"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1213953609：標題《With Billie In Mind》、掛名 Teddy Wilson、releaseDate 1972-05-01、**20 軌**、notExplicit、copyright「℗ 2002 CHIAROSCURO RECORDS」；前五軌與 MB 的 CR 111 曲名、曲序相同（〈What a Little Moonlight Can Do〉〈This Year's Kisses〉〈When You're Smiling〉〈Easy To Love〉〈Sugar〉），**第 6 軌起兩邊排序不同**，MB 那 14 軌全部包含在 Apple 的 20 軌裡，Apple 多出的六軌正是維基標為「Additional track on CD reissue」的那六首。",
+    "src": "https://music.apple.com/us/album/1213953609"
+   }
+  ],
+  "hookCandidates": [
+   "光是 1935 年一年，他就和 Billie Holiday 一起錄了十四面",
+   "整張碟只有一個人：Personnel 欄上就寫一行「Teddy Wilson，鋼琴」"
+  ],
+  "sound": "維基的 Personnel 欄只有一行——Teddy Wilson，鋼琴；十四首曲目全是與 Billie Holiday 有關的歌。AllMusic 的 Scott Yanow 說製作人 Hank O'Neal 提議這個做法，是因為 Holiday 最偉大的幾面就是 1930 年代與 Wilson 錄的，而 Wilson 在這裡「狀態極佳，顯然很享受重彈那些他多年沒碰的曲子」。維基對他的定性是「the definitive swing pianist」，風格溫和、優雅而技巧超群。（本欄由維基〈With Billie in Mind〉的 Personnel 欄與 Yanow 評論、以及〈Teddy Wilson〉開頭的敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "What a Little Moonlight Can Do",
+   "Easy Living",
+   "Miss Brown to You"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1972 與 MB release-group first-release-date 1972 一致（Chiaroscuro CR 111），英文維基也寫「recorded in New York City in 1972 and released on the Chiaroscuro label」。**本張的錄音年與出版年同為 1972**，不必分寫。⚠ **CD 再發年兩說**：**維基寫 1990 年以 CD 再發**、**Apple 那筆的 copyright 是「℗ 2002 CHIAROSCURO RECORDS」**。兩說本層無法互相印證，**行文不得寫 CD 再發的年份。**",
+  "notes": "**錄音年與出版年同為 1972，不得從別張搬「錄音年≠出版年」的句型過來。**\n⚠ **軌數必須指明版本（第 141 條的形狀）**：**MB 的 1972 年 LP 是 14 軌、Apple 那筆是 20 軌**，維基明講 CD 再發「多加了六軌」並逐一標出是哪六首。**「這張碟有幾軌」的單一數字一律禁用**；要提就得寫「1972 年的 LP 收十四首、CD 再發多了六首」。\n⚠ **擋下策展層兩處主張**：（1）curatorWhy 寫本張「是他晚期目錄裡**最常被引用的一張**」——無來源，**不得入文**；（2）curatorWhy 寫 Benny Goodman 三重奏「1936 年那個編制是**最早在台上公開混合黑白樂手的名團之一**」——維基的原話有兩處不同：**年份是 1935 年**（家庭派對即興、Hammond 安排錄音、三重奏成形），而且措辭是「他是最早在**種族融合的團體**裡顯著演出的**黑人樂手**之一」——**主詞是 Wilson 這個人，不是「名團」**。**要寫就照維基的主詞與 1935 這個年份寫。**\n✅ **有源、而且是本張最硬的兩塊素材**：（a）「光是 1935 年一年，Billie Holiday 與 Teddy Wilson 就一起錄了十四面」（維基〈Teddy Wilson〉直述、有數字有來源，**這不是算術，可寫**）；（b）製作人 Hank O'Neal 提議錄一整套 Holiday 曲目的緣由（維基引 Yanow）。\n**掛名**：MB 的 artist-credit 原文是「Teddy Wilson」（不是 Trio、不是 Sextet），與卡片一致。策展層 curatorRisk 提醒 MB 名下有大量掛 Billie Holiday 的合輯（如 6141129f），與池中 Billie Holiday 的 8 張字串比對會互相命中——**本卡鎖 rgMbid 與 collectionId，不用字串比對。**\n**試聽（本層覆核，判定 ready 但要標明版本偏差）**：探測層 `us:2→1`、front `us`、collectionId **1213953609**、20 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=1213953609&country=us&entity=song` 逐軌核對 MB 的 CR 111：⚠ **Apple 20 軌 vs MB 14 軌，版本偏差成立**；但（a）**前五軌曲名與曲序逐項相同**（第 1 軌兩邊都是〈What a Little Moonlight Can Do〉），（b）**MB 那 14 首全部包含在 Apple 的 20 首裡**，多出的六首正是維基標明的 CD 加軌，（c）廠牌同為 Chiaroscuro。**同一張碟的 CD 擴充版，不是別碟。** 第 157 條要求的位置比對在第 1 軌通過，固定試聽不會取錯曲。\n**本層裁定：維持 ready / us / 1213953609，並在卡上記「這一筆對應的是 Chiaroscuro 的 CD 擴充版（20 軌），不是 1972 年的 14 軌 LP」。** 依下放判準第 2 條（可逆）直接定。⚠ **行文不得寫「第幾軌是什麼」**——第 6 軌起兩邊排序不同。\n**互斥分派——本張獨占 Benny Goodman 三重奏、John Hammond、Hank O'Neal 與「1935 年十四面」這條線。**"
+ }
+]

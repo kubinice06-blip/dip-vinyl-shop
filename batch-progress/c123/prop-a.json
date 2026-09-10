@@ -1,0 +1,481 @@
+[
+ {
+  "artist": "Ruja",
+  "album": "Ruja",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-16885-6，SU 1982；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Ruja 1971 年在塔林成立，是愛沙尼亞蘇維埃時期最被反覆引用的樂團，主腦 Rein Rannap 與詞人 Urmas Alender 把 Betti Alver、Juhan Liiv 的詩譜成搖滾曲。樂團成立十一年後才拿到第一張 Melodiya 正式 LP，這張就是那一張。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Ruja 池中 0 張，整位藝人不存在。MB release-group 回問確認 primary-type Album、轄下 1 個 Official release（1982 SU、Мелодия С60-16885-6、12\" Vinyl 10 軌）；另兩個轄下條目是 Pseudo-Release（拉丁與西里爾兩種盤名寫法），不是獨立版本。",
+  "risk": "撞卡風險：池中無 Ruja。掛名 4 字母，MB 精確查詢首筆即為目標（bac75c73…，Group/EE/1971-09），其餘 11 筆為 Florica Ruja、Ruja Karrera、Valdis Rūja 等無關實體，靠 country=EE 與 begin=1971 分辨，不靠 score。盤名與掛名同字（self-titled），與 1979 年的同名 EP 摺鍵相同，收的是 1982 的 Album，EP 已寫入刻意不釘。年份分歧：無，MB first-release-date 1982 與盤面目錄號序列一致。封面與試聽：CAA release-group 回 200、2 張圖；Apple 八店面（ee/lv/lt/ru/de/fi/us/gb）以「Ruja Ruja」搜出 64 筆全為西班牙語福音單曲與 Realejo，未見目標；`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811。回問確認：title「Ruja」、artist-credit「Ruja」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 3 個 release（7f57d7a7… 1982/SU/Official，Мелодия С60-16885-6，12\" Vinyl 10 軌；另兩筆為 Pseudo-Release）。藝人 MBID bac75c73-9d3b-4819-800c-0e1050eb8ff0（Group／EE／1971-09），以 release-group?artist=…&limit=100&offset= 分頁全列 20 個 RG。刻意不釘：2c415596-6e15-4e64-a8f6-6825bd55ac80《Ruja》（1979，primary-type EP）、6db9e7da-ce34-41dd-a768-536f7308658b《Kivi veereb》（1988 LP，本批名額不足，可進下一批）、9c1ff96c-3dd7-42a6-b285-00e9389531b8《Пусть будет все》（1989，全西里爾盤名）、41dd97d6-d0f8-448a-8fef-4c800d1f2800《Must lind》（1994 Compilation，超出 1970–1991 年份窗口）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ruja 1982；Руя；Ruja Melodiya С60-16885",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ruja",
+  "album": "Algus (Studio 1971-1975)",
+  "year": 1971,
+  "genres": [
+   "rock"
+  ],
+  "label": "Eesti Rahvusringhääling／Ruja 遺產計畫，XW 2020-08-20 數位發行；原始母帶為 1971–1975 年愛沙尼亞廣播錄音",
+  "why": "Ruja 1971 年成立，但第一張正式 LP 遲至 1982 年才出（見本批同掛名另一張卡）。1971–1975 這五年只有電台錄音室母帶，2020 年的遺產計畫把它整編成《Algus (Studio 1971-1975)》。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：Ruja 池中 0 張。收這張的理由是 §5.6 的核心情形——這批錄音沒有原盤形態，合輯就是唯一形態。同一批母帶在 2020 年同日還出了另外八種切法（Algu 現場版、Esimene、Kirjanduslik I／II、Pop RUJA、Rahvuslik Rokk、Hiline i／II），依 §5.6「同一批錄音的多種合輯只挑最權威的一種」，取涵蓋起點且標明 Studio 的這一種。",
+  "risk": "年份：依本批裁定取原始錄音年 1971，2020-08-20 的合輯出版年寫在 mbNote 與 exceptionReason，行文時三個年份要分開講。撞卡風險：池中無 Ruja；與本批另一張《Ruja》(1982) 盤名不同，摺鍵不撞。掛名：Apple 上寫成全大寫「RUJA」，MB artist-credit 為「Ruja」，取 MB。封面與試聽：CAA release-group 回 404；Apple 八店面全部命中同一個 collectionId 1525889897（ee/lv/lt/ru/de/fi/us/gb），是本批店面覆蓋最好的一張。",
+  "mbNote": "釘 release-group 71cbc804-92f3-4fd8-815c-75d63bc79567。回問確認：title「Algus (Studio 1971-1975)」、artist-credit「Ruja」、first-release-date 2020-08-20、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（c5df899e… 2020-08-20/XW/Official、Digital Media 9 軌、無 label-info）。藝人 MBID bac75c73-9d3b-4819-800c-0e1050eb8ff0。刻意不釘（同日同批母帶的其他切法，§5.6 只挑一種）：00e01c19-9a2f-45ab-9f80-f008bd53ec37《Algu (Live 1971-1974)》（現場版）、22c924b8-e23a-4577-b058-a082072707aa《Esimene》、5eedf02e-f086-485a-9f92-4bbf2165f6c2《Kirjanduslik I (1976-1977)》、ffc9a046-1aa8-487c-89c1-64d2e2acb8e1《Kirjanduslik II (1978-1980)》、aed06068-8c7d-45a6-b36b-6ba29ffe151b《Pop RUJA (1981-1982)》、f3c758a0-09ef-4712-84db-ad11d0afef48《Rahvuslik Rokk (1980-1984)》、5907f657-27b1-410e-85dd-d60bd29de546《Hiline i (1982-1985)》、fee30dd2-f6b1-49d1-b596-bd3ca0d19575《Hiline II (1986-1987)》、57516105-d841-4506-90c3-9e13a8df1625《Teine (Ilmumata 1982)》。",
+  "releaseType": "Compilation",
+  "exceptionReason": "Ruja 前五年（1971–1975）從未拿到 Melodiya 的正式 LP，那批曲目只以愛沙尼亞廣播的錄音室母帶留存；2020 年這套遺產計畫把母帶整編成九軌單一發行品，是這批錄音唯一可建檔、可取得的形態，也是愛沙尼亞地下搖滾第一代最早的成套文獻。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/71cbc804-92f3-4fd8-815c-75d63bc79567",
+   "https://music.apple.com/ee/album/1525889897"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Ruja Algus Studio 1971-1975；RUJA Algus；Ruja varajased salvestused",
+  "reissuedBy": "Eesti Rahvusringhääling",
+  "g": "a"
+ },
+ {
+  "artist": "Vitamiin",
+  "album": "Ansambel \"Vitamiin\"",
+  "year": 1983,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 19587 005，SU 1983；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Vitamiin 1978 年在塔林成立，是 1980 年代愛沙尼亞最紅的流行搖滾團之一，也是少數同時發愛沙尼亞語與俄語盤面的團（同期另有 EP《Группа \"Витамин\"》）。這張是他們第一張 LP。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Vitamiin 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1983 SU、Мелодия С60 19587 005、12\" Vinyl 10 軌）。",
+  "risk": "撞卡風險：池中無 Vitamiin；MB 精確查詢只回 1 筆（c2cab48e…，Group／EE／1978，disambiguation「Estonian pop rock band」），無同名實體，是本批少數不必靠 disambiguation 排除的掛名。⚠ 同掛名另有 1984 與 1987 兩張都叫《Vitamiin》的 LP，三張摺鍵會有兩張相同，本批只收盤名不同的 1983 這張，另兩張寫入刻意不釘。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Vitamiin Ansambel」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group e078bae3-d618-41f7-942c-99752732b9c3。回問確認：title「Ansambel \"Vitamiin\"」、artist-credit「Vitamiin」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 1 個 release（46dc4055… 1983/SU/Official、Мелодия С60 19587 005、12\" Vinyl 10 軌）。藝人 MBID c2cab48e-453e-4573-b41f-24b8565aaa94（Group／EE／1978），分頁全列 7 個 RG。刻意不釘：7c7f21eb-eba0-4d28-866f-fb77079309d0《Vitamiin》(1984) 與 c0a81386-b03e-44c7-96dc-00a498b49dd1《Vitamiin》(1987)（兩張盤名相同，摺鍵會互撞，本批只取盤名可辨的 1983）、6a4e2a43-e71c-4766-b2b3-1d6c85b89533《Vitamiin》(1981，EP)、9aac00a2-a13a-4796-b4bf-de886726da54《Группа \"Витамин\"》(1983，EP)、1c18e479-e858-496d-9918-7736a923bedb《Parimad Laulud Aastatest 1978-1989》(1997 Compilation，超出年份窗口)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vitamiin 1983；Ansambel Vitamiin；Группа Витамин；Vitamiin Melodiya С60 19587",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Kaseke",
+  "album": "Põletus",
+  "year": 1983,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 19829 008，SU 1983；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Kaseke 1980 年成立於塔林，是愛沙尼亞融合爵士搖滾一路最常被列進正典的樂團，1983 年這張《Põletus》是他們唯一的 LP，1981 年只出過 EP《Sõnum》。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Kaseke 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1983 SU、Мелодия С60 19829 008、12\" Vinyl 9 軌）。",
+  "risk": "撞卡風險：池中無 Kaseke；MB 精確查詢只回 1 筆（839a2dad…，Group／EE／1980），無同名實體。⚠ 2000 年的《Põletus / Sõnum》(3f838223…) 是把 LP 與 EP 併成一張的復刻合輯，盤名含本卡盤名為子字串，摺鍵不同但下游做子字串配對時會撞，已寫入刻意不釘。年份分歧：無。封面與試聽：CAA release-group 回 200、2 張圖；Apple 八店面以「Kaseke Põletus」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e。回問確認：title「Põletus」、artist-credit「Kaseke」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 1 個 release（6eb8e828… 1983/SU/Official、Мелодия С60 19829 008、12\" Vinyl 9 軌）。藝人 MBID 839a2dad-24b9-46b7-ac80-57f700dcc15f（Group／EE／1980），分頁全列 3 個 RG。刻意不釘：a7d1c711-6494-3938-b44f-45f75d5865ba《Sõnum》(1981，primary-type EP)、3f838223-c8c6-3e37-a508-425ca93a9311《Põletus / Sõnum》(2000 Compilation，超出年份窗口且與本卡同一批錄音)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kaseke Põletus；Kaseke Poletus；Kaseke Melodiya С60 19829",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Mess",
+  "album": "Sven Grünberg's Proge-Rock Group Mess",
+  "year": 1975,
+  "genres": [
+   "rock"
+  ],
+  "label": "Bella Musica，BM-CD 31.4199，DE 1995（CD 9 軌）；原始母帶為 1974–1976 年愛沙尼亞廣播與 Melodiya 錄音",
+  "why": "Mess 1974 年在塔林成立，Sven Grünberg 主導，是愛沙尼亞前衛搖滾的起點；樂團解散前只留下 1980 年的一張 EP，整批 1974–1976 的錄音在蘇聯時期不曾發行成 LP。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Mess 池中 0 張。1995 年 Bella Musica 這張 CD 把那批母帶整編成九軌，是 §5.6 的標準情形。MB 回問確認 primary-type Album、secondary-types [Compilation]、轄下 1 個 Official release（1995 DE、Bella Musica BM-CD 31.4199）。",
+  "risk": "⚠ 短掛名回問：「Mess」在 MB 回 15 筆，目標（a5d97a6f…，Group／EE／1974-01，disambiguation「Estonian prog rock group」）**排第 2、score 94**，第 1 名是義大利的 Mess Mess Mess（score 100）；另有德國龐克 Mess、墨西哥 Oi! MESS、以色列 M.E.S.S、俄國 garage MESS、日本龐克 Mess、斯洛伐克歌手 Mess 等，**score 排序完全不可用，只有 disambiguation 與 country=EE 分得出來**。年份：依本批裁定取原始錄音年 1975（樂團活動期 1974–1976），1995 的 CD 出版年寫進 mbNote，行文時兩個年份要分開講。撞卡風險：池中已有 Sven Grünberg《Hingus》(1981)，本卡掛名是樂團「Mess」不是 Grünberg 個人，摺鍵不撞；但盤名裡含「Sven Grünberg's」，下游做藝人子字串配對時要注意。封面與試聽：CAA release-group 回 404；Apple 八店面全部命中同一個 collectionId 287441442（掛名寫成「Sven Grünberg's Proge-Rock-Group」、盤名寫成「Mess」，與 MB 反過來，配對要放寬）。",
+  "mbNote": "釘 release-group e5ad9b28-520e-3d72-90ce-86cd62e9142a。回問確認：title「Sven Grünberg's Proge-Rock Group Mess」、artist-credit「Mess」、first-release-date 1995、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（92e45e7c… 1995/DE/Official、Bella Musica BM-CD 31.4199、CD 9 軌）。藝人 MBID a5d97a6f-70d1-4376-b585-3126e475d890（Group／EE／1974-01，disambiguation「Estonian prog rock group」），分頁全列 3 個 RG。刻意不釘：79156a8c-3b90-46d1-8d63-4175f8a19b9c《Mess》(1980，primary-type EP，且該 RG 同時掛在 Sven Grünberg 名下)、20a474d9-e844-33f6-b844-9f2a879717f8《Küsi eneselt》(2004，超出年份窗口)。",
+  "releaseType": "Compilation",
+  "exceptionReason": "Mess 是 Sven Grünberg 1974 年組的前衛搖滾團，在蘇維埃愛沙尼亞從未拿到自己的 LP，只在 1980 年出過一張 EP；1974–1976 年的完整曲目要到 1995 年德國 Bella Musica 這張 CD 才第一次成套面世，是這批錄音唯一可得的形態，也是愛沙尼亞前衛搖滾史最常被引用的一份文獻。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/e5ad9b28-520e-3d72-90ce-86cd62e9142a",
+   "https://music.apple.com/ee/album/287441442"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Mess Sven Grünberg Proge-Rock Group；Sven Grunberg Mess；Mess Eesti progerock",
+  "reissuedBy": "Bella Musica",
+  "g": "a"
+ },
+ {
+  "artist": "In Spe",
+  "album": "In Spe",
+  "year": 1983,
+  "genres": [
+   "rock",
+   "classical"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 19367 001，SU 1983；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "In Spe 1979 年由 Erkki-Sven Tüür 在塔林組成（他後來成為愛沙尼亞最重要的當代作曲家之一），是把室內樂編制搬進搖滾團的代表，1983 年這張同名首發是愛沙尼亞前衛搖滾正典的第一張。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 In Spe 池中 0 張。MB 回問確認 primary-type Album、轄下 2 個 Official release（1983 SU 原盤 Мелодия С60 19367 001、12\" Vinyl 6 軌；1999-12 EE 再發）。",
+  "risk": "⚠ 短掛名回問：「In Spe」在 MB 回 15 筆，目標（2c3ef15a…，Group／EE／1979）雖排第 1、score 100，但其餘 14 筆是 S.P.E.、Alice in Chains、In Flames、Phish、INXS 等完全不相干的模糊比對，是「score 高但清單噪音大」的形狀；以 country=EE 與 begin=1979 確認。⚠ 同掛名 1985 年另有一張也叫《In Spe》的 LP，摺鍵與本卡相同會互撞——那張本批以其 1994 法國再發名《Typewriter Concerto in D》另收一卡（第 45 條，改過名的碟取再發名），兩卡摺鍵因此不同。撞卡風險：池中無 In Spe。年份分歧：無。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面以「In Spe In Spe」搜出 55 筆，全為 GUIDO、Filterwolf、Alo Mattiisen 單曲與葛利果聖歌合輯，未見目標；`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group f6447446-8307-3aed-a9c0-c2554adc26f1。回問確認：title「In Spe」、artist-credit「In Spe」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 2 個 release（d3377f94… 1983/SU/Official、Мелодия С60 19367 001、12\" Vinyl 6 軌；212c56db… 1999-12/EE/Official）。藝人 MBID 2c3ef15a-75bb-4208-b184-8d8fda50b627（Group／EE／1979），分頁全列 3 個 RG。刻意不釘：78584e5a-7bb5-4152-87a7-7d010ab61314《In Spe》(2019，超出年份窗口，且盤名與本卡相同)。同掛名 1985 年 RG c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d 本批另收一卡，取其再發名《Typewriter Concerto in D》。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "In Spe 1983；In Spe Melodiya С60 19367；Erkki-Sven Tüür In Spe",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "In Spe",
+  "album": "Typewriter Concerto in D",
+  "year": 1985,
+  "genres": [
+   "rock",
+   "classical"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-23199-000，SU 1985；1994 年法國 Musea 以《Typewriter Concerto in D》之名再發（FGBG 4118.AR，CD 8 軌）",
+  "why": "In Spe 第二張 LP，1985 年由 Melodiya 以《In Spe》之名發行，1994 年法國前衛搖滾廠 Musea 再發時改名《Typewriter Concerto in D》——同名曲是 Erkki-Sven Tüür 寫給打字機與室內樂團的協奏曲，也是這團在蘇聯之外最有名的一首。依第 45 條「改過名的碟取再發名」，卡片盤名取再發名，這樣也不會與同掛名 1983 年那張同名 LP 摺出同一個鍵。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 In Spe 池中 0 張。MB 回問確認 primary-type Album、轄下 2 個 Official release（1985 SU 原盤；1994 FR Musea 再發）。",
+  "risk": "⚠ 這張與本批同掛名的《In Spe》(1983) 是兩張不同的碟，MB 上兩個 RG 的 title 都是「In Spe」，只有 first-release-date 與轄下 release 分得開；本卡取 1994 再發名，摺鍵因此不撞，但下游若回頭用 MB RG title 比對會看到兩個一樣的字串，**不能用 RG title 當識別鍵**。年份：取原盤年 1985（第 220 條），1994 的 Musea 再發年寫進 mbNote 與 label。撞卡風險：池中無 In Spe。封面與試聽：CAA release-group 回 200、8 張圖（本批最多）；Apple 八店面以「In Spe Typewriter Concerto」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d。回問確認：title「In Spe」（MB RG 標題仍是 1985 原名）、artist-credit「In Spe」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 2 個 release（00e61f8a… 1985/SU/Official、Мелодия С60-23199-000、12\" Vinyl 6 軌；2118b5a5… 1994/FR/Official、Musea FGBG 4118.AR、CD 8 軌、title「Typewriter Concerto in D」）。**卡片盤名取 1994 再發名，第 45 條。** 藝人 MBID 2c3ef15a-75bb-4208-b184-8d8fda50b627。刻意不釘：f6447446-8307-3aed-a9c0-c2554adc26f1《In Spe》(1983)（本批另收一卡）、78584e5a-7bb5-4152-87a7-7d010ab61314《In Spe》(2019，超出年份窗口)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "In Spe Typewriter Concerto in D；In Spe 1985；Kirjutusmasina kontsert；In Spe Musea FGBG 4118",
+  "reissuedBy": "Musea",
+  "g": "a"
+ },
+ {
+  "artist": "Radar",
+  "album": "Trofee",
+  "year": 1985,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 21713 006，SU 1985；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Radar 1978 年在塔林成立，1981 年先以 EP 起步，也替 Jaak Joala 當過伴奏團（1981 年的《Jaak Joala & Radar》EP）；《Trofee》是他們第一張 LP。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Radar 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1985 SU、Мелодия С60 21713 006、12\" Vinyl 8 軌）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250 的典型案例）：「Radar」在 MB 回 15 筆，目標（5a6b2909…，Group／EE／1978，disambiguation「Estonian band」）**排第 2、score 98**，第 1 名是法國的 Radar（Christophe Goze & Francis Peyrat，score 100）；後面還有日本爵士 Radar、義大利 RADAR、Surrey AOR Radar、邁阿密 techno 製作人、德國兩團、阿根廷團、芬蘭團、俄國 ska Радар、英國 90s 團、英國 00s new wave 團、紐芬蘭饒舌歌手——**共擋下 14 個同名實體，score 排序不可用**。撞卡風險：池中無 Radar。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Radar Trofee」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 6e2b0208-e86b-4a0e-87fe-5186ec6456ca。回問確認：title「Trofee」、artist-credit「Radar」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 1 個 release（cdaa0ada… 1985/SU/Official、Мелодия С60 21713 006、12\" Vinyl 8 軌）。藝人 MBID 5a6b2909-7f30-48fd-8338-5fdce2dee4c5（Group／EE／1978，disambiguation「Estonian band」），分頁全列 5 個 RG。刻意不釘：06a91615-4bee-435c-92e3-6fa53ea884fd《Radar》(1981，EP)、6dac79b9-c4df-4ce0-bc29-6bc551742c8a《Jaak Joala & Radar》(1981，EP)、a76b9fef-ce60-4cdd-9da2-860b2ae2d539《Minu elu》(2017 Compilation，超出年份窗口，且主掛名為 Jaak Joala)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Radar Trofee；Ansambel Radar；Radar Melodiya С60 21713",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Radar",
+  "album": "Baltic Coast",
+  "year": 1987,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 25125 006，SU 1987；壓片走 Tallinn 分廠",
+  "why": "Radar 的第二張 LP，也是他們少數用英語盤名發行的碟——1987 年蘇聯已在改革開放（perestroika）階段，Melodiya 的加盟共和國盤面開始出現外銷取向的英語命名，這張是愛沙尼亞這條線的代表例。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Radar 池中 0 張，本批另收其 1985 年首張《Trofee》，兩張是同一團的前後兩作。MB 回問確認 primary-type Album、1 個 Official release（1987 SU、Мелодия С60 25125 006、12\" Vinyl 7 軌）。",
+  "risk": "⚠ 短掛名回問同上一卡：「Radar」在 MB 回 15 筆、目標排第 2、score 98，14 個同名實體只能靠 disambiguation「Estonian band」與 country=EE 排除。⚠ 盤名「Baltic Coast」是常見英語詞組，下游做 Apple／Discogs 模糊比對時噪音會很大，**不建議只用盤名當識別鍵**。撞卡風險：池中無 Radar；與本批《Trofee》摺鍵不同。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Radar Baltic Coast」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 4215b661-570a-4777-8906-56f27d31a5f1。回問確認：title「Baltic Coast」、artist-credit「Radar」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 1 個 release（84fcf30c… 1987/SU/Official、Мелодия С60 25125 006、12\" Vinyl 7 軌）。藝人 MBID 5a6b2909-7f30-48fd-8338-5fdce2dee4c5。刻意不釘：見同掛名《Trofee》卡的清單（06a91615…、6dac79b9…、a76b9fef…）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Radar Baltic Coast；Radar 1987；Radar Melodiya С60 25125",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Rein Rannap",
+  "album": "Improvisatsioonid",
+  "year": 1982,
+  "genres": [
+   "classical",
+   "jazz"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 19989 001，SU 1982；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Rein Rannap 是 Ruja 的鍵盤手與主要作曲者，同時是受過正規訓練的鋼琴家；《Improvisatsioonid》是他第一張個人名義 LP，整張只有兩段長篇即興，把古典訓練與搖滾團的語彙放在同一張碟上——這是蘇維埃愛沙尼亞少見、Melodiya 願意放行的實驗形態。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Rein Rannap 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1982 SU、Мелодия С60 19989 001、12\" Vinyl **2 軌**）。",
+  "risk": "⚠ 實體形態要注意：這張是 12\" LP 但只有 2 軌（各佔一面的長篇即興），下游若用軌數當識別鍵會誤判為單曲（第 174 條的反面情形）。撞卡風險：池中無 Rein Rannap；MB 精確查詢首筆即為目標（47e2a032…，Person／EE／1953-10-06，disambiguation「Estonian composer and pianist」），其餘為 Riinu／Jaan／Heino Rannap 等同姓愛沙尼亞人與義大利團 Rein，靠 disambiguation 分辨。⚠ 同掛名 1986 年另有《Сольные импровизации / Solo Improvisations》(4b5350e5…)，盤名是同一個意思的俄英雙語版，**與本卡是兩張不同的碟**，本批只收 1982 這張以免混淆。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Rein Rannap Improvisatsioonid」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 757c144c-0e7d-49f9-8eeb-3c2e580d4f8c。回問確認：title「Improvisatsioonid」、artist-credit「Rein Rannap」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release（2d2df305… 1982/SU/Official、Мелодия С60 19989 001、12\" Vinyl 2 軌）。藝人 MBID 47e2a032-0cf3-42b3-8b6a-a1de8ae87c1d（Person／EE／1953-10-06），分頁全列 12 個 RG。刻意不釘：4b5350e5-9148-4c28-8188-5f9e6a9e81cd《Сольные импровизации / Solo Improvisations》(1986，盤名為俄英雙語、與本卡易混，本批不收)、db4981c9-cdec-4adc-a5e3-e6ab5c77179a《Varajased laulud》(2002 Compilation)、778938d4-94a8-402c-854c-a280136d1c26《Läbi jäätund klaasi》(2006 Compilation)，後兩者均超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rein Rannap Improvisatsioonid；Rein Rannap 1982；Рейн Раннап",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Gunnar Graps ja Magnetic Band",
+  "album": "Roosid papale",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-17019-20，SU 1982；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Gunnar Graps 是愛沙尼亞硬搖滾的代表人物，1976 年組 Magnetic Band；《Roosid papale》是這個組合唯一的 LP，1980 年先出過同名 EP。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Gunnar Graps 與 Magnetic Band 池中都是 0 張（掃「Gunnar Graps」只摺到不相干的 Gunna，掃「Magnetic Band」摺到 Chico Magnetic Band 與 Okay Temiz Magnetic Band，都不是本人）。MB 回問確認 artist-credit 是「Gunnar Graps ja Magnetic Band」（不是任一單方），primary-type Album、1 個 Official release（1982 SU、Мелодия С60-17019-20、12\" Vinyl 11 軌）。",
+  "risk": "⚠ 掛名分裂風險：這位在 MB 上有三個實體——Gunnar Graps（18f30f5f…，Person）、Gunnar Graps Group（e895f275…，disambiguation「formerly Magnetic Band」，名下 0 個 RG）、Magnetic Band（0d56fb92…）；而本卡的 RG artist-credit 又是第四種寫法「Gunnar Graps ja Magnetic Band」。**依第 20 條取 artist-credit 字串**，但要提醒下游：這張碟在別處會以上述任一種寫法出現，做撞卡比對時四種都要查。同掛名 1988 年的《Põlemine》(6d61ff86…) artist-credit 又是第五種「Gunnar Grapsi Grupp」，本批為避免再拆一個掛名而不收。撞卡風險：池中無任何一種寫法。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Gunnar Graps Roosid papale」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group f8c2cb64-0a06-44a4-b902-535796b8bceb。回問確認：title「Roosid papale」、artist-credit「Gunnar Graps ja Magnetic Band」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release（7a39b977… 1982/SU/Official、Мелодия С60-17019-20、12\" Vinyl 11 軌）。**該 RG 同時列在 Gunnar Graps（18f30f5f-3714-4c16-9b0d-6acacd0e82ac）與 Magnetic Band（0d56fb92-b486-46a8-ab6d-0d6d4c852b0a）兩個藝人名下**，兩邊分頁全列各為 5 與 3 個 RG。刻意不釘：8362fb21-bbfb-4b24-933d-b5aa11240520《Magnetic Band》(1980，EP)、6d61ff86-1659-45cc-baa1-baa180852e91《Põlemine》(1988，artist-credit 為第五種寫法「Gunnar Grapsi Grupp」，收了會再拆一個掛名)、a47627c9-a23a-466a-b6ca-1225cc92f511《Tühjad pihud》(1995 Compilation)、2a37b784-7db6-4c38-813d-bf47727234c0《Eesti kullafond》(2002 Compilation)，後兩者超出年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gunnar Graps ja Magnetic Band Roosid papale；Gunnar Graps Magnetic Band；Gunnar Grapsi Grupp；Гуннар Грапс",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Apelsin",
+  "album": "Apelsin",
+  "year": 1978,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-07809-10，SU 1978；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Apelsin（愛沙尼亞語「橘子」）1974 年在塔林成立，以人聲和聲與帶喜劇感的編曲聞名，是 1970 年代末愛沙尼亞最暢銷的團之一。1978 年這張同名 LP 是他們的首發，也是名下最早的一張。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Apelsin 池中 0 張（掃到的 Green Apelsin 是俄國 2000 年後的另一位藝人）。MB 回問確認 primary-type Album、1 個 Official release（1978 SU、Мелодия С60-07809-10、12\" Vinyl 14 軌）。",
+  "risk": "⚠ 同掛名有三張都叫《Apelsin》的 LP（1978、1981、1988），摺鍵完全相同、三張只能靠年份分辨；本批只收 1978 首發，另兩張寫入刻意不釘。**下游做 Apple／Discogs 比對時務必帶年份，不能只比盤名。** 撞卡風險：池中無 Apelsin；MB 精確查詢首筆即為目標（0f6a9099…，Group／EE／1974），第 2 筆 Green Apelsin（Person／RU／2000-05-17）是完全不同的人。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Apelsin Apelsin」搜出 64 筆，全為 Green Apelsin 與 Sonus／Ctormie 的同名單曲，未見目標；`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group b0c66523-8058-488b-9a46-2d6a42291cb0。回問確認：title「Apelsin」、artist-credit「Apelsin」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（8cb08d34… 1978/SU/Official、Мелодия С60-07809-10、12\" Vinyl 14 軌）。藝人 MBID 0f6a9099-6380-4cbd-a9a3-6d720f3793b3（Group／EE／1974），分頁全列 12 個 RG。刻意不釘：cc8333b1-23d5-4c54-8264-ea72137c9960《Apelsin》(1981) 與 750c2186-9c68-4fec-8a70-3ef771ee7fa8《Apelsin》(1988)（兩張盤名與本卡完全相同，摺鍵互撞）、4ed85ec9-0fe4-43e1-bc80-c2e38cd403f1《Illuusio》(1981，FI Kansankulttuuri Oy KK-48，芬蘭外銷盤，本批名額不足)、02b232b0-cbc3-4c71-8240-8bd830c8932a《Апельсин》(1989，全西里爾盤名)、19f1db46-48ea-45bc-83a3-2b2d10d472fa《Бони М / Апельсин》(1979，EP＋Compilation)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Apelsin 1978；Ansambel Apelsin；Апельсин；Apelsin Melodiya С60-07809",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Collage",
+  "album": "Collage",
+  "year": 1971,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 Д 028231-2，SU 1971；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Collage 1966 年成立於塔林，是愛沙尼亞最早一批把西方流行和聲搬進 Melodiya 錄音室的團；1971 年這張同名 LP 是他們的首發，也是本批年份最早的一張（Д 開頭的目錄號屬 Melodiya 早期單聲道／立體聲並行時期）。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Collage 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1971 SU、Мелодия Д 028231-2、12\" Vinyl 12 軌）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Collage」在 MB 回 15 筆，目標（fd6e98fc…，Group／EE／1966，disambiguation「Estonian band」）**排第 4、score 95**，前三名分別是義大利 70s 流行團（score 100）、美國 freestyle 歌手（97）、波蘭前衛團（97）；後面還有美國 disco/R&B、荷蘭 trance 二人組、德國 electro、加拿大 house、日本コラージュ、美國灣區饒舌歌手等——**共擋下 14 個同名實體，score 排序完全不可用，只有 disambiguation 加 country=EE、begin=1966 分得出來**。 撞卡風險：池中無 Collage。盤名與掛名同字（self-titled），與 1970 年的同名 EP 摺鍵相同，收的是 1971 的 Album，EP 已寫入刻意不釘。年份分歧：無。封面與試聽：CAA release-group 回 200、4 張圖；Apple 八店面以「Collage Collage 1971」搜出 2 筆、皆為美國大學爵士節現場輯，`search` 與藝人目錄兩種查法未命中（同掛名的《Kadriko》與《Käokiri》在 ru/de/fi/gb 四店面有上架，見那兩張卡）。",
+  "mbNote": "釘 release-group 90f5b6a3-cd36-469b-bcfe-7c907c3dfb91。回問確認：title「Collage」、artist-credit「Collage」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release（9c945f36… 1971/SU/Official、Мелодия Д 028231-2、12\" Vinyl 12 軌）。藝人 MBID fd6e98fc-609c-45f5-875d-153ff4b84374（Group／EE／1966），分頁全列 8 個 RG。刻意不釘：138e31bd-b8d1-48c2-a317-281fb66a2164《Collage》(1970，primary-type EP)、69de4d35-4ed8-4955-9ed8-7834f873794d《Laula kuni elad》(1995 Compilation)、91bf02d7-26c8-4bba-916a-dcaddb750889《Parimad lood 1970-1976》(2002 Compilation)、ba6b32cf-a01f-41e1-bc0f-ac82b549431f《Forty Seven Minutes Four Seconds》(2009 Compilation)、12be2353-a1fb-460e-ba3b-d55f66732fe6《Ten Minutes Twenty Seven Seconds》(2009，EP)，後四者均超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Collage 1971；Ansambel Collage；Коллаж；Collage Melodiya Д 028231",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Collage",
+  "album": "Kadriko",
+  "year": 1975,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 СМ 02821-2，SU 1975；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Collage 的第二張 LP，把愛沙尼亞民歌素材放進流行和聲編制，是他們最常被回頭引用的一張（十五軌，比同期 Melodiya 盤密度高）。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Collage 池中 0 張，本批另收其 1971 年首發與 1977 年《Käokiri》，三張構成這團在蘇維埃時期的完整 LP 目錄。MB 回問確認 primary-type Album、1 個 Official release（1975 SU、Мелодия СМ 02821-2、12\" Vinyl 15 軌）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Collage」在 MB 回 15 筆，目標（fd6e98fc…，Group／EE／1966，disambiguation「Estonian band」）**排第 4、score 95**，前三名分別是義大利 70s 流行團（score 100）、美國 freestyle 歌手（97）、波蘭前衛團（97）；後面還有美國 disco/R&B、荷蘭 trance 二人組、德國 electro、加拿大 house、日本コラージュ、美國灣區饒舌歌手等——**共擋下 14 個同名實體，score 排序完全不可用，只有 disambiguation 加 country=EE、begin=1966 分得出來**。 撞卡風險：池中無 Collage；與本批另兩張 Collage 盤名不同，摺鍵不撞。年份分歧：無。封面與試聽：CAA release-group 回 200、1 張圖；Apple 在 ru／de／fi／gb 四個店面命中 collectionId 1100185926（掛名「Collage」、盤名「Kadriko」、年份 1975，與 MB 完全一致），ee／lv／lt／us 四店面 0 筆。",
+  "mbNote": "釘 release-group e4ed3dbc-7b5d-4900-9663-74df2ee54b05。回問確認：title「Kadriko」、artist-credit「Collage」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release（198c7278… 1975/SU/Official、Мелодия СМ 02821-2、12\" Vinyl 15 軌）。藝人 MBID fd6e98fc-609c-45f5-875d-153ff4b84374。刻意不釘：138e31bd-b8d1-48c2-a317-281fb66a2164《Collage》(1970，primary-type EP)、69de4d35-4ed8-4955-9ed8-7834f873794d《Laula kuni elad》(1995 Compilation)、91bf02d7-26c8-4bba-916a-dcaddb750889《Parimad lood 1970-1976》(2002 Compilation)、ba6b32cf-a01f-41e1-bc0f-ac82b549431f《Forty Seven Minutes Four Seconds》(2009 Compilation)、12be2353-a1fb-460e-ba3b-d55f66732fe6《Ten Minutes Twenty Seven Seconds》(2009，EP)，後四者均超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Collage Kadriko；Kadriko 1975；Collage Melodiya СМ 02821",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Collage",
+  "album": "Käokiri",
+  "year": 1977,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-08739-40，SU 1977；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Collage 第三張、也是蘇維埃時期最後一張 LP。盤名 Käokiri 是愛沙尼亞語「杜鵑的字跡」，整張延續《Kadriko》的民歌路線。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Collage 池中 0 張，本批另收 1971 首發與 1975《Kadriko》。MB 回問確認 primary-type Album、1 個 Official release（1977 SU、Мелодия С60-08739-40、12\" Vinyl 12 軌）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Collage」在 MB 回 15 筆，目標（fd6e98fc…，Group／EE／1966，disambiguation「Estonian band」）**排第 4、score 95**，前三名分別是義大利 70s 流行團（score 100）、美國 freestyle 歌手（97）、波蘭前衛團（97）；後面還有美國 disco/R&B、荷蘭 trance 二人組、德國 electro、加拿大 house、日本コラージュ、美國灣區饒舌歌手等——**共擋下 14 個同名實體，score 排序完全不可用，只有 disambiguation 加 country=EE、begin=1966 分得出來**。 撞卡風險：池中無 Collage；與本批另兩張盤名不同。⚠ 盤名含變音符號 ä，摺鍵會去重音成 kaokiri，做外部比對時拉丁化與原文兩種寫法都要試。年份分歧：無。封面與試聽：CAA release-group 回 200、4 張圖；Apple 在 ru／de／fi／gb 四個店面命中 collectionId 1100185959（掛名「Collage」、盤名「Käokiri」、年份 1977），ee／lv／lt／us 四店面 0 筆。",
+  "mbNote": "釘 release-group e2e28e8f-96ae-4732-8aa7-a647e8c21055。回問確認：title「Käokiri」、artist-credit「Collage」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 1 個 release（9fb84d50… 1977/SU/Official、Мелодия С60-08739-40、12\" Vinyl 12 軌）。藝人 MBID fd6e98fc-609c-45f5-875d-153ff4b84374。刻意不釘：138e31bd-b8d1-48c2-a317-281fb66a2164《Collage》(1970，primary-type EP)、69de4d35-4ed8-4955-9ed8-7834f873794d《Laula kuni elad》(1995 Compilation)、91bf02d7-26c8-4bba-916a-dcaddb750889《Parimad lood 1970-1976》(2002 Compilation)、ba6b32cf-a01f-41e1-bc0f-ac82b549431f《Forty Seven Minutes Four Seconds》(2009 Compilation)、12be2353-a1fb-460e-ba3b-d55f66732fe6《Ten Minutes Twenty Seven Seconds》(2009，EP)，後四者均超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Collage Käokiri；Collage Kaokiri；Käokiri 1977；Collage Melodiya С60-08739",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Anne Veski ja Muusik-Seif",
+  "album": "Anne Veski ja ansambel «Muusik-Seif»",
+  "year": 1983,
+  "genres": [
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 19801 007，SU 1983；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Anne Veski 是蘇維埃愛沙尼亞外銷全蘇最成功的女歌手，Muusik-Seif 是塔林 1981 年成立的伴奏樂團（同年也替 Tõnis Mägi 伴奏）。這張 1983 年的 LP 是兩者合作的成果，同一批錄音另有俄語盤面《Поет Анне Вески》在同一個 release-group 底下。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Anne Veski 與 Muusik Seif 池中都是 0 張。MB 回問確認 artist-credit 是「Anne Veski ja Muusik-Seif」（合掛名），primary-type Album、轄下 2 個 Official release（1983 SU 愛沙尼亞語盤與俄語盤，同為 Мелодия С60 19801 007、12\" Vinyl 11 軌）。",
+  "risk": "⚠ 掛名分裂風險：MB 上與這張相關的實體有三個——Anne Veski（05c8ba8b…，Person／EE／1956-02-27）、Muusik Seif（d7ccef98…，Group／EE／1981，**MB 實體名寫成「Muusik Seif」無連字號，而 RG 的 artist-credit 寫成「Anne Veski ja Muusik-Seif」有連字號**）、以及本卡採用的合掛名。依第 20 條取 artist-credit 字串，但下游撞卡比對要同時查「Anne Veski」「Muusik Seif」「Muusik-Seif」「Music Seif」四種寫法。**連字號為 ASCII，已確認。** ⚠ 同掛名 1988 年的《Tänan!》artist-credit 又變成「Anne Veski & Nemo」，是第四種寫法，本批不收以免再拆掛名。撞卡風險：池中四種寫法都是 0 張。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Anne Veski Muusik-Seif」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group b1182283-b9ca-40f3-b828-7ef40c653261。回問確認：title「Anne Veski ja ansambel «Muusik-Seif»」、artist-credit「Anne Veski ja Muusik-Seif」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 2 個 release（d0b18413… 1983/SU/Official、Мелодия С60 19801 007、12\" Vinyl 11 軌，愛沙尼亞語盤；4217f98a… 1983/SU/Official《Поет Анне Вески》，同批錄音的俄語盤面）。**該 RG 同時列在 Anne Veski（05c8ba8b-39e9-4087-a0b9-d796e640a1c9，22 個 RG）與 Muusik Seif（d7ccef98-987f-4cd9-99c3-39beadde0726，4 個 RG）兩個藝人名下。** 刻意不釘：64bce4b4-f0ee-4a88-b1ed-7706963e8381《Sind aeda viia tõotan ma!》(1985)、de8adb41-494e-4f89-8c85-e83d8beb7c0b《Я обещаю вам сады》(1985，前者的俄語版)、9fcae969-ca4b-47a0-a5c8-011e123ef7d2《Tänan!》(1988，artist-credit 為第四種寫法「Anne Veski & Nemo」)、2c3eaf9a-36c2-4feb-88ce-67796f31873b《Tõnis Mägi & Music Seif》(1982，EP)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Anne Veski Muusik-Seif；Anne Veski ansambel Muusik Seif；Поет Анне Вески；Anne Veski 1983",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Jaak Joala",
+  "album": "Jaak Joala",
+  "year": 1975,
+  "genres": [
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-05965-6，SU 1975；壓片走 Tallinn 分廠",
+  "why": "Jaak Joala 是蘇維埃愛沙尼亞外銷全蘇最紅的男歌手，1972 年先以 EP 起步，1975 年這張同名 LP 是他第一張全長專輯，也是 Melodiya 把加盟共和國歌手推向全蘇市場的樣板案例。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Jaak Joala 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1975 SU、Мелодия С60-05965-6、12\" Vinyl 13 軌）。",
+  "risk": "撞卡風險：池中無 Jaak Joala；MB 精確查詢首筆即為目標（8118fcdb…，Person，disambiguation「Soviet and Estonian pop singer」、生於 1950-06-26），後面 14 筆多為「performs with Jaak Joala」的伴唱與撰稿人條目，以及 Avo／Piret／Kariny Joala 等同姓者，靠 disambiguation 分辨。盤名與掛名同字（self-titled），與 1972 年的同名 EP 摺鍵相同，收的是 1975 的 Album。⚠ 同掛名 1980 年的《Фотографии любимых》artist-credit 是全西里爾的「Яак Йоала / Группа Стаса Намина」（與 Stas Namin 樂團的合作），本批不收。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Jaak Joala」搜出 48 筆，全部是 2016–2020 年的復刻精選（Minu Elu、Unustuse Jõel、Suveöö、Põhjanael 等），**沒有一筆對應 1975 年這張原盤**；`search` 與藝人目錄兩種查法對本卡未命中。",
+  "mbNote": "釘 release-group 1af5041a-047c-4c2d-ae06-c11d464a9a8d。回問確認：title「Jaak Joala」、artist-credit「Jaak Joala」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release（9619e2b7… 1975/SU/Official、Мелодия С60-05965-6、12\" Vinyl 13 軌）。藝人 MBID 8118fcdb-0d7c-4f61-9c64-f631ad259a23，分頁全列 16 個 RG。刻意不釘：d689ff38-db12-441b-b414-07e7b1baaa8e《Jaak Joala》(1972，EP，盤名與本卡相同)、2d4fbcc7-2979-48ba-9384-51f1262d1fc2《Фотографии любимых》(1980，artist-credit 為西里爾合掛名)、236c8ada-dd8f-4659-88e3-76334805bf6f《Сама любовь》(1985，全西里爾盤名)、6dac79b9-c4df-4ce0-bc29-6bc551742c8a《Jaak Joala & Radar》(1981，EP)、a76b9fef-ce60-4cdd-9da2-860b2ae2d539《Minu elu》(2017 Compilation) 與 bddad267-09f6-429e-a310-80b7b54236cf《Suveöö》(2016 Compilation)（後兩者超出年份窗口）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Jaak Joala 1975；Яак Йоала；Jaak Joala Melodiya С60-05965",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ultima Thule",
+  "album": "Ultima Thule",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 27763 009，SU 1988；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Ultima Thule 1987 年成立於塔林，正好卡在「歌唱革命」開始的那一年；1988 年這張同名首發是愛沙尼亞獨立運動期間最常被引用的搖滾唱片之一。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Ultima Thule 池中 0 張。MB 回問確認 primary-type Album、轄下 2 個 Official release（1988 SU 原盤 Мелодия С60 27763 009、12\" Vinyl 8 軌；2007 EE 再發）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Ultima Thule」在 MB 回 15 筆，目標（a54f8952…，Group／EE／1987，disambiguation「Estonian band」）**排第 2、score 96**，第 1 名是瑞典的 Ultima Thule（Viking Rock 團，score 100，政治聯想完全不同，**絕不可混**）；另有荷蘭黑金屬、芬蘭 70s 團、美國密西西比團、比利時團、委內瑞拉 La Ultima Thule——共擋下 14 個同名實體。**score 排序不可用。** 盤名與掛名同字（self-titled）。撞卡風險：池中無 Ultima Thule。年份分歧：無。封面與試聽：CAA release-group 回 200、4 張圖；Apple 八店面以「Ultima Thule Ultima Thule」搜出 56 筆，全為 Tangerine Dream、Thule、Ostara、Kontinum、Armia 等同名盤，未見目標；`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group c8b8a5a3-33d4-4acf-ac77-83b992c30204。回問確認：title「Ultima Thule」、artist-credit「Ultima Thule」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 2 個 release（8f11e1e9… 1988/SU/Official、Мелодия С60 27763 009、12\" Vinyl 8 軌；30faa743… 2007/EE/Official 再發）。藝人 MBID a54f8952-adc3-4769-b805-0cfa48c0206e（Group／EE／1987，disambiguation「Estonian band」），分頁全列 9 個 RG。刻意不釘：24e4bd04-ddb8-4160-8237-450700581081《Tuulatud Thule 1986-1994》(1995 Compilation)、1e78453c-2a35-485e-a506-f493c9a53c98《Kogutud teosed 1987-2002》(2002 Compilation)、f5b094df-d73d-48ad-80b1-0d23791a96ca《Mis maa see on》(1998，secondary-types 含 Soundtrack)、f3046ece-6bf8-3175-9680-6d3f341b0e8a《Ultima Thule + keelpillikvartett》(1998)，皆超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Ultima Thule 1988；Ultima Thule Eesti；Ultima Thule Melodiya С60 27763",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ultima Thule",
+  "album": "Eesti asi / Pro Estonia",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "Megamania，MGM2026，FI 1991（12\" Vinyl 10 軌）——**不經 Melodiya**，是芬蘭獨立廠壓片",
+  "why": "1991 年蘇聯解體那一年出的碟，盤名直譯為「愛沙尼亞的事」，同時附拉丁文副名 Pro Estonia。這張的意義不只在曲目：**它不是 Melodiya 出的**，而是由芬蘭獨立廠 Megamania 壓片發行——蘇維埃唱片壟斷在最後一年被繞過去的實例，也是本批年份窗口的終點。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Ultima Thule 池中 0 張，本批另收其 1988 年同名首發。MB 回問確認 primary-type Album、1 個 Official release（1991 FI、Megamania MGM2026、12\" Vinyl 10 軌）。",
+  "risk": "⚠ 短掛名回問同上一卡（14 個同名實體，瑞典 Viking Rock 團排第 1，絕不可混）。⚠ 盤名含斜線「Eesti asi / Pro Estonia」，摺鍵會把斜線剝掉成 eestiasiproestonia；下游做外部比對時要同時試「Eesti asi」與「Pro Estonia」兩種單獨寫法。撞卡風險：池中無 Ultima Thule；與本批 1988 同名首發摺鍵不同。年份分歧：無，MB first-release-date 1991 與 Megamania 目錄號一致。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面以「Ultima Thule Eesti asi」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group cef444ac-c2c4-455a-8143-7cdf98e8f8c1。回問確認：title「Eesti asi / Pro Estonia」、artist-credit「Ultima Thule」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（27d64db8… 1991/FI/Official、**Megamania MGM2026**、12\" Vinyl 10 軌）。**這是本批唯二不掛 Melodiya 的原盤之一**（另一張是 Apelsin 的芬蘭盤《Illuusio》，本批未收）。藝人 MBID a54f8952-adc3-4769-b805-0cfa48c0206e。刻意不釘：見同掛名 1988 卡的清單。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ultima Thule Eesti asi；Pro Estonia；Ultima Thule Megamania MGM2026",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Uno Naissoo",
+  "album": "Mälestusi kodust",
+  "year": 1978,
+  "genres": [
+   "jazz",
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 09439-40，SU 1978；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Uno Naissoo（1928–1980）是愛沙尼亞戰後爵士與輕音樂的奠基者，塔林音樂學院爵士教學的開創者，Tõnu Naissoo 的父親。《Mälestusi kodust》是他生前最後一張以自己名義發行的 LP，收他寫給輕音樂編制的作品。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Uno Naissoo 池中 0 張（掃到的 Tõnu Naissoo 是他兒子，也是 0 張）。MB 回問確認 primary-type Album、轄下 2 個 Official release（1978 SU 原盤 Мелодия С60 09439-40、12\" Vinyl 10 軌；1982 SU 再壓，盤名大小寫不同）。",
+  "risk": "撞卡風險：池中無 Uno Naissoo；MB 精確查詢首筆即為目標（6141e9cb…，Person／EE／1928-10-24，disambiguation「Estonian jazz pianist and composer」），第 2 筆 Tõnu Naissoo（6138c0bb…，1951 年生）是他兒子、也是 disambiguation 幾乎相同的爵士鋼琴家，**兩人只能靠生年分辨，這是本批最容易配錯的一組同姓實體**。⚠ 同 RG 底下 1982 年再壓盤的 title 寫成《Mälestusi Kodust》（K 大寫），摺鍵相同不影響。年份分歧：取 1978 原盤年，1982 再壓年寫進 mbNote。封面與試聽：CAA release-group 回 200、4 張圖；Apple 在 lv／lt／de／fi／us／gb 六個店面命中 collectionId 1827198874，但**掛名寫成「Various Artists」、盤名寫成「Uno Naissoo: Mälestusi kodust. Estraadi-muusikat」、年份寫 1977**——與 MB 的掛名、盤名、年份三項都不一致，配對要放寬並人工核對曲目。",
+  "mbNote": "釘 release-group 172eae80-ad5a-4896-b81c-6ff762f18266。回問確認：title「Mälestusi kodust」、artist-credit「Uno Naissoo」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 2 個 release（468f58f7… 1978/SU/Official、Мелодия С60 09439-40、12\" Vinyl 10 軌；7985e6ce… 1982/SU/Official《Mälestusi Kodust》再壓）。藝人 MBID 6141e9cb-7b7b-4c4c-8274-9a7ddbbe37e7（Person／EE／1928-10-24），分頁全列 **只有 1 個 RG**——這位在 MB 上僅此一張碟建檔。無對照組可寫刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Uno Naissoo Mälestusi kodust；Uno Naissoo Malestusi kodust；Уно Найссоо；Naissoo Estraadi-muusikat",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Fix",
+  "album": "Värviline maailm",
+  "year": 1979,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-11543-4，SU 1979；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Fix 1968 年在塔林成立，是愛沙尼亞現存最久的搖滾團之一；《Värviline maailm》（彩色的世界）是他們第一張 LP，也是 1970 年代末愛沙尼亞流行搖滾最常被列進正典的一張。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Fix 池中 0 張。MB 回問確認 primary-type Album、1 個 Official release（1979 SU、Мелодия С60-11543-4、12\" Vinyl 10 軌）。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：「Fix」是本批最短的掛名，MB 回 15 筆；目標（85d2e6bd…，Group／EE／1968，disambiguation「Estonian band」）**這次排第 1、score 100**，但第 2–15 名包括荷蘭 techno 製作人 Orlando Voorn、德國龐克 Fix、日本 visual kei FiX、西雅圖 FIX、韓國 F.I.X、荷蘭 F.I.X.、匈牙利 Fix、義大利 FIX、以及一個沒填 disambiguation 的「Fix（aka Dan Fix）」與一個工程師條目——**共擋下 14 個同名實體；其中兩筆連 disambiguation 都沒填，不得背書本名。** 撞卡風險：池中無 Fix（摺鍵 fix 掃全池 0 筆精確命中）。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Fix Värviline maailm」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 65ece580-450b-416e-9276-363938c3b639。回問確認：title「Värviline maailm」、artist-credit「Fix」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 1 個 release（a8932272… 1979/SU/Official、Мелодия С60-11543-4、12\" Vinyl 10 軌）。藝人 MBID 85d2e6bd-6bd4-4878-a9e3-1d5ad95db40a（Group／EE／1968），分頁全列 8 個 RG。刻意不釘：1b125760-a2d2-4a1c-8f18-15204f0dc041《Fix 15》(1985，本批名額不足，可進下一批)、514a8410-a269-4920-b430-059deb06546e《Fix 20》(1989，同上)、d75d588b-ccc4-4109-aee4-566796222f05《Tsirkus maksimus: kogutud teosed, I osa》(1999 Compilation)、8e193d75-5134-48b3-9221-48024e5dc208《Kell》(2001 Compilation)、c07f9f45-164c-4348-8bc8-f1eb71c553be《Fix 40》(2008 Compilation)，後三者超出年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fix Värviline maailm；Fix Varviline maailm；Ansambel Fix；Fix Melodiya С60-11543",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Sven Grünberg",
+  "album": "OM",
+  "year": 1988,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60-27019-2，SU 1988；壓片走 Tallinn 分廠",
+  "why": "Sven Grünberg 從 Mess 解散後轉向合成器音樂，《Hingus》(1981) 之後這張《OM》是他第二張個人 LP，也是蘇聯體制內少見的、明確帶佛教與冥想指涉的電子唱片。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：**Sven Grünberg 是愛沙尼亞這條線池中唯一有卡的藝人**——《Hingus》(1981) 已在池中（同時見於 onboarding-manifest-c53-20260903.json）。本卡補的是他名下的第二張，補在《Hingus》旁邊。MB 回問確認 primary-type Album、轄下 3 個 Official release（1988 SU 原盤 Мелодия С60-27019-2；2000 RU；2021 EE）。",
+  "risk": "⚠ **本卡與池中已有卡同一位藝人**，撞卡檢查重點在盤名：池中是《Hingus》，本卡是《OM》，摺鍵不同、確定不是同一張。掛名寫法：池中既有卡寫「Sven Grünberg」（帶 ü），與 MB artist-credit 一致，沿用（第 177 條第 1 步）；拉丁化寫法 Sven Grunberg 也已掃過，池中無第二種寫法。⚠ 盤名「OM」只有兩個字母，**做任何外部比對都必須連掛名一起帶**，單獨用盤名會回噪音。實體形態：MB media 記為 Vinyl 4 軌（長篇曲目），不是 12\" 的欄位值。年份分歧：取 1988 原盤年，2000 與 2021 再發年寫進 mbNote。封面與試聽：CAA release-group 回 200、1 張圖；Apple 八店面全部命中 collectionId 1708597817，但**盤名寫成西里爾的「Свен Грюнберг: ОМ」**（ru 店面連掛名也是西里爾），與 MB 的拉丁寫法不一致，配對要跨書寫系統放寬。",
+  "mbNote": "釘 release-group 11a7baa1-7ca5-34f1-922c-0a6535bcf15e。回問確認：title「OM」、artist-credit「Sven Grünberg」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（cc017d5f… 1988/SU/Official、Мелодия С60-27019-2、Vinyl 4 軌；177e782b… 2000/RU/Official；d060d023… 2021/EE/Official）。藝人 MBID cb0eb8bf-f83d-4547-b047-1b0dd6a58fba（Person／EE／1956-11-24），分頁全列 8 個 RG。刻意不釘：d6869840-9457-3ea0-95db-f7ee0dc60cba《Hingus》(1981，**池中已有此卡**)、79156a8c-3b90-46d1-8d63-4175f8a19b9c《Mess》(1980，EP，且該 RG 同時掛在樂團 Mess 名下)、d521a43a-22ee-38d3-b486-6a7e3f8b38c9《Milarepa》(1993) 與 86194b42-f21d-3e49-aad6-86bdfcaba009《Prana Symphony》(1995) 與 2b072da3-9977-4658-bd4e-a26ecd5ebf00《Anima 1977-2001》(2016 Compilation)，後三者超出 1970–1991 年份窗口。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sven Grünberg OM；Sven Grunberg OM；Свен Грюнберг ОМ；Grünberg Melodiya С60-27019",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Sven Grünberg",
+  "album": "Hukkunud Alpinisti hotell",
+  "year": 2001,
+  "genres": [
+   "electronic"
+  ],
+  "label": "hyper.records，474-0447-80026-4，EE 2001（3CD）；原始錄音為 1979 年愛沙尼亞電影《Hukkunud Alpinisti hotell》配樂",
+  "why": "1979 年愛沙尼亞電影廠 Tallinnfilm 拍的《Hukkunud Alpinisti hotell》（改編自 Strugatsky 兄弟小說）是蘇聯科幻片的代表作，Grünberg 的合成器配樂是它最被記得的部分。這批錄音在蘇聯時期沒有唱片形態，2001 年 hyper.records 才整編出版。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：Sven Grünberg 池中 1 張（《Hingus》1981），本卡與本批另一張《OM》(1988) 三張構成他在體制內的完整輪廓。這是 §5.6 的標準情形——原盤不存在，合輯是唯一形態。",
+  "risk": "年份：依本批裁定取原始錄音年 1979（電影上映年），2001 的合輯出版年寫在 mbNote、label 與 exceptionReason，行文時兩個年份要分開講。撞卡風險：池中 Sven Grünberg 已有《Hingus》，本卡盤名不同、摺鍵不撞；與本批《OM》也不撞。⚠ 這張 MB 的 secondary-types 是 [Compilation] 而非 [Soundtrack]，因為三片裝收的不只這一部片的音樂——**不要當成單一部電影的原聲帶處理**，卡片盤名取 RG 標題。實體形態：三片 CD（26／32／28 軌）。掛名：與池中既有卡同為「Sven Grünberg」，沿用。封面與試聽：CAA release-group 回 200、**8 張圖（與 In Spe 的 Typewriter Concerto 並列本批最多）**；Apple 八店面以「Sven Grünberg Hukkunud Alpinisti hotell」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 6f5b6a66-5f16-376b-be9a-59fc7957cb66。回問確認：title「Hukkunud Alpinisti hotell」、artist-credit「Sven Grünberg」、first-release-date 2001、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（da4ff771… 2001/EE/Official、hyper.records 474-0447-80026-4、3 片 CD，軌數 26／32／28）。藝人 MBID cb0eb8bf-f83d-4547-b047-1b0dd6a58fba。刻意不釘：見同掛名《OM》卡的清單（d6869840…《Hingus》池中已有、79156a8c…《Mess》EP、d521a43a…《Milarepa》、86194b42…《Prana Symphony》、2b072da3…《Anima 1977-2001》）。",
+  "releaseType": "Compilation",
+  "exceptionReason": "2001 年 hyper.records 的三片裝，86 軌收錄 Sven Grünberg 的影視配樂，曲名括號標的年份從 1977 排到 2001；其中六軌標著 1979 年那部同名影片，合計 19 分 31 秒。這批錄音在資料庫端沒有別的成套形態，他名下也沒有任何 1979 年的 release-group。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/6f5b6a66-5f16-376b-be9a-59fc7957cb66",
+   "https://musicbrainz.org/release/da4ff771-fe13-4711-8a5d-378e70be4128"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Sven Grünberg Hukkunud Alpinisti hotell；Dead Mountaineer's Hotel soundtrack；Sven Grunberg Hukkunud Alpinisti；Отель у погибшего альпиниста",
+  "reissuedBy": "hyper.records",
+  "g": "a"
+ },
+ {
+  "artist": "Tõnis Mägi & Muusik-Seif",
+  "album": "Mäe kaks nõlva",
+  "year": 1983,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Мелодия（Melodiya），全蘇目錄號 С60 19439 002，SU 1983；愛沙尼亞語盤面，壓片走 Tallinn 分廠",
+  "why": "Tõnis Mägi 是愛沙尼亞歌唱革命最具代表性的歌手（1988 年的〈Koit〉是那場運動的標誌曲），Muusik-Seif 是他 1981–1983 年的伴奏樂團。《Mäe kaks nõlva》（山的兩面斜坡）是這個組合唯一的 LP，1982 年先出過 EP《Tõnis Mägi & Music Seif》。實掃 seed_cards.json 全 14,424 列（拉丁與原文兩種寫法都掃）：愛沙尼亞這條線池中只有 1 張：Sven Grünberg《Hingus》(1981)。骨幹 20 位裡 19 位是零。 Tõnis Mägi 與 Muusik Seif 池中都是 0 張。MB 回問確認 artist-credit 是「Tõnis Mägi & Muusik-Seif」，primary-type Album、1 個 Official release（1983 SU、Мелодия С60 19439 002、12\" Vinyl 10 軌）。",
+  "risk": "⚠ 掛名寫法分歧：MB 的樂團實體名寫「Muusik Seif」（無連字號），本 RG 的 artist-credit 寫「Muusik-Seif」（有 ASCII 連字號），1982 年 EP 的盤名又寫成「Music Seif」（少一個 u）——**三種寫法都要查撞卡**；本批同組另有一卡以「Anne Veski ja Muusik-Seif」掛名，是第四種。依第 20 條取 artist-credit 字串。**連字號為 ASCII，已確認。** 撞卡風險：池中四種寫法都是 0 張；與本批《Anne Veski ja ansambel «Muusik-Seif»》摺鍵不同。⚠ 盤名含 ä 與 õ 兩個變音符號，摺鍵會去重音成 maekaksnolva。年份分歧：無。封面與試聽：CAA release-group 回 404；Apple 八店面以「Tõnis Mägi Mäe kaks nõlva」搜出 0 筆，`search` 與藝人目錄兩種查法未命中。",
+  "mbNote": "釘 release-group 318abda2-d5d3-408a-a65d-6b4aae195a0c。回問確認：title「Mäe kaks nõlva」、artist-credit「Tõnis Mägi & Muusik-Seif」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 1 個 release（d2bbeaf9… 1983/SU/Official、Мелодия С60 19439 002、12\" Vinyl 10 軌）。該 RG 列在 Muusik Seif（d7ccef98-987f-4cd9-99c3-39beadde0726，Group／EE／1981）名下，該藝人分頁全列 4 個 RG。刻意不釘：2c3eaf9a-36c2-4feb-88ce-67796f31873b《Tõnis Mägi & Music Seif》(1982，primary-type EP，且掛名第三種寫法)、b1182283-b9ca-40f3-b828-7ef40c653261《Anne Veski ja ansambel «Muusik-Seif»》(1983，**本批另收一卡**)、de337f3c-d088-4342-9504-5a78efd390f9《Muusik Seif》(2009 Compilation，超出年份窗口)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tõnis Mägi Muusik-Seif Mäe kaks nõlva；Tonis Magi Muusik Seif；Tõnis Mägi Music Seif；Тынис Мяги",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

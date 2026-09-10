@@ -49,6 +49,56 @@ export const LINES = {
   // c-67 收尾時記下：Johnny's Disk 其餘 9 張、Aketa's Disk 5、Nadja 7、Union Jazz 6 在 MB 查無，
   // 走 pinned 補不了。這批專收那些「唱片實體確鑿、MB 沒建檔」的日本自主爵士盤。
   c87: { lineType: '深掘', scene: '日本自主爵士小廠 §1 人工身分補遺' },
+  // c-88 是**覆蓋型**批次，不是深掘：店主 2026-09-04「冷門電影專輯有點太多了，反而耳熟能詳的不多」，
+  // 要的是正典而非冷門。既有的 lineType 只有深掘／廣度兩種，取「廣度」——
+  // 它補的是池子在一個主題上的覆蓋率，正是廣度的意思。
+  c88: { lineType: '廣度', scene: { a: '電影原聲：主流熱門', b: '電影原聲：影展與作者電影' } },
+  // 2026-09-05 店主指示「台語搖滾可以多一點」「林強、伍佰補齊」「骨肉皮時代的獨立樂團補齊」，
+  // 開台灣線四批。c-89～c-91 是**目錄補完**（池中每團只有一到兩張招牌作，縱深幾乎沒有），
+  // 所以 lineType 取「深掘」——它挖的是既有場景的深度，不是新場景的覆蓋率。
+  // c-92 是 §1 人工身分補遺批，管線同 c-87（rgMbid 留空、fix-rgmbid 與 probe-caa-generic 都不跑）。
+  c89: { lineType: '深掘', scene: { a: '林強與伍佰目錄補完', b: '新台語歌運動與台語根源 1971–99' } },
+  c90: { lineType: '深掘', scene: { a: '台北地下：水晶世代 1988–95', b: '台北地下：角頭與 TCM 世代 1996–2003' } },
+  c91: { lineType: '深掘', scene: { a: '台客搖滾目錄補完（董事長、濁水溪、閃靈）', b: '當代台語獨立 2007–2026' } },
+  c92: { lineType: '深掘', scene: '台灣線 §1 人工身分補遺' },
+  // c-93～c-102（2026-09-05 店主「接力做完十批」）：A 線目錄深度第二輪 8 批 ＋ B 線兩張最大的洞
+  c93:  { lineType: '廣度', scene: { a: '搖滾正典目錄深度：後龐克與另類', b: '搖滾正典目錄深度：前衛、車庫與 90s' } },
+  c94:  { lineType: '廣度', scene: { a: '金屬與硬蕊目錄深度', b: '龐克、emo 與日本另類目錄深度' } },
+  c95:  { lineType: '廣度', scene: { a: '戰前藍調與芝加哥電藍調目錄深度', b: '爵士正典目錄深度：搖擺到自由' } },
+  c96:  { lineType: '廣度', scene: { a: '嘻哈正典目錄深度', b: '靈魂與放克目錄深度' } },
+  c97:  { lineType: '廣度', scene: { a: '電子目錄深度：house、techno 與 12 吋', b: '電子目錄深度：氛圍、具象音樂與 downtempo' } },
+  c98:  { lineType: '廣度', scene: { a: '鄉村與美國民謠目錄深度', b: '歐洲與拉美民謠目錄深度' } },
+  c99:  { lineType: '廣度', scene: { a: '非洲與加勒比目錄深度', b: '中東、南亞與拉丁目錄深度' } },
+  c100: { lineType: '廣度', scene: '古典演奏家傳奇錄音目錄深度' },
+  c101: { lineType: '廣度', scene: { a: '遊戲原聲正典：日本廠牌世代', b: '遊戲原聲正典：獨立遊戲與西方大作' } },
+  c102: { lineType: '廣度', scene: { a: '動畫原聲正典：菅野・久石・梶浦世代', b: '動畫原聲正典：機械與劇伴' } },
+  // 2026-09-06 店主「接著跑完」——規劃書剩下的 16 批（B 線 6／C 2／D 2／E 3／F 3）
+  c103: { lineType: '廣度', scene: { a: '演歌與戰後歌謡：女聲正典', b: '演歌與戰後歌謡：男聲與昭和流行' } },
+  c104: { lineType: '廣度', scene: { a: '韓國 80s–90s 歌謡與城市流行', b: '韓國 80s–90s 韓搖與민중가요' } },
+  c105: { lineType: '廣度', scene: { a: 'K-pop 韓版里程碑', b: 'K-indie 第二輪' } },
+  c106: { lineType: '廣度', scene: { a: '華語第三輪：上海時代曲與港星目錄', b: '華語第三輪：台語經典' } },
+  c107: { lineType: '廣度', scene: { a: '中國搖滾正典：魔岩世代與北京搖滾', b: '中國獨立：後 2000 廠牌與地方場景' } },
+  c108: { lineType: '廣度', scene: { a: '拉丁第二圈：chicha 與 cumbia', b: '拉丁第二圈：salsa dura 與 nueva canción' } },
+  c109: { lineType: '廣度', scene: { a: '法語搖滾：Bashung 世代與 rock français', b: '法語流行與 rap français' } },
+  c110: { lineType: '廣度', scene: { a: '德語搖滾與 NDW', b: '義大利搖滾與流行' } },
+  c111: { lineType: '廣度', scene: { a: '2024–2025 正典：英美', b: '2024–2025 正典：日韓與華語' } },
+  c112: { lineType: '廣度', scene: { a: '2026 新譜：英美', b: '2026 新譜：日韓與華語' } },
+  c113: { lineType: '廣度', scene: '沖繩民謡 §1 補遺' },
+  c114: { lineType: '廣度', scene: { a: '美國福音 Nashboro 補遺 I', b: '美國福音 Nashboro 補遺 II' } },
+  c115: { lineType: '廣度', scene: { a: '英國 DIY 自壓盤補遺', b: '演歌批轉來的 §1 候選' } },
+  c116: { lineType: '深掘', scene: { a: '日本自主 hardcore／ジャパコア', b: '日本 noise 小廠' } },
+  c117: { lineType: '深掘', scene: { a: '英國 folk-rock 私壓：Leader／Trailer 系', b: '英國 folk-rock 小廠：Broadside／Village Thing 系' } },
+  c118: { lineType: '深掘', scene: { a: '芝加哥 house 二線小廠 12 吋', b: '底特律與紐澤西 techno／house 二線小廠' } },
+  // c-119～c-121（店主 2026-09-07 指定的三條線）
+  c119: { lineType: '深掘', scene: { a: '台語獨立：創作者與本土語言', b: '台語獨立：樂團與廠牌' } },
+  c120: { lineType: '深掘', scene: { a: '紐約硬蕊', b: 'youth crew／straight edge：Revelation 系' } },
+  c121: { lineType: '深掘', scene: { a: '日本フリージャズ與即興演奏', b: '日本地下即興：PSF 前史' } },
+  // c-122（店主 2026-09-08 核定為 hardcore 開 §5.5 白名單後成立）
+  c122: { lineType: '深掘', scene: { a: '紐約硬蕊 7 吋與 demo', b: 'youth crew／straight edge 7 吋' } },
+  // c-123～c-125（店主 2026-09-08：「找出獨裁體制下的音樂」）
+  c123: { lineType: '廣度', scene: { a: '蘇聯愛沙尼亞地下', b: '蘇聯拉脫維亞與立陶宛地下' } },
+  c124: { lineType: '廣度', scene: { a: '伊朗巴列維末期流行與 funk', b: '伊朗革命後：流亡、地下與古典' } },
+  c125: { lineType: '廣度', scene: { a: '西班牙佛朗哥時期與 la Movida', b: '葡萄牙薩拉查時期與康乃馨革命' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。

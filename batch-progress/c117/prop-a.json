@@ -1,0 +1,434 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Comus To Keep From Crying；To Keep from Crying",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Comus",
+  "album": "To Keep From Crying",
+  "year": 1974,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Virgin（catno V 2018），GB 1974",
+  "why": "Comus 的第二張、也是最後一張原始專輯，1974 年由 Virgin 發行，距首張《First Utterance》三年，中間樂團一度解散再由 Roger Wootton 重組。實掃 seed_cards.json 全 14,424 列：Comus 池中只有 1 張，就是 1971 年 Dawn 的《First Utterance》，1974 這一端是空的。這張補上去，池中就有了同一個樂團在 Dawn 私壓與 Virgin 建制兩種發行條件下的對照，而不是只有一張孤卡。Virgin 官方目錄編號 V 2018 可查（MB release label-info），Discogs master 條目亦列同一編號。",
+  "risk": "封面：CAA coverartarchive.org/release-group/704963ff-a3cf-3feb-9f9d-1f3428e8f134 回 200，有圖。撞卡風險：盤名 To Keep From Crying 在 MB 上另有他人同名作，藝人閘要以 artist MBID 過濾。掛名 Comus 是本批裁定 179 點名的高危短掛名——MB artist?query 回 score 100 的唯一實體是 b8570b23（Group／United Kingdom／begin 1968），已回問 area 與 type 確認，其餘同名（美國 doom、電子製作人）score 低於 90 且 area 不符，未採。年份分歧：MB first-release-date 1974，與 Virgin 目錄一致。Apple gb：search「Comus To Keep From Crying」回 0 筆，依裁定 173／185 這不算沒上架，探測層要再走藝人目錄 lookup；但依裁定 195 的英國私壓延伸，CAA 有圖即可收，試聽預估走無來源狀態。",
+  "mbNote": "釘 release-group 704963ff-a3cf-3feb-9f9d-1f3428e8f134。回問 release-group/704963ff-a3cf-3feb-9f9d-1f3428e8f134?fmt=json&inc=artist-credits+releases 確認：title「To Keep From Crying」、artist-credit「Comus」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 4 個 release（1974/GB/Official、1974/GB/Official、1990-07-04/JP/Official、2005-11-29/JP/Official）。原盤 release 2e2af4ce-841b-48c0-bcaf-67937dd36f6f（1974／GB／Official，11 軌，label-info Virgin V 2018）。藝人 MBID b8570b23-8936-4578-9f8a-612a8215aa2f（Comus，Group／United Kingdom／1968），以 release-group?artist=…&limit=100&offset= 分頁全列 7 個 RG。刻意不釘：388aeddf-3bdd-3aa6-9632-75e8e368f59a《First Utterance》（1971，池中已有）、6298ba33-e1ad-3106-86c0-9f8b18231e35《Diana / In the Lost Queen’s Eyes / Winter Is a Coloured Bird》（primary-type Single，不是專輯）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dr Strangely Strange Heavy Petting；Doctor Strangely Strange",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Dr. Strangely Strange",
+  "album": "Heavy Petting",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Vertigo（catno 6360 009），DE 1970",
+  "why": "愛爾蘭 Dr. Strangely Strange 的第二張，1970 年轉到 Vertigo 旋渦廠標發行，錄音班底加入 Gary Moore，是這個團從 Island 的原音民謠往電聲折返的一張。實掃 seed_cards.json：池中只有 1969 年 Island 的《Kip of the Serenes》1 張，Vertigo 這一段是空的。本批要補的正是 1970 年代初英國與愛爾蘭小廠的第二作斷層，這張是最典型的一例。Vertigo 目錄編號 6360 009 可查（MB release label-info）。",
+  "risk": "封面：CAA coverartarchive.org/release-group/44088292-b06f-37dd-8bd9-5154ab4ac885 回 200，有圖。掛名分裂：audits/pool-artist-name-splits.md 記的 &／and 型分裂在本團是 Dr.／Dr 的點號差異——池中現有卡寫「Dr. Strangely Strange」（帶點號），MB 實體同形，依裁定 177 沿用池中寫法，不要改成無點號。撞卡：池中該團僅《Kip of the Serenes》，已逐字比對，《Heavy Petting》不在其中。年份分歧：MB 首個 release 標 1970/DE（Vertigo 德國壓片先建檔），英國原盤同年，年份取 1970 無爭議。Apple gb：search 命中 collectionId 1443454371《Heavy Petting》／Dr. Strangely Strange／1970，封面與試聽兩路都預估拿得到。",
+  "mbNote": "釘 release-group 44088292-b06f-37dd-8bd9-5154ab4ac885。回問 release-group/44088292-b06f-37dd-8bd9-5154ab4ac885?fmt=json&inc=artist-credits+releases 確認：title「Heavy Petting」、artist-credit「Dr. Strangely Strange」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（1970/DE/Official、2005/GB/Official）。原盤 release 0d80dc74-bed5-4d86-bfcd-f1373986f6d6（1970／DE／Official，11 軌，label-info Vertigo 6360 009）。藝人 MBID 531c0421-5c82-4829-a5f5-dd31fdd7eaee（Dr. Strangely Strange，Group／Ireland／1967），名下 7 個 RG。刻意不釘：af50c36b-5a6f-3084-bb0d-95fefd631c06《Kip of the Serenes》（1969，池中已有）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Spirogyra Old Boot Wine",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Spirogyra",
+  "album": "Old Boot Wine",
+  "year": 1972,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Brain（catno BRAIN 1012），DE 1972",
+  "why": "Spirogyra 三張原始專輯的第二張，1972 年發行，是 Barbara Gaskin 與 Martin Cockerham 這組配搭最完整的一張；MB 轄下最早的 release 是同年德國 Brain 的壓片（BRAIN 1012），英國原盤同年出在 B&C／Pegasus 系統。實掃 seed_cards.json：Spirogyra 池中只有 1 張，1971 年 B&C／Pegasus 的《St. Radigunds》，1972 與 1973 兩張都缺。本批把這個三部曲補齊，池中才會有一整條可比的目錄，而不是只留起點。",
+  "risk": "封面：CAA coverartarchive.org/release-group/6188e07f-5d11-3e17-9aaf-597f60a68a93 回 200，有圖。撞卡：池中該團僅《St. Radigunds》，逐字比對過。掛名 Spirogyra 在 MB 上另有數個同名（電子、金屬），已回問 area 與 disambiguation：採用的 589eaaba 標 UK folk/prog、begin 1967，其餘不符。年份分歧：MB 首個 release 是 1972/DE，同年另有 1972/GB，年份取 1972 沒有爭議。Apple gb：search 命中 collectionId 1393072123《Old Boot Wine》／Spirogyra／1972。",
+  "mbNote": "釘 release-group 6188e07f-5d11-3e17-9aaf-597f60a68a93。回問 release-group/6188e07f-5d11-3e17-9aaf-597f60a68a93?fmt=json&inc=artist-credits+releases 確認：title「Old Boot Wine」、artist-credit「Spirogyra」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 5 個 release（1972/DE/Official、1972/GB/Official、1992/DE/Official、2005-03-29/JP/Official、2013-09-30/?/Official）。原盤 release 10095b04-752a-35fa-8d12-696cc5f37568（1972／DE／Official，9 軌，label-info Brain BRAIN 1012）。藝人 MBID 589eaaba-5b37-497f-86ac-514d1a303eaf（Spirogyra，Group／United Kingdom／1967，disambiguation「UK folk/prog」），名下 6 個 RG。刻意不釘：f2fad566-51d8-3d03-85b5-e4fa8c6edc0e《St. Radigunds》（1971，池中已有）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Spirogyra Bells Boots and Shambles",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Spirogyra",
+  "album": "Bells, Boots and Shambles",
+  "year": 1973,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Brain（catno BRAIN 1024），DE 1973",
+  "why": "Spirogyra 的第三張、也是解散前最後一張，1973 年發行，編制擴到弦樂與管樂；MB 轄下最早的 release 同樣是德國 Brain 壓片（BRAIN 1024），英國原盤同年出在 Polydor 系統。實掃 seed_cards.json：池中該團僅 1971 年《St. Radigunds》，1973 這一端是空的。與同批補進的《Old Boot Wine》一起，這三張才構成完整目錄；若只補中間那張，1973 的收束仍然看不到。",
+  "risk": "封面：CAA coverartarchive.org/release-group/2cd4acca-4fec-341e-8099-e66ae1d98c69 回 200，有圖。撞卡：池中該團僅《St. Radigunds》。盤名含逗號，Apple 與 MB 的逗號後空白處理可能不同，比對時要折疊標點。年份分歧：MB 首個 release 1973/DE 與 1973/GB 同年。Apple gb：search「Spirogyra Bells, Boots and Shambles」回 0 筆——依裁定 173／185 不算沒上架，探測層要再走藝人目錄 lookup；CAA 有圖，依裁定 195 的英國私壓延伸可收，試聽預估無來源狀態。",
+  "mbNote": "釘 release-group 2cd4acca-4fec-341e-8099-e66ae1d98c69。回問 release-group/2cd4acca-4fec-341e-8099-e66ae1d98c69?fmt=json&inc=artist-credits+releases 確認：title「Bells, Boots and Shambles」、artist-credit「Spirogyra」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 5 個 release（1973/DE/Official、1973/GB/Official、1991/DE/Official、2005/JP/Official、2013-09-30/XE/Official）。原盤 release 04c04d8a-e59a-4668-ac6d-7bb31e06d460（1973／DE／Official，7 軌，label-info Brain BRAIN 1024）。藝人 MBID 589eaaba-5b37-497f-86ac-514d1a303eaf，名下 6 個 RG。刻意不釘：f2fad566-51d8-3d03-85b5-e4fa8c6edc0e《St. Radigunds》（1971，池中已有）、6188e07f-5d11-3e17-9aaf-597f60a68a93《Old Boot Wine》（1972，本批 a 組另立一卡）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Bill Fay 1970；Bill Fay first album",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Bill Fay",
+  "album": "Bill Fay",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Deram（catno SDN 12），GB 1970",
+  "why": "Bill Fay 的首張，1970 年由 Decca 旗下 Deram 發行，編曲由 Mike Gibbs 掛帥，與隔年那張自毀式的第二作是兩種完全不同的製作條件。實掃 seed_cards.json：池中 Bill Fay 只有 1 張，就是 1971 年的《Time of the Last Persecution》，首張缺席。這張補上去，池中才看得到他從 Deram 建制編曲到 1971 年撤除樂隊的轉折。Deram／Decca 的原始編號可從 MB release 的 label-info 取得。",
+  "risk": "封面：CAA coverartarchive.org/release-group/4535d224-6083-3be6-8b9d-121fde8d0b37 回 200，有圖。撞卡：盤名與掛名同形（自我同名），撞卡字串比對要格外小心——池中的《Time of the Last Persecution》不會誤中，但 chk-prop 的折疊鍵是 artist+album，自我同名卡本身沒有額外風險。掛名 Bill Fay 在 MB 另有實體 2913e7f8「Bill Fay Group」，是同一人的樂團掛名，本卡不用它。年份：MB first-release-date 1970，Apple gb 卻標 1969（collectionId 1443150676），依裁定 127／205 年份取原始 LP 的 1970，不採 Apple 欄位。Apple gb 命中 collectionId 1443150676。",
+  "mbNote": "釘 release-group 4535d224-6083-3be6-8b9d-121fde8d0b37。回問 release-group/4535d224-6083-3be6-8b9d-121fde8d0b37?fmt=json&inc=artist-credits+releases 確認：title「Bill Fay」、artist-credit「Bill Fay」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 7 個 release（1970/GB/Official、1971/?/Official、2005/GB/Official、2008-05-22/AT/Official、2008/GB/Official、2009-12-22/XE/Official、2012/US/Official）。原盤 release 821328f1-f13f-4622-94e8-31d4e3bcee41（1970／GB／Official，13 軌，label-info Deram SDN 12）。藝人 MBID c139d092-9457-40ec-8130-e11d4cbcfb56（Bill Fay，Person／United Kingdom／1943-09-09），名下 20 個 RG。刻意不釘：b498f0ef-90b4-3ba0-9596-829cd5845a70《Time of the Last Persecution》（1971，池中已有）、cbd37787-1013-40bc-8c0b-afca1ef6c227《Some Good Advice / Screams in the Ears》（1967，primary-type Single）、b69afd3d-4fe6-4495-a6f6-6ed56e67dd74《Share Jesus Without Fear》（secondary-type Spokenword，且是同名別人的口白盤）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Heron Twice as Nice and Half the Price",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Heron",
+  "album": "Twice as Nice & Half the Price",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Dawn（catno DNLS 3025），GB 1971",
+  "why": "Heron 的第二張，1971 年 Dawn 發行的雙 LP，整張在戶外實地錄音，是英國 1970 年代初「不進錄音室」這條做法最有名的一例。實掃 seed_cards.json：池中 Heron 只有 1 張，1970 年的同名首作，這張缺。兩張並列才看得出這個團從單張到雙 LP 的規模變化。Dawn 是 Pye 的進步廠標，與本批要補的 Village Thing、Leader 同屬小廠脈絡。",
+  "risk": "封面：CAA coverartarchive.org/release-group/2a3bdbb3-4fe2-3847-ae03-bff05eaee8da 回 200，有圖。⚠ 掛名撞名（裁定 179）：MB artist?query「Heron」回 score 100 的是 Gil Scott‐Heron（子字串命中），英國 folk 團 Heron 只排到 score 94。已回問 area 與 disambiguation 確認採用 e72b466b（Group／United Kingdom／1968／「UK folk rock band」），另有加拿大 sludge、美國 black metal、法國 Héron 等多個同名實體。撞卡：池中另有 Gil Scott-Heron 5 張，掛名字串不同，chk-prop 不會誤標，但人工比對時要分清。盤名含 & 號，audits 記的 &／and 分裂型態要兩種寫法都查，池中皆無。Apple gb 命中 collectionId 1439092665，但年份標 2004（再發），依裁定 127 年份取 1971。",
+  "mbNote": "釘 release-group 2a3bdbb3-4fe2-3847-ae03-bff05eaee8da。回問 release-group/2a3bdbb3-4fe2-3847-ae03-bff05eaee8da?fmt=json&inc=artist-credits+releases 確認：title「Twice as Nice & Half the Price」、artist-credit「Heron」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（1971/GB/Official、2004-07-16/JP/Official）。原盤 release c76143b5-e429-4fb4-99cb-2ba41e47909c（1971／GB／Official，21 軌，label-info Dawn DNLS 3025）。藝人 MBID e72b466b-bb90-4bf3-8c55-a4ec804b69ff（Heron，Group／United Kingdom／1968，disambiguation「UK folk rock band」），名下 9 個 RG。刻意不釘：9b876b9e-7edd-4b40-8cc2-49dd151a909c《Heron》（1970，池中已有）、156a0250-22d6-4814-9158-450c362eeebe《Bye and Bye / Through Time》（1971-04，primary-type EP）、f76fae12-36d7-334f-8299-cd8deeef987f《The Best of Heron》（1988，secondary-type Compilation 的後世整編）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "COB Spirit of Love；Clive Palmer C.O.B.；Clive’s Original Band",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "C.O.B.",
+  "album": "Spirit of Love",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "CBS（catno 69010）／CBS（catno S 69010），GB 1970",
+  "why": "C.O.B.（Clive’s Original Band）的首張，Clive Palmer 離開 Incredible String Band 後在康瓦爾組的團，由 Ralph McTell 製作、出在 CBS（catno 69010）。實掃 seed_cards.json：池中 C.O.B. 只有 1972 年 Polydor Folk Mill 的《Moyshe McStiff and the Tartan Lancers of the Sacred Heart》1 張，首張缺；池中另有 Incredible String Band 3 張與 Ralph McTell 1 張，補這張正好把 Palmer 離團之後那一段接起來。",
+  "risk": "封面：CAA coverartarchive.org/release-group/2f73a271-a0d5-43d7-a7bd-9a9fa0bfeb1d 回 200，有圖。⚠ 掛名撞名（裁定 179／204）：C.O.B. 這種帶點號的縮寫掛名在 MB 上同名極多——連寫 COB、分寫 C O B、帶點號 C.O.B. 三種都查過，另有 UK post-hardcore 團 Cob（2023）、drum and bass 製作人、hip hop 製作人、加拿大 chiptune 等。採用 590a1bfa（Group／United Kingdom／1970）。撞卡：池中寫法就是「C.O.B.」，與本卡同形，chk-prop 會正確比對。年份分歧：MB first-release-date 標 1970，但轄下唯一的原盤 release 也標 1970/GB；坊間與 Discogs 多記 1971。依裁定 127 附錄「不得拿一個有爭議的值去換另一個有爭議的值」，本卡年份取 MB 該 release 實際標註的 1970（CBS 69010／GB／Official），不採坊間的 1971；本機若另有唱片實物年的一手證據可再改。Apple gb：search 回的是 Earth, Wind & Fire《Spirit》，是假陽性，本盤在 gb 店面 search 查無。",
+  "mbNote": "釘 release-group 2f73a271-a0d5-43d7-a7bd-9a9fa0bfeb1d。回問 release-group/2f73a271-a0d5-43d7-a7bd-9a9fa0bfeb1d?fmt=json&inc=artist-credits+releases 確認：title「Spirit of Love」、artist-credit「C.O.B.」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 3 個 release（1970/GB/Official、2001/GB/Official、?/GB/Official）。原盤 release bd742156-5e1d-4246-9797-8e1a368ea2f4（1970／GB／Official，9 軌，label-info CBS 69010 ; CBS S 69010）。藝人 MBID 590a1bfa-0c30-4ec1-9271-ed4ff718a3c5（C.O.B.，Group／United Kingdom／1970），名下只有 2 個 RG。刻意不釘：153d3883-2f25-3460-ba77-037aadae39e3《Moyshe McStiff and the Tartan Lancers of the Sacred Heart》（1972，池中已有）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jan Dukes De Grey Sorcerers",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Jan Dukes de Grey",
+  "album": "Sorcerers",
+  "year": 1969,
+  "genres": [
+   "folk"
+  ],
+  "label": "Decca Records（catno SDN 8），GB 1969",
+  "why": "Jan Dukes de Grey 的首張，1969 年出在 Decca 的 Nova 子廠標，只有 Derek Noy 與 Michael Bairstow 兩人、二十餘件樂器輪流上陣。實掃 seed_cards.json：池中該團只有 1971 年 Transatlantic 的《Mice and Rats in the Loft》1 張（該卡由 c-60 批收進），Nova 這一段是空的。本批的小廠清單點名了 Deram Nova，這張是 Decca Nova 系最早也最極端的一例。",
+  "risk": "封面：CAA coverartarchive.org/release-group/e7bdbee2-0bc6-35e8-b0ce-03c9994740fa 回 200，有圖。⚠ 再發背書（裁定 43／57／65／78）：這個 release-group 轄下 7 個 release 裡，2002/IT、2002/KR、2019/KR、2019/JP、2020/GB 五筆 status 是 Bootleg，只有 1969/GB 與 1970-01/GB 兩筆是 Official。年份與背書一律以 1969/GB 那筆為準，Bootleg 那五筆不得採為背書來源，本機建卡時不要拿它們的封面。撞卡：池中該團僅《Mice and Rats in the Loft》，且該卡已在 c-60 的 prop 出現過，本卡與它不同碟。Apple gb 命中 collectionId 1562933230，年份標 1970，依裁定 127 取 1969。",
+  "mbNote": "釘 release-group e7bdbee2-0bc6-35e8-b0ce-03c9994740fa。回問 release-group/e7bdbee2-0bc6-35e8-b0ce-03c9994740fa?fmt=json&inc=artist-credits+releases 確認：title「Sorcerers」、artist-credit「Jan Dukes de Grey」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 7 個 release（1969/GB/Official、1970-01/GB/Official、2002/IT/Bootleg、2002/KR/Bootleg、2019-05-23/KR/Bootleg、2019-11-27/JP/Bootleg、2020/GB/Bootleg）。原盤 release 0d2c4bf0-3312-47bf-9a84-bfc6a84845a0（1969／GB／Official，18 軌，label-info Decca Records SDN 8）。藝人 MBID e992efae-b38e-43e8-88d5-4ad485707619（Jan Dukes de Grey，Group／United Kingdom／1968），名下 4 個 RG。刻意不釘：77f7fbfb-49c8-3115-8c59-9de15c106399《Mice and Rats in the Loft》（1971，池中已有）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dando Shaft An Evening with Dando Shaft",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Dando Shaft",
+  "album": "An Evening With Dando Shaft",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "Young Blood（catno SYB 3），DE 1970",
+  "why": "Dando Shaft 的首張，1970 年出在 Young Blood（MB label-info：Young Blood／SYB 3），是 Coventry 這一組人在被 Neon／RCA 簽走之前的原始面貌，也是他們唯一一張沒有 Polly Bolton 的專輯。實掃 seed_cards.json：池中 Dando Shaft 只有 1971 年 Neon 的同名第二作 1 張，首張與 1972 年的《Lantaloon》都缺。三張並列才看得出這個團從獨立小廠到 RCA 的整條軌跡。",
+  "risk": "封面：CAA coverartarchive.org/release-group/ae2b96ab-b4ba-479c-b56a-0dc4d5fd15ec 回 200，有圖。盤名大小寫：MB 的 RG 標題是「An Evening With Dando Shaft」（With 大寫 W），Apple gb 命中的 collectionId 1699700823 同形，Discogs 多寫小寫 with——依裁定 6／70／120 取 MB 實體的文字。撞卡：池中該團的卡是《Dando Shaft》（1971 同名作），與本卡盤名不同，chk-prop 折疊後不會誤標，但人工要分清「同名作」與「首張」是兩張碟。年份：MB 首個 release 1970/DE，英國原盤同年。Apple gb 有條目，封面與試聽兩路都預估拿得到。",
+  "mbNote": "釘 release-group ae2b96ab-b4ba-479c-b56a-0dc4d5fd15ec。回問 release-group/ae2b96ab-b4ba-479c-b56a-0dc4d5fd15ec?fmt=json&inc=artist-credits+releases 確認：title「An Evening With Dando Shaft」、artist-credit「Dando Shaft」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（1970/DE/Official、2006-07-05/JP/Official）。原盤 release c376c13b-c002-4d0d-b3a6-83fa4787ec4c（1970／DE／Official，8 軌，label-info Young Blood SYB 3）。藝人 MBID c540e9ea-b3f4-46fa-b6f8-47822bb543a1（Dando Shaft，Group／United Kingdom／1968），名下 7 個 RG。刻意不釘：1fb02501-76bf-4356-9271-daffe0c7fa59《Dando Shaft》（1971 同名作，池中已有）、9f8df1ac-1a6d-3aaf-96b8-ed0bf8b36596《Reaping the Harvest... Plus》（無日期，secondary-type Compilation 的後世整編）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dando Shaft Lantaloon",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Dando Shaft",
+  "album": "Lantaloon",
+  "year": 1972,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "RCA Victor（catno SF 8256），GB 1972",
+  "why": "Dando Shaft 在 RCA 的第二張、原始編制的最後一張，1972 年發行後樂團即解散。實掃 seed_cards.json：池中該團僅 1971 年的同名作，1972 的收束缺席。與同批補進的 1970 年首張一起，池中才會有這個團完整的三張目錄；只補首張的話，RCA 這一段仍是斷的。",
+  "risk": "封面：CAA coverartarchive.org/release-group/e74e47ad-6d82-4861-92d6-441eeb9a3163 回 200，有圖。撞卡：池中該團僅《Dando Shaft》（1971），盤名不同。掛名與同批 a 組另一張 Dando Shaft 卡相同，跨組重複檢查已跑過，兩卡盤名不同不構成重複。年份：MB 首個 release 1972/GB，唯一的再發是 2006/JP，年份無爭議。Apple gb 命中 collectionId 1699705003《Lantaloon》／Dando Shaft／1972，封面與試聽兩路都預估拿得到。",
+  "mbNote": "釘 release-group e74e47ad-6d82-4861-92d6-441eeb9a3163。回問 release-group/e74e47ad-6d82-4861-92d6-441eeb9a3163?fmt=json&inc=artist-credits+releases 確認：title「Lantaloon」、artist-credit「Dando Shaft」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 2 個 release（1972/GB/Official、2006/JP/Official）。原盤 release 7c020cee-fcae-4f03-8315-6b69e3d43617（1972／GB／Official，10 軌，label-info RCA Victor SF 8256）。藝人 MBID c540e9ea-b3f4-46fa-b6f8-47822bb543a1，名下 7 個 RG。刻意不釘：1fb02501-76bf-4356-9271-daffe0c7fa59《Dando Shaft》（1971，池中已有）、ae2b96ab-b4ba-479c-b56a-0dc4d5fd15ec《An Evening With Dando Shaft》（1970，本批 a 組另立一卡）、0b895dc8-517d-4908-b515-73723d4d3857《Kingdom》（1977 重組後的碟，與原始編制不同期）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Michael Chapman Rainmaker 1969",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Michael Chapman",
+  "album": "Rainmaker",
+  "year": 1969,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Harvest（catno SHVL 755），GB 1969",
+  "why": "Michael Chapman 的首張，1969 年 7 月由 EMI 的 Harvest 廠標發行，是他被 Harvest 簽下後的第一份成果，班底與隔年那張《Fully Qualified Survivor》大致相同。實掃 seed_cards.json：池中 Michael Chapman 只有 1 張，就是 1970 年的《Fully Qualified Survivor》，首張缺。補這張，池中就有他在 Harvest 連續兩年的兩張，而不是只有被 John Peel 推紅的那一張。",
+  "risk": "封面：CAA coverartarchive.org/release-group/42cc28c1-86f3-3935-a716-f8782236bb3a 回 200，有圖。⚠ 掛名撞名（裁定 179）：MB 上「Michael Chapman」有四個實體——巴松管演奏家（1934 生）、cajun 鼓手、Motown 相關者，以及本卡採用的 89c3ee86（Person／United Kingdom／1941-01-24，disambiguation「British guitarist and singer-songwriter」）。已回問 area、type 與 disambiguation 三欄確認。撞卡：池中該藝人僅 1 張，盤名不同。年份：MB first-release-date 1969-07，Apple gb 的 collectionId 1681870385 是 2011 Remaster 版但標 1969，兩邊一致。",
+  "mbNote": "釘 release-group 42cc28c1-86f3-3935-a716-f8782236bb3a。回問 release-group/42cc28c1-86f3-3935-a716-f8782236bb3a?fmt=json&inc=artist-credits+releases 確認：title「Rainmaker」、artist-credit「Michael Chapman」、first-release-date 1969-07、primary-type Album、secondary-types 空、轄下 3 個 release（1969-07/GB/Official、1997/?/Official、2012-01-24/US/Official）。原盤 release 554fe728-c2e2-457d-9b89-b3f12cf603c1（1969-07／GB／Official，11 軌，label-info Harvest SHVL 755）。藝人 MBID 89c3ee86-abd3-4fc8-872d-39d260ea8b1c（Michael Chapman，Person／United Kingdom／1941-01-24），以分頁全列 58 個 RG。刻意不釘：224e7e36-3399-392b-849c-993a70334dbd《Fully Qualified Survivor》（1970，池中已有）、3704521e-fb8f-4d6e-b19d-8fdc18b58bed《The Best Of Michael Chapman (1969-1971)》（1988，secondary-type Compilation）、d5dbd19f-28e1-439c-b634-41b5e8f6d539 與 b66beadd-6cd5-473a-afbb-dfd5220145f5 兩筆《Playing Guitar the Easy Way》（教學盤，MB 上重複建檔）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Michael Chapman Wrecked Again",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Michael Chapman",
+  "album": "Wrecked Again",
+  "year": 1971,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Harvest（catno SHVL 798），GB 1971",
+  "why": "Michael Chapman 在 Harvest 的最後一張錄音室專輯，1971 年 11 月發行（Harvest SHVL 798），是這三年三張裡最被壓過去的一張。實掃 seed_cards.json：池中該藝人僅《Fully Qualified Survivor》1 張。與同批補進的首張《Rainmaker》一起，Harvest 三年三張就完整了，池中才有辦法呈現這條線的起落而不是只有中間那張。",
+  "risk": "封面：CAA coverartarchive.org/release-group/e3f7632a-ae66-415f-b23f-34b1069e6ab3 回 200，有圖。撞卡：池中該藝人僅 1 張，盤名不同；同批 a 組另有一張 Michael Chapman 卡（《Rainmaker》），跨組重複檢查已跑過。掛名同名實體四個，處理同《Rainmaker》那卡。年份：MB first-release-date 1971-11，Apple gb collectionId 1681870108 是 2013 Remaster 但標 1971，一致。轄下三個 release 有兩筆日期未填，年份以 1971-11/GB 那筆為準。",
+  "mbNote": "釘 release-group e3f7632a-ae66-415f-b23f-34b1069e6ab3。回問 release-group/e3f7632a-ae66-415f-b23f-34b1069e6ab3?fmt=json&inc=artist-credits+releases 確認：title「Wrecked Again」、artist-credit「Michael Chapman」、first-release-date 1971-11、primary-type Album、secondary-types 空、轄下 3 個 release（1971-11/GB/Official、?/GB/Official、?/US/Official）。原盤 release f750437e-5c26-4829-bbe4-0e60831d198e（1971-11／GB／Official，11 軌，label-info Harvest SHVL 798）。藝人 MBID 89c3ee86-abd3-4fc8-872d-39d260ea8b1c，名下 58 個 RG。刻意不釘：224e7e36-3399-392b-849c-993a70334dbd《Fully Qualified Survivor》（1970，池中已有）、42cc28c1-86f3-3935-a716-f8782236bb3a《Rainmaker》（1969，本批 a 組另立一卡）、66d9c69b-18ea-4d65-b472-db65c3b35031《Window》（1970，實際是 Harvest 的合輯性質再組盤）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bridget St. John Jumblequeen；Bridget St John Jumble Queen",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Bridget St John",
+  "album": "Jumblequeen",
+  "year": 1974,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Chrysalis（catno CHR 1062），GB 1974",
+  "why": "Bridget St John 的第四張、離開 John Peel 的 Dandelion 之後在 Chrysalis 的唯一一張，也是她 1970 年代最後一張錄音室專輯。實掃 seed_cards.json：池中她有 2 張，都是 Dandelion 時期的《Ask Me No Questions》（1969）與《Songs for the Gentle Man》（1971），1974 這一端是空的。補這張，Dandelion 到 Chrysalis 的轉場才看得見。",
+  "risk": "封面：CAA coverartarchive.org/release-group/731feef0-e155-43bb-870a-87b25f528a17 回 200，有圖。⚠ 掛名寫法：MB 實體名是「Bridget St. John」（帶點號），池中兩張既有卡寫「Bridget St John」（無點號）。依裁定 177（先看池中、再看 MB credit），本卡採池中寫法「Bridget St John」，避免製造第三種分裂寫法；本機建卡時不要照 MB 改回帶點號。Apple gb 命中 collectionId 1579883389，Apple 的藝人名同樣寫「Bridget St. John」，配對時要容忍點號差異。撞卡：池中兩張盤名皆不同。年份：MB first-release-date 1974，與 Apple 一致。MB 另有一筆《Thank You for...》（RG aee93734，first-release-date 標 1995），那是 1972 年 Dandelion 原盤被以再發日期建檔，本批不收，已列入 rulings 的未收清單。",
+  "mbNote": "釘 release-group 731feef0-e155-43bb-870a-87b25f528a17。回問 release-group/731feef0-e155-43bb-870a-87b25f528a17?fmt=json&inc=artist-credits+releases 確認：title「Jumblequeen」、artist-credit「Bridget St. John」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 4 個 release（1974/GB/Official、1995/?/Official、2006/GB/Official、2010/JP/Official）。原盤 release 6600408f-cfc9-4603-bf9a-d7ee53bb96f1（1974／GB／Official，10 軌，label-info Chrysalis CHR 1062）。藝人 MBID db53fe45-d4a4-4b55-b74e-1ce069572704（Bridget St. John，Person／United Kingdom／1946-10-04），名下 9 個 RG。刻意不釘：2fe605cb-da79-3e88-bde4-5cf7cabc1330《Ask Me No Questions》（1969，池中已有）、fe939459-7a1d-3cd2-8020-b33f1649eb0e《Songs for the Gentle Man》（1971，池中已有）、aee93734-41d8-3494-a2e1-d80b299b7461《Thank You for...》（MB first-release-date 1995，原盤 1972，年份不可信，本批不收）、2b64daaf-1a09-444d-b4c9-98b963d3e022《BBC Radio 1968-1978》與 7f337f28-4374-4189-a3b8-7c79bcbbffc6《A Pocketful of Starlight》（皆 secondary-type Compilation）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Keith Christmas Stimulus",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Keith Christmas",
+  "album": "Stimulus",
+  "year": 1969,
+  "genres": [
+   "folk"
+  ],
+  "label": "RCA Victor（catno SF 8059），GB 1969",
+  "why": "Keith Christmas 的首張，1969 年由 RCA 發行，錄音時 Mick Abrahams 與 Mighty Baby 的成員參與，是他在成為 David Bowie《Space Oddity》伴奏吉他手同期的個人作品。實掃 seed_cards.json：Keith Christmas 池中 0 張——這是本批確認的空位之一。他名下 MB 只有三張 1970 年代原盤，這張是起點，收它可以把池中已有的 Mighty Baby（c-68 批收進的《Mighty Baby》1969）那條線在民謠側接上。",
+  "risk": "封面：CAA coverartarchive.org/release-group/c6dfaef6-9e7e-44b2-b78b-736d1135e74f 回 200，有圖。撞卡：池中 0 張，無撞卡風險；掛名「Keith Christmas」MB 上 score 100 只有一個實體（Person／United Kingdom／1946-10-13），無同名疑慮。盤名 Stimulus 是通用詞，MB 上另有他人同名碟，藝人閘要以 artist MBID 過濾。年份：MB first-release-date 1969，Apple gb 命中 collectionId 580801086 同樣標 1969。另注意 MB 有一筆《Fable of the Wings》（RG 5bf7dac2）first-release-date 標 2012，那是 1970 年 B&C 原盤被以再發日期建檔，本批不收。",
+  "mbNote": "釘 release-group c6dfaef6-9e7e-44b2-b78b-736d1135e74f。回問 release-group/c6dfaef6-9e7e-44b2-b78b-736d1135e74f?fmt=json&inc=artist-credits+releases 確認：title「Stimulus」、artist-credit「Keith Christmas」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release（1969/GB/Official、2012/GB/Official）。原盤 release 98d23102-2400-4b78-8310-fb51cf804efc（1969／GB／Official，7 軌，label-info RCA Victor SF 8059）。藝人 MBID 53a7cadf-6508-4b30-8638-7418f58ded55（Keith Christmas，Person／United Kingdom／1946-10-13），名下 6 個 RG。刻意不釘：5bf7dac2-1b55-4d8d-9680-6719af2fae4d《Fable of the Wings》（MB first-release-date 2012，原盤 1970，年份不可信）、46f771dc-4778-4ada-a8c0-0d6fa6f00b3f《Tomorrow Never Ends * The Anthology 1974 - 1976》（secondary-type Compilation）、eea4aa8f-1647-4a8f-adf4-4ef97c83fa4c《Live At The Pump》（secondary-type Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tir na nOg A Tear and a Smile；Tir Na Nog",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Tír na nÓg",
+  "album": "A Tear and a Smile",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "MB 該 release 未填 label-info（GB 1972，10 軌）",
+  "why": "愛爾蘭雙人組 Tír na nÓg 在 Chrysalis 的第二張，1972 年發行。實掃 seed_cards.json：池中該團只有 1971 年的同名首作 1 張。這張補上去就有了首作與第二作的對照——第二作是他們錄音編制擴大、開始有伴奏樂手介入的一張，與首作的純雙吉他形態是兩種東西。",
+  "risk": "封面：CAA coverartarchive.org/release-group/e7d24486-18c3-3daf-888f-c4ba368a84be 回 200，有圖。⚠ 掛名的重音字：MB 實體名是「Tír na nÓg」（í 與 Ó 帶重音），池中既有卡同形，依裁定 177 沿用。Apple 的藝人名寫「Tir Na Nog」（無重音、大小寫不同），依裁定 185 的形狀，盤名或掛名不是純 ASCII 時 search 回 0 不能當沒上架——本卡 Apple gb search 有命中（collectionId 1629187118《A Tear and a Smile》／Tir Na Nog／1972，另有 262131850 標 2007 的再發），queryAlias 已填無重音寫法。撞卡：池中該團僅同名首作，盤名不同。年份：MB first-release-date 1972，Apple 一致。",
+  "mbNote": "釘 release-group e7d24486-18c3-3daf-888f-c4ba368a84be。回問 release-group/e7d24486-18c3-3daf-888f-c4ba368a84be?fmt=json&inc=artist-credits+releases 確認：title「A Tear and a Smile」、artist-credit「Tír na nÓg」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 2 個 release（1972/GB/Official、2012-10-29/?/?）。原盤 release ac79384b-e756-49d9-8dd4-81b4053ed518（1972／GB／Official，10 軌，label-info 未填）。藝人 MBID 1b7577db-0201-4cc3-83c9-017df90213fe（Tír na nÓg，Group／Ireland／1969，disambiguation「Irish folk band from Dublin」），名下 13 個 RG。刻意不釘：a19dcaf2-659d-3fbe-93ba-7d4f911dc3f3《Tír na nÓg》（1971 同名首作，池中已有）、9e3d3dbd-c8d1-39be-a71f-bdc6c3985787《Strong in the Sun》（MB 標 1972、Apple 標 1973，年份兩邊不一致，本批不收）、9be376d2-6960-46cb-ba22-1b43086d3174《A Tear And A Smile / Strong In The Sun》（2004 二合一再發，secondary-type Compilation）、663e1a26-9bce-4ba3-aa17-b99fe86a4fed《Live 1970-71》與 fe7f1459-95df-429a-aaed-d4eb93923987《Live At The Half Moon》（皆 secondary-type Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wizz Jones The Legendary Me；Wizz Jones Village Thing",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Wizz Jones",
+  "album": "The Legendary Me",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "Village Thing（catno VTS 4），GB 1970",
+  "why": "Wizz Jones 在 Bristol 的 Village Thing 廠牌發行的第一張，1970 年，是這個小廠最早的幾號之一。實掃 seed_cards.json：Wizz Jones 池中 0 張——本批點名的 Village Thing 廠牌在池中同樣是 0 張。收這張等於同時補一位藝人與一個廠牌的空位；池中既有的 Bert Jansch 六張與 Davy Graham 三張都屬同一批英國吉他手，Jones 缺席會讓那條線看起來只有 Transatlantic 一系。",
+  "risk": "封面：CAA coverartarchive.org/release-group/505f67e7-3eb2-4d5c-9490-68361e4699b7 回 404，無圖封面是這張的主要風險：CAA 無圖，收錄依據落在 Apple。Apple gb search 命中三筆 collectionId——496142391、425507336、1600034777（Remastered），三筆的藝人名都是 Wizz Jones，年份欄都標 2006（再發年），依裁定 127 年份取原盤 1970。本機取封面時請以 496142391 或 425507336 直查，不要用模糊搜尋。撞卡：池中 0 張。掛名「Wizz Jones」MB 上 score 100 唯一實體，無同名疑慮。",
+  "mbNote": "釘 release-group 505f67e7-3eb2-4d5c-9490-68361e4699b7。回問 release-group/505f67e7-3eb2-4d5c-9490-68361e4699b7?fmt=json&inc=artist-credits+releases 確認：title「The Legendary Me」、artist-credit「Wizz Jones」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 3 個 release（1970/GB/Official、2006/JP/?、2006/GB/Official）。原盤 release 14702bff-81fa-4f9b-99b8-f98a6f2ba3fb（1970／GB／Official，11 軌，label-info Village Thing VTS 4）。藝人 MBID 00b5d824-c6c3-4432-9eb7-d672acd26385（Wizz Jones，Person／United Kingdom／1939-04-25），名下 17 個 RG。刻意不釘：f03ba3f9-ea7e-4bc2-899b-5994cc47987c《Wizz Jones》（1969 同名首作，本批未取）、ebb0f7ab-0525-4a1e-8592-07092cce893f《The Village Thing Tapes》（1992，secondary-type Compilation）、2f16566f-b13f-4019-8ea5-c0b4d813a05e《A Life On The Road 1964 - 2014》（2015，secondary-type Compilation）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wizz Jones Right Now 1972",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Wizz Jones",
+  "album": "Right Now",
+  "year": 1972,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "CBS（catno CBS 64809），GB 1972",
+  "why": "Wizz Jones 離開 Village Thing 之後在 CBS 的第一張，1972 年（MB label-info：CBS 64809），班底加入 Pete Berryman。實掃 seed_cards.json：Wizz Jones 池中 0 張。與同批補進的《The Legendary Me》（Village Thing VTS 4）一起，池中就有這位吉他手在小廠與大廠兩種發行條件下的一對碟，而不是只有其中一邊。",
+  "risk": "封面：CAA coverartarchive.org/release-group/fe203557-c70a-42a1-861b-dbf9ad7d9df2 回 404，無圖⚠ 盤名是極通用的詞組：Apple gb search「Wizz Jones Right Now」回的四筆裡有三筆是 Nick Jonas & Robin Schulz 的同名單曲，只有 collectionId 324112956《Right Now》／Wizz Jones／1972 是對的，本機配對務必用這個 collectionId 直查，不要用盤名模糊搜尋。CAA 無圖，收錄依據落在 Apple 這一路（裁定 195 的英國私壓延伸）。撞卡：池中 0 張；同批 a 組另有一張 Wizz Jones 卡，盤名不同。年份：MB first-release-date 1972，Apple 一致。",
+  "mbNote": "釘 release-group fe203557-c70a-42a1-861b-dbf9ad7d9df2。回問 release-group/fe203557-c70a-42a1-861b-dbf9ad7d9df2?fmt=json&inc=artist-credits+releases 確認：title「Right Now」、artist-credit「Wizz Jones」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 3 個 release（1972/GB/Official、2009-10-19/GB/Official、2011-03-07/DE/Official）。原盤 release 016f3572-f9f0-4048-aec1-8e828c9f3643（1972／GB／Official，10 軌，label-info CBS CBS 64809）。藝人 MBID 00b5d824-c6c3-4432-9eb7-d672acd26385，名下 17 個 RG。刻意不釘：505f67e7-3eb2-4d5c-9490-68361e4699b7《The Legendary Me》（1970，本批 a 組另立一卡）、da1ce57e-8430-47f4-aaaa-51476faa03fc《Sixteen Tons of Bluegrass》（1966，掛名實為合作團體）、ebb0f7ab-0525-4a1e-8592-07092cce893f《The Village Thing Tapes》（secondary-type Compilation）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bread Love and Dreams Captain Shannon；Bread, Love & Dreams",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Bread, Love and Dreams",
+  "album": "The Strange Tale of Captain Shannon and the Hunchback From Gigha",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Decca Records（catno SKL 5048），GB 1970",
+  "why": "蘇格蘭三人組 Bread, Love and Dreams 在 Decca 的第二張，1970 年，整張是一組貫串的概念曲目，編曲由 Robert Kirby 掛帥（同時期他也替 Nick Drake 寫弦樂）。實掃 seed_cards.json：這個團池中 0 張。池中已有 Nick Drake 三張與 Trees 兩張，Kirby 這條編曲人脈在池中只看得到 Drake 那一側，補這張可以把蘇格蘭這一支接上。",
+  "risk": "封面：CAA coverartarchive.org/release-group/a3d18ddd-b921-3dfc-82a6-1ac52c5ec57e 回 200，有圖。⚠ 掛名的 &／and 分裂（audits 2026-09-06 續補第三節的同一型態）：MB 實體名是「Bread, Love and Dreams」（用 and），Apple gb 命中的 collectionId 878171454 藝人名卻寫「Bread, Love & Dreams」（用 &）。兩種寫法都查過池中皆為 0 張。依裁定 6／70／120 取 MB 實體的文字（用 and），queryAlias 已填 & 版。盤名極長且含 From／from 的大小寫分歧（Apple 寫 from），配對要折疊大小寫。撞卡：池中 0 張。年份：MB 唯一 release 是 1970/GB/Official，Apple 標 1970，一致。",
+  "mbNote": "釘 release-group a3d18ddd-b921-3dfc-82a6-1ac52c5ec57e。回問 release-group/a3d18ddd-b921-3dfc-82a6-1ac52c5ec57e?fmt=json&inc=artist-credits+releases 確認：title「The Strange Tale of Captain Shannon and the Hunchback From Gigha」、artist-credit「Bread, Love and Dreams」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release（1970/GB/Official）。原盤 release c0f9cfd7-3307-4ff2-93e4-86e9951b0b41（1970／GB／Official，9 軌，label-info Decca Records SKL 5048）。藝人 MBID 1de39052-7998-4017-b114-d4172360345b（Bread, Love and Dreams，Group／Scotland／1969），名下 3 個 RG。刻意不釘：1ef0c3ab-806b-3104-890e-6cd2b71d07c5《Bread, Love and Dreams》（1969 同名首作，本批未取）、75fbd6fe-1018-3b25-a133-4c8bc5972a52《Amaryllis》（1971 第三張，Apple 上只有標為 EP 的再發條目，形態有疑，本批不收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dulcimer And I Turned As I Had Turned As A Boy；And I Turned as I Had Turned as a Boy",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Dulcimer",
+  "album": "And I Turned As I Had Turned As A Boy…",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "MB 該 release 未填 label-info（GB 1970，15 軌）",
+  "why": "Dulcimer 唯一的一張原盤，1970 年發行，原壓數量極少，是英國 acid folk 私壓價目上最高的幾張之一。⚠ MB 轄下的 1970/GB/Official release 沒有填 label-info，本機建卡時廠牌欄請留白或另尋一手證據，不要照坊間著錄直接填。實掃 seed_cards.json：這個團池中 0 張，且 MB 名下只有這 1 個 release-group——收它等於把這個團在池中的存在從無到有。池中同型態的 Agincourt、Oberon、Stone Angel、Fresh Maggots 都已在（分別由 c-63／c-68 等批收進），Dulcimer 是同一群裡少數還缺的。",
+  "risk": "封面：CAA coverartarchive.org/release-group/5e42d4bc-1dfa-3407-8398-6945c5a40684 回 200，有圖。⚠ 盤名含非 ASCII 的刪節號 U+2026（「…」）：chk-prop 的連字號檢查掃不到這個字元，但 Apple 與 CAA 的字串比對可能因此失手。本機建卡時請照 MB 實體文字原樣寫（裁定 6／70／120），配對時要另備去掉刪節號、且全小寫化的 alias（已填 queryAlias）。Apple gb search 回 0 筆，依裁定 173／185 不算沒上架，但 CAA 有圖，依裁定 195 的英國私壓延伸可收，試聽預估走無來源狀態。撞卡：池中 0 張；掛名「Dulcimer」MB 上另有 Manchester 的電子藝人與數個同名，已回問 area 與 type，採用 5eb837fb（Group／United Kingdom）。",
+  "mbNote": "釘 release-group 5e42d4bc-1dfa-3407-8398-6945c5a40684。回問 release-group/5e42d4bc-1dfa-3407-8398-6945c5a40684?fmt=json&inc=artist-credits+releases 確認：title「And I Turned As I Had Turned As A Boy…」、artist-credit「Dulcimer」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 4 個 release（1970/GB/Official、1971/GB/Official、2003-09/KR/Official、2004/JP/Official）。原盤 release db9d6e69-321f-45a1-a624-7fd2dfd06803（1970／GB／Official，15 軌，label-info 未填）。藝人 MBID 5eb837fb-c563-48aa-b62f-a7f08632bee1（Dulcimer，Group／United Kingdom），名下只有 1 個 RG，即本卡。無同藝人對照組可列，因此不列「刻意不釘」；同名別實體 d6b6de59-9267-4371-bf64-be70026da845（Manchester 電子藝人）已在藝人查詢階段排除，不是本卡的候選。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Andy Roberts Home Grown 1970",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Andy Roberts",
+  "album": "Home Grown",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "RCA Victor（catno SF8086），GB 1970",
+  "why": "Andy Roberts 的首張個人專輯，1970 年 3 月由 RCA 發行，他此前是 Liverpool Scene 的吉他手，此後長期擔任 Roy Harper 與 Vivian Stanshall 的伴奏。實掃 seed_cards.json：Andy Roberts 池中 0 張。池中已有 Roy Harper 兩張，補這張可以把 Harper 周邊的伴奏班底在池中接上一位。",
+  "risk": "封面：CAA coverartarchive.org/release-group/1e9dfcef-cfee-4574-869c-493870832c4e 回 200，有圖。⚠ 掛名撞名（裁定 179）：MB 上「Andy Roberts」有六個實體——Linus 的英國吉他手、美國 techno 製作人、爵士歌手、Isle of Wight 的 Andy Roberts、美國 banjo 手。已回問 area、type、disambiguation 三欄確認採用 c62fda0f（Person／United Kingdom／1946-06-12，disambiguation「UK folk singer/songwriter」）。盤名 Home Grown 是通用詞組，MB 上另有多筆同名，藝人閘要以 artist MBID 過濾。撞卡：池中 0 張。Apple gb search 回 0 筆，依裁定 173／185 要再走藝人目錄 lookup；CAA 有圖，依裁定 195 可收。年份：MB 唯一 release 1970-03/GB/Official。",
+  "mbNote": "釘 release-group 1e9dfcef-cfee-4574-869c-493870832c4e。回問 release-group/1e9dfcef-cfee-4574-869c-493870832c4e?fmt=json&inc=artist-credits+releases 確認：title「Home Grown」、artist-credit「Andy Roberts」、first-release-date 1970-03、primary-type Album、secondary-types 空、轄下 1 個 release（1970-03/GB/Official）。原盤 release 478bfcdb-0b0c-4842-8f38-613b56935fcd（1970-03／GB／Official，14 軌，label-info RCA Victor SF8086）。藝人 MBID c62fda0f-65eb-409a-ba2e-6df41a22557b（Andy Roberts，Person／United Kingdom／1946-06-12，disambiguation「UK folk singer/songwriter」），名下 4 個 RG。刻意不釘：d7e2ff38-966e-4ee0-852a-e240145e55cb《Nina and the Dream Tree》（1971）、1df3eb1f-d56d-4d52-8250-742f3e783be2《Andy Roberts and the Great Stampede》（1973，掛名實為樂團）、b6751f7d-b2ed-4e07-93f0-3788dca152b8《Urban Cowboy》（1973）——三張都是同藝人別碟，本批只取首張。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sallyangie Children of the Sun；Mike Oldfield Sally Oldfield",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "The Sallyangie",
+  "album": "Children of the Sun",
+  "year": 1969,
+  "genres": [
+   "folk"
+  ],
+  "label": "Warner Bros.‐Seven Arts Records（catno WS 1783），US 1969",
+  "why": "The Sallyangie 唯一的一張，Mike Oldfield 十五歲、姊姊 Sally Oldfield 十九歲時錄的，1969 年發行；MB 轄下最早的 release 是同年美國 Warner Bros.‐Seven Arts 的宣傳盤（WS 1783），英國原盤出在 Transatlantic。實掃 seed_cards.json：這個團池中 0 張。本批的小廠清單雖未點名 Transatlantic，但池中的 Mr. Fox（c-63 提案）、Young Tradition《Galleries》都出自這個廠牌；補這張可以把 Transatlantic 民謠側最早的一號補齊，也是 Mike Oldfield 進入池中的最早接點。",
+  "risk": "封面：CAA coverartarchive.org/release-group/0a2805fe-a0da-3721-b77e-b4c59df4d6ef 回 200，有圖。⚠ 首個 release 的 status 是 Promotion：轄下 7 個 release 裡最早那筆是 1969/US/Promotion，正規盤要看 1978/GB 與 1979/IT 兩筆 Official。依裁定 43／57／65／78，背書取 Official 那幾筆；年份仍取原盤發行年 1969（裁定 127），不取 1978。本機建卡時不要拿 Promotion 那筆當背書。撞卡：池中 0 張，Mike Oldfield 與 Sally Oldfield 名下亦皆 0 張，三種寫法都查過。掛名「The Sallyangie」MB 上 score 100 唯一實體。Apple gb 命中 collectionId 1439693983《Children of the Sun (feat. Mike Oldfield & Sally Oldfield) [Definitive Edition]》，盤名帶括號後綴，配對要截斷後綴。",
+  "mbNote": "釘 release-group 0a2805fe-a0da-3721-b77e-b4c59df4d6ef。回問 release-group/0a2805fe-a0da-3721-b77e-b4c59df4d6ef?fmt=json&inc=artist-credits+releases 確認：title「Children of the Sun」、artist-credit「The Sallyangie」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 7 個 release（1969/US/Promotion、1978/GB/Official、1979/IT/Official、1988/XE/Official、2003-11-28/JP/Official、?/?/Official、?/?/?）。原盤 release 3a313ebb-9a41-4986-8ce6-9a9c2f08eadf（1969／US／Promotion，14 軌，label-info Warner Bros.‐Seven Arts Records WS 1783）。藝人 MBID 63cf1df4-5f93-4688-afde-8b241975bd8f（The Sallyangie，Group／United Kingdom／1968），名下 2 個 RG。刻意不釘：d234cc81-6f94-486e-8964-79f344b0baf4《Sweet Child of Allah / Lady Go Lightly》（1972，primary-type Single）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Principal Edwards Magic Theatre Soundtrack；Principal Edwards",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Principal Edwards Magic Theatre",
+  "album": "Soundtrack",
+  "year": 1969,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Elektra（catno D9-103），US 1969",
+  "why": "Principal Edwards Magic Theatre 的首張，1969 年出在 John Peel 自營的 Dandelion 廠牌，是這個廠最早的專輯之一；MB 轄下最早的 release 是同年美國 Elektra 的版本（D9-103）。實掃 seed_cards.json：這個團池中 0 張；Dandelion 這個廠牌在池中目前只靠 Bridget St John 兩張撐著。本批點名 Dandelion 為要補的小廠，這張與 Bridget St John 那兩張並列，池中才看得出 Peel 這個廠牌不只簽獨唱歌手。",
+  "risk": "封面：CAA coverartarchive.org/release-group/e6d2227a-8b2f-3922-aa59-813a994d4b45 回 404，無圖⚠ 盤名「Soundtrack」是最通用的詞：MB 與 Apple 上同名條目數以千計，配對一律要用 artist MBID 或 collectionId 直查，絕不可用盤名搜尋。CAA 無圖，收錄依據落在 Apple——gb search 命中 collectionId 1601296749 與 277531682，兩筆藝人名都是 Principal Edwards Magic Theatre、年份都標 1969，本機取封面請以其中之一直查。撞卡：池中 0 張；掛名連寫與分寫（裁定 204）都查過，MB 上 score 100 唯一實體。年份：MB first-release-date 1969，Apple 一致。注意 MB 另有 90f87500《The Asmoto Running Band》first-release-date 標 2006（原盤 1971），年份不可信。",
+  "mbNote": "釘 release-group e6d2227a-8b2f-3922-aa59-813a994d4b45。回問 release-group/e6d2227a-8b2f-3922-aa59-813a994d4b45?fmt=json&inc=artist-credits+releases 確認：title「Soundtrack」、artist-credit「Principal Edwards Magic Theatre」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release（1969/US/Official、2006-06/GB/Official）。原盤 release 9a06fc10-cad1-427e-97d8-21dfde1d40dd（1969／US／Official，6 軌，label-info Elektra D9-103）。藝人 MBID 8314246f-b3d1-490a-acf2-5024c8727f15（Principal Edwards Magic Theatre，Group／United Kingdom／1968），名下 5 個 RG。刻意不釘：90f87500-91a9-3245-a986-1e0eb2bd7f34《The Asmoto Running Band》（MB first-release-date 2006，原盤 1971，年份不可信）、8a7698d0-5575-434f-a395-4a1eb967823c《Soundtrack / The Asmoto Running》（1994 二合一，secondary-type Compilation）、ea802976-b74f-4253-a418-d1883448db28《Round One》（1974，改名 Principal Edwards 之後的碟）、db026cbd-b0f7-4065-8d9f-44466048d4da《The Devon Tapes》（2008 出土錄音）。"
+ }
+]

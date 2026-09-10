@@ -1,0 +1,404 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mr Fox The Gipsy；Mister Fox",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Mr. Fox",
+  "album": "The Gipsy",
+  "year": 1971,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Transatlantic Records（catno TRA 236），GB 1971",
+  "why": "Mr. Fox 的第二張、也是最後一張，1971 年出在 Transatlantic（TRA 236），Bob 與 Carole Pegg 這對搭檔散夥前的收束。實掃 seed_cards.json 全 14,424 列：Mr. Fox 池中 0 張；但同名首作《Mr. Fox》（1970）已在 c-63 批的 prop-a 出現過，本批因此只取第二張，避免跨批重複。這張與池中已有的 Steeleye Span 六張同屬 Yorkshire／electric folk 那一支，補進來可以讓那條線不是只有 Steeleye 一團。",
+  "risk": "封面：CAA coverartarchive.org/release-group/31b0575a-e5c6-3857-b72b-3056285bbe10 回 200，有圖。⚠ 掛名撞名（裁定 179，本批最高危的一個）：MB artist?query「Mr Fox」回八個實體——UK rapper、巴拿馬 rapper、80s Hip Hop、Afrobeat、Wim Coryn、dub 客串者等，score 都在 92–96。已回問 area、type、disambiguation 三欄確認採用 745a29e9（Group／United Kingdom／begin 1970／「'70s UK electric folk rock group」）。連寫「MrFox」與無點號「Mr Fox」兩種寫法（裁定 204）都跑過。跨批撞卡：c-63 的 prop-a 已有《Mr. Fox》（1970），本卡是不同碟，dedup-crossbatch 不會標，但人工不要把兩張混為一談。Apple gb search 回 0 筆，依裁定 173／185 要再走藝人目錄 lookup；CAA 有圖，依裁定 195 可收。",
+  "mbNote": "釘 release-group 31b0575a-e5c6-3857-b72b-3056285bbe10。回問 release-group/31b0575a-e5c6-3857-b72b-3056285bbe10?fmt=json&inc=artist-credits+releases 確認：title「The Gipsy」、artist-credit「Mr. Fox」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 3 個 release（1971/GB/Official、2001/IT/Official、2005-07-22/JP/Official）。原盤 release 3bee41ff-6521-42ff-b4a9-97daf9b2a723（1971／GB／Official，7 軌，label-info Transatlantic Records TRA 236）。藝人 MBID 745a29e9-c60b-4c28-8c40-931bdd23fd0e（Mr. Fox，Group／United Kingdom／1970），名下 4 個 RG。刻意不釘：7158c58e-6a76-38c0-86ad-80361e9c3d83《Mr. Fox》（1970 同名首作，c-63 已提案）、217afb2b-15d2-320b-8809-302ecd34e609《Mr. Fox / The Gipsy》（1996 二合一，secondary-type Compilation）、a9c390ae-8512-4ebd-89e2-f456553489d8《Join Us in Our Game》（2004，secondary-type Compilation）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Gryphon 1973；Gryphon first album",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Gryphon",
+  "album": "Gryphon",
+  "year": 1973,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Transatlantic Records（catno TRA 262），GB 1973",
+  "why": "Gryphon 的首張，1973 年出在 Transatlantic（TRA 262），Richard Harvey 與 Brian Gulland 兩人自 Royal College of Music 出來後把中世紀樂器搬進民謠復興的第一份成果。實掃 seed_cards.json：Gryphon 池中 0 張。這張是他們還完全站在民謠側的一張（第二張之後才明顯往器樂長曲走），與池中已有的 Amazing Blondel 缺席、Magna Carta 缺席一起看，英國 1970 年代初「古樂器＋民謠」那一整塊在池中目前是空的，本批一次補三個團的起點。",
+  "risk": "封面：CAA coverartarchive.org/release-group/dc160fdc-d7e8-345a-9591-176487e7d70f 回 200，有圖。⚠ 掛名撞名（裁定 179）：MB 上「Gryphon」另有 Gryphon Trio（加拿大）、brony artist、game music remixer、Gryphon Rue 等多筆。已回問 area、type、disambiguation 確認採用 0cd7ff0b（Group／United Kingdom／1973／「70s UK progressive rock band」）。⚠ 與 c-68 的界線：c-68 是英國 prog／psych 批，本卡雖然 MB 的 disambiguation 寫 progressive rock，但實掃 c-68 的 prop-a／prop-b 共 45 張，Gryphon 一張都沒有，不構成重複；本批取的是首張（民謠側），未取 1974 年的《Red Queen to Gryphon Three》（那張才是 prog 側，留給日後的 prog 補遺）。自我同名，撞卡鍵是 artist+album 同字串，池中 0 張。Apple gb search 回 0 筆（自我同名盤名在 search 端最易失手）；CAA 有圖，依裁定 195 可收。",
+  "mbNote": "釘 release-group dc160fdc-d7e8-345a-9591-176487e7d70f。回問 release-group/dc160fdc-d7e8-345a-9591-176487e7d70f?fmt=json&inc=artist-credits+releases 確認：title「Gryphon」、artist-credit「Gryphon」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 8 個 release（1973/GB/Official、1992-05-21/JP/?、1994/?/Official、1995/GB/Official、2003-11-28/JP/Official、2003/JP/Official、2007-06-25/GB/Official、2016/GB/Official）。原盤 release 76b41752-433f-44b5-af91-0a25559d2a75（1973／GB／Official，12 軌，label-info Transatlantic Records TRA 262）。藝人 MBID 0cd7ff0b-21e2-468e-9652-abf211ddadcd（Gryphon，Group／United Kingdom／1973），名下 20 個 RG。刻意不釘：4dae8957-c17a-3c31-9bd1-6057cf74d5bc《Midnight Mushrumps》（1974）、a5fde55c-a416-3553-8e3e-504cfb1ae2df《Red Queen to Gryphon Three》（1974，prog 側，留給日後補遺）、cda3384a-04af-4c96-b993-b6626084c9da《Wavendon ’74》（secondary-type Live）、c4a7ed26-8399-46ca-8764-97ed89d45702《Spring Song》（primary-type Single）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Magna Carta Seasons 1970",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Magna Carta",
+  "album": "Seasons",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "Vertigo（catno 6360 003），GB 1970",
+  "why": "Magna Carta 的第二張，1970 年 8 月出在 Vertigo（6360 003，旋渦廠標最早的十號之一），A 面是一整組四季組曲，Tony Visconti 製作。實掃 seed_cards.json：Magna Carta 池中 0 張。池中已有同屬 Vertigo 旋渦系的 Dr. Strangely Strange（本批補第二張）與 Jan Dukes de Grey（Decca Nova），但 Vertigo 的民謠側目前一張都沒有，這張是那個廠標最早的民謠盤之一。",
+  "risk": "封面：CAA coverartarchive.org/release-group/ce70b55e-b485-3efa-8a5c-51d3904f7920 回 200，有圖。⚠ 掛名撞名（裁定 179）：MB 上「Magna Carta」另有希臘 progressive rock 團、辛巴威搖滾團、瑞典的 Magna Carta Cartel。已回問 area 與 type 確認採用 7d48f4d3（Group／United Kingdom／1969-05-10／「UK folk rock group」）。⚠ Apple 的條目形態：gb search 命中的 collectionId 1442886702 是《Seasons + Songs from Wasties Orchard (Remastered)》，把兩張碟併成一個條目、年份標 1999——本機配對時不可用這個 collectionId 當《Seasons》單張的來源，年份依裁定 127 取原盤 1970。撞卡：池中 0 張。CAA 有圖。",
+  "mbNote": "釘 release-group ce70b55e-b485-3efa-8a5c-51d3904f7920。回問 release-group/ce70b55e-b485-3efa-8a5c-51d3904f7920?fmt=json&inc=artist-credits+releases 確認：title「Seasons」、artist-credit「Magna Carta」、first-release-date 1970-08、primary-type Album、secondary-types 空、轄下 3 個 release（1970-08/GB/Official、2004-07-12/GB/Official、?/?/Official）。原盤 release 15be40db-036b-47f1-b67a-7d525cf87491（1970-08／GB／Official，7 軌，label-info Vertigo 6360 003）。藝人 MBID 7d48f4d3-4fa7-49ff-8a0b-b2a1ee868eb4（Magna Carta，Group／United Kingdom／1969-05-10），以分頁全列 33 個 RG。刻意不釘：d42bc512-2713-415a-ae4c-6411937893dc《Magna Carta》（1969 同名首作，本批未取）、937061db-d51b-4da9-b058-3b610786c45b 與 edc003ce-c29f-49bb-b4ed-26b76e40cfc7 兩筆《Airport Song》（primary-type Single）、3ebf95f9-c607-413c-91fd-7fbb37e2e35f《Magna Carta in Concert》、ac90073b-ec64-456c-a54f-6e7bd8a8224c 與 49929a09-def6-4a6b-9268-7e4d78717bbc 兩筆《In Concert》（現場盤，且 MB 上重複建檔）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Magna Carta Songs from Wasties Orchard",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Magna Carta",
+  "album": "Songs From Wasties Orchard",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Vertigo（catno 6360 040），GB 1971",
+  "why": "Magna Carta 在 Vertigo 的第三張，1971 年（6360 040），是他們在英國本土反應平平、卻在荷蘭與德國大賣的一張，也是 Vertigo 民謠側最後一批之一。實掃 seed_cards.json：Magna Carta 池中 0 張。與同批補進的《Seasons》一起，Vertigo 旋渦標在池中才會有連續兩年的兩張民謠盤可以互相定位。",
+  "risk": "封面：CAA coverartarchive.org/release-group/8f3663e9-2c6a-33ce-bdee-5992db6e280f 回 200，有圖。盤名大小寫：MB 的 RG 標題寫「Songs From Wasties Orchard」（From 大寫 F），Apple 的 collectionId 524836580 寫「Songs from Wasties Orchard (Remastered)」（小寫 f ＋括號後綴），依裁定 6／70／120 取 MB 實體的文字，配對時要折疊大小寫並截斷後綴。另有併碟條目 1442886702（與《Seasons》合併、年份標 1999），不可採。撞卡：池中 0 張；同批 b 組另有一張 Magna Carta 卡，盤名不同。年份：MB first-release-date 1971，Apple 單張條目亦標 1971。CAA 有圖。",
+  "mbNote": "釘 release-group 8f3663e9-2c6a-33ce-bdee-5992db6e280f。回問 release-group/8f3663e9-2c6a-33ce-bdee-5992db6e280f?fmt=json&inc=artist-credits+releases 確認：title「Songs From Wasties Orchard」、artist-credit「Magna Carta」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（1971/GB/Official、1994/DE/Official）。原盤 release 3b266568-7a19-472a-84f9-821e0aad0a72（1971／GB／Official，12 軌，label-info Vertigo 6360 040）。藝人 MBID 7d48f4d3-4fa7-49ff-8a0b-b2a1ee868eb4，名下 33 個 RG。刻意不釘：ce70b55e-b485-3efa-8a5c-51d3904f7920《Seasons》（1970，本批 b 組另立一卡）、d42bc512-2713-415a-ae4c-6411937893dc《Magna Carta》（1969 同名首作）、7cefba48-09c0-3d0b-b373-bf05d8ab0c22《Lord of the Ages》（1973，Vertigo 之後的碟）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Amazing Blondel Evensong；Amazing Blondel Evensong",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Amazing Blondel",
+  "album": "Evensong",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "Island（catno ILPS 9136），GB 1970",
+  "why": "Amazing Blondel 在 Island 的第一張，1970 年（ILPS 9136），John Gladwin 與 Terry Wincott 把魯特琴、直笛與大鍵琴當主奏，是英國民謠復興裡最徹底走伊莉莎白時代路線的一組。實掃 seed_cards.json：Amazing Blondel 池中 0 張，帶定冠詞的「The Amazing Blondel」也是 0 張，兩種寫法都查過。池中的 Island 民謠目錄目前只有 Nick Drake 三張與 John Martyn 五張，這一支器樂化的路線完全缺席。",
+  "risk": "封面：CAA coverartarchive.org/release-group/f01cb35a-923c-3c0b-86b2-9e8f05bf8dae 回 200，有圖。⚠ 掛名的定冠詞分歧：樂團早期封面印「The Amazing Blondel」，MB 實體名是「Amazing Blondel」（無定冠詞），Apple 的 collectionId 1442389244 也寫無定冠詞。依裁定 6／70／120 取 MB 實體文字，queryAlias 已填帶定冠詞版。撞卡：兩種寫法池中皆 0 張。年份：MB first-release-date 1970，Apple 一致。CAA 有圖，Apple gb 亦命中，封面與試聽兩路預估都拿得到。",
+  "mbNote": "釘 release-group f01cb35a-923c-3c0b-86b2-9e8f05bf8dae。回問 release-group/f01cb35a-923c-3c0b-86b2-9e8f05bf8dae?fmt=json&inc=artist-credits+releases 確認：title「Evensong」、artist-credit「Amazing Blondel」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（1970/GB/Official、1995/GB/Official）。原盤 release ea8f5209-688d-449e-ac8f-1dc0c20b3966（1970／GB／Official，11 軌，label-info Island ILPS 9136）。藝人 MBID 19e27ba8-272e-46b4-b944-eb2c6e9fb194（Amazing Blondel，Group／United Kingdom／1969，disambiguation「70s UK chamber folk group」），名下 13 個 RG。刻意不釘：9dfe5add-9e0b-46f5-b700-3f5da1fef773《The Amazing Blondel & A Few Faces》（1970-05，Bell 時期的首張，掛名形態不同）、baee323f-4fb7-37d6-ac05-e2d0b6ee31b9《Fantasia Lindum》（1971，本批 b 組另立一卡）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Amazing Blondel Fantasia Lindum",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Amazing Blondel",
+  "album": "Fantasia Lindum",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Island（catno ILPS 9156），GB 1971",
+  "why": "Amazing Blondel 在 Island 的第二張，1971 年（ILPS 9156），A 面是一整條以林肯（Lindum）為題的組曲，六軌的編排是他們最完整的一次。實掃 seed_cards.json：這個團池中 0 張。與同批補進的《Evensong》一起，Island 這一對碟並列才看得出他們從短曲集到整面組曲的走向；只補其一會讓這條線看起來像單張獵奇。",
+  "risk": "封面：CAA coverartarchive.org/release-group/baee323f-4fb7-37d6-ac05-e2d0b6ee31b9 回 200，有圖。掛名定冠詞分歧同《Evensong》那卡。撞卡：池中 0 張；同批 b 組另有一張 Amazing Blondel 卡，盤名不同。Apple gb search「Amazing Blondel Fantasia Lindum」回 0 筆——依裁定 173／185 不算沒上架，探測層要再走藝人目錄 lookup（該藝人在 gb 店面確實有條目，《Evensong》即命中）；CAA 有圖，依裁定 195 可收。年份：MB first-release-date 1971。",
+  "mbNote": "釘 release-group baee323f-4fb7-37d6-ac05-e2d0b6ee31b9。回問 release-group/baee323f-4fb7-37d6-ac05-e2d0b6ee31b9?fmt=json&inc=artist-credits+releases 確認：title「Fantasia Lindum」、artist-credit「Amazing Blondel」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（1971/GB/Official、1995/GB/Official）。原盤 release 2d6fd13e-12b5-4c14-95f0-315acce12ebb（1971／GB／Official，6 軌，label-info Island ILPS 9156）。藝人 MBID 19e27ba8-272e-46b4-b944-eb2c6e9fb194，名下 13 個 RG。刻意不釘：f01cb35a-923c-3c0b-86b2-9e8f05bf8dae《Evensong》（1970，本批 b 組另立一卡）、19bffe67-8909-32ef-963d-ddb6064548dd《England》（1972，Island 第三張）、9dfe5add-9e0b-46f5-b700-3f5da1fef773《The Amazing Blondel & A Few Faces》（1970-05，掛名形態不同）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Fotheringay 1970；Sandy Denny Fotheringay",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Fotheringay",
+  "album": "Fotheringay",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "A&M Records（catno SP 4269），US 1970",
+  "why": "Fotheringay 唯一的一張，1970 年 3 月，Sandy Denny 離開 Fairport Convention 後與 Trevor Lucas 組的團，英國原盤出在 Island（MB 轄下最早的 release 是同年美國 A&M 版，SP 4269）。實掃 seed_cards.json：Fotheringay 這個掛名池中 0 張；Sandy Denny 個人名下有 3 張（1971、1972、1974），Fairport Convention 有 6 張。也就是說池中已經有她離團前與單飛後的兩端，中間這個團的唯一一張卻缺席——這是本批在 electric folk 主線上最明顯的一個洞。",
+  "risk": "封面：CAA coverartarchive.org/release-group/123a3314-ac23-3c85-bd15-7613b7b7d42d 回 200，有圖。撞卡：掛名「Fotheringay」池中 0 張，但要注意 Fairport Convention《Unhalfbricking》裡有一首同名曲、Sandy Denny 名下也有相關條目，人工比對時不要把曲名當盤名。MB 上另有一個 score 88 的「Fotheringay」實體（disambiguation 寫「covered 'Play Dead' by Björk」），已回問排除，採用 bc383eff（Group／United Kingdom／1970）。自我同名。年份：MB first-release-date 1970-03，Apple gb 命中 collectionId 1442552515 亦標 1970。⚠ Apple 另有 6782879077《Fotheringay - Single》／Josienne Clarke／2026，是完全不同的碟，配對務必用 1442552515 直查。CAA 有圖。",
+  "mbNote": "釘 release-group 123a3314-ac23-3c85-bd15-7613b7b7d42d。回問 release-group/123a3314-ac23-3c85-bd15-7613b7b7d42d?fmt=json&inc=artist-credits+releases 確認：title「Fotheringay」、artist-credit「Fotheringay」、first-release-date 1970-03、primary-type Album、secondary-types 空、轄下 6 個 release（1970-03/GB/Official、1970/US/Official、1992-07-01/DE/Official、2004-08-16/GB/Official、2008/XW/Official、2009-04-29/JP/Official）。原盤 release b99d424f-285d-3123-9724-e0db15dd2e08（1970／US／Official，9 軌，label-info A&M Records SP 4269）。藝人 MBID bc383eff-8ddc-488a-8a92-2e638c708c7f（Fotheringay，Group／United Kingdom／1970），名下 7 個 RG。刻意不釘：017e1dc6-9e9e-3a01-ba62-5176901352c9《Poems From Alexandra》（1970，secondary-type Compilation）、4ce24c25-c736-45f2-ba4a-ecff1167397b《Wild Mountain Thyme》（無 first-release-date，出土錄音）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shirley Collins Dolly Collins For as Many as Will；Shirley Collins & Dolly Collins；Shirley and Dolly Collins",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Shirley & Dolly Collins",
+  "album": "For as Many as Will",
+  "year": 1978,
+  "genres": [
+   "folk"
+  ],
+  "label": "Topic Records（catno 12TS380），GB 1978",
+  "why": "Shirley 與 Dolly Collins 合作的最後一張，1978 年出在 Topic（12TS380），也是 Shirley 因失聲而停唱前的最後一張錄音室專輯。實掃 seed_cards.json 全 14,424 列：這對姊妹的合掛「Shirley & Dolly Collins」池中已有 2 張——《Anthems in Eden》（1969）與《Love, Death & the Lady》（1970）；Shirley 單掛另有《The Sweet Primeroses》（1967）、《The Power of the True Love Knot》（1968）、《Lodestar》（2016），再加上《Folk Roots, New Routes》（1964，掛 Shirley Collins & Davy Graham）與《No Roses》（1971，掛 Shirley Collins & The Albion Country Band），全部合計 7 張。合掛的兩張都集中在 1969–1970，1978 這個收束缺席。簡報點名 Shirley Collins 可在本批補目錄，這張是那條線真正的終點，而且落在本批要補的 Topic 廠牌上。",
+  "risk": "封面：CAA coverartarchive.org/release-group/6cd16663-5c26-36c1-984d-2e40d3d3f1f1 回 200，有圖。⚠ 掛名有三種寫法在流通，這是本批最容易誤判的一組：MB 的 artist-credit 是「Shirley & Dolly Collins」（用 &），池中既有兩張卡同形，Apple gb 的 collectionId 1617289446 卻寫「Shirley Collins & Dolly Collins」（把 Shirley 的姓補全）。依裁定 177（先看池中、再看 MB credit）取「Shirley & Dolly Collins」，三種寫法（&／and／Shirley Collins & Dolly Collins）都已查過池中，只有 & 版有卡。⚠ 撞卡教訓：本批一開始曾提案《Anthems in Eden》與《Love, Death and the Lady》，chk-prop 只標出前者——後者因為池中寫「Love, Death & the Lady」（用 &）、提案寫「and」，正規化後字串不同而漏標，是人工以盤名重掃全池才抓到的。本卡已用同一套盤名重掃確認池中無《For as Many as Will》。年份：MB first-release-date 1978，Apple 一致。CAA 有圖，Apple gb 亦命中，封面與試聽兩路預估都拿得到。",
+  "mbNote": "釘 release-group 6cd16663-5c26-36c1-984d-2e40d3d3f1f1。回問 release-group/6cd16663-5c26-36c1-984d-2e40d3d3f1f1?fmt=json&inc=artist-credits+releases 確認：title「For as Many as Will」、artist-credit「Shirley & Dolly Collins」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 2 個 release（1978/GB/Official、2011-05-16/GB/Official）。原盤 release 08883aa5-5cab-4e15-8235-9860c7e6bc58（1978／GB／Official，9 軌，label-info Topic Records 12TS380）。藝人 MBID d7db2c9e-40f1-451a-b868-782b6dce7fbf（Shirley Collins，Person／United Kingdom／1935-07-05）以分頁全列 30 個 RG；本 RG 的 artist-credit 是「Shirley & Dolly Collins」的合掛。刻意不釘：782b727a-627f-3690-8b16-5e21a8ef6916《Anthems in Eden》（1969，池中已有）、7d005ee4-42e3-3189-afd7-b7093f9ff50f《Love, Death and the Lady》（1970，池中已有，池中寫作「Love, Death & the Lady」）、41a83ecb-4d30-4f18-bb19-143522d78d30《Amaranth including the \"Anthems in Eden\" Suite》（1976，secondary-type Compilation）、5f069556-7f44-4b24-986a-b67bc5a42651《A Favourite Garland》（1974，secondary-type Compilation）、4061acb0-380b-3f35-8525-5eb9837d505a《Adieu to Old England》（1974，本批 b 組另立一卡，掛名是 Shirley Collins 單掛）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shirley Collins Adieu to Old England Topic",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Shirley Collins",
+  "album": "Adieu to Old England",
+  "year": 1974,
+  "genres": [
+   "folk"
+  ],
+  "label": "Topic Records（catno 12TS238），GB 1974",
+  "why": "Shirley Collins 1974 年在 Topic 的獨掛專輯（12TS238），十五首傳統曲目，是她在 Harvest 兩張與 Albion 系合作之後回到 Topic 的一張。實掃 seed_cards.json 全 14,424 列：Shirley Collins 相關卡池中共 7 張——單掛《The Sweet Primeroses》（1967）、《The Power of the True Love Knot》（1968）、《Lodestar》（2016），合掛《Folk Roots, New Routes》（1964，與 Davy Graham）、《No Roses》（1971，與 The Albion Country Band）、《Anthems in Eden》（1969）與《Love, Death & the Lady》（1970，後兩張掛 Shirley & Dolly Collins）。1971 年之後到 2016 年之間只有空白，這張把 1970 年代中段接上，而且是她少數以 Topic 這個本批點名的小廠出的碟。",
+  "risk": "封面：CAA coverartarchive.org/release-group/4061acb0-380b-3f35-8525-5eb9837d505a 回 200，有圖。掛名：本 RG 的 artist-credit 是「Shirley Collins」單掛，與池中既有寫法同形，直接沿用。撞卡：池中 7 張逐字比對過，盤名皆不同；同批 b 組另有一張掛「Shirley & Dolly Collins」的《For as Many as Will》，掛名字串不同，chk-prop 不會標為重複。Apple gb search 回 0 筆，依裁定 173／185 要再走藝人目錄 lookup；CAA 有圖，依裁定 195 可收。年份：MB first-release-date 1974，唯一的再發是 1999/GB。",
+  "mbNote": "釘 release-group 4061acb0-380b-3f35-8525-5eb9837d505a。回問 release-group/4061acb0-380b-3f35-8525-5eb9837d505a?fmt=json&inc=artist-credits+releases 確認：title「Adieu to Old England」、artist-credit「Shirley Collins」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（1974/GB/Official、1999/GB/Official）。原盤 release d95c2c4b-fcb9-4596-8b10-788e87f32eed（1974／GB／Official，15 軌，label-info Topic Records 12TS238）。藝人 MBID d7db2c9e-40f1-451a-b868-782b6dce7fbf，名下 30 個 RG。刻意不釘：782b727a-627f-3690-8b16-5e21a8ef6916《Anthems in Eden》（1969，池中已有）、7d005ee4-42e3-3189-afd7-b7093f9ff50f《Love, Death and the Lady》（1970，池中已有，池中寫作「Love, Death & the Lady」）、6cd16663-5c26-36c1-984d-2e40d3d3f1f1《For as Many as Will》（1978，本批 b 組另立一卡，掛名是 Shirley & Dolly Collins 合掛）、a5cdad0c-6594-4c31-93ea-54ac0c86ebbf《The Classic Nursery Rhymes Collection》（1982-01-04，兒歌企劃盤，與 Martin Carthy 共掛）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nic Jones Ballads and Songs Trailer",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Nic Jones",
+  "album": "Ballads and Songs",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "Trailer（catno LER 2014），GB 1970",
+  "why": "Nic Jones 的首張，1970 年出在 Bill Leader 的 Trailer 廠牌（LER 2014）。實掃 seed_cards.json：Nic Jones 池中只有 1 張，就是 1980 年的《Penguin Eggs》——也就是說池中只有他車禍前最後一張、卻沒有起點。本批點名 Leader／Trailer 為要補的小廠，這張同時補一位藝人的首作與那個廠牌的空位。⚠ 另註：1977 年的《The Noah's Ark Trap》已在 c-98 的 prop 出現過，本批因此不取，改取首張。",
+  "risk": "封面：CAA coverartarchive.org/release-group/9dfa2ccd-0cc7-42d3-a7d0-9c8ef6df8442 回 200，有圖。撞卡：池中該藝人僅《Penguin Eggs》。跨批：c-98 已提案《The Noah's Ark Trap》，本卡不同碟。⚠ 盤名「Ballads and Songs」是民謠領域最通用的詞組之一，MB 與 Apple 上同名碟極多，配對一律要用 artist MBID 或 collectionId 直查。掛名「Nic Jones」MB 上 score 100 唯一實體（Person／United Kingdom／1947-01-09），但要注意與 Nick Jones／Nic Jones 拼法相近者。Apple gb search 回的是《An Introduction to Nic Jones》（2019 精選），不是本盤，屬假陽性；CAA 有圖，依裁定 195 可收，試聽預估走無來源狀態。年份：MB first-release-date 1970。",
+  "mbNote": "釘 release-group 9dfa2ccd-0cc7-42d3-a7d0-9c8ef6df8442。回問 release-group/9dfa2ccd-0cc7-42d3-a7d0-9c8ef6df8442?fmt=json&inc=artist-credits+releases 確認：title「Ballads and Songs」、artist-credit「Nic Jones」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（1970/GB/Official、2002/GB/Official）。原盤 release 521224b3-719c-4c07-bbb8-9466caa5f3bb（1970／GB／Official，9 軌，label-info Trailer LER 2014）。藝人 MBID c8c48b19-2e0b-43cb-8967-de771061c16f（Nic Jones，Person／United Kingdom／1947-01-09），名下 11 個 RG。刻意不釘：85150341-e4e0-3649-952d-471be6a9edc4《Penguin Eggs》（1980，池中已有）、ea31e37e-72b4-36d1-acda-835251d95c36《The Noah's Ark Trap》（1977，c-98 已提案）、b21dbf73-84d0-4e22-88c0-c330e643e1a6《Songs of a Changing World》（1973，同一個 RG 同時掛在 Tony Rose 名下，是多人合輯性質的碟）、4fa13bfc-7264-40a1-981f-6c1619341264《1981: Knaresborough Folk Club》（secondary-type Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Martin Carthy Shearwater 1972",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Martin Carthy",
+  "album": "Shearwater",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Pegasus Records（catno PEG 12），GB 1972",
+  "why": "Martin Carthy 1972 年的獨唱專輯，出在 Pegasus（PEG 12），是他離開 Steeleye Span 第一期、回到獨唱編制的第一張。實掃 seed_cards.json：Carthy 獨掛在池中有 3 張——1965 年同名首作、1969《Prince Heathen》、1976《Crown of Horn》，另有一張與 Dave Swarbrick 合掛的《Byker Hill》（1967）。1970–1975 這六年獨掛是空的，而那正好是他在 Steeleye 進出的那幾年。這張是那段空白的第一張。",
+  "risk": "封面：CAA coverartarchive.org/release-group/a7cc4ab3-78a7-32de-88f1-1f9defb4993d 回 200，有圖。撞卡：池中四張（三張獨掛＋一張合掛）逐字比對過，盤名皆不同。掛名「Martin Carthy」MB 上 score 100 唯一 Person 實體；另有 score 79 的「Martin Carthy & Dave Swarbrick」合掛實體，本卡不用它。Apple gb search「Martin Carthy Shearwater」回 0 筆，依裁定 173／185 要再走藝人目錄 lookup（同藝人的《Sweet Wivelsfield》在 gb 查得到，collectionId 1616959003）；CAA 有圖，依裁定 195 可收。年份：MB first-release-date 1972。",
+  "mbNote": "釘 release-group a7cc4ab3-78a7-32de-88f1-1f9defb4993d。回問 release-group/a7cc4ab3-78a7-32de-88f1-1f9defb4993d?fmt=json&inc=artist-credits+releases 確認：title「Shearwater」、artist-credit「Martin Carthy」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 4 個 release（1972/GB/Official、1991/GB/Official、2005-03/GB/Official、2006/JP/?）。原盤 release f74e6c6e-ae37-47ca-b6ab-b2b4dfe2cbd6（1972／GB／Official，10 軌，label-info Pegasus Records PEG 12）。藝人 MBID 16bf7aa1-7b25-427c-8d5b-aeb5b5da4896（Martin Carthy，Person／United Kingdom／1941-05-21），以分頁全列 29 個 RG。刻意不釘：eb7bc171-5c7c-3f2d-b020-5210dac8b468《Martin Carthy》（1965 同名首作，池中已有）、b34b22d7-f1fe-3897-81b6-4be547c5530e《Prince Heathen》（1969，池中已有）、d94b3b3c-94dd-3fcd-ab36-5ce6984d51b3《Crown of Horn》（1976，池中已有）、444c8563-2a07-39e1-9b4c-27591d654f9f《Landfall》（1971，本批未取）、a5cdad0c-6594-4c31-93ea-54ac0c86ebbf《The Classic Nursery Rhymes Collection》（1982，兒歌企劃盤，與 Shirley Collins 共掛）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Martin Carthy Sweet Wivelsfield Deram",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Martin Carthy",
+  "album": "Sweet Wivelsfield",
+  "year": 1974,
+  "genres": [
+   "folk"
+  ],
+  "label": "Deram（catno SML1111），GB 1974",
+  "why": "Martin Carthy 1974 年的獨唱專輯，出在 Deram（SML 1111），本批小廠清單點名的 Deram Nova 系同一個母廠。實掃 seed_cards.json：Carthy 獨掛池中 3 張（1965、1969、1976），1970–1975 空白。與同批補進的《Shearwater》（1972）一起，這段空白就有兩個支點；只補其一的話 1974 到 1976 之間仍然看不出他從 Pegasus 到 Deram 再到 Topic 的移動。",
+  "risk": "封面：CAA coverartarchive.org/release-group/9fdb999d-5959-4a40-ad32-fbebc5219c13 回 200，有圖。撞卡：池中四張逐字比對過。同批 b 組另有一張 Martin Carthy 卡（《Shearwater》）與一張 Martin Carthy & Dave Swarbrick 合掛卡，三張掛名或盤名皆不同，跨組重複檢查已跑過。Apple gb 命中 collectionId 1616959003《Sweet Wivelsfield》／Martin Carthy，但 Apple 年份欄標 1971，MB first-release-date 是 1974（Deram SML1111）——依裁定 127 取 MB 的 1974，不採 Apple 欄位。CAA 有圖。",
+  "mbNote": "釘 release-group 9fdb999d-5959-4a40-ad32-fbebc5219c13。回問 release-group/9fdb999d-5959-4a40-ad32-fbebc5219c13?fmt=json&inc=artist-credits+releases 確認：title「Sweet Wivelsfield」、artist-credit「Martin Carthy」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（1974/GB/Official、1996/GB/Official）。原盤 release 0e46e36d-2c3e-41ae-9671-a419acf691ba（1974／GB／Official，10 軌，label-info Deram SML1111）。藝人 MBID 16bf7aa1-7b25-427c-8d5b-aeb5b5da4896，名下 29 個 RG。刻意不釘：a7cc4ab3-78a7-32de-88f1-1f9defb4993d《Shearwater》（1972，本批 b 組另立一卡）、eb7bc171-5c7c-3f2d-b020-5210dac8b468《Martin Carthy》（1965，池中已有）、d94b3b3c-94dd-3fcd-ab36-5ce6984d51b3《Crown of Horn》（1976，池中已有）、1d7b4bc3-ccb6-3dbf-82da-9517176af32a《Rags, Reels & Airs》（1967，掛名實為三人合作）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Martin Carthy and Dave Swarbrick But Two Came By；Carthy Swarbrick",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Martin Carthy & Dave Swarbrick",
+  "album": "But Two Came By",
+  "year": 1968,
+  "genres": [
+   "folk"
+  ],
+  "label": "Fontana（catno STL 5477），GB 1968",
+  "why": "Carthy 與 Swarbrick 這對搭檔在 Fontana 的第三張，1968 年（STL 5477），出在 Swarbrick 隔年加入 Fairport Convention 之前。實掃 seed_cards.json：這個合掛在池中只有 1 張，1967 年的《Byker Hill》；同一對搭檔在 1966–1969 四年出了四張，池中只收了中間那張。這張補上去，池中就有他們搭檔期的兩個點，而不是一個孤點；池中的 Fairport Convention 六張也才有一個可以往前接的來源。",
+  "risk": "封面：CAA coverartarchive.org/release-group/01149499-793f-3996-a28b-73deed645b53 回 200，有圖。⚠ 掛名的 &／and 分裂（audits 2026-09-06 第三節同型）：MB 實體名用「&」，坊間與部分再發封面用「and」。兩種寫法都查過，池中只有「Martin Carthy & Dave Swarbrick」一種（《Byker Hill》），本卡沿用同形，不製造分裂。⚠ Apple 的掛名形態不同：gb 命中的 collectionId 1620641866 盤名寫成《But Two Came By (feat. Dave Swarbrick)》、藝人名只寫 Martin Carthy——配對時要容忍 feat. 後綴與掛名收縮，不可因此判為別碟。撞卡：合掛與兩人各自單掛的卡都查過（Martin Carthy 獨掛 3 張、Dave Swarbrick 獨掛 0 張）。年份：MB first-release-date 1968，Apple 一致。CAA 有圖。",
+  "mbNote": "釘 release-group 01149499-793f-3996-a28b-73deed645b53。回問 release-group/01149499-793f-3996-a28b-73deed645b53?fmt=json&inc=artist-credits+releases 確認：title「But Two Came By」、artist-credit「Martin Carthy & Dave Swarbrick」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release（1968/GB/Official、1994/GB/Official）。原盤 release eb4d0375-9f12-43e2-870c-0a7b5b5b93fa（1968／GB／Official，11 軌，label-info Fontana STL 5477）。合掛藝人 MBID 1f109e76-1879-445a-b9dd-b86b69cbcb35（Martin Carthy & Dave Swarbrick，Group／United Kingdom／1966），名下 12 個 RG；個人端 Martin Carthy 16bf7aa1-7b25-427c-8d5b-aeb5b5da4896。刻意不釘：0e20fb77-d60b-4a6f-b651-b54bb904aa09《Byker Hill》（1967，池中已有）、a870342c-40b5-3c55-ac3d-57e17b0b7827《Second Album》（1966，盤名過於通用，本批未取）、b34b22d7-f1fe-3897-81b6-4be547c5530e《Prince Heathen》（1969，池中已有、且以 Martin Carthy 單掛收錄）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dick Gaughan No More Forever Trailer",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Dick Gaughan",
+  "album": "No More Forever",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Trailer（catno Trailer LER 2072），GB 1972",
+  "why": "Dick Gaughan 的首張，1972 年出在 Bill Leader 的 Trailer 廠牌（LER 2072），錄於他加入 Boys of the Lough 之前。實掃 seed_cards.json：Gaughan 池中有 2 張，1978 年的《Gaughan》與 1981 年的《Handful of Earth》——都是他 Topic 時期的碟，1970 年代前半完全缺席。本批點名 Leader／Trailer，這張同時補他的起點與那個廠牌。",
+  "risk": "封面：CAA coverartarchive.org/release-group/94353a1c-2df8-3003-ad89-c1128a9c3597 回 200，有圖。撞卡：池中兩張逐字比對過。掛名「Dick Gaughan」MB 上 score 100 唯一實體（Person／Scotland／1948-05-17）。Apple gb search「Dick Gaughan No More Forever」回 0 筆——依裁定 173／185 不算沒上架（同藝人的《Coppers & Brass》在 gb 命中 collectionId 1617172615），探測層要再走藝人目錄 lookup；CAA 有圖，依裁定 195 可收。年份：MB first-release-date 1972；轄下另兩個 release 日期未填，以 1972/GB/Official 那筆為準。",
+  "mbNote": "釘 release-group 94353a1c-2df8-3003-ad89-c1128a9c3597。回問 release-group/94353a1c-2df8-3003-ad89-c1128a9c3597?fmt=json&inc=artist-credits+releases 確認：title「No More Forever」、artist-credit「Dick Gaughan」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 3 個 release（1972/GB/Official、?/GB/Official、?/GB/Official）。原盤 release e8e487f1-ebf2-4323-9497-aed6f9715f16（1972／GB／Official，11 軌，label-info Trailer Trailer LER 2072）。藝人 MBID 8d3716e7-ba2a-47a9-ac16-8af9e8a8c6ba（Dick Gaughan，Person／Scotland／1948-05-17），以分頁全列 24 個 RG。刻意不釘：27519ef6-3d00-3119-9a73-e2b5c7fd3e1b《Gaughan》（1978，池中已有）、8d73c44d-9a01-3003-bcbf-2a1ab6b39def《Handful of Earth》（1981，池中已有）、abc19be9-a142-476f-bea7-9f707c49cd17《The Bonny Pit Laddie》（1975，同一個 RG 同時掛在 The High Level Ranters 名下，是合掛企劃盤）、fdb17c52-a71d-466c-8327-8a4a5e3ad647《Songs of Ewan MacColl (Live at the Crypt)》（secondary-type Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dick Gaughan Coppers and Brass",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Dick Gaughan",
+  "album": "Coppers & Brass",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Topic Records（catno 12TS315），GB 1977",
+  "why": "Dick Gaughan 1977 年在 Topic 的純器樂專輯（12TS315），十三首蘇格蘭與愛爾蘭舞曲，全部由吉他獨奏。實掃 seed_cards.json：Gaughan 池中兩張都是有唱的碟（1978、1981），器樂側缺席。與同批補進的 1972 首張一起，池中就有他 1970 年代的兩個支點，涵蓋 Trailer 與 Topic 兩個本批點名的小廠。",
+  "risk": "封面：CAA coverartarchive.org/release-group/39cd8e08-c96a-3be3-9396-cd3d82378a1c 回 200，有圖。⚠ 掛名的 &／and 分裂發生在盤名上：MB 的 RG 標題是「Coppers & Brass」（用 &），坊間常寫「Coppers and Brass」。兩種寫法都查過，池中皆 0 張。依裁定 6／70／120 取 MB 文字，queryAlias 已填 and 版。撞卡：池中兩張盤名皆不同；同批 b 組另有一張 Dick Gaughan 卡，盤名不同。Apple gb 命中 collectionId 1617172615《Coppers & Brass》／Dick Gaughan／1977，年份與 MB 一致，封面與試聽兩路預估都拿得到。CAA 亦有圖。",
+  "mbNote": "釘 release-group 39cd8e08-c96a-3be3-9396-cd3d82378a1c。回問 release-group/39cd8e08-c96a-3be3-9396-cd3d82378a1c?fmt=json&inc=artist-credits+releases 確認：title「Coppers & Brass」、artist-credit「Dick Gaughan」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 2 個 release（1977/GB/Official、2012/XW/Official）。原盤 release 69e3147d-a021-48fe-92d6-15381b20a73e（1977／GB／Official，13 軌，label-info Topic Records 12TS315）。藝人 MBID 8d3716e7-ba2a-47a9-ac16-8af9e8a8c6ba，名下 24 個 RG。刻意不釘：94353a1c-2df8-3003-ad89-c1128a9c3597《No More Forever》（1972，本批 b 組另立一卡）、27519ef6-3d00-3119-9a73-e2b5c7fd3e1b《Gaughan》（1978，池中已有）、f92f782a-3181-3fb0-9184-630c017cd478《Kist o’ Gold》（1976，Topic 的前一張，本批未取）、8d73c44d-9a01-3003-bcbf-2a1ab6b39def《Handful of Earth》（1981，池中已有）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "June Tabor Ashes and Diamonds Topic",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "June Tabor",
+  "album": "Ashes and Diamonds",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Topic Records（catno 12TS360），GB 1977",
+  "why": "June Tabor 的第二張獨唱專輯，1977 年在 Topic（12TS360），伴奏班底包含 Nic Jones 與 Martin Simpson。實掃 seed_cards.json：June Tabor 池中只有 2 張——1976 年的首張《Airs and Graces》與 2011 年與 Oysterband 合作的《Ragged Kingdom》，中間三十五年是空的。這張是那段空白的第一張，也是她 Topic 時期的核心。",
+  "risk": "封面：CAA coverartarchive.org/release-group/4d2508c7-af1a-38b8-b52d-5f27babc9240 回 200，有圖。撞卡：池中兩張逐字比對過。掛名「June Tabor」MB 上 score 100 唯一 Person 實體；另有 score 72 的「Maddy Prior & June Tabor」合掛實體，本卡不用它（同批 b 組另立一卡用它）。Apple gb 命中 collectionId 1617416062《Ashes and Diamonds》／June Tabor／1977，年份與 MB 一致。CAA 有圖，封面與試聽兩路預估都拿得到。轄下唯一的再發是 1989/GB，status Official。",
+  "mbNote": "釘 release-group 4d2508c7-af1a-38b8-b52d-5f27babc9240。回問 release-group/4d2508c7-af1a-38b8-b52d-5f27babc9240?fmt=json&inc=artist-credits+releases 確認：title「Ashes and Diamonds」、artist-credit「June Tabor」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 2 個 release（1977/GB/Official、1989/GB/Official）。原盤 release 79e19e50-ab6c-4a52-913c-9a740a27de6d（1977／GB／Official，11 軌，label-info Topic Records 12TS360）。藝人 MBID 55bd9053-241d-4ba5-b0b3-f9b792ab1c7d（June Tabor，Person／United Kingdom／1947-12-31），以分頁全列 29 個 RG。刻意不釘：c89f735b-222a-3651-b225-e9213c786856《Airs and Graces》（1976，池中已有）、c3cf63c3-6fae-3bbc-92f6-0b4385b1eb4e《Silly Sisters》（1976，本批 b 組另立一卡，掛名是 Maddy Prior & June Tabor）、7a63a2b0-23c3-3b90-bb0e-47d44eb878c5《A Cut Above》（1980，同一個 RG 同時掛在 Martin Simpson 名下，是合掛碟，本批未取）、822be11e-40a0-4b8c-adb9-e34fa899e32f《A Tribute to Television》（1986，secondary-type Compilation）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Maddy Prior and June Tabor Silly Sisters；Silly Sisters",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Maddy Prior & June Tabor",
+  "album": "Silly Sisters",
+  "year": 1976,
+  "genres": [
+   "folk"
+  ],
+  "label": "Chrysalis（catno CHR 1101），GB 1976",
+  "why": "Maddy Prior 與 June Tabor 的合作專輯，1976 年 3 月出在 Chrysalis（CHR 1101），伴奏班底包含 Martin Carthy、Nic Jones 與 Danny Thompson。實掃 seed_cards.json：這個合掛在池中 0 張，「Silly Sisters」這個團名寫法也是 0 張，兩種都查過。池中已有 Steeleye Span 六張（Maddy Prior 那一側）與 June Tabor 兩張，兩條線在池中從未交會過——這張就是交會點。",
+  "risk": "封面：CAA coverartarchive.org/release-group/c3cf63c3-6fae-3bbc-92f6-0b4385b1eb4e 回 200，有圖。⚠ 掛名有三種寫法要分清：MB 的實體名是「Maddy Prior & June Tabor」（用 &，disambiguation 寫「Silly Sisters」），有些再發把團名印成「Silly Sisters」、盤名印成別的。依裁定 6／70／120 取 MB 實體文字當掛名、RG 標題當盤名，三種寫法（&／and／Silly Sisters 當掛名）池中皆 0 張。⚠ 轄下有一筆 2026-04-18/GB 的 release：那是近期再發，不影響 first-release-date 1976-03，年份依裁定 127 取原盤年。Apple gb 命中 collectionId 1629187374《Silly Sisters》／Maddy Prior & June Tabor／1976，與 MB 一致。CAA 有圖。",
+  "mbNote": "釘 release-group c3cf63c3-6fae-3bbc-92f6-0b4385b1eb4e。回問 release-group/c3cf63c3-6fae-3bbc-92f6-0b4385b1eb4e?fmt=json&inc=artist-credits+releases 確認：title「Silly Sisters」、artist-credit「Maddy Prior & June Tabor」、first-release-date 1976-03、primary-type Album、secondary-types 空、轄下 5 個 release（1976-03/GB/Official、1988/US/Official、1991-07/GB/Official、1994-02/GB/Official、2026-04-18/GB/Official）。原盤 release 879b116c-3286-3d4a-b805-1f414c39a34a（1976-03／GB／Official，13 軌，label-info Chrysalis CHR 1101）。合掛藝人 MBID ba256d10-3ef9-4393-a9b3-6ac14e4342eb（Maddy Prior & June Tabor，Group／United Kingdom，disambiguation「Silly Sisters」），名下只有 2 個 RG；June Tabor 個人端 55bd9053-241d-4ba5-b0b3-f9b792ab1c7d。刻意不釘：4d2508c7-af1a-38b8-b52d-5f27babc9240《Ashes and Diamonds》（1977，本批 b 組另立一卡，掛名是 June Tabor 單掛）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Peter Bellamy Oak Ash and Thorn；Oak Ash & Thorn Kipling",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Peter Bellamy",
+  "album": "Oak, Ash & Thorn",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "Argo（catno ZFB 11），GB 1970",
+  "why": "Peter Bellamy 離開 The Young Tradition 之後的第一張個人專輯，1970 年出在 Argo（ZFB 11），整張把 Rudyard Kipling 的詩配上傳統曲調。實掃 seed_cards.json：Bellamy 池中只有 1 張，1977 年的敘事歌劇《The Transports》——也就是說池中有他最晚的大企劃、卻沒有他 Kipling 系列的起點。本批點名 Argo 為要補的小廠，這張是那個廠牌在池中的第一號。池中另有 The Young Tradition《Galleries》（1968），補這張正好把他離團後的去向接上。",
+  "risk": "封面：CAA coverartarchive.org/release-group/b2fc811a-85d1-4312-9151-7195ac3a6989 回 200，有圖。⚠ 盤名的 &／and 分裂（audits 2026-09-06 第三節同型）：MB 的 RG 標題是「Oak, Ash & Thorn」（用 &），坊間與部分再發寫「Oak, Ash and Thorn」。兩種寫法都查過，池中皆 0 張。盤名另含逗號，比對要折疊標點。撞卡：池中該藝人僅《The Transports》。掛名「Peter Bellamy」MB 上 score 100 唯一實體（Person／United Kingdom／1944-09-08）。Apple gb search 回 0 筆，依裁定 173／185 要再走藝人目錄 lookup；CAA 有圖，依裁定 195 可收，試聽預估走無來源狀態。年份：MB first-release-date 1970。",
+  "mbNote": "釘 release-group b2fc811a-85d1-4312-9151-7195ac3a6989。回問 release-group/b2fc811a-85d1-4312-9151-7195ac3a6989?fmt=json&inc=artist-credits+releases 確認：title「Oak, Ash & Thorn」、artist-credit「Peter Bellamy」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（1970/GB/Official、2011-05-23/GB/Official）。原盤 release 4e7d6b06-910c-4bea-8d80-daa21afe5e2c（1970／GB／Official，12 軌，label-info Argo ZFB 11）。藝人 MBID 23a78f96-9b3d-452a-b462-a89a83d40533（Peter Bellamy，Person／United Kingdom／1944-09-08），名下 15 個 RG。刻意不釘：17ee7604-8a0f-3d05-a9fe-a1e5a9277cd7《The Transports: A Ballad Opera by Peter Bellamy》（1977，池中已有，且 secondary-type Soundtrack）、0b463310-ad2b-43c0-a477-835ba5c63332《Won’t You Go My Way?》（1972，secondary-type Live）、d3f48cb2-3b2d-47d5-8070-5f0e8aac3315《Sings the Barrack-Room Ballads of Rudyard Kipling》（1977，同一條 Kipling 線的後續，本批未取）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Peter Bellamy Merlins Isle of Gramarye；Merlin Isle of Gramarye",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Peter Bellamy",
+  "album": "Merlin's Isle of Gramarye",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Argo（catno ZFB 81），GB 1972",
+  "why": "Peter Bellamy 在 Argo 的 Kipling 系列第二張，1972 年（ZFB 81），取材自《Puck of Pook's Hill》與《Rewards and Fairies》。實掃 seed_cards.json：Bellamy 池中僅《The Transports》（1977）。與同批補進的《Oak, Ash & Thorn》（1970）一起，Argo 這一對碟並列才看得出這條 Kipling 線是有計畫的系列，而不是一次性的企劃；只補其一會讓 1977 年那張歌劇看起來突兀。",
+  "risk": "封面：CAA coverartarchive.org/release-group/b9d80fd6-7c34-40d4-9715-9fceb94a321b 回 200，有圖。盤名含直撇號 apostrophe：audits 2026-09-06 第二節記過池中彎撇號 ’ 與直撇號 ' 的分裂型態。MB 的 RG 標題用直撇號「Merlin's」，本卡沿用；比對時兩種撇號都要試。撞卡：池中該藝人僅 1 張；同批 b 組另有一張 Peter Bellamy 卡，盤名不同。Apple gb search 回 0 筆（本批專門為這張跑過一次確認），依裁定 173／185 要再走藝人目錄 lookup；CAA 有圖，依裁定 195 可收，試聽預估走無來源狀態。年份：MB first-release-date 1972，唯一再發是 2011-06-06/GB。",
+  "mbNote": "釘 release-group b9d80fd6-7c34-40d4-9715-9fceb94a321b。回問 release-group/b9d80fd6-7c34-40d4-9715-9fceb94a321b?fmt=json&inc=artist-credits+releases 確認：title「Merlin's Isle of Gramarye」、artist-credit「Peter Bellamy」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 2 個 release（1972/GB/Official、2011-06-06/GB/Official）。原盤 release ab55dc3e-738e-4032-8edf-4ca0b6f59875（1972／GB／Official，15 軌，label-info Argo ZFB 81）。藝人 MBID 23a78f96-9b3d-452a-b462-a89a83d40533，名下 15 個 RG。刻意不釘：b2fc811a-85d1-4312-9151-7195ac3a6989《Oak, Ash & Thorn》（1970，本批 b 組另立一卡）、17ee7604-8a0f-3d05-a9fe-a1e5a9277cd7《The Transports》（1977，池中已有）、7cfc8cdd-4dd0-44ed-8299-e361c400cca2《Tell It Like It Was》（1975）、a7f0ad76-cdc5-47f5-afe0-db662cedd63c《Both Sides Then》（1979）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Watersons Sound Sound Your Instruments of Joy",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "The Watersons",
+  "album": "Sound, Sound Your Instruments of Joy",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Topic Records（catno 12TS346），GB 1977",
+  "why": "The Watersons 1977 年在 Topic 的專輯（12TS346），十四首全部是英格蘭的頌歌與宗教民謠，是他們 1972 年復出後的第二張。實掃 seed_cards.json：Watersons 池中有 2 張——1965 年的《Frost and Fire》與 1975 年的《For Pence and Spicy Ale》，另有 Lal & Mike Waterson 的《Bright Phoebus》（1972）掛在別的掛名下。1977 這一張補上去，這一家人在 Topic 的三個時期（1965、1975、1977）就都到齊了。",
+  "risk": "封面：CAA coverartarchive.org/release-group/7fe179f2-001e-4073-917d-76d26c9c4e88 回 200，有圖。⚠ 掛名的定冠詞分歧：MB 實體名是「The Watersons」（帶定冠詞），池中既有卡同形，直接沿用；但 Apple gb 命中的 collectionId 1617167277 藝人名寫「Watersons」（無定冠詞），配對時要容忍定冠詞差異。另注意池中還有「Lal & Mike Waterson」這個相關但不同的掛名（單數 Waterson），不要混。盤名含兩個逗號，比對要折疊標點。撞卡：池中兩張逐字比對過。年份：MB first-release-date 1977，Apple 一致。CAA 有圖。",
+  "mbNote": "釘 release-group 7fe179f2-001e-4073-917d-76d26c9c4e88。回問 release-group/7fe179f2-001e-4073-917d-76d26c9c4e88?fmt=json&inc=artist-credits+releases 確認：title「Sound, Sound Your Instruments of Joy」、artist-credit「The Watersons」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 2 個 release（1977/GB/Official、2007-05-07/GB/Official）。原盤 release c80bfab9-43b6-4292-9c4c-bf533d238653（1977／GB／Official，14 軌，label-info Topic Records 12TS346）。藝人 MBID 37a0f1c5-a2e2-449c-8d28-e0287aabb5ea（The Watersons，Group／United Kingdom），名下 9 個 RG。刻意不釘：dc10c4ef-78f7-33b3-88d2-8188cd0a4d7e《Frost and Fire》（1965，池中已有）、f64cd32d-f960-36c1-9aea-5e5d39b67d7f《For Pence and Spicy Ale》（1975，池中已有）、5fa3f0f3-c06f-46ab-821a-459ffc5fc804《The Watersons》（1966 同名作，本批未取）、ca1e5636-dcd0-3422-8d73-d87a3a9eccd6《A Yorkshire Garland》（1966，本批未取，落在 1968–1980 窗口之外）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Robin & Barry Dransfield The Rout of the Blues；Dransfield brothers",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Robin and Barry Dransfield",
+  "album": "The Rout of the Blues",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "Trailer（catno LER2011），GB 1970",
+  "why": "Dransfield 兄弟的首張，1970 年出在 Bill Leader 的 Trailer 廠牌（LER 2011），是 Trailer 早期最被回頭找的一張。實掃 seed_cards.json：Robin and Barry Dransfield、Robin & Barry Dransfield、Barry Dransfield、Robin Dransfield 四種寫法在池中皆 0 張。本批點名 Leader／Trailer，與同批補進的 Nic Jones《Ballads and Songs》（LER 2014）、Dick Gaughan《No More Forever》（LER 2072）一起，這個廠牌在池中才會有三張連號可以互相定位的碟。",
+  "risk": "封面：CAA coverartarchive.org/release-group/93cb571b-cdad-4fb0-9c96-40f9decdd1c3 回 200，有圖。⚠ 掛名的 &／and 分裂（audits 2026-09-06 第三節同型，本批最典型的一例）：MB 實體名是「Robin and Barry Dransfield」（用 and），坊間封面多印「Robin & Barry Dransfield」（用 &）。兩種寫法都查過，池中皆 0 張；依裁定 6／70／120 取 MB 實體文字（用 and），queryAlias 已填 & 版。⚠ 另有兩個單人實體 1504266c（Barry Dransfield）與 d9b177e4（Robin Dransfield），本卡用的是合掛實體 76d9b34c，不要混。撞卡：四種寫法池中皆 0 張。Apple gb search 回 0 筆，依裁定 173／185 要再走藝人目錄 lookup；CAA 有圖，依裁定 195 可收，試聽預估走無來源狀態。年份：MB first-release-date 1970。",
+  "mbNote": "釘 release-group 93cb571b-cdad-4fb0-9c96-40f9decdd1c3。回問 release-group/93cb571b-cdad-4fb0-9c96-40f9decdd1c3?fmt=json&inc=artist-credits+releases 確認：title「The Rout of the Blues」、artist-credit「Robin and Barry Dransfield」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（1970/GB/Official、2001/GB/Official）。原盤 release 16fede25-9ef0-4d63-a5e0-4ba80f4779e5（1970／GB／Official，10 軌，label-info Trailer LER2011）。合掛藝人 MBID 76d9b34c-3f7b-4edb-9a68-a8ae225e58a0（Robin and Barry Dransfield，Group），名下 4 個 RG。刻意不釘：a712b0c4-722e-4c9e-8ca1-8d5e02ce7488《Lord of All I Behold》（1971，同一合掛的第二張，本批未取）、ba9ccb2a-4414-3385-a2d9-f576c9e876d5《Barry Dransfield》（1972，掛在 Barry Dransfield 單人實體 1504266c 名下，是不同的掛名）、28df5a97-17a4-3f21-80d1-a8802605c9e4《Morris On》（1972，多人合掛企劃盤，掛名形態不同）。"
+ }
+]

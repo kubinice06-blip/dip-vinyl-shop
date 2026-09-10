@@ -1,0 +1,431 @@
+[
+ {
+  "artist": "Ton Steine Scherben",
+  "album": "Warum geht es mir so dreckig?",
+  "year": 1971,
+  "genres": [
+   "rock"
+  ],
+  "label": "David Volksmund Produktion（catno SST 13）",
+  "why": "Ton Steine Scherben 名下 MB 共 27 個 release-group（release-group?artist=…&limit=100&offset= 分頁列完），其中 primary-type=Album、secondary-types 空的 9 張，這張 1971 年由樂團自營的 David Volksmund Produktion 發行的是其中年份最早的一張，也是他們 1972 年《Keine Macht für Niemand》之前的那一張。實掃 seed_cards.json 全 14,424 列：池中的德國卡幾乎全集中在 krautrock 與金屬兩塊（Can 5、Kraftwerk 5、Neu! 3、Faust 4、Amon Düül II 3、Cluster 5、Harmonia 3、Popol Vuh 4、Tangerine Dream 6、Klaus Schulze 3、Einstürzende Neubauten 9、Scorpions 4、Accept 2、Helloween 5、Kreator 3、Sodom 1），**唱德語歌詞的搖滾這一塊只有 Rammstein 3、Falco 3、Nena 2、Herbert Grönemeyer 1、Deutsch Amerikanische Freundschaft 1、Modern Talking 1**，Ton Steine Scherben 是 0 張。這張與《Keine Macht für Niemand》兩張一起補，是把 1970 年代西德左翼搖滾這一整塊從零開起來。",
+  "risk": "盤名帶問號，去重字串要保留問號否則會與別批的德語卡對不上。MB 名下沒有同名的 EP／Live 雙胞胎（27 個 release-group 逐筆看過）。轄下 4 筆 release 有 3 筆 DE／Official、1 筆 status 未填——依裁定第 167 條附帶那條，未填的那筆不採為「這次再發是 Official」的背書。Apple 五個店面（de／at／ch／us／gb）都回同一筆 1053103371「Warum geht es mir so dreckig?」標 1971、8 軌，與 MB 1971 DE 原盤的 9 軌不一致，依裁定第 141／175 條，軌數判斷一律以原盤來源（MB release 曲目列）為準，Apple 的 trackCount 只當訊號。CAA release-group 端點未實測。",
+  "mbNote": "釘 release-group e7eea636-7e7b-385a-a59e-7726f1298330。回問 release-group 端點（inc=artist-credits+releases）確認：title「Warum geht es mir so dreckig?」、artist-credit「Ton Steine Scherben」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 4 筆 release（3 DE／Official、1 筆 status 未填），1971 DE 原盤 David Volksmund Produktion SST 13、9 軌 12\" Vinyl。藝人 MBID 6b49bc68-353e-44a3-ba64-3ba4d30b1beb（area Germany、1970 起、type Group），名下 27 個 release-group。刻意不釘：58f83316-ab15-4892-b828-f8a9e6c30990 是「Ton Steine Scherben Family」這個 2004 年的後繼實體，不是本團。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Warum geht es mir so dreckig；Ton Steine Scherben Warum geht es mir so dreckig",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ton Steine Scherben",
+  "album": "Keine Macht für Niemand",
+  "year": 1972,
+  "genres": [
+   "rock"
+  ],
+  "label": "David Volksmund Produktion（catno TSS 17）",
+  "why": "Ton Steine Scherben 的第二張正規盤，同樣由樂團自營的 David Volksmund Produktion 發行，MB 該 release-group 轄下 6 筆 release 全數 DE／Official，1972 年原盤是目錄號 TSS 17 的雙片 12\" Vinyl（6+6 軌）。與同一位藝人的首張《Warum geht es mir so dreckig?》（1971）是同一條自營發行線上的前後兩張。實掃 seed_cards.json 全 14,424 列，Ton Steine Scherben 池中 0 張、其主唱 Rio Reiser 的個人目錄也是 0 張，這張與那兩張一起補，池中才會第一次出現德語歌詞的 1970 年代搖滾。",
+  "risk": "盤名含 ü，去重時 NFKD 折音會把 für 折成 fur，與 Apple 的寫法一致但與 MB 原字串不同，兩種都要掃。雙片盤的軌數在 MB 是 6+6，Apple gb 1053059264 標 12 軌——同一組曲目攤平的結果，不是加曲版（裁定第 140 條的判準：沒有別張專輯的同名曲、沒有標 Bonus）。Apple 另有一筆 280716732「Keine Macht für niemand - Die Geschichte von Ton Steine Scherben」是 68 軌的有聲書（掛名 Kai Sichtermann 等三人），盤名是本卡的超字串，子字串比對會配到它，探測層要擋。CAA 未實測。",
+  "mbNote": "釘 release-group 4d7f4dcc-edc6-3744-9ff3-919fc6c6b137。回問確認：title「Keine Macht für Niemand」、artist-credit「Ton Steine Scherben」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 6 筆 release 全 DE／Official，1972 DE 原盤 David Volksmund Produktion TSS 17、6+6 軌雙片 12\" Vinyl。藝人 MBID 6b49bc68-353e-44a3-ba64-3ba4d30b1beb，名下 27 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Keine Macht fuer Niemand；Keine Macht für niemand",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Rio Reiser",
+  "album": "Rio I.",
+  "year": 1986,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "CBS（catno CBS 26862）",
+  "why": "Rio Reiser 是 Ton Steine Scherben 的主唱，這張是他 MB 名下 29 個 release-group 裡年份最早的個人正規盤（1986-11-05，CBS 26862），也是他離開自營發行、簽進 CBS 之後的那一張。MB 該 release-group 轄下 5 筆 release 全數 Official（4 筆 DE、1 筆 XW）。實掃 seed_cards.json 全 14,424 列：Rio Reiser 與 Ton Steine Scherben 兩個掛名池中都是 0 張；這張補在同批的兩張 Scherben 旁邊，樂團與個人兩段就接得起來。",
+  "risk": "盤名「Rio I.」只有五個字元且結尾是句點，子字串比對會把「Rio」開頭的任何碟配進來（MB 名下另有 c05ae9ee《Rio ***》1990），去重要用完整字串。Apple 有兩筆同名：gb 279143036 標 1986、10 軌，與 gb 403073336 標 1993、10 軌（同一張碟的兩次上架），配對時取 1986 那筆。店面 de／at／ch／us／gb 五個都有。CAA 未實測。",
+  "mbNote": "釘 release-group da3a12ec-0817-3801-8668-c3d868523c7c。回問確認：title「Rio I.」、artist-credit「Rio Reiser」、first-release-date 1986-11-05、primary-type Album、secondary-types 空、轄下 5 筆 release 全 Official（DE 4、XW 1），1986-11 DE 原盤 CBS 26862、10 軌 12\" Vinyl。藝人 MBID cdc82eb3-7eac-4387-baf8-cd3bac0f5092（area Germany、1950-01-09 生、type Person），名下 29 個 release-group。刻意不釘：c05ae9ee-acb0-3dcb-89a3-af6a91f3b6e3《Rio ***》（1990 第三張，盤名同樣以 Rio 開頭）、72f85e64-0e1f-3a7e-87c3-11ea32b97ae1《Blinder Passagier》（1987 第二張）——兩張都是本卡最像的假陽性。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rio 1；Rio Reiser Rio I",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ideal",
+  "album": "Ideal",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "Innovative Communication（catno KS 80.004）",
+  "why": "Ideal 是柏林的 Neue Deutsche Welle 樂團，MB 名下 21 個 release-group 裡 primary-type=Album 且 secondary-types 空的只有 3 張（1980 自我同名、1981《Der Ernst des Lebens》、1982《Bi Nuu》），這張是其中最早的一張，由 Klaus Schulze 的 Innovative Communication 發行（目錄號 KS 80.004），MB 該 release-group 轄下 8 筆 release 全數 Official。實掃 seed_cards.json 全 14,424 列：Ideal 池中 0 張，整條 NDW 線（1979–84）池中也只有 Deutsch Amerikanische Freundschaft《Alles ist gut》與 Nena《Nena (1983)》兩張，這張與同批的 Fehlfarben、Trio、Spliff、Palais Schaumburg、Grauzone 一起補。",
+  "risk": "**短掛名，已依裁定第 179 條回問 MB 藝人端點的 area 與 disambiguation**：4e3f4f52-968c-43ec-b165-741122d7cc28，area Germany、1980 起、disambiguation 明寫「German \"Neue Deutsche Welle\" group」。同名實體至少三個——e8532a2c（United States，休士頓 R&B 四重唱，a.k.a. Ideal U.S.）、fc0c2168（John daSilva and AG Scott）、4f6282d8（UK）——**任何用掛名字串查的步驟都會撞到它們**。自我同名卡（selfTitled=true）。Apple gb 41255566「Ideal」標 1980、10 軌是正確的那筆；同店面另有 1808921723「Ideal (2025 Mix)」（同團 2025 重混）與 us 1871523594「Ideal - Single」（Koston & Rina）、ch 1565981056「Idéal」（Arma Jackson）三個假陽性。CAA 未實測。",
+  "mbNote": "釘 release-group 89124cc5-a9bc-38bd-a97d-b5b98ce19d58。回問確認：title「Ideal」、artist-credit「Ideal」、first-release-date 1980、primary-type Album、secondary-types 空、轄下 8 筆 release 全 Official（DE 7、XW 1），1980 DE 原盤 Innovative Communication KS 80.004、10 軌 12\" Vinyl。藝人 MBID 4e3f4f52-968c-43ec-b165-741122d7cc28（area Germany、type Group、disambiguation「German \"Neue Deutsche Welle\" group」），名下 21 個 release-group。刻意不釘：72139948-913d-3a77-be0c-aaffe8ae15bf《Der Ernst des Lebens》（1981 第二張）、11b0714f-5e8b-359e-ac3a-c33cf1d428b0《Bi Nuu》（1982 第三張）——本批只收首張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Ideal 1980；Ideal Ideal",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Udo Lindenberg & Das Panikorchester",
+  "album": "Alles klar auf der Andrea Doria",
+  "year": 1973,
+  "genres": [
+   "rock"
+  ],
+  "label": "Telefunken（catno 4.21138／TTP 91 703）",
+  "why": "Udo Lindenberg MB 名下 220 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 40 張，這張 1973 年 Telefunken 發行的是他 1971《Lindenberg》、1972《Daumen im Wind》之後的第三張，也是 Panikorchester 這個掛名第一次出現在專輯上的那一張。實掃 seed_cards.json 全 14,424 列：Udo Lindenberg 與 Panikorchester 兩種寫法池中都是 0 張。德語搖滾在池中的 1970 年代只有 krautrock（Can／Neu!／Faust／Amon Düül II 那一批，全是器樂或英語歌詞），這張補進去，池中才第一次有 1970 年代的德語歌詞主流搖滾。",
+  "risk": "**掛名依裁定第 177 條第二步取所釘 release-group 的 artist-credit「Udo Lindenberg & Das Panikorchester」**（池中兩種寫法都是 0 張，沒有第一步可依），不是縮成「Udo Lindenberg」——但 Apple 上兩種都有（gb 79669788 掛「Udo Lindenberg & Das Panikorchester」、gb 694843398 掛「Das Panikorchester & Udo Lindenberg」語序相反），**兩種語序與縮寫都要進 queryAlias**。MB 另有一個 1991 年的同名 release-group 6a09c0ef-5fff-4c75-bf67-b5ca8666f0b8，primary-type=Album 但 secondary-types 含 Compilation，是本卡最像的假陽性。Apple 兩筆同名都標 12 軌、MB 1973 DE 原盤是 10 軌，年份判斷以 MB 為準；另有 ch 979922536 是卡拉 OK 版（Clara Oaks）要擋。CAA 未實測。",
+  "mbNote": "釘 release-group 51e1837b-3a85-3400-80ec-67e5214ece2c。回問確認：title「Alles klar auf der Andrea Doria」、artist-credit「Udo Lindenberg & Das Panikorchester」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 9 筆 release 全 Official（DE 8、AF 1），1973 DE 原盤 Telefunken 4.21138／TTP 91 703、10 軌。藝人 MBID 8d3c6a3c-4d97-455c-ad07-3fefc0172861（area Germany、1946-05-17 生），名下 220 個 release-group；Panikorchester 另有獨立實體 44bd8fa3-be86-4802-978d-5eddc6b3ffe2。刻意不釘：6a09c0ef-5fff-4c75-bf67-b5ca8666f0b8《Alles klar auf der Andrea Doria》（1991，primary-type Album ＋ secondary-types Compilation，同名整編輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Udo Lindenberg Alles klar auf der Andrea Doria；Das Panikorchester & Udo Lindenberg；Udo Lindenberg und das Panikorchester",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Die Ärzte",
+  "album": "Debil",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "CBS（catno 40-26237）",
+  "why": "Die Ärzte MB 名下 160 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 16 張，這張 1984-11 由 CBS 發行的是其中年份最早的一張。MB 該 release-group 轄下 12 筆 release 全數 Official（DE 11、XW 1）。實掃 seed_cards.json 全 14,424 列：Die Ärzte 與折音寫法 Die Arzte 兩種都掃過，池中 0 張；同為西德龐克第二波的 Die Toten Hosen 也是 0 張。這張與《Die Bestie in Menschengestalt》（1993）兩張一起補，可以把這團 1980 年代與 1990 年代兩段各放一張。",
+  "risk": "**掛名保留變音 Ärzte（裁定第 26／70 條）**，但 Apple 與 Discogs 上常見 ae 轉寫「Die Aerzte」，`queryAlias` 已填。MB 另有 f85bdd0e「Die Toten Ärzte」（Die Ärzte 與 Die Toten Hosen 的致敬樂團）與 6947aafc「Die Ulkigen Pulkigen」（本團化名），掛名比對會撞到。**Apple 上這張的條目盤名不是「Debil」**：gb 1533957895 作「Devil (Debil Re-Release)」標 1990、18 軌，是 1990 年那次改名再發（原盤 1984 只有 13 軌）——探測層若只搜「Debil」會落空，兩種盤名都要試。CAA 未實測。",
+  "mbNote": "釘 release-group 26535caf-778b-3392-bbf6-ff16a712bbcb。回問確認：title「Debil」、artist-credit「Die Ärzte」、first-release-date 1984-11、primary-type Album、secondary-types 空、轄下 12 筆 release 全 Official（DE 11、XW 1），1984 DE 原盤 CBS 40-26237、13 軌。藝人 MBID f2fb0ff0-5679-42ec-a55c-15109ce6e320（area Germany、1982 起、type Group），名下 160 個 release-group。刻意不釘：05478896-2cfb-3286-901c-886d2c846565《Die Ärzte》（1986 自我同名專輯，掛名與盤名相同，任何「藝人名＝盤名」的比對都會配到它）、fcee283d-f5de-3dcb-970a-0f37ae317258《Im Schatten der Ärzte》（1985）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Die Aerzte Debil；Devil (Debil Re-Release)；Die Arzte Debil",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Die Ärzte",
+  "album": "Die Bestie in Menschengestalt",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "Metronome（catno 521 017-4）",
+  "why": "Die Ärzte 1988 年解散、1993 年重組後的第一張正規盤（MB first-release-date 1993-10-05，Metronome 521 017-4，19 軌），是本團 16 張純 Album 型 release-group 裡 1988《Das ist nicht die ganze Wahrheit …》之後、1995《Planet Punk》之前的那一張。與同批的《Debil》（1984）一前一後，把這團 1980 年代 CBS 時期與 1990 年代重組時期各放一張。實掃 seed_cards.json 全 14,424 列，Die Ärzte／Die Arzte 兩種寫法池中都是 0 張。",
+  "risk": "盤名長、含 -gestalt 這種德文複合詞，Apple 與 MB 寫法一致（gb 1521288025「Die Bestie in Menschengestalt」標 1993、19 軌，與 MB 原盤軌數相同）。掛名的 ä／ae 分歧同前一張。MB 名下沒有同名的 Live 或 EP 雙胞胎（160 個 release-group 逐筆看過）。轄下 9 筆 release 全 Official。CAA 未實測。",
+  "mbNote": "釘 release-group fb270b39-ef4d-37da-9409-79003d36ff67。回問確認：title「Die Bestie in Menschengestalt」、artist-credit「Die Ärzte」、first-release-date 1993-10-05、primary-type Album、secondary-types 空、轄下 9 筆 release 全 Official（DE 8、XW 1），1993 DE 原盤 Metronome 521 017-4、19 軌。藝人 MBID f2fb0ff0-5679-42ec-a55c-15109ce6e320，名下 160 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Die Aerzte Die Bestie in Menschengestalt；Die Arzte Die Bestie in Menschengestalt",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Die Toten Hosen",
+  "album": "Opel-Gang",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Totenkopf（catno TOT 668）／Virgin",
+  "why": "Die Toten Hosen MB 名下 188 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 25 張，這張 1983 年由樂團自營廠牌 Totenkopf（目錄號 TOT 668）與 Virgin 共同發行的是其中年份最早的一張。實掃 seed_cards.json 全 14,424 列：Die Toten Hosen 池中 0 張。這張與《Ein kleines bisschen Horrorschau》（1988）兩張一起補，與同批的 Die Ärzte 兩張並排，池中就有西德 1980 年代龐克的兩支主要樂團各兩張。",
+  "risk": "**盤名的連字號必須是 ASCII 的 `-`**：MB 轄下 9 筆 release 裡有兩筆（1989-11-27、2007-11-16）把標題寫成「Opel‐Gang」用的是 U+2010 連字號，直接照抄會踩 `chk-prop` 的非 ASCII 連字號反模式（裁定第 118 條同型），本卡取 release-group 標題的 ASCII 寫法。Apple gb 269841926 是「Opel-Gang (Deluxe-Edition mit Bonus-Tracks)」標 2007、30 軌——**那是加曲版，不是原盤**（MB 1983 原盤 15 軌），依裁定第 141 條軌數以 MB release 為準，探測層配到這筆要在 notes 註明原盤 15 軌。CAA 未實測。",
+  "mbNote": "釘 release-group 2202f696-1785-3b14-97a8-828fabb9028d。回問確認：title「Opel-Gang」、artist-credit「Die Toten Hosen」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 8 筆 release 全 Official（DE 7、AT 1），1983 AT／DE 原盤 Virgin 257698-222 ＋ Totenkopf TOT 668、15 軌。藝人 MBID c3bc80a6-1f4a-4e17-8cf0-6b1efe8302f1（area Germany、1982 起），名下 188 個 release-group。刻意不釘：f85bdd0e-db21-4821-821e-88fb7d758473 是致敬樂團「Die Toten Ärzte」的實體，不是本團。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Opel Gang；Opel-Gang Deluxe-Edition mit Bonus-Tracks",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Die Toten Hosen",
+  "album": "Ein kleines bisschen Horrorschau",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Virgin（catno 259 313-222）／Totenkopf（catno TOT 64）",
+  "why": "Die Toten Hosen 1988-10-31 發行的第五張正規盤，MB 該 release-group 轄下 7 筆 release 全數 DE／Official，1988 原盤 Virgin 259 313-222 ＋ Totenkopf TOT 64、12 軌。是本團 25 張純 Album 型 release-group 裡 1986《Damenwahl》之後、1990《125 Jahre Die Toten Hosen》之前的那一張，與同批的《Opel-Gang》（1983）分別代表這團的起點與 1980 年代末。實掃 seed_cards.json 全 14,424 列，Die Toten Hosen 池中 0 張。",
+  "risk": "**Apple 的盤名用 ß、MB 用 ss**：Apple 的 `search` 端點五個店面全部查無，改打藝人頁目錄端點（artistId 18469884，裁定第 173 條）才找到 269733978「Ein kleines bißchen Horrorschau (Deluxe-Edition mit Bonus-Tracks)」標 2000、22 軌。**這是第 173 條「兩個端點要都跑」的又一個實例**，而且成因是 ss／ß 的正字差異——兩種寫法都要進 queryAlias，否則探測層會誤判「Apple 沒有這張」。那筆 Apple 條目是 22 軌的加曲版，原盤 12 軌，配到要在 notes 註明。CAA 未實測。",
+  "mbNote": "釘 release-group d6fc5531-3bed-338d-b131-e75593a282af。回問確認：title「Ein kleines bisschen Horrorschau」、artist-credit「Die Toten Hosen」、first-release-date 1988-10-31、primary-type Album、secondary-types 空、轄下 7 筆 release 全 DE／Official，1988 原盤 Virgin 259 313／259 313-222 ＋ Totenkopf TOT 64、12 軌 CD。藝人 MBID c3bc80a6-1f4a-4e17-8cf0-6b1efe8302f1，名下 188 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ein kleines bißchen Horrorschau；Ein kleines bisschen Horrorschau Deluxe-Edition mit Bonus-Tracks",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Fehlfarben",
+  "album": "Monarchie und Alltag",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "EMI Electrola GmbH（catno 1C 064-46 150）",
+  "why": "Fehlfarben 是杜塞道夫的後龐克樂團，MB 名下 50 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 12 張，這張 1980 年由 EMI Electrola 發行的是其中年份最早的一張，也是 1981《33 Tage in Ketten》之前的那一張。實掃 seed_cards.json 全 14,424 列：Fehlfarben 池中 0 張，同一條 NDW／德語後龐克線上的 Ideal、Trio、Spliff、Palais Schaumburg、Abwärts、Der Plan、Extrabreit 全部是 0 張，池中只有 Deutsch Amerikanische Freundschaft《Alles ist gut》一張。這張與同批那幾張一起補。",
+  "risk": "MB 名下有**三個同名 release-group**：本卡的 6084f250（1980，primary-type Album、secondary-types 空）、11618159（2000，Album ＋ Remix）、5e91bc44（2020，Album ＋ Live）——**只有第一個是本卡，另兩個依裁定第 167 條雖然 primary-type 都是 Album，但 secondary-types 明白標了 Remix 與 Live，是不同的碟**，必須寫成刻意不釘。轄下 5 筆 release 全 Official；1980 年 DE 有兩筆，Fame 1C 038 1575431 與 EMI Electrola 1C 064-46 150，廠牌欄取後者（EMI Electrola 是原始發行，Fame 是 EMI 的廉價再發副廠）。Apple gb 1442808762「Monarchie und Alltag」標 1980、11 軌與 MB 原盤一致；de／at／ch 三個店面也有，us 查無。CAA 未實測。",
+  "mbNote": "釘 release-group 6084f250-33c5-3ae4-bdad-fc83c741ac90。回問確認：title「Monarchie und Alltag」、artist-credit「Fehlfarben」、first-release-date 1980、primary-type Album、secondary-types 空、轄下 5 筆 release 全 Official（DE 3、AT 1、XW 1），1980 DE 原盤 EMI Electrola GmbH 1C 064-46 150、11 軌 12\" Vinyl。藝人 MBID 3f6fb6f6-f129-4fe2-8e17-aceb8a85ebc2（area Germany、1979-11 起），名下 50 個 release-group。刻意不釘：11618159-5567-40ec-9d6a-adffe201cdf7《Monarchie und Alltag》（2000，secondary-types Remix）、5e91bc44-574e-430b-b466-f68a48dfbb62《Monarchie und Alltag》（2020，secondary-types Live）——**兩筆盤名與本卡逐字相同，是最危險的假陽性**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Monarchie Und Alltag；Fehlfarben Monarchie und Alltag",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Trio",
+  "album": "Trio",
+  "year": 1981,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Mercury Records（catno 6435 138）",
+  "why": "Trio 是 Großenkneten 的三人樂團，MB 名下 41 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的只有 4 張，這張 1981 年 Mercury 發行的自我同名首張是其中最早的一張，也是 1983《Trio and Error》之前的那一張。MB 該 release-group 轄下 7 筆 release 全數 Official，1981 DE 原盤 Mercury 6435 138、14 軌。實掃 seed_cards.json 全 14,424 列：Trio 這個掛名池中的 70 餘筆全部是別的實體（Vince Guaraldi Trio、Bill Evans Trio、Marcin Wasilewski Trio 那一類複合名），**單獨叫 Trio 的德國樂團池中 0 張**。",
+  "risk": "**這是本批風險最高的一張。短掛名，已依裁定第 179 條回問 MB 藝人端點的 area 與 disambiguation**：b013686b-0fa5-4e88-a5bc-f941efc7855a，country DE、1979 起、disambiguation「80s German band」。用 `artist:Trio` 直接搜 MB 回的前四筆全是別的實體（[unknown] 特殊實體、The Kingston Trio、The Oscar Peterson Trio、Los Panchos），**必須加 country:DE AND type:group 才命中**。掛名與盤名相同（selfTitled=true），任何「藝人名＝盤名」的比對都會自我配對。MB 名下另有三個同名 release-group：0f3b972f（2003，Album ＋ Compilation）、e1d90b49（1981-02，EP）、edebdc90（1982，EP）。1982 年加拿大版把盤名改成「The Album / Da Da Da」（Mercury TRIO-1）。Apple gb 1601827856「Trio (Deluxe Edition)」標 1981、31 軌是 2003 雙片加曲版；同店面的 1174111178「Trio (Remastered)」是 Dolly Parton／Linda Ronstadt／Emmylou Harris 的同名碟、de 1444111565「Triologie - The Best of Trio」是精選、at 1769025024 是 Lars Danielsson 的爵士三重奏——**四個店面全部有假陽性**。CAA 未實測。",
+  "mbNote": "釘 release-group 51eb82e9-6cc6-4373-a016-b675764af8f6。回問確認：title「Trio」、artist-credit「Trio」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 7 筆 release 全 Official（DE 5、CA 1、XW 1），1981 DE 原盤 Mercury Records 6435 138、14 軌 12\" Vinyl；1982 CA 版標題作「The Album / Da Da Da」（Mercury TRIO-1，同樣 14 軌）。藝人 MBID b013686b-0fa5-4e88-a5bc-f941efc7855a（country DE、1979 起、disambiguation「80s German band」）——**用 artist:Trio 搜尋不會回這個實體，要加 country:DE**。名下 41 個 release-group。刻意不釘：0f3b972f-4429-41f4-928c-227ade558f81《Trio》（2003，secondary-types Compilation）、e1d90b49-1320-4484-b81d-0c79d94c34eb《Trio》（1981-02，EP）、edebdc90-0ec0-402b-9c10-2e21814bcce6《Trio》（1982，EP）、656dace6-fa37-4d70-969e-71d9255e32fd《Trio and Error》（1983 第二張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Trio Da Da Da；The Album / Da Da Da；Trio (Deluxe Edition)；Trio 1981",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Falco",
+  "album": "Einzelhaft",
+  "year": 1982,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "GiG Records（catno GIG 222 107）",
+  "why": "Falco MB 名下 116 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 11 張，這張 1982 年由維也納的 GiG Records 發行的是其中年份最早的一張，也是 1984《Junge Roemer》之前的那一張。實掃 seed_cards.json 全 14,424 列：Falco 池中已有 3 張——《Falco 3》(1985)、《Emotional》(1986)、《Data de Groove》(1990)，**全部落在 1985 年之後**，1982／1984 這兩張最早的完全缺席。這張與《Junge Roemer》補進去，Falco 在池中就從「1985 年之後的三張」變成涵蓋整個 GiG 時期。",
+  "risk": "盤名單詞、無變音，去重風險低。MB 轄下 13 筆 release 全 Official（AT 4、DE 3、XE 4、XW 2），1982 年有 A&M（美國版 SP-6-4951）與 GiG（奧地利原盤 GIG 222 107）兩種，廠牌欄取奧地利原盤。Apple 三筆同名：gb 1080465695「Einzelhaft」標 1982、10 軌是與原盤軌數相同的那筆；gb 256329986「Einzelhaft (25th Anniversary Edition)」21 軌與 1664525449「Einzelhaft (Deluxe Version)」28 軌都是加曲版，依裁定第 141 條配到要註明原盤 10 軌。店面 de／at／ch／us／gb 五個都有。CAA 未實測。",
+  "mbNote": "釘 release-group 0f936c1c-9c56-3232-9e17-c3c2309a6d4b。回問確認：title「Einzelhaft」、artist-credit「Falco」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 13 筆 release 全 Official（AT 4、DE 3、XE 4、XW 2），1982 AT 原盤 GiG Records GIG 222 107、10 軌 12\" Vinyl。藝人 MBID dcd95aa4-f3ff-492d-a621-8518ada0f58b（area Austria、1957-02-19 生、disambiguation「Austrian pop & rock musician」）——**同名實體另有三個**（NL 的 Falco de Beer、葡萄牙 EDM 製作人、一位 producer & remixer），掛名字串比對要靠 area 分辨。名下 116 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Falco Einzelhaft；Einzelhaft (25th Anniversary Edition)；Einzelhaft (Deluxe Version)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Falco",
+  "album": "Junge Roemer",
+  "year": 1984,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "GiG Records（catno GIG 222 121／6.25 800）",
+  "why": "Falco 的第二張正規盤，1984 年 GiG Records 發行（AT 原盤目錄號 GIG 222 121／6.25 800，9 軌），在 MB 名下 11 張純 Album 型 release-group 裡排在 1982《Einzelhaft》與 1985《Falco 3》之間——而《Falco 3》池中已有，這張正好補上中間那一格。實掃 seed_cards.json 全 14,424 列：Falco 池中 3 張都在 1985 年之後（Falco 3、Emotional、Data de Groove），這張與《Einzelhaft》一起補完 GiG 時期。",
+  "risk": "**盤名取 `Junge Roemer` 而不是 MB release-group 標題的 `Junge Römer`**：MB 該 release-group 轄下 10 筆 release，1984 AT 原盤（GiG）、1984 US（A&M SP-4993）、1987 DE（TELDEC）、1996、2016、2019 **全部印 `Junge Roemer`**，只有 2024-04-19 的一筆數位再發寫成「Junge Römer」；Apple at 1080464639 也作「Junge Roemer」。依裁定第 6／50 條（盤名採原始發行的寫法），oe 是原盤自己的寫法、不是為了好查而做的轉寫，所以不套「變音一律保留」那條。MB 的 release-group 標題與卡片盤名不必相等（裁定第 95 條）。Apple 另有 at 1739382669「Junge Roemer - Deluxe Edition」19 軌與 1462676794「Junge Roemer (Remixes) - EP」6 軌兩個假陽性，原盤 9 軌。de／ch 店面查詢回 403（裁定第 98 條：403 不是查無），at 命中。CAA 未實測。",
+  "mbNote": "釘 release-group a430c18d-8d7b-3eeb-8dcc-747b28d5bd00。回問確認：release-group title「Junge Römer」、artist-credit「Falco」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 10 筆 release 全 Official（AT 2、DE 2、US 1、XE 2、XW 3），**其中 9 筆的 release 標題是「Junge Roemer」**，1984 AT 原盤 GiG Records GIG 222 121／6.25 800、9 軌。卡片盤名取原盤寫法 Junge Roemer，MB 標題寫法進 queryAlias。藝人 MBID dcd95aa4-f3ff-492d-a621-8518ada0f58b（area Austria），名下 116 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Junge Römer；Junge Romer；Junge Roemer - Deluxe Edition；Falco Junge Roemer",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Kraftklub",
+  "album": "Mit K",
+  "year": 2012,
+  "genres": [
+   "rock"
+  ],
+  "label": "Vertigo Berlin",
+  "why": "Kraftklub 是 Chemnitz 的樂團，MB 名下 30 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 5 張，這張 2012 年 Vertigo Berlin 發行的是其中年份最早的一張，也是 2014《In Schwarz》之前的那一張。實掃 seed_cards.json 全 14,424 列：Kraftklub 池中 0 張，而池中 2010 年之後的德語搖滾一張都沒有——最晚的德語卡是 Rammstein《[Rammstein]》(2019) 與《Liebe ist für alle da》(2009)，兩張都是同一團。這張補進去，池中才有 2010 年代的德語搖滾樂團。",
+  "risk": "盤名只有兩個 token（「Mit K」），子字串比對幾乎必然誤配，去重要用完整字串加掛名。**Apple 的 `search` 端點五個店面全部查無，改打藝人頁目錄端點（artistId 1445610005，裁定第 173 條）才找到 1440778434「Mit K」標 2012、13 軌**，與 MB 原盤 13 軌一致——這是本批第二次踩到「search 查無、目錄端點看得到」。gb 店面查詢時回 iTunes 的 rate limit 純文字（不是 JSON），依裁定第 98 條不當查無。MB 轄下 4 筆 release 全 Official（XW 1、DE 3）。CAA 未實測。",
+  "mbNote": "釘 release-group 9929530f-cd0e-4499-8c96-940099c4c980。回問確認：title「Mit K」、artist-credit「Kraftklub」、first-release-date 2012-01-01、primary-type Album、secondary-types 空、轄下 4 筆 release 全 Official（DE 3、XW 1），Vertigo Berlin、13 軌。藝人 MBID ecfc32cb-b26e-41a0-8b41-7100c6a3fcc4（area Germany、2009 起、type Group），名下 30 個 release-group。刻意不釘：8985261b-88ca-4c2e-8154-39cbf595eb7d「ACHTZIG TAUSEND MILLIONEN」是 K.I.Z／Casper／Kraftklub 的合作實體，不是本團。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kraftklub Mit K",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Nena",
+  "album": "? (Fragezeichen)",
+  "year": 1984,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "CBS Schallplatten GmbH（catno CBS 25870）",
+  "why": "Nena（樂團實體，1982–1987）MB 名下 37 個 release-group，primary-type=Album 且 secondary-types 空的 6 張，這張 1984-09-21 由 CBS 發行的是 1983 年自我同名首張之後的第二張。實掃 seed_cards.json 全 14,424 列：Nena 池中已有 2 張——《Nena (1983)》(1983，即首張) 與《Wenn alles richtig ist, dann stimmt was nich》(1998，個人時期)，**1984–1986 樂團時期的三張（本張、《Feuer und Flamme》、《Eisbrecher》）全部缺席**。這張補在那兩張中間，樂團時期就不再只有首張。",
+  "risk": "**盤名以問號開頭，是全池最難處理的字串之一**：`k()` 這類「只留字母數字」的正規化會把「? (Fragezeichen)」壓成 `fragezeichen`，與 MB／Apple 的原字串長得完全不同，去重與配對兩邊都要用完整字串再比一次。掛名分裂風險：MB 有兩個 Nena 實體——樂團 c954d136-c7fd-4fd9-8bb0-fb0491fc6a02（1982–1987）與個人 38bfaa7f-ee98-48cb-acd0-946d7aeecd76（1987 起 solo），**池中兩張分屬兩個時期卻共用同一個掛名鍵**，依裁定第 177 條第一步沿用池中寫法「Nena」，不拆成兩個鍵。MB 另有 60a066ae（葡萄牙歌手）、e0b74bc5（西班牙歌手）兩個同名實體。日本版 release 標題作「? (クエスチョンマーク)」（Epic/Sony 35・8P-55），跨文字系統的撞卡看不見（裁定第 49 條）。Apple gb 1446011800「? (Fragezeichen)」標 1984、12 軌與 MB 原盤一致，五個店面都有。CAA 未實測。",
+  "mbNote": "釘 release-group 6041a30c-7731-3a9c-bd61-3e4163d5cab3。回問確認：title「? (Fragezeichen)」、artist-credit「Nena」、first-release-date 1984-09-21、primary-type Album、secondary-types 空、轄下 6 筆 release 全 Official（DE 2、JP 1、XE 1、XW 1、1 筆未填國別），1984 DE 原盤 CBS Schallplatten GmbH CBS 25870、12 軌 12\" Vinyl；1984-09-21 JP 版標題「? (クエスチョンマーク)」Epic/Sony 35・8P-55。藝人 MBID c954d136-c7fd-4fd9-8bb0-fb0491fc6a02（樂團實體，area Germany、1982–1987），名下 37 個 release-group；個人實體 38bfaa7f-ee98-48cb-acd0-946d7aeecd76 名下另有 90 個。刻意不釘：af6d1dc4-9ed3-3b86-9913-9c7e257f91cd《99 Luftballons》（1984，首張的國際版，同一批曲目換盤名，是本卡最像的假陽性）、4897a796-fb40-31ae-8b13-d4caf25a1fc4《Nena》（1983 首張，池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fragezeichen；Nena Fragezeichen；? (クエスチョンマーク)；Nena ?",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Herbert Grönemeyer",
+  "album": "Mensch",
+  "year": 2002,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Grönland Records",
+  "why": "Herbert Grönemeyer MB 名下 142 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 19 張，這張 2002-08-30 由他自己的 Grönland Records 發行的是 1998《Bleibt alles anders》之後、2007《12》之前的那一張。實掃 seed_cards.json 全 14,424 列：Grönemeyer 池中只有《4630 Bochum》(1984) 一張，1990 年代與 2000 年代整段空白。這張補在《4630 Bochum》旁邊，池中就有他 1980 年代與 2000 年代各一張。",
+  "risk": "**盤名「Mensch」是通用德文詞，MB 名下同名條目有五個**：本卡的 5215f7ec（2002 Album）、39090565 與 fa2b7850（兩個 2002 Single）、3a49dfbb《Mensch Live》（2003，Album ＋ Live）、8038086e《Mensch Live 2003》（2022，EP ＋ Live）——**同名單曲的日期（2002-08-05）比專輯（2002-08-30）早，凡是「取 first-release-date 最早那筆」的邏輯都會選錯**（裁定第 179 條第 1 點的同一形狀）。轄下 11 筆 release 有 2 筆是 Pseudo-Release，其餘 9 筆 Official。掛名保留 ö（裁定第 26／70 條），Apple 上 Groenemeyer 的 oe 轉寫常見，已進 queryAlias。Apple gb 1440952755「Mensch」標 2002、11 軌與 MB 原盤一致；ch 715620614「Mensch - EP」4 軌與 gb 482340379（Done Again 的模唱版）是假陽性。CAA 未實測。",
+  "mbNote": "釘 release-group 5215f7ec-a1ba-3e56-b132-8f4909324a88。回問確認：title「Mensch」、artist-credit「Herbert Grönemeyer」、first-release-date 2002-08-30、primary-type Album、secondary-types 空、轄下 11 筆 release（9 Official、2 Pseudo-Release），2002 DE 原盤 Grönland Records、11 軌 Copy Control CD。藝人 MBID 456eabce-d1dd-4481-a206-36ab4f2eaeb8（area Germany、1956-04-12 生），名下 142 個 release-group。刻意不釘：39090565-d0b7-40dd-983e-969d79d9fb4d 與 fa2b7850-ac77-3952-a4b6-f242a99a370b《Mensch》（兩個 2002 年的同名單曲，**其中一筆日期比專輯早**）、3a49dfbb-b8da-455d-94af-93ab277a1b4b《Mensch Live》（2003，secondary-types Live）、8038086e-24ca-4942-8a80-5533e9a95046《Mensch Live 2003》（2022 EP ＋ Live）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Herbert Groenemeyer Mensch；Herbert Gronemeyer Mensch",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Rammstein",
+  "album": "Sehnsucht",
+  "year": 1997,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Motor Music／Slash（US catno P2-39901）",
+  "why": "Rammstein MB 名下 155 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 9 張，這張 1997-08-22 的第二張正規盤排在 1995《Herzeleid》與 2001《Mutter》之間。實掃 seed_cards.json 全 14,424 列：Rammstein 池中已有 3 張——《Mutter》(2001)、《Liebe ist für alle da》(2009)、《[Rammstein]》(2019)，**1990 年代那兩張（Herzeleid、Sehnsucht）都不在**。這張補進去，池中的 Rammstein 就從「2001 年之後」往前接到 1997。",
+  "risk": "轄下 25 筆 release 是本批最多的一張，其中 **1 筆是 Bootleg、1 筆 Promotion、1 筆 status 未填**，其餘 22 筆 Official——依裁定第 179 條第 3 點必須看 `inc=releases` 才知道有 Bootleg，本張已看過，不是「唯一 release 是 Bootleg」那種要剔除的形狀。國別橫跨 DE 7、US 4、XE 5、AU 2、CA 2、FR／PL／JP／RU 各 1。Apple 的 de／at／ch／gb 四個店面回 403（裁定第 98 條：403 不是查無），us 與 ch 命中 1390562159「Sehnsucht」標 1997、11 軌與 1682941077「Sehnsucht (Remastered 2023)」12 軌，後者是加曲版。CAA 未實測。",
+  "mbNote": "釘 release-group 2a323740-b615-35bc-9f58-1d2e6a5d9289。回問確認：title「Sehnsucht」、artist-credit「Rammstein」、first-release-date 1997-08-22、primary-type Album、secondary-types 空、轄下 25 筆 release（22 Official、1 Promotion、1 Bootleg、1 未填），1997 US 版 Slash P2-39901、13 軌 CD。藝人 MBID b2d122f9-eadb-4930-a196-8f221eeb0c66（area Germany、1994-01 起），名下 155 個 release-group。刻意不釘：203daa21-9013-47f1-82be-d84eec8cafa5《Zeitreise - Reisezeit》（2004，MB 標 primary-type Album 但非官方正規盤形態）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rammstein Sehnsucht；Sehnsucht (Remastered 2023)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Nina Hagen Band",
+  "album": "Nina Hagen Band",
+  "year": 1978,
+  "genres": [
+   "rock"
+  ],
+  "label": "CBS（catno CBS 32293）",
+  "why": "Nina Hagen 1976 年離開東德後在西柏林組的樂團，MB 的 Nina Hagen Band 實體名下 9 個 release-group、其中 primary-type=Album 且 secondary-types 空的只有 2 張（1978 自我同名、1979《Unbehagen》），這張是較早的一張。實掃 seed_cards.json 全 14,424 列：Nina Hagen、Nina Hagen Band 兩種寫法池中都是 0 張。這張是德語龐克／新浪潮最早的一批唱片之一，補在同批的 Ideal、Fehlfarben、Spliff 前面（樂團班底後來就是 Spliff），這條線在池中才有起點。",
+  "risk": "**自我同名卡（selfTitled=true）且掛名就是盤名**，任何「藝人名＝盤名」的比對都會自我配對。MB 有兩個相關實體：樂團 0c017e85-35da-48c5-a699-4e064b37aa7d（1977 起）與個人 e4d32f51-bc57-42a4-8165-b80f7a86496d（1955-03-11 生，名下 91 個 release-group）——**這張掛樂團實體**，依裁定第 177 條第二步取所釘 release-group 的 artist-credit「Nina Hagen Band」。MB 名下另有 15f872f0《Nina Hagen Band / Unbehagen》（1988，Album ＋ Compilation，兩張併一片）與 ba905c67《Nina Hagen Band》（1980，EP）兩個同名近似條目。Apple gb 1778701966「Nina Hagen Band」標 1978、11 軌，但 artistName 寫成「Nina Hagen, Spliff & Nina Hagen Band」——三個掛名串在一起，掛名比對會失準。CAA 未實測。",
+  "mbNote": "釘 release-group 907717a3-b58e-3850-9979-29afc7a7f3fd。回問確認：title「Nina Hagen Band」、artist-credit「Nina Hagen Band」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 6 筆 release 全 Official（DE 4、XE 1、1 筆未填國別），1978 DE 原盤 CBS 32293、11 軌 12\" Vinyl。藝人 MBID 0c017e85-35da-48c5-a699-4e064b37aa7d（area Germany、1977 起、type Group），名下 9 個 release-group；個人實體 e4d32f51-bc57-42a4-8165-b80f7a86496d 名下另有 91 個。刻意不釘：15f872f0-6c26-41d2-af09-4696b7cd6d5f《Nina Hagen Band / Unbehagen》（1988，secondary-types Compilation，兩張專輯併一片）、ba905c67-f794-445b-8d0d-02573d10d34b《Nina Hagen Band》（1980 EP，盤名與本卡逐字相同）、ea5f27b5-16f8-35a0-88a0-81f441aa60ec《Unbehagen》（1979 第二張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Nina Hagen Nina Hagen Band；Nina Hagen, Spliff & Nina Hagen Band",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Deutsch Amerikanische Freundschaft",
+  "album": "Gold und Liebe",
+  "year": 1981,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Virgin（catno 70071）",
+  "why": "DAF MB 名下 42 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的 8 張，這張 1981-11 由 Virgin 發行的是 1981-03《Alles ist gut》之後、1982《Für immer》之前的那一張，也就是 Virgin 三部曲的中間那張。實掃 seed_cards.json 全 14,424 列：池中已有 Deutsch Amerikanische Freundschaft《Alles ist gut》(1981) 一張——**掛名是全寫、不是 DAF**，本卡沿用池中寫法（裁定第 177 條第一步）。三部曲補上中間這張，池中就有這團的兩張。",
+  "risk": "**掛名兩種寫法並存**：池中與 MB 實體都用全寫「Deutsch Amerikanische Freundschaft」，但 Apple 上三筆條目（ch 1675990294、us 1355196975、gb 1336444888）**全部掛「DAF」**——依裁定第 177 條第一步沿用池中寫法，DAF 進 queryAlias，否則封面與試聽三條線會查不到人。Apple gb 那筆盤名作「Gold Und Liebe」（Und 大寫）標 2018，ch 與 us 兩筆標 1981、10 軌與 MB 原盤一致。轄下 11 筆 release 有 1 筆 Pseudo-Release、其餘 10 筆 Official，國別橫跨 GB 3、DE 2、US 2、FR 1、XE 1。MB 另有 ec0ae2d8「Deutsch Polnische Freundschaft」是不同的樂團，掛名只差一個詞。CAA 未實測。",
+  "mbNote": "釘 release-group 94024f77-91cc-32be-9a94-2e0530ef1fd0。回問確認：title「Gold und Liebe」、artist-credit「Deutsch Amerikanische Freundschaft」、first-release-date 1981-11、primary-type Album、secondary-types 空、轄下 11 筆 release（10 Official、1 Pseudo-Release），1981 FR 版 Virgin 70071、10 軌。藝人 MBID 1b779267-6629-4a25-bbd6-0fe8f37f32a7（area Germany、1978 起），名下 42 個 release-group。刻意不釘：c8946e5b-8954-37ef-9cea-d89186724d52《Alles ist gut》（1981-03，**池中已有**）、1fdacd3a-7963-30e3-bc35-ad6da3da600e《Für immer》（1982，三部曲第三張）、e4783d37-041a-3aae-9137-df90607e34b7《Ein Produkt der Deutsch-Amerikanischen Freundschaft》（1979，盤名含團名，子字串比對會反過來配到它）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "DAF Gold und Liebe；Gold Und Liebe；D.A.F. Gold und Liebe",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Spliff",
+  "album": "85555",
+  "year": 1982,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "CBS（catno CBS 85 555）",
+  "why": "Spliff 是 Nina Hagen Band 的班底在 1980 年另組的樂團，MB 名下 28 個 release-group（分頁列完），primary-type=Album 且 secondary-types 空的只有 4 張，這張 1982-01 由 CBS 發行的是 1980《The Spliff Radio Show》之後的第二張。實掃 seed_cards.json 全 14,424 列：Spliff 池中 0 張。這張與同批的《Nina Hagen Band》(1978) 是同一批人前後兩個樂團，一起補進去，NDW 這條線在池中就有一組可以互相對照的卡。",
+  "risk": "**盤名是純數字「85555」**，任何以數字為鍵的比對都會誤配；且 MB 轄下 6 筆 release 有三種標題——1982 DE 原盤「85555」（CBS 85 555）、1982 DE「85555 - International Version」（CBS 85 739）、**1982 US 促銷版標題直接改成「Emergency Exit」（Epic BFE 38556，Promotion）**。Apple 的 `search` 端點三個店面全部查無，改打藝人頁目錄端點（artistId 985839019，裁定第 173 條）找到兩個候選：1770960953「Emergency Exit」標 1982、9 軌（**與 MB 的 US 版同名同軌數，最可能就是這張**）與 580477319「Spliff」標 1980、9 軌（年份對不上《The Spliff Radio Show》的 16 軌，來源不明）——**探測層要以「Emergency Exit」為主要查詢字串**，並且兩筆都要人工複檢。CAA 未實測。",
+  "mbNote": "釘 release-group 437a4026-04e3-3ee3-84eb-1ea9be1d4af5。回問確認：title「85555」、artist-credit「Spliff」、first-release-date 1982-01、primary-type Album、secondary-types 空、轄下 6 筆 release（5 Official、1 Promotion），1982-01 DE 原盤 CBS 85 555／CBS 85 555、9 軌 12\" Vinyl；1982 US Promotion 版標題「Emergency Exit」Epic BFE 38556、同樣 9 軌。藝人 MBID dbec3b6d-a3f6-410b-9fc5-5cf62008c598（area Germany、1980 起、disambiguation「Neue Deutsche Welle」）——**同名實體另有三個**（葡萄牙 hip-hop 製作人、一位南方 rapper、一個 Wicked Name），短掛名要靠 area 與 disambiguation 分辨（裁定第 179 條）。名下 28 個 release-group。刻意不釘：b598981c-d6fe-32e4-b0c6-3f6c556bcdf6《The Spliff Radio Show》（1980 首張，盤名含團名）、0fffad88-fbec-3bcb-8eec-6cb019ce68db《Herzlichen Glückwunsch!》（1982-11 第三張，與本張同年）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Emergency Exit；Spliff 85555；85555 - International Version",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Palais Schaumburg",
+  "album": "Palais Schaumburg",
+  "year": 1981,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Phonogram（catno 6435 139）",
+  "why": "Palais Schaumburg 是漢堡的 NDW 樂團，MB 名下 13 個 release-group，primary-type=Album 且 secondary-types 空的只有 3 張（1981 自我同名、1982《Lupa》、1984《Parlez-Vous Schaumburg?》），這張是其中最早的一張，Phonogram 6435 139。實掃 seed_cards.json 全 14,424 列：Palais Schaumburg 池中 0 張。這張與同批的 Ideal、Fehlfarben、Trio、Spliff、Grauzone 一起補，是 1979–84 那段 NDW 在池中的第一組卡。",
+  "risk": "自我同名卡（selfTitled=true），掛名與盤名相同的自我配對風險同 Trio 與 Ideal 兩張。MB 目錄號 6435 139 與同批 Trio 首張的 6435 138 只差 1，是同一間發行公司同一批的編號——查目錄號時要小心串到別張。Apple gb 1184967254「Palais Schaumburg」標 1981、**22 軌**，而 MB 1981 DE 原盤是 10 軌——依裁定第 141 條，這是後世的加曲再發（原盤 10 軌），配到要在 notes 註明；五個店面都回同一筆。轄下 4 筆 release 全 DE／Official。CAA 未實測。",
+  "mbNote": "釘 release-group 4dc08fdd-e13c-39d6-8919-9fb8c5ee7def。回問確認：title「Palais Schaumburg」、artist-credit「Palais Schaumburg」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 4 筆 release 全 DE／Official，1981 原盤 Phonogram 6435 139、10 軌 12\" Vinyl。藝人 MBID c2faf89f-078a-4b52-abd3-65583429c096（area Germany、1980 起、disambiguation「Neue Deutsche Welle group」），名下 13 個 release-group。刻意不釘：8dd5960b-b955-30ab-bd5a-4fe440a5e950《Parlez-Vous Schaumburg?》（1984，盤名含團名的一部分）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Palais Schaumburg 1981；Palais Schaumburg Palais Schaumburg",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Grauzone",
+  "album": "Grauzone",
+  "year": 1981,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "EMI（catno EMC 3408A）",
+  "why": "Grauzone 是伯恩的樂團，MB 名下 9 個 release-group，**primary-type=Album 且 secondary-types 空的只有這 1 張**（1981，EMI EMC 3408A，10 軌），也就是他們唯一的正規專輯。實掃 seed_cards.json 全 14,424 列：Grauzone 池中 0 張，池中的瑞士德語區藝人也是 0 張（`de it at ch` 那組店面裡 ch 這一格在池中完全空白）。這張補進去，NDW 這條線在池中就不只有西德。",
+  "risk": "自我同名卡（selfTitled=true）。**盤名「Grauzone」是通用德文詞**，Apple 上假陽性密集：de 6784639252「Death Note, Folge 6: Grauzone」（有聲書，掛名 Tsugumi Ohba）、at 1599146743「Grauzone - Single」（Mode & Ramz）都會被子字串比對配到。正確的兩筆是 gb 1449972605「Grauzone」標 1981、10 軌（與 MB 原盤一致）與 gb 1555485480「Grauzone (40 Years Anniversary Edition)」標 2021、19 軌（WRWTFWW 的加曲再發）。MB 轄下 5 筆 release 全 Official，國別 CH 2、GB 1、DE 1、1 筆未填；**1981 原盤登記在 GB（EMI EMC 3408A）而不是 CH**，店面優先序上 ch 與 gb 都要試。CAA 未實測。",
+  "mbNote": "釘 release-group dc2e19fb-e781-3261-91c0-7adf4a139478。回問確認：title「Grauzone」、artist-credit「Grauzone」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 5 筆 release 全 Official（CH 2、GB 1、DE 1、1 筆未填），1981 GB 原盤 EMI EMC 3408A、10 軌 Vinyl；2021 CH 再發 WRWTFWW Records、19 軌。藝人 MBID 163b54e5-8256-4f35-8c6e-623dccd2fbc2（area Switzerland、1979 起、type Group），名下 9 個 release-group，**其中純 Album 型只有這一個**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Grauzone 1981；Grauzone (40 Years Anniversary Edition)；Grauzone Eisbär",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

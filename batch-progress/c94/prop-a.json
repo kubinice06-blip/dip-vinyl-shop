@@ -1,0 +1,439 @@
+[
+ {
+  "artist": "Voivod",
+  "album": "Nothingface",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "MCA Records／Mechanic Records（US MCAD-6326、GB MCG 6070）；德國仍由 Noise International 發（N 0142-1／N 0142-2）",
+  "why": "Voivod 第五張正規錄音室專輯。順序是我自己把藝人 MBID 66cb12f6 名下的 100 個 release-group 用 release-group?artist=…&limit=100&offset= 分頁全部取回、濾掉 secondary-type 為 Live／Demo 與 Compilation 的條目之後排出來的：War and Pain(1984)、Rrröööaaarrr(1986)、Killing Technology(1987)、Dimension Hatröss(1988)、Nothingface(1989)。這張是樂團在北美改由 MCA／Mechanic 發行的第一張，MB 轄下 12 個 release 橫跨 US／GB／JP／DE／XW／XE，德國那一側仍留在 Noise International（N 0142-1 黑膠、N 0142-2 CD），2012 年由 Geffen 做過一次數位再發（XW），2018 年日本 UICY-78639 再版。池中已有《Killing Technology》(1987) 與《Dimension Hatröss》(1988) 兩張（實掃 seed_cards.json 全 14,424 列），兩張都落在 Noise 時期的中段，樂團的起點與 MCA 時期在池中全無。",
+  "risk": "**Apple 把盤名拆成兩個字「Nothing Face」**：us 與 ca 都命中 collectionId 1443471145（Voivod／Nothing Face／9 軌／releaseDate 1989-01-01／notExplicit），卡片盤名依 MB 與原盤封面作一個字的《Nothingface》，兩種寫法都要進 queryAlias，否則試聽比對整組落空。Apple 的 1989-01-01 是佔位日期、MB first-release-date 是 1989-10-13，`yearDrift` 因此算不出來，逐張複檢要看 ℗ 年與軌數而不是只看漂移（第 140 條附錄）。掛名另有 Voïvod（帶分音符）的寫法。CAA 走 release-group 端點。池中另兩張 Voivod 的藝人字串與本卡一致、盤名不撞。",
+  "mbNote": "釘 release-group 0cac78a5-2fd2-368a-b783-932eee29a1a4。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Nothingface」、artist-credit「Voivod」、first-release-date 1989-10-13、primary-type Album、secondary-types 空、轄下 12 個 release（US／GB／JP／DE／XW／XE；其中 1 筆 US 為 Promotion「From the Forthcoming Album Nothingface」MCA C33-17978，其餘 Official）。藝人 MBID 66cb12f6-6502-486d-bf67-efd5bdaee6ac，名下 100 個 release-group（以 release-group?artist=&limit=100&offset= 分頁取完，非 25 筆上限，第 116 條）。刻意不釘：e2598053-2377-37e0-beab-6ea8fdf006e4《The Best of Voivod》（1992，Album/Compilation，精選）、9dccdafc-0c84-3150-9cab-c28ebdef5ff1《Lives》（2000，Album/Live）、61acbea0-2a27-4fb2-ab5b-5216ca11aa77《Build Your Weapons – The Very Best of the Noise Years 1986–1988》（2016，Album/Compilation，涵蓋本張前一期的 Noise 目錄）、5f81cd5c-5e50-4264-bd2d-1943bd0b3e84《Dimension Hatröss Demos》（1987，Album/Demo）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nothing Face；Voïvod",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Voivod",
+  "album": "War and Pain",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Metal Blade Records／Enigma（US EC 1104）；歐洲 Roadrunner Records RR 9825、加拿大 Banzai Records BRC 1925",
+  "why": "Voivod 的首張專輯，也是他們在池中缺的那個起點。依同一份 MB 藝人 browse（100 個 release-group 分頁取完）排序，這是 primary-type=Album 且無 Live／Demo／Compilation 次型別的第一筆。MB 轄下 25 個 release，最早的三筆同為 1984-08-10：歐洲 Roadrunner RR 9825、加拿大 Banzai BRC 1925，另有同年美國 Enigma／Metal Blade EC 1104；此後 1989 巴西 Estúdio Eldorado 3.133、1990 日本 Metal Blade PCCY-00104、1994 英美德 Metal Blade 3984-14049-2、2011 加拿大 War on Music WOM023、2018 Metal Blade 3984-25035-1 黑膠復刻，是本批再發鏈最長的一張。池中已有《Killing Technology》(1987) 與《Dimension Hatröss》(1988)（實掃 seed_cards.json 全 14,424 列），這張補的是它們前面三年的起點。",
+  "risk": "Apple us 與 ca 各回兩筆：211032923《War and Pain》（9 軌，1984-08-10）與 250139410《War and Pain (Box Set)》（31 軌，1984-01-01）。**後者是套裝，依第 129／140 條身分不釘、試聽不採**，配對必須鎖 9 軌那一筆。Box Set 那筆的 1984-01-01 是佔位日期。加拿大 Banzai 原盤與美國 Enigma 盤同年、盤名相同，年份不受影響。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 8b10d45d-32b4-3c65-a60c-5a6f4b03ec75。回問 release-group/<id>?inc=artist-credits+releases 確認：title「War and Pain」、artist-credit「Voivod」、first-release-date 1984-08-10、primary-type Album、secondary-types 空、轄下 25 個 release（XE／CA／US／BR／JP／DE／GB／PL／XW，全為 Official）。藝人 MBID 66cb12f6-6502-486d-bf67-efd5bdaee6ac。刻意不釘：c34b16fe-6743-4809-a04c-e0d134280c52《To the Death!》（1984-01，Album/Demo，同年的 demo 卷）、755d1653-5d81-4866-a96d-b314b43122c5《Morgöth Invasion》（1984-12，Album/Demo）、7d9bc7eb-9913-48c5-8afe-f24557b16617《Anachronism: First Voïvod Show 25/06/83》（Album/Live/Demo）、31ed46d7-daae-412a-9484-6aa932809cb5《Morgöth Tales》（2023，重錄早期曲目的 Album）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Voïvod",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Accept",
+  "album": "Breaker",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Brain（DE 0060.390）；美國 Passport Records PB 6010",
+  "why": "Accept 第三張專輯，也是他們第一次有美國發行（Passport PB 6010）的一張。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾掉 Compilation 之後的正規盤順序：Accept(1979)、I'm a Rebel(1980)、Breaker(1981)、Restless and Wild(1982)、Balls to the Wall(1983)、Metal Heart(1985)。MB 轄下 14 個 release，橫跨 DE／US／GB／JP／ES／AR／RU，德國原盤 Brain 0060.390（1981-03-16），後續 1992 Castle Classics CLACD 245、2000 Nuclear Blast America 27361 64832、2005 Steamhammer SPV 076-69782、2010／2011 日本 UICY-94522 與 UICY-20241 都是授權再版。池中已有《Restless and Wild》(1982) 與《Balls to the Wall》(1983) 兩張（實掃 seed_cards.json 全 14,424 列），正好是它後面連著的兩張；Accept 在池中沒有 1982 年以前的任何一張。",
+  "risk": "**Apple de 與 us 都回 0 筆**（實測 search 有正常回應、不是 403 速率限制，第 98 條），試聽預估落空，封面要走 CAA release-group 端點。盤名「Breaker」是單字常用詞，任何字串比對都必須連藝人一起鎖（第 85 條記過單字盤名的同型代價）。掛名另有樂團早期在西班牙盤上的 Discos Victoria 發行（E-30.515／VLP-116，MB status 空白），該筆授權狀態未標，不作為背書使用。MB 另有 1989 年的 5da5f761《I'm a Rebel / Breaker》二合一 CD，盤名含「Breaker」，是本張最像的假陽性。",
+  "mbNote": "釘 release-group bddf7005-87f6-34f4-b7fa-69f298e55a1b。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Breaker」、artist-credit「Accept」、first-release-date 1981-03-16、primary-type Album、secondary-types 空、轄下 14 個 release（DE／US／GB／JP／ES／AR／RU，多數 Official，1987 ES 一筆 status 空白）。藝人 MBID 由 artist?query=Accept 取得並以 browse 覆核，名下 100 個 release-group。刻意不釘：5da5f761-f662-49d0-8d4b-1a20d0c4762f《I'm a Rebel / Breaker》（1989，Album/Compilation，兩張併一片，第 129／140 條的二合一形狀）、e329f34a-7354-4c2f-a991-8e6de52e1d2a《Breaker》（1981 Single，同名單曲，這是本張最容易配錯的一筆）、b9782d21-046c-407c-9c5c-77472eb3d515《The Best of Accept》（Album/Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Accept",
+  "album": "Metal Heart",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "RCA（DE PL 70638）／Portrait（US RK 39974、GB PRT 26358、JP 28·3P-596）",
+  "why": "Accept 第六張專輯，也是《Balls to the Wall》之後、樂團在美國由 CBS 旗下 Portrait 發行的一張——池中已有的兩張（《Restless and Wild》1982、《Balls to the Wall》1983）停在它前面，之後整段目錄在池中是空的（實掃 seed_cards.json 全 14,424 列）。MB 轄下 17 個 release：德國 RCA PL 70638（1985-03-04／03-12）、英國 Portrait PRT 26358、美國 Portrait RK 39974、日本 Portrait 28·3P-596 與 32･8P-73，1989 年 RCA 以 NL/ND/NK 74207 三個編號重發，2002 RCA 74321 93213 2、2005 日本 Epic MHCP-787、2009 日本 EICP 1253、2025 Silver Lining Music 再發，是本批 release 數第二多的一張。",
+  "risk": "Apple 兩筆同名：de 命中 1787140285（Metal Heart／10 軌／1985-01-01）與 192666101（10 軌／1985-05-24），us 只有 192666101；1985-05-24 對應 MB 的美國 Portrait RK 39974 那一筆，1985-01-01 是佔位日期。兩筆都是 10 軌、與原盤軌數一致，**逐張複檢時仍要按第 140 條看曲目表有沒有別張專輯的同名曲**。us 另回 192923984《Staying a Life (Live)》（1990，15 軌），是現場輯、不可配。日文盤編號在 MB 上有 28·3P-596（中黑點）與 28-3P-596（連字號）兩種寫法。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group ffb6959c-e86e-312a-869b-2ab5f7a79c99。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Metal Heart」、artist-credit「Accept」、first-release-date 1985-03-04、primary-type Album、secondary-types 空、轄下 17 個 release（DE／GB／US／JP，多為 Official，1985-03-04 DE 一筆 status 空白）。藝人 MBID 同前一張，名下 100 個 release-group。刻意不釘：dd1f547f-7b69-43c5-b7c8-0d6cd889a461《Songs From the Big Chair / Metal Heart》（1985，Album/Compilation，與 Tears for Fears 併片）、dbee6015-8fc5-4d5e-8d5f-bc8e0db831e9《Metal Heart / Kaizoku-Ban》（2013，Album/Compilation，二合一）、538005d3-bdeb-40d1-accb-d2f466aec109《Metal Heart》（1985-04-21 Single，同名單曲）、96676e91-9f12-3882-aafa-2bf3adcdcd6b《Sharkbite: The Best of Accept》（2005，Album/Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Deafheaven",
+  "album": "Roads to Judah",
+  "year": 2011,
+  "genres": [
+   "rock"
+  ],
+  "label": "Deathwish（US DW120）；日本 Daymare Recordings DYMC-149",
+  "why": "Deafheaven 的首張專輯，池中兩張（《Sunbather》2013、《New Bermuda》2015）之前的那一張，也是他們在 Deathwish 的第一張——實掃 seed_cards.json 全 14,424 列，樂團在池中沒有 2013 年以前的任何一張。依 MB 藝人 browse 分頁取完後濾出的正規盤只有六張：Roads to Judah(2011)、Sunbather(2013)、New Bermuda(2015)、Ordinary Corrupt Human Love(2018)、Infinite Granite(2021)、Lonely People With Power(2025)，也就是說補進這一張與 2018 那一張之後，這位藝人的正規目錄在池中就只差最後兩張。MB 轄下 3 個 release：2011-04-26 美國 Deathwish DW120、同日 XW 數位、2011-12-21 日本 Daymare DYMC-149。",
+  "risk": "Apple us 命中 collectionId 1453341563（Deafheaven／Roads to Judah／**4 軌**／2011-04-26／notExplicit）。四軌與原盤一致（MB 該 release-group 底下三筆 release 都是四軌的短片長專輯），**不要因為軌數少就照第 124 條判成 EP 而剔除**——第 141 條記過同型誤判（Attrition《Death House》兩軌被誤剔）。MB primary-type 為 Album。掛名 Deafheaven 在池中已有兩張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group a2f04d00-283c-4288-9511-adc1afc3a7b7。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Roads to Judah」、artist-credit「Deafheaven」、first-release-date 2011-04-26、primary-type Album、secondary-types 空、轄下 3 個 release（US Deathwish DW120、XW Deathwish、JP Daymare DYMC-149，全 Official）。藝人 MBID 由 artist?query=Deafheaven 取得（score 100）並以 browse 覆核。刻意不釘：303e3c5a-762f-41af-af30-424d3b23f18b《Demo》（2010-06-01，EP/Demo，本張之前的四曲 demo）、8a04c1a0-a513-42fc-9eee-9063326b1cec《Libertine Dissolves》（2011-01-21 EP）、7671cde4-b662-4ae1-a5ed-4138423db769《Deafheaven / Bosse-de-Nage》（2012 split 單曲）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Deafheaven",
+  "album": "Ordinary Corrupt Human Love",
+  "year": 2018,
+  "genres": [
+   "rock"
+  ],
+  "label": "Anti-（US 87582-2、GB 7582-2、XE 7582-1）／Epitaph",
+  "why": "Deafheaven 第四張專輯，也是他們離開 Deathwish、改由 Epitaph 旗下 Anti- 發行的第二張。依 MB 藝人 browse 分頁取完後濾出的六張正規盤順序，它排在池中已有的《New Bermuda》(2015) 之後、《Infinite Granite》(2021) 之前——實掃 seed_cards.json 全 14,424 列，池中只有《Sunbather》(2013) 與《New Bermuda》(2015) 兩張，樂團的頭尾兩端都缺。MB 轄下 5 個 release 全部同一天（2018-07-13）：XW 數位（Anti-／Epitaph 雙掛）、GB 7582-2、US 87582-2、XE 黑膠 7582-1，是本批發行形態最單純的一張。",
+  "risk": "Apple us 命中 collectionId 1485072758（Deafheaven／Ordinary Corrupt Human Love／7 軌／2018-07-13／notExplicit），軌數與日期都與 MB 相符，是本批比對最乾淨的一筆。廠牌名 Anti- 在 MB 上寫成帶 U+2010 連字號的「Anti‐」，卡片的 label 欄一律改用 ASCII 連字號（第 118 條記過 U+2010 會踩 chk-prop 的反模式，這裡只出現在廠牌欄、不在盤名裡，但寫法仍要統一）。掛名 Deafheaven 池中已有兩張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group ea7fee59-2096-4aaf-8725-31298098c8e7。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Ordinary Corrupt Human Love」、artist-credit「Deafheaven」、first-release-date 2018-07-13、primary-type Album、secondary-types 空、轄下 5 個 release（XW／GB／US／XE 與一筆國別空白，全 Official，全部同日）。藝人 MBID 同《Roads to Judah》那張。刻意不釘：b4603744-ccc4-4b3e-81ff-7e4ca65370dd《Honeycomb》（2018-04-18 Single，本張的先行曲）、72cb0a8c-16e7-4829-a033-50b2b465617f《Canary Yellow》（2018-06-12 Single，同上）、9c2b850a-88b2-4634-add9-e5e56fe7c3dc《Black Brick》（2019-02-27 Single）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Killswitch Engage",
+  "album": "The End of Heartache",
+  "year": 2004,
+  "genres": [
+   "rock"
+  ],
+  "label": "Roadrunner Records（US 1686-183732／168 618 373-2、XE RR 8373-2、JP RRCY-21223）",
+  "why": "Killswitch Engage 第三張專輯。依 MB 藝人 browse（release-group?artist=&limit=100&offset=）濾出的正規盤順序：Killswitch Engage(2000)、Alive or Just Breathing(2002)、The End of Heartache(2004)、As Daylight Dies(2006)、Killswitch Engage(2009)、Disarm the Descent(2013)、Incarnate(2016)、Atonement(2019)、This Consequence(2025)。實掃 seed_cards.json 全 14,424 列，池中只有《Alive or Just Breathing》(2002) 一張，這張正好接在它後面。MB 轄下 11 個 release 橫跨 US／XE／XW／JP，2005 年 Roadrunner 以 1686-181772 與 RR 8373-5 兩個編號重發，日本 2005-10-12 另有雙碟 RRCY-29108／29109。",
+  "risk": "**Apple 上這張是本批試聽最容易配錯的一筆。** us 回八筆，其中只有兩筆是本團的：214628864《The End of Heartache》（12 軌，2004-05-11，與 MB 的美國 release 同日）與 305684330《The End of Heartache (Bonus Track Version)》（18 軌，2004-05-03）；其餘六筆全是**別的藝人翻唱或伴唱帶**——Unveil The Strength、Echoes in Ashes、Lyric Noel、Sins In Vain、Christina Rotondo 的同名單曲，以及 Singer's Best 的《The End of Heartache (Karaoke Version Originally Performed by Killswitch Engage)》。依第 153 條附錄，這正是要靠掛名與「Karaoke／Originally Performed by」尾綴擋掉、逐軌核曲名擋不住的形狀。配對一律鎖 12 軌的 214628864。另 MB 有 2007 年的同名 EP，不可與本張混。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 7fef0d18-8c73-3c82-811c-a62a0a92859d。回問 release-group/<id>?inc=artist-credits+releases 確認：title「The End of Heartache」、artist-credit「Killswitch Engage」、first-release-date 2004-05-03、primary-type Album、secondary-types 空、轄下 11 個 release（US／XE／XW／JP，全 Official；其中 XW 兩筆標題為「The End of Heartache (Special Edition)」與「The End of Heartache (Bonus Track Version)」，屬同一 release-group 的加曲版）。藝人 MBID 由 artist?query=Killswitch+Engage 取得並以 browse 覆核。刻意不釘：cbfb2d2c-d47e-486b-8ec0-517df087ceba《The End of Heartache》（2007-03-06 EP，與本張同名的 EP，是自動比對最容易換上去的一筆）、c8576495-ede6-3a9d-ac79-1b009445057b《The End of Heartache》（2004 Single）、e56b8db5-9f49-3f6e-944c-5ea268dbdaf8 與 db41b2ab-0b74-4026-a8ab-12fb2db21086 兩張同名的《Killswitch Engage》（2000／2009，自我同名雙胞胎）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Eyehategod",
+  "album": "In the Name of Suffering",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Intellectual Convulsion（FR SPASM III，原盤）；1992 起 Century Media（DE 77-9738-2、US 7738-2）",
+  "why": "Eyehategod 的首張專輯，原盤由法國小廠 Intellectual Convulsion 發行（編號 SPASM III），兩年後才由 Century Media 接手做國際發行——MB 轄下 7 個 release 就是這條路徑：1990 FR Intellectual Convulsion、1992 DE Century Media 77-9738-2、2006 US Century Media 8263-2、2007 XE 77736-2、2012 XW 數位、2021 XE Eightball Records Ebr002。實掃 seed_cards.json 全 14,424 列，池中已有《Take as Needed for Pain》(1993，頂點卡 hall) 與《Dopesick》(1996) 兩張，都在 Century Media 時期；樂團的起點在池中是空的。依 MB 藝人 browse 濾出的正規盤只有六張（本張、Take as Needed for Pain、Dopesick、Confederacy of Ruined Lives、Eyehategod 2014、A History of Nomadic Behavior 2021），補進本張與 2000 那張之後池中就有四張。",
+  "risk": "**年份兩說**：MB 的 first-release-date 是 1990（對應法國 Intellectual Convulsion SPASM III 那筆 release），Apple 兩筆都記 1992-01-01（1046707364，10 軌；1045223197《In the Name of the Suffering (Reissue)》，14 軌）。依裁定第 1／86／95 條，`rgMbid` 是身分鍵不是年份來源，卡片年份取原盤年 1990，**行文不得正面斷言發行年**（第 18／46 條）。Apple 的 1045223197 盤名多一個 the（「In the Name of **the** Suffering」）且 14 軌，是加曲的再發，配對要鎖 10 軌的 1046707364。掛名 Eyehategod 在池中另有兩張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 5d54a95e-3557-34d2-9bbe-eaf552e2f96a。回問 release-group/<id>?inc=artist-credits+releases 確認：title「In the Name of Suffering」、artist-credit「Eyehategod」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 7 個 release（FR／DE／US／XE／XW，多為 Official，2021 XE Eightball 一筆 status 空白、不作為背書使用）。藝人 MBID 由 artist?query=Eyehategod 取得並以 browse 覆核。刻意不釘：50d488a1-635d-4cad-bd6f-b9d5c399b9f1《Eyehategod》（2014，自我同名專輯，與掛名字串相同，是任何模糊比對最容易撞上的一筆）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "In the Name of the Suffering；EyeHateGod",
+  "reissuedBy": "Century Media（1992 起的國際發行）",
+  "g": "a"
+ },
+ {
+  "artist": "Eyehategod",
+  "album": "Confederacy of Ruined Lives",
+  "year": 2000,
+  "genres": [
+   "rock"
+  ],
+  "label": "Century Media（US CMR 8008-2、DE 77308-2、JP VICP-61261）；英國 Peaceville CDVILED250",
+  "why": "Eyehategod 第四張專輯，也是《Dopesick》(1996) 之後隔了四年的一張，之後樂團要到 2014 年才再有正規盤——換句話說它是這個樂團二十世紀目錄的最後一張。MB 轄下 5 個 release：2000-09-19 美國 Century Media CMR 8008-2、同年德國 77308-2、2001-01-24 日本 VICP-61261、2001 英國改由 Peaceville 發（CDVILED250）、2012 XW 數位。實掃 seed_cards.json 全 14,424 列，池中已有《Take as Needed for Pain》(1993，頂點卡 hall) 與《Dopesick》(1996)，這張正好接在後者之後，與同批補的《In the Name of Suffering》一頭一尾把 Century Media 時期補齊。",
+  "risk": "Apple us 命中 collectionId 1045201863（Eyehategod／Confederacy of Ruined Lives／10 軌／2000-09-19／notExplicit），日期與 MB 的美國 release 完全相同，比對乾淨。英國那一筆改掛 Peaceville，`reissuedBy` 記的是授權發行方不是再版方。掛名在池中另有兩張、字串一致；本批另收同藝人一張，兩張盤名不撞。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 79877792-cb12-379a-9633-e571252b97d1。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Confederacy of Ruined Lives」、artist-credit「Eyehategod」、first-release-date 2000-09-19、primary-type Album、secondary-types 空、轄下 5 個 release（US／DE／JP／GB／XW，全 Official）。藝人 MBID 同前一張。刻意不釘：50d488a1-635d-4cad-bd6f-b9d5c399b9f1《Eyehategod》（2014，自我同名專輯）、5b9c100f-b8fe-43a0-9120-6d861fff441c《A History of Nomadic Behavior》（2021，本批不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "EyeHateGod",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Deathspell Omega",
+  "album": "Paracletus",
+  "year": 2010,
+  "genres": [
+   "rock"
+  ],
+  "label": "Norma Evangelium Diaboli（FR NED026）；美國 Season of Mist SOM809",
+  "why": "Deathspell Omega 依 MB 藝人 browse 排序的第五張正規盤，接在池中已有的《Si monumentum requires, circumspice》(2004) 與《Fas - Ite, Maledicti, in Ignem Aeternum》(2007，頂點卡 heresy) 之後，把 2004–2010 這三張連成一段（實掃 seed_cards.json 全 14,424 列，樂團在池中只有那兩張）。依 MB 藝人 browse 分頁取完的正規盤順序：Infernal Battles(2000)、Inquisitors of Satan(2002)、Si monumentum(2004)、Fas(2007)、Paracletus(2010)、The Synarchy of Molten Bones(2016)、The Furnaces of Palingenesia(2019)、The Long Defeat(2022)。MB 轄下 6 個 release，法國 Norma Evangelium Diaboli NED026 是原盤與 2015 復刻的同一編號，美國由 Season of Mist SOM809 授權發行。",
+  "risk": "Apple us 與 fr 都命中 collectionId 1405820743（Deathspell Omega／Paracletus／10 軌／2010-11-08／notExplicit），日期與 MB 完全相同。這個樂團刻意不公開成員與訪談，`why` 與後續行文只能依廠牌目錄與發行資料，不得引用來源不明的傳言。曲風桶依簡報一律 `rock`，不另開 metal 桶。掛名在池中已有兩張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group f6883717-80b8-4a24-abf5-d3b7c93f0958。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Paracletus」、artist-credit「Deathspell Omega」、first-release-date 2010-11-08、primary-type Album、secondary-types 空、轄下 6 個 release（FR ×3、US、XW ×2，全 Official，法國三筆同為 NED026）。藝人 MBID 由 artist?query=Deathspell+Omega 取得並以 browse 覆核。刻意不釘：c6754aa0-598d-387b-b8ca-a295e5bd3b1f《Sob a lua do bode / Demoniac Vengeance》（2000，與 Mütiilation 的 split）、cce58d71-4eea-3971-949d-cf2a62e0ab17《Clandestine Blaze / Deathspell Omega》（2001，split）、0231a9bb-3934-3727-98f2-542066f55c38《Crushing the Holy Trinity》（2005，多團合輯型 split）、b24dd6bc-0793-3827-ba70-22ebf3d0119d《From the Entrails to the Dirt》（2004，split）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Deathspell Omega",
+  "album": "The Furnaces of Palingenesia",
+  "year": 2019,
+  "genres": [
+   "rock"
+  ],
+  "label": "Norma Evangelium Diaboli（FR／XW NED047）",
+  "why": "Deathspell Omega 三部曲之後的第二張，也是他們近十年最主要的一張正規盤——依 MB 藝人 browse 分頁取完的順序，2010 年《Paracletus》之後只有 2016《The Synarchy of Molten Bones》、2019 本張與 2022《The Long Defeat》三張。MB 轄下只有 2 個 release，兩筆同日（2019-05-24）同編號（Norma Evangelium Diaboli NED047），一筆 FR 一筆 XW，是本批發行形態最單純的一張，也說明這個廠牌從 2004 年起一直是樂團唯一的發行方（本批同收的《Paracletus》原盤編號 NED026 出自同一序列）。實掃 seed_cards.json 全 14,424 列，池中只有《Si monumentum requires, circumspice》(2004) 與《Fas - Ite, Maledicti, in Ignem Aeternum》(2007) 兩張，2010 年之後整段是空的。",
+  "risk": "Apple us 與 fr 都命中 collectionId 1463068170（Deathspell Omega／The Furnaces of Palingenesia／11 軌／2019-05-24／notExplicit），日期與 MB 完全相同，比對乾淨。同批另收本團《Paracletus》，兩張盤名不撞。這個樂團不公開成員，行文只能依廠牌目錄與發行資料。曲風桶依簡報一律 `rock`。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group ca3f3373-6276-4533-9f67-eabce3b52bcf。回問 release-group/<id>?inc=artist-credits+releases 確認：title「The Furnaces of Palingenesia」、artist-credit「Deathspell Omega」、first-release-date 2019-05-24、primary-type Album、secondary-types 空、轄下 2 個 release（FR／XW，皆 Official，皆 NED047）。藝人 MBID 同《Paracletus》那張。刻意不釘：6ee6a4e4-2027-4a4a-85f6-a1e716231687《The Synarchy of Molten Bones》（2016）與 fa3d346e-baf5-4b39-bf43-f4676a5d6c99《The Long Defeat》（2022）——兩張都是正規盤、本批只是沒收，不是身分有疑。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "King Diamond",
+  "album": "\"Them\"",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Roadrunner Records（XE RR 9550 1／9550 2）／Roadracer Records（US RRD 9550）；日本 Far East Metal Syndicate MP32-5327",
+  "why": "King Diamond 個人名義的第三張專輯，接在池中已有的《Abigail》(1987) 之後。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤順序：Fatal Portrait(1986)、Abigail(1987)、\"Them\"(1988)、Conspiracy(1989)、The Eye(1990)……實掃 seed_cards.json 全 14,424 列，池中只有《Abigail》一張。MB 轄下 12 個 release 橫跨 XE／US／JP／DE／DK／XW：1988-07-18 歐洲 Roadrunner RR 9550 1（黑膠）與 9550 2（CD）、1988 美國 Roadracer RRD 9550、1988-07-21 日本 Far East Metal Syndicate MP32-5327，1997 年 Roadrunner 以 RR 8785-2 與 1686-187852 重發，2018／2020 由 Metal Blade 接手復刻（US 3984-25056-1、XE 3984-15677-1／-2）。",
+  "risk": "**盤名的引號有兩種寫法**：MB 的 release-group 標題與多數 release 用彎引號「“Them”」，1988 XE 與 1988-07-21 JP 兩筆 release 用直引號「\"Them\"」。卡片取 ASCII 直引號版，兩種都要進 queryAlias；去掉引號的裸 Them 也要進，因為那是外部服務最可能用的形式。**去引號之後盤名只剩一個極常見的英文代名詞**，任何字串比對都必須連掛名一起鎖——Apple us 用「King Diamond Them」搜出來的第二筆起就是 André Rieu 與別的藝人，dk 更是整頁不相干。Apple 唯一正確的是 collectionId 1296481392《\"Them\" (Bonus Track Version)》（12 軌，1988-09-13，us 與 dk 同一筆），**標題帶 Bonus Track Version、軌數要對原盤**（第 140 條），本機上架前要用 release?release-group=57ed3d2c…&inc=recordings 核原盤軌數再決定採不採。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 57ed3d2c-c6ae-3bc9-94e3-6bc2e7d8a774。回問 release-group/<id>?inc=artist-credits+releases 確認：title「“Them”」（MB 用彎引號）、artist-credit「King Diamond」、first-release-date 1988-07-18、primary-type Album、secondary-types 空、轄下 12 個 release（XE／US／JP／DE／DK／XW，全 Official；release 標題在直引號與彎引號兩種寫法間分歧）。RG 標題與卡片盤名不必逐字相等（第 91／95 條）。藝人 MBID 由 artist?query=King+Diamond 取得並以 browse 覆核，名下 13 個正規盤。刻意不釘：4f58c327-5a6a-3595-89e1-a77549e61d73《Abigail II: The Revenge》（2002，續作，與池中已有的《Abigail》同名前綴）、744bec23-6453-4f97-a6de-b1272eff73f2《Deadly Omens, Vol. 1》（2016，分卷型出版品，第 87 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Them；“Them”；Them (King Diamond)",
+  "reissuedBy": "Metal Blade Records（2018／2020 復刻）",
+  "g": "a"
+ },
+ {
+  "artist": "Anthrax",
+  "album": "Persistence of Time",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Megaforce Worldwide／Island（US I2 46480、422-846 480-2；DE 210 929；JP Polystar PSCD-1032）",
+  "why": "Anthrax 第五張專輯，也是原班主唱時期的最後一張。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Fistful of Metal(1984)、Spreading the Disease(1985)、Among the Living(1987)、State of Euphoria(1988)、Persistence of Time(1990)、Sound of White Noise(1993)……實掃 seed_cards.json 全 14,424 列，池中只有《Among the Living》(1987) 與《Spreading the Disease》(1985) 兩張，1988 年之後整段是空的。MB 轄下 18 個 release 橫跨 US／CA／DE／GB／JP／XE／XW，是這位藝人 release 數最多的一張：1990-08-07 美國 Island／Megaforce I2 46480 與 422-846 480-2、同年黑膠 422-846 480-1、1990-08-21 德國 210 929 與日本 Polystar PSCD-1032、1992 英國 Island 514 293-2、2007／2011 日本 UICY-6900 與 UICY-25104、2020-08-21 三十週年版。",
+  "risk": "Apple us 回三筆：1531807492 與 1440849412 都是《Persistence Of Time》11 軌／1990-08-21，1524139069 是《Persistence of Time (30th Anniversary Edition: Bonus Tracks)》12 軌。**兩筆 11 軌的同名條目是同一張碟的兩個上架版本，配對時取任一筆都要記下 collectionId 供本機覆核**；三十週年版多一軌，屬加曲版（第 140 條），不要把多出來的那一軌當原盤曲目。MB 對本張的 first-release-date 記 1990-08-07（美國），Apple 全部記 1990-08-21（歐日發行日），差 14 天、不構成年份爭議。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group ea25c463-c8e7-3f2b-8ec9-d883ed227e25。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Persistence of Time」、artist-credit「Anthrax」、first-release-date 1990-08-07、primary-type Album、secondary-types 空、轄下 18 個 release（US／CA／DE／GB／JP／XE／XW；其中 1 筆國別空白為 Promotion，其餘 Official；有一筆標題為「Persistence of Time (30th Anniversary Edition: Bonus Tracks)」屬同一 release-group 的加曲版）。藝人 MBID 由 artist?query=Anthrax 取得並以 browse 覆核。刻意不釘：a43e19ad-09e5-4100-b4d3-935297ef9674《The Greater of Two Evils》（2004，早期曲目重錄）、817163c9-8a98-37eb-82bb-53c761031da6《State of Euphoria》（1988，本張前一張、本批不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Burzum",
+  "album": "Det som engang var",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "Cymophane Productions（NO EYE 001，原盤）；1994 英國 Misanthropy Records AMAZON 002",
+  "why": "Burzum 第二張專輯，補在池中兩張（《Hvis lyset tar oss》1994、《Filosofem》1996）前面。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Burzum(1992)、Det som engang var(1993)、Hvis lyset tar oss(1994)、Filosofem(1996)、Dauði Baldrs(1997)……實掃 seed_cards.json 全 14,424 列，池中只有 1994 與 1996 那兩張，1993 年這一張是它們的直接前身。MB 轄下 8 個 release：1993-08-20 挪威 Cymophane Productions EYE 001 為原盤，1994-10-13 英國由 Misanthropy Records 以 AMAZON 002／EYE 001 雙編號發行，2003 巴西 Somber Music SM020-CD、2005 英國 Back on Black BOBV017LP 黑膠、2010-10-25 挪威 Byelobog Productions BYE002CD 為藝人自營廠牌的官方再發。",
+  "risk": "**授權狀態要逐筆看**：MB 轄下八筆之中，2013 年那筆「Cymophane Productions／EYE 001」被 MB 標為 **Bootleg**（沿用原廠名與原編號的冒名盤，正是裁定第 65 條的形狀），1994-10-13 GB 有一筆與 2005 GB Back on Black 那筆 status 為空白。可作背書的是 1993 原盤與 2010 Byelobog 的官方再發（第 43／57／65／78 條）。Apple us 與 no 都命中 collectionId 286929510《Det Som Engang Var》（8 軌，1993-08-01），大小寫與 MB 不同（MB 作 sentence case），兩種寫法都要能比對；Apple 的 1993-08-01 與 MB 的 1993-08-20 差 19 天。挪威文盤名不含變音符號，跨字集風險低。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 4907bca2-147d-3720-84ce-e6e5dd3a6c13。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Det som engang var」、artist-credit「Burzum」、first-release-date 1993-08-20、primary-type Album、secondary-types 空、轄下 8 個 release（NO／GB／BR／XW；其中 1 筆標為 **Bootleg**、2 筆 status 空白，其餘 Official）。藝人 MBID 由 artist?query=Burzum 取得並以 browse 覆核。刻意不釘：645133c5-0afe-3c0f-bed7-32db33de6fde《Burzum》（1992，自我同名首張，與掛名字串相同、模糊比對最容易撞）、12ed7179-626d-4552-9406-f37717224ca2《From the Depths of Darkness》（2011，早期曲目重錄）、9f404109-184f-429c-9dd8-9cec9a5f4250《Analog '94》（2018）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Det Som Engang Var",
+  "reissuedBy": "Byelobog Productions（2010 官方再發）",
+  "g": "a"
+ },
+ {
+  "artist": "Enslaved",
+  "album": "Frost",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "Osmose Productions（FR OPCD 025，原盤；黑膠 OPLP025）",
+  "why": "Enslaved 第二張專輯，同年稍晚接在池中已有的《Vikingligr Veldi》(1994-02-22) 之後——實掃 seed_cards.json 全 14,424 列，池中只有那張與《Below the Lights》(2003) 兩張，中間九年的目錄全空。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Vikingligr Veldi(1994-02)、Frost(1994-08)、Eld(1997)、Blodhemn(1998)、Mardraum(2000)……MB 轄下 25 個 release，幾乎全部集中在法國 Osmose Productions（原盤 OPCD 025、黑膠 OPLP025 從 2011 到 2021 至少重壓六次），另有 1995 馬來西亞 Valentine Sound Productions NE 228、2001 俄羅斯 Фоно FO116MC 卡帶、2008／2015 Season of Mist SOM 702、2009 德國 Viva Hate 85/60、2016 立陶宛 Inferna Profundus IPR059。",
+  "risk": "Apple us 與 no 都命中 collectionId 260248477（Enslaved／Frost／9 軌／1994-08-04），與 MB 的 first-release-date 完全相同。**盤名「Frost」是單字常用詞**，字串比對必須連掛名一起鎖（同第 85 條記過的單字盤名代價）。MB 有一筆 1994 FR 為 Promotion，不可當原盤引用。俄羅斯與立陶宛那兩筆再發的授權狀態 MB 標 Official 但未經 Discogs version 頁覆核，行文不得拿它們當背書（第 66／78 條）。掛名 Enslaved 池中已有兩張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group d5d5edf9-92f8-3778-900f-e4116581c6ff。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Frost」、artist-credit「Enslaved」、first-release-date 1994-08-04、primary-type Album、secondary-types 空、轄下 25 個 release（FR 為主，另有 RU／DE／LT／MY／XW；1 筆 FR 為 Promotion，其餘 Official）。藝人 MBID 由 artist?query=Enslaved 取得並以 browse 覆核。刻意不釘：467fdd62-e538-3e7e-b677-67c0d4b28d6c《Vikingligr Veldi》（1994-02-22，同年前一張，池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Neurosis",
+  "album": "Souls at Zero",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "Alternative Tentacles（US VIRUS 109CD）；日本 TOY'S FACTORY TFCK 88605",
+  "why": "Neurosis 第三張專輯，也是樂團自營廠牌 Neurot Recordings 日後最先拿回來重發的一張（MB 轄下 8 個 release 裡有四筆是 Neurot：1999-08-03 編號 3、2000 年、2011-02 的 NR 003／NR-062、2015 XW 數位）。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Pain of Mind(1987)、The Word as Law(1990)、Souls at Zero(1992)、Enemy of the Sun(1993)、Through Silver in Blood(1996)、Times of Grace(1999)……實掃 seed_cards.json 全 14,424 列，池中只有《Through Silver in Blood》(1996) 與《Times of Grace》(1999) 兩張，1996 年以前整段是空的。原盤由 Jello Biafra 的 Alternative Tentacles 發行（VIRUS 109CD），同年日本 TOY'S FACTORY TFCK 88605，2000 年日本再由 Ritual Records HWCY-1040 發、2012 年 Relapse RR 7179 做黑膠。",
+  "risk": "Apple us 命中 collectionId 257523883（Neurosis／Souls At Zero／**13 軌**／1992-01-01／notExplicit）。**軌數要對原盤**——Neurot 的再發版曾加曲，13 軌未必等於 1992 年 Alternative Tentacles 原盤的軌數，依第 141 條，本機在對軌數下任何判斷之前要先開 release?release-group=a9304513…&inc=recordings 看各筆 release 的軌數，不要拿 Apple 的軌數反推原盤。Apple 的 1992-01-01 是佔位日期（MB 為 1992-12-01），`yearDrift` 算不出來。掛名 Neurosis 池中已有兩張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group a9304513-564c-3984-9c57-734f5a0edbd7。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Souls at Zero」、artist-credit「Neurosis」、first-release-date 1992-12-01、primary-type Album、secondary-types 空、轄下 8 個 release（US／JP／XW，全 Official）。藝人 MBID 由 artist?query=Neurosis 取得並以 browse 覆核。刻意不釘：208ceef1-60ef-33a3-8e2b-ff26377979b7《Neurosis & Jarboe》（2003，合作盤、掛名不同）、a0e0d936-5c26-3f60-8ebd-70ac6fbda0df《Pain of Mind》(1987) 與 d0767aa7-a6a2-3bf0-9419-dd08aa9d2228《The Word as Law》(1990)——兩張是本張之前的正規盤、本批只是沒收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Souls At Zero",
+  "reissuedBy": "Neurot Recordings（1999／2000／2011 樂團自營廠牌再發）",
+  "g": "a"
+ },
+ {
+  "artist": "Godflesh",
+  "album": "Selfless",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "Earache Records（GB MOSH 85CD）；美國 Columbia／Earache CK 66157、日本 TOY'S FACTORY TFCK-88712",
+  "why": "Godflesh 第三張專輯，也是 Earache 與 Columbia 合作發行時期的一張——MB 轄下 5 個 release 裡，1994-10-18 的美國盤同時掛 Columbia 與 Earache 的同一個編號 CK 66157，這是這條線上少見的大廠介入紀錄。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Streetcleaner(1989)、Pure(1992)、Selfless(1994)、Songs of Love and Hate(1996)、Us and Them(1999)、Hymns(2001)……實掃 seed_cards.json 全 14,424 列，池中只有《Streetcleaner》(1989) 與《Pure》(1992) 兩張，1994 年之後整段是空的。2009 年 Earache 做過數位再發（XW），2016-07-29 XE 黑膠復刻編號 mosh085lp。",
+  "risk": "**Apple us 與 gb 都回 0 筆**（實測 search 有正常回應、非 403，第 98 條），試聽預估落空，封面要走 CAA release-group 端點。盤名「Selfless」是單字，字串比對必須連掛名一起鎖。日本盤與英國盤同日（1994-09-26）、美國盤晚三週（1994-10-18），MB 取前者為 first-release-date，年份無爭議。掛名 Godflesh 池中已有兩張、字串一致。",
+  "mbNote": "釘 release-group d8f8fb23-7ec6-3f92-b9ef-4e057419457c。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Selfless」、artist-credit「Godflesh」、first-release-date 1994-09-26、primary-type Album、secondary-types 空、轄下 5 個 release（JP TOY'S FACTORY TFCK-88712、GB Earache MOSH 85CD、US Columbia／Earache CK 66157、XW 數位、XE 黑膠 mosh085lp，全 Official）。藝人 MBID 由 artist?query=Godflesh 取得並以 browse 覆核。刻意不釘：dc296167-e1dc-3cfe-b0a4-831aec4eae4f《Songs of Love and Hate》（1996）與 c4696df6-8004-3545-a8e9-57bdfb6abf39《Us and Them》（1999）——本張之後的正規盤，本批只是沒收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Kyuss",
+  "album": "Wretch",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dali Records（US 61256-2、GB 61256、DE 3705-61256-2）",
+  "why": "Kyuss 的首張專輯，補在池中兩張（《Blues for the Red Sun》1992、《Welcome to Sky Valley》1994）前面。這位藝人在 MB 上一共只有四個正規 release-group（Wretch 1991、Blues for the Red Sun 1992、Welcome to Sky Valley 1994、…And the Circus Leaves Town 1995，以 release-group?artist=&limit=100&offset= 分頁取完後確認沒有第五張），所以池中補進這一張之後只差最後一張。實掃 seed_cards.json 全 14,424 列。MB 轄下 8 個 release，全部掛 Dali Records 的同一組編號家族（61256／61256-2／3705-61256-2／3704-61256-1），2006 年由 Elektra 與 Rhino 做數位再發（XW）、2014-04-22 Rhino 以 R1 543316 做黑膠復刻。",
+  "risk": "**Apple us 回 0 筆**（實測 search 正常回應、非 403），試聽預估落空，封面走 CAA release-group 端點。盤名「Wretch」是單字，比對要連掛名鎖。本團第四張《…And the Circus Leaves Town》的 MB 標題以 U+2026 刪節號開頭，若日後要補收，盤名要先決定用 ASCII 三點（與池中 Metallica《...And Justice for All》的既有寫法一致）還是 U+2026，本批不處理。掛名 Kyuss 池中已有兩張、字串一致。",
+  "mbNote": "釘 release-group 0d2b7589-b28a-3681-827f-a1a9a99a0482。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Wretch」、artist-credit「Kyuss」、first-release-date 1991-09-23、primary-type Album、secondary-types 空、轄下 8 個 release（US／GB／DE／XE／XW，全 Official）。藝人 MBID 由 artist?query=Kyuss 取得並以 browse 覆核，名下正規 release-group 僅四個。刻意不釘：3fba4dd1-557a-3a71-9a67-930146939c3e《…And the Circus Leaves Town》（1995，本團第四張，盤名含 U+2026、本批不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Isis",
+  "album": "Celestial",
+  "year": 2000,
+  "genres": [
+   "rock"
+  ],
+  "label": "Escape Artist Records（US EA 7.0／EA 7.1）；同年 XE 由 Hydra Head Records HH666-59 發行",
+  "why": "Isis 的首張專輯，補在池中兩張（《Oceanic》2002、《Panopticon》2004）前面。依 MB 藝人 browse（分頁取完）濾出的正規盤只有五張：Celestial(2000)、Oceanic(2002)、Panopticon(2004)、In the Absence of Truth(2006)、Wavering Radiant(2009)，所以補進這一張之後池中就有這位藝人一半以上的目錄。實掃 seed_cards.json 全 14,424 列。MB 轄下 16 個 release，是本批再版最密的一張：Escape Artist 從 2000 到 2007 用 EA 7.0／EA 7.1／EA07.7／EA07.8 至少壓過五次，2007 比利時 Conspiracy Records CORE051、2013 Robotic Empire ROBO-105、2013 Ipecac Recordings IPC-145，最早的一筆是 2000-07-19 XE 的 Hydra Head HH666-59。",
+  "risk": "**Apple 的年份比 MB 晚一年半**：us 兩筆 368094228《Celestial》（11 軌）與 665741313《Celestial (Remastered)》（12 軌）都記 2001-12-19，MB 的 first-release-date 是 2000-07-19。依第 77／95 條年份只當訊號、不當門檻，卡片年份取 MB 的 2000，**行文不得正面斷言發行年**（第 18／46 條）。Remastered 那筆多一軌，屬加曲版（第 140 條），配對取 11 軌的 368094228。**掛名 Isis 是嚴重撞名詞**：Apple us 同一次搜尋就回了 Celestial Journey Therapy 與 The King's Consort 的無關條目，池中另有以 Isis 為名的其他對象需本機確認（實掃 seed_cards.json 只有本團兩張，字串一致）。MB 的 artist-credit 作「Isis」，Apple 顯示為全大寫「ISIS」。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group e371d1e5-8737-3c79-a16e-0d4c487eedfd。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Celestial」、artist-credit「Isis」、first-release-date 2000-07-19、primary-type Album、secondary-types 空、轄下 16 個 release（US／XE／BE／XW，全 Official；最早一筆為 2000-07-19 XE Hydra Head HH666-59，2000 US Escape Artist EA 7.0 同年）。藝人 MBID 由 artist?query=Isis 取得、以 disambiguation 與 browse 兩層覆核確認是波士頓的 post-metal 團而非同名的其他實體。刻意不釘：bd21552f-34ac-37bf-b53f-10f7c8bd043d《In the Absence of Truth》（2006）與 750d7870-f7eb-3a50-8b3d-2e0e8eb4a981《Wavering Radiant》（2009）——本張之後的正規盤、本批不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ISIS",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Cult of Luna",
+  "album": "Vertikal",
+  "year": 2013,
+  "genres": [
+   "rock"
+  ],
+  "label": "Indie Recordings（XE INDIE094CD／INDIE094CDL）",
+  "why": "Cult of Luna 第六張專輯，也是樂團停了近五年之後回來的一張。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤順序：Cult of Luna(2001)、The Beyond(2002)、Salvation(2004)、Somewhere Along the Highway(2006)、Eternal Kingdom(2008)、Vertikal(2013)、Mariner(2016)、A Dawn to Fear(2019)、The Long Road North(2022)。實掃 seed_cards.json 全 14,424 列，池中只有《Somewhere Along the Highway》(2006) 一張。MB 轄下 5 個 release：2013-01-25 XE Indie Recordings 兩筆（INDIE094CD 與豪華版 INDIE094CDL）、同日一筆國別空白、2013 俄羅斯 Фоно FO955CD、2023-01-25 XW 由 Red Creek／Siviana 做十週年再發。",
+  "risk": "**Apple 上這張與它的續篇 EP 混在一起**：us 回五筆——1716088402《Vertikal》（9 軌，releaseDate 2012-01-01，佔位日期）、1666978731《Vertikal》（9 軌，2023-01-25，十週年再發）、1763812713 與 1667022460 兩筆《Vertikal II》（4 軌，是本張之後的續篇 EP、不是本張）、1667025511《Vertikal I & II》（14 軌，二合一，依第 129／140 條身分不釘、試聽不採）。配對一律鎖 9 軌且盤名完全等於 Vertikal 的那兩筆之一，**「Vertikal II」與「Vertikal I & II」都是子字串比對會吃下去的假陽性**（第 162 條的鏡像：短盤名容易被更長的別碟包住）。MB 的 first-release-date 是 2013-01-25，Apple 的 2012-01-01 是佔位值、不採。掛名 Cult of Luna 池中已有一張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 84aca336-d9ed-493d-a575-72ecb7686f88。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Vertikal」、artist-credit「Cult of Luna」、first-release-date 2013-01-25、primary-type Album、secondary-types 空、轄下 5 個 release（XE ×2、RU、XW 與一筆國別空白，全 Official）。藝人 MBID 由 artist?query=Cult+of+Luna 取得並以 browse 覆核。刻意不釘：d4182616-a773-383f-a74a-ebf2f4b81a62《Cult of Luna》（2001，自我同名首張，與掛名字串相同）、d734cef9-71e1-4f54-9032-8b15d7d48e75《Mariner》（2016，與 Julie Christmas 的合作盤）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Cathedral",
+  "album": "The Ethereal Mirror",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "Earache Records（GB MOSH77CD）；美國 Columbia／Earache CK 53633、日本 TOY'S FACTORY TFCK-88620",
+  "why": "Cathedral 第二張專輯，接在池中唯一那張《Forest of Equilibrium》(1991) 之後，也是他們與 Columbia 合作那一段的第一張——MB 轄下 9 個 release 裡，1993 年的美國盤同時掛 Columbia 與 Earache 的同一個編號 CK 53633，與同批 Godflesh《Selfless》是同一家英國廠牌同一時期的同型安排。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Forest of Equilibrium(1991)、The Ethereal Mirror(1993)、The Carnival Bizarre(1995)、Supernatural Birth Machine(1996)……實掃 seed_cards.json 全 14,424 列，池中只有 1991 那一張。1993-06-21 日本 TFCK-88620、1996 美國 mosh77／mosh77CD 重發、2009 英國 MOSH077CDD 與 XW 數位再發。",
+  "risk": "**Apple us 與 gb 都回 0 筆**（實測 search 正常回應、非 403），試聽預估落空，封面走 CAA release-group 端點。掛名「Cathedral」是常見普通名詞，字串比對必須連盤名一起鎖；池中另有以 Cathedral 為名的其他對象需本機確認（實掃 seed_cards.json 只有本團一張，字串一致）。MB 有兩筆 1996-09-10 美國 release（mosh77 與 mosh77CD）分別是黑膠與 CD，同一次再發。",
+  "mbNote": "釘 release-group c3698a64-7c70-30c0-ac9b-7077c3629c73。回問 release-group/<id>?inc=artist-credits+releases 確認：title「The Ethereal Mirror」、artist-credit「Cathedral」、first-release-date 1993-05-17、primary-type Album、secondary-types 空、轄下 9 個 release（GB／US／JP／XW，全 Official）。藝人 MBID 由 artist?query=Cathedral 取得、以 disambiguation 與 browse 覆核確認是 Coventry 的 doom 團。刻意不釘：4d2f1839-6b3e-3419-9b12-1e9bae4e6e51《The Carnival Bizarre》（1995）與 a0101df8-c1e7-4b7f-ab68-d58a8c58147c《The Last Spire》（2013，樂團最後一張）——皆為正規盤、本批不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Khanate",
+  "album": "Things Viral",
+  "year": 2003,
+  "genres": [
+   "rock"
+  ],
+  "label": "Southern Lord（US sunn28CD）；日本 Daymare Recordings DYMC-014／DYMC-015",
+  "why": "Khanate 第二張專輯，接在池中唯一那張《Khanate》(2001，頂點卡 heresy) 之後。依 MB 藝人 browse（分頁取完）濾出的正規盤只有四張：Khanate(2001)、Things Viral(2003)、Clean Hands Go Foul(2009)、To Be Cruel(2023)，補進這一張之後池中就有一半。實掃 seed_cards.json 全 14,424 列。MB 轄下只有 3 個 release：2003-10-06 美國 Southern Lord sunn28CD、2006-12-01 日本 Daymare 雙編號 DYMC-014／DYMC-015、2016-04-29 XW 由 Hydra Head 做數位再發。原盤廠牌 Southern Lord 的編號前綴 sunn 與池中已有的 Sunn O))) 三張同一個序列，是同一個場景的直接關聯。",
+  "risk": "Apple us 命中 collectionId 1681165767（Khanate／Things Viral／**4 軌**／2003-10-21／notExplicit）。四軌與這張碟的形制相符（MB primary-type 為 Album，本團的碟一向是少數長曲），**不要照第 124 條的軌數直覺判成 EP 而剔除**——第 141 條記過同型誤判。Apple 的 2003-10-21 與 MB 的 2003-10-06 差 15 天。日本 Daymare 那筆 MB status 空白，不作為背書使用。掛名 Khanate 池中已有一張、字串一致。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 085e0a6c-a855-39f5-826e-3ba402331009。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Things Viral」、artist-credit「Khanate」、first-release-date 2003-10-06、primary-type Album、secondary-types 空、轄下 3 個 release（US Southern Lord sunn28CD Official、JP Daymare status 空白、XW Hydra Head Official）。藝人 MBID 由 artist?query=Khanate 取得並以 browse 覆核，名下 5 個 release-group。刻意不釘：ee581c18-34c4-32b1-84fe-620a5236f393《Khanate》（2001，自我同名首張，池中已有、且與掛名字串相同）、492ca8fa-3df0-465c-9079-b7d47a5d6e57《Live Aktion Sampler》（2004，現場輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Uriah Heep",
+  "album": "Look at Yourself",
+  "year": 1971,
+  "genres": [
+   "rock"
+  ],
+  "label": "Bronze（GB ILPS 9169）；美國 Mercury Records SRM-1-614",
+  "why": "Uriah Heep 第三張專輯，直接排在池中唯一那張《Demons and Wizards》(1972) 前面。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤順序：…Very 'eavy …Very 'umble(1970)、Salisbury(1971-02)、Look at Yourself(1971-10)、Demons and Wizards(1972-05)、The Magician's Birthday(1972-11)……實掃 seed_cards.json 全 14,424 列，這位藝人在池中只有一張，是本批目錄最淺的幾位之一。MB 轄下 20 個 release 橫跨 GB／US／DE／JP／XE／XW：英國原盤 Bronze ILPS 9169（1971-10）、美國 Mercury SRM-1-614、1977 德國 Bronze 28 765 XOT、1986／1999／2010／2011 四次日本再版（Victor VDP-1148、Bronze VICP-60817、Sanctuary UICY-20110、Universal UIGY-9061）、1990 Castle Classics CLACD 107、1996 Essential! ESMCD 318、2003 Castle Music CMRCD671、2017 BMG／Sanctuary BMGCAT2CD57、2026-01-25 日本 Belle Antique BELLE 264329-30。",
+  "risk": "**Apple 只有加曲版**：gb 與 us 都命中 collectionId 1541876755《Look At Yourself (Expanded Version)》（**24 軌**，1971-09-20）——24 軌遠多於一張 1971 年單張 LP 所能容納的曲數，依第 140 條屬加曲版、可用但 notes 要寫明原盤軌數、行文不得把加曲當原盤曲目；**原盤軌數本批不填**，依第 141 條附錄二留給研究層開 release?release-group=99100318…&inc=recordings 查。Apple 的 1971-09-20 比 MB 的 1971-10 早，兩者都指向同一次發行。另一筆 1439521655《The Ultimate Collection》是精選、不可配。1971 JP Bronze P-10023B 那筆 MB status 空白。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 99100318-0642-3138-9023-6e5d681a2b7e。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Look at Yourself」、artist-credit「Uriah Heep」、first-release-date 1971-10、primary-type Album、secondary-types 空、轄下 20 個 release（GB／US／DE／JP／XE／XW，多為 Official，1971 JP 一筆 status 空白）。藝人 MBID 由 artist?query=Uriah+Heep 取得並以 browse 覆核，名下 27 個正規盤。刻意不釘：e0e1acd9-a021-437f-9614-3ce1823f1424《The Magician's Birthday》（1995 那一筆，與 1972 年的 35453797 同名、是後來的另一個 release-group，第 126／153 條的同名雙胞胎形狀）、fd384dbe-e118-4620-a28e-7098025f43a1《David Byron Hits》（2017，精選）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Look At Yourself",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

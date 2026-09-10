@@ -1,0 +1,507 @@
+[
+ {
+  "exceptionReason": "§5.5 electronic 白名單：Hyperdub 的第一號目錄（HDB001）與 Burial 的出道 12 吋，dubstep 進入唱片形態的起點文獻；不是「找不到專輯所以退而求其次」——這張比池中已有的兩張專輯更早，是那條線的第一格",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/ed042ef7-bf76-3d86-a77e-7e0b9577581f",
+   "https://www.discogs.com/master/102146"
+  ],
+  "selfTitled": false,
+  "queryAlias": "South London Boroughs EP；William Bevan",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Burial",
+  "album": "South London Boroughs",
+  "year": 2005,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Hyperdub（catno HDB001）",
+  "why": "Burial 的第一張發行，也是 Hyperdub 唱片的第一號目錄（HDB001），2005 年 5 月 16 日在英國問世（Discogs master 102146；MB release-group ed042ef7… 轄下兩筆 release：GB 與 XW，皆 Official）。實掃 seed_cards.json 全 14,424 列：Burial 池中 3 張——《Burial》(2006)、《Untrue》(2007)、《Tunes 2011-2019》(2019)，起點的那張 12 吋不在其中，而 2019 年那張整編只收 2011 年以後的曲目、涵蓋不到 2005。這張補的是他目錄的第一格。",
+  "risk": "§5.5 白名單卡：MB primary-type 是 EP，不是漏檢。曲目不與池中任何一張重疊：《Tunes 2011-2019》(池中已有) 收的是 2011 年以後的 EP 曲目，本張四軌不在其中。Apple gb 命中 collectionId 1056890375「South London Boroughs - EP」（Burial，releaseDate 2005-05-16，notExplicit），固定試聽預估 ready；Apple 條目帶「- EP」尾綴，正規化剝除後與卡片盤名相等。廠牌 Hyperdub 與同批 Rhythm & Sound 卡的 Burial Mix 是兩家不同的廠牌，字串相近但無關，下游查詢不要混用。",
+  "mbNote": "釘 release-group ed042ef7-bf76-3d86-a77e-7e0b9577581f。回問確認：title「South London Boroughs」、artist-credit「Burial」、first-release-date 2005-05-16、primary-type EP、secondary-types 空、轄下 2 個 release（GB／Official HDB001、XW／Official HDB001）。刻意不釘：2c28f0ee-bab8-30e1-94bb-399e1916d039《Burial》(2006，池中已有)、a09aabc8-8111-4c56-84d4-5c7ab4a3955d《Tunes 2011 to 2019》(2019 Compilation，池中以《Tunes 2011-2019》為名已有)、e93d0235-d2d0-3920-bf63-113eca572daa《Distant Lights》(2006 EP)、2bb9f69b-8090-3bd9-bb09-5c44268e3f7d《Ghost Hardware》(2007 EP)。藝人 MBID 9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6，名下 48 個 release-group（分頁列全，非 25 筆上限）。",
+  "releaseType": "EP",
+  "genreException": "electronic"
+ },
+ {
+  "exceptionReason": "§5.5 electronic 白名單：Hyperdub 五十號紀念目錄、Burial 停止專輯形態發行後的主要作品單位；43 分鐘的單一連續作品，MB 依曲數標 EP 而非依長度，這是建檔慣例與實況的落差",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/f6e7835c-c3f6-4379-8988-517aa48329ee",
+   "https://www.discogs.com/master/2451535"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Antidawn EP；ANTIDAWN；William Bevan",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Burial",
+  "album": "Antidawn",
+  "year": 2022,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Hyperdub（catno HDBCD050／HDBLP050／HDBCD050D）",
+  "why": "Burial 在 2019 年整編《Tunes 2011 to 2019》之後的第一份新作，2022 年 1 月 6 日由 Hyperdub 以數位發行（HDBCD050D）、同月 28 日出實體（HDBCD050／HDBLP050），MB release-group f6e7835c… 轄下五筆 release 遍及 GB、JP、AF、XW，皆 Official（Discogs master 2451535 標 LP／EP）。實掃 seed_cards.json 全 14,424 列：Burial 池中 3 張，最新一張是 2019 年的整編；2020 年以後的新作在池中零張。本張補的是他 2020 年代的代表。",
+  "risk": "§5.5 白名單卡：MB primary-type 是 EP，不是漏檢——它有 43 分鐘、Discogs 的格式欄同時標 LP 與 EP，形態上介於兩者之間，卡池依 MB 實體照填 EP。MB release-group 標題作「Antidawn EP」帶尾綴，卡片取《Antidawn》（Hyperdub 官方頁與黑膠封面的寫法），尾綴寫法進 queryAlias。Apple jp 命中 collectionId 1598321360「ANTIDAWN EP」（掛名記成全大寫「BURIAL」，releaseDate 2022-01-06，notExplicit）——gb 店面在同一組字串下未回本碟、jp 才回，這正是第 158 條說的「店面決定查不查得到」；固定試聽預估 ready，但要記下命中的是 jp 而非 gb。",
+  "mbNote": "釘 release-group f6e7835c-c3f6-4379-8988-517aa48329ee。回問確認：title「Antidawn EP」、artist-credit「Burial」、first-release-date 2022-01-06、primary-type EP、secondary-types 空、轄下 5 個 release（XW／Official HDBCD050D、GB／Official HDBLP050 與 HDBCD050、JP／Official、AF／Official）。刻意不釘：153d377b-75fa-4417-a5d7-d5ee1bf97481《Streetlands》(2022-10 EP)、a633ef07-7614-4966-81a8-e3a52eedb85f《Shock Power of Love E.P.》(2021 EP)、c93200c0-b1fa-4fd8-beff-036fad9509fa《Rival Dealer》(2013 EP，曲目已收在池中的《Tunes 2011-2019》)、1c288979-ce2f-4e4b-90e4-845908cf7ffc《Kindred》(2012 EP，同上)。藝人 MBID 9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6，名下 48 個 release-group（分頁列全）。",
+  "releaseType": "EP",
+  "genreException": "electronic"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Matt Black；Jonathan More；Hex",
+  "reissuedBy": "Arista（XE，1995）",
+  "g": "b",
+  "artist": "Coldcut",
+  "album": "Some Like It Cold",
+  "year": 1990,
+  "genres": [
+   "electronic",
+   "hiphop"
+  ],
+  "label": "Ahead of Our Time（catno CCUT CD2）／Big Life・Intercord（DE，INT 845.143）",
+  "why": "Coldcut 在 1989 年《What's That Noise?》之後的第二張專輯，1990 年由兩人自營的 Ahead of Our Time 發行（CCUT CD2），德國由 Big Life／Intercord 以 INT 845.143 代理，1995 年 Arista 於歐陸再版 74321 25140 2（MB release-group 62136da9… 轄下四筆 release 皆 Official）。實掃 seed_cards.json 全 14,424 列：Coldcut 池中 3 張——《What's That Noise?》(1989)、《Journeys by DJ: 70 Minutes of Madness》(1995)、《Let Us Play》(1997)。1990 至 1996 這段在池中是空的，本張正好是那一段的第一張。",
+  "risk": "primary-type Album、secondary-types 空，正規專輯、不填例外欄位。年份分歧：MB 的 first-release-date 記 1990（Ahead of Our Time 原盤），Apple gb collectionId 393877896「Some Like It Cold」releaseDate 記 1995-04-24（Arista 再版）——依既有年份政策取原盤年 1990，Apple 日期只作訊號（裁定第 77 條）。固定試聽預估 ready。撞卡：池中《Let Us Play》與 MB 的《Let Us Play!》(帶驚嘆號) 是同一張碟的兩種寫法，本張與它無關，但下游若跑 Coldcut 目錄比對要知道這一點。",
+  "mbNote": "釘 release-group 62136da9-5474-3750-9c88-7c97e0ff9478。回問確認：title「Some Like It Cold」、artist-credit「Coldcut」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 4 個 release（GB／Official Ahead of Our Time CCUT CD2、DE／Official Big Life・Intercord INT 845.143、XE／Official Arista 74321 25140 2、未標國別一筆 Official）。刻意不釘：b576dcd9-b1db-3104-a730-f732a86ed60d《What's That Noise?》(1989，池中已有)、aa726e32-762b-3161-90e8-ef86ac057d4c《Let Us Play!》(1997，池中以《Let Us Play》為名已有)、24bd5206-9038-35ac-b08f-adae112a0d19《Philosophy》(1993)、b6047c58-7943-3b40-a969-ff3ca1886e3d《Let Us Replay!》(1998 Album/Remix)。藝人 MBID cedd2cc6-c77f-4104-b333-0547b29e0b71，名下 322 個 release-group（用 release-group?artist=…&limit=100&offset= 分頁列全；其中兩百餘筆是 Solid Steel 廣播存檔，非發行品）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Matt Black；Jonathan More",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Coldcut",
+  "album": "Sound Mirrors",
+  "year": 2006,
+  "genres": [
+   "electronic",
+   "hiphop"
+  ],
+  "label": "Ninja Tune（catno ZENCD 115／ZENCD 115X）／Beat Records（JP，BRC-142）",
+  "why": "Coldcut 在 1997 年《Let Us Play》之後隔了八年多的專輯，2006 年 1 月 30 日由自家 Ninja Tune 發行（ZENCD 115，另有特別版 ZENCD 115X），日本 Beat Records 同年 1 月 25 日以 BRC-142 發行（MB release-group 2ae555c8… 轄下八筆 release，唯一一筆 2005 年份的是 GB／Promotion 宣傳盤）。實掃 seed_cards.json 全 14,424 列：Coldcut 池中 3 張，最新一張是 1997 年的《Let Us Play》；2000 年以後的目錄在池中零張。本張補的是這條線的後半。",
+  "risk": "primary-type Album、secondary-types 空，正規專輯、不填例外欄位。年份要點：MB 的 release-group first-release-date 記 2005，但轄下唯一的 2005 筆是 GB／Promotion 宣傳盤，最早的 Official 是 2006-01-30（GB Ninja Tune ZENCD 115）與 2006-01-25（JP Beat Records）。依裁定第 95 條（rgMbid 是身分鍵不是年份來源）與第 1 條（年份記作品問世年，宣傳盤不是問世），卡片年份填 2006。Apple gb 命中 collectionId 416319067「Sound Mirrors」（releaseDate 2006-02-20，notExplicit），另有 416337245「Sound Mirrors Remixes」為對照組、不採；固定試聽預估 ready。",
+  "mbNote": "釘 release-group 2ae555c8-1571-35ad-b31a-1dadb7de8273。回問確認：title「Sound Mirrors」、artist-credit「Coldcut」、first-release-date 2005（該筆為 GB／Promotion）、primary-type Album、secondary-types 空、轄下 8 個 release（GB／Official ZENCD 115 三筆、XW／Official 兩筆、CA／Official、JP status 未標 BRC-142、GB／Promotion 一筆）。刻意不釘：6c2f5f5e-8b46-49bd-9f44-c0c8a0dce3c1《Sound Mirrors (Exclusive Instrumentals + Edits)》(2006)、55e93b27-0908-32a4-b898-634e1033b22f《Sound Mirrors (Videos + Remixes)》(2006 Album/Remix)、6ffe1f17-871a-433b-ae6a-9a2f2e8c16a3《Outside the Echo Chamber》(2017 Album)。藝人 MBID cedd2cc6-c77f-4104-b333-0547b29e0b71，名下 322 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Heathen Earth: The Live Sound of TG；Heathen Earth - The Live Sound of Throbbing Gristle；TG",
+  "reissuedBy": "Mute／The Grey Area（1983、1991、2018）",
+  "g": "b",
+  "artist": "Throbbing Gristle",
+  "album": "Heathen Earth",
+  "year": 1980,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Industrial Records（catno IR0009）／Mute・The Grey Area（再版 MIR004、TGCD5）",
+  "why": "Throbbing Gristle 1980 年 6 月由自營的 Industrial Records 發行的第四張錄音室作品（IR0009），錄音是 1980 年 2 月 16 日在錄音室對邀請來的少數聽眾一次錄成（MB release-group 9ab97855… 轄下六筆 release：1980-06 GB 原盤、1983-11 Mute MIR004、1991 US Mute 9 61096-2、2011 Industrial Records IRLCD004 與 IRLDDL004、2018 Mute TGCD5，皆 Official）。實掃 seed_cards.json 全 14,424 列：Throbbing Gristle 池中 3 張——《The Second Annual Report》(1977)、《D.o.A: The Third and Final Report》(1978)、《20 Jazz Funk Greats》(1979)。四張 Industrial Records 時期的正規盤只缺這一張，補進來這條線才完整。",
+  "risk": "primary-type Album、secondary-types 空（MB 沒有把它標成 Live，儘管錄音是在聽眾面前一次完成），依正規專輯處理、不填例外欄位。盤名長短兩式：MB release-group 作「Heathen Earth: The Live Sound of TG」、Apple gb collectionId 1213182690 作「Heathen Earth - The Live Sound of Throbbing Gristle (Remastered)」、1980 原盤封面作「Heathen Earth」——卡片取原盤短名（裁定第 50／91 條：RG 標題與卡片盤名不必相等），兩種長名進 queryAlias 供下游比對。Apple 命中的是 Remastered 版，releaseDate 記 1980-01-01，固定試聽預估 ready 但要在備註寫明版本。撞卡：池中的《D.o.A: The Third and Final Report》用冒號、MB 用句號（D.o.A. The Third and Final Report），同一張碟的兩種寫法，本張與之無關但下游做目錄比對時要知道。",
+  "mbNote": "釘 release-group 9ab97855-ccda-3ca4-b216-416ca5542bb9。回問確認：title「Heathen Earth: The Live Sound of TG」、artist-credit「Throbbing Gristle」、first-release-date 1980-06、primary-type Album、secondary-types 空、轄下 6 個 release（GB／Official 三筆含 1980-06 IR0009 原盤與 1983-11 Mute MIR004、US／Official 9 61096-2、XW／Official、XE／Official TGCD5）。刻意不釘：e819dec6-186d-3057-87a2-a3f3923b8fda《Mission of Dead Souls》(1981 Album/Live)、02e59cc2-8100-4137-b229-92c812ba84ff《Funeral in Berlin》(1981 Album/Live)、52e9f73c-b344-40c0-99d8-849d8fd6ee0a《Music From the Death Factory》(1976 Album/Live)、38b430f5-ca4c-3985-921d-bde70224a07f《Throbbing Gristle's Greatest Hits》(1981 Compilation)。藝人 MBID e135d690-9c53-4333-8f11-98aec8c9f434，名下 68 個 release-group（分頁列全，非 25 筆上限）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "TG",
+  "reissuedBy": "The Grey Area／Mute（1993 起，TGCD8）",
+  "g": "b",
+  "artist": "Throbbing Gristle",
+  "album": "Journey Through a Body",
+  "year": 1982,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Walter Ulbricht Schallfolien（catno WULP 001）／The Grey Area・Mute（再版 TGCD8）",
+  "why": "Throbbing Gristle 解散後才問世的最後一組錄音室作業，1981 年 3 月在羅馬 RAI 電台的錄音室錄成，1982 年由德國的 Walter Ulbricht Schallfolien 發行（WULP 001），1993 年起由 The Grey Area／Mute 以 TGCD8 持續再版（MB release-group 0b1b6487… 轄下四筆 release 皆 Official）。實掃 seed_cards.json 全 14,424 列：Throbbing Gristle 池中 3 張，全在 1977–1979 年之間；1980 年以後的目錄在池中零張。本張與同批的《Heathen Earth》《Part Two: The Endless Not》一起把 1980 年之後那一段補上。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。錄音年（1981-03，羅馬 RAI）與發行年（1982，德國 WULP 001）不同，依既有年份政策取問世年 1982，錄音年只寫進註記。首發廠牌是德國小廠而非 Industrial Records，長期流通版是 Mute／The Grey Area 的 TGCD8——舉證要指到 Discogs 的 version 頁而不是只寫廠牌加編號（裁定第 65 條）。Apple gb 命中 collectionId 1410075359「Journey Through a Body」（Throbbing Gristle，releaseDate 1982-01-01，notExplicit），固定試聽預估 ready。",
+  "mbNote": "釘 release-group 0b1b6487-a116-3970-9e90-6c71844e5e03。回問確認：title「Journey Through a Body」、artist-credit「Throbbing Gristle」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 4 個 release（DE／Official Walter Ulbricht Schallfolien WULP 001、GB／Official The Grey Area TGCD8、XE／Official 兩筆 TGCD8）。刻意不釘：a10ac19d-9b87-3a8f-8f81-66534431d19d《Thee Psychick Sacrifice》(1982 Album/Live)、67898152-261e-372c-8365-25e3d8625035《Rafters》(1982 Album/Live)、0b1b6487 以外的 1982 年條目 221e35f7-e12b-4b37-86b2-62c067fdf1b4《New T.G. 1》(primary-type null)。藝人 MBID e135d690-9c53-4333-8f11-98aec8c9f434，名下 68 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Part Two - The Endless Not；The Endless Not；TG",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Throbbing Gristle",
+  "album": "Part Two: The Endless Not",
+  "year": 2007,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Mute（catno TGCD16／TGLP16）",
+  "why": "Throbbing Gristle 四人在 1981 年解散、2004 年重組後的唯一一張新錄音室專輯，2007 年 4 月 2 日由 Mute 發行（TGCD16、黑膠 TGLP16；MB release-group cde7cc74… 轄下兩筆 release）。實掃 seed_cards.json 全 14,424 列：Throbbing Gristle 池中 3 張，全部出自 1977–1979 年；重組期在池中零張。本張與同批的《Heathen Earth》《Journey Through a Body》構成這個團在池中的完整弧線。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。盤名帶冒號的兩段式，Apple 用連字號串接成「Part Two - The Endless Not」（us 店面 collectionId 1216304274，releaseDate 2007-04-02，notExplicit）——冒號與連字號的差異在標題比對會失準，兩種寫法都要進 queryAlias。命中的是 us 而非 gb，記下店面（裁定第 158 條）。固定試聽預估 ready。同名風險低，但「Part Two」是常見字串，去重必須連掛名一起比。",
+  "mbNote": "釘 release-group cde7cc74-d495-3ff5-a916-91c329a7c00b。回問確認：title「Part Two: The Endless Not」、artist-credit「Throbbing Gristle」、first-release-date 2007-04-02、primary-type Album、secondary-types 空、轄下 2 個 release（GB／Official TGCD16、XE 一筆 status 未標 TGLP16／0094638859413）。刻意不釘：c9041e82-d2f5-31d3-ad9e-4aae8267fb9b《TG Now》(2004 Album，重組後的四曲小輯)、cf2dffa8-8809-3182-929f-d94c393f83e7《Desertshore Installation》(2007 Album/Live)、605f5a87-062f-3da6-973a-9f8a837815c0《Live December 2004: A Souvenir of Camber Sands》(Album/Live)。藝人 MBID e135d690-9c53-4333-8f11-98aec8c9f434，名下 68 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Noisembryo: Psycho-Analytic Study of Coital Noise Posture；秋田昌美；Masami Akita",
+  "reissuedBy": "Hospital Productions（US，2018-03-19，HOS 594 LP）",
+  "g": "b",
+  "artist": "Merzbow",
+  "album": "Noisembryo",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "The Releasing Eskimo（catno IGLOO 001）／Hospital Productions（2018 再版 HOS 594 LP）",
+  "why": "秋田昌美以 Merzbow 名義在 1994 年的作品，由瑞典的 The Releasing Eskimo 發行（IGLOO 001），2018 年紐約的 Hospital Productions 以 HOS 594 LP 授權再版（MB release-group 97b6c66a… 轄下三筆 release 皆 Official）。它與同年的《Venereology》是他 1990 年代中期最常被引用的兩張。實掃 seed_cards.json 全 14,424 列：Merzbow 池中 3 張——《Venereology》(1994)、《Pulse Demon》(1996)、《1930》(1998)。1994 年的另一張與 1990 年代前期的作品在池中沒有代表，本張補在《Venereology》旁邊。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。盤名長短兩式：MB release-group 標題作「Noisembryo: Psycho‐Analytic Study of Coital Noise Posture」（副標的連字號是 U+2010，會踩 chk-prop 的非 ASCII 連字號反模式），卡片取封面短名《Noisembryo》（裁定第 91 條：RG 標題與卡片盤名不必相等）。Apple gb 命中的是 collectionId 1601719186「Noisembryo / Noise Matrix」——那是 2021 年把兩張合成一份的條目、不是 1994 原盤，標題不相等，固定試聽只能標為需人工判定或 unavailable，上架前務必逐軌核對。藝人名的三種寫法（Merzbow／秋田昌美／Masami Akita）都要進查詢別名（裁定第 49 條）。",
+  "mbNote": "釘 release-group 97b6c66a-af00-3abd-bd9e-9909c94fc523。回問確認：title「Noisembryo: Psycho‐Analytic Study of Coital Noise Posture」（U+2010）、artist-credit「Merzbow」、first-release-date 1994、primary-type Album、secondary-types 空、轄下 3 個 release（SE／Official The Releasing Eskimo IGLOO 001、US／Official Hospital Productions HOS 594 LP、XW／Official Editions Merzbow M1994F）。刻意不釘：05a86ab0-b891-44d8-a96e-81560528811f《Noisembryo / Noise Matrix》(2021 Album/Compilation，Apple 命中的就是這一筆的對應版本)、4fbc78c2-e03e-3cce-9d3f-8bdd89e19369《Hole》(1994 Album)。藝人 MBID 2841d983-f8c3-432a-af02-7407a84580a8，名下 720 筆以上 release-group，用 release-group?artist=…&limit=100&offset= 分頁到回傳數少於 limit 才算列全（裁定第 116 條，這張是該條最典型的案例）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "秋田昌美；Masami Akita",
+  "reissuedBy": "Urashima（IT，2020／2022，Uma 144）",
+  "g": "b",
+  "artist": "Merzbow",
+  "album": "Rainbow Electronics",
+  "year": 1990,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Alchemy Records（catno ARCD-017）／Urashima（再版 Uma 144）",
+  "why": "Merzbow 1990 年在大阪 Alchemy Records 發行的作品（ARCD-017），2020 與 2022 年由義大利的 Urashima 兩度授權再版（Uma 144；MB release-group 174ba339… 轄下五筆 release，JP 原盤與 IT、XW 再版皆 Official）。實掃 seed_cards.json 全 14,424 列：Merzbow 池中 3 張，最早的是 1994 年的《Venereology》——他 1980 年代到 1990 年代初的大量作品在池中完全沒有代表。本張是池中這位藝人年代最早的一筆，補的是那個空段。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。同名續作：99a0f86b-33c2-33e0-9220-2d4fa448700b《Rainbow Electronics 2》(1996-06-19) 只多一個數字，是最像的假陽性，去重要保留尾數。Apple gb 命中 collectionId 321047194「Rainbow Electronics」（Merzbow，releaseDate 1990-04-01，notExplicit），固定試聽預估 ready；上架時要確認取到的不是續作那筆。藝人名三種寫法（Merzbow／秋田昌美／Masami Akita）都要進查詢別名。再版廠牌 Urashima 的授權狀態：MB 兩筆 IT release 皆標 Official，本卡不以再版作為地位背書、只作流通說明（裁定第 43／66 條）。",
+  "mbNote": "釘 release-group 174ba339-60e9-3c52-bcec-48a7bfd04597。回問確認：title「Rainbow Electronics」、artist-credit「Merzbow」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 5 個 release（JP／Official Alchemy ARCD-017、IT／Official Urashima Uma 144 兩筆、XW／Official 兩筆含 Editions Merzbow M1990G）。刻意不釘：99a0f86b-33c2-33e0-9220-2d4fa448700b《Rainbow Electronics 2》(1996 Album)、3ce00a1f-cb03-306e-bf03-371339d95a51《Music for Bondage Performance》(1991，artist-credit 是「Merzbow / Right Brain Audile」的合併掛名，本批不取)、0b594e18-2ad0-3a1d-872f-6f5fe9683974《Music for Bondage Performance 2》(1996)。藝人 MBID 2841d983-f8c3-432a-af02-7407a84580a8，名下 720 筆以上 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "秋田昌美；Masami Akita",
+  "reissuedBy": "menstrualrecordings（IT，2014／2022）",
+  "g": "b",
+  "artist": "Merzbow",
+  "album": "Antimonument",
+  "year": 1986,
+  "genres": [
+   "electronic"
+  ],
+  "label": "ZSF Produkt（catno SH 61-01）／menstrualrecordings（再版 LH 57、LH141）",
+  "why": "Merzbow 1986 年 6 月在自營的 ZSF Produkt 發行的作品（SH 61-01），2014 與 2022 年由德國的 menstrualrecordings 兩度授權再版（LH 57、LH141；MB release-group 68f92245… 轄下五筆 release，其中 1991 年瑞典 Art Directe 的 AD I 標 Bootleg）。實掃 seed_cards.json 全 14,424 列：Merzbow 池中 3 張，年代最早是 1994 年；1980 年代自營時期在池中零張。本張與同批的《Rainbow Electronics》一起把 1986→1990→1994 這條年代線接起來。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。授權狀態要分清：轄下的 SE 那筆（Art Directe AD I，1991）MB 標 Bootleg，不採為背書；作為背書的是 2014／2022 兩次 menstrualrecordings 的 Official 再版（裁定第 43／57／65 條，舉證要指到具體 version 而非只寫廠牌名）。年份分歧：MB first-release-date 1986-06、Apple gb collectionId 268251397「Antimonument」releaseDate 記 1986-02-18，同年、卡片取 1986。固定試聽預估 ready。同名別碟：4e93ab6c-8e84-4c1d-b708-a3966cacff83《Antimonument Tapes》(2019) 是子字串比對的假陽性。",
+  "mbNote": "釘 release-group 68f92245-b5c5-3ebf-a5fb-334cbefa9bd1。回問確認：title「Antimonument」、artist-credit「Merzbow」、first-release-date 1986-06、primary-type Album、secondary-types 空、轄下 5 個 release（JP／Official ZSF Produkt SH 61-01、IT／Official menstrualrecordings LH 57 與 LH141、XW／Official Editions Merzbow M1986B、SE／Bootleg Art Directe AD I）。刻意不釘：4e93ab6c-8e84-4c1d-b708-a3966cacff83《Antimonument Tapes》(2019 Album)、f65cb7b7-8786-32f3-b93d-419ae87cf0b1《Ecobondage》(1987 Album)、77162aa5-8deb-47a0-8656-a85a024f4476《Ecobondage (another mix)》(2019)。藝人 MBID 2841d983-f8c3-432a-af02-7407a84580a8，名下 720 筆以上 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "§5.5 electronic 白名單：ZTT 開張的第一批目錄（ZTIS 100），採樣拼貼進入英國流行製作的起點文獻，〈Beat Box〉與〈Moments in Love〉首見於此；不是找不到專輯的替代品——池中已有的兩張專輯都在它之後",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/92e2bc5c-0def-30a4-829d-f9cd26bb4131",
+   "https://www.discogs.com/master/331028"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Art of Noise；Into Battle With the Art of Noise；Into Battle",
+  "reissuedBy": "Repertoire（DE，2003）／ZTT・Salvo（GB，2011）",
+  "g": "b",
+  "artist": "The Art of Noise",
+  "album": "Into Battle with the Art of Noise",
+  "year": 1983,
+  "genres": [
+   "electronic",
+   "pop"
+  ],
+  "label": "ZTT（catno ZTIS 100）／Island・ZTT（US，DMD 692）",
+  "why": "ZTT 唱片開張時發行的第一批作品之一，1983 年 9 月 26 日在英國以 10 吋問世（ZTIS 100），同年 12 月美國由 Island／ZTT 以 DMD 692 發行，2003 年 Repertoire、2011 年 ZTT／Salvo 兩度授權再版（Discogs master 331028；MB release-group 92e2bc5c… 轄下六筆 release）。〈Beat Box〉與〈Moments in Love〉都首見於此。實掃 seed_cards.json 全 14,424 列：The Art of Noise 池中 2 張，都是專輯——《(Who's Afraid of) The Art of Noise?》(1984)、《In Visible Silence》(1986)。1984 年那張之前的起點在池中沒有代表，本張補的就是第一格。",
+  "risk": "§5.5 白名單卡：MB primary-type 是 EP，不是漏檢。掛名寫法：MB 藝人實體作「Art of Noise」（無定冠詞），池中既有兩張卡作「The Art of Noise」；為避免同一個對象在池中分裂成兩個藝人鍵，卡片沿用池中既有寫法「The Art of Noise」，MB 實體名進 queryAlias（裁定第 29／52 條）。盤名長，Apple 以「Art of Noise Into Battle」與完整長名搜九個店面皆零命中，固定試聽預估 unavailable，封面走 CAA。US 那筆 release 標 Promotion，不採為流通證據。",
+  "mbNote": "釘 release-group 92e2bc5c-0def-30a4-829d-f9cd26bb4131。回問確認：title「Into Battle With the Art of Noise」、artist-credit「Art of Noise」、first-release-date 1983-09-26、primary-type EP、secondary-types 空、轄下 6 個 release（GB／Official ZTT ZTIS 100 與 Salvo SALVOCD049、DE／Official Repertoire REP 5001 兩筆、FR／Official、US／Promotion Island DMD 692）。刻意不釘：a989c2cb-1331-3006-8e01-23e1d7530b75《(Who's Afraid of) The Art of Noise?》(1984，池中已有)、88908f6d-002d-3dcc-aa55-1aa8a90fecad《Daft》(1984 Compilation，內容與本張重疊)、bd874d71-8e2a-3084-99b0-ba0af2dbacd3《Beat Box》(1983-12 Single)、6512529c-b8a1-48f9-93e7-faaa0101c468《Extended Remixes》(1984 EP)。藝人 MBID be899560-1570-402e-9f95-3182898a8b70，名下 65 個 release-group（分頁列全，非 25 筆上限）。",
+  "releaseType": "EP",
+  "genreException": "electronic"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Art of Noise；In No Sense Nonsense",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "The Art of Noise",
+  "album": "In No Sense? Nonsense!",
+  "year": 1987,
+  "genres": [
+   "electronic",
+   "pop"
+  ],
+  "label": "China Records（catno VK 41570／832 811-4）／Polydor（US，835 807-2）",
+  "why": "The Art of Noise 離開 ZTT、轉往 China Records 之後的第二張專輯，1987 年 9 月發行，美國由 China／Polydor 以 835 807-2 代理（MB release-group 1f6203b0… 轄下十二筆 release 遍及 GB、US、DE、JP，皆 Official）。實掃 seed_cards.json 全 14,424 列：The Art of Noise 池中 2 張——《(Who's Afraid of) The Art of Noise?》(1984)、《In Visible Silence》(1986)。1986 年之後的目錄在池中零張，本張是《In Visible Silence》的下一張，直接補在旁邊。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。掛名寫法同前一張，卡片沿用池中的「The Art of Noise」。盤名含問號與驚嘆號，多數字串正規化會把兩者剝掉、變成「In No Sense Nonsense」，去重與查詢要兩種都試（裁定第 50 條）。Apple gb 命中 collectionId 992507403「In No Sense? Nonsense!」（Art of Noise，releaseDate 1987-01-01，notExplicit）——Apple 的年份記 1987-01-01 而 MB 記 1987-09，同年、卡片取 1987。固定試聽預估 ready。",
+  "mbNote": "釘 release-group 1f6203b0-8038-43eb-8414-71541ff1f2df。回問確認：title「In No Sense? Nonsense!」、artist-credit「Art of Noise」、first-release-date 1987-09、primary-type Album、secondary-types 空、轄下 12 個 release（GB／Official 兩筆、US／Official 四筆含 China VK 41570 與 Polydor 835 807-2、DE／Official、JP／Official、XW／Official、XE／Official 兩筆、未標國別一筆）。刻意不釘：32602c3f-9c01-3f47-b069-38a6ba02f226《In Visible Silence》(1986，池中已有)、73a581df-6603-4508-9885-901af1b12463《In Visible Silence / Re-Works of Art of Noise》(1986 Compilation，標題含前者)、91befc1d-eade-3142-bc5c-f2039fe08f83《Below the Waste》(1989 Album)。藝人 MBID be899560-1570-402e-9f95-3182898a8b70，名下 65 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Art of Noise；Seduction of Claude Debussy",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "The Art of Noise",
+  "album": "The Seduction of Claude Debussy",
+  "year": 1999,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "ZTT（catno ztt130cd）／Universal Records（US，UD-53235）",
+  "why": "Anne Dudley 與 Trevor Horn 在 1999 年重組 The Art of Noise 後回到 ZTT 發行的專輯，1999 年 6 月 28 日歐洲版 ztt130cd、同年 9 月美國 Universal 版 UD-53235（MB release-group 43faea92… 轄下六筆 release）。整張以德布西的生平與作品為結構，是這個團最後一張錄音室專輯。實掃 seed_cards.json 全 14,424 列：The Art of Noise 池中 2 張，都在 1980 年代中期；1990 年代以後在池中零張。本張與同批的《Into Battle》《In No Sense? Nonsense!》一起把這個團的起點、中段與終點都補上。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。掛名寫法同前兩張，卡片沿用池中的「The Art of Noise」。同名對照：6071529d-7926-488d-baec-b114ba1637da《The Seduction of Art of Noise》(1999 Single) 與 99cb94c7-d3f7-4672-bdbc-905b5ca5e083《The Seduction of Claude Debussy / Reduction》(2000 Compilation) 兩筆的標題都包含或近似本張，是最像的假陽性。Apple gb 命中 collectionId 1366139340「The Seduction of Claude Debussy」（Art of Noise，releaseDate 1999-06-28，notExplicit），固定試聽預估 ready。曲風給 electronic＋classical：整張的素材與結構明確扣在德布西的作品上，只給 electronic 會漏掉一半。",
+  "mbNote": "釘 release-group 43faea92-85c7-3452-abbc-4ee66aba7457。回問確認：title「The Seduction of Claude Debussy」、artist-credit「Art of Noise」、first-release-date 1999-06-28、primary-type Album、secondary-types 空、轄下 6 個 release（XE／Official ztt130cd、US／Official UD-53235 三筆、GB／Official、未標國別一筆）。刻意不釘：6071529d-7926-488d-baec-b114ba1637da《The Seduction of Art of Noise》(1999 Single)、99cb94c7-d3f7-4672-bdbc-905b5ca5e083《The Seduction of Claude Debussy / Reduction》(2000 Compilation)、4a47d895-29bc-3876-aa18-134b3884ed64《Reduction》(2000 Album/Remix)、6af3adf3-98de-4903-8fef-d580fb62e489《The Production of Claude Debussy》(2022 Album/Remix)。藝人 MBID be899560-1570-402e-9f95-3182898a8b70，名下 65 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fabric 26: Global Communication；fabric 26；FABRIC51；Reload；Jedi Knights；Tom Middleton；Mark Pritchard",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Global Communication",
+  "album": "Fabric 26",
+  "year": 2006,
+  "genres": [
+   "electronic"
+  ],
+  "label": "fabric（catno FABRIC51）",
+  "why": "倫敦 fabric 俱樂部官方混音系列的第 26 輯，由 Tom Middleton 與 Mark Pritchard 以 Global Communication 名義混音，2006 年 1 月 16 日發行（MB release-group 1e80c6e2… 轄下唯一 release 為 GB／Official，catno FABRIC51）。這是兩人以此掛名復出的第一份作品，距 1994 年的《76:14》十二年。實掃 seed_cards.json 全 14,424 列：Global Communication 池中 2 張——《Pentamerous Metamorphosis》(1993)、《76:14》(1994)，1995 年以後在池中零張。本張補的是那之後的一格；同批另收兩人以 Reload 名義的《A Collection of Short Stories》(1993)，兩張一起把這組人在池中的兩個掛名都撐起來。",
+  "risk": "primary-type Album、secondary-types [Compilation, DJ-mix]，依 §5.6 明文照一般 Album 寫法、不填例外欄位。盤名寫法分歧：MB release-group 標題作「Fabric 26: Global Communication」、廠牌封面作「fabric 26」小寫、catno 卻是 FABRIC51（系列編號與目錄號不同步）；卡片取《Fabric 26》，其餘寫法進 queryAlias。與同批 a 組的 Akufen《Fabric 17》是同一系列的兩張不同碟，數字是唯一的分辨點，去重要保留數字。Apple 以「Global Communication Fabric 26」搜九個店面皆零命中（fabric 系列的串流授權普遍缺席），固定試聽預估 unavailable，封面走 CAA。掛名分裂：同一對人另有 Reload（MB 05d28260…）與 Jedi Knights（0517ab8f…）兩個 MB 實體，均已單獨掃過線上池、撞卡 0。",
+  "mbNote": "釘 release-group 1e80c6e2-d35c-302d-9191-a8472545e7d2。回問確認：title「Fabric 26: Global Communication」、artist-credit「Global Communication」、first-release-date 2006-01-16、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 1 個 release（GB／Official，fabric FABRIC51）。刻意不釘：a0b9d00d-f63b-3253-a0eb-69af02143a2a《Blood Music: Pentamerous Metamorphosis》(1993，池中以《Pentamerous Metamorphosis》為名已有)、95988759-d503-3705-a430-b256bfa93e35《76:14》(1994，池中已有)、8ae6714b-68e1-3953-ba1f-1d36ae3a240a《Remotion: The Global Communication Remix Album》(1995 Album/Remix)、724a8487-3411-4e25-8417-85a947f768af《Back in the Box》(2011 DJ-mix)。藝人 MBID 8179e236-86df-459f-bd51-0107138d0a6a，名下 17 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Global Communication；Jedi Knights；Tom Middleton；Mark Pritchard",
+  "reissuedBy": "Never Records（US，1997）",
+  "g": "b",
+  "artist": "Reload",
+  "album": "A Collection of Short Stories",
+  "year": 1993,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Infonet（catno INF 004CD／INF4CD）",
+  "why": "Tom Middleton 與 Mark Pritchard 以 Reload 名義的唯一一張專輯，1993 年由 Infonet 在英國發行（INF 004CD），1997 年美國 Never Records 以 NR 2008 再版（MB release-group 4859a089… 轄下三筆 release 皆 Official）。與同兩人的 Global Communication 掛名同期，是他們在 1993–1994 年那條線的另一半。實掃 seed_cards.json 全 14,424 列：Reload 這個掛名在池中零張，Jedi Knights 掛名也零張；同兩人的 Global Communication 掛名池中 2 張（《Pentamerous Metamorphosis》1993、《76:14》1994）。這張補的是這組人在池中缺席的第二個掛名的第一張。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。掛名撞名嚴重：MB 有五個以上叫 Reload 的不同對象（德國另類搖滾團 7dea3bbc…、法國 nu metal 團 12b8353c…、house 二人組 447cf8a7…、美國饒舌 172b86d4…），artist search 必須看 disambiguation「UK techno/IDM duo Tom Middleton & Mark Pritchard」才會拿到正確實體；池中目前沒有任何叫 Reload 的藝人，通行名未被佔用（裁定第 29 條的檢查已做）。Apple 以「Reload A Collection of Short Stories」搜九個店面皆零命中，固定試聽預估 unavailable，封面走 CAA。",
+  "mbNote": "釘 release-group 4859a089-5664-3991-939f-41a3f62f36f0。回問確認：title「A Collection of Short Stories」、artist-credit「Reload」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 3 個 release（XE／Official Infonet INF4CD、GB／Official Infonet INF 004CD、US／Official Never Records NR 2008）。刻意不釘：047654ff-b91a-3028-bf75-fa85ec881f7e《The Reload EP》(1992 EP)、382f3954-f346-3cd0-b3fc-628172ab19e7《The Autoreload EP》(1992 EP)、7e94ea11-13c1-360e-81ff-cb2a92bc4088《Auto Reload EP, Volume 2》(1993 EP)、504c52e5-c074-4de1-a412-049de80ae948《Evolution》(2006 Compilation)。藝人 MBID 05d28260-271f-4f24-9ca8-27ec174a42f9，名下 8 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Le voyage；Pierre Henry Le Voyage 1967；Voyage",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Pierre Henry",
+  "album": "Le Voyage",
+  "year": 1967,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Philips（catno 836 899）／Limelight（US，LS 86049）",
+  "why": "Pierre Henry 依《西藏度亡經》的段落結構寫成的作品，1967 年由 Philips 在法國發行（836 899），1968 年美國 Limelight 以 LS 86049 發行（MB release-group e70483ca… 轄下兩筆 release 皆 Official）。實掃 seed_cards.json 全 14,424 列：Pierre Henry 池中 2 張——《Variations pour une porte et un soupir》(1967)、《Messe pour le temps présent》(1967)，兩張都是 1967 年。他 1967 年的第三張與 1970 年代的作品在池中沒有代表，本張補在同年那兩張旁邊。曲風給 electronic＋classical：musique concrète 出自法國廣播電台的作曲體系，只給 classical 會漏掉它的製作方式，只給 electronic 會漏掉它的來歷。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。盤名是常見法文詞組，同名別碟多：MB 同一藝人名下另有 7b9bd7ac-bdbb-4b56-ac6d-9cc3de8b9e4c《Voyage initiatique》(2005)，Apple gb 用「Pierre Henry Le Voyage」回的前三筆分別是 1452215745「Le voyage initiatique」(2005)、1452534855「Henry (02.1): Symphonie pour un homme seul, Le voyage」(2000 的 Philips 整編) 與 811919563 掛在 Otto Luening 名下的一筆——沒有一筆是 1967 原盤，未採用任何 collectionId，固定試聽預估 unavailable，封面走 CAA。法文盤名的大小寫在 MB 與 Philips 原盤之間有分歧（Le Voyage／Le voyage），兩種都要進查詢別名。",
+  "mbNote": "釘 release-group e70483ca-c7b6-330e-86b8-8e35673bc1fc。回問確認：title「Le Voyage」、artist-credit「Pierre Henry」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official Philips 836 899、US／Official Limelight LS 86049）。刻意不釘：6ceec8e6-3cbb-3802-b64c-7af05ac38965《Messe pour le temps présent et musiques concrètes》(1967，池中以《Messe pour le temps présent》為名已有)、8c5c25b8-3419-30bf-afd1-693679aded1d《Messe pour le temps présent / Le Voyage (Michel Colombier)》(1987 Album，標題同時含本張與池中那張，是最像的假陽性)、7b9bd7ac-bdbb-4b56-ac6d-9cc3de8b9e4c《Voyage initiatique》(2005 Album)、61f4ea75-b495-4a03-b304-05a1ec4a4f57《Symphonie pour un homme seul / Concerto des ambiguïtés》(1973)。藝人 MBID 24e0aaa1-7961-4ab8-865e-e736226e41c9，名下 58 個 release-group（分頁列全，非 25 筆上限）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Messe de Liverpool 1970；Pierre Henry Liverpool Mass",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Pierre Henry",
+  "album": "Messe de Liverpool",
+  "year": 1970,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Philips（catno 6510 001）",
+  "why": "Pierre Henry 1970 年由 Philips 在法國發行的作品（6510 001），是他在《Messe pour le temps présent》(1967) 之後的第二份以「彌撒」為名的長篇（MB release-group b139269c… 轄下唯一 release 為 FR／Official）。實掃 seed_cards.json 全 14,424 列：Pierre Henry 池中 2 張，都是 1967 年。1970 年代整段在池中零張，本張是那一段的第一筆。曲風給 electronic＋classical，理由同《Le Voyage》一筆。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。轄下只有一筆 1970 年法國原盤，沒有任何再發登錄在這個 release-group 底下；後世的合輯 385b8067…《Messe de Liverpool / Pierres réfléchies》(1989) 與 bf50dd18…《Messe de Liverpool / Fantaisie Messe pour le temps présent》(1999) 是兩個獨立的 release-group，標題都包含本張盤名，是最像的假陽性。Apple gb 用「Pierre Henry Messe de Liverpool」回的是 1452555663「Henry: Messe de Liverpool & Fantaisie messe pour le temps présent」，掛名記成「Jacques Spacagna & Jacques Alric」——那是 1999 年那個合輯的條目、不是本碟，未採用；固定試聽預估 unavailable，封面走 CAA。",
+  "mbNote": "釘 release-group b139269c-87b4-4216-903a-9821241d852c。回問確認：title「Messe de Liverpool」、artist-credit「Pierre Henry」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release（FR／Official，Philips 6510 001）。刻意不釘：385b8067-7239-4b24-9123-bd7b66e33942《Messe de Liverpool / Pierres réfléchies》(1989 Compilation)、bf50dd18-6192-4484-861a-be503e1be1be《Messe de Liverpool / Fantaisie Messe pour le temps présent》(1999 Compilation)、6ceec8e6-3cbb-3802-b64c-7af05ac38965《Messe pour le temps présent et musiques concrètes》(1967，池中已有)。藝人 MBID 24e0aaa1-7961-4ab8-865e-e736226e41c9，名下 58 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Chants magnetiques；Magnetic Songs",
+  "reissuedBy": "Fractal Records（FR，2007-02，Fractal180）",
+  "g": "b",
+  "artist": "Bernard Parmegiani",
+  "album": "Chants magnétiques",
+  "year": 1974,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "PSI（catno PSI-X-20705）／Fractal Records（FR，2007 再版 Fractal180）",
+  "why": "Bernard Parmegiani 1974 年的作品，由法國 PSI 以 PSI-X-20705 發行，2007 年 2 月 Fractal Records 以 Fractal180 授權再版（MB release-group b26aa262… 轄下三筆 release：FR 兩筆與 US 一筆，皆 Official）。實掃 seed_cards.json 全 14,424 列：Bernard Parmegiani 池中 2 張——《De Natura Sonorum》(1975)、《La Création du monde》(1986)。1975 年之前與 1975–1986 之間的作品在池中沒有代表，本張是《De Natura Sonorum》前一年的作品，直接補在旁邊。曲風給 electronic＋classical：GRM 體系的電子原音作品，兩邊都算得上。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。盤名帶法文重音（é），下游正規化會剝掉、變成「Chants magnetiques」，兩種寫法都要進查詢別名（裁定第 50 條：重音差異在搜尋端會被正規化，不影響命中率，但去重比對要兩種都比）。Apple 用「Bernard Parmegiani Chants magnetiques」搜 gb／us／de／nl／be／jp／fr／ca／au 九個店面（含發行國 fr）皆零命中，固定試聽預估 unavailable，封面走 CAA。撞卡：池中沒有任何 Parmegiani 的 1974 年條目。",
+  "mbNote": "釘 release-group b26aa262-68e5-32a9-8b13-e292a175bca8。回問確認：title「Chants magnétiques」、artist-credit「Bernard Parmegiani」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 3 個 release（FR／Official PSI PSI-X-20705 與 Fractal Records Fractal180、US／Official Kosinus Online KOL18）。刻意不釘：29ecfc06-05c0-4532-ba9b-b074b12e0f3e《De natura sonorum》(1975，池中以《De Natura Sonorum》為名已有)、4d425631-1756-37f5-8041-5d10f53d2450《La création du monde》(1986，池中已有)、f75e4e0b-a82f-4738-b1cf-f21f73b027f2《L'Œuvre musicale en 12 CD》(2008 Compilation) 與 d24aab0f… 起的 Complete Works 系列各卷（2024–2025 Compilation，全部刻意不釘）。藝人 MBID 3e3fbd8f-20b8-4f00-a1b2-8c14c9dd14f9，名下 45 個 release-group（分頁列全，非 25 筆上限）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dedans-dehors；Dedans‐dehors",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Bernard Parmegiani",
+  "album": "Dedans dehors",
+  "year": 1979,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "INA-GRM（catno 9102 PA）",
+  "why": "Bernard Parmegiani 1979 年由 INA-GRM 發行的作品（9102 PA），是他在《De Natura Sonorum》(1975) 之後、《La Création du monde》(1986) 之前的那一段（MB release-group 51b5ea47… 轄下唯一 release 為 FR／Official）。實掃 seed_cards.json 全 14,424 列：Bernard Parmegiani 池中 2 張（1975、1986），中間十一年在池中沒有任何一筆。本張與同批的《Chants magnétiques》(1974) 一起把 1974–1986 這段接起來。曲風給 electronic＋classical，理由同前一筆。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。轄下只有一筆 1979 年法國原盤。後世另有 30a36412-949d-4659-a5de-b84c866e089f《L'œil écoute / Dedans‐dehors》(2012 Compilation) 把本張與另一部作品合成一份，標題包含本張盤名、且中間的連字號是 U+2010，是最像的假陽性（該筆刻意不釘，也不得作為封面或試聽來源）。Apple 用「Bernard Parmegiani Dedans dehors」搜九個店面（含 fr）皆零命中，固定試聽預估 unavailable，封面走 CAA。盤名兩詞之間在部分來源作連字號「Dedans-dehors」，兩種寫法都要進查詢別名。",
+  "mbNote": "釘 release-group 51b5ea47-a66a-44f9-8333-8e54dbb95142。回問確認：title「Dedans dehors」、artist-credit「Bernard Parmegiani」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 1 個 release（FR／Official，INA-GRM 9102 PA）。刻意不釘：30a36412-949d-4659-a5de-b84c866e089f《L'œil écoute / Dedans‐dehors》(2012 Compilation)、93d686e2-ab5f-3233-9b44-d788a68c8215《L'œil écoute》(2004 Compilation)、da6037f1-57c6-31b0-9c9d-fe9df62feb2f《Questions de temps》(2001 Compilation)。藝人 MBID 3e3fbd8f-20b8-4f00-a1b2-8c14c9dd14f9，名下 45 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Enya；The Celts (Remastered)；Eithne Ní Bhraonáin",
+  "reissuedBy": "Atlantic／WEA（1992 起以《The Celts》為正式盤名）",
+  "g": "b",
+  "artist": "Enya",
+  "album": "The Celts",
+  "year": 1986,
+  "genres": [
+   "electronic",
+   "folk"
+  ],
+  "label": "BBC Records（catno CD 605／ZCF 605）／Atlantic・BMG（再版）",
+  "why": "Enya 的第一張個人作品，原是 1986 年 BBC 影集《The Celts》的配樂，當年以自我同名的《Enya》發行（BBC Records CD 605），1987 年起在美國與國際市場改以《The Celts》為名流通，1992 年 WEA 的再版把這個名字定為正式盤名（MB release-group a1e948b1… 轄下 25 筆 release，其中 1987 年 XW 與 US 兩筆的標題已作「The Celts」）。實掃 seed_cards.json 全 14,424 列：Enya 池中 2 張——《Watermark》(1988)、《Shepherd Moons》(1991)，出道那張不在其中。這張補的是她目錄的第一格。",
+  "risk": "盤名採再發名《The Celts》而非原盤的自我同名《Enya》，依裁定第 45 條（原盤自我同名、再發正式改名、改名後成為 MB 與流通的通行名）——這裡 MB 的 release-group 標題仍是「Enya」，但轄下 1987 年起的 release 已有「The Celts」，且 Apple gb 的條目是 collectionId 305695112「The Celts (Remastered)」（Enya，releaseDate 1987-03-01，notExplicit）。照原名收會同時踩兩個坑：自我同名卡的身分風險，以及串流端查不到。年份取原盤年 1986（BBC Records），不跟 Apple 的 1987 走（裁定第 77 條）。對照組 121064784「The Celts - EP」是同名的四曲小輯，不採。固定試聽預估 ready。",
+  "mbNote": "釘 release-group a1e948b1-808f-35f8-a799-c5322670aab9。回問確認：title「Enya」、artist-credit「Enya」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 25 個 release 全為 Official，其中 1986 年 CA／GB／US 三筆標題作「Enya」（BBC Records CD 605／ZCF 605），1987-01-01 XW 與 1987 US 兩筆標題作「The Celts」。刻意不釘：94620951-aa01-3183-8e47-fc2c7e5f9f1c《The Frog Prince》(1985 Album/Soundtrack，Clannad 時期之後的第一份配樂)、309731d4-fa73-3c01-a567-802ef8da49cf《The Celts》(1992 Single，同名單曲)、a2cb6793-9f04-35d9-8cb8-03c6fa7ae240《Watermark》(1988，池中已有)。藝人 MBID 4967c0a1-b9f3-465e-8440-4598fd9fc33c，名下 81 個 release-group（分頁列全，非 25 筆上限）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Eithne Ní Bhraonáin",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Enya",
+  "album": "The Memory of Trees",
+  "year": 1995,
+  "genres": [
+   "electronic",
+   "folk"
+  ],
+  "label": "WEA（catno WICD 5218／CD 12879／WPCR-10093）",
+  "why": "Enya 在 1991 年《Shepherd Moons》之後隔了四年的專輯，1995 年 11 月 20 日由 WEA 發行，英國 WICD 5218、加拿大 CD 12879、日本 WPCR-10093（MB release-group b0254fd5… 轄下十筆 release，唯一非 Official 的是一筆 TW 標 Bootleg）。實掃 seed_cards.json 全 14,424 列：Enya 池中 2 張——《Watermark》(1988)、《Shepherd Moons》(1991)。1991 年之後的目錄在池中零張，本張是《Shepherd Moons》的下一張，直接補在旁邊。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。轄下有一筆 TW release 標 Bootleg（Chinese Dragon Music ECCD-RME1404，2015），不採為流通證據（裁定第 43 條）。Apple gb 命中兩個候選：collectionId 68419193「The Memory of Trees」（releaseDate 1995-11-20，與 MB 相符，採用）與 305695085「(Remastered Bonus Track Version)」（加曲版，不採）；另有 710781119 為卡拉 OK 伴唱版、掛在 Golden Mic Karaoke 名下，是最像的假陽性。固定試聽預估 ready，上架時要確認取到的是 68419193 而非加曲版。",
+  "mbNote": "釘 release-group b0254fd5-2a7e-3546-9243-9861bbd5b60e。回問確認：title「The Memory of Trees」、artist-credit「Enya」、first-release-date 1995-11-20、primary-type Album、secondary-types 空、轄下 10 個 release（GB／Official WICD 5218、AU／Official、CA／Official CD 12879、JP／Official WPCR-10093 兩筆、US／Official 兩筆、TW／Bootleg 一筆、未標國別一筆）。刻意不釘：678a2bac-4b27-314e-929b-2612938dd1f2《Shepherd Moons》(1991，池中已有)、a80d2233-1d01-3e40-b7e8-5de03e0697db《Paint the Sky With Stars: The Best of Enya》(1997 Compilation)、27a611a6-30d6-304a-9926-6b1eaa893499《A Box of Dreams》(1997 Compilation)。藝人 MBID 4967c0a1-b9f3-465e-8440-4598fd9fc33c，名下 81 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Eithne Ní Bhraonáin",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Enya",
+  "album": "A Day Without Rain",
+  "year": 2000,
+  "genres": [
+   "electronic",
+   "folk"
+  ],
+  "label": "WEA（catno WPCR-11000／WICD5315／2 85986）",
+  "why": "Enya 進入 2000 年代的第一張專輯，2000 年 11 月由 WEA 發行，日本 WPCR-11000、南非 WICD5315、加拿大 2 85986（MB release-group ac954fa2… 轄下十三筆 release 遍及 JP、GB、US、AU、BR、CA、ZA、VE 等，唯一非 Official 的是一筆 TW Bootleg）。實掃 seed_cards.json 全 14,424 列：Enya 池中 2 張，最新一張是 1991 年的《Shepherd Moons》。本張與同批的《The Celts》(1986)、《The Memory of Trees》(1995) 一起把她從出道到 2000 年的主要專輯線補齊。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。轄下一筆 TW release 標 Bootleg（Chinese Dragon Music ECCD-RME1405，2015），不採。年份分歧：MB first-release-date 2000-11-11（日本盤），Apple gb collectionId 96217801「A Day Without Rain」releaseDate 記 2000-11-20（歐美盤）；同年、卡片取 2000。假陽性：692899954「A Day Without Rain (In the Style of Enya) [Karaoke Version]」掛在 Golden Mic Karaoke 名下，是卡拉 OK 伴唱版。固定試聽預估 ready。",
+  "mbNote": "釘 release-group ac954fa2-8c31-3667-aa2d-8be1e93c54bc。回問確認：title「A Day Without Rain」、artist-credit「Enya」、first-release-date 2000-11-11、primary-type Album、secondary-types 空、轄下 13 個 release（JP／Official WPCR-11000 兩筆、XE／Official、GB／Official、US／Official、AU／Official、BR／Official、CA／Official 2 85986、ZA／Official WICD5315、VE／Official 兩筆、XW／Official、TW／Bootleg、未標國別一筆）。刻意不釘：7a3ca4f9-b3ac-316e-bd8c-64dc20dc124b《Themes From Calmi Cuori Appassionati》(2001 Compilation/Soundtrack，日本市場的同期選輯)、7b877ec7-bd83-3244-a685-dd38df3a54d3《Only Time: The Collection》(2002 Compilation)、261ffbde-b719-38b2-96fb-d604bd67247f《Amarantine》(2005 Album)。藝人 MBID 4967c0a1-b9f3-465e-8440-4598fd9fc33c，名下 81 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Harold Budd & Brian Eno",
+  "reissuedBy": "All Saints Records（GB，2013-11，WAST040LP）",
+  "g": "b",
+  "artist": "Harold Budd",
+  "album": "Abandoned Cities",
+  "year": 1984,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Cantil（catno 384）／All Saints Records（2013 再版 WAST040LP）",
+  "why": "Harold Budd 1984 年由美國小廠 Cantil 發行的作品（編號 384），2013 年 11 月由英國 All Saints Records 以 WAST040LP 授權再版（MB release-group 24d4c8f0… 轄下三筆 release）。它與同年 Brian Eno 合作的《The Pearl》同期但另走一路，是他脫離 Ambient 系列標籤的第一張獨作。實掃 seed_cards.json 全 14,424 列：Harold Budd 在池中橫跨兩個掛名共 4 張——Harold Budd《The Pavilion of Dreams》(1978)《By the Dawn's Early Light》(1991)，以及 Harold Budd & Brian Eno《Ambient 2: The Plateaux of Mirror》(1980)《The Pearl》(1984)。1978 與 1991 之間他自己的獨作在池中只有與 Eno 的兩張合作，本張補的是同一段裡的獨作。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。掛名分裂：「Harold Budd」與「Harold Budd & Brian Eno」在池中是兩個藝人鍵（各 2 張），兩個字串都已掃過線上池、撞卡 0。MB 另有 88d792c7-56d0-365f-ba29-012d8815503b《The Serpent (In Quicksilver) / Abandoned Cities》(1989 Compilation)，標題含本張盤名、是最像的假陽性。年份分歧：MB 記 1984（Cantil 384），Apple gb collectionId 761117861「Abandoned Cities」releaseDate 記 1982-01-01——Apple 的日期不能當版本門檻（裁定第 77 條），卡片取 1984。固定試聽預估 ready。",
+  "mbNote": "釘 release-group 24d4c8f0-8745-37ee-95b5-5864e432752d。回問確認：title「Abandoned Cities」、artist-credit「Harold Budd」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official Cantil 384、GB 一筆 status 未標 All Saints WAST040LP、XW／Official All Saints）。刻意不釘：88d792c7-56d0-365f-ba29-012d8815503b《The Serpent (In Quicksilver) / Abandoned Cities》(1989 Compilation)、bbea6257-57de-4754-a9f0-658166ac02d8《The Serpent (In Quicksilver)》(1981 EP)、6c364112-e9fb-373c-9f1d-364b427f64c3《The Pearl》(1984，池中以 Harold Budd & Brian Eno 掛名已有)。藝人 MBID 5c864a6f-146e-4225-986d-3295ce90f784，名下 48 個 release-group（分頁列全，非 25 筆上限）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Harold Budd & Brian Eno",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "Harold Budd",
+  "album": "Lovely Thunder",
+  "year": 1986,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Editions EG（catno EGED 46／EEGCD 46）",
+  "why": "Harold Budd 1986 年 10 月在 Editions EG 發行的作品（EGED 46、CD 版 EEGCD 46），是他在該廠牌從《Ambient 2》《The Pearl》兩張合作之後的第一張獨作（MB release-group 456a7982… 轄下三筆 release：GB 兩筆與 US 一筆，皆 Official）。實掃 seed_cards.json 全 14,424 列：Harold Budd 掛名池中 2 張（1978《The Pavilion of Dreams》、1991《By the Dawn's Early Light》），Harold Budd & Brian Eno 掛名另 2 張（1980、1984）。1986 年在池中沒有任何一筆，本張補在《The Pearl》與《By the Dawn's Early Light》之間。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。掛名分裂同前一筆（Harold Budd／Harold Budd & Brian Eno 兩個池中藝人鍵，均已掃）。Apple gb 命中 collectionId 714927549「Lovely Thunder」（Harold Budd，releaseDate 1986-12-01，notExplicit）——Apple 記 12 月、MB 記 10 月，同年、卡片取 1986。固定試聽預估 ready。盤名是常見英文詞組，去重必須連掛名一起比。",
+  "mbNote": "釘 release-group 456a7982-eb7c-31b0-91c0-2e9da971e893。回問確認：title「Lovely Thunder」、artist-credit「Harold Budd」、first-release-date 1986-10、primary-type Album、secondary-types 空、轄下 3 個 release（GB／Official Editions EG EGED 46 與 EEGCD 46、US／Official EEG CD 46）。刻意不釘：6f7f19e2-e75e-3697-affe-9d56bfc34750《The Moon and the Melodies》(1986-11-10 Album，與 Cocteau Twins 三人合作、掛名不同)、2966009b-4ee0-4c96-bb6b-4d0812593c63《Myths 3 : La nouvelle sérénité》(1987 Compilation)。藝人 MBID 5c864a6f-146e-4225-986d-3295ce90f784，名下 48 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Harold Budd & Brian Eno",
+  "reissuedBy": "Hannibal（US，2006-01-31，HNCD 1491）",
+  "g": "b",
+  "artist": "Harold Budd",
+  "album": "The White Arcades",
+  "year": 1988,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Opal Records・Warner Bros.（catno 9 25766-2／9 25766-1）／Land Records（GB，LAND 03）",
+  "why": "Harold Budd 1988 年在 Brian Eno 主持的 Opal Records 發行的作品（Warner Bros. 9 25766-2），英國同年由 Land Records 以 LAND 03 發行，2006 年 Hannibal 以 HNCD 1491 再版（MB release-group fc47be7b… 轄下五筆 release 皆 Official）。實掃 seed_cards.json 全 14,424 列：Harold Budd 掛名池中 2 張（1978、1991），Harold Budd & Brian Eno 掛名 2 張（1980、1984）。本張與同批的《Abandoned Cities》(1984)、《Lovely Thunder》(1986) 一起把 1978→1991 之間他自己的獨作補成一條連續線。",
+  "risk": "primary-type Album、secondary-types 空，不填例外欄位。掛名分裂同前兩筆。Apple gb 命中 collectionId 761125301「The White Arcades」（Harold Budd，releaseDate 1988-01-01，notExplicit），固定試聽預估 ready。盤名帶定冠詞，池中去重的正規化多半會剝掉，與其他含 Arcades 字樣的碟要連掛名一起比（實掃線上池無同名碟）。",
+  "mbNote": "釘 release-group fc47be7b-635f-304c-a656-d4c18f2d350e。回問確認：title「The White Arcades」、artist-credit「Harold Budd」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official Opal・Warner Bros. 9 25766-2 與 9 25766-1、US／Official Hannibal HNCD 1491、GB／Official Land Records LAND 03、GB／Official 一筆）。刻意不釘：b654466a-d7fc-3f41-8452-9d645664a6b6《By the Dawn's Early Light》(1991，池中已有)、49baec71-daaf-307a-a62d-f12f10be86d3《Music for 3 Pianos》(1992 Album)、b19cbd63-b78f-39ba-808d-a11a72a626f9《Through the Hill》(1994 Album，與 Andy Partridge 合作)。藝人 MBID 5c864a6f-146e-4225-986d-3295ce90f784，名下 48 個 release-group（分頁列全）。",
+  "releaseType": "Album"
+ }
+]

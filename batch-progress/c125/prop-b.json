@@ -1,0 +1,396 @@
+[
+ {
+  "artist": "José Afonso",
+  "album": "Cantares do andarilho",
+  "year": 1968,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Orfeu（PT，catno STAT 002）",
+  "why": "José Afonso（葡萄牙普遍稱 Zeca Afonso）出身科英布拉的 fado de Coimbra 傳統，1960 年代中期起把伴奏交給 Rui Pato 的吉他、歌詞轉向鄉間勞動與流浪的題材。這張 1968 年的碟原盤 Orfeu STAT 002，是他離開學院 fado、進入 Orfeu 廠牌長期合作的第一張。MB 轄下四個 release：1968 原盤、1987 Movieplay、2012 Orfeu 復刻（35.020）、2021 Mais 5（LM5006）。實掃 seed_cards.json 全 14,424 列，池中葡萄牙側只有 7 張——José Afonso《Cantigas do Maio》1971、Carlos Paredes《Guitarra Portuguesa》1967、Amália Rodrigues 五張（1957／1962／1965／1970／1980）；本批 20 位骨幹藝人扣掉這兩位，池中全部為零。",
+  "risk": "掛名回 9,839 個候選，MB 另有一個同名的 José Afonso（c47513a1，PT、1972 起、disambiguation「guitarist/vocalist」），兩者字串完全相同、只有 disambiguation 與出生年分得出來；另有 José M. Afonso（PT）、João Afonso（PT，其姪）等近名實體。撞卡要同時掃 José Afonso／Jose Afonso／Zeca Afonso 三種寫法。池中已有同一位藝人的《Cantigas do Maio》1971，本張與之不同碟。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）es 命中 collectionId 1806612919《Cantares do Andarilho》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 這位藝人 1971 年的〈Grândola, Vila Morena〉在 1974 年 4 月 25 日被用作行動信號，是可查證的史實、可以寫；但不得寫對該事件或對 Estado Novo 的價值判斷，只寫發行年、廠牌、曲目與播放紀錄。",
+  "mbNote": "釘 release-group 643f4ee7-0105-3736-a42c-bf6da787fba5。回問 release-group 端點確認：title「Cantares do andarilho」、artist-credit「José Afonso」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 4 個 release（1968 PT Orfeu STAT 002、1987 PT Movieplay SO 3036、2012-04-09 PT Orfeu 35.020、2021 PT Mais 5 LM5006）。藝人 MBID d06e7e71-0178-4e66-8150-044ff6047d64。刻意不釘：c47513a1-ed09-4e20-bd98-1ebdc5c96f01（同名別人的藝人 MBID）、49491d15-1deb-3fab-82a0-f00a740349f4《Cantigas do Maio》1971（池中已有）、34aeab41-6053-39bb-8075-a3766039dd74《Contos velhos, rumos novos》1969、53321612-f528-31c5-9996-f91912fe802b《Traz outro amigo também》1970。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "José Afonso；Jose Afonso；Zeca Afonso；Cantares do andarilho",
+  "reissuedBy": "Movieplay（1987 PT）；Orfeu（2012 PT）；Mais 5（2021 PT）",
+  "g": "b"
+ },
+ {
+  "artist": "Quarteto 1111",
+  "album": "Quarteto 1111",
+  "year": 1970,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB 轄下唯一 release（1970 PT）未掛廠牌，原盤發行方待研究層自壓片核",
+  "why": "José Cid 領軍的 Quarteto 1111 是葡萄牙第一支把 beat 與 psych 編制做成整張 LP 的樂團，1967 年的單曲〈A Lenda de El-Rei D. Sebastião〉是他們的起點。這張 1970 年的同名專輯是他們唯一一張在 Estado Novo 時期發行的正規專輯，MB 轄下只有一個 1970 年葡萄牙盤，其餘目錄是 1973 與 1975 兩張加後出的合輯。他們的曲目在送審階段被要求刪改是可查證的出版紀錄。實掃 seed_cards.json 全 14,424 列，Quarteto 1111 池中 0 張。",
+  "risk": "自我同名卡：掛名與盤名完全相同，release 身分必須嚴格核對（selfTitledVerified）。掛名回 139 個候選，摺鍵後與 11:11（CA／US／RU／CR／GB）、1111（GB／ES）等至少 8 個實體同鍵，只有 disambiguation 與 PT／1967 分得出來。⚠ MB 另有 a7b13503《A Lenda do Quarteto 1111》1993 合輯與 7680972a《A Lenda D'El-Rei D. Sebastião》1996，盤名都含掛名字串。Apple `search` 一種查法在 es 命中的是《A Lenda do Quarteto 1111》（collectionId 1461663031），是後出的合輯、不是本張——這是觀察不是結論。CAA release-group 端點 200（實測）。⚠ 行文可寫 Estado Novo 時期送審制度存在這一可查證的史實，但不得寫對該體制的價值判斷。",
+  "mbNote": "釘 release-group 92d603b9-42e4-3c7c-b9e7-e9f6162f2e6a。回問 release-group 端點確認：title「Quarteto 1111」、artist-credit「Quarteto 1111」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release（1970 PT，label-info 未填）。藝人 MBID d60d5997-1579-45ff-bd0f-a5e83b5cfc5d。刻意不釘：05d084b3-39dc-4989-a075-a6c59c9b49bc《A Lenda De El-Rei D. Sebastião》1967（EP）、2374a4bb-6f8b-4f9e-a20e-e18427311e3c《Bruma Azul Do Desejado》1973、0ff5fa5b-2f88-31fd-b0c9-b23f4c414e4f《Onde, Quando, Como, Porquê, Cantamos Pessoas Vivas》1975、a7b13503-0772-3ee4-8980-4e3afa01fbe1《A Lenda do Quarteto 1111》1993（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Quarteto 1111；Quarteto 1111 (1970)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "José Afonso",
+  "album": "Traz outro amigo também",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Orfeu（PT，catno STAT 005）",
+  "why": "José Afonso 1970 年的碟，原盤 Orfeu STAT 005，錄音在倫敦完成、伴奏仍以 Rui Pato 的吉他為主軸，是他從科英布拉學院 fado 走出來之後語彙最集中的一張。MB 轄下五個 release：1970 原盤、1987 與 1996 兩次 Movieplay 再版（SO 3038／JA 8003）、2012 Orfeu 復刻（35.022）、2021 Mais 5（LM5014）——五十年四次再版，是本批葡萄牙側再版次數最多的一張。實掃 seed_cards.json 全 14,424 列，池中葡萄牙側只有 7 張（José Afonso《Cantigas do Maio》1971、Carlos Paredes《Guitarra Portuguesa》1967、Amália Rodrigues 五張）；跨批實掃 74 批共 3,331 張候選，c-63 已有《Cantigas do Maio》、c-98 已有《Venham mais cinco》，本張與兩者皆不同碟。",
+  "risk": "掛名回 9,839 個候選，MB 另有一個同名的 José Afonso（c47513a1，PT、1972 起、disambiguation「guitarist/vocalist」），字串完全相同、只有 disambiguation 與出生年分得出來；另有 José M. Afonso（PT）、João Afonso（PT）等近名。三種寫法（José Afonso／Jose Afonso／Zeca Afonso）都要進撞卡掃描。⚠ 這位藝人本批收兩張（本張與《Cantares do andarilho》），且 c-63／c-98 兩批已各有一張，跨批去重一律以 rgMbid 為準。盤名含重音符號 é。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）es 命中 collectionId 1806612599《Traz Outro Amigo Também》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 這位藝人 1971 年的〈Grândola, Vila Morena〉在 1974 年 4 月 25 日被用作行動信號，是可查證的史實、可以寫；但不得寫對該事件或對 Estado Novo 的價值判斷，只寫發行年、廠牌、曲目與播放紀錄。",
+  "mbNote": "釘 release-group 53321612-f528-31c5-9996-f91912fe802b。回問 release-group 端點確認：title「Traz outro amigo também」、artist-credit「José Afonso」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 5 個 release（1970 PT Orfeu STAT 005、1987 PT Movieplay SO 3038、1996 PT Movieplay JA 8003、2012 PT Orfeu 35.022、2021 PT Mais 5 LM5014）。藝人 MBID d06e7e71-0178-4e66-8150-044ff6047d64。刻意不釘：c47513a1-ed09-4e20-bd98-1ebdc5c96f01（同名別人的藝人 MBID）、49491d15-1deb-3fab-82a0-f00a740349f4《Cantigas do Maio》1971（池中已有、c-63）、7b8ec0d8-76d4-3a75-adb9-16532c02ea34《Venham mais cinco》1973（c-98 已收）、34aeab41-6053-39bb-8075-a3766039dd74《Contos velhos, rumos novos》1969、5a58f044-1d42-3587-bb7d-ef26582dcbe1《Coro dos tribunais》1974。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "José Afonso；Jose Afonso；Zeca Afonso；Traz outro amigo também",
+  "reissuedBy": "Movieplay（1987、1996 PT）；Orfeu（2012 PT）；Mais 5（2021 PT）",
+  "g": "b"
+ },
+ {
+  "artist": "Adriano Correia de Oliveira",
+  "album": "Gente de Aqui e de Agora",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Orfeu（PT，catno STAT 010）",
+  "why": "Adriano Correia de Oliveira 與 José Afonso 同出科英布拉的學生 fado 圈，嗓音低沉、伴奏維持古典吉他編制。這張 1971 年的碟原盤 Orfeu STAT 010，與 José Afonso 同一家廠牌、同一組編號序列（STAT 002／010／017 分屬三張本批相關的碟），是 Estado Novo 末期葡萄牙 canção de intervenção 的核心目錄之一。他 1982 年去世，正規目錄只有三張加後出的全集。實掃 seed_cards.json 全 14,424 列，Adriano Correia de Oliveira 池中 0 張。",
+  "risk": "掛名回 28,487 個候選，近名的有葡萄牙詩人 António Correia de Oliveira、Simone de Oliveira（PT）、De Oliveira（ES techno）等；池中已有義大利的 Adriano Celentano 1 張，摺鍵前綴相同，撞卡掃描要看全名。Apple `search` 一種查法 8 個 storefront 全未命中——這是觀察不是結論，研究層要跑藝人目錄與 collectionId 直查。CAA release-group 端點 200（實測）。⚠ 行文可寫 Estado Novo 時期送審制度存在這一可查證的史實，但不得寫對該體制的價值判斷。",
+  "mbNote": "釘 release-group 41e3c397-70b2-48ab-97d4-22d8ad196f44。回問 release-group 端點確認：title「Gente de Aqui e de Agora」、artist-credit「Adriano Correia de Oliveira」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release（1971 PT Orfeu STAT 010）。藝人 MBID d6d5d052-abdb-4b53-92fe-acccbb5b818d。刻意不釘：38cb8099-c330-45a3-94df-3f7ae2e5b9a0《Cantaremos》1970、9196a227-2904-3128-8a31-29b77282afb6《Que Nunca Mais》1975、3b4e1af7-7f84-4911-b3a9-b4739008be89《Obra completa》1994（合輯）、4c12d199-6615-322a-becc-d2ea1ebf4d14／1000d35f-f834-3d58-bcee-5b1d4cfc4f03《Obra Completa》Vol.1／Vol.2 2007（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Adriano Correia de Oliveira；Gente de Aqui e de Agora",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Carlos Paredes",
+  "album": "Movimento perpétuo",
+  "year": 1971,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "原盤發行方待研究層自壓片核；MB 轄下最早 release 為 1988 PT EMI（0777 7 91312 2 8）",
+  "why": "Carlos Paredes 是葡萄牙吉他（guitarra portuguesa）從 fado 伴奏樂器變成獨奏樂器的關鍵人物。他 1958 至 1961 年間因政治案入獄，出獄後的錄音維持純器樂形態。《Movimento perpétuo》是他最常被引用的一張，同名曲被反覆用於電影配樂。⚠ MB 這個 release-group 的 first-release-date 記 1988、轄下最早 release 是 1988 年 EMI 盤，但原始 LP 出版於 1971 年——year 依裁定 220 取原盤年，MB 的 1988 與 2007（Som Livre VSL 1214-2）都是再版。實掃 seed_cards.json 全 14,424 列，池中已有他的《Guitarra Portuguesa》1967（本張與之不同碟），其餘目錄全無。",
+  "risk": "⚠ 年份來源衝突：MB first-release-date 1988 與原盤年 1971 不一致，本卡取 1971（裁定 220：年份取原盤年；裁定 91：rgMbid 是身分鍵不是年份來源）。**原盤年與原盤發行方必須由研究層以壓片或 Discogs 條目覆核後才能寫進簡介**，策展層只記錄這個不一致本身。掛名回 3,368 個候選，近名有 Carlos Gardel、Carlos Sánchez 等，目標實體 disambiguation 為空、只有 PT／1925-02-16 可確認。MB 另有 7633e6e1《Meu País》1970，artist-credit 是「Cecília de Melo & Carlos Paredes」，不是單人掛名。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）pt 命中 collectionId 280167463《Movimento Perpétuo》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 Estado Novo 時期審查與該藝人的入獄紀錄這兩項可查證的史實，但不得寫對該體制的價值判斷。",
+  "mbNote": "釘 release-group e87ab389-43cd-34f6-b60f-f5b38bded319。回問 release-group 端點確認：title「Movimento perpétuo」、artist-credit「Carlos Paredes」、primary-type Album、secondary-types 空、first-release-date 1988（MB 值）、轄下 2 個 release（1988 PT EMI 0777 7 91312 2 8、2007 PT Som Livre VSL 1214-2）。**MB 沒有 1971 年 release 建檔**，year 欄取原盤年 1971。藝人 MBID 278e5176-b4f2-4a77-8ab3-5da847765b9e。刻意不釘：8e6ff336-9e6b-3496-afa3-bbee0c10cd2e《Guitarra Portuguesa》1967（池中已有）、7633e6e1-f1cb-4d83-ae96-a85be0edd78f《Meu País》1970（artist-credit 為 Cecília de Melo & Carlos Paredes）、e557eb8b-aaf1-4859-9e61-bdcc9c669caf《É Preciso Um País》1974、5ae0681d-0ef6-4e03-8a42-b6ef20b904d0《O melhor dos melhores》1994（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Carlos Paredes；Movimento perpétuo；Movimento Perpetuo",
+  "reissuedBy": "EMI（1988 PT）；Som Livre（2007 PT）",
+  "g": "b"
+ },
+ {
+  "artist": "José Mário Branco",
+  "album": "Mudam-se os tempos, mudam-se as vontades",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "原盤在巴黎自資發行，發行方待研究層自壓片核；MB 轄下唯一 release 為 2017 XE Warner（9029572365）",
+  "why": "José Mário Branco 1963 年離開葡萄牙、長年住在巴黎，同時是製作人（José Afonso、Sérgio Godinho、Fausto 的多張碟由他編制）。這張是他自己的第一張專輯，錄製與發行都在巴黎完成，盤名取自 Camões 的十四行詩首句。⚠ MB 這個 release-group 的 first-release-date 記 2017、轄下唯一 release 是 2017 年 Warner 的 XE 盤，但原始 LP 出版於 1971 年——year 依裁定 220 取原盤年。實掃 seed_cards.json 全 14,424 列，José Mário Branco 池中 0 張。",
+  "risk": "⚠ 年份來源衝突：MB first-release-date 2017 與原盤年 1971 不一致，本卡取 1971（裁定 220、裁定 91）。**原盤年與巴黎的發行方必須由研究層覆核後才能寫進簡介**，策展層只記錄這個不一致本身。掛名回 13,037 個候選，MB 另有 de1833fa「José Branco」（fado musician）與 4fd07f92「Três Cantos (José Mário Branco, Sérgio Godinho e Fausto)」——後者是三人合體的獨立實體，本批三位各自單獨收卡，去重時三個掛名都要掃。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）de 命中 collectionId 1488660484《Mudam-se os Tempos Mudam-se as Vontades》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 Estado Novo 時期出版受限與該藝人長居法國這兩項可查證的史實，但不得寫對該體制的價值判斷。",
+  "mbNote": "釘 release-group 13750147-e98d-344d-b155-8e2c93ced049。回問 release-group 端點確認：title「Mudam-se os tempos, mudam-se as vontades」、artist-credit「José Mário Branco」、primary-type Album、secondary-types 空、first-release-date 2017（MB 值）、轄下 1 個 release（2017 XE Warner 9029572365）。**MB 沒有 1971 年 release 建檔**，year 欄取原盤年 1971。藝人 MBID 382f06d0-580b-4eef-b606-a5b8c2ff5117。刻意不釘：4fd07f92-0835-4a65-8d78-3833c0e3bebf（Três Cantos 三人合體的藝人 MBID）、32a22196-be7e-30c3-b266-ccdcbbaa1be3《Margem De Certa Maneira》（MB 記 1996-05-15）、536c5106-8642-3610-97f6-7daf85252a63《Ser Solidário》1982-04-14、d77516f0-eba4-49d0-a7bd-88c30020a424《A Confederação》1978（與 Godinho、Fausto 合掛）、a2fa7c53-2d4e-4544-8534-ac534097fb74《Canções escolhidas 71/97》1999（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "José Mário Branco；Jose Mario Branco；Mudam-se os tempos mudam-se as vontades",
+  "reissuedBy": "Warner（2017 XE）",
+  "g": "b"
+ },
+ {
+  "artist": "Sérgio Godinho",
+  "album": "Os Sobreviventes",
+  "year": 1972,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "MB 轄下唯一 release 未掛廠牌與國別，原盤發行方待研究層自壓片核",
+  "why": "Sérgio Godinho 1960 年代末在巴黎、日內瓦與阿姆斯特丹之間流動，這張首張專輯在巴黎錄製、由 José Mário Branco 製作，是葡萄牙 canção de intervenção 這條線裡最早把敘事歌詞與流行編曲並置的一張。MB first-release-date 1972，轄下只有一個 release、既沒填國別也沒填廠牌，是本批 MB 建檔最薄的兩張之一。實掃 seed_cards.json 全 14,424 列，Sérgio Godinho 池中 0 張——池中以 Godinho 為子字串命中的一張是巴西的 Zeca Pagodinho，與本人無關。",
+  "risk": "⚠ 年份兩說：MB 記 1972，部分葡萄牙資料把首張專輯記為 1971。本卡取 MB 值 1972，**兩說並存這件事要由研究層以壓片覆核，不得在簡介中單方面斷言**。掛名回 1,183 個候選，MB 另有 5ed31fbd「Clã E Sérgio Godinho」、1c7963d7「Sérgio Godinho & Os Assessores」、4fd07f92「Três Cantos（與 José Mário Branco、Fausto）」三個合掛實體，去重時四個掛名都要掃；另有 Sérgio Mendes、Sérgio Reis（BR）等近名。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）fr 命中 collectionId 1443661123《Os Sobreviventes》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 Estado Novo 時期出版受限與該藝人長期旅外這兩項可查證的史實，但不得寫對該體制的價值判斷。",
+  "mbNote": "釘 release-group 881bff39-230d-3217-9ee3-2269aa3c2192。回問 release-group 端點確認：title「Os Sobreviventes」、artist-credit「Sérgio Godinho」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（無國別、label-info 未填）。藝人 MBID 208ec32e-f776-4b94-af14-ae97515d7863。刻意不釘：05c8d838-4e51-3938-91e0-b53b7639b499《Pré-histórias》1972（同年）、07445f7a-4a0a-3ddc-a50c-5a8016b094e6《À Queima Roupa》1974、13ed2370-fd60-4ccc-9783-f6d556e08748《Cantigas De Ida E Volta》1975（與 Fausto、Vitorino 等多人合掛）、d77516f0-eba4-49d0-a7bd-88c30020a424《A Confederação》1978（三人合掛）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sérgio Godinho；Sergio Godinho；Os Sobreviventes",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Petrus Castrus",
+  "album": "Mestre",
+  "year": 1973,
+  "genres": [
+   "rock"
+  ],
+  "label": "Guilda da Música（PT，catno DP 025）",
+  "why": "Petrus Castrus 是里斯本 1970 年代前期少數把 prog 編制做成整張概念碟的樂團，這張 1973 年 12 月 15 日的《Mestre》原盤 Guilda da Música DP 025。MB 名下只有兩個 release-group（本張與 1978 年《Ascenção E Queda》），2007 年由葡萄牙的 CNM 復刻（CNM 202CD）。這條線與 Quarteto 1111、Tantra 同屬 Estado Novo 末期少數留下 LP 的搖滾目錄。實掃 seed_cards.json 全 14,424 列，Petrus Castrus 池中 0 張。",
+  "risk": "掛名回 156 個候選，摺鍵前綴 Petrus 的同名實體至少 6 個（SE rapper、DE rapper、ES artist、FI singer、1968 年舊金山迷幻團），目標實體靠 PT／1971 與名下目錄確認。盤名 Mestre 是常見葡語單字，字串去重容易誤命中，以 rgMbid 為準。CAA release-group 端點 200（實測）。復刻年 2007 不得寫進 year 欄（裁定 220）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）es 命中 collectionId 1775515512《Mestre》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 Estado Novo 時期送審制度存在這一可查證的史實，但不得寫對該體制的價值判斷。",
+  "mbNote": "釘 release-group 3a46834c-18d8-4fb4-92c5-84753e062ac8。回問 release-group 端點確認：title「Mestre」、artist-credit「Petrus Castrus」、first-release-date 1973-12-15、primary-type Album、secondary-types 空、轄下 2 個 release（1973-12-15 PT Guilda da Música DP 025、2007 PT CNM CNM 202CD）。藝人 MBID 87c32fc8-7325-4446-b447-dca9b19b9708。刻意不釘：1cda0851-eb7a-45ad-8449-8a59ee2f8651《Ascenção E Queda》1978。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Petrus Castrus；Mestre",
+  "reissuedBy": "CNM（2007 PT）",
+  "g": "b"
+ },
+ {
+  "artist": "Banda do Casaco",
+  "album": "Dos benefícios dum vendido no reino dos bonifácios",
+  "year": 1974,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Philips（PT，catno 6330 013）",
+  "why": "Banda do Casaco 1974 年組成，核心是 António Pinho 與 Nuno Rodrigues，把葡萄牙北部與 Beira 的傳統曲調拆進搖滾編制，人聲用真假聲交錯的方式處理。這張首作原盤 Philips 6330 013，1993 年由 Philips 再版（518 757-2）。他們與 Brigada Víctor Jara 同屬 1974 年之後把田野採集拿來重寫的路線，但編制更靠近錄音室搖滾。實掃 seed_cards.json 全 14,424 列，Banda do Casaco 池中 0 張。",
+  "risk": "⚠ 掛名大小寫兩種寫法：MB 藝人實體名與 artist-credit 都寫作「Banda do casaco」（小寫 c），盤面與葡萄牙資料寫「Banda do Casaco」。卡片取後者，兩種寫法都要進撞卡掃描——這個大小寫差異是 MB 端的資料狀態，不是藝人自名的兩說。掛名回 3,758 個候選，近名有 Banda do Mar（BR）、Banda do Sol、Banda do Canecão（BR）等至少 6 個。盤名很長且含重音符號，正規化後摺鍵極長、誤命中風險低但要注意截斷。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）pt 命中 collectionId 1443328670《Dos Benefícios Dum Vendido No Reino Dos Bonifácios》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 Estado Novo 末期與 1974 年之後出版環境改變這一可查證的史實，但不得寫對該體制或對該年事件的價值判斷。",
+  "mbNote": "釘 release-group 5aeb6cff-02c3-4bfb-a839-b5e50ae4dd83。回問 release-group 端點確認：title「Dos benefícios dum vendido no reino dos bonifácios」、artist-credit「Banda do casaco」（MB 小寫 c）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（1974 PT Philips 6330 013、1993 PT Philips 518 757-2）。藝人 MBID 947c15d5-1166-4d21-b820-27f20b6d3f1d。刻意不釘：b7c4127c-3824-4825-97f2-c589c5bba1ee《Coisas do Arco da Velha》1976、3c51f4c1-ce78-4005-974c-5d00de579914《Hoje Há Conquilhas Amanhã Não Sabemos》1977、b94494a2-b80e-4aec-b93c-1516b2e17490《Contos Da Barbearia》1978、25e06fc2-b04c-47a8-ad85-3f619c25142a《No jardim da celeste》1980、db405f40-a57f-49d4-8669-566616b9a966《Natação Obrigatória》1996（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Banda do Casaco；Banda do casaco；Dos benefícios dum vendido no reino dos bonifácios",
+  "reissuedBy": "Philips（1993 PT）",
+  "g": "b"
+ },
+ {
+  "artist": "Paulo de Carvalho",
+  "album": "Paulo",
+  "year": 1974,
+  "genres": [
+   "pop",
+   "soul"
+  ],
+  "label": "Orfeu（PT，catno SB - 1075）",
+  "why": "Paulo de Carvalho 1960 年代以 Os Sheiks 的鼓手起家，1970 年代轉為獨唱歌手，聲線與編制靠近美國 soul 而不是 fado。他 1974 年代表葡萄牙參加歐洲歌唱大賽的〈E depois do adeus〉，同年 4 月 24 日深夜在 Emissores Associados de Lisboa 播出，是行動的第一個信號——這是可查證的廣播紀錄。這張同年的專輯《Paulo》原盤 Orfeu SB - 1075，MB 轄下只有一個 release。實掃 seed_cards.json 全 14,424 列，Paulo de Carvalho 池中 0 張。",
+  "risk": "⚠ 盤名《Paulo》只有一個常見葡語名字，是本批摺鍵最短的盤名，字串去重幾乎必然誤命中，一律以 rgMbid 為準。**〈E depois do adeus〉是否收錄在這張 LP 的曲目裡必須由研究層以曲目核實**——MB 另有 c2551a10《E depois do adeus》1974 單曲獨立建檔，簡介不得預設兩者的收錄關係。掛名回 28,948 個候選，MB 另有 ff97761a「Paulo De Carvalho」（PT，2000s rapper），字串僅大小寫之差。Apple `search` 一種查法在 us 命中的是《Leva-Me a Viajar》（collectionId 1594638380），不是本張——這是觀察不是結論。CAA release-group 端點 200（實測）。⚠ 廣播紀錄可以寫，但不得寫對該事件或對 Estado Novo 的價值判斷。",
+  "mbNote": "釘 release-group ecd1cfe5-4715-429b-9878-08bab74d7beb。回問 release-group 端點確認：title「Paulo」、artist-credit「Paulo de Carvalho」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 個 release（1974 PT Orfeu SB - 1075）。藝人 MBID d6a6d26d-0279-425d-a8cc-bd22b2161149。刻意不釘：ff97761a-e496-47d3-8d42-3eccf557082f（同名饒舌歌手的藝人 MBID）、c2551a10-492d-4bbf-979e-3dcebaf6a435《E depois do adeus》1974（Single）、f6c48f33-4e72-4e7b-b8ea-373aae5713f3《Operários Do Natal》1976、6d6fc9c7-5df4-4f54-a02c-861cfc5ec856《A Arte e a Música de Paulo de Carvalho》1982（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Paulo de Carvalho；Paulo",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Vitorino",
+  "album": "Semear Salsa Ao Reguinho",
+  "year": 1975,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "Orfeu（PT，catno STAT 031）",
+  "why": "Vitorino Salomé 出身 Alentejo 的 Redondo，唱腔與曲式取自 Alentejo 的男聲合唱（cante alentejano），編制加進吉他與手風琴。這張 1975 年的首張專輯原盤 Orfeu STAT 031，與 José Afonso 和 Adriano Correia de Oliveira 同一組編號序列。他的弟弟 Janita Salomé 與他長期合作，兩人是 1974 年之後把 Alentejo 的集體唱法帶進錄音室目錄的主要名字。實掃 seed_cards.json 全 14,424 列，Vitorino 池中 0 張。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：MB 查 Vitorino 回 14 個實體，目標 52257811 雖排第 1（disambiguation「Portuguese singer-songwriter」），第 2 名是同名的 techno 製作人 Vitorino（ccb27890，score 90），另有 Carlos Vitorino（PT trumpetist）、Vitorino Gomes（PT violinist）、Vitorino Chantre（CV）等至少 6 個。盤名含四個詞、全大寫首字母的 MB 寫法（Semear Salsa Ao Reguinho）與葡語慣用小寫寫法並存。Apple `search` 一種查法 8 個 storefront 全未命中，CAA release-group 端點 404（實測）——兩項都是觀察不是結論，封面與店面要由研究層另跑。⚠ 行文可寫 Estado Novo 末期與 1974 年之後出版環境改變這一可查證的史實，但不得寫對該體制或對該年事件的價值判斷。",
+  "mbNote": "釘 release-group d34130af-4147-4b0e-873a-d00da8ed496d。回問 release-group 端點確認：title「Semear Salsa Ao Reguinho」、artist-credit「Vitorino」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release（1975 PT Orfeu STAT - 031／STAT 031）。藝人 MBID 52257811-100c-4e83-bcec-326e4171c44d。刻意不釘：ccb27890-20cb-4eca-8e11-43084f584930（同名 techno 製作人的藝人 MBID）、13ed2370-fd60-4ccc-9783-f6d556e08748《Cantigas De Ida E Volta》1975（多人合掛）、41b5204a-814a-4b6b-810b-a730d7ed443a《Os malteses》1977、d4e4fdf3-422a-3515-b6ec-ce1a5055446f 與 741d9a3b-20b0-424c-a514-baae5d7d1406 兩個《Não Há Terra Que Resista: Contraponto》1979（同碟雙建檔）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vitorino；Vitorino Salomé；Semear Salsa Ao Reguinho",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Grupo de Acção Cultural",
+  "album": "Pois Canté !!",
+  "year": 1975,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "原盤發行方待研究層自壓片核；MB 轄下唯一 release 為 2010 年 iPlay（IPV-1422-2）",
+  "why": "Grupo de Acção Cultural（常縮寫為 GAC，全稱後段是 Vozes na Luta）是 1974 年之後成立的集體演唱團體，把採集自各省的勞動歌與新寫的曲目做成合唱編制，發行走的是文化協會與工會的通路而不是主流廠牌。MB 名下四個 release-group 全部標成 2010 年，那是葡萄牙 iPlay 一次把整套目錄重發的年份；《Pois Canté !!》原盤出版於 1975 年，year 依裁定 220 取原盤年。實掃 seed_cards.json 全 14,424 列，Grupo de Acção Cultural 池中 0 張。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：以縮寫 `GAC` 查 MB 回 632 個實體，**前十名沒有一個是這個團**（第一名是加州的 hip hop artist GAC，score 100），必須改用全稱 Grupo de Acção Cultural 才回得到 2e6a2bec——縮寫查法在這裡完全失效。卡片掛名取全稱。⚠ 年份來源衝突：MB 四個 RG 全記 2010，本卡取原盤年 1975（裁定 220、裁定 91），**原盤年與原盤發行方必須由研究層以壓片或 Discogs 條目覆核後才能寫進簡介**。盤名含兩個驚嘆號與空格，正規化後摺成 poiscante。Apple `search` 一種查法 8 個 storefront 全未命中，CAA release-group 端點 404（實測）——兩項都是觀察不是結論。⚠ 行文可寫 1974 年之後出版通路改變這一可查證的史實，但不得寫對該年事件或對 Estado Novo 的價值判斷。",
+  "mbNote": "釘 release-group 5f2100b0-f4fc-488a-9eab-468e5435372e。回問 release-group 端點確認：title「Pois Canté !!」、artist-credit「Grupo de Acção Cultural」、primary-type Album、secondary-types 空、first-release-date 2010（MB 值）、轄下 1 個 release（2010 iPlay IPV-1422-2，無國別）。**MB 沒有 1975 年 release 建檔**，year 欄取原盤年 1975。藝人 MBID 2e6a2bec-2ad4-4989-9527-ad7281c6643e。刻意不釘：26f35502-82e0-40a6-8b7b-8e37204ac8eb《... E Vira Bom》、c225fd0d-38d0-4dd0-9592-16088c21de4a《... Ronda De Alegria!!》（兩張 MB 同樣記 2010）、97db510b-d488-4a89-9d83-537fe9364f81《A Cantiga É Uma Arma》2010（Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Grupo de Acção Cultural；GAC；GAC Vozes na Luta；Pois Canté",
+  "reissuedBy": "iPlay（2010）",
+  "g": "b"
+ },
+ {
+  "artist": "Fausto",
+  "album": "Madrugada dos Trapeiros",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "MB 轄下唯一 release（1977 PT）未掛廠牌，原盤發行方待研究層自壓片核",
+  "why": "Fausto Bordalo Dias 出生於安哥拉、在葡萄牙長大，歌詞取材自葡萄牙的航海文獻與民間敘事，編制把傳統打擊與電吉他並置。這張 1977 年的碟是他 1974 年《P'ro que der e vier》之後的第三張，也是他往後《Por este rio acima》那種長篇組曲寫法的前一步。MB 名下 1970–1979 有五個 primary-type=Album，其中《Cantigas De Ida E Volta》與《A Confederação》是與 Sérgio Godinho、Vitorino、José Mário Branco 的多人合掛。實掃 seed_cards.json 全 14,424 列，Fausto 池中 0 張。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：MB 查 Fausto 回 132 個實體，目標 b5e11a13（disambiguation「Portuguese singer-songwriter」）**排第 2、score 99**，第 1 名是義大利的 Fausto Papetti（score 100）——score 排序不可用，只有 disambiguation 分得出來。另有 Fausto Leali（IT）、Fausto（CO）、Fausto Rossi（IT）、Capitão Fausto（PT）等至少 8 個同名近名實體。撞卡要同時掃 Fausto／Fausto Bordalo Dias 兩種寫法。Apple `search` 一種查法 8 個 storefront 全未命中——這是觀察不是結論。CAA release-group 端點 200（實測）。⚠ 行文可寫 Estado Novo 末期與 1974 年之後出版環境改變這一可查證的史實，但不得寫對該體制或對該年事件的價值判斷。",
+  "mbNote": "釘 release-group 99b039b9-89b7-3982-9e6f-8c74acb96e30。回問 release-group 端點確認：title「Madrugada dos Trapeiros」、artist-credit「Fausto」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 1 個 release（1977 PT，label-info 未填）。藝人 MBID b5e11a13-9358-4fbf-8eb6-a90e55c520ab。刻意不釘：c64f69a3-c78d-43b5-875e-4f5d791de3c6（Fausto Papetti 的藝人 MBID）、8073e5f1-8f68-4487-840c-22ad98fd0d99《Fausto》1970（自我同名）、9d87fd59-73c2-3aed-b2c7-7a5326966df7《P'ro que der e vier》1974、5eff1c20-7d5f-3b0b-98a7-0a749f31044a《Um Beco Com Saída》1975、caecf50b-dbe7-3c94-9914-dbf9f7e87197《Por este rio acima》1982（窗口外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fausto；Fausto Bordalo Dias；Madrugada dos Trapeiros",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Tantra",
+  "album": "Mistérios e maravilhas",
+  "year": 1977,
+  "genres": [
+   "rock"
+  ],
+  "label": "EMI（PT，catno 8E 068-40454）",
+  "why": "Tantra 1977 年在里斯本組成，Manuel Cardoso 主導，是葡萄牙 symphonic prog 少數留下完整 LP 目錄的樂團。這張首作原盤 EMI 8E 068-40454，MB 轄下三個 release：1977 葡萄牙原盤、1998 年法國 Musea（FGBG 4224.AR）、2007 年葡萄牙 Som Livre（VSL1198-2）。法國 Musea 這條復刻路徑與本批 Petrus Castrus 由 CNM 復刻是同一種形狀：本土目錄靠外部 prog 專門廠牌維持流通。實掃 seed_cards.json 全 14,424 列，Tantra 池中 0 張。",
+  "risk": "⚠ 短掛名回問（裁定 179／250）：MB 查 Tantra 回 47 個實體，目標 eb11ef6e（disambiguation「Portuguese progressive rock band」）**排第 2、score 99**，第 1 名是 italo-disco 的 Tantra（065f79ed，〈Hills of Katmandu〉，score 100）——score 排序不可用。另有比利時、阿根廷、新加坡、巴西、印尼等至少 7 個同名實體，只有 disambiguation 分得出來。盤名含重音符號 é，撞卡要同時掃 Misterios e maravilhas 與 Mistérios e maravilhas。CAA release-group 端點 200（實測）。復刻年 1998／2007 不得寫進 year 欄（裁定 220）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）fr 命中 collectionId 1394687781《Mistérios e Maravilhas》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 Estado Novo 末期與 1974 年之後出版環境改變這一可查證的史實，但不得寫對該體制或對該年事件的價值判斷。",
+  "mbNote": "釘 release-group 19e45006-7486-36ce-8ffd-1d4751143ab5。回問 release-group 端點確認：title「Mistérios e maravilhas」、artist-credit「Tantra」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 3 個 release（1977 PT EMI 8E 068-40454、1998 FR Musea FGBG 4224.AR、2007 PT Som Livre VSL1198-2）。藝人 MBID eb11ef6e-4a04-4212-b951-897c9e801267。刻意不釘：065f79ed-7465-4280-b96d-6c73baeb24d8（italo-disco 同名團的藝人 MBID）、214989b0-095d-3c8b-919f-bf333c0420a8《Holocausto》1978、e39f8805-20d2-4d1d-8860-bc4a4bca46ad《Humanoid Flesh》1981（窗口外）、872d3512-17b4-4727-9445-ca372d843d9d《Live Ritual》2003（Live）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tantra；Tantra (Portuguese prog)；Misterios e maravilhas",
+  "reissuedBy": "Musea（1998 FR）；Som Livre（2007 PT）",
+  "g": "b"
+ },
+ {
+  "artist": "Brigada Víctor Jara",
+  "album": "Eito fora",
+  "year": 1977,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "MB 轄下唯一 release（1977）未掛廠牌與國別，原盤發行方待研究層自壓片核",
+  "why": "1975 年在科英布拉成立的採集與演奏團體，團名取自智利歌手 Víctor Jara。他們到各省採錄傳統曲調與樂器（cavaquinho、adufe、braguesa），再以合奏形式重錄，是葡萄牙 1970 年代後期民謠復振路線最有系統的一支。這張 1977 年的首張專輯《Eito fora》是他們目錄的起點，MB 名下 1977–1984 有四張。實掃 seed_cards.json 全 14,424 列，Brigada Víctor Jara 池中 0 張。",
+  "risk": "掛名回 4,095 個候選，第 2 名是智利的 Víctor Jara 本人（b7e6a7fb，score 54），另有義大利的 Collettivo Victor Jara、希臘的 Brigada 等近名實體；**掛名取自另一位真實人物，行文不得把兩者混為一談，也不得由團名反推對該人物的敘述**。掛名含重音符號 í：Brigada Víctor Jara 與 Brigada Victor Jara 兩種寫法都要進撞卡掃描（MB 實體名帶重音，本團自己的盤面兩種都出現過）。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）us 命中 collectionId 1181544641《Eito Fora》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 1974 年之後出版與採集環境改變這一可查證的史實，但不得寫對該年事件或對 Estado Novo 的價值判斷。",
+  "mbNote": "釘 release-group ec4ec8a0-708f-4cb9-b167-f5a7d64f0e2d。回問 release-group 端點確認：title「Eito fora」、artist-credit「Brigada Víctor Jara」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 1 個 release（1977，無國別、label-info 未填）。藝人 MBID 050ce7ea-0935-430f-bcec-b83e702298eb。刻意不釘：b7e6a7fb-1d38-4ad8-bd97-c125ad4421ab（智利 Víctor Jara 的藝人 MBID）、71f8014a-82ca-431e-9320-def383f7e5e3《Quem sai aos seus》1981、e82367f5-8e5f-4a71-bcf4-55af932982be《Marcha Dos Foliões》1982、02f5f0ef-ebaa-4fde-b72c-fed836d5932c《Contraluz》1984、b7935cbe-5c75-352e-825f-969f4386314f《15 Anos - Colectânea》（合輯、無年份）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Brigada Víctor Jara；Brigada Victor Jara；Eito fora",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Trovante",
+  "album": "Chão Nosso",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Diapasão（PT，catno 16013）",
+  "why": "Trovante 1976 年在里斯本組成，João Gil、Luís Represas 與 Artur Costa 等人，早期編制是原音吉他與多聲部人聲，後期才轉向流行搖滾。這張 1977 年的首作原盤 Diapasão 16013，是他們仍在 canção de intervenção 語彙裡的一張。MB 全域查 Trovante 只回 2 個實體（本團與 João Gil 本人），是本批身分最乾淨的葡萄牙掛名之一。實掃 seed_cards.json 全 14,424 列，Trovante 池中 0 張。",
+  "risk": "掛名同名風險低（MB 全域只有 2 個結果），但摺鍵 trovante 與西語／葡語常見詞 trovante、trovador 的誤命中要在去重時看。MB 另有 c372471a《Saudade》無年份、145b8a25《Baile No Bosque》1988（primary-type 為空、Compilation）與 d04ecdb5《Baile No Bosque》2007 兩個同名條目，去重要以 rgMbid 為準。Apple `search` 一種查法 8 個 storefront 全未命中——這是觀察不是結論，研究層要跑藝人目錄與 collectionId 直查。CAA release-group 端點 200（實測）。⚠ 行文可寫 1974 年之後出版環境改變這一可查證的史實，但不得寫對該年事件或對 Estado Novo 的價值判斷。",
+  "mbNote": "釘 release-group 8c263950-dcc3-33f7-9aa8-cc42daeced10。回問 release-group 端點確認：title「Chão Nosso」、artist-credit「Trovante」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 1 個 release（1977 PT Diapasão 16013）。藝人 MBID 3ef118de-bfc5-4f53-aff1-4658b0445083。刻意不釘：f7f03cd7-dd38-4737-a9ca-6a5779a96070（João Gil 的藝人 MBID）、79f40257-c7ea-493f-8fb4-c822613473b4《Em Nome Da Vida》1979、f2cf773e-ef2f-3137-b9ba-2e467c5aed71《Aula Magna 1983 - Livre Trânsito》2003（後出版的現場）、4d8c8a7d-dc72-481c-851a-41da24cf13c6《O Melhor dos Trovante》2010（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Trovante；Chão Nosso；Chao Nosso",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Carlos do Carmo",
+  "album": "Um homem na cidade",
+  "year": 1977,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Trova（PT，catno MOV. 7005）",
+  "why": "Carlos do Carmo 是 fadista Lucília do Carmo 之子，1960 年代起在里斯本的 fado 場子演唱，編制引進弦樂與爵士和聲。這張 1977 年的碟全部歌詞出自詩人 José Carlos Ary dos Santos，寫的是里斯本的街區與人物，是 fado 從個人抒情轉向都市書寫的一張。原盤 Trova MOV. 7005，MB 轄下四個 release（1980 Trova 再版、1995 Philips 518918 2、另有 Universal Music Portugal 一筆無日期）。實掃 seed_cards.json 全 14,424 列，Carlos do Carmo 池中 0 張——池中葡萄牙 fado 只有 Amália Rodrigues 五張。",
+  "risk": "掛名回 5,455 個候選，同姓的有 Lucília do Carmo（PT，其母）、Gil do Carmo（PT）、Dina do Carmo（PT），撞卡要看全名。盤名 Um homem na cidade 與同一位藝人 1983 年的《Um homem no país》（9f53ec51）只差一個詞，摺鍵不同但去重要注意。CAA release-group 端點 200（實測）。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）es 命中 collectionId 1443618642《Um Homem Na Cidade》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 Estado Novo 末期與 1974 年之後 fado 在葡萄牙的接受狀況改變這一可查證的史實，但不得寫對該體制或對該年事件的價值判斷，也不得對 fado 與體制的關係作定性。",
+  "mbNote": "釘 release-group 6eb30f59-3d1d-462f-ab19-e34533e7c3b4。回問 release-group 端點確認：title「Um homem na cidade」、artist-credit「Carlos do Carmo」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 4 個 release（1977 PT Trova MOV. 7005、1980 PT Trova MOV. 7005、1995 PT Philips 518918 2、一筆無日期 Universal Music Portugal）。藝人 MBID d69e14f1-4276-4935-a5d0-495bb11a109c。刻意不釘：e3f36dd6-cd2a-4a43-93f6-38f427299c8b（Lucília do Carmo 的藝人 MBID）、c8acffb4-dbef-4e85-baaa-be43af84a502《Por morrer uma andorinha》1969、5802a1af-060a-481f-8de0-4b595917acae 與 0dd13ebf-b8f9-4dc0-85ba-a4431f55931a 兩個自我同名《Carlos do Carmo》1970／1972、9f53ec51-3c10-45be-860a-6eb45de19e6d《Um homem no país》1983、9137355b-901d-43c1-8a97-930380e3882e《Ao vivo no Olympia》1980（Live）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Carlos do Carmo；Um homem na cidade",
+  "reissuedBy": "Philips（1995 PT）；Universal Music Portugal",
+  "g": "b"
+ },
+ {
+  "artist": "José Cid",
+  "album": "10000 Anos Depois Entre Vénus e Marte",
+  "year": 1978,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Orfeu（PT，catno FPAT 6001）",
+  "why": "José Cid 先帶 Quarteto 1111，1978 年以個人名義做出這張以合成器（Mellotron、Minimoog、ARP）為主要語法的概念碟，原盤 Orfeu FPAT 6001。MB 轄下八個 release，1994 年美國 Art Sublime（ASCD1194-005）與 XW、KR、CL 各有壓片——葡萄牙本土 prog 目錄裡流通最廣的一張。這張與本批 Petrus Castrus《Mestre》、Tantra《Mistérios e maravilhas》構成 Estado Novo 末期到革命後三年之間葡萄牙 prog 的三個節點。實掃 seed_cards.json 全 14,424 列，José Cid 池中 0 張。",
+  "risk": "掛名回 13,107 個候選，摺鍵 josecid 與 CID（US electronic producer）、CID（Paris punk）、C.I.D.、José Ramón Cid（ES）等至少 7 個實體同鍵或近鍵，只有 PT／1942-02-04 與名下目錄能確認。盤名以阿拉伯數字開頭（10000），與可能出現的「10.000」「10 000」寫法在正規化後摺鍵不同，三種寫法都要進撞卡掃描。同一位藝人 1971 與 1989 各有一張自我同名《José Cid》，與掛名字串相同。Apple `search` 一種查法 8 個 storefront 全未命中——這是觀察不是結論。CAA release-group 端點 200（實測）。⚠ 行文可寫 1974 年之後出版環境改變這一可查證的史實，但不得寫對該年事件或對 Estado Novo 的價值判斷。",
+  "mbNote": "釘 release-group ab96cbfb-3bde-3d17-98b3-63b008e6d9d6。回問 release-group 端點確認：title「10000 Anos Depois Entre Vénus e Marte」、artist-credit「José Cid」、first-release-date 1978-08-15、primary-type Album、secondary-types 空、轄下 8 個 release（1978 PT Orfeu FPAT 6001、1978-08-15 XW、1994 US Art Sublime ASCD1194-005 等，另有 KR／CL 盤）。藝人 MBID 61999b78-db51-4331-b8d3-7fff1bc8bf70。刻意不釘：72cf3834-4473-487b-9a79-ef18a4d08731《José Cid》1971-05-21 與 4c5afd8c-5ec8-4750-b807-48be63a04b29《José Cid》1989（兩張自我同名）、5b4f2988-7d82-4d12-95d2-35c634f3fe2f《O Meu Piano》1978（同年）、c71724cc-7274-4b3f-84c7-ff48a1cf3844《Os Grandes, Grandes Êxitos de...》1980、d60d5997-1579-45ff-bd0f-a5e83b5cfc5d（Quarteto 1111 的藝人 MBID）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "José Cid；Jose Cid；10000 Anos Depois Entre Vénus e Marte；10.000 Anos Depois Entre Vénus e Marte",
+  "reissuedBy": "Art Sublime（1994 US）",
+  "g": "b"
+ },
+ {
+  "artist": "Jorge Palma",
+  "album": "Qualquer Coisa Pá Música",
+  "year": 1979,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB 轄下唯一 release（1979）未掛廠牌與國別，原盤發行方待研究層自壓片核",
+  "why": "Jorge Palma 1970 年代初在瑞士與法國街頭演唱，回葡萄牙後以鋼琴與吉他自伴的形式出片。這張 1979 年的碟是他 MB 目錄裡有明確年份的第一張，語法把美式 singer-songwriter 的和聲接到葡語口語的斷句上，與同期 canção de intervenção 的集體語彙分岔。MB 名下 1979–1986 有五張 primary-type=Album。實掃 seed_cards.json 全 14,424 列，Jorge Palma 池中 0 張。",
+  "risk": "掛名回 2,128 個候選，前十只有目標實體與泛泛近名，身分風險低。⚠ 但他早期的《Com uma viagem na palma da mão》在 MB 被記成 2007（ba46057e），與一般記載的 1975 不符——同一位藝人在 MB 上的年份可信度不一致，本卡改取 MB 年份明確且與外部記載一致的 1979 這張。MB 另有 cc9b6ae7《'Té Já》無年份、faa8b449《Jorge Palma》2001 自我同名。Apple `search` 一種查法 8 個 storefront 全未命中，CAA release-group 端點 404（實測）——兩項都是觀察不是結論，封面與店面要由研究層另跑。⚠ 行文可寫 1974 年之後出版環境改變這一可查證的史實，但不得寫對該年事件或對 Estado Novo 的價值判斷。",
+  "mbNote": "釘 release-group e3ad8777-95c4-3be4-b173-c2c434fcd610。回問 release-group 端點確認：title「Qualquer Coisa Pá Música」、artist-credit「Jorge Palma」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 1 個 release（1979，無國別、label-info 未填）。藝人 MBID 386c9f8f-31d8-4815-b4c5-7c875f96c2b0。刻意不釘：ba46057e-7019-4960-a055-b1e6f975bf0d《Com uma viagem na palma da mão》（MB 記 2007，年份與外部記載不符）、d8d1e89a-d4ca-3536-ac26-0d2826a39f01《Acto Contínuo》1982、faa8b449-77cb-39df-9877-53911f0eb13a《Jorge Palma》2001（自我同名）、71f31048-6f93-3bbb-a003-6473c710592a《Dá-me Lume: O Melhor de Jorge Palma》2000（合輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jorge Palma；Qualquer Coisa Pá Música；Qualquer Coisa Pa Musica",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Salada de Frutas",
+  "album": "Sem Açúcar",
+  "year": 1980,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB 轄下唯一 release（1980 PT）未掛廠牌，原盤發行方待研究層自壓片核",
+  "why": "Salada de Frutas 1980 年在里斯本組成，是葡萄牙第一批把 new wave 編制與葡語口語歌詞放在一起的樂團之一。這張《Sem Açúcar》是他們的首張專輯，MB 轄下只有一個 1980 年葡萄牙 release。他們與 Xutos & Pontapés（1978 年組成、1982 年才出首張 LP）同屬革命後五年之內冒出來的里斯本樂團線，但比後者早兩年留下整張碟——這是本組年份窗口（1960–1980）內最後一張。實掃 seed_cards.json 全 14,424 列，Salada de Frutas 池中 0 張。",
+  "risk": "掛名回 27,907 個候選，MB artist-credit 寫作「Salada De Frutas」（大寫 D）而藝人實體名是「Salada de Frutas」，兩種寫法都要進撞卡掃描。盤名含 ç 與重音符號，Sem Acucar／Sem Açúcar 兩種寫法都要掃。⚠ MB 建檔極薄：唯一的 release 沒有廠牌與編號，label 欄不得由推測填入。CAA release-group 端點 404（實測），封面解析要另尋來源。Apple `search` 一種查法（es→pt→fr→gb→us→de→br→mx 依序）es 命中 collectionId 6785530204《Sem Açúcar》——這只是一種查法的觀察不是結論，研究層要另跑藝人目錄與 collectionId 直查兩種。⚠ 行文可寫 1974 年之後出版環境改變這一可查證的史實，但不得寫對該年事件或對 Estado Novo 的價值判斷。",
+  "mbNote": "釘 release-group ef28ced7-151e-4f11-a988-01fdedce8f54。回問 release-group 端點確認：title「Sem Açúcar」、artist-credit「Salada De Frutas」、first-release-date 1980、primary-type Album、secondary-types 空、轄下 1 個 release（1980 PT，label-info 未填）。藝人 MBID abae763b-9100-40c1-acd8-52c1b5ee50e5（MB 實體名 Salada de Frutas）。刻意不釘：898e99d3-710d-4056-821a-8e783959cc27《Se Cá Nevasse...》1981（窗口外）、2c082e47-0fe4-4b4b-8086-5905dcedbcd7《Crime Perfeito》1982（窗口外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Salada de Frutas；Salada De Frutas；Sem Açúcar；Sem Acucar",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

@@ -1,0 +1,407 @@
+[
+ {
+  "artist": "Claude François",
+  "album": "Comme d'habitude",
+  "year": 1967,
+  "genres": [
+   "pop"
+  ],
+  "label": "Disques Flèche／Philips（catno 844 800 BY）",
+  "why": "Claude François 1967 年在自營廠牌 Disques Flèche（透過 Philips 發行）的專輯，同名曲〈Comme d'habitude〉即 Paul Anka 改寫成〈My Way〉的原曲。MB 該 release-group 轄下三筆 release 全 FR／Official：1967 年的 12 吋（Disques Flèche／Philips 844 800 BY，11 軌）、2000 年 Mercury 536 158-2 的 CD、2014-05 Mercury 378 190-9 的 19 軌加曲版。實掃 seed_cards.json 全 14,424 列：Claude François 池中 0 張——法國 yé-yé 世代最大的目錄之一在卡池裡不存在。池中同代的只有 France Gall《Poupée de cire, poupée de son》（1965）、Michel Polnareff《Polnareff's》（1971）、Jacques Dutronc《Jacques Dutronc》（1966）、Françoise Hardy 4 張各一支。這張補的是那一群旁邊最大的缺口。",
+  "risk": "**同名 EP 是最直接的假陽性**：1967-11 的 EP《Comme d'habitude》（1094e1f0），與本張同年同名、只差 release-type，已標刻意不釘。他 1963 年另有兩個同名 release-group《Si j'avais un marteau》（6628edab 與 cc3c1907），可見 MB 對這位藝人的建檔本身就有重複，藝人端查詢要逐筆比對日期與 type。2014 年 Mercury 的 19 軌版與原盤 11 軌差 8 軌，屬加曲再發，不得拿來反推原盤（裁定 141）。Apple fr collectionId 1443781606（Comme d'habitude，11 軌，releaseDate 記 1968-01-01；MB 記 1967，差一年，Apple 的日期只能當訊號）。店面 fr 命中。",
+  "mbNote": "釘 release-group ba3eaf74-11b3-4cd9-b734-7ae17c91d51b。回問確認：title「Comme d’habitude」（U+2019 撇號）、artist-credit「Claude François」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 3 個 release 全 FR／Official（Disques Flèche／Philips 844 800 BY 12\"x11、Mercury 536 158-2 CDx11 2000、Mercury 378 190-9 CDx19 2014）。藝人 MBID 1cfbf85c-dc74-42d6-915e-77033afd0204（Person／France），名下 190 個 release-group。刻意不釘：1094e1f0-042c-430a-a9f8-f827dabe9158《Comme d’habitude》（1967-11 EP，同年同名）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Comme d habitude；Claude Francois Comme d'habitude；My Way",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Claude François",
+  "album": "Le Lundi au soleil",
+  "year": 1972,
+  "genres": [
+   "pop"
+  ],
+  "label": "Disques Flèche（catno 6450 502）",
+  "why": "Claude François 1972 年在 Disques Flèche 的專輯。MB 該 release-group 轄下三筆 release 全 FR／Official：1972 年的 12 吋（6450 502，12 軌）、1998 年 Versailles 的 CD（12 軌）、2014-09 Mercury 378 660-7 的 15 軌加曲版。實掃 seed_cards.json：Claude François 池中 0 張。這張與《Comme d'habitude》（1967）、《Magnolias for Ever》（1977）三張分別落在他 60／70 年代前期／70 年代末三個節點。",
+  "risk": "**同名 Single 同年發行**（ab6881a5，1972），與專輯同名同年、只差 release-type，已標刻意不釘——這是裁定 179 第 1 點「同名先行單曲」在 70 年代法國盤上的同型。2014 年 Mercury 的 15 軌版與原盤 12 軌差三軌。Apple fr collectionId 253642790（Le lundi au soleil，12 軌，releaseDate 1972-01-01），collectionName 的 l 小寫、MB 的 L 大寫，兩種寫法都要進 queryAlias。店面 fr 命中。",
+  "mbNote": "釘 release-group cb73c124-fcbe-4592-b8e4-79a173583f6d。回問確認：title「Le Lundi au soleil」、artist-credit「Claude François」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 3 個 release 全 FR／Official（Disques Flèche 6450 502 12\"x12、Versailles CDx12 1998、Mercury 378 660-7 CDx15 2014）。藝人 MBID 1cfbf85c-dc74-42d6-915e-77033afd0204，名下 190 個 release-group。刻意不釘：ab6881a5-e4f9-43af-be88-a9c17515c9f5《Le Lundi au soleil》（1972 Single，同年同名）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Le lundi au soleil；Claude Francois Le Lundi au soleil",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Claude François",
+  "album": "Magnolias for Ever",
+  "year": 1977,
+  "genres": [
+   "pop"
+  ],
+  "label": "Disques Flèche（catno 67.215）",
+  "why": "Claude François 1977 年 12 月在 Disques Flèche 的專輯，是他 1978 年 3 月身故前發表的最後一張錄音室作品。MB 該 release-group 轄下三筆 release 全 FR／Official：1977-12 的 12 吋（67.215，10 軌）、2004-01-13 的 CD、2014-06 Mercury 378 191-2 的 16 軌加曲版。實掃 seed_cards.json：Claude François 池中 0 張。這張是本批三張 Claude François 裡最晚的一個節點，也把他從 yé-yé 進到 disco 的那一步補上。",
+  "risk": "**同名假陽性有三筆**：1977-11 的 Single《Magnolias for ever》（37d38436，比專輯早一個月，正是裁定 179 第 1 點的形狀）、2023 年的 Remix 專輯《Magnolias for Ever (Mixes & Remixes)》（f8736ddd），以及 Apple 上的 2022 年〈Magnolias for Ever (Fred Falke Remixes)〉單曲。**Apple 的 search 端點在八個店面回的都是那張 2022 混音單曲（fr 1651629705，2 軌）**，專輯本身只有藝人目錄端點看得到（裁定 173）：fr collectionId **274663463**（Magnolias for Ever，10 軌，releaseDate 記 1978-01-01；MB 記 1977-12，跨年一個月）。配對必須用 274663463 直查。原盤 12 吋 10 軌、2014 再發 16 軌。店面 fr。",
+  "mbNote": "釘 release-group 27f5c5e8-a414-394b-aa60-0b9aaab2f325。回問確認：title「Magnolias for Ever」、artist-credit「Claude François」、first-release-date 1977-12、primary-type Album、secondary-types 空、轄下 3 個 release 全 FR／Official（Disques Flèche 67.215 12\"x10「Magnolias For Ever」、CDx10 2004、Mercury 378 191-2 CDx16 2014）。藝人 MBID 1cfbf85c-dc74-42d6-915e-77033afd0204，名下 190 個 release-group。刻意不釘：37d38436-a8e2-4373-a35f-4f66a2814e89《Magnolias for ever》（1977-11 Single，早專輯一個月）、f8736ddd-444d-44a4-9e29-08b081d476a9《Magnolias for Ever (Mixes & Remixes)》（2023 Remix 專輯）、e16f6c59-d3e8-4416-9d3b-989365ead5d5《Bordeaux Rosé》（1978-04 Album，身後發行）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Magnolias For Ever；Magnolias for ever；Claude Francois Magnolias for Ever",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mylène Farmer",
+  "album": "Cendres de lune",
+  "year": 1986,
+  "genres": [
+   "pop"
+  ],
+  "label": "Polydor（catno 829 127-1）",
+  "why": "Mylène Farmer 的首張專輯，1986-04-01 由 Polydor 同時發 12 吋（829 127-1，9 軌）與 Cassette（829 127-4）；1987 年 Polydor 又出兩種擴充版（829 127-1 的 10 軌 12 吋、831 732-2 的 12 軌 CD），MB 該 release-group 共 14 筆 release、國別橫跨 FR／AL／AF。實掃 seed_cards.json 全 14,424 列：Mylène Farmer 池中只有《Ainsi soit je...》（1988）一張，也就是第二張專輯。這張補的是那張唯一卡的上游。",
+  "risk": "同一 release-group 內 1986 原盤 9 軌、1987 擴充版 10 軌與 12 軌並存，軌數不是識別鍵（裁定 174）；卡片年份取 first-release-date 1986-04-01。Apple fr collectionId 1855821691（Cendres de lune，12 軌，releaseDate 1986-04-01，日期與 MB 完全一致），配到的曲目長度是 1987 擴充版而非 1986 原盤 9 軌，行文不得拿它當原盤曲目（裁定 141）。池中既有的《Ainsi soit je...》盤名帶 ASCII 三點，本批的《L'Autre...》沿用同一寫法（MB 用 U+2026）。店面 fr 命中。",
+  "mbNote": "釘 release-group 2766bddd-96a1-32ca-b057-81cab37ab52d。回問確認：title「Cendres de lune」、artist-credit「Mylène Farmer」、first-release-date 1986-04-01、primary-type Album、secondary-types 空、轄下 14 個 release 全 Official，國別 FR／AL／AF（FR Polydor 829 127-1 12\"x9 原盤、829 127-4 Cassette x9、829 127-2 CDx10、1987 年 829 127-1 12\"x10 與 831 732-2 CDx12）。藝人 MBID 18b23026-ed29-445a-9bb4-4e86598ab5a9（Person／France／Pierrefonds），名下 216 個 release-group。刻意不釘：2ff519b6-3f95-3648-8d75-f5d7ba6b5610《Ainsi soit je…》（1988 Album，**池中已有，不重複收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Cendres de Lune；Mylene Farmer Cendres de lune",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mylène Farmer",
+  "album": "L'Autre...",
+  "year": 1991,
+  "genres": [
+   "pop"
+  ],
+  "label": "Polydor（catno 849 217-2）",
+  "why": "Mylène Farmer 的第三張專輯，1991-04-09 由 Polydor 發 CD（849 217-2，10 軌）。MB 該 release-group 轄下 12 筆 release，除一筆 CA 的 Promotion 卡帶外全部 Official，2002-09-16 與 2018-07-29 兩度出數位版、2009 年 Polydor 849 217-1 出 12 吋，是唱片持續被原廠重發的證據。實掃 seed_cards.json：Mylène Farmer 池中只有《Ainsi soit je...》（1988）。這張正好接在那張之後。",
+  "risk": "盤名結尾的刪節號 MB 用 U+2026（L’Autre…），卡片依池中既有《Ainsi soit je...》的寫法改用 ASCII 三點，撇號亦改 ASCII；MB 的 2018 數位版又把刪節號整個去掉寫成《L’Autre》，三種寫法都要進 queryAlias。轄下有一筆 CA Promotion（Polydor PROC 81，8 軌卡帶），依裁定 43／57 不採為背書。Apple 在 fr 店面查無、**be 店面命中**：collectionId 1855831155（L'autre，10 軌，releaseDate 1991-04-08；MB 記 1991-04-09，差一天）——法語圈鄰接市場的店面差異，be 要一起試。",
+  "mbNote": "釘 release-group acba2e91-7c1e-38ed-b7df-f06fc4a5f528。回問確認：title「L’Autre…」（U+2019＋U+2026）、artist-credit「Mylène Farmer」、first-release-date 1991-04-09、primary-type Album、secondary-types 空、轄下 12 個 release（11 筆 Official＋1 筆 CA Promotion 卡帶），國別 FR／CA／AF（FR Polydor 849 217-2 CDx10 為原盤、849 217-1 12\"x10 2009、Polydor 數位 x10 2002 與 2018、982 825-5 CDx10 2005）。藝人 MBID 18b23026-ed29-445a-9bb4-4e86598ab5a9，名下 216 個 release-group。刻意不釘：acba2e91 之外無同名別碟；對照組為 8b918772-9d9a-31ac-bdba-0b6b2e272f33《Anamorphosée》（1995，本批另收一張，非假陽性）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "L'autre；L'Autre；Mylene Farmer L'Autre",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mylène Farmer",
+  "album": "Anamorphosée",
+  "year": 1995,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Polydor（catno 529 260-2）",
+  "why": "Mylène Farmer 的第四張專輯，1995-11-01 由 Polydor 發行（529 260-2，12 軌），同年日本 Polydor 以 POCP-7085 出 14 軌版，2009 年另有 529 260-1 的 12 吋。MB 該 release-group 轄下 12 筆 release，國別橫跨 JP／FR／RU。實掃 seed_cards.json：Mylène Farmer 池中只有《Ainsi soit je...》（1988）。本批三張（1986／1991／1995）與池中那一張合起來，會把她 80 到 90 年代的四張正規盤補齊。",
+  "risk": "**轄下有 Bootleg**：MB 該 release-group 的 12 筆 release 裡 status 含 Official 與 Bootleg 兩種（RU 那一側），依裁定 179 第 3 點只有回問 inc=releases 才看得到；FR Polydor 529 260-2 是 Official 原盤，收，但再發背書不採 Bootleg 那筆（裁定 43／57）。JP 版 14 軌與 FR 版 12 軌並存，軌數不是識別鍵。Apple fr collectionId 1855822898，collectionName 是「Anamorphosée (Deluxe)」24 軌——**是豪華版而不是 1995 原盤**，配對時要在 fr 藝人目錄裡另找 12 軌的原版（裁定 173／175），行文不得拿 24 軌當原盤曲目。店面 fr 命中。",
+  "mbNote": "釘 release-group 8b918772-9d9a-31ac-bdba-0b6b2e272f33。回問確認：title「Anamorphosée」、artist-credit「Mylène Farmer」、first-release-date 1995-11-01、primary-type Album、secondary-types 空、轄下 12 個 release，status 含 Official 與 Bootleg，國別 JP／FR／RU（FR Polydor 529 260-2 CDx12 為原盤、JP Polydor POCP-7085 CDx14、FR Polydor 529 260-1 12\"x12 2009、Polydor 數位 x12 2002、982 832-9 CDx12 2005）。藝人 MBID 18b23026-ed29-445a-9bb4-4e86598ab5a9，名下 216 個 release-group。刻意不釘：a2e55b13-e75f-32de-9f17-4561f47275b5《Innamoramento》（1999 Album，下一張正規盤，本批未收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Anamorphosee；Mylene Farmer Anamorphosée",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Étienne Daho",
+  "album": "Mythomane",
+  "year": 1981,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Virgin（catno 70170）",
+  "why": "Étienne Daho 的首張專輯，1981 年 Virgin 12 吋（70170，10 軌），從 Rennes 的獨立場景進到 Virgin 廠牌。MB 該 release-group 轄下 5 筆 release 全 FR／Official：1981 原盤、1987 與 1995 兩次 Virgin France CD 再發（各 10 軌）、2011-10-31 EMI Music France 509990273162 9 的 16＋26 軌雙碟擴充版。實掃 seed_cards.json 全 14,424 列：Étienne Daho 池中 0 張——法國 80 年代流行最核心的目錄之一在卡池裡不存在。池中 80 年代法語流行只有 Indochine《L'Aventurier》、Mylène Farmer《Ainsi soit je...》、Jean-Jacques Goldman《Entre gris clair et gris foncé》、Renaud《Mistral gagnant》各一張。本批四張 Daho 補的就是那一塊。",
+  "risk": "掛名帶重音（Étienne Daho），MB alias 另有無重音的「Etienne Daho」；卡池對法語掛名一律保留重音（裁定 26／70），去重音形只進 queryAlias。MB 另有一個藝人實體「St. Etienne Daho」（0f4d81c6，Daho 與 Saint Etienne 的合作團），藝人字串比對會撈到，不是同一實體。Apple 在 fr 店面查無、**be 店面命中**：collectionId 1482781247（Mythomane (2011 Remaster)，10 軌，releaseDate 1981-11-10；MB 只記到年 1981）——be 是這批必試的鄰接店面。",
+  "mbNote": "釘 release-group 84574dcb-b533-3615-9117-866dede4ebc8。回問確認：title「Mythomane」、artist-credit「Étienne Daho」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 5 個 release 全 FR／Official（Virgin 70170 12\"x10 原盤、Virgin France 868702 CDx10 1987、Virgin France 7868700 CDx10 1995、Virgin France CDx10、EMI Music France 509990273162 9 CDx16+CDx26 2011）。藝人 MBID 1e0de31c-4957-4649-9aa3-7b0f1d9d2c84（Person／France／Oran），名下 97 個 release-group。**別實體**：0f4d81c6-76e3-45be-827c-f89c5a74e02c「St. Etienne Daho」（合作團，非本人）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Etienne Daho Mythomane；Mythomane 2011 Remaster",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Étienne Daho",
+  "album": "La Notte, la Notte...",
+  "year": 1984,
+  "genres": [
+   "pop"
+  ],
+  "label": "Virgin（catno 70232）",
+  "why": "Étienne Daho 的第二張專輯，1984 年 Virgin 同時發 12 吋（70232）與 CD（868672）各 10 軌，收〈Week-end à Rome〉。MB 該 release-group 轄下 5 筆 release 全 FR／Official，1995 年 Virgin France 840488 2 再發、2014-03-31 Parlophone 同時出 12 吋（082564633794 1）與雙 CD 擴充版（19＋18 軌）。實掃 seed_cards.json：Étienne Daho 池中 0 張。這張接在《Mythomane》（1981）之後、《Pop Satori》（1986）之前。",
+  "risk": "盤名帶逗號與結尾三點（La Notte, la Notte...），MB 用的是 ASCII 三點、與卡片一致，但 Apple fr 把三點整個去掉寫成「La notte, la notte (2014 Remastered)」，兩種都要進 queryAlias。義大利文盤名掛在法語藝人名下，跨語系搜尋容易配到義大利藝人的同名碟，配對走 collectionId 直查。Apple fr collectionId 1482780691（10 軌，releaseDate 1984-03-03；MB 只記到年 1984）。店面 fr 命中。",
+  "mbNote": "釘 release-group e892aff4-d2ac-34b5-ba47-ef7585435be9。回問確認：title「La Notte, la Notte...」、artist-credit「Étienne Daho」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 5 個 release 全 FR／Official（Virgin 70232 12\"x10、Virgin 868672 CDx10、Virgin France 840488 2 CDx10 1995、Parlophone 082564633794 1 12\"x10 2014、Parlophone 082564633797 2 CDx19+CDx18 2014）。藝人 MBID 1e0de31c-4957-4649-9aa3-7b0f1d9d2c84，名下 97 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "La notte la notte；La Notte La Notte；Etienne Daho La Notte, la Notte",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Étienne Daho",
+  "album": "Pop Satori",
+  "year": 1986,
+  "genres": [
+   "pop"
+  ],
+  "label": "Virgin France（catno 70429）",
+  "why": "Étienne Daho 的第三張專輯，1986 年 Virgin France 同時發 12 吋（70429）與 CD（30030）各 12 軌。MB 該 release-group 轄下 7 筆 release 全 Official，1995 年 Virgin 8404902 再發、2006-09 Capitol Records 出 17 軌與 19＋20 軌兩種擴充版、Parlophone France 另有數位版（12 軌），是唱片被三家繼承廠牌反覆整編的證據。實掃 seed_cards.json：Étienne Daho 池中 0 張。這張在他四張裡是 80 年代中段的節點。",
+  "risk": "2006 年 Capitol 那筆的 collectionName／title 用小寫 satori（Pop satori），與原盤大寫的《Pop Satori》不同，兩種寫法都要進 queryAlias。1986 原盤 12 軌、2006 擴充版 17／19／20 軌並存，軌數不是識別鍵（裁定 174），行文以 12 軌原盤為準。Apple fr collectionId 1487678797（Pop Satori (2006 Remaster)，12 軌，releaseDate 1986-04-01，與 MB first-release-date 完全一致）。店面 fr 命中。",
+  "mbNote": "釘 release-group e56d9330-2c62-3036-a891-7046158409f1。回問確認：title「Pop Satori」、artist-credit「Étienne Daho」、first-release-date 1986-04-01、primary-type Album、secondary-types 空、轄下 7 個 release 全 Official，國別 XW／FR（Virgin France 70429 12\"x12 原盤、Virgin France 30030 CDx12、Parlophone France 數位 x12、Virgin 8404902 CDx12 1995、Capitol Records CDx19+CDx20 與 0946 379972 6 CDx17 2006）。藝人 MBID 1e0de31c-4957-4649-9aa3-7b0f1d9d2c84，名下 97 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pop satori；Etienne Daho Pop Satori",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Étienne Daho",
+  "album": "Eden",
+  "year": 1996,
+  "genres": [
+   "pop"
+  ],
+  "label": "Virgin Music France（catno 7243 8424352 4）",
+  "why": "Étienne Daho 1996 年在 Virgin 的專輯，接在《Paris ailleurs》（1991）之後。MB 該 release-group 轄下三筆 release 全 FR／Official：1996 年的 Virgin France CDVIRX 61（13 軌）、1996-11-19 的 Virgin Music France 7243 8424352 4 Enhanced CD（12 軌）、2019-10-18 Parlophone／Warner 953 945 3 的三碟擴充版（20＋19＋13 軌）。實掃 seed_cards.json：Étienne Daho 池中 0 張。本批四張（1981／1984／1986／1996）把他從首張到 90 年代的四個節點一次補齊。",
+  "risk": "**盤名只有四個字母（Eden），是全批第二短的識別字串。** 卡池與外部服務都有大量同名碟（不同藝人），配對必須以藝人＋collectionId 雙重限定。同一藝人名下另有 1998 年的 Compilation《Paris Ailleurs - Eden》（6b4c7472），盤名把本張包進去，是子字串比對最容易配錯的一筆，已標刻意不釘。1996 兩筆 release 一為 13 軌、一為 12 軌 Enhanced CD，軌數不是識別鍵。Apple fr collectionId 1482930599（Eden (2019 Remaster)，12 軌，releaseDate 1996-11-19，與 MB 完全一致）。店面 fr 命中。",
+  "mbNote": "釘 release-group 65c9a66f-ae04-38e6-b8a4-f5d61f8c9ff9。回問確認：title「Eden」、artist-credit「Étienne Daho」、first-release-date 1996-11-19、primary-type Album、secondary-types 空、轄下 3 個 release 全 FR／Official（Virgin France CDVIRX 61 CDx13、Virgin Music France 7243 8424352 4 Enhanced CDx12、Parlophone／Warner 953 945 3 CDx20+CDx19+CDx13 2019）。藝人 MBID 1e0de31c-4957-4649-9aa3-7b0f1d9d2c84，名下 97 個 release-group。刻意不釘：6b4c7472-02a4-4090-84a6-a93ac17a0bd6《Paris Ailleurs - Eden》（1998 Compilation，盤名含本張）、577bda5b-a5ee-3ef4-92b1-c0fc34ce1412《Paris ailleurs》（1991 Album，前一張正規盤，本批未收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Etienne Daho Eden；Eden 1996",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Sébastien Tellier",
+  "album": "L'Incroyable Vérité",
+  "year": 2001,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Record Makers（catno REC-03）",
+  "why": "Sébastien Tellier 的首張專輯，2001 年由 Record Makers（Air 的 Nicolas Godin 與 Jean-Benoît Dunckel 圈子成立的巴黎廠牌）與 Virgin 合發（CDVIR137／REC-03，11 軌），同年美國 Astralwerks 以 ASW 50667-2 發行，2011-02-17 Record Makers 出數位版。實掃 seed_cards.json 全 14,424 列：Sébastien Tellier 池中只有《Confection》（2013）一張，也就是他第五張、器樂編制的那一張；首張與《Politics》《Sexuality》都不在池中。池中已有 Air 6 張（《Moon Safari》《Premiers Symptômes》《10 000 Hz Legend》《Talkie Walkie》《Pocket Symphony》《Love 2》），這三張補的正是同一個廠牌圈的下一代。",
+  "risk": "MB 的 2011 數位版把盤名寫成全小寫的《L’incroyable vérité》，與 2001 原盤的《L’Incroyable Vérité》不同；MB 用 U+2019 撇號，卡片依池中法語卡慣例用 ASCII 撇號，三種寫法都要進 queryAlias。US 版與 FR 版同年同名，配對時要盯國別。Apple fr collectionId 1742763695（L'incroyable Vérité，11 軌，releaseDate 2001-01-02；MB 記 2001-06-12），軌數與原盤一致。店面 fr 命中。",
+  "mbNote": "釘 release-group 13d05458-cd1a-323b-a973-aae13178957e。回問確認：title「L’Incroyable Vérité」、artist-credit「Sébastien Tellier」、first-release-date 2001-06-12、primary-type Album、secondary-types 空、轄下 3 個 release 全 Official，國別 US／FR／XW（FR Virgin CDVIR137／Record Makers REC-03 CDx11、US Astralwerks ASW 50667-2 CDx11、XW Record Makers 數位 x11 2011）。藝人 MBID ac69016f-42cc-4322-b70e-101458b769aa（Person／France／Le Plessis-Bouchard），名下 64 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "L'incroyable vérité；L'incroyable verite；Sebastien Tellier L'Incroyable Vérité",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Sébastien Tellier",
+  "album": "Politics",
+  "year": 2004,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Record Makers（catno REC-13）",
+  "why": "Sébastien Tellier 的第二張專輯，2004-01-05 由 Source／Record Makers 在法國發行（7243 5 94283 2 1／REC-13，Copy Control CD 11 軌），2005-09-12 英國 Lucky Number 以 LUCKY 003CD 發行，2005 與 2011 兩度出數位版。實掃 seed_cards.json：Sébastien Tellier 池中只有《Confection》（2013）。這張接在《L'Incroyable Vérité》（2001）之後、《Sexuality》（2008）之前。",
+  "risk": "**盤名是英文通用詞（Politics）**，卡池與外部服務同名碟極多，配對必須以藝人＋collectionId 雙重限定。FR 原盤是 Copy Control CD（2004 年 EMI 系的防拷格式），Discogs 上同編號會分裂成多筆版本條目，翻版本頁時要留意。掛名帶重音（Sébastien），MB alias 有無重音的「Sebastien Tellier」與拼錯的「Sebastian Teller」，只有前者進 queryAlias（裁定 25）。Apple fr collectionId 1742755566（Politics，11 軌，releaseDate 2004-01-01；MB 記 2004-01-05）。店面 fr 命中。",
+  "mbNote": "釘 release-group eab88d7b-b9cc-3d46-ad1c-12419a16cd8c。回問確認：title「Politics」、artist-credit「Sébastien Tellier」、first-release-date 2004-01-05、primary-type Album、secondary-types 空、轄下 4 個 release 全 Official，國別 FR／XW／GB（FR Source 7243 5 94283 2 1／Record Makers REC-13 Copy Control CDx11、GB Lucky Number LUCKY 003CD CDx11 2005、XW Record Makers 數位 x11 2005 與 2011）。藝人 MBID ac69016f-42cc-4322-b70e-101458b769aa，名下 64 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sebastien Tellier Politics",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Sébastien Tellier",
+  "album": "Sexuality",
+  "year": 2008,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Record Makers（catno REC-43）",
+  "why": "Sébastien Tellier 2008 年在 Record Makers 的專輯，製作由 Guy-Manuel de Homem-Christo（Daft Punk）擔任。MB 該 release-group 轄下 6 筆 release 全 Official，橫跨 XW／FR／GB／JP：FR 的 Record Makers REC-43（CD 11 軌）、GB 的 Lucky Number LUCKY 017、JP 的 Rambling Records RBCS-2270（14 軌）、兩筆數位版。實掃 seed_cards.json：Sébastien Tellier 池中只有《Confection》（2013）；池中已有 Daft Punk 5 張，這張是兩條線的直接交會點。",
+  "risk": "同一藝人名下有 2010-04-02 的 Remix 專輯《Sexuality Remix》（fe008328），盤名含本張，是子字串比對的假陽性，已標刻意不釘。JP 版 14 軌與 FR 版 11 軌並存，軌數不是識別鍵；行文以 11 軌原盤為準。**盤名是英文通用詞（Sexuality）**，配對走 collectionId 直查。Apple fr collectionId 1744347394（Sexuality，11 軌，releaseDate 2008-02-25；MB first-release-date 記 2008-02-19，那是 XW 數位版的日期，FR 實體盤是 2008-02-25）。店面 fr 命中。",
+  "mbNote": "釘 release-group 73ba26da-3301-35ef-af02-c926fafa3bdc。回問確認：title「Sexuality」、artist-credit「Sébastien Tellier」、first-release-date 2008-02-19、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official，國別 XW／FR／GB／JP（XW Record Makers 數位 x11 2008-02-19、FR Record Makers REC-43 CDx11 2008-02-25 兩筆、GB Lucky Number LUCKY 017 CDx11、JP Rambling Records RBCS-2270 CDx14、XW 數位 2011）。藝人 MBID ac69016f-42cc-4322-b70e-101458b769aa，名下 64 個 release-group。刻意不釘：fe008328-95d3-430f-8cae-79f753deea07《Sexuality Remix》（2010 Remix 專輯，盤名含本張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sebastien Tellier Sexuality",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Celine Dion",
+  "album": "D'eux",
+  "year": 1995,
+  "genres": [
+   "pop"
+  ],
+  "label": "Columbia（catno COL 480286 2）",
+  "why": "Céline Dion 1995 年的法語專輯，詞曲與製作全由 Jean-Jacques Goldman 包辦。MB 該 release-group 轄下 16 筆 release 全 Official，國別橫跨 FR、CA、US、BR、JP、XE、XW：FR 的 Columbia COL 480286 2（CD 12 軌）與 480286 4（卡帶）、CA 的 Sony Musique CK 80219、BR 的一筆 12 軌 CD。實掃 seed_cards.json 全 14,424 列：**池中的 Celine Dion 有 3 張，全是英語盤**（《Falling into You》1996、《The Colour of My Love》1993、《Let's Talk About Love》1997）；她的法語目錄在卡池裡 0 張。這張與《S'il suffisait d'aimer》（1998）補的就是那一整側，也與池中已有的 Jean-Jacques Goldman《Entre gris clair et gris foncé》（1987）成對。",
+  "risk": "**掛名寫法**：MB 實體與 artist-credit 都是「Céline Dion」（帶重音），但**池中既有三張全部寫成「Celine Dion」（無重音）**。依裁定 177 的取用順序第 ① 步「池中已有這位藝人 → 沿用池中的寫法」，卡片採無重音的「Celine Dion」，避免生出第四個鍵；帶重音形記在 mbNote 並進 queryAlias（外部服務兩種都認）。這與本批其他法語掛名保留重音的做法不衝突，見 rulings.md 裁定 2。盤名的撇號 MB 在不同 release 上有 U+2019（D’eux）與 ASCII（D'eux）兩種，卡片用 ASCII。Apple fr collectionId 203133169（D'eux，12 軌，releaseDate 1995-10-01；MB 記 1995-03-27，差半年）。店面 fr／ca 皆命中。",
+  "mbNote": "釘 release-group 9fe516f5-8e2c-3664-9903-c852c2fffd6b。回問確認：title「D'eux」、**artist-credit「Céline Dion」（帶重音；卡片依裁定 177 ① 沿用池中的「Celine Dion」）**、first-release-date 1995-03-27、primary-type Album、secondary-types 空、轄下 16 個 release 全 Official，國別 FR／US／BR／CA／JP／XE／XW（FR Columbia COL 480286 2 CDx12 為原盤、COL 480286 4 Cassette x12、CA Sony Musique CK 80219 CDx12、BR 1-1-729088 CDx12）。藝人 MBID 847e8a0c-cc20-4213-9e16-975515c2a926（Person／Canada／Charlemagne），名下 209 個 release-group。刻意不釘：48d0bd2b-0507-334b-8b67-6ab3897b9a3b《Céline Dion》（1992 Album，盤名＝掛名的自我同名碟）、49230064-f1f2-3bb7-9cbf-354b9cb786e3《Dion chante Plamondon》（1991 Album，盤名含掛名）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Céline Dion D'eux；D'Eux；Deux Celine Dion",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Celine Dion",
+  "album": "S'il suffisait d'aimer",
+  "year": 1998,
+  "genres": [
+   "pop"
+  ],
+  "label": "Columbia（catno COL 491859-2）",
+  "why": "Céline Dion 1998 年的法語專輯，詞曲與製作同樣由 Jean-Jacques Goldman 主導，是《D'eux》（1995）之後的續作。MB 該 release-group 轄下 6 筆 release 全 Official，國別 FR／CA：FR 的 Columbia COL 491859-2（CD 12 軌）與 491859-8（MiniDisc 12 軌）、CA 的 Sony Music Entertainment (Canada) BK 69679 與 Sony Musique CK 80339、兩筆數位版。實掃 seed_cards.json：池中 Celine Dion 3 張全為英語盤，法語盤 0 張。這張與《D'eux》一起把那一側補上。",
+  "risk": "掛名同前一張，依裁定 177 ① 沿用池中的「Celine Dion」（MB 為「Céline Dion」）。**同名 Single《S'il suffisait d'aimer》（773b6300，1998-09-07）與專輯只差七天**，是裁定 179 第 1 點「同名先行／同期單曲」的形狀，已標刻意不釘。MB 有一筆 FR release 的廠牌欄留空、只填了四組編號（14-491859-10／491859 2／4918592035／COL 491859-2），資料本身不完整但 status 是 Official。Apple fr collectionId 212137941（S'il suffisait d'aimer，12 軌，releaseDate 1998-08-31，與 MB first-release-date 完全一致）。店面 fr／ca 皆命中。",
+  "mbNote": "釘 release-group 09b86375-0965-3fc0-8fc5-7d583c4b52f1。回問確認：title「S’il suffisait d’aimer」（U+2019 撇號）、**artist-credit「Céline Dion」（卡片依裁定 177 ① 沿用池中的「Celine Dion」）**、first-release-date 1998-08-31、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official，國別 FR／CA／未填（FR Columbia COL 491859-2 CDx12、FR Columbia COL 491859-8 MiniDisc x12、CA Sony Music Entertainment (Canada) BK 69679 CDx12、CA Sony Musique CK 80339 CDx12、Columbia 數位 x12 兩筆）。藝人 MBID 847e8a0c-cc20-4213-9e16-975515c2a926，名下 209 個 release-group。刻意不釘：773b6300-0b0d-4e50-8b89-1741b3f72eaf《S’il suffisait d’aimer》（1998-09-07 Single，與專輯相差七天）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Céline Dion S'il suffisait d'aimer；S'il suffisait d'aimer Celine Dion",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "PNL",
+  "album": "Le Monde Chico",
+  "year": 2015,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "QLF Records",
+  "why": "PNL 的第二張專輯，2015-10-30 由兩兄弟自營的 QLF Records 發行；MB 該 release-group 轄下兩筆 release 都是 FR／Official，一筆 CD（QLF Records，17 軌）、一筆數位版（廠牌欄標 [no label]，17 軌），完全沒有大廠介入。實掃 seed_cards.json 全 14,424 列：PNL 池中只有《Deux frères》（2019）一張，也就是第四張；《Que La Famille》（2015-03）、本張與《Dans la légende》（2016）都不在池中。池中法語 rap 的分布是 MC Solaar 4 張、Suprême NTM 4 張、IAM 3 張、Booba 1 張、Nekfeu 1 張、Orelsan 1 張、PNL 1 張，2010 年代後半這一段最薄。",
+  "risk": "**Apple 上同一張碟有兩個 collectionId**：fr 1048964879「Le monde Chico」17 軌（非 explicit）與 fr 1455962586「Le monde chico」16 軌（explicit）。依 audits/cleaned-previews-hiphop.md 與裁定 166，法語 rap 的淨化版會系統性優先回給 search 端點，上架時要辨版本；**建議取 explicit 的 1455962586**，並在 risk 保留兩者。盤名大小寫 MB 作《Le Monde Chico》、Apple 作「Le monde Chico」／「Le monde chico」，三種都要進 queryAlias。店面 fr 命中。",
+  "mbNote": "釘 release-group fb0e1291-2bc5-4935-af67-0a0863e24302。回問確認：title「Le Monde Chico」、artist-credit「PNL」、first-release-date 2015-10-30、primary-type Album、secondary-types 空、轄下 2 個 release 皆 FR／Official（QLF Records CDx17、[no label] 數位 x17）。藝人 MBID da04991d-8e8a-43be-9892-1e6342a77410，MB 實體 type Group、**area France／Corbeil-Essonnes（短掛名回問 area 已確認為 FR）**、disambiguation「French rap duo」，名下 13 個 release-group。**同名別實體**：530bf96c-4780-44ca-9eff-d14b456140aa「pnl(a)」（Canada）、a0015f44-ff95-40bc-9d3b-88a9a7c256a1「PNLTYBX」（Raleigh NC）。刻意不釘：2e1cc0aa-c100-445d-9221-548d8e099bfa《Que La Famille》（2015-03-02 Album，同年前一張，本批未收）、01ada6dd-3a32-4971-80b3-0834178a7b6b《Lion》（2015-12-02 Single）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Le monde Chico；Le monde chico；PNL Le Monde Chico",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "PNL",
+  "album": "Dans la légende",
+  "year": 2016,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "QLF Records／PNL Records",
+  "why": "PNL 的第三張專輯，2016-09-16 由 QLF Records／PNL Records 發行。MB 該 release-group 轄下 5 筆 release 全 Official：FR 同日發三種 CD（Version Orange 17 軌、Version Rose 17 軌、PNL Records／QLF Records 16 軌）、CA 的 DEP／QLF Records M6401（19 軌，2016-10-14）、AF 的數位版（18 軌，2019）。實掃 seed_cards.json：PNL 池中只有《Deux frères》（2019）。本張與《Le Monde Chico》（2015）補的是那張唯一卡的上游兩個節點。",
+  "risk": "**同一天發行三種不同曲目長度的 CD（17／17／16 軌），軌數完全不能當識別鍵**（裁定 174）；封面也可能因 Version Orange／Version Rose 而有兩種，上架時要指定一種並記在 notes。**Apple 的 search 端點在 fr／be／ch／ca／us／gb／de／nl 八個店面全部查無**，只有藝人目錄端點看得到（裁定 173）：fr collectionId **1663880916**（Dans la légende，18 軌，2016-09-16，collectionExplicitness=explicit）。18 軌對到的是 AF 數位版的曲目長度而非 FR 原盤，行文不得拿它當原盤曲目（裁定 141）。店面 fr。",
+  "mbNote": "釘 release-group 4939e393-ce2c-442c-95a4-ae6b636d9692。回問確認：title「Dans la légende」、artist-credit「PNL」、first-release-date 2016-09-16、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official，國別 FR／CA／AF（FR QLF Records CDx17「Version Orange」、FR QLF Records CDx17「Version Rose」、FR PNL Records／QLF Records CDx16、CA DEP M6401／QLF Records M6401 CDx19、AF QLF Records 數位 x18）。藝人 MBID da04991d-8e8a-43be-9892-1e6342a77410（area France，已回問確認）。刻意不釘：2a74f07e-ef5b-474c-a49d-eef6d8f85902《Tchiki Tchiki》（2016-05-27 Single，同年先行單曲）、d9390962-495f-466e-8674-e705e660ed8b《Deux frères》（2019 Album，**池中已有，不重複收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dans la legende；PNL Dans la légende",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "IAM",
+  "album": "... de la planète Mars",
+  "year": 1991,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Virgin France（catno 70834）",
+  "why": "IAM 的首張專輯，1991-03-25 由 Virgin France 發行，12 吋（70834）18 軌、CD 23 軌，另有 XE 的 Delabel／Labelle Noir／Virgin 三廠共掛 CD 與 2021-06-11 Parlophone France 的數位版。實掃 seed_cards.json 全 14,424 列：IAM 池中有 3 張——《Ombre est lumière》（1993）、《L'École du micro d'argent》（1997）、《Revoir un printemps》（2003）——**首張不在池中**。依藍圖 §五-1 先確認「第一張該有的」，這張就是那一張。",
+  "risk": "**盤名以刪節號開頭**：MB 用 U+2026（… de la planète Mars），卡片依池中既有《Ainsi soit je...》的寫法改用 ASCII 三點；Apple fr 則整個去掉寫成「De la planète Mars」，三種寫法都要進 queryAlias，否則字串比對必然落空。同名假陽性兩筆：1995 年的 Compilation《… de la Planète Mars / Ombre est lumière, volume unique》（dba66d9f，**盤名同時含本張與池中已有的《Ombre est lumière》**，是本批最像的假陽性）與 1992 年的 Single《Planète Mars》（dea0a9ad），皆已標刻意不釘。Apple fr collectionId 696519676（De la planète Mars，23 軌，releaseDate 1991-01-01），23 軌對到的是 CD 版而非 12 吋原盤的 18 軌。店面 fr 命中。",
+  "mbNote": "釘 release-group 03c21989-c7db-3be1-b2ca-fb1ace407b96。回問確認：title「… de la planète Mars」（U+2026 開頭）、artist-credit「IAM」、first-release-date 1991-03-25、primary-type Album、secondary-types 空、轄下 4 個 release 全 Official，國別 FR／XW／XE（FR Virgin France 70834 12\"x18 為原盤、FR Virgin France CDx23、XE Delabel／Labelle Noir／Virgin 0777 7 86895 2 2 CDx23、XW Parlophone France 數位 x23+x13 2021）。藝人 MBID 7aa4a16e-9d5a-41d3-968e-fae1a2c84d05，MB 實體 type Group、**area France／Marseille（短掛名回問 area 已確認為 FR）**、disambiguation「French rap band」，名下 68 個 release-group。**同名別實體**：9b2d8cb9-63e2-4f56-b451-32bddb5708a9「IAM.」（Europe／dark ambient）、18295fec-0170-4835-9e62-e923c05d4a1a「IAM」（Germany）、0b87a071-7e5e-4b39-80af-a4043400f8e6「IAM」（United States）。刻意不釘：dba66d9f-7d33-46f9-99ff-1e997ab7db7f《… de la Planète Mars / Ombre est lumière, volume unique》（1995 Compilation，盤名含本張）、dea0a9ad-3c8e-4169-8540-cacbfeacacf1《Planète Mars》（1992 Single）、e02ab2e8-bae2-35f3-ac35-e07861d92661《Concept》（1990 Album，前一張，本批未收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "De la planète Mars；De la planete Mars；...De La Planète Mars；IAM de la planète Mars",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Justice",
+  "album": "Audio, Video, Disco.",
+  "year": 2011,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Ed Banger Records／Because Music（catno 2564664388）",
+  "why": "Justice 的第二張專輯，2011 年由 Ed Banger Records／Because Music 發行。MB 該 release-group 轄下 10 筆 release 全 Official，國別橫跨 XE、AU、US、XW、FR、JP：XE 的 2564664388、FR 的 25646640324、US 的 Elektra 528522-2、兩筆數位版（12 與 14 軌）。實掃 seed_cards.json 全 14,424 列：Justice 池中有 3 張（《Cross》《Woman》《Hyperdrama》），**四張正規盤裡只缺這一張**。池中同一廠牌圈另有 Daft Punk 5 張、Breakbot《By Your Side》、Cassius 2 張、Kavinsky《OutRun》。",
+  "risk": "**同名先行單曲比專輯早 16 天**：Single《Audio, Video, Disco》（7ad51b27，2011-09-21，盤名沒有結尾的句點）對專輯《Audio, Video, Disco.》（2011-10-07），這正是裁定 179 第 1 點的形狀；任何「取 first-release-date 最早那筆」的邏輯都會選錯，已標刻意不釘。結尾句點在任何標點正規化下都會被抹掉，兩者的鍵會相等，**必須靠 release-type 分辨**。池中已有的《Cross》一卡年份記 1992（Justice 該碟實為 2007 年的《✝》），那是既有卡的年份欄問題、不是本張的撞卡，本批不動。Apple fr collectionId 469202499（Audio, Video, Disco.，14 軌，releaseDate 2011-10-24）。店面 fr 命中。",
+  "mbNote": "釘 release-group c3f7093d-5a86-45ed-afa6-2413538074c2。回問確認：title「Audio, Video, Disco.」（結尾有句點）、artist-credit「Justice」、first-release-date 2011-10-07、primary-type Album、secondary-types 空、轄下 10 個 release 全 Official，國別 XE／AU／US／XW／FR／JP（XE Because Music／Ed Banger 2564664388 CDx11、FR Because Music／Ed Banger 25646640324 CDx11、US Elektra 528522-2 CDx11、Ed Banger 數位 x14 與 x12）。藝人 MBID 860b2707-6153-4e3a-aa57-74d2b42c55b5，MB 實體 type Group、**area France／Paris（短掛名回問 area 已確認為 FR）**、disambiguation「French electro house, Gaspard Augé & Xavier de Rosnay」，名下 85 個 release-group。**同名別實體三個**：444f2191-8841-440e-bbc1-6fd564893946（United Kingdom／drum & bass）、9101e9de-1419-4e22-89ee-2737b7729653（Germany／thrash-death metal）、a8aa73dd-d74a-4b44-a76f-4028b4432ff7（Belgium／hardcore）。刻意不釘：7ad51b27-a073-4e52-b706-ebcb5c239567《Audio, Video, Disco》（2011-09-21 Single，無結尾句點，早專輯 16 天）、c630ff1b-6b29-4138-b4e1-26872e0d45b7《Access All Arenas》（2013 Live）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Audio Video Disco；Justice Audio, Video, Disco",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "M83",
+  "album": "Junk",
+  "year": 2016,
+  "genres": [
+   "electronic",
+   "pop"
+  ],
+  "label": "naïve（catno NV834612）／Mute（catno M83-7CD）",
+  "why": "M83 的第七張專輯，2016-04-08 由 naïve（法國）與 Mute（北美）同日發行。MB 該 release-group 轄下 5 筆 release 全 Official，皆 15 軌，國別 CA／FR／未填。實掃 seed_cards.json 全 14,424 列：M83 池中有 6 張（《M83》2001、《Dead Cities, Red Seas & Lost Ghosts》2003、《Before the Dawn Heals Us》2005、《Saturdays = Youth》2008、《Hurry Up, We're Dreaming》2011、《Fantasy》2023），**2011 到 2023 之間整整十二年是空的**；這張正是那段空白裡的正規盤。",
+  "risk": "**盤名只有四個字母（Junk）**，是通用英文詞，卡池與外部服務同名碟極多，配對必須以藝人＋collectionId 雙重限定。同一藝人名下另有多張 Soundtrack（《Oblivion》《You and the Night》《Suburra》《Knife + Heart》），依裁定 167 那些是 primary-type=Album＋secondary-types=Soundtrack，不是本張的假陽性但會在藝人端一起回來。Apple fr collectionId 1160747196（Junk，16 軌，releaseDate 2016-04-08，日期與 MB 完全一致）；Apple 16 軌與 MB 全部 release 的 15 軌差一軌，差異原因未查證，不在此下判斷（裁定 141／175）。店面 fr 命中。",
+  "mbNote": "釘 release-group b17c34e8-0f3a-4c85-9592-106b203ac09b。回問確認：title「Junk」、artist-credit「M83」、first-release-date 2016-04-08、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official 且皆 15 軌，國別 CA／FR／未填（CA Mute M83-7CD CDx15、FR naïve NV834612 CDx15、naïve NV834611)9000001498／M83 Recording Inc 數位 x15、CA Mute 數位 x15、Mute A10302B0003329590W 數位 x15）。藝人 MBID 6d7b7cd4-254b-4c25-83f6-dd20f98ceacd，MB 實體 type Group、**area France／Antibes（短掛名回問 area 已確認為 FR）**，名下 66 個 release-group。刻意不釘：3e84bc0f-17fc-329a-a95f-7115d30f691c《Digital Shades [vol. I]》（2007 Album，本批未收）、08f2cc79-3817-44c5-a3bd-7b901588ed81《DSVII》（2019 Album，本批未收）、9fc6fd39-bb80-4cf6-9013-639a44968756《Clouds of Thunder》（2005 Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "M83 Junk；Junk 2016",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Angèle",
+  "album": "Nonante-cinq",
+  "year": 2021,
+  "genres": [
+   "pop"
+  ],
+  "label": "Angèle VL Records（catno 389 664 1）",
+  "why": "Angèle 的第二張專輯，2021-12-02 由她自營的 Angèle VL Records 發行；盤名取自比利時法語對 95 的說法（nonante-cinq），指她的出生年。MB 該 release-group 轄下 15 筆 release 全 Official，國別 FR／XW，2021 年的 CD（389 664 1／3896642）12 軌，2022-03-01 起的數位版擴充到 13 軌。實掃 seed_cards.json 全 14,424 列：Angèle 池中只有《Brol》（2018）一張，也就是首張；她只有兩張正規盤，這張補齊第二張。",
+  "risk": "**MB 的盤名用 U+2010 HYPHEN（Nonante‐cinq），不是 ASCII hyphen-minus**；chk-prop 明文擋非 ASCII 連字號（c-50 反模式），卡片一律用 ASCII 的「Nonante-cinq」，U+2010 形只記在 mbNote。**Apple 的 search 端點在八個店面回的都是再版**（fr 1671606871「Nonante-Cinq La Suite (Deluxe)」19 軌、1647822111「Nonante-Cinq (Deluxe)」14 軌、1611578828 13 軌），2021 原版只有藝人目錄端點看得到（裁定 173）：fr collectionId **1597503852**（Nonante-Cinq，12 軌，releaseDate 2021-12-03）。配對必須用 1597503852 直查，不得取 La Suite。掛名 area 是 **Belgium／Linkebeek**（不是 France），法語圈但屬 be 店面那一側；池中既有《Brol》寫成「Angèle」，本張沿用（裁定 177 ①）。店面 fr 命中，be 亦應試。",
+  "mbNote": "釘 release-group ae0033cb-db62-4e53-8c1c-c003304c0173。回問確認：title「Nonante‐cinq」（**U+2010 HYPHEN**）、artist-credit「Angèle」、first-release-date 2021-12-02、primary-type Album、secondary-types 空、轄下 15 個 release 全 Official，國別 FR／XW（FR Angèle VL Records 389 664 1 CDx12 與 3896642 CDx12 為原盤、XW Angèle VL Records 數位 x12 2021-12-03、XW 數位 x13 2022-03-01）。藝人 MBID dcd4701d-64ec-443d-bfbf-73fc87c44bd6，MB 實體 type Person、**area Belgium／Linkebeek（回問 area 已確認，是比利時不是法國）**、disambiguation「Belgian female singer, Angèle Van Laeken」，名下 28 個 release-group。刻意不釘：f5c122fd-4d97-4948-9f03-6515bd2ec667《Brol》（2018 Album，**池中已有，不重複收**）、bae77a67-0bac-4843-9ff4-7182c75fc4db《Instinct》（2026-10-16 Album，尚未發行）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nonante-Cinq；Nonante Cinq；Angele Nonante-cinq",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

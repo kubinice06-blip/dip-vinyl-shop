@@ -333,3 +333,159 @@ Minami Masato First／Kono Yo wo Kanashimu Furaibou ni Sasagu／Kanashimi no Mac
 c-79 的策展層第一版盤名掃描器把《( )》《+》這類**短盤名當子字串**比到全池，
 產出 79KB 全是誤報。加 `length>=4` 守衛後重跑才乾淨。
 **與第 132 條同病：正規化／比對不可以比它的目的更寬鬆，也不可以更激進。**
+
+---
+
+# 續補（2026-09-06）：全池重掃，**分裂 24 組、另有 86 個掛名不合 08-11 裁定**
+
+**範圍**：`seed_cards.json` 全 14,424 列、6,830 個掛名。
+**方法**：四種型態各掃一遍（前兩種是舊有的，後兩種是這次新加的）。
+**雲端只能掃與判定，不能改**（`REMOTE_RUNBOOK.md`：雲端不動 `seed_cards.json`、不碰 KV 與 Firestore）。
+**下面每一組都已依 2026-08-11 東亞藝人命名裁定決定好正規形，本機照做即可。**
+
+## 判準（2026-08-11 裁定的直接適用）
+
+- 日本、華語圈、韓國的音樂人與團體**照原文漢字寫**，不羅馬化 → **併寫的「漢字 Latin」一律砍掉 Latin 那半**。
+- **只有全平假名／全片假名（完全無漢字）的名字才用羅馬字** → **`はっぴいえんど` 的正規形是 `Happy End`，不是假名**。
+- 韓文諺文名維持諺文。
+- **中文簡繁：店主 2026-09-06 裁定一律用繁體。**
+
+---
+
+## 一、型態一：漢字／假名與拉丁併寫，且池中另有純漢字形（**15 組，真重複卡**）
+
+**正規形一律取純漢字那個**，併寫形的卡併過去。
+
+| 併寫形（要併掉） | 正規形（保留） | 卡數 |
+|---|---|---|
+| `王菲 Faye Wong` | **`王菲`** | 1 → 3 |
+| `崔健 Cui Jian` | **`崔健`** | 1 → 3 |
+| `五月天 Mayday` | **`五月天`** | 3 → 2 ⚠ 另有店主 2026-09-05 裁定要刪 3 張，**先刪再併** |
+| `蘇打綠 sodagreen` | **`蘇打綠`** | 2 → 2 |
+| `陳綺貞 Cheer Chen` | **`陳綺貞`** | 2 → 1 |
+| `張懸 Deserts Chang` | **`張懸`** | 2 → 1 |
+| `閃靈 CHTHONIC` | **`閃靈`** | 2 → 2 |
+| `巴奈 Panai` | **`巴奈`** | 1 → 1 |
+| `雷光夏 Summer Lei` | **`雷光夏`** | 1 → 1 |
+| `滅火器 Fire EX.` | **`滅火器`** | 2 → 1 |
+| `四分衛 Quarterback` | **`四分衛`** | 1 → 1 |
+| `董事長樂團 The Chairman` | **`董事長樂團`** | 1 → 1 |
+| `陳昇 Bobby Chen` | **`陳昇`** | 1 → 1 |
+| `大支 Dwagie` | **`大支`** | 1 → 1 |
+| `Ryuichi Sakamoto 坂本龍一` | **`坂本龍一`** | 2 → 8 |
+| `Akira Ifukube 伊福部昭` | **`伊福部昭`** | 1 → 1 |
+
+（上表 16 列，`Ryuichi Sakamoto 坂本龍一` 那組舊稽核第 3 條已記過、至今未修。）
+
+## 二、型態二：正規化後相同、字串不同（**13 組**，原列 14 組、撤銷 1 組）
+
+多數是**彎撇號 `’` 對直撇號 `'`**。正規形取**彎撇號**（池中多數卡用彎撇號，且 MB 與 Apple 也用彎撇號）。
+
+| 形態 A | 形態 B | 正規形 |
+|---|---|---|
+| `Jane's Addiction`（1） | `Jane’s Addiction`（2） | **`Jane’s Addiction`** |
+| `Guns N' Roses`（2） | `Guns N’ Roses`（2） | **`Guns N’ Roses`** |
+| `The O'Jays`（3） | `The O’Jays`（6） | **`The O’Jays`** |
+| `Destiny's Child`（1） | `Destiny’s Child`（3） | **`Destiny’s Child`** |
+| `Flipper's Guitar`（2） | `Flipper’s Guitar`（1） | **`Flipper’s Guitar`** |
+| `The J.B.'s`（1） | `The J.B.’s`（3） | **`The J.B.’s`** |
+| `Booker T. & the MG's`（1） | `Booker T. & the MG’s`（8） | **`Booker T. & the MG’s`** |
+| `BOREDOMS`（2） | `Boredoms`（2） | **`Boredoms`**（MB 與官方網站用首字大寫） |
+| `Nurse With Wound`（1） | `Nurse with Wound`（4） | **`Nurse with Wound`** |
+| `Public Image Ltd`（2） | `Public Image Ltd.`（2） | **`Public Image Ltd.`** |
+| `Leadbelly`（1） | `Lead Belly`（1） | **`Lead Belly`**（美國國會圖書館與 MB 用分寫） |
+| `R. D. Burman`（1） | `R.D. Burman`（3） | **`R.D. Burman`** |
+| `A. R. Rahman`（1） | `A.R. Rahman`（3） | **`A.R. Rahman`** |
+| ~~`Next`（1）~~ | ~~`N.EX.T`（1）~~ | ⚠ **撤銷：不是同一團，本機不要合併** —— c-104 策展層 2026-09-06 實查：`Next` 那張是《Rated Next》，**美國 R&B 團體**；`N.EX.T` 是신해철的韓國團。這一列是我判錯的。 |
+
+## 三、型態三（新加）：`&` 與 `and` 的分裂（**6 組**）
+
+舊的正規化把 `&` 當標點刪掉、`and` 當字母留著，所以**這一類從來沒被抓到過**。
+正規形取**唱片封面與 MB 的主要寫法**：
+
+| 形態 A | 形態 B | 正規形 |
+|---|---|---|
+| `Nick Cave and the Bad Seeds`（4） | `Nick Cave & the Bad Seeds`（3） | **`Nick Cave & the Bad Seeds`** |
+| `Art Blakey and the Jazz Messengers`（6） | `Art Blakey & The Jazz Messengers`（5） | **`Art Blakey & the Jazz Messengers`**（另注意 `The`／`the` 也不一致） |
+| `Toots and the Maytals`（3） | `Toots & The Maytals`（1） | **`Toots & the Maytals`** |
+| `Archie Shepp and Horace Parlan`（1） | `Archie Shepp & Horace Parlan`（1） | **`Archie Shepp & Horace Parlan`** |
+| `Martha Reeves and the Vandellas`（1） | `Martha Reeves & the Vandellas`（2） | **`Martha Reeves & the Vandellas`** |
+| `Big Brother & The Holding Company`（1） | `Big Brother and the Holding Company`（1） | **`Big Brother & the Holding Company`** ⚠ **兩筆都掛 hall** |
+
+## 四、型態四（新加）：全假名 vs 羅馬字（**1 組**）
+
+| 形態 A | 形態 B | 正規形 |
+|---|---|---|
+| `はっぴいえんど`（3 張） | `Happy End`（2 張） | **`Happy End`** |
+
+**理由**：08-11 裁定的例外條——**全平假名／全片假名（完全無漢字）的名字才用羅馬字**。
+`はっぴいえんど` 是全平假名，落在例外裡。**這與其他東亞藝人的處理方向相反，不要弄混。**
+兩張重複卡：`Kazemachi Roman`＝`風街ろまん`、`Happy End`＝`HAPPY END`（c-94 抓到）。
+
+## 五、⚠ 中國搖滾線的簡繁（店主 2026-09-06 裁定：**一律繁體**）
+
+**池中這一線目前全部是簡體**，開 c-107（中國搖滾與獨立正典）前要先改：
+
+| 池中現況（簡） | 改成（繁） | 卡數 |
+|---|---|---:|
+| `窦唯` | **`竇唯`** | 3 |
+| `张楚` | **`張楚`** | 1 |
+| `万能青年旅店` | **`萬能青年旅店`** | 2 |
+| `唐朝乐队` | **`唐朝樂隊`** | 1 |
+| `黑豹乐队` | **`黑豹樂隊`** | 1 |
+| `何勇` | `何勇`（簡繁同形，不動） | 1 |
+| `崔健` | `崔健`（簡繁同形，見第一節） | 3 |
+
+**`chk-prop.mjs` 的 NFKC 正規化摺不掉簡繁**，所以這一組工具永遠抓不到，只能靠這份清單。
+
+## 六、另一件事：**86 個掛名不合 08-11 裁定，但不是重複卡**
+
+型態一掃出 101 個「漢字／假名＋拉丁併寫」的掛名，其中 15 個在池中有純漢字的對應形（第一節），
+**其餘 86 個是單一形態**——不是重複卡，但**寫法不合 08-11 裁定**（應為純漢字）。
+
+集中在兩塊：
+- **古典線**（約 55 個）：`Mitsuko Uchida 內田光子`、`Yo-Yo Ma 馬友友`、`Tan Dun 譚盾`、
+  `Myung-Whun Chung 鄭明勳`、`Cho-Liang Lin 林昭亮`、`Tyzen Hsiao 蕭泰然`……
+  **且其中兩組自己就重複**：`Jiang Wenye 江文也`／`Wen-Yeh Chiang 江文也`、
+  `Ma Shui-Long 馬水龍`／`Shui-Long Ma 馬水龍`——**同一人、拉丁部分的姓名順序相反**。
+- **台灣獨立與華語流行**（約 25 個）：`落日飛車 Sunset Rollercoaster`、`草東沒有派對 No Party For Cao Dong`、
+  `鄧麗君 Teresa Teng`、`林強 Lim Giong`、`蛋堡 Soft Lipa`、`MC HotDog 熱狗`……
+
+**這 86 個要不要一起正規化，是店主的決定，不是雲端能決的**——
+它們現在沒有造成重複卡，但**下一批只要有人用純漢字提案，就會生出新的重複卡**
+（`林強 Lim Giong` 就是這樣：c-89 那批用 `林強` 提案，池中兩張掛在 `林強 Lim Giong` 上，撞卡檢查看不到）。
+
+**建議**：至少先把**這輪與下一輪會碰到的那幾位**正規化——
+`林強 Lim Giong`→`林強`、`Tan Dun 譚盾`→`譚盾`、`鄧麗君 Teresa Teng`→`鄧麗君`、
+`草東沒有派對 No Party For Cao Dong`→`草東沒有派對`、`落日飛車 Sunset Rollercoaster`→`落日飛車`，
+以及第五節的中國搖滾五組。其餘 81 個可以之後再排。
+
+## 七、合計
+
+| 型態 | 組數 | 性質 |
+|---|---:|---|
+| 一、漢字＋拉丁併寫 vs 純漢字 | 16 | **真重複卡** |
+| 二、正規化後相同 | **13** | **真重複卡**（多為彎直撇號）。原列 14 組，`Next`／`N.EX.T` 那組經實查**撤銷**（不是同一團） |
+| 三、`&` vs `and` | 6 | **真重複卡**（舊工具抓不到） |
+| 四、全假名 vs 羅馬字 | 1 | **真重複卡** |
+| 五、簡繁（中國搖滾線） | 5 | 不是重複卡，是**開批前置** |
+| 六、不合裁定但無重複 | 86 | **要店主決定要不要一起正規化** |
+
+**改的時候三處要同步**（照 08-11 改名那次的做法）：`seed_cards.json`、
+KV（`desc2`／`rating4`）、Firestore `card_catalog`。
+
+## 2026-09-06 追記：**MB 內部的掛名分裂（c-103 演歌線）**
+
+這一節記的不是卡池的分裂，是**上游 MusicBrainz 自己的分裂**——
+同一個 artist MBID 之下，部分 release-group 掛漢字 credit、部分掛羅馬字 credit。
+**查目錄時兩種寫法都要跑，否則會漏掉一半的碟。**
+
+| 藝人（正規形＝原文） | MB 上的另一種 credit |
+|---|---|
+| `石川さゆり` | Ishikawa Sayuri |
+| `ちあきなおみ` | Chiaki Naomi |
+| `由紀さおり` | Yuki Saori |
+| `江利チエミ` | Eri Chiemi |
+
+**卡片一律用原文形**（裁定 187）。`ちあきなおみ` 另適用裁定 189：
+沒有官方羅馬字藝名，純拼音轉寫不算，**保留假名不羅馬化**。

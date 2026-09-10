@@ -1,0 +1,454 @@
+[
+ {
+  "artist": "조용필",
+  "album": "조용필 7집",
+  "year": 1985,
+  "genres": [
+   "pop"
+  ],
+  "label": "Jigu Records（지구레코드）",
+  "why": "조용필 名下編號第七的正規盤，MB 該 release-group 的 first-release-date 記 1985-04-10、轄下 KR Official 盤由 Jigu Records 發行。池中 조용필 現有 2 張（實掃 seed_cards.json 全 14,424 列）：《조용필 1집 (창밖의 여자)》與《조용필 10집 Part.1》，1980 與 1988 兩端各一張，1981–1987 這七年目錄全空。這張補的正是那段空白的中點，與池中 1 집（1980）和 10 집 Part.1（1988）構成三點。韓國樂評《경향신문》與 가슴네트워크 合辦的한국대중음악 100대 명반系列把 조용필 列為最常入榜的歌手之一（見 mbNote 的 URL），本張與 1 집同屬其列舉範圍。",
+  "risk": "撞卡：池中兩張 조용필 卡的盤名格式是「조용필 N집 (代表曲)」，本卡取「조용필 7집」與 MB RG 標題完全相同，正規化後與池中兩張皆不相等，實掃已核。⚠ 同一 RG 轄下另有一筆 XW（跨國）Official 盤標題作「Cho Yong Pil 7th」，羅馬拼音與漢諺兩種寫法都要進 queryAlias，否則封面與試聽會漏。⚠ 最像的假陽性是《趙容弼 Vol.8》（1985-11-15，只差七個月、標題用漢字），已寫進刻意不釘。조용필 在日本有大量單曲與企劃盤（c-43 的教訓），店面排 kr 為主、jp 只能當備援且命中後要用 collectionId 逐軌核對。",
+  "mbNote": "釘 release-group e7a22f20-3d1f-4a8d-8819-58d17730b352。回問 release-group/<id>?inc=artist-credits+releases 確認：title「조용필 7집」、artist-credit「조용필」、first-release-date 1985-04-10、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/Official/1985-04-10「조용필 7집」Jigu Records；XW/Official/1985-04-10「Cho Yong Pil 7th」Jigu Records）——KR Official 盤存在，符合本批「釘韓國母國正規盤」的要件。刻意不釘：7b3161b4-0920-4159-9f6f-765dac2510d7《趙容弼 Vol.8》（1985-11-15，同年下半的第八張，標題改用漢字、最像的假陽性）、0a60161d-e5d0-46aa-a819-1f6187ca3946《조용필 1집》（池中已有）、b7e94a76-a2fb-497e-b99a-b50137a7fa08《'88 Cho Yong Pil 10th》（池中已有 10집 Part.1）。藝人 MBID f1fa5a60-33f7-42fb-8c59-de7a0765e6d0，名下 23 個 release-group（release-group?artist=…&limit=100&offset= 分頁全列，非 25 筆上限）。名單來源：https://en.wikipedia.org/wiki/Cho_Yong-pil",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Cho Yong Pil 7th；趙容弼；Cho Yong-pil；조용필 7",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "이문세",
+  "album": "이문세 3집",
+  "year": 1985,
+  "genres": [
+   "pop"
+  ],
+  "label": "SRB Records（catno SBK-0049）",
+  "why": "이문세 與 이영훈 搭檔的第一張，MB 該 release-group 的 first-release-date 記 1985-11-20，轄下唯一一筆 KR Official 盤由 SRB Records 發行、編號 SBK-0049。池中 이문세 只有 1 張（實掃全 14,424 列）：《이문세 4집》。4 집是這條線的下一張，本張與它同屬 이영훈 作曲期的頭兩張，補在旁邊才看得出這對搭檔怎麼開始。MB 的 RG 標題把兩首主打並列成「난 아직 모르잖아요 / 휘파람」，那是韓國 1980 年代 LP 封面常見的雙主打標法。",
+  "risk": "盤名有兩套寫法：MB RG 標題「난 아직 모르잖아요 / 휘파람」與韓國通行的「이문세 3집」。本卡依裁定第 6 條取原始發行寫法的「N집」制（韓國 LP 封面印的就是這個），MB 原題全數進 queryAlias，否則 grep 去重與外部服務都會漏。⚠ MB 原題含斜線「/」，而斜線在卡池是多藝人拼盤的分隔符（裁定第 16 條）——這也是不採 MB 原題當盤名的第二個理由。撞卡：與池中《이문세 4집》正規化後不相等，實掃已核。店面 kr。",
+  "mbNote": "釘 release-group b078df5a-de5f-4bcf-a336-a4c87cff40af。回問確認：title「난 아직 모르잖아요 / 휘파람」、artist-credit「이문세」、first-release-date 1985-11-20、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1985-11-20、SRB Records、catno SBK-0049）。刻意不釘：57e54e83-2eb8-4f23-9d42-7ef09acd23c8《골든 15》（1987 精選）、1b49e709-25e8-4fae-84fa-e1b32d08d9ea《이문세 골든 베스트 14》（1992 精選）、fdef14ae-f477-4d2c-891f-fa15c8cdd08f《이문세 4집》（池中已有）——三筆都會在「이문세＋數字」的字串比對下勝出。藝人 MBID a916f0a8-6210-4e05-ada5-e80216a615f4，名下 20 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "난 아직 모르잖아요 / 휘파람；난 아직 모르잖아요；휘파람；Lee Moon Sae 3",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "이문세",
+  "album": "이문세 5집",
+  "year": 1988,
+  "genres": [
+   "pop"
+  ],
+  "label": "킹레코드（King Record）",
+  "why": "이문세 與 이영훈 搭檔的第三張，MB 該 release-group 的 first-release-date 記 1988-09-15，轄下唯一一筆 KR Official 盤發行方為 킹레코드。池中 이문세 只有《이문세 4집》1 張（實掃全 14,424 列），本批同時補 3 집與 5 집，讓 1985–1988 這三張連號盤在卡池裡連起來。MB 把 RG 標題建成英譯「Standing Under the Shade of a Roadside Tree」，那是主打曲〈가로수 그늘 아래 서면〉的直譯，不是韓國原盤封面上的字。",
+  "risk": "盤名三套寫法：MB RG 標題是英譯「Standing Under the Shade of a Roadside Tree」、韓國通行「이문세 5집」、主打曲名「가로수 그늘 아래 서면」。依裁定第 6 條（盤名採原始發行的寫法）取「이문세 5집」，另兩種全進 queryAlias。⚠ 這是本批「MB 標題是英譯而非原盤字樣」的兩例之一（另一例是 김건모 3집），字串比對在英譯與韓文之間零重疊，跨批去重看不見（裁定第 49 條同型）。撞卡：與池中《이문세 4집》不相等，實掃已核。店面 kr。",
+  "mbNote": "釘 release-group a066ae05-3762-4985-b50e-6bbf45feef86。回問確認：title「Standing Under the Shade of a Roadside Tree」、artist-credit「이문세」、first-release-date 1988-09-15、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1988-09-15、킹레코드）。刻意不釘：7f2edd87-784c-4aea-8e84-978d69ff132b《That Was Me》（1989、第 6 張，同樣是英譯標題、最容易與本張互換）、df4c8d52-9e1d-34dc-be0c-8115a29fb9d9《Old and New》（2002 精選）。藝人 MBID a916f0a8-6210-4e05-ada5-e80216a615f4。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Standing Under the Shade of a Roadside Tree；가로수 그늘 아래 서면；Lee Moon Sae 5",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "김현식",
+  "album": "김현식 2집",
+  "year": 1984,
+  "genres": [
+   "pop"
+  ],
+  "label": "SRB Records（catno VIP-20012）",
+  "why": "김현식 名下編號第二的正規盤，MB 該 release-group 的 first-release-date 記 1984-09-20，轄下唯一一筆 KR Official 盤由 SRB Records 發行、編號 VIP-20012。池中 김현식 只有 1 張（實掃全 14,424 列）：《김현식 3집》。3 집在池中孤立，前一張缺席，本張補上去之後這位歌手在卡池裡才有起點與代表作兩張。SRB／동아기획 這條發行線同時是池中《이문세 3집》《바라본다》《항상 기뻐하는 사람들》《신촌 Blues II》的發行方，本批多張共用同一組編號體系。",
+  "risk": "撞卡：池中《김현식 3집》與本卡《김현식 2집》只差一個數字，正規化後不相等，但**人眼與子字串比對都極易互換**（裁定第 162 條：盤名只差數字時最危險）。年份：MB 記 1984-09-20，與韓國通行說法一致。⚠ 김현식 1990 年過世後有大量整編輯與追思盤（MB 上兩筆《김현식 Best 1／Best 2》皆 1997），字串「김현식」開頭的候選很多，已逐筆列進刻意不釘。店面 kr。",
+  "mbNote": "釘 release-group 63f93009-d565-418e-ab05-554e3a6e4d0f。回問確認：title「김현식 2집」、artist-credit「김현식」、first-release-date 1984-09-20、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1984-09-20、SRB Records、catno VIP-20012）。刻意不釘：4b9f5fec-826f-4b3d-8886-c4c465794979《3집 - 빗속의 연가 / 비처럼 음악처럼》（池中已有）、db6ddbce-421b-4837-98a5-5f7a2b16f528《김현식 Best 2》與 e58e2cfd-7c0c-4b92-9cc6-8170caf8fdf5《김현식 Best 1》（1997 兩張精選）、02a39b6a-319b-4a94-81ca-4ec328c3188e《봄, 여름, 가을, 겨울 / 당신의 모습》（1981 首張，與本批 봄여름가을겨울 那張的字串高度重疊，是跨藝人的假陽性）。藝人 MBID d43c9e9b-d133-40ee-9ae3-bc3ad2aab08d，名下 8 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kim Hyun Sik 2；김현식 Vol.2；사랑했어요",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "변진섭",
+  "album": "변진섭2",
+  "year": 1989,
+  "genres": [
+   "pop"
+  ],
+  "label": "Hyundai Records（catno HAL-0085）",
+  "why": "변진섭 名下編號第二的正規盤，MB 該 release-group 的 first-release-date 記 1989-10-25，轄下第一筆 KR Official 盤由 Hyundai Records 發行、編號 HAL-0085，1990-01-01 另有 Super Star Record 的 CD 版（SSCD-1124）。池中 변진섭 是 0 張（實掃全 14,424 列，諺文與 Byun Jin Sub／Byun Jin-sub 三種寫法都查過）。依藍圖 §五-1「每位先確認第一張該有的在不在」，這位在池中完全不存在，本批只收這一張當入口。MB 名下只有 4 個 release-group，其中兩張是正規盤、一張精選、一張 EP，深度本來就有限。",
+  "risk": "盤名 MB 原題「변진섭2」數字緊貼團名、無空格，韓國通行寫法多作「변진섭 2집」——兩種在任何正規化下都不相等，都要進 queryAlias。撞卡：池中零張，無撞卡風險；跨批需與 c-105（K-pop 韓版里程碑）比對，該批若也收 변진섭 會撞。發行方兩說（Hyundai Records LP／Super Star Record CD），行文不得斷言單一發行方。⚠ 藝人 MBID 唯一、無同名雙胞胎。店面 kr。",
+  "mbNote": "釘 release-group 7817281f-3217-4220-8059-2543b03e8d54。回問確認：title「변진섭2」、artist-credit「변진섭」、first-release-date 1989-10-25、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/Official/1989-10-25、Hyundai Records、HAL-0085；KR/Official/1990-01-01、Super Star Record、SSCD-1124）。刻意不釘：fb401347-f5e3-4dc2-88e7-db7aed92cdb3《변진섭》（1988 首張，只差一個數字）、4eb8821a-139e-42e9-8637-31a4bbaf3265《변진섭 GREAT HITS》（無年份的精選）、e9311be9-0637-4b3c-a2be-1850f68e54a8《Sweet Memories》（2013 EP）。藝人 MBID e7ad2d1f-d143-4aa2-b29b-4ba6b92568b7，名下 4 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "변진섭 2집；Byun Jin Sub 2；홀로 된다는 것",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "이승철",
+  "album": "이승철 Part 1",
+  "year": 1988,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "아세아 레코드（Asia Records，catno ACD-076）",
+  "why": "이승철 離開 부활 之後的首張個人盤，MB 該 release-group 的 first-release-date 記 1988-11-01，轄下唯一一筆 KR Official 盤由 아세아 레코드 發行、編號 ACD-076。池中 이승철 是 0 張（實掃全 14,424 列，諺文與 Lee Seung Chul／Lee Seungchul 三種寫法都查過）。本批 b 組同時收 부활 的頭兩張（《부활 Vol.1》1986、《Remember》1987），이승철 正是那兩張的主唱——兩組並排之後，卡池才看得到韓國搖滾轉進歌謡的那條人事線。",
+  "risk": "掛名撞卡：MB 上另有兩位同名的 이승철（35fe40ba 錄音師、1fc37663 編曲），browse 時要認 MBID 不認名字（裁定第 20 條）。盤名「이승철 Part 1」的 Part 制在他名下重複出現（Part 2 是 1989 年的第二張），只差一個數字，是最像的假陽性。撞卡：池中零張。⚠ 本卡與 b 組《부활 Vol.1》《Remember》是同一位主唱、不同掛名，跨組不算撞卡但要在上架時避免簡介互相抄。店面 kr。",
+  "mbNote": "釘 release-group d4470b8c-ce90-4a78-9b27-6816d0ab3da1。回問確認：title「이승철 Part 1」、artist-credit「이승철」、first-release-date 1988-11-01、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1988-11-01、아세아 레코드、catno ACD-076）。刻意不釘：76c7b8fc-02fc-462e-ab0a-575713da112e《이승철 Part 2》（1989-11-01，只差一個數字）、c9c9c001-1639-4ab0-9af1-9f99f2097190《이승철 Best Of Best》（2003 精選）、1b5bb5af-a0f4-4dae-97cf-6fbf0a985782《Lee Seung Chul 25th Anniversary Album》（2010 精選）。藝人 MBID f2ba0737-6707-4051-935d-26b6cfb4d2a3，名下 24 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "이승철 1집；Lee Seung Chul Part 1；안녕이라고 말하지마",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "김완선",
+  "album": "김완선 5집",
+  "year": 1990,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "아세아레코드（Asia Records，catno ACD-133）",
+  "why": "김완선 名下編號第五的正規盤，MB 該 release-group 的 first-release-date 記 1990-12-01，轄下 KR Official 盤由 아세아레코드 發行、編號 ACD-133。池中 김완선 是 0 張（實掃 seed_cards.json 全 14,424 列，諺文與 Kim Wan Sun／Kim Wan-sun 三種寫法都查過），整條 1980 年代韓國舞曲歌謡在池中也是空的——池中 44 張含諺文的卡裡沒有一張是女性舞曲歌手。依藍圖 §五-1，這位先補一張入口。同 RG 轄下另有 US 與 AF 兩筆再發，顯示這張後來有跨區流通。",
+  "risk": "同一 release-group 轄下有四筆 release、三種標題：KR 原盤「김완선 5집」、KR 另一筆「삐에로는 우릴보고 웃지」（主打曲名，且與 AF 那筆的「삐에로는 우릴 보고 웃지」差一個空格——同形異碼型的空白差，任何字串比對都判不相等）、US 那筆「Piero laughs at us」（英譯）。四種寫法全部要進 queryAlias。撞卡：池中零張。⚠ 跨批要與 c-105（K-pop 韓版里程碑）比對。店面 kr；US 那筆意味著 us 店面也可能有，但兩邊命中後都要用 collectionId 逐軌核對（裁定第 141 條）。",
+  "mbNote": "釘 release-group efe31d1e-71c7-4843-b38d-02ca940f552a。回問確認：title「김완선 5집」、artist-credit「김완선」、first-release-date 1990-12-01、primary-type Album、secondary-types 空、轄下 4 筆 release（KR/Official/1990-12「김완선 5집」아세아레코드 ACD-133；KR/Official/未填日期「삐에로는 우릴보고 웃지」無廠牌；AF/Official「삐에로는 우릴 보고 웃지」Danal Entertainment；US/Official/1990-12-01「Piero laughs at us」無廠牌）。刻意不釘：4e2e2230-6424-4fff-bcce-42268a81dab8《'88》（1988 第三張，標題只是一個年份、極易被任何比對配上）、012f776c-8868-4f63-bfee-d0668c8b2ce1《Alone in Front of the Yard》與 183736bb-41c2-4496-af4e-f0dcbbd42baf《나홀로 뜰 앞에서 (재발매)》（同一天 1987-05-07 的精選與再發，互為雙胞胎）、94cec5b2-f1be-4713-a606-3e84ce105cd6《The Original》（2017 精選）。藝人 MBID 813d3000-8751-4dbb-a35f-f490f2637f2e，名下 14 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "삐에로는 우릴 보고 웃지；삐에로는 우릴보고 웃지；Piero laughs at us；Kim Wan Sun 5",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "한영애",
+  "album": "바라본다",
+  "year": 1988,
+  "genres": [
+   "pop",
+   "blues"
+  ],
+  "label": "SKC Ltd.（catno VIP-CD-019）",
+  "why": "한영애 名下第二張正規盤，MB 該 release-group 的 first-release-date 記 1988-09，轄下唯一一筆 KR Official 盤由 SKC Ltd. 發行、編號 VIP-CD-019。池中 한영애 是 0 張（實掃全 14,424 列，諺文與 Han Young Ae／Han Yeong-Ae 三種寫法都查過）。池中已有的同期 동아기획／SRB 系作品有《조동진 1집 (행복한 사람)》《어떤날 I》《어떤날 II》《시인과 촌장 - 푸른 돛》四張，這條發行線缺的正是女聲那一端。MB 名下只有 4 個 release-group，其中兩筆連 primary-type 都沒填，可挑的實際只有這張與 2003 年的《Behind Time》。",
+  "risk": "MB 建檔薄：4 個 release-group 裡 3478c928《베스트》與 059697bc《불어오라 바람아》的 primary-type 是 null，字串比對時會與本張混在一起、又無法用型別排除（裁定第 162 條第 2 點「型別是比標題更硬的訊號」在這裡失效）。年份 1988-09 只到月、無日。撞卡：池中零張。盤名「바라본다」只有四個音節，是裁定第 162 條講的「盤名太短會配到別人」的形狀，queryAlias 要帶掛名。店面 kr。",
+  "mbNote": "釘 release-group 3771d001-af54-472e-9041-691936cedf21。回問確認：title「바라본다」、artist-credit「한영애」、first-release-date 1988-09、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1988-09、SKC Ltd.、catno VIP-CD-019）。刻意不釘：3478c928-97c7-3a51-b622-647085556f30《베스트》（精選，primary-type 未填）、059697bc-f7de-4510-9e25-12ad696b82ca《불어오라 바람아》（1995，primary-type 未填）、f68dcb68-b00e-4392-84b4-445a23863ac2《Behind Time》（2003）。藝人 MBID e4149ff3-51f7-41c8-ba50-ed4e70c70ab6，名下 4 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "한영애 바라본다；Han Young Ae Barabonda；Han Yeong-Ae",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "봄여름가을겨울",
+  "album": "항상 기뻐하는 사람들",
+  "year": 1988,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "SRB Records（catno VIP-20065）",
+  "why": "봄여름가을겨울 的首張正規盤，MB 該 release-group 的 first-release-date 記 1988-06，轄下第一筆 KR Official 盤由 SRB Records 發行、編號 VIP-20065，1989-03 另有一筆同名 KR Official 再發（catno VIP-CD-024，廠牌欄未填）。池中 봄여름가을겨울 只有 1 張（實掃全 14,424 列）：同名的《봄여름가을겨울》。本張是那張的前一張，補上之後這個團在池中就有起點。MB 名下只有 3 個 release-group，另兩筆是無年份的原聲帶與現場盤，可收的正規盤只有這一張。",
+  "risk": "⚠ 跨藝人假陽性：池中 김현식 名下另有 MB RG《봄, 여름, 가을, 겨울 / 당신의 모습》（02a39b6a，1981），標題與本團團名幾乎相同、只差標點與空格——任何去標點的正規化都會把兩者摺成同一個鍵。這是裁定第 49 條「跨文字系統去重看不見」的同族，但發生在同一種文字之內。撞卡：與池中同名的《봄여름가을겨울》正規化後不相等，實掃已核。發行方兩說（1988 SRB／1989 未填），行文不得斷言。店面 kr。",
+  "mbNote": "釘 release-group 50563da6-7b09-49e6-a2c3-7ff8d7c16a37。回問確認：title「항상 기뻐하는 사람들」、artist-credit「봄여름가을겨울」、first-release-date 1988-06、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/Official/1988-06、SRB Records、VIP-20065；KR/Official/1989-03、廠牌未填、VIP-CD-024）。刻意不釘：5fb2f3cd-5bdd-33a5-b005-67a5a538a779《봄여름가을겨울 Live》（現場盤，無年份）、0966758c-d835-3cd5-8f04-b69530cc53dd《Bravo, My Life!》（原聲帶，無年份）、以及跨藝人的 02a39b6a-319b-4a94-81ca-4ec328c3188e 김현식《봄, 여름, 가을, 겨울 / 당신의 모습》（1981）。藝人 MBID 73018e57-7db7-4680-a4c3-91eb68dd1d50，名下 3 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bom Yeoreum Gaeul Kyeoul；Spring Summer Autumn Winter；春夏秋冬；봄여름가을겨울 1집",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "김현철",
+  "album": "김현철 Vol.1",
+  "year": 1989,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "SRB Records ／ 동아기획",
+  "why": "김현철 的首張正規盤，MB 該 release-group 的 first-release-date 記 1989-08-26，轄下 KR Official 盤的 label-info 同時掛 SRB Records 與 동아기획 兩家。池中 김현철 是 0 張（實掃全 14,424 列，諺文與 Kim Hyun Chul／Kim Hyun-chul 三種寫法都查過）。池中韓國 1980 年代末的都會流行只有《빛과 소금 Vol.1》與《어떤날 I／II》三張，本張與那三張同屬 동아기획 系、同一批樂手圈，補在旁邊才成一條線。",
+  "risk": "撞卡：池中零張；但盤名「김현철 Vol.1」與他名下 b2209153《Vol. 5》的字串形狀相同（Vol. 加數字），比對時要連掛名一起看。同 RG 轄下另有一筆 country 未填的 Beyond Music 再發，年份未填——依裁定第 91 條 rgMbid 是身分鍵不是年份來源，年份取 MB first-release-date 1989-08-26。發行方兩說（SRB Records／동아기획），行文不得斷言單一發行方。店面 kr。",
+  "mbNote": "釘 release-group 429b8012-0410-4a6c-88e9-3928092b20b4。回問確認：title「김현철 Vol.1」、artist-credit「김현철」、first-release-date 1989-08-26、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/Official/1989-08-26、SRB Records ＋ 동아기획；country 未填/Official/日期未填、Beyond Music）。刻意不釘：8fbac534-3a4a-4219-a7a3-eb409ca7b313《Kim Hyun Chul Best!》（1996 精選）、eebbe123-e50c-3d79-b607-45e0ce8f1b46《Best Album 2000》（精選）、7a862a3a-9f94-4850-b5ed-90c61062e2eb《그대안의 블루 OST》（1992 原聲帶，與本批另一張《32℃ 여름》同年同月，最容易互換）。藝人 MBID 127aece2-7cba-4e15-a915-0b863fc977dc，名下 14 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "김현철 1집；Kim Hyun Chul Vol.1；춘천 가는 기차",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "김현철",
+  "album": "32℃ 여름",
+  "year": 1992,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "（MB label-info 未填）",
+  "why": "김현철 名下第三張正規盤，MB 該 release-group 的 first-release-date 記 1992-03，轄下唯一一筆 KR Official 盤的 label-info 欄空白。池中 김현철 是 0 張（實掃全 14,424 列），本批同時收他的第一張與這張，讓 1989 與 1992 兩端在卡池裡對得起來。這一線在池中的鄰居是《빛과 소금 Vol.1》（1990）與本批同時收的《오래된 친구》（1994），三張同屬韓國都會流行由 동아기획 系樂手向 1990 年代延伸的那一段。",
+  "risk": "⚠ 盤名含「℃」（U+2103 DEGREE CELSIUS）——這正是裁定第 153 附錄記的同形異碼族：外部服務常寫成「32°C」（U+00B0）或「32ºC」（U+00BA）或拆成「32도」，四種在任何正規化下都不相等。全部要進 queryAlias，查不到時依第 153 附錄的方法「拆到只剩 ASCII 字母與數字」再搜（`32` `여름`）。廠牌未填，行文不得寫發行方。年份只到月。撞卡：池中零張。店面 kr。",
+  "mbNote": "釘 release-group 8ce61947-a2a6-4fd7-a3d1-14091d36be07。回問確認：title「32℃ 여름」、artist-credit「김현철」、first-release-date 1992-03、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1992-03、label-info 空）。刻意不釘：7a862a3a-9f94-4850-b5ed-90c61062e2eb《그대안의 블루 OST》（1992-03-01，與本張同年同月的原聲帶，是最像的假陽性）、5e713ac6-fcc2-434d-8e8e-0ae704e4aa4a《횡계에서 돌아오는 저녁》（1993 第四張）。藝人 MBID 127aece2-7cba-4e15-a915-0b863fc977dc。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "32°C 여름；32ºC 여름；32C 여름；김현철 3집；Kim Hyun Chul 32",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "이승환",
+  "album": "B.C 603",
+  "year": 1989,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "（MB label-info 未填）",
+  "why": "이승환 的首張正規盤，MB 該 release-group 的 first-release-date 記 1989-10-15，轄下唯一一筆 KR Official 盤的 label-info 欄空白（另一筆是 Pseudo-Release，不算）。池中 이승환 是 0 張（實掃 seed_cards.json 全 14,424 列，諺文與 Lee Seung Hwan／Lee Seunghwan 三種寫法都查過）。依藍圖 §五-1，先補「第一張該有的」——這位在池中完全不存在，本批收他的首張與 1995 年的《Human》兩張。",
+  "risk": "掛名撞卡：MB 上有四個 이승환 實體（c34d7d73 創作歌手、35fe40ba 錄音師、1fc37663 編曲、19c1108c ONLEE 的本名），browse 一律認 MBID（裁定第 20 條）。盤名「B.C 603」含空格與句點，正規化後成「bc603」，與任何含這串數字的碟都會撞——但 MB 名下無同名者。廠牌未填，行文不得寫發行方。撞卡：池中零張。店面 kr。",
+  "mbNote": "釘 release-group 657de8cc-02d1-4658-b8e7-541a4433e694。回問確認：title「B.C 603」、artist-credit「이승환」、first-release-date 1989-10-15、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/Official/1989-10-15、label-info 空；country 未填/Pseudo-Release——Pseudo-Release 不是實體盤，不採為背書）。刻意不釘：a07ffcd6-1007-415e-960d-7c782417325d《Always》（1991 第二張）、dcc3a62c-f469-4f48-98eb-70df744206ec《His Ballad》與 6bdd9e8e-e775-4ade-b400-cc1979a98370《His Ballad II》（1999／2003 兩張精選）、cc7d147e-7f69-3e64-a62d-27c3a03dbc99《The Show》（1993 現場盤）。藝人 MBID c34d7d73-c12a-4f29-a1aa-870f984dd405，名下 19 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "BC 603；이승환 1집；Lee Seung Hwan B.C 603；텅 빈 마음",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "이승환",
+  "album": "Human",
+  "year": 1995,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "Seoul Records",
+  "why": "이승환 名下編號第四的正規盤，MB 該 release-group 的 first-release-date 記 1995-06-01，轄下 KR Official 盤由 Seoul Records 發行。池中 이승환 是 0 張（實掃全 14,424 列），本批同時收他 1989 年的首張《B.C 603》與這張，兩端各一。Seoul Records 同時是本批 b 組《부활 Vol.1》《Remember》《불림소리》的發行方，這一家在 1980–90 年代同時做搖滾與歌謡兩條線，卡池目前一張都沒有。",
+  "risk": "盤名「Human」是英文常用字，正規化後成「human」，與卡池中任何叫 Human 的碟都會撞——實掃 seed_cards.json 全 14,424 列，池中無同名卡，但跨批（尤其 c-111／c-112 新譜批）要再比一次。掛名撞卡同前一張：MB 上四個 이승환 實體。⚠ 同 RG 轄下有一筆 Pseudo-Release，不是實體盤、不採為背書。撞卡：池中零張。店面 kr。",
+  "mbNote": "釘 release-group d6b99bd4-0808-4bd2-bf18-1528aa9d8650。回問確認：title「Human」、artist-credit「이승환」、first-release-date 1995-06-01、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/Official/1995-06-01、Seoul Records；country 未填/Pseudo-Release）。刻意不釘：dbd2dc43-e91c-390c-bf8e-e18b80105a45《Cycle》（1997 第五張）、1be0b0e6-ac4f-48e1-95cf-7df72e94cba3《The War In Life》（1999）、75d9437a-1b9c-46c2-91c4-cbab8fe16c15《My Story》（1993 第三張）。藝人 MBID c34d7d73-c12a-4f29-a1aa-870f984dd405。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "이승환 4집；Lee Seung Hwan Human；천일동안",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "윤상",
+  "album": "윤상 1집",
+  "year": 1990,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Jigu Records（catno JLS-1202388）",
+  "why": "윤상 的首張個人盤，MB 該 release-group 的 first-release-date 記 1990，轄下兩筆 KR release 都由 Jigu Records 發行（1990 年 LP，catno JLS-1202388；1991 年 CD，catno JCDS-0156）。池中 윤상 是 0 張（實掃全 14,424 列，諺文與 Yoon Sang／Yun Sang 三種寫法都查過）。他是 1990 年代韓國流行編曲電子化的關鍵人物之一，池中同期的《빛과 소금 Vol.1》與本批的 015B、김현철 兩位屬同一個技術轉折，本批補他的頭兩張。",
+  "risk": "⚠ MB 原題只有「Vol.1」三個字元，沒有掛名——這是裁定第 162 條講的最危險形狀：盤名太短，任何更長的碟都能把它包住。本卡依裁定第 6 條取原始發行寫法「윤상 1집」，MB 原題進 queryAlias。⚠ 轄下兩筆 release 的 status 欄都是空的（不是 Official 也不是 Bootleg）——依裁定第 167 條附帶，status 未填時不採為「Official 背書」，但兩筆都是 KR、廠牌與編號齊全，不是日版。撞卡：池中零張。店面 kr。",
+  "mbNote": "釘 release-group 4ee1549b-8ca9-48e0-aaf4-d86c4f5e39c2。回問確認：title「Vol.1」、artist-credit「윤상」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/status 未填/1990、Jigu Records、JLS-1202388；KR/status 未填/1991、Jigu Records、JCDS-0156）。⚠ 兩筆 status 皆未填，依第 167 條不採為 Official 背書，但無任何 JP release，不涉本批「日版撞進來」的風險。刻意不釘：34241df9-227b-41f7-9de0-bb143567eb9b《윤상 베스트》（2001 精選）、8c4955ff-ed6d-4b9b-82a9-4631382ee3af《YoonSang 20th Anniversary》（2011 精選）、25fa24c9-8948-4fa7-888e-484b3b979031《Song Book: Play With Him》（2008 精選）、09f8b930-5de2-42a6-9a75-e813f594a379《ArcheAge Original Soundtrack Disk》（2012 遊戲原聲，與 c-101 遊戲批可能互撞）。藝人 MBID af6b2846-d121-4e9f-833c-fa375d58442f，名下 12 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vol.1；윤상 Vol.1；Yoon Sang Vol.1；이별의 그늘",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "윤상",
+  "album": "윤상 2집 Part 1",
+  "year": 1992,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Jigu Records（catno JCDS-0327）",
+  "why": "윤상 第二張個人盤的前半，MB 該 release-group 的 first-release-date 記 1992，轄下唯一一筆 KR Official 盤由 Jigu Records 發行、編號 JCDS-0327；同年 10 月另有一張《Part Ⅱ》（e8d513e6）是後半。池中 윤상 是 0 張（實掃全 14,424 列），本批連同他的首張一起補，兩張都在 Jigu Records 這條發行線上。分兩片出版是這張本身的形狀，不是後世拆的。",
+  "risk": "⚠ MB 原題「2집 Part 1」不含掛名，形狀同前一張（裁定第 162 條），本卡取「윤상 2집 Part 1」，MB 原題進 queryAlias。⚠ 最像的假陽性是同一位藝人同年 1992-10-02 的《Part Ⅱ》（e8d513e6），標題差一個羅馬數字——裁定第 168 條講的就是「卷號差別會被子字串比對整個吃掉，而數字殘餘那道測不到羅馬數字」，這張是同型，已寫進刻意不釘。撞卡：池中零張。店面 kr。",
+  "mbNote": "釘 release-group 8bd54600-fee7-46c9-ab76-6769df7de958。回問確認：title「2집 Part 1」、artist-credit「윤상」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1992、Jigu Records、catno JCDS-0327）。刻意不釘：e8d513e6-c434-4a93-8b8e-2654c48b17e1《Part Ⅱ》（1992-10-02，第二張的後半，只差羅馬數字；裁定第 168 條的形狀）、4ee1549b-8ca9-48e0-aaf4-d86c4f5e39c2《Vol.1》（本批另一張卡，不可互配）、5bdfdbcc-45f9-4519-9cc4-ffaf9bc78b87《Clichè》（2000）。藝人 MBID af6b2846-d121-4e9f-833c-fa375d58442f。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "2집 Part 1；윤상 2집；Yoon Sang 2 Part 1",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "015B",
+  "album": "The Fourth Movement",
+  "year": 1993,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "DAEYOUNG AV（catno DYCD-1018）",
+  "why": "015B 名下編號第四的正規盤，MB 該 release-group 的 first-release-date 記 1993-08-25，轄下唯一一筆 KR Official 盤由 DAEYOUNG AV 發行、編號 DYCD-1018。池中 015B 是 0 張（實掃 seed_cards.json 全 14,424 列，015B／공일오비／空一烏飛 三種寫法都查過）。這個團的做法是每張換一批客座主唱、由固定的製作班底寫編曲，與本批 윤상、김현철 同屬 1990 年代初韓國流行的錄音室製作轉向；池中這一段目前只有《서태지와 아이들》兩張，都是 1992 年之後的舞曲那一側。",
+  "risk": "掛名「015B」是數字開頭的拉丁字串，正規化後成「015b」；MB 的 alias 還有諺文「공일오비」與漢字「空一烏飛」，三種都要進 queryAlias（依裁定第 25 條，這三種外部服務都認得，填了會提高命中率）。⚠ 015B 名下有 42 個 release-group，其中 2019 年之後有大量《New Edition NN》單曲與《Yearbook YYYY》年度盤，字串「015B＋數字」的候選極多——browse 必須用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條），本張正是分頁第一頁才看得到的。撞卡：池中零張。店面 kr。",
+  "mbNote": "釘 release-group 39abfbf3-14fe-4176-a984-fafd05364b4a。回問確認：title「The Fourth Movement」、artist-credit「015B」、first-release-date 1993-08-25、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1993-08-25、DAEYOUNG AV、catno DYCD-1018）。刻意不釘：c179fe53-08f1-47b4-be21-b525d61a7d00《Second Episode》（1991 第二張）、e73a34e8-1322-3efc-8fd8-ff9bd8eb7c67《The Third Wave》（1992 第三張，序數標題與本張同型）、37b864c3-00da-4da6-bef5-8197e3420d2a《Big 5》（1994 第五張）、2ccc69f8-1712-41bc-a48e-b66c4b8de870《The Best Collection》（1996 精選）、fbd57708-158f-3b1a-bc43-73bc0cd22993《015B Live, Part 1》（1992 現場盤）。藝人 MBID 4cebbc8b-6ae8-4288-b183-b6f11bdd749d，名下 42 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "공일오비；空一烏飛；015B 4집；신인류의 사랑",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "신승훈",
+  "album": "미소속에 비친 그대",
+  "year": 1990,
+  "genres": [
+   "pop"
+  ],
+  "label": "덕윤산업（Deokyoon Industry，catno DYCD-7001）",
+  "why": "신승훈 的首張正規盤，MB 該 release-group 的 first-release-date 記 1991-01-15，轄下第一筆 KR Official 盤由 덕윤산업 發行、編號 DYCD-7001；2024-04-18 另有 Kakao Entertainment ＋ Media Line 的 KR Official 再發。池中 신승훈 是 0 張（實掃全 14,424 列，諺文與 Shin Seung Hun／Shin Seung Hoon 三種寫法都查過）。덕윤산업 這條線同時發了本批另一張 김건모 3집（DYCD-7023），兩位是 1990 年代前半韓國唱片工業銷量端的兩個代表，池中一張都沒有。",
+  "risk": "撞卡：池中零張。盤名是完整的韓文句子、夠長，不易被別碟包住。⚠ 年份注意：卡片年份取 MB first-release-date 1991-01-15；2024 年那筆 Kakao 再發是同一個 release-group 的後續 release，依裁定第 91 條 rgMbid 是身分鍵不是年份來源，不得拿 2024 當卡片年。⚠ 신승훈 名下 18 個 release-group 中有 5 張精選（含 baa8df23《The Legend: The New》無年份），字串比對容易配到。店面 kr。",
+  "mbNote": "釘 release-group c753073a-6470-4b17-aa90-6f40e578d2e4。回問確認：title「미소속에 비친 그대」、artist-credit「신승훈」、first-release-date 1991-01-15、primary-type Album、secondary-types 空、轄下 2 筆 release（KR/Official/1991-01-15、덕윤산업、DYCD-7001；KR/Official/2024-04-18、Kakao Entertainment ＋ Media Line）。刻意不釘：8d85761e-25a0-4065-aca2-7b5b5c53ce56《Shin Seung Hun Vol.2》（1991-11-30，同年第二張）、b3b66f9a-7610-4b74-ba5c-3cfee3d9afcc《Endless Ballads》（2001 精選）、baa8df23-3ab5-3a78-a56c-d7a2837d0d95《The Legend: The New》（精選，無年份）、fa0f17a6-49c4-4351-85c2-37bb55d07b3f《Shin Seung Hun The Best Of Remastered 2024》（2024 精選）。藝人 MBID 7153cab8-3e1e-4395-92da-d428904aff7b，名下 18 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "신승훈 1집；Shin Seung Hun 1；미소 속에 비친 그대",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "김건모",
+  "album": "김건모 3집",
+  "year": 1995,
+  "genres": [
+   "pop"
+  ],
+  "label": "덕윤산업（Deokyoon Industry，catno DYCD-7023）",
+  "why": "김건모 名下編號第三的正規盤，MB 該 release-group 的 first-release-date 記 1995-01-01，轄下 KR Official 盤由 덕윤산업 發行、韓國原盤標題作「잘못된 만남」（catno DYCD-7023），另有一筆同廠牌 DYCD-7021 的「Kim Gun Mo 3」與 2024-04-09 的 Kakao Entertainment ＋ Media Line 再發。池中 김건모 是 0 張（實掃 seed_cards.json 全 14,424 列，諺文與 Kim Gun Mo／Kim Gunmo 三種寫法都查過）。他與本批的 신승훈 同屬 덕윤산업 這條發行線，是 1990 年代韓國主流唱片市場最大量流通的兩個名字，卡池完全缺席。",
+  "risk": "⚠ 盤名三套寫法：MB RG 標題「Kim Gun Mo 3」（羅馬拼音＋數字）、韓國原盤 release 標題「잘못된 만남」、通行的「김건모 3집」。本卡依裁定第 6 條取韓國原盤的「N집」制，另兩種全進 queryAlias。⚠ 同一 RG 轄下兩筆 KR Official 的 catno 不同（DYCD-7021 與 DYCD-7023），是兩種壓片而非兩張碟，行文不得斷言單一編號。⚠ MB 上另有第二個 김건모 實體（0a039861，disambiguation 記 LOGOS），browse 一律認 MBID（裁定第 20 條）。撞卡：池中零張。店面 kr。",
+  "mbNote": "釘 release-group 54a84a71-833f-4d48-8d62-956e41d7ad80。回問確認：title「Kim Gun Mo 3」、artist-credit「김건모」、first-release-date 1995-01-01、primary-type Album、secondary-types 空、轄下 4 筆 release（KR/Official/1995「잘못된 만남」덕윤산업 DYCD-7023；KR/Official/日期未填「Kim Gun Mo 3」덕윤산업 DYCD-7021；KR/Official/2024-04-09、Kakao Entertainment ＋ Media Line；XW/Official/1995-01-01、Media Line）。刻意不釘：a6db92d7-2b16-3a0f-a38c-973d0e91fe32《김건모 2》（1993 第二張）、e8805f3b-b4c6-3e20-899a-b709b18c49d7《Kim Gun Mo》（1992 首張，標題是掛名本身、最容易被任何比對配上）、d440c0ee-5c49-474b-b53a-276961e54d9b《Exchange Kg. M4》（1996 第四張）。藝人 MBID a922eba6-5e85-40f6-b8f3-43ba3134b363，名下 16 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "잘못된 만남；Kim Gun Mo 3；김건모 3",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "장필순",
+  "album": "이 도시는 언제나 외로워",
+  "year": 1992,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "（MB label-info 未填）",
+  "why": "장필순 名下編號第三的正規盤，MB 該 release-group 的 first-release-date 記 1992-05，轄下唯一一筆 KR Official 盤的 label-info 欄空白。池中 장필순 是 0 張（實掃 seed_cards.json 全 14,424 列，諺文與 Jang Pil Soon／Jang Pill Soon 三種寫法都查過）。她出身 동아기획 系，與池中已有的《조동진 1집 (행복한 사람)》《어떤날 I／II》《시인과 촌장 - 푸른 돛》是同一批人的圈子；本批補她 1992 與 1997 兩張，把那個圈子的女聲一端接上。",
+  "risk": "廠牌未填，行文不得寫發行方。年份只到月（1992-05）。撞卡：池中零張。⚠ 장필순 名下 12 個 release-group 裡有四張用羅馬拼音命名（《Soony 6》《SOONY SEVEN》《Sogil Soony Eight》《soony re:work-1》），與韓文標題的那幾張分屬兩套字串體系，掛名查詢兩邊都要跑（裁定第 49 條）。盤名是完整句子、夠長，不易被包住。店面 kr。",
+  "mbNote": "釘 release-group ca5cd078-ad5c-4dcc-8371-5712f5d9c762。回問確認：title「이 도시는 언제나 외로워」、artist-credit「장필순」、first-release-date 1992-05、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1992-05、label-info 空）。刻意不釘：466890dc-8e6d-44eb-bbba-fb9afa7dd092《장필순》（1989 首張，標題即掛名）、f9ee7ca0-26a3-4497-9fa2-7b64b4dd2e78《장필순2》（1991 第二張）、b9f111d1-f09e-42d7-b5bd-7eda28999270《4집》（1995，標題只有兩個字元，是裁定第 162 條的形狀）、2e0f07fc-bf39-4b7c-b4e2-72e15d8453ba《장필순 Reminds 조동진》（2021 翻唱盤）。藝人 MBID 00b885c5-92b2-4413-8dc2-af6f218c57d2，名下 12 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "장필순 3집；Jang Pil Soon；Jang Pill Soon",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "장필순",
+  "album": "나의 외로움이 널 부를 때",
+  "year": 1997,
+  "genres": [
+   "pop",
+   "folk"
+  ],
+  "label": "（MB label-info 未填）",
+  "why": "장필순 名下編號第五的正規盤，MB 該 release-group 的 first-release-date 記 1997-08-01，轄下唯一一筆 KR Official 盤的 label-info 欄空白。池中 장필순 是 0 張（實掃全 14,424 列），本批同時收她 1992 與 1997 兩張，兩張中間隔的正是她從동아기획 系轉向自製的那幾年。與本批 이소라《슬픔과 분노에 관한》（1998）、이상은《공무도하가》（1995）同屬 1990 年代後半韓國創作女聲那一段，池中三位都是零。",
+  "risk": "廠牌未填，行文不得寫發行方。撞卡：池中零張。⚠ 盤名與本批同一藝人的另一張《이 도시는 언제나 외로워》都是「外로움／외로워」同字根的長句，人眼與字串比對都容易互換，兩張的 queryAlias 都要帶集數。掛名兩套字串體系同前一張。店面 kr。",
+  "mbNote": "釘 release-group aa9faa75-7fce-4fc8-a37b-955db00e0bc7。回問確認：title「나의 외로움이 널 부를 때」、artist-credit「장필순」、first-release-date 1997-08-01、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1997-08-01、label-info 空）。刻意不釘：ca5cd078-ad5c-4dcc-8371-5712f5d9c762《이 도시는 언제나 외로워》（本批另一張卡，不可互配）、6968f7ac-efad-441d-95d2-5c068f5cccc6《Soony 6》（2002）、3f028332-788b-4086-b3c6-7e54eef406e1《SOONY SEVEN》（2013）。藝人 MBID 00b885c5-92b2-4413-8dc2-af6f218c57d2。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "장필순 5집；Jang Pil Soon 5；나의 외로움이 널 부를때",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "이상은",
+  "album": "공무도하가",
+  "year": 1995,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "（MB label-info 未填；2008 再發為 Blue Boy Records，catno TBBCD 0013）",
+  "why": "이상은 名下 1995 年的正規盤，MB 該 release-group 的 first-release-date 記 1995-07-26；轄下有兩筆 release，1995 那筆 country 未填、label-info 空，2008 那筆是 KR Official、Blue Boy Records、編號 TBBCD 0013。池中 이상은 是 0 張（實掃全 14,424 列，諺文、Lee Tzsche、Lee Sang-Eun、李尙恩 四種寫法都查過）。她在 1990 年代長期在日本工作、MB 實體的 sort-name 就記成「Lee, Tzsche」，這條線在池中完全不存在。",
+  "risk": "⚠ 本批「釘韓國母國正規盤」這條在這張上是靠 2008 那筆 KR Official 成立的——1995 原盤那筆 country 未填。⚠ 이상은 是本批日版風險最高的一位（1990 年代在日本發行、MB alias 有片假名「リーチェ」），刻意不釘那幾筆裡 b689eab4《Endless Lay》與 05bd0330《Asian Prescription》兩筆 country 都未填、極可能是日本發行，一律不釘。⚠ MB 上另有第二個 이상은 實體（d7018b63，是某張聖誕合輯的客串），browse 認 MBID。撞卡：池中零張。店面 kr 為主、jp 只能當備援且命中後要逐軌核對（裁定第 141 條）。",
+  "mbNote": "釘 release-group daa25e41-d57a-499e-890a-705d42edef48。回問確認：title「공무도하가」、artist-credit「이상은」、first-release-date 1995-07-26、primary-type Album、secondary-types 空、轄下 2 筆 release（country 未填/Official/1995-07-26、label-info 空；KR/Official/2008、Blue Boy Records、TBBCD 0013）——KR Official 盤存在。刻意不釘：b689eab4-5c33-3d9f-8f10-008910ac5f40《Endless Lay》（無年份、country 未填，疑為日本發行）、05bd0330-511e-39fd-a51c-23855d77b38b《Asian Prescription》（無年份、primary-type null，同上）、167bc82e-8946-4716-b8e0-c3eba34d0a16《Darkness》（1993）、2dcc4acb-9be1-4561-bd18-8cf31d2e6e2c《외롭고 웃긴 가게》（1997，轄下唯一 release 的 country 未填，依本批規矩不釘，見 rulings 未收清單）。藝人 MBID 55bdc9a7-0b86-4be8-90d9-cf73db9f022f，名下 7 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lee Tzsche；Lee Sang-Eun；리채；Gongmudohaga；李尙恩",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "이소라",
+  "album": "슬픔과 분노에 관한",
+  "year": 1998,
+  "genres": [
+   "pop"
+  ],
+  "label": "동아기획（Dong-A Planning，catno VIP-20265）",
+  "why": "이소라 名下編號第三的正規盤，MB 該 release-group 的 first-release-date 記 1998-05-01，轄下唯一一筆 KR Official 盤由 동아기획 發行、編號 VIP-20265。池中 이소라 是 0 張（實掃 seed_cards.json 全 14,424 列，諺文與 Lee So-ra／Lee Sora 三種寫法都查過）。동아기획 的 VIP-2xxxx 編號系列同時涵蓋池中的《어떤날 I／II》《시인과 촌장 - 푸른 돛》與本批的《김현식 2집》《항상 기뻐하는 사람들》《들국화 2집》《파랑새》——本張是這條編號線最晚的一張，補在後面才看得出這家廠牌從 1984 走到 1998 的跨度。",
+  "risk": "撞卡：池中零張。⚠ 이소라 名下有兩張精選都叫 Best（8dccdb30《Best》1999、3c4f5460《BEST》2019），大小寫不同、正規化後相等——這是裁定第 162 條「兩個候選長得一樣」的形狀，兩筆都寫進刻意不釘。年份 1998-05-01。盤名是完整韓文句子、夠長。店面 kr。",
+  "mbNote": "釘 release-group 98137cb1-8176-3b25-aaa3-969b5d31c7ee。回問確認：title「슬픔과 분노에 관한」、artist-credit「이소라」、first-release-date 1998-05-01、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1998-05-01、동아기획、catno VIP-20265）。刻意不釘：8dccdb30-b25e-396d-9b1b-1851195ec496《Best》（1999 精選）與 3c4f5460-dffb-41ed-8148-5a254bec4adb《BEST》（2019 精選，與前者正規化後相等）、78de92fb-0287-4110-b91a-cbf12a4c29b7《이소라 라이브》（2001 現場盤）、0d708da0-7e39-4999-b46a-c426a20a9cbc《이소라 Vol. 1》（1995 首張）。藝人 MBID 49c35d10-34af-4a21-94b5-88f998d66093，名下 12 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "이소라 3집；Lee So Ra 3；Lee Sora",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "빛과 소금",
+  "album": "오래된 친구",
+  "year": 1994,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "Dreamus",
+  "why": "빛과 소금 名下 1994 年的正規盤，MB 該 release-group 的 first-release-date 記 1994-02-01，轄下唯一一筆 KR Official 盤的 label-info 掛 Dreamus。池中 빛과 소금 只有 1 張（實掃全 14,424 列）：《빛과 소금 Vol.1》，對應 MB 的 9441fbbf（1990-11-01，轄下唯一 release 的 country 是 XW）。MB 名下總共只有 3 個 release-group，第三筆是 1999 年的精選——也就是說這個團在 MB 上可收的正規盤就剩本張這一張。本批同時收 김현철 兩張，三張同屬 1990 年代前半韓國都會流行的同一組樂手圈。",
+  "risk": "撞卡：與池中《빛과 소금 Vol.1》正規化後不相等，實掃已核；但兩張同團，上架時簡介不得互抄。⚠ 掛名「빛과 소금」中間有空格，MB alias 另有「Light & Salt」「The Light and The Salt」——`&` 與 `and` 的分裂正是 2026-09-06 稽核型態三記的形狀，兩種拉丁寫法都要進 queryAlias。廠牌 Dreamus 是現名（原為 SM Life Design／신나라），MB 只給這一個字串，行文不得斷言 1994 年當時的發行方。店面 kr。",
+  "mbNote": "釘 release-group f6864239-53ae-4fb5-b856-53abf6674319。回問確認：title「오래된 친구」、artist-credit「빛과 소금」、first-release-date 1994-02-01、primary-type Album、secondary-types 空、轄下 1 筆 release（KR/Official/1994-02-01、Dreamus）。刻意不釘：9441fbbf-90c5-47fa-a5bb-1ee7404b2ab7《빛과 소금》（1990-11-01，池中已有《빛과 소금 Vol.1》即此張；且轄下唯一 release 的 country 是 XW 不是 KR）、9afb7f2d-3cbd-44bf-97b8-5e4da8a80fc5《빛과 소금 Best》（1999 精選）。藝人 MBID 09f3517f-2df9-4326-98e3-4ccb79391442，名下 3 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Light & Salt；Light and Salt；The Light and The Salt；빛과소금 오래된 친구",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

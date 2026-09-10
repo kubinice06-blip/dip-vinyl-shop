@@ -1,0 +1,758 @@
+[
+ {
+  "key": "desc2:Boo Williams|Home Town Chicago LP",
+  "artist": "Boo Williams",
+  "album": "Home Town Chicago LP",
+  "facts": [
+   {
+    "f": "release-group 1be84cd2 的欄位：title「Home Town Chicago LP」、artist-credit「Boo Williams」（藝人實體 MBID 265c41ad，type Person、country US、disambiguation 空）、first-release-date **1996**、primary-type Album、secondary-types **空**。轄下 **4 筆 release，四筆全部標 Official**：1996 US 的 Relief Records RR 766（**兩張 12 吋、每張 4 軌，合計 8 軌**）、2011-11 GB 的 Anotherday Records 0001AD（CD，8 軌）、2011-11-20 XW 的 Anotherday Records 0001AD（數位，8 軌）、2020-11-20 XW 的無廠牌數位版（8 軌）。**後三筆的 title 都縮成《Home Town Chicago》，只有 1996 原盤帶 LP 後綴。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/1be84cd2-5de1-4628-ae35-9453fd202466?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 US 原盤（Relief Records RR 766，兩張 12 吋）的逐軌曲目：第一張 1〈Home Town Chicago〉、2〈Devil Muzic〉、3〈Make Some Noise〉、4〈Snare Tappin〉；第二張 1〈Lazy Mood〉、2〈Old School Flavor〉、3〈Smokin' Acid〉、4〈Evil Ways〉。**八軌全部沒有記錄長度**，2011 年的 CD 與數位版曲序、曲名與原盤完全相同，也是 8 軌、同樣無長度。**四筆 release 沒有任何一筆的軌數不是 8。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1be84cd2-5de1-4628-ae35-9453fd202466&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **40 個 release-group**：primary-type=Album 6 個（其中 secondary-types 為空的 5 個、帶 Compilation 的 1 個）、EP 24 個、Single 6 個、**primary-type=Compilation 0 個**。secondary-types 為空的 5 張長篇依 first-release-date 排序是：**1995《Boo Williams vs. Glen Underground》、1995《Lost of Time》、1996 本張、2014-11-10《The Boo Williams Explosion》、2023-03《Depths Of Life》**。**本張排第 3，不是第 1；1990 年代的長篇也不只這一張，而是三張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=265c41ad-2e21-4c7a-9523-bb447906bc8c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選逐筆攤開曲目列比對，**兩筆都不是本張**：collectionId 909021683《Technical EP》（1997，4 軌〈Tc2000〉7:06／〈Planet House〉7:06／〈The Firnament〉10:49／〈Space Patrol〉6:18，℗ 2014 Chiwax），四軌與本張八軌**無一同名**；collectionId 1817952110《Make Some Noise - Single》（1996，只有 1 軌〈Make Some Noise〉7:27，℗ 1996 Metrophon Music Spain S.L.），只有與本張第 3 軌同名的單獨一軌、不是整張碟。**兩筆均駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=909021683&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "第二筆回撈候選的攤開結果：collectionId 1817952110，collectionName「Make Some Noise - Single」、artistName「Boo Williams」、releaseDate 1996-01-01、trackCount **1**、copyright「℗ 1996 Metrophon Music Spain S.L.」，唯一一軌〈Make Some Noise〉7:27 有 previewUrl。**單軌對八軌，不能當本張的固定試聽來源。**",
+    "src": "https://itunes.apple.com/lookup?id=1817952110&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1996 年的原盤是兩張 12 吋、一面四首，整張只有八首",
+   "2011 年再發時把盤名結尾的 LP 兩個字拿掉了"
+  ],
+  "sound": "1996 年 Relief Records RR 766 的原盤是兩張 12 吋、每張四軌共八軌，八軌都沒有留下長度紀錄。曲序是〈Home Town Chicago〉〈Devil Muzic〉〈Make Some Noise〉〈Snare Tappin〉接〈Lazy Mood〉〈Old School Flavor〉〈Smokin' Acid〉〈Evil Ways〉，曲名把地名、器材動作（〈Snare Tappin〉）與 acid（〈Smokin' Acid〉）混在同一張裡。2011 年 Anotherday 的 CD 與數位版、2020 年的無廠牌數位版都照原盤八軌與曲序復刻，只把盤名縮成《Home Town Chicago》。四筆發行沒有任何一筆加曲或減曲。",
+  "keyTracks": [
+   "Home Town Chicago",
+   "Make Some Noise",
+   "Smokin' Acid"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1996。release-group first-release-date **1996**、其下最早的 release 是 1996 US 的 Relief Records RR 766（Official），另外三筆分別是 2011-11、2011-11-20 與 2020-11-20 的再發。**串流側沒有本張的上架版本可對照 ℗ 年**——回撈的兩個候選都不是這張碟，所以四處對照只成立三處（release-group 的 first-release-date、原盤 release 的 date、再發 release 的 date），仍指向 1996。**同名先行單曲：無**；1996 年那筆〈Make Some Noise〉單曲與本張第 3 軌同名，但它是串流側 2016 年之後才建的單軌條目，不是 1996 年的先行單曲。",
+  "notes": "**擋下策展層一處（序數）**：`curatorWhy` 寫「Boo Williams 名下第一張、也是 1990 年代唯一一張長篇作品」。**兩句都與藝人目錄不符**——同一份目錄裡 1995 年就有兩張 secondary-types 為空的 Album（《Boo Williams vs. Glen Underground》與《Lost of Time》），本張依 first-release-date 排第 3，1990 年代的長篇共三張。卡單自己的 `mbNote` 也把這兩張列在「刻意不釘」，等於自承它們存在。**行文不得寫「第一張」「唯一一張」**；要寫序數只能寫「1996 年的長篇」或「Relief 時期的長篇」。｜`curatorWhy` 另寫「40 個 release-group 有 24 個是 EP／Single」：實際 EP 24 個、Single 6 個，**EP 加 Single 是 30 個**，24 只是 EP 那一項。行文不要引這個數字。｜`curatorRisk` 寫「四個 release 有三個 Official、2020 那筆無廠牌資訊」：**四筆的 status 全部是 Official**，2020 那筆只是 label-info 掛成無廠牌，不是 status 缺失。｜**撇號**：來源端第 7 軌寫成〈Smokin’ Acid〉（彎撇 U+2019），本檔 `keyTracks` 依卡池慣例改成 ASCII 直撇〈Smokin' Acid〉。｜**回撈的兩個候選全部駁回**，本張維持無串流來源狀態，封面走圖庫那一路。"
+ },
+ {
+  "key": "desc2:Glenn Underground|A Story of Deepness",
+  "artist": "Glenn Underground",
+  "album": "A Story of Deepness",
+  "facts": [
+   {
+    "f": "release-group 69b175c9 的欄位：title「A Story of Deepness」、artist-credit「Glenn Underground」（藝人實體 MBID dde821f9，type Person、country US）、first-release-date **1998**、primary-type Album、secondary-types **空**。轄下 **2 筆 release，兩筆同為 1998 US、同一家 Nite Life Collective、同為 Official**：NLC 007（**兩張 12 吋、每張 4 軌，合計 8 軌**）與 NLC 30072（**CD，10 軌**）。**同年兩種載體的軌數不同，這是本張最要緊的版本差別。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/69b175c9-e930-3c70-aa48-d83f8c5b9479?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1998 US 的 CD 版（NLC 30072）逐軌曲目與長度：1〈Strong Island Jazz〉8:09、2〈London Sirens〉6:37、3〈Solomon's Song〉7:51、4〈Disco Worm〉7:17、5〈Vapors of Vibes〉6:34、6〈Motherless Child〉7:23、7〈Come On〉8:01、8〈GU's Fingertips〉7:58、9〈Showing Off〉6:19、10〈Session of Funk〉8:13。**十軌沒有一軌短於 6:19、最長 8:13，全張總長超過 74 分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=69b175c9-e930-3c70-aa48-d83f8c5b9479&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**兩張 12 吋的原盤（NLC 007）只有前 8 軌**：第一張 1〈Strong Island Jazz〉、2〈London Sirens〉、3〈Solomon's Song〉、4〈Disco Worm〉；第二張 1〈Vapors of Vibes〉、2〈Motherless Child〉、3〈Come On〉、4〈GU's Fingertips〉。**〈Showing Off〉與〈Session of Funk〉兩軌只在 CD 版上**，黑膠版沒有。黑膠那筆未記各軌長度，曲名與曲序與 CD 版前八軌逐位置相符。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=69b175c9-e930-3c70-aa48-d83f8c5b9479&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **87 個 release-group**：primary-type=Album **11 個**（11 個的 secondary-types 全部為空）、EP 35 個、Single 19 個、**primary-type=Compilation 0 個**。11 張長篇依 first-release-date 排序的前四張是：**1995《Boo Williams vs. Glen Underground》（與 Boo Williams 的雙人分享盤，姓氏在該筆被寫成 Glen）、1996《Atmosfear》、1998 本張、2000-06-20《Lounge Excursions》**。**本張排第 3；若不計雙人分享盤則排第 2。**《Lounge Excursions》的 first-release-date 確認是 **2000-06-20**，不是 1997。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=dde821f9-8847-4dc4-a20a-d909d869567b&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選攤開曲目列比對：collectionId 471137821《The Fish Fry - Single》（1998-11-10，3 軌〈The Fish Fry (Part 1)〉6:08／〈(Part 2)〉7:42／〈(Part 3)〉5:33，℗ 1998 Mush），**三軌與本張十軌無一同名**，是同年另一張三段式 12 吋。**駁回，本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=471137821&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "兩張 12 吋只裝得下八首，同年的 CD 版在末尾多放了兩首",
+   "十首沒有一首短於六分十九秒"
+  ],
+  "sound": "1998 年 Nite Life Collective 同年出了兩種載體：NLC 007 是兩張 12 吋、每面兩軌共八軌；NLC 30072 的 CD 是十軌，末尾多出〈Showing Off〉6:19 與〈Session of Funk〉8:13。CD 版十軌從 6:19 到 8:13，沒有一軌短於六分鐘，整張超過七十四分鐘，是給 DJ 長段落用的尺度。曲名一路把地名（〈Strong Island Jazz〉〈London Sirens〉）、靈歌改寫（〈Motherless Child〉）與 disco 引用（〈Disco Worm〉）擺在一起，最後兩軌則直接叫〈Showing Off〉與〈Session of Funk〉。",
+  "keyTracks": [
+   "Strong Island Jazz",
+   "Solomon's Song",
+   "GU's Fingertips"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998。release-group first-release-date **1998**、其下兩筆 release 都是 1998 US Nite Life Collective 的 Official 發行（NLC 007 與 NLC 30072），**沒有任何一筆再發把年份往後推**。串流側查無本張的上架版本（回撈候選是同年另一張單曲，已駁回），四處對照只成立三處，仍指向 1998。**裁定 220 的形狀在本張不成立**：這是 primary-type=Album 的長篇、不是以再發日期建檔的 12 吋單曲。**同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處**：(1) `curatorWhy` 寫「87 個 release-group 裡 primary-type=Album 只有 10 個，這是最早的兩張之一」。實際 **primary-type=Album 是 11 個**，且依 first-release-date 本張排**第 3**（前面有 1995 年與 Boo Williams 的雙人分享盤、1996 年的《Atmosfear》）。**行文若要寫序數，只能寫「不計雙人分享盤是第二張」，不要寫「最早的兩張之一」，也不要引 10 這個數字。** (2) `curatorWhy` 寫「他從 Cajual／Relief 的 12 吋工作轉向 house 專輯形態的第一步」——**第一步不是這張**，《Atmosfear》（1996，池中已有）比它早兩年。｜**版本差別必須守住（裁定 157）**：兩張 12 吋的原盤是 **8 軌**、同年 CD 是 **10 軌**，〈Showing Off〉與〈Session of Funk〉只在 CD 上。行文若要引軌數，卡單的 label 欄記的是 NLC 007（黑膠），**該引 8 軌**；要提十軌就得同時說明那是 CD 版。｜`curatorRisk` 提到的另一種拼法 `Glen Underground`（少一個 n）確認存在，出現在 1995 年那張雙人分享盤的 title 上。｜卡單把《Lounge Excursions》退掉的理由查證屬實：藝人目錄記它的 first-release-date 是 **2000-06-20**。｜回撈的 1 個候選駁回。"
+ },
+ {
+  "key": "desc2:Gemini|Imagine-A-Nation",
+  "artist": "Gemini",
+  "album": "Imagine-A-Nation",
+  "facts": [
+   {
+    "f": "release-group 5d6b0b97 的欄位：title「Imagine-A-Nation」（連字號是 ASCII U+002D）、artist-credit「Gemini」（藝人實體 MBID 385d09fa，type Person、country US、**disambiguation「Spencer Kincy, Chicago house producer」**）、first-release-date **1997**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1997 US 的 Relief Records RR778，Official，**兩張 12 吋、第一張 4 軌第二張 6 軌，合計 10 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5d6b0b97-f449-368c-ad40-6f91eb151f37?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 US 原盤（Relief Records RR778）的逐軌曲目與長度：第一張 1〈Native to America〉7:31、2〈It's the Inside That Counts〉6:48、3〈Don't Look Back〉6:59、4〈Falling Leaves〉6:41；第二張 1〈Stand Up〉4:24、2〈How Can I Chill?〉6:19、3〈What You're Gonna Do?〉3:53、4〈Future Beat I〉6:04、5〈Future Beat II〉2:52、6〈Future Beat III〉5:13。**第二張的後三軌是同一個標題編號一到三的組曲，長度 6:04／2:52／5:13，中間那首是全張最短的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5d6b0b97-f449-368c-ad40-6f91eb151f37&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1285327410**：collectionName「Imagine - A - Nation」（**帶空格的三段式寫法**）、artistName「Gemini」、releaseDate 2016-09-23、trackCount 10、copyright「℗ 2016 Anotherday」。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1997 原盤**逐位置相符**、逐軌長度差都在 1 秒內（7:30／6:48／6:59／6:40／4:23／6:18／3:52／6:03／2:51／5:13）。**上架的就是 1997 原盤的十軌內容，不是選輯也不是再混版**；差別只在店面把〈How Can I Chill?〉與〈What You're Gonna Do?〉的問號拿掉了。",
+    "src": "https://itunes.apple.com/lookup?id=1285327410&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "另一個回撈候選 collectionId **1457052139**《Imagine a Nation EP》（2019-04-05，5 軌，℗ 2019 Anotherday）攤開後是：1〈Imagine a Nation〉4:49、2〈Imagine a Nation (Instrumental)〉5:15、3〈Imagine a Beat〉2:30、4〈For the Crazy I〉5:43、5〈For the Crazy II〉4:41。**五軌與本張十軌無一同名**，是 2019 年另立的同名 EP。**駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=1457052139&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **25 個 release-group**：primary-type=Album 6 個（**secondary-types 為空的只有 4 個**，另兩個分別帶 Live 與 Compilation）、EP 15 個、Single 0 個、**primary-type=Compilation 0 個**。四張長篇依序是 **1997 本張、1997-09-29《In and Out of Fog and Lights》、1997-11-24《In Neutral》、1999《The Music Hall》**——**本張是四張裡最早的一張，也是同一年三張長篇的第一張**。全目錄在 1997 年有 7 個 release-group、1998 年 2 個、1999 年 3 個，**1999 年之後到 2011 年之間是空白**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=385d09fa-1866-408c-8d15-9c7324494463&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第二張唱片最後三首是同一個標題編號一到三，中間那首只有兩分五十二秒",
+   "同一年他出了三張長篇，這是第一張"
+  ],
+  "sound": "1997 年 Relief Records RR778 是兩張 12 吋：第一張四軌都在 6:41 到 7:31 之間，第二張六軌落差大得多，從 2:52 到 6:19。第二張後段是〈Future Beat I〉〈Future Beat II〉〈Future Beat III〉這組編號一到三的連作，6:04、2:52、5:13，中間那首是整張最短的一軌；前面的〈Stand Up〉4:24 與〈What You're Gonna Do?〉3:53 也比第一張那四軌短得多。曲名一半是句子（〈It's the Inside That Counts〉〈Don't Look Back〉〈How Can I Chill?〉），一半是編號式的機器命名。2016 年的數位再發把十軌原樣搬上串流、逐軌長度差都在一秒內。",
+  "keyTracks": [
+   "Native to America",
+   "It's the Inside That Counts",
+   "Future Beat II"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997**、其下唯一一筆 release 是 1997 US 的 Relief Records RR778（Official），沒有更早的 release。串流店面 us 的 1285327410 releaseDate 記 **2016-09-23**、℗ 欄寫「℗ 2016 Anotherday」——**那是 2016 年數位再發的錄製聲明，不是原盤年份**；該筆的十軌內容與 1997 原盤逐位置相符、長度差在 1 秒內，可確認是同一批錄音的再發。四處對照後年份仍是 1997。**同名先行單曲：無。**",
+  "notes": "**擋下策展層兩處**：(1) `curatorWhy` 寫「1997 年他在 Relief、Cajual 與 Peacefrog 之間一年出七、八張 12 吋」。藝人目錄 1997 年**總共只有 7 個 release-group，其中 3 個是長篇**，非長篇只有 4 個。**行文不得寫「一年出七、八張 12 吋」。** (2) `curatorWhy` 寫「他 1998 年之後淡出」。目錄顯示 **1999 年還有 3 筆**（《The Music Hall》與兩張 EP），真正的空白始於 **1999 年之後**。行文要寫淡出，年份得寫 1999。｜`curatorWhy` 還寫「Relief 少數幾張以專輯規格編號發行的碟」——這句需要廠牌完整編號序列才查得動，**本批沒有查到可引的來源，行文不要寫**。｜**盤名兩種寫法**：原盤是《Imagine-A-Nation》（ASCII 連字號無空格），店面是《Imagine - A - Nation》（連字號兩側有空格），2019 年另有一張不同內容的《Imagine a Nation EP》——**三者不是同一張**。｜**曲名的問號**：原盤作〈How Can I Chill?〉〈What You're Gonna Do?〉，店面把問號拿掉，行文照原盤寫。｜**回撈的 2 個候選：採信 1285327410、駁回 1457052139。**"
+ },
+ {
+  "key": "desc2:Roy Davis Jr.|The Secret Mission",
+  "artist": "Roy Davis Jr.",
+  "album": "The Secret Mission",
+  "facts": [
+   {
+    "f": "release-group f53d1dc5 的欄位：title「The Secret Mission」、artist-credit「Roy Davis Jr.」（帶句點；藝人實體 MBID a58a5d1f，type Person、country US）、first-release-date **1995**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1995 US 的 Power Music Records MUCD-005，Official，**CD，10 軌**。**沒有任何再發、沒有黑膠版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/f53d1dc5-1e95-3683-9cf6-18d2d1bab150?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1995 US 原盤（Power Music Records MUCD-005，CD）的逐軌曲目與長度：1〈Power Music〉5:04、2〈Luv of the Piano〉5:44、3〈R U Ready〉5:26、4〈Heart Attack (album remix)〉4:07、5〈Lost in Space〉4:26、6〈Land of the Unknown〉4:51、7〈Music Is My Life〉4:13、8〈Distant Planet (Saved Your Life remix)〉4:24、9〈Planet X〉5:32、10〈Dance With Me〉6:34。**十軌從 4:07 到 6:34，整張不到 50 分鐘；十軌裡有兩軌的標題自帶 remix 註記，是把先前的 12 吋版本重做成專輯版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f53d1dc5-1e95-3683-9cf6-18d2d1bab150&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **485293684**：collectionName「The Secret Mission」、artistName「Roy Davis Jr.」、releaseDate 2005-01-01、trackCount 10、copyright「℗ 2005 Deep House Music」。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1995 原盤**逐位置相符**、逐軌長度差都在 1 秒內（304／344／326／247／266／292／253／265／331／394 秒）。**上架的就是 1995 原盤的十軌內容**，只是 ℗ 掛的是 2005 年的再發。",
+    "src": "https://itunes.apple.com/lookup?id=485293684&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **44 個 release-group**：primary-type=Album 8 個（**secondary-types 為空的只有 5 個**，另 3 個帶 Compilation）、EP 9 個、Single 27 個、**primary-type=Compilation 0 個**。secondary-types 為空的 5 張長篇依序是 **1995 本張、2004《Chicago Forever》、2005《Water for Thirsty Children》、2009-07-15《God Life Music》、2014-04-28《Destroy & Rebuild》**——**本張是名下最早的長篇，而且與第二張之間隔了九年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a58a5d1f-9467-4df4-a157-eabb24d6bf28&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一份藝人目錄裡，1995 年除本張外另有三筆非長篇（《Tha Black Light Exposure EP》《Roy's Chicago Basement Traxx》《The Wild EP, Part 2》）；**〈Gabriel〉的 first-release-date 是 1996、primary-type Single**，同年還有一筆 1996-09-01 的《Gabrielle》。**〈Gabriel〉在本張之後一年，不是本張的曲目**——本張十軌裡沒有這首。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a58a5d1f-9467-4df4-a157-eabb24d6bf28&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十首裡有兩首的標題自己帶著 remix 註記，是把先前的十二吋重做成專輯版",
+   "這張之後隔了九年他才再出下一張長篇"
+  ],
+  "sound": "1995 年 Power Music Records MUCD-005 只出過 CD 一種載體、十軌，從 4:07 的〈Heart Attack (album remix)〉到 6:34 的〈Dance With Me〉，整張不到五十分鐘，比同一批芝加哥碟的長段落尺度短。十軌裡〈Heart Attack (album remix)〉與〈Distant Planet (Saved Your Life remix)〉兩軌的標題直接寫著這是專輯版的重做。曲名分成兩路：一路是 house 的自我指涉（〈Power Music〉〈Luv of the Piano〉〈Music Is My Life〉），一路是太空題材（〈Lost in Space〉〈Land of the Unknown〉〈Distant Planet〉〈Planet X〉）。2005 年的數位再發把十軌原樣上架、逐軌長度差在一秒內。",
+  "keyTracks": [
+   "Power Music",
+   "Luv of the Piano",
+   "Planet X"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995**、其下唯一一筆 release 是 1995 US 的 Power Music Records MUCD-005（Official），**沒有更早的 release、也沒有黑膠版**。串流店面 us 的 485293684 releaseDate 記 **2005-01-01**、℗ 欄「℗ 2005 Deep House Music」——**那是 2005 年再發的錄製聲明，不是原盤年份**；十軌內容與 1995 原盤逐位置相符、長度差在 1 秒內，可確認是同一批錄音。四處對照後年份仍是 1995。**同名先行單曲：無。**",
+  "notes": "**擋下策展層一處（數字）**：`curatorWhy` 寫「44 個 release-group 裡 primary-type=Album 只有 6 個」。實際 **primary-type=Album 是 8 個**，其中 secondary-types 為空的 5 個。**行文不要引「6 個」這個數字**；「這是年份最早的一張」查證屬實，可以寫。｜`curatorWhy` 的「以〈Gabriel〉（1996）進入英國的敘事」**年份查證屬實**（該筆 first-release-date 1996、primary-type Single），但**〈Gabriel〉不在本張的十軌裡**，行文不得把它當本張曲目；同期另有一筆 1996-09-01 的《Gabrielle》，兩者不是同一筆，別寫混。｜`curatorWhy` 的「離開 Phuture、開始替 Power Music 與 Strictly Rhythm 做製作」牽涉到人事時序，**本批沒有查到可引的來源，行文不要寫**。｜**掛名句點**：原盤與店面兩端都寫 `Roy Davis Jr.`（帶句點），無句點的 `Roy Davis Jr` 只出現在卡單的 queryAlias。｜**回撈清單本張無候選，但卡單原記的 485293684 逐軌覆核成立，是可用的固定試聽來源。**"
+ },
+ {
+  "key": "desc2:DJ Sneak|Blue Funk Files",
+  "artist": "DJ Sneak",
+  "album": "Blue Funk Files",
+  "facts": [
+   {
+    "f": "release-group ea89f17b 的欄位：title「Blue Funk Files」、artist-credit「DJ Sneak」（藝人實體 MBID 0319d75e，type Person、country US、**disambiguation「Chicago house DJ/producer」**）、first-release-date **1996**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 Official**：1996 US 的 Ultra Records ULTRA 2002（**CD，11 軌**）、1996 US 的 Relief Records RR771（**兩張 12 吋、每張 4 軌，合計 8 軌**）、1997 JP 的 Rhythm REPUBLIC RRCD-85139（**CD，8 軌**）。**同一年的美國 CD 與美國黑膠軌數不同，日版 CD 反而跟著黑膠走。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/ea89f17b-a88c-3573-9016-7a0e89abfb05?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 US 黑膠原盤（Relief Records RR771，兩張 12 吋）的逐軌曲目與長度：第一張 1〈Computer Gamez〉6:19、2〈The Grinder〉6:48、3〈Sneak Attack〉9:02、4〈Grace of Tracks〉7:08；第二張 1〈Soundz in My Head〉6:37、2〈For the Love of House〉7:03、3〈Jugglin Thoughts〉4:08、4〈Who's Knocking〉9:34。**八軌裡有兩軌超過九分鐘，最短的〈Jugglin Thoughts〉4:08。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ea89f17b-a88c-3573-9016-7a0e89abfb05&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同年的美國 CD（Ultra Records ULTRA 2002）是 11 軌**：前八軌與黑膠版逐位置相符（各軌長度多 3 到 10 秒），**末尾多出 9〈Psychic Bounty Killaz〉7:52、10〈Futuristic Cipher〉4:56、11〈Junglist Steelos〉4:30**。**曲名拼法兩版不同**：黑膠寫〈Computer Gamez〉〈Soundz in My Head〉（用 z），CD 寫〈Computer Games〉〈Sounds in My Head〉（用 s）。1997 年的日版 CD（Rhythm REPUBLIC RRCD-85139）是 8 軌，曲名跟著黑膠的 z 寫法，**沒有那三首追加曲**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ea89f17b-a88c-3573-9016-7a0e89abfb05&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **104 個 release-group**：primary-type=Album 23 個（**secondary-types 為空的只有 9 個**，另 14 個帶 Compilation 或 DJ-mix）、EP 50 個、Single 26 個、**primary-type=Compilation 0 個**。9 張長篇裡 **1996 年就佔了兩張——《Rice and Beans, Please!》與本張，並列最早**；第三張要等到 1997 年的《Dancin'》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0319d75e-4100-4cd0-aa84-175335ed6e42&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈清單給的 7 個候選逐筆攤開曲目列比對，**沒有一個是本張**：1199100125《Polyester (The Complete Story)》（1995，14 軌，℗ Henry Street Music）、1109139913《Polyester 2 - EP》（1995，5 軌）、1130098467《Polyester 3》（1997，5 軌、全部標 Remaster）、1566837057《Sneak Essentials Volume 2 (Mixes) - EP》（1995，4 軌）、1437300447《Sneak Essentials, Vol. 3 - EP》（1996，3 軌）、1437295801《Keep On Groovin' - Single》（1996，2 軌）、1437602694《DJ Sneak EP-Dancin'》（1996，6 軌〈Dancin〉12:12 起）。**七份曲目列與本張的〈Computer Gamez〉〈The Grinder〉〈Sneak Attack〉等八軌沒有任何一軌同名。七筆全數駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=1199100125&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一年的黑膠寫 Computer Gamez，CD 卻改成 Computer Games",
+   "黑膠版八軌、同年美國 CD 十一軌，多出來的三首日版也沒有"
+  ],
+  "sound": "1996 年 Relief Records RR771 的黑膠原盤是兩張 12 吋、每張四軌共八軌：〈Sneak Attack〉9:02 與〈Who's Knocking〉9:34 兩軌超過九分鐘，最短的〈Jugglin Thoughts〉只有 4:08，其餘落在 6:19 到 7:08。同年 Ultra Records 的美國 CD 把同樣八軌收進去再加〈Psychic Bounty Killaz〉7:52、〈Futuristic Cipher〉4:56、〈Junglist Steelos〉4:30 三軌，變成十一軌；1997 年的日版 CD 卻仍是八軌。兩版的曲名拼法也不同，黑膠用 z（〈Computer Gamez〉〈Soundz in My Head〉），CD 改回 s。",
+  "keyTracks": [
+   "Computer Gamez",
+   "Sneak Attack",
+   "Who's Knocking"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。release-group first-release-date **1996**、其下兩筆 1996 US 的 Official release（Ultra ULTRA 2002 與 Relief RR771）同年，第三筆是 1997 JP 的 Rhythm REPUBLIC。串流側**查無本張的上架版本**（七個回撈候選全部是別張碟，已逐筆駁回），四處對照只成立三處，仍指向 1996。**同名先行單曲：無。**",
+  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單的 label 欄以 **Relief RR771 為主**，那一版是**兩張 12 吋、8 軌**；同年 Ultra 的美國 CD 是 **11 軌**。**行文只能引 8 軌**，要提十一軌就得指明那是同年的 CD 版。｜**曲名拼法有兩套**：黑膠與日版 CD 用 z（〈Computer Gamez〉〈Soundz in My Head〉），美國 CD 用 s。本檔 `keyTracks` 依卡單指定的黑膠原盤寫 z 的那一套。｜`curatorWhy` 寫「104 個 release-group、primary-type=Album 只有 9 個」：**primary-type=Album 其實是 23 個**，9 是「secondary-types 為空」那一項；「這是最早的兩張之一」**查證屬實**（1996 年並列兩張）。行文若要引數字，寫「九張長篇」而不要寫「104 個裡只有 9 個是專輯」。｜`curatorWhy` 的「濾波 disco house 這個做法在 1996 年被整理成專輯的代表」是風格斷語，**本批沒有查到可引的來源，行文不要當事實寫**。｜`curatorRisk` 說「轄下有兩個 1996 US release 是同一張碟的兩家發行」——**兩筆的軌數其實不同（11 對 8）**，不是同一內容的兩家發行，行文不要寫成「同一張碟同步發行」。｜**回撈的 7 個候選全部駁回**，本張維持無串流來源狀態。"
+ },
+ {
+  "key": "desc2:DJ Deeon|House Work",
+  "artist": "DJ Deeon",
+  "album": "House Work",
+  "facts": [
+   {
+    "f": "release-group c9975671 的欄位：title「House Work」、artist-credit「DJ Deeon」（藝人實體 MBID b73e51c1，type Person、country US）、first-release-date **1995**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1995 US 的 Dance Mania DM 085，Official，**兩張 12 吋、第一張 6 軌第二張 5 軌，合計 11 軌**。**沒有任何再發、沒有 CD 版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/c9975671-0222-4bd1-9233-fe43171a9c49?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1995 US 原盤（Dance Mania DM 085，兩張 12 吋）的逐軌曲目：第一張 1〈Phase III〉、2〈Disk Drive〉、3〈The Dick〉、4〈Housework〉、5〈Raw〉、6〈Da-Horz〉；第二張 1〈Rubber Bass〉、2〈Mo Murder〉、3〈Freaky〉、4〈Perc.〉、5〈Shouts〉。**十一軌全部沒有記錄長度。** 曲名多半是一到兩個字的器材或動作名（〈Disk Drive〉〈Rubber Bass〉〈Perc.〉〈Shouts〉），**同名曲〈Housework〉在盤上寫成一個字、盤名《House Work》寫成兩個字。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c9975671-0222-4bd1-9233-fe43171a9c49&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **52 個 release-group**：primary-type=Album **6 個（6 個的 secondary-types 全部為空）**、EP 28 個、Single 13 個、**primary-type=Compilation 0 個**。6 張長篇依 first-release-date 排序是 **1995 本張、1996《DBG Project》、2006-07-17《Juke Trax Online Vol. 1》與《Vol. 2》、2008-02-28《The Digital Pimp Series Vol 4》、2023-02-10《SOUTHSIDE BASICS 2.0》**。**本張是名下最早的長篇，1990 年代只有兩張，其後隔了十年才有第三張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b73e51c1-cf7e-450e-ab10-a8a24e5b8993&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌條目：Dance Mania **1985 年在芝加哥成立、創辦人記的是 Jesse Saunders**，Ray Barney 是**一年後才替廠牌定名**的人；該廠在 **1999 年結束前發行了將近三百張唱片**，2013 年因 DJ 重新翻找它 1990 年代的目錄而復刊。條目把它的路線記為 house 與 ghetto house，並引用「ghetto house 的 Motown」這個說法。廠牌的第一張發行是 The Browns 的〈What's That〉。",
+    "src": "https://en.wikipedia.org/wiki/Dance_Mania_(record_label)"
+   },
+   {
+    "f": "回撈清單對本張的結論是「藝人目錄裡找不到」，**沒有給出任何候選 collectionId**；本批另以店面 us 的藝人目錄與關鍵字兩路重查，仍查無本張的上架版本。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=DJ+Deeon+House+Work&country=us&media=music&entity=album&limit=50"
+   }
+  ],
+  "hookCandidates": [
+   "十一首曲名多半只有一兩個字，直接寫器材或動作",
+   "盤名《House Work》分兩個字，同名的那一軌卻寫成一個字"
+  ],
+  "sound": "1995 年 Dance Mania DM 085 是兩張 12 吋，第一張六軌、第二張五軌，合計十一軌，十一軌都沒有留下長度紀錄。曲名幾乎全是一到兩個字的器材名或動作名——〈Disk Drive〉〈Rubber Bass〉〈Perc.〉〈Shouts〉〈Raw〉——與同時期芝加哥那些用整句當標題的碟正好相反。同名的那一軌在盤上寫成一個字的〈Housework〉，盤名卻分成兩個字。整張沒有再發、沒有 CD 版，十一軌只存在於這一次的兩張 12 吋上。",
+  "keyTracks": [
+   "Housework",
+   "Disk Drive",
+   "Rubber Bass"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1995。release-group first-release-date **1995**、其下唯一一筆 release 是 1995 US 的 Dance Mania DM 085（Official），**沒有更早也沒有更晚的 release**。串流側查無本張，℗ 那一路無從對照，四處對照只成立兩處，仍指向 1995。**同名先行單曲：無**（同名曲〈Housework〉是本張第 4 軌，盤上寫成一個字）。",
+  "notes": "**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 寫「Dance Mania 是芝加哥 Ray Barney 1985 年開的廠」。**廠牌條目記的創辦人是 Jesse Saunders，Ray Barney 是一年後替廠牌定名的人**，兩者角色不同。**行文不得把 Ray Barney 寫成創辦人**；要寫廠牌只能寫「1985 年在芝加哥成立、1999 年結束前出過將近三百張唱片」。｜`curatorWhy` 寫「名下最早以整張長篇形態編號發行的碟」**查證屬實**（藝人目錄 6 張長篇裡本張最早）；但同一句的「此前與此後 52 個 release-group 絕大多數是 12 吋與數位單張」要修正成「EP 28 個、Single 13 個」，**行文不要用「絕大多數」帶過**。｜**十一軌無長度**，行文不得寫任何單軌長度或全張時長。｜**曲名寫法**：盤名兩個字《House Work》、同名軌一個字〈Housework〉，兩者不可互換。｜`curatorRisk` 提醒的內容分級註記與本層無關，但曲名〈The Dick〉〈Mo Murder〉確實在原盤曲目列上，**行文選曲時避開**。｜回撈清單本張無候選，重查仍查無。"
+ },
+ {
+  "key": "desc2:Parris Mitchell|Life in the Underground",
+  "artist": "Parris Mitchell",
+  "album": "Life in the Underground",
+  "facts": [
+   {
+    "f": "release-group 5cc1a023 的欄位：title「Life in the Underground」、artist-credit「Parris Mitchell」（藝人實體 MBID abda6360，type Person、country US、**disambiguation「90's Chicago house producer」**）、first-release-date **1994**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1994 US 的 Dance Mania DM 071，Official，**兩張 12 吋、第一張 6 軌第二張 5 軌，合計 11 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5cc1a023-7bfc-45d8-9ea3-870aec03662f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1994 US 原盤（Dance Mania DM 071，兩張 12 吋）的逐軌曲目與長度：第一張 1〈Rubber Jazz Band〉5:26、2〈Pipe Dreams〉3:51、3〈Climb the Walls〉3:45、4〈Beatnix〉3:08、5〈Street Jazz〉2:45、6〈Ghetto Booty〉5:38；第二張 1〈Work It (re-mix)〉8:42、2〈The Underground〉3:34、3〈Follow Me Ghetto (Acid)〉4:41、4〈Computer (re-mix)〉5:41、5〈F.T.M.F.B. (revised)〉4:29。**第一張六軌沒有一軌超過 5:38、第二張的〈Work It (re-mix)〉卻長達 8:42，是全張最長的一軌、也比第一張任何一軌長三分鐘以上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5cc1a023-7bfc-45d8-9ea3-870aec03662f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **584624819**：collectionName「Life In the Underground」、artistName「Parris Mitchell」、releaseDate 1994-01-01、trackCount 11、copyright「℗ 2012 Victor Parris Mitchell」。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1994 原盤**逐位置相符**、逐軌長度**逐軌完全相同**（5:26／3:51／3:45／3:08／2:45／5:38／8:42／3:34／4:41／5:41／4:29）。店面版本多標了三筆客座：第 7 軌 feat. Jammin Gerald、第 8 與第 9 軌 feat. DJ Funk。**上架的就是 1994 原盤的十一軌內容。**",
+    "src": "https://itunes.apple.com/lookup?id=584624819&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **10 個 release-group**：**primary-type=Album 只有 1 個，就是本張**；EP 3 個、Single 4 個、**primary-type=Compilation 0 個**。**本張是這個掛名下唯一一張長篇。** 藝人實體的 disambiguation 明寫「90's Chicago house producer」，用來與同名的另一個實體分辨。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=abda6360-88aa-4b4b-8a27-525f97acc419&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "廠牌條目：Dance Mania **1985 年在芝加哥成立、創辦人記的是 Jesse Saunders**，Ray Barney 是一年後才替廠牌定名的人；該廠在 **1999 年結束前發行了將近三百張唱片**，2013 年復刊。條目把它的路線記為 house 與 ghetto house。本張的編號 DM 071 與同廠 DJ Deeon《House Work》的 DM 085 相差十四號、發行年相差一年。",
+    "src": "https://en.wikipedia.org/wiki/Dance_Mania_(record_label)"
+   }
+  ],
+  "hookCandidates": [
+   "第一張唱片六首沒有一首超過五分四十秒，第二張第一首就衝到八分四十二秒",
+   "十一首裡有三首的標題自己帶著 re-mix 或 revised 的註記"
+  ],
+  "sound": "1994 年 Dance Mania DM 071 是兩張 12 吋、六軌加五軌共十一軌。第一張全是短曲，從 2:45 的〈Street Jazz〉到 5:38 的〈Ghetto Booty〉；第二張開頭的〈Work It (re-mix)〉一口氣拉到 8:42，是全張最長的一軌，比第一張任何一軌長出三分鐘以上。十一軌裡有三軌的標題直接寫著這是重做版（〈Work It (re-mix)〉〈Computer (re-mix)〉〈F.T.M.F.B. (revised)〉）。曲名把爵士（〈Rubber Jazz Band〉〈Street Jazz〉）與 ghetto house 的直白用語擺在同一張裡。串流上架的十一軌與原盤逐軌長度完全相同。",
+  "keyTracks": [
+   "Rubber Jazz Band",
+   "Work It",
+   "Street Jazz"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1994。release-group first-release-date **1994**、其下唯一一筆 release 是 1994 US 的 Dance Mania DM 071（Official），沒有任何再發建檔。串流店面 us 的 584624819 releaseDate 記 **1994-01-01**（**店面只有年份可信、月日是填充值**）、℗ 欄寫「℗ 2012 Victor Parris Mitchell」——**那是 2012 年數位化的錄製聲明，不是原盤年份**；十一軌長度與原盤逐軌完全相同，可確認是同一批錄音。四處對照後年份仍是 1994。**同名先行單曲：無。**",
+  "notes": "**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 沒有提廠牌創辦人，但同批 DJ Deeon 那張的 `curatorWhy` 把 Dance Mania 寫成「Ray Barney 1985 年開的廠」。**廠牌條目記的創辦人是 Jesse Saunders，Ray Barney 是一年後替廠牌定名的人**，兩張卡的行文都不得把 Ray Barney 寫成創辦人。｜`curatorWhy` 寫「10 個 release-group 裡唯一一張 primary-type=Album」**查證屬實**。｜`curatorWhy` 寫「與 DJ Deeon 隔年的《House Work》是同一個廠、同一批人」——**同廠查證屬實（DM 071 與 DM 085），但「同一批人」沒有查到來源**；店面把本張第 8、9 軌標為 feat. DJ Funk、第 7 軌標為 feat. Jammin Gerald，**這三筆客座才是可引的關係，DJ Deeon 沒有出現在本張的曲目列上**。｜**曲名的重做註記**：原盤寫 `(re-mix)`（帶連字號）、店面寫 `(Remix)`，行文照原盤。｜**第 11 軌的縮寫**：原盤作〈F.T.M.F.B. (revised)〉（末尾帶句點），店面作〈F.T.M.F.B (Remix)〉（末尾無句點）。｜回撈清單本張無候選；卡單原記的 584624819 逐軌覆核成立，是可用的固定試聽來源。"
+ },
+ {
+  "key": "desc2:Steve Poindexter|Man at Work",
+  "artist": "Steve Poindexter",
+  "album": "Man at Work",
+  "facts": [
+   {
+    "f": "release-group 484c5b45 的欄位：title「Man at Work」、artist-credit「Steve Poindexter」（藝人實體 MBID 2d41691a，type Person、country US）、first-release-date **1996**、primary-type Album、secondary-types **空**。轄下 **3 筆 release**：1996 IT 的 ACV ACVDP 014（**兩張 12 吋、每張 4 軌，合計 8 軌**，Official）、1996 IT 的 ACV ACVCD014（**CD，12 軌**，**status 欄是空的**）、2024-12-16 XW 的 Numero Group NUM6146DIGITAL（數位，8 軌，Official）。**兩筆 1996 年的義大利發行軌數不同，2024 年的數位再發跟著 8 軌的黑膠版走。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/484c5b45-21a3-3485-93ed-9ab9437cf242?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 IT 黑膠版（ACV ACVDP 014，兩張 12 吋）的逐軌曲目與長度：第一張 1〈LSD〉4:31、2〈Destorsion〉3:17、3〈Sput Nik Jazz〉3:27、4〈Gobber Grade〉3:29；第二張 1〈Life's Lil Pleasures〉4:19、2〈U.F.O.〉5:15、3〈Cartoon Fun〉3:55、4〈Benny Hill〉3:40。**八軌全部在 3:17 到 5:15 之間，沒有一軌超過六分鐘**——與同批芝加哥碟動輒七、八分鐘的長段落完全相反。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=484c5b45-21a3-3485-93ed-9ab9437cf242&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同年的 CD 版（ACV ACVCD014）是 12 軌**：前八軌與黑膠版逐位置相符（各軌長度多 1 到 3 秒），**末尾多出 9〈Work That Mother Fucker (Paul Johnson remix)〉4:50、10〈Short Circuit〉4:18、11〈Whiplash〉6:03、12〈Born to Freak〉5:03**。**〈Whiplash〉6:03 是 CD 版才有的最長一軌，黑膠版沒有任何一軌超過 5:15。** 2024-12-16 的數位再發是 8 軌，與黑膠版相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=484c5b45-21a3-3485-93ed-9ab9437cf242&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1785790436**（另有一筆內容完全相同的 1778099056）：collectionName「Man At Work」、artistName「Steve Poindexter」、releaseDate 2002-01-01、trackCount 8、copyright「℗ 2024 The Numero Group」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**，曲名與曲序與 1996 黑膠版**逐位置相符**、逐軌長度差都在 1 秒內（4:30／3:18／3:27／3:29／4:21／5:16／3:54／3:40）。**上架的是 8 軌的黑膠版內容，不是 12 軌的 CD 版**；店面的 releaseDate 記 2002 但 ℗ 掛 2024，兩者都不是原盤年份。",
+    "src": "https://itunes.apple.com/lookup?id=1785790436&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **17 個 release-group**：**primary-type=Album 只有 1 個，就是本張**；EP 14 個、Single 2 個、**primary-type=Compilation 0 個**。**本張是名下唯一一張長篇。** CD 版第 9 軌〈Work That Mother Fucker (Paul Johnson remix)〉的原曲，在同一份目錄裡是 1980 年代末的一筆非長篇作品。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2d41691a-502d-487f-a10e-0646db708304&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "八軌沒有一軌超過五分十五秒，在這批芝加哥碟裡短得反常",
+   "同年的 CD 版在末尾多塞了四軌，其中一軌是他自己成名曲的重混"
+  ],
+  "sound": "1996 年 ACV ACVDP 014 的黑膠版是兩張 12 吋、每張四軌共八軌，八軌全在 3:17 到 5:15 之間，沒有一軌超過六分鐘——同一批芝加哥碟多半七、八分鐘一軌，這張的尺度短得反常。曲名一路是縮寫與冷笑話：〈LSD〉〈Destorsion〉〈Sput Nik Jazz〉〈U.F.O.〉〈Cartoon Fun〉，最後一軌直接叫〈Benny Hill〉。同年的 CD 版把同樣八軌收進去再加四軌，包含一軌他自己成名曲的重混與 6:03 的〈Whiplash〉；2024 年的數位再發則回到八軌的黑膠內容。",
+  "keyTracks": [
+   "LSD",
+   "Sput Nik Jazz",
+   "Benny Hill"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996；**卡單提示的 1995 一說在本層查不到支持**。release-group first-release-date **1996**、其下兩筆 1996 IT 的 ACV 發行同年（ACVDP 014 為 Official、ACVCD014 的 status 欄是空的，依裁定 43／57／65／78 不採為背書），第三筆是 2024-12-16 的數位再發。串流店面 us 的 1785790436 releaseDate 記 **2002-01-01**、℗ 欄「℗ 2024 The Numero Group」——**兩個都不是原盤年份**，2002 那個數值在本層找不到任何對應的發行，判為店面的填充值。四處對照後年份取 1996。**同名先行單曲：無。**",
+  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **ACVDP 014（黑膠、8 軌）**，同年另有 **ACVCD014（CD、12 軌）**。**行文只能引 8 軌**；〈Work That Mother Fucker (Paul Johnson remix)〉〈Short Circuit〉〈Whiplash〉〈Born to Freak〉四軌**只在 CD 版上**，不得當本張曲目。｜`curatorRisk` 要求覆核「另一份資料記 1995」這件事：**本層查到的三筆 release 全部記 1996，串流側記 2002 與 ℗ 2024，沒有任何一處出現 1995**。行文一律寫 1996。｜`curatorWhy` 寫「17 個 release-group 裡唯一一張 primary-type=Album」**查證屬實**。｜`curatorWhy` 寫「2024 年 Numero Group 把它重新數位發行」**查證屬實**（2024-12-16 XW，NUM6146DIGITAL，8 軌）。｜`curatorWhy` 提到的〈Work That Mutha Fucker〉：**原盤八軌裡沒有這一軌**，它只在 CD 版第 9 軌以 Paul Johnson 重混的形式出現，且該筆的正式曲名是〈Work That Mother Fucker〉（Mother 不是 Mutha）。｜**盤名大小寫兩種**：原盤與 release-group 是《Man at Work》，CD 版、數位再發與店面都寫《Man At Work》。｜店面兩筆 1785790436 與 1778099056 **內容逐軌相同**，取前者即可。"
+ },
+ {
+  "key": "desc2:Fast Eddie|Jack to the Sound",
+  "artist": "Fast Eddie",
+  "album": "Jack to the Sound",
+  "facts": [
+   {
+    "f": "release-group 7200aa7f 的欄位：title「Jack to the Sound」、artist-credit **「Fast Eddie」**、藝人實體 MBID c0b3d632 的**主名卻是「“Fast” Eddie Smith」（帶彎雙引號 U+201C／U+201D）**，type Person、country US、disambiguation「Chicago house producer」。first-release-date **1988**、primary-type Album、secondary-types **空**。轄下 **5 筆 release**：1988 GB 的 D.J. International Records DJART 902（**兩張 12 吋、10 軌＋2 軌，status 欄空的**）、1988 DE 的 BCM Records 50140／D.J. International 50140（CD，10 軌，Official）、1988 ES 無廠牌（CD，10 軌，Official）、1988 US 無廠牌（CD，10 軌，Official）、1988 GB 的 Westside Records CDART 902（CD，10 軌，Official）。**五筆全部記 1988。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7200aa7f-7307-388d-8138-446932de6d9b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 GB 的兩張 12 吋（D.J. International Records DJART 902）逐軌曲目與長度：第一張 1〈Acid Thunder〉4:30、2〈Hip House〉4:24、3〈I Can Dance〉5:00、4〈Let's Go〉5:18、5〈Keep On Dancing〉4:08、6〈Yo Yo Get Funky〉5:00、7〈Can U Still Dance〉4:16、8〈Jack 2 The Sound〉5:07、9〈Clap Your Hands〉5:00、10〈Funk Makes You Move〉4:08；**第二張是兩段〈Jack To The Sound (Megamix)〉，未記長度。** 同年的 CD 版（BCM 50140）只有那 10 軌、沒有 megamix，逐軌長度與黑膠差 2 到 8 秒。**同名曲在盤上寫成〈Jack 2 The Sound〉，盤名卻是《Jack to the Sound》。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7200aa7f-7307-388d-8138-446932de6d9b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1844558545**：collectionName「Jack to the Sound (Digitally Remastered)」、artistName「Fast Eddie」、releaseDate 2014-09-22、trackCount 10、copyright「℗ 2014 AOU Entertainment」。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1988 年的 10 軌版**逐位置相符**、逐軌長度差都在 5 秒內（4:32／4:28／5:03／5:08／4:07／5:01／4:09／5:03／4:58／4:03）。**上架的是 10 軌版、沒有兩段 megamix**；曲名拼法跟著 CD 版寫〈Yoyo Get Funky〉，不是黑膠版的〈Yo Yo Get Funky〉。",
+    "src": "https://itunes.apple.com/lookup?id=1844558545&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **24 個 release-group**：primary-type=Album 5 個（**secondary-types 為空的只有 3 個**，另 2 個帶 Compilation）、EP 2 個、Single 16 個、**primary-type=Compilation 0 個**。3 張長篇依序是 **1988 本張、1989《Most Wanted》、1991《Straight Jackin'》**——**本張是名下最早的一張長篇**；兩張帶 Compilation 的整編（《The Best of the DJ Fast Eddie》與《Housemasters: The Best Of》）都是 1989 年的。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c0b3d632-282e-4323-a242-104f60bb8645&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第二張唱片整張只放兩段 megamix，正式曲目全在第一張上",
+   "同名那一軌在盤上寫成 Jack 2 The Sound，盤名卻用 to"
+  ],
+  "sound": "1988 年 D.J. International DJART 902 是兩張 12 吋：第一張裝完十軌正式曲目，從 4:08 的〈Keep On Dancing〉與〈Funk Makes You Move〉到 5:18 的〈Let's Go〉，十軌全部落在四到五分半之間；第二張整張只放兩段〈Jack To The Sound (Megamix)〉，未記長度。同年在德國、西班牙、美國與英國另發的四種 CD 都只收那十軌、沒有 megamix。曲名把 acid（〈Acid Thunder〉）、hip house（〈Hip House〉〈Yo Yo Get Funky〉）與舞池指令（〈I Can Dance〉〈Clap Your Hands〉〈Keep On Dancing〉）並置，同名的那一軌寫成〈Jack 2 The Sound〉。",
+  "keyTracks": [
+   "Acid Thunder",
+   "Hip House",
+   "Yo Yo Get Funky"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**、其下 **5 筆 release 全部記 1988**（GB 黑膠、DE／ES／US／GB 四種 CD），**沒有任何一筆把年份往後推**。GB 黑膠那筆的 status 欄是空的（依裁定 43／57／65／78 不採為背書），背書取同年四筆 Official 的 CD。串流店面 us 的 1844558545 releaseDate 記 **2014-09-22**、℗ 欄「℗ 2014 AOU Entertainment」——**那是 2014 年重製版的聲明，不是原盤年份**；十軌與 1988 年的 10 軌版逐位置相符、長度差在 5 秒內。四處對照後年份仍是 1988。**同名先行單曲：無**（同名軌在盤上寫成〈Jack 2 The Sound〉）。",
+  "notes": "**掛名依本批裁定第 3 條處理**：藝人實體主名是彎雙引號的 `“Fast” Eddie Smith`，本張的 artist-credit 是 `Fast Eddie`，卡片取後者，**行文一律寫 `Fast Eddie`，不要出現彎引號的那個寫法**。｜**軌數兩種（裁定 157）**：黑膠版是兩張 12 吋、10 軌正式曲目＋2 段 megamix；四種 CD 與串流版都只有 10 軌。**行文引「十軌」是安全的；要提兩張唱片就必須說明第二張放的是 megamix。**｜`curatorWhy` 寫「hip house 這個做法被整理成一張碟的最早例子之一」是風格斷語，**本批沒有查到可引的來源**；但曲目列上確實有一軌就叫〈Hip House〉，行文可以引曲名、不要引斷語。｜`curatorWhy` 寫「24 個 release-group 裡 primary-type=Album 只有 3 個」：**primary-type=Album 其實是 5 個**，3 是「secondary-types 為空」那一項；「這是最早的一張」**查證屬實**。｜`curatorWhy` 說「這張之後才有 1989 年的《Most Wanted》與《The Best of the DJ Fast Eddie》」**查證屬實**（兩張都是 1989）。｜**曲名拼法兩套**：黑膠寫〈Yo Yo Get Funky〉（分寫），CD 與店面寫〈Yoyo Get Funky〉（連寫）；黑膠版曲名全部首字母大寫、CD 版用一般大小寫。本檔 `keyTracks` 依黑膠原盤。"
+ },
+ {
+  "key": "desc2:Tyree|Tyree's Got a Brand New House",
+  "artist": "Tyree",
+  "album": "Tyree's Got a Brand New House",
+  "facts": [
+   {
+    "f": "release-group 7316a3a9 的欄位：title「Tyree's Got a Brand New House」、artist-credit「Tyree」（藝人實體 MBID ef71268b，type Person、**area 記 DE**、**disambiguation「US acid house DJ Tyree Cooper」**）、first-release-date **1988**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1988 DE 的 BCM Records 50139，Official，**CD，10 軌**。**美版原盤沒有建檔，這裡查得到的只有德版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7316a3a9-4217-3cd1-b6a4-7042e5d1260b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 DE 版（BCM Records 50139，CD）的逐軌曲目與長度：1〈Acid Over〉4:30、2〈T.J.G.P.〉4:20、3〈Life〉5:02、4〈Let's Get Together〉6:07、5〈Turn Up the Bass〉5:09、6〈House Line〉4:02、7〈Never Let You Go〉5:53、8〈Acid Overture〉4:10、9〈Acid Is My Life〉4:22、10〈T's Revenge〉5:06。**十軌裡有三軌的標題帶 acid 一字（第 1、8、9 軌），最長的〈Let's Get Together〉6:07、最短的〈House Line〉4:02。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7316a3a9-4217-3cd1-b6a4-7042e5d1260b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**〈Turn Up the Bass〉是本張的第 5 軌**（5:09），不是本張之後才出現的曲子。同一份藝人目錄裡，這個標題另外出現在 1988 年之後的多筆非長篇條目上，但**本張的曲目列上就有它**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7316a3a9-4217-3cd1-b6a4-7042e5d1260b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **37 個 release-group**：primary-type=Album 9 個（**secondary-types 為空的 7 個**，另 2 個帶 Compilation）、EP 13 個、Single 12 個、**primary-type=Compilation 0 個**。7 張長篇依序是 **1988 本張、1989《Nation of Hip House》、1991《The Time Iz Now!》、1998《Welcome To Ty'z House》、2008-10-15《Hip Housin'》、2010-04-25《Podcast Feature | Five》、2013-11《Side A》**——**本張是名下最早的一張長篇。** 兩張帶 Compilation 的整編分別是 1999 與 2007 年的。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=ef71268b-07b0-4fc9-aafc-c1909da8edef&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=Tyree+Tyree+s+Got+a+Brand+New+House&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡有三軌的標題帶著 acid 一字，第一軌就叫 Acid Over",
+   "資料庫裡查得到的只有德國版，美版原盤根本沒建檔"
+  ],
+  "sound": "1988 年 BCM Records 50139 的德版 CD 十軌，從 4:02 的〈House Line〉到 6:07 的〈Let's Get Together〉，十軌全部落在四到六分之間。十軌裡有三軌的標題直接帶 acid——第 1 軌〈Acid Over〉、第 8 軌〈Acid Overture〉、第 9 軌〈Acid Is My Life〉——中段則是〈Turn Up the Bass〉5:09 與〈House Line〉4:02 這種 hip house 的呼喊式曲目。第 2 軌〈T.J.G.P.〉與末軌〈T's Revenge〉都拿他自己的名字首字母當標題。這張在資料庫裡只有德版一筆建檔，美版原盤查不到。",
+  "keyTracks": [
+   "Acid Over",
+   "Turn Up the Bass",
+   "T's Revenge"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**、其下唯一一筆 release 是 1988 DE 的 BCM Records 50139（Official）。**美版原盤（卡單記為 D.J. International DJ#1016）沒有建檔，年份無法從第二筆 release 交叉驗證**；串流三店查無、℗ 那一路也對不了。四處對照只成立兩處，仍指向 1988。**同名先行單曲：無。**",
+  "notes": "**擋下策展層一處（事實順序）**：`curatorWhy` 寫「也是〈Turn Up the Bass〉出現之前他在該廠的定位之作」。**〈Turn Up the Bass〉就是本張的第 5 軌**（5:09），不是本張之後才有的曲子。**行文不得寫「在〈Turn Up the Bass〉之前」**；要提這首只能寫成本張的曲目。｜`curatorWhy` 寫「37 個 release-group 裡 primary-type=Album 有 6 個」：**primary-type=Album 其實是 9 個**、secondary-types 為空的 7 個；「這是最早的一張」**查證屬實**。｜`curatorRisk` 說「美版 D.J. International DJ#1016 沒有建進來、label 欄以另一份資料的美版編號為準」**屬實**：本層只查得到 1988 DE 的 BCM 50139 一筆。**行文若要寫廠牌，寫得到的只有德版那家；要寫美版編號就得標明來源不在本層。**｜`curatorWhy` 說本張與 Fast Eddie 那張「同年、同廠、相鄰編號」——**同年查證屬實**，但**同廠與相鄰編號都建立在美版編號上，本層查不到**；Fast Eddie 那張本層查得到的是 GB 與 DE／ES／US 五筆，Tyree 這張只有 DE 一筆。行文不要把兩張的編號連號當事實寫。｜藝人 area 記 DE（他長期居柏林），**用地區篩選會把他排除在美國線之外**，這是本張的檢索陷阱。"
+ },
+ {
+  "key": "desc2:Armando|The New World Order",
+  "artist": "Armando",
+  "album": "The New World Order",
+  "facts": [
+   {
+    "f": "release-group 636bea34 的欄位：title「The New World Order」、artist-credit「Armando」（藝人實體 MBID bced6ffd，type Person、country US、**disambiguation「acid house producer Armando Gallop」**，life-span 起 1970-02-12）、first-release-date **1993**、primary-type Album、secondary-types **空**。轄下 **2 筆 release，兩筆都是 Trax Records、都 Official**：1993 US 的 TRAX 5016（**一張 12 吋、8 軌**）與 1999 US 的 TX5016（**兩張 12 吋、5 軌＋4 軌共 9 軌**）。**注意實體形態：1993 年那筆是單張 12 吋，不是 LP。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/636bea34-50bf-3145-9cf1-ae6c94de1df8?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1993 US 原盤（Trax Records TRAX 5016）的逐軌曲目：1〈Here We Go〉、2〈Warp Factor〉、3〈Wave Forms〉、4〈Simple Minded〉、5〈Trance Dance〉、6〈Venture 001〉、7〈Robotics〉、**8〈Forgotten (acid mix)〉**。**八軌都沒有記錄長度。** 1999 年的 TX5016 是 9 軌：前七軌同序（第 4 軌的標題改寫成〈Simple Minds〉、少了 e d），**第 8 軌換成〈Ecstasy RX〉、第 9 軌是〈Ecstasy (original)〉5:30，原盤的〈Forgotten (acid mix)〉整軌消失**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=636bea34-50bf-3145-9cf1-ae6c94de1df8&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1601930981**：collectionName「The New World Order」、releaseDate **1993-01-01**、trackCount **9**、copyright「℗ 1993 Trax Records」。`entity=song` 攤開後是 1〈Here We Go〉5:24、2〈Warp Factor〉5:35、3〈Wave Forms〉5:28、4〈Simple Minded〉3:46、5〈Trance Dance〉3:55、6〈Venture 001〉5:03、7〈Robotics〉5:28、**8〈Ecstasy RX〉5:32、9〈Ecstasy〉6:59**。**九軌、沒有〈Forgotten (acid mix)〉——上架的是 1999 年那個換曲版的內容，不是 1993 年的八軌原盤**，儘管店面的年份與 ℗ 都標成 1993。另有一筆 917933751 標 1999、同樣 9 軌，第 6 軌寫成〈Venture Out〉、第 8 軌寫成〈Ecstasy〉。",
+    "src": "https://itunes.apple.com/lookup?id=1601930981&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**同一個系列在店面上有四筆同名碟，配對極易出錯**：1601930981《The New World Order》（標 1993，9 軌）、1601916274《The New World Order 2》（1992，8 軌，開頭是〈Which Way Is Up〉）、1601915267《The New World Order 3》（1994，8 軌）、917938481《The New World Order 4》（1994，8 軌，開頭是〈So in Love with You〉），另加一筆 917933751 標 1999 的《The New World Order》。**第 2 集的年份（1992）比第 1 集（1993）還早。** 逐筆攤開曲目後只有 1601930981 與 917933751 的曲目列與本張同源，其餘三筆無一軌同名。",
+    "src": "https://itunes.apple.com/lookup?id=1601916274&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **19 個 release-group**：primary-type=Album 4 個（**secondary-types 為空的 3 個**，另 1 個是 2005-03-08 帶 Compilation 的《Trax Classix》）、EP 10 個、Single 2 個、**primary-type=Compilation 0 個**。3 張長篇依序是 **1993 本張、1994《The New World Order 4》、1996《One World One Future》**——**本張是名下最早的一張。** 條目另記他生於 **1970-02-12、卒於 1996-12-17，死因白血病，得年 26**；1988 年與 Mike Dunn 合創 Warehouse Records，〈Land of Confusion〉是他跨大西洋的代表曲，**條目把《One World, One Future》記為他唯一一張完整長篇**。",
+    "src": "https://en.wikipedia.org/wiki/Armando_(musician)"
+   }
+  ],
+  "hookCandidates": [
+   "1999 年再壓時把最後一軌換掉，原盤那首 Forgotten 從此消失",
+   "同一個系列的第二集比第一集還早一年"
+  ],
+  "sound": "1993 年 Trax Records TRAX 5016 是一張 12 吋、八軌，八軌都沒有留下長度紀錄，曲名一路是機器與速度的詞彙——〈Warp Factor〉〈Wave Forms〉〈Trance Dance〉〈Venture 001〉〈Robotics〉——最後一軌〈Forgotten (acid mix)〉是唯一標明 acid 混音的一首。1999 年 Trax 以 TX5016 再壓成兩張 12 吋九軌時把這一軌抽掉，換上〈Ecstasy RX〉與〈Ecstasy (original)〉5:30，第四軌的標題也從〈Simple Minded〉改成〈Simple Minds〉。串流上架的是這個九軌的換曲版，1993 年的八軌只存在於原盤上。",
+  "keyTracks": [
+   "Here We Go",
+   "Robotics",
+   "Forgotten"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1993。release-group first-release-date **1993**、其下最早的 release 是 1993 US 的 Trax Records TRAX 5016（Official），第二筆是 1999 US 的 TX5016（Official）。**串流那一路的年份要當心**：collectionId 1601930981 的 releaseDate 記 1993-01-01、℗ 也寫「℗ 1993 Trax Records」，**但曲目列是 1999 年的九軌換曲版**——年份對、內容不對；另一筆 917933751 標 1999、內容相同。四處對照後年份仍是 1993。**同名先行單曲：無**；同名系列的第 2 集在店面上標 1992，**比第 1 集早一年，配對時不能靠年份排序**。",
+  "notes": "**版本與軌數是本張最大的坑（裁定 157／238）**：1993 原盤是 **8 軌、末軌〈Forgotten (acid mix)〉**；1999 再壓與**兩筆串流版本都是 9 軌、沒有〈Forgotten〉、多出兩軌 Ecstasy**。**行文只能引 8 軌、只能引原盤那八個曲名**；〈Ecstasy RX〉與〈Ecstasy〉不得當本張曲目。｜**實體形態**：1993 那筆是**單張 12 吋**（8 軌），不是 LP，行文不要寫成「一張長篇專輯」，寫「一張 12 吋八軌」才準。｜**同名系列四筆的配對風險**：1601916274（第 2 集）、1601915267（第 3 集）、917938481（第 4 集）三筆與本張**無一軌同名**，已逐筆駁回；卡單 `curatorRisk` 只列了第 2、4 集，**第 3 集 1601915267 是本層新查到的第五筆同名碟**，一併記下。｜`curatorWhy` 的「他 1996 年過世」**查證屬實**（1996-12-17，白血病，得年 26）；「〈Land of Confusion〉（1988）」條目有記。｜**但條目與資料庫在「有沒有專輯」這件事上不一致**：條目把 1996 年的《One World, One Future》記為他**唯一一張完整長篇**，資料庫卻把本張建成 primary-type=Album。**行文不得寫「他唯一的專輯」或「他的第一張專輯」**，寫「1993 年的這張 12 吋」最安全。｜`curatorWhy` 提到的〈100% of Disin' You〉條目沒有記，**行文不要寫**。｜**串流可用**：1601930981 十軌全部有試聽、但內容是 1999 版，若採用要在下游標明版本差。"
+ },
+ {
+  "key": "desc2:Marshall Jefferson|Day of the Onion",
+  "artist": "Marshall Jefferson",
+  "album": "Day of the Onion",
+  "facts": [
+   {
+    "f": "release-group e9d57f98 的欄位：title「Day of the Onion」、artist-credit「Marshall Jefferson」（藝人實體 MBID 93938558，type Person、**country 記 GB**）、first-release-date **1996**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1996 DE 的 KTM KTM-3，Official，**CD，10 軌**。**沒有美國版建檔、沒有黑膠版建檔、沒有任何再發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/e9d57f98-43f5-3586-8b5b-5ccd9560032f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 DE 原盤（KTM KTM-3，CD）的逐軌曲目與長度：1〈Party Time〉8:48、2〈Funk in Outer Space〉6:33、3〈If 2 Were 3〉7:00、4〈Find the Groove〉9:17、5〈Jump on It〉6:46、6〈Him or Me〉5:31、7〈Day of the Onion〉7:25、8〈Floating〉8:36、9〈Love Gets Sronger〉6:59、10〈Payday〉7:02。**十軌裡有八軌超過六分半、最長的〈Find the Groove〉9:17，整張超過七十四分鐘。第 9 軌的標題在曲目列上是拼錯的〈Love Gets Sronger〉（少一個 t）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e9d57f98-43f5-3586-8b5b-5ccd9560032f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **36 個 release-group**：primary-type=Album 5 個，但**其中 secondary-types 為空的只有 1 個，就是本張**；另 4 個全帶 Compilation（1998《Timeless Classics》、1998《Les parrains de la house》、2003-10-27《Move Your Body: The Evolution of Chicago House》、2024-05-29《House Masters》）。EP 4 個、Single 23 個、**primary-type=Compilation 0 個**。**本張是這個掛名下唯一一張原創長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=93938558-9a84-4a7f-a15c-6f145100ff5c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**別名各查一次的結果（裁定 223）**：另一個實體 `Virgo`（MBID c7eaea5b，type Person、country US、life-span 起 1959、**disambiguation 明寫「US house producer Marshall Jefferson」**）名下**只有 2 個 release-group、primary-type=Album 0 個、EP 1 個**——**本人的目錄與這個別名的目錄完全不互通，查本名查不到別名的作品，反過來也一樣。** 本批同時收的《Virgo》（1989）屬於**另一個實體 Virgo Four**（b17172bf，Group／US），**與 c7eaea5b 是兩個不同的人共用同一個名字**。",
+    "src": "https://musicbrainz.org/ws/2/artist/c7eaea5b-9ebf-4de7-893f-569f56eca993?fmt=json"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=Marshall+Jefferson+Day+of+the+Onion&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡有八軌超過六分半，整張塞滿一張 CD 的七十四分鐘",
+   "第九軌的標題在曲目列上少打了一個字母"
+  ],
+  "sound": "1996 年 KTM KTM-3 只出過德國 CD 一種載體、十軌。十軌裡有八軌超過六分半，最長的〈Find the Groove〉9:17、開場的〈Party Time〉8:48，最短的〈Him or Me〉也有 5:31，整張超過七十四分鐘，是把一張 CD 塞到滿的做法。曲名分成派對指令（〈Party Time〉〈Jump on It〉〈Find the Groove〉）與太空／漂浮（〈Funk in Outer Space〉〈Floating〉）兩路，同名的〈Day of the Onion〉7:25 擺在正中間偏後。曲目列上第九軌的標題少打了一個字母，寫成〈Love Gets Sronger〉。",
+  "keyTracks": [
+   "Party Time",
+   "Find the Groove",
+   "Day of the Onion"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。release-group first-release-date **1996**、其下唯一一筆 release 是 1996 DE 的 KTM KTM-3（Official），**沒有第二筆可交叉驗證，也沒有任何再發**。串流三店查無、℗ 那一路對不了。四處對照只成立兩處，仍指向 1996。**同名先行單曲：無**（同名曲〈Day of the Onion〉是本張第 7 軌）。",
+  "notes": "**別名覆核結果（裁定 223）**：策展層的別名對照表在這一位身上**成立且必須守住**——`Virgo`（c7eaea5b）確實是他的別名實體、disambiguation 明寫「US house producer Marshall Jefferson」，**但那個實體名下只有 2 個 release-group、0 張 Album**，與本人實體的 36 個完全不互通。**本批同時收的《Virgo》（1989）掛在另一個實體 Virgo Four（b17172bf，Group）底下，是 Eric Lewis 與 Merwyn Sanders 兩人，不是他。行文絕不可把兩張碟寫成同一個人的作品。**｜`curatorWhy` 寫「36 個 release-group 裡唯一一張 primary-type=Album 的原創碟」**查證屬實**（primary-type=Album 共 5 個，其餘 4 個全帶 Compilation）。｜`curatorWhy` 說〈Move Your Body〉1986 年那張池中已有——本層在藝人目錄裡查到對應的是 1986 年的《The House Music Anthem》（primary-type EP），**行文若提那張，形態是 EP 不是專輯**。｜藝人實體的 **country 記 GB**（他長期居英），**用美國地區篩選會漏掉他**，這是本張的檢索陷阱。｜**曲名拼寫**：第 9 軌來源端寫〈Love Gets Sronger〉（少一個 t），**行文若要引這首，照來源原樣寫並註明是曲目列上的拼法**，不要自行「更正」成 Stronger。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:Virgo Four|Virgo",
+  "artist": "Virgo Four",
+  "album": "Virgo",
+  "facts": [
+   {
+    "f": "release-group fb609f5e 的欄位：title「Virgo」、**artist-credit 是「Virgo」，但藝人實體的主名是「Virgo Four」**（MBID b17172bf，**type Group**、country US、life-span 起 1980、**disambiguation「US house duo Eric Lewis and Merwyn Sanders」**）。first-release-date **1989**、primary-type Album、secondary-types **空**。轄下 **4 筆 release，全部 Official**：1989 GB 的 Radical Records CDVIGO 1（**CD，8 軌**）、2010-03 GB 的 Rush Hour Recordings RH-TX1LP（**12 吋，9 軌**）、2010-03 GB 的同編號數位版（9 軌）、2010-03 NL 的 Rush Hour RH-TX1 CD（**CD，8 軌**）。**1989 年那筆是英國發行，資料庫裡沒有美國版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/fb609f5e-1d84-4f9f-bcfe-530638bfc6bf?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1989 GB 原盤（Radical Records CDVIGO 1，CD）的逐軌曲目與長度：1〈Do You Know Who You Are〉4:42、2〈In a Vision〉4:46、3〈Going Thru Life〉4:37、4〈Take Me Higher〉4:49、5〈Ride〉4:35、6〈School Hall〉4:25、7〈Never Want to Lose You〉4:45、8〈All the Time〉4:18。**八軌全部在 4:18 到 4:49 之間——最長與最短只差 31 秒，八軌幾乎等長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fb609f5e-1d84-4f9f-bcfe-530638bfc6bf&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**2010 年 Rush Hour 的重發分成兩種軌數**：RH-TX1LP 的 12 吋與數位版是 **9 軌**，前八軌與 1989 原盤逐位置相符、逐軌長度完全相同，**末尾多出第 9 軌〈Look Into Your Eyes〉5:24**（**比原盤任何一軌都長 35 秒以上**）；同月 NL 的 RH-TX1 CD 卻仍是 **8 軌**，與 1989 原盤相同。**同一次重發的黑膠與 CD 軌數不同。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fb609f5e-1d84-4f9f-bcfe-530638bfc6bf&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **5 個 release-group**：primary-type=Album 3 個，但**其中 secondary-types 為空的只有 1 個，就是本張**；另 2 個是 2011-03 與 2011-03-01 兩筆同名的《Resurrection》（都帶 Compilation，**互為同名雙胞胎**）。EP 1 個、Single 1 個、**primary-type=Compilation 0 個**。**本張是這個掛名下唯一一張原創長篇，整個目錄只有 5 筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b17172bf-041b-4c08-92bd-7ab0d93021be&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**同名實體覆核（裁定 179／224）**：另一個叫 `Virgo` 的實體 MBID c7eaea5b（type Person、country US、life-span 起 1959）**disambiguation 明寫「US house producer Marshall Jefferson」**，名下只有 2 個 release-group、0 張 Album。**本張掛的是 b17172bf 那個雙人組，不是他。** 串流三個店面（us／gb／de）以掛名加盤名做 `search` **沒有任何一筆同名結果**，回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態。**",
+    "src": "https://musicbrainz.org/ws/2/artist/c7eaea5b-9ebf-4de7-893f-569f56eca993?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "八首幾乎等長，最長與最短只差三十一秒",
+   "二十一年後重發，黑膠多了一首、同月的 CD 卻沒有"
+  ],
+  "sound": "1989 年 Radical Records CDVIGO 1 的八軌全部落在 4:18 到 4:49 之間，最長與最短只差三十一秒——八首幾乎切成一樣的長度，在同期芝加哥碟裡是很少見的做法。曲名整批是第二人稱的句子：〈Do You Know Who You Are〉〈Take Me Higher〉〈Never Want to Lose You〉，中間夾著〈Ride〉〈School Hall〉這種單詞式標題。2010 年 Rush Hour 重發時，12 吋與數位版在末尾補上〈Look Into Your Eyes〉5:24，比原盤任何一軌都長三十五秒以上；同一個月發的 CD 卻仍是原本的八軌。",
+  "keyTracks": [
+   "Do You Know Who You Are",
+   "In a Vision",
+   "School Hall"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989**、其下最早的 release 是 1989 GB 的 Radical Records CDVIGO 1（Official），其餘三筆都是 2010-03 的 Rush Hour 重發。**裁定 220 的形狀在本張不成立**：這是 primary-type=Album 的長篇、RG 的日期就是原盤日期，不是以再發日期建檔。串流三店查無、℗ 那一路對不了，四處對照只成立兩處，仍指向 1989。**同名先行單曲：無**（盤名與碟上掛名同字，但與卡片掛名不同字）。",
+  "notes": "**掛名依本批裁定第 2 條處理，本層覆核成立**：碟上與 artist-credit 都是 `Virgo`，但同名的 c7eaea5b 是 **Marshall Jefferson 的別名實體**，而本批同時收他的《Day of the Onion》。**卡片取實體主名 `Virgo Four` 是對的，行文一律寫 Virgo Four，不要寫 Virgo。**｜**擋下策展層兩處**：(1) `curatorWhy` 與 label 欄寫「1989 年在 Trax 出的唯一一張長篇」「美版原盤由 Trax Records 發行」。**本層四筆 release 沒有一筆掛 Trax**——1989 那筆是 GB 的 Radical Records CDVIGO 1，2010 三筆是 Rush Hour。**行文不得寫 Trax**，要寫廠牌只能寫查得到的那兩家。(2) `curatorWhy` 寫「2010 年 Rush Hour 重新發行後才把 Virgo Four 這個掛名固定下來」——**重發年份 2010-03 查證屬實**，但「把掛名固定下來」沒有查到來源，行文不要寫。｜**軌數兩種（裁定 157）**：1989 原盤與 2010 的 CD 都是 **8 軌**，2010 的 12 吋與數位版是 **9 軌**。**行文只能引 8 軌**，〈Look Into Your Eyes〉不得當本張曲目。｜**曲名大小寫兩套**：1989 CD 與 2010 黑膠寫〈In a Vision〉〈All the Time〉，2010 數位版寫〈In A Vision〉〈All The Time〉，本檔依原盤。｜`selfTitled` 填 false 的理由本層確認：盤名《Virgo》與卡片掛名 `Virgo Four` 不同字。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:Sterling Void|It's All Right",
+  "artist": "Sterling Void",
+  "album": "It's All Right",
+  "facts": [
+   {
+    "f": "release-group 65ee0c7b 的欄位：title「It's All Right」（撇號是 ASCII 直撇 U+0027）、artist-credit「Sterling Void」（藝人實體 MBID c28ed38d，type Person、country US、life-span 起 1964）、first-release-date **1989**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1989 US 的 D.J. International Records DJ 1017，Official，**12 吋、9 軌**。**沒有任何再發、沒有 CD 版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/65ee0c7b-1124-356d-bd9d-b0ec746a24e2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1989 US 原盤（D.J. International Records DJ 1017）的逐軌曲目與長度：1〈It's All Right〉4:00、2〈Runaway〉3:54、3〈Got to Get Close〉5:20、4〈Summertime〉4:39、5〈Living in the Last Days〉4:39、6〈Someday〉6:04、7〈Set Me Free〉3:01、8〈Do You Wanna Dance〉4:28、9〈Serve It Up〉3:44。**同名曲擺在第一軌、只有 4:00；全張最長的〈Someday〉6:04、最短的〈Set Me Free〉3:01，九軌總長不到 40 分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65ee0c7b-1124-356d-bd9d-b0ec746a24e2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **7 個 release-group**：**primary-type=Album 只有 1 個，就是本張**；EP 0 個、Single 6 個、**primary-type=Compilation 0 個**。**本張是名下唯一一張長篇，其餘六筆全部是 Single。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c28ed38d-3e91-4e20-9bf1-77fbad66c602&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "條目：本名記為 **Duane Pelt**，1964 年生，芝加哥人，活動起於 1987 年。〈It's All Right〉**1987 年由 D.J. International Records 發行，是與 Paris Brightledge 的合作曲**；Pet Shop Boys **1988 年錄了自己的版本、收在《Introspective》上**，Sterling Void 後來替他們那一版做了重混，原曲也在對方翻唱之後重新發行。條目把他的路線記為 house 與 Chicago house。",
+    "src": "https://en.wikipedia.org/wiki/Sterling_Void"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search` 的結果**全部是別人的碟或後世的再混單曲**：451249526 與 1001731941 是 Luca Fregonese 2011 年的《It's All Right 2011》（7 軌，掛名是 Luca Fregonese & Sterling Void 或 Luca Fregonese feat. Sterling Void）、1464757655 是 2016 年的《It's All Right (Eric Kupper Remix) [feat. Paris Brightledge] - Single》（1 軌）。**三筆都不是 1989 年那張九軌的碟，全數駁回；本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/search?term=Sterling+Void+It+s+All+Right&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "同名的那一首擺在第一軌、剛好四分整",
+   "名下七筆作品裡有六筆是單曲，長篇只有這一張"
+  ],
+  "sound": "1989 年 D.J. International DJ 1017 的九軌總長不到四十分鐘，同名曲擺在第一軌、剛好 4:00；全張最長的〈Someday〉6:04、最短的〈Set Me Free〉3:01，其餘七軌都在三分半到五分半之間，是唱歌用的尺度而不是 DJ 用的長段落。曲名幾乎全是句子——〈Got to Get Close〉〈Living in the Last Days〉〈Set Me Free〉〈Do You Wanna Dance〉——同名曲〈It's All Right〉1987 年先以與 Paris Brightledge 合作的單曲形式發行過，兩年後才成為這張的開場。",
+  "keyTracks": [
+   "It's All Right",
+   "Someday",
+   "Set Me Free"
+  ],
+  "status": "full",
+  "yearVerified": "**碟是 1989，但同名曲比碟早兩年**。release-group first-release-date **1989**、其下唯一一筆 release 是 1989 US 的 D.J. International Records DJ 1017（Official），沒有第二筆可交叉驗證。**同名先行單曲：有**——條目記〈It's All Right〉**1987 年**就以與 Paris Brightledge 合作的單曲形式在同一家廠牌發行，1988 年被 Pet Shop Boys 翻唱後原曲又重發一次。**行文若寫年份，碟寫 1989、同名曲寫 1987，兩者不可混用。** 串流三店查無本張，℗ 那一路對不了，四處對照只成立兩處。",
+  "notes": "**擋下策展層兩處**：(1) `queryAlias` 把本名寫成 **Duane Buford**。**條目記的本名是 Duane Pelt**（裁定 241 的形狀：人名要當待查證欄位）。**行文不得寫 Duane Buford。** (2) `curatorWhy` 寫「同名曲 1988 年由 Pet Shop Boys 翻唱進英國榜前五」。**排行榜名次一律不得寫進事實或行文**；而且翻唱的年份條目記的是 1988（收在《Introspective》），**原曲則是 1987 年的單曲，不是 1988**。行文可以寫「1988 年被 Pet Shop Boys 收進自己的專輯」，不得寫名次。｜`curatorWhy` 寫「7 個 release-group 裡 primary-type=Album 只有這一張」**查證屬實**；「其餘 6 個全是 Single／EP」要修正成**六筆全部是 Single、EP 是 0**。｜`curatorWhy` 說編號 DJ 1017「緊接在 Fast Eddie DJ# 1015、Tyree DJ#1016 之後」：**本層只能確認本張是 DJ 1017**，Fast Eddie 那張查得到的是 GB 的 DJART 902 與 DE 的 50140，Tyree 那張查得到的只有 DE 的 BCM 50139——**三張連號建立在本層查不到的美版編號上，行文不要當事實寫。**｜**撇號**：來源端一律 ASCII 直撇 `It's All Right`，若下游改成彎撇會摺成不同鍵。｜**串流三筆同名結果全部駁回**（兩筆是 Luca Fregonese 的碟、一筆是 2016 再混單曲），與策展層第八節記的假陽性一致。"
+ },
+ {
+  "key": "desc2:Adonis|H.O.U.S.E.",
+  "artist": "Adonis",
+  "album": "H.O.U.S.E.",
+  "facts": [
+   {
+    "f": "release-group cb3615bb 的欄位：title「H.O.U.S.E.」、**artist-credit 是「Adonis Featuring M.C. Kodak」**（兩個藝人實體：Adonis，MBID 835f5076，type Person、country US、life-span 起 1963-01-04、**disambiguation「Chicago acid house」**；MC Kodak，MBID d6922463，type Person、disambiguation「worked with Adonis」）。first-release-date **1988-07**、**primary-type EP**、secondary-types **空**。轄下**只有 1 筆 release**：1988-07 GB 的 Black Market International BLMK 002，**status 欄是空的**，**12 吋、3 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/cb3615bb-f195-45e2-bdbf-9fc1c5cc376a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988-07 GB 原盤（Black Market International BLMK 002，12 吋）的逐軌曲目與長度：1〈H.O.U.S.E. (Club Mix)〉6:53、2〈H.O.U.S.E. (Acapella)〉5:37、3〈H.O.U.S.E. (Acid Mix)〉7:36。**三軌是同一首曲子的三種版本**，長度 6:53／5:37／7:36，**連 5:37 的清唱版都比多數同期 12 吋的完整曲子還長**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cb3615bb-f195-45e2-bdbf-9fc1c5cc376a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**§5.5 白名單條件覆核**：藝人端點分頁全列 **6 個 release-group，primary-type=Album 0 個、primary-type=Compilation 0 個**，其中 EP 3 個、Single 3 個。**「名下不存在 Album」這個條件成立。** 掛名 `MC Kodak` 那個實體名下只有 1 個 release-group，就是本張。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=835f5076-6b5d-4ba1-a3fe-d81a5838a0fc&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選攤開曲目列比對：串流三個店面（us／gb／de）唯一的同名結果 collectionId **1791212235**《H.O.U.S.E. (Phuture Mix) [feat. Mc Kodak] - Single》，releaseDate **2024-11-09**、trackCount **1**、copyright「℗ 2024 Adonis Recordings」，唯一一軌〈H.O.U.S.E. (Phuture Mix)〉6:09。**這是 2024 年的單軌新混音，不是 1988 年那三軌的碟**——原盤的三個版本（Club Mix 6:53／Acapella 5:37／Acid Mix 7:36）一個都不在上面。**駁回，本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=1791212235&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**同名實體覆核（裁定 179／224）**：以掛名 `Adonis` 直接查詢，score 排序前段混著多個不相干的實體（含黎巴嫩的四人樂團）；**只有 disambiguation 分得出來**——本張釘的 835f5076 寫的是「Chicago acid house」、life-span 起 1963-01-04、country US。**score 高低在這個掛名上不可用。**",
+    "src": "https://musicbrainz.org/ws/2/artist/835f5076-6b5d-4ba1-a3fe-d81a5838a0fc?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "整張三軌是同一首曲子的三個版本，最長的酸味版七分三十六秒",
+   "連清唱版都有五分三十七秒，比同期多數十二吋的完整曲子還長"
+  ],
+  "sound": "1988 年 7 月 Black Market International BLMK 002 是一張 12 吋、三軌，而三軌是同一首曲子的三種版本：Club Mix 6:53、Acapella 5:37、Acid Mix 7:36。這是十二吋時代最典型的一種編排——不給不同的曲子，只給同一首的不同拆法，讓 DJ 自己選要放哪一面。三軌裡最長的是 Acid Mix，比 Club Mix 多出四十三秒；連只有人聲的 Acapella 都有 5:37。碟上的掛名寫成 Adonis Featuring M.C. Kodak，盤名把 house 拆成六個帶句點的字母。",
+  "keyTracks": [
+   "H.O.U.S.E. (Club Mix)",
+   "H.O.U.S.E. (Acid Mix)",
+   "H.O.U.S.E. (Acapella)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988-07。release-group first-release-date **1988-07**（**帶月份**）、其下唯一一筆 release 是 1988-07 GB 的 Black Market International BLMK 002，**status 欄是空的**（依裁定 43／57／65／78 不採為背書），且沒有第二筆可交叉驗證。**裁定 220 的形狀在本張要留意**：這是 primary-type=EP 的 12 吋，RG 的日期就是原盤日期、沒有以再發日期建檔的跡象。串流側唯一的同名結果是 2024 年的單軌新混音（已駁回），℗ 那一路對不了。四處對照只成立兩處，仍指向 1988。**同名先行單曲：無**（盤名與唯一那首曲子同名，三軌都是它）。",
+  "notes": "**§5.5 覆核通過**：`exceptionReason` 寫「名下 6 個 release-group 全數是 EP／Single，1980 年代不存在任何 Album 形態」——**逐項查證屬實**（6 個 RG、Album 0、Compilation 0、EP 3、Single 3），兩個 HTTPS 證據網址都指向可開啟的條目。**這一張的白名單資格成立。**｜**擋下策展層一處（配對，裁定 238）**：`curatorRisk` 把 us／gb／de 三店命中的 1791212235 記成本張的串流命中。**那是 2024 年的單軌新混音〈H.O.U.S.E. (Phuture Mix)〉6:09，原盤三軌一個都不在上面**，不能當本張的固定試聽來源。**本張要走無來源狀態。**｜**掛名依裁定 177 取池中既有寫法 `Adonis`**，但要記得原盤的 artist-credit 是 `Adonis Featuring M.C. Kodak`，**行文提到主唱掛名時得寫全，不要把 M.C. Kodak 略掉又說那是碟上的掛名**。｜**盤名的句點**：原盤與串流兩端都寫 `H.O.U.S.E.`（六個字母各帶句點），摺疊後是極短的 `house`，下游新增同型卡要留意。｜`curatorWhy` 說「1988 年這兩張是唯一成組的作品」——目錄裡 1988 年確實另有一筆《Do You Wanna Jack / Lost In The Sound》，**但「唯一成組」是斷語，行文不要寫**。"
+ },
+ {
+  "key": "desc2:Gherkin Jerks|Stomp the Beat",
+  "artist": "Gherkin Jerks",
+  "album": "Stomp the Beat",
+  "facts": [
+   {
+    "f": "release-group 6d9fe946 的欄位：title「Stomp the Beat」、artist-credit「Gherkin Jerks」（藝人實體 MBID 75395e9e，type Person、country US）、first-release-date **1988**、**primary-type EP**、secondary-types **空**。轄下 **2 筆 release，兩筆都 Official**：1988 US 的 Gherkin Records GKE 1052（**12 吋、6 軌**）與 2017-08-18 XW 的 Alleviated Records ML-2219（**數位、6 軌**）。**兩筆軌數相同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/6d9fe946-812a-4efd-91b4-4084f08ce7fe?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 US 原盤（Gherkin Records GKE 1052，12 吋）的逐軌曲目：1〈Sympte Suite: Don't Dis the Beat〉、2〈Sympte Suite: Tar-Disc〉、3〈Sympte Suite: Acid Indigestion〉、4〈Midi Beats〉、5〈Parameters〉、6〈Din Sync (Get Up and Do Your Thang)〉。**六軌都沒有記錄長度。前三軌共用「Sympte Suite」這個組曲前綴，後三軌則是獨立標題**；六個標題全部指向器材與時序（Midi、Parameters、Din Sync 都是機器同步的術語）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6d9fe946-812a-4efd-91b4-4084f08ce7fe&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1272311321**：collectionName「Stomp the Beat - EP」、artistName「Gherkin Jerks」、releaseDate **2002-03-15**、trackCount 6、copyright「℗ 2002 Alleviated Records and Music」。`entity=song` **攤得出 6 軌、6 軌全部有 previewUrl**：1〈Don't Dis the Beat〉4:04、2〈Tar-Disc〉5:04、3〈Acid Indigestion〉4:47、4〈Midi Beats〉5:02、5〈Parameters〉4:40、6〈Din Sync (Get Up and Do Your Thing)〉4:48。**曲序與原盤逐位置相符、六軌全部同名**；差別只在店面把前三軌的「Sympte Suite:」前綴拿掉、末軌的 Thang 寫成 Thing。**六軌從 4:04 到 5:04，落差不到一分鐘。**",
+    "src": "https://itunes.apple.com/lookup?id=1272311321&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**§5.5 白名單條件覆核**：藝人端點分頁全列 **3 個 release-group**——**primary-type=Album 1 個但帶 secondary-types [Compilation]（2013-10《The Gherkin Jerks Compilation》）、secondary-types 為空的 Album 0 個、primary-type=Compilation 0 個**，其餘 2 個是 EP（本張與 1989 年的《1990》）。**「這個掛名下 1980 年代不存在 Album 形態」成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=75395e9e-f8a1-4eae-83f4-f16ca0a19bd5&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選攤開曲目列比對：collectionId **1272315941**《1990 - Ep》（releaseDate 1989-02-06，6 軌〈Meltdown〉5:06／〈Blast Off〉4:57／〈Red Planet〉5:13／〈Saturn V〉5:04／〈Space Dance〉4:50／〈Strange Creatures〉4:59，℗ 1989 Alleviated Records and Music）**六軌與本張六軌無一同名**——這是同一個掛名下**另一張 EP**，正是卡單列為「刻意不釘」的那一張。**駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=1272315941&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "前三軌共用一個組曲前綴，串流上架時被整批拿掉了",
+   "末軌的 Thang 到了串流版本變成 Thing"
+  ],
+  "sound": "1988 年 Gherkin Records GKE 1052 是一張 12 吋、六軌，原盤沒有留下長度紀錄；串流上架的同一批錄音顯示六軌從 4:04 到 5:04，落差不到一分鐘，是六首等寬的機器練習。曲目分兩段：前三軌共用「Sympte Suite」這個組曲前綴——〈Don't Dis the Beat〉〈Tar-Disc〉〈Acid Indigestion〉——後三軌則各自獨立。六個標題全部指向器材與時序：Midi、Parameters、Din Sync 都是機器同步的術語，末軌的括號裡才回到舞池的呼喊。2017 年 Alleviated 以 ML-2219 把同樣六軌原樣重發。",
+  "keyTracks": [
+   "Don't Dis the Beat",
+   "Midi Beats",
+   "Din Sync"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**、其下最早的 release 是 1988 US 的 Gherkin Records GKE 1052（Official），第二筆是 2017-08-18 的 Alleviated ML-2219 數位再發（Official）。**串流那一路的年份不可用**：collectionId 1272311321 的 releaseDate 記 **2002-03-15**、℗ 寫「℗ 2002 Alleviated Records and Music」，**那是 2002 年的一次再發，既不是 1988 原盤也不是 2017 那次**。四處對照後年份仍是 1988。**同名先行單曲：無。**",
+  "notes": "**§5.5 覆核通過**：`exceptionReason` 寫「這個掛名下只有三個 release-group、兩張 EP 加一張後世整編，1980 年代不存在 Album 形態」——**逐項查證屬實**（3 個 RG、EP 2、Album 1 但帶 Compilation、secondary-types 為空的 Album 0），且「2017 年 Alleviated 以 ML-2219 原樣重壓」也**查證屬實**（2017-08-18 XW，6 軌）。兩個 HTTPS 證據網址成立。**這一張的白名單資格成立。**｜**回撈的 1 個候選駁回**：1272315941 是同掛名另一張 EP《1990》（六軌全部是太空題材，與本張無一同名），正是卡單列為刻意不釘的那張。**卡單原記的 1272311321 才是本張，逐軌覆核成立**（六軌同名同序、全部有試聽）。｜**曲名兩套寫法**：原盤前三軌帶「Sympte Suite:」前綴、末軌是〈Din Sync (Get Up and Do Your Thang)〉；串流版把前綴拿掉、末軌寫成 Thing。**行文引曲名時照原盤，keyTracks 已依原盤取無前綴的短名以免摺疊出問題。**｜**別名（裁定 223）**：`Gherkin Jerks` 是獨立實體、名下只有 3 筆，**與本名那個實體的目錄完全不互通**，查本名查不到這三筆。｜`curatorWhy` 說這是「他當年唯一不掛 Fingers 系名字的錄音」是斷語，**本層只能確認這個掛名下有三筆作品，行文不要寫「唯一」。**"
+ },
+ {
+  "key": "desc2:Chez N Trent|The Choice",
+  "artist": "Chez N Trent",
+  "album": "The Choice",
+  "facts": [
+   {
+    "f": "release-group 6a1bb5b9 的欄位：title「The Choice」、artist-credit「Chez N Trent」（藝人實體 MBID d4ae58ab，**type Group**、country US、**disambiguation「Chez Damier & Ron Trent」**）、first-release-date **1993**、**primary-type Single**、secondary-types **空**。轄下**只有 1 筆 release**：1993 US 的 KMS KMS 051，Official，**12 吋、4 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6a1bb5b9-c2d3-38d4-b724-3d5226efe14a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1993 US 原盤（KMS KMS 051，12 吋）的逐軌曲目與長度：1〈The Choice (Windy City club)〉5:26、2〈The Choice (New dub mix)〉6:04、3〈The Choice (Full Dosage)〉6:11、4〈The Choice (Witch Doctor mix)〉6:07。**四軌是同一首曲子的四種版本**，除了第一軌 5:26 之外三軌都落在 6:04 到 6:11、**彼此只差七秒**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6a1bb5b9-c2d3-38d4-b724-3d5226efe14a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1706846411**：collectionName「The Choice - EP」、artistName「Chez-N-Trent, Chez Damier & Ron Trent」（**店面把兩種掛名寫在一起，中間的連字號是分寫形 Chez-N-Trent**）、releaseDate **1993-10-06**、trackCount **5**、copyright「℗ 1993 BEAT Music Fund」。`entity=song` **攤得出 5 軌、5 軌全部有 previewUrl**：1〈The Choice (Windy City Club Mix)〉3:43、2〈The Choice (Windy City Extended Club Mix)〉5:26、3〈The Choice (New Extended Dub Mix)〉6:03、4〈The Choice (Full Dosage Extended Remix)〉6:13、5〈The Choice (Witch Doctor Extended Mix)〉6:08。**原盤四軌逐一對得上第 2 到第 5 軌、長度差都在 2 秒內**；店面多出的是第 1 軌 3:43 的短版。",
+    "src": "https://itunes.apple.com/lookup?id=1706846411&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**§5.5 白名單條件覆核**：藝人端點分頁全列 **6 個 release-group**——**primary-type=Album 0 個、primary-type=Compilation 0 個**，EP 3 個、Single 2 個、另 1 個 primary-type 空白。**「這個掛名下沒有任何 Album」成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d4ae58ab-5cc4-4fa9-a23a-a3e067cbac2c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈的第二個候選攤開曲目列比對：collectionId **1695542948**《Untitled (feat. Chez-N-Trent) - EP》，artistName「Ron & Chez D, Ron Trent & Chez Damier」、releaseDate **1994-01-01**、4 軌〈Untitled A〉5:57／〈Untitled B〉4:57／〈Untitled C〉5:53／〈Untitled D〉5:58、℗ 1994 BEAT Music Fund。**四軌與本張四軌無一同名，年份也差一年**——這是兩人隔年另立廠牌之後的那一張，正是卡單列為刻意不釘的那筆。**駁回。**",
+    "src": "https://itunes.apple.com/lookup?id=1695542948&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四軌是同一首曲子的四種版本，後三種彼此只差七秒",
+   "串流版本多出一段三分四十三秒的短版，原盤上沒有"
+  ],
+  "sound": "1993 年 KMS 051 是一張 12 吋、四軌，四軌都是同一首曲子：Windy City club 5:26、New dub mix 6:04、Full Dosage 6:11、Witch Doctor mix 6:07。除了第一軌之外三種版本彼此只差七秒，等於把同一段結構鋪成三面幾乎等長的選擇——盤名叫 The Choice，四種版本就是那個選擇本身。後來上架的數位版把這四軌全部留下、另外在最前面補了一段 3:43 的短版，並且把每一軌的標題都加上 Extended 字樣以與短版分辨。",
+  "keyTracks": [
+   "The Choice (Windy City club)",
+   "The Choice (Full Dosage)",
+   "The Choice (Witch Doctor mix)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1993。release-group first-release-date **1993**、其下唯一一筆 release 是 1993 US 的 KMS KMS 051（Official）。串流店面 us 的 1706846411 releaseDate 記 **1993-10-06**、℗ 欄「℗ 1993 BEAT Music Fund」——**年份與原盤一致**，且四軌逐一對得上、長度差在 2 秒內。**裁定 220 的形狀在本張要留意**：這是一張 12 吋的 primary-type=Single，但 RG 的日期與 release 的日期同為 1993，沒有以再發日期建檔的跡象。四處對照後年份是 1993。**同名先行單曲：不適用**（整張就是同一首曲子的四種版本）。",
+  "notes": "**§5.5 覆核通過**：`exceptionReason` 寫「這個掛名在 6 個 release-group 全是 12 吋、沒有任何 Album」——**查證屬實**（Album 0、Compilation 0、EP 3、Single 2、空白 1）。兩個 HTTPS 證據網址成立。**白名單資格成立。**｜**回撈的 2 個候選：採信 1706846411、駁回 1695542948。** 1706846411 是本批**封面唯一靠串流那一路的碟**（圖庫對本張回 404），逐軌覆核成立，五軌全部有試聽。｜**軌數要留意（裁定 157）**：原盤 **4 軌**、串流版 **5 軌**（多一段 3:43 的短版）。**行文只能引 4 軌。**｜**掛名三種寫法**：資料庫端 `Chez N Trent`（空格分寫）、店面端 `Chez-N-Trent`（連字號）、實體 disambiguation 寫 `Chez Damier & Ron Trent`。連字號是 ASCII U+002D。｜**廠牌容易記錯**：本張是 **KMS 051**，不是隔年那家自立的廠牌；駁回的 1695542948（1994）才是後者那一張。｜`curatorWhy` 說 Ron Trent「帶著《Altered States》的名聲過來」與「隔年才自立」——**隔年那張的年份查證屬實（1994）**，但兩人的來歷敘述本層查不到來源，行文不要寫。"
+ },
+ {
+  "key": "desc2:Chez Damier|Can You Feel It",
+  "artist": "Chez Damier",
+  "album": "Can You Feel It",
+  "facts": [
+   {
+    "f": "release-group 0d8ccb4e 的欄位：title「Can You Feel It」、artist-credit「Chez Damier」（藝人實體 MBID 9eef0a84，type Person、country US）、first-release-date **1992**、**primary-type Single**、secondary-types **空**。轄下 **3 筆 release，全部 Official**：1992 US 的 KMS KMS 035（**12 吋、4 軌**）、2012-01-18 GB 的 Defected DFTD332D1（**數位、9 軌**）、2012-02-20 DE 的 Dessous Recordings DESLTD02（**12 吋、3 軌**，title 作《Can You Feel It (New York dub): The Steve Bug Remixes》）。**2012 年兩家分別重發，軌數與內容都不同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/0d8ccb4e-83d1-36d2-ac02-af2748b13447?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1992 US 原盤（KMS KMS 035，12 吋）的逐軌曲目與長度：1〈Can You Feel It (vocal club mix)〉5:10、2〈Can You Feel It (dub mix)〉5:01、3〈Can You Feel It (M.K. dub)〉5:34、**4〈A 2½ Step〉5:26**。**前三軌是同一首曲子的三種版本，第四軌是另一個標題**——**〈A 2½ Step〉是原盤上唯一一首不叫 Can You Feel It 的曲子，也是判斷任何再發版是否完整的關鍵一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0d8ccb4e-83d1-36d2-ac02-af2748b13447&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**本層新查到的 collectionId 1774656918**（店面 us／gb／de 三店都在）：collectionName「Can You Feel It - EP」、artistName「Chez Damier」、releaseDate **1992-01-01**、trackCount **4**、copyright「℗ 1992 BEAT Music Fund」。`entity=song` **攤得出 4 軌、4 軌全部有 previewUrl**：1〈Can You Feel It (Club Vocal)〉5:04、2〈Can You Feel It (Dubby Dub Extended)〉4:56、3〈Can You Feel It (Mk New York Dub Extended)〉5:29、**4〈Can You Feel It (2½ Step)〉5:28**。**四軌與 1992 原盤四軌逐一對得上、長度差都在 6 秒內（5:10↔5:04／5:01↔4:56／5:34↔5:29／5:26↔5:28），只是曲序把 vocal 擺到最前**。**這是本層找到的唯一一筆四軌全齊的上架版本。**",
+    "src": "https://itunes.apple.com/lookup?id=1774656918&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**卡單原記的 1482101121 只有 3 軌**：〈Can You Feel It (Mk New York Dub Extended)〉5:29／〈(Dubby Dub Extended)〉4:56／〈(Club Vocal)〉5:04，releaseDate 1992-01-01、℗ 1992 BEAT Music Fund。三軌對得上原盤第 1 到第 3 軌，**但缺了第 4 軌〈A 2½ Step〉**。同一批同名條目另有 1713513339（5 軌，多兩段短版、同樣缺〈2½ Step〉）、1708047129（4 軌，四軌全是 Can You Feel It 的版本、**沒有〈2½ Step〉**）。**三筆都不完整，取 1774656918 才對。**",
+    "src": "https://itunes.apple.com/lookup?id=1482101121&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**§5.5 白名單條件覆核**：藝人端點分頁全列 **27 個 release-group**——primary-type=Album **1 個，但它帶 secondary-types [Compilation, DJ-mix]**（1996《House Masters》）；**secondary-types 為空的 Album 0 個、primary-type=Compilation 0 個**；EP 12 個、Single 11 個。**「名下沒有任何一張純 Album」成立。** 別名各查一次的結果（裁定 223）：另一個實體 `Noni`（MBID 199921cf，type Person、country US、**disambiguation「US techno producer Chez Damier」**）是同一人的另一個實體，**目錄與本人實體不互通**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9eef0a84-41bb-4b34-80f5-4f37cbc54ad8&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "四軌裡有三軌是同一首的不同版本，第四軌卻叫 A 2½ Step",
+   "串流上有一整排同名條目，只有一筆把第四軌收進去了"
+  ],
+  "sound": "1992 年 KMS 035 是一張 12 吋、四軌。前三軌是同一首曲子的三種拆法——vocal club mix 5:10、dub mix 5:01、M.K. dub 5:34——第四軌卻換了名字，叫〈A 2½ Step〉5:26。四軌長度幾乎一樣，落在 5:01 到 5:34 之間，整張像是同一段結構被切成四塊擺在兩面上。2012 年這張被兩家分別重發，一家做成九軌的數位版、一家做成三軌的十二吋，兩者的內容都與原盤不同；串流上同名的條目更是一整排，多數都把第四軌漏掉了。",
+  "keyTracks": [
+   "Can You Feel It (vocal club mix)",
+   "Can You Feel It (M.K. dub)",
+   "A 2½ Step"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992**、其下最早的 release 是 1992 US 的 KMS KMS 035（Official），另兩筆是 2012-01-18 與 2012-02-20 的重發。串流店面 us 的 1774656918 releaseDate 記 **1992-01-01**（**只有年份可信、月日是填充值**）、℗ 欄「℗ 1992 BEAT Music Fund」，四軌與原盤逐一對得上、長度差在 6 秒內。**裁定 220 的形狀在本張不成立**：RG 的日期與原盤 release 同為 1992。四處對照後年份是 1992。**同名先行單曲：不適用。**",
+  "notes": "**§5.5 覆核通過**：`exceptionReason` 寫「27 個 release-group 沒有任何一張 Album」——**要修一個字**：primary-type=Album 其實有 1 個（1996《House Masters》），**但它帶 secondary-types [Compilation, DJ-mix]，secondary-types 為空的 Album 確實是 0 個**。白名單的實質條件成立，`exceptionReason` 的措辭若要引數字，得寫「沒有任何一張純 Album」。兩個 HTTPS 證據網址成立。**白名單資格成立。**｜**找到一個新的 collectionId（裁定 238 的正面）**：卡單原記的 **1482101121 只有 3 軌、缺〈A 2½ Step〉**；本層在三店 `search` 找到 **1774656918（4 軌全齊、四軌逐一對得上、全部有試聽）**，**建議改用這一筆**。同名條目另有 1708047129（4 軌但仍缺〈2½ Step〉）與 1713513339（5 軌、同樣缺），**兩筆一併駁回**。｜**盤名撞卡**：池中已有同名的王牌卡，兩者盤名相同、掛名不同。**行文不得把兩者混為一談，也不要寫「重寫自某首原曲」這種本層查不到來源的關係。**｜**曲名的分數符號**：原盤第 4 軌是〈A 2½ Step〉（帶 ½ 與冠詞 A），店面寫〈Can You Feel It (2½ Step)〉（無冠詞、被併進同名括號）。**行文照原盤。**｜**別名（裁定 223）**：`Noni`（199921cf）是同一人的另一個實體，直接以 `Noni` 查詢時 score 最高的是另一位不相干的歌手，**只有 disambiguation 分得出來**。"
+ },
+ {
+  "key": "desc2:Photon Inc.|Generate Power",
+  "artist": "Photon Inc.",
+  "album": "Generate Power",
+  "facts": [
+   {
+    "f": "release-group b1b5d1ae 的欄位：title「Generate Power」、artist-credit「Photon Inc.」（藝人實體 MBID 4eb1179b，**type 與 country 兩欄都是空的**）、first-release-date **1991**、**primary-type Single**、secondary-types **空**。轄下 **5 筆 release**：1991 US 的 Strictly Rhythm SR 1251（**12 吋、5 軌，status 欄是空的**）、2002-06-10 GB 的 Strictly Rhythm UK SRUK 1212X（**12 吋、2 軌**，Official）、2010-01-11 XW（數位、5 軌，Official）、2010 XW 的《Generate Power (2010 Mixes)》（數位、5 軌，Official）、2014-10-01 XW（數位、5 軌，Official）。**同一家廠牌在 2002、2010、2014 前後重發四次。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b1b5d1ae-978e-48de-a792-b71c305491f1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1991 US 原盤（Strictly Rhythm SR 1251，12 吋）的逐軌曲目與長度：1〈Generate Power (club mix)〉6:10、2〈Generate Power (a cappella)〉2:52、3〈Generate Power (radio mix)〉3:38、4〈Generate Power (instrumental)〉4:46、**5〈Generate Power (Wild Pitch mix)〉8:41**。**五軌是同一首曲子的五種版本，末軌 8:41 比清唱版 2:52 長出將近六分鐘**——這一軌是全張的重心，其餘四軌是它的拆解。2002 年那筆只有 2 軌，是另一組人做的重混與 dub。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b1b5d1ae-978e-48de-a792-b71c305491f1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us 的 collectionId **1531700653**：collectionName「Generate Power (feat. Paula Brion) - EP」、artistName「Photon Inc.」、releaseDate **2020-09-25**、trackCount 5。`entity=song` **攤得出 5 軌、5 軌全部有 previewUrl**：1〈Generate Power (Club Mix)〉6:09、2〈(Acapella)〉2:56、3〈(Radio Mix)〉3:40、4〈(Instrumental)〉4:51、5〈(feat. Paula Brion) [Wild Pitch Mix]〉8:44。**五軌與 1991 原盤逐位置相符、逐軌長度差都在 5 秒內**（6:10↔6:09／2:52↔2:56／3:38↔3:40／4:46↔4:51／8:41↔8:44）。**這一筆才是原盤內容。**",
+    "src": "https://itunes.apple.com/lookup?id=1531700653&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**卡單另記的 1437993302 不是原盤內容**：collectionName「Generate Power (feat. Paula Brion) [2010 Mixes]」、releaseDate 2010-01-01、5 軌〈Jimpster Main Mix〉7:50／〈Jimpster Dub〉7:48／〈Soul Avengerz Club Soda Remix〉6:54／〈Soul Avengerz Dub Soda Remix〉6:50／〈Wild Pitch Mix〉8:44。**五軌裡只有末軌與原盤共通，前四軌全是 2010 年另做的重混。** 回撈清單給的 1437584588《Give a Little Love》（1992，3 軌，全部是另一首曲子的三種版本）**與本張無一軌同名，一併駁回**。",
+    "src": "https://itunes.apple.com/lookup?id=1437993302&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**§5.5 白名單條件覆核**：藝人端點分頁的結果是 **這個掛名名下只有 1 個 release-group，就是本張**——primary-type=Album 0 個、EP 0 個、Single 1 個、primary-type=Compilation 0 個。**「這個掛名只有一個 release-group、沒有任何 Album」成立。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4eb1179b-5882-4b8e-9c8a-e7324b087b02&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "五軌是同一首的五種版本，最後那個八分四十一秒的版本是全張的重心",
+   "同一家廠牌在二十三年裡把這張重發了四次"
+  ],
+  "sound": "1991 年 Strictly Rhythm SR 1251 是一張 12 吋、五軌，五軌全是同一首曲子：club mix 6:10、a cappella 2:52、radio mix 3:38、instrumental 4:46，最後是 8:41 的 Wild Pitch mix。末軌比清唱版長出將近六分鐘，其餘四軌像是圍著它做的拆解——把人聲抽掉一次、把長度砍成電台版一次、把伴奏單獨留一次。同一家廠牌後來在 2002、2010、2014 三度重發，2002 那次只放兩軌別人做的重混，2010 那次做成一整張新混音、只留下原本的 Wild Pitch mix；2020 年的數位版才把 1991 年的五軌原樣放回去。",
+  "keyTracks": [
+   "Generate Power (Wild Pitch mix)",
+   "Generate Power (club mix)",
+   "Generate Power (a cappella)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**、其下最早的 release 是 1991 US 的 Strictly Rhythm SR 1251，**該筆的 status 欄是空的**（依裁定 43／57／65／78 不採為背書，背書取 2002-06-10 GB 的 SRUK 1212X 那筆 Official）。串流店面 us 的 1531700653 releaseDate 記 **2020-09-25**、**℗ 欄是空的**——**那是 2020 年的數位再發，不是原盤年份**；五軌與 1991 原盤逐位置相符、長度差在 5 秒內。**裁定 220 的形狀在本張要留意**：這是一張 12 吋的 primary-type=Single，五筆 release 裡有四筆是 2002 年之後的，**但 RG 的 first-release-date 記的是 1991 原盤、沒有被再發日期蓋掉**。四處對照後年份是 1991。**同名先行單曲：不適用。**",
+  "notes": "**§5.5 覆核通過**：`exceptionReason` 寫「這個掛名在資料庫上只有這一個 release-group，沒有任何 Album」——**查證屬實**（RG 總數 1、Album 0）。「Strictly Rhythm 在 2002、2010、2014 三度重發同一張」也**查證屬實**（實際是四筆再發：2002-06-10、2010-01-11、2010、2014-10-01）。兩個 HTTPS 證據網址成立。**白名單資格成立。**｜**擋下策展層一處（配對，裁定 238）**：`curatorRisk` 把 1437993302 記在最前面。**那一筆是 2010 年的新混音集，五軌裡只有末軌與原盤共通**。本層改採 **1531700653（2020 數位版，五軌與原盤逐位置相符、全部有試聽）**，這是本張正確的固定試聽來源。｜**回撈的 1 個候選駁回**：1437584588《Give a Little Love》（1992）是另一首曲子的三種版本，與本張無一軌同名。｜**藝人實體資料極薄**：4eb1179b 的 type 與 country 兩欄都空、名下只有一筆作品。**這個掛名背後是誰，本層查不到可引的來源，行文不要把它與任何本名或其他掛名綁在一起。**｜**掛名的句點**：資料庫端 `Photon Inc.`、店面端同形但後面掛 `(feat. Paula Brion)`；主唱掛名只出現在店面那一側，**原盤五軌的曲名裡沒有她**。｜**盤名極短、字序易反**：〈Generate Power〉與另一張《Power Generation》字序相反、不是同一張。"
+ }
+]
