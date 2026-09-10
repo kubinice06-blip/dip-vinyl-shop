@@ -1,0 +1,2886 @@
+{
+ "schemaVersion": 1,
+ "batch": "c95-20260910",
+ "albums": [
+  {
+   "artist": "Robert Johnson",
+   "album": "King of the Delta Blues Singers, Vol. II",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 25ff0dee-b3de-3e3a-a316-516dba185170。回問 release-group/<id>?inc=artist-credits+releases 確認：title「King of the Delta Blues Singers, Vol. II」、artist-credit「Robert Johnson」、first-release-date 1970、primary-type Album、secondary-types [Compilation]、轄下 4 個 release（US 2／XE 1／無國別 1），status 全部 Official（第 43／57 條的授權判定：這一次再發是 Official）。依 §5.6 明文，primary-type=Album 而 secondary-types 含 Compilation 者照一般 Album 寫、不填例外欄位。刻意不釘：2609603b-cd7d-3ccf-aa58-94c38defac2c《King of the Delta Blues Singers》（1961，池中已有的前輯）、200b18f9-789e-3875-90a1-a0c6ee1906a9《The Complete Recordings》（1990，本批另收一張）、14efb305《The Complete Collection》與 4a40ae2e《The Complete Collection》（廉價重複包裝）。藝人 MBID 8a8bbba6-72f7-4900-a306-c40b94f2631b，用 release-group?artist=<MBID>&limit=100&offset= 分頁列出名下 85 個 release-group（第 116 條：browse 預設 25 筆會漏掉大半）。",
+    "rgMbid": "25ff0dee-b3de-3e3a-a316-516dba185170",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/25ff0dee-b3de-3e3a-a316-516dba185170/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 228,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Columbia 在 1970 年把第一輯之外的其餘錄音收成第二輯。那是當時所能取得、第一輯未收的部分。原盤 Columbia C 30034，12 吋十六軌。他一生的錄音只有兩次臨時錄音室工作：1936 年 11 月德州 San Antonio 的 Gunter Hotel，1937 年 6 月 Dallas，原始製作人 Don Law。十六軌沒有一軌超過 3:02，最長的正是〈Sweet Home Chicago〉，收尾的〈Love in Vain〉2:26。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/25ff0dee-b3de-3e3a-a316-516dba185170",
+     "https://musicbrainz.org/release/57caa6ba-fe76-44e8-a98f-85ccece1214b",
+     "https://en.wikipedia.org/wiki/King_of_the_Delta_Blues_Singers",
+     "https://en.wikipedia.org/wiki/The_Complete_Recordings_(Robert_Johnson_album)",
+     "https://music.apple.com/us/album/193895743"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/ad/82/b9ad82be-474e-9d61-100e-dcd993b159e3/mzaf_10220661442135958645.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "193895743",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Robert Johnson",
+   "album": "The Complete Recordings",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 200b18f9-789e-3875-90a1-a0c6ee1906a9。回問確認：title「The Complete Recordings」、artist-credit「Robert Johnson」、first-release-date 1990-08-20、primary-type Album、secondary-types [Compilation]、轄下 13 個 release（US 6／JP 2／XE 2／XW 2／IT 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9f8971a0-fd23-4105-b925-3975a4aabb78《The Complete Original Masters: Centenial Edition》（2011 百年版，另一次發行）、afc6a985-af5b-46f4-917a-7d5286404123《The Centennial Collection》（2011）、00a24060-8ae0-4177-8f28-0a936e1f15a8《The Complete Master Takes》（2016）——三筆都與本張內容重疊、是最像的假陽性。藝人 MBID 8a8bbba6-72f7-4900-a306-c40b94f2631b，名下 85 個 release-group（分頁列全）。",
+    "rgMbid": "200b18f9-789e-3875-90a1-a0c6ee1906a9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/200b18f9-789e-3875-90a1-a0c6ee1906a9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 135854,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四十一軌裡有十三個是同一首歌的另一次 take。1990 年的雙 CD 分成二十軌與二十一軌，Legacy C2K 64916。〈Kind Hearted Woman Blues〉的 take 1 是 2:55、take 2 是 2:35，並排擺在第一片開頭。錄音只有兩次：1936 年 11 月 San Antonio 的 Gunter Hotel，1937 年 6 月 Dallas；再發由 Stephen LaVere 與 Frank Driggs 經手。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/200b18f9-789e-3875-90a1-a0c6ee1906a9",
+     "https://musicbrainz.org/release/dfb5ebfe-e262-4016-a045-443adfa0696f",
+     "https://en.wikipedia.org/wiki/The_Complete_Recordings_(Robert_Johnson_album)",
+     "https://music.apple.com/us/album/546817591"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/50/0e/d7500e6f-d9f3-3c65-7423-869d238e81d6/mzaf_15580481259403234416.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "546817591",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Son House",
+   "album": "Father of the Delta Blues: The Complete 1965 Sessions",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 400a6331-02e5-3cf5-895d-eaf6f8e3934c。回問確認：title「Father of the Delta Blues: The Complete 1965 Sessions」、artist-credit「Son House」、first-release-date 1992、primary-type Album、secondary-types [Compilation]、轄下 5 個 release（US 3／GB 1／無國別 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：848a0684-8ad6-3546-9b8e-8e88fd5ec70b《Father of the Delta Blues》（1992，MB 的同套簡稱條目，最像的假陽性）、1185f4fe-a799-360e-a83b-1224bb59d239《Father of Folk Blues》（1965，池中已有）、83278b0c-3f81-3624-a6bf-8043d0e45f67《Library of Congress Recordings 1941-1942》（另一批錄音）、e101c082《The Complete Library of Congress Sessions 1941-1942》（2021）。藝人 MBID 8c87dda0-be58-4e48-a3b5-2626f26364c7，名下 53 個 release-group（分頁列全）。",
+    "rgMbid": "400a6331-02e5-3cf5-895d-eaf6f8e3934c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/400a6331-02e5-3cf5-895d-eaf6f8e3934c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 68336,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Nick Perls、Dick Waterman 與 Phil Spiro 找遍三角洲，1964 年在 Rochester 找到他。製作人 John Hammond 找來吉他手 Alan Wilson 協助錄音，成果是 1965 年 Columbia 的《Father of Folk Blues》，後來在 1992 年以雙 CD 重發為本輯，第二片前五軌全標著 alternate take。二十一軌有九軌超過五分鐘，〈Levee Camp Moan〉9:27。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/400a6331-02e5-3cf5-895d-eaf6f8e3934c",
+     "https://musicbrainz.org/release/75edb026-2a0c-44a4-af8b-589af2305fcc",
+     "https://en.wikipedia.org/wiki/Son_House",
+     "https://music.apple.com/us/album/157314970"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/10/c0/a9/10c0a999-eca7-a8d0-3b46-f49323ed2cf7/mzaf_4345128489495118616.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "157314970",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bessie Smith",
+   "album": "The Complete Recordings, Volume 1",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 704afa64-eff0-3d46-96d0-8cbd48b707ba。回問確認：title「The Complete Recordings, Volume 1」、artist-credit「Bessie Smith」、first-release-date 1991、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US 1／AT 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：4f643547-89e9-4baf-93e6-4ddc7498bfb7《The Complete Recordings, Volume 1》（2001 重版，同名雙胞胎、最危險的假陽性）、e1e504a0《Volume 2》、8733a5db《Volume 3》、3d1d4024《Volume 4》、7584881a《Volume 5》、fb491954《Volume 6》、8413512d《Volume 7》、b6a89e82《Volume 8》（同系列其餘各輯）、4d5685f6-ac02-46b4-a08b-b4a2f1979bac《Empty Bed Blues》（1971 雙 LP，另一次發行）。藝人 MBID ffa28768-ecda-42c6-ac49-6ce5c7d33043，名下 127 個 release-group（分頁列全）。",
+    "rgMbid": "704afa64-eff0-3d46-96d0-8cbd48b707ba",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/704afa64-eff0-3d46-96d0-8cbd48b707ba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 190,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片公司的宣傳部門先叫她 Queen of the Blues，全國媒體升格成 Empress。她 1923 年 2 月 15 日首度為 Columbia 錄音，首張唱片〈Down Hearted Blues〉與〈Gulf Coast Blues〉兩面都賣成暢銷；她為該廠共錄一百六十首，伴奏常是 Louis Armstrong。這套出自 Columbia 1990 年代的 The Complete Recordings 系列，兩片各十九軌，一軌就是一面 78 轉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/704afa64-eff0-3d46-96d0-8cbd48b707ba",
+     "https://musicbrainz.org/release/8e7e884a-27aa-47d0-ad6f-1701f5e9ee6b",
+     "https://en.wikipedia.org/wiki/Bessie_Smith",
+     "https://music.apple.com/us/album/202389419"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/a9/b2/d6a9b21e-c0f4-a76b-cfff-e7c3e183eed8/mzaf_9343332207763565720.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "202389419",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ma Rainey",
+   "album": "Ma Rainey's Black Bottom",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cd87e3c7-ffe4-37e5-87bb-414518ff1e99。回問確認：title「Ma Rainey's Black Bottom」、artist-credit「Ma Rainey」、first-release-date 1990、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：aec6f0c0-c2bb-47cf-a1c6-a22bd18664c7《Ma Rainey's Black Bottom / Georgia Cakewalk》（1927 單曲）、25390e26-80a4-442e-bb81-deb86a5e3d81《Mother of the Blues》（2007，池中已有）、5cd84ed3《Mother of the Blues: The Complete Paramount Recordings 1923-1928》（2026）、ef2dee18-3025-3713-bd72-6aab138ea2e4《Ma Rainey》（1992 Milestone 自我同名，與 Apple 1443551346 對得上但不是本盤）。藝人 MBID e1deae56-c8f0-4e73-8264-f4b02dfc051c，名下 31 個 release-group（分頁列全）。",
+    "rgMbid": "cd87e3c7-ffe4-37e5-87bb-414518ff1e99",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cd87e3c7-ffe4-37e5-87bb-414518ff1e99/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11346,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "August Wilson 1982 年的舞台劇與 2020 年的那部電影，都叫這個名字。舞台劇 1984 年在 Eugene O'Neill Theater Center 首演，電影由 George C. Wolfe 執導、Viola Davis 主演。同名曲 1927 年 12 月與 Her Georgia Band 所錄，Paramount 編號 12590。Yazoo 1990 年的整編專蒐 1920 年代稀有 78 轉，十四軌落在 2:40 到 3:21。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/cd87e3c7-ffe4-37e5-87bb-414518ff1e99",
+     "https://musicbrainz.org/release/88e608c9-f4bd-47e6-b556-f31a8433bad2",
+     "https://en.wikipedia.org/wiki/Ma_Rainey",
+     "https://en.wikipedia.org/wiki/Ma_Rainey%27s_Black_Bottom",
+     "https://en.wikipedia.org/wiki/Yazoo_Records"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Blind Lemon Jefferson",
+   "album": "Blind Lemon Jefferson",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 46685007-683c-34bf-98c7-7a373117b24c。回問確認：title「Blind Lemon Jefferson」、artist-credit「Blind Lemon Jefferson」、first-release-date 1974、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 1／GB 1／XE 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9e2be16a-fec0-4fbc-b925-357e2c09c768《The Immortal Blind Lemon Jefferson》（1967 Milestone，CAA 與 Apple 兩條線皆查無，本批改釘 1974 這筆）、862fa8c9-2b7c-377e-a668-98a1c0cc2911《Blind Lemon Jefferson / Son House》（1972 拼盤，掛兩位藝人）、5f637c42／0712cec5／8e8abbcb 等 Document《Complete Recorded Works in Chronological Order》各輯。藝人 MBID 9481010a-db23-469d-87df-b04118850efb，名下 49 個 release-group（分頁列全）。",
+    "selfTitledVerified": true,
+    "rgMbid": "46685007-683c-34bf-98c7-7a373117b24c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/46685007-683c-34bf-98c7-7a373117b24c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11799,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Black Snake Moan〉1927 年發在 Okeh，那是他在該廠僅有的一次錄音。1926 到 1929 年間他錄了約一百首、發行四十三張唱片，除一張之外全在 Paramount；〈See That My Grave Is Kept Clean〉最初以化名 Deacon L.J. Bates 錄下。原盤是 1974 年 Milestone 的 M-47022 雙 LP，該廠的藍調品項多由 Pete Welding 製作；三十二軌沒有一軌超過 3:18。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/46685007-683c-34bf-98c7-7a373117b24c",
+     "https://musicbrainz.org/release/e3ca0198-55fb-4a49-8da0-ed87e1a99bbf",
+     "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson",
+     "https://en.wikipedia.org/wiki/Milestone_Records",
+     "https://music.apple.com/us/album/1526761400"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/ab/25/9fab252d-2294-ee4b-737d-7ab3f3d38402/mzaf_10773016114262360273.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1526761400",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Blind Willie McTell",
+   "album": "Atlanta Twelve String",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1f7692b9-351a-3fee-8939-c5f78a5b9735。回問確認：title「Atlanta Twelve String」、artist-credit「Blind Willie McTell」、first-release-date 1972、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US 2），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：MB 另有多筆《The Definitive Blind Willie McTell》系與《The Classic Years》系整編，與池中既有卡同型，本批一律不釘。藝人 MBID 81e02e29-e46a-49cb-bf13-d204cbe86daa，名下 45 個 release-group（分頁列全）。",
+    "rgMbid": "1f7692b9-351a-3fee-8939-c5f78a5b9735",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1f7692b9-351a-3fee-8939-c5f78a5b9735/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 46565,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這十五軌是同一場錄音，1949 年 Ahmet Ertegun 到亞特蘭大安排的。當年只有部分曲目以 78 轉問世、銷路不佳，整場到 1972 年才由 Atlantic 以 SD 7224 成套發行。他偏好十二弦吉他，因為音量大、適合在戶外演奏；1940 年 John Lomax 與妻子 Ruby Terrill Lomax 在亞特蘭大旅館房間為美國民歌檔案錄了兩小時，圖書館付他十美元。十五軌只有兩軌超過三分鐘，〈Kill It Kid〉2:25 開場。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1f7692b9-351a-3fee-8939-c5f78a5b9735",
+     "https://musicbrainz.org/release/7642accf-115c-45a5-b256-e6ce53516058",
+     "https://en.wikipedia.org/wiki/Blind_Willie_McTell",
+     "https://en.wikipedia.org/wiki/Atlantic_Records",
+     "https://music.apple.com/us/album/40286578"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e7/82/ce/e782ceab-074e-785d-5a4a-fb7b00b98a32/mzaf_17544509833581745872.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "40286578",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Big Bill Broonzy",
+   "album": "Big Bill Broonzy Sings Folk Songs",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 65e0a083-480f-3dae-822b-8b894f23a8de。回問確認：title「Big Bill Broonzy Sings Folk Songs」、artist-credit「Big Bill Broonzy」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 3 個 release（US 3），status 全部 Official。本張 secondary-types 為空，是正規專輯不是整編輯。刻意不釘：fb384f8d-66c8-33a0-9d26-cdde99d272c8《Trouble in Mind》（2000 Smithsonian Folkways 整編）、以及 MB 名下 143 個 release-group 裡各家的《Sings Country Blues》系條目（與池中既有卡同盤）。藝人 MBID 05bc49f8-3108-44c8-82b9-ac3254896a69，名下 143 個 release-group（第 116 條：分頁列全，browse 預設 25 筆只會看到零頭）。",
+    "rgMbid": "65e0a083-480f-3dae-822b-8b894f23a8de",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/65e0a083-480f-3dae-822b-8b894f23a8de/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 24157,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Folkways 的 Moses Asch 把這批錄音發成唱片時，唱的人已經過世。1962 年這次發行是以紀念的名義；素材取自 Folkways 在紐約的錄音室，加上 1950 年代在芝加哥與 Pete Seeger 同台的一場實況。1951 年的歐洲巡演是他境遇的轉捩點，1950 年代他回到獨奏的 folk-blues 路數，1958 年 8 月 15 日因癌症過世。十一軌長度落差很大，〈Bill Bailey〉1:57 對上〈Martha〉5:00。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/65e0a083-480f-3dae-822b-8b894f23a8de",
+     "https://musicbrainz.org/release/04e56801-90c0-4e50-bce2-74cdb2bfeb68",
+     "https://shorefire.com/releases/entry/smithsonian-folkways-joins-vinyl-me-please-to-reissue-1962-classic-big-bill",
+     "https://en.wikipedia.org/wiki/Big_Bill_Broonzy",
+     "https://music.apple.com/us/album/86302512"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9e/e6/95/9ee69585-0980-81d8-5c66-dcb4dfc981ce/mzaf_11407345808100450458.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "86302512",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tampa Red",
+   "album": "Don't Tampa With the Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f60e6e42-fba6-440f-b0aa-2f46c3c7f11f。回問確認：title「Don’t Tampa With the Blues」、artist-credit「Tampa Red」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／DE 1），status 全部 Official。secondary-types 為空，是正規專輯。刻意不釘：e5c3a339-2607-3cf2-8117-d18dcb5bd9cb《The Bluebird Recordings, Volume 1: 1934 - 1936》（無 first-release-date 的戰前整編）、84e300a3 與 208209aa 兩個樂團實體（Tampa Red’s Hokum Jug Band／Tampa Red & The Chicago Five）名下的條目。藝人 MBID 1b62df85-00d2-464f-81bc-a5c0cdcad278，名下 113 個 release-group（分頁列全）。",
+    "rgMbid": "f60e6e42-fba6-440f-b0aa-2f46c3c7f11f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f60e6e42-fba6-440f-b0aa-2f46c3c7f11f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1353,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "藝名被拿來當動詞用，這是他 1960 年錄的兩張之一。另一張是《Don't Jive Me》，兩張都由 Bluesville 發行；那是 Prestige 的子廠，1959 年成立，專錄被市場遺忘的老一輩樂手。他 1928 年成為第一位彈 National 鋼體共鳴吉他的黑人樂手，用的是鍍金 tricone，手法是單弦跑句而不是塊狀和弦。同年與 Georgia Tom 合作的〈It's Tight Like That〉賣了一百萬張，這裡他自己再錄一次。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f60e6e42-fba6-440f-b0aa-2f46c3c7f11f",
+     "https://musicbrainz.org/release/5cc1f3da-0b95-4646-86ae-7180659e176c",
+     "https://en.wikipedia.org/wiki/Tampa_Red",
+     "https://en.wikipedia.org/wiki/Bluesville_Records",
+     "https://music.apple.com/us/album/1775248899"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/cb/90/34cb90a3-5b02-4913-3908-9e63ade859a0/mzaf_12343934875066395060.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1775248899",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Victoria Spivey",
+   "album": "Woman Blues!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f3a45f67-a0f4-4a9f-8d96-5927b3887d1c。回問確認：title「Woman Blues!」、artist-credit「Victoria Spivey; Lonnie Johnson」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：0643e317-8fc9-43c9-a68d-c17556fb521d《Three Kings And The Queen》（1964 Spivey Records，四人合輯）、a257fe01-8320-4071-a542-a3a2abd3286b《Idle Hours》（1992，Lonnie Johnson 領銜）、d124626e《A Basket Of Blues》（1962）、40229db7《Victoria And Her Blues》（1962 整編）。藝人 MBID 0b9f1797-12ca-4db4-8e0d-d9dc2b90a3da，名下 36 個 release-group（分頁列全）。",
+    "rgMbid": "f3a45f67-a0f4-4a9f-8d96-5927b3887d1c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f3a45f67-a0f4-4a9f-8d96-5927b3887d1c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 73,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "King Vidor 的首部有聲片找她演 Missy Rose。那是 1929 年的《Hallelujah!》。她 1926 年在 Okeh 的出道錄音〈Black Snake Blues〉賣得好，開啟橫跨四十年的錄音生涯。她與 Lonnie Johnson 合作過數首錄音；1961 年她復出並與他重聚，同年與 Len Kunstadt 創辦 Spivey Records。本盤 1962 年由 Bluesville 以 BV 1054 發行，兩人合掛。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f3a45f67-a0f4-4a9f-8d96-5927b3887d1c",
+     "https://musicbrainz.org/release/c5373f63-a027-4435-9f51-0b46fa9d64ab",
+     "https://en.wikipedia.org/wiki/Victoria_Spivey",
+     "https://en.wikipedia.org/wiki/Bluesville_Records",
+     "https://music.apple.com/us/album/1770109928"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/44/27/8744276c-7fb2-1377-5d71-149038f51579/mzaf_7815181150417004767.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1770109928",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sippie Wallace",
+   "album": "Women Be Wise",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ccdd8d08-2354-3348-bcfb-a61b54964f0a。回問確認：title「Women Be Wise」、artist-credit「Sippie Wallace」、first-release-date 1966、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：0e333502-caa2-3b7a-aa38-f3e758e2ec4c《Sippie》（1982 Atlantic）、c72d387f《Jug Band Blues》（1987）、edbd12a6 與 208546b5《Complete Recorded Works in Chronological Order》Vol. 1／2（Document 戰前整編）、99304839《Axel Zwingenberger and the Friends of Boogie Woogie, Volume 3》（Live）。藝人 MBID ac4c191a-92cf-4def-9a48-8635429edb96，名下 11 個 release-group（分頁列全）。",
+    "rgMbid": "ccdd8d08-2354-3348-bcfb-a61b54964f0a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ccdd8d08-2354-3348-bcfb-a61b54964f0a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1471,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場曲後來被 Bonnie Raitt 收進 1971 年的首張專輯。英文維基記她的作品促使 Raitt 在 1960 年代末開始唱藍調、彈藍調。1966 年她隨 American Folk Blues Festival 巡迴歐洲，同年在 Storyville 錄下這批歌，鋼琴是 Roosevelt Sykes 與 Little Brother Montgomery。此前 1923 到 1927 年間她為 Okeh 錄過四十多首；這十四軌只有一軌超過四分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ccdd8d08-2354-3348-bcfb-a61b54964f0a",
+     "https://musicbrainz.org/release/1fdfccda-0f73-42a4-b38d-c4d4a752d798",
+     "https://en.wikipedia.org/wiki/Sippie_Wallace",
+     "https://music.apple.com/us/album/276947151"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/51/b5/11/51b511f7-cc8a-07bb-cca7-d1c1bce9f806/mzaf_9157726667710847930.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "276947151",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ida Cox",
+   "album": "Blues for Rampart Street",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e525c85b-e324-49eb-bab0-35b3275f13ad。回問確認：title「Blues for Rampart Street」、artist-credit「Ida Cox; Coleman Hawkins Quintet」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／無國別 1），status 全部 Official。年份欄與 MB 的 1990 不同，理由見 risk。刻意不釘：ed918b33-01c6-435b-91cc-01ddf50498e6《Blues Ain't Nothin' Else But...》（1971 整編）、c3fb481c《I Can't Quit My Man》（1991）、a94a2d61／11b923d8／bb934480／742ebc40／71d2295b 五輯 Document《Complete Recorded Works in Chronological Order》。藝人 MBID 42710687-0eff-43d8-918b-9b907ed54946，名下 9 個 release-group（分頁列全）。",
+    "rgMbid": "e525c85b-e324-49eb-bab0-35b3275f13ad",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e525c85b-e324-49eb-bab0-35b3275f13ad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3832,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "伴奏名單上有 Coleman Hawkins、Roy Eldridge 與 Jo Jones。1959 年 John Hammond 與製作人 Chris Albertson 找到她，才促成這次 1961 年的錄音。1923 到 1929 年間她為 Paramount 錄過七十八面，該廠給她的稱號是 The Uncrowned Queen of Blues。1945 年她在水牛城演出途中中風，就此被迫退休；十軌合計約三十八分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/e525c85b-e324-49eb-bab0-35b3275f13ad",
+     "https://musicbrainz.org/release/77135f37-fd7d-4d6f-a6fa-1496fc231903",
+     "https://en.wikipedia.org/wiki/Ida_Cox",
+     "https://music.apple.com/us/album/1442454284"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/89/84/3a/89843a41-510c-5e34-1c12-1c4b983e85e7/mzaf_7178889200898131188.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442454284",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gus Cannon",
+   "album": "Walk Right In",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 477d6463-3164-324a-aac2-64ca00d3bcad。回問確認：title「Walk Right In」、artist-credit「Gus Cannon」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 3 個 release（US 3），status 全部 Official。刻意不釘：74b45924-03aa-4b4a-a2b4-fd224d0d9c32 與 e92f9b4e-5a47-4524-9d01-d310c8fa739b《The Complete Recorded Works in Chronological Order》Vol. 1／2（Document 戰前整編）、f4c648dc《Gus Cannon 1927 - Robert Wilkins 1927-35》（兩位藝人拼盤）；池中既有的 Cannon's Jug Stompers《The Complete Works: 1927-1930》掛在另一個藝人實體 a4e14b84 底下，亦不釘。藝人 MBID be495112-dba6-43fa-9b6d-01cf8decf85d，名下 5 個 release-group（分頁列全）。",
+    "rgMbid": "477d6463-3164-324a-aac2-64ca00d3bcad",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/477d6463-3164-324a-aac2-64ca00d3bcad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 356,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1929 年 Cannon's Jug Stompers 錄的那首歌，1963 年由 The Rooftop Singers 唱上 Billboard 冠軍。Cannon 以作者身分拿到版稅，因而有了自己的錄音合約。同場有 Will Shade 吹 jug、Milton Roby 打洗衣板，Cannon 本人彈五弦琴，當時 79 歲。發行的 Stax 由 Jim Stewart 與姊姊 Estelle Axton 創立；十三軌的開場〈Narration〉是他在說話。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/477d6463-3164-324a-aac2-64ca00d3bcad",
+     "https://musicbrainz.org/release/beda9865-a25b-4715-b15f-e04b708b9f8f",
+     "https://en.wikipedia.org/wiki/Gus_Cannon",
+     "https://en.wikipedia.org/wiki/Walk_Right_In",
+     "https://en.wikipedia.org/wiki/Stax_Records",
+     "https://music.apple.com/us/album/1775246168"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/22/ff/2e22ff85-1f08-6938-7adb-c10c5a50fcba/mzaf_18140800021204570288.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1775246168",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Barbecue Bob",
+   "album": "Chocolate to the Bone",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 23078490-9c9c-3a26-b797-8af707a36054。回問確認：title「Chocolate to the Bone」、artist-credit「Barbecue Bob」、first-release-date 1992、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 明文，primary-type=Album 而 secondary-types 含 Compilation 者照一般 Album 寫、不填例外欄位。刻意不釘：Document 的《Barbecue Bob, Vol. 1／2／3》系與 2015 年《Rough Guide to Barbecue Bob》——三者都是同一批 1927–1930 錄音的另一種整編，是最像的假陽性。藝人 MBID 46a5e33c-7a72-485f-b3eb-8f09fc54fe2f。",
+    "rgMbid": "23078490-9c9c-3a26-b797-8af707a36054",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/23078490-9c9c-3a26-b797-8af707a36054/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9865,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩個童年玩伴的吉他，都是 Curley Weaver 的母親教的。兩人後來一起參與 Georgia Cotton Pickers 的錄音。他本名 Robert Hicks，1924 年搬到亞特蘭大之後由六弦改彈十二弦。1927 到 1930 年間他為 Columbia 錄了六十八首，〈Barbecue Blues〉是他的第一首賣座曲，賣出一萬五千張。他 1931 年死於肺結核與流感引發的肺炎。Yazoo 這份 1992 年的整編，二十軌落在 2:53 到 3:33。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/23078490-9c9c-3a26-b797-8af707a36054",
+     "https://musicbrainz.org/release/67de4752-4221-479e-a9fb-c314149203d3",
+     "https://en.wikipedia.org/wiki/Barbecue_Bob",
+     "https://en.wikipedia.org/wiki/Yazoo_Records",
+     "https://music.apple.com/us/album/1568075685"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5d/55/dd/5d55dd55-b212-9a7c-05f2-92234bb240b2/mzaf_3608799764109556378.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1568075685",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Washboard Sam",
+   "album": "Rockin' My Blues Away",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 74adf364-fda4-34f0-92a9-562437c46525。回問確認：title「Rockin' My Blues Away」、artist-credit「Washboard Sam」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：Document 各輯《Washboard Sam Vol. 1–7》與 Acrobat 的《The Washboard Sam Collection 1935-53, Vol. 1／2》（Apple 838397635／836727481，皆標 cleaned）——同一批錄音的其他整編，是最像的假陽性。藝人 MBID 7c913d1c-cef0-4c02-89d2-ecbf6ab5fc21。",
+    "rgMbid": "74adf364-fda4-34f0-92a9-562437c46525",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/74adf364-fda4-34f0-92a9-562437c46525/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1477,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音室裡他唱歌，同時打的是一塊洗衣板。那多半是 Lester Melrose 主持的場次。他 1935 年起為 Bluebird 與 Vocalion 錄音，1930 年代末到 1940 年代錄了逾一百六十軌，1949 年最後一次進 RCA Victor。他據傳是 Big Bill Broonzy 的同父異母兄弟；這份 1992 年的整編收二十二軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/74adf364-fda4-34f0-92a9-562437c46525",
+     "https://musicbrainz.org/release/1e0be4b3-8f61-480f-873d-ae08b2b630b1",
+     "https://en.wikipedia.org/wiki/Washboard_Sam",
+     "https://en.wikipedia.org/wiki/Big_Bill_Broonzy"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lonnie Johnson",
+   "album": "Blues & Ballads",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ba700add-8cdd-3cec-bdb5-b4937f02f541。回問確認：title「Blues & Ballads」、artist-credit「Lonnie Johnson; Elmer Snowden」、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release（US 2／XW 1），status 全部 Official。刻意不釘：a257fe01-8320-4071-a542-a3a2abd3286b《Idle Hours》（1992，與 Victoria Spivey 合掛）、f3a45f67-a0f4-4a9f-8d96-5927b3887d1c《Woman Blues!》（本批列在 Victoria Spivey 名下）；池中既有的《Blues by Lonnie Johnson》亦不釘。藝人 MBID dbfd61ef-fce1-4803-9f18-7bfdd3996508，名下 70 個 release-group（分頁列全）。",
+    "rgMbid": "ba700add-8cdd-3cec-bdb5-b4937f02f541",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ba700add-8cdd-3cec-bdb5-b4937f02f541/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4345,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他的單音獨奏影響了 Django Reinhardt、Charlie Christian 與 T-Bone Walker。藍調史家 Gérard Herzhaft 說，用撥片一個音一個音彈出的獨奏是他所創，後來成了爵士、藍調、鄉村與搖滾的通則。1959 年 Chris Albertson 在費城 Benjamin Franklin Hotel 找到在那裡工作的他，1960 年這張把他與領班 Elmer Snowden 配在一起；十軌有七軌超過四分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ba700add-8cdd-3cec-bdb5-b4937f02f541",
+     "https://musicbrainz.org/release/b9c00127-254a-404e-87ae-9ed5cb1302de",
+     "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)",
+     "https://en.wikipedia.org/wiki/Bluesville_Records",
+     "https://music.apple.com/gb/album/1820855345"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/82/3f/c5823f9e-0aa7-7607-a5db-e581da9ab5c5/mzaf_4544631005972811488.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1820855345",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Little Walter",
+   "album": "Hate to See You Go",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 277b3437-5552-36ba-823f-112113463418。回問確認：title「Hate to See You Go」、artist-credit「Little Walter」、first-release-date 1969、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 3），status 全部 Official（第 43／57 條：這一次再發是 Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：a210407d-78a4-3801-a868-6059faa18537《Too Late / I Hate to See You Go》（1955-10 單曲，盤名最像的假陽性）、4f18d54f-f284-3094-9276-8be5b38e37d7 與 475d89ae-66ec-3ba1-b0a5-dafa32a7be53《Confessin' the Blues》（1974／1996，Chess 另一本選輯）。藝人 MBID 5545a012-0977-46ff-9d69-39bf5952616f，名下 66 個 release-group（分頁列全）。",
+    "rgMbid": "277b3437-5552-36ba-823f-112113463418",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/277b3437-5552-36ba-823f-112113463418/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 42983,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "口琴和麥克風一起攏在手裡，擴大機被刻意推過設計極限。同代人擴音是為了音量，他要的是效果。1952 年的〈Juke〉在 Billboard R&B 榜連八週居首。他 1948 年加入 Muddy Waters 的樂隊，1952 年離團後仍參與 Waters 多張 Chess 名盤的錄音，本人則為 Chess 與子廠 Checker 出片。這疊 1950 年代的單曲 1969 年以 Chess LP-1535 成輯時，他已在 1968 年 2 月過世。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/277b3437-5552-36ba-823f-112113463418",
+     "https://musicbrainz.org/release/b6189b36-2417-4509-b0e3-3081f1995833",
+     "https://en.wikipedia.org/wiki/Little_Walter",
+     "https://music.apple.com/us/album/1434278279"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/27/39/5e273961-4618-7c8f-0cdf-1e924fdc31a4/mzaf_2544126539163061323.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1434278279",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "J.B. Lenoir",
+   "album": "Alabama Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c51dc633-5a2e-391e-a5fd-dd883bba5124。回問確認：title「Alabama Blues」、artist-credit「J.B. Lenoir」、first-release-date 1966、primary-type Album、secondary-types 空、轄下 4 個 release（GB 1／DE 1／AU 1／無國別 1），status 全部 Official——四筆全在歐洲與澳洲、無美國盤，與這張當年在美國買不到的史實一致。刻意不釘：147547169 那類 Apple 側的《Passionate Blues》整編在 MB 對應的條目、以及 Lenoir 名下 36 個 release-group 裡的各家《Vietnam Blues》系整編。藝人 MBID 29b9edaa-058f-489a-b54a-73cc3627661c，名下 36 個 release-group（分頁列全）。",
+    "rgMbid": "c51dc633-5a2e-391e-a5fd-dd883bba5124",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c51dc633-5a2e-391e-a5fd-dd883bba5124/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 738,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "製作人是德國人 Horst Lippmann，錄音時只有一把木吉他和 Fred Below 的鼓。這批歌受民權運動與言論自由運動啟發，曲目裡有〈Alabama March〉與〈Vietnam〉。他寫過多首時事歌，〈Eisenhower Blues〉被 Parrot Records 逼著改錄成〈Tax Paying Blues〉；他也以高音域的歌聲與斑馬紋舞台裝著稱。1966 年的原盤十二軌，最短的〈I Want to Go〉1:40。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c51dc633-5a2e-391e-a5fd-dd883bba5124",
+     "https://musicbrainz.org/release/a9cd312a-0d02-463c-83a0-4f91bb3c236d",
+     "https://musicbrainz.org/release/db0a1063-4056-4c75-a83e-d8d6adeb0a37",
+     "https://en.wikipedia.org/wiki/J._B._Lenoir",
+     "https://music.apple.com/us/album/531342775"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/c4/cc/fcc4cca4-2ac3-1248-9731-b24a65024d99/mzaf_5220645262642980657.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "531342775",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jimmy Rogers",
+   "album": "Chicago Bound",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 39e1cf5a-1b22-33b1-8081-ea27fd04997c。回問確認：title「Chicago Bound」、artist-credit「Jimmy Rogers; Little Walter; Muddy Waters」、first-release-date 1970、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 2／JP 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：be277147-c92b-4410-a441-3c79c390c6a0《Chicago Bound》（1989，與 Big Moose Walker，同名別碟、最危險的假陽性）、c430c88e-01aa-4b92-920e-4c41c71914b4《Chicago Bound / Sloppy Drunk》（1954-06 單曲）、1449783210 對應的《Ludella》系整編。藝人 MBID 3362f019-06a5-4591-ab5d-1e331049f14a，名下 33 個 release-group（分頁列全）。",
+    "rgMbid": "39e1cf5a-1b22-33b1-8081-ea27fd04997c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/39e1cf5a-1b22-33b1-8081-ea27fd04997c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 55672,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1947 年他與 Muddy Waters、Little Walter 組成 Waters 在芝加哥的第一支樂隊。他待到 1954 年；1950 年代他為 Chess 錄了十三張單曲，〈That's All Right〉1950 年由該廠發行，後來成了藍調標準曲。1960 年代初他短暫待過 Howling Wolf 的樂隊，之後有近十年離開樂壇。這疊單曲 1970 年以 Chess LP-407 成輯，十四軌落在 2:33 到 3:53。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/39e1cf5a-1b22-33b1-8081-ea27fd04997c",
+     "https://musicbrainz.org/release/cadda0d2-935f-476c-849b-1f51d2a80809",
+     "https://en.wikipedia.org/wiki/Jimmy_Rogers",
+     "https://music.apple.com/us/album/1434917283"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/26/2b/e8262bbb-493d-b7bc-963e-36b41c33b178/mzaf_2269200446183735078.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1434917283",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elmore James",
+   "album": "Whose Muddy Shoes",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b19ec296-56c2-3422-9901-14e6140c0211。回問確認：title「Whose Muddy Shoes」、artist-credit「Elmore James; John Brim」、first-release-date 1968、primary-type Album、secondary-types [Compilation]、轄下 5 個 release（US 2／JP 2／GB 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9e2bc58f-067b-3ef4-a6d0-7cab46741775《The Sky Is Crying: The History of Elmore James》（1993 Rhino，盤名包住池中既有卡，最危險的假陽性）；池中既有的《The Sky Is Crying》（1965）亦不釘。藝人 MBID 6fbd2cfb-5f9c-497c-8e06-3c6668367681，名下 114 個 release-group（第 116 條：分頁列全）。",
+    "rgMbid": "b19ec296-56c2-3422-9901-14e6140c0211",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b19ec296-56c2-3422-9901-14e6140c0211/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 122,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Ice Cream Man〉錄於 1953 年 5 月，唱的是同掛這張碟的 John Brim。那一軌擱了很久才問世，後來被 Van Halen 收進首張專輯。Elmore James 被稱作 King of the Slide Guitar；1951 年發行的〈Dust My Broom〉原是 Robert Johnson 的曲，1952 年意外成了 R&B 賣座曲。這張分軌合輯 1960 年代末由 Chess 問世，十四軌落在 2:12 到 3:13。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b19ec296-56c2-3422-9901-14e6140c0211",
+     "https://musicbrainz.org/release/7bab400d-6b4d-4ae9-8c2b-0b6530bc0f08",
+     "https://musicbrainz.org/release/74f45704-ec2d-410a-a631-26a8925b2339",
+     "https://en.wikipedia.org/wiki/Elmore_James",
+     "https://en.wikipedia.org/wiki/John_Brim",
+     "https://music.apple.com/us/album/1587981186"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8b/da/9c/8bda9cec-c5be-3987-6c11-b5bf0f39dcf7/mzaf_12157539373623647805.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1587981186",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Earl Hooker",
+   "album": "Sweet Black Angel",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 375109f6-595d-45c2-84c0-3e924abbb67a。回問確認：title「Sweet Black Angel」、artist-credit「Earl Hooker」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：b4aaf2e9-88a6-44f8-8bd3-71fa029f4205《Two Bugs and a Roach》（1969-05，池中已有）、a1692a55-e991-4547-969f-bbdf3bf6d5d8《The Genius of Earl Hooker》（1967）、c10027ca-4dc5-3fe4-a446-29ee3180da6d《If You Miss 'Im… I Got 'Im》（1969，與 Junior Wells）、58228af0《Funk (Last Of The Great Earl Hooker)》（1972 身後整編）。藝人 MBID ef11dd9b-4557-4fc5-b0e2-a431c5cfddbb，名下 32 個 release-group（分頁列全）。",
+    "rgMbid": "375109f6-595d-45c2-84c0-3e924abbb67a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/375109f6-595d-45c2-84c0-3e924abbb67a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 513,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "B. B. King 說，論滑管他就是最好的那一個。同行視他為 musician's musician。他用標準調弦加一截短鋼滑管，1968 年開始踩 wah-wah，讓獨奏帶點人聲的味道。本輯 1969 年 5 月在洛杉磯為 Blue Thumb 錄製，製作人兼鋼琴是 Ike Turner，兩人 1952 年就一起跑過巡演。John Lee Hooker 是他父系的堂表兄弟；十一軌的曲名裡有〈Shuffle〉與〈The Mood〉這類器樂型標題。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/375109f6-595d-45c2-84c0-3e924abbb67a",
+     "https://musicbrainz.org/release/e66cbe4a-0ce7-4878-a6fe-abd265bfdb42",
+     "https://musicbrainz.org/release/15bc5a6a-f48a-4259-98be-4a97204739d8",
+     "https://en.wikipedia.org/wiki/Earl_Hooker"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Magic Sam",
+   "album": "Give Me Time",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e3527884-3d44-38d2-8086-8d43ce19e833。回問確認：title「Give Me Time」、artist-credit「Magic Sam」、first-release-date 1991、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：cbc85c50-1576-4a54-8c82-89886e450d22 與 3bdd9722-488c-40f5-b6e1-1fd4baf180a7《West Side Soul》（1992 重版與西語系列版，池中已有原盤）、0b72ceb5-ef70-4b13-9e04-019f88f40ab5《... With a Feeling! The Complete Cobra, Chief and Crash Recordings 1957-1966》（2001）、b9e87566-f248-32b4-9544-22b266332274《Live》（1981，Live）、4f5a46a6《Live at the Avant Garde》（2013，Live）。藝人 MBID d1834301-1ca3-4576-a0af-a81479d5c6b6，名下 31 個 release-group（分頁列全）。",
+    "rgMbid": "e3527884-3d44-38d2-8086-8d43ce19e833",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e3527884-3d44-38d2-8086-8d43ce19e833/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2866,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原始素材是 1968 年的獨奏 demo 與家中排練帶。製作人 Willie Dixon 說他用和弦帶出來的和聲是另一回事。1957 年 Cobra 的〈All Your Love〉沒進榜，卻影響了一整批芝加哥吉他手，成為 West Side Sound 的一環。1969 年 Ann Arbor Blues Festival 的演出替他帶來大量邀約，同年 12 月 1 日他因心臟病過世；這批帶子 1991 年才成輯，十二軌從 1:50 到 4:37。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/e3527884-3d44-38d2-8086-8d43ce19e833",
+     "https://musicbrainz.org/release/775fc2ce-dbbb-48b2-8005-ab60c7ace3ac",
+     "https://en.wikipedia.org/wiki/Magic_Sam",
+     "https://music.apple.com/us/album/96614076"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a5/be/24/a5be248a-fe16-5bac-4b12-958fb277203b/mzaf_11791707630386505342.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "96614076",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Willie Dixon",
+   "album": "Catalyst",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e3525086-4e58-407f-b537-9f03c01aa453。回問確認：title「Catalyst」、artist-credit「Willie Dixon」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：1cba35e6-f846-39ff-bdd0-cd22be44d0f0《What Happened to My Blues》（1976 Ovation，同廠牌的下一張、最像的假陽性）。藝人 MBID ff4c8d42-4871-4778-885b-d41b01245133，名下 47 個 release-group（分頁列全）。",
+    "rgMbid": "e3525086-4e58-407f-b537-9f03c01aa453",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e3525086-4e58-407f-b537-9f03c01aa453/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1442,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "進音樂圈之前他打過拳，1937 年拿下伊利諾州 Golden Gloves 重量級新人組冠軍。他還短暫當過 Joe Louis 的陪練。他寫或合寫超過五百首歌，〈Hoochie Coochie Man〉也是他的；1951 年起他是 Chess 的專職員工，身兼製作人、星探與駐廠詞曲作者。〈My Babe〉與〈Wang Dang Doodle〉本是他寫給該廠樂手唱紅的歌，這回換他自己唱。1973 年由 Ovation 發行，維基註明另有四聲道壓片。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/e3525086-4e58-407f-b537-9f03c01aa453",
+     "https://musicbrainz.org/release/6f8c2a64-f0b9-483c-8656-d236e3124a07",
+     "https://en.wikipedia.org/wiki/Willie_Dixon",
+     "https://music.apple.com/us/album/1610473392"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/db/e4/ee/dbe4eeb2-8ea2-6289-8c6e-8334c9242ced/mzaf_17483368001747607694.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1610473392",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Roscoe Mitchell",
+   "album": "Old / Quartet",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 07af4d38-7cc3-3cfd-816d-1b02c96ddc94。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Old / Quartet」、artist-credit「Roscoe Mitchell」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／JP 1），status 全部 Official。刻意不釘：5879e3f5-9f7f-4af5-8fc4-051196021e3f《Nonaah》（1977，已在 c-86）、1b924676-ff9c-4cf7-bbcf-786ac401173f《L-R-G / The Maze / S II Examples》（1978 Nessa，同廠牌同型的下一張）、e20658e5-3854-4750-8a19-4dccdcd41df2《Sound Songs》（1997）與 19eca32f-3a32-4be5-8eb2-023454c2eed7《Before There Was Sound》（2011）——兩筆都是搜 1966 年 Delmark《Sound》時的假陽性，該張在 MB 掛在 Roscoe Mitchell Sextet 名下、本人實體查無、67435452-6dd1-31e3-98c3-239e231136a1《The Roscoe Mitchell Solo Saxophone Concerts》（1974，Live）、344355a1-17ed-3a3a-8091-30154f3cad98《Composition/Improvisation Nos. 1, 2 & 3》（池中已有）。藝人 MBID 56f33083-6014-4f4e-9c43-b9652cde55be，用 release-group?artist=<MBID>&limit=100&offset= 分頁列出名下 57 個 release-group（第 116 條）。",
+    "rgMbid": "07af4d38-7cc3-3cfd-816d-1b02c96ddc94",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/07af4d38-7cc3-3cfd-816d-1b02c96ddc94/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 36,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "最後一軌只剩一個人在吹，標題就叫〈Solo〉。Personnel 欄記 Lester Bowie、Malachi Favors Maghostut 與 Phillip Wilson 三人都註明該軌除外；Mitchell 自己吹中音與高音薩克斯風、單簧管、長笛與打擊樂。這是他的 Art Ensemble，後來成為 Art Ensemble of Chicago 的那組人。四軌裡〈Quartet〉被切成兩段。1967 年錄下，1975 年由 Nessa 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/07af4d38-7cc3-3cfd-816d-1b02c96ddc94",
+     "https://musicbrainz.org/release/f6cdb913-ecbf-4ffc-860d-536f8bc7a735",
+     "https://musicbrainz.org/release/586f185f-a248-4eea-aca7-785086a8a54d",
+     "https://en.wikipedia.org/wiki/Old/Quartet",
+     "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+     "https://itunes.apple.com/lookup?id=29756753&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Albert Ayler",
+   "album": "My Name Is Albert Ayler",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a119e23e-6007-3c8a-82f6-1654a0cacecd。回問確認：title「My Name Is Albert Ayler」、artist-credit「Albert Ayler」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 3 個 release（GB 2／DK 1），status 全部 Official。刻意不釘：1afa0379-1208-338e-a826-4733b0a95954《The First Recordings》與 d8feb6c1-339a-3eee-828f-239b6d4f954d《The First Recordings, Volume 2》（1962 斯德哥爾摩，盤名最像「首張」的假陽性）、032569e0-8e07-335f-8591-c09f45c1f6bc《Witches & Devils》（1964，同年另一張）、c7d0fe8d-b7ae-34fe-b308-04bd16db5d21《New York Eye and Ear Control》（1966，secondary-type Soundtrack）。藝人 MBID b2dcc67a-45f9-4b9f-8221-3da4e0d32491，名下 50 個 release-group（分頁列全）；另有樂團實體 Albert Ayler Trio e11e7ec1 與 Albert Ayler Quintet 4fdf4de6。",
+    "rgMbid": "a119e23e-6007-3c8a-82f6-1654a0cacecd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a119e23e-6007-3c8a-82f6-1654a0cacecd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 15300,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原本要找 Cecil Taylor 的樂團錄，檔期排不開，改找哥本哈根的三個人。伴奏是鋼琴手 Niels Brosted、貝斯手 Niels-Henning Ørsted Pedersen 與鼓手 Ronnie Gardiner。六軌以他的一段口白開頭；〈C.T.〉是全碟唯一他自己的曲子，題獻給幾個月前才同台的 Cecil Taylor。〈Bye Bye Blackbird〉是他少數的高音薩克斯風錄音之一。1963 年錄下，1964 年由 Debut 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a119e23e-6007-3c8a-82f6-1654a0cacecd",
+     "https://musicbrainz.org/release/6bbc7194-3729-490e-9b5b-635160252cb5",
+     "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler",
+     "https://music.apple.com/us/album/152606352",
+     "https://music.apple.com/gb/album/652749380"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/8b/42/608b4298-e6f6-181f-334c-56a621be699a/mzaf_18218278295566300111.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "652749380",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Albert Ayler",
+   "album": "Spirits Rejoice",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 08842066-6bb8-3146-bf1c-fea470990daf。回問確認：title「Spirits Rejoice」、artist-credit「Albert Ayler」、first-release-date 1965、primary-type Album、secondary-types 空、轄下 5 個 release（US 2／DE 1／IT 1／XW 1），status 全部 Official。刻意不釘：e032346e-f692-340c-a869-1694de6988fb《Bells》（1965，池中已有、Live）、8bb75fae-baec-38f9-bd7a-9e3715a2382c《Bells / Prophecy》（1997 合併版）、4cb33795-2768-376b-a464-8d00558174aa《In Greenwich Village》（1967，池中已有）。藝人 MBID b2dcc67a-45f9-4b9f-8221-3da4e0d32491。",
+    "rgMbid": "08842066-6bb8-3146-bf1c-fea470990daf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/08842066-6bb8-3146-bf1c-fea470990daf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 16818,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "ESP 創辦人 Bernard Stollman 當場要他錄一首短曲，事後說自己後悔。他自述那違背了「由藝人單獨決定作品內容」的承諾。錄音在專為此租下的 Judson Hall 進行，台下沒有觀眾。同場七人：Donald Ayler 小號、Charles Tyler 中音薩克斯風、Call Cobbs 大鍵琴、Henry Grimes 與 Gary Peacock 貝斯、Sunny Murray 鼓。1965 年由 ESP-Disk 出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/08842066-6bb8-3146-bf1c-fea470990daf",
+     "https://musicbrainz.org/release/06bb1c0a-5bf1-49ed-8b15-8e35e72f9dc9",
+     "https://en.wikipedia.org/wiki/Spirits_Rejoice",
+     "https://music.apple.com/us/album/1233967311"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/17/35/2e/17352e7f-c252-e2d9-5406-997394e18d51/mzaf_1550976804053139522.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1233967311",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Benny Carter",
+   "album": "Jazz Giant",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0b0bcd45-ef72-3d17-bb82-885bbaff231e。回問確認：title「Jazz Giant」、artist-credit「Benny Carter」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 7 個 release（US 4／JP 1／XE 1／XW 1），status 全部 Official。刻意不釘：f43f8d8d-9d9d-4242-b938-2527a79d606d《Further Definitions + Jazz Giant》（2012 兩張合併重發，盤名包住本張、最危險的假陽性）、efbcd221-3015-34e3-b3c0-ac84a2084038《Additions to Further Definitions》（1966）、657e4d3c-4c92-4b21-b29a-351044bc4340《Jazz Giant: Complete Sessions》（無日期）、cfa6e886《Benny Carter And The Jazz Giants》（1998 整編）。藝人 MBID 25cf5731-bed9-4604-97a4-8b9655de1a30，名下 107 個 release-group（第 116 條：分頁列全）。",
+    "rgMbid": "0b0bcd45-ef72-3d17-bb82-885bbaff231e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1958,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0b0bcd45-ef72-3d17-bb82-885bbaff231e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19322,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鋼琴椅在七軌裡換過人：兩軌是 Jimmy Rowles，其餘是 André Previn。Carter 吹中音薩克斯風，也吹小號，編曲同樣是他。Frank Rosolino 的長號與 Ben Webster 的次中音薩克斯風只在部分軌上。〈Old Fashioned Love〉是 James P. Johnson 的曲子，〈A Walkin' Thing〉是 Carter 自己寫的。錄音跨 1957、1958 兩年，1958 年由 Contemporary 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/0b0bcd45-ef72-3d17-bb82-885bbaff231e",
+     "https://musicbrainz.org/release/c43c5bf5-6c4c-490d-aad1-b0daaac6f1ff",
+     "https://en.wikipedia.org/wiki/Jazz_Giant_(Benny_Carter_album)",
+     "https://en.wikipedia.org/wiki/Benny_Carter",
+     "https://music.apple.com/us/album/1657783137"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/09/b0/7c/09b07cdf-801f-6bc8-555b-2a3638b3faf7/mzaf_5052798065706009381.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1657783137",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bix Beiderbecke",
+   "album": "Singin' the Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 06f62d64-fa5c-313e-9a1a-d62eeba39460。回問確認：title「Volume 1: Singin' the Blues」、artist-credit「Bix Beiderbecke」、first-release-date 1990、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 1／NL 1／無國別 1），status 全部 Official。依 §5.6 明文，primary-type=Album 而 secondary-types 含 Compilation 者照一般 Album 寫、不填例外欄位。刻意不釘：f2927c6a-9803-4306-939f-03cef1d730a4《Singin' the Blues》（1995，MB 的同套重複條目、與本卡盤名字面相同，最危險的假陽性）、40856d21-48a8-45dc-977f-67a35d39d571《Bix & Tram》（2002）、2330f386-516f-4113-adf9-73bc38189a8c《The Bix Beiderbecke Story, Volume 2: Bix and Tram》（1952）、34449317-3ffb-4b74-9964-6c0537be78fb《The Bix Beiderbecke Story, Volume 1: Bix and His Gang》（1956）。藝人 MBID 32286190-da0f-4a85-b3d6-09a84d7e2bbc，名下 98 個 release-group（分頁列全）。",
+    "rgMbid": "06f62d64-fa5c-313e-9a1a-d62eeba39460",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/06f62d64-fa5c-313e-9a1a-d62eeba39460/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 572,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他出版過五首鋼琴作品，自己錄下的只有〈In a Mist〉。那五首都由 Robbins Music 出版。他 1903 年生、1931 年過世，是 1920 年代最有影響力的爵士獨奏者之一，〈Singin' the Blues〉與〈I'm Coming, Virginia〉上的獨奏預告了 jazz ballad 的風格。碟名那一軌錄於 1927 年 2 月 4 日；Columbia 1990 年整編的這一輯收二十軌，曲長全落在 2:47 到 3:19 之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/06f62d64-fa5c-313e-9a1a-d62eeba39460",
+     "https://musicbrainz.org/release/651b78d8-f763-403b-9719-09bdff37e179",
+     "https://en.wikipedia.org/wiki/Bix_Beiderbecke",
+     "https://music.apple.com/us/album/193147812"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/dc/66/fcdc6601-e981-94f9-bc09-235946999a80/mzaf_5462036397105036635.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "193147812",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mary Lou Williams",
+   "album": "Zodiac Suite",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bf0ae0c9-7d4e-42ed-a782-da48f565daa4。回問確認：title「Zodiac Suite」、artist-credit「Mary Lou Williams」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：aede66c0-cd3c-4115-a304-78e01d0bfbfb《Zodiac Suite》（2023，artist-credit「Mary Lou Williams; Umlaut Chamber Orchestra」，同名別碟、最危險的假陽性）、e97b7c4c-52e7-4a62-b280-68029c92bc11《The Asch Recordings 1944-47》（1977，含同一批母帶的整編）、1bce2ad1-f883-39a2-93d0-0d75867be578《Mary Lou Williams》（1964 Folkways 自我同名，即《Black Christ of the Andes》）。藝人 MBID 4a0c1055-ec66-47a0-a668-c60f48477ed2，名下 49 個 release-group（分頁列全）。",
+    "rgMbid": "bf0ae0c9-7d4e-42ed-a782-da48f565daa4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bf0ae0c9-7d4e-42ed-a782-da48f565daa4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12683,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二段各寫一個星座，題獻名單上有 Duke Ellington 與 Art Tatum。〈Taurus〉給 Ellington，〈Libra〉給 Tatum、Dizzy Gillespie 與 Charlie Parker。原本寫給小編制：六首三重奏、五首獨奏鋼琴、一首鋼琴與貝斯二重奏；〈Aries〉在頭一分半內就從 boogie-woogie 走到不協和。她 1942 年動筆、1945 年完成並首演，這一版 1975 年由 Folkways 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bf0ae0c9-7d4e-42ed-a782-da48f565daa4",
+     "https://musicbrainz.org/release/52fbfb02-843a-4aa2-b23d-42ceb9d7f1c4",
+     "https://en.wikipedia.org/wiki/Zodiac_Suite",
+     "https://music.apple.com/us/album/261233781"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/39/8e/67/398e672f-cb7c-ade2-3256-6e345c946aed/mzaf_15136637310768837348.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "261233781",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mary Lou Williams",
+   "album": "Zoning",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ac5f2664-c1f3-31ea-96bc-52566f650a3b。回問確認：title「Zoning」、artist-credit「Mary Lou Williams」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：caba770e-13ac-48b2-9eff-0e4b0621505d《Giants》（1971）、5cd70778-a58b-45b8-a898-84352908c0c0《Mary Lou's Mass》（2005 整編）、26e09254-a4f6-3b4b-9088-d75256870328《My Mama Pinned a Rose on Me》（2005）；池中既有的《Free Spirits》(1976) 亦不釘。藝人 MBID 4a0c1055-ec66-47a0-a668-c60f48477ed2。",
+    "rgMbid": "ac5f2664-c1f3-31ea-96bc-52566f650a3b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ac5f2664-c1f3-31ea-96bc-52566f650a3b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3515,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "《Ebony》的 Phyl Garland 點名〈Zoning Fungus II〉：先是無調性和聲，才落回 funky 基底。這張由她自己編曲，以二重奏與三重奏為主，搭檔多是貝斯手 Bob Cranshaw 與鼓手 Mickey Roker，康加鼓只出現在部分軌。AllMusic 的 Scott Yanow 說她「聽起來年輕了四十歲，顯出 McCoy Tyner 的影響」。1974 年由 Mary Records 發行，1995 年的 CD 版收十三軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ac5f2664-c1f3-31ea-96bc-52566f650a3b",
+     "https://musicbrainz.org/release/f8bdce21-8eee-4ab6-8552-7ad5ebe1659a",
+     "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)",
+     "https://en.wikipedia.org/wiki/Mary_Lou_Williams",
+     "https://music.apple.com/us/album/261235738"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/5f/51/195f51a8-85ed-a21a-e9bc-23c846f7987e/mzaf_3423057147093097897.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "261235738",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Helen Merrill",
+   "album": "Helen Merrill",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3ec00147-068d-3ae2-82cf-444f43c60c92。回問確認：title「Helen Merrill」、artist-credit「Helen Merrill」、first-release-date 1955、primary-type Album、secondary-types 空、轄下 5 個 release（JP 3／US 2），status 全部 Official。刻意不釘：ccb57f7f-7051-40fd-a357-e096d2ad49fa《Helen Merrill》（1996 同名整編、最危險的假陽性）、8340f1da-a628-30e1-9c56-9f08f5f47eb7《Helen Merrill With Strings》（1955 同年別碟）、84434923-847f-3870-9638-4f89607f34a7《Complete Helen Merrill on Mercury》（1994 全集）、1fd1ce9f《Best Of Helen Merrill》（1996）。藝人 MBID bce6f3f4-8db1-4fbb-9dbe-8a1224b57dfb。",
+    "selfTitledVerified": true,
+    "rgMbid": "3ec00147-068d-3ae2-82cf-444f43c60c92",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1955,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ec00147-068d-3ae2-82cf-444f43c60c92/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 47894,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "小號手 Clifford Brown 幾天前才替 Sarah Vaughan 錄過一張性質相近的碟。維基直述這是她的首張錄音室專輯，由 Brown 伴奏、Quincy Jones 編曲指揮。節奏組在碟中換過人：Milt Hinton 與 Osie Johnson 一組，Oscar Pettiford 與 Bobby Donaldson 一組。1954 年 12 月錄，1955 年由 EmArcy 發行；Brown 1956 年死於車禍。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3ec00147-068d-3ae2-82cf-444f43c60c92",
+     "https://musicbrainz.org/release/fb68391f-16e0-4d76-94cd-d63fb6e83a0e",
+     "https://en.wikipedia.org/wiki/Helen_Merrill_(album)",
+     "https://music.apple.com/us/album/1434912013"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/da/ee/34daeeca-1277-596a-45da-62e9301a7b9e/mzaf_6890361730013184830.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1434912013",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jimmy Rushing",
+   "album": "The Jazz Odyssey of James Rushing Esq.",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1b3c217e-7d80-476b-8366-33279367abc6。回問確認：title「The Jazz Odyssey Of James Rushing Esq.」、artist-credit「Jimmy Rushing」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：6faa3dd4-c3dc-4ec0-8707-55c0172ead57《Cat Meets Chick & The Jazz Odyssey of James Rushing Esq.》（2002 兩張合併，盤名包住本張、最危險的假陽性）。藝人 MBID 88c5de60-fa1a-4179-8100-ecd74c4edb73。",
+    "rgMbid": "1b3c217e-7d80-476b-8366-33279367abc6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1957,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1b3c217e-7d80-476b-8366-33279367abc6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 33,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Count Basie 樂團的主唱位子，他坐了十三年。他 1929 年進 Bennie Moten 樂團，Moten 1935 年去世後轉入 Basie。Basie 說他身為藍調歌手沒有過對手，他自己則把自己當成唱抒情曲的人。本張與 Buck Clayton 合作，十二軌一半藍調、一半百老匯與流行標準曲。《紐約客》的 Whitney Balliett 說他讓粗野的藍調歌詞聽起來像 Noël Coward 的歌。1956 年錄，1957 年 Columbia 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1b3c217e-7d80-476b-8366-33279367abc6",
+     "https://musicbrainz.org/release/1599506f-a475-408c-9902-f26209ef224a",
+     "https://en.wikipedia.org/wiki/Jimmy_Rushing",
+     "https://music.apple.com/gb/album/306321094"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/67/9d/7d/679d7d68-9c3c-4ecd-ab88-9791e1408bbb/mzaf_2171828145536327062.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "306321094",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Roy Eldridge & Dizzy Gillespie",
+   "album": "Roy & Diz",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8a5a5fcf-9b1f-4c1a-a5d1-56bddae9b242。回問確認：title「Roy & Diz」、artist-credit「Dizzy Gillespie; Roy Eldridge」、first-release-date 1955、primary-type Album、secondary-types 空、轄下 4 個 release（US 1／GB 1／FR 1／XE 1），status 全部 Official。刻意不釘：bbe2dd32-a62a-49e3-bb31-5f2df95d960d《Little Jazz》（1954 Clef，CAA release-group 端點實測 404、Apple 對應的三筆都是 Columbia／Verve 整編而非該 LP，本批改釘《Roy & Diz》）、4f07f364-7809-4542-871a-5ba92d237ded《The Art Tatum - Roy Eldridge - Alvin Stoller - John Simmons Quartet》（1955，四人合掛）、792ee7d5《The Trumpet Kings》（1956）、8fa1aa89《Drummer Man》（1956，Gene Krupa 領銜）。藝人 MBID：Roy Eldridge 58234c8b-954e-4617-9c7e-4a8712f41a23（名下 96 個 release-group，分頁列全）、Dizzy Gillespie 為合掛第二位。",
+    "rgMbid": "8a5a5fcf-9b1f-4c1a-a5d1-56bddae9b242",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1955,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8a5a5fcf-9b1f-4c1a-a5d1-56bddae9b242/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 193,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩支小號輪流上，每一首都在五分半以上。Clef 原盤五軌，最長的〈I Can't Get Started〉10:59。兩人都是小號兼人聲，節奏組是 Oscar Peterson、Herb Ellis、Ray Brown 與 Louis Bellson。〈Algo Bueno〉是 Gillespie 寫的，〈Pretty Eyed Baby〉的作者之一是 Mary Lou Williams。1954 年錄，1955 年由 Clef 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8a5a5fcf-9b1f-4c1a-a5d1-56bddae9b242",
+     "https://musicbrainz.org/release/9cbeb151-8c8e-4d6c-a4cd-2213a5e50c9e",
+     "https://en.wikipedia.org/wiki/Roy_and_Diz",
+     "https://music.apple.com/us/album/1443173406"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/2c/b5/162cb546-959c-b5b1-993b-47a80cfbc6f5/mzaf_18007592415858080517.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443173406",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bunk Johnson",
+   "album": "Bunk Johnson and His Superior Jazz Band",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 722df9b1-2ae3-41bb-86da-58687306bb44。回問確認：title「Bunk Johnson and His Superior Jazz Band」、artist-credit「Bunk Johnson」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：810956026 對應的《Jazz Nocturne 3 (Bunk & Bechet in Boston)》系（與 Sidney Bechet 合掛，本批另收 Bechet 一張、兩者不同碟）。藝人 MBID f8dd63f2-5325-456f-abff-d8b837e9bc74。",
+    "rgMbid": "722df9b1-2ae3-41bb-86da-58687306bb44",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/722df9b1-2ae3-41bb-86da-58687306bb44/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2127,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "替他裝上假牙的，是 Sidney Bechet 當牙醫的哥哥。1931 年他在路易斯安那州 Rayne 的舞會上因為打架掉了小號與門牙。1938 與 1939 年，《Jazzmen》的作者群訪問 Louis Armstrong 等人，那些人都盛讚他當年在紐奧良的表現，於是發起募款並送他一支新小號。這批錄音把他與單簧管手 George Lewis 推進了公眾視野。這批 1942 年在紐奧良錄下，十軌裡有九軌落在 2:46 到 3:26 之間，末軌是 9:27 的說話。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/722df9b1-2ae3-41bb-86da-58687306bb44",
+     "https://musicbrainz.org/release/58d85a5d-16eb-4210-9e7b-066616e9b4a2",
+     "https://en.wikipedia.org/wiki/Bunk_Johnson",
+     "https://music.apple.com/us/album/1532292817"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/aa/4a/c5/aa4ac53c-e55c-0cfe-1ab5-d4210c7d814a/mzaf_2555359432012876181.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1532292817",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kid Ory",
+   "album": "Kid Ory Plays W.C. Handy",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group beefa6aa-5986-4388-aa4a-6d39ab058ac1。回問確認：title「Kid Ory Plays W.C Handy」、artist-credit「Kid Ory」、first-release-date 1959、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US 2），status 全部 Official。依 §5.6 明文，primary-type=Album 而 secondary-types 含 Compilation 者照一般 Album 寫、不填例外欄位。刻意不釘：7b17ce0b-3a8b-4e0d-b4e1-58bdeda1c88d《The Complete Kid Ory Verve Sessions》（1999，含本張全部內容、最危險的假陽性）、24d17539-1ef3-4d8a-a4fa-7b8a1903155f《Red Allen Meets Kid Ory》（1957，合掛）、1db6ec5f《Ory's Creole Trombone: Greatest Recordings, 1922-1944》（2006）、44a6474a《Kid Ory Plays the Blues - Live Broadcasts…》（1997，Live，盤名開頭與本張相同）。藝人 MBID d2cf1ea2-0dce-45ab-8fb4-5c4c81713b54，名下 22 個 release-group（分頁列全）。",
+    "rgMbid": "beefa6aa-5986-4388-aa4a-6d39ab058ac1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/beefa6aa-5986-4388-aa4a-6d39ab058ac1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七首曲子全出自 W.C. Handy——最早把藍調付印出版的人之一。Handy 1912 年出版〈The Memphis Blues〉樂譜，引介了他的十二小節藍調寫法，1958 年 3 月 28 日過世。Ory 是滑音技法最早的使用者之一，把它確立為紐奧良爵士的核心元素；七軌的曲長從 3:57 到 6:19。這一輯 1959 年由 Verve 發行。他從 1944 年 3 月 15 日起在《The Orson Welles Almanac》有每週固定時段。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/beefa6aa-5986-4388-aa4a-6d39ab058ac1",
+     "https://musicbrainz.org/release/dc33c95a-0ae9-499c-9d64-8942e2cf008a",
+     "https://en.wikipedia.org/wiki/Kid_Ory",
+     "https://en.wikipedia.org/wiki/W._C._Handy",
+     "https://itunes.apple.com/lookup?id=2736339&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "James P. Johnson",
+   "album": "Carolina Shout",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 573ca4f6-67c7-380a-b5d5-227e110c362b。回問確認：title「Carolina Shout」、artist-credit「James P. Johnson」、first-release-date 1988、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：75322682-e0bf-47bc-aa2c-79d389adc831《Carolina Shout》（2000，同名別條目、最危險的假陽性）、279822f7-6339-3a14-a78d-4b01bbed12f2《Snowy Morning Blues》（1991，池中已有）、cf4d9bbd-8a6f-43d6-a179-e150cf579ca4《King of Stride Piano》（1997）、b924094b-2054-4e9e-91bc-9f02476c0fee《Father Of The Stride Piano》（無 first-release-date）。藝人 MBID 2a58b026-9659-4bfb-90c9-56c4ad9125f1，名下 43 個 release-group（分頁列全）；另有樂團實體 James P. Johnson & His Orchestra 405dfdfa。",
+    "rgMbid": "573ca4f6-67c7-380a-b5d5-227e110c362b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/59/75/c3/mzi.ccacuksb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "203053431",
+    "note": "試聽探測釘定的 collectionId 203053431（us）：James P. Johnson — Carolina Shout"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 979,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Duke Ellington 是照著一捲鋼琴紙卷，一個音一個音學會〈Carolina Shout〉的。那是 1921 年的 QRS 紙卷。他 1917 到 1927 年間為 Aeolian、Artempo、QRS 等公司錄紙卷，是 stride piano 的開路者，也教過 Fats Waller。〈The Charleston〉1923 年在他的百老匯秀《Runnin' Wild》裡首度亮相。Biograph 整理的這一輯十四軌全是獨奏鋼琴，1988 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/573ca4f6-67c7-380a-b5d5-227e110c362b",
+     "https://musicbrainz.org/release/aa88a4f0-8de6-4fa0-80ff-1a127be8f021",
+     "https://en.wikipedia.org/wiki/James_P._Johnson",
+     "https://en.wikipedia.org/wiki/Biograph_Records",
+     "https://music.apple.com/us/album/203053431"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/fe/f8/95fef813-c0ff-613e-688f-cb7d41f2a74d/mzaf_8479761461529517933.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "203053431",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Art Tatum",
+   "album": "God Is in the House",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 79bca8f7-b190-3dba-9584-a64e7ff548ca。回問確認：title「God Is in the House: Original 1940-41 Recordings」、artist-credit「Art Tatum」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／DE 1），status 全部 Official。刻意不釘：a8381e5b-e0b7-490a-a530-774e363b72e8《The Genius of Art Tatum》（1954 Clef，Apple 無對應條目、只有 1967 年的《The Genius》694288369，本批改釘《God Is in the House》）、1e493068-b80b-30c5-85f2-38009dd6a6c0《Piano Starts Here》（1968，池中已有）、3a49c163-36e2-4958-9250-acc1b32bd41c《Piano Starts Here: Live at The Shrine (Zenph Re-Performance)》（2008，機械重演版）、cded5179 與 5180c760《The Complete Pablo Solo／Group Masterpieces》。藝人 MBID e073f6af-d696-4340-b847-e81fabc4d55b，名下 180 個 release-group（第 116 條：分頁列全，browse 預設 25 筆只會看到零頭）。",
+    "rgMbid": "79bca8f7-b190-3dba-9584-a64e7ff548ca",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/79bca8f7-b190-3dba-9584-a64e7ff548ca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1107,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Fats Waller 看見他走進俱樂部，向台下說今晚上帝在場。那句話的原文是「各位女士先生，我彈鋼琴，但今晚上帝在場」。Jerry Newman 當時是紐約的學生與爵士迷，用一台唱片刻錄機與醋酸鹽盤在哈林的俱樂部裡側錄下這些演奏：其中一次由 Reuben Harris 用掃帚敲手提箱伴奏，另有與貝斯手 Chocolate Williams 的二重奏，以及 Tatum 自己開口唱的兩首。這批 1940 與 1941 年錄下，1973 年由 Onyx 首度發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/79bca8f7-b190-3dba-9584-a64e7ff548ca",
+     "https://musicbrainz.org/release/49978c75-3591-4d2c-8870-668175b2f58c",
+     "https://musicbrainz.org/release/07bd7d83-031b-47d9-8997-a1d07e664b07",
+     "https://en.wikipedia.org/wiki/God_Is_in_the_House_(Art_Tatum_album)",
+     "https://music.apple.com/us/album/1438004708"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/b0/4e/31/b04e315b-bd38-9195-3025-397e62bc9f5b/mzaf_822208135989913457.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1438004708",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jelly Roll Morton",
+   "album": "The Pearls",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b34cfd15-c52f-3a01-b5f7-2ecc636f674a。回問確認：title「The Pearls」、artist-credit「Jelly Roll Morton」、first-release-date 1988、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：633692e4-a99c-4fbb-9792-46481b101fc5《The Pearls》（1924-11 單曲，同名、最危險的假陽性）、4d084473-4c61-42b1-b015-6d62d2b4c180《The Pearls / King Porter Stomp》（1926-06 單曲）、9268e41f-7eeb-4c14-9a4f-40cba76b31a7《The King & Mister Jelly Lord》（1989，與 King Oliver 合掛，本批 King Oliver 那張亦不釘此筆）。藝人 MBID 3d094919-071f-4070-95dc-e1f350e4a5f3。",
+    "rgMbid": "b34cfd15-c52f-3a01-b5f7-2ecc636f674a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b34cfd15-c52f-3a01-b5f7-2ecc636f674a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5779,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他自稱 1902 年發明了爵士，這個說法後來受到批評。Scott Yanow 說他誇大自己分量反而在身後害了自己，「他身為早期創新者的成就如此巨大，其實根本不需要拉長事實」。維基稱他是爵士的第一位編曲者，1915 年出版的〈Jelly Roll Blues〉是最早付印的爵士作品之一。1926 年他與 Victor 簽約，帶排練充分的樂團進芝加哥錄音室，以 Red Hot Peppers 之名錄下這些編曲。Bluebird 整理的這一輯收二十三軌，1988 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b34cfd15-c52f-3a01-b5f7-2ecc636f674a",
+     "https://musicbrainz.org/release/312b8e0e-08a9-4250-8286-a08e4936bbbd",
+     "https://en.wikipedia.org/wiki/Jelly_Roll_Morton",
+     "https://music.apple.com/us/album/302055819",
+     "https://music.apple.com/gb/album/504543940"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/50/19/d4/5019d4e5-0508-c15a-6a7f-b697243e4b7e/mzaf_9836454891756876733.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "302055819",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "King Oliver",
+   "album": "The New York Sessions (1929-1930)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1a6ee8f3-5272-47cb-8633-6a3632eb32f5。回問確認：title「The New York Sessions (1929-1930)」、artist-credit「King Oliver」、first-release-date 1989、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（DE／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9268e41f-7eeb-4c14-9a4f-40cba76b31a7《The King & Mister Jelly Lord》（1989，artist-credit「King Oliver; Jelly Roll Morton」，Apple 有對應條目 331349276 但內容與本批 Jelly Roll Morton 那張重疊、掛名亦是合掛）、65ad6ed0-74d6-3f7f-aa07-8f2ca10343a6《Off the Record: The Complete 1923 Jazz Band Recordings》（2006，池中已有）、0fd27507-329d-4c2f-91a3-f68fd87febe7《King Oliver, Volume 2: 1927 to 1930》（1991，涵蓋同一批錄音的另一種整編）、923a81d2《Complete Vocalion / Brunswick Recordings 1926-1931》（1991）。藝人 MBID 744fa1ae-051c-463c-957a-25a4ddc01c2f，名下 30 個 release-group（分頁列全）。",
+    "rgMbid": "1a6ee8f3-5272-47cb-8633-6a3632eb32f5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1a6ee8f3-5272-47cb-8633-6a3632eb32f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 30,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "牙齦的病讓他吹不動小號，獨奏改由僱來的人吹，其中一個是他外甥。維基寫 1920 年代後期他越來越吹不動，僱人代吹獨奏，包括外甥 Dave Nelson、Louis Metcalf 與 Red Allen，到 1935 年已完全吹不動。他寫過〈Sweet Like This〉；Louis Armstrong 說要不是 Joe Oliver，爵士不會是今天這樣。二十二軌裡有三組同曲不同 take，錄於 1929 到 1930 年，Bluebird 1989 年整成一輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1a6ee8f3-5272-47cb-8633-6a3632eb32f5",
+     "https://musicbrainz.org/release/0c9559df-89b9-4e77-aba6-5ed8e71d3135",
+     "https://en.wikipedia.org/wiki/King_Oliver",
+     "https://itunes.apple.com/lookup?id=2815301&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fletcher Henderson",
+   "album": "Tidal Wave",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d58c366b-df80-4e34-a46d-550d9575a19a。回問確認：title「Tidal Wave」、artist-credit「Fletcher Henderson」、first-release-date 1994-09-07、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：f7eb208a-7a24-3749-a62a-edc99043daaf《Tidal Wave》（1994，MB 的同名重複條目、secondary-types [Compilation]，最危險的假陽性）、a648ac99-3772-3406-9f3d-7b9f588dfc1e《A Study in Frustration: The Fletcher Henderson Story》（1994，池中已有）與 74d6056d／202c6399／594428a5／2093dcf7 四輯 1961 年分冊、0c2f998c《Hocus Pocus (1927-1936)》（1989）。藝人 MBID f47d1c94-c3e3-4c84-a42a-6c33e0032839，名下 37 個 release-group（分頁列全）。",
+    "rgMbid": "d58c366b-df80-4e34-a46d-550d9575a19a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d58c366b-df80-4e34-a46d-550d9575a19a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3655,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1931 到 1934 年的 Decca 錄音，GRP 1994 年才整成一輯。Fletcher Henderson 1897 年生、1952 年過世，是美國鋼琴家、樂團領班、編曲家與作曲家。維基寫他是最多產的黑人音樂編曲家之一，與 Duke Ellington 並列為爵士史上最有影響力的編曲家與樂團領班之一，也協助銜接了 Dixieland 與 swing 兩個時代。他因為嘴唇發出的響聲，常被叫做 Smack Henderson。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d58c366b-df80-4e34-a46d-550d9575a19a",
+     "https://musicbrainz.org/release/09399262-2372-4f4d-a8d0-424ec0b21f05",
+     "https://en.wikipedia.org/wiki/Fletcher_Henderson",
+     "https://en.wikipedia.org/wiki/Benny_Carter",
+     "https://music.apple.com/us/album/1444079959"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d0/90/6e/d0906e36-c4f6-4057-6d6c-7b19980bf1d3/mzaf_6359087340544458372.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1444079959",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Machito",
+   "album": "Afro-Cuban Jazz: The Music of Chico O'Farrill",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 881fe44b-3f47-44aa-9f38-aea5bf39c00b。回問確認：title「Afro-Cuban Jazz: The Music of Chico O'Farrill」、artist-credit「Machito」、first-release-date 1956、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／JP 1），status 全部 Official。刻意不釘：2b5535ee-adbe-33a5-8986-74eace9dd169《Kenya》（1958，池中已有）、705118ea-1ad0-32f8-85f7-927a5fa9c1b8《Afro-Cuban Jazz Moods》（1976，與 Dizzy Gillespie，盤名開頭相同、最像的假陽性）、46d85401-8f5f-4635-960c-1d3a955dc3a7《Mambo Caravan》（1956 同年別碟）、e18d83a9《Tito Meets Machito: The Mambo Kings》（1997，與 Tito Puente 合掛）。藝人 MBID 8b280260-dacb-4195-a34d-16e5068de288，名下 7 個 release-group（分頁列全）。",
+    "rgMbid": "881fe44b-3f47-44aa-9f38-aea5bf39c00b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1956,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/881fe44b-3f47-44aa-9f38-aea5bf39c00b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "樂章名一半是 Mambo、Rhumba，一半就叫〈6/8〉與〈Jazz〉。維基分析 Chico O'Farrill 的風格，是他成長時聽的古巴音樂、學校裡迷上的爵士與音樂院學的歐洲古典的融合，全被收攏在歐洲組曲的秩序形式裡。他自述：「我從來不是古巴音樂的專家……多數時候讓我的爵士感覺帶著我走。」Machito 1940 年在紐約組成 the Afro-Cubans。組曲有 Charlie Parker 參與，1950 年 12 月 21 日錄下，1956 年出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/881fe44b-3f47-44aa-9f38-aea5bf39c00b",
+     "https://musicbrainz.org/release/98aa2bbc-f265-474d-9006-014e3c9b235d",
+     "https://en.wikipedia.org/wiki/Machito",
+     "https://en.wikipedia.org/wiki/Afro-Cuban_jazz",
+     "https://en.wikipedia.org/wiki/Chico_O%27Farrill",
+     "https://itunes.apple.com/lookup?id=413738&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sidney Bechet",
+   "album": "The Fabulous Sidney Bechet",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 53537ba8-d1d4-4fba-90d4-b9b0877c5b8f。回問確認：title「The Fabulous Sidney Bechet」、artist-credit「Sidney Bechet」、first-release-date 2001-01-09、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（無國別／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9691085f-6a58-4776-93ca-dd2556806f7a《12 Years On Blue Note. The Fabulous Sidney Bechet》（1952，盤名包住本張、最危險的假陽性）、078bf11c-73f6-4189-9d26-a78ecc480038《Sidney Bechet and His Blue Note Jazz Men》（1951，CAA 端點實測 404 且 Apple 查無，本批改釘《The Fabulous Sidney Bechet》）、251f36d0-b702-41c5-8608-e0010a3ab91a《Ambiance Bechet》（1952，池中已有、掛 Sidney Bechet All Stars）、a3ebf838-f83b-4185-8cce-1c0378b629b9《Sidney Bechet》（1952 自我同名）。藝人 MBID bf1b23ea-9b76-42cf-a5f6-4a691e81af5e，名下 209 個 release-group（第 116 條：分頁列全）。",
+    "rgMbid": "53537ba8-d1d4-4fba-90d4-b9b0877c5b8f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1958,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/53537ba8-d1d4-4fba-90d4-b9b0877c5b8f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 41010,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Blue Note 的第一支熱門作品，是他吹的〈Summertime〉。維基寫那是他一直沒能在既有大公司錄下的曲子。這家廠牌由 Alfred Lion 創立，而像他這樣以較早期爵士語彙演奏的樂手，錄音一路延續進 1950 年代。他是爵士最早的重要獨奏者之一，首度錄音在 1923 年 7 月。1951 年他移居法國，1953 年與 Disques Vogue 簽下終生合約，錄下〈Petite Fleur〉。本輯 1958 年由 Blue Note 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/53537ba8-d1d4-4fba-90d4-b9b0877c5b8f",
+     "https://musicbrainz.org/release/ab7b2dca-f825-4845-a262-de3616d55027",
+     "https://en.wikipedia.org/wiki/Sidney_Bechet",
+     "https://en.wikipedia.org/wiki/Blue_Note_Records",
+     "https://music.apple.com/us/album/725210025"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f5/25/44/f525444d-8eba-d598-c261-eb63a24f6f7d/mzaf_9152723709986536185.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "725210025",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Django Reinhardt",
+   "album": "The Great Artistry of Django Reinhardt",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 739cf2a8-7ca7-4521-8769-2b3569bef7f8。回問確認：title「The Great Artistry of Django Reinhardt」、artist-credit「Django Reinhardt」、first-release-date 1953-11、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／無國別 1），status 全部 Official。刻意不釘：530a7d0d-b69f-4303-9c4a-32b639f999f2《The Great Artistry of Django Reinhardt》（1955-03-09，同名別條目、secondary-types [Compilation]，最危險的假陽性）、8531ce16-7670-336d-9d26-0ac7b32b5806《Djangology》（1961，池中已有）、c3be5dfa-36d9-41d7-b460-1bc22fa39c2a 與 80e3091c《Djangology》（1965／1974 重複條目）、15151afb-2a6f-354c-9ddb-0e6751ada35f《Djangology 49》（1990）、d3d970f8／9e19172b 等《Djangologie 1–20》全系列（1970–1982 EMI Pathé 分冊）。藝人 MBID 650bf385-6f6d-4992-a3b9-779d144920a4，用 release-group?artist=<MBID>&limit=100&offset= 分頁列出名下 466 個 release-group（第 116 條）。",
+    "rgMbid": "739cf2a8-7ca7-4521-8769-2b3569bef7f8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1953,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/739cf2a8-7ca7-4521-8769-2b3569bef7f8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11287,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1928 到 1953 年間他錄過九百多面，多數是 78 轉唱片的單面。其餘是醋酸盤、轉錄盤、私人與空中側錄。他 1910 年生於比利時，1934 年與小提琴家 Stéphane Grappelli 在巴黎組成 Quintette du Hot Club de France。本張是 Clef 1953 年 11 月的八軌 10 吋唱片，曲目一半是美國標準曲、一半是〈Nuages〉這類他自己的曲子。同年 5 月 16 日，他在自家門外因腦溢血倒下。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/739cf2a8-7ca7-4521-8769-2b3569bef7f8",
+     "https://musicbrainz.org/release/4bd9e59d-daae-4778-8933-e5d94d8ccac7",
+     "https://en.wikipedia.org/wiki/Django_Reinhardt",
+     "https://music.apple.com/us/album/1442207211"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/eb/82/e6eb8298-0c44-9547-a947-8d756be274e1/mzaf_3168074518419688531.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442207211",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Teddy Wilson",
+   "album": "With Billie in Mind",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c88ff9cd-f8ea-4f8a-b07d-bbcb06e803eb。回問確認：title「With Billie in Mind」、artist-credit「Teddy Wilson」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：6141129f-b438-4a10-b968-5c86b156595c《Teddy Wilson And His Orchestra Featuring Billie Holiday》（1949 整編，盤名含 Billie、最像的假陽性）、e65ef098-3f07-4588-94bb-8ff5503aa0be《Helen Sings, Teddy Swings》（1970，與 Helen Merrill 合掛——本批另收 Helen Merrill 一張，兩者不同碟）、06d08976-0905-44a2-abe9-598bbd219c30《Teddy Wilson And His All-Stars》（1973 整編）、149d812c《Mr. Wilson: The Fabulous Teddy Wilson at the Piano》（1955）。藝人 MBID 2e89725a-ac85-414c-b3b2-70f0a82fae9a，名下 116 個 release-group（第 116 條：分頁列全）。",
+    "rgMbid": "c88ff9cd-f8ea-4f8a-b07d-bbcb06e803eb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c88ff9cd-f8ea-4f8a-b07d-bbcb06e803eb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1761,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "光是 1935 年一年，他就和 Billie Holiday 一起錄了十四面。這是他的獨奏致敬專輯，選的是與 Holiday 有關的曲目，Personnel 欄只有一行：Teddy Wilson，鋼琴。AllMusic 的 Scott Yanow 記下製作人 Hank O'Neal 的提議——Lady Day 最偉大的幾面就是與 Wilson 在 1930 年代錄的。1972 年在紐約錄、同年由 Chiaroscuro 發行，LP 收十四首，CD 再發多了六首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c88ff9cd-f8ea-4f8a-b07d-bbcb06e803eb",
+     "https://musicbrainz.org/release/cc9c82a7-b68d-4173-aeaf-716f7ee1576f",
+     "https://en.wikipedia.org/wiki/With_Billie_in_Mind",
+     "https://en.wikipedia.org/wiki/Teddy_Wilson",
+     "https://music.apple.com/us/album/1213953609"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ba/20/28/ba202841-3f34-34be-bee4-af1a90cc8ae6/mzaf_4795442091455474595.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1213953609",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,2921 @@
+{
+ "schemaVersion": 1,
+ "batch": "c98-20260910",
+ "albums": [
+  {
+   "artist": "Hank Williams",
+   "album": "Hank Williams Sings",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 364c2c37-cdeb-4dca-87b5-9eb7e6907ea6。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「Hank Williams Sings」、artist-credit「Hank Williams with His Drifting Cowboys」、first-release-date 1949、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×3、XW／Official ×1）。刻意不釘：b6fa3214-d630-3ca2-ae3f-4212249a4f66《Hank Williams Sings Kaw-Liga and Other Humorous Songs》（1965 主題精選，盤名前段完全包含本張，是最像的假陽性）、5eda7622-fb30-4eea-af5a-447d29c621b3《The Complete Hank Williams Sampler》（1998 抽樣輯）。藝人 MBID 906bddec-bc73-49f8-ac1e-eaee691c6cf9，名下 214 個 release-group（release-group?artist=…&limit=100&offset= 分頁三次取滿，非 25 筆上限）。",
+    "rgMbid": "364c2c37-cdeb-4dca-87b5-9eb7e6907ea6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1952,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/364c2c37-cdeb-4dca-87b5-9eb7e6907ea6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 934,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "製作人 Fred Rose 從賣不動的舊單曲裡挑出了這八首。維基記曲目來自 1946 至 1949 年間的錄音期，傳記作者 Colin Escott 的說法是 Rose 把這張碟當成別處賣不掉的怪曲子的堆放處。八首裡有五首是他自己寫的，〈Wedding Bells〉1949 年最高第 2 名，〈A Mansion on the Hill〉1948 年底只到第 12 名。十吋盤上記著 MGM E107、8 軌，八軌都落在兩分半到三分之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/364c2c37-cdeb-4dca-87b5-9eb7e6907ea6",
+     "https://musicbrainz.org/release/05fefa8c-5571-4dbd-b730-58d54e21e1ec",
+     "https://api.discogs.com/masters/435297",
+     "https://en.wikipedia.org/wiki/Hank_Williams_Sings",
+     "https://itunes.apple.com/lookup?id=1591133640&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/7e/8f/8d/7e8f8dfe-a533-7dca-5b63-40628bb7503f/mzaf_10571074861062959880.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1591133640",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hank Williams",
+   "album": "Ramblin' Man",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b9e595aa-b513-4d0a-b5f9-a1d2a167a679。回問確認：title「Ramblin’ Man」、artist-credit「Hank Williams」、first-release-date 1955、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、XW／Official ×1）。刻意不釘：14a35823-9ceb-47bf-acb2-d30b7be06d3a《Ramblin' Man》（無 first-release-date 的 Album+Compilation 同名雙胞胎）、deaf10ca-f943-3e53-a82f-7cd6a54f2ec2《Ramblin’ Man / Pictures From Life’s Other Side》（1951 單曲）。藝人 MBID 906bddec-bc73-49f8-ac1e-eaee691c6cf9。",
+    "rgMbid": "b9e595aa-b513-4d0a-b5f9-a1d2a167a679",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1955,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b9e595aa-b513-4d0a-b5f9-a1d2a167a679/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 790,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一個盤名，在唱片目錄上對到祖孫兩代與另一支樂團。維基的消歧義頁把〈Ramblin' Man〉記為 1951 年的曲子，另列 Hank Williams III 2014 年的同名專輯與 The Allman Brothers Band 1992 年的同名精選。原盤記著 1955 年、MGM、編號 E 3219，12 吋 12 軌，首軌就是標題曲。十二軌裡只有標題曲滿三分鐘，其餘都在兩分半上下。他卒於 1953 年 1 月 1 日，這張屬身後發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b9e595aa-b513-4d0a-b5f9-a1d2a167a679",
+     "https://musicbrainz.org/release/09c63f7b-e1ec-4a6e-8053-2eedf808cd01",
+     "https://api.discogs.com/masters/274766",
+     "https://itunes.apple.com/lookup?id=1592563692&entity=song&limit=200&country=us",
+     "https://en.wikipedia.org/wiki/Hank_Williams",
+     "https://en.wikipedia.org/wiki/Ramblin%27_Man"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/f8/d8/66f8d814-0462-5113-9cc1-49db363f370d/mzaf_12963285387713186491.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1592563692",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hank Williams",
+   "album": "Hank Williams as \"Luke the Drifter\"",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1。回問確認：title「Hank Williams as “Luke the Drifter”」、artist-credit「Hank Williams as Luke the Drifter」、first-release-date 1955、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US／Official ×1、XW／Official ×1，狀態皆 Official）。**primary-type 是 Album，依 §5.6 明文照一般 Album 寫、不填例外欄位。** 刻意不釘：60b92287-a239-37f1-9659-24c5ccad5040《Beyond the Sunset》（1953，同一批朗誦體素材的另一種編排）、1bf46404-4192-3c95-9fe8-ee319637e111《Memorial Album》（1953）。藝人 MBID 906bddec-bc73-49f8-ac1e-eaee691c6cf9。",
+    "rgMbid": "bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1955,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片掛名寫的是 Hank Williams as Luke the Drifter。MB 與 Discogs 兩邊的掛名欄都把 Luke the Drifter 寫了進去。原盤 12 軌，曲名如〈Pictures From Life's Other Side〉〈Men With Broken Hearts〉。同一批曲目有兩種規格：十吋的 MGM E-203 與十二吋的 E-3267，兩個編號指的是兩種盤。後來的加曲版收到十四軌，最短 148 秒、最長 192 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1",
+     "https://musicbrainz.org/release/cf3b22e9-fbf2-42a5-b958-f6a909106698",
+     "https://api.discogs.com/masters/396408",
+     "https://api.discogs.com/masters/396408/versions?per_page=50",
+     "https://itunes.apple.com/lookup?id=1884151486&entity=song&limit=200&country=us",
+     "https://api.discogs.com/database/search?q=Hank+Williams+Luke+the+Drifter&type=master"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/31/45/d13145e3-f4e7-92b1-c37b-9f3d4b8e426a/mzaf_10568611439616853305.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1884151486",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Woody Guthrie",
+   "album": "Struggle",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4d97dcf0-b59e-3515-9bf7-df988e99c758。回問確認：title「Struggle」、artist-credit「Woody Guthrie」、first-release-date 1945、primary-type Album、secondary-types 空、轄下 5 個 release（1945 US Official《Documentary #1: Struggle》、1976 US Official、1990 GB Official、1992 US Official、另一筆無日期 US Official）。刻意不釘：981c4709-c546-3a20-b372-2c19c202bd6d《Long Ways to Travel: The Unreleased Folkways Masters, 1944-1949》（1994 未發表錄音輯）、53d31108-3c14-4a6c-bbab-70cbc801bbb7《Bound For Glory》（無年份的 Album+Compilation）。藝人 MBID cbd827e1-4e38-427e-a436-642683433732，名下 96 個 release-group（分頁 browse 取滿）。",
+    "rgMbid": "4d97dcf0-b59e-3515-9bf7-df988e99c758",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1945,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4d97dcf0-b59e-3515-9bf7-df988e99c758/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5478,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Asch 說這套碟是 Guthrie 堅持要做的：講勞動者處境的唱片。最早的形態是三張 78 轉、一面一首共六首，含〈Ludlow Massacre〉。Folkways FA 2485 那一版是 12 軌，那六首排在 B 面，A 面六首是後加的。Asch 在小冊裡寫這套碟是他 1946 年在 Asch Records 出的，唱片目錄上另記 1945。FA 2485 上最長的〈1913 Massacre〉215 秒，封面美術是 David Stone Martin。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/4d97dcf0-b59e-3515-9bf7-df988e99c758",
+     "https://musicbrainz.org/release/593adae8-35a8-4458-a988-dd333681fc5f",
+     "https://musicbrainz.org/release/7f8bc8aa-3dc3-3c0f-895a-d3b14b4d72fa",
+     "https://en.wikipedia.org/wiki/Struggle_(Woody_Guthrie_album)",
+     "https://api.discogs.com/masters/279605",
+     "https://itunes.apple.com/lookup?id=86393036&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/1c/81/601c8121-b4d8-28e1-3362-fa94a3d450f6/mzaf_5831556297905779348.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "86393036",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Woody Guthrie",
+   "album": "Library of Congress Recordings",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0e25657d-93cb-38ca-88cd-2d7219d02aba。回問確認：title「Library of Congress Recordings」、artist-credit「Woody Guthrie」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official ×2、XW／Official ×1、國別未填 Official ×1、國別未填 Bootleg ×1）。刻意不釘：67309672-4550-42e3-9de7-8443e4ea1878《Original Recordings Made By Woody Guthrie 1940-1946》（1977 Warner Bros. 的另一種編輯）、98d971d8-348e-430b-a1c0-25e498b59e01《Bound for Glory (The Songs and Story of Woody Guthrie)》（1956 Folkways，同屬自述型文獻但是另一張碟）。藝人 MBID cbd827e1-4e38-427e-a436-642683433732。",
+    "rgMbid": "0e25657d-93cb-38ca-88cd-2d7219d02aba",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0e25657d-93cb-38ca-88cd-2d7219d02aba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14925,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1940 年 3 月為 Alan Lomax 錄的，編目在國會圖書館。維基記這是 Guthrie 最早的錄音，其中有他自己的〈Do-Re-Mi〉〈Talking Dust Bowl Blues〉，也收了他與 Lomax 對談大蕭條見聞的自述。1964 年 Elektra 以三張裝發行，編號 EKL-271/272，六面上歌曲與口述交錯排。〈Old Joe Clark〉123 秒，〈Goin' Down That Road Feeling Bad〉713 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/0e25657d-93cb-38ca-88cd-2d7219d02aba",
+     "https://musicbrainz.org/release/c4410c41-f4e9-4c83-a26c-3435fec39796",
+     "https://api.discogs.com/masters/417904",
+     "https://en.wikipedia.org/wiki/Library_of_Congress_Recordings",
+     "https://itunes.apple.com/lookup?id=1442846179&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/98/03/6c/98036c55-5531-540a-0a51-3b93e7ea900a/mzaf_10908967976025136240.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442846179",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pete Seeger",
+   "album": "American Favorite Ballads, Vol. 1",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 63489cbc-dda6-34ba-afcf-02422d880e30。回問確認：title「American Favorite Ballads, Vol. 1」、artist-credit「Pete Seeger」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×3、XW／Official ×1）。刻意不釘：e68a7bd8-560b-46b6-93ef-169b9e8a949a《American Favorite Ballads, Vol. 2》(1958)、e6b9a530-fd5a-472b-ba47-d5d84e88ad08《American Favorite Ballads, Vol. 3》(1959)、9e8c6826-b57f-4fa4-8e12-10b0525a22a9《American Favorite Ballads, Vol. 4》(1961)、467004b2-7f99-4697-a6b5-ece1c693c5f7《American Favorite Ballads: Songs And Tunes, Vol. 5》(1962)——同系列分卷，盤名只差卷號，是本張最像的四個假陽性。藝人 MBID af18a9bc-e4ab-4068-9489-b64e8186fcf1，名下 153 個 release-group（分頁 browse 取滿，非 25 筆上限）。",
+    "rgMbid": "63489cbc-dda6-34ba-afcf-02422d880e30",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1957,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/63489cbc-dda6-34ba-afcf-02422d880e30/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 31666,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原盤標題只印《American Favorite Ballads》，卷號是再壓才加的。Discogs 記 1963 與 1965 兩筆再壓才印出 Volume One，1968 年的立體聲版又拿掉。1957 年那張 Folkways FA 2320 收 17 軌，曲目是〈Down In The Valley〉這一類美國通行歌本裡的老歌。最短的〈Wagoner's Lad〉85 秒、最長的〈Frankie And Jonny〉268 秒——一張十二吋塞進十七首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/63489cbc-dda6-34ba-afcf-02422d880e30",
+     "https://musicbrainz.org/release/92311810-dc52-4e17-b3e9-a2635c51054a",
+     "https://musicbrainz.org/release/fce4b9d1-f63f-4176-9c89-ce362b1701f3",
+     "https://api.discogs.com/masters/289679/versions?per_page=50",
+     "https://musicbrainz.org/release-group/e68a7bd8-560b-46b6-93ef-169b9e8a949a",
+     "https://itunes.apple.com/lookup?id=82517660&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9a/6d/3c/9a6d3c30-eade-156a-5a1d-d4b19e6bf8d7/mzaf_12250724060213323751.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "82517660",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pete Seeger",
+   "album": "Waist Deep in the Big Muddy & Other Love Songs",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3edc54fd-8d08-3bba-854c-2e4edad5ded6。回問確認：title「Waist Deep in the Big Muddy & Other Love Songs」、artist-credit「Pete Seeger」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、國別未填 Official ×1）。刻意不釘：a4942f04-4f61-3ffd-b8a5-9ea35b9cc187《Dangerous Songs!?》(1966，同期 Columbia 議題輯)、624913 對應的 Columbia 單曲不在 MB 上另建 RG。藝人 MBID af18a9bc-e4ab-4068-9489-b64e8186fcf1。",
+    "rgMbid": "3edc54fd-8d08-3bba-854c-2e4edad5ded6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3edc54fd-8d08-3bba-854c-2e4edad5ded6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 48,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標題曲在電視上被剪掉，1968 年 2 月同一個節目讓他重唱一次。維基記 1967 年 9 月他在《The Smothers Brothers Comedy Hour》上唱了這首，CBS 以政治調性為由在播出前刪掉，主持人力挺後讓步。他當時的唱片公司 Columbia 為 CBS 所有。原盤記著 Columbia CS 9505、13 軌。〈Seek and You Shall Find〉473 秒與〈Nameless Lick〉60 秒差了將近八倍。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3edc54fd-8d08-3bba-854c-2e4edad5ded6",
+     "https://musicbrainz.org/release/8662a15b-ca9c-4a51-85ee-11f30c5a2c33",
+     "https://api.discogs.com/masters/427991",
+     "https://en.wikipedia.org/wiki/Waist_Deep_in_the_Big_Muddy",
+     "https://itunes.apple.com/lookup?id=181586787&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/33/86/fe33864a-88c7-a4c1-0751-e191bbbec4f7/mzaf_4207086770933987278.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "181586787",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Odetta",
+   "album": "One Grain of Sand",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 55a00004-98ed-446a-8bd5-ca256af1e4ba。回問確認：title「One Grain of Sand」、artist-credit「Odetta」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official、GB／Official）。刻意不釘：71abf3d9-44e6-4d13-9d01-4a1c7015d16b《Sings Folk Songs》(1963 同年 RCA)、1017ec49-1765-4853-a9b7-15c48ec799f7《At Town Hall》(1963 Live)、85cd0b63-dbe8-48c5-8991-06e94fa5ca46《Odetta》(1963 Compilation)——三筆都是同年同掛名，是本張最像的假陽性。藝人 MBID e81906c6-cba2-44ec-9e39-29737754d809，名下 44 個 release-group。",
+    "rgMbid": "55a00004-98ed-446a-8bd5-ca256af1e4ba",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/55a00004-98ed-446a-8bd5-ca256af1e4ba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3900,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張碟只有兩個人：她的演唱與吉他，加上 Bill Lee 的貝斯。維基的人員欄只列這兩個人。盤上記著 1963 年、Vanguard VRS-9137，14 軌；曲目除另有標示外全是傳統曲，有作者的幾首掛 Lead Belly 與 Woody Guthrie，標題曲是 Pete Seeger 寫的。維基記這是她為 Vanguard 錄的最後一張。最長的〈Rambling Round Your City〉242 秒、最短的〈Ain't No Grave〉122 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/55a00004-98ed-446a-8bd5-ca256af1e4ba",
+     "https://musicbrainz.org/release/06b10534-9d0e-4fc8-8cbb-fd6f64a11093",
+     "https://en.wikipedia.org/wiki/One_Grain_of_Sand",
+     "https://api.discogs.com/masters/563693",
+     "https://itunes.apple.com/lookup?id=1444010538&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a5/fb/58/a5fb58bd-3e59-06e8-1ae6-981c78d3f9e1/mzaf_16455077151083065652.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1444010538",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Patsy Cline",
+   "album": "Patsy Cline's Greatest Hits",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 26239187-b3f4-3bac-b3cd-538a93b3fcf1。回問確認：title「Patsy Cline’s Greatest Hits」、artist-credit「Patsy Cline」、first-release-date 1967-03-13、primary-type Album、secondary-types [Compilation]、轄下 11 個 release（US／Official ×8、CA／Official ×1、國別未填 Official ×2）。刻意不釘：be623040-4f67-4fe1-a279-73bb86b10f0a《Patsy Cline’s Golden Hits》(1962)、965e7135-db47-3cfb-8ded-f792ea7c1049《The Patsy Cline Story》(1963 雙張)、30248c1f-108b-3b6c-99dc-a54d55efc359《Greatest Hits》(1985)、cde892f5-4027-4b35-bf52-19c1aeb6e95f《16 Greatest Hits》(1988)、5daf229c-6cd6-3e55-b16f-fbf08b764c5f《Greatest Hits》(1990)——五筆都是盤名高度重疊的後世包裝。藝人 MBID ad82dd72-0df3-4a09-8d7a-1af9c9e80522，名下 355 個 release-group（分頁 browse 取滿）。",
+    "rgMbid": "26239187-b3f4-3bac-b3cd-538a93b3fcf1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/26239187-b3f4-3bac-b3cd-538a93b3fcf1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 8260,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "2001 年統計時，這張碟已經在鄉村榜上待了 722 週。金氏世界紀錄把它收為女性藝人在美國鄉村榜停留最久的專輯。1989 年它獲 RIAA 雙白金，到 2005 年在美國售出一千萬張、拿到十倍白金。盤上記著 1967 年、Decca、編號 DL 74854，12 軌，是原廠在她過世四年後編成的，曲目是 1957 至 1963 年間的錄音。〈Walkin' After Midnight〉122 秒到〈Faded Love〉224 秒，十二軌都在四分鐘以內。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/26239187-b3f4-3bac-b3cd-538a93b3fcf1",
+     "https://musicbrainz.org/release/c8d70b71-af0d-465c-ab82-f8e9ec03519e",
+     "https://api.discogs.com/database/search?q=Patsy+Cline+Greatest+Hits+Decca+1967&type=master",
+     "https://en.wikipedia.org/wiki/Patsy_Cline%27s_Greatest_Hits",
+     "https://itunes.apple.com/lookup?id=1440825668&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/df/af/d1dfafb3-2f80-75df-2f4f-b321d122b24f/mzaf_2699848131276448088.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440825668",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tammy Wynette",
+   "album": "Your Good Girl's Gonna Go Bad",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 24d5bfb3-6618-3138-8002-d15d1db0ffe1。回問確認：title「Your Good Girl’s Gonna Go Bad」、artist-credit「Tammy Wynette」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、BE／Official ×1）。刻意不釘：d4828a8f-8109-3142-9a20-739b6197b068《My Elusive Dreams》(1967 同年，與 David Houston 合作)、00eb70a9-ef93-3922-bc17-fed7b39faeab《The Best of Tammy Wynette》(1968 精選)。藝人 MBID 26fe36eb-fd75-4799-bf0f-fa502a7bcfe8，名下 265 個 release-group（分頁 browse 取滿）。",
+    "rgMbid": "24d5bfb3-6618-3138-8002-d15d1db0ffe1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/24d5bfb3-6618-3138-8002-d15d1db0ffe1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8826,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "她帶三個孩子搬到納許維爾找唱片合約，Billy Sherrill 簽下了她。維基記她 1965 年搬去，先後被 Decca、Hickory、Kapp、Musicor 回絕，1966 年由 Sherrill 簽進 Epic。錄音自 1966 年 9 月起在納許維爾的 Columbia Studios 進行。曲目多半是翻唱，〈Walk Through This World with Me〉原唱 George Jones。十軌沒有一首滿三分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/24d5bfb3-6618-3138-8002-d15d1db0ffe1",
+     "https://musicbrainz.org/release/67f36871-e4ea-4628-af23-a0a737123b27",
+     "https://en.wikipedia.org/wiki/Your_Good_Girl%27s_Gonna_Go_Bad",
+     "https://api.discogs.com/database/search?q=Tammy+Wynette+Your+Good+Girl%27s+Gonna+Go+Bad&type=master",
+     "https://itunes.apple.com/lookup?id=171126447&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/5a/aa/8a5aaadd-5b2c-b711-8400-95401b52e863/mzaf_10197236914917666499.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "171126447",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tammy Wynette",
+   "album": "D-I-V-O-R-C-E",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9a113423-dd34-396c-91ad-08e0e2415303。回問確認：title「D-I-V-O-R-C-E」、artist-credit「Tammy Wynette」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official、XW／Official）。刻意不釘：9be4bf8b-119d-4c71-a6b8-f3b26222746a《Take Me to Your World / I Don’t Want Play House》(1968-01 同年前一張)、1b7cb5ce-10b9-4ec7-aad8-4927f984ec0a《Tammy’s Greatest Hits》(1969)。藝人 MBID 26fe36eb-fd75-4799-bf0f-fa502a7bcfe8。",
+    "rgMbid": "9a113423-dd34-396c-91ad-08e0e2415303",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9a113423-dd34-396c-91ad-08e0e2415303/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 12466,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "她對標題曲的說法是：它完全就是我的人生。維基記標題曲由 Bobby Braddock 與 Curly Putman 所寫、是製作人 Billy Sherrill 拿給她的；發行為單曲後成為她 1968 年在北美鄉村榜的第四首冠軍曲，專輯也登上該年的鄉村專輯榜冠軍。全碟 1968 年 3 月 22 至 25 日在 Columbia Studio B 錄成。翻唱含 The Beatles〈Yesterday〉與 Patsy Cline〈Sweet Dreams〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9a113423-dd34-396c-91ad-08e0e2415303",
+     "https://musicbrainz.org/release/0c088ce5-8558-48f1-88d0-62a43b6a611c",
+     "https://en.wikipedia.org/wiki/D-I-V-O-R-C-E_(album)",
+     "https://api.discogs.com/database/search?q=Tammy+Wynette+D-I-V-O-R-C-E&type=master",
+     "https://itunes.apple.com/lookup?id=967382746&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/bc/ae/3bbcaeb3-f904-fb2a-e6ec-c0e60d0eb1ce/mzaf_6713218219370578881.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "967382746",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marty Robbins",
+   "album": "The Song of Robbins",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b701606b-bcc1-4768-8727-f21527843920。回問確認：title「The Song of Robbins」、artist-credit「Marty Robbins」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×2、AU／Official ×1、國別未填 Official ×1）。刻意不釘：4a9b9806-53d4-3133-81d2-e35db6f911dd《Rock'n Roll'n Robbins: Marty Robbins Sings》(1956)、25eda593-a55b-4e5f-a454-5cc94cb0259a《Marty Robbins》(1958 自我同名)、8ba66b24-2d4d-44fb-9db4-6d674fd0053b《Marty Robbins》(1965 自我同名)、3018bc5b-87f6-453c-9b3b-e148fd272965《Song of the Islands》(1957 同年，盤名同樣以 Song of 開頭)。藝人 MBID 2c2add7c-9a99-4812-a20e-870d331f01fd，名下 370 個 release-group（分頁 browse 取滿四次）。",
+    "rgMbid": "b701606b-bcc1-4768-8727-f21527843920",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1957,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b701606b-bcc1-4768-8727-f21527843920/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 717,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首全是別人先唱紅過的鄉村曲，他一首一首重唱。〈Lovesick Blues〉〈I'm So Lonesome I Could Cry〉〈Moanin' the Blues〉都在此列。盤上記著 1957 年、Columbia、編號 CL 976，12 軌。維基記《Billboard》當年對鄉村電台 DJ 做的年度調查裡它排第 2 名。最短的〈Moanin' the Blues〉119 秒、最長的〈Rose of Ol' Pawnee〉196 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b701606b-bcc1-4768-8727-f21527843920",
+     "https://musicbrainz.org/release/b3f5ef47-4439-45d0-92d3-cf18d305c661",
+     "https://en.wikipedia.org/wiki/The_Song_of_Robbins",
+     "https://api.discogs.com/database/search?q=Marty+Robbins+The+Song+of+Robbins+Columbia+CL+976&type=master",
+     "https://itunes.apple.com/lookup?id=1308728509&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/artist/2c2add7c-9a99-4812-a20e-870d331f01fd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d8/a7/15/d8a71599-6f90-4b20-eed5-decc87a87424/mzaf_3059653392393425209.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1308728509",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marty Robbins",
+   "album": "Devil Woman",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ab538cfb-857d-48ba-b3b2-3e20a0cef25e。回問確認：title「Devil Woman」、artist-credit「Marty Robbins」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：f008fb4f-2555-4f93-86bb-a25b33b8f24c《Portrait of Marty》(1962 同年)、2cf5afdc-a798-3a23-a432-911f325af4fa《Marty After Midnight》(1962 同年)。藝人 MBID 2c2add7c-9a99-4812-a20e-870d331f01fd。",
+    "rgMbid": "ab538cfb-857d-48ba-b3b2-3e20a0cef25e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ab538cfb-857d-48ba-b3b2-3e20a0cef25e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 440,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標題曲被翻成西班牙語、塞爾維亞-克羅埃西亞語與中文出版。西語版〈Magia Blanca〉由 Chucho Avellanet 1963 年唱，塞爾維亞-克羅埃西亞語版〈Čudna devojka〉由 Zlatni Dečaci 1966 年出，中文版〈小小寃家〉由莊雪芳 1967 年出。維基記標題曲 1962 年 6 月作為首支單曲發行，是他第七首鄉村榜冠軍曲，在榜首停留八週。原盤記著 Columbia CS 8718、12 軌，全在兩分到三分零二秒之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ab538cfb-857d-48ba-b3b2-3e20a0cef25e",
+     "https://musicbrainz.org/release/1b3528d2-cb8d-4158-a3cb-b003bce6cd57",
+     "https://api.discogs.com/database/search?q=Marty+Robbins+Devil+Woman+Columbia&type=master",
+     "https://en.wikipedia.org/wiki/Devil_Woman_(Marty_Robbins_song)",
+     "https://itunes.apple.com/lookup?id=208369&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Randy Travis",
+   "album": "Old 8x10",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 12e22c63-fbd5-32e8-8756-bd1d7552027e。回問確認：title「Old 8x10」、artist-credit「Randy Travis」、first-release-date 1988-07-12、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official ×1、DE／Official ×2、XW／Official ×1、國別未填 Official ×1）。刻意不釘：14d2ff3c-cafd-3d7f-8cfc-77b967db5f4d《No Holdin’ Back》(1989 下一張)、25f66bec-ed0f-3b81-a1b2-a55b8911cb96《An Old Time Christmas》(1989，盤名同樣以 Old 開頭)。藝人 MBID 09b697e3-a849-4670-ae49-e0b821a6271a，名下 65 個 release-group。",
+    "rgMbid": "12e22c63-fbd5-32e8-8756-bd1d7552027e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/12e22c63-fbd5-32e8-8756-bd1d7552027e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3410,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "美國盤十首，英國盤與德國盤多收一首〈Forever and Ever, Amen〉。維基記德國版是他在當地的首次發行。美國盤記著 1988 年、Warner Bros. 9 25738-2，10 軌，推出的四首單曲裡有三首在 1980 年代末登上 Hot Country Songs 榜冠軍。人員名單裡有 Jerry Douglas 的 Dobro 與 Béla Fleck 的班鳩，最長的〈It's Out of My Hands〉252 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/12e22c63-fbd5-32e8-8756-bd1d7552027e",
+     "https://musicbrainz.org/release/3ec7f470-6bcd-4c1d-a306-84ef2cff44e2",
+     "https://en.wikipedia.org/wiki/Old_8%C3%9710",
+     "https://api.discogs.com/database/search?q=Randy+Travis+Old+8x10+Warner&type=master",
+     "https://itunes.apple.com/lookup?id=308387566&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/ed/bf/b5edbf11-ffaf-7ac5-9051-e86efe93ae0a/mzaf_323340841259517351.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "308387566",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Garth Brooks",
+   "album": "The Chase",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1d1c66cc-84b7-3c72-ac81-84f3e7785c79。回問確認：title「The Chase」、artist-credit「Garth Brooks」、first-release-date 1992-09-22、primary-type Album、secondary-types 空、轄下 15 個 release。刻意不釘：22cfbcf0-9f19-3e52-8f16-ccfdd21cdfcf《Beyond the Season》(1992-08-25 同年聖誕輯)、96be6552-e169-4005-9f0d-514776ffc297《This is Garth Brooks》(1992-09 Live／電視特別節目)、3ff6b94c-1765-3d58-a6e0-edc7b552fcba《In Pieces》(1993 下一張)。藝人 MBID b76645c5-78b0-4e4c-8f95-003f40013a45，名下 73 個 release-group。",
+    "rgMbid": "1d1c66cc-84b7-3c72-ac81-84f3e7785c79",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1d1c66cc-84b7-3c72-ac81-84f3e7785c79/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 31629,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "首支單曲〈We Shall Be Free〉為他拿下 1993 年的 GLAAD 媒體獎。維基記這首由他與 Stephanie Davis 合寫，因部分電台拒播而在 Hot Country Singles & Tracks 榜最高第 12 名；歌詞題材含世界飢餓、恐同與種族歧視。專輯首週在美國賣出 403000 張，同時登上 Billboard 200 與 Top Country Albums 兩張榜的冠軍，並獲 RIAA 鑽石認證。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1d1c66cc-84b7-3c72-ac81-84f3e7785c79",
+     "https://en.wikipedia.org/wiki/The_Chase_(Garth_Brooks_album)",
+     "https://en.wikipedia.org/wiki/We_Shall_Be_Free",
+     "https://api.discogs.com/database/search?q=Garth+Brooks+The+Chase+Liberty+1992&type=master",
+     "https://itunes.apple.com/lookup?id=329451&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Louvin Brothers",
+   "album": "Nearer My God to Thee",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ac6ec6ea-edce-41e7-80d3-e8fdbe1d3b4a。回問確認：title「Nearer My God to Thee」、artist-credit「The Louvin Brothers」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、GB／Official ×1）。刻意不釘：d8b9865c-047b-4938-a74b-bb0d7b691ef3《The Louvin Brothers (Ira and Charles)》(1957 同年)、0e3d05af-da13-4548-8b79-93ee3f319874《The Family Who Prays》(1958 同屬福音線)、a98a3dcc-dd65-433c-bfbc-0923c443220f《Weapon of Prayer》(1962 同屬福音線)。藝人 MBID 8b604d4b-1170-4225-bc9e-d8276d94402e，名下 64 個 release-group。",
+    "rgMbid": "ac6ec6ea-edce-41e7-80d3-e8fdbe1d3b4a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1957,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ac6ec6ea-edce-41e7-80d3-e8fdbe1d3b4a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3054,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1952 年起他們就在發福音單曲，這是 Capitol 上的第一張福音專輯。維基記 1952 至 1955 年間那幾首福音單曲後來收進另一張《The Family Who Prays》。原盤記著 Capitol T 825、12 軌，其中〈I Can't Say No〉〈There's No Excuse〉掛 Ira 與 Charlie Louvin 的名字。人員只有兩個：Charlie 演唱與吉他，Ira 演唱與曼陀林。十二軌都在兩分二十三秒到三分十三秒之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ac6ec6ea-edce-41e7-80d3-e8fdbe1d3b4a",
+     "https://musicbrainz.org/release/85959971-afeb-44a1-ab3b-7bbd21933f1e",
+     "https://en.wikipedia.org/wiki/Nearer_My_God_to_Thee_(album)",
+     "https://api.discogs.com/database/search?q=Louvin+Brothers+Nearer+My+God+to+Thee+Capitol&type=master",
+     "https://itunes.apple.com/lookup?id=714637977&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/eb/8f/0deb8f52-c874-f189-d6a9-78bb62230fa5/mzaf_13196163386996389141.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "714637977",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Louvin Brothers",
+   "album": "My Baby's Gone",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 84efe5dd-171b-4afc-bf84-74451984c47c。回問確認：title「My Baby’s Gone」、artist-credit「The Louvin Brothers」、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×1、GB／Official ×1、國別與 status 皆未填 ×1）。刻意不釘：7c361ed1-d2e9-4a3d-8e0b-ae0d4cbf4d26《My Baby's Gone: The Essential Louvin Brothers 1955-1964》(2006 精選，盤名完整包含本張)、fec10658-637c-45ef-85ed-a47f6d8f0802《A Tribute to The Delmore Brothers》(1960 同年)。藝人 MBID 8b604d4b-1170-4225-bc9e-d8276d94402e。",
+    "rgMbid": "84efe5dd-171b-4afc-bf84-74451984c47c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/79/a9/9c/79a99c24-be51-1deb-2e81-dcba8ee57d3b/00094639686650.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "714643546",
+    "note": "試聽探測釘定的 collectionId 714643546（us）：The Louvin Brothers — My Baby's Gone"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12523,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封面上那個神情沮喪的男子，畫面是兩兄弟自己設計的。維基記大部分曲目錄於 1958 年，其中四首當年已發過單曲。盤上記著 1960 年、Capitol、編號 T 1385，12 軌；單曲〈My Baby's Gone〉／B 面〈Lorene〉登上 Billboard Country Singles 榜第 9 名、在榜超過 20 週。標題曲是他們錄過 Hazel Houser 唯一一首世俗曲，此前錄的都是她的福音曲。十二軌全在一分五十八秒到兩分四十秒之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/84efe5dd-171b-4afc-bf84-74451984c47c",
+     "https://musicbrainz.org/release/85c5df59-edbb-4ce3-8133-2f89300cb5ae",
+     "https://en.wikipedia.org/wiki/My_Baby%27s_Gone_(album)",
+     "https://api.discogs.com/database/search?q=Louvin+Brothers+My+Baby%27s+Gone&type=master",
+     "https://itunes.apple.com/lookup?id=714643546&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/59/a4/b959a44c-cd33-c600-fc96-a21ffcbcf0bf/mzaf_10773022786072389881.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "714643546",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Flatt & Scruggs",
+   "album": "Songs of the Famous Carter Family",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8428462a-e472-32d5-985b-cab8e725a350。回問確認：title「Songs of the Famous Carter Family」、artist-credit「Lester Flatt & Earl Scruggs featuring Mother Maybelle Carter & the Foggy Mountain Boys」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×1、國別未填 Official ×2、XW／Official ×1）。刻意不釘：3ac41f4a-170b-49d6-92a7-bc5eef67d997《Hear the Whistles Blow: Lester Flatt and Earl Scruggs Sing Songs of Rivers & Rails》(1967 主題精選，盤名同樣是 Sing Songs of…)、9f96eb4f-b599-440a-b94d-5c6861ad3021《Songs of Glory》(1960，盤名同樣以 Songs of 開頭)。藝人 MBID 77029a1c-76fa-4350-a1a8-dacc10230b6f（MB 實體名 Lester Flatt & Earl Scruggs），名下 101 個 release-group（分頁 browse 取滿）。",
+    "rgMbid": "8428462a-e472-32d5-985b-cab8e725a350",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8428462a-e472-32d5-985b-cab8e725a350/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 532,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Louise Scruggs 替樂團換面貌，做法是把更早的民謠曲加進曲目。維基把這張碟記為那個計畫的一部分。盤上記著 1961 年、Columbia、編號 CL 1664，12 軌，掛名把 Mother Maybelle Carter 也寫了進去。曲目〈Keep on the Sunny Side〉〈Worried Man Blues〉都出自 Carter Family 的曲庫。AllMusic 的 Jim Smith 說他們把招牌的 overdrive 收了起來。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8428462a-e472-32d5-985b-cab8e725a350",
+     "https://musicbrainz.org/release/bad648c5-2dac-40d8-935f-9db911c02013",
+     "https://en.wikipedia.org/wiki/Songs_of_the_Famous_Carter_Family",
+     "https://en.wikipedia.org/wiki/Flatt_and_Scruggs",
+     "https://api.discogs.com/database/search?q=Flatt+Scruggs+Songs+of+the+Famous+Carter+Family&type=master",
+     "https://itunes.apple.com/lookup?id=220100215&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/48/d4/eb48d42f-40e5-3b90-a111-fcf50fa8dc9b/mzaf_1001060276334212688.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "220100215",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Flatt & Scruggs",
+   "album": "Hard Travelin'",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f76fcb06-e98e-4c06-9296-af57005f27ab。回問確認：title「Hard Travelin’」、artist-credit「Lester Flatt & Earl Scruggs」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official、XW／Official）。刻意不釘：a30f2960-4110-331d-b62e-7c99d37fad97《Flatt and Scruggs at Carnegie Hall!》(1963 同年 Live，池中已有)、237a221a-ca7a-399b-9882-d9878a103295《Folk Songs of Our Land》(1962，同屬民謠復興期轉向)。藝人 MBID 77029a1c-76fa-4350-a1a8-dacc10230b6f。",
+    "rgMbid": "f76fcb06-e98e-4c06-9296-af57005f27ab",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f76fcb06-e98e-4c06-9296-af57005f27ab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 93,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩面各以一首 Woody Guthrie 開場，當中還放了一首電視主題曲。兩首分別是〈Hard Travelin'〉與〈Pastures of Plenty〉。主題曲那首是〈The Ballad of Jed Clampett〉，用在影集《The Beverly Hillbillies》上，維基記它 1963 年 1 月登上鄉村榜冠軍，是他們生涯唯一一首冠軍曲。原盤記著 Columbia CL 1951／CS 8751，12 軌，最長的一軌 225 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f76fcb06-e98e-4c06-9296-af57005f27ab",
+     "https://musicbrainz.org/release/0f3b5a77-f908-462f-9535-7ee22893f23f",
+     "https://api.discogs.com/masters/262019",
+     "https://en.wikipedia.org/wiki/Flatt_and_Scruggs",
+     "https://itunes.apple.com/lookup?id=727363468&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d0/15/31/d0153161-c261-70db-9a0a-b86e6ce5fe67/mzaf_2392288580250038621.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "727363468",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dock Boggs",
+   "album": "Dock Boggs: Legendary Singer and Banjo Player",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group dd01d57e-a37a-4a04-946b-45713663ca28。回問確認：title「Dock Boggs: Legendary Singer and Banjo Player」、artist-credit「Dock Boggs」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 2 個 release（US，status 皆未填）。刻意不釘：d0b07772-2605-4349-8916-1fc21ad54d65《Dock Boggs》(2006 同名 release-group)、9239bf61-dfd3-4ddb-9e55-2a3d47d02d82《Dock Boggs, Vol. 2》(無年份)、2573fe21-5444-464a-82ed-93d6824f5b3a《Dock Boggs 1966》、8a28aa56-f4ac-4594-82ac-1c055a722a77《Excerpts From Interviews With Dock Boggs…》(1965，primary-type Interview)、699d282d-8606-3546-954d-1d4de2e91c75《His Folkways Years (1963-1968)》(1998 Compilation)。藝人 MBID 78fad453-6853-4c74-9237-e5160afd9db0，名下 8 個 release-group（全列）。",
+    "rgMbid": "dd01d57e-a37a-4a04-946b-45713663ca28",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/dd/b9/85/ddb9851e-87ca-f7d8-f667-a662082df5b2/dj.eqpnkqss.tif/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "175658461",
+    "note": "試聽探測釘定的 collectionId 175658461（us）：Dock Boggs — Dock Boggs"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 12311,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1963 年 6 月 Mike Seeger 找上門時，他才剛把班鳩買回來。維基記 Seeger 在維吉尼亞州 Needmore 附近找到他，說服他當年稍晚到 Asheville 演出，此後他為 Folkways 錄了三張專輯，這是其中一張。他一生大半以煤礦為業。盤上記著 1964 年、Folkways、編號 FA 2351，15 軌，含〈Country Blues〉〈Oh Death〉。奏法是 up-picking：上撥頭兩弦、拇指彈其餘三弦之一。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/dd01d57e-a37a-4a04-946b-45713663ca28",
+     "https://musicbrainz.org/release/e1dbe309-4efc-4439-9fcd-9d9c002c9d68",
+     "https://api.discogs.com/masters/312449",
+     "https://en.wikipedia.org/wiki/Dock_Boggs",
+     "https://itunes.apple.com/lookup?id=175658461&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/1d/fa/c01dfaf3-fd0c-dcfc-30fc-d848b798e72c/mzaf_3614109480184259750.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "175658461",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elizabeth Cotten",
+   "album": "Volume 3: When I'm Gone",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 789ca8f2-33e5-4aa9-a4bd-d0a3ea038a47。回問確認：title「Volume 3: When I'm Gone」、artist-credit「Elizabeth Cotten」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、XW／Official ×1）。刻意不釘：8048ccb2-ad8c-4430-ba16-ef3b374565f1《Vol. 2: Shake Sugaree》(1967，池中已有)、723efde8-f1ad-3621-9bbd-a5aaee29857a《Shake Sugaree》(2004 Compilation)、a4764d3b-ac41-4ec7-b010-a33339551994《Live!》(1983 Live)。藝人 MBID 907f53c2-f7d1-406a-8071-30262ba472ca，名下 5 個 release-group（全列）。",
+    "rgMbid": "789ca8f2-33e5-4aa9-a4bd-d0a3ea038a47",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/789ca8f2-33e5-4aa9-a4bd-d0a3ea038a47/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 108,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "左撇子把右手吉他反過來抱，低音用手指彈、旋律用拇指。維基把這種交替低音的手法記為 Cotten picking。〈Freight Train〉是她十來歲時自己寫的，1956 年 Chas McDevitt 與 Nancy Whiskey 的英國版成為暢銷曲。盤上記著 1979 年、Folkways、編號 FA 3537，13 軌。最長的〈Willie〉308 秒，十三軌裡有四軌超過四分半。維基列的三張編號專輯裡，這是最晚的一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/789ca8f2-33e5-4aa9-a4bd-d0a3ea038a47",
+     "https://musicbrainz.org/release/d2a5ee12-dec8-486f-b8ae-31a23bc091b8",
+     "https://api.discogs.com/masters/205719",
+     "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+     "https://itunes.apple.com/lookup?id=154816804&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/da/bd/b9dabd64-4dd7-b27f-b28e-b53feceda724/mzaf_4510817726319994073.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "154816804",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joan Baez",
+   "album": "Joan Baez, Vol. 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c51b1bdd-d6bb-3271-ab28-f277fc57ca2d。回問確認：title「Joan Baez, Vol. 2」、artist-credit「Joan Baez」、first-release-date 1961-09、primary-type Album、secondary-types 空、轄下 9 個 release（Official ×8、Bootleg ×1）。刻意不釘：637441f0-6ca3-3557-96f7-68f6701893fb《Joan Baez》(1960 首張，池中已有)、85cd9dcd-b0eb-3fc4-bfce-5aa7fd99cdbc《Joan Baez in Concert, Part 1》(1962 Live)、5d8cd1ee-85ab-3357-958c-24c12c800060《Joan Baez in Concert, Part 2》(1963 Live)、826abf83-eaea-386d-8ee7-2fdfdc2faf71《Joan Baez/5》(1964)——四筆盤名都以 Joan Baez 開頭。藝人 MBID 92d37892-6186-4459-9cc1-f0dde57652d0，名下 159 個 release-group（分頁 browse 取滿）。",
+    "rgMbid": "c51b1bdd-d6bb-3271-ab28-f277fc57ca2d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c51b1bdd-d6bb-3271-ab28-f277fc57ca2d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7752,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "B 面頭兩首請了藍草樂團 the Greenbriar Boys 來和聲。維基的人員欄註明那兩首是 B1〈Banks of the Ohio〉與 B2〈Pal of Mine〉。原盤記著 1961 年 9 月、Vanguard VRS 9094，14 軌，曲目以傳統曲為主，含〈Barbara Allen〉〈Plaisir d'amour〉。維基記這張在 Billboard 專輯榜最高第 13 名，最長的〈Barbara Allen〉253 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c51b1bdd-d6bb-3271-ab28-f277fc57ca2d",
+     "https://musicbrainz.org/release/c29b9868-e5d6-48c4-b58b-a0765d676325",
+     "https://en.wikipedia.org/wiki/Joan_Baez,_Vol._2",
+     "https://api.discogs.com/database/search?q=Joan+Baez+Vol+2+Vanguard+1961&type=master",
+     "https://itunes.apple.com/lookup?id=712142981&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ba/d3/0c/bad30c13-c40c-fafa-ddd3-0a093d8c93e3/mzaf_13446816354160157387.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "712142981",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nitty Gritty Dirt Band",
+   "album": "Uncle Charlie & His Dog Teddy",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2487403a-7b69-3963-9ef0-04ccce2968e6。回問確認：title「Uncle Charlie & His Dog Teddy」、artist-credit「Nitty Gritty Dirt Band」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official ×3、GB／Official ×1、XW／Official ×1）。刻意不釘：5b7b3718-3af3-3fdb-8dc6-800c5b680eff《Alive!》(1969 Live)、9639aecb-457b-3164-afcc-d44fca7b3853《All the Good Times》(1971 下一張)、cda1eace-c16a-38b0-a9c1-2926b8fac828《Will the Circle Be Unbroken, Volume 2》(1989)、5553ecf9-1134-3b45-935b-7cb3f3d68108《Will the Circle Be Unbroken, Volume 3》(2002)——後兩筆盤名包含池中既有卡，是同一藝人下最容易被誤釘的兩筆。藝人 MBID ac8a45f8-5520-4463-9fda-f63f8844cb50，名下 62 個 release-group。",
+    "rgMbid": "2487403a-7b69-3963-9ef0-04ccce2968e6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2487403a-7b69-3963-9ef0-04ccce2968e6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3833,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片裡夾了一段 1963 年錄的老人訪談，直接接進〈Mr. Bojangles〉。維基記那段是 1963 年對 Uncle Charlie 所做的錄音，那人是團員的親戚。盤上記著 1970 年、Liberty、編號 LST-7642，原盤是 16 個索引點，其中五個本身是組曲。〈Mr. Bojangles〉是他們第一首重要暢銷曲，Hot 100 第 9 名。Colin Larkin 說這張把 jokey elements 轉向 country rock。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/2487403a-7b69-3963-9ef0-04ccce2968e6",
+     "https://musicbrainz.org/release/0139146d-1cb6-41c7-bcb6-d73738877de4",
+     "https://en.wikipedia.org/wiki/Uncle_Charlie_%26_His_Dog_Teddy",
+     "https://en.wikipedia.org/wiki/Nitty_Gritty_Dirt_Band",
+     "https://api.discogs.com/database/search?q=Nitty+Gritty+Dirt+Band+Uncle+Charlie+His+Dog+Teddy&type=master",
+     "https://itunes.apple.com/lookup?id=723526039&entity=song&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/00/a4/48/00a44803-c93d-751d-80a8-4069aed82521/mzaf_12555839704663051475.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723526039",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Georges Brassens",
+   "album": "Nº2 : Georges Brassens interprète ses dernières compositions",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4f0e657a-ad8e-335f-860e-bb3ecd72ab97。回問確認：title「Nº2 : Georges Brassens interprète ses dernières compositions」、artist-credit「Georges Brassens」、first-release-date 1953-11、primary-type Album、secondary-types 空、轄下 3 個 release（FR／Official ×3）。刻意不釘：9b32ec2d-fa6c-31e0-9a18-cd836548df71《Nº1 : Georges Brassens chante… les chansons poétiques (… et souvent gaillardes) de… Georges Brassens》（1952 首張，池中已有）、87b64571-73b0-351e-92ec-215f002a5609《Volume 2 : Les Amoureux des bancs publics》（1965 重新編號的再版）、4965bfb7-eb96-32cc-acdc-1f68804a49c4《Volume 1 : La Mauvaise Réputation》（1965 同批重編號）。藝人 MBID b58165ba-ac55-49a1-8855-caf16c68f5f2，名下 203 個 release-group（release-group?artist=…&limit=100&offset= 分頁三次取滿）。",
+    "rgMbid": "4f0e657a-ad8e-335f-860e-bb3ecd72ab97",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1953,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4f0e657a-ad8e-335f-860e-bb3ecd72ab97/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 157,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈La Cane de Jeanne〉寫給 Jeanne Planche——他初到巴黎時收留他的人。法文維基記演出者只有三人：Brassens 演唱與吉他、Pierre Nicolas 低音提琴、Lucien Bellevallée 第二吉他，錄音是單聲道。盤上記著 1953 年 11 月的法國盤由 Polydor 發行、編號 LP 530.024、25 公分 33 轉，十一軌，曲長 1:17 到 3:21。唱片本身沒有標題，通行的盤名是封面正面印的那句話。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/4f0e657a-ad8e-335f-860e-bb3ecd72ab97",
+     "https://musicbrainz.org/release/0797632e-44ad-3243-9ead-ce6fda9c220c",
+     "https://fr.wikipedia.org/wiki/Le_Vent_(album)",
+     "https://music.apple.com/fr/album/1442662491"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/8d/2c/ac8d2c31-ded1-42f3-8223-63c74ff28fc3/mzaf_16831124428582693560.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442662491",
+    "storefront": "FR"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Georges Brassens",
+   "album": "Nº10 : Les Copains d'abord",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f8335795-a806-3bfc-8113-8b0fc7f1ea8e。回問確認：title「Nº10 : Les Copains d'abord」、artist-credit「Georges Brassens」、first-release-date 1964-11、primary-type Album、secondary-types 空、轄下 4 個 release（FR／Official ×3、XW／Official ×1）。刻意不釘：0818fff0-0c58-37cb-9a38-5014e9bee08b《Volume 8 : Les Copains d’abord》（1965 重新編號的再版，盤名主體完全相同，是本張最像的假陽性）、1476ba0e-2e25-3ffc-bd4f-2595ceebd260《Nº9 : Les Trompettes de la renommée》（1962 前一張）、42124267-42a9-3a08-9737-6c2d94b4f05f《Volume 7 : Les Trompettes de la renommée》（1965 同批重編號）。藝人 MBID b58165ba-ac55-49a1-8855-caf16c68f5f2。",
+    "rgMbid": "f8335795-a806-3bfc-8113-8b0fc7f1ea8e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f8335795-a806-3bfc-8113-8b0fc7f1ea8e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標題曲是替 Yves Robert 的電影《Les Copains》寫的，1965 年 1 月才上映。法文維基記〈La Tondue〉為解放後被剃頭的女性求情，而〈Les Deux Oncles〉是一首反軍國主義的歌，當年被部分媒體嚴詞批評，指他把反抗運動與通敵混為一談。同一條目記樂手只有三人，並記這是他在法國發行的第十張專輯。盤上記著 1964 年 11 月的法國盤由 Philips 發行、編號 B 77.894 L，十一軌，曲長 2:48 到 4:33。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f8335795-a806-3bfc-8113-8b0fc7f1ea8e",
+     "https://musicbrainz.org/release/deff1c6c-ba19-497d-8375-98b5ecdd8a1d",
+     "https://fr.wikipedia.org/wiki/Les_Copains_d'abord_(album_de_Georges_Brassens)",
+     "https://music.apple.com/fr/album/1442280345"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/df/62/0ddf6270-c276-dcd3-716c-00f0ca09adcc/mzaf_18266902336752307414.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442280345",
+    "storefront": "FR"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Léo Ferré",
+   "album": "Verlaine et Rimbaud chantés par Léo Ferré",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 217f3aa1-41fa-470f-a3c1-99db6f3345a5。回問確認：title「Verlaine et Rimbaud chantés par Léo Ferré」、artist-credit「Léo Ferré」、first-release-date 1964-12、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official ×2）。刻意不釘：3444f724-3255-4731-9f64-0245fb9a1190《Charles Baudelaire: Les Fleurs du mal chantées par Léo Ferré》（1957，同一系列、句型完全相同，是本張最像的假陽性）、d3c61972-64fe-4b3d-aa33-11160bf588d5《Léo chante Baudelaire – Vol. III》（1967 同系列）、5dd4c55d-427b-301c-ba99-dbaf770ea373《Les Chansons d’Aragon chantées par Léo Ferré》（1961 同句型）。藝人 MBID 15b1cbac-060a-4136-9e07-4622c52c0f60，名下 192 個 release-group（分頁 browse 取滿）。",
+    "rgMbid": "217f3aa1-41fa-470f-a3c1-99db6f3345a5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/217f3aa1-41fa-470f-a3c1-99db6f3345a5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 79,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1964 年 5 月，巴黎的 Barclay 錄音室，四天錄完二十四首。法文維基記 Verlaine 那部分的曲子寫於 1959 到 1963 年，Rimbaud 那一半除一首之外都寫於 1964 年洛特省的 Pechrigal 城堡。成品把 Verlaine 十四首與 Rimbaud 十首交錯編排，分裝成兩張黑膠。同一條目記這是他繼 Baudelaire、Apollinaire、Aragon 之後第四張獻給書冊詩人的專輯，也記它是流行音樂史上第一張錄音室雙唱片。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/217f3aa1-41fa-470f-a3c1-99db6f3345a5",
+     "https://musicbrainz.org/release/b18f7726-294a-4c5b-938e-01a5fd7046ad",
+     "https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9",
+     "https://music.apple.com/fr/album/1442698879"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a7/a3/f2/a7a3f2cc-8f99-ed4d-1ecc-268bcbf5f1e4/mzaf_2803538364475659141.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442698879",
+    "storefront": "FR"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Léo Ferré",
+   "album": "Il n'y a plus rien",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9ad2ae87-70e9-3861-b457-8cd44658f6a4。回問確認：title「Il n’y a plus rien」、artist-credit「Léo Ferré」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 3 個 release（FR／Official ×3）。刻意不釘：b10c7f8d-87f1-4fb7-a27b-ef51487d3287《Et… Basta !》(1973-12 同年)、62948af2-caeb-4a49-b4da-31c9f722785e《L’Espoir》(1974，1989 年與本張併成雙張再發)。藝人 MBID 15b1cbac-060a-4136-9e07-4622c52c0f60。",
+    "rgMbid": "9ad2ae87-70e9-3861-b457-8cd44658f6a4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9ad2ae87-70e9-3861-b457-8cd44658f6a4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4027,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "除了第一軌的人聲 Danièle Licari，這張的樂手至今沒被辨識出來。法文維基記這是他第一張從配器到指揮都由自己包辦的交響作品，此後他不再需要編曲者的服務，並記這張的演唱更接近宣敘調、口語詩、朗誦與說唱之間，而不像歌唱。開場的是〈Préface〉3:20，收尾的〈Il n'y a plus rien〉16:08 則清算 1960 年代與五月風暴留下的烏托邦。盤上記著 1973 年的法國盤由 Barclay 發行、編號 80 483，六軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9ad2ae87-70e9-3861-b457-8cd44658f6a4",
+     "https://musicbrainz.org/release/e1a32a02-2d7b-405b-8f2e-c4eeeb6e3ff0",
+     "https://fr.wikipedia.org/wiki/Il_n'y_a_plus_rien_(album)",
+     "https://music.apple.com/us/album/1442884628"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/a7/7d/eca77dbc-f4d1-5e19-0941-25e5b43a638d/mzaf_12173784519890554674.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442884628",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Víctor Jara",
+   "album": "Canto libre",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bd37a91a-1af4-49e5-a127-0f96044ee47c。回問確認：title「Canto libre」、artist-credit「Víctor Jara」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（CL／Official ×2）。刻意不釘：713b1f00-cd05-4ee7-a48f-40173d020b66《Canciones folklóricas de América》（1970 同年，MB 同時掛在 Víctor Jara 與 Quilapayún 名下，是跨藝人的雙掛名碟）、951bb2bd-7287-4766-a1c6-92fb78ae9b2a《Canto por travesura》（1973，同批提案的另一張，盤名同樣以 Canto 開頭）、25bc25df-7968-49b4-8fc7-4400324cb62c《Canto a lo humano》（1994 後世整編）。藝人 MBID b7e6a7fb-1d38-4ad8-bd97-c125ad4421ab，名下 40 個 release-group。",
+    "rgMbid": "bd37a91a-1af4-49e5-a127-0f96044ee47c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bd37a91a-1af4-49e5-a127-0f96044ee47c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1654,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一首裡有阿根廷的歌、波多黎各的歌，也有墨西哥的。那三首分別是〈Canción del árbol del olvido〉〈Lamento borincano〉與〈Corrido de Pancho Villa〉。西班牙文維基記 Quilapayún 與 Inti-Illimani 兩個團體都參與了這張；同一條目記這是他個人名下第五張錄音室專輯，1970 年由 Odeon 發行。原盤十一軌，原始封面是一扇上了掛鎖的門，門上釘著寫他名字的金屬牌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bd37a91a-1af4-49e5-a127-0f96044ee47c",
+     "https://musicbrainz.org/release/eb106890-7797-4548-833e-5abfc74507be",
+     "https://es.wikipedia.org/wiki/Canto_libre",
+     "https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_V%C3%ADctor_Jara",
+     "https://music.apple.com/gb/album/713635889"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/85/5e/19/855e1973-6fbd-374a-0161-abf12ada54bb/mzaf_11362480306115852954.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713635889",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Víctor Jara",
+   "album": "Canto por travesura",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 951bb2bd-7287-4766-a1c6-92fb78ae9b2a。回問確認：title「Canto por travesura」、artist-credit「Víctor Jara」、first-release-date 1973-09、primary-type Album、secondary-types 空、轄下 10 個 release（CL／Official ×5、ES／Official ×3、EC／Official ×1、XE／Official ×1）。刻意不釘：bd37a91a-1af4-49e5-a127-0f96044ee47c《Canto libre》（1970，同批提案的另一張）、25bc25df-7968-49b4-8fc7-4400324cb62c《Canto a lo humano》（1994 後世整編，盤名同樣以 Canto 開頭）、9b38a59b-b848-30fe-8426-de2e8741e8b1《La población》（1972，池中已有）。藝人 MBID b7e6a7fb-1d38-4ad8-bd97-c125ad4421ab。",
+    "rgMbid": "951bb2bd-7287-4766-a1c6-92fb78ae9b2a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/951bb2bd-7287-4766-a1c6-92fb78ae9b2a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 827,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片 1973 年 9 月發行，同月 16 日他在聖地牙哥被殺害。西班牙文維基的唱片目錄裡，錄音室專輯欄以本張作結，身後作品欄的第一筆是 1974 年的《Tiempos que cambian》——限定在錄音室專輯這個範圍，這是他生前的最後一張。同一條目記全碟音樂皆出自智利民間傳統，並記〈La beata〉原先發表在他 1966 年的第二張單曲上，當年因歌詞引起天主教會爭議，七年後才第一次收進長時間唱片。原盤十二軌，曲長 0:57 到 4:41。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/951bb2bd-7287-4766-a1c6-92fb78ae9b2a",
+     "https://musicbrainz.org/release/49507b26-b046-4ab3-bedb-23dae6b822a9",
+     "https://es.wikipedia.org/wiki/Canto_por_travesura",
+     "https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_V%C3%ADctor_Jara",
+     "https://es.wikipedia.org/wiki/V%C3%ADctor_Jara",
+     "https://music.apple.com/us/album/1446799751"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/11/fa/0a/11fa0a8e-ceb2-22f3-ec52-06bc7de2ae2a/mzaf_2463641979039491808.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1446799751",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Violeta Parra",
+   "album": "Recordando a Chile: Una chilena en París",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fa3830b1-9f55-4880-b861-15364a743417。回問確認：title「Recordando a Chile: Una chilena en París」、artist-credit「Violeta Parra」、first-release-date 1965-08、primary-type Album、secondary-types 空、轄下 3 個 release（CL／Official ×2、XW／Official ×1）。刻意不釘：0a04b244-b893-4825-a05e-7656b732154f《El folklore de Chile según Violeta Parra》(1962)、de4864c4-2cb7-4d40-ac43-40257ae39257《El folklore de Chile, vol. VIII: Toda Violeta Parra》(1961)、705e96ab-3515-37d1-b3ce-629edc53ee16《Las últimas composiciones de Violeta Parra》(1966，池中已有)、aee2c6e3-deed-4739-8973-77e7f0925b2e《Canta sus últimas composiciones…》(2023 再編)。藝人 MBID bb92cd9f-0446-42bb-adc7-b6f7c5bea2e3，名下 37 個 release-group。",
+    "rgMbid": "fa3830b1-9f55-4880-b861-15364a743417",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0c/51/be/0c51bef1-d998-2bcb-4ef6-8cbf53082010/8445162742429.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1647764240",
+    "note": "試聽探測釘定的 collectionId 1647764240（cl）：Violeta Parra — Recordando a Chile"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 149,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "哥哥 Nicanor 寫的一首詩，由他自己朗誦，她彈吉他伴奏。西班牙文維基記那首是〈Defensa de Violeta Parra〉，出自她的兄長、反詩人 Nicanor Parra，詩文後來收進 1969 年的《Obra gruesa》；她的兩個孩子 Isabel 與 Ángel 也參與了這張。同一條目記錄音分成兩地，五首錄於 1964 年 8 月與 10 月的聖地牙哥，其餘錄於 1965 年的巴黎。十一軌裡有兩首以法文演唱，封面用的是她自己的麻布繡畫。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/fa3830b1-9f55-4880-b861-15364a743417",
+     "https://musicbrainz.org/release/816b7fa5-6c9d-45af-a3d0-359ee9dda865",
+     "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)",
+     "https://music.apple.com/cl/album/1647764240"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/92/5b/26925b5f-2363-9d14-d92f-bad50ae0e687/mzaf_7259524309080059280.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1647764240",
+    "storefront": "CL"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Atahualpa Yupanqui",
+   "album": "Basta ya",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ac41c4b4-2a9a-3e48-a3c6-b9ac5b14ab71。回問確認：title「Basta ya」、artist-credit「Atahualpa Yupanqui」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official、DE／Official）。刻意不釘：6a08a0aa-4858-4152-969f-5a5f39366edb《Una voz y una guitarra》(1953-10 他最早的 LP，CAA 與 Apple 兩路皆空，本批未收)、943cba22-5cb4-4fc8-93d9-e1d9ccd2a218《Yo me he criao a puro campo》(1971 同年)、0c15ce24-795e-379c-a6a1-837df0e3ed04《El Payador perseguido》(1964，池中已有)。藝人 MBID 291aaf6f-3553-462a-92ed-0f91f19f75fb，名下 97 個 release-group（分頁 browse 取滿）。",
+    "rgMbid": "ac41c4b4-2a9a-3e48-a3c6-b9ac5b14ab71",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ac41c4b4-2a9a-3e48-a3c6-b9ac5b14ab71/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1395,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三折封套裡，歌詞西班牙文與法文並排印著。Discogs 記 1971 年的法國原盤出自 Le Chant du Monde、編號 LDX 74457，封面照片 Jean-Pierre Leloir。西班牙文維基記 1950 年 Edith Piaf 邀他在巴黎演出，他隨即與這家廠牌簽約，該公司發行了他在歐洲的第一張 LP《Minero soy》，並拿下 Charles Cros 學院的首獎。1971 年這張仍出自同一家廠牌，十二軌，曲長 2:01 到 5:40。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ac41c4b4-2a9a-3e48-a3c6-b9ac5b14ab71",
+     "https://musicbrainz.org/release/89b7369e-5cd7-4e06-8218-b00fec97fbce",
+     "https://www.discogs.com/release/2913298",
+     "https://es.wikipedia.org/wiki/Atahualpa_Yupanqui"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Quilapayún",
+   "album": "La Fragua",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5ec07bc8-2521-439a-b9ca-8f0549ed9eed。回問確認：title「La Fragua」、artist-credit「Quilapayún」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（CL／Official ×1、CL／status 未填 ×1）。刻意不釘：b0d49795-dda8-36af-9e5f-12940750f20b《Cantata Santa María de Iquique》(1970，池中已有)、d8e7d3bb-7ac0-3363-91e4-1adeb2bd5a23《Cantata Santa María de Iquique (nueva versión)》(1978)、63481b1b-8216-3a33-82c6-f607ee015d6e《Basta》(1969)。藝人 MBID 46cbe388-52fe-410e-82ef-a5eae098c2d6，名下 64 個 release-group。",
+    "rgMbid": "5ec07bc8-2521-439a-b9ca-8f0549ed9eed",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5ec07bc8-2521-439a-b9ca-8f0549ed9eed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 465,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "全篇的詞與曲出自 Sergio Ortega，朗誦由 Roberto Parada 擔任。西班牙文維基記本張的音樂形式屬於清唱劇；Discogs 記 Eduardo Moubarak 指揮，樂團六人未在封面掛名。歌與朗誦交錯貫串整部作品，開場那段朗誦之後接的是〈Sol luminoso〉，第二張唱片的 D 面收的則是先前已發表歌曲的不同版本。同一筆 Discogs 說明並記這是 DICAP 的第一張立體聲發行。盤上記著 1973 年在智利出版，此後樂團滯留法國。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/5ec07bc8-2521-439a-b9ca-8f0549ed9eed",
+     "https://musicbrainz.org/release/3dd718a7-a214-4a94-abff-9a44ef16c2b5",
+     "https://www.discogs.com/release/4763309",
+     "https://es.wikipedia.org/wiki/La_fragua_(%C3%A1lbum)",
+     "https://es.wikipedia.org/wiki/Quilapay%C3%BAn",
+     "https://music.apple.com/us/album/1596952734"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ef/71/89/ef7189ba-adc6-b469-e45b-94cc22d568b7/mzaf_5017969778007843654.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1596952734",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Inti-Illimani",
+   "album": "Inti-Illimani 2: La nueva canción chilena",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0fef6dcb-5997-4abd-9b90-6f0dbf86ce8a。回問確認：title「Inti-Illimani 2: La nueva canción chilena」、artist-credit「Inti‐Illimani」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 4 個 release（IT／Official ×1、CL／Official ×1、國別未填 Official ×2）。刻意不釘：55b36198-d82d-3c31-819e-2cda0690549a《Viva Chile!》(1973，池中已有)、90243438-bb3e-3893-88ff-e9f568b3b0a4《Inti‐Illimani 4: Hacia la libertad》(1975)、9121932d-7e44-3f59-9abf-88d9de99de5c《Inti‐Illimani 5: Canto de pueblos andinos, vol. II》(1976)、ad22a351-78dc-3d40-b8ff-0cd4c6d7a313《Canto de pueblos andinos, Volume I》(1973)——後三筆與本張共用編號型盤名。藝人 MBID a962cd78-1f5f-4cef-838d-07e2f9d8b02d，名下 68 個 release-group。",
+    "rgMbid": "0fef6dcb-5997-4abd-9b90-6f0dbf86ce8a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0fef6dcb-5997-4abd-9b90-6f0dbf86ce8a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "米蘭的錄音室，1974 年 3 月——他們在義大利做的第二張。西班牙文維基記時間點在 1973 年智利政變導致他們流亡之後，同年由義大利廠牌 Dischi dello Zodiaco 發行。同一條目逐人列出樂團六名成員，樂器涵蓋 charango、cuatro、tiple、quena、吉他與打擊。封面設計出自畫家 Gracia Barrios。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/0fef6dcb-5997-4abd-9b90-6f0dbf86ce8a",
+     "https://musicbrainz.org/release/26a6464e-9149-4abb-8f8e-d31eea4493b2",
+     "https://es.wikipedia.org/wiki/La_nueva_canci%C3%B3n_chilena_(Inti-Illimani_2)",
+     "https://es.wikipedia.org/wiki/Quilapay%C3%BAn"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chavela Vargas",
+   "album": "La Llorona",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1629ef12-917e-3db1-9854-bec7a0fb8e11。回問確認：title「La Llorona」、artist-credit「Chavela Vargas」、first-release-date 1993-04、primary-type Album、secondary-types 空、轄下 3 個 release（ES／Official ×3）。刻意不釘：5f09734d-120b-40a5-a7bf-e2b4f50e4bff《La Llorona》(2017-11-17)、19d6519f-eaea-411b-9053-70b7005abbe2《La Llorona》(2017-11-27)、382490e6-69f9-40ba-8555-3781cc43a62e《La Llorona (Remastered)》(2017-12-01)、07310f36-9bab-4e86-b4e4-ddbf76daf489《Noche Bohemia》(1961，池中已有)——前三筆與本張盤名完全相同，是全批最危險的一組假陽性。藝人 MBID 77586a91-4586-4962-b836-e496d3a05432，名下 50 個 release-group。",
+    "rgMbid": "1629ef12-917e-3db1-9854-bec7a0fb8e11",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1629ef12-917e-3db1-9854-bec7a0fb8e11/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 38907,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "她 1991 年在墨西哥城的夜總會 El Hábito 重新登台。英文維基記她此前因長達十五年的酗酒退出演出。復出之後她的事業重新取得國際聲量，1994 年 10 月登上巴黎的奧林匹亞劇院，2003 年在 Pedro Almodóvar 的推動下以 83 歲之齡首度登上卡內基音樂廳。盤上記著 1993 年的西班牙盤由 Turner Records 發行、編號 TCD 0002、CD，十一軌，標題曲〈La Llorona〉8:31 是全碟最長的一首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1629ef12-917e-3db1-9854-bec7a0fb8e11",
+     "https://musicbrainz.org/release/21938965-5c06-4a1b-bef0-4470144dace9",
+     "https://en.wikipedia.org/wiki/Chavela_Vargas",
+     "https://es.wikipedia.org/wiki/Chavela_Vargas",
+     "https://music.apple.com/es/album/257207298"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/1d/d7/66/1dd766ca-894a-1d43-27bf-e2b3224be4cf/mzaf_9791166841157342041.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "257207298",
+    "storefront": "ES"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alan Stivell",
+   "album": "Reflets",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 95c078e0-78af-3d0b-acae-75e35f4d18fe。回問確認：title「Reflets」、artist-credit「Alan Stivell」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 3 個 release（FR／Official ×2、GB／Official ×1）。刻意不釘：ecd4a5b2-8ea2-3205-9763-374f4037255a《Telenn geltiek (Harpe celtique)》(1964，Alan Cochevelou 時期)、9bbcb3af-d8a9-3cc2-90e2-0b9151afa489《Renaissance de la harpe celtique》(1971，池中已有的王牌卡)。藝人 MBID abc61045-7ae3-48d9-91f2-d44689d53c9a，名下 48 個 release-group。",
+    "rgMbid": "95c078e0-78af-3d0b-acae-75e35f4d18fe",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/95c078e0-78af-3d0b-acae-75e35f4d18fe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3112,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Stivell 在布列塔尼語裡是「泉源」，他要做的是一道新的泉源。這段話出自他寫在原封套上的文字，同一段他並寫，他不想比 Mozart、Elvis Presley 或 Ravi Shankar 做得更多或更少的民俗。法文維基記這是他的第一張職業專輯，也是他第一張有演唱的專輯，此前只有一張 1965 年的凱爾特豎琴器樂唱片；同一條目稱這張標誌著凱爾特流行樂的誕生。盤上記著 1970 年 12 月的法國盤由 Fontana 發行、編號 6325340，十軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/95c078e0-78af-3d0b-acae-75e35f4d18fe",
+     "https://musicbrainz.org/release/d6eb469c-b3fe-4475-98fa-d6ecc71db9eb",
+     "https://fr.wikipedia.org/wiki/Reflets_(album_d'Alan_Stivell)",
+     "https://fr.wikipedia.org/wiki/Alan_Stivell",
+     "https://music.apple.com/us/album/1677338476"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/2e/5f/d1/2e5fd1c9-7d8f-3326-f0c2-6a1e548ef3e6/mzaf_11056352338879822469.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1677338476",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alan Stivell",
+   "album": "E langonned (A Langonnet)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6c69672d-79c6-3861-ab43-fc1a08c34805。回問確認：title「E langonned (A Langonnet)」、artist-credit「Alan Stivell」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official ×2）。刻意不釘：a94757b8-2a6c-3bda-9ab5-4e4d2d902747《Chemins de terre》(MB first-release-date 1974，池中已有)、3c617033-fd21-3f45-9c0b-6aa0029e4338《Trema'n inis (vers l'île)》(1976，同樣是布列塔尼語加法語括號副標的同型盤名)。藝人 MBID abc61045-7ae3-48d9-91f2-d44689d53c9a。",
+    "rgMbid": "6c69672d-79c6-3861-ab43-fc1a08c34805",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6c69672d-79c6-3861-ab43-fc1a08c34805/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 95,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩首威爾斯曲、一首曼島曲、一首愛爾蘭曲，選它們是因為夠布列塔尼。這個判準出自 Stivell 自己的說法，同一段他也說某些布列塔尼曲是因為它們的蓋爾性格而被選上。法文維基記這是一張原音唱片，回到凱爾特尤其是布列塔尼音樂的根柢；他在同段自述裡明說這張沒有更往電子、搖滾或自由爵士走。〈Planedenn〉與〈Ne bado ket atao〉用的是 Y. B. Piriou 為傳統曲調寫的新詞。盤上記著 1974 年的法國盤由 Fontana 發行，十六軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6c69672d-79c6-3861-ab43-fc1a08c34805",
+     "https://musicbrainz.org/release/09303181-b141-41d2-ac2c-998349d70dfa",
+     "https://fr.wikipedia.org/wiki/E_Langonned",
+     "https://music.apple.com/fr/album/1677196014"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/03/41/26/034126dd-2a08-33ca-9406-432356c88f70/mzaf_9275866666455602111.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1677196014",
+    "storefront": "FR"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Malicorne",
+   "album": "Le Bestiaire",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8dbf14b0-ab66-3bfe-980d-eb764871e19c。回問確認：title「Le Bestiaire」、artist-credit「Malicorne」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 4 個 release（FR／Official ×4）。刻意不釘：f98959fa-9e42-3652-8a09-ba431997c63b《Malicorne》(1974)、a54fb845-2e95-32b5-9b63-bf899999db48《Malicorne》(1975)、1ae8e891-e763-3ce0-afb4-1b7fb64d6284《Malicorne》(1977)——三筆自我同名，是這位藝人下所有假陽性的來源；6d435009-0397-3710-ab6a-b1f075c5e89e《Almanach》(1976，池中已有)。藝人 MBID ce5f578f-5dec-455f-8f24-cc7dc3964a12，名下 15 個 release-group（全列）。",
+    "rgMbid": "8dbf14b0-ab66-3bfe-980d-eb764871e19c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8dbf14b0-ab66-3bfe-980d-eb764871e19c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1178,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "動物與神話當主角，也是他們最後一張以傳統為取向的錄音室專輯。法文維基記這是一張概念專輯、一張主題專輯，歌曲多數出自法國或魁北克的傳統曲目；同一條目記樂團的聲音再一次演變、變得非常 pop，但無伴奏合唱與器樂曲仍在。七名樂手帶進絞弦琴、五弦班鳩、巴松管與簧風琴，而兩位創團成員 Laurent Vercambre 與 Hughes de Courson 此時已被其他樂手取代。盤上記著 1979 年的法國盤八軌，曲長 2:10 到 8:02。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8dbf14b0-ab66-3bfe-980d-eb764871e19c",
+     "https://musicbrainz.org/release/8f8548d3-da52-4c58-9ddf-36b8d52b29a8",
+     "https://fr.wikipedia.org/wiki/Le_Bestiaire",
+     "https://musicbrainz.org/artist/ce5f578f-5dec-455f-8f24-cc7dc3964a12",
+     "https://music.apple.com/us/album/284010204"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/03/af/5b/03af5b4a-8898-cf9f-d6a8-dc38e2b67731/mzaf_1879706399351006058.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "284010204",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Planxty",
+   "album": "After the Break",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group af478204-dd9f-3d36-b3e8-0e42db14aa03。回問確認：title「After the Break」、artist-credit「Planxty」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 4 個 release（IE／Official ×3、US／Official ×1）。刻意不釘：09aa8076-1dab-367d-b4e0-f007793bf6a5《Words & Music》(1983)、cb0f3123-2815-3a0f-8917-27d7f5b6de88《The Woman I Loved So Well》(1992)——同屬重組後目錄，日後要補深可從這兩張接。藝人 MBID 3dc88d73-6125-48e6-9a6a-b3024d62ee51，名下 16 個 release-group（全列）。",
+    "rgMbid": "af478204-dd9f-3d36-b3e8-0e42db14aa03",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/af478204-dd9f-3d36-b3e8-0e42db14aa03/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5292,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "收尾是〈Smeceno Horo〉，Andy Irvine 帶進團裡的保加利亞舞曲。英文維基記 Irvine 形容那是他把兩個傳統揉在一起、做得最接近的一次。同一條目記這是樂團 1975 年首度解散之後發行的第一張專輯，回來的是 Moore、Lunny、Irvine、O'Flynn 四位原班人馬，加上新進的長笛手 Matt Molloy。這是他們在 Tara Records 的兩張唱片中的第一張，愛爾蘭盤編號 TARA 3001，原盤八軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/af478204-dd9f-3d36-b3e8-0e42db14aa03",
+     "https://musicbrainz.org/release/16b572e0-0cc5-4091-af3b-f3b74c31273c",
+     "https://en.wikipedia.org/wiki/After_the_Break",
+     "https://en.wikipedia.org/wiki/Tara_Music",
+     "https://music.apple.com/us/album/1504870809"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/64/20/07/642007c7-8349-82ae-eb88-1b9a6258d234/mzaf_12327702095241089721.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1504870809",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Chieftains",
+   "album": "The Chieftains",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ddbab0c5-9d71-3831-b000-733f0434474f。回問確認：title「The Chieftains」、artist-credit「The Chieftains」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 8 個 release（US／Official ×4、IE／Official ×2、GB／Official ×1、XW／Official ×1）。刻意不釘：d457764d-cc6e-3dc9-b5eb-7cdcb9ff8673《The Chieftains 2》(1969)、64a61af7-f3b8-3048-9160-2754bcdf4ad9《The Chieftains 3》(1971)、a2fc7707-7aac-39fb-bd25-7e6e514a370b《The Chieftains 4》(1973，池中已有)、8871b8d0-82a6-32e6-aa42-a1a3b0cddc11《The Chieftains 5》(1975，池中已有)——四筆的盤名都以本張盤名為前綴。藝人 MBID fce5eb9a-95a7-4a54-b9e4-fe1b036fbe57，名下 54 個 release-group。",
+    "selfTitledVerified": true,
+    "rgMbid": "ddbab0c5-9d71-3831-b000-733f0434474f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ddbab0c5-9d71-3831-b000-733f0434474f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 283,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場那一軌八分零七秒，四支傳統曲子接成一組。英文維基記全碟曲目皆為傳統作品，並稱它是最早以立體聲錄製的民謠專輯之一。編制五人：Paddy Moloney 吹 uilleann pipes 與 tin whistle、兼編曲與音樂總監，Martin Fay 拉提琴，Seán Potts 吹 tin whistle，David Fallon 打 bodhrán。十一軌長度從 1:22 到 8:07。盤上記著愛爾蘭盤由 Claddagh Records 發行、編號 CC2。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ddbab0c5-9d71-3831-b000-733f0434474f",
+     "https://musicbrainz.org/release/359516b4-f8d7-4b37-bdab-0c927982278e",
+     "https://en.wikipedia.org/wiki/The_Chieftains_(album)",
+     "https://www.discogs.com/label/Claddagh+Records",
+     "https://www.discogs.com/master/334099",
+     "https://music.apple.com/ie/album/1573288169"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/62/16/cf/6216cfe4-75fa-3942-5d35-8a00eff752a4/mzaf_4969111235868270685.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1573288169",
+    "storefront": "IE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nic Jones",
+   "album": "The Noah's Ark Trap",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ea31e37e-72b4-36d1-acda-835251d95c36。回問確認：title「The Noah's Ark Trap」、artist-credit「Nic Jones」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 2 個 release（GB／Official、US／Official）。刻意不釘：7293e161-5e3a-3337-a5bb-f5aa59b9abe2《Nic Jones》(1971 自我同名)、b781087b-d329-41ac-97d2-ec435b6a04f9《From the Devil to a Stranger》(1978 下一張)、85150341-e4e0-3649-952d-471be6a9edc4《Penguin Eggs》(1980，池中已有)。藝人 MBID c8c48b19-2e0b-43cb-8967-de771061c16f，名下 11 個 release-group（全列）。",
+    "rgMbid": "ea31e37e-72b4-36d1-acda-835251d95c36",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ea31e37e-72b4-36d1-acda-835251d95c36/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 498,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "聽過 Martin Carthy 的錄音之後，他把標準調弦換成了 DADGAD。英文維基記他用塑膠拇指撥片與裸指撥弦，力道大到弦會彈起再打回指板，伴奏因此帶著拍擊般的聲音。同一條目記他 1970 年替 Trailer Records 發表第一張個人專輯，一生錄過五張個人專輯。曲目以英格蘭與蘇格蘭傳統敘事歌為主，末曲是〈Annachie Gordon〉6:33。盤上記著 1977 年的英國盤由 Trailer 發行、編號 LER 2091。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ea31e37e-72b4-36d1-acda-835251d95c36",
+     "https://musicbrainz.org/release/48db3911-4e0b-4dce-b423-57e47cc57934",
+     "https://en.wikipedia.org/wiki/The_Noah's_Ark_Trap",
+     "https://en.wikipedia.org/wiki/Nic_Jones",
+     "https://itunes.apple.com/lookup?id=78443287&entity=album&limit=200&country=gb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Selda Bağcan",
+   "album": "Özgürlük ve Demokrasiyi Çizmek",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fbf80ad9-7881-4c53-80fd-0e7c7aa9eea6。回問確認：title「Özgürlük ve Demokrasiyi Çizmek」、artist-credit「Selda Bağcan」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 1 個 release（TR／Official）。刻意不釘：5360dad5-44cd-4777-a7ad-01170871f7b6《Yeni Bir Dünya》(1981，CAA 與 Apple tr 兩路皆空，本批未收)、c2ee9e0a-7be2-4619-8ef3-70fed15bfc75《Yürüyorum Dikenlerin Üstünde》(1987，CAA 404、Apple tr 371878862 有，是本批的次選)、6e95375f-a48b-3afd-b1a5-1a4b549023df《Selda》(1976，池中已有，掛名記成 Selda)、a536a9ee-8c26-4d76-bb65-df8cf1b97fea《Türkülerimiz 2》(1996)。藝人 MBID 5e51e09d-0713-4595-b858-d7e887238825，名下 70 個 release-group。",
+    "rgMbid": "fbf80ad9-7881-4c53-80fd-0e7c7aa9eea6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fbf80ad9-7881-4c53-80fd-0e7c7aa9eea6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11552,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八首歌裡，「監獄」出現兩次，Metris 出現一次。那三首是〈Mapushane İçinde Mermerden Direk〉〈Mapushanelere Güneş Doğmuyor〉與〈Metris'ten Bir Haber Geldi〉。土耳其文維基記 1980 年軍事政變之後她的產出受到限制，1984 年 4 月 24 日被逮捕入獄，直到 1987 年才重新拿到護照，隔年又在西歐巡演四個月。這張正是 1988 年出的，十八軌，曲長 1:29 到 5:27。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/fbf80ad9-7881-4c53-80fd-0e7c7aa9eea6",
+     "https://musicbrainz.org/release/6241f615-c04c-417c-a25c-cb2f79fc0571",
+     "https://tr.wikipedia.org/wiki/Selda_Ba%C4%9Fcan",
+     "https://tr.wikipedia.org/wiki/D%C3%BCnyan%C4%B1n_B%C3%BCt%C3%BCn_%C3%87i%C3%A7ekleri",
+     "https://music.apple.com/us/album/1646471470"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/31/e9/aa/31e9aa3d-f117-96c8-b238-a3c210b6effa/mzaf_17020783477426818088.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1646471470",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ruhi Su",
+   "album": "Pir Sultan Abdal",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 403c1284-fc4d-4e0a-89c3-2880c110d7af。回問確認：title「Pir Sultan Abdal」、artist-credit「Ruhi Su」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（TR／Official）。刻意不釘：2cac7c48-8028-4ab4-bf1f-732459ce5a13《Karacaoğlan / Pir Sultan Abdal》(1993 二合一)、2685fb46-32ed-481f-bea3-bbd13cf706e7《Sultan Suyu / Pir Sultan Abdal'dan Deyişler》(1993)、c5386b88-a4e6-4dcc-8865-53d1d4a7b11e《Pir Sultan'dan Levni'ye》(1986)、6bde11d9-e5ab-4826-86d4-b2b2e573edf4《Yunus Emre》(1972 同年同型，CAA 404 故本批未收)。藝人 MBID 8237c155-fc42-4462-af0b-3423dcdba256，名下 28 個 release-group。",
+    "rgMbid": "403c1284-fc4d-4e0a-89c3-2880c110d7af",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/403c1284-fc4d-4e0a-89c3-2880c110d7af/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 86,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱過《托斯卡》與《弄臣》的男低音，在這裡唱阿列維派的 deyiş。土耳其文維基記 Ruhi Su 1942 年畢業於安卡拉國立音樂院聲樂部，而那套古典訓練構成了他詮釋民歌的理論基礎；同一條目記他因社會主義世界觀在 1951 年被捕，1952 到 1957 年間服刑。他的唱片目錄上，《Yunus Emre》《Karacaoğlan》之後就是本張，再之後是《Köroğlu》，一位詩人一張唱片。盤上記著土耳其盤由 İmece 發行、編號 İM - 20，十一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/403c1284-fc4d-4e0a-89c3-2880c110d7af",
+     "https://musicbrainz.org/release/7192e68c-8c20-4a6e-87a6-e5a1703360cf",
+     "https://tr.wikipedia.org/wiki/Pir_Sultan_Abdal_(alb%C3%BCm)",
+     "https://tr.wikipedia.org/wiki/Ruhi_Su",
+     "https://itunes.apple.com/lookup?id=275076371&entity=album&limit=200&country=tr"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Neşet Ertaş",
+   "album": "Gönül Dağı",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1958c753-f44e-3d88-a95a-bccd928b3dcc。回問確認：title「Gönül Dağı」、artist-credit「Neşet Ertaş」、first-release-date 1999-06-07、primary-type Album、secondary-types 空、轄下 2 個 release（TR／Official、XW／Official）。刻意不釘：ecc13eac-59b4-3895-a642-e026e98a3932《Zülüf Dökülmüş Yüze》(1999-06-07 同日)、05d338e7-4ca9-35db-88b4-80ba97c634b0《Ölmeyen Türküler 3》(1999-05-20)、3318595a-6212-307a-b611-0aaf4bd55029《Zahidem》(1990，池中已有)。藝人 MBID 9e42d92e-a2b4-426b-9b3f-51c36f86b785，名下 55 個 release-group。",
+    "rgMbid": "1958c753-f44e-3d88-a95a-bccd928b3dcc",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1958c753-f44e-3d88-a95a-bccd928b3dcc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13775,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他從未上過學，自學小提琴，之後是 cümbüş 與 bağlama。土耳其文維基引他自己的說法，他藝術上的九成要歸功於父親 Muharrem Ertaş；同一條目記他從 1960 年代起把自己寫的詩譜曲演唱，並稱他是土庫曼／Abdal 文化與音樂傳統的最後一位偉大代表。1999 年也是第一部關於他的紀錄片《Bozkırın Tezenesi》問世的年份。盤上記著 1999 年 6 月 7 日的土耳其盤由 Kalan Müzik 發行，十軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1958c753-f44e-3d88-a95a-bccd928b3dcc",
+     "https://musicbrainz.org/release/179473b2-2911-495a-b260-05875910483f",
+     "https://tr.wikipedia.org/wiki/Ne%C5%9Fet_Erta%C5%9F",
+     "https://music.apple.com/us/album/256949343"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/34/5c/1f/345c1f33-2d3f-7d37-cbd9-4ed31578d058/mzaf_1847626304100956371.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "256949343",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "José Afonso",
+   "album": "Venham mais cinco",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7b8ec0d8-76d4-3a75-adb9-16532c02ea34。回問確認：title「Venham mais cinco」、artist-credit「José Afonso」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 4 個 release（PT／Official ×4）。刻意不釘：438e674a-3611-464c-abed-724ef6e776d4《Grandola,Vila Morena & Com As Minhas Tamanquinhas》(1993 二合一)、5a58f044-1d42-3587-bb7d-ef26582dcbe1《Coro dos tribunais》(1974 下一張)、53bfcea4-9240-343a-8634-597d7ff0e9ab《Com as minhas tamanquinhas》(1976，1993 年與本張併成雙張)。另注意 MB 上有第二個 José Afonso 藝人實體（c47513a1-ed09-4e20-bd98-1ebdc5c96f01，disambiguation 記 guitarist/vocalist），本張所釘的是 d06e7e71-0178-4e66-8150-044ff6047d64（名下 28 個 release-group）。",
+    "rgMbid": "7b8ec0d8-76d4-3a75-adb9-16532c02ea34",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7b8ec0d8-76d4-3a75-adb9-16532c02ea34/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7261,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片一上市，就有歌手買了一張，親手送進審查機關。葡萄牙文維基記她當時任職國家廣播電台女聲合唱團，唱片隨即被查禁，並由政治警察 PIDE/DGS 查扣。同一條目記 José Afonso 1973 年 4 月被關進 Caxias 堡壘監獄、5 月底才出獄，〈Era um redondo vocábulo〉的詩就寫於獄中；這是他在四月革命之前的最後一張專輯，革命之後也是最早解禁、重回電台播出的唱片之一。盤上記著 1973 年聖誕節由 Orfeu 發行、十軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7b8ec0d8-76d4-3a75-adb9-16532c02ea34",
+     "https://musicbrainz.org/release/03dd9900-9e53-4277-ba8e-a5d37f0b3838",
+     "https://pt.wikipedia.org/wiki/Venham_mais_Cinco",
+     "https://pt.wikipedia.org/wiki/Gr%C3%A2ndola,_Vila_Morena",
+     "https://music.apple.com/us/album/1806614153"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/f4/43/eff443f6-3689-b8e0-57ba-ca5a03071e01/mzaf_8498981034213701753.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1806614153",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

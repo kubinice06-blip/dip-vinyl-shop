@@ -1,0 +1,2790 @@
+{
+ "schemaVersion": 1,
+ "batch": "c111-20260910",
+ "albums": [
+  {
+   "artist": "MJ Lenderman",
+   "album": "Manning Fireworks",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0c308741-7b98-4a36-b44e-1ba437b4e2c4。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Manning Fireworks」、artist-credit「MJ Lenderman」、first-release-date 2024-09-06、primary-type Album、secondary-types 空、轄下 3 個 release（國別 XE／US／XW；status Official）。廠牌欄實查：Anti‐。藝人 MBID：MJ Lenderman 4f52595e-652d-4894-95ea-f925234629fc（名下 32 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "0c308741-7b98-4a36-b44e-1ba437b4e2c4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0c308741-7b98-4a36-b44e-1ba437b4e2c4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 256388,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九軌裡有八首三分半上下，收尾那首獨自跑滿十分鐘。前八軌落在 3:00 到 4:38，末軌〈Bark at the Moon〉10:01，是全碟唯一的斷點。錄音在北卡 Asheville 的 Drop of Sun Studios，製作是他與 Alex Farrar，後者同時掛混音與錄音工程。班底以 Wednesday 的人為主：Karly Hartzman 的和聲、Xandy Chelmis 的踏板鋼棒吉他、Ethan Baechtold 的鋼琴——他自己就是那個團的吉他手。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/0c308741-7b98-4a36-b44e-1ba437b4e2c4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=0c308741-7b98-4a36-b44e-1ba437b4e2c4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1749088991&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Manning_Fireworks",
+     "https://musicbrainz.org/ws/2/release-group?artist=4f52595e-652d-4894-95ea-f925234629fc&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/0c308741-7b98-4a36-b44e-1ba437b4e2c4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/fc/fd/18fcfdd8-2036-101e-b600-ddf96080fc28/mzaf_1964028626214497993.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1749088991",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Waxahatchee",
+   "album": "Tigers Blood",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f9aa9b53-2c89-4901-926e-e992f1e4d8c0。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Tigers Blood」、artist-credit「Waxahatchee」、first-release-date 2024-03-22、primary-type Album、secondary-types 空、轄下 3 個 release（國別 XW／XE；status Official）。廠牌欄實查：Anti‐、Epitaph。藝人 MBID：Waxahatchee 42321e24-42b6-4f08-b0d9-8325ee887a20（名下 44 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "f9aa9b53-2c89-4901-926e-e992f1e4d8c0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f9aa9b53-2c89-4901-926e-e992f1e4d8c0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 150166,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩人在〈Right Back to It〉上的和聲，是整張定調的那一刻。〈365〉是在德州 Sonic Ranch 早期錄音時就做出來的，Crutchfield 與製作人 Brad Cook 之後才把 MJ Lenderman 找進來，那段和聲才成了整張碟定形的轉折點。Lenderman 最後在原盤十二軌的每一首上都彈了電吉他。錄音在 2022 至 2023 年間完成，班底另有 Phil Cook 與打鼓的 Spencer Tweedy；十二軌收在同名曲，沒有長曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f9aa9b53-2c89-4901-926e-e992f1e4d8c0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f9aa9b53-2c89-4901-926e-e992f1e4d8c0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1772253426&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Tigers_Blood",
+     "https://musicbrainz.org/ws/2/release-group?artist=42321e24-42b6-4f08-b0d9-8325ee887a20&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/f9aa9b53-2c89-4901-926e-e992f1e4d8c0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/94/cb/7194cbbe-c0de-fad5-da40-6a73b7deabaf/mzaf_8626739943210924942.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1772253426",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tyler, The Creator",
+   "album": "CHROMAKOPIA",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ae229bdd-2179-440c-bc78-acf0952914d4。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「CHROMAKOPIA」、artist-credit「Tyler, The Creator」、first-release-date 2024-10-28、primary-type Album、secondary-types 空、轄下 10 個 release（國別 US／XW；status Official）。廠牌欄實查：Columbia。刻意不釘：5f1cd85e-2b54-4389-ae52-26dac00cf7d5《CHROMAKOPIA (Live at Camp Flog Gnaw)》（2024-11-21，Album+Live，同名現場版，本張最像的假陽性）。藝人 MBID：Tyler, The Creator f6beac20-5dfe-4d1f-ae02-0b0a740aafd6（名下 85 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "ae229bdd-2179-440c-bc78-acf0952914d4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ae229bdd-2179-440c-bc78-acf0952914d4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 2237911,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "全球唱片業把發行日壓在星期五，這張挑星期一早上六點。他公開反對把全球發行日統一在星期五的作法，2024 年 10 月 28 日那個星期一的清晨六點就把碟放了出來。全碟的詞、曲、製作與編曲都由他一人包辦，工程是 Vic Wainstein、混音 Neal H Pogue。曲序自〈St. Chroma〉起，旁白貫穿整張碟的是他母親 Bonita Smith；器樂另找了 Thundercat 的貝斯、Steve Lacy 的吉他與 Inflo 在〈Noid〉上的鼓。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ae229bdd-2179-440c-bc78-acf0952914d4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ae229bdd-2179-440c-bc78-acf0952914d4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1776500452&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Chromakopia",
+     "https://musicbrainz.org/ws/2/release-group?artist=f6beac20-5dfe-4d1f-ae02-0b0a740aafd6&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/ae229bdd-2179-440c-bc78-acf0952914d4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/b5/22/29b522ff-9e40-b3bb-838a-b3e6c9faa2fc/mzaf_17808316495222869019.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1776500452",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mk.gee",
+   "album": "Two Star & The Dream Police",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group be4a083e-be93-4715-8a22-b06539ccacc4。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Two Star & The Dream Police」、artist-credit「Mk.gee」、first-release-date 2024-02-09、primary-type Album、secondary-types 空、轄下 1 個 release（國別 XW；status Official）。廠牌欄實查：R&R Digital。藝人 MBID：Mk.gee 262cf0ce-2af2-4686-a8cc-d6b33e97336d（名下 12 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "be4a083e-be93-4715-8a22-b06539ccacc4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/be4a083e-be93-4715-8a22-b06539ccacc4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 504034,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首壓進三十三分鐘，〈DNM〉一分五十八秒就收工。原盤是十二軌單片的數位發行，單軌長度幾乎都在兩分鐘到三分三十九秒之間，只有〈Breakthespell〉的四分二十七秒拉長。製作是 Michael Gordon 自己，僅〈New Low〉與〈DNM〉兩軌由他和 Dijon Duenas 共同掛名，混音同樣是他本人；母帶分成兩份，Heba Kadry 做第二與第七軌，其餘十軌交給 Simon Lancelot。這是他以 Mk.gee 名義的首張正規專輯，廠牌掛 R&R。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/be4a083e-be93-4715-8a22-b06539ccacc4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=be4a083e-be93-4715-8a22-b06539ccacc4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1882613139&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Two_Star_%26_the_Dream_Police",
+     "https://musicbrainz.org/ws/2/release-group?artist=262cf0ce-2af2-4686-a8cc-d6b33e97336d&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/be4a083e-be93-4715-8a22-b06539ccacc4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b4/ac/10/b4ac10ec-6b8c-0a8e-1504-77d94c36b22a/mzaf_1814650424181581182.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1882613139",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kim Gordon",
+   "album": "The Collective",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c35d3885-e1a2-4959-81ff-9c005c319b22。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「The Collective」、artist-credit「Kim Gordon」、first-release-date 2024-03-08、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XW／GB；status Official）。廠牌欄實查：Matador。藝人 MBID：Kim Gordon 19301485-ac9c-4dad-885b-cd8e8c8b4184（名下 32 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "c35d3885-e1a2-4959-81ff-9c005c319b22",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c35d3885-e1a2-4959-81ff-9c005c319b22/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 70571,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "製作人先寄來一疊器樂軌，她在上頭疊人聲與破音。Justin Raisen 把幾首器樂軌寄給她，她在那些軌上加人聲與破音；歌詞全部出自她手，曲子由兩人合寫，製作掛 Raisen 與 Sadpony，Raisen 同時管混音、錄音與程式設計，母帶則是 Mike Bozzi。她說要讓這張比 2019 年的《No Home Record》更以節拍為主：人聲與吉他是她，其餘幾乎全是程式設計堆出來的節拍與器樂層。這張拿到第 67 屆葛萊美最佳另類音樂專輯與最佳另類音樂演出兩項入圍。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/c35d3885-e1a2-4959-81ff-9c005c319b22?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=c35d3885-e1a2-4959-81ff-9c005c319b22&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1719712035&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/The_Collective_(Kim_Gordon_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=19301485-ac9c-4dad-885b-cd8e8c8b4184&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/c35d3885-e1a2-4959-81ff-9c005c319b22"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/52/32/d7/5232d737-28a6-1537-5019-79b9f278ddba/mzaf_14388054334966631240.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1719712035",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Clairo",
+   "album": "Charm",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6fb46378-9cb7-4693-b76d-a62f2cc09214。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Charm」、artist-credit「Clairo」、first-release-date 2024-07-12、primary-type Album、secondary-types 空、轄下 30 個 release（國別 XW／US／XE／JP；status Official）。廠牌欄實查：Clairo Records、Good Buddy、Virgin Music Group。藝人 MBID：Clairo d786f59b-1836-4ddb-8393-ab753edbe984（名下 113 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "6fb46378-9cb7-4693-b76d-a62f2cc09214",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6fb46378-9cb7-4693-b76d-a62f2cc09214/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 1620180,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一天上架三十種版本：黑膠、卡帶、日本 SHM-CD 與四款盒裝。三十筆 release 全落在 2024 年 7 月 12 日、全部十一軌，黑膠有三種通路獨佔，盒裝各分五個尺寸，發行走的是她自己的廠牌。錄音在紐約州 Allaire Studios 與皇后區 Diamond Mine Recording，全碟以現場合奏錄在類比磁帶上，製作是她與 Leon Michels。Michels 一人包辦長笛、風琴、單簧管、薩克斯風與鐵琴；這張另入圍第 67 屆葛萊美最佳另類音樂專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6fb46378-9cb7-4693-b76d-a62f2cc09214?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=6fb46378-9cb7-4693-b76d-a62f2cc09214&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1742301413&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Charm_(Clairo_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=d786f59b-1836-4ddb-8393-ab753edbe984&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/6fb46378-9cb7-4693-b76d-a62f2cc09214"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/a3/33/eba33347-cf45-9d7d-74f7-4ccfd2d2eaf5/mzaf_2279638811993864870.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1742301413",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nick Cave & the Bad Seeds",
+   "album": "Wild God",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cbe390d1-88b3-4ff2-8f53-b3b9d8a0e25c。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Wild God」、artist-credit「Nick Cave & the Bad Seeds」、first-release-date 2024-08-30、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XW；status Official）。廠牌欄實查：Play It Again Sam、Bad Seed Ltd。刻意不釘：3e9d0f57-200f-41eb-ac50-bb2073bb265b《Wild God》（2024-03-06，Single，同名先行單曲）、bcaf0067-bccf-4065-9f37-9b962744a151《Wild God》（2025-10-22，Single+Live，同名現場單曲）。藝人 MBID：Nick Cave & the Bad Seeds 172e1f1a-504d-4488-b053-6344ba63e6d0（名下 171 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "cbe390d1-88b3-4ff2-8f53-b3b9d8a0e25c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cbe390d1-88b3-4ff2-8f53-b3b9d8a0e25c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 92392,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鋼琴加合成器太稀薄，他找了住在附近的 Colin Greenwood 進來。最早在倫敦 Soundtree 的場次只有他的鋼琴與 Warren Ellis 的合成器，他說稀薄得久了會有種假，於是請來這位 Radiohead 貝斯手。其餘錄在普羅旺斯的 Miraval Studios，製作 Cave 與 Ellis，混音 Dave Fridmann。客席另有 Luis Almau 的木吉他，第 9 軌收了 Carly Paradis 的口哨與已故 Anita Lane 的人聲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/cbe390d1-88b3-4ff2-8f53-b3b9d8a0e25c?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=cbe390d1-88b3-4ff2-8f53-b3b9d8a0e25c&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1733028849&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Wild_God",
+     "https://musicbrainz.org/ws/2/release-group?artist=172e1f1a-504d-4488-b053-6344ba63e6d0&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/cbe390d1-88b3-4ff2-8f53-b3b9d8a0e25c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/38/81/a238812c-1a75-f0b1-3386-b1fbfb738726/mzaf_16711407903610066203.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1733028849",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "English Teacher",
+   "album": "This Could Be Texas",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6a6b9cb9-92c1-45ff-b4ed-940887fc04ca。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「This Could Be Texas」、artist-credit「English Teacher」、first-release-date 2024-04-12、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XW／GB；status Official）。廠牌欄實查：Island、Nice Swan Records。藝人 MBID：English Teacher b60fd6f1-a47a-4021-b8df-83f8e8893e91（名下 18 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "6a6b9cb9-92c1-45ff-b4ed-940887fc04ca",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6a6b9cb9-92c1-45ff-b4ed-940887fc04ca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 130340,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十三首的詞曲全部掛四個人的名字，沒有一首單獨署名。四人是 Nicholas Eden、Lily Fontaine、Douglas Frost 與 Lewis Whiting；製作、混音與程式設計一律交給 Marta Salogni，母帶 Heba Kadry。同名曲〈This Could Be Texas〉4:49 排在正中間的第 6 軌，也是全碟最長的一首，第 3 軌另有 Carlo Salogni 的薩克斯風。這張拿下 2024 年的 Mercury Prize。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6a6b9cb9-92c1-45ff-b4ed-940887fc04ca?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=6a6b9cb9-92c1-45ff-b4ed-940887fc04ca&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1718988747&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/This_Could_Be_Texas",
+     "https://musicbrainz.org/ws/2/release-group?artist=b60fd6f1-a47a-4021-b8df-83f8e8893e91&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/6a6b9cb9-92c1-45ff-b4ed-940887fc04ca"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/17/2a/18172a97-323f-6234-04bc-02081f61f2e4/mzaf_18113460897241040344.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1718988747",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Magdalena Bay",
+   "album": "Imaginal Disk",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9c710cb4-6b20-47d7-a31a-5adb064c6c6b。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Imaginal Disk」、artist-credit「Magdalena Bay」、first-release-date 2024-08-23、primary-type Album、secondary-types 空、轄下 2 個 release（國別 CA／XW；status Official）。廠牌欄實查：Mom+Pop。藝人 MBID：Magdalena Bay 68c261d5-48c8-4ea9-9466-9fc908dc79bb（名下 49 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "9c710cb4-6b20-47d7-a31a-5adb064c6c6b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9c710cb4-6b20-47d7-a31a-5adb064c6c6b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 858731,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟主要錄在兩人自家，管弦那一層卻遠在斯德哥爾摩錄。Mica Tenenbaum 與 Matthew Lewin 把主錄音留在自家的 Mag Bay HQ，追加的鼓在洛杉磯 Honeymoon Suite 錄，管弦交給斯德哥爾摩的 IMRSV Studios，班底光小提琴就十位，另有四位中提琴、三位大提琴與整組銅管。混音是 Dave Fridmann、母帶 Emily Lazar。盤名取自昆蟲幼蟲體內的成蟲盤，那是變態時長成成蟲身體部位的構造，也對上封面那隻把碟插進額頭的手。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/9c710cb4-6b20-47d7-a31a-5adb064c6c6b?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=9c710cb4-6b20-47d7-a31a-5adb064c6c6b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1751414757&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Imaginal_Disk",
+     "https://musicbrainz.org/ws/2/release-group?artist=68c261d5-48c8-4ea9-9466-9fc908dc79bb&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/9c710cb4-6b20-47d7-a31a-5adb064c6c6b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/4e/96/b44e9666-17d0-fce0-086f-f0eec876946a/mzaf_11448716792863263058.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1751414757",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Beth Gibbons",
+   "album": "Lives Outgrown",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group eaa72e4a-0e22-471f-bc92-97fd5d93d7d3。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Lives Outgrown」、artist-credit「Beth Gibbons」、first-release-date 2024-05-17、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XE／JP；status Official）。廠牌欄實查：Domino、Beat Records。藝人 MBID：Beth Gibbons 5adcb9d9-5ea2-428d-af46-ef626966e106（名下 13 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "eaa72e4a-0e22-471f-bc92-97fd5d93d7d3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eaa72e4a-0e22-471f-bc92-97fd5d93d7d3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 105096,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這批歌寫了十年，寫的是逼近六十歲那幾年身邊接連走掉的人。主題落在為人母、焦慮、更年期與死亡；她說是親友接連過世，讓她明白了沒有指望的人生是什麼樣子。製作由她與 James Ford、Lee Harris 三人共掛，錄音散在 Devon Barn、Bristol State of Art、Studio 53 與 Snap 四處，管弦另在 Konk 錄。Ford 一人在碟上掛了鐵琴、簧風琴、揚琴、鋸琴與中國琵琶等數十種樂器。這張入圍 2024 年的 Mercury Prize。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/eaa72e4a-0e22-471f-bc92-97fd5d93d7d3?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=eaa72e4a-0e22-471f-bc92-97fd5d93d7d3&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1728144209&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Lives_Outgrown",
+     "https://musicbrainz.org/ws/2/release-group?artist=5adcb9d9-5ea2-428d-af46-ef626966e106&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/eaa72e4a-0e22-471f-bc92-97fd5d93d7d3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ca/1c/fb/ca1cfbb1-4153-8bd7-83dc-97b88d6bdecc/mzaf_2372173133190534287.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1728144209",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Blood Incantation",
+   "album": "Absolute Elsewhere",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 25267682-bdfc-435a-b6a7-89c266f7d0e8。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Absolute Elsewhere」、artist-credit「Blood Incantation」、first-release-date 2024-10-04、primary-type Album、secondary-types 空、轄下 6 個 release（國別 XW／DE／XE／US；status Official）。廠牌欄實查：Century Media。藝人 MBID：Blood Incantation a5f0f298-776a-4909-bc09-4fd56a680542（名下 16 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "25267682-bdfc-435a-b6a7-89c266f7d0e8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/25267682-bdfc-435a-b6a7-89c266f7d0e8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 90322,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "黑膠一面一首，一首就是一整面；CD 才把它切成六塊石板。A 面〈The Stargate〉20:20、B 面〈The Message〉23:23；同一份錄音在 CD 上各切三塊 tablet，湊成六軌。2023 年夏天錄於柏林 Hansa Tonstudio，製作是樂團與 Arthur Rizk，為此額外租了九千歐元的合成器。客席鍵盤是 Tangerine Dream 的 Thorsten Quaeschning；Nicklas Malmqvist 的合成器則貫穿全部六塊。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/25267682-bdfc-435a-b6a7-89c266f7d0e8?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=25267682-bdfc-435a-b6a7-89c266f7d0e8&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1756051276&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Absolute_Elsewhere",
+     "https://musicbrainz.org/ws/2/release-group?artist=a5f0f298-776a-4909-bc09-4fd56a680542&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/25267682-bdfc-435a-b6a7-89c266f7d0e8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/aa/93/0faa9311-cd5a-f7b8-e42c-87bf48556472/mzaf_3981490562860124883.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1756051276",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jack White",
+   "album": "No Name",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5ef2a512-3680-4661-bfea-870cb8bf6507。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「No Name」、artist-credit「Jack White」、first-release-date 2024-07-19、primary-type Album、secondary-types 空、轄下 7 個 release（國別 US／XW；status Official／Promotion）。廠牌欄實查：Third Man Records。刻意不釘：33830186-1a48-4e85-8370-324059002a8e《No Name Live》（2025-02-11，EP，同名現場 EP）。藝人 MBID：Jack White 3ae2fb37-8a23-429d-9920-bac811c4fc22（名下 87 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "5ef2a512-3680-4661-bfea-870cb8bf6507",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5ef2a512-3680-4661-bfea-870cb8bf6507/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 135599,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "無標籤的白色黑膠免費夾進每一筆消費，店員也不知情。2024 年 7 月 19 日，Third Man 在底特律、倫敦與納許維爾三家門市這樣送出這張碟，管理層只交代每一筆消費都要放一張，同一批也寄給了 Vault 訂戶。素面白內袋、白標上只壓印盤名，A 面死溝刻著 Heaven and Hell、B 面刻著 Black and Blue，目錄號 TMR-1000。消息在網路上傳開後，廠牌反過來鼓勵拿到的人自行轉錄上傳；正式發行要等到 8 月 2 日，十三軌的數位版才上架。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5ef2a512-3680-4661-bfea-870cb8bf6507?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5ef2a512-3680-4661-bfea-870cb8bf6507&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1760057427&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/No_Name_(album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=3ae2fb37-8a23-429d-9920-bac811c4fc22&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/5ef2a512-3680-4661-bfea-870cb8bf6507"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/e6/f6/54e6f665-bbfc-2533-5333-42c04d5b0a98/mzaf_17726476776835404536.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1760057427",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arooj Aftab",
+   "album": "Night Reign",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4af815ea-5fe3-4649-a342-1e964aa3d6fd。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Night Reign」、artist-credit「Arooj Aftab」、first-release-date 2024-05-31、primary-type Album、secondary-types 空、轄下 4 個 release（國別 US／XE；status Promotion／Official）。廠牌欄實查：Verve。藝人 MBID：Arooj Aftab 12d0b276-b102-4779-ac35-6939c584d9da（名下 15 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "4af815ea-5fe3-4649-a342-1e964aa3d6fd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4af815ea-5fe3-4649-a342-1e964aa3d6fd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 44414,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原本整張要譜十八世紀烏爾都女詩人的作品，最後只留兩首。那位詩人是 Mah Laqa Bai Chanda，第一位出版個人詩集的女性烏爾都詩人，作品此前從未被譜曲；做到一半 Aftab 覺得不再有動力，整個計畫作廢，只留下〈Na Gul〉與〈Saaqi〉。製作由她一人包辦，九軌每一首都超過四分鐘，最長的〈Saaqi〉6:47。〈Raat Ki Rani〉是她第一次在自己的音樂裡用 Auto-Tune，還要混音師上 T-Pain 那種量。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4af815ea-5fe3-4649-a342-1e964aa3d6fd?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4af815ea-5fe3-4649-a342-1e964aa3d6fd&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1739687886&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Night_Reign",
+     "https://musicbrainz.org/release-group/4af815ea-5fe3-4649-a342-1e964aa3d6fd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/5e/2f/5c5e2f37-91ba-e6ed-914c-083085db1368/mzaf_10317831892160377020.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1739687886",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Geese",
+   "album": "Getting Killed",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3c18308c-9072-4810-b26e-0c573e46fb07。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Getting Killed」、artist-credit「Geese」、first-release-date 2025-09-26、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XW／US／XE；status Official／Bootleg）。廠牌欄實查：Partisan Records、Play It Again Sam。刻意不釘：d34f692b-cb12-4676-ab35-cbbc6cf21a46《Getting Killed: Live From The Basement》（2025-11-19，Broadcast）、ed0ff687-fe1d-44e4-8ee2-f3cf9e00e871《Geese - Getting Killed | From the Basement》（2025-11-19，Broadcast+Live）。藝人 MBID：Geese e0c97a4d-c392-41a9-a374-57af3e3eeab3（名下 29 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "3c18308c-9072-4810-b26e-0c573e46fb07",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3c18308c-9072-4810-b26e-0c573e46fb07/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 484323,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十天、每天十四小時，錄音室外是把洛杉磯燒成灰的那場野火。2025 年 1 月，樂團進了 Kenneth Blume 在洛杉磯新建的 Putnam Hill，帶著約二十份多半沒寫完的 demo 現場邊寫邊改。Blume 以 Kenny Beats 為藝名、底子在嘻哈，整張的重心因此壓在節奏組上，貝斯與鼓反覆重錄，有一次全團花掉一整個工作天，只為從約七千個檔案裡挑一個拍手取樣。吉他手 Foster Hudson 2023 年底離團去做學術，這是四人編制的第一張碟。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/3c18308c-9072-4810-b26e-0c573e46fb07?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=3c18308c-9072-4810-b26e-0c573e46fb07&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1818548779&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Getting_Killed",
+     "https://musicbrainz.org/ws/2/release-group?artist=e0c97a4d-c392-41a9-a374-57af3e3eeab3&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/3c18308c-9072-4810-b26e-0c573e46fb07"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/d5/e4/e5d5e443-e37c-32de-a4dd-701ded1a098c/mzaf_10288425552413074897.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1818548779",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wednesday",
+   "album": "Bleeds",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5bed2109-60ce-4c13-804a-fc04946ba7f7。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Bleeds」、artist-credit「Wednesday」、first-release-date 2025-09-19、primary-type Album、secondary-types 空、轄下 5 個 release（國別 US／XW／JP；status Official）。廠牌欄實查：Dead Oceans。藝人 MBID：Wednesday 9833b455-0da2-40b5-8e63-37816c910604（名下 20 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "5bed2109-60ce-4c13-804a-fc04946ba7f7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5bed2109-60ce-4c13-804a-fc04946ba7f7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 174998,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名本來叫《Carolina Girl》，換成了能接上團名的那個字。那個字取自第 1 軌〈Reality TV Argument Bleeds〉——原訂的盤名被團員否決，Karly Hartzman 覺得接上團名剛好成一句話。錄音在北卡 Asheville 的 Drop of Sun，Alex Farrar 一手包辦製作、混音與錄音，樂團前兩張也是他做的。這也是第一張有貝斯手 Ethan Baechtold 的碟；十二首擠在三十六分鐘裡，最短的〈Wasp〉只有 1:27。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5bed2109-60ce-4c13-804a-fc04946ba7f7?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5bed2109-60ce-4c13-804a-fc04946ba7f7&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1807870796&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Bleeds_(Wednesday_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=9833b455-0da2-40b5-8e63-37816c910604&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/5bed2109-60ce-4c13-804a-fc04946ba7f7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/44/d9/0344d991-5240-93f7-61b9-a721e0dd5926/mzaf_3024040870348222799.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1807870796",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Clipse",
+   "album": "Let God Sort Em Out",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 18cdc08c-03a1-4e55-9624-b7f9dbb968f5。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Let God Sort Em Out」、artist-credit「Clipse」、first-release-date 2025-07-11、primary-type Album、secondary-types 空、轄下 15 個 release（國別 GB／XW／US；status Official／Withdrawn）。廠牌欄實查：Roc Nation Distribution、Roc Nation、Roc Nation [none]、Roc Nation Distribution [none]。藝人 MBID：Clipse e6424fa5-08d3-41c6-96f3-8549f733708c（名下 51 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "18cdc08c-03a1-4e55-9624-b7f9dbb968f5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/18cdc08c-03a1-4e55-9624-b7f9dbb968f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 460612,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "為了保住 Kendrick Lamar 那段客串，他們付七位數解約金走人。原訂 2024 年發行，東家與母公司要求把〈Chains & Whips〉上那一段消音或整段拿掉，兩兄弟拒改離開，改自主發行、交 Roc Nation 經銷。全碟由 Pharrell Williams 一人製作兼執行製作，2023–2024 年錄在 Virginia Beach 的 Masterworks 與巴黎的 Louis Vuitton 總部。封面由 Kaws 畫，他也畫過兩人 2009 年那張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/18cdc08c-03a1-4e55-9624-b7f9dbb968f5?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=18cdc08c-03a1-4e55-9624-b7f9dbb968f5&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1816313639&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Let_God_Sort_Em_Out",
+     "https://musicbrainz.org/release-group/18cdc08c-03a1-4e55-9624-b7f9dbb968f5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/48/a9/0c48a9e4-f408-06f7-1d41-655a7c8b9153/mzaf_6720871693275307456.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1816313639",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Turnstile",
+   "album": "NEVER ENOUGH",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 58310aac-65aa-492e-83fb-ec50c58e5a1d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「NEVER ENOUGH」、artist-credit「Turnstile」、first-release-date 2025-06-06、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XE／XW／US；status Official）。廠牌欄實查：Roadrunner Records。刻意不釘：aeddf494-e368-4359-94b6-1816f704380f《NEVER ENOUGH》（2025-04-08，Single，同名先行單曲）、a83e421a-2cd8-4ca5-9942-80f30aa0ee07《NEVER ENOUGH: VERSIONS》（2026-08-28，Album，後出的改編版）。藝人 MBID：Turnstile 7b748dac-f5ce-45a7-9b95-c1d8b5b013ed（名下 24 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "58310aac-65aa-492e-83fb-ec50c58e5a1d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/58310aac-65aa-492e-83fb-ec50c58e5a1d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 394304,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "硬蕊團的碟上排進了 Shabaka Hutchings 的長笛與 Dev Hynes 的大提琴。大提琴落在〈NEVER ENOUGH〉與〈LOOK OUT FOR ME〉，和聲在〈SEEIN' STARS〉；長笛落在〈SUNSHOWER〉，Faye Webster 與 Hayley Williams 各唱一軌。製作掛主唱 Brendan Yates，第 8 軌 6:44 之後緊接 1:13 的第 9 軌，全碟最長與最短的兩首相鄰。這張拿下第 68 屆葛萊美最佳搖滾專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/58310aac-65aa-492e-83fb-ec50c58e5a1d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=58310aac-65aa-492e-83fb-ec50c58e5a1d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1805820903&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Never_Enough_(Turnstile_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=7b748dac-f5ce-45a7-9b95-c1d8b5b013ed&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/58310aac-65aa-492e-83fb-ec50c58e5a1d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/9a/fd/519afddc-9b16-a16b-6230-8f5116e957a2/mzaf_15222454752401245953.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1805820903",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hayley Williams",
+   "album": "Ego Death at a Bachelorette Party",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 15c3b397-9652-4537-a14b-7eb8489092ff。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Ego Death at a Bachelorette Party」、artist-credit「Hayley Williams」、first-release-date 2025-07-28、primary-type Album、secondary-types 空、轄下 9 個 release（國別 XW／US；status Official）。廠牌欄實查：Post Atlantic。刻意不釘：2511e534-1cfe-494f-b8ea-20a995700046《Ego Death at a Bachelorette Party》（2025-08-01，Single，同名單曲）。藝人 MBID：Hayley Williams b4b5b5a7-feff-47d0-9458-83d0d135a692（名下 54 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "15c3b397-9652-4537-a14b-7eb8489092ff",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/15c3b397-9652-4537-a14b-7eb8489092ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 490475,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十七首歌只在自家網站掛了一天，密碼發給染髮品牌的顧客。2025 年 7 月 28 日那天要輸入 16 位數代碼才聽得到，網頁做成 2000 年代桌面的樣子，歌曲以 MP3 檔散在黃色底圖上，約二十四小時後整批撤下，只留一行道謝。8 月上串流時補進一軌成為專輯，10 月與 11 月又各補一首；公布曲目那次，她把第 19、20 軌留成空白，明示還有兩首要放。發行掛在她離開舊東家後自設的 Post Atlantic 之下，由 Secretly Distribution 經銷。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/15c3b397-9652-4537-a14b-7eb8489092ff?fmt=json&inc=artist-credits+releases",
+     "https://en.wikipedia.org/wiki/Ego_Death_at_a_Bachelorette_Party",
+     "https://itunes.apple.com/lookup?id=1850011909&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=b4b5b5a7-feff-47d0-9458-83d0d135a692&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/15c3b397-9652-4537-a14b-7eb8489092ff"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/a5/6e/18a56ee7-9a55-0c77-7c35-ae8351334d98/mzaf_15156630209588447946.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1850011909",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dijon",
+   "album": "Baby",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1a1e8337-cd16-40e6-b04d-e1b5801b4c89。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Baby」、artist-credit「Dijon」、first-release-date 2025-08-15、primary-type Album、secondary-types 空、轄下 3 個 release（國別 US／XW；status Official）。廠牌欄實查：Warner Records。藝人 MBID：Dijon cceea21d-f3ec-4586-be7a-d2e939c15c78（名下 24 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "1a1e8337-cd16-40e6-b04d-e1b5801b4c89",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1a1e8337-cd16-40e6-b04d-e1b5801b4c89/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 191624,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "公布時掛的倒數計時器上寫著：除非取樣沒過。碟在發行前一週才公布，計時器的標題原話是 unless samples don't get cleared，而且一首先行單曲也沒放。製作是他本人與 Andrew Sarlo，班底延續《Absolutely》那一圈：Mk.gee 打鼓、彈貝斯與鋼琴，Pino Palladino 在六軌上彈貝斯，第 3 軌另有 Justin Vernon 與 Jenn Wasner。十二軌裡第 4 與第 7 軌是括號起來的短接，把碟分成三段。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1a1e8337-cd16-40e6-b04d-e1b5801b4c89?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=1a1e8337-cd16-40e6-b04d-e1b5801b4c89&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1832337743&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Baby_(Dijon_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=cceea21d-f3ec-4586-be7a-d2e939c15c78&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/1a1e8337-cd16-40e6-b04d-e1b5801b4c89"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/12/1d/de121d13-ee95-0bc7-c3c2-39cb7ef6376b/mzaf_4163122491745311283.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1832337743",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lorde",
+   "album": "Virgin",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a3734ef9-80a8-40e0-8718-9eb39860ff4a。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Virgin」、artist-credit「Lorde」、first-release-date 2025-06-27、primary-type Album、secondary-types 空、轄下 13 個 release（國別 AU／XE／JP／US／AR／TW／XW；status Official）。廠牌欄實查：Universal Music New Zealand、Crush Music、環球音樂。藝人 MBID：Lorde 8e494408-8620-4c6a-82c2-c2ca4a1e4f12（名下 60 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "a3734ef9-80a8-40e0-8718-9eb39860ff4a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a3734ef9-80a8-40e0-8718-9eb39860ff4a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 1,
+    "obscurity": 1,
+    "accessibility": 1,
+    "listeners": 815663,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封面是一張骨盆 X 光片，皮帶扣、拉鍊與避孕器都照得清清楚楚。片子調成藍色，連鉚釘都一併入鏡。製作是她與 Jim-E Stack，Dan Nigro 與 Buddy Ross 同樣掛 producer，混音交給 Spike Stent 與 Tom Elmhirst、母帶 Chris Gehringer，錄音則散在十二處錄音室；十一軌收完只花三十四分五十一秒。日本盤題《ヴァージン》、台灣盤題《聖女》；全透明那一版 CD 發行後有歌迷回報，在車用音響與部分老機種上讀不出來。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a3734ef9-80a8-40e0-8718-9eb39860ff4a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a3734ef9-80a8-40e0-8718-9eb39860ff4a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1810905299&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Virgin_(Lorde_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=8e494408-8620-4c6a-82c2-c2ca4a1e4f12&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/a3734ef9-80a8-40e0-8718-9eb39860ff4a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/2f/91/602f917b-1e61-342c-9792-a140948adf61/mzaf_14087845056623392256.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1810905299",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Blood Orange",
+   "album": "Essex Honey",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 778e2320-736e-4634-ae65-354d408c40e9。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Essex Honey」、artist-credit「Blood Orange」、first-release-date 2025-08-29、primary-type Album、secondary-types 空、轄下 3 個 release（國別 XE／US／XW；status Official）。廠牌欄實查：Domino、RCA、Sony Music。刻意不釘：8f630e6c-ce73-4764-88cb-7f9219a754ea《Essex_Honey.mp3》（2026-05-29，Single，盤名高度重疊的後出單曲）。藝人 MBID：Blood Orange 3d254f1e-7d18-431b-baeb-68e57695dfdb（名下 40 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "778e2320-736e-4634-ae65-354d408c40e9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/778e2320-736e-4634-ae65-354d408c40e9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 376531,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "距上一張完整長篇七年，中間只出過一張四首的 EP。2018 年《Negro Swan》之後他只放了那張 EP，這也是他 2022 年 9 月簽進 RCA 後的第一張碟。碟做於一段哀悼與回望的時期，盤名指向他在 Essex 的成長。全碟由 Dev Hynes 一人寫、一人製作，混音與錄音也自己掛，母帶 Heba Kadry。客串每隔一兩軌就換一組：Caroline Polachek、Lorde、Mustafa、Brendan Yates，還有小說家 Zadie Smith。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/778e2320-736e-4634-ae65-354d408c40e9?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=778e2320-736e-4634-ae65-354d408c40e9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1825903903&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Essex_Honey",
+     "https://musicbrainz.org/ws/2/release-group?artist=3d254f1e-7d18-431b-baeb-68e57695dfdb&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/778e2320-736e-4634-ae65-354d408c40e9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/6d/4b/2a6d4b72-b145-a068-a5b7-528538407bf0/mzaf_17754314666963946370.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1825903903",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alex G",
+   "album": "Headlights",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2b86bcf2-220b-44d3-9ba1-75e1983e0684。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Headlights」、artist-credit「Alex G」、first-release-date 2025-07-18、primary-type Album、secondary-types 空、轄下 5 個 release（國別 US／XW；status Official）。廠牌欄實查：RCA、[no label]。藝人 MBID：Alex G 7df4c4de-3181-4a69-bd36-9d663970cebb（名下 71 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "2b86bcf2-220b-44d3-9ba1-75e1983e0684",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2b86bcf2-220b-44d3-9ba1-75e1983e0684/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 183879,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟上多數樂器他一個人錄，巡演班底只出現在最後一軌。弦樂六人集中在第 5 與第 9 軌。長年巡演班底 Sam Acchione、John Heywood 與 Tom Kelly 只出現在收尾的〈Logan Hotel (Live)〉——那首是圍著費城一家旅館的鋼琴錄下的現場，他說想把他們帶進碟裡，因為他們是他的人。共同製作是他與 Jacob Portrait，後者同時掛全碟混音，母帶 Heba Kadry。這是他的大廠首作，此前與 Domino 合作近十年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2b86bcf2-220b-44d3-9ba1-75e1983e0684?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=2b86bcf2-220b-44d3-9ba1-75e1983e0684&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1815825254&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Headlights_(Alex_G_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=7df4c4de-3181-4a69-bd36-9d663970cebb&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/2b86bcf2-220b-44d3-9ba1-75e1983e0684"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/8d/98/b38d986e-fc10-7932-c911-94f578779977/mzaf_13491494725649151674.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1815825254",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stereolab",
+   "album": "Instant Holograms on Metal Film",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 446fc616-c4db-46ce-8d4c-e4efc019b3f8。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Instant Holograms on Metal Film」、artist-credit「Stereolab」、first-release-date 2025-05-23、primary-type Album、secondary-types 空、轄下 4 個 release（國別 XE／XW／JP；status Official）。廠牌欄實查：Duophonic Ultra High Frequency Disks、Warp Records、Warp、Beat Records。藝人 MBID：Stereolab f1df0431-9250-4ec8-95d8-f19ce7cf7fb6（名下 119 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "446fc616-c4db-46ce-8d4c-e4efc019b3f8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/446fc616-c4db-46ce-8d4c-e4efc019b3f8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 87578,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "宣布無限期休團的十六年後同一天，訂閱者收到一份包裹。2025 年 4 月 2 日，包裹上標著「unsolicited Stereolab material」，裡面是先行單曲〈Aerial Troubles〉與其伴奏版，同時樂團名字的海報出現在世界各大城市。錄音在倫敦的 Press Play，沒有掛名製作人，混音掛在五名團員與 Cooper Crain 名下。十三首全由 Tim Gane 與 Lætitia Sadier 所寫；上一張正規作停在 2010 年，中間隔了近十五年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/446fc616-c4db-46ce-8d4c-e4efc019b3f8?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=446fc616-c4db-46ce-8d4c-e4efc019b3f8&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1802636797&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Instant_Holograms_on_Metal_Film",
+     "https://musicbrainz.org/ws/2/release-group?artist=f1df0431-9250-4ec8-95d8-f19ce7cf7fb6&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/446fc616-c4db-46ce-8d4c-e4efc019b3f8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/b3/6f/59b36f98-f061-29e5-5f7d-67a9fbda36ff/mzaf_16445980870599937165.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1802636797",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Deafheaven",
+   "album": "Lonely People With Power",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f88055a1-f78c-4344-8765-e4ec22eb8bf8。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Lonely People With Power」、artist-credit「Deafheaven」、first-release-date 2025-03-25、primary-type Album、secondary-types 空、轄下 11 個 release（國別 CA／US／XW／XE；status Official）。廠牌欄實查：Roadrunner Records、Roadrunner Records [none]。藝人 MBID：Deafheaven f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302（名下 28 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "f88055a1-f78c-4344-8765-e4ec22eb8bf8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f88055a1-f78c-4344-8765-e4ec22eb8bf8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 150868,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三段〈Incidental〉排在第一、第七、第十軌，把碟切成三塊。長度是 0:56、4:20 與 2:08；黑膠的 6＋6 分片切在〈Amethyst〉之後。製作 Justin Meldal-Johnsen，錄音在好萊塢 EastWest Studios，混音與母帶 Zach Weeks。客席在其中兩段：Boy Harsher 的 Jae Matthews 唱第二段，Interpol 的 Paul Banks 念第三段。封面用的是前成人片演員 Jenna Haze 的影像。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f88055a1-f78c-4344-8765-e4ec22eb8bf8?fmt=json&inc=artist-credits+releases",
+     "https://en.wikipedia.org/wiki/Lonely_People_with_Power",
+     "https://itunes.apple.com/lookup?id=1792077173&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/f88055a1-f78c-4344-8765-e4ec22eb8bf8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/3a/20/6d3a2090-81b1-21aa-fa8e-8476fed1ccfd/mzaf_9541730261510015453.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1792077173",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ethel Cain",
+   "album": "Willoughby Tucker, I’ll Always Love You",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b812527c-30ac-4f38-82ce-85b971727248。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Willoughby Tucker, I’ll Always Love You」、artist-credit「Ethel Cain」、first-release-date 2025-08-08、primary-type Album、secondary-types 空、轄下 12 個 release（國別 US／XE／XW；status Official）。廠牌欄實查：Daughters of Cain Records。刻意不釘：1a3601c0-79ab-4b0c-90cd-840f32deb91d《willoughby tucker, i’ll always love you (demos)》（2025-12-29，Album+Demo，同名小寫的 demo 版）。藝人 MBID：Ethel Cain 677e31f1-4035-463c-8ca4-41175440c919（名下 45 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "b812527c-30ac-4f38-82ce-85b971727248",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b812527c-30ac-4f38-82ce-85b971727248/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1110,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1110，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原本只說是一張附帶的 EP，最後長成七十三分半的正規作。2025 年 3 月公布時被稱作 companion EP，成品卻是十軌：〈Tempest〉10:01，末軌〈Waco, Texas〉15:16 一首就佔全碟五分之一，六款雙黑膠一律 6＋4 分片、切在〈Dust Bowl〉之後。製作是她與 Matthew Tomasi，混音與錄音由她自己掛。敘事起於 1986 年，比《Preacher's Daughter》裡的事早五年，開場〈Janie〉裡十六歲的主角覺得被好友拋下。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b812527c-30ac-4f38-82ce-85b971727248?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b812527c-30ac-4f38-82ce-85b971727248&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1818431571&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Willoughby_Tucker,_I%27ll_Always_Love_You",
+     "https://musicbrainz.org/ws/2/release-group?artist=677e31f1-4035-463c-8ca4-41175440c919&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/b812527c-30ac-4f38-82ce-85b971727248"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/27/3c/c2273c06-512b-0f28-aa7a-39c86238d963/mzaf_9197924867839144722.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1818431571",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ROSALÍA",
+   "album": "LUX",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「LUX」、artist-credit「ROSALÍA」、first-release-date 2025-11-07、primary-type Album、secondary-types 空、轄下 6 個 release（國別 XE／US／XW；status Official）。廠牌欄實查：Columbia、Sony Music。藝人 MBID：ROSALÍA 25f3abd9-63b5-471a-bd25-feb9672dfa11（名下 55 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 666150,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲目分成四個樂章，每一首取材自一位女性聖者的故事。四個樂章依序是離開純真、在重力裡與世界為友、恩典與盼望、告別與回返；逐首都對得到人，〈Berghain〉是賓根的希德嘉、〈De madrugá〉是基輔的聖奧麗加、〈Magnolias〉是 Anandamayi Ma。錄音與倫敦交響樂團合作、由 Daníel Bjarnason 指揮，她自任執行製作，2023 到 2025 年間橫跨十處錄音室，歌詞跨了十四種語言。封面是她穿白色修女會衣、金唇閉眼。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1848167516&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Lux_(Rosal%C3%ADa_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=25f3abd9-63b5-471a-bd25-feb9672dfa11&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/bb3ec118-57df-4eb9-a8fe-a26a70a7dbe0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/98/7c/94987cb6-3ca1-542a-e208-f0aa29ae2e31/mzaf_16260452829243281393.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1848167516",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "柴田聡子",
+   "album": "Your Favorite Things",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f717cc8f-34a3-4edf-8f54-5d1e7b80f29d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Your Favorite Things」、artist-credit「柴田聡子」、first-release-date 2024-02-28、primary-type Album、secondary-types 空、轄下 2 個 release（國別 JP／XW；status Official）。廠牌欄實查：AWDR/LR2。藝人 MBID：柴田聡子 b9c0edaa-37ff-4115-847d-14ff604fa952（名下 19 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "f717cc8f-34a3-4edf-8f54-5d1e7b80f29d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f717cc8f-34a3-4edf-8f54-5d1e7b80f29d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2314,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2314，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十軌裡有九軌插著岡田拓郎的手，從滑棒吉他到自鳴琴。他與柴田聡子共同掛製作與編曲，錄音工程與混音工程也是他一個人做，演奏欄逐軌對得出來：滑棒吉他、木吉他、自鳴琴、合成器、Wurlitzer、取樣、踏板鋼棒吉他與電貝斯。2024 年 2 月 28 日由 AWDR/LR2 發行，同日的 CD 與數位都是單片 10 軌，沒有加曲版。開場〈Movie Light〉5:19 是全碟最長，其餘九軌壓在 3:03 到 3:48 的窄帶裡。隔年這張拿下第 17 回 CD ショップ大賞的赤賞。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f717cc8f-34a3-4edf-8f54-5d1e7b80f29d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f717cc8f-34a3-4edf-8f54-5d1e7b80f29d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1728810659&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E6%9F%B4%E7%94%B0%E8%81%A1%E5%AD%90",
+     "https://ja.wikipedia.org/wiki/%E5%B2%A1%E7%94%B0%E6%8B%93%E9%83%8E",
+     "https://musicbrainz.org/ws/2/release-group?artist=b9c0edaa-37ff-4115-847d-14ff604fa952&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/f717cc8f-34a3-4edf-8f54-5d1e7b80f29d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/72/18/967218f3-18fb-a38f-ea8e-1ffdb944769f/mzaf_17761834100715430367.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1728810659",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ZAZEN BOYS",
+   "album": "らんど",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 513452fd-ff13-4410-9611-fa9e02ac849d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「らんど」、artist-credit「ZAZEN BOYS」、first-release-date 2024-01-24、primary-type Album、secondary-types 空、轄下 5 個 release（國別 XW／JP；status Official／Pseudo-Release）。廠牌欄實查：Matsuri Studio。藝人 MBID：ZAZEN BOYS 3d2cd44b-9e77-4249-9d37-d8028e756693（名下 24 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "513452fd-ff13-4410-9611-fa9e02ac849d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/513452fd-ff13-4410-9611-fa9e02ac849d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 6305,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音室二樓住著房東，晚上八點以後基本上不能出聲。那間 MATSURI STUDIO 是向井秀徳在 NUMBER GIRL 解散之後自己設立的，同名廠牌就是樂團音源的發行方，他的職業欄裡也一併列著錄音工程師。2024 年 1 月 24 日出的 CD 與數位都是單片 13 軌，曲序自〈DANBIRA〉起。四個月後的 12 吋黑膠同曲序卻拆成兩片四面，第一片 6 軌、第二片 7 軌。錄這張的編制是向井、吉兼聡、松下敦，加上 2018 年 7 月才正式入團的貝斯手 MIYA。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/513452fd-ff13-4410-9611-fa9e02ac849d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=513452fd-ff13-4410-9611-fa9e02ac849d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1720130386&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/ZAZEN_BOYS",
+     "https://ja.wikipedia.org/wiki/%E5%90%91%E4%BA%95%E7%A7%80%E5%BE%B3",
+     "https://musicbrainz.org/ws/2/release-group?artist=3d2cd44b-9e77-4249-9d37-d8028e756693&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/513452fd-ff13-4410-9611-fa9e02ac849d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/eb/1d/b2eb1d6c-0665-4cb3-c34f-8e8aedc538da/mzaf_15100343739242047371.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1720130386",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "米津玄師",
+   "album": "LOST CORNER",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3d764b39-b548-4157-9129-5770d4b5ed40。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「LOST CORNER」、artist-credit「米津玄師」、first-release-date 2024-08-08、primary-type Album、secondary-types 空、轄下 10 個 release（國別 XW／JP／XE／KR；status Official／Pseudo-Release）。廠牌欄實查：Sony Music Labels Inc.、Milan、Sony Music。藝人 MBID：米津玄師 09d4a85c-4916-4b4e-bc96-c4cfcf371046（名下 39 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "3d764b39-b548-4157-9129-5770d4b5ed40",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3d764b39-b548-4157-9129-5770d4b5ed40/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10065,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十軌裡有十一首是舊曲，版權欄按年份把它們逐軌點名。從 2021 年的〈Pale Blue〉起，2022 年的〈KICK BACK〉、2023 年的〈地球儀〉一路排下來，超過一半的曲子在收進這張碟以前就已經發表過。2024 年 8 月 21 日發行，二十首的作詞作曲全是米津玄師，製作也掛他本人，編曲卻拆了出去——他自己編 8 首，坂東祐大共同編 7 首，其餘分給常田大希、Yaffle、mabanua 與トオミヨウ。封面美術同樣是他自己畫的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/3d764b39-b548-4157-9129-5770d4b5ed40?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=3d764b39-b548-4157-9129-5770d4b5ed40&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1759899363&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/LOST_CORNER",
+     "https://musicbrainz.org/ws/2/release-group?artist=09d4a85c-4916-4b4e-bc96-c4cfcf371046&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/3d764b39-b548-4157-9129-5770d4b5ed40"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/c2/1c/03c21c72-ff58-122b-03a8-d5b423ac5147/mzaf_14689360318245542423.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1759899363",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "折坂悠太",
+   "album": "呪文",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ae1c8d2c-dc47-4963-81fe-7067d50fc799。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「呪文」、artist-credit「折坂悠太」、first-release-date 2024-06-26、primary-type Album、secondary-types 空、轄下 3 個 release（國別 JP／XW；status Official）。廠牌欄實查：ORISAKAYUTA。藝人 MBID：折坂悠太 b9c7b7f8-653c-42fb-b754-f212bb469438（名下 13 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "ae1c8d2c-dc47-4963-81fe-7067d50fc799",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ae1c8d2c-dc47-4963-81fe-7067d50fc799/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 911,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=911，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "初回限定盤第二片是伴奏，卻只有七首——兩首沒有做。那片的七軌逐首標著 (Instrumental)，對得上第一片的〈スペル〉〈夜香木〉〈人人〉〈凪〉〈努努〉〈無言〉與〈ハチス〉，長度幾乎相同，缺的是〈信濃路〉與〈正気〉。接在《心理》（2021）之後，這張 2024 年 6 月 26 日發行，通常盤是單片 9 軌的 ORSK-021，廠牌欄一律 ORISAKAYUTA。第 8 軌〈無言〉6:24 是全碟最長的一首，其餘八軌壓在 3:20 到 5:06 之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ae1c8d2c-dc47-4963-81fe-7067d50fc799?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ae1c8d2c-dc47-4963-81fe-7067d50fc799&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1747978328&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1747965020&country=us&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E6%8A%98%E5%9D%82%E6%82%A0%E5%A4%AA",
+     "https://musicbrainz.org/ws/2/release-group?artist=b9c7b7f8-653c-42fb-b754-f212bb469438&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/ae1c8d2c-dc47-4963-81fe-7067d50fc799"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/2a/7a/252a7ada-23a7-e592-fbca-35a237c73e46/mzaf_10289293819090620110.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1747978328",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "단편선 순간들",
+   "album": "음악만세",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b8d54db0-5918-456b-922a-b53d469e118c。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「음악만세」、artist-credit「단편선 순간들」、first-release-date 2024-09-10、primary-type Album、secondary-types 空、轄下 2 個 release（國別 XW／KR；status Official）。廠牌欄實查：Mirrorball Music。藝人 MBID：단편선 순간들 e4817d35-f071-4292-abbb-2705bb70fd85（名下 1 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "b8d54db0-5918-456b-922a-b53d469e118c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b8d54db0-5918-456b-922a-b53d469e118c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 438,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=438，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場借艾爾加，收尾借拉威爾，中間八首才是他們寫的。曲名欄把原作者直接標進括號：〈Land of Hope and Glory〉開場、〈Pavane pour une infante défunte〉收尾。中間八首都不短，〈거인〉8:34 與〈불〉6:43 都破了六分。樂團 2024 年 1 月才組成，先以單曲〈독립〉出道，同年 9 月 10 日由 Mirrorball Music 發行，隔年拿下第 22 屆韓國大眾音樂賞的年度專輯與最佳現代搖滾專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b8d54db0-5918-456b-922a-b53d469e118c?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b8d54db0-5918-456b-922a-b53d469e118c&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1754273932&entity=album&limit=200&country=kr",
+     "https://itunes.apple.com/lookup?id=1766256265&country=us&entity=song&limit=200",
+     "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%EC%84%A0_%EC%88%9C%EA%B0%84%EB%93%A4",
+     "https://ko.wikipedia.org/wiki/%EC%A0%9C22%ED%9A%8C_%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85%EC%83%81",
+     "https://musicbrainz.org/ws/2/release-group?artist=e4817d35-f071-4292-abbb-2705bb70fd85&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/b8d54db0-5918-456b-922a-b53d469e118c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/a1/1f/7fa11f00-c1a3-a2ba-25dc-bed9865a13a4/mzaf_8097228244677893840.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1766256265",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "소음발광",
+   "album": "불과 빛",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group faec327b-b06d-44eb-9098-a20c232c53c5。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「불과 빛」、artist-credit「소음발광」、first-release-date 2024-10-07、primary-type Album、secondary-types 空、轄下 2 個 release（國別 KR／XW；status Official／Pseudo-Release）。廠牌欄實查：。藝人 MBID：소음발광 0a3f66d1-97cd-4dd4-9e76-6988cac797a5（名下 3 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "faec327b-b06d-44eb-9098-a20c232c53c5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/faec327b-b06d-44eb-9098-a20c232c53c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 23,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=23，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六分零五秒的〈검은물〉之後，緊接著的一首只有一分四十秒。單片 10 軌就這樣把全碟最長與最短的兩軌前後相接，收尾的〈새벽〉5:31 是碟上第二長的一首。樂團 2016 年在釜山組成，被歸在後硬蕊，現行編制四人。整張碟 2024 年 10 月 7 日以數位形式發行，版權欄記的是 OSORIWORKS 授權 POCLANOS。隔年拿下第 22 屆韓國大眾音樂賞的最佳搖滾專輯，是他們在這個獎項的第二次。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/faec327b-b06d-44eb-9098-a20c232c53c5?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=faec327b-b06d-44eb-9098-a20c232c53c5&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1454612973&entity=album&limit=200&country=kr",
+     "https://itunes.apple.com/lookup?id=1771393485&country=us&entity=song&limit=200",
+     "https://ko.wikipedia.org/wiki/%EC%86%8C%EC%9D%8C%EB%B0%9C%EA%B4%91",
+     "https://ko.wikipedia.org/wiki/%EC%A0%9C22%ED%9A%8C_%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85%EC%83%81",
+     "https://musicbrainz.org/ws/2/release-group?artist=0a3f66d1-97cd-4dd4-9e76-6988cac797a5&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/faec327b-b06d-44eb-9098-a20c232c53c5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/ce/6d/f3ce6dac-3a1e-66e3-cb58-ac0609f6d81d/mzaf_2442788992141509977.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1771393485",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "李竺芯",
+   "album": "Suí 水",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 14d8c860-cf27-412e-97ac-4cd6ea84a91d。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Suí 水」、artist-credit「李竺芯」、first-release-date 2024-12-30、primary-type Album、secondary-types 空、轄下 1 個 release（國別 TW；status Official）。廠牌欄實查：。藝人 MBID：李竺芯 aa094838-40bd-4e51-a424-f35619480e54（名下 1 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "14d8c860-cf27-412e-97ac-4cd6ea84a91d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/14d8c860-cf27-412e-97ac-4cd6ea84a91d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1495,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1495，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈足芳足芳〉唱成法式台語，〈懸踏仔咬跤〉諧音〈關達那美拉〉。一首借一種：〈Sakura Gansha〉帶上日本演歌的曲調，〈拌拌咧〉混進非洲的 Afrobeats。十軌的製作人全是鍾興民，編曲也十軌都有他；作詞十首全出自李竺芯，作曲九首掛「台南歐力桑、李竺芯」。2024 年 12 月 30 日發行，全長 35 分 23 秒，收尾的〈台灣查某囝 (誠心推薦版)〉是 2023 年那首單曲的重錄。2025 年第 36 屆金曲獎拿下年度專輯與最佳台語專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/14d8c860-cf27-412e-97ac-4cd6ea84a91d?fmt=json&inc=artist-credits+releases",
+     "https://itunes.apple.com/lookup?id=1158832075&entity=album&limit=200&country=tw",
+     "https://itunes.apple.com/lookup?id=1786938591&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/Su%C3%AD_%E6%B0%B4",
+     "https://musicbrainz.org/ws/2/release-group?artist=aa094838-40bd-4e51-a424-f35619480e54&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/14d8c860-cf27-412e-97ac-4cd6ea84a91d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/86/d0/0986d0d4-5c5b-04f1-8946-393c6b8e0d7c/mzaf_1556174206679575081.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1786938591",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "呂士軒",
+   "album": "好聲豪氣",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5ef91014-52b8-42c8-833a-59a09157ec23。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「好聲豪氣」、artist-credit「呂士軒」、first-release-date 2024-12-20、primary-type Album、secondary-types 空、轄下 1 個 release（國別 XW；status Official）。廠牌欄實查：任意門娛樂股份有限公司。藝人 MBID：呂士軒 01b3b6f8-02ad-4872-b4a0-3fbd16f1f7aa（名下 3 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "5ef91014-52b8-42c8-833a-59a09157ec23",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5ef91014-52b8-42c8-833a-59a09157ec23/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 237,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=237，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首裡有七首在專輯之前就一首一首放出來過。從 2024 年 5 月 10 日的〈二周目〉開始一路排到 11 月 29 日的〈Windance〉，最後那首離發片只剩三週。整張碟 12 月 20 日以數位發行，十軌全部落在 2 分 25 秒到 3 分 39 秒之間，沒有一首破四分鐘，最長的是〈笑話社長〉、最短的是〈芭樂冰芭樂碰〉。客座只有三處，其中〈逆水逆〉找的是黃浩庭。2025 年他以這張拿下第 36 屆金曲獎的最佳華語男歌手與最佳華語專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5ef91014-52b8-42c8-833a-59a09157ec23?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5ef91014-52b8-42c8-833a-59a09157ec23&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1183553947&entity=album&limit=200&country=tw",
+     "https://itunes.apple.com/lookup?id=1783248937&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%91%82%E5%A3%AB%E8%BB%92",
+     "https://musicbrainz.org/ws/2/release-group?artist=01b3b6f8-02ad-4872-b4a0-3fbd16f1f7aa&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/5ef91014-52b8-42c8-833a-59a09157ec23"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/9b/f2/619bf2fd-34f3-46de-60b2-cbddc878db3e/mzaf_4375928203196067792.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1783248937",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "星野源",
+   "album": "Gen",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 30357773-d98d-4d0d-b3dd-0e74339a9b90。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Gen」、artist-credit「星野源」、first-release-date 2025-05-14、primary-type Album、secondary-types 空、轄下 3 個 release（國別 JP；status Official）。廠牌欄實查：SPEEDSTAR。藝人 MBID：星野源 2c6c53ea-09d4-4d98-b174-c9aa83d4fecf（名下 36 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "30357773-d98d-4d0d-b3dd-0e74339a9b90",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/30357773-d98d-4d0d-b3dd-0e74339a9b90/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 847,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=847，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十六軌的詞、曲、編曲都是他一個人，客座卻集中在四首上。〈Mad Hope〉一次請來 Louis Cole、Sam Gendel 與 Sam Wilkes，〈2〉找的是一位韓國饒舌歌手，Louis Cole 還在〈Glitch〉上打了鼓。2025 年 5 月 14 日由 SPEEDSTAR 發行，距《POP VIRUS》六年半，全長 56 分 37 秒。第 10 軌〈暗闇〉是碟上唯一一首彈唱曲。碟名原本暫定《Mad Hope》，他怕那個名字會生出訊息性，後來才換掉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/30357773-d98d-4d0d-b3dd-0e74339a9b90?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=30357773-d98d-4d0d-b3dd-0e74339a9b90&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1809314701&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/Gen_(%E6%98%9F%E9%87%8E%E6%BA%90%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://musicbrainz.org/ws/2/release-group?artist=2c6c53ea-09d4-4d98-b174-c9aa83d4fecf&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/30357773-d98d-4d0d-b3dd-0e74339a9b90"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/18/1d/ae181d26-4087-e253-35db-e09a48b1af3c/mzaf_2495721864152921519.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1809314701",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "藤井風",
+   "album": "Prema",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 937eacf6-5bf6-416b-891b-05fd9f8ddd45。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Prema」、artist-credit「Fujii Kaze」、first-release-date 2025-09-05、primary-type Album、secondary-types 空、轄下 12 個 release（國別 US／XW／GB／JP；status Official）。廠牌欄實查：Republic Records、HEHN RECORDS、UNIVERSAL SIGMA、Polydor。刻意不釘：cda0abf8-01fb-43c1-8b7c-1d6bdecb74fb《Pre: Prema》（2025-09-05，EP+Compilation，同日發的先行合輯）。藝人 MBID：Fujii Kaze c3a4aeca-8f02-4d22-b1ff-693434ab09a8（名下 36 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "937eacf6-5bf6-416b-891b-05fd9f8ddd45",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/937eacf6-5bf6-416b-891b-05fd9f8ddd45/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 277,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=277，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九軌的詞全是英語，這是他第一張整張以英語寫成的碟。九首曲子都由他自己寫，詞則有五首與 Shy Carter 合寫。製作的主軸是韓國製作人 250——九軌裡他掛了八軌，另有三位製作人各分擔一首。錄音在亞特蘭大的 ABS，2025 年 9 月 5 日發行，標準版一律九軌，限定盤多出來的第二片是七首舊單曲、不算進正盤。全長 39 分 46 秒，收尾的〈Forever Young〉5:54 拉得最長。盤名 Prema 是梵文的「神聖之愛」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/937eacf6-5bf6-416b-891b-05fd9f8ddd45?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=937eacf6-5bf6-416b-891b-05fd9f8ddd45&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1819419299&country=jp&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Prema_(album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=c3a4aeca-8f02-4d22-b1ff-693434ab09a8&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/937eacf6-5bf6-416b-891b-05fd9f8ddd45"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/1d/86/411d86b5-e305-4b64-b698-be0305b28f1a/mzaf_4196246417408068150.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1819419299",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "青葉市子",
+   "album": "Luminescent Creatures",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Luminescent Creatures」、artist-credit「青葉市子」、first-release-date 2025-02-28、primary-type Album、secondary-types 空、轄下 8 個 release（國別 US／XW／JP；status Official／Pseudo-Release）。廠牌欄實查：Psychic Hotline、hermine。藝人 MBID：青葉市子 fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705（名下 63 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2515,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2515，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二軌的曲名是一組經緯度，十一軌裡有兩軌不到一分半。那一軌 1 分 08 秒，第 7 軌〈Cochlea〉更只有 55 秒，最長的〈Luciférine〉5:02，整張碟 35 分 46 秒就走完。製作是青葉市子與梅林太郎兩人：她唱全碟，彈古典吉他與電鋼琴，吹 Steiner chime 與貝殼，還把田野錄音帶了進來。錄音混音、母帶與封套攝影三位都是前作《アダンの風》的班底；她與團隊把大部分時間花在波照間島上，碟上取樣了鯨的鳴叫。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1778066065&country=jp&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Luminescent_Creatures",
+     "https://musicbrainz.org/ws/2/release-group?artist=fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/d1e4e7cd-95aa-4fa9-b394-e1e57421d8d1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/d5/16/15d5166f-cfef-874c-eb44-e27dfec01f7c/mzaf_18413610756256213189.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777069509",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石橋英子",
+   "album": "Antigone",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「Antigone」、artist-credit「Eiko Ishibashi」、first-release-date 2025-03-28、primary-type Album、secondary-types 空、轄下 2 個 release（國別 XW／US；status Official）。廠牌欄實查：Drag City。藝人 MBID：Eiko Ishibashi 7a505472-ef0a-4a38-86cc-15e3f2a4261c（名下 58 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 407,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=407，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈The Model〉那段管弦是替根特影展寫的，口白取自傅柯。那一軌 8:33，管弦部分為影展的《2x25》企畫而作，由 Brussels Philharmonic 演奏、Dirk Brossé 指揮，口白那段出自他談十八世紀健康政治的文章。八軌裡有七軌是石橋英子寫的，只有〈Nothing As〉出自 Jim O'Rourke——他同時掛製作、錄音與混音，鼓則是山本達久。2025 年 3 月 28 日由 Drag City 發行，數位與 12 吋黑膠都是單片 8 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1786650157&country=jp&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Antigone_(Eiko_Ishibashi_album)",
+     "https://musicbrainz.org/ws/2/release-group?artist=7a505472-ef0a-4a38-86cc-15e3f2a4261c&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/b80483e6-a1d0-43cd-8945-ed7e4ceaeb4c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/d2/01/4bd20180-4eda-8f45-8206-f7f4a8b05c0e/mzaf_7897690114562285086.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1786650157",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "추다혜차지스",
+   "album": "소수민족",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1b58fd0e-1856-4ccc-9e6b-2e7aed0e0b1e。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「소수민족」、artist-credit「추다혜차지스」、first-release-date 2025-06-13、primary-type Album、secondary-types 空、轄下 1 個 release（國別 XW；status Official）。廠牌欄實查：POCLANOS。藝人 MBID：추다혜차지스 76109ff2-a787-404d-8583-a218b1950704（名下 2 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "1b58fd0e-1856-4ccc-9e6b-2e7aed0e0b1e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1b58fd0e-1856-4ccc-9e6b-2e7aed0e0b1e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 29,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=29，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個人的底是巫歌，管樂客席另外三個人吹進來。編制是主唱、吉他、貝斯與鼓，客席那三位分別吹小號、中音薩克斯風與次中音薩克斯風。做法是把韓國傳統巫歌拉進流行音樂的文法裡，在原本的迷幻放克底上再加進 dancehall 與嘻哈。主唱從 2016 年起走遍韓國學巫歌，吉他手則在 Berklee 學過爵士吉他。2025 年 6 月 13 日由 POCLANOS 發行，九軌總長 40 分 48 秒。隔年拿下第 23 屆韓國大眾音樂賞的年度專輯，另以〈허쎄〉拿下最佳節奏藍調與靈魂歌曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1b58fd0e-1856-4ccc-9e6b-2e7aed0e0b1e?fmt=json&inc=artist-credits+releases",
+     "https://music.bugs.co.kr/album/20731241",
+     "https://itunes.apple.com/lookup?id=1515812602&entity=album&limit=200&country=kr",
+     "https://itunes.apple.com/lookup?id=1818525322&country=us&entity=song&limit=200",
+     "https://www.khan.co.kr/article/202602270003001",
+     "https://v.daum.net/v/20260324151202678",
+     "https://musicbrainz.org/ws/2/release-group?artist=76109ff2-a787-404d-8583-a218b1950704&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/1b58fd0e-1856-4ccc-9e6b-2e7aed0e0b1e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/5a/f7/3e5af76e-b3e6-0f58-3e2f-cd9a5de955ca/mzaf_14003022151579032805.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1818525322",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "이찬혁",
+   "album": "EROS",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 13b4c618-8200-4c61-a4b5-7f0a4959e627。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「EROS」、artist-credit「이찬혁」、first-release-date 2025-07-14、primary-type Album、secondary-types 空、轄下 2 個 release（國別 XW；status Official）。廠牌欄實查：YG Entertainment、YG PLUS。藝人 MBID：이찬혁 810a4fc2-e368-4212-8494-a3934be6973d（名下 3 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "13b4c618-8200-4c61-a4b5-7f0a4959e627",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/13b4c618-8200-4c61-a4b5-7f0a4959e627/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 215,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=215，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "拿下年度歌曲的是第五軌——一首名字裡帶著「絕種」的情歌。〈멸종위기사랑〉在 2026 年 2 月的第 23 屆韓國大眾音樂賞同時拿下年度歌曲與最佳流行歌曲，《EROS》自己則拿下最佳流行專輯，一共三座。主打歌其實是第 3 軌〈비비드라라러브〉；全碟的詞都出自 이찬혁，作曲固定掛他與另外兩人。2025 年 7 月 14 日以數位發行，九軌落在 3 分 15 秒到 5 分之間，第 6 軌〈Eve〉是唯一滿五分的一首，總長 35 分整。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/13b4c618-8200-4c61-a4b5-7f0a4959e627?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=13b4c618-8200-4c61-a4b5-7f0a4959e627&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1825027867&country=us&entity=song&limit=200",
+     "https://music.bugs.co.kr/album/4122969",
+     "https://www.khan.co.kr/article/202602270003001",
+     "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%B0%AC%ED%98%81_(%EA%B0%80%EC%88%98)",
+     "https://musicbrainz.org/release-group/13b4c618-8200-4c61-a4b5-7f0a4959e627"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/4e/df/244edf12-c107-7cb6-347c-f8c7333c9886/mzaf_17270181289109629332.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1825027867",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鄭宜農",
+   "album": "圓缺",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e80098df-649a-4754-88f0-3f1c4c4f0e60。回問 release-group?fmt=json&inc=artist-credits+releases 端點確認：title「圓缺」、artist-credit「鄭宜農」、first-release-date 2025-05-01、primary-type Album、secondary-types 空、轄下 1 個 release（國別 TW；status Official）。廠牌欄實查：。藝人 MBID：鄭宜農 a1168584-1163-49b5-81ce-f7c289720cac（名下 15 個 release-group）（browse 用 release-group?artist=<MBID>&limit=100&offset= 分頁全列，非 25 筆預設上限）。",
+    "rgMbid": "e80098df-649a-4754-88f0-3f1c4c4f0e60",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e80098df-649a-4754-88f0-3f1c4c4f0e60/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 415,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=415，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "收尾的同名曲把蘇軾〈水調歌頭〉節錄進台語歌詞裡。十軌的編曲全由何俊葦一人包辦，製作人是他與鄭宜農；作詞十軌都是她，作曲六首她單掛、四首與何俊葦合寫。整張延續她以天文星象貫穿的做法，這回處理的是月亮的週期，〈寬寬仔來到祢的面前〉的 MV 拉到首爾拍，跳的是韓國傳統舞。客座 Chunho 落在四軌上，李瀧在第 6 軌。數位 2025 年 5 月 1 日上架、實體 5 月 16 日才發行，隔年入圍第 37 屆金曲獎的年度專輯與最佳台語專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e80098df-649a-4754-88f0-3f1c4c4f0e60?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=e80098df-649a-4754-88f0-3f1c4c4f0e60&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1810635857&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%9C%93%E7%BC%BA",
+     "https://musicbrainz.org/ws/2/release-group?artist=a1168584-1163-49b5-81ce-f7c289720cac&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/e80098df-649a-4754-88f0-3f1c4c4f0e60"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/33/dd/e433dd06-802a-d89f-2bc0-f44369a24eaa/mzaf_2312526731811780457.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1810635857",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

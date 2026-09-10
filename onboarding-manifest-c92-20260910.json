@@ -1,0 +1,1689 @@
+{
+ "schemaVersion": 1,
+ "batch": "c92-20260910",
+ "albums": [
+  {
+   "artist": "陳達",
+   "album": "民族樂手陳達和他的歌",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=陳達&limit=6 → count=1450，score 100「陳達偉」41174d95-1cd9-408e-bcf2-bb9c6569dc4d、score 99「陈达飞」da26afe5、score 99「陳達儒」ca93f024-aa61-4253-b9a3-4f8409e4c8b6（TW，台語作詞家），沒有一個是恆春走唱藝人陳達",
+      "release-group?artist=41174d95-1cd9-408e-bcf2-bb9c6569dc4d&limit=100&offset=0 → 0 筆；同法查 ca93f024 → 0 筆（依裁定第 116 條走 browse 分頁端點，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）",
+      "release-group?query=releasegroup:\"民族樂手陳達和他的歌\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"陳達與恆春調說唱\"&limit=10 → count=0（同一藝人的另一張，一併確認）"
+     ],
+     "checkedAt": "2026-09-05T06:20:00Z",
+     "conclusion": "MB 上沒有恆春走唱藝人陳達的 artist 實體：藝人搜尋 score 100 回的是同姓名相近的陳達偉與台語作詞家陳達儒，兩者名下 release-group browse 皆為 0 筆，屬裁定第 122 條「回了完全不相干的東西」而非查無，故再以盤名反向查證，兩種盤名 count 皆為 0。四次查詢全部回 HTTP 200，無 503／403（第 28／98 條），browse 走的是 limit=100 的分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12689529",
+     "https://www.discogs.com/release/24408893",
+     "https://music.apple.com/tw/album/chen-da-and-his-songs/1613957971"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ee/cb/0a/eecb0ab0-87d3-d0d0-2a75-6c2d70e78509/886449994885.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1613957971"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片的收入，在出版之前就全數指定給了唱歌的那個人。1971 年 9 月希望出版社印出，發行人俞大綱、主持人史惟亮，屬「希望音樂叢書」之七，黑膠附 24 頁專書，售價新台幣 25 元。許常惠文化藝術基金會刊出的許常惠文章記：史惟亮遠赴恆春邀陳達北上錄音；再版開出兩項條件——須由非營利的學術文化機構出版、收入全數捐給陳達，因此交由洪建全教育文化基金會辦理，1977 年 5 月以 HF-1003 印出。VERSE 郭振宇的專文說，得首屆唱片類金鼎獎的是 1977 年那一版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12689529",
+     "https://hsu-tsang-houei.org/collection/17?type=8",
+     "https://www.discogs.com/release/12689425",
+     "https://www.taipeitimes.com/News/feat/archives/2020/02/09/2003730628",
+     "https://www.verse.com.tw/article/chen-da-and-his-songs",
+     "https://www.discogs.com/release/24408893",
+     "https://www.cna.com.tw/news/acul/202203200058.aspx",
+     "https://music.apple.com/tw/album/chen-da-and-his-songs/1613957971"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/5b/63/75/5b6375b0-b1cb-bc82-257d-688ad3e84fca/mzaf_1877258937284182825.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1613957971",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳達",
+   "album": "陳達與恆春調說唱",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=陳達&limit=6 → count=1450，score 100「陳達偉」41174d95、score 99「陳達儒」ca93f024，無恆春走唱藝人陳達的實體",
+      "release-group?artist=41174d95-1cd9-408e-bcf2-bb9c6569dc4d&limit=100&offset=0 → 0 筆；release-group?artist=ca93f024-aa61-4253-b9a3-4f8409e4c8b6&limit=100&offset=0 → 0 筆",
+      "release-group?query=releasegroup:\"陳達與恆春調說唱\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Chen Ta and Heng-chun Tune Minstrelsy\"&limit=10 → count=0（英文題反查）"
+     ],
+     "checkedAt": "2026-09-05T06:22:00Z",
+     "conclusion": "MB 無此藝人實體，兩個同名近似的實體名下 release-group browse 皆 0 筆；盤名以繁體與封套英文題兩種寫法查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳實體與所查對象的不相符情形已在結論中排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12689332",
+     "https://www.discogs.com/release/24553307",
+     "https://music.apple.com/tw/album/%E9%99%B3%E9%81%94%E8%88%87%E6%81%86%E6%98%A5%E8%AA%BF%E8%AA%AA%E5%94%B1/1694286277"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3d/8c/5b/3d8c5b56-1018-a8b3-a499-ed379416c395/193017115697.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1694286277"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張唱片只有一則故事，黑膠兩面各一段。1979 年第一唱片以 FM-6008 發行，跨頁對開封套，註記欄寫「中國民俗音樂專輯 第一輯／編輯：許常惠、邱坤良」，兩面各收一段〈阿遠與阿發父子的悲慘故事〉。2000 年同廠以 FCD-106 轉成 CD，兩軌 18 分 44 秒與 21 分 24 秒，註記欄改印成「台灣民俗音樂專輯精選版，第五輯」——同一份錄音在兩次出版裡被放進不同系列的格位。同一位歌者 1971 年那張是四個短調的反覆，這裡一面就是近二十分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12689332",
+     "https://www.discogs.com/release/24553307",
+     "https://music.apple.com/tw/album/1694286277",
+     "https://www.discogs.com/release/12689529",
+     "https://music.apple.com/tw/album/%E9%99%B3%E9%81%94%E8%88%87%E6%81%86%E6%98%A5%E8%AA%BF%E8%AA%AA%E5%94%B1/1694286277"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/c8/4b/2f/c84b2fcc-16ef-b6e0-0834-57d42f682954/mzaf_4125468750748195234.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1694286277",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "潘麗麗",
+   "album": "畫眉",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=潘麗麗&limit=6 → count=390，score 100「潘麗麗」34db6167-af55-4140-a940-1a2e8cc78880（TW, Person），其餘 score ≤52 為潘嘉麗、潘麗莉、潘麗玉等他人",
+      "release-group?artist=34db6167-af55-4140-a940-1a2e8cc78880&limit=100&offset=0 → 回 1 筆：《畫眉》9962273e-74b3-408a-9d11-07fd39e78e37，first-release-date 為空、primary-type 為 null（依第 116 條走分頁端點，1<100 已到底）",
+      "release-group/9962273e-74b3-408a-9d11-07fd39e78e37?inc=artist-credits+releases → primary-type=null、primary-type-id=null、first-release-date=\"\"、secondary-types=[]，底下唯一 release 9d508550 的 status=null、barcode=null、packaging=null、text-representation 全空",
+      "release-group?query=releasegroup:\"畫眉\" AND artist:\"潘麗麗\"&limit=10 → count=1，即上述同一個空殼 RG，無第二筆"
+     ],
+     "checkedAt": "2026-09-05T06:45:00Z",
+     "conclusion": "不是 count=0 的查無，而是「MB 只有一個無型別、無日期、無 release 細節的空殼 release-group」：primary-type 與 first-release-date 皆為 null／空，唯一的 release 連 status 與 barcode 都沒有，過不了 §1 的 primary-type=Album 門檻，也釘不住是哪一版，故走人工身分並在此原樣記下該 RG 的識別碼供日後翻案。四次查詢全部 HTTP 200，非 503／403（第 28／98 條），browse 走 limit=100 分頁端點（第 116 條），回傳的藝人實體是 TW 的潘麗麗本人、不是同名他人（第 122 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/19665379",
+     "https://www.discogs.com/release/19665670",
+     "https://www.discogs.com/label/1188490-%E6%B0%B4%E6%99%B6%E5%94%B1%E7%89%87"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；本卡另依 c-92 rulings 第 3 條：MB 上的空殼 release-group（無 primary-type、無日期）不算可釘的身分，走 §1 並明寫其存在。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/qw8F95bEXqo93jT3DCnIgd75L2J911BvqsPR782W6gg/rs:fit/g:sm/q:90/h:600/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NjY1/Mzc5LTE2Mjc1NTQ0/MzUtNTI0Ni5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "19665379"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "侯孝賢那張原聲帶裡的〈花開毋對時〉，唱的就是她。1993 年《戲夢人生》的配樂是陳明章，她在第四軌上。她自己這張是 1994 年 3 月水晶唱片的 CIRD1018-2，Discogs 的風格欄記 Hokkien Pop。曲序從同名的〈畫眉〉起，接〈風雲飛過全台灣厝頂〉與〈山路〉，中段有〈大漢汝落知〉與〈思念二千公尺〉，收在〈等待冬天〉。同一家廠牌 1998 年的 CIRD 1060-2《女人在唱歌》，把她與柳育燕、葉樹茵、雷光夏、瓢蟲列在同一張女聲合輯上。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/19665379",
+     "https://www.discogs.com/label/1188490-%E6%B0%B4%E6%99%B6%E5%94%B1%E7%89%87",
+     "https://www.discogs.com/release/16211278",
+     "https://www.discogs.com/release/19665670"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "潘麗麗",
+   "album": "春雨",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=潘麗麗&limit=6 → score 100「潘麗麗」34db6167-af55-4140-a940-1a2e8cc78880（TW, Person）",
+      "release-group?artist=34db6167-af55-4140-a940-1a2e8cc78880&limit=100&offset=0 → 只有 1 筆《畫眉》（空殼 RG），無《春雨》",
+      "release-group?query=releasegroup:\"春雨\" AND artist:\"潘麗麗\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-05T06:47:00Z",
+     "conclusion": "潘麗麗的 MB 實體名下只有一個 release-group 且是《畫眉》，《春雨》完全不在其中；以盤名加藝人併查 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳的是 TW 的潘麗麗本人而非同名他人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/23578109",
+     "https://www.discogs.com/label/1188490-%E6%B0%B4%E6%99%B6%E5%94%B1%E7%89%87"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/p8Q4IAYHGPUkypDJaLfovuJZuHzZJrKF57hnLw6OVZE/rs:fit/g:sm/q:90/h:600/w:568/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTc4/MTA5LTE2NTUyNjA5/OTgtOTY4My5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "23578109"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一軌是〈再會吧! 北投〉，Discogs 的風格欄同時掛 Synth-pop 與 Hokkien Pop。條目上水晶唱片與索引有聲共同掛名，編號 CIRD 1036-2；credit 欄的班底裡，編曲與鍵盤是 Martin Tang、李庭匡、林群欽、王迪與蘇德華，貝斯郭宗韶，鼓 Jimmy Lee 與黃顯忠，母帶鍾國泰。十二軌最短的是 3 分 31 秒的〈你的風流是阮的永遠〉，最長的是 5 分 28 秒的〈雲從山的那邊來〉，同名的〈春雨〉4 分 58 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/23578109",
+     "https://www.discogs.com/label/1188490-%E6%B0%B4%E6%99%B6%E5%94%B1%E7%89%87"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "蕭福德",
+   "album": "希望轉去你身邊",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=蕭福德&limit=6 → count=829，score 100「蕭福德」e4c1f97a-b67a-4128-9b0f-ff54f222cfe7，其餘 score ≤39 為劉德華、Richard Clayderman、Beethoven 等完全不相干者",
+      "release-group?artist=e4c1f97a-b67a-4128-9b0f-ff54f222cfe7&limit=100&offset=0 → 回 200，release-groups 陣列長度 0（依第 116 條走分頁端點）",
+      "release-group?query=artist:\"蕭福德\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"希望轉去你身邊\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-05T06:50:00Z",
+     "conclusion": "MB 上蕭福德的藝人實體存在（score 100 精確命中，不是第 122 條的不相干結果）但名下 release-group browse 回 0 筆；再以 artist 字串與盤名各查一次，count 皆為 0。四次查詢全部 HTTP 200，未遇 503／403，browse 用的是 limit=100 分頁端點而非 25 筆上限的 inc 端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E5%B8%8C%E6%9C%9B%E8%BD%89%E5%8E%BB%E4%BD%A0%E8%BA%AB%E9%82%8A/202968057",
+     "https://www.mymusic.net.tw/ux/w/singer/show/938",
+     "https://www.kkbox.com/tw/en/artist/GtaC7E-Fw6HSDZGN2j"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/34/75/f1/mzi.kfawjrio.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "202968057"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他從彰化北上、在萬華落腳謀生，然後寫了〈華西街的一蕊花〉。MÜST 音樂著作典藏計劃 2015 年 12 月 4 日梁岱琦的專文記下這首歌的掛名：作曲蕭福德，作詞蕭福德與陳樂融，編曲蕭福德與劉富源。第 4 屆金曲獎最佳方言歌曲作詞人獎的入圍名單上有陳樂融與蕭福德的這首歌，報名單位是飛碟企業股份有限公司，那一座由徐錦凱以〈牽阮的手〉拿走。這首歌後來被勵馨基金會的反雛妓運動採用為主題曲。碟上開場的同名曲 5 分 09 秒，第二軌就是它，4 分 32 秒。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/202968057",
+     "https://musttaiwanorg.blogspot.com/2015/12/blog-post.html",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC4%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://zh.wikipedia.org/zh-tw/%E8%95%AD%E7%A6%8F%E5%BE%B7",
+     "https://music.apple.com/tw/album/%E5%B8%8C%E6%9C%9B%E8%BD%89%E5%8E%BB%E4%BD%A0%E8%BA%AB%E9%82%8A/202968057",
+     "https://www.mymusic.net.tw/ux/w/singer/show/938",
+     "https://www.kkbox.com/tw/en/artist/GtaC7E-Fw6HSDZGN2j"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e9/b2/6a/e9b26a79-fbf9-a1a2-7f08-bbd894e37a52/mzaf_10594876104213729014.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "202968057",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "蕭福德",
+   "album": "春秋大夢",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=蕭福德&limit=6 → score 100「蕭福德」e4c1f97a-b67a-4128-9b0f-ff54f222cfe7",
+      "release-group?artist=e4c1f97a-b67a-4128-9b0f-ff54f222cfe7&limit=100&offset=0 → 0 筆",
+      "release-group?query=releasegroup:\"春秋大夢\" AND artist:\"蕭福德\"&limit=10 → count=0（盤名是常見成語，必須連藝人鎖）"
+     ],
+     "checkedAt": "2026-09-05T06:52:00Z",
+     "conclusion": "蕭福德的 MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名因是常見成語而改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，藝人搜尋 score 100 精確命中本人而非同名他人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E6%98%A5%E7%A7%8B%E5%A4%A7%E5%A4%A2/1270810330",
+     "https://www.mymusic.net.tw/ux/w/singer/show/938",
+     "https://www.kkbox.com/tw/en/artist/GtaC7E-Fw6HSDZGN2j"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f0/aa/e5/f0aae5e6-fd69-956a-f6b4-1b75d3daa414/190295790981.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1270810330"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "收尾的〈華西街的一蕊花〉，用的是 1992 年那張上的同一份錄音。條目上的日期是 1995 年 10 月 11 日，共十一軌，曲名有〈十元的魯肉飯〉與〈府城戀情〉；最短的一軌是 3 分 55 秒的〈牽亡引渡〉，最長的是 6 分 27 秒的〈趁呷人〉，同名開場曲 4 分 14 秒。中文維基的作品表把廠牌記成飛碟唱片，現行數位版的 ℗ 行則是華納。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1270810330",
+     "https://zh.wikipedia.org/zh-tw/%E8%95%AD%E7%A6%8F%E5%BE%B7",
+     "https://music.apple.com/tw/album/%E6%98%A5%E7%A7%8B%E5%A4%A7%E5%A4%A2/1270810330",
+     "https://www.mymusic.net.tw/ux/w/singer/show/938",
+     "https://www.kkbox.com/tw/en/artist/GtaC7E-Fw6HSDZGN2j"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/25/3b/1a/253b1a4e-1a2b-5fd7-8387-777b6c9a408f/mzaf_11001643195174917429.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1270810330",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "夾子電動大樂隊",
+   "album": "不會說台語",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=夾子&limit=6 → count=7171，score 100「夹子道」542317b5-2565-4a9b-903e-adaf57475097（CN，簡體、不相干）、score 99「lemon夹子」、score 67「夾子電動大樂隊」e136f539-98ad-463d-b6fb-691dc9faa3e7（TW，Taiwanese rock band）",
+      "release-group?artist=e136f539-98ad-463d-b6fb-691dc9faa3e7&limit=100&offset=0 → 回 1 筆，且是 1997 Album/Compilation《赤聲搖滾第一集： SCUM》aa9c3576（合輯，樂團只是參與者），名下沒有任何一張自己的專輯",
+      "release-group?artist=542317b5-2565-4a9b-903e-adaf57475097&limit=100&offset=0 → 1 筆，2006 Album/Compilation《死心塌地》ac502fb2，與本盤無關（第 122 條的反向確認）",
+      "release-group?query=releasegroup:\"不會說台語\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-05T07:06:00Z",
+     "conclusion": "MB 上夾子有兩個相關實體：簡體的「夹子道」（score 100，是搜尋回的不相干結果）名下只有一張 2006 年合輯，台灣的「夾子電動大樂隊」（score 67）名下只有一筆 1997 年的赤聲搖滾合輯、沒有任何自己的專輯；盤名反查 count=0。四次查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，兩個候選實體都逐一 browse 過而非只看搜尋分數最高的那個。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E4%B8%8D%E6%9C%83%E8%AA%AA%E5%8F%B0%E8%AA%9E/1682222679",
+     "https://www.discogs.com/artist/4949063-%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；團名分期的衝突另依 c-92 rulings 第 6 條（實體 credit 優先於分期表）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d2/01/c2/d201c2eb-e05f-e507-d63f-eb6c6bbb4d35/0724359726823.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1682222679"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 29,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "主唱應蔚民受的是古典鋼琴訓練，先待過濁水溪公社。搖滾客 2015 年 6 月 17 日的封面人物專訪這麼記，也提到霹靂鳥。這張的 ℗ 行是 2003 年友善的狗文化活動股份有限公司；Discogs 藝人頁上，他們 1998 到 2002 年間主要出現在合輯：角頭音樂的《ㄞ國歌曲》與水晶唱片 CIRD1116 的《崩代紀事 Bandage Force》。十四軌最短的是〈犯桃花 (廣播Call In)〉1 分 34 秒，最長的是〈再加五塊錢狂想曲〉5 分 12 秒。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1682222679",
+     "https://www.discogs.com/artist/4949063-%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A",
+     "https://music.apple.com/tw/artist/709032916",
+     "https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89/",
+     "https://music.apple.com/tw/album/%E4%B8%8D%E6%9C%83%E8%AA%AA%E5%8F%B0%E8%AA%9E/1682222679"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a6/d2/fe/a6d2fed6-f7ba-de0d-ae6a-6e91ae0523b8/mzaf_3933139724006973296.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1682222679",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "夾子電動大樂隊",
+   "album": "地下人",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=夾子&limit=6 → score 100「夹子道」542317b5（CN，不相干）、score 67「夾子電動大樂隊」e136f539（TW）",
+      "release-group?artist=e136f539-98ad-463d-b6fb-691dc9faa3e7&limit=100&offset=0 → 1 筆，1997 年的《赤聲搖滾第一集： SCUM》合輯，無 2012 年條目",
+      "release-group?artist=542317b5-2565-4a9b-903e-adaf57475097&limit=100&offset=0 → 1 筆，2006《死心塌地》，無 2012 年條目",
+      "release-group?query=releasegroup:\"地下人\" AND artist:\"夾子\"&limit=10 → count=0（盤名太常見，連藝人一起鎖）"
+     ],
+     "checkedAt": "2026-09-05T07:08:00Z",
+     "conclusion": "兩個夾子相關的 MB 藝人實體名下各只有一筆合輯，都不是 2012 年這張；因盤名是常見詞，改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，兩個候選實體都 browse 過、沒有只憑搜尋分數最高的簡體實體下結論。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8269115",
+     "https://www.discogs.com/artist/4949063-%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；團名分期的衝突另依 c-92 rulings 第 6 條（實體 credit 優先於分期表）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/cCltBIgFNwBWDlzcyRS5Bfk2CLn_P_JxXRfS6_AJXq4/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNjkx/MTUtMTQ1ODMyODQ5/MC0zMzI1LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "8269115"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "CLIPS 這組編號從這張開始編起，附腰帶與八頁小冊。Discogs 條目記 2012 年 Hove 發行 CD、編號 CLIPS-12001，genre 欄 Electronic 與 Rock、style 欄 Avantgarde，登錄二十軌，曲名如〈問我要不要開趴〉。兩年後的《情慾教室》編號 Clips14001，Clips 與 Hove 共同掛名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8269115",
+     "https://www.discogs.com/release/8271232",
+     "https://music.apple.com/tw/album/1682222679",
+     "https://www.discogs.com/artist/4949063-%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "夾子電動大樂隊",
+   "album": "情慾教室",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=夾子&limit=6 → score 100「夹子道」542317b5（CN，不相干）、score 67「夾子電動大樂隊」e136f539（TW）",
+      "release-group?artist=e136f539-98ad-463d-b6fb-691dc9faa3e7&limit=100&offset=0 → 1 筆 1997 年合輯，無 2014 年條目",
+      "release-group?artist=542317b5-2565-4a9b-903e-adaf57475097&limit=100&offset=0 → 1 筆 2006 年合輯，無 2014 年條目",
+      "release-group?query=releasegroup:\"情慾教室\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-05T07:10:00Z",
+     "conclusion": "兩個夾子相關的 MB 實體名下各只有一筆合輯，2014 年這張不在其中；盤名反查 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，兩個候選實體都逐一 browse 過。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8271232",
+     "https://music.apple.com/tw/album/%E6%83%85%E6%85%BE%E6%95%99%E5%AE%A4/1040454284"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；團名分期的衝突另依 c-92 rulings 第 6 條（實體 credit 優先於分期表）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/61/12/f8/6112f8c4-99e0-d8e5-ec4a-5289a558f7f2/4713616008372.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1040454284"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 15,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "透明的塑膠外套上直接網印，裡面是數位本裝。由 Clips 與 Hove 掛名，Discogs 的 style 欄掛 Experimental、Acoustic、Vocal 與 Folk Rock。〈在想什麼〉與〈勝利慾望〉各帶一段 Intro，後者連本曲都是演奏版，那段 Intro 只有 0 分 53 秒；最長的一軌是 5 分 26 秒的〈寒冬春夜〉。搖滾客 2015 年 6 月 17 日的專訪說：小應在樂團一度停擺後轉往劇場與電子音樂，2014 年靠這張重新聚合。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8271232",
+     "https://music.apple.com/tw/album/1040454284",
+     "https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89%EF%BC%89/",
+     "https://music.apple.com/tw/album/%E6%83%85%E6%85%BE%E6%95%99%E5%AE%A4/1040454284"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f4/1b/e1/f41be1b7-a299-f27d-b502-4f4828ad0e53/mzaf_926678920611748101.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1040454284",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "糯米糰",
+   "album": "糯米糰",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "selfTitledVerified": true,
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=糯米糰&limit=6 → count=669，score 100「糯米糰」41aed5a2-3227-4c5d-a732-d1b7528bfad9（TW），其餘 score ≤50 為糯米、米米CLUB 等他人",
+      "release-group?artist=41aed5a2-3227-4c5d-a732-d1b7528bfad9&limit=100&offset=0 → 回 4 筆：2000 Album《青春鳥王》11a54b17、2003 Album/Live《903 id club 拉闊音樂會》532ffbe0、2001 EP《Super EP》d86aed60、2003 EP《迷你專輯(貳)》f0ec6342。1997 年的同名首張不在其中（依第 116 條走分頁端點，4<100 已到底）",
+      "release-group?query=releasegroup:\"糯米糰\" AND artist:\"糯米糰\"&limit=10 → count=0（自我同名，必須併查才有意義）",
+      "release-group?query=releasegroup:\"GO GO 糯米糰\"&limit=10 → count=0（候選清單原列的標題一併確認，同樣查無）"
+     ],
+     "checkedAt": "2026-09-05T07:15:00Z",
+     "conclusion": "糯米糰的 MB 藝人實體存在且名下有 4 個 release-group（2000 年後的一張專輯、一張現場與兩張 EP），1997 年的同名首張不在其中；自我同名盤以 releasegroup 加 artist 併查 count=0。四次查詢全部 HTTP 200，非 503／403，browse 用 limit=100 分頁端點而非 25 筆上限的 inc 端點，搜尋 score 100 精確命中台灣的糯米糰本團。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E7%B3%AF%E7%B1%B3%E7%B3%B0/1573607993",
+     "https://zh.wikipedia.org/zh-tw/%E7%B3%AF%E7%B1%B3%E7%B3%B0_(%E6%A8%82%E5%9C%98)",
+     "https://www.discogs.com/artist/5465622-%E7%B3%AF%E7%B1%B3%E7%B3%B0"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；盤名由《GO GO 糯米糰》更正為《糯米糰》另依 c-92 rulings 第 7 條。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/dd/63/1b/dd631bcc-15b7-e100-8b27-cb2f723527e2/094639109654.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1573607993"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 117,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一首〈蒼蠅女郎〉在這張碟上出現兩次，第二次是 Jungle Mix。正曲 3 分 47 秒，末軌 3 分 54 秒。這首歌 1996 年先以 3 分 23 秒的版本當第一軌，收進 Philips 與 Polygram Records Ltd. Taiwan 的合輯《共譜新聲》（編號 527 618-2）；1997 年才有這張，℗ 行是 Gold Typhoon。最短的〈賭博〉2 分 37 秒，最長的〈濫情歌〉5 分 11 秒，另有〈偉士牌 (Vespa)〉與〈綠蠵龜〉。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1573607993",
+     "https://www.discogs.com/master/2594105",
+     "https://www.discogs.com/release/17002314",
+     "https://www.discogs.com/artist/5465622-%E7%B3%AF%E7%B1%B3%E7%B3%B0",
+     "https://music.apple.com/tw/album/%E7%B3%AF%E7%B1%B3%E7%B3%B0/1573607993",
+     "https://zh.wikipedia.org/zh-tw/%E7%B3%AF%E7%B1%B3%E7%B3%B0_(%E6%A8%82%E5%9C%98)"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/3f/4b/ef3f4b4d-11e7-1156-81a2-753dd6a21b80/mzaf_3423115043750910909.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1573607993",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "花生隊長",
+   "album": "Oh my god",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=花生隊長&limit=6 → count=3878，score 100「花生隊長」0761d5bb-d3c7-4f7c-9921-a2489a9968d6，其後 score ≤45 依序是「队长」「いきものがかり」「Queen」「隊長さん」「ブリー隊長」——全部不相干（第 122 條形狀）",
+      "release-group?artist=0761d5bb-d3c7-4f7c-9921-a2489a9968d6&limit=100&offset=0 → 回 1 筆，1997 Album/Compilation《赤聲搖滾第一集： SCUM》aa9c3576-f130-4dc9-a996-e52c38763532，是樂團的參與作品而非本盤（依第 116 條走分頁端點）",
+      "release-group?query=releasegroup:\"Oh my god\" AND artist:\"花生隊長\"&limit=10 → count=0（盤名是高頻詞，必須連藝人鎖）"
+     ],
+     "checkedAt": "2026-09-05T07:18:00Z",
+     "conclusion": "花生隊長的 MB 藝人實體存在，名下唯一的 release-group 是他們參與的 1997 年赤聲搖滾合輯，2002 年這張正規盤不在其中；因盤名是超高頻英文詞組，改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點；藝人搜尋除 score 100 那筆外全是不相干實體，已確認 score 100 那筆才是本團。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/11465264",
+     "https://www.discogs.com/artist/6264083-%E8%8A%B1%E7%94%9F%E9%9A%8A%E9%95%B7"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/qhxieSlfwh6gSqRLNzdpgpGRti2j8ESs-4R1fPfFQB4/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDY1/MjY0LTE1MTY4MTAy/MTktODM2Mi5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "11465264"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 15,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩張合輯之後，這一張由 Sony Music Taiwan 出。Discogs 條目記 2002 年、編號 IMD0220，genre 欄只給了 Rock 一個字。曲名把作法寫進標題：〈BoppaNova〉與〈Disconova〉。先前那兩張是 1999 年角頭音樂的《ㄞ國歌曲》與 2001 年水晶唱片的《崩代紀事 Bandage Force》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11465264",
+     "https://www.discogs.com/artist/6264083-%E8%8A%B1%E7%94%9F%E9%9A%8A%E9%95%B7",
+     "https://www.discogs.com/release/11730425"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "脫拉庫",
+   "album": "歡迎脫拉庫",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=脫拉庫&limit=6 → count=106，score 100「脫拉庫」c0dab6aa-cc48-44db-a00e-de1b024d889f（TW），其餘 score ≤33 為拉拉拉拉伯克、Johannes Brahms、羊库库 等不相干者",
+      "release-group?artist=c0dab6aa-cc48-44db-a00e-de1b024d889f&limit=100&offset=0 → 回 1 筆，2000 Album《飛向陽光飛向你》828fb325-0cd8-407a-a64a-d578af16dba5（即池中已有的第二張），1999 年的首張不在其中",
+      "release-group?query=releasegroup:\"歡迎脫拉庫\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"賀爾蒙先生\"&limit=10 → count=0（同藝人本批另一張，一併確認）"
+     ],
+     "checkedAt": "2026-09-05T07:22:00Z",
+     "conclusion": "脫拉庫的 MB 藝人實體存在，名下只有一個 release-group、且是 2000 年的第二張（池中已上架的那張），1999 年首張完全沒有建檔；盤名反查 count=0。四次查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋 score 100 精確命中本團。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E6%AD%A1%E8%BF%8E%E8%84%AB%E6%8B%89%E5%BA%AB/339378322",
+     "https://www.books.com.tw/products/0020166816",
+     "https://zh.wikipedia.org/zh-tw/%E8%84%AB%E6%8B%89%E5%BA%AB"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；「脫拉庫第二張」的順序更正另依 c-92 rulings 第 8 條。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/f9/5b/27/mzi.oufdyhuv.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "339378322"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 760,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第 11 屆金曲獎的入圍樂團接力表演，他們唱的是〈大太陽〉。同屆的最佳演唱團體獎，他們入圍未得獎，那一座由亂彈拿走，一起入圍的有四分衛《起來》、五月天與花兒《放學啦》。1999 年那張的 ℗ 行是 Sony Music Entertainment (Taiwan) Ltd.，十四軌分兩片，第一片九軌、第二片五軌。樂團 1996 年成軍（中文維基），主唱張國璽、吉他柯宗佑、貝斯彭承吉、鼓陳沐凡。〈大太陽〉2 分 46 秒是第一片最短的，最長的是〈搞〉4 分 53 秒。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/339378322",
+     "https://zh.wikipedia.org/zh-tw/%E8%84%AB%E6%8B%89%E5%BA%AB",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://music.apple.com/tw/album/%E6%AD%A1%E8%BF%8E%E8%84%AB%E6%8B%89%E5%BA%AB/339378322",
+     "https://www.books.com.tw/products/0020166816"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/bd/16/d1/bd16d1d2-33e1-5628-b031-d25936a77b92/mzaf_12820478432266957537.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "339378322",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "脫拉庫",
+   "album": "賀爾蒙先生",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=脫拉庫&limit=6 → score 100「脫拉庫」c0dab6aa-cc48-44db-a00e-de1b024d889f（TW）",
+      "release-group?artist=c0dab6aa-cc48-44db-a00e-de1b024d889f&limit=100&offset=0 → 1 筆，2000 年的《飛向陽光飛向你》，無 2015 年條目",
+      "release-group?query=releasegroup:\"賀爾蒙先生\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Mr. Hormone\"&limit=10 → count=0（英文題反查）"
+     ],
+     "checkedAt": "2026-09-05T07:25:00Z",
+     "conclusion": "脫拉庫的 MB 藝人實體名下只有 2000 年那一張 release-group，2015 年重組後的這張沒有建檔；盤名以中文與英文題兩種寫法查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本團而非同名他人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E8%B3%80%E7%88%BE%E8%92%99%E5%85%88%E7%94%9F/1478113307",
+     "https://www.books.com.tw/products/0020186683"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/15/04/20/1504206a-55cd-d586-58ad-3bbbab570869/5054196690922.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1478113307"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 172,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "停了十二年，先辦一場演唱會重組，然後才有這張。2015 年 6 月 26 日的十二軌，開場〈人工衛星導航〉由蔡黃汝客座，末三軌是 80KIDZ、BAZZIX 與 DOUGH 給〈我在想你的時候睡著了〉〈人工衛星導航〉〈約泡溫泉〉的混音版。第 27 屆金曲獎最佳樂團獎入圍未得獎（報名單位華納國際音樂），得獎的是蘇打綠；最佳專輯包裝獎則是黃家賢以本盤入圍未得獎，得獎的是林緯銘《一切不滅定律》。最短的〈三分鐘情歌〉3 分 00 秒，最長的〈B-612行星〉5 分 44 秒。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1478113307",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC27%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://zh.wikipedia.org/zh-tw/%E8%84%AB%E6%8B%89%E5%BA%AB",
+     "https://music.apple.com/tw/album/%E8%B3%80%E7%88%BE%E8%92%99%E5%85%88%E7%94%9F/1478113307",
+     "https://www.books.com.tw/products/0020186683"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d5/78/2b/d5782bc2-e03a-d00f-e984-a8078f45daf8/mzaf_16315007058342862001.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1478113307",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "裝咖人",
+   "album": "夜官巡場",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=裝咖人&limit=6 → count=1552，score 100「顏靜萱」1362e453-4e2a-4d0b-8970-97692f7a43ba（TW）、score 94「樂咖」、score 92「西装」、score 89「甲田雅人」——**沒有一個是裝咖人本團**，是第 122 條「MB 回了完全不相干的東西」的形狀",
+      "release-group?artist=1362e453-4e2a-4d0b-8970-97692f7a43ba&limit=100&offset=0 → 0 筆（把 score 100 那個不相干實體也 browse 過，確認它不是本團的錯建檔）",
+      "release-group?query=releasegroup:\"夜官巡場\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Iā-Kuan Sûn-Tiûnn\"&limit=10 → count=0（白話字羅馬拼音反查）"
+     ],
+     "checkedAt": "2026-09-05T07:30:00Z",
+     "conclusion": "MB 上沒有裝咖人的 artist 實體：藝人搜尋 score 100 回的是顏靜萱，與本團無關（第 122 條形狀），該實體名下 release-group 也是 0 筆，可排除「本團被錯建成別名」的可能；再以中文盤名與白話字羅馬拼音兩種寫法反查，count 皆為 0。四次查詢全部 HTTP 200，未遇 503／403，browse 用 limit=100 分頁端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E5%A4%9C%E5%AE%98%E5%B7%A1%E5%A0%B4/1594803360",
+     "https://www.discogs.com/release/22282648",
+     "https://www.openbook.org.tw/article/p-66674"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；獎項敘述的更正另依 c-92 rulings 第 9 條（不是金曲台語專輯得主，不得沿用候選清單的「金曲級」說法當成得獎）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/64/07/67/64076768-966c-c221-c8a2-10433d8ee7ad/cover_5000x5000.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1594803360"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 522,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈林秀媚〉唱的是二二八受難者盧鈵欽的妻子。Openbook 閱讀誌 2022 年 8 月 9 日李小孟的報導引團長張嘉祥的話：想用女性、家屬的角度看二二八在嘉義發生的事；全片把成長經驗、火燒庄水流媽廟的陰神信仰與白色恐怖史寫在一起。老頭音樂 2022 年 2 月的實體 CD 上，曲名都附白話字羅馬拼音，如〈水流媽〉Tsuí-lâu-Má。第 33 屆金曲獎最佳新人獎入圍未得獎，得獎的是珂拉琪。他的同名小說（九歌出版）獲 2023 年臺灣文學獎金典獎與蓓蕾獎，得獎的是小說。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1594803360",
+     "https://www.discogs.com/release/22282648",
+     "https://www.openbook.org.tw/article/p-66674",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC33%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://award.nmtl.gov.tw/information?uid=3&pid=2116",
+     "https://music.apple.com/tw/album/%E5%A4%9C%E5%AE%98%E5%B7%A1%E5%A0%B4/1594803360"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/06/d0/e0/06d0e0cc-f568-862b-d9b0-590c70334ef5/mzaf_10005256059072883041.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1594803360",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝銘祐",
+   "album": "台南",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝銘祐&limit=6 → count=685，score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW），其餘 score ≤36 為古代祐三、菅野祐悟、謝霆鋒 等他人",
+      "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 回 2 筆：2017 Album《舊年》668c1bcf-c69a-41d5-a66c-e09d73c67fa6、2005 Album《城市》8014af89-8e89-48b8-ae44-d245a08b2e95。《台南》不在其中（依第 116 條走分頁端點，2<100 已到底）",
+      "release-group?query=releasegroup:\"台南\" AND artist:\"謝銘祐\"&limit=10 → count=0（盤名是地名、雜訊高，必須連藝人鎖）"
+     ],
+     "checkedAt": "2026-09-05T07:40:00Z",
+     "conclusion": "謝銘祐的 MB 藝人實體存在且名下有 2 個 release-group（2005《城市》與 2017《舊年》），逐筆比對後 2012 年的《台南》不在其中；因盤名是兩字地名，改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 用 limit=100 分頁端點而非 25 筆上限的 inc 端點，搜尋 score 100 精確命中本人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E5%8D%97_(%E5%B0%88%E8%BC%AF)",
+     "https://www.books.com.tw/products/0020212214",
+     "https://music.apple.com/tw/album/%E5%8F%B0%E5%8D%97/1393950160"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/3c/99/aa/3c99aae3-b97e-645a-dc26-8e71502f97f7/4713108189466.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1393950160"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 90,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他替劉德華寫過歌，後來組團到安養院義演。VERSE 2025 年 4 月 21 日郭璈的專訪記：他早年在台北做幕後、師承製作人黃大軍，三十歲出頭因心累與憂鬱症回台南，2005 年與在地創作者組成麵包車樂團到全台安養院義演。這張拿下第 24 屆金曲獎最佳台語專輯獎，同屆的最佳台語男歌手獎也由他以本盤拿下；第 4 屆金音創作獎最佳民謠專輯獎也是他。題材是台南街廓與老行業，〈五條港邊〉與〈金小姐〉都在；最短的〈信守的明信片〉2 分 50 秒，最長的〈行〉5 分 58 秒。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC24%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://tavis.tw/GIMA/14th/win_history_04.txt",
+     "https://music.apple.com/tw/album/1393950160",
+     "https://www.verse.com.tw/article/chia-beng-iu-tainan",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E5%8D%97_(%E5%B0%88%E8%BC%AF)",
+     "https://www.books.com.tw/products/0020212214",
+     "https://music.apple.com/tw/album/%E5%8F%B0%E5%8D%97/1393950160"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b9/1e/ee/b91eee86-03a7-6a2c-4531-9e22b660f9bb/mzaf_11966505379267738507.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1393950160",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝銘祐",
+   "album": "泥土",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+      "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），無 2004 年條目",
+      "release-group?query=releasegroup:\"泥土\" AND artist:\"謝銘祐\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-05T07:42:00Z",
+     "conclusion": "謝銘祐 MB 實體名下只有兩個 release-group，2004 年這張不在其中；盤名因是常用詞而連藝人一起查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本人而非同名他人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E6%B3%A5%E5%9C%9F/1745303957",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90",
+     "https://www.kawamusic.com.tw/blank-1"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/41/8d/e2418d98-56fa-25ed-c5bd-374d21ec5e70/4711385815054.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1745303957"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二軌裡最長的一軌是 9 分 53 秒的〈島〉。最短的是 2 分 50 秒的〈天田〉，其餘多落在三到五分鐘之間，〈一撮土〉5 分 07 秒。第七軌〈老城門〉6 分 59 秒，2012 年《台南》第二軌的同名曲則是 5 分 48 秒，兩份長度不同的錄音。可澄音樂文創網站的專輯列表把這張記在 2004 年，之前列 2002 年的《圖騰》、之後列 2005 年的《城市》。碟上華語與台語並置，℗ 行是 2004 Great Music Publishing Ltd.",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1745303957",
+     "https://music.apple.com/tw/album/1393950160",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC16%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://music.apple.com/tw/album/%E6%B3%A5%E5%9C%9F/1745303957",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/62/40/9d6240f8-c61a-2c5b-46c5-2506cec47211/mzaf_197938961608691424.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1745303957",
+    "storefront": "HK"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝銘祐",
+   "album": "也獸",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+      "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），無 2014 年條目",
+      "release-group?query=releasegroup:\"也獸\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"情獸\"&limit=10 → count=0（同日發行的另一半，一併確認兩張都查無）"
+     ],
+     "checkedAt": "2026-09-05T07:45:00Z",
+     "conclusion": "謝銘祐 MB 實體名下的兩個 release-group 都不是 2014 年的作品；《也獸》與同日發行的《情獸》兩個盤名各查一次，count 皆為 0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E4%B9%9F%E7%8D%B8/956393709",
+     "https://www.books.com.tw/products/0020212205",
+     "https://www.kawamusic.com.tw/blank-1"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/f7/65/87/f7658734-93dc-bc07-c733-41e04e9bc2d6/9769570194113.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "956393709"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲名短到只剩一個字：〈想〉〈伊〉〈認〉〈泅〉。十三軌裡另有〈毋甘〉〈無閒〉〈迷人〉〈哭聲〉，也還有〈茫霧〉與〈海灣〉；最短的是收尾的〈漂流〉2 分 03 秒，最長的是〈想〉5 分 02 秒。碟出在 2014 年 12 月 7 日，℗ 行是三川娛樂有限公司，可澄音樂文創的專輯列表也把發行者記成三川娛樂。第 26 屆金曲獎最佳台語專輯獎，這張入圍未得獎，那一座由蕭煌奇《上水的花》拿走；同屆的最佳台語男歌手獎他也入圍未得獎，得獎的還是蕭煌奇。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/956393709",
+     "https://music.apple.com/tw/album/956394589",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC26%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://music.apple.com/tw/album/%E4%B9%9F%E7%8D%B8/956393709",
+     "https://www.books.com.tw/products/0020212205"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/63/ae/1463aeef-c9c3-76c2-9a20-010cbdcf242a/mzaf_8117583218613547234.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "956393709",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝銘祐",
+   "album": "情獸",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+      "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），無 2014 年條目",
+      "release-group?query=releasegroup:\"情獸\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"情‧也獸\"&limit=10 → count=0（雙專輯合稱反查）"
+     ],
+     "checkedAt": "2026-09-05T07:47:00Z",
+     "conclusion": "謝銘祐 MB 實體名下的兩個 release-group 都不是 2014 年的作品；以本盤盤名與雙專輯合稱兩種寫法各查一次，count 皆為 0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E6%83%85%E7%8D%B8/956394589",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90",
+     "https://www.kawamusic.com.tw/blank-1"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/7c/4c/1c/7c4c1c66-a307-30c9-0123-c2eb44efe5d3/9769570194120.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "956394589"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩張碟同一天發行，一張進華語目錄、一張進台語目錄。Apple 的主要類型欄把本盤記成華語流行樂，《也獸》記成台灣流行樂。本盤十二軌，開場的〈I Love You〉1 分 00 秒是全片最短的一軌、只是一段引子；最長的是 4 分 52 秒的〈第九首〉，而它正好是碟上的第九軌。〈有一個寫歌的人〉4 分 12 秒、〈半夏〉4 分 11 秒。兩張都出在 2014 年 12 月 7 日、℗ 行同為三川娛樂有限公司，可澄音樂文創的專輯列表也把它們並列在 2014 年。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/956394589",
+     "https://music.apple.com/tw/album/956393709",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://music.apple.com/tw/album/%E6%83%85%E7%8D%B8/956394589",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2a/47/29/2a47291b-a3e2-3dd9-3987-56fbbd51ff48/mzaf_11014852517607509426.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "956394589",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝銘祐",
+   "album": "偏南",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+      "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），2017 年之後名下一張都沒有",
+      "release-group?query=releasegroup:\"偏南\" AND artist:\"謝銘祐\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-05T07:49:00Z",
+     "conclusion": "謝銘祐的 MB 實體名下最新一筆 release-group 停在 2017 年，2024 年這張完全沒有建檔；盤名連藝人併查 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋 score 100 精確命中本人而非同名他人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E5%81%8F%E5%8D%97/1784381552",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://www.puretainan.info/team"
+    ],
+    "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/21/aa/d3/21aad3e8-0419-1735-9e84-a33566fc9efc/4711385817843.jpg/1200x1200bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1784381552"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 155,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "收尾那首〈偏南風〉，自己入圍了年度歌曲與作詞人兩個獎。第 36 屆金曲獎裡這兩項都是入圍未得獎，兩座分別由 Energy〈星期五晚上〉與張淦勛〈南迴之子〉拿走；同屆的最佳台語專輯獎本盤入圍未得獎，得獎的是李竺芯《Suí 水》；最佳台語男歌手獎他也入圍未得獎，得獎的是陳以恆《罐頭塔》。碟出在 2024 年 12 月 15 日，℗ 行的 KAWA Music Co.Ltd 就是他自營的可澄音樂文創。最短的〈無應的批〉3 分 28 秒，最長的〈攬入心肝〉5 分 49 秒。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1784381552",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC36%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://music.apple.com/tw/album/%E5%81%8F%E5%8D%97/1784381552",
+     "https://www.puretainan.info/team"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/91/17/5491176e-facb-2f0d-78c7-3bb4695f2902/mzaf_3891423315446694371.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1784381552",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,2543 @@
+{
+ "schemaVersion": 1,
+ "batch": "c113-20260910",
+ "albums": [
+  {
+   "artist": "嘉手苅林昌",
+   "album": "語やびら島うた 彈 ~嘉手苅林昌の世界~",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=嘉手苅林昌&limit=8 → score 100 命中藝人實體「嘉手苅林昌」8bcfa398-b9fe-4647-8367-e364daf7f6f7（JP）；依第 187 條再以羅馬字 artist?query=Rinsho Kadekaru&limit=8 查一次，score 100 回的是同一個實體，MB 內部沒有另一個羅馬字掛名的分身",
+      "release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&limit=100&offset=0（第 116 條的 browse 分頁端點，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）→ 名下僅 3 個 release-group：《嘉手苅林昌》1965（1a68fd15-6cdd-4299-95d7-24969346f7a3，池中已有）、《BEFORE / AFTER》1999（2b795362，Compilation）、《風狂歌人〜ザ・ベスト・オブ嘉手苅林昌〜》2000（598de81f，Compilation）",
+      "release-group?query=releasegroup:\"語やびら島うた 彈\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"彈 語やびら島うた\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "嘉手苅林昌的藝人實體在 MB 上存在，但名下 release-group browse 只回 3 筆（1965 同名盤與兩張 2000 年前後的精選集），1974–1996 這段完全空白；再以兩種盤名寫法反查 release-group 皆 count=0。所有查詢回 HTTP 200，其中一次 503 已依第 28 條退避重試後取得 200；走的是 limit=100 的 browse 分頁端點（第 116 條），回傳實體都對得上所查對象（第 122 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/11270925",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I025458956",
+     "https://music.apple.com/jp/album/896525906"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/aa/32/68/aa326837-91ea-de7d-f04a-fa131766b49c/COCJ-38625.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "896525906",
+    "note": "試聽探測釘定的 collectionId 896525906（jp）：嘉手苅林昌 — 語やびら島うた 彈 ~嘉手苅林昌の世界~"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "連彈的三線坐著知名定男，幫腔裡有大工哲弘，司儀掛的是照屋林助。主唱兼三線之外只多一把「連弾」的第二把三線與幫腔，是把一場唱會的形制整個搬進錄音室的做法。七段合計 34 分 20 秒，末段〈仲順流れ~久高万寿主~すんさーみー~唐船ドーイ~嘉手久〉一口氣連唱五支曲子、8 分 44 秒，是最長的一段；第六段取的是〈海のチンボーラー~赤山〉。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/11270925",
+     "https://itunes.apple.com/lookup?id=896525906&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I025458956",
+     "https://ja.wikipedia.org/wiki/%E5%98%89%E6%89%8B%E8%8B%85%E6%9E%97%E6%98%8C",
+     "https://musicbrainz.org/ws/2/release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/11270925",
+     "https://music.apple.com/jp/album/896525906"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/0e/47/fe0e47ff-b1f7-c048-8a8d-6e29e8a4bc8e/mzaf_15310812772738965605.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "896525906",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "嘉手苅林昌",
+   "album": "飄 ~嘉手苅林昌の世界 その2~",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=嘉手苅林昌&limit=8 → score 100 命中藝人實體「嘉手苅林昌」8bcfa398-b9fe-4647-8367-e364daf7f6f7（JP）；依第 187 條再以羅馬字 artist?query=Rinsho Kadekaru&limit=8 查一次，score 100 回的是同一個實體，MB 內部沒有另一個羅馬字掛名的分身",
+      "release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&limit=100&offset=0（第 116 條的 browse 分頁端點，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）→ 名下僅 3 個 release-group：《嘉手苅林昌》1965（1a68fd15-6cdd-4299-95d7-24969346f7a3，池中已有）、《BEFORE / AFTER》1999（2b795362，Compilation）、《風狂歌人〜ザ・ベスト・オブ嘉手苅林昌〜》2000（598de81f，Compilation）",
+      "release-group?query=releasegroup:\"飄 嘉手苅林昌の世界\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"語やびら島うた 飄\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "嘉手苅林昌名下 release-group browse 僅 3 筆且無此盤；以帶前綴與不帶前綴兩種盤名反查皆 count=0。查詢全部回 HTTP 200（第 28／98 條），走 browse 分頁端點（第 116 條），無不相干實體混入（第 122 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/11922301",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I025458958",
+     "https://music.apple.com/jp/album/896528456"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/7f/8a/6f/7f8a6f5c-1492-fdde-8933-a14938fbf546/COCJ-38627.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "896528456",
+    "note": "試聽探測釘定的 collectionId 896528456（jp）：嘉手苅林昌 — 飄 ~嘉手苅林昌の世界 その2~"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七段裡三段超過六分鐘，〈かいされー〉一首就唱了九分零二秒。七段合計 39 分 57 秒，另兩段〈本部ナークニー~山原汀間当〉8 分 6 秒與〈嘉手久~多幸山〉6 分 39 秒，三段加起來就佔掉一半以上，最短的〈加那よー〉只有 2 分 38 秒。曲序從祝儀曲的連唱起手，第二段是舞踊曲，中段〈白保節〉來自八重山。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/11922301",
+     "https://itunes.apple.com/lookup?id=896528456&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I025458958",
+     "https://itunes.apple.com/lookup?id=74589049&country=jp&entity=album&limit=200",
+     "https://ja.wikipedia.org/wiki/%E5%98%89%E6%89%8B%E8%8B%85%E6%9E%97%E6%98%8C",
+     "https://musicbrainz.org/ws/2/release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/11922301",
+     "https://music.apple.com/jp/album/896528456"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8b/02/7c/8b027c35-1494-c0c3-6945-1888fb50ca5d/mzaf_1466234909912252430.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "896528456",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "嘉手苅林昌",
+   "album": "潮騒のリズム 独演！嘉手苅林昌[I]",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=嘉手苅林昌&limit=8 → score 100 命中藝人實體「嘉手苅林昌」8bcfa398-b9fe-4647-8367-e364daf7f6f7（JP）；依第 187 條再以羅馬字 artist?query=Rinsho Kadekaru&limit=8 查一次，score 100 回的是同一個實體，MB 內部沒有另一個羅馬字掛名的分身",
+      "release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&limit=100&offset=0（第 116 條的 browse 分頁端點，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）→ 名下僅 3 個 release-group：《嘉手苅林昌》1965（1a68fd15-6cdd-4299-95d7-24969346f7a3，池中已有）、《BEFORE / AFTER》1999（2b795362，Compilation）、《風狂歌人〜ザ・ベスト・オブ嘉手苅林昌〜》2000（598de81f，Compilation）",
+      "release-group?query=releasegroup:\"潮騒のリズム\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"独演！嘉手苅林昌\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "嘉手苅林昌名下 3 個 release-group 皆非本盤，1970 年代一張都沒有；盤名主標與副標兩種寫法反查 MB 皆 count=0。全部回 HTTP 200，browse 走分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12094296",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008808267"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/RGFKThc4UFTLA0qE60zV3TRqJSYWokNQ-d51vtXyX6A/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMDk0/Mjk2LTE1MjgxNzk5/NDYtMTk2OC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "12094296"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "舞台在東京新宿，錄音跨三天，十一段全是一個人抱著三線唱完。錄的是 1975 年 3 月 23 至 25 日新宿厚生年金會館大廳的實況，竹中労企畫的琉球フェスティバル自 1974 年起就在本土舉行。十一段裡有六段是兩支以上的曲子連著唱，收尾的〈嘉手久～唐船ドーイ〉正是唱會固定的收法。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12094296",
+     "https://api.discogs.com/releases/12007353",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008808267",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://ja.wikipedia.org/wiki/%E5%98%89%E6%89%8B%E8%8B%85%E6%9E%97%E6%98%8C",
+     "https://musicbrainz.org/ws/2/release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/12094296"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "嘉手苅林昌",
+   "album": "The Last Session",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=嘉手苅林昌&limit=8 → score 100 命中藝人實體「嘉手苅林昌」8bcfa398-b9fe-4647-8367-e364daf7f6f7（JP）；依第 187 條再以羅馬字 artist?query=Rinsho Kadekaru&limit=8 查一次，score 100 回的是同一個實體，MB 內部沒有另一個羅馬字掛名的分身",
+      "release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&limit=100&offset=0（第 116 條的 browse 分頁端點，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）→ 名下僅 3 個 release-group：《嘉手苅林昌》1965（1a68fd15-6cdd-4299-95d7-24969346f7a3，池中已有）、《BEFORE / AFTER》1999（2b795362，Compilation）、《風狂歌人〜ザ・ベスト・オブ嘉手苅林昌〜》2000（598de81f，Compilation）",
+      "release-group?query=releasegroup:\"The Last Session\"&limit=10 → count=6，score 100 的是 Lee Morgan、Cursed、Gene Vincent、Charlie Shavers 四張同名碟，沒有一張是嘉手苅林昌的（第 122 條「回了不相干的東西」不算查無，故再走藝人端確認）",
+      "release-group?query=artist:\"嘉手苅林昌\" AND releasegroup:\"The Last Session\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "盤名查詢命中的六筆全部是英美爵士與搖滾的同名碟，逐筆核對 artist-credit 沒有一筆是嘉手苅林昌；改從藝人端確認，8bcfa398 名下 3 個 release-group 不含本盤，藝人＋盤名的複合查詢 count=0。這是第 122 條「MB 回了完全不相干的東西」而非查無的形狀，已排除。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15559861",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300111442",
+     "https://music.apple.com/jp/album/720417582"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/0d/2a/670d2a31-a60f-5b1c-8eaa-ecfc14edf2df/00094631455254.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720417582",
+    "note": "試聽探測釘定的 collectionId 720417582（jp）：嘉手苅林昌 — The Last Session"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 80,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "名單上只有兩個人、兩把三線，十三軌合起來整整五十分鐘。十三軌裡九軌落在 2 分 24 秒到 4 分 10 秒之間，只有〈カシカキ〉7 分 5 秒與收尾的〈下千鳥〉7 分 48 秒破七分鐘，短曲密集、兩端各留一個長段落。錄音在 1996 年 4 月 22 與 23 兩天之內做完，混音排到同年 7 月。彈第二把三線的是普久原恒勇——〈芭蕉布〉的作曲者、マルフクレコード創辦人普久原朝喜的養子，1959 年把マルフク的據點從大阪遷回沖繩的也是他。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15559861",
+     "https://itunes.apple.com/lookup?id=720417582&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300111442",
+     "https://ja.wikipedia.org/wiki/%E6%99%AE%E4%B9%85%E5%8E%9F%E6%81%92%E5%8B%87",
+     "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%93%E3%82%A3%E3%81%AE%E6%81%8B",
+     "https://musicbrainz.org/ws/2/release-group?artist=8bcfa398-b9fe-4647-8367-e364daf7f6f7&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/15559861",
+     "https://music.apple.com/jp/album/720417582"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0c/55/4f/0c554f85-c3fd-3835-66d3-f2e5721127cb/mzaf_10498531673818290255.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720417582",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "登川誠仁",
+   "album": "美ら弾き",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=登川誠仁&limit=8 → score 100 命中「登川誠仁」88ed6742-b1ef-4461-9fdd-2a0e5fc2a528（JP）；依第 187 條再查 artist?query=Seijin Noborikawa&limit=8，score 100 回同一實體，無羅馬字分身",
+      "release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&limit=100&offset=0 → 名下僅 1 個 release-group：《It’s only Seiguwa - The Best of Seijin Noborikawa 1975-2004》2007（913fb6c3），是精選集，正規盤一張都沒有建檔",
+      "release-group?query=releasegroup:\"美ら弾き\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Chyurabiki\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "登川誠仁的藝人實體在 MB 上存在，但名下 release-group browse 只回 1 筆、而且是 2007 年的精選集《It’s only Seiguwa》，1970–2004 的正規盤一張都沒建檔；盤名以漢字與羅馬拼音兩種寫法反查皆 count=0。查詢過程遇到一次 503，依第 28 條退避重試後取得 200，不當作查無。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10364858",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1971993809671438617"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/aSRUKmbCFp1abm9vPet0FLiQXx4kf0MCksZQKXol9uk/rs:fit/g:sm/q:90/h:559/w:559/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzY0/ODU4LTE0OTYwNTUw/MzgtNzIzNy5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "10364858"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十六軌裡有北海道的〈江差節〉、宮古的〈根間の主〉與沖永良部的〈永良部千鳥〉。第二軌〈富原ナークニー（宮古音）〜ハンタ原〉一開頭就把宮古的唱法接進本島的即興唱腔，一路收到〈乱れ打ち〉。錄音是 1975 年 8 月 10 日一天之內在ビクター第一錄音室做完的，唱片卻要到 1991 年才上架，中間隔了十六年。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10364858",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1971993809671438617",
+     "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+     "https://musicbrainz.org/ws/2/release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10364858"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "登川誠仁",
+   "album": "スピリチュアル ユニティ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=登川誠仁&limit=8 → score 100 命中「登川誠仁」88ed6742-b1ef-4461-9fdd-2a0e5fc2a528（JP）；依第 187 條再查 artist?query=Seijin Noborikawa&limit=8，score 100 回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&limit=100&offset=0（第 116 條的 browse 分頁端點）→ 名下僅 1 個 release-group：《It’s only Seiguwa - The Best of Seijin Noborikawa 1975-2004》2007（913fb6c3-257f-4500-b363-e7a3b3f758ae），精選集，正規盤零建檔",
+      "release-group?query=releasegroup:\"Spiritual Unity\"&limit=10 → count=4，score 100 的是 Sakis Gouzonis、Leptophonics、Marc Ribot、Albert Ayler Trio 四張，沒有一張是登川誠仁（第 122 條的形狀）",
+      "release-group?query=releasegroup:\"スピリチュアル・ユニティ\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "登川誠仁名下 release-group browse 只有 2007 年那張精選集；英文盤名查詢命中的四筆全是自由爵士與電子的同名碟、artist-credit 無一相符（第 122 條「回了不相干的東西」，不算查無，故再以日文盤名反查），片假名寫法 count=0。全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8278091",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300088336",
+     "https://music.apple.com/jp/album/308642524"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/96/e5/a9/96e5a91c-ce64-739d-a22c-48c61307ced7/mzi.wxramgoe.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "308642524",
+    "note": "試聽探測釘定的 collectionId 308642524（jp）：登川誠仁 — スピリチュアル ユニティ"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 17,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十六首裡有四首是他自己作詞作曲的，其中一首叫〈戦後の嘆き〉。另兩首是〈緑の沖縄〉與〈新デンサー節〉，他寫詞一貫用ウチナーグチ，這幾首就這樣夾在傳統曲目之間。十六軌合計 61 分 54 秒，全部落在 2 分 39 秒到 5 分 35 秒之間，沒有一軌破六分鐘；最長的〈ナークニー〜ハンタ原〉5 分 35 秒是唯一把即興唱腔完整攤開的位置。第三軌〈安里屋ユンタ〉則來自八重山。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8278091",
+     "https://itunes.apple.com/lookup?id=308642524&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300088336",
+     "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+     "https://musicbrainz.org/ws/2/release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8278091",
+     "https://music.apple.com/jp/album/308642524"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/95/e2/a4/95e2a4ea-f18b-289a-eeeb-386a1d8e56c5/mzaf_4673307811073788388.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "308642524",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "登川誠仁",
+   "album": "登川誠仁独演会",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=登川誠仁&limit=8 → score 100 命中「登川誠仁」88ed6742-b1ef-4461-9fdd-2a0e5fc2a528（JP）；依第 187 條再查 artist?query=Seijin Noborikawa&limit=8，score 100 回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&limit=100&offset=0（第 116 條的 browse 分頁端點）→ 名下僅 1 個 release-group：《It’s only Seiguwa - The Best of Seijin Noborikawa 1975-2004》2007（913fb6c3-257f-4500-b363-e7a3b3f758ae），精選集，正規盤零建檔",
+      "release-group?query=releasegroup:\"登川誠仁独演会\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"独演会\"&limit=10 → 無任何 artist-credit 為登川誠仁的結果"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "登川誠仁在 MB 名下唯一的 release-group 是 2007 年精選集，本盤未建檔；盤名全稱與關鍵詞兩種寫法反查皆無相符結果。查詢全部回 HTTP 200，走 limit=100 的 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10365077",
+     "https://music.apple.com/jp/album/365261789"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/c3/3d/09/mzi.xqgsezsh.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "365261789",
+    "note": "試聽探測釘定的 collectionId 365261789（jp）：登川誠仁 — 登川誠仁独演会"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲目表上幾乎每一段後面都掛著「~MC」：唱一段，講一段。兩片二十八段、1 小時 57 分 27 秒，第一片十一段、第二片十七段。第二片後段連著〈道三世相の唄〉1 分 32 秒、〈焼物売屋〉1 分 6 秒、〈儀保二才達〉2 分 6 秒、〈たべたいなぁ〉1 分 32 秒四段，合計不到六分半；最長的則是開場那首〈緑の沖縄〉8 分 15 秒。錄的是 2001 年 3 月 30 日沖縄市民小劇場的公演，那是他個人的首場獨演會。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10365077",
+     "https://itunes.apple.com/lookup?id=365261789&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+     "https://musicbrainz.org/ws/2/release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10365077",
+     "https://music.apple.com/jp/album/365261789"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/a0/56/ab/a056abbb-c9a1-4d46-c6bd-3dd8777a593f/mzaf_2763647204706106910.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "365261789",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "登川誠仁",
+   "album": "スタンド！",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=登川誠仁&limit=8 → score 100 命中「登川誠仁」88ed6742-b1ef-4461-9fdd-2a0e5fc2a528（JP）；依第 187 條再查 artist?query=Seijin Noborikawa&limit=8，score 100 回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&limit=100&offset=0（第 116 條的 browse 分頁端點）→ 名下僅 1 個 release-group：《It’s only Seiguwa - The Best of Seijin Noborikawa 1975-2004》2007（913fb6c3-257f-4500-b363-e7a3b3f758ae），精選集，正規盤零建檔",
+      "release-group?query=releasegroup:\"スタンド！\"&limit=10 → count=10，score 100 是ハックルベリーフィン《スタンド!》，其餘為ミミ萩原《スタンド・アップ》、森下うたた《スタンド・アローン》等，artist-credit 無一為登川誠仁",
+      "release-group?query=releasegroup:\"STAND!\" AND artist:\"登川誠仁\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "盤名查詢回的十筆全是日本流行與偶像的近似盤名，逐筆核對 artist-credit 沒有一筆是登川誠仁（第 122 條的形狀）；藝人端 browse 只有 2007 年那張精選集，藝人＋盤名複合查詢 count=0。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10364928",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001301146039",
+     "https://music.apple.com/jp/album/308792704"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/56/1e/c0/mzi.ozdnzqjy.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "308792704",
+    "note": "試聽探測釘定的 collectionId 308792704（jp）：登川誠仁 — STAND!"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第四軌把八重山的〈安里屋ユンタ〉標成「沖縄全島バージョン」。這一軌 7 分 46 秒是十二軌裡最長的，次長的〈辻千鳥〉7 分 15 秒。口説這種敘事唱段在這張佔了三軌，〈酒ぐせ口説〉與〈四季口説〉都排在後半；十二軌合計 58 分 53 秒，最短的〈四季口説〉只有 2 分 24 秒，全碟有四軌超過六分鐘，長短落差比同一家廠牌的前一張大得多。同年新潮社也出了他的自傳《登川誠仁自伝》。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10364928",
+     "https://itunes.apple.com/lookup?id=308792704&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001301146039",
+     "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%93%E3%82%A3%E3%81%AE%E6%81%8B",
+     "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+     "https://musicbrainz.org/ws/2/release-group?artist=88ed6742-b1ef-4461-9fdd-2a0e5fc2a528&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10364928",
+     "https://music.apple.com/jp/album/308792704"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/a9/1e/05/a91e0504-86e6-d888-938f-96d59f33aea9/mzaf_553159325735998608.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "308792704",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "知名定男",
+   "album": "赤花",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=知名定男&limit=8 → score 100 命中「知名定男」cc35212d-2481-4a45-8e63-463bb13296c1（JP）；依第 187 條再查 artist?query=Sadao China&limit=8 → score 100 回的是**另一個**藝人實體「Sadao China」d067afd6-29fa-447a-9dd0-3be9ded4f4b5，MB 內部把同一人拆成漢字與羅馬字兩個掛名",
+      "release-group?artist=cc35212d-2481-4a45-8e63-463bb13296c1&limit=100&offset=0 → 0 筆；release-group?artist=d067afd6-29fa-447a-9dd0-3be9ded4f4b5&limit=100&offset=0 → 僅 1 筆《Utamaai》2005（a7aa78e7-4ec9-4130-a99d-b26e58b73463，即 2005 年リスペクト盤《うたまーい》——該張因此有建檔、不屬本批）",
+      "release-group?query=releasegroup:\"赤花\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Akabana\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "知名定男在 MB 上被拆成兩個藝人實體：漢字的 cc35212d 名下 0 個 release-group，羅馬字的 d067afd6「Sadao China」名下只有 1 筆《Utamaai》2005；兩邊都沒有《赤花》。盤名以漢字與羅馬拼音兩種寫法反查皆 count=0。這是第 187 條「掛名分裂發生在 MB 內部」的實例，兩種寫法都跑過才算查無。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7486725",
+     "https://music.apple.com/jp/album/304372594",
+     "https://www.discogs.com/release/27718074"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/cc/c5/64/mzi.suorgtax.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "304372594",
+    "note": "試聽探測釘定的 collectionId 304372594（jp）：知名定男 — 赤花"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 21,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲名一半接著西洋曲式：ジントーヨー接華爾滋，キジムナー接藍調。十軌合計 32 分 6 秒，每一軌都落在 1 分 52 秒到 4 分 27 秒之間，是流行盤的尺寸而不是民謡盤的。這張碟被同時歸進 Soft Rock、AOR、Folk Rock 與 Min'yō 四個曲風。收錄曲〈バイバイ沖縄〉走紅，也因為越出了傳統民謡的框架而招來正反兩面的說法。這是他在日本本土的出道作。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/7486725",
+     "https://api.discogs.com/masters/1186795/versions?per_page=50",
+     "https://itunes.apple.com/lookup?id=304372594&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://musicbrainz.org/ws/2/release-group?artist=d067afd6-29fa-447a-9dd0-3be9ded4f4b5&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/7486725",
+     "https://music.apple.com/jp/album/304372594",
+     "https://www.discogs.com/release/27718074"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/38/e8/e4/38e8e4c2-0946-a4ae-0636-186f2f948eab/mzaf_5166501355077694609.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "304372594",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "知名定男",
+   "album": "酒に交われば…",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=知名定男&limit=8 → score 100 命中「知名定男」cc35212d-2481-4a45-8e63-463bb13296c1（JP）；依第 187 條再查 artist?query=Sadao China&limit=8 → score 100 回的是**另一個**藝人實體「Sadao China」d067afd6-29fa-447a-9dd0-3be9ded4f4b5，MB 內部把同一人拆成漢字與羅馬字兩個掛名",
+      "release-group?artist=cc35212d-2481-4a45-8e63-463bb13296c1&limit=100&offset=0 → 0 筆；release-group?artist=d067afd6-29fa-447a-9dd0-3be9ded4f4b5&limit=100&offset=0 → 僅 1 筆《Utamaai》2005（a7aa78e7-4ec9-4130-a99d-b26e58b73463，即 2005 年リスペクト盤《うたまーい》——該張因此有建檔、不屬本批）",
+      "release-group?query=releasegroup:\"酒に交われば\"&limit=10 → count=0",
+      "release-group?query=artist:\"知名定男\"&limit=15 → count=0（第 20 條：artist: 比對的是 artist-credit 字串，這一查是為了抓漏掉的合作掛名）"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "知名定男的兩個 MB 藝人實體（漢字 cc35212d 為 0 筆、羅馬字 d067afd6 僅 1 筆《Utamaai》）都沒有本盤；盤名反查 count=0，artist-credit 字串查也是 count=0。第 187 條要求的兩種掛名寫法都跑過。全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12302235",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008612310"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/33bxJr6PHrPMOBo6N24Z6u6T9D_V-T6hlL1hwbRHwDQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzAy/MjM1LTE1MzI1NzI1/NjItNTI3NC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "12302235"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一首曲名裡六首寫著酒，最後一首就叫〈酒に交われば…〉。〈俺たちの酒〉〈パナ酒・60度〉〈涙割り〉〈人生半分・酒半分〉都排在 A 面，パナ酒是沖繩對高度數泡盛的說法。B 面第一首〈うんじゅが情…その後〉寫的則是他 1971 年那首自作曲的後續，那首當年由瀬良垣苗子唱紅。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12302235",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008612310",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://musicbrainz.org/ws/2/release-group?artist=cc35212d-2481-4a45-8e63-463bb13296c1&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/12302235"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "知名定男",
+   "album": "島や唄遊び",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=知名定男&limit=8 → score 100 命中「知名定男」cc35212d-2481-4a45-8e63-463bb13296c1（JP）；依第 187 條再查 artist?query=Sadao China&limit=8 → score 100 回的是**另一個**藝人實體「Sadao China」d067afd6-29fa-447a-9dd0-3be9ded4f4b5",
+      "release-group?artist=cc35212d-2481-4a45-8e63-463bb13296c1&limit=100&offset=0 → 0 筆；release-group?artist=d067afd6-29fa-447a-9dd0-3be9ded4f4b5&limit=100&offset=0 → 僅 1 筆《Utamaai》2005（a7aa78e7-4ec9-4130-a99d-b26e58b73463）",
+      "release-group?query=releasegroup:\"島や唄遊び\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"唄遊び\"&limit=15 → 無任何 artist-credit 為知名定男的結果"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "知名定男的兩個 MB 實體都沒有本盤（漢字 0 筆、羅馬字僅《Utamaai》一筆）；盤名全稱與關鍵詞兩種反查皆無相符。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12717123",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1970023484889504055"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/-1M0_H7jMdVIBVBbwhZkAWVORq3w8UU7-X5Ckql0TvQ/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzE3/MTIzLTE1NDA2MzQ1/MTMtMzQ3MC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "12717123"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第七首的曲名後面直接掛著一行字：獻給已故的糸数カメ。那一軌是〈花風(尾類小風)〉，位置就排在十三軌的正中間。這是一張兩人對唱的碟，另一位是徳原清文；收尾的〈かいされー〉與〈ハリマヤク〉都是唱會末段常用的快板。錄音在 1991 年 10 月 28 日一天之內做完，混音隔了一個半月。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12717123",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1970023484889504055",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://musicbrainz.org/ws/2/release-group?artist=cc35212d-2481-4a45-8e63-463bb13296c1&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/12717123"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大城美佐子",
+   "album": "片思い",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=大城美佐子&limit=8 → score 100 命中「大城美佐子」f078c219-824e-4425-ad74-9203cafd4f73（JP）；依第 187 條再查 artist?query=Misako Oshiro&limit=8，score 100 回同一實體，MB 內部無羅馬字分身（另有 score 87 的 MISAKO、78 的 Makoto Oshiro，皆不同人）",
+      "release-group?artist=f078c219-824e-4425-ad74-9203cafd4f73&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下 0 個 release-group，整份目錄在 MB 上不存在",
+      "release-group?query=releasegroup:\"片思い\"&limit=15 → count=13，score 100 的是 Love、Jungle Smile、とわる 的同名碟，artist-credit 無一為大城美佐子",
+      "release-group?query=releasegroup:\"Kataumui\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "大城美佐子的藝人實體在 MB 上存在但名下 release-group browse 回 0 筆，整份目錄未建檔；漢字盤名查到的十三筆全是日本流行樂團的同名碟（第 122 條的形狀，不算查無，故再以羅馬字盤名反查），Kataumui 查詢 count=0。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/1420437",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008946465",
+     "https://music.apple.com/jp/album/1553759657"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2d/f2/a5/2df2a59f-f34e-754b-f324-111697f69d80/VICG-5383.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1553759657",
+    "note": "試聽探測釘定的 collectionId 1553759657（jp）：大城美佐子 — Kataumui"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 25,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名是她 1962 年的出道單曲，三十二年後成了整張碟的名字。碟上寫著獻給已故的知名定繁，那是教她唱歌的師傅。十四軌合計 59 分 19 秒，〈天底節〉7 分 24 秒排在正中間，也是唯一破七分鐘的一軌，最短的〈仲島節〉只有 2 分 5 秒；其餘十軌都落在 3 分 11 秒到 5 分 5 秒之間，長短相當平均，只有正中間與收尾兩處放長。錄音在 1994 年 4 月 21 至 23 日於那覇做完。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/1420437",
+     "https://itunes.apple.com/lookup?id=1553759657&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008946465",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%9F%8E%E7%BE%8E%E4%BD%90%E5%AD%90",
+     "https://musicbrainz.org/ws/2/release-group?artist=f078c219-824e-4425-ad74-9203cafd4f73&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/1420437",
+     "https://music.apple.com/jp/album/1553759657"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/41/a7/96/41a79616-012e-0342-3ce0-b40ceed6cdcf/mzaf_17678401699237304464.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1553759657",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大城美佐子",
+   "album": "唄ウムイ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=大城美佐子&limit=8 → score 100 命中「大城美佐子」f078c219-824e-4425-ad74-9203cafd4f73（JP）；依第 187 條再查 artist?query=Misako Oshiro&limit=8，score 100 回同一實體，MB 內部無羅馬字分身（另有 score 87 的 MISAKO、78 的 Makoto Oshiro，皆不同人）",
+      "release-group?artist=f078c219-824e-4425-ad74-9203cafd4f73&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下 0 個 release-group，整份目錄在 MB 上不存在",
+      "release-group?query=releasegroup:\"唄ウムイ\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Uta Umui\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "大城美佐子在 MB 名下 0 個 release-group；盤名以日文與羅馬拼音兩種寫法反查皆 count=0。第 187 條要求的兩種掛名寫法（漢字與 Misako Oshiro）都查過，指向同一個空目錄實體。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/1419058",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001301838457",
+     "https://music.apple.com/jp/album/279394365"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4e/55/2e/4e552e58-8fd4-a9a0-febf-83d13addf818/4538182018637_cov.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "279394365",
+    "note": "試聽探測釘定的 collectionId 279394365（jp）：大城美佐子 — 唄ウムイ"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 182,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "藝能生涯滿五十年那年她才回錄音室，距上一張整整十年。十四軌的作曲與作詞欄整片寫著 Traditional，全是老曲子，沒有一首新作。十四軌合計 59 分 12 秒，〈ナークニー ~山原汀間当〉6 分 18 秒是唯一破六分鐘的一軌，把即興唱腔完整攤開；最短的〈てぃんさぐぬ花〉只有 2 分 48 秒。收尾的〈親の心〉5 分 18 秒與〈別れの煙〉5 分 19 秒幾乎等長，把尾巴收得很沉。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/1419058",
+     "https://itunes.apple.com/lookup?id=279394365&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001301838457",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%9F%8E%E7%BE%8E%E4%BD%90%E5%AD%90",
+     "https://musicbrainz.org/ws/2/release-group?artist=f078c219-824e-4425-ad74-9203cafd4f73&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/1419058",
+     "https://music.apple.com/jp/album/279394365"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/72/aa/0c/72aa0ce3-9c2f-0374-a6bb-b9b6e0afb7f6/mzaf_2013227934210632182.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "279394365",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大工哲弘",
+   "album": "あがろーざ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=大工哲弘&limit=8 → score 100 命中「大工哲弘」056c1b35-fc3d-45b7-acc6-49fff6f3fef6（JP）；依第 187 條再查 artist?query=Tetsuhiro Daiku&limit=8，回同一實體，無羅馬字分身",
+      "release-group?artist=056c1b35-fc3d-45b7-acc6-49fff6f3fef6&limit=100&offset=0 → 名下 4 個 release-group：《ゆんた とぅ じらば》1993（08de40a3，池中已有）、《ウチナージンタ》1994（3d1c9169）、《ジンターナショナル》1996（473fa59e）、《ガムラン‐ユンタ》2009（7e0858f9）",
+      "release-group?query=releasegroup:\"あがろーざ\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Agarooza\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "大工哲弘名下 4 個 release-group 逐筆核對都不是本盤；盤名以日文與羅馬拼音兩種寫法反查皆 count=0；另以樂團名「ツゥンダラーズ」查 artist 亦無實體。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15487850",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000009012610",
+     "https://music.apple.com/jp/album/1613104701"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6f/4d/d2/6f4dd29c-e98c-d8d2-3f66-ea2762970976/VICG-60098.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1613104701",
+    "note": "試聽探測釘定的 collectionId 1613104701（jp）：大工哲弘 & ツンダラーズ — Agarooza"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一軌裡有七軌的長度擠在五分零四秒到五分二十二秒之間。最長的〈あんぱるぬみだがーまゆんた〉5 分 56 秒、最短的〈群か星ゆんた〉3 分 22 秒，全碟沒有一軌破六分鐘。十一首裡六首帶著「ゆんた」之名，ユンタ是八重山的勞動歌形式；第四軌〈月ぬ美しゃ〉是八重山最有名的抒情曲，第十軌〈つんだら節〉的曲名則被拿去當伴奏團「ツンダラーズ」的團名。錄音分兩個月、兩個錄音室完成。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15487850",
+     "https://itunes.apple.com/lookup?id=1613104701&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000009012610",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B7%A5%E5%93%B2%E5%BC%98",
+     "https://musicbrainz.org/ws/2/release-group?artist=056c1b35-fc3d-45b7-acc6-49fff6f3fef6&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/15487850",
+     "https://music.apple.com/jp/album/1613104701"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/2b/a6/9f/2ba69f47-81f7-b25d-e114-43616628d3e0/mzaf_17810830040359032111.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1613104701",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大工哲弘",
+   "album": "伝いやり 風便り唄便り",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=大工哲弘&limit=8 → score 100 命中「大工哲弘」056c1b35-fc3d-45b7-acc6-49fff6f3fef6（JP）；依第 187 條再查 artist?query=Tetsuhiro Daiku&limit=8，回同一實體，無羅馬字分身",
+      "release-group?artist=056c1b35-fc3d-45b7-acc6-49fff6f3fef6&limit=100&offset=0 → 名下 4 個 release-group：《ゆんた とぅ じらば》1993（08de40a3，池中已有）、《ウチナージンタ》1994（3d1c9169）、《ジンターナショナル》1996（473fa59e）、《ガムラン‐ユンタ》2009（7e0858f9）",
+      "release-group?query=releasegroup:\"伝いやり\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"風便り 唄便り\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "大工哲弘名下 4 個 release-group 皆非本盤；主標與副標兩種寫法反查 MB 皆 count=0。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200，走 limit=100 的 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15485276",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1970304959817947319"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/OiQpN8mamJkTo-CW5vS9K_Tg7MvHp31siufzwiaZONQ/rs:fit/g:sm/q:90/h:535/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDg1/Mjc2LTE1OTIzMTcy/MjMtNjU2Ny5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "15485276"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "「いやり」這個字在十二首曲名裡出現三次，還被拿去當盤名。三處分別是第二軌〈いやり（白保）〉、第六軌〈いやり節〉與第十一軌〈いーやる〉。第四軌〈とぅばらーま〉是八重山最著名的抒情曲，也是他 1976 年首張碟的名字；〈無蔵念仏節〉與〈無蔵念仏口説〉兩軌並排，是同一素材的節與口説兩種形制。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15485276",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1970304959817947319",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B7%A5%E5%93%B2%E5%BC%98",
+     "https://musicbrainz.org/ws/2/release-group?artist=056c1b35-fc3d-45b7-acc6-49fff6f3fef6&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/15485276"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "山里勇吉",
+   "album": "八重山書生節",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=山里勇吉&limit=8 → score 100 命中「山里勇吉」66dbbbd4-f73c-4c70-bff7-739ff1892b8b（JP）；依第 187 條再查 artist?query=Yukichi Yamazato&limit=8，回同一實體",
+      "release-group?artist=66dbbbd4-f73c-4c70-bff7-739ff1892b8b&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下 4 個 release-group：《八重山民謡舞踊曲集1》（1a31fb2f，無日期）、《同2》（4a06fc1c）、《同3》（3d607149）、《八重山育ち》2003（9a74f49e）",
+      "release-group?query=releasegroup:\"八重山書生節\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Yaeyama Shosei Bushi\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "山里勇吉名下 release-group browse 回 4 筆，三筆是《八重山民謡舞踊曲集》系列、一筆是《八重山育ち》，都不是本盤；盤名以漢字與羅馬拼音兩種寫法反查皆 count=0。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15534966",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1971993809678213527"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/AkZZJqoVxZiU2L5ao5lpWvvqta7KxWb1MBMKl1q0130/rs:fit/g:sm/q:90/h:533/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTM0/OTY2LTE1OTMxODU1/NTQtMjUzOS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "15534966"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一位八重山的唄者，整張碟用三線唱的是本土的舊流行歌。曲目表上是〈道頓堀行進曲〉〈磯節〉〈関の五本松〉〈ラッパ節〉，〈書生節〉點了盤名的題；〈書生節〉與〈ラッパ節〉這一路屬於明治末到昭和年間演歌師的曲目。〈磯節〉來自茨城的海岸，〈関の五本松〉來自島根県松江市美保関町，兩首都與八重山無關。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15534966",
+     "https://ja.wikipedia.org/wiki/%E7%A3%AF%E7%AF%80",
+     "https://ja.wikipedia.org/wiki/%E6%BC%94%E6%AD%8C%E5%B8%AB",
+     "https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%87%8C%E5%8B%87%E5%90%89",
+     "https://musicbrainz.org/ws/2/release-group?artist=66dbbbd4-f73c-4c70-bff7-739ff1892b8b&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/15534966",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1971993809678213527"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "照屋林助",
+   "album": "うちな～ゆんたく 沖縄の笑い芸",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=照屋林助&limit=8 → score 100 命中「照屋林助」55d1fe93-7921-42a1-be7f-3e9c469761a3（JP）；score 45 的「照屋林賢」7c8f743f 是他兒子、りんけんバンド的團長，不同人；依第 187 條再查 artist?query=Rinsuke Teruya&limit=8，回同一實體",
+      "release-group?artist=55d1fe93-7921-42a1-be7f-3e9c469761a3&limit=100&offset=0 → 名下 3 個 release-group，全是 1996–98 年オマガトキ的《平成ワタブーショー》系列（4a82eabb、928850a8、9d342c41），1981 年這張未建檔",
+      "release-group?query=releasegroup:\"うちな～ゆんたく\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"うちなーゆんたく\"&limit=10 → count=0（波浪號與長音符兩種寫法都查）"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "照屋林助名下 release-group browse 回 3 筆，全部是 1990 年代後期的《平成ワタブーショー》，1981 年這張未建檔；盤名以全形波浪號與長音符兩種寫法反查皆 count=0。另確認 score 45 的照屋林賢是不同實體（第 122 條的近名排除）。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/11975306",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008861534"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/apP07iNkKJRfgM2Dk_s4vLgg0_RPJaQhf6YHw4uVAdQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTc1/MzA2LTE1MjkwMzU5/NjYtNTYzMC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "11975306"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張只有兩軌：A 面二十六分四秒、B 面二十五分十七秒。這是三線伴奏的漫談與唄混在一起的漫芸盤，兩面各一整段沒有剪開的表演，錄音是單聲道。A 面叫〈ワタブーショー〉，B 面叫〈ブーテン漫談〉——「ブーテン」正是同時掛名的小那覇舞天的名號，他是藝能家兼牙醫。掛名的另一位 1957 年與前川守康一起組成了ワタブーショー，兒子是りんけんバンド的照屋林賢。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/11975306",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008861534",
+     "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E5%8A%A9",
+     "https://ja.wikipedia.org/wiki/%E5%B0%8F%E9%82%A3%E8%A6%87%E8%88%9E%E5%A4%A9",
+     "https://musicbrainz.org/ws/2/release-group?artist=55d1fe93-7921-42a1-be7f-3e9c469761a3&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/11975306"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "古謝美佐子",
+   "album": "島美らさ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=古謝美佐子&limit=8 → score 100 命中「古謝美佐子」090c84cf-0918-48b0-b0be-6451ebb345e1（JP）；依第 187 條再查 artist?query=Misako Koja&limit=8，回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=090c84cf-0918-48b0-b0be-6451ebb345e1&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下 4 個 release-group：《天架ける橋》2001（ebc2c61d）、《廻(めぐ)る命》2008（2255ca63）、《ぬち・うた・まーす》2010（49e73478）、《日々是好日》2011 EP（a55160a5）——最早一筆是 2001 年，1992 年這張未建檔",
+      "release-group?query=releasegroup:\"島美らさ\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Shima Churasa\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "古謝美佐子的藝人實體在 MB 上存在，名下 4 個 release-group 最早只到 2001 年，1992 年的首張個人盤未建檔；盤名以漢字與羅馬拼音兩種寫法反查皆 count=0。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15374759",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1971149384748040514"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/WuGqIZsMp2zrlymo2Qf_g5zxL8h1hYOkBZ6asZWOgEc/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Mzc0/NzU5LTE2MTIyNTgy/MjEtNTQ0NS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "15374759"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 17,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "前一天錄完同一位製作人自己的碟，隔天換她進同一間錄音室。她這張錄於 1991 年 10 月 29 至 30 日，混音排在同年 12 月 9 至 10 日，與製作人知名定男掛名的那張前後只差一兩天。十三軌一半是傳統曲、一半是新作，〈無情の唄〉的詞曲出自普久原朝喜之手。她在名單上只掛 Vocals，不掛任何樂器——三把三線、琉琴、太鼓與唯一那把吉他都由別人擔，這是把她的嗓子單獨推到前面的配置。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15374759",
+     "https://ja.wikipedia.org/wiki/%E5%8F%A4%E8%AC%9D%E7%BE%8E%E4%BD%90%E5%AD%90",
+     "https://ndlsearch.ndl.go.jp/books/R100000136-I1971149384748040514",
+     "https://musicbrainz.org/ws/2/release-group?artist=090c84cf-0918-48b0-b0be-6451ebb345e1&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/15374759"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "我如古より子",
+   "album": "唄遊び",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=我如古より子&limit=8 → score 100 命中「我如古より子」68703a1a-940f-4f43-92bb-2ea0f2389e26（JP）；依第 187 條再查 artist?query=Yoriko Ganeko&limit=8，回同一實體",
+      "release-group?artist=68703a1a-940f-4f43-92bb-2ea0f2389e26&limit=100&offset=0 → 名下僅 1 個 release-group：《恋の花》1995（d0666c83-5df6-43a0-9386-7c30be20351d，池中已有），本盤未建檔",
+      "release-group?query=releasegroup:\"唄遊び\"&limit=15 → count=0",
+      "release-group?query=releasegroup:\"Uta Asobi\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "我如古より子名下 release-group browse 只有 1 筆《恋の花》，即池中已有的那張；盤名以日文與羅馬拼音兩種寫法反查皆 count=0。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200，走 limit=100 的 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/2990942",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000007524814",
+     "https://music.apple.com/jp/album/356343550"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/22/bb/41/mzi.hnesyfrv.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "356343550",
+    "note": "試聽探測釘定的 collectionId 356343550（jp）：我如古より子 & 吉川忠英 — Uta Asobi"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場第四軌唱〈ダニー・ボーイ〉，末軌是同一首一分十八秒的器樂版。第五軌〈ハード・タイムズ・カム・アゲイン・ノー・モア〉4 分 43 秒是全碟最長的一軌，兩首西洋歌就這樣並排夾在沖繩曲目中間。第二軌〈娘ジントーヨー〉是她 1978 年的成名曲，第十三軌〈女工節〉是 1977 年的出道曲，兩首都收在這張碟上。十五軌合計 50 分 35 秒，沒有一軌破五分鐘。搭檔的吉川忠英一手包辦吉他、烏克麗麗與班鳩琴，編曲也掛他。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2990942",
+     "https://itunes.apple.com/lookup?id=356343550&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E6%88%91%E5%A6%82%E5%8F%A4%E3%82%88%E3%82%8A%E5%AD%90",
+     "https://musicbrainz.org/ws/2/release-group?artist=6dc50990-9859-4ca1-815f-b7126b9352bf&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/2990942",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000007524814",
+     "https://music.apple.com/jp/album/356343550"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/cf/bc/25/cfbc258c-dc52-00d3-361b-14d509be6ec1/mzaf_1951726194138261531.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "356343550",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "前川守賢",
+   "album": "げんちゃんパラダイス",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=前川守賢&limit=8 → score 100 命中「前川守賢」3d499d30-699d-4ea6-bf58-22f67e17a8fa（JP）；依第 187 條再查 artist?query=Shuken Maekawa&limit=8，回同一實體",
+      "release-group?artist=3d499d30-699d-4ea6-bf58-22f67e17a8fa&limit=100&offset=0 → 名下 4 個 release-group：《芸能生活二十周年記念・限定盤〜特集20曲》1998（0549cbe6）、《前川守賢(げんちゃん)特集〜かなさんどー,遊び庭》（1050a394）、《あしびな〜》2006（5c8e02a1）、《げんちゃんのカチャーチどんどん》1998（b61eb798）——本盤不在其中",
+      "release-group?query=releasegroup:\"げんちゃんパラダイス\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Genchan Paradise\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "前川守賢名下 release-group browse 回 4 筆，逐筆核對都不是本盤，其中《げんちゃんのカチャーチどんどん》是同年同廠的另一張、盤名近似但曲目與編號都不同（第 126 條的雙胞胎形狀，已刻意不釘）；盤名以日文與羅馬拼音兩種寫法反查皆 count=0。全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15930415",
+     "https://music.apple.com/jp/album/600836466"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/50/d2/41/50d2410d-c752-7cd7-553c-0e71bb06bdaa/887845591470.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "600836466",
+    "note": "試聽探測釘定的 collectionId 600836466（jp）：前川守賢 — げんちゃんパラダイス~前川守賢と愉快な仲間~"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名裡的「げんちゃん」是他自己，家人在他取名字前就這樣叫。他的生日剛好撞上農曆新年，命名之前家裡就喊他「元ちゃん」，這個小名一直沿用至今。第十三軌〈かなさんどー〉是他 1983 年灌唱片的出道曲，第二軌〈遊び庭〉是 1988 年那一首；第七軌〈世果報でーびる〉後來被泡盛廣告改了詞，他本人也出演。十五軌合計 49 分 22 秒，全部落在 2 分 48 秒到 3 分 53 秒之間，前後只差六十五秒。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15930415",
+     "https://itunes.apple.com/lookup?id=600836466&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E5%89%8D%E5%B7%9D%E5%AE%88%E8%B3%A2",
+     "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E5%8A%A9",
+     "https://itunes.apple.com/lookup?id=191922906&country=jp&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=3d499d30-699d-4ea6-bf58-22f67e17a8fa&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/15930415",
+     "https://music.apple.com/jp/album/600836466"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/70/f9/15/70f91542-83db-e679-4a2e-c09d449a104b/mzaf_671465903678421267.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "600836466",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "松田弘一",
+   "album": "華ぬ遊び唄",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=松田弘一&limit=8 → score 100 回的是「松田弘」9f41c674-e8c6-427b-ba96-b4b71e299dc5（JP，不同人）、score 96「と松田光弘」ded31531、score 95「松田聖子」ef013257，**沒有一個是沖繩三線奏者松田弘一**（第 122 條的形狀）",
+      "release-group?artist=9f41c674-e8c6-427b-ba96-b4b71e299dc5&limit=100&offset=0 → 2 筆（《それでも時は》單曲、《松田弘&Quiet Love Notes/「FUTARi.」O.S.T.》2002），與沖繩無關，確認不是同一人",
+      "release-group?query=releasegroup:\"華ぬ遊び唄\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Hana nu Ashibi Uta\"&limit=10 → count=0；另 artist?query=Hirokazu Matsuda&limit=8 亦無沖繩三線奏者的實體"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "MB 上根本沒有沖繩三線奏者「松田弘一」的 artist 實體：藝人搜尋 score 100 回的是同名近似的「松田弘」，其名下兩個 release-group 是 J-pop 單曲與電影原聲，與沖繩無關，屬第 122 條「回了完全不相干的東西」而非查無，故再以盤名反向查證，日文與羅馬拼音兩種寫法皆 count=0。全部回 HTTP 200，browse 走 limit=100 的分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15602832",
+     "https://music.apple.com/jp/album/365266095"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/0b/46/5e/mzi.eanixpho.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "365266095",
+    "note": "試聽探測釘定的 collectionId 365266095（jp）：松田弘一 — 華ぬ遊び唄"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈宮古根〉這個曲名在十六首裡出現三次，三個版本。那三軌是〈富原宮古根〉3 分 8 秒、〈宮古根 / 山原汀間とぅ〉4 分 30 秒與〈宮古根〉3 分 9 秒，宮古根是沖繩本島最核心的即興唱腔。十六軌合計 59 分 13 秒，每一軌都不到四分半，最短的〈口武士節〉只有 1 分 52 秒——即興唱腔在這裡被切成統一的短尺寸。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15602832",
+     "https://itunes.apple.com/lookup?id=365266095&country=jp&entity=song&limit=200",
+     "https://api.discogs.com/releases/1420437",
+     "https://itunes.apple.com/lookup?id=290796235&country=jp&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/artist?query=artist%3A%22%E6%9D%BE%E7%94%B0%E5%BC%98%E4%B8%80%22&fmt=json&limit=8",
+     "https://www.discogs.com/release/15602832",
+     "https://music.apple.com/jp/album/365266095"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/54/1d/13/541d13bc-e63e-281d-f25a-0c5412ac4230/mzaf_355252404075818329.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "365266095",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "普久原恒勇",
+   "album": "だんじゅかりゆし 琉球三味線",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=普久原恒勇&limit=8 → score 100 命中「普久原恒勇」06e2e487-bd6c-4267-991f-60c9a5a34d8d（JP）；依第 187 條再查 artist?query=Tsuneo Fukuhara&limit=8，回同一實體",
+      "release-group?artist=06e2e487-bd6c-4267-991f-60c9a5a34d8d&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下 4 個 release-group：《雅倩三面》1998（8e0a0485）、《獅子舞》1999（2366a2e1）、《芭蕉布》2000（02737e25）、《ファンタジー首里城絵巻》（8769b876，無日期）——最早一筆是 1998 年，1978 年這張未建檔",
+      "release-group?query=releasegroup:\"だんじゅかりゆし\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"琉球三味線\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "普久原恒勇的藝人實體在 MB 上存在，名下 4 個 release-group 最早只到 1998 年，1978 年這張未建檔；盤名以主標與副標兩種寫法反查皆 count=0。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/13386343",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008667900"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/gyE3yuK4_-PdeVAcD-wxVwb-Fybc86F_z5Ceg5NqZiU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzg2/MzQzLTE1NTMyMzg0/OTktNDYxOS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "13386343"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A 面〈踊れ獅子〉、B 面〈舞えよ美童〉，盤名那首不在曲目表上。整張就只有這兩軌，兩面各一首，曲名一首寫獅子舞、一首寫美童，取材都往舞踊那一側走。作曲掛在他自己名下：他是〈芭蕉布〉的作曲者、マルフクレコード創辦人普久原朝喜的養子，1959 年把マルフク的據點遷回沖繩，從此以沖繩民謡為主做音樂製作。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/13386343",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008667900",
+     "https://ja.wikipedia.org/wiki/%E6%99%AE%E4%B9%85%E5%8E%9F%E6%81%92%E5%8B%87",
+     "https://musicbrainz.org/ws/2/release-group?artist=06e2e487-bd6c-4267-991f-60c9a5a34d8d&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/13386343"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "りんけんバンド",
+   "album": "ありがとう",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=りんけんバンド&limit=8 → score 100 命中「りんけんバンド」e6e5c43c-54ca-4eac-9900-995c327877db（JP）；依第 187 條再查 artist?query=Rinken Band&limit=8，回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 3 個 release-group：《なんくる》1990（33f0d693，池中已有）、《りんけんバンド》1993 Compilation（5006d7eb）、《チェレン》1995（78c9c191，池中已有）——1991–1999 的正規盤只建了這三筆",
+      "release-group?query=releasegroup:\"ありがとう\"&limit=15 → count=116，score 100 的是関根麻里、いきものがかり、川嶋あい、大西ユカリと新世界、森祐理 等，artist-credit 無一為りんけんバンド（第 122 條的形狀）",
+      "release-group?query=releasegroup:\"Arigatou\" AND artist:\"りんけんバンド\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "りんけんバンド名下 release-group browse 只回 3 筆（《なんくる》《りんけんバンド》精選、《チェレン》），本盤未建檔；盤名查詢命中的一百多筆全是日本流行歌手的同名碟、無一相符（第 122 條，不算查無，故改從藝人端與複合查詢確認），藝人＋盤名複合查詢 count=0。全部回 HTTP 200，走 limit=100 的 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8863265",
+     "https://music.apple.com/jp/album/78595373"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b1/7f/02/b17f027d-5761-28be-0922-7118231ad17b/mzi.najzojec.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "78595373",
+    "note": "試聽探測釘定的 collectionId 78595373（jp）：りんけんバンド — ありがとう"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 73,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首歌三十四分半，最短那首只有一分四十七秒。十二軌合計 34 分 35 秒，其中五軌不到 2 分 45 秒，最長的〈生まり島〉也只有 4 分 7 秒。這批歌最早的形態是一捲卡帶，出自沖繩的マルテルレコード，錄音也在他們自家的マルテル錄音室完成，後來才改以 CD 的形式重出。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8863265",
+     "https://itunes.apple.com/lookup?id=78595373&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%82%8A%E3%82%93%E3%81%91%E3%82%93%E3%83%90%E3%83%B3%E3%83%89",
+     "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E5%8A%A9",
+     "https://musicbrainz.org/ws/2/release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8863265",
+     "https://music.apple.com/jp/album/78595373"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ce/e0/b4/cee0b412-3644-0276-a646-679c904d85e1/mzaf_9661105785892953789.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "78595373",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "りんけんバンド",
+   "album": "カラハーイ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=りんけんバンド&limit=8 → score 100 命中「りんけんバンド」e6e5c43c-54ca-4eac-9900-995c327877db（JP）；依第 187 條再查 artist?query=Rinken Band&limit=8，回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 3 個 release-group：《なんくる》1990（33f0d693，池中已有）、《りんけんバンド》1993 Compilation（5006d7eb）、《チェレン》1995（78c9c191，池中已有）",
+      "release-group?query=releasegroup:\"カラハーイ\"&limit=10 → count=1，是ティンク ティンク《沖縄・北谷・美浜〜カラハーイ・スペシャル!》，artist-credit 不是りんけんバンド",
+      "release-group?query=releasegroup:\"Karahai\" AND artist:\"りんけんバンド\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "りんけんバンド名下 release-group browse 只回 3 筆，本盤未建檔；盤名查詢唯一命中的是別團在同名 Live House 錄的現場盤（第 122 條的形狀，已刻意不釘），藝人＋盤名複合查詢 count=0。全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10641462",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300097491",
+     "https://music.apple.com/jp/album/1537339532"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fe/36/3e/fe363e57-d517-1ee7-4125-d7a4426e9e0a/jacket_SRCL02179B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537339532",
+    "note": "試聽探測釘定的 collectionId 1537339532（jp）：りんけんバンド — カラハーイ"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 53,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這個盤名後來成了一家店：1998 年在北谷町開，開到 2024 年。那是一處附設錄音室的展演空間，他們長年在那裡辦定期公演，直到 2024 年 9 月底結束營業。唱片本身十一軌、41 分 18 秒，最長的〈ふなやれ〉6 分 5 秒與最短的〈ハイハイハイ〉2 分 2 秒相差三倍，短的幾首短得像插曲。錄音跑了三個錄音室，橫跨山中湖、沖繩與六本木；樂器表上除了三線與島太鼓，還擺著一把二胡。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10641462",
+     "https://itunes.apple.com/lookup?id=1537339532&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300097491",
+     "https://ja.wikipedia.org/wiki/%E3%82%8A%E3%82%93%E3%81%91%E3%82%93%E3%83%90%E3%83%B3%E3%83%89",
+     "https://musicbrainz.org/ws/2/release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10641462",
+     "https://music.apple.com/jp/album/1537339532"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/c3/70/7b/c3707b39-6126-d556-b947-c1a73cd5e679/mzaf_16208263258377320460.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537339532",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "りんけんバンド",
+   "album": "アジマァ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=りんけんバンド&limit=8 → score 100 命中「りんけんバンド」e6e5c43c-54ca-4eac-9900-995c327877db（JP）；依第 187 條再查 artist?query=Rinken Band&limit=8，回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 3 個 release-group：《なんくる》1990（33f0d693，池中已有）、《りんけんバンド》1993 Compilation（5006d7eb）、《チェレン》1995（78c9c191，池中已有）",
+      "release-group?query=releasegroup:\"アジマァ\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Ajima\"&limit=10 → 無任何 artist-credit 為りんけんバンド的結果"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "りんけんバンド名下 release-group browse 只回 3 筆，本盤未建檔；盤名以片假名與羅馬拼音兩種寫法反查皆無相符結果。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200，走 limit=100 的 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/3281829",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008933029",
+     "https://music.apple.com/jp/album/1537340863"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/8e/b0/f0/8eb0f050-7aee-9001-7d9a-082839ef0f72/jacket_SRCL02472B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537340863",
+    "note": "試聽探測釘定的 collectionId 1537340863（jp）：りんけんバンド — アジマァ"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 53,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "「あじまぁ」這個詞他們後來又用了兩次，末軌曲名也成了日後的盤名。2003 年的原聲帶《あじまぁのウタ》與 2004 年以主唱為主角的影像作品都用了它；末軌〈黄金三星〉則在 2012 年成了另一張專輯的名字。十軌合計 45 分 7 秒，平均一軌 4 分 31 秒，十軌裡五軌超過四分半，比前一張的平均長了四十五秒，是把曲子攤開來的作法。第八軌〈エイサー(月ん夜ぬ下)〉把沖繩盂蘭盆的太鼓舞放了進來。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3281829",
+     "https://itunes.apple.com/lookup?id=1537340863&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008933029",
+     "https://ja.wikipedia.org/wiki/%E3%82%8A%E3%82%93%E3%81%91%E3%82%93%E3%83%90%E3%83%B3%E3%83%89",
+     "https://musicbrainz.org/ws/2/release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/3281829",
+     "https://music.apple.com/jp/album/1537340863"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0c/38/57/0c3857db-223f-972f-40ce-171c229d510f/mzaf_4288432176015412727.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537340863",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "りんけんバンド",
+   "album": "ゴンゴン",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=りんけんバンド&limit=8 → score 100 命中「りんけんバンド」e6e5c43c-54ca-4eac-9900-995c327877db（JP）；依第 187 條再查 artist?query=Rinken Band&limit=8，回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 3 個 release-group：《なんくる》1990（33f0d693，池中已有）、《りんけんバンド》1993 Compilation（5006d7eb）、《チェレン》1995（78c9c191，池中已有）",
+      "release-group?query=releasegroup:\"ゴンゴン\"&limit=10 → count=2，皆為《いなり、こんこん、恋いろは。》的 Drama CD 與 O.S.T.，與りんけんバンド無關",
+      "release-group?query=releasegroup:\"Gon Gon\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "りんけんバンド名下 release-group browse 只回 3 筆，本盤未建檔；片假名盤名命中的兩筆是日本動畫的 Drama CD 與原聲帶（第 122 條的形狀），英文盤名反查 count=0。全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/9742682",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300099944",
+     "https://music.apple.com/jp/album/1537343136"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/64/0d/a0/640da098-a94a-9fea-bf1c-f88cae9cf3a0/jacket_SRCL02957B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537343136",
+    "note": "試聽探測釘定的 collectionId 1537343136（jp）：りんけんバンド — ゴンゴン"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 26,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十五軌，是他們在 Sony 那批正規盤裡軌數最多的一張。同一時期八張正規盤的軌數依序是 11、10、12、15、12、12、12、14，同期的精選盤軌數還更高，所以這個最多只在正規盤這一欄裡成立。十五軌合計 64 分 42 秒，最長的〈にんだらん〉6 分 41 秒、最短的〈村一番のハッピージョイ〉2 分 34 秒。第十三軌與末軌是同一首〈めでたい めでたい〉的兩個版本，末軌標著「島ヴァージョン」。封面是一幅版畫。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/9742682",
+     "https://itunes.apple.com/lookup?id=1537343136&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=78595048&country=jp&entity=album&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300099944",
+     "https://musicbrainz.org/ws/2/release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/9742682",
+     "https://music.apple.com/jp/album/1537343136"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/27/11/e7/2711e74f-7c76-718e-f201-5ea239321960/mzaf_12229356652564920843.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537343136",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "りんけんバンド",
+   "album": "夏ぬ子",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=りんけんバンド&limit=8 → score 100 命中「りんけんバンド」e6e5c43c-54ca-4eac-9900-995c327877db（JP）；依第 187 條再查 artist?query=Rinken Band&limit=8，回同一實體，MB 內部無羅馬字分身",
+      "release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 3 個 release-group：《なんくる》1990（33f0d693，池中已有）、《りんけんバンド》1993 Compilation（5006d7eb）、《チェレン》1995（78c9c191，池中已有）",
+      "release-group?query=releasegroup:\"夏ぬ子\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Nati Nu Fa\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "りんけんバンド名下 release-group browse 只回 3 筆，1996–1999 年整段空白，本盤未建檔；盤名以日文與羅馬拼音兩種寫法反查皆 count=0。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15457756",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300114545",
+     "https://music.apple.com/jp/album/1537347788"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ef/8a/ae/ef8aaeaa-f9cd-e7ef-0fdc-1948ba2e8895/jacket_SRCL03953B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537347788",
+    "note": "試聽探測釘定的 collectionId 1537347788（jp）：りんけんバンド — 夏ぬ子"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 24,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一天他們還發了單曲〈天地〉，B 面放的就是這張的同名曲。〈天地〉正是本盤第二軌，盤名則讀作「なちぬふぁ」。十二軌合計 41 分 36 秒，全部落在 2 分 37 秒到 4 分 31 秒之間，最長的〈島中七月〉指的是沖繩的舊曆七月，也就是エイサー的季節。末軌〈肝にかかてぃ II〉的歌名在他們最早那張碟上出現過，這次多了一個 II。這是他們在同一家公司那批正規盤的最後一批之一，1999 年之後就改回自營廠牌。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15457756",
+     "https://itunes.apple.com/lookup?id=1537347788&country=jp&entity=song&limit=200",
+     "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001300114545",
+     "https://ja.wikipedia.org/wiki/%E3%82%8A%E3%82%93%E3%81%91%E3%82%93%E3%83%90%E3%83%B3%E3%83%89",
+     "https://itunes.apple.com/lookup?id=78595048&country=jp&entity=album&limit=200",
+     "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E5%8A%A9",
+     "https://musicbrainz.org/ws/2/release-group?artist=e6e5c43c-54ca-4eac-9900-995c327877db&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/15457756",
+     "https://music.apple.com/jp/album/1537347788"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/f8/12/8d/f8128d61-bfef-bc85-9eb2-7a044d9b150e/mzaf_3590456863368324154.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537347788",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ネーネーズ",
+   "album": "YUNTA",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=ネーネーズ&limit=8 → score 100 命中「ネーネーズ」4d648881-7064-4f93-acc0-224d93ecb9cd（JP）；依第 187 條再查 artist?query=Nenes&limit=8，MB 內部沒有另一個羅馬字掛名的沖繩實體",
+      "release-group?artist=4d648881-7064-4f93-acc0-224d93ecb9cd&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下 8 個 release-group：《あしび》1993（ac81dd80）、《コザ dabasa》1994（af7f85e0）、《なーらび》1995（744a63a0）、《コザ〜ネーネーズ・ベスト・コレクション》1996（1264b05d）、《明けもどろ 〜うない〜》1997（17167fac）、《Akemodoro Unai》1998（c7231ab3）、《オキナワ 〜メモリアル・ネーネーズ〜》2000（bee5a10d）、《Golden ☆ Best》2004（7a67bda0）——1992 年的《YUNTA》與 1991 年的《IKAWU》都不在其中",
+      "release-group?query=releasegroup:\"Yunta\"&limit=10 → count=4，全是西班牙語圈的同名碟（Cuarteto Rotterdam、La Yunta、De Bueyes、Juan d’Arienzo），無一相符",
+      "release-group?query=releasegroup:\"ユンタ\"&limit=10 → count=2，是大工哲弘的《ガムラン‐ユンタ》與《ゆんた とぅ じらば》，掛名不符"
+     ],
+     "checkedAt": "2026-09-06T09:00:00Z",
+     "conclusion": "ネーネーズ名下 release-group browse 回 8 筆，逐筆核對最早只到 1993 年的《あしび》，1991–92 年的兩張（IKAWU、YUNTA）都沒有建檔；盤名以羅馬字與片假名兩種寫法反查，命中的六筆分別是西班牙語圈同名碟與大工哲弘的八重山盤，artist-credit 無一相符（第 122 條的形狀，已刻意不釘）。第 187 條的兩種掛名寫法都跑過。全部回 HTTP 200，走 limit=100 的 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12377604",
+     "https://music.apple.com/jp/album/1536980259"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ab/00/ca/ab00ca69-00f9-aa0e-4d12-1222680199a1/jacket_MHXX01816B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536980259",
+    "note": "試聽探測釘定的 collectionId 1536980259（jp）：ネーネーズ — YUNTA"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 131,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈国頭サバクイ〉排在前面，第九軌唱的是牙買加的搬運工歌謡。那首是〈DAY-O! (バナナボート)〉3 分 59 秒，第十軌〈CHICKEN 海ヤカラー〉同樣把英文與沖繩語接在一起；另一邊則是〈舟むちユンタ〉〈汗水節〜県道節〉〈ウサガンナ〉這些傳統曲目。第八軌〈泊阿嘉伝説〉9 分 14 秒是全碟最長的一軌，第一軌〈ユンタ〉2 分 31 秒與第十一軌的 Reprise 把中間十首圈了起來。這是她們從在地盤轉進全國通路的出道作，也是知名定男替她們製作的第二張。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12377604",
+     "https://itunes.apple.com/lookup?id=1536980259&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+     "https://musicbrainz.org/ws/2/release-group?artist=4d648881-7064-4f93-acc0-224d93ecb9cd&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/12377604",
+     "https://music.apple.com/jp/album/1536980259"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/72/91/fa729172-3f10-73ad-262c-b615a084f352/mzaf_9384489945394223711.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536980259",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

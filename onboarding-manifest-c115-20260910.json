@@ -1,0 +1,989 @@
+{
+ "schemaVersion": 1,
+ "batch": "c115-20260910",
+ "albums": [
+  {
+   "artist": "三橋美智也",
+   "album": "三橋美智也歌謡史 第2集",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=三橋美智也&limit=8 → score 100 命中「三橋美智也」1b3a4776-6c8e-4569-bc3d-481cb6247169（Japan）；依第 187 條再以羅馬字 artist?query=Michiya Mihashi 查，score 100 回同一個實體，MB 內部沒有第二個實體",
+      "release-group?artist=1b3a4776-6c8e-4569-bc3d-481cb6247169&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 5 個 release-group：〈江差恋しや〉2006 Single、《三味線リサイタル》1963 Album、〈I'm A 北海道MAN〉1990 Single、〈二本松少年隊〉1965 Single、〈蝶々とかかし〉1970 Single；歌謡史系列一集都沒有",
+      "release-group?query=releasegroup:\"三橋美智也歌謡史\" AND artist:\"三橋美智也\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"三橋美智也歌謡史\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "三橋美智也的藝人實體在 MB 上存在，browse 分頁只回 5 個 release-group（四筆單曲＋一張三味線盤），1963 年 King 的歌謡史系列完全不在其中；盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/14204669",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008698641"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/bTGNQGYaopq4IRa3WGIfMayqQK1Xl_Nt_pWlk3h92Ec/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MjA0/NjY5LTE1Njk4MTQw/MDktNDcxOS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "14204669"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十九歲帶一把三味線上京，陪弟子錄音時被廠牌聽見。母親是民謡歌手，他小學畢業後在國鐵保線區做日雇工，同時隨白川軍八郎一座學津軽三味線。十六軌兩面各八首，盤面同時掛了廠牌的管弦樂團、兩組合唱團與一把箏，等於在民謡的骨架外面包一層流行歌編制；〈古城〉〈達者でナ〉是他唱紅的歌謡曲那一路，〈武田節〉〈あゝ城山〉則靠民謡與三味線的唱腔撐著。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/14204669",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008698641",
+     "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%A9%8B%E7%BE%8E%E6%99%BA%E4%B9%9F",
+     "https://musicbrainz.org/ws/2/release-group?artist=1b3a4776-6c8e-4569-bc3d-481cb6247169&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/14204669"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鶴田浩二",
+   "album": "男 傷だらけの人生",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=鶴田浩二&limit=8 → score 100 命中「鶴田浩二」71686201-a20c-4c57-8e9a-cff9bd7ee132（Japan）；score 95 的「ジャンボ鶴田浩二」（2f41f3a9）與 score 89 的任天堂作曲家「近藤浩治」（c376498a）依第 179 條回問 area／disambiguation 排除，前者 browse 回 0 筆",
+      "release-group?artist=71686201-a20c-4c57-8e9a-cff9bd7ee132&limit=100&offset=0 → 名下僅 2 個 release-group：〈傷だらけの人生〉1970-12-25（**Single**）與《あゝ軍歌》2005-09-26（Album）；1971 年 Victor 的 LP 不在其中",
+      "依第 187 條再查 artist?query=Koji Tsuruta（羅馬字）→ 回同一個實體，MB 內部沒有第二個鶴田浩二",
+      "release-group?query=releasegroup:\"傷だらけの人生\" AND artist:\"鶴田浩二\"&limit=10 → count=1，唯一那筆就是 1970-12-25 的 **Single**，不是本片的 LP"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "鶴田浩二的藝人實體在 MB 上存在但名下只有一筆 1970 年的同名單曲與一張 2005 年的軍歌盤，1971 年 Victor 的十二軌 LP《男／傷だらけの人生 鶴田浩二男の世界》不在其中；盤名反查唯一命中的那筆 primary-type 是 Single，依第 179 條第 1 點不能拿來當 LP 已建檔的證據。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5869250",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008807774"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/9vCnV8LazPov30Ftnm9ucRNtVfaSw4teZyJL-wkD4sU/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Njky/NTAtMTQwNTMyODAw/My01MjQ2LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5869250"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他唱歌時左手總是貼著左耳——二十二歲那年治肺結核的藥讓那隻耳朵聾了。這個姿勢的建議來自 1951 年同片演出的田端義夫；他拿麥克風還要用白手帕包著，說是自己極容易流汗、交棒給下一位歌手時的禮貌。A 面第六軌〈同期の桜〉整段是朗讀，他依西条八十的原詞改寫成特攻隊員的遺書；B 面首軌就是〈傷だらけの人生〉，末三軌把整面收在和製ブルース的編制上。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5869250",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008807774",
+     "https://ja.wikipedia.org/wiki/%E9%B6%B4%E7%94%B0%E6%B5%A9%E4%BA%8C",
+     "https://musicbrainz.org/ws/2/release-group?artist=71686201-a20c-4c57-8e9a-cff9bd7ee132&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5869250"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "殿さまキングス",
+   "album": "なみだの操",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=殿さまキングス&limit=8 → score 100 命中「殿さまキングス」be51283b-42aa-4af6-a319-f104542108a5（Japan）；依第 187 條再查羅馬字 artist?query=Tonosama Kings，回同一實體（另有 score 51 的 Gipsy Kings 44a7f7d5 與 score 50 的「tonosama wasabii」08fbeb9f，依第 179 條回問 area 排除）",
+      "release-group?artist=be51283b-42aa-4af6-a319-f104542108a5&limit=100&offset=0 → **名下只有 2 個 release-group，兩筆都是精選**：《スーパー・コレクション》1984（Album/Compilation）與《Best of Best なみだの操》1999-06-25（Album/Compilation）；1974 年 Victor SJX-162 的原盤不在其中",
+      "release-group?query=releasegroup:\"なみだの操\" AND artist:\"殿さまキングス\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"なみだの操\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "殿さまキングス的藝人實體在 MB 上存在但名下只有兩張精選（1984 年《スーパー・コレクション》與 1999 年《Best of Best なみだの操》），1974 年 Victor SJX-162 那張十二軌原盤沒有建檔；盤名加掛名與單盤名兩種反查都 count=0。1999 年那張精選的副題雖然帶「なみだの操」，那是後世精選不是原盤。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條），片假名與羅馬字兩種寫法都跑過（第 187 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5869311",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008841639"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。日本線第二來源用國立國會圖書館サーチ（第 198 條），台語與時代曲線用 Apple tw 的 collectionId（c-113 第 3 條的同一把尺）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/TzGSI8osWfodmIjj1Z8DPkz8zL7haJfvSYQm9c_JL4k/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Njkz/MTEtMTQwNTMyNzk2/MS05MTkwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5869311"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 26,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一個上搞笑節目的合唱團，靠一首歌轉成唱歌謡曲的。前身是一支叫ファンキーガイズ的ボーイズ物團體，後來才結成現在這個名字，團名的由來是想把「キング」講成日本風。十二軌兩面分得很清楚：A 面是同名曲領頭的自家曲目，走的是男聲合唱加主唱的歌謡コーラス編制；B 面整面換成戰前的老曲，〈妻恋道中〉〈名月赤城山〉〈旅笠道中〉是股旅物那一路。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5869311",
+     "https://ndlsearch.ndl.go.jp/books/R100000002-I000008841639",
+     "https://ja.wikipedia.org/wiki/%E6%AE%BF%E3%81%95%E3%81%BE%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9",
+     "https://musicbrainz.org/ws/2/release-group?artist=be51283b-42aa-4af6-a319-f104542108a5&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5869311"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝雷",
+   "album": "新娘與我",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+      "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"新娘與我\" AND artist:\"謝雷\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"新娘與我\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "謝雷的藝人實體在 MB 上存在（ad74b929，Taiwan／1940-02-02），但 browse 分頁回 0 個 release-group——他名下什麼都沒建，不只是缺這一張；羅馬字 Hsieh Lei 與 Xie Lei 兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6001080",
+     "https://music.apple.com/tw/album/1476232860"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9d/f5/8b/9df58bb2-6a93-58f5-66f8-277dfccde868/A3105088.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1476232860",
+    "note": "試聽探測釘定的 collectionId 1476232860（gb）：Xie Lei — 新娘與我"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 21,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "伴奏班底掛的是一支叫 The Telstar Combo 的樂隊。他在警察廣播電台的歌唱比賽拿亞軍後與電台簽約，後來上了電視的《群星會》，某次節目空了三分鐘，主持人臨時要他與張琪合唱〈月下對口〉，兩人因此走紅。十二軌是那個年代台北歌廳男聲的標準組合：〈藍色的憂鬱〉〈玫瑰夢〉這一路的抒情曲，配上〈關達拉美娜〉〈熱情的太陽〉兩首拉丁曲目的國語版。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6001080",
+     "https://itunes.apple.com/lookup?id=1476232860&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6001080",
+     "https://music.apple.com/tw/album/1476232860"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/d9/4f/d7/d94fd794-3ccc-d182-b29a-ed125815d1b3/mzaf_13156589667794705636.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1476232860",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝雷",
+   "album": "往日的舊夢",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+      "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"往日的舊夢\" AND artist:\"謝雷\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"往日的舊夢\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "謝雷的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；羅馬字兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人（第 187 條）。盤名加掛名與單盤名兩種反查都 count=0，這個盤名在 MB 上完全不存在。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6000794",
+     "https://music.apple.com/tw/album/1740242272"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/86/94/2a/86942a57-3031-2772-43b6-7162a6ba9526/4711499282438.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1740242272",
+    "note": "試聽探測釘定的 collectionId 1740242272（gb）：Xie Lei — 往日的舊夢"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "B 面第三軌〈負心的人〉4 分 19 秒，同名的台語電影他自己演。同名歌曲隨那部電影推出，當時有隨片登台的制度，每一場他都得唱。十二軌約 36 分鐘，A 面同名曲 2 分 57 秒開場，〈苔痕〉〈深深的戀情〉一路走抒情；B 面〈流浪之歌〉2 分 23 秒是全片最短，第三軌那 4 分 19 秒則是最長也最重的一首。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6000794",
+     "https://itunes.apple.com/lookup?id=1740242272&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6000794",
+     "https://music.apple.com/tw/album/1740242272"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/be/7b/9cbe7bfc-02c8-bf54-2d89-0fc437e393e9/mzaf_11801613880709708870.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1740242272",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝雷",
+   "album": "歡唱",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+      "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"歡唱\" AND artist:\"謝雷\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"歡唱\"&limit=10 → count=1，苏紫旭 & The Paramecia《悲歌欢唱(Lamenting in Delight)》2026-05-15，與本片無關"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "謝雷的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；羅馬字兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人（第 187 條）。盤名加掛名反查 count=0，單以盤名反查唯一命中的是 2026 年的簡體字碟《悲歌欢唱》，artist-credit 與謝雷無關。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6000265",
+     "https://music.apple.com/tw/album/1734178303"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/7e/84/767e8451-fd23-fa63-4340-6b359f8e819d/4711280068876.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1734178303",
+    "note": "試聽探測釘定的 collectionId 1734178303（gb）：Xie Lei — 歡唱"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟名取的是全片最短的一首：〈歡唱〉只有 1 分 58 秒。十一軌約 32 分鐘，是他同一系列四張裡最短的一張。A 面〈過去的春夢〉〈碧闌村的姑娘〉開場，第三軌的同名曲收得最快；B 面〈故鄉在何方〉〈深深的懷念〉〈夢去了〉三首連著走思鄉，第四軌〈浪子之歌〉4 分 17 秒是全片最長。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6000265",
+     "https://itunes.apple.com/lookup?id=1734178303&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6000265",
+     "https://music.apple.com/tw/album/1734178303"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/90/71/d6/9071d6e8-660e-4f10-124d-84f003cd7678/mzaf_602911027285304413.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1734178303",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "謝雷",
+   "album": "梨山痴情花",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=謝雷&limit=8 → score 100 命中「謝雷」ad74b929-3d93-46b4-8d9a-a320fbb89a63（Taiwan／1940-02-02）；依第 179 條回問 area 與生年確認是本人，依第 187 條再查羅馬字 artist?query=Hsieh Lei 與 Xie Lei，score ≥85 的八個實體逐一 browse（Lei Lei 5d042f0a／d725ea1a、lei c15d4930、LEI 2bdeff4b／fb5e25fb、Lei f497aa3d、Lisa Hsieh ccde1821、LEÏ 5ef1aaf8）全都是不相干的人，**MB 上沒有第二個謝雷實體**",
+      "release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"梨山痴情花\" AND artist:\"謝雷\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"梨山痴情花\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "謝雷的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；羅馬字兩種寫法查出的八個 score≥85 實體逐一 browse 都是不相干的人（第 187 條）。盤名加掛名與單盤名兩種反查都 count=0，這個盤名在 MB 上完全不存在。查詢全部回 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6003928",
+     "https://music.apple.com/tw/album/1715637662"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/8e/bd/518ebda6-d184-fa13-152d-c3c5bcb89fa1/4711499286771.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1715637662",
+    "note": "試聽探測釘定的 collectionId 1715637662（gb）：Xie Lei — 梨山痴情花"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "翻到 B 面第一軌才是〈梨山痴情花〉，2 分 49 秒。十軌約 31 分鐘、兩面各五首，A 面〈情人再見〉2 分 42 秒開場，之後逐首拉長到三分半；B 面首軌是同名曲，接著〈再來一個〉3 分 42 秒是全片最長，末三軌收得比 A 面短，最短的〈情人夢〉只有 2 分 19 秒。1972 年起他把重心移到海外作秀，1974 年在菲律賓被檢舉遣返，台灣也禁止他出境兩年，之後他轉往歌廳與秀場，鮮少再上電視。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6003928",
+     "https://itunes.apple.com/lookup?id=1715637662&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6003928",
+     "https://music.apple.com/tw/album/1715637662"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a7/0b/e5/a70be523-b18d-2d09-c11b-3445bcf60c74/mzaf_8431389919261229232.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1715637662",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "白虹",
+   "album": "醉人的口紅",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=白虹&limit=8 → score 100 命中「白虹」a1963319-1889-45a9-807e-c5c959734fb7（CN／1920-02-24）；依第 187 條再查 artist?query=Bai Hong 與 Pai Hung，score≥85 的實體（pai 49f64e5a、Dala Pai Pai bab50b31、Hung a3f6e525／f544b89e、Tchao Paï Paï 3aeea906、Basta Paï Paï 531e6fe3、Brotha Lynch Hung f1fa0780）逐一 browse，全都是不相干的人，**MB 上沒有第二個白虹實體**",
+      "release-group?artist=a1963319-1889-45a9-807e-c5c959734fb7&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"醉人的口紅\" AND artist:\"白虹\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"醉人的口紅\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "白虹的藝人實體在 MB 上存在（a1963319，CN／1920-02-24）但 browse 分頁回 0 個 release-group——上海時代曲這一代裡系列外的幾位整位空白；羅馬字 Bai Hong 與 Pai Hung 兩種寫法查出的七個 score≥85 實體逐一 browse 都是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8895275",
+     "https://music.apple.com/tw/album/1442687956"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/2f/2a/fb/2f2afbc0-f1c0-c90b-95f7-3ac4f1ea82c0/00602557951196.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442687956",
+    "note": "試聽探測釘定的 collectionId 1442687956（gb）：Bai Hong — 醉人的口紅"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 162,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1934 年上海的播音歌星競選，她拿 9103 票奪冠，第二名是周璇。她原名白淑敏，十一歲自己報名黎錦暉的明月社，1933 年起改用「白虹」為藝名。十軌十吋單聲道、兩面各五首，沒有一首超過 3 分 20 秒。A 面前三首出自 1939 年的兩齣舞台劇，〈莎莎再會吧〉是 1941 年電影《孤島春秋》的插曲，B 面〈薔薇花〉是 1947 年，〈醉人的口紅〉與〈紡棉花〉是 1948 年。她本人沒有去香港，遷去的是百代；這張是百代 1962 年在香港用她上海時期的錄音整編的。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8895275",
+     "https://itunes.apple.com/lookup?id=1442687956&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%99%BD%E8%99%B9_%281920%E5%B9%B4%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=a1963319-1889-45a9-807e-c5c959734fb7&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8895275",
+     "https://music.apple.com/tw/album/1442687956"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1c/4d/ac/1c4dac96-9987-4e23-18e1-ff50128205a7/mzaf_7431349801414087354.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442687956",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "劉福助 & 黃小冬",
+   "album": "桃花過渡",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=劉福助&limit=8 → score 100 命中「劉福助」82d63e66-7f13-4f80-bd66-923ae0ebd130（TW／1940-10-06）；依第 187 條再查羅馬字 artist?query=Liu Fu-Chu 與 Liu Fu Zhu，回的都是不相干的實體，**MB 上沒有第二個劉福助實體**；另查 artist?query=黃小冬 亦無可用實體",
+      "release-group?artist=82d63e66-7f13-4f80-bd66-923ae0ebd130&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"桃花過渡\" AND artist:\"劉福助\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"桃花過渡\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "劉福助的藝人實體在 MB 上存在（82d63e66，TW／1940-10-06）但 browse 分頁回 0 個 release-group，黃小冬連藝人實體都建不出來；羅馬字寫法反查回的都是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/9541583",
+     "https://music.apple.com/tw/album/958006778"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/7a/15/2e/7a152e2f-84f6-8670-f3ad-14d9cc16a35d/99_1.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "958006778",
+    "note": "試聽探測釘定的 collectionId 958006778（tw）：劉福助 & 黃小冬 — 最新流行福建民謠歌曲 桃花過渡"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "男女答嘴鼓要六分多鐘才收得住，同名那首 6 分 44 秒。十一軌的掛名分得很清楚：三首對唱、一首黃小冬獨唱，其餘七首劉福助獨唱。長的三軌〈桃花過渡〉6 分 44 秒、〈月月按〉5 分 36 秒、〈鬧五更〉5 分 32 秒都是一來一往的形式，其餘八首全在 3 分 30 秒以下；曲目取的是福建民謠系統的老曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/9541583",
+     "https://itunes.apple.com/lookup?id=958006778&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%8A%89%E7%A6%8F%E5%8A%A9",
+     "https://musicbrainz.org/ws/2/release-group?artist=82d63e66-7f13-4f80-bd66-923ae0ebd130&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/9541583",
+     "https://music.apple.com/tw/album/958006778"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/c0/98/33c09867-5d97-008e-2afd-61d85162132d/mzaf_12154474514370703159.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "958006778",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "郭金發",
+   "album": "伴你一生",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=郭金發&limit=8 → score 100 命中「郭金發」2aac08c7-a544-4a3b-81bb-b6dd5cda9877（TW／1944-03-01）；依第 187 條再查羅馬字 artist?query=Kuo Chin-Fa，回的是不相干的實體，**MB 上沒有第二個郭金發實體**",
+      "release-group?artist=2aac08c7-a544-4a3b-81bb-b6dd5cda9877&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"伴你一生\" AND artist:\"郭金發\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"伴你一生\"&limit=10 → count=0（這個盤名在 MB 上完全不存在）"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "郭金發的藝人實體在 MB 上存在（2aac08c7，TW／1944-03-01）但 browse 分頁回 0 個 release-group——這是「實體確鑿、發行品沒建檔」的典型形狀；羅馬字寫法反查回的是不相干的人，排除第 187 條的實體分裂。盤名加掛名與單盤名兩種反查都 count=0。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/33327054",
+     "https://music.apple.com/tw/album/1841344084"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/7d/6a/9d7d6a8b-ce36-067e-3052-bd5847ff695d/cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1841344084",
+    "note": "試聽探測釘定的 collectionId 1841344084（jp）：郭金發 — 伴你一生"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三個歌名帶著「男」字，唱的是那把叫作寶島低音歌王的嗓子。〈男兒的心聲〉〈男性的苦戀〉與〈男性的純情〉是那三首，其餘是〈愛的呼聲〉〈愛你入骨〉〈星夜思情〉那一路的情歌，加上〈重新的脚步〉〈原諒〉那種勸慰題材。十二軌約 39 分鐘、兩面各六首，長度極平均：最長的〈失明的少女〉4 分 07 秒、最短的〈眞情着愛惜〉2 分 45 秒，其餘十首都落在這中間，整張都壓在他那把低音上。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/33327054",
+     "https://itunes.apple.com/lookup?id=1841344084&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%83%AD%E9%87%91%E7%99%BC",
+     "https://musicbrainz.org/ws/2/release-group?artist=2aac08c7-a544-4a3b-81bb-b6dd5cda9877&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/33327054",
+     "https://music.apple.com/tw/album/1841344084"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/6a/b2/7e6ab2f9-bd0b-1b82-565d-8742e9f50278/mzaf_17854422473630095108.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1841344084",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "郭金發",
+   "album": "人生的旅程",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=郭金發&limit=8 → score 100 命中「郭金發」2aac08c7-a544-4a3b-81bb-b6dd5cda9877（TW／1944-03-01）；依第 187 條再查羅馬字 artist?query=Kuo Chin-Fa，回的是不相干的實體",
+      "release-group?artist=2aac08c7-a544-4a3b-81bb-b6dd5cda9877&limit=100&offset=0（第 116 條 browse 分頁端點）→ **名下 0 個 release-group**，分頁確認回空陣列",
+      "release-group?query=releasegroup:\"人生的旅程\" AND artist:\"郭金發\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"人生的旅程\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T12:00:00Z",
+     "conclusion": "郭金發的藝人實體在 MB 上存在但 browse 分頁回 0 個 release-group；1983 年鄉城 SC·9028 那張十二軌 LP 沒有建檔，盤名加掛名與單盤名兩種反查都 count=0，這個盤名在 MB 上完全不存在。查詢全部回 HTTP 200，走 limit=100 的 browse 端點（第 116 條），漢字與羅馬字兩種寫法都跑過（第 187 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/33306876",
+     "https://music.apple.com/tw/album/1841343836"
+    ],
+    "manualRuling": "店主 2026-09-06 指名「記得要收阿弟仔的平衡」並授權 c-115 §1 補遺批；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113／c-114 的欄位寫法逐條填。台語與時代曲線的第二來源用 Apple tw 的精確 collectionId（c-113 第 3 條把 Apple collectionId 當獨立來源的同一把尺；台灣官方目錄在雲端拿不到，見 c-115 rulings 第 5 條）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/58/93/f65893c2-c316-31be-ca93-670574e0d135/cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1841343836",
+    "note": "試聽探測釘定的 collectionId 1841343836（jp）：郭金發 — 人生的旅程"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "歌名從情歌換成〈台北戀曲〉〈故鄉的月〉〈悲情的城市〉這一路。十二軌約 43 分鐘、兩面各六首，地方與家庭題材之外還有〈寶島好男兒〉與〈媽媽! 我要做好子〉，同名曲則把整張的基調定在「一生走過來」的敘事上。長度分布比前一號寬：最長的〈孤星再會啦!〉4 分 38 秒，最短的〈誠意〉2 分 58 秒與〈初次的約會〉2 分 57 秒。低音主唱配的仍是 1980 年代初的鍵盤與節奏組，1983 年 2 月由鄉城機構發行，盤面編號 SC·9028，與前一號只隔四個月。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/33306876",
+     "https://itunes.apple.com/lookup?id=1841343836&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%83%AD%E9%87%91%E7%99%BC",
+     "https://musicbrainz.org/ws/2/release-group?artist=2aac08c7-a544-4a3b-81bb-b6dd5cda9877&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/33306876",
+     "https://music.apple.com/tw/album/1841343836"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/83/40/4d8340a2-3b2c-5c2e-7aa7-347ad35a01a8/mzaf_16849112421540994289.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1841343836",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

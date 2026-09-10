@@ -1,0 +1,2861 @@
+{
+ "schemaVersion": 1,
+ "batch": "c123-20260910",
+ "albums": [
+  {
+   "artist": "Ruja",
+   "album": "Ruja",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811。回問確認：title「Ruja」、artist-credit「Ruja」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 3 個 release（7f57d7a7… 1982/SU/Official，Мелодия С60-16885-6，12\" Vinyl 10 軌；另兩筆為 Pseudo-Release）。藝人 MBID bac75c73-9d3b-4819-800c-0e1050eb8ff0（Group／EE／1971-09），以 release-group?artist=…&limit=100&offset= 分頁全列 20 個 RG。刻意不釘：2c415596-6e15-4e64-a8f6-6825bd55ac80《Ruja》（1979，primary-type EP）、6db9e7da-ce34-41dd-a768-536f7308658b《Kivi veereb》（1988 LP，本批名額不足，可進下一批）、9c1ff96c-3dd7-42a6-b285-00e9389531b8《Пусть будет все》（1989，全西里爾盤名）、41dd97d6-d0f8-448a-8fef-4c800d1f2800《Must lind》（1994 Compilation，超出 1970–1991 年份窗口）。",
+    "selfTitledVerified": true,
+    "rgMbid": "c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 116,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一張盤留下三套曲名，十個位置與十個長度完全相同。愛沙尼亞語、俄語與英語各一套，第三軌〈To Mr. Lennon〉是三套裡唯一拼寫一模一樣的一首。正式盤面是 1982 年 Мелодия С60-16885-6、12 吋十軌，另外兩筆掛同一個目錄號的，是同內容的翻譯盤面。那十軌從 1:49 到 4:51，最短的〈Eile nägin ma eestimaad!〉排在第九，最長的〈Siin oled sündinud〉收尾。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/7f57d7a7-f30a-449a-b67b-16769617b3b8?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/bac75c73-9d3b-4819-800c-0e1050eb8ff0?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1525882777&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release?release-group=f8c2cb64-0a06-44a4-b902-535796b8bceb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/release-group/c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ruja",
+   "album": "Algus (Studio 1971-1975)",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 71cbc804-92f3-4fd8-815c-75d63bc79567。回問確認：title「Algus (Studio 1971-1975)」、artist-credit「Ruja」、first-release-date 2020-08-20、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（c5df899e… 2020-08-20/XW/Official、Digital Media 9 軌、無 label-info）。藝人 MBID bac75c73-9d3b-4819-800c-0e1050eb8ff0。刻意不釘（同日同批母帶的其他切法，§5.6 只挑一種）：00e01c19-9a2f-45ab-9f80-f008bd53ec37《Algu (Live 1971-1974)》（現場版）、22c924b8-e23a-4577-b058-a082072707aa《Esimene》、5eedf02e-f086-485a-9f92-4bbf2165f6c2《Kirjanduslik I (1976-1977)》、ffc9a046-1aa8-487c-89c1-64d2e2acb8e1《Kirjanduslik II (1978-1980)》、aed06068-8c7d-45a6-b36b-6ba29ffe151b《Pop RUJA (1981-1982)》、f3c758a0-09ef-4712-84db-ad11d0afef48《Rahvuslik Rokk (1980-1984)》、5907f657-27b1-410e-85dd-d60bd29de546《Hiline i (1982-1985)》、fee30dd2-f6b1-49d1-b596-bd3ca0d19575《Hiline II (1986-1987)》、57516105-d841-4506-90c3-9e13a8df1625《Teine (Ilmumata 1982)》。",
+    "rgMbid": "71cbc804-92f3-4fd8-815c-75d63bc79567",
+    "exceptionReason": "Ruja 前五年（1971–1975）從未拿到 Melodiya 的正式 LP，那批曲目只以愛沙尼亞廣播的錄音室母帶留存；2020 年這套遺產計畫把母帶整編成九軌單一發行品，是這批錄音唯一可建檔、可取得的形態，也是愛沙尼亞地下搖滾第一代最早的成套文獻。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/71cbc804-92f3-4fd8-815c-75d63bc79567",
+     "https://music.apple.com/ee/album/1525889897"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bc/a3/35/bca33582-07ce-3271-e5cf-f3e2a915a100/cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1525889897",
+    "note": "試聽探測釘定的 collectionId 1525889897（ee）：RUJA — Algus (Studio 1971-1975)"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 226,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名標的錄音區間從 1971 起算，這九軌到 2020 年才成套出版。九軌只有數位一種形態，端上沒有登記任何廠牌，盤名括號裡的「Studio」是唯一寫明錄音室的地方。開場〈Zeppelini triumf〉6:15 比其餘八軌都長，後面收攏在 2:33 到 4:13 之間，最短的是〈Pajats〉2:33。同一天這個掛名一口氣出了九種切法，這一種是唯一標「Studio」、區間從 1971 起算的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=71cbc804-92f3-4fd8-815c-75d63bc79567&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1525889897&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/71cbc804-92f3-4fd8-815c-75d63bc79567",
+     "https://music.apple.com/ee/album/1525889897"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/73/e4/6c/73e46ce7-db8c-1dfe-0041-1feea1dcafa7/mzaf_8538565615080406834.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1525889897",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Vitamiin",
+   "album": "Ansambel \"Vitamiin\"",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e078bae3-d618-41f7-942c-99752732b9c3。回問確認：title「Ansambel \"Vitamiin\"」、artist-credit「Vitamiin」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 1 個 release（46dc4055… 1983/SU/Official、Мелодия С60 19587 005、12\" Vinyl 10 軌）。藝人 MBID c2cab48e-453e-4573-b41f-24b8565aaa94（Group／EE／1978），分頁全列 7 個 RG。刻意不釘：7c7f21eb-eba0-4d28-866f-fb77079309d0《Vitamiin》(1984) 與 c0a81386-b03e-44c7-96dc-00a498b49dd1《Vitamiin》(1987)（兩張盤名相同，摺鍵會互撞，本批只取盤名可辨的 1983）、6a4e2a43-e71c-4766-b2b3-1d6c85b89533《Vitamiin》(1981，EP)、9aac00a2-a13a-4796-b4bf-de886726da54《Группа \"Витамин\"》(1983，EP)、1c18e479-e858-496d-9918-7736a923bedb《Parimad Laulud Aastatest 1978-1989》(1997 Compilation，超出年份窗口)。",
+    "rgMbid": "e078bae3-d618-41f7-942c-99752732b9c3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/EvEjKW41pClIqHINSllmYRlJmT8Eamqy_3pg7WvlebI/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NDAw/ODktMTU5ODcwNTIw/NC05OTg2LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "3640089"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 17,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第九軌〈Julius Caesar〉的錄音，同一段也放進了同年另一張碟。那是 Anne Veski ja Muusik-Seif 那張的第十一軌，兩張都是 1983 年同一家出的盤，登記的是同一段錄音，不是重錄。十軌長度極平均，全落在 2:55 到 4:45 之間，最長的〈Tour〉與最短的〈Viimane vaatus〉差不到兩分鐘。盤面是 1983 年 Мелодия С60 19587 005、12 吋十軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e078bae3-d618-41f7-942c-99752732b9c3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=b1182283-b9ca-40f3-b828-7ef40c653261&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/c2cab48e-453e-4573-b41f-24b8565aaa94?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/ws/2/release-group?artist=c2cab48e-453e-4573-b41f-24b8565aaa94&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1734693368&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/e078bae3-d618-41f7-942c-99752732b9c3"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kaseke",
+   "album": "Põletus",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e。回問確認：title「Põletus」、artist-credit「Kaseke」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 1 個 release（6eb8e828… 1983/SU/Official、Мелодия С60 19829 008、12\" Vinyl 9 軌）。藝人 MBID 839a2dad-24b9-46b7-ac80-57f700dcc15f（Group／EE／1980），分頁全列 3 個 RG。刻意不釘：a7d1c711-6494-3938-b44f-45f75d5865ba《Sõnum》(1981，primary-type EP)、3f838223-c8c6-3e37-a508-425ca93a9311《Põletus / Sõnum》(2000 Compilation，超出年份窗口且與本卡同一批錄音)。",
+    "rgMbid": "623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 145,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名的字根在第五軌與第九軌又各出現一次。第五軌是〈Põletaja〉3:42，第九軌是〈Põlenud maa〉3:48，兩首都排在後半。九軌沒有一首短於三分半，最短的〈Elevantsi hirmulaul〉3:38、最長的〈Tantsija〉5:54，整片長度就壓在這兩個數字之間。盤面是 1983 年 Мелодия С60 19829 008、12 吋九軌，也是這個掛名名下唯一的 Album 形態發行品，封套美術欄掛的是 Margus Haavamägi。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=839a2dad-24b9-46b7-ac80-57f700dcc15f&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/839a2dad-24b9-46b7-ac80-57f700dcc15f?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1786734646&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/623be7c7-2cc1-33fa-a89c-6e4ff0ad9c2e"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mess",
+   "album": "Sven Grünberg's Proge-Rock Group Mess",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e5ad9b28-520e-3d72-90ce-86cd62e9142a。回問確認：title「Sven Grünberg's Proge-Rock Group Mess」、artist-credit「Mess」、first-release-date 1995、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（92e45e7c… 1995/DE/Official、Bella Musica BM-CD 31.4199、CD 9 軌）。藝人 MBID a5d97a6f-70d1-4376-b585-3126e475d890（Group／EE／1974-01，disambiguation「Estonian prog rock group」），分頁全列 3 個 RG。刻意不釘：79156a8c-3b90-46d1-8d63-4175f8a19b9c《Mess》(1980，primary-type EP，且該 RG 同時掛在 Sven Grünberg 名下)、20a474d9-e844-33f6-b844-9f2a879717f8《Küsi eneselt》(2004，超出年份窗口)。",
+    "rgMbid": "e5ad9b28-520e-3d72-90ce-86cd62e9142a",
+    "exceptionReason": "Mess 是 Sven Grünberg 1974 年組的前衛搖滾團，在蘇維埃愛沙尼亞從未拿到自己的 LP，只在 1980 年出過一張 EP；1974–1976 年的完整曲目要到 1995 年德國 Bella Musica 這張 CD 才第一次成套面世，是這批錄音唯一可得的形態，也是愛沙尼亞前衛搖滾史最常被引用的一份文獻。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/e5ad9b28-520e-3d72-90ce-86cd62e9142a",
+     "https://music.apple.com/ee/album/287441442"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/84/22/f9/mzi.rocxeoas.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "287441442",
+    "note": "試聽探測釘定的 collectionId 287441442（ee）：Sven Grünberg's Proge-Rock-Group — Mess"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 7,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九軌最長 10:39、最短 1:48，尺度差到六倍。兩首不到兩分鐘的短曲夾住中間那五首六到十分鐘的段落，首尾〈Avamäng〉與〈Taevas (Koda)〉的曲名直譯就是「序曲」與「天空（尾聲）」。這是 1995 年德國 Bella Musica 的 CD、編號 BM-CD 31.4199，不走蘇聯那套發行系統；串流那份順序與長度一秒不差，曲名卻整套換成了英譯。蘇維埃時期這個掛名底下只有 1980 年一張小碟。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e5ad9b28-520e-3d72-90ce-86cd62e9142a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=287441442&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=a5d97a6f-70d1-4376-b585-3126e475d890&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/a5d97a6f-70d1-4376-b585-3126e475d890?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/release-group/e5ad9b28-520e-3d72-90ce-86cd62e9142a",
+     "https://music.apple.com/ee/album/287441442"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f3/74/03/f3740321-5f26-38cc-df89-ce46824dba72/mzaf_2615879012540131206.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "287441442",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "In Spe",
+   "album": "In Spe",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f6447446-8307-3aed-a9c0-c2554adc26f1。回問確認：title「In Spe」、artist-credit「In Spe」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 2 個 release（d3377f94… 1983/SU/Official、Мелодия С60 19367 001、12\" Vinyl 6 軌；212c56db… 1999-12/EE/Official）。藝人 MBID 2c3ef15a-75bb-4208-b184-8d8fda50b627（Group／EE／1979），分頁全列 3 個 RG。刻意不釘：78584e5a-7bb5-4152-87a7-7d010ab61314《In Spe》(2019，超出年份窗口，且盤名與本卡相同)。同掛名 1985 年 RG c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d 本批另收一卡，取其再發名《Typewriter Concerto in D》。",
+    "selfTitledVerified": true,
+    "rgMbid": "f6447446-8307-3aed-a9c0-c2554adc26f1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f6447446-8307-3aed-a9c0-c2554adc26f1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 291,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六個曲名前四個是拉丁文，後兩個換回愛沙尼亞語。1983 年那筆原盤六首裡有三首超過七分鐘，最長的〈Päikesevene〉8:58、最短的〈Ostium〉4:24，第二軌在原盤上拼成〈Iluminatio〉。盤面是 1983 年 Мелодия С60 19367 001、12 吋六軌。1999 年愛沙尼亞那張 CD 是同六軌同序，每首各多出三到五秒；整組樂手名單也只掛在那份重發上，原盤那筆一個關係欄都沒有。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f6447446-8307-3aed-a9c0-c2554adc26f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/212c56db-010a-4aa6-82ff-0820c494b7f6?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels",
+     "https://musicbrainz.org/ws/2/artist/2c3ef15a-75bb-4208-b184-8d8fda50b627?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/ws/2/release-group?artist=2c3ef15a-75bb-4208-b184-8d8fda50b627&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1491967855&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/f6447446-8307-3aed-a9c0-c2554adc26f1"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "In Spe",
+   "album": "Typewriter Concerto in D",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d。回問確認：title「In Spe」（MB RG 標題仍是 1985 原名）、artist-credit「In Spe」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 2 個 release（00e61f8a… 1985/SU/Official、Мелодия С60-23199-000、12\" Vinyl 6 軌；2118b5a5… 1994/FR/Official、Musea FGBG 4118.AR、CD 8 軌、title「Typewriter Concerto in D」）。**卡片盤名取 1994 再發名，第 45 條。** 藝人 MBID 2c3ef15a-75bb-4208-b184-8d8fda50b627。刻意不釘：f6447446-8307-3aed-a9c0-c2554adc26f1《In Spe》(1983)（本批另收一卡）、78584e5a-7bb5-4152-87a7-7d010ab61314《In Spe》(2019，超出年份窗口)。",
+    "rgMbid": "c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 71,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1985 年那張蘇聯壓片上，六個曲名全是英文與拉丁文。前兩軌就是打字機協奏曲的兩個段落，5:43 接 12:27，後面那段佔掉整張近三分之一。盤面上寫的名字是「In Spe」，編號 Мелодия С60-23199-000、12 吋六軌。這個盤名要到 1994 年法國 Musea 那版才出現：那張 CD 八軌，協奏曲被拆成四個樂章，拿掉原盤第五軌，末尾另接一首 11:16 的〈Departure〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/00e61f8a-d298-4dbc-9321-2035a9d0de7a?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels",
+     "https://musicbrainz.org/ws/2/artist/2c3ef15a-75bb-4208-b184-8d8fda50b627?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1452378847&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/c9feb38d-94d6-4ccf-b186-7ccfe5f9af0d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Radar",
+   "album": "Trofee",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6e2b0208-e86b-4a0e-87fe-5186ec6456ca。回問確認：title「Trofee」、artist-credit「Radar」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 1 個 release（cdaa0ada… 1985/SU/Official、Мелодия С60 21713 006、12\" Vinyl 8 軌）。藝人 MBID 5a6b2909-7f30-48fd-8338-5fdce2dee4c5（Group／EE／1978，disambiguation「Estonian band」），分頁全列 5 個 RG。刻意不釘：06a91615-4bee-435c-92e3-6fa53ea884fd《Radar》(1981，EP)、6dac79b9-c4df-4ce0-bc29-6bc551742c8a《Jaak Joala & Radar》(1981，EP)、a76b9fef-ce60-4cdd-9da2-860b2ae2d539《Minu elu》(2017 Compilation，超出年份窗口，且主掛名為 Jaak Joala)。",
+    "rgMbid": "6e2b0208-e86b-4a0e-87fe-5186ec6456ca",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/_o84j_rR_1QZXAt3cA18p-0ExPsFfGp0nDiZFFz7ids/rs:fit/g:sm/q:90/h:400/w:407/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MzQ5/MTgtMTI0NjYzOTQ3/NS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "1834918"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 117,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "中段四首都貼著五分鐘，第七軌 8:08 突出來。開場〈Tipptund kesklinnas〉4:46 之後接的是〈Promenaad〉5:00、〈Trofee〉5:10、〈Portree〉5:02，第七軌〈Konflikt〉8:08 是全片最長，末軌〈Mäng〉2:30 最短，兩端差了三倍多。盤面是 1985 年 Мелодия С60 21713 006、12 吋八軌。1985 這一年正好是三位團員在團區間的結束年，也是另外三位的起始年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=5a6b2909-7f30-48fd-8338-5fdce2dee4c5&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1796234879&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/6e2b0208-e86b-4a0e-87fe-5186ec6456ca"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Radar",
+   "album": "Baltic Coast",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4215b661-570a-4777-8906-56f27d31a5f1。回問確認：title「Baltic Coast」、artist-credit「Radar」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 1 個 release（84fcf30c… 1987/SU/Official、Мелодия С60 25125 006、12\" Vinyl 7 軌）。藝人 MBID 5a6b2909-7f30-48fd-8338-5fdce2dee4c5。刻意不釘：見同掛名《Trofee》卡的清單（06a91615…、6dac79b9…、a76b9fef…）。",
+    "rgMbid": "4215b661-570a-4777-8906-56f27d31a5f1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/lcBgCUIUgXjOXuI_ZXxOOCJ8odwjFDrqM1H2N6mAX6g/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MzQ5/MjctMTM2MTk2Nzc3/Ny04MDEwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "1834927"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 40,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名是英文的，七個曲名卻全是愛沙尼亞語。第四軌〈Balti kallas〉就是盤名的愛沙尼亞語直譯，其餘六首從轉彎、加急電報排到長路。全片的重心在第二、三軌：〈Suitsune valgus〉9:12 與〈Päiksepiste〉9:37 連放，合起來近十九分鐘，其餘五首都落在 3:30 到 7:00 之間。盤面是 1987 年 Мелодия С60 25125 006、12 吋七軌；到這一年，1978 年那批原始成員只剩一位還在區間內。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4215b661-570a-4777-8906-56f27d31a5f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=860048158&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/4215b661-570a-4777-8906-56f27d31a5f1"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rein Rannap",
+   "album": "Improvisatsioonid",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 757c144c-0e7d-49f9-8eeb-3c2e580d4f8c。回問確認：title「Improvisatsioonid」、artist-credit「Rein Rannap」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release（2d2df305… 1982/SU/Official、Мелодия С60 19989 001、12\" Vinyl 2 軌）。藝人 MBID 47e2a032-0cf3-42b3-8b6a-a1de8ae87c1d（Person／EE／1953-10-06），分頁全列 12 個 RG。刻意不釘：4b5350e5-9148-4c28-8188-5f9e6a9e81cd《Сольные импровизации / Solo Improvisations》(1986，盤名為俄英雙語、與本卡易混，本批不收)、db4981c9-cdec-4adc-a5e3-e6ab5c77179a《Varajased laulud》(2002 Compilation)、778938d4-94a8-402c-854c-a280136d1c26《Läbi jäätund klaasi》(2006 Compilation)，後兩者均超出 1970–1991 年份窗口。",
+    "rgMbid": "757c144c-0e7d-49f9-8eeb-3c2e580d4f8c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/xQZT7zel2ytCs-9hrMwvRCLHvHXJGd2sxCwMgppGKGk/rs:fit/g:sm/q:90/h:400/w:398/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NTU5/MC0xMzAzNTk2MTY1/LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "855590"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 6,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一張 12 吋上只登記了兩軌，兩軌都與盤名同字。端上沒有給這兩軌任何長度，也沒有面別欄，能確定的只有形態與曲名。1982 年 Мелодия С60 19989 001，形態欄寫的是 12 吋黑膠。這是他名下最早的一個發行品，蘇維埃時期名下也只有兩張，第二張要到 1986 年才出現。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=757c144c-0e7d-49f9-8eeb-3c2e580d4f8c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=47e2a032-0cf3-42b3-8b6a-a1de8ae87c1d&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/47e2a032-0cf3-42b3-8b6a-a1de8ae87c1d?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=823915284&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/757c144c-0e7d-49f9-8eeb-3c2e580d4f8c"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gunnar Graps ja Magnetic Band",
+   "album": "Roosid papale",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f8c2cb64-0a06-44a4-b902-535796b8bceb。回問確認：title「Roosid papale」、artist-credit「Gunnar Graps ja Magnetic Band」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release（7a39b977… 1982/SU/Official、Мелодия С60-17019-20、12\" Vinyl 11 軌）。**該 RG 同時列在 Gunnar Graps（18f30f5f-3714-4c16-9b0d-6acacd0e82ac）與 Magnetic Band（0d56fb92-b486-46a8-ab6d-0d6d4c852b0a）兩個藝人名下**，兩邊分頁全列各為 5 與 3 個 RG。刻意不釘：8362fb21-bbfb-4b24-933d-b5aa11240520《Magnetic Band》(1980，EP)、6d61ff86-1659-45cc-baa1-baa180852e91《Põlemine》(1988，artist-credit 為第五種寫法「Gunnar Grapsi Grupp」，收了會再拆一個掛名)、a47627c9-a23a-466a-b6ca-1225cc92f511《Tühjad pihud》(1995 Compilation)、2a37b784-7db6-4c38-813d-bf47727234c0《Eesti kullafond》(2002 Compilation)，後兩者超出年份窗口。",
+    "rgMbid": "f8c2cb64-0a06-44a4-b902-535796b8bceb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/WTXHEzH93AnDaSq14f7-a1C4MNwWeZ-P3MKJdZdDBAU/rs:fit/g:sm/q:90/h:400/w:392/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjAz/NjQtMTI2MjQ0NjUz/MC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "1220364"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 38,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一軌全部落在 2:16 到 4:58 之間，沒有一首破五分鐘。與盤名同字的〈Roosid papale〉4:05 排在第八，剛好是正中間的長度；最長的〈Meie teisikud〉4:58，最短的是收尾的〈Kohtumine〉2:16。第九軌的曲名長到二十三個字。第十軌〈Doktor Noormann〉與同年另一張碟上的一首同名，兩邊卻是差了三十一秒的兩段錄音。盤面是 1982 年 Мелодия С60-17019-20、12 吋十一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f8c2cb64-0a06-44a4-b902-535796b8bceb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=0d56fb92-b486-46a8-ab6d-0d6d4c852b0a&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/18f30f5f-3714-4c16-9b0d-6acacd0e82ac?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1850976393&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/f8c2cb64-0a06-44a4-b902-535796b8bceb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Apelsin",
+   "album": "Apelsin",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b0c66523-8058-488b-9a46-2d6a42291cb0。回問確認：title「Apelsin」、artist-credit「Apelsin」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（8cb08d34… 1978/SU/Official、Мелодия С60-07809-10、12\" Vinyl 14 軌）。藝人 MBID 0f6a9099-6380-4cbd-a9a3-6d720f3793b3（Group／EE／1974），分頁全列 12 個 RG。刻意不釘：cc8333b1-23d5-4c54-8264-ea72137c9960《Apelsin》(1981) 與 750c2186-9c68-4fec-8a70-3ef771ee7fa8《Apelsin》(1988)（兩張盤名與本卡完全相同，摺鍵互撞）、4ed85ec9-0fe4-43e1-bc80-c2e38cd403f1《Illuusio》(1981，FI Kansankulttuuri Oy KK-48，芬蘭外銷盤，本批名額不足)、02b232b0-cbc3-4c71-8240-8bd830c8932a《Апельсин》(1989，全西里爾盤名)、19f1db46-48ea-45bc-83a3-2b2d10d472fa《Бони М / Апельсин》(1979，EP＋Compilation)。",
+    "selfTitledVerified": true,
+    "rgMbid": "b0c66523-8058-488b-9a46-2d6a42291cb0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/p5LBXniO8qmyIbgL2K53nniBrySnK48i9KtQuLt2Dyk/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMzYz/MzEtMTYxMzM5NTkx/OC05OTk1LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "4336331"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 132,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十四軌擠在一張 12 吋上，曲名一半用的是外來詞。〈Western〉、〈Jambolaya〉、〈Capri saarel〉、〈Suvepäeva rock〉是一類，另一半是愛沙尼亞語的日常景物：帆、口琴曲、潛水員之歌、中央市場的早晨、兩片紅唇。盤面是 1978 年 Мелодия С60-07809-10、12 吋十四軌，盤名與掛名同一個字。這是名下最早的一個發行品，1978 這一年落在四位成員的在團區間之內。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b0c66523-8058-488b-9a46-2d6a42291cb0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=0f6a9099-6380-4cbd-a9a3-6d720f3793b3&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/0f6a9099-6380-4cbd-a9a3-6d720f3793b3?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=985486103&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/b0c66523-8058-488b-9a46-2d6a42291cb0"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Collage",
+   "album": "Collage",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 90f5b6a3-cd36-469b-bcfe-7c907c3dfb91。回問確認：title「Collage」、artist-credit「Collage」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release（9c945f36… 1971/SU/Official、Мелодия Д 028231-2、12\" Vinyl 12 軌）。藝人 MBID fd6e98fc-609c-45f5-875d-153ff4b84374（Group／EE／1966），分頁全列 8 個 RG。刻意不釘：138e31bd-b8d1-48c2-a317-281fb66a2164《Collage》(1970，primary-type EP)、69de4d35-4ed8-4955-9ed8-7834f873794d《Laula kuni elad》(1995 Compilation)、91bf02d7-26c8-4bba-916a-dcaddb750889《Parimad lood 1970-1976》(2002 Compilation)、ba6b32cf-a01f-41e1-bc0f-ac82b549431f《Forty Seven Minutes Four Seconds》(2009 Compilation)、12be2353-a1fb-460e-ba3b-d55f66732fe6《Ten Minutes Twenty Seven Seconds》(2009，EP)，後四者均超出 1970–1991 年份窗口。",
+    "selfTitledVerified": true,
+    "rgMbid": "90f5b6a3-cd36-469b-bcfe-7c907c3dfb91",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/90f5b6a3-cd36-469b-bcfe-7c907c3dfb91/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 5845,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "目錄號用的是 Д 系列，同團另外兩張各走一種。這張是 1971 年 Мелодия Д 028231-2、12 吋十二軌，也是團史裡最早的一張長片。端上十二軌都沒登記長度，串流那份把時間補齊了：第八軌〈Tallinna blues〉5:36 最長，第四軌〈Talgulaul〉1:26 最短，短曲與長段落交錯著排。成員關係欄只有六筆，六位全是女性，其中四位的在團區間涵蓋 1971 年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=90f5b6a3-cd36-469b-bcfe-7c907c3dfb91&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1100185950&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=fd6e98fc-609c-45f5-875d-153ff4b84374&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/fd6e98fc-609c-45f5-875d-153ff4b84374?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/release-group/90f5b6a3-cd36-469b-bcfe-7c907c3dfb91"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview30/v4/da/20/27/da202700-e1b2-6271-5243-114f0f6d292d/mzaf_2398371275564740363.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1100185950",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Collage",
+   "album": "Kadriko",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e4ed3dbc-7b5d-4900-9663-74df2ee54b05。回問確認：title「Kadriko」、artist-credit「Collage」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release（198c7278… 1975/SU/Official、Мелодия СМ 02821-2、12\" Vinyl 15 軌）。藝人 MBID fd6e98fc-609c-45f5-875d-153ff4b84374。刻意不釘：138e31bd-b8d1-48c2-a317-281fb66a2164《Collage》(1970，primary-type EP)、69de4d35-4ed8-4955-9ed8-7834f873794d《Laula kuni elad》(1995 Compilation)、91bf02d7-26c8-4bba-916a-dcaddb750889《Parimad lood 1970-1976》(2002 Compilation)、ba6b32cf-a01f-41e1-bc0f-ac82b549431f《Forty Seven Minutes Four Seconds》(2009 Compilation)、12be2353-a1fb-460e-ba3b-d55f66732fe6《Ten Minutes Twenty Seven Seconds》(2009，EP)，後四者均超出 1970–1991 年份窗口。",
+    "rgMbid": "e4ed3dbc-7b5d-4900-9663-74df2ee54b05",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e4ed3dbc-7b5d-4900-9663-74df2ee54b05/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 102,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十五個曲名全是愛沙尼亞語的民歌題材名詞句。夢的僕役、壞鐮刀、騙人的求婚者、哥哥的戰事、女兒哭母親、鞦韆要手套、馬丁節之歌，一路排下去都是這種句法。串流那份補上的長度裡，第七軌〈Venna sõjalugu〉6:14 是唯一的長段落，比第二長的〈Tütar nutab ema〉4:34 還多出一分四十秒。盤面是 1975 年 Мелодия СМ 02821-2、12 吋十五軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e4ed3dbc-7b5d-4900-9663-74df2ee54b05&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1100185926&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release?release-group=90f5b6a3-cd36-469b-bcfe-7c907c3dfb91&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/fd6e98fc-609c-45f5-875d-153ff4b84374?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/release-group/e4ed3dbc-7b5d-4900-9663-74df2ee54b05"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview20/v4/b1/39/11/b1391164-ace9-86c9-8e35-141ead33806a/mzaf_1568084798425957171.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1100185926",
+    "storefront": "RU"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Collage",
+   "album": "Käokiri",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e2e28e8f-96ae-4732-8aa7-a647e8c21055。回問確認：title「Käokiri」、artist-credit「Collage」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 1 個 release（9fb84d50… 1977/SU/Official、Мелодия С60-08739-40、12\" Vinyl 12 軌）。藝人 MBID fd6e98fc-609c-45f5-875d-153ff4b84374。刻意不釘：138e31bd-b8d1-48c2-a317-281fb66a2164《Collage》(1970，primary-type EP)、69de4d35-4ed8-4955-9ed8-7834f873794d《Laula kuni elad》(1995 Compilation)、91bf02d7-26c8-4bba-916a-dcaddb750889《Parimad lood 1970-1976》(2002 Compilation)、ba6b32cf-a01f-41e1-bc0f-ac82b549431f《Forty Seven Minutes Four Seconds》(2009 Compilation)、12be2353-a1fb-460e-ba3b-d55f66732fe6《Ten Minutes Twenty Seven Seconds》(2009，EP)，後四者均超出 1970–1991 年份窗口。",
+    "rgMbid": "e2e28e8f-96ae-4732-8aa7-a647e8c21055",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e2e28e8f-96ae-4732-8aa7-a647e8c21055/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 97,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟上的最後兩軌，在串流那份上被併成了一軌。盤面第十一軌〈Kohus koju minna〉與第十二軌〈Blues-polka〉在那邊合成一條 3:34，其餘十軌一對一，於是盤面十二軌、串流那份十一軌。盤面是 1977 年 Мелодия С60-08739-40、12 吋十二軌，第八軌〈Käokiri〉與盤名同字。這也是團史裡最後一個當年出的發行品，下一次名下有東西已是 1995 年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e2e28e8f-96ae-4732-8aa7-a647e8c21055&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1100185959&entity=song&country=ee&limit=200",
+     "https://itunes.apple.com/lookup?id=1359726480&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=fd6e98fc-609c-45f5-875d-153ff4b84374&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/e2e28e8f-96ae-4732-8aa7-a647e8c21055"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview18/v4/07/f1/7e/07f17eb2-cffb-b49f-5ae1-fe3630637149/mzaf_4954341125182266952.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1100185959",
+    "storefront": "RU"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jaak Joala",
+   "album": "Jaak Joala",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1af5041a-047c-4c2d-ae06-c11d464a9a8d。回問確認：title「Jaak Joala」、artist-credit「Jaak Joala」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release（9619e2b7… 1975/SU/Official、Мелодия С60-05965-6、12\" Vinyl 13 軌）。藝人 MBID 8118fcdb-0d7c-4f61-9c64-f631ad259a23，分頁全列 16 個 RG。刻意不釘：d689ff38-db12-441b-b414-07e7b1baaa8e《Jaak Joala》(1972，EP，盤名與本卡相同)、2d4fbcc7-2979-48ba-9384-51f1262d1fc2《Фотографии любимых》(1980，artist-credit 為西里爾合掛名)、236c8ada-dd8f-4659-88e3-76334805bf6f《Сама любовь》(1985，全西里爾盤名)、6dac79b9-c4df-4ce0-bc29-6bc551742c8a《Jaak Joala & Radar》(1981，EP)、a76b9fef-ce60-4cdd-9da2-860b2ae2d539《Minu elu》(2017 Compilation) 與 bddad267-09f6-429e-a310-80b7b54236cf《Suveöö》(2016 Compilation)（後兩者超出年份窗口）。",
+    "selfTitledVerified": true,
+    "rgMbid": "1af5041a-047c-4c2d-ae06-c11d464a9a8d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/3O-uEFhz73OfxhFUHkR0YGWELNm0XKQYmThlSWiujHg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNTc1/MTYtMTI2MTQxNzQ0/My5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "2057516"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 81,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二軌的曲名括號裡直接寫明它出自一部影片。十三軌一軌都沒有長度，能確定的只有順序：〈Laul verelilledest〉起頭，中間走過我那千面的海、四個結、夜之歌、雨滴、遺忘之河、夏夜，收在〈Elavate laul〉。盤面是 1975 年 Мелодия С60-05965-6、12 吋十三軌，也是他名下第一個 Album，1972 年那個是 EP。名下十六個條目裡，1980 年以後的盤名幾乎全是俄文。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1af5041a-047c-4c2d-ae06-c11d464a9a8d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=8118fcdb-0d7c-4f61-9c64-f631ad259a23&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/8118fcdb-0d7c-4f61-9c64-f631ad259a23?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1688599435&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/1af5041a-047c-4c2d-ae06-c11d464a9a8d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ultima Thule",
+   "album": "Ultima Thule",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c8b8a5a3-33d4-4acf-ac77-83b992c30204。回問確認：title「Ultima Thule」、artist-credit「Ultima Thule」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 2 個 release（8f11e1e9… 1988/SU/Official、Мелодия С60 27763 009、12\" Vinyl 8 軌；30faa743… 2007/EE/Official 再發）。藝人 MBID a54f8952-adc3-4769-b805-0cfa48c0206e（Group／EE／1987，disambiguation「Estonian band」），分頁全列 9 個 RG。刻意不釘：24e4bd04-ddb8-4160-8237-450700581081《Tuulatud Thule 1986-1994》(1995 Compilation)、1e78453c-2a35-485e-a506-f493c9a53c98《Kogutud teosed 1987-2002》(2002 Compilation)、f5b094df-d73d-48ad-80b1-0d23791a96ca《Mis maa see on》(1998，secondary-types 含 Soundtrack)、f3046ece-6bf8-3175-9680-6d3f341b0e8a《Ultima Thule + keelpillikvartett》(1998)，皆超出 1970–1991 年份窗口。",
+    "selfTitledVerified": true,
+    "rgMbid": "c8b8a5a3-33d4-4acf-ac77-83b992c30204",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c8b8a5a3-33d4-4acf-ac77-83b992c30204/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 271,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "最長的兩軌剛好排在第四與第八，把整張切成兩半。1988 年原盤上，第四軌是〈Aed〉5:58、第八軌是〈Laulev jõgi〉5:38，八首全落在 3:42 到 5:58 之間，沒有短曲也沒有長篇。第六軌〈Hallaöö〉的錄音，同一段也掛在 2007 年那張 CD 與 1991 年那張碟上，跨了兩個發行國。原盤是 1988 年 Мелодия С60 27763 009、12 吋八軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c8b8a5a3-33d4-4acf-ac77-83b992c30204&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=cef444ac-c2c4-455a-8143-7cdf98e8f8c1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/30faa743-4fa0-40c9-8e51-6a02e36ee7a9?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels",
+     "https://musicbrainz.org/ws/2/artist/a54f8952-adc3-4769-b805-0cfa48c0206e?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1441591931&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/c8b8a5a3-33d4-4acf-ac77-83b992c30204"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/26/26/01/262601ed-8a1f-abbe-08b9-7f4d4be12470/mzaf_4783177147147587278.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "460381002",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ultima Thule",
+   "album": "Eesti asi / Pro Estonia",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cef444ac-c2c4-455a-8143-7cdf98e8f8c1。回問確認：title「Eesti asi / Pro Estonia」、artist-credit「Ultima Thule」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（27d64db8… 1991/FI/Official、**Megamania MGM2026**、12\" Vinyl 10 軌）。**這是本批唯二不掛 Melodiya 的原盤之一**（另一張是 Apelsin 的芬蘭盤《Illuusio》，本批未收）。藝人 MBID a54f8952-adc3-4769-b805-0cfa48c0206e。刻意不釘：見同掛名 1988 卡的清單。",
+    "rgMbid": "cef444ac-c2c4-455a-8143-7cdf98e8f8c1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cef444ac-c2c4-455a-8143-7cdf98e8f8c1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這張在芬蘭壓片，掛的是芬蘭廠牌 Megamania。目錄號 MGM2026、12 吋十軌，發行國記的是芬蘭，盤名是愛沙尼亞語與拉丁文並列的兩截。前五軌有長度，從〈Vader Rein〉3:16 到〈Lennelda priiks〉5:18，後五軌一個時間都沒登記。末軌〈Eesti asi〉的曲名就是盤名的前半，第八軌〈Hallaöö〉用的是 1988 年那張碟上的同一段錄音。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=cef444ac-c2c4-455a-8143-7cdf98e8f8c1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=c8b8a5a3-33d4-4acf-ac77-83b992c30204&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/a54f8952-adc3-4769-b805-0cfa48c0206e?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/ws/2/release-group?artist=a54f8952-adc3-4769-b805-0cfa48c0206e&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1727874679&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/cef444ac-c2c4-455a-8143-7cdf98e8f8c1"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Uno Naissoo",
+   "album": "Mälestusi kodust",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 172eae80-ad5a-4896-b81c-6ff762f18266。回問確認：title「Mälestusi kodust」、artist-credit「Uno Naissoo」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 2 個 release（468f58f7… 1978/SU/Official、Мелодия С60 09439-40、12\" Vinyl 10 軌；7985e6ce… 1982/SU/Official《Mälestusi Kodust》再壓）。藝人 MBID 6141e9cb-7b7b-4c4c-8274-9a7ddbbe37e7（Person／EE／1928-10-24），分頁全列 **只有 1 個 RG**——這位在 MB 上僅此一張碟建檔。無對照組可寫刻意不釘。",
+    "rgMbid": "172eae80-ad5a-4896-b81c-6ff762f18266",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/172eae80-ad5a-4896-b81c-6ff762f18266/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 59,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一張碟四年後又壓了一次，那一筆連目錄號都沒有登記。1978 年那筆是 Мелодия С60 09439-40、12 吋十軌，1982 年那筆同樣是 12 吋十軌。他的生卒年記的是 1928-10-24 到 1980-01-05，第二次壓片已在他過世之後；端上他名下也只有這一個條目。串流那份補上的長度裡，與盤名同字的第五軌 6:18 是全片最長，末軌〈Kajad〉1:49 最短。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group?artist=6141e9cb-7b7b-4c4c-8274-9a7ddbbe37e7&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release?release-group=172eae80-ad5a-4896-b81c-6ff762f18266&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1827198874&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/artist/6141e9cb-7b7b-4c4c-8274-9a7ddbbe37e7?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/release-group/172eae80-ad5a-4896-b81c-6ff762f18266"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/24/fe/b324fef5-261c-a035-94e5-9f0591dd4a0b/mzaf_6361684678036663604.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1827198874",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fix",
+   "album": "Värviline maailm",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 65ece580-450b-416e-9276-363938c3b639。回問確認：title「Värviline maailm」、artist-credit「Fix」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 1 個 release（a8932272… 1979/SU/Official、Мелодия С60-11543-4、12\" Vinyl 10 軌）。藝人 MBID 85d2e6bd-6bd4-4878-a9e3-1d5ad95db40a（Group／EE／1968），分頁全列 8 個 RG。刻意不釘：1b125760-a2d2-4a1c-8f18-15204f0dc041《Fix 15》(1985，本批名額不足，可進下一批)、514a8410-a269-4920-b430-059deb06546e《Fix 20》(1989，同上)、d75d588b-ccc4-4109-aee4-566796222f05《Tsirkus maksimus: kogutud teosed, I osa》(1999 Compilation)、8e193d75-5134-48b3-9221-48024e5dc208《Kell》(2001 Compilation)、c07f9f45-164c-4348-8bc8-f1eb71c553be《Fix 40》(2008 Compilation)，後三者超出年份窗口。",
+    "rgMbid": "65ece580-450b-416e-9276-363938c3b639",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/bU9jzs9HG0djJFqZeSjW9PRCcrTmKRkfS-qxJYcspSU/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDQ3/NzkxLTE1MTU2MTYx/MTQtMzYyMy5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "10047791"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 63,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十個曲名裡有四個繞著火與光打轉。〈Tuli〉是火、〈Lõke preerias〉是草原上的篝火、〈Tähtede poole〉是朝向星辰，再加上與盤名同字、排在第三軌的〈Värviline maailm〉。盤面是 1979 年 Мелодия С60-11543-4、12 吋十軌，也是名下最早的發行品，距樂團欄位上的起始年 1968 隔了十一年。成員關係多達四十四筆，其中一位原始成員的區間分成兩段，1979 剛好落在空檔裡。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=65ece580-450b-416e-9276-363938c3b639&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=85d2e6bd-6bd4-4878-a9e3-1d5ad95db40a&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/85d2e6bd-6bd4-4878-a9e3-1d5ad95db40a?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1546696715&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/65ece580-450b-416e-9276-363938c3b639"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sven Grünberg",
+   "album": "OM",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 11a7baa1-7ca5-34f1-922c-0a6535bcf15e。回問確認：title「OM」、artist-credit「Sven Grünberg」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（cc017d5f… 1988/SU/Official、Мелодия С60-27019-2、Vinyl 4 軌；177e782b… 2000/RU/Official；d060d023… 2021/EE/Official）。藝人 MBID cb0eb8bf-f83d-4547-b047-1b0dd6a58fba（Person／EE／1956-11-24），分頁全列 8 個 RG。刻意不釘：d6869840-9457-3ea0-95db-f7ee0dc60cba《Hingus》(1981，**池中已有此卡**)、79156a8c-3b90-46d1-8d63-4175f8a19b9c《Mess》(1980，EP，且該 RG 同時掛在樂團 Mess 名下)、d521a43a-22ee-38d3-b486-6a7e3f8b38c9《Milarepa》(1993) 與 86194b42-f21d-3e49-aad6-86bdfcaba009《Prana Symphony》(1995) 與 2b072da3-9977-4658-bd4e-a26ecd5ebf00《Anima 1977-2001》(2016 Compilation)，後三者超出 1970–1991 年份窗口。",
+    "rgMbid": "11a7baa1-7ca5-34f1-922c-0a6535bcf15e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/11a7baa1-7ca5-34f1-922c-0a6535bcf15e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 120,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張只有四軌，其中三軌超過十一分鐘。1988 年原盤上，〈Peegeldused〉12:07 與〈Lahkumine〉12:08 只差一秒，收在與盤名同字的〈OM〉11:15，開場的〈Hingus (V osa)〉6:48 反而最短。第一軌的括號裡寫著第五部分，而第一到第四部分是他 1981 年那張碟的前四軌。盤面是 1988 年 Мелодия С60-27019-2，形態欄只寫黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=11a7baa1-7ca5-34f1-922c-0a6535bcf15e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1185033996&entity=song&country=ee&limit=200",
+     "https://itunes.apple.com/lookup?id=1708597817&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=cb0eb8bf-f83d-4547-b047-1b0dd6a58fba&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/11a7baa1-7ca5-34f1-922c-0a6535bcf15e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/df/a7/c8/dfa7c891-7e20-773c-ad86-a12cb0ecaa17/mzaf_310481178635787201.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1708597817",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sven Grünberg",
+   "album": "Hukkunud Alpinisti hotell",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6f5b6a66-5f16-376b-be9a-59fc7957cb66。回問確認：title「Hukkunud Alpinisti hotell」、artist-credit「Sven Grünberg」、first-release-date 2001、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（da4ff771… 2001/EE/Official、hyper.records 474-0447-80026-4、3 片 CD，軌數 26／32／28）。藝人 MBID cb0eb8bf-f83d-4547-b047-1b0dd6a58fba。刻意不釘：見同掛名《OM》卡的清單（d6869840…《Hingus》池中已有、79156a8c…《Mess》EP、d521a43a…《Milarepa》、86194b42…《Prana Symphony》、2b072da3…《Anima 1977-2001》）。",
+    "rgMbid": "6f5b6a66-5f16-376b-be9a-59fc7957cb66",
+    "exceptionReason": "2001 年 hyper.records 的三片裝，86 軌收錄 Sven Grünberg 的影視配樂，曲名括號標的年份從 1977 排到 2001；其中六軌標著 1979 年那部同名影片，合計 19 分 31 秒。這批錄音在資料庫端沒有別的成套形態，他名下也沒有任何 1979 年的 release-group。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/6f5b6a66-5f16-376b-be9a-59fc7957cb66",
+     "https://musicbrainz.org/release/da4ff771-fe13-4711-8a5d-378e70be4128"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6f5b6a66-5f16-376b-be9a-59fc7957cb66/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 456,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三片裝八十六軌裡，只有六軌標著 1979 那部片。那六軌排在第一張最前面，從〈Nimetu〉4:18 到〈Tulid?!〉4:22，合計十九分三十一秒。三張 CD 分別是 26、32、28 軌，其餘八十軌的曲名括號裡標著二十幾個別的片名與年份，從 1977 一路排到 2001。整套是 2001 年 hyper.records 的發行品，目錄號 474-0447-80026-4；他名下沒有任何 1979 年的條目。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6f5b6a66-5f16-376b-be9a-59fc7957cb66&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/da4ff771-fe13-4711-8a5d-378e70be4128?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=cb0eb8bf-f83d-4547-b047-1b0dd6a58fba&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=129143246&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/6f5b6a66-5f16-376b-be9a-59fc7957cb66",
+     "https://musicbrainz.org/release/da4ff771-fe13-4711-8a5d-378e70be4128"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tõnis Mägi & Muusik-Seif",
+   "album": "Mäe kaks nõlva",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 318abda2-d5d3-408a-a65d-6b4aae195a0c。回問確認：title「Mäe kaks nõlva」、artist-credit「Tõnis Mägi & Muusik-Seif」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 1 個 release（d2bbeaf9… 1983/SU/Official、Мелодия С60 19439 002、12\" Vinyl 10 軌）。該 RG 列在 Muusik Seif（d7ccef98-987f-4cd9-99c3-39beadde0726，Group／EE／1981）名下，該藝人分頁全列 4 個 RG。刻意不釘：2c3eaf9a-36c2-4feb-88ce-67796f31873b《Tõnis Mägi & Music Seif》(1982，primary-type EP，且掛名第三種寫法)、b1182283-b9ca-40f3-b828-7ef40c653261《Anne Veski ja ansambel «Muusik-Seif»》(1983，**本批另收一卡**)、de337f3c-d088-4342-9504-5a78efd390f9《Muusik Seif》(2009 Compilation，超出年份窗口)。",
+    "rgMbid": "318abda2-d5d3-408a-a65d-6b4aae195a0c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/OeCSSSiYb_-Ud2gYGo0j4PTm10elavcsIyrNv3Yjr0k/rs:fit/g:sm/q:90/h:400/w:401/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4Mjgw/NTgtMTI0NjExMjY0/NC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "1828058"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十軌分成三段：前四首貼著四分半，中間三首掉到兩三分鐘。第八軌〈Blues üksinduses〉4:58 又把長度拉回全片最長，最短的是排第五的〈Kuri paps〉2:09。盤面是 1983 年 Мелодия С60 19439 002、12 吋十軌，第一與第八軌的曲名直接用了 rock'n'roll 與 blues 兩個外來詞。這支樂團名下只有四個發行品，1983 一年就佔了兩個。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=318abda2-d5d3-408a-a65d-6b4aae195a0c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=d7ccef98-987f-4cd9-99c3-39beadde0726&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/a142f117-5c85-45da-90ca-ba5845f994ab?fmt=json&inc=artist-rels+annotation",
+     "https://musicbrainz.org/ws/2/release-group?artist=a142f117-5c85-45da-90ca-ba5845f994ab&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1509582606&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/318abda2-d5d3-408a-a65d-6b4aae195a0c"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zodiac",
+   "album": "Music in the Universe",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d68de909-f024-47be-a904-dd3aac320c56。回問確認：title「Музыка во Вселенной = Music in the Universe」、**artist-credit「Zodiac」**、first-release-date 1982、primary-type Album、secondary-types 空、轄下 5 個 release（8756c521… 1982/SU/Official、Мелодия С60-18365-6、12\" Vinyl 7 軌；e1408af4／5ddc06d1／d893d987 三筆 1983/SU 再壓；bbb0e482… 2021/RU/Official，title「Music in the Universe」）。**卡片盤名取 2021 再發名，第 45 條。** 藝人 MBID 505894dc-27fa-4dea-b802-963bf19c3cd6（MB 實體名「Zodiaks」），分頁全列 12 個 RG。刻意不釘：300286f7-076e-3760-bf46-58102d3556e6《Disco Alliance》(1980，**池中已有此卡**)、6f3e53c0-3ce4-4a74-9392-64ff0057ce11《Музыка из кинофильмов》(1982，secondary-types 含 Soundtrack 且全西里爾盤名)、622b593c-1b1d-475e-9491-2e6c2e536d99《Mākoņi》(1991，本批名額不足，可進下一批)、ea586041-cd0f-3c29-94df-5f3dfd9fb537《Disco Alliance / Music in Universe》(1995 Compilation，內容＝池中已有卡＋本卡，超出年份窗口)。",
+    "rgMbid": "d68de909-f024-47be-a904-dd3aac320c56",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d68de909-f024-47be-a904-dd3aac320c56/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1568,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "每一軌的軌名都是俄語與英語兩截並排。盤名本身也是同樣的寫法，俄語在等號左邊、英語在右邊。俄語那半七軌從頭到尾沒動過，英語那半在 1983 年的再壓之後整批改寫。1982 年原壓是 Мелодия С60-18365-6、12 吋七軌，四筆實體盤共用同一個編號，建檔的字串卻沒有兩筆一模一樣。七軌長度齊全，第五軌 5:17 最長、第六軌 3:47 最短，全張合計約三十一分半。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d68de909-f024-47be-a904-dd3aac320c56?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=d68de909-f024-47be-a904-dd3aac320c56&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/505894dc-27fa-4dea-b802-963bf19c3cd6?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=505894dc-27fa-4dea-b802-963bf19c3cd6&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1556224450&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/d68de909-f024-47be-a904-dd3aac320c56"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/d4/85/36/d48536d1-de89-c311-a6d0-a62464a8fa5f/mzaf_4272365541768486441.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1556224450",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zodiac",
+   "album": "In Memoriam",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 822bc2fc-49ff-3d65-9a9f-91cb2e4fe3a2。回問確認：title「In Memoriam」、**artist-credit「Zodiaks」**、first-release-date 1989、primary-type Album、secondary-types 空、轄下 6 個 release（6f986c32… 與 b8a16abb… 皆 1989/SU/Official、Мелодия С60 28301 009、Vinyl 8 軌；8ed3b998… 1996-10-21/LV/Official《Dedication》；5c633a07… 2001/DE；83f4e7a8… 2005-08/LV《Dedication》；78a98b63… 2021/RU）。藝人 MBID 505894dc-27fa-4dea-b802-963bf19c3cd6。刻意不釘：見同掛名《Music in the Universe》卡的清單（300286f7… 池中已有、6f3e53c0…、622b593c…、ea586041…）。",
+    "rgMbid": "822bc2fc-49ff-3d65-9a9f-91cb2e4fe3a2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/822bc2fc-49ff-3d65-9a9f-91cb2e4fe3a2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 598,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一個編號底下的兩筆原壓，一種盤面七軌、一種八軌。俄語那套把 9:06 的開場拆成兩軌，拆出來的兩軌都沒有登錄長度。兩筆同掛 Мелодия С60 28301 009，拉脫維亞語那套從〈In Memoriam. Kurzemē〉9:06 起頭，其餘六軌壓在 3:31 到 5:20 之間，沒有第二個長段落。1996 年的 CD 再發把整張改名《Dedication》，補進兩軌成為十軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/822bc2fc-49ff-3d65-9a9f-91cb2e4fe3a2?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=822bc2fc-49ff-3d65-9a9f-91cb2e4fe3a2&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/505894dc-27fa-4dea-b802-963bf19c3cd6?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=505894dc-27fa-4dea-b802-963bf19c3cd6&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1569073250&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/822bc2fc-49ff-3d65-9a9f-91cb2e4fe3a2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/cd/62/3bcd6212-9326-7d36-3d12-850c96fd7b3f/mzaf_14971335979541846735.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1569073250",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pērkons",
+   "album": "Dziesmu izlase #1 (1981-1982)",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cbad796b-fa51-3f77-8a68-a02deafee173。回問確認：title「Dziesmu izlase #1 (1981-1982)」、artist-credit「Pērkons」、first-release-date 1994、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（2b7456ff… 1994/LV/Official、Mikrofona ieraksti MRCD 006、CD 20 軌）。藝人 MBID 7ca8e322-7902-46ce-af39-8c9b168907b9。刻意不釘（§5.6 只挑一種）：8ef6efe5-1a19-3289-8061-b92d3c2e33d1《Dziesmu izlase #2 (1985-1987)》(1996)、0bdf9fb0-f91d-305b-a60b-09902c68400c《Dziesmu izlase #3 (1990-1991)》(2003)、9efb79d0-b778-4c6f-bd45-f002f47a391b《Zibens Pa Dibenu》(1994)、a4355d02-5693-4be2-b845-40078172503f《7-os no rīta》(2018)；另 97bd1cc5-deca-4faa-94ae-09574af2dffa《Koncerts》(1988，現場輯形態，見同掛名另一卡的說明)。",
+    "rgMbid": "cbad796b-fa51-3f77-8a68-a02deafee173",
+    "exceptionReason": "Pērkons 1981–1982 年的曲目正是導致樂團被當局禁演的那一批，當年沒有機會發成唱片；1994 年拉脫維亞獨立廠 Mikrofona ieraksti 的《Dziesmu izlase #1》把那兩年的二十軌集結出版，是這批錄音唯一成套可得的形態，也是理解拉脫維亞搖滾與審查衝突的核心文獻。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/cbad796b-fa51-3f77-8a68-a02deafee173",
+     "https://music.apple.com/lv/album/930979653"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cbad796b-fa51-3f77-8a68-a02deafee173/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 152,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十軌裡最長的一首與樂團同名，排在正中間的第十二軌。〈Pērkons〉5:51 就是那一軌，全張只有兩首超過五分鐘；最短的第十六軌〈Iedzer, brāli!〉2:22 後面還緊接著另一首勸酒歌。出版年是 1994，廠牌 Mikrofona ieraksti、編號 MRCD 006、CD 二十軌，副標括號裡的 1981-1982 只是盤名標的年份區間。同系列三集各對應一段區間，這一集是最早的那一段。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/cbad796b-fa51-3f77-8a68-a02deafee173?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=cbad796b-fa51-3f77-8a68-a02deafee173&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/7ca8e322-7902-46ce-af39-8c9b168907b9?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=7ca8e322-7902-46ce-af39-8c9b168907b9&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=930979653&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/cbad796b-fa51-3f77-8a68-a02deafee173",
+     "https://music.apple.com/lv/album/930979653"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8e/33/3b/8e333b93-586a-74ba-eb7d-60ba64eebde1/mzaf_2634487714942412867.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "930979653",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Menuets",
+   "album": "Dzeguzes balss",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cfb9d0e7-582d-4806-a885-2d66b46002cb。回問確認：title「Dzeguzes balss」、**artist-credit「Imants Kalniņš / Menuets」**（本卡取「Menuets」，見 risk 與 rulings）、first-release-date 1979、primary-type Album、secondary-types 空、轄下 3 個 release（186fc69e… 1979/SU/Official、Мелодия С60-11303-4、12\" Vinyl 8 軌；16da2f34… 1979/SU/Official；26d7f40d… 無日期）。該 RG 同時列在藝人 fdbc0ae2-d6e9-4615-9e08-07e21718b950（Menuets，Group／LV／1968-11-04，4 個 RG）與 c0c0027c-11ac-4637-9a4c-a2693ca21d5b（Imants Kalniņš，30 個 RG）名下。刻意不釘：8ce51803-e64e-3998-8030-e70896143105《In Memoriam》(1996)、d245e42d-9266-3fc3-ba19-cac452886833《Kamēr Saule vēl nenoriet》(1998)、edc6339f-4e80-3c09-8838-c7d72456d930《Cilvēks, kas smejas》(2005)，皆超出 1970–1991 年份窗口。",
+    "rgMbid": "cfb9d0e7-582d-4806-a885-2d66b46002cb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cfb9d0e7-582d-4806-a885-2d66b46002cb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 128,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "末軌 8:52 是全張最長，同名曲 2:44 反而最短。第四軌〈Septiņas skumjas zvaigznes〉6:03 把前半撐開，末軌那一段的長度是同名曲的三倍多；這組時間取自兩筆 1979 原壓裡有登長度的那一筆，另一筆八軌一格都沒填。盤面是 1979 年 Мелодия С60-11303-4、12 吋八軌。名下只有四個發行品，這一張與下一張之間隔了十七年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/cfb9d0e7-582d-4806-a885-2d66b46002cb?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=cfb9d0e7-582d-4806-a885-2d66b46002cb&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/fdbc0ae2-d6e9-4615-9e08-07e21718b950?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=fdbc0ae2-d6e9-4615-9e08-07e21718b950&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/c0c0027c-11ac-4637-9a4c-a2693ca21d5b?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://itunes.apple.com/lookup?id=1349735639&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/cfb9d0e7-582d-4806-a885-2d66b46002cb"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e9/ff/42/e9ff4222-9da6-465c-c497-5609a62fa2fe/mzaf_9130933950230010278.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1349735639",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Līvi",
+   "album": "Iedomu pilsēta",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e03f9dc3-4a76-4a00-b817-6b6640e348a4。回問確認：title「Iedomu pilsēta」、artist-credit「Līvi」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 1 個 release（0772fc33… 1986/SU/Official、Мелодия С60 23627 009、12\" Vinyl 9 軌）。藝人 MBID e695947f-ec86-4ad1-a0a7-8edceab85814（Group／LV／1976-07），分頁全列 21 個 RG。刻意不釘：08742e9c-2b70-433f-8332-18e64bff6ef0《Aprīļa pilieni》(1985，**回問 release 後確認 media 為 7\" Vinyl 4 軌，形態上不是專輯**，裁定 227)、db2c5cbf-dbd9-4c3e-80b3-80ae8eeabb14《Kurzemei - saules ceļš》(1988，12\" LP，本批名額不足、可進下一批)、19b85bec-cf62-4d32-879a-ac09a3868655《Līvi》(1988)、e7b1befb-0cc2-34d6-a670-253f3078c516《Karogi (1984-1994)》(1994 Compilation)、7a90eb85-d3ed-390e-8229-c0f1c89c6e81《Kurzemei - saules ceļš / Līvi dzīvi》與 b4d99f8f-42c7-31d2-9d97-103af34b3967《Iedomu pilsēta / Aprīļa pilieni》(皆 2006 併輯，**後者內容含本卡**)，最後三者超出年份窗口。",
+    "rgMbid": "e03f9dc3-4a76-4a00-b817-6b6640e348a4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e03f9dc3-4a76-4a00-b817-6b6640e348a4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 479,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "最長的一軌 4:34、最短的 2:51，整張長短差不到兩分鐘。最長的是〈Saldus saule〉、最短的是〈Līviskā ziņģe〉，其餘七軌全部落在這兩個數字中間，沒有一軌越過五分鐘。第四軌就是同名曲〈Iedomu pilsēta〉4:02，九軌合計約三十四分。盤面是 1986 年 Мелодия С60 23627 009、12 吋九軌，也是名下第一張十二吋九軌的全長盤。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e03f9dc3-4a76-4a00-b817-6b6640e348a4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=e03f9dc3-4a76-4a00-b817-6b6640e348a4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=08742e9c-2b70-433f-8332-18e64bff6ef0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/e695947f-ec86-4ad1-a0a7-8edceab85814?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=e695947f-ec86-4ad1-a0a7-8edceab85814&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=869564186&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/e03f9dc3-4a76-4a00-b817-6b6640e348a4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e4/50/cc/e450cc2d-d936-4807-2c5c-4e514f2c18d7/mzaf_9619224765758850437.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "869564186",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zigmars Liepiņš & Opus",
+   "album": "Pēc likuma",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2a140ff8-1247-402f-a73a-0f1dd50d6e76。回問確認：title「Pēc likuma」、artist-credit「Zigmars Liepiņš & Opus」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 1 個 release（b5ee24a6… 1988/LV/Official、Мелодия С60 27423 007、12\" Vinyl 7 軌）。藝人 MBID 6527d992-ef1d-4468-abe5-7d90587b6079（Opus，Group／LV／1982），**分頁全列只有 1 個 RG**——這個掛名在 MB 上僅此一張碟，無對照組可寫刻意不釘。",
+    "rgMbid": "2a140ff8-1247-402f-a73a-0f1dd50d6e76",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2a140ff8-1247-402f-a73a-0f1dd50d6e76/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一軌的軌名是兩個標題用一個句點串起來的。〈Vārdi. Agrā rītā〉就是這樣寫成的，第四軌〈Love Time〉則是七軌裡唯一的英語軌名，其餘五軌全是拉脫維亞語。盤面是 1988 年 Мелодия С60 27423 007、12 吋七軌，樂團那個掛名名下就只有這一張碟。成員關係的起訖年與樂團 1982 至 1989 的存續年完全重合，有五筆從頭到尾都在。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2a140ff8-1247-402f-a73a-0f1dd50d6e76?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=2a140ff8-1247-402f-a73a-0f1dd50d6e76&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/6527d992-ef1d-4468-abe5-7d90587b6079?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=6527d992-ef1d-4468-abe5-7d90587b6079&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1616105112&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/2a140ff8-1247-402f-a73a-0f1dd50d6e76"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/d5/2c/94/d52c9477-c5c1-96c2-21f9-656f94013da6/mzaf_7580314348783815623.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1616105112",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Credo",
+   "album": "Melnais kliedziens",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fa282f81-05b1-4334-a7d9-3bedacb81379。回問確認：title「Melnais kliedziens」、artist-credit「Credo」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 2 個 release（f8506903… 1986/LV/Official、Мелодия С60 24883 003、12\" Vinyl 6 軌；77452aae… 1987/SU/Official《Крик》，同批錄音的俄語盤面）。藝人 MBID d2693422-78fe-49b3-af69-676f7e567d43（Group／LV／1974-10-04），分頁全列 13 個 RG。刻意不釘：be72de50-0e51-4c81-ad3c-c2bbd225b492《Baltais ceļš》(1986，同年姊妹作，本批名額不足、可進下一批)、160a1052-5247-4050-927a-49a6639f46b8《Vējlukturis》(1982，primary-type EP)、a620a1c6-4415-3ef5-9d6b-19b832accb17《Melnais kliedziens / Austrumu motīvi》(2004 併輯，**內容含本卡**)、0f9942ad-dc96-4b93-9f0d-080a2c70cfad《Raimonda Paula 75. jubilejas koncerts》(2011，secondary-types 含 Live)，後兩者超出年份窗口。",
+    "rgMbid": "fa282f81-05b1-4334-a7d9-3bedacb81379",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa282f81-05b1-4334-a7d9-3bedacb81379/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 13,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "隔年換成俄語盤名再發一次，六軌一首一首對譯過去。兩個編號只差兩位數，24883 對 24881，發行國別則從 LV 換成 SU，俄語那版的盤名是《Крик》。兩筆的六軌都沒有登錄長度，能看的只有寫法：第一與第五軌的軌名都是兩個標題用句點串起來的。同一年名下另有一張九軌的碟，走的是另一個號段。掛名的別名欄登錄的是利耶帕亞火柴廠與一間企業的合奏團名，實體本身只給到國別與 1974-10-04 這個日期。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fa282f81-05b1-4334-a7d9-3bedacb81379?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=fa282f81-05b1-4334-a7d9-3bedacb81379&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/d2693422-78fe-49b3-af69-676f7e567d43?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release?release-group=be72de50-0e51-4c81-ad3c-c2bbd225b492&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=958785064&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/fa282f81-05b1-4334-a7d9-3bedacb81379"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7e/99/d1/7e99d113-2860-9475-94b6-fd7bdb2ef333/mzaf_17938178346261037342.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "958785064",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sīpoli",
+   "album": "Sīpoli",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6bdaf392-dc21-4fca-8795-7a357fb58f5a。回問確認：title「Sīpoli」、artist-credit「Sīpoli」、first-release-date 1987、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（4e4ca7cd… 1987/LV/Official、Мелодия С60 25559 006、12\" Vinyl 11 軌）。藝人 MBID fac651c6-d21f-439e-a91f-bb8a9cddba70（Group／LV／1975），分頁全列 3 個 RG。刻意不釘：8ecdecd4-1c91-4728-b71c-1dee0128b703《Kamēr tu šo spēli spēlē》(2010，secondary-types 含 Live)、f6537bdb-a111-401c-aa76-5ffdc3d5f441《Agrāk un tagad...》(2011 Compilation)，兩者皆超出 1970–1991 年份窗口。",
+    "selfTitledVerified": true,
+    "rgMbid": "6bdaf392-dc21-4fca-8795-7a357fb58f5a",
+    "exceptionReason": "Sīpoli 1975 年成立後在拉脫維亞演了十二年才拿到唯一一張唱片；1987 年這張同名 LP 由 Melodiya 把他們累積多年的曲目集結成盤，MB 因此標為 Compilation，但它同時就是這個樂團僅有的一張正式發行品，是拉脫維亞民謠搖滾這一路唯一可建檔的形態。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/6bdaf392-dc21-4fca-8795-7a357fb58f5a",
+     "https://music.apple.com/lv/album/1625495459"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6bdaf392-dc21-4fca-8795-7a357fb58f5a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 157,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一軌沒有一軌超過五分鐘，最短的只有 2:09。最長的〈Es nesatiku tevi〉也才 4:32，最後四軌更是沒有一軌到三分鐘，十一軌合計約三十七分。串流那份把前五軌標成同一組叫「Svīta Alberts」的組曲，五軌合起來接近全張的一半；端上十一軌卻是平的，沒有這個分組。盤面是 1987 年 Мелодия С60 25559 006、12 吋十一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6bdaf392-dc21-4fca-8795-7a357fb58f5a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=6bdaf392-dc21-4fca-8795-7a357fb58f5a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1625495459&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/artist/fac651c6-d21f-439e-a91f-bb8a9cddba70?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=fac651c6-d21f-439e-a91f-bb8a9cddba70&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/6bdaf392-dc21-4fca-8795-7a357fb58f5a",
+     "https://music.apple.com/lv/album/1625495459"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/d6/bb/79/d6bb7992-7ded-ae75-0ce8-7bb360f5f641/mzaf_15469444204487476349.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1625495459",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Imants Kalniņš",
+   "album": "4. simfonija",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9672db05-46d2-3516-803a-d180474cf325。回問確認：title「4. simfonija」、artist-credit「Imants Kalniņš」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 3 個 release（f845f967… 1974/SU/Official、Мелодия С-04503-4、12\" Vinyl 4 軌；9fd9452e… 1975/LV/Official；3e4d3be7… 1978/SU/Official）。藝人 MBID c0c0027c-11ac-4637-9a4c-a2693ca21d5b（Person／LV／1941-05-26），分頁全列 30 個 RG。刻意不釘：02f732b1-3fa9-4c85-878d-c31ed70f934a《4. simfonija》(1998) 與 94b1d785-1d98-4ed2-8c8f-84eb6033a39d《4. simfonija》(2009)（**盤名與本卡完全相同、摺鍵互撞**，且超出年份窗口）、d6e6febb-b1d7-4714-95f1-07b56c95b496《5. simfonija》(1981，本批名額不足、可進下一批)、cfb9d0e7-582d-4806-a885-2d66b46002cb《Dzeguzes balss》(1979，**本批以「Menuets」掛名另收一卡**)、bbd873b9-6a07-4fd7-a6bf-8e225145d2f0《Oktobra oratorija》(1967，早於 1970 年份窗口)、4ca6ae04-883c-4bc5-8c07-95edc79a0cf6《Pūt, vējiņi!》(1974，primary-type EP 且含 Soundtrack)。",
+    "rgMbid": "9672db05-46d2-3516-803a-d180474cf325",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9672db05-46d2-3516-803a-d180474cf325/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 228,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個樂章名就是四個速度術語，三次壓片都沒有登錄長度。四軌依序是〈Allegretto〉〈Andante tranquillo〉〈Grave molto〉〈Moderato rubato〉，三筆盤面都是十二吋、四軌、紙套，差別只在編號與國別：1974 年 SU 的 С-04503-4、1975 年 LV 在編號前多了「33」、1978 年再壓又回到原號。名下有三個標題一模一樣的獨立條目，本張的說明欄寫著「1974 version」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/9672db05-46d2-3516-803a-d180474cf325?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=9672db05-46d2-3516-803a-d180474cf325&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/c0c0027c-11ac-4637-9a4c-a2693ca21d5b?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=c0c0027c-11ac-4637-9a4c-a2693ca21d5b&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=389592790&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/9672db05-46d2-3516-803a-d180474cf325"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jumprava",
+   "album": "Pilsēta",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7fe254c8-b401-3b32-a8fa-346802d81050。回問確認：title「Pilsēta」、artist-credit「Jumprava」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（3a9d09e1… 1989/SU/Official、Мелодия С60 28945 006、Vinyl 7 軌）。藝人 MBID 0f8218b0-5c46-4c88-8505-851380b5cb7d（Group／LV／1984-04），分頁全列 18 個 RG。刻意不釘：d8aa0f39-d3c0-4c64-bf12-0f0c462b2efb《No tēvu zemes》(1985，本批名額不足、可進下一批)、f0857fa7-e368-3115-af8a-92af5f678339《Jumprava 1》與 458a3255-233e-3920-80cf-b8eed0331eb5《Jumprava 2》與 531d5584-e869-3c02-8186-24014bc241f4《Jumprava 3》與 1ae47d85-012d-3940-b657-4a531262a481《Jumprava 4》(皆 1994-12 Compilation)、5e73c810-460c-3d66-b89b-f8bee8944fe5《'84 - '87》(1995 Compilation)、89dbdc6b-eb57-3f78-b86d-b6fabceb8429《'88 - '90》(1996 Compilation)，後六者超出 1970–1991 年份窗口。",
+    "rgMbid": "7fe254c8-b401-3b32-a8fa-346802d81050",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/c6/34/64c6340e-dddf-fda3-eab2-fbfd57bbf6b1/732138592323_cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1626922379",
+    "note": "試聽探測釘定的 collectionId 1626922379（ee）：Jumprava — Pilsēta"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 281,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同名曲 7:12 是全張最長，七軌裡有四軌超過五分鐘。除了〈Pilsēta〉，〈Vēl jāgaida〉5:35、〈Šeit lejā〉5:50 與收尾的〈Vēlreiz〉5:08 也都過了五分，七軌合計約三十七分。盤面是 1989 年 Мелодия С60 28945 006，形態欄只寫「Vinyl」、沒有登錄尺寸。成員關係欄裡，三位團員的那三筆在同一天結束：1991-12-15。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/7fe254c8-b401-3b32-a8fa-346802d81050?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=7fe254c8-b401-3b32-a8fa-346802d81050&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/0f8218b0-5c46-4c88-8505-851380b5cb7d?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=0f8218b0-5c46-4c88-8505-851380b5cb7d&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1626922379&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/7fe254c8-b401-3b32-a8fa-346802d81050"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/09/f1/cc/09f1cc0d-2f07-584b-320c-ebf8fbe5446e/mzaf_10683504861230533883.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1626922379",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dzeltenie pastnieki",
+   "album": "Bolderājas dzelzceļš",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1b673be2-cd8d-3486-94f3-caf2bd92239d。回問確認：title「Bolderājas dzelzceļš」、artist-credit「Dzeltenie pastnieki」、first-release-date 1981-10、primary-type Album、secondary-types 空、轄下 2 個 release（cd93ca55… 1981-10/SU/Official、**label-info 為空、media 為 Reel-to-reel 10 軌**；b7d50307… 2003/LV/Official CD 再發）。藝人 MBID 07223b8f-fbde-4789-b32b-0f6549d6dfc7（Group／LV／1981），分頁全列 8 個 RG。刻意不釘：04064fe9-2b41-3548-b004-66fd690735bc《Alise》(1984)、1a75fef8-10b6-3626-ac8e-dc1d0db6d91f《Vienmēr klusi》(1985)、704ef4f7-fa84-3f2e-b9f4-13ab0a51e560《Depresīvā pilsēta》(1986)、05073ee0-ef4f-3349-ae0b-b730809deea8《Naktis》(1987)（四張皆在年份窗口內、本批名額不足，**整批可進下一批**）、72c3a566-4e8f-334a-964c-ade13c71de0c《Kaķis》(2003) 與 3a02a01f-1c05-466d-8c12-f8fab6eae2ef《Lentu Gabaliņi》(2017 Compilation)（超出年份窗口）。",
+    "rgMbid": "1b673be2-cd8d-3486-94f3-caf2bd92239d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1b673be2-cd8d-3486-94f3-caf2bd92239d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 480,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1981 年 10 月的首發是一捲盤帶，廠牌與編號欄都是空的。十軌全部有長度，開場〈Zaļais garais vilciens〉7:28 最長、〈Āvū āvū baltas kājas〉2:18 最短，合計約四十四分。2003 年的 CD 再發才有廠牌「Ingus Baušķenieka ieraksti」與編號 IBCD 201，那個人名正是五筆成員關係之一。末軌〈Dzeltenais viltus pastnieks〉把樂團名字改了一個字。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1b673be2-cd8d-3486-94f3-caf2bd92239d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=1b673be2-cd8d-3486-94f3-caf2bd92239d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/07223b8f-fbde-4789-b32b-0f6549d6dfc7?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=07223b8f-fbde-4789-b32b-0f6549d6dfc7&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1265330325&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/1b673be2-cd8d-3486-94f3-caf2bd92239d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dzeltenie pastnieki",
+   "album": "Man ļoti patīk jaunais vilnis",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1cc6f732-20f0-3461-be19-d06a7cea8eb9。回問確認：title「Man ļoti patīk jaunais vilnis」、artist-credit「Dzeltenie pastnieki」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 2 個 release（8842ed0e… 1982/SU/Official、**label-info 為空、media 為 Reel-to-reel 8 軌**；146c1425… 2003/LV/Official CD 再發）。藝人 MBID 07223b8f-fbde-4789-b32b-0f6549d6dfc7。刻意不釘：見同掛名《Bolderājas dzelzceļš》卡的清單（04064fe9…《Alise》、1a75fef8…《Vienmēr klusi》、704ef4f7…《Depresīvā pilsēta》、05073ee0…《Naktis》四張在窗口內可進下一批；72c3a566…、3a02a01f… 超出窗口）。",
+    "rgMbid": "1cc6f732-20f0-3461-be19-d06a7cea8eb9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1cc6f732-20f0-3461-be19-d06a7cea8eb9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 276,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這捲盤帶的八軌長度，二十一年後的 CD 版一秒不差地照抄。第四軌〈Ko labāk vēlies〉6:14 最長，末軌就是與盤名同字的〈Man ļoti patīk jaunais vilnis〉5:10，八軌合計約三十六分半。1982 年那筆的形態欄同樣寫著盤帶，廠牌與編號欄同樣是空的。2003 年那張 CD 的編號 IBCD 202，正好接在同團前一張的 IBCD 201 後面。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1cc6f732-20f0-3461-be19-d06a7cea8eb9?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=1cc6f732-20f0-3461-be19-d06a7cea8eb9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/07223b8f-fbde-4789-b32b-0f6549d6dfc7?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=07223b8f-fbde-4789-b32b-0f6549d6dfc7&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1273806575&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/1cc6f732-20f0-3461-be19-d06a7cea8eb9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Antis",
+   "album": "Kažkas atsitiko",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4422e3c0-8a79-322f-be01-996e6e32aa11。回問確認：title「Kažkas atsitiko」、artist-credit「Antis」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 3 個 release（1c228d6c… 1986/SU/Official、**label-info 為空、media 形態未標、17 軌**；c1632701… 2003-01-01/XW/Official；4693433f… 2003/LT/Official）。藝人 MBID db7bb413-9e53-40e4-8d73-3726fac48f9e（Group／LT／1984-12-31），分頁全列 16 個 RG。刻意不釘：3bb38b39-53e3-3141-b549-857b887c93a7《Antis》(1987，本批名額不足、可進下一批)、c4e0bbf4-e624-38d1-8209-f3eeded45921《Dovanėlė》(2003)、4d3ee4c2-5073-31fa-bd2c-b33c509002db《Geriausios dainos》(2006 Compilation)、c4edbd00-e082-4636-8ace-40b7741c7857《2xANTIS》(2013，secondary-types 含 Live)、2a87102c-c97c-4b91-82b3-7778edd10c9f《Antis Trakų pilyje. Atsisveikinimo koncertas (Live)》(2016)，後四者皆超出 1970–1991 年份窗口。",
+    "rgMbid": "4422e3c0-8a79-322f-be01-996e6e32aa11",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4422e3c0-8a79-322f-be01-996e6e32aa11/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1120,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1986 年那筆發行連載體都沒有登錄，只知道裡面有十七軌。廠牌、編號與形態三欄都沒有值，十七軌卻全部有長度。最短的〈Kada kada〉1:36、最長的〈Lietaus melodija〉6:04，其中八軌不到三分鐘，第十六軌的曲名〈3-10-52〉是一串數字。其中兩個曲名兩年後又出現在同團的下一張碟上。樂團的起訖記的是 1984-12-31 到 1990-11，這五年多裡名下的三筆碟連著三年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4422e3c0-8a79-322f-be01-996e6e32aa11?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4422e3c0-8a79-322f-be01-996e6e32aa11&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/db7bb413-9e53-40e4-8d73-3726fac48f9e?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=db7bb413-9e53-40e4-8d73-3726fac48f9e&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1760384569&country=lt&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/4422e3c0-8a79-322f-be01-996e6e32aa11"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/78/84/3478841c-0dcc-b3f9-15b0-1b33c1fee655/mzaf_17576713801566494947.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1760384569",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Antis",
+   "album": "Ša!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 013bf980-3682-334b-a8df-c87de4648eae。回問確認：title「Ša!」、artist-credit「Antis」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（af29018e… 1988/SU/Official、**label-info 為空、media 形態未標、12 軌**；2272e100… 2003-01-01/XW/Official；563e0d23… 2003/LT/Official）。藝人 MBID db7bb413-9e53-40e4-8d73-3726fac48f9e。刻意不釘：3bb38b39-53e3-3141-b549-857b887c93a7《Antis》(1987，本批名額不足、可進下一批；**該 RG 的盤名與掛名同字，摺鍵會是 antis|antis**)、c4e0bbf4-e624-38d1-8209-f3eeded45921《Dovanėlė》(2003)、4d3ee4c2-5073-31fa-bd2c-b33c509002db《Geriausios dainos》(2006 Compilation)、c4edbd00-e082-4636-8ace-40b7741c7857《2xANTIS》(2013，secondary-types 含 Live)、2a87102c-c97c-4b91-82b3-7778edd10c9f《Antis Trakų pilyje. Atsisveikinimo koncertas (Live)》(2016)，後四者皆超出 1970–1991 年份窗口。",
+    "rgMbid": "013bf980-3682-334b-a8df-c87de4648eae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/013bf980-3682-334b-a8df-c87de4648eae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 648,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩年前那張碟上的兩個曲名又出現在這裡，兩次都比上次長。〈Ko tu stovi?〉從 2:53 變成 2:55，〈Neplanuoti augalai〉從 2:10 變成 2:26。十二軌全部有長度，最長的〈Mafija〉7:03 擺在第九軌，最短的〈Duokit medalį〉2:14，合計約四十六分半。1988 那筆的廠牌與形態欄都是空的，這個條目底下唯一掛得出廠牌的，是 2003 年那筆數位版的「Muzikos zona」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/013bf980-3682-334b-a8df-c87de4648eae?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=013bf980-3682-334b-a8df-c87de4648eae&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=4422e3c0-8a79-322f-be01-996e6e32aa11&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=db7bb413-9e53-40e4-8d73-3726fac48f9e&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1760384937&country=lt&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/013bf980-3682-334b-a8df-c87de4648eae"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/2e/d3/262ed3ad-2501-b862-16d4-1df70aa1b467/mzaf_6191639953839029892.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1760384937",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Foje",
+   "album": "Geltoni krantai",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 805420f8-5a8e-3524-a057-0959c3591c33。回問確認：title「Geltoni krantai」、artist-credit「Foje」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（ea6a487c… 1989/SU/Official、**label-info 為空、media 為 Cassette 9 軌**）。藝人 MBID 617f85a4-ca8a-454b-8502-902744b6fdb7（Group／LT／1983），分頁全列 20 個 RG。刻意不釘：2ea2e27e-bfeb-3373-97d6-3f98b18c4362《Gali skambėti keistai》(1991，仍在年份窗口內、本批名額不足、可進下一批)、48d97724-5b61-3fda-91f4-fc2afc460443《Kitoks pasaulis》(1992，超出窗口)、346308ff-ebc2-30ec-92b4-fe0960aead8d《Tikras garsas》(1994，secondary-types 含 Live)、43d95635-afb5-36d2-9b0d-4768d1dba798《Mokykla》(1997 Compilation)、3c93b176-d168-4456-a903-5fbbc4166442《Foje》(2017 Compilation，**即 Apple 上搜到的那一筆**)。",
+    "rgMbid": "805420f8-5a8e-3524-a057-0959c3591c33",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/805420f8-5a8e-3524-a057-0959c3591c33/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 2944,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "首發的載體欄寫的是卡帶，包裝欄寫的是卡帶盒。廠牌、編號與條碼三欄全空，整張只有這一筆建檔、沒有再發，九軌卻全部有長度。第五軌〈Laužo šviesa〉8:42 最長，三軌超過七分鐘，只有開場〈Paskutinė žiema〉4:02 短於四分半，九軌合計約五十五分。這是這個掛名名下年份最早的一筆；第六軌〈Žodžiai į tylą〉的曲名，一年後成了同一團下一張碟的盤名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/805420f8-5a8e-3524-a057-0959c3591c33?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=805420f8-5a8e-3524-a057-0959c3591c33&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/617f85a4-ca8a-454b-8502-902744b6fdb7?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=617f85a4-ca8a-454b-8502-902744b6fdb7&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1300398167&country=lt&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/805420f8-5a8e-3524-a057-0959c3591c33"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Foje",
+   "album": "Žodžiai į tylą",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 05f23c5c-f857-34a3-b2c4-c717d9656c5a。回問確認：title「Žodžiai į tylą」、artist-credit「Foje」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 1 個 release（5e0a0c72… **1990/LT/Official**、label-info 為空、9 軌）。藝人 MBID 617f85a4-ca8a-454b-8502-902744b6fdb7。刻意不釘：見同掛名《Geltoni krantai》卡的清單（2ea2e27e…《Gali skambėti keistai》1991 可進下一批；48d97724…、346308ff…、43d95635…、3c93b176… 超出窗口或為 Live／Compilation）。",
+    "rgMbid": "05f23c5c-f857-34a3-b2c4-c717d9656c5a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/05f23c5c-f857-34a3-b2c4-c717d9656c5a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 230,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個曲名與前一張重複，三首變短，只有一首兩次都是 4:02。〈Žodžiai į tylą〉從 6:14 縮到 5:35，〈Kita diena〉從 6:07 縮到 5:02，〈Geltoni krantai〉從 4:59 縮到 4:50。九軌全部落在 3:03 到 5:35 之間，沒有一軌超過六分鐘，合計約四十一分半。這筆發行的國別欄記的是 LT，前一張記的是 SU，廠牌與形態欄則都是空的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/05f23c5c-f857-34a3-b2c4-c717d9656c5a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=05f23c5c-f857-34a3-b2c4-c717d9656c5a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=805420f8-5a8e-3524-a057-0959c3591c33&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=617f85a4-ca8a-454b-8502-902744b6fdb7&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1300398167&country=lt&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/05f23c5c-f857-34a3-b2c4-c717d9656c5a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bix",
+   "album": "Akli kariai",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5504d57c-c138-3728-bd6a-cc8453fff852。回問確認：title「Akli kariai」、artist-credit「Bix」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（814abf0b… 1991/LT/Official、label-info 為空、10 軌）。藝人 MBID 759f60eb-4b82-4596-8aa6-ef6b8b2c5d6a（Group／LT／1987，disambiguation「Lithuanian cult band」），分頁全列 12 個 RG。刻意不釘：2cafc636-c082-39a9-b5ea-0539293126cb《La bomba》(1992)、aee83ec9-1570-3412-b2fe-e3cf75ac9c76《Doozgle》(1993)、df9ba38d-5f76-3cf7-a8bd-72b3be65792a《Tikras garsas》(1994，secondary-types 含 Live，**與 Foje 1994 年那張同名，是不同的碟**)、bb16708c-50ed-46fb-b81c-d8947993ef44《XX》(2008 Compilation)、ba0e157c-f4fe-4c10-a027-718abedc8c14《XXX》(2017 Compilation)，皆超出 1970–1991 年份窗口。",
+    "rgMbid": "5504d57c-c138-3728-bd6a-cc8453fff852",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5504d57c-c138-3728-bd6a-cc8453fff852/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3042,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場那一軌的軌名一半是英語，括號裡一半是立陶宛語。廠牌、編號與形態三欄都是空的，十軌只留下曲名與順序，一個長度也沒有。時間只能從店面那一版取：第三軌的同名曲 6:02 最長，也是唯一超過五分鐘的一段，末軌 2:58 最短，十軌合計約四十二分。那一版把十個曲名全寫成立陶宛語與英語兩截並排，連盤名也是。實體的說明欄寫的是「Lithuanian cult band」，本張是名下年份最早的一筆。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5504d57c-c138-3728-bd6a-cc8453fff852?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5504d57c-c138-3728-bd6a-cc8453fff852&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1584131144&country=lt&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/artist/759f60eb-4b82-4596-8aa6-ef6b8b2c5d6a?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=759f60eb-4b82-4596-8aa6-ef6b8b2c5d6a&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/5504d57c-c138-3728-bd6a-cc8453fff852"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/aa/d9/8d/aad98d89-aaf4-d1e0-3c5c-5a4d1ebfb96d/mzaf_8777258708432995556.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1584131144",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Katedra",
+   "album": "Mors Ultima Ratio",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 152a84fa-1c05-31e9-8d57-188fd55e3556。回問確認：title「Mors Ultima Ratio」、artist-credit「Katedra」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 1 個 release（66694a26… 1990/SU/Official、**Мелодия С60 30149 009**、12\" Vinyl 9 軌）。藝人 MBID 108440cb-a71e-4160-b40e-984cf3e32b4e（Group／LT／1986），分頁全列 4 個 RG。刻意不釘：1f110fa5-12df-3a3c-a3dd-f8d3614999c6《Natus in Articulo Mortis》(1992)、f86ac025-af11-4911-a720-224ebd7e10aa《Death Comes》(1993)、894eeefa-890a-36e7-ac5e-e0d8685ceac9《III》(2006)，皆超出 1970–1991 年份窗口。",
+    "rgMbid": "152a84fa-1c05-31e9-8d57-188fd55e3556",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/j9OmrBSUbmYxbZYwBVl2L_zW490GKqiB8ZAdA_GF6X4/rs:fit/g:sm/q:90/h:600/w:576/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTMz/MzctMTQ1MzY1NjAx/NS04NTE1LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "1993337"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 1113,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一軌與最後一軌同名，末軌只多了一個 II。中間七軌是〈Šmėklos〉〈Requiem mamai〉〈Dvasių šėlsmas〉〈Fėja〉〈St. Vitus〉〈Pilnatis〉〈Budelis〉，除了拉丁文與那位聖人的名字之外全是立陶宛語，九軌一個長度也沒有登錄。盤面是 1990 年 Мелодия С60 30149 009、12 吋九軌，這個條目底下就這一筆，沒有再發。成員關係欄完全空白，名下只有四個發行品，本張最早。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/152a84fa-1c05-31e9-8d57-188fd55e3556?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=152a84fa-1c05-31e9-8d57-188fd55e3556&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/108440cb-a71e-4160-b40e-984cf3e32b4e?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=108440cb-a71e-4160-b40e-984cf3e32b4e&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release?release-group=c22e443a-3400-4221-9bb8-b1871793b917&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1048556842&country=lt&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/152a84fa-1c05-31e9-8d57-188fd55e3556"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Vytautas Kernagis",
+   "album": "Dainos teatras - Žvilgsnis nuo kalno",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f52726e1-9b48-4c18-b701-008dbb11af86。回問確認：title「Dainos teatras - Žvilgsnis nuo kalno」、artist-credit「Vytautas Kernagis」、first-release-date 1985-01-01、primary-type Album、secondary-types 空、轄下 1 個 release（f342866b… 1985-01-01、country 空、Official）。藝人 MBID a436e72b-7021-4c5b-8f86-db10fa17613c（Person／LT／1951-05-19），分頁全列 11 個 RG。刻意不釘（同系列，盤名前綴相同）：ecb746a9-95e2-4ab4-9322-13f173c30450《Dainos Teatras (Eik Savo Keliu...)》(1987，仍在年份窗口內、本批名額不足、可進下一批；MB release f7ae33a6… label 為 Vytauto Kernagio fondas、CD 13 軌)、45e0972d-d250-4a54-a6a0-d4fed3566d74《Dainos teatras - Abėcėlė》(1993)、f1f72bf2-42fe-39af-ac1d-d3dff4f47093《Baltojo Nieko dainelės》(2000)、89c863a2-6708-4672-a8de-4bb4cc32c5f5《Mercedes-Benz》(2002 Compilation)、05950ce6-910d-4688-8415-47095f551400《Pirmieji》(2010)，後四者超出 1970–1991 年份窗口。",
+    "rgMbid": "f52726e1-9b48-4c18-b701-008dbb11af86",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f52726e1-9b48-4c18-b701-008dbb11af86/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1293,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名的前半也是一個樂團的名字，他登錄為那個團的成員。那筆成員關係沒有起訖年份，關於這個團的內容形式，端上一個欄位都沒有。九軌全部有長度，最短的〈Kai sirpsta vyšnios Suvalkijoj〉2:30、最長的〈Jau Vasaris Baigias〉6:41，前四軌就把幅度走完一遍，合計約三十八分。這筆發行的廠牌欄與國別欄都是空的，形態欄記的是 CD、九軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f52726e1-9b48-4c18-b701-008dbb11af86?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f52726e1-9b48-4c18-b701-008dbb11af86&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/a436e72b-7021-4c5b-8f86-db10fa17613c?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=a436e72b-7021-4c5b-8f86-db10fa17613c&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1395600642&country=lt&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/f52726e1-9b48-4c18-b701-008dbb11af86"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d9/9a/2c/d99a2ced-c8c8-95be-f33d-7c7d7bf98977/mzaf_8193825278920395350.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1395600642",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Argo",
+   "album": "Discophonia",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c22e443a-3400-4221-9bb8-b1871793b917。回問確認：title「Discophonia = Дискофония」、artist-credit「Argo」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 3 個 release（a5ee373b… 1981/SU/Official、**Мелодия С 60—15173-4**、12\" Vinyl 7 軌、title「Discophonia = Дискофония」；811a9998… 1981/SU/Official、title「Discophonia」；bf9250f5… 2004/RU/Official、title「Discophonia」）。**卡片盤名取純拉丁形「Discophonia」，第 45 條。** 藝人 MBID cfd7a560-a932-4531-837e-f19ba8f2a917（Group／LT／1979），分頁全列 3 個 RG。刻意不釘：72d3fc43-82ae-458b-bfa5-845f7791eea1《Свет》(1983，全西里爾盤名)、2cda2ea4-7a2e-4334-ba8d-db95cf6750f9《Žemė L》(1986，仍在年份窗口內、本批名額不足、可進下一批；CAA 回 200、2 張圖)。",
+    "rgMbid": "c22e443a-3400-4221-9bb8-b1871793b917",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c22e443a-3400-4221-9bb8-b1871793b917/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 795,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七軌沒有曲名，登錄的軌名就是 A1 到 B3 的盤面位置。A 面四軌是 7:55、4:30、3:28、3:41，B 面三軌是 7:44、6:20、4:52，兩個接近八分鐘的長段落各擺在一面的開頭，合計約三十八分半。1981 年兩筆原壓都是 Мелодия、目錄號 С 60—15173-4、12 吋七軌。2004 年的 CD 再發把這七軌原封搬過去，另補三軌有名字的曲子，那三軌反而沒有登錄長度。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/c22e443a-3400-4221-9bb8-b1871793b917?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=c22e443a-3400-4221-9bb8-b1871793b917&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/cfd7a560-a932-4531-837e-f19ba8f2a917?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=cfd7a560-a932-4531-837e-f19ba8f2a917&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1499993113&country=lt&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/c22e443a-3400-4221-9bb8-b1871793b917"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e5/b8/17/e5b8179d-8a4c-a943-b2b5-4e511df335a2/mzaf_11462527174932825292.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1499993113",
+    "storefront": "EE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

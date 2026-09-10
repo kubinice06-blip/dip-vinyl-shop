@@ -1,0 +1,2835 @@
+{
+ "schemaVersion": 1,
+ "batch": "c116-20260910",
+ "albums": [
+  {
+   "artist": "G.I.S.M.",
+   "album": "DETESTATION",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 913ed1fd-2519-3197-8645-1409753c1a67。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「DETESTATION」、artist-credit「G.I.S.M.」、first-release-date 1983、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1983 Dogma DOG-1／JP 1992 BEAST ARTS VID 113／US 2020 Relapse RR466／XW 2020 Relapse，全數 Official）。藝人 MBID 0a44e3c3-6475-48b3-9e45-5927111c91a2（Group／Japan／1980／disambiguation「Japanese hardcore band」，裁定 179 的回問已做），以 release-group?artist=…&limit=100&offset= 分頁全列 11 個 RG。刻意不釘：4f8688f7-b72c-4cff-aee6-ecdddc2ac14e《Detestation / M.A.N.》（2013，Album+Compilation，兩張 LP 的合體再發包）、89133af0-07ca-426f-84ae-895ba051e826《Document One 1982-1984》（primary-type Other）、4ece7449-0900-34ab-8728-a2b4ea90d217《Performance of War》（Album+Compilation）、e632488f-3c8c-3b48-8d7c-b851abdd2129《Anarchy Violence》（EP）、f419dd94-9141-43e1-8b21-72117e1f626b《+R, Regicide Reverberation》與 ad5601c5-9599-4815-bf0b-67e77d9ea95b《Rituals for the Blind Dead》（Live）。",
+    "rgMbid": "913ed1fd-2519-3197-8645-1409753c1a67",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/913ed1fd-2519-3197-8645-1409753c1a67/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 28374,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻）；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "首版壓成八軌，三十七年後的再發變成十一軌，多出的三首標著 Bonus Track。首版是 1983 年 Dogma Records 的十二吋、編號 DOG-1，同廠的第二號給了同批的 The Comes，八軌收在一分十五秒的〈Anthem〉，其中五軌不到兩分鐘。後來那次再發把軌數補到十一，補上的三軌正是標著 Bonus Track 的那三首，倒數第二軌也是全碟僅有的漢字題。發行方 Dogma Records 是一本音樂雜誌所設的 hardcore 專門廠牌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/913ed1fd-2519-3197-8645-1409753c1a67?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=913ed1fd-2519-3197-8645-1409753c1a67&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1532490336&country=us&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=22575240&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=0a44e3c3-6475-48b3-9e45-5927111c91a2&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/G.I.S.M.",
+     "https://en.wikipedia.org/wiki/G.I.S.M.",
+     "https://musicbrainz.org/release-group/913ed1fd-2519-3197-8645-1409753c1a67"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a6/ce/52/a6ce5230-3330-5f3e-d02c-0cff8d28349a/mzaf_16316321915008427455.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1532490336",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "G.I.S.M.",
+   "album": "Military Affairs Neurotic",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7aecc6da-e9bc-3c2f-bf68-d5263cb7a535。回問確認：title「Military Affairs Neurotic」、artist-credit「G.I.S.M.」、first-release-date 1987-05-15、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1987 BEAST ARTS／JP 2007 DIG WORKER Bootleg／US 2023 Relapse RR7517／XW 2023 Relapse）。藝人 MBID 0a44e3c3-6475-48b3-9e45-5927111c91a2，名下 11 個 RG。刻意不釘：913ed1fd-2519-3197-8645-1409753c1a67《DETESTATION》（本批另收，不重複釘）、c1020a29-9454-4edc-902a-bc1c54252406《NIH Nightmare》（1995）、57ad952b-cadf-31de-b987-0dc5554a6b8a《SoniCRIME TheRapy》（1998）、4f8688f7-b72c-4cff-aee6-ecdddc2ac14e《Detestation / M.A.N.》（Album+Compilation，與本張曲目重疊）。",
+    "rgMbid": "7aecc6da-e9bc-3c2f-bf68-d5263cb7a535",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7aecc6da-e9bc-3c2f-bf68-d5263cb7a535/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 699,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三首同題的〈MEANING CORRUPTED〉，用三個副題分開排在第五、七、八軌。八軌裡有五軌超過五分鐘，最長〈ANATOMY LOVE VIOLENCE GISM〉六分二十八秒、最短三分十六秒，與前作那種一分多鐘的短打完全相反。三首同題曲各帶一個副題，標題曲四分零三秒剛好夾在第五與第七軌中間、當第六軌。1987 年 5 月改由樂團自己的 BEAST ARTS 發行，初壓附一張海報。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/7aecc6da-e9bc-3c2f-bf68-d5263cb7a535?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=7aecc6da-e9bc-3c2f-bf68-d5263cb7a535&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1656815632&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=0a44e3c3-6475-48b3-9e45-5927111c91a2&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/G.I.S.M.",
+     "https://en.wikipedia.org/wiki/G.I.S.M.",
+     "https://musicbrainz.org/release-group/7aecc6da-e9bc-3c2f-bf68-d5263cb7a535"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/b5/9d/51/b59d5172-9667-01d3-dd64-d32b9537774b/mzaf_17382504960883356495.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1656815632",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gauze",
+   "album": "EQUALIZING DISTORT",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fd66c5e6-78de-4035-91e3-1b251a044add。回問確認：title「EQUALIZING DISTORT」、artist-credit「Gauze」、first-release-date 1990-06-15、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1990 BELCD-12002 Official／JP 1997 XXX-9 Official／一筆無日期無國別）。藝人 MBID 3e1caa06-ee31-4a5c-b28f-774232d79340（Group／Japan；裁定 179 的 area／type 回問已做），名下 7 個 RG 全列。刻意不釘：2f67baf0-fd42-32a5-be2b-9adb6fd19935《FUCK HEADS》（1984，池中已有）、b34e8ce9-2a40-45b3-9bb2-f536da32376d《Gauze》（EP，非白名單曲風不可收）、f59eeaa9-a096-4a8c-808b-4dab83cb87ea《面を洗って出直して来い》（1997，本批另收其前一張，避免同一藝人一次塞四張）、cf90a79c-d446-4c8a-bfa5-b6453144e58e《貧乏ゆすりのリズムに乗って》（2007）、efe0bf47-0a9f-4bdf-bc26-4ecb2190e215《言いたかねえけど目糞鼻糞》（2021）。",
+    "rgMbid": "fd66c5e6-78de-4035-91e3-1b251a044add",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fd66c5e6-78de-4035-91e3-1b251a044add/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 5492,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首歌不到十八分鐘，九首不滿兩分半，收尾〈言いなり〉放到四分半。十軌的曲名一律以片假名登錄，連英文原題也照音譯寫成〈プレッシング・オン〉〈ファクト・アンド・クリミナル〉，最短的〈パッパッパ〉只有一分零五秒。樂團自述的做法是製造快的印象、而不真的那麼快。1986 年 3 月由 Selfish Records 發行，這家廠牌自這張起才建立起代表日本 hardcore 的名聲；這是他們六張正式專輯裡的第二張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fd66c5e6-78de-4035-91e3-1b251a044add?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=fd66c5e6-78de-4035-91e3-1b251a044add&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=3e1caa06-ee31-4a5c-b28f-774232d79340&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/GAUZE%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Gauze%20(band)",
+     "https://itunes.apple.com/search?term=Gauze&country=us&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/fd66c5e6-78de-4035-91e3-1b251a044add"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gauze",
+   "album": "限界は何処だ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 24cb6c0f-7ac9-4c41-82de-253646fb8d89。回問確認：title「限界は何処だ」、artist-credit「Gauze」、first-release-date 1990-10-05、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1990 Selfish BELCD-12040、JP 1997 XXX Records XXX-10，各有 Official 與 null 兩筆並存）。藝人 MBID 3e1caa06-ee31-4a5c-b28f-774232d79340，名下 7 個 RG。刻意不釘：2f67baf0-fd42-32a5-be2b-9adb6fd19935《FUCK HEADS》（池中已有）、b34e8ce9-2a40-45b3-9bb2-f536da32376d《Gauze》（EP）、f59eeaa9-a096-4a8c-808b-4dab83cb87ea《面を洗って出直して来い》、cf90a79c-d446-4c8a-bfa5-b6453144e58e《貧乏ゆすりのリズムに乗って》、efe0bf47-0a9f-4bdf-bc26-4ecb2190e215《言いたかねえけど目糞鼻糞》。",
+    "rgMbid": "24cb6c0f-7ac9-4c41-82de-253646fb8d89",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/24cb6c0f-7ac9-4c41-82de-253646fb8d89/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 835,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "後半整段是 1989 年 8 月蘇格蘭的現場，黑膠上就是整個 B 面。前半錄音室那十首裡有三首在後半的現場又演了一次，〈死人に口無し〉與〈一触即発〉都在其中；現場那半七首連成一段、十一分五十四秒，來自那年與英國的 Chaos UK 同行的歐洲巡演。錄音是 1989 年，發行則要到隔年——1990 年 10 月由 Selfish Records 出，編號 BELCD-12040，這是他們六張正式專輯裡的第三張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/24cb6c0f-7ac9-4c41-82de-253646fb8d89?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=24cb6c0f-7ac9-4c41-82de-253646fb8d89&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/GAUZE%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Gauze%20(band)",
+     "https://musicbrainz.org/ws/2/release-group?artist=3e1caa06-ee31-4a5c-b28f-774232d79340&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/search?term=Gauze&country=jp&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/24cb6c0f-7ac9-4c41-82de-253646fb8d89"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "DEATH SIDE",
+   "album": "Wasted Dream",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d533c1f7-2097-3026-a3e1-fcfac9ca71e4。回問確認：title「Wasted Dream」、artist-credit「Death Side」（MB 內部大小寫分裂，見 risk）、first-release-date 1989、primary-type Album、secondary-types 空、轄下 3 個 release。藝人 MBID b5b08922-a896-4c18-9c8a-5ccda79dfe03（Group／Japan／1983），名下 9 個 RG 全列。刻意不釘：64c07d9b-292e-49bf-9cd7-3ddce7cc8c7e《Satisfy the Instinct》、79996b6d-51ac-4d7b-8331-5f25b29a9009《The Will Never Die》與 ab78caef-1d91-41c3-912c-902c3035d340《All Is Here Now》、80316310-99dc-4d07-aee4-e9eb13bc5d39《Unreleased Tracks & Video Archives》（皆 EP，hardcore 不在 §5.5 白名單）、9b2eb240-cc5c-3c9f-843a-e29ce6fb9fe4《The Will Never Die》（1999，Album+Compilation，與 EP 同名的雙胞胎）、50d52e72-5d10-4eea-9c64-7d8e2c5cd756《1987-1994 Discography》（primary-type Other）、5fcba3e5-a88e-4388-ba11-80c62c061f0d《Death Side / Chaos UK》（split）。",
+    "rgMbid": "d533c1f7-2097-3026-a3e1-fcfac9ca71e4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d533c1f7-2097-3026-a3e1-fcfac9ca71e4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 7280,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八軌沒有一首滿四分鐘，開場那首直接題作〈Deathside〉。最短的〈Cut the Throat〉一分二十七秒、最長〈The Lowest〉三分四十七秒，總長約四十分鐘，標題曲〈Wasted Dream〉擺在正中間第十一軌。1989 年由 Selfish Records 發行，編號 BEL-12036，是 DEATH SIDE 目錄上最早的一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d533c1f7-2097-3026-a3e1-fcfac9ca71e4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=d533c1f7-2097-3026-a3e1-fcfac9ca71e4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=b5b08922-a896-4c18-9c8a-5ccda79dfe03&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/b5b08922-a896-4c18-9c8a-5ccda79dfe03?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/lookup?id=937398536&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/d533c1f7-2097-3026-a3e1-fcfac9ca71e4"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "DEATH SIDE",
+   "album": "BET ON THE POSSIBILITY",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c0a784a1-cece-4d38-bf47-06c58799fc03。回問確認：title「BET ON THE POSSIBILITY」、artist-credit「DEATH SIDE」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1991 Selfish BELCD-12046 Official＋2 筆 Pseudo-Release）。藝人 MBID b5b08922-a896-4c18-9c8a-5ccda79dfe03，名下 9 個 RG。刻意不釘：d533c1f7-2097-3026-a3e1-fcfac9ca71e4《Wasted Dream》（本批另收）、9b2eb240-cc5c-3c9f-843a-e29ce6fb9fe4《The Will Never Die》（Album+Compilation，與 79996b6d 的同名 EP 是雙胞胎）、5fcba3e5-a88e-4388-ba11-80c62c061f0d《Death Side / Chaos UK》（split）、50d52e72-5d10-4eea-9c64-7d8e2c5cd756《1987-1994 Discography》（Other）。",
+    "rgMbid": "c0a784a1-cece-4d38-bf47-06c58799fc03",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c0a784a1-cece-4d38-bf47-06c58799fc03/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 8636,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場先放一段三分半的引子，收尾〈CROSSFIRE〉拉到七分二十九秒。中間那十三軌落在五十六秒到三分三十九秒之間，最短的一首題作〈THE SIGHT MADE OUR HAIR STAND ON END〉，全碟因此頭尾各壓著一個長段、中間夾十三首兩三分鐘的曲子。1991 年由 Selfish Records 發行，編號 BELCD-12046。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/c0a784a1-cece-4d38-bf47-06c58799fc03?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=c0a784a1-cece-4d38-bf47-06c58799fc03&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=b5b08922-a896-4c18-9c8a-5ccda79dfe03&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/b5b08922-a896-4c18-9c8a-5ccda79dfe03?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/lookup?id=937398536&country=jp&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/c0a784a1-cece-4d38-bf47-06c58799fc03"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Comes",
+   "album": "No Side",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 78051094-058b-4fae-98ba-8047ad279127。回問確認：title「No Side」、artist-credit「The Comes」、first-release-date 1983-11、primary-type Album、secondary-types 空、轄下 5 個 release（JP 1983 Dogma DOG 2 Official／JP 1983 Pseudo-Release／JP 2008 No Side Records NSCD-001／GB 2019 La vida es un mus MUS200／XW 2019 Official）。藝人 MBID 3609887c-58ad-4db7-9ae4-cf1271c4e9a7（Group／Tokyo／「Japanese Hardcore」），名下 5 個 RG 全列。刻意不釘：d1d8c74b-c01f-42b6-8b57-1acc8f15408b《Power Never Die》（本批另收）、082c26fe-c57a-4ba8-8aec-051c694ac98b《Live 1982-1984》、f849d86e-e466-4198-8dc4-a79873a2f8a6《Live 1985-1986》與 fcab1adf-5923-473a-bf9b-5136d72cdefe《Live1985-1986》（三張皆 Album+Compilation+Live，且後兩者是同一張碟寫法不同的雙胞胎，裁定 126）。",
+    "rgMbid": "78051094-058b-4fae-98ba-8047ad279127",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/78051094-058b-4fae-98ba-8047ad279127/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7976,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一首歌十八分半，最短的〈Case〉只有四十六秒。曲序把英文題與日文題交錯排開，〈Public Cicle〉〈Wa-Ka-Me〉之後接上〈さらけだせ〉〈究極〉〈バカコケ〉〈人間狩り〉四首連著的日文題。主唱是女聲，當年的東京場景把這支團與 GAUZE、G.I.S.M.、THE EXECUTE 並稱。1983 年 11 月由 Dogma Records 發行，編號 DOG 2，同廠的第一號正是同批的 G.I.S.M.；隔年吉他手與貝斯手退團組了 Lip Cream。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/78051094-058b-4fae-98ba-8047ad279127?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=78051094-058b-4fae-98ba-8047ad279127&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1475643012&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=399557174&country=us&entity=album&limit=200",
+     "https://ja.wikipedia.org/wiki/THE%20COMES",
+     "https://en.wikipedia.org/wiki/The%20Comes",
+     "https://musicbrainz.org/release-group/78051094-058b-4fae-98ba-8047ad279127"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/11/50/d5/1150d55e-4f3d-9e39-c76b-fad3e9215a64/mzaf_8346402421718583754.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1475643012",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Comes",
+   "album": "Power Never Die",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d1d8c74b-c01f-42b6-8b57-1acc8f15408b。回問確認：title「Power Never Die」、artist-credit「The Comes」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Captain Records CAP-0033-M）。藝人 MBID 3609887c-58ad-4db7-9ae4-cf1271c4e9a7，名下 5 個 RG。刻意不釘：78051094-058b-4fae-98ba-8047ad279127《No Side》（本批另收）、082c26fe-c57a-4ba8-8aec-051c694ac98b《Live 1982-1984》、f849d86e-e466-4198-8dc4-a79873a2f8a6 與 fcab1adf-5923-473a-bf9b-5136d72cdefe《Live 1985-1986》（同一張的兩筆重複建檔）。",
+    "rgMbid": "d1d8c74b-c01f-42b6-8b57-1acc8f15408b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d1d8c74b-c01f-42b6-8b57-1acc8f15408b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 530,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二張只剩六首歌二十分鐘，收尾那首拉到五分十四秒。六軌全部超過兩分鐘，前一張則是十一軌、沒有一首滿兩分半。編制已經是換血後的第二期，原始成員只剩主唱與鼓手，吉他與貝斯都換了新人。1986 年 3 月由一家雜誌所設的 Captain Records 發行，三、四個月後鼓手退團，樂團就收了。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d1d8c74b-c01f-42b6-8b57-1acc8f15408b?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=d1d8c74b-c01f-42b6-8b57-1acc8f15408b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=3609887c-58ad-4db7-9ae4-cf1271c4e9a7&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/THE%20COMES",
+     "https://itunes.apple.com/lookup?id=399557174&country=jp&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/d1d8c74b-c01f-42b6-8b57-1acc8f15408b"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Confuse",
+   "album": "Indignation",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9542baa9-9056-4802-abf1-790c11b16eaf。回問確認：title「Indignation」、artist-credit「Confuse」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1984 Violent Party Official／JP 1997 Anarchy Centre Chaotic CD:008 Official／JP 1997 CHAOTIC:LP-008 Official）。藝人 MBID 7349f02d-3be4-435b-af69-55742979ca67（Group／Japan／1983／「Japanese punk」），名下 9 個 RG 全列。刻意不釘：8ced00a9-0fce-4327-885b-57e0282c52a4《Old Master》（1989，Album+Compilation）、84c5fa3d-2d1c-3f0d-83e4-0b435b9704cb《Confuse》（1995，Album+Compilation，同名整編輯）、18a7d2f4-582d-407e-b60b-a969349b6ae8《Old God Meet New God》（無日期，Album+Compilation）、a8416bf6-360f-4c5e-a222-0f7bf3bc79b1《Nuclear Addicts E.P》、056cd9f7-d56d-45a4-b233-506bd62f0343《Contempt for the Authority》、f6c9c156-306f-330a-9afb-29c778e21ee6《Spending Loud Night》、f0761875-03bb-4ef1-8308-e7ebcf89c8c1《Atrocious Madness》、c9ab7655-d177-40fd-8515-10212d977eb2《Stupid Life》（五筆皆 EP）。",
+    "rgMbid": "9542baa9-9056-4802-abf1-790c11b16eaf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9542baa9-9056-4802-abf1-790c11b16eaf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1109,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1984 年的原盤是一捲卡帶，編號欄空著。十三軌裡第二軌以團名〈Confuse〉為題、第八軌才是標題曲〈Indignation〉，第六軌的曲名到現在只寫成〈Kill the ...〉，後面就是刪節號。要到十三年後，才由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/9542baa9-9056-4802-abf1-790c11b16eaf?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=9542baa9-9056-4802-abf1-790c11b16eaf&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=7349f02d-3be4-435b-af69-55742979ca67&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/7349f02d-3be4-435b-af69-55742979ca67?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/search?term=Confuse%20Indignation&country=us&media=music&entity=album&limit=10",
+     "https://musicbrainz.org/release-group/9542baa9-9056-4802-abf1-790c11b16eaf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gai",
+   "album": "1981-1985",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 322bdced-afe2-4f0f-aa04-3f16d08fba40。回問確認：title「1981-1985」、artist-credit「Gai」、first-release-date 1985、primary-type Album、secondary-types [\"Compilation\"]（依裁定 167 照一般 Album 寫）、轄下 1 個 release（JP 1985 Violent Party Records，Official）。藝人 MBID b9298324-d193-4921-9265-9847e18faf4c（Group／Japan／「Japanese punk band」），名下 5 個 RG 全列。刻意不釘：8673de34-1494-366d-b1a4-229e3add6355《Extermination》（EP）、ea3490eb-12fd-4d5f-8efb-2aa79538839c《Damaging Noise》（1996）、d1bcc9b1-5cff-46b4-9caa-bf4020ffb40b《Damnation》（1997）、ff8353bb-6cf4-4c09-8a16-b36e897fb47e《Total Control》（1997）——後三張都是九〇年代重編的同一批錄音，與本張重疊。",
+    "rgMbid": "322bdced-afe2-4f0f-aa04-3f16d08fba40",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/322bdced-afe2-4f0f-aa04-3f16d08fba40/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 33,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八軌裡有四軌到現在還沒有曲名。其餘十四軌以英文題為主，只有開場兩首是日文題〈戦争を知らない子どもたち〉〈地獄に堕ちた天使の金玉〉，收尾〈Yes!! Future〉與第七軌〈Future〉同源。盤名寫的是 1981 到 1985 年的收錄範圍，1985 年的發行形態則是一捲卡帶，出在 Violent Party Records。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/322bdced-afe2-4f0f-aa04-3f16d08fba40?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=322bdced-afe2-4f0f-aa04-3f16d08fba40&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=b9298324-d193-4921-9265-9847e18faf4c&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/b9298324-d193-4921-9265-9847e18faf4c?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/search?term=Gai&country=gb&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/322bdced-afe2-4f0f-aa04-3f16d08fba40"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Swankys",
+   "album": "The Very Best Of Hero",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5a7d13e1-4334-4f8e-8f4d-44b5053d18d8。回問確認：title「The Very Best Of Hero」、artist-credit「The Swankys」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1985 Dogma DOG-10 Official／US 2024 General Speech GS-28＋Kings World KWLP-6000，status null）。藝人 MBID d926690c-5e10-4195-8658-3bc9ecfd734d（Group／Japan），名下 9 個 RG 全列。刻意不釘：35900f09-5fc4-332a-91e6-39f6ab7bbc70《Never Can Eat Swank Dinner》（1987，同樣是 Album，本批只取一張以免單一藝人塞滿）、c0da59e8-82bf-3ffe-be40-981b293635d1《Tokyo》（1990）、2f6b9fab-9073-4181-9531-5b23cfcd866f《Period The Noise Tour 1985 Lives》（1997）、baba5b44-4882-4f8d-b508-4109c394e830《Best Of Life Style!》（primary-type 空＋Compilation）、251ec62f-dee3-4536-8804-b33629da0deb《Original Swankys》與 86c864a2-dbef-4425-8878-6c9439ad3c66《Never Hero》（primary-type 空）、be5e5b46-462b-4149-83b7-5262cd5dbaef《This Is My Lifestyle!》（EP）。",
+    "rgMbid": "5a7d13e1-4334-4f8e-8f4d-44b5053d18d8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5a7d13e1-4334-4f8e-8f4d-44b5053d18d8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 487,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名寫著 The Very Best Of，位置卻排在這支團的最前面。十四軌約二十九分鐘，十三首正歌落在一分三十七秒到三分十五秒之間，最長的是〈I Don’t Know I Don’t Care〉，收尾第十四軌只有四十一秒、而且沒有標題。1985 年由 Dogma Records 發行，編號 DOG-10；2024 年在美國重壓過一次。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5a7d13e1-4334-4f8e-8f4d-44b5053d18d8?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5a7d13e1-4334-4f8e-8f4d-44b5053d18d8&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1881488075&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1880513820&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=d926690c-5e10-4195-8658-3bc9ecfd734d&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/5a7d13e1-4334-4f8e-8f4d-44b5053d18d8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/27/99/d92799c8-7d79-09f4-fa85-d3b2bdce5453/mzaf_9978040705436811510.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1881488075",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "あぶらだこ",
+   "album": "あぶらだこ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5b52575e-131a-369a-ac7e-25cad0dbe819。回問確認：title「あぶらだこ」、artist-credit「あぶらだこ」、first-release-date 1984-09、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，ADK Records ADK-17A）。藝人 MBID b0262450-a2c3-4519-a6e0-07fa2b7b7144（Group／Japan／1983），以 release-group?artist=…&limit=100&offset= 分頁全列 13 個 RG。刻意不釘（同名 Album 八張，全部與本張撞鍵）：1957121d-9251-3726-a4aa-6d9de7b6148c（1985-08）、884bd589-696e-3040-a8e6-b8f1b86836c7（1986-12）、1487b682-58c7-32c7-a9a4-b5eefcdece55（1989-04-10）、f5c8e272-d488-393a-833f-c869f88a4991（1996-01-01）、6a2e9ec2-0584-3cd0-963b-3003768a4a0e（1999-12-01）、60dbbcc5-dea5-34c2-a1ec-09afab3fcf88（2000-10-25）、6e7837a3-0805-3e23-8c81-7617bcf1afdb（2004-05-04）、6438e6c6-3899-41eb-b8f0-330483893aa8（2008-06-06）；另 adf6ad1e-4092-4304-82eb-1257f4f38a59《ADK Years 1983-1985》（Album+Compilation）、9aa497db-749d-3935-b308-00367f4f6933 與 cb6c76d3-906a-4f6b-bc17-1a493b85fdbd（EP）、c679b971-a26b-344d-acf3-13bb3a6797a0《翌日》（Single）。",
+    "selfTitledVerified": true,
+    "rgMbid": "5b52575e-131a-369a-ac7e-25cad0dbe819",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5b52575e-131a-369a-ac7e-25cad0dbe819/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1230,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九張正規盤全叫同一個名字，這張是 1984 年 9 月的十二吋。六軌約十七分鐘，頭尾的〈WHITE WOLF〉三分零八秒與〈OUT OF THE BODY〉四分零六秒是全碟最長的兩首，也是僅有的兩個大寫英文題，中間〈煉瓦造りの丘〉〈童愚〉〈鏡の風景〉三首則全是漢字題。唱腔怪異、歌詞近似現代詩，合奏跟著歌詞的自由節奏走，在很短的段落裡塞進大量變拍。發行方是 ADK Records、編號 ADK-17A，這是他們的第一張十二吋。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5b52575e-131a-369a-ac7e-25cad0dbe819?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5b52575e-131a-369a-ac7e-25cad0dbe819&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=b0262450-a2c3-4519-a6e0-07fa2b7b7144&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%B6%E3%82%89%E3%81%A0%E3%81%93",
+     "https://en.wikipedia.org/wiki/Aburadako",
+     "https://itunes.apple.com/lookup?id=1007931802&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/5b52575e-131a-369a-ac7e-25cad0dbe819"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lip Cream",
+   "album": "9 Shocks Terror",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4b12f5f8-eec7-34c6-bbe3-c1d038655260。回問確認：title「9 Shocks Terror」、artist-credit「Lip Cream」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1987 Selfish BEL-12013＋Dynamite Dondon-005 Official／1996 無國別 Official／US 2025 Relapse RR7611＋Dynamite DONDON-002）。藝人 MBID 14bef585-e0ed-49e7-903a-b4349f1b08ee，名下 12 個 RG 全列。刻意不釘：55ddde5a-a73f-38c8-a5ec-cee2cd3c04c8《Kill Ugly Pop》（1986，池中已有）、79bd7d43-169d-315e-9ff4-4e970c5f2593《Close to the Edge 危機》（本批另收）、3bcf8082-fd24-4568-9818-1690a4be0cb6《Lip Cream》（1989，同名專輯）、5b21876a-3c2e-4630-8bc1-868ab5ac3c9a《Kill the IBM》（Album+Demo）、efdb6eae-9b93-4dfc-809c-65c6a56cb9c7《Shocking Disc Terror》（Album+Compilation，盤名與本張近似，最容易誤釘）、c6389b48-ac91-49d2-83bf-c414ae588ea7《Kill The I.B.M.》（primary-type 空＋Compilation）、9f3f866c-5896-474f-9bdd-4ff7a66cd9c8《スラッシュ・ティル・デス》與 b15392a6-f76b-40fc-8e6c-d496837954f6《Lip Cream's Thrash Til Death》（同一批錄音的兩種寫法）、08aff3a4／99e4a297／b77fab11（三筆 EP）。",
+    "rgMbid": "4b12f5f8-eec7-34c6-bbe3-c1d038655260",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4b12f5f8-eec7-34c6-bbe3-c1d038655260/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2780,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九首歌十四分鐘，最長那首也只有一分五十九秒。最短的〈Enough Time〉一分十五秒，九首之間只差四十四秒，長度平得像一份規格表，曲名也全是英文。這支團受美國 hardcore 與 1970 年代 punk、hard rock 的影響較大，在當時多半跟著英國 hardcore 走的日本場景裡是個異數。1987 年的黑膠同時掛兩個編號：Selfish Records 的 BEL-12013 與 Dynamite Records 的 Dondon-005。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4b12f5f8-eec7-34c6-bbe3-c1d038655260?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4b12f5f8-eec7-34c6-bbe3-c1d038655260&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1846922930&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1848182460&country=jp&entity=album&limit=200",
+     "https://ja.wikipedia.org/wiki/Lip%20Cream",
+     "https://musicbrainz.org/ws/2/release-group?artist=14bef585-e0ed-49e7-903a-b4349f1b08ee&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/4b12f5f8-eec7-34c6-bbe3-c1d038655260"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/18/ce/b318ce80-df9b-aa35-2169-56678725db5a/mzaf_10584386772409253249.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1846922930",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lip Cream",
+   "album": "Close to the Edge 危機",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 79bd7d43-169d-315e-9ff4-4e970c5f2593。回問確認：title「Close to the Edge 危機」、artist-credit「Lip Cream」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（JP 2010 ONI-5 Official／1988 無國別 Official／1988 無國別 Pseudo-Release）。藝人 MBID 14bef585-e0ed-49e7-903a-b4349f1b08ee，名下 12 個 RG。刻意不釘：55ddde5a-a73f-38c8-a5ec-cee2cd3c04c8《Kill Ugly Pop》（池中已有）、4b12f5f8-eec7-34c6-bbe3-c1d038655260《9 Shocks Terror》（本批另收）、3bcf8082-fd24-4568-9818-1690a4be0cb6《Lip Cream》（1989 同名專輯）、efdb6eae-9b93-4dfc-809c-65c6a56cb9c7《Shocking Disc Terror》（Album+Compilation）、5b21876a-3c2e-4630-8bc1-868ab5ac3c9a《Kill the IBM》（Album+Demo）。",
+    "rgMbid": "79bd7d43-169d-315e-9ff4-4e970c5f2593",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/79bd7d43-169d-315e-9ff4-4e970c5f2593/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 194,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八首歌，漢字題與大寫英文題一路交錯，開場那首就叫〈危機〉。十八軌裡日文題十一首、英文題七首，總長約三十四分鐘，最長〈邪悪〉兩分五十秒、最短〈RIGHT STUFF〉一分二十五秒，末段收在〈END OF YOU〉。比起前一年那張九軌十四分鐘的碟，這張整整長了一倍，單曲長度也普遍拉開。這是他們的第三張，1988 年出，不過查得到的最早實體要到 2010 年那次再發的 CD，編號 ONI-5。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/79bd7d43-169d-315e-9ff4-4e970c5f2593?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=79bd7d43-169d-315e-9ff4-4e970c5f2593&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1846930003&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=14bef585-e0ed-49e7-903a-b4349f1b08ee&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/Lip%20Cream",
+     "https://itunes.apple.com/lookup?id=1848182460&country=jp&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/79bd7d43-169d-315e-9ff4-4e970c5f2593"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/dd/27/5cdd2797-7e5f-ce91-ab4d-f4735fa855d5/mzaf_7979878403696430008.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1846930003",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ザ・スターリン",
+   "album": "Fish Inn",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 38234e5a-4efc-31d9-854a-f74e9e116b04。回問確認：title「Fish Inn」、artist-credit「ザ・スターリン」、first-release-date 1984-11-20、primary-type Album、secondary-types 空、轄下 3 個 release。藝人 MBID acf084a3-c550-45fa-8272-869e1fecbdad，名下 31 個 RG。刻意不釘：bd15cc00-6e85-496b-84e7-f47c4e83287c《Fish Inn (re-mix)》（2015 重混，與本張同名只差後綴）、63d6547a-7ff9-351a-9c4e-07e1cf21a04d《trash》與 0b68f4c8-c6ba-4170-b701-c0294fd180bb《STOP JAP》（池中已有）、bf99d287-7f53-439f-9f04-29fd9cdd1049《虫》（1983；本批原本要收，主線 chk-prop 抓到與 c-94 已上架的同一張碟重複，已撤下）、08529fb7-dc33-42da-a6dc-b645615e2a1e《フォー・ネヴァー》與 9c62c4fb-a9d0-4173-ad27-a16209f37582《For Never》與 92521b4b-0e41-3ee1-8cdd-c0daaa1c64e4《For Never (live)》（同一批現場錄音的三種寫法）、100a37e8-f957-44e0-8f79-3ebd012622d9《-1(MINUS ONE)》、80041723-508c-4660-af46-0ea623526249《JOY》。",
+    "rgMbid": "38234e5a-4efc-31d9-854a-f74e9e116b04",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/38234e5a-4efc-31d9-854a-f74e9e116b04/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 33,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首歌三十五分鐘，收尾的〈Fish Inn〉一首就佔十分零九秒。六軌裡有三軌超過六分鐘，最短的〈バイ・バイ・”ニーチェ”〉只有兩分四十二秒，與這支團前幾年那批短促的碟形制正好相反。一處來源把這張的做法記成迷幻路線，與此前的 punk 聲響分開；曲名上漢字題與英文題各佔一半。1984 年 11 月 20 日由 B.Q. Records 發行、編號 BQL-1；樂團 1985 年就收了，這是解散前最後一張錄音室盤。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/38234e5a-4efc-31d9-854a-f74e9e116b04?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=38234e5a-4efc-31d9-854a-f74e9e116b04&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%AA%E3%83%B3",
+     "https://musicbrainz.org/ws/2/release-group?artist=acf084a3-c550-45fa-8272-869e1fecbdad&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/The%20Stalin",
+     "https://itunes.apple.com/lookup?id=998224972&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/38234e5a-4efc-31d9-854a-f74e9e116b04"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鉄アレイ",
+   "album": "鉄アレイ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8f672850-5ec4-380d-9814-3add2942c9db。回問確認：title「鉄アレイ」、artist-credit「鉄アレイ」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Sunshine Sherbet Records SS-011）。藝人 MBID 18dc6f1e-7a29-407b-98f9-50100032022a（Group／Japan），名下 8 個 RG 全列。刻意不釘：56bcc998-b4db-4c81-bee3-6a2add0d4ea1《II》（1998）、f7b1de3f-f7ae-4543-b9f4-02f6638d2ca9《IV》（2014）、7516f2ed-d2ce-4008-a94f-bbfabc3a3e61《LAST NIGHT》（Album+Compilation）。",
+    "selfTitledVerified": true,
+    "rgMbid": "8f672850-5ec4-380d-9814-3add2942c9db",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8f672850-5ec4-380d-9814-3add2942c9db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 275,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "最後一軌只有二十八秒，標題欄是空的。前十六首落在一分三十四秒到三分三十九秒之間，總長約四十分鐘，〈DANGERS・LATENT〉〈CATCH HEAD〉這類大寫英文題與〈灰〉〈地獄〉〈汚れた街〉這類漢字題交錯排開。1991 年由 Sunshine Sherbet Records 發行，編號 SS-011。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/8f672850-5ec4-380d-9814-3add2942c9db?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=8f672850-5ec4-380d-9814-3add2942c9db&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=18dc6f1e-7a29-407b-98f9-50100032022a&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/search?term=%E9%89%84%E3%82%A2%E3%83%AC%E3%82%A4&country=jp&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/8f672850-5ec4-380d-9814-3add2942c9db"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "S.O.B.",
+   "album": "Don't Be Swindle",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ee4162f5-21f5-3fa3-b97e-0e4456cb532a。回問確認：title「Don't Be Swindle」、artist-credit「S.O.B.」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，未填廠牌）。藝人 MBID 4d4159b8-19b5-4337-9d07-4eb0100fe630（Group／Japan／1983／「Japanese grindcore band」），名下 17 個 RG 全列。刻意不釘：4357c7b2-269a-335b-80a1-e808f4c258ad《Leave Me Alone / Don't Be Swindle》（1990，Album+Compilation，與本張曲目重疊的併輯，最容易誤釘）、2d7250cb-8c1d-4a27-b0b7-644224749109《Thrash Night - Leave Me Alone》（無日期，Album+Compilation）、63361ef7-1885-45a9-bce3-9419cfffec2f《Osaka Mon Amour》（Album+Compilation）、7aa11ba8-1a79-3f36-a880-e88aa206824f《What's the Truth?》（1990）、ee53affd-4cfb-3d59-b1c0-b797e6e94878《Gate of Doom》（1993）、d75a7466-a467-3a1f-b71d-78f292f52257《Vicious World》（1994）。",
+    "rgMbid": "ee4162f5-21f5-3fa3-b97e-0e4456cb532a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ee4162f5-21f5-3fa3-b97e-0e4456cb532a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4049,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩首歌各只有六秒，十八軌加起來也才二十分鐘。六秒的那兩首是第七軌〈S.O.B.〉與第十六軌〈Speak Mouth Fuck You〉，另有六軌不到一分鐘，最長的〈Let’s Go Beach〉也只有一分四十八秒。樂團 1983 年在大阪結成，團名縮寫的展開是 Sabotage Organized Barbarian。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ee4162f5-21f5-3fa3-b97e-0e4456cb532a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ee4162f5-21f5-3fa3-b97e-0e4456cb532a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=4d4159b8-19b5-4337-9d07-4eb0100fe630&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/S.O.B.%20(band)",
+     "https://itunes.apple.com/search?term=S.O.B.&country=jp&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/ee4162f5-21f5-3fa3-b97e-0e4456cb532a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "GREAT PUNK HITS",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fd48a9f6-9165-4708-b384-fbb338108bed。回問確認：title「GREAT PUNK HITS」、artist-credit「Various Artists」、first-release-date 1983、primary-type Album、secondary-types [\"Compilation\"]（依裁定 167 照一般 Album 寫）、轄下 3 個 release（JP 1983 JAPAN RECORD 25JAL-2／JP 1985-07-25 JAPAN RECORD 32JC-124／JP 1989-12-21 WAX RECORDS 22WXD-130，全數 Official）。刻意不釘：76dfe338-f0e5-3e03-af6b-2560080bfc46《City Rockers》（1982，City Rocker Records CR-00C；CAA 回 404、Apple 兩店亦無，依裁定 195 兩路皆無封面，本批不收）、a2756071-eb9e-4cca-8626-ee7d2385150d 與 7fcd1e78-4a1e-4d38-8969-106575be11e0《ADK Omnibus, Volume 1》（同一張碟的兩筆重複建檔，且 CAA 回 404）。",
+    "rgMbid": "fd48a9f6-9165-4708-b384-fbb338108bed",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fd48a9f6-9165-4708-b384-fbb338108bed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 105,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六支樂團、每支剛好兩首，十二軌三十一分鐘。最短的兩首各一分出頭，最長的是收尾那首四分四十一秒，開場則交給同批那支團的〈DEATH EXCLAMATIONS〉三分五十秒。1983 年由 JAPAN RECORD 發行、編號 25JAL-2，走的是大廠通路；後來還有 1985 與 1989 兩次 CD 再發。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fd48a9f6-9165-4708-b384-fbb338108bed?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=fd48a9f6-9165-4708-b384-fbb338108bed&fmt=json&inc=recordings+artist-credits+media&limit=10",
+     "https://ja.wikipedia.org/wiki/G.I.S.M.",
+     "https://itunes.apple.com/search?term=GREAT%20PUNK%20HITS&country=jp&media=music&entity=album&limit=10",
+     "https://musicbrainz.org/release-group/fd48a9f6-9165-4708-b384-fbb338108bed"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Hardcore Unlawful Assembly",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ebfa26ae-74f5-4d08-a961-dec256e04b81。回問確認：title「Hardcore Unlawful Assembly」、artist-credit「Various Artists」、first-release-date 1984、primary-type Album、secondary-types [\"Compilation\"]、轄下 1 個 release（JP 1984 AA Records AA 004，Official）。刻意不釘：fd48a9f6-9165-4708-b384-fbb338108bed《GREAT PUNK HITS》（本批另收）、76dfe338-f0e5-3e03-af6b-2560080bfc46《City Rockers》（CAA 404，未收）、a2756071 與 7fcd1e78《ADK Omnibus, Volume 1》（重複建檔＋CAA 404，未收）、d929cade-00c0-4e33-92fb-583105aca7c1《Achtung ADK》（2020，與 1983 年的 ADK 系列無關）。",
+    "rgMbid": "ebfa26ae-74f5-4d08-a961-dec256e04b81",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ebfa26ae-74f5-4d08-a961-dec256e04b81/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 155,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八支樂團各兩首，第七、八軌的主唱當年沒有掛名。十六軌約五十四分鐘，最短一分二十七秒、最長五分二十三秒，四首超過四分鐘。那沒有掛名的兩軌是 Lip Cream，當時他們還沒有自己的專輯，唱的是 Baki。1984 年 8 月由 AA Records 發行，編號 AA 004，被視為這條線合輯裡的金字塔。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ebfa26ae-74f5-4d08-a961-dec256e04b81?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ebfa26ae-74f5-4d08-a961-dec256e04b81&fmt=json&inc=recordings+artist-credits+media&limit=10",
+     "https://ja.wikipedia.org/wiki/Lip%20Cream",
+     "https://ja.wikipedia.org/wiki/G.I.S.M.",
+     "https://itunes.apple.com/search?term=Hardcore%20Unlawful%20Assembly&country=us&media=music&entity=album&limit=10",
+     "https://musicbrainz.org/release-group/ebfa26ae-74f5-4d08-a961-dec256e04b81"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bastard",
+   "album": "Wind of Pain",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d28011f6-4e33-4d2d-a113-a5757623adf0。回問確認：title「Wind of Pain」、artist-credit「Bastard」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1992 Bastard Records BASTARD 02＋BLOOD SUCKER BSR 005 Official／US 2013 Feral Ward YAN073 Official）。藝人 MBID a296b6a1-386f-4719-90e5-a8a91fb3bd99（Group／Japan／「Japanese punk band」），名下 4 個 RG 全列。刻意不釘：4f0eedaf-4178-39d5-9852-7cf7f2edf8d4《No Hope in Here》（2002，Album+Compilation，把同一批錄音再包一次）；另外同場景的 Judgement（d2845cdb，Group／Japan／「Japanese punk band」）名下 5 個 RG 全無 primary-type=Album，本批查證後不收。",
+    "rgMbid": "d28011f6-4e33-4d2d-a113-a5757623adf0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d28011f6-4e33-4d2d-a113-a5757623adf0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 7185,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八首歌，標題曲擺在正中間第四軌。曲名全是英文，開場〈Misery〉、收尾〈Truth〉，中段的〈To the Stumped Underdogs〉與〈Dear Cops〉是全碟最長的兩個曲名。1992 年的原盤同時掛了兩個廠牌編號，二十一年後才由美國的 Feral Ward 重壓；這也是他們名下唯一一張不是整編輯的專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d28011f6-4e33-4d2d-a113-a5757623adf0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=d28011f6-4e33-4d2d-a113-a5757623adf0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=a296b6a1-386f-4719-90e5-a8a91fb3bd99&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/a296b6a1-386f-4719-90e5-a8a91fb3bd99?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/lookup?id=976234915&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/d28011f6-4e33-4d2d-a113-a5757623adf0"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Disclose",
+   "album": "Tragedy",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b1f7e538-22a3-3d03-ae15-dca63b132b59。回問確認：title「Tragedy」、artist-credit「Disclose」、first-release-date 1994、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1994 Overthrow OVERTHROW-007 Official／GB 2015 La vida es un mus MUS101 Official）。藝人 MBID 4e3ae10c-b302-40a2-be94-80d76547c4ea（Group／Japan／1991／「Japanese d-beat」），以 release-group?artist=…&limit=100&offset= 分頁全列 42 個 RG。刻意不釘：c024be5d-af85-362a-a435-5cd8b0fce23f《Raw Brutal Assault, Volume 1》、953e1b2a-2ad8-3455-b94d-c8f911b27689《Volume 2: Discography 1994–1998》、5cf69955-5efe-4a3d-8430-597198def903《Vol.3》、5fd4c456-4ed1-4e85-acf3-3a67772af0ea《Vol.4》（四張皆 Album+Compilation，與本張曲目重疊）、45ed45ea-2775-3f64-94f7-2bfc66c8eca3《No More Pain》與 d124dfb9-e130-4e33-be9e-4db7672a4d20《The Demo's Album》（Album+Compilation）、bd9b2e49-0aec-38c1-a1b4-9cc2dbcd9e37《Nightmare or Reality》（1999）、cdc8db41-9aa5-4974-bd72-ef499a6cdccd《Yesterday's Fairytale, Tomorrow's Nightmare》（2004）、66e34404-4619-4875-a667-ba801d98cc8a《Requiem for Kawakami》（2018）、b9cdaf68-8878-48f1-97ab-9552382ceaa8《Totalitär / Disclose》（split）、6f093bb7-b9bd-3d98-ac13-ed15aae58d61《Live 1992》與 3b594076-c1d0-495a-9a08-7ead8210d0b9（Live）。",
+    "rgMbid": "b1f7e538-22a3-3d03-ae15-dca63b132b59",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b1f7e538-22a3-3d03-ae15-dca63b132b59/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 1597,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "留下的四十二筆出版裡有二十七筆是七吋。十五軌全是英文題，標題曲〈Tragedy〉排在第十二軌而不在頭尾，收尾是〈The End of Blood〉。1994 年的日本原盤出在 Overthrow Records，二十一年後由英國的 La vida es un mus 再發——接手的與同批《No Side》那次再發是同一家。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b1f7e538-22a3-3d03-ae15-dca63b132b59?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b1f7e538-22a3-3d03-ae15-dca63b132b59&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=4e3ae10c-b302-40a2-be94-80d76547c4ea&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/4e3ae10c-b302-40a2-be94-80d76547c4ea?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/search?term=Disclose&country=us&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/b1f7e538-22a3-3d03-ae15-dca63b132b59"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Crow",
+   "album": "Last Chaos",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5a7658b8-d804-4c36-a8ac-a71b339a93d0。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「Last Chaos」、artist-credit「Crow」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Crow Records Crow 0）。藝人 MBID 2b5e6093-50b4-4b12-acf0-eac69c955076（Group／Osaka／「Japanese punk band」），以 release-group?artist=…&limit=100&offset= 分頁全列 17 個 RG，其中僅 2 筆 primary-type=Album。刻意不釘：9ce49fd1-7a16-4ee6-a9c1-07ab1c2ed06c《血涙》（2005，同藝人另一張 Album，本批只取一張）；其餘 15 筆為 EP、Single 與 split，hardcore 不在 §5.5 白名單，一律不取。",
+    "rgMbid": "5a7658b8-d804-4c36-a8ac-a71b339a93d0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5a7658b8-d804-4c36-a8ac-a71b339a93d0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 388,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十四軌裡〈Last Chaos〉出現兩次，一次在第七軌、一次在收尾。曲名全是英文，第三軌以團名〈Crow〉為題，第十軌〈Hiroshima Nagasaki〉與第十二軌〈Give Peace a Chance〉是僅有的兩個帶專有名詞的曲名。廠牌是樂團自營的 Crow Records，把這張編成「Crow 0」，從零號起算。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5a7658b8-d804-4c36-a8ac-a71b339a93d0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5a7658b8-d804-4c36-a8ac-a71b339a93d0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=2b5e6093-50b4-4b12-acf0-eac69c955076&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/2b5e6093-50b4-4b12-acf0-eac69c955076?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/search?term=Crow%20Last%20Chaos&country=jp&media=music&entity=album&limit=10",
+     "https://musicbrainz.org/release-group/5a7658b8-d804-4c36-a8ac-a71b339a93d0"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "非常階段",
+   "album": "蔵六の奇病",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 290a6d01-d533-4af5-a704-648e9c717a99。回問確認：title「蔵六の奇病」、artist-credit「非常階段」、first-release-date 1982、primary-type Album、secondary-types [\"Live\"]、轄下 8 個 release（JP 1982 Unbalance OUT-4／DE 2006 Vinyl-on-Demand VOD 28／JP 2012 réveil TECH-35318／JP 2014 réveil TECH-25392／JP 2022 Alchemy ARCD-26／XW 2022 Urashima 等，全數 Official）。藝人 MBID d8e649be-873a-412c-84b5-2f186a9a9c73（Group／Japan／1979），以 release-group?artist=…&limit=100&offset= 分頁全列 62 個 RG。刻意不釘：47cdc236-ca8f-4ec3-a0a0-232348e35b98《Viva Angel》與 5e070ace-cade-4d8c-a8bd-5ab268bdba0d《King of Noise》（池中已有）、b928c001-e1f4-4a92-ad9c-ea48c0e2c603《終末処理場》（1980，artist-credit 是「NG / ジュラジューム / 非常階段」三團合體，不是單一藝人卡）、eeee7432-bab6-4f9c-9daa-97916de099f4《極悪の教典》（Album+Live）、f690c131-f6e4-4248-9022-57970027d28d《Originals》（credit 拼成 Hijyokaidan）、1e2b985c-609e-4e8b-83d4-daac5d30994a《雑音伝説》與 df5e6d74-5072-32c9-b439-340854ade5e9《真・雑音伝説》與 143f61a6-9fdc-4a0e-9305-e9d55a685dc2《The Noise 30th Anniversary》（Album+Compilation）。",
+    "rgMbid": "290a6d01-d533-4af5-a704-648e9c717a99",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/290a6d01-d533-4af5-a704-648e9c717a99/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 495,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六段錄音的曲名就是六個場地與日期，最後一段錄在大學的一間教室。六段的長度從一分二十三秒到十六分二十七秒，收尾那一段一首就佔掉全碟的三分之一，總長約四十五分鐘。六場演出橫跨 1980 年 11 月到 1981 年 11 月，場地從大阪與京都的展演空間排到大學校園，其中兩場就錄在慶応大学與同志社大学的教室裡。這些現場錄音在 1982 年 4 月由一家自主製作廠牌壓成十二吋，也是非常階段第一張自己的 LP。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/290a6d01-d533-4af5-a704-648e9c717a99?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=290a6d01-d533-4af5-a704-648e9c717a99&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/%E9%9D%9E%E5%B8%B8%E9%9A%8E%E6%AE%B5%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Hijokaidan",
+     "https://musicbrainz.org/ws/2/release-group?artist=d8e649be-873a-412c-84b5-2f186a9a9c73&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=269598068&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/290a6d01-d533-4af5-a704-648e9c717a99"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "非常階段",
+   "album": "Modern",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f6f05cce-e3a0-3863-9a29-951c4db03491。回問確認：title「Modern」、artist-credit「Hijokaidan」（MB 內部分裂，卡片用漢字形，見 risk）、first-release-date 1989、primary-type Album、secondary-types 空、轄下 5 個 release（JP 1989 Alchemy ARCD-004／JP 1994 Alchemy ARCD-067／JP 2014 réveil TECH-25398／IT 2021 Urashima Uma155／XW 2021 Urashima Uma155，全數 Official）。藝人 MBID d8e649be-873a-412c-84b5-2f186a9a9c73，名下 62 個 RG。刻意不釘：47cdc236《Viva Angel》與 5e070ace《King of Noise》（池中已有）、290a6d01-d533-4af5-a704-648e9c717a99《蔵六の奇病》（本批另收）、f8b1930d-9601-4d0e-ade4-e92da726863f《Romance》（1990）、1f519c79-10dc-3687-97b1-2f84538ecec2《Windom》（1991）、49758e5d-9629-31a4-8372-ea8df7439dc1《Tapes》（1986）、983fbdf5-0628-310f-a94a-32e5654b456b《Limited Edition》（1987）。",
+    "rgMbid": "f6f05cce-e3a0-3863-9a29-951c4db03491",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f6f05cce-e3a0-3863-9a29-951c4db03491/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 66,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一軌七十四分零三秒，後來的版本才把它切成兩段、四段。那個長度是 1989 年 CD 版的切法，幾乎頂到一張 CD 的容量上限；2014 年的重製版把它分成兩軌，2021 年的雙黑膠與同日的數位版則分成兩加兩與四段。同一份錄音的段落數完全由載體決定，這張碟因此沒有曲序可談。非常階段從 1984 年起連續九年幾乎一年一張，全部出在同一家廠牌，而那家廠牌正是團裡唯一不曾更動的那位成員 1984 年自己開的；本張的編號屬於該廠 CD 系列的早期號。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f6f05cce-e3a0-3863-9a29-951c4db03491?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f6f05cce-e3a0-3863-9a29-951c4db03491&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/%E9%9D%9E%E5%B8%B8%E9%9A%8E%E6%AE%B5%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://musicbrainz.org/ws/2/release-group?artist=d8e649be-873a-412c-84b5-2f186a9a9c73&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Hijokaidan",
+     "https://itunes.apple.com/lookup?id=269597521&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/f6f05cce-e3a0-3863-9a29-951c4db03491"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Incapacitants",
+   "album": "Eternal Paralysis",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 35720d81-2e0c-4573-acac-84d9852796eb。回問確認：title「Eternal Paralysis」、artist-credit「Incapacitants」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 3 個 release（JP 1981 Pariah Tapes PT-1／XW 2025 advaita／JP 2025 advaita，全數 Official）。藝人 MBID 49085c3c-fe97-4477-8b9f-11ec2dcde57c，以 release-group?artist=…&limit=100&offset= 分頁全列 86 個 RG。刻意不釘：82353e00-ebea-42aa-939d-b37cec11bb73《Repo》與 6d75acb3-c9d7-3855-9d4c-635e816e3158《Quietus》（本批另收）、25833222-3d4f-4776-a344-ebda9c82b4f9《Eternal Paralysis / Peony Crackers》（2024，Album+Compilation，把本張與 1983 年那張併成一張，最容易誤釘）、535b3db5-5ff2-4e67-a8a6-e4577d7f93c9《Peony Crackers》（1983）、194ab5aa-0d79-45ed-8f5b-8497c3ee9adc《Project Pallo '85》、f66a6cd7-76b5-4711-b9c0-5beabecf8540《Δ8000 / Prelude to Pallo》（與 非常階段 共掛）、5c7489f9-b125-46cf-9de5-5fcce719f4a4《Pariah Tapes》（Album+Compilation，與本張的廠牌同名）。",
+    "rgMbid": "35720d81-2e0c-4573-acac-84d9852796eb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/35720d81-2e0c-4573-acac-84d9852796eb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 68,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1981 年的原件是一捲卡帶，整捲只有一軌。卡帶的編號 PT-1 是那家卡帶廠的創廠第一號，同期的另外四筆同樣全是卡帶；美川俊治在大阪起手時，這還是他在樂團之外的個人計畫，要到八年後才有第一張黑膠。四十四年後的再發把同一份錄音切成三段，由 advaita records 重出成數位與卡帶兩種形式。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/35720d81-2e0c-4573-acac-84d9852796eb?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=35720d81-2e0c-4573-acac-84d9852796eb&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=49085c3c-fe97-4477-8b9f-11ec2dcde57c&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Incapacitants",
+     "https://musicbrainz.org/ws/2/artist/49085c3c-fe97-4477-8b9f-11ec2dcde57c?fmt=json&inc=aliases+artist-rels",
+     "https://musicbrainz.org/release-group/35720d81-2e0c-4573-acac-84d9852796eb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Incapacitants",
+   "album": "Repo",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 82353e00-ebea-42aa-939d-b37cec11bb73。回問確認：title「Repo」、artist-credit「Incapacitants」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 6 個 release（JP 1989 Alchemy ARLP-027／JP 2001 Alchemy ARCD-130／JP 2012 youth Inc. YOUTH-167／XW 2023 Urashima UMA 173／IT 2023 Urashima UMA 173×2，全數 Official）。藝人 MBID 49085c3c-fe97-4477-8b9f-11ec2dcde57c，名下 86 個 RG。刻意不釘：35720d81-2e0c-4573-acac-84d9852796eb《Eternal Paralysis》與 6d75acb3-c9d7-3855-9d4c-635e816e3158《Quietus》（本批另收）、650fb114-d12b-4b8a-b00c-a6556469994d《Feedback of N.M.S.》（1991）、42d34597-22f1-4829-8c98-ce2cd3c3a648《Fabrication》（1992）、f3743b15-4f35-35e2-b7d4-0c99d4a8bc6a《Box Is Stupid》與 aea9480d-7b27-4c20-97f7-aa0f66aba167《Alchemy Box Is Stupid》（Album+Compilation 的套裝雙胞胎）、ce49c1ab-f9c3-40eb-b3f2-68e5a54c39b6《Live Incapacitants》（Live）。",
+    "rgMbid": "82353e00-ebea-42aa-939d-b37cec11bb73",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/82353e00-ebea-42aa-939d-b37cec11bb73/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 327,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩軌一面一段，二十三分四十一秒對二十三分四十五秒，只差四秒。第二軌的曲名〈Reverse Repo〉是第一軌〈Repo〉的字面反轉，兩面合起來約四十七分鐘。在這張之前，美川俊治與小堺文雄名下的四筆全是卡帶，這是他們第一次把聲音壓進黑膠，1989 年由 Alchemy Records 發行、編號 ARLP-027。2001 年的 CD 版在後面又加了一軌二十六分三十七秒的重混，比原盤任何一面都長，但那不是這張碟的形制；重發次數在他們的目錄裡也是最多的一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/82353e00-ebea-42aa-939d-b37cec11bb73?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=82353e00-ebea-42aa-939d-b37cec11bb73&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=213573398&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=49085c3c-fe97-4477-8b9f-11ec2dcde57c&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Incapacitants",
+     "https://itunes.apple.com/lookup?id=212904081&country=jp&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/82353e00-ebea-42aa-939d-b37cec11bb73"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/7d/c3/be/mzm.upkhghpv.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "213573398",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Incapacitants",
+   "album": "Quietus",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6d75acb3-c9d7-3855-9d4c-635e816e3158。回問確認：title「Quietus」、artist-credit「Incapacitants」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1993 Alchemy ARCD-059／IT 2022 Urashima UMA 161／XW 2022 Urashima／JP 2012 youth Inc. YOUTH-170，全數 Official）。藝人 MBID 49085c3c-fe97-4477-8b9f-11ec2dcde57c，名下 86 個 RG。刻意不釘：35720d81《Eternal Paralysis》與 82353e00《Repo》（本批另收）、556034fb-fee9-41c8-88a6-781af053dd01《Stupid Is Stupid》（1993 同年另一張）、889891d9-657a-43db-83fe-290c138e0630《Extreme Gospel Nights》（Album+Live）、84967738-743b-323c-ba81-8fc8c3a7f464《No Progress》（Album+Compilation）、b9311066-8509-4cfc-83b8-00236bb065c0《Ad Nauseam》（1994）。",
+    "rgMbid": "6d75acb3-c9d7-3855-9d4c-635e816e3158",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6d75acb3-c9d7-3855-9d4c-635e816e3158/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 497,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩段二十多分鐘的長曲中間，夾了一首四分二十三秒的短曲。頭尾兩軌分別是二十三分十二秒與二十一分零七秒，三軌總長約四十九分鐘，長度比例接近五比一比五。有一處來源記這兩位的曲名常引用自己的職業，他們的正職分別是銀行員與公務員。這張是 1993 年在 Alchemy Records 出的 CD，從最早的卡帶到黑膠再到這張，三種載體各佔一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6d75acb3-c9d7-3855-9d4c-635e816e3158?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=6d75acb3-c9d7-3855-9d4c-635e816e3158&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=49085c3c-fe97-4477-8b9f-11ec2dcde57c&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Incapacitants",
+     "https://itunes.apple.com/lookup?id=212904081&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/6d75acb3-c9d7-3855-9d4c-635e816e3158"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Masonna",
+   "album": "Mademoiselle Anne sanglante ou notre nymphomanie auréolé",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 25804698-6c45-4320-92e5-71508afb3187。回問確認：title「Mademoiselle Anne sanglante ou notre nymphomanie auréolé」、artist-credit「Masonna」、first-release-date 1993-08、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1993 Alchemy ARCD-057／JP 2023 Alchemy＋P-VINE ALPCD-14／JP 2024 P-VINE ALPLP-18／XW 2023 P-VINE，全數 Official）。藝人 MBID 85faf30e-fb8a-4b0f-8194-95e17a8b978e（Person／Japan／1966-11-16／「Japanese noise musician」），以分頁全列 53 個 RG。刻意不釘：f0959cca-2787-35be-a97c-3ce0fdb58a3e《Inner Mind Mystique》與 56e65783-0ab7-3b42-aa95-cb690bee5003《Spectrum Ripper》（池中已有）、4c7c0ee5-bcbb-3d22-bca9-4608025bf22a《Ejaculation Generater》（本批另收）、b81c5d25-c302-37c6-8c30-9849e1315207《Hyper Chaotic》（1996）、a1473bab-7ddc-41cc-8b59-c31500785a48《Freak-Out Electrolyze》（1997）、27daa3fa-8425-40a0-a89f-8f8f44b3c644《Violent Onsen Geisha / Masonna》（split）。",
+    "rgMbid": "25804698-6c45-4320-92e5-71508afb3187",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/25804698-6c45-4320-92e5-71508afb3187/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 860,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三十一軌裡三十軌沒有標題，唯一有標題的那軌只有六秒。那個曲名就是盤名，而盤名是 Masonna 這個藝名的一種展開，同一個藝名另有別的展開寫法，兩種都查得到。三十一軌總長約四十二分鐘，最短的一軌二十秒、最長三分三十九秒，其中二十軌不到一分半，整張碟因此像三十段長短不一的切片接連而成。1993 年的原盤是 Alchemy Records 的 CD，三十年後兩家廠牌聯名復刻，盤名整個換成了日文，先出 CD、隔年再出黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/25804698-6c45-4320-92e5-71508afb3187?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=25804698-6c45-4320-92e5-71508afb3187&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1720087899&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Masonna",
+     "https://musicbrainz.org/ws/2/release-group?artist=85faf30e-fb8a-4b0f-8194-95e17a8b978e&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/25804698-6c45-4320-92e5-71508afb3187"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/16/35/50/16355080-5024-964a-1143-861ec4126087/mzaf_12159484025066068153.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1720087899",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Masonna",
+   "album": "Ejaculation Generater",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4c7c0ee5-bcbb-3d22-bca9-4608025bf22a。回問確認：title「Ejaculation Generater」、artist-credit「Masonna」、first-release-date 1996-06-25、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1996 Alchemy ARCD-087 Official／XW 2022 Total Black Official）。藝人 MBID 85faf30e-fb8a-4b0f-8194-95e17a8b978e，名下 53 個 RG。刻意不釘：f0959cca《Inner Mind Mystique》與 56e65783《Spectrum Ripper》（池中已有）、25804698-6c45-4320-92e5-71508afb3187《Mademoiselle Anne sanglante…》（本批另收）、b6ec45f3-deac-4d02-870b-7482a0df3ddc《Shock Rock》（2002）、9d52e61b-e840-4218-8592-0d003ef22860《Super Compact Disc》（1995）、b725b7a0-6ad0-4680-9918-2ad45f2c31fc《Maso + Onna = Masonna》（1989 卡帶期）。",
+    "rgMbid": "4c7c0ee5-bcbb-3d22-bca9-4608025bf22a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4c7c0ee5-bcbb-3d22-bca9-4608025bf22a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 1645,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三十二軌二十九分鐘，最短的一軌只有十三秒。三十二軌全部沒有標題，只有三軌超過兩分鐘，最長的第 21 軌三分零五秒，其餘從十幾秒到一分多鐘不等，平均每軌不到一分鐘。原盤是 1996 年 Alchemy Records 的 CD、編號 ARCD-087，同一年同一家廠牌還出了他另一張碟，兩張只差一個月；要到二十六年後，這一張才由美國一家廠牌發出數位版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4c7c0ee5-bcbb-3d22-bca9-4608025bf22a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4c7c0ee5-bcbb-3d22-bca9-4608025bf22a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=85faf30e-fb8a-4b0f-8194-95e17a8b978e&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Masonna",
+     "https://itunes.apple.com/lookup?id=121093320&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/4c7c0ee5-bcbb-3d22-bca9-4608025bf22a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "C.C.C.C.",
+   "album": "Cosmic Coincidence Control Center",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a62af6e7-897d-37ed-96ad-bfac682396cd。回問確認：title「Cosmic Coincidence Control Center」、artist-credit「C.C.C.C.」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1992 Endorphine Factory EDP CD-01／IT 2021 Urashima Uma152／XW 2021 Urashima Uma152×2，全數 Official）。藝人 MBID 55394e92-a45c-452e-9ed8-09ce2f68a1fe，名下 26 個 RG 全列。刻意不釘：317687e7-1042-4cda-a682-73ba2bca3b52《Amplified Crystal》（本批另收）、9afdd1b0-26eb-49e0-8cdf-802008337992《Amplified Crystal II》（續作，盤名只差卷號，裁定 168 的形狀，最容易誤釘）、980ca140-942b-43f3-82cf-a9680c2d0bdc《Gnosis》（1994）、faac2de0-6735-46a0-89ae-cf6fd592ecbc《The Beauty of Pollution》（1996）、ebae3a7d-d810-4249-b9c8-2a63c8037ed1《Reflexive Universe》與 b10286f6-8c79-4d07-9e9e-567e7dde523a《Phantasmagoria》（Album+Live）、857c349d-8a87-44bf-b2f0-bd0c86d46c69《[untitled]》（1997，無盤名）。",
+    "selfTitledVerified": true,
+    "rgMbid": "a62af6e7-897d-37ed-96ad-bfac682396cd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a62af6e7-897d-37ed-96ad-bfac682396cd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1781,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三軌五十二分鐘，第三軌〈Sonic Machine〉一首就佔掉四十一分十二秒。前兩軌分別是六分零四秒與四分多鐘，全碟一半以上的時間都落在最後那一首。盤名就是團名 C.C.C.C. 四個字母的全稱。這是樂團自營廠牌的第一張 CD、編號 EDP CD-01，也是他們名下第一筆非現場作品——排在它前面的兩筆都帶著現場標記。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a62af6e7-897d-37ed-96ad-bfac682396cd?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a62af6e7-897d-37ed-96ad-bfac682396cd&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=55394e92-a45c-452e-9ed8-09ce2f68a1fe&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Astro%20(Japanese%20band)",
+     "https://itunes.apple.com/lookup?id=274010683&country=jp&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/a62af6e7-897d-37ed-96ad-bfac682396cd"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "C.C.C.C.",
+   "album": "Amplified Crystal",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 317687e7-1042-4cda-a682-73ba2bca3b52。回問確認：title「Amplified Crystal」、artist-credit「C.C.C.C.」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1993 Endorphine Factory EDP-004 Official／US 2023 Helicopter HEL 81004＋Troniks TRO-346 Official）。藝人 MBID 55394e92-a45c-452e-9ed8-09ce2f68a1fe，名下 26 個 RG。刻意不釘：9afdd1b0-26eb-49e0-8cdf-802008337992《Amplified Crystal II》（續作，盤名只差卷號）、a62af6e7-897d-37ed-96ad-bfac682396cd《Cosmic Coincidence Control Center》（本批另收）、6f703c37-c821-343b-af68-902954ff086c《Loud Sounds Dopa / Live in U.S.A.》與 0cda42c7-edd8-4a2e-8a0a-44f882dbd725《Community Center Cyber Crash》（Album+Live）、3210b6a1-1df6-4fbd-840e-6ddebe0f2084《Love & Noise》（1996）。",
+    "rgMbid": "317687e7-1042-4cda-a682-73ba2bca3b52",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/317687e7-1042-4cda-a682-73ba2bca3b52/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 583,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張碟只有兩軌，Part I 二十一分四十七秒、Part II 二十三分四十八秒。兩段只差兩分零一秒，總長約四十六分鐘，整張碟就是同一個標題切成前後兩半，正好對應十二吋黑膠的兩面。1993 年的原盤出在樂團自營的廠牌、編號 EDP-004；同一年名下還有另一張同名續篇，指認本張要看這組編號。三十年後由美國兩家廠牌聯名重發，串流上找得到的就是那個復刻版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/317687e7-1042-4cda-a682-73ba2bca3b52?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=317687e7-1042-4cda-a682-73ba2bca3b52&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1725723264&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=55394e92-a45c-452e-9ed8-09ce2f68a1fe&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Astro%20(Japanese%20band)",
+     "https://musicbrainz.org/release-group/317687e7-1042-4cda-a682-73ba2bca3b52"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/6f/07/d9/6f07d936-3e19-8d37-6c31-87779e98e7ba/mzaf_7034320208999827627.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1725723264",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Solmania",
+   "album": "Vexation",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 92c2e294-a68c-409d-a99e-5688b55fe9d9。回問確認：title「Vexation」、artist-credit「Solmania」、first-release-date 1985-03、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Fatagaga Tapes FTC-3）。藝人 MBID b785af88-5524-4102-8c08-c280f84c866e，名下 22 個 RG 全列。刻意不釘：be17f67f-b994-4c21-a4d7-f3f0a9c1e818《Metamorphor Chorus》（本批另收）、ca3d5b8b-f0c9-4f25-bb71-3ac59fd3b388《Gakinoizz》（1984-10）、dbb262aa-3277-4cc4-903d-47b7c3ad169d《H·A·D·A·Y·R·O》（1985-01）、8e813873-cb11-4526-bbd5-69744ef8adb3《H.C.P. Resolvent》（1985-07）、c8e45717-fa9f-4ab5-861a-ab654e9a9144《Wörkenemy》（1985-09）、b9afbd4c-14d5-4ce7-b3a4-e048b5d0f30e《Re-Rurr》（1985-12）——同一年的六捲，本批只取一捲；49582da5-243c-4dc4-a8a9-b0d70a84ca24《The Basement Tapes and Discs》（Album+Compilation）、42032abd-ab41-4d2d-92d3-61530f458b4f《Erosion》（Album+Live）。",
+    "rgMbid": "92c2e294-a68c-409d-a99e-5688b55fe9d9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/92c2e294-a68c-409d-a99e-5688b55fe9d9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 13,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一捲卡帶八軌，八軌全部沒有標題。同一家卡帶廠在十五個月內連出六捲、編號一號到六號無缺，本張是其中第三捲。大野雅彦在 1984 年起手這個計畫，他以用零件自製實驗電吉他著稱，那些琴用非常規琴身、多出來的琴頸與裝在奇怪位置的拾音器，多為多琴頸吉他與 harp guitar，至今做了九把；他同時是平面設計師。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/92c2e294-a68c-409d-a99e-5688b55fe9d9?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=92c2e294-a68c-409d-a99e-5688b55fe9d9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=b785af88-5524-4102-8c08-c280f84c866e&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Solmania",
+     "https://musicbrainz.org/ws/2/artist/b785af88-5524-4102-8c08-c280f84c866e?fmt=json&inc=aliases+artist-rels",
+     "https://musicbrainz.org/release-group/92c2e294-a68c-409d-a99e-5688b55fe9d9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Solmania",
+   "album": "Metamorphor Chorus",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group be17f67f-b994-4c21-a4d7-f3f0a9c1e818。回問確認：title「Metamorphor Chorus」、artist-credit「Solmania」、first-release-date 1991-01-25、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Alchemy Records ARCD-020）。藝人 MBID b785af88-5524-4102-8c08-c280f84c866e，名下 22 個 RG。刻意不釘：92c2e294-a68c-409d-a99e-5688b55fe9d9《Vexation》（本批另收）、09cb58ca-7038-4046-aa5d-f6771eee4895《Psycledelic》（1993）、fc915cec-0068-49f1-8932-b5ac0e7659ce《Trembling Tongues》（1995）、2b532997-18e4-3a6f-9bf6-0fb610fa983a《Evil Bed》（1996）、667e60b3-2be3-42a8-bc4f-baebd3b832a7《Morphine Nocturne》與 2d23a9f0-439b-3b61-b724-5b1a11eb18c9《Live - Big Rig》（Album+Live）、49582da5-243c-4dc4-a8a9-b0d70a84ca24《The Basement Tapes and Discs》（Album+Compilation）。",
+    "rgMbid": "be17f67f-b994-4c21-a4d7-f3f0a9c1e818",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/be17f67f-b994-4c21-a4d7-f3f0a9c1e818/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 205,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一首佔掉二十七分四十七秒，第二首只有三十四秒。兩首同題的〈Metamorphor Chorus〉分列第三與第五軌，前者二十分二十二秒、後者三分零七秒，長度差了六倍以上，五軌總長約五十六分鐘。這是大野雅彦從早年那批卡帶轉到 Alchemy Records 之後的第一張 CD，1991 年 1 月發行；那家廠牌幾乎所有作品的平面設計都出自他手。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/be17f67f-b994-4c21-a4d7-f3f0a9c1e818?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=be17f67f-b994-4c21-a4d7-f3f0a9c1e818&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=b785af88-5524-4102-8c08-c280f84c866e&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Solmania",
+     "https://musicbrainz.org/ws/2/artist/b785af88-5524-4102-8c08-c280f84c866e?fmt=json&inc=aliases+artist-rels",
+     "https://musicbrainz.org/release-group/be17f67f-b994-4c21-a4d7-f3f0a9c1e818"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "K2",
+   "album": "The Rust",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4891be57-de1a-44e5-ae01-f4da9f3ce3e5。回問確認：title「The Rust」、artist-credit「K2」、first-release-date 1996、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1996 Kinky Musik Institute KMI-022 Official／US 2018-09-21 Hospital Productions HOS-605 Official）。藝人 MBID 4838f37b-98df-49d8-a2d4-c0bc0c0296fa（Person／Japan／「Japanese noise musician Kimihide Kusafuka」），以分頁全列 47 個 RG。刻意不釘：955dd895-1207-485b-b8bb-e4751af0bf9d《Metal Dysplasia》（1996，CAA 404 且 Apple 兩店無，依裁定 195 不收）、13ef6d5e-34be-4f0d-9abe-6e2fa7a56fd7《N.G. Musik》與 1d3edd24-f382-4d9d-a0ed-8b89d45b211a《Student Apathy》（1983，CAA 亦 404）、1697c31a-712c-4026-b3bc-dc3149fcae7f《Tekhnodrug》（1993，CAA 404）、cb26b077-f5a9-4f06-9225-59e99f60d900《Traumantra》（1998，CAA 404）、f01f5b1e-94db-4333-b687-72add1625fc1《We Are All Stupid》與 d5a64692-ecb2-4fe8-b851-06155d69593f《Your Daily Buzz》（與 Incapacitants／MSBR 共掛的合作盤，不是單一藝人卡）。",
+    "rgMbid": "4891be57-de1a-44e5-ae01-f4da9f3ce3e5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4891be57-de1a-44e5-ae01-f4da9f3ce3e5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 109,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一個標題切成四個 Part，雙黑膠版每一面剛好放一段。草深公秀在 1983 年出過兩筆之後，隔了整整十年才有下一張，要到 1993 年起才密集起來。1996 年的原盤是 CD、編號 KMI-022，同一年他名下還有別張碟，指認本張要看這組編號；二十二年後由紐約一家廠牌重壓成雙黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4891be57-de1a-44e5-ae01-f4da9f3ce3e5?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4891be57-de1a-44e5-ae01-f4da9f3ce3e5&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=4838f37b-98df-49d8-a2d4-c0bc0c0296fa&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/4838f37b-98df-49d8-a2d4-c0bc0c0296fa?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/search?term=K2%20The%20Rust%20noise&country=us&media=music&entity=album&limit=10",
+     "https://musicbrainz.org/release-group/4891be57-de1a-44e5-ae01-f4da9f3ce3e5"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Government Alpha",
+   "album": "Alphaville",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6a2cc19d-eda8-4f1a-8cd4-b053014b82c9。回問確認：title「Alphaville」、artist-credit「Government Alpha」、first-release-date 1999-09、primary-type Album、secondary-types 空、轄下 1 個 release（SE Official，Segerhuva SEGER 1）。藝人 MBID 68481536-19e7-4aa0-a282-9d5d96fb9197，以分頁全列 79 個 RG。刻意不釘：b408f7bc-9964-40f1-aea7-dfd07bae2d41《Doze》（1994，名下最早的一張）、a3923d10-a0d1-4613-8d56-c03f24616278《Funeral Procession》（1995）、637a4ea5-45a3-3bc3-a8f5-61f833701ddd《Sporadic Spectra》（1999-11，與本張同年）、d2365654-2392-3fb5-87c5-110bd9cf4fde《1969-1999》（1999）、fa0456fc-7ad8-4ffe-b327-316aa0269ec9《Japanoise Action In Russia》（與 MSBR 共掛的合作盤）、32d1c469-af88-4b10-8708-9269efd85cd8《Love Will Tear Us Apart》（2000，與 Joy Division 同名，最容易誤釘）。",
+    "rgMbid": "6a2cc19d-eda8-4f1a-8cd4-b053014b82c9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6a2cc19d-eda8-4f1a-8cd4-b053014b82c9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 454,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七軌四十二分鐘，六軌擠在四分半到六分半之間，收尾那軌九分十七秒。七個曲名全是英文的造詞或罕用字：收尾那首題作〈Enantiodromia〉，字眼出自榮格心理學，〈Clairaudient Isabelle〉的頭一個字指聽覺通靈，其餘幾首則是自造的複合詞。這張唯一的實體版本 1999 年 9 月出在瑞典、編號 SEGER 1，作者本名吉田恭淑。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6a2cc19d-eda8-4f1a-8cd4-b053014b82c9?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=6a2cc19d-eda8-4f1a-8cd4-b053014b82c9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=68481536-19e7-4aa0-a282-9d5d96fb9197&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Government%20Alpha",
+     "https://musicbrainz.org/ws/2/artist/68481536-19e7-4aa0-a282-9d5d96fb9197?fmt=json&inc=aliases+artist-rels",
+     "https://musicbrainz.org/release-group/6a2cc19d-eda8-4f1a-8cd4-b053014b82c9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aube",
+   "album": "Spindrift",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5a438708-b94d-46d2-97f3-06622b57f981。回問確認：title「Spindrift」、artist-credit「Aube」、first-release-date 1992-05-25、primary-type Album、secondary-types 空、轄下 5 個 release（JP 1992 G.R.O.S.S. GR-001／JP 2016 Shrine.jp SGR-001／JP 2021 Shrine.jp SRSW 472／US 2020 Robert & Leopold R&L066／XW 2020 同，全數 Official）。藝人 MBID c57d8c1f-e8a9-442e-9700-1821f165460a，以 release-group?artist=…&limit=100&offset= 分頁全列 194 個 RG（分三頁取回）。刻意不釘：b9574d9a-351d-47a3-aaec-f7ac9342eb0c《Luminous》（1993-03）、655bbb24-3af0-44a9-820a-1082f280cdbd《Flood-Gate》（1993）、d26d4dce-0d1e-3872-aacf-0bfa56cd5748《Pages From the Book》（1998）、a0838014-cda7-4eaf-ae41-78872797e4c8《Millennium》與其 ab83f577／981c4d83／c02c7459／21cadcb7／b29cdcf2／2f17fd92／ba599f36／ebb3e15d／627f6468／91a225be／1f590c42／fd20b9d1 十二張月份分冊（同一套系列，裁定 168／174 的高危形狀）。",
+    "rgMbid": "5a438708-b94d-46d2-97f3-06622b57f981",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5a438708-b94d-46d2-97f3-06622b57f981/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 431,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩軌各二十三分鐘，曲名就是把盤名切成前後兩半。〈Spin〉二十三分二十四秒、〈Drift〉二十二分四十六秒，兩段只差三十八秒，正好對應卡帶的兩面。中嶋昭文的做法是一張碟只用一種素材來源，再用各式電子器材加工，用過的來源包括空氣、水、日光燈、人聲、肺音與鋼絲，早期那批錄音多半以水為素材；他本人不用 music 稱呼這些作品，偏好 design 這個字。1992 年 5 月的原件是他自營廠牌 G.R.O.S.S. 的卡帶、編號 GR-001，也是他名下最早的一筆。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5a438708-b94d-46d2-97f3-06622b57f981?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5a438708-b94d-46d2-97f3-06622b57f981&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1688042535&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Aube%20(musician)",
+     "https://musicbrainz.org/ws/2/release-group?artist=c57d8c1f-e8a9-442e-9700-1821f165460a&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/5a438708-b94d-46d2-97f3-06622b57f981"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/42/e2/a6/42e2a6db-ec02-deb7-d3e9-cf1ae6089a9a/mzaf_15731632511367369910.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1688042535",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "MSBR",
+   "album": "Ultimate Ambience",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ed8a9c18-74dc-4bc3-9898-78892d2760be。回問確認：title「Ultimate Ambience」、artist-credit「MSBR」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，MSBR Records MR 01）。藝人 MBID 702fffc3-c826-4f8e-9719-660fb92b6895，名下 41 個 RG 全列。刻意不釘：6911c86b-7476-4315-8319-6dec019e7667《Ultimate Ambience 2》（2000，盤名只差一個數字）、af82da45-3698-360b-8d42-f2b3a6ed2271《Structured Suicide》（1993）、2a55184c-b9c6-4919-9ea5-360a5fe3cd5c《Sonic Destruction》（1995）、5e7e9c73-ed91-4172-b3b9-51dddb7a62c8《壱》（1998-10）、43792fbb-e895-4065-a3cb-3b9f1782a322《Collaboration》、dcecd9fd-c556-3401-8621-a17469d594e3《3 Cadavres Exquis》、d5a64692-ecb2-4fe8-b851-06155d69593f《Your Daily Buzz》、fa0456fc-7ad8-4ffe-b327-316aa0269ec9《Japanoise Action In Russia》（後四筆皆多藝人合作盤，不是單一藝人卡）。",
+    "rgMbid": "ed8a9c18-74dc-4bc3-9898-78892d2760be",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ed8a9c18-74dc-4bc3-9898-78892d2760be/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 59,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個字母的展開寫在別名欄裡：Molten Salt Breeder Reactor。整張碟只有一個標題，用 #1 與 #2 分開，二十五分十五秒對二十二分二十四秒，一面一段，兩段差兩分五十一秒。1992 年那張黑膠的編號是 MR 01，廠牌名與這個名字同一串字母；作者本人生於 1961 年，2005 年過世。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ed8a9c18-74dc-4bc3-9898-78892d2760be?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ed8a9c18-74dc-4bc3-9898-78892d2760be&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=702fffc3-c826-4f8e-9719-660fb92b6895&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/702fffc3-c826-4f8e-9719-660fb92b6895?fmt=json&inc=aliases+artist-rels",
+     "https://en.wikipedia.org/wiki/Government%20Alpha",
+     "https://musicbrainz.org/release-group/ed8a9c18-74dc-4bc3-9898-78892d2760be"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pain Jerk",
+   "album": "Aktion Bruit",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4ce3524d-1e39-423b-9d01-ddb866c7f762。回問確認：title「Aktion Bruit」、artist-credit「Pain Jerk」、first-release-date 1995、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，AMP AMP-013）。藝人 MBID 7e199c07-31f8-4f8d-9bc0-e06e54def3d2，以 release-group?artist=…&limit=100&offset= 分頁全列 161 個 RG（分兩頁取回）。刻意不釘：0b35bb1a-283e-470e-ba1a-1d8ff4227020《Alchemistry》（1995 同年）、477a7f7e-9e31-41bd-a40f-bc3dfd7bc5a5《Trashware》與 7e1a56cf-e0f3-4c40-ae0a-2841899fa204《Trashware 2》（盤名只差數字，裁定 168 的形狀）、88c47562-1120-4d5c-9f1d-f067e9d1856d《Exhibition of Electro-Disease》（1995-05-25）、0ef34dd7-d7fe-4a5c-bd1a-bf1d1206c118《Recycled》（1995，與 Aube 1994 年同名碟撞名）、329bb51c-2b2c-4d4e-9ad3-a023404a5279《Collaboration》（多藝人合作盤）。",
+    "rgMbid": "4ce3524d-1e39-423b-9d01-ddb866c7f762",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 120,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三軌的長度一路遞減：十九分半、十二分五十、九分三十七。三個曲名分屬三種寫法：〈Neon Kid〉是英文，〈In die Glutenkiste〉是德文，〈Mosquitomagus〉則是拉丁語式的造詞。1995 年那捲卡帶的編號是 AMP-013；光那一年，五味浩平名下就有八筆，隔年再添十四筆，兩年合計二十二筆，這張只是其中之一。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4ce3524d-1e39-423b-9d01-ddb866c7f762&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=7e199c07-31f8-4f8d-9bc0-e06e54def3d2&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/7e199c07-31f8-4f8d-9bc0-e06e54def3d2?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/lookup?id=269344324&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ASTRO",
+   "album": "Bio-Galaxy",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 14f589f5-ffa4-4d19-a266-b055bb8af4e2。回問確認：title「Bio-Galaxy」、artist-credit「ASTRO」、first-release-date 2000、primary-type Album、secondary-types 空、轄下 2 個 release（DE 2000 Tochnit Aleph TA 027 Official／XW 2021 無廠牌 Official）。藝人 MBID fa465468-8bf0-4b99-b955-0f41ecb87f80，以分頁全列 108 個 RG。刻意不釘：2d19af2c-9946-4850-84a6-9675edbbac95《M.S.G. of Electronics Wave》（1997）、e6857f74-7cd0-42b1-a0b2-f39161b121cb《Acid Safari》（1998）與 159e15c8-0406-4547-9eba-611c5d86d557《Acid Beach》（2002，盤名近似）、80b34548-49ae-439e-b3c2-c376500f6929《Geocentric Ecstasy》（1999）、a956f219-c9db-471a-875c-b20fa3c8969c《Resonance Universe》（2001）、7eda7079-8e27-4acd-9947-72b12671f18f《Astro / Nave》（split）。",
+    "rgMbid": "14f589f5-ffa4-4d19-a266-b055bb8af4e2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/14f589f5-ffa4-4d19-a266-b055bb8af4e2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 69,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "2000 年那張 CD-R 上是完整不切的一軌，二十一年後才分成兩段。切開後是三十分四十一秒與三十一分零二秒，只差二十一秒，全碟超過一小時。這個名字是長谷川洋 1993 年起的個人計畫，當時他仍在 C.C.C.C. 裡，兩條線同時在跑；器材用的是老式的類比合成器。這張出在德國一家小廠，同廠的前一筆是三年前的十二吋黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/14f589f5-ffa4-4d19-a266-b055bb8af4e2?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=14f589f5-ffa4-4d19-a266-b055bb8af4e2&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=fa465468-8bf0-4b99-b955-0f41ecb87f80&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Astro%20(Japanese%20band)",
+     "https://musicbrainz.org/ws/2/artist/fa465468-8bf0-4b99-b955-0f41ecb87f80?fmt=json&inc=aliases+artist-rels",
+     "https://musicbrainz.org/release-group/14f589f5-ffa4-4d19-a266-b055bb8af4e2"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ハナタラシ",
+   "album": "ハナタラシ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d21a0114-c2b9-3647-b5ef-0b4ec8920853。回問確認：title「ハナタラシ」、artist-credit「ハナタラシ」（artist MBID 2933f2b9-ff60-45b9-bace-ba31565a3990）、first-release-date 1985、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Alchemy Records ARLP-007）。藝人名下 27 個 RG 全列。刻意不釘：c88f5dc9-04b7-4657-b625-032b6adc6093《地獄の子守唄》（1986，credit 為「ハナタラシ + 恐悪狂人団」的合作盤）、779e793f-cbdf-3178-a3b9-f7fc190cfe40《2》與 26a365e1-ae71-30e6-88cb-50155172c106《Hanatarash 3》與 a6b07146-931e-3432-8571-c4f435c1f595《4: AIDS∼a∼Delic》與 b79ef047-1319-350a-8066-ff9f09b122c6《5: We Are 0:00》（數字續作系列）、995e6e90-009b-4519-9327-ee7d2f869095《ワースト セレクション》與 570cbf4b-d5c3-4294-b7b2-fa1ab4392d35《We Are Hardcore》（Album+Compilation）、98325689／ff6d37c8／460b7429（三筆 Album+Compilation+Live）。",
+    "selfTitledVerified": true,
+    "rgMbid": "d21a0114-c2b9-3647-b5ef-0b4ec8920853",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d21a0114-c2b9-3647-b5ef-0b4ec8920853/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 171,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八軌裡第三軌四十八秒，第七軌十七分五十三秒。長的那一軌一首就佔掉全碟三分之一以上，八軌總長約四十七分鐘，兩軌超過十分鐘、五軌不到五分鐘。團名的意思是流鼻涕的，這張發行之後，羅馬字拼法裡的 i 就被拿掉了。在此之前名下的四筆全是卡帶，1985 年這張才是第一張黑膠，出在 Alchemy Records、編號 ARLP-007。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d21a0114-c2b9-3647-b5ef-0b4ec8920853?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=d21a0114-c2b9-3647-b5ef-0b4ec8920853&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=2933f2b9-ff60-45b9-bace-ba31565a3990&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Hanatarash",
+     "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%82%BF%E3%83%A9%E3%82%B7",
+     "https://musicbrainz.org/release-group/d21a0114-c2b9-3647-b5ef-0b4ec8920853"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "灰野敬二",
+   "album": "滲有無",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ee8732e3-2a6c-40c2-a55a-92b33de7d08c。回問確認：title「滲有無」、artist-credit「灰野敬二」、first-release-date 1990、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1990 P.S.F. Records PSFD-7 Official／1 筆 Pseudo-Release）。藝人 MBID 00f58b1e-fdb3-4971-8cb0-dc5a3f188ade（Person／Tokyo／1952-05-03），以 release-group?artist=…&limit=100&offset= 分頁全列 121 個 RG（分兩頁取回）。刻意不釘：67e1cebc-233a-34a9-b0cb-45e7d5955342《わたしだけ？》（1981-09；池中已有其再發卡《Watashi Dake?》）、d7189513-9915-3350-9309-7560c4e3902f《So, Black Is Myself》（1997-04-10）、90c6a4e6-276d-36d4-8f65-5bf15171829f《Beginning and End, Interwoven》（1994）、ee691990-4b82-389c-ba24-decd66574ac9《運命への挑戦》（1994）、86b1999e-a1c5-41c1-8d9a-f06b7175a698《The Book of \"Eternity Set Aflame\"》（1996）、e4226c14-9397-456b-9831-7c661c488840（Keiji Haino & The Hardy Rocks）與 50654646-0d9a-4760-8ecb-4612a01178cc（Peter Brötzmann / Keiji Haino Duo）為另立的合作團實體，不併入本卡。",
+    "rgMbid": "ee8732e3-2a6c-40c2-a55a-92b33de7d08c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ee8732e3-2a6c-40c2-a55a-92b33de7d08c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 250,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一段五十三分四十一秒的錄音從頭到尾沒有分軌。整張碟因此沒有曲序可談。這個漢字盤名同時是灰野敬二個人名義下一個計畫的名字，羅馬字讀作 Nijiumu。1990 年由 P.S.F. Records 發行、編號 PSFD-7；那家廠牌設在東京，專做地下迷幻與自由即興，名字取自四年前的另一張碟。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ee8732e3-2a6c-40c2-a55a-92b33de7d08c?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ee8732e3-2a6c-40c2-a55a-92b33de7d08c&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=00f58b1e-fdb3-4971-8cb0-dc5a3f188ade&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release?release-group=67e1cebc-9161-3d1d-a3d0-3b9d7c9e0e6d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://en.wikipedia.org/wiki/P.S.F.%20Records",
+     "https://ja.wikipedia.org/wiki/%E7%81%B0%E9%87%8E%E6%95%AC%E4%BA%8C",
+     "https://musicbrainz.org/release-group/ee8732e3-2a6c-40c2-a55a-92b33de7d08c"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "High Rise",
+   "album": "Psychedelic Speed Freaks",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 42f31afe-8070-49ff-b96a-db3e0fac3d6d。回問確認：title「Psychedelic Speed Freaks」、artist-credit「High Rise」、first-release-date 1984、primary-type Album、secondary-types [\"Live\"]、轄下 2 個 release（JP 1984 P.S.F. Records PSF-1 Official／JP 2014-06-18 U-Rythmix URMX-026 Official）。藝人 MBID 2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa，名下 15 個 RG 全列。刻意不釘：773b4045-61a2-3dc9-ae3a-2c38e75bc858《Psychedelic Speed Freaks 84–85》（1997，盤名只多年份尾綴且含 en dash）、84dbdd71-fd91-3582-a1ca-e1f86d9be4d5《High Rise II》（1986，Apple collectionId 1334370094 兩店可得，留給後續批）、a2239a30-783a-3fe8-84d5-dc40ed8f8cf9《Dispersion》（1992，Apple 1707587883）、35f38ec2-453a-3b4c-9593-d615b9cb043a《Disallow》（1996）、b671e29c-c68a-34b3-aebd-929c1c8e4480《Desperado》（1998）、507f5d0c-3758-3275-9ca6-9585c8ee858d《Destination: Best of High Rise》（Album+Compilation）、9ac57505-7b51-40e7-aa8f-03ad090c87e9《Tapes》（1986）。",
+    "rgMbid": "42f31afe-8070-49ff-b96a-db3e0fac3d6d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/42f31afe-8070-49ff-b96a-db3e0fac3d6d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 612,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名本來是樂團自己的名字，後來又變成廠牌的名字。這支團原本就叫 Psychedelic Speed Freaks，是發行方嫌這個名字太直接，才建議他們改叫 High Rise；而那家廠牌的名字反過來取自這張碟，編號就是 PSF-1。唱片本體四軌約二十六分鐘，收尾〈Take a Trip〉十一分三十三秒，一首就佔掉將近一半，第二軌的曲名則直接題作〈P.S.F.〉。這是一張現場專輯，錄的是人聲兼貝斯、吉他與鼓的三人編制，其中〈Stone Addict〉那一軌的鼓手另有其人。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/42f31afe-8070-49ff-b96a-db3e0fac3d6d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=42f31afe-8070-49ff-b96a-db3e0fac3d6d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://en.wikipedia.org/wiki/Psychedelic%20Speed%20Freaks",
+     "https://en.wikipedia.org/wiki/High%20Rise%20(band)",
+     "https://en.wikipedia.org/wiki/P.S.F.%20Records",
+     "https://musicbrainz.org/release-group/42f31afe-8070-49ff-b96a-db3e0fac3d6d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "不失者",
+   "album": "Allegorical Misunderstanding",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a7c14229-de5b-306a-8e37-93508b75d2eb。回問確認：title「Allegorical Misunderstanding」、artist-credit「不失者」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Avant AVAN 008）。藝人 MBID 19184fd0-fdff-4d80-aaf6-c196d7f21946（Group／Japan／1978），名下 24 個 RG 全列。刻意不釘：cbea5a38-7796-3d54-946d-092b519453cb《不失者》（1989-07，Album+Live；池中已有的《不失者 (Double Live)》即此碟）、c6849d15-7ba9-4f8e-99ec-418c81895e51《不失者》（1991-07-25，Album+Live，與前者同名的第二張，裁定 126 的雙胞胎）、b9ac8f9b-e631-3fba-88cb-be654b3a1be9《悲愴》（1994-09-21，留給後續批）、c2fd9e17-fb8a-325c-ad37-f51088c8ee26《もう少しこのまま》（1996）、779ecbeb-d248-31a3-8668-2d03f59874fd《来たる時》與 e438aba0-2ca2-3c40-a45f-9934749b9db1《完結されもしない死》（1997-04-21 同日兩張）、f08b1811-9098-4625-81bb-cbf5bf941e71《A Document Film of Keiji Haino》（Album+Soundtrack）。",
+    "rgMbid": "a7c14229-de5b-306a-8e37-93508b75d2eb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a7c14229-de5b-306a-8e37-93508b75d2eb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 502,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十軌全部叫〈Magic〉，用羅馬數字從 I 排到 X。第三軌只有一分十一秒，第九軌十三分五十四秒、一首就佔掉近三成，十軌總長約四十八分鐘，其餘七軌都在五分鐘以內。這張 1993 年出在 John Zorn 的廠牌 Avant，與他們多數作品所在的日本廠牌不同，也是不失者名下第一筆非現場作品——排在它前面的三筆都帶著現場標記。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a7c14229-de5b-306a-8e37-93508b75d2eb?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a7c14229-de5b-306a-8e37-93508b75d2eb&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://en.wikipedia.org/wiki/Fushitsusha",
+     "https://musicbrainz.org/ws/2/release-group?artist=19184fd0-fdff-4d80-aaf6-c196d7f21946&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/19184fd0-fdff-4d80-aaf6-c196d7f21946?fmt=json&inc=aliases+artist-rels",
+     "https://musicbrainz.org/release-group/a7c14229-de5b-306a-8e37-93508b75d2eb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zeni Geva",
+   "album": "Nai-Ha",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f86a084b-56a2-39ca-960e-9a7523cb5100。回問確認：title「Nai-Ha」、artist-credit「Zeni Geva」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 3 個 release（US 1993 Nipp Guitar NG D01×2 Official／US 1996 Skin Graft GR 40 Official）。藝人 MBID 4a48f534-9b66-495c-a934-b775beda1ca7（Group／Japan／1987），名下 21 個 RG 全列。刻意不釘：f43385e0-97db-3cbf-a87a-b59432895e88《Desire for Agony》（1993 同年，Apple 281865258 兩店可得，留給後續批）、5a461c29-ad1d-30df-8d43-1a813f2ffd04《Total Castration》（1991）、4bbf4a9b-0632-35e2-a2e7-8c33a4ee42f1《Maximum Money Monster》（1990）、350d48e2-a9d1-42db-bfd3-f16591366414《Vast Impotentz》（1986）與 09357a8a-b99f-4c8b-9206-758ae8a16ea0《How To Kill》（1987，早期 KK Null 名義時期）、eb38769a-0c81-363a-9f20-93aedd74914f《Freedom Bondage》（1995）、366adcf8-0797-42a5-ae08-ba745cb576d0《Maximum Implosion》（Album+Compilation）；作者的個人名義 KK Null（9c51604c，名下 250 個 RG）另立實體，不併入本卡。",
+    "rgMbid": "f86a084b-56a2-39ca-960e-9a7523cb5100",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f86a084b-56a2-39ca-960e-9a7523cb5100/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 1477,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三筆實體版本全部出在美國，沒有日本版。六軌總長約三十二分鐘，最短的〈Intercourse〉兩分三十二秒，標題曲七分二十六秒擺在第五軌，其餘四軌落在四到六分半之間。編制是三人，團長 KK Null（本名岸野一之）自稱這是一個 progressive hardcore 的三人組；日文那邊把盤名記作《内破》。發行年有 1992 與 1993 兩說，1996 年那套雙黑膠則是把這張與另一張碟合成一套，不是單獨重發。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f86a084b-56a2-39ca-960e-9a7523cb5100?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f86a084b-56a2-39ca-960e-9a7523cb5100&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/ZENI%20GEVA",
+     "https://en.wikipedia.org/wiki/KK%20Null",
+     "https://musicbrainz.org/ws/2/release-group?artist=4a48f534-9b66-495c-a934-b775beda1ca7&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/f86a084b-56a2-39ca-960e-9a7523cb5100"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

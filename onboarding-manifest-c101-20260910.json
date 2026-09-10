@@ -1,0 +1,2961 @@
+{
+ "schemaVersion": 1,
+ "batch": "c101-20260910",
+ "albums": [
+  {
+   "artist": "植松伸夫",
+   "album": "ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ddc91d7a-5201-3d83-abb6-b101c1a020c5。回問 release-group/<id>?inc=artist-credits+releases 確認：title「ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン」、artist-credit「植松伸夫」、first-release-date 1991-06-14、primary-type Album、secondary-types [Soundtrack]（依 §5.6 primary=Album 照一般 Album 寫法，例外欄位留空）、轄下 15 個 release（1991-06-14 JP/Official ×2、1994-11-26 JP/Official、2001-08-21 US/Official、2004-10-01 JP/Official、2005-05-10 US/Official、2013-07-03 JP/Official 與 Withdrawn 各一、2014 JP/Official，另有 1999 TW/Bootleg 與數筆 Pseudo-Release）。刻意不釘：8209b1c1-585f-34f0-bf2a-6c25f8e3711d《Piano Collections: Final Fantasy IV》（1992 鋼琴編曲盤，非原聲）、46236034-52b3-3000-8d58-324a350eed83《Final Fantasy IV: Celtic Moon》（1991 塞爾特編曲盤，非原聲）、a93a2d2c-c148-46df-b08a-ced7a540e5ed《FINAL FANTASY IV -Song of Heroes-》（2021 編曲盤）、81b5e11f-6013-4432-b758-b5ee59dbb5dc《FINAL FANTASY IV ORIGINAL SOUNDTRACK REVIVAL DISC》（2018 Blu-ray 復刻，非原盤）、f11d4032-1bbb-489d-b704-49cc9dd73639《FINAL FANTASY IV PIXEL REMASTER Original Soundtrack》（2021 重製版重錄，非原盤）、a8cf2b6e-0bc1-36d8-a07b-e2e08f48faf4《ファイナルファンタジーIV — MINIMUM ALBUM —》（1991 EP）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5，名下 235 個 release-group（release-group?artist=…&limit=100&offset= 分頁全列，非 25 筆上限）。",
+    "rgMbid": "ddc91d7a-5201-3d83-abb6-b101c1a020c5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ddc91d7a-5201-3d83-abb6-b101c1a020c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 33,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一天出兩種：CD 的 N23D-001，卡帶的 N20T-001。MusicBrainz 的 release 明細記兩筆都在 1991 年 6 月 14 日由 SQUARE BRAND 出，同樣是單片 44 軌；1994 年的 PSCN-5014 與 2004 年 NTT 出版的 NTCP-5014 也是同一份 44 軌重出。曲目自〈プレリュード〉起，末軌〈エンディング・テーマ〉。日文維基記 Super Famicom 版日本上市在同年 7 月 19 日，晚於碟。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ddc91d7a-5201-3d83-abb6-b101c1a020c5",
+     "https://musicbrainz.org/ws/2/release?release-group=ddc91d7a-5201-3d83-abb6-b101c1a020c5&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/04de52f7-a1d9-4d3c-a294-596d50ceffec",
+     "https://itunes.apple.com/lookup?id=61052896&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCIV",
+     "https://musicbrainz.org/release-group/89bddb55-5e9f-3b4c-b5cd-630c7265324a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/fa/59/d1fa59f8-9205-378d-31e6-6d61db909056/mzaf_10618107155390328400.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "61052896",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "植松伸夫",
+   "album": "ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 89bddb55-5e9f-3b4c-b5cd-630c7265324a。回問確認：title「ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン」、artist-credit「植松伸夫」、first-release-date 1994-03-25、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（1994-03-25 JP/Official、1994-12-01 US/Official、2004-10-01 JP/Official、2005-05-10 US/Official、2013-09-04 JP/Official、另有 TW/Bootleg 與 Pseudo-Release 數筆）。刻意不釘：21498594-e906-3572-82e0-c900408f6ae6《Piano Collections: Final Fantasy VI》（1994 鋼琴編曲盤，非原聲）、8e1e4a10-b7c2-333f-8550-ee7bf7aa135e《Final Fantasy VI: Grand Finale》（1994 管弦編曲盤，非原聲）、91814916-a02b-4716-b3f7-3d26a294b149《FINAL FANTASY VI ORIGINAL SOUNDTRACK REVIVAL DISC》（2019 Blu-ray 復刻，非原盤）、c6f5a22a-09ce-4b79-b54a-284e917024d6《FINAL FANTASY VI PIXEL REMASTER Original Soundtrack》（2022 重製版重錄，非原盤）、40e07cfb-5d8a-36a7-a3df-7ece4ad584d6《Final Fantasy VI STARS ☆ Volume 1》與 a28475d6-5ec6-33a2-beea-278e8d7319a5《Volume 2》（1994 EP）、31282312-db92-38cd-93d7-87b512fab4ef《Music From FFV and FFVI Video Games》（1999 合輯）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5。",
+    "rgMbid": "89bddb55-5e9f-3b4c-b5cd-630c7265324a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/89bddb55-5e9f-3b4c-b5cd-630c7265324a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 56,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "連著三軌都是歌劇段落：序曲、アリア、婚礼のワルツ〜決闘。MusicBrainz 的曲目表記那三軌排在第 32 至 34 軌，整套是 Squaresoft PSCN-5001〜5003 三片，25、20、16 軌共 61 軌。第一片自〈予兆〉〈炭坑都市ナルシェ〉起，第三片以〈蘇る緑〉〈プレリュード〉收。同一端點記 1994 年 12 月的美國盤 Squaresoft SQ108 換了盤名《Kefka's Domain》與編號，內容仍是同一套三片、同樣 61 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/89bddb55-5e9f-3b4c-b5cd-630c7265324a",
+     "https://musicbrainz.org/ws/2/release?release-group=89bddb55-5e9f-3b4c-b5cd-630c7265324a&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/d65a9f8a-c58d-42b6-aba4-9d31f65999eb",
+     "https://itunes.apple.com/lookup?id=62447175&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCVI",
+     "https://musicbrainz.org/release-group/d072b8eb-4047-3abf-8c67-a9afddfbbafa"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/73/eb/5173eb0c-0b15-893e-281a-6ea87611aaa3/mzaf_15159365046744810942.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "62447175",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "植松伸夫",
+   "album": "Final Fantasy VII: Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7fab854c-8d2f-31f3-aa82-ad7cbf7532eb。回問確認：title「Final Fantasy VII: Original Soundtrack」、artist-credit「植松伸夫」、first-release-date 1997-02-10、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（1997-02-10 JP/Official ×2、2004-05-10 JP/Official、2005-05-10 Official、2013-12-11 JP/Official、2015-07-01 JP/Official、XW/Official，另 TW/Bootleg ×4 與 Pseudo-Release ×2）。刻意不釘：92ecf836-5e3d-381c-94d9-b3c2b57ea870《Piano Collections: Final Fantasy VII》（2003 鋼琴編曲盤，非原聲）、84ba03ac-6ed2-41a1-ad83-236975dc047b《FINAL FANTASY VII / Reunion Tracks》（1997 編曲盤）、7780fc85-7213-478d-a869-f9ef21e3ef6b《FINAL FANTASY VII ORIGINAL SOUNDTRACK REVIVAL DISC》（2019 Blu-ray 復刻，非原盤）、92eabe3d-767a-4ef5-914e-16ee67c71b3e《FINAL FANTASY VII -Chiptune Arrangement Tracks-》（2024 編曲盤）、635f832c-d726-42bc-b4c8-382c8a40f636《SQUARE ENIX JAZZ -FINAL FANTASY VII-》（2020 爵士編曲盤）、7a1a51a6-7fbf-48e5-a15a-8d27896bf281《Final Fantasy VII Compilation Vinyl》（2022 黑膠選輯，非原盤）、24b29513-db10-3967-bf06-65faa53dab49《FINAL FANTASY VII ADVENT CHILDREN Original Soundtrack》（2005 電影原聲，另一部作品）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5。",
+    "rgMbid": "7fab854c-8d2f-31f3-aa82-ad7cbf7532eb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7fab854c-8d2f-31f3-aa82-ad7cbf7532eb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1176,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "台灣有四家翻過它：笙美、K-O、長榮、MIYA。MusicBrainz 的 release 清單把這四筆都標成 Bootleg——笙美 A&G-007〜010、K-O KO-99001〜99004、長榮 GM-219〜221、MIYA MICA-0071〜0074。原盤則是 1997 年 2 月 10 日 DigiCube 同日給出的兩個編號 SSCX-10003 與 SSCX-10004，四片 23、21、23、18 軌共 85 軌，末兩軌〈星の危機〉〈スタッフロール〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7fab854c-8d2f-31f3-aa82-ad7cbf7532eb",
+     "https://musicbrainz.org/ws/2/release?release-group=7fab854c-8d2f-31f3-aa82-ad7cbf7532eb&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/03555f37-df6a-4304-8456-f53be6ea128b",
+     "https://itunes.apple.com/lookup?id=61018952&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCVII"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/53/15/fa5315b2-b7f2-066a-9b13-913f5eb3fe35/mzaf_7971507406216683607.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "61018952",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "植松伸夫",
+   "album": "FINAL FANTASY IX Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d072b8eb-4047-3abf-8c67-a9afddfbbafa。回問確認：title「FINAL FANTASY IX Original Soundtrack」、artist-credit「植松伸夫」、first-release-date 2000-08-30、primary-type Album、secondary-types [Soundtrack]、轄下 12 個 release（2000-08-30 JP/Official ×2、2004-05-10 JP/Official 與 Pseudo-Release 各一、2004-05-10 Official、XW/Official ×2，另 TW/Bootleg ×2 與 Pseudo-Release ×3）。刻意不釘：33b0179f-1c00-3e86-b832-1285c8a1ec69《FINAL FANTASY IX Original Soundtrack PLUS》（2000 加曲盤，非本盤）、c3cc08c9-a534-3cac-98a3-5859d9438556《Piano Collections: Final Fantasy IX》（2001 鋼琴編曲盤，非原聲）、e24ed909-7757-38c4-822d-339dd19491b4《Uematsu's Best Selection: Music from the FINAL FANTASY IX Video Game》（2000 精選）、761c4816-123c-4e3b-9f05-97827566044e《FINAL FANTASY IX ORIGINAL SOUNDTRACK REVIVAL DISC》（2020 Blu-ray 復刻，非原盤）、82120017-fe8e-41a3-86bb-32e9a7cec839《FINAL FANTASY IX -Chiptune Arrangement Tracks-》（2025 編曲盤）、b7ac8000-6e4d-4853-95fe-21bd146ca28b《FINAL FANTASY IX 25th Anniversary Vinyl - Timeless Tale -》（2025 黑膠選輯，非原盤）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5。",
+    "rgMbid": "d072b8eb-4047-3abf-8c67-a9afddfbbafa",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d072b8eb-4047-3abf-8c67-a9afddfbbafa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2058,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第 108、109 軌是可口可樂的十五秒與三十秒廣告曲。MusicBrainz 的曲目表把那兩軌記成〈CCJC TVCM 15″〉〈CCJC TVCM 30″〉，整套是 2000 年 8 月 30 日 DigiCube 的 SSCX-10043〜10046，四片 32、26、26、26 軌共 110 軌，末軌〈Melodies of Life [The Layers of Harmony]〉。2004 年 5 月 10 日再以 SQEX-10009〜10012 重出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d072b8eb-4047-3abf-8c67-a9afddfbbafa",
+     "https://musicbrainz.org/ws/2/release?release-group=d072b8eb-4047-3abf-8c67-a9afddfbbafa&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/92594dcc-390d-4b9b-888e-441ca2cead1d",
+     "https://itunes.apple.com/lookup?id=75003561&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCIX"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/23/1a/96/231a96f1-aeec-7679-de71-865d6518289a/mzaf_3623396584316102171.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "75003561",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "近藤浩治",
+   "album": "スーパーマリオ64 オリジナルサウンドトラック",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cc4e6e38-e13b-3426-8e0f-1edceb2ada60。回問確認：title「スーパーマリオ64 オリジナルサウンドトラック」、artist-credit「近藤浩治」、first-release-date 1996-07-19、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（1996-07-19 JP/Official＝Pony Canyon PCCG-00357／36 軌、1996-11 US/Official CD、1996 US/Official 卡帶、1997 DE/Promotion）。刻意不釘：39940047-f68e-499a-9d15-e6bd6942b830《Super Mario 64 DS》（2005 重製版）、6bc3131d-094c-4dcd-9bb8-93ba224e9915《Original Cuts From the Hottest Nintendo 64 Games: Super Mario 64 & Wave Race 64》（1996 促銷合輯）、2bc62c09-33c0-43f0-8287-aed90c1b0b70《スーパーマリオ64》（2024，primary-type Other）。藝人 MBID c376498a-cdf6-422b-9055-3fce84424402，名下 90 個 release-group（分頁全列）。",
+    "rgMbid": "cc4e6e38-e13b-3426-8e0f-1edceb2ada60",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cc4e6e38-e13b-3426-8e0f-1edceb2ada60/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 117,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場第一軌只有一句話：マリオだよ。MusicBrainz 的曲目表記 1996 年 7 月 19 日的 NINTENDO64 Sound Series PCCG-00357 是單片 36 軌，語音軌之後接〈タイトル〉〈メインテーマ〉，末軌〈パックンフラワーの子守歌〉排在〈スタッフロール〉之後。同年 11 月任天堂美國分公司自行出了 CD 與卡帶各一版；1997 年德國另有一筆 Nintendo of Europe 94009 的促銷盤，同樣 36 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/cc4e6e38-e13b-3426-8e0f-1edceb2ada60",
+     "https://musicbrainz.org/ws/2/release?release-group=cc4e6e38-e13b-3426-8e0f-1edceb2ada60&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/b6d70811-a3bf-4a81-bc81-3ebfda5718a4",
+     "https://itunes.apple.com/lookup?id=305472810&entity=album&limit=200&country=jp",
+     "https://itunes.apple.com/search?term=Super%20Mario%2064%20Original%20Soundtrack&entity=album&limit=15&country=us",
+     "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA64"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "近藤浩治",
+   "album": "ゼルダの伝説 時のオカリナ オリジナルサウンドトラック",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 61fb70ad-198e-4cae-9107-03f28e7abe29。回問確認：title「ゼルダの伝説 時のオカリナ オリジナルサウンドトラック」、artist-credit「近藤浩治」、first-release-date 1998-11、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（1998-11 US/Official、1998-12-18 JP/Official＝Pony Canyon PCCG-00475／82 軌、1998 US/Official ×2、1998 DE/Promotion，另 Bootleg ×2 與 Pseudo-Release ×1）。刻意不釘：00bc7e74-d0e5-4268-8a21-7263c7bb52da《ゼルダの伝説 ～時のオカリナ～ ハイラル・シンフォニー》（1999 管弦編曲盤，非原聲）、13d08e63-b199-3668-8f11-d75fb47b0913《ゼルダの伝説 時のオカリナ リアレンジ・アルバム》（1999 編曲盤）、3c53bdc8-efa3-4d80-bce9-64600ad45da5《ゼルダの伝説 時のオカリナ 3D オリジナル サウンドトラック》（2011 重製版，非原盤）、8ba3459a-de56-4e51-86b5-b79768088220《The Legend of Zelda: Ocarina of Time, Volume II - The Lost Tracks》（1999，secondary-types 含 Remix）、eb30a8cf-587d-4737-81ab-0be91b7c31ab《Hyrule: Music From the Original the Legend of Zelda Ocarina of Time Soundtrack》（1998 EP/Remix）。藝人 MBID c376498a-cdf6-422b-9055-3fce84424402。",
+    "rgMbid": "61fb70ad-198e-4cae-9107-03f28e7abe29",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/61fb70ad-198e-4cae-9107-03f28e7abe29/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 343,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一張碟：日本收 82 軌，美國 35 軌，德國 30 軌。MusicBrainz 記日本版是 1998 年 12 月 18 日的 NINTENDO64 Sound Series PCCG-00475，單片 82 軌；北美那筆由 Nintendo of America 自營發行，德國那筆是 Nintendo of Europe 94040 的促銷盤。日本盤曲名一律英日並列，第 1 軌〈Title Theme（タイトル）〉，末軌〈End Credits（スタッフロール）〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/61fb70ad-198e-4cae-9107-03f28e7abe29",
+     "https://musicbrainz.org/ws/2/release?release-group=61fb70ad-198e-4cae-9107-03f28e7abe29&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/6f1fef64-bced-4e0a-bc4b-8091a79178ee",
+     "https://itunes.apple.com/search?term=%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC%20%E6%99%82%E3%81%AE%E3%82%AA%E3%82%AB%E3%83%AA%E3%83%8A&entity=album&limit=15&country=jp",
+     "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC_%E6%99%82%E3%81%AE%E3%82%AA%E3%82%AB%E3%83%AA%E3%83%8A"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "近藤浩治",
+   "album": "ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 745f04d2-3408-39a9-ac60-c598b9c6128b。回問確認：title「ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック」、artist-credit「近藤浩治」、first-release-date 2000-06-23、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（2000-06-23 JP/Official＝Pioneer LDC PICA-2006、2000-11-15 US/Official、2015-10-07 JP/Official＝Symphony No.5、?/JP Geneon PICA-2006，另 DE/Promotion ×2、US/Promotion、TW/Bootleg ×3、Pseudo-Release ×2）。刻意不釘：723603a7-e406-44c3-9da7-1bda7da4b5f4《THE LEGEND OF ZELDA: ムジュラの仮面 オーケストレーションズ》（2000 管弦編曲盤，非原聲）、83f4c743-3798-4d47-8ed9-ea92cce488d2《Majora's Mask -Our World Awaits You!-》（2000 選輯）、cecdb9d1-9bad-480b-9e15-8f433e34abe9《Majora's Mask Game Music Soundtrack CD》（2000 選輯）。藝人 MBID c376498a-cdf6-422b-9055-3fce84424402。",
+    "rgMbid": "745f04d2-3408-39a9-ac60-c598b9c6128b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/745f04d2-3408-39a9-ac60-c598b9c6128b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 107,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "2013 年美國又壓了一次，掛的是 Club Nintendo 的促銷盤。MusicBrainz 的 release 明細記那筆編號 81456A、兩片 59 與 53 軌，與 2000 年 6 月 23 日 Pioneer LDC 的 PICA-2006 同規格；同編號另有一筆掛 Geneon，軌數也一樣。第一片自〈タイトルデモ〉起，第二片以〈巨人去る〉〈スタッフロール〉收。北美版則在 2000 年 11 月 15 日由 Nintendo of America 自營發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/745f04d2-3408-39a9-ac60-c598b9c6128b",
+     "https://musicbrainz.org/ws/2/release?release-group=745f04d2-3408-39a9-ac60-c598b9c6128b&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/b843bebf-d790-4215-ab70-6089d1644af6",
+     "https://itunes.apple.com/search?term=Majora%27s%20Mask%20Original%20Soundtrack&entity=album&limit=15&country=us",
+     "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC_%E3%83%A0%E3%82%B8%E3%83%A5%E3%83%A9%E3%81%AE%E4%BB%AE%E9%9D%A2"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "下村陽子",
+   "album": "LIVE A LIVE オリジナル・サウンドトラック",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 743d0014-f626-3715-83dd-bea0f254e15a。回問確認：title「LIVE A LIVE オリジナル・サウンドトラック」、artist-credit「下村陽子」、first-release-date 1994-08-25、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release（1994-08-25 JP/Official＝NTT出版 PSCN-5007／41 軌、2012-05-02 JP/Official＝SQUARE ENIX SQEX-10308／43 軌、2014 JP/Official、2023-08-02 JP 與 XW/Official，另 TW/Bootleg、XW/Withdrawn、Pseudo-Release ×2）。刻意不釘：27135bbb-5c88-4afc-9a2c-16de734485fc《LIVE A LIVE HD-2D Remake Original Soundtrack》（2022 重製版重錄，非原盤）。藝人 MBID b3933fd6-fba9-44b1-992a-1e8128324ca1，名下 80 個 release-group（分頁全列）。",
+    "rgMbid": "743d0014-f626-3715-83dd-bea0f254e15a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/743d0014-f626-3715-83dd-bea0f254e15a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 59,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "初版印的是サウンド・ヴァージョン，再版才改叫サウンドトラック。MusicBrainz 記 1994 年 8 月 25 日 NTT 出版的 PSCN-5007 是單片 41 軌，盤名印《ライブ・ア・ライブ オリジナル・サウンド・ヴァージョン》，開場〈LIVE・A・LIVE〉、收尾〈Live for Live〉。2012 年 SQUARE ENIX 以 SQEX-10308 重出時改用後一個名字，尾端追加〈Battlissimo〉與〈Forgotten Wings〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/743d0014-f626-3715-83dd-bea0f254e15a",
+     "https://musicbrainz.org/ws/2/release?release-group=743d0014-f626-3715-83dd-bea0f254e15a&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/ed97350b-1461-4118-bfbc-f491c70fffb9",
+     "https://itunes.apple.com/lookup?id=1696074156&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%BB%E3%82%A2%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%96"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/6a/1b/d5/6a1bd526-6188-16a4-d40d-e5a0d4e83e36/mzaf_10491687139150170847.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1696074156",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "下村陽子",
+   "album": "聖剣伝説 Legend of Mana オリジナル・サウンドトラック",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 06bef54a-d29e-3201-9c07-768e4c5e79e6。回問確認：title「聖剣伝説 Legend of Mana オリジナル・サウンドトラック」、artist-credit「下村陽子」、first-release-date 1999-07-23、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（1999-07-23 JP/Official＝DigiCube SSCX-10034、2004-10-20 JP/Official＝SQUARE ENIX SQEX-10036／10037，另 TW/Bootleg 與 Pseudo-Release 各一）。刻意不釘：3c5f5d1e-b305-4b62-af44-33d1783d444e《聖剣伝説 レジェンド オブ マナ Remastered: The Soundtrack》（2021 重製版，非原盤）、aff4e617-6274-4257-87bc-5dc99d835224《聖剣伝説 LEGEND OF MANA Arrangement Album - Promise -》（2015 編曲盤，非原聲）、088be213-a9c8-4236-81be-0d46154152f1《聖剣伝説 音楽大全集》（2011 系列合輯）。藝人 MBID b3933fd6-fba9-44b1-992a-1e8128324ca1。",
+    "rgMbid": "06bef54a-d29e-3201-9c07-768e4c5e79e6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/06bef54a-d29e-3201-9c07-768e4c5e79e6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 228,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Song of MANA〉在碟頭與碟尾各出現一次。MusicBrainz 記第一片第 4 軌是〈Song of MANA 〜Opening Theme〜〉，第二片末軌是〈Song of MANA 〜Ending Theme〜〉，整套兩片 23 與 32 軌共 55 軌，1999 年 7 月 23 日由 DigiCube 以 SSCX-10034 出。2004 年 SQUARE ENIX 再以 SQEX-10036／10037 重出，分片與軌數一樣。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/06bef54a-d29e-3201-9c07-768e4c5e79e6",
+     "https://musicbrainz.org/ws/2/release?release-group=06bef54a-d29e-3201-9c07-768e4c5e79e6&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/f7daa7f3-2760-4a3f-bec9-65b91565a484",
+     "https://itunes.apple.com/lookup?id=251753897&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E8%81%96%E5%89%A3%E4%BC%9D%E8%AA%AC_LEGEND_OF_MANA"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/69/02/28/690228ae-313a-91fd-b1a2-18e6200cd7fe/mzaf_4529965420110934101.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "251753897",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "下村陽子",
+   "album": "Kingdom Hearts Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a1273258-87eb-4134-b9d7-2603d85388b4。回問確認：title「Kingdom Hearts Original Soundtrack」、artist-credit「下村陽子」、first-release-date 2002-03-27、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（2002-03-27 JP/Official＝EASTWORLD TOCT-24768／24769、2002-03-27 JP/Pseudo-Release、2003-03-11 XE/Official＝EASTWORLD／Virgin 7243 5 80453 21，另 TW/Bootleg 一筆）。刻意不釘：88712810-51f1-3707-8eb9-1cd9464b49f3《KINGDOM HEARTS Original Soundtrack COMPLETE》（2007 全集合輯）、62aa0701-d3d2-4404-be44-a5d009ab91a2《Piano Collections KINGDOM HEARTS FIELD & BATTLE》（2010 鋼琴編曲盤）、c748e084-839d-4886-a3eb-f8e6001db10e《KINGDOM HEARTS 20TH ANNIVERSARY VINYL LP BOX》（2023 黑膠盒，非原盤）、430b0f09-2bde-473b-b50e-106eaa808422《KINGDOM HEARTS Orchestra -World Tour-》（2017 管弦音樂會）、24a1469c-4d7e-4643-8d93-c96c15c341f3《KINGDOM HEARTS -HD 1.5 & 2.5 ReMIX- Original Soundtrack BOX》（2014 重製版）。藝人 MBID b3933fd6-fba9-44b1-992a-1e8128324ca1。",
+    "rgMbid": "a1273258-87eb-4134-b9d7-2603d85388b4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a1273258-87eb-4134-b9d7-2603d85388b4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1050,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片上同時掛著 Squaresoft 與 Walt Disney Records。MusicBrainz 記 2002 年 3 月 27 日 EASTWORLD 的 TOCT-24768／24769 是兩片 41 與 35 軌共 76 軌。第 1 軌〈Dearly Beloved〉之後，第 2、3 軌是同一首〈光〉的兩個改編版，第二片以〈Destati〉收。2003 年 EASTWORLD 與 Virgin 在歐洲以 7243 5 80453 21 出了同一套。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a1273258-87eb-4134-b9d7-2603d85388b4",
+     "https://musicbrainz.org/ws/2/release?release-group=a1273258-87eb-4134-b9d7-2603d85388b4&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/cc716887-be12-3d0c-a7ae-34d2c6fa5613",
+     "https://itunes.apple.com/lookup?id=251707493&entity=album&limit=200&country=jp",
+     "https://itunes.apple.com/search?term=KINGDOM%20HEARTS&entity=album&limit=200&country=jp",
+     "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0_%E3%83%8F%E3%83%BC%E3%83%84"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "光田康典",
+   "album": "クロノ・トリガー オリジナル・サウンド・ヴァージョン",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9e5bbb98-c915-314a-871a-eab6ed7dc6f5。回問確認：title「クロノ・トリガー オリジナル・サウンド・ヴァージョン」、artist-credit「光田康典」、first-release-date 1995-03-25、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（1995-03-25 JP/Official＝NTT出版 PSCN-5021〜5023、2004-10-01 JP/Official＝NTCP-5021〜5023、2019-07-10 JP/Official＝SQEX-20066 Blu-ray，另 TW/Bootleg、Bootleg、Pseudo-Release ×2）。刻意不釘：335a2416-64a9-3572-ab6b-54fe93447176《Chrono Trigger Original Soundtrack》（1999 DigiCube 重製版，非原盤）、ef116c91-cf79-371d-bb68-39e99733ff02《Chrono Trigger: The Brink of Time》（1995 acid-jazz 編曲盤，非原聲）、c19cb7ee-6bf5-4571-adf0-50eb56144bcd《Chrono Trigger Original Soundtrack》（2009 DS 版，非原盤）、5e0a65bb-2fdf-46a2-b88f-e8a6421f886a《CHRONO TRIGGER Orchestral Arrangement》（2019 管弦編曲盤）、48cedac5-2df6-4bd9-88ea-bb66511c75ce《SQUARE ENIX JAZZ -CHRONO TRIGGER-》（2022 爵士編曲盤）、18f79ab3-99e4-469a-915f-d5bd2f4def01《Chrono Trigger Remixes》（2007）。藝人 MBID 118bf512-9ce9-42a5-95e0-10359bb3e3ea，名下 84 個 release-group（分頁全列）。",
+    "rgMbid": "9e5bbb98-c915-314a-871a-eab6ed7dc6f5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9e5bbb98-c915-314a-871a-eab6ed7dc6f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 290,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟上只掛他一個名字，遊戲的作曲欄列了三個。MusicBrainz 的 artist-credit 只有光田康典，日文維基〈クロノ・トリガー〉的 composer 欄則是光田康典、植松伸夫、松枝賀子。碟是 1995 年 3 月 25 日 NTT 出版的 PSCN-5021〜5023，三片 23、24、17 軌共 64 軌，自〈予感〉起、以〈遥かなる時の彼方へ〉收。2019 年 SQUARE ENIX MUSIC 的 SQEX-20066 把同樣 64 軌壓成單片藍光。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9e5bbb98-c915-314a-871a-eab6ed7dc6f5",
+     "https://musicbrainz.org/ws/2/release?release-group=9e5bbb98-c915-314a-871a-eab6ed7dc6f5&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/d17cc3f8-4a96-4838-8910-f2d952f691ea",
+     "https://itunes.apple.com/lookup?id=182599998&entity=album&limit=200&country=jp",
+     "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8E%E3%83%BB%E3%83%88%E3%83%AA%E3%82%AC%E3%83%BC"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "光田康典",
+   "album": "Xenogears Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3f90f58a-37ba-375e-9e76-db6e6a60bd2d。回問確認：title「Xenogears Original Soundtrack」、artist-credit「Yasunori Mitsuda」（羅馬拼音，卡片掛名依第 120 條改採 MB 實體名 `光田康典`，理由見 risk）、first-release-date 1998-03-01、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（1998-03-01 JP/Official ×2＝DigiCube SSCX 10013、2005-02-23 JP/Official＝SQEX-10043／10044、2018-04-04 JP/Official ×2＝SQEX-20048 Blu-ray、2023-02-10 XW/Official，另 TW/Bootleg ×3、Pseudo-Release ×4）。刻意不釘：04b2c678-1a5b-40d5-bf28-ff305e79c9a8《Myth: The Xenogears Orchestral Album》（2011 管弦編曲盤，非原聲）、ece06f1d-4c97-31f5-ba97-08d30591e868《CREID》（1998 編曲盤，secondary-types Remix）、5bcb0d72-2ca4-4918-bcfa-7610937cb1eb《Xenogears 20th Anniversary Concert》（2019 現場）。藝人 MBID 118bf512-9ce9-42a5-95e0-10359bb3e3ea。",
+    "rgMbid": "3f90f58a-37ba-375e-9e76-db6e6a60bd2d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3f90f58a-37ba-375e-9e76-db6e6a60bd2d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2082,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二軌的曲名後面就標著 OUT TAKE。MusicBrainz 的曲目表記那是〈STARS OF TEARS (OUT TAKE)〉，排在第 1 軌〈冥き黎明〉之後。日文維基〈ゼノギアス〉的唱片表獨立記著同一筆品番 SSCX-10013、デジキューブ，備考欄寫它收的是遊戲用曲，外加一首把場景曲填上詞的開場主題曲。整套 1998 年 3 月 1 日出，兩片 25 與 19 軌共 44 軌，2005 年再以 SQEX-10043／10044 重出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3f90f58a-37ba-375e-9e76-db6e6a60bd2d",
+     "https://musicbrainz.org/ws/2/release?release-group=3f90f58a-37ba-375e-9e76-db6e6a60bd2d&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/647e2f7b-dfd1-4b4e-beb1-c63721275f2d",
+     "https://itunes.apple.com/lookup?id=296408171&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%8E%E3%82%AE%E3%82%A2%E3%82%B9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/6c/cb/cd/6ccbcd3c-db21-05da-ca5b-49b2cc0bbe21/mzaf_7124813709097721435.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "296408171",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "光田康典",
+   "album": "Chrono Cross Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 93f27892-85b8-3959-bfd3-038990078f5b。回問確認：title「Chrono Cross Original Soundtrack」、artist-credit「光田康典」、first-release-date 1999-12-12（MB 記的最早一筆是 1999-12-12 TW/Bootleg；最早的 Official 是 1999-12-18 JP＝DigiCube SSCX-10040，年份同為 1999）、primary-type Album、secondary-types [Soundtrack]、轄下 10 個 release（1999-12-18 JP/Official、2005-06-29 JP/Official、2019-09-04 XW/Official、2019-09-07 JP/Official，另 TW/Bootleg ×4、Pseudo-Release ×2）。刻意不釘：894efb3a-a273-4b8a-97ec-a4999182d785《CHRONO CROSS Orchestral Arrangement》（2019 管弦編曲盤，非原聲）、da9c7d47-8c59-3357-ae0b-fd34c7f8dcb5《Chrono Cross: Music Selection》（2000 精選）、b7edfcd3-181b-4f7e-b8a6-0b6138a2fec4 與 151ea528-c0a4-4e80-a9bf-933434bc9fa0（2020／2021 兩張 20 週年現場盤）、705e2d2a-c4c2-45bc-a238-634c2937c2e6《CHRONO ORCHESTRA Arrangement BOX》（2019 編曲盒）。藝人 MBID 118bf512-9ce9-42a5-95e0-10359bb3e3ea。",
+    "rgMbid": "93f27892-85b8-3959-bfd3-038990078f5b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/93f27892-85b8-3959-bfd3-038990078f5b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2325,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場曲的名字有兩種寫法：〈時の傷跡〉與〈時の傷痕〉。MusicBrainz 的曲目表把第 1 軌記成〈CHRONO CROSS ～時の傷跡～〉，碟是 1999 年 12 月 18 日 DigiCube 的 SSCX-10040，三片 25、26、16 軌共 67 軌，第三片以〈RADICAL DREAMERS〜盗めない宝石〜〉〈夢のかけら〉收。2005 年 SQEX-10047〜10049 重出，2019 年的 SQEX-20068 把同 67 軌壓成單片藍光。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/93f27892-85b8-3959-bfd3-038990078f5b",
+     "https://musicbrainz.org/ws/2/release?release-group=93f27892-85b8-3959-bfd3-038990078f5b&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/083be5b8-b7da-41fa-8578-5a4ac6136c1d",
+     "https://itunes.apple.com/lookup?id=1435281114&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8E%E3%83%BB%E3%82%AF%E3%83%AD%E3%82%B9",
+     "https://musicbrainz.org/release-group/3f90f58a-37ba-375e-9e76-db6e6a60bd2d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/8c/13/898c139a-4c25-2e95-0c5e-61af3a3c92e5/mzaf_17323850078262433137.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1435281114",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "崎元仁 / 岩田匡治",
+   "album": "FINAL FANTASY TACTICS Original Sound Track",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 77f7682d-f156-39a6-9517-9e275e4e4ffa。回問確認：title「FINAL FANTASY TACTICS Original Sound Track」、artist-credit「岩田匡治 & 崎元仁」（卡片掛名改採 `崎元仁 / 岩田匡治`，理由見 risk）、first-release-date 1997-06-21、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release（1997-06-21 JP/Official＝DigiCube SSCX-10008、2006-03-24 JP/Official＝SQEX-10066／10067、2007-05-30 XW/Official 數位、XW/Official，另 TW/Bootleg ×3、Pseudo-Release ×2）。刻意不釘：0559d73c-d5da-4fdb-b1ab-44869842cd88《FINAL FANTASY TACTICS Best Selection - Vinyl Soundtrack》（2025 黑膠選輯，非原盤）、69bf8215-02a6-4c6a-badb-286f4d4bb6ba《FINAL FANTASY TACTICS Complete Soundtrack》（2025 重製版全集）、650c9c2b-5cf8-30d0-bb24-b019c5c00df6《FINAL FANTASY TACTICS ADVANCE Original Soundtrack》（2003 另一部作品）、19e7e540-c839-4e47-a357-2cdde27bc680《Final Fantasy Tactics A2》（2007 另一部作品）、53b7d96f-c386-4a68-9968-047bbe9ddcb9《FINAL FANTASY TACTICS ADVANCE RADIO EDITION》（廣播劇，secondary-types Audio drama）。藝人 MBID 53a2cda4-31d0-405e-8a9d-5027c2479ebb（崎元仁），名下 86 個 release-group（分頁全列）。",
+    "rgMbid": "77f7682d-f156-39a6-9517-9e275e4e4ffa",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/77f7682d-f156-39a6-9517-9e275e4e4ffa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "遊戲六月二十日上市，唱片二十一日就跟著出。日文維基〈ファイナルファンタジータクティクス〉記 PlayStation 版日本 1997 年 6 月 20 日發售，MusicBrainz 記唱片 6 月 21 日由 DigiCube 以 SSCX-10008 出，兩片 42 與 29 軌共 71 軌。第 1 軌〈Bland Logo~Title Back〉，第二片以〈Staff Credit〉收；2006 年再以 SQEX-10066／10067 重出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/77f7682d-f156-39a6-9517-9e275e4e4ffa",
+     "https://musicbrainz.org/ws/2/release?release-group=77f7682d-f156-39a6-9517-9e275e4e4ffa&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/58639926-8fd0-467a-8da2-4cb9e9452386",
+     "https://itunes.apple.com/lookup?id=255190011&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC%E3%82%BF%E3%82%AF%E3%83%86%E3%82%A3%E3%82%AF%E3%82%B9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/4b/61/9b4b613a-8e99-a3ed-01d2-7a9ac783cdb5/mzaf_18079647226537648329.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "255190011",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "崎元仁",
+   "album": "VAGRANTSTORY Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8eabbfc1-a141-3c63-b57a-7cb272fc0160。回問確認：title「VAGRANTSTORY Original Soundtrack」、artist-credit「崎元仁」、first-release-date 2000-03-08、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（2000-03-08 JP/Official＝DigiCube SSCX-10042、2006-03-04 JP/Official＝SQEX-10068／10069、XW/Official 數位，另 TW/Bootleg ×2、Pseudo-Release ×1）。同一藝人名下沒有第二筆同名 release-group（分頁全列 86 筆確認過）。藝人 MBID 53a2cda4-31d0-405e-8a9d-5027c2479ebb。",
+    "rgMbid": "8eabbfc1-a141-3c63-b57a-7cb272fc0160",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8eabbfc1-a141-3c63-b57a-7cb272fc0160/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 80,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名在唱片上有三種寫法：連寫、分寫、片假名。MusicBrainz 底下三筆 Official 各用一種：2000 年 DigiCube SSCX-10042 作《VAGRANTSTORY》，2006 年 SQEX-10068／10069 作《ベイグラントストーリー》，另一筆作《Vagrant Story》。原盤兩片 26 與 31 軌共 57 軌，第 1 軌〈Opening Movie〉，第二片以〈Opening Movie \"Fight Mix\"〉收。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8eabbfc1-a141-3c63-b57a-7cb272fc0160",
+     "https://musicbrainz.org/ws/2/release?release-group=8eabbfc1-a141-3c63-b57a-7cb272fc0160&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/92c2fed1-02aa-4812-b32b-f664802e5ce2",
+     "https://itunes.apple.com/lookup?id=647861379&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%99%E3%82%A4%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC",
+     "https://musicbrainz.org/release-group/03b9cf7b-c87a-34b2-9988-7cbaee82b816"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/67/b4/18/67b41843-be1e-bda4-0aaa-53ed0f98b014/mzaf_7673524094877269886.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "647861379",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "崎元仁",
+   "album": "FINAL FANTASY XII Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 03b9cf7b-c87a-34b2-9988-7cbaee82b816。回問確認：title「FINAL FANTASY XII Original Soundtrack」、artist-credit「崎元仁」、first-release-date 2006-05-31、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2006-05-31 JP/Official ×2＝Aniplex SVWC-7351〜7354、2012-11-07 JP/Official＝SQEX-10343〜10346、XW/Official 數位，另 TW/Bootleg ×2、Pseudo-Release ×1）。刻意不釘：ba975f58-a124-4c63-8b1f-1fba4c20d573《FINAL FANTASY XII THE ZODIAC AGE Original Soundtrack》（2017 重製版重錄，非原盤）、1ee8be34-5044-4be3-8029-18192534cca0《…Collector's Edition Original Soundtrack》（2017）、4401ef1f-f677-46b4-b62e-c4802e121f5f《Piano Collections: Final Fantasy XII》（2012 鋼琴編曲盤，非原聲）、30de6a00-0382-4b2c-8c7b-68f0b033a693《FINAL FANTASY XII Original Soundtrack & Piano Collections》（2012 合體盤）、a7850d8a-ff22-471f-9398-412d54c81c33《Selections from Final Fantasy XII》（2006 精選）。藝人 MBID 53a2cda4-31d0-405e-8a9d-5027c2479ebb。",
+    "rgMbid": "03b9cf7b-c87a-34b2-9988-7cbaee82b816",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/03b9cf7b-c87a-34b2-9988-7cbaee82b816/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2095,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "編號掛在 Aniplex 名下：SVWC-7351 到 7354，四片一百軌。MusicBrainz 記 2006 年 5 月 31 日那兩筆 CD 的廠牌欄同時掛 Aniplex 與 SQUARE ENIX，四片各 30、25、24、21 軌，自〈ループデモ〉起。第四片的第 19、20 軌是植松伸夫的〈Kiss Me Good-Bye〉與〈交響詩「希望」〉。同一端點記 2012 年 11 月 7 日以 SQEX-10343〜10346 重出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/03b9cf7b-c87a-34b2-9988-7cbaee82b816",
+     "https://musicbrainz.org/ws/2/release?release-group=03b9cf7b-c87a-34b2-9988-7cbaee82b816&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/d00eebce-aec9-4901-988e-1626387469b5",
+     "https://itunes.apple.com/lookup?id=572844917&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCXII"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/fd/89/4afd8964-f8d2-0790-32cd-5a66e170aec2/mzaf_18216556661568562218.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "572844917",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "古代祐三",
+   "album": "Actraiser",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 88f8721f-970c-3b45-b4e5-206e4ae155ea。回問確認：title「Actraiser」、artist-credit「古代祐三」、first-release-date 1991-01-25、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（1991-01-25 JP/Official＝Alfa ALCA-105／18 軌／barcode 4988024007235，另 2019-04-08 XW/Bootleg 與 Pseudo-Release 各一）。刻意不釘：b60c498d-04c2-4c05-8c1f-5fd6d2af7366《Symphonic suite from ACTRAISER》（1991 管弦編曲盤，非原聲）、16c3ef42-2755-4010-bb10-ba28c74f164c《ActRaiser Original Soundtrack & Symponic Suite》（2021 合體再發，非原盤）、3a80df48-5455-42c6-8f8a-c90847e2ca2b《KOSHIRO YUZO EARLY COLLECTION》(1992) 與 52b321c5-398c-4df9-b8e8-e9463fa437d7《Yuzo Koshiro Early Collection Box》(2018)（兩筆精選）。藝人 MBID a4cda071-2ba4-4fa9-a50d-4378c408676d，名下 78 個 release-group（分頁全列）。",
+    "rgMbid": "88f8721f-970c-3b45-b4e5-206e4ae155ea",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/88f8721f-970c-3b45-b4e5-206e4ae155ea/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 644,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤面上的曲名全是大寫羅馬拼音：TENKUJO、KORIN、MAJU ARAWARU。MusicBrainz 記那份曲目自〈OPENING〉起、以〈ENDING〉收，唱片是 1991 年 1 月 25 日 Alfa 的 ALCA-105；同一份曲目在另一處改用日文曲名〈天空城〉〈降臨〉〈魔獣現る〉，兩種寫法一一對應。日文維基〈アクトレイザー〉的 Date 欄記 Super Famicom 版日本 1990 年 12 月 16 日發售，碟跨到了下一年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/88f8721f-970c-3b45-b4e5-206e4ae155ea",
+     "https://musicbrainz.org/release/87dc853a-3302-43fd-ad50-6a0fc2905731",
+     "https://itunes.apple.com/lookup?id=276661629&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=276664436&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%83%88%E3%83%AC%E3%82%A4%E3%82%B6%E3%83%BC"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ec/38/be/ec38be7b-8464-2364-2361-cea32a7e9462/mzaf_16313323754065114162.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "276661629",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "古代祐三",
+   "album": "Bare Knuckle",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 07b26e0c-1152-302c-83ca-32a5f33e1111。回問確認：title「Bare Knuckle」、artist-credit「Yuzo Koshiro」（卡片掛名依第 120 條改採 MB 實體名 `古代祐三`）、first-release-date 1991-09-21、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（1991-09-21 JP/Official＝G.M.O. Records ALCA-181／24 軌／barcode 4988024008478、2015-09 GB/Official ×3＝Data Discs DATA001／12 吋黑膠／16 軌、2017-12-15 FR/Official、2017 XW/Official、2020-03-09 XW/Official，另 Bootleg ×4）。刻意不釘：e77e578f-d076-4fe5-909f-bab3368791ae《Bare Knuckle II》（1993 續作）、eca28b23-3aae-37bb-a284-85f7dbbab9f6《Bare Knuckle III》（1994 續作）、f0ba5ed6-1d85-405d-bc6f-5c1070b96234《Streets of Rage (Game Gear)》（2016，另一個平台的音源）、0d895e3d-cdf0-3449-8d68-9385132359ad《The Super Shinobi & Works》（1989 合輯）。藝人 MBID a4cda071-2ba4-4fa9-a50d-4378c408676d。",
+    "rgMbid": "07b26e0c-1152-302c-83ca-32a5f33e1111",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/07b26e0c-1152-302c-83ca-32a5f33e1111/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 460,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十四軌裡的最後五軌，是前面那些曲子的編曲版。MusicBrainz 記 1991 年 9 月 21 日 G.M.O. Records 的 ALCA-181 收 24 軌：前 19 軌是遊戲曲，自〈The Street of Rage〉起，第 20 到 24 軌是其中五首的 arranged version。北美市場用的遊戲名是 Streets of Rage，後來的再發都以此名上架，2015 年 Data Discs 以 DATA001 做成 12 吋黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/07b26e0c-1152-302c-83ca-32a5f33e1111",
+     "https://musicbrainz.org/ws/2/release?release-group=07b26e0c-1152-302c-83ca-32a5f33e1111&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/a0c5c4c6-c52b-4689-9a44-c8245d116444",
+     "https://itunes.apple.com/lookup?id=1509127675&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1513110952&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%99%E3%82%A2%E3%83%BB%E3%83%8A%E3%83%83%E3%82%AF%E3%83%AB"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/8d/74/f18d74d2-0285-0c13-18ce-2db3e1c7c9ec/mzaf_11741950333664508687.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1509127675",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "岡部啓一",
+   "album": "NieR Gestalt & Replicant Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 344c2084-ab2e-4984-9304-bbfffff748ae。回問確認：title「NieR Gestalt & Replicant Original Soundtrack」、artist-credit「岡部啓一」、first-release-date 2010-04-21、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2010-04-21 JP/Official ×2＝SQUARE ENIX SQEX-10189／10190、2010-04-21 XW/Official 數位、2010-04-21 Official、2017-12-20 JP/Official，另 Pseudo-Release ×2）。刻意不釘：81e16967-fbb8-45ca-a329-b28c2fdd5aea《NieR Gestalt & Replicant 15 Nightmares & Arrange Tracks》（2010 編曲盤，非原聲）、e05d123f-d126-4728-84b6-0f2e37fa7c8f《Piano Collections NieR Gestalt & Replicant》（2012 鋼琴編曲盤）、ccafec85-b3ac-4506-9656-bc850d426596《NieR Gestalt & Replicant Orchestral Arrangement Album》（2018 管弦編曲盤）、282f1e0a-707c-4e37-a546-e7375b06dc26《NieR Replicant ver.1.22474487139… Soundtrack Weiss Edition》（2021 重製版，非原盤）、d0be4ef5-0e6e-42a9-acde-f79ec0441c48《NieR:Automata / NieR Gestalt & Replicant Original Soundtrack Vinyl Box Set》（2017 黑膠盒，非原盤）。藝人 MBID d82df34a-a1ff-45fa-ac50-c0b7454b201e，名下 63 個 release-group（分頁全列）。",
+    "rgMbid": "344c2084-ab2e-4984-9304-bbfffff748ae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/344c2084-ab2e-4984-9304-bbfffff748ae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 926,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟名並著兩個名字：Gestalt 與 Replicant。MusicBrainz 記 2010 年 4 月 21 日 SQUARE ENIX 的 SQEX-10189／10190 是兩片 23 與 20 軌共 43 軌，第 1 軌〈夏ノ雪〉，第二片以〈魔王 - White-note remix〉收。日文維基〈ニーア ゲシュタルト/レプリカント〉記遊戲日本 4 月 22 日發售，比碟晚一天。2017 年的黑膠 SQEX-10612／10613 是另一種規格的兩片。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/344c2084-ab2e-4984-9304-bbfffff748ae",
+     "https://musicbrainz.org/ws/2/release?release-group=344c2084-ab2e-4984-9304-bbfffff748ae&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/a3f763cd-62d6-41c8-9c48-9eea9e2cd131",
+     "https://itunes.apple.com/lookup?id=366643025&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=497316869&entity=album&limit=200&country=jp",
+     "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%BC%E3%82%A2_%E3%82%B2%E3%82%B7%E3%83%A5%E3%82%BF%E3%83%AB%E3%83%88/%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%83%B3%E3%83%88"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/1c/3c/e41c3cdb-6a1a-b1f2-d5a5-927fcc10469a/mzaf_13726920240019622857.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "366643025",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "岡部啓一",
+   "album": "NieR:Automata Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0dd51230-c886-4422-8385-072d0688ce36。回問確認：title「NieR:Automata Original Soundtrack」、artist-credit「岡部啓一」、first-release-date 2017-03-29、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（2017-03-29 JP/Official ×2＝SQEX-10589〜10591、2017-03-29 GB/Official、2017-03-29 XW/Official ×2、2017-03-29 Official、2017-09-21 JP/Official，另 Pseudo-Release ×4）。刻意不釘：ac5c454f-3ca1-4822-957e-83a749f45e46《NieR:Automata Unreleased Additional Soundtrack》（2017 未收錄曲）、1371986221 對應的 MB 條目《Piano Collections NieR:Automata》（2018 鋼琴編曲盤）、3a70d5cb-f25e-479e-abca-3767dfa700a8《NieR Orchestral Arrangement Special Box Edition》（2018 管弦編曲盒）、8a808f84-75ee-4bb1-bd06-5a71afcbbe56《NieR Orchestral Arrangement Album – Addendum》（2020 編曲盤）、d0be4ef5-0e6e-42a9-acde-f79ec0441c48《…Vinyl Box Set》（2017 黑膠盒，非原盤）。藝人 MBID d82df34a-a1ff-45fa-ac50-c0b7454b201e。",
+    "rgMbid": "0dd51230-c886-4422-8385-072d0688ce36",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0dd51230-c886-4422-8385-072d0688ce36/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5519,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一軌的名字用斜線分成三段：意味／無／ジュニーク・ニコール。MusicBrainz 記那是 2017 年 3 月 29 日 SQUARE ENIX MUSIC 的 SQEX-10589〜10591，三片 15、15、16 軌共 46 軌，第 2 軌作〈遺サレタ場所／斜光〉。第三片以同一首歌的兩個版本收尾，末軌〈Weight of the World／the End of YoRHa〉。2017 年 9 月 21 日另有 SQEX 10610／10611 的兩片黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/0dd51230-c886-4422-8385-072d0688ce36",
+     "https://musicbrainz.org/ws/2/release?release-group=0dd51230-c886-4422-8385-072d0688ce36&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/b56596fe-24d3-41a5-87f0-bb91611c2681",
+     "https://itunes.apple.com/lookup?id=1212176108&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%BC%E3%82%A2_%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%82%BF",
+     "https://musicbrainz.org/release-group/344c2084-ab2e-4984-9304-bbfffff748ae"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/b3/bd/78b3bd73-f2aa-d245-20d1-5619910fb5c6/mzaf_18136657180658035353.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1212176108",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "目黒将司",
+   "album": "「ペルソナ3」オリジナル・サウンドトラック",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b5bc44a2-0b43-36eb-8ec5-f2642e979e5b。回問確認：title「「ペルソナ3」オリジナル・サウンドトラック」、artist-credit「目黒将司」、first-release-date 2006-07-19、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2006-07-19 JP/Official＝Aniplex SVWC 7380／7381、2006-07-19 AF/Official＝ATLUS 數位 58 軌、2007-08-14 US/Official＝ATLUS 18 軌、2022-10-01 US/Official＝iam8bit 8BIT-8164 四片黑膠、2025-02 Official，另 Pseudo-Release ×2）。刻意不釘：ee912e87-bc2f-3067-8d0b-e602ad7ba48c《「ペルソナ3フェス」オリジナル・サウンドトラック》（2007 資料片）、f39a6b58-d974-4170-ab3b-4f2238d2f0d0《ペルソナ3 ポータブル オリジナル・サウンドトラック》（2009 移植版）、07c6afd3-6908-4a0f-8521-a01cdfa587c6《PERSONA3 THE MOVIE #1 Spring of Birth Soundtrack CD》（2014 劇場版）、06f83f32-d9d1-4988-9a6b-216639ad2070《Persona Compilation CD-Box》（2010 合輯）。藝人 MBID 1f456d75-4d69-4bf8-9c49-cb23d758b4a4，名下 71 個 release-group（分頁全列）。",
+    "rgMbid": "b5bc44a2-0b43-36eb-8ec5-f2642e979e5b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b5bc44a2-0b43-36eb-8ec5-f2642e979e5b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 364,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "iam8bit 後來把整套攤成四片十二吋黑膠。MusicBrainz 記那筆是 2022 年 10 月 1 日的 8BIT-8164，四片 15、17、14、12 軌；原盤則是 2006 年 7 月 19 日 Aniplex 的 SVWC 7380／7381 兩片 32 與 26 軌，同一份 58 軌換一種載體。第 1 軌〈Burn My Dread〉、第 2 軌〈全ての人の魂の詩〉，第二片以〈キミの記憶〉收。2007 年 8 月 14 日美國另有一版只放 18 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b5bc44a2-0b43-36eb-8ec5-f2642e979e5b",
+     "https://musicbrainz.org/ws/2/release?release-group=b5bc44a2-0b43-36eb-8ec5-f2642e979e5b&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/94b90443-b679-4b2b-b2a4-72959c1f633e",
+     "https://itunes.apple.com/lookup?id=1546593202&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=576275669&entity=album&limit=200&country=jp",
+     "https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E3%82%BD%E3%83%8A3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/e4/af/5ae4afc5-d6ab-ce4f-a252-8c4a6dede6bb/mzaf_14584994202299378999.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1546593202",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "目黒将司",
+   "album": "『ペルソナ5』オリジナル・サウンドトラック",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 249e1abc-3479-4e85-9f23-2bda4d1d0c66。回問確認：title「『ペルソナ5』オリジナル・サウンドトラック」、artist-credit「目黒将司」、first-release-date 2017-01-17、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（2017-01-17 JP/Official ×2＝Mastard Records LNCM-1175〜1177 與 ATLUS／SEGA 數位、2017-01-17 Official、2017-12-01 US/Official＝iam8bit 8BIT-8069 四片黑膠、2018-08-15 JP/Official，另 Pseudo-Release ×1）。刻意不釘：06798b29-24e0-49ca-9eb4-ae9fb95d6812《ペルソナ5 ザ・ロイヤル オリジナル・サウンドトラック》（2019 加強版，非原盤）、3f59a3c6-9c7a-42c7-9e85-469f80865556《Persona 5 Royal - The Complete Soundtrack》（2022 全集）、79128e74-df1b-4599-83cc-a464ae8d84b9《Persona 5 - Sounds of Rebellion》（2017 精選）。藝人 MBID 1f456d75-4d69-4bf8-9c49-cb23d758b4a4。",
+    "rgMbid": "249e1abc-3479-4e85-9f23-2bda4d1d0c66",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/249e1abc-3479-4e85-9f23-2bda4d1d0c66/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 107,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三片一百一十軌，光第二片就佔四十二軌。MusicBrainz 記 2017 年 1 月 17 日 Mastard Records 的 LNCM-1175〜1177 分成 36、42、32 軌，第 1 軌〈Wake Up, Get Up, Get Out There〉，第三片以同一首開場曲的 -opening movie version- 收，頭尾扣在一起。2017 年 12 月 1 日 iam8bit 以 8BIT-8069 在美國做成四片黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/249e1abc-3479-4e85-9f23-2bda4d1d0c66",
+     "https://musicbrainz.org/ws/2/release?release-group=249e1abc-3479-4e85-9f23-2bda4d1d0c66&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/9ca00068-228a-4eb9-8d89-060704b6efe5",
+     "https://itunes.apple.com/lookup?id=1226946448&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=512415377&entity=album&limit=200&country=jp",
+     "https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E3%82%BD%E3%83%8A5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/7e/6b/247e6b29-28e4-a15e-6841-165cdc528379/mzaf_6013334798036164087.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1226946448",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "菊田裕樹",
+   "album": "聖剣伝説2 Original Sound Version",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d105ea57-c0fc-311b-8bab-2639ed18726c。回問確認：title「聖剣伝説2 Original Sound Version」、artist-credit「菊田裕樹」、first-release-date 1993-08-06、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（1993-08-06 JP/Official＝NTT出版 N25D-019／44 軌、1994-12-01 US/Official＝Squaresoft SQ107、1998-08-25 JP/Official＝Polystar PSCN-5030、2004-10-01 JP/Official＝NTT出版 NTCP-5030、2006-11-29 XW/Official ×2，另 TW/Bootleg 與 Pseudo-Release 各一）。刻意不釘：137cfb51-9a13-4d19-8157-9f1b9f2ed02c《聖剣伝説2 SECRET of MANA Original Soundtrack》（2018 重製版重錄，非原盤）、2be2234f-d06a-4997-9aa4-7d3f5ee8a4fc《SECRET of MANA COLLECTOR'S EDITION Arrange Tracks》（2018 編曲盤）、8ab2961f-3dcc-4293-adb9-dda793c77793《Secret of Mana Genesis: 聖剣伝説2 Arrange Album》（2012 編曲盤）、9f665ad7-085e-3712-9ace-7b4223396049《secret of mana +》（1993）、2a26abae-ea1e-3423-90f7-cf2f4dd8c3ae《聖剣伝説3 Original Sound Version》（1995 續作）。藝人 MBID 0b7713fc-0794-4324-a9fc-7316f9f54f40。",
+    "rgMbid": "d105ea57-c0fc-311b-8bab-2639ed18726c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d105ea57-c0fc-311b-8bab-2639ed18726c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1012,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四十四軌前後出過好幾版，一首都沒有加減過。MusicBrainz 記原盤是 1993 年 8 月 6 日 NTT 出版的 N25D-019，單片 44 軌，第 1 軌〈天使の怖れ〉；1994 年 12 月 Squaresoft 以 SQ107 在美國發行同一套、盤名作《Secret of Mana》，其後 Polystar、NTT 出版與 2006 年的數位版，軌數都是 44。日文維基〈聖剣伝説2〉記 Super Famicom 版與唱片同在 8 月 6 日。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d105ea57-c0fc-311b-8bab-2639ed18726c",
+     "https://musicbrainz.org/ws/2/release?release-group=d105ea57-c0fc-311b-8bab-2639ed18726c&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/ba1f60ee-e247-39f0-87dc-1cab522841e5",
+     "https://itunes.apple.com/lookup?id=205700367&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E8%81%96%E5%89%A3%E4%BC%9D%E8%AA%AC2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ba/1b/83/ba1b839c-9711-1753-eb82-066161317fdc/mzaf_8166784916704397499.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "205700367",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "山根ミチル",
+   "album": "悪魔城ドラキュラX〜月下の夜想曲〜 オリジナル・ゲーム・サントラ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group db5c519c-0ca4-3188-8f39-edf72499e722。回問確認：title「悪魔城ドラキュラX〜月下の夜想曲〜 オリジナル・ゲーム・サントラ」、artist-credit「山根ミチル」、first-release-date 1997-03-20、primary-type Album、secondary-types [Soundtrack]、轄下 17 個 release（1997-03-20 JP/Official＝SCE SLPM-86023／KONAMI VX010-J1、1997-04-09 JP/Official＝KONAMI KICA-7760／34 軌、1997-10-02 US/Official＝SLUS-00067、1997-11-01 XE/Official＝SCEE SLES-00524／KONAMI VX100、1998-03-19 JP/Official、2003-11-20 JP/Official、?/JP/Official、Official 一筆，另 TW/Bootleg ×2、Bootleg ×2、Pseudo-Release ×5）。刻意不釘：28d4f562-a5e4-4ae6-a078-9e4938c22fa5《Castlevania: Symphony of the Night》（2023 後世整編，非原盤）、437f0894-3285-46eb-9c33-2c3d467148ec《悪魔城ドラキュラXクロニクル オリジナルサウンドトラック》（2007 重製版）、563be029-308c-360e-8cc5-42717e4f7a93《Castlevania Special Music CD》（2003 合輯）。藝人 MBID 17dbd4b4-6e92-4027-a64f-659258f4e775。",
+    "rgMbid": "db5c519c-0ca4-3188-8f39-edf72499e722",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/db5c519c-0ca4-3188-8f39-edf72499e722/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "音樂先裝在遊戲片裡，獨立的原聲盤是後來才出的。MusicBrainz 記 1997 年 3 月 20 日的 PlayStation 版 SLPM-86023 是 CD 加混合模式碟兩片，同年 4 月 9 日 KONAMI 才以 KICA-7760 出單片 34 軌的原聲盤，第 4 軌是與盤名同名的〈月下の夜想曲〉，末軌是英文演唱的〈I AM THE WIND〉。同年 10 月北美 SLUS-00067、11 月歐洲 SLES-00524 各有一版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/db5c519c-0ca4-3188-8f39-edf72499e722",
+     "https://musicbrainz.org/ws/2/release?release-group=db5c519c-0ca4-3188-8f39-edf72499e722&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/69b55438-af22-47a5-b775-58f08b9b0d92",
+     "https://musicbrainz.org/release/dad20d78-3299-4076-a189-80fe5c74211c",
+     "https://itunes.apple.com/lookup?id=1459349587&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E6%82%AA%E9%AD%94%E5%9F%8E%E3%83%89%E3%83%A9%E3%82%AD%E3%83%A5%E3%83%A9X_%E6%9C%88%E4%B8%8B%E3%81%AE%E5%A4%9C%E6%83%B3%E6%9B%B2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b8/fc/1d/b8fc1d21-25ff-01d4-e1b4-bcb8b9e688ea/mzaf_14919717552568217227.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1459349587",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Akira Yamaoka",
+   "album": "SILENT HILL 2 ORIGINAL SOUNDTRACKS",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 96467903-beb1-36e9-abd8-2b8127a68c84。回問確認：title「SILENT HILL 2 ORIGINAL SOUNDTRACKS」、artist-credit「AKIRA YAMAOKA」（卡片掛名依第 120 條採 MB 實體名 `Akira Yamaoka`）、first-release-date 2001-10-03、primary-type Album、secondary-types [Soundtrack]、轄下 18 個 release（2001-10-03 XE/Official＝Konami of Europe KOE-CDS-100、2001-10-03 JP/Official＝KONAMI KMCA120、2007-08-28 US/Official＝KONAMI 數位、2019-03-05 Official＝Mondo MOND-161 兩片黑膠、2019-03 US/Official ×2、2019-08-15 US/Official，其餘 10 筆為 Bootleg）。刻意不釘：0512b548-54ff-48fe-b662-923a347ca68c《SILENT HILL 2 Original Game Soundtrack》（2024 重製版重錄，非原盤）、3dcae697-9208-46fa-b549-f4397795f083《SILENT HILL 2 ORIGINAL SOUNDTRACK -2024- Extra Edition》（2024）、516c4638-7cd2-407f-9b39-8ebb2dad963a《Silent Hill: The Piano Versions》（2004 鋼琴編曲盤）、20cb70de-dd8d-4f90-87ba-30e2c33507ea《Silent Hill Sounds Box》（2011 合輯）、83b3c0c8-fdc4-4629-8a89-3f0078373aa2（2002 俄羅斯雜誌附贈 EP）。藝人 MBID 23a32153-7314-4359-a5cd-9e584fe83504。",
+    "rgMbid": "96467903-beb1-36e9-abd8-2b8127a68c84",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/96467903-beb1-36e9-abd8-2b8127a68c84/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 18128,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "日本掛 KMCA120，歐洲掛 KOE-CDS-100，同一天上市。MusicBrainz 記兩筆都在 2001 年 10 月 3 日出、都是單片 30 軌，日本那筆掛 KONAMI、歐洲那筆掛 Konami of Europe。第 1 軌〈Theme of Laura〉、第 26 軌〈Black Fairy〉，末軌〈Promise〉。2019 年 Mondo 以 MOND-161 把同樣 30 軌做成兩片 12 吋黑膠，切成 17 與 13 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/96467903-beb1-36e9-abd8-2b8127a68c84",
+     "https://musicbrainz.org/ws/2/release?release-group=96467903-beb1-36e9-abd8-2b8127a68c84&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/72ea51fd-0d61-48fc-ba16-e1ae178b408d",
+     "https://itunes.apple.com/lookup?id=528515992&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%83%92%E3%83%AB2",
+     "https://musicbrainz.org/release-group/0dd51230-c886-4422-8385-072d0688ce36"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e0/f4/00/e0f40093-65ab-aab4-96c8-efef6ab3e7dc/mzaf_2912414694631265898.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "528515992",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "伊藤賢治 / 植松伸夫",
+   "album": "Romancing Sa・Ga Original Sound Version",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d6d163f6-e0ab-3721-9404-4eb8d80271d6。回問確認：title「Romancing Sa・Ga Original Sound Version」、artist-credit「伊藤賢治 & 植松伸夫」、first-release-date 1992-02-21、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release，全部 Official（1992-02-21 JP＝SQUARE BRAND N25D-009／38 軌、1995-11-25 JP＝Polystar PSCN-5036、2004-09-01 JP＝NTT出版 NTCP-5036、2006-07-26 XW＝SQUARE ENIX SEMO-00023、2014-06-18 JP、2019-10-09 JP），零 Bootleg。刻意不釘：35cd8108-ea71-37c0-9d12-d2d4aa22fde3《Romancing Sa·Ga 2: Eternal Romance》（1994 續作）、3157a053-41cd-3dee-bbf8-967e9dd4cc40《Romancing Sa·Ga 3 Original Soundtrack》（1995 續作）、4db9e837-e23f-31dd-9f93-b361f5113df1《Romancing Sa·Ga: La Romance》（1992 編曲盤，非原聲）、59ca2138-2f89-44e9-9ad1-161a6b52f5c6《Romancing SaGa –Minstrel Song– Original Soundtrack》（2005 重製版，非原盤）、04859cec-fd1d-448f-be45-ae4688f23a28《Re:Birth II Romancing Sa·Ga BATTLE ARRANGE》（2012 編曲盤）。藝人 MBID 38b566b6-d675-442d-a5b5-0cdd8216dcaa（伊藤賢治）與 92bb085a-2924-4479-b627-181a1835d2f5（植松伸夫）。",
+    "rgMbid": "d6d163f6-e0ab-3721-9404-4eb8d80271d6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d6d163f6-e0ab-3721-9404-4eb8d80271d6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "每首曲名都印兩遍：先日文，再接一段英文副標。MusicBrainz 的曲目表記第 2 軌是〈アルベルト: Theme of Albert〉，1992 年 2 月 21 日 SQUARE BRAND 的 N25D-009 單片 38 軌都用這個寫法。這個 release-group 底下六筆 release 全部是 Official：1995 年 Polystar 的 PSCN-5036 與 2004 年 NTT 出版的 NTCP-5036 各重出一次，軌數不變。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d6d163f6-e0ab-3721-9404-4eb8d80271d6",
+     "https://musicbrainz.org/ws/2/release?release-group=d6d163f6-e0ab-3721-9404-4eb8d80271d6&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/b2e7b0dd-14c4-46b0-9200-b1dd5e2b7377",
+     "https://itunes.apple.com/lookup?id=166889681&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0_%E3%82%B5%E3%83%BB%E3%82%AC"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b0/b7/b4/b0b7b4a7-3163-b830-803d-7441ecc4f02a/mzaf_11362870393442016099.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "166889681",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Toby Fox",
+   "album": "UNDERTALE: Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f98e6631-f10a-40e0-953e-c9b32ab18570。回問確認：title「UNDERTALE: Soundtrack」、artist-credit「Toby Fox」、first-release-date 2015-09-15、primary-type Album、secondary-types [Soundtrack]、轄下 12 個 release，除一筆 2015-11-30 XW/Bootleg 外全部 Official（2015-09-15 XW ×2＝Materia Collective MCOL-0004／101 軌、2016-12-08 US＝8BIT-8048 兩片黑膠、2016-12 US＝加 7 吋版、2017-03 XE 與 US、2017-09-15 US、2018-05 JP、2018 JP、2020 XE ×2）。刻意不釘：447aeb3b-cb93-4c9e-bde7-2863988afcb3《Undertale - A Piano Collection》（2022 鋼琴編曲 EP）、8370c943-a306-46a7-b980-e9066e3fa83b《UNDERTALE: CHITEI DE CHILL》（2026 Remix）、d82fd97c-ea19-46b5-8641-7e16e55607e8《UNDERTALE: 10-Year Anniversary Remixes》（2025 Remix）、2fc372c8-c3cf-48d1-b3e2-e81efaee2350《UNDERTALE 10th Anniversary Stream Soundtrack》（2025）、7cd9aa5a-e157-4c63-9296-26767ac5bde4《Undertale + Deltarune Fan Encore CD》與 b5fdd978-ce41-462d-8dc8-2b7a658af284《Undertale Fan Selection CD》（粉絲合輯）、d5a11181-a210-4d84-abcd-0715c78df1c5《Undertale Demo OST》（2013 試作版）。藝人 MBID 1c26f82c-b35d-4c8e-a1f4-9c20747495c9，名下 44 個 release-group（分頁全列）。",
+    "rgMbid": "f98e6631-f10a-40e0-953e-c9b32ab18570",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f98e6631-f10a-40e0-953e-c9b32ab18570/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 575,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "每一段場景，他都先寫音樂，再寫程式。英文維基記那有助於決定場景怎麼走；全碟由他一人用 FL Studio 寫成，他是自學的。跨曲反覆出現的角色主導動機是這套配樂的核心，USgamer 的 Nadia Oxford 舉〈Hopes and Dreams〉為例，說它把多數主要角色的主題交織進來。〈Megalovania〉則先用在網路漫畫 Homestuck 與一個 EarthBound ROM hack，後來才進本作。數位原盤 101 軌，黑膠是另一種編排的 41 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f98e6631-f10a-40e0-953e-c9b32ab18570",
+     "https://en.wikipedia.org/wiki/Undertale",
+     "https://music.apple.com/jp/album/1528217465"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/60/e9/a660e902-7c93-63bd-333a-72005d32b51c/mzaf_17237027840881481884.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1528217465",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Toby Fox",
+   "album": "DELTARUNE Chapter 1 OST",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group db638f34-9f14-4899-b0e0-40671f2fc184。回問確認：title「DELTARUNE Chapter 1 OST」、artist-credit「Toby Fox」、first-release-date 2018-11-01、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2018-11-01 JP/Official＝Materia Collective、2018-11-01 XW/Official ×2＝MCOL-0169／40 軌、2018-11-01 XW/Withdrawn、2019-07-18 US/Official＝Fangamer FG17 黑膠、2019-08 US/Official、?/JP/Official）。刻意不釘：e1670c2e-6d6d-4ded-9296-41c0b063e389《DELTARUNE Chapter 2 OST》（2021 續章）、a5a2af50-14b4-400d-aab9-f2f9a71bd5ca《DELTARUNE Chapters 3+4 OST》（2025 續章）、f8c5968d-9984-4cfa-99dd-65e584622ba6《DELTARUNE: Soundtrack》（2025 全集）、a572bf95-d95a-4dee-96d0-c6b13c9de6ed《DELTARUNE CHAPTER 2 REJECTED TRACKS》（2024 EP）、f97874bc-9a9c-4f94-a380-c4ae9ee33b2a《DELTARUNE Piano Collections, Vol. 1》（2025 編曲盤）。藝人 MBID 1c26f82c-b35d-4c8e-a1f4-9c20747495c9。",
+    "rgMbid": "db638f34-9f14-4899-b0e0-40671f2fc184",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/db638f34-9f14-4899-b0e0-40671f2fc184/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6783,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "遊戲是免費放出來的，一開始還偽裝成一支問卷程式。英文維基記第一章 2018 年 10 月 31 日免費釋出，原聲帶隔天由 Materia Collective 發行，客座名單有 Laura Shigihara、Lena Raine 等人。2012 年那次中止的 Deltarune 留下的音樂，後來被回收進 Undertale——主要對戰曲成了〈Bonetrousle〉；本作的配樂反過來又把 Undertale 的主導動機帶了進來。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/db638f34-9f14-4899-b0e0-40671f2fc184",
+     "https://en.wikipedia.org/wiki/Deltarune",
+     "https://music.apple.com/us/album/1443475587",
+     "https://music.apple.com/jp/album/1443724416"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/80/84/21808493-df50-33cb-9e67-c6d176be267c/mzaf_6545634854555916362.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443475587",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "C418",
+   "album": "Minecraft - Volume Alpha",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7f4856cd-f078-4c0d-aef7-48474d8fa890。回問確認：title「Minecraft – Volume Alpha」（MB 用 en dash，卡片用 ASCII 連字號，理由見 risk）、artist-credit「C418」、first-release-date 2011-03-04、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release 全部 Official（2011-03-04 XW 無廠牌／24 軌、2015-08-21 US ×5＝Ghostly International GI-243 LP／12 軌、2015-08-21 XW、2015-08 GB、2020 US、2024-05-17 XW、2025-04-15）。刻意不釘：b109f08c-3368-4dff-9ab0-f11b27505eb8《Minecraft – Volume Beta》（2013 續作，另立一卡）、0a1510c8-3cf7-4035-99ef-37ca97de0ec4《Minecraft - Festive Mashup Pack》與 1449bc6d-6a87-4a25-a4e4-c9df1507f649《Minecraft - Halloween Mashup Pack》（2014／2015 附加包）、29fe2689-3de0-4f4a-be4b-ebd663806802《Minecraft: Tricky Trials》（2024，掛 Lena Raine 名下）。藝人 MBID fac55e3c-d459-45ed-9f9f-f5078d3b3423，名下 42 個 release-group（分頁全列）。",
+    "rgMbid": "7f4856cd-f078-4c0d-aef7-48474d8fa890",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7f4856cd-f078-4c0d-aef7-48474d8fa890/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1330795,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "戰鬥曲、生態域曲、洞穴曲，引擎一首都跑不動。英文維基記這三種設想全因引擎做不到或觸發時間太短而作罷，他於是改寫安靜簡素的曲子；全部寫完後他重新排序、把曲子加長，讓每一首自然接進下一首。也不是整張都安靜，〈Cat〉與〈Dog〉是合成器寫的輕快 chiptune。同一條目記這是 Rosenfeld 的第一張商業發行，2025 年入選 National Recording Registry，是繼《Super Mario Bros.》主題曲之後第二件入選的電玩音樂。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7f4856cd-f078-4c0d-aef7-48474d8fa890",
+     "https://en.wikipedia.org/wiki/Minecraft_%E2%80%93_Volume_Alpha",
+     "https://music.apple.com/jp/album/1867885113"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/7f/20/7a7f20b1-a3dc-9607-df75-a81da3db2f71/mzaf_17882314859206131170.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1867885113",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "C418",
+   "album": "Minecraft - Volume Beta",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b109f08c-3368-4dff-9ab0-f11b27505eb8。回問確認：title「Minecraft – Volume Beta」（MB 用 en dash，卡片用 ASCII 連字號）、artist-credit「C418」、first-release-date 2013-11-09、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release 全部 Official（2013-11-09 XW 無廠牌／30 軌、2020-08-14 XW ×2＝Ghostly International GI-360 兩片 CD 與 GI-360LP 黑膠、2025-04-15 卡帶）。刻意不釘：7f4856cd-f078-4c0d-aef7-48474d8fa890《Minecraft – Volume Alpha》（2011 前作，另立一卡）、5cb9aa0d-2cbd-462f-95d7-0365e2a777e2《Seven Years of Server Data》（2011，secondary-types Compilation/Demo）。藝人 MBID fac55e3c-d459-45ed-9f9f-f5078d3b3423。",
+    "rgMbid": "b109f08c-3368-4dff-9ab0-f11b27505eb8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b109f08c-3368-4dff-9ab0-f11b27505eb8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 779223,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "當年 Persson 選的是委託，音樂的所有權因此留在他手上。英文維基記兩張原聲盤都收了不是為遊戲寫的曲子，把專輯延伸成可以獨立播放的作品。Rosenfeld 自己形容這張碟極其多樣，比 Volume Alpha 更有打擊感、更旋律化；〈Taswell〉寫給他過世的朋友、Giant Bomb 共同創辦人 Ryan Davis。〈Ki〉〈Moog City 2〉〈Mutation〉〈Beginning 2〉是前作四首的重製。數位與 CD 30 軌，黑膠 17 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b109f08c-3368-4dff-9ab0-f11b27505eb8",
+     "https://en.wikipedia.org/wiki/Music_of_Minecraft",
+     "https://music.apple.com/jp/album/1867890087"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/e9/26/b2e926b5-32d2-539e-8439-d159ee20c09f/mzaf_13528508724047467664.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1867890087",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lena Raine",
+   "album": "Celeste: Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1ca3f284-ac4d-40ee-b946-bde7adbf6c43。回問確認：title「Celeste: Original Soundtrack」、artist-credit「Lena Raine」、first-release-date 2018-01-25、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2018-01-25 XW ×2＝Radical Dreamland RADL-0008／21 軌、2018-05 US ×2＝Ship to Shore PhonoCo. STS-028 兩片黑膠、2018 US）。刻意不釘：26523201-ace1-453d-a337-250e88dc85e7《Celeste B-Sides (Original Game Soundtrack)》（2018 remix 盤，非原聲）、0c257a36-4a59-4bc8-b19d-e8e7cf0969ab《Celeste - Madeline's Grab Bag》（2018 附加曲）、5bcd500e-8671-4f81-af0a-b9669a84ccb6《Celeste Original Sound Collection》（2020 合輯）。藝人 MBID f1693075-b637-49f8-8d0e-8cee8bec77cb，名下 30 個 release-group（分頁全列）。",
+    "rgMbid": "1ca3f284-ac4d-40ee-b946-bde7adbf6c43",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1ca3f284-ac4d-40ee-b946-bde7adbf6c43/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 788,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鏡子那一首的人聲，是她關在暗櫃裡錄的，還倒著放。英文維基記〈In the Mirror〉那層人聲由 Raine 自己唱，代表 Madeline 的內心獨白，因為鏡子的主題而被倒放；那些合成器段落她自認讓人想到 Vangelis 與《銀翼殺手》。每個角色各有一件代表樂器：Madeline 鋼琴、Badeline 合成器、Theo 吉他、Oshiro 是像特雷門琴的合成器；〈Anxiety〉的做法是讓鋼琴被合成器吞沒。她寫的是大部分配樂，B 面關卡多是別人的重混。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1ca3f284-ac4d-40ee-b946-bde7adbf6c43",
+     "https://en.wikipedia.org/wiki/Celeste_(video_game)",
+     "https://music.apple.com/jp/album/1544899658"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/b5/9f/68b59fd8-3646-7c4c-9d00-1faf72501885/mzaf_1143732474344639575.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1544899658",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Austin Wintory",
+   "album": "Journey",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d1850227-c7c7-42c8-b469-6e99023412de。回問確認：title「Journey」、artist-credit「Austin Wintory」、first-release-date 2012-04-10、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release 全部 Official（2012-04-10 XW 無廠牌／18 軌、2012-10-09 US＝Sumthing Else Music Works SE-3009-2 CD、2015-08 US＝iam8bit 8BIT-8002 兩片黑膠）。刻意不釘：5b6baca1-782a-432a-b71a-147b55c755bb《Journey Bonus Bundle》（2012 附加包）、356fba88-0348-4bd3-b10b-6b0d32769184《Traveler: A Journey Symphony》（2022 管弦改編，非原聲）、24c304d1-bd49-46a4-8b70-4c04d3ac40ca《flOw》（2012 同社另一部作品）。藝人 MBID 78f15956-c5e1-46d6-a46b-fa6f46681ec8，名下 60 個 release-group（分頁全列）。",
+    "rgMbid": "d1850227-c7c7-42c8-b469-6e99023412de",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d1850227-c7c7-42c8-b469-6e99023412de/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10076,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他走出那場會議、還沒走到車邊，主題的核心就有了。英文維基記他當天晚上就把主要的大提琴主題寫完並錄好。十八軌全部建立在同一個主題上，他自述那像一首大型大提琴協奏曲，玩家是獨奏者、其餘樂器是周圍的世界。大提琴是 Tina Guo，非電子樂器在北馬其頓斯科普里與 Macedonia Radio Symphonic Orchestra 錄。這是葛萊美 Best Score Soundtrack for Visual Media 史上第一張入圍的電玩原聲帶，最後未得獎。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d1850227-c7c7-42c8-b469-6e99023412de",
+     "https://en.wikipedia.org/wiki/Journey_(2012_video_game)",
+     "https://music.apple.com/us/album/1553230092"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/6c/5a/9d6c5a2c-aba4-d124-e9be-483e197a904c/mzaf_3957520859357709717.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1553230092",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Austin Wintory",
+   "album": "ABZÛ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c0c72c43-c4b7-46e0-9b18-90eec38c465b。回問確認：title「ABZÛ」、artist-credit「Austin Wintory」、first-release-date 2016-08-02、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2016-08-02 DZ＝T-65b Records／18 軌、2016-08-02 XW 無廠牌、2016-10-21 US＝Varèse Sarabande 302 067 453 8 CD、2017-04 US＝iam8bit 8BIT-8047 兩片黑膠、2017-06 US）。同藝人名下沒有第二筆同名 release-group（分頁全列 60 筆確認過）。藝人 MBID 78f15956-c5e1-46d6-a46b-fa6f46681ec8。",
+    "rgMbid": "c0c72c43-c4b7-46e0-9b18-90eec38c465b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c0c72c43-c4b7-46e0-9b18-90eec38c465b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 754,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "前段關卡丟掉了五十分鐘的音樂，只留下五分鐘。英文維基記後段多半一次就定案；與《Journey》一樣，他第一首寫的是主題〈To Know, Water〉，其後三年的曲子都由那個主題長出來。配器以豎琴起頭，之後才加入 London Voices Choir——歌詞取《埃努瑪·埃利什》前十行，音節被拉長以求聽起來陌生；獨奏樂器是雙簧管，由 Kristin Naigus 演奏。〈Balaenoptera Musculus〉是遊戲裡沒用到的長曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c0c72c43-c4b7-46e0-9b18-90eec38c465b",
+     "https://en.wikipedia.org/wiki/Abz%C3%BB",
+     "https://music.apple.com/jp/album/1138476050"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/86/75/20/867520f8-e4ae-5268-45ed-8f3d95c60ea6/mzaf_3920762313921707989.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1138476050",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mick Gordon",
+   "album": "DOOM: Original Game Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f40630d4-f52d-403f-81a2-c6904e8acc99。回問確認：title「DOOM: Original Game Soundtrack」、artist-credit「Mick Gordon」、first-release-date 2016-05-27（該筆為 XW/Bootleg；最早的 Official 是 2016-09-28 XW＝Bethesda Softworks／31 軌，同年）、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（2016-09-28 XW/Official、2018-07-27 XE/Official＝Laced Records CD、2018 XW/Official＝Laced Records BI 14351 黑膠、2019-10-21 XE/Official＝Laced 四片黑膠＋USB，另 Bootleg ×2）。刻意不釘：8782d6f7-183c-442d-9437-c6703f04361e《DOOM Eternal (Original Game Soundtrack)》（2020 續作，另立一卡）、d320ea61-0072-418d-bf37-144f1723e4de《Doom Eternal OST》（無日期的重複建檔）。藝人 MBID 01a36baf-fa2d-4659-8bc2-dbfb5ffed791，名下 21 個 release-group（分頁全列）。",
+    "rgMbid": "f40630d4-f52d-403f-81a2-c6904e8acc99",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f40630d4-f52d-403f-81a2-c6904e8acc99/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1102,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "談這份工作的那天，對方就交代：不要吉他，不要金屬。英文維基記 id 覺得那個曲風已經俗氣，鼓勵他改用合成器，於是他設計了好幾串效果器鏈，把次低頻正弦波送進去、再疊上白噪音，好讓一般喇叭也聽得見。做了六到九個月純合成器之後，他才說服對方讓他用吉他；主選單那段 riff 是九弦吉他疊上初代《Doom》電鋸的取樣。火星與地獄兩套音景刻意分開，他說火星那些環境是人造的、音樂聽起來也得像人造的。數位與 CD 版 31 軌，兩片黑膠 20 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f40630d4-f52d-403f-81a2-c6904e8acc99",
+     "https://en.wikipedia.org/wiki/Doom_(2016_video_game)",
+     "https://en.wikipedia.org/wiki/Abz%C3%BB",
+     "https://music.apple.com/jp/album/1885803215"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/bf/c4/debfc44a-8ae0-d2bd-959a-4eabce172c67/mzaf_2868760924630467326.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1885803215",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mick Gordon",
+   "album": "DOOM Eternal (Original Game Soundtrack)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8782d6f7-183c-442d-9437-c6703f04361e。回問確認：title「DOOM Eternal (Original Game Soundtrack)」、artist-credit「Mick Gordon」、first-release-date 2020-04-18、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release，僅 2020-04-18 XW 一筆 Official（Bethesda Softworks／59 軌），其餘 2020-05-29 XW ×2、2020-07-31 XW、2024-05-18 XW、2025-03-21 XW 全部 Bootleg。刻意不釘：d320ea61-0072-418d-bf37-144f1723e4de《Doom Eternal OST》（無日期的重複建檔，不是另一張碟）、f40630d4-f52d-403f-81a2-c6904e8acc99《DOOM: Original Game Soundtrack》（2016 前作，另立一卡）。藝人 MBID 01a36baf-fa2d-4659-8bc2-dbfb5ffed791。",
+    "rgMbid": "8782d6f7-183c-442d-9437-c6703f04361e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8782d6f7-183c-442d-9437-c6703f04361e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4944,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "公開徵人，要的是會尖叫的金屬歌手，組成一個合唱團。英文維基記 Tengger Cavalry 的 Nature Ganganbaigal 在錄音之後、遊戲上市之前過世。這 59 軌出廠後起了爭議：Gordon 證實他只混了少數幾軌，其餘由 id 的音訊總監 Chad Mossholder 完成；製作人 Marty Stratton 另有一套說法。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8782d6f7-183c-442d-9437-c6703f04361e",
+     "https://en.wikipedia.org/wiki/Doom_Eternal",
+     "https://itunes.apple.com/lookup?id=469318624&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jesper Kyd",
+   "album": "Assassin’s Creed II: The Original Game Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5bf7477e-8d21-4e52-a7c7-7ad93add0a5f。回問確認：title「Assassin’s Creed II: The Original Game Soundtrack」、artist-credit「Jesper Kyd」、first-release-date 2009-09-20、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2009-09-20 Ubisoft Entertainment／DVD 14 軌、2009-11-16 XW ×2＝Ubisoft Music 17＋18 軌與 catno 5284 的 35 軌、2015-10-02 US＝Sumthing Else Music Works SE-3145-2、另一筆無日期）。刻意不釘：678c6ed1-439b-4a59-84e4-cb5805372c4c《Assassin’s Creed 2: Rare Tracks》（2019，secondary-types 含 Compilation）、1da1ffcd-e3ee-4ba8-b235-3f042480a75d《Assassin’s Creed Revelations, Vol. II》（2011 另一部作品）、6fe6c939-a08b-33e2-9970-8249500bc4e1《Hitman: Blood Money Original Soundtrack》（2006 另一條線，本批未收，可進日後的補遺批）。藝人 MBID 5156bb2c-45d7-4660-8234-4d84452c93e1，名下 79 個 release-group（分頁全列）。",
+    "rgMbid": "5bf7477e-8d21-4e52-a7c7-7ad93add0a5f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5bf7477e-8d21-4e52-a7c7-7ad93add0a5f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 134,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第三軌那首後來成了整個系列的招牌，之後每一張原聲帶都重混它。英文維基記〈Ezio's Family〉是 Kyd 為本作所寫，後來成了《刺客教條》系列的非官方主題曲。這套配樂在 Capitol Records 錄音，編制是 35 人的弦樂團與 13 人的合唱團，Melissa Kaplan 擔任特邀人聲；他的作法是管弦樂、合唱、原音素材的加工處理與電子音景並用。同一條目記原聲帶 2009 年 11 月 16 日以下載形式發行，35 軌分成兩片，17 軌加 18 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/5bf7477e-8d21-4e52-a7c7-7ad93add0a5f",
+     "https://en.wikipedia.org/wiki/Assassin%27s_Creed_II",
+     "https://en.wikipedia.org/wiki/Jesper_Kyd",
+     "https://music.apple.com/us/album/1640108379"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/06/dc/5b06dcbc-9e19-cfa3-d4ca-a97a1c340378/mzaf_6132561620100315348.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1640108379",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Darren Korb",
+   "album": "Bastion: Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f8f33c9d-b938-43d6-a1dd-fc4010bee8c6。回問確認：title「Bastion: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2011-08-05、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release 全部 Official（2011-08-05 XW＝Supergiant Games 數位 22 軌、2011-08-27 XW、2011-09-02 US CD、2017-06-20 US＝Supergiant Games SGG-02 兩片黑膠）。刻意不釘：37ae517c-e5f1-45d5-802f-bd150b8e77e9《Songs of Supergiant Games》（2020 跨作品合輯）。藝人 MBID a7e3c900-1c91-444c-9fce-77d230e5791b，名下 11 個 release-group（分頁全列）。",
+    "rgMbid": "f8f33c9d-b938-43d6-a1dd-fc4010bee8c6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f8f33c9d-b938-43d6-a1dd-fc4010bee8c6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2171,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張碟錄在紐約公寓的衣櫥裡，三千多句旁白也是。英文維基記 Korb 自己把這套風格叫 acoustic frontier trip hop，要同時喚起美國西部邊疆與一個異域奇幻世界。碟上四首人聲曲的歌詞全由他寫：〈Build That Wall〉由 Ashley Lynn Barrett 唱，〈Setting Sail, Coming Home〉是他與她對唱。這是 Korb 配樂的第一款電玩；首軌〈Get Used to It〉則是遊戲裡沒有的曲子。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f8f33c9d-b938-43d6-a1dd-fc4010bee8c6",
+     "https://en.wikipedia.org/wiki/Bastion_(video_game)",
+     "https://music.apple.com/jp/album/459457260"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8a/85/65/8a856569-df4f-bee1-b038-6dfbd8b0c740/mzaf_11409404673914452212.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "459457260",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Darren Korb",
+   "album": "Transistor: Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 16b60f17-aeca-4f2b-a8b8-f0ec1e7e88de。回問確認：title「Transistor: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2014-05-20、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2014-05-20 US CD 23 軌、2014-05-20 XW ×2 數位 23／24 軌、2016-03 US 兩片黑膠、2017-05-20 XW）。刻意不釘：7c294cc4-2306-4f0c-9a1e-cbb582c890b8《Transistor: Original Soundtrack Extended》（2014 加曲版，非原盤）、4544f073-5480-40de-bb00-d05b603ea794《Transistor: Breached Tracks》（2014 附加曲）、37ae517c-e5f1-45d5-802f-bd150b8e77e9《Songs of Supergiant Games》（2020 合輯）。藝人 MBID a7e3c900-1c91-444c-9fce-77d230e5791b。",
+    "rgMbid": "16b60f17-aeca-4f2b-a8b8-f0ec1e7e88de",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/16b60f17-aeca-4f2b-a8b8-f0ec1e7e88de/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1672,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這套聲音的名字是他自己取的：舊世界的電子後搖。英文維基記 Korb 把這張的風格叫 old-world electronic post-rock，樂器用了電吉他、豎琴、手風琴、曼陀林與電鋼琴。《Bastion》的女聲 Ashley Lynn Barrett 回來唱了〈The Spine〉〈In Circles〉〈We All Become〉等五首。有個處理只發生在遊戲裡：暫停與 Turn() 選單會替音樂覆一層 EQ 濾波，碟上這 23 軌沒有那一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/16b60f17-aeca-4f2b-a8b8-f0ec1e7e88de",
+     "https://en.wikipedia.org/wiki/Transistor_(video_game)",
+     "https://en.wikipedia.org/wiki/Bastion_(video_game)",
+     "https://music.apple.com/jp/album/879693684"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/23/f5/e0/23f5e0a3-fea9-b7cc-66f2-29e1986ea630/mzaf_14527759269086687844.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "879693684",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Darren Korb",
+   "album": "Hades: Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group dc4818c3-a34f-40c6-9223-63570980694d。回問確認：title「Hades: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2020-09-16、primary-type Album、secondary-types [Soundtrack]、轄下 2 個 release 皆 Official（2020-09-16 XW 數位 30 軌／barcode 859741990176、2020-09 US 兩片 CD 16＋14 軌）。刻意不釘：bc728e2f-dbe8-4205-bd48-ce65feeb214c《Hades: Singles》（2018 搶先體驗期逐首釋出，非本盤）、a0c1237b-946f-434d-9e9e-39b00e3c71ba《Hades II: Original Soundtrack》（2024 續作）、37ae517c-e5f1-45d5-802f-bd150b8e77e9《Songs of Supergiant Games》（2020 合輯）。藝人 MBID a7e3c900-1c91-444c-9fce-77d230e5791b。",
+    "rgMbid": "dc4818c3-a34f-40c6-9223-63570980694d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dc4818c3-a34f-40c6-9223-63570980694d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 160037,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "希臘的布祖基琴、土耳其的 lavta，再加一把金屬吉他。英文維基記遊戲重度取材地中海，Korb 自己把風格叫 Mediterranean prog rock Halloween。〈On the Coast〉與〈In the Blood〉的管弦編曲出自 Austin Wintory 之手，也就是《Journey》與《ABZÛ》兩張的作者；部分曲目在疫情爆發前不久於 Abbey Road 錄音，人聲仍是 Ashley Barrett。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/dc4818c3-a34f-40c6-9223-63570980694d",
+     "https://en.wikipedia.org/wiki/Hades_(video_game)",
+     "https://en.wikipedia.org/wiki/Darren_Korb",
+     "https://music.apple.com/jp/album/1531339044"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/c7/7d/3dc77d7c-c715-20ef-989e-29555dfb5c88/mzaf_3714860661367889417.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1531339044",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Disasterpeace",
+   "album": "FEZ: Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7a97a60d-1f30-45a5-807b-9d16375cac4d。回問確認：title「FEZ: Original Soundtrack」、artist-credit「Disasterpeace」、first-release-date 2012-04-20、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release 全部 Official（2012-04-20 XW ×3＝Joypad Records JOY-546／OverClocked Records 與兩筆無廠牌，皆 26 軌；2015-11-27 CA＝Polytron PO050001 兩片黑膠、2015-11-27 XW、2016-11-21 CA）。刻意不釘：5c66aba2-18a3-4ddc-806d-23e15d594f0b《Hyper Light Drifter》（2016 另一部作品，本批未收）、7c574c1a-2c29-4fd0-87e8-9903b6d6825a《Hyper Light Fragments》（2022）、528bd202-fa2d-4abc-ba3b-d5dc3ce156f5《It Follows: Original Motion Picture Soundtrack》（2015 電影配樂，**池中已有此卡**）。藝人 MBID 8a562589-9650-45f6-ab82-332625c0bf2d，名下 20 個 release-group（分頁全列）。",
+    "rgMbid": "7a97a60d-1f30-45a5-807b-9d16375cac4d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7a97a60d-1f30-45a5-807b-9d16375cac4d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1099,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "出身 chiptune 的人，在這張碟上刻意不講那套語言。英文維基記 Vreeland 改用柔和的 synth pad 與殘響，把聲音推向 1980 年代合成器的質地，並用 bitcrushing 與 wow 之類的失真手法；他選速度會變化的慢板段落，讓音樂隨玩家起伏、流動、呼吸，也刻意讓某些段落完全沒有音樂。呼應遊戲的密碼主題，原聲帶的音訊裡還埋了只有用頻譜圖才看得見的圖像。〈Continuum〉則是蕭邦《前奏曲》Op. 28 No. 4 的合成器版本。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7a97a60d-1f30-45a5-807b-9d16375cac4d",
+     "https://en.wikipedia.org/wiki/Fez_(video_game)",
+     "https://en.wikipedia.org/wiki/Disasterpeace",
+     "https://music.apple.com/us/album/1765770688"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/3f/43/d73f43bc-f485-ab25-7939-7faa1cb295a9/mzaf_12460987533994781139.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1765770688",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Grant Kirkhope",
+   "album": "Banjo-Kazooie",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 702de139-4508-3423-a817-4d811413b7ac。回問確認：title「Banjo‐Kazooie」（MB 用 U+2010，卡片改用 ASCII 連字號，理由見 risk）、artist-credit「Grant Kirkhope」、first-release-date 1998、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（1998 US/Official＝Nintendo of America／17 軌、1999-02-17 JP/Official ×2＝Pony Canyon PCCG-00486、2013-04-02 XW/Official 數位、2019-11-26 US/Official，另 1998 DE/Promotion）。刻意不釘：887d9683-9587-4be9-8a02-170343daf39a《Banjo-Kazooie: Original Sound Version 2017 [Remastered]》（2017 重製，非原盤）、591fc7eb-62f5-48b9-acff-c165081d616b《Banjo Kazooie: Re‐Jiggyed》（2021 重編盤，非原聲）、f47bbee7-095c-4057-b0fc-617ad56d1a13《Banjo-Kazooie: Everything and the Kitchen Sink!》（2014）、1e441618-517f-33dd-b3f9-7369c6d5a224《Banjo-Tooie》（2000 續作）、40b7a3bc-61e8-4920-ace8-5c489920d464《Banjo-Kazooie: Nuts & Bolts》（2008 另一作）、431cee37-4082-3c4d-a0c1-d7f3bb8edb74《Goldeneye 007: Original Soundtrack》（1997，轄下四個 release 全為 Bootleg，本批不收）。藝人 MBID 3237b5a8-ae44-400c-aa6d-cea51f0b9074，名下 41 個 release-group（分頁全列）。",
+    "rgMbid": "702de139-4508-3423-a817-4d811413b7ac",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/702de139-4508-3423-a817-4d811413b7ac/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3351,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "先去聽《陰間大法師》的配樂，他才想通這套曲子怎麼寫。英文維基記他的原話是：可以用很暗的和弦、很暗的和聲，只要節奏夠滑稽，就不會嚇到小孩。曲中多處用三全音，反映 Banjo 與 Kazooie 兩個角色的反差；這也是最早採用垂直重混的遊戲之一，同一首曲子的不同聲部會依玩家所在位置淡入淡出。動物的音效有時本身就當樂器用。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/702de139-4508-3423-a817-4d811413b7ac",
+     "https://musicbrainz.org/release/0e0022e6-a153-35c5-97fa-de808b413bd7",
+     "https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game)",
+     "https://en.wikipedia.org/wiki/Grant_Kirkhope",
+     "https://en.wikipedia.org/wiki/Banjo-Kazooie",
+     "https://itunes.apple.com/lookup?id=321277612&entity=album&limit=200&country=us"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "David Wise",
+   "album": "Donkey Kong Country 2: Diddy’s Kong Quest",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1a3b20ad-34e8-3ad7-9fe5-bafdd473ad27。回問確認：title「Donkey Kong Country 2: Diddy’s Kong Quest」、artist-credit「David Wise」（單人）、first-release-date 1995-10-01、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release（1995-10-01 US/Official＝Nintendo of America 7250-Winter95／55 軌、1995-11-01 US/Official／55 軌、1996-03-25 JP/Official＝NTT出版 PSCN-5049／34 軌，另 JP/Bootleg、Bootleg ×3、狀態不明與 Pseudo-Release 各一）。刻意不釘：77522908-4a46-3299-8a05-00e3de02f308《Donkey Kong Country》（1994，artist-credit 為 David Wise, Eveline Fischer & Robin Beanland 三人，掛名與本張不同）、595fb34b-f5e0-4f68-a8ea-fc5477b0ecdc《Donkey Kong Country: Tropical Freeze》（2014，轄下兩個 release 全為 Bootleg）。藝人 MBID ae29aae4-abfb-4609-8f54-417b1f4d64cc（disambiguation「video game composer」；MB 上另有兩個同名的 David Wise——a0ce719e 是 a cappella 團員、3bd1d6d9 是美國薩克斯風手，識別靠 MBID 不靠字串），名下 32 個 release-group（分頁全列）。",
+    "rgMbid": "1a3b20ad-34e8-3ad7-9fe5-bafdd473ad27",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1a3b20ad-34e8-3ad7-9fe5-bafdd473ad27/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 258,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他不用現成的 MIDI 音色，客製樂器是自己寫程式做的。1996 年 1 月號《Electronic Gaming Monthly》上他說，本作的音樂寫於他所謂的實驗性的巴黎時期；音色是為 SNES 的 SPC700 音源晶片做的，目標是聽起來像 Korg Wavestation。英文維基指認那股管弦感的來源是普羅高菲夫、柴可夫斯基與穆索斯基。美版 CD 帳面 55 軌，但只有前 29 軌是樂曲，第 30 到 34 軌是靜音，之後全是數秒的音效片段。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1a3b20ad-34e8-3ad7-9fe5-bafdd473ad27",
+     "https://musicbrainz.org/release/d6c91822-ad3b-476c-a158-a585c1ebe91a",
+     "https://en.wikipedia.org/wiki/Donkey_Kong_Country_2",
+     "https://en.wikipedia.org/wiki/David_Wise_(composer)",
+     "https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game)",
+     "https://itunes.apple.com/search?term=Donkey%20Kong%20Country%202&country=us&entity=album&limit=50"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Christopher Larkin",
+   "album": "Hollow Knight",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9df7cf82-6ea3-4021-829f-f2192977ac8d。回問確認：title「Hollow Knight」、artist-credit「Christopher Larkin」、first-release-date 2017-02-10、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release 全部 Official（2017-02-10 XW 無廠牌／26 軌／barcode 840095520225、2017-02-25 XW、2017-06-01 US＝IndieBox CD）。刻意不釘：91a79b91-a98c-447c-a7b9-c40e731d8d8d《Hollow Knight: Hidden Dreams》（2017 EP）、b1c402a5-2595-4276-a668-ce7001f7193a《Hollow Knight: Gods & Nightmares》（2018 追加曲）、cb338578-6398-4ab1-8730-0bbe7c976d65《Hollow Knight: Silksong (OST Sample)》（2019 EP）、d34d8658-6603-449e-b691-a982ccc79116《Hollow Knight: Silksong (Original Soundtrack)》（2025 續作）。藝人 MBID 38e0beaf-c6ea-4561-808c-ba4a84b66341，名下 10 個 release-group（分頁全列）。",
+    "rgMbid": "9df7cf82-6ea3-4021-829f-f2192977ac8d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9df7cf82-6ea3-4021-829f-f2192977ac8d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1326,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "作曲家是靠一場募資請來的，兩千多人湊出五萬七千多澳元。英文維基記那次 Kickstarter 開在 2014 年 11 月、目標三萬五千澳元，正是這筆錢讓 Team Cherry 得以擴編，把 Christopher Larkin 找進來。碟上 26 個曲名幾乎全是遊戲裡的地名或首領名，曲序大致跟著遊戲的推進走。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9df7cf82-6ea3-4021-829f-f2192977ac8d",
+     "https://en.wikipedia.org/wiki/Hollow_Knight",
+     "https://music.apple.com/jp/album/1263341718",
+     "https://github.com/kubinice06/dip-vinyl-shop/blob/main/batch-progress/c101/rulings.md"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/29/40/cd294066-5130-0087-f049-23c8c9b0891b/mzaf_4431245593694758997.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1263341718",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gareth Coker",
+   "album": "Ori and the Blind Forest (Original Soundtrack)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 36009069-d3e9-4d57-9540-dd105ff4d76c。回問確認：title「Ori and the Blind Forest (Original Soundtrack)」、artist-credit「Gareth Coker」、first-release-date 2015-03-10、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release 全部 Official（2015-03-10 XW＝Microsoft Studios Music／32 軌、2015-06-10 XW、2016-04-27 XW、2016-05-23 US＝Microsoft Studios／Moon Studios／Nordic Games CD 24 軌、2016-06-14 GB 與 US、2017-02-24 US、2020-03-10 XW、2020 US）。刻意不釘：0c6ec9da-8cd5-495b-b015-9493e2a0306c《Ori and the Will of the Wisps: The Piano Collections》（2020 鋼琴編曲盤，非原聲）、1d98d67a-1cdb-4ac8-9a4d-65ee8a202753《Ori and the Will of the Wisps - Teaser Music》（2017 單曲）。藝人 MBID 96eca91a-fdb5-4a0e-908b-ba526ba166df。",
+    "rgMbid": "36009069-d3e9-4d57-9540-dd105ff4d76c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/36009069-d3e9-4d57-9540-dd105ff4d76c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": 168053,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他在日本住了三年，一邊教英文，一邊摸各種民族樂器。英文維基記工作室總監 Thomas Mahler 偶然看到他的作品，找他替遊戲原型寫配樂；他讓樂器去代表地區：Ginso Tree 用木質打擊樂器、Forlorn Ruins 用管樂。整套配樂在納許維爾的 Ocean Way 錄音，樂團是 Nashville Studio Orchestra。本作在第 19 屆 D.I.C.E. Awards 拿下原創音樂獎，另入圍 BAFTA 的 Best Music。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/36009069-d3e9-4d57-9540-dd105ff4d76c",
+     "https://en.wikipedia.org/wiki/Ori_and_the_Blind_Forest",
+     "https://en.wikipedia.org/wiki/Gareth_Coker",
+     "https://music.apple.com/jp/album/971519718"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/9e/8d/a89e8da1-4f7c-3c6f-1e3c-82d26362ad98/mzaf_18159634360288290858.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "971519718",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Christopher Tin",
+   "album": "Calling All Dawns: A Song Cycle",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 164e1861-c100-4e1f-8472-5e4b91588106。回問確認：title「Calling All Dawns: A Song Cycle」、artist-credit「Christopher Tin」、first-release-date 2009-10-01、**primary-type Album、secondary-types 空**（本批唯一一張 secondary-types 不含 Soundtrack 的卡）、轄下 6 個 release 全部 Official（2009-10-01 XW ×2＝Tin Works Publishing TW001 數位與 CD 各 12 軌、2009-10-01＝Tin Works／Universal Music Classics Group、2011-09-01 XW＝TW002 CD＋DVD、2015-05-11、2023-05-26 XW）。刻意不釘：a3a73db5-cf9a-4a85-a258-6a3e8a515c3e《Song Offerings: Choral Works by Christopher Tin》（2025 合唱作品集）、c98ba44a-d602-4cef-b15a-9372bdf5cae8《The Drop That Contained the Sea》（2014 另一部聯篇歌集）、463d3803-216f-491a-be5f-6bcda76e22b3《Sid Meier's Civilization VII (Original Game Soundtrack)》（2025 遊戲原聲，本批未收）、40177e2c-c55f-422f-9d43-8546fc58d97a《Old World》（2021 遊戲原聲）。藝人 MBID bc37fe19-d935-48c0-b2ab-65212e09cf6c，名下 24 個 release-group（分頁全列）。",
+    "rgMbid": "164e1861-c100-4e1f-8472-5e4b91588106",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/164e1861-c100-4e1f-8472-5e4b91588106/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 968,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首歌，十二種語言，從斯瓦希里語唱到毛利語。英文維基記全碟是三個樂章的聯篇歌集——day、night、dawn，對應生、死、重生；歌詞取自希伯來聖經、《薄伽梵歌》、《魯拜集》、主禱文、毛利諺語與日本俳句，動用的聲樂傳統包含京劇、愛爾蘭的 keening 與非洲合唱。這是一張獨立的合唱與管弦作品，只有開場曲〈Baba Yetu〉出自《文明帝國 IV》；第 53 屆葛萊美頒給本輯這個錄音的那一次，是史上第一次葛萊美頒給為電子遊戲寫的作品。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/164e1861-c100-4e1f-8472-5e4b91588106",
+     "https://en.wikipedia.org/wiki/Calling_All_Dawns",
+     "https://en.wikipedia.org/wiki/Christopher_Tin",
+     "https://music.apple.com/us/album/1526759916"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/74/61/a8/7461a8a4-3344-9baf-b239-5505266f3de2/mzaf_13595702390112961740.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1526759916",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

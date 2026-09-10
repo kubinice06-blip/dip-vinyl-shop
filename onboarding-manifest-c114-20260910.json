@@ -1,0 +1,3006 @@
+{
+ "schemaVersion": 1,
+ "batch": "c114-20260910",
+ "albums": [
+  {
+   "artist": "The Swanee Quintet",
+   "album": "What About Me",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Swanee Quintet&limit=8 → score 100 命中「Swanee Quintet」2a688f04-2c00-4c2b-8398-04f08abbb9cc（US／Group）；依第 179 條回問 area／type／disambiguation 確認不是 AU 的搖滾歌手 Swanee（4c754bf4）或 Swanee River（a1fefb10）",
+      "release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 4 個 release-group：《So Glad...》《Just One Rose Will Do!》《Eternal Life》（三筆皆無年份與型別）與《The Complete Nashboro Releases 1951-62》2016（ed0037a6-0c09-4dd4-82bd-8c3c94d39a41，Album/Compilation）；1960–80 年那二十幾張 Nashboro／Creed 原盤一張都沒有",
+      "release-group?query=releasegroup:\"What About Me\" AND artist:\"The Swanee Quintet\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"What About Me\"&limit=10 → count=39，前排是 Anne Murray 1968、Shannon Noll 2004、Nihilist Spasm Band 1992、Belinda Metz 1985，沒有一筆的 artist-credit 沾到本團"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Swanee Quintet 的藝人實體在 MB 上存在，但 browse 分頁只回 4 個 release-group（三張無年份的後期碟＋一張 2016 年精選），1960 年的廠牌創業盤不在其中；再以盤名加掛名反查 count=0，單以盤名反查的 39 筆全是不相干的藝人。查詢全部回 HTTP 200（其中兩次 503 已依第 28 條退避重試），走的是 limit=100 的 browse 端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/3430359",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/KoRpJDTblufLgHCJsRExVjr1nf4dguXfW_FU2V-6zgc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MzAz/NTktMTYyNjUxOTQz/OS02NTgxLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "3430359"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "編號從 7000 起跳，廠牌的第一張 LP 給了一支四重唱。全片十二段，A 面六段、B 面六段，A1〈Sit Down Servant〉起手、B6〈The Fire Keeps A Burning〉收尾，一段長度都沒有留下。廠牌自家的專輯目錄裡，這團掛名共二十三行，從這張一路排到 1980 年代初。1960 年由 Nashboro 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3430359",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Nashboro_Records",
+     "https://itunes.apple.com/lookup?id=1443999129&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/3430359"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/36/a5/d536a5f6-4214-39b8-1153-90c0ba9bc95c/mzaf_8048459691697247921.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443999129",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brother Joe May",
+   "album": "The Master's On Our Side",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Brother Joe May&limit=8 → score 100 命中「Brother Joe May」95b8d911-8664-4bed-9234-c3718fae222a（US／Person／1912-1972）；另以 artist?query=Joe May 反查，score 100 回的是 Pluto Gang 的鍵盤手 Joe May（3ec7512a），Brother Joe May 掉到 98——第 179 條的短掛名撞名實例，兩次都要回問 disambiguation 才分得出來",
+      "release-group?artist=95b8d911-8664-4bed-9234-c3718fae222a&limit=100&offset=0 → 名下僅 2 個 release-group，且兩筆都是 1990 年代的精選：《Live 1952 - 1955》1994（58a0ee06，Album/Compilation,Live）與《Thunderbolt of the Middle West》1992（9601c7ac，Album/Compilation）；他 1959–68 年在 Nashboro 的六張原盤全部空白",
+      "release-group?query=releasegroup:\"The Master's On Our Side\" AND artist:\"Brother Joe May\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"The Master's On Our Side\"&limit=10 → count=0（連不相干的碟都沒有，這個盤名在 MB 上完全不存在）"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Brother Joe May 的藝人實體存在但名下只有兩張 1990 年代精選，1959–68 年的 Nashboro 原盤整段空白；盤名加掛名與單盤名兩種反查都 count=0。全部回 HTTP 200，走 browse 分頁端點（第 116 條），score 100 那筆已回問 disambiguation 確認是 1912-1972 的本人（第 179 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/19655134",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/QblwNFwUV428DcduWDACvpxL1Zuap5HB-rTcQhvdNVc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NjU1/MTM0LTE2NDEzNzQ5/MzMtNDU4MC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "19655134"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "刻紋上印著姊妹廠的縮寫，十二段沒有一段超過三分鐘。逐段落在 2 分 12 秒到 2 分 59 秒之間、全片約三十分，等於把單曲長度直接排成一張黑膠。末段〈My Conversion〉2 分 12 秒是全片最短，A5 與 A6 兩段則轉入他最擅長的敘事型唱段。唱片由 Crown Album Corp. 製造、母模交 Sheldon 壓製。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/19655134",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Brother_Joe_May",
+     "https://musicbrainz.org/ws/2/release-group?artist=95b8d911-8664-4bed-9234-c3718fae222a&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/19655134"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Edna Gallmon Cooke",
+   "album": "He'll Fix It",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Edna Gallmon Cooke&limit=8 → score 100 命中「Edna Gallmon Cooke」12cfe076-75a8-4a89-91f6-eb575b77efbf（US／Person）；另以盤面常用的 artist?query=Madame Edna Gallmon Cooke 反查，score 100 回的是同一個實體，MB 內部沒有 Madame／Mme. 前綴的分身（第 187 條的反向確認）",
+      "release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&limit=100&offset=0 → **count=0，名下一個 release-group 都沒有**；她 1960–67 年在 Nashboro 的十張 LP 與死後的兩張紀念盤在 MB 上完全不存在",
+      "release-group?query=releasegroup:\"He'll Fix It\" AND artist:\"Edna Gallmon Cooke\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"He'll Fix It\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Edna Gallmon Cooke 的藝人實體在 MB 上存在，但 browse 分頁回 count=0——名下一個 release-group 都沒有，她十張 Nashboro 原盤與兩張紀念盤全部沒建檔；盤名兩種反查也都 count=0。查詢皆回 HTTP 200，走 limit=100 的 browse 端點，敬稱形掛名已依第 187 條另查一次確認沒有分身。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/3818333",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/2zTl4IqxNddDV62hrwE4zqsET5gWK32nndXgAFzLGjA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MTgz/MzMtMTQyODAwMjQx/NC00MDQ1LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "3818333"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "她的招牌是先講一段再唱開，圈內敬稱 Madame。全片十二段，逐段 2 分 13 秒到 3 分 3 秒、合計約三十四分，長度分布極平均。B1〈Heavy Load〉是她最為人知的兩首之一，卻被排在翻面的第一段而不是壓軸。這張由 Nashboro 發行，排在廠牌專輯編號的第三張。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3818333",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Edna_Gallmon_Cooke",
+     "https://musicbrainz.org/ws/2/release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/3818333"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Consolers",
+   "album": "Singing Gospel Songs",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Consolers&limit=8 → score 100 命中「The Consolers」c1b9c6b3-301d-4ece-bcca-f40750ca3f04（US／Group／disambiguation「Gospel couple」）；⚠ 第 179 條在這個掛名上非踩不可：同名還有巴貝多的 The Consolers（67157a30，Joseph Niles 的伴唱團）、德國的 Consolers（c4e607fd）與北愛爾蘭的 alt-rock Consolers（be08301a），只看名字會誤判；另以 artist?query=Sullivan and Iola Pugh 反查夫妻本名，回的是 Sullivan S. Pugh（722ee203，US／Person）——**那個實體名下 0 個 release-group**",
+      "release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&limit=100&offset=0 → 名下僅 2 個 release-group：《Lord, Bring Me Down》1998-09-22（0cde8475）與《The Consolers Collection 1952-62》2014（3c1357c9，Album/Compilation）；1961–79 年那十幾張 Nashboro 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Singing Gospel Songs\" AND artist:\"The Consolers\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Singing Gospel Songs\"&limit=10 → count=0；另以 bsnpubs 的寫法 release-group?query=releasegroup:\"Consolers\" AND artist:\"The Consolers\"&limit=10 也是 count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "The Consolers 的藝人實體存在（US／Group／Gospel couple），但名下只有 1998 年的《Lord, Bring Me Down》與 2014 年的精選兩筆，1961–79 年的 Nashboro 原盤全部空白；夫妻本名 Sullivan S. Pugh 的另一個實體名下也是 0 個 release-group。兩種盤名寫法反查皆 count=0。查詢全部 HTTP 200，走 browse 分頁端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8083730",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/1c/76/9d/1c769d77-ab7d-79fa-48e0-318cd0c268a1/888831963721.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "933939727",
+    "note": "試聽探測釘定的 collectionId 933939727（us）：The Consolers — The Consolers Collection 1952-62"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片內圈的標籤上，一個盤名也沒有印。封面與書背印的是盤名，副標印〈Give Me My Flowers〉，廠牌目錄那一行乾脆寫成團名。全片十二段、沒有留下任何逐軌長度，A1 就是〈Give Me My Flowers〉，末段〈My Soul's Salvation〉收尾。1961 年由 Nashboro 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8083730",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://itunes.apple.com/lookup?id=933939727&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8083730"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music5/v4/84/8a/ad/848aad2f-6a35-3970-43f3-4fc7d389bfc7/mzaf_6447571800695627562.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "933939727",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Swanee Quintet",
+   "album": "Anniversary Album",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Swanee Quintet&limit=8 → score 100 命中「Swanee Quintet」2a688f04-2c00-4c2b-8398-04f08abbb9cc（US／Group）；依第 179 條回問 area／type／disambiguation 確認不是 AU 的搖滾歌手 Swanee（4c754bf4）或 Swanee River（a1fefb10）",
+      "release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 4 個 release-group：《So Glad...》《Just One Rose Will Do!》《Eternal Life》（三筆皆無年份與型別）與《The Complete Nashboro Releases 1951-62》2016（ed0037a6-0c09-4dd4-82bd-8c3c94d39a41，Album/Compilation）；1960–80 年那二十幾張 Nashboro／Creed 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Anniversary Album\" AND artist:\"The Swanee Quintet\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Anniversary Album\"&limit=10 → count=138，前排是 Matheus Felipe 2021、Kamahl《25th Anniversary Album》、Trini Lopez 1990、Harvard University Band 1995，全是不相干的碟"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Swanee Quintet 名下 4 個 release-group 皆非本片；盤名加掛名反查 count=0，單以盤名反查的 138 筆沒有一筆的 artist-credit 沾到本團。查詢皆回 HTTP 200，走 limit=100 的 browse 端點（第 116 條），score 100 的藝人實體已回問 area／type 排除同名（第 179 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/11191113",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/h8z0h9oAC2zhfo12JGVXAgYMvt3VOYCvjgbFEpYNR3k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTkx/MTEzLTE2MjgzMjgz/MDEtNTM4Mi5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "11191113"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "初版標籤綠底黑字，弧形黑帶上還印著 NONBREAKABLE。中心孔上方是廠名，下方那道弧帶寫 33 1/3 RPM，底部寫 MICROGROOVE LONG PLAYING。十二段沒有留下逐軌長度，A1〈Where He Leads Me〉這首他們四年裡錄了三遍，A4〈How I Got Over〉則是全片最廣為人知的一段。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/11191113",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://itunes.apple.com/lookup?id=1443999129&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/11191113"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/36/a5/d536a5f6-4214-39b8-1153-90c0ba9bc95c/mzaf_8048459691697247921.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443999129",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Edna Gallmon Cooke",
+   "album": "Stop Gambler",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Edna Gallmon Cooke&limit=8 → score 100 命中「Edna Gallmon Cooke」12cfe076-75a8-4a89-91f6-eb575b77efbf（US／Person）；另以盤面常用的 artist?query=Madame Edna Gallmon Cooke 反查，score 100 回的是同一個實體，MB 內部沒有 Madame／Mme. 前綴的分身（第 187 條的反向確認）",
+      "release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&limit=100&offset=0 → **count=0，名下一個 release-group 都沒有**；她 1960–67 年在 Nashboro 的十張 LP 與死後的兩張紀念盤在 MB 上完全不存在",
+      "release-group?query=releasegroup:\"Stop Gambler\" AND artist:\"Edna Gallmon Cooke\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Stop Gambler\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Edna Gallmon Cooke 名下 release-group browse 回 count=0，本片與她其餘九張 Nashboro LP 皆未建檔；盤名兩種反查也都 count=0。全部 HTTP 200，走 browse 分頁端點，敬稱形掛名已另查確認無分身（第 187 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6852697",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/YNmIO-LKO_CI9O0_ECkDJMkA1_amVMv0NVl3ZZ6UAxA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4NTI2/OTctMTQyODAwMzUw/Mi02MDQ0LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "6852697"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A5 唱了 4 分 41 秒——十二段裡最長的一段。逐段落在 2 分 23 秒到 4 分 41 秒之間、全片約三十八分，比同期同廠的四重唱盤明顯長。長段集中在 A5〈Lord When I Get Home〉與 A3〈Stop Gambler〉3 分 30 秒兩處，同名曲是她最為人知的兩首之一。1962 年由 Nashboro 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6852697",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Edna_Gallmon_Cooke",
+     "https://musicbrainz.org/ws/2/release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6852697"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Morgan Babb",
+   "album": "Keep Faith In God",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Morgan Babb&limit=8 → score 100 命中「Morgan Babb」a859e47f-ffdb-4139-b844-234dbc394e90（Person，無 area）；另以 artist?query=Rev. Morgan Babb 反查（掛名在盤面上有 Morgan Babb／Rev. Morgan Babb／Dr. Morgan Babb 三種寫法），score 100 回的仍是同一個實體，沒有分身",
+      "release-group?artist=a859e47f-ffdb-4139-b844-234dbc394e90&limit=100&offset=0 → **count=0，名下零個 release-group**；他 1963–78 年在 Nashboro 的六張 LP 與 1995 年 AVI 的《Keep Faith》精選在 MB 上都不存在",
+      "release-group?query=releasegroup:\"Keep Faith In God\" AND artist:\"Morgan Babb\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Keep Faith In God\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Morgan Babb 的藝人實體存在但 release-group browse 回 count=0，名下零筆；三種掛名寫法都指向同一個實體、沒有分身；盤名兩種反查亦 count=0。查詢全部 HTTP 200，走 browse 分頁端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6908587",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/36/b1/92/36b192d1-8de0-0b49-5d7c-3ced2d938c75/00602537739004.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443476493",
+    "note": "試聽探測釘定的 collectionId 1443476493（us）：Reverend Dr. Morgan Babb — Keep Faith: The Reverend Dr. Morgan Babb Collection"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十年後，他在同一座城市開了一家電台，台呼叫大嘴巴。1983 年他讓 AM 880 開播，早上放都會福音、下午轉世俗節奏藍調，2005 年 5 月才賣出。這張十二段，逐段 2 分 27 秒到 3 分 20 秒、全片約三十三分，同名曲 3 分整起手，B3〈In Love With Jesus〉3 分 20 秒最長。1963 年由 Nashboro 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6908587",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://itunes.apple.com/lookup?id=1443476493&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/WMDB",
+     "https://musicbrainz.org/ws/2/release-group?artist=a859e47f-ffdb-4139-b844-234dbc394e90&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6908587"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/6f/a8/40/6fa840f1-84c9-07e9-7a47-a79ce5921008/mzaf_5569277081650071926.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443476493",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Edna Gallmon Cooke",
+   "album": "Songs My Mother Sang",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Edna Gallmon Cooke&limit=8 → score 100 命中「Edna Gallmon Cooke」12cfe076-75a8-4a89-91f6-eb575b77efbf（US／Person）；另以盤面常用的 artist?query=Madame Edna Gallmon Cooke 反查，score 100 回的是同一個實體，MB 內部沒有 Madame／Mme. 前綴的分身（第 187 條的反向確認）",
+      "release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&limit=100&offset=0 → **count=0，名下一個 release-group 都沒有**；她 1960–67 年在 Nashboro 的十張 LP 與死後的兩張紀念盤在 MB 上完全不存在",
+      "release-group?query=releasegroup:\"Songs My Mother Sang\" AND artist:\"Edna Gallmon Cooke\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Songs My Mother Sang\"&limit=10 → count=0；另以完整寫法 releasegroup:\"Songs My Mother Sang (Songs Of Inspiration)\" 反查亦 count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Edna Gallmon Cooke 名下 release-group browse 回 count=0；主標與含副標兩種盤名寫法反查皆 count=0。查詢全部 HTTP 200，走 limit=100 的 browse 端點，敬稱形掛名已另查確認無分身。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7913253",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/F48S-vqzoxZWVnTMOhb-N8TqL2M2HNYaAjqcxMlaCgw/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5MTMy/NTMtMTQ1MTYxNDc1/OC04NTQzLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "7913253"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名叫「母親唱過的歌」，唱的人是牧師的女兒。父親 Eddie J. Gallmon 是浸信會牧師，她早年推廣的正是父親 1920 年代唱過的講道曲與靈歌。全片十二段，逐段 1 分 55 秒到 3 分 6 秒、合計約三十二分，B2〈Got To Go To Judgement〉1 分 55 秒是全片最短，末三段都落在三分上下。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/7913253",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Edna_Gallmon_Cooke",
+     "https://musicbrainz.org/ws/2/release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/7913253"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Swanee Quintet",
+   "album": "Meetin' Tonight",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Swanee Quintet&limit=8 → score 100 命中「Swanee Quintet」2a688f04-2c00-4c2b-8398-04f08abbb9cc（US／Group）；依第 179 條回問 area／type／disambiguation 確認不是 AU 的搖滾歌手 Swanee（4c754bf4）或 Swanee River（a1fefb10）",
+      "release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 4 個 release-group：《So Glad...》《Just One Rose Will Do!》《Eternal Life》（三筆皆無年份與型別）與《The Complete Nashboro Releases 1951-62》2016（ed0037a6-0c09-4dd4-82bd-8c3c94d39a41，Album/Compilation）；1960–80 年那二十幾張 Nashboro／Creed 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Meetin' Tonight\" AND artist:\"The Swanee Quintet\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Meetin' Tonight\"&limit=10 → count=1，唯一一筆是 The Clara Ward Singers 的《Meetin' Tonight!》（00b4f182-9b7e-3c22-bc2b-cd71611b7dc7），掛名與本團無關"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Swanee Quintet 名下 4 個 release-group 皆非本片；盤名加掛名 count=0，單以盤名反查只回一筆別團的同名碟。查詢皆回 HTTP 200，走 browse 分頁端點，藝人實體已回問 area／type 排除同名（第 179 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10063134",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/pv6Bpv_VS2hFIHgskpcs9_nj0UmJWIL2JgmLU_fAYAU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDYz/MTM0LTE1MjY2MDU5/NTQtOTkxMS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "10063134"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "末段那首標著 Parts 1 and 2，一首佔掉兩首的位置。全片十一段，是他們四張裡唯一不足十二段的一張，原因就在末段〈New Born Soul (Parts 1 and 2)〉。逐軌長度沒有留下，A 面由〈I'll Be Alright〉起手，B4〈Life's Ocean〉在同批另一張碟上也有一首同名曲。出版掛 Excellorec，名字來自姊妹廠。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10063134",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/9825881",
+     "https://musicbrainz.org/ws/2/release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10063134"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Consolers",
+   "album": "Heart Warming Spirituals",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Consolers&limit=8 → score 100 命中「The Consolers」c1b9c6b3-301d-4ece-bcca-f40750ca3f04（US／Group／disambiguation「Gospel couple」）；⚠ 第 179 條在這個掛名上非踩不可：同名還有巴貝多的 The Consolers（67157a30，Joseph Niles 的伴唱團）、德國的 Consolers（c4e607fd）與北愛爾蘭的 alt-rock Consolers（be08301a），只看名字會誤判；另以 artist?query=Sullivan and Iola Pugh 反查夫妻本名，回的是 Sullivan S. Pugh（722ee203，US／Person）——**那個實體名下 0 個 release-group**",
+      "release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&limit=100&offset=0 → 名下僅 2 個 release-group：《Lord, Bring Me Down》1998-09-22（0cde8475）與《The Consolers Collection 1952-62》2014（3c1357c9，Album/Compilation）；1961–79 年那十幾張 Nashboro 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Heart Warming Spirituals\" AND artist:\"The Consolers\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Heart Warming Spirituals\"&limit=10 → count=0；另以原壓寫法 releasegroup:\"Singing Heart Warming Spirituals\" 反查亦 count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "The Consolers 名下只有 1998 年一張與 2014 年一張精選，本片不在其中；兩種盤名寫法反查都 count=0；夫妻本名的另一個 MB 實體（Sullivan S. Pugh 722ee203）名下也是 0 筆。查詢皆 HTTP 200，走 browse 分頁端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/3977840",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/jpcaSoy-oAwsqBEPk6AVzz3YH_98-H00yNozNmv5tKU/rs:fit/g:sm/q:90/h:575/w:575/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5Nzc4/NDAtMTQwNjQ0OTc2/Ny03NzM0LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "3977840"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A5 那首是碟上男聲寫的，十二年後出現在別團的盤上。〈Won't It Be Grand〉的詞曲掛 Sullivan Pugh，也就是這對夫妻檔裡的男聲；1975 年 Swanee Quintet 那張 Creed 盤的 A2 又錄了一次。全片十二段，逐段 2 分 15 秒到 3 分 16 秒、合計約三十三分。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3977840",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/4418720",
+     "https://api.discogs.com/releases/7640818",
+     "https://musicbrainz.org/ws/2/release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/3977840"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Consolers",
+   "album": "Joy In The Morning",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Consolers&limit=8 → score 100 命中「The Consolers」c1b9c6b3-301d-4ece-bcca-f40750ca3f04（US／Group／disambiguation「Gospel couple」）；⚠ 第 179 條在這個掛名上非踩不可：同名還有巴貝多的 The Consolers（67157a30，Joseph Niles 的伴唱團）、德國的 Consolers（c4e607fd）與北愛爾蘭的 alt-rock Consolers（be08301a），只看名字會誤判；另以 artist?query=Sullivan and Iola Pugh 反查夫妻本名，回的是 Sullivan S. Pugh（722ee203，US／Person）——**那個實體名下 0 個 release-group**",
+      "release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&limit=100&offset=0 → 名下僅 2 個 release-group：《Lord, Bring Me Down》1998-09-22（0cde8475）與《The Consolers Collection 1952-62》2014（3c1357c9，Album/Compilation）；1961–79 年那十幾張 Nashboro 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Joy In The Morning\" AND artist:\"The Consolers\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Joy In The Morning\"&limit=10 → count=8，前排是 Kiltartan Road、P. G. Wodehouse／Jonathan Cecil 2010、Sam P. 2015、Bernard Herrmann 2002-03，沒有一筆沾到本團"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "The Consolers 名下只有 1998 年一張與 2014 年精選；盤名加掛名反查 count=0，單以盤名反查的 8 筆全是不相干的碟（含有聲書與配樂）。查詢皆 HTTP 200，走 browse 分頁端點，四個同名 Consolers 已依第 179 條逐一回問 area 排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5165307",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/S7nkpcfj3LNG_4DEyAnyUSNsZAoRGKIX1aeetmkLsWE/rs:fit/g:sm/q:90/h:575/w:575/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNjUz/MDctMTQwMTc3NzQ1/OC0xMzk1LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5165307"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩份記錄對這張碟的曲序，給出了相反的排列。一份說〈Around God's Throne〉排第一，另一份說它是最後一段；十二首曲名倒是兩方一致，同名曲、〈Farther Along〉與〈Little Wooden Church〉都在裡面。逐軌長度、面別與製作掛名一概沒有，是他們四張裡記錄最單薄的一張。1964 年由 Nashboro 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5165307",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://itunes.apple.com/lookup?id=1443814541&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5165307"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Angelic Gospel Singers",
+   "album": "Songs From The Heart",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Angelic Gospel Singers&limit=8 → score 100 命中「The Angelic Gospel Singers」91c108c1-9103-4d55-bbe6-f21394808b75（US／Group）；依第 179 條回問 area／type，排除 The Heavenly Gospel Singers（90d068a7）與 The Harlem Gospel Singers（282ffde0）；另以 artist?query=Margaret Allison 反查團長本名，MB 上沒有對應的獨立實體",
+      "release-group?artist=91c108c1-9103-4d55-bbe6-f21394808b75&limit=100&offset=0 → 名下 7 個 release-group，全部是 1995 年以後的 Malaco／AIR 期作品與精選：《Try God》1995、《Touch Me Lord Jesus》2004、《Glory Glory Hallelujah》2007、《The Best of…Volume 1／2》2014-03-11 兩張、以及兩張 Single；**1961–79 年那十張 Nashboro 原盤完全空白**",
+      "release-group?query=releasegroup:\"Songs From The Heart\" AND artist:\"The Angelic Gospel Singers\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Songs From The Heart\"&limit=10 → count=64，前排是 The Anchors、Celtic Woman 2009、Vince Gill 1994、Charlie Landsborough 1994-09-08，全與本團無關"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Angelic Gospel Singers 名下 7 個 release-group 全部是 1995 年之後的作品與 2014 年兩張精選，1961–79 年十張 Nashboro 原盤整段空白；盤名加掛名反查 count=0，單以盤名反查的 64 筆沒有一筆的 artist-credit 沾到本團。查詢皆 HTTP 200，走 limit=100 的 browse 端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/3955595",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/vkrYG1gb4NrIlcz1G0X6cT4tWmpPj_xPR0SDOkz7v8k/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTU1/OTUtMTM1MDczNDYx/Mi00MjAzLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "3955595"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1944 年的費城，兩姊妹加上兩個朋友。1947 年簽進費城的 Gotham，1949 年的〈Touch Me, Lord Jesus〉售出超過一百萬張；Gotham 1955 年停業後合約旋即被 Nashboro 買下，一路發到 1982 年。這張十二段、沒有留下逐軌長度，A5〈Camp Meetin'〉指的是南方野營佈道的曲式。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3955595",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Angelic_Gospel_Singers",
+     "https://itunes.apple.com/lookup?id=1443814541&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=91c108c1-9103-4d55-bbe6-f21394808b75&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/3955595"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Swanee Quintet",
+   "album": "Soul Stirring Gospels",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Swanee Quintet&limit=8 → score 100 命中「Swanee Quintet」2a688f04-2c00-4c2b-8398-04f08abbb9cc（US／Group）；依第 179 條回問 area／type／disambiguation 確認不是 AU 的搖滾歌手 Swanee（4c754bf4）或 Swanee River（a1fefb10）",
+      "release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 4 個 release-group：《So Glad...》《Just One Rose Will Do!》《Eternal Life》（三筆皆無年份與型別）與《The Complete Nashboro Releases 1951-62》2016（ed0037a6-0c09-4dd4-82bd-8c3c94d39a41，Album/Compilation）；1960–80 年那二十幾張 Nashboro／Creed 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Soul Stirring Gospels\" AND artist:\"The Swanee Quintet\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Soul Stirring Gospels\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Swanee Quintet 名下 4 個 release-group 皆非本片；盤名兩種反查都 count=0。查詢皆 HTTP 200，走 browse 分頁端點（第 116 條），藝人實體已回問 area／type 排除 AU 的同名歌手（第 179 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6557037",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/2A7McSSiK1wCKaua94-3TVQcE34JBF-qCg6Y_5ILEjY/rs:fit/g:sm/q:90/h:500/w:491/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTcw/MzctMTQyMTk0MDU0/Ny05NjY4LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "6557037"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一首歌，他們在同一家廠牌四年裡錄了三遍。〈Where He Leads Me〉1960 年錄過、1962 年又錄過，這張的 A3 再錄一次；A6〈Hard To Get Along〉也是首張上的舊曲。全片十二段、沒有逐軌長度，B1〈It Must Be Jesus〉與同批另一位歌手 1960 年那張的 A2 同名。1964 年由 Nashboro 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6557037",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/3818333",
+     "https://musicbrainz.org/ws/2/release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6557037"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Edna Gallmon Cooke",
+   "album": "Living Gospel Songs",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Edna Gallmon Cooke&limit=8 → score 100 命中「Edna Gallmon Cooke」12cfe076-75a8-4a89-91f6-eb575b77efbf（US／Person）；另以盤面常用的 artist?query=Madame Edna Gallmon Cooke 反查，score 100 回的是同一個實體，MB 內部沒有 Madame／Mme. 前綴的分身（第 187 條的反向確認）",
+      "release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&limit=100&offset=0 → **count=0，名下一個 release-group 都沒有**；她 1960–67 年在 Nashboro 的十張 LP 與死後的兩張紀念盤在 MB 上完全不存在",
+      "release-group?query=releasegroup:\"Living Gospel Songs\" AND artist:\"Edna Gallmon Cooke\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Living Gospel Songs\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Edna Gallmon Cooke 名下 release-group browse 回 count=0，十張 Nashboro 原盤與三張紀念／精選盤都沒有建檔；盤名兩種反查亦 count=0。查詢皆 HTTP 200，走 limit=100 的 browse 端點，敬稱形掛名已另查確認無分身。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7789381",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/A7kUVJOZdqJgt4Y95eTDKLXj8_iJM_lYws2Gl1WYFV0/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3ODkz/ODEtMTQ0ODg1MDkx/OC03MTAzLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "7789381"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二段裡六首是十九世紀的老聖詩，比例是她三張裡最高。〈God Be With You〉〈I Love To Tell The Story〉〈Old Time Religion〉都在其中。有長度的十一段落在 2 分 15 秒到 2 分 55 秒之間、全片約三十一分，B3〈Child Of The King〉是唯一沒有留下長度的一段。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/7789381",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/7913253",
+     "https://en.wikipedia.org/wiki/Edna_Gallmon_Cooke",
+     "https://musicbrainz.org/ws/2/release-group?artist=12cfe076-75a8-4a89-91f6-eb575b77efbf&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/7789381"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Supreme Angels",
+   "album": "Drinking Of The Wine",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Supreme Angels&limit=8 → score 100 命中「The Supreme Angels」a86f98fc-3f55-4a01-b5cf-9a6614a4daed（Group）；依第 187 條再查 1974 年後的掛名寫法 artist?query=Slim & The Supreme Angels，回的是**另一個實體** 476a2000-531f-4950-b563-3bad374f29bb——兩個實體都要查才算查過",
+      "release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&limit=100&offset=0 → **count=0**；release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&limit=100&offset=0 → **也是 count=0**。兩個實體名下都零個 release-group，他們 1966–82 年在 Nashboro 的十幾張 LP 一張都沒建檔",
+      "release-group?query=releasegroup:\"Drinking Of The Wine\" AND artist:\"The Supreme Angels\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Drinking Of The Wine\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "The Supreme Angels 與 Slim & The Supreme Angels 兩個 MB 實體的 release-group browse 都回 count=0，他們 1966–82 年十幾張 Nashboro LP 一張都沒建檔；盤名兩種反查亦 count=0。查詢皆 HTTP 200，走 browse 分頁端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8049232",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/J3lOmRRPy5D7zrxxNJF0MI0sJo70AoYqaXvHVHqgztY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwNDky/MzItMTQ1NDE2OTgy/OC04NjgyLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "8049232"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "B3 那首出自 Dorothy Love Coates 的筆下。〈You Can't Hurry God〉是她的代表作之一，而同批另一張碟就是她本人的。全片十二段，逐段 2 分 7 秒到 3 分 8 秒、約三十一分，B4〈Near The Cross〉與 B5〈Will The Circle Be Unbroken?〉都是老曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8049232",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Dorothy_Love_Coates",
+     "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels",
+     "https://musicbrainz.org/ws/2/release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8049232"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Professor Harold Boggs",
+   "album": "Lord Give Me Strength",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Professor Harold Boggs&limit=8 → score 100 回的實體名是「Prof. Harold Boggs」e7c2dd6b-d279-4f12-8748-d7f80f87d5b8（無 area、無 type）；⚠ 同一次查詢的第二到四名是 Conway Twitty（93）、Mad Professor（92）、Professor Longhair（91）——第 122 條「回了完全不相干的東西」的典型形狀，只有靠名字逐字比對才確認 score 100 那筆是對的。另以 artist?query=Prof. Harold Boggs 反查，回的是同一個實體",
+      "release-group?artist=e7c2dd6b-d279-4f12-8748-d7f80f87d5b8&limit=100&offset=0 → **count=0，名下零個 release-group**；他 1966–77 年在 Nashboro 掛名的九張 LP 在 MB 上完全不存在",
+      "release-group?query=releasegroup:\"Lord Give Me Strength\" AND artist:\"Professor Harold Boggs\"&limit=10 → count=0；改用 MB 實體名 artist:\"Prof. Harold Boggs\" 再查一次亦 count=0",
+      "release-group?query=releasegroup:\"Lord Give Me Strength\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Prof. Harold Boggs 的藝人實體存在但 release-group browse 回 count=0，名下零筆；他九張 Nashboro LP 一張都沒建檔。盤名加兩種掛名寫法、以及單盤名三次反查全部 count=0。查詢皆 HTTP 200；⚠ 這個掛名的 artist search 前四名混進 Conway Twitty 與 Mad Professor（第 122 條形狀），已逐字比對確認 score 100 那筆才是本人。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/13596513",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/t0TjFtp1VbmTMbxky7hu4HHM0unvvTU5MB1OuMH40tc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTk2/NTEzLTE1NTcxOTQx/OTYtNTgyNy5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "13596513"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "壓軸留給了《Carousel》裡的〈You'll Never Walk Alone〉。那是 Rodgers 與 Hammerstein 1945 年為音樂劇寫的曲子，卻落在一張南方福音盤的最後一軌。十二段沒有留下逐軌長度，A6〈Life's Ocean〉與同廠其他團的曲目同名。這位失明的歌手 1966 年在 Nashboro 交出這張。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/13596513",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/10063134",
+     "https://en.wikipedia.org/wiki/Lula_Reed",
+     "https://musicbrainz.org/ws/2/release-group?artist=e7c2dd6b-d279-4f12-8748-d7f80f87d5b8&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/13596513"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Brooklyn Allstars",
+   "album": "Jesus Loves Me",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Brooklyn Allstars&limit=8 → score 100 命中「Brooklyn Allstars」6e5c703f-91c6-4580-805a-9438fc8ef027（Group／disambiguation「gospel group」）；⚠ 依第 179 條改用分寫的 artist?query=The Brooklyn All Stars 再查一次，**score 100 回的竟是サザンオールスターズ（24d9e513，JP 搖滾團）**，本團掉到 89——這是第 122 條在本批的實例，掛名分寫與不分寫要各查一次",
+      "release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&limit=100&offset=0 → 名下僅 4 個 release-group，且四筆全是 1972–75 年 Jewel 時期的碟：《The New Sound of the Brooklyn Allstars》（6f65ad47）、《I’ve Got My Ticket》（7be74c35）、《He Touched Me》（e1f7b5ef）、《Ten Commandments》（10ce775c）；**Nashboro 時期（1967–82）與 Gospel Roots 時期（1977–78）一張都沒有**",
+      "release-group?query=releasegroup:\"Jesus Loves Me\" AND artist:\"The Brooklyn Allstars\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Jesus Loves Me\"&limit=10 → count=20，前排是 Subway 1978、DMX／Troy Bell 2008、Master Peace、Gordon Mote 2010，沒有一筆沾到本團"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Brooklyn Allstars 名下 4 個 release-group 全是 1972–75 年 Jewel 時期的碟，Nashboro 與 Gospel Roots 兩段完全空白；盤名加掛名反查 count=0，單以盤名反查的 20 筆全不相干。查詢皆 HTTP 200，走 browse 分頁端點；分寫掛名的假命中已依第 122 條排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6610957",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/m3Fff4gTM4PIvqlBR2EI0kBMuap1_GrAhgkDmv1k3sw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2MTA5/NTctMTYzMTY5MDU1/MS05MjYwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "6610957"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十段，開場那首唱了 4 分 23 秒。逐段落在 2 分 15 秒到 4 分 23 秒之間、全片約三十四分，A4〈Once A Day〉4 分 6 秒與 B2 同名曲 4 分 17 秒也都超過四分鐘。同廠 1966 年以前的碟多是十一到十二段的短曲，從這張起段數少了、單段長了。廠牌目錄裡這團掛名共八行，這張排第一。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6610957",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/8049232",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6610957"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Professor Alex Bradford",
+   "album": "I Must Tell Jesus",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Alex Bradford&limit=8 → score 100 命中「Alex Bradford」b31b2755-f86f-4461-8d73-4d515953c713（US／Person／disambiguation「“Professor”; gospel composer, singer, arranger & choir director」）；⚠ 第 179 條必查：同名還有 Nottinghamshire 的吉他手 Alex Bradford（e77b739d，94 分）與加拿大的髮型師 Alex Bradford（d9c88a32，94 分），沒有 disambiguation 就分不出來；另查 artist?query=Professor Alex Bradford 亦回同一實體",
+      "release-group?artist=b31b2755-f86f-4461-8d73-4d515953c713&limit=100&offset=0 → 名下僅 4 個 release-group：《Too Close》1993（2f780866，Compilation）、《Too Close》1992-12-31（ff341ac4，Compilation）、《Rainbow in the Sky》1992（67a59349，Compilation）與 1976 年百老匯原卡司盤《Your Arms Too Short to Box With God》（bd9a13b4，Soundtrack）；**三張精選加一張音樂劇，1967–78 年 Nashboro 的四張原盤一張都沒有**",
+      "release-group?query=releasegroup:\"I Must Tell Jesus\" AND artist:\"Alex Bradford\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"I Must Tell Jesus\"&limit=10 → count=1，唯一一筆是 From The Heart Gospel 2021-06-25 的碟，與本人無關"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Alex Bradford 名下 4 個 release-group 是三張 1992–93 年精選加 1976 年百老匯原卡司盤，1967–78 年四張 Nashboro 原盤全部空白；盤名加掛名反查 count=0，單以盤名只回一筆別人的碟。查詢皆 HTTP 200，走 browse 分頁端點；兩個同名實體已回問 disambiguation 排除（第 179 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7640818",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/HX7rhEJgypghv1nODcYK159Zfol-v5Rpurub5PzfGkk/rs:fit/g:sm/q:90/h:336/w:321/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2NDA4/MTgtMTQ0NTcyOTg4/NC01NzM1LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "7640818"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同名曲拆成 Part 1 與 Part 2，佔掉 A 面前兩軌。全片只有九段，是同批段數最少的幾張之一，一首就用掉兩個位置。他 1954 年那首〈Too Close To Heaven〉售出超過一百萬張，1961 年進了外百老匯，1972 年拿下 Obie 獎。這張 1968 年 2 月由 Nashboro 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/7640818",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Alex_Bradford",
+     "https://api.discogs.com/releases/8188974",
+     "https://musicbrainz.org/ws/2/release-group?artist=b31b2755-f86f-4461-8d73-4d515953c713&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/7640818"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brother Joe May",
+   "album": "I've Been Dipped In The Water",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Brother Joe May&limit=8 → score 100 命中「Brother Joe May」95b8d911-8664-4bed-9234-c3718fae222a（US／Person／1912-1972）；另以 artist?query=Joe May 反查，score 100 回的是 Pluto Gang 的鍵盤手 Joe May（3ec7512a），Brother Joe May 掉到 98——第 179 條的短掛名撞名實例，兩次都要回問 disambiguation 才分得出來",
+      "release-group?artist=95b8d911-8664-4bed-9234-c3718fae222a&limit=100&offset=0 → 名下僅 2 個 release-group，且兩筆都是 1990 年代的精選：《Live 1952 - 1955》1994（58a0ee06，Album/Compilation,Live）與《Thunderbolt of the Middle West》1992（9601c7ac，Album/Compilation）；他 1959–68 年在 Nashboro 的六張原盤全部空白",
+      "release-group?query=releasegroup:\"I've Been Dipped In The Water\" AND artist:\"Brother Joe May\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"I've Been Dipped In The Water\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:00:00Z",
+     "conclusion": "Brother Joe May 名下只有兩張 1990 年代精選，1959–68 年六張 Nashboro 原盤整段空白；盤名兩種反查皆 count=0。查詢全部 HTTP 200，走 browse 分頁端點；短掛名的撞名已依第 179 條回問 disambiguation 排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8188974",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/n8GSkw4TqEQ5Bc0cp7jOOSBThWH-lGf7NTnP8oGSmTc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxODg5/NzQtMTQ2MTUwNjg1/MC03NTc0LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "8188974"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音室建在一棟 1920 年代的電影院裡。Woodland Studios 落在東 Nashville，同一棟樓還裝著唱片公司與出版公司的辦公室。全片十段，逐段 2 分 5 秒到 3 分 30 秒、約三十分，B1〈Move On Up A Little Higher〉是 Mahalia Jackson 1947 年的招牌曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8188974",
+     "https://en.wikipedia.org/wiki/Woodland_Sound_Studios",
+     "https://en.wikipedia.org/wiki/Brother_Joe_May",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://musicbrainz.org/ws/2/release-group?artist=95b8d911-8664-4bed-9234-c3718fae222a&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8188974"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Supreme Angels",
+   "album": "Just Like Him",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Supreme Angels&limit=8 → score 100 命中「The Supreme Angels」a86f98fc-3f55-4a01-b5cf-9a6614a4daed（Group）；依第 187 條再查 1974 年後的掛名寫法 artist?query=Slim & The Supreme Angels，回的是**另一個實體** 476a2000-531f-4950-b563-3bad374f29bb——兩個實體都要查才算查過",
+      "release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&limit=100&offset=0 → **count=0**；release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&limit=100&offset=0 → **也是 count=0**。兩個實體名下都零個 release-group，他們 1966–82 年在 Nashboro 的十幾張 LP 一張都沒建檔",
+      "release-group?query=releasegroup:\"Just Like Him\" AND artist:\"The Supreme Angels\"&limit=10 → count=0；改用 artist:\"Slim & The Supreme Angels\" 再查一次亦 count=0",
+      "release-group?query=releasegroup:\"Just Like Him\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "The Supreme Angels 與 Slim & The Supreme Angels 兩個 MB 實體的 release-group browse 都回 count=0；盤名加兩種掛名、以及單盤名三次反查全部 count=0。查詢皆 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10827021",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/sVI9LxHAe5JJi8I7MB2i0nWXgXZydJUuYPnzJuE27D8/rs:fit/g:sm/q:90/h:216/w:216/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODI3/MDIxLTE1MDQ5NjA0/NTMtMTg5My5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "10827021"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首裡有兩首，三年後又錄了一遍。A1〈He'll Understand〉與 A3〈Why (The Storm Of Life)〉都在他們 1971 年那張同廠盤上再出現了一次。這張十段、逐段落在 2 分 1 秒到 3 分 18 秒之間、整張約二十七分，比兩年前那張十二段的碟整整短一截；末段〈Blessed Quietness〉2 分 1 秒是最短的一段。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10827021",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/10123945",
+     "https://musicbrainz.org/ws/2/release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10827021"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Brooklyn Allstars",
+   "album": "Sing Unto The Lord",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Brooklyn Allstars&limit=8 → score 100 命中「Brooklyn Allstars」6e5c703f-91c6-4580-805a-9438fc8ef027（Group／disambiguation「gospel group」）；⚠ 依第 179 條改用分寫的 artist?query=The Brooklyn All Stars 再查一次，**score 100 回的竟是サザンオールスターズ（24d9e513，JP 搖滾團）**，本團掉到 89——這是第 122 條在本批的實例，掛名分寫與不分寫要各查一次",
+      "release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&limit=100&offset=0 → 名下僅 4 個 release-group，且四筆全是 1972–75 年 Jewel 時期的碟：《The New Sound of the Brooklyn Allstars》（6f65ad47）、《I’ve Got My Ticket》（7be74c35）、《He Touched Me》（e1f7b5ef）、《Ten Commandments》（10ce775c）；**Nashboro 時期（1967–82）與 Gospel Roots 時期（1977–78）一張都沒有**",
+      "release-group?query=releasegroup:\"Sing Unto The Lord\" AND artist:\"The Brooklyn Allstars\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Sing Unto The Lord\"&limit=10 → count=6，全是 William Becton 2016、Brigham Young University Singers 2017、Choir of the Summer School of Liturgical Music 2008、The Gibbons Family 1993 這類詩班碟，沒有一筆沾到本團"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Brooklyn Allstars 名下 4 個 release-group 全是 Jewel 時期的碟，Nashboro 時期空白；盤名加掛名反查 count=0，單以盤名反查的 6 筆全是詩班錄音、與本團無關。查詢皆 HTTP 200，走 browse 分頁端點；分寫掛名的假命中已依第 122 條排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7319780",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/fI4PkZmih-3pYYPIh7ubd6Prf02lHpTE-zmme2-O_20/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczMTk3/ODAtMTQzODc5NTAz/NS0yMzM1LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "7319780"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "B3 唱了 5 分 27 秒，曲子是 Alex Bradford 的。那首〈Too Close〉的源頭是他 1954 年灌下的〈Too Close To Heaven〉，賣過一百萬張。十段裡有五段留下長度，除了 B3 之外的四段都落在 2 分 20 秒到 3 分 1 秒之間，結構上是九段常規加一段長曲。逐曲的作者也分得很清楚：五首掛 Thomas Spann、一首掛 Rev. James Cleveland、一首掛 Hardie Clifton，另兩首標為傳統曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/7319780",
+     "https://en.wikipedia.org/wiki/Alex_Bradford",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Woodland_Sound_Studios",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/7319780"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Professor Harold Boggs",
+   "album": "Just The Two Of Us",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Professor Harold Boggs&limit=8 → score 100 回的實體名是「Prof. Harold Boggs」e7c2dd6b-d279-4f12-8748-d7f80f87d5b8（無 area、無 type）；⚠ 同一次查詢的第二到四名是 Conway Twitty（93）、Mad Professor（92）、Professor Longhair（91）——第 122 條「回了完全不相干的東西」的典型形狀，只有靠名字逐字比對才確認 score 100 那筆是對的。另以 artist?query=Prof. Harold Boggs 反查，回的是同一個實體",
+      "release-group?artist=e7c2dd6b-d279-4f12-8748-d7f80f87d5b8&limit=100&offset=0 → **count=0，名下零個 release-group**；他 1966–77 年在 Nashboro 掛名的九張 LP 在 MB 上完全不存在",
+      "release-group?query=releasegroup:\"Just The Two Of Us\" AND artist:\"Professor Harold Boggs\"&limit=10 → count=0；改用 artist:\"Prof. Harold Boggs\" 再查一次亦 count=0",
+      "release-group?query=releasegroup:\"Just The Two Of Us\"&limit=10 → count=59，前排是 Jim Pursell & O-Jay Moore、Will Smith 1998-08、Judy Boucher／Tim Chandell 2009、Art Hodes／Milt Hinton 1982，全與本人無關"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Prof. Harold Boggs 名下 release-group browse 回 count=0；盤名加兩種掛名寫法反查皆 count=0，59 筆同名碟沒有一筆沾到本人。查詢皆 HTTP 200，走 browse 分頁端點；artist search 混進的不相干高分實體已依第 122 條排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12401189",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/hf2bcBDRVC7kp7c6tO3O3niBJ6hNGkamNhVc_sGaRZU/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDAx/MTg5LTE1MzQ1MzA5/NzItOTk3OC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "12401189"
+   },
+   "ratings": {
+    "classic": 1,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A5 的曲名寫著把人送上月球，同年阿波羅十一號落地。那一軌叫〈Who Did It Help (To Put A Man On The Moon)〉，排在 A 面最後。曲子唱了什麼沒有留下記錄。這張十段、沒有任何逐軌長度，B 面以同名曲開場，末段〈Precious Lord〉指向的是 Thomas A. Dorsey 那首傳唱最廣的曲子。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12401189",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://itunes.apple.com/lookup?id=1578786638&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=e7c2dd6b-d279-4f12-8748-d7f80f87d5b8&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/12401189"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Angelic Gospel Singers",
+   "album": "Somebody Saved Me",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Angelic Gospel Singers&limit=8 → score 100 命中「The Angelic Gospel Singers」91c108c1-9103-4d55-bbe6-f21394808b75（US／Group）；依第 179 條回問 area／type，排除 The Heavenly Gospel Singers（90d068a7）與 The Harlem Gospel Singers（282ffde0）；另以 artist?query=Margaret Allison 反查團長本名，MB 上沒有對應的獨立實體",
+      "release-group?artist=91c108c1-9103-4d55-bbe6-f21394808b75&limit=100&offset=0 → 名下 7 個 release-group，全部是 1995 年以後的 Malaco／AIR 期作品與精選：《Try God》1995、《Touch Me Lord Jesus》2004、《Glory Glory Hallelujah》2007、《The Best of…Volume 1／2》2014-03-11 兩張、以及兩張 Single；**1961–79 年那十張 Nashboro 原盤完全空白**",
+      "release-group?query=releasegroup:\"Somebody Saved Me\" AND artist:\"The Angelic Gospel Singers\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Somebody Saved Me\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Angelic Gospel Singers 名下 7 個 release-group 全是 1995 年之後的作品與精選；盤名兩種反查皆 count=0。查詢皆 HTTP 200，走 limit=100 的 browse 端點（第 116 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5235831",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/j-TPNLAzwLrrbZrjc3DM9iaXP1hw47QmIB_t-xR_Qpo/rs:fit/g:sm/q:90/h:600/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyMzU4/MzEtMTUzOTU2MDI0/OC00NTczLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5235831"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音地不在 Nashville，在紐約的 Bell Sound。同廠的碟多半錄在 Nashville 那間由電影院改建的 Woodland Studios，這張是少見的例外。十段沒有留下逐軌長度，盤上標著 Stereo，詞曲逐首掛的是團長 Margaret Allison 本人；A5〈This Train〉是傳統靈歌，末段則是一首十九世紀的老聖詩。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5235831",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Angelic_Gospel_Singers",
+     "https://itunes.apple.com/lookup?id=97990515&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=91c108c1-9103-4d55-bbe6-f21394808b75&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5235831"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Supreme Angels",
+   "album": "By And By",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Supreme Angels&limit=8 → score 100 命中「The Supreme Angels」a86f98fc-3f55-4a01-b5cf-9a6614a4daed（Group）；依第 187 條再查 1974 年後的掛名寫法 artist?query=Slim & The Supreme Angels，回的是**另一個實體** 476a2000-531f-4950-b563-3bad374f29bb——兩個實體都要查才算查過",
+      "release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&limit=100&offset=0 → **count=0**；release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&limit=100&offset=0 → **也是 count=0**。兩個實體名下都零個 release-group，他們 1966–82 年在 Nashboro 的十幾張 LP 一張都沒建檔",
+      "release-group?query=releasegroup:\"By And By\" AND artist:\"The Supreme Angels\"&limit=10 → count=0；改用 artist:\"Slim & The Supreme Angels\" 再查一次亦 count=0",
+      "release-group?query=releasegroup:\"By And By\"&limit=10 → count=9，前排是 Color Collage 2013、Caamp 2019、Photo Negative 2024、Critton Hollow String Band 1985，全與本團無關"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "兩個 Supreme Angels 實體的 release-group browse 都回 count=0；盤名加兩種掛名反查皆 count=0，單以盤名反查的 9 筆全不相干。查詢皆 HTTP 200，走 browse 分頁端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10123945",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/KoTcmLXACsCGCBy2R9a116HxM9vnTYrRu-fm7Dpvzk8/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTIz/OTQ1LTE0OTIyMjI5/ODItODkzMS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "10123945"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A4 那首兩分四十秒的曲子，名字就叫〈The Assassination〉。它唱了什麼沒有留下記錄，能確認的只有曲名、長度與它排在 A 面的位置。十段逐段落在 2 分 1 秒到 4 分 42 秒之間、整張約二十八分，開場的同名曲 4 分 42 秒幾乎是第二長段的一倍半，其餘九段全部收在 3 分 4 秒以內。詞曲掛的是團內的 H. Hunt。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10123945",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels",
+     "https://musicbrainz.org/ws/2/release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10123945"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Brooklyn Allstars",
+   "album": "Lead Me, Guide Me",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Brooklyn Allstars&limit=8 → score 100 命中「Brooklyn Allstars」6e5c703f-91c6-4580-805a-9438fc8ef027（Group／disambiguation「gospel group」）；⚠ 依第 179 條改用分寫的 artist?query=The Brooklyn All Stars 再查一次，**score 100 回的竟是サザンオールスターズ（24d9e513，JP 搖滾團）**，本團掉到 89——這是第 122 條在本批的實例，掛名分寫與不分寫要各查一次",
+      "release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&limit=100&offset=0 → 名下僅 4 個 release-group，且四筆全是 1972–75 年 Jewel 時期的碟：《The New Sound of the Brooklyn Allstars》（6f65ad47）、《I’ve Got My Ticket》（7be74c35）、《He Touched Me》（e1f7b5ef）、《Ten Commandments》（10ce775c）；**Nashboro 時期（1967–82）與 Gospel Roots 時期（1977–78）一張都沒有**",
+      "release-group?query=releasegroup:\"Lead Me, Guide Me\" AND artist:\"The Brooklyn Allstars\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Lead Me, Guide Me\"&limit=10 → count=2，兩筆是 Elvis Presley 2001 與 Saint Augustine Choir，皆與本團無關"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Brooklyn Allstars 名下 4 個 release-group 全是 Jewel 時期的碟；盤名加掛名反查 count=0，單以盤名只回兩筆別人的碟。查詢皆 HTTP 200，走 browse 分頁端點；分寫掛名的假命中已依第 122 條排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5853168",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/F0Qmol6uvgUfuApVVryrgip96XKqNX0MJAOcPXazEPI/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4NTMx/NjgtMTQwNDY2NTM2/OC0xMzA0LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5853168"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A3 唱的是 Curtis Mayfield 那首〈People Get Ready〉。這張十段、沒有留下逐軌長度，B5 的曲名乾脆就是三個人名〈Cooke, Davis And Martin〉，唱了什麼同樣沒有記錄。製作只掛了 Shannon Williams 一個名字，樂手、工程與錄音室一概空白，比同團 1968 年那張逐曲列出作者的碟薄了許多。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5853168",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5853168"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Gospel Keynotes",
+   "album": "Travelin' On",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Gospel Keynotes&limit=8 → score 100 命中「The Gospel Keynotes」f02e242c-0e2b-4ef7-b817-f098e32df2ea（US／Group）；依第 179 條回問 area／type 排除 The Keynotes（67788644，US doo-wop）與 UK 的 The Keynotes（8573c864）；另依第 187 條查 1979 年後的掛名 artist?query=Willie Neal Johnson & The Gospel Keynotes，score 97 回的是另一個實體 Willie Neal Johnson（2f65e7f2），**那個實體名下也是 0 個 release-group**",
+      "release-group?artist=f02e242c-0e2b-4ef7-b817-f098e32df2ea&limit=100&offset=0 → **count=0，名下零個 release-group**；他們 1968–83 年在 Nashboro 的十幾張 LP 一張都沒建檔",
+      "release-group?query=releasegroup:\"Travelin' On\" AND artist:\"The Gospel Keynotes\"&limit=10 → count=0；改用 bsnpubs 的拼法 releasegroup:\"Travellin' On\" AND artist:\"The Gospel Keynotes\" 再查一次亦 count=0",
+      "release-group?query=releasegroup:\"Travelin' On\"&limit=10 → count=8，前排是 Shelba Mullins、John Mooney and Bluesiana 1995、Hickory Project 2005、CrossPoint String Band，全與本團無關"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "The Gospel Keynotes 與 Willie Neal Johnson 兩個 MB 實體的 release-group browse 都回 count=0，他們 1968–83 年十幾張 Nashboro LP 一張都沒建檔；兩種盤名拼法加掛名反查皆 count=0。查詢皆 HTTP 200，走 limit=100 的 browse 端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5545226",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/ARZkkjeB7vfR8eaAUzVYThx76aMCPFuA7UAQGfHcLnQ/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NDUy/MjYtMTQxMTAwNDY5/Ni0yOTgwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5545226"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "弦樂與銅管的編曲，掛了一個人的名字。那個名字是 Jack Williams——掛名寫到編曲分工這一層，也就留下了這張確實帶著弦樂與銅管的憑據。十段沒有逐軌長度可查，A5 與 B3 兩首的詞曲掛的是主唱 Willie Neal Johnson。製作掛 Shannon Williams，錄音與母帶都在 Woodland Studios。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5545226",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Willie_Neal_Johnson_%26_The_Gospel_Keynotes",
+     "https://itunes.apple.com/lookup?id=1443814541&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=f02e242c-0e2b-4ef7-b817-f098e32df2ea&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5545226"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Willie Mae Ford Smith",
+   "album": "Going On With The Spirit",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Willie Mae Ford Smith&limit=8 → score 100 命中「Willie Mae Ford Smith」dc09c896-6feb-483b-ab8b-bba98e54119d（Person，無 area）；另以盤面掛名 artist?query=Mother Willie Mae Ford Smith 反查，score 100 回的是同一個實體，MB 內部沒有帶 Mother 前綴的分身（第 187 條的反向確認）；⚠ 同一次查詢的第三、五名是兩個不同的 Willie Ford（69264261 藍調吉他手、a6e3a4ab 靈魂樂歌手），第 179 條的短掛名形狀",
+      "release-group?artist=dc09c896-6feb-483b-ab8b-bba98e54119d&limit=100&offset=0 → **count=0，名下零個 release-group**；她 1973／1975 兩張 Nashboro LP 與 1982 年紀錄片《Say Amen, Somebody》的原聲都沒建檔",
+      "release-group?query=releasegroup:\"Going On With The Spirit\" AND artist:\"Willie Mae Ford Smith\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Going On With The Spirit\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Willie Mae Ford Smith 的藝人實體在 MB 上存在，但 release-group browse 回 count=0——名下零筆，她兩張 Nashboro LP 與紀錄片原聲都沒建檔；盤名兩種反查亦 count=0。查詢皆 HTTP 200，走 limit=100 的 browse 端點；敬稱形掛名已依第 187 條另查確認無分身。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/9537201",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://music.apple.com/us/album/453948545"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/7d/26/cc/mzi.lqfjksga.tif/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "453948545",
+    "note": "試聽探測釘定的 collectionId 453948545（us）：Willie Mae Ford Smith — Going On With the Spirit"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 177,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "她一輩子避開錄音室，只唱現場與電台。1932 年全國詩班大會成立之後，她出任獨唱部主任、專門訓練唱福音藍調的新人，並在聖路易一間教會講道三十年；直到 1982 年一部以她為主要人物的紀錄片問世，主流聽眾才認識她。這張十段、沒有逐軌長度，末段〈Blessed Assurance〉是十九世紀的老聖詩，其餘多出自她自己的曲庫。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/9537201",
+     "https://itunes.apple.com/lookup?id=453948545&country=us&entity=song&limit=200",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Willie_Mae_Ford_Smith",
+     "https://en.wikipedia.org/wiki/Brother_Joe_May",
+     "https://musicbrainz.org/ws/2/release-group?artist=dc09c896-6feb-483b-ab8b-bba98e54119d&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/9537201",
+     "https://music.apple.com/us/album/453948545"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/eb/10/17/mzm.pxtjereb.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "453948545",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Professor Harold Boggs",
+   "album": "Heaven In My Soul",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Professor Harold Boggs&limit=8 → score 100 回的實體名是「Prof. Harold Boggs」e7c2dd6b-d279-4f12-8748-d7f80f87d5b8（無 area、無 type）；⚠ 同一次查詢的第二到四名是 Conway Twitty（93）、Mad Professor（92）、Professor Longhair（91）——第 122 條「回了完全不相干的東西」的典型形狀，只有靠名字逐字比對才確認 score 100 那筆是對的。另以 artist?query=Prof. Harold Boggs 反查，回的是同一個實體",
+      "release-group?artist=e7c2dd6b-d279-4f12-8748-d7f80f87d5b8&limit=100&offset=0 → **count=0，名下零個 release-group**；他 1966–77 年在 Nashboro 掛名的九張 LP 在 MB 上完全不存在",
+      "release-group?query=releasegroup:\"Heaven In My Soul\" AND artist:\"Professor Harold Boggs\"&limit=10 → count=0；改用 artist:\"Prof. Harold Boggs\" 再查一次亦 count=0",
+      "release-group?query=releasegroup:\"Heaven In My Soul\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Prof. Harold Boggs 名下 release-group browse 回 count=0；盤名加兩種掛名、以及單盤名三次反查全部 count=0。查詢皆 HTTP 200，走 browse 分頁端點；artist search 混進的不相干高分實體已依第 122 條排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8098810",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/90sfvekjnHLwVUM3hqIzQN_XdqpXcvGbXKbT5cI-moE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwOTg4/MTAtMTQ1NTExODg4/Ni05Mjk0LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "8098810"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十段裡只有一首寫出詞曲人，那個名字是 Paul Simon。A5 的〈Bridge Over Troubled Waters〉正是他 1970 年那首曲子，盤面把原題的 Water 印成了複數，就這樣留在唱片上。其餘九段沒有詞曲掛名，也沒有逐軌長度；B2〈Just As I Am〉是老聖詩。製作掛 Shannon Williams。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8098810",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Lula_Reed",
+     "https://musicbrainz.org/ws/2/release-group?artist=e7c2dd6b-d279-4f12-8748-d7f80f87d5b8&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8098810"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Supreme Angels",
+   "album": "Shame On You",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Supreme Angels&limit=8 → score 100 命中「The Supreme Angels」a86f98fc-3f55-4a01-b5cf-9a6614a4daed（Group）；依第 187 條再查 1974 年後的掛名寫法 artist?query=Slim & The Supreme Angels，回的是**另一個實體** 476a2000-531f-4950-b563-3bad374f29bb——兩個實體都要查才算查過",
+      "release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&limit=100&offset=0 → **count=0**；release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&limit=100&offset=0 → **也是 count=0**。兩個實體名下都零個 release-group，他們 1966–82 年在 Nashboro 的十幾張 LP 一張都沒建檔",
+      "release-group?query=releasegroup:\"Shame On You\" AND artist:\"The Supreme Angels\"&limit=10 → count=0；改用 artist:\"Slim & The Supreme Angels\" 再查一次亦 count=0",
+      "release-group?query=releasegroup:\"Shame On You\"&limit=10 → count=34，前排是 Conga Squad 2001、The Darling Buds 1988、Spade Cooley 1999、Gun 1990，沒有一筆沾到本團"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "兩個 Supreme Angels 實體的 release-group browse 都回 count=0；盤名加兩種掛名反查皆 count=0，單以盤名反查的 34 筆全不相干。⚠ Apple 上有數位重發不等於 MB 有建檔——這張正是「唱片實體確鑿、還在架上賣，MB 卻零筆」的典型 §1 形狀。查詢皆 HTTP 200，走 browse 分頁端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/14329792",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://music.apple.com/us/album/1443663637"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/53/87/fd/5387fd97-1284-4cdb-b716-6fca962f7510/00602537747115.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443663637",
+    "note": "試聽探測釘定的 collectionId 1443663637（us）：Howard \"Slim\" Hunt and the Supreme Angels — Shame On You"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封套上貼著一張紙，寫著經銷由 MCA。這是一張宣傳片，白色標籤與那張貼紙就是它的記號，一家福音廠牌的碟就這樣接上了大廠的經銷網。十段逐段落在 1 分 52 秒到 4 分 45 秒之間、整張約三十二分，A 面五段裡有四段超過 3 分 45 秒，B 面則整面收短。A1 與 B3 的詞曲掛團內的 H. Hunt，A2 掛的是 T. Dorsey。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/14329792",
+     "https://en.wikipedia.org/wiki/Willie_Mae_Ford_Smith",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels",
+     "https://musicbrainz.org/ws/2/release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/14329792",
+     "https://music.apple.com/us/album/1443663637"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f9/83/a1/f983a17e-f637-ceb5-811d-bbddf8b74fb2/mzaf_1961479850216378440.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443663637",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Consolers",
+   "album": "Let God Be First",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Consolers&limit=8 → score 100 命中「The Consolers」c1b9c6b3-301d-4ece-bcca-f40750ca3f04（US／Group／disambiguation「Gospel couple」）；⚠ 第 179 條在這個掛名上非踩不可：同名還有巴貝多的 The Consolers（67157a30，Joseph Niles 的伴唱團）、德國的 Consolers（c4e607fd）與北愛爾蘭的 alt-rock Consolers（be08301a），只看名字會誤判；另以 artist?query=Sullivan and Iola Pugh 反查夫妻本名，回的是 Sullivan S. Pugh（722ee203，US／Person）——**那個實體名下 0 個 release-group**",
+      "release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&limit=100&offset=0 → 名下僅 2 個 release-group：《Lord, Bring Me Down》1998-09-22（0cde8475）與《The Consolers Collection 1952-62》2014（3c1357c9，Album/Compilation）；1961–79 年那十幾張 Nashboro 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Let God Be First\" AND artist:\"The Consolers\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Let God Be First\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "The Consolers 名下只有 1998 年一張與 2014 年精選，1961–79 年 Nashboro 原盤全部空白；夫妻本名 Sullivan S. Pugh 的另一個 MB 實體名下也是 0 筆；盤名兩種反查皆 count=0。查詢皆 HTTP 200，走 limit=100 的 browse 端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8187252",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/1l9hJSbIrEfsOf_Rb8eK2YBMLeGBGzL6lGwTF1wQKQ8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxODcy/NTItMTQ2MTUyMDQ4/Ni00MzE0LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "8187252"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首裡六首出自同一支筆，那人就是碟上的男聲。詞曲掛 Sullivan Pugh 的有 A1、A2、A4 與 B 面三段，A3 掛 Raymond Rasberry，A5 與 B1 則是兩首傳統靈歌。十段逐段落在 2 分 6 秒到 4 分 58 秒之間、整張約三十五分，A 面落差最大：同名曲與 A5 兩段長曲一頭一尾，中間夾著整張最短的 A4。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8187252",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/4418720",
+     "https://musicbrainz.org/ws/2/release-group?artist=c1b9c6b3-301d-4ece-bcca-f40750ca3f04&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8187252"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Swanee Quintet",
+   "album": "Ups And Downs",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Swanee Quintet&limit=8 → score 100 命中「Swanee Quintet」2a688f04-2c00-4c2b-8398-04f08abbb9cc（US／Group）；依第 179 條回問 area／type／disambiguation 確認不是 AU 的搖滾歌手 Swanee（4c754bf4）或 Swanee River（a1fefb10）",
+      "release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 4 個 release-group：《So Glad...》《Just One Rose Will Do!》《Eternal Life》（三筆皆無年份與型別）與《The Complete Nashboro Releases 1951-62》2016（ed0037a6-0c09-4dd4-82bd-8c3c94d39a41，Album/Compilation）；1960–80 年那二十幾張 Nashboro／Creed 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Ups And Downs\" AND artist:\"The Swanee Quintet\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Ups And Downs\"&limit=10 → count=48，前排是 河相我聞 1997-10-25、T-Thoughts 2011、Flee Lord 2019、Etch 2018，沒有一筆沾到本團"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Swanee Quintet 名下 4 個 release-group 皆非本片（其中《The Complete Nashboro Releases 1951-62》只涵蓋 1962 年以前的錄音，與 1975 年的 Creed 盤無關）；盤名加掛名反查 count=0，單以盤名反查的 48 筆全不相干。查詢皆 HTTP 200，走 browse 分頁端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/4418720",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/sQ2sjDfWTUIqoCgJF-DYVHTDDdafbLfNnBE7452Kj-s/rs:fit/g:sm/q:90/h:600/w:571/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MTg3/MjAtMTQ1Mjk3ODky/Ny0yMDExLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "4418720"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠名換了，製作、錄音室與經銷還是同一套。盤面上印的是 Creed，出版、經銷、錄音版權、錄音室與製作人卻全部沿用姊妹廠 Nashboro 那一套。十段逐段落在 2 分 25 秒到 3 分 18 秒之間、整張約二十七分，最長與最短之間只差五十三秒，十五年後仍守著他們首張時的規格。三首的詞曲掛 James Anderson。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4418720",
+     "https://api.discogs.com/releases/3977840",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/9825881",
+     "https://musicbrainz.org/ws/2/release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/4418720"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Sensational Nightingales",
+   "album": "See You In The Rapture",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Sensational Nightingales&limit=8 → score 100 命中「The Sensational Nightingales」e8bc3701-fef0-4f03-95c8-dee05025c886（US／Group／disambiguation「gospel quartet」）；依第 179 條回問 area／type 排除英國獨立團 The Nightingales（bb6bb252）；另查團員實體 Charles Johnson（a01803e1）與 Ernest James（36009faf），兩人名下都沒有本片",
+      "release-group?artist=e8bc3701-fef0-4f03-95c8-dee05025c886&limit=100&offset=0 → 僅 3 筆：《The Best of the Sensational Nightingales》1973（f83c92a3，**池中已有這一張**）、《The Sensational Nightingales: Greatest Hits》1986（dcd464b2）、《It's Gonna Rain Again》1998-12-01（b293b801）。**兩張精選加一張 1998 年新作，1959–78 年那十幾張 Peacock 原盤一張都沒有**",
+      "release-group?query=releasegroup:\"See You In The Rapture\" AND artist:\"The Sensational Nightingales\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"See You In The Rapture\"&limit=10 → count=1，唯一一筆是 Mississippi Mass Choir 1996-05-21 的《I’ll See You in the Rapture》，掛名與盤名都不同"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "The Sensational Nightingales 名下僅 3 個 release-group（1973／1986 兩張精選加 1998 年一張新作），1959–78 年那十幾張 Peacock 原盤一張都沒建檔；盤名加掛名反查 count=0，單以盤名只回一筆別團的近似碟。查詢皆 HTTP 200，走 limit=100 的 browse 端點；團員的個別實體也查過，名下都沒有本片。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5238986",
+     "https://www.bsnpubs.com/abc/peacock/peacock.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/YAQqd0I-Jq2QTYSrVWDgGjC8tgsELTBlQJ6Bk-YmIPc/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyMzg5/ODYtMTQ0OTU0MjQ2/Ni05MDk2LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5238986"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九首歌逐首寫出領唱者，六首是同一個人。那個人是 Charles Johnson；Horace Thompson 領唱兩首，剩下一首由 Joseph Wallace 與 Johnson 對唱，編曲同樣由兩人分工，列名的演出者共四位。九段逐段落在 2 分 44 秒到 4 分 54 秒之間、整張約三十三分，長曲集中在 A4〈Peace In The Valley〉的 4 分 54 秒與 B1 的 4 分 27 秒。廠牌 1974 年易主，約 1975 年起改用盤面上這個名字。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5238986",
+     "https://en.wikipedia.org/wiki/Ira_Tucker",
+     "https://www.bsnpubs.com/abc/peacock/peacock.html",
+     "https://en.wikipedia.org/wiki/Sensational_Nightingales",
+     "https://musicbrainz.org/ws/2/release-group?artist=e8bc3701-fef0-4f03-95c8-dee05025c886&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5238986"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Brooklyn Allstars",
+   "album": "There Ain't No Water In Hell",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Brooklyn Allstars&limit=8 → score 100 命中「Brooklyn Allstars」6e5c703f-91c6-4580-805a-9438fc8ef027（Group／disambiguation「gospel group」）；⚠ 依第 179 條改用分寫的 artist?query=The Brooklyn All Stars 再查一次，**score 100 回的竟是サザンオールスターズ（24d9e513，JP 搖滾團）**，本團掉到 89——這是第 122 條在本批的實例，掛名分寫與不分寫要各查一次",
+      "release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&limit=100&offset=0 → 名下僅 4 個 release-group，且四筆全是 1972–75 年 Jewel 時期的碟：《The New Sound of the Brooklyn Allstars》（6f65ad47）、《I’ve Got My Ticket》（7be74c35）、《He Touched Me》（e1f7b5ef）、《Ten Commandments》（10ce775c）；**Nashboro 時期（1967–82）與 Gospel Roots 時期（1977–78）一張都沒有**",
+      "release-group?query=releasegroup:\"There Ain't No Water In Hell\" AND artist:\"The Brooklyn Allstars\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"There Ain't No Water In Hell\"&limit=10 → count=0"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Brooklyn Allstars 名下 4 個 release-group 全是 1972–75 年 Jewel 時期的碟，Gospel Roots 時期（1977–78）完全空白；盤名兩種反查皆 count=0。查詢皆 HTTP 200，走 browse 分頁端點；分寫掛名的假命中已依第 122 條排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8268331",
+     "https://www.bsnpubs.com/florida/gospelroots/gospelroots.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/ea/1a/73ea1a0d-c78b-9a8a-371f-0aee4640b83f/809842510926_cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1573466544",
+    "note": "試聽探測釘定的 collectionId 1573466544（us）：The Brooklyn All Stars — Ain't No Water in Hell"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "詞曲、編曲、製作，全掛同一個名字。Thomas Spann 一手包下十首的詞曲，連整張的編曲與製作也是他；九年前同一支團的那張碟，他還只是十首裡寫了五首的寫手之一。十段逐段落在 2 分 6 秒到 4 分 48 秒之間、整張約三十四分，B3〈Room At The Cross〉4 分 48 秒是最長的一段，A5 另標了領唱 Hardie Clifton。壓軸放的是南北戰爭時期的〈Battle Hymn Of The Republic〉，為什麼選它沒有留下說法。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8268331",
+     "https://api.discogs.com/releases/7319780",
+     "https://www.bsnpubs.com/florida/gospelroots/gospelroots.html",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8268331"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2b/90/65/2b90657b-4fec-0be7-ad98-c8c50d8f2c28/mzaf_4739427547783862928.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1573466544",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mitty Collier",
+   "album": "Hold The Light",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Mitty Collier&limit=8 → score 100 命中「Mitty Collier」1f6949e2-f257-40f3-851e-e2e02271e398（US／Person）；依第 179 條回問 area／type 排除 Mitty Mitty（c667c53c）與 VTuber Mitty（0f39db72）",
+      "release-group?artist=1f6949e2-f257-40f3-851e-e2e02271e398&limit=100&offset=0 → 7 筆，全部是 Chess 時期的世俗錄音與後人整理：《Shades of a Genius》1965（626efd71）與 1998 年版（df39d548）、《I Had a Talk With My Man》（104fe7ca）、《For My Man / Help Me》1965 Single（a9df9f64）、《The Warning》1972（e50d889d）、《The Chess Singles 1961-1968》2008（dc65c8ce）、《Soul «Boppin'» Ladies》1995（1011d146）。**1972 年她離開世俗樂壇之後的福音作品，MB 一張都沒有**",
+      "release-group?query=releasegroup:\"Hold The Light\" AND artist:\"Mitty Collier\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Hold The Light\"&limit=10 → count=5，前排是 Hanna Rua 2022、Livinroom／Blind Dreams 2023、Dominik Dudek 2025、Quote the Raven 2021，全與本人無關"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Mitty Collier 名下 7 個 release-group 全部是 1965–72 年的 Chess 時期作品與 1995／2008 年的整理輯，1972 年之後的福音錄音一張都沒建檔；盤名加掛名反查 count=0，單以盤名反查的 5 筆全不相干。查詢皆 HTTP 200，走 limit=100 的 browse 端點。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6502888",
+     "https://www.bsnpubs.com/florida/gospelroots/gospelroots.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/ULNH1lOIx2FiNpNgpte_6M9ePO2zDzha4wNcCeDdRu4/rs:fit/g:sm/q:90/h:552/w:547/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MDI4/ODgtMTQyMDc0NTY5/MC0yMTI3LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "6502888"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1971 年她的聲帶長出息肉，聲音沒了。1961 到 1968 年她錄的是節奏藍調，失聲之後就放下了世俗音樂那條路，把生活轉向信仰，等聲音恢復才重新錄音。這張只有八段，逐段落在 3 分 4 秒到 6 分 15 秒之間、整張約三十二分，沒有一段短於三分；末段〈He Looked Beyond My Faults〉的 6 分 15 秒是最長的一段。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6502888",
+     "https://www.bsnpubs.com/florida/gospelroots/gospelroots.html",
+     "https://en.wikipedia.org/wiki/Mitty_Collier",
+     "https://api.discogs.com/releases/7319780",
+     "https://musicbrainz.org/ws/2/release-group?artist=1f6949e2-f257-40f3-851e-e2e02271e398&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6502888"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Swanee Quintet",
+   "album": "Changed Man",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Swanee Quintet&limit=8 → score 100 命中「Swanee Quintet」2a688f04-2c00-4c2b-8398-04f08abbb9cc（US／Group）；依第 179 條回問 area／type／disambiguation 確認不是 AU 的搖滾歌手 Swanee（4c754bf4）或 Swanee River（a1fefb10）",
+      "release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&limit=100&offset=0（第 116 條 browse 分頁端點）→ 名下僅 4 個 release-group：《So Glad...》《Just One Rose Will Do!》《Eternal Life》（三筆皆無年份與型別）與《The Complete Nashboro Releases 1951-62》2016（ed0037a6-0c09-4dd4-82bd-8c3c94d39a41，Album/Compilation）；1960–80 年那二十幾張 Nashboro／Creed 原盤一張都沒有",
+      "release-group?query=releasegroup:\"Changed Man\" AND artist:\"The Swanee Quintet\"&limit=10 → count=0",
+      "release-group?query=releasegroup:\"Changed Man\"&limit=10 → count=9，前排是 baker 2015、Roadie Rose 2016、박진영 2023-11-20、Spencer Crandall 2025，沒有一筆沾到本團"
+     ],
+     "checkedAt": "2026-09-06T10:30:00Z",
+     "conclusion": "Swanee Quintet 名下 4 個 release-group 皆非本片；盤名加掛名反查 count=0，單以盤名反查的 9 筆全不相干。查詢皆 HTTP 200（其中一次 503 已依第 28 條退避重試後取得 200），走 limit=100 的 browse 端點（第 116 條），藝人實體已回問 area／type 排除同名（第 179 條）。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/9825881",
+     "https://www.bsnpubs.com/christian/nashboro.html"
+    ],
+    "manualRuling": "店主 2026-09-06 指示「接著跑完」，c-103～c-118 共用簡報第二節第 1 點核可 c-113～c-115 開 §1 人工身分；依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉與 c-87／c-92／c-113 的欄位寫法逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/ii8TQtx8AniWQKk4IFzkZdwdGaIeNHX67xNL8AYduqY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4MjU4/ODEtMTYxMjk5NTEx/Ny04MzQ5LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "9825881"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤上列出九位樂手的名字，1980 年。九個人加上掛給 TWS 的節奏編曲，讓這張成為能夠確認錄音裡真有一組樂團編制的碟。八段逐段落在 2 分 42 秒到 3 分 52 秒之間、整張約二十六分，最長與最短之間只差七十秒；二十年前他們那張首發有十二段，形狀已經完全變了。八首全部留下詞曲掛名，Johnny Jones 與 James Anderson 各寫兩首，A2 出自 Nashville 的鄉村歌曲作者 Marijohn Wilkin，B3 只掛編曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/9825881",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://musicbrainz.org/ws/2/release-group?artist=2a688f04-2c00-4c2b-8398-04f08abbb9cc&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/9825881"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

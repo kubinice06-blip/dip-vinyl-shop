@@ -1,5 +1,126 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-10｜dip-vinyl-shop｜c-77 至 c-125 四十八批上架 1,962 張，卡池破一萬六
+
+同日第二筆（第一筆記 §4 Discogs 來源與舊批解除留置）。雲端分支
+`claude/remote-runbook-album-onboarding-mszieh`（631 筆提交）合併，把 c-77～c-125
+全部走完本機段。**候選 2,015 張、上架 1,962 張、留置 51 張（全部是缺封面）、頂點 0 張。**
+卡池 14,488 → **16,450**，無年份 0、無曲風 0。
+
+card_catalog 1,962/1,962；**KV 2,519 個鍵 bulk get 逐字回讀一致**；
+48 道 prepare gate ＋ 48 道 published gate 全部 0 error。
+
+| 區段 | 批 | 上架 |
+|---|---|---:|
+| 深掘線續（英國 DIY、美國 old-time、日本 SSW、neo-prog、80s 美國地下、日本 techno／lo-fi、英國微廠、UK dub、美國自主爵士） | c-77～c-86 | 411 |
+| 電影原聲＋台灣線四批（林強伍佰、骨肉皮時代台北地下、台客搖滾、§1 補遺） | c-88～c-92 | 173 |
+| 目錄深度第二輪（搖滾 I／II、爵士藍調、靈魂放克嘻哈、電子、鄉村民謠、非洲加勒比中東南亞拉丁、古典傳奇錄音、遊戲原聲、動畫原聲） | c-93～c-102 | 439 |
+| 區域補完（日本演歌、韓國歌謠、K-pop、華語第三輪、中國搖滾、拉丁第二圈、法語、德義、2024–25、2026 新譜） | c-103～c-112 | 425 |
+| §1 補遺三批＋深掘尾聲（日本 hardcore、英國 folk-rock 私壓、美國地下 house、當代台語、紐約硬蕊、日本地下即興、波羅的海、伊朗、伊比利） | c-113～c-125 | 514 |
+
+## 一、封面：Discogs 這一層把可上架率從 91% 拉到 97%
+
+雲端交來 1,662/2,015。四層補救依序：
+**Apple collectionId 直查（+177，最有效的一層）→ Spotify／Bandcamp（+22）→
+iTunes 多店面（+22）→ Discogs（+106）**，最終 1,964/2,015（97%），只剩 51 張缺。
+
+來源分佈：CAA 1,647、`apple-verified-collection` 190、**`discogs` 106**、spotify 16、
+manual 3、bandcamp 2。**Discogs 名單累計 178 筆**（含舊批的 72 筆）。
+
+**c-79 從 20/42 變成 41/42、c-82 從 21/45 變成 44/45、c-114 從 1/40 變成 35/40**——
+這三批不開 Discogs 就有一半上不了架。
+
+## 二、新增一道「撞圖檢查」，當場抓到三張錯圖
+
+`scripts/check-duplicate-covers.mjs`：**同一張封面圖被兩張卡用到，幾乎一定有一張是錯的。**
+封面補救的每一層都是逐張去外部找圖，沒有任何一層看得到別張卡拿到什麼，所以這種錯
+用「看單張圖對不對」很難發現——圖本身是真的唱片封面，只是屬於別張卡。實測抓到三種形狀：
+
+1. **探測層把同一個 collectionId 配給兩張碟**：The Swanee Quintet《What About Me》(1960,
+   Nashboro LP 7000) 與《Anniversary Album》(1962, LP 7008) 都配到 Apple 上 1992 年那張
+   二合一 CD《What About Me? (Anniversary Album)》。兩張都退回後改走 Discogs，
+   拿到各自的原盤掃圖（年份＋廠牌＋目錄號三項全中）。
+2. **iTunes 模糊搜尋把 A 碟配到 B 碟**：四分衛《W》拿到同團《世界》的專輯頁。
+3. **Discogs 的圖是另一個版次**：趙一豪《把我自己收回來》（改題重發版，CIRD 0005-2）
+   唯一的圖是被查扣的原版《把我自己掏出來》的殼——池中已有那張獨立的卡，
+   兩張用同一張圖會讓「改題重發」這件事在池中消失。退回，名單記 `rejected`。
+
+修完全池 3,737 張封面**撞圖 0 組**。這支要放進日後每一批的例行檢查。
+
+## 三、published gate 抓到兩個管線缺陷
+
+1. **`build-manifest` 判自我同名用字串完全相等，驗證器用正規化比對**——
+   NewJeans《New Jeans》差一個空格，在 build-manifest 這裡不算自我同名、不補
+   `selfTitledVerified`，到 gate 卻被算成自我同名而擋下（c-105）。兩邊改用同一把尺。
+2. **`releaseType: "Other"`**（MB 未填 primary-type）不在 §5.5 白名單裡。
+   Life's Blood《Defiance》(1988) 是八軌 hardcore 7 吋，正是店主 09-08 開
+   `hardcore-7inch` 要收的形狀——`Other` 是資料庫沒填、不是這張碟的實際形態，照實改記 `EP`。
+   **策展檔要三處一起改**（`prop-a.json`、卡單、`cand-all.json`），
+   只改卡單不會生效——`build-manifest` 讀的是策展檔優先。
+
+另補 `build-manifest` 帶 `genreException`（原本只認 `electronic`／`asia-mini-album`，
+補上 `hardcore-7inch`），與 §4 Discogs 的 `discogsReleaseId` 一路帶進 manifest。
+
+## 四、冷門軸第三次套用 §0.8
+
+41 批套錨點（29 depth、12 regional），7 批保留機器值。**判準是 listeners 中位數不是文字系統**：
+c-93 搖滾正典中位數 68,035、c-94 73,889、c-111 92,392——這幾批機器值不失真，不套；
+c-103 日本演歌 11、c-104 韓國歌謠 59、c-107 中國搖滾 18、c-114 美國福音 1——套。
+**c-100 古典不套 §0.8，改記 `manual:classical-rubric`**（§0.7 有自己的錨點，定義在錄音層）。
+
+**機器給 5 分 1,110 張，錨點提案 21 張，逐張查證後只留 8 張。** 打掉的十三張分兩類：
+**不是私壓**（Spirogyra 是 Brain／Polydor、Katedra 是蘇聯國營 Мелодия、Nic Jones 是 Trailer、
+Foje 是立陶宛第一大搖滾團的卡帶首發）與**已有授權再發進串流**（Solstice 的
+Definitive Edition 在 Apple gb 在架）。留下的八張全是自資或創廠盤：Mother Gong（自建錄音室）、
+Haze（自己開 Gabadon）、Nic Potter（自資限量郵購）、零與聲音解放組織（自資卡帶）、
+Sattar（1981 伊朗語卡帶）、Kyle Creed（Mountain Records 創業盤 301）、
+Montage（Soup-Disk 第三號）、Dulcimer（英國 acid folk 私壓價目最高的幾張之一）。
+
+## 五、c-100 古典年份改記錄音年（本機裁定）
+
+§0.7 已經把古典卡定義成「作品 × 演奏者 × 錄音版本」，經典軸評的也是「這份錄音的樂史地位」，
+年份卻記發行年就會自我矛盾——**最露骨的是 Karl Richter 記 1992，而他 1981 年就過世**。
+**只改研究層有明確來源的 21 張**（Toscanini 1990→1949、Caruso 1990→1902、
+Ferrier 1961→1952、Amadeus 1989→1964、Richter 1992→1964…）；研究層寫「查不到、
+行文不得斷言錄音年」的八張維持發行年不動（Mravinsky 第五號、Celibidache、
+Van Cliburn 普羅高菲夫、Marian Anderson、du Pré 等）。
+
+## 六、c-117 卡帶盤：裁定收，但那五張只剩一句話
+
+店主「其他直接開始做」。裁定**收**——池中已有卡帶原盤的先例（c-65 磁帶實驗批、
+c-76 尾島由郎《原盤是一捲卡帶，黑膠版要到 2024 年才出》）。**但那五張在 repo 裡
+只有跨批總結的一句話，沒有任何識別資料**（無掛名、無盤名、無 MBID），要另開補遺批重找。
+
+## 七、⚠ 併行跑管線的兩個教訓
+
+1. **`TaskStop` 不會殺掉整棵行程樹。** 停掉的 wave 腳本其 bash 父行程繼續往下跑，
+   結果同一批被兩支腳本同時推——**幸好每一步都是冪等的**（catalog PATCH、KV put、
+   seed append 都會跳過已存在的），卡池實測 0 重複列、排版自檢 OK。
+   要真的停下來得連 node 子行程一起殺。
+2. **重跑整條 wave 會把 manifest 濾成空的然後刪掉。** `filter-manifest-new.mjs`
+   的作用是「濾掉已在池中的卡」，第一次跑對，**第二次跑時卡已經進池了，
+   於是 33 份 manifest 全被刪掉**，published gate 就沒有東西可驗。
+   補救是重建 manifest（`build-manifest` 會從原始資料重生）再補旗標。
+   **重跑時不要再跑 filter 那一步。**
+
+## 主要檔案
+
+`scripts/check-duplicate-covers.mjs`（新）、`batch-progress/build-manifest.mjs`（自我同名
+與 genreException 兩處）、`seed_cards.json`（16,450 列）、`card-preview-status.js`、
+`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
+`data/discogs-cover-registry.json`（178 筆）、48 份 `onboarding-manifest-c*-20260910.json`、
+48 批的 `batch-progress/c*/{cand-all,covers,previews.local,ratings,obscurity-anchor,held}.json`。
+
+## 尚未處理
+
+- **留置 51 張全部是缺封面**，集中在 c-115（8）、c-103／c-114（各 5）、c-90／c-92 與
+  三個區域批（各 2–7）。這些是 CAA、Apple、Spotify、Bandcamp、iTunes、Discogs 六條路都查無的碟。
+- **池中十四組同一藝人有兩種寫法**（`Leadbelly`／`Lead Belly`、`The O'Jays` 直彎撇號、
+  `BOREDOMS`／`Boredoms`、`R.D. Burman`／`R. D. Burman` 等，共 34 張）。
+  這一輪新進的卡**都用了池中的多數寫法**，沒有加深分裂，但少數寫法那一側仍待合併。
+- **四組重複卡待店主裁定移除**：Celia Cruz《Celia & Johnny》與 Albert Ayler《Spiritual Unity》
+  是普卡撞王牌；Willie Colón《Siembra》是兩張普卡同碟。
+
 ### 2026-09-10｜dip-vinyl-shop｜§4 增列 Discogs 封面來源，解除舊批留置 65 張；c-107 池中簡轉繁
 
 店主 09-10 裁定：「DISCOGS 當封面來源，但是要註記、建立名單、讓我日後能做管理」，

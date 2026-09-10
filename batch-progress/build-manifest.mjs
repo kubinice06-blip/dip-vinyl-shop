@@ -165,7 +165,12 @@ for (const a of cand) {
   };
   // 自我同名卡：驗證器要求 selfTitledVerified=true 且固定試聽必須 ready
   // （同名碟最容易配到錯的版本，試聽是唯一能當場驗版本的證據）。
-  if (cur.selfTitled === true || String(a.artist).trim() === String(a.album).trim()) {
+  // 判「自我同名」要與驗證器同一把尺。驗證器用的是正規化比對（NFKD、去重音、只留字母數字），
+  // 這裡原本用字串完全相等，於是 NewJeans《New Jeans》這種「差一個空格」的卡在這裡不算自我同名、
+  // 不會補 selfTitledVerified，到了 gate 卻被算成自我同名而擋下（c-105 實際踩到）。
+  const selfNorm = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '')
+    .toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+  if (cur.selfTitled === true || selfNorm(a.artist) === selfNorm(a.album)) {
     // 2026-09-04 店主裁定：身分證據不限試聽。rgMbid 或 §1 人工身分舉證同樣算數，
     // 只有三種都沒有才留置（驗證器同步放寬）。
     if (pv.status !== 'ready' && !String(a.rgMbid || '').trim() && !manual) {

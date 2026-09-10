@@ -1,0 +1,2857 @@
+{
+ "schemaVersion": 1,
+ "batch": "c106-20260910",
+ "albums": [
+  {
+   "artist": "潘迪華",
+   "album": "Oriental Pearls",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8d0f5edd-318f-4e25-a4b1-a7cefc475f19。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「Oriental Pearls」、artist-credit「Pan Wan Ching」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 1 個 release（1961 HK、Official、Diamond SLP 1006）。藝人 MBID c0844c64-5011-40df-8072-068427f9a683，以 release-group?artist=…&limit=100&offset= 分頁全列 7 個 RG（不用 inc=release-groups 的 25 筆上限，第 116 條）。刻意不釘：bb62c344-cc6b-4666-8255-33f6e6b30575《Pan Wan Ching Sings the Four Seasons》（1961 同年另一張 Diamond LP，內容不同）、1e7b2020-ecbf-488e-b8fa-5a6f1efcb956《How Strange》（1969）、64986fdd-1240-4645-a762-732f3c3f42c7《A Man and A Woman》（1968）、ae01f41d-7c6a-4587-aed9-2eecd835e149《我的路》（2004，secondary-types 含 Interview 與 Live）、1b45a11c-617b-4ac2-9474-a0bb63faff1b《Rebecca Live 我的心-音樂旅情》（2021，primary-type Other＋Live）。",
+    "rgMbid": "8d0f5edd-318f-4e25-a4b1-a7cefc475f19",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8d0f5edd-318f-4e25-a4b1-a7cefc475f19/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1771,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤面署名寫 Pan Wan Ching，唱片行寫潘迪華，電影字幕寫 Rebecca Pan。三個名字是同一位 1957 年從香港夜總會唱起的歌手，這張 1961 年的碟把她的夜總會歌單原樣搬進錄音室。十二軌全部以拉丁字母印題，法國香頌〈J'attendrai〉、玻利維亞舞曲〈Sucu, Sucu〉、印尼民謠與國語小調英譯〈Ding Dong Song〉輪番上場，一首換一種語言。十二首沒有一首超過四分鐘，最短的〈Planting Rice〉只有 1 分 54 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/8d0f5edd-318f-4e25-a4b1-a7cefc475f19?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=8d0f5edd-318f-4e25-a4b1-a7cefc475f19&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1510091855&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=16628658&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=c0844c64-5011-40df-8072-068427f9a683&limit=100&offset=0&fmt=json",
+     "https://zh.wikipedia.org/wiki/%E6%BD%98%E8%BF%AA%E8%8F%AF",
+     "https://musicbrainz.org/ws/2/release?release-group=dd0d0a2d-fc8d-443e-963e-1e83ea34824c&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/release-group/8d0f5edd-318f-4e25-a4b1-a7cefc475f19"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/bf/98/eebf9874-9217-53c4-1373-0b1b16a3642d/mzaf_14114646803344483005.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1510091855",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "潘迪華",
+   "album": "The Exciting Rebecca Pan 我的心．潘迪華",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 172de071-9585-4e5a-894a-b1d36a2ea2f1。回問確認：title「The Exciting Rebecca Pan 我的心．潘迪華」、artist-credit「Rebecca Pan」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 1 個 release（1963 HK、Official、Diamond SLP 1009）。藝人 MBID c0844c64-5011-40df-8072-068427f9a683，名下 7 個 RG。刻意不釘：8d0f5edd-318f-4e25-a4b1-a7cefc475f19《Oriental Pearls》（1961，本批另立一卡）、bb62c344-cc6b-4666-8255-33f6e6b30575《Pan Wan Ching Sings the Four Seasons》（1961）、1b45a11c-617b-4ac2-9474-a0bb63faff1b《Rebecca Live 我的心-音樂旅情》（2021 Live，盤名含「我的心」最易誤配）、ae01f41d-7c6a-4587-aed9-2eecd835e149《我的路》（2004 Interview＋Live）。",
+    "rgMbid": "172de071-9585-4e5a-894a-b1d36a2ea2f1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/172de071-9585-4e5a-894a-b1d36a2ea2f1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第十軌〈Bengawan Solo〉錄的時候她三十三歲，三十七年後回到銀幕上。用回這份錄音的是 2000 年王家衛的《花樣年華》，歌出自 1963 年香港的這張碟。十二軌跨了六個地方：希伯來民謠〈Hava Nagela〉、拉丁恰恰〈Pepito Cha Cha〉、巴西的狂歡節曲、印尼民謠那一首，另有三首以 Chinese 起題的國語曲英譯。最長的一軌是第 9 軌〈Chinese Blues〉3 分 58 秒，其餘各軌多落在 2 分 16 秒到 3 分 10 秒之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/172de071-9585-4e5a-894a-b1d36a2ea2f1?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=172de071-9585-4e5a-894a-b1d36a2ea2f1&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1510277115&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=16628658&country=tw&entity=album&limit=200",
+     "https://zh.wikipedia.org/wiki/%E6%BD%98%E8%BF%AA%E8%8F%AF",
+     "https://musicbrainz.org/ws/2/release?release-group=8d0f5edd-318f-4e25-a4b1-a7cefc475f19&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/release-group/172de071-9585-4e5a-894a-b1d36a2ea2f1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/03/bc/9e/03bc9e5a-dc5c-647e-b54c-75709bd3d613/mzaf_655341934853011220.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1510277115",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "葛蘭",
+   "album": "The Wild, Wild Rose 野玫瑰之戀",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group dd0d0a2d-fc8d-443e-963e-1e83ea34824c。回問確認：title「The Wild, Wild Rose 野玫瑰之戀」、artist-credit「Grace Chang」、first-release-date 1971、primary-type Album、secondary-types [Soundtrack]（依 §5.6 明文，primary-type 為 Album 者照一般 Album 寫、不填例外欄位）、轄下 1 個 release（1971 HK、status 空、麗歌Regal LRHX 868）。藝人 MBID e4eaa89a-c6b3-496c-b2f2-da019bcc594f，名下 7 個 RG。刻意不釘：eb05f3eb-045c-4c05-b81e-018272545bf8《野玫瑰之戀》（2015 數位再發，與本卡同名，是最危險的對照組）、01c3173c-a28d-4faf-b842-09702ee5b7a8《教我如何不想她 (電影原聲帶)》（2015）、513699d2-3ef2-4297-a7cf-5a007ef79ef4《群星會 23 葛蘭 (珍藏系列)》（Compilation、無年份）、317e051a-3719-4444-815d-911e4bb376ac《流星歲月精華～珍藏集》（2002 Compilation）、0df7326f-335c-426f-b572-38fba772355f《百代百年系列 15:我要你的愛》（2005 後出重包裝）、5bdfd27c-e505-4088-b99f-ae66118d251b《葛蘭之歌》（2015）。",
+    "rgMbid": "dd0d0a2d-fc8d-443e-963e-1e83ea34824c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dd0d0a2d-fc8d-443e-963e-1e83ea34824c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈卡門〉〈蝴蝶夫人〉照唱西洋歌劇的旋律，歌詞是李雋青的中文。這是 1960 年香港歌舞片《野玫瑰之戀》的電影歌曲集，那部片本來就以比才的歌劇《卡門》為藍本，寫夜總會歌女與年輕鋼琴師的故事。十二軌裡有三軌是純音樂——〈竹舞〉〈第二春〉〈河邊春〉，在碟上等於段落之間的間奏，最長的一軌正是純音樂版的〈第二春〉5 分 08 秒。人聲曲分兩路走：〈卡門〉〈蝴蝶夫人〉把中文詞直接填進歌劇旋律，〈說不出的快活〉〈打噴嚏〉〈叮噹歌〉則是恰恰、曼波那一路的節奏曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/dd0d0a2d-fc8d-443e-963e-1e83ea34824c?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=dd0d0a2d-fc8d-443e-963e-1e83ea34824c&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443733106&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%87%8E%E7%8E%AB%E7%91%B0%E4%B9%8B%E6%88%80",
+     "https://musicbrainz.org/ws/2/release-group?artist=e4eaa89a-c6b3-496c-b2f2-da019bcc594f&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=14126461&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/dd0d0a2d-fc8d-443e-963e-1e83ea34824c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f4/a7/0e/f4a70e41-6f4c-3682-2522-16201ea75514/mzaf_11998976524277569405.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443733106",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "李香蘭",
+   "album": "蘭閨寂寂",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c50a9172-2109-4d57-943b-08ca3e077f96。回問確認：MB title「籣閨寂寂」（錯字，卡片用正字）、artist-credit「李香蘭」、first-release-date 1957、primary-type Album、secondary-types 空、releases 陣列 1 筆（release 端點 browse 回 0 筆，屬 MB 資料不全，不是查無）。藝人 MBID 44b8d3ea-bdcf-4c41-8c77-1aea20e77357，名下 2 個 RG。刻意不釘：9342b2ee-90cb-4ffd-9797-4df43d70d103《群星會 42 李香蘭 (珍藏系列)》（Album＋Compilation、無 first-release-date，後世珍藏系列拼盤）。",
+    "rgMbid": "c50a9172-2109-4d57-943b-08ca3e077f96",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1957,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/75/f3/e9/75f3e967-df7e-b998-8372-f7003f6de41c/00077774365352.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723985727",
+    "note": "試聽探測釘定的 collectionId 723985727（tw）：李香蘭 — 百代中國時代曲名典十七: 李香蘭 - 蘭閨寂寂"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十吋盤十首歌，前三首都是 1955 年電影《金瓶梅》的插曲。唱片本身要到 1957 年才在香港出，比電影晚了兩年。十首全部落在 2 分 38 秒到 3 分 33 秒之間、總長約 30 分鐘，等於把 78 轉時代單面一首歌的長度直接搬進 LP。曲目分兩路：〈蘭閨寂寂〉〈烏鴉配鳳凰〉〈身世飄零〉是那部古裝片的插曲，〈十里洋場〉〈恨不相逢未嫁時〉〈三年〉則是上海時代曲一路的都會小調。最長的〈恨不相逢未嫁時〉3 分 33 秒收在倒數第二軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/c50a9172-2109-4d57-943b-08ca3e077f96?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=c50a9172-2109-4d57-943b-08ca3e077f96&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=723985727&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%87%91%E7%93%B6%E6%A2%85_(1955%E5%B9%B4%E7%94%B5%E5%BD%B1)",
+     "https://musicbrainz.org/ws/2/release-group?artist=44b8d3ea-bdcf-4c41-8c77-1aea20e77357&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/c50a9172-2109-4d57-943b-08ca3e077f96"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/07/94/3d/07943d5e-f55e-055d-782e-162435242920/mzaf_4343286980870803433.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723985727",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "姚莉",
+   "album": "電影歌曲精選",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1d1507b1-95d5-49c6-9018-355a2d1403a9。回問確認：title「電影歌曲精選」、artist-credit「姚莉」、first-release-date 1994、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（1994 HK、Official、條碼 7 2438 31403 2 9）。藝人 MBID 2d0addcb-4ec4-4d83-b7a5-d435184fef8c，名下 4 個 RG。刻意不釘：77767f27-4a3d-4cbd-b344-ba5f98f6cf52《秋的懷念》（1962 Compilation，內容＝池中已有的名典 25／26）、36079b2d-7416-4779-a0b8-588a85fcd156《漁光曲》（1971 麗歌 LP，Apple 七店面查無、封面無來源，本批不收）、50fdd560-c096-4c9f-9b74-c16c635c044e《一曲難忘 . 中詞西曲精選》（＝名典 27，MB 無 first-release-date，年份填不出來）。",
+    "rgMbid": "1d1507b1-95d5-49c6-9018-355a2d1403a9",
+    "exceptionReason": "百代中國時代曲名典第 48 集，把姚莉 1940–50 年代替國語片唱的插曲整編成單一發行品；時代曲當年只以 78 轉蟲膠單片流通、不存在原始專輯，這一系列復刻輯是這批錄音唯一可建檔的單位，1994 年由 EMI (HK) 正式發行並持續在串流上架。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/1d1507b1-95d5-49c6-9018-355a2d1403a9",
+     "https://music.apple.com/hk/album/724959370"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1d1507b1-95d5-49c6-9018-355a2d1403a9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十首歌來自十二部電影，原本都是銀幕上唱的。1994 年香港把這些 1950 年代的插曲錄音整編成一張 CD，收的都是當年的原始收音。編排不按電影分組：《桃花江》的三首散在第 1、2、18 軌，《那個不多情》的五首散在第 3 到第 12 軌之間。長度也照插曲的規格，最長的〈珍珠自嘆〉3 分 24 秒、最短的〈毋忘我〉2 分 17 秒，平均約 2 分 52 秒，沒有一首是後來重錄的加長版。伴奏是香港百代錄音室的小型管弦編制，人聲貼得很前。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1d1507b1-95d5-49c6-9018-355a2d1403a9?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=1d1507b1-95d5-49c6-9018-355a2d1403a9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=724959370&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%8E%89",
+     "https://itunes.apple.com/lookup?id=377320817&country=tw&entity=album&limit=200",
+     "https://itunes.apple.com/lookup?id=771772433&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/1d1507b1-95d5-49c6-9018-355a2d1403a9",
+     "https://music.apple.com/hk/album/724959370"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/38/10/22/38102204-2d82-c5fa-15e9-a97126d6c450/mzaf_5343321430409307967.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724959370",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "張露",
+   "album": "繁星點點 張露",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2070a4d2-ca83-4d0d-940d-52f3f30bec5a。回問確認：title「繁星點點 張露」、artist-credit「張露」、first-release-date 1973-10-23、primary-type Album、secondary-types 空、轄下 1 個 release（Official、廠牌 环球唱片，release 未填國別）。藝人 MBID 08571849-85b7-4a1e-8b65-e857346f0efb，名下 2 個 RG。刻意不釘：e0b3dfaf-1aa0-45fb-9bec-1647b48a9709《給我一個吻》（1992 Album＋Compilation，就是池中已有的名典 13，c-49 已核實其 release 8d1c9b66＝FH81013 2、15 軌）。",
+    "rgMbid": "2070a4d2-ca83-4d0d-940d-52f3f30bec5a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2070a4d2-ca83-4d0d-940d-52f3f30bec5a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "藝名是電台叫出來的：上海話裡「大小姐」的大，讀近露。本名張秀英的她靠〈給我一個吻〉紅遍香港，這張碟出在 1973 年，離她 1975 年退出歌壇不到兩年。十一軌全落在 2 分 15 秒到 3 分 40 秒之間，最長的是第 2 軌〈夢醒不見你〉。曲名自己成組：〈永遠在一起〉〈永遠相依〉〈相親相愛〉一路，〈小城春回〉與〈昨天 今天 明天〉則是時序題。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2070a4d2-ca83-4d0d-940d-52f3f30bec5a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=2070a4d2-ca83-4d0d-940d-52f3f30bec5a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=08571849-85b7-4a1e-8b65-e857346f0efb&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/search?term=%E5%BC%B5%E9%9C%B2%20%E7%B9%81%E6%98%9F%E9%BB%9E%E9%BB%9E&country=tw&media=music&entity=song&limit=25",
+     "https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%B2",
+     "https://musicbrainz.org/release-group/2070a4d2-ca83-4d0d-940d-52f3f30bec5a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "潘秀瓊",
+   "album": "Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 145dc64c-8d7d-45ce-9127-086301c8a8f4。回問確認：title「Popular Songs In Mandarin Chinese (By The Orient's Favorite Vocalist)」、artist-credit「潘秀瓊」、first-release-date 1960、primary-type Album、secondary-types 空、轄下 1 個 release（1960 US、Official、Capitol Records T 10326／T-10326）。藝人 MBID 5b2b4dc3-ab3d-4667-94ef-3883e81b0f89，名下 2 個 RG。刻意不釘：1742269c-e5e9-4558-867d-fbc23ce9ba48《Our Singapore 2019》（2019 Single，與時代曲無關）。",
+    "rgMbid": "145dc64c-8d7d-45ce-9127-086301c8a8f4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/145dc64c-8d7d-45ce-9127-086301c8a8f4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "美國 Capitol 發的一張國語唱片，副題印著東方最受歡迎的歌者。1960 年在美國出的這張碟，十二首國語流行曲只印英文譯題：第 3 軌〈Lover's Tears〉就是〈情人的眼淚〉、她 1958 年的成名曲，兩年後換上英文題賣到美國去。〈A Caged Bird〉〈On The Elephant Back〉這類直譯題，對應的都是同時期的國語小調。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/145dc64c-8d7d-45ce-9127-086301c8a8f4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=145dc64c-8d7d-45ce-9127-086301c8a8f4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=5b2b4dc3-ab3d-4667-94ef-3883e81b0f89&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=14875670&country=tw&entity=album&limit=200",
+     "https://zh.wikipedia.org/wiki/%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B7%9A",
+     "https://musicbrainz.org/release-group/145dc64c-8d7d-45ce-9127-086301c8a8f4"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "顧媚",
+   "album": "小雲雀 = The Lark",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 38efe9cd-6a52-45f4-a068-ef4e12d4fdb4。回問確認：title「小雲雀 = The Lark」、artist-credit「Carrie Koo Mei」、first-release-date 1966、primary-type Album、secondary-types [Soundtrack]、轄下 1 個 release（1966 HK、status 空、Angel Records 3AEX 314）。藝人 MBID a2134991-9a21-43fb-8a97-ddc2a77cd68b，名下 1 個 RG（以 release-group?artist=…&limit=100&offset= 分頁確認，不是 inc=release-groups 的 25 筆上限）。無同名或同期對照組可列。",
+    "rgMbid": "38efe9cd-6a52-45f4-a068-ef4e12d4fdb4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/38efe9cd-6a52-45f4-a068-ef4e12d4fdb4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第七軌的曲名就叫〈主題曲〉三個字。整張是 1965 年電影《小雲雀》的歌，唱片隔年在香港出，那部片也讓「小雲雀」成了她的外號。其餘十一首橫跨山地民謠改編的〈阿里山的姑娘〉、南洋小調〈相思河畔〉與夜生活題〈燈紅酒綠〉，另收〈不了情〉〈情人的眼淚〉兩首別人先唱紅的曲子——前者正是她 1961 年替林黛代唱過的同名電影主題曲，在這張電影歌曲集上換成自己唱。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/38efe9cd-6a52-45f4-a068-ef4e12d4fdb4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=38efe9cd-6a52-45f4-a068-ef4e12d4fdb4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://zh.wikipedia.org/wiki/%E9%A1%A7%E5%AA%9A",
+     "https://itunes.apple.com/search?term=%E9%A1%A7%E5%AA%9A%20%E5%B0%8F%E9%9B%B2%E9%9B%80&country=tw&media=music&entity=song&limit=25",
+     "https://musicbrainz.org/ws/2/release-group?artist=a2134991-9a21-43fb-8a97-ddc2a77cd68b&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/38efe9cd-6a52-45f4-a068-ef4e12d4fdb4"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "姚蘇蓉",
+   "album": "Love Is Forever 不變的情",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fab697b7-0b6a-4602-b111-8e305fdbe551。回問確認：title「Love Is Forever 不變的情」、artist-credit「姚蘇蓉」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release（1971 HK、Official、編號 CS 6009）。藝人 MBID fc579f36-26fc-4478-b1c0-b3d1ce0e2457（TW），名下 11 個 RG。刻意不釘：76882b49-d37d-4046-bc02-aa2120868e80《歌曲精選》（1970）、08d55144-a79b-43e6-894b-e2c3594c22bf《想起你的時候》（1972）、6a7d2bac-74ac-4bc2-9af7-53d8dcda6a0b《Yao Su Yong's Highlight / A Go Go》（1967）、1dd3f60d-f333-4984-bbd2-8f4a3af7e3f6《我不能再想你 / 你的電話又來到》（1973）、97673d77-55f8-467c-bdc3-9fe4639c8798《Yao Su Yong's Greatest Movie Hits = 最流行電影名曲》（Compilation、無年份）。另一個同名藝人實體 a08d7e5a-b9b4-4f0d-a537-962c71261c0f 名下無 RG，刻意不用。",
+    "rgMbid": "fab697b7-0b6a-4602-b111-8e305fdbe551",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fab697b7-0b6a-4602-b111-8e305fdbe551/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "點題曲排在第二軌，第一軌叫〈永遠不再愛〉。《不變的情》1971 年出的這個香港版十二首全是中文題，〈愛你360年〉〈一年四季都想你〉〈全心全意愛你〉這種用數量詞堆疊的題名，是 1970 年代初國語流行盤的典型。〈苦戀〉〈初戀詩〉與那首排在最前面的〈永遠不再愛〉延續她「盈淚歌后」的悲情路數，〈王昭君〉則是古典題材的老曲重唱。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fab697b7-0b6a-4602-b111-8e305fdbe551?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=fab697b7-0b6a-4602-b111-8e305fdbe551&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=fc579f36-26fc-4478-b1c0-b3d1ce0e2457&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=390852467&country=tw&entity=album&limit=200",
+     "https://itunes.apple.com/lookup?id=1734958401&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%98%87%E8%93%89",
+     "https://musicbrainz.org/release-group/fab697b7-0b6a-4602-b111-8e305fdbe551"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "青山",
+   "album": "青山之歌",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d68427d1-eecf-42b5-a62f-f09c5f6102a8。回問確認：title「青山之歌」、artist-credit「青山」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（Official、崑崙 K.L.C. KLC 1028，release 未填國別）。藝人 MBID 1290816e-1add-4430-ba8a-e1696d50ba28（TW、1945），名下 13 個 RG。刻意不釘：442bda57-e660-47ac-b7ea-ec2e469248d7《淚 的 小 花》（1970 EP，池中已有同名卡）、bf4b20b1-804f-42e4-b312-ffac528e3bcf《一寸相思一寸淚 / 不要拋棄我》（1969 EP）、ce679db2-fee6-4eab-af1a-52300f96b713《一寸相思一寸淚》（無 first-release-date）、47f622fc-f19e-4296-9745-596fed7c089c《電影明星青山亏歌》（1969 EP）、7e03b5e3-e556-4fb4-8e95-fcec75e68681《心愛的馬 / 第3集》（1968）、a5878a5a-8381-45a1-b4d6-d0979423b567《70年代（今夕何夕）》（Compilation、無年份）。",
+    "rgMbid": "d68427d1-eecf-42b5-a62f-f09c5f6102a8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/e5/91/5e/e5915e8b-3155-70c9-90e6-e8392766caaa/32.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "955364085",
+    "note": "試聽探測釘定的 collectionId 955364085（tw）：青山 — 青山之歌-酒醒夢已殘"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一張黑膠塞進十五首歌，一面七首半。同期的 12 吋盤多半只裝 10 到 12 軌，這張 1969 年的碟平均每首約兩分半。十五個曲名裡有九個把「負心」「無情」「苦」寫進題目——〈你變了〉〈你是負心人〉〈你最無情〉〈愛的苦酒〉，例外只有〈情人夢〉〈我與咖啡〉幾首。本名張鐵嶽的青山當時念的是夜間部、白天在陸軍供應司令部上班，退伍後才由慎芝安排上《群星會》。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d68427d1-eecf-42b5-a62f-f09c5f6102a8?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=d68427d1-eecf-42b5-a62f-f09c5f6102a8&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=1290816e-1add-4430-ba8a-e1696d50ba28&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=955364085&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/search?term=%E9%9D%92%E5%B1%B1%20%E7%9B%B8%E6%80%9D%E6%9C%AA%E4%BA%86%E6%83%85&country=tw&media=music&entity=song&limit=25",
+     "https://zh.wikipedia.org/wiki/%E9%9D%92%E5%B1%B1_(%E6%AD%8C%E6%89%8B)",
+     "https://musicbrainz.org/release-group/d68427d1-eecf-42b5-a62f-f09c5f6102a8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/26/0d/86/260d86b6-ff11-32c8-848d-aaa794e49003/mzaf_4710186908257719261.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "955364085",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "崔苔菁",
+   "album": "為什麼春天要遲到",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 793fc373-fce4-45b3-a8bb-e0759406f08b。回問確認：title「為什麼春天要遲到」、artist-credit「崔苔菁」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release（1970 XW、Official、可登有聲出版社有限公司）。藝人 MBID 2dd86b55-dc99-489e-8a52-28ab55b2ca6a（TW、1950-11-08），名下 2 個 RG。刻意不釘：1802c207-cfd1-4995-8de3-c781896f9cee《甜蜜的回憶 / 乘風破浪》（1976，晚六年的另一張）。",
+    "rgMbid": "793fc373-fce4-45b3-a8bb-e0759406f08b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/793fc373-fce4-45b3-a8bb-e0759406f08b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 206,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "最短的〈愛的話〉只有一分三十九秒，全碟三十二分鐘。十二軌平均約 2 分 40 秒，最長的〈不要說是我負你〉也才 3 分 32 秒，比同時期的台語盤短了將近一分鐘——這是電視上一次唱一首的長度，而她 1969 年剛成為台視的基本歌星。曲名裡有一組季節主題：〈為什麼春天要遲到〉〈春雨戀〉〈春天〉三首帶春，加上〈霧中花〉〈小姑娘〉，走的都是明亮輕快那一路，十二首裡只有兩首是慢板。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/793fc373-fce4-45b3-a8bb-e0759406f08b?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=793fc373-fce4-45b3-a8bb-e0759406f08b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1854946786&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1094784330&country=tw&entity=album&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%B4%94%E8%8B%94%E8%8F%81",
+     "https://musicbrainz.org/release-group/793fc373-fce4-45b3-a8bb-e0759406f08b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/97/55/82975563-746a-1bf8-394f-c41654af80a6/mzaf_17281004686193382204.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1854946786",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "龔秋霞",
+   "album": "秋水伊人",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f0899d3d-46f7-405a-a1d0-97844d54e151。回問確認：title「秋水伊人」、artist-credit「龔秋霞」、first-release-date 1993-03-23、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（1993-03-23 HK、Official、Pathé 百代唱片、條碼 0 7777 78370 2 3）。藝人 MBID ab808f0a-3541-4635-82a4-6cd402d7d6f9，名下 1 個 RG。刻意不釘：d3352470-51fb-4be7-8a10-7e8af267f26b《秋水伊人》（1984，徐小鳳的同名碟，不同藝人不同內容）。",
+    "rgMbid": "f0899d3d-46f7-405a-a1d0-97844d54e151",
+    "exceptionReason": "百代中國時代曲名典第 24 集，1993 年由 EMI (HK) 把龔秋霞 1930–40 年代的百代蟲膠錄音整編發行；時代曲當年只以 78 轉單片流通、沒有原始專輯這個單位，這一系列復刻輯是這批錄音唯一可建檔也是唯一在串流上架的形式。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/f0899d3d-46f7-405a-a1d0-97844d54e151",
+     "https://www.discogs.com/release/5607486"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f0899d3d-46f7-405a-a1d0-97844d54e151/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 916,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈秋水伊人〉是 1937 年電影《古塔奇案》的插曲，賀綠汀作曲。1993 年香港把她上海時期的舊錄音整編成這張十五軌的 CD，十五首全落在 2 分 36 秒到 3 分 22 秒之間，一整張碟等於十五張蟲膠片單面的內容。曲目分兩類，一類是電影插曲（〈莫忘今宵〉〈薔薇處處開〉），一類是純唱片曲目（〈丁香樹下〉〈湖畔四拍〉〈搖媽媽〉）；其中五首正是她 1945 年在上海蘭心大戲院辦音樂會時挑出來唱的那幾支。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f0899d3d-46f7-405a-a1d0-97844d54e151?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f0899d3d-46f7-405a-a1d0-97844d54e151&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=771772433&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1442276146&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%BE%9A%E7%A7%8B%E9%9C%9E",
+     "https://itunes.apple.com/lookup?id=724959370&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/f0899d3d-46f7-405a-a1d0-97844d54e151",
+     "https://www.discogs.com/release/5607486"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d3/14/ab/d314abb5-d2ab-5c0a-71b2-4ba469309813/mzaf_12977792278257887417.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "771772433",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "白光",
+   "album": "白光紀念專輯-懷念",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 04b6c99e-66c3-4860-a674-f054464b0ff1。回問確認：title「白光紀念專輯-懷念」、artist-credit「白光」、first-release-date 1999-01-01、primary-type Album、secondary-types 空、轄下 1 個 release（1999-01-01 CN、status 空、無廠牌登錄）。藝人 MBID d9244940-d3ef-483f-8561-0fa805dcb6db（CN、1920），以 release-group?artist=…&limit=100&offset= 分頁確認名下只有這 1 個 RG——她 1940 年代的百代錄音在 MB 上完全沒有建檔（第 28 條：這是真的查無，不是 503）。無對照組可列。",
+    "rgMbid": "04b6c99e-66c3-4860-a674-f054464b0ff1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/04b6c99e-66c3-4860-a674-f054464b0ff1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2786,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十四首歌，沒有一首超過三分十二秒。全部落在 2 分 28 秒到 3 分 12 秒之間、總長約 71 分鐘，幾乎把一張 CD 塞滿，因為每一首原本都是 78 轉蟲膠片單面的內容。這張紀念輯出在 1999 年，也就是她過世那一年。排列不按年份也不按電影，而是讓慢板與節奏曲交錯：〈懷念〉〈魂縈舊夢〉開場走慢，〈假正經〉〈葡萄美酒〉〈我是女菩薩〉輕快。她的音域偏低，是同代女聲裡最好認的一把。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/04b6c99e-66c3-4860-a674-f054464b0ff1?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=04b6c99e-66c3-4860-a674-f054464b0ff1&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=724462653&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%99%BD%E5%85%89_(%E6%BC%94%E5%93%A1)",
+     "https://musicbrainz.org/ws/2/release-group?artist=d9244940-d3ef-483f-8561-0fa805dcb6db&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/04b6c99e-66c3-4860-a674-f054464b0ff1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/56/50/4a/56504a82-2e9c-fcf3-864a-120db1da9cd7/mzaf_13579169358840633760.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724462653",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "沈文程",
+   "album": "心事誰人知",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1c038164-4a20-48ee-a78f-ff14fd399997。回問確認：title「心事誰人知」、artist-credit「沈文程」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release（1982 TW、Official、愛莉亞 A6002）。藝人 MBID cbf91cdd-4d81-42af-9e9c-478bc21a2a85（TW、1955-06-06），以分頁確認名下只有這 1 個 RG。無對照組可列。",
+    "rgMbid": "1c038164-4a20-48ee-a78f-ff14fd399997",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/636mCzrNF5tGBUKW1loNLuDuxIdSJubtfgzc_7p8QiQ/rs:fit/g:sm/q:90/h:354/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NTI0/NjM1LTE2MTk3NzQz/NTktMTg1NS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "18524635"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 43,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "點題曲拆成兩半，A 面第一首和 B 面第一首各放一半。這卷 1982 年的卡帶是他的出道專輯，十二軌裡有七軌是翻唱：〈北國の春〉〈雪が降る〉兩首掛日文原題、〈成吉思汗〉來自一支德國團，〈愛你在心口難開〉〈冬天裡的一把火〉則在中文題後面標著英文原題。原創的台語曲只有三首，除了拆成兩段的點題曲，就剩〈落大雨彼一日〉與〈可憐落魄人〉。詞曲出自蔡振南，唱片也是他的公司發的，沒上媒體宣傳就在各大夜市賣破百萬張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1c038164-4a20-48ee-a78f-ff14fd399997?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=1c038164-4a20-48ee-a78f-ff14fd399997&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://zh.wikipedia.org/wiki/%E6%B2%88%E6%96%87%E7%A8%8B",
+     "https://zh.wikipedia.org/wiki/%E8%94%A1%E6%8C%AF%E5%8D%97",
+     "https://itunes.apple.com/lookup?id=1105496867&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=cbf91cdd-4d81-42af-9e9c-478bc21a2a85&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/1c038164-4a20-48ee-a78f-ff14fd399997"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "蔡振南",
+   "album": "生命的太陽",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 490beb15-bd28-4d60-a734-e28622a603f1。回問確認：title「生命的太陽」、artist-credit「蔡振南」、first-release-date 1995-01、primary-type Album、secondary-types 空、轄下 1 個 release（1995-01 TW、Official、飛碟唱片 09417-2）。藝人 MBID 21758fd7-ed84-4b48-a195-dabee78c656c（TW、1954-07-26），名下 2 個 RG。刻意不釘：e22873ea-c749-3aa1-84d9-6f0b4c173d2f《南歌》（MB 無 first-release-date，Apple 標 1996，年份填不出來）。",
+    "rgMbid": "490beb15-bd28-4d60-a734-e28622a603f1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/490beb15-bd28-4d60-a734-e28622a603f1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 160,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十三年前他替沈文程寫〈心事誰人知〉，這一次自己站到麥克風前。那首歌他寫詞寫曲，唱片還是他自辦的公司發的，1995 年這張碟才輪到他掛名主唱。十一軌平均 4 分 6 秒，最長的收尾曲〈流浪之歌〉5 分 09 秒、最短的〈流浪天涯伴吉他〉3 分 10 秒，比 1970 年代那批國語盤長了一分半，是 CD 時代的編曲長度。曲目來源分三類：台灣民謠〈一隻鳥仔哮啾啾〉、既有的台語老歌〈黑陰天〉，以及〈生命的太陽〉〈母親的名叫台灣〉這些新寫的作品。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/490beb15-bd28-4d60-a734-e28622a603f1?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=490beb15-bd28-4d60-a734-e28622a603f1&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=203895157&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%94%A1%E6%8C%AF%E5%8D%97",
+     "https://musicbrainz.org/ws/2/release?release-group=1c038164-4a20-48ee-a78f-ff14fd399997&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=21758fd7-ed84-4b48-a195-dabee78c656c&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/490beb15-bd28-4d60-a734-e28622a603f1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c9/e5/83/c9e58311-911f-c1a2-2458-ab84966e4322/mzaf_12382023090089585295.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "203895157",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳芬蘭",
+   "album": "親愛的母親",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2353768a-ea9d-4f6f-a538-470b8ffe34df。回問確認：title「親愛的母親」、artist-credit「陳芬蘭」、first-release-date 1970-06-30、primary-type Album、secondary-types 空、轄下 1 個 release（1970-06-30 XW、Official、無廠牌登錄）。藝人 MBID 883ebf6a-112f-42f9-9bf2-86264cfef3bd，名下 5 個 RG。刻意不釘：74b4f1b5-5aa1-4e10-beb4-68626d52ae1f《陳芬蘭之福建歌曲 - 月下心茫茫 = Alone With The Moon》（1970 同年，盤名帶三段併寫，另一張碟）、28963fe8-89d8-4c20-8268-5ee2076c08f4《陳芬蘭与流行歌曲》（1971，MB 標題是簡體登錄）、0d876f12-603a-4936-bbd0-3fccc57b694f《梦乡/你的期望》（1972，同樣簡體登錄）。",
+    "rgMbid": "2353768a-ea9d-4f6f-a538-470b8ffe34df",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2353768a-ea9d-4f6f-a538-470b8ffe34df/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩首寫櫻花，一首題目直接寫著 Sayonara。十二軌平均 3 分 05 秒，最長的〈新月〉3 分 44 秒、最短的〈三朵花〉2 分 42 秒，落差不到一分鐘，編排得很平均。曲目取向分兩條路：一條是日本歌謠一路的〈櫻花淚〉〈櫻花戀〉〈不要說 Sayonara〉，一條是〈親愛的母親〉〈問白雲〉〈他總有一天回來〉這些國語抒情曲。她 8 歲就以〈孤女的願望〉一曲成名、14 歲赴日發展，1970 年這張碟出來時 22 歲，盤上那半邊的日本色彩正對著那段經歷。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2353768a-ea9d-4f6f-a538-470b8ffe34df?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=2353768a-ea9d-4f6f-a538-470b8ffe34df&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1442592279&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%99%B3%E8%8A%AC%E8%98%AD",
+     "https://musicbrainz.org/ws/2/release-group?artist=883ebf6a-112f-42f9-9bf2-86264cfef3bd&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=776149982&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/2353768a-ea9d-4f6f-a538-470b8ffe34df"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/b0/42/a7b04279-3483-31a4-30d6-e1a7fff700e7/mzaf_9667536073037082373.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442592279",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳芬蘭",
+   "album": "楊三郎紀念專輯",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b650864e-698c-41b4-a67f-f8169a80edb0。回問確認：title「楊三郎紀念專輯」、artist-credit「陳芬蘭」、first-release-date 1992-06、primary-type Album、secondary-types 空、轄下 1 個 release（1992-06 TW、Official、吉馬唱片 MCD09205）。藝人 MBID 883ebf6a-112f-42f9-9bf2-86264cfef3bd，名下 5 個 RG。刻意不釘：2353768a-ea9d-4f6f-a538-470b8ffe34df《親愛的母親》（1970，本批另立一卡）、74b4f1b5-5aa1-4e10-beb4-68626d52ae1f《陳芬蘭之福建歌曲 - 月下心茫茫》（1970）、28963fe8-89d8-4c20-8268-5ee2076c08f4《陳芬蘭与流行歌曲》（1971）、0d876f12-603a-4936-bbd0-3fccc57b694f《梦乡/你的期望》（1972）。",
+    "rgMbid": "b650864e-698c-41b4-a67f-f8169a80edb0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/58/17/5d/58175db9-d02e-97c4-57dd-49c857a6af02/191018056056.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1854987233",
+    "note": "試聽探測釘定的 collectionId 1854987233（tw）：陳芬蘭 — Wang Ni Zao Gui"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首歌出自同一支筆，作曲的人三年前已經過世。那支筆是楊三郎，1946 年以〈望你早歸〉揚名歌壇、1989 年病逝，1992 年台北縣立文化中心替他辦作品音樂會並出了這張紀念專輯。十軌平均 4 分 48 秒，最長的〈勸浪子〉5 分 31 秒、最短的收尾〈春風歌聲〉3 分 41 秒，比這批老歌在 78 轉時代長了將近一倍。編排把〈望你早歸〉擺第 1 軌、〈孤戀花〉擺第 4 軌，兩首的原唱分別是紀露霞與美美，在這裡由她重唱一輪，伴奏也換成 1990 年代錄音室的編制。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b650864e-698c-41b4-a67f-f8169a80edb0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b650864e-698c-41b4-a67f-f8169a80edb0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1854987233&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E6%A5%8A%E4%B8%89%E9%83%8E_(%E4%BD%9C%E6%9B%B2%E5%AE%B6)",
+     "https://zh.wikipedia.org/wiki/%E6%9C%9B%E4%BD%A0%E6%97%A9%E6%AD%B8",
+     "https://musicbrainz.org/ws/2/release-group?artist=883ebf6a-112f-42f9-9bf2-86264cfef3bd&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/b650864e-698c-41b4-a67f-f8169a80edb0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/c8/6a/e7c86a03-2541-e3be-cf5c-0d0afa6b48b2/mzaf_16235824214553419166.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1854987233",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "黃乙玲",
+   "album": "無字的情批",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 07f7c44d-28a2-4a7e-83d8-ec7f4a20c0f4。回問確認：title「無字的情批」、artist-credit「黃乙玲」、first-release-date 1999-11-11、primary-type Album、secondary-types 空、轄下 1 個 release（1999-11-11 TW、Official、上華唱片 WCD2213-2）。藝人 MBID 4d4a26b2-cba8-432c-8f4c-0a253c2d791f（TW、1969-09-20），名下 7 個 RG。刻意不釘：eec319a0-9c01-4857-a506-6e896389a271《玲聲若響 經選集》（1999-03-01，同年 Compilation）、5d808eab-9829-4f8c-a57d-c51a924a380f《海波浪》（2001）、b21e94fe-ec87-4a0f-813c-a9fe02fb68d3《講什麼山盟海誓精選重唱＋新歌》（2001，精選＋新歌混編）、c99479e4-d084-3f65-9fb2-4ad604e0b3ca《24K黃金CD版I》（無 first-release-date）。",
+    "rgMbid": "07f7c44d-28a2-4a7e-83d8-ec7f4a20c0f4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/07f7c44d-28a2-4a7e-83d8-ec7f4a20c0f4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 300,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "情批就是情書；十二首歌裡有〈傷心第四台〉與〈收袂到信號〉。1999 年 11 月 11 日發行的這張碟，十二軌平均 4 分 21 秒，最長的〈心情車站〉4 分 51 秒、最短的〈約你喝咖啡〉3 分 38 秒，一首短曲都沒有。曲名分兩路：一路是〈無字的情批〉〈啞巴情歌〉〈和無情人乾杯〉這些傳統的苦情題，一路把當代生活直接寫進題目——第四台、收不到的手機訊號、約人喝咖啡。唱這批歌的她後來四次拿下金曲獎台語歌后。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/07f7c44d-28a2-4a7e-83d8-ec7f4a20c0f4?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=07f7c44d-28a2-4a7e-83d8-ec7f4a20c0f4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=650710709&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%BB%83%E4%B9%99%E7%8E%B2",
+     "https://musicbrainz.org/ws/2/release-group?artist=4d4a26b2-cba8-432c-8f4c-0a253c2d791f&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=404105101&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/07f7c44d-28a2-4a7e-83d8-ec7f4a20c0f4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/65/8d/3a658dc7-613d-0c49-44ad-26f02f415c7f/mzaf_7850634385667764659.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "650710709",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "江蕙",
+   "album": "愛作夢的魚",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8ed2baae-5800-3504-a493-23e09dcfef1e。回問確認：title「愛作夢的魚」、artist-credit「江蕙」、first-release-date 2005-12-30、primary-type Album、secondary-types 空、轄下 1 個 release（2005-12-30 TW、Official、亞律音樂 H103004）。藝人 MBID 30923ad8-e747-4f7b-8014-02e479ae4381（TW、1961-09-01），名下 12 個 RG。刻意不釘：16993743-cf1a-4591-aa14-84d471b2b882《酒後的心聲》、d26f7422-a227-36a5-afc0-61315c632a99《半醉半清醒》、e65c764a-5a56-3d94-9c90-71086314bbad《紅線》（三者皆池中已有）、2a508ba7-037b-4313-91e9-1104b99ea0e8《再相會》（2001）、d1ede4aa-ca91-484b-9011-911647274f32《當時欲嫁》（2010，落在 §1.5 的年份線上）、721f5b07-0363-48be-950d-cf42a1b85367《10年‧典藏精選》（2011 Compilation）、d5dae520-ee01-47e2-9767-7e55f89d7d7b《惜別的海岸》（無 first-release-date）、5b52e4c3-a045-4646-8578-58cadbbf6005《明天會更好》（Single，多藝人合唱，MB 掛在多位歌手名下）。",
+    "rgMbid": "8ed2baae-5800-3504-a493-23e09dcfef1e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8ed2baae-5800-3504-a493-23e09dcfef1e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 354,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈炮仔聲〉〈陀螺〉——十首歌有一半的題目是具體的東西。2005 年底出的這張碟，十軌平均 4 分 28 秒，最長的〈今夜山風吹心房〉5 分 11 秒、最短的〈自作多情〉3 分 59 秒，沒有一首低於四分鐘。另外幾首〈老情歌〉〈故鄉的歌〉〈笑看紅塵夢〉走的是回望式的敘事，與她 1990 年代後期的轉向對得上：早年多唱悲情歌、嗓音哀怨，後來改以輕柔的唱法為主、少嘶吼，題材也擴到親情與勵志。她剛在 2000 年到 2003 年連四屆拿下金曲歌后。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/8ed2baae-5800-3504-a493-23e09dcfef1e?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=8ed2baae-5800-3504-a493-23e09dcfef1e&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1444719861&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=395158183&country=tw&entity=album&limit=200",
+     "https://zh.wikipedia.org/wiki/%E6%B1%9F%E8%95%99",
+     "https://musicbrainz.org/ws/2/release-group?artist=30923ad8-e747-4f7b-8014-02e479ae4381&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/8ed2baae-5800-3504-a493-23e09dcfef1e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/98/94/319894ff-5343-1587-71a0-2a8fae623382/mzaf_2247302101798173694.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1444719861",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "許冠傑",
+   "album": "’79夏日之歌集",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f327b431-f59a-4e2b-855a-57f45091a48a。回問確認：title「’79夏日之歌集」、artist-credit「許冠傑」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1979 HK Polydor 3225 321、1979 HK Polydor 2427 321、1999-10-01 HK Polydor 513 975-2(X)、2005-04-27 XW、2007-06-22 HK Polydor 173 914-8、無日期 XW）。藝人 MBID 36ef3857-5be4-4ee0-9e8b-3280a9913a67，以 release-group?artist=…&limit=100&offset= 分頁全列 89 個 RG。刻意不釘：55b343d1-3290-35fb-a139-e699c0a32419《半斤八両》（1976，池中已有《半斤八兩》，同碟異寫）、974d3d5c-f547-4960-9389-e8da8a5da7d6《金唱片精選》(1976 Compilation)、d470191f-0b49-4603-a2fa-a6858cafc677《許冠傑精選》(1985 Compilation)、9218211f-7a4b-41f5-af53-4d09f74dafcb《Sam Hui新曲與精選》(1988 Compilation)、9bbe1f42-988c-40b8-a38a-588a2893cedc《夢追い》(1981 EP、日本盤)。",
+    "rgMbid": "f327b431-f59a-4e2b-855a-57f45091a48a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f327b431-f59a-4e2b-855a-57f45091a48a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 7,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈加價熱潮〉全碟最短，兩分零八秒，卻是最有名的一首。十二軌平均 2 分 56 秒，最長的〈春夢〉3 分 22 秒，快慢分明：〈十個女仔〉〈錫晒你〉〈加價熱潮〉〈腐朽化神奇〉是節奏曲與諧趣曲，〈那裡是吾家〉〈知心友〉〈說一聲再見〉是抒情曲。那首最短的借〈Rock Around the Clock〉的調子唱香港漲價，原詞裡「早知當初入埋英國籍」一句太敏感，後來改成「即刻飛上月球再揾過食」。這是許冠傑的第六張粵語專輯，1981 年度香港金唱片頒獎典禮給了它白金唱片。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f327b431-f59a-4e2b-855a-57f45091a48a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f327b431-f59a-4e2b-855a-57f45091a48a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443396903&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1443841605&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E4%B8%83%E4%B9%9D%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%AD%8C%E9%9B%86",
+     "https://musicbrainz.org/ws/2/release-group?artist=36ef3857-5be4-4ee0-9e8b-3280a9913a67&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/f327b431-f59a-4e2b-855a-57f45091a48a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/5f/78/0f5f78c0-dd76-f079-9570-329ad49c8bc0/mzaf_1464012456338159153.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443396903",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "許冠傑",
+   "album": "念奴嬌",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 55f8ed88-ead1-49ea-80bf-e5b17d1dd2ac。回問確認：title「念奴嬌」、artist-credit「許冠傑」、first-release-date 1980、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1980 HK Polydor 2427 334、1980 HK Polydor 3225 334、1992 HK Polydor 5139772、1999-10-01 HK Polydor 513 977-2(X)、2009-06-05 HK Polydor 2709534、無日期 XW）。藝人 MBID 36ef3857-5be4-4ee0-9e8b-3280a9913a67，名下 89 個 RG。刻意不釘：d13ffb80-8347-4cfb-95a7-192025007d2a《摩登保鑣》(1981-03，電影歌曲集)、40b16abb-9a89-40f2-855f-947565a98f96《難忘您·紙船》(1982)、37fec8c9-da71-4fad-8230-817a794ea233《新的開始》(1983)、03714bc9-7399-473f-bbc4-10b3c84d8055《斤両十足》(1985 Single)、f327b431-f59a-4e2b-855a-57f45091a48a《’79夏日之歌集》(1979，本批另立一卡)。",
+    "rgMbid": "55f8ed88-ead1-49ea-80bf-e5b17d1dd2ac",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/55f8ed88-ead1-49ea-80bf-e5b17d1dd2ac/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 213,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "搵嘢做、發噏風、先敬羅衣後敬人——六個歌名都是粵語俗語。十二軌平均 3 分 10 秒，最長的是收尾曲〈再會，香港！〉4 分 10 秒，最短的〈先敬羅衣後敬人〉2 分 30 秒。編排把兩首主打放到最前面，〈尖沙咀Susie〉開場、〈夜夜念奴嬌〉接上，中段是市井題材的節奏曲與諧趣曲，〈這一曲送給您〉〈夕陽〉〈傀儡〉組成抒情段；與前一年那張《’79夏日之歌集》相比，慢歌的比重明顯上升，收尾曲也拉長到四分鐘以上。這是許冠傑的第七張粵語專輯，1980 年由 Polydor 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/55f8ed88-ead1-49ea-80bf-e5b17d1dd2ac?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=55f8ed88-ead1-49ea-80bf-e5b17d1dd2ac&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443600141&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%BF%B5%E5%A5%B4%E5%AC%8C_(%E5%B0%88%E8%BC%AF)",
+     "https://musicbrainz.org/ws/2/release-group?artist=36ef3857-5be4-4ee0-9e8b-3280a9913a67&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/ws/2/release?release-group=f327b431-f59a-4e2b-855a-57f45091a48a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/release-group/55f8ed88-ead1-49ea-80bf-e5b17d1dd2ac"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/35/6e/54356e8d-e3f7-4849-7605-786db4cf9398/mzaf_4799043977420845919.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443600141",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "羅文",
+   "album": "小李飛刀",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1caf5a24-4a36-45a0-a0bd-1916e7f25fac。回問確認：title「小李飛刀」、artist-credit「羅文」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（1978 HK、Official、Crown Records CST-12-31）。藝人 MBID 3ac59c53-a679-49c0-9904-ef9df0e4e93b（HK、1945-02-12），以分頁全列 47 個 RG。刻意不釘：78b92d9e-0631-49b0-9e28-d701a36cf41a《強人》(1978 同年)、60109392-3416-4956-9638-b5fa65d2de87《死亡遊戲》(1978 同年)、c6a6e96f-7cc8-45f4-a679-29bca52f93a8《家變》(1977)、2634766f-e405-47ad-ac36-ce253bf7078f《射雕英雄傳》(1983，MB 同時掛在羅文與甄妮名下，是對唱盤)、7e682c59-40f7-403b-945d-9b3e619fca20《絕代雙驕》(1979 Compilation)。另注意他名下有四個純《羅文》同名 RG（0ac07eee／7ba01637 1988、1c5510cf 2003、efce176d 2023）與一個《羅文》Single（b98a09bb），全部刻意不釘。",
+    "rgMbid": "1caf5a24-4a36-45a0-a0bd-1916e7f25fac",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/80/df/4580df42-f25b-c59e-53b5-d2c49076a75d/4715202901173.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1842833451",
+    "note": "試聽探測釘定的 collectionId 1842833451（tw）：羅文 — Xiao Li Fei Dao"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 209,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈刀光淚影〉本來是被丟掉的草稿。詞人盧國沾寫〈小李飛刀〉主題曲時留下這份稿子，自覺水平欠佳、不想公開發表，後來它仍成了劇集插曲，並收進這張在娛樂唱片的第二張專輯裡。十二軌平均 3 分 17 秒，最長的〈流浪〉4 分 21 秒，收尾是主題曲的純音樂版 2 分 21 秒，頭尾用同一段旋律扣起來。十二首裡只有〈小李飛刀〉與〈刀光淚影〉是顧嘉煇為劇集新寫的粵語曲，其餘均為改編，〈不了情〉改編自國語歌，在當時罕見由男歌手演唱。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1caf5a24-4a36-45a0-a0bd-1916e7f25fac?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=1caf5a24-4a36-45a0-a0bd-1916e7f25fac&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1842833451&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%B0%8F%E6%9D%8E%E9%A3%9B%E5%88%80_(%E5%B0%88%E8%BC%AF)",
+     "https://zh.wikipedia.org/wiki/%E5%B0%8F%E6%9D%8E%E9%A3%9B%E5%88%80_(1978%E5%B9%B4%E9%9B%BB%E8%A6%96%E5%8A%87)",
+     "https://musicbrainz.org/ws/2/release-group?artist=3ac59c53-a679-49c0-9904-ef9df0e4e93b&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/1caf5a24-4a36-45a0-a0bd-1916e7f25fac"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/39/17/ec3917c7-17e7-8fb8-3ebd-358885b1c702/mzaf_18256951085761579206.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1842833451",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "羅文",
+   "album": "卉",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5406c4c2-348b-4199-8ff7-faa6e94e4003。回問確認：title「卉」、artist-credit「羅文」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 4 個 release 全 Official（1981 HK EMI EMGS-6078、無日期 HK EMI CDFH10117、兩筆無日期 XW）。藝人 MBID 3ac59c53-a679-49c0-9904-ef9df0e4e93b，名下 47 個 RG。刻意不釘：4182df3e-2c98-4670-9fa9-3230c43aa269《仲夏夜》(1981 同年另一張)、8c8c1616-4ce4-44c7-a2cc-3b895db803f2《我的挑選》(1982 Compilation)、2755cf03-034c-4720-94db-f1d39c8272f9《絲綢之路巡禮名曲集》(1983 Compilation)、9406f38c-543f-4441-bdd9-e26f1aed8201《羅文 / Roman》(1985)、1caf5a24-4a36-45a0-a0bd-1916e7f25fac《小李飛刀》(1978，本批另立一卡)。",
+    "rgMbid": "5406c4c2-348b-4199-8ff7-faa6e94e4003",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5406c4c2-348b-4199-8ff7-faa6e94e4003/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 35,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十三軌十三種花，封面那個「卉」字是張徹寫的。十三個曲名全部是花名，沒有一個例外，也沒有任何一軌是純音樂或間奏；最長的〈紅棉〉4 分 18 秒正是全碟最有名的一首，最短的〈牡丹〉2 分 49 秒。〈紅棉〉原本要收進前一年的《親情》，羅文臨時起意把它抽來放進這張 1981 年的概念大碟，填詞的鄭國江以擬人手法把木棉寫成一個英雄，A 段是人們歌頌它、B 段是它自己的心聲。文化評論人朱耀偉後來把《卉》視為香港粵語概念專輯的濫觴。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5406c4c2-348b-4199-8ff7-faa6e94e4003?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5406c4c2-348b-4199-8ff7-faa6e94e4003&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1442597535&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=724703745&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%8D%89",
+     "https://musicbrainz.org/release-group/5406c4c2-348b-4199-8ff7-faa6e94e4003"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/69/d8/70/69d870f1-c56f-4773-50a7-dce24a093026/mzaf_17477384832890943524.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442597535",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "甄妮",
+   "album": "秋歌",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 506004e5-6174-40be-a371-1d93840d11de。回問確認：title「秋歌」、artist-credit「甄妮」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 1 個 release（1976，國別／status／廠牌皆空）。藝人 MBID d394677d-d434-4cfe-ab85-0d7eaea9dcbd（HK、1953-02-20），以分頁全列 51 個 RG。刻意不釘：798b87c4-3431-4957-be72-bcfda55cadf3《奇妙的爱》(1976 同年，MB 簡體登錄)、6f47a331-a7cc-4d0b-a963-de233a691a8e《變色的太陽：全部原聲帶插曲／不一樣的愛》(1976-03 Soundtrack)、22453ec1-c92b-46eb-a4be-324d7d64c7bf《信不信由你 / 奇妙的愛》(無年份、與前者內容重疊)、ab8ebe52-337e-44af-a033-5fa75d0e2280《满山花开一片情》(1977 簡體登錄)、52340aa3-b852-41af-933b-bf0420da4bd5《誓言》(1972，池中已有)。",
+    "rgMbid": "506004e5-6174-40be-a371-1d93840d11de",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9a/bc/99/9abc990e-a514-8c00-749c-352f5c52c7db/cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1864921890",
+    "note": "試聽探測釘定的 collectionId 1864921890（tw）：甄妮 — 秋歌"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二軌〈楓葉情〉，就是兩年前她跟鳳飛飛爭到打起來的那首。十一軌平均 3 分 06 秒，最長的〈心有千千結〉3 分 45 秒、最短的〈愛無邊情無限〉2 分 40 秒。曲目集中在她 1972 年轉簽海山唱片之後與劉家昌合作的那一批國語電影歌與抒情曲，〈誓言〉與點題曲〈秋歌〉是那一段的代表。這張碟只留下 1976 這個年份，廠牌與媒材都沒有登錄下來。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/506004e5-6174-40be-a371-1d93840d11de?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=506004e5-6174-40be-a371-1d93840d11de&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1864921890&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+     "https://musicbrainz.org/ws/2/release-group?artist=d394677d-d434-4cfe-ab85-0d7eaea9dcbd&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/506004e5-6174-40be-a371-1d93840d11de"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/a9/db/a0a9dbfa-f39e-6e8e-0223-43b628ebdcfd/mzaf_363535563389949944.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1864921890",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "甄妮",
+   "album": "海上花",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 299f6353-ae68-4891-b446-412c4f88dfce。回問確認：title「海上花」、artist-credit「甄妮」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 1 個 release（1986 TW、Official、喜瑪拉雅 HPR-7508）。藝人 MBID d394677d-d434-4cfe-ab85-0d7eaea9dcbd，名下 51 個 RG。刻意不釘：91729a37-741a-4e53-8456-d2786e823183《海上花》（1986 EP、Sony Music，同名同年的雙胞胎，已回問確認 primary-type 是 EP）、8e16aa47-5f76-4a10-b654-ea719f08a73c《新曲精選珍藏版》(1987 Compilation)、2634766f-e405-47ad-ac36-ce253bf7078f《射雕英雄傳》(1983，與羅文的對唱盤，MB 同時掛兩人)、8549dd1f-3786-454c-ab65-42460e296be8《留下我美梦》(1986 同年、簡體登錄)。",
+    "rgMbid": "299f6353-ae68-4891-b446-412c4f88dfce",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/CxoFrGXGqxQNJDFENCA_89qHDQt5qV7XU46qwCmfuro/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mzgw/NzY1LTE3MDQyODgz/NzMtMzQ1Mi5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "29380765"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 38,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首歌四個題目帶著愛情，中間夾一首〈今天是星期天〉。〈愛情印花〉〈無情愛情〉〈愛情騙子〉與〈遊戲結束時〉是那四個，另有兩個具體物件題〈打火機〉與〈舊電影〉。放在第 1 軌的點題曲〈海上花〉是羅大佑寫的電影主題曲，隔年入圍香港電影金像獎最佳電影主題曲；同一年她辦了十場《再見15年演唱會》，之後赴美生產退隱。碟是 1986 年喜瑪拉雅發行的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/299f6353-ae68-4891-b446-412c4f88dfce?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=299f6353-ae68-4891-b446-412c4f88dfce&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+     "https://itunes.apple.com/search?term=%E7%94%84%E5%A6%AE%20%E6%B5%B7%E4%B8%8A%E8%8A%B1&country=tw&media=music&entity=song&limit=25",
+     "https://itunes.apple.com/lookup?id=320005684&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=d394677d-d434-4cfe-ab85-0d7eaea9dcbd&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/299f6353-ae68-4891-b446-412c4f88dfce"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "徐小鳳",
+   "album": "風雨同路",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fe2480d4-6a90-429e-9553-08206beda28e。回問確認：title「風雨同路」、artist-credit「徐小鳳」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official（1978 HK CBS/Sony CBA 101、1978 HK CBS/Sony、1978 MY CBS/Sony、2011-03-21 HK Sony Music 88697849752、2016 HK Sony Music 88985333542）。藝人 MBID 21556778-2609-4cd1-a8ab-550157594190（HK、1949），以分頁全列 57 個 RG。刻意不釘：e8b5bc7d-f820-4631-bfa6-fc493abeac22《大亨》(1978 同年)、840edcc3-5b91-442d-81f1-7f1d96c7fe2b《夜風中》(1979)、fad8c475-caa8-48d0-907d-32df78d614bf《77第一屆金唱片精選》(1977)、c47af99b-38be-4dd6-b2ca-7b4280ede756《新曲與精選》(1981 Compilation)、350bf9ef-0267-39eb-b4ef-33c0a90c8c5f《新曲與精選》(1989 Compilation，與前者同名不同年)。",
+    "rgMbid": "fe2480d4-6a90-429e-9553-08206beda28e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fe2480d4-6a90-429e-9553-08206beda28e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 62,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二軌三十二分鐘，最短的〈讀書郎〉只有一分四十七秒。十二首平均只有 2 分 41 秒，另有〈賣湯丸〉〈飛躍在我心〉〈500步〉三首不到兩分半，最長的〈真金那怕火〉也才 3 分 36 秒。曲源以改編日本與歐美流行曲為主，曲名卻一律換成廣東話的市井意象——〈讀書郎〉〈小癩麻〉〈賣湯丸〉〈齊上小山崗〉。她的女低音在這批 1978 年的錄音裡壓得很低，「小白光」這個外號就是這麼來的。這是她轉投新力後的首張專輯，甫上市便售出超過廿萬張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fe2480d4-6a90-429e-9553-08206beda28e?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=fe2480d4-6a90-429e-9553-08206beda28e&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=457366030&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+     "https://musicbrainz.org/ws/2/release-group?artist=21556778-2609-4cd1-a8ab-550157594190&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/fe2480d4-6a90-429e-9553-08206beda28e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/99/59/429959f9-6845-422e-617a-f06a2e2b5a31/mzaf_6014780785836475303.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "457366030",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "徐小鳳",
+   "album": "每一步",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 798e4677-1efd-458f-8cd5-f230334ea833。回問確認：title「每一步」、artist-credit「徐小鳳」、first-release-date 1986、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1986 HK Polydor 827 902-1／827 902-2／827 902-4、1999-05-01 HK Polydor 827 902-2(X)、2004 HK Polydor 827902-2B、2015-04-22 HK Universal Music Hong Kong 888 824-9）。藝人 MBID 21556778-2609-4cd1-a8ab-550157594190，名下 57 個 RG。刻意不釘：54f69e39-5254-3515-bf08-099a080f4b7e《徐小鳳 Paula》(1986 同年)、5ca37536-02be-401d-bef6-f6eb5a85b431《徐小鳳》(1985 同名系列)、95b9004b-a7f9-4fbb-ac61-0de429692989《金曲精選》(1986 Compilation)、0a2e5836-187e-42c8-aa76-6a05195673d7《星輝燦爛徐小鳳》(1987 Compilation)、3bab8359-a4d3-46bd-a0fe-4c7e368a9937《全新歌集3》(1985，池中已有)、d3352470-51fb-4be7-8a10-7e8af267f26b《秋水伊人》(1984，與本批 a 組龔秋霞那張同名，不同藝人)。",
+    "rgMbid": "798e4677-1efd-458f-8cd5-f230334ea833",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/798e4677-1efd-458f-8cd5-f230334ea833/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 269,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "先出單曲〈冬〉，隔年才把它收進碟裡，排在第十軌。〈冬〉是 1985 年她加盟寶麗金時先灌的一首，蔡國權包辦曲詞。十二軌平均 4 分 04 秒，最長的〈歲月（逝如風）〉4 分 50 秒、最短的〈緣來緣去〉3 分 14 秒——同一位歌手八年前那張《風雨同路》平均才 2 分 41 秒，每首歌長了將近一分半。前四軌就把主打排完：〈一臉紅霞〉〈婚紗背後〉〈每一步〉〈城市足印〉，後兩者分別是無綫劇《流氓大亨》的片尾曲與主題曲。這張 1986 年的碟獲白金唱片。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/798e4677-1efd-458f-8cd5-f230334ea833?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=798e4677-1efd-458f-8cd5-f230334ea833&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443349186&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+     "https://musicbrainz.org/ws/2/release-group?artist=21556778-2609-4cd1-a8ab-550157594190&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/798e4677-1efd-458f-8cd5-f230334ea833"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/15/09/d8150981-7e91-b014-caaf-42fd6b952e31/mzaf_16314691480224610045.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443349186",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "梅艷芳",
+   "album": "心債",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 31ca6d61-5141-47b6-a38b-1dbde8177dcf。回問確認：title「心債」、artist-credit「梅艷芳」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 8 個 release（1982 HK 華星 CAL-02-1003／CAL-02-1003C／CD-04-1003 Official、2015 HK 華星 EALP009 Official、2018-06-29 HK 華星 EACD913 有 Official 與 Withdrawn 各一筆）。藝人 MBID 34245089-97eb-4ebb-8170-978a74dc1cfc（HK、1963-10-10），以分頁全列 55 個 RG。刻意不釘：935bb777-6c70-452d-b2f4-37f8b1fcd8c1《赤色梅艷芳》(1983，池中已有)、4eb77875-5d25-4cf2-97cb-14d5f6ade010《飛躍舞台》(1984，池中已有)、0a54ad88-dcc4-4099-abc4-24c7bb529aba《壞女孩》(1985，池中已有)、393dc637-7785-486a-b011-ffc0488d56e6《百變梅艷芳：烈焰紅唇》(1988，池中已有《烈焰紅唇》1987，同碟異寫)、8d121c9d-f67c-3bce-828d-1df52635b08e／a8437204-1c87-4e44-b067-923068dfcfef／81f215cc-dc79-44b0-bbb3-fc9793eaf18a／87ddd5d1-3eaa-4c61-b343-42a493a785c7／c45f5e9e-ba38-4af2-92ac-a73faabf26bf 五個純《梅艷芳》同名 RG（無法從盤名分辨，全部不釘）。",
+    "rgMbid": "31ca6d61-5141-47b6-a38b-1dbde8177dcf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/31ca6d61-5141-47b6-a38b-1dbde8177dcf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 115,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二軌裡有六首拍了音樂錄影帶。點題曲〈心債〉是 1982 年無綫劇《香城浪子》的主題曲，顧嘉煇作曲、黃霑填詞，也是梅艷芳的出道歌曲；它 2 分 52 秒、放在第 1 軌，是全碟第三短的一首，電視劇主題曲的長度規格。十二軌平均 3 分 11 秒，落差卻很大，最長的〈莫問起〉4 分 02 秒，收尾的〈過河田雞〉只有 2 分 12 秒。這是她的首張粵語錄音室專輯，人聲還沒有後來那種厚度，是十九歲的聲音。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/31ca6d61-5141-47b6-a38b-1dbde8177dcf?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=31ca6d61-5141-47b6-a38b-1dbde8177dcf&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=892647981&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%BF%83%E5%82%B5",
+     "https://musicbrainz.org/ws/2/release-group?artist=34245089-97eb-4ebb-8170-978a74dc1cfc&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/31ca6d61-5141-47b6-a38b-1dbde8177dcf"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a7/c4/7f/a7c47fba-04bd-ca90-b2ed-e9745140ee40/mzaf_9708051734661263725.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "892647981",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "梅艷芳",
+   "album": "淑女",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0d8967c9-0e3d-45bd-b92e-c3921cb7821a。回問確認：title「淑女」、artist-credit「梅艷芳」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 3 個 release 全 Official（1989 HK 華星 CAL-04-1079、1989 HK 華星 CD-04-1079、2018-08-24 HK 華星 EACD928）。藝人 MBID 34245089-97eb-4ebb-8170-978a74dc1cfc，名下 55 個 RG。刻意不釘：729132bf-952d-4823-ab39-237dd8b30d30《In Brasil》(1989-09 同年)、153910f8-8bcf-3cfe-abb0-1c1b448b0e90《封面女郎》(1990)、dcc385ce-f768-431e-8149-9cf5f5eaa7ec《百變梅艷芳再展光華87–88演唱會》(1987-12 Live)、b068282a-ce4d-43f2-95d8-8bc28af32b07《百變梅艷芳夏日耀光華演唱會》(1990 Live)、31ca6d61-5141-47b6-a38b-1dbde8177dcf《心債》(1982，本批另立一卡)。",
+    "rgMbid": "0d8967c9-0e3d-45bd-b92e-c3921cb7821a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0d8967c9-0e3d-45bd-b92e-c3921cb7821a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 172,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首歌全部是本地原創，1989 年除了樂隊沒幾張碟做得到。十軌平均 4 分鐘，最長的〈傲慢〉4 分 56 秒、最短的〈戀愛Part-Time〉3 分 06 秒，分佈很平均，一首短曲都沒有。編排把點題曲放第 1 軌，兩首最長的〈傲慢〉與〈黑夜的豹〉分別壓在第 2 與第 6 軌，形成兩個重心；曲名的取向恰好與碟名相反，〈黑夜的豹〉〈戀愛Part-Time〉〈一舞傾情〉講的都不是淑女。這是梅艷芳的第十二張錄音室專輯，1989 年 2 月 2 日發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/0d8967c9-0e3d-45bd-b92e-c3921cb7821a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=0d8967c9-0e3d-45bd-b92e-c3921cb7821a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=892872044&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E6%B7%91%E5%A5%B3_(%E5%B0%88%E8%BC%AF)",
+     "https://musicbrainz.org/ws/2/release-group?artist=34245089-97eb-4ebb-8170-978a74dc1cfc&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/0d8967c9-0e3d-45bd-b92e-c3921cb7821a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d9/92/c7/d992c78e-1111-e03b-e92a-4c39c1b5f7fa/mzaf_8546237538567618172.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "892872044",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "譚詠麟",
+   "album": "忘不了您",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5929fddc-b470-4ea9-a64d-c34672a0a8a2。回問確認：title「忘不了您」、artist-credit「譚詠麟」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 7 個 release 全 Official（1981 HK Philips 7237 223、1989 HK Philips 836 891-2 兩筆、1999 HK Philips 836 891-2(X)、2003-10-21 HK Philips 836 891-2A、無日期 XW）。藝人 MBID 52f243b5-cca7-4ba5-b32e-125096c7646e（HK、1950-08-23），以 release-group?artist=…&limit=100&offset= 分頁全列 191 個 RG。刻意不釘：7a3c1fbe-89ec-45d0-9c96-4ede56317eb9《愛到你發狂》(1979)、9a8e2ddf-1f7a-47dd-93cf-49033d0bb7d6《反斗星》(1979-02-20)、937f2e8e-6a6b-404d-ac45-e2c664b33831《彈起來！唱起來！／尋找》(1980-12-25)、70638dca-dc0a-41af-8127-121cb611fa43《你的凝望》(1981-10 同年另一張)、b8399dc7-28bb-4932-9495-776aef67b427《愛人·女神》(1982-04)。",
+    "rgMbid": "5929fddc-b470-4ea9-a64d-c34672a0a8a2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5929fddc-b470-4ea9-a64d-c34672a0a8a2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 220,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "點題曲改編自五輪真弓的〈恋人よ〉。這張 1981 年的碟共十一軌，平均 3 分 33 秒，兩首最短的快歌〈想將來〉2 分 36 秒與〈尋樂真啱數〉2 分 28 秒分別放在第 1 與第 6 軌當節奏點，點題曲 3 分 57 秒壓在第 7 軌、後面接上同樣近四分鐘的〈愛上您〉，形成全碟的重心。〈小風波〉則改編自 Air Supply 的〈All Out of Love〉。剛出道的林敏驄在這裡寫了三首，全碟由關維麟監製。這是譚詠麟的第三張粵語專輯，取得四白金的成績。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5929fddc-b470-4ea9-a64d-c34672a0a8a2?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5929fddc-b470-4ea9-a64d-c34672a0a8a2&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1395160255&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%BF%98%E4%B8%8D%E4%BA%86%E6%82%A8",
+     "https://musicbrainz.org/ws/2/release-group?artist=52f243b5-cca7-4ba5-b32e-125096c7646e&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/5929fddc-b470-4ea9-a64d-c34672a0a8a2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/84/ec/ca84ecdb-5f2c-d00e-7e23-ce0b9cb08741/mzaf_7974090386088499877.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1395160255",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "譚詠麟",
+   "album": "第一滴淚",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4fe67513-f2f0-4fb6-93d0-88a9ffd854c7。回問確認：title「第一滴淚」、artist-credit「譚詠麟」、first-release-date 1986-07-18、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1986 HK Philips 826 908-1／826 908-4、1986-07-18 HK Philips 826 908-2、1999 HK Philips 826 908-2(X)、2017-04-25 HK Universal Music Hong Kong 886060-5、2019 HK Philips 889 778-9）。藝人 MBID 52f243b5-cca7-4ba5-b32e-125096c7646e，名下 191 個 RG。刻意不釘：31cf60b3-d04e-4274-9c06-9ee0fd6ddcb6《Fantasy》(1986-12-05)、59082431-f7ac-4910-9b3d-dd47f7ad29ad《サンダーアーム》(1986-09 日本盤)、ae365225-ad01-4e4e-818a-b7ac61dc27fb《譚詠麟’86萬眾狂歡演唱會》(1986 Live)、7f89a88d-d3e3-4854-8bfc-f118ffd5a8ad《暴風女神Lorelei》(1985，池中已有)、4e79de6a-0f68-4743-85ed-11ebd9f1cc59《最佳12″》(1987 Remix)。",
+    "rgMbid": "4fe67513-f2f0-4fb6-93d0-88a9ffd854c7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4fe67513-f2f0-4fb6-93d0-88a9ffd854c7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 296,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩首公益歌一長一短，剛好落在全碟的兩端。〈和平之歌〉是 1986 國際和平年音樂會的主題曲，也是全碟最長的一首；〈衝線〉是同年的禁毒宣傳歌，2 分 33 秒，是全碟最短。十二軌平均 4 分 15 秒，點題曲 4 分 03 秒排第 2 軌，收尾的〈無言感激〉5 分 02 秒是第二長。這張第十一張粵語專輯的班底也換了：日本作曲家芹澤廣明的份量減到兩首，達明一派的劉以達首次被請進來，〈永不想你〉由林敏驄包辦曲詞、〈珍重〉由黃霑填詞。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4fe67513-f2f0-4fb6-93d0-88a9ffd854c7?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4fe67513-f2f0-4fb6-93d0-88a9ffd854c7&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443359181&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E6%BB%B4%E6%B7%9A",
+     "https://musicbrainz.org/ws/2/release-group?artist=3ac59c53-a679-49c0-9904-ef9df0e4e93b&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/ws/2/release-group?artist=52f243b5-cca7-4ba5-b32e-125096c7646e&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/4fe67513-f2f0-4fb6-93d0-88a9ffd854c7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/94/e9/c394e9b9-5d99-1fae-13db-d79537710c26/mzaf_16555032641938776275.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443359181",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "張國榮",
+   "album": "為妳鍾情",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c5a49dce-3c91-306b-a6ab-5bd18e659f28。回問確認：title「為妳鍾情」、artist-credit「張國榮」、first-release-date 1985-05-14、primary-type Album、secondary-types 空、轄下 7 個 release 全 Official（1985-05-14 HK 華星 CD-03-1023、2004-08-17 HK 華星 CD-03-1339、2014-07-01 XW 華星、2015 HK 華星 EASACD019、2018-06-29 HK 華星 EACD919 等）。藝人 MBID d780609b-eca5-4277-a0c2-801cc0404764（HK、1956-09-12），以分頁全列 117 個 RG。刻意不釘：56227a8b-11f3-4b0a-b4e7-6bd1ce1768a8《Stand Up》(1986)、67675c2d-141e-407c-b8fe-4a80a2b7724a《張國榮》(1986-10-01，同名 RG)、21ea9581-ec6c-4573-ac45-4f59f0bde7d2《英雄本色當年情》(1986-11-26)、714ee9a3-ee18-4598-9414-47aa724984a8《張國榮的一片痴…》(1983)、d5327e2a-6d7b-3084-9850-53fb3aced850《Summer Romance ’87》(1987，池中已有)、f56e65e2-d8bc-4b93-9b3d-fd68c20fbf7a《風繼續吹》(1983，池中已有)。",
+    "rgMbid": "c5a49dce-3c91-306b-a6ab-5bd18e659f28",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c5a49dce-3c91-306b-a6ab-5bd18e659f28/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 584,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一版是限量白膠，封面印著他的英文親筆簽名。這開了香港有顏色唱片的先例，第二版才改發黑膠，盒帶也是首批黑色、其後才有白色。十軌平均 3 分 54 秒，最長的〈心中情〉5 分 01 秒是唯一破五分鐘的一首；編排快慢交錯，開場的〈不羈的風〉與〈第一次〉是快歌，第 3 到第 6 軌轉入慢板，點題曲排在第 6 軌。全碟一半歌曲改編自日本歌，包括主打的〈不羈的風〉。這是張國榮的第六張錄音室專輯，1985 年 5 月 14 日發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/c5a49dce-3c91-306b-a6ab-5bd18e659f28?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=c5a49dce-3c91-306b-a6ab-5bd18e659f28&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=892601595&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%82%BA%E5%A6%B3%E9%8D%BE%E6%83%85_(%E5%BC%B5%E5%9C%8B%E6%A6%AE%E5%B0%88%E8%BC%AF)",
+     "https://musicbrainz.org/ws/2/release-group?artist=d780609b-eca5-4277-a0c2-801cc0404764&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/c5a49dce-3c91-306b-a6ab-5bd18e659f28"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/ac/7c/93ac7c9a-c86e-9a03-bf29-9ffc0a1b980b/mzaf_3655084051751525959.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "892601595",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "張國榮",
+   "album": "紅",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 28d2dacf-9c22-3d58-bb0f-34fd7e440b5b。回問確認：title「紅」、artist-credit「張國榮」、first-release-date 1996-11-26、primary-type Album、secondary-types 空、轄下 11 個 release 全 Official（1996 MY Rock Records ROC 5132、1996-11-26 JP 滾石唱片 RJOD-5132、2014 HK Rock Records RK2HD010、2022-04-01 HK Rock Records RSACD029、AL 與 XW 各一筆等）。藝人 MBID d780609b-eca5-4277-a0c2-801cc0404764，名下 117 個 RG。刻意不釘：ca8f2049-3762-3773-b1b9-1c73c8bb413e《寵愛》(1995，復出後的第一張，但是電影歌曲集)、3f05aae6-f973-39b1-b5d4-c714e52bb395《Printemps》(1998)、53251178-ad82-4974-8b87-b9bb8d05389d《陪你倒數》(1999-10-13)、a585fae3-b932-40d0-b66e-dd865fb08b2a《張國榮跨越97演唱會》(1997 Live)、9d88925a-011f-4e20-8011-072d0ce71fae《Revisit》(2020 Remix)。",
+    "rgMbid": "28d2dacf-9c22-3d58-bb0f-34fd7e440b5b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/28d2dacf-9c22-3d58-bb0f-34fd7e440b5b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1786,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一軌只有十五秒的序曲，其餘十首才是碟的內容。扣掉它，十首歌平均 4 分 31 秒，最長的〈怪你過份美麗〉4 分 57 秒與〈偷情〉4 分 56 秒幾乎並列，最短的〈還有誰〉3 分 26 秒，收尾的〈紅〉4 分 46 秒。軌數其實還有另一種：香港版十一軌，日韓與新馬版十二軌，多出來的那首叫〈Boulevard of Broken Dreams〉，夾在序曲與〈偷情〉之間。這是張國榮的第二十張錄音室專輯，1996 年 11 月 26 日由滾石唱片發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/28d2dacf-9c22-3d58-bb0f-34fd7e440b5b?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=28d2dacf-9c22-3d58-bb0f-34fd7e440b5b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1671720009&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%B4%85_(%E5%BC%B5%E5%9C%8B%E6%A6%AE%E5%B0%88%E8%BC%AF)",
+     "https://musicbrainz.org/ws/2/release-group?artist=d780609b-eca5-4277-a0c2-801cc0404764&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/28d2dacf-9c22-3d58-bb0f-34fd7e440b5b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/e8/c0/abe8c079-db72-d4bb-b9a8-2bcc85f1a5a1/mzaf_14210260572597221050.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1671720009",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Beyond",
+   "album": "亞拉伯跳舞女郎",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 451772ab-2a07-4134-ba00-4a6b38205f75。回問確認：title「亞拉伯跳舞女郎」、artist-credit「Beyond」、first-release-date 1987-07、primary-type Album、secondary-types 空、轄下 5 個 release（1987-07 HK Kinn’s Music KN 1-1 Official、1987-07 HK Kinn’s Music KN 1-4 Official、1989 HK Cinepoly Records CP-5-002K Official、1993-08-26 JP Fun House FHCF-2127 Promotion、一筆 Pseudo-Release）。藝人 MBID d84d02ad-d74c-4227-8073-6f13a039cfac（HK、1983），以分頁全列 118 個 RG。刻意不釘：59da8517-b16c-4e10-b1e7-28c59b71e80d《永遠等待》(1987 EP)、14c2e2d5-385f-4970-bae0-0de7e461f123《再見理想》(1986，池中已有)、c00ff47a-9c4b-314c-8ea9-75f61be09063《秘密警察》(1988，池中已有)、5c203d28-f54f-4f87-92a6-9147627a9cc8 與 b9131b90-7e03-456f-ba44-dbbce6fbf302 兩個《光辉岁月-二十周年精选》(簡體登錄的後世精選)。",
+    "rgMbid": "451772ab-2a07-4134-ba00-4a6b38205f75",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/451772ab-2a07-4134-ba00-4a6b38205f75/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 301,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封面在新加坡拍，唱的卻是中東：沙丘、寶藏、跳舞女郎。前三軌〈東方寶藏〉〈亞拉伯跳舞女郎〉〈沙丘魔女〉一次把這個主題鋪滿，中段轉入抒情與敘事，尾段的〈孤單一吻〉〈玻璃箱〉〈水晶球〉是全碟最長的一組——十首裡有六首超過四分鐘，在 1987 年的香港唱片裡是樂隊而不是流行歌手的規格。軌數還分兩種：黑膠十軌，卡帶與其後的 CD 十二軌，多出來的是〈昔日舞曲〉與〈新天地〉。這是 Beyond 的首張粵語黑膠唱片錄音室專輯，全碟作曲黃家駒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/451772ab-2a07-4134-ba00-4a6b38205f75?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=451772ab-2a07-4134-ba00-4a6b38205f75&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443334744&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E4%BA%9E%E6%8B%89%E4%BC%AF%E8%B7%B3%E8%88%9E%E5%A5%B3%E9%83%8E",
+     "https://musicbrainz.org/ws/2/release-group?artist=d84d02ad-d74c-4227-8073-6f13a039cfac&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=1443318407&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/451772ab-2a07-4134-ba00-4a6b38205f75"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/f5/83/1df58385-e627-0eb5-de9d-70a2cdff7ecd/mzaf_17087809355983898982.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443334744",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Beyond",
+   "album": "現代舞台",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b。回問確認：title「現代舞台」、artist-credit「Beyond」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official（1988 HK Kinn’s Music KN4-1、1989 JP Fun House FHCF 2128、1989 HK Cinepoly Records CP-5-001K、2007-06-04 HK Cinepoly 1735918、2014-10-24 HK Cinepoly 8897958）。藝人 MBID d84d02ad-d74c-4227-8073-6f13a039cfac，名下 118 個 RG。刻意不釘：f4c0f6d5-0299-4e77-9a30-b7f2c9eafb30《Beyond Live 88 / 黑色迷牆電影原聲音樂》(1988，secondary-types [Soundtrack])、24cb5b43-aeba-4615-869d-bc447cc0a32e《Beyond Live 88》(1988，primary-type 空)、c00ff47a-9c4b-314c-8ea9-75f61be09063《秘密警察》(1988-09-06，池中已有)、54812e59-7772-4d96-a764-6d408879cadb《4拍4》(1989-04 EP)、44946a44-e6b6-49d8-b661-ff1adbeba139《Beyond IV》(1989-07-11)、341e77bf-93b5-4d8d-9fc6-eef39ec72a63《真的見証》(1989-12)。",
+    "rgMbid": "c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 742,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第六軌只有四十秒，沒有人聲，接在〈冷雨夜〉後面。那段器樂等於把 A 面收在一段餘韻裡。扣掉它，十首歌平均 4 分 22 秒，最長的〈城市獵人〉5 分 11 秒，最短的是〈衝上雲霄〉。與前一張《亞拉伯跳舞女郎》相比，曲目長度的分佈接近，主題卻整個換掉了：中東幻境變成城市場景，〈午夜流浪〉〈城市獵人〉〈現代舞台〉講的都是同一座城，前後只隔一年。這是 Beyond 的第二張粵語錄音室專輯，1988 年由 Kinn's Music 出品、寶麗金發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443322227&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E8%88%9E%E5%8F%B0",
+     "https://musicbrainz.org/ws/2/release-group?artist=d84d02ad-d74c-4227-8073-6f13a039cfac&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=79668659&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/fb/c0/cafbc000-96b3-e698-54e7-9c36928f5c34/mzaf_9479984858909237260.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443322227",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Beyond",
+   "album": "繼續革命",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b2b3dfc3-d466-4ae7-9a11-4b352653760b。回問確認：title「繼續革命」、artist-credit「Beyond」、first-release-date 1992-08、primary-type Album、secondary-types 空、轄下 2 個 release 皆 Official（1992-08 HK Warner Music Hong Kong 4509 90222 2、1993-05-17 KR wea 4509-90222-1）。藝人 MBID d84d02ad-d74c-4227-8073-6f13a039cfac，名下 118 個 RG。刻意不釘：0209fdf6-a949-4acd-9c15-03fb5ff5f065《信念》(1992，國語版，曲目與本張大量重疊)、1d18abfd-6764-4a52-a0e4-0b44d9259187《超越》(1992-09-26，日語版)、529037a7-c231-4a0f-9f49-c56656d94e12《無盡空虛》(1992-12 EP)、1abe557f-e93e-4624-80fd-ac51c6086b14《光輝歲月》(1991 台版選輯)、aa6e12b8-9c21-364c-a938-c2634f561f77《Deliberate 猶豫》(1991，池中已有《猶豫》)、4f019b75-7e4f-3428-a2a7-0091661b201e《樂與怒》(1993，池中已有)、08575ef6-8e83-48cc-8136-e2f1e787954a《海闊天空》(1993，與《樂與怒》內容重疊的另一個發行品)。",
+    "rgMbid": "b2b3dfc3-d466-4ae7-9a11-4b352653760b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b2b3dfc3-d466-4ae7-9a11-4b352653760b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1549,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "喜多郎進來彈鍵盤；〈長城〉後來有粵語、國語、日語三個版本。十二軌平均 4 分 15 秒，開頭的〈長城〉4 分 50 秒與〈農民〉5 分 16 秒就是全碟第三長與第二長的兩首，中段用〈Bye-Bye〉與〈快樂王國〉兩首短曲調節，尾段的〈早班火車〉5 分 50 秒最長。〈長城〉的國語版收在《信念》、日語版收在《超越》，連同這張粵語盤三張同在 1992 年。這是 Beyond 的第八張粵語專輯，也是他們加盟華納、起行往日本發展之後交出的第一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b2b3dfc3-d466-4ae7-9a11-4b352653760b?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b2b3dfc3-d466-4ae7-9a11-4b352653760b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1705353849&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%B9%BC%E7%BA%8C%E9%9D%A9%E5%91%BD",
+     "https://musicbrainz.org/ws/2/release-group?artist=d84d02ad-d74c-4227-8073-6f13a039cfac&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=201570795&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/b2b3dfc3-d466-4ae7-9a11-4b352653760b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/b4/cd/b4b4cdfb-f0b4-ce40-e863-8e4afc1b9ea4/mzaf_10788892697087587899.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1705353849",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "關正傑",
+   "album": "天蠶變",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 633e3bd4-0ebc-3af5-a72c-431b6661d7c3。回問確認：title「天蠶變」、artist-credit「關正傑」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official（1979 HK Philips 7237 020、1979 HK Philips 7237 021、1999-05-01 HK Philips 546 176-2(X)／Universal Music Hong Kong 546 176-2(X)、2017-09-24 HK Universal Music Hong Kong 5793644、AF 一筆）。藝人 MBID 701e418e-c88c-4c31-875a-e6889f051f13（HK、1949-03-27），以分頁全列 38 個 RG。刻意不釘：7ba7ec5f-9393-4537-a6d7-3fbe7e66d8bb《天龍訣》(1979 同年)、0f95d5ba-8db4-4a85-bf83-a51c26728073《近代豪俠傳》(1979 同年)、72960abc-c74a-4de8-b7f3-46bfd03a3a55《變色龍》(1978)、b782b30e-e3b3-4ce6-ade6-6a1886c35f1b《天龙八部/怒海萍踪》(2015 Soundtrack、簡體登錄)、2e3d0b97-4c2c-4de7-b8c9-87ce5bb4ce19《關正傑演唱會》(1982 Live)。",
+    "rgMbid": "633e3bd4-0ebc-3af5-a72c-431b6661d7c3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/633e3bd4-0ebc-3af5-a72c-431b6661d7c3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 133,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一軌裡只有三首掛著那部六十集的武俠劇。第 1、4、10 軌是主題曲與兩首插曲，其餘八首是各自獨立的曲目，包括同時期也被別人唱過的〈舊事隨夢去〉與〈我要走天涯〉。十一首平均 3 分 26 秒，最長的〈月亮照高原〉3 分 57 秒、最短的〈相對無言〉2 分 32 秒；點題曲〈天蠶變〉3 分整、放在第 1 軌，是全碟第四短的一首，電視劇主題曲的長度規格。劇集是麗的電視的原創武俠劇，1979 年 7 月起在晚上八點的黃金時段連播，把單元劇逼出了那個時段。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/633e3bd4-0ebc-3af5-a72c-431b6661d7c3?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=633e3bd4-0ebc-3af5-a72c-431b6661d7c3&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1525692917&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%A4%A9%E8%A0%B6%E8%AE%8A_(%E9%9B%BB%E8%A6%96%E5%8A%87)",
+     "https://musicbrainz.org/ws/2/release-group?artist=701e418e-c88c-4c31-875a-e6889f051f13&limit=100&offset=0&fmt=json",
+     "https://itunes.apple.com/lookup?id=14936223&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/633e3bd4-0ebc-3af5-a72c-431b6661d7c3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/cc/e4/90cce402-e0db-0928-ca76-40d422fa7679/mzaf_4774344403730082208.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1525692917",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "仙杜拉",
+   "album": "啼笑因緣 / 好彩又到Sunday",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2414af2f-ede4-4281-9d6b-2fa1b29f4922。回問確認：title「啼笑因緣 / 好彩又到Sunday」、artist-credit「仙杜拉」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 個 release（1974 HK、Official、Crown Records CST-12-18）。藝人 MBID e8d3d003-ac14-4b50-88b8-8c29248e53a1（HK、1943-06-30），以 release-group?artist=…&limit=100&offset= 分頁確認名下只有這 1 個 RG。無對照組可列。",
+    "rgMbid": "2414af2f-ede4-4281-9d6b-2fa1b29f4922",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/fc/ad/7ffcadf4-fb5b-0e0c-16b3-41d70a3d2bfc/4715202900473.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1842862146",
+    "note": "試聽探測釘定的 collectionId 1842862146（tw）：仙杜拉 — Ti Xiao Yin Yuan"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "她不諳中文，灌這首歌之前先把歌詞拼成英文。找一個唱歐西流行曲的人來唱粵語小調是刻意的：顧嘉煇要的正是她那身西化形象，好扭轉大眾覺得粵語歌老土的印象。十四軌平均只有 2 分 34 秒，最長的〈相思淚〉3 分 32 秒、最短的〈賣唱姑娘〉只有 1 分 44 秒，是 1974 年一面七首的密度。第 7 軌是主題曲的純音樂版，收在 A 面末尾——盤名上那兩個曲名〈啼笑因緣〉與〈好彩又到Sunday〉，正是兩面各自的第一首。這是仙杜拉的首張粵語專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2414af2f-ede4-4281-9d6b-2fa1b29f4922?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=2414af2f-ede4-4281-9d6b-2fa1b29f4922&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1842862146&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E5%95%BC%E7%AC%91%E5%9B%A0%E7%B7%A3_(%E6%AD%8C%E6%9B%B2)",
+     "https://musicbrainz.org/ws/2/release-group?artist=e8d3d003-ac14-4b50-88b8-8c29248e53a1&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/2414af2f-ede4-4281-9d6b-2fa1b29f4922"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/8c/73/ba8c7399-f97d-db6d-9eca-fdb9f1ae0409/mzaf_7360693263634027088.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1842862146",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳慧嫻",
+   "album": "秋色",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c03f1ef1-159c-4b98-af98-db42644c253b。回問確認：title「秋色」、artist-credit「陳慧嫻」、first-release-date 1988-10、primary-type Album、secondary-types 空、轄下 5 個 release 全 Official（1988-10 HK Polydor 837 156-1、1988 HK Polydor 837 156-2、1988 HK Polydor 837 156-4、1999-05-01 HK Polydor 837 156-2(X)、2006-06-29 HK Polydor 170836-2）。藝人 MBID e45899a9-111b-4edc-9c78-d32b958dd03f（HK、1965-07-28），以分頁全列 68 個 RG。刻意不釘：1d5b7ccd-cba8-4073-b280-03b669394749《傻女》(1988 同年)、4bea07dc-9aa1-4cf3-8c43-99070e4fc357《傻女》(1988 Single，與前者同名)、4f352001-c478-4ab1-ad94-516d3717edee《嫻情》(1988，池中已有)、7af648f0-b900-4477-bcc4-0ce9dcd550f8《永遠是你的朋友》(1989，池中已有)、95eef15c-8728-4fdf-a0bd-b71d90e47986《Priscilla Remix》(1988 EP＋Remix)。",
+    "rgMbid": "c03f1ef1-159c-4b98-af98-db42644c253b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c03f1ef1-159c-4b98-af98-db42644c253b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 786,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "點題曲要到第七軌才出現，第五軌是法文歌的新混音。那一軌是〈Joe le taxi〉。十軌平均 3 分 56 秒，最長的〈印心〉4 分 51 秒、最短的〈大情人〉2 分 58 秒；短的幾首擺在頭尾附近，〈地球大追蹤〉開場、〈幾時再見?!〉收尾，中段第 2 到第 7 軌全部落在 3 分 39 秒到 4 分 31 秒之間。第 6 軌〈人生何處不相逢〉與第 7 軌的〈秋色〉連著出現，是全碟的重心。這是陳慧嫻的第六張粵語專輯，1988 年 10 月 21 日發行，拿下四白金。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/c03f1ef1-159c-4b98-af98-db42644c253b?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=c03f1ef1-159c-4b98-af98-db42644c253b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1442451967&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E7%A7%8B%E8%89%B2",
+     "https://musicbrainz.org/ws/2/release-group?artist=e45899a9-111b-4edc-9c78-d32b958dd03f&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/c03f1ef1-159c-4b98-af98-db42644c253b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/79/c0/5e/79c05e4d-2822-083f-cd6e-b9f76d3d15a9/mzaf_5615464850064835545.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442451967",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "太極",
+   "album": "沉默風暴",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bb40a46e-8d4b-4766-bea4-24415e4c61b9。回問確認：title「沉默風暴」、artist-credit「太極」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（1989 HK、Official、wea 2292-56863-2）。藝人 MBID fd800d52-1822-47e1-974e-b79efa720c35（HK、1984），以分頁全列 15 個 RG。刻意不釘：de3f4355-3f41-48d6-8ee2-8671d8ed4bc5《迷》(1986，池中已有)、d4551357-e0c3-4eed-8460-896550ccfbd3《想》(1988)、bfbe21d6-7a4b-498f-9ff2-2082fe0730db《TAICHI Ⅶ SEVEN》(1990-10-12)、32403141-9d15-417e-91f8-6655c1df0355《Taichi》(1985，同名團名的首張)、0ba9582e-6f24-4ac5-bf37-4b766c7d302a《一切為何》(1991)。",
+    "rgMbid": "bb40a46e-8d4b-4766-bea4-24415e4c61b9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/YJ6GW-FrR9Cm6Tq-sNBCpbrvMqypU37NC4txyzb5t2w/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzYz/NzA1LTE1MjE5NzIy/MjktODMyMC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "11763705"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 9,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首歌有四首是全隊一起寫的，比填詞人包辦的還多。〈通緝者〉〈亞基拉〉〈留住我吧〉〈我得到〉出自太極全體之手，御用填詞人因葵只占三首。原盤十軌一軌都沒有登錄長度，能引的只有兩首歌後來收進合輯的版本：〈留住我吧〉約 4 分 48 秒、〈沉默風暴〉約 4 分 21 秒，都超過四分鐘，是樂隊編制而不是流行歌手的長度。收尾的〈留戀〉與上一張《想》裡的〈留戀〉只是同名，旋律與歌詞都不同，這次由周禮茂作詞。這是太極的第五張粵語專輯，1989 年 8 月 9 日發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/bb40a46e-8d4b-4766-bea4-24415e4c61b9?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=bb40a46e-8d4b-4766-bea4-24415e4c61b9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://zh.wikipedia.org/wiki/%E6%B2%89%E9%BB%98%E9%A3%8E%E6%9A%B4",
+     "https://itunes.apple.com/search?term=%E5%A4%AA%E6%A5%B5%20%E7%95%99%E4%BD%8F%E6%88%91%E5%90%A7&country=tw&media=music&entity=song&limit=25",
+     "https://itunes.apple.com/lookup?id=372726812&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=fd800d52-1822-47e1-974e-b79efa720c35&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/bb40a46e-8d4b-4766-bea4-24415e4c61b9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "夏韶聲",
+   "album": "童年時",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2cf7f547-919d-4180-845b-0e7ba6146556。回問確認：title「童年時」、artist-credit「夏韶聲」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 2 個 release 皆 Official（1979 HK Bang Bang Records BBLP 7643、2003-09-10 HK 文志唱片 CD20760）。藝人 MBID 3d52318d-6045-406e-bc7b-d6d99fd66285（HK、1952-12-08），以分頁全列 23 個 RG。刻意不釘：b631929d-66e1-49df-9bd8-c40d8cdfd817《天堂夢》(1980)、40c5af32-5e4a-485f-a587-86b70cd23422《夏韶聲》(1983 同名)、468c5f9b-de74-43ec-b971-1aac8e86f60b《夏韶聲》(1985 同名)、dc8136b3-bbcd-4b47-9ed7-5dd14b2a8a36《说不出的未来》(1988，MB 簡體登錄)、b1e27202-6125-4ec4-9ac6-fc11f4bc220d《Danny Summer Best of Best》(無年份、primary-type 空)。",
+    "rgMbid": "2cf7f547-919d-4180-845b-0e7ba6146556",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/9JElR2cpke51FfDkWq0sPxqOeP6S0cHSPI2TZbF8f6Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTAx/ODQ2LTE1NTg1MzM5/MjEtMjQ5My5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "13101846"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 16,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五個曲名是粵語口語：現在大個仔、點解講粗口、口花花。十二軌裡另有一首直接寫當年的舞廳風潮〈油脂熱潮〉，其餘是〈童年時〉〈風〉〈金色的戀情〉這類抒情題。這是夏韶聲 1979 年的首張唱片，但不是他第一次進錄音室——1976 年麗風的合輯《Disco Time》裡已有他以 Dandy Ng 之名灌下的兩首英文歌。碟由 Bang Bang Records 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2cf7f547-919d-4180-845b-0e7ba6146556?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=2cf7f547-919d-4180-845b-0e7ba6146556&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://zh.wikipedia.org/wiki/%E5%A4%8F%E9%9F%B6%E8%81%B2",
+     "https://itunes.apple.com/search?term=%E5%A4%8F%E9%9F%B6%E8%81%B2%20%E7%AB%A5%E5%B9%B4%E6%99%82&country=tw&media=music&entity=song&limit=25",
+     "https://itunes.apple.com/lookup?id=201526994&country=tw&entity=album&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=3d52318d-6045-406e-bc7b-d6d99fd66285&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/release-group/2cf7f547-919d-4180-845b-0e7ba6146556"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "林子祥",
+   "album": "抉擇",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2740c392-9b89-47ac-abbc-53df1a848449。回問確認：title「抉擇」、artist-credit「林子祥」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 6 個 release 全 Official（1979 HK EMI EMGS-6051、1979 HK EMI TC-EMGS 6051、2002-12-23 IT、2016-09-21 HK EMI 8889819、2017-11-16 HK EMI 579 268-3、2017-11-16 HK EMI 579 313-1）。藝人 MBID d9e26c52-9cf4-4982-9ae6-fb6160f8df07（HK、1947-10-12），以分頁全列 100 個 RG。刻意不釘：56e2237f-ac94-48c8-8ba3-722b45465e1e《一個人》(1980)、82cff431-0d6f-4990-a96f-125cf012eaaf《摩登土佬》(1980)、3c04e48f-e7cb-4b55-acf9-50272c5127fd《各師各法》(1978)、6c6b6c05-70b5-4378-8bf5-e17b1b0f5e5d《活色生香》(1981，池中已有)、7dc070f4-66d8-307d-b7e5-6e4a69dd41f9《愛到發燒》(1984，池中已有)、338b71ec-3e75-4bce-a67d-72903afd1962《Teresa Carpio & Lam》(1978，與杜麗莎的合作盤)。",
+    "rgMbid": "2740c392-9b89-47ac-abbc-53df1a848449",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2740c392-9b89-47ac-abbc-53df1a848449/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 40,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首歌的詞只出自三個人：鄭國江六首、黃霑四首、盧國沾一首。曲的來源則分三條線——顧嘉煇寫的三首影視主題曲〈抉擇〉〈蝶變〉〈落難天使〉、三首外語改編〈成吉思汗〉〈我要走天涯〉〈YMCA好知己〉，以及他自己作曲的〈點解娶老婆〉。十二軌平均 3 分 24 秒，最長的〈漫漫長路上〉4 分 42 秒、最短的〈點解娶老婆〉只有 2 分 13 秒；點題曲 2 分 51 秒是全碟第三短的一首，主題曲的長度規格。這是林子祥在香港發行的第二張粵語專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2740c392-9b89-47ac-abbc-53df1a848449?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=2740c392-9b89-47ac-abbc-53df1a848449&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=724396766&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E6%8A%89%E6%93%87_(%E6%9E%97%E5%AD%90%E7%A5%A5%E5%B0%88%E8%BC%AF)",
+     "https://musicbrainz.org/ws/2/release-group?artist=d9e26c52-9cf4-4982-9ae6-fb6160f8df07&limit=100&offset=0&fmt=json",
+     "https://musicbrainz.org/ws/2/release?release-group=633e3bd4-0ebc-3af5-a72c-431b6661d7c3&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/release-group/2740c392-9b89-47ac-abbc-53df1a848449"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/df/23/23/df23236c-0ca8-b631-a239-3130324c4c10/mzaf_7849392139358469456.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724396766",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
