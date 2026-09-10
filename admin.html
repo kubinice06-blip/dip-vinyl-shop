@@ -1175,12 +1175,14 @@
       <div class="section">
         <div class="section-label">像素工坊（art/pixel/ · 與 Claude Code 共用的物件／場景／劇本）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">
-          自己畫像素物件 → 排成場景 → 寫成一句句對白，資料是 <code>art/pixel/</code> 的 JSON，Claude 讀得懂也改得動同一份。
-          用法與格式見 <b>PIXEL_STUDIO.md</b>。畫的東西先存在這個瀏覽器；做完到「🔁 交接」分頁推進 repo。<br>
-          內嵌畫布比較小，<b>建議另開新視窗</b>畫。
+          <b>繪圖器</b>（<code>pixel-editor.html</code>）＝ Aseprite 式的像素繪圖軟體，一格一格畫：圖層、動畫格、選取剪貼、色盤。<br>
+          <b>工坊</b>（<code>pixel-studio.html</code>）＝ 把畫好的物件排成場景、寫成一句句對白。兩邊共用同一份素材庫。<br>
+          資料是 <code>art/pixel/</code> 的 JSON，Claude 讀得懂也改得動同一份；用法與格式見 <b>PIXEL_STUDIO.md</b>。
+          畫的東西先存在這個瀏覽器；做完到工坊的「🔁 交接」分頁推進 repo。<b>畫圖請另開新視窗</b>，內嵌畫布太小。
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px;">
-          <a class="gbtn" href="pixel-studio.html" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;">↗ 另開新視窗</a>
+          <a class="gbtn gbtn-primary" href="pixel-editor.html" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;">🖌 開繪圖器（新視窗）</a>
+          <a class="gbtn" href="pixel-studio.html" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;">↗ 開工坊（新視窗）</a>
           <button class="gbtn" id="pixelReload">重新載入內嵌頁</button>
         </div>
         <iframe id="pixelFrame" title="像素工坊" style="width:100%;height:calc(100vh - 220px);min-height:620px;border:1px solid var(--line);background:#f4f2ec;"></iframe>

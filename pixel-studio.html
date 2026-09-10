@@ -17,10 +17,9 @@
   .modes button:last-child{ border-right:0; }
   .modes button.on{ background:var(--black); color:#fff; }
   #saveState{ margin-left:auto; color:var(--gray); font-size:10px; }
-  .app{ flex:1 1 auto; display:grid; grid-template-columns:190px 1fr 320px; min-height:0; }
+  .app{ flex:1 1 auto; display:grid; grid-template-columns:200px 1fr 320px; min-height:0; }
   .app.libhide{ grid-template-columns:0 1fr 320px; }
   aside{ background:var(--panel); border-right:1px solid var(--line); overflow:auto; padding:8px; }
-  #lib{ overflow:auto; }
   .app.libhide #lib{ display:none; }
   #side{ border-right:0; border-left:1px solid var(--line); }
   main{ min-width:0; min-height:0; overflow:hidden; position:relative; display:flex; flex-direction:column; }
@@ -46,54 +45,9 @@
   label.f.inl{ flex-direction:row; align-items:center; gap:4px; }
   input[type=text],input[type=number],select,textarea{ font-family:var(--mono); font-size:11px; padding:4px 6px; border:1px solid var(--line); background:#fff; color:var(--black); width:100%; }
   input[type=number]{ width:60px; }
-  input[type=range]{ width:90px; }
   textarea{ resize:vertical; min-height:48px; }
   .hint{ color:var(--gray); font-size:10px; line-height:1.7; }
   kbd{ font-family:var(--mono); border:1px solid var(--line); padding:0 3px; font-size:9px; background:#fff; }
-  /* ── 物件編輯器 ── */
-  .toolbar{ display:flex; gap:4px; align-items:center; flex-wrap:wrap; padding:6px 8px; border-bottom:1px solid var(--line); background:#fff; flex:0 0 auto; }
-  .toolbar .sep{ width:1px; height:20px; background:var(--line); margin:0 4px; }
-  .toolbar button.t{ font-family:var(--mono); font-size:11px; padding:5px 7px; border:1px solid var(--line); background:#fff; cursor:pointer; min-width:32px; }
-  .toolbar button.t.on{ background:var(--black); color:#fff; border-color:var(--black); }
-  .toolbar button.t.tg.on{ background:var(--gold); border-color:var(--gold); }
-  .toolbar label{ font-size:10px; color:var(--gray); display:flex; align-items:center; gap:3px; }
-  .toolbar input[type=number]{ width:48px; padding:3px 4px; }
-  .cv{ flex:1; min-height:0; position:relative; overflow:hidden; background:#dedbd3; }
-  #oc{ position:absolute; left:0; top:0; touch-action:none; cursor:crosshair; }
-  #oc.hand{ cursor:grab; } #oc.move{ cursor:move; }
-  .status{ display:flex; gap:14px; padding:4px 10px; font-size:10px; color:var(--gray); border-top:1px solid var(--line); background:#fff; flex:0 0 auto; }
-  .status b{ color:var(--black); font-weight:400; }
-  .stabs{ display:flex; border:1px solid var(--line); margin-bottom:8px; flex-wrap:wrap; }
-  .stabs button{ font-family:var(--mono); font-size:10px; font-weight:700; padding:5px 8px; border:0; border-right:1px solid var(--line); background:#fff; cursor:pointer; color:var(--gray); flex:1; }
-  .stabs button.on{ background:var(--black); color:#fff; }
-  .stab{ display:none; } .stab.on{ display:block; }
-  .prev{ background:repeating-conic-gradient(#e6e3db 0 25%,#fff 0 50%) 0 0/8px 8px; border:1px solid var(--line); overflow:hidden; display:flex; align-items:center; justify-content:center; height:120px; }
-  .prev canvas{ image-rendering:pixelated; }
-  .sw-wrap{ display:flex; flex-wrap:wrap; gap:3px; }
-  .sw{ width:22px; height:22px; border:2px solid #fff; outline:1px solid var(--line); cursor:pointer; position:relative; font-size:8px; line-height:18px; text-align:center; color:#fff; text-shadow:0 0 2px #000,0 0 2px #000; }
-  .sw.on{ outline:2px solid var(--black); }
-  .sw.clear{ background:repeating-conic-gradient(#ccc 0 25%,#fff 0 50%) 0 0/8px 8px; color:#444; text-shadow:none; }
-  .layers .ly{ display:flex; align-items:center; gap:4px; padding:3px 4px; cursor:pointer; border:1px solid transparent; }
-  .layers .ly.on{ border-color:var(--black); background:#fff; }
-  .layers .ly:hover{ background:#f1efe8; }
-  .layers .ly .nm{ flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
-  .layers .ly .ic{ cursor:pointer; opacity:.4; } .layers .ly .ic.on{ opacity:1; }
-  .layers .ly .th{ width:22px; height:22px; background:repeating-conic-gradient(#e6e3db 0 25%,#fff 0 50%) 0 0/6px 6px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
-  .layers .ly .th canvas{ max-width:100%; max-height:100%; image-rendering:pixelated; }
-  .frames{ display:flex; gap:4px; flex-wrap:wrap; }
-  .frames .fr{ width:46px; height:46px; border:1px solid var(--line); background:repeating-conic-gradient(#e6e3db 0 25%,#fff 0 50%) 0 0/8px 8px; display:flex; align-items:center; justify-content:center; cursor:pointer; overflow:hidden; position:relative; }
-  .frames .fr.on{ border:2px solid var(--black); }
-  .frames .fr canvas{ max-width:100%; max-height:100%; image-rendering:pixelated; }
-  .frames .fr i{ position:absolute; left:2px; top:0; font-style:normal; font-size:8px; color:var(--gray); }
-  .anch{ display:grid; grid-template-columns:repeat(3,22px); gap:2px; }
-  .anch button{ width:22px; height:22px; border:1px solid var(--line); background:#fff; cursor:pointer; font-size:9px; padding:0; }
-  .anch button.on{ background:var(--black); color:#fff; }
-  #help{ position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:50; display:none; align-items:center; justify-content:center; }
-  #help.on{ display:flex; }
-  #help .box{ background:#fff; padding:18px 22px; max-width:760px; max-height:85vh; overflow:auto; border:2px solid var(--black); }
-  #help table{ border-collapse:collapse; font-size:10px; }
-  #help td{ padding:2px 10px 2px 0; vertical-align:top; }
-  /* ── 場景／劇本／交接 ── */
   .stage-wrap{ padding:14px; flex:1; overflow:auto; }
   .stage{ position:relative; display:inline-block; box-shadow:0 0 0 2px var(--black); background:#3a2a18; line-height:0; }
   .stage canvas{ image-rendering:pixelated; display:block; }
@@ -131,18 +85,18 @@
 <header>
   <b>🎨 像素工坊</b>
   <nav class="modes">
-    <button data-m="obj" class="on">🖌 繪圖</button>
-    <button data-m="scene">🏞 場景</button>
+    <button data-m="scene" class="on">🏞 場景</button>
     <button data-m="story">🎬 劇本</button>
     <button data-m="io">🔁 交接</button>
   </nav>
+  <button class="b pri" id="openEditor" title="開啟像素繪圖器（Aseprite 式，一格一格畫）">🖌 繪圖器</button>
   <button class="b sm" id="libToggle" title="收合素材庫">☰ 素材庫</button>
-  <button class="b sm" id="helpBtn" title="快捷鍵（?）">? 快捷鍵</button>
   <span id="saveState">本機草稿</span>
 </header>
 <div class="app" id="app">
   <aside id="lib">
-    <h3>物件 <button class="b sm" id="libNewObj" title="新的像素物件">＋</button></h3>
+    <h3>物件 <button class="b sm" id="libNewObj" title="在繪圖器開一個新物件">＋</button></h3>
+    <div class="hint" style="margin:-2px 0 4px">點一下＝在繪圖器打開</div>
     <div id="libObjs"></div>
     <h3>場景 <button class="b sm" id="libNewScene">＋</button></h3>
     <div id="libScenes"></div>
@@ -151,12 +105,7 @@
   </aside>
 
   <main>
-    <section class="view on" id="v-obj">
-      <div class="toolbar" id="toolbar"></div>
-      <div class="cv" id="cv"><canvas id="oc"></canvas><div class="hint" id="objEmpty" style="padding:14px">左邊按「＋」開一個物件，或從交接分頁載入 <code>art/pixel/</code>。</div></div>
-      <div class="status" id="status"></div>
-    </section>
-    <section class="view" id="v-scene"><div class="stage-wrap"><div class="hint" id="sceneEmpty">左邊按「＋」開一個場景。</div><div class="stage" id="stage" hidden><canvas id="sc"></canvas><canvas id="sco" class="ov"></canvas></div><div class="hint" id="sceneRead" style="margin-top:8px"></div></div></section>
+    <section class="view on" id="v-scene"><div class="stage-wrap"><div class="hint" id="sceneEmpty">左邊按「＋」開一個場景。</div><div class="stage" id="stage" hidden><canvas id="sc"></canvas><canvas id="sco" class="ov"></canvas></div><div class="hint" id="sceneRead" style="margin-top:8px"></div></div></section>
     <section class="view" id="v-story">
       <div class="story-wrap">
         <div>
@@ -177,39 +126,25 @@
 
   <aside id="side"></aside>
 </div>
-<div id="help"><div class="box">
-  <div class="row"><b>快捷鍵</b><span style="flex:1"></span><button class="b sm" id="helpClose">關閉</button></div>
-  <table>
-    <tr><td><kbd>B</kbd> 筆　<kbd>E</kbd> 擦　<kbd>G</kbd> 填　<kbd>L</kbd> 線　<kbd>R</kbd> 框　<kbd>O</kbd> 圓　<kbd>S</kbd> 框選　<kbd>W</kbd> 魔術棒　<kbd>M</kbd> 移動　<kbd>I</kbd> 吸色　<kbd>H</kbd> 手</td></tr>
-    <tr><td><kbd>[</kbd> <kbd>]</kbd> 筆寬　<kbd>X</kbd> 左右對稱　<kbd>Y</kbd> 上下對稱　<kbd>D</kbd> 網點　<kbd>P</kbd> 像素完美　<kbd>Shift</kbd>＋拖 線／框 45°、正方、正圓</td></tr>
-    <tr><td><kbd>Ctrl+Z</kbd> 復原　<kbd>Ctrl+Shift+Z</kbd>／<kbd>Ctrl+Y</kbd> 重做　<kbd>Ctrl+A</kbd> 全選　<kbd>Ctrl+D</kbd> 取消選取　<kbd>Ctrl+Shift+I</kbd> 反選　<kbd>Delete</kbd> 清掉選取內容</td></tr>
-    <tr><td><kbd>Ctrl+C</kbd> <kbd>Ctrl+X</kbd> <kbd>Ctrl+V</kbd> 複製／剪下／貼上（可貼系統剪貼簿的圖片）　方向鍵：移動選取內容（沒選取＝整層），<kbd>Shift</kbd> ×8</td></tr>
-    <tr><td><kbd>滾輪</kbd> 縮放　<kbd>空白鍵</kbd>＋拖／中鍵拖 平移　<kbd>0</kbd> 縮到剛好　<kbd>1</kbd> 1:1　<kbd>+</kbd> <kbd>-</kbd> 縮放　<kbd>Tab</kbd> 顯示／隱藏格線　<kbd>,</kbd> <kbd>.</kbd> 上一格／下一格　<kbd>Alt+N</kbd> 新圖層</td></tr>
-    <tr><td>框選／魔術棒：<kbd>Shift</kbd> 加選、<kbd>Alt</kbd> 減選。魔術棒 <kbd>Ctrl</kbd> 選全圖同色。筆 <kbd>Alt</kbd>＋點 暫時吸色。</td></tr>
-  </table>
-</div></div>
 
-<script src="dip-pixel.js?v=2"></script>
+<script src="dip-pixel.js?v=3"></script>
 <script>
 'use strict';
+// 像素工坊：場景合成 ＋ 劇本 ＋ 與 Claude 的交接。
+// 逐像素繪圖已經搬到獨立的 pixel-editor.html（Aseprite 式版面），這裡只留「開繪圖器」。
 const P = window.DipPixel;
 const $ = id => document.getElementById(id), $$ = (s, r) => Array.from((r||document).querySelectorAll(s));
 const esc = s => String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
 const uid = () => Math.random().toString(36).slice(2,8);
-// 色盤字元池：一個顏色一個字元，'.' 與空白保留給透明
-const KEY_POOL = 'kgrbwednpoysctuvmabfhijlqxzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*+=?~;:<>|/\\{}[]()\'"`-_,';
 const hex6 = c => { c = String(c||'').trim(); const m = /^#([0-9a-f]{3})$/i.exec(c); return m ? '#' + m[1].split('').map(x=>x+x).join('') : c.slice(0,7); };
-const hexRGB = hx => { hx = hex6(hx).replace('#',''); return [parseInt(hx.slice(0,2),16)||0, parseInt(hx.slice(2,4),16)||0, parseInt(hx.slice(4,6),16)||0]; };
-const rgbHex = (r,g,b) => '#' + [r,g,b].map(v => clamp(Math.round(v),0,255).toString(16).padStart(2,'0')).join('');
 function download(name, blob){ const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 800); }
 function readFile(file, as){ return new Promise((res,rej)=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.onerror=rej; as==='text'? r.readAsText(file) : r.readAsDataURL(file); }); }
 function pickFile(accept, as){ return new Promise(res=>{ const i=document.createElement('input'); i.type='file'; i.accept=accept; i.onchange=async()=>{ const f=i.files[0]; res(f? {file:f, data: await readFile(f, as)} : null); }; i.click(); }); }
-function loadImg(src){ return new Promise(res => { const im = new Image(); im.onload = ()=>res(im); im.onerror = ()=>res(null); im.src = src; }); }
 async function copyText(t){ try{ await navigator.clipboard.writeText(t); toast('已複製到剪貼簿'); }catch(e){ prompt('瀏覽器不給剪貼簿權限，自己複製：', t); } }
 let _toastT; function toast(m){ let t=$('toast'); if(!t){ t=document.createElement('div'); t.id='toast'; t.style.cssText='position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:#111;color:#fff;padding:8px 14px;font-size:11px;z-index:99;border:1px solid var(--gold);transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent=m; t.style.opacity='1'; clearTimeout(_toastT); _toastT=setTimeout(()=>t.style.opacity='0', 2200); }
 
-// ═══════════════════════════ 資料：IndexedDB（大畫布 localStorage 撐不住）＋自動存 ═══════════════════════════
+// ═══════════ 資料：IndexedDB（與繪圖器共用同一份素材庫）═══════════
 const LS_KEY = 'dipPixelStudio_v1', IDB_NAME = 'dipPixelStudio', IDB_KEY = 'db';
 const idb = {
   open(){ return new Promise((res, rej) => { if(!window.indexedDB) return rej(new Error('no idb')); const r = indexedDB.open(IDB_NAME, 1); r.onupgradeneeded = () => r.result.createObjectStore('kv'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); }); },
@@ -217,36 +152,55 @@ const idb = {
   async set(k, v){ const d = await this.open(); return new Promise((res, rej) => { const tx = d.transaction('kv','readwrite'); tx.objectStore('kv').put(v, k); tx.oncomplete = () => res(); tx.onerror = () => rej(tx.error); }); },
 };
 let DB = P.emptyDB();
+let EDIT_ID = null;   // 最後一次在繪圖器打開的物件（交接分頁會一起打包）
 async function loadDB(){
   try{ const v = await idb.get(IDB_KEY); if(v && v.objects){ DB = v; return 'idb'; } }catch(e){}
   try{ const v = JSON.parse(localStorage.getItem(LS_KEY)); if(v && v.objects){ DB = v; return 'ls'; } }catch(e){}
   return 'empty';
 }
-let _saveT = null, _saving = false, _saveAgain = false;
+// 存檔：讀回最新的整份庫，只換自己這一頁改過的場景／劇本，避免蓋掉繪圖器剛存的物件
+let _saveT = null, _wq = Promise.resolve();
 function touch(){ $('saveState').textContent = '未存…'; clearTimeout(_saveT); _saveT = setTimeout(save, 500); }
-async function save(){
-  if(_saving){ _saveAgain = true; return; } _saving = true;
-  try{ await idb.set(IDB_KEY, DB); $('saveState').textContent = '本機草稿已存 ' + new Date().toLocaleTimeString('zh-TW',{hour12:false}); }
-  catch(e){ try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); $('saveState').textContent = '已存（localStorage）'; }catch(e2){ $('saveState').textContent = '⚠ 存不進去：' + (e2.message||e2); } }
-  _saving = false; if(_saveAgain){ _saveAgain = false; save(); }
+function save(){
+  clearTimeout(_saveT);
+  _wq = _wq.then(async () => {
+    let cur = null;
+    try{ cur = await idb.get(IDB_KEY); }catch(e){}
+    if(cur && cur.objects){
+      // 物件以儲存體為準（繪圖器那邊才是物件的主人），除非本頁匯入了更新的
+      for(const id in DB.objects){ const a = DB.objects[id], b = cur.objects[id];
+        if(!b || (a.updatedAt||0) > (b.updatedAt||0)) cur.objects[id] = a; }
+      cur.scenes = DB.scenes; cur.stories = DB.stories;
+      DB = cur;
+    } else cur = DB;
+    try{ await idb.set(IDB_KEY, DB); $('saveState').textContent = '本機草稿已存 ' + new Date().toLocaleTimeString('zh-TW',{hour12:false}); }
+    catch(e){ try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); $('saveState').textContent = '已存（localStorage）'; }
+      catch(e2){ $('saveState').textContent = '⚠ 存不進去：' + (e2.message||e2); } }
+  }).catch(()=>{});
+  return _wq;
 }
 window.addEventListener('beforeunload', ()=>{ if(_saveT){ clearTimeout(_saveT); save(); } });
+// 回到這一頁時重讀素材庫（繪圖器可能剛改過物件）
+document.addEventListener('visibilitychange', async () => {
+  if(document.visibilityState !== 'visible' || _saveT) return;
+  try{ const v = await idb.get(IDB_KEY); if(v && v.objects){ DB.objects = v.objects; renderLib(); if(ST.mode==='scene') sRender(); if(ST.mode==='story') tRender(); } }catch(e){}
+});
 const stamp = o => { o.updatedAt = Date.now(); };
 function uniqueId(base, table){ let id = P.slug(base), n = 2; while(table[id]) id = P.slug(base) + '-' + (n++); return id; }
+const openEditor = id => { save(); location.href = 'pixel-editor.html' + (id ? '?id=' + encodeURIComponent(id) : ''); };
 
-// ═══════════════════════════ 模式切換與素材庫 ═══════════════════════════
-const ST = { mode:'obj' };
+// ═══════════ 模式切換與素材庫 ═══════════
+const ST = { mode:'scene' };
 function setMode(m){
   ST.mode = m;
   $$('.modes button').forEach(b => b.classList.toggle('on', b.dataset.m === m));
   $$('section.view').forEach(s => s.classList.toggle('on', s.id === 'v-' + m));
   renderSide();
-  if(m === 'obj'){ eResize(); eRender(); } if(m === 'scene') sRender(); if(m === 'story') tRender(); if(m === 'io') ioRender();
+  if(m === 'scene') sRender(); if(m === 'story') tRender(); if(m === 'io') ioRender();
 }
 $$('.modes button').forEach(b => b.onclick = () => setMode(b.dataset.m));
-$('libToggle').onclick = () => { $('app').classList.toggle('libhide'); if(ST.mode==='obj'){ eResize(); eRender(); } };
-$('helpBtn').onclick = () => $('help').classList.add('on'); $('helpClose').onclick = () => $('help').classList.remove('on');
-$('help').addEventListener('click', e => { if(e.target === $('help')) $('help').classList.remove('on'); });
+$('libToggle').onclick = () => { $('app').classList.toggle('libhide'); if(ST.mode==='scene') sRender(); if(ST.mode==='story') tRender(); };
+$('openEditor').onclick = () => openEditor(EDIT_ID || '');
 
 const thumbCache = new Map();
 function thumbHTML(obj){
@@ -258,31 +212,24 @@ function thumbHTML(obj){
 }
 function renderLib(){
   const objs = Object.values(DB.objects).sort((a,b)=> a.name.localeCompare(b.name,'zh-Hant'));
-  $('libObjs').innerHTML = objs.map(o => `<div class="lib-item ${E.id===o.id&&ST.mode==='obj'?'on':''}" data-t="obj" data-id="${esc(o.id)}"><span class="th">${thumbHTML(o)}</span><span class="nm">${esc(o.name)}<br><small>${o.kind==='image'?'圖檔':(P.sizeOf(o).w+'×'+P.sizeOf(o).h)}${(o.frames||[]).length>1?' ·'+o.frames.length+'格':''}${(o.layers||[]).length>1?' ·'+o.layers.length+'層':''}</small></span></div>`).join('') || '<div class="hint">（空）</div>';
+  $('libObjs').innerHTML = objs.map(o => `<div class="lib-item" data-t="obj" data-id="${esc(o.id)}" title="${o.kind==='pixel'?'在繪圖器打開':'圖檔物件（不能逐像素改）'}"><span class="th">${thumbHTML(o)}</span><span class="nm">${esc(o.name)}<br><small>${o.kind==='image'?'圖檔':(P.sizeOf(o).w+'×'+P.sizeOf(o).h)}${(o.frames||[]).length>1?' ·'+o.frames.length+'格':''}${(o.layers||[]).length>1?' ·'+o.layers.length+'層':''}</small></span></div>`).join('') || '<div class="hint">（空）</div>';
   $('libScenes').innerHTML = Object.values(DB.scenes).map(s => `<div class="lib-item ${S.id===s.id&&ST.mode==='scene'?'on':''}" data-t="scene" data-id="${esc(s.id)}"><span class="th">🏞</span><span class="nm">${esc(s.name)}<br><small>${s.w}×${s.h} · ${(s.items||[]).length} 件</small></span></div>`).join('') || '<div class="hint">（空）</div>';
   $('libStories').innerHTML = Object.values(DB.stories).map(s => `<div class="lib-item ${T.id===s.id&&ST.mode==='story'?'on':''}" data-t="story" data-id="${esc(s.id)}"><span class="th">🎬</span><span class="nm">${esc(s.name)}<br><small>${(s.beats||[]).length} 句 · ${esc((DB.scenes[s.scene]||{}).name||'未指定場景')}</small></span></div>`).join('') || '<div class="hint">（空）</div>';
 }
 $('lib').addEventListener('click', e => {
   const it = e.target.closest('.lib-item'); if(!it) return;
-  if(it.dataset.t === 'obj'){ openObject(it.dataset.id); setMode('obj'); }
+  if(it.dataset.t === 'obj'){ const o = DB.objects[it.dataset.id];
+    if(o && o.kind !== 'pixel'){ toast('圖檔物件不能逐像素改；要編輯請在繪圖器用「匯入圖片」'); return; }
+    openEditor(it.dataset.id); }
   if(it.dataset.t === 'scene'){ openScene(it.dataset.id); setMode('scene'); }
   if(it.dataset.t === 'story'){ openStory(it.dataset.id); setMode('story'); }
 });
-const SIZE_PRESETS = [['16×16 小人／圖示',16,16],['32×32 道具',32,32],['64×64 大道具',64,64],['128×128 角色立繪',128,128],['256×256',256,256],['448×492 唱片行舞台',448,492],['390×600 對戰直式',390,600],['560×315 橫幅 16:9',560,315]];
-$('libNewObj').onclick = () => {
-  const name = prompt('物件名稱（例：唱盤、木箱、老闆、對戰背景）'); if(!name) return;
-  const pick = prompt('畫布大小：輸入「寬x高」（1–1024），或直接輸入預設編號\n' + SIZE_PRESETS.map((p,i)=>`${i+1}. ${p[0]}`).join('\n'), '32x32'); if(pick==null) return;
-  let w=32,h=32; const pre = SIZE_PRESETS[parseInt(pick,10)-1]; const m = /^(\d+)\s*[x×*,]\s*(\d+)$/i.exec(pick.trim());
-  if(m){ w=+m[1]; h=+m[2]; } else if(pre && !/[x×]/i.test(pick)){ w=pre[1]; h=pre[2]; }
-  w = clamp(w||32,1,1024); h = clamp(h||32,1,1024);
-  const id = uniqueId(name, DB.objects);
-  const o = P.newPixelObject(id, name, w, h); o.layers = [{ name:'圖層 1', visible:true, locked:false, frames:[P.emptyRows(w,h)] }];
-  DB.objects[id] = o; touch(); openObject(id); setMode('obj');
-};
+const SIZE_PRESETS = [['448×492 唱片行舞台',448,492],['390×600 對戰直式',390,600],['560×315 橫幅 16:9',560,315],['256×256',256,256]];
+$('libNewObj').onclick = () => openEditor('');
 $('libNewScene').onclick = () => {
   const name = prompt('場景名稱（例：巷子裡的唱片行、對戰畫面、聆聽室）'); if(!name) return;
-  const pick = prompt('尺寸「寬x高」或預設編號\n' + SIZE_PRESETS.slice(5).map((p,i)=>`${i+1}. ${p[0]}`).join('\n'), '448x492'); if(pick==null) return;
-  let w=448,h=492; const pre = SIZE_PRESETS.slice(5)[parseInt(pick,10)-1]; const m = /^(\d+)\s*[x×*,]\s*(\d+)$/i.exec(pick.trim());
+  const pick = prompt('尺寸「寬x高」或預設編號\n' + SIZE_PRESETS.map((p,i)=>`${i+1}. ${p[0]}`).join('\n'), '448x492'); if(pick==null) return;
+  let w=448,h=492; const pre = SIZE_PRESETS[parseInt(pick,10)-1]; const m = /^(\d+)\s*[x×*,]\s*(\d+)$/i.exec(pick.trim());
   if(m){ w=+m[1]; h=+m[2]; } else if(pre && !/[x×]/i.test(pick)){ w=pre[1]; h=pre[2]; }
   const id = uniqueId(name, DB.scenes);
   DB.scenes[id] = P.newScene(id, name, clamp(w,16,4096), clamp(h,16,4096)); touch(); openScene(id); setMode('scene');
@@ -294,535 +241,11 @@ $('libNewStory').onclick = () => {
 };
 function renderSide(){
   const side = $('side');
-  if(ST.mode === 'obj') side.innerHTML = eSideHTML();
-  else if(ST.mode === 'scene') side.innerHTML = sSideHTML();
+  if(ST.mode === 'scene') side.innerHTML = sSideHTML();
   else if(ST.mode === 'story') side.innerHTML = tSideHTML();
   else side.innerHTML = '<div class="hint">交接分頁的操作都在中間。</div>';
   bindSide();
-  if(ST.mode === 'obj'){ eToolbar(); eSideAfter(); }
   renderLib();
-}
-
-// ═══════════════════════════ 🖌 像素繪圖器：狀態、載入／存檔、繪製 ═══════════════════════════
-// 內部用索引陣列（Uint8Array，0＝透明、n＝色盤第 n 個顏色），存檔時轉回「一列一字串」。
-const E = {
-  id:null, w:0, h:0, keys:['.'], lut:[[0,0,0]], layers:[], frame:0, layer:0,
-  tool:'pen', color:1, brush:1, brushShape:'square', dither:false, fillGlobal:false, shapeFill:false, symX:false, symY:false, pixelPerfect:true,
-  zoom:8, panX:0, panY:0, grid:true, gridN:8, tile:false, bgDark:false,
-  sel:null, lift:null, clip:null, ref:null, onionPrev:true, onionNext:false, playing:null, fps:8,
-  undo:[], redo:[], drag:null, hover:null, preview:null, work:null, space:false, stab:'pal', durations:null,
-};
-const oc = $('oc'), octx = oc.getContext('2d');
-const curObj = () => DB.objects[E.id] || null;
-const isPix = () => { const o = curObj(); return !!(o && o.kind === 'pixel'); };
-
-function rowsToArr(rows, w, h, keyIdx){ const a = new Uint8Array(w*h); for(let y=0;y<h;y++){ const r = rows[y]||''; for(let x=0;x<w;x++){ const ch = r[x]; if(ch && !P.isClear(ch)){ const i = keyIdx[ch]; if(i) a[y*w+x] = i; } } } return a; }
-function arrToRows(a, w, h, keys){ const rows = []; for(let y=0;y<h;y++){ let s=''; for(let x=0;x<w;x++){ s += keys[a[y*w+x]] || '.'; } rows.push(s); } return rows; }
-function eKeyIdx(){ const m = {}; E.keys.forEach((k,i)=>{ if(i) m[k]=i; }); return m; }
-function eLut(){ E.lut = E.keys.map((k,i) => i ? hexRGB(curObj().palette[k]) : [0,0,0]); }
-
-function eLoad(obj){
-  E.id = obj.id; E.sel = null; E.lift = null; E.preview = null; E.work = null; E.undo = []; E.redo = []; E.frame = 0; E.layer = 0;
-  if(E.playing){ clearInterval(E.playing); E.playing = null; }
-  if(!obj || obj.kind !== 'pixel'){ E.layers = []; return; }
-  const s = P.sizeOf(obj); E.w = s.w; E.h = s.h;
-  E.keys = ['.'].concat(Object.keys(obj.palette)); const ki = eKeyIdx(); eLut();
-  const src = (Array.isArray(obj.layers) && obj.layers.length) ? obj.layers : [{ name:'圖層 1', visible:true, locked:false, frames:obj.frames }];
-  const nf = Math.max(1, ...src.map(l => (l.frames||[]).length));
-  E.layers = src.map(l => ({ name:l.name||'圖層', visible:l.visible!==false, locked:!!l.locked, frames: Array.from({length:nf}, (_,f) => rowsToArr((l.frames||[])[f]||[], E.w, E.h, ki)) }));
-  E.layer = E.layers.length-1;
-  E.fps = obj.fps || 8; E.durations = Array.isArray(obj.durations) ? obj.durations.slice() : null;
-  if(E.color >= E.keys.length) E.color = 1;
-}
-// 寫回物件：layers → rows；frames ＝ 壓平
-function eSave(){
-  const obj = curObj(); if(!obj || obj.kind !== 'pixel') return;
-  obj.w = E.w; obj.h = E.h;
-  obj.layers = E.layers.map(l => ({ name:l.name, visible:l.visible, locked:l.locked, frames:l.frames.map(a => arrToRows(a, E.w, E.h, E.keys)) }));
-  P.flattenLayers(obj);
-  obj.fps = E.fps; if(E.durations) obj.durations = E.durations.slice(); else delete obj.durations;
-  stamp(obj); touch();
-}
-function openObject(id){ const obj = DB.objects[id]; if(!obj) return; eLoad(obj); if(ST.mode==='obj'){ renderSide(); eResize(); eFit(); eRender(); } }
-const nFrames = () => E.layers.length ? E.layers[0].frames.length : 0;
-const curLayer = () => E.layers[E.layer];
-const curData = () => E.work || (curLayer() && curLayer().frames[E.frame]);
-
-// ── 復原
-function pushUndo(kind){
-  if(kind === 'all'){ eSave(); E.undo.push({ all: JSON.stringify(curObj()), sel: E.sel && E.sel.slice() }); }
-  else E.undo.push({ l:E.layer, f:E.frame, data: curLayer().frames[E.frame].slice(), sel: E.sel && E.sel.slice() });
-  if(E.undo.length > 60) E.undo.shift(); E.redo = [];
-}
-function applyHist(from, to){
-  const h = from.pop(); if(!h) return;
-  if(h.all){ eSave(); to.push({ all: JSON.stringify(curObj()), sel: E.sel && E.sel.slice() }); const obj = JSON.parse(h.all); DB.objects[obj.id] = obj; const keep = { color:E.color, zoom:E.zoom, panX:E.panX, panY:E.panY, tool:E.tool }; eLoad(obj); Object.assign(E, keep); E.sel = h.sel || null; }
-  else { const L = E.layers[h.l]; if(!L || !L.frames[h.f]) return; to.push({ l:h.l, f:h.f, data:L.frames[h.f].slice(), sel: E.sel && E.sel.slice() }); L.frames[h.f] = h.data; E.layer = h.l; E.frame = h.f; E.sel = h.sel || null; eSave(); }
-  eRender(); renderSide();
-}
-const eUndo = () => applyHist(E.undo, E.redo), eRedo = () => applyHist(E.redo, E.undo);
-
-// ── 視圖
-function eResize(){ const cv = $('cv'); oc.width = cv.clientWidth; oc.height = cv.clientHeight; }
-function eFit(){ if(!E.w) return; const z = Math.max(1, Math.floor(Math.min((oc.width-40)/E.w, (oc.height-40)/E.h))); E.zoom = clamp(z, 1, 64); E.panX = Math.round((oc.width - E.w*E.zoom)/2); E.panY = Math.round((oc.height - E.h*E.zoom)/2); }
-function eZoomAt(nz, sx, sy){ nz = clamp(nz, 1, 64); if(nz === E.zoom) return; const px = (sx - E.panX)/E.zoom, py = (sy - E.panY)/E.zoom; E.zoom = nz; E.panX = Math.round(sx - px*nz); E.panY = Math.round(sy - py*nz); eRender(); }
-
-// ── 合成一格（可見圖層由下往上；current 圖層用 E.work 或 lift 的結果）
-const bufC = document.createElement('canvas'), bufX = bufC.getContext('2d');
-function eComposite(f, opts){
-  opts = opts || {}; const n = E.w*E.h, out = new Uint8Array(n);
-  E.layers.forEach((L, li) => { if(!L.visible && !opts.all) return; let d = L.frames[f]; if(li === E.layer && f === E.frame && !opts.noWork){ if(E.work) d = E.work; }
-    for(let i=0;i<n;i++){ const v = d[i]; if(v) out[i] = v; }
-    if(li === E.layer && f === E.frame && E.lift && !opts.noWork){ const lf = E.lift; for(let y=0;y<lf.h;y++) for(let x=0;x<lf.w;x++){ const v = lf.data[y*lf.w+x]; if(!v) continue; const tx = x+lf.x, ty = y+lf.y; if(tx>=0&&ty>=0&&tx<E.w&&ty<E.h) out[ty*E.w+tx] = v; } } });
-  if(E.preview && !opts.noWork){ for(const [i, v] of E.preview) out[i] = v; }
-  return out;
-}
-function toImageData(idx, alpha){ const img = new ImageData(E.w, E.h), d = img.data; for(let i=0;i<idx.length;i++){ const v = idx[i]; if(!v) continue; const c = E.lut[v]; const o = i*4; d[o]=c[0]; d[o+1]=c[1]; d[o+2]=c[2]; d[o+3]=alpha||255; } return img; }
-function eCanvasOf(idx, alpha){ bufC.width = E.w; bufC.height = E.h; bufX.putImageData(toImageData(idx, alpha), 0, 0); return bufC; }
-const checker = (()=>{ const c=document.createElement('canvas'); c.width=c.height=16; const g=c.getContext('2d'); g.fillStyle='#fff'; g.fillRect(0,0,16,16); g.fillStyle='#e2dfd7'; g.fillRect(0,0,8,8); g.fillRect(8,8,8,8); return c; })();
-const checkerDark = (()=>{ const c=document.createElement('canvas'); c.width=c.height=16; const g=c.getContext('2d'); g.fillStyle='#2a2a2a'; g.fillRect(0,0,16,16); g.fillStyle='#3a3a3a'; g.fillRect(0,0,8,8); g.fillRect(8,8,8,8); return c; })();
-
-let _renderQ = false;
-function eRender(){ if(_renderQ) return; _renderQ = true; requestAnimationFrame(() => { _renderQ = false; eDraw(); }); }
-function eDraw(){
-  const empty = !isPix(); $('objEmpty').hidden = !empty; oc.style.display = empty ? 'none' : '';
-  if(empty){ const o = curObj(); $('objEmpty').innerHTML = o && o.kind==='image' ? `這是圖檔物件（<code>${esc(P.frameOf(o,0))}</code>），不能逐像素改；可以直接放進場景。<br><button class="b" onclick="eImageToPixel()">轉成像素物件（依色盤量化，會變成新物件）</button><br><img src="${esc(P.frameOf(o,0))}" style="max-width:100%;image-rendering:pixelated;margin-top:8px;box-shadow:0 0 0 1px #111">` : '左邊按「＋」開一個物件，或從交接分頁載入 art/pixel/。'; return; }
-  const z = E.zoom, W = E.w*z, H = E.h*z, px = E.panX, py = E.panY;
-  octx.imageSmoothingEnabled = false;
-  octx.fillStyle = E.bgDark ? '#1b1b1b' : '#dedbd3'; octx.fillRect(0,0,oc.width,oc.height);
-  octx.save(); octx.beginPath(); octx.rect(px,py,W,H); octx.clip();
-  octx.fillStyle = octx.createPattern(E.bgDark ? checkerDark : checker, 'repeat'); octx.fillRect(px,py,W,H);
-  if(E.ref && E.ref.img && !E.ref.above){ octx.globalAlpha = E.ref.opacity; drawRef(); octx.globalAlpha = 1; }
-  octx.restore();
-  const comp = eComposite(E.frame);
-  const nf = nFrames();
-  if(E.onionPrev && E.frame > 0 && !E.playing){ octx.globalAlpha = .3; octx.drawImage(eCanvasOf(eComposite(E.frame-1, {noWork:true})), px, py, W, H); octx.globalAlpha = 1; }
-  if(E.onionNext && E.frame < nf-1 && !E.playing){ octx.globalAlpha = .2; octx.drawImage(eCanvasOf(eComposite(E.frame+1, {noWork:true})), px, py, W, H); octx.globalAlpha = 1; }
-  const cc = eCanvasOf(comp);
-  if(E.tile){ for(let dy=-1; dy<=1; dy++) for(let dx=-1; dx<=1; dx++){ if(dx||dy){ octx.globalAlpha=.55; octx.drawImage(cc, px+dx*W, py+dy*H, W, H); } } octx.globalAlpha=1; }
-  octx.drawImage(cc, px, py, W, H);
-  if(E.ref && E.ref.img && E.ref.above){ octx.save(); octx.beginPath(); octx.rect(px,py,W,H); octx.clip(); octx.globalAlpha = E.ref.opacity; drawRef(); octx.globalAlpha = 1; octx.restore(); }
-  // 格線
-  if(E.grid && z >= 4){ octx.strokeStyle = E.bgDark ? 'rgba(255,255,255,.12)' : 'rgba(0,0,0,.12)'; octx.lineWidth = 1; octx.beginPath(); for(let x=0;x<=E.w;x++){ octx.moveTo(px+x*z+.5, py); octx.lineTo(px+x*z+.5, py+H); } for(let y=0;y<=E.h;y++){ octx.moveTo(px, py+y*z+.5); octx.lineTo(px+W, py+y*z+.5); } octx.stroke(); }
-  if(E.gridN > 0 && z >= 2){ octx.strokeStyle = E.bgDark ? 'rgba(255,255,255,.3)' : 'rgba(0,0,0,.3)'; octx.beginPath(); for(let x=E.gridN;x<E.w;x+=E.gridN){ octx.moveTo(px+x*z+.5, py); octx.lineTo(px+x*z+.5, py+H); } for(let y=E.gridN;y<E.h;y+=E.gridN){ octx.moveTo(px, py+y*z+.5); octx.lineTo(px+W, py+y*z+.5); } octx.stroke(); }
-  octx.strokeStyle = '#111'; octx.strokeRect(px-.5, py-.5, W+1, H+1);
-  // 對稱軸
-  if(E.symX || E.symY){ octx.strokeStyle = 'rgba(184,134,11,.9)'; octx.setLineDash([4,3]); octx.beginPath(); if(E.symX){ octx.moveTo(px+W/2, py); octx.lineTo(px+W/2, py+H); } if(E.symY){ octx.moveTo(px, py+H/2); octx.lineTo(px+W, py+H/2); } octx.stroke(); octx.setLineDash([]); }
-  // 選取範圍（螞蟻線：畫遮罩邊界）
-  if(E.sel){ drawSel(E.sel, 0, 0); }
-  if(E.drag && E.drag.tool === 'select' && E.drag.rect){ const r = E.drag.rect; octx.strokeStyle='#fff'; octx.setLineDash([3,3]); octx.strokeRect(px+r.x0*z+.5, py+r.y0*z+.5, (r.x1-r.x0+1)*z-1, (r.y1-r.y0+1)*z-1); octx.setLineDash([]); }
-  // 腳點
-  const a = P.anchorOf(curObj()); octx.strokeStyle='#b8860b'; octx.lineWidth=2; octx.beginPath(); octx.moveTo(px+a.x*z-7, py+a.y*z); octx.lineTo(px+a.x*z+7, py+a.y*z); octx.moveTo(px+a.x*z, py+a.y*z-7); octx.lineTo(px+a.x*z, py+a.y*z+7); octx.stroke(); octx.lineWidth=1;
-  // 游標
-  if(E.hover && !E.drag && z >= 3 && ['pen','eraser','fill','line','rect','ellipse'].includes(E.tool)){ const b = ['pen','eraser'].includes(E.tool) ? E.brush : 1, off = Math.floor((b-1)/2); octx.strokeStyle = '#111'; octx.strokeRect(px+(E.hover.x-off)*z+.5, py+(E.hover.y-off)*z+.5, b*z-1, b*z-1); octx.strokeStyle = '#fff'; octx.strokeRect(px+(E.hover.x-off)*z+1.5, py+(E.hover.y-off)*z+1.5, b*z-3, b*z-3); }
-  ePreview(comp);
-  eStatus();
-}
-function drawRef(){ const r = E.ref, z = E.zoom; if(r.fit) octx.drawImage(r.img, E.panX + r.x*z, E.panY + r.y*z, E.w*z*r.scale, E.h*z*r.scale); else octx.drawImage(r.img, E.panX + r.x*z, E.panY + r.y*z, r.img.naturalWidth*z*r.scale, r.img.naturalHeight*z*r.scale); }
-function drawSel(mask, ox, oy){
-  const z = E.zoom, px = E.panX + ox*z, py = E.panY + oy*z, w = E.w, h = E.h; octx.lineWidth = 1;
-  const seg = (x0,y0,x1,y1) => { octx.moveTo(px+x0*z+.5, py+y0*z+.5); octx.lineTo(px+x1*z+.5, py+y1*z+.5); };
-  const build = () => { octx.beginPath(); for(let y=0;y<h;y++) for(let x=0;x<w;x++){ if(!mask[y*w+x]) continue; if(y===0||!mask[(y-1)*w+x]) seg(x,y,x+1,y); if(y===h-1||!mask[(y+1)*w+x]) seg(x,y+1,x+1,y+1); if(x===0||!mask[y*w+x-1]) seg(x,y,x,y+1); if(x===w-1||!mask[y*w+x+1]) seg(x+1,y,x+1,y+1); } };
-  build(); octx.strokeStyle = '#000'; octx.stroke(); octx.strokeStyle = '#fff'; octx.setLineDash([4,4]); octx.lineDashOffset = (Date.now()/60)%8; octx.stroke(); octx.setLineDash([]);
-}
-// 1:1 預覽（右側面板）
-function ePreview(comp){
-  const pc = $('prevC'); if(!pc) return; const box = pc.parentElement; const k = Math.max(1, Math.floor(Math.min(box.clientWidth/E.w, box.clientHeight/E.h)));
-  const tiles = $('prevTile') && $('prevTile').checked ? 3 : 1;
-  pc.width = E.w*tiles; pc.height = E.h*tiles; const g = pc.getContext('2d'); g.imageSmoothingEnabled = false; const c = eCanvasOf(comp || eComposite(E.frame));
-  for(let ty=0;ty<tiles;ty++) for(let tx=0;tx<tiles;tx++) g.drawImage(c, tx*E.w, ty*E.h);
-  pc.style.width = (pc.width*Math.max(1, Math.floor(k/tiles)))+'px'; pc.style.height = (pc.height*Math.max(1, Math.floor(k/tiles)))+'px';
-}
-function eStatus(){ const st = $('status'); if(!isPix()){ st.innerHTML=''; return; } const h = E.hover; let selInfo = ''; if(E.sel){ const b = maskBBox(E.sel); if(b) selInfo = `選取 <b>${b.x1-b.x0+1}×${b.y1-b.y0+1}</b> @${b.x0},${b.y0}`; }
-  st.innerHTML = `<span>${E.w}×${E.h}</span><span>×${E.zoom}</span><span>${h?`(<b>${h.x}</b>, <b>${h.y}</b>)${(()=>{ const d=curLayer()&&curLayer().frames[E.frame]; const v=d&&h.x>=0&&h.y>=0&&h.x<E.w&&h.y<E.h?d[h.y*E.w+h.x]:0; return v?' '+E.keys[v]+' '+curObj().palette[E.keys[v]]:''; })()}`:''}</span><span>${selInfo}</span><span>圖層 <b>${curLayer()?esc(curLayer().name):''}</b>${curLayer()&&curLayer().locked?' 🔒':''}</span><span>格 <b>${E.frame+1}/${nFrames()}</b></span><span style="margin-left:auto">${E.tool}${E.dither?' · 網點':''}${E.symX?' · 對稱X':''}${E.symY?' · 對稱Y':''}</span>`; }
-
-// ═══════════════════════════ 🖌 工具、指標、選取、剪貼、快捷鍵 ═══════════════════════════
-function maskBBox(m){ let x0=E.w,y0=E.h,x1=-1,y1=-1; for(let y=0;y<E.h;y++) for(let x=0;x<E.w;x++) if(m[y*E.w+x]){ if(x<x0)x0=x; if(y<y0)y0=y; if(x>x1)x1=x; if(y>y1)y1=y; } return x1<0 ? null : {x0,y0,x1,y1}; }
-function cellAt(ev){ const r = oc.getBoundingClientRect(); return { x: Math.floor((ev.clientX - r.left - E.panX)/E.zoom), y: Math.floor((ev.clientY - r.top - E.panY)/E.zoom) }; }
-const inBounds = (x,y) => x>=0 && y>=0 && x<E.w && y<E.h;
-const inSel = i => !E.sel || E.sel[i];
-// 一個落點展開成筆刷（大小、形狀）＋對稱＋網點＋選取限制 → 索引列表
-function brushCells(x, y, brush){
-  const b = brush || 1, off = Math.floor((b-1)/2), out = [], r2 = (b/2)*(b/2);
-  const put = (px,py) => { if(!inBounds(px,py)) return; const i = py*E.w+px; if(!inSel(i)) return; if(E.dither && ((px+py)&1)) return; out.push(i); };
-  const pts = [[x,y]]; if(E.symX) pts.push([E.w-1-x, y]); if(E.symY) pts.push([x, E.h-1-y]); if(E.symX && E.symY) pts.push([E.w-1-x, E.h-1-y]);
-  for(const [cx,cy] of pts) for(let dy=0;dy<b;dy++) for(let dx=0;dx<b;dx++){ if(E.brushShape==='round' && b>2){ const ex=dx-off-(b%2?0:.5), ey=dy-off-(b%2?0:.5); if(ex*ex+ey*ey > r2) continue; } put(cx-off+dx, cy-off+dy); }
-  return out;
-}
-function line(x0,y0,x1,y1){ const pts=[]; let dx=Math.abs(x1-x0), dy=-Math.abs(y1-y0), sx=x0<x1?1:-1, sy=y0<y1?1:-1, err=dx+dy; for(;;){ pts.push([x0,y0]); if(x0===x1&&y0===y1) break; const e2=2*err; if(e2>=dy){ err+=dy; x0+=sx; } if(e2<=dx){ err+=dx; y0+=sy; } } return pts; }
-// 像素完美：連續三點成 L 形時拿掉中間那一點
-function pixelPerfect(path){ const out = []; for(const p of path){ const n = out.length; if(n>=2){ const a=out[n-2], b=out[n-1]; if(Math.abs(a[0]-p[0])===1 && Math.abs(a[1]-p[1])===1 && ((b[0]===a[0]&&b[1]===p[1])||(b[1]===a[1]&&b[0]===p[0]))){ out[n-1]=p; continue; } } out.push(p); } return out; }
-function ellipsePts(x0,y0,x1,y1,fill){
-  const pts = []; const cx=(x0+x1)/2, cy=(y0+y1)/2, rx=(Math.abs(x1-x0))/2, ry=(Math.abs(y1-y0))/2;
-  if(rx<.5||ry<.5){ for(const p of line(x0,y0,x1,y1)) pts.push(p); return pts; }
-  const seen = new Set(); const add=(x,y)=>{ const k=x+','+y; if(!seen.has(k)){ seen.add(k); pts.push([x,y]); } };
-  if(fill){ for(let y=Math.min(y0,y1); y<=Math.max(y0,y1); y++){ const t = (y+.5-cy)/(ry+.5); const hw = (rx+.5)*Math.sqrt(Math.max(0,1-t*t)); for(let x=Math.ceil(cx-hw); x<=Math.floor(cx+hw-1e-9); x++) add(x,y); } return pts; }
-  const steps = Math.max(24, Math.round((rx+ry)*4)); let prev=null;
-  for(let i=0;i<=steps;i++){ const t=i/steps*Math.PI*2; const x=Math.round(cx+rx*Math.cos(t)), y=Math.round(cy+ry*Math.sin(t)); if(prev) for(const p of line(prev[0],prev[1],x,y)) add(p[0],p[1]); else add(x,y); prev=[x,y]; }
-  return pts;
-}
-function shapePts(tool, a, b, shift){
-  let x0=a.x, y0=a.y, x1=b.x, y1=b.y;
-  if(shift){ if(tool==='line'){ const dx=x1-x0, dy=y1-y0, ad=Math.abs(dx), bd=Math.abs(dy); if(ad>bd*2) y1=y0; else if(bd>ad*2) x1=x0; else { const m=Math.max(ad,bd); x1=x0+Math.sign(dx)*m; y1=y0+Math.sign(dy)*m; } } else { const m=Math.max(Math.abs(x1-x0),Math.abs(y1-y0)); x1=x0+Math.sign(x1-x0||1)*m; y1=y0+Math.sign(y1-y0||1)*m; } }
-  if(tool==='line') return line(x0,y0,x1,y1);
-  const X0=Math.min(x0,x1), X1=Math.max(x0,x1), Y0=Math.min(y0,y1), Y1=Math.max(y0,y1), pts=[];
-  if(tool==='rect'){ if(E.shapeFill){ for(let y=Y0;y<=Y1;y++) for(let x=X0;x<=X1;x++) pts.push([x,y]); } else { for(let x=X0;x<=X1;x++){ pts.push([x,Y0]); if(Y1!==Y0) pts.push([x,Y1]); } for(let y=Y0+1;y<Y1;y++){ pts.push([X0,y]); if(X1!==X0) pts.push([X1,y]); } } return pts; }
-  return ellipsePts(X0,Y0,X1,Y1,E.shapeFill);
-}
-// 把「落點列表」畫進 work（每個落點展開筆刷）
-function stampPts(work, pts, v, brush){ for(const [x,y] of pts) for(const i of brushCells(x,y,brush)) work[i]=v; }
-function floodMask(data, x, y, global){
-  const n = E.w*E.h, m = new Uint8Array(n); if(!inBounds(x,y)) return m; const target = data[y*E.w+x];
-  if(global){ for(let i=0;i<n;i++) if(data[i]===target && inSel(i)) m[i]=1; return m; }
-  const st=[y*E.w+x]; while(st.length){ const i=st.pop(); if(m[i]||data[i]!==target||!inSel(i)) continue; m[i]=1; const cx=i%E.w; if(cx>0) st.push(i-1); if(cx<E.w-1) st.push(i+1); if(i>=E.w) st.push(i-E.w); if(i+E.w<n) st.push(i+E.w); }
-  return m;
-}
-function lockedWarn(){ if(curLayer() && curLayer().locked){ toast('這個圖層鎖住了'); return true; } if(curLayer() && !curLayer().visible){ toast('這個圖層是隱藏的'); return true; } return false; }
-
-// ── 指標
-oc.addEventListener('pointerdown', ev => {
-  if(!isPix()) return; ev.preventDefault(); oc.setPointerCapture(ev.pointerId); oc.focus();
-  const c = cellAt(ev);
-  if(ev.button === 1 || E.space || E.tool === 'hand'){ E.drag = { tool:'hand', sx:ev.clientX, sy:ev.clientY, px:E.panX, py:E.panY }; oc.classList.add('hand'); return; }
-  if(ev.button === 2){ pickAt(c); return; }
-  const t = E.tool, v = t==='eraser' ? 0 : E.color;
-  if(t === 'pick' || (ev.altKey && ['pen','fill','line','rect','ellipse'].includes(t))){ pickAt(c); return; }
-  if(t === 'anchor'){ if(!inBounds(c.x,c.y) && !inBounds(c.x,c.y-1)) return; pushUndo('all'); curObj().anchor = { x:clamp(c.x,0,E.w), y:clamp(c.y+1,0,E.h) }; eSave(); eRender(); renderSide(); return; }
-  if(t === 'select'){ E.drag = { tool:'select', start:c, rect:{x0:clamp(c.x,0,E.w-1),y0:clamp(c.y,0,E.h-1),x1:clamp(c.x,0,E.w-1),y1:clamp(c.y,0,E.h-1)}, shift:ev.shiftKey, alt:ev.altKey }; eRender(); return; }
-  if(t === 'wand'){ if(!inBounds(c.x,c.y)) { if(!ev.shiftKey && !ev.altKey){ E.sel=null; eRender(); } return; } const keepSel = E.sel; E.sel = null; const m = floodMask(curLayer().frames[E.frame], c.x, c.y, ev.ctrlKey||ev.metaKey); E.sel = keepSel; applySelOp(m, ev.shiftKey, ev.altKey); eRender(); eStatus(); return; }
-  if(lockedWarn()) return;
-  if(t === 'move'){ pushUndo('pix'); const base = curLayer().frames[E.frame]; const work = base.slice(); const data = new Uint8Array(E.w*E.h); const inside = E.sel && inBounds(c.x,c.y) && E.sel[c.y*E.w+c.x]; const useSel = !!E.sel && inside; for(let i=0;i<data.length;i++){ if(!useSel || E.sel[i]){ data[i]=base[i]; work[i]=0; } } E.work = work; E.lift = { data, w:E.w, h:E.h, x:0, y:0, useSel }; E.drag = { tool:'move', start:c }; oc.classList.add('move'); eRender(); return; }
-  if(t === 'fill'){ if(!inBounds(c.x,c.y)) return; pushUndo('pix'); const d = curLayer().frames[E.frame]; const m = floodMask(d, c.x, c.y, E.fillGlobal); const pts=[]; for(let i=0;i<m.length;i++) if(m[i] && !(E.dither && (((i%E.w)+Math.floor(i/E.w))&1))) d[i]=v; if(E.symX||E.symY){ const mx = E.symX? E.w-1-c.x : c.x, my = E.symY? E.h-1-c.y : c.y; const m2 = floodMask(d, mx, my, E.fillGlobal); for(let i=0;i<m2.length;i++) if(m2[i] && !(E.dither && (((i%E.w)+Math.floor(i/E.w))&1))) d[i]=v; } eSave(); eRender(); return; }
-  pushUndo('pix');
-  const base = curLayer().frames[E.frame];
-  if(t === 'pen' || t === 'eraser'){ E.drag = { tool:t, base, path:[[c.x,c.y]], v }; E.work = base.slice(); stampPts(E.work, E.drag.path, v, E.brush); eRender(); return; }
-  E.drag = { tool:t, start:c, v, base, shift:ev.shiftKey }; E.work = base.slice(); stampPts(E.work, shapePts(t, c, c, ev.shiftKey), v, 1); eRender();
-});
-oc.addEventListener('pointermove', ev => {
-  if(!isPix()) return; const c = cellAt(ev); E.hover = c; const d = E.drag;
-  if(!d){ eRender(); return; }
-  if(d.tool === 'hand'){ E.panX = d.px + (ev.clientX - d.sx); E.panY = d.py + (ev.clientY - d.sy); eRender(); return; }
-  if(d.tool === 'select'){ d.rect = { x0:clamp(Math.min(d.start.x,c.x),0,E.w-1), y0:clamp(Math.min(d.start.y,c.y),0,E.h-1), x1:clamp(Math.max(d.start.x,c.x),0,E.w-1), y1:clamp(Math.max(d.start.y,c.y),0,E.h-1) }; eRender(); return; }
-  if(d.tool === 'move'){ E.lift.x = c.x - d.start.x; E.lift.y = c.y - d.start.y; eRender(); return; }
-  if(d.tool === 'pen' || d.tool === 'eraser'){ const last = d.path[d.path.length-1]; if(last[0]===c.x && last[1]===c.y) return; for(const p of line(last[0],last[1],c.x,c.y).slice(1)) d.path.push(p); E.work = d.base.slice(); const path = (E.pixelPerfect && E.brush===1) ? pixelPerfect(d.path) : d.path; stampPts(E.work, path, d.v, E.brush); eRender(); return; }
-  E.work = d.base.slice(); stampPts(E.work, shapePts(d.tool, d.start, c, ev.shiftKey || d.shift), d.v, 1); eRender();
-});
-function eEnd(ev){
-  const d = E.drag; if(!d) return; E.drag = null; oc.classList.remove('hand'); oc.classList.remove('move');
-  if(d.tool === 'hand') return;
-  if(d.tool === 'select'){ const r = d.rect; const m = new Uint8Array(E.w*E.h); const tiny = ev && ev.type==='pointerup' && r.x0===r.x1 && r.y0===r.y1 && d.start.x===r.x0; if(tiny && !d.shift && !d.alt){ E.sel = null; eRender(); eStatus(); return; } for(let y=r.y0;y<=r.y1;y++) for(let x=r.x0;x<=r.x1;x++) m[y*E.w+x]=1; applySelOp(m, d.shift, d.alt); eRender(); eStatus(); return; }
-  if(d.tool === 'move'){ commitLift(); return; }
-  if(E.work){ curLayer().frames[E.frame] = E.work; E.work = null; }
-  eSave(); eRender();
-}
-oc.addEventListener('pointerup', eEnd); oc.addEventListener('pointercancel', eEnd);
-oc.addEventListener('pointerleave', ()=>{ E.hover=null; if(!E.drag) eRender(); });
-oc.addEventListener('contextmenu', e => e.preventDefault());
-oc.addEventListener('wheel', ev => { if(!isPix()) return; ev.preventDefault(); const r = oc.getBoundingClientRect(); const dir = ev.deltaY < 0 ? 1 : -1; const nz = E.zoom < 8 ? E.zoom + dir : Math.round(E.zoom * (dir>0 ? 1.25 : 0.8)); eZoomAt(clamp(nz,1,64), ev.clientX - r.left, ev.clientY - r.top); }, { passive:false });
-oc.tabIndex = 0;
-function pickAt(c){ if(!inBounds(c.x,c.y)) return; const v = eComposite(E.frame, {noWork:true})[c.y*E.w+c.x]; if(v){ E.color = v; renderSide(); } }
-function applySelOp(m, add, sub){ if(add && E.sel){ for(let i=0;i<m.length;i++) if(m[i]) E.sel[i]=1; } else if(sub && E.sel){ for(let i=0;i<m.length;i++) if(m[i]) E.sel[i]=0; if(!maskBBox(E.sel)) E.sel=null; } else E.sel = m; }
-function commitLift(){
-  const lf = E.lift; if(!lf) return; const work = E.work || curLayer().frames[E.frame].slice();
-  for(let y=0;y<lf.h;y++) for(let x=0;x<lf.w;x++){ const v = lf.data[y*lf.w+x]; if(!v) continue; const tx=x+lf.x, ty=y+lf.y; if(inBounds(tx,ty)) work[ty*E.w+tx]=v; }
-  if(E.sel && lf.useSel){ const m = new Uint8Array(E.w*E.h); for(let y=0;y<E.h;y++) for(let x=0;x<E.w;x++){ if(!E.sel[y*E.w+x]) continue; const tx=x+lf.x, ty=y+lf.y; if(inBounds(tx,ty)) m[ty*E.w+tx]=1; } E.sel = maskBBox(m) ? m : null; }
-  curLayer().frames[E.frame] = work; E.work = null; E.lift = null; eSave(); eRender(); eStatus();
-}
-// 方向鍵：移動選取內容（沒選取＝整層）
-function nudge(dx, dy){ if(!isPix() || lockedWarn()) return; pushUndo('pix'); const base = curLayer().frames[E.frame]; const data = new Uint8Array(E.w*E.h), work = base.slice(); for(let i=0;i<data.length;i++){ if(!E.sel || E.sel[i]){ data[i]=base[i]; work[i]=0; } } E.work = work; E.lift = { data, w:E.w, h:E.h, x:dx, y:dy, useSel:!!E.sel }; commitLift(); }
-// 剪貼簿
-function copySel(cut){
-  if(!isPix()) return; const d = curLayer().frames[E.frame]; const b = E.sel ? maskBBox(E.sel) : {x0:0,y0:0,x1:E.w-1,y1:E.h-1}; if(!b) return;
-  const w=b.x1-b.x0+1, h=b.y1-b.y0+1, data=new Uint8Array(w*h); for(let y=0;y<h;y++) for(let x=0;x<w;x++){ const i=(y+b.y0)*E.w+(x+b.x0); if(!E.sel || E.sel[i]) data[y*w+x]=d[i]; }
-  E.clip = { w, h, data, keys:E.keys.slice(), pal:Object.assign({}, curObj().palette) };
-  if(cut){ if(lockedWarn()) return; pushUndo('pix'); for(let i=0;i<d.length;i++) if(!E.sel || E.sel[i]) d[i]=0; eSave(); eRender(); }
-  toast(cut ? `剪下 ${w}×${h}` : `複製 ${w}×${h}`);
-}
-function pasteClip(at){
-  const cp = E.clip; if(!cp || !isPix() || lockedWarn()) return;
-  // 跨物件貼：把來源色盤的顏色補進目前色盤，索引重對
-  const map = new Uint8Array(cp.keys.length); const obj = curObj();
-  for(let i=1;i<cp.keys.length;i++){ const hx = cp.pal[cp.keys[i]]; let j = E.keys.findIndex((k,ki)=> ki && hex6(obj.palette[k])===hex6(hx)); if(j<0){ j = addColor(hx, true); } map[i] = j>0 ? j : 0; }
-  pushUndo('pix'); const d = curLayer().frames[E.frame]; const ox = at ? at.x : Math.max(0, Math.floor((-E.panX)/E.zoom)+1), oy = at ? at.y : Math.max(0, Math.floor((-E.panY)/E.zoom)+1);
-  const m = new Uint8Array(E.w*E.h); for(let y=0;y<cp.h;y++) for(let x=0;x<cp.w;x++){ const v = map[cp.data[y*cp.w+x]]; const tx=x+ox, ty=y+oy; if(inBounds(tx,ty)){ m[ty*E.w+tx]=1; if(v) d[ty*E.w+tx]=v; } }
-  E.sel = maskBBox(m) ? m : null; E.tool = 'move'; eSave(); eRender(); renderSide(); toast('已貼上（用移動工具拖到定位）');
-}
-function selectAll(){ if(!isPix()) return; E.sel = new Uint8Array(E.w*E.h).fill(1); eRender(); eStatus(); }
-function invertSel(){ if(!isPix()) return; const m = new Uint8Array(E.w*E.h); for(let i=0;i<m.length;i++) m[i] = (E.sel && E.sel[i]) ? 0 : 1; E.sel = maskBBox(m) ? m : null; eRender(); eStatus(); }
-function deleteSel(){ if(!isPix() || !E.sel || lockedWarn()) return; pushUndo('pix'); const d = curLayer().frames[E.frame]; for(let i=0;i<d.length;i++) if(E.sel[i]) d[i]=0; eSave(); eRender(); }
-
-// ── 快捷鍵
-document.addEventListener('keydown', ev => {
-  if($('help').classList.contains('on')){ if(ev.key==='Escape') $('help').classList.remove('on'); return; }
-  if(ev.target.matches('input,textarea,select')) return;
-  const meta = ev.ctrlKey || ev.metaKey, k = ev.key;
-  if(ST.mode !== 'obj'){ if(ST.mode==='scene') sKey(ev); return; }
-  if(k === '?' ){ $('help').classList.add('on'); return; }
-  if(k === ' '){ E.space = true; oc.classList.add('hand'); ev.preventDefault(); return; }
-  if(!isPix()) return;
-  if(meta){
-    const lk = k.toLowerCase();
-    if(lk==='z'){ ev.preventDefault(); ev.shiftKey ? eRedo() : eUndo(); return; }
-    if(lk==='y'){ ev.preventDefault(); eRedo(); return; }
-    if(lk==='a'){ ev.preventDefault(); selectAll(); return; }
-    if(lk==='d'){ ev.preventDefault(); E.sel=null; eRender(); eStatus(); return; }
-    if(lk==='i' && ev.shiftKey){ ev.preventDefault(); invertSel(); return; }
-    if(lk==='c'){ ev.preventDefault(); copySel(false); return; }
-    if(lk==='x'){ ev.preventDefault(); copySel(true); return; }
-    if(lk==='v'){ /* 交給 paste 事件（可能是系統圖片） */ return; }
-    return;
-  }
-  if(ev.altKey && k.toLowerCase()==='n'){ ev.preventDefault(); eAct('ladd'); return; }
-  const tools = { b:'pen', e:'eraser', g:'fill', l:'line', r:'rect', o:'ellipse', s:'select', w:'wand', m:'move', i:'pick', h:'hand' };
-  const lk = k.toLowerCase();
-  if(tools[lk] && !ev.altKey){ E.tool = tools[lk]; eToolbar(); eStatus(); return; }
-  if(k==='['){ E.brush=clamp(E.brush-1,1,64); eToolbar(); eRender(); } if(k===']'){ E.brush=clamp(E.brush+1,1,64); eToolbar(); eRender(); }
-  if(lk==='x'){ E.symX=!E.symX; eToolbar(); eRender(); } if(lk==='y'){ E.symY=!E.symY; eToolbar(); eRender(); }
-  if(lk==='d'){ E.dither=!E.dither; eToolbar(); eStatus(); } if(lk==='p'){ E.pixelPerfect=!E.pixelPerfect; eToolbar(); }
-  if(k==='+'||k==='='){ eZoomAt(E.zoom+1, oc.width/2, oc.height/2); } if(k==='-'){ eZoomAt(E.zoom-1, oc.width/2, oc.height/2); }
-  if(k==='0'){ eFit(); eRender(); } if(k==='1'){ eZoomAt(1, oc.width/2, oc.height/2); }
-  if(k==='Tab'){ ev.preventDefault(); E.grid=!E.grid; eToolbar(); eRender(); }
-  if(k===','){ eAct('fprev'); } if(k==='.'){ eAct('fnext'); }
-  if(k==='Delete' || k==='Backspace'){ ev.preventDefault(); deleteSel(); }
-  if(k==='Escape'){ E.sel=null; eRender(); eStatus(); }
-  if(k.startsWith('Arrow')){ ev.preventDefault(); const s = ev.shiftKey?8:1; nudge(k==='ArrowLeft'?-s:k==='ArrowRight'?s:0, k==='ArrowUp'?-s:k==='ArrowDown'?s:0); }
-});
-document.addEventListener('keyup', ev => { if(ev.key===' '){ E.space=false; if(!E.drag) oc.classList.remove('hand'); } });
-document.addEventListener('paste', async ev => {
-  if(ST.mode!=='obj' || !isPix() || ev.target.matches('input,textarea')) return;
-  const items = Array.from(ev.clipboardData && ev.clipboardData.items || []); const f = items.find(i => i.type.startsWith('image/'));
-  if(f){ ev.preventDefault(); const blob = f.getAsFile(); const url = URL.createObjectURL(blob); const im = await loadImg(url); URL.revokeObjectURL(url); if(im) importImage(im, 'layer'); return; }
-  if(E.clip){ ev.preventDefault(); pasteClip(); }
-});
-$('cv').addEventListener('dragover', e => { e.preventDefault(); });
-$('cv').addEventListener('drop', async e => { e.preventDefault(); const f = e.dataTransfer.files[0]; if(!f || !isPix()) return; if(f.type.startsWith('image/')){ const im = await loadImg(await readFile(f)); if(im) importImage(im, 'ask'); } else if(/\.json$/i.test(f.name)){ try{ const n = importAny(JSON.parse(await readFile(f,'text')), true); toast(`匯入 ${n} 筆`); }catch(err){ alert(err.message); } } });
-window.addEventListener('resize', ()=>{ if(ST.mode==='obj'){ eResize(); eRender(); } if(ST.mode==='scene') sRender(); if(ST.mode==='story') tRender(); });
-
-// ═══════════════════════════ 🖌 工具列、右側面板、動作 ═══════════════════════════
-const TOOLS = [['pen','✏','筆 B'],['eraser','◻','橡皮擦 E'],['fill','🪣','填色 G'],['line','／','直線 L'],['rect','▭','矩形 R'],['ellipse','◯','橢圓 O'],['select','⬚','框選 S'],['wand','✦','魔術棒 W'],['move','✥','移動 M'],['pick','💧','吸色 I'],['hand','✋','平移 H'],['anchor','⌖','腳點']];
-function eToolbar(){
-  const tb = $('toolbar'); if(!isPix()){ tb.innerHTML=''; return; }
-  tb.innerHTML = TOOLS.map(t=>`<button class="t ${E.tool===t[0]?'on':''}" data-tool="${t[0]}" title="${t[2]}">${t[1]}</button>`).join('') +
-    `<span class="sep"></span><label>筆寬<input type="number" id="tbBrush" min="1" max="64" value="${E.brush}"></label>
-     <button class="t tg ${E.brushShape==='round'?'on':''}" data-tg="brushShape" title="圓形筆刷（大於 2 才看得出）">●</button>
-     <button class="t tg ${E.dither?'on':''}" data-tg="dither" title="網點（D）：只畫棋盤格的一半">▚</button>
-     <button class="t tg ${E.pixelPerfect?'on':''}" data-tg="pixelPerfect" title="像素完美線（P）：筆寬 1 時去掉 L 形轉角">⌐</button>
-     <button class="t tg ${E.fillGlobal?'on':''}" data-tg="fillGlobal" title="填色：全圖同色（不限相連）">∀</button>
-     <button class="t tg ${E.shapeFill?'on':''}" data-tg="shapeFill" title="矩形／橢圓：實心">■</button>
-     <span class="sep"></span>
-     <button class="t tg ${E.symX?'on':''}" data-tg="symX" title="左右對稱（X）">⇋</button>
-     <button class="t tg ${E.symY?'on':''}" data-tg="symY" title="上下對稱（Y）">⇅</button>
-     <span class="sep"></span>
-     <button class="t tg ${E.grid?'on':''}" data-tg="grid" title="像素格線（Tab）">#</button>
-     <label>粗線每<input type="number" id="tbGridN" min="0" max="256" value="${E.gridN}"></label>
-     <button class="t tg ${E.tile?'on':''}" data-tg="tile" title="平鋪預覽（畫無縫磚用）">▦</button>
-     <button class="t tg ${E.bgDark?'on':''}" data-tg="bgDark" title="深色底">◐</button>
-     <span class="sep"></span>
-     <button class="t" data-act="fit" title="縮到剛好（0）">⊡</button><button class="t" data-act="z1" title="1:1（1）">1:1</button>
-     <span class="sep"></span><button class="t" data-act="undo" title="復原 Ctrl+Z">↶</button><button class="t" data-act="redo" title="重做 Ctrl+Shift+Z">↷</button>`;
-  tb.onclick = e => { const b = e.target.closest('button'); if(!b) return; if(b.dataset.tool){ E.tool=b.dataset.tool; eToolbar(); eStatus(); } else if(b.dataset.tg){ const k=b.dataset.tg; if(k==='brushShape') E.brushShape = E.brushShape==='round'?'square':'round'; else E[k]=!E[k]; eToolbar(); eRender(); } else if(b.dataset.act) eAct(b.dataset.act); };
-  tb.onchange = e => { if(e.target.id==='tbBrush'){ E.brush=clamp(+e.target.value||1,1,64); eRender(); } if(e.target.id==='tbGridN'){ E.gridN=clamp(+e.target.value||0,0,256); eRender(); } };
-}
-const PRESETS = {
-  'dip PIX_PAL 17': ['#111','#b8860b','#c11628','#1f5fae','#fff','#d8d8d8','#888','#2e7d52','#6a3fa0','#e0851c','#f0c75e','#e8b48c','#3fb6c9','#c68642','#8d5524','#f6dcc4','#e75480'],
-  'PICO-8 16': ['#000000','#1d2b53','#7e2553','#008751','#ab5236','#5f574f','#c2c3c7','#fff1e8','#ff004d','#ffa300','#ffec27','#00e436','#29adff','#83769c','#ff77a8','#ffccaa'],
-  'DawnBringer 16': ['#140c1c','#442434','#30346d','#4e4a4e','#854c30','#346524','#d04648','#757161','#597dce','#d27d2c','#8595a1','#6daa2c','#d2aa99','#6dc2ca','#dad45e','#deeed6'],
-  'Sweetie 16': ['#1a1c2c','#5d275d','#b13e53','#ef7d57','#ffcd75','#a7f070','#38b764','#257179','#29366f','#3b5dc9','#41a6f6','#73eff7','#f4f4f4','#94b0c2','#566c86','#333c57'],
-  '灰階 8': ['#000000','#242424','#484848','#6c6c6c','#909090','#b4b4b4','#d8d8d8','#ffffff'],
-};
-function eSideHTML(){
-  const obj = curObj(); if(!obj) return '<div class="hint">還沒選物件。</div>';
-  if(obj.kind==='image') return `<h3>圖檔物件</h3><div class="kv"><span>id</span><b>${esc(obj.id)}</b><span>尺寸</span><b>${obj.w}×${obj.h}</b><span>格數</span><b>${obj.frames.length}</b></div>
-    <label class="f">名稱<input type="text" data-k="name" value="${esc(obj.name)}"></label>
-    <label class="f">格（每行一個圖檔路徑）<textarea data-k="frames">${esc(obj.frames.join('\n'))}</textarea></label>
-    <div class="row"><label class="f inl">腳點 x<input type="number" data-k="ax" value="${P.anchorOf(obj).x}"></label><label class="f inl">y<input type="number" data-k="ay" value="${P.anchorOf(obj).y}"></label></div>
-    <label class="f">標籤（逗號分隔）<input type="text" data-k="tags" value="${esc((obj.tags||[]).join(','))}"></label>
-    <label class="f">備註<textarea data-k="notes">${esc(obj.notes||'')}</textarea></label>
-    <div class="row"><button class="b" data-act="dup">複製物件</button><button class="b" data-act="del">刪除物件</button></div>`;
-  const tabs = [['pal','色盤'],['layer','圖層'],['frame','格'],['canvas','畫布'],['io','匯入匯出'],['prop','屬性']];
-  const pal = obj.palette; const a = P.anchorOf(obj);
-  const sw = E.keys.map((k,i) => i ? `<span class="sw ${E.color===i?'on':''}" data-ci="${i}" style="background:${esc(pal[k])}" title="${esc(k)} ${esc(pal[k])}（右鍵改色）">${esc(k)}</span>` : '').join('');
-  const layers = E.layers.map((L,i)=>({L,i})).reverse().map(({L,i}) => `<div class="ly ${i===E.layer?'on':''}" data-li="${i}"><span class="ic ${L.visible?'on':''}" data-lt="visible" title="顯示／隱藏">👁</span><span class="ic ${L.locked?'on':''}" data-lt="locked" title="鎖定">🔒</span><span class="th"><canvas data-lth="${i}"></canvas></span><span class="nm" title="雙擊改名">${esc(L.name)}</span></div>`).join('');
-  const nf = nFrames(); const frames = Array.from({length:nf}, (_,i) => `<span class="fr ${i===E.frame?'on':''}" data-fi="${i}"><i>${i+1}</i><canvas data-fth="${i}"></canvas></span>`).join('');
-  const dur = E.durations ? (E.durations[E.frame] || Math.round(1000/E.fps)) : Math.round(1000/E.fps);
-  return `
-    <div class="prev"><canvas id="prevC"></canvas></div>
-    <div class="row"><label class="f inl"><input type="checkbox" id="prevTile" ${E.tile?'checked':''}>預覽平鋪 3×3</label><span class="hint" style="margin-left:auto">1:1 預覽</span></div>
-    <div class="stabs">${tabs.map(t=>`<button class="${E.stab===t[0]?'on':''}" data-stab="${t[0]}">${t[1]}</button>`).join('')}</div>
-
-    <div class="stab ${E.stab==='pal'?'on':''}" id="stab-pal">
-      <div class="sw-wrap"><span class="sw clear ${E.color===0?'on':''}" data-ci="0" title="透明（等於橡皮擦）">.</span>${sw}<span class="sw clear" data-act="addcolor" title="加一個顏色">＋</span></div>
-      <div class="row"><input type="color" id="oColorPick" value="${esc(hex6(pal[E.keys[E.color]]||'#000000'))}" title="改目前選的顏色"><input type="text" id="oColorHex" value="${esc(pal[E.keys[E.color]]||'')}" style="width:80px" placeholder="#hex"><span class="hint">鍵 <b>${esc(E.keys[E.color]||'.')}</b></span></div>
-      <div class="row"><button class="b sm" data-act="delcolor" title="沒像素在用才能刪；有在用會問你要換成哪個顏色">刪色</button><button class="b sm" data-act="swapcolor" title="把目前顏色的像素全部換成另一個顏色">全圖換色</button><button class="b sm" data-act="sortpal" title="依色相排序">排序</button><button class="b sm" data-act="unused" title="刪掉所有沒用到的顏色">清未用</button></div>
-      <div class="row"><select id="palPreset" style="width:auto"><option value="">載入預設色盤…</option>${Object.keys(PRESETS).map(k=>`<option value="${esc(k)}">${esc(k)}</option>`).join('')}</select><button class="b sm" data-act="preset">追加</button><button class="b sm" data-act="presetreplace" title="只有在畫布還是空的時候才建議">取代</button></div>
-      <div class="row"><button class="b sm" data-act="palimport" title="貼一串 #hex（換行或逗號分隔，Lospec 的 hex 檔也行）">匯入 hex 清單</button><button class="b sm" data-act="palexport">複製 hex 清單</button><button class="b sm" data-act="palfromimg" title="從目前這一格的像素收集用到的顏色（已在色盤的不重複）">用到的顏色</button></div>
-      <div class="hint">色盤是這個物件自己的；一個顏色一個字元（JSON 裡的 rows 就是這些字元）。最多 ${KEY_POOL.length} 色。</div>
-    </div>
-
-    <div class="stab ${E.stab==='layer'?'on':''}" id="stab-layer">
-      <div class="layers">${layers}</div>
-      <div class="row"><button class="b sm" data-act="ladd" title="Alt+N">＋ 圖層</button><button class="b sm" data-act="ldup">複製</button><button class="b sm" data-act="ldel" ${E.layers.length<2?'disabled':''}>刪除</button><button class="b sm" data-act="lmerge" ${E.layer<1?'disabled':''} title="併到下一層">向下合併</button></div>
-      <div class="row"><button class="b sm" data-act="lup" ${E.layer>=E.layers.length-1?'disabled':''}>上移</button><button class="b sm" data-act="ldown" ${E.layer<1?'disabled':''}>下移</button><button class="b sm" data-act="lrename">改名</button><button class="b sm" data-act="lclear">清空此層</button><button class="b sm" data-act="lflat" title="全部壓成一層">全部壓平</button></div>
-      <div class="hint">上面的圖層蓋住下面的。畫筆只畫在目前選的圖層；鎖住的層不能畫。存檔時會另外壓平成 frames 給前台用。</div>
-    </div>
-
-    <div class="stab ${E.stab==='frame'?'on':''}" id="stab-frame">
-      <div class="frames">${frames}</div>
-      <div class="row"><button class="b sm" data-act="fadd">＋ 複製此格</button><button class="b sm" data-act="fblank">＋ 空白格</button><button class="b sm" data-act="fdel" ${nf<2?'disabled':''}>刪此格</button><button class="b sm" data-act="fleft" ${E.frame<1?'disabled':''}>◀</button><button class="b sm" data-act="fright" ${E.frame>=nf-1?'disabled':''}>▶</button></div>
-      <div class="row"><button class="b sm ${E.playing?'on':''}" data-act="fplay">${E.playing?'■ 停':'▶ 播放'}</button><label class="f inl">fps<input type="number" id="oFps" min="1" max="60" value="${E.fps}"></label><label class="f inl">此格 ms<input type="number" id="oDur" min="10" max="10000" value="${dur}" title="這一格的停留時間（留白＝照 fps）"></label></div>
-      <div class="row"><label class="f inl"><input type="checkbox" id="oOnionP" ${E.onionPrev?'checked':''}>洋蔥皮 上一格</label><label class="f inl"><input type="checkbox" id="oOnionN" ${E.onionNext?'checked':''}>下一格</label></div>
-      <div class="row"><button class="b sm" data-act="sheetexport" title="所有格橫排成一張 PNG">⬇ 雪碧圖</button><label class="f inl">×<input type="number" id="oSheetScale" min="1" max="8" value="1"></label><button class="b sm" data-act="sheetimport" title="把一張橫排雪碧圖切成多格（問你每格寬度）">⬆ 切雪碧圖</button></div>
-      <div class="hint">格＝動畫或狀態（門的關／半開／全開、走路循環）。所有圖層共用同一組格。</div>
-    </div>
-
-    <div class="stab ${E.stab==='canvas'?'on':''}" id="stab-canvas">
-      <div class="row"><label class="f inl">寬<input type="number" id="oW" min="1" max="1024" value="${E.w}"></label><label class="f inl">高<input type="number" id="oH" min="1" max="1024" value="${E.h}"></label>
-        <span class="anch" id="anch">${['nw','n','ne','w','c','e','sw','s','se'].map(k=>`<button data-anchor="${k}" class="${(E.resizeAnchor||'nw')===k?'on':''}">${({nw:'↖',n:'↑',ne:'↗',w:'←',c:'·',e:'→',sw:'↙',s:'↓',se:'↘'})[k]}</button>`).join('')}</span><button class="b sm" data-act="resize">調整畫布</button></div>
-      <div class="row"><button class="b sm" data-act="scale2">整張 ×2</button><button class="b sm" data-act="scaleh">整張 ÷2</button><button class="b sm" data-act="cropsel" ${E.sel?'':'disabled'}>裁到選取</button><button class="b sm" data-act="crop">裁到內容</button></div>
-      <div class="row"><span class="hint">整張：</span><button class="b sm" data-act="flipx">⇋ 左右翻</button><button class="b sm" data-act="flipy">⇅ 上下翻</button><button class="b sm" data-act="rotcw">↻ 90°</button><button class="b sm" data-act="rotccw">↺ 90°</button></div>
-      <div class="row"><span class="hint">只此圖層此格${E.sel?'（選取範圍）':''}：</span><button class="b sm" data-act="lflipx">⇋</button><button class="b sm" data-act="lflipy">⇅</button><button class="b sm" data-act="lrot">↻</button></div>
-      <div class="row"><span class="hint">位移</span><label class="f inl">dx<input type="number" id="oDx" value="1" style="width:48px"></label><label class="f inl">dy<input type="number" id="oDy" value="0" style="width:48px"></label><label class="f inl"><input type="checkbox" id="oWrap" checked>環繞</label><button class="b sm" data-act="offset">此層此格</button><button class="b sm" data-act="offsetall">整張</button></div>
-      <div class="hint">「環繞」位移＋平鋪預覽＝畫無縫地磚／牆面的標準做法。</div>
-    </div>
-
-    <div class="stab ${E.stab==='io'?'on':''}" id="stab-io">
-      <h3>匯入</h3>
-      <div class="row"><button class="b sm" data-act="imgimport">圖片 → 像素</button><span class="hint">依色盤量化；也可以直接把圖片拖進畫布、或 Ctrl+V 貼圖</span></div>
-      <h3>參考圖（描圖用，不存進資料）</h3>
-      <div class="row"><button class="b sm" data-act="ref">載入</button>${E.ref?`<button class="b sm" data-act="refoff">移除</button><label class="f inl">透明<input type="range" id="oRefOp" min="0" max="1" step=".05" value="${E.ref.opacity}"></label><label class="f inl"><input type="checkbox" id="oRefAbove" ${E.ref.above?'checked':''}>蓋在上面</label>`:''}</div>
-      ${E.ref?`<div class="row"><label class="f inl"><input type="checkbox" id="oRefFit" ${E.ref.fit?'checked':''}>貼合畫布</label><label class="f inl">x<input type="number" id="oRefX" value="${E.ref.x}" style="width:52px"></label><label class="f inl">y<input type="number" id="oRefY" value="${E.ref.y}" style="width:52px"></label><label class="f inl">倍率<input type="number" id="oRefS" value="${E.ref.scale}" step="0.05" style="width:56px"></label></div>`:''}
-      <h3>匯出</h3>
-      <div class="row"><button class="b sm" data-act="png">⬇ PNG 此格</button><label class="f inl">×<input type="number" id="oScale" min="1" max="16" value="4"></label><button class="b sm" data-act="pngall">⬇ 每格各一張</button></div>
-      <div class="row"><button class="b sm" data-act="svg">複製 SVG</button><button class="b sm" data-act="json">複製物件 JSON</button><button class="b sm" data-act="rows">複製此格 rows（壓平）</button><button class="b sm" data-act="selobj" ${E.sel?'':'disabled'}>選取 → 新物件</button></div>
-    </div>
-
-    <div class="stab ${E.stab==='prop'?'on':''}" id="stab-prop">
-      <div class="kv"><span>id</span><b>${esc(obj.id)}</b><span>尺寸</span><b>${E.w}×${E.h} · ${E.layers.length} 層 · ${nf} 格</b><span>腳點</span><b>(${a.x}, ${a.y})　用「⌖」工具點畫布設定</b></div>
-      <div class="row"><label class="f inl">腳點 x<input type="number" data-k="ax" value="${a.x}"></label><label class="f inl">y<input type="number" data-k="ay" value="${a.y}"></label></div>
-      <label class="f">名稱<input type="text" data-k="name" value="${esc(obj.name)}"></label>
-      <label class="f">標籤（逗號分隔：小人／家具／門／對戰／UI…）<input type="text" data-k="tags" value="${esc((obj.tags||[]).join(','))}"></label>
-      <label class="f">備註（想跟 Claude 交代的：這是什麼、放哪裡、要怎麼動）<textarea data-k="notes">${esc(obj.notes||'')}</textarea></label>
-      <div class="row"><button class="b sm" data-act="dup">複製物件</button><button class="b sm" data-act="del">刪除物件</button></div>
-    </div>`;
-}
-// 面板畫完後：圖層縮圖、格縮圖、預覽
-function eSideAfter(){
-  if(!isPix()) return;
-  $$('canvas[data-lth]').forEach(c => { const L = E.layers[+c.dataset.lth]; if(!L) return; c.width=E.w; c.height=E.h; c.getContext('2d').putImageData(toImageData(L.frames[E.frame]), 0, 0); const k = 22/Math.max(E.w,E.h); c.style.width=Math.max(1,Math.round(E.w*k))+'px'; c.style.height=Math.max(1,Math.round(E.h*k))+'px'; });
-  $$('canvas[data-fth]').forEach(c => { const f = +c.dataset.fth; c.width=E.w; c.height=E.h; c.getContext('2d').putImageData(toImageData(eComposite(f, {noWork:true})), 0, 0); const k = 42/Math.max(E.w,E.h); c.style.width=Math.max(1,Math.round(E.w*k))+'px'; c.style.height=Math.max(1,Math.round(E.h*k))+'px'; });
-  ePreview();
-}
-function addColor(hx, silent){ const obj = curObj(); hx = hex6(hx).toLowerCase(); if(!/^#[0-9a-f]{6}$/.test(hx)) return -1; const used = new Set(Object.keys(obj.palette)); const k = KEY_POOL.split('').find(x => !used.has(x)); if(!k){ if(!silent) alert('色盤滿了'); return -1; } obj.palette[k] = hx; E.keys.push(k); eLut(); return E.keys.length-1; }
-function remapIndices(map){ for(const L of E.layers) for(const d of L.frames) for(let i=0;i<d.length;i++) d[i] = map[d[i]]; if(E.clip){ /* 剪貼簿保留自己的色盤，不動 */ } }
-function usedIndices(){ const u = new Uint8Array(E.keys.length); for(const L of E.layers) for(const d of L.frames) for(let i=0;i<d.length;i++) u[d[i]]=1; return u; }
-function quantize(img, w, h, thr){
-  const c = document.createElement('canvas'); c.width=w; c.height=h; const g=c.getContext('2d'); g.imageSmoothingEnabled = (img.naturalWidth > w*1.5); g.drawImage(img,0,0,w,h);
-  const d = g.getImageData(0,0,w,h).data, obj = curObj(); const arr = new Uint8Array(w*h); let added = 0;
-  let entries = E.keys.map((k,i)=> i ? [i, hexRGB(obj.palette[k])] : null).filter(Boolean);
-  for(let i=0;i<w*h;i++){ const o=i*4; if(d[o+3]<128) continue; const r=d[o],gg=d[o+1],b=d[o+2]; let best=0, bd=1e9; for(const [idx,c2] of entries){ const dd=Math.hypot(r-c2[0],gg-c2[1],b-c2[2]); if(dd<bd){ bd=dd; best=idx; } }
-    if((bd > thr || !best) && E.keys.length < KEY_POOL.length){ const ni = addColor(rgbHex(r,gg,b), true); if(ni>0){ entries.push([ni,[r,gg,b]]); best=ni; added++; } }
-    arr[i] = best; }
-  return { arr, added };
-}
-function importImage(im, mode){
-  if(!isPix()) return; let w=E.w, h=E.h;
-  if(mode==='ask'){ mode = confirm(`圖片 ${im.naturalWidth}×${im.naturalHeight}。\n「確定」＝當成新圖層貼進來（縮到畫布大小）\n「取消」＝把畫布改成圖片大小、取代整個物件內容`) ? 'layer' : 'replace'; }
-  const thr = +prompt('顏色誤差門檻（0–441）：像素顏色跟色盤最近色差超過這個值就新增一色；填 999 ＝ 只用色盤既有顏色', '48'); if(isNaN(thr)) return;
-  pushUndo('all');
-  if(mode==='replace'){ const k = Math.min(1, 1024/Math.max(im.naturalWidth, im.naturalHeight)); w = Math.max(1, Math.round(im.naturalWidth*k)); h = Math.max(1, Math.round(im.naturalHeight*k)); E.w=w; E.h=h; E.layers = [{ name:'匯入', visible:true, locked:false, frames:[new Uint8Array(w*h)] }]; E.layer=0; E.frame=0; E.sel=null; curObj().anchor={x:Math.floor(w/2),y:h}; }
-  const q = quantize(im, w, h, thr);
-  if(mode==='layer'){ E.layers.push({ name:'貼上', visible:true, locked:false, frames:Array.from({length:nFrames()}, (_,f)=> f===E.frame ? q.arr : new Uint8Array(w*h)) }); E.layer = E.layers.length-1; }
-  else if(mode==='frame'){ curLayer().frames[E.frame] = q.arr; }
-  else { E.layers[0].frames[0] = q.arr; }
-  eSave(); if(mode==='replace') eFit(); eRender(); renderSide(); toast(`量化完成，新增 ${q.added} 色，色盤 ${E.keys.length-1} 色`);
-}
-function eImageToPixel(){ const o = curObj(); if(!o || o.kind!=='image') return; loadImg(P.frameOf(o,0)).then(im => { if(!im){ alert('讀不到圖'); return; } const id = uniqueId(o.name+'-px', DB.objects); const n = P.newPixelObject(id, o.name+'（像素）', 1, 1); n.layers=[{name:'圖層 1',visible:true,locked:false,frames:[P.emptyRows(1,1)]}]; DB.objects[id]=n; eLoad(n); E.w=1; E.h=1; importImage(im, 'replace'); renderLib(); }); }
-function resizeCanvas(nw, nh, anchor){
-  const ox = ({nw:0,n:1,ne:2,w:0,c:1,e:2,sw:0,s:1,se:2})[anchor]||0, oy = ({nw:0,n:0,ne:0,w:1,c:1,e:1,sw:2,s:2,se:2})[anchor]||0;
-  const dx = Math.round((nw-E.w)*ox/2), dy = Math.round((nh-E.h)*oy/2);
-  const mv = a => { const b = new Uint8Array(nw*nh); for(let y=0;y<E.h;y++) for(let x=0;x<E.w;x++){ const tx=x+dx, ty=y+dy; if(tx>=0&&ty>=0&&tx<nw&&ty<nh) b[ty*nw+tx]=a[y*E.w+x]; } return b; };
-  for(const L of E.layers) L.frames = L.frames.map(mv); if(E.sel) E.sel = mv(E.sel);
-  const an = P.anchorOf(curObj()); curObj().anchor = { x:clamp(an.x+dx,0,nw), y:clamp(an.y+dy,0,nh) }; E.w=nw; E.h=nh;
-}
-function transformAll(fn, nw, nh){ for(const L of E.layers) L.frames = L.frames.map(a => fn(a)); if(E.sel) E.sel = fn(E.sel); if(nw){ E.w=nw; E.h=nh; } }
-const flipX = a => { const b = new Uint8Array(a.length); for(let y=0;y<E.h;y++) for(let x=0;x<E.w;x++) b[y*E.w+(E.w-1-x)] = a[y*E.w+x]; return b; };
-const flipY = a => { const b = new Uint8Array(a.length); for(let y=0;y<E.h;y++) b.set(a.subarray(y*E.w,(y+1)*E.w), (E.h-1-y)*E.w); return b; };
-const rotCW = a => { const b = new Uint8Array(a.length); for(let y=0;y<E.h;y++) for(let x=0;x<E.w;x++) b[x*E.h+(E.h-1-y)] = a[y*E.w+x]; return b; };
-const rotCCW = a => { const b = new Uint8Array(a.length); for(let y=0;y<E.h;y++) for(let x=0;x<E.w;x++) b[(E.w-1-x)*E.h+y] = a[y*E.w+x]; return b; };
-function offsetArr(a, dx, dy, wrap){ const b = new Uint8Array(a.length); for(let y=0;y<E.h;y++) for(let x=0;x<E.w;x++){ let tx=x+dx, ty=y+dy; if(wrap){ tx=((tx%E.w)+E.w)%E.w; ty=((ty%E.h)+E.h)%E.h; } else if(!inBounds(tx,ty)) continue; b[ty*E.w+tx]=a[y*E.w+x]; } return b; }
-function withinSel(fn){ // 只對選取範圍（bbox 內）做變換，沒選取＝整層
-  const d = curLayer().frames[E.frame]; if(!E.sel){ curLayer().frames[E.frame] = fn(d); return; }
-  const b = maskBBox(E.sel); if(!b) return; const w=b.x1-b.x0+1, h=b.y1-b.y0+1; const sub = new Uint8Array(w*h); for(let y=0;y<h;y++) for(let x=0;x<w;x++){ const i=(y+b.y0)*E.w+(x+b.x0); if(E.sel[i]){ sub[y*w+x]=d[i]; d[i]=0; } }
-  const save = {w:E.w,h:E.h}; E.w=w; E.h=h; const r = fn(sub); const rw = E.w, rh = E.h; E.w=save.w; E.h=save.h;
-  const m = new Uint8Array(E.w*E.h); for(let y=0;y<rh;y++) for(let x=0;x<rw;x++){ const tx=x+b.x0, ty=y+b.y0; if(!inBounds(tx,ty)) continue; const v=r[y*rw+x]; if(v) d[ty*E.w+tx]=v; m[ty*E.w+tx]=1; } E.sel = m;
-}
-function eAct(act){
-  const obj = curObj(); if(!obj) return;
-  if(obj.kind==='image'){ if(act==='dup'||act==='del') objAct(act); return; }
-  const rerender = () => { eSave(); eRender(); renderSide(); };
-  switch(act){
-    case 'fit': eFit(); eRender(); break; case 'z1': eZoomAt(1, oc.width/2, oc.height/2); break;
-    case 'undo': eUndo(); break; case 'redo': eRedo(); break;
-    // 色盤
-    case 'addcolor': { const c = prompt('顏色（#hex）', hex6(obj.palette[E.keys[E.color]]||'#ff8800')); if(!c) return; pushUndo('all'); const i = addColor(c); if(i>0){ E.color=i; rerender(); } break; }
-    case 'delcolor': { const i = E.color; if(!i) return; const used = usedIndices(); pushUndo('all'); if(used[i]){ const to = prompt(`顏色「${E.keys[i]}」還有像素在用。要把它們換成哪個顏色？輸入色盤字元（. ＝ 透明）`, '.'); if(to==null) return; const ti = to==='.' ? 0 : E.keys.indexOf(to); if(ti<0){ alert('沒有這個字元'); return; } const map = new Uint8Array(E.keys.length); for(let k=0;k<map.length;k++) map[k]=k; map[i]=ti; remapIndices(map); } delete obj.palette[E.keys[i]]; const map2 = new Uint8Array(E.keys.length); for(let k=0;k<map2.length;k++) map2[k] = k<i ? k : k>i ? k-1 : 0; remapIndices(map2); E.keys.splice(i,1); eLut(); E.color = Math.min(E.color, E.keys.length-1); rerender(); break; }
-    case 'swapcolor': { const to = prompt(`把「${E.keys[E.color]}」的像素全部換成哪個顏色？輸入色盤字元`, ''); if(!to) return; const ti = to==='.'?0:E.keys.indexOf(to); if(ti<0){ alert('沒有這個字元'); return; } pushUndo('all'); const map = new Uint8Array(E.keys.length); for(let k=0;k<map.length;k++) map[k]=k; map[E.color]=ti; remapIndices(map); rerender(); break; }
-    case 'sortpal': { pushUndo('all'); const hsl = hx => { const [r,g,b] = hexRGB(hx).map(v=>v/255); const mx=Math.max(r,g,b), mn=Math.min(r,g,b); let h=0; const l=(mx+mn)/2; if(mx!==mn){ const d=mx-mn; h = mx===r ? ((g-b)/d)%6 : mx===g ? (b-r)/d+2 : (r-g)/d+4; } return [((h*60)+360)%360, l]; };
-      const order = E.keys.map((k,i)=>i).filter(Boolean).sort((a,b)=>{ const A=hsl(obj.palette[E.keys[a]]), B=hsl(obj.palette[E.keys[b]]); const sa = (Math.max(...hexRGB(obj.palette[E.keys[a]]))-Math.min(...hexRGB(obj.palette[E.keys[a]])))<20, sb=(Math.max(...hexRGB(obj.palette[E.keys[b]]))-Math.min(...hexRGB(obj.palette[E.keys[b]])))<20; if(sa!==sb) return sa?-1:1; if(sa) return A[1]-B[1]; return A[0]-B[0] || A[1]-B[1]; });
-      const newKeys = ['.'].concat(order.map(i=>E.keys[i])); const map = new Uint8Array(E.keys.length); order.forEach((oldI, ni)=>{ map[oldI]=ni+1; }); remapIndices(map); const np = {}; for(const k of newKeys.slice(1)) np[k]=obj.palette[k]; obj.palette = np; E.keys = newKeys; eLut(); E.color = map[E.color]||1; rerender(); break; }
-    case 'unused': { const used = usedIndices(); const keep = E.keys.map((k,i)=> !i || used[i]); if(keep.every(Boolean)){ toast('沒有沒用到的顏色'); return; } pushUndo('all'); const map = new Uint8Array(E.keys.length); let n=0; const nk=['.']; E.keys.forEach((k,i)=>{ if(!i) return; if(keep[i]){ map[i]=++n; nk.push(k); } else delete obj.palette[k]; }); remapIndices(map); E.keys = nk; eLut(); E.color = map[E.color]||1; rerender(); break; }
-    case 'preset': case 'presetreplace': { const name = $('palPreset').value; const list = PRESETS[name]; if(!list) return; pushUndo('all'); if(act==='presetreplace'){ if(usedIndices().slice(1).some(Boolean) && !confirm('畫布上有像素，取代色盤會讓它們對到別的顏色。確定？')) return; obj.palette = {}; E.keys=['.']; } const have = new Set(Object.values(obj.palette).map(hex6)); for(const c of list) if(!have.has(hex6(c))){ addColor(c, true); have.add(hex6(c)); } eLut(); if(E.color>=E.keys.length) E.color=1; rerender(); break; }
-    case 'palimport': { const t = prompt('貼上 #hex 清單（換行、逗號或空白分隔）'); if(!t) return; const list = t.match(/#?[0-9a-f]{6}\b|#?[0-9a-f]{3}\b/gi)||[]; if(!list.length) return; pushUndo('all'); const have = new Set(Object.values(obj.palette).map(hex6)); let n=0; for(let c of list){ c = c.startsWith('#')?c:'#'+c; if(!have.has(hex6(c))){ if(addColor(c,true)>0) n++; have.add(hex6(c)); } } rerender(); toast(`加了 ${n} 色`); break; }
-    case 'palexport': copyText(E.keys.slice(1).map(k=>obj.palette[k]).join('\n')); break;
-    case 'palfromimg': toast('像素本來就只能用色盤的顏色；要抓外部圖的顏色請用「圖片 → 像素」'); break;
-    // 圖層
-    case 'ladd': { pushUndo('all'); E.layers.splice(E.layer+1, 0, { name:'圖層 '+(E.layers.length+1), visible:true, locked:false, frames:Array.from({length:nFrames()}, ()=>new Uint8Array(E.w*E.h)) }); E.layer++; rerender(); break; }
-    case 'ldup': { pushUndo('all'); const L = curLayer(); E.layers.splice(E.layer+1, 0, { name:L.name+' 副本', visible:true, locked:false, frames:L.frames.map(a=>a.slice()) }); E.layer++; rerender(); break; }
-    case 'ldel': { if(E.layers.length<2) return; if(!confirm(`刪除圖層「${curLayer().name}」？`)) return; pushUndo('all'); E.layers.splice(E.layer,1); E.layer = Math.min(E.layer, E.layers.length-1); rerender(); break; }
-    case 'lmerge': { if(E.layer<1) return; pushUndo('all'); const top = curLayer(), below = E.layers[E.layer-1]; below.frames = below.frames.map((a,f)=>{ const t = top.frames[f]; const b = a.slice(); if(top.visible) for(let i=0;i<b.length;i++) if(t[i]) b[i]=t[i]; return b; }); E.layers.splice(E.layer,1); E.layer--; rerender(); break; }
-    case 'lup': { if(E.layer>=E.layers.length-1) return; pushUndo('all'); [E.layers[E.layer],E.layers[E.layer+1]]=[E.layers[E.layer+1],E.layers[E.layer]]; E.layer++; rerender(); break; }
-    case 'ldown': { if(E.layer<1) return; pushUndo('all'); [E.layers[E.layer],E.layers[E.layer-1]]=[E.layers[E.layer-1],E.layers[E.layer]]; E.layer--; rerender(); break; }
-    case 'lrename': { const n = prompt('圖層名稱', curLayer().name); if(n){ pushUndo('all'); curLayer().name = n.trim(); rerender(); } break; }
-    case 'lclear': { if(lockedWarn()) return; pushUndo('pix'); curLayer().frames[E.frame].fill(0); rerender(); break; }
-    case 'lflat': { if(E.layers.length<2) return; pushUndo('all'); const frames = Array.from({length:nFrames()}, (_,f)=>eComposite(f,{noWork:true})); E.layers = [{ name:'圖層 1', visible:true, locked:false, frames }]; E.layer=0; rerender(); break; }
-    // 格
-    case 'fadd': case 'fblank': { pushUndo('all'); for(const L of E.layers) L.frames.splice(E.frame+1, 0, act==='fadd' ? L.frames[E.frame].slice() : new Uint8Array(E.w*E.h)); if(E.durations) E.durations.splice(E.frame+1,0,E.durations[E.frame]); E.frame++; rerender(); break; }
-    case 'fdel': { if(nFrames()<2) return; pushUndo('all'); for(const L of E.layers) L.frames.splice(E.frame,1); if(E.durations) E.durations.splice(E.frame,1); E.frame = Math.min(E.frame, nFrames()-1); rerender(); break; }
-    case 'fleft': case 'fright': { const j = act==='fleft' ? E.frame-1 : E.frame+1; if(j<0||j>=nFrames()) return; pushUndo('all'); for(const L of E.layers) [L.frames[E.frame],L.frames[j]]=[L.frames[j],L.frames[E.frame]]; if(E.durations) [E.durations[E.frame],E.durations[j]]=[E.durations[j],E.durations[E.frame]]; E.frame=j; rerender(); break; }
-    case 'fprev': case 'fnext': { const n = nFrames(); if(n<2) return; E.frame = (E.frame + (act==='fnext'?1:n-1)) % n; E.sel=null; eRender(); renderSide(); break; }
-    case 'fplay': { if(E.playing){ clearTimeout(E.playing); E.playing=null; renderSide(); eRender(); return; } const tick = () => { E.frame = (E.frame+1)%nFrames(); eRender(); $$('.frames .fr').forEach((f,i)=>f.classList.toggle('on',i===E.frame)); const d = E.durations && E.durations[E.frame] || Math.round(1000/E.fps); E.playing = setTimeout(tick, d); }; E.playing = setTimeout(tick, 10); renderSide(); break; }
-    case 'sheetexport': { const k = clamp(+$('oSheetScale').value||1,1,8), n = nFrames(); const c = document.createElement('canvas'); c.width=E.w*k*n; c.height=E.h*k; const g=c.getContext('2d'); g.imageSmoothingEnabled=false; for(let f=0;f<n;f++) g.drawImage(eCanvasOf(eComposite(f,{noWork:true})), f*E.w*k, 0, E.w*k, E.h*k); c.toBlob(b=>download(`${obj.id}-sheet-${n}x${E.w}x${E.h}@${k}x.png`, b)); break; }
-    case 'sheetimport': pickFile('image/*').then(async r => { if(!r) return; const im = await loadImg(r.data); if(!im) return; const fw = +prompt(`雪碧圖 ${im.naturalWidth}×${im.naturalHeight}。每一格多寬？（橫向切）`, String(E.w)); if(!fw) return; const n = Math.floor(im.naturalWidth/fw); if(n<1) return; const thr = +prompt('顏色誤差門檻', '48'); if(isNaN(thr)) return; pushUndo('all'); const fh = im.naturalHeight; if(fw!==E.w || fh!==E.h){ if(!confirm(`畫布會改成 ${fw}×${fh}`)) return; resizeCanvas(fw, fh, 'nw'); }
-      const L = { name:'雪碧圖', visible:true, locked:false, frames:[] }; for(let f=0;f<n;f++){ const c=document.createElement('canvas'); c.width=fw; c.height=fh; c.getContext('2d').drawImage(im, -f*fw, 0); const im2 = await loadImg(c.toDataURL()); L.frames.push(quantize(im2, fw, fh, thr).arr); }
-      for(const LL of E.layers) while(LL.frames.length < n) LL.frames.push(new Uint8Array(E.w*E.h)); while(L.frames.length < nFrames()) L.frames.push(new Uint8Array(E.w*E.h)); E.layers.push(L); E.layer=E.layers.length-1; E.frame=0; rerender(); }); break;
-    // 畫布
-    case 'resize': { const nw = clamp(+$('oW').value||E.w,1,1024), nh = clamp(+$('oH').value||E.h,1,1024); if(nw===E.w&&nh===E.h) return; pushUndo('all'); resizeCanvas(nw, nh, E.resizeAnchor||'nw'); eFit(); rerender(); break; }
-    case 'scale2': { if(E.w*2>1024||E.h*2>1024){ alert('超過 1024'); return; } pushUndo('all'); const w=E.w,h=E.h; transformAll(a=>{ const b=new Uint8Array(w*h*4); for(let y=0;y<h;y++) for(let x=0;x<w;x++){ const v=a[y*w+x]; const o=(y*2)*(w*2)+x*2; b[o]=v; b[o+1]=v; b[o+w*2]=v; b[o+w*2+1]=v; } return b; }, w*2, h*2); const an=P.anchorOf(obj); obj.anchor={x:an.x*2,y:an.y*2}; eFit(); rerender(); break; }
-    case 'scaleh': { if(E.w<2||E.h<2) return; pushUndo('all'); const w=E.w,h=E.h,nw=Math.floor(w/2),nh=Math.floor(h/2); transformAll(a=>{ const b=new Uint8Array(nw*nh); for(let y=0;y<nh;y++) for(let x=0;x<nw;x++) b[y*nw+x]=a[(y*2)*w+x*2]; return b; }, nw, nh); const an=P.anchorOf(obj); obj.anchor={x:Math.floor(an.x/2),y:Math.floor(an.y/2)}; eFit(); rerender(); break; }
-    case 'crop': case 'cropsel': { let b; if(act==='cropsel'){ if(!E.sel) return; b = maskBBox(E.sel); } else { let x0=E.w,y0=E.h,x1=-1,y1=-1; for(const L of E.layers) for(const a of L.frames) for(let i=0;i<a.length;i++) if(a[i]){ const x=i%E.w,y=Math.floor(i/E.w); if(x<x0)x0=x; if(y<y0)y0=y; if(x>x1)x1=x; if(y>y1)y1=y; } if(x1<0) return; b={x0,y0,x1,y1}; } pushUndo('all'); const nw=b.x1-b.x0+1, nh=b.y1-b.y0+1; transformAll(a=>{ const r=new Uint8Array(nw*nh); for(let y=0;y<nh;y++) for(let x=0;x<nw;x++) r[y*nw+x]=a[(y+b.y0)*E.w+(x+b.x0)]; return r; }, nw, nh); const an=P.anchorOf(obj); obj.anchor={x:clamp(an.x-b.x0,0,nw),y:clamp(an.y-b.y0,0,nh)}; if(act==='cropsel') E.sel=null; eFit(); rerender(); break; }
-    case 'flipx': pushUndo('all'); transformAll(flipX); { const an=P.anchorOf(obj); obj.anchor={x:E.w-an.x,y:an.y}; } rerender(); break;
-    case 'flipy': pushUndo('all'); transformAll(flipY); { const an=P.anchorOf(obj); obj.anchor={x:an.x,y:E.h-an.y}; } rerender(); break;
-    case 'rotcw': case 'rotccw': { pushUndo('all'); transformAll(act==='rotcw'?rotCW:rotCCW, E.h, E.w); obj.anchor={x:Math.floor(E.w/2),y:E.h}; eFit(); rerender(); break; }
-    case 'lflipx': case 'lflipy': case 'lrot': { if(lockedWarn()) return; pushUndo('pix'); if(act==='lrot' && E.sel){ const b=maskBBox(E.sel); if(b.x1-b.x0!==b.y1-b.y0){ toast('選取範圍要是正方形才能在原地旋轉'); return; } } if(act==='lrot' && !E.sel && E.w!==E.h){ toast('畫布不是正方形，請用「整張 ↻」'); return; } withinSel(act==='lflipx'?flipX:act==='lflipy'?flipY:rotCW); rerender(); break; }
-    case 'offset': { if(lockedWarn()) return; pushUndo('pix'); curLayer().frames[E.frame] = offsetArr(curLayer().frames[E.frame], +$('oDx').value||0, +$('oDy').value||0, $('oWrap').checked); rerender(); break; }
-    case 'offsetall': { pushUndo('all'); const dx=+$('oDx').value||0, dy=+$('oDy').value||0, wrap=$('oWrap').checked; transformAll(a=>offsetArr(a,dx,dy,wrap)); rerender(); break; }
-    // 匯入匯出
-    case 'imgimport': pickFile('image/*').then(async r => { if(!r) return; const im = await loadImg(r.data); if(im) importImage(im, 'ask'); }); break;
-    case 'ref': pickFile('image/*').then(async r => { if(!r) return; const im = await loadImg(r.data); if(im){ E.ref = { img:im, opacity:.5, fit:true, above:false, x:0, y:0, scale:1 }; eRender(); renderSide(); } }); break;
-    case 'refoff': E.ref=null; eRender(); renderSide(); break;
-    case 'png': { const k = clamp(+$('oScale').value||4,1,16); const c = document.createElement('canvas'); c.width=E.w*k; c.height=E.h*k; const g=c.getContext('2d'); g.imageSmoothingEnabled=false; g.drawImage(eCanvasOf(eComposite(E.frame,{noWork:true})),0,0,E.w*k,E.h*k); c.toBlob(b => download(`${obj.id}${nFrames()>1?'-f'+(E.frame+1):''}@${k}x.png`, b)); break; }
-    case 'pngall': { const k = clamp(+$('oScale').value||4,1,16); for(let f=0;f<nFrames();f++){ const c = document.createElement('canvas'); c.width=E.w*k; c.height=E.h*k; const g=c.getContext('2d'); g.imageSmoothingEnabled=false; g.drawImage(eCanvasOf(eComposite(f,{noWork:true})),0,0,E.w*k,E.h*k); c.toBlob(b => download(`${obj.id}-f${f+1}@${k}x.png`, b)); } break; }
-    case 'svg': eSave(); copyText(P.toSVG(obj, E.frame, E.w*4)); break;
-    case 'json': eSave(); copyText(JSON.stringify(obj, null, 1)); break;
-    case 'rows': eSave(); copyText(JSON.stringify(obj.frames[E.frame], null, 1)); break;
-    case 'selobj': { if(!E.sel) return; const b = maskBBox(E.sel); const name = prompt('新物件名稱', obj.name+' 局部'); if(!name) return; const w=b.x1-b.x0+1, h=b.y1-b.y0+1; const comp = eComposite(E.frame,{noWork:true}); const rows=[]; for(let y=0;y<h;y++){ let s=''; for(let x=0;x<w;x++){ const i=(y+b.y0)*E.w+(x+b.x0); s += E.sel[i] ? (E.keys[comp[i]]||'.') : '.'; } rows.push(s); } const id = uniqueId(name, DB.objects); const n = P.newPixelObject(id, name, w, h); n.palette = Object.assign({}, obj.palette); n.frames=[rows]; n.layers=[{name:'圖層 1',visible:true,locked:false,frames:[rows]}]; DB.objects[id]=n; touch(); openObject(id); toast('已建立新物件'); break; }
-    case 'dup': case 'del': objAct(act); break;
-  }
-}
-function objAct(act){
-  const obj = curObj();
-  if(act==='dup'){ eSave(); const id = uniqueId(obj.name+'-copy', DB.objects); DB.objects[id] = JSON.parse(JSON.stringify(obj)); DB.objects[id].id=id; DB.objects[id].name=obj.name+' 副本'; stamp(DB.objects[id]); touch(); openObject(id); }
-  if(act==='del'){ const usedIn = Object.values(DB.scenes).filter(s => (s.items||[]).some(i => i.obj===obj.id)).map(s=>s.name); if(!confirm(`刪除物件「${obj.name}」？${usedIn.length?'\n注意：場景 '+usedIn.join('、')+' 還在用它。':''}`)) return; delete DB.objects[obj.id]; touch(); E.id=null; E.layers=[]; eRender(); renderSide(); }
 }
 // ═══════════════════════════ 🏞 場景合成 ═══════════════════════════
 const S = { id:null, sel:null, selA:-1, addAnchor:null, drag:null, css:1, showAnchors:true, showGrid:false, raf:0 };
@@ -930,7 +353,7 @@ async function sAct(act){
     case 'isnap': { if(!it) return; const a = scn.anchors[+$('sSnap').value]; if(!a) return; const obj=DB.objects[it.obj]; const p = P.placeAt(it, obj, a.x, a.y); it.x=Math.round(p.x); it.y=Math.round(p.y); stamp(scn); touch(); renderSide(); sRender(); break; }
     case 'idup': { if(!it) return; const c = JSON.parse(JSON.stringify(it)); c.iid=uid(); c.x+=8; c.y+=8; c.role=''; scn.items.push(c); S.sel=c.iid; stamp(scn); touch(); renderSide(); sRender(); break; }
     case 'idel': { if(!it) return; scn.items = scn.items.filter(i => i!==it); S.sel=null; stamp(scn); touch(); renderSide(); sRender(); break; }
-    case 'iedit': if(it){ openObject(it.obj); setMode('obj'); } break;
+    case 'iedit': if(it) openEditor(it.obj); break;
     case 'aadd': { const name = $('sAName').value.trim(); if(!name){ alert('先填站位名'); return; } S.addAnchor = S.addAnchor ? null : { name, group:$('sAGroup').value }; renderSide(); break; }
     case 'adel': { if(S.selA<0) return; scn.anchors.splice(S.selA,1); S.selA=-1; stamp(scn); touch(); renderSide(); sRender(); break; }
     case 'pos': { const g = {}; (scn.anchors||[]).forEach(a => { const k=a.group||'_'; (g[k]=g[k]||{})[a.name]=[a.x,a.y]; }); copyText('const POS = ' + JSON.stringify(g, null, 1).replace(/\[\n\s+(\d+),\n\s+(\d+)\n\s+\]/g,'[$1,$2]') + ';'); break; }
@@ -1109,7 +532,6 @@ function buildIndex(){ const ent = t => Object.values(DB[t]).map(o => ({ id:o.id
 function mergeIn(kind, item, force){ if(!item || !item.id) return false; const cur = DB[kind][item.id]; if(cur && !force && (cur.updatedAt||0) > (item.updatedAt||0)) return false; DB[kind][item.id] = item; return true; }
 // 目前沒選東西（例如本機草稿原本是空的）就自動選第一筆，切到分頁時才有東西看
 function ensureSelection(){
-  if(!curObj() && Object.keys(DB.objects).length) openObject(Object.keys(DB.objects)[0]);
   if(!curScene() && Object.keys(DB.scenes).length) S.id = Object.keys(DB.scenes)[0];
   if(!curStory() && Object.keys(DB.stories).length) T.id = Object.keys(DB.stories)[0];
 }
@@ -1126,20 +548,20 @@ async function ioAct(act){
   const force = !!($('ioForce')&&$('ioForce').checked);
   try{
     if(act==='site'){ log('讀 art/pixel/index.json …'); const r = await fetch('art/pixel/index.json?t='+Date.now()); if(!r.ok) throw new Error('本站沒有 art/pixel/index.json（HTTP '+r.status+'）'); const idx = await r.json(); let n=0; for(const k of ['objects','scenes','stories']) for(const e of idx[k]||[]){ const rr = await fetch(e.file+'?t='+Date.now()); if(!rr.ok){ log('  ✗ '+e.file); continue; } if(mergeIn(k, await rr.json(), force)){ n++; log('  ✓ '+e.file); } else log('  = '+e.file+'（本機較新，略過）'); } ensureSelection(); touch(); renderLib(); toast(`載入 ${n} 筆`); }
-    if(act==='bundle'){ if(isPix()) eSave(); download('pixel-bundle.json', new Blob([JSON.stringify(DB, null, 1)], {type:'application/json'})); }
-    if(act==='files'){ if(isPix()) eSave(); for(const k of ['objects','scenes','stories']) for(const o of Object.values(DB[k])) download(`${o.id}.json`, new Blob([JSON.stringify(o, null, 1)], {type:'application/json'})); download('index.json', new Blob([JSON.stringify(buildIndex(), null, 1)], {type:'application/json'})); }
+    if(act==='bundle'){ download('pixel-bundle.json', new Blob([JSON.stringify(DB, null, 1)], {type:'application/json'})); }
+    if(act==='files'){ for(const k of ['objects','scenes','stories']) for(const o of Object.values(DB[k])) download(`${o.id}.json`, new Blob([JSON.stringify(o, null, 1)], {type:'application/json'})); download('index.json', new Blob([JSON.stringify(buildIndex(), null, 1)], {type:'application/json'})); }
     if(act==='import'){ const r = await pickFile('.json,application/json','text'); if(!r) return; const n = importAny(JSON.parse(r.data), force); toast(`匯入 ${n} 筆`); }
     if(act==='paste'){ const t = $('ioPaste').value.trim(); if(!t) return; const n = importAny(JSON.parse(t), true); $('ioPaste').value=''; toast(`匯入 ${n} 筆`); }
-    if(act==='claude'){ const parts=[]; if(isPix()) eSave(); const obj=curObj(), scn=curScene(), st=curStory(); if(obj) parts.push(obj); if(scn) parts.push(scn); if(st) parts.push(st); if(!parts.length){ alert('先在物件／場景／劇本分頁選一個東西。'); return; }
+    if(act==='claude'){ const parts=[]; const scn=curScene(), st=curStory(); if(EDIT_ID && DB.objects[EDIT_ID]) parts.push(DB.objects[EDIT_ID]); if(scn) parts.push(scn); if(st) parts.push(st); if(!parts.length){ alert('先選一個場景或劇本（或在繪圖器開一個物件）。'); return; }
       const md = `以下是我用像素工坊（pixel-studio.html）做的資料，格式見 repo 的 PIXEL_STUDIO.md（像素物件的 frames 每列一字串、一字元一像素、'.' 透明、其他字元查 palette，有 layers 時 layers 是來源、frames 是壓平結果；場景 items 的深度照腳底 y 排；劇本 beats 與 roguelike.html 的 RPG_BEATS 同形）。\n請把它們寫進 art/pixel/（檔名 <kind>/<id>.json，並更新 art/pixel/index.json），然後：\n\n（這裡寫你要 Claude 做的事）\n\n\`\`\`json\n${JSON.stringify(parts.length===1?parts[0]:parts, null, 1)}\n\`\`\``; copyText(md); }
-    if(act==='wipe'){ if(!confirm('清空本機草稿？（沒匯出的就沒了）')) return; DB = P.emptyDB(); E.id=null; E.layers=[]; S.id=null; T.id=null; save(); renderLib(); renderSide(); toast('已清空'); }
+    if(act==='wipe'){ if(!confirm('清空本機草稿？（沒匯出的就沒了）')) return; DB = P.emptyDB(); S.id=null; T.id=null; save(); renderLib(); renderSide(); toast('已清空'); }
     if(act==='ghpull' || act==='ghpush'){
       GH.repo = $('ghRepo').value.trim(); GH.branch = $('ghBranch').value.trim() || 'main'; const token = $('ghToken').value.trim(); if(!token) throw new Error('沒有 token');
       if($('ghRemember').checked) GH.token = token; else delete GH.token; localStorage.setItem(GH_KEY, JSON.stringify(GH));
       const api = async (path, opt) => { const r = await fetch('https://api.github.com/repos/'+GH.repo+'/contents/'+path+(opt&&opt.method==='PUT'?'':'?ref='+encodeURIComponent(GH.branch)+'&t='+Date.now()), Object.assign({ headers:{ Authorization:'Bearer '+token, Accept:'application/vnd.github+json', 'X-GitHub-Api-Version':'2022-11-28', 'Content-Type':'application/json' } }, opt||{})); if(r.status===404) return null; if(!r.ok) throw new Error(`GitHub ${r.status}：${(await r.text()).slice(0,200)}`); return r.json(); };
       const dec = b64 => decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))), enc = s => btoa(unescape(encodeURIComponent(s)));
       if(act==='ghpull'){ log(`從 ${GH.repo}@${GH.branch} 讀 art/pixel/index.json …`); const ix = await api('art/pixel/index.json'); if(!ix) throw new Error('那條分支上沒有 art/pixel/index.json'); const idx = JSON.parse(dec(ix.content)); let n=0; for(const k of ['objects','scenes','stories']) for(const e of idx[k]||[]){ const f = await api(e.file); if(!f){ log('  ✗ '+e.file); continue; } if(mergeIn(k, JSON.parse(dec(f.content)), force)){ n++; log('  ✓ '+e.file); } else log('  = '+e.file+'（本機較新，略過）'); } ensureSelection(); touch(); renderLib(); toast(`載入 ${n} 筆`); }
-      else { if(isPix()) eSave(); const msg = $('ghMsg').value.trim() || '像素工坊：更新 art/pixel'; const files = []; for(const k of ['objects','scenes','stories']) for(const o of Object.values(DB[k])) files.push([fileOf(k,o.id), JSON.stringify(o, null, 1)+'\n']); files.push(['art/pixel/index.json', JSON.stringify(buildIndex(), null, 1)+'\n']);
+      else { const msg = $('ghMsg').value.trim() || '像素工坊：更新 art/pixel'; const files = []; for(const k of ['objects','scenes','stories']) for(const o of Object.values(DB[k])) files.push([fileOf(k,o.id), JSON.stringify(o, null, 1)+'\n']); files.push(['art/pixel/index.json', JSON.stringify(buildIndex(), null, 1)+'\n']);
         let n=0; for(const [path, text] of files){ const cur = await api(path); if(cur && dec(cur.content)===text){ log('  = '+path); continue; } await api(path, { method:'PUT', body: JSON.stringify({ message: msg + ' — ' + path.split('/').pop(), content: enc(text), branch: GH.branch, sha: cur ? cur.sha : undefined }) }); n++; log('  ✓ '+path); }
         toast(`推了 ${n} 個檔到 ${GH.branch}`); log(n ? `完成：${n} 個檔已 commit 到 ${GH.repo}@${GH.branch}。跟 Claude 說「art/pixel 有新東西，先 git pull」。` : '沒有需要更新的檔。'); }
     }
@@ -1147,58 +569,47 @@ async function ioAct(act){
 }
 
 
-// ═══════════════════════════ 右側面板事件（共用委派） ═══════════════════════════
+// ═══════════ 右側面板事件（共用委派）═══════════
 function bindSide(){
   const side = $('side');
   side.onclick = e => {
-    const b = e.target.closest('[data-act],[data-stab],[data-ci],[data-li],[data-fi],[data-anchor],.it');
+    const b = e.target.closest('[data-act],.it');
     if(!b) return;
-    if(b.dataset.stab){ E.stab = b.dataset.stab; renderSide(); return; }
-    if(b.dataset.ci != null){ E.color = +b.dataset.ci; if(E.color===0 && E.tool==='pen'){ /* 透明色＝擦 */ } renderSide(); return; }
-    if(b.dataset.li != null){ const li = +b.dataset.li, tg = e.target.closest('.ic'); if(tg){ const L = E.layers[li]; pushUndo('all'); L[tg.dataset.lt] = !L[tg.dataset.lt]; eSave(); eRender(); } else E.layer = li; renderSide(); return; }
-    if(b.dataset.fi != null){ E.frame = +b.dataset.fi; E.sel = null; eRender(); renderSide(); return; }
-    if(b.dataset.anchor){ E.resizeAnchor = b.dataset.anchor; $$('#anch button').forEach(x => x.classList.toggle('on', x===b)); return; }
     if(b.classList.contains('it')){
       const tg = e.target.closest('.ic'); const scn = curScene();
-      if(b.dataset.iid){ const it = scn.items.find(i=>i.iid===b.dataset.iid); if(tg){ it[tg.dataset.tg] = !it[tg.dataset.tg]; stamp(scn); touch(); } else { S.sel = it.iid; S.selA=-1; } renderSide(); sRender(); }
+      if(b.dataset.iid){ const it = scn.items.find(i=>i.iid===b.dataset.iid);
+        if(tg){ it[tg.dataset.tg] = !it[tg.dataset.tg]; stamp(scn); touch(); } else { S.sel = it.iid; S.selA=-1; }
+        renderSide(); sRender(); }
       if(b.dataset.ai!=null){ S.selA=+b.dataset.ai; S.sel=null; renderSide(); sOverlay(); }
       return; }
     const act = b.dataset.act;
-    if(ST.mode==='obj') eAct(act); else if(ST.mode==='scene') sAct(act); else if(ST.mode==='story') tAct(act);
+    if(ST.mode==='scene') sAct(act); else if(ST.mode==='story') tAct(act);
   };
-  side.ondblclick = e => { const ly = e.target.closest('.ly'); if(ly && ST.mode==='obj'){ E.layer = +ly.dataset.li; eAct('lrename'); } };
-  side.oncontextmenu = e => { const sw = e.target.closest('.sw'); if(!sw || sw.dataset.ci==null || +sw.dataset.ci===0) return; e.preventDefault(); const obj=curObj(); const k = E.keys[+sw.dataset.ci]; const c = prompt(`顏色「${k}」的 #hex`, obj.palette[k]); if(c && /^#[0-9a-f]{3,6}$/i.test(c)){ pushUndo('all'); obj.palette[k]=hex6(c).toLowerCase(); eLut(); eSave(); eRender(); renderSide(); } };
   side.onchange = e => {
-    const t = e.target; const obj = curObj(), scn = curScene(), st = curStory();
-    if(ST.mode==='obj' && obj && obj.kind==='pixel'){
-      if(t.id==='oColorPick' || t.id==='oColorHex'){ if(!E.color) return; const c = hex6(t.value); if(!/^#[0-9a-f]{6}$/i.test(c)) return; pushUndo('all'); obj.palette[E.keys[E.color]] = c.toLowerCase(); eLut(); eSave(); eRender(); renderSide(); return; }
-      if(t.id==='oFps'){ E.fps = clamp(+t.value||8,1,60); eSave(); return; }
-      if(t.id==='oDur'){ const v = +t.value; if(!E.durations) E.durations = Array.from({length:nFrames()}, ()=>Math.round(1000/E.fps)); E.durations[E.frame] = clamp(v||Math.round(1000/E.fps),10,10000); eSave(); return; }
-      if(t.id==='oOnionP'){ E.onionPrev=t.checked; eRender(); return; } if(t.id==='oOnionN'){ E.onionNext=t.checked; eRender(); return; }
-      if(t.id==='prevTile'){ E.tile=t.checked; eToolbar(); eRender(); return; }
-      if(E.ref){ if(t.id==='oRefAbove') E.ref.above=t.checked; if(t.id==='oRefFit') E.ref.fit=t.checked; if(t.id==='oRefX') E.ref.x=+t.value||0; if(t.id==='oRefY') E.ref.y=+t.value||0; if(t.id==='oRefS') E.ref.scale=+t.value||1; if(/^oRef/.test(t.id)){ eRender(); return; } }
-    }
-    if(t.dataset.k && obj){ const k=t.dataset.k; if(k==='name') obj.name=t.value.trim()||obj.name; if(k==='tags') obj.tags=t.value.split(/[,，]/).map(s=>s.trim()).filter(Boolean); if(k==='notes') obj.notes=t.value; if(k==='frames' && obj.kind==='image') obj.frames=t.value.split('\n').map(s=>s.trim()).filter(Boolean); if(k==='ax'||k==='ay'){ obj.anchor=P.anchorOf(obj); obj.anchor[k==='ax'?'x':'y']=+t.value; } stamp(obj); touch(); renderLib(); if(k==='ax'||k==='ay') eRender(); }
+    const t = e.target; const scn = curScene(), st = curStory();
     if(t.dataset.sk && scn){ const k=t.dataset.sk; if(k==='name') scn.name=t.value.trim()||scn.name; if(k==='w'||k==='h') scn[k]=clamp(+t.value||scn[k],16,4096); if(k==='bg') scn.bg = t.value.trim()? {src:t.value.trim()} : null; if(k==='bgColor') scn.bgColor = t.value.trim()||null; if(k==='bgColorPick') scn.bgColor = t.value; if(k==='notes') scn.notes=t.value; stamp(scn); touch(); renderLib(); renderSide(); sRender(); }
     if(t.dataset.ik && scn){ const it=sItem(); if(!it) return; const k=t.dataset.ik; if(k==='flip') it.flip=t.checked; else if(k==='depth') it.depth = t.value===''? null : +t.value; else if(['x','y','scale','frame'].includes(k)) it[k]=+t.value; else it[k]=t.value; stamp(scn); touch(); renderSide(); sRender(); }
     if(t.dataset.ak && scn){ const a=scn.anchors[S.selA]; if(!a) return; const k=t.dataset.ak; a[k] = (k==='x'||k==='y') ? +t.value : t.value; stamp(scn); touch(); renderSide(); sRender(); }
     if(t.dataset.tk && st){ const k=t.dataset.tk; if(k==='name') st.name=t.value.trim()||st.name; else st[k]=t.value; stamp(st); touch(); T.pos={}; renderSide(); tRender(); }
   };
-  side.oninput = e => { if(e.target.id==='oRefOp' && E.ref){ E.ref.opacity=+e.target.value; eRender(); } };
 }
 
-// ═══════════════════════════ 啟動 ═══════════════════════════
+// ═══════════ 啟動 ═══════════
 (async function init(){
   const src = await loadDB();
-  if(src === 'ls'){ save(); }   // 舊的 localStorage 草稿搬進 IndexedDB
+  if(src === 'ls') save();   // 舊的 localStorage 草稿搬進 IndexedDB
   const first = t => Object.keys(DB[t])[0];
-  if(first('objects')) eLoad(DB.objects[first('objects')]);
-  if(first('scenes')) S.id = first('scenes'); if(first('stories')) T.id = first('stories');
-  const m = new URLSearchParams(location.search).get('mode'); setMode(['obj','scene','story','io'].includes(m)?m:'obj');
-  if(ST.mode==='obj'){ eResize(); eFit(); eRender(); }
-  if(!Object.keys(DB.objects).length && !Object.keys(DB.scenes).length){ fetch('art/pixel/index.json').then(r => r.ok ? r.json() : null).then(idx => { if(idx && confirm('本機草稿是空的。要從本站載入 art/pixel/ 的現成物件與場景嗎？')) { setMode('io'); ioAct('site'); } }).catch(()=>{}); }
-  // 螞蟻線動畫
-  setInterval(()=>{ if(ST.mode==='obj' && E.sel && !E.drag) eRender(); }, 120);
+  if(first('scenes')) S.id = first('scenes');
+  if(first('stories')) T.id = first('stories');
+  try{ EDIT_ID = localStorage.getItem('dipPixelEditorLast') || null; }catch(e){}
+  const m = new URLSearchParams(location.search).get('mode');
+  setMode(['scene','story','io'].includes(m) ? m : 'scene');
+  if(!Object.keys(DB.objects).length && !Object.keys(DB.scenes).length){
+    fetch('art/pixel/index.json').then(r => r.ok ? r.json() : null).then(idx => {
+      if(idx && confirm('本機草稿是空的。要從本站載入 art/pixel/ 的現成物件與場景嗎？')){ setMode('io'); ioAct('site'); }
+    }).catch(()=>{});
+  }
+  window.addEventListener('resize', ()=>{ if(ST.mode==='scene') sRender(); if(ST.mode==='story') tRender(); });
 })();
 </script>
 </body>
