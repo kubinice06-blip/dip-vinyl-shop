@@ -1,0 +1,1104 @@
+{
+ "schemaVersion": 1,
+ "batch": "c87-20260910",
+ "albums": [
+  {
+   "artist": "小栗均トリオ",
+   "album": "みどりいろの渓流",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=小栗均&limit=5 → count>0，score 100 命中藝人實體「小栗均トリオ」cf152acf-524f-4751-988b-6c315eaccf45（另有小栗ひとし 158119b6、小栗アキ 061c4478，皆 score 45 的不同人）",
+      "release-group?artist=cf152acf-524f-4751-988b-6c315eaccf45&limit=100&offset=0（依第 116 條用 release-group browse 分頁，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）→ 回 200、release-groups 陣列長度 0，名下零個 release-group",
+      "release-group?query=releasegroup:\"みどりいろの渓流\"&limit=15 → count=0",
+      "release-group?query=releasegroup:\"Midoriirono Keiryu\"&limit=15 → count=0",
+      "release-group?query=artist:\"小栗均\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "藝人實體「小栗均トリオ」在 MB 上存在但名下 release-group browse 回 0 筆；盤名以日文與羅馬拼音兩種寫法查皆 count=0，artist 字串查也是 count=0。五次查詢全部回 HTTP 200，無 503／403（第 28／98 條），browse 走的是分頁端點而非 25 筆上限的 inc 端點（第 116 條），回傳內容都對得上所查對象、沒有回不相干的實體（第 122 條）。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/11844039",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/HKZQcUxDW8tdZVISeLFasIH4mUiS248y0j0uSzio098/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODQ0/MDM5LTE3NzM1NjEy/NDUtNjc3OS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "11844039"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "母帶在 Kojima Recordings 處理，刻片與壓片交給日本 Victor。1981 年這張鋼琴三重奏的 credit 上有五個人：鋼琴小栗均、貝斯沖山達司、鼓大隅寿夫，照井顕掛製作。七軌裡六軌掛的是外國作曲者，只有 B1〈Blues For Some One〉的作曲欄寫著小栗均自己；2010 年的廠牌回顧輯選走的則是另一軌。Discogs 的建檔者說曲名照他手上那張原盤抄、拼字一個都沒改，條目上因此留著 Satain Doll、Geogia 這樣的寫法。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11844039",
+     "https://www.discogs.com/artist/6035113",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "板倉克行",
+   "album": "海猫の島",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=板倉克行&limit=5 → score 100「板倉克行」a96ca787-ee37-4bcd-b35f-df240da26c01、score 89「板倉克行トリオ」82c3d598-08a0-4056-b1ef-2a3101794ff2",
+      "release-group?artist=a96ca787-ee37-4bcd-b35f-df240da26c01&limit=100&offset=0 → 0 筆；同法查 82c3d598 → 0 筆；查 04bb0d8c（Katsuyuki Itakura Trio）→ 1 筆，是 1994 年的《Excuse Me, Mr. Satie》",
+      "release-group?query=releasegroup:\"海猫の島\"&limit=15 → count=0",
+      "release-group?query=releasegroup:\"Uminekono Shima\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "兩個板倉克行相關的 MB 藝人實體名下 release-group 皆為 0；第三個實體只有一張 1994 年的合作盤，與 1982 年的《海猫の島》不是同一張碟。盤名以日文與羅馬拼音查皆 count=0。全部查詢回 HTTP 200，非 503／403，browse 走分頁端點，回傳實體與所查對象相符。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/11716782",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/vnTxCcWlEm9mj21n16pwrLMlxM0i8wNmvDNWVLZuGf4/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzE2/NzgyLTE2NDAxNDY1/MjAtMTE4NS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "11716782"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1982 年 6 月 3 日，這張鋼琴獨奏錄在廠牌自家那間店裡。陸前高田那家店就叫 Johnny，照井顕在這張碟上掛製作、錄音與剪輯。演奏 credit 只有板倉克行一個人，作曲與編曲也都掛他，另有一條 credit 標出彈的是一台河合 K48；1992 年起他的碟名一路掛著薩提，1994 年那張出在 Leo Records。六軌的題名裡寫著在地的地名，〈三陸縦貫鉄道の夜〉是其一，末了收在〈朝日の如くさわやかに〉，封面題字出自菅原成雨。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11716782",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/artist/1725885",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "園田まゆみ",
+   "album": "午後3時の秋",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=園田まゆみ&limit=5 → score 100「園田まゆみ」89485cc2-ac48-4585-bdcc-5b79d1839150；artist?query=杉野喜知郎 → score 100「杉野喜知郎」bb984ecb-8c7b-47cc-8b91-a8559fb9282b（Japanese jazz pianist）、score 90「杉野喜知郎トリオ」581bd829",
+      "release-group?artist=89485cc2-ac48-4585-bdcc-5b79d1839150&limit=100&offset=0 → 0 筆；同法查 bb984ecb → 0 筆；查 581bd829 → 0 筆",
+      "release-group?query=releasegroup:\"午後３時の秋\"&limit=15 → count=0",
+      "release-group?query=releasegroup:\"Autumn 3:00 P.M\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "主唱與伴奏三重奏共三個 MB 藝人實體，名下 release-group browse 全部回 0 筆；盤名以全形日文與 Discogs 的英譯兩種寫法查皆 count=0。Studio Mule 2019 年的授權復刻也沒有替這張碟在 MB 上建出 release-group。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8826798",
+     "https://www.discogs.com/release/13281724"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/ga0DIgRgYZEfmW-JFOxNFO6gP_EiixSQbF-LDEOavHU/rs:fit/g:sm/q:90/h:582/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg4MjY3/OTgtMTQ2OTYwMzIx/Mi0yMDk3LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "8826798"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "2019 年 Studio Mule 把這張碟重壓成黑膠，配銷交給 Kompakt。曲目與 1982 年的原盤同為十一軌，沒有加曲。十一軌裡有兩軌出自碟上的樂手：A1〈It's Over〉的詞曲掛鋼琴手杉野喜知郎，B2 的作曲掛鼓手——而那位鼓手在原盤 credit 上有兩種寫法。錄音是 1982 年 8 月 30 日，人聲配鋼琴三重奏，照井顕掛製作與內頁。歌手要到 2006 年才又出第二張《Love Letters》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8826798",
+     "https://www.discogs.com/release/13281724",
+     "https://www.discogs.com/master/1509793",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/artist/5173457",
+     "https://www.discogs.com/artist/4406987"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "キングコングパラダイス",
+   "album": "あつさもさむさも",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=キングコングパラダイス&limit=5 → score 100 命中「キング・コング・パラダイス」840c561d-cbda-4c2b-9244-5042066ae2ca；artist?query=King Kong Paradise → 同一實體 score 100（另有 Louisville 的 King Kong 樂團與雷鬼歌手 King Kong，score 60，均非本團）",
+      "release-group?artist=840c561d-cbda-4c2b-9244-5042066ae2ca&limit=100&offset=0 → 1 筆：《1000⁄1 青い空になれ》1979，非本盤；1984 年的《あつさもさむさも》不在名下",
+      "release-group?query=releasegroup:\"あつさもさむさも\"&limit=15 → count=0",
+      "release-group?query=artist:\"キングコングパラダイス\"&limit=15 → count=0；artist:\"King Kong Paradise\" → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體存在但名下只有一個 1979 年的 release-group，本盤不在其中；盤名直接查 count=0，藝人字串以日文與羅馬拼音查也都 count=0。Studio Mule 2019 年的授權復刻同樣未在 MB 建檔。查詢全部 HTTP 200，browse 走分頁端點，回傳的是所查團名本身而非不相干實體。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7458106",
+     "https://www.discogs.com/release/13383313"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/OITzjzHZ9o8q5JIbq22CXt292mGH1ARC5IreEHgjc1c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NTgx/MDYtMTQ0MTg5MDA2/OC04NjIwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "7458106"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "爵士廠牌的目錄裡，這一張的曲風欄掛了 Jazz、Rock 與 Reggae。樂團六個人：主唱兼打擊、三把吉他、貝斯、康加與打擊，照井顕掛製作與錄音。柴崎祐二在 TURN 的專文寫 A1〈フジヤマ〉把樂團一路推進的有機律動擱到一邊，改用節奏機與合成器，聽得出同時期英國後龐克那種冷徹的節拍。同一篇記樂團 1976 年在ヤマハポプコン得獎、隔年在 TAM 出道、1979 年在 Bourbon 出第二張；錄音則是 1983 年 7 月 5 至 9 日做的。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7458106",
+     "https://www.discogs.com/release/13383313",
+     "https://mulemusiq.bandcamp.com/album/atsusa-mo-samusamo",
+     "https://turntokyo.com/features/serirs-bptf1/",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/artist/3641338"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "中村ヨシミツ",
+   "album": "魂のギター",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=中村ヨシミツ&limit=5 → score 100「中村ヨシミツ」ebc37ecb-49a1-438b-aae3-36632238f763（其餘為中村あゆみ／中村中，score 44–45 的不同人）；artist?query=Yoshimitsu Nakamura → 同一實體 score 100",
+      "release-group?artist=ebc37ecb-49a1-438b-aae3-36632238f763&limit=100&offset=0 → 0 筆",
+      "release-group?query=releasegroup:\"魂のギター\"&limit=15 → count=0",
+      "release-group?query=artist:\"中村ヨシミツ\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名與藝人字串查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走 release-group?artist= 的分頁端點而非 25 筆上限的 inc 端點。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15944151",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/gLuq4QrNYc8L9BE8osT34f05CZoJzzDHQcQ3ZOiHXr4/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQ0/MTUxLTE2MjEyODI5/MjQtMzMwNi5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "15944151"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "製作欄上排著五個名字，第一個是照井顕。唱片上那份日文註記還記下錄音是 1983 年 9 月 8 至 9 日，地點在山梨縣大泉高原的民宿ペンション糸車。七軌都登了長度，最長的〈雷鐘〉9 分 5 秒；原盤 credit 只有四條，沒有第二位演奏者，封面畫出自榊原匡章。他在 1979 至 1985 年間替山崎ハコ、高橋ていこ、石黒ケイ伴奏。至於這張碟有 modal 的段落、也有對靜默與即興的處理，那是唱片條目自己的說法。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15944151",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/artist/4609269",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "平岡睦男とナチュラル・ブギー",
+   "album": "ジョニー・マイ・ハウス",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=平岡睦男&limit=5 → score 100「平岡睦男とナチュラル・ブギー」772aa68d-43ed-4ef7-bc4d-f76b9ea1c94c；artist?query=Mutsuo Hiraoka → 回 TAK HIRAOKA d90eabc7、Hiraoka Kotaro 14fea76a、Ryan Hiraoka 15637a6f，皆非本人（第 122 條：回了不相干的東西不算命中）",
+      "release-group?artist=772aa68d-43ed-4ef7-bc4d-f76b9ea1c94c&limit=100&offset=0 → 0 筆；另查 d90eabc7（TAK HIRAOKA）→ 0 筆、14fea76a → 1 筆《Atuy》2020，皆與本盤無關",
+      "release-group?query=releasegroup:\"Johnny My House\"&limit=15 → count=0",
+      "release-group?query=releasegroup:\"ジョニー・マイ・ハウス\"&limit=15 → count=0；artist:\"平岡睦男\" → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體「平岡睦男とナチュラル・ブギー」存在但名下 release-group browse 回 0 筆；盤名以日英兩種寫法查皆 count=0。羅馬拼音的 artist 搜尋回的是同姓的其他人（TAK HIRAOKA 等），依第 122 條不計為命中，並已逐一 browse 確認名下沒有本盤。查詢全部 HTTP 200。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12434389",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "blues",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/SPvI9WKWT5TGPWjF4ArmZ-zz5YmqP_RPGE6daj3hd_8/rs:fit/g:sm/q:90/h:460/w:460/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDM0/Mzg5LTE1NjA5Mjk3/NzMtODM3NS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "12434389"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片附一張插頁，另附一張意見回函卡。2020 年一篇具名報導記下廠牌的來歷：照井顕 1975 年在陸前高田開了爵士喫茶，2001 年遷到盛岡的開運橋畔，1974 年穐吉敏子的《孤軍》是他投入爵士的契機。編號從 JD-01 排到 JD-16，其中 JD-14 與 JD-15 查不到條目。這張是五人、兩把電吉他，回顧輯選走的〈ガキの頃から〉在 A 面；曲風欄登的是 Blues 與 Folk, World, & Country，八軌都有長度，最短一軌 2 分 2 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12434389",
+     "https://mulemusiq.bandcamp.com/album/atsusa-mo-samusamo",
+     "https://san-tatsu.jp/articles/25042/",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/artist/6665674"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "板倉克行トリオ",
+   "album": "ハニー・サンバ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=板倉克行トリオ&limit=5 → score 100「板倉克行トリオ」82c3d598-08a0-4056-b1ef-2a3101794ff2；artist?query=Itakura Katsuyuki Trio → 同一實體 score 100",
+      "release-group?artist=82c3d598-08a0-4056-b1ef-2a3101794ff2&limit=100&offset=0 → 0 筆",
+      "release-group?query=releasegroup:\"Honey Sanba\"&limit=15 → count=0；releasegroup:\"Honey Samba\" → count=0",
+      "release-group?query=releasegroup:\"ハニー・サンバ\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體「板倉克行トリオ」名下 release-group browse 回 0 筆；盤名以片假名與兩種羅馬拼寫（Sanba／Samba）查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/9265825",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/yvJ0m4IsMDC-f-B4X3OmiA4EgWlHw0SZ3sIbQC3Oslc/rs:fit/g:sm/q:90/h:200/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyNjU4/MjUtMTQ3NzkwMjc4/NS02MDkyLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "9265825"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "掛名寫三重奏，credit 上鼓只在 A 面、長笛只在 B 面。內頁署名三個人：照井顕、民謠歌手友部正人與山崎久栄。貝斯也是兩面各換一位，A 面本庄修、B 面水野俊介。2010 年的廠牌回顧輯收了 A1〈密林サンバ〉，曲名卻與原盤封套不同；盤名 Honey Sanba 正是這一軌封套上並列的英文名。2021 年英國 BBE 的合輯《J Jazz: Deep Modern Jazz From Japan (Volume 3)》也把它收了進去。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9265825",
+     "https://www.discogs.com/release/17629831",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/artist/8923576",
+     "https://www.discogs.com/artist/1725885",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "リー・ウォンヒーイ＋菊他コージ",
+   "album": "グロー",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Lee Won Hui&limit=5 → score 100「リーウォンヒー」5ecbe2eb-6eff-4ff8-aec9-af300cc1352a；artist?query=菊他コージ／菊池コージ → score 100「菊地コージ」6b9613b9-fbc8-4f60-8496-5ccab2d0dfaa。（artist?query=リー・ウォンヒー 回的是 Jerry Lee Lewis b59ac58d 與 Brenda Lee 6ca4886a，依第 122 條不計為命中）",
+      "release-group?artist=5ecbe2eb-6eff-4ff8-aec9-af300cc1352a&limit=100&offset=0 → 0 筆；release-group?artist=6b9613b9-fbc8-4f60-8496-5ccab2d0dfaa&limit=100&offset=0 → 0 筆；另 browse b59ac58d（Jerry Lee Lewis，453 筆）與 6ca4886a（Brenda Lee，139 筆）確認名下無 1985 年的《グロー》",
+      "release-group?query=releasegroup:\"Grow\" AND artist:\"Lee Won Hui\"&limit=15 → count=0",
+      "release-group?query=releasegroup:\"グロー\"&limit=15 → count=1，回的是 TAROLIN《スラッシュ・クロー》(2024)，非本盤；artist:\"リー・ウォンヒー\" → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "兩位當事人的 MB 實體都在（リーウォンヒー、菊地コージ），名下 release-group browse 皆為 0；盤名以英文與片假名查，一個 count=0、一個只回 2024 年 TAROLIN 的不相干條目。羅馬拼音的 artist 搜尋被 MB 糊到 Jerry Lee Lewis／Brenda Lee，屬第 122 條的假查無形狀，已逐一 browse 排除。查詢全部 HTTP 200，browse 走分頁端點（Jerry Lee Lewis 名下 453 筆確實分了五頁掃完，第 116 條）。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/3828868",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/0R1nP73_hu0GcA9WO89JA3a0Xnaa9k5LOkXFyE7Glc8/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4Mjg4/NjgtMTM0NjAyMTkx/Ni01MDg4LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "3828868"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈アイルランド・フォーク〉那一軌，條目註明曲調是英格蘭傳統曲。同一份條目逐軌對照曲名來源：B 面幾軌分別標出孟克、Steve Lacy 與艾靈頓的出處，A 面前五軌沒有標出外部作者。封面印著兩個人的名字，credit 上還有高木元輝掛著 Leader。錄音是 1985 年 6 月 1 至 3 日，內頁除了照井顕的文字，還有一首署名照井由紀子的詩。2010 年的雙 CD 回顧輯從這條廠牌線挑了二十三軌，分成 Jazz Ground 與 Under Ground 兩片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3828868",
+     "https://www.discogs.com/release/10928701",
+     "https://www.discogs.com/artist/3153460",
+     "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hitoshi Okano",
+   "album": "Double Image",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=岡野等&limit=5 → score 100「岡野等」1cc7a89b-0858-4b83-bcfc-8461ba2b2187（Japanese trumpeter）；artist?query=Hitoshi Okano → 回崎元仁 53a2cda4（score 90）等不相干對象（第 122 條形狀）",
+      "release-group?artist=1cc7a89b-0858-4b83-bcfc-8461ba2b2187&limit=100&offset=0 → 1 筆《Hard Boiled》(2018-09-20)，非本盤；browse 53a2cda4（崎元仁）→ 90 筆，分頁掃完全是遊戲配樂，無本盤",
+      "release-group?query=releasegroup:\"Double Image\" AND artist:\"Okano\"&limit=15 → count=0",
+      "release-group?query=artist:\"Hitoshi Okano\"&limit=15 → count=1，即上述《Hard Boiled》"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體存在但名下只有一筆 2018 年的碟，1982 年的《Double Image》不在其中；盤名加藝人交叉查 count=0，artist 字串查回的唯一一筆已排除。羅馬拼音搜尋被 MB 糊到遊戲配樂作曲家，已分頁 browse 排除。查詢全部 HTTP 200，非 503／403。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/9247209",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/yY_0PR2fm-uZIlN68JZngONljmrMLwzmlqr5RuilQdM/rs:fit/g:sm/q:90/h:574/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyNDcy/MDktMTQ3NzMxNTAy/My0zNzY3LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "9247209"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "貝斯手一個人掛了木貝斯與電貝斯兩件。鋼琴那欄也是兩件——大德俊幸的原聲鋼琴與電鋼琴。連小號的岡野等在內，credit 只有六個名字，製作 Genji Sawai、工程菊池信一各佔一欄。七軌 A 面三首、B 面四首，收在 B4〈Double Image〉；那份原盤條目沒有錄音日期、沒有曲長，也沒有替任何一軌登錄作曲者，版本頁底下只有兩筆，都是 1982 年的黑膠。川端民生 1947 年生於北海道遠輕，綽號バタさん，1978 年參與了ネイティブ・サン的組成。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9247209",
+     "https://www.discogs.com/master/1550797",
+     "https://www.discogs.com/artist/1398488-Hitoshi-Okano",
+     "https://ja.wikipedia.org/wiki/川端民生",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fumio Watanabe Quintet",
+   "album": "Groovin' High",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=渡辺文男&limit=5 → score 100「渡辺文男」de2f1850-1a13-4c56-9b6f-1bd27783f437（jazz drummer）；artist?query=Fumio Watanabe → 同一實體 score 100（另有 fumio 3e51a3a9、HIROSHI WATANABE d9f4c157，皆非本人）",
+      "release-group?artist=de2f1850-1a13-4c56-9b6f-1bd27783f437&limit=100&offset=0 → 0 筆；browse 3e51a3a9（fumio）→ 0 筆",
+      "release-group?query=releasegroup:\"Groovin High\" AND artist:\"Watanabe\"&limit=15 → count=0",
+      "release-group?query=artist:\"Fumio Watanabe\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名加藝人的交叉查與 artist 字串查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/12244873",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/uRpWkVn1fwE6dAARDwfcrN969AQ_FDLroZDTHv0EWvs/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjQ0/ODczLTE1MzEzMDgw/MTUtNDgwMC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "12244873"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他先是歌手，1960 年才改打鼓。碟上五個人，太田寛二那一欄寫的不是鋼琴而是 Baby Grand Piano，小杉敏那一欄寫 Contrabass，兩位都在他 1979 年的《FUMIO》上；七軌都登了長度，〈Bloomdido〉七分十八秒，發行日登錄為 1982 年 6 月 20 日。他 1938 年生於宇都宮，薩克斯手渡辺貞夫是他兄長，1976 年組成自己的五重奏。曾在他樂團裡的鋼琴手這樣回憶他：節奏感絕佳，一個滿是歌的人。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12244873",
+     "https://ja.wikipedia.org/wiki/渡辺文男_(ミュージシャン)",
+     "https://www.discogs.com/artist/1086541-Fumio-Watanabe",
+     "https://www.discogs.com/artist/3455739-Kanji-Ohta",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yoshino Yanagihara",
+   "album": "Summer Rain",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Yoshino Yanagihara&limit=5 → 回 Hanya Yanagihara d1031495（American writer，score 100）、Yoshino da717871、Yoshino 25c4604f，無本人；artist?query=柳原よしの／柳原芳乃 → 回柳原康 5f13e8d7、芳乃 48df8e56、柏原芳恵 e49bdf19，皆非本人（第 122 條形狀）",
+      "release-group?artist=d1031495-0132-4f8d-be42-ad1948f37e62&limit=100&offset=0 → 1 筆《A Little Life》(2016)；browse da717871 → 3 筆；browse 5f13e8d7 → 0 筆；browse e49bdf19（柏原芳恵）→ 93 筆分頁掃完，皆無本盤",
+      "release-group?query=releasegroup:\"Summer Rain\" AND artist:\"Yanagihara\"&limit=15 → count=0",
+      "release-group?query=artist:\"Yoshino Yanagihara\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 上沒有這位藝人的實體，羅馬拼音與三種日文寫法的搜尋回的都是不相干的人（美國小說家、其他歌手），已逐一分頁 browse 確認名下沒有本盤；盤名加姓氏的交叉查與全名 artist 字串查皆 count=0。查詢全部 HTTP 200，非 503／403。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10375628",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/fUMMgbcd_JJu9AmKAxs00SCc4N1qo6as0aSoAwAP1M0/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc1/NjI4LTE3NzcyMjQ3/NTctODEzMy5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "10375628"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "作曲欄整張碟都掛她，作詞欄只掛最後一首。那一首是 B4〈Como Estas〉。她另外掛了長笛、中音長笛與人聲三欄，碟上還有一位男聲同掛 Vocals；伴奏是鼓、電貝斯與打擊，加一位同時彈鋼琴、Fender Rhodes、木吉他與卡林巴的人。1982 年 10 月 20 至 21 日錄於帝音杉並スタジオ，註記欄寫著 Technics Digital Recording，工程班底分成四欄，其中一欄專掛數位。八軌都登了長度，最短三分二十七秒、最長六分十二秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10375628",
+     "https://www.discogs.com/artist/5848854-Yoshino-Yanagihara",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Akira Ohmori",
+   "album": "To Be Young and Foolish",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Akira Ohmori&limit=5 → score 100「Akira Ohmori」a6ac96a2-4dec-4a44-85fa-d1c49bfac81b；artist?query=大森明 → 回中森明菜 9f18e7f6（score 100）、大森靖子 bcb49893、大森俊之 099116a7，皆非本人（第 122 條形狀）",
+      "release-group?artist=a6ac96a2-4dec-4a44-85fa-d1c49bfac81b&limit=100&offset=0 → 0 筆；browse 9f18e7f6（中森明菜）→ 201 筆，分頁掃完（第 116 條）皆無本盤",
+      "release-group?query=releasegroup:\"To Be Young and Foolish\"&limit=15 → count=0",
+      "release-group?query=artist:\"Akira Ohmori\"&limit=15 → count=0"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；以日文寫法查回的是中森明菜等完全不相干的人，已分頁 browse 排除；盤名直接查與 artist 字串查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 一律走 release-group?artist= 的分頁端點而非 25 筆上限的 inc 端點。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/21235555",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/X3W-douAcP2lbBkHqqlK_mwvTtyk4mee8Rp6v-OTeWE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMjM1/NTU1LTE2Mzg2OTg5/MzAtNTg0OC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "21235555"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Mingus《Me Myself An Eye》的薩克斯部門裡，有他的名字。同一欄還有 Lee Konitz 與 Michael Brecker，那是 1979 年。1983 年他自己領銜，credit 五個人：他的中音薩克斯兼共同製作，加上 bebop 代表人物 Barry Harris、貝斯 Ron Carter、鼓 Leroy Williams。錄音室欄寫 Vanguard Studios、工程 David Baker；那份條目沒有日期，七軌也沒有登錄作曲者。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/21235555",
+     "https://www.discogs.com/artist/1969151-Akira-Ohmori",
+     "https://www.discogs.com/release/10801906",
+     "https://en.wikipedia.org/wiki/Barry_Harris",
+     "https://en.wikipedia.org/wiki/Ron_Carter",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Takashi Furuya",
+   "album": "Body and Soul",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=古谷充&limit=5 → score 100「古谷充」42392061-5d27-4e1d-86bb-876f6a799325；artist?query=Takashi Furuya → score 100「Takashi Furuya」262da465-6ec1-44de-8d50-8df5b6b0d8c8、score 68「Takashi Furuya & The Freshmen」c13f331f",
+      "release-group?artist=42392061-5d27-4e1d-86bb-876f6a799325&limit=100&offset=0 → 0 筆；release-group?artist=262da465-6ec1-44de-8d50-8df5b6b0d8c8&limit=100&offset=0 → 2 筆（Touch of Your Lips 1985、Solitude 1975），皆非本盤",
+      "release-group?query=releasegroup:\"Body and Soul\" AND artist:\"Furuya\"&limit=15 → count=0",
+      "release-group?query=artist:\"Takashi Furuya\"&limit=15 → count=2，即上述兩筆"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "兩個對應同一人的 MB 實體都 browse 過，一個 0 筆、一個只有 1975 與 1985 年的別張碟；盤名加藝人的交叉查 count=0，artist 字串查回的兩筆已逐一排除。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/5435962",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/yV8dN6u9vFErRRNjSGLE6hX4aOfrqq85jrcXwHXs4z8/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0MzU5/NjItMTM5MzI5NTA1/Mi0xMTgwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "5435962"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十九歲他有了自己的樂團，二十三歲組的フレッシュメン開了十八年。班底是鋼琴辛島文雄、鼓日野元彦、貝斯櫻井郁雄，1983 年 2 月 2 與 3 日兩天錄成，內頁他自己寫，六軌收在他作曲的〈Alto Street〉。他 1936 年生於澀谷，父親是爵士單簧管與薩克斯奏者，1952 年在父親建議下買了中音薩克斯。辛島文雄從 1980 年起有六年參加 Elvin Jones = Jazz Machine。1991 年帝音把這張碟做成 TECP 編號的 CD。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5435962",
+     "https://www.discogs.com/master/1270909",
+     "https://www.discogs.com/release/9288790",
+     "https://ja.wikipedia.org/wiki/古谷充",
+     "https://ja.wikipedia.org/wiki/辛島文雄",
+     "https://ja.wikipedia.org/wiki/日野元彦",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hidehiko Matsumoto",
+   "album": "Hot Jazz",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=松本英彦&limit=5 → score 100「松本英彦」d4027a8f-6a56-43d9-81cc-c80084d22b58；artist?query=Hidehiko Matsumoto → 同一實體 score 100，另有 Hidehiko Matsumoto Quintet 53f0f608、Hidehiko Matsumoto Quartet e16e946c",
+      "release-group?artist=d4027a8f-6a56-43d9-81cc-c80084d22b58&limit=100&offset=0 → 11 筆（Jam In Yokota 1973、Special Pink Mood Deluxe Vol.2 1969、Operation Sam Taylor 1967、演歌の祭典 1969、Fascinating Tenor-Sax 1966、Sleepy 1976、Let's Swing Now 1976、Rio Manhattan 1981、歌のない流行歌150 2014、Four Wings 2023、The Session 1980），無《Hot Jazz》；release-group?artist=53f0f608&limit=100&offset=0 → 0 筆",
+      "release-group?query=releasegroup:\"Hot Jazz\" AND artist:\"Matsumoto\"&limit=15 → count=0",
+      "release-group?query=artist:\"Hidehiko Matsumoto\"&limit=15 → count=4，全部是上列 browse 已見的 1966–1980 年條目，無本盤"
+     ],
+     "checkedAt": "2026-09-04T05:40:00Z",
+     "conclusion": "MB 藝人實體存在、名下 11 個 release-group 分頁掃完沒有《Hot Jazz》，編制實體名下也是 0 筆；盤名加藝人的交叉查 count=0，artist 字串查回的四筆與 browse 結果一致。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/6342409",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ],
+    "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/8gb4sMaYbRZXKtsyqi0gW9uTWvogUCcR7fCvJceIo_c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDI0/MDktMTYxNzk3MDQx/OC02NzM5LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "6342409"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "「スリーピー」這個綽號，是美軍的軍人給他的。日文維基記他 1926 年生於岡山，1944 年起在橫濱一帶的美軍場所演奏；1953 年與ジョージ川口、中村八大、小野満組成ビッグ・フォア，1963 年成為第一位受邀出演蒙特勒的日本人。1991 年那張 CD 的註記寫著，原盤黑膠的發行日是 1983 年 7 月 21 日，而那一版是直接從原始母帶在東京的音響ハウス重製的。碟上是四個人，整張只有五軌——A 面三首收在〈Rhythm-A-Ning〉，B 面兩首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6342409",
+     "https://www.discogs.com/release/6012167",
+     "https://www.discogs.com/master/724327",
+     "https://ja.wikipedia.org/wiki/松本英彦",
+     "https://ja.wikipedia.org/wiki/ジョージ大塚",
+     "https://www.discogs.com/release/5435962",
+     "https://www.discogs.com/label/136308-Union-Jazz"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

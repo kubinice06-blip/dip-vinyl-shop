@@ -1,5 +1,88 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-10｜dip-vinyl-shop｜§4 增列 Discogs 封面來源，解除舊批留置 65 張；c-107 池中簡轉繁
+
+店主 09-10 裁定：「DISCOGS 當封面來源，但是要註記、建立名單、讓我日後能做管理」，
+其餘四件待決事項「直接開始做」。這一筆記封面來源與舊批解除留置；c-77～c-125 的
+四十八批上架另記一筆。
+
+## 一、§4 增列第四種封面來源 `discogs`
+
+CAA 以 release-group MBID 為鍵，對私壓、小廠與非英美發行的覆蓋率低
+（c-79 只有 48%、c-82 47%、c-114 的 40 張 CAA 全空）。Discogs 是**版本級**資料庫，
+卡上既有的年份、廠牌、目錄號可以直接拿來釘同一張壓片。
+
+**與被禁的「iTunes 模糊搜尋」的差別在證據種類**：禁的是拿標題相似度當證據；
+這裡是版本欄位比對——藝人與盤名相符只是入場券，**還要在年份／廠牌／目錄號裡至少對上兩項**。
+
+要件三項（`scripts/verify-album-onboarding.mjs` 逐項檢查，缺一即 error）：
+1. `cover.discogsReleaseId`（release 層級數字 id，不是 master、不是搜尋字串）；
+2. 年份／廠牌／目錄號至少對上兩項；
+3. **逐張登錄 `data/discogs-cover-registry.json`**——沒登錄的 id 驗證器直接擋。
+   名單有 `reviewed` 欄（pending／ok／rejected）供店主管理，
+   `node scripts/render-discogs-registry.mjs` 產可讀版 `data/DISCOGS-COVERS.md`。
+
+**成效**：c-87 那 15 張 CAA 與 Apple 都查無的日本自主爵士盤，命中 14 張，
+而且**每一張都是年份＋廠牌＋目錄號三項全中**（Johnny's Disk JD-06～JD-13、Union Jazz ULP-5502 起）。
+
+**新腳本 `batch-progress/discogs-covers.mjs` 踩到兩個會讓整條線失效的坑**：
+1. **CJK 掛名必須用 `q=` 自由字串**。`artist=`＋`release_title=` 欄位查對 CJK 整組回 0
+   （板倉克行《海猫の島》回 0 筆，換 `q=` 第一筆就是正確的 JD-07）——Discogs 的 CJK 掛名
+   寫成「板倉克行* = Katsuyuki Itakura」，欄位查比對的是掛名欄本身。
+2. **搜尋結果的 `cover_image` 對老盤常是空的**，但 `/releases/{id}` 的 `images` 有。
+   圖一律走 release 端點取。
+3. **舊批的 `cand-all.json` 只有 artist／album／year，沒有 label 也沒有 mbNote**，
+   可比對的只剩年份一項、永遠過不了兩項門檻——首跑 c48～c52 全數 0 命中就是這個，
+   不是 Discogs 沒有那些碟。改成缺料時回 MusicBrainz 補廠牌與目錄號再比，c-50 立刻 2/2 全中。
+
+**圖片沿用 Discogs 圖床網址**（與 CAA／Apple／Spotify 現行做法一致），但那些網址帶簽名、
+可能失效，Discogs 條款對圖片另有限制——名單留下 release id 就是為了日後能整批重抓或改自存。
+
+## 二、§4 同時放寬 `apple-verified-collection` 的適用範圍
+
+原本只給 §1 人工身分卡。CAA 沒有那張碟與「這張卡有沒有 MBID」是兩件獨立的事——
+c-104 有 14 張、c-108 有 6 張都釘得住 release-group 卻 CAA 全空，卡在一條與它們無關的限制上。
+**要件不變**（確切 collectionId ＋ 那一頁的 HTTPS 網址），因為要件擋的是模糊搜尋、不是身分路線。
+
+## 三、解除舊批留置 65 張
+
+144 張留置（142 張缺封面）跑完 Discogs 層後剩 71 張，實際上架 **65 張**
+（c-49 4、c-50 2、c-53 5、c-55 2、c-56 2、c-57 2、c-58 1、c-59 2、c-60 1、c-67 5、
+c-68 1、c-70 3、c-71 6、c-72 3、c-73 2、c-74 2、c-75 6、c-87 14、c-SEA 2）。
+卡池 14,424 → **14,488**。19 道 prepare gate ＋ 19 道 published gate 全部 0 error、
+card_catalog 65/65、KV 83 筆逐字回讀一致。
+
+**Discogs 層順手修好三張先前被模糊層配錯的封面**：Company《Company 1》（先前配到
+Maranatha! Kids' Praise **Company** 的兒童敬拜碟，現在是正確的 Incus 1977 綠色封面，
+credit 印著 Bailey／Parker／Honsinger／Altena）、John Holt《Still In Chains》（先前配到 1 軌單曲，
+現在是 Dynamic DY3325 原盤）、Lobi Traoré《Bamako》（Buda Musique 原盤）。
+抽驗九張逐張看圖，**零退回**——版本欄位比對的準確度明顯高於先前三層模糊比對。
+
+**⚠ 兩張補曲風**：劉文正《三月裡的小雨》與沈文程《心事誰人知》的策展曲風寫 `chinese`，
+不在音樂地圖十類裡，`build-seed-genres` 也查不到，追加後是空曲風欄（首頁抽不到）。
+比照池中鳳飛飛／江蕙的寫法補成 `pop` 與 `pop+folk`。**策展層寫非白名單曲風時會靜默留空，
+上架後要掃一次無曲風欄。**
+
+## 四、c-107 上架前的池中簡體轉繁體（店主 2026-09-06 裁定「中文一律繁體」）
+
+依 `batch-progress/c107/pool-simp-to-trad.md` 逐張清單：**改名 13 張、刪重複卡 1 張**
+（`崔健 Cui Jian`／《新长征路上的摇滚》，與純漢字掛名的同一張碟重複）。
+含三張 apex hall：崔健《紅旗下的蛋》、竇唯《黑夢》、唐朝樂隊《唐朝》。
+
+**四處同步**：`seed_cards.json` 14 列、KV 31 個鍵搬移（desc2／desc4／rating4／mapgenre3）、
+Firestore `card_catalog` 13 筆搬移、`card-preview-status.js` 1 個鍵。
+回讀驗證：seed 14 張全部到位、KV 舊鍵殘留 0、Firestore 舊 doc 殘留 0／新 doc 13 筆。
+
+不先改就上 c-107 會生出 `窦唯`／`竇唯` 這種新分裂。
+
+## 主要檔案
+
+`ALBUM_ONBOARDING.md`（§4 兩處）、`scripts/verify-album-onboarding.mjs`、
+`scripts/render-discogs-registry.mjs`（新）、`scripts/filter-manifest-new.mjs`（新）、
+`batch-progress/discogs-covers.mjs`（新）、`batch-progress/apple-cover-from-preview.mjs`、
+`batch-progress/stage-cloud-batch.mjs`、`batch-progress/build-manifest.mjs`、
+`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`seed_cards.json`（14,488 列）。
+
 ### 2026-09-09｜dip-vinyl-shop｜管理員／訪客面板加「🏪 重跑序章」
 
 店主：「我的帳號重置功能也要讓我可以重跑序章」。原本只有沙盒的「全部重置」

@@ -13,7 +13,10 @@ const PREVIEW_STATUSES = new Set(['ready', 'unavailable', 'disabled']);
 // apple-verified-collection 是 ALBUM_ONBOARDING §4 於 2026-09-02（c-64）增列的例外：
 // 人工身分卡沒有 release-group MBID，CAA 這條路在定義上走不通，改用人工核對過的
 // Apple 專輯頁，但必須記下確切的 collectionId 才算數（下面另有一道檢查）。
-const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual', 'apple-verified-collection']);
+// discogs 是 §4 於 2026-09-10 增列的第四種來源（店主核定）：CAA 對私壓／小廠的覆蓋率低，
+// 而 Discogs 是版本級資料庫，能釘到同一張壓片。要件是記下確切的 discogsReleaseId
+// （下面另有一道檢查），並登錄到 data/discogs-cover-registry.json 供日後管理。
+const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual', 'apple-verified-collection', 'discogs']);
 // 曲風 release type 例外（白名單制）：非 Album 只開放給有 12 吋／mix 文化的曲風，見 ALBUM_ONBOARDING.md
 const EXCEPTION_RELEASE_TYPES = new Set(['EP', 'Single', 'DJ-mix']);
 // asia-mini-album（2026-08-23）：日本ミニアルバム與韓國正規 EP，MB 標 EP 但母國市場當專輯發行
@@ -56,6 +59,16 @@ const isHttps = value => typeof value === 'string' && /^https:\/\//i.test(value)
 const previewNorm = value => String(value || '').normalize('NFKD').toLowerCase()
   .replace(/[\u0300-\u036f]/g, '')
   .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\u1100-\u11ff\u3130-\u318f\uac00-\ud7af\u0370-\u03ff\u1f00-\u1fff\u0400-\u052f\u0530-\u058f\u0590-\u05ff\u0600-\u06ff\u0750-\u077f\u0900-\u097f\u0980-\u09ff\u0e00-\u0e7f\u0e80-\u0eff\u1000-\u109f\u10a0-\u10ff\u1200-\u137f\u1780-\u17ff]+/g, '');
+let _dgRegistry;
+function discogsRegistry() {
+  if (_dgRegistry) return _dgRegistry;
+  _dgRegistry = new Set();
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'discogs-cover-registry.json'), 'utf8'));
+    for (const e of (j.entries || [])) if (e && e.discogsReleaseId != null) _dgRegistry.add(String(e.discogsReleaseId));
+  } catch {}
+  return _dgRegistry;
+}
 let _staticMap, _staticStatus;
 function staticAudioMap() {
   if (_staticMap !== undefined) return _staticMap;
@@ -274,6 +287,15 @@ for (let index = 0; index < albums.length; index++) {
     // §4 例外的要件：光說「來自 Apple」不算，要記下確切的 collectionId，本機才能 lookup 覆核
     if (cover.source === 'apple-verified-collection' && !/^\d{5,}$/.test(String(cover.appleCollectionId || ''))) {
       err(label, 'cover.source=apple-verified-collection 必須附 cover.appleCollectionId（§4 例外的要件）');
+    }
+    // 同理：Discogs 來源要記得住是「哪一個 release」，日後才能覆核、換圖或整批遷移。
+    // 另外強制登錄名單——店主 2026-09-10 核可這條來源時的附帶條件就是「要能做管理」。
+    if (cover.source === 'discogs') {
+      if (!/^\d{3,}$/.test(String(cover.discogsReleaseId || ''))) {
+        err(label, 'cover.source=discogs 必須附 cover.discogsReleaseId（§4 的要件，不接受搜尋字串）');
+      } else if (!discogsRegistry().has(String(cover.discogsReleaseId))) {
+        err(label, `cover.discogsReleaseId=${cover.discogsReleaseId} 未登錄 data/discogs-cover-registry.json（§4 要求逐張入名單）`);
+      }
     }
   }
 

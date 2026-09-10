@@ -217,7 +217,7 @@
 
 ### 4. 封面
 
-- 依 Bandcamp → Spotify → Cover Art Archive／release-group 再版補救解析。
+- 依 Bandcamp → Spotify → Cover Art Archive／release-group 再版補救 → **Discogs** 解析。
 - 封面必須核對藝人、專輯與版本，並實際 GET 得到 HTTP 2xx／3xx。
 - iTunes 模糊搜尋不可作封面來源；抓不到可靠封面就停止該筆。
 - **例外：人工身分卡的 `coverSourceHint: "apple-verified-collection"`**（2026-09-02，c-64 增列）。
@@ -229,6 +229,25 @@
   **這與被禁的「iTunes 模糊搜尋」是兩件事**：禁的是拿搜尋結果的第一筆當封面
   （c-52 實測 12 個命中有 5 個可證明是錯的），允許的是人工開過、確認過藝人／盤名／版本的
   那一個具體條目。**沒有 collectionId 就退回「抓不到可靠封面」，停止該筆。**
+  **2026-09-10 店主核定放寬適用範圍**：這條例外原本只給 §1 人工身分卡，現在**釘住 MBID 的卡
+  也適用**。理由是 CAA 沒有那張碟與「這張卡有沒有 MBID」是兩件獨立的事——c-104 有 14 張、
+  c-108 有 6 張都釘得住 release-group 卻 CAA 全空，卡在一條與它們無關的限制上。
+  要件不變（確切 `collectionId` ＋ 那一頁的 HTTPS 網址），因為要件擋的是模糊搜尋，不是身分路線。
+
+- **來源四：`discogs`（2026-09-10 店主核定增列）。**
+  CAA 對私壓、小廠與非英美發行的覆蓋率低（c-79 只有 48%、c-82 47%、c-114 40 張裡 39 張要掃圖），
+  Discogs 則是**版本級**資料庫，卡上既有的 MBID、目錄號、年份、廠牌可以直接拿來釘同一張壓片。
+  **這與被禁的「iTunes 模糊搜尋」不同的地方也在這裡**：禁的是拿標題相似度當證據，
+  Discogs 走的是版本欄位比對。要件三項，缺一不可：
+  1. **記下確切的 `cover.discogsReleaseId`**（release 層級的數字 id，不是 master、不是搜尋字串）；
+  2. **目錄號／年份／廠牌至少對上兩項**，只有藝人與盤名相符不算數；
+  3. **逐張登錄 `data/discogs-cover-registry.json`**——驗證器會檢查，沒登錄的 id 直接 error。
+     名單是店主核可這條來源時的附帶條件（「要註記、建立名單、日後能做管理」），
+     每筆記藝人、盤名、批次、release id 與網址、比對到的欄位、抓取日期、人工核對狀態。
+     `node scripts/render-discogs-registry.mjs` 產出可讀版 `data/DISCOGS-COVERS.md`。
+  **圖片沿用 Discogs 圖床網址**（與 CAA／Apple／Spotify 現行做法一致），但那些網址帶簽名、
+  可能失效，且 Discogs 條款對圖片另有限制；名單留下 release id 就是為了日後能整批重抓或改自存。
+  非 CAA 來源照舊**逐張看圖核對**——歷史上封面誤配全部出自模糊比對層。
 
 ### 5. 固定簡介
 

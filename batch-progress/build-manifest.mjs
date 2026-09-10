@@ -190,7 +190,7 @@ for (const a of cand) {
   // 策展層卻常只把白名單名字寫進 exceptionReason 的開頭（c-70 的 Non Band 就是）。
   // 兩邊都收，缺欄時才從理由字串取白名單名，避免整批因為欄位名不同而卡住。
   const gx = cur.genreException || a.genreException
-    || (String(cur.exceptionReason || '').match(/\b(electronic|asia-mini-album)\b/) || [])[1];
+    || (String(cur.exceptionReason || '').match(/\b(electronic|asia-mini-album|hardcore-7inch)\b/) || [])[1];
   if (gx) identity.genreException = gx;
 
   albums.push({
@@ -208,6 +208,8 @@ for (const a of cand) {
       url: cov.cover.url, source: cov.cover.source, httpStatus: 200, checkedAt: now,
       // §4 的 apple-verified-collection 例外要件：記下確切的 collectionId 供本機 lookup 覆核
       ...(cov.appleCollectionId ? { appleCollectionId: String(cov.appleCollectionId) } : {}),
+      // §4 的 Discogs 來源同樣要把 release id 一路帶進 manifest，驗證器會拿它去對名單
+      ...(cov.discogsReleaseId ? { discogsReleaseId: String(cov.discogsReleaseId) } : {}),
       ...(cov.cover.note ? { note: cov.cover.note } : {}),
     },
     ratings: {

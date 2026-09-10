@@ -15,7 +15,13 @@ if (!batch) { console.error('用法: node batch-progress/apple-cover-from-previe
 const dir = `${ROOT}/batch-progress/${batch}`;
 const P = `${dir}/covers.json`;
 const rows = JSON.parse(fs.readFileSync(P, 'utf8'));
-const probe = JSON.parse(fs.readFileSync(`${dir}/previews.json`, 'utf8'));
+// c-89 起雲端改把探測結果放進跨批共用檔 batch-progress/probe/previews.json，
+// 不再逐批落一份。兩種都吃：先找逐批檔，沒有就用共用檔（鍵一樣是「藝人|盤名」，
+// 下面本來就是逐張用鍵去撈，撈不到就跳過，混不到別批的資料）。
+const probePath = fs.existsSync(`${dir}/previews.json`)
+  ? `${dir}/previews.json`
+  : `${ROOT}/batch-progress/probe/previews.json`;
+const probe = JSON.parse(fs.readFileSync(probePath, 'utf8'));
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 let got = 0, tried = 0;

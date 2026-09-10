@@ -56,7 +56,20 @@ fs.writeFileSync(`${dir}/covers.json`, JSON.stringify(coverRows, null, 1));
 // 欄名對照：previewUrl→url、collectionId→appleCollectionId、front→storefront。
 // no-preview 是探測腳本的說法（Apple 有這張碟但沒給試聽片段），驗證器只認
 // ready／unavailable／disabled 三種，所以映成 unavailable 並把原因寫進 note。
-const rawPv = fs.existsSync(`${dir}/previews.json`) ? rd(`${dir}/previews.json`) : {};
+// c-89 起雲端改成**一份跨批的共用探測檔** `batch-progress/probe/previews.json`
+// （鍵是「藝人|盤名」，每筆帶 batch 欄），不再逐批落一份。兩種都要吃：
+// 有逐批檔就用逐批的，沒有才從共用檔裡撈這批的卡——只撈本批卡單上的鍵，
+// 不要整份倒進來，免得把別批的試聽混進這批的 manifest。
+let rawPv = fs.existsSync(`${dir}/previews.json`) ? rd(`${dir}/previews.json`) : null;
+if (!rawPv) {
+  const shared = `${ROOT}/batch-progress/probe/previews.json`;
+  const all = fs.existsSync(shared) ? rd(shared) : {};
+  rawPv = {};
+  for (const c of cards) {
+    const k = c.artist + '|' + c.album;
+    if (all[k]) rawPv[k] = all[k];
+  }
+}
 const pv = {};
 let ready = 0, unavailable = 0;
 for (const [k, v] of Object.entries(rawPv)) {

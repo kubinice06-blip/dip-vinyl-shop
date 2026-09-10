@@ -74,8 +74,12 @@
  {
   "artist": "John Holt",
   "album": "Still In Chains",
-  "cover": null,
-  "coverRejected": "命中的是 1 軌條目（單曲），不是專輯"
+  "cover": {
+   "url": "https://i.discogs.com/nSruSYJP9VtAMIOSYTWlNMc_C__vBIdwTO7nAlsJxfY/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4MzM2/ODgtMTM3NzMzMzI5/Mi01MTQxLmpwZWc.jpeg",
+   "source": "discogs"
+  },
+  "coverRejected": "命中的是 1 軌條目（單曲），不是專輯",
+  "discogsReleaseId": "4833688"
  },
  {
   "artist": "Desmond Dekker",
@@ -330,7 +334,11 @@
  {
   "artist": "I-Roy",
   "album": "Hell and Sorrow",
-  "cover": null
+  "cover": {
+   "url": "https://i.discogs.com/myu8A4qf4Ecen9jvWJHW81YRF13pUn1QnMfE2UjOU9M/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NzM4/ODEtMTM3NTA5MTU0/My0yOTAyLmpwZWc.jpeg",
+   "source": "discogs"
+  },
+  "discogsReleaseId": "4773881"
  },
  {
   "artist": "Dillinger",
