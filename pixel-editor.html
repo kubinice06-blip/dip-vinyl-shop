@@ -71,6 +71,8 @@
   .pal .c{ position:relative; aspect-ratio:1; cursor:pointer; border:1px solid #1a1a1a; }
   .pal .c.fg::after{ content:''; position:absolute; inset:-1px; border:2px solid #fff; pointer-events:none; }
   .pal .c.bg::before{ content:''; position:absolute; right:0; bottom:0; border:5px solid transparent; border-right-color:#fff; border-bottom-color:#fff; pointer-events:none; }
+  .pal .c.ramp{ box-shadow:inset 0 0 0 1px #d1a03c; }
+  .pal .c.ramp::after{ content:''; position:absolute; left:1px; bottom:1px; width:3px; height:3px; background:#d1a03c; }
   .pal .c.tr{ background-image:linear-gradient(45deg,#777 25%,transparent 25%,transparent 75%,#777 75%),linear-gradient(45deg,#777 25%,#3a3a3a 25%,#3a3a3a 75%,#777 75%);
               background-size:8px 8px; background-position:0 0,4px 4px; }
 
@@ -174,6 +176,7 @@
     </div>
     <div class="palhead">
       <span id="palCount">色盤</span>
+      <button id="palRamp" title="清掉色階選取（Shift 點色盤可以選一段）">階</button>
       <button id="palAdd" title="新增顏色">＋</button>
       <button id="palEdit" title="編輯目前顏色">✎</button>
       <button id="palDel" title="刪除目前顏色">－</button>
@@ -212,6 +215,7 @@
 
 <script src="dip-pixel.js?v=3"></script>
 <script src="dip-pixel-import.js?v=1"></script>
+<script src="dip-pixel-font.js?v=1"></script>
 <script>
 'use strict';
 // ═════════════════════════════════════════════════════════════════════════════
@@ -359,7 +363,12 @@ window.addEventListener('beforeunload', () => { if(DOC.dirty) docSave(); });
 const ST = {
   layer:0, frame:0, fg:1, bg:0,
   tool:'pencil', prevTool:null,
-  brush:1, brushShape:'square', pixelPerfect:true, dither:'none',
+  brush:1, brushShape:'square', pixelPerfect:true,
+  ink:'normal',                 // normal｜shading（沿色階明暗移一階）｜replace（只換掉某一色）
+  ditherPat:'none', ditherAmt:50,   // 網點圖樣與濃度（%）
+  ramp:[],                      // 色階：色盤上 Shift 點選的一段連續顏色，上色墨水與漸層用
+  gradShape:'linear', gradSrc:'fgbg', gradDither:'bayer4',
+  poly:null,                    // 多邊形工具進行中的點
   fillContiguous:true, tolerance:0, shapeFill:false,
   symX:false, symY:false,
   zoom:8, panX:0, panY:0, grid:false, gridN:8, tileView:false,
@@ -601,20 +610,56 @@ function pixelPerfect(path){ const out = [];
          ((b[0] === a[0] && b[1] === p[1]) || (b[1] === a[1] && b[0] === p[0]))){ out[n-1] = p; continue; } }
     out.push(p); }
   return out; }
-const DITHER = {
-  none:  null,
-  check: (x,y) => ((x+y) & 1) === 0,
-  d25:   (x,y) => ((x & 1) === 0 && (y & 1) === 0),
-  d75:   (x,y) => !((x & 1) === 1 && (y & 1) === 1),
-  hline: (x,y) => (y & 1) === 0,
-  vline: (x,y) => (x & 1) === 0,
+// 網點：圖樣矩陣 ＋ 濃度。每一格有一個門檻 (值+0.5)/階數，濃度大於門檻才畫得上去。
+// 這樣同一個圖樣可以從 0% 連續調到 100%，而不是只有固定幾種密度。
+const DITHER_PATS = {
+  none:   null,
+  bayer2: [[0,2],[3,1]],
+  bayer4: null,   // 下面用 BAYER4／BAYER8 填
+  bayer8: null,
+  hline:  [[0,0],[1,1]],
+  vline:  [[0,1],[0,1]],
+  diag:   [[0,1,2,3],[3,0,1,2],[2,3,0,1],[1,2,3,0]],
 };
+const BAYER4 = [[0,8,2,10],[12,4,14,6],[3,11,1,9],[15,7,13,5]];
+const BAYER8 = (() => { const m = [];
+  for(let y = 0; y < 8; y++){ m.push([]); for(let x = 0; x < 8; x++){
+    let v = 0, mask = 4, xc = x ^ y;
+    for(let bit = 0; bit < 3; bit++){ v = (v << 1) | ((y & mask) ? 1 : 0); v = (v << 1) | ((xc & mask) ? 1 : 0); mask >>= 1; }
+    m[y].push(v); } }
+  return m; })();
+DITHER_PATS.bayer4 = BAYER4; DITHER_PATS.bayer8 = BAYER8;
+const patSteps = m => 1 + Math.max(...m.map(r => Math.max(...r)));
+// 這一格的門檻（0..1）；沒有圖樣時回 0.5
+function ditherT(x, y, patName){
+  const m = DITHER_PATS[patName || ST.ditherPat]; if(!m) return 0.5;
+  return (m[((y % m.length) + m.length) % m.length][((x % m[0].length) + m[0].length) % m[0].length] + 0.5) / patSteps(m);
+}
+function ditherOK(x, y){
+  if(!DITHER_PATS[ST.ditherPat]) return true;
+  return ditherT(x, y) < ST.ditherAmt / 100;
+}
+// 墨水：決定「畫下去之後這一格變成什麼」。old＝下筆前的值（所以一筆之內每格只套一次）。
+//   normal  直接換成目前色
+//   shading 沿著色階（ST.ramp，在色盤上 Shift 點選一段）往亮或往暗移一階；左鍵亮、右鍵暗
+//   replace 只換掉指定的那一色；左鍵 背景色→前景色，右鍵 前景色→背景色
+function applyInk(old, v, dir){
+  if(ST.ink === 'shading'){
+    const r = ST.ramp; if(!r || r.length < 2) return old;
+    const i = r.indexOf(old); if(i < 0) return old;
+    return r[clamp(i + (dir >= 0 ? 1 : -1), 0, r.length - 1)];
+  }
+  if(ST.ink === 'replace'){
+    const from = dir >= 0 ? ST.bg : ST.fg, to = dir >= 0 ? ST.fg : ST.bg;
+    return old === from ? to : old;
+  }
+  return v;
+}
 // 一個落點 → 展開筆刷、對稱、網點、選取限制後的索引清單
 function brushCells(x, y, brush){
   const b = brush || 1, offb = Math.floor((b-1)/2), out = [], r2 = (b/2)*(b/2);
-  const dith = DITHER[ST.dither];
   const put = (px, py) => { if(!inB(px, py)) return; const i = py*DOC.w+px;
-    if(!inSel(i)) return; if(dith && !dith(px, py)) return; out.push(i); };
+    if(!inSel(i)) return; if(!ditherOK(px, py)) return; out.push(i); };
   const pts = [[x, y]];
   if(ST.symX) pts.push([DOC.w-1-x, y]);
   if(ST.symY) pts.push([x, DOC.h-1-y]);
@@ -623,7 +668,9 @@ function brushCells(x, y, brush){
     if(ST.brushShape === 'round' && b > 2){ const ex = dx-offb-(b%2?0:.5), ey = dy-offb-(b%2?0:.5); if(ex*ex+ey*ey > r2) continue; }
     put(cx0-offb+dx, cy0-offb+dy); }
   return out; }
-function stampPath(work, path, v, brush){ for(const [x, y] of path) for(const i of brushCells(x, y, brush)) work[i] = v; }
+function stampPath(work, base, path, v, brush, dir){
+  for(const [x, y] of path) for(const i of brushCells(x, y, brush)) work[i] = applyInk(base[i], v, dir);
+}
 
 function ellipsePts(x0, y0, x1, y1, fill){
   const pts = [], cx0 = (x0+x1)/2, cy0 = (y0+y1)/2, rx = Math.abs(x1-x0)/2, ry = Math.abs(y1-y0)/2;
@@ -830,7 +877,17 @@ cv.addEventListener('pointerdown', ev => {
     ST.drag = { tool:ST.tool, start:c, cur:c, mode, pts:[[c.x, c.y]] };
     render(); return; }
 
+  if(ST.tool === 'text'){ dropFloat(); dlgText(c); return; }
   if(lockedWarn()) return;
+
+  if(ST.tool === 'gradient'){ dropFloat();
+    ST.drag = { tool:'gradient', start:c, cur:c, base:curCel().slice() };
+    previewGradient(c, c); render(); return; }
+  if(ST.tool === 'poly'){ dropFloat();
+    if(!ST.poly) ST.poly = [];
+    ST.poly.push([c.x, c.y]); ST.polyHover = null;
+    polyPreview(); render(); return; }
+
   const v = (ST.tool === 'eraser') ? 0 : (right ? ST.bg : ST.fg);
 
   // 移動：抬起選取內容變懸浮
@@ -844,11 +901,10 @@ cv.addEventListener('pointerdown', ev => {
   dropFloat();
   if(ST.tool === 'bucket'){
     if(!inB(c.x, c.y)) return;
-    pushUndo('cel'); const d = curCel();
-    const dith = DITHER[ST.dither];
-    const paint = (px0, py0) => { const m = floodMask(d, px0, py0, ST.fillContiguous, ST.tolerance);
+    pushUndo('cel'); const d = curCel(), base = d.slice(), dir = right ? -1 : 1;
+    const paint = (px0, py0) => { const m = floodMask(base, px0, py0, ST.fillContiguous, ST.tolerance);
       for(let i = 0; i < m.length; i++){ if(!m[i]) continue;
-        if(dith && !dith(i % DOC.w, Math.floor(i / DOC.w))) continue; d[i] = v; } };
+        if(!ditherOK(i % DOC.w, Math.floor(i / DOC.w))) continue; d[i] = applyInk(base[i], v, dir); } };
     paint(c.x, c.y);
     if(ST.symX) paint(DOC.w-1-c.x, c.y);
     if(ST.symY) paint(c.x, DOC.h-1-c.y);
@@ -857,14 +913,16 @@ cv.addEventListener('pointerdown', ev => {
 
   pushUndo('cel');
   const base = curCel();
+  const dir = right ? -1 : 1;
   if(ST.tool === 'pencil' || ST.tool === 'eraser'){
-    ST.drag = { tool:ST.tool, base, path:[[c.x, c.y]], v };
-    ST.work = base.slice(); stampPath(ST.work, ST.drag.path, v, ST.brush);
+    ST.drag = { tool:ST.tool, base, path:[[c.x, c.y]], v, dir };
+    ST.work = base.slice(); stampPath(ST.work, base, ST.drag.path, v, ST.brush, dir);
     render(); return; }
   if(['line','rect','ellipse'].includes(ST.tool)){
-    ST.drag = { tool:ST.tool, start:c, cur:c, v, base, shift:ev.shiftKey, previewShape:shapeRect(ST.tool, c, c, ev.shiftKey) };
+    ST.drag = { tool:ST.tool, start:c, cur:c, v, dir, base, shift:ev.shiftKey, previewShape:shapeRect(ST.tool, c, c, ev.shiftKey) };
     ST.work = base.slice();
-    ST.preview = shapePts(ST.tool, c, c, ev.shiftKey, ST.shapeFill).flatMap(([x,y]) => brushCells(x,y,1).map(i => [i, v]));
+    ST.preview = shapePts(ST.tool, c, c, ev.shiftKey, ST.shapeFill)
+      .flatMap(([x,y]) => brushCells(x,y,1).map(i => [i, applyInk(base[i], v, dir)]));
     render(); return; }
 });
 
@@ -872,7 +930,7 @@ cv.addEventListener('pointermove', ev => {
   if(!DOC.w) return;
   const c = cellAt(ev); ST.hover = c;
   const d = ST.drag;
-  if(!d){ render(); syncStatus(); return; }
+  if(!d){ if(ST.tool === 'poly' && ST.poly){ ST.polyHover = [c.x, c.y]; polyPreview(); } render(); syncStatus(); return; }
   if(d.tool === 'hand'){ ST.panX = d.px + (ev.clientX - d.sx); ST.panY = d.py + (ev.clientY - d.sy); render(); return; }
   if(d.tool === 'move'){ if(ST.float){ ST.float.x = c.x + d.ox; ST.float.y = c.y + d.oy; } render(); return; }
   if(d.tool === 'polygon'){ d.cur = c; render(); return; }
@@ -887,14 +945,16 @@ cv.addEventListener('pointermove', ev => {
     for(const p of bresenham(last[0], last[1], c.x, c.y).slice(1)) d.path.push(p);
     ST.work = d.base.slice();
     const path = (ST.pixelPerfect && ST.brush === 1) ? pixelPerfect(d.path) : d.path;
-    stampPath(ST.work, path, d.v, ST.brush);
+    stampPath(ST.work, d.base, path, d.v, ST.brush, d.dir);
     render(); syncStatus(); return; }
   if(['line','rect','ellipse'].includes(d.tool)){
     d.cur = c; const shift = ev.shiftKey || d.shift;
     d.previewShape = shapeRect(d.tool, d.start, c, shift);
     ST.work = d.base.slice();
-    ST.preview = shapePts(d.tool, d.start, c, shift, ST.shapeFill).flatMap(([x,y]) => brushCells(x,y,1).map(i => [i, d.v]));
+    ST.preview = shapePts(d.tool, d.start, c, shift, ST.shapeFill)
+      .flatMap(([x,y]) => brushCells(x,y,1).map(i => [i, applyInk(d.base[i], d.v, d.dir)]));
     render(); syncStatus(); return; }
+  if(d.tool === 'gradient'){ d.cur = c; previewGradient(d.start, c); render(); syncStatus(); return; }
 });
 
 function endDrag(ev){
@@ -916,6 +976,12 @@ function endDrag(ev){
       else for(const [x,y] of ellipsePts(X0, Y0, X1, Y1, true)) if(inB(x,y)) m[y*DOC.w+x] = 1;
     } else if(d.tool === 'lasso'){ fillPolygon(m, d.pts); }
     selApply(m, d.mode); render(); syncStatus(); return; }
+  if(d.tool === 'gradient'){
+    pushUndo('cel');
+    ST.work = d.base.slice(); ST.preview = gradientCells(d.start, d.cur || d.start);
+    applyPreviewToWork(); ST.preview = null;
+    curLayer().cels[ST.frame] = ST.work; ST.work = null;
+    markDirty(); render(); syncUI(); return; }
   if(ST.preview){ if(ST.work) applyPreviewToWork(); ST.preview = null; }
   if(ST.work){ curLayer().cels[ST.frame] = ST.work; ST.work = null; }
   markDirty(); render(); syncUI(); }
@@ -924,7 +990,7 @@ cv.addEventListener('pointerup', endDrag);
 cv.addEventListener('pointercancel', endDrag);
 cv.addEventListener('pointerleave', () => { ST.hover = null; if(!ST.drag) { render(); syncStatus(); } });
 cv.addEventListener('contextmenu', e => e.preventDefault());
-cv.addEventListener('dblclick', () => { if(ST.drag && ST.drag.tool === 'polygon') finishPolygon(); });
+cv.addEventListener('dblclick', () => { if(ST.drag && ST.drag.tool === 'polygon') finishPolygon(); else if(ST.poly) polyCommit(); });
 cv.addEventListener('wheel', ev => {
   if(!DOC.w) return; ev.preventDefault();
   const sc = screenAt(ev), dir = ev.deltaY < 0 ? 1 : -1;
@@ -960,6 +1026,105 @@ function fillPolygon(mask, pts){
   for(let i = 0; i < pts.length; i++){ const a = pts[i], b = pts[(i+1) % pts.length];
     for(const [x, y] of bresenham(a[0], a[1], b[0], b[1])) if(inB(x, y)) mask[y*DOC.w+x] = 1; } }
 
+// ══════════ 漸層 ══════════
+// 索引色沒有中間色，漸層一律靠網點：把像素在軸上的位置 t 跟這一格的網點門檻比大小。
+// 來源可以是「前景→背景」兩色，也可以是色盤上選起來的一段色階（ST.ramp），後者才是像素畫的正解。
+function gradientCells(a, b){
+  const out = [];
+  const dx = b.x - a.x, dy = b.y - a.y, len2 = dx*dx + dy*dy;
+  const ramp = (ST.gradSrc === 'ramp' && ST.ramp.length >= 2) ? ST.ramp : null;
+  const pat = ST.gradDither;
+  for(let y = 0; y < DOC.h; y++) for(let x = 0; x < DOC.w; x++){
+    const i = y*DOC.w + x; if(!inSel(i)) continue;
+    let t;
+    if(ST.gradShape === 'radial') t = len2 ? Math.hypot(x-a.x, y-a.y) / Math.sqrt(len2) : 0;
+    else t = len2 ? ((x-a.x)*dx + (y-a.y)*dy) / len2 : 0;
+    t = clamp(t, 0, 1);
+    const m = ditherT(x, y, pat);
+    if(ramp){
+      const f = t * (ramp.length - 1), lo = Math.floor(f), frac = f - lo;
+      out.push([i, ramp[clamp(frac > m ? lo+1 : lo, 0, ramp.length-1)]]);
+    } else out.push([i, t < m ? ST.fg : ST.bg]);
+  }
+  return out;
+}
+function previewGradient(a, b){ ST.work = curCel().slice(); ST.preview = gradientCells(a, b); }
+
+// ══════════ 多邊形（形狀，不是選取）══════════
+function polyPreview(){
+  const pts = ST.poly; if(!pts || !pts.length) return;
+  const all = ST.polyHover ? pts.concat([ST.polyHover]) : pts;
+  const cells = [];
+  if(ST.shapeFill && all.length >= 3){
+    const m = new Uint8Array(npx()); fillPolygon(m, all);
+    for(let i = 0; i < m.length; i++) if(m[i] && inSel(i)) cells.push([i, ST.fg]);
+  } else {
+    for(let i = 0; i < all.length; i++){
+      const p = all[i], q = all[(i+1) % all.length];
+      if(all.length === 2 && i === 1) break;
+      for(const [x, y] of bresenham(p[0], p[1], q[0], q[1])) for(const j of brushCells(x, y, 1)) cells.push([j, ST.fg]);
+    }
+  }
+  ST.work = curCel().slice(); ST.preview = cells;
+}
+function polyCommit(){
+  const pts = ST.poly; ST.poly = null; ST.polyHover = null;
+  if(!pts || pts.length < 2){ ST.work = null; ST.preview = null; render(); return; }
+  if(lockedWarn()){ ST.work = null; ST.preview = null; render(); return; }
+  pushUndo('cel');
+  ST.polyHover = null; ST.poly = pts; polyPreview(); ST.poly = null;
+  if(ST.preview && ST.work){ for(const [i, v] of ST.preview) ST.work[i] = v;
+    curLayer().cels[ST.frame] = ST.work; }
+  ST.work = null; ST.preview = null;
+  markDirty(); render(); syncUI();
+}
+
+// ══════════ 文字 ══════════
+// 打好的字先變成「懸浮選取」，可以拖到定位再按 Enter 落地，跟貼上同一套。
+function dlgText(at){
+  const F = window.DipPixelFont;
+  openDlg(`<h3>點陣字</h3><div class="body">
+      <div class="row"><label>字型</label><select id="txFont">
+        ${F.fontNames().map(n => `<option value="${n}" ${n===(ST.textFont||'5x7')?'selected':''}>${n}</option>`).join('')}</select>
+        <label>對齊</label><select id="txAlign"><option value="left">靠左</option><option value="center">置中</option><option value="right">靠右</option></select>
+        <label>字距</label><input type="number" id="txLs" value="1" min="0" max="8">
+        <label>行距</label><input type="number" id="txLh" value="1" min="0" max="8"></div>
+      <div class="row"><textarea id="txText" style="width:100%;min-height:54px" placeholder="打字（可多行）。點陣字型只有英數與標點，中文請用畫的。">${esc(ST.textLast || '')}</textarea></div>
+      <div class="row"><label>預覽</label><div class="imp-box" style="height:80px;flex:1"><canvas id="txPrev"></canvas></div></div>
+      <div class="hint">按「放上畫布」之後字會浮著，可以拖到定位，Enter 落地、Esc 取消。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">放上畫布</button></div>`);
+  const opt = () => ({ align: $('txAlign').value, letterSpacing: +$('txLs').value || 0, lineSpacing: +$('txLh').value || 0 });
+  const draw = () => {
+    const r = F.renderText($('txText').value || ' ', $('txFont').value, opt());
+    const c = $('txPrev'); c.width = r.width; c.height = r.height;
+    const g = c.getContext('2d'), im = g.createImageData(r.width, r.height);
+    const col = ST.fg ? hexRGB(DOC.pal[DOC.keys[ST.fg]]) : [255,255,255];
+    for(let i = 0; i < r.data.length; i++) if(r.data[i]){ const o = i*4;
+      im.data[o]=col[0]; im.data[o+1]=col[1]; im.data[o+2]=col[2]; im.data[o+3]=255; }
+    g.putImageData(im, 0, 0);
+    const k = Math.max(1, Math.min(Math.floor(360/Math.max(1,r.width)), Math.floor(72/Math.max(1,r.height)), 6));
+    c.style.width = r.width*k + 'px'; c.style.height = r.height*k + 'px';
+  };
+  $('dlg').oninput = draw; $('dlg').onchange = draw;
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    const text = $('txText').value; if(!text.trim()){ closeDlg(); return; }
+    if(lockedWarn()){ closeDlg(); return; }
+    ST.textLast = text; ST.textFont = $('txFont').value;
+    const r = F.renderText(text, ST.textFont, opt());
+    closeDlg();
+    pushUndo('cel'); dropFloat();
+    const data = new Uint8Array(r.width * r.height);
+    for(let i = 0; i < data.length; i++) if(r.data[i]) data[i] = ST.fg || 1;
+    ST.work = curCel().slice();
+    ST.float = { data, w:r.width, h:r.height, x: at ? at.x : 0, y: at ? at.y : 0, from:'text', useSel:false };
+    setTool('move'); render(); syncUI();
+    toast('拖到定位，Enter 落地');
+  };
+  draw();
+}
+
 function pickAt(c, toBg){
   if(!inB(c.x, c.y)) return;
   const v = composite(ST.frame, { raw:true })[c.y*DOC.w+c.x];
@@ -984,13 +1149,18 @@ const SVG = {
   hand:'<path d="M5 9V4a1 1 0 112 0v3V3a1 1 0 112 0v4V4a1 1 0 112 0v5c0 3-1.6 5-4 5s-4-1.4-4-3.4c0-1 .4-1.6 1-2z" fill="none" stroke-width="1.3"/>',
   zoom:'<circle cx="7" cy="7" r="4.4" fill="none" stroke-width="1.5"/><path d="M10.4 10.4L14.5 14.5" stroke-width="1.8"/>',
   anchor:'<path d="M8 2v12M3 8h10" stroke-width="1.4"/><circle cx="8" cy="8" r="2.4" fill="none" stroke-width="1.4"/>',
+  gradient:'<rect x="2" y="3" width="12" height="10" fill="none" stroke-width="1.2"/><path d="M3 4h10v2H3zM3 7h10v1.4H3zM4 9.4h8v1H4zM6 11.4h4v.8H6z"/>',
+  poly:'<path d="M8 2l6 4-2.4 7H4.4L2 6z" fill="none" stroke-width="1.6"/>',
+  text:'<path d="M2 3h12v2.4h-4.6V14H6.6V5.4H2z"/>',
 };
 const TOOLS = [
   ['sel-rect','框選','M'], ['sel-ellipse','橢圓選取','M'], ['lasso','套索','M'], ['polygon','多邊形套索','M'], ['wand','魔術棒','W'],
   null,
   ['pencil','鉛筆','B'], ['eraser','橡皮擦','E'], ['bucket','油漆桶','G'], ['eyedropper','吸管','I'],
   null,
-  ['line','直線','L'], ['rect','矩形','U'], ['ellipse','橢圓','Shift+U'],
+  ['line','直線','L'], ['rect','矩形','U'], ['ellipse','橢圓','Shift+U'], ['poly','多邊形',''],
+  null,
+  ['gradient','漸層',''], ['text','點陣字','T'],
   null,
   ['move','移動','V'], ['hand','平移','H'], ['zoom','縮放','Z'], ['anchor','腳點',''],
 ];
@@ -1003,6 +1173,7 @@ function buildTools(){
 }
 function setTool(t){
   if(ST.drag && ST.drag.tool === 'polygon') finishPolygon();
+  if(ST.poly && t !== 'poly'){ ST.poly = null; ST.polyHover = null; ST.work = null; ST.preview = null; }
   if(ST.float && t !== 'move') dropFloat();
   ST.tool = t;
   $$('.tool').forEach(b => b.classList.toggle('on', b.dataset.tool === t));
@@ -1013,27 +1184,47 @@ function setTool(t){
 }
 
 // ═════════════════════════════ 工具選項列 ═════════════════════════════
+const DITHER_NAMES = [['none','無'],['bayer2','Bayer 2×2'],['bayer4','Bayer 4×4'],['bayer8','Bayer 8×8'],['hline','橫線'],['vline','直線'],['diag','斜線']];
 function buildOptbar(){
   const t = ST.tool, o = [];
   const btn = (id, label, on, title) => `<button class="obtn ${on?'on':''}" data-opt="${id}" title="${title||''}">${label}</button>`;
+  const PAINTY = ['pencil','eraser','bucket','line','rect','ellipse','poly'];
   if(['pencil','eraser'].includes(t)){
     o.push(`<span class="lbl">筆刷</span><input type="number" id="optBrush" min="1" max="64" value="${ST.brush}">`);
     o.push(btn('shape', ST.brushShape === 'round' ? '●' : '■', false, '筆刷形狀：方／圓'));
     o.push(btn('pp', '⌐', ST.pixelPerfect, '像素完美（去掉 L 形轉角，筆寬 1 有效）'));
   }
-  if(['pencil','eraser','bucket','line','rect','ellipse'].includes(t)){
+  if(PAINTY.includes(t) && t !== 'eraser'){
+    o.push('<span class="divider"></span><span class="lbl">墨水</span>');
+    o.push(`<select id="optInk">${[['normal','一般'],['shading','上色（沿色階明暗）'],['replace','換色']]
+      .map(([v,n]) => `<option value="${v}" ${ST.ink===v?'selected':''}>${n}</option>`).join('')}</select>`);
+    if(ST.ink === 'shading') o.push(`<span class="lbl">${ST.ramp.length >= 2 ? '色階 ' + ST.ramp.length + ' 階（左鍵變亮、右鍵變暗）' : '⚠ 先在色盤上 Shift 點選一段色階'}</span>`);
+    if(ST.ink === 'replace') o.push('<span class="lbl">左鍵 背景色→前景色、右鍵 反過來</span>');
+  }
+  if(PAINTY.includes(t)){
     o.push('<span class="divider"></span><span class="lbl">網點</span>');
-    o.push(`<select id="optDither">${[['none','無'],['check','棋盤 50%'],['d25','25%'],['d75','75%'],['hline','橫線'],['vline','直線']]
-      .map(([v,n]) => `<option value="${v}" ${ST.dither===v?'selected':''}>${n}</option>`).join('')}</select>`);
+    o.push(`<select id="optDither">${DITHER_NAMES.map(([v,n]) => `<option value="${v}" ${ST.ditherPat===v?'selected':''}>${n}</option>`).join('')}</select>`);
+    if(ST.ditherPat !== 'none')
+      o.push(`<input type="range" id="optDitherAmt" min="0" max="100" value="${ST.ditherAmt}" style="width:80px"><span class="lbl" id="optDitherAmtN">${ST.ditherAmt}%</span>`);
   }
   if(['bucket','wand'].includes(t)){
     o.push('<span class="divider"></span>');
     o.push(btn('contig', ST.fillContiguous ? '相連' : '全圖', false, '相連／全圖同色'));
     o.push(`<span class="lbl">容差</span><input type="number" id="optTol" min="0" max="255" value="${ST.tolerance}">`);
   }
-  if(['rect','ellipse'].includes(t)){
+  if(['rect','ellipse','poly'].includes(t)){
     o.push('<span class="divider"></span>' + btn('fill', ST.shapeFill ? '實心' : '外框', false, '實心／外框'));
+    if(t === 'poly') o.push('<span class="lbl">點一下加一個頂點，雙擊或 Enter 完成、Esc 取消</span>');
   }
+  if(t === 'gradient'){
+    o.push('<span class="divider"></span>');
+    o.push(btn('gshape', ST.gradShape === 'radial' ? '放射' : '線性', false, '線性／放射'));
+    o.push(btn('gsrc', ST.gradSrc === 'ramp' ? '色階' : '前景→背景', false, '用色盤選起來的色階，或前景到背景兩色'));
+    o.push(`<span class="lbl">網點</span><select id="optGDither">${DITHER_NAMES.filter(d => d[0] !== 'none')
+      .map(([v,n]) => `<option value="${v}" ${ST.gradDither===v?'selected':''}>${n}</option>`).join('')}</select>`);
+    if(ST.gradSrc === 'ramp' && ST.ramp.length < 2) o.push('<span class="lbl">⚠ 先在色盤上 Shift 點選一段色階</span>');
+  }
+  if(t === 'text') o.push('<span class="lbl">點畫布任一處開始打字</span>');
   if(SEL_TOOLS.includes(t)){
     o.push('<span class="lbl">Shift 加選　Alt 減選　Shift+Alt 交集' + (t==='polygon' ? '　雙擊或 Enter 完成' : '') + '</span>');
   }
@@ -1055,13 +1246,19 @@ function buildOptbar(){
     else if(k === 'symY') ST.symY = !ST.symY;
     else if(k === 'grid') ST.grid = !ST.grid;
     else if(k === 'tile') ST.tileView = !ST.tileView;
+    else if(k === 'gshape') ST.gradShape = ST.gradShape === 'radial' ? 'linear' : 'radial';
+    else if(k === 'gsrc') ST.gradSrc = ST.gradSrc === 'ramp' ? 'fgbg' : 'ramp';
     buildOptbar(); render(); };
-  $('optbar').onchange = e => { const t2 = e.target;
+  const optSet = e => { const t2 = e.target;
     if(t2.id === 'optBrush') ST.brush = clamp(+t2.value || 1, 1, 64);
-    if(t2.id === 'optDither') ST.dither = t2.value;
+    if(t2.id === 'optInk'){ ST.ink = t2.value; buildOptbar(); }
+    if(t2.id === 'optDither'){ ST.ditherPat = t2.value; buildOptbar(); }
+    if(t2.id === 'optDitherAmt'){ ST.ditherAmt = clamp(+t2.value, 0, 100); const n = $('optDitherAmtN'); if(n) n.textContent = ST.ditherAmt + '%'; }
+    if(t2.id === 'optGDither') ST.gradDither = t2.value;
     if(t2.id === 'optTol') ST.tolerance = clamp(+t2.value || 0, 0, 255);
     if(t2.id === 'optGridN'){ ST.gridN = clamp(+t2.value || 0, 0, 256); render(); }
     syncStatus(); };
+  $('optbar').onchange = optSet; $('optbar').oninput = optSet;
 }
 
 // ═════════════════════════════ 色盤 ═════════════════════════════
@@ -1080,7 +1277,7 @@ function remapIndices(map){ for(const L of DOC.layers) for(const c of L.cels) fo
 function buildPalette(){
   const cells = DOC.keys.map((k, i) => i === 0
     ? `<div class="c tr ${ST.fg===0?'fg':''} ${ST.bg===0?'bg':''}" data-i="0" title="透明"></div>`
-    : `<div class="c ${ST.fg===i?'fg':''} ${ST.bg===i?'bg':''}" data-i="${i}" style="background:${esc(DOC.pal[k])}" title="${esc(k)} ${esc(DOC.pal[k])}"></div>`).join('');
+    : `<div class="c ${ST.fg===i?'fg':''} ${ST.bg===i?'bg':''} ${ST.ramp.includes(i)?'ramp':''}" data-i="${i}" style="background:${esc(DOC.pal[k])}" title="${esc(k)} ${esc(DOC.pal[k])}${ST.ramp.includes(i)?' · 色階第 '+(ST.ramp.indexOf(i)+1)+' 階':''}"></div>`).join('');
   $('pal').innerHTML = cells;
   $('palCount').textContent = (DOC.keys.length - 1) + ' 色';
   const fgHex = ST.fg ? DOC.pal[DOC.keys[ST.fg]] : 'transparent';
@@ -1092,6 +1289,12 @@ function buildPalette(){
 }
 $('pal').addEventListener('pointerdown', e => { const c = e.target.closest('.c'); if(!c) return;
   e.preventDefault(); const i = +c.dataset.i;
+  // Shift 點＝從目前前景色到這一格，選成一段「色階」，給上色墨水與漸層用
+  if(e.shiftKey && e.button !== 2){
+    const a = Math.min(ST.fg, i), b = Math.max(ST.fg, i);
+    ST.ramp = []; for(let k = a; k <= b; k++) if(k) ST.ramp.push(k);
+    if(ST.ramp.length && i < ST.fg) ST.ramp.reverse();   // 由點選處往前景色的方向排
+    buildPalette(); buildOptbar(); syncStatus(); toast('色階 ' + ST.ramp.length + ' 階'); return; }
   if(e.button === 2) ST.bg = i; else ST.fg = i;
   buildPalette(); syncStatus(); });
 $('pal').addEventListener('contextmenu', e => e.preventDefault());
@@ -1099,6 +1302,7 @@ $('pal').addEventListener('dblclick', e => { const c = e.target.closest('.c'); i
 $('swSwap').onclick = () => { const t = ST.fg; ST.fg = ST.bg; ST.bg = t; buildPalette(); syncStatus(); };
 $('swFg').onclick = () => { if(ST.fg) dlgColor(ST.fg); };
 $('swBg').onclick = () => { if(ST.bg) dlgColor(ST.bg); };
+$('palRamp').onclick = () => { ST.ramp = []; buildPalette(); buildOptbar(); toast('已清掉色階'); };
 $('palAdd').onclick = () => dlgColor(-1);
 $('palEdit').onclick = () => { if(ST.fg) dlgColor(ST.fg); else toast('透明色不能編輯'); };
 $('palDel').onclick = () => palDelete(ST.fg);
@@ -1229,7 +1433,9 @@ function togglePlay(){
 // ═════════════════════════════ 狀態列與同步 ═════════════════════════════
 const TOOL_NAME = Object.fromEntries(TOOLS.filter(Boolean).map(t => [t[0], t[1]]));
 function syncStatus(){
-  $('stTool').textContent = TOOL_NAME[ST.tool] || ST.tool;
+  $('stTool').textContent = (TOOL_NAME[ST.tool] || ST.tool)
+    + (ST.ink !== 'normal' ? ' · ' + ({ shading:'上色', replace:'換色' })[ST.ink] : '')
+    + (ST.ditherPat !== 'none' ? ' · 網點 ' + ST.ditherAmt + '%' : '');
   const h = ST.hover;
   $('stPos').textContent = h && inB(h.x, h.y)
     ? `${h.x}, ${h.y}` + (() => { const d = curCel(); const v = d ? d[h.y*DOC.w+h.x] : 0;
@@ -1791,11 +1997,51 @@ function dlgExport(){
   $('dNo').onclick = closeDlg;
   $('dYes').onclick = () => { const k = +$('eK').value, all = $('eAll').checked; closeDlg(); exportPNG(k, all); };
 }
+// 描邊：在不透明像素的外側（或內側）加一圈指定色
+function dlgOutline(){
+  const colOpts = ['fg','bg'].map(k => `<option value="${k}">${k==='fg'?'前景色':'背景色'}</option>`).join('');
+  openDlg(`<h3>描邊</h3><div class="body">
+      <div class="row"><label>顏色</label><select id="olColor">${colOpts}</select>
+        <label>位置</label><select id="olSide"><option value="out">外側（往外長一圈）</option><option value="in">內側（吃掉邊緣一圈）</option></select></div>
+      <div class="row"><label>相鄰</label><select id="olNb"><option value="4">四方向</option><option value="8">八方向（含斜角）</option></select>
+        <label><input type="checkbox" id="olSel" ${ST.sel?'checked':''} ${ST.sel?'':'disabled'}> 只在選取範圍內</label></div>
+      <div class="hint">對目前圖層的目前這一格作用。外側描邊會畫在透明的地方，所以先確定四周是空的。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">套用</button></div>`);
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    const col = $('olColor').value === 'bg' ? ST.bg : ST.fg;
+    const outside = $('olSide').value === 'out', eight = $('olNb').value === '8', onlySel = $('olSel').checked && !!ST.sel;
+    closeDlg(); applyOutline(col, outside, eight, onlySel);
+  };
+}
+function applyOutline(col, outside, eight, onlySel){
+  if(lockedWarn()) return;
+  pushUndo('cel'); dropFloat();
+  const d = curCel(), out = d.slice(), w = DOC.w, h = DOC.h;
+  const nb = eight ? [[0,-1],[0,1],[-1,0],[1,0],[-1,-1],[1,-1],[-1,1],[1,1]] : [[0,-1],[0,1],[-1,0],[1,0]];
+  const ok = i => !onlySel || (ST.sel && ST.sel[i]);
+  for(let y = 0; y < h; y++) for(let x = 0; x < w; x++){
+    const i = y*w + x; if(!ok(i)) continue;
+    if(outside){
+      if(d[i]) continue;
+      if(nb.some(([dx,dy]) => { const nx = x+dx, ny = y+dy; return inB(nx, ny) && d[ny*w+nx] && ok(ny*w+nx); })) out[i] = col;
+    } else {
+      if(!d[i]) continue;
+      if(nb.some(([dx,dy]) => { const nx = x+dx, ny = y+dy; return !inB(nx, ny) || !d[ny*w+nx]; })) out[i] = col;
+    }
+  }
+  curLayer().cels[ST.frame] = out;
+  markDirty(); render(); syncUI(); toast(outside ? '已在外側描邊' : '已在內側描邊');
+}
 function dlgKeys(){
   openDlg(`<h3>快捷鍵</h3><div class="body"><table class="keys">
     <tr><td>工具</td><td><kbd>B</kbd> 鉛筆　<kbd>E</kbd> 橡皮擦　<kbd>G</kbd> 油漆桶　<kbd>I</kbd> 吸管　<kbd>L</kbd> 直線　<kbd>U</kbd> 矩形　<kbd>Shift+U</kbd> 橢圓</td></tr>
     <tr><td></td><td><kbd>M</kbd> 選取（連按循環 框選／橢圓／套索／多邊形）　<kbd>W</kbd> 魔術棒　<kbd>V</kbd> 移動　<kbd>H</kbd> 平移　<kbd>Z</kbd> 縮放</td></tr>
+    <tr><td></td><td><kbd>T</kbd> 點陣字　多邊形與漸層在工具列（沒有快捷鍵）</td></tr>
     <tr><td>顏色</td><td>左鍵畫前景色、右鍵畫背景色　<kbd>X</kbd> 互換　<kbd>Alt</kbd>＋點 暫時吸色</td></tr>
+    <tr><td>色階</td><td>色盤上 <kbd>Shift</kbd>＋點＝從前景色選到那一格，給「上色」墨水與漸層用</td></tr>
+    <tr><td>形狀</td><td>多邊形：點一下加一個頂點，雙擊或 <kbd>Enter</kbd> 完成、<kbd>Esc</kbd> 取消</td></tr>
     <tr><td>筆刷</td><td><kbd>[</kbd> <kbd>]</kbd> 筆寬　<kbd>Shift+X</kbd> 左右對稱　<kbd>Shift+Y</kbd> 上下對稱</td></tr>
     <tr><td>選取</td><td><kbd>Shift</kbd> 加選　<kbd>Alt</kbd> 減選　<kbd>Shift+Alt</kbd> 交集　<kbd>Ctrl+A</kbd> 全選　<kbd>Ctrl+D</kbd> 取消　<kbd>Ctrl+Shift+I</kbd> 反選</td></tr>
     <tr><td></td><td><kbd>Delete</kbd> 清掉內容　方向鍵 移動選取內容（<kbd>Shift</kbd> ×8）　<kbd>Enter</kbd> 懸浮落地　<kbd>Esc</kbd> 取消</td></tr>
@@ -1804,6 +2050,8 @@ function dlgKeys(){
     <tr><td>檢視</td><td>滾輪 縮放　<kbd>空白</kbd>＋拖／中鍵 平移　<kbd>0</kbd> 縮到剛好　<kbd>1</kbd> 1:1　<kbd>+</kbd> <kbd>-</kbd> 縮放　<kbd>Tab</kbd> 格線</td></tr>
     <tr><td>動畫</td><td><kbd>,</kbd> <kbd>.</kbd> 上一格／下一格　<kbd>Enter</kbd>（沒有懸浮時）播放／停止</td></tr>
     <tr><td>圖層</td><td><kbd>Alt+N</kbd> 新圖層　時間軸雙擊圖層名改名</td></tr>
+    <tr><td>墨水</td><td>一般／上色（沿色階明暗，左鍵變亮右鍵變暗）／換色。色階＝在色盤上 <kbd>Shift</kbd> 點選一段。</td></tr>
+    <tr><td>新工具</td><td><kbd>T</kbd> 點陣字（打完字會浮著，拖到定位再 <kbd>Enter</kbd>）　漸層與多邊形在右邊工具列</td></tr>
   </table></div><div class="foot"><button class="btn pri" id="dYes">關閉</button></div>`);
   $('dYes').onclick = closeDlg;
 }
@@ -1860,6 +2108,9 @@ const MENUS = {
     ['全部壓平', '', () => layerFlatten()],
     '-',
     ['重新命名…', '', () => dlgPrompt('圖層名稱', curLayer().name, v => { pushUndo('doc'); curLayer().name = v.trim() || curLayer().name; markDirty(); syncUI(); })],
+    '-',
+    ['描邊…', '', () => dlgOutline()],
+    ['點陣字…', 'T', () => { setTool('text'); toast('點畫布任一處開始打字'); }],
   ],
   'm-frame': [
     ['新增格（複製目前格）', '', () => frameAdd(true)],
@@ -1963,7 +2214,7 @@ document.addEventListener('keydown', ev => {
   if(ev.shiftKey && lk === 'y'){ ST.symY = !ST.symY; buildOptbar(); render(); return; }
   if(ev.shiftKey && lk === 'u'){ setTool('ellipse'); return; }
 
-  const TOOLKEY = { b:'pencil', e:'eraser', g:'bucket', i:'eyedropper', l:'line', u:'rect', w:'wand', v:'move', h:'hand', z:'zoom' };
+  const TOOLKEY = { b:'pencil', e:'eraser', g:'bucket', i:'eyedropper', l:'line', u:'rect', w:'wand', v:'move', h:'hand', z:'zoom', t:'text' };
   if(TOOLKEY[lk] && !ev.shiftKey){ setTool(TOOLKEY[lk]); return; }
   if(lk === 'm' && !ev.shiftKey){
     _selCycle = SEL_CYCLE.includes(ST.tool) ? (SEL_CYCLE.indexOf(ST.tool) + 1) % SEL_CYCLE.length : 0;
@@ -1983,11 +2234,13 @@ document.addEventListener('keydown', ev => {
 
   if(k === 'Enter'){ ev.preventDefault();
     if(ST.drag && ST.drag.tool === 'polygon') finishPolygon();
+    else if(ST.poly) polyCommit();
     else if(ST.float) dropFloat();
     else togglePlay();
     return; }
   if(k === 'Escape'){
-    if(ST.drag && ST.drag.tool === 'polygon'){ ST.drag = null; render(); }
+    if(ST.poly){ ST.poly = null; ST.polyHover = null; ST.work = null; ST.preview = null; render(); }
+    else if(ST.drag && ST.drag.tool === 'polygon'){ ST.drag = null; render(); }
     else if(ST.float){ ST.float = null; ST.work = null; render(); syncUI(); }
     else if(ST.sel){ ST.sel = null; render(); syncStatus(); }
     return; }
