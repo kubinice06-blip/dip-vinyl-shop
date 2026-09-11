@@ -129,6 +129,19 @@
   .anch{ display:grid; grid-template-columns:repeat(3,20px); gap:2px; }
   .anch button{ width:20px; height:20px; background:var(--panel2); border:1px solid var(--line); cursor:pointer; padding:0; }
   .anch button.on{ background:var(--gold); color:#1c1c1c; }
+  .dlg .body.imp{ min-width:560px; }
+  .imp-prev{ display:flex; gap:12px; }
+  .imp-prev > div{ flex:1; min-width:0; }
+  .imp-lbl{ color:var(--dim); margin-bottom:3px; } .imp-lbl b{ color:var(--fg); font-weight:400; }
+  .imp-box{ position:relative; height:196px; display:flex; align-items:center; justify-content:center; overflow:hidden;
+    background:repeating-conic-gradient(#2e2e2e 0 25%,#252525 0 50%) 0 0/16px 16px; border:1px solid var(--line); }
+  .imp-box canvas{ image-rendering:pixelated; display:block; }
+  .imp-box canvas.ov{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); pointer-events:none; }
+  .imp-box canvas:first-child{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
+  .sl-list{ display:flex; flex-direction:column; gap:2px; max-height:230px; overflow:auto; border:1px solid var(--line); padding:4px; }
+  .sl-item{ display:flex; align-items:center; gap:8px; padding:2px 4px; cursor:pointer; }
+  .sl-item:hover{ background:var(--sel); }
+  .sl-item canvas{ image-rendering:pixelated; background:repeating-conic-gradient(#2e2e2e 0 25%,#252525 0 50%) 0 0/8px 8px; }
   #toast{ position:fixed; left:50%; bottom:38px; transform:translateX(-50%); background:#111; color:#fff; border:1px solid var(--gold);
           padding:7px 14px; z-index:200; opacity:0; transition:opacity .25s; pointer-events:none; }
   kbd{ border:1px solid var(--line2); border-radius:2px; padding:0 3px; font-size:10px; background:#232323; }
@@ -198,6 +211,7 @@
 <div id="toast"></div>
 
 <script src="dip-pixel.js?v=3"></script>
+<script src="dip-pixel-import.js?v=1"></script>
 <script>
 'use strict';
 // ═════════════════════════════════════════════════════════════════════════════
@@ -1236,6 +1250,9 @@ function syncUI(){ buildPalette(); buildTimeline(); syncStatus(); }
 // ═════════════════════════════ 對話框 ═════════════════════════════
 let _dlgEsc = null;
 function openDlg(html, onOpen){
+  // 上一個對話框可能把事件委派掛在 #dlg 上；不清掉的話會疊加，
+  // 舊的 closure 會對著已經不存在的欄位跑，把新視窗的結果蓋掉（2026-09-11 實測）
+  $('dlg').oninput = $('dlg').onchange = $('dlg').onclick = null;
   $('dlg').innerHTML = html; $('modal').classList.add('on');
   if(onOpen) onOpen();
   const first = $('dlg').querySelector('input,select,button.pri');
@@ -1496,44 +1513,267 @@ function quantize(img, w, h, thr){
     arr[i] = best; }
   return { arr, added };
 }
-function dlgImport(img){
-  openDlg(`<h3>匯入圖片（${img.naturalWidth}×${img.naturalHeight}）</h3><div class="body">
-      <div class="row"><label><input type="radio" name="imode" value="layer" checked> 當成新圖層貼進目前畫布（縮到 ${DOC.w}×${DOC.h}）</label></div>
-      <div class="row"><label><input type="radio" name="imode" value="replace"> 取代整個圖像（畫布改成圖片大小）</label></div>
-      <div class="row"><label>目標寬</label><input type="number" id="iW" value="${Math.min(1024, img.naturalWidth)}" min="1" max="1024">
-        <label>高</label><input type="number" id="iH" value="${Math.min(1024, img.naturalHeight)}" min="1" max="1024"></div>
-      <div class="row"><label>顏色誤差門檻</label><input type="number" id="iThr" value="48" min="0" max="441">
-        <span class="hint">超過就新增一色；填 999 ＝ 只用現有色盤</span></div>
+// ═════════════════════════════ 匯入圖片：分析視窗 ═════════════════════════════
+// 演算法都在 dip-pixel-import.js（純資料、node 可測），這裡只負責畫面與套用。
+const IMP = { img:null, res:null, parts:null, timer:null };
+function imgOf(el){   // <img> → { data, width, height }
+  const c = document.createElement('canvas'); c.width = el.naturalWidth; c.height = el.naturalHeight;
+  const g = c.getContext('2d'); g.drawImage(el, 0, 0);
+  return g.getImageData(0, 0, c.width, c.height);
+}
+function paintImgTo(cvEl, img, maxW, maxH, gridInfo){
+  const k = Math.max(1, Math.ceil(1 / Math.min(maxW/img.width, maxH/img.height, 1)));
+  const zoom = Math.min(maxW/img.width, maxH/img.height);
+  cvEl.width = img.width; cvEl.height = img.height;
+  cvEl.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(img.data), img.width, img.height), 0, 0);
+  cvEl.style.width = Math.max(1, Math.round(img.width*zoom)) + 'px';
+  cvEl.style.height = Math.max(1, Math.round(img.height*zoom)) + 'px';
+  const ov = cvEl.nextElementSibling;
+  if(ov && ov.tagName === 'CANVAS'){
+    ov.width = cvEl.width; ov.height = cvEl.height;
+    ov.style.width = cvEl.style.width; ov.style.height = cvEl.style.height;
+    const g = ov.getContext('2d'); g.clearRect(0, 0, ov.width, ov.height);
+    if(gridInfo && gridInfo.cell.x > 1){
+      g.strokeStyle = 'rgba(209,160,60,.85)'; g.lineWidth = Math.max(1, 1/zoom);
+      g.beginPath();
+      for(let x = gridInfo.offset.x % gridInfo.cell.x; x <= img.width; x += gridInfo.cell.x){ g.moveTo(x+.5, 0); g.lineTo(x+.5, img.height); }
+      for(let y = gridInfo.offset.y % gridInfo.cell.y; y <= img.height; y += gridInfo.cell.y){ g.moveTo(0, y+.5); g.lineTo(img.width, y+.5); }
+      g.stroke();
+    }
+  }
+  return zoom;
+}
+function dlgImport(imgEl){
+  const IM = window.DipPixelImport;
+  const src = imgEl instanceof Image ? imgOf(imgEl) : imgEl;
+  IMP.img = src; IMP.res = null; IMP.parts = null;
+  const g0 = IM.detectGrid(src);
+  // 格子夠大而且分數夠高才預設走「像素格還原」；否則走智慧像素化
+  const gridLikely = g0.cell.x >= 2 && g0.cell.y >= 2 && Math.min(g0.score.x, g0.score.y) > 0.35;
+  const ratio = src.width / src.height;
+  const defW = clamp(Math.round(gridLikely ? src.width/g0.cell.x : Math.min(128, src.width)), 1, 1024);
+  openDlg(`<h3>匯入圖片分析（來源 ${src.width}×${src.height}）</h3>
+    <div class="body imp">
+      <div class="imp-prev">
+        <div><div class="imp-lbl">原圖＋格線</div><div class="imp-box"><canvas id="ipSrc"></canvas><canvas id="ipGrid" class="ov"></canvas></div></div>
+        <div><div class="imp-lbl">結果 <b id="ipInfo">…</b></div><div class="imp-box"><canvas id="ipDst"></canvas><canvas class="ov"></canvas></div></div>
+      </div>
+      <div class="row"><label>模式</label>
+        <button class="obtn ${gridLikely?'on':''}" data-mode="grid">像素格還原</button>
+        <button class="obtn ${gridLikely?'':'on'}" data-mode="scale">智慧像素化</button>
+        <span class="hint" id="ipModeHint"></span></div>
+      <div class="row" id="ipGridRow"><label>格寬</label><input type="number" id="ipCellX" min="1" max="256" value="${g0.cell.x}">
+        <label>格高</label><input type="number" id="ipCellY" min="1" max="256" value="${g0.cell.y}">
+        <label>偏移</label><input type="number" id="ipOffX" min="0" max="255" value="${g0.offset.x}">
+        <input type="number" id="ipOffY" min="0" max="255" value="${g0.offset.y}">
+        <button class="obtn" data-imp="redetect">重新偵測</button></div>
+      <div class="row" id="ipScaleRow"><label>目標</label><input type="number" id="ipW" min="1" max="1024" value="${defW}">
+        <label>×</label><input type="number" id="ipH" min="1" max="1024" value="${clamp(Math.round(defW/ratio),1,1024)}">
+        <label><input type="checkbox" id="ipLock" checked> 鎖比例</label>
+        <button class="obtn" data-imp="fitdoc">套目前畫布 ${DOC.w}×${DOC.h}</button></div>
+      <div class="row"><label>色盤</label>
+        <select id="ipPalMode">
+          <option value="auto">自動抽色</option>
+          <option value="doc">沿用目前色盤</option>
+          <option value="docplus">目前色盤＋自動補色</option>
+        </select>
+        <label>色數</label><input type="number" id="ipColors" min="2" max="96" value="16">
+        <label>網點</label><select id="ipDither">
+          <option value="none">無</option><option value="bayer2">Bayer 2×2</option>
+          <option value="bayer4">Bayer 4×4</option><option value="bayer8">Bayer 8×8</option>
+          <option value="floyd">誤差擴散</option></select>
+        <label><input type="checkbox" id="ipClean"> 清雜點</label></div>
+      <div class="row"><label>去背</label>
+        <select id="ipBg">
+          <option value="alpha">只認原本的透明</option>
+          <option value="border">邊框自動去背</option>
+          <option value="color">指定顏色</option>
+          <option value="none">不去背</option>
+        </select>
+        <input type="color" id="ipBgColor" value="#ffffff" style="width:34px;height:22px;background:none;border:1px solid var(--line)">
+        <label>容差</label><input type="number" id="ipTol" min="0" max="255" value="24"></div>
+      <div class="hint" id="ipWarn"></div>
     </div>
-    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">匯入</button></div>`);
+    <div class="foot">
+      <button class="btn" id="dNo">取消</button>
+      <button class="btn" data-imp="slice">切成多個物件…</button>
+      <button class="btn" data-imp="replace">取代整張</button>
+      <button class="btn pri" id="dYes" data-imp="layer">當成新圖層</button>
+    </div>`);
+  let mode = gridLikely ? 'grid' : 'scale';
+  const syncRows = () => {
+    $('ipGridRow').style.display = mode === 'grid' ? '' : 'none';
+    $('ipScaleRow').style.display = mode === 'scale' ? '' : 'none';
+    $('ipModeHint').textContent = mode === 'grid'
+      ? `偵測到 ${g0.cell.x}×${g0.cell.y} 格、分數 ${(Math.min(g0.score.x,g0.score.y)*100).toFixed(0)}%`
+      : '面積平均縮圖，適合插畫與照片';
+    $$('[data-mode]').forEach(b => b.classList.toggle('on', b.dataset.mode === mode));
+  };
+  const opts = () => {
+    const palMode = $('ipPalMode').value;
+    const docPal = DOC.keys.slice(1).map(k => DOC.pal[k]);
+    return {
+      bg: { mode: $('ipBg').value, color: $('ipBgColor').value, tolerance: +$('ipTol').value || 0 },
+      mode,
+      cell: { x: +$('ipCellX').value || 1, y: +$('ipCellY').value || 1 },
+      offset: { x: +$('ipOffX').value || 0, y: +$('ipOffY').value || 0 },
+      outW: clamp(+$('ipW').value || 1, 1, 1024), outH: clamp(+$('ipH').value || 1, 1, 1024),
+      palette: palMode === 'auto' ? null : docPal,
+      extraPalette: palMode === 'docplus' ? null : null,
+      colors: clamp(+$('ipColors').value || 16, 2, 96),
+      dither: $('ipDither').value,
+      despeckle: $('ipClean').checked ? 1 : 0,
+      palMode,
+    };
+  };
+  const recompute = () => {
+    if(!$('ipSrc')) return;
+    const o = opts();
+    let r;
+    if(o.palMode === 'docplus'){
+      // 先用現有色盤量化一輪，差太多的地方再自動補色
+      const base = IM.analyze(src, Object.assign({}, o, { palette:null, colors:o.colors }));
+      const have = new Set(DOC.keys.slice(1).map(k => IM.hex6(DOC.pal[k])));
+      const extra = base.palette.filter(c => !have.has(IM.hex6(c)));
+      r = IM.analyze(src, Object.assign({}, o, { palette: DOC.keys.slice(1).map(k => DOC.pal[k]), extraPalette: extra }));
+    } else r = IM.analyze(src, o);
+    IMP.res = r; IMP.parts = null;
+    paintImgTo($('ipSrc'), src, 250, 190, mode === 'grid' ? { cell:o.cell, offset:o.offset } : null);
+    paintImgTo($('ipDst'), IM.idxToImg(r.idx), 250, 190, null);
+    const used = IM.countColors(r.idx);
+    $('ipInfo').textContent = `${r.idx.width}×${r.idx.height} · ${used} 色`;
+    const over = DOC.keys.length - 1 + r.palette.length > 100;
+    $('ipWarn').innerHTML = (r.idx.width > 512 || r.idx.height > 512 ? '⚠ 結果很大，畫起來會慢。<br>' : '')
+      + (over ? '⚠ 色盤字元快用完了（上限約 100 色），建議少抽幾色或沿用目前色盤。<br>' : '')
+      + `套用後色盤會變成 ${o.palMode === 'auto' ? r.palette.length : Math.max(DOC.keys.length-1, r.palette.length)} 色。`;
+  };
+  const later = () => { clearTimeout(IMP.timer); IMP.timer = setTimeout(() => { if($('ipSrc')) recompute(); }, 120); };
+  $('dlg').oninput = e => { if(!$('ipSrc')) return; const t = e.target;
+    if(t.id === 'ipW' && $('ipLock').checked) $('ipH').value = clamp(Math.round(+t.value / ratio), 1, 1024);
+    if(t.id === 'ipH' && $('ipLock').checked) $('ipW').value = clamp(Math.round(+t.value * ratio), 1, 1024);
+    later(); };
+  $('dlg').onchange = () => { if($('ipSrc')) later(); };
+  $('dlg').onclick = e => {
+    const m = e.target.closest('[data-mode]');
+    if(m){ mode = m.dataset.mode; syncRows(); later(); return; }
+    const b = e.target.closest('[data-imp]'); if(!b) return;
+    const act = b.dataset.imp;
+    if(act === 'redetect'){ const g = IM.detectGrid(src);
+      $('ipCellX').value = g.cell.x; $('ipCellY').value = g.cell.y;
+      $('ipOffX').value = g.offset.x; $('ipOffY').value = g.offset.y; later(); return; }
+    if(act === 'fitdoc'){ $('ipW').value = DOC.w; $('ipH').value = DOC.h; later(); return; }
+    if(act === 'slice'){ clearTimeout(IMP.timer); recompute(); dlgSlice(); return; }
+    if(act === 'layer' || act === 'replace'){ clearTimeout(IMP.timer); recompute(); applyImport(act); return; }
+  };
+  $('dNo').onclick = closeDlg;
+  syncRows(); recompute();
+}
+// 把色盤合進文件，回傳「來源索引 → 文件索引」對照表
+function mergePalette(palette){
+  const map = new Uint8Array(palette.length + 1);
+  palette.forEach((hx, i) => {
+    const h = hex6(hx);
+    let j = DOC.keys.findIndex((k, ki) => ki && hex6(DOC.pal[k]) === h);
+    if(j < 0) j = palAddColor(h, true);
+    map[i+1] = j > 0 ? j : 0;
+  });
+  return map;
+}
+function applyImport(act){
+  const r = IMP.res; if(!r) return;
+  pushUndo('doc'); dropFloat();
+  if(act === 'replace'){
+    DOC.w = r.idx.width; DOC.h = r.idx.height;
+    DOC.pal = {}; DOC.keys = ['.']; rebuildLut();
+    DOC.layers = [{ name:'匯入', visible:true, locked:false, cels:[new Uint8Array(npx())] }];
+    ST.layer = 0; ST.frame = 0; ST.sel = null;
+    DOC.anchor = { x: Math.floor(DOC.w/2), y: DOC.h };
+    const map = mergePalette(r.palette);
+    const cel = DOC.layers[0].cels[0];
+    for(let i = 0; i < cel.length; i++) cel[i] = map[r.idx.data[i]] || 0;
+    fitView();
+  } else {
+    const map = mergePalette(r.palette);
+    const cel = new Uint8Array(npx());
+    // 尺寸不一樣就置中貼（不縮放，免得再失真一次）
+    const ox = Math.floor((DOC.w - r.idx.width)/2), oy = Math.floor((DOC.h - r.idx.height)/2);
+    for(let y = 0; y < r.idx.height; y++) for(let x = 0; x < r.idx.width; x++){
+      const tx = x+ox, ty = y+oy; if(!inB(tx, ty)) continue;
+      cel[ty*DOC.w+tx] = map[r.idx.data[y*r.idx.width+x]] || 0; }
+    DOC.layers.push({ name:'匯入', visible:true, locked:false,
+      cels: Array.from({ length: nFrames() }, (_, f) => f === ST.frame ? cel : new Uint8Array(npx())) });
+    ST.layer = DOC.layers.length - 1;
+  }
+  markDirty(); closeDlg(); render(); syncUI(); buildOptbar();
+  toast(`匯入完成，色盤 ${DOC.keys.length-1} 色`);
+}
+// ── 自動切件
+function dlgSlice(){
+  const IM = window.DipPixelImport;
+  const r = IMP.res; if(!r) return;
+  const run = () => {
+    const minArea = clamp(+$('slMin').value || 1, 1, 1e6), gap = clamp(+$('slGap').value || 0, 0, 16);
+    IMP.parts = IM.sliceComponents(r.idx, { minArea, gap });
+    const box = $('slList');
+    box.innerHTML = IMP.parts.length
+      ? IMP.parts.map((p, i) => `<label class="sl-item"><input type="checkbox" data-p="${i}" checked>
+          <canvas data-pc="${i}"></canvas><span>${i+1}. ${p.width}×${p.height} · ${p.area} px @${p.x},${p.y}</span></label>`).join('')
+      : '<div class="hint">沒有切出任何一件。把「最小面積」調小、或先在上一頁把去背打開。</div>';
+    $$('canvas[data-pc]', box).forEach(c => { const p = IMP.parts[+c.dataset.pc];
+      const im = IM.idxToImg(p);
+      c.width = p.width; c.height = p.height;
+      c.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(im.data), p.width, p.height), 0, 0);
+      const k = 34 / Math.max(p.width, p.height);
+      c.style.width = Math.max(1, Math.round(p.width*k)) + 'px'; c.style.height = Math.max(1, Math.round(p.height*k)) + 'px'; });
+    $('slInfo').textContent = `${IMP.parts.length} 件`;
+  };
+  openDlg(`<h3>切成多個物件</h3><div class="body">
+      <div class="hint">去背之後每一塊連在一起的區域各自成為一個物件，腳點自動放在底邊中央。</div>
+      <div class="row"><label>最小面積</label><input type="number" id="slMin" value="12" min="1">
+        <label>合併距離</label><input type="number" id="slGap" value="0" min="0" max="16">
+        <span class="hint">距離幾格以內的零件算同一件</span><b id="slInfo" style="margin-left:auto"></b></div>
+      <div class="row"><label>命名</label><input type="text" id="slName" value="${esc(DOC.name || '素材')}" style="flex:1">
+        <span class="hint">會加上編號</span></div>
+      <div class="sl-list" id="slList"></div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">建立物件</button></div>`);
+  $('slMin').oninput = run; $('slGap').oninput = run;
   $('dNo').onclick = closeDlg;
   $('dYes').onclick = () => {
-    const mode = $('dlg').querySelector('input[name=imode]:checked').value;
-    const thr = clamp(+$('iThr').value, 0, 999);
-    let w = clamp(+$('iW').value || DOC.w, 1, 1024), h = clamp(+$('iH').value || DOC.h, 1, 1024);
-    closeDlg();
-    pushUndo('doc'); dropFloat();
-    if(mode === 'replace'){
-      DOC.w = w; DOC.h = h;
-      DOC.layers = [{ name:'匯入', visible:true, locked:false, cels:[new Uint8Array(w*h)] }];
-      ST.layer = 0; ST.frame = 0; ST.sel = null;
-      DOC.anchor = { x: Math.floor(w/2), y: h };
-      const q = quantize(img, w, h, thr);
-      DOC.layers[0].cels[0] = q.arr;
-      fitView();
-      toast(`匯入 ${w}×${h}，新增 ${q.added} 色`);
-    } else {
-      const q = quantize(img, DOC.w, DOC.h, thr);
-      DOC.layers.push({ name:'匯入', visible:true, locked:false,
-        cels: Array.from({ length: nFrames() }, (_, f) => f === ST.frame ? q.arr : new Uint8Array(npx())) });
-      ST.layer = DOC.layers.length - 1;
-      toast(`匯入成新圖層，新增 ${q.added} 色`);
-    }
-    markDirty(); render(); syncUI();
+    const picked = $$('#slList input[data-p]:checked').map(c => IMP.parts[+c.dataset.p]);
+    if(!picked.length){ toast('一件都沒勾'); return; }
+    const base = ($('slName').value || '素材').trim();
+    const made = [];
+    picked.forEach((p, n) => {
+      let id = P.slug(base + '-' + (n+1)), k = 2;
+      while(LIB.objects[id]) id = P.slug(base + '-' + (n+1)) + '-' + (k++);
+      const o = P.newPixelObject(id, `${base} ${n+1}`, p.width, p.height);
+      o.palette = {};
+      const keys = ['.'];
+      p.palette.forEach((hx, i) => { const ch = KEY_POOL[i]; if(ch){ o.palette[ch] = hex6(hx); keys.push(ch); } });
+      const rows = window.DipPixelImport.idxToRows(p, keys);
+      o.frames = [rows];
+      o.layers = [{ name:'圖層 1', visible:true, locked:false, frames:[rows] }];
+      o.anchor = { x: Math.floor(p.width/2), y: p.height };
+      o.notes = `由「${DOC.name}」匯入自動切件，原圖位置 ${p.x},${p.y}`;
+      o.updatedAt = Date.now();
+      LIB.objects[id] = o; made.push(o);
+    });
+    // 沒用到的色盤字元清掉，別讓每一件都背著整張圖的色盤
+    made.forEach(o => { const used = new Set(); for(const row of o.frames[0]) for(const ch of row) if(ch !== '.') used.add(ch);
+      for(const k2 of Object.keys(o.palette)) if(!used.has(k2)) delete o.palette[k2]; });
+    Promise.all(made.map(libSaveObject)).then(() => {
+      closeDlg(); toast(`已建立 ${made.length} 個物件`);
+      if(made.length) openObject(made[0].id);
+    });
   };
+  run();
 }
-async function importImageFlow(){ const r = await pickFile('image/*'); if(!r) return;
-  const im = await loadImg(r.data); if(!im){ toast('讀不到這張圖'); return; } dlgImport(im); }
+async function importImageFlow(){
+  const r = await pickFile('image/*'); if(!r) return;
+  const im = await loadImg(r.data); if(!im){ toast('讀不到這張圖'); return; }
+  dlgImport(im);
+}
 
 function exportPNG(scale, allFrames){
   const k = clamp(scale || 1, 1, 16);
@@ -1575,7 +1815,7 @@ const MENUS = {
     ['開啟…', 'Ctrl+O', () => dlgOpenLib()],
     ['另存為新物件…', '', () => dlgSaveAs()],
     '-',
-    ['匯入圖片…', '', () => importImageFlow()],
+    ['匯入圖片（分析）…', '', () => importImageFlow()],
     ['匯出 PNG…', '', () => dlgExport()],
     ['複製物件 JSON', '', () => { docSave(); copyText(JSON.stringify(docToObject(), null, 1)); }],
     '-',

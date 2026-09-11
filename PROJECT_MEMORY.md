@@ -1,5 +1,44 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-11｜dip-vinyl-shop｜繪圖器加「匯入圖片分析」：像素格還原、抽色盤、網點、去背、自動切件
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。接續第 1 批，這是**第 2 批：圖片匯入分析**。
+
+**新增 `dip-pixel-import.js`** — 純資料、不碰 DOM，所以 node 可以直接單元測試：
+
+- `detectGrid`：估「一格等於幾個螢幕像素」與偏移。做法是算每欄／每列與前一欄的顏色差能量，
+  再對每個候選格寬 k 與偏移打分：`captured`（邊界位置抓到的能量比例，k 太大會漏）
+  × `coverage`（有明顯能量的邊界位置比例，k 太小會有空邊界）。分數相近時取最小的 k，避免選到倍數。
+- `downsampleMode`：每格取**內縮一圈後的眾數色**（量化到 4 bit 分箱再取模），抗抗鋸齒與雜訊。
+- `areaAverage`：面積平均縮圖（插畫與照片用）。
+- `medianCut`：**原圖顏色本來就不超過 n 種就照抄**（重新匯入像素圖時一個色都不能失真），
+  超過才跑中位切分。`exactColors` 是那個捷徑。
+- `quantize`：最近色＋Bayer 2×2／4×4／8×8（把像素投影到最近兩色的連線上，用 Bayer 門檻決定倒向哪邊）
+  ／Floyd–Steinberg。顏色距離用綠色加權，比純歐氏準。
+- `removeBackground`：alpha／邊框 flood（**只清連到邊界的，人物中間同色的洞會留著**）／指定色。
+- `despeckle`、`sliceComponents`（連通區域，可設最小面積與合併距離）、`idxToRows`。
+
+**`pixel-editor.html` 的匯入改成帶即時預覽的分析視窗**：左邊原圖疊格線、右邊結果，
+模式（像素格還原／智慧像素化）、格寬偏移微調、色盤三選一、網點、去背、清雜點；
+三個出口：當成新圖層（置中貼）、取代整張、切成多個物件（逐件勾選、腳點自動底邊中央、色盤自動修剪）。
+
+**踩到的坑（會再遇到，記著）**：
+1. **測試圖本身的陷阱**。第一版測試圖每一欄都重複（`rrrrgggg` 這種），圖的**真實週期就是格寬的兩倍**，
+   偵測器回 10 而不是 5 是對的，錯的是測試圖。換成相鄰欄列都不同的對角彩虹才測得準。
+   這也是演算法的天花板：欄列整排重複時，資訊上就分不出來。
+2. **`openDlg` 沒清掉上一個對話框掛在 `#dlg` 上的委派事件**。匯入視窗開第二次時兩組 listener 同時在跑，
+   舊的 closure 對著已經不存在的欄位取值（`Cannot read properties of null`），還會用舊的來源圖重算、
+   把新視窗的 `IMP.res` 蓋掉，導致切件切錯。修法：`openDlg` 開頭把 `#dlg` 的
+   `oninput`／`onchange`／`onclick` 設回 null，匯入視窗改用屬性指派而不是 `addEventListener`。
+
+- 主要檔案：`dip-pixel-import.js`（新增）、`scripts/pixel-import-test.mjs`（新增）、
+  `pixel-editor.html`（匯入視窗、切件視窗、`openDlg` 清事件）、`PIXEL_STUDIO.md`
+- **`art/pixel/` 的資料格式沒動**。
+- 驗證：`node scripts/pixel-import-test.mjs` 43 項全過（格子偵測含雜訊與五種格寬偏移、還原一字不差、
+  色盤照抄與中位切分、網點三種、去背保留內部洞、清雜點、切件邊界不混色、analyze 端到端還原）；
+  Playwright 62 項全過、console 零錯誤（含匯入視窗自動偵測 5×5@3,3、去背、套用成新圖層、
+  切件建立兩個物件且格式合法）；`node scripts/pixel-index.mjs --check` 通過。
+
 ### 2026-09-10｜dip-vinyl-shop｜像素繪圖器獨立成 pixel-editor.html（Aseprite 式版面），工坊只留場景與劇本
 
 分支 `claude/online-pixel-art-editor-jmpyxb`（base 是 `claude/card-game-character-creation-xpgz1f`，PR #13 草稿，**未合併 main**）。
