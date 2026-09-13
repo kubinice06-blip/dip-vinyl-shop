@@ -99,6 +99,7 @@ export const LINES = {
   c123: { lineType: '廣度', scene: { a: '蘇聯愛沙尼亞地下', b: '蘇聯拉脫維亞與立陶宛地下' } },
   c124: { lineType: '廣度', scene: { a: '伊朗巴列維末期流行與 funk', b: '伊朗革命後：流亡、地下與古典' } },
   c125: { lineType: '廣度', scene: { a: '西班牙佛朗哥時期與 la Movida', b: '葡萄牙薩拉查時期與康乃馨革命' } },
+  c126: { lineType: '廣度', scene: { a: '台灣獨立 2010 後：目錄深度', b: '台灣獨立 2010 後：池中全空的掛名' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
