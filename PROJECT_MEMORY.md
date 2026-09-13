@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-13｜dip-vinyl-shop｜繪圖器第 4 批：明暗階產生器、色盤排序合併、色盤檔匯入匯出
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。第 4 批：色盤與取色。
+
+**新增 `dip-pixel-palette.js`** — 純資料、node 可測：
+
+- `shadeRamp(base, steps, opts)`：像素畫的明暗階。關鍵不是「乘以 0.7」，是
+  **暗部往藍紫、亮部往黃**，同時暗部彩度加、亮部彩度減。
+  色相是**往目標色相拉**（暗 260°、亮 50°），不是固定轉某個方向——固定方向的話
+  藍色（h≈212）的暗部會往青色跑，整個反了。無彩色完全不動色相與彩度，
+  否則灰階會冒出一條偏紅的假灰。
+- `sortOrder(list, mode, counts)`：明暗／色相／彩度／用量，回傳新順序（原陣列的索引）。
+- `mergeSimilar(list, thr, counts)`：門檻是 0–100，**取四次方**再乘理論最大距離——
+  線性或平方的話可用範圍會全擠在滑桿最左邊（每通道差 8 階的距離只有理論上限的萬分之一）。
+  同群留下的是用量最多的那個原色，不是平均色。
+- `parseGPL`／`parseHEX`／`parsePAL`／`parseAny` 與對應的 write；`parseAny` 認不出格式時
+  最後會把整份文字裡的六位 hex 硬撿出來。
+
+**`pixel-editor.html` 加「色盤」選單**：產生明暗階（即時預覽、產生完直接選成色階）、
+排序、合併相近色（先報 N→M 再套用）、刪掉沒用到的顏色、換色、載入／匯出色盤。
+**色盤格可以拖曳換位置**（門檻 6px，沒超過就還是單純點選）。
+
+**踩到的坑**：
+1. **重排色盤必須連 `DOC.pal` 一起重建**。存檔時色盤是 JSON 物件，順序就是 `Object.keys`
+   的插入順序；只換 `DOC.keys` 不換 `DOC.pal`，存出去再開回來順序就散了，色階（連號的一段）跟著壞掉。
+2. **`hex6()` 的三位數 hex 沒轉小寫**（三個檔案同一份複製貼上都有）。`#0F0` 會變成 `#00FF00`，
+   而 `isHex` 用的是不含 `i` 旗標的正規式，直接把它判成非法色。已一併修掉。
+
+- 主要檔案：`dip-pixel-palette.js`（新增）、`scripts/pixel-palette-test.mjs`（新增）、
+  `pixel-editor.html`（色盤選單、六個對話框、拖曳換位、hex6 修正）、
+  `dip-pixel-import.js`（hex6 修正）、`PIXEL_STUDIO.md`
+- **`art/pixel/` 的資料格式沒動。**
+- 驗證：`node scripts/pixel-palette-test.mjs` 49 項全過；font 39 項、import 43 項全過；
+  Playwright 148 項全過、console 零錯誤（新增 38 項：明暗階產生與接去上色墨水、排序後畫面不變色、
+  存檔再載回順序不變、合併留用量最多色、刪未用色、換色、色盤檔 append／replace 與最近色對應、
+  拖曳換位與單純點選的分野，全部含復原）。
+
 ### 2026-09-11｜dip-vinyl-shop｜繪圖器第 3 批：墨水、網點、漸層、多邊形、描邊、點陣字
 
 分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。第 3 批：進階工具與墨水。

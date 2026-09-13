@@ -72,6 +72,7 @@
   .pal .c.fg::after{ content:''; position:absolute; inset:-1px; border:2px solid #fff; pointer-events:none; }
   .pal .c.bg::before{ content:''; position:absolute; right:0; bottom:0; border:5px solid transparent; border-right-color:#fff; border-bottom-color:#fff; pointer-events:none; }
   .pal .c.ramp{ box-shadow:inset 0 0 0 1px #d1a03c; }
+  .pal .c.drop{ outline:2px solid var(--gold); outline-offset:-2px; }
   .pal .c.ramp::after{ content:''; position:absolute; left:1px; bottom:1px; width:3px; height:3px; background:#d1a03c; }
   .pal .c.tr{ background-image:linear-gradient(45deg,#777 25%,transparent 25%,transparent 75%,#777 75%),linear-gradient(45deg,#777 25%,#3a3a3a 25%,#3a3a3a 75%,#777 75%);
               background-size:8px 8px; background-position:0 0,4px 4px; }
@@ -159,6 +160,7 @@
   <div class="mi" data-menu="sprite"><button>圖像</button><div class="menu" id="m-sprite"></div></div>
   <div class="mi" data-menu="layer"><button>圖層</button><div class="menu" id="m-layer"></div></div>
   <div class="mi" data-menu="frame"><button>格</button><div class="menu" id="m-frame"></div></div>
+  <div class="mi" data-menu="pal"><button>色盤</button><div class="menu" id="m-pal"></div></div>
   <div class="mi" data-menu="select"><button>選取</button><div class="menu" id="m-select"></div></div>
   <div class="mi" data-menu="view"><button>檢視</button><div class="menu" id="m-view"></div></div>
   <div class="mi" data-menu="help"><button>說明</button><div class="menu" id="m-help"></div></div>
@@ -177,6 +179,7 @@
     <div class="palhead">
       <span id="palCount">色盤</span>
       <button id="palRamp" title="清掉色階選取（Shift 點色盤可以選一段）">階</button>
+      <button id="palMenu" title="色盤工具（明暗階、排序、合併、匯入匯出）">⋯</button>
       <button id="palAdd" title="新增顏色">＋</button>
       <button id="palEdit" title="編輯目前顏色">✎</button>
       <button id="palDel" title="刪除目前顏色">－</button>
@@ -216,6 +219,7 @@
 <script src="dip-pixel.js?v=3"></script>
 <script src="dip-pixel-import.js?v=1"></script>
 <script src="dip-pixel-font.js?v=1"></script>
+<script src="dip-pixel-palette.js?v=1"></script>
 <script>
 'use strict';
 // ═════════════════════════════════════════════════════════════════════════════
@@ -235,7 +239,7 @@ const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, m => ({ '&':'&am
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 // 色盤字元池：一個顏色一個字元；'.' 與空白保留給透明
 const KEY_POOL = 'kgrbwednpoysctuvmabfhijlqxzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*+=?~;:<>|/\\{}[]()\'"`-_,';
-const hex6 = c => { c = String(c || '').trim(); const m = /^#([0-9a-f]{3})$/i.exec(c); return m ? '#' + m[1].split('').map(x => x + x).join('') : c.slice(0, 7).toLowerCase(); };
+const hex6 = c => { c = String(c || '').trim(); const m = /^#([0-9a-f]{3})$/i.exec(c); return m ? '#' + m[1].toLowerCase().split('').map(x => x + x).join('') : c.slice(0, 7).toLowerCase(); };
 const hexRGB = hx => { hx = hex6(hx).replace('#', ''); return [parseInt(hx.slice(0,2),16)||0, parseInt(hx.slice(2,4),16)||0, parseInt(hx.slice(4,6),16)||0]; };
 const rgbHex = (r,g,b) => '#' + [r,g,b].map(v => clamp(Math.round(v),0,255).toString(16).padStart(2,'0')).join('');
 function rgbHsv(r,g,b){ r/=255; g/=255; b/=255; const mx=Math.max(r,g,b), mn=Math.min(r,g,b), d=mx-mn;
@@ -1298,11 +1302,44 @@ $('pal').addEventListener('pointerdown', e => { const c = e.target.closest('.c')
   if(e.button === 2) ST.bg = i; else ST.fg = i;
   buildPalette(); syncStatus(); });
 $('pal').addEventListener('contextmenu', e => e.preventDefault());
+// 拖曳色盤格＝換位置。色階必須是連號的一段，所以「能自己排色盤」是上色墨水好不好用的關鍵。
+// 門檻設 6px：沒超過就還是單純的點選（選前景色／Shift 選色階），不會誤觸。
+let _palDrag = null;
+$('pal').addEventListener('pointerdown', e => {
+  const c = e.target.closest('.c'); if(!c || e.button !== 0 || e.shiftKey) return;
+  const i = +c.dataset.i; if(!i) return;
+  _palDrag = { i, x:e.clientX, y:e.clientY, moved:false };
+});
+window.addEventListener('pointermove', e => {
+  if(!_palDrag) return;
+  if(!_palDrag.moved && Math.hypot(e.clientX - _palDrag.x, e.clientY - _palDrag.y) < 6) return;
+  _palDrag.moved = true;
+  const over = document.elementFromPoint(e.clientX, e.clientY);
+  const c = over && over.closest ? over.closest('#pal .c') : null;
+  $$('#pal .c').forEach(el => el.classList.remove('drop'));
+  if(c && +c.dataset.i) c.classList.add('drop');
+});
+window.addEventListener('pointerup', e => {
+  const d = _palDrag; _palDrag = null;
+  if(!d || !d.moved) return;
+  $$('#pal .c').forEach(el => el.classList.remove('drop'));
+  const over = document.elementFromPoint(e.clientX, e.clientY);
+  const c = over && over.closest ? over.closest('#pal .c') : null;
+  const to = c ? +c.dataset.i : 0;
+  if(!to || to === d.i) return;
+  const order = [];
+  for(let k = 1; k < DOC.keys.length; k++) if(k !== d.i) order.push(k);
+  order.splice(to - 1, 0, d.i);       // 拖到哪一格，就佔走那一格的位置
+  if(palApplyOrder(order)) toast('色盤換位置');
+});
 $('pal').addEventListener('dblclick', e => { const c = e.target.closest('.c'); if(c && +c.dataset.i) dlgColor(+c.dataset.i); });
 $('swSwap').onclick = () => { const t = ST.fg; ST.fg = ST.bg; ST.bg = t; buildPalette(); syncStatus(); };
 $('swFg').onclick = () => { if(ST.fg) dlgColor(ST.fg); };
 $('swBg').onclick = () => { if(ST.bg) dlgColor(ST.bg); };
 $('palRamp').onclick = () => { ST.ramp = []; buildPalette(); buildOptbar(); toast('已清掉色階'); };
+$('palMenu').onclick = e => { e.stopPropagation();
+  const mi = document.querySelector('.mi[data-menu="pal"]');
+  $$('.mi').forEach(m => m.classList.toggle('open', m === mi)); };
 $('palAdd').onclick = () => dlgColor(-1);
 $('palEdit').onclick = () => { if(ST.fg) dlgColor(ST.fg); else toast('透明色不能編輯'); };
 $('palDel').onclick = () => palDelete(ST.fg);
@@ -1319,6 +1356,272 @@ function palDelete(i){
   remapIndices(map); DOC.keys.splice(i, 1); rebuildLut();
   ST.fg = Math.min(ST.fg, DOC.keys.length-1); ST.bg = Math.min(ST.bg, DOC.keys.length-1);
   markDirty(); buildPalette(); render(); syncUI(); }
+
+// ═════════════════════════════ 色盤工具 ═════════════════════════════
+const PALX = window.DipPixelPalette;
+
+// 每個色盤編號在所有圖層、所有格裡出現幾次（排序與合併要用）
+function colorCounts(){
+  const c = new Array(DOC.keys.length).fill(0);
+  for(const L of DOC.layers) for(const cel of L.cels) for(let i = 0; i < cel.length; i++) c[cel[i]]++;
+  return c;
+}
+// 目前色盤（不含透明）
+const palList = () => DOC.keys.slice(1).map(k => DOC.pal[k]);
+
+// 依「舊索引的新排列」重排色盤。透明永遠留在 0。
+// DOC.pal 也要照著重建：存檔時色盤是物件，順序就是 Object.keys 的插入順序，
+// 不重建的話存出去再開回來，色階的連續性就沒了（色階靠的是編號相鄰）。
+function palApplyOrder(order){
+  const n = DOC.keys.length - 1;
+  if(!order || order.length !== n) return false;
+  const seen = new Set(order);
+  if(seen.size !== n || order.some(i => i < 1 || i > n)) return false;
+  pushUndo('doc');
+  const newKeys = ['.'].concat(order.map(i => DOC.keys[i]));
+  const map = new Uint8Array(DOC.keys.length);
+  order.forEach((old, k) => { map[old] = k + 1; });
+  remapIndices(map);
+  ST.fg = map[ST.fg]; ST.bg = map[ST.bg];
+  ST.ramp = ST.ramp.map(i => map[i]).filter(Boolean);
+  const np = {}; for(const k of newKeys.slice(1)) np[k] = DOC.pal[k];
+  DOC.keys = newKeys; DOC.pal = np; rebuildLut();
+  markDirty(); buildPalette(); render(); syncUI();
+  return true;
+}
+
+// 把整張圖裡的某一色換成另一色（像素換，不是改色盤那一格的定義）
+function replaceColorIdx(from, to){
+  if(from === to) return;
+  pushUndo('cel');
+  const map = new Uint8Array(DOC.keys.length);
+  for(let i = 0; i < map.length; i++) map[i] = i;
+  map[from] = to;
+  remapIndices(map);
+  markDirty(); render(); syncUI();
+}
+
+function palRemoveUnused(){
+  const used = colorCounts();
+  const dead = [];
+  for(let i = 1; i < DOC.keys.length; i++) if(!used[i]) dead.push(i);
+  if(!dead.length){ toast('沒有用不到的顏色'); return; }
+  pushUndo('doc');
+  const keep = [];
+  for(let i = 1; i < DOC.keys.length; i++) if(used[i]) keep.push(i);
+  const map = new Uint8Array(DOC.keys.length);
+  keep.forEach((old, k) => { map[old] = k + 1; });
+  remapIndices(map);
+  ST.fg = map[ST.fg] || 0; ST.bg = map[ST.bg] || 0; ST.ramp = ST.ramp.map(i => map[i]).filter(Boolean);
+  const newKeys = ['.'].concat(keep.map(i => DOC.keys[i]));
+  const np = {}; for(const k of newKeys.slice(1)) np[k] = DOC.pal[k];
+  DOC.keys = newKeys; DOC.pal = np; rebuildLut();
+  markDirty(); buildPalette(); render(); syncUI();
+  toast('刪掉 ' + dead.length + ' 個沒用到的顏色');
+}
+
+// ── 明暗階產生器 ──
+function dlgShadeRamp(){
+  const base = ST.fg ? DOC.pal[DOC.keys[ST.fg]] : '#c11628';
+  openDlg(`<h3>產生明暗階</h3><div class="body">
+      <div class="row"><label>基底色</label>
+        <input type="color" id="sBase" value="${hex6(base)}" style="width:44px;height:26px;background:none;border:1px solid var(--line)">
+        <input type="text" id="sHex" value="${hex6(base)}" style="width:90px">
+        <label>階數</label><input type="number" id="sN" value="5" min="2" max="32" style="width:56px"></div>
+      <div class="row"><label>色相偏移</label><input type="range" id="sHue" min="0" max="90" value="30" style="flex:1"><span class="lbl" id="sHueN">30°</span></div>
+      <div class="row"><label>彩度變化</label><input type="range" id="sSat" min="0" max="80" value="25" style="flex:1"><span class="lbl" id="sSatN">25%</span></div>
+      <div class="row"><label>明度幅度</label><input type="range" id="sRange" min="10" max="100" value="70" style="flex:1"><span class="lbl" id="sRangeN">70%</span></div>
+      <div class="row"><label>暗部色調</label><select id="sCool"><option value="1">冷（往藍紫，預設）</option><option value="0">暖（往橙紅，燭光火光用）</option></select></div>
+      <div class="row"><label>預覽</label><div id="sPrev" style="display:flex;flex:1;height:40px;border:1px solid var(--line2)"></div></div>
+      <div class="hint">像素畫的暗部要往藍紫偏、彩度拉高，亮部往黃偏、彩度降低。純粹降明度會得到一條死灰的階。<br>
+        產生的顏色會**連號**接在色盤最後面，並直接選成色階，接著就能用「上色」墨水與色階漸層。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">加進色盤</button></div>`);
+  let ramp = [];
+  const calc = () => {
+    const hx = hex6($('sHex').value);
+    if(!/^#[0-9a-f]{6}$/.test(hx)) return;
+    ramp = PALX.shadeRamp(hx, +$('sN').value, {
+      hueShift: +$('sHue').value, satShift: +$('sSat').value/100,
+      range: +$('sRange').value/100, coolDark: $('sCool').value === '1' });
+    $('sPrev').innerHTML = ramp.map(c => `<div style="flex:1;background:${c}" title="${c}"></div>`).join('');
+    $('sHueN').textContent = $('sHue').value + '°';
+    $('sSatN').textContent = $('sSat').value + '%';
+    $('sRangeN').textContent = $('sRange').value + '%';
+  };
+  $('sBase').oninput = () => { $('sHex').value = hex6($('sBase').value); calc(); };
+  $('sHex').oninput = () => { const hx = hex6($('sHex').value); if(/^#[0-9a-f]{6}$/.test(hx)) $('sBase').value = hx; calc(); };
+  $('dlg').oninput = calc; $('dlg').onchange = calc;
+  calc();
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    if(!ramp.length){ closeDlg(); return; }
+    if(DOC.keys.length - 1 + ramp.length > KEY_POOL.length){ toast('色盤放不下（上限 ' + KEY_POOL.length + ' 色）'); return; }
+    closeDlg(); pushUndo('doc');
+    const idxs = [];
+    for(const c of ramp){ const i = palAddColor(c, true); if(i > 0) idxs.push(i); }
+    ST.ramp = idxs; if(idxs.length) ST.fg = idxs[Math.floor(idxs.length/2)];
+    rebuildLut(); markDirty(); buildPalette(); buildOptbar(); render(); syncUI();
+    toast('加了 ' + idxs.length + ' 階，已選成色階');
+  };
+}
+
+// ── 排序 ──
+function dlgPalSort(){
+  openDlg(`<h3>排序色盤</h3><div class="body">
+      <div class="row"><label>依</label><select id="pSort" style="flex:1">
+        <option value="luma">明暗（暗→亮）</option>
+        <option value="hue">色相（無彩色排前面）</option>
+        <option value="sat">彩度（低→高）</option>
+        <option value="count">用量（多→少）</option>
+        <option value="rev">反轉目前順序</option></select></div>
+      <div class="row"><label>預覽</label><div id="pPrev" style="display:flex;flex-wrap:wrap;flex:1;border:1px solid var(--line2);min-height:36px"></div></div>
+      <div class="hint">排序會連帶把畫面上的像素一起重新對應，畫出來的東西不會變色。<br>
+        色階是「色盤上連號的一段」，所以把明暗階排在一起，「上色」墨水才好用。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">排序</button></div>`);
+  const list = palList();
+  let order = [];
+  const calc = () => {
+    const mode = $('pSort').value;
+    order = mode === 'rev'
+      ? list.map((_, i) => list.length - i)
+      : PALX.sortOrder(list, mode, colorCounts().slice(1)).map(i => i + 1);
+    $('pPrev').innerHTML = order.map(i => `<div style="width:16px;height:16px;background:${DOC.pal[DOC.keys[i]]}"></div>`).join('');
+  };
+  $('pSort').onchange = calc; calc();
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => { closeDlg(); if(palApplyOrder(order)) toast('色盤已重排'); };
+}
+
+// ── 合併相近色 ──
+function dlgPalMerge(){
+  openDlg(`<h3>合併相近色</h3><div class="body">
+      <div class="row"><label>相似門檻</label><input type="range" id="mThr" min="0" max="40" value="8" style="flex:1"><span class="lbl" id="mThrN">8</span></div>
+      <div class="row"><label></label><span class="lbl" id="mInfo"></span></div>
+      <div class="row"><label>結果</label><div id="mPrev" style="display:flex;flex-wrap:wrap;flex:1;border:1px solid var(--line2);min-height:36px"></div></div>
+      <div class="hint">同一群留下的是**畫面上用得最多**的那一個顏色，不是平均色——平均色會生出一個原圖裡根本沒有的顏色。<br>
+        被併掉的像素會換成代表色。門檻拉到 40 以上就會開始併掉該留的顏色。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">合併</button></div>`);
+  const list = palList();
+  let res = null;
+  const calc = () => {
+    const thr = +$('mThr').value;
+    $('mThrN').textContent = thr;
+    res = PALX.mergeSimilar(list, thr, colorCounts().slice(1));
+    $('mInfo').textContent = `${list.length} 色 → ${res.palette.length} 色（少 ${list.length - res.palette.length}）`;
+    $('mPrev').innerHTML = res.palette.map(c => `<div style="width:16px;height:16px;background:${c}"></div>`).join('');
+  };
+  $('mThr').oninput = calc; calc();
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    closeDlg();
+    if(!res || res.palette.length === list.length){ toast('沒有可以併的顏色'); return; }
+    pushUndo('doc');
+    // 先把像素換成代表色（用舊編號），再重建色盤
+    const keep = res.keep.map(i => i + 1);            // 舊編號（1 起算）
+    const map = new Uint8Array(DOC.keys.length);
+    for(let i = 1; i < DOC.keys.length; i++) map[i] = keep[res.map[i-1]];
+    remapIndices(map);
+    // 再壓縮成連號
+    const m2 = new Uint8Array(DOC.keys.length);
+    keep.forEach((old, k) => { m2[old] = k + 1; });
+    remapIndices(m2);
+    ST.fg = m2[map[ST.fg]] || 0; ST.bg = m2[map[ST.bg]] || 0;
+    ST.ramp = ST.ramp.map(i => m2[map[i]]).filter(Boolean);
+    const newKeys = ['.'].concat(keep.map(i => DOC.keys[i]));
+    const np = {}; for(const k of newKeys.slice(1)) np[k] = DOC.pal[k];
+    const before = DOC.keys.length - 1;
+    DOC.keys = newKeys; DOC.pal = np; rebuildLut();
+    markDirty(); buildPalette(); buildOptbar(); render(); syncUI();
+    toast(`${before} 色併成 ${DOC.keys.length - 1} 色`);
+  };
+}
+
+// ── 換色（整張圖的 A 換成 B）──
+function dlgReplaceColor(){
+  const opts = (sel) => DOC.keys.map((k, j) =>
+    `<option value="${j}" ${j === sel ? 'selected' : ''}>${j ? esc(k) + ' ' + esc(DOC.pal[k]) : '透明'}</option>`).join('');
+  openDlg(`<h3>換色</h3><div class="body">
+      <div class="row"><label>把</label><select id="rcFrom">${opts(ST.fg)}</select>
+        <label>換成</label><select id="rcTo">${opts(ST.bg)}</select></div>
+      <div class="row"><label></label><span class="lbl" id="rcInfo"></span></div>
+      <div class="hint">換的是**畫面上的像素**，色盤本身不動（那兩格顏色都還在）。<br>
+        只想改某一格的顏色定義，雙擊色盤那一格就好。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">換</button></div>`);
+  const cnt = colorCounts();
+  const info = () => { const f = +$('rcFrom').value; $('rcInfo').textContent = `${cnt[f]} 個像素會被換掉`; };
+  $('rcFrom').onchange = info; info();
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => { const f = +$('rcFrom').value, t = +$('rcTo').value; closeDlg();
+    replaceColorIdx(f, t); toast('已換色'); };
+}
+
+// ── 載入色盤（內建預設或檔案）──
+function palLoadList(list, mode){
+  list = PALX.dedupe(list);
+  if(!list.length){ toast('這個檔案裡找不到顏色'); return; }
+  pushUndo('doc');
+  if(mode === 'append'){
+    let n = 0; for(const c of list){ if(palAddColor(c, true) > 0) n++; }
+    rebuildLut(); markDirty(); buildPalette(); render(); syncUI();
+    toast('加了 ' + n + ' 色'); return;
+  }
+  // 取代：畫面上的像素改對應到新色盤裡最接近的顏色
+  const old = palList();
+  const cut = list.slice(0, KEY_POOL.length);
+  const map = new Uint8Array(DOC.keys.length);
+  for(let i = 1; i < DOC.keys.length; i++) map[i] = PALX.nearest(cut, old[i-1]) + 1;
+  remapIndices(map);
+  DOC.pal = {}; DOC.keys = ['.'];
+  cut.forEach((hx, i) => { const k = KEY_POOL[i]; if(k){ DOC.pal[k] = hex6(hx); DOC.keys.push(k); } });
+  ST.fg = Math.min(ST.fg, DOC.keys.length-1) || (DOC.keys.length > 1 ? 1 : 0);
+  ST.bg = Math.min(ST.bg, DOC.keys.length-1); ST.ramp = [];
+  rebuildLut(); markDirty(); buildPalette(); buildOptbar(); render(); syncUI();
+  toast('色盤換成 ' + cut.length + ' 色（像素已對應到最接近的顏色）');
+}
+function dlgPalLoad(){
+  openDlg(`<h3>載入色盤</h3><div class="body">
+      <div class="row"><label>內建</label><select id="lPreset" style="flex:1">
+        ${Object.keys(PRESETS_PAL).map(k => `<option value="${esc(k)}">${esc(k)}（${PRESETS_PAL[k].length} 色）</option>`).join('')}</select></div>
+      <div class="row"><label>方式</label><select id="lMode" style="flex:1">
+        <option value="append">加在現有色盤後面</option>
+        <option value="replace">取代整個色盤（像素對應到最接近的顏色）</option></select></div>
+      <div class="row"><button class="btn" id="lFile">改從檔案載入…（.gpl／.hex／.pal／.txt）</button></div>
+      <div class="hint">Lospec 上下載的 .hex、GIMP 的 .gpl、Paint Shop Pro 的 .pal 都吃；<br>
+        認不出格式時會把整份文字裡所有六位 hex 撿出來。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">載入</button></div>`);
+  $('dNo').onclick = closeDlg;
+  $('lFile').onclick = async () => {
+    const mode = $('lMode').value;
+    const f = await pickFile('.gpl,.hex,.pal,.txt,.act,text/plain', 'text');
+    if(!f) return;
+    closeDlg();
+    palLoadList(PALX.parseAny(f.data, f.file.name), mode);
+  };
+  $('dYes').onclick = () => { const k = $('lPreset').value, mode = $('lMode').value; closeDlg();
+    palLoadList(PRESETS_PAL[k] || [], mode); };
+}
+function dlgPalExport(){
+  openDlg(`<h3>匯出色盤</h3><div class="body">
+      <div class="row"><label>格式</label><select id="xFmt" style="flex:1">
+        <option value="gpl">.gpl（GIMP、Aseprite、Krita 都吃）</option>
+        <option value="hex">.hex（Lospec）</option>
+        <option value="pal">.pal（JASC-PAL）</option></select></div>
+      <div class="hint">目前色盤 ${DOC.keys.length - 1} 色（不含透明）。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">下載</button></div>`);
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    const fmt = $('xFmt').value, list = palList();
+    const text = fmt === 'gpl' ? PALX.writeGPL(list, DOC.name) : fmt === 'pal' ? PALX.writePAL(list) : PALX.writeHEX(list);
+    closeDlg();
+    download(`${DOC.id}.${fmt}`, new Blob([text], { type:'text/plain' }));
+  };
+}
 
 // ═════════════════════════════ 時間軸 ═════════════════════════════
 function buildTimeline(){
@@ -2124,6 +2427,21 @@ const MENUS = {
     ['下一格', '.', () => gotoFrame(1)],
     ['播放／停止', 'Enter', () => togglePlay()],
     ['洋蔥皮', '', () => { ST.onion = !ST.onion; render(); syncUI(); }],
+  ],
+  'm-pal': [
+    ['產生明暗階…', '', () => dlgShadeRamp()],
+    ['新增顏色…', '', () => dlgColor(-1)],
+    ['編輯目前顏色…', '', () => { if(ST.fg) dlgColor(ST.fg); else toast('透明色不能編輯'); }],
+    '-',
+    ['排序色盤…', '', () => dlgPalSort()],
+    ['合併相近色…', '', () => dlgPalMerge()],
+    ['刪掉沒用到的顏色', '', () => palRemoveUnused()],
+    ['換色…', '', () => dlgReplaceColor()],
+    '-',
+    ['載入色盤…', '', () => dlgPalLoad()],
+    ['匯出色盤…', '', () => dlgPalExport()],
+    '-',
+    ['清掉色階選取', '', () => { ST.ramp = []; buildPalette(); buildOptbar(); }],
   ],
   'm-select': [
     ['全選', 'Ctrl+A', () => selectAll()],

@@ -16,7 +16,7 @@
   // ══════════════ 基本工具 ══════════════
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
   const hex6 = c => { c = String(c||'').trim(); const m = /^#([0-9a-f]{3})$/i.exec(c);
-    return m ? '#' + m[1].split('').map(x => x+x).join('') : c.slice(0,7).toLowerCase(); };
+    return m ? '#' + m[1].toLowerCase().split('').map(x => x+x).join('') : c.slice(0,7).toLowerCase(); };
   const hexRGB = hx => { hx = hex6(hx).replace('#',''); return [parseInt(hx.slice(0,2),16)||0, parseInt(hx.slice(2,4),16)||0, parseInt(hx.slice(4,6),16)||0]; };
   const rgbHex = (r,g,b) => '#' + [r,g,b].map(v => clamp(Math.round(v),0,255).toString(16).padStart(2,'0')).join('');
   const newImg = (w, h) => ({ data: new Uint8ClampedArray(w*h*4), width:w, height:h });
