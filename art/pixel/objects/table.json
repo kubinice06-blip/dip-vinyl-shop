@@ -1,0 +1,20 @@
+{
+ "id": "table",
+ "name": "折疊長桌",
+ "kind": "image",
+ "w": 850,
+ "h": 540,
+ "frames": [
+  "art/props/table.png"
+ ],
+ "anchor": {
+  "x": 425,
+  "y": 540
+ },
+ "tags": [
+  "圖檔",
+  "道具"
+ ],
+ "notes": "scripts/make-table.py 產的；150×70cm，原圖 5.5 px/cm，放進 448 邏輯寬的場景 scale 約 0.25。",
+ "updatedAt": 1788881710620
+}

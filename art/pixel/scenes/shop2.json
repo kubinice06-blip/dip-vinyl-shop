@@ -1,0 +1,195 @@
+{
+ "id": "shop2",
+ "name": "巷子裡的唱片行",
+ "w": 448,
+ "h": 492,
+ "bg": {
+  "src": "art/shop2-bg.jpg"
+ },
+ "items": [
+  {
+   "iid": "door",
+   "obj": "shop2-door",
+   "name": "門",
+   "x": 12,
+   "y": 155,
+   "scale": 0.4,
+   "flip": false,
+   "layer": "back",
+   "depth": null,
+   "role": "",
+   "frame": 0,
+   "hidden": false,
+   "lock": true
+  },
+  {
+   "iid": "fgback",
+   "obj": "shop2-fg-back",
+   "name": "前景後層",
+   "x": 0,
+   "y": 0,
+   "scale": 0.4,
+   "flip": false,
+   "layer": "auto",
+   "depth": 401.5,
+   "role": "",
+   "frame": 0,
+   "hidden": false,
+   "lock": true
+  },
+  {
+   "iid": "fgfront",
+   "obj": "shop2-fg-front",
+   "name": "前景前層",
+   "x": 0,
+   "y": 0,
+   "scale": 0.4,
+   "flip": false,
+   "layer": "auto",
+   "depth": 457.5,
+   "role": "",
+   "frame": 0,
+   "hidden": false,
+   "lock": true
+  },
+  {
+   "iid": "owner",
+   "obj": "owner",
+   "name": "老闆",
+   "x": 135,
+   "y": 251.875,
+   "scale": 4.875,
+   "flip": false,
+   "layer": "auto",
+   "depth": null,
+   "role": "o",
+   "frame": 0,
+   "hidden": false,
+   "lock": false
+  },
+  {
+   "iid": "player",
+   "obj": "player",
+   "name": "玩家",
+   "x": 9,
+   "y": 334.875,
+   "scale": 4.875,
+   "flip": false,
+   "layer": "auto",
+   "depth": null,
+   "role": "p",
+   "frame": 0,
+   "hidden": false,
+   "lock": false
+  },
+  {
+   "iid": "foe",
+   "obj": "foe",
+   "name": "男子",
+   "x": 3,
+   "y": 262.875,
+   "scale": 4.875,
+   "flip": false,
+   "layer": "auto",
+   "depth": null,
+   "role": "f",
+   "frame": 0,
+   "hidden": true,
+   "lock": false
+  }
+ ],
+ "anchors": [
+  {
+   "name": "door",
+   "group": "p",
+   "x": 48,
+   "y": 408
+  },
+  {
+   "name": "browse",
+   "group": "p",
+   "x": 136,
+   "y": 458
+  },
+  {
+   "name": "pay",
+   "group": "p",
+   "x": 168,
+   "y": 430
+  },
+  {
+   "name": "leaving",
+   "group": "p",
+   "x": 132,
+   "y": 418
+  },
+  {
+   "name": "atdoor",
+   "group": "p",
+   "x": 128,
+   "y": 420
+  },
+  {
+   "name": "counter",
+   "group": "o",
+   "x": 174,
+   "y": 325
+  },
+  {
+   "name": "aisle",
+   "group": "o",
+   "x": 72,
+   "y": 345
+  },
+  {
+   "name": "frontleft",
+   "group": "o",
+   "x": 74,
+   "y": 424
+  },
+  {
+   "name": "dig1",
+   "group": "o",
+   "x": 196,
+   "y": 432
+  },
+  {
+   "name": "dig2",
+   "group": "o",
+   "x": 228,
+   "y": 420
+  },
+  {
+   "name": "dig3",
+   "group": "o",
+   "x": 210,
+   "y": 440
+  },
+  {
+   "name": "between",
+   "group": "o",
+   "x": 85,
+   "y": 452
+  },
+  {
+   "name": "out",
+   "group": "f",
+   "x": 42,
+   "y": 336
+  },
+  {
+   "name": "door",
+   "group": "f",
+   "x": 42,
+   "y": 344
+  },
+  {
+   "name": "in",
+   "group": "f",
+   "x": 42,
+   "y": 396
+  }
+ ],
+ "notes": "描自 art/ref-shop.jpg（scripts/trace-shop-art.py），邏輯 448×492 ＝ 原圖 ÷4；圖層檔是 2.5× 所以 scale 0.4。\n座標契約：牆／地板交界 y=325；門洞 x 12–86、y 156–325；櫃檯 x 102–307、檯面上緣 y=299、檯身下緣 400；\n前景後層 depth 401.5（腳底 <402 在它後面）、前景前層 depth 457.5（腳底 <458 在它後面）——跟 stage-preview.html 的 zOf 同一個門檻。\n老闆翻片一律站桌子左端（dig1–3），腳底 ≥402 才不會掉到櫃子後面。走回櫃檯要走 frontleft → aisle → counter 三段，直線會穿櫃檯。",
+ "updatedAt": 1788881710620
+}

@@ -1,5 +1,196 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-13｜dip-vinyl-shop｜繪圖器第 5 批（收尾）：.aseprite 匯入、GIF 匯出、雪碧圖切格、動畫標籤
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。五批規劃到此跑完。
+
+**新增 `dip-pixel-aseprite.js`** — 讀 Aseprite 原生檔，純資料、node 可測。
+支援 8／16／32 bit 三種色彩深度、多圖層（群組圖層跳過但不弄亂編號）、多格、cel 的 x/y 偏移、
+cel 三種型態（raw／linked／zlib 壓縮）、新舊兩種色盤區塊、動畫標籤、每格時間。
+帶不進來的（圖層不透明度、混合模式、tilemap、slices）**不默默吃掉**，全部進 `warnings`，
+匯入視窗會列出來並抄一份進物件備註。解壓縮是注入進來的：瀏覽器用 `DecompressionStream('deflate')`、
+node 用 `zlib.inflateSync`。
+
+**新增 `dip-pixel-gif.js`** — GIF89a 編碼器。索引色本來就是 GIF 的原生格式，
+色盤直接當全域色表、像素值直接是色表編號，**不需要任何量化**，這是「一字元一色」少數真的划算的地方。
+
+**`pixel-editor.html`**：匯入 .aseprite、雪碧圖切成動畫格（自動猜欄列、逐格預覽）、
+匯出視窗改成四選一（PNG／每格 PNG／PNG 雪碧圖／GIF）、動畫標籤視窗、
+開啟視窗加過濾與排序與「最近開過」。
+
+**踩到的坑（很貴，記著）**：
+1. **GIF 的 LZW：編碼器加寬位元數的時機比解碼器晚一個條目。**
+   解碼器永遠比編碼器慢一步建表（它要讀到下一個碼才知道前一個條目的第一個像素），
+   所以讀第 k 個碼時解碼器的表比編碼器少一筆。編碼器要寫 `next === (1<<codeSize) + 1`、
+   解碼器寫 `next === (1<<codeSize)`。兩邊寫成一樣的話，前幾十個像素就開始整串錯位。
+   **自己編自己解會一起錯、測不出來**，所以真正的驗證是把 GIF 丟給 Chromium 的解碼器畫出來比對像素。
+2. **`animTags` 存得進去、讀不回來**（舊 bug，這次才浮出來）。`docToObject` 寫 `o.animTags`，
+   但 `docLoad` 只讀 `obj.tags`，所以動畫標籤存檔之後就消失。已修成優先讀 `animTags`、
+   保留舊的物件型 `tags` 相容路徑。
+3. **Playwright 不能 `await page.evaluate(() => importAsepriteFlow())`**——它會停在檔案選擇器上，
+   整個測試掛死。要 `page.evaluate(() => { importAsepriteFlow(); })`（不回傳 promise），
+   再用 `page.waitForEvent('filechooser')` 接。
+
+- 主要檔案：`dip-pixel-aseprite.js`（新增）、`dip-pixel-gif.js`（新增）、
+  `scripts/lib/fake-aseprite.mjs`（新增，照規格組 .aseprite 的測試用寫檔器）、
+  `scripts/pixel-aseprite-test.mjs`／`scripts/pixel-gif-test.mjs`（新增）、
+  `pixel-editor.html`（匯入匯出、切格、標籤、開啟視窗、docLoad 修正）、`PIXEL_STUDIO.md`
+- **`art/pixel/` 的資料格式沒動**（`animTags` 本來就在格式裡，只是之前讀不回來）。
+- **`.aseprite` 解析器沒拿真的 Aseprite 輸出驗證過**——雲端機器抓不到樣本檔，
+  測試用的是照規格自己組的檔案。店主第一次丟真檔案進去請確認結果。
+- 驗證：`node scripts/pixel-aseprite-test.mjs` 45 項、`pixel-gif-test` 35 項、
+  `pixel-palette-test` 49 項、`pixel-font-test` 39 項、`pixel-import-test` 43 項全過；
+  Playwright 193 項全過、console 零錯誤（新增 45 項：.aseprite 走真的檔案選擇器匯入、
+  GIF 交給 Chromium 解碼比對像素與透明、匯出視窗四格式、雪碧圖切格、標籤視窗與存回素材庫、
+  開啟視窗過濾排序與最近開過）；`node scripts/pixel-index.mjs` 通過。
+
+### 2026-09-13｜dip-vinyl-shop｜繪圖器第 4 批：明暗階產生器、色盤排序合併、色盤檔匯入匯出
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。第 4 批：色盤與取色。
+
+**新增 `dip-pixel-palette.js`** — 純資料、node 可測：
+
+- `shadeRamp(base, steps, opts)`：像素畫的明暗階。關鍵不是「乘以 0.7」，是
+  **暗部往藍紫、亮部往黃**，同時暗部彩度加、亮部彩度減。
+  色相是**往目標色相拉**（暗 260°、亮 50°），不是固定轉某個方向——固定方向的話
+  藍色（h≈212）的暗部會往青色跑，整個反了。無彩色完全不動色相與彩度，
+  否則灰階會冒出一條偏紅的假灰。
+- `sortOrder(list, mode, counts)`：明暗／色相／彩度／用量，回傳新順序（原陣列的索引）。
+- `mergeSimilar(list, thr, counts)`：門檻是 0–100，**取四次方**再乘理論最大距離——
+  線性或平方的話可用範圍會全擠在滑桿最左邊（每通道差 8 階的距離只有理論上限的萬分之一）。
+  同群留下的是用量最多的那個原色，不是平均色。
+- `parseGPL`／`parseHEX`／`parsePAL`／`parseAny` 與對應的 write；`parseAny` 認不出格式時
+  最後會把整份文字裡的六位 hex 硬撿出來。
+
+**`pixel-editor.html` 加「色盤」選單**：產生明暗階（即時預覽、產生完直接選成色階）、
+排序、合併相近色（先報 N→M 再套用）、刪掉沒用到的顏色、換色、載入／匯出色盤。
+**色盤格可以拖曳換位置**（門檻 6px，沒超過就還是單純點選）。
+
+**踩到的坑**：
+1. **重排色盤必須連 `DOC.pal` 一起重建**。存檔時色盤是 JSON 物件，順序就是 `Object.keys`
+   的插入順序；只換 `DOC.keys` 不換 `DOC.pal`，存出去再開回來順序就散了，色階（連號的一段）跟著壞掉。
+2. **`hex6()` 的三位數 hex 沒轉小寫**（三個檔案同一份複製貼上都有）。`#0F0` 會變成 `#00FF00`，
+   而 `isHex` 用的是不含 `i` 旗標的正規式，直接把它判成非法色。已一併修掉。
+
+- 主要檔案：`dip-pixel-palette.js`（新增）、`scripts/pixel-palette-test.mjs`（新增）、
+  `pixel-editor.html`（色盤選單、六個對話框、拖曳換位、hex6 修正）、
+  `dip-pixel-import.js`（hex6 修正）、`PIXEL_STUDIO.md`
+- **`art/pixel/` 的資料格式沒動。**
+- 驗證：`node scripts/pixel-palette-test.mjs` 49 項全過；font 39 項、import 43 項全過；
+  Playwright 148 項全過、console 零錯誤（新增 38 項：明暗階產生與接去上色墨水、排序後畫面不變色、
+  存檔再載回順序不變、合併留用量最多色、刪未用色、換色、色盤檔 append／replace 與最近色對應、
+  拖曳換位與單純點選的分野，全部含復原）。
+
+### 2026-09-11｜dip-vinyl-shop｜繪圖器第 3 批：墨水、網點、漸層、多邊形、描邊、點陣字
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。第 3 批：進階工具與墨水。
+
+**墨水系統**（鉛筆、油漆桶、直線、矩形、橢圓、多邊形共用）：
+- **上色（shading）**：沿色階走明暗，左鍵下一階、右鍵上一階，色階外的顏色與空白不動。
+  關鍵是 `applyInk` 比的是**下筆前的快照 `base`**，不是畫到一半的 `work`——否則一筆來回塗會一路推到底。
+- **換色（replace）**：只把背景色換成前景色，右鍵反過來。
+- **色階**：色盤上 Shift＋點＝從目前前景色選到那一格的一段連續編號，由點選處往前景色的方向排。
+  色階必須是色盤上**連續的一段**，所以色盤排序要自己顧好。
+
+**網點**改成「圖樣＋連續濃度」：Bayer 2×2／4×4／8×8、橫線、直線、斜線，濃度 0–100% 可調，
+取代原本幾個固定檔位（`ST.dither='check'` 這個舊欄位已刪，測試也跟著改）。
+判斷式是 `ditherT(x,y) < amt/100`，`ditherT` 把圖樣矩陣正規化成 (0,1)。
+
+**漸層**：線性／放射，索引色沒有中間色所以**一律靠網點**。來源可以是前景→背景兩色，
+也可以是選起來的色階（後者才是像素畫的正解，`frac > m` 決定倒向哪一階）。
+
+**多邊形形狀**（不是選取套索）、**描邊**（外側／內側、四／八方向、可限選取範圍內）。
+
+**新增 `dip-pixel-font.js`** — 點陣字型純資料：5×7 共 95 字（ASCII 32–126 全套，含小寫與下伸）、
+3×5 共 50 字。每個字形存成一條 35（或 15）字元的 `#`／`.` 字串。
+`renderText` 回 `{data,width,height}`，支援字距、行距、靠左／置中／靠右、缺字退回 `?`。
+繪圖器裡打完字是**懸浮的**，拖到定位再 Enter 落地。中文沒有內建，要自己畫。
+
+- 主要檔案：`pixel-editor.html`（墨水、網點、漸層、多邊形、描邊、點陣字、選項列、色盤色階、快捷鍵表）、
+  `dip-pixel-font.js`（新增）、`scripts/pixel-font-test.mjs`（新增）、`PIXEL_STUDIO.md`（§2、§7）
+- **`art/pixel/` 的資料格式沒動。**
+- 驗證：`node scripts/pixel-font-test.mjs` 39 項全過；`node scripts/pixel-import-test.mjs` 43 項全過；
+  Playwright 110 項全過、console 零錯誤（新增 48 項：網點三種濃度與圖樣分佈、色階正反向選取、
+  上色一筆只移一階與端點夾住、換色雙向、線性／放射／色階漸層、多邊形預覽與 Enter／Esc／單步復原、
+  點陣字兩套字型與懸浮拖曳落地、描邊四／八方向與內外側、狀態列）；`node scripts/pixel-index.mjs` 通過。
+
+### 2026-09-11｜dip-vinyl-shop｜繪圖器加「匯入圖片分析」：像素格還原、抽色盤、網點、去背、自動切件
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。接續第 1 批，這是**第 2 批：圖片匯入分析**。
+
+**新增 `dip-pixel-import.js`** — 純資料、不碰 DOM，所以 node 可以直接單元測試：
+
+- `detectGrid`：估「一格等於幾個螢幕像素」與偏移。做法是算每欄／每列與前一欄的顏色差能量，
+  再對每個候選格寬 k 與偏移打分：`captured`（邊界位置抓到的能量比例，k 太大會漏）
+  × `coverage`（有明顯能量的邊界位置比例，k 太小會有空邊界）。分數相近時取最小的 k，避免選到倍數。
+- `downsampleMode`：每格取**內縮一圈後的眾數色**（量化到 4 bit 分箱再取模），抗抗鋸齒與雜訊。
+- `areaAverage`：面積平均縮圖（插畫與照片用）。
+- `medianCut`：**原圖顏色本來就不超過 n 種就照抄**（重新匯入像素圖時一個色都不能失真），
+  超過才跑中位切分。`exactColors` 是那個捷徑。
+- `quantize`：最近色＋Bayer 2×2／4×4／8×8（把像素投影到最近兩色的連線上，用 Bayer 門檻決定倒向哪邊）
+  ／Floyd–Steinberg。顏色距離用綠色加權，比純歐氏準。
+- `removeBackground`：alpha／邊框 flood（**只清連到邊界的，人物中間同色的洞會留著**）／指定色。
+- `despeckle`、`sliceComponents`（連通區域，可設最小面積與合併距離）、`idxToRows`。
+
+**`pixel-editor.html` 的匯入改成帶即時預覽的分析視窗**：左邊原圖疊格線、右邊結果，
+模式（像素格還原／智慧像素化）、格寬偏移微調、色盤三選一、網點、去背、清雜點；
+三個出口：當成新圖層（置中貼）、取代整張、切成多個物件（逐件勾選、腳點自動底邊中央、色盤自動修剪）。
+
+**踩到的坑（會再遇到，記著）**：
+1. **測試圖本身的陷阱**。第一版測試圖每一欄都重複（`rrrrgggg` 這種），圖的**真實週期就是格寬的兩倍**，
+   偵測器回 10 而不是 5 是對的，錯的是測試圖。換成相鄰欄列都不同的對角彩虹才測得準。
+   這也是演算法的天花板：欄列整排重複時，資訊上就分不出來。
+2. **`openDlg` 沒清掉上一個對話框掛在 `#dlg` 上的委派事件**。匯入視窗開第二次時兩組 listener 同時在跑，
+   舊的 closure 對著已經不存在的欄位取值（`Cannot read properties of null`），還會用舊的來源圖重算、
+   把新視窗的 `IMP.res` 蓋掉，導致切件切錯。修法：`openDlg` 開頭把 `#dlg` 的
+   `oninput`／`onchange`／`onclick` 設回 null，匯入視窗改用屬性指派而不是 `addEventListener`。
+
+- 主要檔案：`dip-pixel-import.js`（新增）、`scripts/pixel-import-test.mjs`（新增）、
+  `pixel-editor.html`（匯入視窗、切件視窗、`openDlg` 清事件）、`PIXEL_STUDIO.md`
+- **`art/pixel/` 的資料格式沒動**。
+- 驗證：`node scripts/pixel-import-test.mjs` 43 項全過（格子偵測含雜訊與五種格寬偏移、還原一字不差、
+  色盤照抄與中位切分、網點三種、去背保留內部洞、清雜點、切件邊界不混色、analyze 端到端還原）；
+  Playwright 62 項全過、console 零錯誤（含匯入視窗自動偵測 5×5@3,3、去背、套用成新圖層、
+  切件建立兩個物件且格式合法）；`node scripts/pixel-index.mjs --check` 通過。
+
+### 2026-09-10｜dip-vinyl-shop｜像素繪圖器獨立成 pixel-editor.html（Aseprite 式版面），工坊只留場景與劇本
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（base 是 `claude/card-game-character-creation-xpgz1f`，PR #13 草稿，**未合併 main**）。
+
+店主：「我要新增跟 aseprite 一樣的繪圖軟體，可以一格一格像素慢慢畫」。先給規劃書拆成五批，
+店主定案：**獨立頁、版面照 Aseprite、.aseprite 匯入要做、圖片匯入分析納入規劃（排在第 1 批之後）、先做第 1 批**。
+這一筆是**第 1 批：外殼與手感**。
+
+**新增 `pixel-editor.html`（1800 行）** — 版面照 Aseprite：選單列／工具選項列／左邊前景背景色與色盤／
+中間畫布／右邊工具／下方時間軸／底部狀態列。
+
+- **顏色**：左鍵前景、右鍵背景、X 互換、Alt＋點吸色；取色視窗 hex＋RGB＋HSV 滑桿（取代所有 `prompt()`）。
+- **工具**：鉛筆／橡皮擦／油漆桶（相連或全圖、容差）／吸管／直線／矩形／橢圓／框選／橢圓選／套索／
+  多邊形套索／魔術棒／移動／平移／縮放／腳點。筆刷 1–64 方圓、網點五種、像素完美線、Shift 約束、X／Y 對稱。
+- **懸浮選取**（Aseprite 的關鍵手感）：移動或貼上之後內容浮著可以一直拖，Enter 才落地、Esc 取消。
+- **選取**：Shift 加、Alt 減、Shift+Alt 交集；全選／反選／取消／擴張／收縮一像素；跨物件貼會自動補色盤。
+- **圖層與時間軸**：圖層 × 格的 cel 矩陣，點哪裡編哪裡；增刪複製排序合併壓平顯示鎖定、fps、播放、洋蔥皮（前紅後藍）。
+- **畫布**：九宮格錨點調整、×2÷2、翻轉、旋轉、裁到內容／選取；滾輪以游標為中心縮放到 64 倍、平鋪檢視。
+- 復原 100 步（cel 級與整份文件級兩種快照）；匯入圖片量化、拖圖、Ctrl+V 貼系統圖片；匯出 PNG。
+
+**`pixel-studio.html` 砍掉繪圖分頁**（1205 → 616 行），只留 🏞 場景／🎬 劇本／🔁 交接，
+標題列加「🖌 繪圖器」鈕，左欄物件**點一下就在繪圖器打開**。
+
+**兩頁共用同一份 IndexedDB 素材庫**，存檔一律「讀回最新的整份庫→只換自己那一筆→寫回」，
+所以兩個分頁同時開不會互相蓋掉；工坊分頁重新可見時會重讀物件。
+
+- 主要檔案：`pixel-editor.html`（新增）、`pixel-studio.html`（重寫成三分頁）、`admin.html`（兩顆入口鈕）、
+  `PIXEL_STUDIO.md`（改寫成繪圖器＋工坊兩頁的說明）
+- **`art/pixel/` 的資料格式一個字都沒改**；`dip-pixel.js` 也沒動。
+- 驗證：Playwright 49 項全過、console 零錯誤——含左右鍵前景背景色、復原重做、實心矩形、油漆桶、橢圓外框、
+  框選複製貼上懸浮拖曳落地、M 連按循環、魔術棒、Shift 加選 Alt 減選、圖層壓平（隱藏層不進 frames）、
+  對稱、網點、格與時間軸、九宮格調整、×2、旋轉、新增顏色、圖片匯入、重載後還在、
+  工坊三分頁與劇本播放、點物件跳繪圖器、**既有物件來回一趟格式仍然合法**（rows 長度、只用色盤字元、frames＝可見圖層壓平）。
+  `node scripts/pixel-index.mjs --check` 通過。
+
+**還沒做**（第 2–5 批）：動畫標籤與預覽視窗、漸層與上色墨水、描邊、點陣字、色盤明暗階、
+`.aseprite` 匯入、GIF 匯出、雪碧圖切入、圖片智慧像素化與自動切件。
+
 ### 2026-09-09｜dip-vinyl-shop｜管理員／訪客面板加「🏪 重跑序章」
 
 店主：「我的帳號重置功能也要讓我可以重跑序章」。原本只有沙盒的「全部重置」
@@ -30,6 +221,50 @@
   網址轉成 `?prologue=1`，序章第一頁（捏角色）正常畫出來，全程無 JS 錯誤。
   （雲端那段要登入才測得到，沙盒連不到 Firebase。）
 
+### 2026-09-08｜dip-vinyl-shop｜像素工坊：線上像素繪圖器＋場景合成＋劇本，資料落 art/pixel/ 與 Claude 共用
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（從 `claude/card-game-character-creation-xpgz1f` 長出來，PR 以它為 base，**未合併 main**）。
+
+店主問：能不能做一個線上像素繪圖器，在後台自己畫物件、排成場景，再跟 Claude Code 合作搭場景與故事。
+做法的核心不是畫布，是**資料格式**：`dip-character.js` 的 `sprRows` 早就把小人存成「一列一字串、一字元一像素」，
+把它擴成物件／場景／劇本三層 JSON（`art/pixel/`），人用 GUI 畫、Claude 直接改同一份字串，兩邊不用翻譯。
+
+店主第二輪：「不只唱片行，對戰畫面、劇情畫面都要用它畫，給我功能齊全的像素繪圖器」→ 繪圖分頁整個重寫成
+正式像素軟體等級（內部索引陣列 Uint8Array、IndexedDB 儲存、畫布到 1024）。
+
+**新增：**
+- `pixel-studio.html`：單檔編輯器，四個分頁。🖌 繪圖（畫布 1–1024＋尺寸預設；筆／擦／填（相連或全圖）／線／矩形／橢圓（框或實心）／
+  框選／魔術棒／移動／吸色／平移／腳點；筆刷 1–64 方圓、網點、像素完美、Shift 約束；X／Y 對稱；選取的加減選、全選反選、
+  剪貼（跨物件自動補色）、方向鍵微移、選取內翻轉旋轉、裁到選取、選取→新物件；**圖層**（增刪複製排序合併壓平顯示鎖定）；
+  每物件自己的色盤（預設＝PIX_PAL 17 色，加改刪、全圖換色、色相排序、清未用、預設色盤 PICO-8／DB16／Sweetie16、hex 清單匯入匯出）；
+  格動畫（fps＋每格毫秒、洋蔥皮前後、雪碧圖匯出切入）；畫布（九宮格錨調整、×2÷2、翻轉旋轉、裁到內容、環繞位移＋平鋪預覽、深色底）；
+  參考圖（上下、透明、位置倍率）；圖片→像素量化（新圖層／取代）、拖圖、Ctrl+V 貼圖、圖檔物件轉像素；PNG／SVG／JSON 匯出；
+  1:1 預覽；快捷鍵總表；60 步復原）；
+  🏞 場景（背景圖＋物件實例＋站位，深度照腳底 y 排、`depth` 可覆寫、拖曳／方向鍵、讀數直接給 stage-preview 式 left%/bottom%）；
+  🎬 劇本（beats 與 `RPG_BEATS` **同一套語彙**：p/o/f、`oPath` 多段走位、`door` open/swing/shut、`oDig`、♪、💢，
+  點一句就補間走位播到那句，`ui`／`prompt` 欄位原樣保留，「複製 beats」可直接貼回 `roguelike.html`）；
+  🔁 交接（從本站載入 `art/pixel/index.json`、匯出／匯入 bundle、「複製給 Claude 的交接」、貼上 JSON 匯入、
+  fine-grained token 直接推 GitHub Contents API）。資料存 localStorage `dipPixelStudio_v1`。
+- `dip-pixel.js`：編輯器與前台共用的格式＋繪製庫（`toSVG` 與 `pixArtHTML` 同形、`drawScene`（含場景底色）、`stageAt` 與 `rpgApplyStage` 同一累積規則、
+  `placeAt`／`findAnchor`、`flattenLayers`：有 `layers` 的物件壓平成 `frames`，前台只讀 `frames`；`pixel-index.mjs` 在 node 也用同一支重壓）。
+  PIX_PAL 複製了一份，刻意不載入 `dip-character.js`——那支在預覽站會清 localStorage，會把草稿洗掉。
+- `art/pixel/`：16 物件（老闆／玩家／男子三個 16×16 小人、門三格、兩張前景圖層、十件道具圖檔）、場景 `shop2`
+  （站位＝`roguelike.html` 的 `RPG_POS` 一字不差、前景後層 depth 401.5／前層 457.5 ＝ `rpgZ` 門檻）、
+  劇本 `prologue`（＝`RPG_BEATS` 一字不差，含 `oPath`／`door`／`oDig`）。
+  這條分支長出來的當下，另一個工作階段剛把描圖舞台換進 `roguelike.html`（2669b9d），rebase 上去後把語彙對齊了。
+- `scripts/pixel-seed.mjs`（一次性種子，從 dip-character.js 借 sprRows）、`scripts/pixel-index.mjs`（驗證所有 JSON 形狀＋重建 index，改完必跑）。
+- `PIXEL_STUDIO.md`：用法、格式規格、三條協作路徑、接進 roguelike 的下一步、限制。
+- `admin.html`：🎮 遊戲設定加 **🎨 像素工坊** 子分頁（iframe 內嵌、另開新視窗鈕）。
+
+**還沒做**：`roguelike.html` 還是寫死的 `RPG_POS`／`RPG_BEATS`，沒有讀 `art/pixel/`；目前靠「複製 POS／beats」貼過去。
+直接 fetch JSON 的接法寫在 PIXEL_STUDIO.md §5。
+
+- 驗證（繪圖器重寫後）：Playwright 31 項全過——筆／復原重做／實心矩形／填色／橢圓／框選／剪貼／移動／魔術棒／Delete／
+  圖層新增與壓平（隱藏層不進 frames）／對稱＋網點／格複製與空白格／預設色盤追加與清未用／九宮格調整／×2／旋轉／
+  圖片匯入為圖層／重載後 IndexedDB 還在且圖層格數完整／場景與劇本分頁照舊。
+- 驗證（第一版）：`node scripts/pixel-index.mjs` 全過；Chromium（Playwright）開 `pixel-studio.html`——從本站載入 16/1/1、
+  場景遮擋與 stage-preview 一致（老闆櫃檯後只露頭肩、玩家在門前）、選老闆讀數 left 30.13%／width 17.41% 與 stage-preview 完全相同、
+  劇本播到第 14／19 句走位正確、畫筆拖一筆＋Ctrl+Z 復原正確、console 零錯誤；`admin.html` 子分頁存在。
 ### 2026-09-08｜dip-vinyl-shop｜序章舞台正式換進 roguelike.html（描圖美術＋新走位）
 
 店主：「先推上去 之後要改再說」。把 `stage-preview.html` 上定案的那一套搬進遊戲。

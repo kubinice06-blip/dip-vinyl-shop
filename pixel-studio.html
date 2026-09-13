@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>像素工坊 · dip</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --black:#111; --gold:#b8860b; --line:#d8d4cc; --gray:#777; --bg:#f4f2ec; --panel:#fff; --mono:'Space Mono',ui-monospace,monospace; }
+  *{ box-sizing:border-box; }
+  html,body{ height:100%; }
+  body{ margin:0; background:var(--bg); color:var(--black); font-family:var(--mono); font-size:11px; display:flex; flex-direction:column; overflow:hidden; }
+  header{ display:flex; align-items:center; gap:14px; padding:6px 12px; border-bottom:2px solid var(--black); background:#fff; flex:0 0 auto; }
+  header b{ font-size:13px; letter-spacing:.1em; }
+  .modes{ display:flex; border:1px solid var(--black); }
+  .modes button{ font-family:var(--mono); font-size:10px; font-weight:700; padding:6px 12px; border:0; border-right:1px solid var(--black); background:#fff; cursor:pointer; }
+  .modes button:last-child{ border-right:0; }
+  .modes button.on{ background:var(--black); color:#fff; }
+  #saveState{ margin-left:auto; color:var(--gray); font-size:10px; }
+  .app{ flex:1 1 auto; display:grid; grid-template-columns:200px 1fr 320px; min-height:0; }
+  .app.libhide{ grid-template-columns:0 1fr 320px; }
+  aside{ background:var(--panel); border-right:1px solid var(--line); overflow:auto; padding:8px; }
+  .app.libhide #lib{ display:none; }
+  #side{ border-right:0; border-left:1px solid var(--line); }
+  main{ min-width:0; min-height:0; overflow:hidden; position:relative; display:flex; flex-direction:column; }
+  section.view{ display:none; flex:1; min-height:0; }
+  section.view.on{ display:flex; flex-direction:column; }
+  h3{ font-size:10px; letter-spacing:.12em; color:var(--gray); margin:10px 0 4px; text-transform:uppercase; display:flex; align-items:center; gap:6px; }
+  h3:first-child{ margin-top:0; }
+  .lib-item{ display:flex; align-items:center; gap:6px; padding:4px 6px; cursor:pointer; border:1px solid transparent; }
+  .lib-item:hover{ background:#f1efe8; }
+  .lib-item.on{ border-color:var(--black); background:#fff; }
+  .lib-item .th{ width:28px; height:28px; display:flex; align-items:center; justify-content:center; background:repeating-conic-gradient(#e6e3db 0 25%,#fff 0 50%) 0 0/8px 8px; flex:0 0 auto; overflow:hidden; }
+  .lib-item .th svg,.lib-item .th img{ max-width:100%; max-height:100%; image-rendering:pixelated; }
+  .lib-item .nm{ flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .lib-item small{ color:var(--gray); }
+  button.b, .b{ font-family:var(--mono); font-size:10px; font-weight:700; padding:5px 8px; border:1px solid var(--black); background:#fff; color:var(--black); cursor:pointer; text-decoration:none; display:inline-block; line-height:1.2; }
+  button.b:hover{ background:#f1efe8; }
+  button.b.pri{ background:var(--black); color:#fff; }
+  button.b.on{ background:var(--gold); color:#fff; border-color:var(--gold); }
+  button.b.sm{ padding:3px 5px; font-size:9px; }
+  button.b:disabled{ opacity:.4; cursor:default; }
+  .row{ display:flex; gap:6px; align-items:center; flex-wrap:wrap; margin:4px 0; }
+  label.f{ display:flex; flex-direction:column; gap:2px; font-size:10px; color:var(--gray); }
+  label.f.inl{ flex-direction:row; align-items:center; gap:4px; }
+  input[type=text],input[type=number],select,textarea{ font-family:var(--mono); font-size:11px; padding:4px 6px; border:1px solid var(--line); background:#fff; color:var(--black); width:100%; }
+  input[type=number]{ width:60px; }
+  textarea{ resize:vertical; min-height:48px; }
+  .hint{ color:var(--gray); font-size:10px; line-height:1.7; }
+  kbd{ font-family:var(--mono); border:1px solid var(--line); padding:0 3px; font-size:9px; background:#fff; }
+  .stage-wrap{ padding:14px; flex:1; overflow:auto; }
+  .stage{ position:relative; display:inline-block; box-shadow:0 0 0 2px var(--black); background:#3a2a18; line-height:0; }
+  .stage canvas{ image-rendering:pixelated; display:block; }
+  .stage canvas.ov{ position:absolute; left:0; top:0; touch-action:none; }
+  .items .it{ display:flex; align-items:center; gap:4px; padding:3px 4px; cursor:pointer; border:1px solid transparent; }
+  .items .it.on{ border-color:var(--black); background:#fff; }
+  .items .it:hover{ background:#f1efe8; }
+  .items .it .nm{ flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+  .items .it .ic{ cursor:pointer; opacity:.5; } .items .it .ic.on{ opacity:1; }
+  .role{ font-size:9px; padding:0 4px; border:1px solid var(--gold); color:var(--gold); }
+  .kv{ display:grid; grid-template-columns:auto 1fr; gap:3px 8px; font-size:10px; color:var(--gray); }
+  .kv b{ color:var(--black); font-weight:400; }
+  .beat{ border:1px solid var(--line); background:#fff; padding:6px; margin-bottom:6px; }
+  .beat.on{ border-color:var(--black); box-shadow:0 0 0 1px var(--black); }
+  .beat .hd{ display:flex; gap:6px; align-items:center; }
+  .beat .hd .n{ font-size:9px; color:var(--gray); width:24px; }
+  .beat textarea{ min-height:40px; margin-top:4px; }
+  .beat .st{ display:flex; gap:4px; flex-wrap:wrap; margin-top:4px; align-items:center; }
+  .beat .st select,.beat .st input{ width:auto; }
+  .rpg-win{ position:relative; background:#000; color:#fff; border:4px double #fff; padding:16px 16px 22px; min-height:88px; margin-top:8px; }
+  .rpg-name{ position:absolute; left:12px; top:-12px; background:#000; color:#fff; border:2px solid #fff; padding:1px 10px; font-size:11px; font-weight:700; letter-spacing:.1em; }
+  .rpg-name.foe{ border-color:#ff6b7a; color:#ff6b7a; }
+  .rpg-text{ font-size:13px; line-height:1.95; letter-spacing:.04em; }
+  .io{ padding:16px; max-width:820px; overflow:auto; }
+  .io .box{ border:1px solid var(--line); background:#fff; padding:12px; margin-bottom:14px; }
+  .io .box h4{ margin:0 0 6px; font-size:11px; letter-spacing:.08em; }
+  .io p{ color:var(--gray); line-height:1.8; margin:4px 0 8px; }
+  .log{ font-size:10px; background:#111; color:#ddd; padding:8px; max-height:180px; overflow:auto; white-space:pre-wrap; margin-top:8px; }
+  .story-wrap{ display:grid; grid-template-columns:1fr 360px; gap:14px; padding:14px; flex:1; overflow:auto; }
+  .story-wrap > div{ min-width:0; }
+  @media (max-width:900px){ .app{ grid-template-columns:140px 1fr; } #side{ grid-column:1/-1; border-top:1px solid var(--line); max-height:40vh; } .story-wrap{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <b>🎨 像素工坊</b>
+  <nav class="modes">
+    <button data-m="scene" class="on">🏞 場景</button>
+    <button data-m="story">🎬 劇本</button>
+    <button data-m="io">🔁 交接</button>
+  </nav>
+  <button class="b pri" id="openEditor" title="開啟像素繪圖器（Aseprite 式，一格一格畫）">🖌 繪圖器</button>
+  <button class="b sm" id="libToggle" title="收合素材庫">☰ 素材庫</button>
+  <span id="saveState">本機草稿</span>
+</header>
+<div class="app" id="app">
+  <aside id="lib">
+    <h3>物件 <button class="b sm" id="libNewObj" title="在繪圖器開一個新物件">＋</button></h3>
+    <div class="hint" style="margin:-2px 0 4px">點一下＝在繪圖器打開</div>
+    <div id="libObjs"></div>
+    <h3>場景 <button class="b sm" id="libNewScene">＋</button></h3>
+    <div id="libScenes"></div>
+    <h3>劇本 <button class="b sm" id="libNewStory">＋</button></h3>
+    <div id="libStories"></div>
+  </aside>
+
+  <main>
+    <section class="view on" id="v-scene"><div class="stage-wrap"><div class="hint" id="sceneEmpty">左邊按「＋」開一個場景。</div><div class="stage" id="stage" hidden><canvas id="sc"></canvas><canvas id="sco" class="ov"></canvas></div><div class="hint" id="sceneRead" style="margin-top:8px"></div></div></section>
+    <section class="view" id="v-story">
+      <div class="story-wrap">
+        <div>
+          <div class="row"><b id="stTitle"></b><span class="hint" id="stSceneName"></span></div>
+          <div class="stage" id="ststage" hidden><canvas id="stc"></canvas><canvas id="stco" class="ov"></canvas></div>
+          <div class="rpg-win" id="stWin" hidden><div class="rpg-name" id="stName"></div><div class="rpg-text" id="stText"></div></div>
+          <div class="row" style="margin-top:8px">
+            <button class="b" id="stFirst">⏮ 從頭</button><button class="b" id="stPrev">◀</button><button class="b pri" id="stNext">▶ 下一段</button>
+            <button class="b" id="stPlay">▶▶ 自動播放</button><span class="hint" id="stPos"></span>
+          </div>
+          <div class="hint" id="storyEmpty">左邊按「＋」開一個劇本，再指定它用哪個場景。演員＝場景裡 role 設成 p／o／f 的物件；站位＝場景裡同組的站位名。</div>
+        </div>
+        <div id="beats"></div>
+      </div>
+    </section>
+    <section class="view" id="v-io"><div class="io" id="ioPanel"></div></section>
+  </main>
+
+  <aside id="side"></aside>
+</div>
+
+<script src="dip-pixel.js?v=3"></script>
+<script>
+'use strict';
+// 像素工坊：場景合成 ＋ 劇本 ＋ 與 Claude 的交接。
+// 逐像素繪圖已經搬到獨立的 pixel-editor.html（Aseprite 式版面），這裡只留「開繪圖器」。
+const P = window.DipPixel;
+const $ = id => document.getElementById(id), $$ = (s, r) => Array.from((r||document).querySelectorAll(s));
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+const uid = () => Math.random().toString(36).slice(2,8);
+const hex6 = c => { c = String(c||'').trim(); const m = /^#([0-9a-f]{3})$/i.exec(c); return m ? '#' + m[1].split('').map(x=>x+x).join('') : c.slice(0,7); };
+function download(name, blob){ const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 800); }
+function readFile(file, as){ return new Promise((res,rej)=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.onerror=rej; as==='text'? r.readAsText(file) : r.readAsDataURL(file); }); }
+function pickFile(accept, as){ return new Promise(res=>{ const i=document.createElement('input'); i.type='file'; i.accept=accept; i.onchange=async()=>{ const f=i.files[0]; res(f? {file:f, data: await readFile(f, as)} : null); }; i.click(); }); }
+async function copyText(t){ try{ await navigator.clipboard.writeText(t); toast('已複製到剪貼簿'); }catch(e){ prompt('瀏覽器不給剪貼簿權限，自己複製：', t); } }
+let _toastT; function toast(m){ let t=$('toast'); if(!t){ t=document.createElement('div'); t.id='toast'; t.style.cssText='position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:#111;color:#fff;padding:8px 14px;font-size:11px;z-index:99;border:1px solid var(--gold);transition:opacity .3s;pointer-events:none'; document.body.appendChild(t); } t.textContent=m; t.style.opacity='1'; clearTimeout(_toastT); _toastT=setTimeout(()=>t.style.opacity='0', 2200); }
+
+// ═══════════ 資料：IndexedDB（與繪圖器共用同一份素材庫）═══════════
+const LS_KEY = 'dipPixelStudio_v1', IDB_NAME = 'dipPixelStudio', IDB_KEY = 'db';
+const idb = {
+  open(){ return new Promise((res, rej) => { if(!window.indexedDB) return rej(new Error('no idb')); const r = indexedDB.open(IDB_NAME, 1); r.onupgradeneeded = () => r.result.createObjectStore('kv'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); }); },
+  async get(k){ const d = await this.open(); return new Promise((res, rej) => { const t = d.transaction('kv','readonly').objectStore('kv').get(k); t.onsuccess = () => res(t.result); t.onerror = () => rej(t.error); }); },
+  async set(k, v){ const d = await this.open(); return new Promise((res, rej) => { const tx = d.transaction('kv','readwrite'); tx.objectStore('kv').put(v, k); tx.oncomplete = () => res(); tx.onerror = () => rej(tx.error); }); },
+};
+let DB = P.emptyDB();
+let EDIT_ID = null;   // 最後一次在繪圖器打開的物件（交接分頁會一起打包）
+async function loadDB(){
+  try{ const v = await idb.get(IDB_KEY); if(v && v.objects){ DB = v; return 'idb'; } }catch(e){}
+  try{ const v = JSON.parse(localStorage.getItem(LS_KEY)); if(v && v.objects){ DB = v; return 'ls'; } }catch(e){}
+  return 'empty';
+}
+// 存檔：讀回最新的整份庫，只換自己這一頁改過的場景／劇本，避免蓋掉繪圖器剛存的物件
+let _saveT = null, _wq = Promise.resolve();
+function touch(){ $('saveState').textContent = '未存…'; clearTimeout(_saveT); _saveT = setTimeout(save, 500); }
+function save(){
+  clearTimeout(_saveT);
+  _wq = _wq.then(async () => {
+    let cur = null;
+    try{ cur = await idb.get(IDB_KEY); }catch(e){}
+    if(cur && cur.objects){
+      // 物件以儲存體為準（繪圖器那邊才是物件的主人），除非本頁匯入了更新的
+      for(const id in DB.objects){ const a = DB.objects[id], b = cur.objects[id];
+        if(!b || (a.updatedAt||0) > (b.updatedAt||0)) cur.objects[id] = a; }
+      cur.scenes = DB.scenes; cur.stories = DB.stories;
+      DB = cur;
+    } else cur = DB;
+    try{ await idb.set(IDB_KEY, DB); $('saveState').textContent = '本機草稿已存 ' + new Date().toLocaleTimeString('zh-TW',{hour12:false}); }
+    catch(e){ try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); $('saveState').textContent = '已存（localStorage）'; }
+      catch(e2){ $('saveState').textContent = '⚠ 存不進去：' + (e2.message||e2); } }
+  }).catch(()=>{});
+  return _wq;
+}
+window.addEventListener('beforeunload', ()=>{ if(_saveT){ clearTimeout(_saveT); save(); } });
+// 回到這一頁時重讀素材庫（繪圖器可能剛改過物件）
+document.addEventListener('visibilitychange', async () => {
+  if(document.visibilityState !== 'visible' || _saveT) return;
+  try{ const v = await idb.get(IDB_KEY); if(v && v.objects){ DB.objects = v.objects; renderLib(); if(ST.mode==='scene') sRender(); if(ST.mode==='story') tRender(); } }catch(e){}
+});
+const stamp = o => { o.updatedAt = Date.now(); };
+function uniqueId(base, table){ let id = P.slug(base), n = 2; while(table[id]) id = P.slug(base) + '-' + (n++); return id; }
+const openEditor = id => { save(); location.href = 'pixel-editor.html' + (id ? '?id=' + encodeURIComponent(id) : ''); };
+
+// ═══════════ 模式切換與素材庫 ═══════════
+const ST = { mode:'scene' };
+function setMode(m){
+  ST.mode = m;
+  $$('.modes button').forEach(b => b.classList.toggle('on', b.dataset.m === m));
+  $$('section.view').forEach(s => s.classList.toggle('on', s.id === 'v-' + m));
+  renderSide();
+  if(m === 'scene') sRender(); if(m === 'story') tRender(); if(m === 'io') ioRender();
+}
+$$('.modes button').forEach(b => b.onclick = () => setMode(b.dataset.m));
+$('libToggle').onclick = () => { $('app').classList.toggle('libhide'); if(ST.mode==='scene') sRender(); if(ST.mode==='story') tRender(); };
+$('openEditor').onclick = () => openEditor(EDIT_ID || '');
+
+const thumbCache = new Map();
+function thumbHTML(obj){
+  if(!obj) return '';
+  if(obj.kind === 'image') return `<img src="${esc(P.frameOf(obj,0))}" alt="">`;
+  const k = obj.id + '@' + (obj.updatedAt||0); let u = thumbCache.get(k);
+  if(!u){ try{ u = P.rasterize(obj, 0).toDataURL(); }catch(e){ u=''; } if(thumbCache.size > 300) thumbCache.clear(); thumbCache.set(k, u); }
+  return u ? `<img src="${u}" alt="">` : '';
+}
+function renderLib(){
+  const objs = Object.values(DB.objects).sort((a,b)=> a.name.localeCompare(b.name,'zh-Hant'));
+  $('libObjs').innerHTML = objs.map(o => `<div class="lib-item" data-t="obj" data-id="${esc(o.id)}" title="${o.kind==='pixel'?'在繪圖器打開':'圖檔物件（不能逐像素改）'}"><span class="th">${thumbHTML(o)}</span><span class="nm">${esc(o.name)}<br><small>${o.kind==='image'?'圖檔':(P.sizeOf(o).w+'×'+P.sizeOf(o).h)}${(o.frames||[]).length>1?' ·'+o.frames.length+'格':''}${(o.layers||[]).length>1?' ·'+o.layers.length+'層':''}</small></span></div>`).join('') || '<div class="hint">（空）</div>';
+  $('libScenes').innerHTML = Object.values(DB.scenes).map(s => `<div class="lib-item ${S.id===s.id&&ST.mode==='scene'?'on':''}" data-t="scene" data-id="${esc(s.id)}"><span class="th">🏞</span><span class="nm">${esc(s.name)}<br><small>${s.w}×${s.h} · ${(s.items||[]).length} 件</small></span></div>`).join('') || '<div class="hint">（空）</div>';
+  $('libStories').innerHTML = Object.values(DB.stories).map(s => `<div class="lib-item ${T.id===s.id&&ST.mode==='story'?'on':''}" data-t="story" data-id="${esc(s.id)}"><span class="th">🎬</span><span class="nm">${esc(s.name)}<br><small>${(s.beats||[]).length} 句 · ${esc((DB.scenes[s.scene]||{}).name||'未指定場景')}</small></span></div>`).join('') || '<div class="hint">（空）</div>';
+}
+$('lib').addEventListener('click', e => {
+  const it = e.target.closest('.lib-item'); if(!it) return;
+  if(it.dataset.t === 'obj'){ const o = DB.objects[it.dataset.id];
+    if(o && o.kind !== 'pixel'){ toast('圖檔物件不能逐像素改；要編輯請在繪圖器用「匯入圖片」'); return; }
+    openEditor(it.dataset.id); }
+  if(it.dataset.t === 'scene'){ openScene(it.dataset.id); setMode('scene'); }
+  if(it.dataset.t === 'story'){ openStory(it.dataset.id); setMode('story'); }
+});
+const SIZE_PRESETS = [['448×492 唱片行舞台',448,492],['390×600 對戰直式',390,600],['560×315 橫幅 16:9',560,315],['256×256',256,256]];
+$('libNewObj').onclick = () => openEditor('');
+$('libNewScene').onclick = () => {
+  const name = prompt('場景名稱（例：巷子裡的唱片行、對戰畫面、聆聽室）'); if(!name) return;
+  const pick = prompt('尺寸「寬x高」或預設編號\n' + SIZE_PRESETS.map((p,i)=>`${i+1}. ${p[0]}`).join('\n'), '448x492'); if(pick==null) return;
+  let w=448,h=492; const pre = SIZE_PRESETS[parseInt(pick,10)-1]; const m = /^(\d+)\s*[x×*,]\s*(\d+)$/i.exec(pick.trim());
+  if(m){ w=+m[1]; h=+m[2]; } else if(pre && !/[x×]/i.test(pick)){ w=pre[1]; h=pre[2]; }
+  const id = uniqueId(name, DB.scenes);
+  DB.scenes[id] = P.newScene(id, name, clamp(w,16,4096), clamp(h,16,4096)); touch(); openScene(id); setMode('scene');
+};
+$('libNewStory').onclick = () => {
+  const name = prompt('劇本名稱（例：序章、對戰開場）'); if(!name) return;
+  const id = uniqueId(name, DB.stories);
+  DB.stories[id] = P.newStory(id, name, S.id || Object.keys(DB.scenes)[0] || ''); touch(); openStory(id); setMode('story');
+};
+function renderSide(){
+  const side = $('side');
+  if(ST.mode === 'scene') side.innerHTML = sSideHTML();
+  else if(ST.mode === 'story') side.innerHTML = tSideHTML();
+  else side.innerHTML = '<div class="hint">交接分頁的操作都在中間。</div>';
+  bindSide();
+  renderLib();
+}
+// ═══════════════════════════ 🏞 場景合成 ═══════════════════════════
+const S = { id:null, sel:null, selA:-1, addAnchor:null, drag:null, css:1, showAnchors:true, showGrid:false, raf:0 };
+const sc = $('sc'), scx = sc.getContext('2d'), sco = $('sco'), sox = sco.getContext('2d');
+const curScene = () => DB.scenes[S.id] || null;
+function openScene(id){ S.id = id; S.sel = null; S.selA = -1; S.addAnchor = null; if(ST.mode==='scene'){ renderSide(); sRender(); } }
+function sFit(){ const scn = curScene(); if(!scn) return; const wrap = $('v-scene').querySelector('.stage-wrap'); const avail = Math.max(200, wrap.clientWidth - 30), availH = Math.max(200, wrap.clientHeight - 60); S.css = Math.min(avail/scn.w, availH/scn.h, 3); if(S.css > 1) S.css = Math.floor(S.css*4)/4; const cw = Math.round(scn.w*S.css), ch = Math.round(scn.h*S.css); [sc,sco].forEach(c => { c.width=scn.w; c.height=scn.h; c.style.width=cw+'px'; c.style.height=ch+'px'; }); }
+async function sRender(){
+  const scn = curScene(); const empty = !scn; $('sceneEmpty').hidden = !empty; $('stage').hidden = empty; if(empty) return;
+  sFit();
+  await P.drawScene(scx, scn, DB);
+  sOverlay();
+  const sel = sItem(); $('sceneRead').innerHTML = sel ? (()=>{ const obj=DB.objects[sel.obj]; if(!obj) return '（物件遺失）'; const pc=P.toPercent(scn,sel,obj), f=P.footPoint(sel,obj); return `選取「${esc(sel.name||obj.name)}」　左上 (${sel.x}, ${sel.y})　腳點 (${Math.round(f.x)}, ${Math.round(f.y)})　深度 ${Math.round(P.itemFoot(sel,obj))}　stage-preview 式：left ${pc.left} / bottom ${pc.bottom} / width ${pc.width}`; })() : `邏輯 ${scn.w}×${scn.h}　顯示 ×${S.css.toFixed(2)}　拖曳移動、方向鍵微調（Shift ×8）、Delete 刪除、Ctrl+D 複製`;
+}
+function sOverlay(){
+  const scn = curScene(); if(!scn) return; sox.clearRect(0,0,scn.w,scn.h);
+  const lw = 1/S.css;
+  if(S.showGrid){ sox.strokeStyle='rgba(255,255,255,.18)'; sox.lineWidth=lw; for(let x=0;x<scn.w;x+=16){ sox.beginPath(); sox.moveTo(x,0); sox.lineTo(x,scn.h); sox.stroke(); } for(let y=0;y<scn.h;y+=16){ sox.beginPath(); sox.moveTo(0,y); sox.lineTo(scn.w,y); sox.stroke(); } }
+  const sel = sItem();
+  if(sel){ const obj = DB.objects[sel.obj]; if(obj){ const r = P.itemRect(sel,obj), f = P.footPoint(sel,obj), d = P.itemFoot(sel,obj);
+    sox.strokeStyle='#fff'; sox.lineWidth=lw*2; sox.setLineDash([4*lw,3*lw]); sox.strokeRect(r.x,r.y,r.w,r.h); sox.setLineDash([]);
+    sox.strokeStyle='#b8860b'; sox.beginPath(); sox.moveTo(0,d); sox.lineTo(scn.w,d); sox.stroke();
+    sox.fillStyle='#b8860b'; sox.beginPath(); sox.arc(f.x,f.y,3*lw,0,Math.PI*2); sox.fill(); } }
+  if(S.showAnchors){ (scn.anchors||[]).forEach((a,i) => { const on = i===S.selA; sox.fillStyle = on ? '#fff' : ({p:'#3fb6c9',o:'#f0c75e',f:'#ff6b7a'}[a.group]||'#e0851c'); sox.strokeStyle='#111'; sox.lineWidth=lw;
+    sox.beginPath(); sox.moveTo(a.x,a.y); sox.lineTo(a.x-5*lw,a.y-9*lw); sox.lineTo(a.x+5*lw,a.y-9*lw); sox.closePath(); sox.fill(); sox.stroke();
+    sox.font = `${Math.max(8, 9*lw)}px monospace`; sox.textAlign='center'; sox.fillStyle='#fff'; sox.strokeStyle='rgba(0,0,0,.8)'; sox.lineWidth=3*lw; sox.strokeText((a.group?a.group+':':'')+a.name, a.x, a.y-11*lw); sox.fillText((a.group?a.group+':':'')+a.name, a.x, a.y-11*lw); }); }
+}
+const sItem = () => { const scn=curScene(); return scn && S.sel ? (scn.items||[]).find(i => i.iid===S.sel) : null; };
+function sPt(ev){ const r = sco.getBoundingClientRect(); const scn=curScene(); return { x:(ev.clientX-r.left)/r.width*scn.w, y:(ev.clientY-r.top)/r.height*scn.h }; }
+sco.addEventListener('pointerdown', ev => {
+  const scn = curScene(); if(!scn) return; ev.preventDefault(); sco.setPointerCapture(ev.pointerId);
+  const p = sPt(ev);
+  if(S.addAnchor){ scn.anchors = scn.anchors||[]; scn.anchors.push({ name:S.addAnchor.name, group:S.addAnchor.group, x:Math.round(p.x), y:Math.round(p.y) }); S.selA = scn.anchors.length-1; S.sel=null; S.addAnchor=null; stamp(scn); touch(); renderSide(); sRender(); return; }
+  if(S.showAnchors){ const ai = (scn.anchors||[]).findIndex(a => Math.hypot(a.x-p.x, a.y-p.y) < 8/S.css); if(ai>=0){ S.selA=ai; S.sel=null; S.drag={ kind:'anchor', i:ai, ox:scn.anchors[ai].x-p.x, oy:scn.anchors[ai].y-p.y }; renderSide(); sOverlay(); return; } }
+  const hit = P.sortedItems(scn, DB).reverse().find(e => { if(!e.obj || e.it.hidden) return false; const r=P.itemRect(e.it,e.obj); return p.x>=r.x&&p.x<=r.x+r.w&&p.y>=r.y&&p.y<=r.y+r.h; });
+  S.selA = -1;
+  if(hit){ S.sel = hit.it.iid; if(!hit.it.lock) S.drag = { kind:'item', it:hit.it, ox:hit.it.x-p.x, oy:hit.it.y-p.y }; }
+  else S.sel = null;
+  renderSide(); sRender();
+});
+sco.addEventListener('pointermove', ev => {
+  if(!S.drag) return; const scn=curScene(); const p = sPt(ev), d = S.drag;
+  if(d.kind==='item'){ d.it.x = Math.round(p.x+d.ox); d.it.y = Math.round(p.y+d.oy); }
+  else { const a = scn.anchors[d.i]; a.x = Math.round(p.x+d.ox); a.y = Math.round(p.y+d.oy); }
+  if(!S.raf) S.raf = requestAnimationFrame(()=>{ S.raf=0; sRender(); });
+});
+function sEnd(){ if(!S.drag) return; S.drag=null; const scn=curScene(); stamp(scn); touch(); renderSide(); sRender(); }
+sco.addEventListener('pointerup', sEnd); sco.addEventListener('pointercancel', sEnd);
+function sKey(ev){
+  const scn = curScene(); if(!scn) return; const meta = ev.ctrlKey||ev.metaKey;
+  const it = sItem(), a = S.selA>=0 ? scn.anchors[S.selA] : null; const tgt = it || a; if(!tgt) return;
+  const step = ev.shiftKey ? 8 : 1; let moved = false;
+  if(ev.key==='ArrowLeft'){ tgt.x-=step; moved=true; } if(ev.key==='ArrowRight'){ tgt.x+=step; moved=true; } if(ev.key==='ArrowUp'){ tgt.y-=step; moved=true; } if(ev.key==='ArrowDown'){ tgt.y+=step; moved=true; }
+  if(moved){ ev.preventDefault(); stamp(scn); touch(); sRender(); renderSide(); return; }
+  if(ev.key==='Delete' || ev.key==='Backspace'){ ev.preventDefault(); sAct(it ? 'idel' : 'adel'); }
+  if(meta && ev.key.toLowerCase()==='d' && it){ ev.preventDefault(); sAct('idup'); }
+}
+function sSideHTML(){
+  const scn = curScene(); if(!scn) return '<div class="hint">還沒選場景。</div>';
+  const objOpts = Object.values(DB.objects).sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')).map(o=>`<option value="${esc(o.id)}">${esc(o.name)}${o.kind==='image'?'（圖檔）':''}</option>`).join('');
+  const list = P.sortedItems(scn, DB).reverse().map(e => { const it=e.it, obj=e.obj; return `<div class="it ${it.iid===S.sel?'on':''}" data-iid="${esc(it.iid)}"><span class="ic ${it.hidden?'':'on'}" data-tg="hidden" title="顯示／隱藏">👁</span><span class="ic ${it.lock?'on':''}" data-tg="lock" title="鎖定">🔒</span><span class="nm">${esc(it.name||(obj?obj.name:'?'))}</span>${it.role?`<span class="role">${esc(it.role)}</span>`:''}<small>${Math.round(e.z>5e5?e.z-1e6:e.z<-5e5?e.z+1e6:e.z)}</small></div>`; }).join('');
+  const it = sItem(); let sel = '';
+  if(it){ const obj = DB.objects[it.obj]; const anchorOpts = (scn.anchors||[]).map((a,i)=>`<option value="${i}">${esc((a.group?a.group+':':'')+a.name)}</option>`).join('');
+    sel = `<h3>選取的物件</h3>
+      <label class="f">顯示名（劇本的 set 用這個名字找它）<input type="text" data-ik="name" value="${esc(it.name||'')}" placeholder="${esc(obj?obj.name:'')}"></label>
+      <label class="f">物件<select data-ik="obj">${objOpts.replace(`value="${esc(it.obj)}"`, `value="${esc(it.obj)}" selected`)}</select></label>
+      <div class="row"><label class="f inl">x<input type="number" data-ik="x" value="${it.x}"></label><label class="f inl">y<input type="number" data-ik="y" value="${it.y}"></label><label class="f inl">縮放<input type="number" data-ik="scale" step="0.005" value="${it.scale||1}"></label></div>
+      <div class="row"><label class="f inl">層<select data-ik="layer"><option value="auto" ${it.layer==='auto'||!it.layer?'selected':''}>auto（照腳底）</option><option value="back" ${it.layer==='back'?'selected':''}>back（最後面）</option><option value="front" ${it.layer==='front'?'selected':''}>front（最前面）</option></select></label>
+        <label class="f inl">深度覆寫<input type="number" data-ik="depth" value="${it.depth==null?'':it.depth}" placeholder="腳底y"></label></div>
+      <div class="row"><label class="f inl">角色<select data-ik="role"><option value="">—</option><option value="p" ${it.role==='p'?'selected':''}>p 玩家</option><option value="o" ${it.role==='o'?'selected':''}>o 老闆</option><option value="f" ${it.role==='f'?'selected':''}>f 對手</option></select></label>
+        <label class="f inl">格<input type="number" data-ik="frame" min="0" value="${it.frame|0}"></label><label class="f inl"><input type="checkbox" data-ik="flip" ${it.flip?'checked':''}>左右翻</label></div>
+      <div class="row"><select id="sSnap" style="width:auto"><option value="">腳點對到站位…</option>${anchorOpts}</select><button class="b" data-act="isnap">對齊</button></div>
+      <div class="row"><button class="b" data-act="idup">複製</button><button class="b" data-act="idel">刪除</button><button class="b" data-act="iedit">去編輯物件</button></div>`; }
+  const a = S.selA>=0 ? scn.anchors[S.selA] : null;
+  const alist = (scn.anchors||[]).map((x,i)=>`<div class="it ${i===S.selA?'on':''}" data-ai="${i}"><span class="role">${esc(x.group||'·')}</span><span class="nm">${esc(x.name)}</span><small>${x.x},${x.y}</small></div>`).join('');
+  return `
+    <h3>場景</h3>
+    <label class="f">名稱<input type="text" data-sk="name" value="${esc(scn.name)}"></label>
+    <div class="row"><label class="f inl">寬<input type="number" data-sk="w" value="${scn.w}"></label><label class="f inl">高<input type="number" data-sk="h" value="${scn.h}"></label></div>
+    <div class="row"><label class="f inl">底色<input type="color" data-sk="bgColorPick" value="${esc(hex6(scn.bgColor||'#000000'))}"><input type="text" data-sk="bgColor" value="${esc(scn.bgColor||'')}" placeholder="#hex 或留白" style="width:80px"></label></div>
+    <label class="f">背景圖（repo 內路徑或網址，留白＝只用底色）<input type="text" data-sk="bg" value="${esc(scn.bg&&scn.bg.src||'')}" placeholder="art/shop2-bg.jpg" list="artList"></label>
+    <datalist id="artList"><option value="art/shop2-bg.jpg"><option value="art/shop-bg.jpg"><option value="art/shop2-fg-back.png"><option value="art/shop2-fg-front.png"><option value="art/props/table.png"><option value="art/props/crate-wood.png"><option value="art/props/crate-black.png"><option value="art/props/box-a.png"></datalist>
+    <label class="f">備註（給 Claude：這個場景是哪裡、動線、哪裡不能站）<textarea data-sk="notes">${esc(scn.notes||'')}</textarea></label>
+    <div class="row"><button class="b ${S.showAnchors?'on':''}" data-act="tga">站位</button><button class="b ${S.showGrid?'on':''}" data-act="tgg">格線</button><button class="b" data-act="png">⬇ PNG</button><label class="f inl">×<input type="number" id="sScale" min="1" max="4" value="2"></label><button class="b" data-act="json">複製 JSON</button><button class="b" data-act="sdel">刪場景</button></div>
+    <h3>加入</h3>
+    <div class="row"><select id="sAddObj" style="width:auto;max-width:170px">${objOpts}</select><button class="b" data-act="iadd">放進場景</button></div>
+    <div class="row"><input type="text" id="sAddImg" placeholder="art/props/table.png" list="artList" style="width:170px"><button class="b" data-act="imgadd">圖檔當物件</button></div>
+    <h3>物件（前 → 後）</h3><div class="items">${list||'<div class="hint">（空）</div>'}</div>
+    ${sel}
+    <h3>站位（腳點位置）</h3><div class="items">${alist||'<div class="hint">（空）</div>'}</div>
+    <div class="row"><input type="text" id="sAName" placeholder="站位名 door" style="width:90px"><select id="sAGroup" style="width:auto"><option value="p">p</option><option value="o">o</option><option value="f">f</option><option value="">—</option></select><button class="b ${S.addAnchor?'on':''}" data-act="aadd">${S.addAnchor?'點畫布放置…':'＋ 站位'}</button></div>
+    ${a?`<div class="row"><label class="f inl">名<input type="text" data-ak="name" value="${esc(a.name)}" style="width:80px"></label><label class="f inl">組<select data-ak="group" style="width:auto"><option value="p" ${a.group==='p'?'selected':''}>p</option><option value="o" ${a.group==='o'?'selected':''}>o</option><option value="f" ${a.group==='f'?'selected':''}>f</option><option value="" ${!a.group?'selected':''}>—</option></select></label><label class="f inl">x<input type="number" data-ak="x" value="${a.x}"></label><label class="f inl">y<input type="number" data-ak="y" value="${a.y}"></label><button class="b" data-act="adel">刪</button></div>`:''}
+    <div class="row"><button class="b" data-act="pos">複製 POS（stage-preview 格式）</button></div>`;
+}
+async function sAct(act){
+  const scn = curScene(); if(!scn) return; const it = sItem();
+  switch(act){
+    case 'tga': S.showAnchors=!S.showAnchors; renderSide(); sOverlay(); break;
+    case 'tgg': S.showGrid=!S.showGrid; renderSide(); sOverlay(); break;
+    case 'png': { const k = clamp(+$('sScale').value||2,1,4); const c=document.createElement('canvas'); c.width=scn.w*k; c.height=scn.h*k; const g=c.getContext('2d'); g.imageSmoothingEnabled=false; g.scale(k,k); await P.drawScene(g, scn, DB); c.toBlob(b=>download(`${scn.id}@${k}x.png`, b)); break; }
+    case 'json': copyText(JSON.stringify(scn, null, 1)); break;
+    case 'sdel': if(!confirm(`刪除場景「${scn.name}」？`)) return; delete DB.scenes[scn.id]; S.id=null; touch(); renderSide(); sRender(); break;
+    case 'iadd': { const oid = $('sAddObj').value; const obj = DB.objects[oid]; if(!obj) return; const s = P.sizeOf(obj); const scale = obj.kind==='image' ? +(Math.min(1, scn.w/s.w, scn.h/s.h).toFixed(3)) : 1; const item = { iid:uid(), obj:oid, name:'', x:Math.round(scn.w/2 - s.w*scale/2), y:Math.round(scn.h/2 - s.h*scale/2), scale, flip:false, layer:'auto', depth:null, role:'', frame:0, hidden:false, lock:false }; scn.items.push(item); S.sel=item.iid; stamp(scn); touch(); renderSide(); sRender(); break; }
+    case 'imgadd': { const src = $('sAddImg').value.trim(); if(!src) return; const im = await P.loadImage(src); if(!im){ alert('讀不到這張圖：'+src); return; } const base = src.split('/').pop().replace(/\.[a-z0-9]+$/i,''); let id = P.slug(base); if(!DB.objects[id]) DB.objects[id] = P.newImageObject(id, base, src, im.naturalWidth, im.naturalHeight); $('sAddObj').value = id; renderSide(); $('sAddObj').value = id; sAct('iadd'); break; }
+    case 'isnap': { if(!it) return; const a = scn.anchors[+$('sSnap').value]; if(!a) return; const obj=DB.objects[it.obj]; const p = P.placeAt(it, obj, a.x, a.y); it.x=Math.round(p.x); it.y=Math.round(p.y); stamp(scn); touch(); renderSide(); sRender(); break; }
+    case 'idup': { if(!it) return; const c = JSON.parse(JSON.stringify(it)); c.iid=uid(); c.x+=8; c.y+=8; c.role=''; scn.items.push(c); S.sel=c.iid; stamp(scn); touch(); renderSide(); sRender(); break; }
+    case 'idel': { if(!it) return; scn.items = scn.items.filter(i => i!==it); S.sel=null; stamp(scn); touch(); renderSide(); sRender(); break; }
+    case 'iedit': if(it) openEditor(it.obj); break;
+    case 'aadd': { const name = $('sAName').value.trim(); if(!name){ alert('先填站位名'); return; } S.addAnchor = S.addAnchor ? null : { name, group:$('sAGroup').value }; renderSide(); break; }
+    case 'adel': { if(S.selA<0) return; scn.anchors.splice(S.selA,1); S.selA=-1; stamp(scn); touch(); renderSide(); sRender(); break; }
+    case 'pos': { const g = {}; (scn.anchors||[]).forEach(a => { const k=a.group||'_'; (g[k]=g[k]||{})[a.name]=[a.x,a.y]; }); copyText('const POS = ' + JSON.stringify(g, null, 1).replace(/\[\n\s+(\d+),\n\s+(\d+)\n\s+\]/g,'[$1,$2]') + ';'); break; }
+  }
+}
+
+// ═══════════════════════════ 🎬 劇本 ═══════════════════════════
+const T = { id:null, beat:0, pos:{}, anim:0, autoplay:null, timers:[] };
+const BEAT_KEYS = ['p','o','f','door','notes','anger','oDig','oPath'];   // 表單直接編的 stage 欄位；其餘走「其他 stage JSON」
+const stc = $('stc'), stcx = stc.getContext('2d'), stco = $('stco'), stox = stco.getContext('2d');
+const curStory = () => DB.stories[T.id] || null;
+function openStory(id){ T.id=id; T.beat=0; T.pos={}; if(ST.mode==='story'){ renderSide(); tRender(); } }
+function tScene(){ const st = curStory(); return st && DB.scenes[st.scene] || null; }
+function tActors(){ const scn = tScene(); const m = {}; if(scn) for(const it of scn.items) if(it.role) m[it.role] = it; return m; }
+// 第 i 句的目標狀態：每個演員最後要站哪、藏不藏；路線（xPath）拆成多段依序走；門板照 door 換格
+const DOOR_NAME = '門';
+function tTargets(i){
+  const st = curStory(), scn = tScene(); if(!st || !scn) return {};
+  const stage = P.stageAt(st, i), acts = tActors(), out = {}, paths = {};
+  const beat = st.beats[i] || {}, s = beat.stage || {};
+  const anchorPos = (it, role, name) => { const an = name && P.findAnchor(scn, role, name); return an ? P.placeAt(it, DB.objects[it.obj], an.x, an.y) : null; };
+  for(const role of ['p','o','f']){ const it = acts[role]; if(!it) continue;
+    const pos = anchorPos(it, role, stage[role]) || { x:it.x, y:it.y };
+    const hidden = role in stage.hide ? !!stage.hide[role] : (role==='f' && stage.f==='out') ? true : !!it.hidden;   // roguelike 慣例：f:'out'＝不在場
+    out[it.iid] = { x:pos.x, y:pos.y, hidden };
+    if(Array.isArray(s[role+'Path']) && s[role+'Path'].length) paths[it.iid] = s[role+'Path'].map(n => anchorPos(it, role, n)).filter(Boolean);
+  }
+  const door = scn.items.find(it => (it.name||'') === DOOR_NAME);
+  if(door){ out[door.iid] = Object.assign(out[door.iid]||{ x:door.x, y:door.y }, { frame: P.DOOR_FRAME[stage.door] ?? 0 }); }
+  for(const it of scn.items){ const name = it.name || (DB.objects[it.obj]||{}).name; const ss = stage.set[name]; if(ss){ out[it.iid] = Object.assign(out[it.iid]||{x:it.x,y:it.y}, ss); } }
+  return { targets: out, stage, paths, doorSwing: s.door === 'swing' ? door : null };
+}
+function tDrawOverlay(stage){
+  const scn = tScene(); stox.clearRect(0,0,scn.w,scn.h); if(!stage) return; const acts = tActors(); const lw=1/(T.css||1);
+  const at = role => { const it = acts[role]; if(!it) return null; const p = T.pos[it.iid] || it; const obj = DB.objects[it.obj]; const r = P.itemRect(Object.assign({},it,p), obj); return { x:p.x + r.w/2, y:p.y }; };
+  stox.font = `${16}px sans-serif`; stox.textAlign='center';
+  if(stage.notes){ const o = at('o'); if(o){ const t = (Date.now()/400)%3; stox.fillStyle='#2a1c0e'; stox.fillText('♪', o.x+8, o.y-6-t*6); stox.fillText('♫', o.x+22, o.y-14-((t+1)%3)*6); } }
+  if(stage.anger){ const p = at('p'); if(p){ stox.fillText('💢', p.x+12, p.y-4); } }
+}
+// 重繪要序列化：drawScene 會等圖載入，兩張同時畫會互相交錯、舊的蓋掉新的。永遠只畫最新的那一張。
+let _tDrawing = false, _tPending = null;
+async function tDraw(stage){
+  _tPending = stage; if(_tDrawing) return; _tDrawing = true;
+  try{ while(_tPending !== null){ const st = _tPending; _tPending = null; const scn = tScene(); if(!scn) break;
+    await P.drawScene(stcx, scn, DB, { pos: it => T.pos[it.iid] ? { x:T.pos[it.iid].x, y:T.pos[it.iid].y } : null,
+      hidden: it => T.pos[it.iid] && 'hidden' in T.pos[it.iid] ? T.pos[it.iid].hidden : it.hidden,
+      frame: it => T.pos[it.iid] && T.pos[it.iid].frame!=null ? T.pos[it.iid].frame : (it.frame|0),
+      depth: it => T.pos[it.iid] && T.pos[it.iid].depth!=null ? T.pos[it.iid].depth : null });
+    tDrawOverlay(st); } }
+  finally{ _tDrawing = false; }
+}
+function tGo(i, instant){
+  const st = curStory(); if(!st) return; const n = (st.beats||[]).length; if(!n) return; i = clamp(i, 0, n-1); T.beat = i;
+  const { targets, stage, paths, doorSwing } = tTargets(i); const scn = tScene();
+  cancelAnimationFrame(T.anim); (T.timers||[]).forEach(clearTimeout); T.timers = [];
+  const from = {}; for(const iid in targets){ const it = scn.items.find(x=>x.iid===iid); from[iid] = Object.assign({ x:it.x, y:it.y }, T.pos[iid]||{}); }
+  const b = st.beats[i]; $('stName').textContent = b.who||''; $('stName').style.display = b.who?'':'none'; $('stName').className = 'rpg-name' + (/男子|？？？|\?\?\?/.test(b.who||'')?' foe':''); $('stText').textContent = b.text||''; $('stPos').textContent = `${i+1} / ${n}`;
+  $$('#beats .beat').forEach((el,k)=>el.classList.toggle('on',k===i));
+  // 路線：每段 780ms（跟 roguelike 的 rpgWalk 一樣），第一段從現在位置出發
+  const LEG = instant ? 0 : 780, TWEEN = instant ? 0 : 750;
+  const legsOf = iid => { const legs = (paths[iid] || []).slice(); const z = targets[iid]; if(!legs.length) legs.push({ x:z.x, y:z.y }); return legs; };
+  const plan = {}; let maxT = 0;
+  for(const iid in targets){ const legs = legsOf(iid), segs = []; let cur = from[iid], t = 0; for(const l of legs){ const d = (legs.length>1 ? LEG : TWEEN); segs.push({ t0:t, t1:t+d, a:cur, b:l }); cur = l; t += d; } plan[iid] = segs; maxT = Math.max(maxT, t); }
+  if(doorSwing && !instant){ for(const [f,d] of P.DOOR_SWING) T.timers.push(setTimeout(()=>{ T.pos[doorSwing.iid] = Object.assign({}, T.pos[doorSwing.iid]||{x:doorSwing.x,y:doorSwing.y}, { frame:f }); }, d)); maxT = Math.max(maxT, 1100); }
+  const t0 = performance.now();
+  const step = now => { const el = now - t0; let done = el >= maxT;
+    for(const iid in plan){ const segs = plan[iid], z = targets[iid]; let seg = segs.find(s => el < s.t1) || segs[segs.length-1]; const k = seg.t1>seg.t0 ? clamp((el-seg.t0)/(seg.t1-seg.t0),0,1) : 1, e = k<.5 ? 2*k*k : -1+(4-2*k)*k;
+      const keep = (doorSwing && iid===doorSwing.iid && T.pos[iid]) ? { frame:T.pos[iid].frame } : {};
+      // 走位途中照「這一段的目的地」排深度：跟 roguelike 的 rpgWalk 一樣起步就切到目的地那一層，不會走到一半才從櫃檯後面蹦出來
+      const it = scn.items.find(x=>x.iid===iid), depth = (k < 1 && it && !it.depth) ? P.itemFoot(Object.assign({}, it, { y:seg.b.y }), DB.objects[it.obj]) : null;
+      T.pos[iid] = Object.assign({}, z, keep, { x: seg.a.x+(seg.b.x-seg.a.x)*e, y: seg.a.y+(seg.b.y-seg.a.y)*e, depth }); }
+    // 老闆翻片：上下微晃（roguelike 的 .dig）
+    const o = tActors().o; if(o && stage.oDig && T.pos[o.iid]){ T.pos[o.iid].y += Math.sin(now/310*Math.PI)*1.2; }
+    tDraw(stage); if(!done || stage.notes || stage.oDig) T.anim = requestAnimationFrame(step); };
+  T.anim = requestAnimationFrame(step);
+}
+function tRender(){
+  const st = curStory(), scn = tScene(); const empty = !st || !scn;
+  $('storyEmpty').hidden = !!st && !!scn; $('ststage').hidden = empty; $('stWin').hidden = empty;
+  $('stTitle').textContent = st ? st.name : ''; $('stSceneName').textContent = st ? (scn ? '　場景：'+scn.name : '　⚠ 右邊先指定場景') : '';
+  tBeatsHTML();
+  if(empty) return;
+  const wrap = $('v-story').querySelector('.story-wrap > div'); const avail = Math.max(200, wrap.clientWidth - 4); T.css = Math.min(avail/scn.w, 2.2); const cw=Math.round(scn.w*T.css), ch=Math.round(scn.h*T.css);
+  [stc,stco].forEach(c => { c.width=scn.w; c.height=scn.h; c.style.width=cw+'px'; c.style.height=ch+'px'; });
+  tGo(T.beat, true);
+}
+function tBeatsHTML(){
+  const st = curStory(), scn = tScene(); const box = $('beats');
+  if(!st){ box.innerHTML=''; return; }
+  const anchors = g => (scn ? (scn.anchors||[]).filter(a => !a.group || a.group===g) : []);
+  const sel = (role, cur) => `<select data-bk="${role}" style="width:auto"><option value="">${role} 不變</option>${anchors(role).map(a=>`<option value="${esc(a.name)}" ${cur===a.name?'selected':''}>${role}→${esc(a.name)}</option>`).join('')}</select>`;
+  const tri = (k, cur, lbl) => `<select data-bk="${k}" style="width:auto"><option value="">${lbl} 不變</option><option value="1" ${cur===true?'selected':''}>${lbl} 開</option><option value="0" ${cur===false?'selected':''}>${lbl} 關</option></select>`;
+  box.innerHTML = `<div class="row"><b>對白（${st.beats.length} 句）</b><span class="hint">stage 只寫這一句「有變化」的；沒填＝沿用上一句。</span></div>` +
+    (st.beats||[]).map((b,i) => { const s = b.stage||{}; const extra = Object.assign({}, s); for(const k of BEAT_KEYS) delete extra[k];
+      const doorSel = `<select data-bk="door" style="width:auto"><option value="">門 不變</option>${['open','swing','shut'].map(d=>`<option value="${d}" ${s.door===d?'selected':''}>門 ${({open:'開',swing:'開→關',shut:'關'})[d]}</option>`).join('')}</select>`;
+      return `<div class="beat ${i===T.beat?'on':''}" data-i="${i}"><div class="hd"><span class="n">${i+1}</span><input type="text" data-bk="who" value="${esc(b.who||'')}" placeholder="說話者（空＝旁白）" style="width:120px">${b.ui?`<span class="role" title="遊戲面板掛點，編輯器保留不動">🎛 ${esc(b.ui)}</span>`:''}<span style="flex:1"></span><button class="b" data-bact="up">↑</button><button class="b" data-bact="down">↓</button><button class="b" data-bact="ins">＋</button><button class="b" data-bact="del">✕</button></div>
+      <textarea data-bk="text" placeholder="對白">${esc(b.text||'')}</textarea>
+      <div class="st">${sel('p',s.p)}${sel('o',s.o)}${sel('f',s.f)}${doorSel}${tri('notes',s.notes,'♪')}${tri('anger',s.anger,'💢')}${tri('oDig',s.oDig,'老闆翻片')}
+        <input type="text" data-bk="oPath" value="${esc((s.oPath||[]).join(','))}" placeholder="老闆路線 oPath：aisle,dig1,dig2" style="width:200px" title="多段走位，逗號分隔站位名；斜線跨越 z 門檻要拆段">
+        <input type="text" data-bk="extra" value="${esc(Object.keys(extra).length?JSON.stringify(extra):'')}" placeholder='其他 stage JSON（pPath／fPath／oBusy／hide／set…）' style="flex:1;min-width:140px"></div></div>`; }).join('') +
+    `<div class="row"><button class="b" data-bact="add">＋ 在最後加一句</button></div>`;
+}
+$('beats').addEventListener('click', e => {
+  const st = curStory(); if(!st) return; const btn = e.target.closest('button[data-bact]'); const beatEl = e.target.closest('.beat');
+  if(btn){ const act = btn.dataset.bact, i = beatEl ? +beatEl.dataset.i : st.beats.length;
+    if(act==='add'){ st.beats.push({ who:'', text:'', stage:{} }); T.beat = st.beats.length-1; }
+    if(act==='ins'){ st.beats.splice(i+1,0,{ who:'', text:'' }); T.beat=i+1; }
+    if(act==='del'){ if(!confirm('刪這一句？')) return; st.beats.splice(i,1); T.beat=clamp(T.beat,0,Math.max(0,st.beats.length-1)); }
+    if(act==='up' && i>0){ [st.beats[i-1],st.beats[i]]=[st.beats[i],st.beats[i-1]]; T.beat=i-1; }
+    if(act==='down' && i<st.beats.length-1){ [st.beats[i+1],st.beats[i]]=[st.beats[i],st.beats[i+1]]; T.beat=i+1; }
+    stamp(st); touch(); tRender(); renderLib(); return; }
+  if(beatEl && !e.target.matches('input,textarea,select')){ tGo(+beatEl.dataset.i); }
+});
+$('beats').addEventListener('change', e => {
+  const st = curStory(); const beatEl = e.target.closest('.beat'); if(!st || !beatEl) return; const b = st.beats[+beatEl.dataset.i]; const k = e.target.dataset.bk, v = e.target.value;
+  if(k==='who') b.who=v; else if(k==='text') b.text=v; else {
+    b.stage = b.stage||{};
+    if(k==='p'||k==='o'||k==='f'){ if(v) b.stage[k]=v; else delete b.stage[k]; }
+    if(k==='notes'||k==='anger'||k==='oDig'){ if(v==='') delete b.stage[k]; else b.stage[k] = v==='1'; }
+    if(k==='door'){ if(v) b.stage.door=v; else delete b.stage.door; }
+    if(k==='oPath'){ const legs = v.split(/[,，\s]+/).map(x=>x.trim()).filter(Boolean); if(legs.length) b.stage.oPath = legs; else delete b.stage.oPath; }
+    if(k==='extra'){ for(const kk of Object.keys(b.stage)) if(!BEAT_KEYS.includes(kk)) delete b.stage[kk]; if(v.trim()){ try{ Object.assign(b.stage, JSON.parse(v)); }catch(err){ alert('JSON 格式錯：'+err.message); } } }
+    if(!Object.keys(b.stage).length) delete b.stage;
+  }
+  stamp(st); touch(); tGo(+beatEl.dataset.i, true);
+});
+$('stFirst').onclick = () => tGo(0); $('stPrev').onclick = () => tGo(T.beat-1); $('stNext').onclick = () => tGo(T.beat+1);
+$('stPlay').onclick = () => { if(T.autoplay){ clearInterval(T.autoplay); T.autoplay=null; $('stPlay').textContent='▶▶ 自動播放'; return; } tGo(0); $('stPlay').textContent='■ 停'; T.autoplay = setInterval(()=>{ const st=curStory(); if(!st || T.beat>=st.beats.length-1){ clearInterval(T.autoplay); T.autoplay=null; $('stPlay').textContent='▶▶ 自動播放'; return; } tGo(T.beat+1); }, 2600); };
+function tSideHTML(){
+  const st = curStory(); if(!st) return '<div class="hint">還沒選劇本。</div>';
+  const scOpts = Object.values(DB.scenes).map(s=>`<option value="${esc(s.id)}" ${s.id===st.scene?'selected':''}>${esc(s.name)}</option>`).join('');
+  const scn = tScene(); const acts = tActors();
+  return `<h3>劇本</h3>
+    <label class="f">名稱<input type="text" data-tk="name" value="${esc(st.name)}"></label>
+    <label class="f">場景<select data-tk="scene"><option value="">—</option>${scOpts}</select></label>
+    <div class="kv"><span>演員</span><b>${['p','o','f'].map(r=>`${r}：${acts[r]?esc(acts[r].name||(DB.objects[acts[r].obj]||{}).name):'（場景裡沒有 role='+r+' 的物件）'}`).join('<br>')}</b>
+      <span>站位</span><b>${scn?(scn.anchors||[]).map(a=>esc((a.group?a.group+':':'')+a.name)).join('、')||'（場景還沒放站位）':'—'}</b></div>
+    <label class="f">備註<textarea data-tk="notes">${esc(st.notes||'')}</textarea></label>
+    <h3>匯出</h3>
+    <div class="row"><button class="b" data-act="beats">複製 beats（RPG_BEATS 同形）</button></div>
+    <div class="row"><button class="b" data-act="json">複製劇本 JSON</button><button class="b" data-act="tdel">刪劇本</button></div>
+    <div class="hint">stage 的語彙跟 <code>roguelike.html</code> 的 RPG_BEATS 一模一樣：p／o／f 站位、oPath 多段路線、door open／swing／shut、oDig、♪、💢；f 設成 out ＝ 對手不在場。門要能動：場景裡顯示名叫「門」的物件要有三格（關／半開／全開）。</div>`;
+}
+function tAct(act){ const st=curStory(); if(!st) return;
+  if(act==='beats') copyText(JSON.stringify(st.beats, null, 1));
+  if(act==='json') copyText(JSON.stringify(st, null, 1));
+  if(act==='tdel'){ if(!confirm(`刪除劇本「${st.name}」？`)) return; delete DB.stories[st.id]; T.id=null; touch(); renderSide(); tRender(); }
+}
+
+// ═══════════════════════════ 🔁 交接：本站／檔案／剪貼簿／GitHub ═══════════════════════════
+const GH_KEY = 'dipPixelStudio_gh';
+let GH = {}; try{ GH = JSON.parse(localStorage.getItem(GH_KEY)) || {}; }catch(e){}
+function ioRender(){
+  const counts = `${Object.keys(DB.objects).length} 物件 · ${Object.keys(DB.scenes).length} 場景 · ${Object.keys(DB.stories).length} 劇本`;
+  $('ioPanel').innerHTML = `
+    <div class="box"><h4>這一頁的資料在哪</h4><p>畫的東西先存在<b>這個瀏覽器的本機草稿</b>（${counts}）。要跟 Claude Code 合作，就把它變成 repo 裡 <code>art/pixel/</code> 的 JSON 檔——Claude 讀得懂、也改得動同一份（格式與流程寫在 <code>PIXEL_STUDIO.md</code>）。三條路任選：</p></div>
+    <div class="box"><h4>① 從本站載入（Claude 推上去、部署後）</h4><p>抓這個網站上的 <code>art/pixel/index.json</code> 與所有檔案，併進本機草稿。同 id 以 <b>updatedAt 較新</b>的為準。</p>
+      <div class="row"><button class="b pri" data-io="site">⬇ 從本站載入 art/pixel/</button><label class="f inl"><input type="checkbox" id="ioForce">一律以遠端覆蓋本機同 id</label></div></div>
+    <div class="box"><h4>② 檔案／剪貼簿（不用設定，最穩）</h4>
+      <div class="row"><button class="b" data-io="bundle">⬇ 匯出整包 pixel-bundle.json</button><button class="b" data-io="files">⬇ 逐檔匯出（zip 不了，會一個一個下載）</button><button class="b" data-io="import">⬆ 匯入 bundle／單一 JSON</button></div>
+      <div class="row"><button class="b pri" data-io="claude">📋 複製「給 Claude 的交接」</button><span class="hint">＝說明＋目前選取的物件／場景／劇本 JSON，貼進對話即可。</span></div>
+      <div class="row"><textarea id="ioPaste" placeholder="Claude 在對話裡回你的 JSON（物件、場景、劇本或整包）貼這裡…" style="min-height:70px"></textarea></div>
+      <div class="row"><button class="b" data-io="paste">⬆ 匯入貼上的 JSON</button></div></div>
+    <div class="box"><h4>③ 直接推到 GitHub（免下載、Claude 雲端工作階段拉分支就看得到）</h4>
+      <p>要一個 <b>fine-grained personal access token</b>：只勾這個 repo、Contents 權限 Read and write。token 只存在這個瀏覽器（localStorage），不會進 repo。分支建議填你正在跟 Claude 一起跑的那條。</p>
+      <div class="row"><label class="f inl">owner/repo<input type="text" id="ghRepo" value="${esc(GH.repo||'kubinice06-blip/dip-vinyl-shop')}" style="width:220px"></label><label class="f inl">branch<input type="text" id="ghBranch" value="${esc(GH.branch||'main')}" style="width:200px"></label></div>
+      <div class="row"><label class="f inl">token<input type="password" id="ghToken" value="${esc(GH.token||'')}" style="width:300px" autocomplete="off"></label><label class="f inl"><input type="checkbox" id="ghRemember" ${GH.token?'checked':''}>記住 token</label></div>
+      <div class="row"><button class="b" data-io="ghpull">⬇ 從 GitHub 載入 art/pixel/</button><button class="b pri" data-io="ghpush">⬆ 推到 GitHub（只寫有改過的檔）</button><label class="f inl">commit 訊息<input type="text" id="ghMsg" value="像素工坊：更新 art/pixel" style="width:220px"></label></div>
+      <div class="log" id="ioLog" hidden></div></div>
+    <div class="box"><h4>危險區</h4><div class="row"><button class="b" data-io="wipe">清空本機草稿</button><span class="hint">先匯出再清。</span></div></div>`;
+  $('ioPanel').onclick = e => { const b = e.target.closest('[data-io]'); if(b) ioAct(b.dataset.io); };
+}
+const log = m => { const l = $('ioLog'); l.hidden=false; l.textContent += m + '\n'; l.scrollTop = l.scrollHeight; };
+function fileOf(kind, id){ return `art/pixel/${kind}/${id}.json`; }
+function buildIndex(){ const ent = t => Object.values(DB[t]).map(o => ({ id:o.id, name:o.name, kind:o.kind, file:fileOf(t,o.id), updatedAt:o.updatedAt||0 })); return { version:1, generatedAt:new Date().toISOString(), objects:ent('objects'), scenes:ent('scenes'), stories:ent('stories') }; }
+function mergeIn(kind, item, force){ if(!item || !item.id) return false; const cur = DB[kind][item.id]; if(cur && !force && (cur.updatedAt||0) > (item.updatedAt||0)) return false; DB[kind][item.id] = item; return true; }
+// 目前沒選東西（例如本機草稿原本是空的）就自動選第一筆，切到分頁時才有東西看
+function ensureSelection(){
+  if(!curScene() && Object.keys(DB.scenes).length) S.id = Object.keys(DB.scenes)[0];
+  if(!curStory() && Object.keys(DB.stories).length) T.id = Object.keys(DB.stories)[0];
+}
+function importAny(data, force){
+  let n = 0;
+  const kindOf = o => o.beats ? 'stories' : o.items ? 'scenes' : (o.frames||o.kind) ? 'objects' : null;
+  if(data && data.objects && typeof data.objects==='object' && !Array.isArray(data.objects)){ for(const k of ['objects','scenes','stories']) for(const it of Object.values(data[k]||{})) if(mergeIn(k, it, force)) n++; }
+  else if(Array.isArray(data)){ for(const o of data){ const k=kindOf(o); if(k && mergeIn(k,o,force)) n++; } }
+  else if(data && kindOf(data)){ if(mergeIn(kindOf(data), data, force)) n++; }
+  else throw new Error('看不懂這份 JSON（不是物件／場景／劇本／整包）');
+  ensureSelection(); touch(); renderLib(); return n;
+}
+async function ioAct(act){
+  const force = !!($('ioForce')&&$('ioForce').checked);
+  try{
+    if(act==='site'){ log('讀 art/pixel/index.json …'); const r = await fetch('art/pixel/index.json?t='+Date.now()); if(!r.ok) throw new Error('本站沒有 art/pixel/index.json（HTTP '+r.status+'）'); const idx = await r.json(); let n=0; for(const k of ['objects','scenes','stories']) for(const e of idx[k]||[]){ const rr = await fetch(e.file+'?t='+Date.now()); if(!rr.ok){ log('  ✗ '+e.file); continue; } if(mergeIn(k, await rr.json(), force)){ n++; log('  ✓ '+e.file); } else log('  = '+e.file+'（本機較新，略過）'); } ensureSelection(); touch(); renderLib(); toast(`載入 ${n} 筆`); }
+    if(act==='bundle'){ download('pixel-bundle.json', new Blob([JSON.stringify(DB, null, 1)], {type:'application/json'})); }
+    if(act==='files'){ for(const k of ['objects','scenes','stories']) for(const o of Object.values(DB[k])) download(`${o.id}.json`, new Blob([JSON.stringify(o, null, 1)], {type:'application/json'})); download('index.json', new Blob([JSON.stringify(buildIndex(), null, 1)], {type:'application/json'})); }
+    if(act==='import'){ const r = await pickFile('.json,application/json','text'); if(!r) return; const n = importAny(JSON.parse(r.data), force); toast(`匯入 ${n} 筆`); }
+    if(act==='paste'){ const t = $('ioPaste').value.trim(); if(!t) return; const n = importAny(JSON.parse(t), true); $('ioPaste').value=''; toast(`匯入 ${n} 筆`); }
+    if(act==='claude'){ const parts=[]; const scn=curScene(), st=curStory(); if(EDIT_ID && DB.objects[EDIT_ID]) parts.push(DB.objects[EDIT_ID]); if(scn) parts.push(scn); if(st) parts.push(st); if(!parts.length){ alert('先選一個場景或劇本（或在繪圖器開一個物件）。'); return; }
+      const md = `以下是我用像素工坊（pixel-studio.html）做的資料，格式見 repo 的 PIXEL_STUDIO.md（像素物件的 frames 每列一字串、一字元一像素、'.' 透明、其他字元查 palette，有 layers 時 layers 是來源、frames 是壓平結果；場景 items 的深度照腳底 y 排；劇本 beats 與 roguelike.html 的 RPG_BEATS 同形）。\n請把它們寫進 art/pixel/（檔名 <kind>/<id>.json，並更新 art/pixel/index.json），然後：\n\n（這裡寫你要 Claude 做的事）\n\n\`\`\`json\n${JSON.stringify(parts.length===1?parts[0]:parts, null, 1)}\n\`\`\``; copyText(md); }
+    if(act==='wipe'){ if(!confirm('清空本機草稿？（沒匯出的就沒了）')) return; DB = P.emptyDB(); S.id=null; T.id=null; save(); renderLib(); renderSide(); toast('已清空'); }
+    if(act==='ghpull' || act==='ghpush'){
+      GH.repo = $('ghRepo').value.trim(); GH.branch = $('ghBranch').value.trim() || 'main'; const token = $('ghToken').value.trim(); if(!token) throw new Error('沒有 token');
+      if($('ghRemember').checked) GH.token = token; else delete GH.token; localStorage.setItem(GH_KEY, JSON.stringify(GH));
+      const api = async (path, opt) => { const r = await fetch('https://api.github.com/repos/'+GH.repo+'/contents/'+path+(opt&&opt.method==='PUT'?'':'?ref='+encodeURIComponent(GH.branch)+'&t='+Date.now()), Object.assign({ headers:{ Authorization:'Bearer '+token, Accept:'application/vnd.github+json', 'X-GitHub-Api-Version':'2022-11-28', 'Content-Type':'application/json' } }, opt||{})); if(r.status===404) return null; if(!r.ok) throw new Error(`GitHub ${r.status}：${(await r.text()).slice(0,200)}`); return r.json(); };
+      const dec = b64 => decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))), enc = s => btoa(unescape(encodeURIComponent(s)));
+      if(act==='ghpull'){ log(`從 ${GH.repo}@${GH.branch} 讀 art/pixel/index.json …`); const ix = await api('art/pixel/index.json'); if(!ix) throw new Error('那條分支上沒有 art/pixel/index.json'); const idx = JSON.parse(dec(ix.content)); let n=0; for(const k of ['objects','scenes','stories']) for(const e of idx[k]||[]){ const f = await api(e.file); if(!f){ log('  ✗ '+e.file); continue; } if(mergeIn(k, JSON.parse(dec(f.content)), force)){ n++; log('  ✓ '+e.file); } else log('  = '+e.file+'（本機較新，略過）'); } ensureSelection(); touch(); renderLib(); toast(`載入 ${n} 筆`); }
+      else { const msg = $('ghMsg').value.trim() || '像素工坊：更新 art/pixel'; const files = []; for(const k of ['objects','scenes','stories']) for(const o of Object.values(DB[k])) files.push([fileOf(k,o.id), JSON.stringify(o, null, 1)+'\n']); files.push(['art/pixel/index.json', JSON.stringify(buildIndex(), null, 1)+'\n']);
+        let n=0; for(const [path, text] of files){ const cur = await api(path); if(cur && dec(cur.content)===text){ log('  = '+path); continue; } await api(path, { method:'PUT', body: JSON.stringify({ message: msg + ' — ' + path.split('/').pop(), content: enc(text), branch: GH.branch, sha: cur ? cur.sha : undefined }) }); n++; log('  ✓ '+path); }
+        toast(`推了 ${n} 個檔到 ${GH.branch}`); log(n ? `完成：${n} 個檔已 commit 到 ${GH.repo}@${GH.branch}。跟 Claude 說「art/pixel 有新東西，先 git pull」。` : '沒有需要更新的檔。'); }
+    }
+  }catch(err){ log('✗ '+(err.message||err)); alert(err.message||err); }
+}
+
+
+// ═══════════ 右側面板事件（共用委派）═══════════
+function bindSide(){
+  const side = $('side');
+  side.onclick = e => {
+    const b = e.target.closest('[data-act],.it');
+    if(!b) return;
+    if(b.classList.contains('it')){
+      const tg = e.target.closest('.ic'); const scn = curScene();
+      if(b.dataset.iid){ const it = scn.items.find(i=>i.iid===b.dataset.iid);
+        if(tg){ it[tg.dataset.tg] = !it[tg.dataset.tg]; stamp(scn); touch(); } else { S.sel = it.iid; S.selA=-1; }
+        renderSide(); sRender(); }
+      if(b.dataset.ai!=null){ S.selA=+b.dataset.ai; S.sel=null; renderSide(); sOverlay(); }
+      return; }
+    const act = b.dataset.act;
+    if(ST.mode==='scene') sAct(act); else if(ST.mode==='story') tAct(act);
+  };
+  side.onchange = e => {
+    const t = e.target; const scn = curScene(), st = curStory();
+    if(t.dataset.sk && scn){ const k=t.dataset.sk; if(k==='name') scn.name=t.value.trim()||scn.name; if(k==='w'||k==='h') scn[k]=clamp(+t.value||scn[k],16,4096); if(k==='bg') scn.bg = t.value.trim()? {src:t.value.trim()} : null; if(k==='bgColor') scn.bgColor = t.value.trim()||null; if(k==='bgColorPick') scn.bgColor = t.value; if(k==='notes') scn.notes=t.value; stamp(scn); touch(); renderLib(); renderSide(); sRender(); }
+    if(t.dataset.ik && scn){ const it=sItem(); if(!it) return; const k=t.dataset.ik; if(k==='flip') it.flip=t.checked; else if(k==='depth') it.depth = t.value===''? null : +t.value; else if(['x','y','scale','frame'].includes(k)) it[k]=+t.value; else it[k]=t.value; stamp(scn); touch(); renderSide(); sRender(); }
+    if(t.dataset.ak && scn){ const a=scn.anchors[S.selA]; if(!a) return; const k=t.dataset.ak; a[k] = (k==='x'||k==='y') ? +t.value : t.value; stamp(scn); touch(); renderSide(); sRender(); }
+    if(t.dataset.tk && st){ const k=t.dataset.tk; if(k==='name') st.name=t.value.trim()||st.name; else st[k]=t.value; stamp(st); touch(); T.pos={}; renderSide(); tRender(); }
+  };
+}
+
+// ═══════════ 啟動 ═══════════
+(async function init(){
+  const src = await loadDB();
+  if(src === 'ls') save();   // 舊的 localStorage 草稿搬進 IndexedDB
+  const first = t => Object.keys(DB[t])[0];
+  if(first('scenes')) S.id = first('scenes');
+  if(first('stories')) T.id = first('stories');
+  try{ EDIT_ID = localStorage.getItem('dipPixelEditorLast') || null; }catch(e){}
+  const m = new URLSearchParams(location.search).get('mode');
+  setMode(['scene','story','io'].includes(m) ? m : 'scene');
+  if(!Object.keys(DB.objects).length && !Object.keys(DB.scenes).length){
+    fetch('art/pixel/index.json').then(r => r.ok ? r.json() : null).then(idx => {
+      if(idx && confirm('本機草稿是空的。要從本站載入 art/pixel/ 的現成物件與場景嗎？')){ setMode('io'); ioAct('site'); }
+    }).catch(()=>{});
+  }
+  window.addEventListener('resize', ()=>{ if(ST.mode==='scene') sRender(); if(ST.mode==='story') tRender(); });
+})();
+</script>
+</body>
+</html>
