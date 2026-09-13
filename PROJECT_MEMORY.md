@@ -1,5 +1,49 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-13｜dip-vinyl-shop｜繪圖器第 5 批（收尾）：.aseprite 匯入、GIF 匯出、雪碧圖切格、動畫標籤
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。五批規劃到此跑完。
+
+**新增 `dip-pixel-aseprite.js`** — 讀 Aseprite 原生檔，純資料、node 可測。
+支援 8／16／32 bit 三種色彩深度、多圖層（群組圖層跳過但不弄亂編號）、多格、cel 的 x/y 偏移、
+cel 三種型態（raw／linked／zlib 壓縮）、新舊兩種色盤區塊、動畫標籤、每格時間。
+帶不進來的（圖層不透明度、混合模式、tilemap、slices）**不默默吃掉**，全部進 `warnings`，
+匯入視窗會列出來並抄一份進物件備註。解壓縮是注入進來的：瀏覽器用 `DecompressionStream('deflate')`、
+node 用 `zlib.inflateSync`。
+
+**新增 `dip-pixel-gif.js`** — GIF89a 編碼器。索引色本來就是 GIF 的原生格式，
+色盤直接當全域色表、像素值直接是色表編號，**不需要任何量化**，這是「一字元一色」少數真的划算的地方。
+
+**`pixel-editor.html`**：匯入 .aseprite、雪碧圖切成動畫格（自動猜欄列、逐格預覽）、
+匯出視窗改成四選一（PNG／每格 PNG／PNG 雪碧圖／GIF）、動畫標籤視窗、
+開啟視窗加過濾與排序與「最近開過」。
+
+**踩到的坑（很貴，記著）**：
+1. **GIF 的 LZW：編碼器加寬位元數的時機比解碼器晚一個條目。**
+   解碼器永遠比編碼器慢一步建表（它要讀到下一個碼才知道前一個條目的第一個像素），
+   所以讀第 k 個碼時解碼器的表比編碼器少一筆。編碼器要寫 `next === (1<<codeSize) + 1`、
+   解碼器寫 `next === (1<<codeSize)`。兩邊寫成一樣的話，前幾十個像素就開始整串錯位。
+   **自己編自己解會一起錯、測不出來**，所以真正的驗證是把 GIF 丟給 Chromium 的解碼器畫出來比對像素。
+2. **`animTags` 存得進去、讀不回來**（舊 bug，這次才浮出來）。`docToObject` 寫 `o.animTags`，
+   但 `docLoad` 只讀 `obj.tags`，所以動畫標籤存檔之後就消失。已修成優先讀 `animTags`、
+   保留舊的物件型 `tags` 相容路徑。
+3. **Playwright 不能 `await page.evaluate(() => importAsepriteFlow())`**——它會停在檔案選擇器上，
+   整個測試掛死。要 `page.evaluate(() => { importAsepriteFlow(); })`（不回傳 promise），
+   再用 `page.waitForEvent('filechooser')` 接。
+
+- 主要檔案：`dip-pixel-aseprite.js`（新增）、`dip-pixel-gif.js`（新增）、
+  `scripts/lib/fake-aseprite.mjs`（新增，照規格組 .aseprite 的測試用寫檔器）、
+  `scripts/pixel-aseprite-test.mjs`／`scripts/pixel-gif-test.mjs`（新增）、
+  `pixel-editor.html`（匯入匯出、切格、標籤、開啟視窗、docLoad 修正）、`PIXEL_STUDIO.md`
+- **`art/pixel/` 的資料格式沒動**（`animTags` 本來就在格式裡，只是之前讀不回來）。
+- **`.aseprite` 解析器沒拿真的 Aseprite 輸出驗證過**——雲端機器抓不到樣本檔，
+  測試用的是照規格自己組的檔案。店主第一次丟真檔案進去請確認結果。
+- 驗證：`node scripts/pixel-aseprite-test.mjs` 45 項、`pixel-gif-test` 35 項、
+  `pixel-palette-test` 49 項、`pixel-font-test` 39 項、`pixel-import-test` 43 項全過；
+  Playwright 193 項全過、console 零錯誤（新增 45 項：.aseprite 走真的檔案選擇器匯入、
+  GIF 交給 Chromium 解碼比對像素與透明、匯出視窗四格式、雪碧圖切格、標籤視窗與存回素材庫、
+  開啟視窗過濾排序與最近開過）；`node scripts/pixel-index.mjs` 通過。
+
 ### 2026-09-13｜dip-vinyl-shop｜繪圖器第 4 批：明暗階產生器、色盤排序合併、色盤檔匯入匯出
 
 分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。第 4 批：色盤與取色。

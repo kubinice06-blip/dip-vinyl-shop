@@ -220,6 +220,8 @@
 <script src="dip-pixel-import.js?v=1"></script>
 <script src="dip-pixel-font.js?v=1"></script>
 <script src="dip-pixel-palette.js?v=1"></script>
+<script src="dip-pixel-aseprite.js?v=1"></script>
+<script src="dip-pixel-gif.js?v=1"></script>
 <script>
 'use strict';
 // ═════════════════════════════════════════════════════════════════════════════
@@ -332,7 +334,10 @@ function docLoad(obj){
   DOC.anchor = P.anchorOf(obj);
   DOC.fps = obj.fps || 8;
   DOC.durations = Array.isArray(obj.durations) ? obj.durations.slice() : null;
-  DOC.tags = Array.isArray(obj.tags) && obj.tags.length && typeof obj.tags[0] === 'object' ? obj.tags.slice() : [];
+  // 動畫標籤存在 animTags；obj.tags 是物件分類標籤（字串）。
+  // 很早以前有一版把動畫標籤寫進 obj.tags，所以留一條相容路徑。
+  DOC.tags = Array.isArray(obj.animTags) ? obj.animTags.slice()
+    : (Array.isArray(obj.tags) && obj.tags.length && typeof obj.tags[0] === 'object' ? obj.tags.slice() : []);
   DOC.objTags = Array.isArray(obj.tags) && (!obj.tags.length || typeof obj.tags[0] === 'string') ? obj.tags.slice() : [];
   DOC.notes = obj.notes || '';
   DOC.dirty = false;
@@ -1357,6 +1362,161 @@ function palDelete(i){
   ST.fg = Math.min(ST.fg, DOC.keys.length-1); ST.bg = Math.min(ST.bg, DOC.keys.length-1);
   markDirty(); buildPalette(); render(); syncUI(); }
 
+// ═════════════════════════════ 檔案與匯入 ═════════════════════════════
+// 從「一堆索引陣列」直接生一個素材庫物件（.aseprite 與雪碧圖都走這條）
+function docFromIndexed(name, ix, opts){
+  opts = opts || {};
+  let id = P.slug(name) || 'imported', n = 2;
+  while(LIB.objects[id]) id = (P.slug(name) || 'imported') + '-' + (n++);
+  const o = P.newPixelObject(id, name, ix.w, ix.h);
+  o.palette = {}; const keys = ['.'];
+  ix.palette.forEach((hx, i) => { const k = KEY_POOL[i]; if(k){ o.palette[k] = hex6(hx); keys.push(k); } });
+  o.layers = ix.layers.map(L => ({ name:L.name || '圖層', visible: L.visible !== false, locked: !!L.locked,
+    frames: L.cels.map(c => arrToRows(c, ix.w, ix.h, keys)) }));
+  P.flattenLayers(o);
+  o.anchor = { x: Math.floor(ix.w/2), y: ix.h };
+  const dur = ix.durations || [];
+  if(dur.length && dur.some(d => d !== dur[0])) o.durations = dur.slice(); else delete o.durations;
+  o.fps = dur.length ? clamp(Math.round(1000 / (dur[0] || 100)), 1, 60) : 8;
+  if(ix.tags && ix.tags.length) o.animTags = ix.tags.map(t => ({ name:t.name, from:t.from, to:t.to }));
+  o.notes = opts.notes || '';
+  LIB.objects[id] = o;
+  docLoad(o); docSave(); fitView(); render(); syncUI(); buildOptbar(); rememberId(id);
+  return o;
+}
+
+// ── .aseprite／.ase 匯入 ──
+async function importAsepriteFlow(){
+  const AS = window.DipPixelAseprite;
+  const r = await pickFile('.aseprite,.ase', 'buf'); if(!r) return;
+  let ase, ix;
+  try{
+    ase = await AS.parseAseprite(new Uint8Array(r.data), AS.browserInflate());
+    ix = AS.asepriteToIndexed(ase, { maxColors: KEY_POOL.length });
+  }catch(e){ toast('讀不了這個檔：' + e.message); return; }
+  const base = r.file.name.replace(/\.(aseprite|ase)$/i, '') || '匯入';
+  const warn = ix.warnings.length
+    ? `<div class="hint" style="color:var(--gold)">${ix.warnings.map(w => '· ' + esc(w)).join('<br>')}</div>` : '';
+  openDlg(`<h3>匯入 .aseprite</h3><div class="body">
+      <div class="row"><label>名稱</label><input type="text" id="aName" value="${esc(base)}" style="flex:1"></div>
+      <div class="hint">${ix.w} × ${ix.h}　${ix.layers.length} 個圖層　${ix.layers[0] ? ix.layers[0].cels.length : 0} 格　${ix.palette.length} 色
+        ${ix.tags.length ? '　標籤 ' + ix.tags.map(t => esc(t.name)).join('、') : ''}
+        <br>色彩深度 ${ase.colorDepth} bit（${ase.colorDepth === 8 ? '索引色' : ase.colorDepth === 16 ? '灰階' : 'RGBA'}）</div>
+      ${warn}
+      <div class="hint">會建成一個**新的素材庫物件**，目前開著的圖像不動。<br>
+        我們的格式沒有 alpha，所以圖層不透明度與混合模式都不會帶進來。</div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">建立</button></div>`);
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    const name = $('aName').value.trim() || base;
+    closeDlg();
+    docFromIndexed(name, ix, { notes: ix.warnings.length ? '從 .aseprite 匯入：' + ix.warnings.join('；') : '' });
+    toast(`匯入 ${ix.layers.length} 層 × ${ix.layers[0] ? ix.layers[0].cels.length : 0} 格`);
+  };
+}
+
+// ── 雪碧圖切成動畫格 ──
+// 進來的是匯入視窗算好的索引圖（IMP.res），照格數切開，每一塊變成一格。
+function dlgSheetSlice(){
+  const r = IMP.res; if(!r) return;
+  const W = r.idx.width, H = r.idx.height;
+  // 猜一下：先找能整除的格數，寬高比接近 1 的優先
+  let guess = { cols:1, rows:1, score:1e9 };
+  for(let c = 1; c <= Math.min(32, W); c++) for(let rr = 1; rr <= Math.min(32, H); rr++){
+    if(W % c || H % rr) continue;
+    const w = W/c, h = H/rr;
+    const sc = Math.abs(Math.log(w/h)) + (c*rr === 1 ? 5 : 0) + 0.02*(c*rr);
+    if(sc < guess.score) guess = { cols:c, rows:rr, score:sc };
+  }
+  openDlg(`<h3>切成動畫格</h3><div class="body">
+      <div class="hint">整張 ${W} × ${H}。雪碧圖每一格大小一樣，照格數切開，由左到右、由上到下排成動畫。</div>
+      <div class="row"><label>欄</label><input type="number" id="shC" min="1" max="64" value="${guess.cols}" style="width:64px">
+        <label>列</label><input type="number" id="shR" min="1" max="64" value="${guess.rows}" style="width:64px">
+        <span class="lbl" id="shInfo"></span></div>
+      <div class="row"><label>名稱</label><input type="text" id="shName" value="${esc(DOC.name)} 動畫" style="flex:1"></div>
+      <div class="row"><label>每格毫秒</label><input type="number" id="shMs" min="10" max="5000" value="100" style="width:80px"></div>
+      <div class="row"><label><input type="checkbox" id="shTrim"> 切完自動裁掉全空的格</label></div>
+      <div class="row"><label>預覽</label><div id="shPrev" style="display:flex;flex-wrap:wrap;gap:2px;flex:1;max-height:120px;overflow:auto"></div></div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">建成新物件</button></div>`);
+  const IM = window.DipPixelImport;
+  let cells = [];
+  const calc = () => {
+    const c = clamp(+$('shC').value || 1, 1, 64), rr = clamp(+$('shR').value || 1, 1, 64);
+    const cw = Math.floor(W/c), ch = Math.floor(H/rr);
+    $('shInfo').textContent = (cw && ch) ? `每格 ${cw} × ${ch}，共 ${c*rr} 格` : '格數太多，切不出來';
+    cells = [];
+    if(!cw || !ch){ $('shPrev').innerHTML = ''; return; }
+    for(let ry = 0; ry < rr; ry++) for(let cx = 0; cx < c; cx++){
+      const d = new Uint8Array(cw*ch);
+      for(let y = 0; y < ch; y++) for(let x = 0; x < cw; x++)
+        d[y*cw+x] = r.idx.data[(ry*ch + y)*W + cx*cw + x];
+      cells.push({ data:d, width:cw, height:ch, palette:r.idx.palette });
+    }
+    $('shPrev').innerHTML = cells.map((_, i) => `<canvas data-sh="${i}"></canvas>`).join('');
+    $$('#shPrev canvas').forEach(cv2 => { const p = cells[+cv2.dataset.sh];
+      const im = IM.idxToImg(p);
+      cv2.width = p.width; cv2.height = p.height;
+      cv2.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(im.data), p.width, p.height), 0, 0);
+      const k = Math.max(1, Math.min(3, Math.floor(40/Math.max(p.width, p.height))));
+      cv2.style.width = p.width*k + 'px'; cv2.style.height = p.height*k + 'px';
+      cv2.style.imageRendering = 'pixelated'; cv2.style.background = '#1b1b1b'; });
+  };
+  $('shC').oninput = calc; $('shR').oninput = calc; calc();
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    let use = cells;
+    if($('shTrim').checked) use = cells.filter(c => c.data.some(v => v));
+    if(!use.length){ toast('切不出任何一格'); return; }
+    const name = $('shName').value.trim() || '動畫';
+    const ms = clamp(+$('shMs').value || 100, 10, 5000);
+    closeDlg();
+    docFromIndexed(name, {
+      w: use[0].width, h: use[0].height, palette: r.idx.palette,
+      layers: [{ name:'圖層 1', visible:true, locked:false, cels: use.map(c => c.data) }],
+      durations: use.map(() => ms), tags: [],
+    });
+    toast(`切出 ${use.length} 格`);
+  };
+}
+
+// ── 動畫標籤 ──
+function dlgTags(){
+  openDlg(`<h3>動畫標籤</h3><div class="body">
+      <div class="hint">標籤是「第幾格到第幾格是哪一段動作」，格編號從 0 起算（目前共 ${nFrames()} 格）。<br>
+        會存進物件的 <code>animTags</code>，給遊戲端挑段落播用；匯入 .aseprite 時原檔的標籤也會帶進來。</div>
+      <div id="tgList"></div>
+      <div class="row"><button class="btn" id="tgAdd">＋ 新增標籤</button></div>
+    </div>
+    <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">套用</button></div>`);
+  const work = DOC.tags.map(t => ({ ...t }));
+  const drawWork = () => {
+    $('tgList').innerHTML = work.length ? work.map((t, i) => `<div class="row" data-tag="${i}">
+      <input type="text" data-tf="name" data-i="${i}" value="${esc(t.name)}" style="flex:1" placeholder="走路">
+      <label>從</label><input type="number" data-tf="from" data-i="${i}" value="${t.from}" min="0" max="${Math.max(0,nFrames()-1)}" style="width:56px">
+      <label>到</label><input type="number" data-tf="to" data-i="${i}" value="${t.to}" min="0" max="${Math.max(0,nFrames()-1)}" style="width:56px">
+      <button class="btn" data-tdel="${i}">刪</button></div>`).join('')
+      : '<div class="hint">還沒有標籤。</div>';
+  };
+  drawWork();
+  $('tgAdd').onclick = () => { work.push({ name:'動作 ' + (work.length+1), from:0, to:Math.max(0, nFrames()-1) }); drawWork(); };
+  $('dlg').oninput = e => { const t = e.target; if(!t.dataset || !t.dataset.tf) return;
+    const i = +t.dataset.i, f = t.dataset.tf;
+    work[i][f] = f === 'name' ? t.value : clamp(+t.value || 0, 0, Math.max(0, nFrames()-1)); };
+  $('dlg').onclick = e => { const b = e.target.closest('[data-tdel]'); if(!b) return;
+    work.splice(+b.dataset.tdel, 1); drawWork(); };
+  $('dNo').onclick = closeDlg;
+  $('dYes').onclick = () => {
+    closeDlg(); pushUndo('doc');
+    DOC.tags = work.filter(t => t.name.trim()).map(t => ({ name:t.name.trim(),
+      from: Math.min(t.from, t.to), to: Math.max(t.from, t.to) }));
+    markDirty(); syncStatus();
+    toast(DOC.tags.length ? DOC.tags.length + ' 個標籤' : '標籤已清空');
+  };
+}
+const tagAt = f => (DOC.tags || []).find(t => f >= t.from && f <= t.to);
+
 // ═════════════════════════════ 色盤工具 ═════════════════════════════
 const PALX = window.DipPixelPalette;
 
@@ -1739,6 +1899,8 @@ function syncStatus(){
   $('stTool').textContent = (TOOL_NAME[ST.tool] || ST.tool)
     + (ST.ink !== 'normal' ? ' · ' + ({ shading:'上色', replace:'換色' })[ST.ink] : '')
     + (ST.ditherPat !== 'none' ? ' · 網點 ' + ST.ditherAmt + '%' : '');
+  const tg = tagAt(ST.frame);
+  $('stTool').textContent += tg ? '　🏷 ' + tg.name : '';
   const h = ST.hover;
   $('stPos').textContent = h && inB(h.x, h.y)
     ? `${h.x}, ${h.y}` + (() => { const d = curCel(); const v = d ? d[h.y*DOC.w+h.x] : 0;
@@ -1895,24 +2057,52 @@ function createDoc(name, w, h, palList, fillBg){
   docSave(); fitView(); render(); syncUI(); buildOptbar(); rememberId(id);
   toast('已建立 ' + name);
 }
+function recentIds(){
+  try{ return JSON.parse(localStorage.getItem('dipPixelEditorRecent') || '[]'); }catch(e){ return []; }
+}
+function pushRecent(id){
+  try{
+    const list = recentIds().filter(x => x !== id);
+    list.unshift(id);
+    localStorage.setItem('dipPixelEditorRecent', JSON.stringify(list.slice(0, 12)));
+  }catch(e){}
+}
 function dlgOpenLib(){
-  const list = Object.values(LIB.objects).filter(o => o.kind === 'pixel')
-    .sort((a, b) => (b.updatedAt||0) - (a.updatedAt||0));
+  const all = Object.values(LIB.objects).filter(o => o.kind === 'pixel');
   const imgs = Object.values(LIB.objects).filter(o => o.kind === 'image');
-  if(!list.length && !imgs.length){ toast('素材庫是空的，先「新增圖像」'); return; }
+  if(!all.length && !imgs.length){ toast('素材庫是空的，先「新增圖像」'); return; }
+  const recent = recentIds().map(id => LIB.objects[id]).filter(o => o && o.kind === 'pixel');
+  const label = o => `${o.name}　${P.sizeOf(o).w}×${P.sizeOf(o).h}${(o.frames||[]).length>1?' · '+o.frames.length+'格':''}`;
   openDlg(`<h3>開啟</h3><div class="body">
       <div class="hint">素材庫與像素工坊共用（IndexedDB）。</div>
-      <div class="row"><select id="oSel" size="12" style="width:100%">
-        ${list.map(o => `<option value="${esc(o.id)}">${esc(o.name)}　${P.sizeOf(o).w}×${P.sizeOf(o).h}${(o.frames||[]).length>1?' · '+o.frames.length+'格':''}</option>`).join('')}
-      </select></div>
+      <div class="row"><label>找</label><input type="text" id="oQ" placeholder="打名字過濾" style="flex:1">
+        <select id="oSort"><option value="time">最近改過</option><option value="name">名稱</option><option value="size">尺寸</option></select></div>
+      ${recent.length ? `<div class="row"><label>最近</label><div id="oRecent" style="display:flex;flex-wrap:wrap;gap:4px;flex:1">
+        ${recent.slice(0, 8).map(o => `<button class="btn" data-open="${esc(o.id)}">${esc(o.name)}</button>`).join('')}</div></div>` : ''}
+      <div class="row"><select id="oSel" size="12" style="width:100%"></select></div>
+      <div class="hint" id="oInfo"></div>
       ${imgs.length ? `<div class="hint">另有 ${imgs.length} 個圖檔物件（PNG 路徑），要編輯請用「檔案 → 匯入圖片」轉成像素。</div>` : ''}
     </div>
     <div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">開啟</button></div>`);
+  const fill = () => {
+    const q = $('oQ').value.trim().toLowerCase(), mode = $('oSort').value;
+    let list = all.filter(o => !q || o.name.toLowerCase().includes(q) || o.id.toLowerCase().includes(q));
+    list.sort(mode === 'name' ? (a, b) => a.name.localeCompare(b.name, 'zh-Hant')
+      : mode === 'size' ? (a, b) => (P.sizeOf(b).w*P.sizeOf(b).h) - (P.sizeOf(a).w*P.sizeOf(a).h)
+      : (a, b) => (b.updatedAt||0) - (a.updatedAt||0));
+    $('oSel').innerHTML = list.map(o => `<option value="${esc(o.id)}">${esc(label(o))}</option>`).join('');
+    $('oInfo').textContent = `${list.length} / ${all.length} 個像素物件`;
+  };
+  $('oQ').oninput = fill; $('oSort').onchange = fill; fill();
   const go = () => { const id = $('oSel').value; if(!id) return; closeDlg(); openObject(id); };
   $('oSel').ondblclick = go; $('dNo').onclick = closeDlg; $('dYes').onclick = go;
+  $('oQ').onkeydown = e => { if(e.key === 'Enter'){ e.preventDefault(); go(); } };
+  $('dlg').onclick = e => { const b = e.target.closest('[data-open]'); if(!b) return;
+    closeDlg(); openObject(b.dataset.open); };
 }
 function rememberId(id){
   try{ localStorage.setItem('dipPixelEditorLast', id); }catch(e){}
+  pushRecent(id);
   try{ history.replaceState(null, '', location.pathname + '?id=' + encodeURIComponent(id)); }catch(e){}
 }
 function openObject(id){
@@ -2105,6 +2295,7 @@ function dlgImport(imgEl){
     </div>
     <div class="foot">
       <button class="btn" id="dNo">取消</button>
+      <button class="btn" data-imp="sheet">切成動畫格…</button>
       <button class="btn" data-imp="slice">切成多個物件…</button>
       <button class="btn" data-imp="replace">取代整張</button>
       <button class="btn pri" id="dYes" data-imp="layer">當成新圖層</button>
@@ -2171,6 +2362,7 @@ function dlgImport(imgEl){
       $('ipCellX').value = g.cell.x; $('ipCellY').value = g.cell.y;
       $('ipOffX').value = g.offset.x; $('ipOffY').value = g.offset.y; later(); return; }
     if(act === 'fitdoc'){ $('ipW').value = DOC.w; $('ipH').value = DOC.h; later(); return; }
+    if(act === 'sheet'){ clearTimeout(IMP.timer); recompute(); dlgSheetSlice(); return; }
     if(act === 'slice'){ clearTimeout(IMP.timer); recompute(); dlgSlice(); return; }
     if(act === 'layer' || act === 'replace'){ clearTimeout(IMP.timer); recompute(); applyImport(act); return; }
   };
@@ -2284,21 +2476,90 @@ async function importImageFlow(){
   dlgImport(im);
 }
 
+function frameCanvas(f, k){
+  const c = document.createElement('canvas'); c.width = DOC.w*k; c.height = DOC.h*k;
+  const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
+  g.drawImage(idxToCanvas(composite(f, { raw:true }), off2, ox2), 0, 0, DOC.w*k, DOC.h*k);
+  return c;
+}
 function exportPNG(scale, allFrames){
   const k = clamp(scale || 1, 1, 16);
-  const one = f => { const c = document.createElement('canvas'); c.width = DOC.w*k; c.height = DOC.h*k;
-    const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
-    g.drawImage(idxToCanvas(composite(f, { raw:true }), off2, ox2), 0, 0, DOC.w*k, DOC.h*k); return c; };
-  if(allFrames && nFrames() > 1){ for(let f = 0; f < nFrames(); f++) one(f).toBlob(b => download(`${DOC.id}-f${f+1}@${k}x.png`, b)); }
-  else one(ST.frame).toBlob(b => download(`${DOC.id}${nFrames()>1?'-f'+(ST.frame+1):''}@${k}x.png`, b));
+  if(allFrames && nFrames() > 1){ for(let f = 0; f < nFrames(); f++) frameCanvas(f, k).toBlob(b => download(`${DOC.id}-f${f+1}@${k}x.png`, b)); }
+  else frameCanvas(ST.frame, k).toBlob(b => download(`${DOC.id}${nFrames()>1?'-f'+(ST.frame+1):''}@${k}x.png`, b));
+}
+// 雪碧圖：所有格排成一張 PNG，順序是由左到右、由上到下
+function exportSheet(scale, cols){
+  const k = clamp(scale || 1, 1, 16), nf = nFrames();
+  const c = clamp(cols || nf, 1, nf), rows = Math.ceil(nf / c);
+  const cv2 = document.createElement('canvas');
+  cv2.width = DOC.w*k*c; cv2.height = DOC.h*k*rows;
+  const g = cv2.getContext('2d'); g.imageSmoothingEnabled = false;
+  for(let f = 0; f < nf; f++)
+    g.drawImage(frameCanvas(f, k), (f % c) * DOC.w * k, Math.floor(f / c) * DOC.h * k);
+  cv2.toBlob(b => download(`${DOC.id}-sheet-${c}x${rows}@${k}x.png`, b));
+  return { cols:c, rows };
+}
+// GIF：索引色本來就是 GIF 的原生格式，色盤直接變成色表，不需要任何量化
+function buildGif(scale){
+  const k = clamp(scale || 1, 1, 8), nf = nFrames();
+  const pal = DOC.keys.slice(1).map(x => hex6(DOC.pal[x]));
+  const frames = [];
+  for(let f = 0; f < nf; f++){
+    const src = composite(f, { raw:true });
+    let data = src, w = DOC.w, h = DOC.h;
+    if(k > 1){                                  // 最近鄰放大（索引色不能內插）
+      w = DOC.w*k; h = DOC.h*k; data = new Uint8Array(w*h);
+      for(let y = 0; y < h; y++) for(let x = 0; x < w; x++)
+        data[y*w+x] = src[Math.floor(y/k)*DOC.w + Math.floor(x/k)];
+    }
+    frames.push({ data, delay: (DOC.durations && DOC.durations[f]) || Math.round(1000/DOC.fps) });
+  }
+  return window.DipPixelGif.encodeGIF({ width: DOC.w*k, height: DOC.h*k, palette: pal, frames });
+}
+function exportGIF(scale){
+  try{
+    const bytes = buildGif(scale);
+    download(`${DOC.id}.gif`, new Blob([bytes], { type:'image/gif' }));
+    toast(`GIF ${nFrames()} 格、${(bytes.length/1024).toFixed(1)} KB`);
+  }catch(e){ toast('GIF 匯出失敗：' + e.message); }
 }
 function dlgExport(){
-  openDlg(`<h3>匯出 PNG</h3><div class="body">
+  const nf = nFrames();
+  openDlg(`<h3>匯出</h3><div class="body">
+      <div class="row"><label>格式</label><select id="eFmt" style="flex:1">
+        <option value="png">PNG（單張）</option>
+        <option value="pngall" ${nf>1?'':'disabled'}>PNG（每一格各存一張，共 ${nf} 格）</option>
+        <option value="sheet" ${nf>1?'':'disabled'}>PNG 雪碧圖（所有格排成一張）</option>
+        <option value="gif" ${nf>1?'':'disabled'}>GIF 動畫</option>
+      </select></div>
       <div class="row"><label>倍率</label><input type="number" id="eK" value="4" min="1" max="16"></div>
-      <div class="row"><label><input type="checkbox" id="eAll" ${nFrames()>1?'':'disabled'}> 每一格各存一張（共 ${nFrames()} 格）</label></div>
+      <div class="row" id="eColsRow" style="display:none"><label>每列幾格</label>
+        <input type="number" id="eCols" value="${Math.min(nf, 8)}" min="1" max="${Math.max(1,nf)}">
+        <span class="lbl" id="eSheetInfo"></span></div>
+      <div class="hint" id="eHint"></div>
     </div><div class="foot"><button class="btn" id="dNo">取消</button><button class="btn pri" id="dYes">匯出</button></div>`);
+  const sync = () => {
+    const fmt = $('eFmt').value, k = clamp(+$('eK').value || 1, 1, 16);
+    $('eColsRow').style.display = fmt === 'sheet' ? '' : 'none';
+    $('eK').max = fmt === 'gif' ? 8 : 16;
+    if(fmt === 'sheet'){
+      const c = clamp(+$('eCols').value || nf, 1, nf), rows = Math.ceil(nf / c);
+      $('eSheetInfo').textContent = `${c} × ${rows} 格，整張 ${DOC.w*k*c} × ${DOC.h*k*rows}`;
+    }
+    $('eHint').textContent = fmt === 'gif'
+      ? `GIF 直接用目前色盤當色表（${DOC.keys.length-1} 色），不會再失真；透明用第 0 格。倍率上限 8。`
+      : fmt === 'sheet' ? '每一格的大小一樣，切回來的時候照這個格寬切就好。'
+      : `單張 ${DOC.w*k} × ${DOC.h*k}。`;
+  };
+  $('dlg').oninput = sync; $('dlg').onchange = sync; sync();
   $('dNo').onclick = closeDlg;
-  $('dYes').onclick = () => { const k = +$('eK').value, all = $('eAll').checked; closeDlg(); exportPNG(k, all); };
+  $('dYes').onclick = () => {
+    const fmt = $('eFmt').value, k = +$('eK').value, cols = +$('eCols').value;
+    closeDlg();
+    if(fmt === 'gif') exportGIF(k);
+    else if(fmt === 'sheet') exportSheet(k, cols);
+    else exportPNG(k, fmt === 'pngall');
+  };
 }
 // 描邊：在不透明像素的外側（或內側）加一圈指定色
 function dlgOutline(){
@@ -2367,6 +2628,7 @@ const MENUS = {
     ['另存為新物件…', '', () => dlgSaveAs()],
     '-',
     ['匯入圖片（分析）…', '', () => importImageFlow()],
+    ['匯入 .aseprite…', '', () => importAsepriteFlow()],
     ['匯出 PNG…', '', () => dlgExport()],
     ['複製物件 JSON', '', () => { docSave(); copyText(JSON.stringify(docToObject(), null, 1)); }],
     '-',
@@ -2427,6 +2689,8 @@ const MENUS = {
     ['下一格', '.', () => gotoFrame(1)],
     ['播放／停止', 'Enter', () => togglePlay()],
     ['洋蔥皮', '', () => { ST.onion = !ST.onion; render(); syncUI(); }],
+    '-',
+    ['動畫標籤…', '', () => dlgTags()],
   ],
   'm-pal': [
     ['產生明暗階…', '', () => dlgShadeRamp()],
