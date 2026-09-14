@@ -658,5 +658,313 @@
    "note": "⚠ **兩種形態跨年，卡單取 2023 正確。** release-group first-release-date 2023-11-10＝XW 數位首發；TW 實體 CD 是 **2024-04-24**、晚五個半月。串流側 releaseDate 2023-11-10、℗ 2023 相符。**catno SOTMR009 只屬於 2024 那筆 CD**，寫 2023 時不可掛這個編號（第 262 條）。錄音年未登錄。"
   },
   "notes": "**覆核策展層第 296 條：成立，未翻案。** 實查 artist afd9aeb0：主名「我是機車少女」、**alias「I'mdifficult」用彎引號 U+2019**，RG 與兩筆 release 的 title 用 **ASCII 直撇**——與策展層所述一字不差。盤名等於掛名的拉丁寫法，標 `selfTitled` 正確。**兩種撇號都要進 queryAlias。**｜⚠ **本層另補一項策展層沒寫的**：**RG 的 artist-credit 是「I'mdifficult我是機車少女」黏成一串**（不是「我是機車少女」），這是第 20 條的形狀在本批第二次出現（第一次是洪佩瑜）。**掛名取 artist 實體的主名「我是機車少女」正確**，但去重時三種字串（我是機車少女／I'mdifficult／I'mdifficult我是機車少女）都要 grep。｜**串流採信 1712625439**：11 軌對 11 軌、曲序一致，℗ 行的「機少出品有限公司 Difficult Productions」對得上團自營公司。**有固定試聽來源。**｜**獨立閘（本層補到一條硬旁證）**：數位那筆的 label-info 是 **[no label]**、CD 那筆是 禾廣娛樂 SOTMR009。**串流側 ℗ 行把兩者的關係講清楚了：版權方是樂團自己登記的機少出品有限公司，Sound of Tomorrow Ltd.（＝明天的歌，清單上收的一家）是獨家代理發行**——SOTMR 這個 catno 前綴正是 Sound of Tomorrow 的連號，而策展層第〇節已記「SOTMR 連號實際掛在禾廣的 release 上」。**禾廣與明天的歌兩家都在已判清單上，獨立閘成立、不需主線再裁。**｜⚠ **序數不要寫**：資料庫端把 2021-03-26《25》也建成 Album，但發行文案稱《I'mdifficult》是「首張全長專輯」——**兩邊打架**，本層未能確認《25》的實際形態。**寫作層一律不寫「第幾張」。**｜⚠ **極易誤吸的近名盤**：同藝人 2025-07-11 有《I'mdifficult: Remixes by Flowstrong》（EP+Remix，`16058107`），盤名只多一個冒號，**不可混入**。｜**人名邊界**：主腦 凌元耕 與三位團員的暱稱（芷瑄／沂紳／仲林）出自實體通路的產品資訊欄，可寫；**製作人查無欄位背書，不寫**。｜**反同構提醒**：本批 3 張禾廣的碟，**本張的主結構走「自我同名 ＋ 團自營公司自己出、通路只代理」，不要走廠牌敘事**。｜這是 Album、不是選輯，也不是現場盤。"
+ },
+ {
+  "key": "desc4:冰球樂團|Share Your Love",
+  "artist": "冰球樂團",
+  "album": "Share Your Love",
+  "facts": [
+   {
+    "f": "release-group 734b9760 的欄位：title「Share Your Love」、artist-credit「冰球樂團」、first-release-date 2017-06-02、primary-type Album、secondary-types 空。轄下兩個 release、**同一天、同一個 barcode 4713012740883、卻掛兩家不同的廠牌**：XW 數位 184256b1（8 軌、label-info **何樂音樂**）與 TW CD 4d295895（8 軌、label-info **好有感覺音樂、catno IB002**）。八軌：〈Can't Stop〉〈響起〉〈Give a Chance〉〈你對我說〉〈迴圈〉〈靠過來〉〈船歌〉〈I'll Be With You〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=734b9760-d4ab-4a0e-a3b2-4062fc179aab&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**這個團是為了比賽才組起來的**：2013 年為了報名政大金旋獎的創作組而成團，成員多半是在建國中學熱音社認識的。編制是主唱 王昭權、貝斯 Nelson（吳冠男）、鍵盤 蒙捷文、鼓 林士捷。他們 2016 年先發 EP《白日夢》，2017 年 6 月才交出《Share Your Love》這張專輯。2020 年復出時把團名的英文寫法由「Icy Ball」改成「icyball」。",
+    "src": "https://zh.wikipedia.org/zh-tw/Icyball%E5%86%B0%E7%90%83%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "藝人端點：冰球樂團是 Group／Taiwan、life-span.begin 2013、**兩個 alias「icyball」與「icyball 冰球樂團」**。名下三張 Album——2017-06-02《Share Your Love》、2021-12-17《我好斯文》、2025-12-10《我很抱歉》，另有 2016-03-25 的 EP《白日夢》與三支單曲。**《Share Your Love》是他們第一張專輯。**",
+    "src": "https://musicbrainz.org/ws/2/artist/e6b4faa3-2a04-4441-984a-40fd2444269d?fmt=json&inc=release-groups+aliases&limit=100"
+   },
+   {
+    "f": "串流側（tw 店面 collectionId 1557620056）8 軌與資料庫端逐軌同序，℗ 行記 **2017 何樂音樂Pqpmusic**，releaseDate 2017-06-02 同日，曲風欄歸 **R&B／靈魂樂**。⚠ 店面把 artistName 建成「icyball 冰球樂團」中英併寫。",
+    "src": "https://itunes.apple.com/lookup?id=1557620056&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "八軌只有 40 分鐘上下，把七〇、八〇年代的 Funk、Disco 與 R&B 接到當代的電子聲響上做成復古取向的流行歌；中英文曲名各佔一半，第 1 軌與第 8 軌兩首英文題把整張夾起來。⚠ **兩個 release 的曲名標點不同**：數位版把撇號全部省掉（〈Cant Stop〉〈Ill Be With You〉），CD 版才是完整的〈Can't Stop〉〈I'll Be With You〉。",
+    "src": "https://musicbrainz.org/ws/2/release/4d295895-7b6e-4250-856b-6659ae8facff?fmt=json&inc=recordings+media"
+   }
+  ],
+  "hookCandidates": [
+   "為了報名一個大學校園歌唱比賽的創作組才組團，四個人是在高中熱音社認識的",
+   "同一天、同一個條碼、兩家廠牌——數位掛何樂音樂，CD 掛好有感覺音樂"
+  ],
+  "sound": "八軌，數位與 CD 同日發行、同序。七〇與八〇年代的 Funk、Disco、R&B 底子接上當代的電子聲響，鍵盤在編制裡吃很重的比例。〈Can't Stop〉開場，〈響起〉與〈Give a Chance〉把節奏推起來，〈你對我說〉與〈迴圈〉是中段最慢的一對，〈靠過來〉之後的〈船歌〉把調性換掉一次，末軌〈I'll Be With You〉收尾。中英文曲名各佔一半。串流側歸「R&B／靈魂樂」。",
+  "keyTracks": [
+   "Can't Stop",
+   "你對我說",
+   "I'll Be With You"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2017,
+   "recorded": null,
+   "note": "一致，2017。release-group first-release-date 2017-06-02，數位與 CD 兩筆 release **同為 2017-06-02**；串流側 releaseDate 2017-06-02、℗ 2017 相符。**沒有數位早於實體的問題。** 錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：全數屬實，未擋下任何一處。**｜**串流採信 1557620056**：8 軌對 8 軌、曲序一致，℗ 2017 何樂音樂Pqpmusic 與數位版 label-info 的 何樂音樂 同一方。**有固定試聽來源。**｜**驗證策展層的配對陷阱**：策展層記店面 artistName 是「icyball 冰球樂團」、盤名是高頻片語、且會撈到 温嵐《一個吻的時間 (feat. 冰球樂團)》——實查屬實，本層以 collectionId 直查繞過。掛名取中文《冰球樂團》，「icyball」與併寫形都要進 queryAlias。｜**廠牌（要請主線裁的一條，本層補到證據）**：策展層第 298 條把 **好有感覺音樂**（`5ef1c430`，Imprint／Taiwan、IB002、barcode 4713012740883）列為清單外，並記「與同 RG 的 何樂音樂 release 共用同一個 barcode」。**本層確認共用 barcode 屬實，且兩筆 release 是同一天**——這不是兩次發行，是**同一次發行掛了兩個名字**。加上串流側 ℗ 行只寫 何樂音樂Pqpmusic（清單上收的一家，第 297 條已併 何樂音樂＝何樂音樂有限公司），**本張的獨立閘可以完全靠何樂音樂過，好有感覺音樂的收退不影響本卡**。這一條交主線，本層不自判。｜**軌名標點兩形（第 251 條的近親）**：數位版省略所有撇號（Cant Stop／Ill Be With You／Give A Chance），CD 版與串流側才是完整寫法。**寫作層引曲名一律用 CD／串流側的完整寫法。**｜**人名邊界**：四位成員（王昭權／Nelson 吳冠男／蒙捷文／林士捷）有條目背書，可寫；**製作人查無欄位背書，不寫**。｜⚠ **團名沿革**：2020 年才把英文寫法從「Icy Ball」改成「icyball」，**本張 2017 年發行時的寫法是舊的**——寫作層若要提英文團名，不要把 2020 年之後的寫法套回 2017。｜**反同構提醒**：本批共 3 張何樂音樂的碟（本張、理想混蛋、洪佩瑜），**本張的主結構走「為了比賽組團的高中熱音社四人 ＋ 復古 funk／disco 取向」，不要走廠牌敘事**。｜這是 Album、不是選輯。"
+ },
+ {
+  "key": "desc4:理想混蛋|愚者",
+  "artist": "理想混蛋",
+  "album": "愚者",
+  "facts": [
+   {
+    "f": "release-group 32c77357 的欄位：title「愚者」、artist-credit「理想混蛋」、first-release-date 2020-05-20、primary-type Album、secondary-types 空。轄下**只有一個 release** 04ef7536：2020-05-20 XW Official、Digital Media 11 軌、**barcode 欄 null**、label-info 記 **何樂音樂**。**資料庫端沒有實體版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=32c77357-8bb5-4f46-ac1a-2b755916ab8e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點最說明問題的是形態分佈：理想混蛋名下十八筆裡**十五筆是 Single**，Album 只有兩張（2020-05-20《愚者》、2022-04-22《關掉 / 打開》），另一筆是 2024 的 EP。**2018 到 2020 五月之間他們連發了九支單曲，然後才把第一張專輯交出來**——其中 2018-07-31 的〈行星〉與 2020-05-08 的〈絕地花園〉兩支單曲後來都收進《愚者》，分別排在第 3 與第 8 軌。",
+    "src": "https://musicbrainz.org/ws/2/artist/d2480604-9a9f-4fb0-825c-0e7709bbf7c7?fmt=json&inc=release-groups+aliases&limit=100"
+   },
+   {
+    "f": "碟名來自塔羅牌編號 0 的那張「愚者」，樂團希望聽的人「保有堅持理想、突破困境的愚者精神」。發行日刻意選在 5 月 20 日。製作人 李宗軒 從樂團草創期就跟著；第 8 軌〈絕地花園〉是先行單曲，找 廖文強 合唱。",
+    "src": "https://blow.streetvoice.com/49731/"
+   },
+   {
+    "f": "理想混蛋是台灣的男子樂團，路線以流行與民謠為主。**《愚者》是他們以募資方式發行的第一張專輯**，11 軌、48 分鐘；**這張碟讓他們入圍第 32 屆金曲獎最佳新人獎**（⚠ 入圍）。主唱 雞丁（邱建豪）與兩位吉他手 阿哲（郭哲成）、建廷（李建廷）原本同是臺北醫學大學吉他社的幹部。",
+    "src": "https://zh.wikipedia.org/zh-tw/%E7%90%86%E6%83%B3%E6%B7%B7%E8%9B%8B"
+   },
+   {
+    "f": "串流側（tw 店面 collectionId 1532398480）11 軌與資料庫端逐軌同序：1〈撲火的蝶〉2〈愚者〉3〈行星〉4〈騎士墜鬼馬〉5〈你討厭也沒關係〉6〈不能寂寞的人〉7〈我是你的Bling Bling〉8〈絕地花園 (feat. 廖文強)〉9〈寂寞的大孩子〉10〈再說〉11〈我還沒有作好被打倒的準備〉。℗ 行記 **2020 何樂音樂Pqpmusic**，內容分級 explicit，曲風欄歸「華語流行樂」。",
+    "src": "https://itunes.apple.com/lookup?id=1532398480&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "碟名取自塔羅牌編號 0 的那張「愚者」，發行日刻意選在五月二十號",
+   "先發了九支單曲，兩年後才把第一張專輯做出來——其中兩支就直接收進碟裡"
+  ],
+  "sound": "十一軌、48 分鐘，資料庫端只有數位一種形態。流行與民謠的路線，吉他是骨幹，人聲擺在最前。〈撲火的蝶〉開場，第 2 軌〈愚者〉是題目那首。第 3 軌〈行星〉與第 8 軌〈絕地花園〉都是先行單曲後來收進來的，後者找了廖文強合唱，是全碟唯一的對唱。中段〈你討厭也沒關係〉與〈我是你的Bling Bling〉把語氣放輕，末段〈再說〉與〈我還沒有作好被打倒的準備〉收得最重。串流側標為 explicit，歸「華語流行樂」。",
+  "keyTracks": [
+   "愚者",
+   "行星",
+   "絕地花園 (feat. 廖文強)"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2020,
+   "recorded": null,
+   "note": "一致，2020。release-group first-release-date 2020-05-20，唯一 release 同日 XW 數位；串流側 releaseDate 2020-05-20、℗ 2020 相符。**沒有實體版建檔**，無數位／實體時差問題。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：全數屬實，未擋下任何一處。** label-info 實查是 何樂音樂（清單上收的一家、第 297 條已併家），獨立閘成立、不需主線再裁。⚠ **唯一 release 沒有 barcode**（欄位 null）。｜**CAA 缺封面，本層已補完第三種查法**：release-group 端點 404、封面只剩串流一條。**驗證策展層第 300 條**：`search` 對本張回 0 筆、要走 artistId 目錄才撈到 1532398480——本層直查 collectionId 回 11 軌，**串流採信 1532398480**：曲名逐軌同序、℗ 2020 何樂音樂Pqpmusic 與 label-info 同一方、releaseDate 同日。**這個 collectionId 同時是封面與試聽的唯一來源，Apple 側失效就兩邊都沒有。**｜**驗證策展層擋下的兩個假陽性**：`1465230182「鸡丁」`與`1561323690「雞丁 Kidding」`——主唱藝名與樂團同名的干擾，實查確認本張是 1532398480，兩者不採。｜**獎項已逐項分開**：第 32 屆金曲獎（2021）最佳新人獎**入圍**；條目未載得獎，本層亦未查到得獎紀錄，**寫作層不得寫成「拿下」**。｜**人名邊界**：主唱 雞丁（邱建豪）、吉他 阿哲（郭哲成）與 建廷（李建廷）、製作人 李宗軒、客座 廖文強 都有具名來源背書（廖文強另在串流側曲名欄登錄），可寫。第四位成員 Look 只有藝名、無本名來源，**寫藝名可以、不得補本名**。｜**「募資發行」這一點**：條目寫《愚者》是募資方式發行，但**未載平台、金額或達成率**，**只能寫「以募資方式發行」這句，不得補任何數字**（與本批瑪啡因那張的募資數字不同，那張有完整募資頁背書）。｜**反同構提醒**：本批 3 張何樂音樂的碟，**本張的主結構走「九支單曲之後才生出的第一張專輯 ＋ 塔羅牌愚者」，不要走廠牌敘事**；⚠ 另外**瑪啡因那張也走募資**，兩張不要都把募資寫成主結構——**本張的募資只是一句話帶過**。｜這是 Album、不是選輯。"
+ },
+ {
+  "key": "desc4:洪佩瑜|明室",
+  "artist": "洪佩瑜",
+  "album": "明室",
+  "facts": [
+   {
+    "f": "release-group 4df3ba93 的欄位：title「明室」、**artist-credit 寫成「洪珮瑜」（斜玉旁的珮）**、first-release-date 2022-10-13、primary-type Album、secondary-types 空。轄下**只有一個 release** 7cdd4d51：2022-10-13 TW Official、Digital Media 10 軌、**barcode 欄 null**、label-info 記 **何樂音樂有限公司**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4df3ba93-b659-4c42-9eee-ec07416fa0db&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "artist 實體 ee08ac3e 的**主名是「洪佩瑜」（人字旁的佩）**：Person／Kaohsiung／1990-12-10／disambiguation「Taiwanese singer」，aliases 是「Pei-Yu Hung」與「洪佩瑜」。**名下只有《明室》一個 release-group。**",
+    "src": "https://musicbrainz.org/ws/2/artist/ee08ac3e-dff3-4574-8d8c-10990b7740be?fmt=json&inc=release-groups+aliases&limit=100"
+   },
+   {
+    "f": "《明室》是洪佩瑜的**第一張個人專輯**，製作人 陳建騏，發行前她已有十餘年沒有推出新作。這張碟**入圍第 34 屆金曲獎（2023）共八項**，其中包括最佳新人獎、最佳華語專輯獎與最佳華語女歌手獎；⚠ **八項裡只有最佳新人獎得獎，其餘為入圍未得獎。**",
+    "src": "https://www.cna.com.tw/news/amov/202306300061.aspx"
+   },
+   {
+    "f": "串流側（tw 店面 collectionId 1647124261）10 軌與資料庫端逐軌同序，**曲名以繁體寫成**：1〈明室〉2〈不在一起就不會分開〉3〈污漬〉4〈你是自由的〉5〈LET IT BLEED〉6〈躲貓貓〉7〈廢到月亮〉8〈嗨!我回來囉 (feat. Michael Kaneko)〉9〈無慣例的早晨〉10〈Passenger Side〉。℗ 行記 **2022 Sorekara Music Co., Ltd. under exclusive license to Pourquoi Pas Music Limited**——後者正是 何樂音樂有限公司 在資料庫端註記的英文名 Pourquoi pas music。曲風欄歸「華語流行樂」。",
+    "src": "https://itunes.apple.com/lookup?id=1647124261&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "資料庫端的十軌曲名各帶一個英文副題：〈明室 (Silver Lining)〉〈不在一起就不會分開 (Anything But)〉〈污漬 (Markings)〉〈你是自由的 (My Generation)〉〈LET IT BLEED〉〈躲貓貓 (If You Find Me)〉〈廢到月亮 (Fly To The Moon)〉〈嗨！我回來囉 (Hello, It's Me)〉〈無慣例的早晨 (Unconventional Mornings)〉〈Passenger Side〉。**十軌裡有八軌配了英文副題**，碟名對應的是 Silver Lining。",
+    "src": "https://musicbrainz.org/ws/2/release/7cdd4d51-d043-4e21-9344-7970f4354620?fmt=json&inc=recordings+media"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡八軌各配一個英文副題，碟名〈明室〉對到的是 Silver Lining",
+   "沉了十多年才交出第一張個人專輯，一口氣入圍八項、拿下最佳新人"
+  ],
+  "sound": "十軌，資料庫端只有數位一種形態。編曲留白多、人聲位置壓得很近，十軌裡有八軌配了英文副題。〈明室〉開場點題，〈不在一起就不會分開〉是先行的那首，〈污漬〉與〈你是自由的〉把語氣往下壓。第 5 軌〈LET IT BLEED〉是全碟唯一全英文題名的自作曲，第 8 軌〈嗨!我回來囉〉找了 Michael Kaneko 客座，是碟裡最鬆的一段。〈無慣例的早晨〉與〈Passenger Side〉收尾。串流側歸「華語流行樂」。",
+  "keyTracks": [
+   "明室",
+   "不在一起就不會分開",
+   "LET IT BLEED"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2022,
+   "recorded": null,
+   "note": "一致，2022。release-group first-release-date 2022-10-13，唯一 release 同日 TW 數位；串流側 releaseDate 2022-10-13、℗ 2022 相符。**獎項是 2023 年（第 34 屆金曲獎），與發行年 2022 不同**，寫作層不要把 2023 誤當發行年。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層第 295 條：完全成立，未翻案。** 實查：RG 的 **artist-credit 是「洪珮瑜」（珮，斜玉旁）**，但該 credit 指向的 artist 實體 ee08ac3e **主名是「洪佩瑜」（佩，人字旁）**、aliases 裡也是「洪佩瑜」，店面 tw 用的同樣是「洪佩瑜」。**掛名取「洪佩瑜」正確。** ⚠ **兩字在 NFKC 下摺不掉，日後去重兩種都要 grep**（策展層已警告，本層確認）。｜⚠ **本層新抓到、策展層沒記的一處（很重要）**：**資料庫端這筆 release 的十軌曲名裡有六軌是用簡體字建檔的**（第 2、3、6、7、8、9 軌），正字應為 不在一起就不會分開／污漬／躲貓貓／廢到月亮／嗨！我回來囉／無慣例的早晨，與串流側 tw 的寫法一致。**本稿的 facts、sound 與 keyTracks 已全部改用繁體正字；寫作層若回頭照抄資料庫端的曲名欄，整批會被 QA 判成簡體字。**｜**CAA 缺封面，本層已補完第三種查法**：release-group 端點 404、封面只剩串流一條。**串流採信 1647124261**：10 軌對 10 軌、曲序一致、℗ 行的 Pourquoi Pas Music Limited 正是 何樂音樂有限公司 在資料庫端 annotation 裡的英文名（第 297 條）。**這個 collectionId 同時是封面與試聽的唯一來源。**｜**獎項已逐項分開（本層第三處把關）**：第 34 屆金曲獎（2023）**入圍八項、得獎一項**。**得獎的是最佳新人獎**；本層以中央社報導與另一則報導標題交叉確認得獎項目。其餘七項的完整類別（另有來源列出年度歌曲獎、年度專輯獎、最佳專輯製作人獎、最佳作詞人獎、最佳作曲人獎），**只有單一二手來源、未能以入圍名單正本核對，本稿只寫「共八項、其中包含最佳新人獎／最佳華語專輯獎／最佳華語女歌手獎」，不逐項展開**。**絕不可寫成「拿下八項」。**｜**人名邊界**：製作人 陳建騏 有中央社報導背書，可寫；客座 Michael Kaneko 有串流側曲名欄背書，可寫（西方拉丁名照原文）。｜**廠牌**：何樂音樂有限公司（＝何樂音樂，第 297 條已併家、清單上收的一家），獨立閘成立、不需主線再裁。⚠ ℗ 行另有 **Sorekara Music Co., Ltd.**（授權方）與 Pourquoi Pas Music Limited（被授權方），**不要把 Sorekara 誤寫成大廠或第三家發行商**。｜⚠ **資料庫端未建實體版，但市面上確有黑膠**（本層在唱片通路頁面看到彩膠版本）。**軌數與載體一律以資料庫端與串流側為準，不要寫黑膠。**｜**反同構提醒**：本批 3 張何樂音樂的碟，**本張的主結構走「沉寂十餘年後的第一張 ＋ 八軌英文副題 ＋ 金曲獎八項一勝」，不要走廠牌敘事**。｜這是 Album、不是選輯。"
+ },
+ {
+  "key": "desc4:Hello Nico|熟悉的荒涼",
+  "artist": "Hello Nico",
+  "album": "熟悉的荒涼",
+  "facts": [
+   {
+    "f": "release-group 8d40efb7 的欄位：title「熟悉的荒涼」、artist-credit「Hello Nico」、primary-type Album、secondary-types 空。轄下**只有一個 release** 2a299fe9：**2015-02-23** TW Official、CD 11 軌、barcode 4718487520077、label-info 記 **黑市音樂、catno BMMP010**。⚠ **這個日期與其他來源不同**：條目與店面都記 **2015 年 3 月 1 日**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8d40efb7-f272-4679-96b4-46bb915d33be&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "《熟悉的荒涼》是 Hello Nico 的**第一張專輯**，2015 年 3 月 1 日由 黑市音樂 發行，11 軌、全長 51 分 07 秒。**這張碟讓 Hello Nico 入圍第 27 屆金曲獎最佳新人獎**——⚠ **是提名、不是得獎**。碟中有四首拍了 MV：〈接下來如何〉〈花〉〈哭泣的橄欖樹〉〈荒蕪〉。",
+    "src": "https://zh.wikipedia.org/zh-hk/%E7%86%9F%E6%82%89%E7%9A%84%E8%8D%92%E6%B6%BC"
+   },
+   {
+    "f": "藝人端點：Hello Nico 是 Group／Taiwan、life-span.begin 2013。名下只有這一張 Album，其餘是 2014-06《浮游城市》EP、2016-07《閉上眼睛》EP、2024-09-10《Plan B：如果回來，我們一起看海》EP 與兩支單曲。**這是他們唯一一張正規專輯。**",
+    "src": "https://musicbrainz.org/ws/2/artist/a1a2c4f7-e781-45b1-8a49-e4b2955bd561?fmt=json&inc=release-groups+aliases&limit=100"
+   },
+   {
+    "f": "串流側（tw 店面 collectionId **1814799851**）11 軌與資料庫端逐軌同序：1〈規格化的城市、商品、人〉2〈你是被抹去的那一段風景〉3〈荒蕪〉4〈辮子〉5〈別等我回來〉6〈布蘭琪〉7〈哭泣的橄欖樹〉8〈用靈魂交換肌膚之上〉9〈花〉10〈接下來如何〉11〈陌生的房間陌生的下午〉。℗ 行記 **2015 BLACK MARKET MUSIC COMPANY LIMITED**，releaseDate **2015-03-01**，曲風欄歸「另類音樂」。",
+    "src": "https://itunes.apple.com/lookup?id=1814799851&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "十一軌 51 分鐘，題名普遍長且完整成句——首軌〈規格化的城市、商品、人〉用了頓號斷成三段、次軌〈你是被抹去的那一段風景〉是整句話、末軌〈陌生的房間陌生的下午〉把同一個形容詞用兩次。碟名那個詞本身沒有出現在任何一軌的標題裡。",
+    "src": "https://musicbrainz.org/ws/2/release/2a299fe9-4a89-4cd6-9f4c-3b77fdc54a06?fmt=json&inc=recordings+media"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌的曲名幾乎都是整句話，首軌用兩個頓號把城市、商品、人切成三段",
+   "碟名那四個字在十一軌裡一次都沒出現"
+  ],
+  "sound": "十一軌、51 分 07 秒，資料庫端只有 CD 一種形態。曲子長、鋪陳慢，人聲與吉他的殘響拉得很開。〈規格化的城市、商品、人〉開場就把整張的視角定在都市裡，〈荒蕪〉與〈辮子〉往內收，〈布蘭琪〉是中段最有敘事感的一首。〈哭泣的橄欖樹〉與〈用靈魂交換肌膚之上〉之後，〈花〉與〈接下來如何〉是全碟最開的兩段，末軌〈陌生的房間陌生的下午〉收在最低的地方。串流側歸「另類音樂」。",
+  "keyTracks": [
+   "規格化的城市、商品、人",
+   "荒蕪",
+   "接下來如何"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2015,
+   "recorded": null,
+   "note": "⚠ **日期兩說，年份無爭議、都是 2015。** 資料庫端唯一 release 記 **2015-02-23** TW CD；條目與串流側都記 **2015-03-01**（串流側 releaseDate 亦 2015-03-01、℗ 2015）。**兩比一，本層採 2015-03-01 為發行日**，資料庫端那個 2 月 23 日未能查到旁證、疑為預購或建檔誤植。**正文若要寫到月份就寫 3 月，不要寫 2 月。** 錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：全數屬實，未擋下任何一處，另抓到一處日期不一致。**｜**日期不一致（第 262 條的形狀）**：資料庫端 2015-02-23 vs 條目與店面 2015-03-01。**年份不受影響**，但寫月份要小心，見 yearVerified。｜**串流採信 1814799851**：11 軌對 11 軌、曲序完全一致，℗ 2015 BLACK MARKET MUSIC COMPANY LIMITED 與 label-info 黑市音樂 同一方。**有固定試聽來源。**｜**驗證策展層「18 億號段是重新上架」的觀察：成立**。collectionId 1814799851 落在 18 億號段、遠晚於 2015 年的發號區間，是後來重新上架的版本；但 ℗ 年仍是 2015、軌目與日期都對得上原盤，**採信不受影響**。｜**驗證策展層擋下的假陽性**：池中的 Nico（德國歌手）五張碟是「Hello **Nico**」的子字串誤命中，實查確認全假——**這五筆與本團無關**。｜**獎項已逐項分開**：第 27 屆金曲獎（2016）最佳新人獎**入圍未得獎**（條目明寫「提名」）。⚠ **本批另有兩張碟的樂團也入圍過金曲獎最佳新人獎**（理想混蛋第 32 屆、洪佩瑜第 34 屆），**三張卡不要都把最佳新人獎寫成主結構**——本張的主結構請走曲名與碟的長度感。｜**人名邊界**：條目列的詞曲作者 詹宇庭 與 李詠恩 **在條目上沒有任何參考來源**（條目自陳無來源），依裁定 241／250 **不得寫進正文**。另有一則零售通路文案稱母帶由 Ted Jensen 在紐約 Sterling Sound 完成、混音動用八位業界人士、經四間錄音室與半年製作——**單一來源、且是宣傳文案，本稿一律不採**，在此記錄以備覆查。｜**廠牌**：黑市音樂 BMMP010、barcode 4718487520077（471 台灣段），在已判清單上，獨立閘成立、不需主線再裁。｜**軌數（第 251 條）**：CD 11 軌／串流 11 軌，資料庫端無數位版建檔。｜這是 Album、不是選輯。"
+ },
+ {
+  "key": "desc4:倒車入庫|庸人自擾",
+  "artist": "倒車入庫",
+  "album": "庸人自擾",
+  "facts": [
+   {
+    "f": "release-group 2a19725d 的欄位：title「庸人自擾」、artist-credit「倒車入庫」、first-release-date 2018-08-24、primary-type Album、secondary-types 空。轄下兩個 release、軌序相同：TW CD e7ff646b（**2018-08-24**、10 軌、barcode 4718487520114、**label-info 欄空的**）與 XW 數位 013d7732（**2019-04-12**、10 軌、barcode 4710243776704、label-info **黑市音樂**）。**實體先出，數位隔了將近八個月才上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2a19725d-bc94-464d-b92c-643aae2b9851&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "倒車入庫是 2013 年成立於台北六張犁的車庫龐克樂團，以生猛的車庫搖滾為底、配上辛辣甚至帶暴力感的詞句；編制裡有主唱 里鳳 與吉他手 阿愷。",
+    "src": "https://vocus.cc/article/68d5aa36fd89780001b70f55"
+   },
+   {
+    "f": "**這張碟的裝幀讓設計者入圍第 30 屆金曲獎（2019）最佳裝幀設計獎**：入圍名單上的登錄是「陳世川《庸人自擾》」。⚠ **是入圍、沒有得獎**——該屆最佳裝幀設計獎的得獎者是 黃家賢、楊豐銘 的《Hold That Tiger／擒虎記》。⚠ 而且**這個獎表彰的是唱片裝幀設計、掛的是設計者的名字，不是樂團**。",
+    "src": "https://www.cna.com.tw/news/firstnews/201905155002.aspx"
+   },
+   {
+    "f": "藝人端點：倒車入庫是 Group／Taiwan、life-span.begin 2013、alias「Reversing Into Garage」。名下三張全是 Album——《未履莫勸》（**first-release-date 欄空白**）、2018-08-24《庸人自擾》、2022-06-27《苦中作愛》。",
+    "src": "https://musicbrainz.org/ws/2/artist/c1a97722-63c6-4d36-9c58-0d4aa66c7ef8?fmt=json&inc=release-groups+aliases&limit=100"
+   },
+   {
+    "f": "串流側（tw 店面 collectionId 1800752352）10 軌與資料庫端逐軌同序：1〈前言〉2〈孜孜不倦的人〉3〈我比較適合黑暗面〉4〈大象〉5〈讓月亮曬到爆開〉6〈拿熱水來潑我吧〉7〈吃檳榔吐血死〉8〈庸人自擾〉9〈造型要故意頹廢〉10〈後記〉。**第 1 軌叫〈前言〉、第 10 軌叫〈後記〉，整張像一份被包起來的文件**；℗ 行記 **2019 BLACK MARKET MUSIC COMPANY LIMITED**，releaseDate **2019-04-12**（跟的是數位那筆），曲風欄歸「搖滾」。",
+    "src": "https://itunes.apple.com/lookup?id=1800752352&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌叫〈前言〉、最後一軌叫〈後記〉——十軌被裝訂成一份文件",
+   "碟的裝幀入圍了金曲獎，掛的卻是設計者的名字，不是樂團的"
+  ],
+  "sound": "十軌，實體先出、數位晚了將近八個月，兩版同序。車庫搖滾的粗糙質地打底，詞句直白帶刺。第 1 軌〈前言〉與第 10 軌〈後記〉把中間八首夾成一份文件。〈孜孜不倦的人〉與〈我比較適合黑暗面〉先把立場講死，〈大象〉與〈讓月亮曬到爆開〉是中段最放的兩段，〈拿熱水來潑我吧〉與〈吃檳榔吐血死〉題名最兇，第 8 軌〈庸人自擾〉是碟名那首，〈造型要故意頹廢〉之後由〈後記〉收掉。串流側歸「搖滾」。",
+  "keyTracks": [
+   "前言",
+   "庸人自擾",
+   "後記"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2018,
+   "recorded": null,
+   "note": "⚠ **兩種形態跨年，卡單取 2018 正確。** release-group first-release-date 2018-08-24＝TW 實體 CD 那筆；XW 數位是 **2019-04-12**、晚將近八個月，串流側 releaseDate 亦 2019-04-12、℗ 2019。**另有一層旁證支持 2018**：這張碟的裝幀入圍第 30 屆金曲獎（2019 年頒發，評選對象是 2018 年的發行）。**寫 2018 時不可引 2019 的 barcode 4710243776704（那是數位那筆的）。** 錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：全數屬實，未擋下任何一處。**｜**驗證策展層的年份陷阱**：策展層 `risk` 記「MB 2018-08-24／Apple 2019-04-12，會被判成兩張碟」——**不是兩張碟，是實體與數位的時差**，10 軌逐軌同序。**方向與本批多數相反：這張是實體先。**｜**串流採信 1800752352**：10 軌對 10 軌、曲序完全一致，℗ BLACK MARKET MUSIC COMPANY LIMITED 與數位版 label-info 的 黑市音樂 同一方。**有固定試聽來源。**｜**驗證策展層擋下的最像假陽性**：`1812701559《在苦中作愛,庸人自擾之:這牆現場》`——盤名把本張與同團 2022《苦中作愛》兩個碟名串在一起、且是現場盤，**實查確認本張是 1800752352，那一筆不採**。｜**獨立閘**：⚠ **TW CD 那筆的 label-info 是空的**，但數位那筆明寫 黑市音樂（清單上收的一家），且兩筆的 barcode 前綴 4718487／4710243 皆 471 台灣段、CD 的 4718487 與同廠 Hello Nico《熟悉的荒涼》4718487520077 是同一段連號。**獨立閘成立、不需主線再裁。**｜**獎項已逐項分開（本層第四處把關）**：第 30 屆金曲獎最佳裝幀設計獎**入圍未得獎**，得獎的是《Hold That Tiger／擒虎記》。⚠ **這個獎登錄的是設計者陳世川、不是樂團**，寫作層**不得寫成「樂團入圍金曲獎」**，要寫就寫「這張碟的裝幀設計入圍」。⚠ 另有一則二手來源稱本張入圍新加坡 Freshmusic Awards 最佳新樂團、同名曲入圍金音創作獎最佳搖滾單曲，**兩者都查不到屆次與名單正本，一律不寫**。｜**別搞混同團的另一張**：《未履莫勸》（`8025f43e`，**MB 連 first-release-date 都沒有**）已被策展層第四節 B 類退掉，**與本卡是兩張不同的碟**。同團 2022《苦中作愛》亦未收。｜**人名邊界**：主唱 里鳳、吉他 阿愷 有具名專訪背書，可寫；⚠ **另有兩則來源給了成員本名，但同一個吉他手出現「鄭力愷」與「鄭立凱」兩種寫法、互相矛盾，依裁定 241／250 一律不寫本名**。裝幀設計 陳世川 有金曲獎入圍名單正本背書，可寫。｜這是 Album、不是選輯，也不是現場盤。"
+ },
+ {
+  "key": "desc4:怕胖團|痞得胖",
+  "artist": "怕胖團",
+  "album": "痞得胖",
+  "facts": [
+   {
+    "f": "release-group f9bda925 的欄位：title「痞得胖」、artist-credit「怕胖團」、first-release-date 2013-09-12、primary-type Album、secondary-types 空。轄下兩個 release、**同一天、同一個 barcode 4712755920293、卻掛兩家廠牌**：XW 數位 5baefa3d（**15 軌**、label-info **AsiaMuse**）與 TW CD fd656d9f（**15 軌**、label-info **Wonder Music**）。**十五軌是本組除了 The Muddy Basin Ramblers 之外最多軌的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f9bda925-cd22-4d28-bb5a-fc778cb70ebf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "怕胖團 2007 年在台中成立，最初是兩個學生（閃亮、Wee Man）組的雙人組合，**團名是「POP PUNK」的諧音**。現行編制三人：吉他兼主唱 謝侃均（閃亮）、貝斯 黃怡瑋、鼓 魏敦華。《痞得胖》是他們**第二張專輯**，前一張是 2009 年的《你怕胖嗎?》。",
+    "src": "https://zh.wikipedia.org/zh-tw/%E6%80%95%E8%83%96%E5%9C%98"
+   },
+   {
+    "f": "**碟裡第 10 軌〈X〉的 MV 在 2013 年拿下高雄市政府文化局的南方之星導演獎與南方之星影像技術獎**——⚠ **兩項都是得獎，不是入圍。**",
+    "src": "https://zh.wikipedia.org/zh-tw/%E6%80%95%E8%83%96%E5%9C%98"
+   },
+   {
+    "f": "串流側（tw 店面 collectionId 1395745080）15 軌與資料庫端逐軌同序：1〈長不大的男孩〉2〈小氣鬼喝涼水〉3〈One Day Song〉4〈嘟嘟嘟嘟嘟〉5〈咕咕雞〉6〈流浪王子〉7〈月亮不會亮〉8〈只有我的旁邊 旁邊沒有人〉9〈我們在試音〉10〈X〉11〈我想要Macbook Pro〉12〈到底還要等多久〉13〈我不想回家〉14〈寫了一本書給你〉15〈流浪王子 (鋼琴版)〉。℗ 行記 **2013 Wonder Music Co. Ltd.**，releaseDate 2013-09-12 同日，曲風欄歸「另類音樂」。**末軌是第 6 軌〈流浪王子〉的鋼琴版，同一首在碟裡出現兩次。**",
+    "src": "https://itunes.apple.com/lookup?id=1395745080&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點：怕胖團是 Group／Taiwan、life-span.begin 2007、aliases「PAPUN BAND」與「Pa Pun Band」。名下四張 Album（2009《你怕胖嗎?》、2013《痞得胖》、2016《青春只差兩撇》、2019《2049》）、一張 EP（2021《V》）與十支單曲。",
+    "src": "https://musicbrainz.org/ws/2/artist/b3982564-89ad-4300-9033-e06fcb6bd32f?fmt=json&inc=release-groups+aliases&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "團名是「POP PUNK」的諧音，兩個台中學生 2007 年組起來的",
+   "十五軌裡有一首〈我想要Macbook Pro〉，而末軌是把第 6 軌重彈一次的鋼琴版"
+  ],
+  "sound": "十五軌，數位與 CD 同日發行、同序，是本組軌數第二多的一張。pop punk 的直線節奏，題名口語、多半是一句話。〈長不大的男孩〉開場定調，〈小氣鬼喝涼水〉與〈嘟嘟嘟嘟嘟〉最跳，〈咕咕雞〉與〈我想要Macbook Pro〉把玩笑開到底。第 6 軌〈流浪王子〉是碟中最完整的一首歌，末軌〈流浪王子 (鋼琴版)〉把它重彈一次收尾。〈我們在試音〉與只有一個字母的〈X〉夾在中段。串流側歸「另類音樂」。",
+  "keyTracks": [
+   "長不大的男孩",
+   "流浪王子",
+   "X"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2013,
+   "recorded": null,
+   "note": "一致，2013。release-group first-release-date 2013-09-12，數位與 CD 兩筆 release **同為 2013-09-12**；串流側 releaseDate 2013-09-12、℗ 2013 相符。**沒有數位早於實體的問題。** 錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：全數屬實，未擋下任何一處，並補完第三種查法。**｜**驗證策展層第 300 條**：該條記「`search` 對本張回 0 筆，靠 artistId 目錄才撈到 1395745080（2013-09-12、15 軌）」——本層直查 collectionId 回 15 軌，**串流採信 1395745080**：曲名逐軌同序（含末軌的鋼琴版）、releaseDate 與兩筆 release 同日、℗ 2013 Wonder Music Co. Ltd. 與 CD 那筆的 label-info 同一方。**探測層把本張判成 unavailable，實際上有固定試聽來源，請下游改判。**｜**驗證策展層擋下的假陽性**：`1605116289「怕胖團 閃亮」`（主唱個人掛名）——實查確認那是另一個 artist 實體，本張不採。｜**廠牌（要請主線裁的一條，本層補到證據）**：策展層第 298 條把 **Wonder Music**（`c1007ca3`，Imprint／Taiwan／2003、barcode 4712755）列為清單外，並記「與 彎的音樂有限公司 `c9fe511b` 是兩個 MB 實體、是否同一家未經查證」。**本層仍未能查證兩者是否同一家，不自判。** 但可以確定的是：**本張的獨立閘可以完全靠 AsiaMuse 亞神（清單上收的一家）過**——數位那筆的 label-info 就是 AsiaMuse，且兩筆 release **同一天、共用同一個 barcode 4712755920293**，是同一次發行掛兩個名字。**Wonder Music 的收退不影響本卡。**｜**獎項已逐項分開（本層第五處把關）**：2013 年高雄市政府文化局的 **南方之星導演獎** 與 **南方之星影像技術獎**，**兩項都是得獎**。⚠ **但獎頒給的是第 10 軌〈X〉的 MV、不是這張專輯**，寫作層要把對象寫清楚，**不得寫成「專輯得獎」**。｜**人名邊界**：三位現行成員（謝侃均／黃怡瑋／魏敦華）與主唱藝名 閃亮、創團另一人的藝名 Wee Man 都有條目背書，可寫；**製作人查無欄位背書，不寫**。⚠ 條目記的是**現行**編制，**未載 2013 年當時的編制是否相同**，寫作層要寫成員就綁樂團、不要寫成「錄這張碟的三個人」。｜**軌數（第 251 條）**：CD 15 軌／數位 15 軌／串流 15 軌，三者一致。｜這是 Album、不是選輯（末軌的鋼琴版是同碟的另一個版本，不使本碟成為選輯）。"
+ },
+ {
+  "key": "desc4:Vast & Hazy|求救訊號",
+  "artist": "Vast & Hazy",
+  "album": "求救訊號",
+  "facts": [
+   {
+    "f": "release-group 6b6d45ea 的欄位：title「求救訊號」、artist-credit「Vast & Hazy」、first-release-date 2018-06-07、primary-type Album、secondary-types 空。轄下兩個 release、**同一天、盤名與曲名寫法卻不同**：XW 數位 1cf080df（10 軌、純中文曲名、barcode 4713108188858、**label-info 欄空的**）與 TW CD 4fd6df2d（10 軌、**title 是《求救訊號 I'm Not OK》**、十軌全部中英並列、label-info **Team Ear Music、catno TEM00032**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6b6d45ea-30d0-47cd-aade-ccb78e104c5f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Vast & Hazy 是雙人編制：主唱 顏靜萱（咖咖）與吉他手 林易祺，兩人都寫歌，並分任專輯企劃與製作統籌。《求救訊號 I'm Not OK》是他們**第一張錄音室專輯**，2018 年 6 月 7 日發行，10 軌、43 分鐘，走的是把民謠、搖滾、電子與弦樂混起來的路子；團名的意思是「浩瀚無邊、朦朧模糊」。發片時在 Legacy 連辦兩天千人場、票都售罄。",
+    "src": "https://blow.streetvoice.com/40511/"
+   },
+   {
+    "f": "**這張碟讓 Vast & Hazy 入圍第 30 屆金曲獎（2019）最佳演唱組合獎**，入圍名單上的登錄是「Vast & Hazy（顏靜萱;林易祺）《求救訊號》」。⚠ **是入圍、沒有得獎**——該屆最佳演唱組合獎的得獎者是 椅子樂團 的《Lovely Sunday 樂芙麗聖代》。",
+    "src": "https://www.cna.com.tw/news/firstnews/201905155002.aspx"
+   },
+   {
+    "f": "實體 CD 那一版的十軌全部中英並列，而且中文之間刻意插了空格：〈求救訊號 I'm Not OK〉〈我想 成為你 Help Me Out〉〈故 障 Overloaded〉〈關於 青春 BPM〉〈指 向 你的線索 Where Are You〉〈尋光 小路 Explorer〉〈拾 起 Move On〉〈下次 見 Perfect Time〉〈Yet,〉〈獨一 The One〉。**數位版與串流側則把空格與英文全部拿掉，只留〈求救訊號〉〈我想成為你〉這種乾淨的中文題。**",
+    "src": "https://musicbrainz.org/ws/2/release/4fd6df2d-1b90-4d20-8b01-4e0ba9480e3f?fmt=json&inc=recordings+media"
+   },
+   {
+    "f": "串流側（tw 店面 collectionId 1392968693）10 軌與數位版逐軌同序，**artistName 建成「VH (Vast & Hazy)」**；℗ 行記 **2018 TEAM EAR MUSIC**，releaseDate 2018-06-07 同日，曲風欄歸「另類音樂」。第 9 軌〈yet,〉是全碟唯一以逗號結尾的曲名，同名單曲早兩個月先發過（2018-04-27）。",
+    "src": "https://itunes.apple.com/lookup?id=1392968693&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "CD 版十軌的中文題全部被空格拆開——〈故 障〉〈拾 起〉〈下次 見〉，數位版又把空格全收回去",
+   "兩個人的團，一個唱一個彈吉他，第一張專輯就在 Legacy 連辦兩天千人場"
+  ],
+  "sound": "十軌、43 分鐘，數位與實體同日。兩人編制，民謠的底子上疊搖滾、電子與弦樂，人聲是整張的重心。〈求救訊號〉開場就把題目講明，〈我想成為你〉與〈故障〉接著把狀態寫下去，〈關於青春〉是中段最快的一段。〈指向你的線索〉與〈尋光小路〉往外找出口，〈拾起〉與〈下次見〉開始收，第 9 軌〈yet,〉是全碟唯一以逗號結尾的曲名，末軌〈獨一〉收尾。串流側歸「另類音樂」。",
+  "keyTracks": [
+   "求救訊號",
+   "關於青春",
+   "yet,"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2018,
+   "recorded": null,
+   "note": "一致，2018。release-group first-release-date 2018-06-07，數位與 CD 兩筆 release **同為 2018-06-07**；串流側 releaseDate 2018-06-07、℗ 2018 相符。**沒有數位早於實體的問題。** 獎項是 2019 年（第 30 屆金曲獎），與發行年不同。錄音年未登錄。"
+  },
+  "notes": "**這一張是策展層第 298 條「整位未收、交主線裁」清單裡的碟，後來被收進卡單——本層據此逐項覆核了廠牌與身分，結論是可以收。**｜**廠牌**：TW CD 的 label-info 是 **Team Ear Music、catno TEM00032**，串流側 ℗ 行同樣是 TEAM EAR MUSIC；**Team Ear Music／添翼創越工作室 已在 c-127 的已判清單上（收）**，獨立閘成立、不需主線再裁。⚠ **XW 數位那筆的 label-info 是空的**，barcode 4713108188858（471 台灣段）與同批 夜貓組《健康歌曲》的 4713108178903 是同一段連號。｜**串流採信 1392968693**：10 軌對 10 軌、曲序與數位版完全一致，℗ TEAM EAR MUSIC 與 CD 那筆的 label-info 同一方。**有固定試聽來源。**｜⚠ **盤名兩說（第 251／262 條的合體）**：**RG 與數位版的 title 是《求救訊號》、TW CD 的 title 是《求救訊號 I'm Not OK》**，而且 CD 版十軌全部中英並列、中文之間還插了空格（〈我想 成為你 Help Me Out〉）。**卡單取《求救訊號》正確**（RG title＋數位版＋串流側三者一致）；「求救訊號 I'm Not OK」與「I'm Not OK」都要進 queryAlias。**寫作層引曲名一律用數位版／串流側的乾淨中文寫法，不要抄 CD 版那種帶空格的排版。**｜⚠ **掛名字串對不上**：串流側 artistName 是「VH (Vast & Hazy)」、資料庫端 alias 是「VH」，**配對只能用 collectionId**。｜**獎項已逐項分開（本層第六處把關）**：第 30 屆金曲獎最佳演唱組合獎**入圍未得獎**，得獎的是 椅子樂團《Lovely Sunday 樂芙麗聖代》。⚠ **椅子樂團正是本批 a 組的掛名之一**，兩組的卡若都提到第 30 屆金曲獎，敘述必須一致、不得寫反。｜**人名邊界**：**顏靜萱與林易祺兩個本名有金曲獎入圍名單正本背書（名單登錄為「Vast & Hazy（顏靜萱;林易祺）」），可寫**；主唱藝名 咖咖 另有具名報導背書，可寫。⚠ **林易祺同時是本批第 5 張 黃宇寒《有時有日》的製作統籌**——兩張卡可以互相呼應，但**不要把兩張都寫成「林易祺的故事」**（本張的主結構走雙人編制與盤名兩說，黃宇寒那張走客語與獎項）。｜**軌數（第 251 條）**：CD 10 軌／數位 10 軌／串流 10 軌，三者一致。｜這是 Album、不是選輯，也不是現場盤。"
  }
 ]
