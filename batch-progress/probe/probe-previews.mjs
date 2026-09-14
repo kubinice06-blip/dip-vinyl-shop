@@ -141,7 +141,8 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   c124: ['us', 'gb', 'de', 'fr', 'nl', 'tr', 'ae', 'ca'],
   c125: ['es', 'pt', 'fr', 'gb', 'us', 'de', 'br', 'mx'],
   // c-126：台灣獨立 2010 後，tw 優先，再走華語圈其他店面與美日。
-  c126: TWN };
+  c126: TWN,
+  c127: TWN };
 
 const cards = [];
 for (const b of BATCHES)
