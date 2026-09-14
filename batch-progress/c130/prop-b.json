@@ -1,0 +1,430 @@
+[
+  {
+    "artist": "Dezerter",
+    "album": "Jeszcze żywy człowiek",
+    "year": 1984,
+    "genres": [
+      "rock"
+    ],
+    "label": "Tank Records 003（PL 1984 卡帶 17 軌，MB 未登記 barcode）；同 RG 另有 2011-11-07 Mystic Production MYSTCD 194 CD 29 軌（barcode 5903427875204）與三筆 status=Bootleg 的卡帶",
+    "why": "Dezerter 是這條線的骨幹團（MB artist 2c9a8e87-aee9-4ad8-9065-34f176f9b860，Group／PL／life-span.begin 1982-09-15，disambiguation「Polish Punk Rock Band」，名下 32 個 release-group），而這張是他們名下最早的整套錄音出版品。回問 release 端點（inc=media+labels）拿到五筆：1984 年的原版是 **Tank Records 編號 003 的卡帶、17 軌**，不經任何國營廠牌；2011-11-07 Mystic Production MYSTCD 194 是 29 軌 CD；其餘三筆 status 都是 Bootleg（一筆掛 Communist Bloc Records - Tapes、一筆掛 [no label]、1991 那筆掛 Fala Ⓕ025）。secondary-types 含 Live，依第 253 條要收，而簡報明寫 Jarocin 那一代的現場盤是這條線的核心物證；同一張碟同時是「自製卡帶」與「現場錄音」兩種物證，在本組 22 張裡只有這張與 Moskwa《Nigdy!》做得到。實掃 seed_cards.json 全 24,138 列（含未上架 onboarding-manifest-*.json 與 c47/cand-all.json），子字串雙向比對查 Dezerter 只回一筆 `?te — A Bedroom of One's Own (2020)`——那是摺鍵把 `?te` 剝成 `te` 之後的假陽性，看整個掛名字串就知道不是本團；池中 Dezerter 0 張，與簡報「搖滾與龐克那一側 10/10 零命中」的實測一致。",
+    "risk": "⚠ 這張的載體是本卡最該傳下去的事實：**1984 年原版只有卡帶、廠牌是 Tank Records、MB 沒有任何 1984 年的黑膠 release**，行文不得寫成「發行黑膠」。另外三筆 Bootleg 卡帶（含 Communist Bloc Records - Tapes 與 [no label]）是地下轉錄流通的直接物證，但 **status=Bootleg 的版本不得當成發行版引用**。⚠ 波蘭文變音：盤名 `Jeszcze żywy człowiek` 的 ż 與 ł 一個都不能省，去變音的 `Jeszcze zywy czlowiek` 只能進 queryAlias；chk-prop 的摺鍵會把 ż→z、ł 卻摺不掉，兩種寫法在池中是不同的鍵。⚠ 短掛名回問（第 179／250 條）：`artist?query=artist:\"Dezerter\"&limit=25` 全域只回 1 筆，score 排序不採，以 type=Group／country=PL／life-span.begin=1982-09-15／disambiguation 判定即本團，MB 端無同名實體。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search`（店面 pl 與 us、掛名＋盤名）兩個店面都回同一筆 collectionId **477095191「Dezerter — Jeszcze Żywy Człowiek」2011 年 29 軌**，另有 1847597464 同名 2011 年 29 軌——**兩筆都對應 2011 年那張 29 軌 CD，不是 1984 年 17 軌的卡帶**，年份與軌數都不能拿來覆蓋本卡；店面盤名的大小寫也與 MB 不同（Żywy Człowiek 對 żywy człowiek）。這只是第 254 條三種查法裡的第一種，藝人目錄 lookup 與 collectionId 直查留給研究層，策展層只寫觀察。",
+    "mbNote": "釘 release-group 3541a252-6d94-47e5-a061-74089e2c445b。回問 release-group 端點（inc=artist-credits）：title「Jeszcze żywy człowiek」、artist-credit 單一「Dezerter」、first-release-date 1984、primary-type Album、secondary-types [Live]（現場錄音，演奏年代即 1984 年前後）。回問 release 端點（inc=media+labels）得五筆：20d52978-5cca-44bb-8094-a76e3fb7539a（1984 PL Official，Cassette 17 軌，Tank Records 003）、14f27146-aed6-40d9-acca-25e6fdf62f28（2011-11-07 PL Official，CD 29 軌，Mystic Production MYSTCD 194，barcode 5903427875204）、abc99755-b5a0-4f52-ba91-616c029b76ab（1991 PL **Bootleg** Cassette 17 軌 Fala Ⓕ025）、563cf3e5-42df-4b87-92d6-9078763e1470（PL Bootleg Cassette 24 軌 Communist Bloc Records - Tapes）、5adafe74-1ad1-49c5-8408-adc7edf98e86（PL Bootleg Cassette 21 軌 [no label]）。藝人 MBID 2c9a8e87-aee9-4ad8-9065-34f176f9b860（名下 32 個 RG）。刻意不釘：7b7b165f-1b49-499f-889b-530135073a97《Izolacja》1986（artist-credit 是「Dezerter & Kapele C.C.C.P.」合掛名，依裁定 258 與本批第 321 條不收）、7efd07dc-ef6c-39a7-8d16-54a7bab01e05《Ku przyszłości》1983（EP，不收）、73e92ac8-87c7-4a48-a043-00d9e7e93965《Dezerter》1985（Compilation+Live，與本批 Underground Out of Poland 同素材，只取一種）、dfc83c78-b67d-4fa9-8add-adef40004150《20 Lat Po Wojnie - Live In Jarocin 1987》（無 first-release-date）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Dezerter；Jeszcze żywy człowiek；Jeszcze zywy czlowiek；Jeszcze Żywy Człowiek",
+    "reissuedBy": "Mystic Production（2011 CD 29 軌）",
+    "g": "b"
+  },
+  {
+    "artist": "Dezerter",
+    "album": "Kolaboracja",
+    "year": 1987,
+    "genres": [
+      "rock"
+    ],
+    "label": "Klub Płytowy Razem RLP 020（PL 1987 12\" Vinyl 15 軌，MB 未登記 barcode）；同年另有卡帶 Polton PC-039，1991 Izabelin Studio ISCD 7、1995 Polton CDPL-066、2002 Metal Mind MMP CD 0166、2012 Mystic Production MYSTCD 221 四次再發",
+    "why": "這是 Dezerter 名下第一張正式的黑膠專輯（前面兩張 1983 的《Ku przyszłości》是 EP、1984 的《Jeszcze żywy człowiek》是卡帶），也是本組回答「1980 年代的波蘭龐克到底走哪些廠牌」這個問題最關鍵的一張：回問 release 端點得六筆，1987 年原版是 **Klub Płytowy Razem 的 RLP 020、12 吋 15 軌**——那是《Razem》週刊的唱片俱樂部，不是 Polskie Nagrania „Muza\"；同一年的卡帶版走 Polton PC-039，是 1980 年代中期開始與國營體系並行的另一家。⚠ 簡報第三節說「c-123 實測推翻過『一切經國營廠牌』」，本張是波蘭側第一個實證：Dezerter 名下四張本批要收的碟，1987 走 Klub Płytowy Razem、1989 走 PolJazz、1984 走自製卡帶 Tank Records、1987 那張合輯走美國 Maximumrocknroll——**四張沒有一張是 Muza**。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，Dezerter 池中 0 張（唯一命中 `?te` 是摺鍵假陽性）。",
+    "risk": "⚠ 盤名撞卡：Dezerter 名下另有 1989 年的《Kolaboracja II》（本組另立一卡）。兩者摺鍵不同（kolaboracja／kolaboracjaii），chk-prop 不會亮燈，**但外部比對與店面搜尋一定會互撞**——實測 Apple 店面 pl 用「Dezerter Kolaboracja」搜尋，第一筆回的就是 collectionId 1484819024《Kolaboracja II》1989 年 13 軌，本卡那筆 606806284《Kolaboracja》1987 年 15 軌排第二，另有 1830069491 同名 2013 年 15 軌；**店面搜尋的第一筆不是本卡**，研究層要靠 collectionId 直查。⚠ 廠牌名的變音：`Klub Płytowy Razem` 的 ł 不能寫成 l，catno RLP 020 的空格也照 MB 原樣。⚠ 短掛名回問（第 179／250 條）：`artist:\"Dezerter\"` 全域只回 1 筆，以 type=Group／country=PL／begin=1982-09-15／disambiguation「Polish Punk Rock Band」定位，score 不採。CAA release-group 端點 **200（1 張圖）**（實測）。Apple 兩個店面（pl／us）都命中 606806284，1987 年、15 軌，**軌數與 MB 的 1987 黑膠一致**——但那只是第一種查法，藝人目錄 lookup 與 collectionId 直查留給研究層，策展層不寫結論（第 254 條）。",
+    "mbNote": "釘 release-group 42ae4cc5-708d-3172-8864-c8acedc57fbd。回問 release-group 端點（inc=artist-credits）：title「Kolaboracja」、artist-credit 單一「Dezerter」、first-release-date 1987、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得六筆：4da6f7ff-5c80-3517-8a75-effd051fd4c0（1987 PL Official，12\" Vinyl 15 軌，Klub Płytowy Razem RLP 020）、8e423335-cb97-4af3-bceb-ee2386891215（1987 PL Official，Cassette 15 軌，Polton PC-039）、f773c85f-2f62-4774-97ba-4ac6a2d06947（1991 CD 15 軌 Izabelin Studio ISCD 7）、f00da9aa-0789-404b-a28b-169c96817001（1995 CD 15 軌 Polton CDPL-066）、9c01549b-b07b-4d08-9c5f-ca62dfcb76d8（2002 Enhanced CD 15 軌 Metal Mind MMP CD 0166，barcode 5907785021259）、50c55250-b9c7-4889-a73c-c7328f6d9102（2012-11-09 CD 15 軌 Mystic Production MYSTCD 221，barcode 5903427875716）。藝人 MBID 2c9a8e87-aee9-4ad8-9065-34f176f9b860（名下 32 個 RG）。刻意不釘：1bcc2fbd-7f48-32f9-9db0-ed51a5f4453f《Kolaboracja II》1989（本組另立一卡，不是本卡的別版）、e0c41efc-a4e1-4bce-bfdd-75571c6863fd《Kolaboracja - Live In \"Torwar\" Warsaw 1985》（現場盤、無 first-release-date，盤名會與本卡互撞）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Dezerter；Kolaboracja",
+    "reissuedBy": "Izabelin Studio（1991 CD）／Polton（1995 CD）／Metal Mind Records（2002）／Mystic Production（2012）",
+    "g": "b"
+  },
+  {
+    "artist": "Dezerter",
+    "album": "Underground Out of Poland",
+    "year": 1987,
+    "genres": [
+      "rock"
+    ],
+    "label": "Maximumrocknroll MRR 003（US 1987 12\" Vinyl 19 軌；同編號另有一筆 GB 壓片，MB 未登記 barcode）；1989 年波蘭卡帶版走 QQRYQ Tapes 006、23 軌",
+    "why": "§5.6 合輯，但它同時是這條線最直接的一件跨境物證：**波蘭戒嚴年代的龐克團，整張錄音是由美國的《Maximum Rocknroll》樂迷雜誌自營廠牌（catno MRR 003）在 1987 年壓成 12 吋黑膠發行的**，而不是任何一家波蘭廠牌；回問 release 端點得七筆，US 與 GB 各一筆 1987 年的 MRR 003（皆 19 軌），波蘭端最早的自家版本是 1989 年 QQRYQ Tapes 的 006 卡帶（23 軌，QQRYQ 是華沙的地下油印刊物與卡帶廠牌），其餘四筆是 1996／2002／2009／2019 的再發。合輯之所以是這批曲目唯一的成套形態：Dezerter 1983–86 的曲目分散在一張 EP（《Ku przyszłości》1983）、一卷自製卡帶（《Jeszcze żywy człowiek》1984）與電台／現場錄音裡，MB 名下 32 個 RG 中沒有任何一張 1983–86 的原盤 LP。實掃 seed_cards.json 全 24,138 列，子字串雙向比對：Dezerter 0 張、盤名 Underground Out of Poland 0 張。",
+    "risk": "⚠ **年份取 1987**，不取單一錄音年：依裁定 261，§5.6 卡取錄音年代之前要先問「這個年代涵蓋整套的幾分之幾」——本張 19 軌橫跨 1983–1986 的多次錄音、MB 未登記逐軌年份，沒有任何一個年份涵蓋多數，所以取資料庫真的登記的那個年份（release-group first-release-date 1987），並在 exceptionReason 裡把兩件事分開講。⚠ 盤名大小寫兩說：MB 是「Underground Out of Poland」，Apple 店面建成「Underground Out Of Poland」（大寫 Of），字串比對要放寬。⚠ 軌數三說：1987 MRR 黑膠 19 軌、1989 QQRYQ 卡帶 23 軌、1996／2002／2009 的三筆是 18 軌——**行文引軌數必須先選版本，並選 label 欄記的那一版（19 軌）**（第 251 條）。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl 回兩筆：1486588759「Dezerter — Underground Out Of Poland」2006 年 19 軌、1830151561 同名 2019 年 19 軌；us 店面只回 1486588759。**兩筆的年份都是再發年，不得拿來覆蓋本卡的 1987**（c-123 第七節那個形狀）。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group bdcb6f1a-5e02-3b82-b3b4-e218b92e1d26。回問 release-group 端點（inc=artist-credits）：title「Underground Out of Poland」、artist-credit 單一「Dezerter」、first-release-date 1987、primary-type Album、secondary-types [Compilation]。回問 release 端點（inc=media+labels）得七筆：4893de02-6619-4c60-bf2c-dfd3d3ee7c1d（1987 **US** Official，12\" Vinyl 19 軌，Maximumrocknroll MRR 003）、eb084daa-c6c8-3df7-9a30-ce8338685fb1（1987 **GB** Official，12\" Vinyl 19 軌，同編號 MRR 003）、9ef7c695-d7d0-4c23-bc34-7a6734d2956d（1989 PL Official，Cassette 23 軌，QQRYQ Tapes 006）、a5381451-bb97-3979-a7ce-9fcb8b0ab21c（1996 CD 18 軌 QQRYQ Productions QQP 064CD）、c907fb7e-b411-31c9-92f7-c9bc472bf209（2002 CD 18 軌 Pop Noise NOISE 042）、98e0802f-2a83-4ad2-a528-5c38c7b9fe5a（2009 12\" Vinyl 18 軌 Nikt Nic Nie Wie，無 catno）、af303a08-fe48-46af-be56-e54db6f54f4f（2019-10-30 CD 19 軌 Mystic Production MYSTCD 370，barcode 5902643883093）。藝人 MBID 2c9a8e87-aee9-4ad8-9065-34f176f9b860（名下 32 個 RG）。刻意不釘：73e92ac8-87c7-4a48-a043-00d9e7e93965《Dezerter》1985（Compilation+Live，同一批 1983–85 素材的另一種切法，依 c-123 第五節「同一批錄音的多種合輯只挑最權威的一種」只取本張）、0711e692-d21a-463e-b8b3-71514e1424ef《Jak powstrzymałem III wojnę światową…》1993（同形合輯，超窗口）、2d1c9b67-9e40-3e82-afbd-db2645a4745d《Punk's Not Jazz》2006（同形合輯）。",
+    "releaseType": "Compilation",
+    "exceptionReason": "Dezerter 1983–1986 的曲目在 MB 名下沒有任何一張原盤 LP（同期只有 1983 年的 EP 與 1984 年的自製卡帶），這 19 軌到 1987 年才由美國《Maximum Rocknroll》的自營廠牌以 MRR 003 成套壓成 12 吋黑膠，是這批曲目唯一的成套發行形態；year 取 1987 是 release-group 登記的發行年，19 軌的錄音年代橫跨 1983–1986、MB 未登記逐軌年份，兩個年份行文時要分開講。",
+    "exceptionEvidenceUrls": [
+      "https://musicbrainz.org/release-group/bdcb6f1a-5e02-3b82-b3b4-e218b92e1d26",
+      "https://musicbrainz.org/release/4893de02-6619-4c60-bf2c-dfd3d3ee7c1d"
+    ],
+    "selfTitled": false,
+    "queryAlias": "Dezerter；Underground Out of Poland；Underground Out Of Poland",
+    "reissuedBy": "QQRYQ Productions（1996 CD）／Pop Noise（2002）／Nikt Nic Nie Wie（2009 黑膠）／Mystic Production（2019 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Dezerter",
+    "album": "Kolaboracja II",
+    "year": 1989,
+    "genres": [
+      "rock"
+    ],
+    "label": "PolJazz PSJ-211（PL 1989 12\" Vinyl 13 軌，MB 未登記 barcode）；1997 年再發走 QQRYQ Productions QQP 078CD",
+    "why": "本組四張 Dezerter 裡年份最晚的一張，也是廠牌形狀最出人意料的一張：回問 release 端點只得兩筆，1989 年原版掛的是 **PolJazz、catno PSJ-211**——那是波蘭爵士協會（Polskie Stowarzyszenie Jazzowe）的出版部門，一個龐克團的第二張 LP 走爵士協會的編號系統，正是簡報說「逐張打 release 端點、不要假設一切經國營廠牌」要抓的東西；1997 年的 CD 再發則落回地下系統的 QQRYQ Productions（QQP 078CD）。放在本組的位置：1987 年《Kolaboracja》走 Klub Płytowy Razem、1989 年續集走 PolJazz，同一支團兩年內兩個完全不同的發行管道，是 1980 年代末波蘭發行體制鬆動最乾淨的一組對照。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，Dezerter 池中 0 張、盤名 0 張。",
+    "risk": "⚠ 盤名互撞：與本組 42ae4cc5…《Kolaboracja》(1987) 只差一個羅馬數字，**店面搜尋「Dezerter Kolaboracja」時本卡反而排第一**（Apple 店面 pl 與 us 都回 collectionId 1484819024「Dezerter — Kolaboracja II」1989 年 13 軌），兩卡的配對一律用 collectionId，不用盤名字串。⚠ 廠牌名容易被讀錯成類型標籤：`PolJazz` 是廠牌名不是曲風，本卡 genres 仍是 rock；**不得因為廠牌叫 PolJazz 就把這張寫成爵士盤**。⚠ 短掛名回問（第 179／250 條）：`artist:\"Dezerter\"` 全域 1 筆，以 type／country=PL／begin=1982-09-15／disambiguation 定位，score 不採。CAA release-group 端點 **200（1 張圖）**（實測）。Apple 兩店面都命中 1484819024，年份 1989、13 軌，與 MB 的 1989 黑膠一致；第 254 條的另兩種查法留給研究層，策展層只寫觀察。",
+    "mbNote": "釘 release-group 1bcc2fbd-7f48-32f9-9db0-ed51a5f4453f。回問 release-group 端點（inc=artist-credits）：title「Kolaboracja II」、artist-credit 單一「Dezerter」、first-release-date 1989、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得兩筆：7f6c08ca-19bb-3350-bf34-d343420c36c5（1989 PL Official，12\" Vinyl 13 軌，PolJazz PSJ-211）、8c6d73e5-8638-4be9-98cd-0298cf04fcfb（1997 PL Official，CD 13 軌，QQRYQ Productions QQP 078CD）。藝人 MBID 2c9a8e87-aee9-4ad8-9065-34f176f9b860（名下 32 個 RG）。刻意不釘：42ae4cc5-708d-3172-8864-c8acedc57fbd《Kolaboracja》1987（本組另立一卡）、2584364c-d55a-3a1f-92f2-3e6313cdae37《Wszyscy przeciwko wszystkim》1990（1990 年、已在本批 1980 年代窗口之外，留給下一批）、b37bb08f-60c5-34fc-8b05-83db7f4e344f《Deuter》1995（盤名與波蘭龐克團 Deuter 同字，會與未收清單那位互撞，超窗口不收）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Dezerter；Kolaboracja II；Kolaboracja 2",
+    "reissuedBy": "QQRYQ Productions（1997 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Brygada Kryzys",
+    "album": "Brygada Kryzys",
+    "year": 1982,
+    "genres": [
+      "rock"
+    ],
+    "label": "Tonpress SX-T16（PL 1982 12\" Vinyl 9 軌，MB 未登記 barcode）；同年另有卡帶 Vega JG-005（9 軌），1991 Izabelin Studio 002 卡帶 10 軌，1999／2002／2003 三次 CD 再發",
+    "why": "波蘭新浪潮最常被回頭引用的一張首作，也是戒嚴（1981-12 起）之後第一批仍然壓得出來的搖滾 LP 之一：回問 release 端點得七筆，1982 年原版是 **Tonpress SX-T16、12 吋 9 軌**——Tonpress 是波蘭電台與電視台系統下的唱片部門，與 Polskie Nagrania „Muza\" 並行，簡報第三節點名的五家廠牌之一；同年還有一筆 Vega JG-005 的卡帶（9 軌）。⚠ **MB 上這張有兩個同名 release-group**：本卡釘的 5087c34b… 是波蘭本地那條（Tonpress／Vega／後續 CD），另一個 726ebd94… 底下只有一筆英國 Fresh Records FRESH LP 13、而且 media 欄被建成 7\" Vinyl 7 軌——依裁定 260「盤名相同的同掛名 LP 一組只收一張」，取波蘭原壓那一個。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Brygada Kryzys`：命中的 `YG — My Krazy Life` 是摺鍵把 YG 當子字串的假陽性，看整個掛名字串就排除；池中 0 張。",
+    "risk": "⚠ **自我同名卡**（團名＝盤名），selfTitled 已標。⚠ MB 端有兩個同名 RG（見 mbNote），**下游若拿盤名去 MB 反查，有一半機率落到英國 Fresh Records 那個 RG**——那筆的 media 是 7\" Vinyl 7 軌、status 甚至不是 Official，軌數與載體都與本卡不同，比對一律用本卡的 rgMbid。⚠ 同一團名下另有三個 Live RG（Live in Remont 82'、Live、Live in Jarocin 93'），其中 1982 那兩筆 **status 全是 Bootleg**（Fresh Records FRESH LP 13 與 Fala Ⓕ019 卡帶），依第 253 條現場盤本來可收，但 Bootleg 不是發行版，本批不收。⚠ 前身團名 `Kryzys` 在 MB 是另一個實體（152d88cf-7d8a-4de4-a61a-6efdceffea43，無國別、無 life-span），**不是本團**，查目錄時不能混。⚠ 短掛名回問：`artist:\"Brygada Kryzys\"` 全域只回 1 筆（33d47558-8927-427a-92a9-ec5d8679b6f5，Group／PL／begin 1981），score 不採；但 `Kryzys` 單獨查會回四筆（含一位 d&b／hardcore 的 Person），寫外部查詢時不得只用 Kryzys。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl 與 us 都回 collectionId **1484162213「Brygada Kryzys — Brygada Kryzys」1982 年 9 軌**（年份與軌數都與 MB 的 Tonpress 原壓一致），同時回 954796865《XXXLive》與 1840806272《Centrala - Single》兩筆不是本卡的條目。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group 5087c34b-4f93-3a4c-acd8-239604656932。回問 release-group 端點（inc=artist-credits）：title「Brygada Kryzys」、artist-credit 單一「Brygada Kryzys」、first-release-date 1982、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得七筆：7102ba27-ad23-46a1-a56d-dbee97b41002（1982 PL Official，12\" Vinyl 9 軌，Tonpress SX-T16）、f6a444f2-7540-43c7-9838-b72b063d8550（1982 PL Official，Cassette 9 軌，Vega JG-005）、95ca03eb-4f8a-47e6-8a8d-9e9947196c81（1991 Cassette 10 軌 Izabelin Studio 002）、3d066c7d-2cb2-3aa0-8607-de25ff2a2ce2（1999 CD 9 軌 POLmusic PmCD 107）、0a0572e0-51f0-401d-bbff-98a746d6ba42（2002 CD 9 軌 Andromeda CD 0990）、32e4bcdc-f89f-4b81-9371-1699bebc0ad1（2003 CD 9 軌 Agencja Artystyczna MTJ CD 10241，barcode 5906409102411）、28b430cc-7b20-46ff-abf3-cc7282e7b3e4（Digital Media 9 軌 MTJ）。藝人 MBID 33d47558-8927-427a-92a9-ec5d8679b6f5（名下 12 個 RG）。刻意不釘：726ebd94-6770-4669-9795-2d3ef80d3ae4《Brygada Kryzys》1982（同名第二個 RG，底下只有英國 Fresh Records FRESH LP 13、media 建成 7\" Vinyl 7 軌，依裁定 260 一組只收一張）、4fdf905c-e822-4621-ade9-a07e1185a6b6《Live in Remont 82'》與 f709efbb-c6e4-36ae-933f-417b170a5410《Live》1982（兩筆轄下 release 皆 status=Bootleg）、a67597cc-45a7-3e53-93de-95ed4298445e《Centrala》1982（Single）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": true,
+    "queryAlias": "Brygada Kryzys；Kryzys",
+    "reissuedBy": "Izabelin Studio（1991 卡帶）／POLmusic（1999 CD）／Andromeda（2002）／Agencja Artystyczna MTJ（2003）",
+    "g": "b"
+  },
+  {
+    "artist": "Siekiera",
+    "album": "Nowa Aleksandria",
+    "year": 1986,
+    "genres": [
+      "rock"
+    ],
+    "label": "Tonpress SXT-73（PL 1986-12-14 12\" Vinyl 10 軌，MB 未登記 barcode）；1991 Sonic Records SON 9 CD 13 軌、2003／2012／2024 MTJ 三次再發、2006 Tonpress CDT073",
+    "why": "Siekiera 1983 年以最快最短的龐克起家，1985 年整團換過編制之後轉成冷硬的合成器後龐克，這張 1986-12-14 的《Nowa Aleksandria》就是那個轉向的唯一一張錄音室 LP，也是 MB 名下 13 個 RG 裡唯一一張 primary-type=Album 且 secondary-types 空的原盤（其餘是四張現場、兩張 demo、兩張合輯、一張單曲、一張 EP 與兩張 2008／2011 的後製盤）。回問 release 端點得七筆：1986 年原版 **Tonpress SXT-73、12 吋 10 軌**，1991 年的第一次 CD 再發是 Sonic Records SON 9（13 軌，多出三軌），2003 年起由 Agencja Artystyczna MTJ 接手（CDMTJ 10251 10 軌、2012 年 CD 90241 是 10+15 軌雙片、2024-12-13 還出了 Hybrid SACD，barcode 5906409122853）。⚠ 這張與本組另一張 Siekiera 卡（§5.6 的《Na wszystkich frontach świata》）是同一支團完全不同的兩個階段：前者是 1984 年那套龐克曲目，後者是 1986 年的後龐克，**兩張必須分開講，不能互相借用形容**。實掃 seed_cards.json 全 24,138 列，子字串雙向比對：Siekiera 池中 **0 筆**（連假陽性都沒有，這個掛名夠長）。",
+    "risk": "⚠ 波蘭文變音在本卡集中在廠牌與同團其他碟：盤名 `Nowa Aleksandria` 本身沒有變音字母（容易讓人誤以為整條線都不用管），但同團的《Na wszystkich frontach świata》有 ś、掛名 `Siekiera` 沒有——**簡報第一條說的「Siekiera 沒有變音但 Dezerter 的專輯名有」在本卡與 01 號卡就是同一組對照**。⚠ 軌數四說：1986 黑膠 10 軌、1991 Sonic CD 13 軌、2006 Tonpress CDT073 13 軌、2012 MTJ 雙片 10+15 軌——**引軌數前先選版本，並用 label 欄記的 10 軌那一版**（第 251 條）。⚠ 2024 年的 Hybrid SACD 在 MB 未登記載體之外的細節，別把它當原盤。⚠ 短掛名回問（第 179／250 條）：`artist?query=artist:\"Siekiera\"&limit=25` 全域只回 1 筆（650106a3-6d40-4d48-a8cb-33d23a0ab3fa，Group／PL／begin 1983，disambiguation 空），**disambiguation 空的實體不得背書任何身分細節**，只能以 type＋country＋begin 三項交叉；score 不採。CAA release-group 端點 **200（4 張圖）**（實測，本組圖數第二多）。Apple `search` 店面 pl 與 us 都只回一筆 collectionId **1485673816「Siekiera — Nowa Aleksandria」2012 年 25 軌**——**年份是再發年、軌數 25 對應 MB 那筆 2012 年 10+15 軌的雙片，不是 1986 年的 10 軌黑膠**，不得拿來覆蓋本卡。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group be32c5dd-f9ac-3c33-b4ab-1b26f40e1410。回問 release-group 端點（inc=artist-credits）：title「Nowa Aleksandria」、artist-credit 單一「Siekiera」、first-release-date 1986-12-14、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得七筆：e9b3f113-dca3-473d-816f-825c33e40e23（1986-12-14 PL Official，12\" Vinyl 10 軌，Tonpress SXT-73）、d23d28e3-74a3-45ec-b59d-63a8932a1ce7（1991-11-30 CD 13 軌 Sonic Records SON 9，barcode 5901844900929）、de0cc43d-00ff-46d7-8bd4-bb02af13e051（2003 CD 10 軌 MTJ CD 10251）、77c8e8e7-5e9b-4dbc-b204-a12e80a17d5f（2006 CD 13 軌 Tonpress CDT073）、eb915be9-f13a-4051-b2c2-757049224b24（2012 CD 10+15 軌 MTJ CD 90241）、fe043957-746f-4560-8e9a-051a84141ac3（2012-11-30 XW Digital Media 10+15 軌 MTJ）、67cd5481-bbce-4a9f-862f-6909c320adf1（2024-12-13 Hybrid SACD 14 軌 MTJ，barcode 5906409122853）。藝人 MBID 650106a3-6d40-4d48-a8cb-33d23a0ab3fa（名下 13 個 RG）。刻意不釘：e2fb82bd-284c-35ed-af54-3c3fcac2bda4《Jest bezpiecznie / Misiowie puszyści》1986（Single）、88f487ea-93dd-37cf-8063-6d540dca5681《Atak》1998（EP）、2cc94bb6-6732-4966-8600-ccc0031d4598《1984》2008 與 d6158658-61f4-4898-a948-c4d9ad9f441f《Ballady na koniec świata》2011（超窗口）、becc5bed-126d-4800-8329-f2293d4f57e9《Sesja dla radia Lublin '85》與 e35a6b18-5d71-3979-8750-747085767f0b《Demo Summer '84》（Demo）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Siekiera；Nowa Aleksandria",
+    "reissuedBy": "Sonic Records（1991 CD）／Tonpress（2006 CD）／Agencja Artystyczna MTJ（2003／2012／2024）",
+    "g": "b"
+  },
+  {
+    "artist": "Siekiera",
+    "album": "Na wszystkich frontach świata",
+    "year": 1984,
+    "genres": [
+      "rock"
+    ],
+    "label": "Manufaktura Legenda ML 8（PL 2007 Enhanced CD 30 軌，barcode 5906453604985）——合輯出版年 2007，本卡 year 取原始錄音年代 1984",
+    "why": "§5.6 合輯，收的是 Siekiera 1984 年那套龐克曲目——**那一年的錄音在當年一張唱片都沒發出來**：MB 名下 13 個 RG 裡，1984 年的東西全部只以現場（《Jarocin 04.08.1984》《Róbrege '84》《Warszawa Remont 84》）與 demo（《Demo Summer '84》，1991 才出）的形態存在，樂團 1986 年拿到第一張 LP 時（《Nowa Aleksandria》，本組另立一卡）已經換過編制、曲目也全換了。這 30 軌因此是 1984 年那個階段唯一的成套發行形態。逐軌看過 release bef47d60… 的曲目表：三十軌是同一組約十五首曲子（〈Wojownik〉〈Idzie wojna〉〈Rana kłuta〉〈Było tylko czterech nas〉〈Ładuj działo〉〈Banda dzika〉〈Piwko dla wojska〉〈Oddział ślepych (Fala)〉等）的不同錄音，**沒有任何一軌屬於 1986 年之後的曲目**，所以依裁定 261 的「涵蓋幾分之幾」那一問，1984 涵蓋的是整套而不是一小部分，year 取 1984 站得住（與 03 號卡 Dezerter 那張取 1987 的理由剛好相反，兩張對照著看）。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，Siekiera 池中 0 筆。",
+    "risk": "⚠ **兩個年份要分開講**（裁定 255 的寫法）：錄音年代 1984、合輯出版年 2007，label 欄與 exceptionReason 都已寫明，行文不得把 2007 說成發行年也不得把 1984 說成出版年。⚠ MB **未登記逐軌錄音日期**，只能說這三十軌是 1984 年那套曲目的不同版本（曲名重複出現 2–3 次），**不得指名哪一軌錄於哪一場**。⚠ 波蘭文變音：`Na wszystkich frontach świata` 的 ś 不能省；去變音的 `Na wszystkich frontach swiata` 只能進 queryAlias。⚠ 廠牌 Manufaktura Legenda（ML 8）不在簡報第三節列的五家波蘭廠牌清單上，是 2000 年代的再發廠牌，**與 1980 年代的發行體制無關，不要拿它講當年的產製條件**。⚠ 短掛名回問：`artist:\"Siekiera\"` 全域 1 筆，disambiguation 空，只以 type=Group／country=PL／begin=1983 定位，score 不採。CAA release-group 端點 **200（22 張圖）——本組圖數最多的一張**（實測）。Apple `search` 店面 pl 與 us **兩個店面、掛名＋盤名的查法都 0 筆**（第 254 條：只寫觀察，不寫「未上架」或「無來源狀態」，另兩種查法留給研究層）。",
+    "mbNote": "釘 release-group 65e253bb-72bd-34e3-bc00-c9f450b4899d。回問 release-group 端點（inc=artist-credits）：title「Na wszystkich frontach świata」、artist-credit 單一「Siekiera」、first-release-date 2007、primary-type Album、secondary-types [Compilation]。回問 release 端點（inc=media+labels）只得一筆：bef47d60-8842-4316-acbb-ef10c4eb8140（2007 PL Official，Enhanced CD 30 軌，Manufaktura Legenda ML 8，barcode 5906453604985）；再以 inc=recordings 拉出三十軌曲目表，確認全為 1984 年那套龐克曲目的重複錄音。藝人 MBID 650106a3-6d40-4d48-a8cb-33d23a0ab3fa（名下 13 個 RG）。刻意不釘：df0525f4-7f57-4f43-a1bf-9412619c0178《Siekiera》（Compilation，同素材的另一種切法，依 c-123 第五節只取最權威的一種）、e35a6b18-5d71-3979-8750-747085767f0b《Demo Summer '84》1991（Demo）、4a942b6b-7174-427c-99a5-0b3e6fb87194《Jarocin 04.08.1984》、1961b969-7ad8-4f80-8e5d-3f2a516830d5《Róbrege '84》、99e2170e-3d94-4e5b-825b-fa0bfa55c35d《Warszawa Remont 84》（三筆現場盤皆無 first-release-date，無法判斷發行年）。",
+    "releaseType": "Compilation",
+    "exceptionReason": "Siekiera 1984 年那套龐克曲目在當年沒有任何唱片出版，MB 名下同期只有現場與 demo 形態；三十軌曲目表全部是那一組約十五首曲子的不同錄音、無 1986 年後的曲目，這張 2007 年 Manufaktura Legenda ML 8 是該階段唯一的成套發行形態，year 取錄音年代 1984、合輯出版年 2007 另記。",
+    "exceptionEvidenceUrls": [
+      "https://musicbrainz.org/release-group/65e253bb-72bd-34e3-bc00-c9f450b4899d",
+      "https://musicbrainz.org/release/bef47d60-8842-4316-acbb-ef10c4eb8140"
+    ],
+    "selfTitled": false,
+    "queryAlias": "Siekiera；Na wszystkich frontach świata；Na wszystkich frontach swiata",
+    "reissuedBy": "",
+    "g": "b"
+  },
+  {
+    "artist": "Aya RL",
+    "album": "Aya RL (Czerwona)",
+    "year": 1985,
+    "genres": [
+      "rock",
+      "electronic"
+    ],
+    "label": "Tonpress（PL 1985 Vinyl 10 軌，MB 未登記 catno 與 barcode）；1991 Pomaton EMI POM CD 007 CD 14 軌、2003 Agencja Artystyczna MTJ CDMTJ10245 CD 10 軌（barcode 5906409102459）",
+    "why": "Aya RL 是華沙 1983 年組起的新浪潮／合成器樂團，這張 1985 年的首作是 MB 名下 9 個 RG 裡最早的一個，也是波蘭新浪潮把電子器材當主體（而不是龐克吉他）的那一支的代表。**盤名要照 MB 寫成《Aya RL (Czerwona)》**：這支團的第一張與第三張（1989）在實體盤面上都只印 Aya RL，樂迷與資料庫靠封面顏色叫它們「紅盤」與「藍盤」，MB 就把 Czerwona／Niebieska 寫進 RG 標題來分——**這正是裁定 260 說的「盤名相同的同掛名 LP」，MB 已經替我們分好，照抄即可，本組不另收 1989 那張藍盤**（理由見刻意不釘）。廠牌上這張與本組 Brygada Kryzys、Siekiera、Klaus Mitffoch、Tilt 同屬 Tonpress 那一支（本組 22 張裡 Tonpress 佔 5 張，是最大的一家，Polskie Nagrania „Muza\" 反而只有 3 張）。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，`Aya RL` 池中 **0 筆**（含去空白寫法 AyaRL 亦 0）。",
+    "risk": "⚠ **盤名兩說，而且兩說都在實體端有根據**：MB RG 標題是「Aya RL (Czerwona)」，但 1985 年的實體盤面只有「Aya RL」；Apple 店面同時建了兩種——collectionId **1484182491「Aya RL — Aya RL (Czerwona)」2003 年 10 軌**（對應 MTJ 那次再發）與 **1758742168「Aya RL — Aya RL」1985 年 15 軌**（年份對得上原盤、軌數卻是 15，與 MB 的 10 軌不合）。本卡取 MB 的括號寫法以免與 1989 年藍盤摺出同一個鍵，**兩種寫法都進 queryAlias，下游配對一定要兩邊都查**。⚠ 1985 年那筆 release 的 **catno 與 barcode 在 MB 都是空的**，label-info 只有廠牌名 Tonpress——依裁定 259 的紀律，這是「MB 該 release 沒有填這兩欄」，不是「當年沒有編號」。⚠ 掛名 `Aya RL` 只有五個字元含空白與大寫縮寫，子字串比對假陽性風險高，撞卡與店面配對一律用整個掛名字串或 collectionId。⚠ 短掛名回問（第 179／250 條）：`artist:\"Aya RL\"` 全域只回 1 筆（f341d1e9-79a2-48c5-9b36-d9765055c73a，Group／PL／begin 1983，disambiguation 空），score 不採；但 Apple 店面搜尋時混進 `Alan Walker & Ava Max`、`Anuel AA` 等完全不相干的條目，**店面端的噪音比 MB 端大得多**。CAA release-group 端點 **200（1 張圖）**（實測）。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group fbbf9e32-b9c9-3a8e-a5df-ab6c3e0e6009。回問 release-group 端點（inc=artist-credits）：title「Aya RL (Czerwona)」、artist-credit 單一「Aya RL」、first-release-date 1985、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得三筆：fa456e3c-3102-4c89-9c6e-4fced9725cc0（1985 PL Official，Vinyl 10 軌，Tonpress，catno 欄空）、55277f0f-0a72-4c7d-b825-b2dd6ee9a89d（1991 CD 14 軌 Pomaton EMI POM CD 007）、69f8a20f-966f-3819-a9f1-8f3563b4e315（2003 CD 10 軌 Agencja Artystyczna MTJ CDMTJ10245，barcode 5906409102459）。藝人 MBID f341d1e9-79a2-48c5-9b36-d9765055c73a（名下 9 個 RG）。刻意不釘：87291c30-3522-3dee-99cb-69068e216e27《Aya RL (Niebieska)》1989（同掛名的第二張自我同名盤，1989 那筆 release 的 label-info 與 media 形態欄雙空、只有 1990 年 Polton CDPL-010 可考，文件強度不足，留給下一批；依裁定 260 一組先收一張）、42d2c1b3-b7d7-4cdb-a8ed-3893c5eacd12《Aya RL (Czerwona/Niebieska)》2004（把紅藍兩盤併起來的合輯，不是本卡）、325b25b6-c6fe-4052-b40d-031a34be0f0b《Jolka pamiętasz》（跨藝人合輯）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": true,
+    "queryAlias": "Aya RL；AyaRL；Aya RL (Czerwona)；Aya RL Czerwona；Aya RL（紅盤）",
+    "reissuedBy": "Pomaton EMI（1991 CD）／Agencja Artystyczna MTJ（2003 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Klaus Mitffoch",
+    "album": "Klaus Mitffoch",
+    "year": 1984,
+    "genres": [
+      "rock"
+    ],
+    "label": "Tonpress SX-T40（PL 1984 12\" Vinyl 16 軌，MB 未登記 barcode）；1991／2004 Tonpress CD-T 019 與 CDT019 皆 19 軌、1999 KOCH International 52153-2（barcode 664125215321）、2003-04-01 MTJ CDMTJ10249（barcode 5906409102497）",
+    "why": "Klaus Mitffoch 是弗次瓦夫（Wrocław）1979 年組起的團，MB 的 life-span 直接寫死 1979–1989，名下**只有三個 RG**：1983 年的單曲、1984 年這張唯一的錄音室 LP、1988 年的《Mordoplan》。這張因此是整個掛名的全部重量所在——1984 年 Tonpress SX-T40、12 吋 16 軌，在戒嚴後那兩年的波蘭新浪潮裡是被引用次數最多的幾張之一。本組把它與 Brygada Kryzys（1982 Tonpress SX-T16）、Siekiera（1986 Tonpress SXT-73）、Tilt（1988 Tonpress SX-T 95）、Aya RL（1985 Tonpress）擺在一起，**五張 Tonpress 從 SX-T16 到 SX-T 95 的編號跨度，本身就是這條線最好用的一組廠牌證據**。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Klaus Mitffoch`：回的六筆全是 `O.C.`／`-M-` 這種兩三字元掛名的摺鍵假陽性（看整個掛名字串就排除），池中 0 張。",
+    "risk": "⚠ **自我同名卡**（團名＝盤名），selfTitled 已標；且與 1991／2004 兩次同名 CD 再發共用盤名，**比對一律用 rgMbid 或 catno，不要用盤名字串**。⚠ 軌數兩說：1984 黑膠 16 軌、1991 與 2004 兩次 Tonpress CD 都是 19 軌（多三軌），2003 MTJ 版回到 16 軌——引軌數前先選版本（第 251 條），本卡 label 欄記的是 16 軌那一版。⚠ 掛名拼法：`Mitffoch` 是雙 f，**不是 Mitfoch 也不是 Mittfoch**，這個拼法在外部端最常被打錯，三種寫法都進 queryAlias。⚠ 短掛名回問（第 179／250 條）：`artist:\"Klaus Mitffoch\"` 全域只回 1 筆（923635df-34e3-492b-a121-820261edd814，Group／PL／1979–1989），score 不採；但 **Apple 店面把本團與另一位個人掛名併成合掛名建目**（1484845497「Klaus Mitffoch & Lech Janerka — The best…」2005、1484108394「Lech Janerka & Klaus Mitffoch — Historia podwodna」1986），**那兩筆不是本卡，也不得用來背書任何成員身分**（第 241／250／305 條：人名不得轉述）。CAA release-group 端點 **200（4 張圖）**（實測）。Apple `search` 店面 pl 與 us 都回 collectionId **1484541377「Klaus Mitffoch — Klaus Mitffoch」1985 年 16 軌**——**軌數與 MB 的 1984 黑膠一致，但年份標 1985、比 MB 晚一年**，不得拿來覆蓋本卡（c-123 第七節第 4 點那個形狀）。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group e5ecf595-3189-349e-a2ec-08363c234819。回問 release-group 端點（inc=artist-credits）：title「Klaus Mitffoch」、artist-credit 單一「Klaus Mitffoch」、first-release-date 1984、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得六筆：ab5fa020-3daf-3490-8837-b7f17654bc65（1984 PL Official，12\" Vinyl 16 軌，Tonpress SX-T40）、7fe6d7f8-e916-4064-8773-6a0474e895bf（1991 CD 19 軌 Tonpress CD-T 019）、20f6e289-5b4f-460a-8b20-0f2d79c79eae（2004 CD 19 軌 Tonpress CDT019）、cbe3e3c2-4955-48be-99aa-8569ce86116b（1999 CD 16 軌 KOCH International 52153-2，barcode 664125215321）、5439a310-5ce6-4a4f-827f-876ab52aec94（2003-04-01 CD 16 軌 MTJ CDMTJ10249，barcode 5906409102497）、f13bd00a-1329-41bf-b061-78df17214096（XW Digital Media 16 軌 MTJ）。藝人 MBID 923635df-34e3-492b-a121-820261edd814（名下 3 個 RG，life-span 1979–1989）。刻意不釘：785eb085-4378-410a-bc87-234793d27c4c《Jezu jak się cieszę / O głowie》1983（Single）、460a22f5-d194-32e4-ac53-73e8aaac05a7《Mordoplan》1988（同掛名第二張，本批名額不足，留給下一批）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": true,
+    "queryAlias": "Klaus Mitffoch；Klaus Mitfoch；Klaus Mittfoch",
+    "reissuedBy": "Tonpress（1991／2004 CD）／KOCH International（1999）／Agencja Artystyczna MTJ（2003）",
+    "g": "b"
+  },
+  {
+    "artist": "Kult",
+    "album": "Posłuchaj to do Ciebie",
+    "year": 1987,
+    "genres": [
+      "rock"
+    ],
+    "label": "Klub Płytowy Razem RLP 015（PL 1987-03 12\" Vinyl 11 軌，MB 未登記 barcode）；1991 S.P. Records 002/91 與 Kompania Muzyczna Pomaton POM 032 卡帶 16 軌、1992-03 與 2007 S.P. Records SPCD 002/91 CD 18 軌（barcode 5908294613324）",
+    "why": "Kult 1982 年組於華沙，是這條線少數從 1980 年代一路撐到現在的團（MB 名下 42 個 RG），而這張 1987-03 的《Posłuchaj to do Ciebie》是其中最早的一張 LP——比同年 5 月那張自我同名盤早兩個月。廠牌上它與本組 Dezerter《Kolaboracja》(RLP 020) 同屬 **Klub Płytowy Razem** 這條線（本卡 RLP 015、Dezerter RLP 020，編號只差五號），**同一家唱片俱樂部在 1987 年同時出龐克與這種歌詞取向的團，是這條線廠牌形狀最具體的一組物證**。1991 年起 Kult 自己那家 S.P. Records 接手再發（002/91 卡帶 16 軌、SPCD 002/91 CD 18 軌），從國營體系外的俱樂部轉到樂團自營廠牌，形狀與 Dezerter 從 Klub Płytowy Razem 轉到 QQRYQ 一樣。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Kult`：回 16 筆全是 `Umm Kulthum` 系列（摺鍵把 kult 當 kulthum 的前綴），**沒有一筆是本團**；池中 0 張。",
+    "risk": "⚠ **本組最嚴重的同名撞擊就在這個掛名**：`artist?query=artist:\"Kult\"&limit=25` 全域回 **76 筆**，回傳的 25 筆裡只有 2 筆是波蘭（本團 5e857ebe-88f3-4aab-9534-6728c305e427 與另一支 KULT MOGIŁ），其餘擋掉的包括義大利黑金屬 Kult（c18f6d36…，IT／2001）、法國黑金屬 Kult（f6a565e7…）、土耳其 Kült（1f0f171c…，2015 伊斯坦堡）與美國 My Life With the Thrill Kill Kult——**釘錯一個就是整位錯**。本卡以 country=PL＋type=Group＋life-span.begin=1982 三項交叉定位，**score 一律不採**（第 250 條）。⚠ 本團 MB disambiguation 欄裡帶創團者的本名，**依第 241／250／305 條不轉述**，只記「該欄有內容、且與 PL／1982 一致」。⚠ 盤名大小寫兩說：MB 是「Posłuchaj to do Ciebie」（Ciebie 大寫），部分外部端寫成 ciebie；ł 一個都不能省，去變音的 `Posluchaj to do Ciebie` 只能進 queryAlias。⚠ 軌數三說：1987 黑膠 11 軌、1991 卡帶 16 軌、CD 18 軌——引軌數前先選版本（第 251 條）。CAA release-group 端點 **200（2 張圖）**（實測）。Apple `search` 店面 pl 與 us 都回 collectionId **1098856767「Kult — Posłuchaj to do Ciebie (Expanded)」1987 年 18 軌**——**盤名帶 (Expanded) 後綴、軌數 18 對應 CD 版而非 11 軌黑膠**，字串比對要放寬。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group adb8b15f-a833-3af9-9b49-e394d3a555ed。回問 release-group 端點（inc=artist-credits）：title「Posłuchaj to do Ciebie」、artist-credit 單一「Kult」、first-release-date 1987-03、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得四筆：1a71c5d1-231b-448d-89c6-b09d648acc37（1987-03 PL Official，12\" Vinyl 11 軌，Klub Płytowy Razem RLP 015）、d04679d8-49b0-4296-93fd-5f225acd1e40（1991 Cassette 16 軌，S.P. Records 002/91 ＋ Kompania Muzyczna Pomaton POM 032 兩家並列）、4e3a7885-0185-3e49-b073-519a1150d3da（1992-03 CD 18 軌 S.P. Records SPCD 002/91，barcode 5908294613324）、eec9f8da-9bda-352f-93ea-35d4aeb1b924（2007 CD 18 軌 同編號同 barcode）。藝人 MBID 5e857ebe-88f3-4aab-9534-6728c305e427（名下 42 個 RG，Group／PL／begin 1982）。刻意不釘：ed6536c1-2726-35cf-a1b2-f88e064b2a4d《Kult》1987-05（同年第二張、自我同名，1987 原版走 Polton LPP-030，本批名額不足留給下一批）、f2b59db6-eb5b-3052-9f69-635626deef7a《Kaseta》1989（1989 那筆 release 的 label-info 與 media 形態欄雙空，文件強度不足）、13227860-6bab-362e-b062-4ec01e5695e0《Tan》1989（Live）、8992347b-a305-4304-9c75-37dcf5c0f121《Piloci / Do Ani》1986（Single）、518263f1-c50a-4b01-8b32-d17eab927e34《Kult》（Compilation，與 1987 自我同名盤同名，最容易釘錯的一個）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Kult；Posłuchaj to do Ciebie；Posluchaj to do Ciebie；Posłuchaj to do ciebie；Posłuchaj to do Ciebie (Expanded)",
+    "reissuedBy": "S.P. Records（1991 卡帶／1992／2007 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Kult",
+    "album": "Spokojnie",
+    "year": 1988,
+    "genres": [
+      "rock"
+    ],
+    "label": "Polton LPP-035（PL 1988 12\" Vinyl 9 軌，MB 未登記 barcode）；1989 Polton CDPL-001 CD 9 軌、1993 S.P. Records 006/93 CD 10 軌（barcode 5908294613317）、2007 S.P. Records SP KULT 01/07（barcode 5908295444446）",
+    "why": "Kult 的第三張 LP，也是本組唯一一張能同時拿到「1980 年代波蘭有 CD」這件事的物證：回問 release 端點得四筆，1988 年原版是 **Polton LPP-035 的 12 吋 9 軌**，而 **1989 年就出了 Polton CDPL-001 的 CD**——catno 尾碼 001 說明那是 Polton 這家 CD 目錄的第一號，波蘭端 1989 年已經有自己的 CD 生產／進口管道，這與本組其他張（Dezerter 1984 只有卡帶、Moskwa 1986 只有卡帶）擺在一起，剛好把 1984→1989 五年間發行載體的變化描出來。廠牌上 Polton 這一支在本組出現三次（本卡、Dezerter《Kolaboracja》的 1987 卡帶 PC-039、Sztywny Pal Azji 1987 卡帶 PC-038 — 未收清單），是 Tonpress 之外另一家不屬於 Polskie Nagrania „Muza\" 的發行方。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，`Kult` 的 16 筆命中全是 `Umm Kulthum` 的前綴假陽性，池中 0 張；盤名 `Spokojnie` 亦 0。",
+    "risk": "⚠ 同名撞擊同 10 號卡：`artist:\"Kult\"` 全域 76 筆、回傳 25 筆裡只有 2 筆 PL，**擋下 23 個非本團實體**（義大利與法國兩支黑金屬 Kult、土耳其 Kült、My Life With the Thrill Kill Kult…），一律以 country=PL＋Group＋begin=1982 定位、**score 不採**（第 250 條）；MB disambiguation 帶創團者本名，依第 241／250／305 條不轉述。⚠ 盤名 `Spokojnie` 是常見波蘭語副詞（意為「安靜地」），**外部端全文檢索必然大量假陽性**，配對要用「掛名＋盤名」整串或 collectionId。⚠ 軌數兩說：1988 黑膠與 1989 CD 都是 9 軌，1993 與 2007 的 S.P. Records 版是 10 軌（多一軌）——引軌數前先選版本（第 251 條）。CAA release-group 端點 **200（2 張圖）**（實測）。Apple `search` 店面 pl 與 us 都回 collectionId **1097922726「Kult — Spokojnie」10 軌、年份標 1987**——**年份比 MB 的 1988 早一年、軌數 10 對應 1993 年那版而非 1988 黑膠**，兩項都不得拿來覆蓋本卡（c-123 第七節第 4 點那個形狀）。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group 893dacc9-eb91-333d-ad5b-fb8151573e7e。回問 release-group 端點（inc=artist-credits）：title「Spokojnie」、artist-credit 單一「Kult」、first-release-date 1988、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得四筆：86933fc2-e857-4b3c-92bb-ca3cc8d67c7b（1988 PL Official，12\" Vinyl 9 軌，Polton LPP-035）、140d09de-50d4-4037-9748-90e20c8b9340（1989 PL Official，CD 9 軌，Polton CDPL-001）、1e74117b-3ba7-38c0-866b-6d44d40ce603（1993 CD 10 軌 S.P. Records 006/93，barcode 5908294613317）、13c14740-b802-30ce-9f1c-e1a6e93c1561（2007 CD 10 軌 S.P. Records SP KULT 01/07，barcode 5908295444446）。藝人 MBID 5e857ebe-88f3-4aab-9534-6728c305e427（名下 42 個 RG）。刻意不釘：ed6536c1-2726-35cf-a1b2-f88e064b2a4d《Kult》1987-05（自我同名盤，留下一批）、f2b59db6-eb5b-3052-9f69-635626deef7a《Kaseta》1989（label-info 與 media 形態欄雙空）、8f106cb9-5f43-3c44-90eb-b2c3f87d1a2e《45-89》1990（超出本組 1980 年代窗口）、10c4ba07-5f5f-42f6-8ed3-2217bf6ef5ac《88-89》1993（Compilation）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Kult；Spokojnie",
+    "reissuedBy": "S.P. Records（1993／2007 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Armia",
+    "album": "Antiarmia",
+    "year": 1987,
+    "genres": [
+      "rock"
+    ],
+    "label": "Pronit PLP 0075（PL 1987 12\" Vinyl 15 軌，MB 未登記 barcode）；1988 Pronit PC-063 卡帶 15 軌、1991 Fala Ⓕ032 卡帶 13 軌、1999 Ars Mundi AMS 019R CD 23 軌、2005 Metal Mind Records MMP CD DG 0342 CD 22 軌（barcode 5907785026322）",
+    "why": "Armia 1984 年 12 月組起（MB life-span.begin 1984-12），是 Siekiera 換編制那一波之後從波蘭龐克裡長出來的另一條線，MB 名下 33 個 RG 裡**最早的 Album 就是這張 1987 年的《Antiarmia》**（更早只有同年的單曲《Aguirre》）。回問 release 端點得六筆，1987 年原版是 **Pronit PLP 0075、12 吋 15 軌**，隔年同廠出卡帶 PC-063——Pronit 是簡報第三節點名的五家之一，本組另一張走 Pronit 的是 Izrael《Biada, biada, biada》(M-0006)，**兩張分屬龐克與雷鬼，說明 Pronit 在 1985–87 那幾年是這批團最常走的一家非 Muza 廠牌**。1991 年那筆 Fala Ⓕ032 卡帶（13 軌）尤其值得記：Fala 是 1990 年代初專出這批地下團的卡帶廠牌，本組 Dezerter《Jeszcze żywy człowiek》的 1991 年卡帶（Ⓕ025）與 Brygada Kryzys《Live》的 1991 年卡帶（Ⓕ019）也在同一套編號裡，**但那兩筆 MB 都標 status=Bootleg、本卡這筆標 Official**——同一家廠牌在 MB 上的 status 並不一致，下游不得一概而論。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Armia`：回的 8 筆全是 `M.I.A.`／`-M-` 的摺鍵假陽性，池中 0 張。",
+    "risk": "⚠ 同名撞擊在這個掛名是「同國同語」的形狀，比跨國撞更危險：`artist?query=artist:\"Armia\"&limit=25` 全域回 3 筆，其中**兩筆是波蘭**——本團 69443da0-1ee0-4624-a837-c3f9e252dac8（Group／PL／begin 1984-12）與 `Biała Armia`（d5dd6c4d…，Group／PL／1993，disambiguation 寫明是另一個曲風的團）。**country=PL 這一項在這裡分不出來，非靠 life-span.begin 與 disambiguation 不可**（第 250 條）；另一筆是波斯語人名的 Person 實體。⚠ 盤名 `Antiarmia` 與掛名 `Armia` 互為子字串，**卡池的子字串雙向比對會讓這兩個字串互相命中**，撞卡判定一律看整個「掛名｜盤名」鍵。⚠ 軌數四說：1987 黑膠與 1988 卡帶 15 軌、1991 Fala 卡帶 13 軌、1999 Ars Mundi CD 23 軌、2005 Metal Mind CD 22 軌——引軌數前先選版本（第 251 條）。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl 與 us 都回 collectionId **1506078043「Armia — Antiarmia」1988 年 15 軌**——**軌數與 MB 的 1987 黑膠一致，年份卻標 1988（對應 Pronit 卡帶那一年）**，不得拿來覆蓋本卡的 1987。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group 3ec6aa80-108e-3e1a-9d24-08efa839c50c。回問 release-group 端點（inc=artist-credits）：title「Antiarmia」、artist-credit 單一「Armia」、first-release-date 1987、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得六筆：66de8f87-33e4-43d6-9200-d6703bcbff25（1987 PL Official，12\" Vinyl 15 軌，Pronit PLP 0075）、7eac9c36-465b-4aa6-bce8-d16a13fb73f3（1988 PL Official，Cassette 15 軌，Pronit PC-063）、7a6320c8-6f9d-4934-9dd6-30ff8902c609 與 866b3fa3-ac1d-45ce-8298-d262d3a1ba97（1991 Cassette 13 軌 Fala Ⓕ032／032，兩筆同內容不同建檔）、ba6802dc-744f-4975-b9ca-b0f0bbb1a1d3（1999 CD 23 軌 Ars Mundi AMS 019R）、428c180c-b5f9-4550-bff6-06c017aa77f0（2005 CD 22 軌 Metal Mind Records MMP CD DG 0342，barcode 5907785026322）。藝人 MBID 69443da0-1ee0-4624-a837-c3f9e252dac8（名下 33 個 RG，Group／PL／begin 1984-12）。刻意不釘：0d358af5-b604-31bd-a01f-e64d8430a1ea《Aguirre》1987（Single）、ba3dc0f2-2c7c-31b5-a704-531ba0b34c89《Legenda》1991（超出本組 1980 年代窗口，留給下一批）、10f56786-f539-34aa-9b97-bc573e037d85《1989-08-02: Jarocin-festiwal, Jarocin, Poland》與 5fd4fb44-7940-37c7-ab17-edcf57ea0686《1986-04-16: Akant, Katowice, Poland》（兩筆現場盤皆無 first-release-date，無法判斷發行年）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Armia；Antiarmia；Anti-armia",
+    "reissuedBy": "Fala（1991 卡帶）／Ars Mundi（1999 CD）／Metal Mind Records（2005 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Tilt",
+    "album": "Tilt",
+    "year": 1988,
+    "genres": [
+      "rock"
+    ],
+    "label": "Tonpress SX-T 95（PL 1988 12\" Vinyl 9 軌，MB 未登記 barcode）；1991 Lion Records LRCD-009 CD 12 軌、2000 Agencja Artystyczna MTJ CD 13009 與 Mega Czad CD 13009 兩筆 CD 16 軌（barcode 5906409130094）",
+    "why": "Tilt 的 MB life-span.begin 是 **1979**，比本組其他任何一支都早（Dezerter 1982、Siekiera 1983、Armia 1984），但名下 10 個 RG 裡第一張正式 LP 遲到 1988 年才出——**這個十年的落差本身就是這條線最該收的事實**：1985 年只有一張 EP（《Runął Już Ostatni Mur...》，依規格 EP 不收），1979–1987 的東西全部只以現場（《Jarocin '85》《Live In Warsaw 1984》）與 1998 年那張《Szare Koszmary 1979-1985》合輯的形態存在。1988 年這張走 **Tonpress SX-T 95**，是本組五張 Tonpress 裡編號最晚的一張（SX-T16→SX-T40→SXT-73→SX-T 95），四個編號橫跨 1982–1988，正好把 Tonpress 在這條線上的六年跨度串起來。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Tilt`：回 5 筆全是 `T.I.` 的摺鍵假陽性（T.I. 的五張饒舌盤），池中 0 張。",
+    "risk": "⚠ **同名撞擊：`artist?query=artist:\"Tilt\"&limit=25` 全域回 54 筆，回傳 25 筆裡只有 1 筆是波蘭**（本團 79ce0c10-aa93-48d2-a6fd-dad15791846c，Group／PL／begin 1979，disambiguation 明寫「Polish punk band」）；擋下的 24 個包括英國考文垂的 electro／trance 雙人組、美國加州龐克團 Tilt（1992）、德國工業樂手 Tilt!、名古屋金屬團 TILT——**四個字母的掛名在 MB 全域是重災區，score 一律不採**（第 250 條）。⚠ **自我同名卡**（團名＝盤名），selfTitled 已標；`Tilt|Tilt` 這個摺鍵在外部端幾乎不可能單用字串比對，一律用 rgMbid 或 collectionId。⚠ Apple 端的噪音比 MB 端更嚴重：`search` 店面 pl 的五筆裡只有第一筆 **1481885418「Tilt — Tilt」2000 年 16 軌** 可能是本團（年份與軌數對應 MTJ 那次 CD 再發、不是 1988 黑膠），其餘是 Red Velvet - IRENE & SEULGI、Confidence Man、Scott Walker 的同名碟；**us 店面五筆裡連一筆疑似本團的都沒有**（Scott Walker《Tilt》排第四）。第 254 條：只寫觀察，配對交研究層用 collectionId 直查。⚠ 軌數三說：1988 黑膠 9 軌、1991 Lion Records CD 12 軌、2000 兩筆 CD 16 軌（第 251 條）。⚠ 同 RG 之外另有一個 5050e89a…《Za Zamkniętymi Drzwiami 1987 - Live In Lublin 1987》，**primary-type=Album 但 secondary-types 空、盤名卻明寫 Live**——依裁定 227，secondary-types 空不代表是原盤，本批不碰那一筆。CAA release-group 端點 **200（1 張圖）**（實測）。",
+    "mbNote": "釘 release-group 10779001-1fdb-3920-8183-46950f72d4c8。回問 release-group 端點（inc=artist-credits）：title「Tilt」、artist-credit 單一「Tilt」、first-release-date 1988、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得四筆：de7b5b11-15bf-4fa6-aa24-8ec638014550（1988 PL Official，12\" Vinyl 9 軌，Tonpress SX-T 95）、4d16753c-14aa-4e8a-9581-8a825484f78d（1991 CD 12 軌 Lion Records LRCD-009）、452ca8d8-0695-4673-9260-e3a772f70d4b（2000 CD 16 軌 Agencja Artystyczna MTJ CD 13009，barcode 5906409130094）、e6315f34-0650-4099-81de-684adbdd1867（2000 CD 16 軌 Mega Czad CD 13009，同編號不同廠牌掛名）。藝人 MBID 79ce0c10-aa93-48d2-a6fd-dad15791846c（名下 10 個 RG，Group／PL／begin 1979，disambiguation「Polish punk band」）。刻意不釘：5350e31b-477e-4801-863f-a3701ebbcd7c《Runął Już Ostatni Mur...》1985（EP，波蘭龐克不在 §5.5 白名單）、5050e89a-e166-4a5b-9cf2-7f5844e2083e《Za Zamkniętymi Drzwiami 1987 - Live In Lublin 1987》（盤名即現場、無 first-release-date，裁定 227 的形狀）、0905281d-d048-4b1d-8dc1-9aca1fd25064《Jarocin '85》與 fa9e9a56-0c31-43a0-86c7-fb5b28785e78《Live In Warsaw 1984》（兩筆現場盤皆無 first-release-date）、72b9e907-b217-4dd4-a886-3f9899a9fad5《Szare Koszmary 1979-1985》1998（Compilation+Live+Demo，1979–85 那段的成套形態，是下一批的 §5.6 現成候選）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": true,
+    "queryAlias": "Tilt；Tilt (Polish punk band)",
+    "reissuedBy": "Lion Records（1991 CD）／Agencja Artystyczna MTJ 與 Mega Czad（2000 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Moskwa",
+    "album": "Nigdy!",
+    "year": 1986,
+    "genres": [
+      "rock"
+    ],
+    "label": "Prawda 0001 ＋ Studio Ultimatum U-009（PL 1986 Cassette 20 軌，MB 未登記 barcode）；另一筆 1986 卡帶只掛 Prawda 0001；2003 Zima Z 026 卡帶與 CD 2/007、2014 與 2017 Warsaw Pact Records WPR 005 兩次 12\" 黑膠 20 軌",
+    "why": "簡報說「自製卡帶與盤帶是這條線『地下』最直接的物證」，**本卡是整組裡最乾淨的一筆**：Moskwa 1983-09 組於羅茲（Łódź），1986 年這套 20 軌在當年**只有卡帶形態**，廠牌是 `Prawda` 編號 0001 與 `Studio Ultimatum` U-009——0001 這個編號說明它是那家卡帶廠牌的第一號出版品，與國營的 Polskie Nagrania „Muza\"、半官方的 Tonpress／Pronit／Polton 完全不在同一個系統裡。這套曲目遲至 **2014 年才第一次壓成 12 吋黑膠**（Warsaw Pact Records WPR 005，2017 再壓一次），整整二十八年。本組另收 Moskwa 1989 年那張同名 LP（Pronit PLP 0082），**兩張擺在一起就是同一支團從自製卡帶走到國營系統壓片的完整路徑**。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Moskwa`：回 4 筆全是 `-M-` 的摺鍵假陽性，池中 0 張；盤名 `Nigdy!` 亦 0。",
+    "risk": "⚠ **這張在 1986 年沒有任何黑膠或 CD**，行文只能寫卡帶；2014／2017 的黑膠是再發，年份不得覆蓋。⚠ 同一張 1986 卡帶在 MB 有兩筆 release（c4bd4bdc… 只掛 Prawda 0001，b49606c1… 同時掛 Prawda 0001 與 Studio Ultimatum U-009），**兩筆軌數都是 20、內容應為同物**，本卡 label 欄取資訊較全的那一筆，下游不要當成兩個版本。⚠ 盤名結尾的驚嘆號 `Nigdy!` 在摺鍵會被剝掉（key 只留文字與數字），**與可能存在的《Nigdy》同名碟摺成同一個鍵**，比對時要看原字串。⚠ 同名撞擊：`artist?query=artist:\"Moskwa\"&limit=25` 全域回 4 筆，PL 只有本團（11053bc1-7760-401f-b6a2-1481d1e29769，Group／PL／begin 1983-09，disambiguation 空），擋下 M.O.S.K.W.A.、德國的 Moskwa TV、Moskwa Beat 三個；**disambiguation 空，身分只能靠 type＋country＋begin 三項交叉**，score 不採（第 250 條）。另外 `Moskwa` 本身是俄語地名的波蘭語拼法，外部端全文檢索假陽性極多（實測 Apple us 店面前五筆有三筆是同名單曲或德國 Moskwa TV）。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl 與 us **用「Moskwa Nigdy」查都是 0 筆**（第 254 條：只寫觀察，不寫結論，另兩種查法交研究層）。",
+    "mbNote": "釘 release-group f8b61763-5d10-4f2b-ae89-13532bb1d91a。回問 release-group 端點（inc=artist-credits）：title「Nigdy!」、artist-credit 單一「Moskwa」、first-release-date 1986、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得六筆：b49606c1-e7ba-4034-a7d4-fc52eaa84e7a（1986 PL Official，Cassette 20 軌，Prawda 0001 ＋ Studio Ultimatum U-009）、c4bd4bdc-20a3-4fe8-a64a-bec6ce931865（1986 PL Official，Cassette 20 軌，Prawda 0001）、540da72d-7ff7-4545-a61d-9c4b21ed2d9e（2003 Cassette 20 軌 Zima Z 026）、ba6ed317-a835-4e3f-8632-544209587646（2003 CD 20 軌 Zima CD 2/007）、975523f0-c397-44e6-9939-a05732062d3d（2014 12\" Vinyl 20 軌 Warsaw Pact Records WPR 005）、c2836dbb-e229-4020-8251-faa500271f4e（2017 12\" Vinyl 20 軌 同編號）。藝人 MBID 11053bc1-7760-401f-b6a2-1481d1e29769（名下 19 個 RG）。刻意不釘：942d04fb-1b60-4699-a406-9e7887fd4d90《Próba》1984 與 bc091cbb-e309-4f5e-9c03-973ef31a47d6《1984 Demo》（Demo）、71015b43-f68a-484c-98d8-366dea0c037c《Fama》1985（同期另一張 Album，本批名額不足，留給下一批）、a5e87585-a23d-464a-8323-9c67cdd6ae3c《Mała Scena Jarocin 84》、e72392df-a686-474c-a67d-6fd857f63831《Jarocin》1985、b20bf8ac-c600-4eab-be67-54f44f937a3c《Remont》1986（三筆 Jarocin／Remont 現場盤，是下一批最現成的一組現場物證）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Moskwa；Nigdy!；Nigdy",
+    "reissuedBy": "Zima（2003 卡帶與 CD）／Warsaw Pact Records（2014 與 2017 黑膠）",
+    "g": "b"
+  },
+  {
+    "artist": "Moskwa",
+    "album": "Moskwa",
+    "year": 1989,
+    "genres": [
+      "rock"
+    ],
+    "label": "Pronit PLP 0082（PL 1989 12\" Vinyl 14 軌，MB 未登記 barcode）；2002 Dywizja KOT CD 28 軌（MB 未登記 catno）",
+    "why": "本組唯一一組「同一支團、兩張卡、兩種發行體制」的對照：14 號卡那套 1986 年的 20 軌只有 Prawda／Studio Ultimatum 的自製卡帶，**三年後這張同名 LP 就走進了 Pronit 的黑膠編號系統（PLP 0082）**——而 Pronit 同一套 PLP 編號在本組還壓過 Armia《Antiarmia》（PLP 0075，1987），兩個編號只差七號。1989 年正是波蘭發行體制鬆動的那一年（本組另兩張同年碟：Dezerter《Kolaboracja II》走爵士協會的 PolJazz、Kult《Spokojnie》的 CD 版走 Polton CDPL-001），**四張 1989 年的碟走了四條不同的路，這比任何一張單獨的碟都更能說明那一年的形狀**。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，`Moskwa` 池中 0 張（4 筆命中全是 `-M-` 假陽性）。",
+    "risk": "⚠ **自我同名卡**（團名＝盤名），selfTitled 已標；`Moskwa|Moskwa` 這個摺鍵在外部端完全無法用字串比對，一律用 rgMbid 或 collectionId。⚠ **Apple 店面把這張建成《Moskwa I》**：`search` 店面 pl 與 us 都回 collectionId **1484172049「Moskwa — Moskwa I」1988 年 14 軌**——**軌數 14 與 MB 的 1989 黑膠一致、年份卻標 1988、盤名多一個羅馬數字 I**。這是第 260 條講的「盤名有數字寫法差異時字串比對必然落空」的同形，本卡把《Moskwa I》寫進 queryAlias，但 **MB 端沒有任何 release 叫 Moskwa I，不得據此改盤名或年份**。⚠ 2002 年 Dywizja KOT 那筆是 28 軌（多出一倍），**引軌數前先選版本**（第 251 條）。⚠ 同名撞擊：`artist:\"Moskwa\"` 全域 4 筆、PL 僅本團，擋下 M.O.S.K.W.A.、Moskwa TV（DE）、Moskwa Beat；**disambiguation 空，靠 type＋country＋begin=1983-09 定位，score 不採**（第 250 條）。CAA release-group 端點 **200（1 張圖）**（實測）。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group 48d2d5f5-c29f-3992-9f0d-9241e69fb12a。回問 release-group 端點（inc=artist-credits）：title「Moskwa」、artist-credit 單一「Moskwa」、first-release-date 1989、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得兩筆：5bb883de-480a-44bd-be70-fb0a1f679e8a（1989 PL Official，12\" Vinyl 14 軌，Pronit PLP 0082）、f68212f1-f7b7-472e-9954-96dc76b95e60（2002 PL Official，CD 28 軌，Dywizja KOT，catno 欄空）。藝人 MBID 11053bc1-7760-401f-b6a2-1481d1e29769（名下 19 個 RG）。刻意不釘：f8b61763-5d10-4f2b-ae89-13532bb1d91a《Nigdy!》1986（本組另立一卡）、61275722-f052-45e6-a4ff-998646497f7f《Życie Niezwykłe》1990（超出本組 1980 年代窗口）、c98fd7b8-ae17-4a48-bfe2-eca7a6689ec2《Powietrza!》（Compilation，無 first-release-date）、3e3071ed-3c91-4ea3-929c-ba76407ae2fd《Live Białystok》1987 與 94e71865-a99c-4dd9-b19c-2934b322229c《Live Gliwice》1989（現場盤，下一批可用）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": true,
+    "queryAlias": "Moskwa；Moskwa I",
+    "reissuedBy": "Dywizja KOT（2002 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "TSA",
+    "album": "TSA",
+    "year": 1982,
+    "genres": [
+      "rock"
+    ],
+    "label": "Polton PLP-002（PL 1982 12\" Vinyl 8 軌，MB 未登記 barcode）；2004 Metal Mind Productions MMP CD 0250 CD 10 軌",
+    "why": "TSA 1979 年組於歐波萊（Opole），是波蘭第一支把英美重搖滾那一套整個搬過來的團（MB disambiguation 明寫 Polish hard rock band），這張 1982 年的首作也是本組年份最早的兩張之一（另一張是同年的 Brygada Kryzys）。**廠牌是這張最值得記的一點**：回問 release 端點得兩筆，1982 年原版掛 **Polton、catno PLP-002**——尾碼 002 說明那是 Polton 黑膠目錄的第二號，**Polton 這家 1980 年代初才起步的廠牌，到 1987–89 年已經接手 Kult《Kult》(LPP-030)、Kult《Spokojnie》(LPP-035)、Dezerter《Kolaboracja》卡帶 (PC-039) 與 1989 年波蘭第一批 CD（CDPL-001）**，本組五張碟串起它從 002 到 CDPL-001 的七年。戒嚴期間（1981-12 起）能出這種音量的碟，是這條線在「哪些東西擋得住、哪些擋不住」上的一個反例。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `TSA`：回 15 筆，全是 `Let's Active`／`Toots and the Maytals`／`Hsu Tsang-Houei 許常惠`／`Stetsasonic`／`Aunt Sally` 這種含 tsa 三字母的假陽性，**沒有一筆是本團**；池中 0 張。",
+    "risk": "⚠ **本組唯一一張 CAA 404 的碟**：release-group 端點實測 **404**（其餘 21 張全部 200），封面來源要另外找，但依第 254 條策展層只寫觀察、不寫「要掃圖」。⚠ 三字母掛名是本組子字串假陽性最嚴重的一個（實掃 15 筆全假），**撞卡判定一律看整個掛名字串**。⚠ 同名撞擊：`artist?query=artist:\"TSA\"&limit=25` 全域回 13 筆，PL 只有本團（c03af3d3-4394-4b53-a1f0-c73cffc22906，Group／PL／begin 1979，disambiguation「Polish hard rock band」），擋下菲律賓的 T.S.A（hc punk）、一個只發過《Resistindo》的 T.S.A、The Sound Archive、一位 electro artist 等 12 個；score 不採（第 250 條）。⚠ **自我同名卡**，selfTitled 已標。⚠ Apple `search` 店面 pl 回 collectionId **1099465354「TSA — Tsa」年份標 1983、8 軌**（**軌數與 MB 的 1982 黑膠一致、年份晚一年、盤名是小寫混合的 Tsa**）與 1099471110「TSA — Heavy Metal World」1984（MB 標 1985，同樣差一年）；us 店面前五筆有三筆是完全不相干的 Tsa Tsa 單曲。**兩筆的年份都不得拿來覆蓋 MB**。第 254 條的另兩種查法留給研究層。⚠ 同團的《Spunk!》(1984) 與《Heavy Metal World》(1985) 兩個 RG 底下，**1980 年代那幾筆 release 的 label-info 與 media 形態欄都是空的**（依裁定 259 的紀律：那是 MB 該 release 沒有這兩個欄位，不是當年沒有廠牌），文件強度不足，本批只收這一張。",
+    "mbNote": "釘 release-group 97182816-6c98-30d3-97c9-f889a1f0b6ba。回問 release-group 端點（inc=artist-credits）：title「TSA」、artist-credit 單一「TSA」、first-release-date 1982、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得兩筆：481d2adf-100c-4829-b0a0-3829680dec79（1982 PL Official，12\" Vinyl 8 軌，Polton PLP-002）、15ded3b8-0089-4d10-8f64-d0b6cdc4056e（2004 CD 10 軌 Metal Mind Productions MMP CD 0250）。藝人 MBID c03af3d3-4394-4b53-a1f0-c73cffc22906（名下 12 個 RG）。刻意不釘：9c367a1f-0457-3121-874f-96462b2a66e6《Live》1982（Live，盤名過於通用）、6a68561c-f106-37c0-bce6-3e18e26e6b1a《Spunk!》1984 與 0a6f6ba5-1688-3843-ba80-a1b6ba848b8c《Heavy Metal World》1985（1980 年代那幾筆 release 的 label-info 與 media 形態欄皆空，留給下一批補查）、eb31a7a5-7278-3d58-b82f-e9f10531358c《1981》2004（盤名是年份、2004 年才出，最容易被誤當原盤）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": true,
+    "queryAlias": "TSA；Tsa；T.S.A.",
+    "reissuedBy": "Metal Mind Productions（2004 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Oddział Zamknięty",
+    "album": "Oddział Zamknięty",
+    "year": 1984,
+    "genres": [
+      "rock"
+    ],
+    "label": "Polskie Nagrania „Muza\" SX 2171（PL 1984，MB 該 release 的 media 形態欄為空、10 軌，未登記 barcode）；1991 Digiton DIG 106 CD 10 軌、2001 Infos INFOS 0005 CD 11 軌、2025 Polskie Nagrania „Muza\" ＋ Warner Music Poland Hybrid SACD（barcode 5021732720252）",
+    "why": "本組三張走國營廠牌的碟之一（另兩張是 Lombard 1983 與 Kombi 1983），**而且是唯一一張能拿到目錄號 SX 系列的龐克／新浪潮團**：1984 年原版掛 Polskie Nagrania „Muza\" 的 SX 2171，與同年 Kombi 的 SX 2164 只差七號——**同一套 SX 編號同時壓行進曲式的新浪潮團與電子流行團，正是簡報第三節說的「國營廠壟斷」在實際目錄上的樣子**。樂團 1979 年組於華沙，MB 名下 18 個 RG 裡這張是第一個。與本組其餘 19 張擺在一起，它與 Lombard、Kombi 三張構成「體制內」那一側，Dezerter 的 Tank Records 卡帶、Moskwa 的 Prawda 卡帶、Abaddon 的法國壓片構成「體制外」那一側，**兩側的比例（3 比 19）本身就是這一批最該傳下去的量化結論**。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，`Oddział Zamknięty` 與去變音的 `Oddzial Zamkniety` 兩種寫法各掃一次，回的 6 筆全是 `-M-`／`Zia` 的摺鍵假陽性，池中 0 張。",
+    "risk": "⚠ **波蘭文變音在本卡最容易出錯**：`Oddział Zamknięty` 的 ł 與 ę **一個都不能省**，`Oddzial Zamkniety` 是錯的寫法、只能進 queryAlias；chk-prop 的 NFKC 摺不掉 ł。⚠ **同國同名的近名陷阱**：`artist?query=artist:\"Oddział Zamknięty\"&limit=25` 全域回 2 筆，**兩筆都在波蘭**——本團 8952c281-ea73-4ae9-9252-60d2d03a74d2（Group／PL／begin 1979）與 `Jary Oddział Zamknięty`（06870ecc…，Group／PL／begin 2016-02-26），後者是 2016 年才登記的另一個實體；**country 這一項分不出來，只能靠 life-span.begin 差 37 年判定**，score 不採（第 250 條）。⚠ **自我同名卡**，selfTitled 已標。⚠ 1984 年那筆 release 的 **media 形態欄是空的**（10 軌、有 catno SX 2171）——依裁定 227／259 的紀律，本卡 label 欄照實寫「MB 該 release 的 media 形態欄為空」，**不得自行填成黑膠**。⚠ Apple `search` 店面 pl 與 us 五筆裡**沒有一筆是 1984 年這張 LP**：回的是 1823225921「Oddział Zamknięty - Single」1983、1250035891《Parszywa 13》1997，以及三筆掛合掛名（含一位個人掛名與另一位饒舌歌手）的單曲——**合掛名那幾筆不得用來背書任何成員身分**（第 241／250／305 條）。第 254 條：只寫觀察，另兩種查法交研究層。CAA release-group 端點 **200（1 張圖）**（實測）。",
+    "mbNote": "釘 release-group 6ddffc52-f48d-3972-ac39-7d638dd743c8。回問 release-group 端點（inc=artist-credits）：title「Oddział Zamknięty」、artist-credit 單一「Oddział Zamknięty」、first-release-date 1984、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得四筆：6e297f48-af77-3eec-baac-407131e813bc（1984 PL Official，media 形態欄空、10 軌，Polskie Nagrania „Muza\" SX 2171）、173c6cbe-a0e1-44f9-abe0-8d6a5ea4fa56（1991 CD 10 軌 Digiton DIG 106）、d8a289aa-6a6b-4c50-9ac5-5dd887783c66（2001 CD 11 軌 Infos INFOS 0005）、9d718498-744a-4f48-b68a-cf1830b5c142（2025 Hybrid SACD 10 軌，Polskie Nagrania „Muza\" 與 Warner Music Poland 並列，barcode 5021732720252）。藝人 MBID 8952c281-ea73-4ae9-9252-60d2d03a74d2（名下 18 個 RG）。刻意不釘：6d1a9aa1-4253-3704-94c6-4d8f9e7fa7c6《Reda By Night》1985（同期第二張，本批名額不足，留給下一批）、ea2f8585-4ee4-4918-b298-482a8ae88945《Reda By Night》2001（同名再發 RG，依裁定 260 不與 1985 那個混）、2c9e3b82-3371-31b2-9073-4495e0aec225《Greatest Hits》1994、8e2434e6-c096-45c2-a254-cf41ea9076ff《Gwiazdy polskiej muzyki lat 80: Oddział zamknięty》2007（皆 Compilation）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": true,
+    "queryAlias": "Oddział Zamknięty；Oddzial Zamkniety；Oddział zamknięty",
+    "reissuedBy": "Digiton（1991 CD）／Infos（2001 CD）／Polskie Nagrania „Muza\" 與 Warner Music Poland（2025 SACD）",
+    "g": "b"
+  },
+  {
+    "artist": "Lombard",
+    "album": "Śmierć dyskotece",
+    "year": 1983,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "Polskie Nagrania „Muza\"（PL 1983-06 12\" Vinyl 12 軌，MB 該 release 的 catno 欄為空、未登記 barcode）；1999-05-24 KOCH International 52003-2 CD 17 軌（barcode 664125200327）",
+    "why": "Lombard 1981 年組於波茲南，是戒嚴之後那一批「女聲主唱＋硬邊新浪潮」的代表，這張 1983-06 的首作是 MB 名下 21 個 RG 裡最早的一張 Album。廠牌上它與本組 Kombi《Nowy rozdział》(1983)、Oddział Zamknięty（1984）同屬 **Polskie Nagrania „Muza\"** 那一側，三張都在 1983–84 年——**本組 22 張裡走國營廠的就只有這三張，而且全部集中在 1983–84 這兩年；1985 年之後的十六張全部走 Tonpress／Pronit／Polton／Klub Płytowy Razem／PolJazz 或自製卡帶**，這條時間線比任何單張碟都更能回答簡報第三節那個問題。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Lombard`：回 5 筆全是 `Om`／`-M-` 的摺鍵假陽性（另有法語與比利時的同姓個人掛名在 MB 端，池中無），池中 0 張。",
+    "risk": "⚠ **波蘭文變音**：`Śmierć dyskotece` 的 Ś 與 ć 一個都不能省；去變音的 `Smierc dyskotece` 只能進 queryAlias。另外**部分外部端把盤名寫成帶驚嘆號的《Śmierć dyskotece!》**，MB RG 標題沒有驚嘆號，本卡照 MB。⚠ 1983 年那筆 release 的 **catno 欄是空的**（只有廠牌名 Polskie Nagrania „Muza\" 與 12 吋 12 軌）——依裁定 259 的紀律，這是「MB 該 release 沒有填 catno」，不是「當年沒有目錄號」，label 欄照實寫。⚠ 同名撞擊：`artist?query=artist:\"Lombard\"&limit=25` 全域回 **44 筆**，PL 只有本團（ef34e3cd-26a0-4b9c-a60d-a2abf17db170，Group／PL／begin 1981，disambiguation「Polish pop-rock band」），擋下的 24 個幾乎全是姓 Lombard 的個人（比利時歌手、法國指揮、法國管風琴家、production music 作者等）——**`Lombard` 同時是常見姓氏與一般名詞（當鋪），外部端全文檢索的噪音比 MB 端更大**；score 不採（第 250 條）。⚠ 同團 1984 年的《Szara maść》有三筆 release 互相矛盾（1984 那筆 15 軌、media 形態欄與 label-info 皆空；1985 那筆 12 吋卻只有 8 軌），**依裁定 227 不得當成同一版本**，本批不收，理由記此。CAA release-group 端點 **200（2 張圖）**（實測）。Apple `search` 店面 pl 與 us **兩個店面都 0 筆**（第 254 條：只寫觀察，不寫結論，另兩種查法交研究層）。",
+    "mbNote": "釘 release-group 09bb0d38-a623-3eb0-bd1e-54463bbca500。回問 release-group 端點（inc=artist-credits）：title「Śmierć dyskotece」、artist-credit 單一「Lombard」、first-release-date 1983-06、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得兩筆：ff18ed9f-9dcb-4609-93af-8e009ef4a2fa（1983-06 PL Official，12\" Vinyl 12 軌，Polskie Nagrania „Muza\"，catno 欄空）、f0c5732d-969e-49ce-82a2-58e96d6b3ec9（1999-05-24 Official，CD 17 軌，KOCH International 52003-2，barcode 664125200327，release country 欄空）。藝人 MBID ef34e3cd-26a0-4b9c-a60d-a2abf17db170（名下 21 個 RG）。刻意不釘：2ebf32b2-ebaa-32ba-8221-5c6b796f7731《Szara maść》1984（三筆 release 的年份、軌數與載體互相矛盾，見 risk）、47651676-ad3c-3129-990f-e026f106c56f《Wolne od cła》1984、aaf4166a-36ec-3b9e-89fb-f7525ecb8363《Anatomia》1985-06、81530101-a605-41eb-8708-61f0ce4d989d《Kreacje》1987（三張同期 Album，本批名額不足，留給下一批）、de105502-8c29-384f-99ac-c1e490b23fc2《Live》1983（Live，盤名過於通用）、01ea3562-c1c8-4546-9ecc-5fbe6fa688e5《Adriatyk, Ocean Gorący》1983（Single）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Lombard；Śmierć dyskotece；Smierc dyskotece；Śmierć dyskotece!",
+    "reissuedBy": "KOCH International（1999 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Kombi",
+    "album": "Nowy rozdział",
+    "year": 1983,
+    "genres": [
+      "pop",
+      "electronic"
+    ],
+    "label": "Polskie Nagrania „Muza\" SX 2164（PL 1983 Vinyl 9 軌，MB 未登記 barcode）；2005 PNCD 985 CD 9 軌、2017-09-22 同廠 9 57410 6（barcode 0190295741068）、2024 Hybrid SACD 10 軌（Polskie Nagrania „Muza\" ＋ Warner Music Poland，barcode 5021732444097）",
+    "why": "Kombi（MB life-span 1976–1992）是這條線上與龐克完全相反的那一極：合成器為主、寫給電台與電視的旋律，卻與 Dezerter、Siekiera 同時期、同一個發行體制。這張 1983 年的《Nowy rozdział》走 **Polskie Nagrania „Muza\" 的 SX 2164**，與本組 Oddział Zamknięty 的 SX 2171 只差七號——**兩張碟一個是新浪潮硬邊、一個是電子流行，在國營廠的同一套目錄號裡緊挨著，這就是 1983–84 年波蘭發行體制的實際樣子**，本組收它正是為了讓這個對照成立（簡報 b 組名單明列 Kombi）。MB 名下 21 個 RG 裡，1980 年代的 Album 有五張，這張是 1983 年那一張。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Kombi`：回 5 筆全是 `Om`／`-M-` 的摺鍵假陽性，池中 0 張。",
+    "risk": "⚠ 波蘭文變音：盤名 `Nowy rozdział` 的 ł 不能省，`Nowy rozdzial` 只能進 queryAlias。⚠ 同名撞擊：`artist?query=artist:\"Kombi\"&limit=25` 全域回 8 筆，PL 只有本團（53895583-37b5-4a39-97b9-6bed294bbae4，Group／PL／1976–1992，disambiguation 空），擋下 João Kombi 的個人專案（2024）、布里斯本的 Kombi Killers、一位澳洲 Person 與 Kombi-Nat 等 7 個；**disambiguation 空，靠 type＋country＋life-span 1976–1992 定位**，score 不採（第 250 條）。⚠ 曲風欄位：本卡給 pop＋electronic，**但這張在 MB 沒有任何 genre 標記，曲風是依合成器編制與同期目錄位置判的**，研究層若要改以廠牌與曲目為準。⚠ 同團另有一個 f4814754-9ad8-38fd-94ae-cfea9d45fe53《Kombi》1980 的自我同名盤與 b9bcdf3b-e087-4d87-a051-c5d4d0e2adbb《Muzyka młodej generacji》1979，**兩張都早於本卡**，本批不收的理由是 1979–80 兩張落在「1980 年代龐克與新浪潮」這條線的起點之前，留給 a 組或下一批。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl **0 筆**、us 回的唯一一筆是另一支團的同名單曲（1800483509「Turbo — Nowy rozdział - Single」2025）——**那不是本卡**。第 254 條：只寫觀察，另兩種查法交研究層。",
+    "mbNote": "釘 release-group a4bed5ca-48cd-36d5-b74a-07d6515b7b35。回問 release-group 端點（inc=artist-credits）：title「Nowy rozdział」、artist-credit 單一「Kombi」、first-release-date 1983、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得四筆：b1589002-4849-435e-868c-662afe95635b（1983 PL Official，Vinyl 9 軌，Polskie Nagrania „Muza\" SX 2164）、6a255f91-e411-4508-aefe-20a2569a4018（2005 CD 9 軌 同廠 PNCD 985）、3bb2a065-5887-4b36-8771-3dd19c31a033（2017-09-22 CD 9 軌 同廠 9 57410 6，barcode 0190295741068）、b49c2571-7a9e-4e33-ac8a-ad7aa4b7578f（2024 Hybrid SACD 10 軌，Polskie Nagrania „Muza\" 與 Warner Music Poland 並列，barcode 5021732444097）。藝人 MBID 53895583-37b5-4a39-97b9-6bed294bbae4（名下 21 個 RG，life-span 1976–1992）。刻意不釘：f4814754-9ad8-38fd-94ae-cfea9d45fe53《Kombi》1980（自我同名盤，早於本線起點）、44e8faa3-4c7d-3a17-8383-6f1a513d5f0d《Królowie życia》1981、bf8e4171-c729-4a18-a9ee-9abef27edcfa《Kombi 4》1985、372757fe-530d-4fc0-8be4-9b4aa5e5ee90《Tabu》1989（三張同期 Album，本批名額不足，留給下一批）、012c8697-5ca0-4365-82e0-ad14812d4951《10 Years: The Best of Kombi Live》1986（Live＋精選）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Kombi；Nowy rozdział；Nowy rozdzial",
+    "reissuedBy": "Polskie Nagrania „Muza\"（2005／2017 CD、2024 SACD 與 Warner Music Poland 並列）",
+    "g": "b"
+  },
+  {
+    "artist": "Izrael",
+    "album": "Biada, biada, biada",
+    "year": 1985,
+    "genres": [
+      "world",
+      "rock"
+    ],
+    "label": "Pronit M-0006（PL 1985 12\" Vinyl 12 軌，MB 未登記 barcode）；1996 Złota Skała GR003 CD 16 軌、2000 W Moich Oczach CD 16 軌（MB 未登記 catno）",
+    "why": "Izrael（MB life-span 1983-03–1995）是波蘭的雷鬼團，也是 Jarocin 那幾屆最常被點名的團之一——**這條線不是只有龐克**，1980 年代中期的波蘭地下場景裡雷鬼與龐克共用同一批場地、同一批廠牌，本卡就是證據：1985 年原版走 **Pronit 的 M-0006**，而本組 Armia《Antiarmia》(1987) 走的是同一家的 PLP 0075，**同一家廠牌兩年內同時出雷鬼與龐克**。MB 名下 14 個 RG 裡，1980 年代的 Album 有四張（1985 這張、同年的《Live - Róbrege '85》、1986《Nabij Faje》、1987《Duchowa rewolucja, część I》），本卡取最早的一張。曲風欄依池中慣例給 world（池中雷鬼卡如 Bob Marley & The Wailers、Burning Spear 全部標 world），另加 rock 標出它與龐克場景共生的那一面。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Izrael`：**0 筆**（這個掛名夠長、連假陽性都沒有）。",
+    "risk": "⚠ **掛名是國名的波蘭語拼法**，外部端全文檢索會大量撞到與音樂無關的條目；MB 端 `artist?query=artist:\"Izrael\"&limit=25` 回 5 筆，PL 只有本團（ddf15f3a-df92-4712-a874-c91719e1fac2，Group／PL／1983-03–1995，disambiguation 空），擋下尚比亞歌手 Izrael（ZM）與三個把 Izrael 當姓名的 Person；**disambiguation 空，靠 type＋country＋life-span 三項交叉**，score 不採（第 250 條）。⚠ 盤名 `Biada, biada, biada` **帶兩個逗號與重複字**，摺鍵會把逗號與空白全剝成 `biadabiadabiada`；外部端常見寫成《Biada biada biada》（無逗號）或《Biada, Biada, Biada》（大寫），三種寫法都進 queryAlias。⚠ 軌數兩說：1985 黑膠 12 軌、1996 與 2000 兩次 CD 皆 16 軌（第 251 條）。⚠ 同團 1986 年的《Nabij Faje》那筆 1986 release 的 **status 欄是空的**（不是 Official），依裁定 227 的紀律不得逕當原盤，本批不收。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl 與 us **用「Izrael Biada biada biada」查都是 0 筆**（第 254 條：只寫觀察，另兩種查法交研究層）。",
+    "mbNote": "釘 release-group d9439a10-5686-3e13-8fee-915a569f3462。回問 release-group 端點（inc=artist-credits）：title「Biada, biada, biada」、artist-credit 單一「Izrael」、first-release-date 1985、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得三筆：d8968052-4f78-4c4b-a5e9-17e4d4924848（1985 PL Official，12\" Vinyl 12 軌，Pronit M-0006）、f886bb10-5c24-3dea-86a7-1dfa3c827804（1996 CD 16 軌 Złota Skała GR003）、66b2c8de-90e4-3d49-a5bc-c4d8eb5d6c9c（2000 CD 16 軌 W Moich Oczach，catno 欄空）。藝人 MBID ddf15f3a-df92-4712-a874-c91719e1fac2（名下 14 個 RG）。刻意不釘：5683a05d-0cb4-4f93-93e2-6cd7e99545c3《Live - Róbrege '85》1985（同年的現場盤，依第 253 條可收但本批名額不足，是下一批最現成的一張 Róbrege 物證）、26002362-a608-36b4-a18b-5357e6fb3ab7《Nabij Faje》1986（1986 那筆 release 的 status 欄空，見 risk）、602f0d7e-0c95-4988-bac9-aef72d8613d6《Duchowa rewolucja, część I》1987（同期 Album，留給下一批）、e6a51632-b4ed-3b3b-8518-fecb06b2aac6《Duchowa rewolucja》2003（同名再發 RG，依裁定 260 不與 1987 那個混）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Izrael；Biada, biada, biada；Biada biada biada；Biada, Biada, Biada",
+    "reissuedBy": "Złota Skała（1996 CD）／W Moich Oczach（2000 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Sztywny Pal Azji",
+    "album": "Europa i Azja",
+    "year": 1987,
+    "genres": [
+      "rock"
+    ],
+    "label": "Polton PC-038（PL 1987 Cassette 12 軌，MB 未登記 barcode）；1988 Klub Płytowy Razem RLP 016 12\" Vinyl 12 軌、2000 Agencja Artystyczna MTJ CDMTJ10114 Enhanced CD 16 軌（barcode 5906409101148）",
+    "why": "Sztywny Pal Azji 1986 年組於卡托維治（MB life-span.begin 1986），是 Jarocin 那幾屆之後冒出來的最後一批 1980 年代波蘭新浪潮團之一，這張《Europa i Azja》是名下 14 個 RG 裡最早的一張。**它的載體順序與本組其他碟相反、而且是本組唯一一張這種形狀**：回問 release 端點得三筆，1987 年先出的是 **Polton 的卡帶 PC-038**，黑膠版要到 **1988 年才由 Klub Płytowy Razem 以 RLP 016 壓出來**——卡帶先、黑膠後，說明 1980 年代末的波蘭卡帶已經不只是地下自製的載體，也是半官方廠牌的首發選擇。廠牌上這張同時碰到本組兩家關鍵廠牌：Polton（另見 TSA 1982、Kult 1988、Dezerter 1987 卡帶）與 Klub Płytowy Razem（另見 Dezerter RLP 020、Kult RLP 015，本卡 RLP 016 就夾在兩者之間）。實掃 seed_cards.json 全 24,138 列，子字串雙向比對，`Sztywny Pal Azji` 池中 **0 筆**（掛名夠長、無假陽性）。",
+    "risk": "⚠ **掛名大小寫兩說**：MB artist 實體名是 `Sztywny Pal Azji`（db2c1531-4840-4bfb-99a1-d1ac5bc48259，Group／PL／begin 1986），但這張 release-group 的 **artist-credit 字串是小寫 p 的「Sztywny pal Azji」**。依第 6／20／70／120 條「掛名用 MB 實體的文字」，本卡取實體名的 `Sztywny Pal Azji`，**artist-credit 原字串記在此並進 queryAlias**——這正是第 20 條說的「`artist:` 比對的是 artist-credit 字串不是實體名」，下游用 artist-credit 反查時要用小寫那一種。⚠ 年份：RG first-release-date 是 1987（卡帶年），**黑膠是 1988**，兩個年份行文時要分開講，本卡 year 依規格取原盤年 1987。⚠ 軌數兩說：1987 卡帶與 1988 黑膠皆 12 軌，2000 年 MTJ 版 16 軌（第 251 條）。⚠ 短掛名回問（第 179／250 條）：`artist:\"Sztywny Pal Azji\"` 全域只回 1 筆，score 不採，以 type＋country=PL＋begin=1986 定位，MB 端乾淨。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl 與 us 都回兩筆、**年份全部標 2001**：1484538929「Sztywny Pal Azji — Europa i Azja」16 軌與 1484544119「…(Live)」20 軌——**前者的軌數對應 2000 年 MTJ 那版、年份又晚一年，後者根本是現場盤**，兩筆都不得拿來覆蓋本卡。第 254 條的另兩種查法留給研究層。",
+    "mbNote": "釘 release-group 2408a616-ce53-3620-b627-85a6b33b3d71。回問 release-group 端點（inc=artist-credits）：title「Europa i Azja」、**artist-credit 字串是「Sztywny pal Azji」（小寫 p）**、first-release-date 1987、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得三筆：8dc65101-bc8b-4daf-a75c-c69dea1ee92b（1987 PL Official，Cassette 12 軌，Polton PC-038）、368a7bcf-b7a8-426c-be85-825525379244（1988 PL Official，12\" Vinyl 12 軌，Klub Płytowy Razem RLP 016）、6eb09e65-0a82-4398-812e-ce2b39b13a4b（2000 PL Official，Enhanced CD 16 軌，Agencja Artystyczna MTJ CDMTJ10114，barcode 5906409101148）。藝人 MBID db2c1531-4840-4bfb-99a1-d1ac5bc48259（實體名 Sztywny Pal Azji，名下 14 個 RG）。刻意不釘：369b6746-c4f5-3d23-86f9-3e4864cfc460《Szukam nowego siebie》1989（同期第二張 Album，本批名額不足，留給下一批）、1db721d5-ef97-33b5-a41b-ffeccfd61978《Spotkanie z ... 1986 - 1994》1998 與 fad959f7-d555-3d43-b0bd-6a139d82c2ee《Złota Kolekcja - Nieprzemakalni》2006（Compilation）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Sztywny Pal Azji；Sztywny pal Azji；Europa i Azja",
+    "reissuedBy": "Klub Płytowy Razem（1988 黑膠）／Agencja Artystyczna MTJ（2000 CD）",
+    "g": "b"
+  },
+  {
+    "artist": "Abaddon",
+    "album": "Wet za wet",
+    "year": 1986,
+    "genres": [
+      "rock"
+    ],
+    "label": "New Wave Records NW 018（**FR** 1986-10 12\" Vinyl 9 軌，MB 未登記 barcode）；1991 Melissa Productions M 0010 卡帶 9 軌、2001 Noise Annoys NOISE 037 CD 13 軌",
+    "why": "本組廠牌形狀最極端的一張，也是簡報那句「⚠ c-123 實測推翻過『一切經國營廠牌』」在波蘭側最硬的證據：Abaddon 1982 年組於波蘭（MB disambiguation 明寫 Polish punk band），這張 1986-10 的唯一一張 LP **是在法國壓的——release country 是 FR、廠牌是 New Wave Records、catno NW 018**，MB 名下 7 個 RG 裡 1980 年代就只有這一張正規盤，**波蘭端在當年一筆 release 都沒有**；要到 1991 年才有 Melissa Productions 的卡帶（M 0010）、2001 年才有 Noise Annoys 的 CD。與本組其他 21 張放在一起看：三張走國營 Muza、五張走 Tonpress、三張走 Polton、兩張走 Pronit、三張走 Klub Płytowy Razem、一張走 PolJazz、兩張只有自製卡帶、一張走美國 Maximumrocknroll——**再加上這張走法國，1980 年代波蘭龐克的發行路徑一共有八條，國營廠只是其中一條**。實掃 seed_cards.json 全 24,138 列，子字串雙向比對查 `Abaddon`：**0 筆**。",
+    "risk": "⚠ **同名撞擊是本組最嚴重的一組**：`artist?query=artist:\"Abaddon\"&limit=25` 全域回 **70 筆**（Abaddon 是惡魔學裡的常見名，全世界金屬團都在用），回傳 25 筆裡只有 1 筆是波蘭（e7fa92cb-fca0-425d-bccf-aea364bf1f92，Group／PL／begin 1982，disambiguation「Polish punk band」）；擋下的包括巴西、保加利亞、哥倫比亞、墨西哥四支同名金屬團與另外二十個——**沒有 disambiguation 與 country 就完全分不出來，score 一律不採**（第 250 條）。⚠ **release country 是 FR 不是 PL**，下游若用「波蘭盤」當前提去找店面或封面會全部落空；同理，1986 年的波蘭端沒有任何 release，**不得寫成「在波蘭發行」**。⚠ 軌數兩說：1986 黑膠與 1991 卡帶皆 9 軌、2001 CD 13 軌（第 251 條）。⚠ 同團另有一個 d0a0fb98-1902-4c46-85b6-73806a4c404a《Abaddon / Rejestracja》1985，**那是與另一支團的分軌合輯、artist-credit 帶斜線**，依裁定 258 與本批第 321 條不進池（見刻意不釘）。CAA release-group 端點 **200（1 張圖）**（實測）。Apple `search` 店面 pl 與 us **兩個店面都 0 筆**（第 254 條：只寫觀察，不寫結論，另兩種查法交研究層）。",
+    "mbNote": "釘 release-group be60192f-be6a-354c-9aee-fe0229e01333。回問 release-group 端點（inc=artist-credits）：title「Wet za wet」、artist-credit 單一「Abaddon」、first-release-date 1986-10、primary-type Album、secondary-types 空。回問 release 端點（inc=media+labels）得三筆：90c1540e-8b78-4d4a-b0b9-1fc191322257（1986-10 **FR** Official，12\" Vinyl 9 軌，New Wave Records NW 018）、03710f22-908c-3c31-9f4d-a7e205ff3087（1991 PL Official，Cassette 9 軌，Melissa Productions M 0010）、08be4471-3ad2-4658-851a-485305eb82b6（2001 PL Official，CD 13 軌，Noise Annoys NOISE 037）。藝人 MBID e7fa92cb-fca0-425d-bccf-aea364bf1f92（名下 7 個 RG，Group／PL／begin 1982，disambiguation「Polish punk band」）。刻意不釘：d0a0fb98-1902-4c46-85b6-73806a4c404a《Abaddon / Rejestracja》1985（artist-credit 是兩支團的斜線合掛名，依裁定 258 不進池）、2fb964d1-81d7-4efb-86ae-802fb2fac024《EP Jarocin '83》2017（EP）、78a2aaf2-8003-400b-bdf3-0ccbcfd8fc52《Jarocin '84》2019（2019 年才出的現場盤，超窗口，但**是下一批 Jarocin 線最現成的一張**）、5bb15a7a-74aa-4078-840d-b1e0b1d75d82《Godzina Krzywd》2004（超窗口）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Abaddon；Wet za wet；Abaddon (Polish punk band)",
+    "reissuedBy": "Melissa Productions（1991 卡帶）／Noise Annoys（2001 CD）",
+    "g": "b"
+  }
+]

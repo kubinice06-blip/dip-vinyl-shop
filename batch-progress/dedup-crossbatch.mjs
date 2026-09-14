@@ -52,12 +52,19 @@ const strip = s => String(s || '')
 
 const seen = new Map();
 const dup = [];
+const skipped = [];
 let fromProp = 0;
 for (const b of batches) {
   const got = rowsOf(b);
   if (!got) { console.log(`${b}：查無卡單也查無 prop，略過`); continue; }
   if (got.src === 'prop') fromProp++;
   for (const c of got.rows) {
+    // 2026-09-14（c-130 a 組抓到）：三批並行時，某一組正在覆寫自己的 prop 檔，
+    // 這裡就會讀到半寫入的陣列——空洞是 null、或是只有部分欄位的物件。
+    // 從前這會讓 `strip(c.artist)` 直接炸掉，或把多筆壓成同一個 `'|'` 鍵而報成撞卡，
+    // **於是所有並行批次的 chk-prop 會一起紅，看起來像真的撞卡**。
+    // 跳過但要出聲：靜靜略過會把真正壞掉的資料也一起藏起來。
+    if (!c || typeof c !== 'object' || (!c.artist && !c.album)) { skipped.push(b); continue; }
     const k = strip(c.artist) + '|' + strip(c.album);
     if (seen.has(k)) dup.push({ b, c, prev: seen.get(k) });
     else seen.set(k, { b, c });
@@ -65,5 +72,11 @@ for (const b of batches) {
 }
 for (const d of dup)
   console.log(`⚠ ${d.b} ${d.c.artist}《${d.c.album}》${d.c.year}  ←→  ${d.prev.b} ${d.prev.c.artist}《${d.prev.c.album}》${d.prev.c.year}`);
+if (skipped.length) {
+  const byBatch = [...new Set(skipped)].map(b => `${b}×${skipped.filter(x => x === b).length}`).join('、');
+  console.log(`\n⚠ 略過 ${skipped.length} 筆空洞或缺掛名／盤名的列（${byBatch}）——`);
+  console.log(`  若該批正在被策展代理覆寫，這是併行寫入的半成品，重跑一次即可；`);
+  console.log(`  若沒有代理在跑，那就是 prop 檔真的壞了，要去看。`);
+}
 console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}`);
 process.exit(dup.length ? 1 : 0);

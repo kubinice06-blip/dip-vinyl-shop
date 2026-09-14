@@ -1,0 +1,455 @@
+[
+ {
+  "artist": "Czesław Niemen",
+  "album": "Sukces",
+  "year": 1968,
+  "genres": [
+   "rock",
+   "soul"
+  ],
+  "label": "Polskie Nagrania „Muza” X 0390（PL 1968，12\" Vinyl 12 軌）；1996 年 Muza PNCD 354／PNCD 1571 與 Polskie Radio PRCD 333 三種 CD 再發，barcode 5901448113336",
+  "why": "Niemen 與 Akwarele 樂隊的第二張 LP，接在池中已有的《Dziwny jest ten świat》(1967) 之後、《Enigmatic》(1970) 之前，正好把池中那兩張中間的空格補起來。MB 這個 release-group 轄下三個 release 全是波蘭盤：1968 年的 Muza X 0390 黑膠 12 軌是原盤，另兩筆是 1996 年的 CD 再發（12 軌不變）。實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），漢字無涉、拉丁與去變音兩種寫法子字串雙向比對：池中這位藝人只有《Dziwny jest ten świat》1967 與《Enigmatic》1970 兩張（都是 c-56 那批上的，manifest 為 onboarding-manifest-c56-20260903.json），《Sukces》零命中。⚠ 這張的 MB artist-credit 是「Niemen & Akwarele」不是「Czesław Niemen」——依裁定 311（本批立，沿用 c-123 第 258 條的判準）取池中原字串，理由是池中已有 Czesław Niemen 兩張，用合掛名會把同一人拆成兩個掛名。",
+  "risk": "撞卡：盤名《Sukces》在池中零命中（24,138 列雙向子字串）。⚠ 掛名偏離 artist-credit：MB 寫「Niemen & Akwarele」、Apple 波蘭店面也寫「Czesław Niemen & Akwarele」，卡單取「Czesław Niemen」是為了不與池中既有兩張分裂，研究層不可拿 artist-credit 直接當掛名，也不可回頭把池中那兩張改成合掛名。⚠ 變音字母：`Czesław` 的 ł 不可寫成 l，`Sukces` 無變音。年份：MB first-release-date 1968 與盤面目錄號 X 0390 一致；Apple 波蘭店面 collectionId 1600143170 標 1968-05-28、12 軌、℗ 1968 Polskie Nagrania（版權行已註明現由 Warner Music Group 持有，那是 1991 年後的權利歸屬，不是 1968 年的發行方，行文不可把 Warner 寫成這張的廠牌）。軌數 12 與 MB 原盤一致。CAA release-group 端點 200、1 張圖（實測）。以上只是 search 與藝人目錄兩種查法的觀察、不是結論，研究層仍要跑 collectionId 直查（第 254 條）。",
+  "mbNote": "釘 release-group 2909bd7b-cf82-37cd-a4d6-0bfd9d31dcd4。回打 release-group/<id>?fmt=json&inc=artist-credits+releases 覆核：title「Sukces」、artist-credit「Niemen & Akwarele」、first-release-date 1968、primary-type Album、secondary-types 空。release 端點（?release-group=<id>&inc=media+labels&limit=100）補得：3 個 release，1968 PL Official 12\" Vinyl 12 軌 Polskie Nagrania „Muza” X 0390（無 barcode）、1996 PL Official CD 12 軌 Muza PNCD 1571＋PNCD 354＋Polskie Radio PRCD 333（barcode 5901448113336）、1996 PL Official CD 12 軌 Muza PNCD 354。藝人 MBID 021810b3-8775-4939-bc99-e97efdfadd6c（Person／Poland／1939-02-16，名下 46 個 RG、其中 42 個 primary-type=Album）。刻意不釘：a542de7d-83c8-38f2-9d3c-69d2417b3121《Dziwny jest ten świat》1967 與 488726ba-042e-35bb-8432-52c7444bc702《Enigmatic》1970（池中已有）、563d1968-a3d5-3142-99fd-4c8a741207f3《Czy mnie jeszcze pamiętasz?》1969（本批名額不足，下一批現成）、e52f039b-8df9-3482-8124-8d8dce9665da《[czerwony album]》1992（Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Czesław Niemen；Czeslaw Niemen；Niemen；Niemen & Akwarele；Czesław Niemen & Akwarele；Sukces",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Czesław Niemen",
+  "album": "Niemen",
+  "year": 1971,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Polskie Nagrania „Muza” SXL 0710-711（PL 1971，雙片 12\" Vinyl，4＋7＝11 軌）；2024 年 Muza／Warner Music Poland Hybrid SACD 11 軌再發，barcode 5054197935916",
+  "why": "Niemen 1971 年的雙片裝，波蘭樂評習慣以封面顏色稱之，是他從 Akwarele 時期的 beat／soul 轉向長篇編制的那一格。MB 這個 release-group 轄下只有兩個 release：1971 年 Muza SXL 0710-711 的雙片黑膠（第一片 4 軌、第二片 7 軌）與 2024 年的 Hybrid SACD（11 軌，掛 Muza 與 Warner Music Poland 兩家）。收這張的理由是池中的 Niemen 停在《Enigmatic》(1970)：補上 1968《Sukces》、1971 這張與 1976《Katharsis》之後，池中才有他從 beat 到 Moog 的三個段落，而不是只有兩張早期盤。實掃 24,138 列，這張零命中。",
+  "risk": "⚠ 這張最容易撞的是 Niemen 自己名下另外兩個形近盤名：MB 另有 7d46de6b-39d9-3628-996d-af37341b3cbe《Czesław Niemen》1972 與 Apple 波蘭店面的 1452603858《Niemen, Vol. 1 & Vol. 2》(8 軌、1972-11-11、℗ 1972)，**那是 1972 年的另一套、不是本張**，本卡與它的 MBID 都寫進刻意不釘，配對時不可誤取。⚠ 年份分歧：Apple 波蘭店面 collectionId 1453865378《Niemen》11 軌、標 1970-06-12、℗ 1970，比 MB 的 1971 早一年；軌數 11 與 MB 原盤的 4＋7 對得上，但依 c-123 第七節第 4 點「Apple 年份不得覆蓋 MB 與盤面目錄號」，`year` 取 1971（Muza SXL 0710-711 的發行年），這個一年落差研究層要另行核對。⚠ 盤名與掛名高度重疊（artist 是 Czesław Niemen、album 是 Niemen），`chk-prop` 的摺鍵是 czesławniemen|niemen、不會與池中任何一列相撞，但外部字串比對極易落空；`selfTitled` 判 false（盤名不等於掛名全稱）。變音：`Czesław` 的 ł 不可省。CAA release-group 端點 200、7 張圖（本批最高，實測）。",
+  "mbNote": "釘 release-group 6e2d3e44-9f17-48d4-85f7-9d5ac2fde471。回打 release-group 端點覆核：title「Niemen」、artist-credit「Czesław Niemen」、first-release-date 1971、primary-type Album、secondary-types 空。release 端點補得：2 個 release，1971 PL Official 12\" Vinyl 4 軌＋12\" Vinyl 7 軌 Polskie Nagrania „Muza” SXL 0710-711（無 barcode）、2024 PL Official Hybrid SACD 11 軌 Muza＋Warner Music Poland（barcode 5054197935916）。藝人 MBID 021810b3-8775-4939-bc99-e97efdfadd6c。刻意不釘：7d46de6b-39d9-3628-996d-af37341b3cbe《Czesław Niemen》1972（同掛名、形近盤名的另一套，見 risk）、d94dfabf-4544-4bf6-af11-c944f4d6ecd8《Muzyka Teatralna I Telewizyjna》1971（同年劇／電視配樂，Apple 那筆掛名寫「Kurylewicz, Warska & Czesław Niemen」，非本人單獨作品）、0ea348a9-c108-3c9b-986e-5ac289e18b12《Strange Is This World》1972（1967 年那張的英語版）、e52f039b《[czerwony album]》1992（Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Czesław Niemen；Czeslaw Niemen；Niemen；Niemen SXL 0710-711",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Czesław Niemen",
+  "album": "Katharsis",
+  "year": 1976,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Polskie Nagrania „Muza” SX 1262（PL 1976，12\" Vinyl 9 軌）；2003 與 2007 年 Polskie Radio PRCD 339 兩次 CD 再發（10 軌）",
+  "why": "Niemen 1976 年的獨奏盤，是他目錄裡電子鍵盤比重最高的一張，也是本批替池中補的第三個段落（1968 beat／1971 雙片／1976 電子）。MB 轄下三個 release：1976 年 Muza SX 1262 黑膠 9 軌是原盤，2003 與 2007 年兩次 CD 再發都掛 Polskie Radio PRCD 339 且多一軌（10 軌）。⚠ 這裡有個下游會踩的坑：再發的廠牌是 Polskie Radio、不是 Muza，而且軌數與原盤不同——依 c-53 第 251 條，行文引軌數前要先選版本，卡單 `label` 欄記的是 1976 年那一版的 9 軌。實掃 24,138 列，池中 Niemen 只有 1967 與 1970 兩張，這張零命中。",
+  "risk": "撞卡：盤名《Katharsis》在池中零命中；⚠ 但 Katharsis 是常見詞（另有同名金屬團與多張同名碟），自動比對要鎖整個掛名字串、不可只比盤名。⚠ 版本軌數分歧：黑膠原盤 9 軌、CD 再發 10 軌、Apple 標 9 軌——第 251 條的形狀，研究層引軌數要指明版本。年份：MB 1976、盤面 SX 1262、Apple 波蘭店面 collectionId 1453767551 標 1976-02-15、℗ 1976 Polskie Nagrania，三者一致。⚠ Apple 版權行寫「owned by Polskie Nagrania, A Warner Music Group Company」——那是 1991 年後的權利歸屬，不是 1976 年的發行方，不可寫成 Warner 發行。變音：`Czesław` 的 ł 不可省。CAA release-group 端點 200、3 張圖（實測）。以上只是兩種查法的觀察，不是結論。",
+  "mbNote": "釘 release-group db7c0b59-6b79-34c7-9c1f-8abf6498ea54。回打 release-group 端點覆核：title「Katharsis」、artist-credit「Czesław Niemen」、first-release-date 1976、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1976 PL Official 12\" Vinyl 9 軌 Polskie Nagrania „Muza” SX 1262（無 barcode）、2003 PL Official CD 10 軌 Polskie Radio PRCD 339、2007 PL Official CD 10 軌 Polskie Radio PRCD 339。藝人 MBID 021810b3-8775-4939-bc99-e97efdfadd6c。刻意不釘：b76b5f70-44df-3691-8d60-d0426ba76862《Aerolit》1974、588c451a-fb6b-4055-abc3-f095cac4301e《Idée Fixe》1978、fcb35889-e1d5-34f7-a74d-70d6fcf88380《Postscriptum》1980、e88f1916-ac47-33c4-a3df-01506cc43af2《Marionetki》1972（四張都在窗口內、都是本批名額不足而未收，下一批現成）；44eb4b8e-34c2-4f8f-b499-f550c61fd88f《Przeprowadzka》1982（secondary-types Soundtrack，依規格不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Czesław Niemen；Czeslaw Niemen；Niemen；Katharsis",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "SBB",
+  "album": "Pamięć",
+  "year": 1976,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Polskie Nagrania „Muza” SX 1345（PL 1976，12\" Vinyl 3 軌）；2008 年 Metal Mind Productions MMP CD 0322 10 軌再發（barcode 5907785026056）、2024 年 Muza／Warner Music Poland Hybrid SACD 3 軌（barcode 5021732263261）",
+  "why": "SBB 第三張錄音室盤，接在池中已有的《Nowy horyzont》(1975) 之後。MB 轄下三個 release：1976 年 Muza SX 1345 的黑膠只有 3 軌（長篇組曲式，整面一首的編制），2008 年 Metal Mind 的 CD 擴成 10 軌，2024 年 SACD 又回到 3 軌——**三個版本的軌數是 3／10／3**，正是 c-53 第 251 條的形狀，卡單 `label` 欄記的是 1976 年那一版。實掃 24,138 列（拉丁與去變音兩種寫法雙向子字串），池中 SBB 只有《Nowy horyzont》1975 一張（c-56 那批），本張零命中。收這張與《Ze słowem biegnę do ciebie》(1977)、《Welcome》(1979) 三張，是把池中孤零零的一張補成 1975–1979 的連續段落。",
+  "risk": "撞卡：盤名《Pamięć》在池中零命中。⚠ 掛名 SBB 只有三個字母，前綴／子字串比對必然亂命中（c-123 第一節記過 `Ka`、`Om` 這一類的形狀），判池中有無一律以整個掛名字串為準；MB 端反而乾淨：`artist?query=artist:\"SBB\"&limit=25` 只回 1 筆（a431e28b，Group／Poland／1971），沒有同名實體要擋。⚠ 變音：`Pamięć` 的 ę 與 ć 一個都不能省，`chk-prop` 的 NFKC 摺不掉，寫成 `Pamiec` 會與 Apple 端的去變音寫法混成兩個盤名。⚠ 版本軌數 3／10／3 分歧（見 why），行文引軌數要先選版本。年份：MB 1976 與盤面 SX 1345 一致；Apple 波蘭店面 collectionId 1435294468《Pamięć》3 軌**標 1975-09-03**，比 MB 早一年——依 c-123 第七節第 4 點以 MB 與盤面目錄號為準，取 1976，落差寫在此。CAA release-group 端點 200、3 張圖（實測）。",
+  "mbNote": "釘 release-group f840e649-45c6-36d9-aadc-f8c7c4b05b40。回打 release-group 端點覆核：title「Pamięć」、artist-credit「SBB」、first-release-date 1976、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1976 PL Official 12\" Vinyl 3 軌 Polskie Nagrania „Muza” SX 1345（無 barcode）、2024 PL Official Hybrid SACD 3 軌 Muza＋Warner Music Poland（barcode 5021732263261）、2008 PL Official CD 10 軌 Metal Mind Productions MMP CD 0322（barcode 5907785026056）。藝人 MBID a431e28b-cc49-48c0-81f5-c9d4dd487023（Group／Poland／1971，名下 77 個 RG、其中 75 個 Album，但**絕大多數是 2002 年之後的現場考古盤**，窗口內的錄音室盤只有 6 張）。刻意不釘：e91d45b8-d8c5-3e8c-bf21-6e1a28a88bb4《Nowy horyzont》1975（池中已有）、e8ba6460-6fcc-4e58-a5a7-ccd56c6d1b5a《SBB》1974（secondary-types Live 的首張，依第 253 條可收但本批名額不足）、28624c94-c899-4ebb-8fe4-02a207e967c3 與 7e8069a1-174b-4814-aac5-f93f5f0c0857 兩個 1978 年同名《SBB》、667340b1-c158-40fd-b9ce-3016a69a34c7《SBB》2012（**三個 RG 同名，依 c-123 第 260 條同名同掛名一組只收一張，本批整組不收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "SBB；Silesian Blues Band；Szukaj Burz Buduj；Pamięć；Pamiec",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "SBB",
+  "album": "Ze słowem biegnę do ciebie",
+  "year": 1977,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Polskie Nagrania „Muza” SX 1434（PL 1977，Vinyl 2 軌）；1997 Muza PNCD 395（CD 2 軌）、2004 Muza PNCD 846（CD 2 軌，barcode 5901844987821）、2004／2006 Metal Mind MMP CD 0323（CD 3 軌）、2024 Muza／Warner Hybrid SACD 2 軌（barcode 5021732444066）",
+  "why": "SBB 1977 年的錄音室盤，兩軌各佔一面的長篇編制——與 c-123 記過的 Rein Rannap《Improvisatsioonid》同一種形狀（**軌數少不是單曲的證據**，第 174 條的反面情形）。MB 轄下六個 release，1977 年 Muza SX 1434 是原盤，其餘五筆全是 1997 年之後的 CD／SACD 再發，其中 Metal Mind 那兩筆多補一軌（3 軌）。本張與《Pamięć》(1976)、《Welcome》(1979) 一起收，理由見《Pamięć》卡：池中 SBB 只有 1975 那一張。實掃 24,138 列，本張零命中。",
+  "risk": "⚠ 這張是本批「軌數不能當形態判準」的實例：黑膠原盤只有 2 軌，若照軌數判會誤判成單曲或 EP，實際是 12 吋兩面各一首的錄音室 LP（依第 174 條反面與 c-123 第三節）。⚠ 盤名大小寫分歧：2024 年 SACD 的 title 寫「Ze słowem biegnę do **C**iebie」（大寫 C），其餘五筆都是小寫 c，卡單取原盤那一版的小寫寫法。⚠ 變音：`słowem` 的 ł、`biegnę` 的 ę 一個都不能省。撞卡：盤名在池中零命中（24,138 列）；掛名 SBB 極短，判池中有無要看整個掛名字串。年份：MB 1977 與盤面 SX 1434 一致；Apple 波蘭店面 collectionId 1435509992 標 **1977-09-07**、2 軌，與 MB 一致，是本批少數 Apple 年份對得上的一張。CAA release-group 端點 200、1 張圖（實測）。以上只是 search 與藝人目錄兩種查法的觀察，不是結論。",
+  "mbNote": "釘 release-group 855d70b0-7c0f-3a6c-84f0-2cc55913fc87。回打 release-group 端點覆核：title「Ze słowem biegnę do ciebie」、artist-credit「SBB」、first-release-date 1977、primary-type Album、secondary-types 空。release 端點補得：6 個 release，1977 PL Official Vinyl 2 軌 Polskie Nagrania „Muza” SX 1434（無 barcode）、1997 PL CD 2 軌 Muza PNCD 395、2004 PL CD 2 軌 Muza PNCD 846（barcode 5901844987821）、2004 PL CD 3 軌 Metal Mind MMP CD 0323（barcode 5907785026063）、2006 PL CD 3 軌 Metal Mind MMP CD 0323 DG、2024 PL Hybrid SACD 2 軌 Muza＋Warner Music Poland（barcode 5021732444066，title 大寫 Ciebie）。藝人 MBID a431e28b-cc49-48c0-81f5-c9d4dd487023。刻意不釘：0c170b6f-1a34-330d-a03d-a0960512b875《Follow My Dream》1978（**1978 年西德 Spiegelei 160.611 原壓，完全不經波蘭國營系統——見裁定 312，本批名額不足未收，是下一批最有價值的一張**）、53daacc2-1a46-46d9-b995-944cb3cc8263《Memento z banalnym tryptykiem》1981。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "SBB；Ze słowem biegnę do ciebie；Ze slowem biegne do ciebie；Ze słowem biegnę do Ciebie",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "SBB",
+  "album": "Welcome",
+  "year": 1979,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "⚠ **Wifon LP 004**（PL 1979，12\" Vinyl 7 軌）——**不是 Polskie Nagrania „Muza”**；2004 Metal Mind MMP CD 0328（CD 14 軌，barcode 5907785026117）、2019-10-25 GAD Records GAD CD 109（CD 11 軌，barcode 5903068120510）",
+  "why": "SBB 1979 年的錄音室盤，也是本批推翻「波蘭一切經國營廠牌」這個前提的第一個實例（見裁定 312）：MB `release` 端點回的 label-info 明寫 **Wifon LP 004**，Wifon 是簡報第三節列在 Muza 之外的那幾家之一，這張沒有任何一筆 Muza release。收這張的位置是把池中的 SBB 從 1975 一張補成 1975／1976／1977／1979 四個年份。MB 轄下三個 release，1979 年 Wifon 黑膠 7 軌是原盤，2004 Metal Mind 擴成 14 軌、2019 GAD Records 為 11 軌——**三版軌數 7／14／11 全不同**（第 251 條），卡單 `label` 欄記的是 1979 那一版。實掃 24,138 列，本張零命中。",
+  "risk": "⚠ **`label` 欄不可預設填 Melodiya 型的國營廠牌**（c-123 第 257 條的波蘭版）：這張的廠牌是 Wifon，若下游照「波蘭＝Muza」的印象回填會寫錯。⚠ 盤名《Welcome》是英語常見詞，Apple 搜尋 `SBB Welcome` 在波蘭店面回 2 筆，其中 1740808351「NuAugustine — Welcome To the S.B.B」**不是本團**，配對時必須擋掉；正解是 collectionId 1503845022《Welcome》7 軌、標 1979-01-01、℗ 1979 **GAD Records**——軌數 7 與 MB 原盤一致，但那個 ℗ 行記的是 2019 年再發方，不是 1979 年的 Wifon，行文不可把 GAD 寫成原發行方。版本軌數 7／14／11 分歧（見 why）。撞卡：盤名在池中零命中；掛名 SBB 極短，判池中有無要看整個掛名字串。年份：MB 1979 與 Wifon LP 004 一致。CAA release-group 端點 200、3 張圖（實測）。",
+  "mbNote": "釘 release-group d7c5be05-18ec-374d-afdb-5ae9d8df4ef0。回打 release-group 端點覆核：title「Welcome」、artist-credit「SBB」、first-release-date 1979、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1979 PL Official 12\" Vinyl 7 軌 **Wifon LP 004**（無 barcode）、2004 PL Official CD 14 軌 Metal Mind Productions MMP CD 0328（barcode 5907785026117）、2019-10-25 PL Official CD 11 軌 GAD Records GAD CD 109（barcode 5903068120510）。**本 RG 轄下無任何 Polskie Nagrania „Muza” release。** 藝人 MBID a431e28b-cc49-48c0-81f5-c9d4dd487023。刻意不釘：0c170b6f《Follow My Dream》1978（西德 Spiegelei 原壓）、9607bd86-bce8-4fc0-bc4f-29116343c5b4《Behind the Iron Curtain》2009 等六十餘張 2002 年後的 Live 考古盤（依第 253 條 Live 可收，但那些是後製發行、不在窗口內）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "SBB；Welcome；SBB Welcome Wifon LP 004",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Breakout",
+  "album": "Na drugim brzegu tęczy",
+  "year": 1969,
+  "genres": [
+   "rock",
+   "blues"
+  ],
+  "label": "⚠ **Pronit XL 0531**（PL 1969，12\" Vinyl 10 軌）——**不是 Polskie Nagrania „Muza”**；2005 Muza PNCD 988（CD 10 軌，barcode 5907783499883）、2024 Muza／Warner Hybrid SACD 11 軌（barcode 5021732394828）；另有一筆 1969 PL release 的 label-info 整個欄位為空（11 軌）",
+  "why": "Breakout 的首張 LP，池中已有的《Blues》(1971) 的前兩年。MB 這個 release-group 轄下四個 release，1969 年那筆原壓掛的是 **Pronit XL 0531**——裁定 312 的第二個實例，波蘭 1960 年代的搖滾盤有相當一部分走 Pronit 而不是 Muza。實掃 seed_cards.json 全 16,450 列＋manifest＋c47（24,138 列）雙向子字串：池中 Breakout 只有《Blues》1971 一張（c-56 那批），本張零命中。這張補的是「池中那張的起點」——依藍圖 §五-1 先確認第一張該有的在不在，這位的第一張正是它。",
+  "risk": "⚠ **同名撞擊極高**：`artist?query=artist:\"Breakout\"&limit=25` 回 24 筆，波蘭這支（987b3e9f，Group／Poland／1968，disambiguation「Polish blues band」）**靠 area＋life-span.begin＋disambiguation 三項交叉定位，score 排序一律不採**（第 250 條）；擋下的 23 個同名實體含法國龐克團、三支英國龐克／oi 團、德國 breakbeat、瑞典 thrash、荷蘭 stoner，另有一筆 **Old Breakout（Poland／2013／blues rock）** 同樣是波蘭血統的干擾項。⚠ 變音：`tęczy` 的 ę 不可省，Apple 波蘭店面就寫成去變音的「Na Drugim Brzegu Teczy」（collectionId 1062838777、10 軌、1969-01-01），**MB 與 Apple 兩邊的寫法不同，字串比對必然落空**（第 260 條的形狀），要靠 collectionId 直查。⚠ 同 RG 底下另有一筆 1969 年的 release **label-info 整個欄位為空、11 軌**，與 Pronit 那筆軌數不同，下游不可混用。年份：MB 1969、盤面 XL 0531、Apple 1969，三者一致。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 17fdec5c-770f-38b5-acc4-647061d6a450。回打 release-group 端點覆核：title「Na drugim brzegu tęczy」、artist-credit「Breakout」、first-release-date 1969、primary-type Album、secondary-types 空。release 端點補得：4 個 release，1969 PL Official 12\" Vinyl 10 軌 **Pronit XL 0531**（無 barcode）、1969 PL Official 形態欄空 11 軌 label-info 空、2005 PL Official CD 10 軌 Muza PNCD 988（barcode 5907783499883）、2024 PL Official Hybrid SACD 11 軌 Muza＋Warner Music Poland（barcode 5021732394828）。藝人 MBID 987b3e9f-d724-4467-8adf-eeaded261fbb（Group／Poland／1968，disambiguation「Polish blues band」，名下 12 個 RG、11 個 Album）。刻意不釘：5a3ed7e3-b680-3da6-a2bb-076450dbce2d《Blues》1971（池中已有）、3b7448d9-3cc4-364d-ab62-ce22ac9255f8《70A》1970、0668133c-bc67-3ca7-99bb-5dbefce5ece8《Karate》1972、b21d6104-8853-3774-b0d5-c97a5eb998c6《Kamienie》1974、1405b14d-2c8a-4d2b-8e64-b8df963d7447《Ogień》1973、3b9c614f-68e8-4974-8164-21d6da48f26f《Mira》1971（**五張全在窗口內、全是 Muza 原壓，是下一批最現成的一組**）；35d513f6-e047-4c01-a909-0d9436d21438《Oni zaraz przyjdą tu》2001（Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Breakout；Na drugim brzegu tęczy；Na Drugim Brzegu Teczy；Breakout Poland blues",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Budka Suflera",
+  "album": "Cień wielkiej góry",
+  "year": 1975,
+  "genres": [
+   "rock",
+   "blues"
+  ],
+  "label": "Polskie Nagrania „Muza” SX 1264（PL 1975，12\" Vinyl 5 軌）；1991 Muza PNCD 154（CD 5 軌）、1993 TA Music AATZ 002（CD 8 軌）、2010 Budka Suflera Production BSP 01-10（CD／數位 5 軌，barcode 5901549593013）、2023 Muza／Warner Hybrid SACD 5 軌（barcode 5054197887383）",
+  "why": "Budka Suflera 的首張 LP。這支團在池中是零——實掃 seed_cards.json 全 16,450 列＋全部 manifest＋c47（24,138 列）雙向子字串比對，`Budka Suflera` 的命中全部是短掛名 `Ka`（6 張美國饒舌）折出來的假陽性，**整個掛名字串一張都沒有**，與簡報第三節「搖滾那一側 10/10 零命中」的實掃吻合。MB 轄下六個 release，1975 年 Muza SX 1264 黑膠 5 軌是原盤，其餘五筆分別掛 Muza、TA Music、樂團自營的 Budka Suflera Production 與 2023 年的 Muza／Warner SACD。⚠ 1993 年 TA Music 那一版是 8 軌、與原盤的 5 軌不同（第 251 條）。",
+  "risk": "⚠ **實掃假陽性**：`Budka Suflera` 的子字串比對會摺到池中的 `Ka`（Honor Killed the Samurai 等 6 張），那不是命中——c-123 第一節第 2 點記過同一個形狀，判池中有無一律看整個掛名字串。⚠ 變音：`Cień` 的 ń 與 `góry` 的 ó 一個都不能省；Apple 波蘭店面寫「Cień Wielkiej Góry」（字首大寫、變音保留），卡單取 MB 原盤的寫法（只有首字大寫）。⚠ **Apple 波蘭店面同一個藝人目錄底下有四筆盤名高度形近的條目**：1455485000《Cień Wielkiej Góry》5 軌 1975-01-01（正解）、1455500264《Cień wielkiej góry (Live 2011)》、1456144695《Cień wielkiej góry - live Przystanek Woodstock 2014》14 軌、1456139138《Live at Carnegie Hall (2)》——**後三筆都是現場盤、不是本卡**，配對時極易誤取。年份：MB 1975、盤面 SX 1264、Apple 1975 一致。版本軌數 5／8 分歧。CAA release-group 端點 200、1 張圖（實測）。MB 端身分乾淨：`artist?query=artist:\"Budka Suflera\"&limit=25` 只回 1 筆（1c40511d，Group／Poland／1969），無同名實體要擋。",
+  "mbNote": "釘 release-group 15a1c40a-7f9d-36c5-b629-d77dbdb0b1e7。回打 release-group 端點覆核：title「Cień wielkiej góry」、artist-credit「Budka Suflera」、first-release-date 1975、primary-type Album、secondary-types 空。release 端點補得：6 個 release，1975 PL Official 12\" Vinyl 5 軌 Polskie Nagrania „Muza” SX 1264（無 barcode）、1991 PL CD 5 軌 Muza PNCD 154、1993 PL CD 8 軌 TA Music AATZ 002、2010-10-27 PL CD 5 軌 Budka Suflera Production BSP 01-10（barcode 5901549593013）、2010-10-01 XW Digital Media 5 軌 同上、2023 PL Hybrid SACD 5 軌 Muza＋Warner Music Poland（barcode 5054197887383）。藝人 MBID 1c40511d-7a1a-446a-b258-ad4940cb3214（Group／Poland／1969，名下 34 個 RG、30 個 Album）。刻意不釘：24c62a04-960b-343d-a94d-bea0491ae697《Przechodniem byłem między wami》1976、30b599ff-1a24-3c8c-b228-027b78b9e13c《Na brzegu światła》1979、6eb33a29-d074-377d-a812-a7e72cea3b9c《Ona przyszła prosto z chmur》1980、7c7d8fbe-2dbb-36b2-a682-8b0a1b0b7f87《Czas czekania, czas olśnienia》1984、fb7daa43-fc7b-3f1a-ab9d-47c206840753《Giganci tańczą》1986、6e466d03-ecb7-3cc3-988b-bbac63200e7f《Ratujmy co się da!!》1988（**六張全在窗口內，下一批現成**）；40c29d18-a0e9-4851-814c-48b2f8ff36f2《Cień Wielkiej Góry Live - Woodstock Festival Poland 2014》與 5fd73e3b-c448-499e-bb5b-4c1d741befe9《Cień wielkiej góry live 2011》（**盤名與本卡高度形近的現場盤，摺鍵會撞，一律不收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Budka Suflera；Cień wielkiej góry；Cien wielkiej gory；Cień Wielkiej Góry",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Budka Suflera",
+  "album": "Za ostatni grosz",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "⚠ **Tonpress SX-T6**（PL 1982，12\" Vinyl 8 軌）——**不是 Polskie Nagrania „Muza”**；後續 CD 再發分屬 Tomy CD2（1991）、TA Music AATZ 023（1996，11 軌）、KOCH International 52147-2（1999）、TOMI CD 003（2000）、Andromeda CD 0995（2002）、Agencja Artystyczna MTJ CD 10247（2003）、Budka Suflera Production BSP 04-10（2010，barcode 5901549593044）",
+  "why": "Budka Suflera 1982 年的盤，與《Cień wielkiej góry》(1975) 一起把這支池中全零的團補成「首張＋戒嚴年代那一張」兩個端點。MB 轄下八個 release，1982 年那筆原壓掛 **Tonpress SX-T6**——裁定 312 的第三個實例。⚠ 這張的再發廠牌一共出現 **七家不同的公司**（Tomy／TA Music／KOCH／TOMI／Andromeda／MTJ／樂團自營），其中 1996 年 TA Music 那一版是 11 軌、與原盤 8 軌不同（第 251 條），卡單 `label` 欄記的是 1982 那一版。實掃 24,138 列，本張零命中（假陽性同《Cień wielkiej góry》卡）。",
+  "risk": "⚠ **廠牌欄不可預設填 Muza**：本張原壓是 Tonpress，MB `release` 端點的 label-info 逐筆查得，`release-group` 端點問不到（第 259 條）。⚠ **八筆 release 分屬八家公司、七家不同**，研究層引廠牌與編號時必須指明是哪一版。⚠ 變音：`Za ostatni grosz` 無變音，但同一支團的其他盤名（`Cień wielkiej góry`、`Czas czekania, czas olśnienia`、`Giganci tańczą`）變音密集，比對時不可混。⚠ **Apple 波蘭店面有三筆形近條目**：1455505146《Za Ostatni Grosz》8 軌 1982-01-01 與 1484109777《Za ostatni grosz》8 軌 1982-01-01（**兩筆同名同軌數同年，是同一張碟的兩筆建檔，不是兩張碟**），另有 6769104928《Za ostatni grosz - Single》2 軌 1984-12-31（**單曲，不可誤取**）。年份：MB 1982、盤面 SX-T6、Apple 1982 一致。CAA release-group 端點 200、2 張圖（實測）。",
+  "mbNote": "釘 release-group c3fb1a7d-34b9-3649-9db5-635f020419eb。回打 release-group 端點覆核：title「Za ostatni grosz」、artist-credit「Budka Suflera」、first-release-date 1982、primary-type Album、secondary-types 空。release 端點補得：8 個 release，1982 PL Official 12\" Vinyl 8 軌 **Tonpress SX-T6**（無 barcode）、1991 PL CD 8 軌 Tomy CD2、1996 PL CD 11 軌 TA Music AATZ 023、1999 PL CD 8 軌 KOCH International 52147 - 2、2000 PL CD 8 軌 TOMI CD 003、2002 PL CD 8 軌 Andromeda CD 0995、2003 PL CD 8 軌 Agencja Artystyczna MTJ CD 10247、2010 PL CD 8 軌 Budka Suflera Production BSP 04-10（barcode 5901549593044）。**無任何一筆 Polskie Nagrania „Muza” release。** 藝人 MBID 1c40511d-7a1a-446a-b258-ad4940cb3214。刻意不釘：同《Cień wielkiej góry》卡所列的六張窗口內未收盤；另 11095b9e-4ff9-3df4-8455-9ef75efcdc4a《1974 - 1984》1984（Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Budka Suflera；Za ostatni grosz；Za Ostatni Grosz",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Perfect",
+  "album": "Perfect",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Polskie Nagrania „Muza” SX 2114（PL 1981，Vinyl 9 軌）；2013 Polskie Radio PRCD 1596（CD 12 軌，barcode 5907812245962）、2023-10-31 Muza／Warner Hybrid SACD 9 軌（Muza 編號 50541 9 78085 1 7，barcode 5054197808517）",
+  "why": "Perfect 的首張 LP，波蘭 1980 年代搖滾最常被引用的起點之一。這支團在池中是零——實掃 24,138 列雙向子字串，`Perfect` 的唯一命中是 `A Perfect Circle《Mer de Noms》(2000)`，**那是另一支團的假陽性**，整個掛名字串零命中，與簡報第三節的實掃吻合。MB 轄下三個 release：1981 年 Muza SX 2114 黑膠 9 軌是原盤，2013 年 Polskie Radio 的 CD 擴成 12 軌，2023 年 SACD 回到 9 軌（**9／12／9**，第 251 條）。`selfTitled` 判 true（盤名與掛名完全相同）。",
+  "risk": "⚠ **本批同名撞擊最嚴重的一個掛名**：`artist?query=artist:\"Perfect\"&limit=25` 回滿 25 筆，波蘭這支（d6366198，Group／**Poland**／**1977**，disambiguation「Polish rock band, popular in 80s」）**靠 area＋life-span.begin＋disambiguation 三項交叉定位，score 排序一律不採**（第 250 條）；擋下的 24 個同名實體含美國 A Perfect Circle、牙買加雷鬼歌手 Perfect、Tommy Stinson 的美國 Perfect、英國 indie pop 的 Perfect、比利時的 Perfect、以及**兩筆連 disambiguation 都沒填的 Perfect**（a04b4e90「dancer of Benny B. band」只有職稱、c6f30b91「on Flowerpot Records」只有廠牌，**都無國別無年份，不得背書本名**——c-123 第四節同形）。⚠ **盤名＝掛名＝常見英語形容詞**，外部字串比對幾乎必然失準：Apple 搜尋 `Perfect Perfect` 在波蘭店面回的前幾筆是 P!nk、One Direction、Ed Sheeran、The Piano Guys，正解是 collectionId **988439006**《Perfect》**12 軌**、標 2015-05-05——**軌數 12 對應的是 2013 年 Polskie Radio 那一版、不是 1981 年的 9 軌原盤，年份也是再發年**，行文引軌數與年份都不可用它。年份取 1981（MB＋盤面 SX 2114）。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 878de174-c9d0-4e31-9373-5c362568324c。回打 release-group 端點覆核：title「Perfect」、artist-credit「Perfect」、first-release-date 1981、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1981 PL Official Vinyl 9 軌 Polskie Nagrania „Muza” SX 2114（無 barcode）、2013 PL Official CD 12 軌 Polskie Radio PRCD 1596（barcode 5907812245962）、2023-10-31 PL Official Hybrid SACD 9 軌 Muza 50541 9 78085 1 7＋Warner Music Poland（barcode 5054197808517）。藝人 MBID d6366198-de1d-4adf-811c-e8a2ac118aa8（Group／Poland／1977，disambiguation「Polish rock band, popular in 80s」，名下 36 個 RG、31 個 Album）。刻意不釘：ccff565f-f571-4d16-b089-17ae4fcabd7e《Live》1983（secondary-types Live，依第 253 條可收但本批名額不足）、4237558b-2573-44ff-b352-3ae1c3cde1f8《Live》2013 與 123a521d-e1f4-41b5-869a-602ec792c748《Autobiografia (The Best)》2015（同名／精選，見第 260 條）、696cb2ba-ec3b-3b04-bd6a-f1eb9bde7593《1981-1989》1989 與 0394eefc-7fc8-32c6-91fa-09736ef880f8《1977-1991》1991（Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Perfect；Perfect Poland；Perfekt；Perfect SX 2114",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Perfect",
+  "album": "Unu",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "⚠ **Tonpress SX-T 17**（PL 1982，12\" Vinyl 10 軌）——**不是 Polskie Nagrania „Muza”**；2002 Andromeda CD 0993（CD 15 軌與 13 軌兩筆）、2003 Agencja Artystyczna MTJ CD 10248（CD 10 軌，barcode 5906409102480）、2024 MTJ Hybrid SACD 13 軌（barcode 5906409122846）",
+  "why": "Perfect 的第二張 LP，與首張《Perfect》(1981) 相隔一年、換了廠牌：首張走國營的 Muza SX 2114，這張走 **Tonpress SX-T 17**——**同一支團、相隔一年、兩家不同的廠牌**，是裁定 312 最乾淨的一組對照（Budka Suflera 1975 Muza → 1982 Tonpress 是同一個形狀）。收這兩張是把池中全零的 Perfect 補成 1981／1982 兩張起點。MB 轄下五個 release，軌數 10／15／13／10／13 分歧極大（第 251 條），卡單 `label` 欄記的是 1982 那一版的 10 軌。實掃 24,138 列，本張零命中。",
+  "risk": "⚠ 同名撞擊同《Perfect》卡（`artist:\"Perfect\"` 回滿 25 筆、擋下 24 個同名實體，兩筆連 disambiguation 都沒填、不得背書本名），身分靠 area=Poland＋begin=1977＋disambiguation 定位，**score 不採**。⚠ **盤名《Unu》只有三個字母**，自動比對必然亂命中：Apple 搜尋 `Perfect Unu` 在波蘭店面回 20 筆，其中 19 筆是「Perfect Union」系列的無關條目，正解是 collectionId **1485640089**《Unu》**10 軌**、標 2003-12-31、℗ **2003 MTJ**——軌數 10 與 1982 原盤一致，但年份與版權行都是 2003 年 MTJ 那一版，**不可拿它覆蓋 1982**。⚠ 2002 年 Andromeda 同一個編號 CD 0993 在 MB 建了兩筆 release、軌數 15 與 13 不同，下游不可當成兩張碟。年份取 1982（MB＋盤面 SX-T 17）。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group aa580551-f69e-3531-b348-ccc4b40583d1。回打 release-group 端點覆核：title「Unu」、artist-credit「Perfect」、first-release-date 1982、primary-type Album、secondary-types 空。release 端點補得：5 個 release，1982 PL Official 12\" Vinyl 10 軌 **Tonpress SX-T 17**（無 barcode）、2002 PL CD 15 軌 Andromeda CD 0993、2002 PL CD 13 軌 Andromeda CD 0993、2003 PL CD 10 軌 Agencja Artystyczna MTJ CD 10248（barcode 5906409102480）、2024 PL Hybrid SACD 13 軌 Agencja Artystyczna MTJ（barcode 5906409122846）。**無任何一筆 Muza release。** 藝人 MBID d6366198-de1d-4adf-811c-e8a2ac118aa8。刻意不釘：同《Perfect》卡所列的 Live 與 Compilation 各筆；另 6b0b8c55-63fd-3db0-a7cc-ef0a336c6f74《Jestem》1994、13bbd0ec-d8eb-352e-8dec-60528643d2b9《Geny》1997（皆在 1989 年之後，不在本批的人民共和國窗口內）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Perfect；Perfect Poland；Unu；Perfect Unu Tonpress",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Maanam",
+  "album": "Maanam",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "⚠ **Wifon LP 028**（PL 1980，12\" Vinyl 9 軌）——**不是 Polskie Nagrania „Muza”**；1992 Kamiling Co 003（CD 9 軌）、2011-03-01 EMI Music Poland／Kamiling Co／Kompania Muzyczna Pomaton 三家合掛（CD 9 軌，barcode 5099909579125）",
+  "why": "Maanam 的首張 LP。這支團在池中是零——實掃 24,138 列雙向子字串，`Maanam` 的命中全部是法國藝人 `-M-`（摺鍵只剩一個字母 m）折出來的假陽性，**整個掛名字串一張都沒有**，與簡報第三節「Maanam 零命中」的實掃吻合。MB 轄下三個 release，1980 年那筆原壓掛 **Wifon LP 028**——與 SBB《Welcome》(1979) 同一家，裁定 312 的第四個實例。三個 release 軌數都是 9，難得一致。`selfTitled` 判 true。",
+  "risk": "⚠ **實掃假陽性**：`Maanam` 的子字串比對會摺到池中的 `-M-`（Le Baptême／Qui de nous deux，seed 與 c-109 manifest 各兩筆），**那不是命中**——c-123 第一節第 1 點記過「摺鍵極短的掛名會被任何比對摺進來」，這是同一個形狀（`-M-` 剝掉非字母數字後只剩 `m`）。判池中有無一律看整個掛名字串。⚠ 盤名＝掛名，外部比對易失準；Apple 波蘭店面 collectionId **693088751**《Maanam (Remastered)》9 軌、標 1980-01-01——**盤名帶 (Remastered) 後綴**，字串比對不會相等，要靠 collectionId 直查（第 260 條的形狀）。⚠ MB 端另有 4435b964-5982-4234-8c09-6db001545049「**Ex Maanam**」（Group／Poland／2018-12），是後來的分支團、不是本團，`artist:\"Maanam\"` 只回這 2 筆，靠 life-span.begin（1976 對 2018）分得開。年份：MB 1980、盤面 LP 028、Apple 1980 一致。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 81c47485-5ad9-31f1-9ca4-d5ca49a4d112。回打 release-group 端點覆核：title「Maanam」、artist-credit「Maanam」、first-release-date 1980、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1980 PL Official 12\" Vinyl 9 軌 **Wifon LP 028**（無 barcode）、1992 PL Official CD 9 軌 Kamiling Co 003、2011-03-01 PL Official CD 9 軌 EMI Music Poland＋Kamiling Co＋Kompania Muzyczna Pomaton（barcode 5099909579125）。藝人 MBID 8ba628d6-bbc1-4831-8bf1-9f7e51a0576c（Group／Poland／1976，名下 32 個 RG、30 個 Album）。刻意不釘：8680f636-ab94-30ee-9734-ee433e84185d《O!》1982（**窗口內，但 MB 那筆 1982 release 的 label-info 整個欄位為空、形態欄亦空，只有 1995 年 Kamiling Co／Pomaton EMI 那筆查得到廠牌**——依第 259 條這是「release 端點查得但欄位真的空」，不是沒問，本批名額不足未收）、23708dbc-25c1-32f2-8f15-64624b21ea17《Mental Cut》1984 與 5fb3a297-eb5b-361d-827d-c4d14c248244《Wet Cat》1985（窗口內，下一批現成）、3dcad960-294c-4176-8407-cacaaadef3db《Night Patrol》1984（**《Nocny patrol》的英語版，同一批錄音、不是另一張碟**，見下一卡）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Maanam；Maanam Wifon LP 028；Kora Maanam",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Maanam",
+  "album": "Nocny patrol",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "⚠ **首發是卡帶：Jako Jk-025**（PL 1983-11-19，Cassette 10 軌）；黑膠遲至 **Polton LPP-007**（PL 1984-04，12\" Vinyl 10 軌）；1994 Pomaton EMI 5903 1 100491 2 7（CD 10 軌，barcode 5903110049127）",
+  "why": "Maanam 戒嚴年代那張，與首張《Maanam》(1980) 一起把這支池中全零的團補成兩個端點。**這張的發行形態是本批最值得記的一筆**：MB `release` 端點顯示首發不是黑膠而是 **1983-11-19 的 Jako 卡帶 Jk-025**，黑膠版要到 **1984 年 4 月**才由 **Polton LPP-007** 發，兩者都不是國營的 Muza。依裁定 314（本批立）`year` 取 **1983**（MB first-release-date ＝ 卡帶首發年），1984 的黑膠年份寫進 `label` 與 `mbNote`。實掃 24,138 列，本張零命中（假陽性同《Maanam》卡的 `-M-`）。",
+  "risk": "⚠ **年份是這張最容易寫錯的欄位**：MB first-release-date 1983-11-19（卡帶）、黑膠 1984-04、Apple 標 1983-01-01（collectionId **693089637**《Nocny Patrol (Remastered)》10 軌）。卡單取 1983，**行文時「1983 年出卡帶、1984 年才出黑膠」這兩個年份要分開講**，不可混寫成一個。⚠ **載體**：三筆 release 分別是 Cassette／12\" Vinyl／CD，`release-group` 端點問不到這一層（第 259 條），已逐筆回問 `release` 端點補齊。⚠ 同一批錄音另有英語版 RG 3dcad960《Night Patrol》(1984)，**不是另一張碟**，寫進刻意不釘。⚠ 盤名大小寫：MB 寫「Nocny patrol」（小寫 p），Apple 寫「Nocny Patrol (Remastered)」，字串比對不會相等。實掃假陽性同《Maanam》卡（池中 `-M-`）。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 896346ab-a5d5-32cd-84af-e1b747fd1cc9。回打 release-group 端點覆核：title「Nocny patrol」、artist-credit「Maanam」、first-release-date **1983-11-19**、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1983-11-19 PL Official **Cassette 10 軌 Jako Jk-025**（無 barcode，＝首發）、1984-04 PL Official 12\" Vinyl 10 軌 **Polton LPP-007**（無 barcode）、1994 PL Official CD 10 軌 Pomaton EMI 5903 1 100491 2 7（barcode 5903110049127）。**三筆皆非 Polskie Nagrania „Muza”。** 藝人 MBID 8ba628d6-bbc1-4831-8bf1-9f7e51a0576c。刻意不釘：3dcad960-294c-4176-8407-cacaaadef3db《Night Patrol》1984（本張的英語版）、8680f636《O!》1982、23708dbc《Mental Cut》1984、5fb3a297《Wet Cat》1985、562d2b1a-ee19-34f1-88e9-962dc586830d《Sie ściemnia》1989（窗口內未收）；1ce1d43e-caf6-4f4e-a2fe-b7007204c321《Maanamaania》1993（Live，窗口外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Maanam；Nocny patrol；Nocny Patrol；Night Patrol；Maanam Polton LPP-007",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Republika",
+  "album": "Nowe sytuacje",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "⚠ **Polton LPP-003**（PL 1982-09，12\" Vinyl 10 軌）——**不是 Polskie Nagrania „Muza”**；2003-11-15 Pomaton EMI 7243 5 33755 2 2（CD 10 軌，barcode 724353375522）、2001-05-26 Parlophone Music Poland（XW 數位 13 軌，barcode 0724353375553）、2025 Warner Music Poland Hybrid SACD 10 軌（barcode 5021732598257）；另有一筆 1983 PL release 的 label-info 整個欄位為空（10 軌）",
+  "why": "Republika 的首張 LP，1982 年 9 月由 **Polton** 以編號 LPP-003 發——Polton 是這條線 1980 年代最關鍵的一家非國營廠牌，Maanam《Nocny patrol》的黑膠（LPP-007）與 Republika 下一張《Nieustanne Tango》(LPP-012) 也都出自它，**三張的編號連號落在 003／007／012**，是裁定 312 最具體的一組物證。這支團在池中是零——實掃 24,138 列雙向子字串，`Republika` 的命中全是短掛名 `Ka` 折出來的假陽性，整個掛名字串零命中。MB 轄下五個 release，軌數 10／10／10／13／10。",
+  "risk": "⚠ **實掃假陽性**：`Republika` 會摺到池中的 `Ka`（6 張），那不是命中，判池中有無要看整個掛名字串。⚠ 同名撞擊：`artist?query=artist:\"Republika\"&limit=25` 回 4 筆，本團（116a9ec8，Group／**Poland**／**1979**）靠 area＋begin 定位，擋下 Origami Republika、La Repúblika（bachata）、New Republika of Lazio 三筆；**MB 端噪音小，但 `Republika`／`Republic` 在 Apple 與 Discogs 是極常見詞，外部比對仍危險**（c-123 第四節「MB 清單乾淨不等於外部比對安全」）。⚠ **軌數分歧且方向特別**：2001 年 Parlophone 的數位版是 **13 軌**、其餘四筆都是 10 軌，而 **Apple 波蘭店面 collectionId 697064630《Nowe Sytuacje》正是 13 軌、標 1983-01-01**——**軌數與年份都對應數位版、不是 1982 年的黑膠原盤**，行文引軌數要指明版本，年份取 1982（MB first-release-date 1982-09＋盤面 LPP-003）。⚠ 同 RG 底下另有一筆 1983 PL release 的 label-info 整個欄位為空、形態欄亦空。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 2473b55b-0817-3bc5-9c61-e35d70b46bfa。回打 release-group 端點覆核：title「Nowe sytuacje」、artist-credit「Republika」、first-release-date **1982-09**、primary-type Album、secondary-types 空。release 端點補得：5 個 release，1982-09 PL Official 12\" Vinyl 10 軌 **Polton LPP-003**（無 barcode）、1983 PL Official 形態欄空 10 軌 label-info 空、2001-05-26 XW Official Digital Media 13 軌 Parlophone Music Poland（barcode 0724353375553，title 大寫「Nowe Sytuacje」）、2003-11-15 PL Official CD 10 軌 Pomaton EMI 7243 5 33755 2 2（barcode 724353375522）、2025 PL Official Hybrid SACD 10 軌 Warner Music Poland（barcode 5021732598257）。藝人 MBID 116a9ec8-148e-4b3d-8fb9-3d995cc4159e（Group／Poland／1979，名下 24 個 RG、21 個 Album）。刻意不釘：665284ba-5a59-3e24-97b2-f98c7bf63a7a《1984》1984-01（**該 RG 唯一的窗口內 release 的 country 是 GB、label-info 整個欄位為空**，形態特殊、本批名額不足未收，是下一批值得追的一張）、ffc2257a-27e1-47c7-8218-4ab85d620a2e《Demo 81 Studio Toruń》1981（secondary-types Demo）、0816787a-5d2c-3994-b003-6825bda47c65《'82 - '85》1993 與 64475209-7334-358f-9303-3623a26eb727《Nowe sytuacje / Nieustanne tango》1991（**後者是本批兩張的併輯，Compilation，摺鍵會與本卡相近，一律不收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Republika；Nowe sytuacje；Nowe Sytuacje；Republika Polton LPP-003",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Republika",
+  "album": "Nieustanne Tango",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "⚠ **Polton LPP-012**（PL 1984，12\" Vinyl 9 軌）——**不是 Polskie Nagrania „Muza”**；2003-11-15 Pomaton EMI 7243 5 40980 2 4（Copy Control CD 9 軌，barcode 724354098024）、2025 Warner Music Poland Hybrid SACD 9 軌（barcode 5021732598264）",
+  "why": "Republika 的第二張 LP，與首張《Nowe sytuacje》(1982) 同樣走 **Polton**（編號從 LPP-003 走到 LPP-012），把這支池中全零的團補成 1982／1984 兩張。MB 轄下三個 release，1984 年 Polton 黑膠 9 軌是原盤，其餘兩筆是 2003 與 2025 年的再發，**三筆軌數都是 9**，難得一致。實掃 24,138 列，本張零命中（假陽性同《Nowe sytuacje》卡的 `Ka`）。",
+  "risk": "⚠ **盤名大小寫在 MB 內部就不一致**：RG title 與 2003 年 CD 寫「Nieustanne **T**ango」（大寫 T），2025 年 SACD 的 release title 寫「Nieustanne tango」（小寫 t），1991 年那筆併輯 RG 也寫小寫。卡單取 RG title 的大寫寫法，**下游做字串比對要兩種大小寫都試**。⚠ 同名撞擊與外部比對風險同《Nowe sytuacje》卡（`artist:\"Republika\"` 回 4 筆，靠 area=Poland＋begin=1979 定位；Apple／Discogs 端 `Republika` 是常見詞）。⚠ **摺鍵相近的併輯**：64475209《Nowe sytuacje / Nieustanne tango》(1991，Compilation) 同時含本批兩張的盤名，配對時不可誤取。年份：MB 1984、盤面 LPP-012、Apple 波蘭店面 collectionId **905423796**《Nieustanne Tango》9 軌標 1984-01-01，三者一致、軌數也對得上——是本批少數三項全合的一張。CAA release-group 端點 200、2 張圖（實測）。以上只是 search 與藝人目錄兩種查法的觀察，不是結論。",
+  "mbNote": "釘 release-group ad3bbc45-2b8d-3988-b708-ec1f65c385f1。回打 release-group 端點覆核：title「Nieustanne Tango」、artist-credit「Republika」、first-release-date 1984、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1984 PL Official 12\" Vinyl 9 軌 **Polton LPP-012**（無 barcode）、2003-11-15 PL Official Copy Control CD 9 軌 Pomaton EMI 7243 5 40980 2 4（barcode 724354098024）、2025 PL Official Hybrid SACD 9 軌 Warner Music Poland（barcode 5021732598264，title 小寫 tango）。**無任何一筆 Muza release。** 藝人 MBID 116a9ec8-148e-4b3d-8fb9-3d995cc4159e。刻意不釘：665284ba《1984》1984-01（country GB、label-info 空，見《Nowe sytuacje》卡）、31f005e2-9780-35aa-88a6-55c8d71a3abb《1991》1991 與 236f0bbf-21c1-32c6-b8da-66b883087066《Siódma pieczęć》1993（窗口外）、22089a27-6789-3edf-8b41-8b2166aba442《Bez prądu》1993（Live，窗口外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Republika；Nieustanne Tango；Nieustanne tango；Republika Polton LPP-012",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Lady Pank",
+  "album": "Lady Pank",
+  "year": 1983,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "⚠ **Tonpress SXT-26**（PL 1983，12\" Vinyl 10 軌）——**不是 Polskie Nagrania „Muza”**；1992／2002 Andromeda CD 0992（CD 16 軌）、2003 Agencja Artystyczna MTJ CDMTJ10243（CD 10 軌，barcode 5906409102435）、2007 MTJ CD 10807（CD 16 軌）",
+  "why": "Lady Pank 的首張 LP。這支團在池中是**精確零**——實掃 seed_cards.json 全 16,450 列＋全部 manifest＋c47（24,138 列）雙向子字串比對，`Lady Pank` 連假陽性都沒有（0 命中），是本批少數連短掛名干擾都不生的掛名。1983 年那筆原壓掛 **Tonpress SXT-26**，與同年 Budka Suflera 的 SX-T6、Perfect 的 SX-T 17 同一家、同一套編號系統，是裁定 312 的第五個實例。MB 轄下五個 release，軌數 10／16／16／10／16 分歧（第 251 條），卡單 `label` 欄記的是 1983 那一版。`selfTitled` 判 true（盤名與掛名完全相同）。",
+  "risk": "⚠ 盤名＝掛名，外部字串比對易失準。Apple 波蘭店面藝人目錄查法命中 collectionId **1484081246**《Lady Pank》**10 軌**、標 1983-01-01——軌數與 1983 原盤一致，是本批對得最齊的一張；但同一份目錄裡另有 1484040272《O dwóch takich, co ukradli księżyc》29 軌 1986（**電影配樂，MB 的 secondary-types 標 Soundtrack，依規格不收**）與 1454267444《Lp1》13 軌 2018，配對時不可誤取。⚠ MB 端身分乾淨：`artist?query=artist:\"Lady Pank\"&limit=25` 只回 1 筆（922ddcf6，Group／Poland／1981），無同名實體要擋——**但 `Pank` 是 `Punk` 的波蘭化拼寫，外部搜尋很容易被自動更正成 `Lady Punk`**，這一點寫進 `queryAlias`。⚠ 變音：這張的盤名無變音，但同團其他盤名（`Ohyda`／`O dwóch takich, co ukradli księżyc`／`Zimowe graffiti`）有 ó 與 ż，比對時不可混。年份：MB 1983、盤面 SXT-26、Apple 1983 一致。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group b36870ea-cdbb-3200-9e10-51270d333255。回打 release-group 端點覆核：title「Lady Pank」、artist-credit「Lady Pank」、first-release-date 1983、primary-type Album、secondary-types 空。release 端點補得：5 個 release，1983 PL Official 12\" Vinyl 10 軌 **Tonpress SXT-26**（無 barcode）、1992 PL CD 16 軌 Andromeda CD 0992、2002 PL CD 16 軌 Andromeda CD 0992、2003 PL CD 10 軌 Agencja Artystyczna MTJ CDMTJ10243（barcode 5906409102435）、2007 PL CD 16 軌 MTJ CD 10807。**無任何一筆 Muza release。** 藝人 MBID 922ddcf6-2b69-4bc4-9b40-153cb9fad712（Group／Poland／1981，名下 43 個 RG、42 個 Album）。刻意不釘：066c30fc-1dc5-31af-8855-673a75b87939《Drop Everything》1985（英語版國際盤，窗口內、下一批現成）、455f30e4-4933-3def-8a48-d1d129f6c113《LP3》1986、24e5d2c6-5744-3e19-a0dd-4ecaf3ecabd0《Tacy sami》1989（窗口內未收）、e1ee9e23-d84d-3253-9d62-f1bf37ab15df《O dwóch takich, co ukradli księżyc》1986（**secondary-types Soundtrack，依規格不收**）、4a671dad-f415-4453-a4b0-bc9529338be7《Fest Of》1989（Compilation,Remix）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Lady Pank；Lady Punk；Lady Pank Tonpress SXT-26",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Lady Pank",
+  "album": "Ohyda",
+  "year": 1984,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "⚠ **Savitor SVT-011**（PL 1984，12\" Vinyl 10 軌）——**既不是 Muza、也不是簡報第三節列名的那五家**；2007 Agencja Artystyczna MTJ CD 10798（CD 20 軌）",
+  "why": "Lady Pank 的第二張 LP，與首張《Lady Pank》(1983) 相隔一年、**又換了一家廠牌**：首張走 Tonpress SXT-26，這張走 **Savitor SVT-011**。Savitor **不在簡報第三節列的六家（Polskie Nagrania „Muza”、Tonpress、Pronit、Wifon、Polton、Klub Płytowy Razem）之內**，是本批實測挖出來的第七家——依裁定 312 逐張打 `release` 端點才看得到，`release-group` 端點問不到（第 259 條）。MB 轄下只有兩個 release：1984 年 Savitor 黑膠 10 軌、2007 年 MTJ CD 20 軌。實掃 24,138 列，`Lady Pank` 整個掛名零命中（含假陽性 0 筆）。",
+  "risk": "⚠ **`label` 欄的廠牌 Savitor 不在既有清單上**：依 c-127 第二節的做法，**廠牌名、catno 與旁證寫進 `risk`、不自行判收退，交主線** —— catno **SVT-011**、無 barcode、PL 1984、12\" Vinyl 10 軌，MB `release` 端點的 label-info 直接記著。**這批不是台灣獨立線、沒有獨立閘，本卡不因廠牌不明而退**，但下游若要引廠牌屬性（國營／私營）必須另查，不可從編號形式推。⚠ **軌數 10／20 分歧極大**：Apple 波蘭店面 collectionId **1485061906**《Ohyda》標 1984-01-01 但是 **20 軌**——**那對應的是 2007 年 MTJ 那一版，不是 1984 年的 10 軌黑膠**，年份卻又寫 1984，**年份與軌數各自對應不同版本**，是本批最容易寫錯的一筆（第 251 條）。年份取 1984（MB＋盤面 SVT-011）。⚠ MB 端身分乾淨（`artist:\"Lady Pank\"` 只回 1 筆）；`Pank`／`Punk` 的外部自動更正風險同首張卡。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group bfc6902b-85dd-3bf7-8cbf-3252387cb981。回打 release-group 端點覆核：title「Ohyda」、artist-credit「Lady Pank」、first-release-date 1984、primary-type Album、secondary-types 空。release 端點補得：**2 個 release**，1984 PL Official 12\" Vinyl 10 軌 **Savitor SVT-011**（無 barcode）、2007 PL Official CD 20 軌 Agencja Artystyczna MTJ CD 10798（無 barcode）。藝人 MBID 922ddcf6-2b69-4bc4-9b40-153cb9fad712。刻意不釘：同《Lady Pank》卡所列各筆；另 b043081d-3e67-3aef-8a41-3514d5ee366d《'81-'85》1992 與 28ab58ff-1f6e-477b-8931-ded229670bfb《The Best of Lady Pank》1990（Compilation；**MB 上共有三個不同 RG 都叫《The Best of Lady Pank》（1990／1992／1997），依第 260 條整組不收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lady Pank；Lady Punk；Ohyda；Lady Pank Savitor SVT-011",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Skaldowie",
+  "album": "Cała jesteś w skowronkach",
+  "year": 1969,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Polskie Nagrania „Muza” XL 0528（PL 1969，12\" Vinyl 11 軌）；1996 年兩筆 CD 再發（17 軌），其中一筆沿用 XL 0528 編號、另一筆 label-info 整個欄位為空、country 與 status 欄亦空",
+  "why": "Skaldowie 的第三張 LP，也是這支團最常被引用的一張。這支團在池中是零——實掃 24,138 列雙向子字串，`Skaldowie` 的命中全部是短掛名 `Ka` 折出來的假陽性，整個掛名字串一張都沒有。MB 轄下三個 release，1969 年 Muza XL 0528 黑膠 11 軌是原盤；1996 年兩筆 CD 都是 17 軌（多出的六軌是同期單曲），**11／17 軌分歧**（第 251 條），卡單 `label` 欄記的是 1969 那一版。這張與《Krywań, Krywań》(1972) 一起收，是把 1960 年代後半到 1970 年代初的波蘭 beat／流行那一段從零補到兩張。",
+  "risk": "⚠ **實掃假陽性**：`Skaldowie` 會摺到池中的 `Ka`（6 張），那不是命中，判池中有無要看整個掛名字串。⚠ 變音：`Cała` 的 ł、`jesteś` 的 ś 一個都不能省；Apple 波蘭店面寫成字首大寫的「Cała Jesteś W Skowronkach」（collectionId **1066512310**、**11 軌**、標 1969-01-01），變音有保留但大小寫與 MB 不同，字串比對不會相等（第 260 條的形狀）。軌數 11 與 1969 原盤一致。⚠ **1996 年那兩筆 CD 之一的 label-info、country、status 三個欄位全空**——依第 259 條那是 `release` 端點查得的實情（不是沒問），但也只能寫「欄位為空」，不可寫成「未建檔」或「無廠牌」。⚠ MB 端身分乾淨：`artist?query=artist:\"Skaldowie\"&limit=25` 只回 1 筆（706e123f，Group／Poland／1965）。年份：MB 1969、盤面 XL 0528、Apple 1969 一致。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 7ec1e56a-f29d-38a5-bace-0b2207183c1c。回打 release-group 端點覆核：title「Cała jesteś w skowronkach」、artist-credit「Skaldowie」、first-release-date 1969、primary-type Album、secondary-types 空。release 端點補得：3 個 release，1969 PL Official 12\" Vinyl 11 軌 Polskie Nagrania „Muza” XL 0528（無 barcode）、1996 CD 17 軌 Muza XL 0528（country 與 status 欄空）、1996 CD 17 軌 label-info／country／status 三欄皆空。藝人 MBID 706e123f-f9fa-404d-bce5-372f22e4c7df（Group／Poland／1965，名下 41 個 RG、38 個 Album）。刻意不釘：5bf839f1-d564-3cc6-bddf-29d03b4d53ae《Skaldowie》1967（**同名首張，依第 260 條同掛名同名一組只收一張；本批取可辨盤名的兩張**）、0ee3da11-11c7-3cee-97e2-011b9d7bd95e《Wszystko mi mówi, że mnie ktoś pokochał》1968、f0a6c9c4-147a-39d1-9d8f-6e1365aa1328《Od wschodu do zachodu słońca》1970（**該 RG 只有 1 個 release 且 label-info 與形態欄全空**）、b80f2ea2-6c8e-41c7-bf6d-5826414fd31f《Ty》1971、4c063ee9-b77c-4e6e-909e-8e6730123ca9《Wszystkim zakochanym》1973、44f79d07-9c75-436c-af59-e753c901ee46《Stworzenia świata część druga》1976（Muza SX 1414，窗口內、下一批現成）；94ab0ce8-565c-368b-95e4-c348a0d88607《Скальды》1975（**全西里爾盤名，依 c-123 第 259 條不收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Skaldowie；Cała jesteś w skowronkach；Cala jestes w skowronkach；Cała Jesteś W Skowronkach；Скальды",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Skaldowie",
+  "album": "Krywań, Krywań",
+  "year": 1972,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Polskie Nagrania „Muza” XL/SXL 0888（PL 1972，Vinyl 5 軌）；2012 Kameleon Records KAMCD 17（CD 5 軌，**盤名改為《Krywań Sessions 1971-1973》**）、2023 Muza Hybrid SACD（CD 層）5 軌（編號 50541 9 78873 9 0，barcode 5054197887390）；另有一筆 1973-06-22 PL Vinyl 5 軌、**title 寫「Krywaniu,Krywaniu」、label-info 整個欄位為空**",
+  "why": "Skaldowie 1972 年的長篇編制盤，五軌各佔篇幅、與《Cała jesteś w skowronkach》(1969) 的歌曲集形態完全不同，兩張一起收就把這支團在池中從零補成前後兩個段落。MB 轄下四個 release，1972 年 Muza XL/SXL 0888 是原盤（**同一筆 release 同時掛單聲道 XL 與立體聲 SXL 兩個編號**）。實掃 24,138 列，本張零命中（假陽性同上一卡的 `Ka`）。",
+  "risk": "⚠ **同 RG 底下有一筆盤名拼法不同的 release**：1973-06-22 PL Vinyl 5 軌的 title 是「**Krywaniu,Krywaniu**」（變格形、且逗號後無空格），label-info 整個欄位為空——**與本卡取的「Krywań, Krywań」是同一張碟的另一種盤面寫法，不是第二張碟**，下游做字串比對時兩種寫法都要試。⚠ 2012 年 Kameleon Records 那一版**盤名整個換成《Krywań Sessions 1971-1973》**，依第 45 條這是再發改名，本卡不取（原盤名在 MB 與 Apple 端都還在用）。⚠ 變音：`Krywań` 的 ń 不可省，Apple 波蘭店面 collectionId **1474254762**《Krywań, Krywań》**5 軌**標 **1972-08-02**，變音與軌數都與 MB 一致，是本批對得最齊的一張之一。⚠ 盤名是同一個詞重複兩次、中間帶逗號，自動比對容易被截斷。實掃假陽性同上一卡。MB 端身分乾淨（`artist:\"Skaldowie\"` 只回 1 筆）。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 072dcb28-a053-4023-87c1-f7eb6cc7a54f。回打 release-group 端點覆核：title「Krywań, Krywań」、artist-credit「Skaldowie」、first-release-date 1972、primary-type Album、secondary-types 空。release 端點補得：4 個 release，1972 PL Official Vinyl 5 軌 Polskie Nagrania „Muza” **XL/SXL 0888**（無 barcode）、1973-06-22 PL Official Vinyl 5 軌 label-info 空（title「Krywaniu,Krywaniu」）、2012 PL Official CD 5 軌 Kameleon Records KAMCD 17（title《Krywań Sessions 1971-1973》）、2023 PL Official Hybrid SACD (CD layer) 5 軌 Muza 50541 9 78873 9 0（barcode 5054197887390）。藝人 MBID 706e123f-f9fa-404d-bce5-372f22e4c7df。刻意不釘：同《Cała jesteś w skowronkach》卡所列各筆；另 cf27d86d-0ce3-47e3-8120-428946bca7ff《Lost Progressive Sessions 1970-1971》與 0fefb4cc-328f-40db-83ab-5bb970f26687《Progressive Rock Years (1970-1973)》2010（**兩套考古合輯的曲目與本卡重疊，Compilation，不收**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Skaldowie；Krywań, Krywań；Krywan, Krywan；Krywaniu,Krywaniu；Krywań Sessions 1971-1973",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Czerwone Gitary",
+  "album": "To właśnie my",
+  "year": 1966,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "⚠ **Pronit XL 0350**（PL 1966，12\" Vinyl 14 軌）——**不是 Polskie Nagrania „Muza”**；1993 Muza PNCD 210（CD 14 軌）",
+  "why": "Czerwone Gitary 的首張 LP，1966 年由 **Pronit** 以編號 XL 0350 發——與 Breakout 1969 年首張的 Pronit XL 0531 同一家、同一套編號系統，是裁定 312 在 1960 年代那一端的兩個實例。這支團在池中是零——實掃 24,138 列雙向子字串，`Czerwone Gitary` 的命中只有 `Tar《Jackson》(1991)`，**那是短掛名 `Tar` 折出來的假陽性**，整個掛名字串零命中。MB 轄下只有兩個 release，1966 年 Pronit 黑膠 14 軌是原盤、1993 年 Muza PNCD 210 的 CD 也是 14 軌，**兩版軌數一致**，是本批少數沒有軌數分歧的一張。依藍圖 §五-1「先確認第一張該有的在不在」，這位的第一張正是它。",
+  "risk": "⚠ **實掃假陽性**：`Czerwone Gitary` 會摺到池中的 `Tar`（Jackson，seed 與 c-81 manifest 各一筆），那不是命中。⚠ 變音：`właśnie` 的 ł 與 ś 一個都不能省；Apple 波蘭店面寫成字首大寫的「To Właśnie My」（collectionId **1449852479**、**14 軌**、標 **1966-01-21**），變音保留但大小寫與 MB 不同。軌數 14 與原盤一致。⚠ **這支團的 MB 目錄裡有三筆 2008 年 RU 的 Bootleg CD**（Dogtoire Records DGTR 系列，掛在《Czerwone Gitary (3)》《Dzień jeden w roku》《Rytm Ziemi》底下，其中一筆的 label-info 甚至誤掛成 Muza），**status 是 Bootleg、不是 Official**，配對與舉證時一律不可採（第 43／57／65／78 條的形狀）。⚠ MB 端身分乾淨：`artist?query=artist:\"Czerwone Gitary\"&limit=25` 只回 1 筆（629a0273，Group／Poland／1965-01-03）。年份：MB 1966、盤面 XL 0350、Apple 1966 一致。CAA release-group 端點 200、**4 張圖**（本批第二多，實測）。",
+  "mbNote": "釘 release-group fbb8ee82-edb1-424f-951d-7e85342e930f。回打 release-group 端點覆核：title「To właśnie my」、artist-credit「Czerwone Gitary」、first-release-date 1966、primary-type Album、secondary-types 空。release 端點補得：2 個 release，1966 PL Official 12\" Vinyl 14 軌 **Pronit XL 0350**（無 barcode）、1993 PL Official CD 14 軌 Polskie Nagrania „Muza” PNCD 210（無 barcode）。藝人 MBID 629a0273-2527-4a4b-83f2-0c52a6d8da4d（Group／Poland／1965-01-03，名下 48 個 RG、40 個 Album）。刻意不釘：491be56b-7944-4c86-a496-05c76d41407e《Czerwone Gitary (2)》1967 與 fe3cacd7-9c9b-49bb-9f50-35dc10e0d1a8《Czerwone Gitary (3)》1968（**MB title 帶括號序號、掛名與盤名幾乎相同，摺鍵易撞，本批不取；兩張都在窗口內，下一批要先決定盤名怎麼寫**）、d8643c6e-a839-459d-8946-13226762a2bd《Spokój serca》1971（Muza SXL-0734）、8cf5247a-f554-4a26-a71e-38dc6a7c4868《Rytm Ziemi》1974（Muza SXL 1166）、fd169934-dd13-4bd3-9369-d65d00d27804《Dzień jeden w roku》1976（Muza SX 1364）、1afd4c35-2b54-4874-8124-b24ab2b53448《Warszawa》1971（**四張全在窗口內、全是 Muza 原壓，下一批現成**）；36550642-8251-4274-b15b-59954ad3a00b《Rote Gitarren》1978（德語版）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Czerwone Gitary；To właśnie my；To wlasnie my；To Właśnie My；Rote Gitarren",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Krzysztof Klenczon",
+  "album": "Krzysztof Klenczon i Trzy Korony",
+  "year": 1971,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "⚠ **Pronit SXL 0779**（PL 1971-06-22，12\" Vinyl 15 軌）——**不是 Polskie Nagrania „Muza”**；同年另有一筆 Pronit XL 0799（單聲道，15 軌）；2005 Underground Masters UM 004（CD 15 軌）、2006 XE Underground Masters UM 004CD（CD 18 軌）、2024-05-17 Muza Hybrid SACD（CD 層）18 軌（編號 50217 3 22632 8 5，barcode 5021732263285）",
+  "why": "Klenczon 離開 Czerwone Gitary 之後與 Trzy Korony 合作的唯一一張 LP，是波蘭 1970 年代初 beat 轉搖滾那條線上的單點作品。這位在池中是**精確零**——實掃 24,138 列雙向子字串，`Krzysztof Klenczon` 與 `Klenczon` 兩種寫法都是 0 命中（連假陽性都沒有）。MB 名下只有 6 個 RG，其中 **5 個是 1991 年之後的 Compilation**，**窗口內可收的只有這一張**。1971 年的原壓掛 **Pronit**，與 Czerwone Gitary 1966 年首張的 Pronit XL 0350 同一家——裁定 312 在 1960–70 年代那一端的第三個實例。⚠ 掛名寫法見 risk（裁定 313）。",
+  "risk": "⚠ **掛名與盤名完全相同的一案（裁定 313，本批立）**：MB 這個 RG 的 artist-credit 與 title **都是「Krzysztof Klenczon i Trzy Korony」**。若照第 20／6 條直接取 artist-credit，卡片會變成掛名＝盤名的退化形；本卡取**較短的構成掛名「Krzysztof Klenczon」**當 `artist`、盤名保留全稱，`selfTitled` 判 false，artist-credit 原字串記在 `mbNote` 與 `queryAlias`。依判準 2（可逆：改的是卡單的 artist 值、不是卡池結構）當場定。這與 c-123 第 258 條不衝突：那條防的是「合掛名製造分裂」，這裡池中 Klenczon 為零、不生分裂問題，決定因素是盤名與掛名的退化。⚠ **Apple 端的掛名用的是 `&` 不是 `i`**：collectionId **1454234754** 掛名寫「Krzysztof Klenczon **&** Trzy Korony」、盤名寫「Krzysztof Klenczon **i** Trzy Korony」、**15 軌**、標 **1971-06-23**（比 MB 的 1971-06-22 晚一天）。**`&` 與 `i` 的分歧會讓字串比對整組落空**（`chk-prop` 只摺 `&`→`and`，摺不掉波蘭文的 `i`），下游要兩種都試。⚠ 同一份 Apple 目錄另有 954802909《(Nie) Przejdziemy do Historii》14 軌 2014，那是後世的致敬／再編輯，不可誤取。⚠ 軌數 15／15／18／18 分歧（第 251 條），`label` 欄記的是 1971 那一版的 15 軌。⚠ 同年兩筆 Pronit release 編號不同（SXL 0779 立體聲／XL 0799 單聲道），引編號要指明哪一版。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group cc1117b7-798e-3d3f-ac67-30dc1cf5defa。回打 release-group 端點覆核：title「Krzysztof Klenczon i Trzy Korony」、**artist-credit「Krzysztof Klenczon i Trzy Korony」（與 title 完全相同，見 risk 與裁定 313）**、first-release-date 1971-06-22、primary-type Album、secondary-types 空。release 端點補得：6 個 release，1971-06-22 PL Official 12\" Vinyl 15 軌 **Pronit SXL 0779**、1971 PL Official 12\" Vinyl 15 軌 Pronit SXL 0779、1971 PL Official 12\" Vinyl 15 軌 **Pronit XL 0799**、2005 PL Official CD 15 軌 Underground Masters UM 004、2006 XE Official CD 18 軌 Underground Masters UM 004CD、2024-05-17 PL Official Hybrid SACD (CD layer) 18 軌 Polskie Nagrania „Muza” 50217 3 22632 8 5（barcode 5021732263285）。**1971 年那三筆全是 Pronit，無任何一筆 Muza 原壓。** 藝人 MBID fbab03b9-b375-4d9c-b610-6b33061b8dbc（Person／Poland／1942-01-14，名下 6 個 RG、全部 primary-type=Album，`artist:\"Krzysztof Klenczon\"` 只回這 1 筆、無同名實體要擋）。刻意不釘：24bebf63-cc3a-4c2e-90f3-5f3e896a1435《Muzyka z tamtej strony dnia》1991、61fddad2-d1d8-4a31-92c9-12143a42060e《10 w skali Beauforta》1996、eaaf5977-553f-4f47-b500-61df0d2f2c7e《Trzy Korony / Powiedz stary gdzieś ty był》2002、13c6c40d-f93c-47fa-ac3d-8103b3831adb《The Complete Recordings 1970-1972》2013（**四張都是 Compilation 且全在窗口外**）、2e899a09-1178-47b3-a8df-a81246657063《Krzysztof Klenczon》1999。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Krzysztof Klenczon；Klenczon；Krzysztof Klenczon i Trzy Korony；Krzysztof Klenczon & Trzy Korony；Trzy Korony",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Marek Grechuta",
+  "album": "Magia obłoków",
+  "year": 1974,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "⚠ **Pronit SXL 1077**（PL 1974，12\" Vinyl 7 軌）——**不是 Polskie Nagrania „Muza”**；2000 Pomaton EMI 5257422（CD 19 軌）",
+  "why": "Grechuta 1974 年的盤，接在池中已有的《Korowód》(1971) 之後，是本批唯一一張 sung poetry 那條線上的男聲作品。實掃 seed_cards.json 全 16,450 列＋manifest＋c47（24,138 列）雙向子字串：池中這位只有《Korowód》1971 一張（c-56 那批，manifest 為 onboarding-manifest-c56-20260903.json），本張零命中。1974 年原壓掛 **Pronit SXL 1077**——與 Klenczon 1971 的 SXL 0779、Czerwone Gitary 1966 的 XL 0350、Breakout 1969 的 XL 0531 同一家，**Pronit 在本批出現四次，是 Muza 之外出現最多的廠牌**（裁定 312）。MB 轄下只有兩個 release，**軌數 7／19 分歧極大**（2000 年 Pomaton EMI 那一版把同期曲目併了進來），`label` 欄記的是 1974 那一版。",
+  "risk": "⚠ **Apple 波蘭店面查無**：`search` 用「Marek Grechuta Magia obłoków」與去變音的「Marek Grechuta Magia oblokow」兩種寫法皆 0 筆；改用藝人目錄查法（term=`Marek Grechuta`，store pl）回 17 筆，含《Korowód》《Droga Za Widnokres》《Anawa》等，**但沒有《Magia obłoków》**。依裁定 254 **只寫觀察**：「`search` 與藝人目錄兩種查法未命中」，**未寫「未上架」「無來源狀態」**，研究層跑第三種查法（直查候選 collectionId）之前不下結論。⚠ 變音：`obłoków` 同時有 ł 與 ó 兩個變音，是本批變音密度最高的盤名之一，去變音寫成 `oblokow` 會與原寫法摺成兩個盤名。⚠ **掛名的合掛名問題**：MB 名下另有 dfab769f-eda7-393c-9059-291e8cfa3c9c《Marek Grechuta & Anawa》(1970)，artist-credit 是「Marek Grechuta & Anawa」，本卡這張的 artist-credit 是純粹的「Marek Grechuta」——兩者不同，依裁定 311 池中既有寫法是「Marek Grechuta」，日後補那張時也要取同一個掛名、不可製造分裂。⚠ 軌數 7／19 分歧（第 251 條）。⚠ MB 端身分乾淨：`artist:\"Marek Grechuta\"` 只回 1 筆（17d126de，Person／Poland／1945-12-10）。年份：MB 1974、盤面 SXL 1077，無第三方年份可對。CAA release-group 端點 200、1 張圖（實測）。",
+  "mbNote": "釘 release-group 3acd3854-a52a-3768-a656-5325fee882bc。回打 release-group 端點覆核：title「Magia obłoków」、artist-credit「Marek Grechuta」、first-release-date 1974、primary-type Album、secondary-types 空。release 端點補得：**2 個 release**，1974 PL Official 12\" Vinyl 7 軌 **Pronit SXL 1077**（無 barcode）、2000 PL Official CD 19 軌 Pomaton EMI 5257422（無 barcode）。藝人 MBID 17d126de-97b6-458b-8b19-7615c19a0a79（Person／Poland／1945-12-10，名下 39 個 RG、33 個 Album）。刻意不釘：1609bdca-9153-3041-a3e1-b5b1bf030d6b《Korowód》1971（池中已有）、dfab769f-eda7-393c-9059-291e8cfa3c9c《Marek Grechuta & Anawa》1970（**artist-credit 是合掛名；該 RG 底下另有一筆 1974 年的 Supraphon 113 1379 盤——捷克斯洛伐克國營廠的波蘭藝人盤，是本批查到最特別的一筆跨國通路，下一批值得追**）、700faa03-35f6-3671-83b2-ea78d6593d69《Droga za widnokres》1972、f6c39c8d-1505-367f-ac14-bf03fdd14c85《Szalona lokomotywa》1977（**1977 年那筆 Muza release 的 catalog-number 欄為空、17 軌**）、9ba6b991-d04f-421e-88df-4ad9b8baef16《Śpiewające obrazy》1981、9a83ab5b-8b9b-35cb-8674-48c011351938《Krajobraz pełen nadziei》1988（**五張全在窗口內，下一批現成**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Marek Grechuta；Magia obłoków；Magia oblokow；Marek Grechuta & Anawa；Grechuta",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ewa Demarczyk",
+  "album": "Live",
+  "year": 1982,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "⚠ **Wifon LP-033**（PL 1982，雙片 12\" Vinyl，8＋10＝18 軌）——**不是 Polskie Nagrania „Muza”**；1997 Pomona Records EDP 1 A/B SE（雙片 CD 8＋10 軌，barcode 5901119902238）",
+  "why": "Demarczyk 的現場雙片裝，是 Piwnica pod Baranami 那條 sung poetry 線在 MB 上唯一一張窗口內、非西里爾盤名、且查得到廠牌的碟。依第 253 條 **`secondary-types` 含 `Live` 要收**，`mbNote` 已標明是現場錄音。實掃 24,138 列雙向子字串：池中這位只有《Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego》(1967) 一張（c-56 那批），本張零命中。MB 名下只有 4 個 RG，扣掉池中那張、一張全西里爾盤名的《Эва Дэмарчик》(1975，依 c-123 第 259 條不收) 與一張無日期的 Compilation，**窗口內可收的只有這一張**。1982 年原壓掛 **Wifon LP-033**，與 SBB《Welcome》(1979) 的 LP 004、Maanam《Maanam》(1980) 的 LP 028 同一家、同一套編號系統——**Wifon 在本批出現三次**（裁定 312）。",
+  "risk": "⚠ **本批唯一一張 CAA 404**：release-group 端點實測 404、0 張圖（其餘 22 張全部 200）。⚠ **Apple 波蘭店面兩種查法皆未命中本人任何一張碟**：`search` 用「Ewa Demarczyk Live」回的是 Ewa Bem 的無關單曲（1593216575），改用藝人目錄查法（term=`Ewa Demarczyk`，store pl）回 5 筆，**全部是別人翻唱／致敬她的碟**（Justyna Steczkowska《Steczkowska Demarczyk》、Lora Szafran、Patrycja Ziniewicz、Fanatic），**沒有一筆是她本人的錄音**。依裁定 254 只寫觀察：「`search` 與藝人目錄兩種查法未命中」，未寫「未上架」「無來源狀態」「要掃圖」，研究層跑第三種查法之前不下結論。⚠ **盤名《Live》是四個字母的英語常見詞**，外部比對必然大量假陽性；`chk-prop` 摺鍵為 `ewademarczyk|live`，與池中任何一列都不相撞，但研究層做外部配對一定要鎖整個掛名字串。⚠ 載體：雙片裝、兩片軌數不同（8 與 10），引軌數要說明是 18 軌合計還是單片。年份：MB 1982 與盤面 LP-033 一致，無第三方年份可對。⚠ MB 端身分乾淨：`artist:\"Ewa Demarczyk\"` 只回 1 筆（4be4f049，Person／Poland／1941-01-16）。",
+  "mbNote": "釘 release-group 7e641e20-cdb9-3ab0-8b0e-ef43da5201d1。回打 release-group 端點覆核：title「Live」、artist-credit「Ewa Demarczyk」、first-release-date 1982、primary-type Album、**secondary-types 含 `Live`（依第 253 條要收，本張是現場錄音，演奏年即 1982 年前後的巡演）**。release 端點補得：**2 個 release**，1982 PL Official 12\" Vinyl 8 軌＋12\" Vinyl 10 軌 **Wifon LP-033**（無 barcode）、1997 PL Official CD 8 軌＋CD 10 軌 Pomona Records EDP 1 A/B SE（barcode 5901119902238）。藝人 MBID 4be4f049-0397-4ba8-a85a-521e97b20c59（Person／Poland／1941-01-16，**名下只有 4 個 RG**）。刻意不釘：1b8872cf-058c-3b57-b701-8828142a405c《Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego》1967（池中已有）、7725a0bd-3202-4f17-880a-0b1abc8d0ca3《Эва Дэмарчик》1975（**全西里爾盤名，該 RG 底下無任何純拉丁 title 的 release，依 c-123 第 259 條不收、不自創拉丁盤名**）、f9e30420-dcda-34b2-9c1b-b3b5a2213b95《Golden Years》（無日期、Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ewa Demarczyk；Live；Ewa Demarczyk Live Wifon LP-033；Эва Дэмарчик；Piwnica pod Baranami",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
