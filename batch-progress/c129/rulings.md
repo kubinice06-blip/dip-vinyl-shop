@@ -335,3 +335,348 @@ Big Bag《အိပ်ယာဝင်တေးများ》(2007)／《တယ�
    **下一批不必重查身分，直接可開**。
 3. **寮國見底了**：全域 38 筆以「Laos」為題的 RG，本批收 7、可再收 4、其餘判掉。
    **要再深挖只能走 §1 人工身分**（Khamvong Insixiengmai 那批 Latitudes／Music of the World 的碟是現成線索）。
+
+---
+
+# c-129 **b 組**（印尼蘇哈托時期與泰國軍政府時期）　策展層裁定與交件說明（2026-09-14）
+
+**a 組取 330–339，本組從 340 起跳（append，未動 a 組任何一行）。**
+批次規格見 `CURATION-BRIEF-c128-c130.md` 〇、共通五條＋二、c-129 的 b 組段，
+欄位規格轉引 `CURATION-BRIEF-c127.md` → `c126` → `c103plus` → `c93plus` 第一節。
+
+## 〇、b 組交件數字
+
+| 項目 | 數 |
+|---|---:|
+| `prop-b.json` | **22 張、15 位**，年份 1968–2010 |
+| 印尼 | **12 張、10 位**（1968–1991） |
+| 泰國 | **10 張、5 位**（1976–2010；其中 4 張是 `Various Artists` 合輯） |
+| `node batch-progress/c129/chk-prop.mjs a b` | **標記 0**（與線上池撞卡 0、跨組重複 0、跨批撞卡 0；a＋b 合計 45 張、28 位） |
+| §5.6 合輯 | **4 張**（全部泰國，逐張舉證見第五節-b） |
+| `releaseType` | Album 18／Compilation 4 |
+| CAA release-group 探測 | **200：16 張／404：6 張**（5xx：0，裁定 222 的重試未被觸發） |
+| §1 人工身分 | **0 張**（22/22 全部 pinned 住 release-group MBID） |
+
+## 一、開工前的池中實掃（裁定 27：不取樣，掃全檔）
+
+用 `batch-progress/lib.mjs` 的 `loadPool()` 掃 `seed_cards.json` 全 **16,450** 列
+＋全部 `onboarding-manifest-*.json` ＋ `c47/cand-all.json`，**合計 24,138 列**；
+**外加 c-SEA 三份卡單 99 張**（`desc-tools/batches/cards/cseaa-cards.json`、`cseab`、`cseac`）。
+每個掛名用原文與拉丁轉寫兩種以上寫法各掃一次，比對用子字串雙向（裁定 255）。
+
+### 實掃結果：**c-SEA 與 c-52 把印尼與泰國收得比簡報預期的還滿**
+
+| 場景 | 池中既有 | 本組據此避開 |
+|---|---|---|
+| **印尼** | **約 38 張**（Koes Bersaudara 1、Koes Plus 2、AKA 1、Dara Puspita 2、Shark Move 1、Ariesta Birawa 1、Harry Roesli 3、God Bless 3、Giant Step 1、The Rollies 2、Benny Soebardja 1、Duo Kribo 1、Abbhama 1、Transs 1、Chrisye 2、Fariz RM 1、Ebiet G. Ade 1、Iwan Fals 1、Kantata Takwa 1、Tony Scott & The Indonesian All Stars 1、Indra Lesmana 1、Bhaskara 1、Discus 1、Waldjinah 1、Guruh Gipsy 1、Eka Sapta 1、Krakatau 1、Asin 1、Titiek Puspa 1、Rien Djamain 1、Rhoma Irama 3、Gombloh 1、Panbers 1、Elvy Sukaesih 1、Various Artists 印尼輯 4） | 12 張全部避開 |
+| **泰國** | **13 張**（`Caravan《คนกับควาย》`1975、Onuma Singsiri 1979、พุ่มพวง ดวงจันทร์ 2、คาราบาว 2、Chaweewan Dumnern 1991、`Angkanang Kunchai With Ubon-Pattana Band`1975、Dao Bandon 2014、The Paradise Bangkok Molam International Band 3，**加 7 張 Various Artists 泰國輯**） | 10 張全部避開 |
+
+**逐位確認已被 c-SEA／c-52／c-31 收過、本組一張都不重收的**：
+God Bless（**四個 RG 裡三個池中已有，第四個是 Compilation——這位在 MB 上已被收滿**）、
+Guruh Gipsy（MB 只有一個 RG，池中已有）、Krakatau、Asin、Shark Move（MB 只有一個 RG）、
+Dara Puspita（MB 兩個 RG 池中全有）、Harry Roesli（三張）、The Rollies（兩張）、
+Eka Sapta、Waldjinah、Rien Djamain、Bhaskara、Indra Lesmana、Discus、Benny Soebardja、
+Abbhama、Transs、Giant Step、Ariesta Birawa、Duo Kribo、Kantata Takwa、Fariz RM、
+คาราบาว、Onuma Singsiri、Chaweewan Dumnern、Banyen Rakkaen、Dao Bandon、
+The Paradise Bangkok Molam International Band、เพลิน พรหมแดน（**在 `cseaa-cards.json` 但不在 manifest**）。
+
+### 實掃踩到的假陽性（記給後面的批）
+
+`AKA` 子字串雙向命中 **85 筆、84 筆是假陽性**（Shabaka／Makaya McCraven／Chaka Khan／Rufus／
+Ka／Makaveli／坂本龍一／Rei Harakami／Kaka de Luxe／Alva Noto／Dwight Yoakam／Takács Quartet…），
+`Benyamin S.` 命中 15 筆全是 **Enya** 與 **-M-**，`Titiek Puspa` 命中 8 筆有 5 筆是 **T.I.**，
+`The Mercy's` 命中 6 筆全是 **Them** 與 **-M-**，`Black Brothers` 命中 2 筆全是 **H.E.R.**，
+`Rhoma Irama` 命中 27 筆有 24 筆是 **Air／AI／Om／RAM／-M-**，
+`Various Artists` 命中 **228 筆**（完全無效，只能逐張比盤名）。
+**判「池中有無」一律看整個掛名字串**——共通第 2 條點名的形狀，本組每一個掛名都踩到。
+
+## 二、本組立的裁定（340–348）
+
+### 340（本組立，**本組最重要的一條**）：**池中 `Caravan` 這個掛名字串同時指兩支完全不同的團**——本組取泰文原文，不再往那個字串加卡
+
+實掃抓到：池中 **`Caravan《คนกับควาย》(1975)`**（seed 一列，`onboarding-manifest-c52-20260903.json`）
+**就是泰國的 คาราวาน**，但掛名被寫成拉丁形 `Caravan`；
+而池中同一個字串底下還掛著**英國坎特伯里的 Caravan 四張**
+（《Caravan》1969、《If I Could Do It All Over Again, I'd Do It All Over You》1970、
+《In the Land of Grey and Pink》1971、《For Girls Who Grow Plump in the Night》1973），
+另有 `The Caravans`（福音 1 張）與 `Xhol Caravan`（德國 1 張）。
+
+**規則衝突**：c-126 第三節說「池中已有這位就照池中原字串，絕不製造新的掛名分裂」，
+但照抄 `Caravan` 會把三張泰國碟加進一個**已經指著兩支不同團**的字串裡，
+而 `CURATION-BRIEF-c128-c130` 第二節明寫「泰文有原文時**原文優先**（`คาราวาน`）」。
+
+**裁定**：取泰文原文 **`คาราวาน`**。理由三條——
+1. **後、特定的規格覆蓋先、通用的規格**（同 c-123 裁定 255 的處理方式）：c-129 簡報是專為這條線寫的。
+2. **技術理由可量化**：`artist?query=artist:"คาราวาน"` 全域**只回 1 筆**；
+   `artist:"Caravan"` 回 **155 筆**、第 1 名是英國那支（score 100）、**泰國這支連前 12 名都進不去**。
+   取拉丁形＝主動把卡片掛到一個 score 完全不可用的字串上。
+3. **先例**：c-125 第七節 Gong 一案——池中 5 張 `Gong` 全是法國那支，
+   西班牙的 Gong「**日後若要補收，要先解掛名撞卡**」。這裡是同一形狀，只是撞得更嚴重（池中已經混進去一張）。
+
+**代價已逐張寫進三卡的 `risk`**：本組三張與池中那張《คนกับควาย》在撞卡字串去重上看不見彼此，
+**本機端統一寫法時要把這四張一起處理**（連同英國 Caravan 那四張）。
+**依判準 2（可逆：改的是卡單的 `artist` 值，不是卡池結構）當場定。**
+
+### 341（本組立）：**同一個 MB 藝人實體在不同 RG 的 artist-credit 上有三種拼法**——取 a.k.a. 的正規拉丁形
+
+Benyamin Sueb（MB 實體 `33ae9e5e-e94e-462b-b047-68f7d9ac0cb6`，
+disambiguation「Indonesian comedian, actor & singer a.k.a. Benyamin S.」）名下：
+
+| RG | artist-credit 字串 |
+|---|---|
+| 《Indehoi》(1968) | **Benjamin S** & Rossy |
+| 《Tukang Solder》(無年份) | **Bunjamin S.** & Rossy |
+| 《Biographie》(無年份) | **Benyamin S.** |
+| 《Tung Ali Onde Jande Mude》(1995) | **Benyamin S** & Ida Royani |
+
+**三種拼法、同一個 MBID。** 依裁定 20（`artist:` 比對的是 artist-credit 字串不是實體名）
+照抄 credit 會把卡片掛成 `Benjamin S & Rossy`——那個拼法與 `Benyamin` 的任何寫法都摺不到同一個鍵。
+
+**裁定**：取 **`Benyamin S. & Rossy`**——實體 disambiguation 明載的 a.k.a. 正規拉丁形，
+＋依裁定 258 的判準保留合掛名（Benyamin 本批只有一卡，合掛名是**解歧義**不是製造分裂；
+反例對照是 c-123 的 Menuets 一案，那才是製造分裂）。四種拼法全部進 `queryAlias`。
+**依判準 2 當場定。**
+
+### 342（本組立）：**泰文盤名——本批的「原文優先」覆蓋裁定 45／259 的「取拉丁再發名」**
+
+อังคนางค์ คุณไชย《แฟนจ๋าอย่าลืม》(1979) 的同一個 RG 底下有：
+1979 TH 原盤（泰文名、12 軌）、**2016 JP EM Records CD 與 2018 XW 數位兩筆 Official，title 都是英譯 `Never Forget Me`（10 軌）**、
+另一筆 **Pseudo-Release** title 是轉寫 `Faen cha ya luem`。
+
+依 c-123 裁定 259，「同 RG 底下實際存在一筆純拉丁 title 的 Official release」時可取拉丁形——**本張確實存在**。
+但 c-129 簡報第二節明定泰文原文優先，且 RG title 本身就是泰文原盤名。
+
+**裁定**：**取泰文原盤名 `แฟนจ๋าอย่าลืม`**，三種拉丁寫法（轉寫、英譯、異拼）全部進 `queryAlias`。
+裁定 259 解決的是「全西里爾盤名要不要收」，這裡的問題是「兩個都能取時取哪個」——不同題目，不衝突。
+**同時記下代價**：原盤 12 軌、兩筆再發各 10 軌，**行文引軌數前必須先選版本**（裁定 251），已寫進該卡 `risk`。
+
+### 343（本組立）：**artist-credit 是拉丁轉寫、MB 實體主名是泰文時，取實體主名**
+
+พงษ์เทพ กระโดนชำนาญ《เดี่ยว》(1985)：MB 實體 `e5a171f5-…` 主名是泰文，
+**但該 RG 的 artist-credit 字串是 `Pongtep Kradonchamnan`**。
+依裁定 6／70／120（掛名用 MB 實體的文字）＋簡報的原文優先，**取泰文實體主名**。
+
+**同一位三種拉丁轉寫，逐一記下**（簡報第二節要求的「逐位記在 `risk` 裡」）：
+MB 實體的 credit 寫 `Pongtep Kradonchamnan`、通行寫法是 `Pongthep Kradonchamnan`、
+**Apple `th` 店（artistId 703373390）寫 `Pongthep Gradoanchumnaan`**——三種互不相同。
+
+**本組其餘泰國掛名的轉寫落差一併記**：
+`พุ่มพวง ดวงจันทร์` ＝ Pumpuang／Phumphuang ＋ Duangjan／Duangchan（四種組合，**拉丁查 MB 回 0 筆**）；
+`อังคนางค์ คุณไชย` ＝ Angkanang Kunchai／Khunchai（**拉丁查 MB 回 0 筆**，且池中寫成合掛名
+`Angkanang Kunchai With Ubon-Pattana Band`）；
+`คาราวาน` ＝ Caravan／Carawan（見裁定 340）。
+**通則：這一區的泰文掛名，只有原文查得到 MB；拉丁轉寫查 MB 回 0 不等於查無此人（裁定 179）。**
+
+### 344（本組立）：**§5.6 泰國合輯的 `year` 取 release-group 的 first-release-date（＝合輯出版年），不取錄音年代**
+
+c-123 裁定 255 在那批取的是**原始錄音年**，原因是那批簡報有 1970–1991 的年份窗口、
+不取錄音年 §5.6 就整個開不了。**c-129 沒有年份窗口**，而且四張泰國合輯的來源年代
+（1960 年代 shadow、1970 年代 luk thung funk、78 轉蟲膠盤）**沒有一個年份涵蓋整套的多數**
+——正是裁定 261 講的那個情形。
+
+**裁定**：四張一律取 first-release-date（2004／2008／2010／2010），
+錄音年代寫進 `exceptionReason` 並講明涵蓋範圍。
+**另有池中先例佐證**：既有 7 張泰國合輯的 `year` 全部是合輯出版年
+（Sound of Siam 2010／2014、Thai Pop Spectacular 2007、Siamese Soul 2009、Molam 2005、
+Theppabutr 2012、Thai? Dai! 2011），本組照同一把尺。**依判準 1（有先例）直接定。**
+
+### 345（本組立，**要回報給主線的工具缺口**）：**`dedup-crossbatch.mjs` 抓不到 c-SEA 的三份卡單**
+
+`dedup-crossbatch.mjs` 的卡單掃描是 `fs.readdirSync(DIR).filter(f => /^c\d+-cards\.json$/.test(f))`
+——**`cseaa-cards.json`／`cseab-cards.json`／`cseac-cards.json` 的檔名帶字母，一律不符**，
+而 c-SEA 的 99 張裡有 **18 張至今沒有進 manifest 也沒有進 `seed_cards.json`**。
+
+**實際代價**：本組原本要收的 **《Thai? Dai! The Heavier Side of the Luk Thung Underground》(2011)**
+在 `chk-prop` 上不會亮燈，**是靠實掃 `onboarding-manifest-c52-20260903.json` 才抓到它已被 c-52 收過**。
+c-SEA 卡單獨有的那 18 張（含 `เพลิน พรหมแดน《อาก๋งกับอาม้า / ร.ร.สอนจูบ》`、
+`Elvy Sukaesih《Menghitung Bintang》`、`Grace Nono`、`Siti Nurhaliza` 等）**目前沒有任何自動檢查看得見**。
+
+**裁定**：本組把 c-SEA 三份卡單併進實掃來源，逐張比對；
+**並把這個缺口寫進本文件交主線**——修法是把那個 regex 放寬成 `/^[a-z0-9]+-cards\.json$/`，
+或在 `dedup-crossbatch.mjs` 補一份明列的批名白名單。**這是 c-127 簡報第六節那個
+「chk-prop 抓不到未上架批」的同一家族，只是這次連檔名規則都對不上。**
+
+### 346（本組立）：**盤名含非 ASCII 連字號的 release-group 一律不收，不改寫**
+
+`chk-prop` 會判「專輯名含非 ASCII 連字號」（c-50 那個反模式）。本組實測判掉兩張本來很想收的泰國合輯：
+
+| RG | 盤名裡的字元 |
+|---|---|
+| `4bf7e8a1-…`《Suphanburi Soul: Kwanjit Sriprajan – The First Lady of Lae Music》(2019，ZudRangMa) | **U+2013 en dash** |
+| `a2ced472-…`《Classic Productions by Surin Phaksiri: Luk Thung Gems from the 1960s‐80s》(2019，EM Records) | **U+2010** |
+
+兩張的**每一筆 release 都用同一個字元**，沒有一筆是 ASCII 形——
+依 c-123 裁定 259 的同一條紀律（**沒有純拉丁／純 ASCII 的 Official release 就不自創**），**整張不收**。
+**不得手動把 `–` 改成 `-` 來過檢查**，那會變成自創盤名。兩張記入未收清單 B 類。
+
+**反向一筆也記下**：`Luk Thung: Classic & Obscure 78s from the Thai Countryside` 的 **`album` 欄乾淨**，
+但它的 **`label` 欄字串 `Dust‐to‐Digital` 含兩個 U+2010**——`chk-prop` **只掃 `artist` 與 `album`、不掃 `label`**，
+所以不會亮燈，但下游的廠牌字串比對會出事。已在該卡 `label` 欄明寫。
+
+### 347（本組立）：**`primary-type` 為 null／空的 release-group 不收**——泰國這一區的比例極高
+
+共通第 4 條的門檻是「`primary-type=Album`」。泰國這一區大量 RG 的 `primary-type` 欄是 **null**，
+即使有 first-release-date 也一樣。本組實測判掉的：
+
+`ยอดรัก สลักใจ《เอาแน่》(1986)`（有 1986 TH Cassette×10 Ligo release，**但 RG 的 primary-type 是 null**）、
+`คาราบาว《คาราวาน, Vol. 4: ท. ทหารอดทน》`與`《อเมริโกย》`（**primary-type null ＋無年份**）、
+`เพลิน พรหมแดน` 另外三個 RG、`สายัณห์ สัญญา` 全部 5 個 RG、`ชาย เมืองสิงห์` 全部 3 個、
+`ศรคีรี ศรีประจวบ` 全部 2 個、`เทพพร เพชรอุบล` 唯一 1 個、`ชินกร ไกรลาศ` 唯一 1 個、
+`กรรมาชน` 唯一 1 個、`ดาว บ้านดอน` 的 3 個、`สุรพล สมบัติเจริญ` 的 1 個。
+
+**裁定**：不收，記入未收清單 B 類並註明「**MB 有實體、有 release，但 RG 的 primary-type 欄是空的**」。
+**這與「MB 查無」不是同一回事**，寫未收清單時要分開——前者是 §1 補遺批也幫不上忙的建檔品質問題，
+後者才是 §1 的射程。
+
+### 348（本組立）：**電影原聲帶不收這條，把 Rhoma Irama 整位擋在門外**
+
+Rhoma Irama 是簡報 b 組段沒點名、但這條線上跑不掉的一位（池中已有三張：
+《Begadang》1973、《Darah Muda》1975、《Santai》1977）。**MB 上他名下只有 3 個 RG**：
+`4dfac6a5-…`《Gitar Tua》(1977，**secondary-types 含 Soundtrack**)、
+`e46976b5-…`《Berkelana》(1978，**同樣 Soundtrack**)、
+`937ab95c-…`《Tukang Ramal》(**無 first-release-date**)。
+
+**共通第 4 條明寫「電影／遊戲原聲帶不收」**（c-119 裁定 261），兩張 Soundtrack 全部出局，
+第三張沒有年份也出局。**裁定**：Rhoma Irama 這位本批一張都不收，記入未收清單 B 類。
+**同一條也擋掉 Slank 的四張 Soundtrack RG**（《Get Married》《Get Married 2》《Generasi Biru》OST 兩筆）。
+
+## 三、短掛名回問實測（裁定 179／250）——**score 在本組同樣完全不可用**
+
+| 掛名 | 全域筆數 | 目標名次 | 目標 score | 第 1 名是誰 |
+|---|---:|---:|---:|---|
+| **AKA**（ID） | **549** | **第 4** | **92** | 德國 AKA AKA（100）；**第 3 名南非饒舌歌手 AKA 與目標同為 92** |
+| **The Mercy's**（ID） | 21 | 第 2 | 96 | 紐西蘭工業團 The Mercy Cage（100） |
+| **Benyamin**（ID） | 12 | 第 2 | 94 | 德國鋼琴家 Benyamin Nuss（100） |
+| **Caravan**（拉丁） | **155** | **前 12 名之外** | — | 英國坎特伯里 Caravan（100）——**見裁定 340** |
+| **Black Brothers**（ID） | 6 | 第 1 | 100 | ——（但第 2 名巴基斯坦團 score 98，**只差 2 分**） |
+| **Slank**（ID） | 2 | 第 1 | 100 | ——（第 2 名是路易維爾的美國饒舌歌手 Slank，**同名**） |
+| **Bimbo**（ID） | 58 | 第 3 | 95 | ——（未收，見未收清單） |
+| Koes Plus／Titiek Puspa／Chrisye／Iwan Fals／Chaseiro／Rhoma Irama／Gombloh | 各 1–2 | 第 1 | 100 | ——（MB 端噪音小） |
+| **คาราวาน／พุ่มพวง ดวงจันทร์／อังคนางค์ คุณไชย／พงษ์เทพ กระโดนชำนาญ**（泰文原文） | 各 **1** | 第 1 | 100 | ——（**泰文原文查一律乾淨；換成拉丁轉寫查全部回 0 筆**） |
+
+**全部靠 `type`／`area`／`life-span.begin`／`disambiguation` 四項交叉，沒有一次用 score。**
+
+### 寫進 `risk` 的「不得背書本名」四筆（裁定 250）
+
+- **`AKA`**：MB 清單裡 `13ee6d34`（disambiguation 只寫「AOR」）與 `9869778c`（只寫「London Six-piece indie funk/punk band」）
+  **連 area 都沒有**；**且 Apple `id`／`us` 兩店的 `AKA` 藝人實體（3556203）是南非饒舌歌手，55 張目錄全不是這支團**。
+- **`Black Brothers`**：`9b96f5f6`（只寫「Song What a Time」）與 `e84fcca7`（只寫「probably swiss hiphop」）
+  **type 與 area 皆空**；店端五個同名實體裡只有 `1637814102`「The Black Brothers Papua」是同一支、且目錄只有 1 張。
+- **`Slank`**：店端有**五個** Slank 藝人實體，只有 `291537185` 是本團。
+- **`อังคนางค์ คุณไชย`（begin 1956-02-06）與 `ยอดรัก สลักใจ`（begin 1956-02-06）在 MB 上同一個生日**
+  ——兩筆很可能有一筆是建檔預設值，**不得拿 `life-span.begin` 當佐證寫進正文**。
+
+## 四、b 組的未收清單（分類）
+
+### A. MB 查無／建檔不足 → §1 補遺批的候選
+
+| 掛名 | 實測 |
+|---|---|
+| **Panbers** | artist 查回 1 筆（`9637009a-…`，Group、Indonesia、begin 1969），**名下只有 1 個 RG，而且是無年份的 Compilation《Tembang Kenangan Volume 1》**。池中那張《Indonesian City Sound…》(2023，c-52) 不在這個實體名下。**整位不可收。** |
+| **Sroeng Santi／สรวง สันติ** | 泰文查回 1 筆（`270161b8-…`，Person、Thailand），**名下只有 1 個 RG：2009 年的 Single《Iron Man》**。簡報點名的這位在 MB 上沒有可收的碟。 |
+| **D'Lloyd** | artist 查回 1 筆（`7d9725ad-…`，Group、Indonesia、begin 1969），**名下 0 個 RG**。 |
+| **Franky & Jane** | artist 查回 1 筆（`03b9f9a2-…`，Group、Indonesia），**名下 0 個 RG**。 |
+| **Leo Kristi** | artist 查回 1 筆（`7e8a6628-…`，Person、Indonesia、begin 1949-08-08），**名下 0 個 RG**。 |
+| **Suraphol Sombatcharoen／สุรพล สมบัติเจริญ** | 泰文查回 1 筆（`9bbad279-…`，Person、Thailand、begin 1930-09-25），**3 個 RG 全部無 first-release-date**。 |
+| **Angkanang 的第三個 RG／ไวพจน์ เพชรสุพรรณ 3 個／ขวัญจิต ศรีประจันต์ 3 個** | 同上：有實體、有 RG，**無年份**。 |
+| **Benyamin S. 的 `Tukang Solder` 與 `Biographie`** | 兩張都是實體盤（前者 12" Vinyl×12、Diamond DLL-022＋REMACO ML-12410；後者 Cassette×10、Musica MSC7285），**但 RG 的 first-release-date 是空的**——**這兩張是 §1 補遺批最現成的兩筆，載體與編號都齊了，只差年份的第二來源。** |
+
+### B. 形態不符 → 不收（不進 §1）
+
+- **電影原聲帶**（裁定 348）：Rhoma Irama《Gitar Tua》(1977)、《Berkelana》(1978)；Slank 的四張 OST。
+- **`primary-type` 為 null**（裁定 347）：ยอดรัก สลักใจ《เอาแน่》(1986)、คาราบาว《ท. ทหารอดทน》《อเมริโกย》、
+  สายัณห์ สัญญา 全 5 個、ชาย เมืองสิงห์ 全 3 個、ศรคีรี ศรีประจวบ 全 2 個、เทพพร เพชรอุบล、ชินกร ไกรลาศ、
+  กรรมาชน、ดาว บ้านดอน 3 個、เพลิน พรหมแดน 3 個。
+- **盤名含非 ASCII 連字號**（裁定 346）：《Suphanburi Soul: Kwanjit Sriprajan – The First Lady of Lae Music》(2019)、
+  《Classic Productions by Surin Phaksiri: Luk Thung Gems from the 1960s‐80s》(2019)、
+  พุ่มพวง《ห้วยหน่อย‐ถอยนิด》。
+- **EP**：Titiek Puspa《Senyum》(1969)。
+- **artist-credit 是 `[unknown]`**：Various Artists 線上的《Radio Thailand: Transmissions From the Tropical Kingdom》
+  (2006-05-20，Sublime Frequencies)——**掛名做不出來，不是合輯資格的問題**。
+- **宗教題材整位略過**（本批的宗教中立規則，寧可不碰）：Bimbo（MB 2 個 RG：《Wudhu》1993 與一張無年份）。
+- **不是個人碟**：Benyamin S.《Mas Roni》(1990-12-01) 是**七位合掛的雜錦卡帶**。
+- **再發年被登記成 first-release-date**：Chaseiro《Pemuda》與《3》（MB 的 first-release-date 都是 2018）。
+- **內容是池中已有的碟的併輯**：Koes Plus《Dheg Dheg Plas & Volume Two》(2010)。
+
+### C. 名額不足 → **下一批直接可用**（已逐張寫進各卡的「刻意不釘」，MBID 都釘好了）
+
+**印尼 14 張**：Koes Plus《Vol. 9》(1973，RLL-208)／《Vol. 11》(1974，RLL-301)；
+The Mercy's《Volume 2》(1973，PLL 1005)／《Melayu Pop Vol.1》(1974)；
+Chrisye《Pantulan Cita》(1981)／《Resesi》(1983)／《Nona》(1984)／《Sendiri》(1984)；
+Chaseiro《Ceria》(1982，MSC7364)；Iwan Fals《Sumbang》(1983)／《Sugali》(1984)／《Sore Tugu Pancoran》(1985)；
+Ebiet G. Ade《Album 5 Langkah Berikutnya》(1982，`76112aff-…`)／《Album 6 Tokoh Tokoh》(1982，`0573151c-…`)。
+**另 Slank 1990–1998 那七張全部可收**（Suit... Suit... He... He. 1990、Piss! 1993、Generasi Biru 1994、
+Minoritas 1996、Lagi Sedih 1997、Tujuh 1998、Mata Hati Reformasi 1998-07）。
+
+**泰國 4 張**：คาราวาน《1985》(1985，**盤名是純數字，撞卡字串去重上極危險，收之前要先想清楚**)／
+《คนไกลบ้าน》(1986，**店面兩種查法皆未命中**)／《US J. PAN》(1987)／《อานนท์》(1988)；
+Various Artists《Thai Beat a Go-Go, Volume 2》(2004) 與《Volume 3》(2005)
+（**依裁定 255／c-123 第五節「同一批錄音的多種合輯只挑最權威的一種」，本批系列只取第一集**）。
+
+### D. 與池中撞卡 → **1 張**（本組唯一一張因撞卡而換掉的）
+
+**《Thai? Dai! The Heavier Side of the Luk Thung Underground》(2011，Finders Keepers FKR044)**
+——`onboarding-manifest-c52-20260903.json` ＋ seed 各一列。**見裁定 345**：
+`chk-prop` 與 `dedup-crossbatch` 都不會為這張亮燈（前者比的是 `seed_cards.json`——它其實在裡面、
+所以真的會亮；後者抓不到 c-SEA 卡單），**是實掃 manifest 時抓到的**。
+已改收《Luk Thung! The Roots of Thai Funk》(2010，ZudRangMa ZRMCD003)。
+
+## 五-b、§5.6 合輯逐張舉證（4 張，全部泰國）
+
+| # | 卡 | `year` | 錄音年代 | 為什麼合輯是唯一形態 | 兩個舉證網址 |
+|---|---|---:|---|---|---|
+| 1 | Various Artists《Thai Beat a Go-Go, Volume 1》 | 2004 | 1960s 中–1970s 初 | shadow／string combo 樂隊的錄音在原生市場只有 7 吋與合輯卡帶，端上查不到任何一支參與樂隊的原盤 LP | RG `7a9148bd` ＋ release `3405e0c6`（Subliminal Sounds SUBCD11、CD×20、barcode 7393210134119） |
+| 2 | Various Artists《Shadow Music of Thailand》 | 2008 | 整個 1960s | 同上；端上查不到參與樂隊的 release-group | RG `e4b087bb` ＋ release `197f5ace`（Sublime Frequencies SF042、12" Vinyl×17） |
+| 3 | Various Artists《Luk Thung: Classic & Obscure 78s from the Thai Countryside》 | 2010 | 78 轉蟲膠盤時代 | **來源載體上根本不存在「專輯」這種形態**——單面一曲、沒有 LP | RG `f81d4541` ＋ release `8cfe8345`（Dust-to-Digital DTD-29、CD×14、barcode 880226002923） |
+| 4 | Various Artists《Luk Thung! The Roots of Thai Funk》 | 2010 | 1970s | 走 funk 編制的 luk thung 當年只有 7 吋與合輯卡帶，端上查不到同批原盤 LP | RG `9cbceeb8` ＋ release `106c2c24`（ZudRangMa ZRMCD003、CD×18） |
+
+**八個網址全部是 `musicbrainz.org/ws/2` 的 API 路徑、且逐一實際打過讀過**（裁定 257：
+「打得開」不等於「站得住」，而且**廠牌總覽頁、曲風通論頁一律不算**）。
+取 release 網址而不取商品頁的理由沿用 c-124 裁定 263／c-123 的 Grünberg 一案：
+**release 頁記的正是 `exceptionReason` 引的那幾格——廠牌、編號、載體、軌數、國別、日期，逐格對得上。**
+**⚠ 覆核時要打 `ws/2` API，不要打網頁**（`musicbrainz.org` 網頁版擋機器抓取，用 curl 驗會得到假的失敗）。
+
+`exceptionReason` 四張分別是 581／508／518／491 字元（門檻 12），
+`exceptionEvidenceUrls` 四張各 2 個 HTTPS，`chk-prop` 標記 0。
+
+## 六-b、封面與店面的實測（**只寫觀察，不下結論——裁定 254**）
+
+### CAA（22 張逐張探測 `coverartarchive.org/release-group/<id>/front`）
+
+**200：16 張／404：6 張／5xx：0**。
+**404 的六張**（本機端要人工補圖）：Benyamin S. & Rossy《Indehoi》、Koes Plus《Volume 8》、
+Koes Plus《Vol. 10》、Black Brothers《Terima Kaseh》、Slank《Kampungan》、พงษ์เทพ กระโดนชำนาญ《เดี่ยว》。
+
+### Apple 店面（**`search` ＋ 藝人目錄 `lookup?id=<artistId>&entity=album` 兩種查法；第三種查法未跑**）
+
+| 兩種查法有命中 | 11 張 |
+|---|---|
+| | Koes Plus《Volume 8》(id/us `1777356356`)、Koes Plus《Vol. 10》(`1777379905`)、Chrisye《Puspa Indah》(id `1775214005`)、Chaseiro《Bila》(id `1753303191`)、Iwan Fals《Opini》(id `1753721153`)、Slank《Kampungan》(id/us `1550371580` **與 `1871353480` 兩個 collectionId 指同一張**)、คาราวาน《อเมริกันอันตราย》(th/us `1871711638`)、คาราวาน《บ้านนาสะเทือน》(th/us `1871712806`)、**คาราวาน《คนตีเหล็ก》(`1814102585`，只在藝人目錄那一步命中、search 那一步沒跑到)**、Various Artists《Luk Thung: Classic & Obscure 78s…》(us/gb/th `1348481287`)、Various Artists《Thai Beat a Go-Go, Volume 1》(us `1532624882`) |
+| **兩種查法皆未命中** | **11 張**：Benyamin《Indehoi》、Titiek Puspa《Sok Teu》、AKA《Reflection》、AKA《Crazy Joe》、The Mercy's《The Mercy's》、Black Brothers《Terima Kaseh》、พุ่มพวง《ตะวันลับฟ้า》、อังคนางค์《แฟนจ๋าอย่าลืม》、พงษ์เทพ《เดี่ยว》、Various Artists《Shadow Music of Thailand》、Various Artists《Luk Thung! The Roots of Thai Funk》 |
+
+**⚠ 這 11 張一律只是「search 與藝人目錄兩種查法未命中」的觀察，
+不得升級成「未上架」「無來源狀態」「要掃圖」——第三種查法（直查 `collectionId`）是研究層的事（裁定 254）。**
+
+**店面端另外四筆要交給研究層的線索**：
+1. **兩個 Koes Plus 藝人實體**：`422455311`（39 張，全是 1980 年後的再發與精選）與 `1770772377`（18 張，
+   1969–1976 的原盤系列）——**挑錯實體整批落空**。
+2. **`se` 店把 Various Artists 寫成 `Blandade Artister`**（瑞典語）——跨語言掛名差異，字串比對必然落空（裁定 260）。
+3. **店端年份與端上差很多**：คาราวาน 三張的店端 releaseDate 是 2022／2022／2025（數位上架年），
+   端上是 1976／1983／1984；Koes Plus《Vol. 10》端上 1974、店端 1973；
+   《Luk Thung: Classic & Obscure 78s…》端上 2010／2013、店端 2018。**三個年份並存的那一張不得單方面斷言。**
+4. **`Luk Thung` 被 Apple 模糊比對成 `Luke Combs`**——`th` 店 search 回的全是 Luke Combs 與 Drake。
+
+## 七-b、給下一批的三句話
+
+1. **印尼在 MB 上快見底了**：本組逐位查過的 30 位裡，**5 位的 MB 實體名下是 0 個 RG**
+   （D'Lloyd、Franky & Jane、Leo Kristi、Panbers 只有一張無年份合輯、Gombloh 唯一那個 RG 是
+   Sublime Frequencies 的田野錄音、疑似掛錯人）。**再深挖只能走 §1 人工身分**，
+   Benyamin S. 那兩張（載體與盤面編號齊全、只差年份）是最現成的兩筆。
+2. **泰國的瓶頸不是「MB 沒建檔」，是「建了但 `primary-type` 是空的」**（裁定 347）——
+   本組判掉的 20 幾個 RG 裡有實體、有 release、有廠牌，就是那一格空著。
+   **這是 §1 也救不了的建檔品質問題，寫未收清單時要與「MB 查無」分開。**
+3. **這條線的合輯入口已經用掉一大半**：池中泰國的 Various Artists 輯本組收完後是 **11 張**，
+   Sublime Frequencies／Finders Keepers／Soundway／ZudRangMa／Dust-to-Digital／Subliminal Sounds
+   六家的泰國目錄**只剩 Thai Beat a Go-Go Vol. 2／3 兩張可收**。**印尼那一側的考古再發合輯還沒挖過**
+   （池中只有 Those Shocking Shaking Days、Panbers 的 Indonesian City Sound 與兩張 Smithsonian 的
+   Music of Indonesia），Now-Again／Strut／Sublime Frequencies 的印尼目錄是下一批最現成的方向。

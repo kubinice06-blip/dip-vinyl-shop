@@ -281,5 +281,132 @@
   "why": "同上一卡的實掃結果：池中這支團只有《คนกับควาย》(1975) 一張、且掛名是拉丁形。MB 目錄 11 個 RG 裡 1983–1988 那一段有《บ้านนาสะเทือน》(1983)、《คนตีเหล็ก》(1984)、《1985》(1985)、《คนไกลบ้าน》(1986)、《US J. PAN》(1987)、《อานนท์》(1988) 六張，**池中這一段是完全空的**。本批取 1983 與 1984 兩張（本卡與下一卡），理由是這兩張在 Apple 泰國店的藝人目錄裡都查得到對應條目、外部可交叉；《1985》那張的盤名是純數字（撞卡字串去重上極危險）、《คนไกลบ้าน》兩種店面查法皆未命中，兩張都記入未收清單餘量。",
   "risk": "⚠⚠ **掛名撞卡（本批最重要的一筆，裁定 340）**：池中已經有 `Caravan《คนกับควาย》(1975)`（seed 一列，c-52 2026-09-03 上架）——**那就是這支團**，但掛名被寫成拉丁形 `Caravan`，而池中同一個字串底下還掛著**英國坎特伯里的 Caravan 四張**（《Caravan》1969、《If I Could Do It All Over Again…》1970、《In the Land of Grey and Pink》1971、《For Girls Who Grow Plump in the Night》1973），另有 `The Caravans`（福音，1 張）與 `Xhol Caravan`（德國，1 張）。**池中 `Caravan` 這個掛名字串現在同時指兩支完全不同的團**，是 `audits/pool-artist-name-splits.md` 在防的形狀的加強版。本批依 CURATION-BRIEF-c128-c130 第二節「泰文有原文時原文優先（`คาราวาน`）」取泰文原文，**不往 `Caravan` 那個已經撞在一起的字串再加卡**（先例：c-125 第七節 Gong 一案——池中 `Gong` 全是法國那支，西班牙的 Gong「日後若要補收，要先解掛名撞卡」）。**代價要寫清楚**：本組三張與池中那張《คนกับควาย》在撞卡字串去重上看不見彼此，**本機端統一寫法時要把這四張一起處理**。 撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 掛名回問（裁定 179／250）：同上一卡——泰文查回 1 筆、拉丁 `Caravan` 查回 155 筆且泰國這支進不了前 12 名，**score 不採**。 ⚠ **`media.format` 記成 `CD`、first-release-date 卻是 1983**：與上一卡同形，**不得把「1983 年的 CD」寫進正文**（1983 年泰國的主流實體是黑膠與卡帶）。 ⚠ **label-info 為空、無盤面編號**，`label` 欄已照實寫，下游不得補。 年份：MB first-release-date 1983 ＝唯一那筆 release 的 date；**Apple 店端 collectionId 1871712806 的 releaseDate 標 2022**（數位上架年）——**兩邊差 39 年，不得引店端年份**。 封面：CAA release-group/5aadb1a0/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `th`／`us` 兩店 search「คาราวาน บ้านนาสะเทือน」**第一筆即 collectionId 1871712806**；藝人目錄 `lookup?id=1307979564&entity=album` 的 8 張裡同樣有這筆。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
   "mbNote": "釘 release-group 5aadb1a0-2e9f-4f5b-a834-2eb25df1c007，identitySource pinned。回問確認 title「บ้านนาสะเทือน」、primary-type Album、secondary-types 空、first-release-date 1983、artist-credit「คาราวาน」（實體 f77ee6f1-9b57-499e-a926-5decd2661f67，Group、area Thailand、begin 1973、disambiguation「Thai folk-rock band」）。轄下 release 1 筆：1983 TH Official、media.format `CD`×10、**label-info 空**、無 barcode。刻意不釘：ec550864-ef68-4207-a807-e20c7e14cd2e《คนกับควาย》(1975，**池中已有**)、347d78e9-23e6-487f-a59e-ba207612a145《อเมริกันอันตราย》(1976，**本組另收一卡**)、d5bd376a-78ac-4939-8164-cc56ce0fd15f《คนตีเหล็ก》(1984，**本組另收一卡**)、458ac1a9-…《1985》、20e38b39-…《คนไกลบ้าน》(1986)、7d92c928-…《US J. PAN》(1987)、d7334d4f-…《อานนท์》(1988)、cae8fa7d-…《American Antarai》(2013-08-12)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "คาราวาน；Caravan；Caravan Thailand；คนตีเหล็ก；Kon Ti Lek；Khon Ti Lek",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1984、**country 欄為空**、Official、**CD**×11、label-info 空；此 RG 底下沒有其他 release",
+  "g": "b",
+  "artist": "คาราวาน",
+  "album": "คนตีเหล็ก",
+  "year": 1984,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "**MB 的 `release` 端點回傳裡 label-info 為空、country 欄亦為空**（1984 Official、**media.format 記成 CD**、11 軌）——`label` 欄不得自行補寫廠牌，也不得補寫發行國（裁定 259）",
+  "why": "同本組另兩張 คาราวาน 卡的實掃結果：池中這支團只有《คนกับควาย》(1975) 一張、且掛名寫成拉丁形 `Caravan`。《คนตีเหล็ก》(1984) 與本組的《บ้านนาสะเทือน》(1983) 是相鄰兩年的一對，也是 MB 目錄裡 1983–1988 那六張中**在 Apple 泰國店的藝人目錄裡查得到對應條目的兩張**（另一筆是 collectionId 1814102585）。這支團 1970 年代的一張與 1980 年代的三張合起來，才在池中形成可比較的目錄形狀。",
+  "risk": "⚠⚠ **掛名撞卡（本批最重要的一筆，裁定 340）**：池中已經有 `Caravan《คนกับควาย》(1975)`（seed 一列，c-52 2026-09-03 上架）——**那就是這支團**，但掛名被寫成拉丁形 `Caravan`，而池中同一個字串底下還掛著**英國坎特伯里的 Caravan 四張**（《Caravan》1969、《If I Could Do It All Over Again…》1970、《In the Land of Grey and Pink》1971、《For Girls Who Grow Plump in the Night》1973），另有 `The Caravans`（福音，1 張）與 `Xhol Caravan`（德國，1 張）。**池中 `Caravan` 這個掛名字串現在同時指兩支完全不同的團**。本批依 CURATION-BRIEF-c128-c130 第二節「泰文有原文時原文優先（`คาราวาน`）」取泰文原文，**不往 `Caravan` 那個已經撞在一起的字串再加卡**（先例：c-125 第七節 Gong 一案）。**代價要寫清楚**：本組三張與池中那張《คนกับควาย》在撞卡字串去重上看不見彼此，**本機端統一寫法時要把這四張一起處理**。 撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 掛名回問（裁定 179／250）：同本組另兩張——泰文 `คาราวาน` 全域只回 1 筆（f77ee6f1-…，Group、area Thailand、begin 1973、disambiguation「Thai folk-rock band」），拉丁 `Caravan` 回 155 筆且泰國這支進不了前 12 名，**score 不採**。 ⚠ **country 欄為空**（本組三張 คาราวาน 裡唯一一張連國別都拿不到的）——下游不得寫成泰國發行，只能寫端上那一格是空的。 ⚠ **`media.format` 記成 `CD`、first-release-date 卻是 1984**：與本組另兩張同形，**不得把「1984 年的 CD」寫進正文**。 ⚠ **label-info 為空、無盤面編號、無 barcode**，三格都拿不到交叉來源。 年份：MB first-release-date 1984 ＝唯一那筆 release 的 date；**Apple 店端 collectionId 1814102585 的 releaseDate 標 2025**（數位上架年）——**兩邊差 41 年，不得引店端年份**。 封面：CAA release-group/d5bd376a/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `th` 藝人目錄 `lookup?id=1307979564&entity=album` 回 8 張，**裡面有 collectionId 1814102585「คนตีเหล็ก」**；以「คาราวาน คนตีเหล็ก」search 未列入本輪 search 實測（本張是靠藝人目錄那一步命中的）——**這一點下游要注意：本卡的店面線索來自目錄查法，不是 search**。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group d5bd376a-78ac-4939-8164-cc56ce0fd15f，identitySource pinned。回問 `release-group/d5bd376a-…?fmt=json&inc=artist-credits+releases` 確認 title「คนตีเหล็ก」、primary-type Album、secondary-types 空、first-release-date 1984、artist-credit「คาราวาน」（實體 f77ee6f1-9b57-499e-a926-5decd2661f67，Group、area Thailand、begin 1973，名下 11 個 RG）。轄下 release 1 筆（`release?release-group=…&inc=media+labels` 實測）：1984、**country 空**、Official、media.format `CD`×11、**label-info 空**、無 barcode。刻意不釘：ec550864-ef68-4207-a807-e20c7e14cd2e《คนกับควาย》(1975，**池中已有**)、347d78e9-…《อเมริกันอันตราย》(1976，**本組另收**)、5aadb1a0-…《บ้านนาสะเทือน》(1983，**本組另收**)、458ac1a9-3ae4-4443-8f94-24f437da6ab2《1985》(1985)、20e38b39-1b41-4313-8a27-cb3c4e003381《คนไกลบ้าน》(1986)、7d92c928-…《US J. PAN》(1987)、d7334d4f-…《อานนท์》(1988)、cae8fa7d-…《American Antarai》(2013-08-12)、a43f5b76-… 與 c75f4db6-…（**皆無 first-release-date**）。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "พงษ์เทพ กระโดนชำนาญ；Pongtep Kradonchamnan；Pongthep Kradonchamnan；Pongthep Gradoanchumnaan；เดี่ยว；Diao；Deow",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1985 TH Official、12\" Vinyl×10、GMM Grammy／STEREO PO-280513；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "พงษ์เทพ กระโดนชำนาญ",
+  "album": "เดี่ยว",
+  "year": 1985,
+  "genres": [
+   "folk"
+  ],
+  "label": "GMM Grammy／STEREO PO-280513，1985 TH Official，12\" Vinyl 10 軌（**本組泰國七張裡唯一一張同時有廠牌名與盤面編號的**）（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`พงษ์เทพ กระโดนชำนาญ` 與三種拉丁轉寫全部 0 命中——**池中這位完全是空的**。池中泰國那 13 張裡，1980 年代的單人創作者只有 พุ่มพวง ดวงจันทร์《บ้านนอกในกรุง》(1980) 一張，其餘不是樂團就是 2000 年後的考古再發合輯。本張是 MB 目錄裡這位僅有的兩個 RG 中**唯一一個帶 first-release-date 的**（另一個《ไอแอมอีสาน》連 primary-type 都是空的），而且是本組泰國七張裡**唯一一張 label-info 與 catalog-number 兩格都填得出來的**，交叉來源最強。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，掛名 0 命中、本張精確鍵 0 命中、同盤名 0 命中。 ⚠⚠ **掛名：MB 實體名與 artist-credit 不一致（裁定 343）**——MB artist 實體 e5a171f5-270c-4ddc-9b9c-6e56e373aba6 的主名是泰文「พงษ์เทพ กระโดนชำนาญ」（Person、area Thailand），**但本 RG 的 artist-credit 字串是拉丁轉寫「Pongtep Kradonchamnan」**。依裁定 6／70／120（掛名用 MB 實體的文字）＋ CURATION-BRIEF-c128-c130 第二節（泰文原文優先），卡片掛名取**泰文實體主名**，`queryAlias` 填三種拉丁轉寫。**⚠ 第三種轉寫來自店端**：Apple `th` 店把這位寫成 `Pongthep Gradoanchumnaan`（artistId 703373390），**與 MB 的兩種寫法都不同**——同一位三種拉丁轉寫，逐一記在這裡（本批簡報第二節要求的「逐位記在 risk 裡」）。 ⚠ **盤名是單字 `เดี่ยว`（獨奏／單獨）**，摺鍵極短，外部比對一定要配掛名。 掛名回問（裁定 179／250）：`artist?query=artist:\"พงษ์เทพ กระโดนชำนาญ\"&limit=25` 全域**只回 1 筆**；用拉丁 `Pongthep Kradonchamnan` 查亦回 1 筆同一實體。**但店端有兩個藝人實體**（703373390 的 20 張與 1688225590 的 4 張），外部比對要認 artistId。 年份：MB first-release-date 1985 ＝唯一那筆 release 的 date，無第二個來源可交叉。 封面：CAA release-group/9fa0b619/front 實測 **404**（本機端要人工補圖）。 店面（裁定 254，只寫觀察）：Apple `th`／`us` 兩店以泰文全名＋泰文盤名 search 回的 5 筆**全是 2003–2021 年的精選輯**（《รวมฮิตพิเศษ》系列、《ชุดที่1 ลิงทะโมนเอย》等），沒有《เดี่ยว》；藝人目錄 `lookup?id=703373390&entity=album` 回 20 張、`lookup?id=1688225590` 回 4 張，**兩份目錄裡都沒有《เดี่ยว》**——兩種查法未命中的觀察，第三種查法留給研究層。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 9fa0b619-9aa9-44fc-92b8-577bc78d1fcb，identitySource pinned。回問確認 title「เดี่ยว」、primary-type Album、secondary-types 空、first-release-date 1985、**artist-credit 字串是拉丁轉寫「Pongtep Kradonchamnan」**（實體 e5a171f5-270c-4ddc-9b9c-6e56e373aba6，MB 主名為泰文「พงษ์เทพ กระโดนชำนาญ」，Person、area Thailand，名下 2 個 RG）。轄下 release 1 筆：1985 TH Official、12\" Vinyl×10、GMM Grammy／STEREO PO-280513、無 barcode。刻意不釘：dc2cad26-df93-48b2-ac2c-19ad7af2c8b8《ไอแอมอีสาน》(**無 first-release-date、primary-type 亦為空**，不符 primary-type=Album 門檻)。"
+ },
+ {
+  "releaseType": "Compilation",
+  "selfTitled": false,
+  "queryAlias": "Thai Beat a Go-Go；Thai Beat A Go-Go, Volume 1；Thai Beat a Go Go Vol. 1；Subliminal Sounds SUBCD11",
+  "reissuedBy": "2009 SE Official 12\" Vinyl×13，Subliminal Sounds／SUBLP-35（**黑膠版只有 13 軌、CD 版 20 軌**）",
+  "g": "b",
+  "artist": "Various Artists",
+  "album": "Thai Beat a Go-Go, Volume 1",
+  "year": 2004,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Subliminal Sounds／SUBCD11，2004 SE Official，CD 20 軌，barcode 7393210134119；另有 2009 SE Official 12\" Vinyl 再發（Subliminal Sounds／SUBLP-35、**13 軌**）（release 端點實測；裁定 259）",
+  "exceptionReason": "1960 年代中到 1970 年代初的泰國 shadow／string combo 樂隊錄音在原生市場以 7 吋與合輯卡帶為主要載體，這一批曲目沒有任何一張以單一樂隊為單位的原盤 LP 存在於資料庫端，**合輯是它們唯一取得長篇形態的方式**。本輯 2004 年由瑞典 Subliminal Sounds 發行、編號 SUBCD11、20 軌、barcode 7393210134119，2009 年再壓成 12 吋黑膠 SUBLP-35（13 軌）。**`year` 取 2004，即資料庫端登記的合輯出版年**——依裁定 261：本輯的錄音年代橫跨 1960 年代中到 1970 年代初、沒有一個年份涵蓋整套的多數，所以取 release-group 的 first-release-date，而不是任一錄音年。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2004、artist-credit Various Artists」；release 網址支持「Subliminal Sounds SUBCD11、2004、SE、Official、CD、20 軌、barcode 7393210134119」。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/ws/2/release-group/7a9148bd-9496-31b6-8224-9f663cbcce01?fmt=json&inc=artist-credits+releases",
+   "https://musicbrainz.org/ws/2/release/3405e0c6-d177-4109-8b4f-048fab6c66b3?fmt=json&inc=media+labels+artist-credits"
+  ],
+  "why": "實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest＋c47/cand-all.json（合計 24,138 列）＋ c-SEA 三份卡單 99 張。**`Various Artists` 這個掛名在池中有 228 筆**，子字串比對完全無效，只能逐張比盤名。池中泰國的 Various Artists 合輯共 **7 張**：《The Sound of Siam》(2010)、《The Sound of Siam, Volume 2》(2014)、《Thai Pop Spectacular: 1960s-1980s》(2007)、《Siamese Soul: Thai Pop Spectacular, Volume 2》(2009)、《Molam: Thai Country Groove From Isan》(2005)、《Theppabutr Productions: The Man Behind the Molam Sound 1972-75》(2012)（前六張皆 c-SEA 2026-09-01）與 **《Thai? Dai! The Heavier Side of the Luk Thung Underground》(2011，`onboarding-manifest-c52-20260903.json`)**。 本輯不在那 7 張裡（精確鍵 0 命中）。池中那 7 張的取樣全部集中在 **luk thung 與 molam** 兩塊（Sound of Siam ×2、Molam、Theppabutr、Thai? Dai!）與 **1960s–80s 泰式流行**（Thai Pop Spectacular ×2），**1960 年代 shadow／string combo 那一支樂隊化的電吉他樂隊路線在池中沒有任何一張**。本輯是資料庫端唯一一套以該路線為題、且**原盤 CD 與黑膠雙鏈齊全、帶 barcode 可交叉**的合輯。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；**`Various Artists` 掛名子字串命中 228 筆，一律無效，只能逐張比盤名**。 ⚠⚠ **本批最關鍵的撞卡發現（寫給主線）**：同一條線上原本要收的 **《Thai? Dai! The Heavier Side of the Luk Thung Underground》(2011) 池中已有**（`onboarding-manifest-c52-20260903.json`＋seed 一列），**而 `dedup-crossbatch.mjs` 抓不到 c-SEA 的三份卡單**（檔名 `cseaa/cseab/cseac-cards.json` 不符 `^c\\d+-cards\\.json$`），c-52 那筆則是靠 manifest 才掃到的——**這一張是靠實掃 manifest 抓出來的，不是靠工具**。 ⚠ **同 RG 兩版軌數不同（CD 20 軌／黑膠 13 軌）**——行文引軌數前必須先選版本（裁定 251），本卡 `label` 欄記的是 2004 CD 那一版。 ⚠ **盤名兩種大小寫**：CD 那筆是「Thai Beat a Go-Go, Volume 1」、黑膠那筆是「Thai Beat A Go-Go, Volume 1」（A 大寫）——盤名取 RG title 的小寫形。⚠ 連字號是 ASCII U+002D（已確認，非 en dash）。 年份：MB first-release-date 2004 ＝ CD release 的 date；黑膠是 2009 再發。 封面：CAA release-group/7a9148bd/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `us` search「Thai Beat a Go-Go」回 collectionId 1532624882（Vol. 1）、1532627112（Vol. 2）、1532627676（Vol. 3）、1532626203（Vol. 4）四筆；`se` 店同一張的掛名寫成 **`Blandade Artister`**（瑞典語的「Various Artists」）——**跨語言的掛名差異，字串比對必然落空**（裁定 260 那個形狀）；`th` 店 search 0 筆可對得上。**Various Artists 沒有可查的藝人目錄，第二種查法在合輯上不可執行。** 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 7a9148bd-9496-31b6-8224-9f663cbcce01，identitySource pinned。回問確認 title「Thai Beat a Go-Go, Volume 1」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2004、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：3405e0c6-d177-4109-8b4f-048fab6c66b3（2004 SE Official CD×20、Subliminal Sounds／SUBCD11、barcode 7393210134119）與 4a2f5832-4a55-4e41-b05b-13938af5e386（2009 SE Official 12\" Vinyl×13、Subliminal Sounds／SUBLP-35、無 barcode）——**兩筆皆已逐筆打 `release/<id>?inc=media+labels+artist-credits` 讀過**。刻意不釘：7a9148bd 的同系列 272227fe-6659-3953-a104-d34740e70698《Thai Beat a Go-Go, Volume 2》(2004) 與 4406c4cd-23ec-4be0-ba73-28e94f65c94b《Thai Beat a Go-Go, Volume 3》(2005)（**依裁定 255／c-123 第五節「同一批錄音的多種合輯只挑最權威的一種」，系列只取第一集**，Vol. 2／3 記入未收清單餘量）、7c57cbac-5f6d-4f47-9de4-87fc1c327ef0《Thai? Dai!》(2011，**池中已有**)。"
+ },
+ {
+  "releaseType": "Compilation",
+  "selfTitled": false,
+  "queryAlias": "Shadow Music of Thailand；Sublime Frequencies SF042；Shadow Music Thailand",
+  "reissuedBy": "2009 US Official CD×17，Sublime Frequencies／SF042（**與 2008 黑膠同一個編號 SF042、同 17 軌**）",
+  "g": "b",
+  "artist": "Various Artists",
+  "album": "Shadow Music of Thailand",
+  "year": 2008,
+  "genres": [
+   "rock",
+   "world"
+  ],
+  "label": "Sublime Frequencies／SF042，2008 US Official，12\" Vinyl 17 軌；另有 2009 US Official CD 再發（**同編號 SF042**、同 17 軌）（release 端點實測；裁定 259）",
+  "exceptionReason": "本輯收的是 1960 年代泰國 shadow music 樂隊的錄音，該路線在原生市場以 7 吋與電台母帶流通，資料庫端查不到任何一支參與樂隊的原盤 LP release-group，**合輯是這批錄音唯一的長篇形態**。2008 年由美國 Sublime Frequencies 發行、編號 SF042、12 吋黑膠 17 軌，2009 年以**同一個編號 SF042** 壓成 CD、同樣 17 軌。**`year` 取 2008，即資料庫端登記的 first-release-date**——依裁定 261，本輯錄音年代橫跨整個 1960 年代、沒有單一年份涵蓋多數，故取合輯出版年而非錄音年。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2008、artist-credit Various Artists」；release 網址支持「Sublime Frequencies SF042、2008、US、Official、12\" Vinyl、17 軌」。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/ws/2/release-group/e4b087bb-a70f-4dac-9c49-87edc8bfe0c7?fmt=json&inc=artist-credits+releases",
+   "https://musicbrainz.org/ws/2/release/197f5ace-fdee-4a86-b9b2-3b9faacbb4fb?fmt=json&inc=media+labels+artist-credits"
+  ],
+  "why": "實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest＋c47/cand-all.json（合計 24,138 列）＋ c-SEA 三份卡單 99 張。**`Various Artists` 這個掛名在池中有 228 筆**，子字串比對完全無效，只能逐張比盤名。池中泰國的 Various Artists 合輯共 **7 張**：《The Sound of Siam》(2010)、《The Sound of Siam, Volume 2》(2014)、《Thai Pop Spectacular: 1960s-1980s》(2007)、《Siamese Soul: Thai Pop Spectacular, Volume 2》(2009)、《Molam: Thai Country Groove From Isan》(2005)、《Theppabutr Productions: The Man Behind the Molam Sound 1972-75》(2012)（前六張皆 c-SEA 2026-09-01）與 **《Thai? Dai! The Heavier Side of the Luk Thung Underground》(2011，`onboarding-manifest-c52-20260903.json`)**。 本輯不在那 7 張裡（精確鍵 0 命中）。池中那 7 張沒有任何一張出自 **Sublime Frequencies 的泰國目錄以外的 shadow music 這一支**——唯一同廠牌的是《Molam: Thai Country Groove From Isan》(2005)，題材是 molam 不是 shadow。本輯與本組另收的《Thai Beat a Go-Go, Volume 1》(2004) 是同一路線的兩套不同取樣（瑞典 Subliminal Sounds 對美國 Sublime Frequencies），**兩套的收錄邏輯與廠牌都不同，不是重複**。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；`Various Artists` 掛名子字串 228 筆無效。 ⚠ **同一個 catalog-number SF042 對應兩筆 release**（2008 黑膠與 2009 CD）——**編號不是版本識別鍵**，下游引編號時要同時講載體與年份。 ⚠ 兩筆 release **都沒有 barcode**，外部交叉只能靠廠牌＋編號。 年份：MB first-release-date 2008 ＝黑膠 release 的 date。 封面：CAA release-group/e4b087bb/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `us`／`gb`／`th` 三店以「Shadow Music of Thailand」search 皆 **0 筆可對得上**（回的是 Shadow Colonies、VVAS 等不相干的當代單曲）；改用「Sublime Frequencies Shadow Music」與「Shadow Music Thailand Sublime」兩種詞在 `us`／`gb` 再查，**兩次都回 0 筆**。**Various Artists 沒有可查的藝人目錄，第二種查法在合輯上不可執行**——這張的店面只跑得到 search 一種查法，**下游不得據此寫成「未上架」**（裁定 254）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group e4b087bb-a70f-4dac-9c49-87edc8bfe0c7，identitySource pinned。回問確認 title「Shadow Music of Thailand」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2008、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：197f5ace-fdee-4a86-b9b2-3b9faacbb4fb（2008 US Official 12\" Vinyl×17、Sublime Frequencies／SF042、無 barcode）與 b658a4bb-0e9e-4869-b433-3c7fb42eabce（2009 US Official CD×17、同編號 SF042、無 barcode）——**兩筆皆已逐筆打 `release/<id>` 讀過**。刻意不釘：8154caeb-1f44-4a39-9c42-d7e0357d0b30《Radio Thailand: Transmissions From the Tropical Kingdom》(2006-05-20，同廠牌，**但 artist-credit 是 `[unknown]`、不是 Various Artists，掛名無法成卡**，記入未收清單並註明原因)、c0d07953-c3d5-44a4-baaa-b9add1b8771c《Music of Thailand》(1962，Compilation，題材是傳統器樂、不在本批的體制線射程內)。"
+ },
+ {
+  "releaseType": "Compilation",
+  "selfTitled": false,
+  "queryAlias": "Luk Thung: Classic & Obscure 78s from the Thai Countryside；Luk Thung Classic and Obscure 78s；Parlortone PT-2002；Dust-to-Digital DTD-29",
+  "reissuedBy": "2013 US Official CD×14，Dust-to-Digital／DTD-29、barcode 880226002923（原盤 2010 US Official 12\" Vinyl×14、Parlortone／PT-2002、無 barcode）",
+  "g": "b",
+  "artist": "Various Artists",
+  "album": "Luk Thung: Classic & Obscure 78s from the Thai Countryside",
+  "year": 2010,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Parlortone／PT-2002，2010 US Official，12\" Vinyl 14 軌；另有 2013 US Official CD 再發（**MB 的廠牌名字串是 `Dust‐to‐Digital`、中間兩個連字號是 U+2010 不是 ASCII 連字號**／DTD-29、barcode 880226002923、同 14 軌）（release 端點實測；裁定 259）",
+  "exceptionReason": "本輯的來源是泰國鄉間 78 轉蟲膠盤，**那個載體上根本不存在「專輯」這種形態**——單面一曲、沒有 LP、也沒有任何一位演唱者留下原盤長篇，合輯是這批錄音唯一可能的形態。2010 年由美國 Parlortone 發行、編號 PT-2002、12 吋黑膠 14 軌；2013 年由 Dust-to-Digital 以編號 DTD-29 壓成 CD、barcode 880226002923、同 14 軌。**`year` 取 2010，即資料庫端登記的 first-release-date**——依裁定 261，78 轉來源的錄音年代橫跨數十年且端上一格都沒登記，取合輯出版年是唯一站得住的取法。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2010、artist-credit Various Artists」；release 網址支持「Dust-to-Digital DTD-29、2013、US、Official、CD、14 軌、barcode 880226002923」。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/ws/2/release-group/f81d4541-d82d-4101-b1d2-213da07b3329?fmt=json&inc=artist-credits+releases",
+   "https://musicbrainz.org/ws/2/release/8cfe8345-70bf-4641-b091-9df0b2639eaf?fmt=json&inc=media+labels+artist-credits"
+  ],
+  "why": "實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest＋c47/cand-all.json（合計 24,138 列）＋ c-SEA 三份卡單 99 張。**`Various Artists` 這個掛名在池中有 228 筆**，子字串比對完全無效，只能逐張比盤名。池中泰國的 Various Artists 合輯共 **7 張**：《The Sound of Siam》(2010)、《The Sound of Siam, Volume 2》(2014)、《Thai Pop Spectacular: 1960s-1980s》(2007)、《Siamese Soul: Thai Pop Spectacular, Volume 2》(2009)、《Molam: Thai Country Groove From Isan》(2005)、《Theppabutr Productions: The Man Behind the Molam Sound 1972-75》(2012)（前六張皆 c-SEA 2026-09-01）與 **《Thai? Dai! The Heavier Side of the Luk Thung Underground》(2011，`onboarding-manifest-c52-20260903.json`)**。 本輯不在那 7 張裡（精確鍵 0 命中）。池中那 7 張的取樣年代**全部落在 1960 年代之後**（最早是《The Sound of Siam》的 1964），**78 轉蟲膠盤時代的 luk thung 一張也沒有**；而且池中沒有任何一張泰國輯出自 **Dust-to-Digital** 這條考古線。本輯是資料庫端唯一一套以 78 轉來源為題的泰國合輯，也是本組四張泰國合輯裡**唯一帶 barcode 的**。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；`Various Artists` 掛名子字串 228 筆無效。 ⚠ **盤名含 `&`**：`chk-prop` 的摺鍵會把 `&` 換成 `and` 再剝（2026-09-06 c-117 那條修正），所以 `Classic & Obscure` 與 `Classic and Obscure` 摺成同一個鍵——**這是好事（撞卡抓得到），但外部字串比對時兩種寫法都要試**。 ⚠⚠ **廠牌名含 U+2010 連字號**：MB 的 label 字串是 `Dust‐to‐Digital`（兩個 U+2010），**不是 ASCII 的 `Dust-to-Digital`**。`chk-prop` 只掃 `artist` 與 `album` 兩欄的非 ASCII 連字號、**不掃 `label` 欄**，所以這一筆不會亮燈但會在下游的字串比對上出事——已在 `label` 欄明寫。（本卡的 `album` 欄已確認只含 ASCII 連字號與 `&`。） ⚠ **同 RG 兩筆 release 軌數相同（14／14）但廠牌、編號、載體、年份全不同**——引編號時要同時講版本（裁定 251）。 年份：MB first-release-date 2010 ＝黑膠 release 的 date；**Apple 店端 collectionId 1348481287 的 releaseDate 標 2018**，與端上的 2010／2013 兩個年份都不同——**三個年份並存，下游不得單方面斷言任何一個是「發行年」**。 封面：CAA release-group/f81d4541/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `us`／`gb`／`th` 三店 search「Luk Thung Classic Obscure 78s Thai Countryside」**三店都回同一筆 collectionId 1348481287「Various Artists — Luk Thung: Classic & Obscure 78s from the Thai Countryside」**；改用「Luk Thung 78s Dust-to-Digital」在 `us` 再查回 0 筆（**廠牌名入詞反而查不到**）。Various Artists 沒有可查的藝人目錄，第二種查法不可執行。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group f81d4541-d82d-4101-b1d2-213da07b3329，identitySource pinned。回問確認 title「Luk Thung: Classic & Obscure 78s from the Thai Countryside」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2010、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：798efab1-91bb-4be1-80de-4fd662b74d21（2010 US Official 12\" Vinyl×14、Parlortone／PT-2002、無 barcode）與 8cfe8345-70bf-4641-b091-9df0b2639eaf（2013 US Official CD×14、`Dust‐to‐Digital`／DTD-29、barcode 880226002923）——**兩筆皆已逐筆打 `release/<id>` 讀過**。刻意不釘：9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41《Luk Thung! The Roots of Thai Funk》(2010，**本組另收一卡**；兩輯同年、同題材關鍵詞，但廠牌、國別、軌數、取樣完全不同——ZudRangMa TH 18 軌對 Parlortone US 14 軌)、a2ced472-a8d3-4c74-9068-17344509d2bf《Classic Productions by Surin Phaksiri: Luk Thung Gems from the 1960s‐80s》(2019-08-23，EM Records，**盤名含 U+2010 連字號，`chk-prop` 會判「專輯名含非 ASCII 連字號」，本批不收**)、4bf7e8a1-21c8-4946-931d-0231cdf4940a《Suphanburi Soul: Kwanjit Sriprajan – The First Lady of Lae Music》(2019-04-17，ZudRangMa，**盤名含 en dash U+2013，同上理由不收**)。"
+ },
+ {
+  "releaseType": "Compilation",
+  "selfTitled": false,
+  "queryAlias": "Luk Thung! The Roots of Thai Funk；Luk Thung The Roots Of Thai Funk；ZudRangMa ZRMCD003；Zudrangma Records",
+  "reissuedBy": "2015 TH Official **CD-R**×18，ZudRangMa／catalog-number 欄記為 `[none]`（原盤 2010 TH Official CD×18、ZudRangMa／ZRMCD003）",
+  "g": "b",
+  "artist": "Various Artists",
+  "album": "Luk Thung! The Roots of Thai Funk",
+  "year": 2010,
+  "genres": [
+   "world",
+   "soul"
+  ],
+  "label": "ZudRangMa／ZRMCD003，2010 TH Official，CD 18 軌；另有 2015 TH Official **CD-R** 再壓（ZudRangMa，catalog-number 欄記為 `[none]`、同 18 軌）（release 端點實測；裁定 259）",
+  "exceptionReason": "本輯收的是 1970 年代泰國 luk thung 錄音裡走 funk 編制的那一批，這些曲目當年以 7 吋單曲與合輯卡帶流通，資料庫端查不到任何一位參與演唱者的同批原盤 LP，**合輯是它們唯一的長篇形態**。2010 年由曼谷的 ZudRangMa 發行、編號 ZRMCD003、CD 18 軌，2015 年以同廠牌再壓成 CD-R、18 軌（該筆的 catalog-number 欄明寫 `[none]`）。**`year` 取 2010，即資料庫端登記的 first-release-date**——依裁定 261，本輯的錄音年代橫跨 1970 年代、端上未逐軌登記年份，取合輯出版年。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2010、artist-credit Various Artists」；release 網址支持「ZudRangMa ZRMCD003、2010、TH、Official、CD、18 軌」。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/ws/2/release-group/9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41?fmt=json&inc=artist-credits+releases",
+   "https://musicbrainz.org/ws/2/release/106c2c24-d381-449d-b5da-a08f2340ef1f?fmt=json&inc=media+labels+artist-credits"
+  ],
+  "why": "實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest＋c47/cand-all.json（合計 24,138 列）＋ c-SEA 三份卡單 99 張。**`Various Artists` 這個掛名在池中有 228 筆**，子字串比對完全無效，只能逐張比盤名。池中泰國的 Various Artists 合輯共 **7 張**：《The Sound of Siam》(2010)、《The Sound of Siam, Volume 2》(2014)、《Thai Pop Spectacular: 1960s-1980s》(2007)、《Siamese Soul: Thai Pop Spectacular, Volume 2》(2009)、《Molam: Thai Country Groove From Isan》(2005)、《Theppabutr Productions: The Man Behind the Molam Sound 1972-75》(2012)（前六張皆 c-SEA 2026-09-01）與 **《Thai? Dai! The Heavier Side of the Luk Thung Underground》(2011，`onboarding-manifest-c52-20260903.json`)**。 本輯不在那 7 張裡（精確鍵 0 命中）。**池中那 7 張裡沒有任何一張是泰國本地廠牌發行的**——Sound of Siam ×2 是英國 Soundway、Thai Pop Spectacular ×2 與 Molam 是美國 Sublime Frequencies、Theppabutr 是 Finders Keepers 系、Thai? Dai! 是 Finders Keepers。本輯的 release country 是 **TH**、廠牌是曼谷的 ZudRangMa，**是池中泰國這一區第一張本地發行的考古輯**，這一點就是它與其他三張泰國合輯不重複的理由。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；`Various Artists` 掛名子字串 228 筆無效。 ⚠ **與本組另一張泰國合輯題材關鍵詞重疊**：《Luk Thung: Classic & Obscure 78s from the Thai Countryside》(2010) 也叫 Luk Thung、也是 2010——**兩張的摺鍵完全不同**（`lukthungtherootsofthaifunk` 對 `lukthungclassicandobscure78sfromthethaicountryside`），`chk-prop` 已跑過、跨組重複 0；但**下游行文時要明確區分兩者**（ZudRangMa TH 18 軌 CD 對 Parlortone US 14 軌黑膠）。 ⚠ **2015 那筆的載體是 CD-R**——不是工廠壓片，`catalog-number` 欄明寫 `[none]`；下游不得把它寫成正規再發。 ⚠ 兩筆 release **都沒有 barcode**。 年份：MB first-release-date 2010 ＝原盤 CD release 的 date。 ⚠ **盤名含驚嘆號**：`Luk Thung!` 的 `!` 在摺鍵時會被剝掉——這正是 c-123 第一節那個「`!!!` 摺鍵變空字串」的家族，本張因為後面還有長字串所以不會摺成空鍵，但外部比對時 `Luk Thung!` 與 `Luk Thung` 是兩個字串。 封面：CAA release-group/9cbceeb8/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `us` search「Luk Thung Roots of Thai Funk」回 **0 筆**、`th` 回的 5 筆全是不相干的歐美專輯（Drake、Luke Combs 等，**`Luk` 被當成 `Luke` 的模糊比對**）；改用「ZudRangMa Luk Thung」在 `us` 再查亦回 0 筆。Various Artists 沒有可查的藝人目錄，第二種查法不可執行——**這張的店面只跑得到 search 一種查法，下游不得據此寫成「未上架」**（裁定 254）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41，identitySource pinned。回問確認 title「Luk Thung! The Roots of Thai Funk」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2010、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：106c2c24-d381-449d-b5da-a08f2340ef1f（2010 TH Official CD×18、ZudRangMa／ZRMCD003、無 barcode）與 23ca079c-cd1e-4f7e-9895-1cf6462bc81c（2015 TH Official **CD-R**×18、ZudRangMa／`[none]`、無 barcode）——**兩筆皆已逐筆打 `release/<id>` 讀過**。刻意不釘：f81d4541-d82d-4101-b1d2-213da07b3329《Luk Thung: Classic & Obscure 78s from the Thai Countryside》(2010，**本組另收一卡**)、7c57cbac-5f6d-4f47-9de4-87fc1c327ef0《Thai? Dai!》(2011，**池中已有，c-52**)、f895eb4d-2e30-4d3f-aea1-680353294d13《The Sound of Siam》(2010-09-09，**池中已有**)、377ce876-2232-4300-bd4a-02cf1496cccb《The Sound of Siam, Volume 2》(2014-05-26，**池中已有**)、60487c44-c58a-467c-b55b-1ea344586594《Theppabutr Productions》(2012，**池中已有**)。"
  }
 ]

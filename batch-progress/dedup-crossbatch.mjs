@@ -18,13 +18,29 @@ import { ROOT } from './lib.mjs';
 // 現在兩種來源都掃：卡單優先（已建卡單的批次以卡單為準），沒有卡單才回退讀 prop。
 const DIR = path.join(ROOT, 'desc-tools/batches/cards');
 const PROP = path.join(ROOT, 'batch-progress');
-const cardBatches = fs.readdirSync(DIR).filter(f => /^c\d+-cards\.json$/.test(f)).map(f => f.replace('-cards.json', ''));
+// 2026-09-14（c-129 b 組實掃 manifest 才抓到）：原本的 `^c\d+-cards\.json$` 只認
+// 「c＋純數字」的批名，於是**十五份卡單從來沒有進過跨批去重**——
+// c48a/b/c、c49a/b、c50a/b/c、c51a/b/c/d 這些帶字母尾碼的，以及 c-SEA 的
+// cseaa/cseab/cseac。c-SEA 那 99 張裡有 18 張至今沒進 manifest 也沒進 seed，
+// 所以連「線上池」那一側也擋不住它們。
+// **後果是所有批次回報的「跨批撞卡 0」都只是部分結論**，不是全域的。
+// 批名允許數字後接字母（`-cards.json` 這個後綴已經擋掉了 `-a.json` 那些分組檔）。
+const cardBatches = fs.readdirSync(DIR).filter(f => /^c[0-9a-z]+-cards\.json$/.test(f)).map(f => f.replace('-cards.json', ''));
 const propBatches = fs.readdirSync(PROP, { withFileTypes: true })
-  .filter(d => d.isDirectory() && /^c\d+$/.test(d.name))
+  .filter(d => d.isDirectory() && /^c[0-9a-z]+$/.test(d.name))   // 同上：批名可帶字母尾碼
   .filter(d => fs.readdirSync(path.join(PROP, d.name)).some(f => /^prop-[a-z]\.json$/.test(f)))
   .map(d => d.name);
+// 2026-09-14：早期的大批被切成帶字母尾碼的子批——`batch-progress/c51/` 底下是
+// prop-a…prop-d，而卡單是 `c51a-cards.json`…`c51d-cards.json`。修好上面那個 regex 之後，
+// 同一批會**同時從 prop 側（c51）與卡單側（c51a–d）各算一次**，於是整批自己跟自己撞卡。
+// 規則：卡單側存在 `<批名><字母>-cards.json` 時，prop 側那個母批名視為已被取代。
+// （字母才算子批；`c120` 對 `c12` 是數字，不算。）
+const supersededProp = new Set(
+  propBatches.filter(b => cardBatches.some(c => c !== b && c.startsWith(b) && /^[a-z]/.test(c.slice(b.length)))));
 const batches = process.argv.slice(2).length ? process.argv.slice(2)
-  : [...new Set([...cardBatches, ...propBatches])].sort();
+  : [...new Set([...cardBatches, ...propBatches.filter(b => !supersededProp.has(b))])].sort();
+if (supersededProp.size)
+  console.log(`（${[...supersededProp].sort().join('、')} 的 prop 已被同名子批的卡單取代，不重複計入）`);
 
 // 一個批次的候選：優先讀卡單，沒有就讀該批所有 prop-*.json。
 const rowsOf = b => {
