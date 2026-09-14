@@ -1,0 +1,285 @@
+[
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Benyamin S.；Benyamin Sueb；Benjamin S；Bunjamin S.；Benjamin Suaeb；Rossy；Roosy；Indehoi；Indehoy",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1968 ID Official、10\" Vinyl×8、Mesra MP-42；此 RG 底下沒有任何再發 release（資料庫端的情形）",
+  "g": "b",
+  "artist": "Benyamin S. & Rossy",
+  "album": "Indehoi",
+  "year": 1968,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "Mesra／MP-42，1968 ID Official，10\" Vinyl 8 軌（release 端點 inc=media+labels 實測值，非 release-group 端點推得——裁定 259）",
+  "why": "實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest＋c47/cand-all.json（合計 24,138 列）＋ c-SEA 三份卡單 99 張（`cseaa/cseab/cseac-cards.json`；**這三份的檔名不符 `dedup-crossbatch.mjs` 的 `^c\\d+-cards\\.json$`，工具抓不到，只能自己比**），Benyamin 的四種拼法（Benyamin S.／Benyamin Sueb／Benjamin S／Bunjamin S.）全池 0 命中——池中印尼這一區約 38 張（Koes Bersaudara、Koes Plus 2、AKA 1、Dara Puspita 2、Shark Move、Ariesta Birawa、Harry Roesli 3、God Bless 3、Giant Step、The Rollies 2、Benny Soebardja、Duo Kribo、Abbhama、Transs、Chrisye 2、Fariz RM、Ebiet G. Ade、Iwan Fals、Kantata Takwa、Indonesian All Stars、Indra Lesmana、Bhaskara、Discus、Waldjinah、Guruh Gipsy、Eka Sapta、Krakatau、Asin、Titiek Puspa、Rien Djamain、Rhoma Irama 3、Gombloh、Panbers 合輯、Elvy Sukaesih、三張 Various Artists 印尼輯），**整批偏搖滾與 progressive 那一側，雅加達 Betawi 語的 gambang kromong 流行這一塊池中一張也沒有**。本張是他名下 MB 唯一一張同時具備年份、Official status、實體載體與盤面編號的 1960 年代碟（其餘同掛名的 RG 不是沒有 first-release-date 就是 1990 年之後的卡帶輯），補在 Titiek Puspa《Doa Ibu》(1964) 與 Eka Sapta (1964) 旁邊，把池中印尼 1960 年代那三張的曲風面撐開。",
+  "risk": "撞卡：實掃 24,138 列＋c-SEA 99 張卡單，`Benyamin` 子字串雙向比對命中 15 筆**全部是假陽性**（Enya 5 張×seed／manifest／pending 三處重複計、-M- 2 張）——判定看整個掛名字串，本張精確鍵 0 命中、同盤名 0 命中。 ⚠ **掛名三拼法**（本批最需要下游注意的一筆）：MB artist 實體 33ae9e5e-… 的主名是「Benyamin Sueb」（disambiguation「Indonesian comedian, actor & singer a.k.a. Benyamin S.」、area Indonesia、begin 1939-03-05），**但同一個實體在三個 RG 的 artist-credit 上分別被寫成「Benjamin S」（本張）、「Bunjamin S.」（《Tukang Solder》）、「Benyamin S.」（《Biographie》）——三種拼法、同一個 MBID**。卡片掛名依本批裁定 341 取「Benyamin S. & Rossy」（實體 a.k.a. 的正規拉丁形＋合掛名的第二位），不取 release 上的「Benjamin S」拼法（那個拼法與池中任何寫法都比不上，撞卡字串去重會整個看不見）。 ⚠ 合掛名：artist-credit 是兩位（Benyamin 33ae9e5e-…＋Rossy 243a0871-…），**依裁定 258 的判準（合掛名是解歧義還是製造分裂）保留合掛名**——Benyamin 本批只有這一卡，不會把同一位拆成兩個掛名，而「Benyamin S.」單掛會讓卡面與 release 的實際掛名不符。 掛名回問（裁定 179／250）：`artist?query=artist:\"Benyamin\"&limit=25` 回 12 筆，目標排第 2、score 94（第 1 名是德國鋼琴家 Benyamin Nuss、score 100）——**score 排序不採**，靠 area=Indonesia＋begin=1939-03-05＋disambiguation 定位；清單裡另有 3 位伊朗的 Benyamin（Bahadori／Rezapour／Shadman）與 1 位印尼的 Windra Benyamin，全部排除。 年份：MB first-release-date 1968，與唯一那筆 release 的 date 一致，無分歧。 封面：CAA release-group/23fe93e1/front 實測 **404**（本機端要人工補圖）。 店面（裁定 254，**只寫觀察不寫結論**）：Apple `id` 與 `us` 兩店以「Benyamin S Indehoi」search 皆 0 筆；藝人目錄 `lookup?id=286016552&entity=album`（id 店「Benyamin S.」）回 11 張、`lookup?id=1498612114`（id 店「Benyamin Sueb」）回 4 張，**兩份目錄裡都沒有對得上《Indehoi》的條目**（目錄內容是 2002–2008 年的 Gambang Kromong／Irama Pop 系列輯與 1987–1994 年的單曲重製）——**這是 search 與藝人目錄兩種查法未命中的觀察，第三種查法（直查 collectionId）留給研究層**。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 23fe93e1-11e4-4028-acef-7604541c5da9，identitySource pinned。回問 `release-group/23fe93e1-…?fmt=json&inc=artist-credits+releases` 確認 title「Indehoi」、primary-type Album、secondary-types 空、first-release-date 1968、artist-credit「Benjamin S & Rossy」（兩個實體：33ae9e5e-e94e-462b-b047-68f7d9ac0cb6「Benyamin Sueb」Person／Indonesia／1939-03-05，名下 10 個 RG；243a0871-4a2a-4314-a97d-10b67765d583「Rossy」）。轄下 release 1 筆（`release?release-group=…&inc=media+labels` 實測）：1968 ID Official、10\" Vinyl×8、Mesra／MP-42、無 barcode。刻意不釘：e71c9c7c-a86a-4174-b68b-915b02aec6a9《Tukang Solder》（artist-credit 拼作「Bunjamin S. & Rossy」，**first-release-date 空，無年份不收**）、64c4d4b4-1c4f-4758-8878-c3ced1f2f296《Biographie》（artist-credit 拼作「Benyamin S.」，**first-release-date 空**）、54e4a9e9-fe78-44c8-9842-f7141a7cc0e6《Tung Ali Onde Jande Mude》(1995，Benyamin S & Ida Royani 合掛，卡帶×10、Musica MSC8020，記入未收清單餘量)、bcee2583-b747-4581-9f0f-28fa88dab5f9《Mas Roni》(1990-12-01，**七位合掛的雜錦卡帶**，不是他的個人碟)、1289f009-…《20 Super Pop Dangdut Terlaris》(1991)、b8ad3b65-…《Selection Pop Dangdut》(1990-12)、427b31d0-…《In Memoriam 1939-1995》(2004，Compilation)、9482c8c8-…《Funky Kromong Vol. 1》(2022，Compilation)、bac90372-…《100% Gambang Kromong》(2002，Compilation)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Titiek Puspa；Titiek Puspo；Sok Teu；Sok Tahu",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1970 ID Official、10\" Vinyl×8、J&B Records JBL. 28837；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "Titiek Puspa",
+  "album": "Sok Teu",
+  "year": 1970,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "J&B Records／JBL. 28837，1970 ID Official，10\" Vinyl 8 軌（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`Titiek Puspa` 子字串雙向命中 8 筆，扣掉 T.I. 那 5 張假陽性後，**池中這位只有《Doa Ibu》(1964) 一張**（seed 一列＋`onboarding-manifest-csea-20260910.json` 一列＋`cseab-cards.json` 一列，是同一張的三處紀錄）。《Doa Ibu》是她 1964 年那張，《Sok Teu》(1970) 是 MB 目錄裡她在蘇哈托時期前段的另一個端點——兩張之間隔著 1965–1970 這段印尼唱片業重編的年份，補在《Doa Ibu》旁邊可以把這位從「單張孤卡」變成有前後對照的兩張。她名下 8 個 RG 裡，只有《Doa Ibu》《Sok Teu》兩張的 first-release-date 早於 1971，其餘是 1986／1997／2015 與兩張無年份的合輯。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；子字串 8 筆中 5 筆是 `T.I.`（摺鍵 `ti` 被 `titiekpuspa` 包住）的假陽性。 掛名回問（裁定 179／250）：`artist?query=artist:\"Titiek Puspa\"&limit=25` 全域**只回 1 筆**（a1ad0276-…，Person、area Indonesia、begin 1937-11-01），沒有同名干擾；掛名字串與池中《Doa Ibu》那張**一字不差**（照 c-126 第三節「池中已有這位就照池中原字串」）。 年份：MB first-release-date 1970，與唯一那筆 release 的 date 一致。 ⚠ 載體：10\" Vinyl 8 軌——**不是 12 吋 LP**（裁定 227 那個形狀的反面：`secondary-types` 空不代表是標準長篇，要看 media.format 與軌數；本張確實是 1970 年印尼常見的 10 吋盤，不是 7 吋單曲）。 封面：CAA release-group/f2b0a715/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `id`／`us` 兩店以「Titiek Puspa Sok Teu」search 皆 0 筆；藝人目錄 `lookup?id=284032150&entity=album`（id 店）回 22 張，**裡面沒有《Sok Teu》**（目錄內容是 1986《Tinggal Bilang Yang...》、1991／1997 等再發與 2019–2025 的單曲）——兩種查法未命中的觀察，第三種查法留給研究層。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group f2b0a715-25ed-43ca-952d-1b6143f6afcc，identitySource pinned。回問確認 title「Sok Teu」、primary-type Album、secondary-types 空、first-release-date 1970、artist-credit「Titiek Puspa」（實體 a1ad0276-aa91-4749-9fa5-2ba2952c4ee9，Person、area Indonesia、begin 1937-11-01，名下 8 個 RG）。轄下 release 1 筆：1970 ID Official、10\" Vinyl×8、J&B Records／JBL. 28837。刻意不釘：616d0869-33b2-48d7-acd3-fa9fa44cdb34《Doa Ibu》(1964，**池中已有，c-SEA 2026-09-10 manifest**)、21eff489-5898-437e-b0c6-db83b8433363《Senyum》(1969，**primary-type EP，本批不收**)、ac366f73-ef88-48cb-adfc-64f7ee9ee3c4《Tinggal Bilang Yang》(1986，記入未收清單餘量)、a128af7d-3d40-4715-b05c-3537d26d4cfd《Virus Cinta》(1997)、46099384-607b-415e-9b1a-cf81518b7b53《Duta Cinta》(2015)、b3f12154-4365-4ee2-89f3-b189b8f0ee68《The Very Best Of》(2005，Compilation)、dc833bc1-124d-4584-9753-df8b0d3338c7《Otobiografi…》(無年份，Compilation)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "AKA；A.K.A.；AKA Indonesia；Ucok Harahap；Reflection；Reflections",
+  "reissuedBy": "2014-11-25 XW Official Digital Media×9，Granadilla Music（原盤 1971 ID Official 12\" Vinyl×9、Indra AKL-029）",
+  "g": "b",
+  "artist": "AKA",
+  "album": "Reflection",
+  "year": 1971,
+  "genres": [
+   "rock"
+  ],
+  "label": "Indra／AKL - 029，1971 ID Official，12\" Vinyl 9 軌；另有 2014-11-25 XW Official 數位再發（Granadilla Music，9 軌）（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`AKA` 子字串雙向命中 **85 筆、其中 84 筆是假陽性**（Shabaka／Makaya McCraven／Chaka Khan／Rufus／Ka／Makaveli／坂本龍一／Rei Harakami／Kaka de Luxe 等——這正是 CURATION-BRIEF-c128-c130 共通第 2 條點名的短掛名假陽性形狀），**真命中只有 1 筆：AKA《Do What You Like》(1970)**（seed 一列＋`onboarding-manifest-csea-20260901.json` 一列，同一張）。《Reflection》是他們 1971 年那張、緊接在池中已有的《Do What You Like》之後，是這支萬隆／泗水系 hard rock 團在同一家 Indra 廠牌下的連號盤（AKL-029 對 AKL-047），**兩張合起來才看得出這條線的目錄形狀**。MB 上這支團只有 4 個 RG（1970／1971／1972 各一，加 2011 年一張），其中 1970 那張池中已有。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。**⚠ `AKA` 是本批最會亂命中的掛名**：摺鍵 `aka` 被大量含「aka」的字串包住，子字串比對回 85 筆，判「池中有無」一律看整個掛名字串。 掛名回問（裁定 179／250）：`artist?query=artist:\"AKA\"&limit=25` 全域回 **549 筆**，目標 d991e1c6-2d93-4652-953d-568e0d85c08c（Group、area Indonesia、disambiguation「Indonesian funk band」）**排第 4、score 92**，第 1 名是德國的 AKA AKA（score 100）、第 3 名是南非饒舌歌手 AKA（Person、score 92，**與目標同分**）——**score 完全不可用，只有 disambiguation＋area 分得出來**；清單裡另有連 disambiguation 都沒填的 `AKA`（13ee6d34 只寫「AOR」、9869778c 寫「London Six-piece indie funk/punk band」），依裁定 250 這幾筆**不得背書任何本名或成員資訊**。 ⚠ **MB 端安全不等於外部端安全**：Apple `id` 店的 `AKA` 藝人實體（artistId 3556203）是**南非饒舌歌手**，55 張目錄全是他的；`us` 店同理。外部比對時用「AKA」單字必然撞錯人。 年份：MB first-release-date 1971，與原盤 release 的 date 一致；2014 那筆是數位再發（**`year` 取原盤年 1971，再發年不進 year 欄**）。 ⚠ 盤名單複數：MB RG title 是單數「Reflection」，外部常見寫成「Reflections」——盤名以 rgMbid 為準（裁定 174／251）。 封面：CAA release-group/04f56d24/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `id`／`us` 以「AKA Reflection Indonesia」search 皆 0 筆可對得上（回的是 Aka Chirag 的單曲）；藝人目錄那一步在這張上**不可執行**——店端沒有印尼 AKA 的藝人實體可查（`id` 店 search entity=musicArtist 回的五個 AKA 全不是這支團）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 04f56d24-7b7d-4521-9538-288a99bfc1fb，identitySource pinned。回問確認 title「Reflection」、primary-type Album、secondary-types 空、first-release-date 1971、artist-credit「AKA」（實體 d991e1c6-2d93-4652-953d-568e0d85c08c，Group、area Indonesia、disambiguation「Indonesian funk band」，名下 4 個 RG）。轄下 release 2 筆：1971 ID Official 12\" Vinyl×9 Indra／AKL - 029；2014-11-25 XW Official Digital Media×9 Granadilla Music。刻意不釘：5739f79b-01fd-4edc-9597-87559399ea3a《Do What You Like》(1970，**池中已有，c-SEA 2026-09-01 manifest**)、7fc685d9-6364-442e-a33e-d74ab8aa859e《Crazy Joe》(1972，**本組另收一卡**)、1594f054-6b3d-4e32-b8e2-224e0a80dc4e《Hard Beat》(2011-06-24，超出蘇哈托時期窗口、且是後世整編)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "AKA；A.K.A.；AKA Indonesia；Crazy Joe；Krazy Joe",
+  "reissuedBy": "2015-04-10 XE Official CD×9，Granadilla Music GM 208C3（barcode 5291103811180）；原盤 1972 ID 12\" Vinyl×9、Indra AKL-047，**該筆 status 欄是空的**",
+  "g": "b",
+  "artist": "AKA",
+  "album": "Crazy Joe",
+  "year": 1972,
+  "genres": [
+   "rock"
+  ],
+  "label": "Indra／AKL-047，1972 ID，12\" Vinyl 9 軌（**該 release 的 status 欄為空，不得寫成 Official**）；另有 2015-04-10 XE Official CD 再發（Granadilla Music／GM 208C3，barcode 5291103811180）（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，池中這支團只有《Do What You Like》(1970) 一張（85 筆子字串命中裡唯一的真命中）。《Crazy Joe》是 MB 目錄裡這支團 1970–1972 三張連號盤的最後一張（Indra AKL-029 → AKL-047），也是 2015 年唯一被壓成 CD 實體再發的一張（另兩張只有數位或無再發）——**版本鏈最完整的一張**，補在《Do What You Like》與本組另收的《Reflection》之間，這條 1970 年代初印尼 hard rock 的線在池中才算連起來。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；`AKA` 的 85 筆子字串命中同上一卡，**84 筆是假陽性**。 掛名回問（裁定 179／250）：同上一卡——549 筆裡目標排第 4、score 92，與南非饒舌歌手 AKA 同分，**只有 disambiguation「Indonesian funk band」＋area Indonesia 分得出來**。 ⚠ **原盤 release 的 `status` 欄是空的**（另兩個欄位——country ID、date 1972——都有值），`label` 欄已照實寫，**下游不得把它寫成 Official**（裁定 259 的紀律：拿不到不等於是什麼）。 年份：MB first-release-date 1972 ＝原盤 release date；2015 CD 是再發（**`year` 取原盤年**）。 ⚠ 同一 RG 兩筆 release 軌數相同（9／9），但載體與國別不同（ID 12\" Vinyl／XE CD）——**行文引軌數前要先選版本**（裁定 251）。 封面：CAA release-group/7fc685d9/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `id` 以「AKA Crazy Joe」search 回 5 筆**全是不相干的歐美單曲**（Surf Mesa、Lana Del Rey 等），`us` 回 1 筆 Cheap Magic 的單曲；藝人目錄那一步不可執行（店端無印尼 AKA 的藝人實體）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 7fc685d9-6364-442e-a33e-d74ab8aa859e，identitySource pinned。回問確認 title「Crazy Joe」、primary-type Album、secondary-types 空、first-release-date 1972、artist-credit「AKA」（實體 d991e1c6-2d93-4652-953d-568e0d85c08c，Group、area Indonesia、disambiguation「Indonesian funk band」）。轄下 release 2 筆：1972 ID **status 空** 12\" Vinyl×9 Indra／AKL-047；2015-04-10 XE Official CD×9 Granadilla Music／GM 208C3、barcode 5291103811180。刻意不釘：5739f79b-01fd-4edc-9597-87559399ea3a《Do What You Like》(1970，**池中已有**)、04f56d24-7b7d-4521-9538-288a99bfc1fb《Reflection》(1971，**本組另收一卡**)、1594f054-…《Hard Beat》(2011)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": true,
+  "queryAlias": "The Mercy's；The Mercys；Mercy's；Rinto Harahap；Purnama Records",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1973 ID Official、Vinyl×11、Purnama Records PLL-1002；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "The Mercy's",
+  "album": "The Mercy's",
+  "year": 1973,
+  "genres": [
+   "pop"
+  ],
+  "label": "Purnama Records／PLL-1002，1973 ID Official，Vinyl 11 軌（**media.format 欄只寫 `Vinyl`、沒有寫尺寸**）（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`The Mercy's` 子字串雙向命中 6 筆**全部是假陽性**（Them《The Angry Young Them》三處重複計、-M- 兩張）——**池中這支團 0 張**。池中印尼那 38 張集中在搖滾、progressive 與 1980 年代流行三塊，**1970 年代初的 Melayu pop／棉蘭系抒情這一塊整個是空的**。本張是 MB 目錄裡這支團三張 1973–1974 盤中盤面編號最早的一張（PLL-1002 對 PLL 1005），也是唯一一張自我同名盤（`selfTitled: true`）。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；6 筆子字串命中全是假陽性，**判定看整個掛名字串**。 ⚠ **自我同名卡**（團名＝盤名），`selfTitled` 已標 true。 ⚠ 同掛名另有《Volume 2》(1973，PLL 1005) 與《Melayu Pop Vol.1》(1974)——**依裁定 260（盤名相同的同掛名 LP 一組只收一張）與「盤名可辨」的取捨，本批只取自我同名那張**；《Volume 2》這個盤名在池中還會與 Koes Plus《Volume 2》(1970) 的盤名重疊（摺鍵不同掛名不會撞卡，但對卡面辨識不利）。 掛名回問（裁定 179／250）：`artist?query=artist:\"The Mercy's\"&limit=25` 回 21 筆，目標 72ae23d8-…（Group、area Indonesia、disambiguation「1970s Indonesian rock band」）**排第 2、score 96**，第 1 名是紐西蘭工業團 The Mercy Cage（score 100）——**score 不採**，靠 area＋disambiguation 定位；清單其餘 19 筆是 The Mercy Bell／Kills／House／Seat／Stone／Beat／Kiss／Boys／Dolls／Brothers 等英語系團，**多數連 area 都沒有**，依裁定 250 不得背書。 ⚠ **掛名含撇號**：`The Mercy's` 的 `'` 是 ASCII U+0027（已確認），但外部比對常見寫成 `The Mercys`／`The Mercy’s`（彎引號），`queryAlias` 已填。 年份：MB first-release-date 1973 ＝唯一那筆 release 的 date。 載體：release 的 `media.format` 只寫 `Vinyl`、**沒有寫 7\"／10\"／12\"**——11 軌的軌數雖然指向長篇，但**軌數不是識別鍵**（裁定 174／251），下游不得自行補寫尺寸。 封面：CAA release-group/d345af59/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `id` 以「The Mercy's」search 回 5 筆、`my` 回 5 筆，**都是 1980 年之後的合輯與致敬輯**（《35 Tahun Album Special Platinum》1980、《Tribute to the Legend Series》Vol.2–4、《The Mercy's - Edisi Platinum》2009 等）；藝人目錄 `lookup?id=575824810&entity=album`（id 店）回 30 張，**全部是 1980 年之後的單曲與合輯，沒有對得上 1973 年那張的條目**。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group d345af59-558e-49d6-8a1c-f957fa4d7671，identitySource pinned。回問確認 title「The Mercy's」、primary-type Album、secondary-types 空、first-release-date 1973、artist-credit「The Mercy's」（實體 72ae23d8-aba2-490a-b764-74bf5f50a4dc，Group、area Indonesia、disambiguation「1970s Indonesian rock band」，名下 3 個 RG）。轄下 release 1 筆：1973 ID Official、Vinyl×11、Purnama Records／PLL-1002、無 barcode。刻意不釘：6c22f8a4-9b7d-4f96-9ff6-69709529fc1e《Volume 2》(1973，Purnama PLL 1005、Vinyl×11，依裁定 260 同掛名同組只取一張，記入未收清單餘量)、65ae3cb6-f46a-451c-ad1a-ca6ab235485a《Melayu Pop Vol.1》(1974，同上)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Koes Plus；Koes Bersaudara；Volume 8；Vol. 8；Koes Plus Volume 8",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1973 ID Official、12\" Vinyl×12、Remaco RLL-187；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "Koes Plus",
+  "album": "Volume 8",
+  "year": 1973,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Remaco／RLL-187，1973 ID Official，12\" Vinyl 12 軌（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`Koes Plus` 子字串雙向命中 5 筆＝**池中兩張**：《Dheg Dheg Plas》(1969，`onboarding-manifest-c31-world-20260821.json`) 與《Volume 2》(1970，c-SEA 2026-09-01)，另加 `Koes Bersaudara《To The So Called The Guilties》(1967)` 是改名前的前身團。**池中這位停在 1970 年的 Volume 2**，而 MB 目錄裡他們 1971–1974 這四年就有 Volume 3 到 Vol. 11 一整串連號盤（Remaco RLL 系列）。《Volume 8》是這串裡 MB 有完整年份＋Official status＋盤面編號＋12 軌的一張（RLL-187），補在《Volume 2》之後，把池中這位從「1969／1970 兩張」補成看得出連號目錄形狀的三張。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中（池中《Volume 2》是不同盤名）。 ⚠ **盤名極易混淆**：這位的 MB 目錄裡有《Volume 2》《Volume 8》《Vol. 9》《Vol. 10》《Vol. 11》《Lagu-Lagu Vol. 12》——**「Volume」與「Vol.」兩種寫法在同一位名下並存**，摺鍵會把 `Volume8` 與 `Vol8` 摺成不同鍵（`chk-prop` 抓不到這種分裂）。本卡盤名照 MB RG title 取「Volume 8」（裁定 6／70／120）。 掛名回問（裁定 179／250）：`artist?query=artist:\"Koes Plus\"&limit=25` 全域**只回 1 筆**（a1ba8a6b-…，Group、area Indonesia、begin 1969），無同名干擾；掛名字串與池中兩張**一字不差**。 年份：MB first-release-date 1973 ＝唯一那筆 release 的 date。⚠ **店端年份與端上不一致的風險已在同掛名另一張出現**（見《Vol. 10》那卡），本張店端也標 1973、與端上一致。 封面：CAA release-group/fb0e8f04/front 實測 **404**（本機端要人工補圖）。 店面（裁定 254，只寫觀察）：Apple `id` 與 `us` 兩店 search「Koes Plus Volume 8」**第一筆就是 collectionId 1777356356「Koes Plus — Volume 8 (1973)」**；藝人目錄 `lookup?id=1770772377&entity=album`（id 店的第二個 Koes Plus 實體）回 18 張、裡面同樣有 1777356356——**⚠ 店端有兩個 Koes Plus 藝人實體**（422455311 的 39 張全是 1980 年之後的再發與精選，1770772377 的 18 張才是 1969–1976 的原盤系列），**外部比對挑錯實體就會整批落空**。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group fb0e8f04-aaa1-402a-8fd5-b9982fcf880d，identitySource pinned。回問確認 title「Volume 8」、primary-type Album、secondary-types 空、first-release-date 1973、artist-credit「Koes Plus」（實體 a1ba8a6b-101f-46eb-98f0-f96132ff7353，Group、area Indonesia、begin 1969，名下 14 個 RG）。轄下 release 1 筆：1973 ID Official、12\" Vinyl×12、Remaco／RLL-187。刻意不釘：fcd43869-8e27-46c6-95f9-8d6075a0f22b《Dheg Dheg Plas》(1969，**池中已有**)、efed68be-063e-40e7-ab9c-f8a9fc9b4fa7《Volume 2》(1970，**池中已有**)、5b071a05-63a5-4028-81e7-d8a5a7630c8a《Vol. 10》(1974，**本組另收一卡**)、598e997d-ed2e-48f4-982a-72a53b44f3ed《Vol. 9》(1973，Remaco RLL-208，記入未收清單餘量)、86155657-8a56-4174-9c8f-8e24d6304baf《Vol. 11》(1974，Remaco RLL-301，同上)、acf0774e-6a92-43fe-9a24-72bfbc93dec0《Dheg Dheg Plas & Volume Two》(2010-06-22，**兩張池中已有的碟的併輯**)、8ff12061-…《Nostalgia Koes Plus》(Compilation)、c3816c8d-…《Pop Keroncong Abadi》(1999)，以及 9535dcfd／95e4cad8／c1ccefe8／e5629f1a／eead1f5f 五個**無 first-release-date** 的 RG。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Koes Plus；Vol. 10；Volume 10；Koes Plus Volume 10",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1974 ID Official、12\" Vinyl×12、Remaco Records RLL-209；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "Koes Plus",
+  "album": "Vol. 10",
+  "year": 1974,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Remaco Records／RLL-209，1974 ID Official，12\" Vinyl 12 軌（release 端點實測；裁定 259）",
+  "why": "同上一卡的實掃結果：池中這位只有《Dheg Dheg Plas》(1969) 與《Volume 2》(1970) 兩張。《Vol. 10》與本組另收的《Volume 8》分屬 1973 與 1974 兩年、盤面編號 RLL-187 對 RLL-209，**是這條 Remaco 連號盤裡跨過年份的一對**；MB 目錄裡 1971–1974 這段共有 Volume 3／4／5／6／7／8／Vol. 9／Vol. 10／Vol. 11 的形狀，但真正帶著 first-release-date＋Official status＋盤面編號三項齊全的只有 Volume 8、Vol. 9、Vol. 10、Vol. 11 四張。本批取 8 與 10 兩張，9 與 11 記入未收清單餘量。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 ⚠ **`Vol. 10` 與 `Volume 10` 是兩個摺鍵**：MB RG title 寫「Vol. 10」（帶點與空格），Apple 店端寫「Volume 10」——本卡盤名照 MB RG title 取「Vol. 10」（裁定 6／70／120），`queryAlias` 兩種都填。 ⚠ **年份分歧（本卡最重要的一筆）**：MB first-release-date 與唯一那筆 release 的 date 都是 **1974**，但 **Apple `id`／`us` 店端的 collectionId 1777379905「Koes Plus — Volume 10」releaseDate 標 1973**——**差一年，端上與店端各執一詞**。依裁定 18／46 維持卡單的 1974（資料庫端有盤面編號 RLL-209 佐證、與 RLL-208 的 Vol. 9 同屬 1973→1974 的連號），**但下游一字都不得把 1974 寫成「唯一有來源的發行年」，也不得引店端的 1973**。 掛名回問（裁定 179／250）：同上一卡，全域只回 1 筆，無同名干擾。 封面：CAA release-group/5b071a05/front 實測 **404**（本機端要人工補圖）。 店面（裁定 254，只寫觀察）：Apple `id`／`us` search「Koes Plus Volume 10」第一筆即 collectionId 1777379905；藝人目錄 `lookup?id=1770772377&entity=album` 的 18 張裡同樣有這筆。**⚠ 店端兩個 Koes Plus 藝人實體的分裂同上一卡。** 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 5b071a05-63a5-4028-81e7-d8a5a7630c8a，identitySource pinned。回問確認 title「Vol. 10」、primary-type Album、secondary-types 空、first-release-date 1974、artist-credit「Koes Plus」（實體 a1ba8a6b-101f-46eb-98f0-f96132ff7353）。轄下 release 1 筆：1974 ID Official、12\" Vinyl×12、Remaco Records／RLL-209。刻意不釘：fb0e8f04-aaa1-402a-8fd5-b9982fcf880d《Volume 8》(1973，**本組另收一卡**)、598e997d-ed2e-48f4-982a-72a53b44f3ed《Vol. 9》(1973，RLL-208)、86155657-8a56-4174-9c8f-8e24d6304baf《Vol. 11》(1974，RLL-301)、fcd43869-…《Dheg Dheg Plas》(1969，**池中已有**)、efed68be-…《Volume 2》(1970，**池中已有**)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Black Brothers；The Black Brothers；Black Brothers Papua；Terima Kaseh；Terima Kasih",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1978 **MY** 壓片、12\" Vinyl×12、EMI MMFP30010，**該筆 status 欄是空的**；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "Black Brothers",
+  "album": "Terima Kaseh",
+  "year": 1978,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "EMI／MMFP30010，1978，**release country 是 MY（馬來西亞）不是 ID**，12\" Vinyl 12 軌（**該 release 的 status 欄為空，不得寫成 Official**）（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`Black Brothers` 子字串雙向命中 2 筆**全是假陽性**（H.E.R. 兩張）——**池中這支團 0 張**。池中印尼那 38 張全部落在爪哇與蘇門答臘系（雅加達、萬隆、泗水、棉蘭），**新幾內亞島西半（MB artist 的 begin-area 記在 Jayapura）這一塊池中完全空白**。本張是 MB 上這支團**唯一一個 release-group**，也是唯一一筆帶年份、載體、盤面編號的實體盤，是把這塊補進池裡的唯一入口。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 掛名回問（裁定 179／250）：`artist?query=artist:\"Black Brothers\"&limit=25` 回 6 筆，目標 e7c5cc2c-…（Group、**area Jayapura**、disambiguation「Indonesian pop group」）排第 1、score 100；但第 2–6 名是巴基斯坦（2023 年成團，score 98）、牙買加 ska 二人組、美國 doo-wop 二人組與**兩筆連 type 與 area 都沒填的** `Black Brothers`（9b96f5f6 只寫「Song What a Time」、e84fcca7 只寫「probably swiss hiphop」）——依裁定 250 這兩筆**不得背書任何成員或本名資訊**。 ⚠ **MB 端第 1 名不等於外部端安全**：Apple `id` 店有五個 `Black Brothers` 藝人實體，285550750 那個 12 張全是 2024–2026 年的法語系單曲，**與本團無關**；只有 1637814102「The Black Brothers Papua」是同一支，目錄卻只有 1 張（《Derita Tiada Akhir》1986）。 ⚠ **country 是 MY 不是 ID**：唯一那筆 release 的 country 欄是馬來西亞、廠牌是 EMI、編號 MMFP30010——**下游不得寫成印尼本地壓片**，只能寫 release 端點記到的國別。 ⚠ **status 欄為空**，不得寫成 Official。 年份：MB first-release-date 1978 ＝唯一那筆 release 的 date，無第二個來源可交叉。 ⚠ **盤名拼法**：MB RG title 是「Terima Kaseh」（Kaseh），現代印尼語／馬來語正字是「Terima Kasih」——盤名照 MB 實體文字取（裁定 6／70／120），`queryAlias` 兩種都填。 封面：CAA release-group/68defec7/front 實測 **404**（本機端要人工補圖）。 店面（裁定 254，只寫觀察）：Apple `id`／`my` 兩店以「Black Brothers Terima Kaseh」search 皆 0 筆；藝人目錄 `lookup?id=1637814102&entity=album`（id 店「The Black Brothers Papua」）只回 1 張《Derita Tiada Akhir》(1986)、**沒有本張**，`lookup?id=285550750` 回的 12 張與本團無關——兩種查法未命中的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 68defec7-3b23-4e35-973f-c285d32d2721，identitySource pinned。回問確認 title「Terima Kaseh」、primary-type Album、secondary-types 空、first-release-date 1978、artist-credit「Black Brothers」（實體 e7c5cc2c-bef9-43e6-84ed-9da3baea3e53，Group、area Jayapura、disambiguation「Indonesian pop group」，**名下只有這 1 個 RG**）。轄下 release 1 筆：1978 **MY**、**status 空**、12\" Vinyl×12、EMI／MMFP30010、無 barcode。刻意不釘：無同掛名的其他 RG 可比（MB 上這支團只有 1 個 release-group）；被駁回的同名實體 MBID 見 risk 欄的掛名回問一節（be4d3ef7 巴基斯坦、cc26d1d7 牙買加、4df5fe81 美國、9b96f5f6／e84fcca7 兩筆無欄位者）。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Chrisye；Chrismansyah Rahadi；Puspa Indah；Puspa Indah Taman Hati",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1980 ID、Cassette×10、Musica Studios MSC 7123，**該筆 status 欄是空的**；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "Chrisye",
+  "album": "Puspa Indah",
+  "year": 1980,
+  "genres": [
+   "pop"
+  ],
+  "label": "Musica Studios／MSC 7123，1980 ID，**Cassette** 10 軌（**該 release 的 status 欄為空，不得寫成 Official**）（release 端點 inc=media+labels 實測；裁定 259）",
+  "why": "實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest＋c47/cand-all.json（合計 24,138 列）＋ c-SEA 三份卡單 99 張，`Chrisye` 子字串雙向命中 5 筆＝**池中兩張**：《Badai Pasti Berlalu》(1977，`onboarding-manifest-c52-20260903.json`) 與《Sabda Alam》(1978，c-SEA 2026-09-01)。**池中這位停在 1978 年**，而 MB 目錄裡他名下有 35 個 RG、橫跨 1977–2007。《Puspa Indah》(1980) 是《Sabda Alam》之後、Musica Studios 盤面編號 MSC 7123 那一筆，緊接在池中已有兩張的下一格；同期的《Pantulan Cita》(1981)、《Resesi》(1983)、《Nona》(1984)、《Sendiri》(1984) 一併查過，本批取編號最接近池中那兩張的這一張，其餘記入未收清單餘量。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；5 筆子字串命中全是這位本人的兩張碟在 seed／manifest／卡單三處的重複計。 掛名回問（裁定 179／250）：`artist?query=artist:\"Chrisye\"&limit=25` 全域**只回 1 筆**（adfff063-…，Person、area Indonesia、begin 1949-09-16），無同名干擾；掛名字串與池中兩張**一字不差**（照 c-126 第三節）。 ⚠ **載體是卡帶不是黑膠**：1980 年印尼的主流實體是卡帶，本張 release 的 `media.format` 是 `Cassette`、10 軌——**下游不得寫成 LP**（裁定 227 的形狀：`secondary-types` 空不代表是黑膠原盤，要看 media.format）。 ⚠ **status 欄為空**，不得寫成 Official。 年份：MB first-release-date 1980 ＝唯一那筆 release 的 date；**Apple 店端 collectionId 1775214005 的 releaseDate 也標 1980**，兩邊一致。 ⚠ 盤名歧義：MB RG title 是「Puspa Indah」，外部常見全名「Puspa Indah Taman Hati」——盤名照 MB 實體文字取（裁定 6／70／120），`queryAlias` 兩種都填。 封面：CAA release-group/9abce6ad/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `id` search「Chrisye Puspa Indah」**第一筆即 collectionId 1775214005「Chrisye — Puspa Indah (1980)」**；`us` 店 search 0 筆；藝人目錄 `lookup?id=126632481&entity=album`（id 店）回 60 張、裡面同樣有 1775214005。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 9abce6ad-0b2d-41a8-8cbd-bd8b1130608b，identitySource pinned。回問 `release-group/9abce6ad-…?fmt=json&inc=artist-credits+releases` 確認 title「Puspa Indah」、primary-type Album、secondary-types 空、first-release-date 1980、artist-credit「Chrisye」（實體 adfff063-402d-4e97-a34d-c1cb6adaa7a1，Person、area Indonesia、begin 1949-09-16，名下 35 個 RG）。轄下 release 1 筆：1980 ID、**status 空**、Cassette×10、Musica Studios／MSC 7123。刻意不釘：5ff8136b-d7ca-39e0-96a5-abc6347b6061《Badai Pasti Berlalu》(1977，**池中已有**，且 secondary-types 含 Soundtrack)、75229d9e-2053-4841-84bc-2eb06a358317《Sabda Alam》(1978-10-05，**池中已有**)、201835cc-847d-4afc-b4c9-177652a0d0e3《Pantulan Cita》(1981，記入未收清單餘量)、4f2ab278-dce2-4a48-9f20-b7d9b2730762《Resesi》(1983，Musica Studios、Cassette×10，同上)、3bf24093-3f00-4f89-b809-b3b98701b6c4《Nona》(1984)、68d84843-175e-4e09-b715-5aa70cc21633《Sendiri》(1984)、2cb9e5ea-b9fb-4e70-a3cc-17e68231da26《Nona Lisa》(1986)、4f454e4a-7580-427a-8cd4-10e939640454《Jumpa Pertama》(1988)、8187791a-d9b7-40dc-956e-4e38ed7ec0a1《Pergilah Kasih》(1989)，以及 8e7f16b3／99a60628／a1e3844e／c3ec136f／c50c8b24／5ccec16c／97d9856e 等 Compilation 與 1f65becb／914abe9a／3df58c92／42efedc4 等 Single。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Chaseiro；Chaséiro；Chaseiro Vol. 2；Bila",
+  "reissuedBy": "2018 ID Official CD×12，Musica／MSD0781CT、barcode 8992880105308（原盤 1980 ID Official Cassette×12、Musica Studios MSC7114）",
+  "g": "b",
+  "artist": "Chaseiro",
+  "album": "Bila",
+  "year": 1980,
+  "genres": [
+   "pop",
+   "jazz"
+  ],
+  "label": "Musica Studios／MSC7114，1980 ID Official，Cassette 12 軌；另有 2018 ID Official CD 再發（Musica／MSD0781CT、barcode 8992880105308）（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`Chaseiro` 子字串雙向命中 **0 筆**——**池中這支團完全是空的**。池中印尼那 38 張的 1980 年代那一段只有 Fariz RM《Sakura》(1980)、Transs《Hotel San Vicente》(1981)、Indra Lesmana《For Earth and Heaven》(1986)、Bhaskara《Bhaskara 86》(1986)、Krakatau《Krakatau》(1987) 五張，**全部是器樂與 fusion 那一側**；雅加達大學生系的人聲和聲團這一塊一張也沒有。本張是 MB 目錄裡這支團五個 RG 中**唯一一張同時有 first-release-date、Official status、原盤盤面編號與後續 CD 再發**的（《Pemuda》1979 那張在 MB 上沒有獨立 RG，目錄裡只有 2018 年那兩筆），是補這一塊最站得住的入口。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，掛名 0 命中、本張精確鍵 0 命中、同盤名 0 命中。 ⚠ **盤名是單一常用詞**：`Bila` 在印尼語是「當／若」，摺鍵 `bila` 短、外部比對容易撞到不相干的條目——判定一律要看掛名＋盤名兩格。 掛名回問（裁定 179／250）：`artist?query=artist:\"Chaseiro\"&limit=25` 全域**只回 1 筆**（9fbea414-…，Group、area Indonesia、begin 1970），無同名干擾；但 **Apple `id` 店有三個實體**（623211926 `Chaseiro`、1692123046 `New Chaséiro`、1493153772 `Chaseiro All Stars`），**其中兩個帶變音字母或後綴**，外部比對要認 artistId 不能認字串。 年份：MB first-release-date 1980 ＝原盤 release 的 date；**Apple 店端 collectionId 1753303191 的 releaseDate 也標 1980**，兩邊一致。2018 那筆 CD 是再發（**`year` 取原盤年 1980**）。 ⚠ **兩筆 release 軌數相同（12／12）但載體不同**（Cassette／CD）——行文引軌數前要先選版本（裁定 251）；本卡 `label` 欄記的是 1980 卡帶那一版。 封面：CAA release-group/0da28595/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `id` search「Chaseiro Bila」**第一筆即 collectionId 1753303191「Chaseiro — Bila (1980)」**；`us` 店 search 0 筆；藝人目錄 `lookup?id=623211926&entity=album` 回 9 張、裡面同樣有 1753303191（目錄另含《Pemuda (Remastered 2024)》1979、《Chaseiro (Vol. 3)》1981、《Ceria》1982）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 0da28595-f100-4186-836c-393a4ae929ea，identitySource pinned。回問確認 title「Bila」、primary-type Album、secondary-types 空、first-release-date 1980、artist-credit「Chaseiro」（實體 9fbea414-8c9b-46cc-8e9e-48cd059e059d，Group、area Indonesia、begin 1970，名下 5 個 RG）。轄下 release 2 筆：1980 ID Official Cassette×12 Musica Studios／MSC7114；2018 ID Official CD×12 Musica／MSD0781CT、barcode 8992880105308。刻意不釘：d36e71c0-2308-4c56-97c8-dd717f03054e《Ceria》(1982，Musica Studios MSC7364、Cassette×11，記入未收清單餘量)、1ebffc0e-ab28-4a7b-9948-23bf936014e3《Pemuda》(**MB 的 first-release-date 是 2018，不是 1979 的原盤年**，取來會把再發年當原盤年)、075bcee0-4df6-4d4d-b602-f0aff69852cf《3》(2018，同上)、680f09f2-a798-4c55-8c8f-6c5b79cabab4《Persembahan》(2001)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Iwan Fals；Virgiawan Listanto；Opini",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1982 ID Official、Cassette×9、Musica Studios MSC7681、barcode 8992880768113；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "Iwan Fals",
+  "album": "Opini",
+  "year": 1982,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Musica Studios／MSC7681，1982 ID Official，Cassette 9 軌，barcode 8992880768113（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`Iwan Fals` 子字串雙向命中 3 筆＝**池中一張**：《Sarjana Muda》(1981，c-SEA 2026-09-01，seed／manifest／`cseab-cards.json` 三處同一張)。MB 目錄裡他名下有 **41 個 RG**、是這條線上目錄最深的一位，而池中只有 1981 年那一張。《Opini》是 1982 年、Musica Studios 盤面編號 MSC7681、緊接在《Sarjana Muda》(1981) 之後的下一張，**帶完整 barcode 的 release 在他 1980 年代前段的目錄裡並不多**（1983《Sumbang》那筆的 media 已經是 Digital Media、1985《Sore Tugu Pancoran》那筆沒有 barcode），是補在池中那一張旁邊最直接的一張。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 掛名回問（裁定 179／250）：`artist?query=artist:\"Iwan Fals\"&limit=25` 全域**只回 1 筆**（326894c5-…，Person、area Indonesia、begin 1961-09-03），無同名干擾；掛名字串與池中《Sarjana Muda》**一字不差**。 ⚠ **這位的目錄有大量同名與近名 RG**：41 個 RG 裡有《Canda Dalam Nada》(1981，Compilation) 與《Canda Dalam Ronda》(1979)、三張同日 1993-03-10 的 RG（《Barang Antik》《Aku Sayang Kamu》《Ethiopia》）——**同日多筆是批次建檔形狀，不算互相印證**（c-124 交接第四節第 2 點那個形狀），下游不得把 1993-03-10 寫成三張的發行日。 ⚠ 載體是卡帶，不得寫成 LP。 年份：MB first-release-date 1982 ＝唯一那筆 release 的 date；**Apple 店端 collectionId 1753721153 的 releaseDate 也標 1982**，兩邊一致。 封面：CAA release-group/0e7d996c/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `id` search「Iwan Fals Opini」**第一筆即 collectionId 1753721153「Iwan Fals — Opini (1982)」**；`us` 店 search 0 筆；藝人目錄 `lookup?id=126609479&entity=album`（id 店）回 60 張、裡面同樣有 1753721153。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 0e7d996c-5c93-4c01-a8fa-021f5778d4db，identitySource pinned。回問確認 title「Opini」、primary-type Album、secondary-types 空、first-release-date 1982、artist-credit「Iwan Fals」（實體 326894c5-953a-45ac-9774-bc348a51214d，Person、area Indonesia、begin 1961-09-03，名下 **41 個 RG**）。轄下 release 1 筆：1982 ID Official、Cassette×9、Musica Studios／MSC7681、barcode 8992880768113。刻意不釘：10da8a75-0f3a-433b-978b-d7175aa78641《Sarjana Muda》(1981，**池中已有**)、cd9ff35d-2660-412d-8740-e793958f70e8《Sumbang》(1983，該 release 的 media 是 Digital Media、非原盤形態，記入未收清單餘量)、8421d5f1-80a1-402e-9a13-3ae39377029b《Sugali》(1984)、616cc676-fb1e-420e-8a41-b48eb00e6f16《Sore Tugu Pancoran》(1985，Musica Studios、Cassette×10、無 barcode，另有 2008 數位 8 軌版，**同 RG 兩版軌數不同——裁定 251**)、e1e8932f-8dd6-4de6-b255-75830f361dad《Lancar》(1987)、4edd06e8-c51b-4647-ac26-bc6a37e09b24《Wakil Rakyat》(1987)、28c7f4d2-1784-4062-8050-7a00c63e91e9《Mata Dewa》(1989)、8681b52d-d0e9-4e5e-89bb-bdf78181e500《Cikal》(1991)、f51954c3-7382-4617-a06d-6c4dd84b112a《Hijau》(1992)、db16eb41-c212-42b3-9f77-9f6017f89d1c《Belum Ada Judul》(1992)；4cc43493-c596-418c-bb4d-ada4a6fb8686《Canda Dalam Nada》(1981) 與 132dcd53／67cc329c／683d93cb／eadc665f／5c6c90cc 等是 Compilation；18a7236b／bd9f4902／a9c5fbe5 是 Single；9bc7881d 與 c88d7254 **無 first-release-date**。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "Slank；Slank Indonesia；Kampungan",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1991 ID、**status／media.format／label-info 三欄皆空**、12 軌；此 RG 底下沒有任何再發 release",
+  "g": "b",
+  "artist": "Slank",
+  "album": "Kampungan",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "**MB 的 `release` 端點回傳裡 label-info 為空、media.format 欄亦空、status 欄亦空**（1991 ID、12 軌）——`label` 欄不得自行補寫廠牌（裁定 259 的紀律：拿不到不等於沒有，只能照實記端點回什麼）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`Slank` 子字串雙向命中 **0 筆**——**池中這支團完全是空的**。池中印尼那 38 張的最晚一張是 Discus《1st》(1999)、其次是 Krakatau (1987) 與 God Bless《Semut Hitam》(1988)，**1990 年代那整段只有兩張**（Discus 1999、Kantata Takwa 1990 在 c-SEA 卡單）。MB 目錄裡這支團有 30 個 RG，1990–1998 之間就有《Suit... Suit... He... He...》(1990)、《Kampungan》(1991)、《Piss!》(1993)、《Generasi Biru》(1994)、《Minoritas》(1996)、《Lagi Sedih》(1997)、《Tujuh》(1998) 七張。本批取《Kampungan》(1991)——它是這串裡 MB 與 Apple 兩邊**年份一致**的一張（端上 1991、店端 collectionId 1550371580 標 1991），把池中印尼從 1988 直接跳到 1999 的那個十年缺口接起來。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，掛名 0 命中、本張精確鍵 0 命中、同盤名 0 命中。 掛名回問（裁定 179／250）：`artist?query=artist:\"Slank\"&limit=25` 回 2 筆，目標 620e474b-…（Group、area Indonesia、begin 1983-12-26）排第 1、score 100；第 2 名是路易維爾的美國饒舌歌手 Slank（Person、score 85）——**兩筆都叫 Slank，只有 type＋area 分得出來**。 ⚠ **外部端有五個 Slank 藝人實體**：Apple `id` 店回 291537185／1843700187／1470311250／1498581322／1731958480，只有 291537185 的 60 張目錄是本團的。 ⚠⚠ **本張的 MB release 三個欄位全空**（status／media.format／label-info），只有 country ID、date 1991 與 track-count 12 有值——**`label` 欄已照實寫，下游一字都不得補寫廠牌或載體**（這是 c-123 裁定 257 那個形狀：不是每一張都有廠牌欄可填，硬填就是造假）。 ⚠ **店端同一張碟有兩個 collectionId**（1550371580 與 1871353480，兩筆的 releaseDate 都標 1991）——外部比對會回兩筆，不是兩張碟。 年份：MB first-release-date 1991 ＝唯一那筆 release 的 date，與店端兩筆一致。 封面：CAA release-group/eb5a2531/front 實測 **404**（本機端要人工補圖）。 店面（裁定 254，只寫觀察）：Apple `id` 與 `us` 兩店 search「Slank Kampungan」都回同樣那兩筆；藝人目錄 `lookup?id=291537185&entity=album` 回 60 張、第一筆即 1550371580。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group eb5a2531-d508-4e63-99db-06011c70aade，identitySource pinned。回問確認 title「Kampungan」、primary-type Album、secondary-types 空、first-release-date 1991、artist-credit「Slank」（實體 620e474b-241c-412a-ab43-207b86d6230b，Group、area Indonesia、begin 1983-12-26，名下 30 個 RG）。轄下 release 1 筆：1991 ID、**status 空**、**media.format 空**×12、**label-info 空**、無 barcode。刻意不釘：4c04063a-9be2-45e7-85ec-6154607522dc《Suit... Suit... He... He... (Gadis Sexy)》(1990-11-30，記入未收清單餘量)、478329aa-2c4f-421d-b18f-b3f1adefad95《Piss!》(1993，同上)、e0f29efe-a0de-3db3-a715-a67ff073f8ce《Generasi Biru》(1994)、82597e02-a67d-4315-bfa3-4d4ef277a0f2《Minoritas》(1996)、1f7d92c7-0dcb-4b94-9b52-0058fb8b73a7《Lagi Sedih》(1997-02-05)、a0ae5926-031f-46d7-accc-8575ab7a1142《Tujuh》(1998-01-20)、e11ac7d6-b92c-476c-aa36-ef7af3ae9898《Mata Hati Reformasi》(1998-07)；23237e1f／42ef0816／52500735／6830c3d7 是 Soundtrack（**本批不收**）、6576966b《Virus RoadShow》是 Live、1d97e60b《Slank Party》是 DJ-mix、69c507d8《Bajakan》是 Compilation；b5caaa79 與 0d548f88 兩個《Slankissme》以及 7bcbf00a《Virus》、88128306《The Big Hip》、5cae3f1d《i love you》、fca43591《Satu-Satu》、2f41a75f《Road To Peace》**皆無 first-release-date**。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "พุ่มพวง ดวงจันทร์；Pumpuang Duangjan；Phumphuang Duangchan；Pumpuang Duangchan；ตะวันลับฟ้า；Tawan Lap Fa",
+  "reissuedBy": "2017-01-01 XW Official Digital Media×10，Baichasong（原盤 1978 TH Official 12\" Vinyl×10、เอื้ออารีย์เจ้าเก่า，**catalog-number 欄記的是 `[none]`**）",
+  "g": "b",
+  "artist": "พุ่มพวง ดวงจันทร์",
+  "album": "ตะวันลับฟ้า",
+  "year": 1978,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "เอื้ออารีย์เจ้าเก่า／**[none]**（廠牌名有、目錄號欄明寫 `[none]`），1978 TH Official，12\" Vinyl 10 軌；另有 2017-01-01 XW Official 數位再發（Baichasong，10 軌）（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`พุ่มพวง ดวงจันทร์` 子字串雙向命中 6 筆＝**池中兩張**：《ลำเพลิน พุ่มพวง ดวงจันทร์》（seed 標 1979、c-SEA 卡單標 2017）與《บ้านนอกในกรุง》(1980)，兩張都來自 c-SEA 2026-09-01。池中泰國這一區共 **13 張**（Caravan《คนกับควาย》1975、Onuma Singsiri 1979、พุ่มพวง 2、คาราบาว 2、Chaweewan Dumnern 1991、Angkanang Kunchai With Ubon-Pattana Band 1975、Dao Bandon 2014 精選、The Paradise Bangkok Molam International Band 3，加 7 張 Various Artists 泰國輯），**其中只有 4 張是 1980 年以前的原盤**。《ตะวันลับฟ้า》(1978) 是 MB 目錄裡她最早的一個帶完整年份＋Official status＋實體載體的 RG，**比池中那兩張都早**，補在前面正好把這位的起點接上。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中；掛名字串與池中兩張**一字不差**（照 c-126 第三節：池中已有這位就照池中原字串，本批的泰文原文優先與池中寫法在這位身上一致，沒有衝突）。 ⚠ **拉丁轉寫有多種**：Pumpuang／Phumphuang／Pumpuong 與 Duangjan／Duangchan／Duangjun 交叉組合——`queryAlias` 已填四種；**外部比對用哪一種都可能落空**（裁定 260 那個形狀）。 掛名回問（裁定 179／250）：`artist?query=artist:\"พุ่มพวง ดวงจันทร์\"&limit=25` 全域**只回 1 筆**（6b3c73bc-…，Person、area Thailand、begin 1961-08-04），無同名干擾；**但用拉丁轉寫 `Pumpuang Duangjan` 查則回 0 筆**——這條線的泰文掛名只有原文查得到（裁定 179 那個「查 0 不等於查無此人」的形狀）。 ⚠ **原盤 release 的 catalog-number 欄明寫 `[none]`**（不是空，是登記為無編號）——`label` 欄已照實寫。 年份：MB first-release-date 1978 ＝原盤 release 的 date；2017 那筆是數位再發（**`year` 取原盤年 1978，再發年不進 year 欄**）。⚠ **池中《ลำเพลิน พุ่มพวง ดวงจันทร์》那張 seed 標 1979、c-SEA 卡單標 2017、MB 的該 RG（430d1db9-…）first-release-date 是 2017-07-26**——池中那一列的年份與端上對不上，**那是本機端既有卡的問題、不是本張的**，一併記下來給本機。 封面：CAA release-group/15f1f96d/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `th`／`us` 兩店以泰文全名＋泰文盤名 search 皆 0 筆；藝人目錄 `lookup?id=731856007&entity=album`（th 店）回 18 張，**全部是 2000–2015 年的精選與卡拉 OK 輯，沒有對得上 1978 年那張的條目**——兩種查法未命中的觀察，第三種查法留給研究層。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 15f1f96d-d5b0-4cb5-a082-5b3365c7a16c，identitySource pinned。回問確認 title「ตะวันลับฟ้า」、primary-type Album、secondary-types 空、first-release-date 1978、artist-credit「พุ่มพวง ดวงจันทร์」（實體 6b3c73bc-813c-4164-893f-abb477e15ef2，Person、area Thailand、begin 1961-08-04，名下 6 個 RG）。轄下 release 2 筆：1978 TH Official 12\" Vinyl×10 เอื้ออารีย์เจ้าเก่า／[none]；2017-01-01 XW Official Digital Media×10 Baichasong。刻意不釘：430d1db9-ea90-469e-9f6b-41a02d5761f5《ลำเพลิน พุ่มพวง ดวงจันทร์》(**池中已有**，MB first-release-date 2017-07-26)、6a10cb46-ec7c-4623-95cd-46b3b1b58dcd《บ้านนอกในกรุง》(1980，**池中已有**)、7421f70f-df89-42c4-9058-9fbf0872ab86《พุ่มพวงหลาย พ.ศ.》(Compilation、無年份)、557b3f2d-92ed-465b-9f38-d5fe7bf731f1《วัยน่ารัก》(**無 first-release-date、primary-type 亦空**)、b96c1f41-8695-436f-a48d-63f42a0eb9dd《ห้วยหน่อย-ถอยนิด》(同上，**且盤名含 U+2010 連字號**)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "อังคนางค์ คุณไชย；Angkanang Kunchai；Angkanang Khunchai；Angkanag Kunchai；แฟนจ๋าอย่าลืม；Faen cha ya luem；Never Forget Me",
+  "reissuedBy": "2016 JP Official CD×10（EM Records／EM1157CD，盤名改成英譯 `Never Forget Me`）與 2018-03-24 XW Official Digital Media×10（EM Records，同英譯名）；原盤 1979 TH Official 12\" Vinyl×12、ตราพินแคน HLP 269",
+  "g": "b",
+  "artist": "อังคนางค์ คุณไชย",
+  "album": "แฟนจ๋าอย่าลืม",
+  "year": 1979,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "ตราพินแคน／HLP 269，1979 TH Official，12\" Vinyl 12 軌；另有 2016 JP Official CD（EM Records／EM1157CD、10 軌）與 2018-03-24 XW Official 數位（EM Records、10 軌）兩筆再發，**兩筆再發的盤名都改成英譯 `Never Forget Me`、且軌數由 12 降為 10**（release 端點實測；裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，`อังคนางค์ คุณไชย` 子字串雙向命中 **0 筆**——池中確實有這位，**但掛名寫成 `Angkanang Kunchai With Ubon-Pattana Band`**（《Isan Lam Plearn》1975，`onboarding-manifest-c52-20260903.json`），是拉丁轉寫＋合掛名的形式，與泰文原文摺不到同一個鍵（裁定 49 那個跨文字系統看不見的形狀）。池中泰國那 13 張裡 molam 這一塊只有她那張 1975 與 Chaweewan Dumnern 1991 兩張。《แฟนจ๋าอย่าลืม》(1979) 是 MB 目錄裡她名下唯一帶完整年份＋Official status＋盤面編號（HLP 269）＋原盤載體的一張，而且是**原盤與日本再發雙鏈齊全**的一張，補在池中那張 1975 旁邊最直接。",
+  "risk": "撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 ⚠⚠ **掛名分裂（要寫給本機）**：池中同一位寫成 `Angkanang Kunchai With Ubon-Pattana Band`，本卡依 CURATION-BRIEF-c128-c130 第二節「泰文有原文時原文優先」取 `อังคนางค์ คุณไชย`（＝MB artist 實體 2189aa25-… 的主名）。**兩個字串在 `chk-prop` 的摺鍵上永遠撞不到彼此**，本機端統一寫法時要一起處理。取原文而不取池中寫法的理由：池中那個字串是**合掛名**（含伴奏團 Ubon-Pattana Band），照抄會把她的獨掛碟也掛成合掛名（裁定 258 在防的形狀）。 ⚠ **盤名兩鏈**：同 RG 底下 2016／2018 兩筆 EM Records 再發的 title 是英譯 `Never Forget Me`、另有一筆 **Pseudo-Release** 的 title 是轉寫 `Faen cha ya luem`。依裁定 45／259 的判準，取拉丁形要有「同 RG 底下實際存在一筆純拉丁 title 的 Official release」——**本張確實有**（2016 JP CD）；但本批簡報明定泰文原文優先，且 RG title 本身就是泰文原盤名，故**取泰文 `แฟนจ๋าอย่าลืม`**，三種拉丁寫法全部進 `queryAlias`（裁定 342）。 ⚠ **軌數分歧**：原盤 12 軌、兩筆 EM Records 再發各 10 軌——**行文引軌數前必須先選版本**（裁定 251），本卡 `label` 欄記的是 1979 原盤那一版。 ⚠ **Pseudo-Release 不算實體**：那筆 `Faen cha ya luem` 的 status 是 Pseudo-Release、date／country／format 全空，不得當成一個發行版本。 掛名回問（裁定 179／250）：`artist?query=artist:\"อังคนางค์ คุณไชย\"&limit=25` 全域**只回 1 筆**（2189aa25-…，Person、area Thailand、begin 1956-02-06）；**但用 `Angkanang Kunchai` 查回 0 筆**——與 พุ่มพวง 同形，泰文原文才查得到。⚠ 另注意 MB 上 `ยอดรัก สลักใจ`（1f33faf9-…）的 begin 也記成 1956-02-06，**與她同日**，兩筆很可能有一筆是建檔預設值，**不得拿 begin 當佐證寫進正文**。 年份：MB first-release-date 1979 ＝原盤 release 的 date（**`year` 取原盤年，2016／2018 是再發年、不進 year 欄**）。 封面：CAA release-group/b2ef8b6e/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `th`／`jp`／`us` 三店以「Angkanang Kunchai Never Forget Me」search 皆 0 筆；藝人目錄 `lookup?id=1463483687&entity=album`（th 店「อังคนางค์ คุณไชย」）回 6 張（2019 年兩套《อมตะเงินล้าน 14เพลงฮิต》、1999《อาวรณ์แฟน》、2001《ชุดสาวอุบลรอรัก》與兩筆 feat. 單曲），**沒有對得上本張的條目**——兩種查法未命中的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group b2ef8b6e-0325-43af-b213-3e3d232c73e3，identitySource pinned。回問確認 title「แฟนจ๋าอย่าลืม」、primary-type Album、secondary-types 空、first-release-date 1979、artist-credit「อังคนางค์ คุณไชย」（實體 2189aa25-0786-49f6-9919-aea9bdb9c86b，Person、area Thailand、begin 1956-02-06，名下 3 個 RG）。轄下 release 4 筆：1979 TH Official 12\" Vinyl×12 ตราพินแคน／HLP 269；2016 JP Official CD×10 EM Records／EM1157CD（title `Never Forget Me`）；2018-03-24 XW Official Digital Media×10 EM Records（同英譯名）；另一筆 **Pseudo-Release**（title `Faen cha ya luem`，date／country／format 皆空，12 軌）。刻意不釘：a2cf6586-73bb-46f6-a2c1-470fd75359c2《อิสานลำเพลิน》(2014-05-27，**即池中 `Angkanang Kunchai With Ubon-Pattana Band《Isan Lam Plearn》` 那張的 EM Records 再發線，池中已有**)、c19e05b3-37ab-4a5e-b9c9-36e8471fd032《ลำเพลิน กับอังคนางค์ คุณไชย》(**無 first-release-date**)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "คาราวาน；Caravan；Caravan Thailand；Carawan；อเมริกันอันตราย；American Antarai；American Antaray",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1976 TH Official、**CD**×10、label-info 空；另有一個獨立的 release-group cae8fa7d-3336-4963-a09c-9a5b63684c36《American Antarai》(2013-08-12) 是同名曲目的另一組建檔，**刻意不釘**",
+  "g": "b",
+  "artist": "คาราวาน",
+  "album": "อเมริกันอันตราย",
+  "year": 1976,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "**MB 的 `release` 端點回傳裡 label-info 為空**（1976 TH Official、**media.format 記成 CD**、10 軌）——`label` 欄不得自行補寫廠牌（裁定 259）",
+  "why": "實掃 24,138 列＋c-SEA 99 張卡單，泰文掛名 `คาราวาน` 0 命中——**但池中其實有這支團**，見 risk 第一段。池中泰國那 13 張裡，這支團只有《คนกับควาย》(1975) 一張（且掛名寫成拉丁形）。MB 目錄裡他們有 11 個 RG，1975–1988 之間有 7 張帶完整年份的 Album。《อเมริกันอันตราย》(1976) 是其中緊接在《คนกับควาย》之後的一張，**也是這 7 張裡唯一一張在 Apple 泰國店的藝人目錄裡查得到對應條目的 1970 年代盤**（collectionId 1871711638），補在池中那張旁邊最直接。",
+  "risk": "⚠⚠ **掛名撞卡（本批最重要的一筆，裁定 340）**：池中已經有 `Caravan《คนกับควาย》(1975)`（seed 一列，c-52 2026-09-03 上架）——**那就是這支團**，但掛名被寫成拉丁形 `Caravan`，而池中同一個字串底下還掛著**英國坎特伯里的 Caravan 四張**（《Caravan》1969、《If I Could Do It All Over Again…》1970、《In the Land of Grey and Pink》1971、《For Girls Who Grow Plump in the Night》1973），另有 `The Caravans`（福音，1 張）與 `Xhol Caravan`（德國，1 張）。**池中 `Caravan` 這個掛名字串現在同時指兩支完全不同的團**，是 `audits/pool-artist-name-splits.md` 在防的形狀的加強版。本批依 CURATION-BRIEF-c128-c130 第二節「泰文有原文時原文優先（`คาราวาน`）」取泰文原文，**不往 `Caravan` 那個已經撞在一起的字串再加卡**（先例：c-125 第七節 Gong 一案——池中 `Gong` 全是法國那支，西班牙的 Gong「日後若要補收，要先解掛名撞卡」）。**代價要寫清楚**：本組三張與池中那張《คนกับควาย》在撞卡字串去重上看不見彼此，**本機端統一寫法時要把這四張一起處理**。 撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 掛名回問（裁定 179／250）：`artist?query=artist:\"คาราวาน\"&limit=25` 全域**只回 1 筆**（f77ee6f1-…，Group、area Thailand、begin 1973、disambiguation「Thai folk-rock band」）；**而用拉丁 `Caravan` 查則回 155 筆**，第 1 名是英國坎特伯里的 Caravan（Group、UK、begin 1968-01，score 100），泰國這支**連前 12 名都進不去**——`score` 完全不可用，**這正是本卡不取拉丁掛名的技術理由**。 ⚠ **`media.format` 記成 `CD`、但 first-release-date 是 1976**：1976 年的泰國不可能有 CD 發行，**這一筆的 media 欄幾乎確定是後來的 CD 版被登記在原盤日期底下**——下游**不得把「1976 年的 CD」寫進正文**，只能寫「端上唯一那筆 release 的 date 是 1976、media 欄記為 CD、10 軌」這個觀察（同 RG 的 label-info 為空、無盤面編號可交叉）。 ⚠ **同名曲目另有獨立 RG**：cae8fa7d-…《American Antarai》(2013-08-12) 是拉丁轉寫名的另一組建檔，**刻意不釘**；兩者摺鍵不同、不會撞卡，但外部比對會同時回兩筆。 年份：MB first-release-date 1976 ＝唯一那筆 release 的 date；**Apple 店端 collectionId 1871711638 的 releaseDate 標 2022**（那是數位上架年，不是原盤年）——**兩邊差 46 年，下游不得引店端年份**。 封面：CAA release-group/347d78e9/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `th`／`us` 兩店 search「คาราวาน อเมริกันอันตราย」**第一筆即 collectionId 1871711638「คาราวาน — อเมริกันอันตราย」**；藝人目錄 `lookup?id=1307979564&entity=album`（th 店「คาราวาน」）回 8 張、裡面同樣有 1871711638。⚠ **店端另有一個 `หงา คาราวาน`（artistId 973627291）的個人實體、15 張目錄**，與團體實體分開，外部比對要認 artistId。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 347d78e9-23e6-487f-a59e-ba207612a145，identitySource pinned。回問確認 title「อเมริกันอันตราย」、primary-type Album、secondary-types 空、first-release-date 1976、artist-credit「คาราวาน」（實體 f77ee6f1-9b57-499e-a926-5decd2661f67，Group、area Thailand、begin 1973、disambiguation「Thai folk-rock band」，名下 11 個 RG）。轄下 release 1 筆：1976 TH Official、media.format `CD`×10、**label-info 空**、無 barcode。刻意不釘：ec550864-ef68-4207-a807-e20c7e14cd2e《คนกับควาย》(1975，**池中已有，掛名寫成拉丁形 `Caravan`**)、5aadb1a0-2e9f-4f5b-a834-2eb25df1c007《บ้านนาสะเทือน》(1983，**本組另收一卡**)、d5bd376a-78ac-4939-8164-cc56ce0fd15f《คนตีเหล็ก》(1984，**本組另收一卡**)、458ac1a9-3ae4-4443-8f94-24f437da6ab2《1985》(1985，**盤名是純數字，撞卡字串去重上極危險**，記入未收清單餘量)、20e38b39-1b41-4313-8a27-cb3c4e003381《คนไกลบ้าน》(1986，同上餘量，**店端兩種查法皆未命中**)、7d92c928-77aa-4118-89c9-e1378324f253《US J. PAN》(1987)、d7334d4f-b4e5-478a-b71d-a82553a39d5d《อานนท์》(1988)、cae8fa7d-3336-4963-a09c-9a5b63684c36《American Antarai》(2013-08-12，**本張曲目的拉丁名另組建檔**)、a43f5b76-d735-43b0-9b38-95242471dc65《เส้นเสียงเปล่า》與 c75f4db6-5f8f-4348-a970-a0c33703ea8b《คาราวาน》(**兩者皆無 first-release-date，後者 primary-type 亦空**)。"
+ },
+ {
+  "releaseType": "Album",
+  "selfTitled": false,
+  "queryAlias": "คาราวาน；Caravan；Caravan Thailand；บ้านนาสะเทือน；Ban Na Satuean；Baan Na Satuen",
+  "reissuedBy": "MB 轄下只有 1 筆 release：1983 TH Official、**CD**×10、label-info 空；此 RG 底下沒有其他 release",
+  "g": "b",
+  "artist": "คาราวาน",
+  "album": "บ้านนาสะเทือน",
+  "year": 1983,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "**MB 的 `release` 端點回傳裡 label-info 為空**（1983 TH Official、**media.format 記成 CD**、10 軌）——`label` 欄不得自行補寫廠牌（裁定 259）",
+  "why": "同上一卡的實掃結果：池中這支團只有《คนกับควาย》(1975) 一張、且掛名是拉丁形。MB 目錄 11 個 RG 裡 1983–1988 那一段有《บ้านนาสะเทือน》(1983)、《คนตีเหล็ก》(1984)、《1985》(1985)、《คนไกลบ้าน》(1986)、《US J. PAN》(1987)、《อานนท์》(1988) 六張，**池中這一段是完全空的**。本批取 1983 與 1984 兩張（本卡與下一卡），理由是這兩張在 Apple 泰國店的藝人目錄裡都查得到對應條目、外部可交叉；《1985》那張的盤名是純數字（撞卡字串去重上極危險）、《คนไกลบ้าน》兩種店面查法皆未命中，兩張都記入未收清單餘量。",
+  "risk": "⚠⚠ **掛名撞卡（本批最重要的一筆，裁定 340）**：池中已經有 `Caravan《คนกับควาย》(1975)`（seed 一列，c-52 2026-09-03 上架）——**那就是這支團**，但掛名被寫成拉丁形 `Caravan`，而池中同一個字串底下還掛著**英國坎特伯里的 Caravan 四張**（《Caravan》1969、《If I Could Do It All Over Again…》1970、《In the Land of Grey and Pink》1971、《For Girls Who Grow Plump in the Night》1973），另有 `The Caravans`（福音，1 張）與 `Xhol Caravan`（德國，1 張）。**池中 `Caravan` 這個掛名字串現在同時指兩支完全不同的團**，是 `audits/pool-artist-name-splits.md` 在防的形狀的加強版。本批依 CURATION-BRIEF-c128-c130 第二節「泰文有原文時原文優先（`คาราวาน`）」取泰文原文，**不往 `Caravan` 那個已經撞在一起的字串再加卡**（先例：c-125 第七節 Gong 一案——池中 `Gong` 全是法國那支，西班牙的 Gong「日後若要補收，要先解掛名撞卡」）。**代價要寫清楚**：本組三張與池中那張《คนกับควาย》在撞卡字串去重上看不見彼此，**本機端統一寫法時要把這四張一起處理**。 撞卡：實掃 24,138 列＋99 張 c-SEA 卡單，本張精確鍵 0 命中、同盤名 0 命中。 掛名回問（裁定 179／250）：同上一卡——泰文查回 1 筆、拉丁 `Caravan` 查回 155 筆且泰國這支進不了前 12 名，**score 不採**。 ⚠ **`media.format` 記成 `CD`、first-release-date 卻是 1983**：與上一卡同形，**不得把「1983 年的 CD」寫進正文**（1983 年泰國的主流實體是黑膠與卡帶）。 ⚠ **label-info 為空、無盤面編號**，`label` 欄已照實寫，下游不得補。 年份：MB first-release-date 1983 ＝唯一那筆 release 的 date；**Apple 店端 collectionId 1871712806 的 releaseDate 標 2022**（數位上架年）——**兩邊差 39 年，不得引店端年份**。 封面：CAA release-group/5aadb1a0/front 實測 **200**。 店面（裁定 254，只寫觀察）：Apple `th`／`us` 兩店 search「คาราวาน บ้านนาสะเทือน」**第一筆即 collectionId 1871712806**；藝人目錄 `lookup?id=1307979564&entity=album` 的 8 張裡同樣有這筆。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、MB artist 的 area 欄；不得寫政治評價、宗教評價與對體制的價值判斷，也不得把查禁、審查、流亡寫成敘事化描述（沿用 c-123～c-125 的做法）。",
+  "mbNote": "釘 release-group 5aadb1a0-2e9f-4f5b-a834-2eb25df1c007，identitySource pinned。回問確認 title「บ้านนาสะเทือน」、primary-type Album、secondary-types 空、first-release-date 1983、artist-credit「คาราวาน」（實體 f77ee6f1-9b57-499e-a926-5decd2661f67，Group、area Thailand、begin 1973、disambiguation「Thai folk-rock band」）。轄下 release 1 筆：1983 TH Official、media.format `CD`×10、**label-info 空**、無 barcode。刻意不釘：ec550864-ef68-4207-a807-e20c7e14cd2e《คนกับควาย》(1975，**池中已有**)、347d78e9-23e6-487f-a59e-ba207612a145《อเมริกันอันตราย》(1976，**本組另收一卡**)、d5bd376a-78ac-4939-8164-cc56ce0fd15f《คนตีเหล็ก》(1984，**本組另收一卡**)、458ac1a9-…《1985》、20e38b39-…《คนไกลบ้าน》(1986)、7d92c928-…《US J. PAN》(1987)、d7334d4f-…《อานนท์》(1988)、cae8fa7d-…《American Antarai》(2013-08-12)。"
+ }
+]
