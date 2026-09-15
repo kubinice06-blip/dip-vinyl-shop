@@ -501,3 +501,14 @@ Moskwa《Życie Niezwykłe》(1990)、Izrael《1991》(1991)。
   3. **店面軌數對應再發版**：Siekiera《Nowa Aleksandria》25 軌（MB 原盤 10 軌）、Tilt 16 軌（MB 原盤 9 軌）。
   4. **店面把本團建成合掛名**：Klaus Mitffoch 與 Oddział Zamknięty 各有數筆合掛名條目——
      **那些條目不是本卡，也不得用來背書任何成員身分**（第 241／250／305 條）。
+
+---
+
+## 第 329a 條（主線 2026-09-15 補，研究層 b 組交件後）：**TSA《TSA》改 1983、Kombi《Nowy rozdział》改 1984**
+
+與第 311 條（Republika 1983、Maanam 1981）同形：MB 的 first-release-date 取的是**錄音月**，
+不是發行月。研究層 b 組以 pl.wiki 精確日（TSA 1983-03-09、Kombi 1984-06-20）＋ Archiwum
+Polskiego Rocka ＋ 串流／Discogs 日期三方一致改判。卡單與 `prop-b.json` 已由主線同步改，
+策展層第 32x 條「Muza 三張全在 1983–84」「SX 2164／2171 同年」的口徑以研究層 notes 為準。
+另五張年份兩說（Dezerter、Armia、Moskwa、Oddział Zamknięty、Sztywny Pal Azji）**卡片維持**，
+兩說寫在研究 notes，寫作層不得斷言精確年。
