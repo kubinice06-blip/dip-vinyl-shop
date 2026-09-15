@@ -28,20 +28,20 @@
   "cover": null
  },
  {
-  "key": "desc4:世良譲|スモーク・リングス",
+  "key": "desc4:世良譲|スモーク・リング Vol.1",
   "artist": "世良譲",
-  "album": "スモーク・リングス",
-  "year": 1987,
+  "album": "スモーク・リング Vol.1",
+  "year": 1974,
   "genre": "jazz",
   "genres": [
    "jazz"
   ],
-  "label": "ABCJ-467／BRJ-4046（JP 1987-08-01 CD 19 軌；MB release 端點兩筆目錄編號的廠牌名都是空字串，即第 262 條記的 `[no label]` 形狀——ABCJ 段是 Absord Music Japan 的 Trio Records 復刻線，Apple 同一條目 ℗ TRIO RECORDS，**廠牌歸屬研究層須覆核**）",
-  "rgMbid": "721e76b5-5ed3-4e4e-91db-41b466589d99",
+  "label": "Trio Records PAP-9019（JP 1974 12 吋黑膠 14 軌，盤面註明 1974-08-21／22 青山タワーホール 錄音，錄音與母帶 菅野沖彦）；MB 轄下只有 2008-05-21 的 ABCJ-474 CD 14 軌，該筆 label-info 的廠牌名是空字串（第 262 條的 `[no label]` 形狀，不是問錯端點），ABCJ 段是 Absord Music Japan／ART UNION 的 Trio Records 復刻線",
+  "rgMbid": "24ae374b-fafe-47b7-8d65-e3476167cbf8",
   "identitySource": "pinned",
-  "curatorWhy": "〈Smoke Rings〉是 世良譲 一生的招牌曲，這張以它為名的 19 軌盤是他個人名下 MB 建檔最早的一筆，也是他 1950 年代起搖擺路線的總結。實掃 seed_cards.json 全 16,450 列（世良譲／世良讓／Sera／譲 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張——連帶六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全是零，簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形，本組第二次實證）。子字串假陽性已逐筆排除：「譲」另命中 久石譲 13 張（吉卜力原聲帶），「Sera」另命中 Tullio Serafin《Verdi: Rigoletto》1 張。 池中他名下零張，這張把起點定在 1987 年，與同組的《バッカス・スイング》（三重奏編制）互為兩面。",
-  "curatorRisk": "撞卡：盤名在池中零命中，掛名字串「世良譲」池中零張。⚠ 年份：MB first-release-date 1987-08-01（轄下唯一一筆 release 就是這個日期），但 **Apple jp 同一張（1327682788《Smoke Rings》，19 軌與 MB 逐軌數一致，℗ TRIO RECORDS）標的是 2008-05-21**——兩邊差 21 年，方向與第 383 條通則相反（這次是店面的日期比較晚）。判定取 MB 的 1987：MB 那一筆是實體 CD 且帶兩個目錄編號（ABCJ-467／BRJ-4046），Apple 那一筆是 2008 年的數位上架日；**沒有旁證可以把 1987 再往前推到 Trio 原盤年，研究層若查到 LP 原盤要回頭改**。⚠ Apple 把這張的掛名印成「世良譲&ヒズ・フレンズ」但掛在 artistId 359079027（世良 譲）名下——**同一位在店面有兩到三個 artistId、拼法還不同**（c-133 第 408 條，本組第二次）。封面 CAA release-group 端點 404（實測）；可走的路：Apple jp 官方條目 1327682788（19 軌與 MB 一致）→ apple-verified-collection（`ALBUM_ONBOARDING.md` §4 2026-09-10 店主核定，釘住 MBID 的卡也適用；c-132 第 382 條）。⚠ 廠牌欄：MB 的 label-info 陣列有兩筆、廠牌名都是空字串（第 262 條的 `[no label]` 形狀，不是問錯端點），`label` 只能記目錄編號。",
-  "mbNote": "釘 release-group 721e76b5-5ed3-4e4e-91db-41b466589d99。回問兩個端點確認：title「スモーク・リングス」、artist-credit 單一「世良譲」（實體 c3046714-50a4-4cde-a51e-237e076e2867）、first-release-date 1987-08-01、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1987-08-01 Official，label-info 兩筆皆 `[no label]`，catno ABCJ-467 與 BRJ-4046，CD 19 軌）。⚠ 這張與同組不收的 24ae374b-fafe-47b7-8d65-e3476167cbf8《スモーク・リング Vol.1》（2008-05-21，ABCJ-474，CD 14 軌）**盤名近似但軌數不同、是兩個 RG**——本批只收 19 軌這一個，另一個列進第 424 條的候補清單，下游不得折疊。廠牌是用 release 端點回問來的（第 259 條）。刻意不釘：b00994b3-e1bb-40a7-a896-ad8ae61a49e0《TREASURE》2006（WMP-2003-4，2CD 10+9 軌）、1637cbb4-6d19-4480-b73c-6ac198d2ada8《メモリアル・アルバム》2004（テイチク TECH-25013）、2145e0f6-3cfe-440d-b106-2017e58d0cea《追悼盤 酒と女の日々》2004（ABCJ-307-8，2CD）——**這三張都是他 2004-02-17 過世後編的紀念盤／追悼盤，MB 未標 Compilation 但實質是選輯**，本批依「重點專輯」判準不收。",
+  "curatorWhy": "〈Smoke Rings〉是 世良譲 一生的招牌曲，這張以它為名的盤是他 1974 年在 Trio Records 的代表作：由 菅野沖彦 在青山タワーホール 錄了兩個晚上，編制是他的鋼琴加 北村英治（單簧管）、五十嵐明要（中音薩克斯風）、三井明夫（小號）、川辺浩一（長號）、増田一郎（顫音琴）、原田政長（貝斯）、須永宏（鼓）的搖擺大合奏——與同組《バッカス・スイング》（1974 年的純三重奏）正好是他兩種編制的兩面，兩張同年、同廠牌、同一位錄音師。實掃 seed_cards.json 全 16,450 列（世良譲／世良讓／Sera／譲 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張——連帶六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全是零。子字串假陽性已逐筆排除：「譲」另命中 久石譲 13 張（吉卜力原聲帶），「Sera」另命中 Tullio Serafin《Verdi: Rigoletto》1 張。 ⚠ **本筆是 2026-09-15 主線裁定的替換**：原本收的是同一位的 `721e76b5`《スモーク・リングス》（1987 ABCJ-467／BRJ-4046，CD 19 軌），研究層查出那 19 軌是 1974 年《Smoke Rings》（PAP-9019，原 14 軌刪 3）與 1976 年《Smoke Rings Vol.2》（PA-7145，原 10 軌刪 2）**兩張 LP 的刪節合併**，當 Album 收不合固定規格（Compilation 走 §5.6 或不收）。本筆 `24ae374b` 的 14 軌**逐軌等於 1974 年原盤的完整曲目**，是同一張碟的正解。",
+  "curatorRisk": "撞卡：盤名在池中零命中，掛名字串「世良譲」池中零張，`node batch-progress/c134/chk-prop.mjs a` 標記 0。⚠ **年份取 1974（原盤年）而不是 MB 的 2008-05-21**，依第 352／364 條第一型（MB 轄下只建了再發）：MB 這個 RG 轄下唯一一筆是 2008-05-21 的 ABCJ-474 CD，原盤是 Trio Records PAP-9019、1974 年、盤面註明 1974-08-21／22 青山タワーホール 錄音，**14 軌逐軌與原盤相同、無增刪**。⚠ **要記一條反面論據供本機端裁量**：盤名《スモーク・リング **Vol.1**》的「Vol.1」是 2008／2014 復刻線回頭加的編號（1974 年原盤就叫《Smoke Rings》，1976 年的續作才自己帶 Vol.2），若嚴格照 c-133 第 426 條第 1 點「盤名與年份要出自同一筆」，會得到 2008。**本批判定取 1974**：兩者曲目完全相同、Vol.1 只是把原本就存在的系列關係補寫成編號，與 c-134《Ai No Cocktail》那種「換成另一個詞的改題」不同型；且本批第 422 條 A 組已有三張同型改判的先例。⚠ **封面 CAA release-group 端點實探 404**（2026-09-15 本次替換時重探，`https://coverartarchive.org/release-group/24ae374b-fafe-47b7-8d65-e3476167cbf8/front`）。可走的路**不是 apple-verified-collection**：Apple 三種查法全 0 筆（見下），**只剩廠牌官方商品頁** Universal Music Japan `https://www.universal-music.co.jp/swing/products/pocs-9323/`（2014-12-03 SHM-CD 復刻 POCS-9323，「音の匠・菅野沖彦・昭和のジャズ モダン・スイング・シリーズ」，掛名印「世良譲&ヒズ・フレンズ」、成員與 1974 原盤一致），與實體黑膠盤面條目 `https://api.discogs.com/releases/6689163`（Trio Records PAP-9019／1974／日本）——**兩條都是本盤層級的頁面**。⚠ **店面：三種查法全 0 筆（第 254 條）**——(1) search 跑「スモーク・リング Vol.1」「スモーク・リング 世良譲」「Smoke Ring Vol.1 Yuzuru Sera」「世良譲 嘘は罪」「二人のカクテル 世良譲」五組詞 × jp／us／gb × entity=album 與 song 共 30 次查詢，零筆命中 世良譲；(2) 藝人目錄把他在店面的**兩個 artistId 整份 dump**（`359079027`「世良 譲」4 張、`359071435`「世良譲トリオ」2 張），六張裡沒有本作；(3) 沒有候選 collectionId 可直查。⚠ **一個絕對不能採的假陽性**：Apple jp `1327682788`《Smoke Rings》（19 軌、℗ TRIO RECORDS、掛 artistId 359079027）**含有本作 14 軌裡的 11 軌**，但它是被換掉的那張合併 CD（19 軌），**不是本盤**，下游不得拿它當本卡的固定試聽或封面來源。⚠ 掛名：原盤與 2014 復刻頁印的都是「世良譲&ヒズ・フレンズ／Yuzuru Sera & His Friends」，MB 的 artist-credit 是單一元素「世良譲」——**本卡照 MB 與池中先例取「世良譲」，不新造分裂**（第 307 條），另一寫法進 queryAlias。⚠ 編制：本盤不是鋼琴三重奏而是八人搖擺合奏，**單簧管是 北村英治（本組另外六張卡的掛名）**；MB 的 artist-credit 是單一元素、不是合掛，依第 321 條收得正確，但下游正文不得寫成兩人共同領銜。",
+  "mbNote": "釘 release-group 24ae374b-fafe-47b7-8d65-e3476167cbf8。回問兩個端點確認：title「スモーク・リング Vol.1」、artist-credit 單一「世良譲」（實體 c3046714-50a4-4cde-a51e-237e076e2867，Person／JP／1932-03-10–2004-02-17）、first-release-date 2008-05-21、primary-type Album、**secondary-types 空**、轄下 1 個 release（JP 2008-05-21 Official，label-info 一筆、廠牌名為空字串、catno ABCJ-474，CD 14 軌）。十四軌：アンダー・ザ・ブランケット・オブ・ブルー／嘘は罪／スモーク・リングス／恋のため息／古くさいね／ペイパー・ムーン／プレリュード・トゥ・ア・キッス／ミーン・トゥ・ミー／ベイリーさん帰ってくれないか?／誰かが誰かを愛してる／シャイン／メイビー・ユール・ビー・ゼア／ギブ・ミー・ア・シンプル・ライフ／二人のカクテル——**與 1974 年 Trio PAP-9019 原盤的 14 軌逐軌對應**（嘘は罪＝It's a Sin to Tell a Lie、恋のため息＝I Can't Believe That You're in Love With Me、古くさいね＝That Old Feeling、二人のカクテル＝Cocktails for Two）。⚠ **本筆取代原本釘的 721e76b5《スモーク・リングス》（1987，ABCJ-467／BRJ-4046，CD 19 軌）**——那 19 軌是 1974 原盤刪 3 軌加 1976 年《Smoke Rings Vol.2》（PA-7145）刪 2 軌的合併，實質是選輯，本批不收；**下游不得把 721e76b5 與 24ae374b 折疊，它們是兩個 RG、軌數不同。** 廠牌是用 release 端點回問來的（第 259 條）；MB 端**沒有**1974 原盤與 Vol.2 的 release-group（世良譲 名下 10 個 RG 已整份列出核對）。刻意不釘：b00994b3《TREASURE》2006（WMP-2003-4，2CD）、1637cbb4《メモリアル・アルバム》2004（テイチク TECH-25013）、2145e0f6《追悼盤 酒と女の日々》2004（ABCJ-307-8，2CD）——三張都是他 2004-02-17 過世後編的紀念盤／追悼盤，本批依「重點專輯」判準不收；57f599f0《世良譲トリオ・イントロデューシング・笠井紀美子/ザ・モダン・プレイング・メイト》1998 依第 426 條不收（跨批同碟風險，笠井紀美子 在 b 組）；406a2e35《Caravan》2007 合掛不收。",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -51,7 +51,7 @@
   "group": "a",
   "lineType": "深掘",
   "scene": "日本爵士第一世代：戦後ピアノトリオ",
-  "queryAlias": "Smoke Rings；世良譲&ヒズ・フレンズ；Yuzuru Sera；世良 譲；Sera Yuzuru Smoke Rings",
+  "queryAlias": "Smoke Ring Vol.1；Smoke Rings；スモーク・リングス；世良譲&ヒズ・フレンズ；Yuzuru Sera & His Friends；世良 譲；Sera Yuzuru Smoke Rings",
   "republic": "",
   "cover": null
  },
