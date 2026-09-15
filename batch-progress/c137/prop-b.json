@@ -1,0 +1,421 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Light-Foot；Light Foot",
+  "reissuedBy": "Blue Note 數位 Mono Remaster（2014-08-05 XW，barcode 602537957811，7 軌）／JP CD 2000（8 軌）",
+  "artist": "Lou Donaldson",
+  "album": "Light Foot",
+  "year": 1961,
+  "label": "Blue Note BLP 4053（US 1961 12\" Vinyl 7 軌，盤面題「Light-Foot」）；1967 立體聲 BST-84053（US Liberty 期）；數位 Blue Note（2014-08-05 XW，barcode 602537957811，7 軌）",
+  "why": "1958 年 12 月 14 日 Hackensack 錄音、Blue Note 壓到 1961 年才以 BLP 4053 發行的 Donaldson 五重奏盤：Herman Foster 鋼琴、Peck Morrison 貝斯、Jimmy Wormworth 鼓、Ray Barretto 康加，七軌裡〈Light-Foot〉〈Hog Maw〉〈Mary Ann〉是他從硬咆勃往藍調／拉丁節奏靠的轉折點（AllMusic 三星、Down Beat 當年 John S. Wilson 評「素材沒讓他發揮」——維基「Light-Foot」條目；Discogs master 361255 BLP 4053；jazzdisco 4000 系列索引 1961）。實掃池中 Lou Donaldson 掛名 8 張：Blues Walk 1958、LD+3 1959、Gravy Train 1962、Alligator Bogaloo 1967、Mr. Shing-A-Ling 1968、Midnight Creeper 1968、Hot Dog 1969、Everything I Play Is Funky 1970，c-136 b 組另補 1957 的 Quartet/Quintet/Sextet 與 Wailing With Lou——**1958 年 Blues Walk 之後、1962 Gravy Train 之前的 Blue Note 中段（Light-Foot、The Time Is Right、Sunny Side Up、Here 'Tis）一張都沒有**，本張與同組 The Time Is Right 補這一段。",
+  "risk": "⚠ **年份改判 1958→1961**：enum 的 1958 來自 MB first-release-date 1958-12-14——那是兩筆數位 release（448cc000／cc3955c3）把錄音日當發行日填的 placeholder；MB 兩筆 BLP 4053 黑膠 release 標 1959（無月日）、維基 infobox 寫 1959，但 **Discogs master 361255 與三筆原盤條目全標 1961、jazzdisco Blue Note 4000 系列目錄頁 BLP 4053 = 1961**，且 4050（Whistle Stop）～4054（Roll Call）整段都是 1961 年出版，目錄號是出版時順序配的，本卡取 1961；1959 說寫進 risk 供研究層再核，正文可寫「1958 年 12 月錄音、1961 年出版」。⚠ 盤名：MB RG title「Light Foot」無連字號，Discogs／Apple／維基／封面全寫「Light-Foot」（2014 數位 release 亦題 Light-Foot）——本卡照 MB RG title，連字號版進 queryAlias，研究層若改成流通名不影響 MBID（第 483 條同形）。掛名照池中 `Lou Donaldson`（8 張），MB credit 同字串。軌數：原 LP 7 軌，MB e70c5107 那筆 12\" Vinyl 登錄 8 軌（疑登錄錯，與 f7fb4100 的 7 軌並存）、2000 JP CD 8 軌（加 bonus），行文以 7 軌為準。Apple us `search` 一種查法命中 1442912741（7 軌、標 1959-02-19——店面日期不能當年份來源，第 484 條），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release cc3955c3 數位版，非原盤圖——研究層看版式）。",
+  "mbNote": "釘 release-group cda143f4-e08e-3887-9c0a-27f3b3ee182d。回問 release-group 端點（inc=artist-credits+releases）：title「Light Foot」、artist-credit「Lou Donaldson」、first-release-date 1958-12-14（數位 release 的 placeholder）、primary-type Album、secondary-types 空、轄下 6 個 release。release 端點（inc=media+labels）：e70c5107（1959 US 12\" Vinyl 8 軌，Blue Note BLP 4053）、f7fb4100（1959 US Vinyl 7 軌，BLP 4053）、0a6d0a3c（2000 JP CD 8 軌，無 label-info）、448cc000（1958-12-14 Digital 7 軌，Blue Note）、cc3955c3（1958-12-14 Digital 7 軌，barcode 00602537957842，title「Light-Foot」）、75d77951（2014-08-05 XW Digital 7 軌，barcode 602537957811，「Light-Foot」）。藝人 MBID db147d97-f5cf-4e80-9e1a-08ddcb1d0bf8（Lou Donaldson，Person，US）。錄音 1958-12-14 Hackensack（維基）；出版年 1961 依 Discogs master 361255 與 jazzdisco 4000 系列索引。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Two Bones；Curtis Fuller & Slide Hampton Two Bones",
+  "reissuedBy": "Blue Note JP「Unissued Masters Series」GXK 8166（1981 12\" Vinyl）／The Blue Note Masterworks UCCQ-5018（2014-06-25 JP SHM-SACD，barcode 4988005828286）／UCCQ-9331（2017 JP CD）",
+  "artist": "Curtis Fuller",
+  "album": "Two Bones",
+  "year": 1980,
+  "label": "Blue Note GXF 3064（JP 1980 12\" Vinyl 7 軌，King Records「ブルーノート世界初登場1800シリーズ」，世界首發）；JP 再發 GXK 8166（1981）；SHM-SACD UCCQ-5018（JP 2014-06-25，7 軌）",
+  "why": "1958 年 1 月 22 日 Hackensack 錄音、Blue Note 當年沒出、壓在庫房 22 年後 1980 年由日本 King Records 以 GXF 3064「世界初登場」系列首發的雙長號盤：Curtis Fuller 與 Slide Hampton 兩支長號同台，Sonny Clark 鋼琴、George Tucker 貝斯、Al Harewood 鼓，七軌裡〈Fuss Budget〉〈Da-Baby〉〈Slide's Ride〉是 Fuller 在 Blue Note 三張正式盤（The Opener、Bone & Bari、Vol. 3）之外唯一沒發的整場，美國要到 1996 年 Mosaic 全集才出（維基「Two Bones」條目；Discogs master 725374 GXF 3064；jazzdisco Curtis Fuller 目錄 GXF-3064）。實掃池中 Curtis Fuller 掛名 2 張：The Opener 1957、Blues-ette 1960——他 1957–58 在 Blue Note 的四場錄音池中只有第一場，本張是 Blue Note 「日本首發庫存盤」形（c-131 第 364 條 Oblique 同型）在 1958 年這一段的代表。",
+  "risk": "⚠ **年份改判 1958→1980、首發國日本**：enum 的 1958 與 MB release 34531d3e「1958 US 12\" Vinyl、Blue Note 無 catno」是把錄音年當出版年的錯登錄（該筆無 catno、無 barcode、無 annotation）；Discogs master 725374 與全部 5 筆條目、維基、jazzdisco 一致：**1980 年日本 King Records GXF 3064 世界首發，Blue Note 美國本身從未以黑膠發行**。`label` 寫 Blue Note GXF 3064（JP），正文可寫「1958 年錄音、1980 年日本首發」，不得寫成 1958 年 Blue Note 出版。本層不改 MB；研究層若能拿到 GXF 3064 盤面可補第二來源（Discogs 6020897 有圖）。掛名照池中 `Curtis Fuller`（2 張），MB credit 同字串；Slide Hampton 是同台長號不是聯名，MB artist-credit 單一元素。⚠ 這是與 Minor Move（同組，GXF 3072）同一個 1980 年 King「1800 系列」的兩張，正文可互相提及但各算一張。Apple us `search` 一種查法命中 1445790948（7 軌、標 1958-01-22＝錄音日 placeholder），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release 34531d3e 即那筆年份錯登的 release——圖可能是 GXF 3064 封面，研究層看版式）。",
+  "mbNote": "釘 release-group 45b8002a-821e-4a98-a78a-7760d0e86a11。回問 release-group 端點（inc=artist-credits+releases）：title「Two Bones」、artist-credit「Curtis Fuller」、first-release-date 1958（錯，見 risk）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：34531d3e（1958 US 12\" Vinyl 7 軌，Blue Note 無 catno——登錄錯，實為 1980 JP GXF 3064）、d7b4921a（2014-06-25 JP SHM-SACD 7 軌，Blue Note UCCQ-5018，barcode 4988005828286）。軌目（release 34531d3e）：Fuss Budget／Oatmeal Cookie／Da-Baby／Pajama Tops／Slide's Ride／Loquacious Lady／Mean Jean。藝人 MBID 006307bc-af41-4da1-aa11-b35a9c6f0316（Curtis Fuller，Person，US，1932–2021）。錄音 1958-01-22 Hackensack（維基）；首發 1980 JP King GXF 3064（Discogs master 725374、jazzdisco）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Minor Move；Minor Move (Expanded Edition)",
+  "reissuedBy": "Blue Note JP GXK 8162（1981 12\" Vinyl）／TOCJ-1616（1996-11-27 JP CD）／Connoisseur CD 7243 5 22671 2 5（2000-02-15 US，6 軌）／Tone Poet B0030487-01（2019-10-25 XW 12\" Vinyl，barcode 602577868450）／UCCQ-9725（2024-09-25 JP HQCD）",
+  "artist": "Tina Brooks",
+  "album": "Minor Move",
+  "year": 1980,
+  "label": "Blue Note GXF 3072（JP 1980 12\" Vinyl 5 軌，King Records「ブルーノート世界初登場1800シリーズ」，世界首發）；US CD Connoisseur 7243 5 22671 2 5（2000-02-15，6 軌）；Tone Poet B0030487-01（XW 2019-10-25 12\" Vinyl 5 軌）",
+  "why": "1958 年 3 月 16 日 Hackensack 錄音、Tina Brooks 在 Blue Note 的第一場領銜錄音，Alfred Lion 沒發、1980 年由日本 King Records 以 GXF 3072 世界首發：Lee Morgan 小號、Sonny Clark 鋼琴、Doug Watkins 貝斯、Art Blakey 鼓，五軌裡〈Nutville〉〈Minor Move〉是 Brooks 自作（Cuscuna 在 2000 年 CD 內頁確認 Nutville 是 Brooks 作品而非 Morgan），2019 年 Tone Poet 系列把它拉回美國黑膠（維基「Minor Move」條目；Discogs master 293594 GXF 3072；MB release 0c07a0b3）。實掃池中 Tina Brooks 掛名 3 張：True Blue 1960、Back to the Tracks 1960、The Waiting Game 1961——他生前唯一出版的 True Blue 與兩張 1980 年代庫存盤都有，**獨缺 1958 年這第一場**，本張補齊他四場領銜錄音的起點。",
+  "risk": "⚠ **年份改判 1958→1980、首發國日本**：enum 的 1958 來自 MB first-release-date 1958-03-16——那是 Capitol 數位「Expanded Edition」（c239244a）把錄音日當發行日填的 placeholder；MB 兩筆 GXF 3072 release 標 1980 JP、Discogs master 293594 標 1980 Japan、維基「remained unreleased until being issued in Japan in 1980 (Blue Note GXF 3072)」，三邊一致。enum note 寫「原盤可能他廠」不成立——**是 Blue Note 自家庫存盤、日本首發**（c-131 第 364 條 Oblique／GXF 系列同型），`label` 寫 Blue Note GXF 3072（JP），正文寫「1958 年錄音、1980 年日本首發」。掛名照池中 `Tina Brooks`（3 張），MB credit 同字串。軌數：原 LP 5 軌，2000 CD／數位 6 軌（加〈Minor Move〉alternate take），行文以 5 軌為準。⚠ 同組 Two Bones（GXF 3064）是同一個 King「1800 系列」，正文可互提但各算一張。Apple us `search` 一種查法只命中 1483150575「Minor Move (Expanded Edition)」（6 軌、標 1958-03-16＝錄音日），前 5 軌對應原盤，只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release c239244a 數位 Expanded Edition，非 GXF 原盤圖——研究層看版式；Discogs 3776548 有 GXF 3072 封面）。",
+  "mbNote": "釘 release-group 31e69fcd-6ff1-3a2f-b16b-390dd71429e5。回問 release-group 端點（inc=artist-credits+releases）：title「Minor Move」、artist-credit「Tina Brooks」、first-release-date 1958-03-16（數位 placeholder）、primary-type Album、secondary-types 空、轄下 9 個 release。release 端點（inc=media+labels）：0c07a0b3／2f2069e3（1980 JP 12\" Vinyl 5 軌，Blue Note GXF 3072，MB 建了兩筆）、90d339ee（1981 JP 12\" Vinyl 5 軌，GXK 8162）、ee24b81f（1996-11-27 JP CD 5 軌，TOCJ-1616／LP-1616）、0b97a512（2000-02-15 US CD 6 軌，7243 5 22671 2 5，barcode 724352267125）、12c58cd1（2000 XE CD 6 軌，同 catno）、c239244a（1958-03-16 XW Digital 6 軌，Capitol Records，「Minor Move (Expanded Edition)」，barcode 00602508328992）、cca34728（2019-10-25 XW 12\" Vinyl 5 軌，B0030487-01 Tone Poet，barcode 602577868450）、e6409be6（2024-09-25 JP HQCD 5 軌，UCCQ-9725）。藝人 MBID aa0bb932-b375-4250-b563-1ab3c9bf72fd（Tina Brooks，Person，US，1932–1974）。錄音 1958-03-16 Hackensack（維基）；首發 1980 JP GXF 3072。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Further Explorations by The Horace Silver Quintet；The Horace Silver Quintet Further Explorations；Further Explorations By the Horace Silver Quintet (The Rudy Van Gelder Edition)",
+  "reissuedBy": "Blue Note RVG Edition CD 50999 5 14379 2 3（2008 US／XE）／Classic Records BN 1589-MONO-200G（2007 US 12\" Vinyl）／Tone Poet B0031884-01（2020-09-24 XW 12\" Vinyl，barcode 602508811401）／UCCQ-9722（2024-09-25 JP HQCD）",
+  "artist": "Horace Silver",
+  "album": "Further Explorations",
+  "year": 1958,
+  "label": "Blue Note BLP 1589（US 1958 12\" Vinyl 6 軌，MB 建了 1958／1959 兩筆）；1967 立體聲 BST 81589（US）；CD CDP 7243 8 56583 2 7（US 1997，6 軌）",
+  "why": "1958 年 1 月 13 日 Hackensack 錄音，Horace Silver 五重奏在 Art Farmer／Clifford Jordan 前線時期的最後一張：Teddy Kotick 貝斯、Louis Hayes 鼓，六軌裡〈The Outlaw〉〈Moon Rays〉〈Pyramid〉是他 1950 年代寫得最結構化的一組原創（〈Ill Wind〉是唯一標準曲），Tone Poet 2020 與 RVG 2008 都選了它（維基「Further Explorations」條目；Discogs master 239850 BLP 1589；jazzdisco 1500 系列索引 1958）。實掃池中 Horace Silver 掛名 8 張：6 Pieces of Silver 1956、Finger Poppin' 1959、Blowin' the Blues Away 1959、The Tokyo Blues 1962、Song for My Father 1964、The Cape Verdean Blues 1966、Silver 'n Strings 1980、It's Got to Be Funky 1993，另 `Horace Silver And The Jazz Messengers` 1955 王牌一張；c-135 a／c-136 a／c-136 b 各補 1952 New Faces New Sounds、1956 Horace Silver Trio、1957 The Stylings of Silver——**1957 Stylings 與 1959 Finger Poppin' 之間就缺這一張**，補上之後他 1955–1959 的 Blue Note 五重奏線才連得起來。",
+  "risk": "⚠ 掛名收攏：MB credit 是群組實體 `The Horace Silver Quintet`（e9ac5139），照第 363 條第二型與 c-136 第 482 條（The Stylings of Silver 同型先例）收攏到池中 `Horace Silver`（8 張，池中《6 Pieces of Silver》MB 同樣掛 Quintet），群組字串進 queryAlias。年份：MB first-release-date 1958（a99eadf7 標 1958、02c516f5 標 1959 是 repress）、Discogs master 1958、jazzdisco 1958，一致；⚠ Apple 721214784 標 1958-01-03（早於錄音日，店面 placeholder，第 484 條）。⚠ 盤名：MB RG title「Further Explorations」，維基條目名「Further Explorations by The Horace Silver Quintet」、Apple 也帶「By the Horace Silver Quintet」——本卡照 MB 短名，長名進 queryAlias（第 483 條同形）。軌數：全部版本 6 軌，RVG 2008 CD 亦 6 軌（Apple RVG 條目 7 軌含 bonus）。Apple us `search` 一種查法命中 721214784（RVG 版，7 軌），前 6 軌對應原盤，只是觀察（第 254 條）。CAA：RG 層有封面（4 圖、front，來源 release a99eadf7 即 1958 原盤）。",
+  "mbNote": "釘 release-group 03797e89-bdd7-3908-9e07-26fbf38e40fe。回問 release-group 端點（inc=artist-credits+releases）：title「Further Explorations」、artist-credit「The Horace Silver Quintet」（群組實體 e9ac5139-2da0-4f00-9ac2-c713e3813ff4）、first-release-date 1958、primary-type Album、secondary-types 空、轄下 24 個 release。release 端點（inc=media+labels）：a99eadf7（1958 US 12\" Vinyl 6 軌，Blue Note BLP 1589，原盤）、02c516f5（1959 US 12\" Vinyl 6 軌，BLP 1589）、f0653397（1967 US BST 81589）、1a09d537（1970 US BST 81589）、72a6e6ec／44ac38fd（1975 US／JP）、3d056fd8（1984-11-21 JP）、ec77859c（1994-12-21 JP BN 1589）、359bc36e（1997 US CD CDP 7243 8 56583 2 7）、8cb8f559（1997-01-29 JP CD TOCJ-1589）、bdf59a85（2000 JP CD TOCJ-9175）、a82925ee（2005-10-26 JP Promo TOCJ-6596）、bf2ac8ca（2007 US Classic Records BN 1589-MONO-200G，barcode 601704158914）、383b841b／d1a05fef／d4c63af0（2008 US CD 50999 5 14379 2 3，RVG，MB 重複建三筆）、5906a747（2008-03-25 XE 同 catno）、fb5bdfc4（2009-01-21 JP TOCJ-7193）、cc23df00（2016 XE Elemental ERLP 1039）、d4bf057f（2019-07-17 JP UCCQ-9525）、b72883d2／ba99e70b（2020-09-24 Tone Poet B0031884-01，重複建兩筆）、131832c2（2024-09-25 JP HQCD UCCQ-9722）、cb513d4e（無日期無載體 6 軌）。全部 6 軌。錄音 1958-01-13 Hackensack（維基）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Lou Takes Off；Lou Donaldson with Donald Byrd, Curtis Fuller, Sonny Clark, George Joyner, Art Taylor",
+  "reissuedBy": "Blue Note RVG Edition CD 50999 2 15371 2 7（2008-09-02 US／XE，barcode 5099921537127）／Classic Records DVD-Audio DAD 1026／Audio Wave XRCD AWMXR-0016（2023-02-10 US）",
+  "artist": "Lou Donaldson",
+  "album": "Lou Takes Off",
+  "year": 1958,
+  "label": "Blue Note BLP 1591（US 1958-07 12\" Vinyl 4 軌）；JP CD TOCJ-1591／BNST-1591（1997-02-26，4 軌）；RVG CD 50999 2 15371 2 7（US 2008-09-02，4 軌）",
+  "why": "1957 年 12 月 15 日 Hackensack 錄音、1958 年 7 月出版的 Donaldson 六重奏盤，全碟只有四軌長曲：Donald Byrd 小號、Curtis Fuller 長號、Sonny Clark 鋼琴、George Joyner（Jamil Nasser）貝斯、Art Taylor 鼓，〈Sputnik〉〈Dewey Square〉〈Strollin' In〉〈Groovin' High〉是他 1950 年代最直接向咆勃致敬、也是編制最大的一張（維基「Lou Takes Off」條目；Discogs master 219613 BLP 1591；jazzdisco 1500 系列索引 1958）。實掃池中 Lou Donaldson 掛名 8 張（Blues Walk 1958 起），c-136 b 組補 1957 的 Quartet/Quintet/Sextet 與 Wailing With Lou——**1957 Wailing 與 1958 Blues Walk 之間的 BLP 1591 就是缺口**，補上後他 1957–1958 的 Blue Note 五張（1537／1545／1591／1593 Blues Walk）連成一線；Sonny Clark 同期在 Blue Note 的 sideman 面也多一張。",
+  "risk": "掛名照池中 `Lou Donaldson`（8 張），MB RG credit 同字串；⚠ 2008 XE CD（072f1db0）的 release credit 是長串「Lou Donaldson with Donald Byrd, Curtis Fuller, Sonny Clark, George Joyner, Art Taylor」（封面印法），進 queryAlias，不當掛名。年份：MB 1958、Discogs master 1958、維基「July 1958」（Schwann 1964）、jazzdisco 1958，一致；⚠ Apple 1443820118 標 1957-01-01（placeholder，第 484 條）。軌數：所有版本 4 軌（無 bonus），行文可寫「四軌」。⚠ 同組 Cliff Craft（BLP 1582）、同批 Sonny Clark 相關盤：Clark 是本張與 Cliff Craft、Smithville、Two Bones、Minor Move 五張的鋼琴，正文各寫各的編制、不得互抄陣容。Apple us `search` 一種查法命中 1443820118（4 軌），只是觀察（第 254 條）。CAA：RG 層有封面（2 圖、front，來源 release 28e7b63f 即 1958 原盤）。",
+  "mbNote": "釘 release-group 0611e966-c0b6-317f-9e7d-792ba23d8f50。回問 release-group 端點（inc=artist-credits+releases）：title「Lou Takes Off」、artist-credit「Lou Donaldson」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 8 個 release。release 端點（inc=media+labels）：28e7b63f（1958 US 12\" Vinyl 4 軌，Blue Note BLP 1591，原盤）、8c0d4c01（1997-02-26 JP CD 4 軌，TOCJ-1591／BNST-1591，barcode 4988006726475）、cc3877da（1997 IT CD，7243 5 21150 2 0）、1a3d7eb6（2008-09-02 US CD 4 軌，50999 2 15371 2 7，barcode 5099921537127，RVG）、072f1db0（2008 XE CD 同 catno，credit 長串）、3169126a（2008-09-01 US Digital 4 軌）、9f71cae9（US DVD-Audio 4 軌，Classic Records DAD 1026）、f9b328ca（2023-02-10 US CD，Audio Wave AWMXR-0016／Blue Note 509996-33645-3-8）。藝人 MBID db147d97-f5cf-4e80-9e1a-08ddcb1d0bf8（Lou Donaldson，Person）。錄音 1957-12-15 Hackensack、出版 1958-07（維基）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Here Comes Louis Smith；Here Comes Louis Smith (RVG Edition)",
+  "reissuedBy": "Blue Note Connoisseur CD CDP 7243 8 52438 2 0（1996 US，6 軌）／RVG Edition CD 50999 5 14381 2 8（2008 US，6 軌；BMG Direct D173120 會員版）／JP GXK 8111（1979）、TOCJ-6594（2005）",
+  "artist": "Louis Smith",
+  "album": "Here Comes Louis Smith",
+  "year": 1958,
+  "label": "Blue Note BLP 1584（US 1958 12\" Vinyl 6 軌，1958 年 3–4 月出版）；Connoisseur CD CDP 7243 8 52438 2 0（US 1996，barcode 724385243820）；RVG CD 50999 5 14381 2 8（US 2008，barcode 5099951438128）",
+  "why": "1958 年 2 月 4／9 日為波士頓 Transition 廠錄的兩場，公司倒閉後 Alfred Lion 買下母帶、同年以 BLP 1584 出版——Louis Smith 這位亞特蘭大小號手的出道盤，Cannonball Adderley 因 EmArcy 合約化名「Buckshot La Funke」吹中音、Duke Jordan／Tommy Flanagan 各彈一天、Doug Watkins 貝斯、Art Taylor 鼓，六軌裡〈Tribute to Brownie〉直接向剛過世的 Clifford Brown 致敬（維基「Here Comes Louis Smith」條目；Discogs master 303057 BLP 1584；jazzdisco 1500 系列索引 1958）。實掃池中 Louis Smith 掛名零張，同組 Smithville 是他 Blue Note 唯一另一張——**他一生只在 Blue Note 領銜兩張就回去教書，池中 1500 系列末段（1580–1600）這兩號一起補**，本張是 Adderley 在 1958 年少數以化名出現的 Blue Note 錄音，也是 Transition 廠牌被 Blue Note 吸收的實例。",
+  "risk": "⚠ 新掛名 `Louis Smith`：池中零張，反查池中無同字串不同人（第 307 條）；MB 實體 1f35fe85 是 Person、US、disambiguation「US jazz trumpeter」、1931–2016，MB 另有同名的英國 D&B 製作人（96 分）、英國體操選手、Kendall Street Company 成員——以 type／area／life-span 定，不看 score（第 250 條）；Discogs 寫成「Louis Smith (2)」。年份：MB 1958、Discogs master 1958、維基「March/April 1958」、jazzdisco 1958，一致；⚠ Apple 724944894 標 1957-01-01（placeholder，第 484 條）。⚠ 原始錄音是替 Transition 錄的（維基），但 Transition 從未出版、首發就是 Blue Note，`label` 照 Blue Note、正文可寫母帶來自 Transition。軌數：原盤 6 軌，RVG 2008 亦 6 軌（Apple RVG 條目 7 軌，多一 bonus）。⚠ 同組 Smithville（98123987）是他第二張也是最後一張，risk 互指、各算一張。Apple us `search` 一種查法命中 724944894（RVG Edition，7 軌），只是觀察（第 254 條）。CAA：RG 層有封面（4 圖、front，來源 release 42c915d1 即 1958 原盤）。",
+  "mbNote": "釘 release-group 56e0f88c-3592-3f90-ae2c-2ac1a294f446。回問 release-group 端點（inc=artist-credits+releases）：title「Here Comes Louis Smith」、artist-credit「Louis Smith」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點（inc=media+labels）：42c915d1（1958 US 12\" Vinyl 6 軌，Blue Note BLP 1584，原盤）、bd2cf8b7（1996 US CD 6 軌，CDP 7243 8 52438 2 0，barcode 724385243820）、555956e8（2008 US CD 6 軌，50999 5 14381 2 8｜BMG Direct D173120）、100bb7c4（2008 CD 6 軌，同 catno，barcode 5099951438128）。藝人 MBID 1f35fe85-b9ee-4535-9c21-c7c2d185369f（Louis Smith，Person，US，「US jazz trumpeter」，1931-05-20～2016-08-20）。錄音 1958-02-04／02-09（維基，原為 Transition 錄製）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Smithville；Louis Smith Smithville",
+  "reissuedBy": "Blue Note CD 58289（2008-05-13 US，8 軌，含 3 首 bonus）／Music Matters 45 轉 MM-BLP-1594（2010 US）／JP BLP 1594（1984 東芝）、BN 1594（1991）",
+  "artist": "Louis Smith",
+  "album": "Smithville",
+  "year": 1958,
+  "label": "Blue Note BLP 1594（US 1958 12\" Vinyl 5 軌）；CD 58289（US 2008-05-13，8 軌）",
+  "why": "1958 年 3 月 30 日 Hackensack 錄音、同年出版的 Louis Smith 第二張也是最後一張領銜盤：Charlie Rouse 次中音、Sonny Clark 鋼琴、Paul Chambers 貝斯、Art Taylor 鼓，五軌長曲裡標題曲〈Smithville〉與〈Wetu〉是他自作、〈Embraceable You〉〈There Will Never Be Another You〉兩首標準曲撐起 B 面，AllMusic 評「一流硬咆勃、值得更廣流通」（維基「Smithville」條目；Discogs master 406398 BLP 1594；jazzdisco 1500 系列索引 1958）。實掃池中 Louis Smith 掛名零張、Charlie Rouse 以 sideman 出現的 1958 Blue Note 盤池中也沒有——與同組 Here Comes Louis Smith 一起補齊他整個領銜目錄（兩張），也是 Sonny Clark 1958 年在 Blue Note 密集當 sideman 那一年的其中一場（同組 Cliff Craft、Lou Takes Off、Two Bones、Minor Move 同型）。",
+  "risk": "新掛名 `Louis Smith` 同上一筆（MB 1f35fe85，US jazz trumpeter），池中零張、無同字串不同人。年份：MB 1958、Discogs master 1958、維基 1958、jazzdisco 1958，一致；Apple 716613744 標 1958-03-30（＝錄音日 placeholder）。軌數兩說：原 LP 5 軌，2008 CD 8 軌（加 3 首同場 bonus），Apple 亦 8 軌——行文以 5 軌為準、店面版「前 5 軌對應原盤」（c-130 Perfect 先例）。⚠ 同組 Here Comes Louis Smith（56e0f88c）互指，各算一張；正文不得把兩張寫成同場（2 月與 3 月是不同場、不同鋼琴／貝斯）。Apple us `search` 一種查法命中 716613744（8 軌），只是觀察（第 254 條）。CAA：RG 層有封面（4 圖、front，來源 release de7069eb 即 1958 原盤）。",
+  "mbNote": "釘 release-group 98123987-a057-43a0-ad60-3b3a52f70763。回問 release-group 端點（inc=artist-credits+releases）：title「Smithville」、artist-credit「Louis Smith」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：de7069eb（1958 US 12\" Vinyl 5 軌，Blue Note BLP 1594，原盤）、3c13fe77（2008-05-13 US CD 8 軌，Blue Note 58289）。藝人 MBID 1f35fe85-b9ee-4535-9c21-c7c2d185369f（Louis Smith，Person，US jazz trumpeter）。錄音 1958-03-30 Hackensack（維基）。對照組（不釘）：56e0f88c《Here Comes Louis Smith》（同組另一筆）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Cliff Craft；Cliff Jordan Cliff Craft；Clifford Jordan Cliff Craft",
+  "reissuedBy": "Blue Note CD CDP 7243 8 56584 2 6（1997 US）／JP TOCJ-1582（1996-12-21）、TOCJ-9158（1999-11-26）／數位 2019-03-15（barcode 0602577538063）／Classic Vinyl 5880784（2024-07-19 XW 12\" Vinyl，barcode 602458807844）",
+  "artist": "Clifford Jordan",
+  "album": "Cliff Craft",
+  "year": 1958,
+  "label": "Blue Note BLP 1582（US 1958-03 12\" Vinyl 6 軌）；1997 US CD CDP 7243 8 56584 2 6（6 軌，barcode 724385658426）；Classic Vinyl 5880784／BST 81582（XW 2024-07-19，6 軌）",
+  "why": "1957 年 11 月 10 日 Hackensack 錄音、1958 年 3 月出版的 Clifford Jordan 第三張 Blue Note 領銜盤：Art Farmer 小號、Sonny Clark 鋼琴、George Tucker 貝斯、Louis Hayes 鼓，六軌裡〈Laconia〉〈Soul-Lo Blues〉〈Cliff Craft〉是他自作、〈Confirmation〉〈Anthropology〉兩首 Parker 曲加一首 Ellington〈Sophisticated Lady〉（Farmer 缺席），2024 年 Blue Note Classic Vinyl 系列重發（維基「Cliff Craft」條目；Discogs master 315467 BLP 1582；jazzdisco 1500 系列索引 1958）。實掃池中 Clifford Jordan 掛名 1 張（Glass Bead Games 1974）＋ `Clifford Jordan Quartet` 1 張（Repetition 1984），c-136 b 組補 1957 的《Cliff Jordan》（BLP 1565）與聯名《Blowing in From Chicago》——**他 1957–58 在 Blue Note 連出的三張本卡是收尾的那張**，補上後 1500 系列裡 Jordan 領銜三張全齊。",
+  "risk": "⚠ 掛名：MB RG credit 是「Cliff Jordan」（credited-name，實體 018b4cb3 是 Clifford Jordan），照 c-136 第 482 條 BLP 1565 的先例掛池中 `Clifford Jordan`（1 張＋Quartet 1 張），「Cliff Jordan」進 queryAlias；與 c-136 b 的聯名卡 `Cliff Jordan & John Gilmore` 不算分裂（第 482 條已記）。年份：MB 1958-03（原盤帶月）、Discogs master 1958、維基 1958、jazzdisco 1958，一致；Apple 1455398125 標 1957-12-01（placeholder，第 484 條）。軌數：全部版本 6 軌。⚠ Sonny Clark 同組五張 sideman（本張、Lou Takes Off、Smithville、Two Bones、Minor Move），正文各寫各的。Apple us `search` 一種查法命中 1455398125（6 軌，掛「Cliff Jordan」），只是觀察（第 254 條）。CAA：RG 層有封面（2 圖、front，來源 release 25506894 即 1958 原盤）。",
+  "mbNote": "釘 release-group a54e9109-a772-46b0-8ccc-c6efd0097a65。回問 release-group 端點（inc=artist-credits+releases）：title「Cliff Craft」、artist-credit「Cliff Jordan」（實體 018b4cb3-12fb-4cf5-8dd6-aaaf792489ad Clifford Jordan，Person）、first-release-date 1958-03、primary-type Album、secondary-types 空、轄下 6 個 release。release 端點（inc=media+labels）：25506894（1958-03 US 12\" Vinyl 6 軌，Blue Note BLP 1582，原盤）、04b05d7c（1996-12-21 JP CD 6 軌，TOCJ-1582／BN-1582）、6e709e05（1997 US CD 6 軌，CDP 7243 8 56584 2 6）、2747fcf6（1999-11-26 JP CD，TOCJ-9158，credit「Clifford Jordan」）、9fcfc2e3（2019-03-15 Digital 6 軌，barcode 0602577538063，credit「Clifford Jordan」）、d30ab0de（2024-07-19 XW 12\" Vinyl 6 軌，5880784／BST 81582／ST-81582，barcode 602458807844）。錄音 1957-11-10 Hackensack（維基）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Blues in Trinity；Blues In Trinity；Dizzy Reece Blues in Trinity",
+  "reissuedBy": "Blue Note Connoisseur CD CDP 7243 8 32093 2 3（1995-07-18 US，8 軌，含 2 首 bonus）／JP TOCJ-9181（2000）、TOCJ-6578（2005-09-22）／Tone Poet BST 84006（2025-02-07 XW 12\" Vinyl，barcode 602455187598）",
+  "artist": "Dizzy Reece",
+  "album": "Blues in Trinity",
+  "year": 1959,
+  "label": "Blue Note BLP 4006（US 1959 12\" Vinyl 6 軌，1959 年 6 月上旬出版）；Connoisseur CD CDP 7243 8 32093 2 3（US 1995-07-18，8 軌）；Tone Poet 84006（XW 2025-02-07，6 軌）",
+  "why": "1958 年 8 月 24 日在倫敦 Decca 錄音室錄的 Blue Note 盤——Lion 時期唯一一張不在 Van Gelder 手上錄的正規目錄盤，由英國 Tempo 廠的 Tony Hall 監製：牙買加出身、倫敦活動的小號手 Dizzy Reece 領銜，Donald Byrd 第二小號、Tubby Hayes 次中音、Terry Shannon 鋼琴、Lloyd Thompson 貝斯、Art Taylor 鼓，六軌裡〈Blues in Trinity〉〈Close-Up〉〈Color Blind〉是 Reece 自作，Byrd 與 Taylor 是隨 Birdland 巡演團在歐洲時被拉進來的，2025 年進 Tone Poet 系列（維基「Blues in Trinity」條目；Discogs master 224435 BLP 4006；jazzdisco 4000 系列索引 1959）。實掃池中 Dizzy Reece 掛名零張——他 1958–1962 在 Blue Note 領銜四張（4006／4017 Star Bright／4023 Soundpost／4033 Comin' On），池中一張都沒有，本張是 4000 系列開端（4001–4010）裡唯一的英國錄音，也是 Tubby Hayes 在 Blue Note 唯一的錄音。",
+  "risk": "⚠ **年份改判 1958→1959**：enum／MB first-release-date 1958（release e07397b4 標 1958 無月日）、Discogs master 224435 亦標 1958，但 **維基 infobox「Early June 1959」引 Billboard 1959-06-15、jazzdisco 4000 系列目錄頁 BLP 4006 = 1959**，且 4003（Moanin'）1959-01、4007（Off to the Races）1959-03 都是 1959 年出版，4006 落在 1958 年不合目錄順序；MB／Discogs 的 1958 是錄音年形（第 364 條），取 1959，正文寫「1958 年 8 月倫敦錄音、1959 年出版」。⚠ 新掛名 `Dizzy Reece`：池中零張，反查無同字串不同人（第 307 條）；MB 實體 cbde4132 是 Person、area Jamaica、「Jazz trumpet player」、1931-01-05 生，MB 另有 Dizzy Reece Quartet／Quintet 群組實體（82／81 分）不收攏進來。軌數兩說：原 LP 6 軌，1995 CD 8 軌（加〈Eboo〉〈Just a Penny〉bonus），Apple 1357298626 亦 8 軌——行文以 6 軌為準、店面「前 6 軌對應原盤」。錄音地點是倫敦 Decca Studios、不是 Hackensack（維基特別註明），正文不得寫 Van Gelder。Apple us `search` 一種查法命中 1357298626（8 軌、標 1959-06-16——與 Billboard 六月一致但店面日期不能當來源），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release e07397b4 即原盤）。",
+  "mbNote": "釘 release-group f2deafa8-150c-4d9f-93e3-614e1310d958。回問 release-group 端點（inc=artist-credits+releases）：title「Blues in Trinity」、artist-credit「Dizzy Reece」、first-release-date 1958（錄音年形，見 risk）、primary-type Album、secondary-types 空、轄下 5 個 release。release 端點（inc=media+labels）：e07397b4（1958 US 12\" Vinyl 6 軌，Blue Note BLP 4006，原盤）、50f9ea3e（1995-07-18 US CD 8 軌，CDP 7243 8 32093 2 3，barcode 724383209323）、f5cbaad0（2000 JP CD 6 軌，TOCJ-9181／ST-4006）、97d9fb1f（2005-09-22 JP CD 6 軌，TOCJ-6578）、a73a67c1（2025-02-07 XW 12\" Vinyl 6 軌，84006／BST 84006／ST-84006，barcode 602455187598，Tone Poet）。藝人 MBID cbde4132-ce04-4368-b859-22c440f23961（Dizzy Reece，Person，Jamaica，1931–）。錄音 1958-08-24 London Decca Studios（維基）；出版 1959-06 依 Billboard 1959-06-15 與 jazzdisco。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Three Sounds Vol.2；The Three Sounds Vol. 2；Introducing the Three Sounds, Vol. 2；Introducing the 3 Sounds Volume 2",
+  "reissuedBy": "無獨立再發；六軌全部併入《Introducing the 3 Sounds》CD 的 bonus（1989 JP CJ28-5132「Plus 6」、之後各版 CD）",
+  "artist": "The Three Sounds",
+  "album": "Introducing The Three Sounds, Volume 2",
+  "year": 1985,
+  "label": "Blue Note BNJ 61019（JP 1985 12\" Vinyl 6 軌，東芝EMI「The Other Side of Blue Note 1500 Series」，世界首發；MB 登錄 catno 為「J61019」）",
+  "why": "1958 年 9 月 16 日 Hackensack 那場《Introducing the 3 Sounds》錄音剩下的六軌（〈Bobby〉〈Mo-Ge〉〈It Might as Well Be Spring〉〈Soft Touch〉〈Don't Get Around Much Anymore〉＋〈Goin' Home〉alternate take），Blue Note 1958 年沒用、1985 年由東芝EMI 以 BNJ 61019 在「The Other Side of Blue Note 1500 Series」首發成一張獨立 LP：Gene Harris 鋼琴、Andrew Simpkins 貝斯、Bill Dowdy 鼓的原始三重奏，是他們在 Blue Note 第一場錄音的完整下半（維基「Introducing the 3 Sounds」條目寫明 CD bonus「originally issued in Japan as Introducing the 3 Sounds Volume 2」；Discogs master 2471350 BNJ 61019；MB release 69c52708）。實掃池中 The Three Sounds 掛名 1 張：Introducing the Three Sounds 1958（Vol. 1）——本張是同一場的另一半，MB 分建 RG、依簡報一.6／第 453 條 (b) 型各算一張，`risk` 互指；同組 Bottoms Up! 1959 補他們第二張。",
+  "risk": "⚠ **年份改判 1958→1985、首發國日本**：enum／MB first-release-date 1958-09-16 是錄音日 placeholder（MB 唯一那筆 release 69c52708 標 1958-09-16、catno「J61019」）；Discogs 以 catno 反查是 **BNJ 61019，1985 年日本東芝EMI「The Other Side Of Blue Note 1500 Series」限定盤**（master 2471350，正式與 promo 兩條目），MB 把 catno 打掉「BN」前綴、把錄音日當出版日——本層不改 MB，卡單 `label` 寫 BNJ 61019、year 1985。⚠ 盤名：MB RG title「Introducing The Three Sounds, Volume 2」，Discogs 封面題「The Three Sounds Vol.2」、維基寫「Introducing the 3 Sounds Volume 2」——本卡照 MB，兩種進 queryAlias（第 483 條同形），研究層以 BNJ 61019 盤面定。⚠ **內容形狀**：這六軌 1989 年起全部併成 Vol. 1 CD 的 bonus，店面沒有獨立條目（Apple us `search` 一種查法零命中、回的是無關結果——只是觀察，第 254 條；研究層可看 Vol. 1 的擴充版是否「後 6 軌對應本盤」）。**正文不得寫成 1958 年出版、不得寫成另一場錄音**（9 月 16／18 日兩天的 Vol. 1 場次同一批）；Vol. 1 在池中（seed 1958），互指。掛名照池中 `The Three Sounds`（1 張），MB credit 同字串（實體 cf2115e9 Group，US，1956–）；Discogs 用「The 3 Sounds」變體不採。CAA：RG 層有封面（1 圖、front，來源 release 69c52708——應是 BNJ 61019 封面，研究層看版式）。",
+  "mbNote": "釘 release-group b594f1ab-5417-4bd3-989c-cbd23a9b1ac2。回問 release-group 端點（inc=artist-credits+releases）：title「Introducing The Three Sounds, Volume 2」、artist-credit「The Three Sounds」、first-release-date 1958-09-16（錄音日 placeholder）、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels+recordings）：69c52708（1958-09-16 US Official Vinyl 6 軌，Blue Note「J61019」，packaging Cardboard/Paper Sleeve，無 annotation、無 url-rels），軌目：Bobby 4:26／Mo-Ge 4:23／It Might as Well Be Spring 6:34／Soft Touch 3:43／Don't Get Around Much Anymore 4:39／Goin' Home (alternate take) 5:38。Discogs 以 catno 反查：BNJ 61019，1985 JP 東芝EMI，master 2471350（release 21803692 正式、6039646 promo）。藝人 MBID cf2115e9-fa60-4561-8b6e-f72d34ad800e（The Three Sounds，Group，US）。對照組（不釘）：8e790450《Introducing the Three Sounds》（Vol. 1，BLP 1600，1958-12，池中）。錄音 1958-09-16 Hackensack。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz",
+   "pop"
+  ],
+  "queryAlias": "Things Are Swingin’；Things Are Swingin；Peggy Lee Things Are Swingin'",
+  "reissuedBy": "Capitol Jazz／Blue Note CD 724359707129（2004-04-20 US，14 軌，含 2 首 bonus）與同日數位版（barcode 724359707150）／Pathé Marconi EMI EMS 1139（1985 GB／FR 12\" Vinyl）／World Record Club TP 617（1966 GB）",
+  "artist": "Peggy Lee",
+  "album": "Things Are Swingin'",
+  "year": 1958,
+  "label": "Capitol T 1049（US 1958 12\" Vinyl 12 軌，mono；立體聲 ST 1049 同年）；2004-04-20 Capitol Jazz／Blue Note CD 724359707129（US，14 軌）",
+  "why": "1958 年 5 月 19–30 日好萊塢錄音、Capitol 同年以 T 1049／ST 1049 出版的 Peggy Lee 搖擺盤：Jack Marshall 編曲指揮，Pete Candoli、Conrad Gozzo 小號、Milt Bernhart 長號、Howard Roberts／Barney Kessel 吉他、Joe Mondragon 貝斯、Shelly Manne 鼓的西岸錄音室班底，十二軌全部兩三分鐘的短曲，〈Alright, Okay, You Win〉〈It's a Good, Good Night〉〈Things Are Swingin'〉（Lee／Marshall 自作）是她 1957 年回 Capitol 之後最緊的一組大樂團演唱（維基「Things Are Swingin'」條目；Discogs master 419198 T 1049；MB release e9680815）。實掃池中 Peggy Lee 掛名 1 張：Black Coffee 1953（jazz／pop）——她 1957–1969 第二段 Capitol 時期池中零張，本張補這一段最常被當爵士人聲入門的一張；`genres` 照池中 Black Coffee 先例掛 jazz＋pop。",
+  "risk": "⚠ **原盤他廠**：Blue Note 的關聯只有 2004-04-20 那筆數位版把 label-info 同時掛「Blue Note｜Capitol Jazz」（同日 CD 只掛 Capitol Jazz），原盤是 **Capitol T 1049（1958）**，enum 的「BN 首發 2004、原盤可能他廠」成立——依簡報一.3 `label` 寫 Capitol、`year` 取 1958，Blue Note 只是 EMI 體系內 2004 年 Capitol Jazz 系列的數位掛名；這不是 c-136 第 480 條 Birks' Works 那種掛錯 RG 的假陽性（這筆 release 確實是本盤），但**也不是 Blue Note 目錄本體**，主線若判 Capitol 人聲盤不歸這條線可退、可逆。年份：MB first-release-date 1958（兩筆 Capitol 原盤 T 1049／ST 1049 都標 1958）、Discogs 原盤條目 4672584 標 1958（另有 1959 repress 13495341）、Apple 715591427 標 1958-11-03；**維基 infobox 寫 1959**——一年歧義照第 364 條取 MB／Discogs 的 1958，1959 說寫進 risk 供研究層以 Billboard 同期廣告核。⚠ 盤名撇號：MB RG title 用 U+2019「Swingin’」，本卡照池中慣例（Moanin'／Walkin' 皆 ASCII）改 ASCII 撇號，U+2019 版進 queryAlias——研究層若要照 MB 逐字可改，不影響 MBID。掛名照池中 `Peggy Lee`（1 張），MB credit 同字串（實體 5a2463af Person）。軌數兩說：原 LP 12 軌，2004 CD／數位 14 軌（加 2 首 bonus），行文以 12 軌為準、店面「前 12 軌對應原盤」。Apple us `search` 一種查法命中 715591427（14 軌），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release 5654ae90 即 1958 ST 1049 原盤）。",
+  "mbNote": "釘 release-group 23ce1ba4-a879-3a2f-ae0a-a926fb6ac64a。回問 release-group 端點（inc=artist-credits+releases）：title「Things Are Swingin’」（U+2019）、artist-credit「Peggy Lee」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 10 個 release。release 端點（inc=media+labels）：e9680815（1958 US 12\" Vinyl 12 軌，Capitol Records T 1049，原盤 mono）、5654ae90（1958 US 12\" Vinyl 12 軌，Capitol ST 1049 立體聲）、3e64c52b／7111829e（1966 GB World Record Club TP 617 LP／TTP 617 盤帶）、bee0a58c／29a5c91c（1985 FR Pathé Marconi EMI 1566191 LP／1566194 卡帶）、f323711f／e7d158f8（1985 GB EMS 1139 LP／TCEMS 1139 卡帶）、5ec1c658（2004-04-20 US CD 14 軌，Capitol Jazz，barcode 724359707129）、3916ef1a（2004-04-20 XW Digital 14 軌，label-info「Blue Note｜Capitol Jazz」，barcode 724359707150——enum 把本盤算進 Blue Note 目錄的唯一依據）。藝人 MBID 5a2463af-eef0-4a22-bc8f-5865fbe9c78e（Peggy Lee，Person，US）。錄音 1958-05-19～30（維基）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Great Jazz Standards；The Gil Evans Orchestra Great Jazz Standards；Gil Evans Orchestra Featuring Johnny Coles Great Jazz Standards",
+  "reissuedBy": "Pacific Jazz CD CDP 7 46856 2（1988 US，7 軌）／Blue Note Tone Poet B0034361-01（2023-05-05 XW 12\" Vinyl，barcode 602438568369）與同日數位（barcode 602455544339）／UCCQ-9784（2024-12-18 JP HQCD）／JP GXF-3034（1979）",
+  "artist": "Gil Evans",
+  "album": "Great Jazz Standards",
+  "year": 1959,
+  "label": "World Pacific WP-1270（US 1959-09 12\" Vinyl 7 軌，mono；MB 登錄 label 為 Pacific Jazz）；Pacific Jazz CD CDP 7 46856 2（US 1988）；Blue Note Tone Poet B0034361-01（XW 2023-05-05，7 軌）",
+  "why": "1959 年初紐約兩組人員錄的 Gil Evans 樂團盤、World Pacific 同年 9 月以 WP-1270 出版：Johnny Coles 小號主奏、Steve Lacy 高音薩克斯、Curtis Fuller／Jimmy Cleveland 長號、Budd Johnson 單簧管與次中音、Ray Crawford 吉他、Elvin Jones 鼓，七軌全是別人的曲子——〈Davenport Blues〉（Beiderbecke）〈Straight, No Chaser〉〈Joy Spring〉〈Django〉〈Chant of the Weed〉——加一首他自己的〈La Nevada〉初版，是他在 New Bottle Old Wine 之後、Out of the Cool 之前唯一一張自己名下的樂團作（維基「Great Jazz Standards」條目；Discogs master 343861 WP-1270；MB release 03765dd9）。實掃池中 Gil Evans 掛名 6 張：Gil Evans & Ten 1957、New Bottle Old Wine 1958、Out of the Cool 1961、The Individualism of Gil Evans 1964、Svengali 1973、Plays the Music of Jimi Hendrix 1974——**1958 與 1961 之間就缺這一張**，補上後他 1957–1964 的四張樂團盤連成一線；也是 Steve Lacy 早期最重要的 sideman 錄音之一。",
+  "risk": "⚠ **原盤他廠**：enum note「BN 首發 2023、原盤可能他廠」成立——原盤是 **World Pacific WP-1270（1959-09）**，Blue Note 只是 2023 年 Tone Poet 再發方（release df567d56 同時掛 Blue Note／World Pacific，沿用 WP-1270 號），與 c-135 第 455 條 Konitz／Mulligan（Pacific Jazz → Tone Poet）同型：`label` 寫 World Pacific、`year` 1959。⚠ 廠牌名：MB 1959 原盤 release 登錄 label「Pacific Jazz」、Discogs 全部條目寫「World Pacific Records」（Pacific Jazz 1958 年改名 World Pacific，WP-1270 是改名後的號），正文寫 World Pacific、Pacific Jazz 只在再發脈絡提。掛名：MB RG credit「Gil Evans」（Person 83b1d510），但 2023 數位版 credit「The Gil Evans Orchestra」、Tone Poet 黑膠 credit「Gil Evans Orchestra Featuring Johnny Coles」、Discogs／封面亦「The Gil Evans Orchestra Featuring Johnny Coles」——照池中 `Gil Evans`（6 張，含 MB 同掛 Orchestra 的 Plays the Music of Jimi Hendrix）收攏（第 363 條第二型），樂團字串進 queryAlias。年份：MB 1959-09、Discogs master 1959、維基「September 1959」，一致；Apple 1684860787 標 1959-09-01。軌數：全部版本 7 軌。Apple us `search` 一種查法命中 1684860787（掛「The Gil Evans Orchestra」，7 軌），只是觀察（第 254 條）。CAA：RG 層有封面（2 圖、front，來源 release 0b839779 1988 CD，非原盤圖——研究層看版式；Discogs 4872150 有 WP-1270 封面）。",
+  "mbNote": "釘 release-group 7359fcf1-60cd-406c-a3e9-88c5f1629f46。回問 release-group 端點（inc=artist-credits+releases）：title「Great Jazz Standards」、artist-credit「Gil Evans」、first-release-date 1959-09、primary-type Album、secondary-types 空、轄下 5 個 release。release 端點（inc=media+labels）：03765dd9（1959-09 US 12\" Vinyl 7 軌，label 登錄 Pacific Jazz WP 1270——實為 World Pacific，原盤）、0b839779（1988 US CD 7 軌，Pacific Jazz CDP 7 46856 2，barcode 077774685627）、df567d56（2023-05-05 XW 12\" Vinyl 7 軌，Blue Note B0034361-01｜World Pacific WP-1270，barcode 602438568369，credit「Gil Evans Orchestra Featuring Johnny Coles」，Tone Poet）、95d5eb0d（2023-05-05 XW Digital 7 軌，Blue Note，barcode 602455544339，credit「The Gil Evans Orchestra」）、c412685e（2024-12-18 JP HQCD 7 軌，UCCQ-9784）。藝人 MBID 83b1d510-c4ae-485b-91bf-c69b63044dd6（Gil Evans，Person）。錄音 1959 年初 New York（維基，兩組人員；第 2／5 軌 Denis Charles 鼓、其餘 Elvin Jones）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Off to the Races；Off To The Races；Donald Byrd Off to the Races",
+  "reissuedBy": "Blue Note RVG Edition CD 0946 3 62658 2 7（2006-09-12 US／XE，6 軌）／JP TOCJ-4007（1993-05-26）、TOCJ-9050（1998）、TOCJ-7055（2007）、UCCQ-9104（2015）／JP 黑膠 DBLP-023（2012-06-13）／DOL DOL884H（2016 XE）",
+  "artist": "Donald Byrd",
+  "album": "Off to the Races",
+  "year": 1959,
+  "label": "Blue Note BLP 4007（US 1959-03 12\" Vinyl 6 軌）；1966 立體聲 BST 84007；RVG CD 0946 3 62658 2 7（US 2006-09-12，6 軌，barcode 094636265827）",
+  "why": "1958 年 12 月 21 日 Hackensack 錄音、1959 年 3 月出版（Billboard 1959-03-30 評）的 Donald Byrd 第一張 Blue Note 領銜盤，也是 4000 系列開頭十號之一：Jackie McLean 中音、Pepper Adams 上低音、Wynton Kelly 鋼琴、Sam Jones 貝斯、Art Taylor 鼓，六軌裡〈Sudwest Funk〉〈Off to the Races〉〈Down Tempo〉是 Byrd 自作、〈Paul's Pal〉是 Rollins 曲，Byrd–Adams 前線從這張起延續到 1961（維基「Off to the Races」條目；Discogs master 38988 BLP 4007；jazzdisco 4000 系列索引 1959）。實掃池中 Donald Byrd 掛名 14 張：Byrds Eye View 1955、The Young Bloods 1956、Jazz Lab 1958、Byrd in Hand 1959、Fuego 1960、At the Half Note Cafe Vol. 1 1961、A New Perspective 1963、Free Form 1966、Ethiopian Knights 1972、Black Byrd 1973、Street Lady 1973、Places and Spaces 1975、Stepping Into Tomorrow 1975、Caricatures 1976，c-136 a 組另補 1957 Byrd Blows on Beacon Hill——**他在 Blue Note 領銜的第一張缺席、池中 1959 只有第二張 Byrd in Hand**，本張補起點。",
+  "risk": "掛名照池中 `Donald Byrd`（14 張），MB credit 同字串（實體 69f95e5c Person）。年份：MB 1959（原盤 63914b2d 無月日）、Discogs master 1959、維基「March 1959」（Billboard 1959-03-30）、jazzdisco 1959，一致；Apple 715884399 標 1958-12-02（早於錄音日，placeholder，第 484 條）。軌數：全部版本 6 軌（RVG 亦 6 軌，無 bonus）。⚠ MB 轄下 35629db5（2009 GB Hallmark 707412）題「Down Tempo」是廉價再發改名，不是另一張碟；MB 有 16 筆 release，本組只列代表。⚠ 同批 Davis Cup（同組，Byrd 是 sideman）、Blues in Trinity（Byrd 第二小號）正文各寫各的。Apple us `search` 一種查法命中 715884399（6 軌），只是觀察（第 254 條）。CAA：RG 層有封面（4 圖、front，來源 release 63914b2d 即 1959 原盤）。",
+  "mbNote": "釘 release-group 167007be-f267-3281-a8dc-c985e1c2bdc9。回問 release-group 端點（inc=artist-credits+releases）：title「Off to the Races」、artist-credit「Donald Byrd」、first-release-date 1959、primary-type Album、secondary-types 空、轄下 16 個 release。release 端點（inc=media+labels）：63914b2d（1959 US 12\" Vinyl 6 軌，Blue Note BLP 4007，原盤）、40cbae27（1966 US BST 84007）、d38d2125（1970 US BST 84007）、cfdacde3（1975 JP BLP 4007）、cf603cf4（1978 JP GXK 8030）、89838d7b（1990-06-22 JP BN 4007，barcode 4988006645189）、7b315600（1993-05-26 JP CD TOCJ-4007）、7c5752f2（1997 XE CD BNST-84007）、75bd38c0（1998-11-26 JP CD TOCJ-9050）、2f72ec91／f38f75d9（2006 XE／2006-09-12 US CD 0946 3 62658 2 7，RVG，barcode 094636265827）、9090b566（2007 JP TOCJ-7055）、35629db5（2009 GB Hallmark 707412，題「Down Tempo」）、ca0549fb（2012-06-13 JP 12\" Vinyl DBLP-023）、6b34ce2a（2015-06-03 JP CD UCCQ-9104）、d2634c1c（2016 XE DOL DOL884H）。全部 6 軌。錄音 1958-12-21 Hackensack（維基）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Davis Cup；Walter Davis Davis Cup；Davis Cup (The Rudy Van Gelder Edition Remastered)",
+  "reissuedBy": "Blue Note RVG Edition CD 0946 3 92766 2 2（2007 XE／US 92766，6 軌）／Analogue Productions 45 轉 AP-84018（2010 US）與 Hybrid SACD CBNJ 84018 SA（2011 US，barcode 753088401862）／JP DBLP-039（2013 12\" Vinyl）",
+  "artist": "Walter Davis Jr.",
+  "album": "Davis Cup",
+  "year": 1960,
+  "label": "Blue Note BLP 4018（US 1960-06 12\" Vinyl 6 軌；MB 轄下 35a13747 那筆 1959 release 無 label／載體）；RVG CD 0946 3 92766 2 2（XE 2007，barcode 094639276622）",
+  "why": "1959 年 8 月 2 日 Englewood Cliffs 錄音、1960 年 6 月出版的 Walter Davis Jr. 出道盤，也是他在 Blue Note 唯一的領銜盤：Donald Byrd 小號、Jackie McLean 中音、Sam Jones 貝斯、Art Taylor 鼓，六軌全是 Davis 自作（〈'Smake It〉〈Loodle-Lot〉〈Sweetness〉〈Rhumba Nhumba〉〈Minor Mind〉〈Millie's Delight〉），AllMusic 評「好到讓人不解他要到 1979 年才再領銜」，Analogue Productions 2010 年選進 45 轉系列（維基「Davis Cup」條目；Discogs master 451603 BLP 4018；jazzdisco 4000 系列索引 1960）。實掃池中 Walter Davis Jr. 掛名零張——這位 Bud Powell 系鋼琴手（Jazz Messengers 1959 年成員、後來 Sonny Rollins／Archie Shepp 的 sideman）整個目錄池中沒有，本張是 4000 系列開端裡少數「一位一張」的原創六軌盤，也是 Byrd–McLean 前線在 1959 年的另一場（同組 Off to the Races 同型）。",
+  "risk": "⚠ **年份改判 1959→1960**：enum／MB first-release-date 1959 來自 35a13747 那筆「1959、無 label、無載體、3+3 軌」的殘缺 release；Discogs master 451603 標 1959，但 **維基 infobox「June 1960」（Schwann Stereo Record Guide 1966）、jazzdisco 4000 系列目錄頁 BLP 4018 = 1960**，且 4017（Star Bright）、4019（Swing Swang Swingin'）、4022（Profile）都是 1960 年出版，4018 落在 1959 不合目錄順序——取 1960，正文寫「1959 年 8 月錄音、1960 年出版」；Discogs 1959 說寫進 risk。⚠ enum note「BN 首發 2007、原盤可能他廠」**不成立**：原盤就是 Blue Note BLP 4018，MB 只是沒把原盤的 label-info 填進去（第 259 條形狀：拿不到不等於沒有），`label` 照 Blue Note。⚠ 新掛名 `Walter Davis Jr.`：池中零張，反查無同字串不同人（第 307 條）；MB 實體 98d1fb70 Person、US、「American hard bop pianist」、1932–1990；MB 另有藍調鋼琴手 Walter Davis（1912，100 分）——不同字串（無 Jr.），不撞；Apple 掛「Walter Davis」（715968347）與「Walter Davis, Jr.」（159916643）兩種，都進 queryAlias。軌數：全部版本 6 軌（AP 45 轉拆 3+3）。Apple us `search` 一種查法命中 715968347（RVG 版，6 軌、標 1960-06-01——與維基六月一致但店面日期不能當來源），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release 80b19abc 2007 RVG CD，非原盤圖——研究層看版式；Discogs 1248453 有 BLP 4018 封面）。",
+  "mbNote": "釘 release-group 1950a8b8-625d-43d0-80b3-441049b8ad08。回問 release-group 端點（inc=artist-credits+releases）：title「Davis Cup」、artist-credit「Walter Davis Jr.」、first-release-date 1959（見 risk，實為 1960）、primary-type Album、secondary-types 空、轄下 5 個 release。release 端點（inc=media+labels）：35a13747（1959，無國別、無 status、兩面各 3 軌、無 label-info——原盤 BLP 4018 的殘缺登錄）、80b19abc（2007-08-28 US CD 6 軌，Blue Note 92766，RVG）、a2bb85dd（2007 XE CD 6 軌，0946 3 92766 2 2，barcode 094639276622）、7ee86954（2010 US 12\" Vinyl 3+3 軌，Analogue Productions AP-84018）、579fe15f（2011 US Hybrid SACD 6 軌，Blue Note BST 84018｜Analogue Productions CBNJ 84018 SA，barcode 753088401862）。藝人 MBID 98d1fb70-7ada-46fa-930b-5d34a371947e（Walter Davis Jr.，Person，US，1932-09-02～1990-06-02）。錄音 1959-08-02 Englewood Cliffs（維基）；出版 1960-06 依維基（Schwann）與 jazzdisco。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Walkin' & Talkin'；Walkin' and Talkin'；Walkin' And Talkin'；Bennie Green Walkin' & Talkin'",
+  "reissuedBy": "東芝EMI CD TOCJ-4010／ST-84010（1993-05-26 JP，6 軌，題「Walkin' and Talkin'」）／Rat Pack Records（2021 UK＆EU 12\" Vinyl）",
+  "artist": "Bennie Green",
+  "album": "Walkin' & Talkin'",
+  "year": 1959,
+  "label": "Blue Note BLP 4010（US 1959-05 12\" Vinyl 6 軌）；JP CD TOCJ-4010（東芝EMI 1993-05-26，barcode 4988006682962）",
+  "why": "1959 年 1 月 25 日 Hackensack 錄音、同年 5 月出版（Billboard 1959-05-25 評）的 Bennie Green 第三張也是最後一張 Blue Note 領銜盤：Eddie Williams 次中音、Gildo Mahones 鋼琴、George Tucker 貝斯、Al Dreares 鼓，六軌裡〈Walkin' and Talkin'〉近九分鐘的藍調是全碟核心，〈The Shouter〉〈Green Leaves〉〈Hoppin' Johns〉三首原創加兩首標準曲，AllMusic 評「與前兩張同樣滿足、溫暖友善的長號音色」（維基「Walkin' & Talkin'」條目；Discogs master 582210 BLP 4010；jazzdisco 4000 系列索引 1959）。實掃池中 Bennie Green 掛名 1 張：Soul Stirrin' 1958（BLP 1599）——他 1958–1959 在 Blue Note 的三張（1587 Back on the Scene、1599、4010）池中只有中間那張，本張補結尾；也是 4000 系列開端裡少數以長號領銜的盤，與同組 Two Bones 一起把 1958–59 的 Blue Note 長號線補起來。",
+  "risk": "掛名照池中 `Bennie Green`（1 張），MB credit 同字串（實體 95a203ad Person、US、jazz trombonist、1923–1977）。⚠ 盤名：MB RG title 用「&」，1993 JP CD 與 Discogs 寫「and」——本卡照 MB，`&`／`and` 兩種進 queryAlias；`chk-prop` 折疊鍵已把 & 換 and 所以不會漏比。年份：MB 1959、Discogs master 1959、維基「May 1959」（Billboard）、jazzdisco 1959，一致；Apple 1356260561 標 1959-01-25（＝錄音日 placeholder）。軌數：全部版本 6 軌。⚠ MB 這個 RG 只有 2 筆 release（原盤＋1993 JP CD），美國 CD 從未單獨發（只在 Mosaic Select 全集）——研究層找第二來源以 Discogs 1108769 盤面為準。Apple us `search` 一種查法命中 1356260561（6 軌），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release 3f13812c 即 1959 原盤）。",
+  "mbNote": "釘 release-group 56eb87f5-b6de-4808-9439-a870af690f7a。回問 release-group 端點（inc=artist-credits+releases）：title「Walkin' & Talkin'」、artist-credit「Bennie Green」、first-release-date 1959、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：3f13812c（1959 US 12\" Vinyl 6 軌，Blue Note BLP 4010，原盤）、487c4f68（1993-05-26 JP CD 6 軌，Blue Note TOCJ-4010｜ST-84010，barcode 4988006682962，title「Walkin' and Talkin'」）。藝人 MBID 95a203ad-8b9c-4524-9787-235bde1b0413（Bennie Green，Person，US，1923-04-16～1977-03-23）。錄音 1959-01-25 Hackensack（維基）；出版 1959-05（Billboard 1959-05-25）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Bottoms Up!；Bottoms Up；The 3 Sounds Bottoms Up!",
+  "reissuedBy": "東芝EMI CD TOCJ-8592（2009-09-16 JP，8 軌）／Analogue Productions Hybrid SACD CBNJ 84014 SA（2010-06-08，barcode 753088401466）",
+  "artist": "The Three Sounds",
+  "album": "Bottoms Up!",
+  "year": 1959,
+  "label": "Blue Note BLP 4014（US 1959 12\" Vinyl 8 軌；MB 登錄 catno 為 BST 4014）；JP CD TOCJ-8592（2009-09-16，barcode 4988006875326）；Analogue Productions SACD CBNJ 84014 SA（2010）",
+  "why": "1959 年 2 月 11 日 Hackensack 錄音、同年出版的 The Three Sounds 第二張 Blue Note 盤：Gene Harris 鋼琴、Andrew Simpkins 貝斯、Bill Dowdy 鼓的原始三重奏，八軌裡〈Bésame Mucho〉〈Bottoms Up〉〈Time After Time〉那種帶福音味的輕搖擺，是他們接下來六年在 Blue Note 出十幾張的模板，Analogue Productions 2010 年把它做進 SACD 系列（Discogs master 300531 BLP 4014；jazzdisco 4000 系列索引 1959；MB release daa260d0）。實掃池中 The Three Sounds 掛名 1 張：Introducing the Three Sounds 1958（jazz／soul）——他們 1958–1962 在 Blue Note 的黃金期池中只有出道盤，本張是第二張、4000 系列開端裡最賣的鋼琴三重奏之一；同組 Volume 2（1985 出土的 Introducing 剩餘軌）與本張各算一張。",
+  "risk": "掛名照池中 `The Three Sounds`（1 張），MB credit 同字串（實體 cf2115e9 Group，US，1956–）；jazzdisco／Discogs 部分條目寫「The 3 Sounds」（封面印法），進 queryAlias。年份：MB first-release-date 1959-02-11（＝錄音日，原盤 release daa260d0 把錄音日當出版日）、Discogs master 1959、jazzdisco 1959，年一致、**月日不得引用**。⚠ catno：MB 原盤 release 登錄「BST 4014」，Discogs 原盤條目 1248412 是 mono BLP 4014（1962 repress 寫「4014」）——立體聲應為 BST 84014，MB 的 BST 4014 疑登錄錯，`label` 寫 BLP 4014。軌數：全部版本 8 軌（無 bonus）。⚠ 池中 Introducing 的 `genres` 是 jazz＋soul，本卡只掛 jazz——研究層若要與池中同步可加 soul（可逆）。Apple us `search` 一種查法命中 1362355255（8 軌、標 1959-06-07），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release daa260d0 即 1959 原盤）。",
+  "mbNote": "釘 release-group e788608b-fe2c-4893-ad31-661a7a078f79。回問 release-group 端點（inc=artist-credits+releases）：title「Bottoms Up!」、artist-credit「The Three Sounds」、first-release-date 1959-02-11（錄音日）、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：daa260d0（1959-02-11 US 12\" Vinyl 8 軌，Blue Note「BST 4014」，原盤）、a4940ea5（2009-09-16 JP CD 8 軌，TOCJ-8592，barcode 4988006875326）、4e188486（2010-06-08 GB Hybrid SACD 8+8 軌，Analogue Productions CBNJ 84014 SA，barcode 753088401466）。藝人 MBID cf2115e9-fa60-4561-8b6e-f72d34ad800e（The Three Sounds，Group）。錄音 1959-02-11 Hackensack（jazzdisco The Three Sounds 目錄）。對照組（不釘）：8e790450《Introducing the Three Sounds》（池中）、b594f1ab《Introducing The Three Sounds, Volume 2》（同組）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Profile；Duke Pearson Profile；Profile & Tender Feelin's",
+  "reissuedBy": "東芝EMI CD TOCJ-9072（1999 JP）、TOCJ-7065（2007-12-26 JP）／Blue Note 數位（XW，barcode 00602567554059，7 軌）／JP 黑膠 DBLP-019（2012）／Fresh Sound 2011 與 Tender Feelin's 合併 CD",
+  "artist": "Duke Pearson",
+  "album": "Profile",
+  "year": 1960,
+  "label": "Blue Note BLP 4022（US 1960 12\" Vinyl 7 軌）；JP CD TOCJ-9072（1999，barcode 4988006756304）；數位 Blue Note（XW，barcode 00602567554059，7 軌）",
+  "why": "1959 年 10 月 25 日 Englewood Cliffs 錄音、1960 年出版的 Duke Pearson 出道盤，鋼琴三重奏：Gene Taylor 貝斯、Lex Humphries 鼓，七軌裡〈Like Someone in Love〉〈Black Coffee〉〈Taboo〉〈Witchcraft〉五首標準曲加〈Gate City Blues〉〈Two Mile Run〉兩首自作，Ira Gitler 寫內頁——他後來是 Blue Note 1963–1971 的製作人與編曲支柱，這張是他以演奏者身分進 Blue Note 的第一步（維基「Profile」條目；Discogs master 339445 BLP 4022；jazzdisco 4000 系列索引 1960）。實掃池中 Duke Pearson 掛名 1 張：The Right Touch 1967——**他 1959–1961 的三重奏出道期（4022 Profile、4035 Tender Feelin's）池中零張**，本張補起點；美國從未單獨出 CD（只有日本），Apple 有數位版。",
+  "risk": "⚠ **年份改判 1959→1960**：enum／MB first-release-date 1959-10-29（原盤 release 9c98ad06 標 1959-10-29——與錄音日 10-25 只差四天，是 MB 把錄音期當出版日的形狀）、Apple 標 1959-10-25（＝錄音日）；**Discogs master 339445 與原盤條目 1248481 標 1960、維基 infobox 1960（引 jazzdisco）、jazzdisco 4000 系列目錄頁 BLP 4022 = 1960**，取 1960，正文寫「1959 年 10 月錄音、1960 年出版」。掛名照池中 `Duke Pearson`（1 張），MB credit 同字串（實體 ea39ae7d Person、US、1932–1980）。⚠ 盤名「Profile」是通用詞：池中另有 高柳昌行《A Jazzy Profile of Jojo》、Harold McKinney《Voices and Rhythms of the Creative Profile》，`chk-prop` 鍵含掛名所以不會誤報，但店面以盤名搜會混（第 459 條同形），研究層以 collectionId 直查。軌數：全部版本 7 軌。Apple us `search` 一種查法命中 1371789434（7 軌），只是觀察（第 254 條）。CAA：RG 層有封面（2 圖、front，來源 release 9c98ad06 即原盤）。",
+  "mbNote": "釘 release-group 83799eff-ca8d-43f0-8c0e-5a10cca9462c。回問 release-group 端點（inc=artist-credits+releases）：title「Profile」、artist-credit「Duke Pearson」、first-release-date 1959-10-29（見 risk，實為 1960）、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點（inc=media+labels）：9c98ad06（1959-10-29 US 12\" Vinyl 7 軌，Blue Note BLP 4022，原盤）、3ace4808（1999 JP CD 7 軌，TOCJ-9072，barcode 4988006756304）、cc7609c1（2007-12-26 JP CD 7 軌，TOCJ-7065，barcode 4988006854864）、cb0c8ca5（XW Digital 7 軌，Blue Note，barcode 00602567554059，無日期）。藝人 MBID ea39ae7d-5498-4f26-992b-7cf3390253ed（Duke Pearson，Person，US，1932-08-17～1980-08-04）。錄音 1959-10-25 Englewood Cliffs（維基）；出版 1960 依 Discogs 與 jazzdisco。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Time Is Right；Time Is Right；Lou Donaldson The Time Is Right",
+  "reissuedBy": "東芝EMI CD TOCJ-9163（1999-12-22 JP）、TOCJ-8561（2009-09-16 JP）／Analogue Productions Hybrid SACD CBNJ 84025 SA（2011 US／GB，barcode 0753088402562）",
+  "artist": "Lou Donaldson",
+  "album": "The Time Is Right",
+  "year": 1960,
+  "label": "Blue Note BLP 4025（US 1960-04 12\" Vinyl 7 軌）；JP CD TOCJ-9163（1999-12-22，barcode 4988006772359）；Analogue Productions SACD CBNJ 84025 SA／ST 84025（2011，7 軌）",
+  "why": "1959 年 10 月 31 日與 11 月 28 日兩場 Englewood Cliffs 錄音、1960 年 4 月上旬出版（Billboard 1960-04-18 評）的 Donaldson 盤：Blue Mitchell 小號、Horace Parlan 鋼琴貫穿兩場，10 月那場 Laymon Jackson 貝斯、Dave Bailey 鼓加 Ray Barretto 康加，11 月那場 Sam Jones 貝斯、Al Harewood 鼓——七軌是他從 Blues Walk 那種帶康加的藍調路線往 1960 年代 soul-jazz 走的過渡，美國從未單獨出 CD（只有日本與 AP 的 SACD）（維基「The Time Is Right」條目；Discogs master 533670 BLP 4025；jazzdisco 4000 系列索引 1960）。實掃池中 Lou Donaldson 掛名 8 張，1959 只有 LD+3、下一張是 1962 Gravy Train——**本張與同組 Light Foot 一起補 1960–61 這段空白**，也是 Horace Parlan 以 sideman 在 Blue Note 的早期錄音之一。",
+  "risk": "⚠ **年份改判 1959→1960**：enum／MB first-release-date 1959（原盤 release 277b7e66 標 1959 無月日，Apple 1783671069 標 1959-01-01 placeholder）；**Discogs master 533670 與原盤條目 1248490 標 1960、維基 infobox「Early April 1960」引 Billboard 1960-04-18、jazzdisco 4000 系列目錄頁 BLP 4025 = 1960**，且 11 月 28 日才錄完第二場、當年出版不合理——取 1960，正文寫「1959 年底錄音、1960 年出版」。掛名照池中 `Lou Donaldson`（8 張），MB credit 同字串。⚠ 兩場不同節奏組（維基人員表列了兩組），正文不得把 Barretto 寫成全碟都在。軌數：全部版本 7 軌。⚠ 同組 Light Foot（cda143f4，BLP 4053，1961）互指——兩張都是「錄音年與出版年錯開、MB 拿錄音年當 frd」的形狀。Apple us `search` 一種查法命中 1783671069（7 軌），只是觀察（第 254 條）。CAA：RG 層有封面（2 圖、front，來源 release 277b7e66 即原盤）。",
+  "mbNote": "釘 release-group 4e849350-2557-39a1-b37b-46663850ef51。回問 release-group 端點（inc=artist-credits+releases）：title「The Time Is Right」、artist-credit「Lou Donaldson」、first-release-date 1959（見 risk，實為 1960）、primary-type Album、secondary-types 空、轄下 5 個 release。release 端點（inc=media+labels）：277b7e66（1959 US 12\" Vinyl 7 軌，Blue Note BLP 4025，原盤）、16b10ee3（1999-12-22 JP CD 7 軌，TOCJ-9163，barcode 4988006772359）、f753d515（2009-09-16 JP CD 7 軌，EMI Music Japan TOCJ-8561）、2104bc62（2011-07-12 GB Hybrid SACD 7+7 軌，Analogue Productions CBNJ 84025 SA）、b772127f（2011 US SACD 7 軌，CBNJ 84025 SA｜Blue Note ST 84025，barcode 0753088402562）。藝人 MBID db147d97-f5cf-4e80-9e1a-08ddcb1d0bf8（Lou Donaldson，Person）。錄音 1959-10-31／11-28 Englewood Cliffs（維基）；出版 1960-04（Billboard 1960-04-18、jazzdisco）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Jazz Alive! A Night at the Half Note；A Night at the Half Note；Zoot Sims / Al Cohn / Phil Woods Jazz Alive!；Jazz Alive! A Night at the Half Note (Live)",
+  "reissuedBy": "Blue Note CD CDP 7243 4 94105 2 7（1998 US，4 軌，barcode 724349410527）／Liberty JP CD TOCJ-5413（1991）、TOCJ-50221（2011-12-21）、UCCU-99184（2015-09-30）／Fresh Sound FSR 1643（2010 ES）／JP 黑膠 UAT-5022（1959）、GXC-3139（1976）、LBJ-60057（1985）",
+  "artist": "Al Cohn & Zoot Sims",
+  "album": "Jazz Alive! A Night at the Half Note",
+  "year": 1959,
+  "label": "United Artists UAL 4040（US 1959 12\" Vinyl 4 軌，mono；立體聲 UAS 5040 同年）；FR La Voix de son maître FELP 227（1959）；GB HMV CLP 1471；Blue Note CD CDP 7243 4 94105 2 7（US 1998，4 軌）",
+  "why": "1959 年 2 月 6／7 日兩晚在紐約 Half Note 錄的現場盤、United Artists 同年以 UAL 4040／UAS 5040 出版：Zoot Sims 與 Al Cohn 兩支次中音、第二晚加 Phil Woods 中音，Mose Allison 鋼琴、Knobby Totah 貝斯、Paul Motian 鼓，四軌全是九到十二分鐘的長曲（〈Lover, Come Back to Me〉〈It Had to Be You〉〈Wee Dot〉〈After You've Gone〉），是 Cohn–Sims 雙次中音組合在 1957 年錄音室盤 Al and Zoot 之後最有名的現場記錄，AllMusic 評「咆勃與酷派樂迷都該盡力找來聽」（維基「Jazz Alive! A Night at the Half Note」條目；Discogs master 344610 UAL 4040；MB release 2c74ffd8）。實掃池中 `Al Cohn & Zoot Sims` 掛名 1 張：Al and Zoot 1957；Zoot Sims 個人 2 張（1975、2013）、Al Cohn 個人零張——本張補這對組合唯一的 1950 年代現場，也是 Mose Allison 以 sideman 出現的少數錄音。",
+  "risk": "⚠ **Live**：MB secondary-types [Live]、維基「live album」、錄音場地 Half Note 是演出場所（與第 485 條 Manhattan Towers 那種錄音場地不同），正文可寫現場，`mbNote` 已記演奏日期。⚠ **原盤他廠**：enum note「BN 首發 1998、原盤可能他廠」成立——原盤是 **United Artists UAL 4040／UAS 5040（1959）**，Blue Note 只是 1998 年（EMI 持有 UA 爵士目錄後）的 CD 再發方，`label` 寫 United Artists、`year` 1959（簡報一.3；第 455 條同型）。⚠ 掛名：MB RG credit「Al Cohn and Zoot Sims」（兩個 Person，join phrase「and」），但 17 筆 release 裡 14 筆 credit「Zoot Sims / Al Cohn / Phil Woods」（封面印法，Sims 在前）、Apple 掛「Zoot Sims, Al Cohn & Phil Woods」——本卡照池中既有字串 `Al Cohn & Zoot Sims`（Al and Zoot 1957 先例，第 363 條第一型聯名、`&`／`and` 分裂避開），Woods 是第二晚客座不進掛名，三人字串與 Sims 在前的寫法全進 queryAlias，`risk` 標明 MB credit 是「and」。年份：MB 1959、Discogs master 1959、維基 1959，一致；Apple 1457278367 標 1959-01-01（placeholder）。軌數：全部版本 4 軌。Apple us `search` 一種查法命中 1457278367（「(Live)」後綴，4 軌），只是觀察（第 254 條）。CAA：RG 層有封面（2 圖、front，來源 release 2c74ffd8 即 1959 UAL 4040 原盤）。",
+  "mbNote": "釘 release-group 9eb3ca5a-3736-4adc-bbd8-5401b71d380f。回問 release-group 端點（inc=artist-credits+releases）：title「Jazz Alive! A Night at the Half Note」、artist-credit「Al Cohn and Zoot Sims」（996b444f Al Cohn＋d17b505f Zoot Sims，兩個 Person）、first-release-date 1959、primary-type Album、**secondary-types [Live]**、轄下 17 個 release。release 端點（inc=media+labels）：2c74ffd8（1959 US 12\" Vinyl 4 軌，United Artists UAL 4040，原盤 mono）、27fa6c63（1959 US UAS 5040 立體聲，credit「Al Cohn and Zoot Sims」）、3790adfb（1959 US Promo UAL 5040）、27584fa0（1959 FR FELP 227）、af340fc5（1959 JP UAT-5022）、8bf15617（GB HMV CLP 1471）、d7729098（1961 US UAL 4040 repress）、b0dca523（1970 JP SR 3042）、6f3b1b7c／3c4a4d44（1976 JP GXC-3139／LAX 3115）、d3674de8（1985-02-01 JP Liberty LBJ-60057）、a41531fe（1991-10-23 JP Promo CD TOCJ-5413）、beab0130（1998 US CD 4 軌，Blue Note CDP 7243 4 94105 2 7，barcode 724349410527——enum 算進 Blue Note 目錄的依據）、c6ee2427（2008 JP CD，EMI Music Japan）、0a3bef95（2010 ES CD，Fresh Sound FSR 1643）、48538ce8（2011-12-21 JP CD TOCJ-50221）、7aea598e（2015-09-30 JP CD UCCU-99184）。全部 4 軌。**現場錄音**：1959-02-06（第 1–2 軌）／02-07（第 3–4 軌，加 Phil Woods）New York Half Note（維基）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "At the Jazz Corner of the World；At The Jazz Corner Of The World Vol. 1；At The Jazz Corner Of The World Vol. 2；Art Blakey & The Jazz Messengers At the Jazz Corner of the World；Art Blakey and the Jazz Messengers At the Jazz Corner of the World",
+  "reissuedBy": "Blue Note 2CD 7243 8 28888 2 6（1994-04-19 US，5+5 軌，Vol. 1／2 合併）與同月數位版（barcode 724382888857，10 軌）",
+  "artist": "Art Blakey and the Jazz Messengers",
+  "album": "At the Jazz Corner of the World",
+  "year": 1959,
+  "label": "Blue Note BLP 4015（Vol. 1，US 1959-09 12\" Vinyl 5 軌）＋ BLP 4016（Vol. 2，US 1959-10／1960 12\" Vinyl 5 軌）；MB 把兩卷登錄成一筆兩面 release（BST 84015｜BST 84016）；2CD 7243 8 28888 2 6（US 1994-04-19，10 軌）",
+  "why": "1959 年 4 月 15 日紐約 Birdland（「世界爵士角落」是 Birdland 的自稱，Pee Wee Marquette 報幕）錄的現場，Blue Note 拆成兩張 12 吋（BLP 4015 九月、4016 十月）出版：Lee Morgan 小號、Hank Mobley 次中音、Bobby Timmons 鋼琴、Jymie Merritt 貝斯、Art Blakey 鼓——Moanin' 之後、Benny Golson 走了換 Mobley 回來那一年的五重奏，曲目裡四首五週前才在錄音室錄過的 Just Coolin' 材料（那張被壓到 2020 年才出）正是被這場現場取代的，〈Hipsippy Blues〉〈Chicken an' Dumplins〉〈Justice〉〈The Theme〉全是長篇（維基「At the Jazz Corner of the World」條目；Discogs master 406059 BLP 4015／369774 BLP 4016；jazzdisco 4000 系列索引 1959／1960）。實掃池中 Blakey 相關掛名：`Art Blakey and the Jazz Messengers` 6 張（A Night at Birdland Vol. 1 1954、Moanin' 1958、A Night in Tunisia 1961、Caravan 1963、Ugetsu 1963、Free for All 1964）、`Art Blakey & The Jazz Messengers` 5 張（The Big Beat 1960、Buhaina's Delight 1963、Indestructible 1966、Not Yet 1988、I Get A Kick Out Of Bu 1988）、`Art Blakey` 1 張；c-136 a 組補 1956 Cafe Bohemia Vol. 1／2 與 Birdland Vol. 2——**1958 Moanin' 與 1960 The Big Beat 之間的 1959 現場零張**，本張是 Morgan–Mobley–Timmons 這一代 Messengers 唯一的 Blue Note 現場盤。",
+  "risk": "⚠ **Live 但 MB 沒標**：RG secondary-types 空，但維基「live albums」、Discogs 條目掛 Birdland、盤面題「Recorded live at Birdland」——第 397 條「兩個方向都會漏」的實例（c-135 第 455 條 Konitz 同型），**卡單依實況標現場**，正文可寫 Birdland 現場、演奏日 1959-04-15。⚠ **Vol. 1／Vol. 2 折在同一個 RG**：MB 只建一個 RG（d5f8521c），原盤 release d234a182 是「兩面各 5 軌、BST 84015｜BST 84016」的合併登錄，MB 搜尋「Jazz Corner of the World」只回本 RG 與 1960 年 Meet You at the Jazz Corner 的 Vol. 1／Vol. 2（47bfc480／76752ee1，那是另一場）——依第 453 條 (a) 型（折在同 RG）**收一張、盤名照 RG 短名**，不拆兩卷（enum 也只有一筆）；正文要寫明「原盤是兩張 12 吋（4015 九月、4016 十月）」，1994 2CD 才合併；jazzdisco 把 4016 記 1960、Discogs 4016 條目亦 1960——`year` 取 Vol. 1 的 1959。⚠ 掛名：MB credit「Art Blakey & The Jazz Messengers」（群組實體 209ddf15），池中 `and the` 6 張 vs `& The` 5 張（audits 第 1 組分裂）——照 c-136 a 組（Cafe Bohemia、Birdland Vol. 2）先例取多數 `Art Blakey and the Jazz Messengers`，`&` 版進 queryAlias；1994 數位版 credit 只寫「Art Blakey」。⚠ catno：MB 原盤登錄 BST 84015／84016（立體聲號），Discogs 原盤是 mono BLP 4015／4016，`label` 寫 BLP。年份：MB 1959-04-15（＝錄音日）、Discogs Vol. 1 1959、維基「September/October 1959」（Billboard 1959-10-05）、jazzdisco 4015＝1959，取 1959；月日不引 MB。軌數：Vol. 1 五軌＋Vol. 2 五軌，2CD 10 軌。Apple us `search` 一種查法命中 724336485（10 軌合併版，掛「Art Blakey & The Jazz Messengers」，1959-01-01 placeholder）與 Meet You at the Jazz Corner 系列——後者是 1960 年另一場，不得混。CAA：RG 層有封面（1 圖、front，來源 release 2a12d6c3 1994 數位版——是 2CD 封面不是 4015 原盤圖，研究層看版式；Discogs 1248428 有 BLP 4015 封面）。",
+  "mbNote": "釘 release-group d5f8521c-58a6-3c56-af99-a1a1c353925d。回問 release-group 端點（inc=artist-credits+releases）：title「At the Jazz Corner of the World」、artist-credit「Art Blakey & The Jazz Messengers」（群組實體 209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee）、first-release-date 1959-04-15（錄音日）、primary-type Album、secondary-types 空（實為現場，見 risk）、轄下 3 個 release。release 端點（inc=media+labels）：d234a182（1959-04-15 US Vinyl 5+5 軌，Blue Note BST 84015｜BST 84016——Vol. 1／Vol. 2 合併登錄）、62ffe4da（1994-04-19 US 2CD 5+5 軌，7243 8 28888 2 6，barcode 724382888826）、2a12d6c3（1994-04-11 XW Digital 10 軌，barcode 724382888857，credit「Art Blakey」）。MB 搜尋 releasegroup:\"Jazz Corner of the World\" AND artist:\"Art Blakey\"：只回本 RG 與《Meet You at the Jazz Corner of the World》Vol. 1（47bfc480，1961）／Vol. 2（76752ee1，1962）／合併（d9c8c46a，2002）——那是 1960-09-14 另一場，不釘。**現場錄音** 1959-04-15 New York Birdland（維基）；原盤 BLP 4015（1959-09）／BLP 4016（1959-10，jazzdisco 記 1960）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Love for Sale；Love For Sale；Cecil Taylor Trio and Quintet Love for Sale；Cecil Taylor Love for Sale",
+  "reissuedBy": "Blue Note CD CDP 7243 4 94107 2 5（1998 US／XE，6 軌，含 1 首 bonus）／Liberty JP CD TOCJ-50224（2011-12-21）、UCCU-8254（2021-11-24）／CoolNote 數位（2014）",
+  "artist": "Cecil Taylor",
+  "album": "Love for Sale",
+  "year": 1959,
+  "label": "United Artists UAL 4046（US 1959 12\" Vinyl 5 軌，mono；立體聲 UAS 5046 同年）；Blue Note CD CDP 7243 4 94107 2 5（US 1998，6 軌，barcode 724349410725）",
+  "why": "1959 年 4 月 15 日紐約 Nola 錄音室錄的 United Artists 盤，Cecil Taylor 早期最「直」的一張：三重奏（Buell Neidlinger 貝斯、Denis Charles 鼓）彈三首 Cole Porter（〈Get Out of Town〉〈I Love Paris〉〈Love for Sale〉），五重奏加 Bill Barron 次中音、Ted Curson 小號彈自作〈Little Lees〉〈Matie's Trophies〉——AllMusic 評「他整個生涯最直白的一張，但也最能看見他即興系統的骨架」，是 1956 Jazz Advance、1958 Looking Ahead! 之後、1960 年代進入自由爵士之前的最後一站（維基「Love for Sale」條目；Discogs master 291903 UAL 4046；MB release 25ca5e57）。實掃池中 Cecil Taylor 掛名 9 張：Nefertiti 1965、Unit Structures 1966（王牌）、Conquistador! 1967、Solo 1973、Student Studies 1973、Silent Tongues 1975、Fly! Fly! Fly! Fly! Fly! 1981、For Olim 1987、Olu Iwa 1994——**1956–1959 的三張早期盤一張都沒有**，本張是唯一被 Blue Note 目錄接管的那張，補他 1965 之前的空白。",
+  "risk": "⚠ **原盤他廠**：enum note「BN 首發 1998、原盤可能他廠」成立——原盤是 **United Artists UAL 4046／UAS 5046（1959）**，Blue Note 只是 1998 年 UA 爵士目錄 CD 再發方（同組 Jazz Alive!、Jazz Portraits 同型），`label` 寫 United Artists、`year` 1959。⚠ 掛名收攏：MB credit「Cecil Taylor Trio and Quintet」是兩個群組實體（186b34d1 Trio＋c718232d Quintet）串起來的盤面印法，照第 363 條第二型收攏到池中 `Cecil Taylor`（9 張，全部單一字串、無編制分裂），編制字串進 queryAlias。年份：MB 1959、Discogs master 1959、維基 1959，一致。軌數兩說：原 LP 5 軌，1998 CD 6 軌（加〈Carol/Three Points〉bonus），行文以 5 軌為準。⚠ 盤名「Love for Sale」是標準曲名：池中 Boney M.《Love for Sale》1977、c-132 b 宮沢昭《Love For Sale》1967 同名——`chk-prop` 鍵含掛名不會誤報，但店面以盤名搜會混，研究層以 collectionId 直查。Apple us `search` 一種查法**未命中**（回的是古典與無關結果）——只是觀察，不得寫「未上架」（第 254 條），研究層走藝人目錄與 collectionId。CAA：RG 層有封面（1 圖、front，來源 release d7f6ce57 是 2014 AF「CoolNote」數位版——來路可疑的再發商，**圖不一定是原盤封面**，研究層以 Discogs 4066276 的 UAL 4046 圖核）。",
+  "mbNote": "釘 release-group 7718a390-2865-3550-9c93-a5804a5c08b0。回問 release-group 端點（inc=artist-credits+releases）：title「Love for Sale」、artist-credit「Cecil Taylor Trio and Quintet」（186b34d1-b79d-49b9-8759-0abbb9778933 Cecil Taylor Trio＋c718232d-5c58-474f-b770-a581977fb5c8 Cecil Taylor Quintet，皆 Group）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 7 個 release。release 端點（inc=media+labels）：25ca5e57（1959 US 12\" Vinyl 5 軌，United Artists UAL 4046，原盤 mono）、568d3480（1959 US 12\" Vinyl 5 軌，UAS 5046 立體聲）、9716254f（1998 US CD 6 軌，Blue Note CDP 7243 4 94107 2 5，barcode 724349410725——enum 算進 Blue Note 目錄的依據）、24e55778（1998 XE CD 6 軌，同 catno）、fcc1e405（2011-12-21 JP CD 6 軌，Liberty TOCJ-50224）、c5d35581（2021-11-24 JP CD 6 軌，UCCU-8254）、d7f6ce57（2014-08-29 AF Digital 5 軌，CoolNote）。Cecil Taylor 本人 MBID 0d06bb57-c3b6-4188-9b73-826c41c3e29e（第 360 條實掃表）。錄音 1959-04-15 New York Nola Studios（維基）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Jazz Portraits: Mingus in Wonderland；Jazz Portraits；Mingus in Wonderland；Wonderland；Jazz Portraits: Mingus In Wonderland (Live)",
+  "reissuedBy": "Blue Note CD CDP 7243 8 27325 2 5（1994-01-25 US／XE，4 軌，barcode 724382732525）與數位版（barcode 0724382732556）／Folha de S. Paulo「Coleção Folha clássicos do jazz」Vol. 19（2008 BR）／BnF Collection 數位（2022 XE）",
+  "artist": "Charles Mingus",
+  "album": "Jazz Portraits: Mingus in Wonderland",
+  "year": 1959,
+  "label": "United Artists UAL 4036（US 1959-09 12\" Vinyl 4 軌，原題《Jazz Portraits》）；Blue Note CD CDP 7243 8 27325 2 5（US 1994-01-25，4 軌）",
+  "why": "1959 年 1 月 16 日在紐約 Nonagon Art Gallery 錄的現場、United Artists 同年 9 月以 UAL 4036《Jazz Portraits》出版：John Handy 中音、Booker Ervin 次中音、Richard Wyands 鋼琴、Dannie Richmond 鼓，四軌全是十分鐘上下的長篇——〈Nostalgia in Times Square〉與〈Alice's Wonderland〉是替 Cassavetes《Shadows》寫的、後來被電影棄用的配樂，前者從這張起成了標準曲；這是 Mingus Ah Um（同年 5 月錄）之前那個 Handy–Ervin 陣容最早的完整記錄，AllMusic 評「往前衛走的進階咆勃、時常相當刺激」（維基「Jazz Portraits: Mingus in Wonderland」條目；Discogs master 280049 UAL 4036；MB release 6a253e7c）。實掃池中 Charles Mingus 掛名 19 張：1956 Pithecanthropus Erectus／Mingus at the Bohemia、1957 The Clown／East Coasting、1959 Mingus Ah Um、1960 Blues & Roots／Mingus Dynasty……到 1975 Changes One／Two——**1959 只有 Ah Um、現場盤只有 Bohemia 1956 與 Antibes、Europe 兩張後出土**，本張補 1959 年初這場，也是池中 Mingus 唯一的 UA 時期。",
+  "risk": "⚠ **Live**：MB secondary-types [Live]、維基「live album」、Discogs 掛 Nonagon Art Gallery（畫廊的演出，有觀眾）——正文可寫現場，演奏日 1959-01-16。⚠ **原盤他廠**：enum note「BN 首發 1994、原盤可能他廠」成立——原盤 **United Artists UAL 4036（1959-09）**，Blue Note 只是 1994 年 CD 再發方（同組 Love for Sale、Jazz Alive! 同型），`label` 寫 United Artists、`year` 1959。⚠ **盤名三代**：原盤題《Jazz Portraits》、後來 UA 再發改題《Wonderland》、1994 Blue Note CD 合成《Jazz Portraits: Mingus in Wonderland》——MB RG title、Apple、維基條目名都用合成名，依第 45／363 條「現行流通名」取合成名，原題與 Wonderland 進 queryAlias；正文要交代原題。掛名照池中 `Charles Mingus`（19 張），MB credit 同字串（實體 f3b8e107 Person）。年份：MB 1959、Discogs master 1959、維基「September 1959」（Cash Box／Billboard），一致；Apple 724563240 標 1959-01-16（＝演奏日 placeholder）。軌數：全部版本 4 軌。⚠ MB 轄下 8a35ddc4（2008 BR Folha 報紙附冊 Vol. 19）與 1ae9c822（2022 BnF）、c3e865ec（CoolNote）是廉價／來路不明再發，不當來源。Apple us `search` 一種查法命中 724563240（「(Live)」後綴，4 軌），只是觀察（第 254 條）。CAA：RG 層有封面（1 圖、front，來源 release 6a253e7c 即 1959 UAL 4036 原盤——是《Jazz Portraits》原封面，與現行合成名的 CD 封面不同，研究層看版式）。",
+  "mbNote": "釘 release-group b676787c-296e-36ed-8663-5d1ceb61d9a8。回問 release-group 端點（inc=artist-credits+releases）：title「Jazz Portraits: Mingus in Wonderland」、artist-credit「Charles Mingus」、first-release-date 1959、primary-type Album、**secondary-types [Live]**、轄下 7 個 release。release 端點（inc=media+labels）：6a253e7c（1959 US 12\" Vinyl 4 軌，United Artists UAL 4036，title「Jazz Portraits」，原盤）、e891955d（1994-01-25 US CD 4 軌，Blue Note CDP 7243 8 27325 2 5，barcode 724382732525——enum 算進 Blue Note 目錄的依據）、efd9517b（1994 XE CD 同 catno）、7df33538（XW Digital 4 軌，Blue Note，barcode 0724382732556）、8a35ddc4（2008-01-27 BR CD，Folha de S. Paulo，題「Coleção Folha clássicos do jazz, Volume 19」）、1ae9c822（2022-02-07 XE Digital，BnF Collection，題「Jazz Portraits」）、c3e865ec（XW Digital，CoolNote）。全部 4 軌。藝人 MBID f3b8e107-abe8-4743-b6a3-4a4ee995e71f（Charles Mingus，Person）。**現場錄音** 1959-01-16 New York Nonagon Art Gallery（維基）；出版 1959-09。"
+ }
+]
