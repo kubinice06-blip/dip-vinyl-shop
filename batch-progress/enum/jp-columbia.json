@@ -24,6 +24,24 @@
    "name": "BETTER DAYS",
    "type": "Imprint",
    "releases": 138
+  },
+  {
+   "id": "c882c9f6-1bd5-4d98-9cd9-d21a5db80cc7",
+   "name": "Takt",
+   "type": "Imprint",
+   "releases": 8
+  },
+  {
+   "id": "442f4a1d-ae25-48d6-b773-637da26d3002",
+   "name": "NIPPONOPHONE",
+   "type": "Imprint",
+   "releases": 142
+  },
+  {
+   "id": "20ae429a-514c-4300-8db4-b917cf25c479",
+   "name": "Domo(Kazumi Watanabe)",
+   "type": "(none)",
+   "releases": 17
   }
  ],
  "rows": [
@@ -214,14 +232,69 @@
    "year": 1967,
    "rgMbid": "de5ffd98-e689-442e-9439-1ec09a437b69",
    "country": "JP",
-   "format": "CD",
+   "format": "12\" Vinyl/CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
    "why": "rg-tag",
    "entities": [
-    "Columbia(JP)"
+    "Columbia(JP)",
+    "Takt"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
+   "artist": "Sadao & Charlie",
+   "album": "Iberian Waltz",
+   "year": 1967,
+   "rgMbid": "54892085-37cf-4716-a965-1df1979af185",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有3張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Takt"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Sadao Watanabe",
+   "album": "Jazz & Bossa",
+   "year": 1967,
+   "rgMbid": "1041020f-39ab-431a-a2a4-b7a6b26cc150",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有3張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Takt"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Sadao Watanabe",
+   "album": "My Romance: Sadao Plays Ballads",
+   "year": 1967,
+   "rgMbid": "6ecf258a-98da-4e67-b995-ed300df0610c",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有3張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Takt"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -323,17 +396,18 @@
    "year": 1968,
    "rgMbid": "6e5a3bec-c568-414b-8e8e-8bffb86b5925",
    "country": "JP",
-   "format": "Blu-spec CD",
+   "format": "12\" Vinyl/Blu-spec CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
    "why": "rg-tag",
    "entities": [
-    "Columbia(JP)"
+    "Columbia(JP)",
+    "Takt"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 2
   },
   {
    "artist": "太田幸雄とハミングバーズ",
@@ -588,6 +662,24 @@
    "nrel": 2
   },
   {
+   "artist": "Toshiko Akiyoshi Quintet",
+   "album": "Toshiko At Top Of The Gate",
+   "year": 1969,
+   "rgMbid": "f8ba828c-1ae0-42d1-b636-ccd3648e46ad",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": true,
+   "poolString": "秋吉敏子クインテット|Toshiko At Top Of The Gate",
+   "note": "rgMbid",
+   "why": "rg-tag",
+   "entities": [
+    "Takt"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "Yasunobu Matsuura & The All-Stars",
    "album": "Hits In Tenor Sax Mood",
    "year": 1969,
@@ -637,6 +729,24 @@
    "why": "rg-tag",
    "entities": [
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "ソウル・アンド・ロック",
+   "year": 1969,
+   "rgMbid": "92ed0cc8-3794-4a1c-8ef7-cee94b7f07f0",
+   "country": "XW",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有2張(盤名未比中)",
+   "why": "artist-tag",
+   "entities": [
+    "NIPPONOPHONE"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -798,10 +908,11 @@
    "note": "",
    "why": "rg-tag",
    "entities": [
-    "Columbia(JP)"
+    "Columbia(JP)",
+    "Takt"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "Toshiyuki Miyama and His New Herd + M. Sato",
@@ -863,17 +974,18 @@
    "year": 1970,
    "rgMbid": "7fa61991-e892-4ba0-aa51-eb31ac066e58",
    "country": "JP",
-   "format": "12\" Vinyl",
+   "format": "12\" Vinyl/CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有4張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
-    "Columbia(JP)"
+    "Columbia(JP)",
+    "Takt"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 2
   },
   {
    "artist": "村岡実",
@@ -1242,17 +1354,18 @@
    "year": 1972,
    "rgMbid": "86824bad-a558-41f3-b1d8-de5da9557bd6",
    "country": "JP",
-   "format": "CD",
+   "format": "CD/Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有4張(盤名未比中)",
    "why": "artist-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 2
   },
   {
    "artist": "猪俣猛とサウンド・リミテッド",
@@ -1268,6 +1381,24 @@
    "why": "artist-tag",
    "entities": [
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "Dynamic Latin Exotic Sound",
+   "year": 1972,
+   "rgMbid": "806f15c2-3a33-4131-8c50-5cde10ae87d4",
+   "country": "",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有2張(盤名未比中)",
+   "why": "artist-tag",
+   "entities": [
+    "NIPPONOPHONE"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -1820,8 +1951,8 @@
    "album": "キャット",
    "year": 1976,
    "rgMbid": "9e085fb4-8b33-430b-a7e6-adc75969e9bf",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
+   "country": "JP/XW",
+   "format": "12\" Vinyl/CD/Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
@@ -1829,10 +1960,11 @@
    "why": "rg-tag",
    "entities": [
     "Columbia Music Entertainment",
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": true,
-   "nrel": 4
+   "nrel": 5
   },
   {
    "artist": "Booker Ervin",
@@ -1904,6 +2036,24 @@
     "Columbia(JP)"
    ],
    "foreignArtist": true,
+   "nrel": 1
+  },
+  {
+   "artist": "佐藤博",
+   "album": "Time",
+   "year": 1977,
+   "rgMbid": "93a2a9f6-7243-4465-9cc7-8c40e485f57c",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "artist-search-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -2486,22 +2636,41 @@
    "nrel": 2
   },
   {
+   "artist": "森山威男",
+   "album": "Smile",
+   "year": 1981,
+   "rgMbid": "778de39e-8ecf-480a-9739-e90e248b93cb",
+   "country": "",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有3張(盤名未比中)",
+   "why": "artist-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "森山威男カルテット",
    "album": "スマイル",
    "year": 1981,
    "rgMbid": "4438800c-f9b5-44d6-b9bb-f54107abeff6",
-   "country": "JP",
-   "format": "Blu-spec CD",
+   "country": "JP/XW",
+   "format": "Blu-spec CD/Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有2張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 2
   },
   {
    "artist": "清水靖晃",
@@ -2538,6 +2707,24 @@
    ],
    "foreignArtist": false,
    "nrel": 2
+  },
+  {
+   "artist": "Kazumi Band",
+   "album": "Ganaesia",
+   "year": 1982,
+   "rgMbid": "c98d946d-109b-462d-a1f1-913d68b49525",
+   "country": "JP",
+   "format": "12\" Vinyl/CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
+   ],
+   "foreignArtist": false,
+   "nrel": 3
   },
   {
    "artist": "Steps Ahead",
@@ -2739,6 +2926,24 @@
    "nrel": 1
   },
   {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "フィリップ・マーロウ, 君がいないと",
+   "year": 1983,
+   "rgMbid": "b2112048-ed73-4e1b-b289-b8e9f336f6c4",
+   "country": "",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有2張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "高橋達也と東京ユニオン",
    "album": "Jam Trip The かぼちゃワイン (Pumpkin Wine)",
    "year": 1983,
@@ -2752,6 +2957,24 @@
    "why": "artist-tag",
    "entities": [
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Keizo Inoue",
+   "album": "Boys, Be Ambitious!",
+   "year": 1984,
+   "rgMbid": "00b8a822-3da0-430c-8608-9377752cd434",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -2884,6 +3107,24 @@
    "nrel": 1
   },
   {
+   "artist": "Kazumi Watanabe",
+   "album": "Mobo Live",
+   "year": 1985,
+   "rgMbid": "a6aefcd7-1420-4f93-be4a-4b9b1f293c31",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": true,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "深町純",
    "album": "エイリアン魔獣鏡",
    "year": 1985,
@@ -2915,6 +3156,24 @@
    "why": "artist-tag",
    "entities": [
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Kazumi Watanabe",
+   "album": "The Spice of Life",
+   "year": 1987,
+   "rgMbid": "b3df573f-e42c-3d44-b738-68cb21b50a9f",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -2990,6 +3249,24 @@
     "BETTER DAYS"
    ],
    "foreignArtist": true,
+   "nrel": 1
+  },
+  {
+   "artist": "Kazumi Watanabe",
+   "album": "Romanesque",
+   "year": 1990,
+   "rgMbid": "3647c4b3-dcf5-4acc-a390-641da4e6e6c6",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
+   ],
+   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -3083,6 +3360,24 @@
    "nrel": 1
   },
   {
+   "artist": "渡辺香津美",
+   "album": "おやつ",
+   "year": 1994,
+   "rgMbid": "62292ae4-f2ca-4738-b0ce-067e1c17270f",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "artist-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
    "artist": "佐藤奈々子",
    "album": "ピロー・トーク",
    "year": 1995,
@@ -3137,6 +3432,42 @@
    "nrel": 1
   },
   {
+   "artist": "渡辺香津美",
+   "album": "Oyatsu 2",
+   "year": 1995,
+   "rgMbid": "8e4d18dc-8451-4a9c-a547-d80899ddae21",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Kazumi Watanabe",
+   "album": "Esprit",
+   "year": 1996,
+   "rgMbid": "faeef99a-1d19-4563-9281-ed3cf4d68aed",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "Keiko Matsui",
    "album": "Full Moon and the Shrine",
    "year": 1998,
@@ -3152,6 +3483,24 @@
     "Columbia(JP)"
    ],
    "foreignArtist": true,
+   "nrel": 1
+  },
+  {
+   "artist": "渡辺香津美 With 小曽根真",
+   "album": "Dandyism",
+   "year": 1998,
+   "rgMbid": "56f00b3e-c9be-3fc8-b5a2-118a327caaa7",
+   "country": "",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
+   "why": "rg-tag",
+   "entities": [
+    "Domo(Kazumi Watanabe)"
+   ],
+   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -3738,7 +4087,7 @@
    "album": "YAMATO SOUND ALMANAC 1978-II「さらば宇宙戦艦ヤマト 愛の戦士たち 音楽集」",
    "year": 2012,
    "rgMbid": "e3cf8bd2-e255-4be5-9665-4b8b3c543b2c",
-   "country": "JP",
+   "country": "JP/US",
    "format": "Blu-spec CD/Digital Media",
    "live": false,
    "inPool": false,
@@ -3746,10 +4095,11 @@
    "note": "藝人池中有1張(盤名未比中)",
    "why": "curator-list",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "宮川泰指揮/シンフォニック・オーケストラ・ヤマト",
@@ -4149,6 +4499,24 @@
    "nrel": 1
   },
   {
+   "artist": "Hiromitsu Agatsuma",
+   "album": "WAKYO -Encuentro-",
+   "year": 2024,
+   "rgMbid": "22e544cb-03b0-4dac-918d-142531bd67b8",
+   "country": "",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "artist-search-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "Taeko Onuki",
    "album": "Taeko Onuki Concert 2023",
    "year": 2024,
@@ -4180,6 +4548,24 @@
    "why": "curator-list",
    "entities": [
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Hiromitsu Agatsuma",
+   "album": "TSUNAGU",
+   "year": 2025,
+   "rgMbid": "09b94847-da8c-4d89-b97b-d82723ae5203",
+   "country": "",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "artist-search-tag",
+   "entities": [
+    "NIPPONOPHONE"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -4745,6 +5131,24 @@
    "nrel": 2
   },
   {
+   "artist": "しばたはつみ",
+   "album": "The Woman Who Sings the Blues",
+   "year": 1975,
+   "rgMbid": "6e40b35f-3ac2-45d0-8941-68e33c55f3aa",
+   "country": "",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "ジャッキー吉川とブルー・コメッツ",
    "album": "ゴールデン・スター・ワイド・デラックス",
    "year": 1975,
@@ -4779,6 +5183,24 @@
    ],
    "foreignArtist": false,
    "nrel": 2
+  },
+  {
+   "artist": "しばたはつみ",
+   "album": "Lots Of Love",
+   "year": 1976,
+   "rgMbid": "fbd45359-6647-4016-b6cd-df567a77c618",
+   "country": "",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
   },
   {
    "artist": "やまがたすみこ",
@@ -5065,7 +5487,26 @@
    "note": "藝人池中有1張(盤名未比中)",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
+   "artist": "しばたはつみ",
+   "album": "Show Me The Way",
+   "year": 1981,
+   "rgMbid": "f76e2cce-24f0-4183-ab67-47cd1b296b0c",
+   "country": "",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -5157,6 +5598,24 @@
    "why": "no-tag",
    "entities": [
     "BETTER DAYS"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "しばたはつみ",
+   "album": "Retouch",
+   "year": 1982,
+   "rgMbid": "69aa8eb1-26a8-49f3-9d0f-39e6e2a1ba6b",
+   "country": "",
+   "format": "",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -6268,18 +6727,19 @@
    "album": "Shyness",
    "year": 1993,
    "rgMbid": "f1cc24fc-edc2-3898-8be0-c7a9c243554b",
-   "country": "JP",
-   "format": "CD",
+   "country": "JP/XW",
+   "format": "CD/Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
    "why": "rg-tag-mixed",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 2
   },
   {
    "artist": "ヒデとロザンナ",
@@ -12541,7 +13001,7 @@
    "album": "YAMATO SOUND ALMANAC 1981-I「交響組曲 宇宙戦艦ヤマトIII」",
    "year": 2013,
    "rgMbid": "650c5eed-2471-44b5-aef0-93f1a740d5f3",
-   "country": "JP",
+   "country": "JP/US",
    "format": "Blu-spec CD/Digital Media",
    "live": false,
    "inPool": false,
@@ -12549,17 +13009,18 @@
    "note": "",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "シンフォニック・オーケストラ・ヤマト",
    "album": "YAMATO SOUND ALMANAC 1978-VI 「宇宙戦艦ヤマト2 BGM集 Part2」",
    "year": 2013,
    "rgMbid": "47e7a37b-1dc5-45a0-b729-19f65e10d7ca",
-   "country": "JP",
+   "country": "JP/US",
    "format": "Blu-spec CD/Digital Media",
    "live": false,
    "inPool": false,
@@ -12567,17 +13028,18 @@
    "note": "",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "シンフォニック・オーケストラ・ヤマト",
    "album": "YAMATO SOUND ALMANAC 1978-V 「宇宙戦艦ヤマト2 BGM集 Part1」",
    "year": 2013,
    "rgMbid": "cd918cf6-42eb-4472-9412-2091882602ed",
-   "country": "JP",
+   "country": "JP/US",
    "format": "Blu-spec CD/Digital Media",
    "live": false,
    "inPool": false,
@@ -12585,17 +13047,18 @@
    "note": "",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "シンフォニック・オーケストラ・ヤマト",
    "album": "YAMATO SOUND ALMANAC 1979-II 「宇宙戦艦ヤマト 新たなる旅立ち BGM集」",
    "year": 2013,
    "rgMbid": "ab26c048-1f63-4bb5-8272-def1e6651cfa",
-   "country": "JP",
+   "country": "JP/US",
    "format": "Blu-spec CD/Digital Media",
    "live": false,
    "inPool": false,
@@ -12603,10 +13066,11 @@
    "note": "",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "ドレスコーズ",
@@ -13521,10 +13985,11 @@
    "note": "",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 2
   },
   {
    "artist": "TWEEDEES",
@@ -14612,17 +15077,18 @@
    "year": 2018,
    "rgMbid": "271b5210-57ca-4731-9842-993e12fb6984",
    "country": "JP",
-   "format": "CD/DVD-Video",
+   "format": "CD/DVD-Video/Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "中野有香、水本ゆかり、椎名法子",
@@ -14715,6 +15181,24 @@
    "nrel": 1
   },
   {
+   "artist": "Loota",
+   "album": "Gradation",
+   "year": 2019,
+   "rgMbid": "8d9ba9f4-ab01-47e5-8f53-cb0d68915080",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "NakamuraEmi",
    "album": "NIPPONNO ONNAWO UTAU Vol.6",
    "year": 2019,
@@ -14727,7 +15211,62 @@
    "note": "",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
+   "artist": "NakamuraEmi",
+   "album": "NIPPONNO ONNAWO UTAU Vol. 6 (Instrumental)",
+   "year": 2019,
+   "rgMbid": "6f744546-7e91-4601-85ad-3df5027ed68a",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "NakamuraEmi",
+   "album": "NIPPONNO ONNAWO UTAU Vol. 4 (Instrumental)",
+   "year": 2019,
+   "rgMbid": "4180f12c-e677-45ce-8b68-b29cf00bea4c",
+   "country": "JP",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "NakamuraEmi",
+   "album": "NIPPONNO ONNAWO UTAU Vol. 5 (Instrumental)",
+   "year": 2019,
+   "rgMbid": "61c34d09-58a4-4fe1-a606-0d4bebe403b8",
+   "country": "JP",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -14785,6 +15324,24 @@
    ],
    "foreignArtist": false,
    "nrel": 3
+  },
+  {
+   "artist": "スターダスト☆レビュー",
+   "album": "STARDUST REVUE 楽園音楽祭2018 in モリコロパーク",
+   "year": 2019,
+   "rgMbid": "4b734388-d013-4611-a00f-87279f536d5e",
+   "country": "JP",
+   "format": "Digital Media",
+   "live": true,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
   },
   {
    "artist": "内田彩",
@@ -14881,18 +15438,19 @@
    "album": "年中模索",
    "year": 2020,
    "rgMbid": "9af434d0-96ec-45a5-a261-c01864fa4e5d",
-   "country": "JP",
-   "format": "CD/DVD-Video",
+   "country": "JP/XW",
+   "format": "CD/DVD-Video/Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
    ],
    "foreignArtist": false,
-   "nrel": 2
+   "nrel": 3
   },
   {
    "artist": "THE IDOLM@STER CINDERELLA GIRLS",
@@ -15003,6 +15561,24 @@
    "nrel": 1
   },
   {
+   "artist": "スターダスト☆レビュー",
+   "album": "スターダスト☆レビュー ライブツアー『還暦少年』",
+   "year": 2020,
+   "rgMbid": "096ef699-7baf-4478-bd66-bdcb3d2d0b4c",
+   "country": "JP",
+   "format": "Digital Media",
+   "live": true,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "フランチェスカ・ルッキーニ(CV:斎藤千和)",
    "album": "ストライクウィッチーズ 第501統合戦闘航空団歌唱集 -フランチェスカ・ルッキーニ少尉-",
    "year": 2020,
@@ -15079,15 +15655,34 @@
    "album": "Momi",
    "year": 2021,
    "rgMbid": "f4f84834-e4ae-443e-aa7a-b8af17420b76",
-   "country": "JP",
-   "format": "CD",
+   "country": "JP/XW",
+   "format": "CD/Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
    "why": "no-tag",
    "entities": [
+    "NIPPONOPHONE",
     "Columbia(JP)"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
+   "artist": "NakamuraEmi",
+   "album": "Momi (Instrumental)",
+   "year": 2021,
+   "rgMbid": "f69d4637-155e-4a5c-a183-5b89398351b9",
+   "country": "JP",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -15921,6 +16516,24 @@
    "nrel": 1
   },
   {
+   "artist": "富田美憂",
+   "album": "Violet Bullet",
+   "year": 2024,
+   "rgMbid": "09ef3dfc-e4a0-4d0c-b96a-26609c652cf8",
+   "country": "JP",
+   "format": "Blu-ray/CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "no-tag",
+   "entities": [
+    "NIPPONOPHONE"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
    "artist": "歌種やすみ & 夕暮夕陽",
    "album": "『声優ラジオのウラオモテ』キャラソン・アルバム“「夕陽と〜」「やすみの〜」「コーコーセーミュージック〜！」”",
    "year": 2024,
@@ -16047,5 +16660,5 @@
    "nrel": 1
   }
  ],
- "nonjazz_count": 887
+ "nonjazz_count": 898
 }
