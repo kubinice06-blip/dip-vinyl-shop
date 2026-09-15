@@ -213,3 +213,13 @@ search 零命中、藝人目錄 `lookup` 也只見合集或 12 吋重組盤的 8
 Silver Trio Vol. 2（只有 12 吋《Horace Silver Trio》16 軌）、Donaldson Sextet Vol. 2（只有 12 吋《Quartet/Quintet/Sextet》10 軌）、
 Brown Quartet（只有 Vogue《Complete Paris Sessions Vol. 1》11 軌）、Watkins、Sadi（只有 Fresh Sound 回顧輯 23 軌）——**「前 N 軌／後 N 軌對應原盤」是否可採，留研究層逐軌比**。
 CAA：16/19 有圖，無圖 3 張＝BLP 5026 Hall、5053 Watkins、5061 Sadi。
+
+## 第 465 條（同批，收到 c-136 a 第 475 條後）：**四件交叉事項的處理**
+
+1. 《The Eminent Jay Jay Johnson, Volume 1》——已退（第 460 條退表第 1 列，撞池）。
+2. `Gill Mellé`——卡單已用 `Gil Mellé`（第 462 條末段），與 c-136 a 同字串，不分裂。
+3. 編制掛名——`Kenny Drew`、`Jutta Hipp`、`Horace Silver` 已依第 363 條收攏（第 462 條）；《Horace Silver Quintet (Volume 3)》BLP 5058 因 12 吋 1518 已在池中整張退掉（第 460 條退表第 3 列）。
+4. 10 吋↔12 吋互指——本組 10 吋側只有 **BLP 5034 ↔ c-136 a 的 BLP 1520**，`risk` 與 `mbNote` 已改成明指 c-136 a；
+   Navarro 5004 與 Birdland 5037–39 在 a 組 slice（或不在本批），由 a 組處理。
+   另 BLP 5055 ↔ 12 吋 1537《Quartet/Quintet/Sextet》仍寫「預期 c-136」——c-136 a 若已收 1537，請在那邊回指本張。
+`node batch-progress/c135/chk-prop.mjs a b` 重跑見下。
