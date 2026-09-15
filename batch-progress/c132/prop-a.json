@@ -1,0 +1,97 @@
+[
+  {
+    "genres": [
+      "jazz"
+    ],
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "g": "a",
+    "artist": "渡辺貞夫",
+    "album": "My Romance: Sadao Plays Ballads",
+    "year": 1967,
+    "label": "Takt JAZZ-5（JP 1967 12 吋黑膠 13 軌，日本コロムビア 的 Takt 爵士線）；XW 2018-10-19 Savoy Records 數位 13 軌（release 題《Sadao Watanabe Plays Ballads》）",
+    "why": "渡辺貞夫 1965 年自 Berklee 回國後、在 日本コロムビア 的 Takt 爵士線留下的抒情盤，catno JAZZ-5 就落在 Takt 這條線的頭幾號（JAZZ-1 是他自己的《Jazz & Bossa》）。MB 這個 RG 轄下兩筆 release 都 Official：1967 年 12 吋原盤 13 軌，與 2018 年 Savoy 的全球數位版（題名改成《Sadao Watanabe Plays Ballads》）。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 店主 2026-09-15 要「重點專輯 5–10 張」，這張是他 Takt 時期的起點，補上之後池中的渡辺貞夫從 1976 往前推到 1967。",
+    "risk": "撞卡：盤名在池中零命中，掛名字串「渡辺貞夫」池中已有 3 張、盤名皆不同，不折疊。⚠ 盤名兩式：MB RG 題《My Romance: Sadao Plays Ballads》、2018 數位 release 題《Sadao Watanabe Plays Ballads》、Apple jp／us 用 RG 題——下游比對要鎖 rgMbid 不鎖盤名（同 c-131 第 3 條的作法）。年份：MB first-release-date 1967（無月日），Apple jp／us 同一條目記 1967-04-01、℗ 1967 Nippon Columbia，兩邊一致，不走第 352 條。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（盤名＋掛名）命中 1868591013《My Romance: Sadao Plays Ballads》13 軌 ℗ 1967 Nippon Columbia，藝人目錄查法（artistId 298235 Sadao Watanabe）同一筆亦在——軌數與 MB 的 13 軌一致；這只是兩種查法的觀察，不是結論（第 254 條）。⚠ 這一批 1967–69 的 Nippon Columbia 數位條目是 2025 年才上架的（collectionId 18685xxxxx 連號），研究層引發行資訊仍以 1967 年 Takt 原盤為準。",
+    "mbNote": "釘 release-group 6ecf258a-98da-4e67-b995-ed300df0610c。回問 release-group/<id>?inc=artist-credits 與 release?release-group=<id>&inc=labels+media+artist-credits 確認：title「My Romance: Sadao Plays Ballads」、artist-credit「Sadao Watanabe」（實體 378278bf-9cdd-4b4a-b319-38eddab9f1b1）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1967 Takt JAZZ-5 12 吋 13 軌／XW 2018-10-19 Savoy Records 數位 13 軌，題《Sadao Watanabe Plays Ballads》）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 廠牌是用 release 端點回問來的（第 259 條：release-group 端點不回 label-info）。刻意不釘：1041020f-39ab-431a-a2a4-b7a6b26cc150《Jazz & Bossa》1967（Takt JAZZ-1，CAA 404）、54892085-37cf-4716-a965-1df1979af185《Iberian Waltz》1967（Takt JAZZ-7，credit 是 Sadao + Charlie〈Mariano〉合掛）、7d1f1419-d15d-4541-b4fb-0efa7d719302《Sadao Watanabe Plays》1966-04-05（Polydor SLJM-1262，CAA 404）。",
+    "queryAlias": "Sadao Watanabe；Sadao Watanabe Plays Ballads；渡辺貞夫 マイ・ロマンス；サダオ・プレイズ・バラード；Watanabe Sadao My Romance",
+    "reissuedBy": "Savoy Records 全球數位（2018-10-19，題《Sadao Watanabe Plays Ballads》）；日本コロムビア／NIPPONOPHONE 數位（Apple jp 1868591013）"
+  },
+  {
+    "genres": [
+      "jazz"
+    ],
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "g": "a",
+    "artist": "渡辺貞夫",
+    "album": "Sadao Meets Brazilian Friends",
+    "year": 1968,
+    "label": "Columbia XMS-10003-CT（JP 1968-11 12 吋黑膠 12 軌）；JP 1989 DENON DC-8557 CD 12 軌",
+    "why": "他 1968 年 11 月與巴西樂手同錄的一張，盤名就寫明是「與巴西朋友相會」——這是渡辺貞夫把 bossa nova 帶進日本爵士主流的代表作，也是日後《California Shower》那條 fusion 線的源頭。MB 轄下兩筆 release 都 Official：1968-11 的 Columbia XMS-10003-CT 原盤與 1989 年 Denon 的 CD 復刻（DC-8557），軌數都是 12。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 池中既有的三張裡最早的《Pamoja》是 1976，這張把他的起點往前推八年，而且補的正是「日本爵士第一世代怎麼接上巴西音樂」這一格。",
+    "risk": "撞卡：盤名在池中零命中。⚠ 廠牌兩層：MB 的 1968 原盤 release 廠牌欄寫「Columbia」（catno XMS-10003-CT 是 日本コロムビア 的 Takt 爵士線編號），1989 年那筆寫「DENON」——同一條日本コロムビア 體系的兩個廠牌名，`label` 欄兩筆都列，日期／廠牌／catno 各自出自同一筆 release（第 262 條）。年份：MB first-release-date 1968-11，Apple jp／us 記 1968-11-10、℗ 1968 Nippon Columbia，一致。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search 與藝人目錄（artistId 298235）都命中 1868591489《Sadao Meets Brazilian Friends》12 軌 ℗ 1968 Nippon Columbia——軌數與 MB 一致；只是觀察，不是結論（第 254 條）。",
+    "mbNote": "釘 release-group 63578158-c7d1-39b5-9fce-17052b739bf6。回問 release-group 與 release 兩個端點確認：title「Sadao Meets Brazilian Friends」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1968-11、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1968-11 Columbia XMS-10003-CT 12 吋 12 軌，release 的 credit 寫 Sadao Watanabe／JP 1989 DENON DC-8557 CD 12 軌，credit 寫 渡辺貞夫）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 ⚠ 同 RG 在 jp-columbia.json 與 jp-denon.json 兩份列舉檔各出現一次（同一個 rgMbid，只是被兩個廠牌實體各撈到一次），不是兩張碟。 刻意不釘：4cefbabc-7a38-4e9d-8467-37545134edf4《Sadao Plays Bacharach and Beatles》1969（Columbia XMS-10010-CT，CAA 200，額度未收）、e2c1d3f0-ac7b-4a6b-885d-a45a4ca60bb9《Music Break》1969（Columbia XMS-10017-CT，CAA 200，Apple 標 Live 1967，額度未收）。",
+    "queryAlias": "Sadao Watanabe；Sadao Meets Brazilian Friends；渡辺貞夫 ブラジリアン・フレンズ；サダオ・ミーツ・ブラジリアン・フレンズ",
+    "reissuedBy": "Denon／日本コロムビア（1989 DC-8557 CD）；日本コロムビア／NIPPONOPHONE 數位（Apple jp／us 1868591489）"
+  },
+  {
+    "genres": [
+      "jazz"
+    ],
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "g": "a",
+    "artist": "渡辺貞夫",
+    "album": "Dedicated to Charlie Parker",
+    "year": 1969,
+    "label": "Columbia XMS-10018-CT（JP 1969 12 吋黑膠 6 軌）；JP 1985-12-21 DENON 32C38-7689 CD 6 軌",
+    "why": "渡辺貞夫 1969 年向 Charlie Parker 致敬的一張，是他 Takt／Columbia 時期最直接回到 bebop 的作品，也是他 1980 年代《Parker’s Mood》那條線的第一次。MB 轄下兩筆 release 都 Official（1969 年 Columbia XMS-10018-CT 原盤 6 軌，與 1985 年 Denon 的 CD 32C38-7689），與同期 Swing Journal 的《Jazz Workshop 2》另立 RG（ea469f1a，1974，本卡不釘）。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 池中的渡辺貞夫全是 fusion 期，這張把他的 bebop 底子補進來，與池中既有的 Charlie Parker 相關卡片互為對照。",
+    "risk": "⚠ 現場與錄音室分歧：MB 這個 RG 的 secondary-types 是空的，但 Apple jp／us 的官方條目題名是《Dedicated to Charlie Parker (Live, 1969)》、日期 1969-09-10——**Apple 說它是現場盤、MB 沒標**。本卡照 MB 記 Album 且不寫「錄音室」，`Live` 與否留研究層以曲目長度與盤面資訊判（第 253 條：Live 收但要標，這裡是「標不標得起來」的前一步）。撞卡：盤名在池中零命中；⚠ 盤名是描述性文字，MB 另有 ea469f1a-2ef4-4949-a55b-a6d210614415《Swing Journal Jazz Workshop 2 - Sadao Watanabe / Dedicated to Charlie Parker》1974 含同一串字，下游比對要鎖 rgMbid。年份：MB 1969，Apple 1969-09-10 ℗ 1969，一致。封面 CAA release-group 端點 200（實測）。Apple search 與藝人目錄兩種查法都命中 1868592310，6 軌，與 MB 的 6 軌一致（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group a2abeea8-054e-45aa-8568-b720fa786c9b。兩個端點回問確認：title「Dedicated to Charlie Parker」、artist-credit「Sadao Watanabe」（實體 378278bf）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1969 Columbia XMS-10018-CT 12 吋 6 軌／JP 1985-12-21 DENON 32C38-7689 CD 6 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 同一個 rgMbid 在 jp-columbia.json 與 jp-denon.json 各出現一次（廠牌實體重覆撈取，不是兩張碟）。刻意不釘：ea469f1a《Swing Journal Jazz Workshop 2 - Sadao Watanabe / Dedicated to Charlie Parker》1974（同曲目的 Swing Journal 企畫盤，另立 RG）。",
+    "queryAlias": "Sadao Watanabe；Dedicated to Charlie Parker (Live, 1969)；渡辺貞夫 チャーリー・パーカーに捧ぐ；デディケイテッド・トゥ・チャーリー・パーカー",
+    "reissuedBy": "Denon／日本コロムビア（1985-12-21 32C38-7689 CD）；日本コロムビア／NIPPONOPHONE 數位（Apple 1868592310）"
+  },
+  {
+    "genres": [
+      "jazz"
+    ],
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "g": "a",
+    "artist": "渡辺貞夫",
+    "album": "Pastoral",
+    "year": 1969,
+    "label": "CBS/Sony SONP 50130-J（JP 1969 12 吋黑膠 8 軌）",
+    "why": "渡辺貞夫 離開 日本コロムビア／Takt、轉進 CBS/Sony 之後的第一張領銜作（catno SONP 50130-J 落在 CBS/Sony 日本盤最早那一批），也是他 1969–75 年那條 CBS/Sony 線的起點——池中既有的三張裡沒有任何一張屬於這條線。MB 轄下只有這一筆 1969 年原盤（Official，8 軌），沒有任何 CD 或數位再發。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 店主要的「重點專輯」對渡辺貞夫來說就是 Takt 三張加 CBS/Sony 那條線，這張是後者的第一張。",
+    "risk": "撞卡：盤名在池中零命中；⚠ 盤名是單字（Pastoral），子字串比對假陽性風險高，實掃時逐筆核整個掛名字串後確認池中無同名碟。年份：MB first-release-date 1969，只有一筆 release 支撐，無分歧來源可比對——若研究層找到 CBS/Sony 的月份要補進 notes，但**不得跨筆把別的 release 的日期接過來**（第 262 條）。封面 CAA release-group 端點 200（實測）。⚠ Apple 三種查法的觀察：search（盤名＋掛名，jp／us）0 筆；藝人目錄查法（artistId 298235 Sadao Watanabe，80 餘筆全列）沒有這一筆；直查 collectionId 這一步策展層沒有候選可查（recover-unavailable 尚未跑）。**這只是兩種查法未命中的觀察，不是「未上架」的結論**（第 254 條）。⚠ 同一個藝人目錄裡 CBS/Sony 1969–74 那批（Pastoral、Paysages、Open Road、Mbali Africa、Live at the Junk）**一張都沒有**，而 Nippon Columbia 1966–69 那批 2025 年整批上架了——這是「某一家日本廠的 1970 年代目錄在 Apple 上整批缺席」的又一個實例（c-116 第 6 條、c-121 第 5.2 節、c-131 第 359 條同形），只是這次缺的是 Sony 不是小廠。",
+    "mbNote": "釘 release-group a4d3707b-67e9-4633-a8b8-6e23d57adc0d。兩個端點回問確認：title「Pastoral」、artist-credit「Sadao Watanabe」（實體 378278bf）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1969 CBS/Sony SONP 50130-J 12 吋 8 軌 Official，無 barcode）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 刻意不釘（同屬 CBS/Sony 線、CAA 200、額度未收）：df94c614-4280-4156-a86c-71b73a9bfc98《Live at the Junk》1970（SONP 50221-J，Album/Live）、a11be8fb-83e6-4dd7-80e6-206c857ec94f《Mbali Africa》1974（SOPW 27~28）、aebeb18b-4971-4a18-9431-e861f5ae080f《At Pit Inn》1975（SOPN 113，Album/Live）。刻意不釘（合掛，第 258／321 條）：dd031e02-40bd-40e0-acb2-2b58d3c046d1《Round Trip》1970（credit 是 Sadao Watanabe + Chick Corea + Miroslav Vitouš + Jack DeJohnette 四人平列）、8e14690a-edba-4fc2-b6e7-a6eff182d1eb《Kenya Ya Africa》1973（+ Inter-African Theatre Group）。",
+    "queryAlias": "Sadao Watanabe；渡辺貞夫 パストラル；Sadao Watanabe Pastoral；パストラル",
+    "reissuedBy": ""
+  },
+  {
+    "genres": [
+      "jazz"
+    ],
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "g": "a",
+    "artist": "渡辺貞夫",
+    "album": "Paysages",
+    "year": 1971,
+    "label": "CBS/Sony SOPC 57135-J（JP 1971 12 吋黑膠 5 軌）；JP 1997-09-21 Sony Records SRCS 9329 CD（題《Paysages (ペイサージュ)》）；JP 2007-06-20 Sony Records International SICP 10040 Hybrid SACD；JP 2009-06-20 SICP 20152 Blu-spec CD",
+    "why": "CBS/Sony 時期中段的代表盤，也是這條線裡被再發最多次的一張——MB 轄下四筆 release 全數 Official，從 1971 年 12 吋原盤到 1997 年 CD、2007 年 Hybrid SACD、2009 年 Blu-spec CD，四種載體都齊，等於 Sony 自己把它當目錄裡的常備品在維護。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 池中三張都是 1976 之後，這張與《Pastoral》《Open Road》一起把 1969–73 年那條 CBS/Sony 線建起來，正是店主要的「重點專輯」而不是全目錄。",
+    "risk": "撞卡：盤名在池中零命中。⚠ 廠牌／catno 要逐筆對：1971 原盤是 CBS/Sony SOPC 57135-J，1997 是 Sony Records SRCS 9329，2007／2009 是 Sony Records International SICP 10040／SICP 20152——**四筆的廠牌名各不相同，日期、廠牌、catno 不得跨筆接在一起**（第 262 條）。掛名：MB RG 的 artist-credit 是漢字「渡辺貞夫」，但 1971、1997、2007 三筆 release 的 credit 寫「Sadao Watanabe」、2009 那筆寫「渡辺貞夫」、1997 那筆寫「Sadao Watanabe (渡辺貞夫)」——依第 355 條取實體主名「渡辺貞夫」，四種寫法全進 queryAlias。年份：MB first-release-date 1971（原盤那筆就是 1971），無第 352 條的再發失真。封面 CAA release-group 端點 200（實測）。Apple 三種查法的觀察：search（jp／us）0 筆、藝人目錄（artistId 298235）沒有這一筆、第三步直查 collectionId 策展層無候選可查——**只寫觀察，不下結論**（第 254 條）。",
+    "mbNote": "釘 release-group 0a767962-36de-4f2e-9c6f-a0f619c46d2e。兩個端點回問確認：title「Paysages」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 4 個 release 全數 Official（JP 1971 CBS/Sony SOPC 57135-J 12 吋 5 軌／JP 1997-09-21 Sony Records SRCS 9329 CD 5 軌／JP 2007-06-20 Sony Records International SICP 10040 Hybrid SACD 5 軌／JP 2009-06-20 Sony Records International SICP 20152 Blu-spec CD 5 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 廠牌與載體全部出自 release 端點（第 259 條）。",
+    "queryAlias": "Sadao Watanabe；渡辺貞夫 ペイサージュ；Paysages (ペイサージュ)；Sadao Watanabe Paysages",
+    "reissuedBy": "Sony Records（1997-09-21 SRCS 9329 CD）；Sony Records International（2007-06-20 SICP 10040 Hybrid SACD、2009-06-20 SICP 20152 Blu-spec CD）"
+  }
+]
