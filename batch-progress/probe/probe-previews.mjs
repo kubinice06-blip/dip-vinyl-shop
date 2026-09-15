@@ -152,7 +152,13 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   c131: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
   c132: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
   c133: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
-  c134: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'] };
+  c134: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c135: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c136: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c137: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c138: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c139: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c140: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'] };
 
 const cards = [];
 for (const b of BATCHES)

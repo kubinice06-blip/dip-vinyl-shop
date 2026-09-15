@@ -113,6 +113,13 @@ export const LINES = {
   c132: { lineType: '深掘', scene: { a: '日本爵士第一世代：モダンジャズ主軸', b: '日本爵士第一世代：ピアノと管の目錄深度' } },
   c133: { lineType: '深掘', scene: { a: '日本爵士第一世代：ビッグバンドとコンボ', b: '日本爵士第一世代：和製ファンクとグルーヴ' } },
   c134: { lineType: '深掘', scene: { a: '日本爵士第一世代：戦後ピアノトリオ', b: '日本爵士第一世代：残る名手の重點作' } },
+  // c-135～c-140（2026-09-15 店主：「美國先挖blue note」「Blue太少了 這麼多你才選198張？」）：Blue Note 1939–66 缺的 261 張，依年份與目錄號順序切六批
+  c135: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
+  c136: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
+  c137: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
+  c138: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
+  c139: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
+  c140: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
