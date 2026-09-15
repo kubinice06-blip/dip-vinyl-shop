@@ -1,0 +1,986 @@
+[
+ {
+  "key": "desc2:Dezerter|Jeszcze żywy człowiek",
+  "artist": "Dezerter",
+  "album": "Jeszcze żywy człowiek",
+  "facts": [
+   {
+    "f": "release-group 3541a252 的欄位：title「Jeszcze żywy człowiek」、artist-credit「Dezerter」、first-release-date 1984、primary-type Album、secondary-types **Live**。轄下五筆 release：1984 PL Official **Tank Records、catno 003、Cassette 17 軌**（無 barcode）；2011-11-07 PL Official Mystic Production MYSTCD 194、CD 29 軌（barcode 5903427875204）；其餘三筆 status 皆為 Bootleg（Communist Bloc Records - Tapes 卡帶 24 軌、[no label] 的 1984 Jarocin 拼盤卡帶 21 軌、1991 Fala Ⓕ025 卡帶 17 軌，後者 disambiguation 寫「Live Jarocin 1.08.1984」）。**1984 年當年只有卡帶一種載體，沒有任何黑膠 release。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3541a252-6d94-47e5-a061-74089e2c445b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Dezerter 是 Group／PL、begin-area Warsaw、life-span.begin 1982-09-15、disambiguation「Polish Punk Rock Band」，名下 32 個 release-group，本卡是其中最早的 Album。member-of-band 關係列出 1982-09-15 起的四位原始成員：Dariusz Hajn（lead vocals，1982–1985）、Dariusz Stepnowski（bass，1982–1985）、Robert Matera（guitar，1982–）、Krzysztof Grabowski（drums，1982–）。",
+    "src": "https://musicbrainz.org/ws/2/artist/2c9a8e87-aee9-4ad8-9065-34f176f9b860?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：錄音是 **1984 年 8 月 1 日 Jarocin 音樂節的現場**，1984 年由樂團自己的 Tank Records 以卡帶形式發行，卡帶由團員自行組裝；原始卡帶兩面共 16 首。2011 年 Mystic Production 的 CD 擴成「整場演出的完整紀錄」29 軌，同時出了 LP。條目列的演出陣容是 Dariusz「Skandal」Hajn（主唱）、Robert「Robal」Matera（吉他）、Dariusz「Stepa」Stepnowski（貝斯）、Krzysztof Grabowski（鼓）。",
+    "src": "https://pl.wikipedia.org/wiki/Jeszcze_%C5%BCywy_cz%C5%82owiek"
+   },
+   {
+    "f": "原始卡帶的授權發行量是數百卷，之後的複本由樂迷自行轉錄流通；貝斯手 Dariusz「Stepa」Stepnowski 親手組裝卡帶並逐卷錄製。樂團 1981 年成立時用的團名是 SS-20，1982 年改名 Dezerter。",
+    "src": "https://savagesaints.blogspot.com/2013/12/dezerter-jeszcze-zywy-czowiek-live-tank.html"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 477095191）是 2011 年 Mystic Production 那版：盤名「Jeszcze Żywy Człowiek」、29 軌、releaseDate 2011-11-07、℗ 2011 Mystic Production，首軌〈Wstęp-Zadyma〉、末軌〈Musisz Być Kimś〉，全部 29 軌都有試聽。1984 年卡帶的 17 軌（〈Kto?〉〈XXI Wiek〉〈Szwindel〉〈Szara Rzeczywistość〉〈Nowe Wiadomości〉〈Atomowa Śmierć〉〈Nie Ma Zagrożenia〉〈T.〉〈Poroniona Generacja〉〈Ku Przyszłości〉〈Fabryka〉〈Spytaj Milicjanta〉〈Plakat〉〈Niewolnik〉〈Rebeliant〉〈Rejestr Wariatów〉〈Postęp〉）全部包含在這 29 軌之內。",
+    "src": "https://itunes.apple.com/lookup?id=477095191&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1984 年 8 月 1 日 Jarocin 的一場演出，當年只以團員親手組裝的數百卷卡帶流出，黑膠要等到 2011 年",
+   "團名 SS-20 兩年前才改成 Dezerter，這卷卡帶是它名下第一份整套錄音"
+  ],
+  "sound": "現場錄音，1984 年卡帶 17 軌、2011 年完整版 29 軌，全部是兩分鐘上下的快速硬蕊龐克，中間夾著與 Jarocin 觀眾的喊話。〈Ku Przyszłości〉是 1983 年 Tonpress EP 的標題曲，〈Spytaj Milicjanta〉〈Szara Rzeczywistość〉〈Nie Ma Zagrożenia〉三首後來也進了 1987 年美國壓的《Underground Out of Poland》。串流側把 29 軌版歸「Worldwide」而非 Punk，是店面分類的雜訊。",
+  "keyTracks": [
+   "Ku Przyszłości",
+   "Spytaj Milicjanta",
+   "Szara Rzeczywistość"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "recorded": 1984,
+   "note": "一致，1984。release-group first-release-date 1984、Tank Records 003 卡帶 date 欄 1984；錄音日期是 1984-08-01 Jarocin（pl.wiki 與 Fala 卡帶的 disambiguation 都寫 1.08.1984）。⚠ 串流側 releaseDate 2011-11-07 是 Mystic 完整版，不得覆蓋。"
+  },
+  "notes": "**覆核策展層：MBID 2c9a8e87（Dezerter）與 RG 3541a252 與卡單一致，廠牌／catno／載體／軌數（Tank Records 003、卡帶 17 軌）逐項屬實，未擋下。** 三筆 Bootleg 依第 325 條不引，策展層已標。｜**Jarocin 哪一屆哪一場（第 329 條）**：1984 年 8 月 1 日，Jarocin 音樂節（Festiwal Muzyków Rockowych）第一天；pl.wiki 與 Fala Ⓕ025 的 disambiguation 一致。｜**串流採信 477095191**（pl 店面，2011 Mystic 29 軌完整版）：1984 卡帶的 17 軌全部包含在內、曲名逐一對得上，℗ 2011 Mystic Production 對上 MB 2011 那筆 label-info；另一筆 1847597464 同為 29 軌、28/29 對位，是重複條目，取前者。**有固定試聽來源，但它對應的是 2011 年 29 軌版，行文引軌數要說清楚是哪一版**（第 251 條：卡帶 17／pl.wiki 說原始卡帶 16／CD 29，三個數字不同——**MB 的 17 與 pl.wiki 的 16 差一軌，正文避免寫卡帶的確切軌數**）。｜**人名邊界**：Hajn／Matera／Stepnowski／Grabowski 四人有 MB member-of-band 關係與 pl.wiki 雙重背書，可寫；綽號（Skandal／Robal／Stepa）只出自 pl.wiki，可寫但非必要。**SS-20 舊團名**出自 en.wiki 與 blog 兩處，可寫，但不要延伸成「因為什麼被迫改名」的敘事（來源沒講原因）。｜**政治邊界**：這是 1981-12 戒嚴後的龐克，正文只寫「1984 年 Jarocin 現場、自製卡帶、無國營廠牌」的發行事實，**不寫體制評價**。｜曲長：MB 卡帶 release 未登錄逐軌長度，長度只能引串流側 2011 版。｜非選輯、非重發：是現場錄音的原始出版品（secondary-type Live，依第 253 條收）。"
+ },
+ {
+  "key": "desc2:Dezerter|Kolaboracja",
+  "artist": "Dezerter",
+  "album": "Kolaboracja",
+  "facts": [
+   {
+    "f": "release-group 42ae4cc5 的欄位：title「Kolaboracja」、artist-credit「Dezerter」、first-release-date 1987、primary-type Album、secondary-types 空。轄下六筆 release 全為 PL Official：**Klub Płytowy Razem RLP 020、12\" Vinyl 15 軌、date 1987**；Polton PC-039 卡帶 15 軌、date 1987；1991 Izabelin Studio ISCD 7 CD；1995 Polton CDPL - 066 CD；2002 Metal Mind MMP CD 0166 Enhanced CD（barcode 5907785021259）；2012-11-09 Mystic Production MYSTCD 221 CD（barcode 5903427875716）。六筆軌數全是 15。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=42ae4cc5-708d-3172-8864-c8acedc57fbd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**1987 年 6 月 1–10 日錄音**；審查機關要求更改歌詞與封面、並禁止使用「Kolaboracja」這個標題。首批發行的處理是：**專輯標題被拿掉、部分曲名被改、封面有些部位以黑條遮蓋、錄音裡有些片段被換成嗶聲**——樂團堅持讓聽眾聽得到審查介入的位置，所以不改被質疑的字，改放嗶聲。卡帶版售出約 8000 卷、黑膠版約 5000 張。條目把黑膠寫成 1988 年 6 月由 Klub Płytowy Razem 發行。演出陣容 Robert Matera（主唱、吉他）、Krzysztof Grabowski（鼓）、Paweł Piotrowski（貝斯）。",
+    "src": "https://pl.wikipedia.org/wiki/Kolaboracja_(album)"
+   },
+   {
+    "f": "波蘭歌曲數位圖書館的專輯頁把這張登記為 **Klub płytowy „Razem” 1987 年、LP、RLP 020**，錄音 1987 年 6 月；並記：審查機關要求改詞改封面並禁用標題，樂團改在被質疑的字上放嗶聲；「因為這些限制，壓片量有限，唱片只供俱樂部會員取得」。",
+    "src": "https://bibliotekapiosenki.pl/albumy/Dezerter_Kolaboracja_Klub_plytowy_Razem_1987"
+   },
+   {
+    "f": "MB 1987 年 RLP 020 黑膠的 15 軌：〈Anarchia〉1:09、〈Tchórze〉、〈Musisz być kimś〉、〈Gorący pokój〉、〈Zatrute powietrze〉、〈Kto (to ci sami ludzie)〉、〈To miasto umiera〉、〈Judasz〉、〈Piosenka popularna na instrumenty produkcji krajowej〉、〈Polska złota młodzież〉、**第 11 軌的曲名登記為「(...)」**、〈Urodziłem się 20 lat po wojnie〉、〈Zmiany〉、〈Jestem spokojny〉、〈Taniec wszystkich narodów〉5:15 收尾。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=42ae4cc5-708d-3172-8864-c8acedc57fbd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 606806284）盤名「Kolaboracja」、15 軌、releaseDate 1987-01-01、℗ 1987 Dezerter（版權掛樂團自己）；15 軌長度與 MB 黑膠版逐軌相符（首軌 69 秒、末軌 315 秒），**串流側的末軌曲名是〈Mój Kraj〉而不是〈Taniec wszystkich narodów〉**，其餘 14 軌曲名一致。",
+    "src": "https://itunes.apple.com/lookup?id=606806284&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "審查刪掉標題與幾個字，樂團不換字、改放嗶聲，讓聽的人知道哪裡被剪過",
+   "第 11 軌在資料庫裡的曲名是三個點加括號——那就是被拿掉標題後留下的樣子"
+  ],
+  "sound": "15 軌 15 首，最短的〈Anarchia〉一分多、最長的〈Taniec wszystkich narodów〉五分多。前半是快速硬蕊（〈Tchórze〉〈Zatrute powietrze〉），後半節奏放慢、加進較長的段落，〈Piosenka popularna na instrumenty produkcji krajowej〉與〈Polska złota młodzież〉是中段兩首較長的曲子。串流側歸「Rock」。",
+  "keyTracks": [
+   "Anarchia",
+   "Polska złota młodzież",
+   "Urodziłem się 20 lat po wojnie"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "recorded": 1987,
+   "note": "**兩說**：MB 的 RLP 020 黑膠與 PC-039 卡帶 date 欄都是 1987、bibliotekapiosenki 記 1987、串流側 ℗ 1987；但 pl.wiki 把黑膠寫成 1988 年 6 月、Discogs 的 LP 條目（r981360）也標 1988，Discogs 卡帶條目（r8393718）標 1987。錄音 1987-06-01～10 無異議。**卡片維持 1987**（卡帶版與資料庫端一致），正文若要寫黑膠的月份就不要寫，只寫「1987 年」。"
+  },
+  "notes": "**覆核策展層：MBID／RG／廠牌 RLP 020／載體 12\" 15 軌屬實。擋下一處保留**：策展層把 RLP 020 黑膠寫死在 1987 年，外部兩個來源（pl.wiki、Discogs LP）記 1988，黑膠年份是兩說，見 yearVerified；**卡片年份不必改**。｜**審查是這張的主故事，而且是可查證的版本差異（標題被拿掉、曲名被改、封面黑條、嗶聲），依派工詞可寫成事實；不得寫評價、不得把它鋪成戒嚴敘事。** 「第 11 軌曲名登記為 (...)」是資料庫端可核的物證，比任何形容詞都有力。｜**串流採信 606806284**（pl 店面）：15 軌對 15 軌，逐軌長度與 MB 黑膠一致（首軌 69s／末軌 315s），℗ 1987 Dezerter。⚠ 末軌串流側叫〈Mój Kraj〉、資料庫端叫〈Taniec wszystkich narodów〉，**同一軌兩個名字**，正文提到末軌時用資料庫端的名字或不提。另一筆 1830069491 是 2013 年 15 軌（14/15 對位），取前者。**有固定試聽來源。**｜**人名邊界**：Matera／Grabowski 有 MB 關係背書，Paweł Piotrowski 有 MB 關係（bass 1985–1994）＋pl.wiki，三人可寫。｜**廠牌**：Klub Płytowy Razem 是《Razem》週刊的唱片俱樂部（策展層的說法），本層只從 bibliotekapiosenki 核到「唱片只供俱樂部會員取得」這一句，**「週刊的俱樂部」這層來歷本層未另查，正文不要延伸**。同年卡帶走 Polton PC-039，載體與廠牌要對上同一筆（第 262 條）。｜軌數三形態（第 251 條）：黑膠 15／卡帶 15／CD 15／串流 15，一致。"
+ },
+ {
+  "key": "desc2:Dezerter|Underground Out of Poland",
+  "artist": "Dezerter",
+  "album": "Underground Out of Poland",
+  "facts": [
+   {
+    "f": "release-group bdcb6f1a 的欄位：title「Underground Out of Poland」、artist-credit「Dezerter」、first-release-date 1987、primary-type Album、secondary-types **Compilation**。轄下七筆：**1987 US Official Maximumrocknroll MRR 003、12\" Vinyl 19 軌**；1987 GB Official 同編號 MRR 003 12\" 19 軌；1989 PL QQRYQ Tapes 006 卡帶 23 軌；1996 PL QQRYQ Productions QQP 064CD CD 18 軌；2002 PL Pop Noise NOISE 042 CD 18 軌；2009 PL Nikt Nic Nie Wie 12\" 18 軌；2019-10-30 PL Mystic Production MYSTCD 370 CD 19 軌（barcode 5902643883093）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bdcb6f1a-5e02-3b82-b3b4-e218b92e1d26&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "英文維基：這張合輯 1987 年由 Maximumrocknroll 廠牌發行，內容合併了 Dezerter 在波蘭國營 Tonpress 出的第一張 EP 的曲目與 1984 年 Jarocin 音樂節的現場；加拿大龐克團 D.O.A. 的 Joey Shithead 在 1985 年 12 月見到樂團後，提議把錄音帶到北美，1987 年由 Maximumrocknroll 出版。條目寫它是數千名西方龐克第一次接觸 Dezerter 與東歐集團龐克地下的入口，Dezerter 也是最早出黑膠的東歐硬蕊團之一。",
+    "src": "https://en.wikipedia.org/wiki/Underground_Out_of_Poland"
+   },
+   {
+    "f": "MB 1987 年 US 壓片的 19 軌：〈Ku przyszłości〉〈Spytaj milicjanta〉〈Szara rzeczywistość〉〈Wojna głupców〉〈Plakat〉〈Nie ma zagrożenia〉〈Mayday Parade Singalong〉〈Niewolnik〉〈Rebeliant〉〈Postęp〉〈Zatrute powietrze〉〈Uległość〉〈Zmiany〉〈Polska złota młodzież〉〈Urodziłem się 20 lat po wojnie〉〈Kto?〉〈XXI Wiek〉〈Captain Hans Kloss Sings〉〈Szwindel〉。其中〈Zatrute powietrze〉〈Zmiany〉〈Polska złota młodzież〉〈Urodziłem się 20 lat po wojnie〉四首同時是 1987 年《Kolaboracja》的曲目，〈Kto?〉〈XXI Wiek〉〈Szwindel〉〈Spytaj milicjanta〉〈Plakat〉〈Niewolnik〉〈Rebeliant〉〈Postęp〉是 1984 年 Jarocin 卡帶《Jeszcze żywy człowiek》的曲目；兩首英文標題的〈Mayday Parade Singalong〉與〈Captain Hans Kloss Sings〉是這張獨有。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bdcb6f1a-5e02-3b82-b3b4-e218b92e1d26&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Maximum Rocknroll 官網有 Dezerter 的樂團頁與這張唱片的頁面，把它列在雜誌自營廠牌的出版目錄裡。",
+    "src": "https://www.maximumrocknroll.com/underground-out-of-poland/"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1486588759）盤名「Underground Out Of Poland」、19 軌、℗ 1987 Dezerter、releaseDate 2006-08-07；19 軌曲名與 MB 的 US 壓片逐軌對位（首軌〈Ku Przyszłości〉173 秒、末軌 104 秒），**串流側末軌叫〈Dla Zysku〉、資料庫端叫〈Szwindel〉**，第 7 與第 18 軌的英文標題在串流側也有對應。",
+    "src": "https://itunes.apple.com/lookup?id=1486588759&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "波蘭團的第一張 12 吋黑膠不在波蘭壓，是美國樂迷雜誌 Maximum Rocknroll 自營廠牌的第 3 號",
+   "D.O.A. 的主唱 1985 年底把母帶帶出波蘭，兩年後美英兩地各壓了一版"
+  ],
+  "sound": "19 軌合輯，Tonpress EP 的錄音室版本與 1984 年 Jarocin 現場混排，錄音質地兩種一聽就分得出。〈Ku przyszłości〉開場，〈Spytaj milicjanta〉〈Szara rzeczywistość〉緊接，中段〈Mayday Parade Singalong〉與後段〈Captain Hans Kloss Sings〉是兩首英文標題的曲子，〈Polska złota młodzież〉〈Urodziłem się 20 lat po wojnie〉是 1987 年《Kolaboracja》那批的曲子。串流側歸「Punk」。",
+  "keyTracks": [
+   "Ku przyszłości",
+   "Spytaj milicjanta",
+   "Polska złota młodzież"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "recorded": null,
+   "note": "合輯出版年 1987（US 與 GB 兩筆 MRR 003 皆 1987，串流側 ℗ 1987）。內容橫跨 1983 年 Tonpress EP 錄音與 1984-08-01 Jarocin 現場，MB 未登記逐軌年份；依第 323 條 year 取資料庫登記的出版年 1987。⚠ 串流側 releaseDate 2006-08-07 是數位上架日，不得覆蓋。"
+  },
+  "notes": "**§5.6 合輯，性質屬實、有歷史定位**：內容是 Dezerter 1983 年 EP 與 1984 年 Jarocin 現場的成套形態，而且是這支團第一張 12 吋黑膠、由美國樂迷雜誌廠牌壓片，**建議保留**（策展層的 exceptionReason 成立）。**覆核策展層：MBID／RG／MRR 003／US＋GB 兩筆 12\" 19 軌屬實，未擋下。** 策展層說「這 19 軌到 1987 年才成套」，本層逐軌比對後補一點：**19 軌裡有 4 首同時在 1987 年《Kolaboracja》、8 首在 1984 年 Jarocin 卡帶**，正文不要寫成「全部是沒發過的曲目」。｜**串流採信 1486588759**（pl 店面）：19 軌對 19 軌、逐軌長度與 MB US 壓片一致，℗ 1987 Dezerter。⚠ 末軌兩個名字（〈Dla Zysku〉／〈Szwindel〉）。另一筆 1830151561 是 2019 年 Mystic 版（12/19 對位），取前者。**有固定試聽來源。**｜**人名邊界**：Joey Shithead（D.O.A.）出自 en.wiki 單一來源，⚠ **正文可寫「加拿大龐克團 D.O.A. 的主唱」，不具名**；Tim Yohannan（MRR 創辦人）本層查到的來源沒有把他與這張直接連在一起，**不得寫**。｜**政治邊界**：「錄音被帶出波蘭到北美出版」是發行事實，可寫；不要加「走私」「偷渡」這類渲染詞（來源沒這樣講）。｜「東歐最早出黑膠的硬蕊團之一」是 en.wiki 的措辭，帶「之一」，可照抄，不要升級成「第一個」。｜軌數三形態（第 251 條）：1987 黑膠 19／1989 波蘭卡帶 23／1996–2009 CD 與 LP 18／2019 CD 19／串流 19，**引軌數只能引 19 並綁定 1987 年 MRR 003**。"
+ },
+ {
+  "key": "desc2:Dezerter|Kolaboracja II",
+  "artist": "Dezerter",
+  "album": "Kolaboracja II",
+  "facts": [
+   {
+    "f": "release-group 1bcc2fbd 的欄位：title「Kolaboracja II」、artist-credit「Dezerter」、first-release-date 1989、primary-type Album、secondary-types 空。轄下只有兩筆：**1989 PL Official PolJazz PSJ-211、12\" Vinyl 13 軌**（無 barcode）；1997 PL Official QQRYQ Productions QQP 078CD、CD 13 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1bcc2fbd-7f48-32f9-9db0-ed51a5f4453f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：1989 年 2 月 20 日由 PolJazz 以 PSJ-211 發行黑膠；**1988 年 5 月在 Opole 的 Studio PR 錄音、1988 年 7 月在華沙的 Studio Wawrzyszew 混音**；因審查，「Kolaboracja II」這個標題沒有印在唱片上；1997 年 QQRYQ Productions 再發時，把 1989 年黑膠版被審查過的〈Budujesz faszyzm przez nietolerancję〉重新錄了一版收進去，並在除首末兩軌之外的每一軌補錄了吉他。",
+    "src": "https://pl.wikipedia.org/wiki/Kolaboracja_II"
+   },
+   {
+    "f": "MB 1989 年黑膠的 13 軌：〈Kolaboracja II〉3:14 開場、〈Budujesz faszyzm przez nietolerancję〉、〈Co oni nam dają?〉、〈Fabryka〉、〈Jeszcze żywy człowiek〉、〈Jesteśmy tacy sami〉、〈El Salvador〉、〈Nienawiść i wojna〉1:38、〈Dopiero tuż nad ziemią〉5:02（全碟最長）、〈Nowe wiadomości〉、〈Rejestr wariatów〉、〈Wystarczy tylko chcieć〉、〈Kolaboracja III〉3:06 收尾。**〈Fabryka〉〈Jeszcze żywy człowiek〉〈Nowe wiadomości〉〈Rejestr wariatów〉四首的標題與 1984 年 Jarocin 卡帶上的曲目相同**，這裡是錄音室版本。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1bcc2fbd-7f48-32f9-9db0-ed51a5f4453f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1484819024）盤名「Kolaboracja II」、13 軌、℗ 1989 MTJ、releaseDate 1989-12-31；13 軌曲名與 MB 黑膠逐軌一致，首軌〈Kolaboracja II〉194 秒、末軌〈Kolaboracja III〉189 秒，長度與 MB 相差不超過 3 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1484819024&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "標題「Kolaboracja II」因審查沒印在唱片上，第 13 軌卻直接叫〈Kolaboracja III〉",
+   "一支龐克團的第二張 LP，目錄號是 PolJazz 的 PSJ-211"
+  ],
+  "sound": "13 軌，比 1987 年那張速度更穩、吉他更厚，〈Kolaboracja II〉與〈Kolaboracja III〉一頭一尾把整張框起來。〈Fabryka〉〈Jeszcze żywy człowiek〉〈Nowe wiadomości〉〈Rejestr wariatów〉是 1984 年 Jarocin 現場曲目的錄音室版本，〈Dopiero tuż nad ziemią〉五分鐘是全碟最長。串流側歸「Punk」。",
+  "keyTracks": [
+   "Kolaboracja II",
+   "Jeszcze żywy człowiek",
+   "Dopiero tuż nad ziemią"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1989,
+   "recorded": 1988,
+   "note": "一致，1989。release-group first-release-date 1989、PSJ-211 黑膠 date 欄 1989，pl.wiki 給到 1989-02-20；錄音 1988-05 Opole、混音 1988-07 華沙。⚠ 串流側 releaseDate 1989-12-31 是店面填的年末預設值，不是發行日。"
+  },
+  "notes": "**覆核策展層：MBID／RG／PolJazz PSJ-211／12\" 13 軌／1997 QQRYQ 再發，逐項屬實，未擋下。** 策展層說 PolJazz 是「波蘭爵士協會（Polskie Stowarzyszenie Jazzowe）的出版部門」——本層未另查 PolJazz 的沿革，**正文可以寫「PolJazz」這個廠牌名與編號，「爵士協會出版部」的說法請寫作層視為策展層背景、不要當成已核事實**。｜**審查是可寫的版本差異**：標題未印在唱片上、〈Budujesz faszyzm przez nietolerancję〉1989 年版被審查過、1997 年重錄——三件事都是 pl.wiki 的具體記載；**不得寫評價**。｜**串流採信 1484819024**（pl 店面）：13 軌對 13 軌、曲名逐軌一致、長度差 ≤3 秒，℗ 1989 MTJ（MTJ 是後來的數位發行方，與 1989 年黑膠的 PolJazz 不同，正文不要把 MTJ 當成當年廠牌）。**有固定試聽來源。**｜**人名邊界**：本卡來源沒有列出這張的演出陣容，**正文不具名任何成員**（MB 關係只到樂團層級，未綁到這張）。｜同名撞擊：Dezerter 在 MB 全域只有一筆，乾淨。｜軌數三形態：黑膠 13／CD 13／串流 13，一致。"
+ },
+ {
+  "key": "desc2:Brygada Kryzys|Brygada Kryzys",
+  "artist": "Brygada Kryzys",
+  "album": "Brygada Kryzys",
+  "facts": [
+   {
+    "f": "release-group 5087c34b 的欄位：title「Brygada Kryzys」、artist-credit「Brygada Kryzys」、first-release-date 1982、primary-type Album、secondary-types 空。轄下七筆：**1982 PL Official Tonpress SX-T16、12\" Vinyl 9 軌**；1982 PL Official Vega JG-005 卡帶 9 軌；1991 Izabelin Studio 002 卡帶 10 軌（多一軌〈Ganja〉放在開頭）；1999 POLmusic PmCD 107 CD；2002 Andromeda CD 0990；2003 Agencja Artystyczna MTJ CD 10241（barcode 5906409102411）；另一筆 MTJ 的 Digital Media 9 軌無日期。9 軌從〈Centrala〉5:56 開場到〈Fallen, Fallen Is Babylon〉5:28 收尾，〈Radioaktywny blok〉只有 1:01。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5087c34b-4f93-3a4c-acd8-239604656932&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Brygada Kryzys 是 Group／PL、life-span.begin 1981、disambiguation 空，名下 12 個 release-group，本卡是第一個 Album；member-of-band 關係只列 Robert Brylewski（1981–）與 Piotr Żyżelewicz（1991–1994）兩位。",
+    "src": "https://musicbrainz.org/ws/2/artist/33d47558-8927-427a-92a9-ec5d8679b6f5?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Tonpress SX-T 16、LP、1982 年，9 軌兩面；基本陣容 Robert「Afa」Brylewski（吉他、主唱）、Tomasz Lipiński（吉他、主唱）、Ireneusz Wereński（貝斯）、Janusz Rołt（鼓）、Jarosław Ptasiński（打擊樂）、Tomasz「Man」Świtalski（薩克斯風）。",
+    "src": "https://polskirock.eu/plyta/brygada-kryzys-brygada-kryzys-sxt16/"
+   },
+   {
+    "f": "英文維基的專輯條目：1982 年在華沙的 Tonpress KAW 錄音室錄音、同年由 Tonpress 發行；九軌裡〈The Real One〉〈Travelling Stranger〉〈Except One〉三首是英文歌，其餘波蘭文曲名條目另附英譯（〈Centrala〉＝Headquarters）。人員與 Archiwum 一致。",
+    "src": "https://en.wikipedia.org/wiki/Brygada_Kryzys_(album)"
+   },
+   {
+    "f": "波蘭廣播電台的《Historia Pewnej Płyty》節目頁：這張人稱「Czarna Brygada」（黑色 Brygada），1982 年初春、戒嚴期間在華沙 Wawrzyszew 區的 Tonpress 錄音室錄製——Tonpress 在 1982 年頭幾個月提供樂團試用剛開幕的錄音室，樂團抓住了這個機會；唱片是 Tonpress 出的第一批波蘭新浪潮搖滾專輯之一。節目頁也提到唱片本來要被銷毀，各方說法不一（大部分被送去絞碎，或只有約四分之一）。",
+    "src": "https://www.polskieradio.pl/podcasty/historia-pewnej-plyty/debiutancki-album-brygady-kryzys"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1484162213）盤名「Brygada Kryzys」、9 軌、℗ 1999 MTJ、releaseDate 1982-01-01，9 軌曲名與 MB 黑膠逐軌一致，長度差 ≤3 秒（〈Centrala〉359 秒、〈Radioaktywny blok〉59 秒、末軌 330 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1484162213&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "九軌裡三首唱英文，一張 1982 年在華沙錄的波蘭新浪潮唱片，人稱「黑色 Brygada」",
+   "Tonpress 的錄音室剛開幕就讓他們試用，錄出來的東西後來一度要被送去絞碎"
+  ],
+  "sound": "9 軌，後龐克底子加雷鬼與 dub 的段落，〈Centrala〉六分鐘開場、〈Radioaktywny blok〉一分鐘就結束，〈Przestań śnić〉六分半是全碟最長。〈The Real One〉〈Travelling Stranger〉〈Except One〉三首英文歌排在 B 面前段，〈Ganja〉之後以〈Fallen, Fallen Is Babylon〉收尾。薩克斯風貫穿多軌。串流側歸「Rock」。",
+  "keyTracks": [
+   "Centrala",
+   "Przestań śnić",
+   "Fallen, Fallen Is Babylon"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1982,
+   "recorded": 1982,
+   "note": "一致，1982。release-group first-release-date 1982、SX-T16 黑膠與 Vega 卡帶 date 欄皆 1982、Archiwum 與 en.wiki 皆 1982；錄音 1982 年初春（polskieradio）。⚠ 串流側 ℗ 1999 MTJ 是再發方。"
+  },
+  "notes": "**覆核策展層：MBID 33d47558／RG 5087c34b（有波蘭原壓的那個，第 326 條）／Tonpress SX-T16 12\" 9 軌／Vega JG-005 卡帶，逐項屬實，未擋下。** 第二個同名 RG 726ebd94（英國 Fresh Records 7\"）本層未碰。｜**「黑色唱片」的稱呼**：polskieradio 寫「Czarna Brygada」、店家頁面寫「Czarna Płyta」，兩種都有人用，正文用其一即可、不要並列成「正式名稱」。｜**唱片被銷毀**：polskieradio 自己就寫「各方說法不一」（大部分 vs 約四分之一），⚠ **正文只能寫「一度要被銷毀、比例各說不一」或乾脆不寫比例**，不得寫成確定數字。｜**人名邊界**：六位演出者有 Archiwum 的欄位與 en.wiki 雙重背書，可寫；Brylewski 另有 MB 關係。⚠ 製作人 Józef Kuba Nowakowski 與錄音師 Witold Palacz 只出自 polskieradio 一處，**不得進正文**（可寫「Tonpress 的製作人與錄音師」）。｜**政治邊界**：「1982 年初春、戒嚴期間錄音」是來源原句，可寫日期脈絡；**不得鋪成戒嚴敘事、不得寫評價**。｜**串流採信 1484162213**（pl 店面）：9 軌對 9 軌、逐軌長度一致，℗ 1999 MTJ。另一筆 954796865 是《XXXLive》現場輯、1840806272 是 2 軌單曲，皆非本卡。**有固定試聽來源。**｜前身團 Kryzys 在 MB 是另一個實體（第 324 條），本卡 facts 未引它。｜軌數三形態：黑膠 9／1982 卡帶 9／1991 卡帶 10／CD 9／串流 9。"
+ },
+ {
+  "key": "desc2:Siekiera|Nowa Aleksandria",
+  "artist": "Siekiera",
+  "album": "Nowa Aleksandria",
+  "facts": [
+   {
+    "f": "release-group be32c5dd 的欄位：title「Nowa Aleksandria」、artist-credit「Siekiera」、first-release-date 1986-12-14、primary-type Album、secondary-types 空。轄下七筆：**1986 PL Official Tonpress SXT-73、12\" Vinyl 10 軌**（date 欄 1986-12-14）；1991-11-30 Sonic Records SON 9 CD 13 軌（barcode 5901844900929）；2003 MTJ CD 10251 CD 10 軌；2006 Tonpress CDT073 CD 13 軌；2012 MTJ CD 90241 雙 CD 10＋15 軌；2012-11-30 XW Digital Media 10＋15 軌；2024-12-13 MTJ Hybrid SACD 14 軌（barcode 5906409122853）。10 軌：〈Idziemy przez las〉4:39、〈Ludzie wschodu〉、〈Bez końca〉、〈Idziemy na skraj〉、〈Na zewnątrz〉6:06、〈Nowa Aleksandria〉、〈To słowa〉、〈Już blisko〉2:46、〈Tak dużo, tak mocno〉、〈Czerwony pejzaż〉4:49。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=be32c5dd-f9ac-3c33-b4ab-1b26f40e1410&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Siekiera 是 Group／PL、begin-area Puławy、life-span.begin 1983、ended true、disambiguation 空，名下 13 個 release-group，只有本卡是 primary-type Album 且 secondary-types 空的錄音室盤；member-of-band 關係只列 Tomasz Budzyński（1983–1984）。",
+    "src": "https://musicbrainz.org/ws/2/artist/650106a3-6d40-4d48-a8cb-33d23a0ab3fa?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Tonpress SX-T 73、LP、1986 年，10 軌兩面；基本陣容 Tomasz Adamski（吉他、主唱）、Dariusz Malinowski（貝斯、主唱）、Paweł Młynarczyk（鍵盤）、Zbigniew Musiński（鼓）。",
+    "src": "https://polskirock.eu/plyta/siekiera-nowa-aleksandria-sxt73/"
+   },
+   {
+    "f": "英文維基的專輯條目：1985 年 12 月在華沙的 Tonpress KAW 錄音室錄音、1986 年由 Tonpress 發行；1985 年 12 月 5 日樂團與 Tonpress 簽下首張專輯的錄音合約，因為時間與經費有限，整張在不到兩週內錄完；所有曲子由 Tomasz Adamski 作曲作詞。條目寫這張背離樂團早年的龐克、轉向 coldwave／darkwave，主要受 Killing Joke 影響，當年在波蘭龐克圈不受歡迎、後來在新浪潮圈成為 cult 唱片。",
+    "src": "https://en.wikipedia.org/wiki/Nowa_Aleksandria"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1485673816）是 2012 年 MTJ 的雙 CD 版：盤名「Nowa Aleksandria」、25 軌、℗ 2012 MTJ、releaseDate 2012-11-30；前 10 軌與 MB 黑膠逐軌一致、長度差 ≤2 秒（〈Idziemy przez las〉278 秒、〈Na zewnątrz〉366 秒），第 11–25 軌是 1985 年 Puławy Dom Chemika 的 demo 等附錄，末軌〈Misiowie puszyści (Szewc zabija szewca) [Puławy, Dom Chemika '85 demo]〉。",
+    "src": "https://itunes.apple.com/lookup?id=1485673816&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1983 年以最快最短的龐克起家，1985 年 12 月簽約、不到兩週錄完的這張卻是冷硬的合成器後龐克",
+   "MB 名下 13 個 release-group，只有這一張是錄音室專輯——其餘全是現場、demo 與後製"
+  ],
+  "sound": "10 軌，冷硬的合成器鋪底、貝斯推進、吉他刮擦，主唱以近乎喊話的平直語調唱。〈Idziemy przez las〉開場，〈Ludzie wschodu〉〈Bez końca〉接續，〈Na zewnątrz〉六分鐘是全碟最長；B 面〈Nowa Aleksandria〉是標題曲，〈Już blisko〉不到三分鐘，〈Czerwony pejzaż〉收尾。串流側歸「Rock」。",
+  "keyTracks": [
+   "Idziemy przez las",
+   "Nowa Aleksandria",
+   "Na zewnątrz"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1986,
+   "recorded": 1985,
+   "note": "一致，1986。release-group first-release-date 1986-12-14、SXT-73 黑膠 date 欄同值、Archiwum 與 en.wiki 皆 1986；錄音 1985-12（合約 1985-12-05）。⚠ MB 的「12-14」精確到日，本層外部來源只到「1986 年」，正文只寫年份。串流側 2012-11-30 是雙 CD 版上架日。"
+  },
+  "notes": "**覆核策展層：MBID 650106a3／RG be32c5dd／Tonpress SXT-73 12\" 10 軌／1991 Sonic SON 9 13 軌，逐項屬實，未擋下。** 策展層寫「13 個 RG 裡唯一一張 primary-type=Album 且 secondary-types 空的原盤」，本層以 release-group 瀏覽端點複核 13 個 RG，成立。｜**串流採信 1485673816**（pl 店面，2012 MTJ 雙 CD 25 軌版）：前 10 軌與黑膠逐軌一致、長度差 ≤2 秒，℗ 2012 MTJ 對上 MB 2012 那筆 label-info。**有固定試聽來源，但引軌數要綁定 1986 年黑膠的 10 軌**（第 251 條：黑膠 10／1991 CD 13／2012 雙 CD 25／2024 SACD 14）。｜**人名邊界**：Adamski／Malinowski／Młynarczyk／Musiński 四人有 Archiwum 欄位背書，Adamski 另有 en.wiki（作曲作詞）雙重背書，可寫；⚠ **Tomasz Budzyński 是 1983–84 龐克時期的主唱（MB 關係），不在這張上，正文不得把他寫成這張的主唱**。｜「受 Killing Joke 影響」「cult 唱片」是 en.wiki 的措辭，可寫但用「後來」的時序。｜同名撞擊：Siekiera 在 MB 全域只有一筆（第 324 條），乾淨；⚠ 店面另有一位饒舌歌手 Siekiera（artistId 586602907），**本層查目錄時已排除**。｜非選輯、非重發。"
+ },
+ {
+  "key": "desc2:Siekiera|Na wszystkich frontach świata",
+  "artist": "Siekiera",
+  "album": "Na wszystkich frontach świata",
+  "facts": [
+   {
+    "f": "release-group 65e253bb 的欄位：title「Na wszystkich frontach świata」、artist-credit「Siekiera」、first-release-date 2007、primary-type Album、secondary-types **Compilation**。轄下只有一筆：**PL Official Manufaktura Legenda ML 8、Enhanced CD 30 軌、date 欄 2007、barcode 5906453604985**。30 軌全是 1984 年那套龐克曲目，同一首反覆出現不同版本：〈Wojownik〉三次（第 4、22、29 軌）、〈Było tylko czterech nas〉三次（第 11、19、28 軌）、〈Ładuj działo〉〈Rana kłuta〉〈Piwko dla wojska〉〈Banda dzika〉〈Oddział ślepych (Fala)〉〈Idzie wojna〉各兩次；標題曲〈Na wszystkich frontach świata〉是第 8 軌、1:54。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65e253bb-72bd-34e3-bc00-c9f450b4899d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**2008 年 1 月 26 日由 Manufaktura Legenda 出版**；30 軌來自 1984 年三個來源——**第 1–16 軌是 1984 年 8 月在 Puławy 的 Dom Chemika 錄的，第 17–24 軌是 1984 年 8 月 1／4 日 Jarocin 音樂節的現場，第 25–30 軌是 1984 年 8 月 25 日 Wrocław 的 Rock na Wyspie 現場**；四人編制 Tomasz Adamski（吉他）、Tomasz Budzyński（主唱）、Dariusz Malinowski（貝斯）、Krzysztof Grela（鼓）；總長 71 分 10 秒；同時另出一張黑膠《1984》收原始編制最後幾次排練之一的錄音；封面由 Wilhelm Sasnal 設計。",
+    "src": "https://pl.wikipedia.org/wiki/Na_wszystkich_frontach_%C5%9Bwiata"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Manufaktura Legenda ML8、CD、**2008 年**，30 軌逐軌長度與 MB 一致（〈Sierściotłuki〉1:18 開場、末軌〈Idzie wojna〉5:27）；基本陣容 Tomasz Adamski（吉他、主唱）、Tomasz Budzyński（主唱）、Krzysztof Grela（鼓）、Dariusz Malinowski（貝斯）。",
+    "src": "https://polskirock.eu/plyta/siekiera-na-wszystkich-frontach-swiata-ml8/"
+   },
+   {
+    "f": "藝人端點：Siekiera 名下 13 個 release-group 裡，1984 年的東西只以現場與 demo 的形態存在（《Jarocin 04.08.1984》《Róbrege '84》《Warszawa Remont 84》《Demo Summer '84》），沒有任何 1984 年的錄音室 Album；member-of-band 關係列 Tomasz Budzyński 1983–1984 為成員。",
+    "src": "https://musicbrainz.org/ws/2/artist/650106a3-6d40-4d48-a8cb-33d23a0ab3fa?fmt=json&inc=release-groups+artist-rels&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "同一首〈Wojownik〉在一張碟裡出現三次——排練室、Jarocin、Wrocław 各一版，1984 年的 Siekiera 就只剩這些",
+   "1984 年那個唱龐克的 Siekiera 當年一張唱片都沒出，二十四年後才由 Manufaktura Legenda 把 30 軌湊齊"
+  ],
+  "sound": "30 軌 71 分鐘，全是一兩分鐘的極速硬蕊龐克，前 16 軌是 Puławy Dom Chemika 的排練室錄音、17–24 軌是 1984 年 8 月 Jarocin 現場、25–30 軌是 8 月 25 日 Wrocław 現場，同一首歌在三個場合各出現一次。〈Sierściotłuki〉一分多開場，〈Śmierć i taniec〉5:26 是唯一超過五分鐘的，〈Na wszystkich frontach świata〉第 8 軌不到兩分鐘。主唱是 1983–84 年的 Tomasz Budzyński。",
+  "keyTracks": [
+   "Na wszystkich frontach świata",
+   "Wojownik",
+   "Idzie wojna"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "recorded": 1984,
+   "note": "§5.6 合輯：year 取原始錄音年 1984（30 軌全部錄於 1984 年 8 月，pl.wiki 逐段給出日期，依第 255／323 條）。**合輯出版年：MB 登記 2007，pl.wiki 與 Archiwum 皆記 2008-01-26／2008**——兩個外部來源對一個資料庫值，正文若提出版年寫 2008。"
+  },
+  "notes": "**§5.6 合輯，性質屬實、有歷史定位（1984 年龐克編制唯一的成套發行形態，第 323 條已驗曲目表），建議保留。** **覆核策展層：擋下一處**——策展層的 label 欄與 exceptionReason 把合輯出版年寫成 2007（照 MB），**pl.wiki 給出 2008 年 1 月 26 日、Archiwum 記 2008**，MB 的 2007 應是登錄誤差；卡片 year 是 1984 不受影響，但 label 欄與正文的出版年要改成 2008。｜**Jarocin 哪一屆哪一場（第 329 條）**：第 17–24 軌是 1984 年 8 月 1／4 日 Jarocin 音樂節現場（pl.wiki 寫「1/4.08.1984」，兩天的錄音混在一起，正文寫「1984 年 8 月 Jarocin」即可，不要指定單一天）。｜**串流：三種查法皆落空**——pl／de／gb／us 四店面 search 0 筆，藝人目錄（artistId 1485522733）只有《Nowa Aleksandria》《Jest bezpiecznie - Single》《Ballady na koniec świata》三筆，無候選 collectionId 可直查。**無固定試聽來源。**｜**人名邊界**：四位成員有 Archiwum 欄位與 pl.wiki 雙重背書，可寫；⚠ Wilhelm Sasnal（封面）只出自 pl.wiki 一處，**不得進正文**。｜**盤名**：pl.wiki 條目名與 MB 一致；策展層的 queryAlias 已含去變音形。｜同一批錄音的其他切法（《Jarocin 04.08.1984》等 RG）多數無 first-release-date，策展層已寫進刻意不釘。｜第 251 條：只有一種形態（CD 30 軌）。"
+ },
+ {
+  "key": "desc2:Aya RL|Aya RL (Czerwona)",
+  "artist": "Aya RL",
+  "album": "Aya RL (Czerwona)",
+  "facts": [
+   {
+    "f": "release-group fbbf9e32 的欄位：title「Aya RL (Czerwona)」、artist-credit「Aya RL」、first-release-date 1985、primary-type Album、secondary-types 空。轄下三筆：**1985 PL Official Tonpress、Vinyl 10 軌、catno 欄空**；1991 PL Pomaton EMI POM CD 007 CD 14 軌（多出〈Skóra〉〈Oczy〉〈Jazz〉〈Skóra (remix)〉四軌）；2003 PL Agencja Artystyczna MTJ CDMTJ10245 CD 10 軌（barcode 5906409102459）。10 軌：〈Księżycowy krok〉4:39、〈Nasza ściana〉5:14、〈Czy to oni〉、〈Unikaj zdjęć〉、〈Nie zostawię〉、〈Ulice miasta〉、〈Polska〉、〈Wariant \"C\"〉、〈Pogo I〉2:12、〈Pogo II〉2:36。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fbbf9e32-b9c9-3a8e-a5df-ab6c3e0e6009&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：**Tonpress SX-T 67**、LP、1985 年，附註「czerwona」（紅）；基本陣容 Igor Czerniawski（製作、鼓機、鍵盤、主唱）、Paweł Kukiz（打擊樂、主唱）、Jarosław Lach（吉他）；客席含三位和聲與兩位打擊樂手；製作 Walter Chełstowski。該頁的曲目把第 3 軌寫成〈A ja się ukrywam〉、第 6 軌寫成〈Ulica〉。",
+    "src": "https://polskirock.eu/plyta/aya-rl-aya-rl-sxt67/"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：1985 年由 Tonpress 以 SX-T 67 發行、1991 年 Pomaton 以 POM CD 007 再發；錄音分兩段——**1985 年 4 月 23–27 日與 5 月 9–15 日**；陣容 Igor Czerniawski（鍵盤、編程、主唱）、Paweł Kukiz（主唱、打擊樂）、Jarosław Lach（吉他）；**1985 年黑膠刻意沒收〈Skóra〉**，那首要到 1991 年 CD 才與另外三首附錄一起加進來；「czerwona」（紅）這個稱呼是為了與 1989 年的續作《Aya RL (niebieska)》（藍）區分；曲風欄列 post-punk、cold wave、new wave、dark wave。",
+    "src": "https://pl.wikipedia.org/wiki/Aya_RL_(czerwona)"
+   },
+   {
+    "f": "波蘭文維基的樂團條目：Aya RL（最初叫 Aya Red Love）1983 年由 Igor Czerniawski、Paweł Kukiz 與 Jarosław Lach 組成——鍵盤手 Czerniawski 與 Hak 樂團的兩位創團者 Lach、Kukiz 是 1983 年在 Jarocin 音樂節上認識的。〈Skóra〉在 1984 年把樂團推上波蘭流行音樂的頂端，是 1980 年代最常被辨認出的暢銷曲之一。",
+    "src": "https://pl.wikipedia.org/wiki/Aya_RL"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1484182491）盤名「Aya RL (Czerwona)」、10 軌、℗ 2003 MTJ、releaseDate 2003-03-31；10 軌與 MB 黑膠逐軌對位、長度差 ≤1 秒（〈Księżycowy krok〉279 秒、〈Nasza ściana〉314 秒），第 9、10 軌在串流側寫成〈Pogo, cz. 1〉〈Pogo, cz. 2〉。",
+    "src": "https://itunes.apple.com/lookup?id=1484182491&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1984 年讓他們紅遍全國的〈Skóra〉，隔年的首張 LP 刻意不收，要等 1991 年 CD 才補進去",
+   "盤面只印 Aya RL，樂迷靠封面顏色叫它「紅盤」，四年後的下一張就是「藍盤」"
+  ],
+  "sound": "10 軌，合成器與鼓機是主體、吉他只做點綴，主唱在冷靜與爆發間切換。〈Księżycowy krok〉開場、〈Nasza ściana〉五分多是最長的一軌，中段〈Unikaj zdjęć〉〈Nie zostawię〉，B 面〈Polska〉〈Wariant \"C\"〉之後以〈Pogo I〉〈Pogo II〉兩段兩三分鐘的短曲收尾。串流側歸「Rock」。",
+  "keyTracks": [
+   "Księżycowy krok",
+   "Polska",
+   "Nasza ściana"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1985,
+   "recorded": 1985,
+   "note": "一致，1985。release-group first-release-date 1985、Tonpress 黑膠 date 欄 1985、Archiwum 與 pl.wiki 皆 1985；錄音 1985-04-23～27 與 05-09～15。⚠ 串流側 releaseDate 2003-03-31 與 ℗ 2003 MTJ 是再發版，另一筆 1758742168 標 1985 卻是 15 軌（含〈Skóra〉），不是原盤，不採。"
+  },
+  "notes": "**覆核策展層：MBID f341d1e9／RG fbbf9e32／Tonpress 10 軌屬實；第 327 條（盤名取 MB 括號寫法）成立。擋下一處補正**：策展層的 label 欄寫「MB 未登記 catno」——MB 確實空，但 **Archiwum 與 pl.wiki 都給出 SX-T 67**，label 欄可補；依第 259 條這不是 MB 沒有而是外部才有。｜**〈Skóra〉不在這張上**是本卡最硬的一條事實（pl.wiki 明寫刻意不收、1991 CD 才加）；策展層沒寫這點，本層補上。**正文若提〈Skóra〉，一定要講清楚它不在 1985 年黑膠上。**｜⚠ **曲名兩套**：MB 與串流側第 3／6 軌是〈Czy to oni〉〈Ulice miasta〉，Archiwum 與 1991 CD 是〈A ja się ukrywam〉〈Ulica〉——同一軌兩個名字，**正文避開這兩軌**。｜**串流採信 1484182491**（pl 店面，2003 MTJ 10 軌版）：10 軌對 10 軌、長度差 ≤1 秒。**有固定試聽來源。**｜**人名邊界**：Czerniawski／Kukiz／Lach 三人有 Archiwum 欄位＋pl.wiki 兩處背書（Kukiz 另有 MB 關係），可寫；⚠ 製作人 Walter Chełstowski 只出自 Archiwum 一處，**不得進正文**；三位和聲與兩位打擊樂客席不必寫。｜**反向禁令**：Paweł Kukiz 後來的從政生涯與這張無關，**一律不寫**。｜同名撞擊：Aya RL 在 MB 全域只有一筆；店面同掛名條目 12 筆，本層逐一直查排除。｜第 251 條：黑膠 10／1991 CD 14／2003 CD 與串流 10，引軌數綁定 1985 年黑膠。"
+ },
+ {
+  "key": "desc2:Klaus Mitffoch|Klaus Mitffoch",
+  "artist": "Klaus Mitffoch",
+  "album": "Klaus Mitffoch",
+  "facts": [
+   {
+    "f": "release-group e5ecf595 的欄位：title「Klaus Mitffoch」、artist-credit「Klaus Mitffoch」、first-release-date 1984、primary-type Album、secondary-types 空。轄下六筆：**1984 PL Official Tonpress SX-T40、12\" Vinyl 16 軌**；1991 Tonpress CD-T 019 與 2004 Tonpress CDT019 皆 CD 19 軌；1999 KOCH International 52153-2 CD 16 軌（barcode 664125215321）；2003-04-01 Agencja Artystyczna MTJ CDMTJ10249 CD 16 軌（barcode 5906409102497）；另一筆同 barcode 的 XW Digital Media 16 軌。16 軌從 32 秒的〈Śpij aniele mój〉開場、〈Strzelby〉只有 26 秒，到 5:16 的〈Strzeż się tych miejsc〉收尾。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e5ecf595-3189-349e-a2ec-08363c234819&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Klaus Mitffoch 是 Group／PL、begin-area Wrocław、**life-span 1979–1989、ended true**、disambiguation 空、aliases「Klaus Mit Foch」「Klauss Mittwoch」，名下只有 3 個 release-group（1983 年單曲、1984 年本卡、1988 年《Mordoplan》）。member-of-band 關係：Lech Janerka（bass、lead vocals，**1979–1984-08**，original）、Krzysztof Pociecha（guitar，1979–1984-08，original）、Wiesław Mrozik（guitar，1979–1989，original）、Kazimierz Sycz（drums，1979–，original）。",
+    "src": "https://musicbrainz.org/ws/2/artist/923635df-34e3-492b-a121-820261edd814?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Tonpress SX-T 40、LP、1984 年，16 軌兩面、逐軌長度與 MB 一致；基本陣容 Lech Janerka（主唱、貝斯）、Wojciech Konikiewicz（鍵盤）、Wiesław Mrozik（吉他）、Krzysztof Pociecha（吉他）、Marek Puchała（鼓）；〈Klus Mitroh〉一軌註明「曲：傳統旋律、詞：Lech Janerka」。",
+    "src": "https://polskirock.eu/plyta/klaus-mitffoch-klaus-mitffoch-sxt40/"
+   },
+   {
+    "f": "英文維基：Klaus Mitffoch 1979 年在 Wrocław 由 Lech Janerka、Krzysztof Pociecha 與 Kazimierz Sycz 組成，1984 年錄了同名首張專輯；**樂團在 1984 年、也就是專輯發行的同一年解散**；條目寫這張「獲得數個獎項，被視為波蘭搖滾史上最重要的專輯之一」。解散後 Janerka 開始長期的個人生涯，Pociecha 又與他合作了兩張專輯。",
+    "src": "https://en.wikipedia.org/wiki/Klaus_Mitffoch"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1484541377）盤名「Klaus Mitffoch」、16 軌、℗ 2003 MTJ、releaseDate 1985-01-01；16 軌與 MB 黑膠逐軌一致、長度完全相同（首軌 32 秒、〈Strzelby〉26 秒、末軌〈Strzeż się tych miejsc〉316 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1484541377&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "錄音完成到唱片上市之間，樂團已經解散——MB 把主唱兼貝斯手的成員關係結束在 1984 年 8 月",
+   "16 軌裡有兩軌不到半分鐘，最後一軌〈Strzeż się tych miejsc〉五分多，是整張唯一超過四分鐘的"
+  ],
+  "sound": "16 軌，多數兩三分鐘，貝斯線是主角、吉他刮擦、鍵盤點綴，主唱以近乎唸白的方式唱。32 秒的〈Śpij aniele mój〉開場，〈Wiązanka pieśni bojowych〉與〈Wiązanka cz. IV〉是兩段一分多鐘的組曲，〈Klus Mitroh〉用傳統旋律填新詞，〈Strzelby〉26 秒，全碟以 5:16 的〈Strzeż się tych miejsc〉收尾。串流側歸「Rock」。",
+  "keyTracks": [
+   "Strzeż się tych miejsc",
+   "Klus Mitroh",
+   "Nie jestem z nikim"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "recorded": 1984,
+   "note": "一致，1984。release-group first-release-date 1984、SX-T40 黑膠 date 欄 1984、Archiwum 與 en.wiki 皆 1984。⚠ 串流側 releaseDate 1985-01-01 與 ℗ 2003 MTJ 皆非發行年，不得覆蓋。"
+  },
+  "notes": "**覆核策展層：MBID 923635df／RG e5ecf595／Tonpress SX-T40 12\" 16 軌／life-span 1979–1989／名下 3 個 RG，逐項屬實，未擋下。** ⚠ 但 MB life-span end 寫 1989、en.wiki 寫 1984 年解散、MB 成員關係把 Janerka 與 Pociecha 結束在 1984-08——**「1989」可能是後來重組或最後活動的年份，正文寫「首張專輯發行那年樂團解散」時用 en.wiki 的 1984**，不要寫 1989。｜**串流採信 1484541377**（pl 店面）：16 軌對 16 軌、長度逐軌完全相同，℗ 2003 MTJ。另外五筆同掛名條目（單曲、2005 合輯、9 軌《Mordoplan》）皆非本卡。**有固定試聽來源。**｜**人名邊界**：Janerka／Pociecha／Mrozik／Sycz 有 MB 關係背書；Archiwum 的錄音陣容列 Konikiewicz（鍵盤）與 Puchała（鼓）而不是 Sycz——**這張的鼓手是 Marek Puchała（Archiwum 欄位），Sycz 是創團鼓手（MB／en.wiki）**，正文若寫鼓手要分清楚，最穩是不寫鼓手。｜「Jazz Forum 年度新人」「獲得數個獎項」：前者只出自搜尋摘要一處，⚠ **不得進正文**；後者 en.wiki 有寫但未具名獎項，正文可寫「獲獎」不可寫獎名。｜**反向禁令**：Lech Janerka 之後的個人生涯與這張直接綁定（樂團解散、他單飛），可用一句帶過時序，不展開。｜同名撞擊：MB 全域只有一筆；店面另有合掛名條目（第 330 條），不得用來背書成員。｜第 251 條：黑膠 16／1991 與 2004 CD 19／1999 與 2003 CD 16／串流 16。"
+ },
+ {
+  "key": "desc2:Kult|Posłuchaj to do Ciebie",
+  "artist": "Kult",
+  "album": "Posłuchaj to do Ciebie",
+  "facts": [
+   {
+    "f": "release-group adb8b15f 的欄位：title「Posłuchaj to do Ciebie」、artist-credit「Kult」、first-release-date 1987-03、primary-type Album、secondary-types 空。轄下四筆：**1987-03 PL Official Klub Płytowy Razem RLP 015、12\" Vinyl 11 軌**（disambiguation「LP vinyl original release」）；1991 PL S.P. Records 002/91 ＋ Kompania Muzyczna Pomaton POM 032 卡帶 16 軌；1992-03 PL S.P. Records SPCD 002/91 CD 18 軌（barcode 5908294613324）；2007 同編號 remastered CD 18 軌。**1987 年黑膠的第 1 軌登記為〈Wódka (na całym świecie źle się dzieje koledzy)〉**，其後〈Hej, czy nie wiecie〉〈Post〉〈Kult〉〈Totalna stabilizacja〉〈Narodzeni na nowo〉〈Umarł mój wróg〉〈Elektryczne nożyce〉〈Spokojnie〉〈Rozmyślania wychowanka〉〈(Gdziekolwiek idę) Z tobą chce iść〉。1992 年 CD 在前面加了〈Piosenka młodych wioślarzy〉〈Piloci〉〈Do Ani〉〈Polska〉〈Babilon〉〈Taniec wielki〉六軌、末尾加〈Wódka 2〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=adb8b15f-a833-3af9-9b49-e394d3a555ed&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Kult 是 Group／PL、begin-area Warsaw、life-span.begin 1982、disambiguation「founded by Kazik Staszewski in 1982」，名下 42 個 release-group。1987 年 RLP 015 黑膠的 release 層關係列出：Kazik Staszewski（lead vocals、saxophone、keyboard、drum machine、lyricist）、Janusz Grudziński（guitar、keyboard、cello、background vocals）、Ireneusz Wereński（bass）、Tadeusz Kisieliński（drums、percussion）、Paweł Szanajca（saxophone）、Kostek Joriadis（trumpet、congas、keyboard、cowbell）、Jacek Kufirski（guitar、drum machine）；錄音與混音 Włodzimierz Kowalczyk 與 Tadeusz Czechak，攝影 Piotr Zambrowicz。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=adb8b15f-a833-3af9-9b49-e394d3a555ed&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "英文維基的專輯條目：**1987 年 1 月錄音、1987 年 10 月發行**，Klub Płytowy „Razem”；1987 年黑膠 11 軌（A 面 5、B 面 6，合計 38:22），1992 年 CD 擴成 18 軌 68:12，加進〈Piosenka młodych wioślarzy〉〈Piloci〉〈Do Ani〉等七首；條目明寫 **〈Na całym świecie źle się dzieje koledzy〉與〈Wódka〉是同一首歌的兩個名字**。",
+    "src": "https://en.wikipedia.org/wiki/Pos%C5%82uchaj_to_do_Ciebie"
+   },
+   {
+    "f": "1987 年黑膠上〈Wódka〉改題為〈Na całym świecie źle się dzieje koledzy〉是為了避開審查；因為錄的歌太多、一張黑膠放不下，加上審查機關對這批素材有意見，1987 年 Klub Płytowy Razem 的版本最後只收 11 首，**被審查退回的有〈Polska〉〈Babilon〉〈Taniec wielki〉三首，以及一個大部分是器樂的〈Wódka〉版本**；現在通行的 18 軌版本要到 1992 年 CD 才出現，加回被退的曲子、單曲〈Piloci / Do Ani〉與 Tonpress 合輯上的〈Piosenka młodych wioślarzy〉。",
+    "src": "https://pablosreviews.blogspot.com/2020/10/kult-posluchaj-to-do-ciebie-1987.html"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Klub płytowy „Razem” RLP 015、LP、1987 年，11 軌兩面（〈Wódka (na całym świecie źle się dzieje koledzy)〉5:14 開場、〈(Gdziekolwiek idę) Z tobą chce iść〉3:08 收尾）；基本陣容 Kazimierz「Kazik」Staszewski（中音薩克斯風、鼓、編程、主唱）、Janusz Grudziński（吉他、鍵盤、大提琴）、Kostek Joriadis（康加、鍵盤、小號）、Tadeusz Kisieliński（鼓）、Paweł Szanajca（次中音薩克斯風）、Jacek Szymoniak（鍵盤）、Ireneusz Wereński（貝斯）。",
+    "src": "https://polskirock.eu/plyta/kult-posluchaj-to-do-ciebie-rlp015/"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1098856767）是 18 軌的擴充版：盤名「Posłuchaj to do Ciebie (Expanded)」、releaseDate 1987-01-01；1987 年黑膠的 11 軌落在第 7–17 軌（第 7 軌〈Wódka〉315 秒、第 17 軌〈Z Tobą chcę iść〉189 秒），前六軌是 1992 年才加回的〈Piosenka Młodych Wioślarzy〉〈Piloci〉〈Do Ani〉〈Polska〉〈Babilon〉〈Taniec Wielki〉，第 18 軌〈Wódka II〉；第 13 軌串流側寫成〈Umarł Twój wróg〉（資料庫端〈Umarł mój wróg〉）。",
+    "src": "https://itunes.apple.com/lookup?id=1098856767&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "〈Wódka〉為了過審查改名叫〈Na całym świecie źle się dzieje koledzy〉，1987 年黑膠上第 1 軌就是它",
+   "被退回的〈Polska〉〈Babilon〉〈Taniec wielki〉三首要等到 1992 年 CD 才回到這張裡"
+  ],
+  "sound": "1987 年黑膠 11 軌 38 分鐘，薩克斯風、小號與鼓機混在龐克底子上，主唱的唸唱式咬字是辨識點。〈Wódka〉五分多開場、〈Hej, czy nie wiecie〉接著也超過五分鐘，〈Post〉〈Kult〉〈Totalna stabilizacja〉三首兩三分鐘，B 面〈Spokojnie〉四分鐘是後來同名專輯的標題，〈(Gdziekolwiek idę) Z tobą chce iść〉收尾。串流側的 18 軌版歸「Rock」。",
+  "keyTracks": [
+   "Wódka (na całym świecie źle się dzieje koledzy)",
+   "Hej, czy nie wiecie",
+   "Spokojnie"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "recorded": 1987,
+   "note": "一致，1987。⚠ 月份兩說：MB 的 RG 與黑膠 date 欄是 1987-03，en.wiki 寫 1987 年 10 月發行（1 月錄音）；正文只寫「1987 年」、不寫月份。Archiwum 記 1987。串流側 releaseDate 1987-01-01 是店面預設值。"
+  },
+  "notes": "**覆核策展層：MBID 5e857ebe／RG adb8b15f／Klub Płytowy Razem RLP 015 12\" 11 軌，逐項屬實，未擋下。** ｜**人名邊界（第 324 條第 3 點的翻案）**：策展層說 Kult 的 disambiguation 帶創團者本名、依第 241／250／305 條不轉述。本層查到 **Kazik Staszewski 同時有 MB disambiguation、MB member-of-band 關係（1982–，original）、1987 年黑膠的 release 層 relationship（lead vocals／lyricist）與 Archiwum 欄位四重背書**——這是全批背書最完整的一個人名，**可寫進正文**。其餘六位演出者有 MB release 層關係＋Archiwum 雙重背書，可寫；錄音師 Kowalczyk／Czechak 有 MB release 層關係，可寫但非必要。｜**審查是這張的主故事，可寫成版本差異**：〈Wódka〉改題、三首被退、11 軌 vs 18 軌——en.wiki 與 pablosreviews 兩處一致；**不得寫評價**。⚠ 「被退的三首」只有 pablosreviews 一處列出具體曲名（en.wiki 只說 1992 年加回七首），正文可以寫「三首被退回」但**曲名以 en.wiki 的 1992 年加回清單為準**。｜**串流採信 1098856767**（pl 店面，18 軌 Expanded 版）：1987 年黑膠 11 軌落在第 7–17 軌、曲名逐軌對位、長度差 ≤1 秒。**有固定試聽來源，但引軌數與曲序要綁定 1987 年黑膠的 11 軌**（第 251 條：黑膠 11／1991 卡帶 16／CD 與串流 18）。｜同名撞擊（第 324 條）：Kult 全域 76 筆，本層核 RG 的 artist-credit 指向 5e857ebe（PL／1982），與卡單一致，facts 未混入他團。｜第 262 條：日期（1987-03）、廠牌（RLP 015）、載體（12\"）、軌數（11）全出自同一筆 1a71c5d1。"
+ },
+ {
+  "key": "desc2:Kult|Spokojnie",
+  "artist": "Kult",
+  "album": "Spokojnie",
+  "facts": [
+   {
+    "f": "release-group 893dacc9 的欄位：title「Spokojnie」、artist-credit「Kult」、first-release-date 1988、primary-type Album、secondary-types 空。轄下四筆：**1988 PL Official Polton LPP-035、12\" Vinyl 9 軌**；**1989 PL Official Polton CDPL-001、CD 9 軌**（disambiguation「Polton 1988 first CD release with 9 tracks」）；1993 S.P. Records 006/93 CD 10 軌（barcode 5908294613317）；2007 S.P. Records SP KULT 01/07 CD 10 軌（barcode 5908295444446）。9 軌：〈Patrz!〉3:11、〈Arahja〉3:40、〈Jeźdźcy〉5:50、〈Axe〉4:56、〈Do Ani〉5:15、〈Niejeden〉4:21、〈Landy〉4:11、**〈Tan〉12:14**、〈Wstać!〉1:47。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=893dacc9-eb91-333d-ad5b-fb8151573e7e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**1988 年 1–2 月在 Poznań 的 Studio Giełda 錄音**，黑膠 1988 年 12 月 4 日由 Polton 發行；條目寫它是「第一張在波蘭出版、收錄音樂的波蘭 CD（Polton, CDPL-001）」；電台熱門曲是〈Do Ani〉與〈Arahja〉；封面由 Jacek Pałucha 設計；基本陣容 Kazik Staszewski（主唱）、Piotr Morawiec（吉他）、Janusz Grudziński（吉他、合成器、顫音琴）、Ireneusz Wereński（貝斯）、Tadeusz Kisieliński（鼓），客席含薩克斯風、法國號、小號與塔布拉鼓；CD 再發加了電影歌曲〈Czarne słońca〉。",
+    "src": "https://pl.wikipedia.org/wiki/Spokojnie"
+   },
+   {
+    "f": "波蘭文維基的〈Arahja〉條目：這首歌 1987 年秋天寫成，旋律由 Janusz Grudziński 在 Sławomir Pietrzak 的公寓裡作出——先寫貝斯線、再寫獨奏與鍵盤部分，排練時用 Casio 合成器模擬管風琴的聲音；曲名原本打算叫〈Nowa piosenka o Berlinie〉、後來叫〈Berlin〉，但那個名字已在 ZAiKS（波蘭的著作權協會）登記過，才改成〈Arahja〉。",
+    "src": "https://pl.wikipedia.org/wiki/Arahja"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Polton LPP - 035、LP、1988 年，9 軌兩面、逐軌長度與 MB 一致（〈Tan〉12:14）；基本陣容 Kazimierz「Kazik」Staszewski（主唱）、Krzysztof Banasik（低音提琴、小號、法國號）、Janusz Grudziński（吉他、管風琴、顫音琴）、Sławomir Janicki（吉他）、Marek Jaszczur（口琴）、Tadeusz Kisieliński（鼓）、Sławomir Pietrzak（吉他）、Jerzy Pomianowski（塔布拉鼓）、Paweł Szanajca（次中音薩克斯風）、Ireneusz Wereński（貝斯）。",
+    "src": "https://polskirock.eu/plyta/kult-spokojnie-lpp035/"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1097922726）是加了〈Czarne Słońca〉的 10 軌版：盤名「Spokojnie」、releaseDate 1987-01-01；1988 年黑膠的 9 軌落在第 2–10 軌、曲名逐軌一致、長度差 ≤1 秒（〈Arahja〉220 秒、〈Tan〉735 秒、〈Wstać〉107 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1097922726&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "〈Arahja〉本來要叫〈Berlin〉，這個名字在著作權協會已經有人登記，才換成現在的曲名",
+   "九軌裡一首〈Tan〉佔了十二分鐘，收尾的〈Wstać!〉不到兩分鐘"
+  ],
+  "sound": "9 軌，比前兩張更慢、更寬，管風琴音色的鍵盤、顫音琴、口琴與塔布拉鼓都進來了。〈Patrz!〉三分鐘開場，〈Arahja〉緊接在第 2 軌，〈Jeźdźcy〉〈Do Ani〉各五分多，B 面〈Tan〉12:14 佔掉大半面，〈Wstać!〉1:47 收尾。串流側歸「Rock」。",
+  "keyTracks": [
+   "Arahja",
+   "Do Ani",
+   "Tan"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1988,
+   "recorded": 1988,
+   "note": "一致，1988。release-group first-release-date 1988、LPP-035 黑膠 date 欄 1988，pl.wiki 給到 1988-12-04；錄音 1988-01～02 Poznań。CD 版 CDPL-001 是 1989（MB）。⚠ 串流側 releaseDate 1987-01-01 是店面預設值，策展層第 330 條已標「店面標 1987」。"
+  },
+  "notes": "**覆核策展層：MBID／RG 893dacc9／Polton LPP-035 12\" 9 軌／1989 CDPL-001 CD 9 軌，逐項屬實，未擋下。** ｜**「波蘭第一張 CD」這條宣稱（research-base 的廠牌第一張規則）**：pl.wiki 原句是「第一張在波蘭出版、收錄音樂的波蘭 CD（Polton, CDPL-001）」，搜尋結果裡 polskirock.art.pl 與 eskarock 也這樣轉述，**但本層沒有反查到 Polskie Nagrania 或其他廠牌 1988–89 年的 CD 目錄，無法排除更早的波蘭 CD**。⚠ **正文退一層寫「Polton 的 CD 目錄第一號 CDPL-001」（這是 catno 可核的），不要寫「波蘭第一張 CD」**；notes 記本層退了這一層。｜**〈Arahja〉的命名故事**：pl.wiki 條目寫得具體（ZAiKS 已登記〈Berlin〉），可寫；Grudziński 作曲有 MB 關係（1982-10–1998-05 成員）與 pl.wiki 背書；⚠ Sławomir Pietrzak 只出自 pl.wiki 與 Archiwum（吉他）兩處，可寫但非必要。｜**人名邊界**：Kazik Staszewski 四重背書（見上一張）可寫；封面設計 Jacek Pałucha 只出自 pl.wiki 一處，⚠ 不得進正文。｜**串流採信 1097922726**（pl 店面，10 軌版）：1988 年黑膠 9 軌落在第 2–10 軌、長度差 ≤1 秒。**有固定試聽來源，引軌數綁定黑膠 9 軌**（第 251 條：黑膠 9／1989 CD 9／1993 起 CD 與串流 10）。｜錄音室在 Poznań（Studio Giełda），與樂團的華沙據點不同城，可寫。"
+ },
+ {
+  "key": "desc2:Armia|Antiarmia",
+  "artist": "Armia",
+  "album": "Antiarmia",
+  "facts": [
+   {
+    "f": "release-group 3ec6aa80 的欄位：title「Antiarmia」、artist-credit「Armia」、first-release-date 1987、primary-type Album、secondary-types 空。轄下六筆：**1987 PL Official Pronit PLP 0075、12\" Vinyl 15 軌——這筆 release 的 title 是「Armia」，不是「Antiarmia」**；1988 PL Pronit PC-063 卡帶 15 軌（title 也是「Armia」）；1991 Fala Ⓕ032 與 032 兩筆卡帶 13 軌（title「Armia」）；1999 Ars Mundi AMS 019R CD 23 軌；2005 Metal Mind Records MMP CD DG 0342 CD 22 軌（barcode 5907785026322）。15 軌：〈Intro 87〉〈Hej szara wiara〉〈Wojny bez łez〉〈Wołanie o pomoc〉〈W niczyjej sprawie〉〈Nigdzie teraz tutaj〉〈Wiatr wieje tam gdzie chce〉〈Bombadil w locie〉〈Obok historii〉〈Sędziowie〉〈Nic już nie przeszkodzi〉〈Siódmy〉〈Niewidzialna armia〉〈Niewidzialna armia II〉〈Zostaw to 87〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3ec6aa80-108e-3e1a-9d24-08efa839c50c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Armia 是 Group／PL、begin-area Warsaw、life-span.begin 1984-12、disambiguation 空，名下 33 個 release-group；member-of-band 關係：Tomasz Budzyński（1984–）、Krzysztof Banasik（1984–）、Robert Brylewski（1985–1993）、Dariusz Malejonek（1990–1994）、Piotr Żyżelewicz（1990–1998）等。",
+    "src": "https://musicbrainz.org/ws/2/artist/69443da0-1ee0-4624-a837-c3f9e252dac8?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：盤名登記為「Armia」、Pronit PLP 0075、LP、**1988 年**，15 軌兩面（A 面 9 軌、B 面 6 軌）；基本陣容 Robert「Afa」Brylewski（吉他）、Tomasz Budzyński（主唱）、Tomasz「Gogo Szulc」Kożuchowski（鼓）、Tomasz「Żwirek」Żmijewski（貝斯），客席 Piotr Sobotkiewicz（長笛）。",
+    "src": "https://polskirock.eu/plyta/armia-armia-plp0075/"
+   },
+   {
+    "f": "波蘭文維基的專輯條目標題是「Armia (album)」，開頭寫「Armia (Antiarmia) – 樂團的第一張長篇專輯」；**1987 年 5–6 月在 Rzeszów 的 RSC 錄音室錄音，黑膠 1988 年由 Pronit 發行**；A 面 9 軌、B 面 6 軌共 15 首；Tomasz Budzyński 在所有曲子擔任主唱；再發：1999 Ars Mundi 23 軌、2005 Metal Mind 22 軌、2009 年又一次。",
+    "src": "https://pl.wikipedia.org/wiki/Armia_(album)"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1506078043）盤名「Antiarmia」、15 軌、℗ 1988 Metal Mind Productions、releaseDate 1988-09-01；15 軌曲名與 MB 黑膠逐軌一致（〈Intro 87〉111 秒、〈Nic Już Nie Przeszkodzi〉400 秒是最長、〈Zostaw To 87〉245 秒收尾），MB 黑膠未登錄長度。",
+    "src": "https://itunes.apple.com/lookup?id=1506078043&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1987 年 Pronit 黑膠的盤面印的是「Armia」，「Antiarmia」這個名字是後來的再發與資料庫才用的",
+   "第 1 軌〈Intro 87〉、第 15 軌〈Zostaw to 87〉——兩個 87 把錄音年份直接寫進曲名"
+  ],
+  "sound": "15 軌，龐克底子加長笛與較慢的段落，主唱的高亢吟唱是辨識點。〈Intro 87〉不到兩分鐘開場，〈Hej szara wiara〉一分多，〈Nic już nie przeszkodzi〉六分多是全碟最長，〈Niewidzialna armia〉與〈Niewidzialna armia II〉連著排在 B 面後段，〈Zostaw to 87〉收尾。串流側歸「Rock」。",
+  "keyTracks": [
+   "Hej szara wiara",
+   "Niewidzialna armia",
+   "Nic już nie przeszkodzi"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "recorded": 1987,
+   "note": "**兩說、二比二**：MB 的 RG first-release-date 與 PLP 0075 黑膠 date 欄是 1987、Discogs（r1051526）也是 1987；**Archiwum Polskiego Rocka 與 pl.wiki 都記 1988**，串流側 ℗ 1988。錄音 1987-05～06 無異議（MB 的 1988 那筆是 PC-063 卡帶）。**卡片維持卡單的 1987**，但正文最穩的寫法是「1987 年錄音」，不要寫「1987 年發行」——若寫發行年，1988 的證據不比 1987 弱。"
+  },
+  "notes": "**覆核策展層：MBID 69443da0（Armia，PL／1984-12）與 RG 3ec6aa80 一致，Pronit PLP 0075 12\" 15 軌屬實。擋下兩處**：(1) **盤名名實**——MB 的 RG 叫「Antiarmia」，但 1987／1988 年 Pronit 黑膠、Pronit 卡帶、1991 Fala 卡帶三筆 release 的 title 全是「Armia」，Archiwum 與 Discogs 也把原盤登記為《Armia》，「Antiarmia」是 1999 年之後的再發與串流用名；卡片盤名照 RG 取「Antiarmia」沒錯（否則與掛名摺成同一鍵），**但正文要寫清楚原盤自我同名**。(2) **年份二比二**，見 yearVerified；策展層寫死 1987。｜**同國同名（第 324 條）**：本層核 RG 的 artist-credit 指向 69443da0（Warsaw／1984-12），不是 `Biała Armia`（1993），facts 未混入。｜**串流採信 1506078043**（pl 店面）：15 軌對 15 軌、曲名逐軌一致，℗ 1988 Metal Mind Productions（再發方）。**有固定試聽來源**；MB 黑膠無長度，曲長只能引串流。｜**人名邊界**：Budzyński、Brylewski 有 MB 關係＋Archiwum＋pl.wiki 三重背書，可寫；Kożuchowski、Żmijewski 只有 Archiwum 欄位，可寫但非必要；⚠ 綽號 Bombadil（Budzyński）只出自搜尋摘要，**不得進正文**——但第 8 軌曲名〈Bombadil w locie〉是資料庫端的，可引曲名。｜「Brylewski 同時在錄三張（Armia、Izrael、Deuter）」出自搜尋摘要一處，⚠ 不得進正文，**而且 Deuter 依第 307 條不進任何正文**。｜「出版方犯了很多錯、多首後來為《Czas i byt》重錄」出自搜尋摘要一處，⚠ 不得進正文。｜第 251 條：黑膠 15／1991 卡帶 13／1999 CD 23／2005 CD 22／串流 15。"
+ },
+ {
+  "key": "desc2:Tilt|Tilt",
+  "artist": "Tilt",
+  "album": "Tilt",
+  "facts": [
+   {
+    "f": "release-group 10779001 的欄位：title「Tilt」、artist-credit「Tilt」、first-release-date 1988、primary-type Album、secondary-types 空。轄下四筆：**1988 PL Official Tonpress SX-T 95、12\" Vinyl 9 軌**；1991 Lion Records LRCD-009 CD 12 軌；2000 Agencja Artystyczna MTJ CD 13009 與 Mega Czad CD 13009 兩筆 CD 16 軌（barcode 5906409130094）。9 軌：〈Jeśli tylko to〉〈Jeżeli myślisz, że jestem twoim wrogiem〉〈Zawsze, wszędzie, teraz〉〈Tańczę na niebie〉〈Gdyby wszystkie słowa〉〈Mówię ci, że〉〈Fale łaski Technorege〉〈Rzeka miłości, morze radości, ocean szczęścia〉〈Po〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=10779001-1fdb-3920-8183-46950f72d4c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Tilt 是 Group／PL、**life-span.begin 1979**、disambiguation「Polish punk band」、alias「Czad Komando Tilt」，名下 10 個 release-group，本卡是第一個 primary-type Album 且 secondary-types 空的錄音室盤（1985 年只有 EP《Runął Już Ostatni Mur...》，其餘是現場與合輯）；member-of-band 關係列 Tomek Lipiński（original）。",
+    "src": "https://musicbrainz.org/ws/2/artist/79ce0c10-aa93-48d2-a6fd-dad15791846c?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Tonpress SX-T 95、LP、1988 年，9 軌兩面（A 面第 1 軌登記為〈Jest tylko to〉3:40、B 面〈Mówię ci, że...〉3:00、〈Fale łaski techno rege〉5:09、〈Po〉4:19 收尾）；基本陣容 Tomasz Lipiński（貝斯、長笛、吉他、打擊樂、主唱）、Piotr「Czombe」Dubiel（吉他）、Rafał Włoczewski（吉他）、Franz Dreadhunter（貝斯）、Tomasz「Gogo Szulc」Kożuchowski（鼓）、Aleksander Korecki／Tomasz Pierzchalski／Ryszard Wojciul（薩克斯風）；客席 Wojciech Konikiewicz（鍵盤）、Igor Czerniawski（編程）、Katarzyna「Kayah」Szczot（主唱）。",
+    "src": "https://polskirock.eu/plyta/tilt-tilt-sxt95/"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**1985–1986 年錄音、1988 年由 Tonpress 以 SXT–95 發行**；原版 LP 9 軌 34:22；1991 年 Lion Records 的 CD 擴成 12 軌 46:15，2000 年 Mega Czad 再擴成 16 軌 53:38，加進未發表曲與現場錄音；曲風欄列 rock、reggae、punk rock；《Tylko Rock》2000 年 11 月給 3.5/5 星。",
+    "src": "https://pl.wikipedia.org/wiki/Tilt_(album)"
+   },
+   {
+    "f": "英文維基的樂團條目：這張首作是 1985 年底至 1986 年初在 Kraków 的 STU 劇場錄音室錄的，錄音師 Jarosław Regulski；樂團為 Tonpress 錄過單曲〈Rzeka miłości, morze radości, ocean szczęścia / Mówię ci, że〉，〈Mówię ci, że〉成為熱門曲；條目寫雖然 Tilt 與波蘭龐克的起點連在一起，這張首作很難歸為龐克專輯。",
+    "src": "https://en.wikipedia.org/wiki/Tilt_(Polish_band)"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1481885418）是 2000 年 MTJ 的 16 軌版：盤名「Tilt」、℗ 2000 MTJ、releaseDate 2000-12-31；前 9 軌與 MB 黑膠曲序一致（第 1 軌寫成〈Jest tylko to〉221 秒、〈Mówię ci, że〉181 秒、〈Po〉261 秒），第 10–16 軌是〈Szare koszmary, Pt. 1〉〈Runął już ostatni mur〉等附錄，末軌〈It's All over for You〉。",
+    "src": "https://itunes.apple.com/lookup?id=1481885418&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "MB 把樂團的起點記在 1979 年，第一張錄音室 LP 卻要等到 1988 年——中間隔了九年",
+   "1985–86 年在 Kraków 的劇場錄音室錄完，兩年後才由 Tonpress 壓成 9 軌黑膠"
+  ],
+  "sound": "9 軌 34 分鐘，龐克團的名字、內容卻是雷鬼律動、薩克斯風與長笛穿插的新浪潮。〈Jeśli tylko to〉開場，〈Tańczę na niebie〉三分鐘，B 面〈Mówię ci, że〉三分鐘是單曲曲，〈Fale łaski Technorege〉五分多把雷鬼推到最前面，〈Po〉四分多收尾。串流側的 16 軌版歸「Punk」。",
+  "keyTracks": [
+   "Mówię ci, że",
+   "Fale łaski Technorege",
+   "Rzeka miłości, morze radości, ocean szczęścia"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1988,
+   "recorded": 1986,
+   "note": "一致，1988。release-group first-release-date 1988、SX-T 95 黑膠 date 欄 1988、Archiwum 與 pl.wiki 皆 1988；錄音 1985 年底至 1986 年初（en.wiki 與 pl.wiki）。⚠ 串流側 2000-12-31 是 16 軌再發版。"
+  },
+  "notes": "**覆核策展層：MBID 79ce0c10／RG 10779001／Tonpress SX-T 95 12\" 9 軌／life-span 1979／10 個 RG，逐項屬實，未擋下。** 策展層說「錄音室 LP 遲到 1988」，本層補上錄音在 1985–86，**「錄完到出版隔了兩年」比「成軍到出版隔了九年」更可核**，兩個時序都可寫。｜⚠ **〈Jeszcze będzie przepięknie〉不在這張上**——它是「Czad Komando Tilt」時期的熱門曲（搜尋摘要），MB 黑膠 9 軌與串流 16 軌都沒有它，**正文不得把它寫成這張的曲目**。｜⚠ 第 1 軌曲名兩套：MB〈Jeśli tylko to〉、Archiwum 與串流〈Jest tylko to〉——正文避開。｜**串流採信 1481885418**（pl 店面，2000 MTJ 16 軌版）：前 9 軌曲序一致。**有固定試聽來源，引軌數綁定黑膠 9 軌**（第 251 條：黑膠 9／1991 CD 12／2000 CD 與串流 16）。MB 黑膠無長度，曲長引 Archiwum。｜**人名邊界**：Tomasz Lipiński 有 MB 關係（Tomek Lipiński）＋Archiwum＋pl.wiki，可寫；Kayah（Katarzyna Szczot）客席主唱有 Archiwum 與 pl.wiki 雙重背書，可寫但**不要延伸她後來的歌手生涯**（反向禁令）；錄音師 Jarosław Regulski 只出自 en.wiki 一處，⚠ 不得進正文。｜同名撞擊（第 324 條）：Tilt 全域 54 筆，本層核 RG artist-credit 指向 79ce0c10（PL／1979），facts 未混入；店面 24 筆同掛名條目逐一直查排除。"
+ },
+ {
+  "key": "desc2:Moskwa|Nigdy!",
+  "artist": "Moskwa",
+  "album": "Nigdy!",
+  "facts": [
+   {
+    "f": "release-group f8b61763 的欄位：title「Nigdy!」、artist-credit「Moskwa」、first-release-date 1986、primary-type Album、secondary-types 空。轄下六筆全為 PL Official：**1986 Cassette 20 軌、label-info 兩筆——Prawda catno 0001 與 Studio Ultimatum catno U-009**；另一筆 1986 卡帶只掛 Prawda 0001；2003 Zima Z 026 卡帶 20 軌與 Zima CD 2/007 CD 20 軌；**2014 Warsaw Pact Records WPR 005 12\" Vinyl 20 軌（limited edition）與 2017 同編號黑膠**。20 軌：〈Nigdy!〉〈Za Kratami〉〈Tylko Patrzymy〉〈Czarna Data〉〈Powietrza〉〈Wasze Ja〉〈Światło〉〈Propaganda〉〈Fita Fita〉〈Dzień Ocalenia〉〈Wstawaj I Walcz〉〈Slogan〉〈Pokolenie Małp〉〈Sam Dalej〉〈Vistula〉〈Problem〉〈Samobójstwa〉〈Masturbacja〉〈Krzyk〉〈Koniec〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f8b61763-5d10-4f2b-ae89-13532bb1d91a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Moskwa 是 Group／PL、life-span.begin 1983-09、disambiguation 空，名下 19 個 release-group，本卡是最早的 Album；member-of-band 關係列 Dariusz Malejonek 與 Piotr Żyżelewicz 兩位（無日期）。",
+    "src": "https://musicbrainz.org/ws/2/artist/11053bc1-7760-401f-b6a2-1481d1e29769?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "波蘭文維基的樂團條目：Moskwa 1983 年在 Łódź 由 Paweł「Guma」Gumola（主唱、吉他）、Piotr「Rogoz」Rogoziński（貝斯）與 Tomasz Gron（鼓）組成；首張卡帶《Nigdy!》**1986 年 4 月錄音**、由 Prawda 廠牌發行，錄音時的貝斯手是 Dariusz「Balon」Adryańczyk；條目寫這卷卡帶「要到 2003 年才以 Zima Records 的 CD 形式正式再發」。樂團 1984 年 8 月（入選「金八」）、1985 年 8 月、1986 年 8 月三度在 Jarocin 演出；**1986 年 BBC 的紀錄片《My Blood, Your Blood》（Andrzej Kostenko 導演）記錄了他們那一年的 Jarocin 演出**。",
+    "src": "https://pl.wikipedia.org/wiki/Moskwa_(zesp%C3%B3%C5%82_muzyczny)"
+   },
+   {
+    "f": "英文維基的樂團條目：Moskwa 1983 年在 Łódź 成立；1986 年參加 Jarocin '86 引起 BBC 的注意，樂團出現在電影《My Blood, Your Blood》裡，片中有〈Nigdy!〉的現場演出。",
+    "src": "https://en.wikipedia.org/wiki/Moskwa"
+   },
+   {
+    "f": "這卷 1986 年卡帶在收藏圈被當成 demo 流通，2021 年的卡帶部落格把它列為「Moskwa (Pol) Nigdy!; demo (1986)」；美國龐克刊物 Razorcake 評過 2014 年 Warsaw Pact Records 的黑膠版《Nigdy》。",
+    "src": "https://razorcake.org/moskwa-nigdy-lp/"
+   }
+  ],
+  "hookCandidates": [
+   "1986 年 4 月錄的 20 首，當年只以 Prawda 廠牌編號 0001 的卡帶流出，第一次壓成黑膠是二十八年後的 2014 年",
+   "BBC 的攝影機 1986 年 8 月在 Jarocin 拍下他們唱〈Nigdy!〉，卡帶上的第一軌就是這首"
+  ],
+  "sound": "20 軌卡帶，全是一兩分鐘的極速硬蕊龐克，錄音粗糙、鼓與吉他黏成一團。〈Nigdy!〉第 1 軌開場，〈Za Kratami〉〈Tylko Patrzymy〉〈Czarna Data〉接連衝過，〈Propaganda〉〈Slogan〉〈Pokolenie Małp〉在中段，〈Krzyk〉之後以〈Koniec〉收尾。〈Nigdy!〉與〈Powietrza〉兩首三年後在 1989 年 Pronit 黑膠上重錄。",
+  "keyTracks": [
+   "Nigdy!",
+   "Powietrza",
+   "Pokolenie Małp"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1986,
+   "recorded": 1986,
+   "note": "一致，1986。release-group first-release-date 1986、兩筆 Prawda 卡帶 date 欄 1986、pl.wiki 記 1986 年 4 月錄音。⚠ pl.wiki 用「2003 年才正式再發」的措辭，暗示 1986 年卡帶是 demo 性質的流通品——MB 把它建成 Official，卡片年份仍取 1986。"
+  },
+  "notes": "**覆核策展層：MBID 11053bc1／RG f8b61763／Prawda 0001 ＋ Studio Ultimatum U-009 卡帶 20 軌／2014 首次黑膠，逐項屬實，未擋下。** 策展層說這是「整組裡最乾淨的自製卡帶物證」，本層補一個尺度：pl.wiki 把這卷卡帶當 demo、說 2003 年才「正式」出版，**正文寫「1986 年只以卡帶流通、2014 年才第一次壓成黑膠」是穩的，不要寫成「1986 年正式發行專輯」**。｜**Jarocin（第 329 條）**：本卡不是現場盤，但 BBC 紀錄片拍的是 1986 年 8 月 Jarocin；pl.wiki 與 en.wiki 兩處一致，可寫。⚠ 導演 Andrzej Kostenko 只出自 pl.wiki 一處，不得具名。｜**串流：三種查法皆落空**——四店面 search 0 筆（〈Nigdy!〉只回其他藝人的同名曲），藝人目錄（artistId 1484171561）只有《Moskwa I》與一張單曲，直查 1484172049 是 1989 年黑膠那 14 軌（本組 15 號卡），不是本卡。**無固定試聽來源。**｜**人名邊界**：Paweł Gumola 有 pl.wiki 與 en.wiki 雙重背書（另見 Archiwum 1989 年黑膠陣容），可寫；⚠ **鼓手兩說**（pl.wiki「Jarek Wózek Adler」、en.wiki 摘要「Wózek Jarek Woźniak」），**正文不得寫鼓手**；貝斯手 Adryańczyk 只出自 pl.wiki 一處，不寫。MB 關係列的 Malejonek／Żyżelewicz 是 1987 年之後的陣容，不在這卷卡帶上。｜**政治邊界**：曲名〈Propaganda〉〈Czarna Data〉是資料庫端可引的曲名，**不要替曲名補政治解讀**。｜第 251 條：卡帶 20／CD 20／黑膠 20，一致；MB 無長度。"
+ },
+ {
+  "key": "desc2:Moskwa|Moskwa",
+  "artist": "Moskwa",
+  "album": "Moskwa",
+  "facts": [
+   {
+    "f": "release-group 48d2d5f5 的欄位：title「Moskwa」、artist-credit「Moskwa」、first-release-date 1989、primary-type Album、secondary-types 空。轄下兩筆：**1989 PL Official Pronit PLP 0082、12\" Vinyl 14 軌**；2002 PL Dywizja KOT CD 28 軌（無 catno）。14 軌：〈Nigdy!〉1:45、〈Ja wiem ty wiesz〉、〈Słowo〉、〈Słyszę〉、〈Tam gdzie jasno〉4:15、〈Urodziłeś się by żyć〉、〈Nie okłamiesz prawd〉、〈Materialny syf〉、〈Tylu was〉、〈Powietrza〉、〈Nie starczy sił〉、〈Sen〉、〈Ja〉、〈Kochać chcesz〉4:30。**〈Nigdy!〉與〈Powietrza〉兩首與 1986 年卡帶同名**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=48d2d5f5-c29f-3992-9f0d-9241e69fb12a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Pronit PLP 0082、LP、**1988 年**，14 軌兩面、逐軌長度與 MB 一致；基本陣容 Paweł「Guma」Gumola（吉他、主唱）、Dariusz Malejonek（貝斯）、Tomasz「Gogo Szulc」Kożuchowski（鼓）、Piotr「Stopa」Żyżelewicz（鼓）。",
+    "src": "https://polskirock.eu/plyta/moskwa-moskwa-plp0082/"
+   },
+   {
+    "f": "波蘭文維基的樂團條目：這張是 **1987 年錄音**、由 Pronit 發行的黑膠，陣容有 Paweł Gumola 與 Piotr「Stopa」Żyżelewicz 等；條目寫這段時期樂團從快速硬蕊轉向較輕、帶藍調影響的搖滾。",
+    "src": "https://pl.wikipedia.org/wiki/Moskwa_(zesp%C3%B3%C5%82_muzyczny)"
+   },
+   {
+    "f": "藝人端點：Moskwa 名下 19 個 release-group，1980 年代的 Album 只有 1986 年《Nigdy!》與本卡；member-of-band 關係列 Dariusz Malejonek 與 Piotr Żyżelewicz——兩位正是本卡黑膠陣容的貝斯與鼓。",
+    "src": "https://musicbrainz.org/ws/2/artist/11053bc1-7760-401f-b6a2-1481d1e29769?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1484172049）**盤名建成「Moskwa I」**、14 軌、℗ 1988 MTJ、releaseDate 1988-01-01；14 軌曲名與 MB 黑膠逐軌一致、長度差 ≤5 秒（〈Nigdy〉107 秒、〈Kochać chcesz〉276 秒）。",
+    "src": "https://itunes.apple.com/lookup?id=1484172049&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一首〈Nigdy!〉：1986 年只在自製卡帶上、1989 年進了 Pronit 的黑膠編號 PLP 0082——與 Armia 的 PLP 0075 只差七號",
+   "串流上這張叫「Moskwa I」，資料庫與盤面都只叫「Moskwa」，那個 I 是店面自己加的"
+  ],
+  "sound": "14 軌，比 1986 年卡帶慢、也乾淨得多，吉他多了藍調味的段落，鼓由兩位鼓手分擔。〈Nigdy!〉1:45 重錄版開場，〈Tam gdzie jasno〉四分多是 A 面最長，〈Nie okłamiesz prawd〉三分多；B 面〈Powietrza〉也是卡帶舊曲的重錄，〈Sen〉〈Ja〉三分鐘，〈Kochać chcesz〉4:30 收尾。串流側歸「Punk」。",
+  "keyTracks": [
+   "Nigdy!",
+   "Tam gdzie jasno",
+   "Kochać chcesz"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1989,
+   "recorded": 1987,
+   "note": "**兩說**：MB 的 RG 與 PLP 0082 黑膠 date 欄是 1989、Discogs 有 1989（r1051591）也有 1988（r14797563）兩個條目；**Archiwum Polskiego Rocka 記 1988、串流側 ℗ 1988 MTJ**。錄音 1987 無異議。**卡片維持卡單的 1989**，正文最穩的寫法是「1987 年錄音、Pronit 黑膠」，不寫發行年的月份。"
+  },
+  "notes": "**覆核策展層：MBID／RG 48d2d5f5／Pronit PLP 0082 12\" 14 軌／2002 Dywizja KOT 28 軌，逐項屬實。擋下一處保留**：年份 1988／1989 兩說（見 yearVerified），策展層寫死 1989；卡片不必改。｜**與 14 號卡的對照**（策展層的主線）成立，本層補一個可核的細節：〈Nigdy!〉與〈Powietrza〉兩首同時在 1986 卡帶與 1989 黑膠上，**是「同一支團、兩種發行體制」最直接的對照點**，正文可用。｜**串流採信 1484172049**（pl 店面）：14 軌對 14 軌、曲名逐軌一致、長度差 ≤5 秒；⚠ 店面盤名「Moskwa I」與 MB／盤面不同（第 330 條已標），配對時放寬。**有固定試聽來源。**｜**人名邊界**：Gumola（pl.wiki＋Archiwum）、Malejonek 與 Żyżelewicz（MB 關係＋Archiwum）可寫；Kożuchowski 只有 Archiwum 欄位，可寫但非必要。｜**反向禁令**：Malejonek 與 Żyżelewicz 後來在 Armia／Houk 等團的生涯與這張無關，不寫。｜同名撞擊（第 324 條）：Moskwa 全域 4 筆，本層核 RG artist-credit 指向 11053bc1（PL／1983-09）；店面 28 筆同掛名條目（多為俄語圈的同名藝人）逐一直查排除。｜第 251 條：黑膠 14／2002 CD 28／串流 14，引軌數綁定黑膠。"
+ },
+ {
+  "key": "desc2:TSA|TSA",
+  "artist": "TSA",
+  "album": "TSA",
+  "facts": [
+   {
+    "f": "release-group 97182816 的欄位：title「TSA」、artist-credit「TSA」、first-release-date 1982、primary-type Album、secondary-types 空。轄下兩筆：**PL Official Polton PLP-002、12\" Vinyl 8 軌、date 欄 1982**（disambiguation「cream label」）；2004 PL Metal Mind Productions MMP CD 0250 CD 10 軌。8 軌：〈Wysokie sfery〉〈Ludzie jak dynie〉〈Nocny sabat〉〈Trzy zapałki〉〈Na co cię stać?〉〈Jeden kroczek〉〈Twoje sumienie〉〈Bez podtekstów〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=97182816-6c98-30d3-97c9-f889a1f0b6ba&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**1982 年 11 月 15–27 日在華沙錄音、1983 年 3 月 9 日由 Polton 以 PLP-002 發行**；陣容 Marek Piekarczyk（主唱）、Stefan Machel（吉他）、Andrzej Nowak（吉他）、Janusz Niekrasz（貝斯）、Marek Kapłon（鼓）；8 軌兩面、總長 34:43；錄音師 Wojciech Przybylski 與 Jarosław Regulski。",
+    "src": "https://pl.wikipedia.org/wiki/TSA_(album)"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Polton PLP 002、LP、**1983 年**、gatefold 包裝，8 軌（〈Wysokie sfery〉5:13 開場、〈Trzy zapałki〉5:05、〈Bez podtekstów〉4:50 收尾）；基本陣容與 pl.wiki 一致（Kapłon、Machel、Niekrasz、Nowak、Piekarczyk）。",
+    "src": "https://polskirock.eu/plyta/tsa-tsa-plp002/"
+   },
+   {
+    "f": "Opole 波蘭歌曲博物館的教育頁：1982 年 11 月樂團在華沙的 KAW 錄音室開始錄這張；〈Trzy zapałki〉曲：A. Nowak 與 M. Piekarczyk，詞是 J. Prévert 的詩、K. I. Gałczyński 的波蘭文翻譯，長 5:12；這首 1982 年在波蘭廣播第三台的排行榜上到第 8 名，第一次現場演出是 **1981 年 7 月 12 日**——TSA 以 Jarocin 音樂節得獎者的身分、第一次由 Marek Piekarczyk 擔任主唱演出時的即興。頁面另記錄音室空間有限，Piekarczyk 被迫在遠處的洗手間裡唱。",
+    "src": "https://muzeumpiosenki.pl/edukacja/tsa_591.html"
+   },
+   {
+    "f": "藝人端點：TSA 是 Group／PL、life-span.begin 1979、disambiguation「Polish hard rock band」，名下 12 個 release-group，本卡是第一個 Album；member-of-band 關係列 Marek Piekarczyk。",
+    "src": "https://musicbrainz.org/ws/2/artist/c03af3d3-4394-4b53-a1f0-c73cffc22906?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1099465354）盤名「Tsa」、8 軌、℗ 2015 Metal Mind Productions、**releaseDate 1983-03-09**（與 pl.wiki 的發行日相同）；8 軌曲名與 MB 黑膠逐軌對位（第 2 軌寫成〈Ludzie-Dynie〉），長度與 Archiwum 一致（〈Wysokie Sfery〉317 秒、〈Trzy Zapałki〉312 秒、〈Bez Podtekstów〉300 秒）；店面把曲風歸「Death Metal/Black Metal」。",
+    "src": "https://itunes.apple.com/lookup?id=1099465354&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "〈Trzy zapałki〉的詞是 Prévert 的詩經 Gałczyński 翻譯，第一次唱是 1981 年 7 月 Jarocin 的即興",
+   "1982 年 11 月兩週錄完、1983 年 3 月 9 日由 Polton 以目錄號 PLP-002 上市——資料庫把它記成 1982，差了一年"
+  ],
+  "sound": "8 軌 34 分鐘，雙吉他的英式硬搖滾與早期重金屬，主唱高音尖亮。〈Wysokie sfery〉五分多開場，〈Ludzie jak dynie〉〈Nocny sabat〉三分多，〈Trzy zapałki〉五分鐘是 A 面的慢板收尾；B 面〈Na co cię stać?〉〈Jeden kroczek〉各四分多，〈Bez podtekstów〉近五分鐘收尾。串流側把它歸「Death Metal/Black Metal」，是店面分類的雜訊。",
+  "keyTracks": [
+   "Trzy zapałki",
+   "Wysokie sfery",
+   "Bez podtekstów"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1983,
+   "recorded": 1982,
+   "note": "**本層改判 1983**：MB 的 RG first-release-date 與 PLP-002 黑膠 date 欄是 1982、Discogs（r1483738）也是 1982；但 **pl.wiki 給出精確發行日 1983-03-09、Archiwum Polskiego Rocka 記 1983、串流側 releaseDate 也是 1983-03-09、muzeumpiosenki 記 1982 年 11 月才開始錄音**——錄音 1982-11-15～27，隔年 3 月上市合理，1982 應是盤面版權年被當成發行年。卡片年份請改 1983。"
+  },
+  "notes": "**覆核策展層：MBID c03af3d3／RG 97182816／Polton PLP-002 12\" 8 軌屬實。擋下一處改判**：年份——策展層照 MB 寫 1982，本層以三個獨立來源（pl.wiki 精確日期、Archiwum、串流側日期）加錄音日期改判 **1983**，見 yearVerified。策展層「本組年份最早的兩張之一」的說法隨之不成立（1982 只剩 Brygada Kryzys 一張）。｜**封面（CAA 404）**：release-group 端點與兩筆 release 的 CAA 都是 404，**本層以第三種查法找到 collectionId 1099465354，其 artworkUrl100 是 https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/4f/82/88/4f828840-307f-c5e8-2d4e-a64576503c9a/5907785039360.jpg/100x100bb.jpg（把尾段 100x100bb 改大即可取高解析）**；另 Discogs r1483738 有原版 gatefold 圖。｜**串流採信 1099465354**（pl 店面）：8 軌對 8 軌、長度與 Archiwum 逐軌一致，releaseDate 與 pl.wiki 發行日相同。**有固定試聽來源。**｜**人名邊界**：五位成員有 pl.wiki＋Archiwum 雙重背書（Piekarczyk 另有 MB 關係），可寫；錄音師 Przybylski／Regulski 只出自 pl.wiki 一處，⚠ 不得進正文；「在洗手間裡唱」的軼事只出自 muzeumpiosenki 一處，⚠ 不得進正文。｜**「Polton 第二號」**：catno PLP-002 是可核的；但「Polton 1980 年代初才起步」是策展層的說法，本層未查 Polton 沿革，正文只寫編號、不寫「廠牌第二張」這種宣稱（research-base 廠牌第一張規則）。｜**Jarocin（第 329 條）**：1981 年 7 月 12 日的首演出自 muzeumpiosenki，可寫「1981 年 Jarocin」；它不是本卡的現場盤。｜⚠ pl.wiki 寫「OLiS 第 8 名」——OLiS 是 2000 年後的榜，指的是再發版，**不得寫進正文**。｜同名撞擊（第 324 條）：TSA 全域 13 筆，RG artist-credit 指向 c03af3d3（PL／1979）；店面 22 筆同掛名條目逐一直查排除。｜第 251 條：黑膠 8／2004 CD 10／串流 8。"
+ },
+ {
+  "key": "desc2:Oddział Zamknięty|Oddział Zamknięty",
+  "artist": "Oddział Zamknięty",
+  "album": "Oddział Zamknięty",
+  "facts": [
+   {
+    "f": "release-group 6ddffc52 的欄位：title「Oddział Zamknięty」、artist-credit「Oddział Zamknięty」、first-release-date 1984、primary-type Album、secondary-types 空。轄下四筆：**1984 PL Official Polskie Nagrania „Muza” SX 2171、10 軌，media 的 format 欄空**；1991 Digiton DIG 106 CD 10 軌；2001 Infos INFOS 0005 CD 11 軌（多一軌〈Kto tu mierzy czas〉）；2025 Polskie Nagrania „Muza” ＋ Warner Music Poland Hybrid SACD 10 軌（barcode 5021732720252）。10 軌：〈Odmienić los〉3:11、〈Party〉4:59、〈Zabijać siebie〉、〈Obudź się〉5:09、〈Jestem zły〉、〈Andzia i ja〉2:41、〈Twój każdy krok〉5:07、〈Ich marzenia〉、〈Na to nie ma ceny〉、〈Ten wasz świat〉3:36。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6ddffc52-f48d-3972-ac39-7d638dd743c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Polskie Nagrania „Muza” SX 2171、**LP、1984 年**，10 軌兩面、逐軌長度與 MB 一致；基本陣容 Krzysztof「Jary」Jaryczewski（主唱）、Wojciech Łuczaj Pogorzelski（吉他）、Włodzimierz Kania（吉他）、Paweł Mścisławski（貝斯）、Jarosław Szlagowski（鼓）、Marcin Ciempiel（貝斯）、Michał Coganianu（鼓）。",
+    "src": "https://polskirock.eu/plyta/oddzial-zamkniety-oddzial-zamkniety-sx2171/"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：條目把發行年寫成 1983、Polskie Nagrania „Muza” LP，1991 年 Digiton 再發 CD；唱片分好幾次錄音期完成——大部分由 Jaryczewski（主唱）、Pogorzelski（主唱、吉他）、Mścisławski（貝斯）、Szlagowski（鼓）四人錄，第 1–2 軌加了 Włodzimierz Kania（主唱、吉他），最後一期的〈Jestem zły〉〈Andzia i ja〉兩首換成新的節奏組 Marcin Ciempiel（貝斯）與 Michał Coganianu（鼓）；Mścisławski 與 Szlagowski 後來去了 Lady Pank，封面上沒有列他們的名字；唱片達到金唱片、2022 年 4 月達到白金。",
+    "src": "https://pl.wikipedia.org/wiki/Oddzia%C5%82_Zamkni%C4%99ty_(album)"
+   },
+   {
+    "f": "藝人端點：Oddział Zamknięty 是 Group／PL、life-span.begin 1979、disambiguation 空，名下 18 個 release-group，本卡是第一個；member-of-band 關係列 Krzysztof Jaryczewski（1979–1985）、Krzysztof Zawadka、Marcin Ciempiel、Włodzimierz Kania、Jarosław Wajk 等。同名回問另有一筆 `Jary Oddział Zamknięty`（PL／life-span.begin 2016-02-26），是另一個實體。",
+    "src": "https://musicbrainz.org/ws/2/artist/8952c281-ea73-4ae9-9252-60d2d03a74d2?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "波蘭 Polskie Nagrania 官方線上商店現在同時賣這張的 CD 與 2025 年的 SACD 版，把它列在自家目錄裡。",
+    "src": "https://polskienagrania.com.pl/cd/oddzial-zamkniety-czarne-cd"
+   }
+  ],
+  "hookCandidates": [
+   "同一張 LP 分好幾期錄，最後兩首〈Jestem zły〉〈Andzia i ja〉換了整組節奏組——前一組人去了 Lady Pank，封面上沒有他們的名字",
+   "Muza 的 SX 2171 與同年 Kombi 的 SX 2164 只差七號，國營廠的同一套目錄號同時壓新浪潮與電子流行"
+  ],
+  "sound": "10 軌，節奏直、吉他刷得緊的新浪潮搖滾，主唱的沙啞高音是辨識點。〈Odmienić los〉三分鐘開場，〈Party〉五分鐘，〈Obudź się〉5:09 是 A 面最長；B 面〈Andzia i ja〉不到三分鐘、〈Twój każdy krok〉五分多，〈Ten wasz świat〉三分半收尾。1991 年 CD 同 10 軌，2001 年版多一軌。",
+  "keyTracks": [
+   "Obudź się",
+   "Ten wasz świat",
+   "Andzia i ja"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "recorded": null,
+   "note": "**兩說**：MB 的 RG 與 SX 2171 黑膠 date 欄是 1984、Archiwum Polskiego Rocka 記 1984；pl.wiki 與 Discogs（r838133）記 1983。搜尋結果另記 1984-02-29 在 Polskie Nagrania 門市有這張「首張專輯」的簽名會，顯示 1984 年 2 月底已上市。**卡片維持 1984**（資料庫端＋Archiwum），正文只寫「1984 年」或「1983 年錄、1984 年初上市」皆可，不寫確切月份。錄音期未查到具體日期。"
+  },
+  "notes": "**覆核策展層：MBID 8952c281（1979，非 2016 年的 Jary Oddział Zamknięty）與 RG 6ddffc52 一致，Muza SX 2171 10 軌、media 形態欄空，逐項屬實。擋下一處保留**：年份 1983／1984 兩說（見 yearVerified），策展層寫死 1984；卡片不必改。｜**同國同名（第 324 條）**：本層核 RG artist-credit 指向 8952c281；店面搜到的「Jary Oddział Zamknięty」條目（1136668195《Jary OZ》2016 年 26 軌，含本卡多首歌的重錄）**是 2016 年另一個實體的重錄，不是本卡**。｜**串流：三種查法皆落空**——四店面 search 回的全是 Jary OZ 與單曲，藝人目錄（artistId 1245658025）只有 1997 年《Parszywa 13》兩筆，無本卡的候選 collectionId。**無固定試聽來源。**｜**人名邊界**：七位演出者有 Archiwum 欄位＋pl.wiki 雙重背書，Jaryczewski／Kania／Ciempiel 另有 MB 關係，可寫；「Mścisławski 與 Szlagowski 去了 Lady Pank、封面沒列名」只出自 pl.wiki 一處，⚠ **正文可寫「錄到一半節奏組換人、前一組人轉去另一團」，不具名、不點 Lady Pank**。｜**反向禁令**：2022 年 4 月的白金認證是這張自己的後世流傳，可寫但要標明是 2022 年；金唱片無年份，不寫「當年金唱片」。｜**廠牌**：策展層「SX 2171 與 Kombi SX 2164 差七號」屬實（兩筆 catno 都在 MB）。｜第 251 條：黑膠 10／1991 CD 10／2001 CD 11／2025 SACD 10。"
+ },
+ {
+  "key": "desc2:Lombard|Śmierć dyskotece",
+  "artist": "Lombard",
+  "album": "Śmierć dyskotece",
+  "facts": [
+   {
+    "f": "release-group 09bb0d38 的欄位：title「Śmierć dyskotece」、artist-credit「Lombard」、first-release-date 1983-06、primary-type Album、secondary-types 空。轄下兩筆：**1983-06 PL Official Polskie Nagrania „Muza”、12\" Vinyl 12 軌、catno 欄空**（release title 登記為「Śmierć Dyskotece」）；1999-05-24 KOCH International 52003-2 CD 17 軌（barcode 664125200327）。12 軌：〈Śmierć dyskotece〉2:51、〈Na skróty do piekła〉、〈Droga pani z TV〉、〈Rdza〉4:05、〈Ekspres stąd do nieba〉、〈Taniec pingwina na szkle〉4:19、〈Diamentowa kula〉4:27、〈Stary ból〉、〈O jeden deszcz〉、〈Mniej niż nic〉、〈Koszmarna kołysanka〉、〈Gwiazdy Rock and Rolla〉3:39。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=09bb0d38-a623-3eb0-bd1e-54463bbca500&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Polskie Nagrania „Muza” **SX 2109**、LP、1983 年，12 軌兩面，第 1 軌登記為〈Śmierć dyskotece!〉（帶驚嘆號）；基本陣容 Wanda Kwietniewska（主唱）、Małgorzata Ostrowska（主唱）、Grzegorz Stróżniak（主唱、合成器）、Piotr Zander（吉他）、Maurycy Przybyłowicz（貝斯）、Piotr Chyliński（鼓）；〈Droga pani z TV〉詞曲 Jacek Skubikowski。",
+    "src": "https://polskirock.eu/plyta/lombard-smierc-dyskotece-sx2109/"
+   },
+   {
+    "f": "波蘭文維基的專輯條目（條目名帶驚嘆號《Śmierć dyskotece!》）：1983 年 6 月由 Polskie Nagrania „Muza” 發行黑膠；**錄音日期 1982 年 6 月 21 日–7 月 16 日、9 月 1–10 日、9 月 14 日、9 月 16 日**；兩位女主唱 Wanda Kwietniewska 與 Małgorzata Ostrowska；**〈Przeżyj to sam〉不在原版專輯上——在專輯上市之前，波蘭廣播第三台就接到禁播它的命令**，這首要到 1999 年 KOCH 的 CD 再發才以附錄形式（5:05）收進來；唱片售出約 40 萬張；錄音指導 Jacek Złotkowski；1999 年 KOCH International 出 CD、2014 年再壓黑膠。",
+    "src": "https://pl.wikipedia.org/wiki/%C5%9Amier%C4%87_dyskotece!"
+   },
+   {
+    "f": "藝人端點：Lombard 是 Group／PL、life-span.begin 1981、disambiguation「Polish pop-rock band」，名下 21 個 release-group，本卡是第一個 Album；member-of-band 關係列 Grzegorz Stróżniak。",
+    "src": "https://musicbrainz.org/ws/2/artist/ef34e3cd-26a0-4b9c-a60d-a2abf17db170?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "Internet Archive 有這張黑膠的轉錄存檔，條目標題寫「Lombard – Śmierć Dyskotece! SX 2109」，與 Archiwum 的目錄號一致。",
+    "src": "https://archive.org/details/lombard-smierc-dyskotece-sx-2109"
+   }
+  ],
+  "hookCandidates": [
+   "他們最出名的〈Przeżyj to sam〉不在這張首作上——專輯還沒上市，電台就先接到禁播令",
+   "兩位女主唱同時在一支團裡：Kwietniewska 與 Ostrowska 在這張 12 軌上輪流唱"
+  ],
+  "sound": "12 軌，合成器與吉他並重的新浪潮流行搖滾，兩位女主唱的音色一亮一沉。標題曲〈Śmierć dyskotece〉不到三分鐘開場，〈Droga pani z TV〉三分鐘，〈Rdza〉四分鐘；B 面〈Taniec pingwina na szkle〉〈Diamentowa kula〉各四分多，〈Gwiazdy Rock and Rolla〉三分半收尾。1999 年 CD 多五軌附錄。",
+  "keyTracks": [
+   "Śmierć dyskotece",
+   "Droga pani z TV",
+   "Diamentowa kula"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1983,
+   "recorded": 1982,
+   "note": "一致，1983。release-group first-release-date 1983-06、Muza 黑膠 date 欄 1983-06、Archiwum 與 pl.wiki 皆 1983（6 月）；**錄音全在 1982 年**（6–7 月與 9 月），與發行隔一年。"
+  },
+  "notes": "**覆核策展層：MBID ef34e3cd／RG 09bb0d38／Muza 12\" 12 軌／1983-06，逐項屬實。擋下一處補正**：策展層 label 欄寫「MB 該 release 的 catno 欄為空」——MB 確實空，但 **Archiwum、archive.org、polskirock.art.pl 三處都給出 SX 2109**，label 欄可補。｜**盤名名實**：MB RG 標題無驚嘆號，但盤面、Archiwum 的曲名與 pl.wiki 條目名都是《Śmierć dyskotece!》；卡片盤名照 MB 取無驚嘆號，策展層的 queryAlias 已含帶驚嘆號形，**正文寫盤名時可帶驚嘆號**。｜**〈Przeżyj to sam〉不在這張上**是本卡最硬的一條，而且是可寫的審查事實（電台禁播、專輯未收、1999 年才附錄）；**不得寫評價、不得延伸成戒嚴敘事**。｜**串流：三種查法皆落空**——四店面 search 0 筆，藝人目錄（artistId 176652805）15 筆全是 2000 年後的現場、合輯與 2024–25 年的《Lombard 40/40》重錄系列（CD1 有〈Śmierć dyskotece (Rerecorded)〉，**是重錄不是本卡**）。**無固定試聽來源。**｜**人名邊界**：六位演出者有 Archiwum 欄位背書、兩位女主唱另有 pl.wiki，Stróżniak 另有 MB 關係，可寫；錄音指導 Jacek Złotkowski 與詞曲人 Jacek Skubikowski 各只出自一處，⚠ 不得進正文。｜「售出約 40 萬張」出自 pl.wiki，搜尋摘要另有「金唱片、40 萬張」的說法，可寫「約 40 萬張」但不寫「金唱片」（無認證年份與機構）。｜**反向禁令**：Ostrowska 後來的個人生涯不寫。｜第 251 條：黑膠 12／1999 CD 17。"
+ },
+ {
+  "key": "desc2:Kombi|Nowy rozdział",
+  "artist": "Kombi",
+  "album": "Nowy rozdział",
+  "facts": [
+   {
+    "f": "release-group a4bed5ca 的欄位：title「Nowy rozdział」、artist-credit「Kombi」、first-release-date 1983、primary-type Album、secondary-types 空。轄下四筆：**PL Official Polskie Nagrania „Muza” SX 2164、Vinyl 9 軌、date 欄 1983**；2005 同廠 PNCD 985 CD 9 軌；2017-09-22 同廠 9 57410 6 CD 9 軌（barcode 0190295741068）；2024 Polskie Nagrania „Muza” ＋ Warner Music Poland Hybrid SACD 10 軌（barcode 5021732444097）。9 軌：〈Cyfrowa gra〉3:48、〈Nie poddawaj się〉、〈Nie ma zysku〉、〈Srebrny talizman〉、〈Karty śmierci〉、〈Błękitny pejzaż〉5:52、〈Słodkiego miłego życia〉4:48、〈Jej wspomnienie〉、〈Kochać cię za późno〉4:46。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a4bed5ca-48cd-36d5-b74a-07d6515b7b35&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**1983 年錄音、1984 年 6 月 20 日由 Polskie Nagrania „Muza” 發行**；9 首裡〈Cyfrowa gra〉〈Błękitny pejzaż〉〈Jej wspomnienie〉三首是器樂曲；樂團第一次用上 Commodore 64 電腦跑 MIDI 音序軟體、Prophet-5 與 Multimoog 合成器、Roland TR-808 鼓機，鼓手 Jerzy Piotrowski 在部分曲子打 Simmons SDS-V 電子鼓；陣容 Sławomir Łosowski（鍵盤、音序）、Grzegorz Skawiński（主唱、吉他、合成器）、Waldemar Tkaczyk（貝斯、打擊樂）、Jerzy Piotrowski（部分曲目的鼓）；這是第一張為樂團帶來商業成功的專輯，讓他們登上第 21 屆 Opole 音樂節並拿到觀眾獎；原版有黑膠與卡帶，2005 年 CD、2014 年 11 月再壓黑膠。",
+    "src": "https://pl.wikipedia.org/wiki/Nowy_rozdzia%C5%82_(album_Kombi)"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Polskie Nagrania „Muza” SX 2164、LP、**1984 年**，9 軌兩面；基本陣容 Sławomir Łosowski（鍵盤）、Grzegorz Skawiński（吉他、主唱、合成器）、Waldemar Tkaczyk（貝斯、鼓）、Jerzy Piotrowski（鼓）；〈Nie ma zysku〉詞曲 Waldemar Tkaczyk。",
+    "src": "https://polskirock.eu/plyta/kombi-nowy-rozdzial-sx2164/"
+   },
+   {
+    "f": "波蘭文維基的〈Słodkiego miłego życia〉條目：這首是 Kombi 最大的暢銷曲之一，1983 年秋天首次進入波蘭廣播第三台的排行榜（Lista Przebojów Programu Trzeciego）。",
+    "src": "https://pl.wikipedia.org/wiki/S%C5%82odkiego_mi%C5%82ego_%C5%BCycia"
+   },
+   {
+    "f": "藝人端點：Kombi 是 Group／PL、**life-span 1976–1992、ended true**、disambiguation 空，名下 21 個 release-group；member-of-band 關係列 Sławomir Łosowski 與 Grzegorz Skawiński。",
+    "src": "https://musicbrainz.org/ws/2/artist/53895583-37b5-4a39-97b9-6bed294bbae4?fmt=json&inc=release-groups+artist-rels&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "九軌裡三軌是器樂曲，鼓機是 TR-808、音序跑在 Commodore 64 上——1983 年波蘭國營廠壓的合成器流行",
+   "〈Słodkiego miłego życia〉1983 年秋天先上了電台排行榜，收錄它的 LP 隔年 6 月才上市"
+  ],
+  "sound": "9 軌，Prophet-5 與 Multimoog 的合成器鋪滿、TR-808 鼓機打底，吉他只在需要時出來。器樂曲〈Cyfrowa gra〉開場，〈Nie poddawaj się〉〈Nie ma zysku〉是 A 面的兩首歌，〈Błękitny pejzaż〉近六分鐘的器樂是全碟最長；B 面〈Słodkiego miłego życia〉4:48 是主打，〈Jej wspomnienie〉器樂，〈Kochać cię za późno〉收尾。",
+  "keyTracks": [
+   "Słodkiego miłego życia",
+   "Nie ma zysku",
+   "Błękitny pejzaż"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "recorded": 1983,
+   "note": "**本層改判 1984**：MB 的 RG first-release-date 與 SX 2164 黑膠 date 欄是 1983；但 **pl.wiki 給出精確發行日 1984-06-20、Archiwum Polskiego Rocka 記 1984、Discogs（r3091211）記 1984**，三個獨立來源一致，MB 的 1983 應是錄音年被當成發行年（單曲 1983 年秋已在榜上，但 LP 是隔年）。錄音 1983。卡片年份請改 1984。"
+  },
+  "notes": "**覆核策展層：MBID 53895583／RG a4bed5ca／Muza SX 2164 9 軌屬實。擋下一處改判**：年份——策展層照 MB 寫 1983，本層以三個獨立來源改判 **1984**（見 yearVerified）。⚠ 這會連帶影響策展層「Muza 的三張全在 1983–84」與「SX 2164 與 SX 2171 差七號、同年」的說法：**編號差七號仍成立，但兩張都是 1984 年上市**，正文寫「同一年」時要用 1984。｜**串流：三種查法皆落空**——四店面 search 只回一位饒舌歌手的同名單曲，藝人目錄（artistId 1481880710，19 筆）與（276583048，8 筆）全是精選、現場與 2003 年後的作品，〈Słodkiego miłego życia〉只出現在精選與現場版裡，**無本卡的 collectionId**。**無固定試聽來源。**｜**人名邊界**：Łosowski／Skawiński 有 MB 關係＋Archiwum＋pl.wiki，Tkaczyk／Piotrowski 有 Archiwum＋pl.wiki，四人可寫；作詞人 Marek Dutkiewicz 只出自搜尋摘要一處，⚠ 不得進正文。｜**器材清單**（C64、Prophet-5、Multimoog、TR-808、Simmons）出自 pl.wiki 一處，是器材不是人名，可寫，但**不要寫「波蘭第一個用 C64 的樂團」這類第一宣稱**（來源只說「樂團第一次用」）。｜**Opole 觀眾獎**：pl.wiki 寫第 21 屆 Opole 音樂節觀眾獎，屬獎項，**是得獎不是入圍**；屆次 21、年份依 1984 年推算，正文寫「第 21 屆 Opole 音樂節觀眾獎」即可。｜同名撞擊（第 324 條）：Kombi 全域 8 筆，RG artist-credit 指向 53895583（PL／1976–1992）；⚠ 店面另有「Kombii」與「KOMBI Łosowski」兩個後續團的條目，**皆非本團的掛名，不得混用**。｜第 251 條：黑膠 9／CD 9／2024 SACD 10。"
+ },
+ {
+  "key": "desc2:Izrael|Biada, biada, biada",
+  "artist": "Izrael",
+  "album": "Biada, biada, biada",
+  "facts": [
+   {
+    "f": "release-group d9439a10 的欄位：title「Biada, biada, biada」、artist-credit「Izrael」、first-release-date 1985、primary-type Album、secondary-types 空。轄下三筆：**1985 PL Official Pronit M-0006、12\" Vinyl 12 軌——這筆 release 的 artist-credit 登記為「Issiael」**；1996 Złota Skała GR003 CD 16 軌；2000 W Moich Oczach CD 16 軌（無 catno）。12 軌：〈Płonie Babilon〉1:26、〈Biada narodom〉3:55、〈Strach w Babilonie〉1:33、〈Poli bez kontroli〉、〈Rastaman nie kłamie〉、〈Wojna w Babilonie - War Dub〉5:29、〈Kapłani Szatana〉、〈Idą ludzie Babilonu〉、〈Powstańcie wojownicy〉、〈Dla każdego tak samo〉1:47、〈Nie rób tego złego〉、〈Nasza kultura〉3:33。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d9439a10-5686-3e13-8fee-915a569f3462&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 把 1985 年這張黑膠與它的 master 條目都登記在掛名 **Issiael** 之下（「Issiael – Biada Biada Biada」，release 699292），與 MB 那筆 release 的 artist-credit 一致。",
+    "src": "https://www.discogs.com/master/182617-Issiael-Biada-Biada-Biada"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**1983 年 5 月在華沙的 Wawrzyszew 錄音室錄音、1985 年才由 Pronit／Poljazz 發行黑膠**；1996 年 Gold Rock Studio 再發卡帶與 CD、2000 年再出 CD；製作人 Włodzimierz Kowalczyk；核心成員 Robert Brylewski 與 Paweł「Kelner」Rozwadowski（主唱、多種樂器），加上 Jarosław Ptasiński（鼓）、Tomasz Lipiński 等多位樂手；原版 LP 兩面 18:21 與 17:40，1996 年再發擴成 16 軌、加了 dub 版本。條目把這張寫成「第一張波蘭雷鬼專輯」。",
+    "src": "https://pl.wikipedia.org/wiki/Biada,_biada,_biada"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：廠牌登記為「Pronit - Musicorama」M-0006、LP、1985 年，12 軌兩面；基本陣容 Robert「Afa」Brylewski（貝斯、吉他、鍵盤、主唱）、Paweł「Kelner」Rozwadowski（貝斯、吉他、鍵盤、主唱）、Jarosław Ptasiński（鼓、康加、打擊樂）、Tomasz Lipiński（和聲、康加、鍵盤）、Milo Kurtis（打擊樂）、Piotr Malak（薩克斯風）、Tomasz Kuczyński（小號）、Jerzy Jarmołowicz（康加）、Katarzyna Grzechnik／Vivian Quarcoo（和聲）。",
+    "src": "https://polskirock.eu/plyta/izrael-biada-biada-biada-m0006/"
+   },
+   {
+    "f": "藝人端點：Izrael 是 Group／PL、**life-span 1983-03–1995、ended true**、disambiguation 空，名下 14 個 release-group，本卡是最早的 Album（同年另有《Live - Róbrege '85》）；member-of-band 關係列 Robert Brylewski（1983-03–1995）、Paweł Szanajca（1987）、Piotr Żyżelewicz（1989–1995）。",
+    "src": "https://musicbrainz.org/ws/2/artist/ddf15f3a-df92-4712-a874-c91719e1fac2?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "波蘭樂評站的回顧文：1985 年的封面上團名用了特殊的圖形寫法——第一個「S」是倒過來的「Z」、「SI」是倒過來的「R」，因此封面上的 Izrael 被讀成 Issiael；文章把這個寫法連到當時樂團名稱在正式流通上遇到的限制。",
+    "src": "https://laboratoriummf.com/all/recenzje-klasyka-izrael-biada-biada/"
+   }
+  ],
+  "hookCandidates": [
+   "1985 年 Pronit 黑膠的掛名在資料庫裡是「Issiael」——封面把 Izrael 的字母倒著寫，兩個資料庫都照封面登記",
+   "1983 年 5 月錄完，兩年後才壓成黑膠；12 軌裡有四首不到兩分鐘、一首 dub 五分半"
+  ],
+  "sound": "12 軌 36 分鐘，波蘭文唱的根源雷鬼，貝斯與鼓走一拍一拍的 one-drop，康加、薩克斯風與小號穿插。〈Płonie Babilon〉一分半開場，〈Biada narodom〉近四分鐘，A 面以 5:29 的〈Wojna w Babilonie - War Dub〉收尾；B 面〈Kapłani Szatana〉〈Idą ludzie Babilonu〉〈Powstańcie wojownicy〉三首三分鐘上下，〈Dla każdego tak samo〉1:47，〈Nasza kultura〉3:33 收尾。",
+  "keyTracks": [
+   "Biada narodom",
+   "Wojna w Babilonie - War Dub",
+   "Nasza kultura"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1985,
+   "recorded": 1983,
+   "note": "一致，1985。release-group first-release-date 1985、Pronit M-0006 黑膠 date 欄 1985、Archiwum 與 pl.wiki 皆 1985；**錄音 1983 年 5 月**（pl.wiki），與發行隔兩年。"
+  },
+  "notes": "**覆核策展層：MBID ddf15f3a／RG d9439a10／Pronit M-0006 12\" 12 軌屬實，未擋下。本層補上策展層沒抓到的最硬一條：1985 年那筆 release 的 artist-credit 是「Issiael」**（MB 與 Discogs 一致），封面把團名的字母倒著排；**「因為審查／團名在正式流通上受限」的解釋只出自 laboratoriummf 一處，⚠ 正文只能寫「封面上的團名以倒排字母寫成、資料庫照封面登記為 Issiael」這個可核的事實，不得寫成「被審查改名」**。｜Archiwum 把廠牌寫成「Pronit - Musicorama」、pl.wiki 寫「Pronit／Poljazz」、MB 寫 Pronit——正文用 Pronit M-0006（第 262 條：日期、廠牌、catno 出自 MB 同一筆）。｜**「第一張波蘭雷鬼專輯」**：pl.wiki 單句宣稱，本層未反查其他波蘭雷鬼團 1985 年前的目錄，⚠ **正文退成「Izrael 的首張專輯」**，notes 記本層退了這一層。｜**串流：三種查法皆落空**——四店面 search 0 筆，藝人目錄（artistId 1470503538）有《Duchowa Rewolucja》41 軌版、《1991》《Dża Ludzie》等，**沒有本卡**；直查 1884850954（41 軌）確認全是 1987 年作與現場，不含本卡曲目。**無固定試聽來源。**｜**人名邊界**：Brylewski（MB 關係＋Archiwum＋pl.wiki）、Rozwadowski（Archiwum＋pl.wiki）可寫；Lipiński 在這張只做和聲與康加（Archiwum），可寫但非必要；製作人 Kowalczyk 只出自 pl.wiki 一處，⚠ 不得進正文。｜**曲風欄**：卡單 genres 給 world＋rock，實際是雷鬼；正文照雷鬼寫。｜同名撞擊（第 324 條）：Izrael 全域 5 筆，RG artist-credit 指向 ddf15f3a（PL／1983-03）；店面另有一位 Exile 系列的同名歌手（artistId 217513424），已排除。｜第 251 條：黑膠 12／1996 與 2000 CD 16。"
+ },
+ {
+  "key": "desc2:Sztywny Pal Azji|Europa i Azja",
+  "artist": "Sztywny Pal Azji",
+  "album": "Europa i Azja",
+  "facts": [
+   {
+    "f": "release-group 2408a616 的欄位：title「Europa i Azja」、**artist-credit「Sztywny pal Azji」（小寫 pal）**、first-release-date 1987、primary-type Album、secondary-types 空。轄下三筆：**1987 PL Official Polton PC-038、Cassette 12 軌**；1988 PL Official Klub Płytowy Razem RLP 016、12\" Vinyl 12 軌；2000 Agencja Artystyczna MTJ CDMTJ10114 Enhanced CD 16 軌（barcode 5906409101148）。12 軌：〈Twoja imitacja〉3:15、〈Spotkanie z...〉3:23、〈Budujemy grób dla faraona〉4:01、〈Nic pewnego〉、〈Rock'n'Rollowy robak〉、〈...Póki młodość w nas〉2:20、〈Nieprzemakalni (I)〉、〈To jest nasza kultura〉4:52、〈Przybycie Makbeta〉5:01、〈Proces〉、〈Kurort〉、〈Wieża radości, wieża samotności〉4:57。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2408a616-ce53-3620-b627-85a6b33b3d71&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：Klub płytowy „Razem” RLP 016、LP、**1987 年**，12 軌兩面、逐軌長度與 MB 一致；基本陣容 Leszek Nowak（主唱、和聲、鋼琴）、Jarosław Kisiński（吉他、木吉他、主唱）、Paweł Nazimek（貝斯、和聲）、Janusz Deda（鼓）、Zbigniew Ciaputa（康加）、Andrzej Turek（木吉他），客席 Ryszard Wojciul（第 8、10 軌薩克斯風）。",
+    "src": "https://polskirock.eu/plyta/sztywny-pal-azji-europa-i-azja-rlp016/"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：1987 年發行，版本有 Klub Płytowy Razem 的 LP（1987）、Polton 的卡帶（1987）、Wifon 的 LP（1988）與 2000 年 MTJ 的 CD 再發（加附錄，含 1986 年 12 月 13 日 Sieradz 的現場錄音）；12 軌總長 42:14，2000 年版 52:39；〈Wieża radości, wieża samotności〉是第 12 軌、1987 年發過單曲；陣容與 Archiwum 一致。",
+    "src": "https://pl.wikipedia.org/wiki/Europa_i_Azja"
+   },
+   {
+    "f": "英文維基的樂團條目：Sztywny Pal Azji 1986 年在 Chrzanów 由 Leszek Nowak 與 Jarosław Kisiński 組成；在 1986 年 Jarocin 音樂節上以龐克、雷鬼與流行的混合走紅，進入「金十」、在觀眾投票中排第二；1987 年首作《Europa i Azja》出了〈Spotkanie z...〉與〈Wieża radości, wieża samotności〉兩首熱門曲，兩首都進了波蘭廣播第三台的排行榜；〈Wieża radości, wieża samotności〉在該榜上待了 28 週（1987 年）、四度第 1；2014 年第三台聽眾票選把它選為史上最佳波蘭歌曲。",
+    "src": "https://en.wikipedia.org/wiki/Sztywny_Pal_Azji"
+   },
+   {
+    "f": "藝人端點：Sztywny Pal Azji 是 Group／PL、begin-area Chrzanów、life-span.begin 1986、disambiguation 空，名下 14 個 release-group，本卡是最早的；member-of-band 關係列 Leszek Nowak（lead vocals、guitar、fortepiano，1986–，original）、Jarosław Kisiński（guitar，1986–，original）、Paweł Nazimek（bass，1986–，original）、Janusz Deda（percussion，1986–1989）、Andrzej Turek（acoustic guitar，1986–1988）、Zbigniew Ciaputa（percussion，1987–）。",
+    "src": "https://musicbrainz.org/ws/2/artist/db2c1531-4840-4bfb-99a1-d1ac5bc48259?fmt=json&inc=release-groups+artist-rels&limit=100"
+   },
+   {
+    "f": "串流側（pl 店面 collectionId 1484538929）是 2000 年 MTJ 的 16 軌版：盤名「Europa i Azja」、℗ 2001 MTJ na licencji Pospolite Ruszenie、releaseDate 2001-12-31；前 12 軌與 MB 逐軌一致、長度差 ≤2 秒（〈Twoja imitacja〉195 秒、〈Wieża radości, wieża samotności〉297 秒），第 13–16 軌是〈Europa i Azja (Live)〉〈Walczyk o Krakowie (Live)〉〈Nasze reggae (Live)〉〈Ja muszę (Live)〉。",
+    "src": "https://itunes.apple.com/lookup?id=1484538929&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1987 年先出 Polton 卡帶、黑膠由 Klub Płytowy Razem 以 RLP 016 壓——與 Dezerter《Kolaboracja》的 RLP 020 是同一套編號",
+   "1986 年 Jarocin 觀眾票選第二，隔年首作的末軌〈Wieża radości, wieża samotności〉在電台榜上待了 28 週"
+  ],
+  "sound": "12 軌 42 分鐘，木吉他、康加與鋼琴混在龐克與雷鬼的律動裡，主唱的高音鼻腔是辨識點。〈Twoja imitacja〉〈Spotkanie z...〉三分多開場，〈Budujemy grób dla faraona〉四分鐘，〈...Póki młodość w nas〉不到兩分半；B 面〈To jest nasza kultura〉〈Przybycie Makbeta〉各五分鐘，末軌〈Wieża radości, wieża samotności〉4:57 是主打。串流側歸「Rock」。",
+  "keyTracks": [
+   "Wieża radości, wieża samotności",
+   "Spotkanie z...",
+   "Przybycie Makbeta"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "recorded": null,
+   "note": "一致，1987。release-group first-release-date 1987、Polton PC-038 卡帶 date 欄 1987；黑膠 RLP 016 的年份 MB 記 1988、Archiwum 與 pl.wiki 記 1987（兩說，卡片不受影響）。錄音日期未查到。⚠ 串流側 2001-12-31 是 2000 年 MTJ 再發版。"
+  },
+  "notes": "**覆核策展層：MBID db2c1531／RG 2408a616／Polton PC-038 卡帶 12 軌／RLP 016 黑膠 12 軌屬實。擋下一處保留**：策展層的主線「卡帶先（1987）、黑膠後（1988）」依 MB 成立，**但 Archiwum 與 pl.wiki 都把 RLP 016 黑膠記在 1987**，「卡帶先黑膠後」的時序只有 MB 一方支撐；正文若要用這個對比，寫「1987 年同時有 Polton 卡帶與 Klub Płytowy Razem 黑膠兩種載體」比較穩。另 pl.wiki 記 1988 年還有一筆 Wifon 黑膠，MB 未建。｜**掛名大小寫**：MB artist-credit 是「Sztywny pal Azji」（小寫 pal）、藝人主名「Sztywny Pal Azji」；卡片取藝人主名沒錯，策展層 queryAlias 已含小寫形。｜**串流採信 1484538929**（pl 店面，2000 MTJ 16 軌版）：前 12 軌逐軌一致、長度差 ≤2 秒。**有固定試聽來源，引軌數綁定 12 軌**（第 251 條：卡帶 12／黑膠 12／CD 與串流 16）。｜**人名邊界**：六位成員全部有 MB member-of-band 關係＋Archiwum＋pl.wiki 三重背書，可寫；客席 Wojciul 有 Archiwum＋pl.wiki，可寫但非必要。｜**榜單**：〈Wieża radości, wieża samotności〉28 週、四度第 1 出自 en.wiki 一處，可寫但寫明是「波蘭廣播第三台排行榜」；**2014 年聽眾票選「史上最佳波蘭歌曲」是與作品直接綁定的後世流傳，可寫、要標 2014 年**。｜**Jarocin（第 329 條）**：1986 年 Jarocin 觀眾票選第二（en.wiki），可寫；本卡不是現場盤。｜**政治邊界**：2000 年版附錄的現場日期 1986-12-13 是 pl.wiki 的原始資料，**正文不要把它與 1981-12-13 的戒嚴日連在一起解讀**。｜同名撞擊：MB 全域只有一筆。"
+ },
+ {
+  "key": "desc2:Abaddon|Wet za wet",
+  "artist": "Abaddon",
+  "album": "Wet za wet",
+  "facts": [
+   {
+    "f": "release-group be60192f 的欄位：title「Wet za wet」、artist-credit「Abaddon」、first-release-date 1986-10、primary-type Album、secondary-types 空。轄下三筆：**1986-10 FR Official New Wave Records NW 018、12\" Vinyl 9 軌**（release country 是法國）；1991 PL Melissa Productions M 0010 卡帶 9 軌；2001 PL Noise Annoys NOISE 037 CD 13 軌。9 軌：〈Wet za wet〉〈Boimy się siebie〉〈Apartheid〉〈Ljubljana Night〉〈Kto?〉〈Koniec świata〉〈System〉〈III wojna〉〈Rewolucja〉。**1986 年波蘭端沒有任何一筆 release。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=be60192f-be6a-354c-9aee-fe0229e01333&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "波蘭文維基的專輯條目：**1985 年 5 月在南斯拉夫 Ljubljana 的 Borut Cine 錄音室錄下這九首**，1986 年由法國廠牌 New Wave Records 以 NW-018 發行；2001 年波蘭的 CD 再發加了四首附錄（來自 1984–1986 年的演唱會錄音與一次 1980 年代的電台錄音室錄音）；陣容 Waldemar Jędyczowski（主唱）、Bernard Szarafiński（吉他）、Tomasz Frost（貝斯）、Tomasz Dorn（鼓）。",
+    "src": "https://pl.wikipedia.org/wiki/Wet_za_wet_(album)"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 的唱片頁：New Wave Records (FR) NW-018、LP、1986 年，9 軌兩面逐軌長度——〈Wet za wet〉2:13、〈Boimy się siebie〉2:08、〈Apartheid〉2:41、**〈Ljubljana Night〉6:15**、〈Kto?〉2:21、〈Koniec świata〉2:19、〈System〉2:27、〈III wojna〉3:55、〈Rewolucja〉2:35；基本陣容 Waldemar「Tiki」Jędyczowski（主唱）、Bernard Szarafiński（吉他）、Tomasz Frost（貝斯）、Tomasz「Perełka」Dorn（鼓）；其他版本列 2001 年 Pop Noise / Noise Annoys 的 CD（NOISE 038 CD）與 2012 年 Warsaw Pact Records 的白色黑膠 WPR 002。",
+    "src": "https://polskirock.eu/plyta/abaddon-wet-za-wet-nw018/"
+   },
+   {
+    "f": "英文維基的樂團條目：Abaddon 是 1982 年在 Bydgoszcz 組成的波蘭龐克團；《Wet Za Wet》1986 年由法國 New Wave Records 發行、原版已成為那個時期最被追尋的波蘭唱片之一，2001 年 CD 再發。",
+    "src": "https://en.wikipedia.org/wiki/Abaddon_(Polish_band)"
+   },
+   {
+    "f": "藝人端點：Abaddon 是 Group／PL、begin-area Bydgoszcz、life-span.begin 1982、disambiguation「Polish punk band」，名下 7 個 release-group，本卡是 1980 年代唯一一張 primary-type Album 且 secondary-types 空的錄音室盤；member-of-band 關係欄空。",
+    "src": "https://musicbrainz.org/ws/2/artist/e7fa92cb-fca0-425d-bccf-aea364bf1f92?fmt=json&inc=release-groups+artist-rels&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "Bydgoszcz 的龐克團，錄音在南斯拉夫的 Ljubljana、黑膠在法國壓——1986 年的波蘭端一筆 release 都沒有",
+   "九軌裡八首兩三分鐘，只有〈Ljubljana Night〉六分十五秒，曲名就是錄音的城市"
+  ],
+  "sound": "9 軌，快速硬蕊龐克，錄音比同期波蘭國內的卡帶乾淨得多。〈Wet za wet〉2:13 開場，〈Boimy się siebie〉〈Apartheid〉兩三分鐘，A 面以 6:15 的〈Ljubljana Night〉收尾；B 面〈Kto?〉〈Koniec świata〉〈System〉各兩分多，〈III wojna〉近四分鐘，〈Rewolucja〉2:35 收尾。",
+  "keyTracks": [
+   "Wet za wet",
+   "Ljubljana Night",
+   "III wojna"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1986,
+   "recorded": 1985,
+   "note": "一致，1986。release-group first-release-date 1986-10、NW 018 黑膠 date 欄 1986-10、Archiwum 與 pl.wiki 皆 1986；**錄音 1985 年 5 月 Ljubljana**。"
+  },
+  "notes": "**覆核策展層：MBID e7fa92cb（Bydgoszcz／1982／Polish punk band）與 RG be60192f 一致，FR release、New Wave Records NW 018 12\" 9 軌、1991 Melissa 卡帶，逐項屬實，未擋下。本層補上策展層沒抓到的一條：錄音地點是南斯拉夫的 Ljubljana（1985 年 5 月），所以這張「不經波蘭廠牌」是從錄音到壓片整條線都在國外**——曲名〈Ljubljana Night〉是可核的物證。｜⚠ 2001 年 CD 的 catno：MB 記 Noise Annoys NOISE 037、Archiwum 記 Pop Noise / Noise Annoys NOISE 038 CD、pl.wiki 只寫 Pop Noise——**正文不要引 2001 年版的編號**。2012 年 Warsaw Pact WPR 002 黑膠只在 Archiwum，MB 未建。｜**串流：三種查法皆落空**——四店面 search 0 筆；藝人目錄（artistId 1669003991，47 筆）多為同名饒舌歌手的作品，其中《EP Jarocin '83》（1313919308，2017 年 8 軌、℗ Lou&Rocked Boys）是本團 1983 年 Jarocin 現場的後製盤，不是本卡；song 查法回的 1559290291《Dzieci brudnej ulicy (Reedycja 2021)》17 軌含一首〈Wet za wet〉，但那是另一張、且掛名建成 Various Artists。**無固定試聽來源。**｜**人名邊界**：四位成員有 Archiwum 欄位＋pl.wiki 雙重背書，可寫（MB 關係欄空，不影響）。｜**「怎麼把錄音送到法國」**：本層查到的來源都沒講，**正文不得編一個經過**。｜**政治邊界**：曲名〈Apartheid〉〈System〉〈Rewolucja〉〈III wojna〉是資料庫端可引的曲名，不替曲名補解讀。｜同名撞擊（第 324 條）：Abaddon 全域 70 筆，RG artist-credit 指向 e7fa92cb；店面 24 個同名 artistId（多為金屬團與菲律賓饒舌歌手）逐一排除。｜第 251 條：黑膠 9／1991 卡帶 9／2001 CD 13。"
+ }
+]

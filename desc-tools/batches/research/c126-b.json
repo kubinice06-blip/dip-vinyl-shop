@@ -1,0 +1,934 @@
+[
+ {
+  "key": "desc4:法蘭黛樂團|為什麼像個愛情故事，明明我看的是偵探小說。",
+  "artist": "法蘭黛樂團",
+  "album": "為什麼像個愛情故事，明明我看的是偵探小說。",
+  "facts": [
+   {
+    "f": "release-group b52ea13e 的欄位：title「為什麼像個愛情故事，明明我看的是偵探小說。」（**句末的句號是盤名本身的一部分**）、artist-credit「法蘭黛樂團」、first-release-date 2017-05-05、primary-type Album、secondary-types 空。轄下**只有一個 release**：2017-05-05 **TW** Official **CD 10 軌**，text-representation script Hant／language cmn，**label-info 未填、barcode 未填**。藝人實體 06848360：Group、country TW、area Taiwan、**begin-area Taiwan**、life-span begin **2009**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b52ea13e-d6d6-4d4a-9df4-6935e65debd9&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "MB 藝人端點的 member-of-band 關係列出三位在團成員與各自樂器：**法蘭**（lead vocals）、**江鎮宇**（guitar）、**吳孟諺**（drum set），三筆的 ended 皆為 false。",
+    "src": "https://musicbrainz.org/ws/2/artist/06848360-c262-4ec8-ac08-3cdba1e9ff20?fmt=json&inc=artist-rels+url-rels"
+   },
+   {
+    "f": "Discogs 這一張的實體登記：release 14609707《為什麼像個愛情故事，明明我看的是偵探小說。》2017、廠牌 **Asia Muse Entertainment Group.Ltd（亞神音樂）**、catno **1525977**、台灣盤。同一位藝人在 Discogs 上的前一張 release 14609694《隨波逐流我不介意》登記為 **Linfair Records（福茂唱片）catno 70287**——**這張碟是他們換到亞神之後的第一張專輯**。",
+    "src": "https://api.discogs.com/releases/14609707"
+   },
+   {
+    "f": "Apple 店面 tw 的同一張（collectionId 1231374796，10 軌、2017-05-05）phonogram 欄寫 **℗ 2017 Fusion Bomb Co., Ltd.**；同一位藝人 2013 年那批錄音（《隨波逐流我不介意》、〈桂花巷〉、〈愛人心〉、〈閃電〉）的 phonogram 欄則一律是 **℗ 2013 Linfair Records Limited**。**兩批錄音的版權持有者在店面欄位上就是不同的公司。**",
+    "src": "https://itunes.apple.com/lookup?id=541840967&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "這張碟與電視劇《他們在畢業的前一天爆炸 二部曲》直接綁在一起：第 4 軌〈多想將一切做得完美〉在店面欄位標為該劇**插曲**、第 7 軌〈一時脆弱〉標為該劇**片頭曲**。法蘭黛樂團該年擔任該劇的音樂統籌，並以此**入圍**第 53 屆金鐘獎音效獎（入圍，非得獎）。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%B3%95%E8%98%AD%E9%BB%9B%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "店面 tw 的十軌逐軌與 MB 的 CD 十軌**同名同序**：我只是你的愛人／近乎完美的表演／永遠在一起／多想將一切做得完美／Breakfast for You／該死的冷戰（feat. 李英宏）／一時脆弱／眼妝花／你結婚了嗎／漏數的羊。十首裡有**八首長度在 4 到 5 分鐘之間**，最短的〈Breakfast for You〉3 分 16 秒、最長的〈你結婚了嗎〉4 分 50 秒，全片約 44 分鐘。",
+    "src": "https://itunes.apple.com/lookup?id=1231374796&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "盤名長到像一句抱怨，句號還得跟著寫——一張把長句當招牌的碟。",
+   "這是他們離開福茂之後的第一張：MB 那筆 2017 台灣 CD 連廠牌欄都空著，實體那面才寫著亞神。"
+  ],
+  "sound": "女聲中低音域帶頭、雙吉他把和聲鋪成一層薄霧的獨立流行搖滾；十首裡八首落在四到五分鐘，節奏不趕，段落靠吉他堆疊而不是靠鼓點推。",
+  "keyTracks": [
+   "我只是你的愛人",
+   "一時脆弱",
+   "該死的冷戰（feat. 李英宏）"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2017,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆為 2017-05-05（TW CD 10 軌），Apple tw 1231374796 的 releaseDate 同為 2017-05-05，Discogs 14609707 記 2017。三邊一致，卡單 2017 正確。"
+  },
+  "notes": "【推翻策展層一點】卡片 curatorWhy 寫「這是他們 2011 年兩張碟之後隔了六年才出的第三張」——**年份錯**。MB 把《隨波逐流我不介意》記成 2011-10-18，但 Apple tw（collectionId 733726014，℗ 2013 Linfair Records）、Discogs release 14609694 與 zh 維基三邊都記 **2013-10-31**；而《受寵若驚》Apple 記 2011-10-18、MB 記 2011-09。所以正確的形狀是「2011 首張、2013 次張、2017 第三張」，**間隔約三年半、不是六年**，正文不得寫「六年」或「2011 年兩張」。\n【獨立閘覆核，這張是本組最脆弱的一張】MB 唯一的 release **label-info 空、barcode 也空**，兩欄都給不出廠牌。而這位藝人的 MB 目錄裡**確實有裁定 276 退場清單上的廠牌**：《隨波逐流我不介意》與 2015 單曲〈不忘〉皆為 **福茂唱片**（前者 barcode 4717398702879）。依 b 組自己立的第 273 條，這正是「label-info 空 ＋ 同一位藝人另有大廠掛名」那一支，要靠 barcode 或 Discogs 補證。**補證結果支持策展層的收**：Discogs release 14609707 明確登記 Asia Muse Entertainment Group.Ltd／catno 1525977（亞神在裁定 276 的收單上），MB 目錄也顯示 2018《我們一定會再相遇》、2019〈接下來要去哪〉兩支單曲分別掛 AsiaMuse Entertainment Co., Ltd. 與亞神音樂娛樂股份有限公司。**策展層的 Discogs catno 1525977 我重跑得到同一筆，數字正確。**（我第一次用 `artist=法蘭黛`／`artist=Frandé` 查 Discogs 回 0 筆，是因為 Discogs 把掛名建成連寫的「Frandé法蘭黛樂團」；用盤名查才撈得到，記一筆給後面的批次。）\n【店面】三種查法都跑了。**採信 collectionId 1231374796**（藝人目錄 lookup 與盤名搜尋回同一個 id）：10 軌與 MB CD 十軌同名同序、releaseDate 2017-05-05 與 MB 同日、℗ 2017 Fusion Bomb Co., Ltd.。**十軌全部有 previewUrl。** 標點差異照策展層說的存在：MB／實體用全形「，」，Apple 用半形「, 」——配對要吃下這一組差。\n【Apple ℗ 與 Discogs 廠牌不同名】Apple 寫 Fusion Bomb Co., Ltd.、Discogs 寫亞神。兩者都不是福茂，也都不在退場清單上；查不到 Fusion Bomb 與亞神之間的關係，**不要在正文裡把兩者說成同一家**，正文只寫亞神（有 Discogs 實體背書的那個）。\n【刻意不寫】主唱法蘭 2020 年以電影《親愛的房客》拿下第 57 屆金馬獎最佳原創電影音樂——那是發行三年後、與本作無關的個人生涯事件，依反向禁令第二類不寫。\n【CAA】策展層記 release-group 端點 200，本層未重測封面端點。"
+ },
+ {
+  "key": "desc4:好樂團|在遊蕩的路上學會寬容",
+  "artist": "好樂團",
+  "album": "在遊蕩的路上學會寬容",
+  "facts": [
+   {
+    "f": "release-group c71ca4c1 的欄位：MB 上的完整 title 是雙語的「在遊蕩的路上學會寬容 We Learn to Let Go in the Ongoing」、artist-credit「好樂團」、first-release-date 2022-11-02、primary-type Album、secondary-types 空。轄下**只有一個 release**：2022-11-02 TW Official **CD 10 軌**，label-info **禾廣娛樂股份有限公司**、catno **GOOD003**、barcode 未填。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c71ca4c1-b6be-4a02-b746-ebf361a6ea91&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這張 CD 的 MB annotation 欄只寫了一行，是**群眾募資頁面**：flyingv 專案 32244。這張碟是先募資、後成形的。",
+    "src": "https://musicbrainz.org/ws/2/release/a2fd3b3a-e726-4b02-800d-9b5eec124b2d?fmt=json&inc=annotation"
+   },
+   {
+    "f": "十軌的 recording-level relationship **全部指向同一位製作人 李詠恩**——十首沒有一首換手。MB 的十軌標題也全是雙語並置（車站 Where We Met & Separated／蒸發 Evaporation／淹沒我 Drown／他們說我是沒有用的年輕人 The Useless Young Man／能不能請你別把我丟下 Would You Please Just Don't Give Me Up／遊蕩的人 Vagabond／送給你的 A Song for You／被愛灌溉長大的人 Watering with Love／棲身之地 Sleep Well／回到木星 Side by Side）。",
+    "src": "https://musicbrainz.org/ws/2/release/a2fd3b3a-e726-4b02-800d-9b5eec124b2d?fmt=json&inc=recordings+recording-level-rels+media"
+   },
+   {
+    "f": "MB 藝人端點 ad4883ca：Group、country TW、area Taiwan、begin-area Taiwan、life-span begin **2015-06**；member-of-band 兩筆——**許瓊文**（lead vocals，關係 begin 2015-06）與 **張子慶**（guitar）。這是一個兩人編制的組合。",
+    "src": "https://musicbrainz.org/ws/2/artist/ad4883ca-f71a-4e57-b1dc-560db6b2e43c?fmt=json&inc=artist-rels+url-rels"
+   },
+   {
+    "f": "MB 目錄顯示這張是他們的**第一張 Album**，而且廠牌編號是連號接上來的：2016《我把我的青春給你》EP（禾廣 **GOOD001**，barcode 4717954167876）、2018《把悲傷留在這裡》EP（禾廣 **GOOD002**，barcode 4713249230706），本作 **GOOD003**。成團在 2015 年 6 月，第一張專輯落在 2022 年 11 月，**中間隔了七年**。",
+    "src": "https://musicbrainz.org/ws/2/release?artist=ad4883ca-f71a-4e57-b1dc-560db6b2e43c&fmt=json&inc=labels+media+release-groups&limit=100"
+   },
+   {
+    "f": "專輯的結構在發行時被說成四個階段——迷惘、用力、落空之後想要休息一下、找到新的方向；2023 年 1 月 28 日在 Zepp New Taipei 辦了同名演唱會。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%A5%BD%E6%A8%82%E5%9C%98"
+   }
+  ],
+  "hookCandidates": [
+   "成團七年才交出第一張專輯，而且是先向歌迷募到錢才錄的。",
+   "廠牌編號 GOOD001、GOOD002 都給了 EP，GOOD003 才輪到專輯。"
+  ],
+  "sound": "木吉他與女聲主唱撐起全篇的民謠向獨立流行，十軌全由同一位製作人統一手法，速度慢、句子長，多數曲目落在五到六分鐘。",
+  "keyTracks": [
+   "他們說我是沒有用的年輕人",
+   "被愛灌溉長大的人",
+   "車站"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2022,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆 2022-11-02（TW CD）；Apple tw 1802208393 的 releaseDate 記 2022-11-09，晚七天。卡單取 2022 無誤，正文若要寫到日就用 11 月 2 日（MB 實體那筆）。"
+  },
+  "notes": "【獨立閘覆核：通過，而且不必動用第 273 條】唯一的 release 的 label-info **有填**，是禾廣娛樂股份有限公司（GOOD003），禾廣在裁定 276 的收單上。⚠ 但要更正策展層在 rulings 第 273 條裡的一句話：他們把好樂團歸進「該藝人目錄裡沒有任何大廠掛名」那一支——**這不成立**。MB 目錄裡 2024-01-30 單曲〈我們到底算什麼〉掛 **Sony Music**（barcode 196871784375）、2026-07-14 單曲〈大風吹〉掛**台灣索尼音樂娛樂股份有限公司**。好樂團是有大廠掛名的。只是本張的廠牌欄自己就填著禾廣，走的是「label-info 有填且在收單上」那條，結論不變。\n【店面】三種查法都跑了。**採信 collectionId 1802208393**：10 軌與 MB CD 十軌**同名同序**（Apple 只用中文標題、MB 是中英並置），℗ 2022 好好的一個工作室，**十軌全部有 previewUrl**。探測層 previews.json 亦以 tw 一次命中同一個 id。\n【人名】許瓊文、張子慶、李詠恩三個名字都有 MB 欄位背書（前二為 member-of-band 關係並附樂器，後者為十軌的 recording-level producer 關係），依裁定 241／250 可寫。\n【反同構】本組另有好樂團《懂》2025 一張，那張的骨架走「先發單曲再收攏成專輯／多位製作人」，**這張不要重複那條線**，這張的骨架是七年首專＋群眾募資＋單一製作人。"
+ },
+ {
+  "key": "desc4:好樂團|懂",
+  "artist": "好樂團",
+  "album": "懂",
+  "facts": [
+   {
+    "f": "release-group 35be36fe 的欄位：title「懂」、artist-credit「好樂團」、first-release-date 2025-09-19、primary-type Album、secondary-types 空。轄下**兩個 release**，而且兩筆的廠牌欄不一樣：2025-09-19 **XW** Digital Media 10 軌，label-info 明寫 **[no label]**、無 barcode；2025-12-03 **TW** **CD 10 軌**，label-info **禾廣娛樂股份有限公司**、barcode **4713249235824**。**數位先走、實體晚兩個半月，而且掛廠牌的是實體那筆。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=35be36fe-1cbb-4ea3-9597-6dd726dafd17&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這張的十軌不是一位製作人做完的：MB 的 recording-level relationship 顯示 **吳奕宏**掛了其中八軌的製作人（〈埋 (Full Band ver.)〉〈唱〉〈洄游〉〈遊子的懺悔〉〈狂妄〉〈The Very Last Time〉〈歲月的海〉，並在〈最後一根稻草〉掛編曲），**韓立康**做〈攀〉，**鍾濰宇**做〈鼻子〉。",
+    "src": "https://musicbrainz.org/ws/2/release/3267262d-281f-42ad-beca-7cf3e140c771?fmt=json&inc=recordings+recording-level-rels+media"
+   },
+   {
+    "f": "十軌裡有**一半在專輯之前就先以單曲上架過**，時間拉了一年半：〈鼻子〉2024-03-25、〈埋〉2024-06-17（電子遊戲《Recall:Empty Wishes 空願》主題曲）、〈唱〉2024-09-30、〈遊子的懺悔〉2025-05-07、〈最後一根稻草〉2025-08-15，最後才是 2025-09-19 的整張。",
+    "src": "https://itunes.apple.com/lookup?id=1163014602&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "這是好樂團的**第二張專輯**，距第一張《在遊蕩的路上學會寬容》（2022-11）約三年。MB 藝人端點 ad4883ca 的 member-of-band 關係仍是兩人：許瓊文（lead vocals）與張子慶（guitar）。",
+    "src": "https://musicbrainz.org/ws/2/artist/ad4883ca-f71a-4e57-b1dc-560db6b2e43c?fmt=json&inc=artist-rels+url-rels"
+   },
+   {
+    "f": "店面 tw 的十軌與 MB 的 CD 十軌同名同序：攀／最後一根稻草／埋 (Full Band ver.)／鼻子／唱／洄游／遊子的懺悔／狂妄／The Very Last Time／歲月的海。全片約 41 分鐘，最短的〈攀〉3 分 11 秒放在開頭、最長的〈The Very Last Time〉5 分 6 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1837478469&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌有五首在專輯之前就單獨上架過，最早的那首比整張早了一年半。",
+   "數位版在 MB 上的廠牌欄明寫著「無廠牌」，兩個半月後的 CD 才掛上發行公司。"
+  ],
+  "sound": "仍是兩人編制的民謠向獨立流行，但編制比前作厚，多位製作人各自處理不同曲目，快慢與配器落差比上一張大。",
+  "keyTracks": [
+   "埋 (Full Band ver.)",
+   "最後一根稻草",
+   "歲月的海"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2025,
+   "recorded": null,
+   "note": "MB first-release-date 2025-09-19（XW 數位）；TW CD 為 2025-12-03。Apple tw 1837478469 releaseDate 2025-09-19，與數位首發同日。卡單 2025 正確；**引年份與廠牌時要注意這兩筆不是同一個 release**——「2025 年」對應的是無廠牌的數位那筆，「禾廣娛樂」對應的是 12 月的 CD。"
+  },
+  "notes": "【獨立閘覆核：通過】數位那筆的 label-info 是明寫的 **[no label]**（不是空欄，是資料庫裡真的填了「無廠牌」），CD 那筆則明寫 **禾廣娛樂股份有限公司**（收單上）。所以本張根本不需要走第 273 條的空欄推定。⚠ 同上一張，策展層在第 273 條把好樂團列為「目錄裡沒有大廠掛名」是**錯的**（2024 與 2026 兩支單曲分別掛 Sony Music 與台灣索尼音樂娛樂），但因為本張自己有禾廣，結論不受影響。\n【店面】三種查法都跑了。**採信 collectionId 1837478469**：10 軌與 MB CD 十軌同名同序、releaseDate 2025-09-19 與數位首發同日、℗ 2025 好好的一個工作室，**十軌全部有 previewUrl**。\n【三軸提醒沿用】策展層記本張是本組最新的一張、冷門軸 listeners 未長起來，三軸留給本機人工。\n【人名】吳奕宏、韓立康、鍾濰宇都是 MB recording-level producer／arranger 關係的欄位值，可寫。\n【反同構】不要與本組另一張好樂團《在遊蕩的路上學會寬容》共用骨架：那張寫七年首專＋群眾募資＋單一製作人，**這張寫先發單曲逐首累積、再收攏成第二張，以及數位／實體兩筆的廠牌落差**。"
+ },
+ {
+  "key": "desc2:I Mean Us|OST",
+  "artist": "I Mean Us",
+  "album": "OST",
+  "facts": [
+   {
+    "f": "release-group fa32f6dd 的欄位：title「OST」、artist-credit「I Mean Us」、first-release-date 2018-08-24、primary-type Album、secondary-types 空（**盤名叫 OST，但型別欄位不是原聲帶**）。轄下三個 release：2018-08-24 XW Digital Media **8 軌**（label-info 空）、2018-10-03 **TW CD 9 軌**（**禾廣娛樂股份有限公司**，catno **IMU 001**，barcode 4713249231017）、另一筆同日無國別的 Digital Media 8 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fa32f6dd-e98d-4eb4-8918-6e64cbd21ab6&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "**三種載體的曲目不一樣**（軌數差異在資料庫端可查）：數位首發 8 軌，第 8 軌是〈死寶貝〉；台灣 CD 9 軌，前七軌相同，第 8 軌換成〈Playground Babe〉、第 9 軌是〈Søulмaтe〉的 Tsudio Studio 重混版。",
+    "src": "https://musicbrainz.org/ws/2/release/b415db35-b437-48ae-9be0-dc1c61be9d4c?fmt=json&inc=recordings+media+labels"
+   },
+   {
+    "f": "這張碟在**日本另發過黑膠**：Discogs release 13473055，2019-04-13、日本、廠牌 **Fastcut Records**、catno **FCRD-069**，八軌照數位版的順序切成 A1–B4。同一筆的 credit 欄把 phonographic copyright 與 copyright 都記在 **I Mean Us** 自己名下，Fastcut 只掛 published by。",
+    "src": "https://api.discogs.com/releases/13473055"
+   },
+   {
+    "f": "MB 藝人端點 e0f0b9af（Group、country TW、area Taiwan）名下的廠牌只有兩種形態：這張 CD 的禾廣娛樂，以及 2024 年起三支單曲掛的 **I Mean Us CO., LTD.**——**樂團自己的公司**。",
+    "src": "https://musicbrainz.org/ws/2/release?artist=e0f0b9af-999c-41af-8e2f-aa6e906af83a&fmt=json&inc=labels+media+release-groups&limit=100"
+   },
+   {
+    "f": "店面 tw 的八軌與 MB 數位版八軌同名同序（I Don't Know／EYƎ／Johnny the Hero／Dance!／12345 I Hate You／Søulмaтe／You So (Youth Soul)／死寶貝），phonogram 欄寫 **℗ 2018 愛民如子有限公司 I Mean Us CO., LTD.**。八首裡有五首超過五分鐘，最長的〈Søulмaтe〉6 分 45 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1753666361&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "專輯就叫《OST》，但它不是任何一部片的原聲帶——型別欄位寫得清清楚楚是 Album。",
+   "數位版第八首是〈死寶貝〉，台灣 CD 那一格卻換成了別的歌。"
+  ],
+  "sound": "雙主唱的夢幻流行與盯鞋交界；吉他效果器把和聲糊成一片，八首裡五首超過五分鐘，鋪陳比副歌重要。",
+  "keyTracks": [
+   "Søulмaтe",
+   "12345 I Hate You",
+   "EYƎ"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2018,
+   "recorded": null,
+   "note": "MB first-release-date 2018-08-24（XW 數位）、TW CD 2018-10-03、Apple tw 1753666361 releaseDate 2018-08-24。日本黑膠版是 2019-04-13（Fastcut FCRD-069），不是首發年。卡單 2018 正確。"
+  },
+  "notes": "【獨立閘覆核：通過】TW CD 的 label-info 明寫禾廣娛樂股份有限公司（IMU 001），禾廣在裁定 276 的收單上。這位藝人整份 MB 目錄裡**沒有任何退場清單上的廠牌**（另兩種形態是自家公司 I Mean Us CO., LTD. 與 [no label]），第 273 條的兩支都不成問題。\n【軌數三形態，裁定 251】數位 8 軌／台灣 CD 9 軌／日本 LP 8 軌，**引軌數一定要說是哪一版**。正文若要寫「八首」，指的是數位與黑膠版；CD 是九首。\n【盤名陷阱】盤名《OST》容易被誤讀成原聲帶——MB 的 primary-type 是 Album、secondary-types 空，**不是** c-119 第 261 條要排除的影劇／遊戲原聲帶。正文不得寫成「某某片的配樂」。\n【店面】三種查法都跑了，**採信 collectionId 1753666361**（藝人目錄 lookup 命中）：8 軌與數位版同名同序、releaseDate 同為 2018-08-24、**八軌全部有 previewUrl**。探測層 previews.json 亦以 tw 命中同一個 id。\n【反同構】本組另有 I Mean Us《Into Innerverse》2021，那張走「自主發行黑膠＋金曲入圍」的線；**這張的骨架是三種載體三份曲目＋日本廠牌另發黑膠**，不要重複。"
+ },
+ {
+  "key": "desc2:I Mean Us|Into Innerverse",
+  "artist": "I Mean Us",
+  "album": "Into Innerverse",
+  "facts": [
+   {
+    "f": "release-group b6ce5257 的欄位：title「Into Innerverse」、first-release-date 2021-10-15、primary-type Album、secondary-types 空、MB 使用者標籤 classical／dream pop／post-rock／psychedelic rock／shoegaze。轄下**只有一個 release**：2021-10-15、**country 欄空白**、Digital Media **8 軌**、**label-info 空、barcode 空**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b6ce5257-6cee-41ad-a26c-cc1ac938e945&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "那筆 release 掛了六條購買連結，可以看出這張碟的通路形狀：**樂團自己的 Bandcamp**（購買下載與郵購各一），以及博客來、佳佳唱片、誠品、五大唱片四家台灣實體通路的郵購頁。",
+    "src": "https://musicbrainz.org/ws/2/release/d311f9b5-eca2-4ee5-bca7-cee36d8f15e1?fmt=json&inc=url-rels+recordings+media+labels"
+   },
+   {
+    "f": "實體有兩種、廠牌欄各不相同：Discogs release 31823744 是 **2021-10-15 台灣橘色黑膠 LP，廠牌欄寫「Not On Label (I Mean Us self-released)」、catno IMU003**，附雙面歌詞紙；Discogs release 33791352 是同年的台灣 CD，**廠牌 Hove、catno 同為 IMU003**、barcode 4713249233479。",
+    "src": "https://api.discogs.com/releases/31823744"
+   },
+   {
+    "f": "這張碟**入圍第 33 屆金曲獎最佳樂團獎**（入圍，未得獎），而且報名單位就是樂團自己的公司「愛民如子有限公司」。另外，收錄在本作第 7 軌的〈24 Years Old of You〉早一年先以單曲發行，**拿下第 11 屆金音創作獎最佳另類流行歌曲獎**（得獎）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC33%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "八軌逐軌（店面 tw 與 MB 同名同序）：Muséum／UNICODE（客座人聲 鳳小岳）／Run Ran Run／I Dot Car／E.D.E.N.／普通人類／24 Years Old of You／9。全片約 40 分鐘，開頭與結尾兩軌〈Muséum〉4 分 18 秒與〈9〉6 分 7 秒把整張框起來。",
+    "src": "https://itunes.apple.com/lookup?id=1753662582&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "黑膠那面的廠牌欄直接寫著「沒有廠牌，樂團自己出」——同一組編號 IMU003，CD 才掛上發行公司。",
+   "整張碟在 MB 上連國別欄都空著，卻同時擺在誠品、佳佳、五大和樂團自己的 Bandcamp 上賣。"
+  ],
+  "sound": "盯鞋與夢幻流行的厚牆，合成器把吉他的殘響撐開；八首約四十分鐘，首尾兩軌最長，中段節奏偏快但音色始終濕潤。",
+  "keyTracks": [
+   "24 Years Old of You",
+   "UNICODE",
+   "E.D.E.N."
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2021,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆 2021-10-15；Discogs 黑膠 31823744 記 2021-10-15，CD 33791352 記 2021；Apple tw 1753662582 releaseDate 2021-10-15。四邊一致，卡單 2021 正確。"
+  },
+  "notes": "【獨立閘覆核：通過，而且證據比策展層寫的更硬】MB 唯一的 release **label-info 空**，落在第 273 條的射程。補證兩層都成立：(1) 這位藝人整份 MB 目錄**沒有任何退場清單上的廠牌**（禾廣、I Mean Us CO., LTD.、[no label] 三種），所以照 c-119 第 258 條就可收；(2) 就算走嚴格那一支，Discogs release 31823744 的廠牌欄逐字寫著 **Not On Label (I Mean Us self-released)**、catno IMU003，CD 版（33791352）為 Hove／IMU003。**策展層寫的「Discogs：Not On Label / I Mean Us self-released，LP catno IMU003；CD 版 Hove（同 catno IMU003）」我逐字重跑得到同一筆，完全正確。**\n【店面：這是探測層判成 unavailable 的四張之一，第三種查法找回來了】探測層 previews.json 對這張記 tw／hk／sg／my／us／jp／gb／cn 八個店面全 0，判 unavailable。改走藝人目錄 `lookup?id=1431712334&country=tw&entity=album` 就回得到。**串流採信 1753662582**——逐軌比對：MB 八軌 Muséum／UNICODE／Run Ran Run／I Dot Car／E.D.E.N.／普通人類／24 Years Old of You／9，Apple 八軌完全同名同序（Apple 在 UNICODE 後多標了 feat. 鳳小岳），releaseDate 2021-10-15 與 MB 同日，℗ 2021 愛民如子有限公司 I Mean Us CO., LTD.，**八軌全部有 previewUrl**。主線重跑的 apple-candidates.md 對這張列六個候選，其餘五個都是單曲（1 軌），只有 1753662582 是 8 軌＋盤名年份雙中，其餘五個駁回。\n【鳳小岳】客座人聲的名字取自 Apple 的軌名欄位（trackName 內含 feat.），不是我自己補的；MB 側無對應 recording-level rel。\n【反同構】與本組《OST》分工：那張寫三種載體三份曲目，**這張寫自主發行的黑膠與 CD 同編號不同廠牌、以及樂團拿自己公司報名金曲**。"
+ },
+ {
+  "key": "desc4:那我懂你意思了|原諒我不明白你的悲傷",
+  "artist": "那我懂你意思了",
+  "album": "原諒我不明白你的悲傷",
+  "facts": [
+   {
+    "f": "release-group 866b0242 的欄位：title「原諒我不明白你的悲傷」、artist-credit「那我懂你意思了」、first-release-date 2012-12-20、primary-type Album、secondary-types 空。轄下兩個 release：2012-12-20 TW **CD 9 軌**，label-info **中子文化股份有限公司**；2021-10-06 TW CD 9 軌**再版**，label-info **禾廣娛樂**、catno **SVCD1203**、barcode 4713249233608。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=866b0242-fb43-4e7b-8328-93eab371b3bd&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這張碟的第 3 軌〈酒店關門後〉**入圍第 4 屆金音創作獎最佳搖滾單曲獎**（入圍，未得獎）。樂團的前一張《沒有的 啊》則在第 2 屆金音創作獎以「陳修澤」的掛名入圍三個獎項——最佳創作歌手獎、最佳新人（團）獎、最佳搖滾專輯獎，三項皆為入圍。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC4%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E"
+   },
+   {
+    "f": "這是那我懂你意思了的**第二張專輯**，製作人是自然捲的吉他手奇哥；上架首日就登上博客來網路書店即時銷售榜第一名。樂團 2007 年成軍，本作發行時已換過一輪團員，由鼓手大爆、貝斯手小雞、鍵盤手趙謬與主唱兼吉他手修澤組成。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%82%A3%E6%88%91%E6%87%82%E4%BD%A0%E6%84%8F%E6%80%9D%E4%BA%86"
+   },
+   {
+    "f": "MB 上這筆 2012 年的 CD 掛了兩條外部連結：一條指向 douban 的 discography 頁，一條指向 Apple 的專輯頁 1588833904——**資料庫端自己就把這張碟與那個店面編號綁在一起了**。",
+    "src": "https://musicbrainz.org/ws/2/release/065af52d-4630-4a17-840e-083a1d4ddfba?fmt=json&inc=url-rels+recordings+media+labels"
+   },
+   {
+    "f": "九軌逐軌（MB 與店面 tw 同名同序）：Intro／你孤單的唱著歌／酒店關門後／突然的日常生活／平凡的時間裡／我打工的咖啡廳／很幼稚嗎?／原諒我不明白你的悲傷／世界的盡頭是一種停滯的永遠。全片約 42 分鐘，**收尾那首 6 分 41 秒是全片最長的一軌**，比開場的〈Intro〉長了四倍。",
+    "src": "https://itunes.apple.com/lookup?id=1588833904&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "九首歌從一分四十三秒的 Intro 開始，到六分四十一秒的〈世界的盡頭是一種停滯的永遠〉收掉——長度差了四倍。",
+   "MB 那筆 2012 年的台灣 CD，資料庫裡直接掛著 Apple 專輯頁的連結，是少數自己標好店面編號的台灣獨立盤。"
+  ],
+  "sound": "厭世腔的男聲配上悶住的吉他與慢速鼓點，歌名多半是完整的句子；曲長普遍四到五分鐘，尾曲以近七分鐘的長鋪陳收束。",
+  "keyTracks": [
+   "酒店關門後",
+   "原諒我不明白你的悲傷",
+   "世界的盡頭是一種停滯的永遠"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2012,
+   "recorded": null,
+   "note": "MB first-release-date 與原版 release 皆 2012-12-20（TW CD、中子文化）；Apple tw 1588833904 releaseDate 亦為 2012-12-20、℗ 2012 Neutron Culture Co., Ltd.。2021-10-06 那筆是禾廣 SVCD1203 再版，**不是首發**。卡單 2012 正確。"
+  },
+  "notes": "【獨立閘覆核：通過】原版 release 的 label-info 有填，是**中子文化股份有限公司**（Apple 的 phonogram 欄同樣寫 Neutron Culture Co., Ltd.，兩邊對得上），再版是禾廣娛樂 SVCD1203。中子文化與禾廣都在裁定 276 的收單上，這位藝人的 MB 目錄裡也沒有退場清單上的廠牌（另兩家是 StreetVoice 與 2011 年那張 CN 盤的喜瑪拉雅）。不必動用第 273 條。\n【封面：CAA 404 的四張之一，Apple collectionId 已覆核】策展層記這張 CAA release-group 端點 404、只剩 Apple 一條來源，並給 **1588833904**。三種查法都指向同一個 id：盤名搜尋命中、藝人目錄 `lookup?id=798583449&country=tw&entity=album` 命中、**而且 MB 這筆 release 自己就掛著 https://music.apple.com/us/album/1588833904 的 streaming 關係**。逐軌比對九軌同名同序、releaseDate 同為 2012-12-20、℗ Neutron Culture。**這個 collectionId 可以放心拿去補 apple-verified-collection。九軌全部有 previewUrl。**\n【年份與廠牌要出自同一筆】正文若寫「2012」就得配「中子文化」；寫「禾廣 SVCD1203」則是 2021 年的再版，兩者不可混用。\n【刻意不寫】樂團 2016-07-15 宣布解散——那是本作發行三年半後、與本作無直接關係的後續事件，依反向禁令第二類不寫進本張；本組另一張《沒有人在乎你在乎的事》2014 是解散前最後一張，解散那條線留給那張。\n【反同構】與本組另一張那我懂你意思了分工：**這張寫中子文化／金音入圍／博客來榜**，那張寫解散前最後一張與簡繁雙 RG。"
+ },
+ {
+  "key": "desc4:那我懂你意思了|沒有人在乎你在乎的事",
+  "artist": "那我懂你意思了",
+  "album": "沒有人在乎你在乎的事",
+  "facts": [
+   {
+    "f": "release-group 7d2d5d67 的欄位：MB 上的 title 建成簡體「没有人在乎你在乎的事」、artist-credit「那我懂你意思了」、first-release-date 2014-12-24、primary-type Album、secondary-types 空。轄下**只有一個 release**：2014-12-24 TW Official **CD 13 軌**，label-info **禾廣娛樂股份有限公司**、catno **SVCD1401**、barcode 未填。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7d2d5d67-3d5b-4a67-ba02-91529beb3d11&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "**同一張碟在 MB 上被建成兩筆 release-group**：本筆（中文標題、台灣 CD、禾廣 SVCD1401）與 63c99dce《Nobody Cares》（2014-12-24、XW、Digital Media 13 軌、**StreetVoice**、barcode 193017027723）。兩筆同日、同軌數，是中英兩種標題各建了一次，不是兩張碟。",
+    "src": "https://musicbrainz.org/ws/2/release?artist=d25a2100-9eae-4c87-ac1f-3f964cbf126c&fmt=json&inc=labels+media+release-groups&limit=100"
+   },
+   {
+    "f": "這是那我懂你意思了的**第三張、也是最後一張專輯**——樂團在 2016 年 7 月 15 日由主唱修澤宣布解散。發行前的 2014 年 12 月 7 日，他們首度站上台北簡單生活節最重要的天空舞台擔任開場；同年上半年獲邀到北京、上海迷笛音樂節的大舞台演出，年中在 Legacy Taipei 的專場 1200 張完售。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%82%A3%E6%88%91%E6%87%82%E4%BD%A0%E6%84%8F%E6%80%9D%E4%BA%86"
+   },
+   {
+    "f": "這張碟的同名曲在發行八年後被重新啟用：2022 年改編自劉宗瑀同名作品的電視劇《村裡來了個暴走女外科》選用〈沒有人在乎你在乎的事〉當片頭曲。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%82%A3%E6%88%91%E6%87%82%E4%BD%A0%E6%84%8F%E6%80%9D%E4%BA%86"
+   },
+   {
+    "f": "十三軌的結構是**首尾各一段短的、中間夾一首隱藏軌**：第 1 軌〈Intro 災難〉1 分 43 秒、第 2 軌〈我們沒有夢想〉只有 1 分 12 秒、第 12 軌〈Outro 災難之後〉3 分 51 秒收尾，第 13 軌〈該說再見了朋友們〉在店面被標成 Hidden Track。全片約 51 分鐘。",
+    "src": "https://itunes.apple.com/lookup?id=1589005273&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "開場叫〈Intro 災難〉、倒數第二首叫〈Outro 災難之後〉，中間十首就是那場災難。",
+   "發行前十七天，他們才第一次站上簡單生活節最大的那個舞台；一年半後樂團就解散了。"
+  ],
+  "sound": "比前作更急、更亂的搖滾：短軌與長軌交錯，人聲時常被推到與吉他同一層，十三軌裡有三軌不到兩分鐘。",
+  "keyTracks": [
+   "沒有人在乎你在乎的事",
+   "失去記憶的人",
+   "溫暖的陽光"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2014,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆 2014-12-24（TW CD、禾廣 SVCD1401）；孿生 RG《Nobody Cares》的 XW 數位版同為 2014-12-24；Apple tw 1589005273 releaseDate 2014-12-24。三邊同日，卡單 2014 正確。"
+  },
+  "notes": "【繁簡】MB 的 RG 標題本身就是簡體「没有人在乎你在乎的事」，卡單取繁體《沒有人在乎你在乎的事》正確（Apple tw 的標題也是繁體）。**正文一律用繁體形。**\n【獨立閘覆核：通過】label-info 有填（禾廣娛樂 SVCD1401），孿生 RG 的數位版是 StreetVoice，兩家都在裁定 276 的收單上。`SVCD` 這個 catno 前綴在這位藝人身上出現兩次（本作 SVCD1401、2012 年那張的再版 SVCD1203），是同一個發行體系的編號。\n【店面：探測層判 unavailable 的四張之一，第三種查法找回來了】previews.json 記 tw／hk／sg／my／us／jp／gb／cn 八個店面全 0。改走藝人目錄 `lookup?id=798583449&country=tw&entity=album` 一次命中。**串流採信 1589005273**——逐軌比對：MB 十三軌 Intro 災難／我們沒有夢想／格子城市／沒有人在乎你在乎的事／失去記憶的人／Yes I'm in Love／不負責任（男人）的挽留／沒有你我什麼都不是／我是誰／遺忘不是我們的專長／溫暖的陽光／Outro 災難之後／該說再見了朋友們，Apple 十三軌**完全同名同序**（Apple 在第 13 軌加註 Hidden Track、括號用半形），releaseDate 2014-12-24 與 MB 同日，℗ 2014 StreetVoice Co,. Ltd.，**十三軌全部有 previewUrl**。主線重跑的 apple-candidates.md 對這張只列一個候選，就是這一筆，13 軌＋盤名年份雙中，採信。\n【裁定 E 沿用】《Nobody Cares》63c99dce 是同一張碟的英文建檔，**日後補卡池不可當成另一張**。策展層這一條我覆核成立。\n【反同構】與本組另一張那我懂你意思了分工：那張寫中子文化與金音入圍，**這張寫解散前的最後一張、簡繁雙 RG，以及同名曲八年後被電視劇撿回去當片頭曲**。"
+ },
+ {
+  "key": "desc4:巨大的轟鳴|老子有的是時間",
+  "artist": "巨大的轟鳴",
+  "album": "老子有的是時間",
+  "facts": [
+   {
+    "f": "release-group 32b82538 的欄位：title「老子有的是時間」、artist-credit「巨大的轟鳴」（藝人實體 7b72823d，Group、country TW、disambiguation「Taiwanese band」、alias Gigantic Roar）、first-release-date 2016-05-13、primary-type Album、secondary-types 空。轄下**只有一個 release**：2016-05-13 TW Official **CD 9 軌**，**label-info 空、barcode 空**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=32b82538-8ffa-4d08-a2a3-8a8b4fab6791&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "**MB 的空廠牌欄不是這張碟的全貌。** Discogs release 11469219 是同一張的 2016 年台灣 CD，廠牌欄逐字寫著 **Street Voice 街聲**、catno **SVCD-1602**、英文盤名 Ain't Got Nothing But Time, Son。另有 Discogs release 32017235：**2024-05-31 台灣 CD 復刻，廠牌 White Wabbit Records（小白兔唱片）、catno GR02**。",
+    "src": "https://api.discogs.com/releases/11469219"
+   },
+   {
+    "f": "這張碟**入圍第 7 屆金音創作獎最佳搖滾專輯獎**（入圍，未得獎）。樂團本身在前一年拿過獎：**第 6 屆金音創作獎最佳現場演出獎得獎**（2015，得獎作品登記為「永豐 Legacy Taipei 音樂展演空間」），而第 5 屆同一個獎他們是入圍未得（作品為《登鸛雀樓》發片演唱會台北場）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC6%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E"
+   },
+   {
+    "f": "這是高雄龐克團巨大的轟鳴的**唯一一張錄音室專輯**，而且發行後半年樂團就收起來了：2016 年 11 月宣布暫別巡演、2017 年 1 月正式休團，直到 2024 年 5 月才宣布限定重組。團名取自中國搖滾樂團 P.K.14〈說話的傷口〉的一段歌詞——「這些說話的傷口，它們穿過巨大的轟鳴」。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%B7%A8%E5%A4%A7%E7%9A%84%E8%BD%9F%E9%B3%B4"
+   },
+   {
+    "f": "九軌逐軌（MB 的 CD 版）：媽媽我要吃肉／美式快餐／老子有的是時間／台上一分鐘／ASHS／菜組長／你是豬排／靠腰毛里森／Outro。**沒有一首超過四分半**，最短的〈媽媽我要吃肉〉2 分 41 秒，全片約 29 分鐘。第 7 軌〈你是豬排〉早在 2015 年就以《2nd Demo 你是豬排》先發過。",
+    "src": "https://musicbrainz.org/ws/2/release/caa98db3-c144-4285-b455-c10b1f33fb1d?fmt=json&inc=recordings+media+labels"
+   }
+  ],
+  "hookCandidates": [
+   "九首二十九分鐘，沒有一首超過四分半——他們的唯一一張專輯，發完半年就休團了。",
+   "團名是從 P.K.14 一句歌詞裡摘出來的：那些傷口穿過巨大的轟鳴。"
+  ],
+  "sound": "高雄出身的龐克，短促、直衝、幾乎不留鋪陳；歌名口語到近乎髒話，鼓與貝斯同步壓著吉他往前推。",
+  "keyTracks": [
+   "老子有的是時間",
+   "媽媽我要吃肉",
+   "你是豬排"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2016,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆 2016-05-13（TW CD 9 軌）；Discogs 11469219 記 2016；Apple tw 1590073632 的 releaseDate 記 2016-05-11，早兩天；zh 維基寫「2016 年 4 月發行」，與三個資料庫都對不上，不採。卡單 2016 正確；要寫到日就用 MB／Discogs 的 5 月 13 日實體那筆。"
+  },
+  "notes": "【推翻策展層兩點，但結論不變】(1) 卡片 `label` 欄寫「2016-05-13 台灣 CD 自主發行（MB label-info 未填、無 barcode）」——**「自主發行」不成立**。Discogs release 11469219 明確登記 **Street Voice 街聲／SVCD-1602**，街聲在裁定 276 的收單上。正文與 manifest 的廠牌欄應改成街聲，不要寫自主發行。(2) 策展層在 rulings 第 273 條把巨大的轟鳴歸進「該藝人目錄裡沒有任何大廠掛名 → 照 258 條當自主發行收」——**這個前提是錯的**：同一位藝人的 2014 年 EP《登鸛雀樓》在 MB 上有一筆 TW release 掛 **Sony Music、catno INFRA915**（另一筆 XW 掛街聲股份有限公司），Discogs 11469071 那筆也同時列 Uloud music co,. ltd 與 Sony Music Entertainment Taiwan Ltd.。**所以這張本來應該走第 273 條的嚴格那一支。** 走完之後仍然通過，證據三層：Discogs 的 街聲 SVCD-1602、2024 年小白兔唱片 GR02 復刻（策展層寫的 catno 我重跑得到同一個，正確）、以及 Apple tw 的 phonogram 欄 **℗ 2016 Gigantic Roar**（樂團自己）。**收，但理由要換成上面這三條，不是「查無廠牌」。**\n【店面：探測層判 unavailable 的四張之一，第三種查法找回來了】previews.json 記 tw／hk／sg／my／us／jp／gb／cn 全 0（其中 my 還吃了 ratelimited）。改走藝人目錄 `lookup?id=888637612&country=tw&entity=album` 一次命中。**串流採信 1590073632**——逐軌比對：Apple 八軌 媽媽我要吃肉／美式快餐／老子有的是時間／台上一分鐘／Ashs／菜組長／你是豬排／靠腰毛里森，與 MB CD 的第 1–8 軌**同名同序**（Apple 把 ASHS 寫成 Ashs）；**差別只在 MB 的 CD 多了第 9 軌〈Outro〉（1 分 43 秒），數位版沒有這一軌**，屬裁定 251 的載體差。releaseDate 2016-05-11、℗ 2016 Gigantic Roar，**八軌全部有 previewUrl**。主線重跑的 apple-candidates.md 給兩個候選，另一個 1017230423 是 2015 年的兩軌 Demo 單曲，駁回。\n【軌數，裁定 251】CD 九軌、數位八軌。**正文寫軌數要指明版本**，或直接不寫軌數。\n【人名】團員名字（侯柏第、王之佑、魏境含、黃堂軒）只有 zh 維基單一來源、MB 側無 member-of-band 關係，依裁定 241／250 從嚴**不寫進 facts**，需要時只能寫「四人編制的高雄龐克團」。"
+ },
+ {
+  "key": "desc4:厭世少年|青春校園戀愛物語",
+  "artist": "厭世少年",
+  "album": "青春校園戀愛物語",
+  "facts": [
+   {
+    "f": "release-group 57483928 的欄位：title「青春校園戀愛物語」、artist-credit「厭世少年」（藝人實體 2ee06c7c，Group、country TW、alias Angry Youth）、first-release-date 2018-08-03、primary-type Album、secondary-types 空。轄下**只有一個 release**：2018-08-03 TW Official **CD 14 軌**，label-info **相信音樂**、catno **RW0034**、barcode 4713052735276。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=57483928-b9b7-4619-ac1c-5c65e1c990de&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "**數位比實體早了六週**：Apple 店面 tw 的同一張（collectionId 1395010297，14 軌）releaseDate 記 **2018-06-20**，MB 的台灣 CD 則是 2018-08-03。而且兩邊的權利人不一樣——Apple 的 phonogram 欄寫 **℗ 2018 Angry Youth**（樂團自己），CD 那面才掛相信音樂。",
+    "src": "https://itunes.apple.com/lookup?id=1395010297&country=tw&entity=song&limit=100"
+   },
+   {
+    "f": "這張碟**入圍第 30 屆金曲獎最佳新人獎**（入圍，未得獎；該屆最佳新人獎得主另有其人）。報名單位登記為相知國際股份有限公司。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC30%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "發片前一年，厭世少年在 2017 年貢寮國際海洋音樂祭同時拿下【海洋之星】與【評審團大賞】兩個獎——**是海祭辦到第十七年為止第一組同時抱走兩項大獎的樂團**。這張是他們的首張專輯，錄音製作前後花了兩年。",
+    "src": "https://streetvoice.com/angry_youth/songs/album/97298174/"
+   },
+   {
+    "f": "十四軌約 68 分鐘，**長度落差是全組最大的一張**：最短的〈我再也瘦不了啦!〉只有 1 分 2 秒，最長的收尾曲〈妥瑞氏症〉8 分 7 秒，另有〈你變態的心〉7 分 54 秒與〈就這樣子不見〉7 分 16 秒。MB 目錄裡這位藝人只有兩筆——2015 年的自我同名 EP 與本作。",
+    "src": "https://musicbrainz.org/ws/2/release?artist=2ee06c7c-198e-47f2-9926-071196720779&fmt=json&inc=labels+media+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "海祭辦了十七年，他們是第一組同時把海洋之星和評審團大賞一起抱走的團。",
+   "十四首歌從一分零二秒排到八分零七秒，收尾那首叫〈妥瑞氏症〉。"
+  ],
+  "sound": "龐克骨架上架了整組管樂，長號與薩克斯風把段落撐開；曲長從一分鐘到八分鐘都有，情緒切換突兀是刻意的。",
+  "keyTracks": [
+   "青春校園戀愛物語",
+   "妥瑞氏症",
+   "來自星星的你"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2018,
+   "recorded": null,
+   "note": "MB first-release-date 2018-08-03（TW CD、相信音樂 RW0034）；Apple tw 1395010297 releaseDate 2018-06-20（數位）；官方專輯頁亦記 2018-06-20 發行。**首發其實是 6 月 20 日的數位**，8 月 3 日是實體。卡單 2018 正確；寫到日要指明是哪一面。"
+  },
+  "notes": "【獨立閘覆核：通過】唯一的 release 的 label-info 有填，是**相信音樂**（catno RW0034、barcode 4713052735276，落在相信音樂的 471305x GS1 區塊，與同組麋先生《野生》4713052731285、傻子與白痴《夜長夢少》4713052738031 同一個公司前綴）。相信音樂依主線裁定 276 明確收。⚠ **另記一筆給主線**：第 30 屆金曲獎的**報名單位登記為「相知國際股份有限公司」**，而相知國際在裁定 276 的退場清單上。報名單位不是 release 的 label-info，依 c-119 第 258 條「唯一可執行的判準是 MB release 端點的 label-info」，本張不受影響；但退場清單上的公司以報名單位的形態出現在一張要收的碟上，值得主線知道（同樣的情形也出現在麋先生《沒名字的人類》第 27 屆的報名單位「喜國娛樂事業有限公司&相知國際股份有限公司」）。\n【店面：探測層判 unavailable 的四張之一，第三種查法找回來了】previews.json 記八個店面全 0。改走藝人目錄 `lookup?id=1397509209&country=tw&entity=album` 一次命中。**串流採信 1395010297**——逐軌比對：MB 十四軌 來自星星的你／青春校園戀愛物語／一場絕望的雨／就這樣子不見／流浪狗與爛主人／我再也瘦不了啦！／啊！又忘記你的名字啦！／害羞男孩戀愛日記／比比／低頭族／你變態的心／甲午戰爭／我的世界垮下來／妥瑞氏症，Apple 十四軌**完全同名同序**（差別只在驚嘆號 MB 用全形、Apple 用半形），℗ 2018 Angry Youth，**十四軌全部有 previewUrl**。主線重跑的 apple-candidates.md 對這張只列這一個候選，14 軌＋盤名年份雙中，採信。\n【同名陷阱沿用】策展層記 Apple tw 用「厭世少年」搜尋會撈到三筆掛名 Angry Youth 的外國同名團（含 2007 年的《First Attack》）。我改用 artistId 1397509209 的目錄 lookup，回的四筆全是本團，沒有混入。\n【人名與自介】團員全部只用綽號（阿國、檳榔、莫札特一類），沒有任何欄位背書，依裁定 241／250 **一個都不寫**。樂團官方自介裡「一名有著妨礙風化前科的男子」那句是自嘲文案、無第三方佐證，**不得進正文**。"
+ },
+ {
+  "key": "desc4:宇宙人|一萬小時",
+  "artist": "宇宙人",
+  "album": "一萬小時",
+  "facts": [
+   {
+    "f": "release-group adb93fad 的欄位：title「一萬小時」、artist-credit「宇宙人」（藝人實體 75fffb0e，Group、country TW、disambiguation「Taiwanese band」、life-span begin **2004**、alias Cosmos People）、first-release-date 2015-05-29、primary-type Album、secondary-types 空。轄下三個 release，全部 **11 軌、全部掛相信音樂**：2015-05-29 **XW 數位**（barcode 4712758998169，title 用中文「一萬小時」）、2015-06-03 **TW CD**（catno **BD0084**、barcode 0888751050426）、以及一筆無日期的 TW CD（catno **BD0084A**、barcode 888751078123）。**⚠ 兩張實體的 title 欄寫的是英文「10000 Hours」，只有數位那筆寫中文。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=adb93fad-8804-4582-ac1b-ec2382f56cf7&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這張碟**入圍第 27 屆金曲獎最佳樂團獎**（入圍，未得獎；報名單位相信音樂股份有限公司）。同一屆的最佳樂團入圍名單裡還有麋先生《沒名字的人類》——**同屆的最佳樂團入圍名單上有兩支這一路的台灣樂團**。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC27%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "這是宇宙人的**第三張錄音室專輯**，發行時樂團已經成軍十一年（2004 年 9 月起）。前一年他們以日文專輯《コスモロジー》在日本正式出道並登上 Summer Sonic，同年為紀念成軍十週年前往喜馬拉雅山拍攝紀錄片；本作之後的 2016 年才推出首張日文迷你專輯《TIME LAPSE》。團名的來歷與音樂無關——來自 2004 年雅典奧運男子 400 公尺跨欄金牌 Félix Sánchez 賽前熱身給團員的印象「很宇宙」。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%AE%87%E5%AE%99%E4%BA%BA_(%E5%8F%B0%E7%81%A3%E6%A8%82%E5%9C%98)"
+   },
+   {
+    "f": "MB 藝人端點的 member-of-band 關係列出主唱兼鍵盤手 **林忠諭**（lead vocals 與 keyboard 兩筆關係）。第 34 屆金曲獎的入圍名單則把宇宙人的成員逐名列為林忠諭、方奎棠、陳奎言、唐承運。",
+    "src": "https://musicbrainz.org/ws/2/artist/75fffb0e-184a-403f-8d5d-9dd822a58217?fmt=json&inc=artist-rels+url-rels"
+   },
+   {
+    "f": "十一軌逐軌（MB 的 TW CD 與店面 tw 同名同序）：往前／那你呢／一萬小時／沒感覺／真實朋友／成名15秒／淹沒／不孤島／兩人雨天／寂寞之上／日常練習。全片約 53 分鐘，十一首裡有九首落在 3 分半到 5 分之間，最短的〈沒感覺〉3 分 36 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1093778539&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "專輯叫《一萬小時》，交出來的時候樂團剛好練了十一年。",
+   "兩張台灣 CD 的封面標題其實寫的是英文「10000 Hours」，只有數位版用中文。"
+  ],
+  "sound": "放克底的舞曲搖滾：吉他切分密、貝斯線走在前面，主唱兼鍵盤的中音域把段落黏起來；十一首多半四分鐘上下，節奏一致。",
+  "keyTracks": [
+   "一萬小時",
+   "成名15秒",
+   "日常練習"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2015,
+   "recorded": null,
+   "note": "MB first-release-date 2015-05-29（XW 數位）、TW CD 2015-06-03（BD0084）、另一筆 CD（BD0084A）無日期；Apple tw 1093778539 releaseDate 2015-05-29，與數位首發同日。卡單 2015 正確。**引年份配廠牌沒有風險，三筆 release 全都是相信音樂。**"
+  },
+  "notes": "【獨立閘覆核：通過】三筆 release 的 label-info **全部有填**，都是相信音樂（BD0084／BD0084A，barcode 前綴 4712758 與 088875x）。相信音樂依主線裁定 276 明確收。這位藝人的 MB 目錄裡只有一筆非相信音樂的東西——2016 年日本單曲〈あなたは 〜And You?〜〉掛 SPACE SHOWER MUSIC——**不在退場清單上，也不是這張碟**。第 273 條不適用。\n【店面】三種查法都跑了，**採信 collectionId 1093778539**：11 軌與 MB CD 十一軌同名同序、releaseDate 2015-05-29 與數位首發同日、℗ 2015 Bin Music International Limited（相信音樂的英文名），**十一軌全部有 previewUrl**。探測層 previews.json 亦以 tw 一次命中同一個 id。\n【短掛名沿用】策展層第二節記「宇宙人」在 MB 上有三個字串完全相同的實體，另兩筆是 d38c9298（Group／Japan／2008／Japanese experimental pop）與 2cff914e（Person／Nagoya）。本張釘的 75fffb0e 的 area 是 Taiwan、begin 2004、alias Cosmos People，是正確的那一個，我覆核成立。\n【人名】林忠諭有 MB member-of-band 欄位背書可寫；方奎棠、陳奎言、唐承運只有金曲獎入圍名單一處，且那是 2022 年《理想狀態》的陣容、不必然等於 2015 年的編制，**本張不寫這三個名字**，需要時寫「三人編制」。\n【刻意不寫】2023 年宇宙人以《理想狀態》拿下第 34 屆金曲獎最佳樂團獎——那是本作八年後、與本作無關的後續事件，依反向禁令第二類不寫。\n【反同構】本組有四位藝人是相信音樂系（厭世少年、宇宙人、傻子與白痴、麋先生）。**這張不要用「相信音樂」當主結構**，主結構走「成軍十一年才叫一萬小時／日本出道與喜馬拉雅紀錄片夾在中間的那一張」。"
+ },
+ {
+  "key": "desc4:椅子樂團|Cheers!Land",
+  "artist": "椅子樂團",
+  "album": "Cheers!Land",
+  "facts": [
+   {
+    "f": "release-group cd8423eb 的欄位：title「Cheers!Land」、artist-credit「椅子樂團」（藝人實體 03a25129，Group、area Taiwan、**begin-area Taichung**、life-span begin 2016、disambiguation「indie pop trio」、alias The Chairs）、first-release-date 2016-03-03、primary-type Album。轄下兩筆：2016-03-03 標為 XW Digital Media 10 軌（**Sound Of Tomorrow**、barcode 4717954167142）、2022-03-03 TW CD 10 軌（**禾廣娛樂**、catno SOTMR006、barcode 4713249233882）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cd8423eb-9bc9-4d2f-bacb-4b53b7b31b09&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs release 24605102 把同一組數字記成**實體 CD**：2016-03-03、台灣、廠牌 **Hove**、catno **CHAIRS01**、barcode **4717954167142**——與 MB 那筆「數位」用的是同一個條碼。該筆的 notes 逐字寫著：這是 catalog CHAIRS01、barcode 4717954167142 的原始發行版，而 2022 年 3 月 3 日、catalog SOTMR006、barcode 4713249233882 的那版是 second repress。",
+    "src": "https://api.discogs.com/releases/24605102"
+   },
+   {
+    "f": "這張碟同屆**入圍第 7 屆金音創作獎兩個獎項——最佳新人（團）獎與最佳民謠專輯獎**（兩項皆為入圍，未得獎；入圍名單上的掛名寫成「椅子Chairs'」）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC7%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E"
+   },
+   {
+    "f": "這是椅子樂團的**首張專輯**，三名團員都出自台中一中的民謠吉他社。發完這張與 2017 年的單曲〈建議是看開點〉之後，樂團隨即宣布休團，隔年才重組。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%A4%85%E5%AD%90%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "十軌逐軌（MB 與店面 tw 同名同序）：島／年輪／Kaleidoscope／惦惦的夢／後山舞曲／風景／The Golden Age Blues／到家啦!／張阿惠／Cheers!。全片約 40 分鐘；**中文與英文曲名各半、台語曲名亦有**，最長的〈風景〉6 分 10 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1470198629&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "三個台中一中民謠吉他社的人做出來的第一張碟，發完隔年就宣布休團。",
+   "同一個條碼，MB 說它是數位、Discogs 說它是 CD——2022 年那版其實是二刷。"
+  ],
+  "sound": "民謠底的獨立流行三人編制，木吉他與清音電吉他交錯、和聲鋪得厚；曲名中英台語混雜，速度慢而句子長。",
+  "keyTracks": [
+   "島",
+   "風景",
+   "張阿惠"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2016,
+   "recorded": null,
+   "note": "MB first-release-date 2016-03-03；Discogs 24605102 記同日、且是**實體 CD**（Hove／CHAIRS01）；Apple tw 1470198629 releaseDate 2016-03-03。三邊同日，卡單 2016 正確。**2022-03-03 的禾廣 SOTMR006 是二刷、不是首張實體。**"
+  },
+  "notes": "【推翻派工詞的一項前提】派工信要我盯「椅子樂團三張都是數位首發早於實體 CD 一到六年（2016 數位／2022 CD 這種）」——**這張的形狀不是那樣**。MB 把 2016-03-03 那筆的 media.format 記成 Digital Media，但 Discogs 24605102 是同一個 barcode（4717954167142）的**實體 CD**，catno CHAIRS01，並在 notes 裡明說 2022 年的 SOTMR006 是 second repress。**所以「數位比實體早六年」是 MB 的載體欄位誤記造成的錯覺，正文不得寫。** 正確說法：2016 年首發（Discogs 記為 CD、MB 記為數位），2022 年二刷。\n【廠牌欄兩說】MB 說 2016 那筆是 Sound Of Tomorrow、2022 那筆是禾廣娛樂；Discogs 說 2016 那筆是 Hove。**禾廣娛樂與 Hove 是同一家的中英文名**——旁證有二：Discogs 的 I Mean Us《OST》CD（release 13356762，catno IMU 001，與 MB 那筆禾廣 IMU 001 是同一張）在 credit 欄列的是 HOVE Entertainment；甜約翰《Dear》第 29 屆金曲獎最佳樂團獎的報名單位是禾廣娛樂股份有限公司，而同一張碟 MB 的 label-info 寫 Hove。**建議主線把裁定 276 收單裡的「禾廣」與「Hove」併成一條，兩者不是兩家。**\n【獨立閘覆核：通過】兩筆 release 的 label-info 都有填（Sound Of Tomorrow／禾廣娛樂），皆在裁定 276 的收單上。這位藝人的 MB 目錄十九筆裡，廠牌只有 Sound Of Tomorrow(10)、禾廣娛樂(3)、明天的歌有限公司(1)、時間機器(1)、Hove(1)、Audiotree Music(1)，**一家退場清單上的都沒有**。\n【明天的歌有限公司 ＝ Sound of Tomorrow】欄位旁證：2019 單曲〈城市潛水〉MB 的 label-info 是「明天的歌有限公司」，Apple 同一支單曲（1479695334）的 ℗ 欄是「Sound of Tomorrow Ltd.」；第 30 屆金曲獎《Lovely Sunday》的報名單位也是明天的歌有限公司。\n【店面】三種查法都跑了，**採信 collectionId 1470198629**：10 軌同名同序、releaseDate 2016-03-03、℗ 2016 Sound of Tomorrow Ltd.，**十軌全部有 previewUrl**。探測層 previews.json 亦以 tw 命中同一個 id。\n【人名】三位團員（裘詠靖、陳仲穎、孫伯元）只有 zh 維基一處、MB 無 member-of-band 關係，依裁定 241／250 **不寫**。\n【反同構】椅子樂團本組三張。**這張的骨架＝台中一中社團出身的首張＋金音雙入圍＋發完就休團**；不要碰《LOVELY SUNDAY》的重組與金曲得獎，也不要碰《The Great Escape》的全英文曲目。"
+ },
+ {
+  "key": "desc4:椅子樂團|LOVELY SUNDAY",
+  "artist": "椅子樂團",
+  "album": "LOVELY SUNDAY",
+  "facts": [
+   {
+    "f": "release-group 52c88b25 的欄位：title「LOVELY SUNDAY」、first-release-date 2018-06-29、primary-type Album、secondary-types 空。轄下兩筆，**共用同一個 barcode 4713249230775**：2018-06-29 XW Digital Media 10 軌（**Sound Of Tomorrow**）與 2018-08-01 TW CD 10 軌（**禾廣娛樂**、catno CHAIRS02）。Discogs release 24605123 的同一張 CD 則把 catno 記成 **SOTMR001**、廠牌記成 Hove，barcode 相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=52c88b25-e1f5-467d-99e0-47b5f7769490&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這張碟**拿下第 30 屆金曲獎最佳演唱組合獎**（得獎，報名單位明天的歌有限公司；同屆同獎入圍的還有 Vast & Hazy、歐開合唱團、害喜喜、頑童MJ116）。此外，收錄在本作的〈若今夜我失眠〉**入圍第 9 屆金音創作獎最佳民謠單曲獎**（入圍，未得獎），本作的專輯演唱會則**入圍第 10 屆金音創作獎最佳現場演出獎**（入圍，未得獎）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC30%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "這是**休團之後重組回歸的第一張**：椅子樂團在 2017 年發行單曲〈建議是看開點〉後不久宣布休團，2018 年與製作人黃榮毅合作，在夏天交出這張第二號作品，中文副題定為「樂芙莉聖代」。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%A4%85%E5%AD%90%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Discogs 那筆 CD 的 credit 欄把製作分工列成一串地點：Sound of tomorrow Ltd. 掛 Record Company，Twin Eyes Studio 與 112F Recording Studio 掛 Recorded At，Yu Cheng Cinema Studio 掛 Mixed At，Joel Hatstat Audio 掛 Mastered At。",
+    "src": "https://api.discogs.com/releases/24605123"
+   },
+   {
+    "f": "十軌逐軌（MB 與店面 tw 同名同序）：DEDEDE／手捧一杯酒／洋子、洋子／Slow Down／若今夜我失眠／Every Day Is Sunday／日常的鏡頭／阿奇 (Intro)／阿奇／Rollin' On。**全片只有 34 分鐘**；第 8、9 軌是同一首〈阿奇〉拆成 43 秒的前奏與 2 分 39 秒的本體，最短的〈Every Day Is Sunday〉2 分 7 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1470175139&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "宣布休團之後才交出來的第二張，隔年替他們拿下金曲獎最佳演唱組合。",
+   "十首三十四分鐘，其中一首還被拆成四十三秒的前奏和兩分半的本體。"
+  ],
+  "sound": "復古味的獨立搖滾小品：吉他音色偏乾、混音把人聲推近，曲子短而轉折多，十首裡有四首不到三分鐘。",
+  "keyTracks": [
+   "Rollin' On",
+   "日常的鏡頭",
+   "若今夜我失眠"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2018,
+   "recorded": null,
+   "note": "MB first-release-date 2018-06-29（數位）、TW CD 2018-08-01，兩筆同 barcode 4713249230775，**相隔僅一個月**；Discogs 24605123 記 2018；Apple tw 1470175139 releaseDate 2018-06-29。卡單 2018 正確。派工詞說的「數位首發早於實體一到六年」在這張不成立，這裡只差三十三天。"
+  },
+  "notes": "【catno 兩說，本層不裁】同一張 CD：MB 記 **禾廣娛樂／CHAIRS02**，Discogs 24605123 記 **Hove／SOTMR001**，barcode 兩邊相同（4713249230775）。兩家其實同一家（禾廣＝Hove，旁證見同組《Cheers!Land》那筆的 notes），但**編號互相矛盾**——而且與《Cheers!Land》那張的 CHAIRS01／SOTMR006 剛好交叉。**正文不要寫 catno**，manifest 若要填請主線擇一並註明出處。\n【獨立閘覆核：通過】兩筆 release 的 label-info 都有填（Sound Of Tomorrow／禾廣娛樂），皆在收單上；藝人目錄無退場清單廠牌。\n【店面】三種查法都跑了，**採信 collectionId 1470175139**：10 軌同名同序（Apple 把 intro 的括號寫成半形大寫），releaseDate 2018-06-29 與 MB 數位首發同日，℗ 2018 Sound of Tomorrow Ltd.，**十軌全部有 previewUrl**。探測層 previews.json 亦以 tw 命中同一個 id。\n【獎項寫法】金曲獎那筆是**得獎**、兩筆金音獎都是**入圍**，三者不可合併成「拿下多項肯定」。\n【製作人】黃榮毅只有 zh 維基一處、MB 無 recording-level rel，若要寫請標為單一來源；Discogs 的 credit 欄只到公司與錄音室層級，沒有個人製作人名。\n【反同構】椅子樂團本組三張。**這張＝休團後重組＋金曲得獎＋全組最短的專輯**；不要重講《Cheers!Land》的社團出身，也不要碰《The Great Escape》的全英文曲目。"
+ },
+ {
+  "key": "desc4:椅子樂團|The Great Escape Of Our Time",
+  "artist": "椅子樂團",
+  "album": "The Great Escape Of Our Time",
+  "facts": [
+   {
+    "f": "release-group 983e16e3 的欄位：title「The Great Escape Of Our Time」、first-release-date 2023-11-03、primary-type Album、secondary-types 空。轄下兩筆：2023-11-03 **TW** Digital Media 10 軌（**Sound Of Tomorrow**、barcode **3617229261104**）與 2024-04-24 TW **CD** 10 軌（**Hove**、catno **SOTMR008**、barcode 4713249234971）。Discogs release 34509292 則把同一張 CD（SOTMR008、Sound Of Tomorrow Ltd.）記成 **2023 年 11 月**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=983e16e3-2e04-46fa-9eae-9c63aec3c4ad&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "**這是椅子樂團第一張曲名全部是英文的專輯**：The Great Escape Of Our Time／Humble Pie Tattoo／MEIGUANXIDEYO／Hey Aries／She's Moving Out Of Town／Hey Sugar／Waiting Room Fling／I've Been Waiting For My Waves To Come／Sparklers In The Rain／DA35——十首沒有一個中文字，連拼音曲名 MEIGUANXIDEYO 也是拉丁字母。前兩張《Cheers!Land》與《LOVELY SUNDAY》都是中英夾雜。",
+    "src": "https://itunes.apple.com/lookup?id=1712622994&country=tw&entity=song&limit=100"
+   },
+   {
+    "f": "十首裡有三首在專輯前先以單曲上架：〈Hey Aries〉2023-05-05、〈MEIGUANXIDEYO〉2023-09-22、〈Humble Pie Tattoo〉2023-10-20，最後才是 11 月 3 日的整張。其中〈Hey Aries〉另外在台灣發過黑膠——Discogs release 31493207，廠牌 **Big Romantic Records**、catno BRRCD-110。",
+    "src": "https://itunes.apple.com/lookup?id=1096054130&country=tw&entity=album&limit=200"
+   },
+   {
+    "f": "MB 上這筆數位 release 自己掛了一條 streaming 關係，指向 https://music.apple.com/tw/album/1712622994 ——**資料庫端就把這張碟與那個店面編號綁在一起**。",
+    "src": "https://musicbrainz.org/ws/2/release/28b18839-5ff6-4cb9-81c0-f6fa9157ec4f?fmt=json&inc=url-rels+recordings+media+labels"
+   },
+   {
+    "f": "椅子樂團數位發行的條碼與實體不同系統：這張數位版的 3617229261104 與樂團 2019 年以後的數位單曲（3615939609124、3616401101207、3616404256065、3616848728753 等）同屬 **361 開頭的區塊**，而所有台灣 CD 用的是 4713249 開頭（禾廣）或 4717954 開頭。",
+    "src": "https://musicbrainz.org/ws/2/release?artist=03a25129-3371-4ab4-b30b-f5d9dcfbec7c&fmt=json&inc=labels+media+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌沒有一個中文字，連那首拼音歌名也是拉丁字母排出來的。",
+   "整張碟在唱片行架上要等到隔年春天，串流那面 2023 年 11 月就先開了。"
+  ],
+  "sound": "比前兩張更靠向英美獨立搖滾的一張：吉他 riff 為主、節奏推得更快，十首均在三到四分半之間，沒有小品式的短軌。",
+  "keyTracks": [
+   "The Great Escape Of Our Time",
+   "Hey Aries",
+   "DA35"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2023,
+   "recorded": null,
+   "note": "MB first-release-date 2023-11-03（TW 數位、Sound Of Tomorrow）；Apple tw 1712622994 releaseDate 2023-11-03。實體 CD 兩說：MB 記 2024-04-24（Hove／SOTMR008），Discogs 34509292 記 2023-11。卡單 2023 正確。**若要寫實體的日期，兩個資料庫對不上，建議不寫月份、只寫 2023 年發行。**"
+  },
+  "notes": "【封面：CAA 404 的四張之一，Apple collectionId 已覆核】策展層記 CAA release-group 端點 404、只剩 Apple 一條來源，給 **1712622994**。三種查法都指向同一個 id：盤名搜尋命中、藝人目錄 `lookup?id=1096054130&country=tw&entity=album` 命中、**而且 MB 那筆數位 release 自己就掛著 https://music.apple.com/tw/album/1712622994 的 streaming 關係**。逐軌比對十軌同名同序、releaseDate 2023-11-03 與 MB 同日、℗ 2023 Sound of Tomorrow Ltd.。**這個 collectionId 可以放心拿去補 apple-verified-collection。十軌全部有 previewUrl。**\n【獨立閘覆核：通過】兩筆 release 的 label-info 都有填（Sound Of Tomorrow／Hove），皆在裁定 276 的收單上（Hove 即禾廣，說明見同組《Cheers!Land》的 notes）。\n【年份與廠牌要出自同一筆】「2023-11-03」對應的是掛 Sound Of Tomorrow 的數位那筆，「Hove／SOTMR008」對應的是 MB 記為 2024-04-24 的 CD。**兩者不可混寫成「2023 年由 Hove 發行」。** 而且 Discogs 把那張 CD 記在 2023 年 11 月，與 MB 差了將近半年——實體日期本身就有兩說，正文不要寫實體的月份。\n【反同構】椅子樂團本組三張。**這張＝全英文曲目＋先發三支單曲再收攏＋數位與實體隔一季**；不要重講《Cheers!Land》的社團出身，也不要碰《LOVELY SUNDAY》的休團重組與金曲得獎。"
+ },
+ {
+  "key": "desc4:傻子與白痴|夜長夢少",
+  "artist": "傻子與白痴",
+  "album": "夜長夢少",
+  "facts": [
+   {
+    "f": "release-group e439492b 的欄位：MB 上的完整 title 是「Till 5:10 a.m. 夜長夢少」（英文在前）、first-release-date 2019-08-16、primary-type Album、secondary-types 空。轄下**只有一個 release**：2019-08-16 **TW** Official **CD 13 軌**，label-info **相信音樂**、barcode **4713052738031**——這個條碼落在相信音樂的 4713052 公司前綴裡，與同期麋先生《野生》4713052731285、厭世少年《青春校園戀愛物語》4713052735276 同一個區塊。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e439492b-033a-42ca-b005-bf4727d5a25c&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "**盤名的英文那半其實是最後一首歌**：十三軌的收尾是〈5:09a.m.〉（1 分整）與〈5:10a.m.〉（3 分 55 秒）兩首連在一起，開場則是 2 分 16 秒的〈Intro F&I〉。MB 的軌名欄還附了兩筆作曲掛名——〈Intro F&I〉記「作曲：傻子與白痴」、〈5:09a.m〉記「作曲：鄭光良」。",
+    "src": "https://musicbrainz.org/ws/2/release/809e4178-2690-47db-a276-b976d0a4aadc?fmt=json&inc=recordings+media+labels"
+   },
+   {
+    "f": "這是傻子與白痴的**首張專輯**，樂團 2015 年 11 月成軍。發片前不到一年，主唱兼貝斯手蔡維澤在 2018 年 9 月拿下選秀節目《明日之子 第二季》年度「最強廠牌」；製作該節目的哇唧唧哇後來也成為樂團第二張專輯《Year of Fate》的掛名廠牌。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%94%A1%E7%B6%AD%E6%BE%A4"
+   },
+   {
+    "f": "這張碟**入圍第 10 屆金音創作獎最佳新人（團）獎**（入圍，未得獎）。同一位藝人後來的《姿態》在第 35 屆金曲獎拿下最佳演唱錄音專輯獎，並入圍年度專輯、最佳華語專輯、最佳樂團、最佳裝幀設計四項。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC10%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E"
+   },
+   {
+    "f": "這張碟在 Apple 店面被建成兩份、內容相同而寫法相反：台灣店面 1787517192 的盤名是簡體「夜长梦少」、掛名寫繁體「傻子與白痴」；新加坡店面 1874647540 的盤名是繁體「夜長夢少」、掛名卻寫英文「Fool And Idiot」，而且十三軌都加了英文副題（視線所及只剩生活 Life Recording／夜長夢少 Morpheus／流離的時間與流離的你 Drifting in Time／你終究不愛這世界 Dear You／美好前程 Waiting on The Day／冬五環 5th Ring Rd.／象牙舟 Ivory Boat）。",
+    "src": "https://itunes.apple.com/lookup?id=1874647540&country=sg&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "專輯名的英文那半不是翻譯，是最後一首歌的歌名——收尾兩軌一首叫〈5:09a.m.〉，一首叫〈5:10a.m.〉。",
+   "同一張碟在台灣店面掛簡體盤名、在新加坡店面掛英文團名，只有實體那面把中文寫全。"
+  ],
+  "sound": "新竹出身的五人團，貝斯與吉他把和弦拖長、主唱聲線偏鼻音；十三軌裡夾了兩段一分鐘上下的短軌當呼吸點，整體偏夜間、偏慢。",
+  "keyTracks": [
+   "夜長夢少",
+   "你終究不愛這世界",
+   "視線所及只剩生活"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2019,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆 2019-08-16（TW CD、相信音樂）；Apple tw 1787517192 與 sg 1874647540 的 releaseDate 都記 **2019-05-09**，比實體早三個多月。卡單 2019 正確；**要寫到日就用 8 月 16 日（實體那筆），不要把 5 月 9 日與相信音樂的 CD 綁在一起。**"
+  },
+  "notes": "【area 覆核：策展層說 MB 記錯，我確認記錯，而且理由比他們寫的更硬】MB artist 0e5a42ae 的 **area 記 China、country 記 CN**，但**同一筆資料的 begin-area 記的是 Taiwan**，disambiguation 也寫 Taiwanese group——**是同一筆記錄自己互相矛盾**，不是外部說法與資料庫衝突。四層佐證都指向台灣：(1) begin-area＝Taiwan（結構化的地理欄位，比 area 更貼近成軍地）；(2) 名下唯一的實體是台灣盤，發行方相信音樂，barcode 4713052738031 落在台灣 GS1 的 471 開頭、且是相信音樂的公司前綴；(3) 這張碟入圍由台灣文化部影視及流行音樂產業局主辦的金音創作獎最佳新人（團）獎，後續作品也以台灣公司報名金曲獎；(4) zh 維基記樂團 2015 年成立、主唱兼貝斯手蔡維澤出生於台灣新竹市，鼓手徐維均與他是新竹高中同班同學。**正文一律寫台灣團，不得出現 China／中國的國別敘述。** 誤記的可能來源是版權方——Apple 兩個店面的 ℗ 欄都寫「哇唧唧哇娱乐（天津）有限公司」，是註冊在天津的公司；**這是版權方的登記地，不是樂團的成軍地，兩件事不要混。**\n【掛名與盤名】策展層第 275 條第 2 點：RG 的 artist-credit 字串是英文「Fool and Idiot」、不是實體主名，取中文掛名；盤名去掉英文主標「Till 5:10 a.m.」取《夜長夢少》。**我覆核成立**，並補一點：英文主標不是翻譯而是末軌歌名，所以去掉它不會丟掉意思。\n【獨立閘覆核：通過】label-info 有填，是相信音樂（依主線裁定 276 收）。這位藝人 MB 目錄只有兩筆，另一筆《Year of Fate》掛哇唧唧哇（同樣在收單上）。第 273 條不適用。\n【封面：CAA 404 的四張之一，Apple collectionId 已覆核】策展層給 **1787517192**。**店面一律 tw，所以採信這一個**：tw 店面回得到、13 軌、releaseDate 2019-05-09、℗ 哇唧唧哇娱乐（天津）有限公司，逐軌與 MB 十三軌同名同序（差別只在 MB 第 5 軌寫「流離的時間與流離的妳」、Apple 寫「你」，以及 MB 在兩軌軌名裡塞了作曲掛名）。**十三軌全部有 previewUrl，這個 collectionId 可以拿去補 apple-verified-collection。** ⚠ 探測層 previews.json 對這張記的是 **sg 店面的 1874647540**（tw、hk 皆 0），那是**另一個 collectionId**，我實查 `lookup?id=1874647540&country=tw` 回 0 筆——**本機補圖時不要拿 sg 那個 id 去打 tw 店面**。\n【簡繁】Apple tw 的盤名是簡體「夜长梦少」，卡單取繁體正確；正文一律繁體。\n【人名】蔡維澤有 zh 維基專條與第 35 屆金曲獎入圍名單兩處背書，鄭光良另有 MB 軌名欄的作曲掛名，可寫；其餘團員只有單一來源，從嚴不寫。\n【反同構】本組相信音樂系共五張（本張與厭世少年、宇宙人、麋先生兩張）。**我讓這五張沒有任何一張拿「相信音樂」當主結構**，本張的主結構是 MB 國別誤記與盤名末軌那條線。"
+ },
+ {
+  "key": "desc4:麋先生|野生",
+  "artist": "麋先生",
+  "album": "野生",
+  "facts": [
+   {
+    "f": "release-group 60823366 的欄位：title「野生」、first-release-date 2016-10-28、primary-type Album、secondary-types 空。轄下兩筆，**同日發行、共用同一個 barcode 4713052731285**：2016-10-28 TW **CD 10 軌**（label-info **相信音樂**、catno **BT0016**）與 2016-10-28 XW Digital Media 10 軌（label-info 空）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=60823366-847b-4101-9c77-6b80435a8615&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這是麋先生的**第三張專輯，也是他們拿下金曲獎之後的第二張**：2013 年的《馬戲團運動》替他們**拿下第 25 屆金曲獎最佳樂團獎**（得獎），2015 年的《沒名字的人類》**入圍第 27 屆同一個獎**（入圍，未得獎），本作接在後面。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC25%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "樂團 2012 年 10 月才正式成軍，成員多半從學生時期就一起玩音樂；本作發行兩年後的 2018 年 12 月 29 日，他們在臺大體育館辦了首場大型售票演唱會《麋宮》。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%BA%8B%E5%85%88%E7%94%9F"
+   },
+   {
+    "f": "MB 這筆 CD 的十軌**每一軌都掛滿了外部連結**——每首歌各有 free streaming、purchase for download 與兩條 streaming 關係。十軌逐軌：小朋友／野生遊樂園／說黑說白／出口／怕黑／在揮手那天回首／圓／囝仔／霸道／Hello。",
+    "src": "https://musicbrainz.org/ws/2/release/308f7918-e2a8-4001-8294-cefa6e2fa207?fmt=json&inc=recordings+recording-level-rels+media+labels"
+   },
+   {
+    "f": "全片約 38 分鐘，十首裡有八首落在 3 分半到 4 分鐘之間，最長的〈在揮手那天回首〉4 分 37 秒、最短的〈小朋友〉3 分 9 秒——**十首的長度差只有 1 分 28 秒**。第 2 軌〈野生遊樂園〉在九年後的 2025 年又以現場版單曲重新上架。",
+    "src": "https://itunes.apple.com/lookup?id=1167908899&country=tw&entity=song&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌有八首卡在三分半到四分鐘之間，整張只有三十八分鐘，長度整齊得像刻意的。",
+   "拿完金曲獎最佳樂團的兩年後，他們把專輯取名叫《野生》。"
+  ],
+  "sound": "五人編制的搖滾，木吉他與電吉他分工明確、主唱的高音線拉在最上層；曲長高度一致，副歌位置固定，是一張結構很齊的碟。",
+  "keyTracks": [
+   "野生遊樂園",
+   "出口",
+   "囝仔"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2016,
+   "recorded": null,
+   "note": "MB first-release-date 與兩筆 release 皆 2016-10-28（TW CD 相信音樂 BT0016 與 XW 數位同日同條碼）；Apple tw 1167908899 releaseDate 亦為 2016-10-28。三邊同日，卡單 2016 正確，**數位與實體沒有時間差**。"
+  },
+  "notes": "【獨立閘覆核：通過】TW CD 的 label-info 有填，是相信音樂（BT0016，barcode 4713052731285）；XW 數位那筆 label-info 空，但**同日、同條碼、同軌數，明顯是同一次發行的兩個載體**，不需要動用第 273 條（何況這位藝人的 MB 目錄除相信音樂系外只有 2013 年那張的禾廣娛樂，沒有退場清單上的廠牌）。\n【MB 與 Apple 的權利人不同名，記一筆】MB 的 label-info 寫相信音樂；Apple tw 的 ℗ 欄從 2015《沒名字的人類》到 2020《嗜愛動物》一律寫 **Between Co., Ltd.**，2021 年以後的單曲才改寫 Bin Music International Limited（相信音樂的英文名）。兩者都不在退場清單上，**但正文不要把 Between Co., Ltd. 說成相信音樂的英文名**，那是另一個字串，關係未查證。\n【店面】三種查法都跑了，**採信 collectionId 1167908899**：10 軌與 MB 十軌同名同序（MB 第 7 軌把「圓」誤植成簡體「圆」，Apple 是繁體），releaseDate 2016-10-28 與 MB 同日，℗ 2016 Between Co., Ltd.，**十軌全部有 previewUrl**。探測層 previews.json 以 tw 搜尋兩筆取一，命中同一個 id。策展層提醒的前綴陷阱（搜尋「野生」會撈到 2025 年的《野生遊樂園 - Live - Single》）確實存在，我用 artistId 976685640 的目錄 lookup 避開。\n【人名】團員本名（吳聖皓、林喆安、余柏羲、張以諾、盧逸凡）在第 35 屆金曲獎入圍名單上逐名列出，可寫；但那是 2024 年的陣容，寫進 2016 年這張要說「現行編制」或乾脆只寫「五人編制」。\n【反同構】麋先生本組兩張。**這張的骨架＝金曲得獎之後的第三張＋長度整齊的十軌**；團名由來、麋鹿與〈四不像〉那條線留給《嗜愛動物》。另外，本組相信音樂系五張**沒有任何一張以廠牌為主結構**。"
+ },
+ {
+  "key": "desc4:麋先生|嗜愛動物",
+  "artist": "麋先生",
+  "album": "嗜愛動物",
+  "facts": [
+   {
+    "f": "release-group 5bd697c4 的欄位：title「嗜愛動物」、first-release-date 2020-10-08、primary-type Album、secondary-types 空。轄下**三筆**：2020-10-08 XW Digital Media 13 軌（label-info 空、barcode 4713052737874）、2020-10-08 TW **CD 13 軌**（label-info **相信音樂**、catno **BT0027A**、同一個 barcode）、以及 2020-11-28 **另一版 TW CD 13 軌**（label 名稱欄空、catno **BT0027**、barcode 換成 **4710616561289**）。**同一張碟在五十一天內出了兩版實體，編號與條碼都不一樣。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5bd697c4-7416-4e72-9798-dbe76fd61cec&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "專輯的第 2 軌〈四不像〉在店面的英文副題是 **Père David's Deer**——那正是麋鹿。樂團的團名就是從麋鹿來的：團員認為麋鹿的角形似雙手，象徵用自己的雙手開創未來，加上台灣沒有麋鹿、「麋」又與「迷」同音，才定了「麋先生」這個名字。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%BA%8B%E5%85%88%E7%94%9F"
+   },
+   {
+    "f": "十三軌的排法把兩段器樂當隔板：第 1 軌〈INTRO（帶路）〉1 分 5 秒開場、第 9 軌〈INTERLUDE〉1 分 50 秒把整張切成前後兩半。第 5 軌〈廢廢〉在店面標為公視迷你劇集《大債時代》片尾曲。全片約 45 分鐘。",
+    "src": "https://itunes.apple.com/lookup?id=1533034559&country=tw&entity=song&limit=100"
+   },
+   {
+    "f": "這是麋先生的**第四張專輯**，發行後在年底辦了同名的北中南巡迴演唱會。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%BA%8B%E5%85%88%E7%94%9F"
+   },
+   {
+    "f": "MB 這筆 2020-10-08 的台灣 CD，十三軌**每一軌都掛了五條外部連結**（兩條 free streaming、一條 purchase for download、兩條 streaming），與同團 2016 年《野生》的四條相比又多了一條。",
+    "src": "https://musicbrainz.org/ws/2/release/9db52176-5c1f-4cb7-ab6e-106e107bf186?fmt=json&inc=recordings+recording-level-rels+media+labels"
+   }
+  ],
+  "hookCandidates": [
+   "第二首歌的英文副題是 Père David's Deer——麋鹿，也就是團名的來歷。",
+   "同一張碟在五十一天內出了兩版 CD，編號 BT0027A 在前、BT0027 在後，條碼還換了一組。"
+  ],
+  "sound": "比前作重的一張：吉他破音更前面、鼓組錄得更硬，中間用一段器樂把十三軌切成兩半，情緒起伏比《野生》大。",
+  "keyTracks": [
+   "四不像",
+   "嗜愛動物",
+   "廢廢"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2020,
+   "recorded": null,
+   "note": "MB first-release-date 2020-10-08（XW 數位與 TW CD BT0027A 同日）；第二版 TW CD 為 2020-11-28（BT0027）。Apple tw 1533034559 releaseDate 2020-10-08。卡單 2020 正確。**引 catno 要注意 BT0027A 對應 10 月 8 日那版、BT0027 對應 11 月 28 日那版，順序是反的。**"
+  },
+  "notes": "【獨立閘覆核：通過】2020-10-08 的 TW CD label-info 有填，是相信音樂（BT0027A）；XW 數位與 11-28 那版的廠牌名稱欄空，但**與有廠牌的那筆同日或近日、同軌數、其中一筆還共用條碼**，屬同一次發行的不同版本，不需要動用第 273 條。這位藝人目錄裡沒有退場清單上的廠牌。\n【兩版 CD 的怪處，記給主線】BT0027A（2020-10-08，barcode 4713052737874，相信音樂）與 BT0027（2020-11-28，barcode 4710616561289，label 名稱欄空）——**帶 A 的在前、不帶 A 的在後**，而且條碼跨了兩個公司前綴（4713052 與 4710616 都出現在相信音樂系的碟上）。本層查不到哪一版是初回限定或再版，**正文不要寫版本差**。\n【店面】三種查法都跑了，**採信 collectionId 1533034559**：13 軌與 MB 十三軌同名同序（Apple 用半形括號、MB 用全形），releaseDate 2020-10-08 與 MB 同日，℗ 2020 Between Co., Ltd.，**十三軌全部有 previewUrl**。探測層 previews.json 亦以 tw 命中同一個 id。\n【第 274 條沿用】策展層退掉同團《馬戲團運動》2013、改收《野生》，理由是 Apple 把那張標成 EP（collectionId 888636954，6 軌）而 MB CD 是 7 軌。本層順手覆核：Apple 那筆確實叫「馬戲團運動 - EP」、6 軌、℗ 2014 Rock Music Publishing Co., Ltd.，**與 MB 的 TW CD 禾廣 CM13002 七軌對不上，策展層的形態存疑成立**。\n【反同構】麋先生本組兩張。**這張的骨架＝團名與〈四不像〉的麋鹿、兩版 CD 的編號怪象、器樂隔板的曲序**；《野生》那張走金曲得獎後的第三張與長度整齊，兩者不重疊。本組相信音樂系五張沒有任何一張以廠牌為主結構。"
+ },
+ {
+  "key": "desc4:脆樂團|有多少光就有多少黑",
+  "artist": "脆樂團",
+  "album": "有多少光就有多少黑",
+  "facts": [
+   {
+    "f": "release-group 685c917e 的欄位：title「有多少光就有多少黑」、artist-credit「脆樂團」（藝人實體 236cd27d，Group、area Taiwan、disambiguation「**Taiwanese duo**」、life-span begin 2010、alias Crispy）、first-release-date 2019-08-23、primary-type Album。轄下兩筆同日 release，**兩筆的 label-info 都填著何樂音樂**：TW CD 10 軌（無 barcode）與 XW Digital Media 10 軌（barcode 4710281290040）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=685c917e-6c6c-4254-b682-3653faa5d87b&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這是脆樂團的**第三張錄音室專輯**。前一張《你快樂，嗎》（2017，台灣索尼音樂娛樂）曾**入圍第 29 屆金曲獎最佳演唱組合獎**（入圍，未得獎；該屆得獎的是頑童MJ116《幹大事》）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC29%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "這張碟不只有聲音：團員丁律妏以十首歌為靈感畫了十幅畫，其中〈有多少光就有多少黑〉〈宇宙的角落〉〈過曝〉〈Deja Vu〉〈塗抹〉五幅**入選 2020 年義大利波隆那插畫展**，2022 年在台北展出。專輯的製作陣容為陳建騏、韓立康、黃少雍、許哲珮、陳君豪。",
+    "src": "https://zh.wikipedia.org/wiki/Crispy%E8%84%86%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "開場曲〈Deja Vu〉是與饒舌歌手熊仔的合作曲——**一支獨立樂團的專輯開場就交給饒舌**。十軌逐軌：Deja Vu（feat. 熊仔）／有多少光就有多少黑／虛線／宇宙的角落／離開與到來／塗抹／若無其事／過曝／轉圈圈／為我好，全片約 40 分鐘，十首長度都壓在 3 分 42 秒到 4 分 36 秒之間。",
+    "src": "https://itunes.apple.com/lookup?id=1530516591&country=tw&entity=song&limit=100"
+   },
+   {
+    "f": "樂團 2010 年夏天成立於台北，最早在公館地下道街頭表演起家；2012 年才發第一張 EP《這不是脆弱，》，2013 年首張專輯《後來，我們》做成雙 CD 加雙繪本，繪本由團內兩人分別寫字與畫圖。",
+    "src": "https://zh.wikipedia.org/wiki/Crispy%E8%84%86%E6%A8%82%E5%9C%98"
+   }
+  ],
+  "hookCandidates": [
+   "專輯裡的十首歌各有一幅畫，其中五幅後來進了波隆那插畫展。",
+   "從公館地下道的街頭表演到這張，隔了九年。"
+  ],
+  "sound": "男女雙主唱的獨立流行，電子取樣與木吉他交替鋪底；十首長度幾乎一致，情緒靠聲部高低交替而不是靠編制加厚。",
+  "keyTracks": [
+   "有多少光就有多少黑",
+   "Deja Vu（feat. 熊仔）",
+   "過曝"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2019,
+   "recorded": null,
+   "note": "MB first-release-date 與兩筆 release 皆 2019-08-23；Apple tw 1530516591 releaseDate 亦為 2019-08-23。三邊同日，卡單 2019 正確，數位與實體無時間差。"
+  },
+  "notes": "【獨立閘覆核：通過】兩筆 release 的 label-info **都有填、都是何樂音樂**，何樂音樂在裁定 276 的收單上。⚠ 這位藝人的目錄裡**確實有退場清單上的公司**——2017《你快樂，嗎》掛台灣索尼音樂娛樂股份有限公司（barcode 889854254629），那正是 c-119 第 258 條的樣板案例、也是策展層 B 類退掉的那一張。**但本張自己的廠牌欄是何樂音樂，不需要動用第 273 條。**\n【店面】三種查法都跑了，**採信 collectionId 1530516591**：10 軌與 MB 十軌同名同序（MB 第 1 軌寫「Deja vu」小寫、Apple 寫「Deja Vu (feat. 熊仔)」），releaseDate 2019-08-23 與 MB 同日，℗ 2019 何樂音樂Pqpmusic，**十軌全部有 previewUrl**。探測層 previews.json 以 tw 搜尋兩筆取一，命中同一個 id。\n【熊仔】他是策展層整位退掉的藝人（第 273 條，廠牌證據不足），但**這裡是客座掛名、不是本張的掛名**，寫進 facts 沒有問題。\n【MB 上查不到的一張】Apple tw 目錄裡有一張《後來我們》（collectionId 1530372780，2013-03-05，12 軌，℗ 2013 何樂音樂Pqpmusic），**MB 完全沒有這個 release-group**。記給下一批補卡池參考。\n【不寫進正文】丁律妏與盧羿安 2020 年的求婚一事屬個人生活事件，且晚於本作，依反向禁令不寫。第 13 屆 Freshmusic Awards 是媒體主辦的獎，依「樂評與媒體名不得進正文」不寫。\n【人名】盧羿安、丁律妏兩個本名有第 34 屆金曲獎入圍名單逐名列出可寫；製作人五位只有 zh 維基單一來源，寫時請整條標為單一來源，或只寫「五位製作人分工」。\n【反同構】脆樂團本組兩張。**這張的骨架＝十幅畫與波隆那插畫展、街頭起家的九年**；金曲得獎與作詞入圍那條線留給《愛是我們必經的辛苦》。"
+ },
+ {
+  "key": "desc4:脆樂團|愛是我們必經的辛苦",
+  "artist": "脆樂團",
+  "album": "愛是我們必經的辛苦",
+  "facts": [
+   {
+    "f": "release-group c1f0d714 的欄位：title「愛是我們必經的辛苦」、first-release-date 2022-09-19、primary-type Album、secondary-types 空。轄下**只有一個 release**：2022-09-19 **XW** Digital Media **8 軌**，label-info **銀翼文創有限公司**、barcode 欄為空字串。**MB 上這張碟沒有任何實體 release。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c1f0d714-9991-40c4-bbaa-1d743209fc1d&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這張碟**拿下第 34 屆金曲獎最佳演唱組合獎**（得獎；入圍名單把成員逐名列為盧羿安、丁律妏，報名單位何樂音樂有限公司）。同一屆，**盧羿安以本作收錄的〈揹上悲傷北上〉入圍最佳作詞人獎**（入圍，未得獎——該獎由周耀輝以〈人啊人〉拿下，是金曲獎史上第一次由粵語歌曲奪得作詞人獎）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC34%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "這是脆樂團的**第四張錄音室專輯**，也是團員盧羿安第一次自己掛專輯製作人（陳建騏總召集，韓立康、黃少雍、李孝祖聯手完成）。2023 年 1 月 8 日在 Zepp New Taipei 的同名專場完售。",
+    "src": "https://zh.wikipedia.org/wiki/Crispy%E8%84%86%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "**全片只有八軌、約 33 分鐘**：愛是我們必經的辛苦／相愛就是說了100次對不起／追追追／揹上悲傷北上／自圓其說／說得簡單／舊家／Take It Slow。最短的〈自圓其說〉2 分 48 秒，最長的收尾曲〈Take It Slow〉5 分 24 秒。其中〈Take It Slow〉早在 2022 年 1 月就先以單曲上架。",
+    "src": "https://itunes.apple.com/lookup?id=1644823778&country=tw&entity=song&limit=100"
+   },
+   {
+    "f": "MB 這筆 release 掛了三條串流關係——Spotify、Deezer 與 Apple（https://music.apple.com/tw/album/1644823778），**資料庫端自己就標好了台灣店面的編號**。",
+    "src": "https://musicbrainz.org/ws/2/release/0e0387bd-32ee-44fa-b54a-6fdd1e516eef?fmt=json&inc=url-rels+recordings+media+labels"
+   }
+  ],
+  "hookCandidates": [
+   "八首歌三十三分鐘，替他們拿下金曲獎最佳演唱組合——三十三分鐘的一張專輯。",
+   "主唱第一次自己掛專輯製作人，同一年他的一首詞也進了金曲獎作詞人的入圍名單。"
+  ],
+  "sound": "比前作素：木吉他與鋼琴的比重上升、電子取樣退到背景；八軌都是四分鐘上下的敘事型歌曲，男女聲交替講同一件事。",
+  "keyTracks": [
+   "愛是我們必經的辛苦",
+   "揹上悲傷北上",
+   "Take It Slow"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2022,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆 2022-09-19；Apple tw 1644823778 releaseDate 亦為 2022-09-19。⚠ zh 維基寫「2022 年 9 月 30 日發行」，與兩個資料庫都對不上，**不採**。卡單 2022 正確。"
+  },
+  "notes": "【⚠ 獨立閘：廠牌不在裁定 276 的清單上，本層不判收退，交主線】唯一的 release 的 label-info 有填，是 **銀翼文創有限公司**（Mr. Wing Creative，Apple 的 ℗ 欄寫「℗ 2022 銀翼文創有限公司 Mr. Wing Creative」）。**這家公司在裁定 276 的收單與退單上都沒有。** 我查到的旁證，一併交給主線：(1) 這張碟**沒有 catno**，MB 與 Apple 都沒有；(2) 同一位藝人 2023 年單曲〈一絲不掛的憂傷〉的 Apple ℗ 欄寫「納吉音 Negia Entertainment／銀翼文創有限公司 Mr. Wing Crea…」，2022 年單曲〈Take It Slow〉亦為銀翼文創；(3) 策展層在 F 類名單裡記甜約翰《In Mind》2022 的 Discogs 廠牌是「Mr. Wing Productions／好用功有限公司 SWJ-006」——**同一個 Mr. Wing 字串出現在另一支獨立樂團的自營盤上**；(4) 這張碟**報名第 34 屆金曲獎的單位是何樂音樂有限公司**（在收單上），與 label-info 不同名；(5) 脆樂團 2025 年的 EP 又回到何樂音樂有限公司。**綜合看是台灣本地的小型音樂公司、不是跨國大廠或老牌主流，形狀接近收單那一側，但清單上沒有這家，依派工信規定不自判。**\n【店面】三種查法都跑了，**採信 collectionId 1644823778**：8 軌與 MB 八軌同名同序，releaseDate 2022-09-19 與 MB 同日，℗ 2022 銀翼文創有限公司 Mr. Wing Creative，**八軌全部有 previewUrl**；而且 **MB 那筆 release 自己就掛著 https://music.apple.com/tw/album/1644823778 的 streaming 關係**。策展層提醒的同名單曲陷阱（1641661358，2022-09-02，1 軌）確實存在，用軌數就分得開，已駁回。\n【獎項寫法】金曲獎最佳演唱組合是**得獎**、最佳作詞人是**入圍**，兩者不可合併。\n【八軌是專輯不是 EP】MB primary-type Album、secondary-types 空，八軌 33 分鐘；本批 EP 一律不收，這張不是 EP，型別欄位與時長都撐得住。\n【反同構】脆樂團本組兩張。**這張的骨架＝八軌拿下金曲＋主唱首度自任製作人**；十幅畫與波隆那插畫展那條線留給《有多少光就有多少黑》。"
+ },
+ {
+  "key": "desc4:南西肯恩|你是平靜的",
+  "artist": "南西肯恩",
+  "album": "你是平靜的",
+  "facts": [
+   {
+    "f": "release-group 48e2b780 的欄位：title「你是平靜的」、first-release-date 2023-12-23、primary-type Album、secondary-types 空。轄下**只有一個 release**：2023-12-23 **TW** Official 10 軌，label-info **黑市音樂**、catno **8752091**、barcode **4718487520916**；⚠ **media.format 欄是空的**，資料庫端沒有記載這是什麼載體。藝人實體 ebbff668 的 type 與 area 欄同樣空白，只有 **begin-area 記著 Taiwan**、life-span begin **2017-06**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=48e2b780-53e3-426f-b632-6381eb32e0f5&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這張碟是**先集資後發行**的：2023 年 9 月 15 日到 10 月 31 日在群眾集資平台挖貝（WaBay）募資，回饋方案裡除了 CD 與香氛卡，還有一個 NT$450 的**卡帶限定版**與 NT$1,110 的「專輯＋香氛卡＋卡帶」收藏套組——實體不只一種載體。",
+    "src": "https://wabay.tw/projects/ncknband2023?locale=zh-TW"
+   },
+   {
+    "f": "這是南西肯恩的**第二張專輯**。這個組合由女主唱南西與男主唱兼吉他手肯恩組成，2017 年 6 月成團，2021 年才發出第一張全創作專輯《一個不屬於自己的地方》。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%8D%97%E8%A5%BF%E8%82%AF%E6%81%A9"
+   },
+   {
+    "f": "十軌裡有兩軌掛了客座：第 4 軌〈Chasing / Tracing〉找來日本樂團 UNIDOTS，第 10 軌〈親愛的你啊〉找來台灣的新古典組合 Cicada——**收尾那首是全片第二長的一軌，5 分 30 秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1814696349&country=tw&entity=song&limit=100"
+   },
+   {
+    "f": "十軌逐軌：我已經原諒你／錯／我也曾經想過這樣殺了我自己／Chasing / Tracing（feat. UNIDOTS）／無垠／晚安森林／躲起來的人／Run Away／Stay With Me／親愛的你啊（feat. Cicada）。全片約 51 分鐘，**十首沒有一首短於 4 分 6 秒**，最長的〈無垠〉5 分 42 秒。",
+    "src": "https://musicbrainz.org/ws/2/release/dda9384f-e075-4e5d-a7bf-f6b47a2d7c22?fmt=json&inc=recordings+media+labels"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌沒有一首短於四分鐘——這是一張不打算讓你快轉的碟。",
+   "專輯是先在集資平台賣出去才做出來的，回饋方案裡還單獨列了一個卡帶版。"
+  ],
+  "sound": "男女雙主唱的民謠向獨立流行，吉他與鋼琴留白多、混響拉得長；十軌全部超過四分鐘，速度一致地慢。",
+  "keyTracks": [
+   "我已經原諒你",
+   "無垠",
+   "親愛的你啊（feat. Cicada）"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2023,
+   "recorded": null,
+   "note": "MB first-release-date 與唯一 release 皆 **2023-12-23**；Apple tw 1814696349 的 releaseDate 是 **2023-11-17**，早了五週，與集資頁的說法（10 月底集資結束後發行）一致。**兩邊差五週：11-17 是數位、12-23 應為實體。** 卡單 2023 正確，寫到日要指明是哪一面。"
+  },
+  "notes": "【獨立閘覆核：通過】唯一的 release 的 label-info 有填，是**黑市音樂**（catno 8752091、barcode 4718487520916，471 開頭的台灣 GS1），黑市音樂在裁定 276 的收單上。這位藝人 MB 目錄只有兩筆，另一筆也是黑市音樂（BMMP020）。第 273 條不適用。\n【封面：CAA 404 的四張之一，Apple collectionId 已覆核】策展層給 **1814696349**。三種查法：盤名搜尋命中、藝人目錄 `lookup?id=1496047610&country=tw&entity=album` 命中、collectionId 直查回 10 軌。逐軌與 MB 十軌同名同序（Apple 的〈Stay With Me〉大寫 W、MB 小寫 w），℗ 2023 BLACK MARKET MUSIC COMPANY LIMITED 與 label-info 對得上，**十軌全部有 previewUrl，這個 collectionId 可以拿去補 apple-verified-collection**。⚠ 另有一個 collectionId **1715056249** 在網路上被引用為同一張碟，我實查 `lookup?id=1715056249&country=tw` **回 0 筆**——tw 店面查不到，**不要拿它去補圖**。\n【MB 欄位薄，記給主線】這位藝人的 MB 實體 type 與 area 都空、release 的 media.format 也空。**正文不得寫「CD」或任何載體名**——集資頁顯示實體至少有 CD 與卡帶兩種，資料庫端則什麼都沒記。\n【策展層退掉的那張可能是 MB 資料錯誤】策展層以「secondary-types 含 Audiobook、非專輯形態」退掉南西肯恩《一個不屬於自己的地方》2021。**Apple tw 上那張是 collectionId 1801600121、11 軌、℗ 2021 BLACK MARKET MUSIC COMPANY LIMITED 的一般專輯**，看不出有聲書的痕跡，MB 那個 Audiobook 標籤很可能是建檔錯誤。**建議主線把那張放回下一批的可收清單。**\n【人名】南西與肯恩都只有藝名、無本名可查；製作人韓立康、林易祺與瑞士創作人 Michael Benjamin 只有媒體報導一處、無欄位背書，依裁定 241／250 **不寫進 facts**；UNIDOTS 與 Cicada 有 Apple 軌名欄的 feat. 背書，可寫。"
+ },
+ {
+  "key": "desc4:甜約翰|Dear",
+  "artist": "甜約翰",
+  "album": "Dear",
+  "facts": [
+   {
+    "f": "release-group 93364f37 的欄位：title「Dear」、first-release-date 2017-12-01、primary-type Album、secondary-types 空。轄下**三筆，廠牌各不相同**：2017-12-01 TW **CD 9 軌**（**Hove**、catno **SWJ001**、barcode 4717954168941）、2017-12-01 XW Digital Media 9 軌（label-info 空、barcode 193017037104）、2017-12-15 **SG** Digital Media 9 軌（**StreetVoice**）。Discogs release 15470433 的同一張 CD 把廠牌記成「**禾廣**」、catno 同為 SWJ001——**禾廣與 Hove 是同一家的中英文名**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=93364f37-eb06-4bb2-a853-754b54ea9952&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "**團名與盤名是同一個典故的兩半**：Sweet John 這個團名取自專門用來與情人道別的「Dear John Letter」，而他們的第一張專輯就叫《Dear》——那封信的第一個字。",
+    "src": "https://streetvoice.com/sweetjohnband/about/"
+   },
+   {
+    "f": "這張首張專輯**入圍第 29 屆金曲獎最佳樂團獎**（入圍，未得獎；報名單位禾廣娛樂股份有限公司）；同時，開場曲〈失蹤人口〉**入圍第 9 屆金音創作獎最佳搖滾單曲獎**（入圍，未得獎）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC29%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+   },
+   {
+    "f": "甜約翰的前身是 2011 年成立於台南、團員在成功大學相遇的 Natural Outcome 自然發聲樂團；沉潛之後 2016 年重組，加進鍵盤手才成為現在的五人編制。MB 藝人端點 660abae5 記的 life-span begin 正是 **2016**。",
+    "src": "https://streetvoice.com/sweetjohnband/about/"
+   },
+   {
+    "f": "九軌逐軌（MB 與店面 tw 同名同序）：失蹤人口／安全範圍／Dear／日晷／後遺症／留給你的我從未／Angelina／降雨機率／Angelina（FANG Remix）。**最後一軌是第 7 軌的重混版，等於整張以同一首歌收尾兩次**；全片約 34 分鐘，開場的〈失蹤人口〉5 分 25 秒是最長的一軌。MB 那筆 CD 另掛了 Discogs 與國家圖書館 ISRC 登錄兩條外部連結。",
+    "src": "https://musicbrainz.org/ws/2/release/46ebbacc-fbd0-47ea-8e95-d1a8c059b624?fmt=json&inc=url-rels+recordings+media+labels"
+   }
+  ],
+  "hookCandidates": [
+   "團名取自那種寫來分手的「Dear John Letter」，第一張專輯就叫《Dear》——信的第一個字。",
+   "九首歌的最後一首，是第七首的重混版：同一首歌把整張收了兩次。"
+  ],
+  "sound": "五人編制的獨立搖滾／夢幻流行，鍵盤把吉他的空隙填滿、人聲混在中景；九軌三十四分鐘，最長的一首放在開頭而不是結尾。",
+  "keyTracks": [
+   "失蹤人口",
+   "Dear",
+   "Angelina"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2017,
+   "recorded": null,
+   "note": "MB first-release-date 與 TW CD、XW 數位皆 2017-12-01，SG 數位為 2017-12-15；Discogs 15470433 記 2017；Apple tw 1864580644 releaseDate 2017-12-01。卡單 2017 正確。"
+  },
+  "notes": "【獨立閘覆核：通過】TW CD 的 label-info 有填、是 **Hove**（＝禾廣，收單上；Discogs 同一張直接寫「禾廣」，第 29 屆金曲獎的報名單位也是禾廣娛樂股份有限公司——三處互相印證，**建議主線把裁定 276 收單裡的「禾廣」與「Hove」併成一條**）；SG 數位那筆是 StreetVoice（同樣在收單上）。XW 數位那筆 label-info 空，但與有廠牌的 CD 同日同軌數，不需要動用第 273 條。這位藝人 MB 目錄裡沒有退場清單上的廠牌（另有 StreetVoice、歪的音樂有限公司）。\n【Apple ℗ 與 label-info 不同名，記一筆】Apple tw 的 ℗ 欄寫「℗ 2017 好用功有限公司」（Workaholic），MB 與 Discogs 的廠牌欄寫 Hove／禾廣。兩者都不在退場清單上；**正文只寫禾廣（Hove），不要把好用功說成廠牌**。策展層在 F 類名單裡把好用功記成《In Mind》2022 的 Discogs 廠牌之一，方向一致——好用功是樂團這一側的公司。\n【店面】三種查法都跑了，**採信 collectionId 1864580644**：9 軌與 MB 九軌同名同序（MB 第 9 軌寫「Angelina Remix (FANG Remix)」、Apple 寫「Angelina (FANG Remix)」），releaseDate 2017-12-01 與 MB 同日，**九軌全部有 previewUrl**。策展層提醒的陷阱（用英文別名 Sweet John 搜尋會撈到劍橋合唱團的牧歌集）確實存在，我用 artistId 1322196237 的目錄 lookup 避開。探測層 previews.json 記「tw:10→1」，也是靠篩選才收斂到同一個 id。\n【人名】團員只有綽號（浚瑋、罐頭、阿獎、小J、Mandark），無本名、無 MB member-of-band 關係，依裁定 241／250 **不寫個別名字**，只寫五人編制。\n【國家圖書館 ISRC】MB 那筆 CD 掛的 http://isrc.ncl.edu.tw/music_view.aspx?item=21509 我試過 https 版，頁面內容由 JavaScript 產生、抓不到文字，**不能當 src**。"
+ },
+ {
+  "key": "desc4:原子邦妮|折桂令",
+  "artist": "原子邦妮",
+  "album": "折桂令",
+  "facts": [
+   {
+    "f": "release-group 09e0c767 的欄位：title「折桂令」、first-release-date 2012-11-01、primary-type Album、secondary-types 空。轄下三筆，**三筆的 label-info 全部是空的**：2012-11-01 TW **CD 9 軌**（barcode **4717954162734**）、2015-04-29 XW Digital Media 9 軌（title「折桂令」）、以及同日另一筆 XW Digital Media 9 軌，**title 掛的是英文「Fraction of Sweet Olive」**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=09e0c767-6298-4679-aa73-c79d89764762&fmt=json&inc=media+labels+artist-credits&limit=100"
+   },
+   {
+    "f": "這是原子邦妮的**首張專輯**，2012 年 11 月 1 日發行，內容是把成軍以來已經發過的單曲收攏起來，再加上成員旅居各城市的見聞。這個組合由兩人構成——來自櫻桃幫的查查，與來自 Zayin 展翼樂團的 Nu（羽承）；MB 藝人端點 25044792 的 member-of-band 關係也正是這兩筆（Nu、查查）。",
+    "src": "https://zh.wikipedia.org/zh-tw/%E5%8E%9F%E5%AD%90%E9%82%A6%E5%A6%AE"
+   },
+   {
+    "f": "**這張碟落在他們簽約之前**：原子邦妮 2012 到 2016 年是自主發行與上行娛樂合作，2017 年 6 月才簽入滾石唱片，2022 年 12 月轉簽華納音樂。MB 目錄也對得上——名下的滾石盤全部從 2017 年 12 月起算，華納盤從 2022 年 12 月起算。",
+    "src": "https://zh.wikipedia.org/zh-tw/%E5%8E%9F%E5%AD%90%E9%82%A6%E5%A6%AE"
+   },
+   {
+    "f": "九軌逐軌（MB 的 2012 台灣 CD）：Intro／King／倔強的絨毛娃娃／折桂令／在最燦爛時毀滅／Pity／想和你一起去旅行／紅酒歷險記／神奇世界。全片約 33 分鐘，**開場的〈Intro〉2 分 1 秒是純器樂**，最長的〈在最燦爛時毀滅〉5 分 11 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1566513286&country=tw&entity=song&limit=100"
+   },
+   {
+    "f": "店面 tw 上這張碟的 phonogram 欄寫 **℗ 2015 Astro Shelter**——是原子邦妮自己的工作室名；同一位藝人 2017 到 2021 年的專輯 ℗ 欄一律寫 Rock Records Co., Ltd.，2022 年之後寫 Warner Music Taiwan Ltd.。**店面欄位把「自己出」與「簽進大廠」的分界標得很清楚。**",
+    "src": "https://itunes.apple.com/lookup?id=798549963&country=tw&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "這張碟出來的時候，他們離簽進大廠還有五年——店面上那行版權標記寫的是自己工作室的名字。",
+   "同一張碟在 MB 上被建了兩個數位版，其中一個掛的是英文盤名。"
+  ],
+  "sound": "女聲搭合成器與電吉他的另類流行，段落乾淨、鋪陳短；九軌三十三分鐘，以兩分鐘的純器樂開場。",
+  "keyTracks": [
+   "折桂令",
+   "在最燦爛時毀滅",
+   "倔強的絨毛娃娃"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2012,
+   "recorded": null,
+   "note": "MB first-release-date 與台灣 CD 皆 **2012-11-01**；兩筆 XW 數位是 2015-04-29 的再發。**Apple tw 1566513286 的 releaseDate 是 2015-04-29、℗ 2015，店面上只有 2015 那版，沒有 2012 原盤。** 卡單取 2012（原始首發）正確——策展層記的「MB 2012／Apple 2015」我覆核成立。"
+  },
+  "notes": "【獨立閘覆核：通過，而且我補到了策展層沒有的硬證據】三筆 release 的 label-info **全部空白**，而這位藝人的目錄裡**大量是退場清單上的廠牌**——滾石唱片 12 筆、Warner Music Taiwan 7 筆。所以本張確實落在第 273 條的嚴格那一支，必須靠 barcode 或 Discogs 補證。三層證據都成立：\n(1) **barcode 的 GS1 公司前綴**：2012 台灣 CD 的 4717954162734，前七碼 **4717954** 在本批裡重複出現在四張已知的獨立盤上——麋先生《馬戲團運動》4717954163991（禾廣 CM13002）、椅子樂團《Cheers!Land》4717954167142（Hove CHAIRS01）、好樂團《我把我的青春給你》4717954167876（禾廣 GOOD001）、甜約翰《Dear》4717954168941（Hove SWJ001）。**4717954 是禾廣娛樂／Hove 的公司前綴，而禾廣在裁定 276 的收單上。** 對照組很乾淨：原子邦妮的滾石盤一律走 4710149（4710149667243／670328／675491／682697／690548），華納盤走 5054197——**三個區塊完全不重疊**。\n(2) **時間軸**：簽滾石是 2017 年 6 月、簽華納是 2022 年 12 月，這張是 2012 年，**早於任何一次大廠簽約五年**。\n(3) **店面 ℗ 欄**：Apple tw 記 ℗ 2015 Astro Shelter（自家工作室），與 2017 年起的 Rock Records、2022 年起的 Warner Music Taiwan 明顯分段。\n**結論：策展層收這張是對的，但他們給的理由（『label-info 未填即自主發行』）不夠——照他們自己立的第 273 條，這張本來就該走嚴格那一支。理由請換成上面三條。**\n【⚠ 順帶回報一件不在我這 21 張裡的事】策展層依第 273 條退掉原子邦妮《和你一起的風景未完待續》2025，理由是 label-info 空而該藝人有大廠履歷。**這個退可能過保守。** 我查到：該 RG 的 2026-01-05 台灣盤 barcode 是 **193017191998**，而 193017 這個前綴在本批裡固定出現在街聲系的獨立數位發行上（甜約翰《Dear》XW 193017037104、《城市小說選集》193017014877、《In Mind》193017076639、I Mean Us〈途中〉193017080032、那我懂你意思了《Nobody Cares》193017027723）；而且 Apple tw 那張（collectionId 1855465483）的 ℗ 欄寫的是 **Astro Shelter**、不是華納。**建議主線重看那一張。**\n【店面】三種查法都跑了，**採信 collectionId 1566513286**：9 軌與 MB 九軌同名同序（MB 第 3 軌把「絨毛」誤植成「融毛」、第 7 軌漏了一個「去」字，Apple 是正確寫法），**九軌全部有 previewUrl**。探測層 previews.json 亦以 tw 命中同一個 id。⚠ 店面那筆的年份是 2015，與卡片要顯示的 2012 不同——策展層已把這個陷阱寫進 risk，我覆核成立。\n【同碟異名】2015 年兩筆 XW 數位其中一筆掛英文盤名《Fraction of Sweet Olive》，是同一張的英文建檔，**不可當成另一張碟**。\n【人名】Nu 與查查有 MB member-of-band 欄位背書，可寫；「羽承」與兩人的前團（櫻桃幫、Zayin 展翼樂團）只有 zh 維基一處，寫時標為單一來源。\n【刻意不寫】原子邦妮後來三度入圍金曲獎最佳演唱組合（第 28 屆《孤單會消失離開不見》、第 29 屆《謝謝你曾經讓我悲傷》、第 32 屆《樂遊原》，三次皆為入圍未得獎）——那些是本作四年後才發生、且屬於別張碟的事，依反向禁令第二類不寫進本張。"
+ }
+]

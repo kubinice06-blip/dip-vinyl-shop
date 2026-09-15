@@ -1,0 +1,483 @@
+[
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "Majora 於 1994 年以 12 吋黑膠 9 軌首次把仰光市面上的緬甸卡帶與電台錄音整編成一張可流通的盤，2004-05-03 由 Sublime Frequencies 以 SF006 重發成 CD 並增為 12 軌（barcode 626776737027），2011 年再出 SF006LP 黑膠 9 軌、2023-03-31 出數位 12 軌；這批曲目的原始形態是緬甸國內的卡帶與廣播母帶，沒有任何一位掛名藝人有對應的個人原盤，合輯是唯一的成盤形態。第一個網址是本輯的 MusicBrainz release-group（記標題、artist-credit、first-release-date 1994、primary-type Album、secondary-types Compilation 與轄下四筆 release），第二個是 2004 年 SF006 那一筆 release（記廠牌 Sublime Frequencies、目錄號 SF006、US、Official、CD、12 軌、barcode），exceptionReason 引的每一格都在這兩頁上，兩頁皆以 ws/2 API 逐格讀過。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/6120ee5f-355a-3c14-9914-b31046331ba3",
+   "https://musicbrainz.org/release/873ccd0f-40e3-4b6a-b4ff-6d786c980875"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Princess Nicotine；Princess Nicotine: Folk and pop music of Myanmar (Burma), Volume 1；Sublime Frequencies SF006；Majora 1994；မြန်မာ",
+  "reissuedBy": "Sublime Frequencies（2004-05-03 US CD 12 軌 SF006、2011 US 12\" 9 軌 SF006LP、2023-03-31 XW 數位 12 軌）；原盤為 Majora 1994 US 12\" 9 軌",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Princess Nicotine: Folk and Pop Music of Myanmar (Burma), Vol. 1",
+  "year": 1994,
+  "genres": [
+   "world",
+   "folk",
+   "pop"
+  ],
+  "label": "Majora（1994 US 12\" Vinyl 9 軌，release 端點的 label-info 只給廠牌名、無目錄號）；重發為 Sublime Frequencies SF006（2004-05-03 US CD 12 軌，barcode 626776737027）",
+  "why": "這條線在池中的入口。實掃卡池全 24,138 列，緬甸與寮國兩區是 0 張：Myanmar／Burmese／Laos／Molam Lao／Khene／Saung／Nat Pwe 逐字掃各 0 筆可對得上的卡（Burma 掃出的 13 筆全是 Mission of Burma 與 R.D./S.D. Burman，Princess Nicotine 掃出的 10 筆全是 Prince，皆假陽性）。Sublime Frequencies 的緬甸系列共四輯，本輯是第一輯、也是整個系列的起點（目錄號 SF006 在該廠牌的第一批貨裡），其餘三輯本批一併收（SF024／SF035／SF044）。一張同時帶進多個緬甸掛名的錄音，是補這一區最省的第一張。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Princess Nicotine」與「Myanmar」在池中各 0 筆真命中。 §5.6：MB primary-type Album、secondary-types [Compilation]，填 releaseType Compilation ＋ exceptionReason ＋ 2 個 HTTPS 資料庫證據（見本批裁定 333）。 ⚠ 年份：MB release-group 的 first-release-date 是 1994（Majora 原盤），不是 Sublime Frequencies 那一版的 2004；依 c-123 裁定 255 取原盤年 1994，2004／2011／2023 三個重發年寫在 label、reissuedBy 與 mbNote 三處，行文時兩個年份要分開講。 ⚠ 盤名：MB 的 release-group 標題是小寫的『Princess Nicotine: Folk and pop music of Myanmar (Burma), Volume 1』，本卡取的是 2004 年 SF006 那一筆 release 的標題字串（Vol. 1、大寫），兩者都是 MB 實體文字，下游比對時兩種寫法都要試（裁定 260 的形狀）。 封面：CAA release-group/6120ee5f 實測回 200、2 張圖。 店面：Apple search 以「Princess Nicotine Myanmar」在 us／gb／fr／jp 四店各 0 筆可對得上的條目（只是 search 這一種查法的觀察，藝人目錄端與 collectionId 直查兩種查法尚未跑）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 6120ee5f-355a-3c14-9914-b31046331ba3，identitySource pinned。回問 release-group?fmt=json&inc=artist-credits+releases 確認 title『Princess Nicotine: Folk and pop music of Myanmar (Burma), Volume 1』、artist-credit『Various Artists』（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377）、primary-type Album、secondary-types [Compilation]、first-release-date 1994；再打 release?release-group=<id>&inc=media+labels 取得轄下 4 筆 release：45d583b1-08e0-4cf4-bac9-e59cc9d7be91（1994 US Official，Majora，12\" Vinyl×9，無目錄號）、873ccd0f-40e3-4b6a-b4ff-6d786c980875（2004-05-03 US Official，Sublime Frequencies SF006，CD×12，barcode 626776737027）、3bc9e2fd-d497-4812-a93e-3571ff8bf77d（2011 US Official，SF006LP，12\" Vinyl×9）、96143290-1908-49ad-998e-77cf543f8cc7（2023-03-31 XW Official，數位×12）。刻意不釘：ad868ee4-e6ac-3a50-81c6-a6d9754bedaf《Guitars of the Golden Triangle》（同系列第二輯，本批另收一張）、3f666aca-b662-47d1-8d3b-1a41a1e7242e《Music of Nat Pwe》（同系列第三輯，本批另收一張）。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "Sublime Frequencies 緬甸系列第二輯，2005-09-27 以 SF024 在美國發行 CD、21 軌（barcode 751937275121），MB 上這個 release-group 底下只有這一筆 release，沒有黑膠也沒有數位版；曲目取自緬甸國內流通的卡帶與電台錄音，逐軌的原始載體沒有對應的個人專輯，合輯是唯一的成盤形態。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2005-09-27、primary-type Album、secondary-types Compilation），第二個是 SF024 那一筆 release（記廠牌、目錄號、US、Official、CD、21 軌、barcode），兩頁皆以 ws/2 API 逐格讀過。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/ad868ee4-e6ac-3a50-81c6-a6d9754bedaf",
+   "https://musicbrainz.org/release/3bc33734-1029-44c1-ab8c-809253a34b43"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Guitars of the Golden Triangle；Folk and Pop Music of Myanmar Volume 2；Sublime Frequencies SF024",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Guitars of the Golden Triangle: Folk and Pop Music of Myanmar, Volume 2",
+  "year": 2005,
+  "genres": [
+   "world",
+   "rock",
+   "pop"
+  ],
+  "label": "Sublime Frequencies（SF024，US 2005-09-27，CD 21 軌，barcode 751937275121）",
+  "why": "Sublime Frequencies 緬甸系列四輯裡的第二輯，與第一輯《Princess Nicotine》相隔十一年（1994→2005），選的是編制帶電吉他的那一側，和第一輯的取樣面不同，兩張並收才把這一區的兩個面向都補齊。實掃卡池全 24,138 列，「Golden Triangle」0 筆、「Myanmar」0 筆真命中，這一整個系列池中一張都沒有。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Guitars of the Golden Triangle」在池中 0 筆。 §5.6：MB primary-type Album、secondary-types [Compilation]，填 releaseType Compilation ＋ exceptionReason ＋ 2 個 HTTPS 資料庫證據。 年份：MB first-release-date 2005-09-27，轄下只有一筆 release、日期相同，本輯無原盤年與合輯年的落差。 ⚠ 本 release-group 的 MBID 是舊式 v3 UUID（ad868ee4-e6ac-3a50-…），格式合法，下游不要當成壞值。 封面：CAA release-group/ad868ee4 實測回 200、1 張圖。 店面：Apple search 以「Guitars of the Golden Triangle」在 us／gb／fr／jp 四店各 0 筆可對得上的條目（只是 search 這一種查法的觀察）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group ad868ee4-e6ac-3a50-81c6-a6d9754bedaf，identitySource pinned。回問確認 title『Guitars of the Golden Triangle: Folk and Pop Music of Myanmar, Volume 2』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2005-09-27；轄下 release 1 筆：3bc33734-1029-44c1-ab8c-809253a34b43（2005-09-27 US Official，Sublime Frequencies SF024，CD×21，barcode 751937275121）。刻意不釘：6120ee5f-355a-3c14-9914-b31046331ba3《Princess Nicotine》（同系列第一輯，本批另收一張）、cf1165ce-59a9-432f-9eee-890d5f5e0ceb《The Crying Princess》（同廠牌緬甸 78 轉輯，本批另收一張）。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "Sublime Frequencies 緬甸系列第三輯，2007-09-11 以 SF035 在美國發行 CD、16 軌，收的是緬甸 nat pwe 儀式場合的現場演奏，錄音來源是儀式現場而非唱片公司錄音室，MB 上這個 release-group 底下只有這一筆 release；這批錄音沒有任何一位掛名藝人的個人原盤，合輯是唯一的成盤形態。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2007-09-11、primary-type Album、secondary-types Compilation），第二個是 SF035 那一筆 release（記廠牌、目錄號、US、Official、CD、16 軌），兩頁皆以 ws/2 API 逐格讀過。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/3f666aca-b662-47d1-8d3b-1a41a1e7242e",
+   "https://musicbrainz.org/release/c31cb958-9cfa-419b-85e9-9e8d0cc311b5"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Music of Nat Pwe；Folk and Pop Music of Myanmar Burma Vol. 3；Sublime Frequencies SF035；နတ်ပွဲ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Folk and Pop Music of Myanmar (Burma) Vol. 3: Music of Nat Pwe",
+  "year": 2007,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Sublime Frequencies（SF035，US 2007-09-11，CD 16 軌；release 端點的 label-info 未填 barcode）",
+  "why": "Sublime Frequencies 緬甸系列第三輯，也是四輯裡唯一一張整張都是儀式現場錄音的。第一輯與第二輯走的是卡帶與電台流行曲，本輯把同一條線拉到儀式音樂那一側，三張並收才是完整的系列。實掃卡池全 24,138 列，「Nat Pwe」0 筆、「Myanmar」0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Nat Pwe」在池中 0 筆。 §5.6：MB primary-type Album、secondary-types [Compilation]，填 releaseType Compilation ＋ exceptionReason ＋ 2 個 HTTPS 資料庫證據。 年份：MB first-release-date 2007-09-11，轄下唯一一筆 release 日期相同。 ⚠ 這一張的 release 端點回的 label-info 沒有 barcode 欄位值（不是沒問，是 release 端點實測為空，見裁定 259 的界線寫法）。 封面：CAA release-group/3f666aca 實測回 200、1 張圖。 店面：Apple search 以「Music of Nat Pwe Myanmar」在 us／gb／fr／jp 四店各 0 筆可對得上的條目（只是 search 這一種查法的觀察）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 3f666aca-b662-47d1-8d3b-1a41a1e7242e，identitySource pinned。回問確認 title『Folk and Pop Music of Myanmar (Burma) Vol. 3: Music of Nat Pwe』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2007-09-11；轄下 release 1 筆：c31cb958-9cfa-419b-85e9-9e8d0cc311b5（2007-09-11 US Official，Sublime Frequencies SF035，CD×16，barcode 欄空）。刻意不釘：04c1f881-1f36-4d4a-a89f-c4413f7000da《Radio Myanmar (Burma)》（同廠牌 SF044，本批另收一張，且 MB 未標 Compilation）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Radio Myanmar；Radio Burma；Sublime Frequencies SF044；မြန်မာ့အသံ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Radio Myanmar (Burma)",
+  "year": 2008,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Sublime Frequencies（SF044，US 2008-05-13，CD 44 軌，barcode 751837331728）",
+  "why": "同一家廠牌緬甸線的第四張，形態與前三張不同：44 軌、整張取自廣播頻道的錄音，是這一區流通形態的直接物證（緬甸的錄音在當年主要靠廣播與卡帶流通，唱片極少）。實掃卡池全 24,138 列，「Radio Myanmar」與「Myanmar」各 0 筆真命中；池中已有的同形態卡是 c-123 那批的東歐盤與 c-SEA 的泰國盤，緬甸這一側整個是空的。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Radio Myanmar」在池中 0 筆。 ⚠ 形態：MB 的 primary-type 是 Album、secondary-types **為空**——雖然 44 軌、掛名 Various Artists，MB 並未標成 Compilation，依 c-93 第一節的明文（primary-type Album 而 MB 未標 Compilation 者照一般 Album 寫）本卡填 releaseType Album、**不填任何例外欄位**，否則 chk-prop 會判「非合輯卻帶例外欄位」。但下游行文時要知道它實質上是多來源錄音的集成，不要寫成某一位藝人的專輯（這是 c-124 §Persian Music Hits 8 那個坑的同形）。 年份：MB first-release-date 2008-05-13，轄下唯一一筆 release 日期相同，無原盤年爭議。 封面：CAA release-group/04c1f881 實測回 200、1 張圖。 店面：Apple search 以「Radio Myanmar Burma」在 us／gb／fr／jp 四店各 0 筆可對得上的條目（只是 search 這一種查法的觀察）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 04c1f881-1f36-4d4a-a89f-c4413f7000da，identitySource pinned。回問 release-group?fmt=json&inc=artist-credits+releases 確認 title『Radio Myanmar (Burma)』、artist-credit『Various Artists』、primary-type Album、secondary-types **[]（空）**、first-release-date 2008-05-13；再打 release?release-group=<id>&inc=media+labels 取得轄下 release 1 筆：48758d2b-1464-4f50-aaf0-eb3703b218c3（2008-05-13 US Official，Sublime Frequencies SF044，CD×44，barcode 751837331728）。刻意不釘：3f666aca-b662-47d1-8d3b-1a41a1e7242e《Music of Nat Pwe》（同廠牌緬甸系列第三輯，本批另收一張）。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "2013 年 Sublime Frequencies 以 SF078／SF078LP 發行的 12 吋黑膠、14 軌，曲目來源是緬甸 78 轉蟲膠唱片時代的錄音——那批原盤是單面數分鐘的 78 轉碟，本來就沒有專輯形態，要成盤只能靠後世整編；MB 上這個 release-group 底下只有這一筆 release。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2013、primary-type Album、secondary-types Compilation），第二個是 SF078 那一筆 release（記廠牌、兩個目錄號 SF078 與 SF078LP、US、Official、12\" Vinyl、14 軌），兩頁皆以 ws/2 API 逐格讀過。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/cf1165ce-59a9-432f-9eee-890d5f5e0ceb",
+   "https://musicbrainz.org/release/a6dd2e86-395a-4360-85e9-13dd748b2aa8"
+  ],
+  "selfTitled": false,
+  "queryAlias": "The Crying Princess；78rpm Records From Burma；Sublime Frequencies SF078；SF078LP",
+  "reissuedBy": "Sublime Frequencies（2013 US 12\" Vinyl 14 軌，目錄號 SF078 與 SF078LP 並列）",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "The Crying Princess: 78rpm Records From Burma",
+  "year": 2013,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Sublime Frequencies（SF078／SF078LP，US 2013，12\" Vinyl 14 軌；release 端點的 label-info 同時列出兩個目錄號，barcode 欄空）",
+  "why": "本批四張 Sublime Frequencies 緬甸盤裡年代最早的一批錄音（78 轉蟲膠時代），與前三張（卡帶、電台、儀式現場）合起來，把緬甸錄音的四種流通載體都補進池裡。實掃卡池全 24,138 列，「Crying Princess」掃出的 10 筆全是 Prince（假陽性），真命中 0 筆；78 轉時代的緬甸錄音池中一張都沒有。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Crying Princess」掃出的 10 筆全是 Prince，真命中 0 筆。 §5.6：MB primary-type Album、secondary-types [Compilation]，填 releaseType Compilation ＋ exceptionReason ＋ 2 個 HTTPS 資料庫證據。 ⚠ 年份：`year` 取 2013（MB release-group 的 first-release-date），**不是錄音年**——曲目來源是 78 轉時代的原盤，但 MB 端沒有任何一欄登記那些原盤的年份，依 c-123 裁定 261（錄音年代涵蓋不到整套就改取資料庫真的登記的那個年份）取 2013，**下游一律不得把 2013 講成錄音年，也不得替 78 轉原盤補一個沒有來源的年份**。 ⚠ 兩個目錄號：SF078 與 SF078LP 是同一筆 release 的 label-info 裡並列的兩個值，不是兩版。 封面：CAA release-group/cf1165ce 實測回 200、1 張圖。 店面：Apple search 以「The Crying Princess 78rpm Burma」在 us／gb／fr／jp 四店各 0 筆可對得上的條目（只是 search 這一種查法的觀察）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group cf1165ce-59a9-432f-9eee-890d5f5e0ceb，identitySource pinned。回問確認 title『The Crying Princess: 78rpm Records From Burma』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2013；轄下 release 1 筆：a6dd2e86-395a-4360-85e9-13dd748b2aa8（2013 US Official，Sublime Frequencies SF078 ; Sublime Frequencies SF078LP，12\" Vinyl×14，barcode 欄空）。刻意不釘：6120ee5f-355a-3c14-9914-b31046331ba3《Princess Nicotine》（同廠牌緬甸系列第一輯，盤名前綴近似、不是同一張，本批另收一張）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "U Myint Maung；Inle Myint Maung；Inlay Myint Maung；Music of the Saung；Burmese Harp；Seven Seas GXC 5010；saung gauk",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "အင်းလေး မြင့်မောင်",
+  "album": "Music of the Saung • Burmese Harp",
+  "year": 1978,
+  "genres": [
+   "world",
+   "classical"
+  ],
+  "label": "SEVEN SEAS（GXC 5010，JP 1978，12\" Vinyl 13 軌；release 端點的 label-info 只給廠牌名與目錄號，barcode 欄空）",
+  "why": "緬甸古典歌樂（mahagita）與弓形豎琴 saung gauk 這一側在池中完全是 0 張——實掃卡池全 24,138 列，「Saung」「Myanmar」「Burmese」各 0 筆真命中。這位在 MB 名下只有 4 個 release-group，本張是其中最早的一筆（1978），而且是四張裡唯一一張在緬甸境外壓製的原盤（日本 Seven Seas 12 吋），另外三張是 1982 年的卡帶、2003 年的 Smithsonian Folkways CD 與 2014 年的《Mahagita by Burmese Harp, Volume 5》。先補這一張與 2003 年那張，緬甸古典這一側就有了起點與終點兩個錨。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Saung」「အင်းလေး မြင့်မောင်」「Inle Myint Maung」「Myint Maung」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的緬文主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ 本張的 artist-credit 字串是拉丁的『U Myint Maung』（U 是敬稱不是名字的一部分），而同一個藝人實體 1d3ecbe4-f953-4b6c-abbb-0c418cb608cf 的主名是緬文『အင်းလေး မြင့်မောင်』，2003 年那張的 artist-credit 又是『Inle Myint Maung and Yi Yi Thant』——**同一位在 MB 上有三種掛名字串**。依 c-123 裁定 258 的判準（合掛名是解歧義還是製造分裂），本批兩張一律取藝人實體的緬文主名，偏離 artist-credit 的理由記在此處與 mbNote，三種寫法全部填進 queryAlias。 ⚠ 盤名含 U+2022『•』（不是連字號，chk-prop 的非 ASCII 連字號檢查掃不到它）——這是 MB 實體文字，不要自行改成 hyphen。 年份：MB first-release-date 1978，轄下唯一一筆 release 亦為 1978，無爭議。 封面：CAA release-group/109db4f7 實測**回 404**（本批 23 張裡兩張 404 的其中一張），本機端要補只能人工掃圖。 店面：Apple search 以「Music of the Saung Burmese Harp」在 us／gb／fr／jp 四店各 0 筆可對得上的條目（只是 search 這一種查法的觀察；另以拉丁掛名查該藝人時，店端回的是 2003 年那張 Smithsonian 盤，不是本張）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 109db4f7-e866-4611-a99a-7ea2c6c848b1，identitySource pinned。回問 release-group?fmt=json&inc=artist-credits+releases 確認 title『Music of the Saung • Burmese Harp』、artist-credit 字串『U Myint Maung』（藝人實體 1d3ecbe4-f953-4b6c-abbb-0c418cb608cf，MB 主名為緬文『အင်းလေး မြင့်မောင်』）、primary-type Album、secondary-types []、first-release-date 1978；再打 release?release-group=<id>&inc=media+labels 取得轄下 release 1 筆：dd513658-5056-44dc-953d-c6d8514f7198（1978 JP Official，SEVEN SEAS GXC 5010，12\" Vinyl×13）。藝人實體名下共 4 個 release-group。刻意不釘：b88d23e3-9702-4327-a790-f34a77e83037《Mahagita Songs: Thachinkan》（1982，唯一一筆 release 是無廠牌無國別的 Cassette×8，來源太薄）、414d5293-f467-4148-b86d-5191c7f35819《Mahagita by Burmese Harp, Volume 5》（2014-01-31，係後世系列的第五集）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Inle Myint Maung；Inlay Myint Maung；U Myint Maung；Yi Yi Thant；ရီရီသန့်；Mahagita；Mahagitá: Harp and Vocal Music of Burma；Smithsonian Folkways SFW CD 40492",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "အင်းလေး မြင့်မောင်",
+  "album": "Mahagitá: Harp and Vocal Music of Burma",
+  "year": 2003,
+  "genres": [
+   "world",
+   "classical"
+  ],
+  "label": "Smithsonian Folkways（SFW CD 40492，US 2003-01-21，CD 9 軌，barcode 093074049228）",
+  "why": "同一位 saung gauk 演奏者名下 4 個 release-group 裡流通最廣的一張，也是本批 23 張裡唯一一張在 Apple 四個店面都查得到同一個 collectionId 的緬甸盤。與本批另收的 1978 年 Seven Seas 盤相隔 25 年，兩張一起把這一位的目錄從起點錨到國際發行的那一端。實掃卡池全 24,138 列，這位與「Mahagita」「Saung」各 0 筆真命中，Smithsonian Folkways 的緬甸目錄在池中也是空的。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Mahagita」「Inle Myint Maung」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的緬文主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ 本張的 artist-credit 是**兩位合掛**『Inle Myint Maung and Yi Yi Thant』（第二位是女聲 ရီရီသန့／Yi Yi Thant，藝人實體 3048962f-e331-4603-b741-5b4a8f561996）。依 c-123 裁定 258，合掛名只有在「解歧義」時才採，本例會把同一位演奏者拆成兩個掛名（本批另一張《Music of the Saung》是單人掛名），因此取藝人實體的緬文主名，**合唱者的掛名寫進 queryAlias 與 mbNote，不進 `artist` 欄**。 ⚠ 盤名帶重音的 á（Mahagitá），chk-prop 的 NFKC 正規化摺不掉它，下游比對要同時試 Mahagita 與 Mahagitá。 年份：MB first-release-date 2003-01-21，轄下唯一一筆 release 日期相同。**這是唱片的發行年，不是錄音年**——MB 端沒有任何一欄登記錄音年，行文不得斷言錄音於某年。 封面：CAA release-group/9a622bf4 實測回 200、1 張圖。 店面：Apple search 以「Mahagita Harp and Vocal Music of Burma」在 us／gb／fr／jp 四店**皆回同一個 collectionId 262217002**，店端掛名寫『Inle Myint Maung & Yi Yi Thant』、盤名寫『Mahagitá - Harp and Vocal Music of Burma』（用連字號、不是冒號）、年份標 2003；掛名與盤名兩處都與 MB 不同，下游做字串比對一定要放寬（裁定 260 的形狀）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 9a622bf4-5919-4283-8d61-abf9d77e6b2d，identitySource pinned。回問確認 title『Mahagitá: Harp and Vocal Music of Burma』、artist-credit『Inle Myint Maung and Yi Yi Thant』（兩個藝人實體：1d3ecbe4-f953-4b6c-abbb-0c418cb608cf『အင်းလေး မြင့်မောင်』與 3048962f-e331-4603-b741-5b4a8f561996『ရီရီသန့်』）、primary-type Album、secondary-types []、first-release-date 2003-01-21；轄下 release 1 筆：b3065c24-3fba-4cd4-948a-576917cbb243（2003-01-21 US Official，Smithsonian Folkways SFW CD 40492，CD×9，barcode 093074049228）。刻意不釘：109db4f7-e866-4611-a99a-7ea2c6c848b1《Music of the Saung • Burmese Harp》（同一位 1978 年那張，本批另收一張、不是同一碟）、b88d23e3-9702-4327-a790-f34a77e83037《Mahagita Songs: Thachinkan》（1982 卡帶，無廠牌無國別）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zaw Win Htut；Mercury Nya；Mercury Night；မာကျူရီည；Emperor",
+  "reissuedBy": "Legacy Music Network（2020-06-27 XW 數位 15 軌，與 1984 年原盤同軌數）",
+  "g": "a",
+  "artist": "ဇော်ဝင်းထွဋ်",
+  "album": "မာကျူရီည",
+  "year": 1984,
+  "genres": [
+   "rock",
+   "world"
+  ],
+  "label": "1984 年 MM Official 原盤的 release 端點 label-info **實測為空**、載體為 Cassette 15 軌（依裁定 259 的寫法：這是 release 端點問過之後的空，不是沒問）；2020-06-27 的數位重發掛 Legacy Music Network",
+  "why": "這位在 MB 名下有 9 個 release-group，本張是其中最早的一筆（1984），也是整個目錄裡唯一一張 1980 年代的碟——其餘八筆分別是 1995 兩張、2000、2003、2013、2017、2019 與一張無日期。以緬甸搖滾那一側來說，本張是 MB 上建檔最早的原盤之一（同批只有 1975 年兩張民謠盤更早）。實掃卡池全 24,138 列，這位與「Zaw Win Htut」各 0 筆真命中，緬甸搖滾在池中整個是空的。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「ဇော်ဝင်းထွဋ်」「Zaw Win Htut」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的緬文主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 本卡取緬文主名 ဇော်ဝင်းထွဋ်，artist-credit 字串與藝人實體主名一致（不是合掛名，無裁定 258 的問題）。 ⚠ 廠牌：1984 年那筆 release（5618cfee）**已用 release?release-group=…&inc=media+labels 回問過**，label-info 回的是空陣列——依裁定 259 只能寫「release 端點實測為空」，不得寫成「MB 未填廠牌」，也不得替它補一個沒有來源的廠牌名。 ⚠ 載體：1984 年原盤是 **Cassette 15 軌**，不是黑膠也不是 CD；行文引軌數要選版本，數位重發同為 15 軌，兩版不衝突（裁定 251 的反例）。 年份：MB first-release-date 1984，取原盤年；2020-06-27 是數位重發年，寫在 reissuedBy 與 mbNote，兩個年份行文要分開講。 封面：CAA release-group/8865219c 實測回 200、1 張圖。 店面：Apple search 以緬文盤名「မာကျူရီည」在 us／gb／th／sg／jp 五店各 0 筆；改用拉丁掛名「Zaw Win Htut」查 us 店面時，回的清單裡有一張盤名寫『Mercury Nya』、collectionId 6785464016、年份標 2020 的條目（**盤名是緬文的拉丁轉寫、年份是重發年**，與本卡的緬文盤名與 1984 不一致）。以上只是 search 這一種查法的觀察，藝人目錄端與 collectionId 直查兩種查法尚未跑。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 8865219c-a04b-4c1f-9f23-21668222b90a，identitySource pinned。回問確認 title『မာကျူရီည』、artist-credit『ဇော်ဝင်းထွဋ်』（藝人實體 ff0d72c4-4783-4ef3-98af-12608b108acf，Person／MM／1964-01-21）、primary-type Album、secondary-types []、first-release-date 1984；再打 release 端點取得轄下 2 筆：5618cfee-5bb7-4575-b6b2-6ed87a11beaf（1984 MM Official，Cassette×15，label-info 實測為空）、e7fe57b8-9d83-4e0c-af7d-a63245cade9c（2020-06-27 XW Official，Legacy Music Network，Digital Media×15）。藝人名下共 9 個 release-group。刻意不釘：6ec2690d-ea71-44ea-a260-572c216afcdf《ဆေးဆိုးပန်းရိုက်မျက်နှာ》(1995)、a5bbdd0b-0ddc-4dec-b84f-25a17c88a548《နေရာသစ်ရှာဖွေကြသူများ》(1995，secondary-types [Live])、e92af2d2-95c0-46d9-9e96-eaa689ff05a5《နှစ် ၂၀ ရှင်သန်ခြင်း》(2003，[Live])、00d1f7c0-6d67-4666-a3da-ee9b7a13e788《အဆုံးမရှိများ》(2019，primary-type EP，本批不收 EP)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lay Phyu；Pin Le Aw Than；Sound of the Sea；ပင်လယ်အော်သံ；Iron Cross",
+  "reissuedBy": "2003 年 MM 官方 CD 版（13 軌，與 1994 年卡帶同軌數）",
+  "g": "a",
+  "artist": "လေးဖြူ",
+  "album": "ပင်လယ်အော်သံ",
+  "year": 1994,
+  "genres": [
+   "rock",
+   "world"
+  ],
+  "label": "1994 年 MM Official 原盤的 release 端點 label-info **實測為空**、載體為 Cassette 13 軌（裁定 259 的寫法）；2003 年 MM Official 再版為 CD 13 軌，label-info 同樣實測為空",
+  "why": "這位在 MB 名下 7 個 release-group，本張是最早的一筆（1994），與同年另一筆 854f07d0《ကန္တာရပင်လယ် လမင်းအော်သံ》(1994-09-14，secondary-types [Live]) 是目錄的起點。本批同時收他 1996 年的《ပါဝါ ၅၄》，兩張把緬甸搖滾主唱這一條線的前兩張正式盤一次補齊。實掃卡池全 24,138 列，這位與「Lay Phyu」各 0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「လေးဖြူ」「Lay Phyu」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的緬文主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ 這位與本批另收的 Iron Cross 是同一條線上的兩個掛名（MB 上是兩個獨立藝人實體），**不要把兩者的碟互相歸屬**；Iron Cross 名下那張《ရာစုသစ်》與這位名下的 2c86bc7c《ရာစုသစ်》是**兩個同名 release-group**，本批只收 Iron Cross 那一個，這位名下的同名 RG 寫進刻意不釘。 ⚠ 廠牌：1994 與 2003 兩筆 release **都已用 release 端點回問**，label-info 皆回空陣列——依裁定 259 只能寫「release 端點實測為空」。 ⚠ 載體：1994 原盤是 Cassette 13 軌、2003 再版是 CD 13 軌，兩版軌數相同。 年份：MB first-release-date 1994，取原盤年；2003 是再版年。 封面：CAA release-group/cf3b7c32 實測回 200、2 張圖。 店面：Apple search 以緬文盤名「ပင်လယ်အော်သံ」在 us／gb／th／sg／jp 五店各 0 筆；改用拉丁掛名「Lay Phyu」查 us／sg 兩店時回得到該掛名的其他碟（Bob／Late Pyar／Diary／Lake Pia 等，年份 2008–2021），清單裡沒有可對得上本張的條目。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group cf3b7c32-2625-49e0-bee2-fea8f2d5a436，identitySource pinned。回問確認 title『ပင်လယ်အော်သံ』、artist-credit『လေးဖြူ』（藝人實體 355705f3-aaf3-488a-8d50-fd6f62e6b513，Person／MM／1969-05-19，disambiguation『Rock အဆိုတော်』）、primary-type Album、secondary-types []、first-release-date 1994；轄下 release 2 筆：f6df3bea-2952-4dca-8d60-01f4179753bf（1994 MM Official，Cassette×13，label-info 空）、7feba631-8d5c-49ce-9102-d29f7f58893f（2003 MM Official，CD×13，label-info 空）。藝人名下共 7 個 release-group。刻意不釘：2c86bc7c-67b9-4f21-b249-b37be6927b3f《ရာစုသစ်》（**無 first-release-date**，與 Iron Cross 名下 b9d46996 同名，本批收 Iron Cross 那一個）、854f07d0-fd61-41ac-ac8c-e681a39e648b《ကန္တာရပင်လယ် လမင်းအော်သံ》(1994-09-14，secondary-types [Live]，盤名與本張近似、不是同一碟)、1f882606-4701-42f0-aa6d-520e14c56025《လိပ်ပြာ》(2003)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lay Phyu；Power 54；Power Fifty Four；ပါဝါ ၅၄；ပါဝါ 54",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "လေးဖြူ",
+  "album": "ပါဝါ ၅၄",
+  "year": 1996,
+  "genres": [
+   "rock",
+   "world"
+  ],
+  "label": "1996 年 MM Official 原盤的 release 端點 label-info **實測為空**、載體為 CD 12 軌（裁定 259 的寫法）",
+  "why": "同一位名下 7 個 release-group 裡的第二張（1996），接在本批另收的 1994 年那張之後。緬甸這一區的碟在 MB 上多半只有一筆 release，本張也是——一筆 1996 年的 MM Official CD、12 軌，沒有任何再版，是這條線「原盤即孤本」形態的典型。實掃卡池全 24,138 列，這位 0 筆真命中；本批之前，緬甸搖滾在池中一張都沒有。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「ပါဝါ ၅၄」「Power 54」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的緬文主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ 盤名裡的『၅၄』是緬文數字 5、4（U+1045／U+1044），不是阿拉伯數字 54——chk-prop 的 NFKC 正規化摺不掉它，外部比對要同時試緬文數字與阿拉伯數字兩種寫法（queryAlias 已備兩種）。 ⚠ 廠牌：唯一一筆 release **已用 release 端點回問**，label-info 回空陣列（裁定 259 的寫法）。 年份：MB first-release-date 1996，轄下唯一一筆 release 亦 1996，無再版、無年份爭議。 封面：CAA release-group/e9cd8682 實測回 200、1 張圖。 店面：Apple search 以「ပါဝါ ၅၄」在 us／gb／th／sg／jp 五店各 0 筆可對得上的條目（只是 search 這一種查法的觀察；以拉丁掛名查該藝人時回的是 2006 年之後的碟）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group e9cd8682-6e89-46cd-b704-b18f3125033b，identitySource pinned。回問確認 title『ပါဝါ ၅၄』、artist-credit『လေးဖြူ』（藝人實體 355705f3-aaf3-488a-8d50-fd6f62e6b513）、primary-type Album、secondary-types []、first-release-date 1996；轄下 release 1 筆：38cc97a8-2e16-4e1f-a032-a8703da06ead（1996 MM Official，CD×12，label-info 實測為空）。刻意不釘：cf3b7c32-2625-49e0-bee2-fea8f2d5a436《ပင်လယ်အော်သံ》(1994，本批另收一張、不是同一碟)、a53c0ea3-fa23-4f9a-b143-b9d885eff5cf《ခဏလေးများ》(2007-03-15)、b5785940-2c64-4e33-a2ac-da8ce94c2484《ဘင်္ဂလားပင်လယ်အော် (Bay Of Bengal)》(2008-07-01)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Iron Cross；Iron Cross Myanmar；အိုင်ယွန်ခရော့(စ်)；ရာစုသစ်；Ya Su Thit；New Century",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Iron Cross",
+  "album": "ရာစုသစ်",
+  "year": 2001,
+  "genres": [
+   "rock",
+   "world"
+  ],
+  "label": "Iron Cross（release 端點的 label-info 回的廠牌名就是樂團名本身、無目錄號，MM 2001，CD 12 軌；形態上是自營發行）",
+  "why": "主線 2026-09-14 把這支樂團列進「全域零筆」的名單，**實測不是**：MB 上 31e48b17-0501-4f1b-aca7-cd6032a114f8 就是這一支（Group／MM／1989 成立／disambiguation 明寫『Burmese rock band』），名下有 1 個 release-group。這是緬甸搖滾這一側在 MB 上唯一一支以拉丁團名建檔的團，而且 release 端點回的廠牌名就是團名本身——自營發行的形態，和本批其他緬甸盤「label-info 為空」的形狀不同，值得單獨留一張。實掃卡池全 24,138 列，「Iron Cross」掃出的 1 筆是 Justice《Cross》(1992)，假陽性，真命中 0 筆。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Iron Cross」掃出的 1 筆是 Justice《Cross》，假陽性；真命中 0 筆。 ⚠ 短掛名回問（第 179／250 條）：以 `artist?query=\"Iron Cross\" AND country:MM&limit=10` 查，**只回 1 筆**、且 disambiguation 明寫 Burmese rock band、country MM、life-span.begin 1989，靠 type／area／life-span／disambiguation 四項交叉定位，**score 未採**。但 **MB 端乾淨不等於外部端安全**：Iron Cross 在 Discogs 與 Apple 會撞到大量同名的西方金屬團與軍事主題條目，下游比對要加 Myanmar／MM 限定。 ⚠ 同名 release-group：這位名下的《ရာစုသစ်》與 လေးဖြူ（Lay Phyu，本批另收兩張）名下的 2c86bc7c《ရာစုသစ်》**是兩個獨立 RG**，後者無 first-release-date。本批只收 Iron Cross 這一個，另一個寫進刻意不釘。兩位掛名不同，chk-prop 的摺鍵（掛名＋盤名）不會亮燈，**要靠人看**。 ⚠ 廠牌：label-info 回的字串是『Iron Cross』（與團名同字），這是 release 端點的實際回傳值，不是我填的，也沒有目錄號。 年份：MB first-release-date 2001，轄下唯一一筆 release 亦 2001。 封面：CAA release-group/b9d46996 實測回 200、1 張圖。 店面：Apple search 以「Iron Cross ရာစုသစ်」與「Iron Cross Myanmar」在 us／gb／th／sg／jp 五店各 0 筆可對得上的條目（只是 search 這一種查法的觀察）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group b9d46996-28fc-49ca-a7c0-f263ada8c4ca，identitySource pinned。回問確認 title『ရာစုသစ်』、artist-credit『Iron Cross』（藝人實體 31e48b17-0501-4f1b-aca7-cd6032a114f8，Group／MM／1989／『Burmese rock band』）、primary-type Album、secondary-types []、first-release-date 2001；轄下 release 1 筆：f3d83563-2109-4399-8e51-c585c387d607（2001 MM Official，label-info『Iron Cross』無目錄號，CD×12）。藝人名下只有這 1 個 release-group。刻意不釘：2c86bc7c-67b9-4f21-b249-b37be6927b3f《ရာစုသစ်》（掛在 လေးဖြူ 名下的同名 RG，無 first-release-date，不是本張）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Htoo Eain Thin；Htoo Ein Thin；Hto Eain Thin；မှော်ဆရာအိပ်မက်；Maw Sayar Eain Met",
+  "reissuedBy": "Legacy Music Network（XW 數位 16 軌，該筆 release 的 date 欄為空）",
+  "g": "a",
+  "artist": "ထူးအိမ်သင်",
+  "album": "မှော်ဆရာအိပ်မက်",
+  "year": 1988,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "1988-02 MM Official 原盤的 release 端點 label-info **實測為空**、media 的 format 欄亦空、16 軌（裁定 259／227 的寫法）；另一筆數位重發掛 Legacy Music Network",
+  "why": "這位在 MB 名下 21 個 release-group、年份從 1987 排到 2023，是本批緬甸掛名裡目錄最完整的一位。本張 1988-02 是這 21 筆裡第二早的一筆（最早是 1987-01-01 的《နာရီပေါ်မှမျက်ရည်စက်များ》），而且 MB 給到了月份精度（1988-02），在這一區是少見的。實掃卡池全 24,138 列，這位與「Htoo Eain Thin」各 0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「ထူးအိမ်သင်」「Htoo Eain Thin」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ 這位的拉丁轉寫至少有三種（Htoo Eain Thin／Htoo Ein Thin／Hto Eain Thin），queryAlias 已填，外部比對三種都要試。 ⚠ 形態（裁定 227）：1988 那筆 release 的 **media.format 欄是空的**——只知道 16 軌，**不知道是卡帶還是黑膠**；secondary-types 為空也只代表 MB 沒標，不能據此判定是錄音室原盤。下游行文**不得寫載體**，只能寫軌數。 ⚠ 廠牌：1988 那筆 **已用 release 端點回問**，label-info 回空陣列（裁定 259 的寫法）。 ⚠ 另一筆 release（6b82a36f）的 **date 欄整個是空的**，只知道是 XW 數位 16 軌、掛 Legacy Music Network，**不得替它補一個重發年**。 年份：MB first-release-date 1988-02，取原盤年。 封面：CAA release-group/0750d7d4 實測回 200、1 張圖。 店面：Apple search 以緬文盤名「မှော်ဆရာအိပ်မက်」在 us／gb／th／sg／jp 五店各 0 筆；改以拉丁掛名「Htoo Eain Thin」查 us／sg 兩店，回得到該掛名七張以上的碟（盤名全是拉丁轉寫，年份標 1987／1989／1991／1997／2001／2003／2007），清單裡沒有可對得上本張的條目。以上只是 search 這一種查法的觀察，藝人目錄端與 collectionId 直查兩種查法尚未跑。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 0750d7d4-b6a0-4648-bbe2-b2df44511093，identitySource pinned。回問確認 title『မှော်ဆရာအိပ်မက်』、artist-credit『ထူးအိမ်သင်』（藝人實體 fbfb87b4-d0fb-496d-a188-6a1590da039c，Person／MM／1963-07-01）、primary-type Album、secondary-types []、first-release-date 1988-02；轄下 release 2 筆：598eba7f-839d-4b57-b0a4-02e67baeaa29（1988-02 MM Official，media format 欄空、16 軌，label-info 空）、6b82a36f-56d8-434a-ab23-23eb1ba881a2（date 欄空，XW Official，Legacy Music Network，Digital Media×16）。藝人名下共 21 個 release-group。刻意不釘：7e85864d-4c44-45fc-86e7-1d5931f759a3《နာရီပေါ်မှမျက်ရည်စက်များ》(1987-01-01，名下最早的一筆，本批名額不足)、642fce82-98db-4efa-b399-0a4b04afcd13《Unplugged Live》(1996-02-23，secondary-types [Live])、ea37e7fc-64dc-4576-92fa-9430c63a3449《မြို့ပြလရောင်တမ်းချင်း》(1996-10，primary-type **EP**，本批不收 EP)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sai Htee Saing；Sai Hti Saing；Sai Htee Hseng；ပျောက်ဆုံးသော နိဗ္ဗာန်ဘုံ；The Wild Ones",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "စိုင်းထီးဆိုင်",
+  "album": "ပျောက်ဆုံးသော နိဗ္ဗာန်ဘုံ",
+  "year": 1975,
+  "genres": [
+   "folk",
+   "world",
+   "pop"
+  ],
+  "label": "1975 年 MM Official 原盤的 release 端點 label-info **實測為空**、media 的 format 欄亦空、14 軌（裁定 259／227 的寫法）",
+  "why": "主線 2026-09-14 把這位列進「全域零筆」，**實測不是**：MB 上 fa61446c-0a1c-4e1d-8842-1d416a69b346（Person／MM／1950-09-23）名下有 **40 個以上的 release-group**，年份從 1974 排到 2007，是本批緬甸掛名裡目錄最深的一位。本張 1975 是名下第二早的一筆（最早是 1974 年的《နွေရာသီ》），也是本批 23 張裡年代最早的緬甸原盤之一。實掃卡池全 24,138 列，這位與「Sai Htee Saing」各 0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「စိုင်းထီးဆိုင်」「Sai Htee Saing」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ 這位的拉丁轉寫至少三種（Sai Htee Saing／Sai Hti Saing／Sai Htee Hseng），店端還見全大寫寫法 SAI HTEE SAING。 ⚠ 形態（裁定 227）：唯一那筆 release 的 **media.format 欄是空的**——只知道 14 軌，**不知道載體**；下游行文不得寫載體。 ⚠ 廠牌：已用 release 端點回問，label-info 回空陣列（裁定 259 的寫法）。 ⚠ 目錄雜訊：這位名下 40 幾個 RG 裡混有數筆盤名帶別人名字的碟（例如 3fe97878《ဝင်းဦးအလွမ်းပြေ(၂)》），本張已逐筆回問 artist-credit 確認是單人掛名 စိုင်းထီးဆိုင်，但下游若要再補這位的碟，**每一筆都要回問 artist-credit**，不能照 release-group 瀏覽的結果直接收。 年份：MB first-release-date 1975，轄下唯一一筆 release 亦 1975。 封面：CAA release-group/30b38c9a 實測回 200、**3 張圖**（本批緬甸盤裡圖數第二多的一張）。 店面：Apple search 以緬文盤名在 us／gb／th／sg／jp 五店各 0 筆；改以拉丁掛名「Sai Htee Saing」查 us／sg 兩店，回得到該掛名八張以上的碟（盤名全是拉丁轉寫、年份多標 2021，另有一筆年份寫成 1901 的壞值），清單裡沒有可對得上本張的條目。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 30b38c9a-36f1-4d93-84da-c1e8b8af83b1，identitySource pinned。回問確認 title『ပျောက်ဆုံးသော နိဗ္ဗာန်ဘုံ』、artist-credit『စိုင်းထီးဆိုင်』（藝人實體 fa61446c-0a1c-4e1d-8842-1d416a69b346，Person／MM／life-span.begin 1950-09-23）、primary-type Album、secondary-types []、first-release-date 1975；轄下 release 1 筆：901f6bd1-8667-4dc1-be20-25b12b596ea9（1975 MM Official，media format 欄空、14 軌，label-info 空）。藝人名下 release-group 逾 40 筆（以 release-group?artist=<id>&limit=100 分頁取得，第 116 條）。刻意不釘：59b12cd5-5b08-4867-a175-8fe716bab2f9《နွေရာသီ》(1974，名下最早的一筆，本批名額不足)、0f551c04-1eb5-4622-9be8-fe575b3d6da2《အိပ်စက်အနားယူပြီ》(1978)、1fab65f0-83e6-47ca-9089-912c5d7ab3ed《အကောင်းတကာ့အကောင်းဆုံးတေး》(1996，secondary-types [Compilation])、4bf277fb-1b9f-4ef0-9610-279ad63d1b23《Unplugged Live》(2006)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Khin Maung Toe；Khin Maung Toe LIVE 94；Live 94；ခင်မောင်တိုး",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "ခင်မောင်တိုး",
+  "album": "LIVE 94",
+  "year": 1994,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "1994 年 MM Official 原盤的 release 端點 label-info **實測為空**、media 的 format 欄亦空、27 軌（裁定 259／227 的寫法）",
+  "why": "這位在 MB 名下 34 個 release-group、年份從 1980 排到 2017。本張是名下唯二標著 secondary-types [Live] 的其中一張（另一張是 2008 年的《မဇ္ဈိမသံစဥ်လှိုင်းဂယက်များ》），27 軌、1994 年，是這一區少見的現場錄音建檔——依裁定 253『secondary-types 含 Live 要收』本張該收，且現場錄音正是這條線在載體與流通上最缺的一種物證。實掃卡池全 24,138 列，這位與「Khin Maung Toe」各 0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「ခင်မောင်တိုး」「Khin Maung Toe」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ **本張是現場錄音**：MB secondary-types [Live]，依裁定 253 收，但 mbNote 與下游行文都要標明是現場錄音；MB 端**沒有登記演出地點，也沒有登記演出年**（只有 release 的 1994），**不得替它補一個演出場地或日期**。 ⚠ 形態（裁定 227）：唯一那筆 release 的 media.format 欄是空的，只知道 27 軌。 ⚠ 廠牌：已用 release 端點回問，label-info 回空陣列。 ⚠ 盤名『LIVE 94』是全大寫的短字串，外部比對極易撞到其他語言的現場輯；比對一定要帶掛名一起。 年份：MB first-release-date 1994。 封面：CAA release-group/23e1416e 實測回 200、1 張圖。 店面：Apple search 以「စောင်းကြိုးရှိုက်သံ」與拉丁掛名「Khin Maung Toe」查 us／sg 兩店，回得到該掛名八張以上的碟，其中有一筆盤名寫『Khin Maung Toe (Vol.1) [Live, 1994]』、collectionId 1706401603、**年份欄是 1901 的壞值**——盤名寫法與 MB 的『LIVE 94』不同、年份欄不可用，能不能對上本張要由研究層跑第三種查法（直查 collectionId）才知道。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 23e1416e-111b-491e-bcd7-47aa7364c11a，identitySource pinned。回問確認 title『LIVE 94』、artist-credit『ခင်မောင်တိုး』（藝人實體 73b2c5a1-c8be-47ea-946e-a53fbfafe55b，Person／MM／1950-04-02）、primary-type Album、**secondary-types [Live]**、first-release-date 1994；轄下 release 1 筆：f62f85c6-8044-4d24-b03a-c01a716329ff（1994 MM Official，media format 欄空、27 軌，label-info 空）。藝人名下共 34 個 release-group。刻意不釘：9358e107-162f-4e1a-b564-fdfc26dd5373《စောင်းကြိုးရှိုက်သံ နှင့် ၁၀နှစ်တာသီချင်းများ》(1982；盤名本身就寫著『十年的歌』，形態上近似生涯選輯但 MB 未標 Compilation，形態判不準故不收)、1cd1a6af-c68b-4298-82b4-f7c1a5c82918《မဇ္ဈိမသံစဥ်လှိုင်းဂယက်များ》(2008，另一張 [Live])、484134bb-4d6f-4571-b2ac-01104976b97f《မျက်သွယ်》(1986)、57552a4c-f360-4617-bf99-bada2c917cc7《လွယ်လွယ်နဲ့မဖြစ်ဘူး လေးညှို့ရှင်》(1991，**同一個 RG 同時出現在 စိုင်းထီးဆိုင် 與 ခင်မောင်တိုး 兩位的目錄裡**，是合作盤，形態待查故不收)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hlwan Moe；Hlwan Moe Myanmar；ရန်ကုန်သားလေးကျနော်ပါ；Yangon Thar Lay",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "လွှမ်းမိုး",
+  "album": "ရန်ကုန်သားလေးကျနော်ပါ",
+  "year": 1975,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "1975 年 MM Official 原盤的 release 端點 label-info **實測為空**、media 的 format 欄亦空、15 軌（裁定 259／227 的寫法）",
+  "why": "這位在 MB 名下有 30 筆以上的 release-group、年份從 1975 排到 2017，本張 1975 是名下最早的一筆，與本批另收的 စိုင်းထီးဆိုင်《ပျောက်ဆုံးသော နိဗ္ဗာန်ဘုံ》同年，兩張是本批年代最早的兩張緬甸原盤，一起把這條線的起點錨住。實掃卡池全 24,138 列，這位與「Hlwan Moe」各 0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「လွှမ်းမိုး」「Hlwan Moe」在池中各 0 筆。 ⚠ 緬文掛名（本批裁定 331）：MB 把緬甸藝人一律建成緬文原文主名、多數連拉丁別名都沒有，主線 2026-09-14 用 20 個拉丁轉寫關鍵字只回 3 筆就是這個原因。本卡的 `artist` 取 MB 藝人實體的主名，拉丁轉寫全部塞進 queryAlias。同一位常有三種以上轉寫，下游做外部比對時三種都要試。 ⚠ 形態（裁定 227）：唯一那筆 release 的 media.format 欄是空的，只知道 15 軌，下游行文不得寫載體。 ⚠ 廠牌：已用 release 端點回問，label-info 回空陣列。 ⚠ 目錄雜訊：這位名下 30 幾筆 RG 裡有 6 筆以上 **first-release-date 整個是空的**（《ကော်ဖီဆိုင်အိပ်မက်》《ပရိသတ်ချစ်သောတေးများ(၂)》《ပြောပါရစေ》等），下游若要補這位的碟，那幾筆一律不能用——沒有年份就沒有卡片年份來源。 年份：MB first-release-date 1975，轄下唯一一筆 release 亦 1975。 封面：CAA release-group/45fa0cc9 實測回 200、1 張圖。 店面：Apple search 以緬文盤名在 us／gb／th／sg／jp 五店各 0 筆；以拉丁掛名「Hlwan Moe」查時 **us 店面該次查詢回了連線錯誤**（不是 0 筆，是沒查成，依第 28／98／122 條不得當成查無），sg／th 兩店回得到該掛名八張以上的碟（年份多為 2022–2024 的重發），清單裡沒有可對得上本張的條目。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 45fa0cc9-ef7b-492f-ac98-fd3b670c5551，identitySource pinned。回問確認 title『ရန်ကုန်သားလေးကျနော်ပါ』、artist-credit『လွှမ်းမိုး』（藝人實體 a409e9a9-fe04-442e-b0b6-a8f6ac19e95e，Person／MM／1954-06-27）、primary-type Album、secondary-types []、first-release-date 1975；轄下 release 1 筆：f1e7a847-ac51-4dad-acf1-47078a196e6e（1975 MM Official，media format 欄空、15 軌，label-info 空）。藝人名下 release-group 逾 30 筆。刻意不釘：46e70b85-4c15-4661-bd2c-493a560038d5《မအေးကိုချစ်လို့ပါ》(1977)、14bccc10-25f8-4330-8176-cd0c239f0023《ကားပြိုင်ပွဲ》(1980)、479f8fb5-f12e-4d47-ba61-0cc7ec0b55f0《ကျွန်တော်နှင့်လွှမ်းမိုး》(1982)、16d1f145-7d3f-4d4b-9010-31d2baf88b92《မူရင်း အကောင်းဆုံးတေးများ》(2016，生涯選輯形態)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Big Bag；Big Bag Myanmar；Big Bag Burmese punk band；AD 3000；ချိုကြည်သာ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Big Bag",
+  "album": "AD 3000",
+  "year": 2007,
+  "genres": [
+   "rock",
+   "world"
+  ],
+  "label": "ချိုကြည်သာ（release 端點 label-info 回的廠牌名是緬文字串、無目錄號；MM 2007，CD 16 軌）",
+  "why": "主線 2026-09-14 的 20 個緬甸關鍵字只回到三筆，這一支（03f325d4-cc51-45e1-a757-ebe6783f2588，Group／MM／2001 成立／disambiguation『Burmese punk band』）是其中之一，名下 5 個 Album ＋ 2 個 Single。本張 2007 是五張專輯裡 CAA 圖數最多的一張（4 張圖），而且是本批 23 張裡**唯一一張 release 端點回得出緬文廠牌名**的碟——其餘緬甸原盤的 label-info 全部實測為空。以載體與通路的物證來說，這一張最完整。實掃卡池全 24,138 列，「Big Bag」0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Big Bag」在池中 0 筆真命中。 ⚠ 短掛名回問（第 179／250 條）：以 `artist?query=artist:\"Big Bag\"&limit=15` 查回 4 筆，目標是第 1 筆、且 disambiguation 明寫 Burmese punk band、country MM、life-span.begin 2001；另三筆（Uncle Big Bag／Big Bag Boys／Big Bag of Sticks）靠 disambiguation 與國別排除，**score 未採**。 ⚠ **MB 端乾淨但外部端非常危險**：Apple search 以「Big Bag Myanmar」查 us／sg 兩店，回的八筆全部是英語系嘻哈單曲（French Montana、Flau'jae、Mob Prince 等盤名含『Big Bag』），**沒有一筆是本團**。下游做外部比對一定要加 Myanmar／緬甸限定，否則必然配錯。 ⚠ 廠牌名是緬文字串『ချိုကြည်သာ』，不是拉丁名；下游若要轉寫請標明那是轉寫、不是盤面字樣。 年份：MB first-release-date 2007，轄下唯一一筆 release 亦 2007。 封面：CAA release-group/eb971df7 實測回 200、**4 張圖**（本批 23 張裡圖數最多的一張）。 店面：Apple search 以「Big Bag AD 3000」在 us／gb／th／sg／jp 五店各 0 筆可對得上的條目（只是 search 這一種查法的觀察）。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group eb971df7-3de4-4c6b-b21a-ce1e5dcc86c9，identitySource pinned。回問確認 title『AD 3000』、artist-credit『Big Bag』（藝人實體 03f325d4-cc51-45e1-a757-ebe6783f2588，Group／MM／2001／『Burmese punk band』）、primary-type Album、secondary-types []、first-release-date 2007；轄下 release 1 筆：56b49a9e-fe10-4eb2-9fac-105199093e23（2007 MM Official，label-info『ချိုကြည်သာ』無目錄號，CD×16）。藝人名下共 7 個 release-group（5 Album ＋ 2 Single）。刻意不釘：d259e354-efb3-4c5e-9811-b8674b59fc2c《နာမည်ကြီး》(2004，artist-credit 是合掛名『Big Bag & Chit Thu Wai』，依裁定 258 不收合掛名)、5446dcf6-d6ec-42cf-9732-a3c8987efa94《အိပ်ယာဝင်တေးများ》(2007，與本張同年)、668b04bf-a2da-4b20-bcd0-55d5c12ff73d《တယ်လီပန့်(ခ်)》(2009)、6fac68ee-6298-4f47-9add-2ae395529896《One Eleven》(2011-05-20)、b80c7adb-ef74-4e92-8f2b-f8f73a518e7f《Choke》與 d1167d61-6a93-47e2-893c-af69c625f27a《สัตว์ร้าย》(皆 primary-type Single)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Laos Lam Saravane；Musique pour le khene；Ocora C 559 058；lam saravane；ລາວ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Laos: Lam Saravane / Musique pour le khène",
+  "year": 1989,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Ocora（C 559 058，FR 1989-01，CD 6 軌，barcode 3149025037589）",
+  "why": "寮國這一區在池中是 0 張——實掃卡池全 24,138 列，「Laos」「Molam Lao」「Khene」「Luang Prabang」「Hmong」各 0 筆真命中（池中既有的 molam 卡全部是泰國的，來自 c-SEA 與 c-52）。本張是 Ocora 寮國目錄裡建檔最完整的一筆：法國電台系統的 CD、有目錄號、有 barcode、有 Apple 店面條目，而且 lam saravane 與 khène（笙）正是寮國南部這條線的兩個核心形態。以它當寮國的第一張，與本批另收的 1972 年 Galloway 黑膠一起，把這一區的起點與國際流通兩端都補上。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Lam Saravane」「Ocora」「Khene」在池中各 0 筆。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 ⚠ 盤名含斜線與法文變音字母 è（khène）——`chk-prop` 的 NFKC 正規化摺不掉 è，外部比對要同時試 khène 與 khene 兩種寫法（queryAlias 已備）。 ⚠ 掛名是 Various Artists：本張是多位演出者的錄音集，**不得寫成任何一位的個人專輯**（這是 c-124《Persian Music Hits 8》那個坑的同形）。 ⚠ 形態：MB primary-type Album、**secondary-types 為空**，故不填例外欄位；但下游要知道它實質是多來源錄音的集成。 年份：MB first-release-date 1989-01，轄下唯一一筆 release 日期相同。**這是唱片的發行年，不是錄音年**——MB 端沒有登記錄音年，行文不得斷言錄音於某年。 封面：CAA release-group/2a406a64 實測回 200、3 張圖。 店面：Apple search 以「Laos Lam Saravane khene」查 gb／fr／jp 三店**皆回同一個 collectionId 466420729**，店端盤名寫『Collection Ocora Radio France : Laos (Lam saravane, musique pour le khène)』（**多了廠牌系列前綴、括號寫法與 MB 不同**）、年份標 1989；us 店面該次 search 0 筆。字串比對必然落空，下游要放寬（裁定 260 的形狀）。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 2a406a64-1796-4f54-bfc9-01ef7be03f4a，identitySource pinned。回問 release-group?fmt=json&inc=artist-credits+releases 確認 title『Laos: Lam Saravane / Musique pour le khène』、artist-credit『Various Artists』（89ad4ac3-39f7-470e-963a-56509c546377）、primary-type Album、secondary-types []、first-release-date 1989-01；再打 release?release-group=<id>&inc=media+labels 取得轄下 release 1 筆：6ecc5fb4-a8c8-4772-8914-803f619447d8（1989-01 FR Official，Ocora C 559 058，CD×6，barcode 3149025037589）。刻意不釘：380493d0-45bc-4284-a710-fb71f2ba9f2f《Laos - L'art Du Khène》（1972 Galloway 黑膠，本批另收一張、不是同一碟）、1ad4842e-00ac-4946-814e-e4eac2042b7a《Musiques et Chants du Laos》(2005，secondary-types [Compilation]，本批名額不足)、c01a1956-d44b-44ee-a95d-494bf4381337《Laos : Molams & Mokhènes》(2009，同上)。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "1972 年法國 Galloway Records 以 GB 600 545 B 發行的黑膠、8 軌，是 MB 上寮國這一區**年代最早的一筆建檔**，內容是寮國 khène（笙）演奏的錄音集。這一批錄音的原始形態是田野與電台母帶，MB 端沒有任何一位演出者名下有對應的個人原盤，成盤形態只有這一種合輯。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 1972、primary-type Album、secondary-types Compilation），第二個是那筆 1972 黑膠的 release（記廠牌 Galloway Records、目錄號 GB 600 545 B、FR、Official、Vinyl、8 軌），exceptionReason 引的每一格都在這兩頁上，兩頁皆以 ws/2 API 逐格讀過。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f",
+   "https://musicbrainz.org/release/608d5a7f-9d04-49cc-9f8a-96d47fb9d03a"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Laos L'art du Khene；L'art Du Khène；Galloway Records GB 600 545 B；khaen；ແຄນ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Laos - L'art Du Khène",
+  "year": 1972,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Galloway Records（GB 600 545 B，FR 1972，Vinyl 8 軌；release 端點的 label-info 有廠牌名與目錄號，barcode 欄空）",
+  "why": "MB 上寮國這一區年代最早的一筆建檔（1972），正好落在 1975 年之前，與本批另收的 1989 年 Ocora CD、2007 年 Sublime Frequencies CD、2008 年 VDE-GALLO 數位盤構成寮國在國際廠牌上四個年代的座標。實掃卡池全 24,138 列，「Khene」「Laos」各 0 筆真命中，1975 年之前的寮國錄音池中完全沒有。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Khene」「Laos」在池中各 0 筆真命中。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 §5.6：MB primary-type Album、secondary-types [Compilation]，填 releaseType Compilation ＋ exceptionReason ＋ 2 個 HTTPS 資料庫證據。 ⚠ 盤名含法文變音 è 與 ASCII hyphen；chk-prop 的非 ASCII 連字號檢查不會亮燈（這裡用的是 U+002D），但外部比對要同時試 Khène 與 Khene。 ⚠ 載體欄：release 的 media.format 寫的是『Vinyl』（沒寫幾吋），行文只能寫黑膠、不得寫 12 吋。 年份：MB first-release-date 1972，轄下唯一一筆 release 亦 1972，這是原盤年、不是復刻年。 ⚠ 封面：CAA release-group/380493d0 **第一次探測回 500**，依裁定 222 重試兩次後**回 200、1 張圖**——5xx 不是查無，這是本批唯一一次觸發重試。 店面：Apple search 以「Laos art du khene」查 us／gb／fr／jp 四店，回的清單裡只有 1989 年那張 Ocora 盤（collectionId 466420729），**沒有可對得上本張的條目**。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 380493d0-45bc-4284-a710-fb71f2ba9f2f，identitySource pinned。回問確認 title『Laos - L'art Du Khène』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 1972；轄下 release 1 筆：608d5a7f-9d04-49cc-9f8a-96d47fb9d03a（1972 FR Official，Galloway Records GB 600 545 B，Vinyl×8，barcode 欄空）。刻意不釘：2a406a64-1796-4f54-bfc9-01ef7be03f4a《Laos: Lam Saravane / Musique pour le khène》（1989 Ocora，本批另收一張）、f53f5d9e-ab95-4a22-a98d-f6db740840f5《Laos - Musique du nord》（1972，同年同區但 **primary-type 欄是空的**，不是 Album，故不收）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Molam Lao；Mo Lam Lao；Music from Southern Laos；Nimbus Records NI 5401；ໝໍລຳ",
+  "reissuedBy": "Nimbus Records（1994-01-01 XW 數位 11 軌，barcode 190374078368）",
+  "g": "a",
+  "artist": "Molam Lao",
+  "album": "Music from Southern Laos",
+  "year": 1994,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Nimbus Records（NI 5401，GB 1994，CD 11 軌，barcode 083603540128）",
+  "why": "寮國南部 molam 這一側在池中是 0 張：實掃卡池全 24,138 列，池中八筆含『Molam』的卡全部是泰國的（The Paradise Bangkok Molam International Band、Chaweewan Dumnern、《The Sound of Siam》兩輯、《Molam: Thai Country Groove From Isan》），來自 c-SEA 與 c-52，**寮國本身的 molam 一張都沒有**。本張是 MB 上少數以 molam 樂團為掛名（不是 Various Artists）的寮國盤，有廠牌、目錄號、barcode 與四個 Apple 店面的同一個 collectionId，是這一區建檔最完整的一張。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Molam Lao」在池中 0 筆；「Molam」掃出的 8 筆全是泰國的卡，**不是本掛名**。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 ⚠ 掛名『Molam Lao』既是團名也是曲種名（molam／mo lam／หมอลำ／ໝໍລຳ），外部比對極易撞到泰國 molam 的大量條目，比對一定要帶盤名一起。 ⚠ 與池中已有的泰國 molam 卡**不是同一批錄音**，下游行文不得把兩邊混談。 年份：MB first-release-date 1994-01-01；CD 版 release 的 date 是 1994（無月日），數位版是 1994-01-01，兩筆同年、無爭議。**這是唱片的發行年，不是錄音年**。 封面：CAA release-group/fc12c43f 實測回 200、1 張圖。 店面：Apple search 以「Music from Southern Laos Molam Lao」查 us／gb／fr／jp 四店**皆回同一個 collectionId 1086413188**，店端掛名『Molam Lao』、盤名『Music from Southern Laos』、年份 1994，三項與 MB 完全一致（本批 23 張裡唯一一張三項全對的）。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group fc12c43f-e204-474a-a212-b4fe2f61215f，identitySource pinned。回問確認 title『Music from Southern Laos』、artist-credit『Molam Lao』（藝人實體 99bae4c6-0eb8-4f52-beed-b1aabc539850，Group／LA）、primary-type Album、secondary-types []、first-release-date 1994-01-01；轄下 release 2 筆：d82b1d34-a01a-4e7a-82c6-129d4354ac88（1994 GB Official，Nimbus Records NI 5401，CD×11，barcode 083603540128）、deb0d797-8ec8-4b9d-9ec2-c8e7e333fb8d（1994-01-01 XW Official，Nimbus Records，Digital Media×11，barcode 190374078368）。藝人名下只有這 1 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nouthong Phimvilayphone；Visions of the Orient；Vision of the Orient；Amiata Records；ນູທອງ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Nouthong Phimvilayphone",
+  "album": "Visions of the Orient: Music from Laos",
+  "year": 1995,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Amiata Records（XW 1995，Digital Media 12 軌，barcode 3661585079170；release 端點的 label-info 有廠牌名、無目錄號）",
+  "why": "本批寮國七張裡唯一一張以單一演出者掛名的碟（其餘是 Various Artists、Molam Lao 樂團、Boua Xou Mua 與 Tiao Phün Muang）。MB 上這位（1006498b-bc8b-4192-b79f-bbed61cf079e，Person／LA）名下只有這 1 個 release-group，是寮國個人演奏者在 MB 上少數建得起來的一筆。實掃卡池全 24,138 列，這位與「Laos」各 0 筆真命中。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Nouthong Phimvilayphone」在池中 0 筆。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 ⚠ 盤名兩邊不一致（裁定 260 的形狀）：MB 寫複數的『Visions of the Orient』，Apple 三個店面寫**單數**的『Vision of the Orient - Music from Laos』（collectionId 156724493、年份 1995）——差一個 s 與冒號改連字號，字串比對必然落空，下游要兩種都試（queryAlias 已備）。 ⚠ 載體：MB 唯一那筆 release 的 media 是 **Digital Media 12 軌、country XW**——MB 端**沒有任何實體盤的建檔**，行文不得寫成 CD 或黑膠。 年份：MB first-release-date 1995，轄下唯一一筆 release 亦 1995。**這是發行年、不是錄音年**。 ⚠ 掛名轉寫：寮文人名的拉丁轉寫不只一種，MB 只給 Nouthong Phimvilayphone 這一種、沒有別名，下游若查不到要考慮別的轉寫。 封面：CAA release-group/fd323fc6 實測回 200、1 張圖。 店面：Apple search 以拉丁掛名查 us／sg／th 三店皆回 collectionId 156724493（盤名單數形，見上）。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group fd323fc6-a5d6-40ca-b64d-2b49fec81022，identitySource pinned。回問確認 title『Visions of the Orient: Music from Laos』、artist-credit『Nouthong Phimvilayphone』（藝人實體 1006498b-bc8b-4192-b79f-bbed61cf079e，Person／LA）、primary-type Album、secondary-types []、first-release-date 1995；轄下 release 1 筆：a8dd3640-931e-42a5-98d4-489bce8c622d（1995 XW Official，Amiata Records，Digital Media×12，barcode 3661585079170）。藝人名下只有這 1 個 release-group。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Boua Xou Mua；The Music of the Hmong People of Laos；Arhoolie CD 446；Hmong；Mua Boua Xou",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Boua Xou Mua",
+  "album": "The Music of the Hmong People of Laos",
+  "year": 1995,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Arhoolie（CD 446，US 1995，CD 12 軌，barcode 096297044622）",
+  "why": "本批寮國七張裡唯一一張在美國錄製與發行的碟，補的是 1975 年之後苗族社群移居美國那一條通路——盤本身是美國廠牌 Arhoolie 的目錄號 CD 446、US 壓片，掛名是單一演奏者。實掃卡池全 24,138 列，「Hmong」「Boua Xou Mua」「Arhoolie」各 0 筆真命中，池中既有的東南亞卡全部是在地錄音或歐洲廠牌的復刻，這條跨太平洋的通路一張都沒有。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Hmong」「Boua Xou Mua」「Arhoolie」在池中各 0 筆。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 ⚠ 掛名轉寫：苗語人名的拉丁寫法有姓名順序的問題（Boua Xou Mua／Mua Boua Xou 兩種順序都見得到），MB 只給一種、沒有別名，queryAlias 已備兩種，下游比對兩種都要試。 ⚠ 這張的錄音地與發行地都在美國，**不是在寮國錄的**；行文不得寫成寮國當地的錄音，也不得把移居寫成敘事（本批行文界線）。 年份：MB first-release-date 1995，轄下唯一一筆 release 亦 1995。**這是唱片的發行年，不是錄音年**——MB 端沒有登記錄音年。 封面：CAA release-group/222fbd16 實測回 200、2 張圖。 店面：Apple search 以「The Music of the Hmong People of Laos」查 us／gb／fr／jp 四店**皆回同一個 collectionId 1508954924**，店端掛名『Boua Xou Mua』、盤名與 MB 一字不差、年份 1995。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 222fbd16-f812-425f-aa94-6db4dd5acb63，identitySource pinned。回問確認 title『The Music of the Hmong People of Laos』、artist-credit『Boua Xou Mua』（藝人實體 83fffd77-105f-4fa3-bf98-071a2c80ea59）、primary-type Album、secondary-types []、first-release-date 1995；轄下 release 1 筆：75b22ef2-f14f-4451-82a3-ea7163bc55d7（1995 US Official，Arhoolie CD 446，CD×12，barcode 096297044622）。藝人名下只有這 1 個 release-group。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "2007 年 Sublime Frequencies 以 SF036 在美國發行的 CD、17 軌（barcode 751937314523），內容是寮國南部各族群的田野錄音；每一軌的演出者在 MB 上不是沒有藝人實體，就是名下 0 個 release-group（本批實查寮國掛名時掃到的 LA 藝人實體大多如此），因此這批錄音的成盤形態只有這一種合輯。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2007、primary-type Album、secondary-types Compilation），第二個是 SF036 那一筆 release（記廠牌 Sublime Frequencies、目錄號 SF036、US、Official、CD、17 軌、barcode），exceptionReason 引的每一格都在這兩頁上，兩頁皆以 ws/2 API 逐格讀過。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/400d78ab-35fb-45e4-ab10-a1a4d6e151b5",
+   "https://musicbrainz.org/release/90614205-d902-4f85-82e2-8f2a4db0be9e"
+  ],
+  "selfTitled": false,
+  "queryAlias": "Ethnic Minority Music of Southern Laos；Sublime Frequencies SF036；Laos field recordings",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Ethnic Minority Music of Southern Laos",
+  "year": 2007,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "Sublime Frequencies（SF036，US 2007，CD 17 軌，barcode 751937314523）",
+  "why": "同一家廠牌在同一時期出的緬甸四輯（本批全收）與寮國這一張是同一條編輯線，四張緬甸盤加這一張寮國盤，是 Sublime Frequencies 目錄裡緬甸與寮國的全部。把五張放在一起，這條線的入口就完整了。實掃卡池全 24,138 列，「Southern Laos」「Sublime Frequencies」各 0 筆真命中（Sublime Frequencies 掃出的 5 筆全是樂團 Sublime 與 LFO《Frequencies》，假陽性）。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Ethnic Minority Music of Southern Laos」在池中 0 筆；「Sublime Frequencies」掃出的 5 筆全是 Sublime 與 LFO《Frequencies》，假陽性。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 §5.6：MB primary-type Album、secondary-types [Compilation]，填 releaseType Compilation ＋ exceptionReason ＋ 2 個 HTTPS 資料庫證據。 ⚠ 盤名與同廠牌的其他田野錄音輯高度近似（《Ethnic Minority Music of Northeast Cambodia》SF027、《Ethnic Minority Music of North Vietnam》SF037、《Ethnic Minority Music of Northwest Xinjiang, China》SF057、《Ethnic Minority Music of Southern China》SF081），**前兩張屬 c-64 與 c-SEA 的國別範圍、本批一律不碰**，比對時只認 Southern Laos 這個字串。 年份：MB first-release-date 2007，轄下唯一一筆 release 亦 2007。**這是發行年、不是錄音年**——田野錄音的年份 MB 端沒有登記，行文不得補。 封面：CAA release-group/400d78ab 實測回 200、1 張圖。 店面：Apple search 以「Ethnic Minority Music of Southern Laos」查 us／gb／fr／jp 四店各 0 筆可對得上的條目（只是 search 這一種查法的觀察）。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 400d78ab-35fb-45e4-ab10-a1a4d6e151b5，identitySource pinned。回問確認 title『Ethnic Minority Music of Southern Laos』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2007；轄下 release 1 筆：90614205-d902-4f85-82e2-8f2a4db0be9e（2007 US Official，Sublime Frequencies SF036，CD×17，barcode 751937314523）。刻意不釘（同廠牌、國別不在本批範圍或已被別批收走）：de3bd80e-a8d1-4c10-8719-129705b23991 對應的《Ethnic Minority Music of Northeast Cambodia》SF027（柬埔寨，c-64 範圍）、b254e8f4-88e6-4f7a-9c80-68be1d545a58 對應的《Ethnic Minority Music of North Vietnam》SF037（越南，c-64 範圍）——兩者記的是 release MBID，非 release-group，供下游辨識用。另 f17cbe2b-cf0d-44bb-b97b-7102521a18ff《Mien (Yao) Canon Singing in China, Vietnam, Laos》（Kink Gong，2021，跨三國、非純寮國）亦不釘。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tiao Phün Muang；Tiao Phun Muang；Laos Musique de l'ancienne cour de Luang Prabang；Music of the Ancient Royal Court of Luang Prabang；VDE-GALLO；ຫຼວງພະບາງ",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Tiao Phün Muang",
+  "album": "Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)",
+  "year": 2008,
+  "genres": [
+   "world",
+   "classical"
+  ],
+  "label": "VDE-GALLO（XW 2008，Digital Media 10 軌，barcode 887845148582；release 端點的 label-info 有廠牌名、無目錄號）",
+  "why": "寮國宮廷樂這一側在池中是 0 張——實掃卡池全 24,138 列，「Luang Prabang」0 筆真命中。本張是 MB 上唯一一筆以琅勃拉邦宮廷樂為題的建檔，掛名 Tiao Phün Muang 是 MB 上的 LA 藝人實體，名下只有這一張。與本批另收的 khène 與 molam 那幾張分屬不同的音樂形態，四種形態（宮廷樂、khène、molam、少數民族田野錄音）並收，寮國這一區才不是只有一種面貌。",
+  "risk": "撞卡：以 batch-progress/lib.mjs 的 loadPool() 實掃 seed_cards.json 全 16,450 列＋全部 onboarding-manifest-*.json＋c47/cand-all.json（合計 24,138 列），雙向子字串比對（短鍵 <5 字元不採，擋 A／O／R／Ka 這類假陽性）。「Luang Prabang」「Tiao Phun Muang」在池中各 0 筆。 ⚠ 東南亞其他國別已由別批收過，本卡不得與之混談：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52（《Molam: Thai Country Groove From Isan》兩輯、《The Sound of Siam》兩輯、《Saigon Rock & Soul》、《Cambodian Cassette Archives》等都已在池中）。本批 a 組只收緬甸與寮國。 ⚠ 掛名含變音字母 ü（Tiao Phün Muang）——chk-prop 的 NFKC 正規化摺不掉它，外部比對要同時試 Phün 與 Phun（queryAlias 已備）。 ⚠ 盤名是法英雙語並列、括號裡放英譯，長度超過 80 字元；依裁定 259 的雙語處理，同 RG 底下**沒有**任何一筆純拉丁單語 title 的 release 可取，故照 MB 的雙語全稱原樣取，**不自創截短形**。下游比對要把括號前後兩段分開試。 ⚠ 載體：MB 唯一那筆 release 的 media 是 **Digital Media 10 軌、country XW**，MB 端沒有實體盤建檔，行文不得寫成 CD。 年份：MB first-release-date 2008，轄下唯一一筆 release 亦 2008。**這是發行年、不是錄音年**——宮廷樂錄音的年份 MB 端沒有登記，行文不得補。 ⚠ 封面：CAA release-group/0cb411e3 實測**回 404**（本批 23 張裡兩張 404 的另一張），本機端要補只能人工掃圖。 店面：Apple search 以「Laos musique ancienne cour Luang Prabang」查 us／gb／fr／jp 四店**皆回同一個 collectionId 591505662**，店端掛名『Tiao Phün Muang』、盤名與 MB 一字不差、年份 2008。以上只是 search 這一種查法的觀察。 行文界線（本批硬規則，逐張提醒下游研究層與寫作層）：why／risk／mbNote 與日後的簡介一律只寫可查證的發行事實——發行年、廠牌、盤面編號、載體、軌數、國別、掛名與曲目；不得寫政治評價與宗教評價，不得把流亡、審查、被禁鋪成敘事，也不得用曲名或盤名反推任何政治因果（沿用 c-123～c-125 的做法與裁定 257 的界線）。",
+  "mbNote": "釘 release-group 0cb411e3-b4e7-45a3-b840-64fa691a86a2，identitySource pinned。回問確認 title『Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)』、artist-credit『Tiao Phün Muang』（藝人實體 c8e975c8-4c64-4a9d-9394-a5601f125759，LA）、primary-type Album、secondary-types []、first-release-date 2008；轄下 release 1 筆：ce274e8d-ede2-4521-8f3e-e7a2a44c1d2a（2008 XW Official，VDE-GALLO，Digital Media×10，barcode 887845148582）。藝人名下只有這 1 個 release-group。刻意不釘：9e78f73c-0a4d-417e-86f2-4719fbb94f9d《Music of Laos: The Buddhist Tradition》(2003，宗教曲目，本批行文界線避開宗教評價故不收)、d1ce5840-b8f4-416d-848f-2e2d53688a14《Laos: Traditional Music of the South (Musique traditionnelle du sud)》(1992，artist-credit 是錄音者 Jacques Brunet 而非演出者，掛名形態不宜進池)。"
+ }
+]

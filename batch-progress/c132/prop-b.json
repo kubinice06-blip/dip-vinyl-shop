@@ -1,0 +1,420 @@
+[
+ {
+  "g": "b",
+  "artist": "本田竹広",
+  "album": "Jōdo",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "本田竹曠；Takehiro Honda；T. Honda；浄土；Jodo；本田竹広 浄土；Takehiro Honda Jodo",
+  "reissuedBy": "Apple jp／us 上架的 2006-07-26《浄土 - EP》（collectionId 1327644024，4 軌）與 2012-03-21《浄土 remaster - EP》（1492984291，4 軌）皆掛「本田竹曠」，屬 Trio 母帶的後續數位再發；MB 未建這兩筆 release。",
+  "label": "Trio RSP-9018（JP 1970 黑膠 4 軌，MB release 0b9110d5 唯一一筆，Official）",
+  "why": "本田竹広 1970 年在 Trio Records 的領銜作，也是他二十五歲前後那組 Trio 盤（RSP-9008《The Trio》／RSP-9018《Jōdo》／RSP-9026《What’s Going On》）裡最被當成代表作的一張：四首長篇、盤名取佛教「淨土」，是他從 Blue Note 式硬咆哮轉向調式與日本題材的那一步。實掃 `seed_cards.json` 全 16,450 列（本田竹広／本田竹曠／Honda／Takehiro 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3、DJ Honda、本田美奈子 已逐筆排除），池中他名下只有 `本田竹曠《This Is Honda》1972` 一張（英文假名寫法「曠」）；c-131 另新增 `本田竹広《Salaam Salaam》1974`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架）。店主 2026-09-15 要求把日本第一世代每位補到重點作齊全，本田在池中只有 1972《This Is Honda》與 1974《Salaam Salaam》兩張，**1970–71 年 Trio 時期一張都沒有**，這張與《The Trio》《I Love You》三張補的正是他目錄的開頭。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有卡寫「本田竹曠」、c-131 新卡寫「本田竹広」，依 c-132 簡報第三節與 c-131 第 355 條，本批全部取 MB 實體主名 `本田竹広`，`本田竹曠` 進 queryAlias，**待本機把池中 `本田竹曠《This Is Honda》1972` 一併改寫**（本批不自行合併，第 307 條）。第 307 條反查同字串不同人：池中「本田竹」子字串只命中那一張，MB 另有 `本多俊之`（d00cff50）與 `Toshiyuki Honda`（本多俊之，Electric Bird／EASTWORLD 六張，見 `batch-progress/enum/jp-king.json`、`jp-toshiba.json`）——**那是另一位薩克斯風手，不得混入本掛名**。 撞卡：盤名《Jōdo》與《浄土》在池中皆零命中。⚠ 盤名含長音符 ō（U+014D），非 ASCII 但不是連字號，`chk-prop` 的連字號檢查不會亮燈；下游比對建議同時備「Jodo」與「浄土」（已進 queryAlias）。年份：MB first-release-date 1970，轄下唯一一筆 release 就是 1970 年 Trio 原盤，無再發失真。封面：CAA release-group 端點 **200**（實測）。⚠ Apple 把它標成「- EP」（4 軌），但 MB primary-type 是 Album、載體是 12 吋黑膠——**軌數少不等於 EP**，研究層引用時以 Trio RSP-9018 原盤為準；這只是 search 與藝人目錄兩種查法的觀察，不是結論（第 254 條）。",
+  "mbNote": "釘 release-group 6d937ed0-f0b7-461a-8c5e-a1f42e550e2f。回問 release-group 端點（inc=artist-credits+releases）：title「Jōdo」、artist-credit「本田竹広」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條：廠牌只有這個端點問得到）：0b9110d5（JP 1970 Official Vinyl 4 軌，Trio RSP-9018）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。"
+ },
+ {
+  "g": "b",
+  "artist": "本田竹広",
+  "album": "The Trio",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "本田竹曠；Takehiro Honda；T. Honda；ザ・トリオ；本田竹広 ザ・トリオ；Takehiro Honda The Trio",
+  "reissuedBy": "Apple 上架 1987-07-01《The Trio - EP》（collectionId 1329348273，5 軌）與 2012-03-21《ザ・トリオ remaster》（1492982668，5 軌），皆掛「本田竹曠」；MB 未建這兩筆。",
+  "label": "Trio RSP-9008（JP 1970 黑膠 5 軌，MB release 9c56bf91 唯一一筆，Official）",
+  "why": "Trio Records 編號 RSP-9008，是本田竹広在 Trio 的第一張三重奏領銜盤，也是這條線的起點——盤名就叫《The Trio》，等於把「本田竹広三重奏」這個編制端出來當作品名。實掃 `seed_cards.json` 全 16,450 列（本田竹広／本田竹曠／Honda／Takehiro 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3、DJ Honda、本田美奈子 已逐筆排除），池中他名下只有 `本田竹曠《This Is Honda》1972` 一張（英文假名寫法「曠」）；c-131 另新增 `本田竹広《Salaam Salaam》1974`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架）。簡報方向點名「本田竹広走 Trio／Express」，Trio 這四張（RSP-9008／9018／9026 與 1971《I Love You》）是 MB 唯一建得完整的一段，這張是其中編號最早的一張。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有卡寫「本田竹曠」、c-131 新卡寫「本田竹広」，依 c-132 簡報第三節與 c-131 第 355 條，本批全部取 MB 實體主名 `本田竹広`，`本田竹曠` 進 queryAlias，**待本機把池中 `本田竹曠《This Is Honda》1972` 一併改寫**（本批不自行合併，第 307 條）。第 307 條反查同字串不同人：池中「本田竹」子字串只命中那一張，MB 另有 `本多俊之`（d00cff50）與 `Toshiyuki Honda`（本多俊之，Electric Bird／EASTWORLD 六張，見 `batch-progress/enum/jp-king.json`、`jp-toshiba.json`）——**那是另一位薩克斯風手，不得混入本掛名**。 撞卡：盤名「The Trio」在池中零命中，但**盤名極短又是通用詞**，下游比對要鎖 rgMbid 不鎖盤名（同 c-131《Her Trio Her Quartet》那一案）。年份：MB first-release-date 1970、轄下唯一 release 就是 1970 Trio 原盤，一致。封面：CAA release-group 端點 **200**（實測）。⚠ Apple 的兩筆都標 5 軌、與 MB 的 5 軌一致，但一筆標「- EP」、發行日寫 1987-07-01（Trio 的 CD 化年），一筆寫 2012-03-21——**兩筆都不是 1970 原盤**，研究層引發行資訊要以 RSP-9008 為準。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group ece8ab7a-a39a-45ac-abe0-5b0697050319。回問 release-group 端點：title「The Trio」、artist-credit「本田竹広」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：9c56bf91（JP 1970 Official Vinyl 5 軌，Trio RSP-9008）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。"
+ },
+ {
+  "g": "b",
+  "artist": "本田竹広",
+  "album": "I Love You",
+  "year": 1971,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "本田竹曠；Takehiro Honda；T. Honda；アイ・ラヴ・ユー；本田竹曠トリオ；Takehiro Honda I Love You",
+  "reissuedBy": "Apple us《アイ・ラヴ・ユー (Remaster)》2012-02-22（collectionId 1493768901，5 軌，掛 本田竹曠）與《I Love You - EP》1995-10-25（1329373434，5 軌，掛 本田竹曠トリオ）；MB 兩筆都沒建。",
+  "label": "Trio（JP 1971 黑膠 5 軌，MB release 19c8fe0e Official；⚠ MB 這筆的 label-info 有 Trio 但**目錄編號欄是空的**，實體盤面的 catno 待本機補）",
+  "why": "1971 年 Trio Records 的三重奏盤，是《The Trio》（1970）之後、《This Is Honda》（1972，池中既有）之前的一張，把本田竹広在 Trio 時期連續四年的領銜作串成完整一段。MB 這個 RG 的 artist-credit 寫的是「本田竹曠」——這正是池中既有那張所用的寫法，兩張是同一位。實掃 `seed_cards.json` 全 16,450 列（本田竹広／本田竹曠／Honda／Takehiro 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3、DJ Honda、本田美奈子 已逐筆排除），池中他名下只有 `本田竹曠《This Is Honda》1972` 一張（英文假名寫法「曠」）；c-131 另新增 `本田竹広《Salaam Salaam》1974`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架）。池中現有兩張分別是 1972 與 1974，這張把起點往前推到 1971。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有卡寫「本田竹曠」、c-131 新卡寫「本田竹広」，依 c-132 簡報第三節與 c-131 第 355 條，本批全部取 MB 實體主名 `本田竹広`，`本田竹曠` 進 queryAlias，**待本機把池中 `本田竹曠《This Is Honda》1972` 一併改寫**（本批不自行合併，第 307 條）。第 307 條反查同字串不同人：池中「本田竹」子字串只命中那一張，MB 另有 `本多俊之`（d00cff50）與 `Toshiyuki Honda`（本多俊之，Electric Bird／EASTWORLD 六張，見 `batch-progress/enum/jp-king.json`、`jp-toshiba.json`）——**那是另一位薩克斯風手，不得混入本掛名**。 ⚠ **本張的 MB artist-credit 就是「本田竹曠」**（與池中既有卡同字串），是四種 credit（本田竹広／本田竹曠／T. Honda／Takehiro Honda）並存的直接證據，依第 355 條取實體主名「本田竹広」。撞卡：盤名「I Love You」在池中零命中，但**這是通用到極點的盤名**（Apple jp 以此詞搜出的前五筆全是桑田佳祐、SUPER BEAVER、back number 等日本流行樂），下游比對必須鎖 rgMbid。年份：MB 1971，轄下唯一 release 即 1971 原盤。封面：CAA release-group 端點 **200**（實測）。⚠ **廠牌欄有 Trio 但無 catno**——依第 259 條這是 release 端點問出來的真實狀態，不是「MB 未填」的誤判；研究層若要寫目錄編號需另找 Discogs 版本頁。Apple us 藝人目錄命中兩筆 5 軌版（1493768901／1329373434），軌數與 MB 一致，只是觀察（第 254 條）。",
+  "mbNote": "釘 release-group 2b50e607-63f2-4e3b-8f97-a2ad5cab09a8。回問 release-group 端點：title「I Love You」、artist-credit「本田竹曠」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：19c8fe0e（JP 1971 Official Vinyl 5 軌，label-info：Trio、catalog-number 空）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。"
+ },
+ {
+  "g": "b",
+  "artist": "本田竹広",
+  "album": "What's Going On",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "本田竹曠；Takehiro Honda；T. Honda；What’s Going On（MB 原文用 U+2019）；ホワッツ・ゴーイング・オン；本田竹曠 and his orchestra",
+  "reissuedBy": "SOLID RECORDS／ソリッド（JP 2012-02-22 CD CDSOL-1482 7 軌；同日 XW 數位 7 軌）；Apple《ホワッツ・ゴーイング・オン remaster》collectionId 1493888408（7 軌）與《What’s Going On》1327630697（7 軌，掛「本田竹曠 and his orchestra」）。",
+  "label": "Trio RSP-9026（JP 1973 12 吋黑膠 7 軌，MB release 4278086f Official）；CD 再發 SOLID RECORDS CDSOL-1482（JP 2012-02-22 7 軌）",
+  "why": "把 Marvin Gaye 的《What’s Going On》整張化為爵士管弦編制的 1973 年 Trio 盤，是本田竹広 Trio 時期的收尾之作，也是和製爵士對美國靈魂樂正面回應的代表案例（Apple 的一筆 credit 直接寫成「本田竹曠 and his orchestra」，可見它不是三重奏而是大編制）。MB 轄下三筆 release 裡 1973 年那筆就是 Trio RSP-9026 原盤，另兩筆是 2012 SOLID 的 CD 與數位，三筆軌數都是 7，版本關係乾淨。實掃 `seed_cards.json` 全 16,450 列（本田竹広／本田竹曠／Honda／Takehiro 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3、DJ Honda、本田美奈子 已逐筆排除），池中他名下只有 `本田竹曠《This Is Honda》1972` 一張（英文假名寫法「曠」）；c-131 另新增 `本田竹広《Salaam Salaam》1974`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架）。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有卡寫「本田竹曠」、c-131 新卡寫「本田竹広」，依 c-132 簡報第三節與 c-131 第 355 條，本批全部取 MB 實體主名 `本田竹広`，`本田竹曠` 進 queryAlias，**待本機把池中 `本田竹曠《This Is Honda》1972` 一併改寫**（本批不自行合併，第 307 條）。第 307 條反查同字串不同人：池中「本田竹」子字串只命中那一張，MB 另有 `本多俊之`（d00cff50）與 `Toshiyuki Honda`（本多俊之，Electric Bird／EASTWORLD 六張，見 `batch-progress/enum/jp-king.json`、`jp-toshiba.json`）——**那是另一位薩克斯風手，不得混入本掛名**。 ⚠ **盤名的撇號**：MB RG 標題用 U+2019（What’s Going On），卡片改成 ASCII 撇號並把 MB 原文放進 queryAlias（沿用 c-121 第 3 條與 c-131《Toshiko’s Piano》的作法）。撞卡：池中零命中，但 **池中實際存在 `Marvin Gaye — What’s Going On`**（實掃確認，掛名不同所以 `chk-prop` 不亮燈），下游若拿盤名比對極易誤配，必須鎖 rgMbid。年份：MB 1973、原盤 RSP-9026 1973、Apple 標 1973-01-01，三者一致。封面：CAA release-group 端點 **200**（實測）。⚠ 這個 RG 的 artist-credit 是「T. Honda」（縮寫），Apple 另有「本田竹曠 and his orchestra」——同一張碟四種掛名寫法，依第 355 條取實體主名。Apple jp／us 兩種查法皆命中，軌數 7 與 MB 一致，只是觀察（第 254 條）。",
+  "mbNote": "釘 release-group e6c15d9f-a5e3-4587-a907-5ec9405e5a14。回問 release-group 端點：title「What’s Going On」（U+2019）、artist-credit「T. Honda」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：4278086f（JP 1973 Official 12\" Vinyl 7 軌，Trio RSP-9026）、ac999dda（JP 2012-02-22 Official CD 7 軌，SOLID RECORDS CDSOL-1482）、08a4446c（XW 2012-02-22 Official Digital Media 7 軌，SOLID RECORDS，無 catno）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。"
+ },
+ {
+  "g": "b",
+  "artist": "本田竹広",
+  "album": "Another Departure",
+  "year": 1977,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "本田竹曠；Takehiro Honda；アナザー・ディパーチャー；Takehiro Honda Another Departure；本田竹彦",
+  "reissuedBy": "（本批查無官方再發；MB 轄下只有 1977 年原盤一筆，Apple jp／us 兩種查法皆 0 筆）",
+  "label": "Flying Disk VIJ-6004（JP 1977 12 吋黑膠 5 軌，MB release d84c6d5f；⚠ 該 release 的 `status` 欄是 null，不是 Official／Promotion，屬 MB 端未填）",
+  "why": "1977 年 5 月紐約錄音、Victor 旗下純爵士廠 Flying Disk 的編號第四號，鋼琴三重奏的另兩角是 **Ron Carter（bass）與 Tony Williams（drums）**——Miles Davis 第二代五重奏的節奏組，這是日本鋼琴手在 1970 年代能請到的最高規格陣容，也是本田竹広離開 Trio 之後最被引用的一張（Discogs release 2524891／master 694842，Flying Disk VIJ-6004，五軌全部由本田作曲）。實掃 `seed_cards.json` 全 16,450 列（本田竹広／本田竹曠／Honda／Takehiro 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3、DJ Honda、本田美奈子 已逐筆排除），池中他名下只有 `本田竹曠《This Is Honda》1972` 一張（英文假名寫法「曠」）；c-131 另新增 `本田竹広《Salaam Salaam》1974`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架）。簡報方向是「Trio／Express」，Trio 那四張本批已收滿，這第五張改補 Flying Disk 的開頭；`batch-progress/enum/jp-victor.json` 也把它與 1978《It’s Great Outside》一起列在 Flying Disk 的缺口裡。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有卡寫「本田竹曠」、c-131 新卡寫「本田竹広」，依 c-132 簡報第三節與 c-131 第 355 條，本批全部取 MB 實體主名 `本田竹広`，`本田竹曠` 進 queryAlias，**待本機把池中 `本田竹曠《This Is Honda》1972` 一併改寫**（本批不自行合併，第 307 條）。第 307 條反查同字串不同人：池中「本田竹」子字串只命中那一張，MB 另有 `本多俊之`（d00cff50）與 `Toshiyuki Honda`（本多俊之，Electric Bird／EASTWORLD 六張，見 `batch-progress/enum/jp-king.json`、`jp-toshiba.json`）——**那是另一位薩克斯風手，不得混入本掛名**。 撞卡：盤名在池中零命中。⚠ **封面要走非 CAA 路線**：CAA release-group 端點實測 **404**（同批四張 Trio 盤全是 200，只有這張沒有圖）。依 `ALBUM_ONBOARDING.md` §4 2026-09-10 店主核定的放寬，釘得住 MBID 的卡一樣可以走 `apple-verified-collection` 或 `discogs` 來源——但 **Apple jp／us 的 search 與藝人目錄兩種查法都 0 筆**（本田竹曠 藝人目錄 250055187 的 15 筆裡沒有它），所以只剩 Discogs 版本頁（release 2524891）這條路，本機要走 `discogs-cover-registry`。⚠ 這是 c-116 第 6 條／c-131 第 359 條那條規律的再次應驗：**Flying Disk／Victor 1970 年代的目錄在 Apple 上幾乎全空**。年份：MB 1977、原盤 VIJ-6004 1977、Discogs 1977，一致；錄音 1977-05。⚠ MB 這筆 release 的 `status` 是 null（既非 Official 也非 Promotion），本批不據此排除——依第 227／253 條，欄位本身不是判準。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 8c0ff84f-72ad-4184-88c0-3c252ffbbdde。回問 release-group 端點：title「Another Departure」、artist-credit「Takehiro Honda」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：d84c6d5f（JP 1977，status null，12\" Vinyl 5 軌，Flying Disk VIJ-6004）。列舉檔命中：`batch-progress/enum/jp-victor.json` 有本筆（entities「Flying Disk」，why「rg-tag」，note「藝人池中有2張(盤名未比中)」）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。"
+ },
+ {
+  "g": "b",
+  "artist": "松本英彦",
+  "album": "Sleepy",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hidehiko Matsumoto；松本英彦カルテット；Hidehiko Matsumoto Quartet；Sleepy Matsumoto；スリーピー；松本英彦 スリーピー",
+  "reissuedBy": "three blind mice（JP 2006-12-20 Hybrid SACD MHCP 10032，CD 層與 SACD 層各 6 軌，沿用原 catno TBM-74）",
+  "label": "three blind mice TBM-74（JP 1976 12 吋黑膠 6 軌，MB release 6eaf6268 Official）；SACD 再發 three blind mice MHCP 10032（JP 2006-12-20）",
+  "why": "松本英彦（1926–2000）綽號就叫「Sleepy」，這張同名盤是他在 TBM（Three Blind Mice）的領銜作，也是日本爵士第一代最後一位「戰後四大テナー」在 1970 年代留下的正面自述：1976 年 9 月 13／24 日錄音、10 月 21 日發行，四重奏是 松本英彦（ts, fl）、市川秀男（p）、井野信義（b）、**日野元彦（ds）**——把第一代與 1970 年代新生代直接接在一起的編制。實掃 `seed_cards.json` 全 16,450 列（松本英彦／Matsumoto／Hidehiko／Sleepy 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3 已排除），池中他名下只有 **`Hidehiko Matsumoto《Hot Jazz》1983`** 一張（c-87 Johnny’s Disk 線，英文字串）；c-131 因封面與合掛問題 0 張（第 356 條 F），所以這是他第一次以漢字掛名進池。店主 2026-09-15 要求把日本第一世代補齊，松本英彦是四人裡池中最薄的一位，這張是他 MB 上僅有的三張個人領銜盤裡最具代表性的一張。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有 `Hidehiko Matsumoto《Hot Jazz》1983` 是英文字串，依 c-132 簡報第三節與 c-131 第 357 條，新卡用漢字 `松本英彦`（MB 實體主名），**池中那張待本機統一改寫，本批絕不自行合併也不新造第三種寫法**（第 307 條）。第 307 條反查同字串不同人：池中「松本」「Matsumoto」子字串只命中那一張與 Sleepy John Estes 三張假陽性，無同字串不同人。 撞卡：盤名「Sleepy」在池中零命中（`Sleepy John Estes` 三張是掛名假陽性，逐筆核整個掛名字串後排除）。⚠ **三盲鼠先掃池**：簡報第六節與店主 2026-09-15「三盲鼠已經都有了」——實掃 `seed_cards.json` 16,450 列，**TBM-74《Sleepy》不在池中**，其他 TBM 卡的掛名也沒有松本英彦，可收。⚠ **封面要走非 CAA 路線**：CAA release-group 端點實測 **404**；Apple jp／us 的 search 與藝人目錄兩種查法**都 0 筆**（藝人目錄 153540229 只有 5 筆，沒有它），所以只剩 Discogs 版本頁這條路，本機要走 `discogs-cover-registry`（§4 2026-09-10 放寬後，釘得住 MBID 的卡一樣適用）。⚠ **這是 c-131 第 359 條那條規律的再次應驗**：TBM 的目錄在 Apple 上幾乎全空。年份：MB first-release-date 1976、原盤 TBM-74 1976，一致；錄音 1976-09-13／09-24、發行 1976-10-21（來源：ja.wikipedia 松本英彦條目與 TBM 復刻系列資料，研究層請覆核）。⚠ 盤面 credit 是「松本英彦カルテット」（見 Groovenut Records 的 1976 日本原盤條目），MB RG credit 是「松本英彦」——依第 355 條取實體主名，不另立編制掛名；MB 那個空殼的 `Hidehiko Matsumoto Quartet` 實體名下 0 個 RG，不採。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 6de7306e-d73c-45ec-8127-e29ee04f29d7。回問 release-group 端點（inc=artist-credits+releases）：title「Sleepy」、artist-credit「松本英彦」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：6eaf6268（JP 1976 Official 12\" Vinyl 6 軌，three blind mice TBM-74）、70d95fed（JP 2006-12-20 Official Hybrid SACD，CD 層 6 軌＋SACD 層 6 軌，three blind mice MHCP 10032／TBM-74）。藝人實體 d4027a8f-6a56-43d9-81cc-c80084d22b58（松本英彦／Person／JP，disambiguation「Japanese jazz saxophonist & bandleader; “Sleepy”」，alias「Hidehiko Matsumoto」；名下 11 個 RG）。同名／相關實體實測（第 250／324 條，只看 type／area／disambiguation，不看 score）：`53f0f608` Hidehiko Matsumoto Quintet（Group／JP，disambiguation 松本英彦クインテット，**名下 0 個 RG**）、`e16e946c` Hidehiko Matsumoto Quartet（Group，**0 個 RG**）、`ad02820f` 松本英彦とスリーピーラテン楽団（Group，**0 個 RG**）、`c03c3b61` Sleepy Matsumoto（Person，名下只有 `0ce25a4f`《Jazz in Japan Recorded in Tokyo》1965 的合掛）——**同一位被 MB 拆成五個實體，其中四個是空殼**。擋掉的同名他人：松本晃彦（Summer Wars 配樂）、榎本英彦、松本英子、松本英二、松本英一、松本大英、松本英人。本組刻意不釘：`1d2ed313`《Operation Sam Taylor》1967（KING 45SDS-1，credit「Hidehiko Matsumoto, Akira Miyazawa」兩人平列，CAA 200——**兩位都是本組的掛名，收成合掛會同時給兩人製造分裂，依第 321 條不收**，已列入 rulings 未收清單）、`4350666f`《Fascinating Tenor-Sax》1966-10（JVC SJV-227，三人平列：松浦ヤスノブ／松本英彦／宮沢昭）、`7fed7a8e`《Let’s Swing Now》1976（Victor SJV-869，五人平列的全明星 session）、`0e997400`《Jam In Yokota》1973-06-25（エレックレコード ELW-3004，Live，七人平列的 jam）、`d2119a73`《The Session / Sleepy Meets the Great Jazz Trio》1980（NEXT WAVE 25PJ-1004，與 The Great Jazz Trio 合掛，池中已有 GJT 卡，第 258 條）、`422ff78e`《演歌の祭典》1969（演歌伴奏）、`1a907384`《Special Pink Mood Deluxe Vol.2》1969（Compilation）、`ca9d9f91`《歌のない流行歌150》2014（Compilation）。"
+ },
+ {
+  "g": "b",
+  "artist": "松本英彦",
+  "album": "Rio Manhattan",
+  "year": 1981,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hidehiko Matsumoto；Sleepy Matsumoto；リオ・マンハッタン；松本英彦 リオ・マンハッタン；Hidehiko Matsumoto Rio Manhattan",
+  "reissuedBy": "（本批查無官方再發；MB 轄下只有 1981 年原盤一筆，Apple jp／us 兩種查法皆 0 筆）",
+  "label": "SEVEN SEAS K28P-6120（JP 1981 黑膠 7 軌，MB release 96667cfb Official；Seven Seas 是 King Records 的爵士／海外音樂系列）",
+  "why": "松本英彦 1981 年在 King 旗下 Seven Seas 的領銜盤，是他 MB 上僅有的三張個人作裡最晚的一張錄音室盤，也是他從 1950 年代「ジャズ・アット・ザ・シンジュク」一路到 1980 年代仍在領團的證據。`batch-progress/enum/jp-king.json` 把它列在 King／Seven Seas 的缺口裡（why「artist-tag」、note「藝人池中有1張(盤名未比中)」），是這條列舉線直接命中的一筆。實掃 `seed_cards.json` 全 16,450 列（松本英彦／Matsumoto／Hidehiko／Sleepy 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3 已排除），池中他名下只有 **`Hidehiko Matsumoto《Hot Jazz》1983`** 一張（c-87 Johnny’s Disk 線，英文字串）；c-131 因封面與合掛問題 0 張（第 356 條 F），所以這是他第一次以漢字掛名進池。簡報方向寫「松本英彦與宮沢昭走 1950–60 年代的日本コロムビア／Takt」，但 **MB 在那一段他名下一張個人盤都沒有建檔**（詳見 rulings 的 §1 候選清單），所以本批只能從 MB 實際可得的 1976／1981／1994 三張收。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有 `Hidehiko Matsumoto《Hot Jazz》1983` 是英文字串，依 c-132 簡報第三節與 c-131 第 357 條，新卡用漢字 `松本英彦`（MB 實體主名），**池中那張待本機統一改寫，本批絕不自行合併也不新造第三種寫法**（第 307 條）。第 307 條反查同字串不同人：池中「松本」「Matsumoto」子字串只命中那一張與 Sleepy John Estes 三張假陽性，無同字串不同人。 撞卡：盤名在池中零命中。⚠ **封面要走非 CAA 路線**：CAA release-group 端點實測 **404**；Apple jp／us 的 search 與藝人目錄兩種查法**都 0 筆**——與《Sleepy》同形，只剩 Discogs 這條路。年份：MB first-release-date 1981、轄下唯一 release 就是 1981 年 K28P-6120 原盤，無再發失真。⚠ 這是本組 22 張額度收不滿的直接原因之一：松本英彦在 MB 上的**個人領銜 RG 只有三個**（`6de7306e`／`91e94cbc`／`d19cb142`），其餘八個全是合掛、演歌伴奏或 Compilation——名額差 3 張，逐筆理由寫在 rulings。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 91e94cbc-8b91-4f5a-8d0a-c22cdc88621b。回問 release-group 端點：title「Rio Manhattan」、artist-credit「松本英彦」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：96667cfb（JP 1981 Official Vinyl 7 軌，SEVEN SEAS K28P - 6120）。列舉檔命中：`batch-progress/enum/jp-king.json`（entities「SEVEN SEAS」）。藝人實體 d4027a8f-6a56-43d9-81cc-c80084d22b58（松本英彦／Person／JP，disambiguation「Japanese jazz saxophonist & bandleader; “Sleepy”」，alias「Hidehiko Matsumoto」；名下 11 個 RG）。同名／相關實體實測（第 250／324 條，只看 type／area／disambiguation，不看 score）：`53f0f608` Hidehiko Matsumoto Quintet（Group／JP，disambiguation 松本英彦クインテット，**名下 0 個 RG**）、`e16e946c` Hidehiko Matsumoto Quartet（Group，**0 個 RG**）、`ad02820f` 松本英彦とスリーピーラテン楽団（Group，**0 個 RG**）、`c03c3b61` Sleepy Matsumoto（Person，名下只有 `0ce25a4f`《Jazz in Japan Recorded in Tokyo》1965 的合掛）——**同一位被 MB 拆成五個實體，其中四個是空殼**。擋掉的同名他人：松本晃彦（Summer Wars 配樂）、榎本英彦、松本英子、松本英二、松本英一、松本大英、松本英人。本組刻意不釘：`1d2ed313`《Operation Sam Taylor》1967（KING 45SDS-1，credit「Hidehiko Matsumoto, Akira Miyazawa」兩人平列，CAA 200——**兩位都是本組的掛名，收成合掛會同時給兩人製造分裂，依第 321 條不收**，已列入 rulings 未收清單）、`4350666f`《Fascinating Tenor-Sax》1966-10（JVC SJV-227，三人平列：松浦ヤスノブ／松本英彦／宮沢昭）、`7fed7a8e`《Let’s Swing Now》1976（Victor SJV-869，五人平列的全明星 session）、`0e997400`《Jam In Yokota》1973-06-25（エレックレコード ELW-3004，Live，七人平列的 jam）、`d2119a73`《The Session / Sleepy Meets the Great Jazz Trio》1980（NEXT WAVE 25PJ-1004，與 The Great Jazz Trio 合掛，池中已有 GJT 卡，第 258 條）、`422ff78e`《演歌の祭典》1969（演歌伴奏）、`1a907384`《Special Pink Mood Deluxe Vol.2》1969（Compilation）、`ca9d9f91`《歌のない流行歌150》2014（Compilation）。"
+ },
+ {
+  "g": "b",
+  "artist": "松本英彦",
+  "album": "Four Wings",
+  "year": 1980,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hidehiko Matsumoto；フォーウィングス；フォー・ウィングス；Sleepy Matsumoto；松本英彦 菅野邦彦 鈴木勲 ジョージ大塚",
+  "reissuedBy": "Octave Lab.／Trio（JP 2023-06-07 CD OTLCD-2590 6 軌；同盤另有 XW 數位 6 軌）——MB 只建了這兩筆 2023 再發，1994 年原盤未建檔",
+  "why": "1994 年 Trio Records 的四重奏盤，四個人是 **松本英彦（ts）、菅野邦彦（p）、鈴木勲（b）、ジョージ大塚（ds）**——四位都是日本第一世代／第二世代的名手，盤名《Four Wings》就是ジョージ大塚寫給這個編制的原創曲（其餘五首是 Speak Low、Misty、But Not For Me、You Do Something To Me、Laura 等標準曲）。這是松本英彦晚年最完整的一次領銜錄音，也是 Apple jp 藝人目錄 153540229 五筆裡**唯一一筆真正掛他個人的專輯**（collectionId 1329372640《フォーウィングス》，6 軌）。實掃 `seed_cards.json` 全 16,450 列（松本英彦／Matsumoto／Hidehiko／Sleepy 四種寫法子字串雙向比對、逐筆核整個掛名字串，假陽性 Sleepy John Estes ×3 已排除），池中他名下只有 **`Hidehiko Matsumoto《Hot Jazz》1983`** 一張（c-87 Johnny’s Disk 線，英文字串）；c-131 因封面與合掛問題 0 張（第 356 條 F），所以這是他第一次以漢字掛名進池。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有 `Hidehiko Matsumoto《Hot Jazz》1983` 是英文字串，依 c-132 簡報第三節與 c-131 第 357 條，新卡用漢字 `松本英彦`（MB 實體主名），**池中那張待本機統一改寫，本批絕不自行合併也不新造第三種寫法**（第 307 條）。第 307 條反查同字串不同人：池中「松本」「Matsumoto」子字串只命中那一張與 Sleepy John Estes 三張假陽性，無同字串不同人。 ⚠ **年份改判 1994，不取 MB 的 2023**（第 352／364 條第一型失真）：MB 轄下只有 2023-06-07 的 Octave Lab. OTLCD-2590 CD 與數位兩筆，first-release-date 因此是再發年；Apple jp／us 的官方條目記 **1994-12-21**（collectionId 1329372640，6 軌，與 MB 的 6 軌一致），CDJournal 與 HMV 的條目也記 1994 年 Trio Records 原盤。**原盤 catno 本批查不到**（HMV 另有 ABCJ-463 的再發編號），`label` 欄只寫得出廠牌，研究層請補。⚠ **盤面是四人聯名**（CDJournal 條目寫「松本英彦+菅野邦彦+鈴木勲+ジョージ大塚」），但 **MB RG 與 Apple 的 credit 都只掛「松本英彦」單人**，所以依第 355 條掛單人、不構成第 321 條的合掛分裂。⚠ **跨批撞卡風險**：`菅野邦彦`（c-134 b 組 3 張）與 `ジョージ大塚`（c-133 b 組 5 張）都在後續批次的名單上——若他們也挑這張，`chk-prop` 的折疊鍵是掛名＋盤名、**掛名不同就不會亮燈**，已寫進 rulings 第 386 條提醒主線。封面：CAA release-group 端點 **200**（實測，本組松本三張裡唯一有圖的）。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group d19cb142-4e3a-4193-9375-6520204be405。回問 release-group 端點：title「Four Wings」、artist-credit「松本英彦」、first-release-date **2023-06-07**（⚠ 只建了再發）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：815ced5f（JP 2023-06-07 Official CD 6 軌，Octave Lab. OTLCD-2590／Trio OTLCD-2590）、ac2ebd80（XW Official Digital Media 6 軌，Trio，無日期無 catno）——**1994 年 Trio 原盤 MB 未建檔**。列舉檔命中：`batch-progress/enum/jp-trio.json`（labelYear 2023）。藝人實體 d4027a8f-6a56-43d9-81cc-c80084d22b58（松本英彦／Person／JP，disambiguation「Japanese jazz saxophonist & bandleader; “Sleepy”」，alias「Hidehiko Matsumoto」；名下 11 個 RG）。同名／相關實體實測（第 250／324 條，只看 type／area／disambiguation，不看 score）：`53f0f608` Hidehiko Matsumoto Quintet（Group／JP，disambiguation 松本英彦クインテット，**名下 0 個 RG**）、`e16e946c` Hidehiko Matsumoto Quartet（Group，**0 個 RG**）、`ad02820f` 松本英彦とスリーピーラテン楽団（Group，**0 個 RG**）、`c03c3b61` Sleepy Matsumoto（Person，名下只有 `0ce25a4f`《Jazz in Japan Recorded in Tokyo》1965 的合掛）——**同一位被 MB 拆成五個實體，其中四個是空殼**。擋掉的同名他人：松本晃彦（Summer Wars 配樂）、榎本英彦、松本英子、松本英二、松本英一、松本大英、松本英人。本組刻意不釘：`1d2ed313`《Operation Sam Taylor》1967（KING 45SDS-1，credit「Hidehiko Matsumoto, Akira Miyazawa」兩人平列，CAA 200——**兩位都是本組的掛名，收成合掛會同時給兩人製造分裂，依第 321 條不收**，已列入 rulings 未收清單）、`4350666f`《Fascinating Tenor-Sax》1966-10（JVC SJV-227，三人平列：松浦ヤスノブ／松本英彦／宮沢昭）、`7fed7a8e`《Let’s Swing Now》1976（Victor SJV-869，五人平列的全明星 session）、`0e997400`《Jam In Yokota》1973-06-25（エレックレコード ELW-3004，Live，七人平列的 jam）、`d2119a73`《The Session / Sleepy Meets the Great Jazz Trio》1980（NEXT WAVE 25PJ-1004，與 The Great Jazz Trio 合掛，池中已有 GJT 卡，第 258 條）、`422ff78e`《演歌の祭典》1969（演歌伴奏）、`1a907384`《Special Pink Mood Deluxe Vol.2》1969（Compilation）、`ca9d9f91`《歌のない流行歌150》2014（Compilation）。",
+  "label": "Trio Records（JP 1994 原盤，⚠ 目錄編號本批未查得，研究層請補）；CD 再發 Octave Lab. OTLCD-2590／Trio OTLCD-2590（JP 2023-06-07 CD 6 軌，MB release 815ced5f）與 Trio 數位 6 軌（XW，無日期）；HMV 另掛 ABCJ-463 的再發編號"
+ },
+ {
+  "g": "b",
+  "artist": "宮沢昭",
+  "album": "山女魚",
+  "year": 1962,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Akira Miyazawa；Miyazawa Akira；YAMAME；Yamame；宮澤昭；宮沢昭 山女魚；Akira Miyazawa Yamame",
+  "reissuedBy": "KING（JP 2012-12-05 CD KICJ 2278，7 軌，barcode 4988003423032，KING LEGENDARY JAZZ COLLECTION 系列）；Think! Records 另有 THCD-39 的 CD 版；Apple jp 官方條目《YAMAME》collectionId 1777008409（7 軌，1962-10-01）",
+  "why": "宮沢昭的**第一張領銜專輯**，1962 年 5 月 7 日與 14 日在日本都市センターホール錄音、King 以 SKJ-1001（立體聲）／KC-20（單聲道）發行，獲《スイングジャーナル》金唱片。A 面四曲是四重奏、B 面三曲是九人編制，客座包含 **渡辺貞夫（as, fl）**，選曲是宮沢與八木正生的原創加標準曲與 John Coltrane 的曲目——這是日本現代爵士史上最常被點名的幾張之一，也是 `batch-progress/enum/jp-1.md` 在 King 那一段第一個列出來的缺口。實掃 `seed_cards.json` 全 16,450 列（宮沢昭／宮澤昭／Miyazawa／Akira 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `宮沢昭《いわな》1969`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。簡報方向寫「宮沢昭走 1950–60 年代的日本コロムビア／Takt」，但 MB 在那一段他名下只建了這張 King 盤，所以這張是本批唯一能代表他 1960 年代的一筆。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `宮沢昭`（不是「宮澤昭」），依 2026-08-11 東亞藝人名裁定「有漢字照漢字」與第 355 條取實體主名；`Akira Miyazawa`／`Miyazawa Akira` 兩種羅馬字 credit 進 queryAlias，**不新造英文掛名**（第 307 條）。第 307 條反查同字串不同人：池中「宮沢」「Miyazawa」子字串零命中，無合併風險。 撞卡：盤名《山女魚》與《YAMAME》在池中零命中；⚠ **與 c-131 的《いわな》（1969）是同一套魚名系列、不同碟**（いわな＝岩魚、山女魚＝やまめ，Apple 另有英文題《Bull Trout》1969 對應いわな），下游比對不得互相折疊，兩張的 `risk` 互相指向。年份：MB first-release-date 1962、原盤 SKJ-1001 1962、Apple jp 官方條目 1962-10-01，三者一致；錄音 1962-05-07／05-14 寫在此（來源：ja.wikipedia《山女魚 (宮沢昭のアルバム)》條目，研究層請覆核）。⚠ **封面要走非 CAA 路線**：CAA release-group 端點實測 **404**，但 **Apple jp 有 King 自家的官方條目 `1777008409`（7 軌，與 MB 的 7 軌一致）**——依 §4 的 `apple-verified-collection` 例外（2026-09-10 店主核定，釘得住 MBID 的卡也適用），本機可用它當封面來源，要件是記下 collectionId 與那一頁的 HTTPS 網址。這是 search 與藝人目錄兩種查法的觀察，不是結論（第 254 條）。⚠ MB 這個 RG 的 artist-credit 是羅馬字「Akira Miyazawa」，卡片依第 355 條取實體主名漢字。",
+  "mbNote": "釘 release-group 63cd7c36-f5bc-4712-8551-9f857f5efddd。回問 release-group 端點（inc=artist-credits+releases）：title「山女魚」、artist-credit「Akira Miyazawa」（實體 59e0a0d4）、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：3d50d949（JP 1962 Official 12\" Vinyl 7 軌，KING SKJ 1001）、e6fffdeb（JP 2012-12-05 Official CD 7 軌，KING KICJ 2278，barcode 4988003423032）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Akira Miyazawa，entities「KING」，why「rg-tag」）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。",
+  "label": "KING SKJ-1001（JP 1962 12 吋黑膠立體聲 7 軌，MB release 3d50d949 Official）；單聲道同源盤 KING KC-20；CD 再發 KING KICJ 2278（JP 2012-12-05 7 軌，barcode 4988003423032，KING LEGENDARY JAZZ COLLECTION）；另有 Think! Records THCD-39"
+ },
+ {
+  "g": "b",
+  "artist": "宮沢昭",
+  "album": "Four Units",
+  "year": 1969,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Akira Miyazawa；Miyazawa Akira；フォー・ユニッツ；宮沢昭 佐藤允彦 富樫雅彦 荒川康男；Four Units Japanese Jazz Men Series Vol. 3",
+  "reissuedBy": "Le Très Jazz Club（FR，2020 首度以 gatefold 規格復刻黑膠）；Apple us 上架《Four Units - Japanese Jazz Men Series Vol. 3》collectionId 1540555407（2020-11-27，5 軌，credit 為四人平列）",
+  "why": "1969 年 4 月 2 日與 25 日在テイチク會館第一錄音室錄的四重奏盤，成員是 **宮沢昭（ts, fl）、佐藤允彦（p）、荒川康男（b）、富樫雅彦（ds）**——日本現代爵士在 1969 年最強的一組陣容，盤名《Four Units》講的就是四個各自獨立的聲音。這張是「Japanese Jazz Men Series」的第三集，2020 年被法國 Le Très Jazz Club 首度以 gatefold 復刻，diskunion 與 JET SET 的條目都把它當成 1969 年的傑作。實掃 `seed_cards.json` 全 16,450 列（宮沢昭／宮澤昭／Miyazawa／Akira 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `宮沢昭《いわな》1969`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。它與 c-131 已收的《いわな》同年，兩張一起把宮沢昭最被引用的 1969 年補齊。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `宮沢昭`（不是「宮澤昭」），依 2026-08-11 東亞藝人名裁定「有漢字照漢字」與第 355 條取實體主名；`Akira Miyazawa`／`Miyazawa Akira` 兩種羅馬字 credit 進 queryAlias，**不新造英文掛名**（第 307 條）。第 307 條反查同字串不同人：池中「宮沢」「Miyazawa」子字串零命中，無合併風險。 撞卡：盤名在池中零命中，但「Four Units」是通用詞組，下游要鎖 rgMbid。⚠ **MB 端未登記廠牌**（依 c-132 簡報第二節第 2 點照收）：release 端點（`release?release-group=…&inc=media+labels`，第 259 條）回的 `label-info` **是空陣列**——不是問錯端點，是真的沒有。實體盤面是 **ユニオン／テイチク（Union Records）UPS-2008-J**（來源：Discogs release 7438580／master 881382 與 diskunion 條目），已寫進 `label`；`batch-progress/enum/jp-union.json` 也把宮沢昭另一張 1969 年的 Union 盤《ミュージカル・プレイ・イン・ジャズ》列在同一家底下，可互相佐證。⚠ **MB 的載體欄寫「12\" Shellac」×5** ——1969 年不可能是蟲膠，那是 MB 端的資料錯誤，實體是 12 吋黑膠 LP；`status` 欄同樣是 null。⚠ **盤面是四人聯名**（Discogs 的 artist 欄就是「宮沢昭 / 佐藤允彦 / 富樫雅彦 / 荒川康男」，Apple us 也是四人平列），但 **MB RG credit 只掛「宮沢昭」單人**，依第 355 條掛單人、不構成第 321 條的合掛分裂；⚠ **跨批撞卡風險：`佐藤允彦` 是 c-132 a 組的掛名（本批 5 張）**，若 a 組也挑這張，`chk-prop` 的折疊鍵是掛名＋盤名、**掛名不同不會亮燈**，已寫進 rulings 第 386 條並在交件時人工比對 a 組名單。封面：CAA release-group 端點 **404**；Apple **us 有 1540555407**（5 軌，與 MB 的 5 軌一致）、jp 兩種查法皆 0 筆——走 `apple-verified-collection` 要用 us 店面。年份：MB 1969-04-25，與錄音日 1969-04-02／04-25 重疊，研究層要分清那是錄音日還是發行日。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 9e764a87-1b61-482e-88e8-15d560124462。回問 release-group 端點：title「Four Units」、artist-credit「宮沢昭」（漢字，實體 59e0a0d4）、first-release-date 1969-04-25、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：a87b2c29（JP 1969-04-25，status **null**，媒體欄「12\" Shellac」×5 軌，**label-info 空陣列、無 catno、無 barcode**）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。",
+  "label": "ユニオン／テイチク（Union Records）UPS-2008-J（JP 1969 12 吋黑膠 5 軌）——⚠ **MB release a87b2c29 的 label-info 是空陣列（資料庫端未登記廠牌）**，廠牌與目錄編號取自 Discogs release 7438580／master 881382 與 diskunion 條目；2020 年由 Le Très Jazz Club（FR）首度 gatefold 復刻黑膠"
+ },
+ {
+  "g": "b",
+  "artist": "宮沢昭",
+  "album": "Love For Sale",
+  "year": 1967,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Akira Miyazawa；Miyazawa Akira；ラヴ・フォー・セール；宮澤昭；宮沢昭 Love For Sale；Akira Miyazawa Love For Sale",
+  "reissuedBy": "（本批查無官方再發；MB 轄下只有 1978 年 RCA 原盤一筆，Apple jp／us 兩種查法皆未命中本盤）",
+  "label": "RCA RVL-5523（JP 1978 12 吋黑膠 10 軌，MB release 4a6003cf Official）",
+  "why": "宮沢昭 1978 年在 RCA（日本ビクター系）的領銜盤，十軌，是他 1969 年《いわな》《Four Units》那組 Union 盤之後、1980 年代 NEXT WAVE／ユニオン／Paddle Wheel 三張之前的一張，補的是他目錄裡整個 1970 年代的空檔。實掃 `seed_cards.json` 全 16,450 列（宮沢昭／宮澤昭／Miyazawa／Akira 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `宮沢昭《いわな》1969`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。店主 2026-09-15 要求「重點專輯 5–10 張」，宮沢昭在 MB 上建得起來的個人領銜盤共九張，本批取其中年代分布最開的六張（1962／1969／1978／1981／1982／1985），這張是 1970 年代唯一的一筆。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `宮沢昭`（不是「宮澤昭」），依 2026-08-11 東亞藝人名裁定「有漢字照漢字」與第 355 條取實體主名；`Akira Miyazawa`／`Miyazawa Akira` 兩種羅馬字 credit 進 queryAlias，**不新造英文掛名**（第 307 條）。第 307 條反查同字串不同人：池中「宮沢」「Miyazawa」子字串零命中，無合併風險。 撞卡：盤名在池中零命中，但 **「Love For Sale」是 Cole Porter 標準曲、同名盤極多，池中實際存在 `Boney M. — Love for Sale`**（實掃確認，掛名不同所以 `chk-prop` 不亮燈）（Apple 前五筆全是 Tony Bennett & Lady Gaga、Kitty Kallen、Great Jazz Trio 等），下游比對必須鎖 rgMbid、不得鎖盤名。年份：MB first-release-date 1978、轄下唯一 release 就是 1978 年 RVL-5523 原盤，無再發失真。封面：CAA release-group 端點 **200**（實測）。⚠ **店面觀察**：Apple jp／us 的 search 與藝人目錄兩種查法**都沒有本盤**（藝人目錄 1370709057 的 7 筆裡沒有它）——1970 年代 RCA／Victor 系日本爵士在 Apple 上的空白，與本批《Another Departure》同形（c-116 第 6 條、c-131 第 359 條那條規律）。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 63193b6e-c359-4a45-94fb-a9f0787f14cb。回問 release-group 端點（inc=artist-credits+releases）：title「Love For Sale」、artist-credit「Akira Miyazawa」（實體 59e0a0d4）、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：4a6003cf（JP 1978 Official 12\" Vinyl 10 軌，RCA RVL-5523）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）"
+ },
+ {
+  "g": "b",
+  "artist": "宮沢昭",
+  "album": "My Piccolo: Live at Nagoya Yamaha Jazz Club",
+  "year": 1981,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Akira Miyazawa；Miyazawa Akira；マイ・ピッコロ；My Piccolo；宮沢昭 マイ・ピッコロ；Live at Nagoya Yamaha Jazz Club",
+  "reissuedBy": "（本批查無官方再發；MB 轄下只有 1981 年 NEXT WAVE 原盤一筆）",
+  "label": "NEXT WAVE 28PJ-1003（JP 1981 12 吋黑膠 7 軌，MB release 5007e01d Official）",
+  "why": "1981 年在名古屋 Yamaha Jazz Club 的現場盤，盤名《My Piccolo》直接點出宮沢昭晚期最個人的樂器選擇——他是日本第一代裡少數把短笛與長笛當主奏的次中音手。NEXT WAVE 這個編號段同時發過 **松本英彦與 The Great Jazz Trio 的《The Session》（25PJ-1004，1980）**，兩張是同一家廠牌同一段時間的碟，本批同時把這兩位第一代薩克斯風手的 1980 年前後接上。實掃 `seed_cards.json` 全 16,450 列（宮沢昭／宮澤昭／Miyazawa／Akira 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `宮沢昭《いわな》1969`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `宮沢昭`（不是「宮澤昭」），依 2026-08-11 東亞藝人名裁定「有漢字照漢字」與第 355 條取實體主名；`Akira Miyazawa`／`Miyazawa Akira` 兩種羅馬字 credit 進 queryAlias，**不新造英文掛名**（第 307 條）。第 307 條反查同字串不同人：池中「宮沢」「Miyazawa」子字串零命中，無合併風險。 撞卡：盤名在池中零命中。⚠ **`secondary-types` 含 `Live`——依第 253 條收，但要標**：本盤是現場錄音，演奏地點是名古屋ヤマハ・ジャズクラブ，**MB 未登記演奏日期**（release 的 date 只有年份 1981），研究層要另找演出日。年份：MB first-release-date 1981、轄下唯一 release 即 1981 原盤；依第 364 條第二型（現場盤的錄音年與發行年）本張兩者同年，無分歧。封面：CAA release-group 端點 **200**（實測）。⚠ **店面觀察**：Apple jp／us 的 search 與藝人目錄兩種查法**都 0 筆**——NEXT WAVE 這家小廠的目錄在 Apple 上全空。只寫觀察不下結論（第 254 條）。⚠ 盤名很長且含冒號，卡面顯示要注意；`chk-prop` 的非 ASCII 連字號檢查不會亮燈（冒號與空白都是 ASCII）。",
+  "mbNote": "釘 release-group 5431fc8c-06e9-4ead-9b62-540681b21caf。回問 release-group 端點：title「My Piccolo: Live at Nagoya Yamaha Jazz Club」、artist-credit「Akira Miyazawa」、first-release-date 1981、primary-type Album、**secondary-types [\"Live\"]**、轄下 1 個 release。release 端點（inc=media+labels）：5007e01d（JP 1981 Official 12\" Vinyl 7 軌，NEXT WAVE 28PJ-1003）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）"
+ },
+ {
+  "g": "b",
+  "artist": "宮沢昭",
+  "album": "On Green Dolphin Street",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Akira Miyazawa；Miyazawa Akira；オン・グリーン・ドルフィン・ストリート；宮沢昭 Union Jazz；Akira Miyazawa On Green Dolphin Street",
+  "reissuedBy": "（本批查無官方再發；MB 轄下只有 1982 年 Union Jazz 原盤一筆）",
+  "label": "Union Jazz ULP-7002（JP 1982 12 吋黑膠 6 軌，MB release e9d2daa1 Official）",
+  "why": "1982 年ユニオン（Union Jazz）的領銜盤，編號 ULP-7002。宮沢昭 1969 年的《Four Units》與《ミュージカル・プレイ・イン・ジャズ》就是ユニオン系的碟，這張等於他隔了十三年回到同一家廠牌——`batch-progress/enum/jp-union.json` 裡他名下只有這兩筆，本批各取一張，把ユニオン這條線的頭尾都補上。實掃 `seed_cards.json` 全 16,450 列（宮沢昭／宮澤昭／Miyazawa／Akira 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `宮沢昭《いわな》1969`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `宮沢昭`（不是「宮澤昭」），依 2026-08-11 東亞藝人名裁定「有漢字照漢字」與第 355 條取實體主名；`Akira Miyazawa`／`Miyazawa Akira` 兩種羅馬字 credit 進 queryAlias，**不新造英文掛名**（第 307 條）。第 307 條反查同字串不同人：池中「宮沢」「Miyazawa」子字串零命中，無合併風險。 撞卡：盤名在池中零命中，但 **「On Green Dolphin Street」是爵士標準曲、同名盤極多**（Bill Evans、Vince Guaraldi、The Three Sounds、Albert Ayler、Jimmy Heath 都有），下游比對必須鎖 rgMbid。年份：MB first-release-date 1982、轄下唯一 release 即 1982 原盤 ULP-7002，無再發失真。封面：CAA release-group 端點 **200**（實測）。⚠ **店面觀察**：Apple jp／us 兩種查法皆未命中本盤（搜出來的全是同名的他人專輯，逐筆核掛名後排除）。⚠ **人員未證實**：一則二手資料稱本盤的三重奏是 佐藤允彦（p）／井野信義（b）／日野元彦（ds），本批**未取得可引用的一手來源**，研究層寫簡介前必須自行覆核，不得直接引用（第 241／250 條：查不到就不得寫）。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 66f06f89-29e7-4e87-8a75-e94999c395b6。回問 release-group 端點：title「On Green Dolphin Street」、artist-credit「Akira Miyazawa」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：e9d2daa1（JP 1982 Official 12\" Vinyl 6 軌，Union Jazz ULP-7002）。列舉檔命中：`batch-progress/enum/jp-union.json`（labelYear 1982，entity 3e1c0dbe-0b4f-43d8-b61e-ffdd9dd0e97c）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）"
+ },
+ {
+  "g": "b",
+  "artist": "宮沢昭",
+  "album": "'Round Midnight - Amazing Jazz Ballad",
+  "year": 1985,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Akira Miyazawa；Miyazawa Akira；Round Midnight；ラウンド・ミッドナイト；宮沢昭 Paddle Wheel；Amazing Jazz Ballad",
+  "reissuedBy": "Apple jp 官方條目《Round Midnight》collectionId 1777008777（1985-07-21，8 軌，掛「宮沢 昭」）——與 MB 的 8 軌、1985-07-21 完全一致；MB 未建這筆數位 release。",
+  "label": "Paddle Wheel K28P-6358（JP 1985-07-21 12 吋黑膠 8 軌，MB release 889dc034 Official；Paddle Wheel 是 King Records 的爵士系列）",
+  "why": "1985 年 King 旗下 Paddle Wheel 的抒情曲集，盤名副題就寫明是「Amazing Jazz Ballad」——宮沢昭晚期把次中音的音色本身當成主題的一張。`batch-progress/enum/jp-king.json` 在 Paddle Wheel 那一段只列到他這一筆（why「artist-tag」、note「藝人池中有1張(盤名未比中)」），是列舉線直接命中的碟。實掃 `seed_cards.json` 全 16,450 列（宮沢昭／宮澤昭／Miyazawa／Akira 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `宮沢昭《いわな》1969`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。它與 1962《山女魚》（同為 King 系）一頭一尾，把他在 King 的二十三年接起來。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `宮沢昭`（不是「宮澤昭」），依 2026-08-11 東亞藝人名裁定「有漢字照漢字」與第 355 條取實體主名；`Akira Miyazawa`／`Miyazawa Akira` 兩種羅馬字 credit 進 queryAlias，**不新造英文掛名**（第 307 條）。第 307 條反查同字串不同人：池中「宮沢」「Miyazawa」子字串零命中，無合併風險。 撞卡：盤名在池中零命中，但 **《’Round Midnight》是 Thelonious Monk 的標準曲、同名盤極多**（Linda Ronstadt、Chet Baker 以及多組古典改編團），下游必須鎖 rgMbid。⚠ **盤名的前導撇號是 ASCII（U+0027）、連字號是 ASCII（U+002D）**，已逐字檢查，`chk-prop` 不會亮燈；Apple 的條目把撇號整個省略寫成「Round Midnight」，已進 queryAlias。年份：MB first-release-date **1985-07-21**、原盤 K28P-6358 同日、Apple jp 官方條目也是 1985-07-21，三者一致，是本組年份最乾淨的一張。封面：CAA release-group 端點 **200**（實測）。Apple jp search 與藝人目錄兩種查法皆命中 1777008777（8 軌與 MB 一致），us 兩種查法皆未命中本盤——只是觀察，不是結論（第 254 條）。",
+  "mbNote": "釘 release-group 8e076914-562b-4c43-bf36-d422286417a1。回問 release-group 端點：title「'Round Midnight - Amazing Jazz Ballad」、artist-credit「Akira Miyazawa」、first-release-date 1985-07-21、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：889dc034（JP 1985-07-21 Official 12\" Vinyl 8 軌，Paddle Wheel K28P-6358）。列舉檔命中：`batch-progress/enum/jp-king.json`（entities「Paddle Wheel」）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）"
+ },
+ {
+  "g": "b",
+  "artist": "白木秀雄",
+  "album": "白木秀雄",
+  "year": 1959,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Hideo Shiraki；HIDEO SHIRAKI；白木秀雄クインテット；Hideo Shiraki Quintet；白木秀雄 KC-8；シラキヒデオ",
+  "reissuedBy": "Think! Records（JP 2007-11-23 CD THCD-064，9 軌）；KING（JP 2012-07-11 CD KICJ-2241，9 軌，barcode 4988003422660）；Apple jp 官方條目《HIDEO SHIRAKI》collectionId 1777020927（9 軌，1959-06-01）",
+  "why": "白木秀雄（1933–1972）的**第一張領銜專輯**，King KC-8，1958 年 11 月 26／27 日單聲道錄音、1959 年發行，九軌。他是 1950 年代末到 1960 年代日本最紅的鼓手（1965 年帶團上 Berlin Jazz Festival、留下 c-131 已收的《Sakura Sakura》），這張同名盤就是那條線的起點。實掃 `seed_cards.json` 全 16,450 列（白木／白木秀雄／Shiraki／Hideo 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `白木秀雄クインテット＆スリー琴ガールズ《Sakura Sakura》1965`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。簡報方向寫「白木秀雄走 1961–68 Teichiku／Columbia」，但 MB 在他名下建得起原盤的其實集中在 **King 1958–62 那四張**，本批因此以 King 四張＋Teichiku《祭りの幻想》一張收滿五張，理由寫在 rulings。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `白木秀雄`，依 2026-08-11 東亞藝人名裁定與第 355 條取實體主名，`Hideo Shiraki` 進 queryAlias，**不新造英文掛名**。第 307 條反查同字串不同人：池中「白木」「Shiraki」子字串零命中，無合併風險；但 MB 上「白木」開頭的同名他人有九位（白木みのる、白木治信、白木優子…），查藝人時不可只用姓。⚠ **編制掛名**：c-131 已把 `白木秀雄クインテット＆スリー琴ガールズ` 收進池（第 354 條，全形＆照 MB 原文），本批依各 RG 所屬實體決定——掛在個人實體 `40d40a8c` 的寫 `白木秀雄`，掛在 `ee00ecfa` 的寫 `白木秀雄クインテット`，**同一張碟不得因編制寫法不同被收兩次**。 ⚠ **年份改判 1959，不取 MB 的 1958**（第 364 條第二型：錄音年被當成發行年）：MB release `0dd4abf6` 的 date 是 1958，但 ja.wikipedia 白木秀雄條目記「初リーダー・アルバム『白木秀雄』(King KC-8) は 1958 年 11 月 26～27 日のモノラル録音で、**1959 年にリリース**」，Apple jp 的 King 官方條目也記 **1959-06-01**（collectionId 1777020927，9 軌，與 MB 的 9 軌一致）——兩個獨立來源都指向 1959，錄音年 1958-11-26／27 寫在此。撞卡：盤名與掛名同字串（`selfTitled: true`），池中零命中；⚠ **同名盤名＋同名掛名**在下游比對是最危險的形狀，必須鎖 rgMbid。⚠ **重複 RG**：MB 另有 `8c4f6561`《白木秀雄》2007-11-23（Think! THCD-064，CAA 200）是同一張碟的第二個 RG，本卡釘的是有 1958 原盤 release 的 `da7146b8`。⚠ **封面**：`da7146b8` 的 CAA release-group 端點 **404**，但**同碟的重複 RG `8c4f6561` 是 200**——本機補圖時可從那個 RG 取；Apple jp 另有官方條目 1777020927 可走 `apple-verified-collection`（§4 2026-09-10 放寬）。⚠ MB 的 1958 那筆 release `status` 是 null，2012 KING CD 那筆的 label-info 寫成 `[no label] KICJ-2241`（依第 262 條，`[no label]` 是陣列裡真的有一筆而廠牌名為空，不是問錯端點），實體是 King。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group da7146b8-38e8-478b-8f29-5204a1e15bbd。回問 release-group 端點（inc=artist-credits+releases）：title「白木秀雄」、artist-credit「白木秀雄」（漢字，實體 40d40a8c）、first-release-date 1958、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：0dd4abf6（JP 1958，status null，12\" Vinyl 9 軌，KING KC-8，release 題「Hideo Shiraki」）、9c55dea7（JP 2012-07-11 Official CD 9 軌，[no label] KICJ-2241，barcode 4988003422660）、bd76cb5c（JP 2007-11-23，status null，CD 9 軌，Think! Records THCD-064）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist「白木秀雄」，year 1958，entities「KING」，why「rg-tag」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+  "label": "KING KC-8（JP 1958-11-26／27 單聲道錄音、1959 發行，12 吋黑膠 9 軌，MB release 0dd4abf6，status null）；CD 再發 Think! Records THCD-064（JP 2007-11-23）與 KING KICJ-2241（JP 2012-07-11，barcode 4988003422660）"
+ },
+ {
+  "g": "b",
+  "artist": "白木秀雄",
+  "album": "白木秀雄リサイタル",
+  "year": 1959,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hideo Shiraki；HIDEO SHIRAKI RECITAL；Recital At Sankei Hall, Tokyo；白木秀雄クインテット；Hideo Shiraki Quintet；白木秀雄 リサイタル",
+  "reissuedBy": "Think! Records（JP 2007-11-23 CD THCD-067，6 軌，barcode 4988044611610）；KING（JP 2012-07-11 CD KICJ 2242，6 軌，barcode 4988003422677）；Apple jp 官方條目《HIDEO SHIRAKI RECITAL - EP》collectionId 1777021265（6 軌，1959-11-01）",
+  "why": "1959 年在東京產經會館（Sankei Hall）的實況錄音，King 以 10 吋 LKF 1051 發行——1959 年的日本爵士現場盤本身就稀少，而這張是白木秀雄同名首作（King KC-8）之後隔幾個月就推出的第二張，等於把他當時最紅的現場狀態留了下來（MB 1959 那筆 release 的題名就直接寫 Recital At Sankei Hall, Tokyo）。實掃 `seed_cards.json` 全 16,450 列（白木／白木秀雄／Shiraki／Hideo 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `白木秀雄クインテット＆スリー琴ガールズ《Sakura Sakura》1965`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。本批以 King 1958–63 的四張為主軸，這張是其中唯一的現場盤。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `白木秀雄`，依 2026-08-11 東亞藝人名裁定與第 355 條取實體主名，`Hideo Shiraki` 進 queryAlias，**不新造英文掛名**。第 307 條反查同字串不同人：池中「白木」「Shiraki」子字串零命中，無合併風險；但 MB 上「白木」開頭的同名他人有九位（白木みのる、白木治信、白木優子…），查藝人時不可只用姓。⚠ **編制掛名**：c-131 已把 `白木秀雄クインテット＆スリー琴ガールズ` 收進池（第 354 條，全形＆照 MB 原文），本批依各 RG 所屬實體決定——掛在個人實體 `40d40a8c` 的寫 `白木秀雄`，掛在 `ee00ecfa` 的寫 `白木秀雄クインテット`，**同一張碟不得因編制寫法不同被收兩次**。 撞卡：盤名在池中零命中。⚠ **`secondary-types` 含 `Live`——依第 253 條收，但要標**：本盤是產經會館現場錄音，**MB 未登記演出日期**（1959 那筆 release 的 date 只有年份），研究層要另找。⚠ **載體是 10 吋、只有 6 軌**，Apple 因此把它標成「- EP」（collectionId 1777021265）——但 MB primary-type 是 Album，依第 253／227 條欄位本身不是判準，以 MB 為準。年份：MB first-release-date 1959、原盤 LKF 1051 1959、Apple jp 官方條目 1959-11-01，三者一致。封面：CAA release-group 端點 **200**（實測）。⚠ **重複 RG**：MB 另有 `4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有一筆數位 release、掛 `ee00ecfa` 白木秀雄クインテット、CAA 404），是同一張碟的第二個 RG，本卡釘的是有 1959 原盤的 `f59e3eb2`。⚠ 2012 KING CD 那筆的 label-info 同時出現「KING KICJ 2242」與「[no label] KICJ-2242」兩筆（第 262 條的形狀，實體是 King）。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group f59e3eb2-a598-42c5-b263-70636a3318a9。回問 release-group 端點（inc=artist-credits+releases）：title「白木秀雄リサイタル」、artist-credit「白木秀雄」（漢字，實體 40d40a8c）、first-release-date 1959、primary-type Album、**secondary-types [\"Live\"]**、轄下 3 個 release。release 端點（inc=media+labels）：c9dafe3b（JP 1959，status null，10\" Vinyl 6 軌，KING LKF 1051，release 題「Recital At Sankei Hall, Tokyo」）、5473d3d3（JP 2007-11-23 Official CD 6 軌，Think! Records THCD-067）、b9659ff6（JP 2012-07-11 Official CD 6 軌，KING KICJ 2242／[no label] KICJ-2242）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Hideo Shiraki，live true，entities「KING」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+  "label": "KING LKF 1051（JP 1959 10 吋黑膠 6 軌，現場錄音，MB release c9dafe3b，status null，release 題「Recital At Sankei Hall, Tokyo」）；CD 再發 Think! Records THCD-067（JP 2007-11-23，barcode 4988044611610）與 KING KICJ 2242（JP 2012-07-11，barcode 4988003422677）"
+ },
+ {
+  "g": "b",
+  "artist": "白木秀雄",
+  "album": "プレイズ・ボッサ・ノバ",
+  "year": 1963,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hideo Shiraki；Plays Bossa Nova；HIDEO SHIRAKI plays Bossa Nova；白木秀雄プレイズ・ボッサ・ノバ；白木秀雄クインテット；Hideo Shiraki Quintet",
+  "reissuedBy": "Think! Records（JP 2007-11-23 CD THCD-065，7 軌，barcode 4988044611597）；KING（JP 2012-07-11 CD KICJ 2244，7 軌，barcode 4988003422691）；Apple jp 官方條目《HIDEO SHIRAKI plays Bossa Nova》collectionId 1777007454（7 軌，1963-01-20）",
+  "why": "King SKJ 1007，白木秀雄在 bossa nova 剛傳進日本那兩年錄的一張——1962 年 Getz／Gilberto 熱潮席捲全球，日本這邊由當時最紅的鼓手直接把它做成一整張專輯，是和製爵士對巴西節奏最早的正面回應之一。它與同一號段的 SKJ 1006《Plays Horace Silver》（本批同收）是一對：一張追 Blue Note 的 funky hard bop、一張追里約，兩張合起來就是 1962–63 年日本爵士的兩個方向。實掃 `seed_cards.json` 全 16,450 列（白木／白木秀雄／Shiraki／Hideo 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `白木秀雄クインテット＆スリー琴ガールズ《Sakura Sakura》1965`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `白木秀雄`，依 2026-08-11 東亞藝人名裁定與第 355 條取實體主名，`Hideo Shiraki` 進 queryAlias，**不新造英文掛名**。第 307 條反查同字串不同人：池中「白木」「Shiraki」子字串零命中，無合併風險；但 MB 上「白木」開頭的同名他人有九位（白木みのる、白木治信、白木優子…），查藝人時不可只用姓。⚠ **編制掛名**：c-131 已把 `白木秀雄クインテット＆スリー琴ガールズ` 收進池（第 354 條，全形＆照 MB 原文），本批依各 RG 所屬實體決定——掛在個人實體 `40d40a8c` 的寫 `白木秀雄`，掛在 `ee00ecfa` 的寫 `白木秀雄クインテット`，**同一張碟不得因編制寫法不同被收兩次**。 ⚠ **年份改判 1963，不取 MB 的 1962**：MB release `b22363b1`（KING SKJ 1007）的 date 只有年份「1962」且 status 為 null，而 **Apple jp 的 King 官方條目記精確日期 1963-01-20**（collectionId 1777007454，7 軌，與 MB 的 7 軌一致）。同一號段的旁證支持 1963：SKJ 1001《山女魚》Apple 記 1962-10-01、SKJ 1006《Plays Horace Silver》Apple 記 1962-10-30、SKJ 1007 記 1963-01-20 —— **號碼遞增、日期遞增，而且前兩筆的年份與 MB 完全一致，只有這一筆分歧**，所以分歧的是 MB 那個「只有年份、可能是推得的」欄位。依第 364 條逐張判、取精確日期那一方；**MB 的 1962 已寫在此供研究層覆核**。撞卡：盤名在池中零命中；⚠ MB 另有 `aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/**Compilation**）是同源的第三個 RG，本卡刻意不釘，下游要鎖 rgMbid 不鎖盤名。封面：CAA release-group 端點 **200**（實測）。Apple jp search 與藝人目錄兩種查法皆命中 1777007454，us 兩種查法皆 0 筆——只是觀察（第 254 條）。",
+  "mbNote": "釘 release-group 5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c。回問 release-group 端點：title「プレイズ・ボッサ・ノバ」、artist-credit「白木秀雄」（漢字，實體 40d40a8c）、first-release-date **1962**（⚠ 只有年份，本卡改取 1963，理由見 risk）、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：b22363b1（JP 1962，status null，12\" Vinyl 7 軌，KING SKJ 1007，release 題「Plays Bossa Nova」）、bb990139（JP 2007-11-23 Official CD 7 軌，Think! Records THCD-065）、d3702f6b（JP 2012-07-11，status null，CD 7 軌，KING KICJ 2244）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Hideo Shiraki，year 1962，entities「KING」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+  "label": "KING SKJ 1007（JP 1963 12 吋黑膠 7 軌，MB release b22363b1，status null；⚠ MB 的日期欄只寫「1962」，本卡取 Apple jp King 官方條目的 1963-01-20）；CD 再發 Think! Records THCD-065（JP 2007-11-23，barcode 4988044611597）與 KING KICJ 2244（JP 2012-07-11，barcode 4988003422691）"
+ },
+ {
+  "g": "b",
+  "artist": "白木秀雄クインテット",
+  "album": "Plays Horace Silver",
+  "year": 1962,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "白木秀雄；Hideo Shiraki；Hideo Shiraki Quintet；プレイズ・ホレス・シルヴァー；HIDEO SHIRAKI plays HORACE SILVER；白木秀雄クインテット プレイズ・ホレス・シルヴァー",
+  "reissuedBy": "Think! Records（JP 2007-11-23 CD THCD-066《プレイズ・ホレス・シルヴァー》，7 軌，barcode 4988044611603——MB 另立為 RG `2e1f5df4`）；KING（JP 2012-07-11 CD KICJ 2243，7 軌，barcode 4988003422684）；Apple jp 官方條目《HIDEO SHIRAKI plays HORACE SILVER》collectionId 1777007028（7 軌，1962-10-30）",
+  "why": "King SKJ 1006，整張只彈 Horace Silver 的曲目——1962 年的日本爵士要證明自己能打，最直接的方式就是拿當時 Blue Note 最硬的那位作曲家的曲目整張翻過一遍，這張就是那個宣言。它與同號段的 SKJ 1007《プレイズ・ボッサ・ノバ》（本批同收）是一對，也是 `batch-progress/enum/jp-king.json` 在 King 50–60 年代那一段列出來的四張白木盤之一。實掃 `seed_cards.json` 全 16,450 列（白木／白木秀雄／Shiraki／Hideo 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `白木秀雄クインテット＆スリー琴ガールズ《Sakura Sakura》1965`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `白木秀雄`，依 2026-08-11 東亞藝人名裁定與第 355 條取實體主名，`Hideo Shiraki` 進 queryAlias，**不新造英文掛名**。第 307 條反查同字串不同人：池中「白木」「Shiraki」子字串零命中，無合併風險；但 MB 上「白木」開頭的同名他人有九位（白木みのる、白木治信、白木優子…），查藝人時不可只用姓。⚠ **編制掛名**：c-131 已把 `白木秀雄クインテット＆スリー琴ガールズ` 收進池（第 354 條，全形＆照 MB 原文），本批依各 RG 所屬實體決定——掛在個人實體 `40d40a8c` 的寫 `白木秀雄`，掛在 `ee00ecfa` 的寫 `白木秀雄クインテット`，**同一張碟不得因編制寫法不同被收兩次**。 ⚠ **本卡掛「白木秀雄クインテット」而非「白木秀雄」**：這個 RG 掛在 MB 群組實體 `ee00ecfa`（白木秀雄クインテット，alias「Hideo Shiraki Quintet」）底下，credit 也是英文「Hideo Shiraki Quintet」，依第 354／355 條取**實體主名的漢字＋片假名編制**寫法（先例：池中 峰厚介クインテット、c-131 的 白木秀雄クインテット＆スリー琴ガールズ）。⚠ **這使白木秀雄在池中會有三個掛名字串**（白木秀雄／白木秀雄クインテット／白木秀雄クインテット＆スリー琴ガールズ），是簡報第六節第 1 點點名的形狀——**但三者對應 MB 三個不同實體，不是分裂的重複**；已逐張核過，**同一張碟沒有被兩種寫法各收一次**。撞卡：盤名「Plays Horace Silver」在池中零命中，但是描述性盤名，要鎖 rgMbid。⚠ **重複 RG**：MB 另有 `2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（Think! THCD-066，掛個人實體，**CAA 200**）是同一張碟的第二個 RG，本卡釘的是有 1962 原盤 release 的 `7ce34993`。⚠ **封面**：`7ce34993` 的 CAA release-group 端點 **404**，但同碟的 `2e1f5df4` 是 **200**——本機補圖可從那個 RG 取；Apple jp 另有官方條目 1777007028（7 軌與 MB 一致）可走 `apple-verified-collection`。年份：MB 1962、原盤 SKJ 1006 1962、Apple jp 1962-10-30，三者一致。⚠ 兩筆 release 的 status 都是 null。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 7ce34993-378f-4c85-9146-8e101c12090c。回問 release-group 端點（inc=artist-credits+releases）：title「Plays Horace Silver」、artist-credit「Hideo Shiraki Quintet」（群組實體 ee00ecfa-2be6-4aea-9316-17c3d61270fe，主名「白木秀雄クインテット」，名下 4 個 RG：`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998、`4b426f75`《HIDEO SHIRAKI RECITAL》、`7ce34993` 本張、`809303fb`《Modern Ameriachi For You》1966）、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：cc8c8b0a（JP 1962，status null，12\" Vinyl 7 軌，KING SKJ 1006）、07e9e0b9（JP 2012-07-11，status null，CD 7 軌，KING KICJ 2243，barcode 4988003422684）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Hideo Shiraki Quintet，entities「KING」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+  "label": "KING SKJ 1006（JP 1962 12 吋黑膠 7 軌，MB release cc8c8b0a，status null）；CD 再發 KING KICJ 2243（JP 2012-07-11，barcode 4988003422684）與 Think! Records THCD-066（JP 2007-11-23，barcode 4988044611603，MB 另立為 RG 2e1f5df4）"
+ },
+ {
+  "g": "b",
+  "artist": "白木秀雄",
+  "album": "祭りの幻想",
+  "year": 1961,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hideo Shiraki；Hideo Shiraki in Fiesta；In Fiesta；祭の幻想；白木秀雄クインテット；Hideo Shiraki Quintet；白木秀雄 祭りの幻想",
+  "reissuedBy": "Think! Records（JP 2005-11-25 CD THCD-006《祭りの幻想》7 軌，barcode 4988044610033；JP 2009-09-25 SHM-CD THCD-100 9 軌，barcode 4988044613805）；Trunk Records（XW 2017-06-15 數位 7 軌，題《Hideo Shiraki in Fiesta》，barcode 5056163063241）；另有 Teichiku 1998-06-24 CD TECW-20735（MB 另立為 RG `3a9a8c2c`）；Apple 官方條目《In Fiesta》collectionId 1255618794（7 軌，2017-06-15）",
+  "why": "白木秀雄 1961 年在テイチク錄的代表作，同時也是他後來 1965 年《Sakura Sakura》（c-131 已收）那條「日本旋律＋箏＋modal jazz」路線的源頭：標題曲〈祭の幻想〉是 八城一夫 1958 年用調式手法寫的曲子，白木的五重奏加上箏（白根きぬ子客座）把它做成整張的核心，同盤還有〈Cherokee〉那種炫技鼓獨奏的曲目。**五重奏的次中音手正是本組另一位掛名 松本英彦**——這張因此是本批四位裡唯一一張把兩位直接接在一起的碟。實掃 `seed_cards.json` 全 16,450 列（白木／白木秀雄／Shiraki／Hideo 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `白木秀雄クインテット＆スリー琴ガールズ《Sakura Sakura》1965`（在 `desc-tools/batches/cards/c131-cards.json`，尚未上架，本批不得重收）。簡報方向點名「白木秀雄走 1961–68 Teichiku／Columbia」，MB 在那一段只有這一張建得起來，所以它是本批唯一的 Teichiku 盤。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `白木秀雄`，依 2026-08-11 東亞藝人名裁定與第 355 條取實體主名，`Hideo Shiraki` 進 queryAlias，**不新造英文掛名**。第 307 條反查同字串不同人：池中「白木」「Shiraki」子字串零命中，無合併風險；但 MB 上「白木」開頭的同名他人有九位（白木みのる、白木治信、白木優子…），查藝人時不可只用姓。⚠ **編制掛名**：c-131 已把 `白木秀雄クインテット＆スリー琴ガールズ` 收進池（第 354 條，全形＆照 MB 原文），本批依各 RG 所屬實體決定——掛在個人實體 `40d40a8c` 的寫 `白木秀雄`，掛在 `ee00ecfa` 的寫 `白木秀雄クインテット`，**同一張碟不得因編制寫法不同被收兩次**。 ⚠ **MB 端未登記原盤與廠牌**（依 c-132 簡報第二節第 2 點照收，並寫實體盤面的廠牌）：本 RG 轄下三筆 release 全是再發（2005／2009 Think!、2017 Trunk 數位），**1961 年テイチク原盤 MB 未建檔**；`label` 欄寫的テイチク SL-3002（另有 TEA-18 的後壓）來自二手唱片行與 tower.jp／STEREO RECORDS 的條目，**研究層必須自行覆核 catno 再引用**。⚠ **年份改判 1961，不取 MB 的 2005-11-25**（第 352 條的同形：MB 轄下只有再發時 first-release-date 不是首發年）；c-131 第 356 條 F 已認定「1961 Teichiku 原盤 MB 未建檔、RG 年份是復刻年」並據此暫不收，本批依 c-132 簡報第二節第 2 點與第四節第 1 點改為**照收並在 risk 寫明**。⚠ **盤名取日文《祭りの幻想》而非 MB 的 RG 標題「Hideo Shiraki in Fiesta」**：後者是 Trunk 2017 數位再發的英文題，三筆 release 裡有兩筆（THCD-006／THCD-100）題的就是《祭りの幻想》，且 1961 原盤與 1998 Teichiku CD 也是這個名字；MB 原題與「In Fiesta」「祭の幻想」全部進 queryAlias。⚠ **重複 RG**：MB 另有 `3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，掛群組實體 `ee00ecfa`，CAA 404）是同一張碟的第二個 RG，本卡釘的是 release 較全、CAA 200 的 `b545a154`；**下游若把兩個 RG 都當成碟，會出現同碟兩張卡**，已寫進 rulings。⚠ **掛名**：盤面是「白木秀雄クインテット」，但本 RG 掛的是個人實體 `40d40a8c`（credit「Hideo Shiraki」），依第 355 條取該實體主名「白木秀雄」；另一個 RG `3a9a8c2c` 才掛群組實體——**同碟兩 RG 分屬兩個實體**，這也是不能兩個都收的理由。⚠ **2009 SHM-CD 是 9 軌、其餘是 7 軌**（多 2 首 bonus），研究層引軌數要先選版本（第 251 條）。封面：CAA release-group 端點 **200**（實測）。Apple：以《祭りの幻想》搜 jp／us 皆 0 筆，改用藝人目錄 900350012 才命中《In Fiesta》1255618794（7 軌，2017-06-15，Trunk 版）——**兩種查法結果不同，正是第 254 條講的那個坑**，只是觀察不是結論。",
+  "mbNote": "釘 release-group b545a154-6a96-4bcb-90bb-ed3e0d692f43。回問 release-group 端點（inc=artist-credits+releases）：title「Hideo Shiraki in Fiesta」、artist-credit「Hideo Shiraki」（個人實體 40d40a8c）、first-release-date **2005-11-25**（⚠ 只建了再發，本卡改取 1961，理由見 risk）、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：6a2a5771（JP 2005-11-25 Official CD 7 軌，[no label] THCD-006，題《祭りの幻想》，barcode 4988044610033）、c2f5745b（JP 2009-09-25 Official SHM-CD 9 軌，[no label] THCD-100，題《祭りの幻想》，barcode 4988044613805）、4f1b0920（XW 2017-06-15 Official Digital Media 7 軌，Trunk Records，barcode 5056163063241）——**三筆的 label-info 都沒有 Teichiku，1961 原盤未建檔**（第 259 條：已用 release 端點回問過，不是問錯端點）。jp-1.md 的 §1 候選清單把本張列在「MB 有 release-group 但沒掛廠牌／只掛再發」那九筆裡（「白木秀雄《In Fiesta》（只掛 Trunk 再發）」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+  "label": "テイチク（Teichiku）SL-3002（JP 1961 12 吋黑膠原盤；另有 TEA-18 的後壓）——⚠ **MB 三筆 release 的 label-info 只有 Think! Records（THCD-006／THCD-100）與 Trunk Records，1961 原盤與テイチク完全未建檔**；廠牌與目錄編號取自 tower.jp／STEREO RECORDS／二手唱片行條目，研究層須覆核。CD 再發 Teichiku TECW-20735（JP 1998-06-24，MB 另立為 RG 3a9a8c2c）、Think! THCD-006（2005-11-25 7 軌）／THCD-100（2009-09-25 SHM-CD 9 軌）、Trunk 數位（XW 2017-06-15 7 軌）"
+ },
+ {
+  "g": "b",
+  "artist": "本田竹広",
+  "album": "It's Great Outside",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "本田竹曠；Takehiro Honda；T. Honda；イッツ・グレイト・アウトサイド；本田竹広 Flying Disk；Takehiro Honda Its Great Outside",
+  "reissuedBy": "（本批查無官方再發；MB 轄下只有 1978 年 Flying Disk 原盤一筆，Apple jp／us 的 search 與藝人目錄兩種查法皆 0 筆）",
+  "label": "Flying Disk VIJ-6014（JP 1978 黑膠 8 軌，MB release 998cd484 Official）",
+  "why": "1978 年 Victor 旗下純爵士廠 Flying Disk 的編號第十四號，八軌，是本田竹広在該廠《Another Departure》（VIJ-6004，1977，本批同收）之後的第二張領銜盤——兩張一起把他離開 Trio Records 之後最重要的那兩年補完整。`batch-progress/enum/jp-victor.json` 把它與《Another Departure》並列在 Flying Disk 的缺口裡（why「artist-tag」、note「藝人池中有2張(盤名未比中)」），是列舉線直接命中的一筆。實掃 `seed_cards.json` 全 16,450 列（本田竹広／本田竹曠／Honda／Takehiro 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有 `本田竹曠《This Is Honda》1972` 一張；c-131 另新增 `本田竹広《Salaam Salaam》1974`（未上架）。店主的標準是「每位重點專輯 5–10 張」，加上這一張之後本田在池中共 8 張（seed 1＋c-131 1＋本批 6），落在區間內。",
+  "risk": "⚠ 掛名分裂（既有）：池中既有卡寫「本田竹曠」、c-131 新卡寫「本田竹広」，依 c-132 簡報第三節與 c-131 第 355 條，本批全部取 MB 實體主名 `本田竹広`，`本田竹曠` 進 queryAlias，**待本機把池中 `本田竹曠《This Is Honda》1972` 一併改寫**（本批不自行合併，第 307 條）。第 307 條反查同字串不同人：池中「本田竹」子字串只命中那一張，MB 另有 `本多俊之`（d00cff50）與 `Toshiyuki Honda`（本多俊之，Electric Bird／EASTWORLD 六張，見 `batch-progress/enum/jp-king.json`、`jp-toshiba.json`）——**那是另一位薩克斯風手，不得混入本掛名**。 撞卡：盤名在池中零命中，但「It’s Great Outside」是通用語句，下游要鎖 rgMbid。年份：MB first-release-date 1978、轄下唯一 release 就是 1978 年 VIJ-6014 原盤，無再發失真。⚠ **封面要走非 CAA 路線**：CAA release-group 端點實測 **404**；**Apple jp／us 的 search 與藝人目錄兩種查法都 0 筆**（本田竹曠 藝人目錄 250055187 的 15 筆裡沒有它）——與同廠的《Another Departure》完全同形，只剩 Discogs 這條路（§4 2026-09-10 放寬後，釘得住 MBID 的卡一樣適用 `discogs` 來源）。⚠ **Flying Disk／Victor 1970 年代的目錄在 Apple 上幾乎全空**：本批兩張 Flying Disk 盤兩種查法全部落空，是 c-116 第 6 條／c-131 第 359 條那條規律的再一次應驗。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 6a71d9d9-0a6a-4b28-a559-e574baff95a4。回問 release-group 端點（inc=artist-credits+releases）：title「It’s Great Outside」、artist-credit「本田竹広」（實體 b90d79a5，credit 名與實體主名相同）、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：998cd484（JP 1978 Official Vinyl 8 軌，Flying Disk VIJ-6014）。列舉檔命中：`batch-progress/enum/jp-victor.json`（entities「Flying Disk」，why「artist-tag」）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。⚠ 本卡即 c-132 第 390 條列為「額度外、可直接進下一批」的那一張，主線 2026-09-15 裁定改為本批補收（第 391 條）。"
+ },
+ {
+  "g": "b",
+  "artist": "宮沢昭カルテット",
+  "album": "Sea Horse",
+  "year": 2002,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "宮沢昭；Akira Miyazawa；Akira Miyazawa Quartet；MIYAZAWA AKIRA QUARTET；シー・ホース；宮沢昭 Sea Horse；Miyazawa Akira Quartet Sea Horse",
+  "reissuedBy": "ポニーキャニオン（PONY CANYON）2023-11-03 數位再發，9 軌分兩片（5＋4），Apple jp／us collectionId **1712606396**，jp 店面的掛名正是「宮沢昭カルテット」、us 是「MIYAZAWA AKIRA QUARTET」，℗ 2023 PONY CANYON INC.；MB 未建這筆 release",
+  "label": "⚠ **資料庫端未登記廠牌**：MB 轄下唯一一筆 release（b9549c2e，1989，CD 9 軌）的 `label-info` 是空陣列、`country` 也是 null，**廠牌與目錄編號本批查不到一手來源**；可追的線索是 2023 年的數位再發由 **ポニーキャニオン** 發行（Apple 1712606396，℗ 2023 PONY CANYON INC.），研究層請據此回推 1989 原盤的發行廠",
+  "why": "1989 年的四重奏盤，九軌全部是標準曲加一首自作〈Baby Sea Horse〉（Green Dolphin Street／In a Sentimental Mood／Poor Butterfly／Stardust／Billie’s Bounce／I Can’t Get Started／Take the \"A\" Train／If Ever I Would Leave You，曲目取自 Apple 1712606396 的 song 端點）——宮沢昭七十歲前後把次中音的音色本身當成主題的一張，與本批 1982《On Green Dolphin Street》同名開場曲互為對照。2023 年由ポニーキャニオン整張數位再發，是他目錄裡少數在現行串流店面拿得到的碟。實掃 `seed_cards.json` 全 16,450 列（宮沢昭／宮澤昭／Miyazawa／Akira 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `宮沢昭《いわな》1969`（未上架，本批不得重收）。加上這一張之後宮沢昭在池中共 8 張（c-131 1＋本批 7），落在店主「每位重點專輯 5–10 張」的區間內。",
+  "risk": "⚠ **掛名用「宮沢昭カルテット」（漢字＋片假名編制），不用 MB 的英文 credit `Akira Miyazawa Quartet`**——主線 2026-09-15 裁定，依第 354 條（第一世代的編制掛名照池中先例寫漢字＋片假名：鈴木勲トリオ／峰厚介クインテット／白木秀雄クインテット＆スリー琴ガールズ）。⚠ **本張的 MB 結構要特別留意**：這個 RG 的 artist-credit **名字寫「Akira Miyazawa Quartet」，但指向的 artist 實體是 `59e0a0d4`（個人「宮沢昭」）**，不是群組實體——MB 另有獨立群組實體 `281b012b`「Miyazawa Akira Quartet」（JP，名下只有 `7c04151d`《Kiso》）。**同一個編制在 MB 上同時以「個人實體的 credit 覆寫」與「獨立群組實體」兩種形式存在**，這與第 355 條講的形狀相同但更隱蔽。Apple jp 的官方條目掛的正是「宮沢昭カルテット」（us 掛「MIYAZAWA AKIRA QUARTET」），支持本卡的寫法。⚠ **這使宮沢昭在池中會有兩個掛名字串**（`宮沢昭` 7 張、`宮沢昭カルテット` 1 張）——已逐張核過，**同一張碟沒有被兩種寫法各收一次**；第 307 條反查同字串不同人：池中「宮沢」「Miyazawa」零命中，無合併風險。撞卡：盤名「Sea Horse」在池中零命中，但是通用詞組，下游要鎖 rgMbid。年份：MB first-release-date 1989、轄下唯一 release 也是 1989；⚠ Apple 的 1712606396 記 2023-11-03，那是ポニーキャニオン的再發年，依第 352 條不取。封面：CAA release-group 端點 **200**（實測）。⚠ **MB 的 `country` 是 null、`label-info` 是空陣列**——依第 259／262 條，這是用 `release` 端點回問過的真實狀態，不是問錯端點；本卡依 c-132 簡報第二節第 2 點照收並在 `label` 註明。Apple jp／us 的 search 與藝人目錄兩種查法皆命中 1712606396（9 軌，與 MB 一致），只是觀察不是結論（第 254 條）。",
+  "mbNote": "釘 release-group 13f2967d-66a0-4ab0-bfc8-cb7e092223da。回問 release-group 端點（inc=artist-credits+releases）：title「Sea Horse」、artist-credit **name「Akira Miyazawa Quartet」／artist 實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（主名「宮沢昭」）**、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：b9549c2e（date 1989，**country null**，status Official，CD 9 軌，**label-info 空陣列、無 catno、無 barcode**）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。⚠ 本卡即 c-132 第 390 條列為「額度外、可直接進下一批」的宮沢昭三張之一，主線 2026-09-15 裁定改為本批補收（第 391 條）；另兩張（`34769f6e`《Noyuri》1992、`7c04151d`《Kiso》2006）仍留在候補。"
+ },
+ {
+  "g": "b",
+  "artist": "白木秀雄",
+  "album": "ファンキー!登場",
+  "year": 1960,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hideo Shiraki；ファンキー!登場+6；ファンキー！登場！；ファンキー!!登場!；Funky Tojo；白木秀雄クインテット；Hideo Shiraki Quintet；白木秀雄 ファンキー登場",
+  "reissuedBy": "Think! Records（JP 2006-06-23 CD THCD-021《ファンキー!登場+6》，**14 軌＝原盤 8 軌＋6 首 bonus**，barcode 4988044610187；HMV／Billboard JAPAN／diskunion 的條目同號）——MB 轄下只有這一筆，1960 年原盤未建檔",
+  "label": "ビクター（Victor）SJL-5008（JP 1960 原盤）——⚠ **MB 完全未建原盤與廠牌**，唯一一筆 release 的 label-info 是 `[no label] THCD-021`；廠牌與目錄編號取自 diskunion／thisboy 等唱片行的 THCD-021 條目（該條目同時載明 6 首 bonus 的原盤是 Victor **SJL-5104**〔1962〕與 **SJL-5069**〔1963〕），**研究層須覆核**",
+  "why": "白木秀雄 1960 年的《ファンキー！登場》，是他 1958 年首作（King KC-8，本批同收）之後最被點名的一張——日本爵士正面追 funky hard bop 的那一刻，標題本身就是宣言。2006 年 Think! Records 以 THCD-021 復刻時加了 6 首 bonus（1962／1963 年的錄音），成為 MB 上唯一建檔的形態。實掃 `seed_cards.json` 全 16,450 列（白木／白木秀雄／Shiraki／Hideo 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下 **零張**；c-131 新增 `白木秀雄クインテット＆スリー琴ガールズ《Sakura Sakura》1965`（未上架，本批不得重收）。簡報方向寫「白木秀雄走 1961–68 Teichiku／Columbia」，但 MB 在他名下建得起來的其實是 **King 1958–63 四張＋Teichiku《祭りの幻想》＋本張 Victor**，本批六張把他 1958–65 的主線補完（再加 c-131 的 1965《Sakura Sakura》共 7 張，落在店主「每位重點專輯 5–10 張」的區間內）。",
+  "risk": "⚠ 掛名：MB 實體主名是漢字 `白木秀雄`，依 2026-08-11 東亞藝人名裁定與第 355 條取實體主名，`Hideo Shiraki` 進 queryAlias，**不新造英文掛名**。第 307 條反查同字串不同人：池中「白木」「Shiraki」子字串零命中，無合併風險；但 MB 上「白木」開頭的同名他人有九位（白木みのる、白木治信、白木優子…），查藝人時不可只用姓。⚠ **編制掛名**：c-131 已把 `白木秀雄クインテット＆スリー琴ガールズ` 收進池（第 354 條，全形＆照 MB 原文），本批依各 RG 所屬實體決定——掛在個人實體 `40d40a8c` 的寫 `白木秀雄`，掛在 `ee00ecfa` 的寫 `白木秀雄クインテット`，**同一張碟不得因編制寫法不同被收兩次**。 ⚠ **年份取 1960、盤名去掉「+6」——與《祭りの幻想》同形的處置（第 384 條，主線 2026-09-15 核定）**：MB first-release-date 是 **2006-06-23**（Think! 復刻年），原盤未建檔；卡面若寫 2006 會把一張 1960 年的碟記成 2000 年代的。盤名取 1960 年原盤的《ファンキー!登場》（ASCII `!`，與 MB RG 標題用同一個驚嘆號），MB 原題「ファンキー!登場+6」與唱片行常見的「ファンキー！登場！」「ファンキー!!登場!」全部進 queryAlias。⚠ **本卡與《祭りの幻想》是本批僅有的兩張「卡面盤名與 MB RG 標題不同」的卡，下游必須鎖 rgMbid。** ⚠ **軌數與錄音年要分清**：THCD-021 的 14 軌**橫跨三個錄音年**——唱片行條目載明第 1–8 軌 1960、第 9–12 軌 1962、第 13–14 軌 1963，原盤 8 軌，**研究層寫簡介時只能引 1960 年的 8 軌，不得把 14 軌當成原盤內容**（第 251／262 條：軌數、日期、廠牌要出自同一筆）。⚠ MB 把它建成 `primary-type=Album`、`secondary-types` 空（**沒有標 Compilation**），本卡照 MB 記 `releaseType: \"Album\"`，不走 §5.6；但**它實質上是「原盤＋來自另外兩張 LP 的 bonus」**，若本機判定要改成 §5.6，舉證與 `exceptionReason` 要另補。⚠ **封面要走非 CAA 路線**：CAA release-group 端點實測 **404**。⚠ **Apple 有一個危險的假陽性**：藝人目錄 900350012 裡的 `151989291`《King Re-Jazz Swing Play the Funky!》（2006-04-26，**也是 14 軌**，℗ 2006 King Records）盤名帶「Funky」、年份同為 2006、軌數同為 14——**但逐軌拉過 song 端點後確認是另一張碟**（曲目是セニョール・ブルース／グルーヴィー・サンバ／キャラヴァン／チュニジアの夜／ジャングル・ドラムス／赤坂の夜は更けて／ON A SLOW BOAT TO CHINA（白木秀雄リサイタル 1 より）…，與 THCD-021 的曲目只重疊〈サヨナラ・ブルース〉一首，而且廠牌是 King 不是 Think!）。**以《ファンキー》《Funky》搜 jp／us 兩個店面皆 0 筆**——本張在 Apple 上查無，不得拿 151989291 配對。只寫觀察不下結論（第 254 條）。",
+  "mbNote": "釘 release-group 11e43432-75bc-447c-80ce-997674099892。回問 release-group 端點（inc=artist-credits+releases）：title「ファンキー!登場+6」、artist-credit「白木秀雄」（實體 40d40a8c，credit 名與實體主名相同）、first-release-date **2006-06-23**（⚠ 只建了復刻，本卡改取 1960，理由見 risk）、primary-type Album、**secondary-types 空**、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：7a3bf309（JP 2006-06-23 Official CD **14 軌**，`[no label]` THCD-021，barcode 4988044610187）——**1960 年 Victor 原盤未建檔，label-info 只有一筆廠牌名為空的 THCD-021**（第 262 條：`[no label]` 是陣列裡真的有一筆而廠牌名為空，不是問錯端點）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。刻意不釘（同屬 Think! 復刻、原盤未建檔，仍留候補）：`709db011`《モダンでツイスト》2007-05-25（THCD-048，5 軌，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，8 軌，CAA 404）。⚠ 本卡即 c-132 第 390 條列為「額度外、可直接進下一批」的白木三張之一，主線 2026-09-15 裁定改為本批補收（第 391 條）。"
+ }
+]

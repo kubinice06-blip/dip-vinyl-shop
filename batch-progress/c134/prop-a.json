@@ -1,0 +1,439 @@
+[
+ {
+  "artist": "世良譲トリオ",
+  "album": "Bacchus Swing",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Trio（MB release 端點回傳廠牌名 Trio、無目錄編號，XW 數位 8 軌）；Apple jp 官方條目 ℗ TRIO RECORDS",
+  "why": "世良譲（1932–2004）是日本戰後搖擺鋼琴三重奏的代表人物，「バッカス（酒神）」系列是他在 Trio Records 留下的招牌盤名。本張是 MB 上唯一掛在群組實體「世良譲トリオ」名下、又不是合掛的一筆，也是他六位同輩裡少數 CAA 有圖的碟。實掃 seed_cards.json 全 16,450 列（世良譲／世良讓／Sera／譲 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張——連帶六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全是零，簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形，本組第二次實證）。子字串假陽性已逐筆排除：「譲」另命中 久石譲 13 張（吉卜力原聲帶），「Sera」另命中 Tullio Serafin《Verdi: Rigoletto》1 張。 店主 2026-09-15 要「重點專輯 5–10 張」，這張是他三重奏編制的代表作，補上之後池中第一次有 世良譲 這個掛名。",
+  "risk": "撞卡：盤名在池中零命中，掛名字串「世良譲トリオ」池中零張，不折疊。⚠ 年份是本張最大的不確定：MB 這個 RG 的 first-release-date 是空的（轄下只有一筆無日期的 XW 數位 release），`year` 取 Apple jp 官方條目 1329371607《バッカス・スイング》的 1994-11-25（世良譲トリオ，artistId 359071435，8 軌與 MB 一致，℗ TRIO RECORDS）——這是第 352／364 條第一型的變形（資料庫端只有再發），**1994 很可能是 CD 化年而不是原盤年，研究層須覆核 Trio Records 的原盤年**。⚠ 掛名：MB 群組實體 c80d9a8c 的主名就是漢字＋片假名的「世良譲トリオ」，與池中先例（鈴木勲トリオ／山下洋輔トリオ／今田勝トリオ）同形，本批不新造分裂。⚠ 跨批同碟風險（c-132 第 386 條／c-133 第 405 條的形狀，chk-prop 抓不到）：**同一個群組實體另有 alias「世良譲トリオ with 笠井紀美子」，而 笠井紀美子 是本批 b 組的掛名**——本張不是那一碟（那是 RG 57f599f0《世良譲トリオ・イントロデューシング・笠井紀美子/ザ・モダン・プレイング・メイト》，本組刻意不收），但 b 組若以 笠井紀美子 的名義收走 57f599f0，`chk-prop` 不會亮燈。封面 CAA release-group 端點 200（實測，是 世良譲 九個 RG 裡唯一有圖的一個）。Apple 三種查法：search（盤名＋掛名）與藝人目錄（artistId 359071435）都命中 1329371607，8 軌與 MB 一致；這只是兩種查法的觀察，不是結論（第 254 條）。⚠ Apple jp 把他印成「世良 譲」（姓名間有半形空格）與「世良譲トリオ」兩種、分屬 artistId 359079027 與 359071435——下游比對要摺空白（c-133 第 408 條同形，本組第一次）。",
+  "mbNote": "釘 release-group 3a45d8fe-b74e-4b8f-851f-4f4a79397b6b。回問 release-group/<id>?inc=artist-credits+releases 與 release?release-group=<id>&inc=labels+media+artist-credits 確認：title「Bacchus Swing」、artist-credit 單一「世良譲トリオ」（實體 c80d9a8c-3695-436c-bcd6-2016a5b7c42d，Group／JP，alias「世良譲トリオ with 笠井紀美子」「世良譲トリオwith笠井紀美子」）、first-release-date 空、primary-type Album、secondary-types 空、轄下 1 個 release（XW 無日期 Official，廠牌 Trio、無 catno，Digital Media 8 軌）。⚠ 依 c-133 第 404 條「MB 轄下只有數位 release 不是排除理由」照收。廠牌是用 release 端點回問來的（第 259 條）。藝人實體：個人 世良譲 c3046714-50a4-4cde-a51e-237e076e2867（Person／JP／1932-03-10–2004-02-17，alias Yuzuru Sera／Tessō Sera／本名 世良哲壮，名下 10 個 RG）；群組 世良譲トリオ c80d9a8c（2 個 RG）。刻意不釘：a9d8bcc5-890b-4888-8297-a79ec62c4fd5《Let's Swing Now》1975（Victor，artist-credit 三團平列 Eiji Kitamura & All Stars／Martha Miyake & Yuzuru Sera Trio／Kazuo Yashiro Quintet——**三個掛名裡兩個是本組的**，依第 321／385 條不收）、406a2e35-f912-4fa9-819a-76dfb78838f6《Caravan》2007（credit「George Kawaguchi And Big Four Guest: Joe Sera」，合掛）。列舉檔 batch-progress/enum/jp-trio.json 有這一筆（note 寫「MB 只有串流版」）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "バッカス・スイング；Yuzuru Sera Trio；世良譲トリオ；世良 譲；Sera Yuzuru Trio Bacchus Swing",
+  "reissuedBy": "Trio Records 數位（MB 唯一 release，XW 無日期）；Apple jp 1329371607《バッカス・スイング》℗ TRIO RECORDS",
+  "g": "a"
+ },
+ {
+  "artist": "世良譲",
+  "album": "スモーク・リング Vol.1",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Trio Records PAP-9019（JP 1974 12 吋黑膠 14 軌，盤面註明 1974-08-21／22 青山タワーホール 錄音，錄音與母帶 菅野沖彦）；MB 轄下只有 2008-05-21 的 ABCJ-474 CD 14 軌，該筆 label-info 的廠牌名是空字串（第 262 條的 `[no label]` 形狀，不是問錯端點），ABCJ 段是 Absord Music Japan／ART UNION 的 Trio Records 復刻線",
+  "why": "〈Smoke Rings〉是 世良譲 一生的招牌曲，這張以它為名的盤是他 1974 年在 Trio Records 的代表作：由 菅野沖彦 在青山タワーホール 錄了兩個晚上，編制是他的鋼琴加 北村英治（單簧管）、五十嵐明要（中音薩克斯風）、三井明夫（小號）、川辺浩一（長號）、増田一郎（顫音琴）、原田政長（貝斯）、須永宏（鼓）的搖擺大合奏——與同組《バッカス・スイング》（1974 年的純三重奏）正好是他兩種編制的兩面，兩張同年、同廠牌、同一位錄音師。實掃 seed_cards.json 全 16,450 列（世良譲／世良讓／Sera／譲 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張——連帶六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全是零。子字串假陽性已逐筆排除：「譲」另命中 久石譲 13 張（吉卜力原聲帶），「Sera」另命中 Tullio Serafin《Verdi: Rigoletto》1 張。 ⚠ **本筆是 2026-09-15 主線裁定的替換**：原本收的是同一位的 `721e76b5`《スモーク・リングス》（1987 ABCJ-467／BRJ-4046，CD 19 軌），研究層查出那 19 軌是 1974 年《Smoke Rings》（PAP-9019，原 14 軌刪 3）與 1976 年《Smoke Rings Vol.2》（PA-7145，原 10 軌刪 2）**兩張 LP 的刪節合併**，當 Album 收不合固定規格（Compilation 走 §5.6 或不收）。本筆 `24ae374b` 的 14 軌**逐軌等於 1974 年原盤的完整曲目**，是同一張碟的正解。",
+  "risk": "撞卡：盤名在池中零命中，掛名字串「世良譲」池中零張，`node batch-progress/c134/chk-prop.mjs a` 標記 0。⚠ **年份取 1974（原盤年）而不是 MB 的 2008-05-21**，依第 352／364 條第一型（MB 轄下只建了再發）：MB 這個 RG 轄下唯一一筆是 2008-05-21 的 ABCJ-474 CD，原盤是 Trio Records PAP-9019、1974 年、盤面註明 1974-08-21／22 青山タワーホール 錄音，**14 軌逐軌與原盤相同、無增刪**。⚠ **要記一條反面論據供本機端裁量**：盤名《スモーク・リング **Vol.1**》的「Vol.1」是 2008／2014 復刻線回頭加的編號（1974 年原盤就叫《Smoke Rings》，1976 年的續作才自己帶 Vol.2），若嚴格照 c-133 第 426 條第 1 點「盤名與年份要出自同一筆」，會得到 2008。**本批判定取 1974**：兩者曲目完全相同、Vol.1 只是把原本就存在的系列關係補寫成編號，與 c-134《Ai No Cocktail》那種「換成另一個詞的改題」不同型；且本批第 422 條 A 組已有三張同型改判的先例。⚠ **封面 CAA release-group 端點實探 404**（2026-09-15 本次替換時重探，`https://coverartarchive.org/release-group/24ae374b-fafe-47b7-8d65-e3476167cbf8/front`）。可走的路**不是 apple-verified-collection**：Apple 三種查法全 0 筆（見下），**只剩廠牌官方商品頁** Universal Music Japan `https://www.universal-music.co.jp/swing/products/pocs-9323/`（2014-12-03 SHM-CD 復刻 POCS-9323，「音の匠・菅野沖彦・昭和のジャズ モダン・スイング・シリーズ」，掛名印「世良譲&ヒズ・フレンズ」、成員與 1974 原盤一致），與實體黑膠盤面條目 `https://api.discogs.com/releases/6689163`（Trio Records PAP-9019／1974／日本）——**兩條都是本盤層級的頁面**。⚠ **店面：三種查法全 0 筆（第 254 條）**——(1) search 跑「スモーク・リング Vol.1」「スモーク・リング 世良譲」「Smoke Ring Vol.1 Yuzuru Sera」「世良譲 嘘は罪」「二人のカクテル 世良譲」五組詞 × jp／us／gb × entity=album 與 song 共 30 次查詢，零筆命中 世良譲；(2) 藝人目錄把他在店面的**兩個 artistId 整份 dump**（`359079027`「世良 譲」4 張、`359071435`「世良譲トリオ」2 張），六張裡沒有本作；(3) 沒有候選 collectionId 可直查。⚠ **一個絕對不能採的假陽性**：Apple jp `1327682788`《Smoke Rings》（19 軌、℗ TRIO RECORDS、掛 artistId 359079027）**含有本作 14 軌裡的 11 軌**，但它是被換掉的那張合併 CD（19 軌），**不是本盤**，下游不得拿它當本卡的固定試聽或封面來源。⚠ 掛名：原盤與 2014 復刻頁印的都是「世良譲&ヒズ・フレンズ／Yuzuru Sera & His Friends」，MB 的 artist-credit 是單一元素「世良譲」——**本卡照 MB 與池中先例取「世良譲」，不新造分裂**（第 307 條），另一寫法進 queryAlias。⚠ 編制：本盤不是鋼琴三重奏而是八人搖擺合奏，**單簧管是 北村英治（本組另外六張卡的掛名）**；MB 的 artist-credit 是單一元素、不是合掛，依第 321 條收得正確，但下游正文不得寫成兩人共同領銜。",
+  "mbNote": "釘 release-group 24ae374b-fafe-47b7-8d65-e3476167cbf8。回問兩個端點確認：title「スモーク・リング Vol.1」、artist-credit 單一「世良譲」（實體 c3046714-50a4-4cde-a51e-237e076e2867，Person／JP／1932-03-10–2004-02-17）、first-release-date 2008-05-21、primary-type Album、**secondary-types 空**、轄下 1 個 release（JP 2008-05-21 Official，label-info 一筆、廠牌名為空字串、catno ABCJ-474，CD 14 軌）。十四軌：アンダー・ザ・ブランケット・オブ・ブルー／嘘は罪／スモーク・リングス／恋のため息／古くさいね／ペイパー・ムーン／プレリュード・トゥ・ア・キッス／ミーン・トゥ・ミー／ベイリーさん帰ってくれないか?／誰かが誰かを愛してる／シャイン／メイビー・ユール・ビー・ゼア／ギブ・ミー・ア・シンプル・ライフ／二人のカクテル——**與 1974 年 Trio PAP-9019 原盤的 14 軌逐軌對應**（嘘は罪＝It's a Sin to Tell a Lie、恋のため息＝I Can't Believe That You're in Love With Me、古くさいね＝That Old Feeling、二人のカクテル＝Cocktails for Two）。⚠ **本筆取代原本釘的 721e76b5《スモーク・リングス》（1987，ABCJ-467／BRJ-4046，CD 19 軌）**——那 19 軌是 1974 原盤刪 3 軌加 1976 年《Smoke Rings Vol.2》（PA-7145）刪 2 軌的合併，實質是選輯，本批不收；**下游不得把 721e76b5 與 24ae374b 折疊，它們是兩個 RG、軌數不同。** 廠牌是用 release 端點回問來的（第 259 條）；MB 端**沒有**1974 原盤與 Vol.2 的 release-group（世良譲 名下 10 個 RG 已整份列出核對）。刻意不釘：b00994b3《TREASURE》2006（WMP-2003-4，2CD）、1637cbb4《メモリアル・アルバム》2004（テイチク TECH-25013）、2145e0f6《追悼盤 酒と女の日々》2004（ABCJ-307-8，2CD）——三張都是他 2004-02-17 過世後編的紀念盤／追悼盤，本批依「重點專輯」判準不收；57f599f0《世良譲トリオ・イントロデューシング・笠井紀美子/ザ・モダン・プレイング・メイト》1998 依第 426 條不收（跨批同碟風險，笠井紀美子 在 b 組）；406a2e35《Caravan》2007 合掛不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Smoke Ring Vol.1；Smoke Rings；スモーク・リングス；世良譲&ヒズ・フレンズ；Yuzuru Sera & His Friends；世良 譲；Sera Yuzuru Smoke Rings",
+  "reissuedBy": "Absord Music Japan／ART UNION 的 Trio Records 復刻線 ABCJ-474（2008-05-21 CD 14 軌）；Universal Music Japan POCS-9323（2014-12-03 完全初回受注生産限定盤 SHM-CD、24bit 重製、紙盒復刻，「音の匠・菅野沖彦・昭和のジャズ モダン・スイング・シリーズ」）",
+  "g": "a"
+ },
+ {
+  "artist": "世良譲",
+  "album": "バッカス・グルーヴ",
+  "year": 1977,
+  "genres": [
+   "jazz"
+  ],
+  "label": "ABCJ-475（JP 2008-05-21 CD 8 軌；MB 的 label-info 廠牌名為空字串，ABCJ 段是 Absord Music Japan 的 Trio Records 復刻線，Apple 同一條目 ℗ TRIO RECORDS，**廠牌歸屬研究層須覆核**）",
+  "why": "「バッカス（酒神）」是 世良譲 在 Trio Records 的系列盤名，本張《バッカス・グルーヴ》與三重奏編制的《バッカス・スイング》是同一條線的兩張，一張走搖擺、一張走 groove。實掃 seed_cards.json 全 16,450 列（世良譲／世良讓／Sera／譲 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張——連帶六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全是零，簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形，本組第二次實證）。子字串假陽性已逐筆排除：「譲」另命中 久石譲 13 張（吉卜力原聲帶），「Sera」另命中 Tullio Serafin《Verdi: Rigoletto》1 張。 收這一張是為了把他這條招牌系列在池中補齊，不是為了湊數。",
+  "risk": "撞卡：盤名在池中零命中；與同組的《Bacchus Swing》（世良譲トリオ）**盤名同源但不同碟、不同掛名、不同 RG、軌目也不同**，`risk` 互相指向（簡報第六節第 3 點的形狀）。⚠ 年份：MB first-release-date 2008-05-21 與 Apple jp 1327671148 的 2008-05-21 逐日相符，但**兩邊都是 Trio Records 復刻線的上架日**——℗ 欄只寫「TRIO RECORDS」沒有年份，原盤年查不到（第 364 條：取資料庫登記的最早發行並寫明可能是再發）。封面 CAA release-group 端點 404（實測）；可走的路：Apple jp 官方條目 1327671148（8 軌與 MB 一致）→ apple-verified-collection（c-132 第 382 條）。⚠ 掛名在店面印成「世良 譲」（姓名間有半形空格），下游比對要摺空白。",
+  "mbNote": "釘 release-group a5d2ed5e-e799-4bae-8be2-8d4afbb85ce7。回問兩個端點確認：title「バッカス・グルーヴ」、artist-credit 單一「世良譲」（實體 c3046714）、first-release-date 2008-05-21、primary-type Album、secondary-types 空、轄下 1 個 release（JP 2008-05-21 Official，`[no label]` ABCJ-475，CD 8 軌）。⚠ 與 3a45d8fe《Bacchus Swing》（世良譲トリオ，Trio 數位 8 軌）**軌數同為 8**——已逐筆比對 Apple 兩個條目（1327671148 與 1329371607）的曲目，是兩組不同的曲子，不是重複建檔。廠牌是用 release 端點回問來的（第 259 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bacchus Groove；Yuzuru Sera；世良 譲；Sera Yuzuru Bacchus Groove",
+  "reissuedBy": "Absord Music Japan／Trio Records 線 ABCJ-475；Apple jp 1327671148 數位（℗ TRIO RECORDS）",
+  "g": "a"
+ },
+ {
+  "artist": "世良譲",
+  "album": "50th Anniversary Concert",
+  "year": 2000,
+  "genres": [
+   "jazz"
+  ],
+  "label": "日本コロムビア COCB-31197（JP 2000-12-09 CD 12 軌；MB 的 label-info 廠牌名為空字串，COCB 段是 日本コロムビア 的目錄號，**廠牌由 catno 推定、研究層須覆核**）",
+  "why": "世良譲 1950 年出道，這張是他入行五十週年的紀念音樂會實錄，也是他生前最後幾張正式發行之一（他 2004 年過世）。對一位 MB 幾乎只剩 CD 期建檔的第一世代鋼琴家來說，這是少數能直接證明「他到晚年還在現場演奏」的碟。實掃 seed_cards.json 全 16,450 列（世良譲／世良讓／Sera／譲 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張——連帶六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全是零，簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形，本組第二次實證）。子字串假陽性已逐筆排除：「譲」另命中 久石譲 13 張（吉卜力原聲帶），「Sera」另命中 Tullio Serafin《Verdi: Rigoletto》1 張。",
+  "risk": "撞卡：盤名在池中零命中。⚠ 盤名是英文、掛名是漢字，下游必須鎖 rgMbid（MB 的 RG 題就是英文「50th Anniversary Concert」）。⚠ 這張的 secondary-types 是空的、MB 沒標 `Live`，但盤名寫明是音樂會——**MB 的 `Live` 次類型在這張沒登記，研究層引「現場錄音」之前要先覆核**（第 253 條的鏡像：欄位空不等於不是現場）。年份：MB first-release-date 2000-12-09（轄下唯一一筆 release 同日），沒有分歧。封面 CAA release-group 端點 404（實測）；可走的路：**Apple jp／us 三種查法都未命中**（search 盤名＋掛名、藝人目錄 artistId 359079027 名下四張、artistId 359071435 名下兩張，都沒有這一筆）→ 只剩 Discogs（catno COCB-31197／年 2000／廠牌 日本コロムビア 三項可對，超過 §4 來源四要求的兩項）。**這只是兩種查法的觀察，不是「未上架」的結論**（第 254 條）。",
+  "mbNote": "釘 release-group 07ae0720-4091-4620-ae6c-06f983f8cf40。回問兩個端點確認：title「50th Anniversary Concert」、artist-credit 單一「世良譲」（實體 c3046714）、first-release-date 2000-12-09、primary-type Album、secondary-types **空**、轄下 1 個 release（JP 2000-12-09 Official，`[no label]` COCB-31197，CD 12 軌）。廠牌是用 release 端點回問來的（第 259 條）：label-info 陣列有一筆、廠牌名為空字串，只有 catno。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "世良譲 50周年記念コンサート；Yuzuru Sera 50th Anniversary Concert；世良 譲；Sera Yuzuru",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "世良譲",
+  "album": "世良譲と仲間たち Yuzuru Sera and The Best Friends-エブリシング・ハプンス・トゥ・ミー",
+  "year": 2004,
+  "genres": [
+   "jazz"
+  ],
+  "label": "日本クラウン CRCI-20596（JP 2004-03-03 CD 11 軌；MB 的 label-info 廠牌名為空字串，CRCI 段是 日本クラウン 的目錄號，**廠牌由 catno 推定、研究層須覆核**）",
+  "why": "世良譲 2004 年 2 月 17 日過世，這張 3 月 3 日發行的《エブリシング・ハプンス・トゥ・ミー》是他生前錄完、身後才上架的最後一張作品，掛名寫成「世良譲と仲間たち」——一位戰後第一代鋼琴家把同輩樂手找齊再錄一次的收尾之作。實掃 seed_cards.json 全 16,450 列（世良譲／世良讓／Sera／譲 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張——連帶六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全是零，簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形，本組第二次實證）。子字串假陽性已逐筆排除：「譲」另命中 久石譲 13 張（吉卜力原聲帶），「Sera」另命中 Tullio Serafin《Verdi: Rigoletto》1 張。",
+  "risk": "撞卡：盤名在池中零命中。⚠ **卡面盤名直接照 MB 的 RG 題，而那個題把「樂團名＋盤名」包成一串**（「世良譲と仲間たち Yuzuru Sera and The Best Friends-エブリシング・ハプンス・トゥ・ミー」），實體盤面的盤名其實是《エブリシング・ハプンス・トゥ・ミー》、演出名義是「世良譲と仲間たち」。本批**不自行拆題也不自行改掛名**（MB 的 artist-credit 是單一的「世良譲」，依第 355 條取實體主名），但**下游必須鎖 rgMbid、不得用盤名比對**（同 c-132 第 384 條第 1 點的處置方向）。⚠ 中間的連字號是 ASCII `-`，非 ASCII 連字號與 U+30FC 破折號用法都已核過、沒有（第 409／409a 條）。年份：MB first-release-date 2004-03-03，與轄下唯一一筆 release 同日；**這是發行日不是錄音年，而他 2004-02-17 已過世，錄音必然更早**，研究層引年份時要分清（第 364 條第二型）。封面 CAA release-group 端點 404（實測）；Apple jp／us 三種查法都未命中（search 與兩個 artistId 的目錄），只剩 Discogs（catno CRCI-20596／年 2004／廠牌 日本クラウン）。只是觀察，不是結論（第 254 條）。",
+  "mbNote": "釘 release-group 97debd09-41e2-46aa-a0e2-1cc0f575b81d。回問兩個端點確認：title「世良譲と仲間たち Yuzuru Sera and The Best Friends-エブリシング・ハプンス・トゥ・ミー」、artist-credit 單一「世良譲」（實體 c3046714）、first-release-date 2004-03-03、primary-type Album、secondary-types 空、轄下 1 個 release（JP 2004-03-03 Official，`[no label]` CRCI-20596，CD 11 軌）。廠牌是用 release 端點回問來的（第 259 條）。⚠ 這張的「仲間たち」在 MB 上沒有對應的群組實體——`artist?query=世良譲と仲間たち` 回的第一筆就是個人實體 c3046714，第二筆 ca25932d「仲間たち」是另一位作詞者、與本張無關（第 307 條反查已做）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "エブリシング・ハプンス・トゥ・ミー；Everything Happens to Me；世良譲と仲間たち；Yuzuru Sera and The Best Friends；世良 譲",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "前田憲男トリオ",
+  "album": "Alpha Ray",
+  "year": 1969,
+  "genres": [
+   "jazz"
+  ],
+  "label": "日本コロムビア COCB-54093（JP 2014-04-23 CD 7 軌，Takt 爵士線 2014 年 Blu-spec 復刻批）；原盤 1969 年 日本コロムビア（Apple jp 官方條目 ℗ 1969 Nippon Columbia，catno 資料庫端未登記）",
+  "why": "前田憲男（1934–2018）是日本戰後編曲與鋼琴兩邊都站得住的核心人物，《Alpha Ray》是他 1969 年以三重奏名義留下的代表盤，也是 MB 上他唯一一張掛在群組實體名下、又不是合掛的碟。實掃 seed_cards.json 全 16,450 列（前田憲男／Norio Maeda／前田／Maeda 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「前田」「Maeda」在整個池子裡零命中，連假陽性都沒有。本組六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全部是零——簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形）。 店主 2026-09-15 要「重點專輯 5–10 張」，這張是他鋼琴手身分（不是編曲家身分）最直接的證據。",
+  "risk": "撞卡：盤名在池中零命中，掛名字串「前田憲男トリオ」池中零張。⚠ **年份改判（第 352／364／383 條第一型）**：MB first-release-date 是 **2014-04-23**（轄下只建了 日本コロムビア 2014 年 Blu-spec 復刻 COCB-54093 這一筆 release），`year` 改取 **1969**——證據是 **Apple jp 官方條目 1699533267《Alpha Ray》掛在 artistId 682432830「前田憲男トリオ」名下，日期 1969-01-01、℗ 1969 Nippon Columbia／NIPPONOPHONE、7 軌，與 MB 的 7 軌一致**；旁證是同一批 COCB-5409x 連號復刻裡的 八城一夫トリオ《LOVE IS HERE TO STAY》（COCB-54090）在 MB 上留著 1968 年 Takt JAZZ-17 原盤 release，**證明這一段號碼就是 Takt／コロムビア 1968–69 原盤的復刻線**。⚠ **掛名**：MB 群組實體 de6cb470 的主名是英文「Norio Maeda Trio」（area 未填、無 alias），依簡報第三節「編制掛名照池中先例的漢字＋片假名」與 c-132 第 391 條，卡面用 **前田憲男トリオ**——**Apple jp 印的就是「前田憲男トリオ」**，不是我自造。池中先例：鈴木勲トリオ／山下洋輔トリオ／今田勝トリオ／山本剛トリオ。本批不新造英文分裂。封面 CAA release-group 端點 404（實測）；可走的路：Apple jp 官方條目 1699533267（7 軌與 MB 一致）→ apple-verified-collection（c-132 第 382 條）。Apple 兩種查法都命中（search 與 artistId 682432830 的六張目錄）；只是觀察不是結論（第 254 條）。",
+  "mbNote": "釘 release-group 2aa6f872-f2e8-4fe3-bcc2-8db61cc437a9。回問 release-group/<id>?inc=artist-credits+releases 與 release?release-group=<id>&inc=labels+media+artist-credits 確認：title「Alpha Ray」、artist-credit **單一**「Norio Maeda Trio」（實體 de6cb470-09af-4fce-9e77-83a18d7089f2，Group，無 alias）、first-release-date 2014-04-23、primary-type Album、secondary-types 空、轄下 1 個 release（JP 2014-04-23 Official，Columbia COCB-54093，CD 7 軌）。廠牌是用 release 端點回問來的（第 259 條）。藝人實體：個人 前田憲男 5f569b75-098f-445d-9293-d65e25e55c33（Person／JP／1934-12-06–2018-11-25，alias Norio Maeda／前田 憲男／本名 前田暢人，名下 13 個 RG）；Norio Maeda Trio de6cb470（1 個 RG）；Norio Maeda & All-Stars 2e491aef（1 個 RG）；前田憲男とプレイボーイズ 354c708b（1 個 RG，落語盤《円楽のプレイボーイ講座12章》，不收）。列舉檔 batch-progress/enum/jp-columbia.json 有這一筆（年份寫 2014，即 MB 值）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "アルファ・レイ；Norio Maeda Trio；前田憲男；Norio Maeda；前田 憲男 Alpha Ray",
+  "reissuedBy": "日本コロムビア 2014-04-23 Blu-spec CD COCB-54093；Apple jp 1699533267 數位（℗ 1969 Nippon Columbia）",
+  "g": "a"
+ },
+ {
+  "artist": "前田憲男とオール・スターズ",
+  "album": "Rock Communication",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "label": "テイチク SL-1329（JP 1970 12 吋黑膠 14 軌）；FR Wewantsounds WWSCD89 CD 14 軌（題《Rock Communication Yagibushi》，無日期）",
+  "why": "1970 年 テイチク 的《ロック・コミュニケーション 八木節》——前田憲男 把日本民謠〈八木節〉拆成 rock／jazz 的編制實驗，是和製 jazz-rock 最早也最常被重提的一張，2010 年代法國 Wewantsounds 還復刻過。實掃 seed_cards.json 全 16,450 列（前田憲男／Norio Maeda／前田／Maeda 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「前田」「Maeda」在整個池子裡零命中，連假陽性都沒有。本組六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全部是零——簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形）。 這張與同組的《Alpha Ray》（1969 三重奏）正好把他 1969–70 的兩條路各記一張。",
+  "risk": "撞卡：盤名在池中零命中，掛名字串「前田憲男とオールスターズ」池中零張。⚠ **掛名是本張最需要覆核的一點**：MB 這個 RG 的 artist-credit 是**單一**一筆「Norio Maeda & All-Stars」、指向群組實體 2e491aef（Group／JP、無 alias、名下只有這一個 RG）。依簡報第三節「編制掛名照池中先例的漢字＋片假名」與 c-132 第 391 條，卡面寫 **前田憲男とオールスターズ**。**這個漢字寫法不是我憑空造的**：MB 自己就把同形的 `Eiji Kitamura & All Stars`（8bd1f9ef）的 disambiguation 寫成「北村英治とオールスターズ」，另有實體 `八城一夫とオールスターズ`（1a089205）——**「…& All Stars」對應「…とオールスターズ」是 MB 內部既有的對照**。池中先例：原信夫とシャープス・アンド・フラッツ／猪俣猛とサウンド・リミテッド／石川晶とカウント・バッファローズ。**若主線判定編制掛名要照 MB 主名用英文字串，改的是卡單的 artist 值（可逆，判準 2），rgMbid 不變。**⚠ 盤名：MB 的 RG 題是《Rock Communication》，法國復刻 release 題《Rock Communication Yagibushi》，實體盤面是《ロック・コミュニケーション 八木節》——**三個題名，下游必須鎖 rgMbid**。年份：MB first-release-date 1970（只有年份，轄下 1970 年 テイチク SL-1329 那一筆 release 的日期也只有年份）；Apple jp／us 三種查法都未命中（search「Rock Communication Yagibushi」0 筆、artistId 79434607 名下 25 張與 682432830 名下 6 張都沒有這一筆），**沒有精確日期可以比對，照第 364 條取 MB 值**。封面 CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group a2250d99-cffc-4262-bf34-23c171563a4a。回問兩個端點確認：title「Rock Communication」、artist-credit **n=1**（name「Norio Maeda & All-Stars」→ 實體 2e491aef-cfbd-4870-8a23-06485c30d96b，Group／JP）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1970 Teichiku Records SL-1329 12 吋 14 軌／FR 無日期 Wewantsounds WWSCD89 CD 14 軌，題《Rock Communication Yagibushi》）。廠牌與載體是用 release 端點回問來的（第 259 條）。⚠ 這是本組唯一一張「日本首發、後來在歐洲復刻」的碟，`year` 取全球首發 1970（JP），國別已記（簡報第四節第 3 點）。刻意不釘（合掛，依第 321／385 條）：5a4b6ac8-9b87-4259-83be-99e6a8011a58《決定盤!これぞジャズ・ロック》1968（原盤 Columbia YS-10036-J，credit「前田憲男、稲垣次郎オールスターズ」兩實體平列，**稲垣次郎 是 c-133 b 組的掛名**）、6d06ec56-b69a-4004-917c-e0a74fa99f72《Soul Samba Holiday In Brazil》1977（PANAM GW-4031，credit n=2：前田憲男 + ティン・パン・アレー）、346f1404《ミュージカル・プレイ・イン・ジャズ》1969（四實體平列，c-132 第 385 條已擋）、dc858c5c《Jazz Rock 琴／日本の民謡》1973（五實體平列，c-133 第 405 條已擋）、ca2418d1《Fantastic Sounds In Shino Flute》1971（前田憲男＋藤舎推峰）、310bd06a《Swing On Swing》1982（credit「高橋達也と東京ユニオン, Norio Maeda」，**高橋達也 是 c-133 a 組的掛名**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ロック・コミュニケーション 八木節；Rock Communication Yagibushi；Norio Maeda & All-Stars；前田憲男；Norio Maeda",
+  "reissuedBy": "Wewantsounds（FR，WWSCD89 CD，題《Rock Communication Yagibushi》）",
+  "g": "a"
+ },
+ {
+  "artist": "前田憲男",
+  "album": "Falling in Love With Love",
+  "year": 1980,
+  "genres": [
+   "jazz"
+  ],
+  "label": "東芝 Toshiba Records TP-72340（JP 1980 12 吋黑膠 12 軌）",
+  "why": "前田憲男 1980 年在 東芝 留下的個人鋼琴盤，是他以自己名字（不是三重奏、不是 All-Stars）發行、MB 上唯一一張的正規 Album。實掃 seed_cards.json 全 16,450 列（前田憲男／Norio Maeda／前田／Maeda 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「前田」「Maeda」在整個池子裡零命中，連假陽性都沒有。本組六位（世良譲・前田憲男・八城一夫・北村英治・中村八大・秋満義孝）線上池全部是零——簡報第五節的「池中現有」欄把未上架的 c-131 卡算進去了（c-133 第 409b 條同形）。 他這條線在 MB 上真正可得的只有三張，這張是唯一掛個人實體的一張——收它等於把他的個人掛名建進池子。",
+  "risk": "撞卡：盤名在池中零命中；⚠ **池中沒有同盤名的卡，但這個盤名是爵士標準曲、極易撞**——Apple 上就有 山本剛トリオ《Falling In Love With Love》1993 與 Harold Mabern Trio 同名盤，**判定一律看整個掛名字串，不得只比盤名**（本張已逐筆核過池中 16,450 列，盤名零命中）。掛名：MB 的 artist-credit 是「Norio Maeda」、指向個人實體 5f569b75（主名 前田憲男），依第 355 條取實體主名漢字；本批同一位另有兩個編制掛名（前田憲男トリオ／前田憲男とオールスターズ），**三個字串對應 MB 三個不同實體，不是分裂的重複**（同 c-132 第 388 條白木秀雄三字串一案）。年份：MB first-release-date 1980（只有年份），轄下唯一一筆 release 同年；Apple jp／us 三種查法都未命中（search 回的全是同名曲的別人的碟、artistId 79434607 名下 25 張目錄裡沒有這一筆），**沒有精確日期，照第 364 條取 MB 值**。封面 CAA release-group 端點 200（實測）。⚠ 同一段東芝目錄號 TP-7234x 裡，TP-72341 是本批 八城一夫《It's a Sin to Tell a Lie》1980（未收，列候補）——**號碼相鄰、同年同廠**，不是同一張碟。",
+  "mbNote": "釘 release-group 45ca750d-32c1-4860-a388-881d4c03ff20。回問兩個端點確認：title「Falling in Love With Love」、artist-credit 單一「Norio Maeda」（實體 5f569b75-098f-445d-9293-d65e25e55c33）、first-release-date 1980、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1980 Official，Toshiba Records TP-72340，12 吋黑膠 12 軌）。廠牌是用 release 端點回問來的（第 259 條）。列舉檔 batch-progress/enum/jp-toshiba.json 有這一筆。⚠ 前田憲男 名下另有五筆 Soundtrack（Star Wolf 1978／エロイカより愛をこめて 1982／Crusher Joe 兩張 1983／水滸伝 1989）與一筆 `Other`（蛙の合唱 1994），依固定規格原聲帶不收、非 Album 不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "フォーリング・イン・ラヴ・ウィズ・ラヴ；Norio Maeda；前田 憲男；Maeda Norio Falling in Love With Love",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "八城一夫トリオ",
+  "album": "LOVE IS HERE TO STAY",
+  "year": 1968,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Takt JAZZ-17（JP 1968 12 吋黑膠 10 軌，日本コロムビア 的 Takt 爵士線）；JP 2014-04-23 日本コロムビア COCB-54090 Blu-spec CD 11 軌（題《LOVE IS HERE TO STAY +1》）",
+  "why": "八城一夫（1930–1991）是日本戰後最早一批的爵士鋼琴家，本張是他三重奏在 Takt 爵士線留下的 1968 年原盤，catno JAZZ-17 與 渡辺貞夫《My Romance》（JAZZ-5）、宮沢昭 那一批同屬 日本コロムビア 1966–69 的 Takt 系列。實掃 seed_cards.json 全 16,450 列（八城一夫／Kazuo Yashiro／八城／Yashiro／一夫 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「八城」「Yashiro」「一夫」在池中零命中。本組六位線上池全是零。 這是他 MB 目錄裡年代最早、又有原盤 release 的一張，作為他的入池第一張最站得住。",
+  "risk": "撞卡：盤名在池中零命中（池中 Starsailor《Love Is Here》是另一張碟、另一位，已核過整個掛名字串），掛名字串「八城一夫トリオ」池中零張。掛名：MB 群組實體 1dd6a5c1 的主名就是漢字＋片假名的「八城一夫トリオ」（alias「Kazuo Yashiro Trio」），與池中先例同形；本批同一位另有個人掛名「八城一夫」（實體 ad1780b5），**兩個字串對應兩個不同實體，不是分裂的重複**（c-133 第 407 條同形），已逐張核過同一張碟沒有被兩種寫法各收一次。年份：MB first-release-date 1968 與轄下 Takt JAZZ-17 原盤 release 的年份一致，沒有分歧；⚠ **軌數兩層**：1968 原盤 10 軌、2014 Blu-spec 復刻 11 軌（題多一個「+1」），**研究層引軌數時要說清楚是哪一版**（第 251 條）。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（盤名＋掛名）與藝人目錄（artistId 1621854449「Kazuo Yashiro Trio」）都命中 1742431392《Love Is Here to Stay》**11 軌**——**與 MB 的 2014 復刻一致、與 1968 原盤的 10 軌不一致**，⚠ 而且 Apple 的日期欄寫 2000-01-01、℗ 欄寫 2014 Nippon Columbia，**三個數字互不相同**；只是觀察不是結論（第 254 條）。⚠ 同一位在 Apple 有兩個 artistId（151990570「八城一夫」名下 2 張、1621854449「Kazuo Yashiro Trio」名下 5 張），拼法還不同（c-133 第 408 條，本組第三次）。",
+  "mbNote": "釘 release-group 6e5a3bec-c568-414b-8e8e-8bffb86b5925。回問兩個端點確認：title「LOVE IS HERE TO STAY」、artist-credit 單一「八城一夫トリオ」（實體 1dd6a5c1-4e4e-4870-af36-0e295e1898d0，Group／JP，alias「Kazuo Yashiro Trio」）、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1968 Takt JAZZ-17 12 吋 10 軌／JP 2014-04-23 Columbia COCB-54090 Blu-spec CD 11 軌，題《LOVE IS HERE TO STAY +1》）。廠牌是用 release 端點回問來的（第 259 條）。藝人實體：個人 八城一夫 ad1780b5-e175-427b-8977-ca585a8f3521（Person／JP／1930-02-10–1991-07-13，無 alias，名下 17 個 RG）；八城一夫トリオ 1dd6a5c1（4 個 RG）；八城一夫とオールスターズ 1a089205（1 個 RG，大橋巨泉 的談話盤《プレイボーイ入門》，不收）；八城一夫とリズム・トリオ 2dcbe6a8（Orchestra／JP，**名下 0 個 RG——空殼實體，與 c-132 第 381 條同形**）。列舉檔 batch-progress/enum/jp-columbia.json 有這一筆。刻意不釘（合掛，依第 321／385 條）：521bd494《Drums & Jazz Piano》（credit「Akira Ishikawa & Count Buffaloes, Kazuo Yashiro Trio」，**石川晶 是 c-133 b 組的掛名**）、f07d3cd3《My Ideal》1975（「Muneyoshi Nishiyo Meets Kazuo Yashiro Trio」）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Love Is Here to Stay；LOVE IS HERE TO STAY +1；Kazuo Yashiro Trio；八城一夫；八城一夫トリオ；Yashiro Kazuo Trio",
+  "reissuedBy": "日本コロムビア 2014-04-23 Blu-spec CD COCB-54090（題《LOVE IS HERE TO STAY +1》，11 軌）；Apple jp 1742431392 數位",
+  "g": "a"
+ },
+ {
+  "artist": "八城一夫",
+  "album": "Drivin'",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Trio PA-7059（JP 1973 12 吋黑膠 8 軌）",
+  "why": "八城一夫 1973 年在 Trio Records 的個人盤，是他從 1950 年代的舞廳／夜總會鋼琴一路走到 1970 年代錄音室三重奏的中段代表作。實掃 seed_cards.json 全 16,450 列（八城一夫／Kazuo Yashiro／八城／Yashiro／一夫 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「八城」「Yashiro」「一夫」在池中零命中。本組六位線上池全是零。 這張與同組的《LOVE IS HERE TO STAY》（1968 Takt、三重奏掛名）分屬他兩個 MB 實體，補上之後他的個人掛名第一次進池。",
+  "risk": "撞卡：盤名在池中零命中（池中 Junior Parker《Driving Wheel》是另一張碟）。掛名：MB 的 artist-credit 是「Kazuo Yashiro」、指向個人實體 ad1780b5（主名 八城一夫），依第 355 條取實體主名漢字。年份：MB first-release-date 1973 與轄下唯一一筆 Trio PA-7059 原盤 release 同年；⚠ **Apple jp 官方條目 1329380757《Drivin'》（artistId 151990570「八城一夫」，8 軌與 MB 一致，℗ TRIO RECORDS）標的是 2001-11-05**——那是 Trio 目錄的 CD／數位化日，不是原盤年，**本張不走第 383 條改判，照 MB 的 1973**（第 383 條的通則只在「MB 只有年份、店面有廠牌自家的精確日期、而且同一位其他碟兩邊一致」時才適用，這裡 MB 有原盤 release、Apple 那個日期比 MB 晚 28 年，方向相反）。⚠ 盤名末尾是 ASCII 撇號 `'`（U+0027），MB 原題即如此，未做正規化。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search 與藝人目錄（artistId 151990570）都命中 1329380757，8 軌與 MB 一致；只是觀察不是結論（第 254 條）。",
+  "mbNote": "釘 release-group ae3b312c-90ca-4e79-8501-c1e5cc9e3c59。回問兩個端點確認：title「Drivin'」、artist-credit 單一「Kazuo Yashiro」（實體 ad1780b5-e175-427b-8977-ca585a8f3521）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1973 Official，Trio PA-7059，12 吋黑膠 8 軌）。廠牌是用 release 端點回問來的（第 259 條）。⚠ 八城一夫 名下 17 個 RG 裡，**合掛佔 9 個**（三張同名的《Let's Swing Now》1975／1976×2 分別是四人、四人、五人平列；West 8th Street on Castle Ave. 三部曲全部四人平列；Lady Bird 1977 四人平列；Sweet and Lovely 帶斜線的「Kazuo Yashiro / Osamu Kawakami」；The Amazing Eiji Kitamura - Eight Degrees North 1980 是「Eiji Kitamura Featuring Kazuo Yashiro」——**那一張的兩位都是本組的掛名**，依第 385 條的加倍版一律不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ドライヴィン；Drivin；Kazuo Yashiro；八城一夫；Yashiro Kazuo Drivin",
+  "reissuedBy": "Trio Records 數位（Apple jp 1329380757，2001-11-05 上架，℗ TRIO RECORDS）",
+  "g": "a"
+ },
+ {
+  "artist": "八城一夫",
+  "album": "Side By Side",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "AUDIO LAB RECORD ALJ-1012（JP 1974 12 吋黑膠 10 軌，release status 資料庫端未登記）；JP 2012-05-23 AUDIO LAB RECORD OVGL-00023 SACD 10 軌",
+  "why": "Audio Lab. Record 是 1970 年代日本最講究錄音的獨立爵士廠牌（猪俣猛《The Dialogue》ALJ-104x 就在同一條線上），《Side By Side》是 八城一夫 在這裡開的系列——同一場錄音裡分別彈 Bösendorfer 與 Steinway 兩台琴，副題就寫明了。實掃 seed_cards.json 全 16,450 列（八城一夫／Kazuo Yashiro／八城／Yashiro／一夫 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張。本組六位線上池全是零。 這是他最被錄音發燒圈記住的一張，也是這條系列的第一集。",
+  "risk": "撞卡：盤名在池中零命中。⚠ **這是一個系列的第一集**：MB 另有 fea314e0《Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway》1976-10（ALJ-3042）、70619ef7《Side By Side Vol.3》2020-05-20、e0c16435《Side by Side Again》（無日期），**四個 RG 是四張碟不是重複建檔**（軌數與 catno 各不相同），`risk` 互相指向（簡報第六節第 3 點）；本批只收第一集，其餘列進第 424 條的候補清單，**下游不得折疊**。⚠ 盤名：MB 的 RG 題只有《Side By Side》，但 1974 原盤 release 的題是《Side by Side. Kazuo Yashiro Plays Bösendorfer & Steinway》——**RG 題與 release 題不同，下游必須鎖 rgMbid**。⚠ 1974 那筆 release 的 status 是 null（資料庫端未登記，不是 Bootleg）；2012 年那筆 SACD 是 Official。年份取 1974（原盤）。⚠ **八城一夫 1991 年過世**，2012 SACD 與 2020 的 Vol.3 都是身後發行，研究層引「他錄了第三集」之前要覆核。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（`Side By Side Kazuo Yashiro`）0 筆、兩個 artistId（151990570 名下 2 張、1621854449 名下 5 張）的目錄裡也沒有這一筆——**這只是兩種查法未命中的觀察，不是「未上架」的結論**（第 254 條）；封面可走 Discogs（catno ALJ-1012／年 1974／廠牌 Audio Lab. Record 三項可對）。",
+  "mbNote": "釘 release-group 86c1a08f-5ece-41a3-b50c-84b147ee3e5e。回問兩個端點確認：title「Side By Side」、artist-credit 單一「Kazuo Yashiro」（實體 ad1780b5）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1974 status null，AUDIO LAB RECORD ALJ-1012，12 吋黑膠 10 軌，release 題《Side by Side. Kazuo Yashiro Plays Bösendorfer & Steinway》／JP 2012-05-23 Official，AUDIO LAB RECORD OVGL-00023，SACD 10 軌）。廠牌是用 release 端點回問來的（第 259 條）。⚠ **Audio Lab. Record 這條線與 c-133 第 406 條的猪俣猛《The Dialogue》是同一家**（那邊記著原盤 catno 三說 ALJ-1047／ALJ-1059／ALJ-HG1），本批的 ALJ-1012（八城一夫）與 ALJ-1046（北村英治《Because of You》）兩個號都在 MB 上查得到、且都掛在 AUDIO LAB RECORD 名下——**這對本機補建 The Dialogue 的原盤 release 有用**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Side by Side. Kazuo Yashiro Plays Bösendorfer & Steinway；サイド・バイ・サイド；Kazuo Yashiro；八城一夫",
+  "reissuedBy": "AUDIO LAB RECORD 2012-05-23 SACD OVGL-00023",
+  "g": "a"
+ },
+ {
+  "artist": "八城一夫",
+  "album": "The Way We Were",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "label": "東芝 Toshiba Records TP-60303（JP 1978 12 吋黑膠 14 軌）",
+  "why": "八城一夫 1978 年轉到 東芝 後的個人盤，14 軌的曲目量在他的目錄裡是最大的一張，走的是他擅長的標準曲小品路線。實掃 seed_cards.json 全 16,450 列（八城一夫／Kazuo Yashiro／八城／Yashiro／一夫 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張。本組六位線上池全是零。 這張與同組的《Side By Side》（1974 Audio Lab）、《Drivin'》（1973 Trio）把他 1970 年代三家廠牌各記一張。",
+  "risk": "撞卡：盤名在池中零命中；⚠ **池中有 Barbra Streisand《The Way We Were》**——同盤名不同掛名，**判定看整個掛名字串，不折疊**（簡報提醒的形狀，本組唯一一例）。掛名：MB 的 artist-credit 是「Kazuo Yashiro」、指向個人實體 ad1780b5，依第 355 條取實體主名漢字。年份：MB first-release-date 1978 與轄下唯一一筆 東芝 TP-60303 原盤 release 同年；Apple jp／us 三種查法都未命中（search `The Way We Were Kazuo Yashiro` 0 筆、兩個 artistId 的目錄裡也沒有），**沒有精確日期，照第 364 條取 MB 值**。封面 CAA release-group 端點 200（實測）。⚠ 同一段東芝目錄號：本批 前田憲男《Falling in Love With Love》是 TP-72340（1980）、八城一夫 另一張未收的《It's a Sin to Tell a Lie》是 TP-72341（1980）——**三個號都在東芝、年份不同，不是同一張碟**。",
+  "mbNote": "釘 release-group 49401b1f-2d72-445b-86ce-65204ed20217。回問兩個端點確認：title「The Way We Were」、artist-credit 單一「Kazuo Yashiro」（實體 ad1780b5）、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1978 Official，Toshiba Records TP-60303，12 吋黑膠 14 軌）。廠牌是用 release 端點回問來的（第 259 條）。列舉檔 batch-progress/enum/jp-toshiba.json 有這一筆。⚠ 要防的合併：MB 另有 `Mitsuru Yashiro`（fa124d07，Super Eurobeat DJ mix）與 `矢代秋雄`（6aab54fc，作曲家）、`八代亜紀`（694ba29c，演歌），**任何以「Yashiro」為鍵的比對都會把四位混在一起**（第 307 條的合併風險，已反查池中零命中）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "追憶；ザ・ウェイ・ウィー・ワー；Kazuo Yashiro；八城一夫；Yashiro Kazuo The Way We Were",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "北村英治",
+  "album": "Happy Cooking",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "廠牌資料庫端未登記（MB release 端點回問 `inc=labels`，1973 那筆 release 的 label-info 是空陣列、也沒有目錄編號）；同名同年的續集《Happy Cooking Vol. II》是 Chrysler CE-3002，**本張的廠牌歸屬研究層須覆核**",
+  "why": "北村英治（1929–）是日本搖擺單簧管的代表人物，Benny Goodman 一脈在日本的正統繼承者。《Happy Cooking》是他 1973 年開的系列，後來連樂團都叫「ハッピー・クッキング・オールスターズ」——這個盤名等於他後半生的招牌。實掃 seed_cards.json 全 16,450 列（北村英治／Eiji Kitamura／北村／Kitamura／英治 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「北村」只命中 北村昌士＋PHONOGENIX《Prologue for Post Modern Music》一張（另一位，日本前衛／YBO²），「Kitamura」「英治」零命中。本組六位線上池全是零。 收這一張是把他這條招牌線的起點建進池子。",
+  "risk": "撞卡：盤名在池中零命中。⚠ **廠牌欄是空的**：依第 259 條改用 `release?release-group=<id>&inc=labels+media` 回問，1973 那筆 release 的 `label-info` **確實是空陣列**（不是問錯端點）；同年的續集 94cc4142《Happy Cooking Vol. II》掛的是 Chrysler CE-3002，**兩張大機率同廠，但本張沒有一手證據，`label` 不寫死**。⚠ **這是一個系列**：MB 另有 94cc4142《Happy Cooking Vol. II》1973（Chrysler CE-3002，8 軌）與 70f376a1《ハッピー・クッキング》1986-12-16（Trio，12 軌），**三個 RG 是三張碟**（軌數、廠牌、年份都不同），本批只收第一張，其餘列進第 424 條候補清單，下游不得折疊。年份：MB first-release-date 1973（只有年份），沒有其他來源可比。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（`Happy Cooking Eiji Kitamura`）回的四筆全是別的碟（1986 年的《ハッピー・クッキング》12 軌、1991 年的《札幌コンサート》8 軌、2020 年的精選、2003 年的三團合掛盤），藝人目錄（artistId 304482457，名下 13 張）裡也沒有 1973 年這一筆——**兩種查法未命中，只是觀察不是結論**（第 254 條）。",
+  "mbNote": "釘 release-group b20d6496-a61d-4024-aa14-5fa7057f8783。回問兩個端點確認：title「Happy Cooking」、artist-credit 單一「Eiji Kitamura」（實體 233359be-23d3-4c0c-bfb8-405f52bf1538，Person／JP／1929-04-08–，disambiguation「reeds」，alias「Eiji Kitamura」，名下 30 個 RG）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1973 Official，label-info 空陣列、無 catno，12 吋黑膠 10 軌）。藝人實體：北村英治 233359be；北村英治クインテット aa14932e（1 個 RG，《Ai No Cocktail》1979 KING JAZ-3024）；Eiji Kitamura & All Stars 8bd1f9ef（2 個 RG，**disambiguation 明寫「北村英治とオールスターズ」——這是本組 前田憲男とオールスターズ 掛名寫法的直接依據**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ハッピー・クッキング；Eiji Kitamura；北村英治；Kitamura Eiji Happy Cooking",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "北村英治",
+  "album": "Because of You",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "label": "AUDIO LAB RECORD ALJ-1046（JP 1976 12 吋黑膠 12 軌）",
+  "why": "北村英治 1976 年在 Audio Lab. Record 錄的一張——那是 1970 年代日本最講究錄音的獨立爵士廠牌，同一段目錄號裡就有 猪俣猛《The Dialogue》（ALJ-104x）與 八城一夫《Side By Side》（ALJ-1012）。單簧管在這種錄音下最吃虧也最見真章，這張因此常被當成他音色的樣本盤。實掃 seed_cards.json 全 16,450 列（北村英治／Eiji Kitamura／北村／Kitamura／英治 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「北村」只命中 北村昌士＋PHONOGENIX《Prologue for Post Modern Music》一張（另一位，日本前衛／YBO²），「Kitamura」「英治」零命中。本組六位線上池全是零。",
+  "risk": "撞卡：盤名在池中零命中同掛名；⚠ **池中有 Ne-Yo《Because of You》與 Tony Bennett《Because of You》兩張**——同盤名不同掛名，**判定看整個掛名字串，不折疊**。掛名：MB 的 artist-credit 是「Eiji Kitamura」、指向個人實體 233359be（主名 北村英治），依第 355 條取實體主名漢字。年份：MB first-release-date 1976 與轄下唯一一筆 ALJ-1046 原盤 release 同年；Apple 兩種查法未命中（search 回的十四筆全是他別的碟、artistId 304482457 的 13 張目錄裡沒有這一筆），沒有精確日期可比，照第 364 條取 MB 值。封面 CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 79426530-cc1e-4740-9007-c75ba5831afd。回問兩個端點確認：title「Because of You」、artist-credit 單一「Eiji Kitamura」（實體 233359be）、first-release-date 1976、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1976 Official，AUDIO LAB RECORD ALJ-1046，12 吋黑膠 12 軌）。廠牌是用 release 端點回問來的（第 259 條）。⚠ **對 c-133 第 406 條有用的一筆**：那條記著 猪俣猛《The Dialogue》1977 Audio Lab 原盤「MB 未建檔、catno 三說」，而本批在同一家廠牌拿到兩個已建檔的號（ALJ-1012 1974 八城一夫／ALJ-1046 1976 北村英治），**號碼遞增、年份遞增，1977 年的 ALJ-104x 段落與那三說是相容的**——本機補建時可以拿這兩筆當號段旁證（同 c-132 第 383 條用 SKJ 號段的作法）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ビコーズ・オブ・ユー；Eiji Kitamura；北村英治；Kitamura Eiji Because of You",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "北村英治",
+  "album": "Sophisticated Lady",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Yupiteru Records YJ25-7011（JP 1978-08-28 12 吋黑膠 9 軌）",
+  "why": "盤名取自 Duke Ellington 的〈Sophisticated Lady〉——北村英治 1978 年在 ユピテル 錄的一張，是他 1970 年代末從自家系列走進大廠發行的分水嶺，MB 上還留著逐日的發行日期（1978-08-28），在他這一整段目錄裡是資料最乾淨的一筆。實掃 seed_cards.json 全 16,450 列（北村英治／Eiji Kitamura／北村／Kitamura／英治 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「北村」只命中 北村昌士＋PHONOGENIX《Prologue for Post Modern Music》一張（另一位，日本前衛／YBO²），「Kitamura」「英治」零命中。本組六位線上池全是零。",
+  "risk": "撞卡：盤名在池中零命中。掛名：MB 的 artist-credit 是「Eiji Kitamura」、指向個人實體 233359be，依第 355 條取實體主名漢字。年份：MB first-release-date **1978-08-28**（逐日），轄下唯一一筆 Yupiteru YJ25-7011 release 同日，**日期、廠牌、catno、載體全部出自同一筆 release**（第 262 條）；Apple 兩種查法未命中（search `Sophisticated Lady Eiji Kitamura` 0 筆、artistId 304482457 目錄裡沒有），沒有分歧可判。封面 CAA release-group 端點 200（實測）。⚠ 同一家 ユピテル 的下一號 YJ25-7031 是他 1979 年的《Bei Mir Bist Do Schoen》（未收，列候補）——**同廠同系列、不同碟**。",
+  "mbNote": "釘 release-group 8744704c-7400-4dde-bf06-c44fc534096e。回問兩個端點確認：title「Sophisticated Lady」、artist-credit 單一「Eiji Kitamura」（實體 233359be）、first-release-date 1978-08-28、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1978-08-28 Official，Yupiteru Records YJ25-7011，12 吋黑膠 9 軌）。廠牌是用 release 端點回問來的（第 259 條）。刻意不釘（合掛，依第 321／385 條）：35700eba《Dear Friends》1982（Concord Jazz JUN-4011，**artist-credit n=2**：Eiji Kitamura + The Concord Jazz All-Stars 0805a4af——**這是他國際知名度最高的一張、CAA 200、rgMbid 已備妥，擋掉的代價寫在第 425 條**）、9a94c322《Sapporo Concert》1980（n=2，Happy Cooking All Stars 6b56f822）、6a2daec0《Teddy Wilson meets Eiji Kitamura》1970-10-05、93272b2e《We》1983（Woody Herman）、4e2045ef《Live at Junk》1981（Harold Land）、25c36fc5《Yuh Sings for You》1973（**Masaru Imada Trio ＝ 今田勝，c-134 b 組的掛名**）、7727b270《collaboration Kunihoko meets Eiji》2002（**菅野邦彦，c-134 b 組**）、9b78d3cb《The Amazing Eiji Kitamura - Eight Degrees North》1980（**八城一夫，本組掛名**）、cac8d9c8《Impression-C.D.》1985（Helen Merrill／Compilation）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ソフィスティケイテッド・レディ；Eiji Kitamura；北村英治；Kitamura Eiji Sophisticated Lady",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "北村英治",
+  "album": "April Date",
+  "year": 1979,
+  "genres": [
+   "jazz"
+  ],
+  "label": "CBS/Sony 25AP 1035（JP 1979 12 吋黑膠 9 軌）",
+  "why": "北村英治 1979 年在 CBS/Sony 的一張——那是他從 ユピテル、Audio Lab 這些小廠走到日本最大唱片公司的一年，也是日本搖擺單簧管少見進到大廠主力目錄的例子。實掃 seed_cards.json 全 16,450 列（北村英治／Eiji Kitamura／北村／Kitamura／英治 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「北村」只命中 北村昌士＋PHONOGENIX 一張（另一位）。本組六位線上池全是零。 這張與同組的《Happy Cooking》1973、《Because of You》1976、《Sophisticated Lady》1978 把他 1970 年代四家廠牌各記一張。",
+  "risk": "撞卡：盤名在池中零命中。掛名：MB 的 artist-credit 是「Eiji Kitamura」、指向個人實體 233359be，依第 355 條取實體主名漢字。年份：MB first-release-date 1979（只有年份），轄下唯一一筆 CBS/Sony 25AP 1035 release 同年；Apple 三種查法都未命中（search `April Date Eiji Kitamura` **0 筆**、artistId 304482457 的 13 張目錄裡沒有、`北村英治` 的 24 筆搜尋結果裡也沒有），**沒有精確日期，照第 364 條取 MB 值**。⚠ 這與 c-132 第 389 條、c-133 第 408 條記的規律同向：**CBS/Sony 1969–79 的日本爵士在 Apple 上整批缺席**，而同一位的 Trio Records 目錄（ハッピー・クッキング／札幌コンサート／Song Folio／ヒット・キット・パーティー…）整批都在。封面 CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 8b9fc089-2f11-478d-8c5b-9ad440455d2a。回問兩個端點確認：title「April Date」、artist-credit 單一「Eiji Kitamura」（實體 233359be）、first-release-date 1979、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1979 Official，CBS/Sony 25AP 1035，12 吋黑膠 9 軌）。廠牌是用 release 端點回問來的（第 259 條）。列舉檔 batch-progress/enum/jp-cbs-sony.json 有這一筆（artist 欄寫「Eiji Kitamura」）。⚠ 要防的合併：MB 另有 `北村英志`（c590f430）、`北村秀治`（7d24e7e7）兩個近字掛名，**任何以「北村」或「Kitamura」為鍵的比對都會把三位混在一起**（第 307 條，已反查池中零命中）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "エイプリル・デイト；Eiji Kitamura；北村英治；Kitamura Eiji April Date",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "中村八大",
+  "album": "HACHIDAI NAKAMURA",
+  "year": 1959,
+  "genres": [
+   "jazz"
+  ],
+  "label": "King（MB release 端點回傳廠牌名 KING、無目錄編號、XW 數位 14 軌）；原盤 1959 年 King Record（Apple jp 官方條目 ℗ 1959 King Record Co.,Ltd，catno 資料庫端未登記）",
+  "why": "中村八大（1931–1992）在寫〈上を向いて歩こう〉成為國民作曲家之前，是早稻田的爵士鋼琴手、Six Joes 的核心，1950 年代日本 bebop 最早的一批人。這張以他本名為題的 1959 年 King 盤，就是那段爵士鋼琴家身分的存證——他日後的流行曲太有名，反而把這一面蓋掉了。實掃 seed_cards.json 全 16,450 列（中村八大／Hachidai Nakamura／中村／Nakamura／八大 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「中村」另命中 中村照夫《Unicorn》、中村達也《LOCUS》、中村達也カルテット《ソング・オブ・パット》、中村ヨシミツ《魂のギター》四張（四位都是另一位），「Nakamura」另命中 Toshimaru Nakamura《No-Input Mixing Board》一張（另一位）。本組六位線上池全是零。 這張是他爵士期在 MB 上唯一一張可釘的正規 Album。",
+  "risk": "撞卡：盤名在池中零命中。⚠ **年份改判（第 352／364／383 條第一型）**：MB first-release-date 是 **2024-11-12**（轄下只有 King 的 XW 數位 release 一筆），`year` 改取 **1959**——證據是 **Apple jp 官方條目 1777007651《HACHIDAI NAKAMURA》（artistId 1501367215，14 軌與 MB 逐軌數一致，日期 1959-04-01、℗ 1959 King Record Co.,Ltd）**；而且 **`1777007651` 正落在 c-132 第 391 條點名的 King Records 2024 年數位化號段 1777007028〜1777021265 之內**（c-133 第 408 條已應驗一次，本組第二次）——**那一段就是 King 把 1958–85 日本爵士目錄整批上架的批號，MB 的 2024-11-12 是同一批的建檔日**。⚠ 依 c-133 第 404 條「MB 轄下只有數位 release 不是排除理由」照收；catno 是 `release` 端點回來的實情（沒有），不是「MB 未填」的推測（第 259 條）。⚠ `selfTitled`：盤名就是他名字的羅馬字大寫，已標 true。封面 CAA release-group 端點 404（實測）；可走的路：Apple jp 1777007651 → apple-verified-collection（c-132 第 382 條）。Apple 兩種查法都命中（search `中村八大` 與 artistId 1501367215 名下兩張）；只是觀察不是結論（第 254 條）。⚠ **同一位在 Apple 有至少三個 artistId**：1501367215（Hachidai Nakamura，2 張）、77572891（中村八大，多為 1990 年代以後的鋼琴小品與 EMI／Sony 選輯）、1762794896（Hachidai Nakamura Modern Trio）——c-133 第 408 條的坑，本組第四次。",
+  "mbNote": "釘 release-group 0ccb562a-252b-4104-8528-e5a615f07e64。回問兩個端點確認：title「HACHIDAI NAKAMURA」、artist-credit 單一「中村八大」（實體 2254dab9-df9d-4a8b-941f-e35949b41664，Person／JP／1931-01-20–1992-06-10，alias Hachidai Nakamura／H. NAKAMURA／中村八大／なかむら はちだい）、first-release-date 2024-11-12、primary-type Album、secondary-types 空、轄下 1 個 release（XW 2024-11-12 Official，廠牌 KING、無 catno，Digital Media 14 軌）。廠牌是用 release 端點回問來的（第 259 條）。列舉檔 batch-progress/enum/jp-king.json 有這一筆（年份寫 2024，即 MB 值）。藝人實體：中村八大 2254dab9（4 個 RG）；中村八大モダン・トリオ dd7d0b2b（Orchestra／JP，1 個 RG）；**中村八大トリオ 5ba2c845（Group／Tokyo，0 個 RG）、中村八大クインテット 41692d80（0 個 RG）、中村八大とニューサウンズ・オーケストラ b850dfbc（0 個 RG）——三個空殼實體，與 c-132 第 381 條同形，空殼本身就是「他 1950–60 年代的碟沒建檔」的證據**。刻意不釘：fc98d491《奴さん / 花笠踊り》（primary-type **Single**，且與 江利チエミ 合掛）、cb332efe《ビクター・トレジャー・アーカイヴス〜中村八大ビクター・イヤーズ》2023（Victor VICL-65811/2，**secondary-types 含 Compilation**，2CD 22+23 軌，CAA 200——列進第 424 條候補，若要收得走 §5.6）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "中村八大；Hachidai Nakamura；ハチダイ・ナカムラ；Nakamura Hachidai",
+  "reissuedBy": "King Records 2024-11-12 全球數位；Apple jp 1777007651（℗ 1959 King Record Co.,Ltd）",
+  "g": "a"
+ },
+ {
+  "artist": "中村八大モダン・トリオ",
+  "album": "中村八大“日本の旅”",
+  "year": 1961,
+  "genres": [
+   "jazz"
+  ],
+  "label": "日本コロムビア COKM-45262（JP／XW 2024-09-04 數位 10 軌）；原盤 1961 年 日本コロムビア（Apple jp 官方條目 ℗ 1961 Nippon Columbia／NIPPONOPHONE，catno 資料庫端未登記）",
+  "why": "1961 年 中村八大 帶三重奏把日本各地的民謠與風土寫成組曲，是「和製爵士要怎麼處理日本素材」這個題目最早的一次正面嘗試——比 猪俣猛《Jazz Rock 琴》、前田憲男《ロック・コミュニケーション 八木節》都早了將近十年。實掃 seed_cards.json 全 16,450 列（中村八大／Hachidai Nakamura／中村／Nakamura／八大 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「中村」另命中 中村照夫《Unicorn》、中村達也《LOCUS》、中村達也カルテット《ソング・オブ・パット》、中村ヨシミツ《魂のギター》四張（四位都是另一位），「Nakamura」另命中 Toshimaru Nakamura《No-Input Mixing Board》一張（另一位）。本組六位線上池全是零。 這張補的正是他從 bebop 走向日本題材的那一格。",
+  "risk": "撞卡：盤名在池中零命中，掛名字串「中村八大モダン・トリオ」池中零張。⚠ **年份改判（第 352／364／383 條第一型）**：MB first-release-date 是 **2024-09-04**（轄下只有 日本コロムビア 的數位 release 一筆），`year` 改取 **1961**——證據是 **Apple jp 官方條目 1763577218《Hachidai Nakamura: Nihon No Tabi》（artistId 1762794896「Hachidai Nakamura Modern Trio」，10 軌與 MB 逐軌數一致，日期 1961-02-01、℗ 1961 Nippon Columbia／NIPPONOPHONE）**。⚠ 依 c-133 第 404 條照收數位獨有的 release。⚠ **盤名含全形引號 U+201C／U+201D**（MB 原題就是 `中村八大“日本の旅”`），依 c-133 第 409 條的判準**不做正規化**（那是日文標題排版的一部分、不是連字號的替代，與 `～日本伝説の中の詩情～` 同類）；**但下游必須鎖 rgMbid，因為 Apple 用的是羅馬字題「Hachidai Nakamura: Nihon No Tabi」、完全對不上**。⚠ 掛名：MB 群組實體 dd7d0b2b 的主名就是漢字＋片假名的「中村八大モダン・トリオ」（type 是 Orchestra 不是 Group，但主名形狀與池中先例一致），本批不改寫；同一位的個人掛名「中村八大」另收一張，**兩個字串對應兩個不同實體，不是分裂的重複**。封面 CAA release-group 端點 404（實測）；可走的路：Apple jp 1763577218 → apple-verified-collection（c-132 第 382 條）。Apple 兩種查法都命中；只是觀察不是結論（第 254 條）。",
+  "mbNote": "釘 release-group f29aa202-27a5-479e-84d6-dda8602a6b62。回問兩個端點確認：title「中村八大“日本の旅”」、artist-credit 單一「中村八大モダン・トリオ」（實體 dd7d0b2b-2927-4bf1-bfcf-505b17d2cd23，Orchestra／JP）、first-release-date 2024-09-04、primary-type Album、secondary-types 空、轄下 1 個 release（XW 2024-09-04 Official，Columbia COKM-45262，Digital Media 10 軌）。廠牌是用 release 端點回問來的（第 259 條）。列舉檔 batch-progress/enum/jp-columbia.json 有這一筆（artist 欄寫「中村八大モダン・トリオ」、年份寫 2024）。⚠ 這一筆與同組的《HACHIDAI NAKAMURA》（King 2024 數位，原盤 1959）是**兩家廠牌在 2024 年各自把 1950–60 年代日本爵士目錄整批數位化**的兩個案例——**「MB 的 2024 建檔日 ≠ 原盤年」在本組中村八大兩張上連續應驗兩次**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "日本の旅；Hachidai Nakamura: Nihon No Tabi；中村八大モダン・トリオ；Hachidai Nakamura Modern Trio；中村八大 日本の旅",
+  "reissuedBy": "日本コロムビア 2024-09-04 數位 COKM-45262；Apple jp 1763577218（℗ 1961 Nippon Columbia）",
+  "g": "a"
+ },
+ {
+  "artist": "中村八大",
+  "album": "ふたつのコンサート",
+  "year": 1995,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Hachidai CORPORATION HCCD-01／HCCD-02（JP 1995 2CD 11+14 軌）",
+  "why": "中村八大 1992 年過世，這套兩片裝收的是他生前兩場音樂會的實錄，由他自家的 Hachidai CORPORATION 發行——一位被流行曲蓋住爵士出身的鋼琴家，現場才聽得到他仍然在彈的那一面。實掃 seed_cards.json 全 16,450 列（中村八大／Hachidai Nakamura／中村／Nakamura／八大 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「中村」另命中 中村照夫《Unicorn》、中村達也《LOCUS》、中村達也カルテット《ソング・オブ・パット》、中村ヨシミツ《魂のギター》四張（四位都是另一位），「Nakamura」另命中 Toshimaru Nakamura《No-Input Mixing Board》一張（另一位）。本組六位線上池全是零。 這是他三張裡唯一的現場盤，也是唯一有實體 CD release 的一筆。",
+  "risk": "⚠ **這是現場錄音**：MB 的 secondary-types 含 **`Live`**（依第 253 條 Live 收但要標，`mbNote` 已寫明是現場錄音）。撞卡：盤名在池中零命中。⚠ 年份：MB first-release-date 1995（只有年份），轄下唯一一筆 2CD release 同年；**但盤名寫明是「兩場音樂會」、而他 1992 年已過世，演奏年必然早於 1995**，`year` 取首發年 1995、**演奏年待研究層覆核**（第 364 條第二型，簡報第四節第 2 點）。⚠ 廠牌 `Hachidai CORPORATION` 是他本人的公司，不是商業廠牌；catno HCCD-01／HCCD-02 兩筆出自同一筆 release（第 262 條）。封面 CAA release-group 端點 404（實測）；可走的路：**Apple jp／us 三種查法都未命中**（search `中村八大` 的 25 筆與三個 artistId 的目錄裡都沒有這一套）→ 只剩 Discogs（catno HCCD-01／年 1995／廠牌 Hachidai CORPORATION 三項可對）。只是觀察不是結論（第 254 條）。",
+  "mbNote": "釘 release-group 30456eaf-9e95-4962-83c5-ebc9f6d153ae。回問兩個端點確認：title「ふたつのコンサート」、artist-credit 單一「中村八大」（實體 2254dab9）、first-release-date 1995、primary-type Album、**secondary-types 含 `Live`（現場錄音）**、轄下 1 個 release（JP 1995 Official，Hachidai CORPORATION HCCD-01 / HCCD-02，CD 11 軌 + CD 14 軌）。廠牌是用 release 端點回問來的（第 259 條）。⚠ 中村八大 名下只有 4 個 RG，其中 1 個是 Single、1 個是 Compilation——**扣掉之後真正可收的就是本批這三張（含 中村八大モダン・トリオ 那一張），一張不剩**。他 1950–60 年代 King／Victor／Columbia 的爵士盤在 MB 上一張都沒有個人領銜的原盤 release（三個空殼編制實體就是證據），那些碟列在第 423 條的 §1 候選清單。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Futatsu no Concert；Two Concerts；中村八大；Hachidai Nakamura；中村八大 ふたつのコンサート",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "八城一夫",
+  "album": "Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "label": "AUDIO LAB RECORD ALJ-3042（JP 1976-10 12 吋黑膠 10 軌）；JP 2001-04-20 AUDIO LAB RECORD OVXA-00004 Hybrid SACD 10 軌",
+  "why": "《Side By Side》第二集——八城一夫 在 Audio Lab. Record 同一場錄音裡分別彈 Bösendorfer 與 Steinway 兩台琴，副題把這件事寫進盤名。第一集 1974 年開了頭，這張 1976 年 10 月把同一個作法再做一次，也是這條系列在他生前唯一的續作（第三集是他 1991 年過世後才出的）。實掃 seed_cards.json 全 16,450 列（八城一夫／Kazuo Yashiro／八城／Yashiro／一夫 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張。本組六位線上池全是零。 主線 2026-09-15 裁定把 八城一夫 從 4 張補到 6 張，這張是候補清單裡最有代表性的一筆。",
+  "risk": "撞卡：盤名在池中零命中。⚠ **這是系列第二集**：與同組的《Side By Side》（`86c1a08f`，1974，ALJ-1012，10 軌）**不是同一張碟**——catno 不同（ALJ-3042／ALJ-1012）、年份不同、MB 是兩個 RG，`risk` 互相指向（簡報第六節第 3 點）。系列另有 `70619ef7`《Side By Side Vol.3》2020-05-20 與 `e0c16435`《Side by Side Again》（無日期），**四個 RG 是四張碟，下游不得折疊**。⚠ 盤名含 `ö`（U+00F6，Bösendorfer）——那是德文變音字母不是連字號，不做正規化；非 ASCII 連字號與 U+30FC 破折號用法都已核過、沒有（第 409／409a 條）。年份：MB first-release-date **1976-10**（有年月、無日），轄下 1976-10 那筆 ALJ-3042 原盤 release 同期，`year` 取 1976，沒有分歧。⚠ **八城一夫 1991-07-13 過世**，2001 年的 SACD 是身後發行。封面 CAA release-group 端點 200（實測）。Apple 三種查法都未命中（search `Side By Side 2 Kazuo Yashiro` **0 筆**、`Side By Side Kazuo Yashiro` 0 筆、兩個 artistId〔151990570 名下 2 張／1621854449 名下 5 張〕的目錄裡也沒有）——只是觀察不是結論（第 254 條）；封面已有 CAA，不需要另尋來源。",
+  "mbNote": "釘 release-group fea314e0-8aca-4e20-9da5-ebaa4a6ec7c8。回問 release-group/<id>?inc=artist-credits+releases 與 release?release-group=<id>&inc=labels+media+artist-credits 確認：title「Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway」、artist-credit 單一「Kazuo Yashiro」（實體 ad1780b5-e175-427b-8977-ca585a8f3521）、first-release-date 1976-10、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1976-10 AUDIO LAB RECORD ALJ-3042 12 吋黑膠 10 軌／JP 2001-04-20 AUDIO LAB RECORD OVXA-00004 Hybrid SACD 10 軌）。廠牌是用 release 端點回問來的（第 259 條）。⚠ **對 c-133 第 406 條有用**：本批在 Audio Lab. Record 已拿到四個已建檔的號——ALJ-1012（1974 八城一夫）、ALJ-3042（1976 八城一夫，本張）、ALJ-1046（1976 北村英治《Because of You》），**ALJ-10xx 與 ALJ-30xx 是兩條並行的號段**，這對本機補建 猪俣猛《The Dialogue》1977 原盤（catno 三說 ALJ-1047／ALJ-1059／ALJ-HG1）時判斷號段有用。本張依主線 2026-09-15 裁定從第 424 條候補清單調上來（第 429a 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Side By Side 2；サイド・バイ・サイド 2；Kazuo Yashiro Plays Bosendorfer & Steinway；Kazuo Yashiro；八城一夫",
+  "reissuedBy": "AUDIO LAB RECORD 2001-04-20 Hybrid SACD OVXA-00004",
+  "g": "a"
+ },
+ {
+  "artist": "八城一夫",
+  "album": "It's a Sin to Tell a Lie",
+  "year": 1980,
+  "genres": [
+   "jazz"
+  ],
+  "label": "東芝 Toshiba Records TP-72341（JP 1980 12 吋黑膠 12 軌）",
+  "why": "八城一夫 1980 年在 東芝 的個人盤，是他生前最後一批錄音室作品之一（他 1991 年過世前的主要活動已轉到現場）。盤名取自 1936 年的搖擺標準曲，走的仍是他從 1950 年代夜總會一路帶下來的抒情小品路線。實掃 seed_cards.json 全 16,450 列（八城一夫／Kazuo Yashiro／八城／Yashiro／一夫 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張。本組六位線上池全是零。 主線 2026-09-15 裁定把 八城一夫 從 4 張補到 6 張，這張是候補清單裡年代最晚、也把他的目錄收在 1980 年的一筆。",
+  "risk": "撞卡：盤名在池中零命中。掛名：MB 的 artist-credit 是「Kazuo Yashiro」、指向個人實體 ad1780b5（主名 八城一夫），依第 355 條取實體主名漢字。⚠ **東芝 TP-7234x 這一段三個號，本批收了兩個**：TP-72340 是 前田憲男《Falling in Love With Love》1980、TP-72341 是本張——**同廠、同年、相鄰號、兩位不同的鋼琴家**，下游不得因號段相鄰而合併；本批另一張 八城一夫《The Way We Were》是 TP-60303（1978），是另一條號段。年份：MB first-release-date 1980（只有年份），轄下唯一一筆 TP-72341 原盤 release 同年；Apple 三種查法都未命中（search `It's a Sin to Tell a Lie 八城一夫` 回的 47 筆裡沒有一筆是他、兩個 artistId 的目錄裡也沒有），**沒有精確日期，照第 364 條取 MB 值**。⚠ 盤名含 ASCII 撇號 `'`（U+0027），MB 原題即如此，未做正規化。封面 CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 73de7c53-76cb-4330-9713-509ed7b2db4a。回問兩個端點確認：title「It's a Sin to Tell a Lie」、artist-credit 單一「Kazuo Yashiro」（實體 ad1780b5）、first-release-date 1980、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1980 Official，Toshiba Records TP-72341，12 吋黑膠 12 軌）。廠牌是用 release 端點回問來的（第 259 條）。列舉檔 batch-progress/enum/jp-toshiba.json 有這一筆。本張依主線 2026-09-15 裁定從第 424 條候補清單調上來（第 429a 條）。⚠ 候補清單裡的 `78e03b79`《Black Nag》（八城一夫トリオ，日本コロムビア COCB-54091）**本輪仍不收**——它是 COCB-5409x 那批 Takt 復刻的一員、MB 與 Apple 都只有 2014 年的日期，**原盤年查不到**（第 422 條 A 組那三張都是靠 Apple 的 ℗ 年改判的，這一張的 ℗ 欄寫的是 2014），依 c-133 第 401 條「原盤年查不到就不要硬收」維持不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "イッツ・ア・シン・トゥ・テル・ア・ライ；Its a Sin to Tell a Lie；Kazuo Yashiro；八城一夫；Yashiro Kazuo",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "北村英治",
+  "album": "Happy Cooking Vol. II",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Chrysler CE-3002（JP 1973 12 吋黑膠 8 軌）",
+  "why": "《Happy Cooking》第二集，與第一集同在 1973 年——這個盤名後來變成 北村英治 樂團的名字（ハッピー・クッキング・オールスターズ），1986 年他還用同一個名字再錄了一張。收第二集不只是補數量：**它的廠牌欄是有登記的（Chrysler CE-3002），而第一集的 label-info 是空的**，兩張並收才能把這條線的廠牌釘住。實掃 seed_cards.json 全 16,450 列（北村英治／Eiji Kitamura／北村／Kitamura／英治 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「北村」只命中 北村昌士＋PHONOGENIX 一張（另一位）。本組六位線上池全是零。 主線 2026-09-15 裁定把 北村英治 從 4 張補到 6 張，這張是候補清單裡最能代表他的一筆。",
+  "risk": "撞卡：盤名在池中零命中。⚠ **這是系列第二集**：與同組的《Happy Cooking》（`b20d6496`，1973，10 軌，label-info 空陣列）**不是同一張碟**——軌數不同（8／10）、廠牌登記狀態不同、MB 是兩個 RG，`risk` 互相指向（簡報第六節第 3 點）。系列另有 `70f376a1`《ハッピー・クッキング》1986-12-16（Trio，12 軌，MB 只有串流版），**三個 RG 是三張碟，下游不得折疊**。⚠ **這張的廠牌是本系列唯一有一手登記的**：`release` 端點回問到 Chrysler CE-3002；第一集的 label-info 確實是空陣列（不是問錯端點，第 259 條），**兩張同年、大機率同廠，但第一集仍不寫死**。年份：MB first-release-date 1973（只有年份），轄下唯一一筆 CE-3002 release 同年；Apple 三種查法都未命中（search `Happy Cooking Eiji Kitamura` 回的四筆全是別的碟、`ハッピー・クッキング Vol. II` **0 筆**、artistId 304482457 的 13 張目錄裡沒有 1973 年這兩筆）——只是觀察不是結論（第 254 條）。封面 CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 94cc4142-81a3-4984-80ab-72f302ca3961。回問兩個端點確認：title「Happy Cooking Vol. II」、artist-credit 單一「Eiji Kitamura」（實體 233359be-23d3-4c0c-bfb8-405f52bf1538，Person／JP／1929-04-08–，disambiguation「reeds」）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1973 Official，Chrysler CE-3002，12 吋黑膠 8 軌）。廠牌是用 release 端點回問來的（第 259 條）。本張依主線 2026-09-15 裁定從第 424 條候補清單調上來（第 429a 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ハッピー・クッキング Vol. 2；Happy Cooking 2；Eiji Kitamura；北村英治；Kitamura Eiji",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "北村英治クインテット",
+  "album": "Ai No Cocktail",
+  "year": 1979,
+  "genres": [
+   "jazz"
+  ],
+  "label": "KING JAZ-3024（JP 1979 12 吋黑膠 10 軌；該筆 release 的 status 資料庫端未登記）",
+  "why": "北村英治 1979 年在 King 以五重奏名義錄的一張——**這是 MB 上他唯一一張掛在編制實體（北村英治クインテット）名下、又不是合掛的碟**。他其餘三十張幾乎全以個人名義發行，所以這張是把「他帶的固定編制」建進池子的唯一機會。實掃 seed_cards.json 全 16,450 列（北村英治／Eiji Kitamura／北村／Kitamura／英治 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下零張；「北村」只命中 北村昌士＋PHONOGENIX 一張（另一位）。本組六位線上池全是零。 主線 2026-09-15 裁定把 北村英治 從 4 張補到 6 張，這張與《Happy Cooking Vol. II》一起調上來。",
+  "risk": "撞卡：盤名在池中零命中，掛名字串「北村英治クインテット」池中零張。⚠ 掛名：MB 群組實體 aa14932e 的主名就是漢字＋片假名的「北村英治クインテット」，與池中先例（峰厚介クインテット／白木秀雄クインテット）同形；同一位的個人掛名「北村英治」本批另收五張，**兩個字串對應 MB 兩個不同實體，不是分裂的重複**（c-133 第 407 條、c-132 第 388 條同形），已逐張核過同一張碟沒有被兩種寫法各收一次。⚠ **這筆 release 的 status 是 null**（資料庫端未登記，不是 Bootleg；同 八城一夫《Side By Side》1974 原盤的情形）。年份：MB first-release-date 1979，轄下唯一一筆 KING JAZ-3024 release 同年，沒有分歧。封面 CAA release-group 端點 **404**（實測）；可走的路：**Apple 三種查法全部 0 筆**（search `Ai No Cocktail 北村英治` 回的 15 筆全是他別的碟、`愛のカクテル 北村英治` **0 筆**、artistId 304482457 的 13 張目錄裡沒有）→ **只剩 Discogs**（catno JAZ-3024／年 1979／廠牌 KING 三項可對，超過 §4 來源四要求的兩項）。依 c-132 第 382 條，CAA 404 不是排除理由。⚠ **這張不在 King 2024 年數位化號段裡**（第 429 條）——同一家廠牌的 1979 年盤沒有被那一批帶上去，**「整批數位化」不等於「整個目錄」**。",
+  "mbNote": "釘 release-group b2e8918b-6770-4ef1-ab6a-213ba3b70059。回問兩個端點確認：title「Ai No Cocktail」、artist-credit 單一「北村英治クインテット」（實體 aa14932e-4d39-464d-81dd-85d29e141828，Group／JP，無 alias，名下只有這一個 RG）、first-release-date 1979、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1979，status null，KING JAZ-3024，12 吋黑膠 10 軌）。廠牌是用 release 端點回問來的（第 259 條）。列舉檔 batch-progress/enum/jp-king.json 有這一筆（artist 欄寫「北村英治クインテット」）。藝人實體三分：北村英治 233359be（Person，30 個 RG）／北村英治クインテット aa14932e（Group，1 個 RG）／Eiji Kitamura & All Stars 8bd1f9ef（Group，2 個 RG，**disambiguation 寫「北村英治とオールスターズ」——本組 前田憲男とオールスターズ 掛名寫法的依據**，其名下兩張都是合掛，不收）。本張依主線 2026-09-15 裁定從第 424 條候補清單調上來（第 429a 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "愛のカクテル；Ai no Cocktail；Eiji Kitamura Quintet；北村英治クインテット；北村英治",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

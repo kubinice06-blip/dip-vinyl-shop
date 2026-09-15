@@ -1,0 +1,456 @@
+[
+ {
+  "artist": "告五人 Accusefive",
+  "album": "我肯定在幾百年前就說過愛你",
+  "year": 2019,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "相信音樂國際股份有限公司（XW 2019-06-14 數位 11 軌）／相信音樂 RW0035（TW 2019-07-23 CD 11 軌，barcode 4713052737980）；CN 版掛 StreetVoice",
+  "why": "告五人的首張正規專輯，也是這支宜蘭三人組從街聲時期跨進實體發行的那一格。MB 這個 release-group 轄下四個 release（XW／CN／TW／SG），全部 11 軌，台灣實體是 2019-07-23 的 CD，label-info 記 相信音樂 RW0035，數位首發那筆記的是全稱「相信音樂國際股份有限公司」。相信音樂依主線 2026-09-13 裁定（第 276 條）過獨立閘：店主點名的六家是華納、環球、索尼、滾石、杰威爾、相知國際，相信音樂不在其內，而池中已有的 告五人《運氣來得若有似無》2020 本身就是相信音樂發行的，先例已在池子裡。實掃 seed_cards.json 全 16,450 列（漢字／拉丁／併寫三種寫法子字串雙向比對，並以整個掛名字串核對），池中這位藝人只有《運氣來得若有似無》2020 一張——首張、2023 與 2025 三張全空，這張是把池中的告五人往前補到起點。本卡的 MBID 由 c-126 策展層釘出（c126/rulings.md H 類），本組已逐張回打 release-group 端點覆核掛名與盤名，未翻案。",
+  "risk": "撞卡：盤名在池中零命中；池中同位藝人只有《運氣來得若有似無》，盤名不同、不折疊。掛名照池中原字串「告五人 Accusefive」一字不差（簡報第三節）；⚠ MB 的 artist-credit 是純漢字「告五人」、Apple 台灣店面藝人名也是純漢字，池中的併寫形只存在於卡池，研究層不可拿 artist-credit 直接當掛名。⚠ CN 版 release 的標題是簡體《我肯定在几百年前就说过爱你》且掛 StreetVoice——**StreetVoice 是數位通路不是廠牌（第 278 條）**，判獨立要看台灣實體那筆的 相信音樂。年份：MB first-release-date 2019-06-14、TW 實體 2019-07-23、Apple 記 2019-06-14，取 2019 無分歧。CAA release-group 端點 200（實測）。Apple `search`／藝人目錄兩種查法（店面 tw，artistId 1284151651）命中 collectionId 1546062804《我肯定在幾百年前就說過愛你》2019-06-14、11 軌、℗ Bin Music International Limited——軌數與 MB 一致；這只是兩種查法的觀察不是結論，研究層仍要跑 collectionId 直查（第 254 條）。",
+  "mbNote": "釘 release-group 62c4b1f2-f4a2-45ca-9370-97b3bdc03e19。本組回打 release-group/<id>?fmt=json&inc=artist-credits 覆核：title「我肯定在幾百年前就說過愛你」、artist-credit「告五人」、first-release-date 2019-06-14、primary-type Album、secondary-types 空——與 c-126 H 類表所記一致，未翻案。release 端點（?release-group=<id>&inc=media+labels&limit=100）補得載體與國別：4 個 release，XW 2019-06-14 Digital Media 11 軌（相信音樂國際股份有限公司，barcode 4710616560145）、CN 2019-06-14 Digital Media 11 軌（簡體標題，StreetVoice）、TW 2019-07-23 CD 11 軌（相信音樂 RW0035，barcode 4713052737980）、SG 2019-06 Digital Media 11 軌（相信音樂）。藝人 MBID 9607d222-f506-4106-8131-87a344d732ca（名下 9 個 RG）。刻意不釘：6e9e4dea-09e6-4c66-b4b2-bbfca563a6da《運氣來得若有似無》2020（池中已有）、18d6fece-8fdf-472c-bfee-08196f0d5bf2《迷霧之子》2017 等 5 筆 Single。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "告五人；Accusefive；告五人 Accusefive；我肯定在幾百年前就說過愛你；我肯定在几百年前就说过爱你",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "告五人 Accusefive",
+  "album": "帶你飛",
+  "year": 2023,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB label-info 未建檔（TW 2023-02-14 CD 10 軌、無 barcode）；Apple 台灣店面該碟 ℗ 行記 Bin Music International Limited（＝相信音樂）",
+  "why": "告五人的第三張正規專輯，夾在 2020《運氣來得若有似無》與 2025《我們就像那些要命的傻瓜》之間，MB 轄下只有一個 release：2023-02-14 的台灣 CD，10 軌。獨立閘走的是簡報第二節第 2、3 步：這張自己的 label-info 整個欄位沒建檔（不是 `[no label]`），所以回頭看整份藝人目錄——告五人名下 9 個 RG 的廠牌全部是 相信音樂／相信音樂國際股份有限公司，沒有任何一筆掛到店主點名的六家大廠，連 Single 也沒有（第 279 條要求連 Single 一起算）。而相信音樂依第 276 條是收的。再補一條正面旁證（第 268 條的作法）：Apple 台灣店面 collectionId 1670343367 的 ℗ 行是 Bin Music International Limited，就是相信音樂的英文登記名，軌數 10 與 MB 完全一致。簡報第五節第 3 點提醒的「清單上收、但同一位還有別家」在這裡不成立——告五人整份目錄只有相信音樂一家。實掃卡池 16,450 列，池中這位藝人只有 2020 那一張，本碟零命中。",
+  "risk": "⚠ 獨立閘的舉證是間接的：MB 這個 release 的 label-info 為空、barcode 也空，第三道判準（GS1 公司前綴）在這張用不上，靠的是「整份目錄無大廠」＋「Apple ℗ 行 Bin Music」兩條。研究層若查到實體 catno 要回填 MB 端。撞卡：盤名《帶你飛》在池中零命中；⚠ 兩字盤名極短，自動比對要鎖整個掛名字串，不可只比盤名。掛名照池中原字串「告五人 Accusefive」；MB artist-credit 是純漢字「告五人」。年份：MB 2023-02-14 與 Apple 2023-02-14 一致。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 1284151651）命中 1670343367《帶你飛》2023-02-14、10 軌——這只是兩種查法的觀察不是結論，研究層要另跑 collectionId 直查。",
+  "mbNote": "釘 release-group d46ddbf3-305c-48dd-bc93-27579cdf5315。本組回打 release-group 端點覆核：title「帶你飛」、artist-credit「告五人」、first-release-date 2023-02-14、primary-type Album、secondary-types 空——與 c-126 H 類表一致，未翻案。release 端點補得：1 個 release，TW 2023-02-14 Official，CD 10 軌，barcode 空，label-info 整個欄位未建檔。藝人 MBID 9607d222-f506-4106-8131-87a344d732ca。目錄實掃（含 Single）：9 個 RG 的廠牌只出現 相信音樂 一系，無大廠掛名。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "告五人；Accusefive；告五人 Accusefive；帶你飛；带你飞",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "告五人 Accusefive",
+  "album": "我們就像那些要命的傻瓜",
+  "year": 2025,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "相信音樂（XW 2025-07-08 數位 12 軌，barcode 4711517110866）",
+  "why": "告五人目前最新的一張正規專輯，距首張六年。MB 轄下兩個 release，都是 2025-07-08 的全球數位盤、12 軌、barcode 同為 4711517110866——一筆繁體標題、一筆簡體標題，是同一張碟的兩筆建檔，不是兩張碟。label-info 兩筆都記 相信音樂，依第 276 條過獨立閘。這張在池中的位置是目錄的另一端：池中的告五人停在 2020 年，補上 2019 首張、2023 與這張 2025，池中才有這支團從出道到現在的完整四張。本卡的 MBID 由 c-126 策展層釘出（H 類），本組回打 release-group 端點覆核掛名與盤名皆對得上，未翻案。",
+  "risk": "撞卡：盤名在池中零命中。⚠ 同碟異名：MB 轄下的簡體 release《我们就像那些要命的傻瓜》與繁體是同一張（同日、同 barcode 4711517110866、同 12 軌），日後補卡池不可當成第二張碟。掛名照池中原字串「告五人 Accusefive」；MB artist-credit 純漢字。年份：MB 2025-07-08 與 Apple 2025-07-08 一致。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 1284151651）命中 1822757825《我們就像那些要命的傻瓜》2025-07-08、12 軌、℗ Bin Music International Limited——軌數對得上；這只是兩種查法的觀察不是結論。⚠ 同一份 Apple 目錄裡另有 1775896186《為我辦一場西式的喪禮》電影原聲帶 2024（22 軌，℗ 創銘實業），那是影視原聲帶、依 c-119 第 261 條不收，配對時不可誤取。三軸提醒：本碟距今一年出頭，冷門軸的 listeners 未必長齊。",
+  "mbNote": "釘 release-group 66c69c52-0300-478a-a5a7-ddd78435b709。本組回打 release-group 端點覆核：title「我們就像那些要命的傻瓜」、artist-credit「告五人」、first-release-date 2025-07-08、primary-type Album、secondary-types 空——與 c-126 H 類表一致，未翻案。release 端點補得：2 個 release，皆 XW 2025-07-08 Official、Digital Media 12 軌、barcode 4711517110866、label 相信音樂，差別只在標題繁簡。藝人 MBID 9607d222-f506-4106-8131-87a344d732ca。刻意不釘：52283715-179f-42ed-a05e-a8297447fa9f《说我爱你的一百种方式》2020 等 Single。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "告五人；Accusefive；告五人 Accusefive；我們就像那些要命的傻瓜；我们就像那些要命的傻瓜",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "大象體操 Elephant Gym",
+  "album": "Live in THE WORLD",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "Topshelf Records（XW 2026-01-09 數位 14 軌，barcode 634457247635）",
+  "why": "大象體操 THE WORLD 世界巡演的總集現場盤，14 軌，2026-01-09 全球數位發行，label-info 記 Topshelf Records——大象體操長年的美國合作廠牌，獨立廠牌，依第 278 條的清單是收的。依 c-119 第 253 條，secondary-types 含 Live 的碟要收，本批簡報第五節第 2 點也明文點名這張。這支團在池中有《角度》2014 與《夢境》2022 兩張，c-126 補了《水底》2018 與《世界》2023，四張全是錄音室盤；大象體操的實際辨識度有一半在現場（三件式的低音貝斯主導編制、拍號切換是現場才聽得出來的），池中缺的正是這一格。本卡的 MBID 由 c-126 策展層釘出（H 類），本組回打 release-group 端點覆核，掛名與盤名皆對得上，未翻案。",
+  "risk": "⚠ 最大的配對陷阱是本碟與同團《THE WORLD TOUR Live in Tokyo》容易互吃：兩張都在 2026 年 1 月、都叫 Live in ... THE WORLD，本碟是 14 軌全球數位（Topshelf），Tokyo 那張是 18 軌日本 CD（WORDS Recordings WDSR-008）。**分辨鍵是軌數 14 vs 18**，不是日期。Apple 三個店面各有一筆 14 軌的本碟、寫法還不一樣：us 1864388500《Live in THE WORLD》2026-01-09 ℗ Topshelf Records（與 MB 完全對齊）、jp 1864587078《Live in the World》2026-01-13 ℗ WORDS Recordings（日期是 Tokyo 那張的日期、但軌數是本碟的 14）、tw 1863364972《Live in THE WORLD (Live)》2025-12-29 ℗ Collaboration Arts Ltd.（日期早於 MB 十一天、盤名多一個 (Live) 後綴、℗ 是第三家）——**三個店面三個日期三個 ℗ 行，只用店面資料判年份會判錯**，以 MB 的 2026-01-09 為準。⚠ 是現場錄音，簡介與三軸都要照現場盤處理。⚠ 同團另有五張 2025 年的《Live in THE WORLD - 地區名》，MB 全部是 EP／Single（North America／Japan／South America／Taiwan／CRACK OF DAWN 一系），依第 267 條 EP 不收，去重時不可與本碟混。掛名照池中原字串「大象體操 Elephant Gym」；⚠ 本張 MB 的 artist-credit 是純拉丁「Elephant Gym」，Tokyo 那張卻是純漢字「大象體操」，同一位藝人兩張碟兩種 credit。撞卡：盤名在池中零命中。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 0922e46a-6624-4213-a1fd-e842a88017a8。本組回打 release-group 端點覆核：title「Live in THE WORLD」、artist-credit「Elephant Gym」、first-release-date 2026-01-09、primary-type Album、secondary-types Live——與 c-126 H 類表一致，未翻案。release 端點補得：1 個 release，XW 2026-01-09 Official，Digital Media 14 軌，barcode 634457247635，label Topshelf Records。藝人 MBID 9fdc68d1-98ac-463c-a309-181b58c74aed（名下 23 個 RG）。刻意不釘：39575664-7804-48ca-a3b9-d581385baca4《THE WORLD TOUR Live in Tokyo》2026（另立一卡）、3199eb4d-4edb-497c-a90e-b021ea9af09c《More Real Than Dreams (Documentary Original Soundtrack)》2026（紀錄片原聲帶，第 261 條不收）、00f98f36-ec78-4c97-9b9a-45dd9c75a1ea／6561b7fb-93af-49c4-97eb-fe4946c19d04／cbdc13c7-8f9d-4559-9d4e-32b11c764139／a9fc3cad-45eb-400e-a01d-db4f9a5ea6ed（四張 2025 地區現場 EP，第 267 條不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "大象體操；Elephant Gym；大象體操 Elephant Gym；Live in THE WORLD；Live in the World",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "大象體操 Elephant Gym",
+  "album": "THE WORLD TOUR Live in Tokyo",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "WORDS Recordings WDSR-008（JP 2026-01-13 CD 18 軌，barcode 4562350466050）",
+  "why": "大象體操 THE WORLD 巡演的東京場全紀錄，日本 CD，18 軌，發行方 WORDS Recordings——這支團在日本的長期合作廠牌，依第 278 條的清單是收的（catno WDSR-008 是該廠自己的編號序列）。與同期那張 14 軌的《Live in THE WORLD》是兩張不同的碟：那張是全球數位的巡演總集，這張是單一場次、單一國別的實體盤，多出來的四軌就是差別。依第 253 條 Live 要收。池中的大象體操是《角度》2014、《夢境》2022，加上 c-126 的《水底》《世界》共四張錄音室盤，現場這一格完全空白；而這張是這支團少見的實體現場 CD，日本盤又是他們海外能見度最高的一條線。本卡的 MBID 由 c-126 策展層釘出（H 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "⚠ 與同團《Live in THE WORLD》互吃的風險見該卡：本碟是 18 軌 JP CD、那張是 14 軌 XW 數位，**分辨鍵是軌數**。Apple 側特別要小心：jp 店面 1864587078 標的是《Live in the World》2026-01-13、14 軌、℗ WORDS Recordings——**日期是本碟的日期、軌數卻是另一張的**，用日期配對必然配錯，要用 18 軌鎖定。研究層若在 jp 店面找不到 18 軌那筆，不可寫成「未上架」（第 254 條），要另跑藝人目錄 lookup（jp artistId 798537066／1472858756 兩個都要試）與 collectionId 直查。⚠ 是現場錄音。⚠ 盤名全大寫的 THE WORLD 與題名式 Live in Tokyo 混寫，字串比對要容忍大小寫。掛名照池中原字串「大象體操 Elephant Gym」；本張 MB artist-credit 是純漢字「大象體操」，與《Live in THE WORLD》的純拉丁 credit 不同源。撞卡：盤名在池中零命中。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 39575664-7804-48ca-a3b9-d581385baca4。本組回打 release-group 端點覆核：title「THE WORLD TOUR Live in Tokyo」、artist-credit「大象體操」、first-release-date 2026-01-13、primary-type Album、secondary-types Live——與 c-126 H 類表一致，未翻案。release 端點補得：1 個 release，JP 2026-01-13 Official，CD 18 軌，barcode 4562350466050，label WORDS Recordings，catno WDSR-008。藝人 MBID 9fdc68d1-98ac-463c-a309-181b58c74aed。刻意不釘：0922e46a-6624-4213-a1fd-e842a88017a8《Live in THE WORLD》2026（另立一卡，14 軌）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "大象體操；Elephant Gym；大象體操 Elephant Gym；THE WORLD TOUR Live in Tokyo；Live in Tokyo",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "椅子樂團",
+  "album": "Real Love Is...",
+  "year": 2020,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Sound Of Tomorrow（TW 2020-10-15 數位 9 軌，無 barcode）",
+  "why": "椅子樂團的第三張正規專輯，也是他們從《LOVELY SUNDAY》的英倫吉他流行轉往更軟、更靠近 city pop 那一側的分界點。MB 轄下一個 release：2020-10-15 的台灣數位盤，9 軌，label-info 記 Sound Of Tomorrow——這支團自己那條線的廠牌，依第 278 條的清單是收的（同廠另有《Shangri-La Is Calling》的 SOTMR007 編號序列）。實掃 seed_cards.json 全 16,450 列並以整個掛名字串核對，池中「椅子樂團」是 0 張（子字串會撞到 `Air`／`AI` 開頭的西洋碟，全是假陽性，見 c126/rulings.md 第〇節）；c-126 的 b 組已收《Cheers!Land》2016、《LOVELY SUNDAY》2018、《The Great Escape Of Our Time》2023 三張，本批這三張把 2020／2022／2025 三個缺口補齊，六張正規專輯就整套到位。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核掛名與盤名皆對得上，未翻案。",
+  "risk": "⚠ CAA release-group 端點 404（實測）——**封面沒有 CAA 來源，只剩 Apple 一條**，Apple 側失效就無來源。Apple 藝人目錄查法（tw，artistId 1096054130）命中 collectionId 1535521287《Real Love Is...》2020-10-16、9 軌、℗ Sound of Tomorrow Ltd.——軌數與 MB 一致，⚠ 但 Apple 記 2020-10-16、MB 記 2020-10-15，差一天，年份不受影響；這只是兩種查法的觀察不是結論，研究層要另跑 collectionId 直查（第 254 條）。⚠ 盤名結尾三個 ASCII 句點「...」，正規化時不可壓成單一句點或換成 U+2026 刪節號，否則與 Apple 的字串對不上。⚠ 9 軌落在 EP 的邊界值上，但 MB primary-type 是 Album、secondary-types 空，Apple 也**沒有** `- EP` 後綴（第 274 條的形狀在這張不成立）。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「椅子樂團」；MB artist-credit 亦為「椅子樂團」，拉丁別名 The Chairs 只進別名——⚠ 拉丁名撞英美同名團（MB 全域 6 筆 The Chairs 無一為台灣團），絕不可用英文名做自動比對。",
+  "mbNote": "釘 release-group c1dc58b9-0827-4951-94e5-5fa3a8b01e5b。本組回打 release-group 端點覆核：title「Real Love Is...」、artist-credit「椅子樂團」、first-release-date 2020-10-15、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：1 個 release，TW 2020-10-15 Official，Digital Media 9 軌，barcode 空，label Sound Of Tomorrow。藝人 MBID 03a25129-3371-4ab4-b30b-f5d9dcfbec7c（名下 14 個 RG）。刻意不釘：ee95adcb-c8d6-48f1-b8f3-49687998ee18《Lemonade》2019 與 887d4b53-d1ec-4678-9eb0-11989086b40a《Audiotree Live》2020（皆 EP，第 267 條）、cd8423eb／52c88b25／983e16e3 三張已在 c-126。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "椅子樂團；The Chairs；椅子樂團 The Chairs；Real Love Is...；Real Love Is",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "椅子樂團",
+  "album": "Shangri-La Is Calling",
+  "year": 2022,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Sound Of Tomorrow（TW 2022-07-08 數位 10 軌，barcode 3616848728753）／禾廣娛樂 SOTMR007（TW 2022-08-19 CD 10 軌，barcode 4713249234100）",
+  "why": "椅子樂團的第四張正規專輯，MB 轄下兩個 release：2022-07-08 的台灣數位盤（Sound Of Tomorrow）與 2022-08-19 的台灣 CD（禾廣娛樂，catno SOTMR007）。兩家都在第 278 條的清單裡——Sound Of Tomorrow 是這支團自己那條線，禾廣＝Hove 是同一家（第 279 條已把兩個名字併成一條），CD 那筆的 catno 前綴 SOTMR 就是 Sound Of Tomorrow 的序列、禾廣只是實體代理，獨立閘無爭議。這張是池中椅子樂團 2020–2025 那段空白的中間一格：c-126 收的三張停在 2018 與 2023，本批補上 2020／2022／2025，這支團的六張正規盤就完整。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "⚠ 數位與實體差 42 天、發行方寫法不同（Sound Of Tomorrow vs 禾廣娛樂），研究層若只看到 CD 那筆會把廠牌記成禾廣；兩者同屬一條線，但 catno SOTMR007 才是這張自己的編號。⚠ CD 那筆 release 的 status 是 null（不是 Official），country 是 TW、barcode 4713249234100 齊全，形態沒有疑義，但自動化流程若把 status 當必要條件會漏掉這筆。⚠ 盤名含 ASCII 連字號的 Shangri-La，正規化不可換成非 ASCII 連字號（chk-prop 會擋）。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「椅子樂團」；拉丁名 The Chairs 只進別名，不可用於比對。年份：MB 2022-07-08 與 Apple 2022-07-08 一致。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 1096054130）命中 1632142066《Shangri-La Is Calling》2022-07-08、10 軌、℗ Sound of Tomorrow Ltd.——軌數對得上；這只是兩種查法的觀察不是結論。",
+  "mbNote": "釘 release-group 0f20aa27-e348-4fe0-8f17-0eb55759207d。本組回打 release-group 端點覆核：title「Shangri-La Is Calling」、artist-credit「椅子樂團」、first-release-date 2022-07-08、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：2 個 release，TW 2022-07-08 Official Digital Media 10 軌（Sound Of Tomorrow，barcode 3616848728753）、TW 2022-08-19 status null CD 10 軌（禾廣娛樂 SOTMR007，barcode 4713249234100）。藝人 MBID 03a25129-3371-4ab4-b30b-f5d9dcfbec7c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "椅子樂團；The Chairs；椅子樂團 The Chairs；Shangri-La Is Calling",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "椅子樂團",
+  "album": "Love Dialogue",
+  "year": 2025,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "時間機器（TW 2025-10-13 CD 10 軌，barcode 4713249235817）；Apple 台灣店面該碟 ℗ 行記 Time Machine Records",
+  "why": "椅子樂團目前最新的一張正規專輯，也是他們離開 Sound Of Tomorrow／禾廣那條線之後的第一張：MB 轄下一個 release，2025-10-13 的台灣 CD、10 軌，label-info 記 時間機器（Time Machine Records），第 278 條的清單裡是收的。barcode 4713249235817 與 2022 年那張 CD 的 4713249234100 共用 GS1 公司前綴 4713249——同一條台灣獨立實體壓片／發行線，與滾石 4710149、華納 5054197 完全不重疊（第 279 條的第三道判準）。這張補的是池中椅子樂團目錄的最後一格：加上《Real Love Is...》《Shangri-La Is Calling》與 c-126 的三張，六張正規盤整套到位。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "⚠ **盤名兩說**：MB 的 release-group 與轄下唯一 release 都題《Love Dialogue》（英文），但 Apple 台灣店面 collectionId 1821659174 題的是《愛的對白》（2025-07-18、10 軌、℗ Time Machine Records）。第 270 條說「中英雙名的碟一律取中文」，**本卡刻意不套用**：椅子樂團六張正規盤的盤名一路是 Cheers!Land／LOVELY SUNDAY／Real Love Is...／Shangri-La Is Calling／The Great Escape Of Our Time，全部英文，這是樂團自己的命名慣例；而且 MB 上台灣**實體** CD 的 title 本身就是英文（第 270 條的先例是實體用中文、MB 只建英文，方向相反）。《愛的對白》登記為別名。**若主線要改判取中文，改的是 manifest 的 album 欄與卡單值，可逆。** ⚠ 日期兩說：MB CD 2025-10-13、Apple 數位 2025-07-18，差近三個月，年份同為 2025。撞卡：盤名在池中零命中，《愛的對白》四字亦零命中。掛名照 c-126 卡單原字串「椅子樂團」。CAA release-group 端點 200（實測）。三軸提醒：本碟距今不到一年，冷門軸 listeners 未必長齊。",
+  "mbNote": "釘 release-group 2d068cc4-a873-4d04-aad0-73e68ac36823。本組回打 release-group 端點覆核：title「Love Dialogue」、artist-credit「椅子樂團」、first-release-date 2025-10-13、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：1 個 release，TW 2025-10-13 Official，CD 10 軌，barcode 4713249235817，label 時間機器。藝人 MBID 03a25129-3371-4ab4-b30b-f5d9dcfbec7c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "椅子樂團；The Chairs；椅子樂團 The Chairs；Love Dialogue；愛的對白",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "麋先生",
+  "album": "沒名字的人類",
+  "year": 2015,
+  "genres": [
+   "rock"
+  ],
+  "label": "相信音樂 BT0002（TW 2015-03-27 CD 10 軌，barcode 0888750817020）；另有 XW 2015-03-27 數位 10 軌（barcode 4712758998695，label-info 未建檔）",
+  "why": "麋先生的第二張正規專輯，也是這支團在《馬戲團運動》之後第一張完整編制的錄音室盤。MB 轄下兩個 release，台灣 CD 那筆的 label-info 記 相信音樂、catno BT0002——與 c-126 已收的《野生》BT0016、《嗜愛動物》BT0027 同一條 BT 編號序列，是相信音樂給麋先生開的專屬序列。相信音樂依第 276 條過獨立閘。實掃 seed_cards.json 全 16,450 列並以整個掛名字串核對，池中「麋先生」是 0 張（子字串會撞到單字 `X` 的西洋碟，全是假陽性）；c-126 的 b 組收了《野生》2016 與《嗜愛動物》2020 兩張，本批補 2015、2023 兩張錄音室盤與 2023 那張現場盤，這支團在池中就有從 2015 到 2023 的五張。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「麋先生」；MB artist-credit 亦為「麋先生」，拉丁別名 Mixer 只進別名——⚠ Mixer 是超高頻英文詞（MB 全域 23 筆同名，無一為台灣團），絕不可用於自動比對。⚠ Apple 側的 ℗ 行在麋先生身上有兩種寫法：早期（2015《沒名字的人類》1115598945、2016《野生》、2020《嗜愛動物》）記 Between Co., Ltd.，2021 之後改記 Bin Music International Limited，**兩者都是相信音樂體系**，研究層看到 Between Co. 不要當成另一家廠牌。年份：MB 2015-03-27 與 Apple 2015-03-27 一致，軌數同為 10。⚠ 兩個 release 的 barcode 不同（實體 0888750817020 是 088875 開頭的國際碼、數位 4712758998695 是 471 台灣碼），barcode 比對要兩個都收。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 976685640）命中 1115598945——這只是兩種查法的觀察不是結論。",
+  "mbNote": "釘 release-group 27c759a3-7fd9-46f3-b6ce-764181169810。本組回打 release-group 端點覆核：title「沒名字的人類」、artist-credit「麋先生」、first-release-date 2015-03-27、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：2 個 release，XW 2015-03-27 Official Digital Media 10 軌（barcode 4712758998695，label-info 未建檔）、TW 2015-03-27 Official CD 10 軌（相信音樂 BT0002，barcode 0888750817020）。藝人 MBID c245230b-f02f-4d01-8ad4-e8e219113875（名下 7 個 RG）。刻意不釘：ed8c4278-964c-4ede-8fcc-2921d16cb3f4《馬戲團運動》2013（第 274 條，Apple tw 888636954 標「馬戲團運動 - EP」6 軌、MB CD 7 軌，本組回查後維持退，見批次 rulings）、6d3837d2-378f-4ffc-8b77-15fd0b2a5cdc《你在哪裡》2024（Single，與宇宙人合作）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "麋先生；Mixer；麋先生 Mixer；沒名字的人類；没名字的人类",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "麋先生",
+  "album": "都是浪漫害的",
+  "year": 2023,
+  "genres": [
+   "rock"
+  ],
+  "label": "相信音樂 BD0144（TW 2023-11-30 CD 11 軌，barcode 4710616564389）；2025-02-27 另有 BD0144B 再版（barcode 4711517112501）",
+  "why": "麋先生的第五張正規專輯，MB 轄下三個 release：2023-10-17 的全球數位（11 軌，label-info 未建檔）、2023-11-30 的台灣 CD（相信音樂 BD0144）、2025-02-27 的台灣 CD 再版（相信音樂 BD0144B，同 11 軌）。以 CD 首版那筆的 label-info 判獨立閘：相信音樂，依第 276 條收。這張是池中麋先生目錄的最新一格——c-126 收到 2020《嗜愛動物》為止，加上本批的 2015、2023 兩張錄音室盤與 2023 現場盤，池中就有這支團 2015–2023 的完整跨度。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "⚠ 三個 release、兩種 barcode：數位與 CD 首版共用 4710616564389，2025 再版另起 4711517112501（BD0144B）。**再版不另開卡**（同一個 release-group），但研究層做 barcode 比對時兩個都要收，且不可把 2025 那筆的年份寫進卡單——本卡年份取 first-release-date 的 2023。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「麋先生」；拉丁別名 Mixer 不可用於比對。年份：MB 2023-10-17 與 Apple 1711761060 的 2023-10-17 一致，軌數同為 11。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 976685640）命中 1711761060、℗ Bin Music International Limited——這只是兩種查法的觀察不是結論。⚠ 同一份 Apple 目錄裡有大量單軌 Single（《壞蛋》《倒數三萬天》等二十餘筆）與一筆 1843175384《滾石撞樂隊2 - 燕尾蝶》2025（℗ Rock Records，滾石企劃的翻唱單曲），配對時不可誤取；那筆是 Single、不是本團的專輯，也不影響本卡的獨立閘判定（判準是本張自己的廠牌，不是整位）。",
+  "mbNote": "釘 release-group 04335c66-26ca-4ebb-a647-41b5f93b12f8。本組回打 release-group 端點覆核：title「都是浪漫害的」、artist-credit「麋先生」、first-release-date 2023-10-17、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：3 個 release，TW 2023-11-30 Official CD 11 軌（相信音樂 BD0144，barcode 4710616564389）、XW 2023-10-17 Official Digital Media 11 軌（label-info 未建檔，同 barcode）、TW 2025-02-27 Official CD 11 軌（相信音樂 BD0144B，barcode 4711517112501）。藝人 MBID c245230b-f02f-4d01-8ad4-e8e219113875。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "麋先生；Mixer；麋先生 Mixer；都是浪漫害的",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "麋先生",
+  "album": "我們的十年 WE LIVE 現場十錄",
+  "year": 2023,
+  "genres": [
+   "rock"
+  ],
+  "label": "MB label-info 未建檔（XW 2023-02-06 數位 10 軌，barcode 4710616566963）；barcode 前七碼 4710616 與同團《都是浪漫害的》相信音樂 BD0144（4710616564389）同一個 GS1 公司前綴；Apple 台灣店面該碟 ℗ 行記 Bin Music International Limited",
+  "why": "麋先生成軍十年的現場總結盤，10 軌，2023-02-06 全球數位發行。依 c-119 第 253 條，secondary-types 含 Live 的碟要收，本批簡報第五節第 2 點也明文點名這張。獨立閘走簡報第二節第 2、3 步：這張自己的 label-info 沒建檔，回頭看整份藝人目錄——麋先生名下 7 個 RG 的廠牌只出現 相信音樂 一系（BT0002／BT0016／BT0027／BD0144），沒有店主點名的六家大廠，連 Single 也沒有（第 279 條要求連 Single 一起算）；再走第三道判準，本碟 barcode 4710616566963 的 GS1 公司前綴 4710616 與同團《都是浪漫害的》相信音樂正規盤的 4710616564389 完全相同，而滾石走 4710149、華納走 5054197，不重疊。Apple 台灣店面 1669512704 的 ℗ 行也記 Bin Music International Limited。三條互證，收。池中麋先生 0 張、c-126 收兩張錄音室盤，現場這一格空白。",
+  "risk": "⚠ **是現場錄音**，簡介與三軸要照現場盤處理（本批簡報第五節第 2 點）。⚠ 獨立閘的舉證是間接的：MB 這個 release 的 label-info 整個欄位未建檔，靠「整份目錄無大廠」＋「barcode GS1 前綴」＋「Apple ℗ 行」三條旁證，研究層若查到實體 catno 要回填 MB 端。⚠ 盤名混了中文與全大寫英文（我們的十年 WE LIVE 現場十錄），字串比對要容忍空白與大小寫；Apple 側 1669512704 的盤名與 MB 完全一致、軌數同為 10。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「麋先生」；拉丁別名 Mixer 不可用於比對。⚠ Apple 目錄裡另有 1807063609《野生遊樂園 - Live - Single》2025，是單軌現場單曲、不是本碟，「Live」字樣配對時不可誤取（c-126 已記過同型陷阱）。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 5fd7bdba-301e-4f04-ba02-8283de6f0b78。本組回打 release-group 端點覆核：title「我們的十年 WE LIVE 現場十錄」、artist-credit「麋先生」、first-release-date 2023-02-06、primary-type Album、secondary-types Live——與 c-126 F 類表一致，未翻案。release 端點補得：1 個 release，XW 2023-02-06 Official，Digital Media 10 軌，barcode 4710616566963，label-info 未建檔。藝人 MBID c245230b-f02f-4d01-8ad4-e8e219113875；目錄實掃（含 Single）7 個 RG，廠牌只出現相信音樂一系。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "麋先生；Mixer；麋先生 Mixer；我們的十年 WE LIVE 現場十錄；我們的十年；WE LIVE",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "宇宙人",
+  "album": "地球漫步",
+  "year": 2012,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "相信音樂 BD0057（TW 2012-10-05 CD 12 軌，barcode 4712758994567）",
+  "why": "宇宙人的第二張正規專輯，也是這支團從 2009 年首張的樂團編制長成「合成器＋吉他流行」那條路線的關鍵一張。MB 轄下只有一個 release：2012-10-05 的台灣 CD、12 軌，label-info 記 相信音樂、catno BD0057。相信音樂依主線第 276 條過獨立閘。實掃 seed_cards.json 全 16,450 列並以整個掛名字串核對，池中「宇宙人」是 0 張（子字串在池中只撈到比利時前衛團 Cos《Postaeolian Train Robbery》1974，是假陽性，c126/rulings.md 第〇節已記）；c-126 的 b 組只收了《一萬小時》2015 一張，宇宙人 MB 上的五張正規專輯還缺四張。本批補 2009／2012／2017／2022 四張，池中就有這支團完整的五張。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核掛名與盤名皆對得上，未翻案。",
+  "risk": "撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「宇宙人」；MB artist-credit 亦為「宇宙人」，拉丁別名 Cosmos People 只進別名——⚠ Apple 台灣店面另有 artistId 1068339150「Cosmos People」被歸在日本流行樂類、與本團不同條目，用英文名查 Apple 會查到錯的藝人頁，藝人目錄要用 tw artistId 369125109。年份：MB 2012-10-05 與 Apple 1094178034 的 2012-10-05 一致，軌數同為 12。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 369125109）命中 1094178034《地球漫步》℗ Bin Music International Limited——這只是兩種查法的觀察不是結論，研究層要另跑 collectionId 直查（第 254 條）。⚠ 同一份 Apple 目錄裡有兩筆現場專輯（1545113854《你的宇宙YOUNIVERSE YOUSB…Audio Live》2020、33 軌；1771617848《α:回到未來 20週年演唱會―Back to Live 現場實錄》2024、18 軌）與一筆 6809423955《Dear You》2026-09-10、11 軌，**這三張 MB 上完全查無 release-group**，本批不收（走 §1 人工身分才能建卡，本批預設不開）；配對本碟時不可誤取。",
+  "mbNote": "釘 release-group 21ddf34b-c1e6-4494-9c87-64e455698923。本組回打 release-group 端點覆核：title「地球漫步」、artist-credit「宇宙人」、first-release-date 2012-10-05、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：1 個 release，TW 2012-10-05 Official，CD 12 軌，barcode 4712758994567，label 相信音樂 catno BD0057。藝人 MBID 75fffb0e-184a-403f-8d5d-9dd822a58217（名下 11 個 RG）。刻意不釘：adb93fad-8804-4582-ac1b-ec2382f56cf7《一萬小時》2015（c-126 已收）、0b3e6e92／75c729ea／82d6af08／d3bb1031／6d3837d2／801777b6 六筆 Single。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "宇宙人；Cosmos People；宇宙人 Cosmos People；地球漫步",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "宇宙人",
+  "album": "右腦",
+  "year": 2017,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "相信音樂（TW 2017-10 CD 10 軌，barcode 4713052732930；XW 2017-10-06 數位 10 軌）",
+  "why": "宇宙人的第四張正規專輯，MB 轄下兩個 release：台灣 CD（title 建成《右腦 (RIGHT NOW)》，10 軌，barcode 4713052732930）與全球數位（title《右腦》，10 軌），兩筆的 label-info 都記 相信音樂，依第 276 條過獨立閘。這張在池中補的是 2015《一萬小時》與 2022《理想狀態》之間那一格——池中的宇宙人只有 c-126 收的 2015 那張，2017 這一年完全空白。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "⚠ **盤名兩說**：MB 的 release-group 與數位 release 都題《右腦》，但台灣 CD 那筆 release 的 title 建成《右腦 (RIGHT NOW)》——英文是副標不是主標。依第 91／95 條「RG 標題與卡片盤名不必相等」與 TW_INDIE_NAMING_RULINGS.md 第二節「去掉英文副標」的一貫作法，本卡取《右腦》，RIGHT NOW 進別名。Apple 台灣店面 1290079522 也題《右腦》、10 軌、2017-10-06，與 MB 數位那筆完全一致。⚠ 兩字盤名極短且「右腦」是常用詞，自動比對必須鎖整個掛名字串。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「宇宙人」；拉丁別名 Cosmos People 不可用於 Apple 查詢（會撈到 artistId 1068339150 的日本條目）。年份：MB first-release-date 2017-10-06、CD 那筆只有年月（2017-10），取 2017。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group e9ad4077-2be8-4296-b18b-6876233d551d。本組回打 release-group 端點覆核：title「右腦」、artist-credit「宇宙人」、first-release-date 2017-10-06、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：2 個 release，TW 2017-10 Official CD 10 軌（title「右腦 (RIGHT NOW)」，相信音樂，barcode 4713052732930）、XW 2017-10-06 Official Digital Media 10 軌（title「右腦」，相信音樂，barcode 空）。藝人 MBID 75fffb0e-184a-403f-8d5d-9dd822a58217。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "宇宙人；Cosmos People；宇宙人 Cosmos People；右腦；右腦 (RIGHT NOW)；RIGHT NOW",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "宇宙人",
+  "album": "理想狀態",
+  "year": 2022,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "相信音樂（XW 2022-03-17 數位 12 軌；TW 2022-03-31 CD 12 軌，barcode 4710616560473）",
+  "why": "宇宙人的第五張、也是 MB 上目前最新的一張正規專輯。轄下兩個 release：2022-03-17 的全球數位與 2022-03-31 的台灣 CD，都是 12 軌，label-info 皆記 相信音樂，依第 276 條過獨立閘；CD 那筆的 barcode 4710616560473 與相信音樂系其他盤（告五人 4710616560145、傻子與白痴 4710616563603、麋先生 4710616564389）共用 GS1 公司前綴 4710616，第三道判準也對得上。這張把池中的宇宙人補到目錄的最後一格：加上 2009／2012／2017 三張與 c-126 的 2015，五張正規盤整套到位。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "撞卡：盤名在池中零命中。⚠「理想狀態」是常用詞組，自動比對要鎖整個掛名字串。掛名照 c-126 卡單原字串「宇宙人」；拉丁別名 Cosmos People 不可用於 Apple 查詢。年份：MB 2022-03-17（數位）與 Apple 1613887529 的 2022-03-17 一致，CD 晚 14 天，年份同為 2022，軌數同為 12。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 369125109）命中 1613887529、℗ Bin Music International Limited——這只是兩種查法的觀察不是結論。",
+  "mbNote": "釘 release-group b674ac53-f429-4467-8981-87ff13b574aa。本組回打 release-group 端點覆核：title「理想狀態」、artist-credit「宇宙人」、first-release-date 2022-03-17、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：2 個 release，XW 2022-03-17 Official Digital Media 12 軌（相信音樂，barcode 空）、TW 2022-03-31 Official CD 12 軌（相信音樂，barcode 4710616560473）。藝人 MBID 75fffb0e-184a-403f-8d5d-9dd822a58217。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "宇宙人；Cosmos People；宇宙人 Cosmos People；理想狀態",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "傻子與白痴",
+  "album": "Year of Fate",
+  "year": 2021,
+  "genres": [
+   "rock"
+  ],
+  "label": "哇唧唧哇（XW 2021-10-28 數位 7 軌，barcode 4710616563603）",
+  "why": "傻子與白痴的第二張正規專輯，MB 轄下一個 release：2021-10-28 的全球數位盤、7 軌，label-info 記 哇唧唧哇。哇唧唧哇是相信音樂的子廠牌，依主線第 276 條與 c-126 第 272 條同樣過獨立閘（店主點名的六家不含這一系）；barcode 4710616563603 的 GS1 公司前綴 4710616 也與相信音樂系其他獨立盤一致。實掃 seed_cards.json 全 16,450 列並以整個掛名字串核對，池中「傻子與白痴」是 0 張（子字串會撈到美國死亡金屬團 Death 的六筆，全是假陽性，c126/rulings.md 第〇節已記）；c-126 的 b 組收了《夜長夢少》2019 一張，這張是這支團 MB 上僅有的另一張正規盤。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "⚠ **7 軌落在 EP 的邊界**，第 274 條（MB 記 Album 但 Apple 標 EP 且軌數對不上就退）本組逐項回查後**不成立**：MB primary-type 是 Album、secondary-types 空，Apple 台灣店面 collectionId 1787517050 的盤名是《Year of Fate》、**沒有 `- EP` 後綴**、軌數同樣是 7、日期同樣是 2021-10-28。兩邊型別與軌數一致，故收。⚠ CAA release-group 端點 404（實測）——**封面沒有 CAA 來源，只剩 Apple 一條**。⚠ 這位藝人 MB 的 `area` 記成 China，第 279 條已判為誤記（同一筆記錄的 `begin-area` 寫的是 Taiwan，誤記來源是版權方「哇唧唧哇娛樂（天津）有限公司」）——**正文一律台灣團**，Apple 的 ℗ 行也是那家天津公司，不可據此改判國別。⚠ 第 279 條另記：Apple tw 與 sg 兩個店面的 collectionId 不同（tw 補圖用 1787517192 那條線、sg 試聽用 1874647540），**試聽與補圖可能不是同一個 id**。⚠ Apple 把同團《夜長夢少》建成簡體「夜长梦少」，本碟英文盤名無此問題但同位藝人比對要注意。撞卡：盤名在池中零命中；⚠ Year of Fate 是常見英文詞組，比對要鎖整個掛名字串。掛名照 c-126 卡單原字串「傻子與白痴」；拉丁別名 Deadly Cradle Death 只進別名。",
+  "mbNote": "釘 release-group edd84f20-4625-4235-974f-73dd124d5c26。本組回打 release-group 端點覆核：title「Year of Fate」、artist-credit「傻子與白痴」、first-release-date 2021-10-28、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：1 個 release，XW 2021-10-28 Official，Digital Media 7 軌，barcode 4710616563603，label 哇唧唧哇。藝人 MBID 0e5a42ae-271a-4396-a5b2-85d677f35ff0（名下僅 2 個 RG）。刻意不釘：e439492b-033a-42ca-b005-bf4727d5a25c《Till 5:10 a.m. 夜長夢少》2019（＝c-126 已收的《夜長夢少》，同一張碟，不可當成另一張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "傻子與白痴；Deadly Cradle Death；傻子與白痴 Deadly Cradle Death；Year of Fate",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "甜約翰",
+  "album": "城市小說選集",
+  "year": 2019,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB label-info 記 StreetVoice（＝數位通路，非廠牌）；實際發行方為 好用功有限公司（Apple 台灣店面 collectionId 1864580031 的 ℗ 行）。CD 那筆 barcode 4713249232472，GS1 公司前綴 4713249 與椅子樂團禾廣／時間機器兩張台灣獨立實體盤同一條",
+  "why": "甜約翰的第二張正規專輯，MB 轄下兩個 release：2019-12-13 的全球數位（10 軌，barcode 193017014877）與 2019-12-31 的 CD（10 軌，barcode 4713249232472），兩筆的 label-info 都記 StreetVoice。**依第 278 條，StreetVoice 是數位通路不是廠牌，獨立與否要看它背後那家**——本組回查 Apple 台灣店面，本碟 1864580031 的 ℗ 行記 好用功有限公司，正是第 278／279 條清單裡「Mr. Wing Productions／好用功」那家（同團《In Mind》的 ℗ 行是它的英文名 WORKAHOLIC CO., LTD.），是團自己那條線；CD 的 barcode 前七碼 4713249 又與椅子樂團 2022 禾廣盤（4713249234100）、2025 時間機器盤（4713249235817）共用 GS1 公司前綴，是台灣獨立實體發行線，與滾石 4710149、華納 5054197 完全不重疊。三條互證，收。實掃卡池 16,450 列，池中「甜約翰」是 0 張（子字串只撈到英國 glam rock 團 Sweet《Desolation Boulevard》1974，假陽性）；c-126 的 b 組收了《Dear》2017，本批補 2019 與 2022 兩張，這支團 MB 上的三張正規盤就到齊。",
+  "risk": "⚠ **`label-info` 寫的是通路**：MB 兩筆 release 都記 StreetVoice，若照抄就會把通路當廠牌（c-126 有三張栽在這裡，第 278 條）。本卡的 label 欄已改寫成「通路 StreetVoice／發行方 好用功有限公司」，研究層要回填 MB 端。⚠ 數位那筆 barcode 193017014877 是 1930170 開頭的聚合商 GS1 區段（同團《In Mind》193017076639 亦然），**不是台灣本地碼**，判獨立不能靠這一條，要用 CD 的 4713249。⚠ 日期三說：MB 數位 2019-12-13、MB CD 2019-12-31、Apple 2019-12-17，年份同為 2019。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「甜約翰」；⚠ 拉丁別名 Sweet John 撞劍橋合唱團的牧歌集（c-126 已記），絕不可用英文名做自動比對。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 1322196237）命中 1864580031、10 軌——這只是兩種查法的觀察不是結論。⚠ 同一份 Apple 目錄裡有 1848022568《GOOD AFTERNIGHT》2025-10-28（9 軌，℗ 歪的音樂有限公司），**MB 上完全查無 release-group**，本批不收（要走 §1 人工身分），配對時不可誤取。",
+  "mbNote": "釘 release-group b1e00326-9d52-4f0e-962a-3fba80f0119f。本組回打 release-group 端點覆核：title「城市小說選集」、artist-credit「甜約翰」、first-release-date 2019-12-13、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：2 個 release，XW 2019-12-13 Official Digital Media 10 軌（StreetVoice，barcode 193017014877）、country 空 2019-12-31 Official CD 10 軌（StreetVoice，barcode 4713249232472）。藝人 MBID 660abae5-15ac-4ba7-913f-a6e6c8b9844c（名下 6 個 RG）。刻意不釘：93364f37-eb06-4bb2-a853-754b54ea9952《Dear》2017（c-126 已收）、a8d6612f-2b0b-4014-951a-966e01058512《A Plus》2025（EP，第 267 條）、70311e09／a86cda98 兩筆 Single。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "甜約翰；Sweet John；甜約翰 Sweet John；城市小說選集",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "甜約翰",
+  "album": "In Mind",
+  "year": 2022,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB label-info 為空（XW 2022-10-28 數位 9 軌，barcode 193017076639）；Apple 台灣店面 collectionId 1650918469 的 ℗ 行記 WORKAHOLIC CO., LTD.（＝好用功有限公司），與 Discogs 的 Mr. Wing Productions SWJ-006 互證",
+  "why": "甜約翰目前 MB 上最新的一張正規專輯，2022-10-28 全球數位，9 軌。獨立閘走簡報第二節第 2、3 步加第 268 條的正面旁證：這張的 label-info 為空，回頭看整份藝人目錄——甜約翰名下 6 個 RG，廠牌只出現 StreetVoice（通路）一種，沒有店主點名的六家大廠，連 Single 也沒有；再補正面旁證，Apple 台灣店面本碟的 ℗ 行是 WORKAHOLIC CO., LTD.，就是 好用功有限公司 的英文登記名，與 c-126 從 Discogs 查到的 Mr. Wing Productions／好用功 SWJ-006 是同一家，也與同團《城市小說選集》Apple ℗ 行的中文名對得上——**兩條路徑跑到同一家**，第 278／279 條的清單裡是收的。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核掛名與盤名皆對得上，未翻案。",
+  "risk": "⚠ 獨立閘的舉證是間接的：MB label-info 為空，靠「整份目錄無大廠」＋「Apple ℗ 行 WORKAHOLIC／好用功」＋「Discogs SWJ-006」三條旁證，研究層要把發行方回填 MB 端。⚠ barcode 193017076639 是 1930170 開頭的聚合商區段（同團 2019 那張亦然），**不可拿來當台灣獨立的 GS1 證據**。⚠ 盤名《In Mind》是極常見的英文詞組，MB 全域同名條目眾多，比對必須鎖整個掛名字串。⚠ 9 軌落在 EP 邊界，但 MB primary-type Album、secondary-types 空，Apple 1650918469 也沒有 `- EP` 後綴、軌數同為 9，第 274 條不成立。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「甜約翰」；拉丁別名 Sweet John 不可用於自動比對。年份：MB 2022-10-28 與 Apple 2022-10-28 一致。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 10aac7c0-c9c4-4c59-98cc-a2f373aa3d13。本組回打 release-group 端點覆核：title「In Mind」、artist-credit「甜約翰」、first-release-date 2022-10-28、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：1 個 release，XW 2022-10-28 Official，Digital Media 9 軌，barcode 193017076639，label-info 為空。藝人 MBID 660abae5-15ac-4ba7-913f-a6e6c8b9844c；目錄實掃（含 Single）6 個 RG，無大廠掛名。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "甜約翰；Sweet John；甜約翰 Sweet John；In Mind",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "原子邦妮",
+  "album": "孤單會消失離開不見",
+  "year": 2016,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "上行娛樂 AMECD0008（TW 2016-12 CD 14 軌，barcode 4715872150420）；另有 XW 2016-12-30 數位 14 軌（label-info 為空）。Apple 台灣店面 collectionId 1594297744 的 ℗ 行記 Astro Shelter（團自營 imprint）",
+  "why": "原子邦妮的第二張正規專輯，也是她們簽進滾石之前最後一張獨立盤。MB 轄下兩個 release：全球數位（14 軌，label-info 空）與台灣 CD（14 軌，label-info 記 上行娛樂、catno AMECD0008，barcode 4715872150420）。獨立閘的判準是**這一張自己的廠牌，不是整位**（本批簡報第五節第 3 點）：原子邦妮 2017 年起的七張確實是滾石與 Warner Music Taiwan（c-126 已逐張列在 B 類退掉），但 2016 這張掛的是 上行娛樂——第 278 條清單裡是收的台灣本土獨立公司；Apple 側的 ℗ 行更直接寫 Astro Shelter，就是團自己的 imprint（同 imprint 另見 2012《折桂令》與 2025《和你一起的風景未完待續》）。實掃卡池 16,450 列並以整個掛名字串核對，池中「原子邦妮」是 0 張（子字串會撈到韓團 ASTRO，假陽性）；c-126 的 b 組收了《折桂令》一張，本批補這張與 2025 那張，池中就有這位在滾石／Warner 那段之外的三張獨立盤。本卡的 MBID 由 c-126 策展層釘出（F 類），本組回打 release-group 端點覆核，未翻案。",
+  "risk": "⚠ 這位藝人是「同一位、廠牌兩極」的樣板：2017–2021 五張滾石（RD2040／RD2062／RD2078／RD2104／RD2118）、2022–2023 兩張 Warner Music Taiwan（5419747284／5054197925412），全部被獨立閘擋下（c-126 B 類）。**去重與研究時不可把「原子邦妮」整位當成收或退**，判準永遠是那一張自己的 label-info。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「原子邦妮」；⚠ 拉丁別名 Astro Bunny 撞韓團 ASTRO，不可用於自動比對。年份：MB 數位 2016-12-30、CD 只有年月 2016-12、Apple 1594297744 記 2016-12-30，取 2016，軌數三邊同為 14。CAA release-group 端點 200（實測）。Apple 藝人目錄查法（tw，artistId 798549963）命中 1594297744——這只是兩種查法的觀察不是結論。⚠ c-126 已記：Apple 把同團《折桂令》的年份標成 2015（MB 記 2012），同位藝人的年份欄不可交叉套用。",
+  "mbNote": "釘 release-group 69277a94-7c41-445b-ba55-7c8a63bbc5cb。本組回打 release-group 端點覆核：title「孤單會消失離開不見」、artist-credit「原子邦妮」、first-release-date 2016-12-30、primary-type Album、secondary-types 空——與 c-126 F 類表一致，未翻案。release 端點補得：2 個 release，XW 2016-12-30 Official Digital Media 14 軌（label-info 空，barcode 空）、TW 2016-12 Official CD 14 軌（上行娛樂 AMECD0008，barcode 4715872150420）。藝人 MBID 25044792-a0be-4386-8af2-fa0127b5e501（名下 20 個 RG）。刻意不釘：09e0c767-6298-4679-aa73-c79d89764762《折桂令》2012（c-126 已收）、208d10b9／55695bdd／736541c0／4b057c75／cc7325bd 五張滾石盤與 a5e9061e／d687ed05 兩張 Warner 盤（c-126 B 類，獨立閘擋下）、acf1ef9a／c5c882f2／485d06ed 三張 EP。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "原子邦妮；Astro Bunny；原子邦妮 Astro Bunny；孤單會消失離開不見",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "宇宙人",
+  "album": "宇宙人同名專輯",
+  "year": 2009,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "相信音樂 BD0025（TW 2009-09-04 CD 13 軌，barcode 4712758991726）；另有 XW 2009-09-04 數位 13 軌（相信音樂）",
+  "why": "宇宙人的出道專輯，本組自己補的一張。MB 轄下兩個 release：台灣 CD（title 建成《宇宙人》，13 軌，相信音樂 BD0025，barcode 4712758991726）與全球數位（title《宇宙人同名專輯》，13 軌，相信音樂）。相信音樂依主線第 276 條過獨立閘，catno BD0025 又早於同廠的《地球漫步》BD0057，是同一條 BD 序列的更前段。這張在池中的位置是宇宙人目錄的起點：池中這位藝人 0 張、c-126 收 2015 一張、本批另補 2012／2017／2022 三張，補上 2009 這張，MB 上宇宙人的五張正規專輯就完全到齊，池中會有這支團從出道到 2022 的完整弧線。⚠ 這張是 c-126 的 a 組與 b 組都沒有掃到的一格：a 組的 25 位骨幹名單裡沒有宇宙人（宇宙人歸 b 組），b 組只取了《一萬小時》一張、沒有列全目錄。",
+  "risk": "⚠ **自我同名卡**（盤名含團名），依 c-126 簡報第五節第 8 點要標 `selfTitled`。池中已有同型的先例寫法：《929同名專輯》2005 與《美秀集團同名專輯》2024，本卡的盤名採同一形狀《宇宙人同名專輯》——這也是 MB release-group 與 Apple 台灣店面（collectionId 1094643353）共同採用的題名；⚠ MB 台灣 CD 那筆 release 的 title 只有《宇宙人》兩字，**與掛名完全相同**，若研究層照抄 release title 會產生一張 artist＝album 的卡，去重鍵也會塌掉。以 release-group／Apple 的《宇宙人同名專輯》為準。撞卡：盤名在池中零命中（池中的《929同名專輯》《美秀集團同名專輯》是別位藝人）。掛名照 c-126 卡單原字串「宇宙人」；拉丁別名 Cosmos People 不可用於 Apple 查詢（會撈到 artistId 1068339150 的日本條目）。⚠ 年份 2009 早於本批簡報所說的「2010 之後」，但 c-126 已有同型先例（草莓救星《太陽系》2002、傷心欲絕《我愛您》2010 在池中），且本張是同一位藝人目錄的起點，收下不會與該批的場景界定衝突——**此為本組裁定，可逆**。年份：MB 2009-09-04 與 Apple 2009-09-04 一致，軌數同為 13。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group bd1c3ac5-7cf1-4f33-945a-432da1bcf669。本組自釘並回打 release-group/<id>?fmt=json&inc=artist-credits 覆核：title「宇宙人同名專輯」、artist-credit「宇宙人」、first-release-date 2009-09-04、primary-type Album、secondary-types 空。release 端點（?release-group=<id>&inc=media+labels&limit=100）：2 個 release，XW 2009-09-04 Official Digital Media 13 軌（相信音樂，barcode 空）、TW 2009-09-04 Official CD 13 軌（title「宇宙人」，相信音樂 BD0025，barcode 4712758991726）。藝人 MBID 75fffb0e-184a-403f-8d5d-9dd822a58217（TW，名下 11 個 RG）。刻意不釘：Apple tw 目錄裡的 1094195157《宇宙人001.5 名偵探敗給心上人 - EP》2010（EP，且 MB 無此 RG）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "宇宙人；Cosmos People；宇宙人 Cosmos People；宇宙人同名專輯；宇宙人",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "南西肯恩",
+  "album": "一個不屬於自己的地方",
+  "year": 2021,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "黑市音樂 BMMP020（TW 2021-09-10，11 軌，barcode 4712839479105）；Apple 台灣店面 collectionId 1801600121 的 ℗ 行記 BLACK MARKET MUSIC COMPANY LIMITED",
+  "why": "南西肯恩的首張正規專輯，本組自己補的一張，也是**推翻 c-126 一條分類的一張**。MB 轄下一個 release：2021-09-10 台灣盤、11 軌，label-info 記 黑市音樂、catno BMMP020，barcode 4712839479105——黑市音樂在第 278 條的清單裡是收的，獨立閘沒有爭議。c-126 的 b 組把這張歸進「D. EP／形態不符」，理由是 MB 的 `secondary-types` 含 `Audiobook`。本組回查後判定那是 MB 的誤標：Apple 台灣店面同一張（1801600121、2021-09-10、11 軌、同一家 ℗）**沒有任何 EP／有聲書標記**，逐軌拉出來是 1 軌 46 秒的前奏加 10 首 3 分 41 秒到 5 分 38 秒的歌（〈雲〉221 秒、〈煙花〉273 秒、〈大海〉338 秒、〈這個星球有你的名字〉323 秒⋯⋯），是標準的創作歌手專輯編排，不是有聲書。MB 那筆 release 的 media format 也是 null（沒填載體），`Audiobook` 極可能是建檔者順手誤選。池中「南西肯恩」0 張、c-126 收了 2023《你是平靜的》一張，補上這張，這位在池中就有完整的兩張。",
+  "risk": "⚠ **本卡推翻 c-126 b 組的 D 類分類**（見批次 rulings 第 281 條）：MB `secondary-types` 含 `Audiobook`，若研究層或組裝器以 secondary-types 做形態閘會再把它擋掉一次，**要在 manifest 明記「Audiobook 為 MB 誤標，依 Apple 逐軌時長與 11 軌編排判為正規專輯」**。這條可逆：若店主或主線認定 Audiobook 標記為真，撤掉本卡即可，改的是卡單值不是卡池結構。⚠ MB 那筆 release 的 media format 是 null（未填載體），barcode 4712839479105 存在、國別 TW、status Official，其餘欄位齊全。⚠ CAA release-group 端點 404（實測）——**封面沒有 CAA 來源，只剩 Apple 一條**。撞卡：盤名在池中零命中；⚠「一個不屬於自己的地方」是敘述性長句，模糊比對容易誤命中，要鎖整個掛名字串。掛名照 c-126 卡單原字串「南西肯恩」；⚠ 子字串會撞到 `AI` 開頭的西洋碟（c126/rulings.md 第〇節已記），拉丁別名 NeciKen 只進別名。年份：MB 2021-09-10 與 Apple 2021-09-10 一致，軌數同為 11。⚠ 同一份 Apple 目錄裡有 1875177887《泥與花 Mud and Flowers — X-mas Live 2025》2026（15 軌，℗ NeciKen）與三張 Unplugged EP，**前者 MB 上查無 release-group**，本批不收，配對時不可誤取。",
+  "mbNote": "釘 release-group 00502313-9a3c-4432-9e17-514903d20142。本組自釘並回打 release-group 端點覆核：title「一個不屬於自己的地方」、artist-credit「南西肯恩」、first-release-date 2021-09-10、primary-type Album、secondary-types Audiobook（本組判為誤標，見 risk 與批次 rulings 第 281 條）。release 端點補得：1 個 release，TW 2021-09-10 Official，media format null、track-count 11，barcode 4712839479105，label 黑市音樂 catno BMMP020。藝人 MBID ebbff668-b8e3-4b6a-b3cf-db3337ac34ff（名下僅 2 個 RG）。刻意不釘：48e2b780-53e3-426f-b632-6381eb32e0f5《你是平靜的》2023（c-126 已收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "南西肯恩；NeciKen；一個不屬於自己的地方",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "那我懂你意思了",
+  "album": "沒有的, 啊!?",
+  "year": 2011,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB 轄下唯一 release 掛 喜瑪拉雅（CN 2011-02-20 CD 8 軌，barcode 4715104082291）；Apple 台灣店面 collectionId 1588833748 的 ℗ 行記 IGU Band（＝樂團自署，自主發行）",
+  "why": "那我懂你意思了的首張專輯，本組自己補的一張。c-126 的 b 組把它歸進「G. 形態存疑」，理由是 MB 轄下只有一個 CN release、標題簡體、台灣原盤查無。本組回查後認為形態已可釐清：MB 那筆 CD 是 8 軌，Apple 台灣店面同一張（1588833748）也是 8 軌、日期 2011-03-01、盤名是**繁體**的《沒有的, 啊!?》——**兩邊軌數一致、日期只差九天**，是同一張碟，不是兩件商品。獨立閘：Apple 那筆的 ℗ 行寫的是 IGU Band，就是樂團自己（團名的拉丁縮寫），屬創作者自主發行；MB 那筆的 barcode 4715104082291 前七碼 4715104 是台灣 GS1 公司前綴（471 開頭為台灣本地，第 279 條），與滾石 4710149、華納 5054197 不重疊。國別欄的 CN 與這條 471 台灣碼相衝突——同型的矛盾第 279 條已判過一次（傻子與白痴 MB `area=China` 是版權方所在地污染），本卡以 barcode 與 Apple 台灣店面為準，視為台灣盤。池中「那我懂你意思了」0 張、c-126 收了 2012 與 2014 兩張，補上這張，這支團 MB 上的三張碟就到齊。",
+  "risk": "⚠ **廠牌 喜瑪拉雅 不在第 276／278／279 條的已判清單上**，依本批簡報第二節本組不自判收退，證據列在此交主線：廠牌名「喜瑪拉雅」、catno 無、barcode 前七碼 4715104（台灣 GS1 區段）、旁證為 Apple 台灣店面 1588833748 的 ℗ 行 IGU Band（樂團自署）。**本卡是以「自主發行」那一支通過獨立閘的，喜瑪拉雅只出現在 CN 那筆 release 上**；若主線判喜瑪拉雅為大廠，本卡要重審。⚠ **盤名繁簡兩說**：MB release-group 與 release 的 title 都是簡體《没有的, 啊!?》，Apple 台灣店面是繁體《沒有的, 啊!?》。依 TW_INDIE_NAMING_RULINGS.md 規則 2（繁體優先）取繁體，簡體寫法進別名。標點沿用 Apple 的半形逗號＋半形空白＋`!?`，正規化時不可改成全形或壓掉空白。⚠ CAA release-group 端點 404（實測）——**封面沒有 CAA 來源，只剩 Apple 一條**。⚠ MB 那筆 release 的 country 是 CN（見 why 的說明），研究層不可據此把本卡寫成中國盤。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「那我懂你意思了」。⚠ 同團另有 63c99dce-734d-480a-bfac-9f91d93fcbd4《Nobody Cares》2014 與 7d2d5d67《没有人在乎你在乎的事》2014，**是同一張碟的中英兩筆建檔**（c-126 E 類已判，取中文那筆並已收），本卡與那兩筆無關，不可合併。",
+  "mbNote": "釘 release-group 2f97e2c8-2840-4418-9831-87a19e1692b5。本組自釘並回打 release-group 端點覆核：title「没有的, 啊!?」（簡體）、artist-credit「那我懂你意思了」、first-release-date 2011-02-20、primary-type Album、secondary-types 空。release 端點補得：1 個 release，CN 2011-02-20 Official，CD 8 軌，barcode 4715104082291，label 喜瑪拉雅（無 catno）。Apple 台灣店面藝人目錄（artistId 798583449）：1588833748《沒有的, 啊!?》2011-03-01、8 軌、℗ 2011 IGU Band。藝人 MBID d25a2100-9eae-4c87-ac1f-3f964cbf126c（名下 4 個 RG）。刻意不釘：866b0242-fb43-4e7b-8328-93eab371b3bd《原諒我不明白你的悲傷》2012 與 7d2d5d67-3d5b-4a67-ba02-91529beb3d11《没有人在乎你在乎的事》2014（c-126 已收）、63c99dce-734d-480a-bfac-9f91d93fcbd4《Nobody Cares》2014（＝上一筆的英文建檔，同碟異名）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "那我懂你意思了；IGU；IGU Band；沒有的, 啊!?；没有的, 啊!?；沒有的啊",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "原子邦妮",
+  "album": "和你一起的風景未完待續",
+  "year": 2025,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "MB label-info 為空（TW 2025-12-10 數位 12 軌；TW 2026-01-05 CD 12 軌，barcode 193017191998）；Apple 台灣店面 collectionId 1855465483 的 ℗ 行記 Astro Shelter（＝團自營 imprint，同 2012《折桂令》與 2016《孤單會消失離開不見》）",
+  "why": "原子邦妮離開 Warner Music Taiwan 之後的第一張專輯，本組自己補的一張，也是**推翻 c-126 一條裁定的一張**。MB 轄下三個 release：2025-12-10 台灣數位（12 軌）、2026-01-05 台灣 CD（12 軌，barcode 193017191998）、2025-12-10 英國數位（英文題《The Scenery with You to Be Continued》，12 軌），三筆的 label-info 都空。c-126 的 b 組依第 273 條把它退掉，理由是「label-info 空、但同一位藝人 2022／2023 兩張是 Warner，判證據不足」。本組補到了第 273 條當時缺的那條正面旁證：Apple 台灣店面本碟的 ℗ 行是 **Astro Shelter**——原子邦妮自己的 imprint，與她們 2012《折桂令》（1566513286）、2016《孤單會消失離開不見》（1594297744）的 ℗ 行完全同一個字串；而滾石那五張的 ℗ 是 Rock Records Co., Ltd.、Warner 那兩張是 Warner Music Taiwan Ltd.，三組互不重疊。再看 barcode：CD 那筆的 193017191998 與甜約翰兩張獨立盤（193017014877／193017076639）共用 GS1 公司前綴 1930170，與 Warner 的 5419747／5054197 完全不同。**這位藝人在 2025 年回到自營發行**，第 273 條的「證據不足」在補上 ℗ 行之後不再成立。",
+  "risk": "⚠ **本卡推翻 c-126 b 組第 273 條對這張的處分**（見批次 rulings 第 282 條）。推翻的依據是新增的正面旁證（Apple ℗ 行 Astro Shelter ＋ barcode GS1 前綴 1930170），不是對第 273 條方法本身的否定——**第 273 條「目錄有大廠掛名就走嚴格支」仍然成立，本卡就是走完嚴格支之後通過的**。可逆：若主線認為 Apple ℗ 行不足以當發行方證據，撤掉本卡即可。⚠ MB 三筆 release 的 label-info 全空，研究層要把 Astro Shelter 回填 MB 端。⚠ **年份兩說**：數位 2025-12-10、CD 2026-01-05，本卡取 first-release-date 的 2025；研究層若只看到 CD 那筆會寫成 2026。⚠ **同碟異名**：MB 的 GB release 題《The Scenery with You to Be Continued》，是同一個 release-group 的英文版建檔，**不另開卡**，進別名。⚠ 三軸提醒：本碟距今不到十個月，冷門軸 listeners 還沒長起來。撞卡：盤名在池中零命中。掛名照 c-126 卡單原字串「原子邦妮」；拉丁別名 Astro Bunny 撞韓團 ASTRO，不可用於自動比對。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 1b0868a6-933a-4b0e-b01b-5e96b7c4a5bd。本組自釘並回打 release-group 端點覆核：title「和你一起的風景未完待續」、artist-credit「原子邦妮」、first-release-date 2025-12-10、primary-type Album、secondary-types 空。release 端點補得：3 個 release，TW 2026-01-05 Official CD 12 軌（barcode 193017191998，label-info 空）、TW 2025-12-10 Official Digital Media 12 軌（barcode 空，label-info 空）、GB 2025-12-10 Official Digital Media 12 軌（title「The Scenery with You to Be Continued」，label-info 空）。Apple 台灣店面藝人目錄（artistId 798549963）：1855465483，2025-12-10，12 軌，℗ 2025 Astro Shelter。藝人 MBID 25044792-a0be-4386-8af2-fa0127b5e501。刻意不釘：208d10b9／55695bdd／736541c0／4b057c75／cc7325bd（滾石）、a5e9061e／d687ed05（Warner Music Taiwan）——七張皆被獨立閘擋下（c-126 B 類）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "原子邦妮；Astro Bunny；原子邦妮 Astro Bunny；和你一起的風景未完待續；The Scenery with You to Be Continued",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "法蘭黛樂團",
+  "album": "受寵若驚",
+  "year": 2011,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "MB label-info 為空（TW 2011-09 CD 10 軌、無 barcode）；Apple 台灣店面 collectionId 1502532461 的 ℗ 行記 迴響音樂製作有限公司（2011）",
+  "why": "法蘭黛樂團的出道專輯，本組自己補的一張，也是**把 c-126 一筆「形態存疑」解掉的一張**。c-126 的 b 組把它擱在 G 類，理由是「與同團《隨波逐流我不介意》2011-10 只差一個月，兩張的先後與定位在可查來源裡對不起來」。本組回查 Apple 台灣店面（artistId 541840967）後，那個矛盾是 MB 的日期錯了不是碟有問題：Apple 記《受寵若驚》1502532461 為 2011-10-18、10 軌、℗ 迴響音樂製作有限公司，記《隨波逐流我不介意》733726014 為 **2013-10-31**、12 軌、℗ Linfair Records Limited（＝福茂），而且同一份目錄裡 2013 年 10 月密集出現三支單曲（1479838767 之外另有 721460576《閃電》10-08、722827463《桂花巷》10-11、728212208《愛人心》10-20），是 2013 年那張專輯的宣傳期。**MB 把《隨波逐流我不介意》的年份建成 2011-10-18，那正好是 Apple 記給《受寵若驚》的日期**——兩張碟的日期在 MB 端被互換或誤植。理清之後順序很清楚：2011 年自製出道盤（迴響音樂），2013 年簽福茂發第二張。本張 10 軌，MB 與 Apple 一致。池中「法蘭黛」0 張、c-126 收了 2017 那張（亞神），補上出道盤，這支團在池中就有頭尾兩格。",
+  "risk": "⚠ **廠牌 迴響音樂製作有限公司 不在第 276／278／279 條的已判清單上**，依本批簡報第二節本組不自判收退，證據列在此交主線：廠牌名「迴響音樂製作有限公司」（Apple ℗ 行，2011）、catno 無、barcode 無（MB 那筆 release 的 barcode 是空的，第三道 GS1 判準用不上）、旁證為「早於樂團簽入福茂兩年」與「同名公司未見於任何大廠體系」。⚠ **同一位藝人另有福茂盤**（《隨波逐流我不介意》，福茂在第 276 條的退方清單裡），依本批簡報第五節第 3 點，**判準是那一張自己的廠牌不是整位**——本卡是 2011 年的自製盤，與 2013 年那張分屬兩個發行體系。若主線判迴響音樂為不可收，本卡要重審；那張福茂盤本批與 c-126 都不收。⚠ **年份兩說**：MB first-release-date 2011-09（只有年月）、Apple 2011-10-18，年份同為 2011。⚠ 本卡連帶指出 MB 端一個建檔錯誤（《隨波逐流我不介意》d5a32413 的 2011-10-18 應為 2013-10-31），研究層要回報 MB。撞卡：盤名在池中零命中；⚠「受寵若驚」是成語，模糊比對雜訊高，要鎖整個掛名字串。掛名照 c-126 卡單原字串「法蘭黛樂團」；⚠ 拉丁別名 Frandé 帶重音符，MB 全域查無台灣條目，不可用於自動比對。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 8e3e4605-8215-48ae-8d46-79ae6b4e5fb8。本組自釘並回打 release-group 端點覆核：title「受寵若驚」、artist-credit「法蘭黛樂團」、first-release-date 2011-09、primary-type Album、secondary-types 空。release 端點補得：1 個 release，TW 2011-09 Official，CD 10 軌，barcode 空，label-info 為空。Apple 台灣店面藝人目錄（artistId 541840967）：1502532461，2011-10-18，10 軌，℗ 2011 迴響音樂製作有限公司。藝人 MBID 06848360-c262-4ec8-ac08-3cdba1e9ff20（名下 6 個 RG）。刻意不釘：b52ea13e-d6d6-4d4a-9df4-6935e65debd9《為什麼像個愛情故事，明明我看的是偵探小說。》2017（c-126 已收）、d5a32413-da9d-4967-9370-02db504ec855《隨波逐流我不介意》（福茂唱片，barcode 4717398702879；福茂在第 276 條的退方清單裡，本批不收；⚠ 該 RG 的 MB 年份 2011-10-18 與 Apple 的 2013-10-31 不符，見 risk）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "法蘭黛樂團；法蘭黛；Frandé；Frande；受寵若驚",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

@@ -15,7 +15,18 @@ import { titleOk, looseTitleOk, artistOk, looseArtistOk, norm } from './match-li
 
 const batch = process.argv[2];
 if (!batch) { console.error('用法：node batch-progress/probe/recover-unavailable.mjs c104 [店面…]'); process.exit(1); }
+// 2026-09-13（c-126 踩到）：店面要「空白分隔」逐個傳，不是逗號串成一個。
+// 主線那次傳成 `c126 tw,hk,sg,my,us,jp,gb,cn`，於是唯一的「店面」是那整串亂碼，
+// 每一次請求都打到不存在的 country，Apple 回的是**合法的空結果**——
+// 14 張全部「0 個候選」，跟「這些碟真的沒上架」長得一模一樣。
+// 實際上那 14 張裡 Leo王四張在 tw 的藝人目錄裡一個不缺。改成開工先驗店面碼。
 const FRONTS = process.argv.slice(3).length ? process.argv.slice(3) : ['us', 'jp', 'kr', 'hk', 'tw', 'gb'];
+const badFronts = FRONTS.filter(f => !/^[a-z]{2}$/.test(f));
+if (badFronts.length) {
+  console.error(`店面碼不合法：${badFronts.join(' ')}\n` +
+    `店面要用空白分隔逐個傳（例：… c126 tw hk sg us），不要用逗號串成一個。`);
+  process.exit(1);
+}
 
 const cardsPath = `desc-tools/batches/cards/${batch}-cards.json`;
 const cards = JSON.parse(fs.readFileSync(cardsPath, 'utf8'));

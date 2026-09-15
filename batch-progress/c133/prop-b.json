@@ -1,0 +1,420 @@
+[
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "エレクトラム",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Electrum；石川晶；Akira Ishikawa；Akira Ishikawa & His Count Buffalos；Count Buffalo & The Jazz Rock Band；カウント・バッファロー；石川晶と彼のグループ；石川晶とカウント・バッファロー；エレクトラム 石川晶；Akira Ishikawa Electrum",
+  "reissuedBy": "Think! Records 2006-09-22 THCD-030（CD 4 軌）＝ Apple jp `1656362828`《Electrum》2006-09-25、4 軌、℗ 2006 Victor Entertainment，與 MB 的 4 軌一致；MB 已建這筆 CD release。",
+  "label": "Victor SMJX-10104（JP 1970 12 吋黑膠 4 軌，MB release 端點回 `Victor` 與 `VICTOR WORLD GROUP` 兩筆 label-info、同一個 catno，Official）",
+  "why": "石川晶把 Count Buffaloes 從 1969 年的 jazz-rock 樂團推向長篇打擊樂組曲的那一步：四首、單面兩首的編制，Victor WORLD GROUP 的 SMJX-10104。這條線（1969《Soul & Rock》→ 1970《エレクトラム》《バキシンバ》→ 1971《African Rock》→ 1972《ウガンダ》）是日本 jazz-funk／アフロ 的主幹，池中目前只有末端的《ウガンダ》一張（c-131，尚未上架），**1969–71 這三年一張都沒有**。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），石川晶名下線上池 0 張、「石川」子字串的命中全是 石川さゆり 等他人（逐筆排除）。店主 2026-09-15 要求把日本第一世代每位補到重點作齊全，這張是他目錄裡最早能站住的代表作之一。",
+  "risk": "⚠ 掛名：MB RG 的 artist-credit 是「石川晶とカウント・バッファローズ」，與實體 `2acbf5b2` 主名一致，依第 355 條直接取。同實體 22 個 RG 的 credit 有五種寫法（石川晶とカウント・バッファローズ／Akira Ishikawa & His Count Buffalos／Count Buffalo & The Jazz Rock Band／カウント・バッファロー／石川晶と彼のグループ），全部進 queryAlias。第 307 條反查同字串不同人：池中「石川」命中 石川さゆり ×3、石川ひとみ 等（全為他人，逐筆核整個掛名字串後排除），「Buffalo」命中 Buffalo／Buffalo Springfield／Buffalo Tom／Buffalo Nichols 五張（皆非本團），**無合併風險**。⚠ MB 另有 `石川晶とザ・ゲンチャーズ`（`6d2c4e53`，名下 0 個 RG）與個人實體 `237e787a`（3 個 RG），三個實體不得互相混。 撞卡：盤名《エレクトラム》《Electrum》在池中皆零命中。年份：MB first-release-date 1970，轄下有 1970 年 Victor 原盤兩筆 release，無再發失真。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「石川晶 エレクトラム」搜到 `1656362828`（2006 Think! 復刻，4 軌與 MB 一致）；藝人目錄 `1506560116`（Akira Ishikawa and His Count Buffalos，8 筆）裡同樣只有那筆 2006 版，**1970 年 Victor 原盤版本兩種查法都沒有命中**；us 店面 0 筆。",
+  "mbNote": "釘 release-group afa1adcc-fb74-4872-a185-e50145965f3e。回問 release-group 端點（inc=artist-credits+releases）：title「エレクトラム」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條：廠牌只有這個端點問得到）：1970/JP/Official「エレクトラム」Victor SMJX-10104 ＋ VICTOR WORLD GROUP SMJX-10104，12\" Vinyl 4 軌；1970/JP/Official「Electrum」VICTOR WORLD GROUP SMJX-10104，12\" Vinyl 4 軌；2006-09-22/JP/Official Think! Records THCD-030，CD 4 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（石川晶とカウント・バッファローズ／Group／JP，alias：Count Buffalo & His Rock Band、Count Buffalo & The Jazz Rock Band、Akira Ishikawa & His Group、石川晶とそのグループ、Akira Ishikawa & His Count Buffalos、Akira Ishikawa and His Group、石川晶と彼のグループ；名下 22 個 RG）；個人實體 237e787a-62fe-49e3-9c19-4c857d8a1a60（石川晶／Person／JP／jazz drummer，3 個 RG）；另有 6d2c4e53-1756-465d-8945-16ec5735b991（石川晶とザ・ゲンチャーズ，0 個 RG，第 356 條 F 已列為 §1 候選）與 f28f86cf-726e-400e-aee4-34f6ecbae551（Akira Ishikawa & All Stars，0 個 RG）。本組刻意不釘（同實體、額度外或不合規）：`56173bc0`《Soul & Rock》1969-07-25（Columbia、CAA 200，與 `92ed0cc8`《ソウル・アンド・ロック》1969 是同碟兩個 RG）、`d4241b67`《Prayer With Faith And Love》1969-09（CAA 200）、`fe3c2812`《EXCITING DRUMS / AFRICAN ROCK PARTY》1969-08（盤名帶斜線，第 321 條的形狀）、`aee391a1`《Count Buffalo Plays Country Rock》1970-10（**CAA 回 500，不是 404**）、`806f15c2`《Dynamic Latin Exotic Sound》1972、`ca240f81`《ドラム八木節ドラム》1971、`3c6216cb`《津軽じょんがら節 ドラム＆津軽三味線》1973、`521bd494`《Drums & Jazz Piano》（無日期、與 Kazuo Yashiro Trio 合掛）、`061dfedb`／`e272cbbc` 2006 年兩張ドラム系復刻、`74d39c14`《ウガンダ》1972（**c-131 已收**）；原聲帶不收：`24274e1a`／`ff3aaf91`《超時空要塞マクロス》、`32549a9d`《Lupin III》、`b2112048`《フィリップ・マーロウ》。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "バキシンバ：アフリカの想い出",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bakishinba: Memories Of Africa；バキシンバ；Bakishinba；石川晶；Akira Ishikawa；Count Buffalo；カウント・バッファロー；石川晶とカウント・バッファロー；バキシンバ アフリカの想い出",
+  "reissuedBy": "Polydor 2007-03-09 PROA-82（CD 7 軌）；MB 已建這筆。Apple jp／us 三種查法皆未命中本碟的任何版本。",
+  "label": "Polydor MR-5001（JP 1970-12 12 吋黑膠 7 軌，Official；MB 另有一筆同 catno 的 1970 release 題英文「Bakishinba: Memories Of Africa」，MR 5001 無連字號）",
+  "why": "1970 年 12 月的 Polydor MR-5001，是 Count Buffaloes 打擊樂路線最徹底的一張：整面用非洲節奏編組、盤名直接叫「アフリカの想い出」，與同年的《エレクトラム》、隔年的《African Rock》、1972 年的《ウガンダ》連成石川晶的アフロ四部曲。池中這條線只有末端的《ウガンダ》（c-131，尚未上架），實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），本盤與「バキシンバ」「Bakishinba」三種寫法在池中皆零命中。**這張是四部曲裡唯一走 Polydor 的**，其餘三張分屬 Victor／DAN／東芝，收下它這條線在廠牌上才完整。",
+  "risk": "⚠ **盤名含全形冒號「：」（U+FF1A）**：`chk-prop` 只掃非 ASCII 連字號，全形冒號不會亮燈，但下游做字串比對時要留意；英文題「Bakishinba: Memories Of Africa」與純「バキシンバ」已一併進 queryAlias（池中先例 c-131《ウガンダ（アフリカン・ロックの夜明け）》用全形括號，形狀相同）。⚠ 掛名同第 355 條取實體 `2acbf5b2` 主名；第 307 條反查無合併風險（見同組《エレクトラム》卡）。年份：MB first-release-date 1970-12，轄下 1970-12 與 1970 兩筆 Polydor 原盤 release，**卡面取 1970**，無再發失真。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「石川晶 バキシンバ」「Akira Ishikawa Bakishinba」、us 以「Bakishinba Count Buffalo」三種寫法搜尋皆 **0 筆**；藝人目錄 `1506560116`（8 筆）與 `1571811111`（1 筆，只有《Uganda》）裡也沒有本碟——**三種查法都沒有命中，但依第 254 條這只是觀察，不得寫成未上架**。⚠ Polydor 這家 1970 年代日本廠在 Apple 上的稀薄與 c-131 第 359 條、c-132 第 389 條記的規律同向。",
+  "mbNote": "釘 release-group 056a936c-6b19-4d20-92a6-c56a6dd57239。回問 release-group 端點（inc=artist-credits+releases）：title「バキシンバ：アフリカの想い出」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1970-12、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1970-12/JP/Official「バキシンバ：アフリカの想い出」Polydor MR-5001，12\" Vinyl 7 軌；1970/JP/Official「Bakishinba: Memories Of Africa」Polydor MR 5001，12\" Vinyl 7 軌（同碟的英文題壓盤）；2007-03-09/JP/Official Polydor PROA-82，CD 7 軌。藝人實體同《エレクトラム》（`2acbf5b2`，22 個 RG）。`batch-progress/enum/jp-polydor-jp.json` 列有本筆（artist 石川晶とカウント・バッファローズ、album バキシンバ：アフリカの想い出、1970、rgMbid 一致）。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "African Rock",
+  "year": 1971,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "アフリカン・ロック；石川晶；Akira Ishikawa；Akira Ishikawa & His Count Buffalos；Akira Ishikawa & Count Buffalos；Count Buffalo；カウント・バッファロー；石川晶とカウント・バッファロー",
+  "reissuedBy": "CLINCK RECORDS 2015-07-29 CRCD5116（CD 8 軌）已建進同一個 RG；另有 Apple 上 2021-06-11 的 Jaipur Music 數位再發（jp `1686634590`／us 同號，8 軌），MB 未建這筆。",
+  "label": "DAN VC-5003（JP 1971 12 吋黑膠 8 軌，MB release 端點回 `DAN`，Official）",
+  "why": "Count Buffaloes 的アフロ路線裡最被外盤收藏界追的一張，1971 年由 DAN（VC-5003）發行——與 c-131《Meditation》那張的 DAN VC-6001 同一家小廠（第 367 條）。八首全是石川晶自己編的打擊樂與電風琴的對打，日後被 hip-hop 取樣而流回日本。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「African Rock」「アフリカン・ロック」在池中皆零命中。與同組《エレクトラム》《バキシンバ》《ウガンダ》（c-131）合起來，石川晶 1970–72 年這條線才算補齊。",
+  "risk": "⚠ **同一張碟在 MB 上有兩個 release-group**（第 387 條的形狀）：本卡釘 `94fdf242`（**轄下有 1971 DAN VC-5003 原盤**、CAA **200**），另一個 `1955da79`《African Rock》**1972**（只有一筆 1972 JP release、**CAA 404**）**刻意不釘**。依第 387 條判準「取轄下有原盤 release 的那一個 RG」。⚠ 兩個 RG 的年份也不同（1971／1972），**下游若以盤名比對會抓到錯的那一個，必須鎖 rgMbid**。掛名同第 355 條取實體主名；第 307 條反查無合併風險。 撞卡：池中零命中。年份 **1971**：MB first-release-date 1971，原盤 release 同年；Apple jp `1577132931`《アフリカン・ロック》記 **1971-01-01**、8 軌（與 MB 軌數一致）、℗ TOKUMA JAPAN COMMUNICATIONS——**兩邊同年，年份無分歧**。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 搜尋命中 `1577132931`（1971、8 軌）與 `1686634590`（2021 Jaipur Music 再發、8 軌）；藝人目錄 `1506560116` 兩筆都在；us 店面只有 `1686634590`，掛名寫「Akira Ishikawa and His Count Buffalos」。⚠ **℗ 分屬 TOKUMA 與 Jaipur Music 兩家、都不是 DAN**，研究層配對時要核曲目與長度（第 262 條：日期、廠牌、catno 要出自同一筆）。",
+  "mbNote": "釘 release-group 94fdf242-b571-46a5-a645-997dbfb4abc3。回問 release-group 端點（inc=artist-credits+releases）：title「African Rock」、artist-credit「Akira Ishikawa & His Count Buffalos」（→ 實體主名 石川晶とカウント・バッファローズ，第 355 條）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1971/JP/Official DAN VC-5003，12\" Vinyl 8 軌；2015-07-29/JP/Official CLINCK RECORDS CRCD5116，CD 8 軌。**重複 RG：`1955da79-…`《African Rock》1972，credit「Akira Ishikawa & Count Buffalos」，轄下只有一筆 1972/JP/Official，CAA 404——同碟兩個 RG，本卡不釘它**（第 387 條）。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "Get Up!",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ゲット・アップ；Get Up；石川晶；Akira Ishikawa；Akira Ishikawa & His Count Buffalos；Count Buffalo；カウント・バッファロー；石川晶 Get Up",
+  "reissuedBy": "SOLID RECORDS 2001-08-25 CDSOL-1042（CD 6 軌）已建進同一個 RG。Apple 三種查法皆未命中本碟。",
+  "label": "RCA RVL-5510（JP 1975-03-06 12 吋黑膠 6 軌，Official）",
+  "why": "1975 年 3 月 6 日的 RCA RVL-5510，是 Count Buffaloes 從アフロ打擊樂轉進ファンク／レア・グルーヴ 的分水嶺：六首、電貝斯與克拉維琴掛帥，日後成為和製ファンク 被翻得最兇的一張。**同一個 RCA RVL 號段裡緊鄰的 RVL-5505 就是同組收的 大野雄二トリオ《My Little Angel》（1976）**——1975–76 年 RCA 這條和製ファンク／ジャズ線，本批一次收了兩端。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「Get Up!」「Get Up」在池中命中的是 `Ben Harper & Charlie Musselwhite — Get Up!` 與 `NewJeans — Get Up` **兩張同盤名不同掛名的既有卡**（見 risk）。",
+  "risk": "⚠ **同盤名不同掛名（`chk-prop` 不會亮燈）**：線上池已有 `Ben Harper & Charlie Musselwhite — Get Up!`（折疊鍵完全相同的盤名）與 `NewJeans — Get Up`。`chk-prop` 的折疊鍵是掛名＋盤名，兩筆都不會亮燈，**下游任何以盤名為鍵的比對都會把三張混在一起**（第 391 條第七點、第 386 條同族）。掛名同第 355 條取實體 `2acbf5b2` 主名（本 RG 的 credit 是「Akira Ishikawa & His Count Buffalos」）。第 307 條反查：池中「Buffalo」五張皆非本團，無合併風險。年份：MB first-release-date **1975-03-06**，轄下 1975-03-06 RCA 原盤 release 同日，無再發失真。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「石川晶 ゲット・アップ」搜 0 筆、「Akira Ishikawa Get Up」只回到同組另一張《Back to Rhythm》；藝人目錄 `1506560116`（8 筆）、`1571811111`（1 筆）、`1782228407`（1 筆）三個掛名底下都沒有本碟；us 同樣只回《Back to Rhythm》。**三種查法都沒有命中本碟，但依第 254 條這只是觀察。** ⚠ RCA／SOLID 這兩家在 Apple 上的稀薄與 c-132 第 389 條記的規律同向。",
+  "mbNote": "釘 release-group 18e8b3dd-4d50-4756-a814-e448f5f8ac37。回問 release-group 端點（inc=artist-credits+releases）：title「Get Up!」、artist-credit「Akira Ishikawa & His Count Buffalos」（→ 實體主名 石川晶とカウント・バッファローズ，第 355 條）、first-release-date 1975-03-06、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1975-03-06/JP/Official RCA RVL-5510，12\" Vinyl 6 軌；2001-08-25/JP/Official SOLID RECORDS CDSOL-1042，CD 6 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "Okinawa",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "沖縄；オキナワ；OKINAWA；石川晶；Akira Ishikawa；石川晶とカウント・バッファロー；AKIRA ISHIKAWA & COUNT BUFFALO；Count Buffalo Okinawa",
+  "reissuedBy": "MB 轄下只有 1976 年原盤一筆，沒有再發 release。Apple jp `1782228406`《OKINAWA》1976-11-21、8 軌、℗ 1976 King Record Co.,Ltd 是 King 自家 2024 年起的數位化上架（第 383 條那一段店面）。",
+  "label": "**King（キング）**，1976 JP 12 吋黑膠 8 軌 Official。⚠ **MB 的 `release` 端點回的 `label-info` 是空的**（不是問錯端點，`release?release-group=…&inc=labels+media` 已回問過）——廠牌取自 Apple jp 的 King 官方條目 `1782228406`（℗ 1976 King Record Co.,Ltd）；**catno 未取得，研究層須覆核**",
+  "why": "1976 年的《Okinawa》是 Count Buffaloes 把沖繩音階與 jazz-funk 節奏接在一起的一張，八首，King 發行——石川晶在 RCA 的《Get Up!》之後換廠牌做的地域題材作，與他 1970–72 年的アフリカ 四部曲互為對照（一個向外、一個向內）。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「Okinawa」在池中只命中 `Diamantes — OKINAWA LATINA`（不同盤名不同掛名，非撞卡）。收下這張，石川晶在池中就從 1972《ウガンダ》一張變成 1970–76 年六張的完整跨度。",
+  "risk": "⚠ **MB 資料庫端未登記廠牌**：`release` 端點（inc=labels+media）回的 `label-info` 是空陣列，依 c-133 簡報第二節第 2 點照收，`label` 欄寫實體盤面的廠牌並在此註明。**廠牌 King 的依據是 Apple jp 官方條目 `1782228406`（℗ 1976 King Record Co.,Ltd、1976-11-21、8 軌，與 MB 的 8 軌一致），catno 未取得——研究層須覆核。** ⚠ **Apple 的掛名字串是「石川晶とカウント・バッファロー」（無「ズ」）、藝人實體 `1782228407` 寫「AKIRA ISHIKAWA & COUNT BUFFALO」**，與 MB 實體主名差一個音，已進 queryAlias；**卡面仍取 MB 實體主名（第 355 條），不新造分裂**。年份：MB first-release-date **1976**（只有年份），Apple jp King 官方條目記 **1976-11-21**——**同年，不影響 `year`**；⚠ 但本組在同一段 King 數位化裡查到一個反例（ジョージ大塚クインテット《Loving You George》MB 1975 ／ Apple `1782228228` 1976-12-21），**第 383 條「店面精確日期優先」的前提在這段 King 號段上並非一致成立**，詳見 rulings 第 417 條。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 以「石川晶 沖縄」搜到的全是 曹雪晶 等假陽性（逐筆排除）、以「Akira Ishikawa Okinawa」命中 `1782228406`；藝人目錄 `1782228407` 名下就這一筆；us 店面 0 筆。",
+  "mbNote": "釘 release-group 75c81ed9-0486-4271-b2d9-e496a98045b0。回問 release-group 端點（inc=artist-credits+releases）：title「Okinawa」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1976/JP/Official，**label-info 空陣列**，12\" Vinyl 8 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。Apple jp 藝人實體另立 `1782228407`「AKIRA ISHIKAWA & COUNT BUFFALO」，名下只有 `1782228406`。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶",
+  "album": "Back To Rhythm",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "バック・トゥ・リズム；Back to Rhythm；Akira Ishikawa；石川 晶；石川晶とカウント・バッファローズ；Count Buffalo",
+  "reissuedBy": "Columbia Music Entertainment 2007-04-18 COCB-53634（CD 10 軌）有兩筆 release 建進同一個 RG（一筆題英文、一筆題《バック・トゥ・リズム》且 label-info 記成 `[no label]`）。Apple `1557393105`《Back to Rhythm》1975-06-25、10 軌、℗ 1975 Nippon Columbia 是原盤年份的數位上架。",
+  "label": "Columbia KZ-7510（JP 1975 12 吋黑膠 10 軌，MB release 端點唯一一筆原盤，Official；2007 再發 COCB-53634 有兩筆，其中一筆 label-info 記成 `[no label]`）",
+  "why": "石川晶**以本名單獨掛名**的代表作：1975 年日本コロムビア KZ-7510，十首，把 Count Buffaloes 的樂團編制縮成錄音室節奏組，等於他自己對「鼓手當領班」這件事的總結。收這張的意義在於**池中的石川晶會同時有樂團掛名與個人掛名兩條線**——與同組另外五張樂團盤互為對照。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「石川晶」與「Back To Rhythm」在池中皆零命中（「石川」的命中全是 石川さゆり 等他人，逐筆排除）。",
+  "risk": "⚠ **掛名分工（不是分裂）**：本卡掛個人實體 `237e787a`「石川晶」的主名，同組另外五張掛群組實體 `2acbf5b2`「石川晶とカウント・バッファローズ」——**MB 上是兩個不同實體，依第 354／355 條各取實體主名，不是同一位被拆成兩個字串的重複**（與 c-132 第 388 條 白木秀雄 三個字串的處置同形）。已逐張核過：**同一張碟沒有被兩種寫法各收一次**。⚠ Apple 的掛名字串是「石川 晶」（中間有半形空格），已進 queryAlias。第 307 條反查同字串不同人：池中「石川」命中 石川さゆり ×3 等他人、「Ishikawa」零命中，**逐筆核整個掛名字串後無合併風險**。 撞卡：盤名《Back To Rhythm》池中零命中。年份 **1975**：MB first-release-date 1975（只有年份），轄下 1975 年 Columbia KZ-7510 原盤；Apple `1557393105` 記 **1975-06-25**、℗ 1975 Nippon Columbia、10 軌（與 MB 的 10 軌一致）——**同年，`year` 不受影響**。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp／us 搜尋與藝人目錄 `585618738`（Akira Ishikawa，名下 2 筆：本碟與《Drums Method》1972）**三種查法全部命中同一個 `1557393105`**，10 軌與 MB 一致。",
+  "mbNote": "釘 release-group 6751b48c-64fc-4555-ae4e-2df7e062e900。回問 release-group 端點（inc=artist-credits+releases）：title「Back To Rhythm」、artist-credit「Akira Ishikawa」（→ 實體主名 石川晶，第 355 條）、first-release-date 1975、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1975/JP/Official Columbia KZ-7510，12\" Vinyl 10 軌；2007-04-18/JP/Official Columbia Music Entertainment COCB-53634，CD 10 軌；2007-04-18/JP/Official「バック・トゥ・リズム」**[no label]** COCB-53634，CD 10 軌（第 262 條：`[no label]` 是 label-info 陣列裡有一筆但廠牌名為空，與「陣列是空的」不同）。藝人實體 237e787a-62fe-49e3-9c19-4c857d8a1a60（石川晶／Person／JP／jazz drummer；alias Akira Ishikawa；名下 3 個 RG：本碟、`f04cbfb7`《Drums Method》1972、`413ff347`《ドラム運命ドラム》1973）。本組刻意不釘：`f04cbfb7`《Drums Method》1972（**教材盤**，c-131 第 356 條 F 已列不收）、`413ff347`《ドラム運命ドラム (Drum Classic Drum)》1973（同為ドラム教材／実演系）。`batch-progress/enum/jp-columbia.json` 列有本筆（rgMbid 一致）。"
+ },
+ {
+  "g": "b",
+  "artist": "稲垣次郎とソウル・メディア",
+  "album": "Woodstock Generation",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ウッドストック・ジェネレーション；稲垣次郎；Jiro Inagaki；Jiro Inagaki & His Soul Media；Jiro Inagaki and Soul Media；Soul Media；ソウルメディア；Jiro Inagaki Woodstock Generation",
+  "reissuedBy": "P-VINE RECORDS 2009-12-02 PCD-7313（CD 9 軌）已建進同一個 RG。Apple 三種查法皆未命中本碟。",
+  "label": "Union Records ULP-1007（JP 1970 12 吋黑膠 9 軌，Official）",
+  "why": "稲垣次郎とソウル・メディア 1970 年在 **Union Records**（ULP-1007）的一張，也是他們九張正規盤裡唯一不走日本コロムビア 的：九首把當年的搖滾曲目改成薩克斯風領銜的 jazz-rock，盤名直接用「Woodstock Generation」把時代點出來。池中這條線目前只有 `Jiro Inagaki and Soul Media` 名下的《Head Rock》《Funky Stuff》兩張英文字串卡與 c-131 的《Dosojin》（未上架），**1970–73 年這段最密的四張一張都沒有**。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Woodstock Generation」在池中零命中。`batch-progress/enum/jp-union.json` 也列有本筆，rgMbid 一致。",
+  "risk": "⚠ **掛名分裂（既有，不是本批造的）**：線上池已有 `Jiro Inagaki and Soul Media《Head Rock》1970` 與 `《Funky Stuff》1975`（後者是 apex `pearl`）兩張**英文字串**卡；依 c-133 簡報第三節與 c-131 第 357 條，本批新卡一律用漢字 `稲垣次郎とソウル・メディア`（MB 實體 `ad4be255` 主名，也是 c-131《Dosojin》已採用的字串），**待本機把池中那兩張改寫成漢字；本組不自行合併也不新造分裂**（第 307 條）。⚠ **這同時是一個撞卡陷阱**：《Head Rock》與《Funky Stuff》這兩張碟本批不得再以漢字掛名重收一次（`chk-prop` 的折疊鍵是掛名＋盤名，英文／漢字兩種掛名不會亮燈——第 386 條），已逐張核過、兩張都沒有進本組名單。第 307 條反查同字串不同人：池中「稲垣」只命中 `稲垣潤一《246:3AM》`（另一位，J-pop 歌手，逐筆核整個掛名字串後排除）、「Inagaki」只命中上述兩張，**無合併風險**。 年份：MB first-release-date **1970**，轄下 1970 年 Union 原盤 release，無再發失真。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「稲垣次郎 ウッドストック」、jp／us 以「Jiro Inagaki Woodstock Generation」三種寫法搜尋皆 **0 筆**；藝人目錄 `1506558105`（Jiro Inagaki and His Soul Media，16 筆，**全部是日本コロムビア ℗**）、`1506558197`（2 筆）、`1506558247`（1 筆）三個掛名底下都沒有本碟。⚠ **這與 Union Records 這家廠牌有關而不與年代有關**：同組另外三張走コロムビア 的碟裡有兩張在 Apple 上查得到（第 389 條那條「CAA／店面覆蓋與廠牌相關」的規律又一次應驗）。**依第 254 條這只是觀察，不得寫成未上架。**",
+  "mbNote": "釘 release-group 99c3f630-e6bb-4403-9605-5e2cb3678719。回問 release-group 端點（inc=artist-credits+releases）：title「Woodstock Generation」、artist-credit「稲垣次郎とソウル・メディア」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1970/JP/Official Union Records ULP-1007，12\" Vinyl 9 軌；2009-12-02/JP/Official P‐VINE RECORDS PCD-7313，CD 9 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。"
+ },
+ {
+  "g": "b",
+  "artist": "稲垣次郎とソウル・メディア",
+  "album": "Jazz & Rock \"Out\"",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jazz & Rock Out；Jazz Rock Out；ジャズ・アンド・ロック アウト；稲垣次郎；Jiro Inagaki；稲垣次郎とソウル・ビッグ・メディア；Jiro Inagaki and Soul Big Media；Soul Media",
+  "reissuedBy": "Columbia 2012-09-05 COCB-54008（CD 8 軌）已建進同一個 RG。Apple `1508947302`《Jazz & Rock “Out”》1970-11-25、8 軌、℗ 1970 Nippon Columbia 是原盤年份的數位上架，**但掛名寫「稲垣次郎とソウル・ビッグ・メディア」**（見 risk）。",
+  "label": "Columbia JPS-5215（JP 1970-11-25 黑膠 8 軌，Official）",
+  "why": "1970 年 11 月 25 日日本コロムビア JPS-5215，是ソウル・メディア 把「ジャズとロックの境目」當成作品題目的一張：八首，盤名裡的引號「Out」既指自由即興也指走出爵士。與同年《Woodstock Generation》、隔年《Wandering Birds》、1973 年《In the Groove》合起來，正好補上池中這條線 1970–73 年的空缺。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Jazz & Rock」在池中零命中（`chk-prop` 的折疊鍵會把 `&` 換成 `and` 再剝標點，已確認不撞）。",
+  "risk": "⚠ **掛名分裂（既有，不是本批造的）**：線上池已有 `Jiro Inagaki and Soul Media《Head Rock》1970` 與 `《Funky Stuff》1975`（後者是 apex `pearl`）兩張**英文字串**卡；依 c-133 簡報第三節與 c-131 第 357 條，本批新卡一律用漢字 `稲垣次郎とソウル・メディア`（MB 實體 `ad4be255` 主名，也是 c-131《Dosojin》已採用的字串），**待本機把池中那兩張改寫成漢字；本組不自行合併也不新造分裂**（第 307 條）。⚠ **這同時是一個撞卡陷阱**：《Head Rock》與《Funky Stuff》這兩張碟本批不得再以漢字掛名重收一次（`chk-prop` 的折疊鍵是掛名＋盤名，英文／漢字兩種掛名不會亮燈——第 386 條），已逐張核過、兩張都沒有進本組名單。第 307 條反查同字串不同人：池中「稲垣」只命中 `稲垣潤一《246:3AM》`（另一位，J-pop 歌手，逐筆核整個掛名字串後排除）、「Inagaki」只命中上述兩張，**無合併風險**。 ⚠ **Apple 的掛名是第三種寫法**：`1508947302` 掛「稲垣次郎とソウル・ビッグ・メディア」／us 掛「Jiro Inagaki and Soul Big Media」，Apple 甚至為它另立了藝人實體 `1506558247`——**同一個團在 Apple 上散成 `1506558105`（Soul Media，16 筆）、`1506558197`（Big Soul Media，2 筆）、`1506558247`（Soul Big Media，1 筆）三個實體**。MB 把本碟掛在 `ad4be255`（ソウル・メディア）底下、credit 就是「稲垣次郎とソウル・メディア」，**卡面照 MB 實體主名（第 355 條）**，三種 Apple 寫法進 queryAlias。 撞卡：池中零命中。年份 **1970**：MB first-release-date **1970-11-25**、原盤 release 同日；Apple `1508947302` 記 **1970-11-25**、℗ 1970 Nippon Columbia、8 軌（與 MB 的 8 軌一致）——**MB 與店面逐日相符**。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 以「稲垣次郎 アウト」搜 0 筆、以「Jiro Inagaki Jazz Rock Out」命中 `1508947302`；藝人目錄 `1506558247` 名下就這一筆；us 同樣命中。",
+  "mbNote": "釘 release-group 9938ac9f-fba2-4fab-b364-0becfc7840ae。回問 release-group 端點（inc=artist-credits+releases）：title「Jazz & Rock \"Out\"」、artist-credit「稲垣次郎とソウル・メディア」、first-release-date 1970-11-25、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1970-11-25/JP/Official Columbia JPS-5215，Vinyl 8 軌；2012-09-05/JP/Official Columbia COCB-54008，CD 8 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。"
+ },
+ {
+  "g": "b",
+  "artist": "稲垣次郎とソウル・メディア",
+  "album": "Wandering Birds",
+  "year": 1971,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ワンダリング・バーズ；稲垣次郎；Jiro Inagaki；Jiro Inagaki & Soul Media；Jiro Inagaki and Soul Media；Soul Media；ソウルメディア",
+  "reissuedBy": "Think! Records 2013-03-20 THCD-212（CD 7 軌）已建進同一個 RG——**與 c-132 白木秀雄／宮沢昭 那幾張的 Think! 復刻是同一家**。Apple 三種查法皆未命中本碟。",
+  "label": "Columbia NCB-7013（JP 1971 12 吋黑膠 7 軌，Official）",
+  "why": "1971 年日本コロムビア NCB-7013，是ソウル・メディア 從翻奏路線走向自作曲的轉折：七首、編制縮到管樂三管加節奏組，被當成他們最「爵士」的一張。**NCB 這個號段就是這條線的主幹**——本盤 NCB-7013 與同組收的《In the Groove》NCB-7021 相隔八號、兩年，收下兩張等於把 Columbia 這段完整地接起來。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Wandering Birds」在池中零命中。",
+  "risk": "⚠ **掛名分裂（既有，不是本批造的）**：線上池已有 `Jiro Inagaki and Soul Media《Head Rock》1970` 與 `《Funky Stuff》1975`（後者是 apex `pearl`）兩張**英文字串**卡；依 c-133 簡報第三節與 c-131 第 357 條，本批新卡一律用漢字 `稲垣次郎とソウル・メディア`（MB 實體 `ad4be255` 主名，也是 c-131《Dosojin》已採用的字串），**待本機把池中那兩張改寫成漢字；本組不自行合併也不新造分裂**（第 307 條）。⚠ **這同時是一個撞卡陷阱**：《Head Rock》與《Funky Stuff》這兩張碟本批不得再以漢字掛名重收一次（`chk-prop` 的折疊鍵是掛名＋盤名，英文／漢字兩種掛名不會亮燈——第 386 條），已逐張核過、兩張都沒有進本組名單。第 307 條反查同字串不同人：池中「稲垣」只命中 `稲垣潤一《246:3AM》`（另一位，J-pop 歌手，逐筆核整個掛名字串後排除）、「Inagaki」只命中上述兩張，**無合併風險**。 年份：MB first-release-date **1971**（只有年份），轄下 1971 年 Columbia NCB-7013 原盤 release 與 2013 Think! 復刻各一筆；**店面沒有可對照的精確日期**（見下），依第 364 條取 MB 值。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「稲垣次郎 ワンダリング」、jp／us 以「Jiro Inagaki Wandering Birds」三種寫法皆 **0 筆**；藝人目錄 `1506558105`（16 筆，**全是日本コロムビア ℗**）裡也沒有本碟——⚠ **值得記的是同一家廠牌、同一個 NCB 號段的《In the Groove》(NCB-7021) 在 Apple 上查得到**，所以這一筆的缺席不是廠牌整批未上架，而是單張的缺口。**依第 254 條這只是觀察，不得寫成未上架。**",
+  "mbNote": "釘 release-group 667ea191-00be-495b-a9a3-cd36097e8f59。回問 release-group 端點（inc=artist-credits+releases）：title「Wandering Birds」、artist-credit「Jiro Inagaki & Soul Media」（→ 實體主名 稲垣次郎とソウル・メディア，第 355 條）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1971/JP/Official Columbia NCB-7013，12\" Vinyl 7 軌；2013-03-20/JP/Official Think! Records THCD-212，CD 7 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。"
+ },
+ {
+  "g": "b",
+  "artist": "稲垣次郎とソウル・メディア",
+  "album": "In the Groove",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "In The Groove；イン・ザ・グルーヴ；稲垣次郎；Jiro Inagaki；Jiro Inagaki and His Soul Media；Soul Media；ソウルメディア",
+  "reissuedBy": "Columbia 2012-12-05 COCB-54038（CD 10 軌）與 2022-07-27 Columbia／Deep Jazz Reality HMJY-158（12 吋黑膠 10 軌）都已建進同一個 RG。Apple `1508946305` 1973-07-25、10 軌、℗ 1973 Nippon Columbia 是原盤年份的數位上架。",
+  "label": "Columbia NCB-7021（JP 1973 12 吋黑膠 10 軌，Official）",
+  "why": "1973 年日本コロムビア NCB-7021，是ソウル・メディア 的和製ファンク 顛峰：十首、電鋼琴與 wah 吉他掛帥，2022 年還被 Deep Jazz Reality 重壓成黑膠（HMJY-158），是這條線少數在二十一世紀還持續再版的盤。與同組《Wandering Birds》(NCB-7013) 前後呼應。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），⚠ **「In the Groove」在池中命中 `Marvin Gaye — In the Groove`**（同盤名不同掛名，見 risk）。",
+  "risk": "⚠ **掛名分裂（既有，不是本批造的）**：線上池已有 `Jiro Inagaki and Soul Media《Head Rock》1970` 與 `《Funky Stuff》1975`（後者是 apex `pearl`）兩張**英文字串**卡；依 c-133 簡報第三節與 c-131 第 357 條，本批新卡一律用漢字 `稲垣次郎とソウル・メディア`（MB 實體 `ad4be255` 主名，也是 c-131《Dosojin》已採用的字串），**待本機把池中那兩張改寫成漢字；本組不自行合併也不新造分裂**（第 307 條）。⚠ **這同時是一個撞卡陷阱**：《Head Rock》與《Funky Stuff》這兩張碟本批不得再以漢字掛名重收一次（`chk-prop` 的折疊鍵是掛名＋盤名，英文／漢字兩種掛名不會亮燈——第 386 條），已逐張核過、兩張都沒有進本組名單。第 307 條反查同字串不同人：池中「稲垣」只命中 `稲垣潤一《246:3AM》`（另一位，J-pop 歌手，逐筆核整個掛名字串後排除）、「Inagaki」只命中上述兩張，**無合併風險**。 ⚠ **同盤名不同掛名（`chk-prop` 不會亮燈）**：線上池已有 `Marvin Gaye — In the Groove`，折疊鍵的盤名部分完全相同，**任何以盤名為鍵的下游比對都會把兩張混在一起**（第 391 條第七點——那一條點名的兩個實例之一 `Marvin Gaye — What's Going On` 就是同一位藝人）。年份 **1973**：MB first-release-date 1973（只有年份），轄下 1973 年 Columbia NCB-7021 原盤；Apple `1508946305` 記 **1973-07-25**、℗ 1973 Nippon Columbia、10 軌（與 MB 的 10 軌一致）——**同年，`year` 不受影響**。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 盤名搜尋、jp 英文搜尋、us 搜尋**三種查法全部命中同一個 `1508946305`**，10 軌與 MB 一致；藝人目錄 `1506558105` 名下也有。",
+  "mbNote": "釘 release-group 6863111f-ff49-40e0-8663-d104e06acd3d。回問 release-group 端點（inc=artist-credits+releases）：title「In the Groove」、artist-credit「稲垣次郎とソウル・メディア」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1973/JP/Official Columbia NCB-7021，12\" Vinyl 10 軌；2012-12-05/JP/Official Columbia COCB-54038，CD 10 軌（題「In The Groove」）；2022-07-27/JP/Official Columbia HMJY-158 ＋ Deep Jazz Reality HMJY-158，12\" Vinyl 10 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。"
+ },
+ {
+  "g": "b",
+  "artist": "ジョージ大塚トリオ",
+  "album": "Page 1",
+  "year": 1967,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ページ・ワン；George Otsuka Trio；George Ohtsuka Trio；ジョージ大塚；ジョージ・大塚；George Otsuka；大塚義将；ジョージ大塚トリオ Page 1",
+  "reissuedBy": "Columbia 2014-04-23 COCB-54087（CD 8 軌，比原盤多一軌）已建進同一個 RG；Apple jp `1743173023`《Page 1》2014-04-23、8 軌、℗ 2014 Nippon Columbia 就是這一筆的數位版。**1967 年 Takt 原盤的版本在 Apple 上沒有對應條目。**",
+  "label": "Takt JAZZ-14（JP 1967 12 吋黑膠 7 軌，Official）",
+  "why": "ジョージ大塚 的**首張領銜盤**，1967 年 Takt（JAZZ-14）：七首，鋼琴三重奏加鼓，是日本現代爵士三重奏在 1960 年代後半最被引用的起點之一，也是《Page 1》→《Page 2》→《Last Summer（Page 3）》這條「頁碼」三部曲的第一章。池中他名下只有 c-131 的《Loving You George》1975（ジョージ大塚クインテット，尚未上架），**1967–72 這段一張都沒有**。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Page 1」在池中零命中。⚠ **這張是 c-131 第 356 條 F 用「CAA 404」擋掉、而 c-132 第 382 條推翻那個門檻之後可以直接建卡的三張之一**（rgMbid 早已備妥）。",
+  "risk": "⚠ **掛名**：MB 把ジョージ大塚 拆成四個實體——個人 `d9ea8995`（ジョージ大塚／Person／JP／jazz drummer，2 個 RG）、`1a76165d`「George Otsuka Trio」（3 個 RG）、`60110097`「George Otsuka Quintet」（5 個 RG）、`5e73770e`「ジョージ・大塚カルテット」（**0 個 RG**，帶中黑，c-131 第 356 條 F 已列為 §1 候選）。編制實體的主名是英文，依 c-131 第 354 條一律寫成**漢字＋片假名、不加中黑**：`ジョージ大塚トリオ`／`ジョージ大塚クインテット`。⚠ **這次有店面直接背書**：Apple jp 的藝人實體 `1741463116` 與 `456851879` 掛的字串正是「ジョージ大塚トリオ」與「ジョージ大塚クインテット」，與第 354 條的推論完全一致（**另有第三個 Apple 字串「ジョージ・大塚クィンテット」帶中黑且寫「クィ」，見《Sea Breeze》卡**）。第 307 條反查同字串不同人：池中「大塚」「Otsuka」零命中（`George` 的 47 筆命中全是 George Harrison／Benson／Russell 等他人，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **第 386 條的跨批提醒已照做**：c-132 第 391 條點名「《Four Wings》1994（`d19cb142`）已由 c-132 b 組用 `松本英彦` 收走，ジョージ大塚 這批挑碟時要先看這裡」——**本組沒有收《Four Wings》**，也沒有收任何一張 credit 裡另有別批掛名的碟（詳見 mbNote 的刻意不釘）。 ⚠ **CAA release-group 端點回 404（實測，不是 5xx）**。依 c-132 第 382 條，**CAA 404 不是排除理由**（`ALBUM_ONBOARDING.md` §4 在 2026-09-10 已核定釘住 MBID 的卡也適用 `coverSourceHint: \"apple-verified-collection\"`，並新增 `discogs` 為來源四）。**本卡封面可走的具體路徑：Apple jp 官方條目 `1743173023`（℗ 2014 Nippon Columbia、8 軌）走 apple-verified-collection——⚠ 但那是 2014 年 CD 版、8 軌，與 1967 年 Takt 原盤的 7 軌不同，若要求封面必須是原盤面，就只剩 Discogs（`cover.discogsReleaseId` ＋ 目錄號 Takt JAZZ-14／年份 1967／廠牌 Takt 至少對上兩項）。** ⚠ 另已查過本碟**沒有重複 RG**（第 382 條說的「同一張碟兩個 RG、CAA 狀態相反」在這裡不成立，`1a76165d` 名下三個 RG 是《Page 1》《Page 2》《Last Summer - Page 3》三張不同的碟）。年份 **1967**：MB first-release-date 1967，轄下 1967 Takt 原盤 release，無再發失真。店面（第 254 條，只寫觀察）：jp 以「ジョージ大塚 ページ」、jp／us 以「George Otsuka Page 1」搜尋皆 0 筆，**只有藝人目錄 `1741463116` 查得到 `1743173023`**——第 254 條講的「盤名搜尋落空、藝人目錄才命中」又一次應驗。",
+  "mbNote": "釘 release-group de5ffd98-e689-442e-9439-1ec09a437b69。回問 release-group 端點（inc=artist-credits+releases）：title「Page 1」、artist-credit「George Otsuka Trio」（→ 卡面 ジョージ大塚トリオ，第 354 條）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1967/JP/Official Takt JAZZ-14，12\" Vinyl **7 軌**；2014-04-23/JP/Official Columbia COCB-54087，CD **8 軌**。**CAA release-group 端點 404（實測）。** `batch-progress/enum/jp-columbia.json` 列有本筆（artist 欄寫「George Otsuka Trio」，rgMbid 一致）。藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。"
+ },
+ {
+  "g": "b",
+  "artist": "ジョージ大塚トリオ",
+  "album": "Page 2",
+  "year": 1968,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ページ・ツー；George Otsuka Trio；George Ohtsuka Trio；ジョージ大塚；ジョージ・大塚；George Otsuka；ジョージ大塚トリオ Page 2",
+  "reissuedBy": "Columbia 2014-04-23 COCB-54088（CD 6 軌，比原盤多一軌）已建進同一個 RG；Apple jp `1742228931`《Page 2》2014-04-23、6 軌、℗ 2014 Nippon Columbia 就是這一筆的數位版。",
+  "label": "Columbia XMS-10002-CT（JP 1968 12 吋黑膠 5 軌；⚠ **MB 記這筆 release 的 status 是 `Promotion`**，見 risk）",
+  "why": "《Page 1》的隔年續作，1968 年日本コロムビア XMS-10002-CT：五首，三重奏編制更放開，被當成ジョージ大塚 由 hard bop 轉向 modal 的一張。與同組的《Page 1》一起收，池中才會有這條「頁碼」系列的前兩章。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Page 2」在池中零命中。⚠ **c-131 第 356 條 F 把這張擋掉的理由是「1968 原盤 status 是 Promotion、只有 2014 CD Official」**——本組改收，理由見 risk。",
+  "risk": "⚠ **掛名**：MB 把ジョージ大塚 拆成四個實體——個人 `d9ea8995`（ジョージ大塚／Person／JP／jazz drummer，2 個 RG）、`1a76165d`「George Otsuka Trio」（3 個 RG）、`60110097`「George Otsuka Quintet」（5 個 RG）、`5e73770e`「ジョージ・大塚カルテット」（**0 個 RG**，帶中黑，c-131 第 356 條 F 已列為 §1 候選）。編制實體的主名是英文，依 c-131 第 354 條一律寫成**漢字＋片假名、不加中黑**：`ジョージ大塚トリオ`／`ジョージ大塚クインテット`。⚠ **這次有店面直接背書**：Apple jp 的藝人實體 `1741463116` 與 `456851879` 掛的字串正是「ジョージ大塚トリオ」與「ジョージ大塚クインテット」，與第 354 條的推論完全一致（**另有第三個 Apple 字串「ジョージ・大塚クィンテット」帶中黑且寫「クィ」，見《Sea Breeze》卡**）。第 307 條反查同字串不同人：池中「大塚」「Otsuka」零命中（`George` 的 47 筆命中全是 George Harrison／Benson／Russell 等他人，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **第 386 條的跨批提醒已照做**：c-132 第 391 條點名「《Four Wings》1994（`d19cb142`）已由 c-132 b 組用 `松本英彦` 收走，ジョージ大塚 這批挑碟時要先看這裡」——**本組沒有收《Four Wings》**，也沒有收任何一張 credit 裡另有別批掛名的碟（詳見 mbNote 的刻意不釘）。 ⚠ **原盤 release 的 status 是 `Promotion`（1968 Columbia XMS-10002-CT，5 軌），Official 的是 2014 年的 CD（COCB-54088，6 軌）**。c-131 第 356 條 F 據此不收；**本組改收**，判準三條：(1) **有先例**——c-132 第 384 條處理《祭りの幻想》時明文採用 c-133／c-132 簡報第二節第 2 點「MB 有 RG 就照收、資料庫端的欄位缺陷寫進 `risk`」，`status` 與 `label-info` 是同一類欄位缺陷；(2) **這個 RG 自己有 Official release**（2014 CD），不是整個 RG 都沒有正式發行；(3) **`Promotion` 反映的是 MB 那一筆 release 的建檔者怎麼標，不是這張碟有沒有正式發行過**——與第 253／227 條「欄位本身不是判準」同族。**`year` 仍取 1968**（RG first-release-date），2014 只是復刻。⚠ **軌數兩版不同（原盤 5、2014 CD 6）**，研究層引用曲目時要說清楚是哪一版（第 262 條）。封面：CAA release-group 端點 **200**（實測）——⚠ **與同系列的《Page 1》（404）相反，而兩張是同一個藝人實體、同一家廠牌、相隔一年**，是第 389 條「CAA 覆蓋與年代無關、與有沒有人去傳那張圖有關」的又一個實例。店面（第 254 條，只寫觀察）：jp 以「ジョージ大塚 Page 2」搜到 `1742228931`（2014、6 軌），同一次搜尋還一併回出 `1743173023`《Page 1》與 `1742233046`《Last Summer / Page 3》；藝人目錄 `1741463116` 三筆全在；us 店面 0 筆。",
+  "mbNote": "釘 release-group 8dbfa30b-4a9f-4252-8598-9809b790067e。回問 release-group 端點（inc=artist-credits+releases）：title「Page 2」、artist-credit「George Otsuka Trio」（→ 卡面 ジョージ大塚トリオ，第 354 條）、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1968/JP/**Promotion** Columbia XMS-10002-CT，12\" Vinyl 5 軌；2014-04-23/JP/Official Columbia COCB-54088，CD 6 軌。**CAA release-group 端點 200（實測）。** `batch-progress/enum/jp-columbia.json` 列有本筆（rgMbid 一致）。藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。"
+ },
+ {
+  "g": "b",
+  "artist": "ジョージ大塚クインテット",
+  "album": "Go On'",
+  "year": 1972,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ゴー・オン；Go On；The George Otsuka 5；George Otsuka Quintet；George Ohtsuka Quintet；ジョージ大塚；ジョージ・大塚クィンテット；George Otsuka",
+  "reissuedBy": "CS Record／three blind mice／Think! Records 2013-11-06 三聯名的 CD（DQCP-5234／TBM-13／THCD-250，5 軌）已建進同一個 RG。Apple 三種查法皆未命中本碟的任何版本。",
+  "label": "three blind mice TBM-13（JP 1972-11-29 12 吋黑膠 5 軌；⚠ **MB 兩筆 release 的 `status` 都是 null**，見 risk）",
+  "why": "三盲鼠（three blind mice）目錄編號 TBM-13，1972 年 11 月 29 日：ジョージ大塚 從三重奏擴成五重奏後的第一張，也是他在 TBM 兩張裡較早的那一張（另一張是同組收的 TBM-62《Physical Structure》1976）。五首、長篇即興，是 1970 年代日本爵士錄音美學最被引用的代表作之一。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Go On」在池中只命中 `Sam Dees — The Show Must Go On`（不同盤名，非撞卡）。⚠ **c-133 簡報第六節第 2 點提醒「三盲鼠的碟池中已齊」——本組已實掃確認 TBM-13 與 TBM-62 兩張都不在線上池，c-131 第 356 條 E 也把《Physical Structure》列為「額度未收、可直接進後續批」。** ⚠ **這是 c-131 因 CAA 404 擋掉、c-132 第 382 條推翻之後可直接建卡的三張之一。**",
+  "risk": "⚠ **掛名**：MB 把ジョージ大塚 拆成四個實體——個人 `d9ea8995`（ジョージ大塚／Person／JP／jazz drummer，2 個 RG）、`1a76165d`「George Otsuka Trio」（3 個 RG）、`60110097`「George Otsuka Quintet」（5 個 RG）、`5e73770e`「ジョージ・大塚カルテット」（**0 個 RG**，帶中黑，c-131 第 356 條 F 已列為 §1 候選）。編制實體的主名是英文，依 c-131 第 354 條一律寫成**漢字＋片假名、不加中黑**：`ジョージ大塚トリオ`／`ジョージ大塚クインテット`。⚠ **這次有店面直接背書**：Apple jp 的藝人實體 `1741463116` 與 `456851879` 掛的字串正是「ジョージ大塚トリオ」與「ジョージ大塚クインテット」，與第 354 條的推論完全一致（**另有第三個 Apple 字串「ジョージ・大塚クィンテット」帶中黑且寫「クィ」，見《Sea Breeze》卡**）。第 307 條反查同字串不同人：池中「大塚」「Otsuka」零命中（`George` 的 47 筆命中全是 George Harrison／Benson／Russell 等他人，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **第 386 條的跨批提醒已照做**：c-132 第 391 條點名「《Four Wings》1994（`d19cb142`）已由 c-132 b 組用 `松本英彦` 收走，ジョージ大塚 這批挑碟時要先看這裡」——**本組沒有收《Four Wings》**，也沒有收任何一張 credit 裡另有別批掛名的碟（詳見 mbNote 的刻意不釘）。 ⚠ **CAA release-group 端點回 404（實測）**。依 c-132 第 382 條照收。**本卡封面可走的具體路徑：Apple jp／us 三種查法（盤名搜尋、英文盤名搜尋、藝人目錄 `1741463116`／`456851879`／us `1552028550`）全部 0 筆，apple-verified-collection 沒有素材 → **只剩 Discogs**（`cover.discogsReleaseId` ＋ 目錄號 TBM-13／年份 1972／廠牌 three blind mice 至少對上兩項，再登錄 registry）。⚠ 另已查過本碟**沒有重複 RG**。 ⚠ **兩筆 release 的 `status` 都是 null**（1972 原盤與 2013 CD 都沒有填），依簡報第二節第 2 點照收並在此註明；`country` 兩筆都是 JP。年份 **1972**：MB first-release-date **1972-11-29**、原盤 release 同日，無再發失真。店面（第 254 條，只寫觀察）：jp 以「ジョージ大塚 ゴー・オン」回到的是 FLOW《GO!!!》、以「George Otsuka Go On」回到的是 Roberta Flack《First Take》——**兩筆都是假陽性，已逐筆核掛名後排除**；us 0 筆。⚠ **TBM 這家在 Apple 上的空缺與 c-131 第 359 條、c-132 第 389 條記的規律同向。**",
+  "mbNote": "釘 release-group d93860bf-806d-455a-9663-7df516ee0c25。回問 release-group 端點（inc=artist-credits+releases）：title「Go On'」、artist-credit「The George Otsuka 5」（→ 實體 60110097「George Otsuka Quintet」→ 卡面 ジョージ大塚クインテット，第 354／355 條）、first-release-date 1972-11-29、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1972-11-29/JP/**status null** three blind mice TBM-13，12\" Vinyl 5 軌；2013-11-06/JP/**status null** CS Record DQCP-5234 ＋ three blind mice TBM-13 ＋ Think! Records THCD-250，CD 5 軌。**CAA release-group 端點 404（實測）。**藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。"
+ },
+ {
+  "g": "b",
+  "artist": "ジョージ大塚クインテット",
+  "album": "Physical Structure",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "フィジカル・ストラクチャー；George Otsuka Quintet；George Ohtsuka Quintet；ジョージ大塚；ジョージ・大塚クィンテット；George Otsuka",
+  "reissuedBy": "CS Record／three blind mice／Think! Records 2013-07-10 三聯名的 Blu-spec CD（DQCP-5223／TBM-62／THCD-239，4 軌）已建進同一個 RG。Apple 三種查法皆未命中本碟。",
+  "label": "three blind mice TBM-62（JP 1976 12 吋黑膠 4 軌，Official）",
+  "why": "三盲鼠 TBM-62，1976 年：只有四首、每首都長，是ジョージ大塚 五重奏在 TBM 的第二張，也是他 1970 年代最後一張正規領銜盤。與同組的 TBM-13《Go On'》相隔四年，兩張合起來就是他在三盲鼠的全部。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Physical Structure」在池中零命中；c-131 第 356 條 E 已把這張列為「額度未收、CAA 200、原盤 Official，可直接進後續批」，**rgMbid 早已備妥**。",
+  "risk": "⚠ **掛名**：MB 把ジョージ大塚 拆成四個實體——個人 `d9ea8995`（ジョージ大塚／Person／JP／jazz drummer，2 個 RG）、`1a76165d`「George Otsuka Trio」（3 個 RG）、`60110097`「George Otsuka Quintet」（5 個 RG）、`5e73770e`「ジョージ・大塚カルテット」（**0 個 RG**，帶中黑，c-131 第 356 條 F 已列為 §1 候選）。編制實體的主名是英文，依 c-131 第 354 條一律寫成**漢字＋片假名、不加中黑**：`ジョージ大塚トリオ`／`ジョージ大塚クインテット`。⚠ **這次有店面直接背書**：Apple jp 的藝人實體 `1741463116` 與 `456851879` 掛的字串正是「ジョージ大塚トリオ」與「ジョージ大塚クインテット」，與第 354 條的推論完全一致（**另有第三個 Apple 字串「ジョージ・大塚クィンテット」帶中黑且寫「クィ」，見《Sea Breeze》卡**）。第 307 條反查同字串不同人：池中「大塚」「Otsuka」零命中（`George` 的 47 筆命中全是 George Harrison／Benson／Russell 等他人，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **第 386 條的跨批提醒已照做**：c-132 第 391 條點名「《Four Wings》1994（`d19cb142`）已由 c-132 b 組用 `松本英彦` 收走，ジョージ大塚 這批挑碟時要先看這裡」——**本組沒有收《Four Wings》**，也沒有收任何一張 credit 裡另有別批掛名的碟（詳見 mbNote 的刻意不釘）。 撞卡：池中零命中；⚠ 已實掃確認 TBM-62 不在線上池（簡報第六節第 2 點「三盲鼠的碟池中已齊」在這一張上不成立）。年份 **1976**：MB first-release-date 1976（只有年份），轄下 1976 年 TBM-62 原盤 Official release；**店面沒有可對照的精確日期**（見下），依第 364 條取 MB 值。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 以「ジョージ大塚 フィジカル」、jp／us 以「George Otsuka Physical Structure」搜尋皆 **0 筆**；藝人目錄 `456851879`（ジョージ大塚クインテット）名下只有 `1782228228`《Loving You George》一筆、us `1552028550` 名下三筆（《Loving You George》與兩張單曲）——**三種查法都沒有命中本碟，但依第 254 條這只是觀察，不得寫成未上架。** ⚠ **順帶一個要交給主線的發現**：`456851879` 名下那筆 `1782228228`《Loving You George》是 **King 自家上架、記 1976-12-21、℗ 1976 King Record Co.,Ltd、4 軌**，而 **c-131 已收的那張卡年份是 1975**（MB `d237615a` first-release-date 1975，us `1552028548` 也記 1975-01-01 ℗ Wewantsounds）——**兩邊差一年**，本組不動 c-131 的卡，已寫進 rulings 第 417 條供主線覆核。",
+  "mbNote": "釘 release-group 6be3e9a9-7b9b-4f9f-9dfb-50f441e4bd62。回問 release-group 端點（inc=artist-credits+releases）：title「Physical Structure」、artist-credit「George Otsuka Quintet」（→ 卡面 ジョージ大塚クインテット，第 354 條）、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1976/JP/Official three blind mice TBM-62，12\" Vinyl 4 軌；2013-07-10/JP/Official CS Record DQCP-5223 ＋ three blind mice TBM-62 ＋ Think! Records THCD-239，Blu-spec CD 4 軌。**CAA release-group 端點 200（實測）。**藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。"
+ },
+ {
+  "g": "b",
+  "artist": "ジョージ大塚クインテット",
+  "album": "Sea Breeze",
+  "year": 1971,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "シー・ブリーズ；ジョージ・大塚クィンテット；George Otsuka Quintet；George Ohtsuka Quintet；ジョージ大塚；George Otsuka；Sea Breeze George Otsuka",
+  "reissuedBy": "MB 轄下**只有** Think! Records 2014-09-24 THCD-330（CD 5 軌）一筆——**1971 年原盤未建檔**。Apple jp `1879753290`《シー・ブリーズ》2014-09-24、5 軌、℗ 2014 TEICHIKU ENTERTAINMENT，掛名寫「ジョージ・大塚クィンテット」。",
+  "label": "**1971 年原盤的廠牌與 catno 未取得，研究層須覆核**（MB 只有 2014 復刻：Think! Records THCD-330，JP CD 5 軌 Official；Apple 的 ℗ 歸 TEICHIKU ENTERTAINMENT，與 Think! 復刻 Union／テイチク 母帶的脈絡一致）",
+  "why": "ジョージ大塚 五重奏在《Page 2》(1968) 與《Go On'》(1972) 之間的一張，五首——其中一首是 The Beatles 的〈The Fool on the Hill〉改編（Apple 曲目：シー・ブリーズ／フール・オン・ザ・ヒル／キャニヴル／ポテト・チップス／ジャンピング・キャッツ），是他把流行曲拉進五重奏編制的樣本。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），⚠ **「Sea Breeze」在池中命中 `角松敏生 — Sea Breeze`**（同盤名不同掛名，見 risk）。⚠ **這是 c-131 第 356 條 F 因 CAA 404 擋掉、c-132 第 382 條推翻門檻之後可直接建卡的三張之一。**",
+  "risk": "⚠ **掛名**：MB 把ジョージ大塚 拆成四個實體——個人 `d9ea8995`（ジョージ大塚／Person／JP／jazz drummer，2 個 RG）、`1a76165d`「George Otsuka Trio」（3 個 RG）、`60110097`「George Otsuka Quintet」（5 個 RG）、`5e73770e`「ジョージ・大塚カルテット」（**0 個 RG**，帶中黑，c-131 第 356 條 F 已列為 §1 候選）。編制實體的主名是英文，依 c-131 第 354 條一律寫成**漢字＋片假名、不加中黑**：`ジョージ大塚トリオ`／`ジョージ大塚クインテット`。⚠ **這次有店面直接背書**：Apple jp 的藝人實體 `1741463116` 與 `456851879` 掛的字串正是「ジョージ大塚トリオ」與「ジョージ大塚クインテット」，與第 354 條的推論完全一致（**另有第三個 Apple 字串「ジョージ・大塚クィンテット」帶中黑且寫「クィ」，見《Sea Breeze》卡**）。第 307 條反查同字串不同人：池中「大塚」「Otsuka」零命中（`George` 的 47 筆命中全是 George Harrison／Benson／Russell 等他人，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **第 386 條的跨批提醒已照做**：c-132 第 391 條點名「《Four Wings》1994（`d19cb142`）已由 c-132 b 組用 `松本英彦` 收走，ジョージ大塚 這批挑碟時要先看這裡」——**本組沒有收《Four Wings》**，也沒有收任何一張 credit 裡另有別批掛名的碟（詳見 mbNote 的刻意不釘）。 ⚠⚠ **年份是本卡最大的風險，研究層必須覆核**：MB 的 RG first-release-date 是 **2014-09-24**（Think! Records THCD-330 復刻），**1971 年原盤在 MB 上完全沒有建檔**。卡面取 **1971** 的唯一依據是 **c-131 第 356 條 F 的記載「《Sea Breeze》`f1f64d5b` 只有 2014 RG（1971 原盤 MB 未建檔）」**——**本組沒有取得一手舉證**（Apple `1879753290` 的日期與 ℗ 都是 2014、TEICHIKU；盤名以「Sea Breeze」「シー・ブリーズ」「George Otsuka Sea Breeze」三種寫法搜 jp／us 都只回到這一筆）。處置依 c-132 第 384 條（MB 只建復刻時取原盤年、並寫明出處）＋簡報第四節第 1 點；**若研究層覆核不成立，改取 2014 並在 `risk` 改寫**。⚠ **CAA release-group 端點回 404（實測）**，依第 382 條照收。**封面可走的具體路徑：Apple jp 官方條目 `1879753290`（5 軌，與 MB 的 5 軌一致）走 apple-verified-collection——但那是 2014 年 Think!／テイチク 復刻的封面，不是 1971 原盤面；要原盤面就只剩 Discogs。** ⚠ **同盤名不同掛名（`chk-prop` 不會亮燈）**：線上池已有 `角松敏生 — Sea Breeze`，折疊鍵的盤名部分完全相同（第 391 條第七點）。⚠ **Apple 的掛名是第三種寫法「ジョージ・大塚クィンテット」（帶中黑、寫「クィ」）**，與 Apple 自己的另一個實體 `456851879`「ジョージ大塚クインテット」不同——**同一個團在同一個店面上有兩個字串**；卡面照第 354 條取不帶中黑的「ジョージ大塚クインテット」，兩種 Apple 寫法進 queryAlias。",
+  "mbNote": "釘 release-group f1f64d5b-3e0f-46ea-ac08-52599b412353。回問 release-group 端點（inc=artist-credits+releases）：title「Sea Breeze」、artist-credit「George Otsuka Quintet」（→ 卡面 ジョージ大塚クインテット，第 354 條）、first-release-date **2014-09-24**、primary-type Album、secondary-types 空、轄下 **1 個** release。release 端點（inc=media+labels，第 259 條）：2014-09-24/JP/Official Think! Records THCD-330，CD 5 軌——**這是 MB 轄下唯一一筆，1971 原盤未建檔，卡面年份 1971 的依據見 risk**。**CAA release-group 端點 404（實測）。** Apple jp 直查 `lookup?id=1879753290&entity=song`（第 254 條第三步）：5 軌，曲目 シー・ブリーズ／フール・オン・ザ・ヒル／キャニヴル／ポテト・チップス／ジャンピング・キャッツ，℗ 2014 TEICHIKU ENTERTAINMENT，**軌數與 MB 一致**。藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。"
+ },
+ {
+  "g": "b",
+  "artist": "大野雄二",
+  "album": "Sound Adventure Act.1",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "サウンド・アドベンチャー；Sound Adventure；Sound Adventure Act 1；Yuji Ohno；大野 雄二；ŌNO Yūji；Yuji Ono",
+  "reissuedBy": "MB 轄下只有 1975 年原盤一筆，沒有再發 release。Apple 三種查法皆未命中本碟的任何版本。",
+  "label": "CBS/Sony Special Products YFSC-29（JP 1975 12 吋黑膠 7 軌，Official）",
+  "why": "大野雄二 在《ルパン三世》配樂（1977 起）之前的爵士盤代表作：1975 年 CBS/Sony Special Products YFSC-29，七首，鍵盤領銜的和製 jazz-funk。**池中他名下的兩張都是原聲帶**（`ルパン三世 カリオストロの城 オリジナル・サウンドトラック`、`Original Soundtrack from Lupin III`），**爵士盤零張**——這正是 c-133 簡報要求「大野雄二只收爵士盤」的缺口所在。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Sound Adventure」在池中零命中。本筆也列在 `batch-progress/enum/jp-cbs-sony.json`，rgMbid 一致。",
+  "risk": "⚠ **掛名**：MB 個人實體 `49b6b461`（大野雄二／Person／JP／disambiguation「anime music composer and jazz pianist」）與群組實體 `335ac3db`（大野雄二トリオ）是兩個不同實體，依第 354／355 條各取實體主名——**這是編制分工，不是分裂**（同 c-132 第 388 條 白木秀雄 三字串的處置）。⚠ **池中已經有 `大野雄二` 這個字串**（`ルパン三世 カリオストロの城 オリジナル・サウンドトラック`、`Original Soundtrack from Lupin III` 兩張原聲帶卡，皆已上架），**本批的爵士盤掛的是同一個字串、同一位人，不造新分裂**。第 307 條反查同字串不同人：池中「大野」只命中這兩張、「Ohno」「Ono」命中 Yoko Ono ×3（另一位，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **Apple 上這位散成至少七個藝人實體**（`73404621` Yuji Ohno／`1582850243` 大野雄二（ダンス）／`203157232` OHNO YUJI TRIO／`149128510`／`1117261778`／`1586951483`／`510287513`），配對時不能只認一個。 撞卡：池中零命中；與池中兩張原聲帶卡盤名不重疊。年份 **1975**：MB first-release-date 1975（只有年份），轄下 1975 年 CBS/Sony 原盤 Official release；**店面沒有可對照的日期**（見下），依第 364 條取 MB 值並註明這是資料庫登記的最早發行。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 以「大野雄二 サウンド・アドベンチャー」搜 0 筆、jp／us 以「Yuji Ohno Sound Adventure」只回出一堆ルパン三世 的原聲帶（全為假陽性，逐筆排除）；藝人目錄 `73404621`（Yuji Ohno）、`1582850243`（大野雄二）、`203157232`（OHNO YUJI TRIO）三個實體底下都沒有本碟。**三種查法都沒有命中，但依第 254 條這只是觀察。** ⚠ CBS/Sony Special Products 這條 1970 年代的副線在 Apple 上的稀薄，與第 389 條記的規律同向。",
+  "mbNote": "釘 release-group 8d5959a8-72a0-4069-ad55-57ea24f7b49a。回問 release-group 端點（inc=artist-credits+releases）：title「Sound Adventure Act.1」、artist-credit「大野雄二」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1975/JP/Official CBS/Sony Special Products YFSC-29，12\" Vinyl 7 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。"
+ },
+ {
+  "g": "b",
+  "artist": "大野雄二トリオ",
+  "album": "My Little Angel",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "マイ・リトル・エンジェル；Yuji Ohno Trio；OHNO YUJI TRIO；大野雄二；Yuji Ohno；大野 雄二；Ohno Yuji Trio",
+  "reissuedBy": "RCA 2006-10-25 BVCJ-37528（CD 8 軌）已建進同一個 RG。Apple 三種查法皆未命中本碟。",
+  "label": "RCA RVL-5505（JP 1976 12 吋黑膠 8 軌，Official）",
+  "why": "大野雄二 以**三重奏**掛名的爵士盤，1976 年 RCA RVL-5505：八首，鋼琴三重奏的正統編制，與同年他替電視與電影寫的曲子完全兩件事——這是他在《ルパン三世》之前最純粹的一張爵士作品。⚠ **RVL 這個號段正是本批的一條暗線**：**RVL-5505 是本碟、RVL-5510 是同組收的 石川晶とカウント・バッファローズ《Get Up!》(1975)**，1975–76 年 RCA 日本的和製ジャズ／ファンク 線，本批一次收了兩端。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「My Little Angel」在池中零命中。",
+  "risk": "⚠ **掛名**：MB 個人實體 `49b6b461`（大野雄二／Person／JP／disambiguation「anime music composer and jazz pianist」）與群組實體 `335ac3db`（大野雄二トリオ）是兩個不同實體，依第 354／355 條各取實體主名——**這是編制分工，不是分裂**（同 c-132 第 388 條 白木秀雄 三字串的處置）。⚠ **池中已經有 `大野雄二` 這個字串**（`ルパン三世 カリオストロの城 オリジナル・サウンドトラック`、`Original Soundtrack from Lupin III` 兩張原聲帶卡，皆已上架），**本批的爵士盤掛的是同一個字串、同一位人，不造新分裂**。第 307 條反查同字串不同人：池中「大野」只命中這兩張、「Ohno」「Ono」命中 Yoko Ono ×3（另一位，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **Apple 上這位散成至少七個藝人實體**（`73404621` Yuji Ohno／`1582850243` 大野雄二（ダンス）／`203157232` OHNO YUJI TRIO／`149128510`／`1117261778`／`1586951483`／`510287513`），配對時不能只認一個。 ⚠ **本卡是池中第一張 `大野雄二トリオ` 掛名的卡**，與池中既有的 `大野雄二`（兩張原聲帶）並存——**依第 354／355 條這是編制分工不是分裂，已逐張核過同一張碟沒有被兩種寫法各收一次**。年份 **1976**：MB first-release-date 1976（只有年份），轄下 1976 年 RCA RVL-5505 原盤 Official release；**店面沒有可對照的日期**，依第 364 條取 MB 值。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 以「大野雄二 マイ・リトル・エンジェル」、jp／us 以「Yuji Ohno My Little Angel」搜尋皆 **0 筆**；藝人目錄 `203157232`（OHNO YUJI TRIO，12 筆）裡最早的一筆是 1970 年的合掛 Live（`1789735938`《TRIO BY TRIO +1》）、其餘全是 1999 年起的 LUPIN THE THIRD「JAZZ」系列與 `1693327310`《As Well Be Spring》（1975-09-25，合掛「アン・ヤング & 大野雄二トリオ」，本組不收）——**本碟三種查法都沒有命中，但依第 254 條這只是觀察。**",
+  "mbNote": "釘 release-group 61daf5d9-2382-4901-91b6-1c0d6123a4dd。回問 release-group 端點（inc=artist-credits+releases）：title「My Little Angel」、artist-credit「大野雄二トリオ」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1976/JP/Official RCA RVL-5505，12\" Vinyl 8 軌；2006-10-25/JP/Official RCA BVCJ-37528，CD 8 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。"
+ },
+ {
+  "g": "b",
+  "artist": "大野雄二",
+  "album": "Space Kid",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "スペース・キッド；SPACE KID；Yuji Ohno；大野 雄二；ŌNO Yūji；Yuji Ono；大野雄二 Space Kid",
+  "reissuedBy": "MB 轄下只有 1978 年原盤一筆。Apple jp `1539321882`《SPACE KID》記 1978-01-01、10 軌、℗ 1978 Sony Music Entertainment (Japan)，是原盤年份的數位上架（us 店面同一個 collectionId，掛名寫「Yuji Ohno」）。",
+  "label": "CBS/Sony 25AH 501（JP 1978 12 吋黑膠 10 軌，Official）",
+  "why": "1978 年 CBS/Sony 25AH 501，十首：大野雄二 在《ルパン三世》配樂爆紅的同一年交出的**爵士／フュージョン 領銜盤**，也是他個人掛名下最被 rare groove 圈追的一張。與同組的《Sound Adventure Act.1》(1975) 同屬 CBS/Sony 這條線的兩端。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Space Kid」在池中零命中。本筆也列在 `batch-progress/enum/jp-cbs-sony.json`，rgMbid 一致。",
+  "risk": "⚠ **掛名**：MB 個人實體 `49b6b461`（大野雄二／Person／JP／disambiguation「anime music composer and jazz pianist」）與群組實體 `335ac3db`（大野雄二トリオ）是兩個不同實體，依第 354／355 條各取實體主名——**這是編制分工，不是分裂**（同 c-132 第 388 條 白木秀雄 三字串的處置）。⚠ **池中已經有 `大野雄二` 這個字串**（`ルパン三世 カリオストロの城 オリジナル・サウンドトラック`、`Original Soundtrack from Lupin III` 兩張原聲帶卡，皆已上架），**本批的爵士盤掛的是同一個字串、同一位人，不造新分裂**。第 307 條反查同字串不同人：池中「大野」只命中這兩張、「Ohno」「Ono」命中 Yoko Ono ×3（另一位，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **Apple 上這位散成至少七個藝人實體**（`73404621` Yuji Ohno／`1582850243` 大野雄二（ダンス）／`203157232` OHNO YUJI TRIO／`149128510`／`1117261778`／`1586951483`／`510287513`），配對時不能只認一個。 撞卡：池中零命中。年份 **1978**：MB first-release-date 1978（只有年份），轄下 1978 年 CBS/Sony 原盤 Official release；Apple `1539321882` 記 **1978-01-01**、℗ 1978 Sony Music Entertainment (Japan)、10 軌（與 MB 的 10 軌一致）——**同年；⚠ Apple 的「01-01」是月日缺值的占位寫法，不是精確日期，不足以依第 383 條改判**。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 盤名搜尋命中 `1539321882`；us 以「Yuji Ohno Lifetide」等寫法搜到的清單裡也有同一個 `1539321882`（10 軌）；藝人目錄 `73404621` 名下筆數極多、以ルパン三世 系列為主。**軌數與 MB 一致的命中有 1 筆。**",
+  "mbNote": "釘 release-group 8b03bd79-3c2c-4e1b-949f-a8f1b5f4f89c。回問 release-group 端點（inc=artist-credits+releases）：title「Space Kid」、artist-credit「大野雄二」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1978/JP/Official CBS/Sony 25AH 501，12\" Vinyl 10 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。"
+ },
+ {
+  "g": "b",
+  "artist": "大野雄二",
+  "album": "Lifetide",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ライフタイド；LIFETIDE；Yuji Ohno；大野 雄二；ŌNO Yūji；Yuji Ono；大野雄二 Lifetide",
+  "reissuedBy": "MB 轄下只有 1982 年原盤一筆。Apple 三種查法皆未命中本碟的任何版本。",
+  "label": "INVITATION VIH-28104（JP 1982 12 吋黑膠 10 軌，Official；INVITATION 是 Victor 的爵士／フュージョン 副廠，見 `batch-progress/enum/jp-victor.json`）",
+  "why": "1982 年 Victor／INVITATION VIH-28104，十首：大野雄二 離開 CBS/Sony 之後在 Victor 的一張，是他個人掛名的爵士盤裡年代最晚、也是日本 city-pop／フュージョン 交界處最常被翻出來的一張。與《Sound Adventure Act.1》(1975 CBS/Sony)、《Space Kid》(1978 CBS/Sony)、《My Little Angel》(1976 RCA 三重奏) 合起來，本批給了他 1975–82 年**三家廠牌、兩種掛名**的完整跨度，池中他名下也才第一次有爵士盤。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Lifetide」在池中零命中。`batch-progress/enum/jp-victor.json` 列有本筆，rgMbid 一致。",
+  "risk": "⚠ **掛名**：MB 個人實體 `49b6b461`（大野雄二／Person／JP／disambiguation「anime music composer and jazz pianist」）與群組實體 `335ac3db`（大野雄二トリオ）是兩個不同實體，依第 354／355 條各取實體主名——**這是編制分工，不是分裂**（同 c-132 第 388 條 白木秀雄 三字串的處置）。⚠ **池中已經有 `大野雄二` 這個字串**（`ルパン三世 カリオストロの城 オリジナル・サウンドトラック`、`Original Soundtrack from Lupin III` 兩張原聲帶卡，皆已上架），**本批的爵士盤掛的是同一個字串、同一位人，不造新分裂**。第 307 條反查同字串不同人：池中「大野」只命中這兩張、「Ohno」「Ono」命中 Yoko Ono ×3（另一位，逐筆核整個掛名字串後排除），**無合併風險**。⚠ **Apple 上這位散成至少七個藝人實體**（`73404621` Yuji Ohno／`1582850243` 大野雄二（ダンス）／`203157232` OHNO YUJI TRIO／`149128510`／`1117261778`／`1586951483`／`510287513`），配對時不能只認一個。 撞卡：池中零命中。年份 **1982**：MB first-release-date 1982（只有年份），轄下 1982 年 INVITATION 原盤 Official release；**店面沒有可對照的日期**，依第 364 條取 MB 值。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 以「大野雄二 ライフタイド」、jp 以「Yuji Ohno Lifetide」搜尋皆 **0 筆**（us 那次搜尋回的 20 筆全是他別張碟，逐筆核盤名後排除）；藝人目錄 `73404621`／`1582850243`／`203157232` 底下都沒有本碟。**三種查法都沒有命中，但依第 254 條這只是觀察。** ⚠ **Invitation／Victor 這條線在 Apple 上的空缺與 c-131 第 359 條、c-132 第 389 條記的規律同向。**",
+  "mbNote": "釘 release-group 4be4c001-29d3-4f78-9dea-38becb7614a5。回問 release-group 端點（inc=artist-credits+releases）：title「Lifetide」、artist-credit「大野雄二」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1982/JP/Official INVITATION VIH-28104，12\" Vinyl 10 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。"
+ },
+ {
+  "g": "b",
+  "artist": "村岡建",
+  "album": "Takeru",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "村岡健；Takeru Muraoka；Muraoka Takeru；Takeru Muraoka Quartet；村岡建カルテット；たける；村岡建 Takeru",
+  "reissuedBy": "MB 轄下只有 1970 年原盤一筆。Apple jp `1628447859`《Takeru》記 1970-01-01、5 軌、「A Universal Classics & jazz release; ℗ 1970 UNIVERSAL MUSIC LLC」——Philips 母帶後來歸 Universal，這是同一張碟的數位上架。",
+  "label": "Philips FX-8502（JP 1970 12 吋黑膠 5 軌；⚠ **MB 這筆 release 的 `status` 是 null**，見 risk）",
+  "why": "村岡建 的**首張領銜盤**，1970 年 Philips FX-8502，盤名就是他自己的名字：五首，次中音薩克斯風四重奏，是日本第一世代裡最晚才被重新發現的一位的起點。**池中他名下零張**——c-133 簡報給他的三張名額，正好是 MB 上他可收的全部（見 mbNote）。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），⚠ **「Takeru」在池中零命中**（`武尊`／`TAKERU` 等 MB 實體與池中無關）。",
+  "risk": "⚠⚠ **掛名：卡面取「村岡建」，MB 實體主名是「村岡健」**。MB `d9e29a7c-390d-4aea-ae4a-c320b6994f27`（Person／JP／1941-01-12）的**主名寫「村岡健」**，alias 有「Takeru Muraoka」（en，primary）與「**村岡建**」。依 2026-08-11 東亞藝人名裁定（有漢字照漢字）兩個都是漢字，第 355 條（取實體主名）照字面會得到「村岡健」——**本組取「村岡建」，理由是店面的一手印法**：Apple jp 三筆官方條目全部印「村岡建」（`1628447859`《Takeru》1970、`1441951865`《Rock Joy in Sax》、`1782229173`《SOFT LANDING》的藝人字串「村岡建とヒズ・ニュー・グループ」，另有 `1834346786`「村岡建 & ビート・ポップス」、`1795602449`、`1681940387`「村岡建 & 植松孝夫」），**六筆都是「建」，沒有一筆是「健」**；這與 c-131 第 350 條（秋吉／穐吉：主名取她日本盤與店面的印法、不取 MB 主名）完全同形，有先例。「村岡健」「Takeru Muraoka」「Muraoka Takeru」全部進 queryAlias，**`risk` 標明 MB 主名待本機覆核**。⚠ 第 307 條反查同字串不同人：池中「村岡」「Muraoka」**零命中**；⚠ **但 MB 上有一位極易混的同姓者 `a900bd7e`「村岡実」（Minoru Muraoka，尺八，`enum/jp-1.md` 提到的《Shakuhachi Rock》三張就是他）**——**任何以「Muraoka」為鍵的比對都會把兩位混在一起**，不得混入本掛名。另有 `1c035c7d`「Ju Muraoka」等十餘個同姓實體，皆非本人。 ⚠ **編制 credit 的隱蔽形狀（第 391 條第二節那一族，但判法不同）**：本 RG 的 artist-credit 名字寫「**Takeru Muraoka Quartet**」，但**指向的 artist 實體是個人 `d9e29a7c`**（不是群組）；⚠ **與 c-132《Sea Horse》不同的是——MB 上並沒有另立一個同名的群組實體**（`artist?query=\"Takeru Muraoka Quartet\"` 查無），所以第 391 條當時「兩個問題一起解」的理由在這裡不存在，**回到第 355 條的字面：取實體主名（經店面校正後為「村岡建」）**，credit 原文「Takeru Muraoka Quartet」與可能的「村岡建カルテット」一併進 queryAlias。**這樣做也避免在池中造出一張卡就佔一個編制字串。** ⚠ **CAA release-group 端點回 404（實測）**，依 c-132 第 382 條照收。**封面可走的具體路徑：Apple jp 官方條目 `1628447859`（5 軌，與 MB 的 5 軌一致）走 apple-verified-collection；退一步才是 Discogs（catno Philips FX-8502／年 1970／廠牌 Philips）。** ⚠ **MB 這筆 release 的 `status` 是 null、`country` 是 JP**，依簡報第二節第 2 點照收並在此註明。年份 **1970**：MB first-release-date 1970，Apple 也記 1970（01-01 是占位），**兩邊同年**。店面（第 254 條，只寫觀察）：jp 以「村岡建 タケル」與「Takeru Muraoka Takeru」兩種寫法都命中 `1628447859`；藝人目錄 `1436007747`（Takeru Muraoka，5 筆）裡也有；us 店面 **0 筆**。",
+  "mbNote": "釘 release-group 52694bfc-733e-40e9-9836-6fe39fd2b9a9。回問 release-group 端點（inc=artist-credits+releases）：title「Takeru」、artist-credit「**Takeru Muraoka Quartet**」（指向個人實體 d9e29a7c，第 355 條 → 卡面 村岡建）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1970/JP/**status null** Philips FX-8502，12\" Vinyl 5 軌。**CAA release-group 端點 404（實測）。**藝人實體 d9e29a7c-390d-4aea-ae4a-c320b6994f27（**MB 主名 村岡健**／Person／JP／1941-01-12；alias：Takeru Muraoka〔en, primary〕、村岡建；**名下 6 個 RG**）。⚠ **這位在 MB 上的可得量就是 6 個 RG，本組收下其中全部 3 張可收的**：`52694bfc`《Takeru》1970、`8c08d4e7`《Rock Joy In Sax》1971、`a363100a`《SOFT LANDING》1978。本組刻意不釘（合掛，第 321／385 條）：`0e997400`《Jam In Yokota》1973-06-25（Live，credit 七人平列「酒井潮 + 伏見哲夫 + Teddy Adams + 村岡健 + 松本英彦 + 川崎燎 + 日野元彦」——**c-132 第 385 條已就同一張碟以 松本英彦 的名義擋下過，而 日野元彦 是 c-134 b 組的掛名**，第 386 條的形狀）、`997a37fa`《Something / Freedom Unity First》2011-10-19（credit「Freedom Unity + Takeru Muraoka」，合掛且盤名帶斜線）、`5d3ab2d3`《Ride And Tie》2011-11-23（credit「Takeru Muraoka + Takao Uematsu」；Apple jp `1681940387` 同樣掛「村岡建 & 植松孝夫」）。**查法（第 309 條：拉丁轉寫查不到不等於查無）**：`artist?query=村岡建`（3901 筆，主名「村岡健」score 100）、`Muraoka Takeru`、`Takeshi Muraoka`、`村岡` 四種寫法並行；`release-group?query=artist:\"村岡建\"` **0 筆**、`artist:\"村岡健\"` 2 筆、`artist:\"Takeru Muraoka\"` 4 筆，三種反查的聯集與 `release-group?artist=d9e29a7c` 的 6 筆完全相同，**沒有漏掉的實體**；另查 `artist:\"Takeru Muraoka Quartet\"` 無獨立群組實體。"
+ },
+ {
+  "g": "b",
+  "artist": "村岡建",
+  "album": "Rock Joy In Sax",
+  "year": 1971,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "村岡健；Takeru Muraoka；Muraoka Takeru；Rock Joy in Sax；ロック・ジョイ・イン・サックス；村岡建 Rock Joy",
+  "reissuedBy": "⚠ Apple jp `1441951865`《Rock Joy in Sax》記 **2018-11-28**、10 軌、**℗ Victor Entertainment**——那是後來的數位再發，**MB 未建這一筆**；MB 轄下只有 1971 年原盤。",
+  "label": "MCA Records JMC-5033（JP 1971 12 吋黑膠 10 軌；⚠ **MB 這筆 release 的 `status` 是 null**；⚠ **廠牌歸屬與店面不一致**，見 risk）",
+  "why": "1971 年的第二張領銜盤，十首：村岡建 把次中音薩克斯風直接架在搖滾節奏上，盤名把這件事寫死了——這是和製ジャズ・ロック 在 1970–71 年那一波（石川晶、稲垣次郎、猪俣猛）裡薩克斯風手這一側的樣本，與同批收的 稲垣次郎とソウル・メディア《Jazz & Rock \"Out\"》(1970)、石川晶とカウント・バッファローズ《エレクトラム》(1970) 是同一個時刻的三種做法。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「Rock Joy In Sax」在池中零命中。",
+  "risk": "⚠⚠ **掛名：卡面取「村岡建」，MB 實體主名是「村岡健」**。MB `d9e29a7c-390d-4aea-ae4a-c320b6994f27`（Person／JP／1941-01-12）的**主名寫「村岡健」**，alias 有「Takeru Muraoka」（en，primary）與「**村岡建**」。依 2026-08-11 東亞藝人名裁定（有漢字照漢字）兩個都是漢字，第 355 條（取實體主名）照字面會得到「村岡健」——**本組取「村岡建」，理由是店面的一手印法**：Apple jp 三筆官方條目全部印「村岡建」（`1628447859`《Takeru》1970、`1441951865`《Rock Joy in Sax》、`1782229173`《SOFT LANDING》的藝人字串「村岡建とヒズ・ニュー・グループ」，另有 `1834346786`「村岡建 & ビート・ポップス」、`1795602449`、`1681940387`「村岡建 & 植松孝夫」），**六筆都是「建」，沒有一筆是「健」**；這與 c-131 第 350 條（秋吉／穐吉：主名取她日本盤與店面的印法、不取 MB 主名）完全同形，有先例。「村岡健」「Takeru Muraoka」「Muraoka Takeru」全部進 queryAlias，**`risk` 標明 MB 主名待本機覆核**。⚠ 第 307 條反查同字串不同人：池中「村岡」「Muraoka」**零命中**；⚠ **但 MB 上有一位極易混的同姓者 `a900bd7e`「村岡実」（Minoru Muraoka，尺八，`enum/jp-1.md` 提到的《Shakuhachi Rock》三張就是他）**——**任何以「Muraoka」為鍵的比對都會把兩位混在一起**，不得混入本掛名。另有 `1c035c7d`「Ju Muraoka」等十餘個同姓實體，皆非本人。 ⚠ **廠牌歸屬兩說**：MB 的 `release` 端點回 **MCA Records JMC-5033**（1971 JP 12 吋黑膠 10 軌），但 Apple jp 的數位再發 `1441951865` 的 ℗ 掛 **Victor Entertainment**（2018-11-28、10 軌，軌數與 MB 一致）。**卡面 `label` 取 MB 的 release 端點值（MCA Records JMC-5033），Apple 的 Victor 記在這裡——兩者不衝突的解釋是母帶所有權在 1971 之後轉手，但本組沒有一手舉證，研究層須覆核**（第 262 條：日期、廠牌、catno 要出自同一筆，不得跨筆接成一句）。⚠ **MB 這筆 release 的 `status` 是 null**，依簡報第二節第 2 點照收。⚠ **CAA release-group 端點回 404（實測）**，依第 382 條照收。**封面可走的具體路徑：Apple jp 官方條目 `1441951865`（10 軌，與 MB 一致）走 apple-verified-collection——但那是 2018 年 Victor 再發的封面，不是 1971 年 MCA 原盤面；要原盤面就只剩 Discogs。** 年份 **1971**：MB first-release-date 1971、原盤 release 同年；Apple 那筆是 2018 再發，**不構成年份分歧**（第 352 條的鏡像：店面日期是再發日時不得回讀）。店面（第 254 條，只寫觀察）：jp 以「村岡建 ロック・ジョイ」搜 0 筆、以「Takeru Muraoka Takeru」搜到的清單裡出現 `1441951865`、藝人目錄 `1436007747`（5 筆）裡也有——**盤名搜尋落空、另兩種查法才命中**，第 254 條講的坑再一次。us 店面 0 筆。",
+  "mbNote": "釘 release-group 8c08d4e7-4a2b-4a33-8805-e76547b1e90c。回問 release-group 端點（inc=artist-credits+releases）：title「Rock Joy In Sax」、artist-credit「Takeru Muraoka」（指向個人實體 d9e29a7c，第 355 條 → 卡面 村岡建）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1971/JP/**status null** MCA Records JMC-5033，12\" Vinyl 10 軌。**CAA release-group 端點 404（實測）。**藝人實體 d9e29a7c-390d-4aea-ae4a-c320b6994f27（**MB 主名 村岡健**／Person／JP／1941-01-12；alias：Takeru Muraoka〔en, primary〕、村岡建；**名下 6 個 RG**）。⚠ **這位在 MB 上的可得量就是 6 個 RG，本組收下其中全部 3 張可收的**：`52694bfc`《Takeru》1970、`8c08d4e7`《Rock Joy In Sax》1971、`a363100a`《SOFT LANDING》1978。本組刻意不釘（合掛，第 321／385 條）：`0e997400`《Jam In Yokota》1973-06-25（Live，credit 七人平列「酒井潮 + 伏見哲夫 + Teddy Adams + 村岡健 + 松本英彦 + 川崎燎 + 日野元彦」——**c-132 第 385 條已就同一張碟以 松本英彦 的名義擋下過，而 日野元彦 是 c-134 b 組的掛名**，第 386 條的形狀）、`997a37fa`《Something / Freedom Unity First》2011-10-19（credit「Freedom Unity + Takeru Muraoka」，合掛且盤名帶斜線）、`5d3ab2d3`《Ride And Tie》2011-11-23（credit「Takeru Muraoka + Takao Uematsu」；Apple jp `1681940387` 同樣掛「村岡建 & 植松孝夫」）。**查法（第 309 條：拉丁轉寫查不到不等於查無）**：`artist?query=村岡建`（3901 筆，主名「村岡健」score 100）、`Muraoka Takeru`、`Takeshi Muraoka`、`村岡` 四種寫法並行；`release-group?query=artist:\"村岡建\"` **0 筆**、`artist:\"村岡健\"` 2 筆、`artist:\"Takeru Muraoka\"` 4 筆，三種反查的聯集與 `release-group?artist=d9e29a7c` 的 6 筆完全相同，**沒有漏掉的實體**；另查 `artist:\"Takeru Muraoka Quartet\"` 無獨立群組實體。"
+ },
+ {
+  "g": "b",
+  "artist": "村岡建",
+  "album": "SOFT LANDING",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Soft Landing；ソフト・ランディング；村岡健；Takeru Muraoka；Muraoka Takeru；村岡建とヒズ・ニュー・グループ；TAKERU MURAOKA & HIS GROUP；Takeru Muraoka and His New Group",
+  "reissuedBy": "KING 2018-12-05 KICJ-2644（SHM-CD 8 軌）已建進同一個 RG。Apple jp `1782229173`《SOFT LANDING》記 **1979-02-05**、8 軌、℗ 1979 King Record Co.,Ltd，掛名寫「村岡建とヒズ・ニュー・グループ」（藝人實體 `1782229174`「TAKERU MURAOKA & HIS GROUP」，名下只有這一筆）——**這是 King 2024 年起那一整段日本爵士數位化的一筆**（第 383 條）。",
+  "label": "SEVEN SEAS SKS-3005（JP 1978 12 吋黑膠 8 軌，Official；SEVEN SEAS 是 King 的爵士副廠）",
+  "why": "村岡建 1978 年在 King／SEVEN SEAS（SKS-3005）的一張，八首：從 1970–71 年的ジャズ・ロック 走到 1970 年代末的フュージョン，盤名「軟著陸」幾乎是對那十年的自述。這是他在 MB 上唯一一張 `status` 標成 Official 的原盤，也是**池中這位掛名的第三張、同時是 MB 可得量的全部**。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點），「SOFT LANDING」「Soft Landing」在池中皆零命中。",
+  "risk": "⚠⚠ **掛名：卡面取「村岡建」，MB 實體主名是「村岡健」**。MB `d9e29a7c-390d-4aea-ae4a-c320b6994f27`（Person／JP／1941-01-12）的**主名寫「村岡健」**，alias 有「Takeru Muraoka」（en，primary）與「**村岡建**」。依 2026-08-11 東亞藝人名裁定（有漢字照漢字）兩個都是漢字，第 355 條（取實體主名）照字面會得到「村岡健」——**本組取「村岡建」，理由是店面的一手印法**：Apple jp 三筆官方條目全部印「村岡建」（`1628447859`《Takeru》1970、`1441951865`《Rock Joy in Sax》、`1782229173`《SOFT LANDING》的藝人字串「村岡建とヒズ・ニュー・グループ」，另有 `1834346786`「村岡建 & ビート・ポップス」、`1795602449`、`1681940387`「村岡建 & 植松孝夫」），**六筆都是「建」，沒有一筆是「健」**；這與 c-131 第 350 條（秋吉／穐吉：主名取她日本盤與店面的印法、不取 MB 主名）完全同形，有先例。「村岡健」「Takeru Muraoka」「Muraoka Takeru」全部進 queryAlias，**`risk` 標明 MB 主名待本機覆核**。⚠ 第 307 條反查同字串不同人：池中「村岡」「Muraoka」**零命中**；⚠ **但 MB 上有一位極易混的同姓者 `a900bd7e`「村岡実」（Minoru Muraoka，尺八，`enum/jp-1.md` 提到的《Shakuhachi Rock》三張就是他）**——**任何以「Muraoka」為鍵的比對都會把兩位混在一起**，不得混入本掛名。另有 `1c035c7d`「Ju Muraoka」等十餘個同姓實體，皆非本人。 ⚠⚠ **年份兩說，卡面取 1978（MB）**：MB first-release-date **1978**、轄下 1978 年 SEVEN SEAS SKS-3005 原盤 **Official** release（8 軌）；Apple jp King 官方條目 `1782229173` 記 **1979-02-05**、℗ **1979** King（8 軌，與 MB 一致）。依 c-132 第 383 條的通則，「店面精確日期優先」**有一個前提：要先確認同一位藝人的其他碟兩邊年份一致**——本組只有《Takeru》可比（MB 1970／Apple 1970-01-01，而 01-01 是占位值），**前提不成立**；⚠ **而且本組在同一段 King 數位化裡查到一個明確反例**（ジョージ大塚クインテット《Loving You George》MB 1975 ／ Apple `1782228228` 1976-12-21 ℗1976 King），**所以這段 King 號段的日期不能無條件當成比 MB 更可信**（見 rulings 第 417 條）。**依第 364 條取 MB 值，兩說都寫在這裡，研究層覆核。** ⚠ **Apple 的掛名是「村岡建とヒズ・ニュー・グループ」（編制掛名）**，MB 的 credit 是個人「村岡健」——**卡面取個人掛名（第 355 條），Apple 字串進 queryAlias**。⚠ **CAA release-group 端點回 404（實測）**，依第 382 條照收。**封面可走的具體路徑：Apple jp 官方條目 `1782229173`（8 軌，與 MB 一致、King 自家上架）走 apple-verified-collection——這是本組三張村岡卡裡素材最硬的一張；退一步是 Discogs（catno SEVEN SEAS SKS-3005／年 1978／廠牌 King）。** 店面（第 254 條，只寫觀察）：jp 以「村岡建 ソフト・ランディング」命中 `1782229173`、藝人目錄 `1782229174` 名下只有這一筆；jp 英文寫法與 us 店面皆 0 筆。",
+  "mbNote": "釘 release-group a363100a-cef9-4bcd-96cd-a80fe7b57be3。回問 release-group 端點（inc=artist-credits+releases）：title「SOFT LANDING」、artist-credit「村岡健」（實體 d9e29a7c 主名 → 卡面經店面校正取 村岡建，見 risk）、first-release-date 1978、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1978/JP/Official SEVEN SEAS SKS-3005，12\" Vinyl 8 軌；2018-12-05/JP/Official KING KICJ-2644，SHM-CD 8 軌。**CAA release-group 端點 404（實測）。**藝人實體 d9e29a7c-390d-4aea-ae4a-c320b6994f27（**MB 主名 村岡健**／Person／JP／1941-01-12；alias：Takeru Muraoka〔en, primary〕、村岡建；**名下 6 個 RG**）。⚠ **這位在 MB 上的可得量就是 6 個 RG，本組收下其中全部 3 張可收的**：`52694bfc`《Takeru》1970、`8c08d4e7`《Rock Joy In Sax》1971、`a363100a`《SOFT LANDING》1978。本組刻意不釘（合掛，第 321／385 條）：`0e997400`《Jam In Yokota》1973-06-25（Live，credit 七人平列「酒井潮 + 伏見哲夫 + Teddy Adams + 村岡健 + 松本英彦 + 川崎燎 + 日野元彦」——**c-132 第 385 條已就同一張碟以 松本英彦 的名義擋下過，而 日野元彦 是 c-134 b 組的掛名**，第 386 條的形狀）、`997a37fa`《Something / Freedom Unity First》2011-10-19（credit「Freedom Unity + Takeru Muraoka」，合掛且盤名帶斜線）、`5d3ab2d3`《Ride And Tie》2011-11-23（credit「Takeru Muraoka + Takao Uematsu」；Apple jp `1681940387` 同樣掛「村岡建 & 植松孝夫」）。**查法（第 309 條：拉丁轉寫查不到不等於查無）**：`artist?query=村岡建`（3901 筆，主名「村岡健」score 100）、`Muraoka Takeru`、`Takeshi Muraoka`、`村岡` 四種寫法並行；`release-group?query=artist:\"村岡建\"` **0 筆**、`artist:\"村岡健\"` 2 筆、`artist:\"Takeru Muraoka\"` 4 筆，三種反查的聯集與 `release-group?artist=d9e29a7c` 的 6 筆完全相同，**沒有漏掉的實體**；另查 `artist:\"Takeru Muraoka Quartet\"` 無獨立群組實體。"
+ }
+]

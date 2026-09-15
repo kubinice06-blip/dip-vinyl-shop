@@ -1,0 +1,439 @@
+[
+  {
+    "artist": "渡辺貞夫",
+    "album": "My Romance: Sadao Plays Ballads",
+    "year": 1967,
+    "genres": [
+      "jazz"
+    ],
+    "label": "Takt JAZZ-5（JP 1967 12 吋黑膠 13 軌，日本コロムビア 的 Takt 爵士線）；XW 2018-10-19 Savoy Records 數位 13 軌（release 題《Sadao Watanabe Plays Ballads》）",
+    "why": "渡辺貞夫 1965 年自 Berklee 回國後、在 日本コロムビア 的 Takt 爵士線留下的抒情盤，catno JAZZ-5 就落在 Takt 這條線的頭幾號（JAZZ-1 是他自己的《Jazz & Bossa》）。MB 這個 RG 轄下兩筆 release 都 Official：1967 年 12 吋原盤 13 軌，與 2018 年 Savoy 的全球數位版（題名改成《Sadao Watanabe Plays Ballads》）。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 店主 2026-09-15 要「重點專輯 5–10 張」，這張是他 Takt 時期的起點，補上之後池中的渡辺貞夫從 1976 往前推到 1967。",
+    "risk": "撞卡：盤名在池中零命中，掛名字串「渡辺貞夫」池中已有 3 張、盤名皆不同，不折疊。⚠ 盤名兩式：MB RG 題《My Romance: Sadao Plays Ballads》、2018 數位 release 題《Sadao Watanabe Plays Ballads》、Apple jp／us 用 RG 題——下游比對要鎖 rgMbid 不鎖盤名（同 c-131 第 3 條的作法）。年份：MB first-release-date 1967（無月日），Apple jp／us 同一條目記 1967-04-01、℗ 1967 Nippon Columbia，兩邊一致，不走第 352 條。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（盤名＋掛名）命中 1868591013《My Romance: Sadao Plays Ballads》13 軌 ℗ 1967 Nippon Columbia，藝人目錄查法（artistId 298235 Sadao Watanabe）同一筆亦在——軌數與 MB 的 13 軌一致；這只是兩種查法的觀察，不是結論（第 254 條）。⚠ 這一批 1967–69 的 Nippon Columbia 數位條目是 2025 年才上架的（collectionId 18685xxxxx 連號），研究層引發行資訊仍以 1967 年 Takt 原盤為準。",
+    "mbNote": "釘 release-group 6ecf258a-98da-4e67-b995-ed300df0610c。回問 release-group/<id>?inc=artist-credits 與 release?release-group=<id>&inc=labels+media+artist-credits 確認：title「My Romance: Sadao Plays Ballads」、artist-credit「Sadao Watanabe」（實體 378278bf-9cdd-4b4a-b319-38eddab9f1b1）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1967 Takt JAZZ-5 12 吋 13 軌／XW 2018-10-19 Savoy Records 數位 13 軌，題《Sadao Watanabe Plays Ballads》）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 廠牌是用 release 端點回問來的（第 259 條：release-group 端點不回 label-info）。刻意不釘：1041020f-39ab-431a-a2a4-b7a6b26cc150《Jazz & Bossa》1967（Takt JAZZ-1，CAA 404）、54892085-37cf-4716-a965-1df1979af185《Iberian Waltz》1967（Takt JAZZ-7，credit 是 Sadao + Charlie〈Mariano〉合掛）、7d1f1419-d15d-4541-b4fb-0efa7d719302《Sadao Watanabe Plays》1966-04-05（Polydor SLJM-1262，CAA 404）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Sadao Watanabe；Sadao Watanabe Plays Ballads；渡辺貞夫 マイ・ロマンス；サダオ・プレイズ・バラード；Watanabe Sadao My Romance",
+    "reissuedBy": "Savoy Records 全球數位（2018-10-19，題《Sadao Watanabe Plays Ballads》）；日本コロムビア／NIPPONOPHONE 數位（Apple jp 1868591013）",
+    "g": "a"
+  },
+  {
+    "artist": "渡辺貞夫",
+    "album": "Sadao Meets Brazilian Friends",
+    "year": 1968,
+    "genres": [
+      "jazz"
+    ],
+    "label": "Columbia XMS-10003-CT（JP 1968-11 12 吋黑膠 12 軌）；JP 1989 DENON DC-8557 CD 12 軌",
+    "why": "他 1968 年 11 月與巴西樂手同錄的一張，盤名就寫明是「與巴西朋友相會」——這是渡辺貞夫把 bossa nova 帶進日本爵士主流的代表作，也是日後《California Shower》那條 fusion 線的源頭。MB 轄下兩筆 release 都 Official：1968-11 的 Columbia XMS-10003-CT 原盤與 1989 年 Denon 的 CD 復刻（DC-8557），軌數都是 12。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 池中既有的三張裡最早的《Pamoja》是 1976，這張把他的起點往前推八年，而且補的正是「日本爵士第一世代怎麼接上巴西音樂」這一格。",
+    "risk": "撞卡：盤名在池中零命中。⚠ 廠牌兩層：MB 的 1968 原盤 release 廠牌欄寫「Columbia」（catno XMS-10003-CT 是 日本コロムビア 的 Takt 爵士線編號），1989 年那筆寫「DENON」——同一條日本コロムビア 體系的兩個廠牌名，`label` 欄兩筆都列，日期／廠牌／catno 各自出自同一筆 release（第 262 條）。年份：MB first-release-date 1968-11，Apple jp／us 記 1968-11-10、℗ 1968 Nippon Columbia，一致。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search 與藝人目錄（artistId 298235）都命中 1868591489《Sadao Meets Brazilian Friends》12 軌 ℗ 1968 Nippon Columbia——軌數與 MB 一致；只是觀察，不是結論（第 254 條）。",
+    "mbNote": "釘 release-group 63578158-c7d1-39b5-9fce-17052b739bf6。回問 release-group 與 release 兩個端點確認：title「Sadao Meets Brazilian Friends」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1968-11、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1968-11 Columbia XMS-10003-CT 12 吋 12 軌，release 的 credit 寫 Sadao Watanabe／JP 1989 DENON DC-8557 CD 12 軌，credit 寫 渡辺貞夫）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 ⚠ 同 RG 在 jp-columbia.json 與 jp-denon.json 兩份列舉檔各出現一次（同一個 rgMbid，只是被兩個廠牌實體各撈到一次），不是兩張碟。 刻意不釘：4cefbabc-7a38-4e9d-8467-37545134edf4《Sadao Plays Bacharach and Beatles》1969（Columbia XMS-10010-CT，CAA 200，額度未收）、e2c1d3f0-ac7b-4a6b-885d-a45a4ca60bb9《Music Break》1969（Columbia XMS-10017-CT，CAA 200，Apple 標 Live 1967，額度未收）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Sadao Watanabe；Sadao Meets Brazilian Friends；渡辺貞夫 ブラジリアン・フレンズ；サダオ・ミーツ・ブラジリアン・フレンズ",
+    "reissuedBy": "Denon／日本コロムビア（1989 DC-8557 CD）；日本コロムビア／NIPPONOPHONE 數位（Apple jp／us 1868591489）",
+    "g": "a"
+  },
+  {
+    "artist": "渡辺貞夫",
+    "album": "Dedicated to Charlie Parker",
+    "year": 1969,
+    "genres": [
+      "jazz"
+    ],
+    "label": "Columbia XMS-10018-CT（JP 1969 12 吋黑膠 6 軌）；JP 1985-12-21 DENON 32C38-7689 CD 6 軌",
+    "why": "渡辺貞夫 1969 年向 Charlie Parker 致敬的一張，是他 Takt／Columbia 時期最直接回到 bebop 的作品，也是他 1980 年代《Parker’s Mood》那條線的第一次。MB 轄下兩筆 release 都 Official（1969 年 Columbia XMS-10018-CT 原盤 6 軌，與 1985 年 Denon 的 CD 32C38-7689），與同期 Swing Journal 的《Jazz Workshop 2》另立 RG（ea469f1a，1974，本卡不釘）。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 池中的渡辺貞夫全是 fusion 期，這張把他的 bebop 底子補進來，與池中既有的 Charlie Parker 相關卡片互為對照。",
+    "risk": "⚠ 現場與錄音室分歧：MB 這個 RG 的 secondary-types 是空的，但 Apple jp／us 的官方條目題名是《Dedicated to Charlie Parker (Live, 1969)》、日期 1969-09-10——**Apple 說它是現場盤、MB 沒標**。本卡照 MB 記 Album 且不寫「錄音室」，`Live` 與否留研究層以曲目長度與盤面資訊判（第 253 條：Live 收但要標，這裡是「標不標得起來」的前一步）。撞卡：盤名在池中零命中；⚠ 盤名是描述性文字，MB 另有 ea469f1a-2ef4-4949-a55b-a6d210614415《Swing Journal Jazz Workshop 2 - Sadao Watanabe / Dedicated to Charlie Parker》1974 含同一串字，下游比對要鎖 rgMbid。年份：MB 1969，Apple 1969-09-10 ℗ 1969，一致。封面 CAA release-group 端點 200（實測）。Apple search 與藝人目錄兩種查法都命中 1868592310，6 軌，與 MB 的 6 軌一致（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group a2abeea8-054e-45aa-8568-b720fa786c9b。兩個端點回問確認：title「Dedicated to Charlie Parker」、artist-credit「Sadao Watanabe」（實體 378278bf）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1969 Columbia XMS-10018-CT 12 吋 6 軌／JP 1985-12-21 DENON 32C38-7689 CD 6 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 同一個 rgMbid 在 jp-columbia.json 與 jp-denon.json 各出現一次（廠牌實體重覆撈取，不是兩張碟）。刻意不釘：ea469f1a《Swing Journal Jazz Workshop 2 - Sadao Watanabe / Dedicated to Charlie Parker》1974（同曲目的 Swing Journal 企畫盤，另立 RG）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Sadao Watanabe；Dedicated to Charlie Parker (Live, 1969)；渡辺貞夫 チャーリー・パーカーに捧ぐ；デディケイテッド・トゥ・チャーリー・パーカー",
+    "reissuedBy": "Denon／日本コロムビア（1985-12-21 32C38-7689 CD）；日本コロムビア／NIPPONOPHONE 數位（Apple 1868592310）",
+    "g": "a"
+  },
+  {
+    "artist": "渡辺貞夫",
+    "album": "Pastoral",
+    "year": 1969,
+    "genres": [
+      "jazz"
+    ],
+    "label": "CBS/Sony SONP 50130-J（JP 1969 12 吋黑膠 8 軌）",
+    "why": "渡辺貞夫 離開 日本コロムビア／Takt、轉進 CBS/Sony 之後的第一張領銜作（catno SONP 50130-J 落在 CBS/Sony 日本盤最早那一批），也是他 1969–75 年那條 CBS/Sony 線的起點——池中既有的三張裡沒有任何一張屬於這條線。MB 轄下只有這一筆 1969 年原盤（Official，8 軌），沒有任何 CD 或數位再發。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 店主要的「重點專輯」對渡辺貞夫來說就是 Takt 三張加 CBS/Sony 那條線，這張是後者的第一張。",
+    "risk": "撞卡：盤名在池中零命中；⚠ 盤名是單字（Pastoral），子字串比對假陽性風險高，實掃時逐筆核整個掛名字串後確認池中無同名碟。年份：MB first-release-date 1969，只有一筆 release 支撐，無分歧來源可比對——若研究層找到 CBS/Sony 的月份要補進 notes，但**不得跨筆把別的 release 的日期接過來**（第 262 條）。封面 CAA release-group 端點 200（實測）。⚠ Apple 三種查法的觀察：search（盤名＋掛名，jp／us）0 筆；藝人目錄查法（artistId 298235 Sadao Watanabe，80 餘筆全列）沒有這一筆；直查 collectionId 這一步策展層沒有候選可查（recover-unavailable 尚未跑）。**這只是兩種查法未命中的觀察，不是「未上架」的結論**（第 254 條）。⚠ 同一個藝人目錄裡 CBS/Sony 1969–74 那批（Pastoral、Paysages、Open Road、Mbali Africa、Live at the Junk）**一張都沒有**，而 Nippon Columbia 1966–69 那批 2025 年整批上架了——這是「某一家日本廠的 1970 年代目錄在 Apple 上整批缺席」的又一個實例（c-116 第 6 條、c-121 第 5.2 節、c-131 第 359 條同形），只是這次缺的是 Sony 不是小廠。",
+    "mbNote": "釘 release-group a4d3707b-67e9-4633-a8b8-6e23d57adc0d。兩個端點回問確認：title「Pastoral」、artist-credit「Sadao Watanabe」（實體 378278bf）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1969 CBS/Sony SONP 50130-J 12 吋 8 軌 Official，無 barcode）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 刻意不釘（同屬 CBS/Sony 線、CAA 200、額度未收）：df94c614-4280-4156-a86c-71b73a9bfc98《Live at the Junk》1970（SONP 50221-J，Album/Live）、a11be8fb-83e6-4dd7-80e6-206c857ec94f《Mbali Africa》1974（SOPW 27~28）、aebeb18b-4971-4a18-9431-e861f5ae080f《At Pit Inn》1975（SOPN 113，Album/Live）。刻意不釘（合掛，第 258／321 條）：dd031e02-40bd-40e0-acb2-2b58d3c046d1《Round Trip》1970（credit 是 Sadao Watanabe + Chick Corea + Miroslav Vitouš + Jack DeJohnette 四人平列）、8e14690a-edba-4fc2-b6e7-a6eff182d1eb《Kenya Ya Africa》1973（+ Inter-African Theatre Group）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Sadao Watanabe；渡辺貞夫 パストラル；Sadao Watanabe Pastoral；パストラル",
+    "reissuedBy": "",
+    "g": "a"
+  },
+  {
+    "artist": "渡辺貞夫",
+    "album": "Paysages",
+    "year": 1971,
+    "genres": [
+      "jazz"
+    ],
+    "label": "CBS/Sony SOPC 57135-J（JP 1971 12 吋黑膠 5 軌）；JP 1997-09-21 Sony Records SRCS 9329 CD（題《Paysages (ペイサージュ)》）；JP 2007-06-20 Sony Records International SICP 10040 Hybrid SACD；JP 2009-06-20 SICP 20152 Blu-spec CD",
+    "why": "CBS/Sony 時期中段的代表盤，也是這條線裡被再發最多次的一張——MB 轄下四筆 release 全數 Official，從 1971 年 12 吋原盤到 1997 年 CD、2007 年 Hybrid SACD、2009 年 Blu-spec CD，四種載體都齊，等於 Sony 自己把它當目錄裡的常備品在維護。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。子字串假陽性已逐筆排除：「渡辺」另命中 渡辺香津美 5 張與 渡辺岳夫《機動戦士ガンダム》1 張，「Watanabe」另命中 Fumio Watanabe Quintet《Groovin’ High》1 張（鼓手 渡辺文男，另一位）。 池中三張都是 1976 之後，這張與《Pastoral》《Open Road》一起把 1969–73 年那條 CBS/Sony 線建起來，正是店主要的「重點專輯」而不是全目錄。",
+    "risk": "撞卡：盤名在池中零命中。⚠ 廠牌／catno 要逐筆對：1971 原盤是 CBS/Sony SOPC 57135-J，1997 是 Sony Records SRCS 9329，2007／2009 是 Sony Records International SICP 10040／SICP 20152——**四筆的廠牌名各不相同，日期、廠牌、catno 不得跨筆接在一起**（第 262 條）。掛名：MB RG 的 artist-credit 是漢字「渡辺貞夫」，但 1971、1997、2007 三筆 release 的 credit 寫「Sadao Watanabe」、2009 那筆寫「渡辺貞夫」、1997 那筆寫「Sadao Watanabe (渡辺貞夫)」——依第 355 條取實體主名「渡辺貞夫」，四種寫法全進 queryAlias。年份：MB first-release-date 1971（原盤那筆就是 1971），無第 352 條的再發失真。封面 CAA release-group 端點 200（實測）。Apple 三種查法的觀察：search（jp／us）0 筆、藝人目錄（artistId 298235）沒有這一筆、第三步直查 collectionId 策展層無候選可查——**只寫觀察，不下結論**（第 254 條）。",
+    "mbNote": "釘 release-group 0a767962-36de-4f2e-9c6f-a0f619c46d2e。兩個端點回問確認：title「Paysages」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 4 個 release 全數 Official（JP 1971 CBS/Sony SOPC 57135-J 12 吋 5 軌／JP 1997-09-21 Sony Records SRCS 9329 CD 5 軌／JP 2007-06-20 Sony Records International SICP 10040 Hybrid SACD 5 軌／JP 2009-06-20 Sony Records International SICP 20152 Blu-spec CD 5 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 廠牌與載體全部出自 release 端點（第 259 條）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Sadao Watanabe；渡辺貞夫 ペイサージュ；Paysages (ペイサージュ)；Sadao Watanabe Paysages",
+    "reissuedBy": "Sony Records（1997-09-21 SRCS 9329 CD）；Sony Records International（2007-06-20 SICP 10040 Hybrid SACD、2009-06-20 SICP 20152 Blu-spec CD）",
+    "g": "a"
+  },
+  {
+    "artist": "渡辺貞夫",
+    "album": "Open Road",
+    "year": 1973,
+    "genres": [
+      "jazz"
+    ],
+    "label": "CBS/Sony SOPJ-43~44（JP 1973 兩張 12 吋黑膠，8 軌＋5 軌）；JP 2000-03-23 SME Records SRCS 9592／SRCS 9593 兩張 CD",
+    "why": "CBS/Sony 時期的雙張大作，1973 年以 SOPJ-43~44 兩片裝發行（A 片 8 軌、B 片 5 軌），2000 年 SME 再以兩張 CD（SRCS 9592／9593）復刻——在他 1969–75 那條 CBS/Sony 線裡，雙片裝只有這一張。實掃 seed_cards.json 全 16,450 列（渡辺貞夫／Sadao Watanabe／Watanabe／貞夫 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有三張：《Pamoja》1976、《California Shower》1978、《Orange Express》1981——全部是 1976 年之後的 East Wind／Victor 時期，1961–75 那十五年一張都沒有。 它與《Pastoral》1969、《Paysages》1971 三張一起，把池中缺的整條 CBS/Sony 線建起來；再往後就接得上池中既有的《Pamoja》1976。",
+    "risk": "撞卡：盤名在池中零命中；⚠ 盤名是兩個常用字（Open Road），子字串假陽性高，實掃已逐筆核整個掛名字串。⚠ 兩張裝：MB 兩筆 release 的 media 都是兩片（1973 是 12 吋×2、2000 是 CD×2），**軌數要分片講**（8＋5），研究層不得寫成單一數字。廠牌／catno 逐筆：1973 是 CBS/Sony SOPJ-43~44、2000 是 SME Records SRCS 9592 與 SRCS 9593 兩個編號——不得跨筆接（第 262 條）。掛名：1973 那筆 release 的 credit 寫「Sadao Watanabe」、2000 那筆寫「渡辺貞夫」，依第 355 條取實體主名。年份：MB first-release-date 1973，原盤那筆就是 1973，無再發失真。封面 CAA release-group 端點 200（實測）。Apple 觀察：search（jp／us）與藝人目錄（artistId 298235）兩種查法都沒有這一筆，第三步直查 collectionId 策展層無候選——**只寫觀察，不寫結論**（第 254 條）。",
+    "mbNote": "釘 release-group e868426b-bc3d-42cd-8215-3789ea419f1f。兩個端點回問確認：title「Open Road」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1973 CBS/Sony SOPJ-43~44 12 吋×2，8＋5 軌／JP 2000-03-23 SME Records SRCS 9592 ＋ SRCS 9593 CD×2，8＋5 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。 廠牌與載體出自 release 端點（第 259 條）。刻意不釘（CAA 404，列入未收）：1041020f《Jazz & Bossa》1967（Takt JAZZ-1）、7d1f1419《Sadao Watanabe Plays》1966-04-05（Polydor SLJM-1262）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Sadao Watanabe；渡辺貞夫 オープン・ロード；Sadao Watanabe Open Road；オープン・ロード",
+    "reissuedBy": "SME Records（2000-03-23 SRCS 9592／SRCS 9593 兩張 CD）",
+    "g": "a"
+  },
+  {
+    "artist": "日野皓正",
+    "album": "Feelin' Good",
+    "year": 1968,
+    "genres": [
+      "jazz"
+    ],
+    "label": "⚠ MB 的 1968 原盤 release **label-info 為空**（資料庫端未登記廠牌）；同 RG 的 JP 2018-10-24 CD 是 Columbia COCB-54267；Apple jp／us 官方條目 ℗ 1968 Nippon Columbia Co., Ltd./NIPPONOPHONE、1968-09-25 — 實體盤面是 日本コロムビア 的 Takt 爵士線，catno 待研究層以盤面核",
+    "why": "日野皓正 二十五歲時的領銜作，錄於 1968 年，是他在 日本コロムビア／Takt 那條線上的起點——隔年的《Hi-Nology》（池中已有）就是從這張的樂團編制長出來的。MB 轄下兩筆 release 都 Official：1968 年 12 吋 6 軌原盤，與 2018-10-24 的 Columbia COCB-54267 CD（7 軌，多一軌）。實掃 seed_cards.json 全 16,450 列（日野皓正／日野／皓正／Terumasa Hino／Hino 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：日野皓正クインテット《Live!》、日野皓正《Live in Concert》《Hi-nology》《Alone, Alone and Alone》——**四張裡有兩張是現場盤，錄音室盤只有 Hi-nology 與 Alone, Alone and Alone 兩張，而且都停在 1969–70**。子字串「Hino」另命中 4 張全是假陽性（Toshinori Kondo／DJ Krush《記憶 Ki-Oku》、Takkyu Ishino《Berlin Trax》、Yoshinori Sunahara、Yoshino Yanagihara），逐筆核整個掛名字串後排除。 池中最早的一張是 1969 的《Hi-nology》，這張把他的起點再往前推一年，而且補的是「他還在吹 hard bop 的時候」那一格。",
+    "risk": "⚠ 廠牌是本卡最大的坑，照簡報第二節第 2 點處理：**MB 有 RG 但 1968 那筆 release 沒掛廠牌**（label-info 空，用 release 端點回問確認過，不是第 259 條那種問錯端點），`label` 欄寫實體盤面的 日本コロムビア／Takt 並註明資料庫端未登記；**catno 不寫**，因為沒有一筆 release 能背書（第 262 條）。⚠ 軌數分歧：1968 原盤 6 軌、2018 CD 7 軌、Apple 6 軌——研究層引軌數要先選版本（第 251 條）。⚠ 盤名撇號：MB RG 題「Feelin’ Good」用 U+2019，卡片改 ASCII 撇號並把 MB 原文放進 queryAlias（c-121 第 3 條、c-131 第 1 張的作法）。撞卡：盤名在池中零命中；掛名「日野皓正」池中已有 3 張、盤名皆不同。年份：MB 1968，Apple 1968-09-25 ℗ 1968，一致。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp／us）與藝人目錄（artistId 5324578 Terumasa Hino）都命中 1894176613《Feelin’ Good》6 軌 ℗ 1968 Nippon Columbia——軌數與 1968 原盤一致、與 2018 CD 不一致（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group 47bcf2b5-d88f-4116-85b7-966cfa29f320。兩個端點回問確認：title「Feelin’ Good」（U+2019）、artist-credit「日野皓正」（實體 60d3fa1e）、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1968 12 吋 6 軌，**label-info 空**／JP 2018-10-24 Columbia COCB-54267 CD 7 軌）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 刻意不釘：0a9b5163-2bc2-471a-81d9-3a9d7f2a45c1《Swing Journal Jazz Workshop 1: Terumasa Hino Concert》1969（Album/Live，1969 那筆 release 同樣沒掛廠牌，CAA 200，額度未收）、8ac416e9-8572-4ca0-8341-aa777e00f0cb《Alone Together》1970（CAA 200，1970 那筆亦無廠牌，額度未收；⚠ 盤名與池中既有的《Alone, Alone and Alone》只差幾個字，是兩張不同的碟，日後收要在 risk 互指）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Terumasa Hino；Feelin’ Good；日野皓正 フィーリン・グッド；フィーリン・グッド；TERUMASA HINO Feelin Good",
+    "reissuedBy": "日本コロムビア（2018-10-24 COCB-54267 CD，7 軌）；日本コロムビア／NIPPONOPHONE 數位（Apple 1894176613）",
+    "g": "a"
+  },
+  {
+    "artist": "日野皓正クインテット",
+    "album": "Into the Heaven",
+    "year": 1970,
+    "genres": [
+      "jazz"
+    ],
+    "label": "Columbia XMS-10025-CT（JP 1970 12 吋黑膠 3 軌）；JP 1997-02-21 Takt COCY-80506 CD 3 軌",
+    "why": "日野皓正 以五重奏名義在 日本コロムビア／Takt 線上的第二張（前一張是池中已有的《Hi-Nology》1969），三首長曲一片的編排正是 1970 年前後日本 modal jazz 的典型形狀。MB 轄下兩筆 release 都 Official：1970 年 Columbia XMS-10025-CT 原盤與 1997 年 Takt 復刻 CD（COCY-80506），軌數都是 3。實掃 seed_cards.json 全 16,450 列（日野皓正／日野／皓正／Terumasa Hino／Hino 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：日野皓正クインテット《Live!》、日野皓正《Live in Concert》《Hi-nology》《Alone, Alone and Alone》——**四張裡有兩張是現場盤，錄音室盤只有 Hi-nology 與 Alone, Alone and Alone 兩張，而且都停在 1969–70**。子字串「Hino」另命中 4 張全是假陽性（Toshinori Kondo／DJ Krush《記憶 Ki-Oku》、Takkyu Ishino《Berlin Trax》、Yoshinori Sunahara、Yoshino Yanagihara），逐筆核整個掛名字串後排除。 池中的「日野皓正クインテット」這個掛名已經有《Live!》一張，本卡沿用同一字串，不新造分裂。",
+    "risk": "⚠ **MB 有兩個同碟 RG**：7fa61991-e892-4ba0-aa51-eb31ac066e58（題《INTO THE HEAVEN》全大寫、credit「日野皓正クインテット」、CAA **200**、轄下 1970 原盤＋1997 CD）與 313f4d8a-aabb-48dd-bbd4-47e33910442c（題《Into the Heaven》、credit「Terumasa Hino Quintet」、CAA **404**、轄下同一張 1970 Columbia XMS-10025-CT）——**同一張碟、同一個 catno、兩個 RG，credit 一個漢字一個英文**。本卡釘有圖的 7fa61991；卡面盤名取一般大小寫的「Into the Heaven」（Apple 官方條目與另一個 RG 都用這個寫法），MB 的全大寫原文進 queryAlias。**建議本機把 313f4d8a 併進 7fa61991。** 掛名：兩個 RG 掛的是同一個實體 65c54d15，MB 主名是漢字＋片假名的「日野皓正クインテット」，與池中既有字串一致（第 354 條的形狀，但這次不必自己造，MB 主名就是）。撞卡：盤名在池中零命中。年份：MB 1970，Apple jp／us 1894177768 記 1970-04-25 ℗ 1970 Nippon Columbia，一致。封面 CAA release-group 端點 200（實測，釘的那個 RG）。Apple search 與藝人目錄兩種查法都命中 1894177768《Into the Heaven》3 軌——軌數與 MB 一致（觀察，非結論，第 254 條）；⚠ Apple 把它掛在個人「Terumasa Hino」名下、不是五重奏。",
+    "mbNote": "釘 release-group 7fa61991-e892-4ba0-aa51-eb31ac066e58。兩個端點回問確認：title「INTO THE HEAVEN」、artist-credit「日野皓正クインテット」（實體 65c54d15-1514-4459-81dc-a7ff3e217a92）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1970 Columbia XMS-10025-CT 12 吋 3 軌／JP 1997-02-21 Takt COCY-80506 CD 3 軌）。**重複 RG：313f4d8a-aabb-48dd-bbd4-47e33910442c 是同一張碟的英文 credit 版本，CAA 404，刻意不釘。**藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 五重奏實體名下另有 10636df5-08b2-4bed-b777-a57ae075072a《Peace And Love》1971-01（CANYON CAJ-1004，CAA 200）與 4e4bd0e9-a113-4264-87b4-b0732b70c93b《ラブ・ネイチャー》1971（CANYON J-1006／Love Records，CAA 200，MB first-release-date 記 1971 但轄下有 1979 Overseas ULS-1854-V 等九筆）、ea803869-dbcd-4062-9d57-a3d41e655bae《Live!》1973（**池中已有**）、a75fccaf《Counter Current》2007——CANYON 那兩張 CAA 200、額度未收。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Terumasa Hino Quintet；日野皓正；INTO THE HEAVEN；日野皓正クインテット イントゥ・ザ・ヘヴン；イントゥ・ザ・ヘヴン",
+    "reissuedBy": "Takt／日本コロムビア（1997-02-21 COCY-80506 CD）；日本コロムビア／NIPPONOPHONE 數位（Apple 1894177768）",
+    "g": "a"
+  },
+  {
+    "artist": "日野皓正クインテット",
+    "album": "Hino at Berlin Jazz Festival '71",
+    "year": 1971,
+    "genres": [
+      "jazz"
+    ],
+    "label": "VICTOR WORLD GROUP SMJX-10128（JP 1971 12 吋黑膠 4 軌）；JP 1990-09-21 Victor VICJ-23004 CD 4 軌（題《Hino at the Berlin Jazz Festival ’71》）；另一筆 JP 1990 CD 未登記廠牌",
+    "why": "日野皓正 五重奏 1971 年赴柏林爵士節演出的實況，由 Victor 的 World Group 線以 SMJX-10128 發行——這是他第一次把日本的五重奏原封不動帶到歐洲大舞台，也是簡報指名的「1967–75 Victor」那條線裡最有代表性的一張。MB 轄下三筆 release 全數 Official（1971 原盤、1990-09-21 的 Victor VICJ-23004 CD、另一筆 1990 年沒掛廠牌的 CD），軌數都是 4。實掃 seed_cards.json 全 16,450 列（日野皓正／日野／皓正／Terumasa Hino／Hino 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：日野皓正クインテット《Live!》、日野皓正《Live in Concert》《Hi-nology》《Alone, Alone and Alone》——**四張裡有兩張是現場盤，錄音室盤只有 Hi-nology 與 Alone, Alone and Alone 兩張，而且都停在 1969–70**。子字串「Hino」另命中 4 張全是假陽性（Toshinori Kondo／DJ Krush《記憶 Ki-Oku》、Takkyu Ishino《Berlin Trax》、Yoshinori Sunahara、Yoshino Yanagihara），逐筆核整個掛名字串後排除。 池中既有兩張現場盤都是 1970 年代中期以後的日本場，這張補的是「他在海外舞台上」那一格。",
+    "risk": "⚠ **現場盤但 MB 沒標 Live**：盤名載明是柏林爵士節的演出（1971 年 11 月），MB 這個 RG 的 secondary-types 卻是空的。依第 253 條 Live 本來就收，本卡照 MB 記 Album 並在此註明實為現場錄音，`Live` 的標記留研究層依盤面與曲目確認。⚠ 盤名兩式：1971 原盤與 RG 題《Hino at Berlin Jazz Festival ’71》、1990 CD 題《Hino at the Berlin Jazz Festival ’71》（多一個 the），下游比對鎖 rgMbid。⚠ 盤名含 ASCII 單引號（’71）——不是非 ASCII 連字號，chk-prop 不會亮燈，但研究層做字串比對時要注意 Apple 側常寫成「71」。掛名：RG 的 artist-credit 是英文「Terumasa Hino Quintet」，但實體 65c54d15 的主名是漢字「日野皓正クインテット」——依第 355 條取實體主名，也與池中既有字串一致；1990 年那筆沒掛廠牌的 release credit 寫「日野皓正」（個人），三種寫法全進 queryAlias。年份：MB 1971，原盤那筆就是 1971，無第 352 條失真。封面 CAA release-group 端點 200（實測）。Apple 觀察：search（盤名＋掛名、jp／us）與藝人目錄（artistId 5324578，全列）兩種查法都沒有這一筆；⚠ 同一個目錄裡 Victor 1977–80 那批（May Dance、Hip Seagull、City Connection、Daydream）反而齊備，**缺的是 1971 年那一張**——只寫觀察，不寫結論（第 254 條）。",
+    "mbNote": "釘 release-group 0443bd0a-2085-484e-9b7d-c824b66c620e。兩個端點回問確認：title「Hino at Berlin Jazz Festival ’71」、artist-credit「Terumasa Hino Quintet」（實體 65c54d15，MB 主名 日野皓正クインテット）、first-release-date 1971、primary-type Album、secondary-types **空**（見 risk）、轄下 3 個 release 全數 Official（JP 1971 VICTOR WORLD GROUP SMJX-10128 12 吋 4 軌／JP 1990 CD 4 軌，label-info 空，credit 日野皓正／JP 1990-09-21 Victor VICJ-23004 CD 4 軌，題多一個 the）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 列舉檔 jp-victor.json 把這一筆歸在 Victor／JVC 名下，與 release 端點回問到的 VICTOR WORLD GROUP 相符。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Terumasa Hino Quintet；日野皓正；Hino at the Berlin Jazz Festival ’71；Hino at Berlin Jazz Festival 71；日野皓正クインテット ベルリン・ジャズ・フェスティヴァル",
+    "reissuedBy": "Victor（1990-09-21 VICJ-23004 CD）",
+    "g": "a"
+  },
+  {
+    "artist": "日野皓正",
+    "album": "Journey Into My Mind",
+    "year": 1973,
+    "genres": [
+      "jazz"
+    ],
+    "label": "CBS/Sony SOPL 240（JP 1973 12 吋黑膠 6 軌）；JP 1977 CBS/Sony 23AP 654 12 吋黑膠 6 軌",
+    "why": "日野皓正 轉進 CBS/Sony 之後的第一張領銜作，1973 年以 SOPL 240 發行，1977 年又以 23AP 654 重壓一次——同一家廠牌在四年內壓兩次，在他的目錄裡只有這張。這也是他從 Takt 時期的 hard bop 走向 1970 年代電氣化編制的轉折點。實掃 seed_cards.json 全 16,450 列（日野皓正／日野／皓正／Terumasa Hino／Hino 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：日野皓正クインテット《Live!》、日野皓正《Live in Concert》《Hi-nology》《Alone, Alone and Alone》——**四張裡有兩張是現場盤，錄音室盤只有 Hi-nology 與 Alone, Alone and Alone 兩張，而且都停在 1969–70**。子字串「Hino」另命中 4 張全是假陽性（Toshinori Kondo／DJ Krush《記憶 Ki-Oku》、Takkyu Ishino《Berlin Trax》、Yoshinori Sunahara、Yoshino Yanagihara），逐筆核整個掛名字串後排除。 池中的日野皓正停在 1970 年的《Alone, Alone and Alone》與 1975 年的《Live in Concert》，中間 CBS/Sony 那幾年是空的，這張與《Into Eternity》1974 正好補上。",
+    "risk": "撞卡：盤名在池中零命中。⚠ 兩筆 release 都是 CBS/Sony 但 catno 不同（1973 SOPL 240／1977 23AP 654），**日期、廠牌、catno 要逐筆對，不得混講**（第 262 條）；1977 那筆是同廠再壓，不是再發廠。年份：MB first-release-date 1973，原盤那筆就是 1973。掛名：兩筆 release 的 credit 都是漢字「日野皓正」，與 RG 及實體主名一致，無分裂。封面 CAA release-group 端點 200（實測）。Apple 三種查法的觀察：search（jp）回的全是不相干的熱門碟（Dua Lipa、Shawn Mendes⋯⋯，**盤名是四個常用英文字，search 在 jp 店面完全失準**）、us 回的是 Terumasa Hino 的 Victor 1977–80 那批但沒有本張；藝人目錄（artistId 5324578）全列裡也沒有——**兩種查法未命中，第三步直查 collectionId 策展層無候選可查；只寫觀察，不寫結論**（第 254 條）。⚠ 與《Pastoral》《Paysages》《Open Road》同形：**CBS/Sony 1969–74 年的日本爵士目錄在 Apple 上整批缺席**，本組五位裡撞到第四次。",
+    "mbNote": "釘 release-group 883b18bf-d5d4-42ef-a5ab-7faf480a0e34。兩個端點回問確認：title「Journey Into My Mind」、artist-credit「日野皓正」（實體 60d3fa1e）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1973 CBS/Sony SOPL 240 12 吋 6 軌／JP 1977 CBS/Sony 23AP 654 12 吋 6 軌）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 刻意不釘（合掛，第 258／321 條）：78c2c5af-d0fe-4505-8a5f-6aba93f4f0c5《Vibrations》1971（enja 2010，credit 是 日野皓正 + Heinz Sauer + Peter Warren + Pierre Favre 四人平列）、6d7fc79a-0006-4c1a-b552-9db09570a2bc《A Part》1971（+ Reggie Workman）、6f6e0dc7《Hartman Meets Hino》1973（+ Johnny Hartman）、d62a9c4a《Reminicent Suite》1973（Mal Waldron and Terumasa Hino）。刻意不釘（CAA 200、額度未收）：8d3e2fc7-71d5-4901-96e5-e47f28e8b12e《Speak to Loneliness》1975（EAST WIND EW-7008）、b3fda7f7-090a-41ae-b31b-726b0e16d752《Hogiuta》1976（EAST WIND EW-8041）、76bc1fce《LA CHANSON D’ORPHÉE》1975（RCA RGP-1156，⚠ 1975 那筆 release 題《Mas Que Nada》、2006 CD 才題 LA CHANSON D’ORPHÉE，盤名兩式要先判）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Terumasa Hino；日野皓正 ジャーニー・イントゥ・マイ・マインド；Journey Into My Mind；ジャーニー・イントゥ・マイ・マインド",
+    "reissuedBy": "CBS/Sony 同廠重壓（1977 23AP 654）",
+    "g": "a"
+  },
+  {
+    "artist": "日野皓正",
+    "album": "Into Eternity",
+    "year": 1974,
+    "genres": [
+      "jazz"
+    ],
+    "label": "CBS/Sony SOPI 14-15（JP 1974 兩張 12 吋黑膠，4 軌＋5 軌）；JP 2000-04-19 SME Records SRCS-9598／SRCS-9599 兩張 CD",
+    "why": "日野皓正 CBS/Sony 時期的雙張大作，1974 年以 SOPI 14-15 兩片裝發行，2000 年 SME 再以兩張 CD（SRCS-9598／9599）復刻。它與前一年的《Journey Into My Mind》是同一條線的兩端：前者是轉折，這張是那條電氣化編制走到最大規模的一次。實掃 seed_cards.json 全 16,450 列（日野皓正／日野／皓正／Terumasa Hino／Hino 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：日野皓正クインテット《Live!》、日野皓正《Live in Concert》《Hi-nology》《Alone, Alone and Alone》，全部停在 1975 年以前且兩張是現場盤。 池中他 1970–75 年之間是空的，這兩張一起補正是店主要的「重點專輯」而不是全目錄。",
+    "risk": "撞卡：盤名在池中零命中。⚠ 兩張裝：MB 兩筆 release 的 media 都是兩片（1974 是 12 吋×2、2000 是 CD×2），軌數 4＋5，**研究層不得寫成單一數字**。廠牌／catno 逐筆：1974 是 CBS/Sony SOPI 14-15、2000 是 SME Records 兩個編號——不得跨筆接（第 262 條）。掛名：兩筆 release 的 credit 都是漢字「日野皓正」，無分裂。年份：MB first-release-date 1974，原盤那筆就是 1974，無第 352 條失真。封面 CAA release-group 端點 200（實測）。Apple 觀察：search（jp／us，盤名＋掛名）0 筆、藝人目錄（artistId 5324578 Terumasa Hino，全列）沒有這一筆，第三步直查 collectionId 策展層無候選可查——**只寫觀察，不寫結論**（第 254 條）。CBS/Sony 1969–74 日本爵士目錄在 Apple 上整批缺席，本組第五次撞到。",
+    "mbNote": "釘 release-group 31e8ea7c-0384-499f-834a-fa3fe960ceef。兩個端點回問確認：title「Into Eternity」、artist-credit「日野皓正」（實體 60d3fa1e）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1974 CBS/Sony SOPI 14-15 12 吋×2，4＋5 軌／JP 2000-04-19 SME Records SRCS-9598 ＋ SRCS-9599 CD×2，4＋5 軌）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，MB 主名即漢字＋片假名）；日野皓正オーケストラ da32a56a（0 個 RG）；Terumasa Hino Quartet 59158072（2 個 RG）。 個人實體名下 CBS/Sony 1979–85 那批（3a00953a《Horizon》1979、648da3ab《Double Rainbow》1981、fbb07c85《Pyramid》1982、2d89c78e《New York Times》1983、2ccaa318《Trans-Blue》1985）本批未動，留給後續批。原聲帶不收：de2270ad《オリジナル・サウンドトラック 夏服のイヴ》1984（secondary-types Soundtrack）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Terumasa Hino；日野皓正 イントゥ・エタニティ；Into Eternity；イントゥ・エタニティー",
+    "reissuedBy": "SME Records（2000-04-19 SRCS-9598／SRCS-9599 兩張 CD）",
+    "g": "a"
+  },
+  {
+    "artist": "菊地雅章セクステット",
+    "album": "Matrix",
+    "year": 1969,
+    "genres": [
+      "jazz"
+    ],
+    "label": "VICTOR WORLD GROUP SMJX-10078（JP 1969 12 吋黑膠 6 軌）",
+    "why": "菊地雅章 二十歲出頭就以六重奏名義錄下的領銜作，Victor 的 World Group 線 SMJX-10078——與 日野皓正《Hino at Berlin Jazz Festival ’71》同一條 catno 線，正是 1969–71 年 Victor 把日本新派爵士推出去的那個企畫。MB 轄下只有這一筆 1969 原盤（Official，6 軌），沒有任何 CD 或黑膠再發登錄。實掃 seed_cards.json 全 16,450 列（菊地雅章／菊地／雅章／Masabumi Kikuchi／Kikuchi 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中共命中三筆，但**其中兩筆是同一張碟**：`菊地雅章《End for the Beginning》` 與 `Masabumi Kikuchi Quintet《End For The Beginning》`——同一張 1973 年 Philips 盤在池中以漢字與英文兩個掛名各存在一次。**扣掉重複，他名下實際只有兩張不同的碟（那一張，加上《Susto》1981）。**子字串「Kikuchi」另命中 Masaaki Kikuchi《Formula》1 張（假陽性，逐筆核整個掛名字串後排除）。 池中他實際只有兩張碟、最早的一張是 1973 年，這張把起點往前推四年，補的是他 Takt／Philips 時期之前那一格。",
+    "risk": "⚠ 掛名是本卡最需要記的一件事，三層都要講清楚：(1) MB 這個 RG 掛在群組實體 **Masabumi Kikuchi Sextet**（3936dadc，英文主名），依第 354 條「MB 實體是英文的，卡片照池中先例寫漢字＋片假名編制」，本卡寫 **菊地雅章セクステット**；(2) **池中已有的 `Masabumi Kikuchi Quintet` 是既有分裂**（那是另一個實體 223c364f 名下的《End For The Beginning》，而且同一張碟池中還有一筆漢字掛名的重複卡）——依簡報第三節，本批新卡用漢字、**不新造英文字串、也不自行合併**，池中那兩筆待本機統一；(3) 第 307 條反查同字串不同人：池中「菊地」「雅章」「Kikuchi」「Masabumi」四種子字串只命中他本人與 Masaaki Kikuchi《Formula》（另一位），**新掛名「菊地雅章セクステット」在池中零命中，無合併風險**。⚠ **順帶抓到的池中重複卡：`菊地雅章《End for the Beginning》` 與 `Masabumi Kikuchi Quintet《End For The Beginning》` 是同一張 1973 Philips FX-8527（MB RG 041fd338），池中重了一次**——`chk-prop` 的折疊鍵是掛名＋盤名，掛名不同就不亮燈，抓不到（第 307 條同形）。撞卡：本卡盤名《Matrix》在池中零命中；⚠ 盤名是單字，子字串假陽性高，已逐筆核整個掛名字串。年份：MB 1969，Apple jp／us 1294929214 記 2017-10-25（那是 Victor 數位再發日）、℗ Victor Entertainment——**依第 352 條不取 Apple 的日期**，取 MB 的 1969。封面 CAA release-group 端點 200（實測）。Apple search 與藝人目錄（artistId 4272695 Masabumi Kikuchi）兩種查法都命中 1294929214《Matrix》6 軌——軌數與 MB 一致、掛名 Apple 寫個人（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group 6810ebea-ec5a-4254-8445-0129a17959e1。兩個端點回問確認：title「Matrix」、artist-credit「Masabumi Kikuchi Sextet」（實體 3936dadc-696a-4aac-a9cf-1a2c70701202）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1969 VICTOR WORLD GROUP SMJX-10078 12 吋 6 軌 Official）。藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 Sextet 實體名下另有 63bb5e83《Collaboration》1970（與 Sadao Watanabe Quintet 共掛）、3b19f983《Masabumi Kikuchi in Concert》1971（Philips FX-8515，⚠ 1971 那筆 release 的 status 是空的、只有 2015 CD 是 Official，CAA 200，額度未收）、f8230428《Hairpin Circus》1972（secondary-types Soundtrack，**原聲帶不收**）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masabumi Kikuchi Sextet；菊地雅章；Masabumi Kikuchi；菊地雅章 マトリックス；マトリックス",
+    "reissuedBy": "Victor Entertainment 數位（Apple 1294929214，2017-10-25）",
+    "g": "a"
+  },
+  {
+    "artist": "菊地雅章セクステット",
+    "album": "Re-confirmation",
+    "year": 1970,
+    "genres": [
+      "jazz"
+    ],
+    "label": "Philips FX-8501（JP 1970 12 吋黑膠 6 軌，日本フォノグラム）；JP 2015-10-07 Universal Music UCCJ-9203 CD 6 軌",
+    "why": "菊地雅章 從 Victor 轉到 Philips 之後的第一張，catno FX-8501 就是 日本フォノグラム 那條爵士線的起號——簡報指名的「Takt／Philips」時期，這張是頭一張。MB 轄下兩筆 release 都 Official：1970 年 Philips FX-8501 原盤與 2015-10-07 的 Universal UCCJ-9203 CD，軌數都是 6。實掃 seed_cards.json 全 16,450 列（菊地雅章／菊地／雅章／Masabumi Kikuchi／Kikuchi 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中共命中三筆，但**其中兩筆是同一張碟**：`菊地雅章《End for the Beginning》` 與 `Masabumi Kikuchi Quintet《End For The Beginning》`——同一張 1973 年 Philips 盤在池中以漢字與英文兩個掛名各存在一次。**扣掉重複，他名下實際只有兩張不同的碟（那一張，加上《Susto》1981）。**子字串「Kikuchi」另命中 Masaaki Kikuchi《Formula》1 張（假陽性，逐筆核整個掛名字串後排除）。 池中最早的一張是 1973 年的《End For The Beginning》（同樣是 Philips FX 線），這張與《Matrix》1969 一起把他 1969–70 那兩年補齊。",
+    "risk": "⚠ **credit 與實體不一致**：RG 的 artist-credit 是「Masabumi Kikuchi Sextet」，但 **1970 年那筆 release 的 credit 寫「Masabumi Kikuchi Trio」**（2015 CD 那筆寫 Sextet）——同一張碟在 MB 上有六重奏與三重奏兩種 credit。依第 355 條取實體主名（Sextet），卡面寫 菊地雅章セクステット，兩種 credit 都進 queryAlias；**實際編制是三重奏還是六重奏，留研究層以盤面人員表判，正文不得斷言**（第 250 條「分不出來就標為不得寫」的同族）。⚠ **MB 另有同碟的日文題重複 RG**：95336d82-a9a9-4bdc-a6d9-575fd4a24745《再確認そして発展》，first-release-date 2009-05-27、只有一筆 2009 SHM-CD（UCCJ-4068）、**CAA 404**——本卡釘 1970 原盤那個（c61e49b9），日文題進 queryAlias，建議本機併 RG。掛名分裂同前卡：池中 `Masabumi Kikuchi Quintet` 是既有英文字串，本批用漢字、不自行合併（第 307 條）。撞卡：盤名在池中零命中。年份：MB first-release-date 1970，原盤那筆就是 1970；Apple jp 1443745916《Re-Confirmation》記 1970-01-01、℗ 1970 Universal Classics & Jazz，一致（**Apple 的月日 01-01 是佔位，不得引用**）。封面 CAA release-group 端點 200（實測）。Apple search 與藝人目錄兩種查法都命中 1443745916，6 軌，與 MB 一致（觀察，非結論，第 254 條）；⚠ Apple 的盤名大小寫是《Re-Confirmation》、MB 是《Re-confirmation》。",
+    "mbNote": "釘 release-group c61e49b9-5d45-4211-ad85-0ce455b3be9c。兩個端點回問確認：title「Re-confirmation」、artist-credit「Masabumi Kikuchi Sextet」（實體 3936dadc）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1970 Philips FX-8501 12 吋 6 軌，release credit「Masabumi Kikuchi Trio」／JP 2015-10-07 Universal Music UCCJ-9203 CD 6 軌，credit「Masabumi Kikuchi Sextet」）。**重複 RG：95336d82《再確認そして発展》2009-05-27（UCCJ-4068，CAA 404），刻意不釘。**藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 個人實體名下的 2009-05-27 那組日文題 RG（2a3e3fca《エンド・フォー・ザ・ビギニング》、3f0c2dca《ダンシング・ミスト〜菊地雅章イン・コンサート》、8f21fbb8《POO-SUN》、95336d82《再確認そして発展》）**全部是 2009 年 SHM-CD 復刻各自另立的 RG、CAA 全 404**——其中《POO-SUN》（プーさん，1970 Philips，Apple jp 1443746181 記 ℗ 1970 Universal、6 軌）與《ダンシング・ミスト》（1971 Philips）是他 Philips 時期的正典，**MB 只有 2009 年那個殼、沒有原盤 release，CAA 又 404，本批不收，已列進 rulings 的未收清單**。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masabumi Kikuchi Sextet；Masabumi Kikuchi Trio；菊地雅章；再確認そして発展；Re-Confirmation；菊地雅章 リ・コンファメーション",
+    "reissuedBy": "Universal Music（2015-10-07 UCCJ-9203 CD；2009-05-27 SHM-CD UCCJ-4068 另立 RG）",
+    "g": "a"
+  },
+  {
+    "artist": "菊地雅章",
+    "album": "East Wind",
+    "year": 1974,
+    "genres": [
+      "jazz"
+    ],
+    "label": "EAST WIND EW-7001（JP 1974 12 吋黑膠 2 軌）；JP 1998-12-09 Mercury Records PHCE-2035 CD／JP 2002-09-25 EAST WIND UCCJ-9002 CD／JP 2009-05-27 EAST WIND UCCJ-4078 SHM-CD／JP 2015-02-04 EAST WIND UCCJ-9131 CD",
+    "why": "**EAST WIND 這家廠牌的第一號盤（EW-7001）就是這張**，而且盤名直接叫《East Wind》——1974 年 日本フォノグラム 成立這條爵士線時，挑的開門作品是 菊地雅章 的兩首長曲。MB 轄下五筆 release 全數 Official，從 1974 年黑膠一路到 1998／2002／2009／2015 四次 CD 復刻，是他目錄裡被維護得最勤的一張。實掃 seed_cards.json 全 16,450 列（菊地雅章／菊地／雅章／Masabumi Kikuchi／Kikuchi 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中共命中三筆，但**其中兩筆是同一張碟**：`菊地雅章《End for the Beginning》` 與 `Masabumi Kikuchi Quintet《End For The Beginning》`——同一張 1973 年 Philips 盤在池中以漢字與英文兩個掛名各存在一次。**扣掉重複，他名下實際只有兩張不同的碟（那一張，加上《Susto》1981）。**子字串「Kikuchi」另命中 Masaaki Kikuchi《Formula》1 張（假陽性，逐筆核整個掛名字串後排除）。 簡報指名他走「Takt／Philips 與 East Wind」，這張是 East Wind 那一段的起點，也是池中完全沒有的 1974 年那一格。",
+    "risk": "撞卡：⚠ **盤名與廠牌同名**（《East Wind》／EAST WIND），子字串比對假陽性極高——實掃時逐筆核整個掛名字串，池中「菊地」「Kikuchi」四種子字串只命中他本人兩張與 Masaaki Kikuchi 一張，盤名零命中。掛名：RG 與五筆 release 的 credit 全部是漢字「菊地雅章」，與實體主名一致，**本卡不涉編制掛名**；但池中 `Masabumi Kikuchi Quintet` 的既有英文字串仍待本機統一（第 307 條）。⚠ 軌數只有 2：MB 五筆 release 的 media 都是 2 軌，Apple jp 1467968990《イースト・ウィンド》也是 2 軌——研究層寫正文時要知道這是兩首長曲，不是漏建。⚠ Apple 的 ℗ 與日期打架：1467968990 的 releaseDate 記 1974-10-05、℗ 卻寫 1976 Universal Classics & Jazz——**兩個欄位不一致，不得拿來當年份來源**；本卡取 MB 的 1974（原盤那筆就是 1974）。廠牌／catno 逐筆：1974 EAST WIND EW-7001、1998 Mercury Records PHCE-2035、2002 EAST WIND UCCJ-9002、2009 EAST WIND UCCJ-4078、2015 EAST WIND UCCJ-9131——**五筆的廠牌名有兩種，不得跨筆接**（第 262 條）。封面 CAA release-group 端點 200（實測）。Apple search 與藝人目錄兩種查法都命中（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group d5c93a08-6a86-43dd-b7ad-a79ce9796bf9。兩個端點回問確認：title「East Wind」、artist-credit「菊地雅章」（實體 5216d6d4）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 5 個 release 全數 Official（JP 1974 EAST WIND EW-7001 12 吋 2 軌／JP 1998-12-09 Mercury Records PHCE-2035 CD／JP 2002-09-25 EAST WIND UCCJ-9002 CD／JP 2009-05-27 EAST WIND UCCJ-4078 SHM-CD／JP 2015-02-04 EAST WIND UCCJ-9131 CD，全部 2 軌）。藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 刻意不釘（合掛，第 258／321 條）：4c41c943《Poesy: The Man Who Keeps Washing His Hands》1971（Philips FX-8518，credit 菊地雅章＋富樫雅彦＋Gary Peacock 三人平列，CAA 200）、aedc4cef《Hollow Out》1977（Philips FS-6508，Elvin Jones + Masabumi Kikuchi）、b8c042e3《Joe Henderson and Kikuchi/Hino in Concert》1974、bfd82909《Masabumi Kikuchi + Gil Evans》1972、18a5c6c1《コンチェルト》1991（富樫雅彦+菊地雅章）。刻意不釘（CAA 404）：e4fbb764《But Not For Me》1978（Flying Disk VIJ-6016）、8f21fbb8《POO-SUN》、3f0c2dca《ダンシング・ミスト》、95336d82《再確認そして発展》、2a3e3fca《エンド・フォー・ザ・ビギニング》。刻意不釘（池中已有，且池中重複兩次）：041fd338《End For The Beginning》1973（Philips FX-8527）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masabumi Kikuchi；菊地雅章 イースト・ウィンド；イースト・ウィンド；Masabumi Kikuchi East Wind",
+    "reissuedBy": "Mercury Records（1998-12-09 PHCE-2035）；EAST WIND／Universal Music（2002-09-25 UCCJ-9002、2009-05-27 UCCJ-4078 SHM-CD、2015-02-04 UCCJ-9131）",
+    "g": "a"
+  },
+  {
+    "artist": "菊地雅章",
+    "album": "Wishes/Kochi",
+    "year": 1976,
+    "genres": [
+      "jazz"
+    ],
+    "label": "EAST WIND EW 8043（JP 1976 12 吋黑膠 6 軌）；JP 2015-02-04 EAST WIND UCCJ-9173 CD 6 軌",
+    "why": "EAST WIND 時期的第二張，1976 年以 EW 8043 發行。盤名把兩個字並置（Wishes／Kochi，後者是他 1970 年代反覆使用的曲題），是他從 Philips 時期的自由編制走向後來《Susto》那條電氣化路線之間的中繼站——池中既有的《Susto》1981 正好接在它後面。MB 轄下兩筆 release 都 Official（1976 黑膠與 2015-02-04 的 UCCJ-9173 CD），軌數都是 6。實掃 seed_cards.json 全 16,450 列（菊地雅章／菊地／雅章／Masabumi Kikuchi／Kikuchi 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中共命中三筆，但**其中兩筆是同一張碟**：`菊地雅章《End for the Beginning》` 與 `Masabumi Kikuchi Quintet《End For The Beginning》`——同一張 1973 年 Philips 盤在池中以漢字與英文兩個掛名各存在一次。**扣掉重複，他名下實際只有兩張不同的碟（那一張，加上《Susto》1981）。**子字串「Kikuchi」另命中 Masaaki Kikuchi《Formula》1 張（假陽性，逐筆核整個掛名字串後排除）。 這張與《East Wind》1974 一起，把 East Wind 那一段補完整。",
+    "risk": "⚠ **盤名含斜線**（Wishes/Kochi）：`chk-prop` 的折疊鍵會把斜線剝掉，不影響比對，但下游做檔名或網址時要注意；Apple 側若上架很可能拆成兩個字或改成《ウィッシズ》，比對要鎖 rgMbid。撞卡：盤名在池中零命中。掛名：RG 與兩筆 release 的 credit 都是漢字「菊地雅章」，無編制掛名問題；池中 `Masabumi Kikuchi Quintet` 的既有分裂待本機統一（第 307 條）。年份：MB first-release-date 1976，原盤那筆就是 1976，無第 352 條失真。廠牌：兩筆都是 EAST WIND，catno 分別是 EW 8043 與 UCCJ-9173（第 262 條，逐筆對）。封面 CAA release-group 端點 200（實測）。⚠ Apple 三種查法的觀察：search（jp／us，盤名＋掛名、盤名拆字兩種寫法）0 筆；藝人目錄（artistId 4272695 Masabumi Kikuchi）全列裡只有 Matrix、Poo-Sun、Re-Confirmation、イースト・ウィンド 四筆 1970 年代條目，**沒有這一張**；第三步直查 collectionId 策展層無候選可查——**只寫觀察，不寫結論**（第 254 條）。",
+    "mbNote": "釘 release-group 1e2d9cd2-5dc8-4607-a527-93a052fe4c7a。兩個端點回問確認：title「Wishes/Kochi」、artist-credit「菊地雅章」（實體 5216d6d4）、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1976 EAST WIND EW 8043 12 吋 6 軌／JP 2015-02-04 EAST WIND UCCJ-9173 CD 6 軌）。藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 個人實體名下 1988-07-25 那組單字題 RG（1e1813d3《空》、21001d06《風》、285e6204《水》、6eab26a9《識》、89793724《地》、b73571f2《火》）是同一套六張的企畫，本批未查 CAA、未動。2015-12-09 的 dac35ff0《Tethered Moon》與 fc9076cc《Feel You》是 King／Paddle Wheel 的後期作，亦未動。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masabumi Kikuchi；菊地雅章 ウィッシズ／コーチ；Wishes Kochi；ウィッシズ・コーチ",
+    "reissuedBy": "EAST WIND／Universal Music（2015-02-04 UCCJ-9173 CD）",
+    "g": "a"
+  },
+  {
+    "artist": "佐藤允彦トリオ",
+    "album": "Palladium",
+    "year": 1969,
+    "genres": [
+      "jazz"
+    ],
+    "label": "東芝 Express（JP 1969 原盤；**MB 轄下只登錄 JP 2005-02-23 EXPRESS／Bridge Inc. BRIDGE-043 CD 6 軌**，1969 年黑膠原盤 MB 未建檔）；Apple jp 官方條目 720359088 記 1969-06-20、℗ 1969 EMI Music Japan Inc.",
+    "why": "佐藤允彦 1969 年自 Berklee 回國後錄的第一張領銜作，也是日本鋼琴三重奏走向自由形式的分水嶺——簡報指名的「1969《Palladium》起的 Express／Toshiba」那條線，這張就是起點。實掃 seed_cards.json 全 16,450 列（佐藤允彦／允彦／Masahiko Sato／Satoh／サウンド・ブレイカー 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有兩張：`佐藤允彦とサウンド・ブレイカーズ《Amalgamation》1971`（c-59）與 `佐藤允彦《Trinity》1971`（c-121）——**兩張同一年，1969 年的起點與 1972 年之後的整條線都是空的**。子字串「佐藤」另命中 佐藤博《Awakening》、Somei Satoh 佐藤聰明《Litania》、佐藤奈々子《Funny Walkin’》三張（假陽性，逐筆核整個掛名字串後排除）；「Sato」另命中 Frankie Knuckles presents Satoshi Tomiie（假陽性）。 池中既有的兩張都是 1971 年，把這張補進去，他在池中的目錄才有頭。MB 這個 RG 轄下只有 2005 年 Bridge 的 CD 復刻（EXPRESS BRIDGE-043，6 軌），1969 年東芝 Express 的黑膠原盤沒有人建檔。",
+    "risk": "⚠ **年份走第 352 條**：MB first-release-date 是 **2005-02-23**（那是 Bridge 復刻 CD 的日期，轄下唯一一筆 release），不是首發年；Apple jp 的官方條目 720359088 記 **1969-06-20、℗ 1969 EMI Music Japan Inc.**、6 軌，與 MB 的 6 軌一致——本卡取 **1969**，MB 的日期記在這裡。**建議本機補建 MB 的 1969 東芝 Express 原盤 release。** ⚠ **catno 不寫**：1969 原盤的 catno 沒有任何一筆 release 能背書，只寫廠牌（東芝 Express）；2005 復刻的 BRIDGE-043 另記——**日期、廠牌、catno 出自同一筆**（第 262 條）。⚠ 掛名：MB 這個 RG 掛在群組實體 **Masahiko Sato Trio**（2d492012，英文主名），依第 354 條寫成漢字＋片假名的 **佐藤允彦トリオ**；**Apple jp 店面的掛名正是「佐藤允彦トリオ」**（artistId 75534413 Satoh Masahiko Trio 的 jp 顯示名），與這個判斷相符。第 307 條反查：池中「佐藤允彦トリオ」零命中，「佐藤」子字串命中的三張是別人（佐藤博、佐藤聰明、佐藤奈々子），無同字串不同人的合併風險；池中既有的 `佐藤允彦` 與 `佐藤允彦とサウンド・ブレイカーズ` 是另外兩個掛名，不折疊。撞卡：盤名在池中零命中；⚠ 盤名是單字且與元素名／球場名同形，子字串比對假陽性高，已逐筆核整個掛名字串。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp）命中 720359088，藝人目錄（artistId 75534413）同一筆亦在，軌數 6 與 MB 一致；us 店面 search 0 筆（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group c1be243a-52ac-49a3-9181-6a64d494973f。兩個端點回問確認：title「Palladium」、artist-credit「Masahiko Sato Trio」（實體 2d492012-408a-4a85-8894-4faa43613bc5）、first-release-date **2005-02-23**（⚠ 復刻日，見 risk）、primary-type Album、secondary-types 空、轄下 1 個 release（JP 2005-02-23 EXPRESS／Bridge Inc. BRIDGE-043 CD 6 軌 Official）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 年份取 1969 ＝ Apple jp 官方條目的 ℗ 年與發行日（第 352 條）。廠牌出自 release 端點（第 259 條）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masahiko Sato Trio；Satoh Masahiko Trio；佐藤允彦；Masahiko Satoh；佐藤允彦トリオ パラジウム；パラジウム",
+    "reissuedBy": "Bridge Inc.／EXPRESS（2005-02-23 BRIDGE-043 CD）；EMI Music Japan 數位（Apple jp 720359088）",
+    "g": "a"
+  },
+  {
+    "artist": "佐藤允彦",
+    "album": "Holography",
+    "year": 1970,
+    "genres": [
+      "jazz"
+    ],
+    "label": "⚠ **MB 轄下只登錄 JP 2006-01-20 Bridge Inc. BRIDGE-42 CD 2 軌**，原盤 MB 未建檔；Apple jp 官方條目 1716850549 記 **1970-09-25、℗ 1970 Nippon Columbia Co., Ltd./NIPPONOPHONE**、2 軌 — 1970 年原盤的廠牌兩說（Bridge 這條線復刻的多是東芝 Express，Apple 的 ℗ 卻指向 日本コロムビア），待研究層以盤面核",
+    "why": "《Palladium》之後、同一段時期的兩首長曲盤，兩面各一首的編排把他 1970 年前後那種結構實驗推到最徹底的一次。MB 這個 RG 轄下只有 2006 年 Bridge 的 CD 復刻（BRIDGE-42，與《Palladium》的 BRIDGE-043 是同一條復刻線），Apple jp 的官方條目則明記 1970-09-25、℗ 1970，兩邊的軌數都是 2。實掃 seed_cards.json 全 16,450 列（佐藤允彦／允彦／Masahiko Sato／Satoh／サウンド・ブレイカー 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有兩張：`佐藤允彦とサウンド・ブレイカーズ《Amalgamation》1971`（c-59）與 `佐藤允彦《Trinity》1971`（c-121）——**兩張同一年，1969 年的起點與 1972 年之後的整條線都是空的**。子字串「佐藤」另命中 佐藤博《Awakening》、Somei Satoh 佐藤聰明《Litania》、佐藤奈々子《Funny Walkin’》三張（假陽性，逐筆核整個掛名字串後排除）；「Sato」另命中 Frankie Knuckles presents Satoshi Tomiie（假陽性）。 這張補的是 1970 年那一格，正好卡在《Palladium》1969 與池中既有的兩張 1971 年之間。",
+    "risk": "⚠ **本卡有兩個坑，都要留給研究層收**：(1) **年份走第 352 條**——MB first-release-date 是 2006-01-20（Bridge 復刻 CD），Apple jp 官方條目 1716850549 記 1970-09-25、℗ 1970 Nippon Columbia，本卡取 **1970**，MB 的日期記在這裡；(2) **原盤廠牌兩說**——Bridge Inc. 這條復刻線（BRIDGE-42／BRIDGE-043）處理的多是東芝 Express 的目錄，但 Apple 的 ℗ 寫 日本コロムビア／NIPPONOPHONE，**兩說沒有一筆 release 能裁**，`label` 欄兩說並列並註明待核，**正文不得斷言原盤廠牌與 catno**（第 262 條、第 250 條「分不出來就標為不得寫」）。⚠ 軌數只有 2（MB 與 Apple 一致），是兩首長曲不是漏建。掛名：MB 這個 RG 的 credit 是「Masahiko Sato」、掛在**個人實體** 04bbec22（不是三重奏實體），依第 355 條取實體主名，卡面寫漢字 **佐藤允彦**，與池中既有的 `佐藤允彦《Trinity》` 同一字串。撞卡：盤名在池中零命中。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp／us，盤名＋掛名）0 筆，**藝人目錄查法（artistId 19063311 Masahiko Satoh）才撈到 1716850549**——這正是第 254 條說的「search 與目錄漏的不是同一批」，也是本組唯一一張靠第二種查法才找到的（觀察，非結論）。",
+    "mbNote": "釘 release-group 482d1c70-30c3-41e8-8c20-7362f714078e。兩個端點回問確認：title「Holography」、artist-credit「Masahiko Sato」（**個人實體** 04bbec22-7716-4371-b86e-d016bd3bf715）、first-release-date **2006-01-20**（⚠ 復刻日，見 risk）、primary-type Album、secondary-types 空、轄下 1 個 release（JP 2006-01-20 Bridge Inc. BRIDGE-42 CD 2 軌 Official）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 年份取 1970 ＝ Apple jp 官方條目的 ℗ 年與發行日（第 352 條）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masahiko Sato；Masahiko Satoh；佐藤允彦 ホログラフィー；Holography；ホログラフィー",
+    "reissuedBy": "Bridge Inc.（2006-01-20 BRIDGE-42 CD）；日本コロムビア／NIPPONOPHONE 數位（Apple jp 1716850549）",
+    "g": "a"
+  },
+  {
+    "artist": "佐藤允彦トリオ",
+    "album": "Transformation '69/'71",
+    "year": 1971,
+    "genres": [
+      "jazz"
+    ],
+    "label": "東芝 Express（JP 1971 原盤；**MB 轄下只登錄 JP 1991-10-19 EXPRESS／Think! Records DTHK-002 CD 4 軌**，原盤 MB 未建檔）；Apple jp 官方條目 720401905 記 **1971-10-05、℗ 1971 EMI Music Japan Inc.**、4 軌",
+    "why": "盤名就寫明收的是 1969 與 1971 兩年的三重奏錄音——與《Palladium》同一個編制、同一條東芝 Express 線，是那個三重奏留下的第二份文件。MB 轄下只有 1991-10-19 的 Think! Records／EXPRESS CD（DTHK-002，4 軌），Apple jp 的官方條目則記 1971-10-05、℗ 1971 EMI Music Japan，軌數同樣是 4。實掃 seed_cards.json 全 16,450 列（佐藤允彦／允彦／Masahiko Sato／Satoh／サウンド・ブレイカー 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有兩張：`佐藤允彦とサウンド・ブレイカーズ《Amalgamation》1971`（c-59）與 `佐藤允彦《Trinity》1971`（c-121）——**兩張同一年，1969 年的起點與 1972 年之後的整條線都是空的**。子字串「佐藤」另命中 佐藤博《Awakening》、Somei Satoh 佐藤聰明《Litania》、佐藤奈々子《Funny Walkin’》三張（假陽性，逐筆核整個掛名字串後排除）；「Sato」另命中 Frankie Knuckles presents Satoshi Tomiie（假陽性）。 這張與《Palladium》1969、《Holography》1970 一起，把他 1969–71 那三年的三重奏線一次補齊。",
+    "risk": "⚠ **年份走第 352 條**：MB first-release-date 是 **1991-10-19**（Think! Records 的 CD 復刻，轄下唯一一筆 release），Apple jp 官方條目 720401905 記 1971-10-05、℗ 1971 EMI Music Japan Inc.、4 軌，與 MB 的 4 軌一致——本卡取 **1971**，MB 的日期記在這裡。**建議本機補建 1971 年東芝 Express 原盤 release。** ⚠ **與第 353 條的差別要講清楚**：第 353 條是「盤名載明錄音年、取演奏年」（陸前高田 1980），本卡不是——盤名裡的 ’69/’71 是**收錄範圍**，而 1971 本身就是首發年（Apple 的 ℗ 與發行日都指向它），**取的是首發年不是演奏年**。錄音年 1969 與 1971 寫進這裡供研究層引用。⚠ catno：1971 原盤的 catno 沒有 release 能背書，只寫廠牌；1991 復刻的 DTHK-002 另記（第 262 條）。⚠ 盤名含 ASCII 單引號兩處（’69/’71），chk-prop 只掃非 ASCII 連字號、不會亮燈，但 Apple 側寫成《Transformation’69/’71》（沒有空格），下游比對要鎖 rgMbid。掛名：RG 掛群組實體 Masahiko Sato Trio（2d492012），依第 354 條寫 **佐藤允彦トリオ**，與同批《Palladium》同一字串，**同一位不因編制寫法不同被收兩次**（簡報第六節第 1 點）。撞卡：盤名在池中零命中。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp／us）回的全是別張（Proton Pump、An Evening at Lezard、Amalgamation⋯⋯），**藝人目錄查法（artistId 75534413 Satoh Masahiko Trio）才撈到 720401905**——第 254 條的第二個實例（觀察，非結論）。",
+    "mbNote": "釘 release-group 8295c5bc-ae34-46aa-ad95-ac5d1a87d653。兩個端點回問確認：title「Transformation ’69/’71」、artist-credit「Masahiko Sato Trio」（實體 2d492012）、first-release-date **1991-10-19**（⚠ 復刻日，見 risk）、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1991-10-19 EXPRESS DTHK-002／Think! Records DTHK-002 CD 4 軌 Official，同一筆掛兩個廠牌實體）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 年份取 1971 ＝ Apple jp 官方條目（第 352 條）。三重奏實體名下另兩張：8e7757a5《Deformation》2006（Bridge Inc. BRIDGE-044，CAA 200，額度未收）、f7fb9307《標準伎楽 = Hyōjun Gigaku》2016（BAJ Records BJSP-0011，**CAA 404**）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masahiko Sato Trio；Satoh Masahiko Trio；佐藤允彦；Transformation’69/’71；Transformation 69 71；佐藤允彦トリオ トランスフォーメーション",
+    "reissuedBy": "Think! Records／EXPRESS（1991-10-19 DTHK-002 CD）；EMI Music Japan 數位（Apple jp 720401905）",
+    "g": "a"
+  },
+  {
+    "artist": "佐藤允彦",
+    "album": "マグノリアの木",
+    "year": 1977,
+    "genres": [
+      "jazz"
+    ],
+    "label": "DENON JAZZ YX-7571-ND（JP 1977-11 12 吋黑膠 9 軌）",
+    "why": "1977 年 11 月 日本コロムビア 的 DENON JAZZ 線發行的鋼琴盤，catno YX-7571-ND 是那條 PCM 錄音線的編號——Denon 1970 年代後半用數位錄音做爵士，這張是他在那條線上的作品。MB 轄下只有這一筆 1977-11 原盤（Official，9 軌），沒有 CD 再發登錄。實掃 seed_cards.json 全 16,450 列（佐藤允彦／允彦／Masahiko Sato／Satoh／サウンド・ブレイカー 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有兩張：`佐藤允彦とサウンド・ブレイカーズ《Amalgamation》1971`（c-59）與 `佐藤允彦《Trinity》1971`（c-121）——**兩張同一年，1969 年的起點與 1972 年之後的整條線都是空的**。子字串「佐藤」另命中 佐藤博《Awakening》、Somei Satoh 佐藤聰明《Litania》、佐藤奈々子《Funny Walkin’》三張（假陽性，逐筆核整個掛名字串後排除）；「Sato」另命中 Frankie Knuckles presents Satoshi Tomiie（假陽性）。 池中他停在 1971 年，這張補的是 1977 年那一格，也是本組五張裡唯一一張 Denon 的。",
+    "risk": "撞卡：盤名是日文，池中零命中；⚠ 盤名兩式——MB 與 Discogs 用漢字假名《マグノリアの木》，**Apple jp／us 用羅馬字《Magnolia No Ki》**（1709903884），下游比對要把兩式都放進 queryAlias 並鎖 rgMbid。掛名：RG 與 release 的 credit 都是漢字「佐藤允彦」，掛個人實體，與池中既有的 `佐藤允彦《Trinity》` 同一字串，不涉編制。年份：MB first-release-date 1977-11（有月份），Apple 記 1977-11-25、℗ 1977 Nippon Columbia——**月份一致、日期只有 Apple 有，研究層引用日期要註明來源**（第 262 條）。廠牌：release 端點回問到 DENON JAZZ YX-7571-ND，是 日本コロムビア 的 Denon 爵士線（`label` 照實記，本批沒有 §1.5 獨立閘）。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp／us，日文盤名）與藝人目錄（artistId 19063311）都命中 1709903884《Magnolia No Ki》9 軌 ℗ 1977 Nippon Columbia——軌數與 MB 一致（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group f38487cf-e953-4548-8b40-da645cf9c91d。兩個端點回問確認：title「マグノリアの木」、artist-credit「佐藤允彦」（個人實體 04bbec22）、first-release-date 1977-11、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1977-11 DENON JAZZ YX-7571-ND 12 吋 9 軌 Official）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 刻意不釘（CAA 404）：c620fa2d《Pavane Lachrymae》1978-10（DENON YX-7536-ND，同一條 Denon 線的次一張）、cc5397e0《A Path Through Haze》1972（MPS，且是 Attila Zoller 合掛）、79d0b90d《Wonderful Moog Sound》1972（JVC CD4B-5015E，且是 1864 Cotton Field Rock Band 合掛）、f7fb9307《標準伎楽》2016。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masahiko Satoh；Magnolia No Ki；佐藤允彦 マグノリアの木；Masahiko Sato Magnolia",
+    "reissuedBy": "日本コロムビア／NIPPONOPHONE 數位（Apple 1709903884）",
+    "g": "a"
+  },
+  {
+    "artist": "佐藤允彦",
+    "album": "All-in All-out",
+    "year": 1979,
+    "genres": [
+      "jazz"
+    ],
+    "label": "OPENSKYE 25AP 1010（JP 1979 12 吋黑膠 6 軌）；JP 1991-07-25 Sony Records SRCL-1978 CD 6 軌",
+    "why": "1979 年在 OPENSKYE（CBS/Sony 體系的爵士副廠，catno 25AP 1010）發行的一張，1991 年 Sony Records 又以 SRCL-1978 復刻成 CD。它是他 1970 年代末從 Denon 走向 1980 年代 Medical Sugar Bank 那條電氣化路線之前的最後一張原音作品。實掃 seed_cards.json 全 16,450 列（佐藤允彦／允彦／Masahiko Sato／Satoh／サウンド・ブレイカー 五種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下只有兩張：`佐藤允彦とサウンド・ブレイカーズ《Amalgamation》1971`（c-59）與 `佐藤允彦《Trinity》1971`（c-121）——**兩張同一年，1969 年的起點與 1972 年之後的整條線都是空的**。子字串「佐藤」另命中 佐藤博《Awakening》、Somei Satoh 佐藤聰明《Litania》、佐藤奈々子《Funny Walkin’》三張（假陽性，逐筆核整個掛名字串後排除）；「Sato」另命中 Frankie Knuckles presents Satoshi Tomiie（假陽性）。 池中他只有 1971 年的兩張，這張把他的目錄一路延到 1979，與《Palladium》1969、《Holography》1970、《Transformation》1971、《マグノリアの木》1977 合起來，剛好是店主要的「重點專輯五張」而不是全目錄。",
+    "risk": "⚠ **盤名含兩個非 ASCII 連字號**：MB RG 題是「All‐in All‐out」，兩個都是 U+2010（HYPHEN），`chk-prop` 會亮「專輯名含非 ASCII 連字號」——**本卡改成 ASCII 連字號「All-in All-out」，MB 原文放進 queryAlias**（c-50 踩過的路線圖反模式，c-121 第 3 條的作法）。撞卡：盤名在池中零命中。掛名：RG 與兩筆 release 的 credit 都是漢字「佐藤允彦」，掛個人實體，不涉編制。年份：MB first-release-date 1979，1979 那筆 release 就是原盤，無第 352 條失真；1991 那筆是 Sony 的 CD 復刻。廠牌／catno 逐筆：1979 是 OPENSKYE 25AP 1010、1991 是 Sony Records SRCL-1978——不得跨筆接（第 262 條）。封面 CAA release-group 端點 200（實測）。Apple 三種查法的觀察：search（jp／us，ASCII 與 U+2010 兩種寫法）都沒命中本張（回的是 Proton Pump、A Path Through Haze、Amalgamation 等別張）；藝人目錄（artistId 19063311 Masahiko Satoh）全列裡只有 Magnolia No Ki 與 Holography 兩筆 1970 年代條目，**沒有這一張**；第三步直查 collectionId 策展層無候選可查——**只寫觀察，不寫結論**（第 254 條）。",
+    "mbNote": "釘 release-group d6cb2113-8a92-4888-b250-db8b302920d5。兩個端點回問確認：title「All‐in All‐out」（**兩個 U+2010**）、artist-credit「佐藤允彦」（個人實體 04bbec22）、first-release-date 1979、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1979 OPENSKYE 25AP 1010 12 吋 6 軌／JP 1991-07-25 Sony Records SRCL-1978 CD 6 軌）。卡面盤名改 ASCII 連字號。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 刻意不釘（合掛，第 258／321 條）：d86aa6bd《Metempsychosis》1971（ツトム・ヤマシタ & 佐藤允彦）、ed5b55e2《Pianology》1971（and Wolfgang Dauner）、6e05fed3《Bridge Over Troubled Water》1971-07-25（與 稲垣次郎 合掛，c-131 第 356 條已列）、02fd9983《Yamataifu》1972（EXPRESS ETJ-65019，credit 是 Toshiyuki Miyama and His New Herd + M. Sato——**這是 宮間利之とニューハード 的碟，歸 c-133**）、7668525c《天秤座の詩》1970（同上，New Herd 合掛）、cae06b2f《Astrorama》1970（Liberty LPC-8039，與 Jean-Luc Ponty 合掛）、3914de7d《三昧》1972（EXPRESS ETJ-9003，與 Gary Peacock 合掛）、03ed1046《デマ Rumour》1973、c2ec1ec4《ふたりのひとりごと》1973（中山千夏＋）、82fb84a8《With Silence》1974（Karl Berger 四人平列）、69f572ef《MSB》1980（+ Medical Sugar Bank）、d4d82b7b《MSB Two》1981、336d6cb7《双晶》1973（**池中已有，掛 富樫雅彦**）。原聲帶不收：a842b6d5《Belladonna》1975、5c1ad16b《夜叉》1985、4434894c／1efc9660《ファイナルファンタジー》1994、69296888／85fb446b《パンダコパンダ》2008。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Masahiko Satoh；All‐in All‐out；佐藤允彦 オール・イン・オール・アウト；All in All out",
+    "reissuedBy": "Sony Records（1991-07-25 SRCL-1978 CD）",
+    "g": "a"
+  },
+  {
+    "artist": "峰厚介",
+    "album": "Out Of Chaos",
+    "year": 1974,
+    "genres": [
+      "jazz"
+    ],
+    "label": "EAST WIND EW-7003（JP 1974 黑膠 3 軌）",
+    "why": "EAST WIND 這條線的第三號盤（EW-7003，第一號是同批收的 菊地雅章《East Wind》EW-7001），1974 年發行，三首長曲一片——是 峰厚介 離開 Three Blind Mice 之後的第一張領銜作。MB 轄下只有這一筆 1974 原盤（Official，3 軌）。實掃 seed_cards.json 全 16,450 列（峰厚介／Kosuke Mine／Kohsuke Mine／Mine 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：`峰厚介クインテット《Mine》`、`峰厚介クインテット《2nd Album》`、`峰厚介《Daguri》`、`峰厚介《First》`——**四張裡三張是 Three Blind Mice（TBM-1《Mine》、TBM-24《Daguri》系）與 Philips 的 1970–73 年，1974 年之後一張都沒有**。⚠ 子字串「Mine」命中 11 張全是假陽性（Eminem ×5、Mineral ×2、The Lumineers、Jazmine Sullivan ×2、The Jasmine Minks），逐筆核整個掛名字串後排除——這是本組假陽性最多的一個掛名。 店主 2026-09-15 明講「三盲鼠已經都有了」，所以本批只收 TBM 以外的；這張是他 East Wind 時期的第一張，正好接在池中既有的 1970–73 那三張後面。",
+    "risk": "撞卡：盤名在池中零命中；⚠ 掛名子字串「Mine」在池中有 11 個假陽性（Eminem、Mineral、Jazmine Sullivan…），實掃一律逐筆核整個掛名字串。掛名：MB 這個 RG 的 credit 寫 **「Kohsuke Mine」**（多一個 h 的羅馬拼法），但掛的是**個人實體 e15df4d0，主名是漢字「峰厚介」**——依第 355 條取實體主名，卡面寫 峰厚介，與池中既有的 `峰厚介《Daguri》《First》` 同一字串；Kohsuke／Kosuke 兩種拼法都進 queryAlias。年份：MB first-release-date 1974，原盤那筆就是 1974；Apple jp 1467950125《アウト・オブ・ケイオス》記 1974-11-05、℗ 1974 Universal Classics & Jazz，**月日只有 Apple 有**，研究層引用要註明來源（第 262 條）。廠牌：release 端點回問到 EAST WIND EW-7003（第 259 條）。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp）與藝人目錄兩種查法都命中 1467950125，3 軌，與 MB 一致；⚠ **Apple jp 把他的掛名寫成「峰 厚介」（姓名之間有半形空格）**，與池中的「峰厚介」不同，下游比對要摺空白（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group 4b3a6049-eee8-443b-bc4f-b5bc527a4573。兩個端點回問確認：title「Out Of Chaos」、artist-credit「Kohsuke Mine」（**個人實體** e15df4d0-9c8a-4c5d-b3e3-33297e118604，主名 峰厚介）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1974 EAST WIND EW-7003 黑膠 3 軌 Official）。藝人實體：個人 峰厚介 e15df4d0-9c8a-4c5d-b3e3-33297e118604（Person／JP，disambiguation「Japanese hard bop musician」，5 個 RG）；Kosuke Mine Quintet b7d5f881-d58b-47a0-aeac-e157937d6103（Group／JP，5 個 RG，池中 `峰厚介クインテット` 兩張即出自此）；Kosuke Mine Quartet cd767b70-a2a7-4499-abc6-d5bafa4e1880（2 個 RG）。⚠ `artist:\"峰厚介\"` 用 `artist:` 前綴查回 0 筆、**去掉前綴直接查關鍵字才回得到**（count 1098，本人 score 100 排第一）——第 309 條的又一種形狀：不是文字系統的問題，是 Lucene 欄位查詢對這個短漢字名失效。 刻意不釘（池中已有）：df8e1dcd《First》1970（Philips FX-8508）、04dfc616《Mine》1970（three blind mice TBM-1）、28ad566f《Daguri》1973、a701e11c《2nd Album》。刻意不釘（Three Blind Mice ＋ 合掛雙重理由）：27679254-437e-456d-8c38-cffee610acfe《Yellow Carcass in the Blue》1971（**TBM-8**，credit 是 笠井紀美子 + Kosuke Mine Quartet 兩人平列，CAA 200；⚠ 笠井紀美子 是 c-134 b 組的掛名，若那批要收，應由那邊處理）。刻意不釘（CAA 404）：94001ced《Plays Standard》（無日期、無廠牌）、ac01bece《In a Maze》1995（Verve POCJ-1280）。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Kohsuke Mine；Kosuke Mine；峰 厚介；アウト・オブ・ケイオス；峰厚介 アウト・オブ・ケイオス",
+    "reissuedBy": "Universal Classics & Jazz 數位（Apple jp 1467950125）",
+    "g": "a"
+  },
+  {
+    "artist": "峰厚介",
+    "album": "Sunshower",
+    "year": 1976,
+    "genres": [
+      "jazz"
+    ],
+    "label": "EAST WIND EW-8038（JP 1976 12 吋黑膠 4 軌）；JP 2002-10-23 EAST WIND UCCJ-9027 CD 4 軌",
+    "why": "EAST WIND 時期的第二張，1976 年以 EW-8038 發行，2002 年 Universal 又以 UCCJ-9027 復刻——與同批 菊地雅章《Wishes/Kochi》（EW 8043）只差五個編號，是 EAST WIND 1976 年那一批日本爵士的同期作。MB 轄下兩筆 release 都 Official，軌數都是 4。實掃 seed_cards.json 全 16,450 列（峰厚介／Kosuke Mine／Kohsuke Mine／Mine 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：`峰厚介クインテット《Mine》`、`峰厚介クインテット《2nd Album》`、`峰厚介《Daguri》`、`峰厚介《First》`——**四張裡三張是 Three Blind Mice（TBM-1《Mine》、TBM-24《Daguri》系）與 Philips 的 1970–73 年，1974 年之後一張都沒有**。⚠ 子字串「Mine」命中 11 張全是假陽性（Eminem ×5、Mineral ×2、The Lumineers、Jazmine Sullivan ×2、The Jasmine Minks），逐筆核整個掛名字串後排除——這是本組假陽性最多的一個掛名。 這張與《Out Of Chaos》1974 一起，把他 Three Blind Mice 之後、East Wind 那幾年補齊，也把池中的 峰厚介 從 1973 延到 1976。",
+    "risk": "撞卡：盤名在池中零命中；⚠ 盤名是單字且與 山下達郎 1977 年名作《SUNSHOWER》（日文圈知名度更高）同名——**池中若日後收進那張會是同盤名不同掛名，`risk` 要互指**；實掃當下池中「Sunshower」零命中。掛名：RG 與兩筆 release 的 credit 都是漢字「峰厚介」，與實體主名一致，不涉編制掛名；池中既有的 `峰厚介クインテット` 是另一個 MB 實體（b7d5f881）的碟，不折疊（簡報第六節第 1 點：同一位不得因編制寫法不同被收兩次——本卡與池中那兩張是不同的碟）。年份：MB first-release-date 1976，原盤那筆就是 1976；Apple jp 1467957054《サンシャワー》記 1976-01-01（**01-01 是佔位，不得引用**）、℗ 1976 Universal Classics & Jazz。廠牌／catno 逐筆：1976 EAST WIND EW-8038、2002 EAST WIND UCCJ-9027（第 262 條）。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp）與藝人目錄都命中 1467957054，4 軌，與 MB 一致；us 店面 search 0 筆（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group 49501583-e2c1-489b-b92a-04ec46a330ec。兩個端點回問確認：title「Sunshower」、artist-credit「峰厚介」（個人實體 e15df4d0）、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1976 EAST WIND EW-8038 12 吋 4 軌／JP 2002-10-23 EAST WIND UCCJ-9027 CD 4 軌）。藝人實體：個人 峰厚介 e15df4d0-9c8a-4c5d-b3e3-33297e118604（Person／JP，disambiguation「Japanese hard bop musician」，5 個 RG）；Kosuke Mine Quintet b7d5f881-d58b-47a0-aeac-e157937d6103（Group／JP，5 個 RG，池中 `峰厚介クインテット` 兩張即出自此）；Kosuke Mine Quartet cd767b70-a2a7-4499-abc6-d5bafa4e1880（2 個 RG）。⚠ `artist:\"峰厚介\"` 用 `artist:` 前綴查回 0 筆、**去掉前綴直接查關鍵字才回得到**（count 1098，本人 score 100 排第一）——第 309 條的又一種形狀：不是文字系統的問題，是 Lucene 欄位查詢對這個短漢字名失效。 ⚠ **Apple jp 的藝人目錄裡另有「峰 厚介《ソリッド》4 軌 ℗ 1976 Universal Classics & Jazz」**（同一批 East Wind 復刻），而 MB 把《Solid》建成 182e7c8c-90be-4e8e-af67-b34402130f7b、掛 Kosuke Mine Quartet、first-release-date **2015-02-04**（EAST WIND UCCJ-9161）、secondary-types Live——**MB 的年份是復刻年、Apple 的 ℗ 指向 1976**，這張形狀與第 352 條相同但原盤資訊尚未核實，本批不收，已列進 rulings 的未收清單。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Kosuke Mine；Kohsuke Mine；峰 厚介；サンシャワー；峰厚介 サンシャワー",
+    "reissuedBy": "EAST WIND／Universal Music（2002-10-23 UCCJ-9027 CD）；Universal Classics & Jazz 數位（Apple jp 1467957054）",
+    "g": "a"
+  },
+  {
+    "artist": "峰厚介",
+    "album": "Bamboo Grove",
+    "year": 2019,
+    "genres": [
+      "jazz"
+    ],
+    "label": "Days of Delight（XW 2019-01-23 數位 7 軌；MB 的 release 未登記 catalog-number）",
+    "why": "峰厚介 七十多歲時為 Days of Delight 錄的領銜作——那是 2019 年成立、專門做日本爵士新錄音與復刻的廠牌，開張那一批就找他。MB 轄下只有這一筆 2019-01-23 的全球數位 release（Official，7 軌），Apple jp 的官方條目 1578429139 同日、℗ 2019 Days of Delight、同樣 7 軌，兩邊完全對得上。實掃 seed_cards.json 全 16,450 列（峰厚介／Kosuke Mine／Kohsuke Mine／Mine 四種寫法子字串雙向比對、逐筆核整個掛名字串），池中他名下四張：`峰厚介クインテット《Mine》`、`峰厚介クインテット《2nd Album》`、`峰厚介《Daguri》`、`峰厚介《First》`——**四張裡三張是 Three Blind Mice（TBM-1《Mine》、TBM-24《Daguri》系）與 Philips 的 1970–73 年，1974 年之後一張都沒有**。⚠ 子字串「Mine」命中 11 張全是假陽性（Eminem ×5、Mineral ×2、The Lumineers、Jazmine Sullivan ×2、The Jasmine Minks），逐筆核整個掛名字串後排除——這是本組假陽性最多的一個掛名。 池中他最晚的一張是 1973 年，這張把他的目錄從 1970 年代一路拉到當代，也是本組唯一一張 1980 年後的碟——與《Out Of Chaos》1974、《Sunshower》1976 合起來是「TBM 以外的三張」。",
+    "risk": "⚠ **這張是本組最晚的一張，收它的理由要講清楚**：簡報要的是「重點專輯 5–10 張」而不是全目錄，而 峰厚介 在 MB 上只有 5 個 RG、扣掉池中已有的《First》與 CAA 404 的《Plays Standard》，**TBM 以外、CAA 200、非合掛的碟只剩三張**（Out Of Chaos、Sunshower、本張）——**名額不是硬湊，是剛好只有三張**（簡報「湊不滿名額不要硬湊」的反面：這次剛好等於名額）。⚠ 只有數位 release：MB 這筆是 XW 數位、**沒有 catalog-number**，`label` 欄只寫廠牌名並註明；實體盤（Days of Delight 有出黑膠與 CD）MB 未建檔，catno 留研究層補（第 262 條，不得自己接）。撞卡：盤名在池中零命中。掛名：RG 的 credit 寫「Kosuke Mine」、掛個人實體 e15df4d0（主名 峰厚介），依第 355 條取實體主名。年份：MB 2019-01-23，Apple 同日、℗ 2019，一致，不走第 352 條。封面 CAA release-group 端點 200（實測）。Apple 三種查法：search（jp）與藝人目錄都命中 1578429139，7 軌，與 MB 一致；us 店面 search 回的是 Miyuki Moriya 的客串單曲與 Kosuke Mine《Bamboo Grove》——us 那筆亦在（觀察，非結論，第 254 條）。",
+    "mbNote": "釘 release-group 4882a997-97de-45c5-bd88-0a32aec5501e。兩個端點回問確認：title「Bamboo Grove」、artist-credit「Kosuke Mine」（個人實體 e15df4d0，主名 峰厚介）、first-release-date 2019-01-23、primary-type Album、secondary-types 空、轄下 1 個 release（XW 2019-01-23 Days of Delight 數位 7 軌 Official，**label-info 有廠牌但沒有 catalog-number**，用 release 端點回問確認，不是第 259 條那種問錯端點）。藝人實體：個人 峰厚介 e15df4d0-9c8a-4c5d-b3e3-33297e118604（Person／JP，disambiguation「Japanese hard bop musician」，5 個 RG）；Kosuke Mine Quintet b7d5f881-d58b-47a0-aeac-e157937d6103（Group／JP，5 個 RG，池中 `峰厚介クインテット` 兩張即出自此）；Kosuke Mine Quartet cd767b70-a2a7-4499-abc6-d5bafa4e1880（2 個 RG）。⚠ `artist:\"峰厚介\"` 用 `artist:` 前綴查回 0 筆、**去掉前綴直接查關鍵字才回得到**（count 1098，本人 score 100 排第一）——第 309 條的又一種形狀：不是文字系統的問題，是 Lucene 欄位查詢對這個短漢字名失效。 個人實體名下 5 個 RG 的處置：df8e1dcd《First》1970（池中已有）、4b3a6049《Out Of Chaos》1974（本批收）、49501583《Sunshower》1976（本批收）、94001ced《Plays Standard》（無日期、無廠牌、CAA 404，未收）、本張。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Kosuke Mine；Kohsuke Mine；峰 厚介；バンブー・グローヴ；峰厚介 Bamboo Grove",
+    "reissuedBy": "",
+    "g": "a"
+  }
+]

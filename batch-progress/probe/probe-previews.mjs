@@ -139,7 +139,32 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   // 伊比利走 es／pt 優先。
   c123: ['ee', 'lv', 'lt', 'ru', 'de', 'fi', 'us', 'gb'],
   c124: ['us', 'gb', 'de', 'fr', 'nl', 'tr', 'ae', 'ca'],
-  c125: ['es', 'pt', 'fr', 'gb', 'us', 'de', 'br', 'mx'] };
+  c125: ['es', 'pt', 'fr', 'gb', 'us', 'de', 'br', 'mx'],
+  // c-126：台灣獨立 2010 後，tw 優先，再走華語圈其他店面與美日。
+  c126: TWN,
+  c127: TWN,
+  c128: TWN,
+  // c-129 東南亞：th／id／my／sg 優先，再退回 us／gb（再發廠牌多在西方）。
+  c129: ['th', 'id', 'my', 'sg', 'jp', 'us', 'gb', 'fr'],
+  // c-130 波蘭：pl 優先，再走中東歐與德法。
+  c130: ['pl', 'de', 'cz', 'sk', 'hu', 'gb', 'us', 'fr'],
+  // c-131 爵士深度：日本盤 jp 優先，再走美英歐。
+  c131: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c132: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c133: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c134: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c135: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c136: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c137: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c138: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c139: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c140: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c141: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c142: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c143: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c144: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c145: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c146: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'] };
 
 const cards = [];
 for (const b of BATCHES)

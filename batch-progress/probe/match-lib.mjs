@@ -44,10 +44,25 @@ const VA = new Set(['variousartists', 'variosartistas', 'variosartistes', 'artis
   'verschiedenekunstler', 'verschiedeneinterpreten', 'diversartistes', 'diversosartistas',
   'オムニバス', 'ヴァリアスアーティスツ', '群星', '여러아티스트', 'multipleartistes']);
 const isVA = s => VA.has(norm(s)) || VA.has(String(s || '').replace(/\s+/g, ''));
+// 2026-09-15（c-129 印尼批，研究層抓到）：**短掛名的子字串包含是假陽性製造機**。
+// `AKA`《Reflection》被配到 `Nordton a.k.a Nomad`——摺疊後 `aka` 落在 `nordtonakanomad`
+// 裡面，`b.includes(a)` 成立，探測層給了 `status: ready`（yearDrift 46 也沒擋住）。
+// 這與第 179／250 條「短掛名回問、score 不採」是同一個家族：**短的那一邊要求整詞出現**。
+const normSp = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 export const artistOk = (want, got) => {
   if (isVA(want) && isVA(got)) return true;             // 群星對群星，不同語言也算同一個
   const a = norm(want), b = norm(got);
-  return a === b || a.includes(b) || b.includes(a);
+  if (a === b) return true;
+  if (!(a.includes(b) || b.includes(a))) return false;
+  const wantShorter = a.length <= b.length;
+  const short = wantShorter ? a : b;
+  // 只對「短且是拉丁字母」的掛名加嚴：CJK 與泰文／緬文沒有詞界空白，
+  // 整詞規則會把 `秋吉敏子` vs `秋吉敏子トリオ` 這種正解擋掉。
+  if (short.length > 6 || !/^[a-z0-9]+$/.test(short)) return true;
+  const shortSp = normSp(wantShorter ? want : got);
+  const longSp = normSp(wantShorter ? got : want);
+  const esc = shortSp.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(^| )${esc}( |$)`).test(longSp);
 };
 
 // 非拉丁文字的搜尋回退（2026-09-02，c-62 希臘批發現）。

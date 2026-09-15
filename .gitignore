@@ -18,3 +18,7 @@ cover-audit-sheet-*.html
 # 跑到一半的版本進版控只會製造沒有意義的 diff；跑完的結論寫進 handoff。
 batch-progress/*/verify-mbid-out.json
 data/rawgenres-cache.json
+
+# 代理的臨時工作目錄（第 306 條要求各組分目錄）。派工詞寫 scratchpad/<批><組>/ 時
+# 代理會解讀成 repo 相對路徑，這裡永遠不該進版控。
+scratchpad/

@@ -1,0 +1,8 @@
+{
+  "_note": "跨批去重已知的重複（裁定 310）。這三筆池中各只有一張——本機上架時的「池中已有」檢查擋下了後到的那份，但兩份卡單都還在。列在這裡讓 dedup-crossbatch 不再每批都紅；本機把卡單裡後到的那份標記為已收走之後，就從這裡刪掉。",
+  "known": [
+    { "artist": "沈文程", "album": "心事誰人知", "batches": ["c49b", "c106"] },
+    { "artist": "羅文", "album": "小李飛刀", "batches": ["c49b", "c106"] },
+    { "artist": "Sơn Ca", "album": "Băng nhạc Sơn Ca 8 (Tiếng hát Sơn Ca)", "batches": ["cseab", "c64"] }
+  ]
+}

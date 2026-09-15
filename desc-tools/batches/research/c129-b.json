@@ -1,0 +1,922 @@
+[
+ {
+  "key": "desc2:Benyamin S. & Rossy|Indehoi",
+  "artist": "Benyamin S. & Rossy",
+  "album": "Indehoi",
+  "facts": [
+   {
+    "f": "release-group 23fe93e1 的欄位：title「Indehoi」、first-release-date 1968、primary-type Album、secondary-types 空、artist-credit 字串「Benjamin S & Rossy」（兩個實體：Benyamin Sueb 33ae9e5e，Person、Indonesia、1939-03-05 生、1995-09-05 歿，disambiguation 明寫 a.k.a. Benyamin S.；Rossy 243a0871，Person、Indonesia）。轄下**只有一筆 release** 3f3e7b21：1968 ID Official、**10 吋黑膠 8 軌**、label-info 記 Mesra／MP-42、無 barcode、語言欄 ind。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=23fe93e1-11e4-4028-acef-7604541c5da9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八軌逐軌帶軌級掛名：1〈Si Neneng〉3:09（Benjamin S.）2〈Taisennje〉2:17（Benjamin S.）3〈Daag Saj〉2:17（Benjamin S. & Si Gogo）4〈Ngundang〉2:58（Benjamin S.）5〈Masih Untung〉3:10（Rossy）6〈Njai Dasime〉2:04（Rossy）7〈Ade Deh〉2:30（Si Gogo）8〈Apa Boleh Buat〉2:12（Benjamin S.）。**盤面掛兩個人，實際是三個聲音**：Benyamin 四軌獨唱加一軌合唱、Rossy 兩軌、Si Gogo 一軌獨唱加一軌合唱。八軌全部在 2 到 3 分多鐘之間，全碟不到 21 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release/3f3e7b21-31c8-4188-8612-f898b27fd486?fmt=json&inc=media+recordings+artist-credits"
+   },
+   {
+    "f": "藝人端點：Benyamin Sueb 名下 10 個 release-group，**只有《Indehoi》一張帶 1960 年代的日期**，其餘有日期的全部落在 1990 年之後（1990-12-01《Mas Roni》《Selection Pop Dangdut》、1991-04-01《20 Super Pop Dangdut Terlaris》、1995-10-04《Tung Ali Onde Jande Mude》，再來是 2002／2004／2022 的三張 Compilation），另有《Biographie》《Tukang Solder》兩張沒有日期。實體登記的別名有 Benyamin S、Benyamin S.、Bunjamin S. 三種。",
+    "src": "https://musicbrainz.org/ws/2/artist/33ae9e5e-e94e-462b-b047-68f7d9ac0cb6?fmt=json&inc=aliases+release-groups&limit=100"
+   },
+   {
+    "f": "印尼文維基的作品表把這張列為 1968 年與 Rossy 合唱的《Indehoy》，並寫他在音樂上的成功「diawali dengan bergabungnya Benyamin dengan satu grup Naga Mustika」（從加入 gambang kromong 樂團 Naga Mustika 開始）。英文維基另記他 1950 年代加入 Melody Boys、該團 1963 年改名 Melodi Ria，原創曲目裡就有〈Si Neneng〉——本碟第 1 軌。",
+    "src": "https://id.wikipedia.org/wiki/Benyamin_Sueb"
+   },
+   {
+    "f": "荷蘭的印尼唱片目錄站 musictime 把這張登記為 Mesra MP-42，演出者列 Benyamin Sueb、Rossy、Si Gogo 與伴奏樂團 Melodi Ria，同一目錄把同年的 Mesra 編號記到 LP-17、MP-57、MP-58（《Oom Senang》《Rapi Djali》）——**MP-42 落在 Mesra 1968 到 1969 年這一段編號區間內**。",
+    "src": "https://www.musictime.nl/artist/benyamin"
+   }
+  ],
+  "hookCandidates": [
+   "盤面掛兩個名字，八軌裡其實是三個聲音——Si Gogo 唱了兩軌卻沒上封面",
+   "同一個人、同一個 MBID，在資料庫的三張碟上被拼成 Benjamin S、Bunjamin S.、Benyamin S. 三種"
+  ],
+  "sound": "10 吋黑膠、8 軌、全碟不到 21 分鐘，每軌 2 到 3 分多鐘。雅加達 Betawi 語的 gambang kromong 流行曲，伴奏樂團登記為 Melodi Ria。〈Si Neneng〉開場，〈Njai Dasime〉〈Masih Untung〉兩軌是 Rossy 的獨唱，〈Ade Deh〉由 Si Gogo 獨唱，〈Apa Boleh Buat〉收尾。",
+  "keyTracks": [
+   "Si Neneng",
+   "Ngundang",
+   "Njai Dasime"
+  ],
+  "status": "partial",
+  "yearVerified": {
+   "year": 1968,
+   "recorded": null,
+   "note": "release-group first-release-date 1968，唯一 release 也是 1968 ID；印尼文維基作品表同記 1968。⚠ musictime 目錄把這張排在 1969 年那一段——單一來源、與資料庫端及維基相左，不採；正文寫 1968。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、廠牌 Mesra／MP-42、10 吋 8 軌、掛名三拼法、CAA 404 全部屬實，未擋下任何一處。** 裁定 341 取「Benyamin S. & Rossy」站得住：實體 aliases 欄實查就是 Benyamin S／Benyamin S.／Bunjamin S. 三筆，disambiguation 明寫 a.k.a. Benyamin S.。｜**第三種查法（裁定 254）跑完：無來源。** `id`／`th`／`us`／`sg`／`my`／`gb` 六店以 Benyamin Indehoi／Benjamin S Indehoi／Benyamin Sueb 等四組詞 search 皆無此碟；藝人目錄 286016552（Benyamin S.）與 1498612114（Benyamin Sueb）兩份都沒有；song 級 search 只撈到 **2023 年的精選輯《Lagu Lagu Terbaik》（collectionId 1707193249）**裡有〈Si Neneng〉與〈Ngundang〉——**那是精選輯不是本碟，不採信**。回撈報告也記「目錄裡找不到」。**這張沒有試聽來源。**｜**封面待補**：唯一那筆 release 的 cover-art-archive 欄 artwork false、count 0，CAA release-group 404 是真的沒圖、不是探測失敗；Apple 端沒有本碟的條目可借圖；musictime 目錄頁有掃圖縮圖（只寫觀察）。｜**性質**：原創錄音室專輯，不是選輯、不是重發；資料庫端只有 1968 年 10 吋這一種形態，無再發。｜**人名邊界（裁定 241／250）**：Rossy 與 Si Gogo 是 release 軌級 artist-credit 登記的名字，可寫；Rossy 的 MB 實體 disambiguation 只寫「Indonesian artist」、無本名無生卒，**不得補寫她的本名或生平**。Melodi Ria 這個伴奏樂團名只有 musictime 一個目錄站支撐，英文維基只講到 1963 年改名這一步，**寫成「伴奏樂團登記為」即可，不要寫成確定的錄音編制**。｜**盤名**：MB RG title 是「Indehoi」，印尼文維基寫「Indehoy」，兩種都進 queryAlias（策展層已填）。｜**軌數只有一種形態**（10 吋 8 軌），無版本選擇問題。｜**政治中立**：本張 1968 年是新秩序初期的雅加達本地盤，資料裡沒有任何審查或查禁記錄，**正文不要替它鋪任何體制背景**；能寫的只有發行事實。｜**主線的說法「gambang kromong 這一塊池中一張也沒有」屬策展層的池中實掃，本層未複驗池，不評。**"
+ },
+ {
+  "key": "desc2:Titiek Puspa|Sok Teu",
+  "artist": "Titiek Puspa",
+  "album": "Sok Teu",
+  "facts": [
+   {
+    "f": "release-group f2b0a715 的欄位：title「Sok Teu」、first-release-date 1970、primary-type Album、secondary-types 空、artist-credit「Titiek Puspa」。轄下**只有一筆 release** 402c49c7：1970 ID Official、**10 吋黑膠 8 軌**、label-info 記 J&B Records／JBL. 28837、無 barcode。八軌逐軌：1〈Sok Teu〉1:52、2〈Hilang〉2:24、3〈Si Djangkung〉2:25、4〈Menanti〉3:22、5〈Helo Kasih (Bersama Robby Amin)〉2:22、6〈Si Djali〉2:06、7〈Pergi Pergi Pergi〉2:27、8〈Mohon Diri〉3:24——**開場曲不到兩分鐘，全碟 20 分 22 秒**，第 5 軌的曲名裡就標了與 Robby Amin 合唱。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f2b0a715-25ed-43ca-952d-1b6143f6afcc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：Titiek Puspa（Person、Indonesia、1937-11-01 生、2025-04-10 歿）名下 8 個 release-group：1964《Doa Ibu》、1969《Senyum》（EP）、**1970《Sok Teu》**，然後一路跳到 1986《Tinggal Bilang Yang》——**資料庫端她 1970 到 1986 年之間是空白的**，《Sok Teu》是登錄上 1960 年代那一段最後一張長篇。",
+    "src": "https://musicbrainz.org/ws/2/artist/a1ad0276-aa91-4749-9fa5-2ba2952c4ee9?fmt=json&inc=aliases+release-groups&limit=100"
+   },
+   {
+    "f": "印尼文維基：本名 Sudarwati，1937 年 11 月 1 日生於婆羅洲的 Tanjung（Tabalong），十四歲左右在歌唱比賽勝出後取藝名 Titiek Puspa；1954 年在 RRI 的 Semarang「Bintang Radio」比賽出道；早期由她自己的樂團 **Puspa Sari** 伴奏；1960 年代初起改唱自己寫的歌，1963 年的《Si Hitam》與《Pita》「masing-masing berisi 12 lagu, semuanya adalah karyanya sendiri」。2025 年 4 月 10 日因腦出血辭世。",
+    "src": "https://id.wikipedia.org/wiki/Titiek_Puspa"
+   },
+   {
+    "f": "荷蘭的印尼唱片目錄站 musictime 把《Sok Teu》登記為「Titiek Puspa／Puspa Sari」、J&B JBL-28837，同一頁列出她同期在 Remaco（RL-059《Mini》、RL-075《Taruna Djatuh Tjinta》）、Irama（《Aneka Gaja》《Pita》）、Mesra（MP-34《Si Kumbang》）三家廠牌的碟——**《Sok Teu》是她這一段裡唯一一張掛在 J&B 這家小廠牌名下的**。",
+    "src": "https://www.musictime.nl/indonesia/titiek_puspa"
+   }
+  ],
+  "hookCandidates": [
+   "資料庫端她 1970 到 1986 年之間一片空白——這張是那段空白之前最後一張長篇",
+   "開場曲不到兩分鐘，八軌全碟 20 分鐘出頭，第 5 軌把合唱者的名字直接寫進曲名"
+  ],
+  "sound": "10 吋黑膠、8 軌、全碟 20 分 22 秒，最短的〈Sok Teu〉1 分 52 秒開場、最長的〈Mohon Diri〉3 分 24 秒收尾。她自己的樂團 Puspa Sari 伴奏的 1970 年印尼流行曲，〈Helo Kasih〉是與 Robby Amin 的對唱，〈Si Djangkung〉〈Si Djali〉兩軌是以人物綽號為題的小曲。",
+  "keyTracks": [
+   "Sok Teu",
+   "Helo Kasih (Bersama Robby Amin)",
+   "Mohon Diri"
+  ],
+  "status": "partial",
+  "yearVerified": {
+   "year": 1970,
+   "recorded": null,
+   "note": "release-group first-release-date 1970 ＝ 唯一 release 的 date，musictime 目錄與 Discogs 條目標題同記 1970。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、J&B Records／JBL. 28837、10 吋 8 軌、CAA 200、掛名與池中《Doa Ibu》一字不差——全部屬實，未擋下任何一處。**｜**第三種查法（裁定 254）跑完：無來源。** 六店 search（Titiek Puspa Sok Teu／Titiek Puspa／Sok Tahu Titiek）皆無此碟；藝人目錄 284032150 無；song 級 search 撈到 **2024 年的 26 軌精選輯《Seleksi Emas》（collectionId 1726571821）**裡有〈Sok Teu〉〈Si Djangkung〉〈Mohon Diri〉〈Pergi Pergi Pergi〉四軌——**精選輯不是本碟，不採信**。回撈報告給的候選 1732996008 是 1970 年標的〈Kupu Kupu Malam〉單曲、1 軌，與本碟無關。**這張沒有試聽來源。**｜**封面**：唯一 release 的 cover-art-archive front true（count 1），CAA 200 屬實。｜**性質**：原創錄音室專輯；資料庫端只有 1970 年 10 吋一種形態，軌數只有 8 這一種。｜**人名邊界**：Robby Amin 是 release 曲名裡登記的合唱者，可寫；Puspa Sari 是她自己的樂團（印尼文維基與 musictime 兩處一致），可寫；**編曲、樂手不得補寫**（無來源）。｜**盤名意思**：策展層 queryAlias 填了「Sok Tahu」（雅加達口語「裝懂」的舊拼法），本層查無來源證實盤名就是這個意思，**正文不要解釋盤名**。｜**反向禁令**：2025 年辭世是與作品無關的後續生平事件，**正文不寫**；facts 裡那句只供背景。｜**政治中立**：資料裡沒有任何審查或查禁記錄，正文只寫發行事實。"
+ },
+ {
+  "key": "desc2:AKA|Reflection",
+  "artist": "AKA",
+  "album": "Reflection",
+  "facts": [
+   {
+    "f": "release-group 04f56d24 的欄位：title「Reflection」（單數）、first-release-date 1971、primary-type Album、secondary-types 空、artist-credit「AKA」（實體 d991e1c6，Group、Indonesia、disambiguation「Indonesian funk band」、alias「Group AKA」）。轄下兩筆 release：**b3de76f2 是 1971 ID Official、12 吋黑膠 9 軌、Indra／AKL - 029**；c472f3b8 是 2014-11-25 XW Official 數位版（Granadilla Music）同 9 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1971 年原盤九軌逐軌：1〈Reflection〉4:26、2〈Jeritan Seniman〉2:56、3〈Mendaki Gunung〉2:26、4〈Cahaya Tuhan〉3:18、5〈Akhir Kesucian Gadis〉4:48、6〈Only One Man〉**8:22**、7〈Jatuh Cinta〉2:30、8〈Mira〉3:10、9〈Penjaga Padi〉2:42。九軌裡**兩軌英文曲名、七軌印尼文**；〈Only One Man〉一軌就佔全碟 34 分 38 秒的近四分之一。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點：AKA 名下只有 4 個 release-group——1970《Do What You Like》、**1971《Reflection》**、1972《Crazy Joe》、2011-06-24《Hard Beat》。《Reflection》是三張 1970 年代連續出版裡的第二張。",
+    "src": "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100"
+   },
+   {
+    "f": "印尼文維基：AKA 1967 年 5 月 23 日成立於泗水（Surabaya），「Nama AKA merupakan singkatan dari Apotik Kaliasin, apotek milik orang tua Ucok Harahap」——團名是 Ucok Harahap 父母開的 Kaliasin 藥局的縮寫，藥局就是排練場。首張《Do What You Like》1970 年由 Indra Records 出版；1975 年前後 Ucok 另組 Ucok and His Gangs，其餘三人於 1975 年底組成 SAS。",
+    "src": "https://id.wikipedia.org/wiki/AKA_(grup_musik)"
+   },
+   {
+    "f": "印尼樂迷站 iMusik 的 AKA 條目把《Reflection》記為 1971 年 Indra 出版、兩面混搭搖滾與印尼語曲目，並把首張的聲音描述為借自 1960 年代末英美樂團的 fuzz-rock、hard rock 加迷幻與 funk-rock 元素。",
+    "src": "https://shardianto.wordpress.com/2020/07/05/aka/"
+   }
+  ],
+  "hookCandidates": [
+   "團名是一間藥局的縮寫——Ucok Harahap 父母開的 Kaliasin 藥局，也是他們的排練場",
+   "九軌裡〈Only One Man〉一軌 8 分 22 秒，佔了全碟近四分之一"
+  ],
+  "sound": "12 吋黑膠、9 軌、34 分 38 秒。〈Reflection〉4 分半開場，中段〈Akhir Kesucian Gadis〉4 分 48 秒，第 6 軌〈Only One Man〉拉到 8 分 22 秒是全碟的重心，之後〈Jatuh Cinta〉〈Mira〉〈Penjaga Padi〉三軌各 2 到 3 分鐘收尾。泗水四人團的印尼語硬搖滾，鍵盤與主唱是 Ucok Harahap。",
+  "keyTracks": [
+   "Reflection",
+   "Only One Man",
+   "Jeritan Seniman"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1971,
+   "recorded": null,
+   "note": "release-group first-release-date 1971 ＝ 原盤 release 的 date，印尼文維基與 iMusik 同記 1971；2014-11-25 是 Granadilla Music 的數位再發年，不進 year。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、Indra／AKL - 029、12 吋 9 軌、2014 數位再發、盤名單數、CAA 200、身分四項交叉（Group／Indonesia／Indonesian funk band）全部屬實，未擋下任何一處。**｜**第三種查法（裁定 254）跑完：無來源。** 六店 search（AKA Reflection Ucok／AKA Indonesia Reflection／Ucok Harahap AKA／AKA Reflection 1971）與 song 級 search（Jeritan Seniman AKA／AKA Only One Man）皆無此碟；店端唯一對得上這位的實體是 Ucok \"A.K.A\" Harahap（artistId 389866122），目錄只有 1978 年的《Duo Kribo》原聲帶。**主線探測把這張列在「有試聽」那一側（缺的 12 張裡沒有它），本層三種查法都找不到對得上的 collectionId——請主線回頭核探測層採的是哪個 id；若是南非饒舌歌手 AKA 的條目，那是撞名。這張以本層結論為準：沒有試聽來源。**｜**封面**：1971 原盤的 cover-art-archive artwork false，**CAA release-group 200 靠的是 2014 數位版那一筆的封面**（front true）——正文引封面時知道那是再發版的圖即可。｜**軌數**：兩版都是 9 軌，數位版逐軌短 2 到 6 秒（4:23／2:55／2:24／3:15／4:42／8:19／2:27／3:08／2:36），正文引長度以 1971 原盤為準。iMusik 把本碟寫成「八首」，**與資料庫端兩筆 release 的 9 軌不合，以資料庫端為準**。｜**人名邊界（裁定 241／250）**：Ucok Harahap（主唱／鍵盤）由印尼文維基與 iMusik 兩處一致，可寫；**貝斯手兩處對不上**（維基寫 Peter Wass、iMusik 寫 Lexy Rumagit），鼓手也有 Zainal Abidin→Syech Abidin 的更替——**正文不要列全編制，最多寫「Ucok Harahap 領軍的泗水四人團」**。｜**性質**：原創錄音室專輯。｜**政治中立**：資料裡沒有查禁記錄，正文只寫發行事實；曲名〈Cahaya Tuhan〉是宗教題材曲名，照抄曲名即可、不評。｜曲名〈Do What You Like〉在 Rolling Stone Indonesia 2009 年 150 首名單排第 125，**那是首張的歌、不是本碟**，不得寫進本卡。"
+ },
+ {
+  "key": "desc2:AKA|Crazy Joe",
+  "artist": "AKA",
+  "album": "Crazy Joe",
+  "facts": [
+   {
+    "f": "release-group 7fc685d9 的欄位：title「Crazy Joe」、first-release-date 1972、primary-type Album、secondary-types 空、artist-credit「AKA」（同一實體 d991e1c6）。轄下兩筆 release：**20e60399 是 1972 ID、12 吋黑膠 9 軌、Indra／AKL-047，status 欄空**；3b5135b6 是 2015-04-10 XE Official CD、Granadilla Music／GM 208C3、barcode 5291103811180、同 9 軌。九軌曲序：〈Crazy Joe〉〈Kenangan Beku〉〈Senyum〉〈Batu Nisan〉〈Maafkanlah〉〈Skip Away〉〈Kurban Cinta〉〈Raja Jalan〉〈Bidadari〉——**兩版都沒有登錄軌長**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7fc685d9-6364-442e-a33e-d74ab8aa859e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "藝人端點：AKA 名下 4 個 release-group 依年序是 1970《Do What You Like》、1971《Reflection》、**1972《Crazy Joe》**、2011《Hard Beat》——本碟是 1970 年代三張連續出版的最後一張，原盤編號 AKL-047 接在《Reflection》的 AKL - 029 之後。",
+    "src": "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100"
+   },
+   {
+    "f": "印尼文維基記 AKA 以舞台特技出名：1973 年在雅加達的一場演出裡「Ucok melompat ke tembok dan naik ke genteng…tubuhnya digantung…dimasukkan ke peti mati」——主唱跳上牆、爬上屋瓦、被吊起、被放進棺材。iMusik 的條目把這段特技寫成是在演〈Crazy Joe〉這首歌時做的。",
+    "src": "https://id.wikipedia.org/wiki/AKA_(grup_musik)"
+   },
+   {
+    "f": "iMusik 把《Crazy Joe》記為 1972 年 Indra 出版、編制與前兩張相同，並把 1973 年雅加達那場含棺材、刀劍與吊掛的演出綁在〈Crazy Joe〉這首歌上；同一條目記樂團 1967 年 5 月成立於泗水、團名來自 Ucok Harahap 家的 Kaliasin 藥局。",
+    "src": "https://shardianto.wordpress.com/2020/07/05/aka/"
+   }
+  ],
+  "hookCandidates": [
+   "1973 年雅加達的演出裡，主唱在唱這首標題曲時被吊起來、再放進棺材",
+   "九軌兩個英文曲名、七個印尼文曲名，原盤編號 AKL-047 接在前一張的 029 之後"
+  ],
+  "sound": "12 吋黑膠、9 軌，資料庫端兩版都沒有登錄軌長。〈Crazy Joe〉開場、〈Skip Away〉是另一首英文曲名，中間〈Kenangan Beku〉〈Batu Nisan〉〈Maafkanlah〉〈Kurban Cinta〉四軌是印尼語曲名，〈Bidadari〉收尾。泗水四人團 1972 年的硬搖滾，鍵盤與主唱是 Ucok Harahap。",
+  "keyTracks": [
+   "Crazy Joe",
+   "Skip Away",
+   "Batu Nisan"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1972,
+   "recorded": null,
+   "note": "release-group first-release-date 1972 ＝ 原盤 release 的 date，印尼文維基與 iMusik 同記 1972；2015-04-10 是 Granadilla Music 的 CD 再發年，不進 year。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、Indra／AKL-047、原盤 status 欄空、2015 XE CD 再發（GM 208C3、barcode 5291103811180）、CAA 200、身分四項交叉全部屬實，未擋下任何一處。**｜**第三種查法（裁定 254）跑完：無來源。** 六店 search（AKA Crazy Joe／Crazy Joe Ucok Harahap）回的全是 Surf Mesa、Lana Del Rey、Cheap Magic 這類不相干的單曲；song 級 search（AKA Kenangan Beku／AKA Batu Nisan／Ucok Harahap Crazy Joe／AKA Skip Away）皆無；店端無印尼 AKA 的藝人實體。回撈報告記「目錄裡找不到」。**這張沒有試聽來源。**｜**封面**：1972 原盤 cover-art-archive artwork false，**CAA release-group 200 靠的是 2015 CD 那一筆**（front true）。｜**軌長**：兩版都無軌長登錄，**正文不得寫任何時長**。｜**status 欄空**：策展層已提醒不得寫 Official，本層同意。｜**人名邊界**：同《Reflection》那卡——貝斯手兩處對不上、鼓手有更替，正文不列全編制。｜**舞台特技那段**：印尼文維基寫的是「1973 年雅加達一場演出」，把它綁到〈Crazy Joe〉這首歌上的只有 iMusik 一處——**正文可寫「1973 年雅加達演出的棺材特技」，但「是在唱〈Crazy Joe〉時做的」要標 uncertain 或不寫**。｜**性質**：原創錄音室專輯。｜**政治中立**：無查禁記錄，只寫發行事實。"
+ },
+ {
+  "key": "desc2:The Mercy's|The Mercy's",
+  "artist": "The Mercy's",
+  "album": "The Mercy's",
+  "facts": [
+   {
+    "f": "release-group d345af59 的欄位：title「The Mercy's」（與團名同名）、first-release-date 1973、primary-type Album、secondary-types 空、artist-credit「The Mercy's」（實體 72ae23d8，Group、Indonesia、disambiguation「1970s Indonesian rock band」）。轄下**只有一筆 release** ab7a62e1：1973 ID Official、media.format 只寫 Vinyl（未登記尺寸）、11 軌、label-info 記 Purnama Records／PLL-1002、無 barcode；cover-art-archive front 與 back 各一張。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d345af59-558e-49d6-8a1c-f957fa4d7671&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十一軌逐軌：1〈Hidupku Sunyi〉3:31、2〈Tiada Lagi〉3:41、3〈Badju Baru〉2:15、4〈Untukmu〉4:00、5〈Love〉3:47、6〈Dipantai〉2:28、7〈Bebaskanlah〉2:59、8〈Untukku〉2:11、9〈Women〉2:53、10〈Kurela Dikau Kasih〉2:49、11〈Kisah Seorang Pramuria〉3:16。**十一軌裡兩軌英文曲名（〈Love〉〈Women〉）**，第 4 軌〈Untukmu〉（給你）與第 8 軌〈Untukku〉（給我）互為對題，全碟 33 分 50 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d345af59-558e-49d6-8a1c-f957fa4d7671&fmt=json&inc=media+recordings&limit=100"
+   },
+   {
+    "f": "印尼文維基把這張建成《Volume 1》條目：「album perdana dari grup musik The Mercy's yang dirilis pada tahun 1972」，Purnama 出版、11 軌、33 分 32 秒、兩面各五與六軌；**多數曲目由 Charles Hutagalung 寫，Rinto Harahap 與 Reynold Panggabean 各寫一首**，開場曲〈Hidupku Sunyi〉由 Charles 與 Rinto 兩人合唱。編制：Erwin Harahap（吉他、主唱）、Rinto Harahap（貝斯、主唱）、Reynold Panggabean（鼓、主唱）、Charles Hutagalung（鍵盤、主唱）、Albert Sumlang（薩克斯風）。",
+    "src": "https://id.wikipedia.org/wiki/Volume_1_(album_The_Mercy's)"
+   },
+   {
+    "f": "印尼文維基的樂團條目：1965 年 2 月 3 日在棉蘭（Medan）成立、初名 Watches、同年改名 The Mercy's（取自成員喜歡的 Mercedes-Benz）；1960 年代末長期在馬來西亞與新加坡駐唱，並有一段在越南演出的時期、Charles Hutagalung 在那裡寫了幾首歌；1972 年遷到雅加達後出首張專輯，「Album perdana ini di luar dugaan meledak dan langsung mengangkat nama The Mercy's」——首張出乎意料地大賣、立刻把團名推上印尼樂壇。",
+    "src": "https://id.wikipedia.org/wiki/The_Mercy's"
+   },
+   {
+    "f": "馬來文維基同記首張《Hidupku Sunyi》1972 年經 Remaco／Purnama 發行，並寫「kumpulan ini dapat memecahkan rekod jualan dan pita kumpulan senior seperti Koes Plus dan Panbers」（打破了 Koes Plus 與 Panbers 這些前輩團的銷售紀錄）；成員名單裡貝斯手是 Rinto Harahap、鍵盤手 Charles Hutagalung 是 1960 年代中在馬來西亞時期接替 Iskandar 加入的。",
+    "src": "https://ms.wikipedia.org/wiki/The_Mercys"
+   }
+  ],
+  "hookCandidates": [
+   "資料庫叫它《The Mercy's》、維基叫它《Volume 1》——同一張碟兩個名字，連年份也各記 1973 與 1972",
+   "第 4 軌〈Untukmu〉給你、第 8 軌〈Untukku〉給我，一張碟裡互為對題"
+  ],
+  "sound": "黑膠 11 軌、33 分 50 秒，每軌 2 到 4 分鐘。〈Hidupku Sunyi〉由 Charles Hutagalung 與 Rinto Harahap 合唱開場，〈Tiada Lagi〉〈Untukmu〉是鍵盤帶頭的慢板情歌，〈Love〉〈Women〉兩軌英文曲名，Albert Sumlang 的薩克斯風是五人編制裡最特別的一件樂器，〈Kisah Seorang Pramuria〉收尾。",
+  "keyTracks": [
+   "Hidupku Sunyi",
+   "Tiada Lagi",
+   "Kisah Seorang Pramuria"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1973,
+   "recorded": null,
+   "note": "⚠ 年份異議（第 311 條形狀）：release-group first-release-date 1973 ＝ 唯一 release 的 date，但**印尼文維基《Volume 1》條目與樂團條目、馬來文維基三處都記 1972 年發行**（樂團 1972 年遷雅加達後出首張）。資料庫端的 1973 沒有第二個獨立來源；本層**不改卡單**，year 維持 1973，但正文不得寫「1973 年發行」這種斷言，只能寫「資料庫端登記 1973、維基記 1972」或避開年份。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、Purnama Records／PLL-1002、Vinyl 未記尺寸、11 軌、自我同名、CAA 200、身分交叉（Group／Indonesia／1970s Indonesian rock band）全部屬實。擋下一處：策展層把它當成 1973 年的碟收，本層查到三處維基一致記 1972，列為年份異議（見 yearVerified），不自行改卡單。**｜**盤名兩鏈（要寫給本機）**：MB RG title 是「The Mercy's」，印尼文維基建成「Volume 1」、馬來文維基叫它「Hidupku Sunyi」——**三個名字指同一張 11 軌的碟**（曲序與軌數與維基完全一致）。queryAlias 建議補「Volume 1」與「Hidupku Sunyi」。｜**第三種查法（裁定 254）跑完：無來源。** 六店 search 與 song 級 search（Hidupku Sunyi／Badju Baru／Kisah Seorang Pramuria／Dipantai）撈到的**全部是 1980 年後的精選與致敬輯**（《35 Tahun Album Special Platinum》891693780、《Tribute to the Legend Series》系列、《The Mercy's - Edisi Platinum》575824809），藝人目錄 575824810 亦無原盤。**這張沒有試聽來源。**｜**軌數只有一種形態**（11 軌），維基 33:32 與資料庫端 33:50 相差 18 秒，正文引總長以資料庫端為準或不引。｜**人名邊界**：五人編制與各曲作者出自維基專輯條目，可寫；**「打破 Koes Plus 與 Panbers 銷售紀錄」只有馬來文維基一處、無數字**，正文最多寫「首張出乎意料地大賣」（印尼文維基有）。馬來文維基的「六座 Golden Awards」「Band of the Year 1972–1973」**查無屆次與主辦單位，不採**。｜**性質**：原創錄音室專輯。｜**政治中立**：無查禁記錄，只寫發行事實；越南演出那段是 1960 年代末的駐唱，**不要鋪成戰爭敘事**。"
+ },
+ {
+  "key": "desc2:Koes Plus|Volume 8",
+  "artist": "Koes Plus",
+  "album": "Volume 8",
+  "facts": [
+   {
+    "f": "release-group fb0e8f04 的欄位：title「Volume 8」、first-release-date 1973、primary-type Album、secondary-types 空、artist-credit「Koes Plus」（實體 a1ba8a6b，Group、Indonesia、begin 1969）。轄下**只有一筆 release** 7534b6e8：1973 ID Official、12 吋黑膠 12 軌、label-info 記 Remaco／RLL-187、無 barcode、無軌長；十二軌曲序：〈Diana〉〈Desember〉〈Mana Hatimu〉〈Buat Apa Susah〉〈Tak Mungkin Kembali〉〈Waktu〉〈Jangan Bimbang Ragu〉〈Nusantara〉〈Tiada Lain Dihatiku〉〈Percaya Padaku〉〈Semanis Rayuanmu〉〈Kolam Susu〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fb0e8f04-aaa1-402a-8fd5-b9982fcf880d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（id 店 collectionId 1777356356，℗ 2024 Remaco）releaseDate 1973-07-01、12 軌與資料庫端曲序一一對應，逐軌長度：Diana 2:08／Desember 2:55／Mana Hatimu 3:00／Buat Apa Susah 2:58／Tak Mungkin Kembali 2:52／Waktu 2:32／Jangan Bimbang Ragu 2:00／Nusantara II 2:22／Tiada Lain Dihatiku 2:55／Percaya Padaku 2:13／Semanis Rayuanmu 2:06／Kolam Susu 2:21——**十二軌沒有一軌超過三分鐘，全碟 30 分 22 秒**；第 8 軌在串流側標成〈Nusantara II〉。",
+    "src": "https://itunes.apple.com/lookup?id=1777356356&country=id&entity=song&limit=200"
+   },
+   {
+    "f": "印尼文維基：1973 年 7 月 1 日由 Remaco 發行，1973 年 1 月 1 日到 6 月 1 日錄音，全長 30:31，流行與搖滾；單曲有〈Buat Apa Susah〉〈Desember〉〈Jangan Bimbang Ragu〉〈Semanis Rayuanmu〉〈Nusantara〉〈Diana〉〈Kolam Susu〉；**〈Kolam Susu〉在 Rolling Stone Indonesia 2009 年 12 月號「150 Lagu Indonesia Terbaik」排第 31**；編制 Tonny Koeswoyo（鍵盤、吉他、主唱）、Yon Koeswoyo（吉他、主唱）、Yok Koeswoyo（貝斯、主唱）、Murry（鼓、主唱）。",
+    "src": "https://id.wikipedia.org/wiki/Volume_8_(album_Koes_Plus)"
+   },
+   {
+    "f": "印尼文維基的樂團條目給了廠牌時間表：Melody（1969-03-01 到 1970-04-27，1 張）、Mesra（1970-04-27 到 1973-01-01，7 張）、**Remaco（1973-01-01 到 1977，39 張）**；《Volume 7》條目記它 1973 年 4 月 1 日發行、是「album terakhir Koes Plus bersama label Mesra」，《Volume 8》條目則把本碟記為與 Remaco 合作的第一張專輯。",
+    "src": "https://id.wikipedia.org/wiki/Koes_Plus"
+   },
+   {
+    "f": "英文維基：Koeswoyo 兄弟 1965 年因演唱披頭四歌曲被最高作戰指揮部（KOTI）逮捕，1965 年 9 月 29 日獲釋——政變前一天；1969 年鼓手 Nomo 退出、外人 Murry 加入，樂團因此從 Koes Bersaudara 改名 Koes Plus（「Koeswoyo 家加一個外人」）。1973 到 1974 年是他們產量最高的時期，光 1974 年就有 23 張出版。",
+    "src": "https://en.wikipedia.org/wiki/Koes_Plus"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌沒有一軌超過三分鐘，收尾的〈Kolam Susu〉後來被滾石印尼版排進史上第 31 首",
+   "第 8 軌〈Nusantara〉是一組編號歌的第二首——下下張的《Vol. 10》裡接著出第四首"
+  ],
+  "sound": "12 吋黑膠、12 軌、30 分 22 秒，最長的〈Mana Hatimu〉剛好 3 分鐘、最短的〈Jangan Bimbang Ragu〉2 分整。Koeswoyo 三兄弟加 Murry 的四人流行搖滾，〈Diana〉〈Desember〉開場，〈Buat Apa Susah〉〈Semanis Rayuanmu〉是中段的流行單曲，〈Nusantara〉（串流側標 II）是編號系列的一首，〈Kolam Susu〉2 分 21 秒收尾。",
+  "keyTracks": [
+   "Kolam Susu",
+   "Buat Apa Susah",
+   "Diana"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1973,
+   "recorded": 1973,
+   "note": "release-group first-release-date 1973 ＝ 唯一 release 的 date；印尼文維基記 1973-07-01 發行、1973-01-01 至 06-01 錄音；串流側 releaseDate 同為 1973-07-01。三邊一致。"
+  },
+  "notes": "**覆核策展層：MBID、Remaco／RLL-187、12 吋 12 軌、CAA 404、store 兩個 Koes Plus 實體（1770772377 才是原盤系列）全部屬實，未擋下任何一處。**｜**串流採信 1777356356**（id 店，藝人實體 1770772377）：12 軌對 12 軌、曲序一一對應（第 8 軌資料庫端〈Nusantara〉＝串流〈Nusantara II〉，其餘曲名逐字相同），releaseDate 1973-07-01 與維基發行日同日，℗ Remaco 與 label-info 同一家。探測層本來就判有試聽，本層確認。｜**封面待補**：唯一 release 的 cover-art-archive artwork false、count 0，CAA 404 是真的沒圖；**串流側 1777356356 有 artworkUrl（℗ 2024 Remaco 的數位版封面）**，本機補圖時可從那裡看是不是原盤圖（只寫觀察）。｜**「與 Remaco 的第一張」要退一層**（廠牌第一張規則）：《Volume 8》條目寫它是 Remaco 首張，《Volume 7》條目寫 V7 是 Mesra 最後一張、發行 1973-04-01，**但樂團條目的廠牌表把 Remaco 起點寫成 1973-01-01，三處自相矛盾**；Apple 目錄裡 V6（1973-02-01）與 V7（1973-04-01）也在 V8 之前。正文最多寫「維基把它記為 Koes Plus 在 Remaco 的第一張」，**不得寫成確定事實**。｜**軌數只有一種形態**（12 軌）；軌長只有串流側有，資料庫端無，正文引時長以串流側為準。｜**Nusantara 編號系列**：英文維基作品表有 1971《Nusantara I》，本碟第 8 軌串流側標 II，《Vol. 10》第 10 軌是〈Nusantara IV〉——**III 在哪一張本層未查到，正文不要寫「系列共幾首」**。｜**人名邊界**：四人編制出自維基專輯條目，可寫。｜**1965 年被捕那段是樂團前身 Koes Bersaudara 的事**，與本碟隔八年，**正文若引只能一句帶過、不得鋪成敘事**，這是這條體制線唯一能寫的產製條件。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:Koes Plus|Vol. 10",
+  "artist": "Koes Plus",
+  "album": "Vol. 10",
+  "facts": [
+   {
+    "f": "release-group 5b071a05 的欄位：title「Vol. 10」（帶點）、first-release-date 1974、primary-type Album、secondary-types 空、artist-credit「Koes Plus」。轄下**只有一筆 release** a26341c2：1974 ID Official、12 吋黑膠 12 軌、label-info 記 Remaco Records／RLL-209、無 barcode、無軌長；曲序：〈Maafkan Aku〉〈Ketentraman〉〈Belajar Menyanyi〉〈Dia Datang〉〈Terang Bulan〉〈Ayah & Ibu〉〈Bujangan〉〈Kapan-Kapan〉〈Kroncong Cincin〉〈Nusantara IV〉〈Untuk Dia〉〈Manusia〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5b071a05-63a5-4028-81e7-d8a5a7630c8a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（id 店 collectionId 1777379905，℗ 2024 Remaco）盤名建成「Volume 10」、releaseDate **1973-11-02**，12 軌與資料庫端曲序一一對應，逐軌長度：Maafkan Aku 3:00／Ketentraman 2:30／Belajar Bernyanyi 2:40／Dia Datang 2:23／Terang Bulan 1:54／Ayah Dan Ibu 3:25／Bujangan 2:25／Kapan-Kapan 2:31／Kroncong Cincin 3:44／Nusantara IV 2:18／Untuk Dia 2:30／Manusia 2:40，全碟 32 分整；**最長的一軌是 3 分 44 秒的〈Kroncong Cincin〉**（keroncong 曲式）。",
+    "src": "https://itunes.apple.com/lookup?id=1777379905&country=id&entity=song&limit=200"
+   },
+   {
+    "f": "印尼文維基《Volume 10》條目：「dirilis 5 Oktober 1973」、Remaco 出版、12 軌兩面、全長 30:51；A 面的〈Bujangan〉由鼓手 Murry 寫，B 面的〈Kapan-Kapan〉與〈Kroncong Cincin〉由 Tonny Koeswoyo 寫。〈Bujangan〉1996 年由童星 Angie Kamalsah 改成兒童版歌詞重唱，2007 年又被用進 Suzuki Smash 機車廣告、由諧星 Basuki 演出——條目記那是 Basuki 生前最後一支廣告。",
+    "src": "https://id.wikipedia.org/wiki/Volume_10_(album_Koes_Plus)"
+   },
+   {
+    "f": "藝人端點：Koes Plus 名下 14 個 release-group，有年份的依序是 1969《Dheg Dheg Plas》、1970《Volume 2》、1973《Volume 8》《Vol. 9》、**1974《Vol. 10》《Vol. 11》**、1999《Pop Keroncong Abadi》、2010《Dheg Dheg Plas & Volume Two》；**同一位名下「Volume」與「Vol.」兩種寫法並存**。英文維基記 1973 到 1974 年是他們產量最高的時期，光 1974 年就有 23 張出版。",
+    "src": "https://musicbrainz.org/ws/2/artist/a1ba8a6b-101f-46eb-98f0-f96132ff7353?fmt=json&inc=aliases+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "鼓手 Murry 寫的〈Bujangan〉，二十幾年後變成兒童版、再變成機車廣告曲",
+   "同一張碟三個年份：資料庫端 1974、印尼文維基 1973 年 10 月 5 日、串流側 1973 年 11 月 2 日"
+  ],
+  "sound": "12 吋黑膠、12 軌、32 分整，最短的〈Terang Bulan〉1 分 54 秒、最長的〈Kroncong Cincin〉3 分 44 秒。Koeswoyo 三兄弟加 Murry 的四人流行搖滾，〈Maafkan Aku〉開場，〈Bujangan〉是鼓手寫的中段單曲，〈Kapan-Kapan〉〈Kroncong Cincin〉兩軌接在一起，〈Nusantara IV〉是編號系列的一首，〈Manusia〉收尾。",
+  "keyTracks": [
+   "Bujangan",
+   "Kapan-Kapan",
+   "Kroncong Cincin"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "recorded": null,
+   "note": "⚠ 年份異議（第 311 條形狀）：release-group first-release-date 1974 ＝ 唯一 release 的 date、Discogs 條目標題亦記 1974；**但印尼文維基寫「dirilis 5 Oktober 1973」、串流側（℗ Remaco）releaseDate 1973-11-02、策展層記的店端也是 1973**——三處獨立指向 1973 年底。本層**不改卡單**，year 維持 1974，正文不得把 1974 寫成確定的發行年；最保險的寫法是「1973 年底到 1974 年之間」或避開年份。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、Remaco Records／RLL-209、12 吋 12 軌、CAA 404、Vol. 10／Volume 10 兩個摺鍵、店端兩個 Koes Plus 實體全部屬實。擋下一處：策展層依裁定 18／46 維持 1974 並說「資料庫端有盤面編號 RLL-209 佐證」——盤面編號只證明它是哪一張、不證明年份；本層另查到印尼文維基給出確切日期 1973-10-05、串流側 ℗ Remaco 給 1973-11-02，年份異議已列在 yearVerified，請主線裁。**｜**串流採信 1777379905**（id 店，藝人實體 1770772377）：12 軌對 12 軌、曲序一一對應（〈Belajar Menyanyi〉＝串流〈Belajar Bernyanyi〉、〈Ayah & Ibu〉＝〈Ayah Dan Ibu〉，其餘逐字相同），℗ Remaco 與 label-info 同一家。**探測層把這張列在缺試聽的 12 張裡，回撈報告的候選 1777379905 本層直查 collectionId 後採信——這是第三種查法找回的一張，請下游改判。**｜**封面待補**：唯一 release 的 cover-art-archive artwork false，CAA 404 是真的沒圖；串流側 1777379905 有 artworkUrl（℗ 2024 Remaco 數位版封面），本機補圖時可從那裡看（只寫觀察）。｜**軌長**：只有串流側有；維基 30:51 與串流 32:00 差一分多鐘，正文引時長以串流側為準或不引。｜**人名邊界**：Murry 與 Tonny Koeswoyo 的作曲歸屬出自維基專輯條目，可寫；Angie Kamalsah、Basuki 是後世翻唱與廣告的人名，**正文可不具名**（與本碟隔 20 幾年，屬作品本身的後世流傳、可寫但要標時序）。｜**性質**：原創錄音室專輯。｜**政治中立**：無查禁記錄，只寫發行事實。"
+ },
+ {
+  "key": "desc2:Black Brothers|Terima Kaseh",
+  "artist": "Black Brothers",
+  "album": "Terima Kaseh",
+  "facts": [
+   {
+    "f": "release-group 68defec7 的欄位：title「Terima Kaseh」、first-release-date 1978、primary-type Album、secondary-types 空、artist-credit「Black Brothers」（實體 e7c5cc2c，Group、area **Jayapura**、disambiguation「Indonesian pop group」、alias「The Black Brothers」）。轄下**只有一筆 release** d69ff3b7：1978、**country MY（馬來西亞）**、status 欄空、12 吋黑膠 12 軌、label-info 記 EMI／MMFP30010、無 barcode——**資料庫端登錄的是馬來西亞 EMI 的壓片，不是印尼盤**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=68defec7-3b23-4e35-973f-c285d32d2721&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十二軌逐軌：1〈Hari Kiamat〉3:46、2〈Terjalin Kembali〉3:32、3〈Apuse〉3:20、4〈Doa Pramuria〉4:03、5〈Balada Dua Remaja〉3:05、6〈Kisah Seorang Pramuria〉3:29、7〈Terima Kasih〉4:12、8〈Sahabatku Angie〉3:12、9〈Derita Tiada Akhir〉3:12、10〈Putus Di Tengah Kerinduan〉3:50、11〈Jayapura Diwaktu Malam〉4:12、12〈Kali Kemiri〉2:35，全碟 42 分 28 秒。**盤名拼「Kaseh」（馬來語拼法），第 7 軌曲名卻拼「Kasih」**；第 3 軌〈Apuse〉與第 11 軌〈Jayapura Diwaktu Malam〉兩個曲名直接指向巴布亞。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=68defec7-3b23-4e35-973f-c285d32d2721&fmt=json&inc=media+recordings&limit=100"
+   },
+   {
+    "f": "印尼文維基：樂團源自查亞普拉（Jayapura），1972 年起以 Los Iriantos 之名活動、1975 年成團並「hijrah ke Jakarta pada tahun 1975 untuk meniti karier bermusik yang lebih menjanjikan」；六人編制 Hengky MS（主唱、吉他）、Benny Bettay（貝斯）、Jochie Pattipeiluhu（鍵盤）、Amry Kahar（小號）、Stevie Mambor（鼓）、David Rumagesan（薩克斯風）；經紀人 Andy Ayamiseba 替他們簽下 Nyo Beng Seng 的 Irama Tara 廠牌；作品表記 1976《Irian Jaya I》、**1978《Terima Kaseh》**。",
+    "src": "https://id.wikipedia.org/wiki/Black_Brothers"
+   },
+   {
+    "f": "雅加達 Istana FM 的專文：樂團 1976 年出道、1976 年 12 月在 Istora Senayan 的演出打響名號，1976 到 1979 年間在 PT Irama Tara 名下出了八張專輯共 66 首歌；早期曲目〈Kisah Seorang Pramuria〉曾因作曲歸屬引起爭議；三位成員已辭世。",
+    "src": "https://istanafm.com/black-brothers-menggebrak-dari-tanah-papua-hingga-mancanegara/"
+   }
+  ],
+  "hookCandidates": [
+   "資料庫端唯一的一筆是馬來西亞 EMI 的壓片——盤名拼成馬來語的 Kaseh，曲名卻仍是 Kasih",
+   "十二軌裡有一首〈Kisah Seorang Pramuria〉，與 The Mercy's 首張的收尾曲同名"
+  ],
+  "sound": "12 吋黑膠、12 軌、42 分 28 秒，每軌 2 分半到 4 分鐘。查亞普拉六人團的流行搖滾，有小號與薩克斯風的管樂編制。〈Hari Kiamat〉開場，〈Apuse〉是巴布亞民謠曲名，〈Doa Pramuria〉〈Kisah Seorang Pramuria〉兩軌以酒吧女侍為題，〈Terima Kasih〉4 分 12 秒是標題曲，〈Jayapura Diwaktu Malam〉唱的是他們的城市，〈Kali Kemiri〉2 分 35 秒收尾。",
+  "keyTracks": [
+   "Hari Kiamat",
+   "Terima Kasih",
+   "Apuse"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1978,
+   "recorded": null,
+   "note": "release-group first-release-date 1978 ＝ 唯一 release（馬來西亞 EMI 壓片）的 date；印尼文維基作品表同記 1978。⚠ 一個樂迷部落格把它標 1977，單一非官方來源、不採。**印尼本地 Irama Tara 原盤在資料庫端沒有建檔，1978 是馬來西亞版的年份，印尼原盤是否更早無法查證**——正文不得寫「1978 年在印尼發行」。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、EMI／MMFP30010、country MY、status 空、12 吋 12 軌、CAA 404、Kaseh／Kasih 拼法、身分交叉（Group／Jayapura／Indonesian pop group）全部屬實，未擋下任何一處。** 策展層說「MB 端第 1 名不等於外部端安全」本層同意。｜**第三種查法（裁定 254）跑完：無來源。** 六店 search（Black Brothers Terima Kaseh／Black Brothers Papua／Terima Kasih）與 song 級 search（Hari Kiamat／Apuse／Jayapura Diwaktu Malam／Sahabatku Angie）撈到的唯一同團條目是 **1986 年 Javari Dream Records 的 16 軌輯《Derita Tiada Akhir》（collectionId 1670272800，The Black Brothers Papua 1637814102）**，裡面有本碟的〈Apuse〉〈Balada Dua Remaja〉〈Hari Kiamat〉〈Jayapura Di Waktu Malam〉〈Putus Di Tengah Kerinduan〉〈Derita Tiada Akhir〉六軌，但**軌數 16 對 12、另十軌來自別張**——那是後來的合輯，不採信。**這張沒有試聽來源。**｜**封面待補**：唯一 release 的 cover-art-archive artwork false，CAA 404 是真的沒圖；Apple 端無本碟條目；樂迷部落格有掃圖（只寫觀察）。｜**軌數只有一種形態**（12 軌）。｜**人名邊界（裁定 241／250）**：六人編制與經紀人 Andy Ayamiseba 出自印尼文維基與 Istana FM 兩處一致，可寫；策展層提到的兩筆無 type 無 area 的同名實體不得背書、本層同意。｜**〈Kisah Seorang Pramuria〉的作曲爭議只有 Istana FM 一處、未寫明爭議雙方**，正文最多寫「曾有作曲歸屬的爭議」或不寫；它與 The Mercy's 首張收尾曲同名這一點是兩張卡單曲名的實查、可寫。｜**反向禁令**：1979 年後樂團離開印尼（英文維基寫 1979 年到萬那杜、Istana FM 寫 1982 年到荷蘭、印尼文維基寫 1979 年改組為 Black Bros'79——**三處互不相同**）是與本碟無關的後續事件，**正文一律不寫**；三位成員辭世亦不寫。｜**政治中立**：這條線的產製條件只能寫到「馬來西亞壓片」這個發行事實，**不得替它鋪任何巴布亞政治背景**，英文維基的 Black Power 與抗議字句一個都不引。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:Chrisye|Puspa Indah",
+  "artist": "Chrisye",
+  "album": "Puspa Indah",
+  "facts": [
+   {
+    "f": "release-group 9abce6ad 的欄位：title「Puspa Indah」、first-release-date 1980、primary-type Album、secondary-types 空、artist-credit「Chrisye」（實體 adfff063，Person、Indonesia、1949-09-16 生、2007-03-30 歿，alias Chrismansyah Rahadi）。轄下**只有一筆 release** cb955d09：1980 ID、status 欄空、**卡帶 10 軌**、label-info 記 Musica Studios／MSC 7123、無 barcode、無軌長；曲序：〈Marlina〉〈Lagu Putih〉〈Kenang Kenangan〉〈Puspa Indah〉〈Lakon Manusia〉〈Interlode〉〈Sirna〉〈To My Friend On Legian Beach〉〈Gita Cinta〉〈Galih Ratna〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9abce6ad-0b2d-41a8-8cbd-bd8b1130608b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（id 店 collectionId 1775214005，℗ 1980 PT. Musica Studios）releaseDate 1980-04-24、10 軌與資料庫端曲序一一對應，逐軌長度：Marlina 3:39／Lagu Putih 5:02／Kenang - Kenangan 4:16／Puspa Indah 5:20／Lakon Manusia 3:02／Interloude Kenang - Kenangan 4:35／Sirna 3:23／To My Friends On Legian Beach 4:22／Gita Cinta 4:44／Galih & Ratna 3:19，全碟 41 分 42 秒；**標題曲 5 分 20 秒是最長的一軌**。",
+    "src": "https://itunes.apple.com/lookup?id=1775214005&country=id&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基：Chrisye 第四張錄音室專輯，1980 年 6 月由 Musica Studios 發行；製作人 Guruh Sukarnoputra、Chrisye、Jockie Soerjoprajogo 三人；**Guruh Soekarnoputra 寫了除〈To My Friends on Legian Beach〉〈Gita Cinta〉之外所有歌詞、除〈Interlude - Kenang-Kenangan〉之外所有旋律**；錄音時「Yockie played the keyboard and harmonica, while Chrisye played the bass and guitar, both electric and acoustic」，錄音師 Roesma；兩首單曲曾用在 1979 年的電影《Gita Cinta dari SMA》裡，Chrisye 在片中客串歌手。",
+    "src": "https://en.wikipedia.org/wiki/Puspa_Indah"
+   },
+   {
+    "f": "同一條目：專輯商業上成功，「The success of Puspa Indah convinced Chrisye that some albums needed to be synergized with other media in order to succeed」；**Rolling Stone Indonesia 2007 年 12 月把它選為印尼史上第 57 佳專輯**；2004 年再發 CD、2007 年收進三合一選輯。",
+    "src": "https://en.wikipedia.org/wiki/Puspa_Indah"
+   },
+   {
+    "f": "藝人端點：Chrisye 名下 25 個 release-group，有年份的錄音室專輯依序是 1977《Jurang Pemisah》、1978-10-05《Sabda Alam》、**1980《Puspa Indah》**、1981《Pantulan Cita》、1983《Resesi》——資料庫端的排序與英文維基「第四張」相符（前面另有一張沒有日期的《Chrisye》）。",
+    "src": "https://musicbrainz.org/ws/2/artist/adfff063-402d-4e97-a34d-c1cb6adaa7a1?fmt=json&inc=aliases+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "歌詞與旋律幾乎全出自前總統 Sukarno 的兒子 Guruh 之手，Chrisye 自己在錄音室裡彈的是貝斯與吉他",
+   "兩首歌先在 1979 年的電影裡用過，專輯隔年才出——他從這張學到專輯要跟別的媒體綁在一起"
+  ],
+  "sound": "卡帶 10 軌、41 分 42 秒。Guruh Soekarnoputra 的詞曲、Yockie 的鍵盤與口琴、Chrisye 自己的貝斯與吉他，輕柔的流行情歌。〈Marlina〉開場，〈Lagu Putih〉〈Puspa Indah〉兩軌各五分多鐘是全碟最長，〈To My Friends On Legian Beach〉是唯一英文曲名，〈Gita Cinta〉〈Galih & Ratna〉兩軌收尾。",
+  "keyTracks": [
+   "Puspa Indah",
+   "Galih & Ratna",
+   "Gita Cinta"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1980,
+   "recorded": 1980,
+   "note": "release-group first-release-date 1980 ＝ 唯一 release 的 date；英文維基記 1980 年 6 月發行、串流側 releaseDate 1980-04-24、℗ 1980 Musica Studios。年份三邊一致，**月份維基與串流側差兩個月，正文不寫月份**。"
+  },
+  "notes": "**覆核策展層：MBID、Musica Studios／MSC 7123、卡帶 10 軌、status 空、CAA 200、盤名兩鏈（Puspa Indah／Puspa Indah Taman Hati）全部屬實，未擋下任何一處。**｜**串流採信 1775214005**（id 店，藝人實體 126632481）：10 軌對 10 軌、曲序一一對應（〈Interlode〉＝串流〈Interloude Kenang - Kenangan〉、〈Galih Ratna〉＝〈Galih & Ratna〉，其餘逐字相同），℗ 1980 PT. Musica Studios 與 label-info 同一家。探測層本來就判有試聽，本層確認。｜**封面**：唯一 release 的 cover-art-archive front true，CAA 200 屬實。｜**盤名邊界**：Discogs 另有一張 1980 年的《Original Sound Track Film \"Puspa Indah Taman Hati\"》宣傳黑膠——**那是同名電影原聲帶、不是本 RG**，本卡的 10 軌卡帶是錄音室專輯；正文不要把本碟寫成電影原聲帶。英文維基提到單曲用在 1979 年《Gita Cinta dari SMA》，沒有提《Puspa Indah Taman Hati》這部片。｜**軌長**：資料庫端無，只有串流側有，正文引時長以串流側為準。｜**人名邊界**：三位製作人、錄音師 Roesma、樂器分工出自英文維基（有引註），可寫；Guruh 的拼法英文維基同時出現 Sukarnoputra 與 Soekarnoputra，**正文擇一即可**。｜**Rolling Stone Indonesia 第 57 佳專輯**是雜誌名單不是獎項，寫「選為」不寫「獲獎」。｜**反向禁令**：2007 年辭世、2004 再發與 2007 三合一選輯屬作品本身的後世流傳，可一句帶過並標時序。｜**政治中立**：Guruh 是 Sukarno 之子這一點是身分事實，可寫；**不得延伸成任何對新秩序時期的評論**。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:Chaseiro|Bila",
+  "artist": "Chaseiro",
+  "album": "Bila",
+  "facts": [
+   {
+    "f": "release-group 0da28595 的欄位：title「Bila」、first-release-date 1980、primary-type Album、secondary-types 空、artist-credit「Chaseiro」（實體 9fbea414，Group、Indonesia、begin 1970）。轄下兩筆 release：**a22b67f6 是 1980 ID Official、卡帶 12 軌、Musica Studios／MSC7114**；ee4254b0 是 2018 ID Official CD、Musica／MSD0781CT、barcode 8992880105308、同 12 軌。曲序：〈Kulama Menanti (Suasana Melodi)〉〈Pengungkapan〉〈Sendiri〉〈Seandainya Sederhana〉〈Kemanusiaan〉〈Dibalik Senyuman〉〈Akhir Tujuan〉〈Tempat Berpijak〉〈Wangi〉〈Tumpuan〉〈Nada Nada Gembira〉〈Sampai Jumpa Lagi〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0da28595-f100-4186-836c-393a4ae929ea&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（id 店 collectionId 1753303191，℗ 1980 PT Musica Studios）releaseDate 1980-01-01、12 軌與資料庫端曲序一一對應，逐軌長度：Ku Lama Menanti 2:50／Pengungkapan 4:02／Sendiri 3:51／Seandainya Sederhana 3:45／Kemanusiaan 3:07／Dibalik Senyum 4:04／Akhir Tujuan 3:46／Tempat Berpijak 3:08／Wangi 3:13／Tumpuan 4:28／Nada - Nada Gembira 3:14／Sampai Jumpa Lagi 3:39，全碟 43 分 7 秒——**與資料庫端 2018 CD 那一版的軌長逐軌只差 2 秒以內，與 1980 卡帶那一版登錄的軌長則差很多**（卡帶版〈Wangi〉登錄 4:57、〈Akhir Tujuan〉4:55）。",
+    "src": "https://itunes.apple.com/lookup?id=1753303191&country=id&entity=song&limit=200"
+   },
+   {
+    "f": "印尼文維基：Chaseiro 的團名取自成員姓名的首字母，1978 年成團、以 1978 年 5 月 6 日 Radio Amigos 的歌唱比賽出道；「Para anggota Chaseiro merupakan gabungan mahasiswa Universitas Indonesia dari Fakultas Kedokteran, Ekonomi, dan Ilmu-ilmu Sosial」——成員是印尼大學醫學、經濟與社會科學三個學院的學生；成員 Candra Darusman（主唱、鍵盤）、Aswin Sastrowardoyo（主唱、吉他）、Edwin Hudioro（長笛）、Irwan B. Indrakesuma（主唱）、Rizali Wilmar Indrakesuma（主唱、貝斯）、Omen Norman Sonisontani（主唱）、Helmi Elzar Indrakesuma；曲風是爵士、bossa nova 與流行，全部在 Musica Studios 出版。",
+    "src": "https://id.wikipedia.org/wiki/Chaseiro"
+   },
+   {
+    "f": "英文維基 Candra Darusman 條目：「The group created five albums, all under Musica Studios: Pemuda (1979), Bila (1980), Tiga (1981), Ceria (1983), and Persembahan (2001)」——《Bila》是第二張；資料庫端藝人目錄同樣把 1980《Bila》排在最前、後面接 1982《Ceria》（《Pemuda》與《3》兩張的 first-release-date 被登成 2018 再發年）。",
+    "src": "https://en.wikipedia.org/wiki/Candra_Darusman"
+   }
+  ],
+  "hookCandidates": [
+   "團名是七個成員姓名的首字母拼起來的，七個人來自同一所大學的醫學院、經濟學院與社會科學院",
+   "同一張碟兩套軌長：1980 年卡帶登錄〈Wangi〉近五分鐘，2018 年 CD 與串流只有三分多鐘"
+  ],
+  "sound": "卡帶 12 軌、串流側 43 分 7 秒，每軌 3 到 4 分半。印尼大學學生組成的七人聲樂團，爵士與 bossa nova 底子的流行曲，Candra Darusman 的鍵盤加 Edwin Hudioro 的長笛。〈Ku Lama Menanti〉2 分 50 秒開場是最短的一軌，〈Pengungkapan〉〈Dibalik Senyum〉〈Tumpuan〉三軌超過四分鐘，〈Sampai Jumpa Lagi〉（再見）收尾。",
+  "keyTracks": [
+   "Pengungkapan",
+   "Tumpuan",
+   "Sampai Jumpa Lagi"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1980,
+   "recorded": null,
+   "note": "release-group first-release-date 1980 ＝ 1980 卡帶 release 的 date；英文維基（Candra Darusman 條目）記 1980，串流側 ℗ 1980。⚠ 印尼文維基 Chaseiro 條目把《Bila》寫成 1979、Discogs 一筆卡帶條目標 1981——兩邊各一處、都與多數來源不合，不改卡單；正文寫 1980。串流側的 1980-01-01 是批次日期形狀（第 2 點），不得寫成發行日。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、Musica Studios／MSC7114、卡帶 12 軌、2018 CD 再發（MSD0781CT、barcode 8992880105308）、CAA 200、店端三個 Chaseiro 實體全部屬實，未擋下任何一處。**｜**串流採信 1753303191**（id 店，藝人實體 623211926）：12 軌對 12 軌、曲序一一對應（〈Kulama Menanti (Suasana Melodi)〉＝串流〈Ku Lama Menanti (Suasana Bermelodi)〉、〈Dibalik Senyuman〉＝〈Dibalik Senyum〉，其餘逐字相同），℗ 1980 PT Musica Studios 與 label-info 同一家。探測層本來就判有試聽，本層確認。｜**軌長三形態（第 251 條，本卡最要注意的一筆）**：1980 卡帶登錄 49 分 25 秒（〈Wangi〉4:57、〈Akhir Tujuan〉4:55、〈Sampai Jumpa Lagi〉4:53）、2018 CD 43 分 33 秒、串流 43 分 7 秒——**串流側與 CD 對得上、與卡帶對不上**，卡帶那組軌長可能是登錄錯誤也可能是不同混音，本層無法判定；**正文引時長一律用串流側（＝2018 CD）那組，並不要寫「全碟 49 分鐘」**。｜**封面**：1980 卡帶與 2018 CD 兩筆的 cover-art-archive 都有 front，CAA 200 屬實。｜**人名邊界**：七位成員出自印尼文維基，可寫；製作人與編曲查無官方欄位，不寫。｜**「第二張」**由英文維基與資料庫端排序兩處支撐，可寫。｜**性質**：原創錄音室專輯。｜**政治中立**：無查禁記錄，只寫發行事實。"
+ },
+ {
+  "key": "desc2:Iwan Fals|Opini",
+  "artist": "Iwan Fals",
+  "album": "Opini",
+  "facts": [
+   {
+    "f": "release-group 0e7d996c 的欄位：title「Opini」、first-release-date 1982、primary-type Album、secondary-types 空、artist-credit「Iwan Fals」（實體 326894c5，Person、Indonesia、1961-09-03 生，alias Virgiawan Listanto）。轄下**只有一筆 release** bc5661e2：1982 ID Official、**卡帶 9 軌**、label-info 記 Musica Studios／MSC7681、barcode 8992880768113、無軌長；曲序：〈Galang Rambu Anarki〉〈Obat Awet Muda〉〈Antara Aku Kau Dan Bekas Pacarmu〉〈Isi Rimba Tak Ada Tempat Berpijak Lagi〉〈Sapuku Sapumu Sapu Sapu〉〈Opiniku〉〈Ambisi〉〈Tak Biru Lagi Lautku〉〈Tarmijah Dan Problemnya〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e7d996c-5c93-4c01-a8fa-021f5778d4db&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（id 店 collectionId 1753721153，℗ 1982 PT Musica Studios）9 軌與資料庫端曲序一一對應，逐軌長度：Galang Rambu Anarki 3:52／O.A.M (Obat Awet Muda) 3:49／Antara Aku, Kau Dan Bekas Pacarmu 4:59／Isi Rimba Tak Ada Tempat Berpijak Lagi 4:33／Sapuku, Sapumu, Sapu - Sapu 3:40／Opiniku 6:14／Ambisi 3:59／Tak Biru Lagi Lautku 3:57／Tarmijah Dan Problemanya 7:23，全碟 42 分 26 秒——**收尾的〈Tarmijah Dan Problemanya〉7 分 23 秒是最長的一軌，〈Opiniku〉6 分 14 秒次之**。",
+    "src": "https://itunes.apple.com/lookup?id=1753721153&country=id&entity=song&limit=200"
+   },
+   {
+    "f": "印尼文維基《Opini》條目：1982 年 9 月 3 日由 Musica Studio's 發行、製作人 Willy Soemantri、1982 年錄音，Luluk Purwanto 拉小提琴、編曲由 Willy Soemantri 與 Luluk Purwanto 負責，九首全由 Iwan Fals 自己寫，全長 42:26；〈Galang Rambu Anarki〉「Iwan Fals menggambarkan kelahiran anaknya yang bertepatan dengan melambung naiknya harga BBM」——寫兒子出生正逢油價暴漲；條目的 Penerimaan 段記這首歌在 Rolling Stone Indonesia「150 Lagu Indonesia Terbaik」名單排第 65。",
+    "src": "https://id.wikipedia.org/wiki/Opini_(album)"
+   },
+   {
+    "f": "印尼文維基 Galang Rambu Anarki 條目：「Nama Galang juga dijadikan salah satu lagu Iwan Fals, berjudul Galang Rambu Anarki pada album Opini, yang bercerita tentang kegelisahan orang tua menghadapi kenaikan harga-harga barang sebagai imbas dari kenaikan harga BBM pada awal tahun 1982 yaitu pada hari kelahiran Galang (1 Januari 1982)」——兒子 1982 年 1 月 1 日出生，歌講的是父母面對油價帶動物價上漲的不安。",
+    "src": "https://id.wikipedia.org/wiki/Galang_Rambu_Anarki"
+   },
+   {
+    "f": "藝人端點：Iwan Fals 名下有年份的錄音室專輯依序是 1979《Canda Dalam Ronda》、1981《Sarjana Muda》、**1982《Opini》**、1983《Sumbang》、1984《Sugali》——《Opini》是 Musica 時期的第二張，接在池中已有的《Sarjana Muda》之後。",
+    "src": "https://musicbrainz.org/ws/2/artist/326894c5-953a-45ac-9774-bc348a51214d?fmt=json&inc=aliases+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "開場曲是寫給 1982 年元旦出生的兒子的——歌名就是兒子的名字，唱的是油價上漲那天當爸爸",
+   "九軌全部自己寫，最長的兩軌各六、七分鐘都排在後半，收尾的〈Tarmijah〉七分多鐘"
+  ],
+  "sound": "卡帶 9 軌、42 分 26 秒。Iwan Fals 自己寫的九首歌，Willy Soemantri 編曲、Luluk Purwanto 的小提琴穿插其間的民謠搖滾。〈Galang Rambu Anarki〉3 分 52 秒開場，中段〈Antara Aku, Kau Dan Bekas Pacarmu〉近五分鐘，後半〈Opiniku〉6 分 14 秒、〈Tarmijah Dan Problemanya〉7 分 23 秒兩軌把全碟拉長。",
+  "keyTracks": [
+   "Galang Rambu Anarki",
+   "Opiniku",
+   "Tarmijah Dan Problemanya"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1982,
+   "recorded": 1982,
+   "note": "release-group first-release-date 1982 ＝ 唯一 release 的 date；印尼文維基記 1982-09-03 發行、1982 錄音；串流側 ℗ 1982、releaseDate 1982-01-01（批次日期形狀，不得寫成發行日）。三邊一致。"
+  },
+  "notes": "**覆核策展層：MBID、Musica Studios／MSC7681、barcode 8992880768113、卡帶 9 軌、CAA 200、掛名與池中《Sarjana Muda》一字不差、同日三張 1993-03-10 的批次形狀全部屬實，未擋下任何一處。**｜**串流採信 1753721153**（id 店，藝人實體 126609479）：9 軌對 9 軌、曲序一一對應（〈Obat Awet Muda〉＝串流〈O.A.M (Obat Awet Muda)〉、〈Tarmijah Dan Problemnya〉＝〈Tarmijah Dan Problemanya〉，其餘逐字相同），逐軌長度與維基完全相同，℗ 1982 PT Musica Studios 與 label-info 同一家。探測層本來就判有試聽，本層確認。｜**封面**：唯一 release 的 cover-art-archive front true（count 2），CAA 200 屬實。｜**軌數只有一種形態**（9 軌）。｜**人名邊界**：Willy Soemantri、Luluk Purwanto 出自維基專輯條目，可寫；兒子 Galang 的名字是曲名本身、可寫。｜**反向禁令（本卡最要注意的一筆）**：Galang 1997 年辭世是與本碟無關的後續生平事件，**正文一律不寫**，facts 裡也沒放。｜**Rolling Stone Indonesia 第 65 名**是名單不是獎項，寫「排進」不寫「獲獎」。｜**政治中立**：〈Galang Rambu Anarki〉講油價上漲是歌詞題材的事實，可寫；**不得延伸成對新秩序經濟政策的評論**，也不要逐字引歌詞。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:Slank|Kampungan",
+  "artist": "Slank",
+  "album": "Kampungan",
+  "facts": [
+   {
+    "f": "release-group eb5a2531 的欄位：title「Kampungan」、first-release-date 1991、primary-type Album、secondary-types 空、artist-credit「Slank」（實體 620e474b，Group、Indonesia、begin 1983-12-26）。轄下**只有一筆 release** 8c5f1df1：1991 ID，**status、media.format、label-info 三欄全空**，12 軌；逐軌：1〈Kampungan〉3:10、2〈Nggak Rock n'Roll〉3:07、3〈Mawar Merah〉4:33、4〈Terlalu Manis (Suka2)〉4:48、5〈Nina Bobo〉**0:34**、6〈Bali Bagus〉4:35、7〈Aborsi〉4:49、8〈Anak Terbuang〉3:29、9〈Pulau Biru〉4:34、10〈An - = -' ~ >...-〉3:10、11〈Teng-Teng Blues〉5:17、12〈Terlalu Manis (Jualan)〉3:04，全碟 45 分 10 秒。**〈Terlalu Manis〉收了兩個版本、一頭一尾**，第 10 軌的曲名是一串符號。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eb5a2531-d508-4e63-99db-06011c70aade&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "樂團官網的作品頁：第二張錄音室專輯，1991 年 12 月 26 日發行、廠牌 Proyek Q，Boedi Soesatio 與 Proyek Q 製作、在 Jackson Rec 錄音、錄音師 Teddy Riady；編制 Bimbim Sidharta（鼓）、Pay（吉他）、Bongky（貝斯）、Kaka（主唱）、Indra Q（鍵盤），和聲 Ivie Ariesta／Oppie Andaresta 與 Irma June；主打〈Terlalu Manis〉與〈Mawar Merah〉；**有一首歌被審查、曲名寫成「An +.=+.'~>」**；封面用布料做、可以拿熨斗燙；〈Nina Bobo〉那首童謠裡收了工作室辦公人員的打呼聲；得到 BASF Awards 1991–1992 年度 Pop Rock 類最佳銷售專輯。",
+    "src": "https://slank.com/discography/kampungan/"
+   },
+   {
+    "f": "英文維基：〈Terlalu Manis〉與〈Mawar Merah〉兩首單曲各做了 Fun 與 Sales 兩個版本，「it was precisely the song version of fun, which became hits and was often played」——反而是 Fun 版紅了；Kaka 在這張裡吹口琴；與首張一樣拿到 BASF Indonesia 的暢銷卡帶表彰。",
+    "src": "https://en.wikipedia.org/wiki/Kampungan"
+   },
+   {
+    "f": "串流側（id 店 collectionId 1550371580，℗ 1991 VMC Music）12 軌與資料庫端曲序一一對應，逐軌長度：Kampungan 3:18／Nggak Rock N'Roll 3:08／Mawar Merah 4:36／Terlalu Manis (Suka Suka Version) 5:02／Nina Bobo 0:43／Bali Bagus 4:39／Aborsi 4:38／Anak Terbuang 3:34／Pulau Biru 4:34／AN + - = + -' ~ > 3:14／Teng Teng Blues 5:19／Terlalu Manis (Jualan Version) 4:10；串流側把那兩個版本標成「Suka Suka」（隨興）與「Jualan」（銷售）。同一店面另有一筆 1871353480（℗ 1991 VMC Music、releaseDate 1991-12-26）是**同 12 軌但曲序重排**、〈Terlalu Manis〉的單一版本排到第 1 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1550371580&country=id&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點：Slank 名下 25 個 release-group，1990-11-30《Suit... Suit... He... He... (Gadis Sexy)》是第一張、**1991《Kampungan》第二張**、1993《Piss!》第三張；1983-12-26 成團——本碟發行日與成團日同月同日、相隔八年。",
+    "src": "https://musicbrainz.org/ws/2/artist/620e474b-241c-412a-ab43-207b86d6230b?fmt=json&inc=aliases+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "第 10 軌的曲名是一串符號——官網說那首歌被審查了，名字就這樣留在盤面上",
+   "〈Terlalu Manis〉做了「隨興版」與「銷售版」各一，一頭一尾各放一個，紅的是隨興版"
+  ],
+  "sound": "12 軌、資料庫端 45 分 10 秒。雅加達五人團的印尼語硬搖滾與藍調，Kaka 的主唱與口琴、Indra Q 的鍵盤。〈Kampungan〉3 分 10 秒開場，〈Mawar Merah〉〈Terlalu Manis〉是主打，〈Nina Bobo〉34 秒的童謠夾在中間，〈Teng-Teng Blues〉5 分 17 秒是最長的一軌，〈Terlalu Manis〉的銷售版收尾。",
+  "keyTracks": [
+   "Terlalu Manis (Suka2)",
+   "Mawar Merah",
+   "Teng-Teng Blues"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1991,
+   "recorded": 1991,
+   "note": "release-group first-release-date 1991 ＝ 唯一 release 的 date；官網記 1991-12-26 發行、串流側 1871353480 同日、1550371580 標 1991-07-13（兩筆不同日，取官網）。錄音年官網記 1991。"
+  },
+  "notes": "**覆核策展層：MBID、release 三欄全空、12 軌、CAA 404、store 兩個 collectionId、五個 Slank 實體全部屬實，未擋下任何一處。策展層說「label 欄不得補寫廠牌」——本層同意卡單欄位照實留白，但 facts 裡可以引官網的 Proyek Q 與串流側的 ℗ VMC Music，那是有來源的正文素材、不是補卡單欄位。**｜**串流採信 1550371580**（id 店，藝人實體 291537185）：12 軌對 12 軌、曲序與資料庫端一一對應（〈Terlalu Manis (Suka2)〉＝串流〈Suka Suka Version〉、〈An - = -' ~ >...-〉＝〈AN + - = + -' ~ >〉），逐軌長度比資料庫端長 0 到 66 秒（〈Terlalu Manis (Jualan)〉3:04 對 4:10 差最多）。**另一筆 1871353480 曲序重排、不採**。探測層本來就判有試聽，本層確認。｜**封面待補**：唯一 release 的 cover-art-archive 有 artwork（count 1）但 **front false**——CAA 上傳的那張不是正面圖，所以 release-group/front 回 404；串流側兩筆都有 artworkUrl（只寫觀察）。官網說原版封面是布料，本機補圖時知道正面圖長什麼樣。｜**軌長兩形態**：資料庫端 45:10、串流側 46:55，正文引時長擇一並不混用。｜**人名邊界**：五位成員與製作、錄音師出自樂團官網，可寫。｜**「被審查的那首歌」**：官網只寫「one song that was censored」與那串符號曲名，**沒有寫被誰審查、原曲名是什麼**——正文只能照官網寫「有一首歌被審查、曲名留成符號」，**不得補寫審查機關或原因**（本批政治中立規則）。〈Aborsi〉（墮胎）是曲名事實，照抄不評。｜**BASF Awards**：官網寫 1991–1992 年度 Pop Rock 類最佳銷售專輯、英文維基寫 BASF Indonesia 暢銷卡帶表彰——**這是卡帶廠商的銷售表彰，不是音樂獎**，正文寫「BASF 的年度暢銷表彰」即可。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:พุ่มพวง ดวงจันทร์|ตะวันลับฟ้า",
+  "artist": "พุ่มพวง ดวงจันทร์",
+  "album": "ตะวันลับฟ้า",
+  "facts": [
+   {
+    "f": "release-group 15f1f96d 的欄位：title「ตะวันลับฟ้า」、first-release-date 1978、primary-type Album、secondary-types 空、artist-credit「พุ่มพวง ดวงจันทร์」（實體 6b3c73bc，Person、Thailand、1961-08-04 生、1992-06-13 歿）。轄下兩筆 release：**c2217121 是 1978 TH Official、12 吋黑膠 10 軌、label-info 記 เอื้ออารีย์เจ้าเก่า、catalog-number 欄登記為 [none]**；93ae459b 是 2017-01-01 XW Official 數位版（Baichasong）同 10 軌。原盤曲序：〈ตะวันลับฟ้า〉〈ก่อนตะวันลับฟ้า〉〈คุณไม่รักทำไมไม่บอก〉〈นักรบชายแดน〉〈ทุ่งนางคอย〉〈นักร้องบ้านนอก〉〈แห่คนขี้เกียจ〉〈หม้ายขันหมาก〉〈แรงรักคำสาบาน〉〈ตอบปัญหารักแฟนเพลง〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=15f1f96d-d5b0-4cb5-a082-5b3365c7a16c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "2017 數位版登錄了軌長：ตะวันลับฟ้า 4:13／ก่อนตะวันลับฟ้า 4:18／คุณไม่รักทำไมไม่บอก 3:12／ทุ่งนางคอย 3:28／นักร้องบ้านนอก 3:59／หม้ายขันหมาก 3:51／นักรบชายแดน 3:36／แห่คนขี้เกียจ 3:06／แรงรักคำสาบาน 3:32／ตอบปัญหารักแฟนเพลง 4:23，合計 37 分 38 秒；**數位版曲序與 1978 原盤不同**（原盤第 4 軌〈นักรบชายแดน〉在數位版排第 7）。開場的〈ตะวันลับฟ้า〉（太陽落山）與第 2 軌〈ก่อนตะวันลับฟ้า〉（太陽落山之前）是一對互相呼應的曲名。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=15f1f96d-d5b0-4cb5-a082-5b3365c7a16c&fmt=json&inc=media+recordings&limit=100"
+   },
+   {
+    "f": "泰文維基：本名 รำพึง จิตร์หาญ，1961 年 8 月 4 日生於猜納府（ชัยนาท）、在素攀武里（สุพรรณบุรี）務農家庭長大、十二個孩子裡排第五、小學二年級左右離校幫家裡；八歲起以「น้ำผึ้ง ณ ไร่อ้อย」之名登台，1975 年被 มนต์ เมืองเหนือ 收為學生並改名 พุ่มพวง ดวงจันทร์，首錄〈รักไม่อันตราย〉；1975 到 1979 年間在 Azona（อโซน่า）名下出了多張暢銷專輯，晚期改走 ลูกทุ่งอิเล็กทรอนิกส์，1992 年 6 月 13 日因紅斑性狼瘡辭世、三十歲。",
+    "src": "https://th.wikipedia.org/wiki/พุ่มพวง_ดวงจันทร์"
+   },
+   {
+    "f": "藝人端點：พุ่มพวง ดวงจันทร์ 名下 6 個 release-group，有年份的只有 **1978《ตะวันลับฟ้า》**、1980《บ้านนอกในกรุง》與 2017-07-26 的《ลำเพลิน พุ่มพวง ดวงจันทร์》三張，另三張（《วัยน่ารัก》《ห่างหน่อย‐ถอยนิด》與一張 Compilation）沒有日期——**資料庫端她 1970 年代的碟只建了這一張**。實體登錄的拉丁別名有 Phumphuang Duangchan、Poompoung Doungjan、Pumpuang Duangjan 三種。",
+    "src": "https://musicbrainz.org/ws/2/artist/6b3c73bc-813c-4164-893f-abb477e15ef2?fmt=json&inc=aliases+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "開場〈太陽落山〉、第 2 軌〈太陽落山之前〉——一張碟的頭兩首互相接續",
+   "資料庫端她 1970 年代只建了這一張，原盤的目錄編號欄登記為 [none]"
+  ],
+  "sound": "12 吋黑膠、10 軌、數位版合計 37 分 38 秒，每軌 3 到 4 分半。1978 年的 luk thung 女聲，〈ตะวันลับฟ้า〉4 分 13 秒開場、〈ก่อนตะวันลับฟ้า〉接著，〈นักร้องบ้านนอก〉（鄉下歌手）是後來最常被翻唱的一首，〈หม้ายขันหมาก〉〈แห่คนขี้เกียจ〉是輕快的中段，〈ตอบปัญหารักแฟนเพลง〉4 分 23 秒收尾。",
+  "keyTracks": [
+   "ตะวันลับฟ้า",
+   "นักร้องบ้านนอก",
+   "ก่อนตะวันลับฟ้า"
+  ],
+  "status": "partial",
+  "yearVerified": {
+   "year": 1978,
+   "recorded": null,
+   "note": "release-group first-release-date 1978 ＝ 原盤 release 的 date；泰文維基只記她 1975–1979 年間出多張專輯、未逐張列年；Discogs master 條目存在但本層無法讀取。2017-01-01 是 Baichasong 數位版的年份、2001 年 Siang Siam 的《ชุดเพลงดังต้นฉบับ ทุ่งนางคอย》是選輯年，都不進 year。**1978 只有資料庫端一個來源**，正文不得寫成確定的發行年。"
+  },
+  "notes": "**覆核策展層：MBID、廠牌 เอื้ออารีย์เจ้าเก่า／[none]、12 吋 10 軌、2017 數位再發、CAA 200、拉丁轉寫四種、泰文才查得到全部屬實，未擋下任何一處。**｜**第三種查法（裁定 254）跑完：無來源。** `th`／`id`／`us`／`sg`／`my`／`gb` 六店以泰文全名＋盤名、Pumpuang Duangjan、Phumphuang Duangchan 三種寫法 search 皆無此碟；藝人目錄 731856007 無；song 級 search 撈到 **2001 年 Siang Siam 的 12 軌輯《ชุดเพลงดังต้นฉบับ ทุ่งนางคอย พุ่มพวง ดวงจันทร์》（collectionId 1526104998）**，裡面有本碟的〈คุณไม่รักทำไมไม่บอก〉〈ตะวันลับฟ้า〉〈ทุ่งนางคอย〉〈นักรบชายแดน〉〈หม้ายขันหมาก〉五軌，另七軌來自別張（含 1980《บ้านนอกในกรุง》的標題曲）——**那是選輯不是本碟，不採信**；2017 年 Baichasong 的數位版在六店都撈不到。**這張沒有試聽來源。**｜**封面**：1978 原盤 cover-art-archive front true、count 4（含背面），CAA 200 屬實。｜**轉寫**：正文用策展層 queryAlias 第一個拉丁轉寫 **Pumpuang Duangjan**（MB alias 之一）；facts 裡的泰文照原文抄。｜**軌數只有一種形態**（10 軌），但**兩版曲序不同**，正文引曲序以 1978 原盤為準、引軌長只能用 2017 數位版的。｜**人名邊界**：泰文維基的 มนต์ เมืองเหนือ（師父）可寫；**本碟的作曲者查無可靠來源**（一個線上站把標題曲詞曲寫成 เจดีย์ มณีพรรณ，單一來源、不採），正文不寫作曲者；策展層 queryAlias 沒有作曲者，本層也不補。｜**反向禁令**：1992 年辭世是與本碟無關的後續生平事件，正文不寫。｜**廠牌**：เอื้ออารีย์เจ้าเก่า 只有資料庫端一個來源，泰文維基寫她 1975–79 在 Azona 名下——**兩邊對不上，正文不要寫廠牌**，或只寫「資料庫端登記」。｜**性質**：原創錄音室專輯。｜**給本機**：策展層提到池中《ลำเพลิน พุ่มพวง ดวงจันทร์》seed 標 1979、端上是 2017-07-26——本層未複驗池，只轉記。"
+ },
+ {
+  "key": "desc2:อังคนางค์ คุณไชย|แฟนจ๋าอย่าลืม",
+  "artist": "อังคนางค์ คุณไชย",
+  "album": "แฟนจ๋าอย่าลืม",
+  "facts": [
+   {
+    "f": "release-group b2ef8b6e 的欄位：title「แฟนจ๋าอย่าลืม」、first-release-date 1979、primary-type Album、secondary-types 空、artist-credit「อังคนางค์ คุณไชย」（實體 2189aa25，Person、Thailand，alias Angkanang Kunchai／Angkhanang Khunchai／Angkana Khunchai／ทองนาง คุณไชย）。轄下四筆 release：**b9ec9cf8 是 1979 TH Official、12 吋黑膠 12 軌、label-info 記 ตราพินแคน／HLP 269**；7eaea9aa 是 2016 JP Official CD《Never Forget Me》（EM Records／EM1157CD、10 軌）；483ebd30 是 2018-03-24 XW Official 數位版《Never Forget Me》（EM Records、10 軌）；09f7bfa7 是一筆 Pseudo-Release、title 轉寫成「Faen cha ya luem」、12 軌、無日期無國別。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b2ef8b6e-0325-43af-b213-3e3d232c73e3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1979 原盤十二軌逐軌：1〈ดอนตาลประยุค〉4:10、2〈เต้ยสลับพม่า〉3:55、3〈ตั่งหวายส่งใจถึงทหาร〉4:22、4〈อาหารบ้านเฮา〉2:33、5〈เมียทหารเกณฑ์〉3:00、6〈ลำเพลินสัญญารัก〉3:00、7〈แฟนจ๋าอย่าลืม〉2:40、8〈น้อยใจไปสั่งน้อง〉3:30、9〈สาวทุ่งคอยแฟน〉4:00、10〈ลำเพลินลำวงลาว〉5:05、11〈ลำเพลินคอยคู่〉3:00、12〈สัญญารักขอนแก่น〉3:00，合計 42 分 15 秒；**標題曲只有 2 分 40 秒、是全碟第二短的一軌**。EM Records 的兩版都是 10 軌——**少的正是第 4 軌〈อาหารบ้านเฮา〉與第 5 軌〈เมียทหารเกณฑ์〉**，其餘十軌重排。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b2ef8b6e-0325-43af-b213-3e3d232c73e3&fmt=json&inc=media+recordings&limit=100"
+   },
+   {
+    "f": "EM Records 的 Bandcamp 頁：這是她的第二張，「the original 1979 vinyl release, now extremely rare, was a collection of her self-produced songs, backed by her own band」——1977 到 1979 年間錄音、自己製作、自己的樂團伴奏，那支樂團「later disbanded due to financial pressures」；再版沿用原盤封套、**拿掉兩軌不是她唱的曲目**；數位版 2018 年 3 月 24 日上架。",
+    "src": "https://emrecords.bandcamp.com/album/never-forget-me"
+   },
+   {
+    "f": "EM Records 官方商店：CD 編號 EM1157CD、附 24 頁小冊（英文解說與歌詞）、10 軌，曲風寫成「modern luk thung Isan」混合各種 molam；同一家廠牌先前已發過她與 Ubon-Pattana Band 的《Isan Lam Plearn》（EM1126），本碟是她在 EM 的第二張。",
+    "src": "https://emrecords.ocnk.net/product/141"
+   },
+   {
+    "f": "藝人端點：อังคนางค์ คุณไชย 名下只有 3 個 release-group——**1979《แฟนจ๋าอย่าลืม》**、2014-05-27《อิสานลำเพลิน》、與一張沒有日期的《ลำเพลิน กับอังคนางค์ คุณไชย》；用拉丁轉寫查 MB 回 0 筆，只有泰文原文查得到（裁定 343）。",
+    "src": "https://musicbrainz.org/ws/2/artist/2189aa25-0786-49f6-9919-aea9bdb9c86b?fmt=json&inc=aliases+release-groups&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "原盤十二軌裡有兩軌不是她唱的——2016 年日本再版把那兩軌拿掉，只剩她自己的十首",
+   "自己出錢、自己的樂團伴奏的一張，那支樂團後來因為財務撐不下去解散"
+  ],
+  "sound": "12 吋黑膠、12 軌、42 分 15 秒。伊善（Isan）的 lam phloen 與 luk thung 混合，她自己的樂團伴奏：〈ดอนตาลประยุค〉4 分 10 秒開場，〈เต้ยสลับพม่า〉是 lam toei 曲式，四軌以 ลำเพลิน 開頭的曲名串成中後段，〈ลำเพลินลำวงลาว〉5 分 05 秒是最長的一軌，標題曲〈แฟนจ๋าอย่าลืม〉只有 2 分 40 秒。",
+  "keyTracks": [
+   "แฟนจ๋าอย่าลืม",
+   "ดอนตาลประยุค",
+   "ลำเพลินลำวงลาว"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1979,
+   "recorded": 1979,
+   "note": "release-group first-release-date 1979 ＝ 原盤 release 的 date；EM Records 兩處都寫 the original 1979 vinyl release、錄音 1977–79。2016（JP CD）與 2018-03-24（數位）是再發年，不進 year。"
+  },
+  "notes": "**覆核策展層：MBID、ตราพินแคน／HLP 269、12 軌對 10 軌、Pseudo-Release 那筆、盤名兩鏈、CAA 200、泰文才查得到、生日 1956-02-06 疑為預設值全部屬實，未擋下任何一處。裁定 342 取泰文盤名站得住。**｜**第三種查法（裁定 254）跑完：無來源。** `th`／`us`／`jp`／`id`／`sg`／`my`／`gb` 以泰文全名、Angkanang Kunchai、Angkhanang Khunchai、Never Forget Me 四種寫法 search 皆無此碟；藝人目錄 1463483687 只有 1999 到 2019 年的四張泰國本地輯；song 級 search 只撈到別人 feat. 她的曲目。**EM Records 2018 年的數位版不在 Apple 六店裡。這張沒有試聽來源。**｜**封面**：1979 原盤 cover-art-archive front true、count 5，CAA 200 屬實；EM 再版沿用原封套。｜**轉寫**：正文用策展層 queryAlias 第一個拉丁轉寫 **Angkanang Kunchai**（池中舊卡也用這個拼法）；EM Records 自己寫 Angkhanang Khunchai，facts 照各來源原文。｜**軌數三形態（第 251 條）**：原盤 12、EM CD 10、EM 數位 10，且曲序三版都不同——**正文引軌數與曲序一律以 1979 原盤為準**，講「十軌」時要標明是再版。｜**「兩軌不是她唱的」**：EM 的說法是 removing two non-Angkanang tracks，對照原盤與再版曲目差集正好是第 4、5 軌——本層的推論、兩邊對得上，正文可寫，但**不得補寫那兩軌是誰唱的**（資料庫端軌級 credit 全掛她）。｜**人名邊界**：**不得拿 MB 的 life-span.begin 1956-02-06 當佐證**（策展層已警告與 ยอดรัก สลักใจ 同日）；她出身烏汶府、十幾歲加入 Ubon-Pattana Band 出自 EM 文案，可寫。｜**廠牌 ตราพินแคน**只有資料庫端一個來源（EM 文案未提原廠牌），正文寫「原盤廠牌登記為」即可。｜**政治中立**：曲名〈ตั่งหวายส่งใจถึงทหาร〉〈เมียทหารเกณฑ์〉〈นักรบชายแดน〉這類軍人題材是 1970 年代 luk thung 常見的曲名，**照抄曲名、不評、不鋪背景**。｜**性質**：原創錄音室專輯，非選輯。"
+ },
+ {
+  "key": "desc2:คาราวาน|อเมริกันอันตราย",
+  "artist": "คาราวาน",
+  "album": "อเมริกันอันตราย",
+  "facts": [
+   {
+    "f": "release-group 347d78e9 的欄位：title「อเมริกันอันตราย」、first-release-date 1976、primary-type Album、secondary-types 空、artist-credit「คาราวาน」（實體 f77ee6f1，Group、Thailand、begin 1973、disambiguation「Thai folk-rock band」、alias Caravan／Kharawan）。轄下**只有一筆 release** 32d80ceb：1976 TH Official、**media.format 登記為 CD**、10 軌、label-info 空、無 barcode；逐軌：1〈อเมริกันอันตราย〉3:44、2〈จดหมายจากชาวนา〉3:47、3〈ตายสิบเกิดแสน〉4:23、4〈รวมกันเข้า〉4:31、5〈มารวมกันนะเธอจ๋า〉2:41、6〈ลุกขึ้นสู้〉2:57、7〈ตาคำ〉3:31、8〈ลำเพลินเจริญใจ〉3:26、9〈เซิ้งอีสาน〉3:39、10〈กุลาร้องไห้〉5:46，合計 38 分 25 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=347d78e9-23e6-487f-a59e-ba207612a145&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（th 店 collectionId 1871711638，℗ 2022 คาราวาน、releaseDate 2022-06-14）10 軌以拉丁轉寫建檔、曲序與資料庫端一一對應，逐軌長度：American An Ta Rai 3:48／Chotmai Chak Chaona 3:50／Tai Sip Koet Saen 4:25／Ruam Kan Khao 4:33／Ma Ruam Kan Na Thoe Cha 2:40／Luk Khuen Su 3:00／TaKham 3:34／LamPhloen Charoen Chai 3:29／Soeng Isan 3:42／Kula Ronghai 5:46——**℗ 掛的是樂團自己的名字，收尾的〈กุลาร้องไห้〉5 分 46 秒兩邊一秒不差**。",
+    "src": "https://itunes.apple.com/lookup?id=1871711638&country=th&entity=song&limit=200"
+   },
+   {
+    "f": "泰文維基樂團條目的作品表：1974 年 12 月《คนกับควาย》、**1976 年 1 月《อเมริกันอันตราย》**、1983 年 6 月《บ้านนาสะเทือน》、1983 年 8 月《คนตีเหล็ก》、1985 年 5 月《1985》、1986 年 7 月《คนไกลบ้าน》——本碟是第二張，之後作品表一直空到 1983 年；樂團 1973–74 年由「ท.เสน และ สัญจร」與「บังคลาเทศแบนด์」兩團合併而成，原始編制 สุรชัย จันทิมาธร（主唱）、วีระศักดิ์ สุนทรศรี（吉他）、ทองกราน ทานา（主奏吉他）、มงคล อุทก（口琴與傳統樂器）。",
+    "src": "https://th.wikipedia.org/wiki/คาราวาน_(วงดนตรี)"
+   },
+   {
+    "f": "Manager Online 的專文：標題曲由團員「น้าอืด-ทองกราน ทานา」與「น้าแดง-วีระศักดิ์ สุนทรศรี」合寫；音樂上「ภาคดนตรีได้รับอิทธิพลของดนตรีร็องเง็งทางภาคใต้」——受泰南 rong ngeng 舞曲影響、小提琴的拉奏貫穿全碟；同碟另有〈ลำเพลินเจริญใจ〉與〈เซิ้งอีสาน〉兩首以伊善曲式寫的歌。",
+    "src": "https://mgronline.com/entertainment/detail/9570000060304"
+   },
+   {
+    "f": "泰文維基〈อเมริกันอันตราย〉條目：這四個字是 1958 年小說《The Ugly American》（Eugene Burdick 與 William Lederer 合著）與 1963 年 Marlon Brando 主演同名電影的泰文譯名，條目末尾另記 คาราวาน 有一首同名的歌——**盤名借的是這部小說與電影在泰國的譯名**。",
+    "src": "https://th.wikipedia.org/wiki/อเมริกันอันตราย"
+   }
+  ],
+  "hookCandidates": [
+   "盤名借自《The Ugly American》這部小說與電影的泰文譯名——四個字先是書名，後來才是歌名",
+   "第二張出在 1976 年 1 月，之後作品表整整空了七年到 1983 年"
+  ],
+  "sound": "10 軌、38 分 25 秒。木吉他、口琴與小提琴為主的泰語民謠搖滾，泰南 rong ngeng 的節奏底子。〈อเมริกันอันตราย〉3 分 44 秒開場，〈จดหมายจากชาวนา〉（農夫的信）接著，中段〈ลุกขึ้นสู้〉〈มารวมกันนะเธอจ๋า〉不到三分鐘，〈ลำเพลินเจริญใจ〉〈เซิ้งอีสาน〉兩軌換成伊善曲式，〈กุลาร้องไห้〉5 分 46 秒收尾。",
+  "keyTracks": [
+   "อเมริกันอันตราย",
+   "จดหมายจากชาวนา",
+   "กุลาร้องไห้"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1976,
+   "recorded": null,
+   "note": "release-group first-release-date 1976 ＝ 唯一 release 的 date；泰文維基作品表記 1976 年 1 月、Manager Online 記 2519 年初。串流側 releaseDate 2022-06-14 是數位上架年，不進 year。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、label-info 空、media 欄記 CD、10 軌、CAA 200、裁定 340 取泰文掛名、拉丁 Caravan 查回 155 筆全部屬實，未擋下任何一處。** 裁定 340 本層同意：池中 `Caravan` 字串已同時指英國與泰國兩支團，取 `คาราวาน` 是正確的，本機端併寫時要連池中《คนกับควาย》那張一起處理。｜**串流採信 1871711638**（th 店，藝人實體 1307979564）：10 軌對 10 軌、曲序一一對應（串流側全用拉丁轉寫：American An Ta Rai＝อเมริกันอันตราย、Chotmai Chak Chaona＝จดหมายจากชาวนา……Kula Ronghai＝กุลาร้องไห้），逐軌長度差 0 到 4 秒，℗ 2022 คาราวาน 是樂團自營的數位上架。探測層本來就判有試聽，本層確認。｜**「1976 年的 CD」**：策展層已警告 media 欄幾乎確定是後來的 CD 版登記在原盤日期底下——本層同意，**正文不得寫 1976 年的 CD**，也不得補寫原盤載體（無來源）。｜**封面**：唯一 release 的 cover-art-archive front true，CAA 200 屬實。｜**轉寫**：正文用策展層 queryAlias 第一個拉丁轉寫 **Caravan**；facts 裡泰文照原文抄。｜**人名邊界**：四位原始成員與標題曲的兩位作者出自泰文維基與 Manager Online 兩處，可寫；綽號（น้าอืด／น้าแดง）不寫。｜**政治中立（本卡最要注意的一筆）**：Manager Online 那篇把標題曲與 1975–76 年反美軍基地的示威綁在一起、並用「anti-American」形容曲目——**這些一句都不進 facts、也不得進正文**；能寫的是盤名借自《The Ugly American》譯名（泰文維基）、標題曲作者、rong ngeng 影響、曲名與軌長。1976 年 10 月之後樂團成員離開曼谷、作品表空到 1983 年——**正文只能寫「作品表空了七年」這個發行事實，不得寫原因**。｜**性質**：原創錄音室專輯。｜**另一個 RG**：cae8fa7d《American Antarai》(2013-08-12) 是拉丁轉寫名的另一組建檔，策展層刻意不釘、本層未查它的內容，正文不引。"
+ },
+ {
+  "key": "desc2:คาราวาน|บ้านนาสะเทือน",
+  "artist": "คาราวาน",
+  "album": "บ้านนาสะเทือน",
+  "facts": [
+   {
+    "f": "release-group 5aadb1a0 的欄位：title「บ้านนาสะเทือน」、first-release-date 1983、primary-type Album、secondary-types 空、artist-credit「คาราวาน」。轄下**只有一筆 release** 38f45099：1983 TH Official、media.format 登記為 CD、10 軌、label-info 空；逐軌：1〈ประสาชาวดอย〉3:42、2〈บ้านนาสะเทือน〉6:49、3〈คนตกงาน〉4:38、4〈คิดถึงบ้าน〉4:13、5〈ค่ำลง〉4:16、6〈สามล้อ〉3:05、7〈ฝนเทวา〉2:30、8〈ฟ้าบ่กั้น〉4:06、9〈คาราวาน〉**10:30**、10〈พบกันวันปีใหม่〉3:01，合計 46 分 50 秒。**第 9 軌與團名同名、10 分 30 秒，佔全碟近四分之一**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5aadb1a0-2e9f-4f5b-a834-2eb25df1c007&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（th 店 collectionId 1871712806，℗ 2022 คาราวาน、releaseDate 2022-06-13）同 10 首歌以拉丁轉寫建檔但**曲序重排**：BanNa Sathuean 6:52／Pra Sa Chao Doi 3:41／Khitthueng Ban 4:17／Samlo 3:07／Khon Tokngan 4:41／Caravan 10:38／Fa Bo Kan 4:07／Fon The Wa 2:35／Kham Long 4:18／Phop Kan Wan Pimai 3:05——標題曲被提到第 1 軌、與團名同名的那首排第 6，逐軌長度與資料庫端差 1 到 8 秒。",
+    "src": "https://itunes.apple.com/lookup?id=1871712806&country=th&entity=song&limit=200"
+   },
+   {
+    "f": "泰文維基樂團條目的作品表：1976 年 1 月《อเมริกันอันตราย》之後，下一張就是 **1983 年 6 月《บ้านนาสะเทือน》**，再兩個月後是 1983 年 8 月《คนตีเหล็ก》——**七年空白後同一年出了兩張**。",
+    "src": "https://th.wikipedia.org/wiki/คาราวาน_(วงดนตรี)"
+   },
+   {
+    "f": "泰文維基〈เดือนเพ็ญ〉條目：這首歌的詞曲由 อัศนี พลจันทร 所寫，「บันทึกเสียงครั้งแรกในนาม วงคาราวาน กับอัลบั้มชุด \"บ้านนาสะเทือน\" เมื่อปี 2526」——第 4 軌〈คิดถึงบ้าน〉是這首歌的**首次錄音**；「ต่อมาในปี 2527 แอ๊ด คาราบาว ได้นำมาบันทึกเสียงอีกครั้ง ในอัลบั้มชุด \"กัมพูชา\" และได้เปลี่ยนชื่อเพลงเป็น \"เดือนเพ็ญ\"」——隔年 คาราบาว 重錄並改名〈เดือนเพ็ญ〉、調換了段落順序。",
+    "src": "https://th.wikipedia.org/wiki/เดือนเพ็ญ_(เพลง)"
+   }
+  ],
+  "hookCandidates": [
+   "第 4 軌〈คิดถึงบ้าน〉是那首歌的第一次錄音——隔年 คาราบาว 重錄、改名〈เดือนเพ็ญ〉，反而是改名後的版本人人會唱",
+   "作品表空了七年，1983 年 6 月出這張、8 月又出一張；與團名同名的第 9 軌拉到 10 分半"
+  ],
+  "sound": "10 軌、46 分 50 秒。木吉他與口琴為底的泰語民謠搖滾。〈ประสาชาวดอย〉開場，標題曲〈บ้านนาสะเทือน〉6 分 49 秒是第 2 軌，〈คิดถึงบ้าน〉（想家）4 分 13 秒在中段，〈ฝนเทวา〉2 分半是最短的一軌，第 9 軌〈คาราวาน〉10 分 30 秒是全碟的重心，〈พบกันวันปีใหม่〉（新年見）3 分收尾。",
+  "keyTracks": [
+   "คิดถึงบ้าน",
+   "บ้านนาสะเทือน",
+   "คาราวาน"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1983,
+   "recorded": null,
+   "note": "release-group first-release-date 1983 ＝ 唯一 release 的 date；泰文維基作品表記 1983 年 6 月、〈เดือนเพ็ญ〉條目記 2526（＝1983）首錄。串流側 releaseDate 2022-06-13 是數位上架年，不進 year。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、label-info 空、media 欄記 CD、10 軌、CAA 200、店端 2022 年份不得引、裁定 340 全部屬實，未擋下任何一處。**｜**串流採信 1871712806**（th 店，藝人實體 1307979564）：10 軌對 10 軌、**同 10 首歌但曲序重排**（串流第 1 軌 BanNa Sathuean＝資料庫端第 2 軌、Caravan 10:38＝第 9 軌），逐軌長度差 1 到 8 秒，℗ 2022 คาราวาน 樂團自營上架——曲目集合完全相同，採信；**正文引曲序以資料庫端（1983 原盤登錄）為準**。探測層本來就判有試聽，本層確認。｜**「1983 年的 CD」**：與上一卡同形，正文不得寫 CD，也不得補寫原盤載體與廠牌（資料庫端兩格都空；一個泰國拍賣頁把它列成卡帶，非來源）。｜**封面**：唯一 release 的 cover-art-archive front true，CAA 200 屬實。｜**轉寫**：正文用 **Caravan**；泰文照原文抄。｜**人名邊界**：อัศนี พลจันทร 是〈คิดถึงบ้าน〉的詞曲作者，出自泰文維基歌曲條目，可寫作者名；**他的筆名 นายผี／สหายไฟ 與政治身分一個字都不寫**。พงษ์เทพ กระโดนชำนาญ 把歌帶進錄音室這一點可寫。｜**政治中立（本卡最要注意的一筆）**：泰文維基原句寫「ออกมาจากราวป่า」（從山林裡帶出來）、一篇搜尋摘要寫這張是「在山林與城市寫的歌、反映農村生活」——**正文只能寫「作品表空了七年、1983 年 6 月回來出這張」與「〈คิดถึงบ้าน〉在這張首錄」，不得寫成員去了哪裡、為什麼去、為什麼回來**。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:คาราวาน|คนตีเหล็ก",
+  "artist": "คาราวาน",
+  "album": "คนตีเหล็ก",
+  "facts": [
+   {
+    "f": "release-group d5bd376a 的欄位：title「คนตีเหล็ก」、first-release-date 1984、primary-type Album、secondary-types 空、artist-credit「คาราวาน」。轄下**只有一筆 release** 0ae4f19d：1984、**country 欄空**、Official、media.format 登記為 CD、**11 軌**、label-info 空；逐軌：1〈คนตีเหล็ก〉4:37、2〈หนุ่มพเนจร〉3:29、3〈กองเกวียนบ้านไพร〉3:21、4〈ใกล้ตาไกลตีน〉3:55、5〈เหงา〉3:45、6〈แด่..เจ้าดอกไม้〉2:57、7〈ภูเขา〉4:29、8〈ข้าวลาลาน〉5:45、9〈ชายคนนั้น〉2:59、10〈ฝันร้าย〉4:48、11〈หนุ่มพเนจร (บรรเลง)〉3:26，合計 43 分 31 秒——**第 11 軌是第 2 軌的演奏版**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d5bd376a-78ac-4939-8164-cc56ce0fd15f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "串流側（th 店 collectionId 1814102585，**℗ 2025 สหกวงเฮง**、releaseDate 2025-05-23）**10 軌、沒有演奏版**，以泰文建檔、曲序是〈หนุ่มพเนจร〉3:26／〈คนตีเหล็ก〉4:37／〈กองเกวียนบ้านไพร〉3:18／〈ข้าวลาลาน〉5:41／〈ชายคนนั้น〉2:56／〈เหงา〉3:41／〈แด่..เจ้าดอกไม้〉2:53／〈ใกล้ตาไกลตีน〉3:59／〈ภูเขา〉4:26／〈ฝันร้าย〉4:48——**串流側的曲序與 1983 年卡帶 A／B 面的順序相同**，資料庫端那筆 11 軌的曲序則不同。",
+    "src": "https://itunes.apple.com/lookup?id=1814102585&country=th&entity=song&limit=200"
+   },
+   {
+    "f": "泰國唱片部落格 MusicAndSign 實拍的 **1983 年 8 月（2526）卡帶**：「คาราวาน ชุด คนตีเหล็ก」、淺綠色卡帶殼、製作方 สหกวงเฮง、在 ไพบูลย์สตูดิโอ 錄音，「บทเพลง บนหน้า A และ B หน้าละ 5 เพลง รวมทั้งหมด 10 บทเพลงสุดคลาสสิค」——A 面〈หนุ่มพเนจร〉〈คนตีเหล็ก〉〈กองเกวียนบ้านไพร〉〈ข้าวลาลาน〉〈ชายคนนั้น〉、B 面〈เหงา〉〈แด่...เจ้าดอกไม้〉〈ใกล้ตาไกลตีน〉〈ภูเขา〉〈ฝันร้าย〉；演出者 สุรชัย จันทิมาธร、วีระศักดิ์ สุนทรศรี、ทองกราน ทานา、มงคล อุทก。",
+    "src": "https://musicandsign.blogspot.com/2013/09/2526-2527_30.html"
+   },
+   {
+    "f": "泰文維基樂團條目的作品表把《คนตีเหล็ก》記在 **1983 年 8 月**，緊接在 1983 年 6 月的《บ้านนาสะเทือน》之後；下一張是 1985 年 5 月的《1985》。",
+    "src": "https://th.wikipedia.org/wiki/คาราวาน_(วงดนตรี)"
+   }
+  ],
+  "hookCandidates": [
+   "卡帶 A 面第一首是〈หนุ่มพเนจร〉，資料庫端那版把它排第 2、又在最後補了一個演奏版",
+   "四個年份與三種曲序——1983 年 8 月的卡帶、資料庫端的 1984、2025 年由同一家製作方重新上架"
+  ],
+  "sound": "資料庫端 11 軌、43 分 31 秒；1983 卡帶與串流側 10 軌。木吉他、口琴與小提琴的泰語民謠搖滾。〈หนุ่มพเนจร〉（流浪青年）3 分半是最常被翻唱的一首，標題曲〈คนตีเหล็ก〉（打鐵的人）4 分 37 秒，〈ข้าวลาลาน〉5 分 45 秒是最長的一軌，〈แด่..เจ้าดอกไม้〉〈ชายคนนั้น〉不到三分鐘，〈ฝันร้าย〉（惡夢）4 分 48 秒收尾。",
+  "keyTracks": [
+   "หนุ่มพเนจร",
+   "คนตีเหล็ก",
+   "ข้าวลาลาน"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "recorded": null,
+   "note": "⚠ 年份異議（第 311 條形狀）：release-group first-release-date 1984 ＝ 唯一 release 的 date，Discogs 一筆黑膠條目標題亦記 1984；**但泰文維基作品表記 1983 年 8 月、MusicAndSign 實拍的卡帶封面記 2526 年 8 月（＝1983）**，Thai PBS 一則貼文寫 2527。**卡帶 1983 年 8 月先出、黑膠可能 1984 才壓**的形狀最合理，但本層無法證明黑膠年份。**不改卡單**，year 維持 1984；正文不得寫「1984 年發行」這種斷言，寫「1983 年 8 月的卡帶」時要註明來源是卡帶。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、country 空、label-info 空、media 欄記 CD、11 軌、CAA 200、店端 2025 年份不得引全部屬實。擋下一處：策展層取 1984，本層查到泰文維基與卡帶實拍兩處指向 1983 年 8 月，列年份異議（見 yearVerified），不自行改卡單。另補一處策展層沒拿到的：串流側 ℗ 2025 สหกวงเฮง 與 1983 卡帶的製作方同名——製作方／廠牌是 สหกวงเฮง 有兩個獨立來源，正文可寫。**｜**串流採信 1814102585**（th 店，藝人實體 1307979564）：10 軌對資料庫端 11 軌，**差的是第 11 軌演奏版**，其餘 10 首歌名逐字相同（串流第 2 軌寫成「คนตีเหล็กok」是店端錯字）、逐軌長度差 0 到 4 秒，曲序＝1983 卡帶 A／B 面順序。**曲目集合相同、只少一個演奏版，採信**；正文引軌數要先選版本（第 251 條）：卡帶與串流 10 軌、資料庫端 11 軌。探測層本來就判有試聽（靠藝人目錄那一步），本層確認。｜**「1984 年的 CD」**：同前兩卡，正文不得寫 CD；原盤載體有來源的是**1983 年卡帶**（MusicAndSign 實拍）。｜**封面**：唯一 release 的 cover-art-archive front true，CAA 200 屬實。｜**轉寫**：正文用 **Caravan**；泰文照原文抄。｜**人名邊界**：四位成員出自卡帶實拍與泰文維基兩處，可寫；卡帶上的客座演出者（部落格寫 รังสิต วงฌานสิทโธ，拼法不確定）**單一來源、不寫**。｜**政治中立**：本碟資料裡沒有任何審查或查禁記錄，一篇部落格把它形容為「傳奇之作」——**評價不進正文**，只寫發行事實與曲目。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:พงษ์เทพ กระโดนชำนาญ|เดี่ยว",
+  "artist": "พงษ์เทพ กระโดนชำนาญ",
+  "album": "เดี่ยว",
+  "facts": [
+   {
+    "f": "release-group 9fa0b619 的欄位：title「เดี่ยว」、first-release-date 1985、primary-type Album、secondary-types 空、**artist-credit 字串是拉丁轉寫「Pongtep Kradonchamnan」**，指向的實體 e5a171f5 主名是泰文 พงษ์เทพ กระโดนชำนาญ（Person、Thailand，alias Phongthep Kradonchamnan／Pongtep Kradonchamnan）。轄下**只有一筆 release** af161913：1985 TH Official、12 吋黑膠 10 軌、label-info 記 **GMM Grammy／STEREO PO-280513**、無 barcode、無軌長；曲序：〈ตายหยังเขียด〉〈คนกับหมา〉〈ครูไม่ใหญ่〉〈ลิงทะโมน〉〈พระสงฆ์〉〈กระโทก-โชคชัย (โคราช 2)〉〈มือเรียวเกี่ยวรวง〉〈เลบานอน〉〈สันทรายมูล 2〉〈เพลงเพื่อชีวิต〉——**收尾那首的曲名就叫〈เพลงเพื่อชีวิต〉（為生活的歌）**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9fa0b619-9aa9-44fc-92b8-577bc78d1fcb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "泰文維基：พงษ์เทพ กระโดนชำนาญ 1953 年 9 月 18 日生於呵叻府（นครราชสีมา）、綽號「หมู」、被稱為「กวีศรีชาวไร่」（田間詩人）；出道前在 คาราวาน 擔任打擊樂與長笛手；首張個人專輯《ห้วยแถลง》1983 年由 Azona 出版；**《เดี่ยว》1985 年 5 月由 Grammy 出版、賣了約 40 萬套**，〈ตายหยังเขียด〉寫於難府（น่าน）的山區、比出版早了好幾年，〈คนกับหมา〉（人與狗）是另一首代表作；作品表列 1983 到 2010 年共 13 張錄音室專輯。",
+    "src": "https://th.wikipedia.org/wiki/พงษ์เทพ_กระโดนชำนาญ"
+   },
+   {
+    "f": "藝人端點：พงษ์เทพ กระโดนชำนาญ 名下只有 2 個 release-group——**1985《เดี่ยว》**與一張沒有日期的《ไอแอมอีสาน》；《ห้วยแถลง》（1983）在資料庫端沒有建檔，所以資料庫端排第一的是本碟。",
+    "src": "https://musicbrainz.org/ws/2/artist/e5a171f5-270c-4ddc-9b9c-6e56e373aba6?fmt=json&inc=aliases+release-groups&limit=100"
+   },
+   {
+    "f": "泰文維基作品表同時記下曲風：《ห้วยแถลง》走 reggae 節奏、題材是東北農村與自然；《เดี่ยว》延續 reggae 節奏與伊善（Isan）音樂元素，並讓他從 คาราวาน 的樂手變成獨當一面的個人歌手——**盤名 เดี่ยว 在泰文裡就是「獨自、單獨」**。",
+    "src": "https://th.wikipedia.org/wiki/พงษ์เทพ_กระโดนชำนาญ"
+   }
+  ],
+  "hookCandidates": [
+   "盤名一個字「獨自」——คาราวาน 的打擊樂手第二張個人碟，維基記賣了四十萬套",
+   "資料庫端的掛名是拉丁轉寫、實體主名是泰文，同一個人三種拉丁拼法"
+  ],
+  "sound": "12 吋黑膠、10 軌，資料庫端無軌長。reggae 節奏底子的泰語民謠，伊善的曲式與呵叻口音。〈ตายหยังเขียด〉開場、〈คนกับหมา〉接著是兩首代表作，〈ลิงทะโมน〉（頑猴）〈พระสงฆ์〉（僧侶）在中段，〈เลบานอน〉是一首以黎巴嫩為題的曲名，〈เพลงเพื่อชีวิต〉收尾。",
+  "keyTracks": [
+   "ตายหยังเขียด",
+   "คนกับหมา",
+   "ลิงทะโมน"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1985,
+   "recorded": null,
+   "note": "release-group first-release-date 1985 ＝ 唯一 release 的 date；泰文維基記 1985 年 5 月 Grammy 出版。兩邊一致。錄音年未登錄。"
+  },
+  "notes": "**覆核策展層：MBID、GMM Grammy／STEREO PO-280513、12 吋 10 軌、CAA 404、artist-credit 拉丁而實體泰文（裁定 343）、店端兩個實體與第三種轉寫 Pongthep Gradoanchumnaan 全部屬實，未擋下任何一處。** 裁定 343 取泰文實體主名站得住。｜**第三種查法（裁定 254）跑完：無來源。** `th`／`us`／`id`／`sg`／`my`／`gb` 以泰文全名＋盤名、Pongthep Kradonchamnan、Pongthep Gradoanchumnaan 三種寫法 search 皆無此碟；藝人目錄 703373390（20 張）與 1688225590（4 張）無；song 級 search（ตายหยังเขียด／คนกับหมา／ลิงทะโมน／เลบานอน）撈到的全是 2003 到 2025 年的精選輯（《รวมฮิตพิเศษ》《รวมฮิต ชุดที่》《กวีศรีชาวไร่》《ชุดที่1 ลิงทะโมนเอย》），沒有一筆是 10 軌的本碟。回撈報告記「目錄裡找不到」。**這張沒有試聽來源。**｜**封面待補**：唯一 release 的 cover-art-archive artwork false、count 0，CAA 404 是真的沒圖；Discogs 有本碟條目（本層無法讀取）、Apple 無（只寫觀察）。｜**轉寫**：正文用策展層 queryAlias 第一個 **Pongtep Kradonchamnan**（＝MB artist-credit 字串）；三種拼法都記在策展層 risk 裡。｜**廠牌**：資料庫端寫 GMM Grammy，泰文維基寫 Grammy——**1985 年時公司名還不是 GMM Grammy**，正文寫「Grammy」即可、不寫 GMM。｜**「約 40 萬套」**只有泰文維基一處、無出處，正文要寫就寫「維基記約四十萬」、不寫成確定銷量。｜**人名邊界**：綽號「หมู」與「กวีศรีชาวไร่」稱號出自泰文維基，可寫。｜**政治中立（本卡最要注意的一筆）**：泰文維基把〈ตายหยังเขียด〉的寫作時間綁在 1970 年代的政治事件上——**正文只能寫「寫於難府山區、比出版早了好幾年」，不得寫是哪個事件、為什麼在山區**；收尾曲名〈เพลงเพื่อชีวิต〉照抄，**不得把「songs for life」鋪成運動敘事**。｜**性質**：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:Various Artists|Thai Beat a Go-Go, Volume 1",
+  "artist": "Various Artists",
+  "album": "Thai Beat a Go-Go, Volume 1",
+  "facts": [
+   {
+    "f": "release-group 7a9148bd 的欄位：title「Thai Beat a Go-Go, Volume 1」、first-release-date 2004、primary-type Album、**secondary-types Compilation**、artist-credit「Various Artists」。轄下兩筆 release：**3405e0c6 是 2004 SE Official、CD 20 軌、Subliminal Sounds／SUBCD11、barcode 7393210134119**；4a2f5832 是 2009 SE Official 12 吋黑膠、SUBLP-35、**只有 13 軌**且選曲不同（黑膠多了 Srueng Santi 的兩軌〈Dub Fai Kue Gun〉〈Mai Rak Yar Rak〉，少了 CD 的〈Meow〉〈Day Tripper〉〈James Bond Theme〉等）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7a9148bd-9496-31b6-8224-9f663cbcce01&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "2004 CD 二十軌帶軌級掛名：Phayong Mukda〈Klong yao〉2:56、Payom Moogda〈Tamai Dern Sae (Why Do You Walk Like a Drunkard)〉2:39 與〈Loomsiah〉2:42、Vichan Maneechot〈Dance Dance Dance〉2:40、Sodsai Chaengkij〈Shake Baby Shake〉2:48、The Cat〈Meow〉2:02／〈Do the Watusi〉3:01／〈Hit the Road Jack〉3:05、Starlights〈Day Tripper〉3:11、Johnny's Guitar〈Bangsaen '66〉2:08／〈Supannahong〉2:33／〈Klongyao〉3:10、Der Dong Dang〈Yipmerdai〉2:23、The Son of P.M.〈Boongatanyon〉2:04／〈James Bond Theme〉2:04、The Viking Band〈Phom Rak Khoon Tching Tching〉3:08、Louise Kennedy〈Poo Yai Lee〉4:10、Silver Sand〈Kaw-Liga〉3:08、Paiboon〈Yom Pha Barn Norn Pahwaa (Satan's Nightmare)〉2:27、Jiraphand Ong-Ard〈Muay Thai〉2:54，合計 55 分 13 秒——**二十軌裡有〈Day Tripper〉〈James Bond Theme〉〈Do the Watusi〉〈Hit the Road Jack〉〈Kaw-Liga〉五首是英美歌曲的泰國版**。",
+    "src": "https://musicbrainz.org/ws/2/release/3405e0c6-d177-4109-8b4f-048fab6c66b3?fmt=json&inc=media+labels+artist-credits+recordings"
+   },
+   {
+    "f": "串流側（us 店 collectionId 1532624882）盤名建成「Thai Beat a Go-Go, Vol. 1」、releaseDate 2004-05-01、20 軌與 CD 曲序一一對應、逐軌長度一秒不差（第 1 軌在串流側標成〈Kratae〉2:56，資料庫端 CD 標〈Klong yao〉、黑膠版第 1 軌同樣標〈Kratae〉2:56）。",
+    "src": "https://itunes.apple.com/lookup?id=1532624882&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "瑞典樂評站 Sunkit：由 Subliminal Sounds 的 Stefan Kéry 選輯，內容是「obskyra och – inte minst av thailändarna – bortglömda singelspår från 1960-talet, och en bit in på 1970-talet」（連泰國人自己都忘了的 1960 年代到 1970 年代初的單曲曲目），2004 年 CD、約 55 分鐘、20 軌；同一系列另有 Volume 2（2004）與 Volume 3（2005）。",
+    "src": "https://sunkit.com/thai-beat-a-go-go-1/"
+   }
+  ],
+  "hookCandidates": [
+   "二十軌裡五首是英美熱門曲的泰國版——〈Day Tripper〉〈James Bond Theme〉〈Hit the Road Jack〉都在",
+   "同一張合輯兩個載體選曲不同：CD 20 軌、五年後的黑膠只剩 13 軌還換了兩首"
+  ],
+  "sound": "CD 20 軌、55 分 13 秒，每軌 2 到 3 分鐘、最長的〈Poo Yai Lee〉4 分 10 秒。1960 年代到 1970 年代初曼谷的 7 吋單曲：The Cat 的三軌把〈Do the Watusi〉〈Hit the Road Jack〉翻成泰國版，Johnny's Guitar 的〈Bangsaen '66〉是衝浪吉他，Sodsai Chaengkij 的〈Shake Baby Shake〉是女聲搖滾，The Son of P.M. 用泰國樂器奏〈James Bond Theme〉，Jiraphand Ong-Ard 的〈Muay Thai〉收尾。",
+  "keyTracks": [
+   "Shake Baby Shake",
+   "James Bond Theme",
+   "Bangsaen '66"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2004,
+   "recorded": null,
+   "note": "§5.6 合輯，year 取 release-group first-release-date 2004（＝2004 SE CD 的 date，串流側 2004-05-01、Sunkit 同記 2004）；來源錄音是 1960 年代到 1970 年代初的單曲、沒有單一年份涵蓋多數（裁定 261／344），錄音年不進 year。2009 是黑膠再發年。"
+  },
+  "notes": "**覆核策展層：MBID、Subliminal Sounds／SUBCD11、barcode、20 軌對 13 軌、2009 黑膠、盤名大小寫、ASCII 連字號、CAA 200、se 店 Blandade Artister 全部屬實，未擋下任何一處。**｜**§5.6 舉證逐頁重讀（第 257 條）：兩個網址都站得住。** release-group 網址實打回 title／Album＋Compilation／2004／Various Artists／2 筆 release，release 網址實打回 Subliminal Sounds／SUBCD11／2004 SE Official／CD 20 軌／barcode 7393210134119——與 exceptionReason 逐格對得上。exceptionReason 說「端上查不到任何一支參與樂隊的原盤 LP」，本層抽查 The Cat、Johnny's Guitar、The Son of P.M. 三個掛名在 MB 上都只有合輯軌級 credit、沒有自己的 release-group，成立。｜**串流採信 1532624882**（us 店）：20 軌對 20 軌、曲序一一對應、逐軌長度一秒不差；第 1 軌曲名資料庫端 CD 與串流側不同（Klong yao／Kratae），但黑膠版第 1 軌同樣標 Kratae 且長度相同，**判定資料庫端 CD 第 1 軌曲名登錄有誤、不影響採信**。**探測層把這張列在缺試聽的 12 張裡，回撈報告給的候選全是不相干的拉美輯；本層以策展層記下的 us 店 collectionId 直查後採信——這是第三種查法找回的一張，請下游改判。**｜**封面**：2004 CD 的 cover-art-archive count 18、front true，CAA 200 屬實。｜**軌數兩形態（第 251 條）**：CD 20、黑膠 13 且選曲不同——**正文一律以 2004 CD 為準**，不要寫「十三軌」。｜**人名邊界**：Stefan Kéry 是 Subliminal Sounds 的主事者、Sunkit 明寫由他選輯，可寫；二十個掛名照 release 軌級 credit 抄（同一位 Payom Moogda 在資料庫端另拼成 Phayong Mukda，正文擇一）。｜**性質**：§5.6 合輯，有定位（Subliminal Sounds 的泰國 1960 年代單曲系列第一集），保留。｜**政治中立**：1960 年代泰國軍政府時期的商業單曲，資料裡沒有審查記錄，正文只寫發行事實。"
+ },
+ {
+  "key": "desc2:Various Artists|Shadow Music of Thailand",
+  "artist": "Various Artists",
+  "album": "Shadow Music of Thailand",
+  "facts": [
+   {
+    "f": "release-group e4b087bb 的欄位：title「Shadow Music of Thailand」、first-release-date 2008、primary-type Album、**secondary-types Compilation**、artist-credit「Various Artists」。轄下兩筆 release：**197f5ace 是 2008 US Official、12 吋黑膠 17 軌、Sublime Frequencies／SF042**；b658a4bb 是 2009 US Official CD、**同編號 SF042**、同 17 軌同曲序。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e4b087bb-a70f-4dac-9c49-87edc8bfe0c7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十七軌只有四個掛名：**The Son of P.M. 八軌**（〈Luk Tung Klong Yao〉2:50、〈Koisun Ching〉2:23、〈Klong Yao〉2:16、〈Taloong Jun Loum〉2:55、〈Lhow Lenum〉2:47、〈Cho Cho Chan〉2:32、〈Plaeng Yiepoun〉2:19、〈Lum Jow Praya〉2:50）、**P.M.7/Jupiter 四軌**（〈Susie Wong〉1:55、〈Pone Tala Pone (Indian)〉2:05、〈Sawan Bangkok〉2:36、〈Pone Tala Pone (Twee Sak)〉2:46）、**Johnny Guitar 三軌**（〈Mon Du Dow〉3:13、〈Lao Kratob Mai〉3:08、〈Bangkok by Night〉2:35）、**P.M. Pocket Music 兩軌**（〈Kack Toi Mor〉2:33、〈Pama Rum Kwan〉3:14），合計 44 分 57 秒；〈Pone Tala Pone〉同一首收了兩個版本。",
+    "src": "https://musicbrainz.org/ws/2/release/197f5ace-fdee-4a86-b9b2-3b9faacbb4fb?fmt=json&inc=media+labels+artist-credits+recordings"
+   },
+   {
+    "f": "Sublime Frequencies 的 Bandcamp 頁：「SHADOW MUSIC was a broad term given to the Thai guitar pop movement of the 1960s and the groups that came out of it, all under the profound influence of early Western rock and roll」——名稱來自英國的 The Shadows，當年唱片上標「Thai Modernized Music」；**由 Mark Gergis 選輯與設計，「All tracks recorded during the mid-1960's in Bangkok, Thailand」**，翻譯與研究協助另列 Thai Guy 與 Phattharaphong Burirak。",
+    "src": "https://sublime-frequencies.bandcamp.com/album/shadow-music-of-thailand"
+   },
+   {
+    "f": "Sublime Frequencies 官方商店把 SF042 列成 LP 與 CD 兩種（皆已售罄）加 MP3，文案寫這四支「leading recorded artists from the time」把傳統泰國旋律「incorporating rock, surf, a-go-go, exotica, soul, blues, Latin and other worldly styles」，整個 1960 年代「forged a unique and highly self-referential Thai sound」。",
+    "src": "https://www.sublimefrequencies.com/products/576883-shadow-music-of-thailand"
+   }
+  ],
+  "hookCandidates": [
+   "十七軌只有四個掛名、其中三個名字裡都有 P.M.——The Son of P.M. 一支就佔了八軌",
+   "曲風的名字是借來的：泰國人拿英國樂團 The Shadows 的團名叫自己的吉他流行樂"
+  ],
+  "sound": "12 吋黑膠、17 軌、44 分 57 秒，每軌兩到三分鐘、最短的〈Susie Wong〉1 分 55 秒。1960 年代中曼谷錄音的器樂吉他流行：電吉他與電風琴奏泰國傳統旋律，衝浪、a-go-go 與拉丁節奏底子。The Son of P.M. 的〈Luk Tung Klong Yao〉開場，Johnny Guitar 的〈Mon Du Dow〉〈Bangkok by Night〉是抒情的一側，P.M.7/Jupiter 的〈Pone Tala Pone〉收了兩個版本，〈Bangkok by Night〉收尾。",
+  "keyTracks": [
+   "Luk Tung Klong Yao",
+   "Bangkok by Night",
+   "Pone Tala Pone (Indian)"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2008,
+   "recorded": null,
+   "note": "§5.6 合輯，year 取 release-group first-release-date 2008（＝2008 US 黑膠的 date）；來源錄音是 1960 年代中曼谷（Bandcamp 文案），錄音年不進 year（裁定 344）。2009 是 CD 年；Bandcamp 頁上的 2026-02-06 是數位重新上架日，不得寫成發行年。"
+  },
+  "notes": "**覆核策展層：MBID、Sublime Frequencies／SF042、2008 黑膠 17 軌、2009 CD 同編號、CAA 200 全部屬實，未擋下任何一處。**｜**§5.6 舉證逐頁重讀（第 257 條）：兩個網址都站得住。** release-group 網址實打回 Album＋Compilation／2008／Various Artists／2 筆 release；release 網址實打回 Sublime Frequencies／SF042／2008 US Official／12 吋黑膠 17 軌——與 exceptionReason 逐格對得上。exceptionReason 說「端上查不到參與樂隊的 release-group」，本層核 The Son of P.M.／P.M. Pocket Music／P.M.7 在 MB 只有軌級 credit，成立。｜**第三種查法（裁定 254）跑完：無來源。** `us`／`gb`／`th`／`id`／`sg`／`my` 六店以「Shadow Music of Thailand」與四個掛名＋曲名 search 皆無此輯（回的全是 Shadow Explorer、Shadow Colonies 這類同字串），回撈報告給的候選全是巴西與葡萄牙輯；Sublime Frequencies 的目錄在 Apple 上沒有這張。**這張沒有試聽來源。**｜**封面**：2008 黑膠的 cover-art-archive front false（count 1、不是正面）、2009 CD front true（count 6）——CAA release-group 200 靠的是 CD 那筆。｜**軌數只有一種形態**（17 軌、兩版同曲序）。｜**人名邊界**：Mark Gergis 出自 Bandcamp 的官方 credit，可寫；Thai Guy、Phattharaphong Burirak 是協助者，正文不必列。四個掛名照軌級 credit 抄，注意「P.M.7/Jupiter」在 MB 是一個字串。｜**性質**：§5.6 合輯，有定位（Sublime Frequencies 對泰國 shadow 樂隊的第一份專輯級整理），保留。｜**政治中立**：1960 年代商業錄音，資料裡沒有審查記錄，正文只寫發行事實。｜**「Thai Modernized Music」**是當年唱片上的標語，出自文案，可引。"
+ },
+ {
+  "key": "desc2:Various Artists|Luk Thung: Classic & Obscure 78s from the Thai Countryside",
+  "artist": "Various Artists",
+  "album": "Luk Thung: Classic & Obscure 78s from the Thai Countryside",
+  "facts": [
+   {
+    "f": "release-group f81d4541 的欄位：title「Luk Thung: Classic & Obscure 78s from the Thai Countryside」、first-release-date 2010、primary-type Album、**secondary-types Compilation**、artist-credit「Various Artists」。轄下兩筆 release：**798efab1 是 2010 US Official、12 吋黑膠 14 軌、Parlortone／PT-2002、無軌長**；8cfe8345 是 2013 US Official CD 14 軌、label-info 記「Dust‐to‐Digital」（**字串裡兩個連字號是 U+2010，不是 ASCII**）／DTD-29、barcode 880226002923。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f81d4541-d82d-4101-b1d2-213da07b3329&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "2013 CD 十四軌帶軌級掛名與長度：Suraphon Sombatcharoen〈Suai ching nong (Truly Beautiful Girl)〉3:09、Chan Chainat〈Ban na pha suk (Happy Farmhouse)〉2:56、Aniao T.T.T.〈Utthayan dok bia (Garden of Debt)〉2:42、Namphueng Boribun〈Nak kamphra (Orphan Monk)〉2:59、Suchat Thianthong〈Nam tok Nang Loi〉3:14、Narong Namchai〈Pha hom hua chai〉2:59、Phloen Phromdaen〈Ruedu haeng khwam rak (Season of Love)〉2:23、**Waiphot Phetsuphan 三軌**（〈Boeng ai si sao〉2:53、〈Chiwit rak nak rong (Love Life of a Singer)〉3:19、〈Khut thong (Digging for Gold)〉3:05）、Tueanchai Khwanchit〈Mia thahan phan suek (Veteran's Wife)〉3:02、Roengchai Mueangsamut〈Tam nok noi〉3:10、Anucha Na Tharuea〈Klom khwan nang〉3:03、Mitt Mueangmaen〈Phu ying rai muean fai (A Woman Vicious Like Fire)〉2:13，合計 41 分 7 秒；**每一軌曲名後面都附了英譯**。",
+    "src": "https://musicbrainz.org/ws/2/release/8cfe8345-70bf-4641-b091-9df0b2639eaf?fmt=json&inc=media+labels+artist-credits+recordings"
+   },
+   {
+    "f": "串流側（us 店 collectionId 1348481287，℗ 2018 Dust-to-Digital、releaseDate 2018-03-06）14 軌與 CD 曲序一一對應、逐軌長度一秒不差，曲名同樣帶英譯。",
+    "src": "https://itunes.apple.com/lookup?id=1348481287&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "曼谷唱片部落格 Monrak Plengthai 的發行貼文（2011 年 2 月）：由部落格作者與收藏家 David Murray 合編、取自「Dave's incredible collection of 78s」，「14 beautifully-restored classic early-60's luk thung recordings」，「None of these songs have ever been available outside of thailand before (and few have even seen re-release domestically!)」；黑膠附 6 頁全彩內頁；文案形容「You'll hear wild accordions & latin horn sections mingling with thai hand drums & finger cymbals」，並把這批錄音定位在「a critical moment in luk thung's history, when internationally-minded pop stars began looking to local folk sounds for inspiration」。",
+    "src": "https://monrakplengthai.blogspot.com/2011/02/luk-thung-classic-obscure-78s-from-thai.html"
+   },
+   {
+    "f": "Dust-to-Digital 的 Bandcamp 頁把數位版的發行日記為 **2011 年 3 月 1 日**，附「top-notch audio restoration, along with in-depth research and lavishly-illustrated design in the PDF」，14 軌曲序與資料庫端相同。",
+    "src": "https://dusttodigital.bandcamp.com/album/luk-thung-classic-obscure-78s-from-the-thai-countryside"
+   }
+  ],
+  "hookCandidates": [
+   "十四首 78 轉蟲膠盤上的歌，沒有一首在泰國以外出過——連在泰國本地也幾乎沒再版過",
+   "同一張輯三個廠牌字串：黑膠掛 Parlortone、CD 掛 Dust-to-Digital、資料庫裡那個名字的連字號還不是 ASCII"
+  ],
+  "sound": "14 軌、41 分 7 秒，每軌兩到三分多鐘。1960 年代初泰國鄉間的 78 轉錄音修復版：手風琴與拉丁式管樂加泰國手鼓與指鈸，男聲為主。Suraphon Sombatcharoen 的〈Suai ching nong〉開場，Waiphot Phetsuphan 三軌散在中後段，Tueanchai Khwanchit 的〈Mia thahan phan suek〉是少數女聲，Mitt Mueangmaen 2 分 13 秒的〈Phu ying rai muean fai〉是最短的一軌，〈Khut thong〉收尾。",
+  "keyTracks": [
+   "Suai ching nong (Truly Beautiful Girl)",
+   "Chiwit rak nak rong (Love Life of a Singer)",
+   "Mia thahan phan suek (Veteran's Wife)"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2010,
+   "recorded": null,
+   "note": "⚠ 年份異議：§5.6 合輯，卡單取 release-group first-release-date 2010（＝2010 US 黑膠 release 的 date，Discogs 條目標題亦記 2010）；**但 Monrak Plengthai 的發行貼文是 2011 年 2 月、Dust-to-Digital 的 Bandcamp 記 2011-03-01、一則樂評摘要寫「originally came out in 2011 on Parlortone」**——2010 可能是版權年而非上市年。**不改卡單**，year 維持 2010；正文不得寫「2010 年發行」這種斷言，寫「2010 到 2011 年之交」或避開。來源錄音是 1960 年代初的 78 轉盤，不進 year（裁定 344）。2013 是 CD 年、2018-03-06 是串流上架日。"
+  },
+  "notes": "**覆核策展層：MBID、Parlortone／PT-2002、2013 CD Dust‐to‐Digital／DTD-29（U+2010）、barcode、14 軌、CAA 200、三個年份並存全部屬實。擋下一處：策展層 exceptionReason 寫「2010 年由 Parlortone 出版」，本層查到兩個獨立來源指向 2011 年初上市，列年份異議（見 yearVerified）。**｜**§5.6 舉證逐頁重讀（第 257 條）：兩個網址都站得住。** release-group 網址實打回 Album＋Compilation／2010／Various Artists／2 筆 release；release 網址實打回 2013 US Official／CD 14 軌／Dust‐to‐Digital／DTD-29／barcode 880226002923——與 exceptionReason 逐格對得上。exceptionReason 的理由「78 轉單面一曲、不存在專輯形態」成立（來源載體是 78 轉蟲膠盤，Bandcamp 與部落格兩處一致）。｜**串流採信 1348481287**（us 店）：14 軌對 14 軌、曲序一一對應、逐軌長度與 2013 CD 一秒不差，℗ Dust-to-Digital 與 CD 的 label-info 同一家。探測層本來就判有試聽，本層確認。｜**封面**：兩筆 release 的 cover-art-archive 都 front true（count 11），CAA 200 屬實。｜**軌數只有一種形態**（14 軌，兩版同曲序）。｜**人名邊界**：David Murray 出自編者自己的部落格貼文（一手來源），可寫；部落格作者本人只署名 Peter、**姓氏本層未從官方來源核到，正文不具名**；十四個掛名照軌級 credit 抄（注意 2010 黑膠把 Phloen Phromdaen 拼成 Phioen，是登錄錯字）。｜**廠牌字串（要寫給本機）**：正文寫「Dust-to-Digital」用 ASCII 連字號即可，MB 那個 U+2010 字串只是登錄形，不要抄進正文。｜**性質**：§5.6 合輯，有定位（78 轉時代 luk thung 首次在泰國以外出版的整理），保留。｜**政治中立**：1960 年代商業 78 轉錄音，資料裡沒有審查記錄；曲名〈Mia thahan phan suek (Veteran's Wife)〉照抄不評。"
+ },
+ {
+  "key": "desc2:Various Artists|Luk Thung! The Roots of Thai Funk",
+  "artist": "Various Artists",
+  "album": "Luk Thung! The Roots of Thai Funk",
+  "facts": [
+   {
+    "f": "release-group 9cbceeb8 的欄位：title「Luk Thung! The Roots of Thai Funk」、first-release-date 2010、primary-type Album、**secondary-types Compilation**、artist-credit「Various Artists」。轄下兩筆 release：**106c2c24 是 2010 TH Official、CD 18 軌、ZudRangMa／ZRMCD003**、無 barcode；23ca079c 是 2015 TH Official **CD-R**、ZudRangMa、catalog-number 欄登記為 [none]、同 18 軌同曲序、無軌長。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "2010 CD 十八軌帶軌級掛名與長度：Plearn Promdan〈Farang Zeang Bong Fai -Excerpt-〉**0:34** 與〈Koy Yung Mai Por〉2:42、Poom Puwarin〈Tai Por Karm Bar〉2:52、Thawal Pukathorn〈Pu Ying Yang Nong〉3:07、Saksiam Petchchompu〈Jeb Jeb Sab Sab〉2:43、Kangwanprai Lukpetch〈Chan Yak Kah Mia〉2:53、Roong Petch Laem Sing〈Ban Nork Dee Nae〉3:17、Thepporn Petchubon〈Jon Thaw Nor〉2:44 與〈Par Gun Koh〉2:54、Praiwan Lukpetch〈Mai Eam Ruk〉2:48、Samai Ornwong〈Nao Nao Ron Ron〉2:42 與〈Ruk Thung Na〉3:09、Rung Fah Puping〈Puyai Lee Santana〉3:14、**Sroeng Santi〈Dub Fai Kui Gun〉4:04**、Noppadol Duangporn〈Yaak〉3:20、Dao Bandon〈Mae Jom Kalon〉3:06、Phet Potaram〈Nong Jeoy〉2:32、Sorn Petch Pinyo〈Luek Rao Dume Nom〉2:28，合計 51 分 9 秒——**開場 34 秒的節錄與 4 分 04 秒的〈Dub Fai Kui Gun〉是最短與最長的兩軌**。",
+    "src": "https://musicbrainz.org/ws/2/release/106c2c24-d381-449d-b5da-a08f2340ef1f?fmt=json&inc=media+labels+artist-credits+recordings"
+   },
+   {
+    "f": "倫敦 Sounds of the Universe 的商品頁：由 Maft Sai 選輯並混音、Chris Menist 寫解說，是 ZudRangMa「Thai Funk」系列的第三集；CD 裝在卡紙套裡、連同一張大幅摺頁海報一起放進「a pocket sleeve made of woven bamboo from the ancient city of Phanat Nikhom」（用 Phanat Nikhom 古城編的竹片口袋套），再裝進釘了 ZudRangMa 標頭卡的塑膠袋。",
+    "src": "https://soundsoftheuniverse.com/product/luk-thung-the-roots-of-thai-funk-compiled-by-maft-sai"
+   },
+   {
+    "f": "日本 Ticro Market 的商品頁把 2014 年的 CD-R 再版（編號 ZRMCD003R）記為「Maft Saiのよる竹細工仕様ジャケでおなじみ／THAI FUNKの廃盤コンピが装い新たにCD-Rで復活」——原版已絕版、以 CD-R 復刻、沿用竹編封套，內容「これぞDEEP LUK THUNGなイサーン産タイ歌謡〜タイFUNK〜ガレージが全18曲」；Reggae Record 的目錄同記 ZRMCD003、18 軌、2010 年前後。",
+    "src": "https://ticro.com/products/v10003503"
+   }
+  ],
+  "hookCandidates": [
+   "封套是用 Phanat Nikhom 古城編的竹片做的口袋——CD、海報一起塞進去，再裝進釘了標頭卡的塑膠袋",
+   "開場只有 34 秒的節錄，最長的一軌是 Sroeng Santi 四分鐘的〈Dub Fai Kui Gun〉"
+  ],
+  "sound": "CD 18 軌、51 分 9 秒，每軌兩到三分鐘。1970 年代伊善（Isan）與泰國中部的 luk thung 走 funk 編制：管樂與電風琴、電貝斯的切分，男女聲交替。Plearn Promdan 的 34 秒節錄開場，Rung Fah Puping 的〈Puyai Lee Santana〉把 Santana 的名字放進曲名，Sroeng Santi 的〈Dub Fai Kui Gun〉4 分 04 秒是重心，Dao Bandon 的〈Mae Jom Kalon〉在後段，Samai Ornwong 的〈Ruk Thung Na〉收尾。",
+  "keyTracks": [
+   "Dub Fai Kui Gun",
+   "Puyai Lee Santana",
+   "Mae Jom Kalon"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 2010,
+   "recorded": null,
+   "note": "§5.6 合輯，year 取 release-group first-release-date 2010（＝2010 TH CD 的 date，Reggae Record 目錄與 Discogs 條目標題同記 2010）；來源錄音是 1970 年代，不進 year（裁定 344）。2014／2015 是 CD-R 再版年（Ticro 記 2014、資料庫端記 2015）。"
+  },
+  "notes": "**覆核策展層：MBID、ZudRangMa／ZRMCD003、CD 18 軌、2015 CD-R [none]、CAA 200、改收本張以避開池中《Thai? Dai!》全部屬實，未擋下任何一處。**｜**§5.6 舉證逐頁重讀（第 257 條）：兩個網址都站得住。** release-group 網址實打回 Album＋Compilation／2010／Various Artists／2 筆 release；release 網址實打回 ZudRangMa／ZRMCD003／2010 TH Official／CD 18 軌——與 exceptionReason 逐格對得上。exceptionReason 說「走 funk 編制的 luk thung 當年只有 7 吋與合輯卡帶」，本層核 Sroeng Santi 在 MB 名下只有 2009 年一張 Single、Dao Bandon 池中那張是 2014 年的再發輯，成立。｜**第三種查法（裁定 254）跑完：無來源。** `th`／`us`／`gb`／`id`／`sg`／`my` 六店以「Luk Thung Roots of Thai Funk」「Roots of Thai Funk Zudrangma」「Maft Sai Luk Thung」search 皆無（th 店回的全是 Luke Combs，裁定 260 那個模糊比對形狀），song 級 search（Plearn Promdan Koy Yung Mai Por／Sroeng Santi Dub Fai Kui Gun）亦無；回撈報告的候選 1895735993 是一張印度輯。**ZudRangMa 的目錄在 Apple 上沒有這張。這張沒有試聽來源。**｜**封面**：2010 CD 的 cover-art-archive front true（count 4），CAA 200 屬實。｜**軌數只有一種形態**（18 軌，兩版同曲序；CD-R 版的掛名拼法略異：Suang Santi／Rungpetch Lamsing／Petch Pohtaram）。｜**人名邊界**：Maft Sai（選輯、混音）與 Chris Menist（解說）出自 Sounds of the Universe 與 Ticro 兩處商品頁，可寫；十八個掛名照 2010 CD 軌級 credit 抄，**與池中 Sroeng Santi／Dao Bandon 的拼法對一次**。｜**Sounds of the Universe 那頁機器抓取回 403、人工可開**，本層引的文字來自該頁的搜尋摘要，主線若要複驗請用瀏覽器。｜**性質**：§5.6 合輯，有定位（ZudRangMa Thai Funk 系列第三集、Maft Sai 的曼谷 luk thung funk 整理），保留。｜**政治中立**：1970 年代商業錄音，資料裡沒有審查記錄，正文只寫發行事實。"
+ }
+]
