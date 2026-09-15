@@ -640,6 +640,126 @@
   "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、店面觀察成立。**｜⚠ **掛名判定要講清楚**：本盤的 MB artist-credit 是**單一元素「Eiji Kitamura」**，三位美國樂手是 release 層的 credits 而不是 artist-credit——**因此它不是第 321／425 條要擋的合掛，收得正確**。但 **John Lewis、Shelly Manne、George Duvivier 三位在池中極可能已有卡**，**正文不得把本盤寫成四人共同領銜**，只能寫成 北村英治 的碟加三位客席。這與策展層第 425 條擋掉《Dear Friends》（credit 是 `Eiji Kitamura With The Concord Jazz All-Stars`，n=2）的差別正在 artist-credit 的元素數，**兩個判定互相自洽**。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「April Date 北村英治」「Eiji Kitamura April Date」「エイプリル・デイト」、jp／us／gb、album 與 song 兩種 entity——回了 北村英治 名下十餘筆，**沒有一筆是本作**；(2) 藝人目錄兩個 artistId（304482457／359649145）整份 dump，十四張裡沒有本作；(3) 沒有候選 collectionId。⚠ **策展層第 428 條寫「北村英治 四張全部未命中，但他在 Apple 上有 13 張——缺的全是 1973–79 的 Audio Lab／Yupiteru／CBS/Sony，在的全是 Trio Records 的目錄」**：本層把兩個 artistId 的十四張全部列出來複驗，**這個判斷完全成立**——在店面上的十四張裡，十一張的 ℗ 欄是 TRIO RECORDS，另三張是 Columbia（2009 選輯）、GML（1998／2003）與テイチク（2011 拼盤），**Audio Lab、Yupiteru、CBS/Sony、Living Audio、Chrysler、King 六家一張都沒有**。｜**人名邊界**：John Lewis、Shelly Manne、George Duvivier 一律寫拉丁原文（第 163 條家族），不得音譯。｜**反同構**：本張切「1979 年 4 月 CBS/Sony Master Sound 數位錄音＋John Lewis 的四首作曲」，與《Because of You》的 Audio Lab 類比發燒、《Sophisticated Lady》的 Yupiteru、《Happy Cooking》兩集的 Living Audio／Chrysler 互斥。"
  },
  {
+  "key": "desc4:中村八大|HACHIDAI NAKAMURA",
+  "artist": "中村八大",
+  "album": "HACHIDAI NAKAMURA",
+  "facts": [
+   {
+    "f": "原盤是 King Records 的 12 吋黑膠《Hachidai Nakamura》**KC 7，1959 年**日本發行，屬於「**King Jazz Series**」。十四軌曲序與 2024 年數位版逐軌相同：〈To Love Again〉〈Some Enchanted Evening〉〈Autumn Leaves〉〈Moonlight Serenade〉〈Besame Mucho〉〈Over the Rainbow〉〈Somebody Loves Me〉／〈Brazil〉〈Indian Love Call〉〈Manhattan〉〈Te Quiero Dijiste〉〈Stranger in Paradise〉〈Blue Moon〉〈Delicado〉。",
+    "src": "https://api.discogs.com/releases/14044783"
+   },
+   {
+    "f": "release-group 0ccb562a 的欄位：title「HACHIDAI NAKAMURA」、artist-credit 單一元素「中村八大」、first-release-date **2024-11-12**、primary-type Album、secondary-types 空。轄下唯一一筆 release：country XW、2024-11-12、Official、廠牌 KING、無目錄編號、Digital Media 14 軌——**資料庫端只登記了 2024 年那次數位化**。十四軌軌長全部在 1 分 51 秒到 3 分 27 秒之間，全長約 37 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0ccb562a-252b-4104-8528-e5a615f07e64&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "中村八大 1931 年 1 月 20 日生、1992 年 6 月 10 日歿。1953 年他與鼓手 ジョージ川口、次中音薩克斯風 松本英彦、貝斯 小野満 組成爵士四重奏「ビッグ・フォア」，受年輕人狂熱歡迎，還辦過日本第一場棒球場爵士音樂會；1950 年代末爵士熱退燒、搖滾樂興起，1958 年他自辦的獨奏會失敗，此後轉向電影配樂與作曲。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%85%AB%E5%A4%A7"
+   },
+   {
+    "f": "轉向之後他與作詞家 永六輔 搭檔，第一首合作曲〈黒い花びら〉（水原弘 演唱，1959 年 7 月東芝發行）**拿下第 1 屆日本唱片大賞**。⚠ 評選時出了一個插曲：入圍條件要求作曲者必須是日本作曲家協會會員，而 中村八大 是自由身、不符資格，這件事在 12 月 14 日的最終評選當天才被發現，於是臨時讓他入會，當天就宣布得獎。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%BB%92%E3%81%84%E8%8A%B1%E3%81%B3%E3%82%89"
+   },
+   {
+    "f": "兩人後來寫出 坂本九 唱的〈上を向いて歩こう〉，四年後以〈Sukiyaki〉之名登上美國排行榜冠軍；日文維基把他的貢獻定位成「打破唱片公司對作曲的壟斷、讓自由身的創作者得以立足」。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%85%AB%E5%A4%A7"
+   }
+  ],
+  "hookCandidates": [
+   "這張 1959 年 4 月的 King 盤是他最後一批純爵士鋼琴錄音——三個月後〈黒い花びら〉出版，他就再也不是「那個彈鋼琴的」了",
+   "〈黒い花びら〉拿下第 1 屆日本唱片大賞那天，評審才發現他不是作曲家協會會員、沒有入圍資格，於是當天讓他入會、當天頒獎"
+  ],
+  "sound": "十四軌約 37 分鐘，每首壓在 2 到 3 分半之間——1950 年代末日本爵士 LP 典型的「一首一首像單曲」的編排。曲目跨百老匯（〈Some Enchanted Evening〉〈Stranger in Paradise〉）、香頌與拉丁（〈Autumn Leaves〉〈Besame Mucho〉〈Brazil〉〈Te Quiero Dijiste〉〈Delicado〉）與搖擺定番（〈Moonlight Serenade〉〈Blue Moon〉），是以旋律為主、篇幅短小的鋼琴爵士。",
+  "keyTracks": [
+   "Autumn Leaves",
+   "Besame Mucho",
+   "Blue Moon"
+  ],
+  "status": "full",
+  "yearVerified": "**策展層的 2024 → 1959 改判覆核成立，而且找到了它原本沒有的獨立來源。** 策展層的依據有兩項：Apple jp 條目 `1777007651` 的「1959-04-01、℗ 1959 King Record Co.,Ltd、14 軌」，以及 collectionId 落在 c-132 第 391 條點名的 King 2024 數位化號段 `1777007028`〜`1777021265` 之內。⚠ **這兩項其實是同一份數位母帶 metadata 的兩個面向，按第 431 條只算一個來源。** 本層補上真正獨立的那一個：**實體黑膠盤面條目——King Records **KC 7**、1959、日本、King Jazz Series，十四軌逐軌與數位版相同**。兩邊相符，**1959 成立**，而且可以補上原盤編號 KC 7 與系列名。MB 的 2024-11-12 正是第 429 條講的 King 2024 整批數位化。",
+  "notes": "**覆核策展層：MB 相符、年份改判成立（且補強了證據）、封面路徑成立、試聽成立。**｜⚠ **第 431 條的實作**：策展層用「Apple 的 ℗ 1959 ＋ 號段命中」推翻 MB 的 2024，方向對；但 ℗ 欄與 collectionId 號段都長在同一份數位條目上，**不是兩個獨立來源**。本層照第 431 條去找實體盤面，**找到了 King KC 7／1959／King Jazz Series，十四軌逐軌相同**——改判現在站在兩個真正獨立的來源上。**副產品：原盤編號 KC 7 與系列名「King Jazz Series」，卡單的 label 欄可以補**（同系列的旁證：King KC-3 是 1958 年的《Tokyo Canaries》，KC 段確實是 King 1950 年代末的爵士 LP 編號）。｜**MB**：RG 四欄與唯一一筆 release（XW／2024-11-12／KING／無 catno／Digital Media 14 軌）與 mbNote 完全相符；CAA release-group 端點實測 **404**，與策展層一致。｜**封面路徑覆核通過**：策展層寫「Apple jp 1777007651（14 軌一致，King 2024 號段）→ apple-verified-collection」，逐項實查——collectionId **1777007651**（確實落在 1777007028–1777021265 之間）、trackCount **14**、℗ 1959 King Record Co.,Ltd、掛在 artistId **1501367215「Hachidai Nakamura」**，十四軌曲序與 1959 年原盤逐軌相同，**軌數、年份、廠牌三項全對，路徑成立**。｜**試聽（三種查法全跑）**：search、藝人目錄（1501367215，兩張）、直查 `lookup?id=1777007651&country=jp&entity=song` 三種都命中，**14 軌全部有 previewUrl**。**串流採信 1777007651**。｜⚠ **第 434 條再驗，而且這次多出第四個**：策展層第 428 條說 中村八大 在店面有三個 artistId（`1501367215`／`77572891`／`1762794896`）。**本層查到第四個：`1860472119`「Hachidai Nakamura Trio／中村八大トリオ」**（名下一張，1960 年 King 的單曲《YAKKO SAN/HANAGASA ODORI》）。**四個 id、四種拼法，第 434 條「數目沒有上限」再驗一次。**｜⚠ **時序要寫明**：本盤 1959 年 4 月發行，〈黒い花びら〉1959 年 7 月發行——**本盤在前**。正文若要用「轉向作曲之前的最後一批爵士錄音」這個切入，時序是成立的，但**不得寫成「他從此不再彈琴」**（他 1990 年代還有鋼琴獨奏錄音在店面上）。中村八大 1992 年辭世與本作無關，依反向禁令不寫。｜**獎項寫法（研究層獎項規則）**：〈黒い花びら〉是**第 1 屆日本唱片大賞的得獎作**（不是入圍），得獎的是 水原弘 演唱的那首單曲、作曲者是 中村八大；**不得寫成「中村八大 以本專輯得獎」**。｜**跨卡交集**：「ビッグ・フォア」的次中音薩克斯風 **松本英彦** 是 c-132 b 組的掛名。｜**反同構（中村八大 三張）**：本張切「1959 King Jazz Series＋轉向作曲的前夕」，《日本の旅》走 1961 年的民謠爵士三重奏，《ふたつのコンサート》走 1995 年的身後雙碟。"
+ },
+ {
+  "key": "desc4:中村八大モダン・トリオ|中村八大“日本の旅”",
+  "artist": "中村八大モダン・トリオ",
+  "album": "中村八大“日本の旅”",
+  "facts": [
+   {
+    "f": "release-group f29aa202 的欄位：title「中村八大“日本の旅”」、artist-credit 單一元素「中村八大モダン・トリオ」（Orchestra 型實體 dd7d0b2b）、first-release-date **2024-09-04**、primary-type Album、secondary-types 空。轄下唯一一筆 release：country XW／JP、2024-09-04、Official、Columbia **COKM-45262**、Digital Media 10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f29aa202-27a5-479e-84d6-dda8602a6b62&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十軌全部是日本民謠的爵士改編，軌長都在 1 分 46 秒到 3 分 4 秒之間、全長約 25 分鐘：〈黒田節〉2:40、〈おこさ節〉2:40、〈稗搗節〉2:10、〈ソーラン節〉2:56、〈佐渡おけさ〉2:08、〈お江戸日本橋〉2:21、〈八木節〉3:04、〈木曾節〉1:46、〈よさこい節〉2:22、〈ダンチョネ節〉2:17。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f29aa202-27a5-479e-84d6-dda8602a6b62&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "日本コロムビア 2013 年的合輯《和ジャズPLAYS 民謡》（COCB-54062）把 1960–70 年代日本樂手改編民謠的錄音收在一起，其中兩軌〈八木節〉與〈おこさ節〉的演奏者正是「中村八大モダン・ジャズ・トリオ」，**〈おこさ節〉那一軌並標明是「初CD化」**——這兩首也都在本作的曲單上。同一張合輯還收了 原信夫とシャープス・アンド・フラッツ 的〈ソーラン節〉、宮間利之とニューハード 的〈ダンチョネ節〉、秋吉敏子 的〈毬と殿様〉。",
+    "src": "https://columbia.jp/prod-info/COCB-54062/"
+   },
+   {
+    "f": "中村八大 1931 年 1 月 20 日生於中國青島，早稻田大學在學期間就開始職業鋼琴手活動，1953 年組成爵士四重奏「ビッグ・フォア」；1959 年與作詞家 永六輔 搭檔後轉向作曲，〈黒い花びら〉拿下第 1 屆日本唱片大賞，兩人再寫出 坂本九 唱的〈上を向いて歩こう〉，四年後以〈Sukiyaki〉之名登上美國排行榜冠軍。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%85%AB%E5%A4%A7"
+   },
+   {
+    "f": "把日本民謠改編成爵士，在 1960 至 70 年代是日本樂手共同的題目：本組 前田憲男とオール・スターズ 1970 年的《Rock Communication 八木節》（テイチク SL-1329）就是十四首民謠全改成放克器樂，**與本作有〈黒田節〉〈ソーラン節〉〈佐渡おけさ〉〈お江戸日本橋〉〈八木節〉五首同曲**。",
+    "src": "https://api.discogs.com/releases/9984048"
+   }
+  ],
+  "hookCandidates": [
+   "十首民謠、二十五分鐘，最短的〈木曾節〉只有 1 分 46 秒——1961 年的日本爵士把〈ソーラン節〉當成標準曲來處理",
+   "同樣拿民謠開刀的還有 前田憲男 1970 年的《Rock Communication 八木節》，兩張有五首同曲、隔了九年"
+  ],
+  "sound": "十軌約 25 分鐘，每首兩分半上下——這是把民謠當成三分鐘標準曲來處理，不是當成即興的素材。編制是鋼琴三重奏（鋼琴、吉他、貝斯），旋律線保留民謠的原型、節奏改成搖擺，最短的〈木曾節〉1:46、最長的〈八木節〉3:04。整張碟的內容就是一份「日本旋律用爵士語法唸一遍」的目錄。",
+  "keyTracks": [
+   "ソーラン節",
+   "八木節",
+   "黒田節"
+  ],
+  "status": "partial",
+  "yearVerified": "⚠ **策展層的 2024 → 1961 改判方向正確，但證據比策展層寫的要薄，本層無法補強，建議標 uncertain 保留 1961。** 策展層的依據是 Apple jp 條目 `1763577218`《Hachidai Nakamura: Nihon No Tabi》的「1961-02-01、℗ 1961 Nippon Columbia、10 軌」。**按第 431 條檢查：MB 的 2024-09-04 與這筆 Apple 條目描述的是同一份 COKM-45262 數位發行，Apple 的日期欄與 ℗ 欄則是同一份 metadata 的兩格——整條線上只有一個來源。** 本層去找第二個，三條路全部走完都沒有：(a) **日本コロムビア 自己的商品頁 `columbia.jp/prod-info/COKM-45262/` 實查，只寫 2024-09-04 的配信日與 COKM-45262，完全沒有原盤年、原盤編號、錄音日或成員**；(b) 唱片實體條目端查不到任何《日本の旅》的黑膠或 CD；(c) 同廠牌 2013 年的合輯《和ジャズPLAYS 民謡》（COCB-54062）確認「中村八大モダン・ジャズ・トリオ」在 1960–70 年代錄過本作的〈八木節〉與〈おこさ節〉，**但那一頁也沒給年份**。**結論：2024 肯定不是原盤年（COKM-45xxx 是第 429 條那條數位化號段），1961 目前只有 ℗ 欄一個出處。建議 `year` 維持 1961 並標 uncertain。不自行改卡單。**",
+  "notes": "⚠ **這是本組年份證據最薄的一張，而且薄法正好是第 431 條要防的那一種**：策展層拿「Apple 的日期 1961-02-01」與「℗ 1961」當兩個佐證，**但它們長在同一筆數位條目上，是一個來源的兩格**。本層三條獨立路徑（廠牌商品頁／實體盤面條目／同廠牌合輯的曲目註記）全部走完，**沒有任何一條給得出原盤年**。⚠ **另一個要提醒主線的巧合**：第 423 條記的 中村八大《Memories of Lyllian》（Apple `6802986022`、Universal／Lighthouse、℗ 2023）**日期欄也是 1961-02-01**——**兩張不同廠牌、不同權利人的碟，日期欄同一天**。這不必然表示 1961-02-01 是填充值，但**「1961-02-01」這個日期在 中村八大 名下出現兩次，值得下游留意**。｜**MB**：RG 四欄與唯一一筆 release（2024-09-04／Columbia COKM-45262／Digital Media 10 軌）與 mbNote 完全相符；CAA release-group 端點實測 **404**，與策展層一致。｜**封面路徑覆核通過**：策展層寫「Apple jp 1763577218（10 軌一致）→ apple-verified-collection」，逐項實查——collectionId 1763577218、trackCount **10**、℗ 1961 Nippon Columbia、掛在 artistId **1762794896「Hachidai Nakamura Modern Trio」**，十軌曲序與 MB 逐軌相同，**軌數、廠牌兩項全對；年份那一項就是上面說的單一來源**，封面比對本身成立。｜**試聽（三種查法全跑）**：search（中村八大 日本の旅／Nihon No Tabi Hachidai）命中、藝人目錄（1762794896，一張）命中、直查 `lookup?id=1763577218&country=jp&entity=song` 實跑 **10 軌全部有 previewUrl**。**串流採信 1763577218**。｜⚠ **編制成員查不到**：MB、廠牌商品頁、實體條目三邊都沒有「中村八大モダン・トリオ」的成員名單（合輯頁把團名寫成「中村八大モダン・ジャズ・トリオ」，多了「ジャズ」兩字）。**正文不得點名任何樂手，也不得斷定是鋼琴／貝斯／鼓的編制**——本層只能從音色推測，那不是來源。｜**掛名**：MB 實體 dd7d0b2b 的 type 是 Orchestra 而不是 Group，策展層說「不影響取名」，本層同意；**但要注意廠牌自己在 2013 年合輯頁上用的是「中村八大モダン・ジャズ・トリオ」**，與卡單的「中村八大モダン・トリオ」差兩個字。｜⚠ **跨卡不得折疊**：本作與 前田憲男とオール・スターズ《Rock Communication 八木節》（1970）有五首同曲，**是兩張不同的碟**。｜**status 標 partial 的理由**：原盤年只有一個來源、編制成員完全查不到。"
+ },
+ {
+  "key": "desc4:中村八大|ふたつのコンサート",
+  "artist": "中村八大",
+  "album": "ふたつのコンサート",
+  "facts": [
+   {
+    "f": "release-group 30456eaf 的欄位：title「ふたつのコンサート」、artist-credit 單一元素「中村八大」、first-release-date 1995、primary-type Album、**secondary-types 含 `Live`**。轄下唯一一筆 release：JP 1995、Official、Hachidai CORPORATION **HCCD-01／HCCD-02**、2CD，第一片 11 軌、第二片 14 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=30456eaf-9e95-4962-83c5-ebc9f6d153ae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤名的「ふたつ（兩個）」指的是兩場性質完全不同的音樂會，兩片碟的曲單也照這樣分。**第一片是爵士鋼琴的場子**：〈あなたと夜と音楽〉2:39、〈ブルールーム〉3:21、〈ホルデイフォーストリングス〉3:00、〈ファイブスポットアフターダーク〉5:20、〈ロンドンデリーの歌〉3:48、〈ただ一つのもの〉4:20、〈二つのシルエット／ビギンザビギン〉5:34、〈ハウハイザムーン〉3:41、〈デイジーフィンガー〉2:18、〈フォールアウト〉3:57、〈ひき潮〉4:13。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=30456eaf-9e95-4962-83c5-ebc9f6d153ae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**第二片是他自己作品的場子**，而且首尾都是講話而不是演奏：〈オープニング〉2:19、〈夢で逢いましょう〉1:14、〈諸先輩の御言葉〉5:08、〈黒い花びら〉3:06、〈こんにちは赤ちゃん〉6:15、〈モーツァルト風こんにちは赤ちゃん〉2:20、〈ワルソーコンチェルト〉3:29、〈黄河〉3:39、〈遠くへ行きたい〉2:42、〈小さな悩み〉5:33、〈パロディ 雪国〉10:30、〈バイエル48番変奏曲〉7:38、〈二度とない 人生だから〉1:51、〈生きるもののうた〉3:45——第三軌〈諸先輩の御言葉〉五分鐘，是前輩的致詞。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=30456eaf-9e95-4962-83c5-ebc9f6d153ae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "第二片的〈黒い花びら〉是他 1959 年的第一首與 永六輔 合作曲（水原弘 演唱，東芝發行），**拿下第 1 屆日本唱片大賞**；評選時因為入圍條件要求作曲者須為日本作曲家協會會員、而他是自由身，12 月 14 日最終評選當天才臨時讓他入會、當天宣布得獎。〈こんにちは赤ちゃん〉〈遠くへ行きたい〉〈夢で逢いましょう〉同樣是他與 永六輔 的作品。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%BB%92%E3%81%84%E8%8A%B1%E3%81%B3%E3%82%89"
+   },
+   {
+    "f": "中村八大 1931 年 1 月 20 日生、**1992 年 6 月 10 日歿**，享年 61；本作 1995 年由 Hachidai CORPORATION 自家發行，是他辭世三年之後的事。他 1953 年組成「ビッグ・フォア」以爵士鋼琴手起家，1959 年後轉向作曲，日文維基把他的貢獻定位成打破唱片公司對作曲的壟斷、讓自由身的創作者得以立足。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%85%AB%E5%A4%A7"
+   }
+  ],
+  "hookCandidates": [
+   "兩片碟就是兩場音樂會：第一片彈爵士、第二片彈自己寫的歌，而且第二片的第三軌五分鐘全是前輩在致詞",
+   "第二片有一首〈モーツァルト風こんにちは赤ちゃん〉——他把自己的兒歌改成莫札特風，就在台上"
+  ],
+  "sound": "雙碟、二十五軌、約兩小時。第一片是爵士鋼琴的節目：〈You and the Night and the Music〉〈Blue Room〉〈Five Spot After Dark〉〈How High the Moon〉〈Ebb Tide〉，篇幅在 2 到 5 分半之間。第二片轉成他自己的作品與談話，篇幅放得更開——〈パロディ 雪国〉10:30、〈バイエル48番変奏曲〉7:38 兩首把一支流行歌與一本鋼琴教本拿來變奏，是音樂會現場才做得出來的段子。",
+  "keyTracks": [
+   "ファイブスポットアフターダーク",
+   "黒い花びら",
+   "パロディ 雪国"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1995（維持卡單值）。MB 的 first-release-date 1995 與轄下唯一一筆 release（JP 1995／Hachidai CORPORATION HCCD-01／HCCD-02／2CD 11+14 軌）自洽。⚠ **1995 是發行年，不是演出年**——**兩場音樂會的日期本層在三邊（MB、實體盤面條目、店面）都查不到**，只知道必然早於 1992 年 6 月他辭世。**錄音年未能查證這件事要寫進 risk。** 無改判。",
+  "notes": "⚠ **第 397 條反方向的確認：這一張 MB 有標。** 本組另一張盤名帶「Concert」的《50th Anniversary Concert》secondary-types 是空的、查不到現場證據，**本張的 `secondary-types` 則確實含 `Live`**——兩張並排正好是第 397 條那句「兩個方向都會漏」的實例：**欄位有標時可信，欄位沒標時不能反推**。依第 397／262 條，`releaseType` 維持 Album 不改，**現場錄音這個事實寫進正文**（曲單本身也支持：〈オープニング〉與〈諸先輩の御言葉〉兩軌是講話，不是演奏）。｜⚠ **時序必須寫明（研究層反向禁令的「與作品直接綁定」那一類）**：**中村八大 1992 年 6 月 10 日辭世，本作 1995 年才由他自家的 Hachidai CORPORATION 發行**——這是身後發行的現場實況，屬於「作品本身的後世流傳」，**可寫但必須標明時序**。**不得寫成他生前發行的專輯。** ⚠ 但也**不得稱它為追悼盤或紀念盤**——沒有來源支持那個定性。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符（HCCD-01 與 HCCD-02 兩個目錄編號、兩片碟 11+14 軌，用 release 端點問來的，第 259 條）；CAA release-group 端點實測 **404**，與策展層一致。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「ふたつのコンサート」「中村八大 コンサート」「Hachidai Nakamura concert」、jp／us／gb、album 與 song 兩種 entity——**零筆命中本作**；(2) 藝人目錄把 **四個 artistId（`77572891` 九張、`1501367215` 兩張、`1762794896` 一張、`1860472119` 一張）整份 dump**，十三張裡沒有本作；(3) 沒有候選 collectionId。**策展層寫的「只剩 Discogs（HCCD-01／1995／Hachidai CORPORATION）」成立**——但⚠ **本層要補一句：實體盤面端也查不到這一筆**，中村八大 名下的實體條目裡沒有《ふたつのコンサート》。**封面路徑實際上比策展層以為的更窄，主線要有心理準備。**｜⚠ **第 434 條再驗**：策展層第 428 條說 中村八大 在店面有三個 artistId，**本層查到第四個 `1860472119`「Hachidai Nakamura Trio／中村八大トリオ」**（名下一張 1960 年 King 的單曲）。｜**選輯／重發的主動標記**：本作不是選輯——它是兩場音樂會的實況錄音，曲目與他任何一張錄音室專輯都不重疊，**有明確的歷史定位（他生前最後階段的現場紀錄、由他自家公司整理發行），不列建議移除**。｜**獎項寫法**：〈黒い花びら〉是**第 1 屆日本唱片大賞的得獎作**（不是入圍），得獎者是演唱的 水原弘、作曲是 中村八大；**不得寫成「本專輯得獎」**。｜**人名邊界**：永六輔、水原弘 有可具名出處，可寫；**參與本場演出的樂手三邊都查不到，正文不得點名**。｜**status 標 partial 的理由**：演出日期與場地查不到、參與樂手查不到、店面與實體條目兩端都零筆、無試聽來源。｜**反同構**：本張切「兩片＝兩場、第二片首尾是講話、身後三年才發行」。"
+ },
+ {
   "key": "desc4:八城一夫|Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway",
   "artist": "八城一夫",
   "album": "Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway",
@@ -718,5 +838,85 @@
   "status": "full",
   "yearVerified": "一致，1980（維持卡單值）。MB 的 first-release-date 1980 與轄下唯一一筆 release（JP 1980／Toshiba Records TP-72341／12 吋 12 軌）自洽；**實體盤面條目同樣記 Toshiba Records TP-72341、1980、日本、Love Touch Piano 系列**——兩個獨立來源相符。無改判。",
   "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、選這一張的理由成立。**｜**策展層第 429a 條挑這張的理由（「把他的目錄收在 1980 年，與本批的 1968／1973／1974／1976／1978 連成六個年份不重複的線」）覆核成立**——六張的 first-release-date 實查為 1968、1973、1974、1976-10、1978、1980，確實不重複。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「It's a Sin to Tell a Lie 八城一夫」「Kazuo Yashiro Sin to Tell a Lie」、jp／us／gb、album 與 song 兩種 entity——**零筆命中本作**；(2) 藝人目錄三個 artistId 整份 dump，八張裡沒有本作；(3) 沒有候選 collectionId。**東芝「Love Touch Piano」系列整條在店面都不在。**｜⚠ **鼓手的名字要注意**：實體盤面把鼓手記成「Kuniyoshi Yashiro（八城邦義）」，**與領銜者 八城一夫 同姓**。沒有第二個來源說明兩人的關係，**正文不得寫成親屬或任何推測的關係**，只能寫名字。｜**跨卡交集**：末曲〈June Night〉與他 1973 年《Drivin'》的開場曲同名同曲；TP-72339／72340 兩張連號分別是 世良譲 與 前田憲男（本組掛名）。｜**廠牌**：卡單的「東芝 Toshiba Records TP-72341」與盤面一致，**可補上系列名「Love Touch Piano」**。｜**反同構**：本張切「三重奏與獨奏交替的四首 Piano Solo＋東芝連號三張」。"
+ },
+ {
+  "key": "desc4:北村英治|Happy Cooking Vol. II",
+  "artist": "北村英治",
+  "album": "Happy Cooking Vol. II",
+  "facts": [
+   {
+    "f": "原盤是 Chrysler 的 12 吋黑膠 CE-3002，1973 年日本發行——與第一集《Happy Cooking》（Living Audio CE-3001、1973）是同一段 CE-300x 編號的連號，但實體盤面上兩張的廠牌名登記成兩家。",
+    "src": "https://api.discogs.com/releases/11542837"
+   },
+   {
+    "f": "八軌曲序：A 面〈Bhaiazinho〉〈Lost in a Fog〉〈Sweet Sue Just You〉〈Happy Cooking〉；B 面是一段五首連奏的組曲〈Medley: What Are You Doing the Rest of Your Life／How High the Moon／Darn That Dream／Body and Soul／Maybe You'll Be There〉，再接〈Swingin' on a Camel〉〈You Can Depend on Me〉〈We'll Meet Again〉。**第四軌〈Happy Cooking〉就是與盤名同名的主題曲。**",
+    "src": "https://api.discogs.com/releases/11542837"
+   },
+   {
+    "f": "release-group 94cc4142 的欄位：title「Happy Cooking Vol. II」、artist-credit 單一元素「Eiji Kitamura」、first-release-date 1973、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1973、Official、Chrysler CE-3002、12 吋黑膠 8 軌——**與第一集不同，這一張的廠牌在資料庫端有登記**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=94cc4142-81a3-4984-80ab-72f302ca3961&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "「Happy Cooking」後來從盤名變成他樂團的名字：1980 年 Trio Records 的《札幌コンサート》（PAP-9212）掛成「Eiji Kitamura & Happy Cooking All Stars」，2003 年 GML 的《Something Wild Something Mild》則掛「北村英治とハッピー・クッキング・オールスターズ」，同一張碟上還有 原信夫とシャープス・アンド・フラッツ 與 八城一夫トリオ。",
+    "src": "https://music.apple.com/jp/artist/359649145"
+   },
+   {
+    "f": "北村英治 1929 年 4 月 8 日生於東京，慶應義塾大學出身，1951 年二十二歲職業出道，是日本爵士單簧管的開創者；三十歲時在 Benny Goodman 訪日期間當著偶像的面演奏並得到讚賞；2007 年獲頒旭日小綬章，2012 年心臟病發後康復，九十多歲仍在現場演出。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB"
+   }
+  ],
+  "hookCandidates": [
+   "B 面開頭是一段把五首標準曲串成一首的連奏——〈What Are You Doing the Rest of Your Life〉一路接到〈Body and Soul〉",
+   "第一集與第二集是 CE-3001、CE-3002 連號，盤面上的廠牌卻寫成 Living Audio 與 Chrysler 兩家"
+  ],
+  "sound": "八軌的專輯，但實際曲目是十二首——B 面開頭那段五首連奏的組曲把〈What Are You Doing the Rest of Your Life〉〈How High the Moon〉〈Darn That Dream〉〈Body and Soul〉〈Maybe You'll Be There〉串成一條線。單簧管領奏的搖擺編制，與第一集同一批人、同一年，聲音與選曲都是 Benny Goodman 小編制那一路。",
+  "keyTracks": [
+   "Happy Cooking",
+   "Sweet Sue Just You",
+   "We'll Meet Again"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（維持卡單值）。MB 的 first-release-date 1973 與轄下唯一一筆 release（JP 1973／Chrysler CE-3002／12 吋 8 軌）自洽；**實體盤面條目同樣記 Chrysler CE-3002、1973、日本**——兩個獨立來源相符。⚠ 與第一集同年同段編號（CE-3001／CE-3002），兩張的先後在任何來源上都沒有月份可分，**正文不得寫「同年稍晚」這類推測的時序**。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、選這一張的理由成立。**｜**策展層第 429a 條挑這張的理由（「只有第二集的廠牌是有一手登記的（Chrysler CE-3002），第一集的 label-info 是空陣列，兩張並收才釘得住這條線的廠牌」）覆核——**前半成立、後半要修正**：本層在實體盤面上查到**第一集的廠牌是 Living Audio、編號 CE-3001**（詳見那張的 notes）。**所以兩張的廠牌不是同一家，「並收釘住廠牌」這個效果並不成立**；能釘住的是**編號段 CE-300x**。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「Happy Cooking Vol II 北村英治」「ハッピー・クッキング 2」、jp／us／gb、album 與 song 兩種 entity；(2) 藝人目錄兩個 artistId（304482457／359649145）整份 dump，十四張裡沒有本作；(3) 沒有候選 collectionId。⚠ **與第一集同一個假陽性**：店面的 `1329382211`《ハッピー・クッキング》（12 軌、1986-12-16、℗ TRIO RECORDS）盤名撞名，**但曲目與本作、與第一集都不重疊**，那是第 424 條候補清單裡的 1986 年同名碟（RG `70f376a1`）。｜⚠ **軌數的登記方式要注意**：MB 與盤面都記 8 軌，**但 B1 是五首連奏的 medley**，實際曲目數是十二首。下游若拿「軌數」當比對鍵要知道這件事。｜**反同構**：本張切「CE-300x 連號的第二集＋五首連奏的 medley＋Happy Cooking 從盤名變成團名」。"
+ },
+ {
+  "key": "desc4:北村英治クインテット|Ai No Cocktail",
+  "artist": "北村英治クインテット",
+  "album": "Ai No Cocktail",
+  "facts": [
+   {
+    "f": "⚠ 這張 1979 年的 King Records JAZ-3024 是**復刻**，不是原盤：它屬於 King 的「**日本のジャズ名盤1500シリーズ**」，而且**封底逐字印著「Recorded at KING RECORD 1960.9.19」**——錄音日是 1960 年 9 月 19 日、地點是 King 的錄音室。實體盤面附腰帶與內頁，解說由 瀬川昌久 撰寫。",
+    "src": "https://api.discogs.com/releases/17286970"
+   },
+   {
+    "f": "原盤是 King Records 的 **10 吋 33⅓ 轉黑膠《Cocktails for Two》（LKF 1198，1961）**，掛名「Kitamura Eiji & His Quintet」；十軌曲序與 1979 年的《愛のカクテル》**逐軌完全相同**：〈Cocktails for Two〉〈Stardust〉〈Theme from \"Picnic\"〉〈You Are My Sunshine〉〈Indian Love Call〉／〈Manhattan〉〈I'm Gettin' Sentimental Over You〉〈Mack the Knife〉〈Sentimental Journey〉〈Isn't It Romantic?〉。",
+    "src": "https://api.discogs.com/releases/14518607"
+   },
+   {
+    "f": "1979 年版的十軌軌長全部壓在 2 分 27 秒到 3 分 25 秒之間：〈Cocktails for Two〉2:50、〈Stardust〉3:25、〈Moonglow and Theme from \"Picnic\"〉2:49、〈You Are My Sunshine〉2:27、〈Indian Love Call〉2:46、〈Manhattan〉2:31、〈I'm Gettin' Sentimental Over You〉2:59、〈Mack the Knife〉2:53、〈Sentimental Journey〉2:43、〈Isn't It a Romantic〉2:35，全長約 28 分鐘——這是 10 吋盤的長度，不是 12 吋盤的。",
+    "src": "https://api.discogs.com/releases/17286970"
+   },
+   {
+    "f": "release-group b2e8918b 的欄位：title「Ai No Cocktail」、artist-credit 單一元素「北村英治クインテット」、first-release-date 1979、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1979、**status 欄是空的**、KING JAZ-3024、12 吋黑膠 10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b2e8918b-6770-4ef1-ab6a-213ba3b70059&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "北村英治 1929 年 4 月 8 日生於東京，1951 年二十二歲職業出道；**三十歲那年（1959）他在 Benny Goodman 訪日時當著偶像的面演奏並得到讚賞**——本作的錄音日 1960 年 9 月 19 日，正好在那之後一年。他此後與 Teddy Wilson 從 1970 到 1992 年錄過多張唱片，2007 年獲頒旭日小綬章。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB"
+   }
+  ],
+  "hookCandidates": [
+   "封底上那一行「Recorded at KING RECORD 1960.9.19」——這張碟的內容比封面上的年份早了十九年",
+   "原盤是 1961 年的 10 吋盤《Cocktails for Two》，十首全長只有二十八分鐘，1979 年 King 換個名字再發一次"
+  ],
+  "sound": "十軌約 28 分鐘、每首都在 3 分鐘上下——這是 10 吋盤的規格，一首一首像單曲而不是留給即興的長篇。五重奏編制以單簧管領奏，曲目全是雞尾酒吧與電影主題的定番（〈Cocktails for Two〉〈Theme from \"Picnic\"〉〈Sentimental Journey〉〈Mack the Knife〉），是 1960 年日本爵士最接近「輕音樂」那一端的聲音。",
+  "keyTracks": [
+   "Cocktails for Two",
+   "Mack the Knife",
+   "Stardust"
+  ],
+  "status": "full",
+  "yearVerified": "⚠⚠ **推翻策展層的定性（但年份維持 1979）**。策展層第 429a 條把這張寫成「**1979 年的 King 原盤**」，並拿它當第 429 條的反例（「不在 1777xxxxxx 號段裡、Apple 上完全查不到，可見沒命中號段不代表不是 King 原盤」）。**本層查出它根本不是 1979 年的原盤**：(1) 實體盤面條目記它屬於 King 的「**日本のジャズ名盤1500シリーズ**」——那是一條復刻系列；(2) **封底印著「Recorded at KING RECORD 1960.9.19」**；(3) **原盤是 1961 年的 10 吋盤《Cocktails for Two》（King LKF 1198），十軌逐軌完全相同**。**⚠ 但 `year` 本層建議維持 1979**，依 c-133 第 426 條第 1 點的先例（《My Little Angel》：盤名與年份要出自同一筆）——**盤名《Ai No Cocktail／愛のカクテル》只存在於 1979 年那張 JAZ-3024 上，1961 年的原盤叫《Cocktails for Two》**；要改 1961 就得連盤名一起換。**錄音年 1960-09-19 與原盤《Cocktails for Two》1961／LKF 1198 寫進 risk。不自行改卡單。**",
+  "notes": "⚠⚠ **本層最重要的一次推翻：第 429a 條那個「反例」不成立。** 策展層拿本張當「1979 年 King 原盤卻不在 2024 數位化號段裡」的反例，用來說明「沒命中號段不構成『這不是 King 原盤』的反證」。**那條結論（沒命中不構成反證）本身仍然對，但它現在少了這個例子**——本張根本不是 1979 年的原盤，而是 1961 年 10 吋盤《Cocktails for Two》的復刻，**它不在 King 2024 數位化號段裡這件事，與「King 選了哪一批母帶」無關**。⚠ **順帶要提醒主線的一件事**：本張的 10 軌、28 分鐘全長，在 MB 上被登記成 **12 吋黑膠**——**10 吋原盤的曲目原封不動搬到 12 吋復刻盤上**，這正是「軌數相符但載體不同」的形狀，往後用軌數比對定同一性時要留意。｜⚠ **選輯／重發的主動標記（研究層通則）**：本張是**單一原盤的完整復刻**（十軌逐軌相同、無增刪），**不是拼盤也不是選輯**，依通則屬於「有明確來源可考的重發」，**不列建議移除**；但正文必須寫清楚它的內容是 1960 年的錄音。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 相符（卡單提到 release status 未登記，實查確認是空的）；CAA release-group 端點實測 **404**，與策展層一致。｜⚠ **試聽：三種查法全部落空，判定無來源——策展層第 429a 條的觀察在這一點上成立。** (1) search 跑了「Ai No Cocktail 北村英治」「愛のカクテル 北村英治」「Eiji Kitamura Quintet」、jp／us／gb、album 與 song 兩種 entity；(2) 藝人目錄兩個 artistId（304482457 十三張、359649145 兩張）整份 dump，十四張裡沒有本作；(3) 沒有候選 collectionId。**封面只剩非 CAA 路線**：實體盤面條目（King Records JAZ-3024／1979／日本のジャズ名盤1500シリーズ）的 catno、年、廠牌三項可作比對依據。｜**掛名**：MB 的 artist-credit 是單一元素「北村英治クインテット」、實體盤面印「Eiji Kitamura Quintet」與「Kitamura Eiji & His Quintet」（1961 原盤）——**漢字＋片假名的編制寫法與池中先例同形，策展層的判定成立**；這也確實是他在 MB 上唯一一張掛編制實體又非合掛的碟（本層複驗 33 個 RG 無誤）。｜**人名邊界**：瀬川昌久（解說撰稿）出自實體盤面，可寫；Benny Goodman 是背景人物，**不得寫成參與者**。｜**反同構**：本張切「1960 年 9 月 19 日 King 錄音室＋10 吋盤的二十八分鐘＋1979 年換名復刻」，與其餘五張 北村英治 卡的 1973–79 路線互斥。"
  }
 ]
