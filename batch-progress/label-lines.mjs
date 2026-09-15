@@ -120,6 +120,13 @@ export const LINES = {
   c138: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
   c139: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
   c140: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1939–66）', b: 'Blue Note 目錄補齊（1939–66）' } },
+  // c-141～c-146：Blue Note 1967–84（Liberty／UA 期，含 LT 庫存系列與日本首發）缺的 243 張
+  c141: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
+  c142: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
+  c143: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
+  c144: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
+  c145: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
+  c146: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
