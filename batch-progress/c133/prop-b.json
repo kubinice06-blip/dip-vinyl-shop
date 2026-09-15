@@ -1,0 +1,115 @@
+[
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "エレクトラム",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Electrum；石川晶；Akira Ishikawa；Akira Ishikawa & His Count Buffalos；Count Buffalo & The Jazz Rock Band；カウント・バッファロー；石川晶と彼のグループ；石川晶とカウント・バッファロー；エレクトラム 石川晶；Akira Ishikawa Electrum",
+  "reissuedBy": "Think! Records 2006-09-22 THCD-030（CD 4 軌）＝ Apple jp `1656362828`《Electrum》2006-09-25、4 軌、℗ 2006 Victor Entertainment，與 MB 的 4 軌一致；MB 已建這筆 CD release。",
+  "label": "Victor SMJX-10104（JP 1970 12 吋黑膠 4 軌，MB release 端點回 `Victor` 與 `VICTOR WORLD GROUP` 兩筆 label-info、同一個 catno，Official）",
+  "why": "石川晶把 Count Buffaloes 從 1969 年的 jazz-rock 樂團推向長篇打擊樂組曲的那一步：四首、單面兩首的編制，Victor WORLD GROUP 的 SMJX-10104。這條線（1969《Soul & Rock》→ 1970《エレクトラム》《バキシンバ》→ 1971《African Rock》→ 1972《ウガンダ》）是日本 jazz-funk／アフロ 的主幹，池中目前只有末端的《ウガンダ》一張（c-131，尚未上架），**1969–71 這三年一張都沒有**。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），石川晶名下線上池 0 張、「石川」子字串的命中全是 石川さゆり 等他人（逐筆排除）。店主 2026-09-15 要求把日本第一世代每位補到重點作齊全，這張是他目錄裡最早能站住的代表作之一。",
+  "risk": "⚠ 掛名：MB RG 的 artist-credit 是「石川晶とカウント・バッファローズ」，與實體 `2acbf5b2` 主名一致，依第 355 條直接取。同實體 22 個 RG 的 credit 有五種寫法（石川晶とカウント・バッファローズ／Akira Ishikawa & His Count Buffalos／Count Buffalo & The Jazz Rock Band／カウント・バッファロー／石川晶と彼のグループ），全部進 queryAlias。第 307 條反查同字串不同人：池中「石川」命中 石川さゆり ×3、石川ひとみ 等（全為他人，逐筆核整個掛名字串後排除），「Buffalo」命中 Buffalo／Buffalo Springfield／Buffalo Tom／Buffalo Nichols 五張（皆非本團），**無合併風險**。⚠ MB 另有 `石川晶とザ・ゲンチャーズ`（`6d2c4e53`，名下 0 個 RG）與個人實體 `237e787a`（3 個 RG），三個實體不得互相混。 撞卡：盤名《エレクトラム》《Electrum》在池中皆零命中。年份：MB first-release-date 1970，轄下有 1970 年 Victor 原盤兩筆 release，無再發失真。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「石川晶 エレクトラム」搜到 `1656362828`（2006 Think! 復刻，4 軌與 MB 一致）；藝人目錄 `1506560116`（Akira Ishikawa and His Count Buffalos，8 筆）裡同樣只有那筆 2006 版，**1970 年 Victor 原盤版本兩種查法都沒有命中**；us 店面 0 筆。",
+  "mbNote": "釘 release-group afa1adcc-fb74-4872-a185-e50145965f3e。回問 release-group 端點（inc=artist-credits+releases）：title「エレクトラム」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條：廠牌只有這個端點問得到）：1970/JP/Official「エレクトラム」Victor SMJX-10104 ＋ VICTOR WORLD GROUP SMJX-10104，12\" Vinyl 4 軌；1970/JP/Official「Electrum」VICTOR WORLD GROUP SMJX-10104，12\" Vinyl 4 軌；2006-09-22/JP/Official Think! Records THCD-030，CD 4 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（石川晶とカウント・バッファローズ／Group／JP，alias：Count Buffalo & His Rock Band、Count Buffalo & The Jazz Rock Band、Akira Ishikawa & His Group、石川晶とそのグループ、Akira Ishikawa & His Count Buffalos、Akira Ishikawa and His Group、石川晶と彼のグループ；名下 22 個 RG）；個人實體 237e787a-62fe-49e3-9c19-4c857d8a1a60（石川晶／Person／JP／jazz drummer，3 個 RG）；另有 6d2c4e53-1756-465d-8945-16ec5735b991（石川晶とザ・ゲンチャーズ，0 個 RG，第 356 條 F 已列為 §1 候選）與 f28f86cf-726e-400e-aee4-34f6ecbae551（Akira Ishikawa & All Stars，0 個 RG）。本組刻意不釘（同實體、額度外或不合規）：`56173bc0`《Soul & Rock》1969-07-25（Columbia、CAA 200，與 `92ed0cc8`《ソウル・アンド・ロック》1969 是同碟兩個 RG）、`d4241b67`《Prayer With Faith And Love》1969-09（CAA 200）、`fe3c2812`《EXCITING DRUMS / AFRICAN ROCK PARTY》1969-08（盤名帶斜線，第 321 條的形狀）、`aee391a1`《Count Buffalo Plays Country Rock》1970-10（**CAA 回 500，不是 404**）、`806f15c2`《Dynamic Latin Exotic Sound》1972、`ca240f81`《ドラム八木節ドラム》1971、`3c6216cb`《津軽じょんがら節 ドラム＆津軽三味線》1973、`521bd494`《Drums & Jazz Piano》（無日期、與 Kazuo Yashiro Trio 合掛）、`061dfedb`／`e272cbbc` 2006 年兩張ドラム系復刻、`74d39c14`《ウガンダ》1972（**c-131 已收**）；原聲帶不收：`24274e1a`／`ff3aaf91`《超時空要塞マクロス》、`32549a9d`《Lupin III》、`b2112048`《フィリップ・マーロウ》。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "バキシンバ：アフリカの想い出",
+  "year": 1970,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bakishinba: Memories Of Africa；バキシンバ；Bakishinba；石川晶；Akira Ishikawa；Count Buffalo；カウント・バッファロー；石川晶とカウント・バッファロー；バキシンバ アフリカの想い出",
+  "reissuedBy": "Polydor 2007-03-09 PROA-82（CD 7 軌）；MB 已建這筆。Apple jp／us 三種查法皆未命中本碟的任何版本。",
+  "label": "Polydor MR-5001（JP 1970-12 12 吋黑膠 7 軌，Official；MB 另有一筆同 catno 的 1970 release 題英文「Bakishinba: Memories Of Africa」，MR 5001 無連字號）",
+  "why": "1970 年 12 月的 Polydor MR-5001，是 Count Buffaloes 打擊樂路線最徹底的一張：整面用非洲節奏編組、盤名直接叫「アフリカの想い出」，與同年的《エレクトラム》、隔年的《African Rock》、1972 年的《ウガンダ》連成石川晶的アフロ四部曲。池中這條線只有末端的《ウガンダ》（c-131，尚未上架），實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），本盤與「バキシンバ」「Bakishinba」三種寫法在池中皆零命中。**這張是四部曲裡唯一走 Polydor 的**，其餘三張分屬 Victor／DAN／東芝，收下它這條線在廠牌上才完整。",
+  "risk": "⚠ **盤名含全形冒號「：」（U+FF1A）**：`chk-prop` 只掃非 ASCII 連字號，全形冒號不會亮燈，但下游做字串比對時要留意；英文題「Bakishinba: Memories Of Africa」與純「バキシンバ」已一併進 queryAlias（池中先例 c-131《ウガンダ（アフリカン・ロックの夜明け）》用全形括號，形狀相同）。⚠ 掛名同第 355 條取實體 `2acbf5b2` 主名；第 307 條反查無合併風險（見同組《エレクトラム》卡）。年份：MB first-release-date 1970-12，轄下 1970-12 與 1970 兩筆 Polydor 原盤 release，**卡面取 1970**，無再發失真。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「石川晶 バキシンバ」「Akira Ishikawa Bakishinba」、us 以「Bakishinba Count Buffalo」三種寫法搜尋皆 **0 筆**；藝人目錄 `1506560116`（8 筆）與 `1571811111`（1 筆，只有《Uganda》）裡也沒有本碟——**三種查法都沒有命中，但依第 254 條這只是觀察，不得寫成未上架**。⚠ Polydor 這家 1970 年代日本廠在 Apple 上的稀薄與 c-131 第 359 條、c-132 第 389 條記的規律同向。",
+  "mbNote": "釘 release-group 056a936c-6b19-4d20-92a6-c56a6dd57239。回問 release-group 端點（inc=artist-credits+releases）：title「バキシンバ：アフリカの想い出」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1970-12、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1970-12/JP/Official「バキシンバ：アフリカの想い出」Polydor MR-5001，12\" Vinyl 7 軌；1970/JP/Official「Bakishinba: Memories Of Africa」Polydor MR 5001，12\" Vinyl 7 軌（同碟的英文題壓盤）；2007-03-09/JP/Official Polydor PROA-82，CD 7 軌。藝人實體同《エレクトラム》（`2acbf5b2`，22 個 RG）。`batch-progress/enum/jp-polydor-jp.json` 列有本筆（artist 石川晶とカウント・バッファローズ、album バキシンバ：アフリカの想い出、1970、rgMbid 一致）。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "African Rock",
+  "year": 1971,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "アフリカン・ロック；石川晶；Akira Ishikawa；Akira Ishikawa & His Count Buffalos；Akira Ishikawa & Count Buffalos；Count Buffalo；カウント・バッファロー；石川晶とカウント・バッファロー",
+  "reissuedBy": "CLINCK RECORDS 2015-07-29 CRCD5116（CD 8 軌）已建進同一個 RG；另有 Apple 上 2021-06-11 的 Jaipur Music 數位再發（jp `1686634590`／us 同號，8 軌），MB 未建這筆。",
+  "label": "DAN VC-5003（JP 1971 12 吋黑膠 8 軌，MB release 端點回 `DAN`，Official）",
+  "why": "Count Buffaloes 的アフロ路線裡最被外盤收藏界追的一張，1971 年由 DAN（VC-5003）發行——與 c-131《Meditation》那張的 DAN VC-6001 同一家小廠（第 367 條）。八首全是石川晶自己編的打擊樂與電風琴的對打，日後被 hip-hop 取樣而流回日本。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「African Rock」「アフリカン・ロック」在池中皆零命中。與同組《エレクトラム》《バキシンバ》《ウガンダ》（c-131）合起來，石川晶 1970–72 年這條線才算補齊。",
+  "risk": "⚠ **同一張碟在 MB 上有兩個 release-group**（第 387 條的形狀）：本卡釘 `94fdf242`（**轄下有 1971 DAN VC-5003 原盤**、CAA **200**），另一個 `1955da79`《African Rock》**1972**（只有一筆 1972 JP release、**CAA 404**）**刻意不釘**。依第 387 條判準「取轄下有原盤 release 的那一個 RG」。⚠ 兩個 RG 的年份也不同（1971／1972），**下游若以盤名比對會抓到錯的那一個，必須鎖 rgMbid**。掛名同第 355 條取實體主名；第 307 條反查無合併風險。 撞卡：池中零命中。年份 **1971**：MB first-release-date 1971，原盤 release 同年；Apple jp `1577132931`《アフリカン・ロック》記 **1971-01-01**、8 軌（與 MB 軌數一致）、℗ TOKUMA JAPAN COMMUNICATIONS——**兩邊同年，年份無分歧**。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 搜尋命中 `1577132931`（1971、8 軌）與 `1686634590`（2021 Jaipur Music 再發、8 軌）；藝人目錄 `1506560116` 兩筆都在；us 店面只有 `1686634590`，掛名寫「Akira Ishikawa and His Count Buffalos」。⚠ **℗ 分屬 TOKUMA 與 Jaipur Music 兩家、都不是 DAN**，研究層配對時要核曲目與長度（第 262 條：日期、廠牌、catno 要出自同一筆）。",
+  "mbNote": "釘 release-group 94fdf242-b571-46a5-a645-997dbfb4abc3。回問 release-group 端點（inc=artist-credits+releases）：title「African Rock」、artist-credit「Akira Ishikawa & His Count Buffalos」（→ 實體主名 石川晶とカウント・バッファローズ，第 355 條）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1971/JP/Official DAN VC-5003，12\" Vinyl 8 軌；2015-07-29/JP/Official CLINCK RECORDS CRCD5116，CD 8 軌。**重複 RG：`1955da79-…`《African Rock》1972，credit「Akira Ishikawa & Count Buffalos」，轄下只有一筆 1972/JP/Official，CAA 404——同碟兩個 RG，本卡不釘它**（第 387 條）。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "Get Up!",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ゲット・アップ；Get Up；石川晶；Akira Ishikawa；Akira Ishikawa & His Count Buffalos；Count Buffalo；カウント・バッファロー；石川晶 Get Up",
+  "reissuedBy": "SOLID RECORDS 2001-08-25 CDSOL-1042（CD 6 軌）已建進同一個 RG。Apple 三種查法皆未命中本碟。",
+  "label": "RCA RVL-5510（JP 1975-03-06 12 吋黑膠 6 軌，Official）",
+  "why": "1975 年 3 月 6 日的 RCA RVL-5510，是 Count Buffaloes 從アフロ打擊樂轉進ファンク／レア・グルーヴ 的分水嶺：六首、電貝斯與克拉維琴掛帥，日後成為和製ファンク 被翻得最兇的一張。**同一個 RCA RVL 號段裡緊鄰的 RVL-5505 就是同組收的 大野雄二トリオ《My Little Angel》（1976）**——1975–76 年 RCA 這條和製ファンク／ジャズ線，本批一次收了兩端。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「Get Up!」「Get Up」在池中命中的是 `Ben Harper & Charlie Musselwhite — Get Up!` 與 `NewJeans — Get Up` **兩張同盤名不同掛名的既有卡**（見 risk）。",
+  "risk": "⚠ **同盤名不同掛名（`chk-prop` 不會亮燈）**：線上池已有 `Ben Harper & Charlie Musselwhite — Get Up!`（折疊鍵完全相同的盤名）與 `NewJeans — Get Up`。`chk-prop` 的折疊鍵是掛名＋盤名，兩筆都不會亮燈，**下游任何以盤名為鍵的比對都會把三張混在一起**（第 391 條第七點、第 386 條同族）。掛名同第 355 條取實體 `2acbf5b2` 主名（本 RG 的 credit 是「Akira Ishikawa & His Count Buffalos」）。第 307 條反查：池中「Buffalo」五張皆非本團，無合併風險。年份：MB first-release-date **1975-03-06**，轄下 1975-03-06 RCA 原盤 release 同日，無再發失真。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：Apple jp 以「石川晶 ゲット・アップ」搜 0 筆、「Akira Ishikawa Get Up」只回到同組另一張《Back to Rhythm》；藝人目錄 `1506560116`（8 筆）、`1571811111`（1 筆）、`1782228407`（1 筆）三個掛名底下都沒有本碟；us 同樣只回《Back to Rhythm》。**三種查法都沒有命中本碟，但依第 254 條這只是觀察。** ⚠ RCA／SOLID 這兩家在 Apple 上的稀薄與 c-132 第 389 條記的規律同向。",
+  "mbNote": "釘 release-group 18e8b3dd-4d50-4756-a814-e448f5f8ac37。回問 release-group 端點（inc=artist-credits+releases）：title「Get Up!」、artist-credit「Akira Ishikawa & His Count Buffalos」（→ 實體主名 石川晶とカウント・バッファローズ，第 355 條）、first-release-date 1975-03-06、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1975-03-06/JP/Official RCA RVL-5510，12\" Vinyl 6 軌；2001-08-25/JP/Official SOLID RECORDS CDSOL-1042，CD 6 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶とカウント・バッファローズ",
+  "album": "Okinawa",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "沖縄；オキナワ；OKINAWA；石川晶；Akira Ishikawa；石川晶とカウント・バッファロー；AKIRA ISHIKAWA & COUNT BUFFALO；Count Buffalo Okinawa",
+  "reissuedBy": "MB 轄下只有 1976 年原盤一筆，沒有再發 release。Apple jp `1782228406`《OKINAWA》1976-11-21、8 軌、℗ 1976 King Record Co.,Ltd 是 King 自家 2024 年起的數位化上架（第 383 條那一段店面）。",
+  "label": "**King（キング）**，1976 JP 12 吋黑膠 8 軌 Official。⚠ **MB 的 `release` 端點回的 `label-info` 是空的**（不是問錯端點，`release?release-group=…&inc=labels+media` 已回問過）——廠牌取自 Apple jp 的 King 官方條目 `1782228406`（℗ 1976 King Record Co.,Ltd）；**catno 未取得，研究層須覆核**",
+  "why": "1976 年的《Okinawa》是 Count Buffaloes 把沖繩音階與 jazz-funk 節奏接在一起的一張，八首，King 發行——石川晶在 RCA 的《Get Up!》之後換廠牌做的地域題材作，與他 1970–72 年的アフリカ 四部曲互為對照（一個向外、一個向內）。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「Okinawa」在池中只命中 `Diamantes — OKINAWA LATINA`（不同盤名不同掛名，非撞卡）。收下這張，石川晶在池中就從 1972《ウガンダ》一張變成 1970–76 年六張的完整跨度。",
+  "risk": "⚠ **MB 資料庫端未登記廠牌**：`release` 端點（inc=labels+media）回的 `label-info` 是空陣列，依 c-133 簡報第二節第 2 點照收，`label` 欄寫實體盤面的廠牌並在此註明。**廠牌 King 的依據是 Apple jp 官方條目 `1782228406`（℗ 1976 King Record Co.,Ltd、1976-11-21、8 軌，與 MB 的 8 軌一致），catno 未取得——研究層須覆核。** ⚠ **Apple 的掛名字串是「石川晶とカウント・バッファロー」（無「ズ」）、藝人實體 `1782228407` 寫「AKIRA ISHIKAWA & COUNT BUFFALO」**，與 MB 實體主名差一個音，已進 queryAlias；**卡面仍取 MB 實體主名（第 355 條），不新造分裂**。年份：MB first-release-date **1976**（只有年份），Apple jp King 官方條目記 **1976-11-21**——**同年，不影響 `year`**；⚠ 但本組在同一段 King 數位化裡查到一個反例（ジョージ大塚クインテット《Loving You George》MB 1975 ／ Apple `1782228228` 1976-12-21），**第 383 條「店面精確日期優先」的前提在這段 King 號段上並非一致成立**，詳見 rulings 第 417 條。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp 以「石川晶 沖縄」搜到的全是 曹雪晶 等假陽性（逐筆排除）、以「Akira Ishikawa Okinawa」命中 `1782228406`；藝人目錄 `1782228407` 名下就這一筆；us 店面 0 筆。",
+  "mbNote": "釘 release-group 75c81ed9-0486-4271-b2d9-e496a98045b0。回問 release-group 端點（inc=artist-credits+releases）：title「Okinawa」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1976/JP/Official，**label-info 空陣列**，12\" Vinyl 8 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。Apple jp 藝人實體另立 `1782228407`「AKIRA ISHIKAWA & COUNT BUFFALO」，名下只有 `1782228406`。"
+ },
+ {
+  "g": "b",
+  "artist": "石川晶",
+  "album": "Back To Rhythm",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "バック・トゥ・リズム；Back to Rhythm；Akira Ishikawa；石川 晶；石川晶とカウント・バッファローズ；Count Buffalo",
+  "reissuedBy": "Columbia Music Entertainment 2007-04-18 COCB-53634（CD 10 軌）有兩筆 release 建進同一個 RG（一筆題英文、一筆題《バック・トゥ・リズム》且 label-info 記成 `[no label]`）。Apple `1557393105`《Back to Rhythm》1975-06-25、10 軌、℗ 1975 Nippon Columbia 是原盤年份的數位上架。",
+  "why": "石川晶**以本名單獨掛名**的代表作：1975 年日本コロムビア KZ-7510，十首，把 Count Buffaloes 的樂團編制縮成錄音室節奏組，等於他自己對「鼓手當領班」這件事的總結。收這張的意義在於**池中的石川晶會同時有樂團掛名與個人掛名兩條線**——與同組另外五張樂團盤互為對照。實掃 `seed_cards.json` 全 16,450 列（逐筆核整個掛名字串，不只比盤名——第 391 條第七點：池中有 `Marvin Gaye — What's Going On`、`Boney M. — Love for Sale` 這種同盤名不同掛名的卡，`chk-prop` 的折疊鍵是掛名＋盤名，不會亮燈），「石川晶」與「Back To Rhythm」在池中皆零命中（「石川」的命中全是 石川さゆり 等他人，逐筆排除）。",
+  "risk": "⚠ **掛名分工（不是分裂）**：本卡掛個人實體 `237e787a`「石川晶」的主名，同組另外五張掛群組實體 `2acbf5b2`「石川晶とカウント・バッファローズ」——**MB 上是兩個不同實體，依第 354／355 條各取實體主名，不是同一位被拆成兩個字串的重複**（與 c-132 第 388 條 白木秀雄 三個字串的處置同形）。已逐張核過：**同一張碟沒有被兩種寫法各收一次**。⚠ Apple 的掛名字串是「石川 晶」（中間有半形空格），已進 queryAlias。第 307 條反查同字串不同人：池中「石川」命中 石川さゆり ×3 等他人、「Ishikawa」零命中，**逐筆核整個掛名字串後無合併風險**。 撞卡：盤名《Back To Rhythm》池中零命中。年份 **1975**：MB first-release-date 1975（只有年份），轄下 1975 年 Columbia KZ-7510 原盤；Apple `1557393105` 記 **1975-06-25**、℗ 1975 Nippon Columbia、10 軌（與 MB 的 10 軌一致）——**同年，`year` 不受影響**。封面：CAA release-group 端點 **200**（實測）。店面（第 254 條，只寫觀察）：jp／us 搜尋與藝人目錄 `585618738`（Akira Ishikawa，名下 2 筆：本碟與《Drums Method》1972）**三種查法全部命中同一個 `1557393105`**，10 軌與 MB 一致。",
+  "mbNote": "釘 release-group 6751b48c-64fc-4555-ae4e-2df7e062e900。回問 release-group 端點（inc=artist-credits+releases）：title「Back To Rhythm」、artist-credit「Akira Ishikawa」（→ 實體主名 石川晶，第 355 條）、first-release-date 1975、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1975/JP/Official Columbia KZ-7510，12\" Vinyl 10 軌；2007-04-18/JP/Official Columbia Music Entertainment COCB-53634，CD 10 軌；2007-04-18/JP/Official「バック・トゥ・リズム」**[no label]** COCB-53634，CD 10 軌（第 262 條：`[no label]` 是 label-info 陣列裡有一筆但廠牌名為空，與「陣列是空的」不同）。藝人實體 237e787a-62fe-49e3-9c19-4c857d8a1a60（石川晶／Person／JP／jazz drummer；alias Akira Ishikawa；名下 3 個 RG：本碟、`f04cbfb7`《Drums Method》1972、`413ff347`《ドラム運命ドラム》1973）。本組刻意不釘：`f04cbfb7`《Drums Method》1972（**教材盤**，c-131 第 356 條 F 已列不收）、`413ff347`《ドラム運命ドラム (Drum Classic Drum)》1973（同為ドラム教材／実演系）。`batch-progress/enum/jp-columbia.json` 列有本筆（rgMbid 一致）。"
+ }
+]
