@@ -34,3 +34,35 @@
 ## 中村八大《ふたつのコンサート》1995 — **目錄裡找不到**
 
 ## 八城一夫《Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway》1976 — **目錄裡找不到**
+
+## 八城一夫《It's a Sin to Tell a Lie》1980 — **目錄裡找不到**
+
+## 北村英治《Happy Cooking Vol. II》1973 — **目錄裡找不到**
+
+## 北村英治クインテット《Ai No Cocktail》1979 — **目錄裡找不到**
+
+## 菅野邦彦《Portrait / The World Of Kunihiko Sugano》2002 — **目錄裡找不到**
+
+## 菅野邦彦《Portrait II / The World Of Kunihiko Sugano》2002 — **目錄裡找不到**
+
+## 今田勝トリオ《Planets》1977 — **目錄裡找不到**
+
+## 杉本喜代志カルテット《Country Dream》1970 — **目錄裡找不到**
+
+## 杉本喜代志《L.A. Master》1978 — **目錄裡找不到**
+
+## 中本マリ《Unforgettable!》1973 — **目錄裡找不到**
+
+## 中本マリ《Shiny Stockings》1978 — **目錄裡找不到**
+
+## 笠井紀美子《Just Friends》1970 — **目錄裡找不到**
+
+## 笠井紀美子《Umbrella》1972 — **目錄裡找不到**
+
+## 笠井紀美子《What's New》1973 — **目錄裡找不到**
+
+## 笠井紀美子《This Is My Love》1975 — **目錄裡找不到**
+
+## 笠井紀美子《TOKYO SPECIAL》1977 — **目錄裡找不到**
+
+## 日野元彦《First Album》1971 — **目錄裡找不到**
