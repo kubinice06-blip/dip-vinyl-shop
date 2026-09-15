@@ -139,10 +139,6 @@ Picture of Heath 只是 1961–1980 年代之間的壓片名。**第 45 條的�
 **MB 查無而未收：0 張**——這 25 位的目錄 MB 建檔完整，本批不需要 §1。
 
 **中間檔**：`scratchpad/c131b/`（c131b-poolscan.txt 實掃全文、c131b-mb/ 25 位目錄快取與 27 個 RG 的 release 端點回傳、c131b-catalog-detail.txt 逐位純 Album＋Live 清單含池中標記、c131b-apple.json 店面 search 結果）。
-# c-131 裁定與未收清單
-
-> 兩組共用一檔。**接著寫（append），不要覆蓋別組的段落。** a 組號段 350 起、b 組 360 起。
-
 ---
 
 # a 組（秋吉敏子全目錄 ＋ 日本爵士 1950–60 年代第一世代，23 張／14 位）
