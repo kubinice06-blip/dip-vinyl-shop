@@ -1,0 +1,402 @@
+[
+ {
+  "key": "desc4:原信夫とシャープス・アンド・フラッツ|Operation Glenn Miller",
+  "artist": "原信夫とシャープス・アンド・フラッツ",
+  "album": "Operation Glenn Miller",
+  "facts": [
+   {
+    "f": "release-group 3cc0ac9f 的欄位：title「Operation Glenn Miller」、artist-credit「Nobuo Hara And His Sharps & Flats」（單一 credit 元素，指向群組實體 e18d9179）、first-release-date 1963、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1963、KING SDS 6、12 吋黑膠 12 軌，status 欄是空的。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3cc0ac9f-3968-4490-b27d-58a3f90be064&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1963 原盤 12 軌逐軌（SDS 6 那筆 release 的軌長）：1〈A String of Pearls〉3:26、2〈Tuxedo Junction〉3:31、3〈Blue Moon〉3:04、4〈Little Brown Jug〉3:07、5〈Danny Boy〉2:42、6〈Stardust〉3:19、7〈In the Mood〉3:32、8〈Moonlight Serenade〉3:32、9〈Chattanooga Choo Choo〉3:17、10〈Pennsylvania 6-5000〉2:57、11〈Adios〉2:49、12〈American Patrol〉3:24，全長約 38 分鐘，十二首全部是 Glenn Miller 樂團的定番曲目。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3cc0ac9f-3968-4490-b27d-58a3f90be064&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "King Records 自家 2021-09-01 的數位條目把盤名寫成《グレン・ミラー作戦～あの名演が蘇る!〈1962年録音〉》，副標直接載明錄音年是 1962——錄音在 1962 年、原盤發行在 1963 年，兩者差一年。該條目 12 軌，曲序與 1963 年原盤逐軌相同。",
+    "src": "https://music.apple.com/jp/album/1581401373"
+   },
+   {
+    "f": "原信夫 1926 年 11 月 19 日生，1950 年在橫濱的舞廳起家組團，樂團移到品川的美軍俱樂部駐演時才改名シャープス・アンド・フラッツ；樂團一路活動到 2010 年 2 月 11 日在アクトシティ浜松的最終公演。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8E%9F%E4%BF%A1%E5%A4%AB"
+   },
+   {
+    "f": "King 在 1960 年代替這支樂團開了 SDS（Super Dynamic Sound）與 SKJ 兩段編號來裝立體聲企劃盤，同段的還有 1961-08-20 的《Marching -Sharps & Flats-》12 軌、1962-05-25 的《TANGO DYNAMICS》12 軌、以及 1964-10-20 的《Western Dynamics》12 軌。",
+    "src": "https://music.apple.com/jp/artist/351331901"
+   }
+  ],
+  "hookCandidates": [
+   "一支戰後在美軍俱樂部練出來的日本大樂團，把 Glenn Miller 整套編制當教材重做一次，King 還為它開了「Super Dynamic Sound」這段立體聲編號",
+   "盤面印 1963，King 自己 2021 年的數位版卻把副標寫成〈1962年録音〉——錄音與發行差了一年"
+  ],
+  "sound": "十二軌、約 38 分鐘，每首落在 2 分 42 秒到 3 分 32 秒之間，是標準的搖擺樂單曲長度而不是長篇即興。曲目全部來自 Glenn Miller 樂團的定番：〈In the Mood〉3:32、〈Moonlight Serenade〉3:32、〈A String of Pearls〉3:26、〈Chattanooga Choo Choo〉3:17。四支小號、四支長號、五支薩克斯風的戰前編制，重點在合奏的層次與立體聲的動態，不在個人獨奏。",
+  "keyTracks": [
+   "In the Mood",
+   "Moonlight Serenade",
+   "A String of Pearls"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1963（首發年）；錄音年是 1962。release-group first-release-date 1963、轄下唯一一筆 release 就是 KING SDS 6／JP 1963，兩邊相符；King 官方 2021 數位條目的副標〈1962年録音〉把錄音年獨立寫出來。**策展層第 402 條「錄音 1962／發行 1963 分離」的判斷覆核成立**，卡單的 1963 不動。",
+  "notes": "**覆核策展層：MB 逐欄實查相符，年份判斷成立，封面路徑成立，並推翻店面結論。** RG 四欄與唯一一筆 release（JP 1963／KING SDS 6／12\" Vinyl 12 軌／status 空）與 mbNote 完全相符；CAA release-group 端點覆核 **404**，與第 408 條一致。｜⚠ **推翻策展層與 `apple-candidates.md` 的店面結論**：兩份都寫本張「目錄裡找不到」，**實際上兩個 collectionId 都查得到，而且分屬兩個 artistId**——`1581401373`（掛主 id `351331901`，King 2021 數位，12 軌、℗ 2021 King）與 `321348554`（掛**第三個 artistId `292640268`「Nobuo Hara」**，King 2008 數位，12 軌、℗ 2008 King）。第三種查法直查 `lookup?id=1581401373&country=jp&entity=song` 實跑：12 軌全部有試聽，曲序與 1963 原盤逐軌相同、長度差 1 至 6 秒。**有固定試聽來源，串流採信 1581401373**；備用 `321348554`。⚠ **第 408 條只點名 `351331901` 與 `1578261324` 兩個 id，`292640268` 是本層新查到的第三個**——原信夫在店面上有三個 artistId，2008 年 King 復刻的那一整段目錄（グレン・ミラー作戦／ベニー・グッドマン作戦／ビッグ・バンド作戦／ビッグ・バンド・スコープ第1・2集／ミュージカル・スペクタクラー／ビッグ・バンドの挑戦）全部只掛在 `292640268` 底下，主 id 查不到。**這正是 c-132 研究 b 在 本田竹広 身上踩到的同一個坑，本線第二次。**｜**封面**：第 408 條寫的 apple-verified-collection 路徑（`1581401373`、12 軌與 MB 一致）**逐項覆核通過**，軌名、軌序、軌數三項都對得上。｜**廠牌假陽性反查（c-132 第 391 條）**：Apple ℗ King Record Co.,Ltd 與 MB 的 KING SDS 6 同一家，不是假陽性。｜**人名邊界**：原信夫 有 ja.wikipedia 條目支撐，可寫；Glenn Miller 是曲目來源的樂團領班、不是本盤參與者，**正文不得寫成他參與錄音**。原信夫 2021-06-21 辭世，距本盤發行 58 年、與本作無關，依研究層反向禁令**不寫進正文**。｜**反同構（原信夫五張）**：本張切入「Glenn Miller 教材＋SDS 立體聲企劃＋1962 錄音 1963 發行」，《Western Dynamics》走西部片主題與 1964／1970 兩版軌數差，《エレクトロニクス！》走 本田竹彦 與搖滾翻唱，《LITTLE GIANT》走 Victor 日本のジャズ 系列，《Oliver Nelson In Tokyo》走 Oliver Nelson 編曲指揮——五張不得共用「日本第一代大樂團學美國」這條骨架。"
+ },
+ {
+  "key": "desc4:原信夫とシャープス・アンド・フラッツ|Western Dynamics",
+  "artist": "原信夫とシャープス・アンド・フラッツ",
+  "album": "Western Dynamics",
+  "facts": [
+   {
+    "f": "release-group 5ba9d38f 的欄位：title「Western Dynamics」、artist-credit「原信夫とシャープス・アンド・フラッツ」（單一 credit 元素，實體 e18d9179）、first-release-date 1964、primary-type Album、secondary-types 空。轄下有兩筆 release：JP 1964 KING SKJ 7015（12 吋黑膠 12 軌、status 空）與 JP 1970 KING KR 7023（12 吋黑膠 10 軌、Official）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5ba9d38f-c723-4e7f-a7f6-cb30a8731f8d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1964 原盤 12 軌與 1970 再壓 10 軌的差別在兩首：再壓把第 9 軌〈Ballad of Davy Crockett〉2:20 與第 10 軌〈Oh, My Darling Clementine〉2:31 拿掉，其餘十首曲序不變。1964 年原盤逐軌：1〈The Big Country〉2:21、2〈High Moon〉3:18、3〈The Call of the Far-away Hills〉3:49、4〈Gunfight At the O.K. Corral〉2:12、5〈Greensleeves〉2:43、6〈The Green Leaves of Summer〉3:08、7〈Stagecoach〉3:02、8〈The Proud Ones〉3:35、11〈The River of No Return〉3:04、12〈My Rifle, My Pony And Me〉3:06。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5ba9d38f-c723-4e7f-a7f6-cb30a8731f8d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "整張是西部片主題曲集：〈The Big Country〉（《錦繡大地》）、〈High Moon〉、〈Gunfight At the O.K. Corral〉（《OK 鎮大決鬥》）、〈Stagecoach〉（《驛馬車》）、〈The River of No Return〉（《大江東去》）、〈My Rifle, My Pony And Me〉（《赤膽屠龍》）——原盤副標就寫「Themes from The Western Movies」。",
+    "src": "https://music.apple.com/jp/album/1725117671"
+   },
+   {
+    "f": "King 的數位條目把發行日記成 1964 年 10 月 20 日、℗ 1964 King Record Co.,Ltd，12 軌版本，與 MB 的 1964 年 SKJ 7015 原盤同一個版本。",
+    "src": "https://music.apple.com/jp/album/1725117671"
+   },
+   {
+    "f": "SKJ 段是 King 接在 SDS 段之後替這支樂團開的編號，《Western Dynamics》是 SKJ 7015；同段還有 1962 年的《TANGO DYNAMICS》（SDS-3／SKJ-7003）。",
+    "src": "https://music.apple.com/jp/artist/351331901"
+   }
+  ],
+  "hookCandidates": [
+   "一支日本大樂團用四管編制把《驛馬車》《OK 鎮大決鬥》《赤膽屠龍》的主題曲整張重編，副標直接寫「Themes from The Western Movies」",
+   "1964 年的原盤 12 首，1970 年再壓時被砍成 10 首——被拿掉的是〈Ballad of Davy Crockett〉與〈Oh, My Darling Clementine〉"
+  ],
+  "sound": "十二軌、約 35 分鐘，最短〈Gunfight At the O.K. Corral〉2:12、最長〈The Call of the Far-away Hills〉3:49。西部片主題曲用大樂團四管編制重編，銅管走寬闊的長音、節奏組打進行曲式的馬蹄節拍，〈Greensleeves〉2:43 與〈The Green Leaves of Summer〉3:08 則退成慢板。這是企劃盤的規格：曲子都是別人的，聽的是編曲與合奏。",
+  "keyTracks": [
+   "The Big Country",
+   "Gunfight At the O.K. Corral",
+   "The River of No Return"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1964（首發年）。release-group first-release-date 1964、轄下 1964 年 KING SKJ 7015 原盤、King 官方數位條目 `1725117671` 記 1964-10-20 與 ℗ 1964，三邊同年；1970 年的 KING KR 7023 是再壓（10 軌），不取。**策展層第 402 條把本張列為「兩個獨立來源逐日相符」的三張之一，覆核成立**，而且本層再加一層：店面那筆的 **12 軌對應的是 1964 原盤、不是 1970 的 10 軌再壓**，版本層級也對得上。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立，店面結論被推翻。** RG 四欄與兩筆 release 與 mbNote 相符；CAA 覆核 **404**，與第 408 條一致。｜⚠ **推翻策展層與 `apple-candidates.md` 的店面結論**：兩份都寫本張「目錄裡找不到」，**實際上在主 artistId `351331901` 的目錄裡**（本層把該 id 的 75 張整份拉下來逐筆核）。第三種查法直查 `lookup?id=1725117671&country=jp&entity=song` 實跑：12 軌全部有試聽，曲序與 1964 原盤逐軌相同、長度差 1 至 5 秒，**包含只有 1964 版才有的〈デーヴィー・クロケットの歌〉與〈いとしのクレメンタイン〉**。**有固定試聽來源，串流採信 1725117671**。｜**封面**：第 408 條寫的 apple-verified-collection 路徑（`1725117671`、12 軌一致）**逐項覆核通過**，而且版本層級比第 408 條寫的更精確——它對的是 1964 原盤那一版。｜**廠牌假陽性反查**：Apple ℗ King 與 MB 的 KING SKJ 7015 同一家，不是假陽性。｜⚠ **給下游的版本警告**：市面上的《Western Dynamics》有 12 軌與 10 軌兩種，**正文引軌數一律說「原盤十二首」並避免逐軌長度**（兩版同名軌的長度差 1 至 5 秒）。｜**反同構**：本張切入「西部片主題曲集＋兩版軌數差」，不與《Operation Glenn Miller》共用 SDS／立體聲企劃那條線。"
+ },
+ {
+  "key": "desc4:原信夫とシャープス・アンド・フラッツ|LITTLE GIANT",
+  "artist": "原信夫とシャープス・アンド・フラッツ",
+  "album": "LITTLE GIANT",
+  "facts": [
+   {
+    "f": "release-group 1e261c1e 的欄位：title「LITTLE GIANT」、artist-credit「原信夫とシャープス・アンド・フラッツ」（單一 credit 元素，實體 e18d9179）、first-release-date 1969、primary-type Album、secondary-types 空。轄下只有一筆 release：Victor、Official、Digital Media 8 軌，country 未填、目錄編號資料庫端未登記。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1e261c1e-ce4e-4c66-9c1a-968d5acc557f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八軌逐軌：1〈LITTLE GIANT〉6:02、2〈PATTERNS〉4:39、3〈DARK HORSE〉4:16、4〈ELEGY FOR A DUCK〉7:26、5〈ORBIT 8:11〉3:44、6〈FLUTE SALAD〉3:57、7〈FLEXIBILITY〉5:46、8〈MISS FINE〉4:44，全長約 40 分鐘。八首全部是原創曲，不是翻唱企劃。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1e261c1e-ce4e-4c66-9c1a-968d5acc557f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本張屬於ビクター的「日本のジャズ」系列，是這支樂團少數不在 King 或日本コロムビア 的作品；Victor 在 2024 年 10 月 30 日把它做成數位專輯重新上架，八軌曲序與原盤相同。",
+    "src": "https://www.jvcmusic.co.jp/-/Discography/A015774/VEATP-43281.html"
+   },
+   {
+    "f": "店面官方條目記 ℗ 1969 Victor Entertainment，八軌的軌長與資料庫端登記的完全相同（6:02／4:39／4:16／7:26／3:44／3:57／5:46／4:44）。",
+    "src": "https://music.apple.com/jp/album/1773905462"
+   },
+   {
+    "f": "ビクターの「日本のジャズ」系列在 1969 至 1970 年間集中發行，同系列還有 山下洋輔トリオ 與 石川晶 的盤；2023 年起 Victor 以 NJS 編號分批黑膠重發這個系列，《Little Giant》的重發編號是 NJS-803。",
+    "src": "https://www.hmv.co.jp/news/article/240829165/"
+   }
+  ],
+  "hookCandidates": [
+   "同一支樂團在 King 錄葛倫・米勒、在日本コロムビア 錄搖滾翻唱，只有這一張跑去 Victor 的「日本のジャズ」系列，而且八首全是原創曲",
+   "第五首的曲名直接叫〈ORBIT 8:11〉——曲名裡就寫著一個時間，實際長度卻是 3 分 44 秒"
+  ],
+  "sound": "八軌、約 40 分鐘，長度分佈很寬：〈ELEGY FOR A DUCK〉7:26 最長、〈ORBIT 8:11〉3:44 最短。與同時期那些翻唱企劃盤不同，這張八首都是原創，樂團有空間把段落拉開，〈LITTLE GIANT〉6:02 與〈FLEXIBILITY〉5:46 都留了獨奏的篇幅。大樂團編制，但寫法比「合奏聽層次」那一路更靠近 1960 年代末的現代爵士。",
+  "keyTracks": [
+   "LITTLE GIANT",
+   "ELEGY FOR A DUCK",
+   "FLEXIBILITY"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（首發年）。release-group first-release-date 1969、店面官方條目 ℗ 1969 Victor Entertainment、日本の唱片收藏家目錄記「1969 年 10 月初出」，三邊同年。⚠ **有一筆 1970 的少數說法**（唱片行 ventoazul 的商品頁把它記成 1970 年，但同頁掛的規格番號 NJS-803 是 **2024 年重發的編號**，那頁講的是重發盤），不採用。卡單的 1969 不動。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **404**，與第 408 條一致。｜**這張是第 404 條「只有數位 release 不是排除理由」的同形先例本身**——MB 轄下確實只有 Victor 的數位 release、沒有 catno、country 未填，本層逐欄確認策展層的記載屬實（第 259 條：這是 release 端點回來的實情，不是推測）。｜**店面**：本張策展層已命中，本層覆核 `lookup?id=1773905462&country=jp&entity=song`：8 軌全部有試聽，**軌長與 MB 登記的八個數字完全相同（一秒不差）**，這是本組相符程度最高的一筆。**有固定試聽來源，串流採信 1773905462**。｜**封面**：第 408 條寫的 apple-verified-collection 路徑（`1773905462`、8 軌一致）**逐項覆核通過**。｜**廠牌假陽性反查**：Apple ℗ Victor Entertainment 與 MB 的 Victor 同一家，不是假陽性。｜⚠ **原盤的規格番號本層查不到**：Victor 官方頁只掛 2024 數位版、唱片行頁掛的 NJS-803 是 2023 年起那套黑膠重發的編號。**正文不得寫原盤編號**。編曲者也只有二手來源提到 八木正生／山屋清／前田憲男／佐藤允彦 四人且各頁說法不一，**未達交叉驗證門檻，不寫進 facts**。｜**反同構**：本張切入「唯一一張 Victor 日本のジャズ 系列＋八首全原創」，不碰 King 企劃盤那條線。"
+ },
+ {
+  "key": "desc4:原信夫とシャープス・アンド・フラッツ|エレクトロニクス！",
+  "artist": "原信夫とシャープス・アンド・フラッツ",
+  "album": "エレクトロニクス！",
+  "facts": [
+   {
+    "f": "release-group 3b3d4658 的欄位：title「エレクトロニクス！」、artist-credit「原信夫とシャープス＆フラッツ＋1」（單一 credit 元素，實體 e18d9179）、first-release-date 1970-06-25、primary-type Album、secondary-types 空。轄下兩筆 release：JP 1970-06-25 日本コロムビア JDX-36（12 吋黑膠 10 軌、Official）與 JP 2012-09-05 Columbia COCB-54009（CD 10 軌、Official）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3b3d4658-4def-47fe-82d1-1f0c306cc85c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "掛名裡的那個「＋1」是當時 22 歲的鋼琴手 本田竹彦，他在本張負責電鋼琴與 Hammond 風琴；廠牌官方條目把他的職位寫成「E・PIANO、HAMMOND ORGAN」。",
+    "src": "https://columbia.jp/artist-info/haranobuo/discography/COCB-54009.html"
+   },
+   {
+    "f": "十軌曲目：1〈BOUREE〉、2〈BREIT KOPT〉、3〈LIBERATION〉、4〈TUMBLIN! TUMBOURINE!〉、5〈NERVOUS BREAK DOWN〉、6〈SPINNING WHEEL〉、7〈COME TOGETHER〉、8〈HONEY〉、9〈HORSE LAUGH BLUES〉、10〈LIGHT BLUES〉；其中〈BOUREE〉出自 Jethro Tull、〈SPINNING WHEEL〉出自 Blood, Sweat & Tears、〈COME TOGETHER〉出自 The Beatles，是 1970 年當時的搖滾曲目。",
+    "src": "https://columbia.jp/artist-info/haranobuo/discography/COCB-54009.html"
+   },
+   {
+    "f": "編曲由四個人分工：佐藤允彦、山屋清、荒川康男、小山恭弘；樂團編制是薩克斯風三人、小號四人、長號四人，加上鋼琴、貝斯、鼓、吉他。",
+    "src": "https://columbia.jp/artist-info/haranobuo/discography/COCB-54009.html"
+   },
+   {
+    "f": "廠牌自己把這張定位成「シャープス＆フラッツ切っての異色作」與「日本を代表するビッグ・バンドが放ったジャズ・ロック・スペクタクル」，和同一支樂團在 King 那些搖擺樂企劃盤是兩條路線。",
+    "src": "https://columbia.jp/artist-info/haranobuo/discography/COCB-54009.html"
+   }
+  ],
+  "hookCandidates": [
+   "掛名後面那個「＋1」不是修辭——那是 22 歲的 本田竹彦，帶著電鋼琴與 Hammond 風琴坐進一支戰後大樂團裡",
+   "1970 年一支日本大樂團的選曲表：Jethro Tull、Blood, Sweat & Tears、The Beatles，編曲交給 佐藤允彦 與 山屋清 四個人分著寫"
+  ],
+  "sound": "十軌、約 36 分鐘，每首落在 2 分 26 秒到 4 分 38 秒之間，是短打的規格。四支小號、四支長號、三支薩克斯風的傳統大樂團編制，加一台電鋼琴與 Hammond 風琴——電子鍵盤的音色就是這張的題名由來。〈BOUREE〉3:49 與〈SPINNING WHEEL〉3:31 把搖滾原曲拆進銅管聲部，〈COME TOGETHER〉3:16 則把貝斯 riff 交給節奏組。",
+  "keyTracks": [
+   "BOUREE",
+   "SPINNING WHEEL",
+   "COME TOGETHER"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（首發年）。release-group first-release-date **1970-06-25**、轄下 1970-06-25 的 日本コロムビア JDX-36 原盤、廠牌官方 discography 頁同記「1970年6月25日／JDX-36」，三邊逐日相符；2012-09-05 的 COCB-54009 是 CD 復刻，不取。⚠ **店面條目記 1970-06-01**，比 MB 早，但依 c-133 第 415 條的觀察「Apple 的月初日期多半是月日缺值的占位寫法」，且**廠牌自家頁面給的是 6 月 25 日**，本層以廠牌頁為準。卡單的 1970 不動。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立，店面結論被推翻。** RG 四欄與兩筆 release 與 mbNote 相符；CAA 覆核 **404**，與第 408 條一致。｜⚠ **推翻策展層與 `apple-candidates.md` 的店面結論**：兩份都寫本張「目錄裡找不到」——第 408 條自己其實已經記到它掛在 `1578261324`，但 `apple-candidates.md` 沒有更新。本層直查 `lookup?id=1579014905&country=jp&entity=song` 實跑：10 軌全部有試聽，曲序與 1970 原盤逐軌相同。**有固定試聽來源，串流採信 1579014905**。｜**封面**：第 408 條寫的 apple-verified-collection 路徑（`1579014905`、10 軌一致）**逐項覆核通過**。｜⚠ **本層補到一個第 408 條沒寫的事實**：`1578261324`「Nobuo Hara and His Sharps & Flats + 1」這個 artistId **名下就只有這一張**，因為「＋1」是這張專屬的掛名——店面把一次性的合作掛名建成了獨立實體。｜**掛名與人名**：MB 的 RG credit 寫「原信夫とシャープス＆フラッツ＋1」（＋1 ＝ 本田竹彦），卡單依第 355 條取實體主名「原信夫とシャープス・アンド・フラッツ」，**正文可以寫「＋1」是誰，但不得把 本田竹彦 寫成共同領銜**。⚠ **本田竹彦 就是 c-132 b 組收了六張的 本田竹広**（他的藝名在 本田竹広／本田竹彦／本田竹曠 三種漢字之間換過，見 c-132 研究 b 的《Jōdo》一卡）——**跨批交集，本張與 c-132 b 組不得共用「本田的三個漢字」這個切入點**，那是《Jōdo》的。佐藤允彦 是 c-132 a 組的掛名，山屋清、荒川康男、小山恭弘 有廠牌頁 credit，四人皆可寫。｜**廠牌假陽性反查**：Apple ℗ Nippon Columbia 與 MB 的 Columbia JDX-36 同一家，不是假陽性。｜**反同構**：本張切入「＋1 是 本田竹彦＋1970 年搖滾曲目＋四人分工編曲」。"
+ },
+ {
+  "key": "desc4:原信夫とシャープス・アンド・フラッツ|Oliver Nelson In Tokyo",
+  "artist": "原信夫とシャープス・アンド・フラッツ",
+  "album": "Oliver Nelson In Tokyo",
+  "facts": [
+   {
+    "f": "release-group c9353f6e 的欄位：title「Oliver Nelson In Tokyo」、artist-credit「Nobuo Hara & His Sharps & Flats」（單一 credit 元素，實體 e18d9179）、first-release-date 2013-11-20、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 2013-11-20 日本コロムビア COCB-54079、CD 10 軌、Official——1970 年的原盤資料庫端未建檔。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c9353f6e-0529-4a3f-9573-18b0eab29e93&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "廠牌官方 discography 頁載明原盤是 1970 年 12 月 25 日發行、LP 編號 NCB-7002，2013 年 11 月 20 日以 COCB-54079 重發；錄音寫「Recorded at COLUMBIA STUDIO, September 4, 7, 1970」。",
+    "src": "https://columbia.jp/artist-info/haranobuo/discography/COCB-54079.html"
+   },
+   {
+    "f": "Oliver Nelson 在本張擔任編曲與指揮，並吹次中音與高音薩克斯風；樂團出的是小號四人、長號四人、次中音薩克斯風兩人、中音薩克斯風兩人、上低音薩克斯風一人，加貝斯、吉他、鋼琴、鼓各一。",
+    "src": "https://columbia.jp/artist-info/haranobuo/discography/COCB-54079.html"
+   },
+   {
+    "f": "這是兩邊的第二張合作專輯，前一張是 1969 年的《3-2-1-0》；廠牌頁的解說由 長門竜也 執筆。",
+    "src": "https://columbia.jp/artist-info/haranobuo/discography/COCB-54079.html"
+   },
+   {
+    "f": "十軌逐軌：1〈Round Midnight〉5:21、2〈The Shadow of Your Smile〉4:03、3〈Yesterday〉5:06、4〈My Funny Valentine〉4:57、5〈Scarborough Fair/Canticle〉3:13、6〈Summertime〉4:17、7〈Charade〉2:31、8〈Autumn Leaves〉2:57、9〈How Insensitive〉3:47、10〈Sermonette〉6:26，全長約 42 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c9353f6e-0529-4a3f-9573-18b0eab29e93&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "一位美國編曲家飛到東京，走進日本コロムビア 第一錄音室，把十首標準曲重寫給一支日本大樂團——而他自己只掛編曲、指揮與獨奏",
+   "1970 年 9 月 4 日與 7 日錄完，同年 12 月 25 日就上市；資料庫裡卻只剩 2013 年那張 CD"
+  ],
+  "sound": "十軌、約 42 分鐘，最長〈Sermonette〉6:26、最短〈Charade〉2:31。曲目全部是標準曲與流行曲，聽點在 Oliver Nelson 的配器：他把銅管的厚度用在〈Round Midnight〉5:21 與〈Summertime〉4:17 的鋪陳上，自己的次中音與高音薩克斯風獨奏穿在大樂團的塊狀和聲之間。〈Scarborough Fair/Canticle〉3:13 與〈Yesterday〉5:06 則是把 1960 年代的流行曲拉進大樂團語法。",
+  "keyTracks": [
+   "Round Midnight",
+   "Sermonette",
+   "Summertime"
+  ],
+  "status": "full",
+  "yearVerified": "改判成立，取 **1970**（首發年），卡單一致。release-group first-release-date 是 **2013-11-20**，那是 COCB-54079 這張 CD 的日期；**廠牌自家的 discography 頁直接寫「オリジナル発売日 1970年12月25日／NCB-7002」**，並記錄音日 1970-09-04 與 09-07。店面官方條目 `1579015484` 記 1970-12-25、℗ 1970 Nippon Columbia、10 軌，與廠牌頁**逐日相符**。**策展層第 402 條 2013→1970 的改判覆核成立，而且本層把原盤編號 NCB-7002 補出來了**（策展層的 `label` 欄只寫「日本コロムビア」、catno 空）。這屬簡報第四節第 1 型（MB 轄下只有再發）。",
+  "notes": "**覆核策展層：年份改判成立並補上原盤編號，掛名問題給出判斷。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層的封面判斷成立。｜⚠ **第 405 條要的掛名判斷，本層的結論是：正文以 原信夫とシャープス・アンド・フラッツ 為主體，Oliver Nelson 寫成「編曲、指揮並吹奏的客座」，不得寫成兩人共同領銜、也不得寫成 Oliver Nelson 的作品。** 三條依據：(1) **廠牌自己把這張放在 原信夫とシャープス＆フラッツ 的 discography 底下**，不是放在客座藝人名下；(2) 廠牌頁把 Oliver Nelson 的職務明寫成「編曲・指揮」＋ts／ss，演奏主體是這支樂團的十七人編制；(3) MB 的 RG artist-credit 是單一元素。**代價要寫在卡上**：實體盤面與 Discogs master 1082416 的掛名是「Oliver Nelson, Nobuo Hara and His Sharps & Flats」兩人平列，**池中已有 Oliver Nelson 五張**，若本機日後以 Oliver Nelson 名義收同一張就會重複——`chk-prop` 折疊鍵是掛名＋盤名，抓不到（第 405 條）。｜⚠ **一個要防的誤寫**：店面條目把第 1 軌與第 6 軌的副標記成「Arranged by Oliver Nelson 1971」，**那個 1971 與廠牌頁的 1970-12-25 發行日矛盾**，本層判為店面端的欄位雜訊，**正文不得引用 1971**。｜**人名邊界**：Oliver Nelson、長門竜也 有廠牌頁 credit，可寫。｜**跨批**：《3-2-1-0》1969（MB `8e8bcc0d`）是同一組合的第一張，策展層依合掛規則刻意不釘，本張正文提到它時**只能當作前作提及、不得展開**。｜**反同構**：本張切入「Oliver Nelson 編曲指揮＋1970-09-04／07 錄音＋第二張合作」。"
+ },
+ {
+  "key": "desc4:高橋達也と東京ユニオン|The Rock Seasons",
+  "artist": "高橋達也と東京ユニオン",
+  "album": "The Rock Seasons",
+  "facts": [
+   {
+    "f": "release-group e8a53d83 的欄位：title「The Rock Seasons」、artist-credit「高橋達也と東京ユニオン」（單一 credit 元素，群組實體 aa55bb8c）、first-release-date 1973-03-05、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1973-03-05、EXPRESS ETP-92004Z、12 吋黑膠 16 軌、Official。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e8a53d83-7d8a-49ee-a4a2-24562acbdf80&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十六軌分成兩塊：前十二軌是單字標題的短樂章——〈雅〉2:19、〈寒〉1:59、〈解〉1:40、〈萌〉2:00、〈開〉1:34、〈結〉1:10、〈授〉1:48、〈盛〉2:25、〈極〉1:34、〈移〉1:58、〈実〉1:38、〈充・静〉0:56，合計約 19 分鐘；後四軌是一般長度的曲子——〈イントロダクション〉4:45、〈ファイブ・ブラック・スポット〉4:16、〈ワックス・アンド・ウエイン〉5:22、〈ファースト・ファースト〉3:41。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e8a53d83-7d8a-49ee-a4a2-24562acbdf80&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "EXPRESS 是東芝音楽工業的爵士企劃廠標，ETP-92004Z 是 1973 年 3 月的盤，定價 2,200 日圓，對開封套；同一段編號裡還有 佐藤允彦 的作品。",
+    "src": "https://www.hmv.co.jp/artist_%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F_000000000015340/item_%E3%80%90%E4%B8%AD%E5%8F%A4-%E7%9B%A4%E8%B3%AAAB%E3%80%91-%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3_9066901"
+   },
+   {
+    "f": "高橋達也 1931 年 12 月 27 日生於山形縣鶴岡市，1951 年在仙台的美軍營區出道後上京；1964 年加入大樂團「東京ユニオン」，1966 年接任第四代團長，此後樂團才以「高橋達也と東京ユニオン」的名義活動。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F"
+   },
+   {
+    "f": "東京ユニオン 1964 年在中音薩克斯風手 野村良 手下成立，是日本現存最老的爵士大樂團之一；本張是它在 1966 年換上 高橋達也 之後、最早留在唱片上的長篇作品之一。",
+    "src": "https://en.wikipedia.org/wiki/Tokyo_Union"
+   }
+  ],
+  "hookCandidates": [
+   "半張唱片是十二段單字標題的短樂章——〈寒〉〈萌〉〈開〉〈盛〉〈実〉，最短的〈充・静〉只有 56 秒",
+   "一支 1964 年成立的日本大樂團，換了第四代團長之後，第一件事是把一張黑膠拆成十六軌"
+  ],
+  "sound": "十六軌、約 37 分鐘，結構是罕見的兩半制：前十二軌每首只有 56 秒到 2 分 25 秒，像一組連續的短樂章；後四軌回到 3 分 41 秒到 5 分 22 秒的常規長度。大樂團編制加上 1973 年的爵士搖滾語彙——電貝斯與電鋼琴進來了，銅管仍是主體。〈ワックス・アンド・ウエイン〉5:22 是全張最長的一首。",
+  "keyTracks": [
+   "ワックス・アンド・ウエイン",
+   "イントロダクション",
+   "ファイブ・ブラック・スポット"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（首發年）。release-group first-release-date **1973-03-05**、轄下唯一一筆 release 就是 1973-03-05 的 EXPRESS ETP-92004Z 原盤，兩邊逐日相符。⚠ **有一筆 1973 年 6 月的二手說法**（唱片行條目把發行月寫成 1973 年 6 月），**年份不受影響**，本層以 MB 的 release 日期為準、正文不寫月份。卡單的 1973 不動。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面成立；店面結論本層確認為真——三種查法全部落空。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**。｜**店面（第 254 條三步全跑過，結論是無來源）**：(1) 盤名搜尋——「The Rock Seasons 東京ユニオン」「ザ・ロック・シーズンズ」jp／us 皆 0 筆；(2) **藝人目錄——本層把 高橋達也 在店面的三個 artistId 全部拉下來**（`584187095` 高橋達也と東京ユニオン／`1687413345` Tatsuya Takahashi & Tokyo Union Orchestra／`357464096` 高橋達也），**三個加起來名下只有 5 張**（Montreux The Best ＇78、Soul Porter、KEEPING COUNT、PLAYS MILES & GIL、ストレート・ノー・チェイサー），沒有本張；(3) 直查曲目——以〈ファイブ・ブラック・スポット〉〈ワックス・アンド・ウエイン〉搜 song entity，jp／us 皆 0 筆。**確認無來源。**｜⚠ **本層補到一條對主線有用的規律**：高橋達也と東京ユニオン 在店面上只有 **5 張**，而且**全部是 1978 年以後的 Warner／King／Paddle Wheel 盤**——**1973 年 EXPRESS（東芝）那兩張與 1980／81 年 Zen、Polydor 那兩張一張都沒上架**。這與第 408 條列的「EXPRESS／Zen／Polydor 日本」那條規律**完全同向，本組在同一位掛名上一次應驗四張**。｜**人名邊界**：高橋達也、野村良 有百科條目支撐，可寫。⚠ **野村良 的羅馬拼音兩邊不一致**（英文維基寫 Ryusuke Nomura），**正文只寫漢字、不寫拼音**。高橋達也 2008-02-29 辭世，距本盤 35 年、與本作無關，**不寫進正文**。｜⚠ **十二段單字標題讀成「四季」是推測**（盤名有 Seasons、字面有 寒／萌／盛 等），**本層查不到一手的樂曲解說，facts 只寫標題與長度，正文不得斷言它是四季組曲**。｜**反同構（高橋達也五張）**：本張切入「十二段短樂章的兩半結構＋EXPRESS」，《You＇re So Vain》走同廠牌的翻唱企劃，《Soul Porter》走 Cole Porter 曲集，《Black Pearl》走 1980 年美國錄音，《Up In The Blues》走 Lester Young 那條搖擺線。"
+ },
+ {
+  "key": "desc4:高橋達也と東京ユニオン|You're So Vain - Perfect Sound In Jazz Rock",
+  "artist": "高橋達也と東京ユニオン",
+  "album": "You're So Vain - Perfect Sound In Jazz Rock",
+  "facts": [
+   {
+    "f": "release-group 7b1e4e37 的欄位：title「You’re So Vain - Perfect Sound In Jazz Rock」、artist-credit「高橋達也と東京ユニオン」（單一 credit 元素，實體 aa55bb8c）、first-release-date 1973、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1973、EXPRESS ETP-92015V、12 吋黑膠 9 軌，status 欄是空的。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7b1e4e37-c11c-4b98-ba72-749439fb498f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "九軌全部是當時的流行曲與爵士曲翻編：1〈You’re So Vain〉、2〈Alone Again〉、3〈The Monk〉、4〈Me And Mrs. Jones〉、5〈Theme From Shaft〉、6〈Return To Forever〉、7〈Valachi Theme〉、8〈Blowin’ Your Mind〉、9〈Hey Jude〉。原盤副標直接寫「Perfect Sound In Jazz Rock」。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7b1e4e37-c11c-4b98-ba72-749439fb498f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本張與同團 1973 年 3 月的《The Rock Seasons》（ETP-92004Z）同屬東芝音楽工業 EXPRESS 廠標的同一段編號，兩張相隔十一號。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7b1e4e37-c11c-4b98-ba72-749439fb498f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "高橋達也 1966 年接任東京ユニオン 第四代團長，1970 年代後半把樂團帶進國際場合：1977 年以 三木敏悟 的作品專輯《北欧組曲》拿下スイングジャーナル 的ジャズ・ディスク大賞與日本ジャズ賞，1978 年與 1980 年兩度登上 Montreux Jazz Festival。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F"
+   },
+   {
+    "f": "東京ユニオン 在《スイングジャーナル》的讀者票選裡連續九年被選為最佳大樂團，1978 年並獲得該誌的年度唱片獎。",
+    "src": "https://en.wikipedia.org/wiki/Tokyo_Union"
+   }
+  ],
+  "hookCandidates": [
+   "一張 1973 年的日本大樂團唱片，曲目表是 Carly Simon、Isaac Hayes、The Beatles 與 Chick Corea——副標直接寫「Perfect Sound In Jazz Rock」",
+   "同一支樂團同一年在同一個廠標出了兩張，編號只差十一號，一張是十六軌的短樂章，一張是九軌的流行曲翻編"
+  ],
+  "sound": "九軌，曲目全部是別人的歌：Carly Simon 的〈You＇re So Vain〉、Gilbert O’Sullivan 的〈Alone Again〉、Billy Paul 的〈Me And Mrs. Jones〉、Isaac Hayes 的〈Theme From Shaft〉、Chick Corea 的〈Return To Forever〉、The Beatles 的〈Hey Jude〉。大樂團編制套上 1973 年的爵士搖滾節奏組，銅管負責把流行旋律推成塊狀和聲，聽的是編曲怎麼把三分鐘的流行曲撐成大編制的段落。",
+  "keyTracks": [
+   "You’re So Vain",
+   "Theme From Shaft",
+   "Return To Forever"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（首發年）。release-group first-release-date 1973、轄下唯一一筆 release 就是 1973 年的 EXPRESS ETP-92015V 原盤，兩邊相符，無再發失真。⚠ 該 release 的 **status 欄是空的、不是 Official**，這是資料庫端的欄位缺陷（簡報第二節第 2 點），不影響年份。卡單的 1973 不動。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面成立；店面結論本層確認為真——三種查法全部落空。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**。｜**店面（第 254 條三步全跑過）**：盤名搜尋「You＇re So Vain 東京ユニオン」「ユア・ソー・ヴェイン」jp／us 皆 0 筆；三個 artistId 的目錄合計 5 張裡沒有本張；曲名搜尋也 0 筆。**確認無來源。**｜⚠ **盤名帶 ASCII 連字號與 U+2019 撇號**：MB RG 原題是「You’re So Vain - Perfect Sound In Jazz Rock」，撇號是 **U+2019**、破折號是 ASCII。卡單照抄 MB 原題。**下游一律鎖 rgMbid**——盤名裡的撇號與副標會讓任何字串比對失準。｜⚠ **曲目來源的寫法限制**：〈The Monk〉〈Valachi Theme〉〈Blowin＇ Your Mind〉三首本層查不到可靠的作者歸屬（〈Valachi Theme〉常被歸給 Riz Ortolani 的 1972 年電影配樂，但無一手來源），**facts 只寫曲名，正文不得替這三首指定作者**。其餘六首的原唱／原作是公認事實。｜**人名邊界**：三木敏悟 是 1977 年《北欧組曲》的作曲者、與本張無關，**只能當樂團履歷提及，不得寫成本張的參與者**。｜**反同構**：本張切入「流行曲翻編企劃＋與《The Rock Seasons》同廠標同年的編號關係」，不重述十二段短樂章那條。"
+ },
+ {
+  "key": "desc4:高橋達也と東京ユニオン|Soul Porter",
+  "artist": "高橋達也と東京ユニオン",
+  "album": "Soul Porter",
+  "facts": [
+   {
+    "f": "release-group 9f39f6d9 的欄位：title「Soul Porter」、artist-credit「高橋達也と東京ユニオン」（單一 credit 元素，實體 aa55bb8c）、first-release-date 1978-11、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1978-11、Warner Bros. Records M-8002W、12 吋黑膠 8 軌，status 欄是空的。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9f39f6d9-01bd-456b-b5d1-b2b6bb449278&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八軌全部是 Cole Porter 的曲子或以他為題的原創：1〈Anything Goes〉5:21、2〈Night And Day〉5:20、3〈What Is This Thing Called Love〉5:12、4〈Soul In Love〉6:00、5〈Love Festival〉7:45、6〈True Love〉5:10、7〈You Are The Top〉4:20、8〈Begin The Beguine〉4:31——盤名《Soul Porter》就是把 soul 與 Porter 併在一起的雙關。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9f39f6d9-01bd-456b-b5d1-b2b6bb449278&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "店面的官方條目把發行日記成 1978 年 11 月 25 日、℗ 1978 WARNER MUSIC JAPAN INC.，八軌，與資料庫端的 1978-11 同月。",
+    "src": "https://music.apple.com/jp/album/1804566435"
+   },
+   {
+    "f": "1977 年樂團以 三木敏悟 的作品專輯《北欧組曲》拿下スイングジャーナル 的ジャズ・ディスク大賞與日本ジャズ賞，1978 年首度登上 Montreux Jazz Festival——本張就發行在那一年的年底。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F"
+   },
+   {
+    "f": "高橋達也 1951 年在仙台的美軍營區出道，1964 年加入東京ユニオン、1966 年接任第四代團長；樂團在 1989 年 12 月 31 日一度解散，1990 年 7 月 30 日他辦了復出派對重啟活動。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F"
+   }
+  ],
+  "hookCandidates": [
+   "盤名把 soul 接在 Porter 後面——八首有六首真的是 Cole Porter 的歌，剩下兩首是為了這個雙關寫的原創",
+   "1978 年這支樂團第一次站上 Montreux 的舞台，同年年底交出的唱片卻是一整張 Cole Porter"
+  ],
+  "sound": "八軌、約 43 分鐘，每首都在 4 分 20 秒以上，最長的〈Love Festival〉7:45。這是大樂團拿美國歌本開刀：〈Anything Goes〉5:21、〈Night And Day〉5:20、〈Begin The Beguine〉4:31 這些 1930 年代的曲子被放進 1970 年代後半的節奏組裡，靈魂樂的律動接在 Cole Porter 的和聲上。自作曲〈Soul In Love〉6:00 與〈Love Festival〉7:45 是全張最長的兩首，也是樂團自己的話。",
+  "keyTracks": [
+   "Love Festival",
+   "Anything Goes",
+   "Begin The Beguine"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978（首發年）。release-group first-release-date 1978-11、轄下唯一一筆 release 就是 1978-11 的 Warner Bros. Records M-8002W 原盤；店面官方條目 `1804566435` 記 1978-11-25、℗ 1978 Warner Music Japan，**同年同月**。依 c-132 第 383 條與 c-134 第 422 條，店面的精確日期比 MB 晚、不用來改判，**年份不變**，精確日期只記在這裡。**策展層第 402 條把本張列進「MB 只到年月、店面有精確日期」的五張，覆核成立。**",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面成立，店面命中覆核通過。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**。｜**店面**：第 408 條說本張掛在 `1687413345`「Tatsuya Takahashi & Tokyo Union Orchestra」而不在主 id 底下，**覆核屬實**；⚠ **但第 408 條給的是 artistId，本層補上 collectionId：`1804566435`**。直查 `lookup?id=1804566435&country=jp&entity=song` 實跑：8 軌全部有試聽，曲序與 1978 原盤逐軌相同、長度差 1 至 9 秒。**有固定試聽來源，串流採信 1804566435**。｜**廠牌假陽性反查（c-132 第 391 條）**：Apple ℗ WARNER MUSIC JAPAN 與 MB 的 Warner Bros. Records M-8002W 是同一家在日本的沿革，不是假陽性。｜⚠ **本張是 高橋達也 五張裡唯一有試聽的一張**——另外四張（The Rock Seasons／You＇re So Vain／Black Pearl／Up In The Blues）三種查法全落空，見各卡 notes。｜**人名邊界**：高橋達也、三木敏悟 有百科條目支撐，可寫；⚠ **三木敏悟 與本張無關**，只能寫成 1977 年那張得獎盤的作曲者。｜⚠ **曲目歸屬的界線**：〈Soul In Love〉與〈Love Festival〉不是 Cole Porter 的曲子，**正文不得寫成「八首全是 Cole Porter」**，要寫「六首是他的歌」。｜**反同構**：本張切入「Cole Porter 曲集＋盤名雙關＋1978 年 Montreux 那一年」。"
+ },
+ {
+  "key": "desc4:高橋達也と東京ユニオン|Black Pearl",
+  "artist": "高橋達也と東京ユニオン",
+  "album": "Black Pearl",
+  "facts": [
+   {
+    "f": "release-group 736ea34e 的欄位：title「Black Pearl」、artist-credit「高橋達也と東京ユニオン」（單一 credit 元素，實體 aa55bb8c）、first-release-date 1980、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1980、Zen ZEN-5001、12 吋黑膠 6 軌、Official。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=736ea34e-723c-47e7-8256-d8fe4a51406a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "六軌逐軌：1〈Black Pearl〉8:01、2〈Speak Like A Child〉7:28、3〈Darts〉4:31、4〈Life Is More Precious Than Diamonds〉6:35、5〈With The Force Of Nature〉6:38、6〈Soul Eyes〉6:58，全長約 40 分鐘。六首裡的〈Black Pearl〉與〈Speak Like A Child〉都是 Herbie Hancock 的曲子。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=736ea34e-723c-47e7-8256-d8fe4a51406a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本張是 1980 年在美國錄的，ZEN-5001 是 Zen 廠標的第一號；Zen 是 1980 年前後在日本發爵士盤的獨立廠標，同團 1979 年的《The City》也在這家（ZEN-1008）。",
+    "src": "https://www.discogs.com/master/703136-Tatsuya-Takahashi-Tokyo-Union-Black-Pearl"
+   },
+   {
+    "f": "樂團 1980 年赴加州演出，與 Herbie Hancock、Slide Hampton、Richie Cole 同台，然後才進 Monterey Jazz Festival 的檔期；同年也是他們第二次登上 Montreux Jazz Festival。",
+    "src": "https://en.wikipedia.org/wiki/Tokyo_Union"
+   },
+   {
+    "f": "東京ユニオン 1964 年成立，1966 年起由 高橋達也 帶領；在《スイングジャーナル》的票選裡連續九年被選為最佳大樂團。",
+    "src": "https://en.wikipedia.org/wiki/Tokyo_Union"
+   }
+  ],
+  "hookCandidates": [
+   "一支日本大樂團 1980 年飛到加州錄音，錄的兩首主打是 Herbie Hancock 的曲子——而那年他們真的在加州跟 Hancock 同台過",
+   "ZEN-5001 是這家獨立廠標的第一號，裝的是一張六首、每首都超過四分半的大樂團唱片"
+  ],
+  "sound": "六軌、約 40 分鐘，每首 4 分 31 秒到 8 分 1 秒，是把段落拉開的規格而不是曲集。〈Black Pearl〉8:01 與〈Speak Like A Child〉7:28 兩首 Herbie Hancock 的曲子佔掉全張近四成，銅管在長段落裡堆和聲、節奏組走 1980 年前後的爵士放克律動。〈Darts〉4:31 是唯一一首短的，〈Soul Eyes〉6:58 收尾。",
+  "keyTracks": [
+   "Black Pearl",
+   "Speak Like A Child",
+   "With The Force Of Nature"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1980（首發年）。release-group first-release-date 1980、轄下唯一一筆 release 就是 1980 年的 Zen ZEN-5001 原盤（Official）；英文維基的樂團作品表也記「Black Pearl (Zen, 1980)」，唱片行條目同記 1980 年美國錄音。三邊同年，無再發失真。卡單的 1980 不動。",
+  "notes": "**覆核策展層：MB 相符，年份成立且多一個獨立旁證，封面成立；店面結論本層確認為真。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**。｜**店面（第 254 條三步全跑過）**：盤名搜尋「Black Pearl 東京ユニオン」「ブラック・パール 高橋達也」jp／us 皆 0 筆；三個 artistId 的目錄合計 5 張裡沒有本張；曲名〈Life Is More Precious Than Diamonds〉搜 song entity jp／us 皆 0 筆。**確認無來源。**｜⚠ **「1980 年在美國錄音」只有唱片行條目一個來源**，但與英文維基「1980 年赴加州、與 Herbie Hancock 等人同台後進 Monterey」的行程**互相吻合**，兩條獨立來源同向，本層採用；**正文可以寫美國錄音，但不得指名錄音室或城市**（查不到）。｜**人名邊界**：Herbie Hancock、Slide Hampton、Richie Cole 三位出自英文維基的樂團行程記載，**是同台演出者、不是本盤的參與者**，正文提到時必須把時序寫清楚。〈Soul Eyes〉的作者 Mal Waldron 本層未取得一手舉證，**不寫**。｜⚠ **跨批**：Zen 這家廠標也出了 高橋達也 1979 年的《The City》（ZEN-1008），**本批未收**，rgMbid 未查；若主線要補，這是缺口。｜**反同構**：本張切入「1980 年美國錄音＋兩首 Herbie Hancock＋ZEN 第一號」。"
+ },
+ {
+  "key": "desc4:高橋達也と東京ユニオン|Up In The Blues",
+  "artist": "高橋達也と東京ユニオン",
+  "album": "Up In The Blues",
+  "facts": [
+   {
+    "f": "release-group 794d6b64 的欄位：title「Up In The Blues」、artist-credit「高橋達也と東京ユニオン」（單一 credit 元素，實體 aa55bb8c）、first-release-date 1981、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1981、Polydor 28MX 2014、12 吋黑膠 9 軌，status 欄是空的。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=794d6b64-e387-4330-ac9c-0bd2e73ed8c0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "九軌曲目：A 面〈Up In The Blues〉〈But Beautiful〉〈I’m A Lover〉〈Blues Lester〉，B 面〈You Stepped Out Of A Dream〉〈Soft Shoe〉〈Dr.Morrow〉〈All Heart〉〈Satin Doll〉；錄音分兩次，1980 年 12 月與 1981 年 2 月。",
+    "src": "https://www.discogs.com/release/11047488-Tatsuya-Takahashi-Tokyo-Union-Up-In-The-Blues"
+   },
+   {
+    "f": "參加錄音的包括 前田憲男、杉本喜代志 與 ジミー竹内，是一張走搖擺路線的盤；〈Blues Lester〉的曲名指向 Lester Young，〈Satin Doll〉則是 Duke Ellington 的定番。",
+    "src": "https://www.waxpend.com/items/14901"
+   },
+   {
+    "f": "英文維基的樂團作品表記「Up in the Blues (Polydor, 1981)」，前一張是 1980 年 Zen 的《Black Pearl》、再前一張是 1980 年 Audio Lab 的《Impression》。",
+    "src": "https://en.wikipedia.org/wiki/Tokyo_Union"
+   },
+   {
+    "f": "高橋達也 1977 年以 三木敏悟 的《北欧組曲》拿下スイングジャーナル ジャズ・ディスク大賞與日本ジャズ賞，1978 與 1980 年兩度出演 Montreux Jazz Festival；樂團在 1989 年 12 月 31 日解散。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F"
+   }
+  ],
+  "hookCandidates": [
+   "爵士搖滾、美國錄音、放克節奏都走過一輪之後，這支樂團 1981 年交出的是一張純搖擺——第四首直接叫〈Blues Lester〉",
+   "錄音橫跨 1980 年 12 月與 1981 年 2 月兩次，鋼琴是 前田憲男、吉他是 杉本喜代志"
+  ],
+  "sound": "九軌，走的是搖擺與藍調而不是前幾張的爵士搖滾或放克。〈But Beautiful〉〈You Stepped Out Of A Dream〉〈Satin Doll〉是美國歌本的定番，〈Blues Lester〉與〈Dr.Morrow〉是樂團自己的曲子。大樂團的四管配置回到搖擺樂的分句，鋼琴 前田憲男、吉他 杉本喜代志 的獨奏穿在合奏段落之間。",
+  "keyTracks": [
+   "Up In The Blues",
+   "Blues Lester",
+   "Satin Doll"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1981（首發年）。release-group first-release-date 1981、轄下唯一一筆 release 就是 1981 年的 Polydor 28MX 2014 原盤；英文維基的樂團作品表也記「Up in the Blues (Polydor, 1981)」；唱片行條目另記錄音分 1980 年 12 月與 1981 年 2 月兩次——**錄音跨年、發行在 1981**，取 1981 無疑義。卡單的 1981 不動。",
+  "notes": "**覆核策展層：MB 相符，年份成立且多一個獨立旁證，封面成立；店面結論本層確認為真。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**。｜**店面（第 254 條三步全跑過）**：盤名搜尋「Up In The Blues 高橋達也」「アップ・イン・ザ・ブルース」jp／us 只回無關的動畫合輯；三個 artistId 的目錄合計 5 張裡沒有本張；曲名〈Dr.Morrow〉〈Blues Lester〉搜 song entity jp／us 皆 0 筆。**確認無來源。**｜⚠ **跨批交集兩位**：**前田憲男 是 c-134 a 組的掛名（5 張）**、**杉本喜代志 是 c-134 b 組的掛名（3 張）**，兩位都以樂手身分出現在本張——**正文可以寫他們的樂器與角色，但不得把本張寫成他們的作品**；c-134 兩組挑碟時要先看這裡（第 405 條的形狀）。ジミー竹内 是鼓手，池中未查。｜⚠ **參與者名單只有唱片行條目一個來源**，未達 c-132 第 391 條要的交叉驗證強度，**正文若要具名，只能寫 前田憲男 與 杉本喜代志 這兩位另有百科條目的**，ジミー竹内 **標 uncertain、建議不寫**。｜**Lester Young 的關聯是曲名推得的**，本層查不到一手解說，**正文只能寫曲名叫〈Blues Lester〉，不得斷言是致敬曲**。｜**反同構**：本張切入「回到搖擺＋跨年兩次錄音＋前田憲男／杉本喜代志 的客座」。"
+ }
+]
