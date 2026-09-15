@@ -144,3 +144,158 @@ Lou Rawls with Les McCann Ltd.《Stormy Monday》（四張 Capitol 原盤）、C
 **五張的 Blue Note 關聯都始於 1985 後的再發**，不歸此線。a 組 22 → **17**。
 其餘：Kenny Dorham《Blue Lament》Bootleg 退（第 530 條）、年份改判四張（第 531 條，含壓盤四年的《Out of This World》1966）、
 UA Jazz／Pacific Jazz 原盤七張照收——**這些是 Liberty／UA 併購後以 BN 目錄號再發的，關聯始於 1960–70 年代，歸此線。**
+
+# b 組（Blue Note 1962–1963：BLP 4082／4108／4120–4161 ＋ UA／Pacific Jazz／Riverside／Capitol／Odeon 轉來 6 張 ＋ 1986 庫存首發 1 張，22 筆覆核）
+
+策展層 b 組，2026-09-15。交件 `batch-progress/c139/prop-b.json`（`g: "b"`），
+`node batch-progress/c139/chk-prop.mjs b` **標記 0**（欄位 0、線上池撞卡 0、跨組 0、跨批撞卡 0／102 批 4,248 張、同 rgMbid 不同掛名 0）。
+rgMbid 與同批 a 組 `prop-a.json`（22）、c-138 `prop-a`（5）／`prop-b`（22）程式交叉：**重疊 0**；掛名＋盤名折疊鍵交叉：**重疊 0**。號段 **540–549**。
+
+## 第 540 條（2026-09-15，c-139 b 組）：**22 筆覆核結果——收 20、退 2；rgMbid 全部照 enum，無一釘錯；年份改判 5 張**
+
+22 筆全部回問 `release-group`（inc=artist-credits+releases）與 `release?release-group=…&inc=media+labels+artist-credits+recordings`，title／credit／frd／catno／載體／軌數逐筆對過，**enum 的 rgMbid 沒有一筆釘錯**。
+實掃卡池（`seed_cards.json` 16,450 列＋`desc-tools/batches/cards/c1*.json`＋`batch-progress/c12x–c13x/prop-*.json`，合計 18,719 列；掛名 19 組關鍵字＋盤名雙向子字串＋rgMbid 直比）：
+**22 筆撞池 0**；盤名層命中全是他人假陽性（Placebo《Never Let Me Go》、Rolling Stones／Harold Melvin《Black and Blue》、Hutcherson《San Francisco》）；
+Strayhorn 那張依第 490 條用 RG title「The Peaceful Side of Jazz」與原盤題「The Peaceful Side」各掃一次，都零。掛名層命中都是同人不同碟（見第 549 條）。
+
+**退掉 2 張（逐筆）**：
+
+| 筆 | rgMbid | 理由分類 | 說明 |
+|---|---|---|---|
+| Lou Rawls《Black and Blue》1963 | ec2501cb-d15b-4763-a394-17dbfe64f8a9 | **原盤 Capitol 主流人聲、Blue Note 只在數位再發（第 509a 條第 1 點）** | 原盤 Capitol T-1824／ST 1824（1963，12 軌，Onzy Matthews 大樂團伴奏的藍調人聲盤）；RG 轄下 Blue Note 只有 2017-02-17 數位版 00ebe5f0（13 軌）。與 c-137 Peggy Lee 完全同形。⚠ 同批 a 組第 533 條收了 Rawls《Stormy Monday》（Capitol T 1714，與 Les McCann Ltd. 聯名、有 1990 Blue Note 實體 CD）並標「主線可退」——本張連實體 CD 都沒有，退得更直接；兩張的差別只在「有沒有 Blue Note 實體」，主線若把 Stormy Monday 也退掉是一致的。池中 `Lou Rawls` 3 張是 soul 線的卡，本張若要收應走 soul／blues 線，不是 Blue Note 目錄。 |
+| Marcos Valle《Samba "demais"》1963 | 703b582b-1a26-3adc-a8b6-72adef36567f | **原盤 Odeon（巴西）bossa nova、Blue Note 只是 EMI 家族 2008 再發的掛名（第 509a 條延伸）** | 原盤 Odeon MOFB 3376（BR 1963，12 軌；enum 的「MOFB 3372」是 Discogs 反查另一張聖誕合輯，MB release 88691124 記 3376 才對）；RG 轄下 Blue Note 只有 2008-06-16 GB CD fe092a8a（barcode 5099921674228＝Discogs 4151465「EMI／Celebrate 50 Years Bossa Nova」系列，MB 把系列掛名登成 Blue Note）。第 509a 條的判準是「原盤非 Blue Note 併購／授權進目錄的爵士盤，Blue Note 只是再發 badge」——Capitol 人聲是一例，EMI 巴西的 bossa nova 是同一形。**退；但這張本身值得收**（Valle 出道盤，池中已有他 1970–73 三張），**轉線候補：巴西線**，rgMbid 已釘、release 端點已回問（scratchpad/c139b/c139b-mb/rel-703b582b…）。 |
+
+沒有撞池退件、沒有判為合輯退件、沒有列舉假陽性（a 組第 530 條的 bootleg 形本組沒有：20 張的原盤 release 全部 status Official，唯一無 status 的是 Blue John 的 1963 test pressing 筆，見第 541 條）。
+「原盤他廠」6 張裡 4 張改 `label` 收、2 張退（第 542 條）。
+
+## 第 541 條（同批）：**年份改判 5 張——4 張是「MB 把錄音年填成原盤年」（4125／4139／4158／4161 全落在 1963 錄、1964 出的那一段），1 張是 1963 年 test pressing 被建成正式發行**
+
+| 碟 | enum／MB | 改判 | 依據 |
+|---|---|---|---|
+| Lou Donaldson《Good Gracious!》BLP 4125 | 1963（兩筆原盤 release 都填 1963＝錄音年 1963-01-24） | **1964** | Discogs master 260188／3701727 1964；jazzdisco 4100 索引 BLP 4125＝1964；維基 infobox「Early June 1964」引 Billboard |
+| Grant Green《Am I Blue》BLP 4139 | 1963（同號兩筆：3b4cb051 BST 84139「1963」無來源／d482a08b BLP 4139「1964-06」；frd 取最早的那筆——c-136 第 478 條第 2 點的形） | **1964** | Discogs master 163275／1055780 1964；jazzdisco BLP 4139＝1964；維基「Late June 1964」引 Billboard |
+| Freddie Roach《Good Move!》BLP 4158 | 1963（原盤 release c34acb71 填錄音年；**維基 infobox 也寫 1963、無來源**） | **1964** | 第二場錄音 1963-12-09，同年上市不可能；Discogs 2201078／1058094／master 259364 全 1964；jazzdisco BLP 4158＝1964；目錄號 4157 Sidewinder（1964-07）之後 |
+| George Braith《Soul Stream》BLP 4161 | 1963（原盤 release 724d28f5 填錄音年；**Discogs 1101030 也標 1963、但 notes 只寫「Recorded on December 16, 1963」——同一個錄音年來源**） | **1964** | jazzdisco BLP 4161＝1964；維基 infobox 1964、George Braith 條目「1963 [1964]」；12-16 錄音 |
+| Big John Patton《Blue John》BST 84143 | 1963（release b74022f2「1963 US 12" Vinyl BST 84143，credit “Big” John Patton，**無 status**」） | **1986** | 那筆＝Discogs 14223083／30306110「1963 mono／stereo **test pressing**」（notes「Original mono test pressing from 1963」）；市售首發 Discogs 30853602「1986 US BST 84143，Manhattan Records，DMM，previously unreleased」；jazzdisco BST-84143＝1986；維基「not released until 1986」 |
+
+**維持 MB 的兩說 2 張**：
+- Cannonball Adderley《Jazz Workshop Revisited》：MB 1963（RM 444／RS 9444 兩筆）＝Discogs 三筆原盤 1963；**維基 infobox 1962，且引 Whitburn《Top LPs 1955–1996》說「1962 年進榜、1963 年到第 11 名」**——若 1962 年已進 Billboard 榜，上市可能是 1962-12。依第 364 條「相差一年照 MB」取 1963，1962 說寫進 risk；⚠ 這是 c-133 第 431 條講的「紙本」級證據站在另一邊的例子，研究層若拿到 Billboard 原刊的進榜週，改 1962 是可逆的。
+- Don Wilkerson《Elder Don》：MB 1963＝Discogs 2311730 1963＝jazzdisco BLP 4121＝1963；維基 infobox 1962 無來源（＝錄音年 1962-05-03），且同條目正文說它比《Preach Brother!》（BLP 4107，1962）晚出——與 1963 相容，取 1963。
+
+其餘 13 張 MB／Discogs／jazzdisco／維基（有的話）一致。月份小差不改年：Never Let Me Go MB 1963-10 vs Billboard 11 月底；Natural Soul MB 1963-03＝Billboard；Rockin' the Boat MB 1963-09。
+
+方法論：
+1. **BLP 4125～4161 這一段是「1963 錄、1964 出」的密集區**：4124 New Perspective、4125、4133 Swingin' Affair、4138、4139、4144、4147、4149、4150、4151、4152、4153、4157、4158、4161 jazzdisco 全記 1964，**enum 按 MB 年份把它們排進 1963 段**（第 531 條第 1 點同形）。後批（1964–66）會反過來：MB 記 1964 的可能是 1965／66 出版（4160、4169、4191、4194、4197 jazzdisco 記「1966+」）。
+2. **Discogs 也會用錄音年**（Soul Stream 1101030）——Discogs 條目 notes 只有錄音日而無出版來源時，它與 MB 是同源，不算第二個來源（第 431 條）。
+3. **MB 把 test pressing 建成無 status 的正式 release**（Blue John）：RG 轄下年份最早那筆若無 status、無 barcode、credit 與其他筆不同，先查 Discogs 是不是 test pressing／acetate。
+
+## 第 542 條（同批）：**「原盤可能他廠」6 張逐張判——4 張成立改 `label` 收、2 張成立退；另 1 張 enum 沒標的是 Blue Note 自家 1986 美國首發庫存盤**
+
+| 碟 | enum note | 判定 | `label`／`year` | 形 |
+|---|---|---|---|---|
+| Billy Strayhorn《The Peaceful Side of Jazz》 | BN 首發 2019、原盤可能他廠 | **成立**：United Artists Jazz UAJ 14010／UAJS 14010（1963）；Blue Note 只在 2019-05-03 數位版 | United Artists Jazz UAJ 14010／1963 | UA 數位掛名（第 502 條；a 組第 533 條 Alan Douglas 1962–63 UA Jazz 系列同批） |
+| Ken McIntyre《'Way, 'Way Out》 | BN 首發 2019、原盤可能他廠 | **成立**：United Artists UAL 3336／UAS 6336（1963）；Blue Note 只在 2019-02-08 數位版（MB 國別「AF」） | United Artists UAL 3336／1963 | UA 數位掛名；與 a 組《Year of the Iron Sheep》成對 |
+| Curtis Amy & Dupree Bolton《Katanga!》 | BN 首發 2021、原盤可能他廠 | **成立**：Pacific Jazz PJ-70／ST-70（1963）；Blue Note 只在 2021 數位版，2021 Tone Poet 黑膠 MB 掛 Pacific Jazz | Pacific Jazz PJ-70／1963 | Pacific Jazz Tone Poet（第 455／472 條） |
+| Cannonball Adderley《Jazz Workshop Revisited》 | live；BN 首發 2001、原盤可能他廠 | **成立**：Riverside RM 444／RS 9444（1963）；Blue Note 2001-01-23 CD 294412（barcode 724352944125）＋數位 | Riverside RM 444／1963 | **Riverside**（a 組第 533 條《Cannonball's Bossa Nova》是本線第一張，本張第二張）；Discogs 以 label=Blue Note 反查零命中，MB 那筆 2001 CD 的來歷研究層核。**收，主線可退**——第 509a 條第 1 點的判準是「Capitol 主流人聲／流行」，本張是爵士現場盤；但 Riverside 母帶屬 Fantasy／Concord 系，與 UA／Pacific Jazz「被 EMI 併進 Blue Note」的距離不同，**若主線判 Riverside 不歸此線，a 組 Bossa Nova 與本張要一起退** |
+| Lou Rawls《Black and Blue》 | BN 首發 2017、原盤可能他廠 | **成立→退**：Capitol T-1824（1963）；Blue Note 只在 2017 數位版 | — | 第 509a 條第 1 點（第 540 條退表） |
+| Marcos Valle《Samba "demais"》 | BN 首發 2008、原盤可能他廠 | **成立→退**：Odeon MOFB 3376（BR 1963）；Blue Note 只在 2008 GB CD（EMI「Celebrate 50 Years Bossa Nova」系列） | — | 第 509a 條延伸（第 540 條退表） |
+| Big John Patton《Blue John》 | （無） | **enum 漏標**：MB 把 1963 test pressing 建成原盤，enum 因此沒觸發「晚 3 年」規則；實為 **Blue Note 自家庫存盤、1986 美國首發**（不是日本 GXF／BNJ 型），完整 session 專輯非 outtakes | Blue Note BST 84143（US 1986）／1986 | 第 509a 條第 2 點「完整 session 專輯就收」 |
+
+**本段 enum 22 筆裡 16 筆是 Blue Note 自家原盤**（4082、4108、4120、4121、4125、4126、4128、4129、4131、4136、4139、4141、4143、4148、4158、4161），比 a 組的 10/23 密得多——4100 段是 Lion 期自家錄音的主體，他廠轉來的只剩零星幾張。
+
+## 第 543 條（同批）：**掛名：收攏 4、分裂處理 2、聯名 1、新掛名 4 反查**
+
+| MB credit | 本卡掛名 | 依據 |
+|---|---|---|
+| `The Horace Silver Quintet`（群組 e9ac5139）《Silver's Serenade》 | `Horace Silver` | 池中 8 張；c-136 第 482 條／c-137 第 503 條 |
+| `Solomon Ilori and His Afro-Drum Ensemble`（群組 1b44ad7c）《African High Life》 | `Solomon Ilori` | 第 452 條領班本名；a 組第 534 條把《The African Beat》的 Afro-Drum Ensemble 收攏到 `Art Blakey` 同理；MB 另有 Person 52e26337 |
+| `Cannonball Adderley Sextet featuring Nat Adderley and Yusef Lateef`（群組 93be8f4b「1962–1963」＋兩個 Person）《Jazz Workshop Revisited》 | `Cannonball Adderley` | 第 363 條第二型；池中 `Cannonball Adderley` 8 ＞ `The Cannonball Adderley Quintet` 2 ＝ `Cannonball Adderley Quintet` 2；a 組第 534 條 Bossa Nova 同收攏。⚠ **Cannonball 三向分裂**（audits 未列）留本機 |
+| `The Incredible Jimmy Smith`（原盤 release credit；RG credit 是 Jimmy Smith）《Rockin' the Boat》 | `Jimmy Smith` | 池中 23 張；盤面掛名進 queryAlias |
+| `John Patton`（RG credit）／`“Big” John Patton`（1963 test pressing）／`'Big' John Patton`（1989 CD）《Blue John》 | **`Big John Patton`** | ⚠ 池中分裂：`Big John Patton` 3（Let 'em Roll、Oh Baby!、Got a Good Thing Goin'）vs `John Patton` 1（Along Came John）——照多數；**《Along Came John》那張留本機統一**，Apple 也掛 Big John Patton |
+| `Horace Parlan`《Up & Down》 | `Horace Parlan` | 池中 9 vs `The Horace Parlan Trio` 1（audits 未列的編制分裂），MB credit 同字串 |
+| `Curtis Amy & Dupree Bolton`（兩個 Person，join &）《Katanga!》 | **照 MB 聯名** | 第 363 條第 1 型；c-138 b《Curtis Amy & Frank Butler》同形；不計入 Amy 單人目錄 |
+
+新掛名四個（池中零張，都過第 307 條反查）：
+- **`Solomon Ilori`**：MB 52e26337 Person、US、1935–；搜尋只回本人＋群組，無同字串不同人。
+- **`George Braith`**：MB c5afb6db Person、US、1939-06-27–（本名 Braithwaite）；搜尋只回 1 筆。兩張（Two Souls in One、Soul Stream）同掛。
+- **`Billy Strayhorn`**：MB 23ec9ce1 Person、US、1915–1967；搜尋另回 Billy Strayhorn Trio／Billy Strayhorn's All Stars 兩個群組，不撞。
+- **`Dupree Bolton`**：MB fe5c87bf Person、US、1929-03-03–1993-06-05；搜尋只回 1 筆。只在聯名字串裡出現。
+
+既有字串沿用：`Freddie Roach`（MB d2d260d5，alias Freddy Roach）、`Don Wilkerson`（MB d8be2328「US jazz/R&B saxophonist」；⚠ MB 另有同名 Person 3ae17c82「engineer, Island Jazz, Buffalo, NY」——不同人、無發行，第 250 條以 disambiguation 定，池中字串指的是本人）、`Ken McIntyre`（MB 113950c4，alias Makanda Ken McIntyre；池中《Home》1975 同人）。
+
+## 第 544 條（同批）：**盤名：印刷體撇號改 ASCII 3 張、現場盤取短名 1 張、RG title 是再發名 1 張（照 MB、原題進 queryAlias）**
+
+| MB RG title | 本卡盤名 | 依據 |
+|---|---|---|
+| `Mo’ Greens Please`／`Rockin’ the Boat`／`‘Way, ‘Way Out` | ASCII 撇號 | 第 506 條 Peggy Lee 先例、a 組第 535 條同形；⚠ McIntyre 那張的撇號在字首（'Way＝Away 的省略），標題比對要用去撇號版再比一次 |
+| `Jazz Workshop Revisited: Recorded ‘live’ in San Francisco` | **《Jazz Workshop Revisited》** | 副題是盤面小字，Apple／Discogs／Landmark／2001 CD 主名都是短名；第 91／95 條「RG 標題與卡片盤名不必相等」，長名與荷蘭 Fontana 改題《San Francisco Revisited》進 queryAlias |
+| `The Peaceful Side of Jazz` | **照 MB** | ⚠ 第 490 條的形：原盤 UAJ 14010 與 Solid State、1996 Capitol Jazz CD 都題《The Peaceful Side》，「…of Jazz」是英國 World Record Club T 128 與 2019 Blue Note 數位版的題名（MB 把四筆 release 全登成 of Jazz）；1968 Solid State 又題《The Peaceful Side of Billy Strayhorn》。依第 506 條照 MB RG title（現行數位流通名），兩個變體進 queryAlias，**研究層若改回原題不影響 MBID**；撞池已用兩題各掃一次 |
+| `Up & Down` | 照 MB | jazzdisco「Up And Down」、Apple「Up and Down」進 queryAlias；chk-prop 折疊鍵已把 & 換 and |
+| `Good Move!`／`Katanga!` | 照 MB 帶驚嘆號 | 2024 Tone Poet／Apple 去驚嘆號版進 queryAlias |
+| `Blue John`／`Am I Blue`／`Never Let Me Go`／`Silver's Serenade`／`It Just Got to Be` | 照 MB | 同名撞擊見第 546 條 |
+
+## 第 545 條（同批）：**現場 1 張；同場拆盤 0；關聯組 5 組（正文陣容不得互抄）**
+
+- **現場**：《Jazz Workshop Revisited》MB secondary-types [Live]，Jazz Workshop, San Francisco 1962-09-22／23——演出場所，非第 485 條那種錄音場地，卡單標現場；原 LP 留了三段 Cannonball 口白（曲數 9 含口白），正文可寫。其餘 19 張全是 Van Gelder／Pacific Jazz／Barclay 錄音室，沒有第 397 條「MB 沒標的現場」。
+- **同場拆盤**：本組 0（Vol. 拆盤形本段沒有）。
+- **關聯組**（不同場、各算一張、risk 互指）：
+  1. **Braith／Green／Gardner 1963 三張**：Two Souls in One（9-04，Donald Bailey 鼓）、Soul Stream（12-16，Hugh Walker 鼓）、**Blue John（7-11／8-02，Patton 領銜、Braith＋Green＋Ben Dixon，Gardner 不在）**——三張鼓手／風琴手都不同，正文不得互抄。
+  2. **Donaldson／Green／Patton／Dixon 兩張**：The Natural Soul（1962-05-09，加 Tommy Turrentine）、Good Gracious!（1963-01-24，四重奏）——Patton 的唱片首演是前者。
+  3. **Ilori ↔ a 組《The African Beat》**（1962-01-24，Blakey 領銜）：同一批奈及利亞鼓手（Ilori、Chief Bey）、不同場、不同領班（第 537 條三組打擊盤同理）。
+  4. **Roach 三張 ↔ a 組 Down to Earth**：Mo' Greens（兩場兩編制）、Good Move（三重奏＋五重奏兩場）——正文不得把 Burrell／Mitchell／Mobley 寫成全程。
+  5. **Three Sounds ↔ a 組 Black Orchid／Out of This World**：本張 1960-12 錄，那兩張 1962-02／03 錄——不同場。
+- **Grant Green 本組出現在 9 張裡**（Am I Blue 領銜；Two Souls、Soul Stream、Blue John、Natural Soul、Good Gracious、Up & Down、Elder Don、My Point of View 側人）——c-137 第 509 條 Sonny Clark 的形，正文各寫各的編制。
+
+## 第 546 條（同批）：**同名撞擊高風險三處，正文與試聽比對務必帶 catno**
+
+- **《Never Let Me Go》**：池中已有 `Placebo — Never Let Me Go`（2022）——掛名不同、chk-prop 不撞，但標題搜尋會混；帶 BLP 4129 與 Shirley Scott。Apple 第一個搜尋詞（藝人＋盤名去撇號）零命中、第二個詞才命中 716038904——第 254 條「一種查法落空不等於沒有」再證。
+- **《Am I Blue》**：與標準曲同名，Apple 搜尋撞到 Lana Del Rey／Massive Attack 等；帶 BLP 4139。
+- **《Black and Blue》**（已退）：池中 Rolling Stones 1976、Harold Melvin《Black & Blue》1973——若日後走 soul 線收 Rawls 這張，鍵不撞但要帶 T-1824。
+- 其他同名（正文帶 catno）：《Up & Down》（通名）、《Soul Stream》／《Two Souls in One》（Braith 兩張盤名相近）、《Silver's Serenade》（與同名曲同字）、《Katanga》（與同名曲同字）。
+
+## 第 547 條（同批）：**MB 建檔問題清單（本層不改 MB，留研究層／主線）**
+
+1. Never Let Me Go 原盤 release 89da8999：載體「10" Vinyl」——BLP 4129 是 12 吋（Discogs 全部條目）；且只登立體聲號 BST-84129。
+2. Blue John release b74022f2：1963 test pressing 建成無 status 的 release，RG frd 因此錯成 1963（第 541 條）。
+3. Am I Blue：同號兩筆 3b4cb051（BST 84139「1963」）／d482a08b（BLP 4139「1964-06」），frd 被拉低。
+4. Good Gracious!／Good Move!／Soul Stream 原盤 release 都填錄音年（第 541 條）。
+5. Silver's Serenade 原盤 release f9fa3c24：無載體、無 catno、無 barcode 的 bare 登錄——RG 轄下沒有一筆帶 BLP 4131 原盤 catno 的完整 release。
+6. African High Life d4b6fd3b／Elder Don dc252b34／Never Let Me Go 89da8999：原盤只登立體聲 BST 號，mono BLP 號沒建（a 組第 532 條同形）。
+7. The Natural Soul 2003 XE CD ad36d1e3：artist-credit 列五位團員——那筆 release 的登錄方式，RG credit 仍單掛 Donaldson。
+8. The Peaceful Side of Jazz：轄下 afaf4bdf「Piano Passion」（2020 數位 21 軌、無廠牌）疑為掛錯 RG 的合輯；四筆 release 全登成「of Jazz」、原盤題《The Peaceful Side》沒反映。
+9. My Point of View：2020 Tone Poet 重複兩筆（32934bc4／b6685bf3）、1987 JP CD 兩個 catno（CP32-9526／CP32-9256）疑其一打錯。
+10. It Just Got to Be／Two Souls in One：RG 各只有 1 筆 release，日本限定 CD（前者加 2 軌）與再壓都沒建；再發資料走 Discogs master 362345／344214。
+11. Samba "demais"（已退）：2008 GB CD fe092a8a 的 label 登成 Blue Note，Discogs 4151465 是 EMI「Celebrate 50 Years Bossa Nova」系列——**enum 的 Blue Note 目錄裡混進 EMI 系列盤的來源就是這種登錄**，後批（1985 後那 873 張）會大量碰到。
+12. 'Way, 'Way Out 2019 數位 release 70aaa6eb：國別「AF」——enum 的 country 欄因此變成 AF，不是原盤國。
+
+## 第 548 條（同批）：**CAA 18/20 命中（原盤圖 9 張）；店面觀察（第 254 條，只寫觀察）Apple us `search` 20/20 命中、其中 2 張要換搜尋詞**
+
+- **CAA RG 層 front 18/20**；**404 兩張：《It Just Got to Be》（RG 只一筆 release）、《Two Souls in One》（同）**——研究層從 Discogs 2885076／1061137 取原盤圖。
+  命中 18 張裡 **來源是原盤 release 的 9 張**（Good Gracious a271a814、My Point of View 4c2f7969、Jazz Workshop Revisited a698a3ed、Up & Down da008f61、Natural Soul 05b1d8db、Elder Don dc252b34、Peaceful Side e50af3fd、Katanga 0edd91c7、'Way 'Way Out 11172301）；
+  **疑原盤版式但來源筆有問題的 2 張**（Am I Blue 來自年份錯登的 BST 84139 筆、Blue John 來自 1963 test pressing 筆——圖可能是 1986 盤）；
+  **非原盤圖 7 張**（African High Life 1994 JP CD、Silver's Serenade 1998 CD、Mo' Greens 2005 JP CD、Rockin' the Boat 1994 JP CD、Soul Stream 1994 JP CD、Never Let Me Go 1992 CD、Good Move 2000 CD）——研究層看版式，Discogs 各卡 risk 已列 id。
+- **Apple `search` 20/20**，但 Never Let Me Go 與 It Just Got to Be 第一個搜尋詞落空、換詞才中（第 254 條）。命中形：RVG／Expanded 版 7 張（Silver's Serenade、Rockin' the Boat、Am I Blue、Never Let Me Go 8 軌、My Point of View 6 軌、Up & Down 7 軌、Natural Soul 7 軌）——bonus 全在原序之後，「前 N 軌對應原盤」可採（c-130 Perfect 先例）；African High Life 9 軌（2006 CD 形，前 6 軌對應）；Jazz Workshop Revisited 11 軌（2001 CD 形，原 LP 9 軌散在其中、寫作層按曲名配）；其餘 11 張軌數＝原盤。
+- **Apple releaseDate 本組 20 張裡 16 張是錄音日或 01-01 placeholder**（Mo' Greens 03-31、Am I Blue 05-16、Up & Down 1961-06-18、Natural Soul 1962-05-09、Good Move 12-20、Two Souls 12-10、Soul Stream 03-16、Peaceful Side 1961-05-01、Katanga 05-01、Elder Don 1962-01-01、其餘 01-01；Blue John 1986-01-01 年對）——第 484 條再證，店面日期不當年份來源。
+
+## 第 549 條（同批）：**交件數字、實掃順帶的既有卡問題、中間檔、給後批**
+
+- **交件 20 張、17 位；退 2**（第 540 條）；年份改判 5（第 541 條）；`label` 改他廠 4（第 542 條）；掛名收攏 4、分裂處理 2、聯名 1、新掛名 4（第 543 條）；盤名 ASCII 3、短名 1（第 544 條）；現場 1（第 545 條）；CAA 18/20（第 548 條）。
+- `chk-prop b`：標記 0（跨批 3 筆已知舊帳是 c49b↔c106／cseab↔c64，第 365 條）。與 a 組、c-138 a／b 交叉：rgMbid 0、折疊鍵 0。
+- 掛名層實掃：Horace Silver 8＋王牌 1＋待上架 6／The Three Sounds 1＋待上架 4／Lou Donaldson 8＋待上架 8／Freddie Roach 1（＋a 組 1）／Jimmy Smith 12＋待上架 11／George Braith 0／Grant Green 18＋待上架 1（＋a 組 1）／Stanley Turrentine 5＋待上架 2（＋a 組 1）／Herbie Hancock 18＋王牌 1／Cannonball Adderley 8＋Quintet 4／Horace Parlan 9＋Trio 1＋聯名 2＋待上架 1／Don Wilkerson 1／Big John Patton 3＋John Patton 1／Billy Strayhorn 0／Curtis Amy 待上架 1（聯名）／Dupree Bolton 0／Ken McIntyre 1／Solomon Ilori 0。
+- **實掃順帶抓到的既有卡問題（線上資料，本組不動，留本機）**：
+  | 池中 | 問題 | 依據 |
+  |---|---|---|
+  | `Jimmy Smith — Back at the Chicken Shack` 年份 **1960** | BLP 4117 出版 **1963**（jazzdisco 4100 索引；維基 released 1963），1960 是錄音年（1960-04-25）——第 476 條 Birdland Vol. 1 同形 | jazzdisco jd-4100 |
+  | `John Patton — Along Came John` vs `Big John Patton` ×3 | 掛名分裂，audits 未列；本組新卡掛 `Big John Patton`，那張要跟著改 | 實掃 |
+  | `Cannonball Adderley` 8／`The Cannonball Adderley Quintet` 2／`Cannonball Adderley Quintet` 2 | 三向編制分裂，audits 未列 | 實掃 |
+  | `Horace Parlan` 9／`The Horace Parlan Trio` 1 | 編制分裂，audits 未列 | 實掃 |
+- 中間檔 `scratchpad/c139b/`：c139b-poolscan.mjs／.txt（實掃 273 行）、c139b-mb.mjs＋c139b-mb/（22 個 RG 的 release-group／release／CAA／Apple 回傳＋6 個 artist 實體＋12 個搜尋）、c139b-mb-summary.json（22 筆彙整）、c139b-discogs/（28 個 catno／藝人反查＋5 個 release 詳情）、c139b-web/（jazzdisco 4100 索引 jd-4100.html、30 個維基 raw）、c139b-upsert.mjs＋c139b-build-1～4.mjs＋c139b-patch-1.mjs（prop 產生器）。
+- **給後批**：(1) **4160～4199 段 jazzdisco 記「1966+」的有 4160、4169、4191、4194、4197**——那些會被 enum 排進 1964 段，先疑年份；(2) **George Braith《Extension》BLP 4171（1964 錄、1967 出）**在 Liberty 期那一段，掛名沿用本組 `George Braith`；(3) **Riverside 形已兩張**（a 組 Bossa Nova、本組 JWR），主線裁一次就好；(4) **EMI 系列盤混進 Blue Note 目錄**（Samba "demais" 形）在 1985 後那 873 張裡會是主要的假陽性來源，enum 濾法要看 release 的 barcode 前綴／系列名而不只 label 名；(5) Marcos Valle《Samba "demais"》rgMbid 703b582b 已釘，轉巴西線時直接用。
+
+## 第 549a 條（主線 2026-09-15，b 組交件後）：**Riverside《Jazz Workshop Revisited》依第 313 條退；本批 36 張**
+
+Riverside 原盤、Blue Note 關聯始於 1985 後——與 a 組的《Cannonball's Bossa Nova》同判。b 組 20 → **19**，本批 a 17＋b 19＝**36**。
+其餘全數追認：Blue John 1963→1986（MB 把 test pressing 建成正式 release，實為 1986 庫存盤首發，**完整 session 故收**）；
+四張「1963 錄、1964 出」改判；Marcos Valle《Samba "demais"》轉巴西線候補（rgMbid 已釘）。
+**既有卡問題留本機**：`Jimmy Smith — Back at the Chicken Shack` 年份 1960 應為 1963（jazzdisco BLP 4117）；`John Patton`／`Big John Patton` 分裂。
+**給 c-140 的提醒**：4125–4161 段是「1963 錄、1964 出」密集區，4160–4199 的「1966+」要先疑年份。
