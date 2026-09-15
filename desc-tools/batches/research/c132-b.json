@@ -766,5 +766,125 @@
   "status": "full",
   "yearVerified": "**改判成立，1961（首發年），策展層正確。** release-group first-release-date 是 2005-11-25（Think! Records 復刻年），轄下三筆 release 全部是再發，1961 年原盤資料庫端未建。兩個獨立來源指向 1961：(a) Discogs release 13563937 實查為 **Teichiku Records SL-3002、1961、Japan**，並載明錄音 1961-06-23／06-29／07-04；(b) ja.wikipedia 白木秀雄 條目記『祭りの幻想』－ In Fiesta (Teichiku) 1961 年。**策展層 `label` 欄寫的「テイチク SL-3002」經本層以 Discogs 盤面覆核成立**（策展層自註來源是二手唱片行條目、要求研究層覆核——已覆核通過）。⚠ 策展層另寫「另有 TEA-18 的後壓」，本層**查不到 TEA-18 的獨立來源，這個編號不得寫進正文**。",
   "notes": "**覆核策展層：年份與廠牌改判全部成立，盤名有一個新的細節要提醒，試聽找回。** RG 四欄與三筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層判斷正確。｜✅ **策展層要求覆核的 catno 通過**：テイチク SL-3002 在 Discogs release 13563937 的盤面上確認，年份 1961 相符。⚠ **但「TEA-18 後壓」查不到來源，不得引用。**｜⚠ **盤名的細節**：**1961 年原盤封面印的日文題是《祭の幻想》（沒有「り」）**，《祭りの幻想》是 2005／2009 兩次 Think! 復刻時用的寫法。卡單取《祭りの幻想》可行（有兩筆 release 用這個題），**但正文若要提原盤封面，字要寫《祭の幻想》**；兩種寫法策展層都已放進 queryAlias。｜✅ **試聽有來源**：第三種查法直查 `lookup?id=1255618794&country=jp&entity=song` 實跑：《In Fiesta》7 軌、℗ 2017 Trunk Records，曲序與資料庫端 2017 數位 release（4f1b0920）逐首對應、長度逐軌相同（7:38／6:42／6:42／5:42／6:02／4:20／5:02）。**採信 1255618794。** 策展層說「以盤名搜 jp／us 皆 0 筆、改用藝人目錄才命中」——本層實查相同，第 254 條那個坑成立。｜⚠ **版本軌數要分清（第 251 條）**：1961 原盤與 2005 THCD-006、2017 Trunk 數位都是 **7 軌**，只有 2009 年的 THCD-100 是 **9 軌**（多兩首 bonus）。**正文寫「七首」要指明是原盤。**｜⚠ **擋下一處無來源的宣稱**：`curatorWhy` 寫「標題曲〈祭の幻想〉是 八城一夫 1958 年用調式手法寫的曲子」——**Discogs 的 1961 原盤與 2005 復刻條目都沒有作曲者 credit，ja.wikipedia 也沒有，本層查不到任何來源**。**正文不得指名作曲者，也不得寫 1958 年或「調式手法」。**｜⚠ **箏手的名字**：Discogs credit 只給羅馬拼音「Kinuko Shirane」，**漢字無法確認（策展層寫「白根きぬ子」也沒有附來源），不進正文**；寫「一把箏」或「客座的箏」即可（人名從嚴，第 241／250 條）。｜✅ **松本英彦 是這張的次中音手，策展層的判斷正確**（Discogs 盤面 credit 確認）——本組四位裡把兩位直接接在一起的碟，這是第三張（另兩張是《白木秀雄》的 宮沢昭、《リサイタル》與《Plays Horace Silver》的 松本英彦）。｜⚠ **重複 RG**：MB 另有 `3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（掛群組實體 ee00ecfa，CAA 覆核 **404**），策展層釘 release 較全、CAA 200 的 `b545a154`，正確。｜**反同構**：本張切入「1961 年三天錄音＋箏進 hard bop＋通往 1965 年柏林那張的原型」。"
+ },
+ {
+  "key": "desc4:本田竹広|It's Great Outside",
+  "artist": "本田竹広",
+  "album": "It's Great Outside",
+  "facts": [
+   {
+    "f": "release-group 6a71d9d9 的欄位：title「It's Great Outside」、artist-credit「本田竹広」（掛個人實體 b90d79a5）、first-release-date 1978、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1978 Flying Disk VIJ-6014、Official、Vinyl 8 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6a71d9d9-0a6a-4b28-a559-e574baff95a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "8 軌逐軌（原盤面別與時長）：A1〈I'll Become The Child〉3:57、A2〈It's Great Outside〉5:20、A3〈With Our Soul〉6:24、A4〈Son Song〉4:45、B1〈Lin's Garden Blues〉3:38、B2〈When The Sun Comes Up〉5:37、B3〈I'll Be Honest With You〉4:13、B4〈Dear Friend〉3:48——八首全部由 本田竹広 作曲。",
+    "src": "https://www.discogs.com/release/2967717"
+   },
+   {
+    "f": "伴奏是紐約的樂手群：Steve Jordan（鼓）、Anthony Jackson（電貝斯）、Cornell Dupree 與 増尾好秋（電吉他）、Will Boulware（風琴）、Ray Mantilla（conga 與打擊樂），本田竹広 兼彈鋼琴、clavinet 與風琴，製作 伊藤潔。",
+    "src": "https://www.discogs.com/release/2967717"
+   },
+   {
+    "f": "ja.wikipedia 的 本田竹広 條目把這張記為『イッツ・グレイト・アウトサイド』（1978 年 3 月、4 月錄音）(Flying Disk) 1978 年，排在 1977 年的《アナザー・ディパーチャー》與 1979 年 ネイティブ・サン 的《サバンナ・ホットライン》之間。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   },
+   {
+    "f": "1978 年之後他與 峰厚介 等人組成 fusion 團體 ネイティブ・サン，1979 年的《サバンナ・ホットライン》成為那個團的代表作——本張是他從原聲三重奏走向電聲編制的那一步。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   }
+  ],
+  "hookCandidates": [
+   "八首全是他自己寫的，伴奏是 Cornell Dupree 和 Anthony Jackson——紐約當時最會錄唱片的那批人",
+   "前一年他還在跟 Ron Carter 和 Tony Williams 錄原聲三重奏，這一年換上電貝斯與 clavinet"
+  ],
+  "sound": "八軌、約 38 分鐘，八首都在三分三十八秒到六分二十四秒之間，長度很平均——這是曲集的規格，不是長篇即興。電聲編制：電貝斯、兩把電吉他、風琴、conga，本田竹広 自己兼彈 clavinet 與風琴。八首全是他的原創曲，節奏底在 backbeat 上，與同廠前一年那張原聲三重奏《Another Departure》是兩個方向。",
+  "keyTracks": [
+   "It's Great Outside",
+   "With Our Soul",
+   "Lin's Garden Blues"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978（首發年）。release-group first-release-date 1978、唯一一筆 release 就是 1978 年 Flying Disk VIJ-6014 原盤、Discogs 2967717 記 1978、ja.wikipedia 本田竹広 條目記「1978 年 3 月、4 月錄音、1978 年發行」，四邊一致，無再發失真。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立，試聽確認無來源。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **404**，策展層判斷正確。｜✅ **封面路徑覆核通過**：Discogs release **2967717** 實查為 Flying Disk VIJ-6014、1978、Japan、Takehiro Honda、八軌曲名與資料庫端逐首相同、**有 5 張圖**——目錄號、年份、廠牌三項全對，滿足 §4 `discogs` 要件。備用 11608867（2017 年 JVC VICJ-77062 CD 再發）。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 盤名搜 jp／us（`It's Great Outside 本田`、`イッツ・グレイト・アウトサイド`）皆 0 筆；(2) 三個 artistId 的目錄全拉過，沒有本張；(3) 以曲名反查 song 端點——**〈Lin's Garden Blues〉確實在店面上，但只出現在兩張合輯裡**（`1356057846`《DIGGIN' VICTOR》2018-03-21、`1375394459` 同系列的 MURO 選輯），**不是本專輯層級的條目，不能當固定試聽來源**；其餘曲名（`I'll Become the Child`、`With Our Soul Honda`、`Son Song Honda`）jp／us 皆 0 筆。**走無來源狀態。**｜⚠ **那兩張合輯是一條線索**：Victor 在 2018 年把 Flying Disk 的曲目做成 fusion 選輯上架，**但整張專輯始終沒有數位化**——c-116 第 6 條、c-131 第 359 條那條「Flying Disk／Victor 1970 年代目錄在店面幾乎全空」的規律，這次連「有曲沒有碟」這個變形都出現了。｜**人名邊界**：Steve Jordan、Anthony Jackson、Cornell Dupree、増尾好秋、Will Boulware、Ray Mantilla、伊藤潔 有 Discogs 盤面 credit，可寫；峰厚介 與 ネイティブ・サン 有 ja.wikipedia，⚠ **峰厚介 是 c-132 a 組掛名**。｜⚠ **與《Another Departure》的分工**：同廠、相鄰兩年、同一位製作人 伊藤潔，但一張是紐約原聲三重奏、一張是紐約電聲樂手群，**兩張不得共用 Flying Disk 的廠牌介紹**（那條留給《Another Departure》）。｜**反同構**：本張切入「八首全自作＋電聲編制＋通往 ネイティブ・サン」。"
+ },
+ {
+  "key": "desc4:宮沢昭カルテット|Sea Horse",
+  "artist": "宮沢昭カルテット",
+  "album": "Sea Horse",
+  "facts": [
+   {
+    "f": "release-group 13f2967d 的欄位：title「Sea Horse」、artist-credit「Akira Miyazawa Quartet」（credit 的名字是英文，但指向的實體是個人 59e0a0d4「宮沢昭」）、first-release-date 1989、primary-type Album、secondary-types 空。轄下只有一筆 release：CD 9 軌，date 1989，**country 欄未填、label-info 是空陣列**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=13f2967d-66a0-4ab0-bfc8-cb7e092223da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "這是 1989 年 12 月 21 日在浜松グランドホテル的現場錄音，2002 年 6 月 19 日由 M & I 以 MYCJ-30145 首度發行；四重奏是 宮沢昭（次中音薩克斯風）、竹内春美（鋼琴）、竹内俊介（貝斯）、小津昌彦（鼓），錄音監修 児山紀芳。",
+    "src": "https://www.discogs.com/release/28726573"
+   },
+   {
+    "f": "9 軌逐軌（資料庫端登記的軌長）：1〈Green Dolphin Street〉7:21、2〈In a Sentimental Mood〉7:53、3〈Poor Butterfly〉5:28、4〈Baby Sea Horse〉7:05、5〈Stardust〉6:22、6〈Billie's Bounce〉9:57、7〈I Can't Get Started〉8:24、8〈Take the \"A\" Train〉6:55、9〈If Ever I Would Leave You〉10:15——八首標準曲加一首與盤名同名的〈Baby Sea Horse〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=13f2967d-66a0-4ab0-bfc8-cb7e092223da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "2002 年 M & I 版的曲目表把第 6 軌印成〈Tenor Madness〉，唱片條目另註明實際演奏的是 Charlie Parker 的〈Billie's Bounce〉；2023 年 11 月 3 日ポニーキャニオン以 PCJA-00126 重新發行，掛名印「宮沢昭カルテット」。",
+    "src": "https://www.discogs.com/release/28825399"
+   },
+   {
+    "f": "宮沢昭 以釣魚為興趣、曲名與唱片封套都拿它當題材，〈Baby Sea Horse〉（海馬）是這個習慣延續到 1980 年代末的一例。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD"
+   }
+  ],
+  "hookCandidates": [
+   "1989 年十二月二十一日，浜松的一家飯店裡錄的——唱片要等十三年才出",
+   "唱片背面印著〈Tenor Madness〉，但放出來的其實是 Charlie Parker 的〈Billie's Bounce〉"
+  ],
+  "sound": "九軌、約 70 分鐘的現場錄音，是 CD 時代的長度。九首裡有五首超過七分鐘，收尾的〈If Ever I Would Leave You〉10:15 最長，〈Poor Butterfly〉5:28 最短。次中音薩克斯風四重奏，沒有管樂編排也沒有弦樂，全靠一支薩克斯風撐九首——八首標準曲加一首自作的〈Baby Sea Horse〉。",
+  "keyTracks": [
+   "Baby Sea Horse",
+   "Billie's Bounce",
+   "If Ever I Would Leave You"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **不一致，本層提出改判：1989 → 2002（首發年），錄音年 1989 移進 risk。** MB 轄下唯一一筆 release 的 date 是 1989、**但 country 未填、label-info 是空陣列**——那是一筆沒有實體對應的登錄。實查到的實體盤是 Discogs release 28726573：**M & I 的 MYCJ-30145，2002 年 6 月 19 日發行**，盤面註記「Recorded live on December 21, 1989, at the Grand Hotel Hamamatsu」。Discogs 上 1989 年沒有任何一筆本作的發行，最早的一筆就是 2002 年那張；第二筆是 2023-11-03 ポニーキャニオン PCJA-00126（Discogs 28825399，Apple 1712606396 對應同一筆）。**依 c-132 簡報第四節第 2 點（現場盤的 year 取首發年、錄音年寫進 risk）與第 353 條的判準（盤名沒有載明演奏年，不適用取演奏年的例外），`year` 應為 2002。** 本層不動卡單，請主線裁定。",
+  "notes": "**⚠ 本組第三處改判，另加一個 releaseType 的問題。** 策展層寫「MB first-release-date 1989、轄下唯一 release 也是 1989，⚠ Apple 的 2023-11-03 是再發年不取」——**方向對了一半：2023 確實是再發年，但 1989 是錄音年，首發是 2002 年 M & I 的 MYCJ-30145。** 策展層自己在 `label` 欄寫「廠牌與目錄編號本批查不到一手來源、請研究層據 2023 年ポニーキャニオン回推」——**回推的答案不是 1989 年的廠牌，而是「1989 年根本沒有發行」。** 證據鏈寫在 `yearVerified`。｜⚠ **第二個問題：這是現場盤，但 MB 的 `secondary-types` 是空的。** 依第 253 條 `Live` 不構成排除理由、但**現場錄音要標**——本卡的 `releaseType` 與下游 mbNote 都沒有記，**建議本機補標，正文必須寫明是現場錄音。**｜✅ **補上策展層查不到的廠牌與編號**：首發 **M & I（エム・アンド・アイ）MYCJ-30145，2002-06-19**；2023 再發 **ポニーキャニオン PCJA-00126**。｜✅ **試聽有來源**：第三種查法直查 `lookup?id=1712606396&country=jp&entity=song` 實跑：《SEA HORSE》9 軌（分兩片，5＋4）、℗ 2023 PONY CANYON INC.、掛名「宮沢昭カルテット」，曲序與資料庫端逐首對應、長度差 ≤2 秒。**採信 1712606396。** 封面 CAA 覆核 **200**。｜✅ **掛名覆核通過，而且策展層與主線第 391 條的判斷是對的**：本 RG 的 credit 名字寫「Akira Miyazawa Quartet」而所屬實體是個人 `59e0a0d4`，MB 另有獨立群組實體 `281b012b`「Miyazawa Akira Quartet」名下只掛《Kiso》——**第 355 條照字面走會得到「宮沢昭」，那會把一張四重奏現場盤併進個人掛名、又與 `281b012b` 名下的碟分家**。取漢字＋片假名的 `宮沢昭カルテット` 同時解掉兩邊，**Apple jp 官方條目掛的也正是這個字串**（us 掛「MIYAZAWA AKIRA QUARTET」），與池中 峰厚介クインテット／鈴木勲トリオ 的先例一致。**本層支持這個判斷。**｜⚠ **曲名**：第 6 軌資料庫端與店面都作〈Billie's Bounce〉，2002 年實體盤的曲目表誤印成〈Tenor Madness〉，**正文寫〈Billie's Bounce〉**；若要提這個誤植，要說明是 2002 年版曲目表的問題。｜**人名邊界**：竹内春美、竹内俊介、小津昌彦、児山紀芳 有 Discogs 盤面 credit，可寫；小津昌彦 也是《'Round Midnight》的鼓手，兩張同一位。｜⚠ **與《On Green Dolphin Street》的重疊**：本張第 1 軌與那張的標題曲是同一首，且兩張都有〈In a Sentimental Mood〉〈I Can't Get Started〉（後者也在《'Round Midnight》）——**三張的正文不得互相暗示或折疊**。｜**反同構**：本張切入「1989 年浜松現場／2002 年才發行的十三年時差＋九首七十分鐘」。"
+ },
+ {
+  "key": "desc4:白木秀雄|ファンキー!登場",
+  "artist": "白木秀雄",
+  "album": "ファンキー!登場",
+  "facts": [
+   {
+    "f": "release-group 11e43432 的欄位：title「ファンキー!登場+6」、artist-credit「白木秀雄」（掛個人實體 40d40a8c）、first-release-date 2006-06-23、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 2006-06-23 THCD-021 CD 14 軌（barcode 4988044610187，label-info 記成「[no label]」）——**1960 年的原盤在資料庫端沒有建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=11e43432-75bc-447c-80ce-997674099892&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "原盤是ビクター（Victor）的 SJL-5008，1960 年在日本發行，封面題《Funky!!》，掛名印「Hideo Shiraki Quintet」；八軌是 A1〈私は満足〉5:46、A2〈恋の日記〉4:17、A3〈めぐり逢い〉5:20、A4〈ラテン・ファンタジー〉7:21、B1–B4〈ブルース組曲 パート1〉4:02／〈パート2〉3:43／〈パート3〉5:34／〈パート4〉7:29。",
+    "src": "https://www.discogs.com/release/23351762"
+   },
+   {
+    "f": "1960 年原盤的五重奏是 白木秀雄（鼓）、松本英彦（次中音薩克斯風）、福原彰（小號）、世良譲（鋼琴）、栗田八郎（貝斯），解說 いソノてルヲ。",
+    "src": "https://www.discogs.com/release/23351762"
+   },
+   {
+    "f": "ja.wikipedia 的 白木秀雄 條目把它記為「『ファンキー！登場』（ステレオ盤）・『モダン・ドラミング・アンド・スリーピー・ムード』（モノラル盤）－ Funky!! / Modern Drumming And Sleepy Mood（双方ともに同一録音＆内容。1960 年録音）(Victor SJL-5008（ステレオ）JV-5011（モノラル）) 1960 年」——立體聲盤與單聲道盤是同一份錄音的兩個版本，只是題名不同。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84"
+   },
+   {
+    "f": "2006 年 6 月 23 日 Think! Records 以 THCD-021 復刻時加了六首 bonus，變成 14 軌：第 9–14 軌依序是〈サヨナラ・ブルース〉〈アー・ソー〉〈チューン・アップ〉〈ラウンド・アバウト・ミッドナイト〉〈ワーク・ソング〉〈バラード・メドレー：ブルー・ムーン〜ラウンド・アバウト・ミッドナイト〉，出自另外兩張 1962 與 1963 年的 LP。",
+    "src": "https://www.discogs.com/release/11138783"
+   }
+  ],
+  "hookCandidates": [
+   "同一份 1960 年的錄音發過兩次，立體聲版叫《ファンキー！登場》，單聲道版叫《モダン・ドラミング・アンド・スリーピー・ムード》",
+   "B 面整面是一首〈藍調組曲〉，分成四段，最後一段七分二十九秒"
+  ],
+  "sound": "原盤八軌、約 43 分鐘。A 面四首各自獨立，B 面整面是一首分成四段的〈ブルース組曲〉，最後一段 7:29 最長。五重奏：鼓、次中音薩克斯風、小號、鋼琴、貝斯，沒有電聲也沒有客座樂器——這是 1960 年日本正面追 funky hard bop 的編制。A4〈ラテン・ファンタジー〉7:21 是 A 面最長的一首。",
+  "keyTracks": [
+   "ブルース組曲 パート4",
+   "ラテン・ファンタジー",
+   "私は満足"
+  ],
+  "status": "full",
+  "yearVerified": "**改判成立，1960（首發年），策展層與主線第 391 條正確，而且廠牌的更正也對。** release-group first-release-date 是 2006-06-23（Think! Records 復刻年），1960 年原盤資料庫端未建。兩個獨立來源指向 1960 與ビクター：(a) Discogs release 23351762 實查為 **Victor SJL-5008、1960、Japan、Hideo Shiraki Quintet、題《Funky!!》、八軌**，八軌曲名與資料庫端 THCD-021 的第 1–8 軌完全相同；(b) ja.wikipedia 白木秀雄 條目記「(Victor SJL-5008（ステレオ）JV-5011（モノラル)) 1960 年」。**第 391 條「原盤是ビクター SJL-5008 不是 King」的更正成立。**",
+  "notes": "**覆核策展層：年份與廠牌改判全部成立，Apple 假陽性的否決也成立；另找到一筆會影響 §1 候選清單的事實。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **404**，策展層判斷正確。｜✅ **廠牌更正覆核通過**：第 381 條 C 與第 390 條初稿寫的「King 原盤」經第 391 條更正為ビクター SJL-5008——**本層以 Discogs 盤面與 ja.wikipedia 兩個獨立來源確認，更正正確**。⚠ 策展層另寫「6 首 bonus 的原盤是 Victor SJL-5104（1962）與 SJL-5069（1963）」，**本層在 Discogs 的 THCD-021 條目上查不到這兩個編號**，只確認 bonus 共六首、出自另外兩張 LP；**那兩個目錄號不得寫進正文。**｜⚠⚠ **本層新查到、會影響第 381 條 C 的一筆**：ja.wikipedia 白木秀雄 條目明寫 **《ファンキー！登場》（立體聲）與《モダン・ドラミング・アンド・スリーピー・ムード》（單聲道）是同一份錄音、同樣的內容**，只是版本不同（SJL-5008 立體聲／JV-5011 單聲道）。**第 381 條 C 的 §1 候選清單把《モダン・ドラミング・アンド・スリーピー・ムード》列成另一張待建檔的碟——那一列應該刪掉或改成本張的單聲道版註記，否則本機端會替同一份錄音建第二張卡。**｜✅ **軌數處置覆核通過**：THCD-021 的 14 軌裡，**第 1–8 軌就是 1960 年原盤的八軌**（Discogs 的 Victor SJL-5008 條目曲目與 THCD-021 的前八軌逐首相同），第 9–14 軌是六首 bonus。**正文只能引 1960 年的八軌**，策展層的提醒成立。｜⚠ **Apple 的假陽性否決成立**：本層直查 `lookup?id=151989291&country=jp&entity=song` 覆核，`151989291`《King Re-Jazz Swing Play the Funky!》的曲目確實與 THCD-021 幾乎不重疊、℗ 是 King Records 而非 Think!，**不得配對**。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 以《ファンキー》《Funky》《ファンキー登場》搜 jp／us 皆無本盤；(2) artistId `900350012` 的 jp 目錄 11 筆、us 目錄 8 筆全拉過，沒有本張（`1777008986` 那個 HIDEO SHIRAKI QUINTET+ALL STARS 的目錄也只有《MODERN AMERIACHI for you》一筆）；(3) 以曲名〈ブルース組曲〉〈ラテン・ファンタジー〉反查 song 端點，jp／us 皆 0 筆。**走無來源狀態。**｜⚠ **封面**：CAA 404，本層未在重複 RG 或 Apple 找到替代路徑；**可走的只有 Discogs**——release **23351762**（Victor SJL-5008、1960、**3 張圖**，是 1960 原盤封套）或 **11138783**（Think! THCD-021、2006、1 張圖）。**建議取 23351762，那是原盤封面。**｜⚠ **盤名**：原盤封面的英文題是《Funky!!》，日文題《ファンキー！登場》出自 ja.wikipedia 與唱片行條目；卡單取《ファンキー!登場》（ASCII 驚嘆號）可行，**正文提原盤封面時要知道上面印的是《Funky!!》**。｜**人名邊界**：松本英彦、福原彰、世良譲、栗田八郎、いソノてルヲ 有 Discogs 盤面 credit ＋ ja.wikipedia 成員表背書，可寫。｜**反同構**：本張切入「立體聲與單聲道兩個題名的同一份錄音＋B 面整面的藍調組曲」，不重述白木秀雄 的生平起源。"
  }
 ]

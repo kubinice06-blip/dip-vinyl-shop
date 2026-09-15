@@ -577,5 +577,320 @@
   "status": "full",
   "yearVerified": "一致，1976（首發年）。MB release-group first-release-date 1976、JP EAST WIND EW 8043 那筆 release 記 1976；店面官方條目 1468445908 的 ℗ 行寫 1976、6 軌＝MB 6 軌。**⚠ 該條目的 releaseDate 是 1998-12-09——那是 Mercury 時期的 CD 再發日、比 MB 晚，依 c-134 第 422 條不採用。** 維持 1976。",
   "notes": "**⚠ 本卡第二大的發現：盤名與掛名在 MB 上被接在一起了。** 原盤的掛名是樂團「**東風（Kochi）**」、盤名是《**Wishes**》；MB 把它建成 artist=菊地雅章、title=「Wishes/Kochi」，**等於把團名併進了盤名**。店面官方條目（掛名「東風(こち)」、盤名《Wishes》）與英文的 session 資料都是分開的。**卡單沿用 MB 的形狀可以不動（身分鍵是 rgMbid），但正文不得把「Wishes/Kochi」講成一個盤名的兩半或雙題**——要提就講明「樂團叫東風、盤名叫 Wishes」。**⚠ 給本機：`queryAlias` 應補「東風」「Kochi」「Wishes」。**｜**串流採信 1468445908**（第 254 條第三種查法，**本組唯一一張靠曲名／盤名複合 search 才找回的**：`search term=\"Wishes Kochi\"` jp 回 1 筆——藝人目錄 4272695 全量裡**沒有**這張，因為它掛在「東風(こち)」這個另一個 artistId 底下）：6 軌曲序與 1976 原盤完全相同、長度差 ±20 秒內，全軌有 preview。**有固定試聽來源。**｜**人名邊界**：八位樂手有 sessiondays 與日文維基兩邊交叉（日文維基列了其中四位），**可寫**；美國樂手一律拉丁原文（Steve Grossman、Dave Liebman、Reggie Lucas、Anthony Jackson、Al Foster、James Mtume）。**日野皓正 是本組掛名**，點名不展開。⚠ **Reggie Lucas、Mtume、Al Foster 當時都在 Miles Davis 的電氣樂團裡**——這一層**沒有在任何一個查到的來源裡被明說**，**不得寫進正文**（第 253 條）。｜**「一次性企劃」有來源**（sessiondays 的 one time project），可寫。｜**反同構**：本張切入「樂團東風＋紐約班底＋電聲八重奏」，同批《East Wind》走廠牌創業盤，兩張同廠牌不得共用 East Wind 的沿革。"
+ },
+ {
+  "key": "desc4:佐藤允彦トリオ|Palladium",
+  "artist": "佐藤允彦トリオ",
+  "album": "Palladium",
+  "facts": [
+   {
+    "f": "release-group c1be243a 的欄位：title「Palladium」、artist-credit「Masahiko Sato Trio」（群組實體 2d492012）、first-release-date **2005-02-23**、primary-type Album、secondary-types 空。**轄下只有 1 筆 release**：JP 2005-02-23 EXPRESS／BRIDGE-043 CD 6 軌——**1969 年的東芝 Express 原盤資料庫端完全沒有建檔**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c1be243a-52ac-49a3-9181-6a64d494973f&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "這是 佐藤允彦 的第一張領銜作，1969 年 3 月 17 日於東京錄音，鋼琴三重奏：佐藤允彦（鋼琴、prepared piano）、荒川康男（貝斯）、富樫雅彦（鼓）；廠牌是東芝音楽工業的 EXPRESS。六首裡只有〈Michelle〉是 The Beatles 的曲子，其餘為佐藤自作；其中〈Palladium〉與〈Der Zweig Von Salzburg〉兩首是他 1965 年報考 Berklee 時交出去的作品。本作獲 Swing Journal 主辦的**第 3 回ジャズ・ディスク大賞「日本ジャズ賞」**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%82%B8%E3%82%A6%E3%83%A0_(%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+   },
+   {
+    "f": "6 軌逐軌（2005 年復刻 CD 的登錄，與原盤同序）：Opening 0:29／Michelle 14:59／Der Zweig Von Salzburg 6:13／Palladium 8:25／Scrollin' 11:42／Closing 0:24——首尾兩首各只有不到半分鐘，中間四首從六分到十五分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release/bd724ae5-60b8-4696-ae91-ff304bbda1e2?fmt=json&inc=recordings+artist-rels"
+   },
+   {
+    "f": "店面的官方數位條目掛名印作「佐藤允彦トリオ」、盤名《パラジウム》，日期 1969-06-20、℗ 1969 EMI Music Japan，六軌曲題全部片假名（オープニング／ミッシェル／ザルツブルグの小枝／パラジウム／スクローリン／クロージング）。",
+    "src": "https://music.apple.com/jp/album/palladium/720359088"
+   },
+   {
+    "f": "佐藤允彦 1941 年 10 月 6 日生，慶應義塾大学経済学部首席畢業，1966–1968 年在 Berklee 修作曲與編曲；1970 年與 1972 年兩度獲藝術祭優秀賞。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6"
+   }
+  ],
+  "hookCandidates": [
+   "開場 29 秒、收尾 24 秒，中間〈Michelle〉一首就彈了十四分五十九秒",
+   "〈Palladium〉這首是他 1965 年報考 Berklee 時交的作品，四年後成了自己第一張唱片的盤名"
+  ],
+  "sound": "六軌、鋼琴三重奏。首尾〈Opening〉0:29 與〈Closing〉0:24 像兩道門，中間四首從 6:13 到 14:59。最長的〈Michelle〉把披頭四的旋律拆成十五分鐘的即興，佐藤在幾處用了 prepared piano。全長約四十二分鐘。",
+  "keyTracks": [
+   "Palladium",
+   "Michelle",
+   "Der Zweig Von Salzburg"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層第 372 條：1969 成立。** MB first-release-date 是 2005-02-23（轄下唯一一筆是 2005 年的 EXPRESS／Bridge BRIDGE-043 CD，1969 年東芝 Express 黑膠原盤 MB 未建檔），**不是首發年**。原盤年 1969 有三邊背書：(1) Apple jp 官方條目 720359088 記 1969-06-20、℗ 1969 EMI Music Japan（EMI 是東芝 EXPRESS 的後繼權利人）、**6 軌與 MB 復刻盤的 6 軌一致**；(2) 日文維基的專輯條目記 1969 年發行、1969-03-17 錄音；(3) 同條目記本作獲第 3 回（1969 年度）ジャズ・ディスク大賞 日本ジャズ賞。**取 1969，卡單不動。**",
+  "notes": "**覆核第 372 條：成立，且比策展層多一層背書**（策展層只有 Apple 的 ℗ 年，本層補上日文維基的專輯條目與獲獎屆次）。**軌數把關點**：Apple 6 軌＝MB 復刻 release 6 軌，同碟成立。｜**覆核第 370 條掛名：成立，且實證複驗過。** MB 實體 2d492012 實查 **type 是 null、area null、life-span 空、無 alias**（比另兩個群組實體都薄）；但 **`lookup?id=720359088&country=jp` 回的 artistName 實測就是「佐藤允彦トリオ」**——策展層的實證站得住。**⚠ 補一條**：同一個實體在 Apple 的 **`search` 端點回的是「Satoh Masahiko Trio」**（artistId 75534413），**兩個端點的顯示名不同**——下游若用 search 端點比對掛名會對不上。｜**獎項（research-base 最高頻錯誤那條）**：**第 3 回ジャズ・ディスク大賞的「日本ジャズ賞」，是得獎不是入圍**，主辦是 Swing Journal，年度 1969。**只有這一個獎，不得寫成「拿下多座」。** ⚠ 同條目另提 富樫雅彦《We Now Create》同年一起受賞，**那是另一張碟的獎，不要併進本卡。**｜**串流採信 720359088**（策展層已列，本層 `lookup?id=720359088&country=jp&entity=song` 直查複驗）：6 軌曲序與 MB 一致、全軌有 preview。**有固定試聽來源。**｜**人名邊界**：荒川康男、富樫雅彦 有日文維基專輯條目背書，可寫。｜**catno（第 262 條）**：1969 原盤的 catno **沒有任何一筆 release 能背書**（MB 轄下只有 2005 CD），策展層的處置（`label` 只寫「東芝 Express」、不寫 catno）正確，**正文不得寫 1969 原盤的品番**。⚠ 另有二手資料把原盤品番寫成 ETP-8004／EP-8004 兩種，**彼此矛盾，一律不採。**｜**反同構（同批佐藤 5 張）**：本張切入「第一張領銜作＋Berklee 報考曲＋日本ジャズ賞」，《Holography》走完全即興獨奏、《Transformation》走同一個三重奏的兩年跨度、《マグノリアの木》走宮沢賢治與管樂編制、《All-in All-out》走紐約錄音的融合盤。"
+ },
+ {
+  "key": "desc4:佐藤允彦|Holography",
+  "artist": "佐藤允彦",
+  "album": "Holography",
+  "facts": [
+   {
+    "f": "release-group 482d1c70 的欄位：title「Holography」、artist-credit「Masahiko Sato」（個人實體 04bbec22，主名 佐藤允彦）、first-release-date **2006-01-20**、primary-type Album、secondary-types 空。**轄下只有 1 筆 release**：JP 2006-01-20 Bridge Inc. BRIDGE-42 CD 2 軌——**1970 年的原盤資料庫端完全沒有建檔**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=482d1c70-30c3-41e8-8c20-7362f714078e&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "這是 1970 年 6 月在銀座ヤマハホール 的一場音樂會，內容是**完全即興的獨奏鋼琴**，做成唱片時才替兩段取了〈Phase 1〉〈Phase 2〉的曲名；2006 年的國內 CD 之後、2023 年 12 月才再有類比盤。",
+    "src": "https://diskunion.net/jazz/ct/detail/1008760247"
+   },
+   {
+    "f": "店面的官方數位條目記日期 1970-09-25、℗ 1970 Nippon Columbia Co., Ltd./NIPPONOPHONE，兩軌題作〈Holography - Phase 1〉20:56 與〈Holography - Phase 2〉18:02，全長約三十九分鐘。",
+    "src": "https://music.apple.com/jp/album/holography/1716850549"
+   },
+   {
+    "f": "佐藤允彦 1941 年生，慶應義塾大学経済学部首席畢業，1966–1968 年在 Berklee 修作曲與編曲，1969 年以《パラジウム》出道；1970 年與 1972 年兩度獲藝術祭優秀賞。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6"
+   },
+   {
+    "f": "資料庫端 2006 年那筆 Bridge CD 的兩軌只登錄了曲名〈Phase 1〉〈Phase 2〉、沒有登錄長度，廠牌欄寫 Bridge Inc.、catno BRIDGE-42。",
+    "src": "https://musicbrainz.org/ws/2/release/28f4b305-75c8-41cc-bd64-d417e5edec01?fmt=json&inc=recordings+artist-rels"
+   }
+  ],
+  "hookCandidates": [
+   "整場是即興的，兩段音樂是做成唱片時才被取名叫〈Phase 1〉〈Phase 2〉",
+   "一個人、一台鋼琴、兩段各二十分鐘——1970 年 6 月銀座ヤマハホール 的一個晚上"
+  ],
+  "sound": "兩軌、全長約三十九分鐘的獨奏鋼琴，沒有其他樂器。〈Phase 1〉20:56 與〈Phase 2〉18:02 各佔一面，兩段都是現場的完全即興、不是事先寫好的曲子。這是本組五張佐藤裡編制最小的一張——前一年的《パラジウム》還有三重奏。",
+  "keyTracks": [
+   "Phase 1",
+   "Phase 2"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層第 372 條：1970 成立。** MB first-release-date 是 2006-01-20（轄下唯一一筆是 2006 年的 Bridge CD），**不是首發年**。原盤年 1970 有兩邊背書：(1) Apple jp 官方條目 1716850549 記 1970-09-25、℗ 1970 Nippon Columbia、**2 軌與 MB 的 2 軌一致**；(2) 唱片行的商品解說記「1970年6月」銀座ヤマハホール 的完全即興獨奏。**取 1970，卡單不動。**",
+  "notes": "**覆核第 372 條：成立**（軌數 2＝2，同碟把關點過）。｜**⚠ 覆核策展層留的「廠牌兩說未決」——本層把它收斂了，但不到可以斷言的程度。** 策展層說「Bridge 這條復刻線處理的多是東芝 Express 的目錄，Apple 的 ℗ 卻寫 日本コロムビア」。本層查到**三條指向 日本コロムビア 的線索**：(1) Apple 官方條目的 ℗ 行寫 Nippon Columbia／NIPPONOPHONE；(2) **MB 這筆 Bridge CD 的 label-info 只有「Bridge Inc.」一家，沒有 EXPRESS**——而同一條復刻線的《パラジウム》（BRIDGE-043）與《Transformation》（DTHK-002）在 MB 上都掛著 **EXPRESS** 當共同廠牌，**本張沒有**；(3) Apple 的 佐藤允彦 藝人目錄裡，1970–71 年的《Swinging Poem》1970-01-25、《Canto of Libra》1970-10-25、《Switched on East》1971-09-25 **℗ 行全是 Nippon Columbia**，本張的 1970-09-25 正落在這一串裡。**⚠ 另有一處二手商品資料把原盤品番寫成 Columbia SW-7038，但只有單一來源、無法交叉，不採。** **結論：證據傾向 日本コロムビア，但沒有一筆 release 能裁——依第 250 條 `label` 欄兩說並列、正文不得斷言廠牌。** 建議主線把 `label` 欄的兩說順序改成「日本コロムビア（傾向）／東芝 Express（策展層原假設）」並附上第 (2) 點這個差異。｜**串流採信 1716850549**（策展層已列，本層直查複驗）：2 軌有 preview、店面把曲題寫成〈Holography - Phase 1／2〉。**有固定試聽來源。**｜**⚠ 錄音日**：唱片行解說只寫「1970年6月」，另一處寫「70年6月17日」但無法交叉，**正文寫「1970 年 6 月」即可、不得寫日**。｜**反同構**：本張切入「完全即興的獨奏＋曲名是事後取的」。"
+ },
+ {
+  "key": "desc4:佐藤允彦トリオ|Transformation '69/'71",
+  "artist": "佐藤允彦トリオ",
+  "album": "Transformation '69/'71",
+  "facts": [
+   {
+    "f": "release-group 8295c5bc 的欄位：title「Transformation '69/'71」、artist-credit「Masahiko Sato Trio」（群組實體 2d492012）、first-release-date **1991-10-19**、primary-type Album、secondary-types 空。**轄下只有 1 筆 release**：JP 1991-10-19 EXPRESS／Think! Records DTHK-002 CD 4 軌——**1971 年的東芝 Express 原盤資料庫端沒有建檔**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8295c5bc-ae34-46aa-ad95-ac5d1a87d653&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "盤名裡的兩個年份就是錄音年：四首來自 1969 年 3 月 17 日、1969 年 3 月 20 日與 1971 年 3 月 2 日三場，班底與《パラジウム》完全相同——佐藤允彦（鋼琴）、荒川康男（貝斯）、富樫雅彦（鼓、打擊）。〈Transformation Part 1／2〉掛三人共同作曲，〈On A Clear Day (You Can See For Ever)〉是 Alan Jay Lerner 與 Burton Lane 的曲子，製作與內頁文是 瀬川昌久；發行日 1971 年 10 月 5 日。",
+    "src": "https://ototoy.jp/_/default/p/264676"
+   },
+   {
+    "f": "4 軌逐軌（1991 年復刻 CD 的登錄，與原盤同序）：Tigris 7:15／On A Clear Day (You Can See For Ever) 7:51／Transformation Part 1 15:13／Transformation Part 2 3:41——〈Transformation〉兩段合計近十九分鐘，佔全碟一半。",
+    "src": "https://musicbrainz.org/ws/2/release/3860bdef-a5ff-40cd-a856-f28b0f05ce78?fmt=json&inc=recordings+artist-rels"
+   },
+   {
+    "f": "店面的官方數位條目掛名「佐藤允彦トリオ」、盤名《Transformation'69/'71》，日期 1971-10-05、℗ 1971 EMI Music Japan，四軌曲題片假名（チグリス／オン・ア・クリアー・デイ／トランスフォーメイション パート1／パート2）。",
+    "src": "https://music.apple.com/jp/album/transformation69-71/720401905"
+   },
+   {
+    "f": "佐藤允彦 1966–1968 年在 Berklee 修作曲與編曲，1969 年以《パラジウム》出道；同一個三重奏的第一張是 1969 年 3 月 17 日錄的《パラジウム》。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6"
+   }
+  ],
+  "hookCandidates": [
+   "盤名裡的兩個年份就是錄音年——1969 年 3 月那兩天，正是他錄《パラジウム》的同一批 session",
+   "〈Transformation〉分成兩段，第一段十五分十三秒、第二段只有三分四十一秒"
+  ],
+  "sound": "四軌、鋼琴三重奏，與兩年前的《パラジウム》同一組人。前兩首各七分多鐘，後半的〈Transformation Part 1〉15:13 是全碟主體、〈Part 2〉3:41 像它的尾聲。兩段〈Transformation〉由三人共同署名，是這張最接近集體即興的部分。",
+  "keyTracks": [
+   "Transformation Part 1",
+   "Tigris",
+   "On A Clear Day (You Can See For Ever)"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層第 372 條：1971 成立。** MB first-release-date 是 1991-10-19（轄下唯一一筆是 1991 年的 EXPRESS／Think! CD），**不是首發年**。原盤年 1971 有兩邊背書：(1) Apple jp 官方條目 720401905 記 1971-10-05、℗ 1971 EMI Music Japan、**4 軌與 MB 的 4 軌一致**；(2) 日本的數位商店解說記發行日 1971-10-05 與三場錄音日（1969-03-17／1969-03-20／1971-03-02）。**取 1971，卡單不動。** ⚠ 注意本盤有一半內容錄於 1969 年——**年份取首發年、不取錄音年**（第 364 條第 2 點），錄音年寫進 risk。",
+  "notes": "**覆核第 372 條：成立，且比策展層多一層背書**（補上發行日 1971-10-05 與三場錄音日的獨立記載）。｜**⚠ 新查到一條跨卡線索**：**1969 年 3 月 17 日這一場就是《パラジウム》的錄音日**——本組兩張佐藤トリオ 的碟有一部分出自同一天的 session。**這是兩張卡之間最結實的一條線，但只能寫在其中一張**（建議寫在本張，因為盤名本身標著 '69）。｜**串流採信 720401905**（策展層已列，本層 `lookup?id=720401905&country=jp&entity=song` 直查複驗）：4 軌曲序與 MB 一致、長度差 ±3 秒，全軌有 preview。**有固定試聽來源。**｜**人名邊界**：荒川康男、富樫雅彦 與《パラジウム》同一組、兩處來源；製作人 瀬川昌久 只有一處，⚠ 可寫但建議不點名。｜**catno（第 262 條）**：1971 原盤的 catno 沒有任何一筆 release 能背書（MB 轄下只有 1991 CD），策展層不寫 catno 的處置正確；⚠ 另有商品頁把原盤品番寫成 ETP-9041，**單一來源、不採**。｜**盤名字元**：MB 題用 ASCII 撇號、店面寫成《Transformation'69/'71》（無空格），卡面用卡單盤名。｜**反同構**：本張切入「盤名＝兩個錄音年＋同一個三重奏的兩年跨度」。"
+ },
+ {
+  "key": "desc4:佐藤允彦|マグノリアの木",
+  "artist": "佐藤允彦",
+  "album": "マグノリアの木",
+  "facts": [
+   {
+    "f": "release-group f38487cf 的欄位：title「マグノリアの木」、artist-credit「佐藤允彦」（個人實體 04bbec22）、first-release-date 1977-11、primary-type Album、secondary-types 空。**轄下只有 1 筆 release**：JP 1977-11 DENON JAZZ YX-7571-ND 12 吋黑膠 9 軌、status Official。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f38487cf-e953-4548-8b40-da645cf9c91d&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "日本コロムビア 官方目錄記原盤 1977 年 11 月 25 日發行、LP 番號 YX-7571，錄音是 1977 年 8 月 25、27 日在日本コロムビア第一スタジオ；編制是 佐藤允彦（鋼琴／大鍵琴）、衛藤幸雄・小出道也・篠原猛（低音長笛／低音塤）、羽鳥幸次・隅山時一（小號）、三田治美・岡田澄雄・新井英治（長號）、吉川雅夫（馬林巴／古鈸），全曲由佐藤允彦作曲編曲。同頁寫明這是他受**宮沢賢治**的著作啟發而在 1977 年做成的作品。",
+    "src": "https://columbia.jp/artist-info/satomasahiko/discography/COCB-54073.html"
+   },
+   {
+    "f": "1977 原盤 9 軌逐軌：そらのふちは沈んで行き 3:07／枝にいっぱいひかるはなんぞ 3:39／秋田街道 2:11／コロナはしちじふろくまんにひゃく 3:27／夢でなけぁ霧だ 6:58／とちもくるみもふきおとせ 3:00／森々と青い 3:02／ただ一かけの鳥もいず 3:41／これが今日のおしまひだろう 6:52——九首曲名全部是日文短句，其中多處用舊假名（「おしまひ」「しちじふろくまん」）。",
+    "src": "https://musicbrainz.org/ws/2/release/2660c8c4-b078-432b-bf4e-f890e2d4db1c?fmt=json&inc=recordings+artist-rels"
+   },
+   {
+    "f": "店面的官方數位條目把盤名轉寫成《Magnolia No Ki》、掛名「佐藤允彦」，日期 1977-11-25、℗ 1977 Nippon Columbia，九軌曲題與原盤完全相同。",
+    "src": "https://music.apple.com/jp/album/magnolia-no-ki/1709903884"
+   },
+   {
+    "f": "佐藤允彦 1941 年生，1966–1968 年在 Berklee 修作曲與編曲；1970 年與 1972 年兩度獲藝術祭優秀賞，2019 年獲文化庁長官表彰。他在日本コロムビア（DENON）時期留下多張作品。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6"
+   }
+  ],
+  "hookCandidates": [
+   "九首曲名全是宮沢賢治式的日文短句，還帶著舊假名——「これが今日のおしまひだろう」",
+   "編制裡沒有貝斯也沒有鼓：鋼琴與大鍵琴，配三支低音長笛、兩支小號、三支長號與馬林巴"
+  ],
+  "sound": "九軌、全長約三十六分鐘。編制極不尋常——沒有貝斯、沒有鼓：鋼琴與大鍵琴，加三支低音長笛與低音塤、兩支小號、三支長號、馬林巴與古鈸。七首在兩到四分鐘之間，只有〈夢でなけぁ霧だ〉6:58 與〈これが今日のおしまひだろう〉6:52 是長曲。曲名是日文短句，管樂的音色比即興更像是被寫定的。",
+  "keyTracks": [
+   "そらのふちは沈んで行き",
+   "夢でなけぁ霧だ",
+   "これが今日のおしまひだろう"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（首發年）。MB release-group first-release-date 1977-11、唯一那筆 JP DENON JAZZ YX-7571-ND 記 1977-11；日本コロムビア 官方目錄記原盤 1977-11-25、LP 番號 YX-7571；Apple jp／us 1709903884 記 1977-11-25、℗ 1977 Nippon Columbia、9 軌＝MB 9 軌。三邊一致（店面的精確日與官方目錄同日、比 MB 的年月更細，符合 c-134 第 422 條）。",
+  "notes": "**覆核策展層：MB 實查相符，無擋下。**｜**串流採信 1709903884**（第 254 條第三種查法：策展層與回撈報告都記「目錄裡找不到」，本層改用 `lookup?id=19063311&country=jp&entity=album` 拉 Masahiko Satoh 全量目錄撈到——**店面把日文盤名轉寫成羅馬字《Magnolia No Ki》，日文字串比對必然落空**，第 260 條的形狀）：9 軌曲序與 1977 原盤完全相同、長度比 MB 長 5～9 秒，全軌有 preview。**有固定試聽來源。**｜**⚠ 一個很容易寫錯的坑**：日本コロムビア 官方頁上出現的「**宮沢賢治没後80年**」是在講 **2013 年那次 Blu-spec CD 復刻的企劃名目**（宮沢賢治 1933 年歿，没後 80 年即 2013），**不是 1977 年原盤的事**。**正文不得把「没後80年」寫進 1977 年那張碟。** 能寫的只有官方頁那句「受宮沢賢治的著作啟發」。｜**人名邊界**：十位樂手全部出自**官方目錄頁**，可寫；⚠ 十位一次點名會爆掉 CJK 專名上限（c-131 第 371 條），**建議整格捨去、只寫編制**。｜**曲名字形**：九首曲名照原文抄（含舊假名「おしまひ」「しちじふろくまん」），**不得改成新假名**。｜**廠牌**：MB 的 release 端點記 DENON JAZZ／catno YX-7571-ND，官方目錄記 YX-7571——**兩者差一個 -ND 後綴**，同一張碟；正文寫「日本コロムビア 的 DENON 爵士線」即可。｜**反同構**：本張切入「宮沢賢治的短句＋無貝斯無鼓的管樂編制」。"
+ },
+ {
+  "key": "desc4:佐藤允彦|All-in All-out",
+  "artist": "佐藤允彦",
+  "album": "All-in All-out",
+  "facts": [
+   {
+    "f": "release-group d6cb2113 的欄位：title「All‐in All‐out」（MB 用兩個 U+2010 連字號）、artist-credit「佐藤允彦」（個人實體 04bbec22）、first-release-date 1979、primary-type Album、secondary-types 空。轄下 2 筆 release 全數 Official：JP 1979 OPENSKYE 25AP 1010 12 吋黑膠 6 軌、JP 1991-07-25 Sony Records SRCL-1978 CD 6 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d6cb2113-8a92-4888-b250-db8b302920d5&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "這張 1979 年的碟是在紐約 Power Station 錄的，班底是 佐藤允彦（鋼琴、領班）、Dave Liebman（高音／次中音／中音薩克斯風）、川崎燎（吉他）、Francisco Centeno（貝斯）、Harvey Mason（鼓）、Rubens Bassini（打擊），Randy Brecker（小號）以來賓身分參加；廠牌是 Openskye。",
+    "src": "https://organicmusic.jp/products/masahiko-satoh-all-in-all-out"
+   },
+   {
+    "f": "1979 原盤 6 軌逐軌：SAPAJOU WALK 6:16／GRAMA GRASS 7:33／SALAMANDER 6:27／MOTH BALL 4:25／THUS THE SONG PASSED OUT OF THEIR MIND 7:11／FALLOUT 8:17——六首每首四到八分鐘，長度相當平均，全長約四十分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release/dbe0dde3-3a4b-4c6d-a8bd-4a4fff99b0d3?fmt=json&inc=recordings+artist-rels"
+   },
+   {
+    "f": "佐藤允彦 1941 年生，1966–1968 年在 Berklee 修作曲與編曲；1970 年與 1972 年兩度獲藝術祭優秀賞。他這一段時期已在日本、歐洲與美國三地錄音。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6"
+   }
+  ],
+  "hookCandidates": [
+   "整張在紐約 Power Station 錄的，鼓是 Harvey Mason、薩克斯風是 Dave Liebman",
+   "六首每首四到八分鐘，長度平均得不像一張日本前衛鋼琴家的碟"
+  ],
+  "sound": "六軌、全長約四十分鐘，每首四到八分鐘、長度均勻。編制是紐約的融合樂配置：鋼琴、薩克斯風、電吉他、電貝斯、鼓、打擊，加一支客席小號。與他 1970 年那張獨奏鋼琴或 1977 年那張管樂編制相比，這張的節奏組是標準的 fusion 打法。",
+  "keyTracks": [
+   "Sapajou Walk",
+   "Grama Grass",
+   "Fallout"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1979（首發年）。MB release-group first-release-date 1979、JP OPENSKYE 25AP 1010 那筆 release 記 1979；商品資料亦記 1979 年、Openskye。1991 年那筆是 Sony 的 CD 再發。Apple 三種查法皆無此盤，無店面日期可比。",
+  "notes": "**覆核策展層：MB 實查相符，無擋下。**｜**⚠ 無固定試聽來源**：三種查法全落空——`search` 查《All-in All-out》「オール・イン・オール・アウト 佐藤」jp／us 只回同名的西洋流行單曲；藝人目錄 19063311（jp 37／us 41 筆）與 75534413（佐藤允彦トリオ，jp／us 各 4 筆）全量拉完都沒有這張（**目錄裡 Openskye／Sony 時期的碟一張都沒有**）；代表曲 `entity=song` 查〈Sapajou Walk〉0 筆、〈Grama Grass〉無命中。**判定：無來源。**｜**⚠ 這一張把第 378 條的規律再推一格**：它不是 CBS/Sony 1969–74，是 **1979 年 Openskye（後由 Sony 承接）**——**同一位藝人的 日本コロムビア／DENON 目錄在店面幾乎全有（《Swinging Poem》1970 到《The Entertainer》1979 共十餘張），Sony 系那一條線一張都沒有**。所以缺席的切法在同一位藝人身上也是按**權利人**切，不是按時期或廠牌大小切。｜**⚠ catno 兩說（第 262 條）**：MB 的 1979 release 記 **25AP 1010**，商品資料記 **28AP 1010**——**兩說未決，正文不得寫品番**。｜**人名邊界**：六位樂手出自一處商品解說，⚠ 單一來源。**Dave Liebman 同時在本組 菊地雅章《Wishes/Kochi》（1976）**——這條跨卡線索可以用，但**只能寫在其中一張**。川崎燎（Ryo Kawasaki）是日本樂手、照漢字寫。｜**盤名字元**：MB 題用兩個 U+2010，卡單改成 ASCII 連字號（策展層第 375 條），正文用卡單盤名。｜**反同構**：本張切入「紐約錄音＋fusion 節奏組」。"
+ },
+ {
+  "key": "desc4:峰厚介|Out Of Chaos",
+  "artist": "峰厚介",
+  "album": "Out Of Chaos",
+  "facts": [
+   {
+    "f": "release-group 4b3a6049 的欄位：title「Out Of Chaos」、artist-credit「Kohsuke Mine」（個人實體 e15df4d0，主名 峰厚介）、first-release-date 1974、primary-type Album、secondary-types 空。**轄下只有 1 筆 release**：JP 1974 EAST WIND EW-7003 黑膠 3 軌、status Official。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4b3a6049-eee8-443b-bc4f-b5bc527a4573&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "三首裡兩首（〈Recollection〉〈Cross Wind〉）錄於 1974 年 7 月 30 日的東京 Studio A，另一首〈Little Abi〉錄於 1974 年 7 月 15 日的飯野ホール；編制是 峰厚介（次中音薩克斯風）、菊地雅章（鋼琴）、岡田勉（貝斯）、日野元彦（鼓），〈Little Abi〉是 菊地雅章 的曲子。",
+    "src": "https://www.discogs.com/release/7239617-Kohsuke-Mine-%E5%B3%B0-%E5%8E%9A%E4%BB%8B-Out-Of-Chaos-%E3%82%A2%E3%82%A6%E3%83%88%E3%82%AA%E3%83%96%E3%82%B1%E3%82%A4%E3%82%AA%E3%82%B9"
+   },
+   {
+    "f": "1974 原盤 3 軌逐軌：Recollection 12:05／Little Abi 9:34／Cross Wind 17:48——三首合計近四十分鐘，收尾那首就佔十七分四十八秒。",
+    "src": "https://musicbrainz.org/ws/2/release/963c2f62-c470-46c1-8a81-de8538f4186b?fmt=json&inc=recordings+artist-rels"
+   },
+   {
+    "f": "店面的官方數位條目掛名印作「峰 厚介」（姓名間有半形空格）、盤名《アウト・オブ・ケイオス》，日期 1974-11-05、℗ 1974 Universal Classics & Jazz，三軌題作 リコレクション(回帰)／リトル・アビ／クロス・ウィンド。",
+    "src": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A6%E3%83%88-%E3%82%AA%E3%83%96-%E3%82%B1%E3%82%A4%E3%82%AA%E3%82%B9/1467950125"
+   },
+   {
+    "f": "峰厚介 1944 年 2 月 6 日生於東京文京區湯島，1963 年起以中音薩克斯風手身分職業活動，1969 年參加 菊地雅章 的樂團，**1971 年起改吹次中音薩克斯風**，1978 年與 本田竹広 共同組成 ネイティブ・サン。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%8E%9A%E4%BB%8B"
+   }
+  ],
+  "hookCandidates": [
+   "三首、四十分鐘，收尾的〈Cross Wind〉一首就十七分四十八秒",
+   "鋼琴是 菊地雅章，中間那首〈Little Abi〉也是他寫的——五年前他自己的第一張唱片上就有這首"
+  ],
+  "sound": "三軌、全長約四十分鐘的四重奏——次中音薩克斯風、鋼琴、貝斯、鼓。〈Recollection〉12:05 開場、〈Cross Wind〉17:48 收尾，中間夾 9:34 的〈Little Abi〉。三首都長到讓四個人輪流走完整段獨奏；他 1971 年才從中音改吹次中音，這張是改吹之後的聲音。",
+  "keyTracks": [
+   "Cross Wind",
+   "Recollection",
+   "Little Abi"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974（首發年）。MB release-group first-release-date 1974、唯一那筆 JP EAST WIND EW-7003 記 1974；Apple jp／us 1467950125 記 1974-11-05、℗ 1974 Universal Classics & Jazz、3 軌＝MB 3 軌。兩邊一致（店面精確日比 MB 的年份更細，符合 c-134 第 422 條）。",
+  "notes": "**覆核策展層：MB 實查相符，無擋下。** catno EW-7003 出自 release 端點（第 259 條）；**這是 East Wind 開廠那一年的第三號盤**——⚠ **「第三號」只是品番序數，不要寫成「第三張作品」**（沒有來源說目錄是按發行順序編號的）。｜**串流採信 1467950125**（第 254 條第三種查法：策展層與回撈報告都記「目錄裡找不到」，本層改用 `lookup?id=96563256&country=jp&entity=album` 拉 Kosuke Mine 全量目錄撈到——**店面盤名是片假名《アウト・オブ・ケイオス》，英文盤名字串比對必然落空**，第 260 條的形狀）：3 軌曲序與 1974 原盤完全相同、長度差 +1～5 秒，全軌有 preview。**有固定試聽來源。**｜**⚠ 掛名在店面的寫法**：Apple jp 把他印成「**峰 厚介**」（姓名間有半形空格），策展層第 378 條記過，**下游比對要摺空白**。｜**人名邊界**：菊地雅章、岡田勉、日野元彦 出自 Discogs 一處，⚠ 單一來源；**菊地雅章 是本組的掛名**（本組四張）、**日野元彦 是 c-134 b 組的掛名**，點名不展開。｜**跨卡曲目線索**：〈Little Abi〉與本組 菊地雅章セクステット《Matrix》（1969）的〈Little Aby〉是同一首曲子（拼法差一個字母），**兩張卡可以互指、切入面向要分開**；本卡的角度是「作曲者本人坐在鋼琴前重錄一次」。｜**反同構（同批峰 3 張）**：本張切入「改吹次中音之後的四重奏＋〈Little Abi〉」，《Sunshower》走電氣化的放克盤、《Bamboo Grove》走 2019 年復出。"
+ },
+ {
+  "key": "desc4:峰厚介|Sunshower",
+  "artist": "峰厚介",
+  "album": "Sunshower",
+  "facts": [
+   {
+    "f": "release-group 49501583 的欄位：title「Sunshower」、artist-credit「峰厚介」（個人實體 e15df4d0）、first-release-date 1976、primary-type Album、secondary-types 空。轄下 2 筆 release 全數 Official：JP 1976 EAST WIND EW-8038 12 吋黑膠 4 軌、JP 2002-10-23 EAST WIND UCCJ-9027 CD 4 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=49501583-e2c1-489b-b92a-04ec46a330ec&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "Universal 的官方商品頁記錄音是 1976 年 2 月 9 日與 10 日、地點東京，編制六人：峰厚介（次中音／高音薩克斯風）、益田幹夫（鍵盤）、安川ひろし（吉他）、望月英明（貝斯）、倉田在秀（鼓）、宮田英夫（打擊）；解說把這張寫成前作《ソリッド》的延續，強調峰的薩克斯風掛上 wah-wah 效果器與 益田幹夫 的迷幻鍵盤的組合。",
+    "src": "https://www.universal-music.co.jp/p/uccj-9168/"
+   },
+   {
+    "f": "1976 原盤 4 軌逐軌：We Got Our Dance 10:15／I Know Where You Come From 10:11／Sunshower 10:06／Expectation 10:07——**四首長度幾乎完全相同，每首都在十分零幾秒**，全長約四十分半。",
+    "src": "https://musicbrainz.org/ws/2/release/a8491159-8b70-4410-b93b-694cfe72cd33?fmt=json&inc=recordings+artist-rels"
+   },
+   {
+    "f": "店面的官方數位條目掛名印作「峰 厚介」、盤名《サンシャワー》，℗ 1976 Universal Classics & Jazz，四軌題作 ウィー・ガット・アワー・ダンス／アイ・ノウ・ウェア・ユー・カム・フロム／サンシャワー／エクスペクテーション。",
+    "src": "https://music.apple.com/jp/album/%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AF%E3%83%BC/1467957054"
+   },
+   {
+    "f": "峰厚介 1944 年生於東京文京區湯島，1963 年起職業活動、1971 年改吹次中音薩克斯風，1976 年與 Gil Evans 同台，1978 年與 本田竹広 共組 ネイティブ・サン。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%8E%9A%E4%BB%8B"
+   }
+  ],
+  "hookCandidates": [
+   "四首、每首都剛好十分鐘出頭，長度整齊得像量過",
+   "薩克斯風接上 wah-wah 效果器——1976 年的他離硬式咆勃已經很遠了"
+  ],
+  "sound": "四軌、每首都在十分零幾秒，全長約四十分半。編制六人：次中音與高音薩克斯風、鍵盤、電吉他、電貝斯、鼓、打擊——沒有原聲鋼琴。薩克斯風掛 wah-wah、鍵盤走迷幻音色，節奏是 rock 與 funk 的打法，與他兩年前那張四重奏是兩種東西。",
+  "keyTracks": [
+   "Sunshower",
+   "We Got Our Dance",
+   "Expectation"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976（首發年）。MB release-group first-release-date 1976、JP EAST WIND EW-8038 那筆 release 記 1976；Universal 官方商品頁記錄音 1976-02-09／10；Apple jp／us 1467957054 記 1976-01-01、℗ 1976 Universal Classics & Jazz、4 軌＝MB 4 軌。三邊一致（店面的 01-01 是年份級佔位日，不當精確發行日用）。",
+  "notes": "**覆核策展層：MB 實查相符，無擋下。**｜**串流採信 1467957054**（第 254 條第三種查法：策展層與回撈報告都記「目錄裡找不到」，本層拉 `lookup?id=96563256&country=jp&entity=album` 全量目錄撈到——**店面盤名是片假名《サンシャワー》**，同第 260 條）：4 軌曲序與 1976 原盤完全相同、長度差 ±5 秒，全軌有 preview。**有固定試聽來源。**｜**人名邊界**：五位樂手出自 **Universal 官方商品頁**，可寫；⚠ **宮田英夫 在本組 日野皓正《Journey Into My Mind》《Into Eternity》也在場**（那兩張吹薩克斯風、這張打打擊）。｜**前作《ソリッド》**：官方頁說本作延續前作的 rock／funk 路線——⚠ **《Solid》那張本批沒收**（策展層第 376 條 B 類，MB 記 2015 年的 EAST WIND UCCJ-9161、原盤年待核），正文可以提「前一張」但**不得寫它的年份**。**⚠ 補一條給本機**：店面 `1467961723`《ソリッド》記 1976-01-01、℗ 1976、**3 軌**，與本張的 1976 同年——策展層第 372 條懸著的「峰厚介《Solid》原盤年待核」，**店面這條指向 1976**，但 MB 那筆 2015 release 的軌數未取來比對，仍未定。｜**掛名在店面**：印作「峰 厚介」（半形空格），下游比對要摺空白。｜**反同構**：本張切入「四首等長＋wah-wah 與迷幻鍵盤」。"
+ },
+ {
+  "key": "desc4:峰厚介|Bamboo Grove",
+  "artist": "峰厚介",
+  "album": "Bamboo Grove",
+  "facts": [
+   {
+    "f": "release-group 4882a997 的欄位：title「Bamboo Grove」、artist-credit「Kosuke Mine」（個人實體 e15df4d0，主名 峰厚介）、first-release-date 2019-01-23、primary-type Album、secondary-types 空。**轄下只有 1 筆 release**：XW 2019-01-23 Days of Delight 數位 7 軌、status Official（該筆未登記 catalog-number）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4882a997-97de-45c5-bd88-0a32aec5501e&fmt=json&inc=media+labels+artist-credits"
+   },
+   {
+    "f": "Days of Delight 是以「追求 1970 年代初期日本爵士的聲音」為宗旨的廠牌，由 Tower Records 發起、岡本太郎記念館館長 平野暁臣 擔任製作人；本作是該廠牌的第二號作品（DOD-002），2019 年 1 月 23 日發行，也是 峰厚介 相隔約八年的新作。錄音在 2018 年 8 月 20、21 日的 Studio Greenbird，編制是 峰厚介（次中音／高音薩克斯風）、清水絵理子（鋼琴）、須川崇志（貝斯）、竹村一哲（鼓）。",
+    "src": "https://tower.jp/item/4841076/Bamboo-Grove"
+   },
+   {
+    "f": "7 軌逐軌：Bamboo Grove 10:01／凍星 (Iteboshi) 8:28／Rias Coast 8:32／21 6:27／Late Late Show 10:13／水蒸気 (Suijouki)〜Short Fuse 7:49／Head Water 8:18——七首全長約一小時，每首六到十分鐘。〈凍星〉〈水蒸気〉兩首是日文曲名、店面條目省掉了羅馬字括號。",
+    "src": "https://musicbrainz.org/ws/2/release/d1f850c1-d2d6-45cc-bf7a-9e3917776919?fmt=json&inc=recordings+artist-rels"
+   },
+   {
+    "f": "峰厚介 1944 年 2 月 6 日生於東京文京區湯島，壽司店老闆的兒子；1962 年加入 加藤喰進クインテット，1963 年起職業活動、1971 年改吹次中音薩克斯風，1978 年與 本田竹広 共組 ネイティブ・サン，1988 年與 George Russell 錄音。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%8E%9A%E4%BB%8B"
+   },
+   {
+    "f": "店面的官方數位條目掛名印作「峰 厚介」、盤名《Bamboo Grove》，日期 2019-01-23、℗ 2019 Days of Delight，七軌與資料庫端同序、曲題的羅馬字括號被省略。",
+    "src": "https://music.apple.com/jp/album/bamboo-grove/1578429139"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌叫 Days of Delight，宗旨是重做 1970 年代初期日本爵士的聲音——而他本人就是那個年代的人",
+   "七十四歲、隔了八年的新作，班底換成了三個比他小兩輪的樂手"
+  ],
+  "sound": "七軌、全長約一小時的鋼琴四重奏——次中音與高音薩克斯風、鋼琴、貝斯、鼓，回到原聲編制。每首六到十分鐘、長度平均，開場與〈Late Late Show〉各十分鐘出頭。兩首日文曲名（〈凍星〉〈水蒸気〉）夾在英文曲名之間；錄音是 2018 年夏天兩天錄完的。",
+  "keyTracks": [
+   "Bamboo Grove",
+   "凍星",
+   "Late Late Show"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2019（首發年）。MB release-group first-release-date 2019-01-23、唯一那筆 XW Days of Delight 數位 release 記 2019-01-23；Apple jp／us 1578429139 記 2019-01-23、℗ 2019 Days of Delight、7 軌＝MB 7 軌。三邊同日。",
+  "notes": "**覆核策展層：MB 實查相符，並補回一格。** 卡單 `label` 欄寫「Days of Delight（MB 的 release 未登記 catalog-number）」——**已核到 catno 是 DOD-002**（Tower Records 的商品頁），建議主線把 `label` 欄補成「Days of Delight DOD-002」。⚠ 這個 catno 出自商品頁、不是出自任何一筆 release，**正文要寫 catno 須講明出處**（第 262 條）。｜**⚠ 「第二號作品」有來源、可寫；不得寫成「第一張」。** 商品頁明寫本作是該廠牌的第二彈。｜**串流採信 1578429139**（策展層已列，本層 `lookup?id=1578429139&country=jp&entity=song` 直查複驗）：7 軌曲序與 MB 一致、長度一秒不差，全軌有 preview。**有固定試聽來源。**｜**人名邊界**：清水絵理子、須川崇志、竹村一哲、製作人 平野暁臣 四位出自 Tower Records 商品頁一處，⚠ 單一來源但屬零售端的官方文案；本卡是本組唯一的 2010 年代作品，**沒有跨卡撞名的問題**。｜**⚠ 「班底比他小兩輪」是推論**（三位樂手的生年沒有查到來源），hookCandidates 第二條的後半**寫作層不得採用**（第 253／369 條）；能寫的只有「隔約八年的新作」與「七十四歲」——後者由 1944 年生推得，⚠ **年齡也是推算、建議不寫**。｜**本卡與其餘兩張峰厚介的關係**：那兩張是 1974／1976 年的 East Wind，本張是 2019 年的數位發行，**廠牌敘事完全不重疊**。｜**反同構**：本張切入「Days of Delight 的復古企劃＋回到原聲四重奏」。"
  }
 ]
