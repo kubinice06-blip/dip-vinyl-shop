@@ -30,6 +30,12 @@ for (const g of groups) {
     // 2026-09-06：原本只掃 album。c-110 的 CCCP 掛名在 MB 的 artist-credit 就是 U+2013，
     // 整組漏過去——掛名一樣是標題比對的鍵，一併掃。
     if (/[‐‑‒–—―－]/.test(x.artist)) say(`掛名含非 ASCII 連字號：${x.artist} — ${x.album}`);
+    // 2026-09-15（c-133 a 組抓到）：**片假名長音記號 U+30FC 也會被拿來當破折號用**
+    // （MB 原題 `Rock Joint Cither ー Silk Road`）。但 `ー` 在 `シャープス`／`ニューハード`
+    // 裡是合法的長音，不能整個字元一律擋。**只擋兩側都是空白或 ASCII 英數的那種**——
+    // 長音記號前面一定是假名，所以這個條件不會誤傷。
+    if (/[ A-Za-z0-9]ー[ A-Za-z0-9]/.test(x.album) || /[ A-Za-z0-9]ー[ A-Za-z0-9]/.test(x.artist))
+      say(`U+30FC 當破折號用（長音記號誤用）：${x.artist} — ${x.album}`);
     if (x.releaseType === 'Compilation') {
       // §5.6 精選制門檻：合輯要收，就得自己交代歷史重要性與可追溯的證據
       if (!x.exceptionReason || Array.from(String(x.exceptionReason)).length < 12)
