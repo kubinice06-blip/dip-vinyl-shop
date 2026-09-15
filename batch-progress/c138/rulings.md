@@ -120,3 +120,133 @@ MB 轄下 8 筆只有 dabd0226（1997 ES CD，CDP 7 46573 2）label 掛 Blue Not
 - CAA：21/22 有 front；**404 一張＝《Up at Minton's, Volume 2》**（MB 轄下只有 1961 原盤一筆、無圖），可走 Discogs Vol. 2 原盤條目或 2019 JP 盤的圖。5 張的圖來源是再發（Let Me Tell You 'Bout It 2005 CD、Doin' the Thing 1988 CD、Minton's Vol. 1 2011 SACD、Feelin' Good 2004 JP CD、Golden Eight 2015 MM）——研究層看版式。
 
 **中間檔**：`scratchpad/c138b/`（c138b-mbfetch.mjs／mb/*.json 22 個 RG 的兩端點＋CAA 回傳、c138b-mbsum.txt 摘要、c138b-poolscan.txt 實掃全文、c138b-apple.json 店面 search、c138b-build1/2.mjs 卡單產生）。
+
+## 第 510 條（2026-09-15，c-138 a 組）：**a 組 23 筆覆核結果——實收 23、退 0；rgMbid 全部照 enum 檔，無一釘錯；年份改判 6；CAA 22/23**
+
+`slice.json` 的 `g: "a"` 23 筆（1959–1960，BLP 4021–4088 ＋ World Pacific／United Artists／Pacific Jazz 原盤 9 張）逐筆回問 MB `release-group`（inc=artist-credits+releases）
+與 `release?release-group=…&inc=media+labels+artist-credits`，再對每張的原盤 release 打 `release/<id>?inc=recordings` 取原 LP 軌序；CAA 打 RG 端點（404 的再打 release 端點）。
+**enum 的 rgMbid 沒有一筆釘錯**（含 enum 標「原盤可能他廠」的 9 張，RG 本身都對，只是 enum 拿 Blue Note 那筆 release 的年份當 note）。
+實掃卡池：`seed_cards.json` 16,450 列 ＋ `desc-tools/batches/cards/c1*.json` ＋ `batch-progress/c1xx/prop-*.json`（合計 19,458 列），
+掛名 30 個關鍵字子字串雙向（含 Coltrane、Jim Hall／Red Mitchell／Red Kelly 這種可能以側人名字進池的）、盤名 26 個關鍵字（卷號統一、`&`→and、彎撇號摺 ASCII）——
+**23 筆撞池 0**（enum `inPool: false` 全部成立）。命中的都是不同的碟：Bix Beiderbecke《Singin' the Blues》、Eric Dolphy《At the Five Spot》、ELO《Out of the Blue》、Ahmad Jamal《Happy Moods》（c-131）、
+`Booker Little — Booker Little`（1960 Time，與本批 1959 UA 出道盤不同）、`John Coltrane` 30 張裡**沒有《Coltrane Time》**（見第 515 條）。
+a 組 23 個 rgMbid 與 c-137 slice 45 個、c-138 b 組 22 個交叉：**重疊 0**（程式比對）；盤名＋掛名鍵也零重疊。
+`node batch-progress/c138/chk-prop.mjs a`：23 張、21 位，欄位 0、線上池撞卡 0、跨組 0、跨批 0（三筆舊帳是 c49b／cseab 的）、同 rgMbid 不同掛名 0——**標記 0**。
+
+**退掉 0 張。** 沒有一筆撞池、沒有合輯、沒有原盤他廠改判到要退的（他廠原盤依簡報一.3 是改 `label`／`year`，不是退）。
+
+## 第 511 條（同批）：**年份改判 6 張——其中 2 張差兩年，列舉檔把 1962 年的碟排進了「1959–1960」這一段**
+
+| 盤 | catno | 錄音 | MB frd | enum | 改 | 依據 |
+|---|---|---|---|---|---|---|
+| Art Blakey《Mosaic》 | BLP 4090 | 1961-10-02 | **1960-12-01**（數位版占位日，比錄音日早十個月） | 1960 | **1962** | 維基引 Billboard 1962-01-20；Discogs master 62494 記 1961（錄音年形）；轄下黑膠 960b525e 記 1961-10-02＝錄音日 |
+| The Three Sounds《Here We Come》 | BLP 4088 | 1960-12-13／14 | 1960（＝錄音年） | 1960 | **1962** | 維基引 Billboard 1962-02-24；Discogs 1961；Apple 1961-12-24 |
+| Duke Jordan《Flight to Jordan》 | BLP 4046 | 1960-08-04 | 1960-08-04（數位版占位日＝錄音日） | 1960 | **1961** | MB 轄下原盤黑膠 d7f4d415 自己記 1961-05；Discogs master 320425 記 1961 |
+| The Three Sounds《Moods》 | BLP 4044 | 1960-06-28 | 1960-06-28（＝錄音日） | 1960 | **1961** | 維基 1961-02（引 RYM，弱）＋ Apple ℗ 1961 ＋ 目錄號夾在 4042（1960-09／11）與 4046（1961-05）之間；⚠ Discogs 記 1960，證據最弱的一張，研究層以 Billboard 覆核 |
+| Kenny Burrell《On View at the Five Spot Cafe》 | BLP 4021 | 1959-08-25 | 1959（＝錄音年） | 1959 | **1960** | Discogs master 331502 與原壓 1960；Apple 1960-01-05／℗ 1960；維基 1959 無來源 |
+| Dizzy Reece《Star Bright》 | BLP 4023 | 1959-11-19 | 1959（＝錄音年） | 1959 | **1960** | 維基 1960-03（正文「the following year」）、Apple 1960-03-02；⚠ Discogs 也記 1959——但錄音 11 月 19 日、同年出版不合節奏，且前一號 4021 已是 1960；研究層以 Billboard 覆核（第 431 條：維基與 Apple 的 3 月可能同源） |
+
+**判準**：第 471 條（MB＝錄音年、Discogs／Billboard 晚一年 → 取晚）＋第 364 條 placeholder 形。
+**⚠ 給主線的結構性發現**：enum 依 MB `first-release-date` 排序，而 4000 系列這一段 MB 的 frd **有四張恰等於錄音日、兩張等於錄音年**（第 518 條），
+所以 1961–62 年出版的碟會被排進 1960 段——本批 #10／#23 就是。後面 1961–62 段的 slice 也會反過來少掉這幾張（它們已經在本批收了），
+**c-139／c-140 若在 slice 看到 BLP 4090《Mosaic》或 4088《Here We Come》，那是同 RG，已收，退。**
+維持 MB 的兩說盤：《Sunset Eyes》（MB／維基 1960、Discogs 1961，第 364 條第三型照 MB）、《Singin' The Blues》（MB／Discogs 1959、維基引 Deffaa 說 World Pacific 1958 再發、Rip 1956 原發——Rip 與 1958 都沒有實體條目，照 MB）。
+其餘 15 張 MB＝Discogs（＝Billboard，有的話）。
+
+## 第 512 條（同批）：**「原盤可能他廠」9 張全部成立——World Pacific 1、United Artists 5、Pacific Jazz 3；Blue Note 的關聯分三種**
+
+| 盤 | 原廠原盤 | 年 | Blue Note 的關聯 |
+|---|---|---|---|
+| Jimmy Witherspoon《Singin' The Blues》 | World Pacific WP-1267 | 1959 | 1998 XE CD（Pacific Jazz／Blue Note）——**買下的 Pacific Jazz 系母帶** |
+| Booker Little & Max Roach《Booker Little 4 & Max Roach》 | United Artists UAL 4034／UAS 5034 | 1959 | 1991 CD ＋ 2024 Tone Poet ＋ 2024 JP HQCD——**買下的 United Artists 爵士母帶** |
+| Bob Brookmeyer & Bill Evans《The Ivory Hunters》 | United Artists UAL-3044／UAS-6044 | 1959 | 1994 CD |
+| Milt Jackson《Bags' Opus》 | United Artists UAL 4022／UAS 5022 | 1959 | 1991 CD ＋ 數位版；⚠ **MB 未建美國原盤**，只建 GB London SAH-T 6049（1959-11），`label` 的 UA 目錄號出自 Discogs master 240958 |
+| Cecil Taylor《Hard Driving Jazz》 | United Artists UAL 4014／UAS 5014《Stereo Drive》 | 1959 | 1991 CD（題《Coltrane Time》掛 John Coltrane，見第 515 條） |
+| Zoot Sims & Bob Brookmeyer《Stretching Out》 | United Artists UAL 4023／UAS 5023 | 1959 | 只有 2016-10-07 數位版——**數位目錄才算進來的** |
+| Clifford Brown《Jazz Immortal》 | Pacific Jazz PJ-3 | 1960 | 1988 IT **宣傳** CD ＋ RVG 數位版 |
+| The Modest Jazz Trio《Good Friday Blues》 | Pacific Jazz PJ 10 | 1960 | 只有 2024-09-06 Tone Poet |
+| Teddy Edwards《Sunset Eyes》 | Pacific Jazz PJ-14 | 1960 | 只有 2025-04-04 Tone Poet |
+
+全部依簡報一.3：`label` 寫原廠、`year` 取原廠年、Blue Note 版年份寫在 `risk`。**這一段的 United Artists 五張是新形狀**（c-136 第 472 條是 Pacific Jazz／Jazz:West／Transition）：
+Blue Note 1991 年前後把 United Artists 1958–60 的爵士目錄（UAL 4000／UAS 5000 系列）整批 CD 化，enum 就把它們算進來；**往後 1958–61 段每批都會有幾張，照這條。**
+United Artists 那五張的 RG 本身建得很完整（原盤 mono／stereo 都有），除《Bags' Opus》。
+
+## 第 513 條（同批）：**掛名裁定——群組實體收攏到本人 5 張、feature／with 收攏到領班 2 張、對等聯名 3 張、一次性合作團照群組名 1 張、新掛名 6 個過第 307 條**
+
+| MB artist-credit | 卡上掛名 | 依據 |
+|---|---|---|
+| `The Cecil Taylor Quintet`（群組 c718232d） | **`Cecil Taylor`** | 第 462 條；池中 9 張（全 1965 後）；c-137 a／b 的《Jazz Advance》（Cecil Taylor Quartet）《Love for Sale》（Trio and Quintet）應同收攏 |
+| `The Horace Silver Quintet`（群組 e9ac5139）《Horace-Scope》 | **`Horace Silver`** | 第 482 條；b 組第 525 條同裁定 |
+| `Freddie Redd Quartet`（群組 28f9c774） | **`Freddie Redd`**（Person f30eb5d7） | 第 462 條；b 組《Shades of Redd》同收攏（第 525 條已預告） |
+| `Zoot Sims - Bob Brookmeyer Octet`（群組 3e9368ee） | **`Zoot Sims & Bob Brookmeyer`** | 群組收攏＋第 452 條「A - B」join 改 `&`；先例 `Al Cohn & Zoot Sims`；「Octet」進 queryAlias |
+| `Booker Little 4 & Max Roach`（群組 1b9ae554 ＋ Person 0b6aea55） | **`Booker Little & Max Roach`** | 群組收攏到本人＋第 363 條第 1 型對等聯名照 MB；同形先例 c-135 b《Gigi Gryce & Clifford Brown — Gigi Gryce Clifford Brown Sextet》；盤名保留「4」 |
+| `Kenny Burrell with Art Blakey`（兩個 Person，join「with」） | **`Kenny Burrell`** | 第 462 條例外 3（Blakey 是客座 feature）；1959 原盤 release credit 只掛 Burrell；不往 `Art Blakey` 加 |
+| `Clifford Brown featuring Zoot Sims`（兩個 Person，join「featuring」） | **`Clifford Brown`** | 同上；1960 原盤 release credit 只掛 Brown |
+| `Bob Brookmeyer & Bill Evans` | **照 MB** | 第 363 條第 1 型；先例 `Bill Evans & Jim Hall`；**不塞進 `Bill Evans` 單人** |
+| `Art Blakey & The Jazz Messengers`（群組 209ddf15） | **`Art Blakey and the Jazz Messengers`** | 第 470 條；池中 6＋c-136 3 ＞ `& The` 5 |
+| `The Modest Jazz Trio`（群組 a2a4232a，US 1960） | **照群組名** | 三人（Jim Hall／Red Mitchell／Red Kelly）對等的一次性合作團，沒有領班可收攏；同形 `The Three Sounds`；三人名字全進 queryAlias |
+| `Jimmy Witherspoon`／`Dizzy Reece`／`Milt Jackson`／`Donald Byrd`／`Duke Jordan`／`Horace Parlan`／`Sonny Red`／`Duke Pearson`／`The Three Sounds`／`Jackie McLean`／`Teddy Edwards` | 照 MB＝照池中 | 同字串；`Horace Parlan` 不往 `The Horace Parlan Trio`（1）加 |
+
+**新掛名 6 個**（池中零張），第 307 條反查同字串不同人：`Dizzy Reece`（cbde4132，JM 1931；池中 Reece 只有 Alex Reece，不同字串）、`Sonny Red`（465406f7，US 1932；⚠ MB 另有法國金屬團與疑似美國 hip hop 同名實體，池中皆無，**往後那兩個進池要先處理**）、
+`Freddie Redd`（f30eb5d7）、`Teddy Edwards`（8fc3c813，US 1924；MB 另有「Big Boy Teddy Edwards」藍調人，不同字串）、`The Modest Jazz Trio`、`Bob Brookmeyer`（只在兩個聯名字串裡出現，本組沒有他單獨的卡）——全部無同字串撞擊。
+**跨批對齊**：`Dizzy Reece`（c-137 b《Blues in Trinity》）、`Duke Pearson`（c-137 b《Profile》）、`The Three Sounds`（c-137 b 兩張、c-138 b 三張）、`Cecil Taylor`（c-137 a／b）——四個字串兩批要一致。
+
+## 第 514 條（同批）：**同碟重複 RG 3 個、10 吋→12 吋同錄音 1 對、MB 未建原盤 1 張——本層只釘一邊、其餘刻意不釘並在 risk 互指**
+
+- **同碟重複 RG（第 481 條形狀，chk-prop 抓不到）**：
+  1. **10ec1745**《Moods》掛「Gene Harris & The Three Sounds」——只有兩筆東芝 EMI 日本盤，同日（1960-06-28）同 8 軌，是同一張 BLP 4044 被日本再發的掛名另建了 RG。本卡釘 5b088bf0。
+  2. **18dc45ff**《Good Friday Blues》掛「Jim Hall And His Modest Jazz Trio」（群組 727dcbf4，2011）——同一張 PJ 10 的再發另建 RG。本卡釘 52ddf695。
+  3. **582ffbe9**《Hard Driving Jazz》2005（Cecil Taylor with John Coltrane，標 Compilation）與 **c709d413**《Hard Driving Jazz》2012（The Cecil Taylor Quintet，標 Compilation）——同題擴充再發，本卡釘 1959 原盤 RG d556e4a0。
+  這三個 RG 若出現在 enum 的 2005／2011／2012／「僅 JP 盤」段，**後批應退（理由分類：同碟重複 RG）**。
+- **10 吋→12 吋同錄音兩個 RG（第 453 條形狀 b）**：Clifford Brown《Jazz Immortal》PJ-3（1960，本批釘）↔ 10 吋 PJLP-19《Clifford Brown Ensemble Featuring Zoot Sims》（1955，RG 2f434e45，掛群組實體 Clifford Brown Ensemble）——
+  10 吋不在 Blue Note enum 裡（沒有 Blue Note 版），這條線永遠排不到它；本卡 `year` 取 12 吋 1960、risk 寫明錄音 1954、正文不得寫成 1960 年錄音。
+- **MB 未建原盤**：《Bags' Opus》美國 UAL 4022／UAS 5022 沒建，RG 轄下最早是 GB London SAH-T 6049（1959-11）——第 364 條第一型變體，`label` 出自 Discogs，研究層要在 MB 補建或改指。
+- **同名不同碟（刻意不釘、queryAlias 不收）**：Witherspoon d69e3128《Singin' The Blues》2009（Jazz Beat 22 軌回顧輯）；Milt Jackson c5041a96《Bean Bags plus Bags' Opus》2011；Zoot Sims bb5de5de《Stretching Out / Kansas City Revisited》2007、bd22fa63《Four Classic Albums》2012；Blakey 2d42a629《Jazz Messengers!!!!! + Mosaic》2013；32eefcf7《Rejoice! + Good Friday Blues + Jazz Guitar》2016——全是二合一／擴充合輯。
+
+## 第 515 條（同批）：**《Hard Driving Jazz》＝《Stereo Drive》＝《Coltrane Time》——一張碟三個題名兩個掛名，本卡照原盤掛 Cecil Taylor，Coltrane 線要知道**
+
+RG d556e4a0 轄下 10 筆 release：1959 United Artists 原盤 mono 題《Hard Driving Jazz》／stereo 題《Stereo Drive》掛「The Cecil Taylor Quintet」；1963 UAJ 14001 起（含 Blue Note 1991 CD、四張日本 CD、Solid State 1968）**全部改題《Coltrane Time》掛「John Coltrane」**；
+2017／2023 公共領域數位版又回到原題原掛名。MB RG title／credit 取原盤。
+裁定：**掛 `Cecil Taylor`、盤名《Hard Driving Jazz》**——理由：(1) RG 與原盤如此；(2) 這是 Taylor 領銜的錄音（1958-10-13，Taylor／Coltrane／Kenny Dorham／Chuck Israels／Louis Hayes），Coltrane 掛名是 1963 年 United Artists 的行銷改題；
+(3) 池中 `Cecil Taylor` 1950 年代零張，掛到 Coltrane 名下會讓這條線的目標（補 Taylor 早期）落空。《Stereo Drive》《Coltrane Time》《John Coltrane》全進 queryAlias。
+**⚠ 第 45 條「現行流通名」在這張上站在另一邊**：Apple／Blue Note 現行只有《Coltrane Time》（724624098，掛 John Coltrane，4 軌軌序與原 LP 不同），本層明知如此仍取原題，主線要改只改卡單值（判準 2 可逆）。
+**⚠ 給往後 Coltrane 深掘線的警告**：池中 `John Coltrane` 30 張沒有《Coltrane Time》，任何《Coltrane Time》候選都是這張碟（同 RG），chk-prop 的掛名＋盤名鍵擋不住——上架前先查 rgMbid d556e4a0。
+
+## 第 516 條（同批）：**盤名——印刷體撇號換 ASCII 2 張、RG title 與原盤 release title 不同的 1 張照 RG、引號題名照 MB 無引號、Booker Little 那張盤名幾乎等於掛名**
+
+| MB RG title | 卡上盤名 | 說明 |
+|---|---|---|
+| `Tender Feelin’s`（U+2019） | **Tender Feelin's** | 第 473 條；JP CD 與數位版 release title 本來就是 ASCII |
+| `Bags' Opus`（RG 是 ASCII，London 與數位 release 是 U+2019） | **Bags' Opus** | 照 RG |
+| `On View at the Five Spot Cafe` | 照 RG | 1959 原盤 release title 是「At The Five Spot Cafe」（JP 2015 同）；Discogs／Apple／2025 Tone Poet 用 On View——短名進 queryAlias |
+| `The Music From The Connection` | 照 RG | Discogs／維基寫 The Music from "The Connection"、Apple 用短名 Music from the Connection、2019 再發題《The Connection》——第 483 條，變體全進 queryAlias；⚠ Howard McGhee 在 Felsted 有同劇配樂《Music from the Connection》（MB 搜尋沒回，未建或另題），上架用盤名搜要連掛名 |
+| `Booker Little 4 & Max Roach` | 照 RG | 盤名＝盤面掛名，卡上掛名收攏成 `Booker Little & Max Roach` 後兩者差一個「4」；selfTitled 記 false（字串不等），上架比對要連掛名看；再發名《The Defiant Ones》進 queryAlias |
+| `Horace-Scope` | 照 RG | ASCII 連字號，chk-prop 不擋 |
+| `Hard Driving Jazz` | 照 RG | 見第 515 條 |
+其餘 16 張照 MB RG title 逐字。
+
+## 第 517 條（同批）：**Live 只有一張（Five Spot Café，真演出場地）；《The Music From The Connection》是舞台劇配樂不是電影原聲帶，照一般 Album 收**
+
+- **《On View at the Five Spot Cafe》**：MB secondary-types [Live]、enum `live: true`，1959-08-25 紐約 Five Spot Café——是真正的俱樂部（第 485 條「錄音場地不是演出場所」的疑慮不適用），mbNote 寫明現場與演出日。本批唯一的現場盤；Burrell 池中 3＋c-136 2＋c-137 a 2 張全是錄音室，這張補的是他 Blue Note 期唯一的 live。
+- **《The Music From The Connection》**：維基 infobox 標 soundtrack／studio album——那是 Jack Gelber 舞台劇《The Connection》的配樂，四重奏在 Living Theatre 台上演奏、1960-02-15 進 Van Gelder Studio 整場錄；MB secondary-types 空、primary Album。
+  共通五條「電影／遊戲原聲帶不收」指的是電影原聲帶，這張是爵士四重奏的錄音室專輯，**收**；1961 年 Shirley Clarke 電影版的配樂是另一回事，正文不得混寫。
+- 其餘 21 張 secondary-types 空、盤面無現場跡象。
+
+## 第 518 條（同批）：**MB 資料層面的坑 6 個（本層不改 MB）——4000 系列前段的 `first-release-date` 有一半是錄音日**
+
+1. **frd 恰等於錄音日（數位版占位或原盤 release 自己填錄音日）**：《Mosaic》1960-12-01（⚠ 比錄音日 1961-10-02 還早十個月——連錄音日都不是，純占位）、《Flight to Jordan》1960-08-04、《Moods》1960-06-28、《Soundin' Off》1960-05-12；**frd＝錄音年**：《Here We Come》1960、《Five Spot》1959、《Star Bright》1959。
+   23 張裡 7 張——**看到 MB 年份帶月日又恰是 Van Gelder 錄音日，先當占位**（第 478 條第 2 點的延伸）。
+2. **《Tender Feelin's》原盤 release 98c596bd 的 media.format 登錄成「Vinyl」**（不是 12" Vinyl），enum 的 `format: Vinyl` 照抄；實際是 12 吋 LP（Discogs 全部 LP）。同第 456 條形狀。
+3. **《Soundin' Off》MB 轄下唯一原盤 release 掛 stereo 號 ST-84033**，Discogs 主版本是 mono BLP 4033；且 MB 只建 2 筆 release（Discogs 有 10 筆）——這張 MB 建檔最薄、CAA 也是零圖。
+4. **《Bags' Opus》美國原盤未建**（第 514 條）。
+5. **曲名錯字**：《Tender Feelin's》第 4 軌 MB 打成「When Sonny Gets Blue」（正確是 Sunny）；《Jazz Immortal》第 8 軌「Dahoud」（通行拼法 Daahoud，Apple 用後者）——寫作層引曲名時照通行拼法。
+6. **原盤 release 的軌長多數是 0**（Witherspoon、Five Spot、Ivory Hunters、Bags' Opus、Byrd in Flight、Flight to Jordan、Tender Feelin's 七張）——MB 沒填，**軌長只能從 Apple 取、且已知《Good Friday Blues》第 4 軌 Apple 與 MB 差 61 秒、《Movin' & Groovin'》第 3 軌 Apple 標 Edit**，寫作層不得引軌長。
+
+## 第 519 條（同批）：**店面觀察（第 254 條，只寫觀察）——Apple us `search` 一種查法 19/23 命中、加藝人名再命中 4；CAA 22/23，但 6 張的圖來源是再發不是原盤**
+
+- **search（盤名＋掛名）直接命中且 collection lookup 與原 LP 逐軌同序**（含 bonus 在後）：Singin' The Blues（前 11／12）、Star Bright、Booker Little（掛 Booker Little 單人）、Five Spot（掛 Kenny Burrell & Art Blakey，5 軌）、Ivory Hunters（掛 Brookmeyer 單人）、Bags' Opus、Byrd in Flight、Mosaic、Flight to Jordan（前 6／8）、Movin' & Groovin'、Out of the Blue（前 8／13）、Tender Feelin's、Moods、Connection、Capuchin Swing、Good Friday Blues（掛 Modest Jazz Trio 無 The）、Sunset Eyes（前 7／10）、Soundin' Off、Here We Come——19 張。
+- **search 零命中、改「藝人名＋盤名」才命中**：Horace-Scope（723366394／RVG 724703792，7 軌同序）、Stretching Out（1494035662，掛 Zoot Sims & Bob Brookmeyer，6 軌同序）、Jazz Immortal（724184986，RVG 9 軌，**軌序與原 LP 不同**）、Hard Driving Jazz（只有《Coltrane Time》724624098 掛 John Coltrane，4 軌**軌序不同**）——後兩張寫作層按曲名配，不得寫「前 N 軌」。
+- **Apple 的 releaseDate 在這批幾乎全是錄音日或 01-01 占位**（Booker Little 1958-11-04、Horace-Scope 1960-07-09、Jazz Immortal 1954-08-13、Byrd in Flight 1996-01-01＝CD 年）——第 484 條同樣的結論，不能當年份來源；℗ 年也不可靠（Booker Little ℗ 1958 是錄音年）。
+- **CAA：22/23 有 front**；**《Soundin' Off》RG 與 release 端點都 404**（Discogs master 259242 有原盤圖）。
+  ⚠ 有圖但**來源不是原盤**的 6 張：Stretching Out（2016 數位版）、Mosaic（數位 RVG 版）、Flight to Jordan（數位版）、Jazz Immortal（1988 IT 宣傳 CD）、Connection（1994 黑膠再發）、Bags' Opus（GB London 版）——研究層看版式，Discogs master 各有原盤圖。
+- 同一位在店面的掛名不一（第 434 條）：Five Spot 掛「Kenny Burrell & Art Blakey」、Booker Little 只掛 Booker Little、Ivory Hunters 只掛 Bob Brookmeyer——店面掛名不影響本卡掛名。

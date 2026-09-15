@@ -73,7 +73,7 @@
   "year": 1960,
   "label": "Blue Note BLP 4021（US 12\" Vinyl 5 軌；MB 記 1959、Discogs master 331502 與 Apple 記 1960；錄音 1959-08-25）；CD CDP 7 46538 2（1987，8 軌）；Analogue Productions SACD CBNJ 84021 SA（2011，8 軌）；JP CD UCCQ-9103（2015）；Blue Note Tone Poet《The Complete Masters》602475022817（2025-04-25，3LP 14 軌）",
   "why": "1959 年 8 月 25 日紐約 Five Spot Café 的現場——Kenny Burrell 帶 Tina Brooks、Bobby Timmons／Roland Hanna、Ben Tucker，加上 Art Blakey 客座坐鼓，是 Blue Note 4000 系列開頭少數的俱樂部現場盤之一，也是 Burrell 1950 年代唯一以自己名字發的現場專輯，〈Lover Man〉那段獨奏後來被 Andy Summers 點名為最好的爵士吉他獨奏之一（維基條目引 jazzdisco 4000 系列目錄；Discogs master 331502）。實掃池中 `Kenny Burrell` 3 張（The Cats 1959、Midnight Blue 1963、Guitar Forms 1965）＋ `Kenny Burrell & John Coltrane` 1 ＋ c-136 a 組 2 張（Introducing 1956、Kenny Burrell 1957）＋ c-137 a 組 slice 的 Blue Lights Vol. 1／2（1958）——**沒有現場盤**，這張補的是他 Blue Note 時期的唯一一張 live。簡報第二節第 2 點：現場盤是這條線的精華。",
-  "risk": "⚠ `live: true`——MB secondary-types [Live]，Five Spot Café 是真正的演出場地（第 485 條那種「錄音場地不是演出場所」的疑慮不適用），正文可寫現場。⚠ 掛名：MB artist-credit 是「Kenny Burrell with Art Blakey」（兩個 Person，join phrase「with」），1959 原盤 release c0d3a651 的 credit 只掛「Kenny Burrell」；依第 462 條例外 3（Blakey 是客座 feature，不是對等聯名——同形先例 c-135 b《Horace Silver Trio And Art Blakey》掛 `Horace Silver`）取池中 `Kenny Burrell`（3＋2），「with Art Blakey」與 Apple 的「Kenny Burrell & Art Blakey」進 queryAlias，**不往 `Art Blakey` 那一側加卡**。⚠ 年份改判：MB first-release-date 1959 與錄音年同；Discogs master 331502 主版本與 BLP 4021 原壓記 1960、Apple 1960-01-05／℗ 1960，本卡取 **1960**（第 471 條形狀），留研究層以 Billboard 覆核。⚠ 盤名：MB RG title「On View at the Five Spot Cafe」，1959 原盤 release title「At The Five Spot Cafe」、JP 2015 同；Discogs／Apple／2025 Tone Poet 都用 On View——照 RG title，短名進 queryAlias；2025《The Complete Masters》（14 軌，含全部未發行 take）是擴充版，行文引軌數以原 LP 5 軌為準（1987 CD 起的 8 軌版已多 3 軌）。Apple us：search 命中 1806529271（掛 Kenny Burrell & Art Blakey，5 軌，1960-01-05，℗ 1960 Capitol）與 1795844961（Complete Masters 14 軌），collection lookup 5 軌與原 LP 逐軌同序、曲名帶「(Live At Five Spot Café, 1959)」後綴——只是觀察。CAA 有 front（來源 1959 原盤 c0d3a651，4 張圖）。",
+  "risk": "⚠ 現場盤（列舉檔 live: true，MB secondary-types [Live]），Five Spot Café 是真正的演出場地（第 485 條那種「錄音場地不是演出場所」的疑慮不適用），正文可寫現場。⚠ 掛名：MB artist-credit 是「Kenny Burrell with Art Blakey」（兩個 Person，join phrase「with」），1959 原盤 release c0d3a651 的 credit 只掛「Kenny Burrell」；依第 462 條例外 3（Blakey 是客座 feature，不是對等聯名——同形先例 c-135 b《Horace Silver Trio And Art Blakey》掛 `Horace Silver`）取池中 `Kenny Burrell`（3＋2），「with Art Blakey」與 Apple 的「Kenny Burrell & Art Blakey」進 queryAlias，**不往 `Art Blakey` 那一側加卡**。⚠ 年份改判：MB first-release-date 1959 與錄音年同；Discogs master 331502 主版本與 BLP 4021 原壓記 1960、Apple 1960-01-05／℗ 1960，本卡取 **1960**（第 471 條形狀），留研究層以 Billboard 覆核。⚠ 盤名：MB RG title「On View at the Five Spot Cafe」，1959 原盤 release title「At The Five Spot Cafe」、JP 2015 同；Discogs／Apple／2025 Tone Poet 都用 On View——照 RG title，短名進 queryAlias；2025《The Complete Masters》（14 軌，含全部未發行 take）是擴充版，行文引軌數以原 LP 5 軌為準（1987 CD 起的 8 軌版已多 3 軌）。Apple us：search 命中 1806529271（掛 Kenny Burrell & Art Blakey，5 軌，1960-01-05，℗ 1960 Capitol）與 1795844961（Complete Masters 14 軌），collection lookup 5 軌與原 LP 逐軌同序、曲名帶「(Live At Five Spot Café, 1959)」後綴——只是觀察。CAA 有 front（來源 1959 原盤 c0d3a651，4 張圖）。",
   "mbNote": "釘 release-group 4421b83f-472f-3417-bcab-263ed31100b6。回問 release-group 端點：title「On View at the Five Spot Cafe」、artist-credit「Kenny Burrell with Art Blakey」（artist a85b66d2-34df-4d5a-8c0d-d585b8a14ce1 Kenny Burrell, Person ＋ 601e7466-eaf5-4a91-9909-ffd770b7e04a Art Blakey, Person）、first-release-date 1959、primary-type Album、secondary-types [Live]、轄下 10 個 release。release 端點：c0d3a651（1959 US Official 12\" Vinyl 5 軌，Blue Note BLP 4021，credit 只掛 Kenny Burrell，title「At The Five Spot Cafe」）、3d437162（1987 US CD 8 軌，CDP 7 46538 2）、036b864c（2010 US 2×12\" 45 轉 Analogue Productions AP-84021）、7d9932f5（2011 US Hybrid SACD 8 軌，CBNJ 84021 SA／BST-84021）、76ca9cfc（2015-06-03 JP CD UCCQ-9103，題「At the Five Spot Cafe」）、1e6d4f7f（2021 XW Digital 5 軌 HDTT）、90f5f1b7（2025-04-25 XW 3×12\" 14 軌 Tone Poet 602475022817，題《…The Complete Masters》）、111f5f2f／6a2dfa70（2025 2CD 14 軌 602475958116）、b53d58b3（2025-04-25 XW Digital 14 軌）。原 LP 軌序：Birks' Works／Hallelujah／Lady Be Good／Lover Man／36-23-36（1959-08-25 Five Spot Café 現場）。刻意不釘：無同名 RG。"
  },
  {
@@ -284,5 +284,159 @@
   "why": "Duke Pearson 的第二張專輯（1959 年 12 月 16、19 日 Van Gelder Studio），三重奏是 Gene Taylor 與 Lex Humphries——1959 年 10 月《Profile》（BLP 4022，c-137 b 組 slice）之後兩個月就錄，兩張三重奏盤定下他 1960 年代作為 Blue Note 御用編曲／製作人之前的鋼琴手身分，同一節奏組也出現在本批 Donald Byrd《Byrd in Flight》裡（維基條目引 jazzdisco Duke Pearson 目錄；Discogs master 526080）。實掃池中 `Duke Pearson` 1 張：The Right Touch（1967）——**1959–60 的兩張三重奏出道盤都缺**，這張與 c-137 b 的 Profile 是同一組補件。",
   "risk": "⚠ 盤名：MB RG title「Tender Feelin’s」用 U+2019 彎撇號，2003／2007 JP CD 與 2018 數位版 release title 都是 ASCII「Tender Feelin's」——卡上用 ASCII（第 473 條印刷體引號一律換 ASCII），彎撇號寫法進 queryAlias。⚠ 列舉檔 format 欄「Vinyl」（不是 12\" Vinyl）照抄 MB 原盤 release 98c596bd 的 media.format——載體實際是 12 吋 LP（Discogs 全部條目 LP），第 456 條那種 MB 載體欄不精確的形狀，本層不改 MB。年份：MB 1960、Discogs 1960、維基 1960，一致。MB 轄下 4 筆 release 全 7 軌原配置。⚠ c-137 b 組《Profile》用同一字串 `Duke Pearson`，上架要對齊。Apple us：search 命中 1371803184（7 軌，1960-09-17，℗ 1960 Capitol），collection lookup 7 軌與原 LP 逐軌同序、第 4 軌 Apple 題 When Sunny Gets Blue（MB 原盤打成 When Sonny Gets Blue，正確曲名是 Sunny）——只是觀察。CAA 有 front（來源 1960 原盤 98c596bd，4 張圖）。",
   "mbNote": "釘 release-group aa50c7b6-eade-4627-9721-fae69954590d。回問 release-group 端點：title「Tender Feelin’s」、artist-credit「Duke Pearson」（artist ea39ae7d-5498-4f26-992b-7cf3390253ed，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點：98c596bd（1960 US Official Vinyl 7 軌，Blue Note BLP 4035）、ecabddd2（2003-11-04 JP CD 7 軌，TOCJ-9037，title「Tender Feelin's」）、8cc2d06f（2007-08-22 JP CD TOCJ-7027）、dacca310（2018-04-27 XW Digital 7 軌，barcode 602567554080）。原 LP 軌序：Bluebird of Happiness／I'm a Fool to Want You／I Love You／When Sunny Gets Blue（MB 打成 Sonny）／The Golden Striker／On Green Dolphin Street／3 A.M.（1959-12-16／19 Van Gelder Studio）。刻意不釘：無同名 RG。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The 3 Sounds；Gene Harris & The Three Sounds；Three Sounds Moods BLP 4044",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "artist": "The Three Sounds",
+  "album": "Moods",
+  "year": 1961,
+  "label": "Blue Note BLP 4044（mono）／BST 84044（stereo，US 12\" Vinyl 8 軌；MB RG 記 1960-06-28＝錄音日、Discogs master 300532 記 1960、維基記 1961-02、Apple ℗ 1961）；JP CD TOCJ-6482（2005）",
+  "why": "1960 年 6 月 28 日 Van Gelder Studio 一場錄完的三重奏——Gene Harris、Andy Simpkins、Bill Dowdy，曲目是〈Love for Sale〉〈Things Ain't What They Used to Be〉〈Li'l Darlin'〉〈Sandu〉那種俱樂部曲單，是 The Three Sounds 1958 年簽進 Blue Note 之後第五張錄音室盤，也是他們把「鋼琴三重奏當 soul-jazz 賣」的路數定型的那段時期（維基條目引 jazzdisco 4000 系列；Discogs master 300532）。實掃池中 `The Three Sounds` 1 張：Introducing the Three Sounds（1958）；c-137 b 組 slice 另列 Introducing Vol. 2（1958）與 Bottoms Up!（1959）——1960 年的 Moods 與本批 #23《Here We Come》接在後面，補的是他們 Blue Note 前期的連續段。",
+  "risk": "⚠ 年份改判 1960→1961：MB first-release-date 1960-06-28 恰等於錄音日（轄下原盤 release 0df88847 也記同日，占位形）；Discogs master 300532 主版本記 1960（錄音年形，三筆 1960、多筆 1962 再壓）；維基 infobox 記 1961-02（引 rateyourmusic，弱）、正文寫「released in 1961」；Apple ℗ 1961；目錄號 4044 落在 BLP 4042（1960-09／11 出版）與 4046（1961-05）之間。本卡取 **1961**，留研究層以 Billboard 覆核——這一張的證據比 #10／#23 弱，是第 471 條「出版順序旁證」那一型。⚠ **同碟兩個 RG**（第 481 條形狀）：MB 另有 10ec1745《Moods》掛「Gene Harris & The Three Sounds」（同日 1960-06-28、8 軌、只有兩筆東芝 EMI 日本盤）——同一張碟被日本再發的掛名另建了 RG，本卡釘原盤 RG，10ec1745 刻意不釘；chk-prop 的 rgMbid 掃描抓不到（UUID 不同）。⚠ 掛名照池中 `The Three Sounds`（1，MB 實體主名同）；Discogs 寫「The 3 Sounds」、日本盤掛 Gene Harris & The Three Sounds，都進 queryAlias。⚠ 曲風照池中先例 jazz＋soul（Introducing 那張）。⚠ 同題撞卡：池中 Marvin Gaye《Moods of Marvin Gaye》、Ahmad Jamal《Happy Moods》（c-131）、Blue Mitchell《Blue's Moods》盤名含 Moods，都不同碟。Apple us：search 命中 1362388518（8 軌，1960-01-01 placeholder，℗ 1961 Capitol），collection lookup 8 軌與原 LP 逐軌同序——只是觀察。CAA 有 front（來源 1960 原盤 0df88847，1 張圖）。",
+  "mbNote": "釘 release-group 5b088bf0-a505-47c6-8a23-7e81c84dd82f。回問 release-group 端點：title「Moods」、artist-credit「The Three Sounds」（artist cf2115e9-fa60-4561-8b6e-f72d34ad800e，Group）、first-release-date 1960-06-28（⚠ ＝錄音日）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：0df88847（記 1960-06-28，US Official 12\" Vinyl 8 軌，Blue Note BLP 4044）、135df6b4（2005-02-23 JP CD 8 軌，TOCJ-6482）。原 LP 軌序：Love for Sale／Things Ain't What They Used to Be／On Green Dolphin Street／Loose Walk／Li'l Darlin'／I'm Beginning to See the Light／Tammy's Breeze／Sandu（1960-06-28 Van Gelder Studio）。刻意不釘：10ec1745-e4b8-30b8-a825-72e50f875b45《Moods》（Gene Harris & The Three Sounds，同碟日本再發另建的 RG）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Clifford Brown featuring Zoot Sims；Clifford Brown Ensemble Featuring Zoot Sims；Jazz Immortal (The Rudy Van Gelder Edition)；Clifford Brown Ensemble",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "artist": "Clifford Brown",
+  "album": "Jazz Immortal",
+  "year": 1960,
+  "label": "Pacific Jazz PJ-3（US 1960 12\" Vinyl 8 軌，原廠；Discogs master 284711；10 吋原盤是 Pacific Jazz PJLP-19《Clifford Brown Ensemble Featuring Zoot Sims》1955，MB 另建 RG）；JP JR-8057（1967）／K23P-6708（1979）；Pacific Jazz RVG CD 7243 5 32142 2 7（2001，9 軌）；Blue Note 名下只有 IT 1988 宣傳 CD 7243 4 95249 2 7 與 RVG 數位版（barcode 724353214258）",
+  "why": "Clifford Brown 1954 年夏天隨 Max Roach 到洛杉磯、由 Jack Montrose 為 Pacific Jazz 編的七人西岸編制（Zoot Sims、Stu Williamson、Bob Gordon、Russ Freeman、Joe Mondragon、Shelly Manne），是他生前唯一一次西岸錄音，〈Joy Spring〉〈Daahoud〉的最早版本在這裡；Pacific Jazz 1955 年先出 10 吋 PJLP-19，1956 年他車禍身故後 1960 年重編成 12 吋、加〈Tiny Capers〉等軌、改題《Jazz Immortal》（維基 Clifford Brown 條目引 Jazz Journal 2019 評論；Discogs master 284711）。實掃池中 `Clifford Brown` 2 張（with Strings 1955、Memorial Album 1956）＋ `Clifford Brown & Max Roach` 3 張（1954–56）＋ c-135 b 兩張 1954 巴黎盤——**西岸這一場零張**。列舉檔靠 1988 IT 宣傳 CD 與數位版把它算進 Blue Note 目錄（note「BN 首發 1988」），依簡報第一節第 3 條原盤他廠。",
+  "risk": "⚠ 原盤不是 Blue Note：Pacific Jazz PJ-3（1960），Blue Note 只有 1988 義大利宣傳 CD（MB status Promotion）與掛 Blue Note 的 RVG 數位版。⚠ **10 吋→12 吋兩個 RG**（第 453 條形狀 b）：同一批錄音的 10 吋 PJLP-19（1955）是獨立 RG 2f434e45《Clifford Brown Ensemble Featuring Zoot Sims》（掛群組實體 Clifford Brown Ensemble，7 軌）；本卡釘 12 吋 RG、`year` 取 12 吋首發 1960，10 吋刻意不釘、在此互指——**正文不得寫成 1960 年的錄音**（錄音 1954-07／08），也不得寫成兩張不同的錄音。⚠ 掛名：MB artist-credit「Clifford Brown featuring Zoot Sims」（兩個 Person，join「featuring」），1960 原盤 release 0f3c5863 credit 只掛「Clifford Brown」；featuring 不是對等聯名，取池中 `Clifford Brown`（第 462 條例外 3 同理），Zoot Sims 進 queryAlias，不往 `Zoot Sims` 加卡。⚠ 2001 RVG 版 9 軌（多 2 軌 alternate）**且軌序重排**（Daahoud 開頭、Tiny Capers 第 7 軌），行文引軌數以 1960 LP 8 軌為準、寫作層按曲名配。年份：MB 1960、Discogs 三筆 1960，一致。Apple us：search（Jazz Immortal 單詞）零命中，加藝人名命中 724184986（RVG 版 9 軌，1954-08-13＝錄音期，℗ 2001），collection lookup 軌序與原 LP 不同——只是觀察。CAA 有 front（**來源是 1988 IT CD d4724771**，不是原盤圖；Discogs master 284711 有 PJ-3 原盤圖）。",
+  "mbNote": "釘 release-group 817dcd91-4f7e-3f21-bddd-ebc6fbcb2aa7。回問 release-group 端點：title「Jazz Immortal」、artist-credit「Clifford Brown featuring Zoot Sims」（artist 2a291f34-73cb-40c5-b721-eab1269c7ba8 Clifford Brown, Person ＋ d17b505f-a6e3-44e7-afcc-415d407c414f Zoot Sims, Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 7 個 release。release 端點：0f3c5863（1960 US Official 12\" Vinyl 8 軌，Pacific Jazz PJ-3，credit 只掛 Clifford Brown）、d4724771（1988 IT Promotion CD 8 軌，Blue Note 7243 4 95249 2 7／Pacific Jazz）、1d2fb836（2001 US CD 9 軌，Pacific Jazz 7243 5 32142 2 7B）、6d956acd（2001 XE CD 9 軌）、b87e1fc8（2019-05-19 XW 12\" 10 軌 MatchBall 29016，公共領域盤）、35bc847e（Bootleg Digital 7 軌）、f43d7619（XW Digital 9 軌，Blue Note，題《Jazz Immortal (Remastered / Rudy Van Gelder Edition)》）。原 LP 軌序：Tiny Capers／Gone With the Wind／Finders Keepers／Blueberry Hill／Joy Spring／Bones for Jones／Bones for Zoot／Dahoud（1954-07／08 洛杉磯）。刻意不釘：2f434e45-a0c4-4fc3-ae3e-0e3116319a3b《Clifford Brown Ensemble Featuring Zoot Sims》1955（10 吋 PJLP 19，同錄音的 10 吋原盤 RG，本卡 risk 互指）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Freddie Redd Quartet；Freddie Redd Quartet With Jackie McLean；The Music from \"The Connection\"；Music from the Connection；The Connection；Jackie McLean & Freddie Redd",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "artist": "Freddie Redd",
+  "album": "The Music From The Connection",
+  "year": 1960,
+  "label": "Blue Note BLP 4027（mono）／BST 84027（stereo，US 1960 12\" Vinyl 7 軌；Billboard 1960-04-18；MB 原盤 release 記 1960-05；錄音 1960-02-15）；CD CDP 0777 7 89392 2 1（1994）／B1-89392 Vinyl（1994）；JP TOCJ-9075（1999）；RVG CD 7243 5 63836 2 3（2005-07-19）",
+  "why": "Jack Gelber 1959 年在 Living Theatre 上演的《The Connection》，劇中那支坐在台上、一邊等毒販一邊演奏的四重奏就是 Freddie Redd（鋼琴、全部作曲）、Jackie McLean、Michael Mattos、Larry Ritchie——1960 年 2 月 15 日 Blue Note 把舞台上的曲目整場錄成專輯，是 Redd 三張 Blue Note 領銜盤的第一張、也是 McLean 1960 年除自己領銜盤外最重要的側人錄音（維基條目引 Billboard 1960-04-18；Discogs master 221986）。實掃池中 `Freddie Redd` **零張**；`Jackie McLean` 9 張＋c-131 2 張，1960 年只有 Swing, Swang, Swingin'。這張是 Blue Note 4000 系列前段少數有舞台脈絡的錄音室盤。",
+  "risk": "⚠ 掛名：MB artist-credit「Freddie Redd Quartet」（群組實體 28f9c774），依第 462 條收攏到本人 `Freddie Redd`（MB Person f30eb5d7，US 1928-05-29；池中零張、第 307 條反查同字串——無，MB 另有 Freddie “Redd” Nicholson 不同人不同字串）；Discogs 寫「Freddie Redd Quartet With Jackie McLean」、2019 Jazz Images 再發掛「Jackie McLean & Freddie Redd」——都進 queryAlias，**不掛 McLean**。⚠ 這是舞台劇的配樂（維基 infobox 標 soundtrack／studio album），不是電影原聲帶：MB secondary-types 空、內容是四重奏錄音室整場演奏，共通五條「電影／遊戲原聲帶不收」不適用，照一般 Album 收；1961 年 Shirley Clarke 電影版另有 Redd 的配樂，與本張不同。⚠ 盤名：MB RG title「The Music From The Connection」（無引號），Discogs／維基寫 The Music from \"The Connection\"、Apple 用短名 Music from the Connection、2019 再發題《The Connection》——照 MB，其餘進 queryAlias（第 483 條）；另 MB 沒有 Howard McGhee 在 Felsted 錄的同劇配樂《Music from the Connection》撞題（RG 搜尋只回本 RG），但上架用盤名搜要注意。年份：MB 1960-05、Discogs 1960、Billboard 1960-04-18，一致取 1960。MB 轄下 6 筆 release 全 7 軌（2019 Jazz Images 8 軌）。Apple us：search 命中 715680164（RVG 版，掛 Freddie Redd，7 軌，1960-04-01，℗ 2005），collection lookup 7 軌與原 LP 逐軌同序（曲名 Who Killed C**k Robin 被店面遮字、O.D. 加註 Overdose）——只是觀察。CAA 有 front（**來源是 1994 黑膠再發 072ce1eb**，研究層看版式）。",
+  "mbNote": "釘 release-group fb26da0f-86c8-3ecd-85c5-1a07114c800b。回問 release-group 端點：title「The Music From The Connection」、artist-credit「Freddie Redd Quartet」（artist 28f9c774-f492-4fce-8a0c-92358f6c5173，Group）、first-release-date 1960-05、primary-type Album、secondary-types 空、轄下 6 個 release。release 端點：85f45e8c（1960-05 US Official 12\" Vinyl 7 軌，Blue Note BST 84027）、072ce1eb（1994 US 12\" Vinyl 7 軌，B1-89392）、5ba348f5（1994 US CD 7 軌，CDP 0777 7 89392 2 1）、6dc2844d（1999-01-27 JP CD TOCJ-9075）、e94e2474（2005-07-19 US CD 7243 5 63836 2 3）、3ddc4b4c（2019 XE 12\" 8 軌 Jazz Images 37119，credit「Jackie McLean & Freddie Redd」，題《The Connection》）。原 LP 軌序：Who Killed Cock Robin／Wigglin'／Music Forever／Time to Smile／Theme for Sister Salvation／Jim Dunn's Dilemma／O.D.（1960-02-15 Van Gelder Studio）。刻意不釘：無同名 RG。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jackie McLean Capuchin Swing BLP 4038",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "artist": "Jackie McLean",
+  "album": "Capuchin Swing",
+  "year": 1960,
+  "label": "Blue Note BLP 4038（mono）／BST 84038（stereo，US 1960 12\" Vinyl 6 軌；Billboard 1960-12-19；錄音 1960-04-17）；JP K18P-9241（1983）；CD 7243 5 40033 2 5（2002-08-27）；Analogue Productions Hybrid SACD CBNJ 84038 SA（2008）",
+  "why": "1960 年 4 月 17 日錄音、年底發行——Jackie McLean 與 Blue Mitchell 的雙管，節奏組 Walter Bishop Jr.、Paul Chambers、Art Taylor，是他 1959《New Soil》、1959 年底錄的《Swing, Swang, Swingin'》之後、1960 年秋《Jackie's Bag》第二場之前的一張，也是他 Blue Note 早期最直接的硬咆勃盤（〈Francisco〉〈Condition Blue〉都是自己的曲子）（維基條目引 Billboard 1960-12-19；Discogs master 204675）。實掃池中 `Jackie McLean` 9 張＋c-131 b 2 張：New Soil（1959）、Swing, Swang, Swingin'（1960）、Jackie's Bag（1961）、Bluesnik（1962）、A Fickle Sonance（1961）、Let Freedom Ring（1963）…——**Capuchin Swing 是 Swing, Swang, Swingin' 與 Jackie's Bag 之間唯一的缺口**。c-131 第 360 條把 McLean 列為目錄比例最低的前十位。",
+  "risk": "⚠ 年份：MB 1960、Discogs 1960、Billboard 1960-12-19（12 月才出，年份仍 1960）——一致；Apple 1960-01-01 placeholder。⚠ 池中 Jackie's Bag（c-131）年份記 1961，與這張的先後順序（錄音 1960-04 vs Jackie's Bag 第二場 1960-09）正文要寫對。MB 轄下 4 筆 release 全 6 軌原配置，沒有 bonus 版。Apple us：search 命中 1443801894（6 軌，1960-01-01，℗ 2015），collection lookup 6 軌與原 LP 逐軌同序、軌長差 ≤5 秒——只是觀察。CAA 有 front（來源 1960 原盤 77522ae6，1 張圖）。",
+  "mbNote": "釘 release-group b0053a56-1819-3408-999a-37810078ed1b。回問 release-group 端點：title「Capuchin Swing」、artist-credit「Jackie McLean」（artist 5b6993ef-14af-4374-aa91-d42622b133d1，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點：77522ae6（1960 US Official 12\" Vinyl 6 軌，Blue Note BLP 4038）、b3be6ea1（2002-08-27 US CD 6 軌，7243 5 40033 2 5）、301643ae（2002 XE CD 同號）、98b492f0（2008 US Hybrid SACD 6 軌，Analogue Productions CBNJ 84038 SA／Blue Note 84038／ST-84038）。原 LP 軌序：Francisco／Just for Now／Don't Blame Me／Condition Blue／Capuchin Swing／On the Lion（1960-04-17 Van Gelder Studio）。刻意不釘：無同名 RG。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Modest Jazz Trio；Jim Hall and His Modest Jazz Trio；Jim Hall；Red Mitchell；Red Kelly；Good Friday Blues: The Modest Jazz Trio",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "artist": "The Modest Jazz Trio",
+  "album": "Good Friday Blues",
+  "year": 1960,
+  "label": "Pacific Jazz PJ 10（US 1960 12\" Vinyl 6 軌，原廠；Discogs master 302686）；JP Pacific Jazz CD TOCJ-50139（2011）；Blue Note／Pacific Jazz Tone Poet 602448650498（2024-09-06；MB 另記 ST-10 A3085 / 83085 矩陣號）",
+  "why": "Jim Hall（吉他）、Red Mitchell（鋼琴，不是他慣常的貝斯）、Red Kelly（貝斯）三人 1960 年為 Pacific Jazz 錄的無鼓三重奏，取名「Modest Jazz Trio」只用了這一次——是 Hall 離開 Chico Hamilton／Jimmy Giuffre 之後、1962 年與 Bill Evans 錄《Undercurrent》之前少數以自己為主體的錄音，Mitchell 彈鋼琴也是他目錄裡的孤例（Discogs master 302686 列 Jim Hall／Red Mitchell／Red Kelly 三人；Apple 條目 ℗ 1960）。實掃池中 `Jim Hall` 2 張（Where Would I Be? 1971、Concierto 1975）＋ `Bill Evans & Jim Hall`《Undercurrent》＋ `Jim Hall & Ron Carter`——1960 年以前零張；`Red Mitchell` 只有與 Konitz 的聯名 1 張。列舉檔靠 2024 Tone Poet 算進 Blue Note 目錄（note「BN 首發 2024」），依簡報第一節第 3 條原盤他廠。",
+  "risk": "⚠ 原盤不是 Blue Note：Pacific Jazz PJ 10（1960），Blue Note 只是 2024-09-06 Tone Poet 的再發方（MB 那筆 release 掛 Pacific Jazz 602448650498 ＋ Blue Note ST-10 A3085 / 83085，後者疑為矩陣號，列舉檔 catno 欄照抄）。⚠ 掛名：`The Modest Jazz Trio` 是 MB 群組實體（a2a4232a，US，1960）、三人對等的一次性合作團——沒有領班可收攏，照群組名（同形先例池中 `The Three Sounds`）；第 307 條反查同字串不同人——無。Apple 寫「Modest Jazz Trio」（無 The）、2011 再發 RG 掛「Jim Hall And His Modest Jazz Trio」——都進 queryAlias，三人名字也進 queryAlias 讓店面搜得到。⚠ **同碟兩個 RG**（第 481 條形狀）：MB 另有 18dc45ff《Good Friday Blues》2011 掛「Jim Hall And His Modest Jazz Trio」（群組實體 727dcbf4）——同一張碟的再發被另建 RG，刻意不釘；另 32eefcf7《Rejoice! + Good Friday Blues + Jazz Guitar》2016 三合一合輯，刻意不釘。⚠ 維基沒有這張的條目，Discogs API 以 vinyl 搜只回 2024 Tone Poet、master 302686 記 1960——年份 MB 1960＝Discogs master 1960＝Apple ℗ 1960，但實體 PJ 10 原盤在 MB 只有一筆 release（ac3b2e96）、Discogs 主版本 3524945 本層未逐筆看，研究層補。Apple us：search 命中 1398487718（掛 Modest Jazz Trio，6 軌，1960-01-01，℗ 1960 Capitol；copyright 欄打成「Blue Notes Records」），collection lookup 6 軌與原 LP 逐軌同序、第 4 軌軌長 433s vs MB 372s（**差 61 秒，可能是不同 take 或 MB 軌長錯，寫作層不得引軌長**）——只是觀察。CAA 有 front（來源 1960 原盤 ac3b2e96，1 張圖）。",
+  "mbNote": "釘 release-group 52ddf695-8624-45ee-9bc8-a73343551401。回問 release-group 端點：title「Good Friday Blues」、artist-credit「The Modest Jazz Trio」（artist a2a4232a-f50e-48bb-aad9-1a142826287f，Group，US，1960）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：ac3b2e96（1960 US Official 12\" Vinyl 6 軌，Pacific Jazz PJ 10）、91513fce（2011-04-20 JP CD 6 軌，Pacific Jazz TOCJ-50139）、2eeb04ad（2024-09-06 XW 12\" Vinyl 6 軌，Pacific Jazz 602448650498／Blue Note ST-10 A3085 / 83085）。原 LP 軌序：Good Friday Blues／Willow Weep for Me／I Remember You／Bill Not Phil／When I Have You／I Was Doing All Right。刻意不釘：18dc45ff-…《Good Friday Blues》2011（Jim Hall And His Modest Jazz Trio，同碟再發另建 RG）、32eefcf7-…《Rejoice! + Good Friday Blues + Jazz Guitar》2016（Red Mitchell & Jim Hall，三合一合輯）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Teddy Edwards Sunset Eyes PJ-14；Sunset Eyes Pacific Jazz",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "artist": "Teddy Edwards",
+  "album": "Sunset Eyes",
+  "year": 1960,
+  "label": "Pacific Jazz PJ-14（US 12\" Vinyl 7 軌，原廠；MB 與維基記 1960、Discogs master 733944 記 1961；錄音 1960-03-21／23 與 08-16）；Pacific Jazz CD CDP 7243 4 94848 2 5（1998，10 軌）；ES Jazz Workshop JW-056（2015）；Blue Note／Pacific Jazz Tone Poet 602455600684（2025-04-04）",
+  "why": "洛杉磯中央大道那一代次中音手 Teddy Edwards 的第一張 Pacific Jazz 領銜盤（1960 年 3 月與 8 月兩場），主體是 Joe Castro／Amos Trice 鋼琴、Leroy Vinnegar、Billy Higgins 的四重奏，標題曲〈Sunset Eyes〉是他 1940 年代末就寫下、後來成為西岸標準曲的自作曲，這張是它以他自己名義的首次 LP 錄音；隔年 Contemporary 的《Teddy's Ready!》《Together Again!》才讓他被東岸聽見（維基條目引 jazzdisco Pacific Jazz 目錄；Discogs master 733944）。實掃池中 `Teddy Edwards` **零張**（他還是本批 #1 Witherspoon 那張的側人）。列舉檔靠 2025 Tone Poet 算進 Blue Note 目錄（note「BN 首發 2025」），依簡報第一節第 3 條原盤他廠。",
+  "risk": "⚠ 原盤不是 Blue Note：Pacific Jazz PJ-14（1960），Blue Note 只是 2025-04-04 Tone Poet 的再發方。⚠ 年份兩說：MB 原盤 release bee4a376 記 1960、維基 infobox 1960（引 jazzdisco）；Discogs master 733944 與唯一的 PJ-14 條目記 **1961**。依第 364 條第三型（相差一年）照 MB 取 1960，1961 說記在此，留研究層以 Pacific Jazz 目錄或同期紙本覆核——最後一場錄音是 1960-08-16、PJ 系列 1960 年才從 PJ-1 重編號，年底出版與隔年初都有可能。⚠ 新掛名 `Teddy Edwards`（MB Person 8fc3c813，US 1924-04-26，disambiguation「jazz saxophonist」）：第 307 條反查——MB 另有「Big Boy Teddy Edwards」（1930s blues musician，不同字串）與 Teddy Edwards Quartet／Quintet／Sextet／Septet 群組實體，池中都沒有，本 RG 掛本人。⚠ 1998 CD 10 軌多 3 軌（The New Symphony Sid／My Kinda Blues／Takin' Off first version），行文引軌數以原 LP 7 軌為準；第 1 軌〈Tempo de Blues〉是另一組人（Ronnie Ball／Ben Tucker／Al Levitt），正文寫陣容要分開。Apple us：search 命中 716739958（10 軌＝1998 CD 配置，1960-01-01，℗ 1998），collection lookup 前 7 軌與原 LP 逐軌同序、第 8–10 軌 bonus——只是觀察。CAA 有 front（來源 1960 原盤 bee4a376，1 張圖）。",
+  "mbNote": "釘 release-group 181e1f64-02e4-4b0d-aea2-cce5900c094f。回問 release-group 端點：title「Sunset Eyes」、artist-credit「Teddy Edwards」（artist 8fc3c813-c71e-4e33-9ce8-4e07c7cfe099，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：bee4a376（1960 US Official 12\" Vinyl 7 軌，Pacific Jazz PJ-14）、dff8664a（1998 US CD 10 軌，Pacific Jazz CDP 7243 4 94848 2 5）、33e19f72（2025-04-04 US 12\" Vinyl 7 軌，Blue Note 602455600684／Pacific Jazz PJ-14）。原 LP 軌序：Tempo de Blues／Vintage '57／I Hear a Rhapsody／Up in Teddy's New Flat／Sunset Eyes／Teddy's Tune／Takin' Off（1960-03-21／23、08-16 洛杉磯）。刻意不釘：c36d5fb4-…《Sunset Eyes 2000》1999（Saskia Laroo meets Teddy Edwards，不同碟）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Soundin Off；Dizzy Reece Soundin' Off BLP 4033",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "artist": "Dizzy Reece",
+  "album": "Soundin' Off",
+  "year": 1960,
+  "label": "Blue Note BLP 4033（mono）／ST-84033（stereo，US 1960 12\" Vinyl 6 軌；Billboard 1960-10-10；MB RG 記 1960-05-12＝錄音日；Discogs master 259242）；JP BNJ 71032（1984）／BST 84033（1992）；Classic Records BN 4033-MONO-200G（2008）；Analogue Productions Hybrid SACD CBNJ 84033 SA（2011-07-12）",
+  "why": "Dizzy Reece 第三張、也是最後一張 Blue Note 領銜盤（1960-05-12 Van Gelder Studio），只帶 Walter Bishop Jr.、Doug Watkins、Art Taylor 三重奏伴奏，一支小號吹六首（四首標準曲加自己的〈Eb Pob〉〈Blue Streak〉）——是他紐約時期最裸露的一張，之後 Blue Note 再錄的《Comin' On!》到 1999 年才出（維基條目引 Billboard 1960-10-10；Discogs master 259242）。實掃池中 `Dizzy Reece` **零張**；與本批 #2《Star Bright》、c-137 b 組《Blues in Trinity》合起來就是他 1958–60 三張 Blue Note 正式發行盤。",
+  "risk": "⚠ 年份：MB RG first-release-date 1960-05-12 恰等於錄音日（轄下原盤 release ba154e72 也記同日，占位形）；Discogs 1960、Billboard 1960-10-10 硬證據——年份仍是 1960，不改，但正文不得寫 5 月發行。⚠ MB 轄下只有 2 筆 release，原盤那筆掛 stereo 號 ST-84033（Discogs 主版本是 mono BLP 4033）——`label` 兩號並列。⚠ **CAA 零圖**：RG 端點 404、release ba154e72 端點也 404（本批唯一一張），封面要走 Discogs master 259242（有原盤圖）或 Apple 條目——研究層補。⚠ 掛名同 #2 `Dizzy Reece`，c-137 b 對齊。Apple us：search 命中 1356726197（6 軌，1960-08-26，℗ 1960 Capitol），collection lookup 6 軌與原 LP 逐軌同序、軌長差 ≤4 秒——只是觀察；Apple 的 08-26 與 Billboard 的 10 月相差一個多月，都不寫進正文。",
+  "mbNote": "釘 release-group 64c82df7-e50a-4d51-b52e-b0622e06de18。回問 release-group 端點：title「Soundin' Off」、artist-credit「Dizzy Reece」（artist cbde4132-ce04-4368-b859-22c440f23961，Person）、first-release-date 1960-05-12（⚠ ＝錄音日）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：ba154e72（記 1960-05-12，US Official 12\" Vinyl 6 軌，Blue Note ST-84033）、7ad8f2a8（2011-07-12 US Hybrid SACD 6 軌，Analogue Productions CBNJ 84033 SA）。原 LP 軌序：A Ghost of a Chance／Once in a While／Eb Pob／Yesterdays／Our Love Is Here to Stay／Blue Streak（1960-05-12 Van Gelder Studio）。CAA：release-group 與 release 端點都 404。刻意不釘：無同名 RG。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The 3 Sounds；Three Sounds Here We Come BLP 4088；Here We Come (Remastered)",
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "artist": "The Three Sounds",
+  "album": "Here We Come",
+  "year": 1962,
+  "label": "Blue Note BLP 4088（mono）／BST 84088（stereo，US 12\" Vinyl 8 軌；Billboard 1962-02-24；MB RG 記 1960＝錄音年、Discogs master 383486 記 1961；錄音 1960-12-13／14）；JP CD UCCQ-5091（2015，10 軌）",
+  "why": "1960 年 12 月 13–14 日兩天錄音、擱了一年多到 1962 年 2 月才發行的 The Three Sounds 三重奏（Gene Harris、Andy Simpkins、Bill Dowdy），曲目是〈Now's the Time〉〈Summertime〉〈Poinciana〉〈Sonnymoon for Two〉那種咆勃與標準曲混排，標題曲是 Harris 自己的——目錄號 4088 已排到 Mosaic（4090）旁邊，是他們 Blue Note 前期（1958–62）最後幾張之一（維基條目引 Billboard 1962-02-24；Discogs master 383486）。實掃池中 `The Three Sounds` 1 張（Introducing 1958）＋c-137 b 兩張＋本批 #16《Moods》——這張補的是 1962 年那一頭。",
+  "risk": "⚠ **年份改判 1960→1962（差兩年）**：列舉檔的 1960 來自 MB RG first-release-date 1960（轄下原盤 release 7809c288 記 1960，是錄音年）；Discogs master 383486 與 BLP 4088 原壓記 1961；維基引 Billboard 1962-02-24 為硬證據（第 471 條），Apple 1961-12-24 亦不在 1960。本卡取 **1962**——這張與 #10《Mosaic》一樣不屬於「1959–1960」這一段，列舉檔排序被 MB 的錄音年拉前了兩年。⚠ 同批 #16《Moods》（1960 錄、1961 出）與這張是不同錄音、相隔半年，正文不得寫成同場。⚠ 2015 JP CD 10 軌多 2 軌，行文引軌數以原 LP 8 軌為準。掛名與曲風同 #16（`The Three Sounds`，jazz＋soul）。Apple us：search 命中 1380369583（《Here We Come (Remastered)》8 軌，1961-12-24，℗ 1993），collection lookup 8 軌與原 LP 逐軌同序、曲名帶 (Remastered) 後綴、第 4／7 軌加了副題——只是觀察。CAA 有 front（來源原盤 7809c288，1 張圖）。",
+  "mbNote": "釘 release-group 336ce7ef-127a-475e-b45f-862c94143889。回問 release-group 端點：title「Here We Come」、artist-credit「The Three Sounds」（artist cf2115e9-fa60-4561-8b6e-f72d34ad800e，Group）、first-release-date 1960（⚠ ＝錄音年）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：7809c288（記 1960，US Official 12\" Vinyl 8 軌，Blue Note BST 84088）、e98b4458（2015-03-25 JP CD 10 軌，BST-84088／UCCQ-5091）。原 LP 軌序：Now's the Time／Summertime／Here We Come／Just Squeeze Me (But Don't Tease Me)／Broadway／Our Love Is Here to Stay／Poinciana／Sonnymoon for Two（1960-12-13／14 Van Gelder Studio）。刻意不釘：無同名 RG。"
  }
 ]
