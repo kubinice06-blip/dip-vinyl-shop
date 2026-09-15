@@ -6111,3 +6111,12 @@ regex 放寬之後同一批會**兩側各算一次**，於是整批自己跟自�
 另記研究層兩處覆核：SBB《Welcome》是波德合製，西德 Spiegelei-Intercord INT 145.600 先發（1978）、
 Wifon LP 004 是 1979 波蘭版，**Wifon 是國營企業不得寫成私營**；
 Demarczyk《Live》錄音 1979-12 華沙 Teatr Żydowski、1982 發行，mbNote「1982 年前後巡演」不成立。
+
+## 第 312 條（主線 2026-09-15，Blue Note 線開跑後）：**MB 標 Compilation 的 Blue Note 經典（10 吋重組成 12 吋的「Volume 1／2」）被列舉檔濾掉——另開 §5.6 子批撈回**
+
+c-135 第 453 條：Miles Davis《Volume 1》BLP 1501、Fats Navarro《The Fabulous Fats Navarro Vol. 2》BLP 1532
+在 MB 標 `Compilation`，`blue-note.json` 依固定規格濾掉了 636 張合輯，**這條線永遠排不到它們**。
+但這類「10 吋盤重組成 12 吋 1500 系列」的碟在 Blue Note 目錄裡是正典（Monk、Powell、Miles、Navarro、Silver 的 Volume 系列都是）。
+**裁定**：Blue Note 1939–66 六批跑完後，**另開一個 §5.6 子批**，從那 636 張裡撈「1500／4000 系列目錄號、同一位藝人、
+MB 標 Compilation」的，逐張走 §5.6（兩個本盤層級的 HTTPS 舉證）。**主線這輪先記著，不插隊。**
+另 c-135 第 450 條抓到 MB 把 BLP 5021 與 5030 折成同一 RG（5021 記 §1 候選）、第 451 條《New Sounds》BLP 5010 是 split 合輯（§5.6 候補）。
