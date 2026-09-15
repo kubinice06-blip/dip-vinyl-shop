@@ -399,3 +399,246 @@ Apple us `1712606396` 9 軌、掛「宮沢昭カルテット」）、
 佐藤允彦／佐藤允彦トリオ），**a 組沒有收《Four Units》，也沒有任何一張與本組同碟**。
 第 386 條的提醒對 **c-133 b 組（ジョージ大塚）與 c-134 b 組（菅野邦彦）** 仍然有效——
 《Four Wings》1994（`d19cb142`）本組已用 `松本英彦` 收走，那兩批挑碟時要先看這裡。
+---
+
+## 370（本批立，a 組）**掛名三決：日野皓正クインテット 沿用 MB 主名、菊地雅章セクステット 與 佐藤允彦トリオ 依第 354 條新立，池中的英文字串一律不動**
+
+本組 23 張裡有 5 張掛在 MB 的**群組實體**底下，三種處置各有依據：
+
+| MB 群組實體 | 卡片掛名 | 依據 |
+|---|---|---|
+| `日野皓正クインテット` `65c54d15-1514-4459-81dc-a7ff3e217a92` | **日野皓正クインテット**（照抄） | **MB 主名本來就是漢字＋片假名**，而且**池中已有同字串一張**（《Live!》）——不必轉寫、不必新立 |
+| `Masabumi Kikuchi Sextet` `3936dadc-696a-4aac-a9cf-1a2c70701202` | **菊地雅章セクステット** | 第 354 條：MB 實體是英文的，卡片照池中先例寫「漢字＋片假名編制」（先例 峰厚介クインテット、日野皓正クインテット、秋吉敏子トリオ） |
+| `Masahiko Sato Trio` `2d492012-408a-4a85-8894-4faa43613bc5` | **佐藤允彦トリオ** | 同上；**外加一條實證：Apple jp 店面對這個實體的顯示名就是「佐藤允彦トリオ」**（artistId `75534413`，《Palladium》`720359088`）——不是我推的，是日本店面自己這樣印 |
+
+**池中既有的英文字串一律不動**（簡報第三節、第 307 條）：
+`Masabumi Kikuchi Quintet《End For The Beginning》` 維持原樣，本批新卡用漢字，**不新造英文分裂、也不自行合併**。
+
+第 307 條反查（同字串不同人）逐一做過，**三個新掛名在池中都是零命中**：
+「菊地雅章セクステット」0、「佐藤允彦トリオ」0、「日野皓正クインテット」1（就是同一團的《Live!》）。
+子字串層的假陽性另記在第 373 條。
+
+依判準 1（有先例：第 354 條與 c-131 的秋吉三個編制卡）＋判準 2（可逆：改的是卡單的 artist 欄）當場定。
+
+## 371（本批立，a 組）⚠ **池中有一張碟被收了兩次——`菊地雅章《End for the Beginning》` 與 `Masabumi Kikuchi Quintet《End For The Beginning》` 是同一張 1973 Philips FX-8527**
+
+實掃卡池時撞到的，**不是本批造成的，是池中既有的**：
+
+| 池中掛名 | 池中盤名 | MB |
+|---|---|---|
+| `菊地雅章` | `End for the Beginning` | RG `041fd338-0b5f-4cf8-848f-459f44e39ed0` |
+| `Masabumi Kikuchi Quintet` | `End For The Beginning` | 同一個 RG |
+
+**`chk-prop` 抓不到**：它的折疊鍵是 `k(artist)+'|'+k(album)`，**盤名摺得起來、掛名摺不起來**，
+一個是 `菊地雅章`、一個是 `masabumikikuchiquintet`，兩個不同的鍵。
+
+**這是第 307 條的第三種形狀**：307 講的是「兩位共用一個字串」（合併，看不見），
+c-131 第 357 條講的是「同一位兩種字串」（分裂，看得見），
+**這一條是分裂 ＋ 同一張碟重複上架——分裂讓重複卡躲過了去重**。
+
+**影響**：店主看到的「菊地雅章池中 3 張」其實只有 **2 張不同的碟**。
+簡報的名額表寫「菊地雅章 池中現有 3」，實際是 2。**本批仍照原名額收 4 張**（判準 3：不決定就卡住），
+多出來的那一格等於順便把這位補到 6 張不同的碟。
+
+**⚠ 給本機**：`Masabumi Kikuchi Quintet《End For The Beginning》` 與
+`菊地雅章《End for the Beginning》` **要併成一張**，掛名統一為 `菊地雅章`（或依 MB 實體寫 `菊地雅章クインテット`）。
+**併之前不要再往 `Masabumi Kikuchi Quintet` 這個字串加卡。**
+
+**另提一條給去重工具**：`chk-prop`／`dedup-crossbatch` 目前只比「掛名＋盤名」，
+**同一個 `rgMbid` 在兩個掛名下重複的情形一個都抓不到**。
+卡單裡本來就有 `rgMbid`（`fix-rgmbid.mjs` 會寫），**加一道「同 rgMbid 出現兩次就亮燈」的檢查成本很低**。
+
+## 372（本批立，a 組）⚠ **第 352 條在本組命中四張，而且 Apple 的官方條目才是原盤年的來源——不是 Discogs**
+
+c-131 第 352 條是拿 Discogs 當原盤年來源。**本組四張的原盤年全部出自 Apple 的官方數位條目**（℗ 年＋發行日）：
+
+| 卡 | MB first-release-date | 取 | 來源 |
+|---|---|---:|---|
+| 佐藤允彦トリオ《Palladium》 | **2005-02-23**（EXPRESS／Bridge BRIDGE-043 CD，轄下唯一一筆） | **1969** | Apple jp `720359088`，1969-06-20、℗ 1969 EMI Music Japan，6 軌＝MB 6 軌 |
+| 佐藤允彦《Holography》 | **2006-01-20**（Bridge BRIDGE-42 CD） | **1970** | Apple jp `1716850549`，1970-09-25、℗ 1970 Nippon Columbia，2 軌＝MB 2 軌 |
+| 佐藤允彦トリオ《Transformation '69/'71》 | **1991-10-19**（EXPRESS／Think! DTHK-002 CD） | **1971** | Apple jp `720401905`，1971-10-05、℗ 1971 EMI Music Japan，4 軌＝MB 4 軌 |
+| （未收但同形）峰厚介《Solid》 | **2015-02-04**（EAST WIND UCCJ-9161） | — | Apple jp「ソリッド」℗ 1976 Universal——**原盤資訊未核實，本批不收** |
+
+**三張都是同一個形狀**：MB 轄下只有 2000 年代的日本 CD 復刻（Bridge／Think! 兩家專做東芝 Express 復刻的廠），
+1969–71 年的東芝 Express 黑膠原盤**沒有人建檔**。
+
+**軌數一致是本條的把關點**：三張的 Apple 軌數都與 MB 的復刻 release 軌數相同，
+所以「Apple 那筆就是同一張碟」這件事站得住，℗ 年才能拿來當原盤年。
+**軌數對不上就不能這樣用**（c-131 第 1 張《Toshiko's Piano》8 軌 vs 12 軌就是反例）。
+
+**catno 一律不寫**（第 262 條）：三張的 1969／1970／1971 原盤 catno 沒有任何一筆 release 能背書，
+`label` 欄只寫廠牌並註明「MB 未建原盤 release」。
+**⚠ 給本機**：這三張的 MB 原盤 release 值得補建，否則 `reconcile-year` 會回讀成 2005／2006／1991。
+
+⚠ **《Holography》另有廠牌兩說未決**：Bridge 這條復刻線處理的多是東芝 Express 的目錄，
+Apple 的 ℗ 卻寫 日本コロムビア／NIPPONOPHONE。**兩說沒有一筆 release 能裁**，
+`label` 欄兩說並列、正文不得斷言（第 250 條「分不出來就標為不得寫」）。
+
+## 373（本批立，a 組）**實掃卡池：五位的池中現況與假陽性明細（子字串比對在這一批特別毒）**
+
+`seed_cards.json` 全 16,450 列，逐筆核整個掛名字串。
+
+| 掛名 | 簡報寫的池中數 | 實掃 | 池中那幾張 |
+|---|---:|---:|---|
+| 渡辺貞夫 | 3 | **3** | Pamoja 1976／California Shower 1978／Orange Express 1981（**全部 1976 年後**） |
+| 日野皓正 | 4 | **4** | 日野皓正クインテット《Live!》／《Live in Concert》／《Hi-nology》／《Alone, Alone and Alone》（**兩張是現場盤**） |
+| 菊地雅章 | 3 | **2 張不同的碟**（見第 371 條） | 《Susto》1981 ＋《End For The Beginning》1973（重複兩次） |
+| 佐藤允彦 | 2 | **2** | 佐藤允彦とサウンド・ブレイカーズ《Amalgamation》1971／佐藤允彦《Trinity》1971（**同一年**） |
+| 峰厚介 | 4 | **4** | 峰厚介クインテット《Mine》《2nd Album》／峰厚介《Daguri》《First》（**全部 1970–73**） |
+
+**假陽性明細**（全部逐筆核整個掛名字串後排除）：
+
+- **`Mine` 11 張**——Eminem ×5、Mineral ×2、The Lumineers、Jazmine Sullivan ×2、The Jasmine Minks。**本組最毒的一個子字串。**
+- **`渡辺` 6 張**——渡辺香津美 ×5、渡辺岳夫《機動戦士ガンダム》×1。
+- **`Watanabe` 1 張**——`Fumio Watanabe Quintet《Groovin' High》`（鼓手 渡辺文男，**另一位**；⚠ 他是 c-134 b 組的掛名）。
+- **`佐藤` 3 張**——佐藤博、Somei Satoh 佐藤聰明、佐藤奈々子。
+- **`Hino` 4 張**——Toshinori Kondo/DJ Krush、Takkyu Ishino、Yoshinori Sunahara、Yoshino Yanagihara。
+- **`Kikuchi` 1 張**——Masaaki Kikuchi《Formula》。
+- **`Sato` 1 張**——Frankie Knuckles presents Satoshi Tomiie。
+
+**通則**：日本掛名的羅馬字很短（Mine／Sato／Hino），**子字串比對幾乎必然假陽性**，
+一律看整個掛名字串（第 254 條同族的「表面特徵不是判準」）。
+
+## 374（本批立，a 組）⚠ **第 309 條在本組換了三種形狀，每一種都是「一種查法一定漏」**
+
+| 掛名 | 失效的查法 | 有效的查法 |
+|---|---|---|
+| 渡辺貞夫 | `artist:"Sadao Watanabe"` **只回 `Sadao Watanabe Quintet` 一個群組**、回不到本人 | `artist:"渡辺貞夫"` → `378278bf`（Person／JP） |
+| 日野皓正 | `artist:"Terumasa Hino"` **只回 `Terumasa Hino Quartet`**、回不到本人 | `artist:"日野皓正"` → `60d3fa1e` |
+| 菊地雅章 | `artist:"Masabumi Kikuchi"` **只回 Trio／Sextet／Quintet 三個英文編制實體**、回不到個人 | `artist:"菊地雅章"` → `5216d6d4` |
+| 佐藤允彦 | `artist:"Masahiko Satoh"` 與 `artist:"Masahiko Sato"` **全域 0 筆** | `artist:"佐藤允彦"` → `04bbec22`；三重奏實體**反過來只能用英文查到**（`Masahiko Sato Trio` → `2d492012`） |
+| 峰厚介 | **`artist:"峰厚介"` 也回 0 筆**（加了 `artist:` 欄位前綴就失效） | **去掉前綴、直接用關鍵字查**：`query=峰厚介` → count 1098、本人 score 100 排第一 |
+
+**峰厚介 那一格是新的**：前四種是「漢字查得到、羅馬字查不到」（第 309 條原形），
+**第五種是「連漢字加了 `artist:` 前綴都查不到，要拿掉欄位限定」**——
+Lucene 的 `artist:` 欄位對這個三字漢字名做了不同的分詞。
+
+**做法（補進第 309 條）**：非拉丁文字圈的掛名，**`artist:"…"`、不加前綴的裸關鍵字、
+以及從列舉檔／既有 RG 拿 artist id 三種都要試**，任何一種回 0 都不是結論。
+
+**另外**：本組五位全部先在 `batch-progress/enum/jp-*.json` 十四份列舉檔裡撈過
+（渡辺貞夫 37 筆、日野皓正 25、佐藤允彦 15、菊地雅章 8、峰厚介 2），
+**撈到的 rgMbid 直接可用，省掉大半的 1 req/s**——簡報第一節的作法實測有效。
+⚠ 但列舉檔會**同一個 rgMbid 在兩個廠牌檔各出現一次**（《Sadao Meets Brazilian Friends》在 jp-columbia 與 jp-denon 各一筆，
+《Dedicated to Charlie Parker》同樣），**那是廠牌實體重複撈取，不是兩張碟**。
+
+## 375（本批立，a 組）**MB 的重複 RG：本組撞到六組，處置一律「釘有圖／有原盤那個，另一個寫進 mbNote」**
+
+| 碟 | 釘 | 不釘 | 差別 |
+|---|---|---|---|
+| 日野皓正クインテット《Into the Heaven》 | `7fa61991`（題全大寫 `INTO THE HEAVEN`，credit 漢字，**CAA 200**，轄下 1970 原盤＋1997 CD） | `313f4d8a`（題一般大小寫，credit `Terumasa Hino Quintet`，**CAA 404**，轄下同一張 1970 Columbia XMS-10025-CT） | 同碟同 catno，credit 一漢一英 |
+| 菊地雅章セクステット《Re-confirmation》 | `c61e49b9`（1970 Philips FX-8501 原盤，CAA 200） | `95336d82`《再確認そして発展》（2009 SHM-CD UCCJ-4068，CAA 404） | 日文題的 2009 復刻另立 RG |
+| （未收）菊地雅章《End For The Beginning》 | `041fd338`（1973 原盤） | `2a3e3fca`《エンド・フォー・ザ・ビギニング》（2009，CAA 404） | 同上 |
+| （未收）菊地雅章《POO-SUN》 | — | `8f21fbb8`（2009，CAA 404，**1970 Philips 原盤 MB 完全沒建**） | 只剩 2009 那個殼 |
+| （未收）菊地雅章《ダンシング・ミスト》 | — | `3f0c2dca`（2009，CAA 404） | 同上 |
+| （池中已有）峰厚介クインテット《Mine》 | `04dfc616`（1970 TBM-1） | `2470688c`（2013 RG） | — |
+
+**卡面盤名的取捨**：《Into the Heaven》釘的是全大寫那個 RG，**但卡面寫一般大小寫**——
+理由是 Apple 官方條目（`1894177768`）與另一個 RG 都用一般大小寫，全大寫只是 MB 的錄入習慣；
+`chk-prop` 的折疊鍵會 lowercase，**大小寫不影響去重**，MB 原文進 `queryAlias`。
+（同理 日野皓正《Feelin' Good》把 MB 的 U+2019 撇號改成 ASCII，佐藤允彦《All-in All-out》把 MB 的兩個 **U+2010** 改成 ASCII 連字號——
+**後者不改 `chk-prop` 就會亮燈**。）
+
+**⚠ 2009-05-27 那一組是同一個成因**：Universal 的 SHM-CD 復刻把 菊地雅章 Philips 時期四張各自另立 RG、
+**四個 RG 的 CAA 全部 404**，而原盤 RG 有的有圖（Re-confirmation、End For The Beginning）、有的根本不存在（POO-SUN、ダンシング・ミスト）。
+**「同一批復刻另立 RG 且全批無圖」是這條線的規律，不是個案。**
+
+## 376（本批立，a 組）**未收清單（分類，rgMbid 已備妥）**
+
+### A. CAA 404 而不收（MBID 已釘、身分已查，補到圖就能建卡）
+渡辺貞夫 `1041020f-39ab-431a-a2a4-b7a6b26cc150`《Jazz & Bossa》1967（**Takt JAZZ-1，這條爵士線的第一號盤**，Apple jp `1868591070` 11 軌 ℗ 1967 Nippon Columbia——**最值得本機手動補圖的一張**）、
+`7d1f1419-d15d-4541-b4fb-0efa7d719302`《Sadao Watanabe Plays》1966-04-05（Polydor SLJM-1262，MB 名下最早的 RG）；
+菊地雅章 `e4fbb764-3d5b-44f7-8751-fcccb28e2fc1`《But Not For Me》1978（Flying Disk VIJ-6016）、
+`8f21fbb8`《POO-SUN》、`3f0c2dca`《ダンシング・ミスト〜菊地雅章イン・コンサート》、`95336d82`《再確認そして発展》、`2a3e3fca`《エンド・フォー・ザ・ビギニング》（四張都是 2009 SHM-CD 的殼，見第 375 條）；
+佐藤允彦 `c620fa2d-f6d9-4ccb-9663-baff687aea50`《Pavane Lachrymae》1978-10（DENON YX-7536-ND）、
+`79d0b90d`《Wonderful Moog Sound》1972（JVC CD4B-5015E，且合掛）、`cc5397e0`《A Path Through Haze》1972（MPS，且合掛）、`f7fb9307`《標準伎楽》2016；
+日野皓正 `313f4d8a`《Into the Heaven》（重複 RG）；
+峰厚介 `94001ced-8228-4e48-aeb0-1346aba97360`《Plays Standard》（**無日期、無廠牌、無 CAA**）、`ac01bece-fdf4-432d-bc4d-9944dd63b354`《In a Maze》1995（Verve POCJ-1280）。
+
+### B. 額度未收、CAA 200、原盤 Official，可直接進後續批
+渡辺貞夫：`4cefbabc`《Sadao Plays Bacharach and Beatles》1969（Columbia XMS-10010-CT）／`e2c1d3f0`《Music Break》1969（XMS-10017-CT，⚠ Apple 標 Live 1967）／`df94c614`《Live at the Junk》1970（CBS/Sony SONP 50221-J，Album/Live）／`a11be8fb`《Mbali Africa》1974（SOPW 27~28）／`aebeb18b`《At Pit Inn》1975（SOPN 113，Album/Live）／`e2b8bbd6`《Around the Time》1972（**DE WAM MLP 14 454，唯一一筆是德國盤**）。
+日野皓正：`0a9b5163`《Swing Journal Jazz Workshop 1: Terumasa Hino Concert》1969（Album/Live，release 無廠牌）／`8ac416e9`《Alone Together》1970（無廠牌；⚠ 與池中《Alone, Alone and Alone》是兩張不同的碟）／`10636df5`《Peace And Love》1971-01（CANYON CAJ-1004）／`4e4bd0e9`《ラブ・ネイチャー》1971（CANYON J-1006／Love Records，轄下九筆 release）／`8d3e2fc7`《Speak to Loneliness》1975（EAST WIND EW-7008）／`b3fda7f7`《Hogiuta》1976（EAST WIND EW-8041）／`76bc1fce`《LA CHANSON D’ORPHÉE》1975（RCA RGP-1156，⚠ **1975 那筆 release 題《Mas Que Nada》、2006 CD 才題 ORPHÉE，盤名要先判**）／CBS/Sony 1979–85 五張（`3a00953a`《Horizon》、`648da3ab`《Double Rainbow》、`fbb07c85`《Pyramid》、`2d89c78e`《New York Times》、`2ccaa318`《Trans-Blue》）。
+菊地雅章：`3b19f983`《Masabumi Kikuchi in Concert》1971（Philips FX-8515，⚠ 1971 那筆 status 空、只有 2015 CD 是 Official）。
+佐藤允彦：`8e7757a5`《Deformation》2006（Bridge BRIDGE-044，三重奏實體）。
+峰厚介：`182e7c8c`《Solid》（MB 記 2015-02-04 EAST WIND UCCJ-9161／Album+Live，**Apple jp「ソリッド」℗ 1976**——第 372 條同形，原盤年待核）。
+
+### C. 合掛不收（第 258／321 條）
+渡辺貞夫：`dd031e02`《Round Trip》1970（**四人平列**：Sadao Watanabe + Chick Corea + Miroslav Vitouš + Jack DeJohnette，CBS/Sony SONP 50320-J）、`8e14690a`《Kenya Ya Africa》1973（+ Inter-African Theatre Group）、`54892085`《Iberian Waltz》1967（Takt JAZZ-7，+ Charlie〈Mariano〉）、`77dfc00c`《Let's Swing Now》1976（四人）、`e6fa4573`《I'm Old Fashioned》1976（With The Great Jazz Trio）、`af023a5b`《Bird of Paradise》1979（同上）、`1a2d07ff`《Hunt Up Wind》1978（福村博 With）、`a6fb61cb`《Live in Japan》1980（Dave Grusin &）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，**無日期**）。
+日野皓正：`78c2c5af`《Vibrations》1971（enja 2010，**四人平列**）、`6d7fc79a`《A Part》1971（+ Reggie Workman）、`6f6e0dc7`《Hartman Meets Hino》1973、`d62a9c4a`《Reminicent Suite》1973（Mal Waldron and）、`b8c042e3`《Joe Henderson and Kikuchi/Hino in Concert》1974。
+菊地雅章：`4c41c943`《Poesy: The Man Who Keeps Washing His Hands》1971（Philips FX-8518，**CAA 200**，三人平列 菊地＋富樫雅彦＋Gary Peacock）、`aedc4cef`《Hollow Out》1977（Philips FS-6508，**CAA 200**，Elvin Jones +）、`bfd82909`《Masabumi Kikuchi + Gil Evans》1972、`18a5c6c1`《コンチェルト》1991、`63bb5e83`《Collaboration》1970（與 Sadao Watanabe Quintet 共掛）。
+佐藤允彦：`d86aa6bd`《Metempsychosis》1971（ツトム・ヤマシタ &）、`ed5b55e2`《Pianology》1971（and Wolfgang Dauner）、`6e05fed3`《Bridge Over Troubled Water》1971-07-25（與 稲垣次郎）、`3914de7d`《三昧》1972（**EXPRESS ETJ-9003，CAA 200**，與 Gary Peacock）、`03ed1046`《デマ Rumour》1973、`c2ec1ec4`《ふたりのひとりごと》1973、`82fb84a8`《With Silence》1974（Karl Berger 四人）、`cae06b2f`《Astrorama》1970（與 Jean-Luc Ponty）、`69f572ef`《MSB》1980／`d4d82b7b`《MSB Two》1981（+ Medical Sugar Bank）、`b0c11ed5`《Liberissimo》1999、`1f4e6369`《Decisive Action》2004、`0651fb57`《Spontaneous》2007、`0a6e2395`《Proton Pump》2018。
+峰厚介：`27679254`《Yellow Carcass in the Blue》1971（**TBM-8**，笠井紀美子 + Kosuke Mine Quartet；⚠ **笠井紀美子 是 c-134 b 組的掛名，那批若要收應由那邊處理**）。
+
+### D. 歸別批不收
+`02fd9983`《Yamataifu》1972（EXPRESS ETJ-65019，CAA 200）與 `7668525c`《天秤座の詩》1970（Columbia NCB-7001，CAA 200）——
+**兩張的 credit 都是 `Toshiyuki Miyama and His New Herd + M. Sato`，是 宮間利之とニューハード 的碟，歸 c-133 a 組。**
+`336d6cb7`《双晶》1973（**池中已有，掛 富樫雅彦**）。
+
+### E. 原聲帶不收（固定規格）
+佐藤允彦 `a842b6d5`《Belladonna》1975、`5c1ad16b`《夜叉》1985、`4434894c`／`1efc9660`《ファイナルファンタジー》1994、`69296888`／`85fb446b`《パンダコパンダ》2008；
+菊地雅章 `f8230428`《Hairpin Circus》1972、`e41ec182`《ヘアピンサーカス》2006；
+日野皓正 `de2270ad`《オリジナル・サウンドトラック 夏服のイヴ》1984。
+
+### F. Compilation（本批一張都沒走 §5.6）
+渡辺貞夫 `17d20587`《Echo》1979、`8a993ce4`《Nice Shot!》1980、`14f4c349`《THE BEST》1981-05-21、`237a5dcc`《Plays Ballads》1987、`7435cbe1`《Selected》1989、`c428c830`《Bossa Nova Concert》1989、`b851b140`《Twin Best》1998、`fd3f3f04`《渡辺貞夫》1999、`d1eb562b`《My Dear Life: 50th Anniversary Collection》2001。
+**本組沒有任何一張需要 §5.6 的兩個 HTTPS 舉證**（第 257 條的逐頁讀本批用不上）。
+
+## 377（本批立，a 組）⚠ **§1 候選清單（MB 完全查無 RG，唱片實體確鑿）——這份清單本身就是交付物**
+
+照簡報第二節第 3 點：**不自己造 rgMbid**，列進來給本機走 §1 人工身分。
+
+| 掛名 | 盤名（日／英兩式） | 年 | 廠牌／catno | 佐證 | 查過哪些關鍵字 |
+|---|---|---:|---|---|---|
+| **渡辺貞夫** | 《渡辺貞夫》／`SADAO WATANABE` | **1961** | **King Records**（catno 待核） | Apple jp `1770441305`，**8 軌、1961-12-20、℗ 1961 King Record Co.,Ltd** | `release-group?artist=378278bf…` 全 88 個 RG 分頁拉完（最早只到 1966-04-05）；`artist:"渡辺貞夫"`／`artist:"Sadao Watanabe"`／裸關鍵字；`jp-king.json` 列舉檔全掃 |
+| **渡辺貞夫** | 《ウィ・ガット・ア・ニュー・バッグ》／`We Got a New Bag` | **1968** | 日本コロムビア（Takt 線，catno 待核） | Apple jp／us `1868591653`，**5 軌、℗ 1968 Nippon Columbia／NIPPONOPHONE** | 同上；另查 `jp-columbia.json` 全 201 筆 |
+| **日野皓正** | 《タロー・ムード》／`Taro's Mood` | **1973** | enja／ALFI Records（德國錄音，catno 待核） | Apple jp `1466923857`（7 軌、1973-06-29、℗ SOLID/ENJA）與 us `1363852054`《The Enja Heritage Collection: Taro's Mood》（7 軌、℗ 1973 ALFI Records） | `release-group?artist=60d3fa1e` 全 46 個 RG、`65c54d15` 全 8 個、`59158072` 全 2 個；`artist:"日野皓正"`／`artist:"Terumasa Hino"`／裸關鍵字；`jp-victor.json`／`jp-columbia.json`／`jp-east-wind.json` 全掃 |
+
+**另外三筆是「MB 有 RG、但原盤 release 沒建」**，不是 §1，但本機同樣要補：
+佐藤允彦トリオ《Palladium》**1969 東芝 Express 原盤**（RG `c1be243a` 轄下只有 2005 CD）、
+佐藤允彦トリオ《Transformation '69/'71》**1971 東芝 Express 原盤**（RG `8295c5bc` 轄下只有 1991 CD）、
+佐藤允彦《Holography》**1970 原盤**（RG `482d1c70` 轄下只有 2006 CD，**且廠牌兩說未決**）。
+
+**⚠ 還有一筆是年份打架、不是查無**：渡辺貞夫《Goin' Home》——
+MB `b58d602c-0111-4aaf-a517-4325c25080d8` 記 **1977**（日本コロムビア），
+Apple jp `1868590678` 記 **1966-06-10、℗ 1966 Nippon Columbia**、10 軌。
+**差十一年，兩邊都說是 日本コロムビア**，本批未收，留本機／研究層裁。
+同形的還有池中既有的 `日野皓正《Alone, Alone and Alone》`：MB `98c8b312` 記 **1970**，
+Apple jp `1894176117` 記 **1967-12-01、℗ 1967 Nippon Columbia**、5 軌（MB 亦 5 軌）——**池中那張卡的年份可能要改。**
+
+## 378（本批立，a 組）**封面與試聽的觀察（只寫觀察不下結論——第 254 條）**
+
+- **CAA**：本組逐張探測 release-group 端點，候選 **57 個 RG**，**5xx 為 0**，404 都是真的沒圖（共 8 個）；**入選 23 張全部 200**。
+  404 集中在兩處：**(1) 2009 年 Universal SHM-CD 那批復刻殼**（菊地雅章 四張全 404）、**(2) Denon／JVC 的 1972–78 年黑膠**（Pavane Lachrymae、Wonderful Moog Sound、But Not For Me）。
+  ⚠ **1960 年代的 Takt／Columbia 原盤反而多半有圖**，只有《Jazz & Bossa》（JAZZ-1）與《Sadao Watanabe Plays》例外——這與 c-131 第 359 條的規律（老原盤有圖、後來的 CD 沒圖）同向。
+- **Apple**（jp 為主、us 對照，`search` 與藝人目錄兩種查法都跑）：**23 張裡 15 張命中且軌數與 MB 一致**，明細在各卡 `risk`。
+  **未命中的 8 張**：渡辺貞夫《Pastoral》《Paysages》《Open Road》、日野皓正《Journey Into My Mind》《Into Eternity》、菊地雅章《Wishes/Kochi》、佐藤允彦《All-in All-out》、（另 峰厚介 三張全中）。
+  ⚠ **前五張全部是 CBS/Sony 1969–74 的日本爵士**——**同一家大廠的同一段目錄在 Apple 上整批缺席**，
+  而同一位藝人的 日本コロムビア 1966–69 那批 2025 年整批上架了（collectionId `18685xxxxx` 連號）。
+  這是 c-116 第 6 條、c-121 第 5.2 節、c-131 第 359 條那條規律的第四次應驗，**但這次缺的是 Sony 不是 DAN／Discomate 那種小廠**——
+  **「小廠才會缺」這個推論不成立，缺的是『哪一批母帶被數位化』而不是『廠牌大小』。**
+- **兩張是靠第二種查法（藝人目錄）才找到的**：佐藤允彦《Holography》`1716850549`、《Transformation '69/'71》`720401905`——
+  **`search` 兩個店面都 0 筆**。第 254 條「search 與目錄漏的不是同一批」在本組實測到兩次。
+- **掛名在店面的寫法**：Apple jp 把 峰厚介 印成 **「峰 厚介」（姓名間有半形空格）**、把 日野皓正 的五重奏盤掛在個人名下、
+  把 佐藤允彦 的三重奏實體印成 **「佐藤允彦トリオ」**（第 370 條就是靠這一點）。**下游比對要摺空白。**
+
+---
+
+## 第 392 條（主線 2026-09-15，a 組交件後）：**`dedup-crossbatch.mjs` 加一道 rgMbid 掃描——只報不擋**
+
+a 組第 371 條查到：池中 `菊地雅章《End for the Beginning》` 與
+`Masabumi Kikuchi Quintet《End For The Beginning》` 是**同一張 1973 Philips FX-8527、同一個 release-group**，
+但折疊鍵是掛名＋盤名，**兩筆各自成立、`chk-prop` 永遠不會亮燈**。
+（**菊地雅章池中實際只有 2 張不同的碟，不是 3 張**；本批名額照 4 張不動，反正落在 5–10 區間內。）
+
+**工具改動**：`dedup-crossbatch.mjs` 在鍵比對之後多掃一次 `rgMbid`
+（卡單取 `rgMbid`，prop 取 `mbNote` 裡第一個 UUID），同一個 RG 出現兩次就印出來。
+**只報不擋**——「重複建檔的 RG」與「同碟兩卡」在資料上長得一樣，要人看過才算數。
+**現況：全部 95 批 3,951 張卡掃出 0 筆**，所以那張重複是**線上池裡的既有卡**，不在批次裡，**留本機處理**。
+⚠ **seed_cards.json 的列沒有 MBID 欄**（只有掛名、盤名、三軸、曲風、年），**所以線上池這種重複雲端掃不出來**，
+只能由本機端在 Firestore／manifest 那一層查。
+
+## 第 393 條（同日）：**兩張年份打架留本機**
+
+1. 渡辺貞夫《Goin' Home》MB 1977 vs 店面 ℗1966——**本批沒收這張**，記著。
+2. **池中既有卡 `日野皓正《Alone, Alone and Alone》` MB 1970 vs 店面 ℗1967（軌數一致）**——
+   與第 364 條三種失真同形，**那張卡的年份可能要改，留本機覆核**。

@@ -94,6 +94,25 @@ for (const b of batches) {
     else seen.set(k, { b, c });
   }
 }
+// 2026-09-15（c-132 a 組抓到）：**同一張碟被兩個掛名字串各收一次，鍵比對永遠抓不到**。
+// 實例：池中 `菊地雅章《End for the Beginning》` 與 `Masabumi Kikuchi Quintet《End For The Beginning》`
+// 是同一張 1973 Philips FX-8527、同一個 release-group。折疊鍵是掛名＋盤名，所以兩筆各自成立。
+// 這裡改用 rgMbid 再掃一次（卡單有 `rgMbid`，prop 取 `mbNote` 裡第一個 UUID）。
+// **只報不擋**：重複建檔的 RG 與「同碟兩卡」在資料上長得一樣，要人看過才算數。
+const UUID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i;
+const byMbid = new Map();
+const dupMbid = [];
+for (const [, v] of seen) {
+  const c = v.c;
+  const id = (c.rgMbid && UUID.test(c.rgMbid)) ? c.rgMbid.toLowerCase()
+    : (String(c.mbNote || '').match(UUID) || [])[0]?.toLowerCase();
+  if (!id) continue;
+  if (byMbid.has(id)) dupMbid.push({ ...v, prev: byMbid.get(id), id });
+  else byMbid.set(id, v);
+}
+for (const d of dupMbid)
+  console.log(`⚠ 同 rgMbid 不同掛名：${d.b} ${d.c.artist}《${d.c.album}》 ←→ ${d.prev.b} ${d.prev.c.artist}《${d.prev.c.album}》（${d.id}）`);
+
 for (const d of dupKnown)
   console.log(`（已知，本機已擋：${d.b} ${d.c.artist}《${d.c.album}》 ←→ ${d.prev.b}；待本機標記後從 dedup-known.json 移除）`);
 for (const d of dup)
@@ -104,5 +123,5 @@ if (skipped.length) {
   console.log(`  若該批正在被策展代理覆寫，這是併行寫入的半成品，重跑一次即可；`);
   console.log(`  若沒有代理在跑，那就是 prop 檔真的壞了，要去看。`);
 }
-console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}`);
+console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}｜同 rgMbid 不同掛名 ${dupMbid.length}（只報不擋）`);
 process.exit(dup.length ? 1 : 0);
