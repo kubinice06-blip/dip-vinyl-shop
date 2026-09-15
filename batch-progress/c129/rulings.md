@@ -680,3 +680,18 @@ Koes Plus《Vol. 10》、Black Brothers《Terima Kaseh》、Slank《Kampungan》
    六家的泰國目錄**只剩 Thai Beat a Go-Go Vol. 2／3 兩張可收**。**印尼那一側的考古再發合輯還沒挖過**
    （池中只有 Those Shocking Shaking Days、Panbers 的 Indonesian City Sound 與兩張 Smithsonian 的
    Music of Indonesia），Now-Again／Strut／Sublime Frequencies 的印尼目錄是下一批最現成的方向。
+
+---
+
+## 第 349 條（主線 2026-09-15 補，研究層 a 組交件後）：**《Laos: Lam Saravane》維持 1989、正文寫明 1978 雙 LP 首版；研究層 a 組被 API 內容過濾砍掉但檔案完整**
+
+1. 研究層查到本輯 1978 年即以 Radio France 雙 LP（ref. 558537-38）出版，1989 是 Ocora CD 版。
+   但 MB 上只有 1989 CD 那筆 release，卡片所釘 RG、`label`（Ocora C 559 058）、barcode 全屬 CD 版。
+   依第 262 條（日期、廠牌、catno、載體出自同一筆）**`year` 維持 1989**，
+   hook／寫作層寫「1978 年雙 LP 首版、本卡為 1989 年 CD 版」。可逆，本機若改採原盤年再一併改 mbNote。
+2. ဇော်ဝင်းထွဋ်《မာကျူရီည》1984（維基 1983）、လေးဖြူ《ပါဝါ ၅၄》1996（樂評 1995）兩說，**卡片維持**、正文不斷言精確年。
+3. ခင်မောင်တိုး《LIVE 94》採 Vol.1（同場前半、曲序相同）當固定試聽來源——與 c-130 Perfect「前 N 軌」同形，照收。
+4. a 組研究代理在收工回報時被 API 內容過濾砍掉（第 303 條同形），`c129-a.json` 23/23 完整（full 18／partial 5），
+   `qa-batch research` 過；12 個 `串流採信` id 由主線補進 previews.json（試聽 3→15/23）。
+5. §5.6 舉證：《Guitars of the Golden Triangle》與《Princess Nicotine》的 exceptionReason 各有一句推論站不住
+   （「沒有個人專輯」實查有），**§5.6 資格不受影響**（合輯身分與兩個舉證頁仍成立），寫作層不得沿用那兩句。
