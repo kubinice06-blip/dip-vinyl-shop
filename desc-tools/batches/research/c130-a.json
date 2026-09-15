@@ -636,5 +636,279 @@
    "note": "MB 1983、Tonpress SXT-26 1983、Apple 標 1983、pl.wikipedia 1983-06-20，四邊一致。"
   },
   "notes": "**覆核策展層：RG 四個欄位與 5 筆 release 逐欄實查，與 mbNote 相符，未擋下任何一處；`artist:\"Lady Pank\"` 只回 1 筆，身分乾淨。** ｜**串流採信 1484081246**（第三種查法 `lookup?id=1484081246&country=pl&entity=song` 實跑）：10 軌與 1983 原盤 10 軌同數、曲序逐位置相符（Mniej niż zero／Kryzysowa narzeczona／Fabryka małp／Pokręciło mi się w głowie／Du du／Zakłócenie porządku／Zamki na piasku／Wciąż bardziej obcy／Vademecum skauta／Moje Kilimandżaro），長度差 0 秒，全 10 軌有試聽。**有固定試聽來源。** 駁回 1454267444《Lp1》（2018 重錄、13 軌、多位來賓）與 1484040272（1986 電影配樂）。℗ 行的 MTJ 是再發方。｜**人名**：五位團員、兩位客席、詞作者 Mogielnicki 有 pl 維基欄位背書，可寫；與 Budka Suflera《Za ostatni grosz》的跨卡連結兩邊都有欄位背書，**兩張卡各寫一次、切入面向不同**（那張寫「吉他手隔年另組團」，這張寫「首張就六首冠軍」）。｜**榜單**：「六首第一名」的榜是 Lista przebojów Programu Trzeciego（Polskie Radio 三台排行榜），正文寫榜名；「百萬銷量、金唱片」pl 維基寫明，可寫。｜**政治**：無審查版本差異；英語版外銷是發行事實可寫。"
+ },
+ {
+  "key": "desc2:Lady Pank|Ohyda",
+  "artist": "Lady Pank",
+  "album": "Ohyda",
+  "facts": [
+   {
+    "f": "release-group bfc6902b 的欄位：title「Ohyda」、artist-credit「Lady Pank」、first-release-date 1984、primary-type Album、secondary-types 空。轄下 2 筆 release：1984 PL Official 12\" Vinyl 10 軌 Savitor SVT-011（無 barcode）、2007 PL CD 20 軌 Agencja Artystyczna MTJ CD 10798（無 barcode，後 10 軌是現場錄音）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bfc6902b-85dd-3bf7-8cbf-3252387cb981&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Lady Pank 第二張專輯，1984 年由 Savitor 發行。十首全部 Jan Borysewicz 作曲，八首的詞出自 Andrzej Mogielnicki，〈Zabij to cz. II〉與〈Szakal na Brodłeju〉是器樂曲。編制是 Borysewicz 吉他、主唱與鍵盤，Janusz Panasewicz 主唱，Edmund Stasiak 吉他，Paweł Mścisławski 貝斯，Jarosław Szlagowski 鼓；〈Czas na mały blues〉的薩克斯風由 Włodzimierz Halik 與 Banda Trzech 客席。錄音導演 Sławomir Wesołowski、音效 Mariusz Zabrodzki。1993 年 Intersonus 出過 CD 版。",
+    "src": "https://pl.wikipedia.org/wiki/Ohyda"
+   },
+   {
+    "f": "Savitor 是 1982 到 1986 年間營運的波蘭唱片公司，與 Polton、Arston 並列三家最知名的「波僑資本」廠牌——指有海外波蘭裔資本參股的公司。首張《Lady Pank》(1983) 走 Tonpress SXT-26，這張隔年改走 Savitor SVT-011，同一支團兩年換了兩家廠牌。",
+    "src": "https://pl.wikipedia.org/wiki/Savitor"
+   },
+   {
+    "f": "10 軌逐軌（串流側 collectionId 1485061906 是 2007 年 MTJ 版的 20 軌、標 1984-01-01，前 10 軌與原盤同序）：1〈Zabij to〉3:22、2〈Tango stulecia〉4:59、3〈Czas na mały blues〉4:21、4〈Rolling Son〉4:03、5〈Zabij to, cz.2〉3:27、6〈To jest tylko rock and roll〉3:39、7〈Hotelowy kram〉3:43、8〈A to ohyda〉3:44、9〈Swojski brodłej〉4:02、10〈Szakal na Brodłeju〉2:28；第 11 到 20 軌是〈Mała lady punk〉〈A to ohyda〉〈Minus 10 w Rio〉等十首現場錄音，不在 1984 年黑膠上。",
+    "src": "https://itunes.apple.com/lookup?id=1485061906&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "首張走 Tonpress、第二張走 Savitor——一家只存在四年、有海外波蘭裔資本參股的公司",
+   "盤名意思是「醜東西」，B 面第三軌就叫〈A to ohyda〉，另外兩首乾脆不唱"
+  ],
+  "sound": "10 軌、A 面五首 B 面五首：Borysewicz 的吉他比首張更硬，兩首器樂曲〈Zabij to cz. II〉3 分 30 秒與〈Szakal na Brodłeju〉2 分 30 秒把 riff 攤開，〈Czas na mały blues〉4 分 20 秒加了薩克斯風組，〈Tango stulecia〉5 分是最長的一首；Panasewicz 的主唱與首張同一路。原盤 10 軌，2007 年 CD 20 軌（後 10 軌現場）；串流側對應 20 軌版。",
+  "keyTracks": [
+   "A to ohyda",
+   "Tango stulecia",
+   "Zabij to"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "note": "MB 1984、Savitor SVT-011 1984、Apple 標 1984、pl.wikipedia 1984，四邊一致；Apple 的 20 軌對應 2007 年 MTJ 版。"
+  },
+  "notes": "**覆核策展層：RG 四個欄位與 2 筆 release 逐欄實查，與 mbNote 相符，未擋下任何一處。** 策展層把 Savitor 列為「待主線判的廠牌」——依第 308 條本批無獨立閘、不需裁定；本稿補上 pl.wikipedia 的 Savitor 條目（1982–1986、波僑資本公司），**廠牌屬性有來源，正文可寫「有海外波蘭裔資本參股的公司」，不得寫成國營或純私營**。｜**串流採信 1485061906，但只採前 10 軌**（第三種查法 `lookup?id=1485061906&country=pl&entity=song` 實跑）：20 軌對應 2007 年 MTJ CD 10798，前 10 軌與 1984 原盤 10 軌逐位置相符（Zabij to／Tango stulecia／Czas na mały blues／Rolling Son／Zabij to cz. II／To jest tylko rock and roll／Hotelowy kram／A to ohyda／Swojski Brodłej／Szakal na Brodłeju），長度差最大 4 秒，全 20 軌有試聽。**有固定試聽來源，行文引軌數一律 10**（第 251 條）。｜**人名**：五位團員、客席 Halik 與 Banda Trzech、錄音兩位、詞作者 Mogielnicki 有 pl 維基欄位背書，可寫。｜**政治**：無審查版本差異，正文只寫發行事實。"
+ },
+ {
+  "key": "desc2:Skaldowie|Cała jesteś w skowronkach",
+  "artist": "Skaldowie",
+  "album": "Cała jesteś w skowronkach",
+  "facts": [
+   {
+    "f": "release-group 7ec1e56a 的欄位：title「Cała jesteś w skowronkach」、artist-credit「Skaldowie」、first-release-date 1969、primary-type Album、secondary-types 空。轄下 3 筆 release：1969 PL Official 12\" Vinyl 11 軌 Polskie Nagrania „Muza” XL 0528（無 barcode）、1996 CD 17 軌 Muza XL 0528（country 與 status 欄空）、1996 CD 17 軌（label-info、country、status 三欄皆空）。藝人實體 706e123f（Group／Poland／1965）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7ec1e56a-f29d-38a5-bace-0b2207183c1c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "這是 Skaldowie 第三張錄音室專輯，1969 年發行，是這支團目錄裡最「暢銷曲密集」的一張：11 首裡有 6 首拿過排行榜第一名，專輯獲金唱片。第 9 軌〈Dwadzieścia minut po północy〉6 分 04 秒寫的是樂隊 1968 年遭遇的巴士車禍，也是這支團第一首前衛搖滾形態的曲子。編制是 Andrzej Zieliński 鋼琴、Farfisa 風琴與主唱，Jacek Zieliński 主唱、小提琴與小號，Konrad Ratyński 貝斯與主唱，Jerzy Tarsiński 吉他，Jan Budziaszek 鼓，Krzysztof Paliwoda 吉他；女聲團 Alibabki、Adam Wiernik 指揮的 Polskie Radio 管弦樂團與合唱團參與，第 11 軌〈Jeszcze przed chwilą〉由 Maryla Rodowicz 客席主唱。",
+    "src": "https://pl.wikipedia.org/wiki/Ca%C5%82a_jeste%C5%9B_w_skowronkach"
+   },
+   {
+    "f": "11 軌逐軌（串流側 collectionId 1066512310，盤名寫字首大寫的「Cała Jesteś W Skowronkach」、標 1969-01-01）：1〈Malowany dym〉3:24、2〈Króliczek〉2:30、3〈Cała jesteś w skowronkach〉4:46、4〈Medytacje wiejskiego listonosza〉2:53、5〈Żeby coś się stało z nami〉2:34、6〈Bas〉2:47、7〈Wieczór na dworcu w Kansas City〉2:51、8〈Z kopyta kulig rwie〉3:18、9〈Dwadzieścia minut po północy〉6:30、10〈Prześliczna wiolonczelistka〉3:07、11〈Jeszcze przed chwilą〉4:06。℗ 行記 1969 Polskie Nagrania。",
+    "src": "https://itunes.apple.com/lookup?id=1066512310&country=pl&entity=song&limit=200"
+   },
+   {
+    "f": "MB 上 1969 年 Muza XL 0528 黑膠登記的 11 軌長度：〈Malowany dym〉3:18、〈Króliczek〉2:27、同名曲 4:25、〈Medytacje wiejskiego listonosza〉2:50、〈Żeby coś się stało z nami〉2:29、〈Bas〉2:46、〈Wieczór na dworcu w Kansas City〉2:48、〈Z kopyta kulig rwie〉3:09、〈Dwadzieścia minut po północy〉6:04、〈Prześliczna wiolonczelistka〉2:40、〈Jeszcze przed chwilą〉4:02；1996 年兩筆 CD 各 17 軌，多出的六軌是同期單曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7ec1e56a-f29d-38a5-bace-0b2207183c1c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十一首裡六首拿過冠軍，第九軌卻是寫樂隊自己 1968 年那場巴士車禍的六分鐘長曲",
+   "最後一首讓 Maryla Rodowicz 來唱——一張 1969 年的 beat 專輯，後面站著電台的管弦樂團與合唱團"
+  ],
+  "sound": "11 軌、大多是 2 到 3 分半的 beat 歌曲，Zieliński 兄弟的鋼琴、Farfisa 與小提琴加上電台管弦樂團與 Alibabki 的女聲，把流行曲做成編曲密度很高的形態；第 9 軌〈Dwadzieścia minut po północy〉6 分 04 秒是唯一的長篇，第 11 軌〈Jeszcze przed chwilą〉4 分 02 秒由 Maryla Rodowicz 客席。原盤 11 軌，1996 年 CD 17 軌；串流側 11 軌與原盤相符。",
+  "keyTracks": [
+   "Cała jesteś w skowronkach",
+   "Dwadzieścia minut po północy",
+   "Prześliczna wiolonczelistka"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1969,
+   "note": "MB 1969、Muza XL 0528 黑膠 1969、Apple 標 1969、pl.wikipedia 1969，四邊一致。"
+  },
+  "notes": "**覆核策展層：RG 四個欄位與 3 筆 release 逐欄實查，與 mbNote 相符，未擋下任何一處；`artist:\"Skaldowie\"` 只回 1 筆，身分乾淨。** ｜**串流採信 1066512310**（第三種查法 `lookup?id=1066512310&country=pl&entity=song` 實跑）：11 軌與 1969 原盤 11 軌同數、曲序逐位置相符（Malowany dym／Króliczek／Cała jesteś w skowronkach／Medytacje wiejskiego listonosza／Żeby coś się stało z nami／Bas／Wieczór na dworcu w Kansas City／Z kopyta kulig rwie／Dwadzieścia minut po północy／Prześliczna wiolonczelistka／Jeszcze przed chwilą），長度差最大 27 秒（〈Prześliczna wiolonczelistka〉3:07 對原盤 2:40、〈Dwadzieścia minut po północy〉6:30 對 6:04，其餘 ≤9 秒）——**疑為串流側用了 1996 年 CD 的轉檔、曲目相同但版本略長**，仍採信，正文引長度以 MB 原盤為準。全 11 軌有試聽。**有固定試聽來源。** ｜**榜單**：「6 首第一名」pl 維基沒有寫明是哪個榜，**正文只寫「六首登上排行榜冠軍」不指名榜名**；「金唱片」pl 維基寫明，可寫但未給年份。｜**人名**：六位團員、客席 Maryla Rodowicz、指揮 Adam Wiernik 有 pl 維基欄位背書，可寫。1968 年巴士車禍是**發行前**的事、且曲子本身寫它，可寫、克制不渲染。｜**政治**：無審查版本差異；1975 年蘇聯 Melodiya 發的西里爾盤名《Скальды》是另一個 RG，策展層已排除，本稿未引用。"
+ },
+ {
+  "key": "desc2:Skaldowie|Krywań, Krywań",
+  "artist": "Skaldowie",
+  "album": "Krywań, Krywań",
+  "facts": [
+   {
+    "f": "release-group 072dcb28 的欄位：title「Krywań, Krywań」、artist-credit「Skaldowie」、first-release-date 1972、primary-type Album、secondary-types 空。轄下 4 筆 release：1972 PL Official Vinyl 5 軌 Polskie Nagrania „Muza” XL/SXL 0888（無 barcode，同一筆同掛單聲道 XL 與立體聲 SXL 編號）、1973-06-22 PL Official Vinyl 5 軌 title「Krywaniu,Krywaniu」（label-info 空）、2012 PL CD 5 軌 Kameleon Records KAMCD 17（title《Krywań Sessions 1971-1973》）、2023 PL Hybrid SACD 5 軌 Muza 50541 9 78873 9 0（barcode 5054197887390）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=072dcb28-a053-4023-87c1-f7eb6cc7a54f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "這張碟是 1972 年 5 月 22 到 23 日在華沙國家愛樂廳（Filharmonia Narodowa）的廳內錄的，由 Muza 發行。A 面整面一首將近 18 分鐘的同名組曲〈Krywaniu, Krywaniu〉17:45，曲是 Andrzej Zieliński、詞取自 Kazimierz Przerwa-Tetmajer 的詩；B 面四首較短：〈Juhas zmarł〉4:35、〈Jeszcze kocham〉2:34、〈Gdzie mam ciebie szukać〉5:16（詞 Ewa Lipska）、〈Fioletowa dama〉5:14。風格與樂隊之前的作品明顯不同，混合前衛搖滾、古典與民謠搖滾。編制：Andrzej Zieliński 鋼琴、Hammond 與主唱，Jacek Zieliński 主唱、小號、小提琴與打擊樂，Jerzy Tarsiński 吉他，Konrad Ratyński 貝斯與主唱，Jan Budziaszek 鼓，Józef Gawrych 康加鼓。",
+    "src": "https://pl.wikipedia.org/wiki/Krywa%C5%84,_Krywa%C5%84"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 把 Muza XL/SXL 0888 的黑膠標 1972，封面攝影 R. Kozicz 與 M. Sanecki、設計 W. Świerzy；後續版本有 2005 Yesterday「Klub Płytowy 10」CD、2008 Muza 同編號黑膠再版、2011 Kameleon Records KAMCD 07。盤名的 Krywań 是斯洛伐克塔特拉山脈的一座山峰，在山地民歌裡常被歌頌。",
+    "src": "https://polskirock.eu/plyta/skaldowie-krywan-krywan-xlsxl0888/"
+   },
+   {
+    "f": "5 軌逐軌（串流側 collectionId 1474254762，標 1972-08-02）：1〈Krywaniu, Krywaniu〉17:44、2〈Juhas zmarł〉4:36、3〈Jeszcze kocham〉2:35、4〈Gdzie mam ciebie szukać〉5:16、5〈Fioletowa dama〉5:15。℗ 行記 1972 Polskie Nagrania。",
+    "src": "https://itunes.apple.com/lookup?id=1474254762&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "A 面一首將近十八分鐘的組曲，歌詞是十九世紀詩人 Tetmajer 寫塔特拉山的詩——三年前那支唱冠軍曲的 beat 團",
+   "不在錄音室錄，1972 年 5 月兩天在華沙國家愛樂廳的廳裡錄完"
+  ],
+  "sound": "5 軌、A 面一首 B 面四首：〈Krywaniu, Krywaniu〉17 分 45 秒把 Hammond、鋼琴、小提琴與康加鼓接成組曲，人聲段落用的是山地民歌的唱法；B 面〈Gdzie mam ciebie szukać〉5 分 16 秒與〈Fioletowa dama〉5 分 14 秒仍是長歌，〈Jeszcze kocham〉2 分 34 秒最短。四個版本都是 5 軌；串流側 5 軌與原盤相符、長度差 ≤1 秒。",
+  "keyTracks": [
+   "Krywaniu, Krywaniu",
+   "Fioletowa dama",
+   "Juhas zmarł"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1972,
+   "note": "MB 1972、Archiwum Polskiego Rocka 1972、Apple 標 1972-08-02、Discogs 搜尋摘要 1972，錄音 1972 年 5 月 22–23 日；⚠ pl.wikipedia 專輯條目寫「wydana w 1973」、MB 另有一筆 1973-06-22 的 release（title「Krywaniu,Krywaniu」、label-info 空）。多數來源與盤面編號指向 1972，維持 1972，正文若提月份只寫錄音月。"
+  },
+  "notes": "**覆核策展層：RG 四個欄位與 4 筆 release 逐欄實查，與 mbNote 相符，未擋下任何一處。** 年份有一處分歧（pl.wikipedia 1973 對 MB／polskirock／Apple 1972），已寫進 yearVerified，維持卡單的 1972。｜**串流採信 1474254762**（第三種查法 `lookup?id=1474254762&country=pl&entity=song` 實跑）：5 軌與 1972 原盤 5 軌同數、曲序逐位置相符（Krywaniu, Krywaniu／Juhas zmarł／Jeszcze kocham／Gdzie mam ciebie szukać／Fioletowa dama），長度差最大 1 秒，變音全部保留，全 5 軌有試聽。**有固定試聽來源。** ｜⚠ **盤名兩種寫法**：盤名是「Krywań, Krywań」（主格），組曲曲名與 1973 年那筆 release 的 title 是「Krywaniu, Krywaniu」（呼格），**正文引盤名用前者、引曲名用後者，不要混**。｜**人名**：六位團員、封面三位有 pl 維基與 polskirock 兩個欄位背書，可寫；Kazimierz Przerwa-Tetmajer 與 Ewa Lipska 是詩人（非音樂人），正文可用原文。｜**政治**：無審查版本差異；1975 年 Melodiya 的西里爾盤《Скальды》是另一個 RG、本稿未引。"
+ },
+ {
+  "key": "desc2:Czerwone Gitary|To właśnie my",
+  "artist": "Czerwone Gitary",
+  "album": "To właśnie my",
+  "facts": [
+   {
+    "f": "release-group fbb8ee82 的欄位：title「To właśnie my」、artist-credit「Czerwone Gitary」、first-release-date 1966、primary-type Album、secondary-types 空。轄下 2 筆 release：1966 PL Official 12\" Vinyl 14 軌 Pronit XL 0350（無 barcode）、1993 PL CD 14 軌 Polskie Nagrania „Muza” PNCD 210（無 barcode），兩版軌數相同。藝人實體 629a0273（Group／Poland／1965-01-03）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fbb8ee82-edb1-424f-951d-7e85342e930f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "這是 big-beat 樂隊 Czerwone Gitary 的首張錄音室專輯，1966 年 12 月 10 日由 Pronit 發行；2008 年 9 月 24 日、發行四十多年後獲頒金唱片。錄音時的五人編制全部兼唱：Jerzy Kossela 吉他、Krzysztof Klenczon 吉他、Bernard Dornowski 吉他、Seweryn Krajewski 貝斯、Jerzy Skrzypczyk 鼓。錄音導演 Wojciech Piętowski、音效 Helena Jastrzębska，封面攝影與設計 Marek Andrzej Karewicz。",
+    "src": "https://pl.wikipedia.org/wiki/To_w%C5%82a%C5%9Bnie_my"
+   },
+   {
+    "f": "14 軌逐軌（串流側 collectionId 1449852479，盤名寫字首大寫的「To Właśnie My」、標 1966-01-21）：1〈To właśnie my〉2:43、2〈Nie mów nic〉2:28、3〈Nie zadzieraj nosa〉2:45、4〈Pechowy chłopiec〉2:33、5〈Kto winien jest〉4:09、6〈Randka z deszczem〉2:23、7〈Historia jednej znajomości〉3:00、8〈Czy słyszysz co mówię〉3:05、9〈Pięciu nas jest〉3:26、10〈Matura〉2:23、11〈Śledztwo zakochanego〉2:46、12〈Mówisz, że kochasz mnie jak nikt〉3:28、13〈Dlaczego pada deszcz〉3:35、14〈Bo ty się boisz myszy〉2:01。℗ 行記 1966 Polskie Nagrania。",
+    "src": "https://itunes.apple.com/lookup?id=1449852479&country=pl&entity=song&limit=200"
+   },
+   {
+    "f": "Pronit 的黑膠目錄在 1960 年代後半到 1970 年代初與 Muza 共用同一套 XL／SXL 編號：XL 0350 是這張（1966）、XL 0531 是 Breakout 的首張（1969）、SXL 0779 是 Krzysztof Klenczon i Trzy Korony（1971）、SXL 1077 是 Marek Grechuta《Magia obłoków》（1974）；Klenczon 在本張之後於 1970 年 1 月離開 Czerwone Gitary、另組 Trzy Korony。",
+    "src": "https://pl.wikipedia.org/wiki/Krzysztof_Klenczon_i_Trzy_Korony"
+   }
+  ],
+  "hookCandidates": [
+   "1966 年 12 月 10 日出的首張，四十二年後才拿到金唱片",
+   "五個人全部開口唱，第九軌就叫〈Pięciu nas jest〉——我們有五個人"
+  ],
+  "sound": "14 軌、全部 2 到 4 分鐘的 big-beat 歌曲：三把吉他加貝斯與鼓、五人輪流主唱與合唱，Krajewski 與 Klenczon 分寫的旋律偏抒情，〈Kto winien jest〉4 分 09 秒最長，收尾〈Bo ty się boisz myszy〉2 分 01 秒最短。1966 年黑膠與 1993 年 CD 都是 14 軌；串流側 14 軌與原盤相符。",
+  "keyTracks": [
+   "To właśnie my",
+   "Historia jednej znajomości",
+   "Pięciu nas jest"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1966,
+   "note": "MB 1966、Pronit XL 0350 1966、pl.wikipedia 1966-12-10；Apple 標 1966-01-21（月份與 pl 維基的 12 月不同，年相同）。"
+  },
+  "notes": "**覆核策展層：RG 四個欄位與 2 筆 release 逐欄實查，與 mbNote 相符，未擋下任何一處；`artist:\"Czerwone Gitary\"` 只回 1 筆，身分乾淨。** ｜**串流採信 1449852479**（第三種查法 `lookup?id=1449852479&country=pl&entity=song` 實跑）：14 軌與 1966 原盤 14 軌同數、曲序逐位置相符（To właśnie my／Nie mów nic／Nie zadzieraj nosa／Pechowy chłopiec／Kto winien jest／Randka z deszczem／Historia jednej znajomości／Czy słyszysz co mówię／Pięciu nas jest／Matura／Śledztwo zakochanego／Mówisz, że kochasz mnie jak nikt／Dlaczego pada deszcz／Bo ty się boisz myszy），MB 原盤未登記長度、無法比秒差，全 14 軌有試聽。**有固定試聽來源。** ⚠ 串流側標 1966-01-21 與 pl 維基的 12 月 10 日不合，年份相同、正文若寫月日以 pl 維基為準。｜**人名**：五位團員、錄音兩位、封面 Karewicz 有 pl 維基欄位背書，可寫；Klenczon 本批另有卡（Trzy Korony 那張），兩張卡切入面向不同（這張寫「首張／五人全唱」，那張寫「離團後唯一一張 LP」）。｜**廠牌**：Pronit 與 Muza 共用 XL 編號這一條是本稿從四張卡的 MB 編號歸納的，來源是各卡的 release 端點與 pl 維基 Klenczon 條目，正文可寫「Pronit 目錄與 Muza 共用一套編號」但不要擴寫成廠牌沿革。｜**政治**：無審查版本差異；1978 年德語版《Rote Gitarren》是另一個 RG，策展層已排除。"
+ },
+ {
+  "key": "desc2:Krzysztof Klenczon|Krzysztof Klenczon i Trzy Korony",
+  "artist": "Krzysztof Klenczon",
+  "album": "Krzysztof Klenczon i Trzy Korony",
+  "facts": [
+   {
+    "f": "release-group cc1117b7 的欄位：title「Krzysztof Klenczon i Trzy Korony」、artist-credit「Krzysztof Klenczon i Trzy Korony」、first-release-date 1971-06-22、primary-type Album、secondary-types 空。轄下 6 筆 release：1971-06-22 PL Official 12\" Vinyl 15 軌 Pronit SXL 0779（release 層 artist-credit「Krzysztof Klenczon i Trzy Korony」）、1971 PL 12\" Vinyl 15 軌 Pronit SXL 0779 與 1971 PL 12\" Vinyl 15 軌 Pronit XL 0799（這兩筆 release 層 artist-credit 只寫「Trzy Korony」）、2005 PL CD 15 軌 Underground Masters UM 004、2006 XE CD 18 軌 Underground Masters UM 004CD、2024-05-17 PL Hybrid SACD 18 軌 Polskie Nagrania „Muza” 50217 3 22632 8 5（barcode 5021732263285）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cc1117b7-798e-3d3f-ac67-30dc1cf5defa&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Krzysztof Klenczon 1970 年 1 月因藝術方向分歧離開 Czerwone Gitary，另組 Trzy Korony，首任成員有 Grzegorz Andrian、表親 Ryszard Klenczon 與 Marek Ślazyk；幾個月後 Piotr Stajkowski 頂替 Ślazyk 的鼓位，這個編制錄下了樂隊第一張、也是唯一一張 LP（XL/SXL 0779）。之後 Klenczon 移居美國，Trzy Korony 換了女主唱 Maria Głuchowska 後結束活動。〈10 w skali Beauforta〉是 Klenczon 最為人知的曲子之一。1993 年 Polskie Nagrania 首次出 CD 版（加三首附加曲、換封面），2000 年 Yesterday 把它與 Klenczon 1978 年的個人專輯《Powiedz stary gdzieś ty był》併發。",
+    "src": "https://pl.wikipedia.org/wiki/Krzysztof_Klenczon_i_Trzy_Korony"
+   },
+   {
+    "f": "Archiwum Polskiego Rocka 把 Pronit XL/SXL 0779 標 1971，掛名登記為「Trzy Korony」；編制 Krzysztof Klenczon 吉他與主唱、Grzegorz Andrian 貝斯與主唱、Ryszard Klenczon 吉他與夏威夷吉他、Piotr Stajkowski 鼓，客席 Andrzej Ibek 風琴與鋼琴、Zbigniew Oborski 的樂團；錄音導演 Zofia Gajewska，封面攝影 A. Kossobudzki-Orłowski、設計 E. Guyski。15 首裡 14 首 Klenczon 作曲，〈Już nie czas〉是 Andrian 寫的。",
+    "src": "https://polskirock.eu/plyta/trzy-korony-krzysztof-klenczon-i-trzy-korony-xlsxl0779/"
+   },
+   {
+    "f": "15 軌逐軌（串流側 collectionId 1454234754，掛名寫「Krzysztof Klenczon & Trzy Korony」、標 1971-06-23）：1〈10 w skali Beauforta〉2:56、2〈Wiosenna miłość〉2:38、3〈Jestem do przodu〉3:11、4〈Świecą gwiazdy, świecą〉1:21、5〈Coś〉2:10、6〈Piosenka o niczym〉3:53、7〈Nie przejdziemy do historii〉5:17、8〈Sprawię sobie niespodziankę〉0:49、9〈Spotkanie z diabłem〉2:43、10〈Stary walc przypomni ci〉3:16、11〈Bierz życie jakie jest〉2:56、12〈Już nie czas〉3:22、13〈Fatalny dzień〉2:17、14〈Raz na tysiąc nocy〉2:26、15〈Port〉3:38。℗ 行記 1971 Polskie Nagrania。",
+    "src": "https://itunes.apple.com/lookup?id=1454234754&country=pl&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "離開 Czerwone Gitary 十七個月後的唯一一張 LP，同一張黑膠同時印單聲道 XL 0799 與立體聲 SXL 0779 兩個編號",
+   "十五首裡有一首只有五十四秒，開場〈10 w skali Beauforta〉倒成了他一輩子最出名的歌"
+  ],
+  "sound": "15 軌、A 面八首 B 面七首，大多在 1 到 3 分半：Klenczon 的主唱與吉他在前，表親 Ryszard 的夏威夷吉他和 Ibek 客席的風琴讓 beat 歌曲多了一層迷幻色，〈Nie przejdziemy do historii〉4 分 51 秒是唯一的長篇，〈Sprawię sobie niespodziankę〉0 分 54 秒與〈Świecą gwiazdy, świecą〉1 分 22 秒是兩首小品。1971 年三筆黑膠都是 15 軌，2006 與 2024 年再發 18 軌；串流側 15 軌與原盤相符。",
+  "keyTracks": [
+   "10 w skali Beauforta",
+   "Nie przejdziemy do historii",
+   "Port"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1971,
+   "note": "MB 1971-06-22、Pronit SXL 0779／XL 0799 1971、polskirock.eu 1971、Apple 標 1971-06-23、Discogs 搜尋摘要 1971（1971 年 6 月錄音）；⚠ pl.wikipedia 條目首句寫「wydana w czerwcu 1972」，與其他四個來源不合、且與同一條目「錄完一年後 Klenczon 移民」的時序不合，不採。"
+  },
+  "notes": "**覆核策展層：RG 四個欄位與 6 筆 release 逐欄實查，與 mbNote 相符；裁定 313 取「Krzysztof Klenczon」當掛名、盤名保留全稱，本稿依此不改。補一個策展層沒記到的細節：同一個 RG 底下 1971 年三筆黑膠 release 的 artist-credit 不一致——只有 1971-06-22 那筆寫「Krzysztof Klenczon i Trzy Korony」，另兩筆（含 XL 0799 單聲道版）只寫「Trzy Korony」，polskirock.eu 也把掛名登記成「Trzy Korony」；這支持裁定 313「掛名與盤名退化」的判斷，正文可寫「以 Trzy Korony 名義」但卡單掛名不動。** ｜**串流採信 1454234754**（第三種查法 `lookup?id=1454234754&country=pl&entity=song` 實跑）：15 軌與 1971 原盤 15 軌同數、曲序逐位置相符（10 w skali Beauforta／Wiosenna miłość／Jestem do przodu／Świecą gwiazdy, świecą／Coś／Piosenka o niczym／Nie przejdziemy do historii／Sprawię sobie niespodziankę／Spotkanie z diabłem／Stary walc przypomni ci／Bierz życie jakie jest／Już nie czas／Fatalny dzień／Raz na tysiąc nocy／Port），全 15 軌有試聽；⚠ 長度差兩處偏大：串流側第 6 軌〈Piosenka o niczym〉3:53 對原盤 2:10、第 7 軌〈Nie przejdziemy do historii〉5:17 對 4:51，其餘 ≤3 秒，**疑為串流側用了較長的版本或轉檔含靜音，正文引長度以 MB／polskirock 的原盤為準**。掛名連接詞 Apple 用 `&`、MB 用 `i`（裁定 313）。駁回 954802909《(Nie) Przejdziemy do Historii》（2014 Polskie Radio、14 軌，後世重編）。**有固定試聽來源。** ｜**人名**：四位團員、客席 Ibek、錄音 Gajewska、封面兩位有 pl 維基與 polskirock 兩個欄位背書，可寫；「Klenczon 移居美國」是**發行後**的生平事件，但與本張「唯一一張 LP」直接綁定（樂隊隨之結束），可寫一句、標時序、不展開。｜**政治**：無審查版本差異，正文只寫發行事實。"
+ },
+ {
+  "key": "desc2:Marek Grechuta|Magia obłoków",
+  "artist": "Marek Grechuta",
+  "album": "Magia obłoków",
+  "facts": [
+   {
+    "f": "release-group 3acd3854 的欄位：title「Magia obłoków」、artist-credit「Marek Grechuta」（藝人實體 17d126de，Person／Poland／1945-12-10）、first-release-date 1974、primary-type Album、secondary-types 空。轄下 2 筆 release：1974 PL Official 12\" Vinyl 7 軌 Pronit SXL 1077（無 barcode，release 層 artist-credit 亦為「Marek Grechuta」）、2000 PL CD 19 軌 Pomaton EMI 5257422（無 barcode）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3acd3854-a52a-3768-a656-5325fee882bc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "《Magia obłoków》是 Marek Grechuta 第四張專輯，1974 年由 Pronit 以 SXL 1077 發行，1974 年 5 月在華沙 Polskie Nagrania 的錄音室錄製。七首全是 Grechuta 作曲，歌詞分別取自 Leszek Aleksander Moczulski（〈W pochodzie dni i nocy〉〈Na szarość naszych nocy〉）、Tadeusz Śliwiak（〈Igła〉）、Ryszard Krynicki（〈Świat w obłokach〉）、Ewa Lipska（〈A więc to nie tak〉）與 Mieczysław Jastrun，〈Godzina miłowania〉是他自己的詞；第 6 軌是出自電影《Jastrun》的組曲〈Spotkania w czasie〉（Walc na trawie／Ulica cieni／Zmierzch／Ptak śpiewa o poranku）。編制：Grechuta 主唱與鋼琴、Antoni Krupa 電吉他、Piotr Michera 電小提琴與木吉他、Eugeniusz Obarski 鋼琴與打擊樂、Jan Adam Cichy 貝斯、Kazimierz Jonkisz 打擊樂，加 Boom 與 Gramine 兩個人聲團。",
+    "src": "https://pl.wikipedia.org/wiki/Magia_ob%C5%82ok%C3%B3w"
+   },
+   {
+    "f": "2000 年 Pomaton EMI 在《Świecie nasz》全集裡把這張擴成 19 軌，加的 9 首來自 1972 年 Muza 的 beat 清唱劇《To pejzaż mojej ziemi》、1973 年在 Łódź 教育電影製片廠與 Radio Kraków 的錄音，以及〈Ocalić od zapomnienia〉〈Muza pomyślności〉等；1974 年黑膠只有 7 軌。",
+    "src": "https://pl.wikipedia.org/wiki/Magia_ob%C5%82ok%C3%B3w"
+   },
+   {
+    "f": "MB 上 1974 年 Pronit SXL 1077 登記的 7 軌長度：1〈W pochodzie dni i nocy〉4:08、2〈Igła〉2:12、3〈Świat w obłokach〉4:07、4〈A więc to nie tak〉2:05、5〈Godzina miłowania〉6:20、6〈Suita \"Spotkania w czasie\"〉14:30、7〈Na szarość naszych nocy〉3:47。Anawa 樂隊 1972 年夏天與 Grechuta 分道，1976 年才因音樂劇《Szalona lokomotywa》再合作，所以 1974 年這張的樂手不是 Anawa 的編制。",
+    "src": "https://pl.wikipedia.org/wiki/Anawa_(zesp%C3%B3%C5%82_muzyczny)"
+   }
+  ],
+  "hookCandidates": [
+   "七首歌配了五位詩人的詞，B 面一首十四分半的組曲來自一部電影——1974 年 5 月在華沙錄的",
+   "離開 Anawa 兩年後的作品，編制裡有電小提琴與兩個人聲團"
+  ],
+  "sound": "7 軌、A 面五首 B 面兩首：Grechuta 的鋼琴與主唱在前，Michera 的電小提琴與 Krupa 的電吉他把 sung poetry 的編制推向搖滾側，Boom 與 Gramine 的人聲團鋪在後面。〈Suita \"Spotkania w czasie\"〉14 分 30 秒佔了 B 面大半，〈Godzina miłowania〉6 分 20 秒次長，〈A więc to nie tak〉2 分 05 秒最短。原盤 7 軌，2000 年 CD 19 軌。",
+  "keyTracks": [
+   "Świat w obłokach",
+   "Godzina miłowania",
+   "W pochodzie dni i nocy"
+  ],
+  "status": "partial",
+  "yearVerified": {
+   "year": 1974,
+   "note": "MB 1974、Pronit SXL 1077 1974、pl.wikipedia 1974（1974 年 5 月錄音）、Discogs 搜尋摘要 1974，四邊一致；無串流側年份可對。"
+  },
+  "notes": "**Grechuta 覆核結果（主線點名）：掛名與盤名都站得住。** `fix-rgmbid` 回問失敗那次，本稿直接打 `release-group/3acd3854?inc=artist-credits` 與 `release?release-group=3acd3854` 兩個端點覆核：RG title「Magia obłoków」、RG 與 1974 原盤 release 兩層的 artist-credit 都是單獨的「Marek Grechuta」（artist id 17d126de）、first-release-date 1974、Pronit SXL 1077、7 軌；Discogs 搜尋摘要的 master 也掛「Marek Grechuta – Magia Obłoków」。**這張不是「Marek Grechuta & Anawa」掛名**（那是 1970 年的另一張，dfab769f），pl.wikipedia 的 Anawa 條目也寫 Anawa 1972 年夏天與 Grechuta 分道、1976 年才回頭合作，本張樂手是 Krupa／Michera／Obarski／Cichy／Jonkisz 這組人。卡單掛名「Marek Grechuta」與池中既有的《Korowód》一致，無裁定 311 的分裂問題。｜**覆核策展層：MB 四個欄位與 2 筆 release 逐欄實查，與 mbNote 相符，未擋下任何一處。** ｜**串流：三種查法全部落空，走無來源狀態。** (1) `search` 用「Marek Grechuta Magia obłoków」與去變音寫法，pl／de／gb／us 四個店面皆 0；(2) 藝人目錄 `lookup?id=<artistId>&entity=album` 四個店面皆無此盤名；(3) 第三種查法改以曲名找候選 collectionId——以〈Świat w obłokach〉〈Godzina miłowania〉〈W pochodzie dni i nocy〉〈Igła〉在四個店面做 `entity=song` 搜尋，命中的 collectionId 只有 1066492566《Marek Grechuta - 40 piosenek》(1999 精選)、881488661／870618472／899960291／919120749 四張 2014 年的《koncerty》現場系列、1066534305《Mistrzowie piosenki》(2001 精選)，**沒有任何一筆是 1974 年 7 軌的原盤或 2000 年 19 軌的 CD**。依第 254 條三種查法都落空才能寫「店面查無」，本張符合，**status 標 partial 的理由只有這一項**（事實面完整）。CAA release-group 端點 200、1 張圖（策展層實測），封面不受影響。｜**人名**：六位樂手、兩個人聲團、五位詩人有 pl 維基欄位背書，可寫；詩人非音樂人，正文可用原文。｜**政治**：sung poetry 這一位最容易越線——本張無審查版本差異、歌詞是抒情詩，**正文只寫發行事實與編制，不要把「詩人的詞」往體制解讀**。"
+ },
+ {
+  "key": "desc2:Ewa Demarczyk|Live",
+  "artist": "Ewa Demarczyk",
+  "album": "Live",
+  "facts": [
+   {
+    "f": "release-group 7e641e20 的欄位：title「Live」、artist-credit「Ewa Demarczyk」（藝人實體 4be4f049，Person／Poland／1941-01-16）、first-release-date 1982、primary-type Album、secondary-types 含 Live。轄下 2 筆 release：1982 PL Official 雙片 12\" Vinyl 8＋10＝18 軌 Wifon LP-033（無 barcode）、1997 PL 雙片 CD 8＋10 軌 Pomona Records EDP 1 A/B SE（barcode 5901119902238）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7e641e20-cdb9-3ab0-8b0e-ef43da5201d1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "《Live》是 Ewa Demarczyk 1982 年由 Wifon 發行的現場專輯，收錄她 1979 年在華沙猶太劇院（Teatr Żydowski）的演唱會錄音，原始形態是雙片黑膠；銷量超過 10 萬張、獲金唱片。封面設計 Zbigniew Łagocki。18 首橫跨多種語言：波蘭語之外有西班牙語的〈Canción de las voces serenas〉〈Ronda del fuego〉〈Palma sola〉、德語的〈Nähe des Geliebten〉〈Musik im Mirabell〉、法語的〈Il était une feuille〉〈Sur le pont d'Avignon〉，以及〈Tomaszów〉〈Grande Valse Brillante〉〈Rebeka〉〈Taki pejzaż〉〈Karuzela〉之外的〈Skrzypek Hercowicz〉〈Wiersze wojenne〉等她 Piwnica pod Baranami 時期的保留曲目。",
+    "src": "https://pl.wikipedia.org/wiki/Live_(album_Ewy_Demarczyk)"
+   },
+   {
+    "f": "依她的作品目錄，這是她到目前為止最後一張、也是第三張專輯：首張 1967 年《Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego》在波蘭賣過 10 萬張、獲白金，第二張 1975 年《Ewa Demarczyk》只在蘇聯境內由 Melodiya 發行；她 1962 到 1972 年隸屬克拉科夫的 Piwnica pod Baranami 卡巴萊，1963 年在第一屆 Opole 全國波蘭歌曲節以〈Karuzela z madonnami〉〈Czarne anioły〉〈Taki pejzaż〉獲獎。",
+    "src": "https://pl.wikipedia.org/wiki/Dyskografia_Ewy_Demarczyk"
+   },
+   {
+    "f": "MB 上 1982 年 Wifon LP-033 登記的 18 軌長度：第一片 1〈Canción de las voces serenas〉4:10、2〈Tomaszów〉5:50、3〈Czerwonym blaskiem otoczona〉4:51、4〈Nähe des Geliebten〉3:18、5〈Babuni〉4:05、6〈Grande valse brillante〉4:33、7〈Il était une feuille〉3:27、8〈Taki pejzaż〉8:22；第二片 1〈Rebeka〉4:24、2〈Musik im Mirabell〉1:59、3〈Panna śnieżna〉4:20、4〈Skrzypek Hercowicz〉4:32、5〈Sur le pont d'Avignon〉2:44、6〈Ronda del fuego〉3:05、7〈Cyganka〉4:38、8〈Pocałunki〉5:19、9〈Wiersze wojenne〉6:06、10〈Palma sola〉2:20。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7e641e20-cdb9-3ab0-8b0e-ef43da5201d1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "1979 年在華沙猶太劇院的演唱會，三年後才由 Wifon 壓成雙片——是她至今最後一張專輯",
+   "十八首唱了四種語言，最長的一首〈Taki pejzaż〉八分二十二秒，是她 1963 年在 Opole 得獎的那首"
+  ],
+  "sound": "雙片 18 軌、現場錄音：第一片 8 首、第二片 10 首，全是鋼琴與小編制伴奏下的獨唱，Demarczyk 的低音域與戲劇性的強弱對比是主體；〈Taki pejzaż〉8 分 22 秒與〈Wiersze wojenne〉6 分 06 秒最長，〈Musik im Mirabell〉1 分 59 秒最短，西班牙語、德語、法語曲目穿插在波蘭語保留曲目之間。1982 年黑膠與 1997 年 CD 同為 8＋10 軌。",
+  "keyTracks": [
+   "Taki pejzaż",
+   "Tomaszów",
+   "Grande valse brillante"
+  ],
+  "status": "partial",
+  "yearVerified": {
+   "year": 1982,
+   "recorded": 1979,
+   "note": "MB 1982、Wifon LP-033 1982、pl.wikipedia 專輯條目 1982、Discogs 搜尋摘要 1982（1979 年 12 月 10–16 日錄音）；⚠ pl.wikipedia 的作品目錄條目寫「1979 年發行」，那是錄音年被寫成發行年，不採。卡片顯示 1982、正文要分開講「1979 年錄音、1982 年發行」。"
+  },
+  "notes": "**性質：現場錄音專輯（secondary-types Live），依第 253 條收，有歷史定位（她至今最後一張、唯一的現場盤、Piwnica pod Baranami 曲目的完整存檔），不列建議移除。** ｜**覆核策展層：RG 四個欄位與 2 筆 release 逐欄實查，與 mbNote 相符，未擋下任何一處。** 策展層 mbNote 寫「演奏年即 1982 年前後的巡演」——**這一句實查不成立：錄音是 1979 年 12 月在華沙 Teatr Żydowski（pl.wikipedia 專輯條目寫 1979 年、Discogs 搜尋摘要寫 12 月 10–16 日）**，正文要寫 1979 年錄音、1982 年發行，屬擋下的一處（mbNote 的演奏年）。｜**串流：三種查法全部落空，走無來源狀態。** (1) `search`「Ewa Demarczyk Live」pl／de／gb／us 四店面只回 Ewa Bem 的無關單曲；(2) 藝人目錄查法四店面皆無她本人的錄音（pl 店面回的是 Steczkowska 等人的致敬盤）；(3) 第三種查法以〈Tomaszów〉〈Grande Valse Brillante〉〈Rebeka〉〈Skrzypek Hercowicz〉〈Taki pejzaż〉〈Karuzela z madonnami〉在四店面做 `entity=song` 搜尋，**掛名含 Demarczyk 的結果為 0 筆**——她本人的錄音在 Apple 四個店面完全不存在，連精選都沒有。依第 254 條三種查法都落空，本張確實查無，**status 標 partial 的理由只有這一項**。｜**封面：CAA 在 release-group 端點與兩筆 release 端點（6fd5945d、85b95d0a）皆 404**，本批唯一一張封面與試聽兩邊都沒有的卡，**主線的 `apple-verified-collection` 補法在這張用不上，要另尋封面來源**。｜**軌數**：雙片 8＋10＝18，正文寫「雙片十八首」，不要只寫其中一片。｜**人名**：封面設計 Zbigniew Łagocki 有 pl 維基欄位背書；Zygmunt Konieczny（她首張的作曲者）有欄位背書，正文提首張時可寫。｜⚠ **政治**：sung poetry 這一位最容易越線——本張是多語言現場曲目，無審查造成的版本差異；1975 年蘇聯 Melodiya 盤是另一個 RG（全西里爾盤名、策展層已排除），本稿只在作品目錄事實裡提「只在蘇聯發行」這一句發行事實，**正文不得對她 1972 年離開 Piwnica 或任何體制背景加評價**。｜**逝者**：Demarczyk 2020 年辭世，是**與本作無關的後續生平事件**，正文不寫；「至今最後一張專輯」這句是作品目錄事實，可寫。"
  }
 ]
