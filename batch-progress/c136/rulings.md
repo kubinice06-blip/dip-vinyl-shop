@@ -201,3 +201,17 @@ BLP 1537 是 1952–54 三場 10 吋錄音（BLP 5021／5030／5055）的 12 吋
    而同形的 Vol. 2（68658859）標了 Compilation、被列舉檔濾掉。本組依 §5.6 明文照一般 Album 寫、不填例外欄位，但 `risk` 標明形態、正文不得寫成一場錄音室專輯。
    **Blue Note 1500 系列前段還有好幾張這種 78 轉重組盤（Bud Powell、Thelonious Monk、Milt Jackson 的 Volume 1／2），b 組與 c-135 照這條。**
 2. **同一 catno 在 MB 轄下兩筆 release、年份不同**（BLP 1540：a2a1dce8 1956／afb110fa 1957）——`first-release-date` 取最早那筆，所以 RG 年份會被較早、無來源的那筆拉低。**看到 MB 年份＝錄音年，先看轄下 release 是不是有同號兩筆。**
+
+## 第 489 條（主線 2026-09-15，研究層 a 組交件後）：**Billboard 同期紙本是這條線的硬證據——OCR 全文進 repo 共用**
+
+研究層 a 組掃了 worldradiohistory 的 Billboard 1955-10～1957-09 共 105 期 OCR，
+**策展層第 471 條改判的 8 張全部以「Billboard 評論日／廣告日」定案**（BLP 1528 Baby Grand Vol.1 評於 1957-03-09……）。
+全文命中頁存在 **`batch-progress/enum/billboard-bn-1955-57-ocr.txt`**（2.1 MB），
+**c-137 起的研究層直接 grep 目錄號，不必重掃。** 1957-10 以後的期數要另掃。
+
+其餘：**Kenny Drew《Talkin' & Walkin'》採 PD 廠 Record Vault 版 `1893808868`**（gb／jp，9 軌逐軌相符；
+c-131 第 359 條「灰色再發廠但曲目逐軌相符可採、發行資訊不引店面」先例）。
+**⚠ b 組《A Date With Jimmy Smith》Vol.1／2 的 Live 不成立**（Manhattan Towers 是 Blue Note 1957–58 十幾場錄音的場地，
+Billboard 評語無觀眾字樣）——**hook 層不得寫成現場**；卡單 `releaseType` 照 MB 不動（第 397 條）。
+擋下策展層 9 處（Thad Jones Vol.3 陣容沒有 Burrell、Burrell 1543 是四個來源含現場一軌、Chambers' Music 原 LP 沒有 Pepper Adams、
+Kenny Drew 原 LP 9 軌非 8 軌……）與無出處「唯一／第一」4 句，全在 notes。
