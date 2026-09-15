@@ -99,3 +99,30 @@
 ## Black Brothers《Terima Kaseh》1978 — **目錄裡找不到**
 
 ## พุ่มพวง ดวงจันทร์《ตะวันลับฟ้า》1978 — **目錄裡找不到**
+
+## อังคนางค์ คุณไชย《แฟนจ๋าอย่าลืม》1979 — **目錄裡找不到**
+
+## พงษ์เทพ กระโดนชำนาญ《เดี่ยว》1985 — **目錄裡找不到**
+
+## Various Artists《Thai Beat a Go-Go, Volume 1》2004
+- `308849735` us｜《Agarron De Acordeones》2004｜14 軌｜依據：年份
+- `977470663` us｜《Bossa Nova Vibes》2005｜14 軌｜依據：年份
+- `977381276` us｜《Um Ser de Luz - Saudação a Clara Nunes - Cd 2》2003｜14 軌｜依據：年份
+- `572222176` us｜《16 Saxxy Cumbias, Vol. 2》2005｜16 軌｜依據：年份
+- `508205100` us｜《Folclore da Madeira》2004｜24 軌｜依據：年份
+- `1066397806` us｜《Rock Urbano: El País de la Desesperanza》2005｜16 軌｜依據：年份
+- `289142273` us｜《Clássicos Da Música Caipira - Vol. 2》2005｜14 軌｜依據：年份
+- `572214376` us｜《16 Saxxy Cumbias, Vol. 1》2004｜16 軌｜依據：年份
+
+## Various Artists《Shadow Music of Thailand》2008
+- `977471944` us｜《Mulher Popular Brasileira (Releituras)》2008｜14 軌｜依據：年份
+- `916345062` us｜《Sassaricando》2007｜28 軌｜依據：年份
+- `976246940` us｜《Uma Noite Noel Rosa (Ao Vivo)》2008｜15 軌｜依據：年份
+- `680526576` us｜《Grandes Modas de Viola - Coleção de Ouro da Música Sertaneja》2009｜14 軌｜依據：年份
+- `459411331` us｜《Made in Portugal 3》2008｜18 軌｜依據：年份
+- `339377619` us｜《Absolut Chill Vol. 1》2009｜15 軌｜依據：年份
+- `880603393` us｜《Soul of New Flamenco Guitar》2008｜10 軌｜依據：年份
+- `998205340` us｜《No Tom da Mangueira》2008｜14 軌｜依據：年份
+
+## Various Artists《Luk Thung! The Roots of Thai Funk》2010
+- `1895735993` id｜《Eshtam Parayan》2010｜9 軌｜依據：年份
