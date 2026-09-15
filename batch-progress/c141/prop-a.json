@@ -188,5 +188,100 @@
   "why": "Jazz Messengers 1961 年 3 月 14 日 Van Gelder 錄音、壓了六年才出的一張——Lee Morgan 小號（兼柔音號）、Wayne Shorter 次中音、Bobby Timmons 鋼琴、Jymie Merritt 貝斯，也就是《A Night in Tunisia》《The Freedom Rider》那個班底；六軌是 Morgan 的〈The Witch Doctor〉〈Afrique〉、Shorter 的〈Those Who Sit and Wait〉〈Joelle〉、Timmons 的〈A Little Busy〉與 Shorter 的〈Lost and Found〉（維基 The Witch Doctor (album)；jazzdisco BST 84258＝1967；MB release f2d1e069）。2021 年進 Tone Poet 系列。實掃池中 `Art Blakey and the Jazz Messengers` seed 6 張（含 A Night in Tunisia、Moanin'）＋各批 14 張（含 c-140 a《The Freedom Rider》），這個 1961 年班底的三張 Blue Note 只缺這張。",
   "risk": "⚠ 掛名：MB RG credit「Art Blakey and The Jazz Messengers」（大寫 The），實體是群組 209ddf15 `Art Blakey & The Jazz Messengers`——依第 470／525／553 條掛池中多數字串 `Art Blakey and the Jazz Messengers`（seed 6＋各批 14 ＞ `& The` 5，audits 第 1 組既有分裂，不往 `&` 加）；MB／Apple 寫法進 queryAlias。⚠ 年份：MB 1967（無月日）、Discogs 原壓 1967、jazzdisco 1967、維基 1967——一致；**錄音 1961-03-14、出版 1967（Lion 期錄音、Liberty 期出版，派工信坑 1）**，正文不得寫成 1967 年錄音。⚠ 同班底拆盤：1961-02／03 三場的《The Freedom Rider》（c-140 a，BLP 4156，1964）與 1961-05 的《Roots & Herbs》（BST 84303，1970，1967–84 段後批）——三張互指、不同場、正文不得互抄曲目；c-140 第 555 條第 1 點已預告。⚠ 軌數：原 LP 6 軌，1999 CD 起加〈Lost and Found〉alt.（7 軌）。⚠ 1981 Applause 再發題名少「The」——盤名照 MB RG title。Apple us `search` 一種查法命中 724724135（掛 Art Blakey & The Jazz Messengers，7 軌＝CD 形，1961-01-01 placeholder）——「前 6 軌對應原盤」留研究層，只是觀察。CAA：RG 層有 front（4 圖，來源 f2d1e069 原盤）。",
   "mbNote": "釘 release-group f9bfa32e-4be5-3439-80f3-adba69a78d1a。回問 release-group 端點：title「The Witch Doctor」、artist-credit「Art Blakey and The Jazz Messengers」（群組 209ddf15-… Art Blakey & The Jazz Messengers）、first-release-date 1967、primary-type Album、secondary-types 空，轄下 10 個 release。release 端點：f2d1e069（1967 US Official 12\" Vinyl 6 軌，Blue Note BST 84258）、581def4b（1981 US 12\" Vinyl，Applause APBL 2315，title「Witch Doctor」）、98c16f13（無日期 US Cassette，Applause APBC 2315）、fe3e0238／40366ac0（1999-11／12 US／XE CD 7 軌，7243 5 21957 2 5）、573f9702（2013-07-10 XW Digital 7 軌）、eae8febb（2014-01-22 JP SHM-CD 7 軌，TYCJ-81056）、26ad3d5b（2017-12-06 JP CD，UCCQ-9320）、69b4b035（2021-06-04 XW 12\" Vinyl 6 軌，Tone Poet B0032875-01，bc 602435148601）、46970b7c（2024-09-25 JP UHQCD，UCCQ-9727）。原 LP 六軌：The Witch Doctor／Afrique／Those Who Sit and Wait／A Little Busy／Joelle／Lost and Found。錄音 1961-03-14 Van Gelder Studio（錄音室盤，非現場）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Structurally Sound (Booker Ervin)",
+  "artist": "Booker Ervin",
+  "album": "Structurally Sound",
+  "year": 1967,
+  "label": "Pacific Jazz PJ-10119（mono）／ST-20119（stereo）（US 1967-04 12\" Vinyl 8 軌，原廠；MB 0cbf861d／305359ba；Discogs master 298133、3135286 mono 原壓）；Blue Note CD 7243 5 27545 2 6（2001-02-13 US／XE，12 軌，加 4 軌 bonus）；JP Pacific Jazz TOCJ-50131（2011）",
+  "why": "Booker Ervin 離開 Prestige 後在西岸的第一張——1966 年 12 月 14–16 日洛杉磯錄音，Richard Bock 製作，Charles Tolliver 小號、John Hicks 鋼琴、Red Mitchell 貝斯、Lenny McBrowne 鼓；八軌裡 Randy Weston 的〈Berkshire Blues〉、Oliver Nelson 的〈Stolen Moments〉、Tolliver 的〈Franess〉與四首標準曲並列（維基 Structurally Sound 引 Billboard 1967-04-08；MB release 0cbf861d；Discogs master 298133）。是他 Pacific Jazz 唯一的領班盤、也是 Tolliver 早期錄音之一。實掃池中 `Booker Ervin` seed 4 張全是 1963–64 Prestige「Book」系列（Freedom／Song／Blues Book、That's It!），1966 年後零張，這張補他 Prestige 之後的空白。",
+  "risk": "⚠ **原盤不是 Blue Note**：Pacific Jazz PJ-10119／ST-20119（1967-04），Blue Note 名下只有 2001 年 CD（12 軌，加 1966-12 同場四軌 bonus），enum note「BN 首發 2001、原盤 1967 可能他廠」成立——依第 472／512／552 條 `label` 寫 Pacific Jazz、`year` 1967。**第 313 條的邊界**：Pacific Jazz 是 1965 年被 Liberty 併購、與 Blue Note 同屬 Liberty 爵士目錄的廠牌（本張出版時兩家已是同一集團），c-138 b／c-139／c-140 a 的 Pacific Jazz 原盤主線都追認照收（第 539a 條）；但本張與 For Django 一樣**沒有 1985 前的 BN 目錄號再發**，主線若把「Blue Note 的關聯始於哪一年」判到 2001，退掉是可逆的。⚠ 年份：MB 1967、Discogs 1967、維基引 Billboard 1967-04-08——一致；Apple 條目 1966-12-01 是錄音月（第 484 條）。⚠ 掛名照 MB＝池中 `Booker Ervin`。⚠ 軌數：原 LP 8 軌，2001 CD 12 軌——寫作層只寫原 8 軌。⚠ 同批 a 組 Mobley《Hi Voltage》John Hicks 也在，不同場不同廠。Apple us `search` 一種查法命中 724552151（12 軌＝2001 CD 形）——「前 8 軌對應原盤」留研究層逐軌比，只是觀察。CAA：RG 層有 front（5 圖，來源 305359ba 1967 stereo 原盤）。",
+  "mbNote": "釘 release-group 3517ad1f-f32d-4e2b-858a-7a9f331cdbf7。回問 release-group 端點：title「Structurally Sound」、artist-credit「Booker Ervin」（26608e21-… Person）、first-release-date 1967、primary-type Album、secondary-types 空，轄下 5 個 release。release 端點：0cbf861d（1967 US Official 12\" Vinyl 8 軌，Pacific Jazz PJ-10119，mono）、305359ba（1967 US，Pacific Jazz ST-20119，stereo，「original 1967 gatefold」）、6c7e9953／8315e703（2001 XE／2001-02-13 US CD 12 軌，Blue Note 7243 5 27545 2 6，bc 724352754526）、43bffea8（2011-04-20 JP CD 12 軌，Pacific Jazz TOCJ-50131）。原 LP 八軌：Berkshire Blues／Dancing in the Dark／Stolen Moments／Franess／Boo's Blues／You're My Everything／Deep Night／Take the \"A\" Train。錄音 1966-12-14～16 Los Angeles。MB 搜尋 releasegroup:\"Structurally Sound\" 另回 Smoke Bellow（2024）、8 Bark（1992）同名不同碟，刻意不釘。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Blackjack (Donald Byrd)；Black Jack",
+  "artist": "Donald Byrd",
+  "album": "Blackjack",
+  "year": 1968,
+  "label": "Blue Note BLP 4259（mono）／BST 84259（stereo）（US 1968-03 12\" Vinyl 6 軌；MB 877ef9ba 只建 stereo 標 1967；Discogs 3994456 mono 原壓 1967）；1975 US BST 84259 再壓；CD JP TOCJ-4259（1997-08-27）、Blue Note 7243 8 21286 2 5（1998 NL，7 軌）；JP UCCU-45071 UHQCD（2022-12-09）；2015 數位 stereo remaster",
+  "why": "Donald Byrd 1967 年 1 月 9 日 Van Gelder 錄音的六重奏盤——Sonny Red 中音、Hank Mobley 次中音、Cedar Walton 鋼琴、Walter Booker 貝斯、Billy Higgins 鼓；六軌裡 Sonny Red 寫了三首（West of the Pecos／Loki／Beale Street），標題曲〈Blackjack〉後來被 Gang Starr 與 Dream Warriors 1991 年〈I've Lost My Ignorance〉取樣（維基 Blackjack (Donald Byrd album) 引 Billboard 1968-03-09；jazzdisco BLP 4259；MB release 877ef9ba）。這是 Byrd 硬咆勃時期的尾聲，與同批《Slow Drag》同一班底相隔四個月。實掃池中 `Donald Byrd` seed 14 張＋各批 11 張，1965 I'm Tryin' to Get Home 到 1969 Fancy Free 之間的兩張（Blackjack／Slow Drag）都缺。",
+  "risk": "⚠ **年份改判 1967→1968**：MB frd 1967（原盤 release 無月日）、Discogs mono 原壓 3994456 標 1967、jazzdisco 4200 目錄頁 BLP 4259＝1967；但維基 infobox「March 1968」引 Billboard 1968-03-09 新片欄（與同批《Hi Voltage》同一期）——依第 531 條取同期紙本；**這是本批改判裡最弱的兩張之一**（與 New and Old Gospel 同形：目錄號在 4258 Witch Doctor（1967）與 4262 之間，可能 1967 年底已上市），1967 說寫進 risk、正文不得斷言月份，研究層以 Billboard 原刊或 Schwann 覆核可改回。⚠ 掛名照 MB＝池中 `Donald Byrd`。⚠ 同班底拆盤：《Slow Drag》（同批 a 組，1967-05-12 同五人少 Mobley）——各算一張、正文不得互抄曲目；Mobley／Higgins 同批《Hi Voltage》不同場。⚠ 軌數：原 LP 6 軌，1998 CD 加 1963-05-27 錄的〈All Members〉（7 軌）——寫作層不得把 1963 錄音寫進本張。⚠ MB 只建 stereo BST 84259，mono BLP 4259 出自 Discogs／維基。⚠ 同名撞擊：池中 `Blackjack`（1979 Polydor 樂團）——本層維基第一次抓錯到那張，研究層搜尋要帶 Byrd。Apple us `search` 一種查法命中 1442924491（Remastered 6 軌，1998-01-01＝CD 年，第 484 條），只是觀察。CAA：RG 層有 front（5 圖，來源 410d647c 1998 NL CD——研究層看版式；Discogs 3994456 有原盤圖）。",
+  "mbNote": "釘 release-group f9c6ddba-cb21-3286-89a3-5ebd6bed530b。回問 release-group 端點：title「Blackjack」、artist-credit「Donald Byrd」（69f95e5c-… Person）、first-release-date 1967（⚠ 無月日）、primary-type Album、secondary-types 空，轄下 6 個 release。release 端點：877ef9ba（1967 US Official 12\" Vinyl 6 軌，Blue Note BST 84259）、59da95cf（1975 US 12\" Vinyl，BST 84259）、282dc365（1997-08-27 JP CD 6 軌，TOCJ-4259）、410d647c（1998 NL CD 7 軌，7243 8 21286 2 5，bc 724382128625）、fce01583（2015-04-07 US Digital 6 軌，stereo remaster）、dbfbf115（2022-12-09 JP HQCD，UCCU-45071）。原 LP 六軌：Blackjack／West of the Pecos／Loki／Eldorado／Beale Street／Pentatonic。錄音 1967-01-09 Van Gelder Studio。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Slow Drag (Rudy Van Gelder Edition)；Slow Drag (Tone Poet)",
+  "artist": "Donald Byrd",
+  "album": "Slow Drag",
+  "year": 1968,
+  "label": "Blue Note BST 84292（US 1968-12 12\" Vinyl 6 軌，Liberty 期立體聲單號；MB 63835fec 標 1967；Discogs 12810908 US 原壓 1968、10083988 IT／24347531 DE 1968）；1973／1975 US 再壓；CD JP TOCJ-4292（1993）、TOCJ-9369（2003）、RVG 7243 5 35560 2 0（2002 US／XE）；LP Blue Note Tone Poet B0034364-01（2023-06-02）；JP UCCQ-9631 UHQCD（2024）",
+  "why": "Donald Byrd 1967 年 5 月 12 日 Van Gelder 錄音的五重奏盤——Sonny Red 中音、Cedar Walton 鋼琴、Walter Booker 貝斯、Billy Higgins 鼓（標題曲裡 Higgins 還唱了一段）；六軌含 Walton／Booker 的〈Book's Bossa〉、Ronnie Mathews 的〈The Loner〉、Sonny Red 的〈Jelly Roll〉與兩首標準曲（維基 Slow Drag (album) 引 Billboard 1968-12-21；jazzdisco BST 84292＝1968；MB release 63835fec）。是 Byrd 1960 年代硬咆勃最後一張，2023 年進 Tone Poet 系列。實掃池中 `Donald Byrd` seed 14 張＋各批 11 張，這張與同批《Blackjack》補的是 1967 年那個班底的兩張。",
+  "risk": "⚠ **年份改判 1967→1968**：MB frd 1967（原盤 release 無月日、＝錄音年）、enum 跟著排進 1967 段；jazzdisco 4200 目錄頁 BST 84292＝1968、Discogs 美德義三筆原壓全 1968、維基 infobox「December 1968」引 Billboard 1968-12-21——三邊獨立一致，取 1968；目錄號 84292 在 84275 Tender Moments（1968-09）之後也相符。正文寫「1967 年 5 月錄音、1968 年底發行」。⚠ 掛名照 MB＝池中 `Donald Byrd`。⚠ 同班底拆盤：《Blackjack》（同批，1967-01-09，多 Hank Mobley）——各算一張、正文不得互抄；標題曲有 Higgins 人聲，正文可寫。⚠ MB 原盤 release 軌長全空（沒填）——寫作層不得引軌長。⚠ 1993 JP CD 在 MB 重複建檔兩筆（52804fd1／801515e2 同 barcode）。Apple us `search` 一種查法命中 723533139（RVG 6 軌，1968-01-01 placeholder），只是觀察。CAA：RG 層有 front（3 圖，來源 63835fec 原盤）。",
+  "mbNote": "釘 release-group 6286441e-388d-31e8-b533-e65e8c526324。回問 release-group 端點：title「Slow Drag」、artist-credit「Donald Byrd」（69f95e5c-… Person）、first-release-date 1967（⚠ ＝錄音年）、primary-type Album、secondary-types 空，轄下 8 個 release。release 端點：63835fec（1967 US Official 12\" Vinyl 6 軌，Blue Note BST 84292）、52804fd1／801515e2（1993-11-10 JP CD，BNST-84292／TOCJ-4292，同 bc 4988006691858 重複建檔）、8de77469／8f0b5e9a（2002 US／XE CD RVG，7243 5 35560 2 0）、17aa5d0f（2003-01-22 JP CD，TOCJ-9369）、2e28a6c4（2023-06-02 XW 12\" Vinyl 6 軌，Tone Poet B0034364-01，bc 602438568420）、d49c5bdf（2024-01-24 JP UHQCD，UCCQ-9631）。原 LP 六軌：Slow Drag／Secret Love／Book's Bossa／Jelly Roll／The Loner／My Ideal（MB 軌長未填）。錄音 1967-05-12 Van Gelder Studio。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Sweet Honey Bee (Rudy Van Gelder Edition)",
+  "artist": "Duke Pearson",
+  "album": "Sweet Honey Bee",
+  "year": 1967,
+  "label": "Blue Note BLP 4252（mono）／BST 84252（stereo）（US 1967 12\" Vinyl 7 軌；MB a78db643 只建 mono；Discogs 1105283 mono 原壓、6355006 stereo 1971）；1983 JP King 再發；CD RVG 7243 5 90834 2 1（2004 US）、JP TOCJ-9503（2003）；2004 數位",
+  "why": "Duke Pearson 1966 年 12 月 7 日 Van Gelder 錄音、他 Blue Note 中期最常被再發的一張——Freddie Hubbard 小號、James Spaulding 長笛／中音、Joe Henderson 次中音、Ron Carter 貝斯、Mickey Roker 鼓，七軌全 Pearson 作曲（Sweet Honey Bee／Sudel／After the Rain／Gaslight／Big Bertha／Empathy／Ready Rudy?），封面是他當時的未婚妻 Betty（維基 Sweet Honey Bee；jazzdisco BLP 4252＝1967；MB release a78db643）。Pearson 這時已是 Blue Note 的 A&R 兼製作，這張是他自己名下的代表作。實掃池中 `Duke Pearson` seed 1 張（The Right Touch 1967）＋各批 3 張（Profile、Tender Feelin's、Wahoo!），1967 年這張與 The Right Touch 是同年前後作。",
+  "risk": "⚠ 年份：MB 1967（無月日）、Discogs mono 原壓 1967、jazzdisco 1967、維基 1967（引 jazzdisco，無 Billboard）——一致，不改；錄音 1966-12-07 寫正文。⚠ 掛名照 MB＝池中 `Duke Pearson`。⚠ 關聯組：Pearson 是同批《Boss Horn》《Lush Life》《Standards》的編曲、《Tender Moments》錄音同月——正文各寫各的，不得把編曲身分寫成領班。⚠ MB 只建 mono BLP 4252，stereo BST 84252 出自 Discogs 6355006（1971 再壓）／維基。Apple us `search` 一種查法命中 1443611357（7 軌，1967-01-01 placeholder），只是觀察。CAA：RG 層有 front（1 圖，來源 0780aa6c 2004 數位版——研究層看版式；Discogs 1105283 有 BLP 4252 原盤圖）。",
+  "mbNote": "釘 release-group d3ceb02d-62f5-3b13-aae7-693ff65f73bd。回問 release-group 端點：title「Sweet Honey Bee」、artist-credit「Duke Pearson」（ea39ae7d-… Person）、first-release-date 1967、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點：a78db643（1967 US Official 12\" Vinyl 7 軌，Blue Note BLP 4252）、b13cf312（2004 US CD RVG，7243 5 90834 2 1，bc 724359083421）、0780aa6c（2004-03-09 XW Digital 7 軌，bc 602547873958）。原 LP 七軌：Sweet Honey Bee／Sudel／After the Rain／Gaslight／Big Bertha／Empathy／Ready Rudy?。錄音 1966-12-07 Van Gelder Studio。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Easterly Winds (Tone Poet)",
+  "artist": "Jack Wilson",
+  "album": "Easterly Winds",
+  "year": 1968,
+  "label": "Blue Note BLP 4270（mono）／BST 84270（stereo）（US 1968-02 12\" Vinyl 6 軌；MB d74b54cc mono／d62be761 stereo 標 1967；Discogs 3378285 mono／2856433 stereo 原壓 1968）；JP 1983／84 BST 84270 再發；CD Connoisseur 7243 4 73161 2 8（2004 US）、JP TOCJ-6500（2005）、UCCQ-9198（2015）；LP Blue Note Tone Poet B0034798-01（2023-11-03）；JP UCCQ-9678 UHQCD（2024）",
+  "why": "Jack Wilson 1967 年 9 月 22 日 Van Gelder 錄音的六重奏盤——Lee Morgan 小號、Garnett Brown 長號、Jackie McLean 中音（三人在第 3 軌〈A Time for Love〉之外全程）、Bob Cranshaw 貝斯、Billy Higgins 鼓；六軌四首 Wilson 自己寫（Do It／On Children／Easterly Winds／Nirvanna）加 Johnny Mandel 與 Frank Strozier 各一（維基 Easterly Winds 引 Billboard 1968-02-10；jazzdisco BST 84270；MB release d74b54cc）。是這位芝加哥／洛杉磯鋼琴家兩張 Blue Note 領班盤的第二張，2023 年進 Tone Poet 系列。實掃池中 `Jack Wilson` 1 張（Something Personal 1966，BLP 4251，同一位），這張補他 Blue Note 的另一張。",
+  "risk": "⚠ **年份改判 1967→1968**：MB frd 1967（mono／stereo 兩筆原盤都填 1967＝錄音年）、jazzdisco 4200 目錄頁 BST 84270＝1967；但 Discogs 三筆美國原壓全 1968、維基 infobox「Early February 1968」引 Billboard 1968-02-10（與同批《Easy Walker》同一期）——錄音 1967-09-22、年底出版不合節奏，依第 531 條取 1968，1967 說寫進 risk。⚠ 掛名：MB Person 219c17de「Jack Wilson」（US，1936-08-03–2007-10-05，「jazz pianist」）＝池中 `Jack Wilson — Something Personal`（BLP 4251，同人）；**第 307 條預警**：MB 同字串另有製作音樂作曲家 4b2dc66f（搜尋分數 100）、奧斯汀民謠搖滾歌手 c95b4241、雷鬼、Fickle Friends 鍵盤手等九個實體——池中這個字串目前只指鋼琴家，日後任何 `Jack Wilson` 進池要先帶消歧。⚠ 管樂三人不在第 3 軌（維基），正文不得寫成六重奏全程。⚠ 同批 a 組 Mobley《Hi Voltage》（McLean／Cranshaw／Higgins）、Tyner《Tender Moments》（Morgan）都是 1967 年下半的 Van Gelder 錄音，不同場。Apple us `search` 一種查法命中 724752432（6 軌，1967-10-01——非錄音日也非 Billboard 月，來源不明），只是觀察。CAA：RG 層有 front（4 圖，來源 d62be761 stereo 原盤）。",
+  "mbNote": "釘 release-group b1935625-0fa9-3ba9-ae53-e836ac764a68。回問 release-group 端點：title「Easterly Winds」、artist-credit「Jack Wilson」（219c17de-… Person，US，1936–2007，「jazz pianist」）、first-release-date 1967（⚠ ＝錄音年）、primary-type Album、secondary-types 空，轄下 6 個 release。release 端點：d74b54cc（1967 US Official 12\" Vinyl 6 軌，Blue Note BLP 4270，mono）、d62be761（1967 US，BST 84270，stereo）、7fa2bb74（2004 US CD Connoisseur，7243 4 73161 2 8，bc 724347316128）、b733c4a9（2004-10-05 XW Digital 6 軌）、b0829557（2023-11-03 XW 12\" Vinyl 6 軌，Tone Poet B0034798-01，bc 602445092581）、1d64023a（2024-05-22 JP HQCD，UCCQ-9678）。原 LP 六軌：Do It／On Children／A Time for Love／Easterly Winds／Nirvanna／Frank's Tune（MB 軌長未填）。錄音 1967-09-22 Van Gelder Studio。"
  }
 ]
