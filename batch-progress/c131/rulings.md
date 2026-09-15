@@ -326,3 +326,30 @@ MB first-release-date 2014（Johnny's Disk JD-36-CD 是首發），演奏 1980�
   **未命中的 7 張**：Meditation、Dedications、Dedications (II)、Toshiko Plays Billy Strayhorn、Time Stream（只回 1997 同名別碟）、Got The Spirit、ウガンダ——
   **DAN／Discomate／EASTWORLD／TBM／Toshiba 這五家 1970 年代日本廠的目錄在 Apple 上幾乎全空**（c-116 第 6 條、c-121 第 5.2 節那條規律第三次應驗）。
 - **灰色再發廠要注意**：《The Many Sides of Toshiko》Apple 只有 Record Vault 與 TP4 Music（版權到期再發）；《Her Trio Her Quartet》《George Wein Presents Toshiko》是 1201 Music——研究層配對時要核曲目與長度。
+
+---
+
+## 第 366 條（主線 2026-09-15，研究層 b 組交件後）：**b 組四張年份改判、兩張兩說維持**
+
+四張**改卡單**（第 364 條三種失真全部命中，`prop-b.json` 與 `c131-cards.json` 已同步）：
+
+| 盤 | 原 | 改 | 依據 |
+|---|---:|---:|---|
+| Ahmad Jamal《at the Blackhawk》 | 1961 | **1962** | Argo LP-703 主版本 1962-11、百科、串流 ℗1962；MB 的 1961 出自一筆廠牌空白的荷蘭 release，Argo 原盤 MB 未建檔 |
+| Hank Mobley《Another Workout》 | 1986 | **1985** | 美日加法版全 1985、jazzdisco、百科 |
+| Don Cherry《Symphony for Improvisers》 | 1966 | **1967** | 主版本 1967-08、無 1966 壓片、Billboard 1967-08-19；MB 把錄音日當發行年 |
+| Chet Baker & Art Pepper《Playboys》 | 1956 | **1958** | 主版本與最早版本全 1958、jazzdisco 1958 |
+
+**《Playboys》主線加查了 MB 的 release 列表**：所謂 1956 那筆登記的是「World Pacific **PJ-1234**」——
+**catno 前綴是 Pacific Jazz、廠名卻寫 World Pacific**（World Pacific 1958 年才存在），
+同 RG 最早的海外壓片是 1959 年英國 Vogue。**1956 是錄音年（1956-10-31）不是發行年**，
+與第 364 條同形。**改 1958**；百科的 1956 說寫進 notes，**正文可寫 1956 年錄音，但不得斷言發行月**。
+
+**兩張兩說維持卡單年**（三個專業資料庫對一個百科，依第 262 條不動）：
+- McCoy Tyner《Expansions》**1969**（研究層以同系列 84333《Now!》1970-06 出版、號碼更小為由傾向 1970——
+  **這是推論不是來源**，記在 notes 供本機覆核）。
+- Archie Shepp《The Magic of Ju-Ju》**1967**（Billboard 1968-06-01 與法英版 1968 並存）。
+**兩張的正文都不得斷言精確月份。**
+
+另研究層補正三處（不影響年份）：《Stan Getz Plays》原 Norgran MGN 1042 是 11 軌不是 8 軌；
+《at the Blackhawk》錄音月份無來源、不得寫；《Oblique》美國首發 CD 是 1990 不是 1992。
