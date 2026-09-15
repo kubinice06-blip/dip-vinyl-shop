@@ -695,3 +695,32 @@ Koes Plus《Vol. 10》、Black Brothers《Terima Kaseh》、Slank《Kampungan》
    `qa-batch research` 過；12 個 `串流採信` id 由主線補進 previews.json（試聽 3→15/23）。
 5. §5.6 舉證：《Guitars of the Golden Triangle》與《Princess Nicotine》的 exceptionReason 各有一句推論站不住
    （「沒有個人專輯」實查有），**§5.6 資格不受影響**（合輯身分與兩個舉證頁仍成立），寫作層不得沿用那兩句。
+
+---
+
+## 第 344 條（主線 2026-09-15，研究層 b 組抓到，**這條改了探測層的比對規則**）：**短掛名的子字串包含是假陽性製造機——`artistOk` 加整詞規則**
+
+`AKA`《Reflection》1971 探測層給了 `status: ready`，採的是 `1252934716`／**`Nordton a.k.a Nomad`（2017）**。
+成因：`match-lib.mjs` 的 `artistOk` 摺疊後只做雙向 `includes`，`aka` 落在 `nordtonakanomad` 裡就算過；
+**`yearDrift: 46` 也沒有擋**（探測層不用年份否決）。研究層三種查法覆核：店端 `AKA` 全是南非饒舌歌手，
+**本張確認無來源**，previews 條目已撤回改 `unavailable`。
+
+**規則改動**（`batch-progress/probe/match-lib.mjs`）：兩邊摺疊後不相等、只靠 `includes` 成立時，
+**若短的那一邊 ≤6 字元且是純拉丁英數，短的那一邊必須在長的那一邊以「整詞」出現**（詞界＝非字母數字）。
+CJK／泰文／緬文沒有詞界空白，會把 `秋吉敏子` vs `秋吉敏子トリオ` 這種正解擋掉，**故非拉丁一律不套這條**。
+
+**回歸掃描**：`test-match.mjs` 33/33 過；另拿全部 previews.json 條目跑新舊規則對照，
+**舊過新擋的只有 `AKA|Reflection` 這一筆**，沒有誤傷。
+
+**這是第 179／250 條（短掛名回問、score 不採）在探測層的第三種變形**，也是
+「**失敗與正常長得一樣**」家族的又一例：假陽性帶著完整的 previewUrl、trackCount 與 `ready`，
+與真命中在資料形狀上完全相同。
+
+## 第 345 條（同日）：研究層 b 組的四處年份異議，**卡片全部維持、正文不斷言**
+
+The Mercy's 1973（維基 1972）、Koes Plus《Vol. 10》1974（維基與串流 ℗ 1973）、
+คาราวาน《คนตีเหล็ก》1984（泰文維基與 1983 卡帶實拍記 1983）、
+《Luk Thung: Classic & Obscure 78s》2010（編者部落格與 Bandcamp 2011）。
+四張都是第 311 條形狀（資料庫端取的不是實際發行日）。**與 c-130 不同的是四張都缺第三方精確日**，
+依第 262 條（日期、廠牌、catno、載體出自同一筆）**卡片維持 MB 值**，兩說寫進研究 notes，
+寫作層不得斷言精確年。可逆，本機端要改再改。
