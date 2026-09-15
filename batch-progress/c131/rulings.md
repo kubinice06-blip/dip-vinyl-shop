@@ -59,3 +59,83 @@ McCoy Tyner 池中缺 1962 Impulse! 出道與 1970 年代 Milestone 現場）。
 
 另外，全池 `jazz` 標籤 3,152 張按掛名摺疊（`&`→`and`）得 **1,517 位**，分布：1 張 929 位、2 張 266、3 張 134、4 張 56、5 張 45、6 張以上 87。
 **「池中只有 1–3 張」的爵士掛名有 1,329 位**——那才是下一批「目錄深度」該從中挑的池子，本批沒有時間逐位拉 MB。
+
+## 第 362 條（同批）：**實掃卡池順帶抓到的既有卡問題（線上資料，本組不動，留本機）**
+
+| 池中 | 問題 | 依據 |
+|---|---|---|
+| `Lee Morgan — Peckin' Time` 1958 | MB 掛名是 **`Hank Mobley—Lee Morgan` 聯名**（RG 72b41dc2，BLP 1574 封面印 Hank Mobley 為首）；池中掛在 Lee Morgan 名下，所以 Mobley 的目錄深度量測少算一張。本組不再收（同一張碟） | release-group 端點 artist-credit |
+| `Albert Ayler Trio — Spiritual Unity` 1965（apex:heresy）與 `Albert Ayler — Spiritual Unity` 1965（seed） | **同一張碟兩張卡、一張王牌一張普卡**——audits 第 5／6 組那個形狀（掛名編制不同、字串鍵擋不住） | 實掃 seed_cards.json |
+| `Sun Ra — The Heliocentric Worlds of Sun Ra, Vol. 1`（apex:heresy）年份 **1992** | 那是 ESP CD 再發年；MB first-release-date **1965**、ESP-Disk' 1014 原盤 1965。依年份政策應改 1965 | RG 03465cef，release e5e3ce76 |
+| `Bill Evans — Waltz for Debby` 年份 **1964** | Riverside RLP 399 首發 **1962**（1961-06-25 錄音）；1964 不知從何而來 | Discogs／Riverside 目錄 |
+| `Bill Evans — Stan Getz & Bill Evans` 1973 | 聯名碟塞進單人掛名；本組新收的聯名碟不跟這個先例（見第 363 條） | — |
+| `Archie Shepp & Horace Parlan`（Trouble in Mind）／`Archie Shepp and Horace Parlan`（Goin' Home） | **`&`／`and` 分裂第七組**，`audits/pool-artist-name-splits.md` 未列 | 實掃 |
+| `McCoy Tyner — Extensions` 年份 **1972** | MB／Blue Note：1970-02 錄音、**1973** 首發（BN-LA006-F） | RG 目錄 |
+
+## 第 363 條（同批）：**聯名碟的掛名：照 MB artist-credit 寫聯名，不塞進單人掛名；同一位的編制掛名（Trio／Quartet／Arkestra）則收攏到池中多數寫法**
+
+兩種形狀要分開：
+
+1. **兩位不同的人聯名**（`Stan Getz & The Oscar Peterson Trio`、`Chet Baker & Art Pepper`）——照 MB artist-credit 寫，
+   `&` 照 MB。池中先例 `Bill Evans & Jim Hall`、`Chet Baker & Paul Bley`、`Tony Bennett & Bill Evans`。
+   **不跟** `Bill Evans — Stan Getz & Bill Evans` 那個把聯名塞進單人的先例。聯名碟不計入單人的目錄深度。
+2. **同一位以不同編制掛名**（MB 把 `Sun Ra and His Solar Arkestra` 建成 `The Sun Ra Arkestra` 實體、
+   Apple 把 Inception 掛 `McCoy Tyner Trio`）——**一律收攏到池中多數寫法**（`Sun Ra` 8 張 vs `Sun Ra Arkestra` 3 vs `The Sun Ra Arkestra` 1），
+   MB／店面的編制掛名進 `queryAlias`，`risk` 標明。池中先例：`Sun Ra — The Magic City`（MB 同掛 Solar Arkestra）。
+   **本組沒有往 `Sun Ra Arkestra`／`The Sun Ra Arkestra`／`Art Blakey & The` 任一邊加卡。**
+
+另記一個盤名裁定：**Chet Baker & Art Pepper《Playboys》取原名、不取再發名《Picture of Heath》**。
+第 45 條說改過名的碟取再發名，但這張是「原名→過渡名→回到原名」：MB RG title、1990 Pacific Jazz CD、2022 Blue Note Tone Poet、Apple 全用 Playboys，
+Picture of Heath 只是 1961–1980 年代之間的壓片名。**第 45 條的「再發名」指的是現行流通名，不是曾經用過的任一個名字。**
+
+## 第 364 條（同批）：**MB `first-release-date` 在爵士老盤上有三種失真，年份要逐張判**
+
+| 形狀 | 實例 | 本組處理 |
+|---|---|---|
+| **只建了再發、原盤沒建** → frd 是再發年 | Stan Getz Plays（frd 1988，原 Norgran 1955）、The Steamer（frd 1999，原 Verve 1957） | 依第 91／95 條取原盤年，risk 寫明 MB 的數字 |
+| **placeholder 日期** `YYYY-01-01` | Jackie's Bag（1960-01-01，但第二場錄音在 1960-09，BLP 4051 出版 1961）、The Magic of Ju-Ju（1967-01-01） | 前者取 1961，後者 1967 與各來源一致、照用 |
+| **相差一年的出版年歧義** | Another Workout（MB 1986／Discogs 1985）、Hi Voltage（MB 1967／Discogs 1968）、Symphony for Improvisers（MB 1966／部分來源 1967） | **照 MB**，risk 寫另一說，留研究層覆核 |
+
+**Blue Note vault 盤（錄音與首發差十年以上）本批 4 張**：Oblique（1967→1979 JP）、Clubhouse（1965→1979）、Another Workout（1961→1986）、Nobody Else But Me（Verve，1964→1994）。
+`year` 一律取首發年，錄音年在 `risk`。**Oblique 的首發國是日本**（GXF-3061），美國要到 1992 CD——第 75 條那類「日本首發」形狀在 Blue Note 1979–1980 的 GXF 系列是通例（Patterns、Spiral、Medina 同）。
+
+**同場錄音拆賣**：McCoy Tyner《Enlightenment》原雙 LP 一個 RG，另有 Vol. 1／Vol. 2 兩個拆售 RG——那不是「兩張碟各算一張」（Blue Note 的 Vol. 1／Vol. 2 是不同錄音時段），是同一張雙 LP 拆成兩張單片，**只釘整場、拆售的刻意不釘**。
+
+## 第 365 條（同批）：**`chk-prop` 標記 1 不是本組的——是 c49b↔c106 兩張、cseab↔c64 一張的既有跨批撞卡**
+
+`node batch-progress/c131/chk-prop.mjs b` 結果：線上池撞卡 0、跨組重複 0、欄位 0，
+**跨批撞卡 3 全是別批之間的**（沈文程《心事誰人知》、羅文《小李飛刀》c49b↔c106；Sơn Ca《Băng nhạc Sơn Ca 8》cseab↔c64），
+是第 310 條修 regex 之後才浮出來的舊帳，c131 沒有一筆在裡面（`dedup-crossbatch.mjs` 輸出 grep c131 為 0）。
+本組交件視同標記 0；那三組留主線。
+
+### 未收清單（額度外候補，MBID 都已釘、大多回問過 release 端點）
+
+| 名家 | 碟 | 年 | rgMbid | 備註 |
+|---|---|---|---|---|
+| Stan Getz | The Steamer | 1957 | 4c1346be-754e-373e-a3fc-8b1e7701239f | MB frd 1999（只建再發） |
+| Stan Getz & Kenny Barron | People Time | 1992 | 4840e8d3-351a-3cb5-b810-e0890ea2dfe9 | Live、聯名 |
+| McCoy Tyner | Nights of Ballads & Blues | 1963 | f30760aa-8c26-3bd7-84d3-5f5ce595feef | |
+| McCoy Tyner | Tender Moments | 1968 | 3c023cc1-aa69-3028-8ca7-1f243337c195 | |
+| Chet Baker | Baby Breeze | 1965 | 97716d41-c8e8-39d0-9e88-00009d1df39c | Limelight LS 86003，已回問 release |
+| Chet Baker | Chet Baker & Strings | 1954 | 94c53e17-5a4d-3db7-ae0c-471168c5840d | Columbia CL 549，已回問 release |
+| Chet Baker & Crew | Chet Baker & Crew | 1956 | dde96c0e-4af1-44d8-b3c9-fcd09239bf31 | MB 掛名是 `Chet Baker & Crew`，要先判是不是獨立實體 |
+| Archie Shepp | Blasé | 1969 | 454f2acd-ba36-36af-8722-c947b9b44a8d | BYG |
+| Bobby Hutcherson | The Kicker | 1999 | e45eb7e7-12e8-3ad4-9838-042c5140b421 | rec 1963，vault |
+| Jackie McLean | Capuchin Swing／Jacknife／Consequence | 1960／1975／1979 | 未釘 | |
+| Sun Ra | The Nubians of Plutonia | 1966 | a4d404fa-6451-44da-81cb-c66b7830d18e | MB 掛 Myth Science Arkestra |
+| Sun Ra | Angels and Demons at Play | 1967 | 4eb4ca3f-d808-47a0-99c9-a9af87c3be11 | 同上 |
+| Sun Ra | Strange Strings | 1966 | d042dc13-824d-32e8-a87c-6a08ce9aeaf7 | MB 掛 Astro Infinity Arkestra |
+| Sun Ra | Nothing Is… | 1970 | da0a9759-1787-365a-a5e5-4ef2e36c7d9b | ESP 1045，實為 1966 現場、MB secondary-types 空；已回問 release |
+| Hank Mobley | Hi Voltage | 1967 | d336b40d-ba8a-39ff-ab6e-3312e9937951 | 已回問 release（BST 84273） |
+| Don Cherry | Where Is Brooklyn? | 1969 | 5204d0e9-07ae-4bcf-b450-44d24a79356b | Blue Note 第三張 |
+| Don Cherry | Organic Music Society | 1972 | 7ee6bf71-ee42-4bdd-90a7-3a235f4d8f74 | |
+| Dexter Gordon | Sophisticated Giant | 1977 | db131383-472e-340c-a471-18c7e3188a26 | Columbia |
+| Joe Henderson | Lush Life: The Music of Billy Strayhorn | 1992 | fa9cea4c-220e-3eeb-a649-f8d359b7a160 | 比例第 12 位，下一批起點 |
+| Pharoah Sanders | Jewels of Thought | 1969 | 59d158bf-c2cd-3cd1-94f5-48ab95b76d82 | |
+| Ornette Coleman | Something Else!!!! The Music of Ornette Coleman | 1958 | d47a1752-401e-3816-9bad-eddee69dfdb5 | |
+| Hank Mobley／Lee Morgan | Peckin' Time | 1958 | 72b41dc2-341b-4c03-ad04-161019455eb7 | **不收：池中已有（掛 Lee Morgan）** |
+
+**退掉的理由分類**：額度外（上表全部）、同碟已在池中（Peckin' Time）、拆售版（Enlightenment Vol. 1／2）、Compilation 併裝（Heliocentric 1+2、Complete Playboys Sessions 等，走 §5.6 也不值得——原盤都可收）。
+**MB 查無而未收：0 張**——這 25 位的目錄 MB 建檔完整，本批不需要 §1。
+
+**中間檔**：`scratchpad/c131b/`（c131b-poolscan.txt 實掃全文、c131b-mb/ 25 位目錄快取與 27 個 RG 的 release 端點回傳、c131b-catalog-detail.txt 逐位純 Album＋Live 清單含池中標記、c131b-apple.json 店面 search 結果）。

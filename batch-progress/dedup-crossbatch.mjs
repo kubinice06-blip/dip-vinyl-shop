@@ -9,6 +9,8 @@
 // 用法：node batch-progress/dedup-crossbatch.mjs [批名...]（省略＝掃全部 c5x／c6x）
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import { ROOT } from './lib.mjs';
 
 // 2026-09-03（c-73 策展層回報）：原本只掃 `desc-tools/batches/cards/*-cards.json`，
@@ -66,9 +68,15 @@ const strip = s => String(s || '')
   .toLowerCase()
   .replace(/[^\p{L}\p{N}]/gu, '');          // 保留所有文字系統，只丟標點與空白
 
+// 2026-09-15：已知且本機已擋下的跨批重複（裁定 310），列在 dedup-known.json，
+// 不再每批都紅——但仍印出來，讓人看得到它們還在。
+const KNOWN = path.join(__dirname, 'dedup-known.json');
+const known = fs.existsSync(KNOWN) ? JSON.parse(fs.readFileSync(KNOWN, 'utf8')).known : [];
+const knownKey = new Set(known.map(k => strip(k.artist) + '|' + strip(k.album)));
 const seen = new Map();
 const dup = [];
 const skipped = [];
+const dupKnown = [];
 let fromProp = 0;
 for (const b of batches) {
   const got = rowsOf(b);
@@ -82,10 +90,12 @@ for (const b of batches) {
     // 跳過但要出聲：靜靜略過會把真正壞掉的資料也一起藏起來。
     if (!c || typeof c !== 'object' || (!c.artist && !c.album)) { skipped.push(b); continue; }
     const k = strip(c.artist) + '|' + strip(c.album);
-    if (seen.has(k)) dup.push({ b, c, prev: seen.get(k) });
+    if (seen.has(k)) (knownKey.has(k) ? dupKnown : dup).push({ b, c, prev: seen.get(k) });
     else seen.set(k, { b, c });
   }
 }
+for (const d of dupKnown)
+  console.log(`（已知，本機已擋：${d.b} ${d.c.artist}《${d.c.album}》 ←→ ${d.prev.b}；待本機標記後從 dedup-known.json 移除）`);
 for (const d of dup)
   console.log(`⚠ ${d.b} ${d.c.artist}《${d.c.album}》${d.c.year}  ←→  ${d.prev.b} ${d.prev.c.artist}《${d.prev.c.album}》${d.prev.c.year}`);
 if (skipped.length) {
