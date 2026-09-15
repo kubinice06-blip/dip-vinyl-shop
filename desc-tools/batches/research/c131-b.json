@@ -1,0 +1,302 @@
+[
+ {
+  "key": "desc2:Stan Getz|Stan Getz Plays",
+  "artist": "Stan Getz",
+  "album": "Stan Getz Plays",
+  "facts": [
+   {
+    "f": "release-group 78da0d87 的欄位：title「Stan Getz Plays」、artist-credit「Stan Getz」、first-release-date **1988**、primary-type Album、secondary-types 空。轄下五筆 release 全是再發：1988 XE Official **Verve 833 535-2、CD 16 軌**（barcode 042283353527）；1990-05-25 JP Verve POCJ-1831 CD 12 軌；2004-09-29 JP Verve UCGU-7036 Hybrid SACD 11 軌；2011 XE Essential Jazz Classics EJC55513 CD 22 軌；ES Verve 840 833-2 CD 16 軌。**1955 年的 Norgran 原盤 MB 完全沒有建檔**，所以 first-release-date 落在 1988 的 CD 上。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=78da0d87-067d-318f-acfd-49a2430dd982&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs master 289637 的主版本是 **Norgran Records MGN 1042、US、1955、12 吋 LP、Mono、11 軌**：A 面〈Stella by Starlight〉〈Time on My Hands〉〈'Tis Autumn〉〈The Way You Look Tonight〉〈Lover Come Back to Me〉〈Body and Soul〉，B 面〈Stars Fell on Alabama〉〈You Turned the Tables on Me〉〈Thanks for the Memory〉〈Hymn of the Orient〉〈These Foolish Things〉。封套註記：A1–B2 錄於紐約 1952-12-12、B3–B5 錄於 1952-12-29；編制 Stan Getz（tenor saxophone）、Duke Jordan（piano）、Jimmy Raney（guitar）、Bill Crow（bass）、Frank Isola（drums），Norman Granz 監製並寫 liner notes，Phil Stern 攝影。Discogs 把這張標成「Compilation」——曲目來自兩張更早的 10 吋 LP。再發版本依序是 1957 Verve MGV 8133、1961 Verve V-8133／V6-8133。",
+    "src": "https://www.discogs.com/master/289637"
+   },
+   {
+    "f": "jazzdisco 的 Stan Getz 目錄：1952-12-12 紐約的 Stan Getz Quintet 場（Getz、Duke Jordan、Jimmy Raney、Bill Crow、Frank Isola）錄了〈Stella by Starlight〉到〈You Turned the Tables on Me〉八首，母帶編號 956–963，首發在 **Clef MGC-137《Stan Getz Plays》（1953，10 吋）**，部分曲目同時以 Mercury／Norgran 78 轉單曲發行；1952-12-29 同編制再錄〈Thanks for the Memory〉〈How Deep Is the Ocean〉〈Hymn of the Orient〉〈These Foolish Things〉（母帶 1110–1113），首發在 Clef MGC-143。**Norgran MGN-1042《Stan Getz Plays》1955** 把兩場合成 12 吋，1957 年再以 Verve MGV-8133 重發。",
+    "src": "https://www.jazzdisco.org/stan-getz/discography/"
+   },
+   {
+    "f": "英文維基：這張是 Getz 1952 年錄音、1955 年由 Norgran 發行的專輯，曲目先前已分別發表在 Clef 的兩張 10 吋 LP（MGC 137 與 MGC 143）上。1988 年的 CD 再發追加五軌：〈How Deep Is the Ocean?〉（原 Clef MGC 143）、〈Nobody Else But Me〉〈Down by the Sycamore Tree〉（原 Verve MGV 8200）、〈I Hadn't Anyone Till You〉〈With the Wind and the Rain in Your Hair〉（原 Norgran MGN 1034），後四首是 1954-01-23 洛杉磯錄音，編制換成 Jimmy Rowles（piano）、Bob Whitlock（bass）、Max Roach（drums）。AllMusic 的 Scott Yanow 評這張「Getz 狀態極佳，與他最好的樂團之一合作……特別是抒情曲，真正展現了他討喜的音色」。",
+    "src": "https://en.wikipedia.org/wiki/Stan_Getz_Plays"
+   },
+   {
+    "f": "MB 1988 年 CD 的錄音層關係：Getz 的 tenor saxophone 掛在全部 16 軌；Duke Jordan、Jimmy Raney、Bill Crow、Frank Isola 掛在 12 軌；Jimmy Rowles（piano）、Bob Whitlock（double bass）、Max Roach（drums）掛在 4 軌；Norman Granz 掛 producer。逐軌長度（CD 版）：〈Stella by Starlight〉2:45、〈Body and Soul〉3:18、〈Stars Fell on Alabama〉3:25、〈Hymn of the Orient〉2:57、〈These Foolish Things〉3:24。",
+    "src": "https://musicbrainz.org/ws/2/release/05a3dfa7-234a-4bcc-981b-74e2163214fb?fmt=json&inc=recordings+recording-level-rels+artist-rels"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1716779110）盤名「Stan Getz Plays」、11 軌、℗ 1955 UMG Recordings（A Verve Label Group Release）、releaseDate 1954-01-01；11 軌曲名與曲序與 Discogs 的 Norgran MGN 1042 逐軌相同，長度與 MB CD 版差 1–3 秒（首軌〈Stella by Starlight〉167 秒、末軌〈These Foolish Things〉204 秒），全部有試聽。另一筆 1440653126 是 16 軌的 1988 CD 版（℗ 1988 The Verve Music Group）。",
+    "src": "https://itunes.apple.com/lookup?id=1716779110&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1952 年冬天兩場錄音先切成兩張 10 吋，1955 年 Norgran 才把它們合成一張 12 吋——這張「專輯」在資料庫裡被標成合輯",
+   "MusicBrainz 上它的第一個發行年是 1988，因為原盤沒人建檔——首發年要回到 Norgran 1042 號"
+  ],
+  "sound": "11 首標準曲、每首三分鐘上下，Getz 的次中音配 Jimmy Raney 的吉他與 Duke Jordan 的鋼琴，沒有一首超過三分半；〈Stella by Starlight〉開場、〈Body and Soul〉是 A 面收尾的抒情曲，〈Hymn of the Orient〉是唯一非標準曲（Gigi Gryce 作曲）。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Stella by Starlight",
+   "Body and Soul",
+   "Hymn of the Orient"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1955,
+   "recorded": 1952,
+   "note": "卡單 1955 成立：Discogs master 289637 主版本 Norgran MGN 1042 為 1955、jazzdisco 記 Norgran MGN-1042 1955、en.wiki 1955、Apple ℗ 1955。MB first-release-date 1988 是「只建了再發」的失真（第 364 條第一型）。錄音 1952-12-12 與 1952-12-29 紐約。⚠ 曲目更早以 Clef MGC-137（1953）與 MGC-143 兩張 10 吋首發，若採「曲目首發年」會是 1953——依第 91／95 條與策展層的取法，卡片記 12 吋合成盤的 1955。"
+  },
+  "notes": "**覆核策展層：MBID／RG 一致、五筆再發 release 屬實、「原 Norgran LP 未建檔」屬實。擋下一處**：curatorRisk 說「原 LP 8 軌（Apple 1444017241 為 8 軌版）」——**Discogs 的 Norgran MGN 1042 是 11 軌**（A 面 6、B 面 5），Apple 1716779110 的 11 軌版與它逐軌相同；1444017241 那筆 8 軌的曲目與本盤不對位，不是原盤形態。**行文引軌數請引 11 軌**，不是 8。｜**性質**：Discogs 標 Compilation（兩張 Clef 10 吋合成），但這是 1950 年代 10 吋轉 12 吋的通例形態（第 167／190 條「照一般 Album 寫」），有歷史定位（Getz–Raney 五重奏時期的錄音室代表作），**不列建議移除**。｜**串流採信 1716779110**（us，11 軌 ℗ 1955）：軌數與曲序對 Norgran 原盤，長度對 MB 的 CD 版差 1–3 秒。**有固定試聽來源。**｜**人名邊界**：Jordan／Raney／Crow／Isola 四人有 MB 錄音層關係＋Discogs credits＋jazzdisco 三重背書，可寫；Rowles／Whitlock／Roach 只在 CD 加軌上，正文若寫原盤就不要提。｜年份：MB 1988 vs 原盤 1955，見 yearVerified；Apple releaseDate 1954-01-01 是店面雜訊。｜同名撞卡：MB 另有 f33d31f8《Stan Getz Plays》2002（Verve Master Edition 再發 RG）與 Clef MGC-137 同名 10 吋（MB 未建），策展層已標。"
+ },
+ {
+  "key": "desc2:Stan Getz|Nobody Else But Me",
+  "artist": "Stan Getz",
+  "album": "Nobody Else But Me",
+  "facts": [
+   {
+    "f": "release-group 47bb1bdb 的欄位：title「Nobody Else But Me」、artist-credit「Stan Getz」、first-release-date 1994、primary-type Album、secondary-types 空。轄下只有一筆 release：**1994 US Official、PolyGram、catno 314521668-2、CD 10 軌、barcode 731452166029**。10 軌：〈Summertime〉7:01、〈6-Nix-Quix-Flix〉6:28、〈Here's That Rainy Day〉5:10、〈Waltz for a Lovely Wife〉6:52、〈Out of Focus〉7:10、〈Nobody Else But Me〉4:14、〈Sweet Sorrow〉6:06、〈Little Girl Blue〉3:41、〈What Is This Thing Called Love〉4:27、〈Waltz for a Lovely Wife (Single)〉3:11。錄音層關係全部 10 軌：Stan Getz（tenor saxophone）、Gary Burton（vibraphone）、Gene Cherico（bass）、Joe Hunt（drums）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=47bb1bdb-f9ff-41f8-9870-9a07e5a7de2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "英文維基：這是 Getz **1964 年 3 月 4 日在 Van Gelder Studio（Englewood Cliffs）錄的錄音室專輯，直到 1994 年 9 月 27 日才由 Verve 發行**，原因是「當時 Getz 的巴西音樂太成功」。製作人 Creed Taylor。編制 Stan Getz（tenor saxophone）、Gary Burton（vibraphone）、Gene Cherico（bass）、Joe Hunt（drums）。曲目裡〈6-Nix-Quix-Flix〉與〈Out of Focus〉是 Gary Burton 作曲、〈Waltz for a Lovely Wife〉是 Phil Woods 作曲、〈Sweet Sorrow〉是 Michael Gibbs 作曲，標題曲是 Jerome Kern／Oscar Hammerstein II 的作品。",
+    "src": "https://en.wikipedia.org/wiki/Nobody_Else_but_Me_(album)"
+   },
+   {
+    "f": "jazzdisco 的 Stan Getz 目錄把這場登記為 Stan Getz Quartet，**1964-03-04 Van Gelder Studio**，母帶編號 64VK273–64VK280 八首（〈Here's That Rainy Day〉〈Waltz for a Lovely Wife〉〈Six-Nix-Quix-Flix〉〈Out of Focus〉〈Sweet Sorrow〉〈Nobody Else But Me〉〈Summertime〉〈What Is This Thing Called Love〉）加〈Little Girl Blue〉與〈Waltz for a Lovely Wife〉單曲版，全部首發在 Verve 314 521 660-2。",
+    "src": "https://www.jazzdisco.org/stan-getz/discography/"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1468993376）盤名「Nobody Else But Me」、10 軌、releaseDate **1994-09-27**、℗ 1994 UMG Recordings（A Verve Label Group Release）；10 軌曲名曲序與 MB 逐軌相同，長度差 1–3 秒（首軌〈Summertime〉419 秒、末軌〈Waltz for a Lovely Wife (Single Version)〉191 秒），全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1468993376&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1964 年 3 月錄完就進倉庫，理由是同一年 Getz 的巴西唱片賣太好——三十年後 1994 年才第一次出版",
+   "Gary Burton 二十歲出頭在這裡寫了兩首曲子，這張是 Getz 四重奏 1964 年編制唯一的錄音室紀錄之一"
+  ],
+  "sound": "10 軌、54 分鐘，四重奏無鋼琴、由 Gary Burton 的顫音琴填和聲；〈Summertime〉七分鐘開場，Burton 的兩首〈6-Nix-Quix-Flix〉〈Out of Focus〉是節奏最活的曲子，〈Little Girl Blue〉三分四十秒是最短的抒情曲，末軌是〈Waltz for a Lovely Wife〉的單曲版。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Summertime",
+   "Nobody Else But Me",
+   "Out of Focus"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "recorded": 1964,
+   "note": "卡單 1994 成立：MB first-release-date 1994、唯一 release 1994 US CD、en.wiki 1994-09-27、Apple releaseDate 1994-09-27／℗ 1994。錄音 1964-03-04 Van Gelder Studio（en.wiki 與 jazzdisco 一致）。典型「錄了三十年才發」的 vault 盤，year 取首發年 1994，錄音年寫進正文。"
+  },
+  "notes": "**覆核策展層：MBID／RG／唯一 release 屬實，年份判法正確，未擋下。** 一處補正：**catno 兩說**——MB 記 314521668-2、en.wiki 與 jazzdisco 記 314 521 660-2，Apple 沒有 catno；**正文不要引 catno**（引錯不如不引）。｜**串流採信 1468993376**（us）：10 軌對 10 軌、曲序長度逐軌相符。**有固定試聽來源。**｜**人名邊界**：Burton／Cherico／Hunt 有 MB 錄音層關係＋en.wiki＋jazzdisco 三重背書，可寫；Creed Taylor（製作）只出自 en.wiki，⚠ 單一來源，正文可不提。｜**「因為巴西音樂太成功而擱置」**是 en.wiki 引述（來自 Verve 的說法），可寫，但不要延伸成「Getz 自己不想發」之類的動機描述。〈Nobody Else But Me〉這首曲子 Getz 1954 年也錄過（收在《Stan Getz Plays》1988 CD 加軌），同批另一張卡有提到，正文不必重複。｜非選輯：是單一場錄音的原始出版品。"
+ },
+ {
+  "key": "desc2:Ahmad Jamal|Ahmad Jamal at the Blackhawk",
+  "artist": "Ahmad Jamal",
+  "album": "Ahmad Jamal at the Blackhawk",
+  "facts": [
+   {
+    "f": "release-group 5ac84610 的欄位：title「Ahmad Jamal at the Blackhawk」、artist-credit「Ahmad Jamal」、first-release-date 1961、primary-type Album、secondary-types **Live**。轄下只有兩筆 release：**1961 NL Official 12 吋 8 軌、catno MGCH 9221、廠牌欄空白**；2021-12-18 US Digital 8 軌（Crazy Warthog Media）。**Argo 的美國原盤沒有建檔。** 8 軌：〈I'll Take Romance / My Funny Valentine〉6:12、〈Like Someone in Love〉2:46、〈Falling in Love With Love〉4:15、〈The Best Thing for You〉4:37、〈April in Paris〉4:15、〈The Second Time Around〉4:07、〈We Live in Two Different Worlds〉4:24、〈Night Mist Blues〉6:45。錄音層關係全部 8 軌：Ahmad Jamal（piano）、Israel Crosby（double bass）、Vernell Fournier（drums）、Paul Gayten（producer）；release 層 Don Bronstein（design）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5ac84610-5960-4108-9a60-b08d83a38393&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs master 310249《At the Blackhawk》的主版本是 **Argo LPS-703（封面）／LP-703（封底）、US、1962 年 11 月、12 吋 LP**，A 面〈I'll Take Romance／My Funny Valentine〉〈Like Someone in Love〉〈Falling in Love With Love〉〈The Best Thing for You〉、B 面〈April in Paris〉〈The Second Time Around〉〈We Live in Two Different Worlds〉〈Night Mist Blues〉；credits：Israel Crosby（bass）、Vernell Fournier（drums）、John Hammond（liner notes）、Paul Gayten（recording supervisor）、Don Bronstein（cover design）。**最早的所有版本都是 1962 年**：美國 Argo LP 703 mono、加拿大 Argo／Chess、澳洲 Chess CHL 224。封套註記寫「1961 年錄於舊金山 Blackhawk」。",
+    "src": "https://www.discogs.com/master/310249"
+   },
+   {
+    "f": "英文維基：這是 Ahmad Jamal 三重奏在舊金山 Blackhawk 俱樂部的現場錄音，**1962 年 1 月 31 日與 2 月 1 日錄音、1962 年由 Argo 發行（LPS-703）**，製作 Paul Gayton。**這是 Jamal 與 Israel Crosby、Vernel Fournier 這組三重奏的最後一次錄音**——錄完幾個月後 Crosby 心臟病發過世，Jamal 兩年多沒有再錄新的三重奏專輯（下一張是現場的《Naked City Theme》）。原版 liner notes 由製作人兼樂評 John Hammond 執筆，稱這組三重奏「爵士史上最敏感、細緻、微妙的音樂之一」，並說 Jamal 在這張裡「帶著他平常藏起來的衝勁」演奏。曲目多為標準曲，唯一原創是〈Night Mist Blues〉。1963 年《Jazz Journal》的評論寫他「觸鍵輕盈優美……得到已故的 Israel Crosby 這位偉大貝斯手的有力支撐」。2022 年 American Jazz Classics 出了雙 CD《The Complete 1962 Ahmad Jamal at the Blackhawk》，在原 LP 之外加進〈Darn That Dream〉〈On Green Dolphin Street〉兩首與九首另一取；Mosaic 的 9 CD《The Complete Ahmad Jamal Trio Argo Sessions》也收錄這場。",
+    "src": "https://en.wikipedia.org/wiki/Ahmad_Jamal_at_the_Blackhawk"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1442841156）盤名「At the Blackhawk (Live)」、8 軌、℗ 1962 Verve Label Group、releaseDate 1961-01-01；8 軌曲名曲序與 Argo 原盤相同（各軌標題後綴「Live at the Blackhawk, San Francisco/1961」），全部有試聽。逐軌長度與 MB 的荷蘭版有差：〈I'll Take Romance / My Funny Valentine〉372 秒、〈The Best Thing for You〉276 秒相符，但〈Like Someone in Love〉315 秒（LP 166 秒）、〈April in Paris〉376 秒（LP 255 秒）、〈We Live in Two Different Worlds〉309 秒（LP 264 秒）、〈Night Mist Blues〉425 秒（LP 405 秒）都比 LP 長。",
+    "src": "https://itunes.apple.com/lookup?id=1442841156&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Jamal、Crosby、Fournier 這組三重奏的最後一次錄音——錄完幾個月，貝斯手 Israel Crosby 心臟病發過世",
+   "Liner notes 是 John Hammond 寫的：他說 Jamal 在這裡「帶著平常藏起來的衝勁」"
+  ],
+  "sound": "8 軌現場三重奏，開場把〈I'll Take Romance〉與〈My Funny Valentine〉接成六分鐘的組曲，〈Like Someone in Love〉不到三分鐘，收尾的原創〈Night Mist Blues〉近七分鐘；Crosby 的貝斯與 Fournier 的刷子撐住 Jamal 標誌性的留白與突然的爆發。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Night Mist Blues",
+   "I'll Take Romance / My Funny Valentine",
+   "April in Paris"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1962,
+   "recorded": 1962,
+   "note": "**與卡單不合：卡單 1961，本層判 1962。** Discogs master 310249 主版本 Argo LPS-703 記 1962-11、最早所有版本皆 1962；en.wiki 記 1962 發行；Apple ℗ 1962。MB first-release-date 1961 來自那筆廠牌空白的荷蘭 MGCH 9221（日期可疑），Argo 原盤 MB 未建檔（第 364 條第一型）。錄音日期兩說：en.wiki 記 1962-01-31／02-01；Discogs 註記與 Apple 標題後綴寫 1961。Crosby 1962 年 8 月過世、前一張 Alhambra 現場錄於 1961 年（Apple ℗ 1961／1962-03 上架），時序上 1962 年初較合理，但正文不要寫錄音的月日。"
+  },
+  "notes": "**覆核策展層：MBID／RG 一致、兩筆 release 屬實、「Argo LP-703 原盤 MB 未建檔」屬實。擋下兩處**：(1) **年份**——卡單 1961 應改 1962（見 yearVerified，四個來源對一筆可疑的荷蘭 release）；(2) label 欄寫「1961-01 舊金山 Blackhawk 現場」——錄音月份無來源支持（en.wiki 是 1962-01-31／02-01，Discogs 只寫 1961），**正文只寫「舊金山 Blackhawk 現場」不寫月份**。｜**封面 CAA 404 的觀察**：MB 兩筆 release 都沒上傳圖；Discogs master 310249 有 LPS 703 原盤封面（Don Bronstein 設計）、Apple 1442841156 有 Verve 數位版封面，可供本機補圖時參考。｜**串流：第三種查法找回**——us `search` 未命中，gb `search` 命中後直查 us 店面 lookup 1442841156 有 8 軌全試聽，℗ 1962 Verve。**串流採信 1442841156**，但⚠ 四軌長度比 LP 長 20–150 秒（疑為未剪輯版），**正文引長度只引 LP 版**。｜**人名邊界**：Crosby／Fournier 有 MB 錄音層關係＋Discogs＋en.wiki 三重背書，可寫；John Hammond（liner notes）有 Discogs＋en.wiki 雙重，可寫；Paul Gayten（製作）MB＋Discogs 雙重，可寫。｜**後續事件屬「與作品直接綁定」**：Crosby 之死使本作成為這組三重奏的最後錄音，可寫，克制、不渲染。｜非選輯：是原始現場專輯（secondary-type Live，依第 253 條收）。同名撞擊：MB 另有 e36b9c94《Poinciana》1963（另一場現場）與 2022《The Complete 1962…》雙 CD，皆非本盤。"
+ },
+ {
+  "key": "desc2:Ahmad Jamal|Happy Moods",
+  "artist": "Ahmad Jamal",
+  "album": "Happy Moods",
+  "facts": [
+   {
+    "f": "release-group 20f36996 的欄位：title「Happy Moods」、artist-credit「Ahmad Jamal」、first-release-date 1960-01-07、primary-type Album、secondary-types 空。轄下五筆：**1960-01-07 US Official Argo LP-662、12 吋 10 軌**（disambiguation「monaural release」）；2007 XE Jazz Beat 511 CD 20 軌（併裝）；2014 XE Phoenix 131603 CD 20 軌（credit「Ahmad Jamal's Three Strings」）；2017-06-23 XW Verve Reissues 數位 10 軌（barcode 602557705058）；另一筆無資料 CD 10 軌。10 軌：〈Little Old Lady〉5:18、〈For All We Know〉2:48、〈Pavanne〉5:48、〈Excerpt From the Blues〉3:05、〈You'd Be So Easy to Love〉3:24、〈Time on My Hands〉1:39、〈Rain Check〉4:47、〈I'll Never Stop Loving You〉3:06、〈Speak Low〉4:58、〈Rhumba No. 2〉2:41。錄音層關係全部 10 軌：Ahmad Jamal（piano）、Israel Crosby（bass）、Vernell Fournier（drums）、Jack Tracy（producer）、Ron Malo（engineer）；release 層 Jack Tracy（liner notes）、Chuck Stewart（photography）、Emmett McBain（design）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=20f36996-60a0-478e-b051-811d45291c8a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs master 59864 的主版本是 Argo LP-662、US、1960、12 吋 LP mono；同年另有 LPS-662 stereo、加拿大 Argo LPS-C662，以及一款 7 吋 33⅓ 轉的 jukebox 版（Argo LPS 662）。",
+    "src": "https://www.discogs.com/master/59864"
+   },
+   {
+    "f": "英文維基：**1960 年 1 月 20–21 日在芝加哥 Ter-Mar Recording Studios 錄音**，同年由 Argo 發行（LPS-662），製作 Jack Tracy，編制 Ahmad Jamal（piano）、Israel Crosby（bass）、Vernel Fournier（drums）。曲目含 Morton Gould 的〈Pavanne〉、Billy Strayhorn 的〈Rain Check〉、Kurt Weill 的〈Speak Low〉，Jamal 自己的作品是〈Excerpt from the Blues〉與〈Rhumba No. 2〉。AllMusic 給三星，評語是「這張絲毫無損於那些認為這位鋼琴家值得更高評價的人的立場」。",
+    "src": "https://en.wikipedia.org/wiki/Happy_Moods"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1443907095）盤名「Happy Moods」、10 軌、releaseDate 1960-01-07、℗ 1960 Verve Label Group；10 軌曲名曲序與 Argo 原盤相同、逐軌長度差在 2 秒內（首軌〈Little Old Lady〉317 秒、末軌〈Rhumba No. 2〉161 秒），全部有試聽。另一筆 773685033（gb，「Happy Moods (Mono Version)」，BNF Collection 2013）是公共領域再發，曲名有錯字（「Fol All We Know」）。",
+    "src": "https://itunes.apple.com/lookup?id=1443907095&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一組三重奏、同一位貝斯手 Israel Crosby——這張是 1960 年初芝加哥錄音室的 10 首短曲，最短的〈Time on My Hands〉只有一分半",
+   "MusicBrainz 與 Apple 都把發行日記成 1960 年 1 月 7 日，但錄音是 1 月 20–21 日——那個日期不可能是發行日"
+  ],
+  "sound": "10 軌、37 分鐘，全是三到五分鐘的三重奏短曲：〈Little Old Lady〉與〈Pavanne〉各五分多是最長的兩首，〈Time on My Hands〉99 秒最短；〈Excerpt From the Blues〉〈Rhumba No. 2〉兩首原創夾在標準曲之間，〈Rain Check〉是 Strayhorn 的曲子。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Pavanne",
+   "Little Old Lady",
+   "Rain Check"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1960,
+   "recorded": 1960,
+   "note": "卡單 1960 成立：MB first-release-date 1960-01-07、Discogs master 59864 主版本 Argo LP-662 1960、en.wiki 1960、Apple ℗ 1960。⚠ MB 與 Apple 的「1960-01-07」早於 en.wiki 的錄音日 1960-01-20／21，那個月日不可信（第 311 條那類把某個日期誤填的形狀），**正文只寫 1960 年，不寫月日**。"
+  },
+  "notes": "**覆核策展層：MBID／RG／五筆 release／Argo LP-662 原盤屬實，年份判法正確，未擋下。** 一處提醒：策展層寫「MB first-release-date 1960-01-07 與原盤一致」——那個日期早於錄音日，只能說「年份一致」。｜**串流採信 1443907095**（us）：10 軌對 10 軌、逐軌長度差 ≤2 秒，℗ 1960。**有固定試聽來源。**｜**人名邊界**：Crosby／Fournier 有 MB 錄音層＋en.wiki 雙重背書，可寫；Jack Tracy（製作）MB＋en.wiki 雙重，可寫；Ron Malo（錄音）、Chuck Stewart（攝影）只出自 MB，正文可不提。｜〈Pavanne〉是 Morton Gould 的曲子，Jamal 之前也錄過（1955 年）——本層未另查那次錄音的細節，正文不要寫成「首次錄製」。｜軌數三形態（第 251 條）：LP 10／歐洲併裝 CD 20／串流 10，引軌數只引 10。｜非選輯、非重發：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:McCoy Tyner|Inception",
+  "artist": "McCoy Tyner",
+  "album": "Inception",
+  "facts": [
+   {
+    "f": "release-group b19867c3 的欄位：title「Inception」、artist-credit「McCoy Tyner」、first-release-date 1962、primary-type Album、secondary-types 空。轄下六筆：**1962 US Official impulse! A 18（mono）與 AS 18（stereo）、12 吋 6 軌**；1988 US impulse! MCA-42233 LP（credit 改成「McCoy Tyner Trio」）；1997-03-25 US impulse! IMPD-220 CD（barcode 011105022026）；2011 US Analogue Productions CIPJ 18 SA Hybrid SACD（barcode 753088001864）；2013-01-01 XW 數位高解析。6 軌：〈Inception〉4:29、〈There Is No Greater Love〉6:21、〈Blues for Gwen〉4:26、〈Sunset〉4:42、〈Effendi〉6:40、〈Speak Low〉6:17。錄音層關係全部 6 軌：McCoy Tyner（piano）、Art Davis（double bass）、Elvin Jones（drums）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b19867c3-1f7d-313a-880f-d91005417a07&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs master 177612 的主版本是 Impulse! A-18、US、1962、12 吋 LP；同年另有 AS-18 stereo、A-18 promo mono、加拿大 Impulse! A-18、澳洲 Impulse! IL-30,890，全部 1962。",
+    "src": "https://www.discogs.com/master/177612"
+   },
+   {
+    "f": "jazzdisco 的 McCoy Tyner 目錄把這張登記為 McCoy Tyner Trio（McCoy Tyner, piano; Art Davis, bass; Elvin Jones, drums），**1962 年 1 月 10 日紐約**錄〈Inception〉〈Sunset〉〈Effendi〉（母帶 10684–10686）、**1 月 11 日**錄〈Speak Low〉〈There Is No Greater Love〉〈Blues for Gwen〉（10687–10689），首發 Impulse! A-18／AS-18《Inception》1962，1997 年 IMPD-220 CD 再發；〈Inception〉〈Effendi〉後來也收進 Impulse! 的《Reevaluation: The Impulse Years》選輯，六首全部收進 1978 年《The Dedication Series Vol. VI: The Early Trios》。",
+    "src": "https://www.jazzdisco.org/mccoy-tyner/discography/"
+   },
+   {
+    "f": "英文維基：**這是 McCoy Tyner 的首張個人專輯**，1962 年 6 月由 Impulse! 發行（出處是 Ashley Kahn《The House That Trane Built: The Story of Impulse Records》第 90 頁），1962 年 1 月 10–11 日在 Englewood Cliffs 的 Van Gelder Studio 錄音，製作 Bob Thiele，三重奏成員是貝斯手 Art Davis 與鼓手 Elvin Jones。〈Blues for Gwen〉以 Tyner 的姊妹 Gwen 命名；〈Sunset〉的曲名是他妻子 Aisha 提議的，因為這首曲子「讓她想到自然的印象，而且是一首沉思的抒情曲」。AllMusic 的 Alexander Gelfand 說這張「讓聽者有機會聽到非常年輕的 Tyner 在 1960 年代初期 John Coltrane 經典四重奏的框架之外是什麼樣子；它展現的抒情鋼琴取徑，與 Tyner 成熟期的風格相去甚遠」。",
+    "src": "https://en.wikipedia.org/wiki/Inception_(McCoy_Tyner_album)"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1890340978）掛名「McCoy Tyner Trio」、盤名「Inception」、6 軌、releaseDate 1962-03-20、℗ 1962 UMG Recordings（A Verve Records release）；6 軌曲名曲序與 Impulse! A-18 相同、逐軌長度差 ≤3 秒（首軌〈Inception〉267 秒、末軌〈Speak Low〉377 秒），全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1890340978&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Coltrane 四重奏的鋼琴手第一次自己掛名——鼓手還是 Elvin Jones，錄音只用了 1962 年 1 月的兩天",
+   "〈Blues for Gwen〉是他姊妹的名字，〈Sunset〉的曲名是太太 Aisha 取的：Impulse! 給了這位 23 歲鋼琴手一張自己的唱片"
+  ],
+  "sound": "6 軌、33 分鐘的三重奏，三首原創（〈Inception〉〈Blues for Gwen〉〈Sunset〉〈Effendi〉四首裡三首在 A 面）配三首標準曲；〈Effendi〉六分四十秒是最長的一首，Elvin Jones 在〈Inception〉與〈Effendi〉裡推得最緊，〈Sunset〉是唯一的慢板抒情曲。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Inception",
+   "Effendi",
+   "Blues for Gwen"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1962,
+   "recorded": 1962,
+   "note": "卡單 1962 成立：MB first-release-date 1962、Discogs master 177612 主版本 Impulse! A-18 1962、jazzdisco 1962、en.wiki 1962 年 6 月（引 Kahn 的 Impulse! 廠史）、Apple ℗ 1962。錄音 1962-01-10／11。"
+  },
+  "notes": "**覆核策展層：MBID／RG／六筆 release／年份屬實，未擋下。** 策展層的提醒「Apple 用編制掛名 McCoy Tyner Trio、要用 collectionId 配對」屬實，已照做。｜**串流採信 1890340978**（us，掛名 McCoy Tyner Trio）：6 軌對 6 軌、長度差 ≤3 秒，℗ 1962。**有固定試聽來源。** ⚠ 店面掛名與卡單掛名「McCoy Tyner」不同，配對靠 collectionId，正文不受影響（第 363 條第 2 型：編制掛名收攏到池中多數寫法）。｜**人名邊界**：Art Davis／Elvin Jones 有 MB 錄音層關係＋jazzdisco＋en.wiki 三重背書，可寫；Bob Thiele（製作）只出自 en.wiki，⚠ 單一來源，正文可不提；Gwen／Aisha 兩個家人名字出自 en.wiki 單一來源，**正文可寫「以姊妹命名」「妻子取的曲名」但不必具名**。｜**「首張個人專輯」**：en.wiki 明寫 debut album，jazzdisco 目錄 1962 年之前 Tyner 名下沒有領銜錄音，可寫。「Coltrane 四重奏成員」是背景常識，正文點到即可，不要延伸 Coltrane 的敘事。｜Impulse! 廠牌線：這是 Impulse! 早期目錄（A-18）的一張，同期 A-10 是 Coltrane《Africa/Brass》——本層未另查 Impulse! 沿革，正文若寫廠牌只寫「Impulse! 目錄第 18 號」這種可核的事。｜非選輯：原創錄音室專輯。同名撞擊：策展層已標，MB 上 Tyner 名下只此一張《Inception》。"
+ },
+ {
+  "key": "desc2:McCoy Tyner|Expansions",
+  "artist": "McCoy Tyner",
+  "album": "Expansions",
+  "facts": [
+   {
+    "f": "release-group 8e4fff49 的欄位：title「Expansions」、artist-credit「McCoy Tyner」、first-release-date 1969、primary-type Album、secondary-types 空。轄下五筆：**1969 US Official Blue Note BST 84338、12 吋 5 軌**；1995-08-15 US Blue Note CDP 7 84338 2 CD（barcode 077778433828，註記「Produced by Duke Pearson／Recorded by Rudy Van Gelder, Englewood Cliffs, NJ on August 23, 1968」）；2014 XW 數位 24bit／192kHz；2021-08-06 XW Blue Note B0033004-01 12 吋 180g（barcode 602435268170，Tone Poet 系列）；另一筆 Applause Records 4416 CD。5 軌：〈Vision〉12:20、〈Song of Happiness〉12:01、〈Smitty's Place〉5:23、〈Peresina〉10:22、〈I Thought I'd Let You Know〉6:27。錄音層關係全部 5 軌：McCoy Tyner（piano）、Woody Shaw（trumpet）、Gary Bartz（woodwind）、Wayne Shorter（reeds）、Ron Carter（cello）、Herbie Lewis（bass）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8e4fff49-b6fb-30c3-9ef8-643eaf26303e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs master 92934 的主版本是 Blue Note BST 84338、US、1969、12 吋 LP stereo；1969 年另有德國 BST 84338 K 與日本版，1971 年美國 repress。",
+    "src": "https://www.discogs.com/master/92934"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄：**BST 84338《Expansions》1969**，McCoy Tyner Septet——Woody Shaw（trumpet）、Gary Bartz（alto sax, wooden flute）、Wayne Shorter（tenor sax, clarinet）、McCoy Tyner（piano）、Ron Carter（cello）、Herbie Lewis（bass）、Freddie Waits（drums），**1968 年 8 月 23 日 Van Gelder Studio, Englewood Cliffs** 錄〈Song of Happiness〉〈Vision〉〈Peresina〉〈Smitty's Place〉〈I Thought I'd Let You Know〉（母帶 3090–3094）；1988 年 CDP 7 84338 2 首次 CD 化。同一目錄裡 Tyner 前一張 Blue Note 是 BST 84307《Time for Tyner》（1968 年 5 月錄、1969 年發）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "英文維基：這是 Tyner 的第十張專輯、在 Blue Note 的第四張，1968 年 8 月錄音，**發行日記為 1970 年 6 月（出處是 1970 年 6 月 20 日的《Billboard》）**，製作 Duke Pearson。編制是七重奏：Woody Shaw（trumpet）、Gary Bartz（alto saxophone，第 2 軌吹木笛）、Wayne Shorter（tenor saxophone，第 2 軌吹單簧管）、Ron Carter 在這裡拉大提琴、Herbie Lewis（bass）、Freddie Waits（drums）。五首裡四首是 Tyner 作曲，〈I Thought I'd Let You Know〉是 Cal Massey 的曲子。AllMusic 的 Scott Yanow 評：「這些刺激的音樂落在進階硬咆勃與前衛之間，推擠著現代主流爵士的邊界」。",
+    "src": "https://en.wikipedia.org/wiki/Expansions_(McCoy_Tyner_album)"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1444097844）盤名「Expansions」、5 軌、℗ 2014 Blue Note Records、releaseDate 1968-08-23；5 軌曲名曲序與 BST 84338 相同、逐軌長度差 ≤3 秒（首軌〈Vision〉737 秒、末軌〈I Thought I'd Let You Know〉388 秒），全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1444097844&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Ron Carter 在這張不彈貝斯、拉大提琴，Wayne Shorter 在〈Song of Happiness〉換吹單簧管、Gary Bartz 吹木笛——七重奏裡三個人換了樂器",
+   "1968 年 8 月錄完，唱片行架上要等到 1969 或 1970——這張的出版年三個資料庫與《Billboard》各執一詞"
+  ],
+  "sound": "5 軌、46 分鐘，兩首十二分鐘的長曲〈Vision〉〈Song of Happiness〉開場，〈Smitty's Place〉五分鐘是唯一的短曲，〈Peresina〉十分鐘的拉丁節奏是 B 面的重心，Cal Massey 的〈I Thought I'd Let You Know〉收尾。三管加大提琴的織體讓它比 Tyner 的三重奏厚得多。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Vision",
+   "Peresina",
+   "Song of Happiness"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1969,
+   "recorded": 1968,
+   "note": "**兩說、列為年份異議但不改卡單**：MB first-release-date 1969、Discogs master 92934 主版本與最早的美德日三版都記 1969、jazzdisco 記 1969；**但 en.wiki 引 1970-06-20 的《Billboard》記發行 1970 年 6 月**。旁證：同系列 BST 84333《Now!》（本批）MB 記 1970-06、en.wiki 引 1970-06-06《Billboard》、Discogs 1970，號碼比 84338 小；Blue Note 這段號碼大致按出版順序，84338 早於 84333 出版的機率低。**本層傾向 1970**，但三個資料庫一致記 1969，留主線裁定；正文避免寫「1969 年發行」這種硬句，可寫「1968 年 8 月錄音」。"
+  },
+  "notes": "**覆核策展層：MBID／RG／五筆 release／BST 84338 原盤屬實。年份提出異議**：見 yearVerified——卡單 1969 有三個資料庫撐、en.wiki 的《Billboard》1970-06-20 與 84333《Now!》的 1970-06 出版形成旁證，兩說，列給主線。策展層順帶記的「池中《Extensions》1972 應為 1973」本層未另查、不覆核。｜**串流採信 1444097844**（us）：5 軌對 5 軌、長度差 ≤3 秒。**有固定試聽來源。** ⚠ Apple releaseDate 1968-08-23 是錄音日，不得覆蓋年份。｜**人名邊界**：Shaw／Bartz／Shorter／Carter／Lewis 有 MB 錄音層＋jazzdisco＋en.wiki 三重背書，可寫；Freddie Waits 只有 jazzdisco＋en.wiki（MB 錄音層漏掛），仍是雙重，可寫；Duke Pearson（製作）MB 1995 CD 註記＋jazzdisco 缺、en.wiki 有，雙重，可寫；Cal Massey（作曲）en.wiki 單一來源但 Discogs 曲目 credits 可核，可寫曲名不必具名。｜「第十張專輯、Blue Note 第四張」是 en.wiki 的序數，**序數不可靠就不寫**（第 c-fact 規則：序數本身不可靠時直接不寫）——jazzdisco 目錄裡 Tyner 在 Blue Note 之前有 Impulse! 多張，本層未逐張數，正文不要寫序數。｜Blue Note 廠牌線：1968–69 是 Liberty 收購後的時期、Duke Pearson 任製作——本層未另查廠牌沿革，正文若提只寫製作人。｜非選輯：原創錄音室專輯。"
+ },
+ {
+  "key": "desc2:McCoy Tyner|Enlightenment",
+  "artist": "McCoy Tyner",
+  "album": "Enlightenment",
+  "facts": [
+   {
+    "f": "release-group 8b1b4e53 的欄位：title「Enlightenment」、artist-credit「McCoy Tyner」、first-release-date 1973、primary-type Album、secondary-types **Live**。轄下兩筆：**1973 US Official Milestone M-55001、12 吋雙 LP、5＋3 軌**；1990-06-26 US Milestone MCD-55001-2 CD 7 軌（barcode 025218550123）。雙 LP 曲目：第一張〈Presenting the McCoy Tyner Quartet〉1:18、〈Enlightenment Suite, Part 1: Genesis〉10:04、〈Part 2: The Offering〉4:18、〈Part 3: Inner Glimpse〉10:36、〈Presence〉10:31；第二張〈Nebula〉8:36、〈Walk Spirit, Talk Spirit (Introduction)〉6:36、〈Walk Spirit, Talk Spirit〉18:42。錄音層關係：McCoy Tyner（piano）、Azar Lawrence（saxophone）、Joony Booth（bass）、Alphonse Mouzon（drums）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b1b4e53-1eac-3592-8932-515e8cb68701&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs master 199026 的主版本是 Milestone M-55001、US、1973、LP；1973 年同時有美國 promo 版與德國 Milestone BDA 7504。",
+    "src": "https://www.discogs.com/master/199026"
+   },
+   {
+    "f": "英文維基：**1973 年 7 月 7 日瑞士蒙特勒爵士音樂節（Montreux Jazz Festival）現場**，同年由 Milestone 發行，製作 Orrin Keepnews；四重奏是 Azar Lawrence（tenor／soprano saxophone）、Juni Booth（bass）、Alphonse Mouzon（drums），Tyner 兼打擊樂。AllMusic 的 Scott Yanow 說「這是 McCoy Tyner 最偉大的錄音之一，這位強力、敲擊式、影響深遠的鋼琴家在 1973 年蒙特勒的演出中全程靈感充沛」。《The Penguin Guide to Jazz》把它與 1974 年現場《Atlantis》並稱「兩張龐大、蔓延、會耗盡多數聽者的音樂會錄音」，並認為蒙特勒這場「略勝一籌，光是那首排山倒海的〈Walk Spirit, Talk Spirit〉就夠了」。《Down Beat》的 Steve Metaliz 寫道：Coltrane 過世之後站在音樂發展前沿的是鋼琴家，「Tyner 進到樂器裡面，像 Coltrane 對薩克斯風那樣，從中汲取爵士樂前所未有的色彩、質地與強度」，並特別點名 Mouzon 俐落的鼓是 Tyner「粉碎式複音」的好陪襯。",
+    "src": "https://en.wikipedia.org/wiki/Enlightenment_(McCoy_Tyner_album)"
+   },
+   {
+    "f": "jazzdisco 的 McCoy Tyner 目錄：McCoy Tyner Quartet（Azar Lawrence, tenor, soprano sax; McCoy Tyner, piano, percussion; Joony Booth, bass; Alphonse Mouzon, drums），**Montreux Jazz Festival, Montreux, Switzerland, July 7, 1973**，曲目〈Presenting the McCoy Tyner Quartet〉〈Enlightenment Suite Part 1 – Genesis〉〈Part 2 – The Offering〉〈Part 3 – Inner Glimpse〉〈Presence〉〈Nebula〉〈Walk Spirit, Talk Spirit〉，首發 Milestone M-55001，1990 年 MCD-55001-2 CD 化；〈The Offering〉與〈Nebula〉另收進 1981 年的雙 LP 選輯《Reflections》（M-47062）。",
+    "src": "https://www.jazzdisco.org/mccoy-tyner/discography/"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1433849864）盤名「Enlightenment」、7 軌、℗ 1990 Fantasy, Inc.、releaseDate 1973-07-01；是 1990 年 CD 的 7 軌形態——前五軌與雙 LP 第一張逐軌對位、長度差 ≤3 秒（〈Presenting the McCoy Tyner Quartet〉79 秒、〈Presence〉633 秒），〈Nebula〉580 秒（LP 516 秒），〈Walk Spirit, Talk Spirit〉一軌 1445 秒把 LP 的引子與正曲合併，全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1433849864&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1973 年 7 月 7 日蒙特勒一場演出、整場出成雙 LP：四首曲子加一段組曲，〈Walk Spirit, Talk Spirit〉一首就佔了第二張的一整面",
+   "《Penguin Guide》說這是會「耗盡多數聽者」的音樂會錄音——而《Down Beat》說 Coltrane 之後站在前沿的是鋼琴家"
+  ],
+  "sound": "雙 LP、近 70 分鐘的現場，四重奏無吉他無鍵盤以外的和聲樂器；一分鐘的報幕之後是三段式的〈Enlightenment Suite〉（25 分鐘），〈Presence〉〈Nebula〉各八到十分鐘，收尾的〈Walk Spirit, Talk Spirit〉連引子 25 分鐘，Tyner 的左手低音與 Mouzon 的鼓把整場推到終點。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Walk Spirit, Talk Spirit",
+   "Enlightenment Suite, Part 1: Genesis",
+   "Presence"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1973,
+   "recorded": 1973,
+   "note": "卡單 1973 成立：MB first-release-date 1973、Discogs master 199026 主版本 Milestone M-55001 1973（美國與德國版皆 1973）、en.wiki 1973、Apple releaseDate 1973-07-01。演出 1973-07-07 蒙特勒。⚠ jazzdisco 的目錄行把 M-55001 記成 1975，與其他四個來源不合，視為該站的孤證。"
+  },
+  "notes": "**覆核策展層：MBID／RG／雙 LP 5＋3 軌／Live 標記／「整場一個 RG、Vol. 1／Vol. 2 拆售版刻意不釘」屬實，未擋下。**｜**串流採信 1433849864**（us，1990 CD 7 軌形態）：前五軌對雙 LP 第一張逐軌相符；第二張的三軌在 CD 上合成兩軌，〈Nebula〉長 64 秒（疑為未剪輯）。**有固定試聽來源**，但**正文引軌數要說清楚是雙 LP 8 軌（5＋3）或 CD 7 軌**（第 251 條）。｜**人名邊界**：Lawrence／Booth／Mouzon 有 MB 錄音層＋jazzdisco＋en.wiki 三重背書，可寫（貝斯手拼法 Joony／Juni Booth 兩種，正文取 MB 與 jazzdisco 的 Joony Booth）；Orrin Keepnews（製作）只出自 en.wiki，⚠ 單一來源，正文可不提。｜評論引句（Yanow／Penguin Guide／Down Beat）皆出自 en.wiki 轉引，可用但每則只引一句，不要堆疊。｜Montreux 音樂節的沿革本層未另查，正文只寫「1973 年 7 月 7 日蒙特勒爵士音樂節現場」。｜非選輯：原始現場專輯（secondary-type Live，依第 253 條收）。"
+ }
+]
