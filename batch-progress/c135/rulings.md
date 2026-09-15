@@ -125,3 +125,91 @@ Blue Note 10 吋盤的數位版多半只以 12 吋重組或 CD 整編的形態�
 1. **「New Faces – New Sounds」是 5000 系列的新人系列名**，enum 裡 Gil Mellé（5020）、Kenny Drew（5023）、Wynton Kelly（5025）、Julius Watkins（5053）、Jutta Hipp（5056）都同題，本批 Silver 5018 也是——
    `chk-prop` 的鍵是掛名＋盤名所以不會誤報，但**上架比對盤名時要連掛名一起看**，Apple 用盤名搜會全部混在一起。
 2. Garner《Overture to Dawn》五卷分在 a 組（1–4）與 b 組（5，BLP 5016，RG e618993f）——b 組收 Vol. 5 時掛名照 `Erroll Garner`、`risk` 指回這四卷。
+
+## 第 460 條（2026-09-15，c-135 b 組）：**22 筆覆核結果——實收 19、退 3；年份 0 改判；CAA 16/19**
+
+`slice.json` 的 `g: "b"` 22 筆（1953–1955，BLP 5016–5066 ＋ 12 吋 BLP 1505）逐筆回問 MB `release-group`（inc=artist-credits+releases）
+與 `release?release-group=…&inc=media+labels`，實掃 `seed_cards.json` 16,450 列＋`desc-tools/batches/cards/c1*.json`（掛名子字串雙向＋盤名卷號統一）。
+**rgMbid 全部沿用列舉檔，無一筆釘錯。** 22 筆的 `first-release-date` 全部與 Discogs 首壓年逐筆相符（1953 ×7、1954 ×14、1955 ×1），**年份 0 改判**。
+b 組 rgMbid 與 a 組 23 筆無一相同（派工信坑 4 已程式比對）。`node batch-progress/c135/chk-prop.mjs b` → 線上池撞卡 0、跨組 0、跨批 0、**標記 0**。
+
+**退掉 3 張（逐筆）**：
+
+| # | 列舉檔 | rgMbid | 理由分類 | 說明 |
+|---|---|---|---|---|
+| 1 | Jay Jay Johnson《The Eminent Jay Jay Johnson, Volume 1》1955（BLP 1505） | 84668b7b-46ab-4ea4-9ad7-3cc8d062e410 | **撞池（列舉檔假陰性）** | 池中 `J.J. Johnson — The Eminent Jay Jay Johnson, Volume 1 (1955)` 已有；列舉檔用 MB credit「Jay Jay Johnson」比對、沒摺到池中「J.J. Johnson」。同形：MB 這個 RG 的 artist 實體就是 J.J. Johnson（33e50556），只是 credit 字串不同。 |
+| 2 | J.J. Johnson《Jay Jay Johnson with Clifford Brown, Jimmy Heath, John Lewis, Percy Heath, Kenny Clarke》1953（BLP 5028） | eab5c80e-a424-4a8c-9698-56aa79a5fd92 | **10 吋→12 吋重組，12 吋已在池中**（派工信坑 1） | 六軌（1953-06-22）全部重組進 12 吋 BLP 1505《The Eminent Jay Jay Johnson, Volume 1》（池中已有，見上列）。對應關係：BLP 1505 ＝ BLP 5028 六軌 ＋ BLP 5057 前段；BLP 1506 Vol. 2（RG 013b98d0，列舉檔 inPool false）＝ 5057 後段 ＋ 1955-06-06 場。 |
+| 3 | The Horace Silver Quintet《Horace Silver Quintet (Volume 3)》1954（BLP 5058） | fcc2f4ec-2539-431f-8e04-e54767089f81 | **10 吋→12 吋重組，12 吋已在池中**（派工信坑 1） | 四軌（1954-11-13）與 BLP 5062 Vol. 4（1955-02-06）重組成 12 吋 BLP 1518《Horace Silver and the Jazz Messengers》（RG ea8ca1bb，列舉檔 inPool true，池中 `Horace Silver And The Jazz Messengers` **apex:hall**）。BLP 5062 不在本批 slice，下一批若出現同樣退。 |
+
+**簡報第二節第 3 條（RG 分別建了就各算一張）與派工信坑 1（12 吋在池中就退）的取捨**：派工信是這一段的特定指示，
+以它為準——**12 吋重組盤已在池中的退，尚未在池中的 10 吋保留、`risk` 互指**。本組保留並互指的三組：
+- Horace Silver《Horace Silver Trio, Vol. 2》BLP 5034 ↔ 12 吋 BLP 1520《Horace Silver Trio》（RG bafa443c，inPool false，預期 c-136）＋ a 組 BLP 5018；
+- Lou Donaldson《Lou Donaldson Sextet, Volume 2》BLP 5055 ↔ 12 吋 BLP 1537《Quartet/Quintet/Sextet》（RG 0ba4e7f4，inPool false，預期 c-136）；
+- Miles Davis《Miles Davis, Vol. 3》BLP 5040 ↔ **a 組 RG 29393845《Miles Davis, Vol. 2》**——⚠ MB 已把 12 吋 BLP 1502／CD 11 軌併進那個 RG，
+  其內容含本張 1954-03-06 全部六軌。**a 組那張的 release 清單有一半是重組盤，本機組 manifest 時要知道**（見第 463 條）。
+**下一批收 1520／1537 時，`risk` 要回指本批這兩張 10 吋。**
+
+## 第 461 條（同批）：**原盤他廠判定——本批 4 張 Vogue 授權盤，年份都不改、`label` 分三種寫法**
+
+列舉檔標「原盤可能他廠」的 108 張不含本批任何一張（BN 首發與原盤同年，note 判準抓不到），**但實查 Discogs 有 4 張錄音權屬 Vogue（巴黎）**：
+
+| 盤 | Vogue 原盤 | BN 版 | 配置 | `label` 寫法 |
+|---|---|---|---|---|
+| Fats Sadi《"Fats" Sadi's Combo》BLP 5061 | Vogue L.D. 212（FR 1954，MB 有建） | 1954，改題《The Swinging Fats Sadi Combo》 | 八軌相同、曲序不同 | **Vogue 為原盤、BN 為授權版** |
+| Clifford Brown《Clifford Brown Quartet》BLP 5047 | Vogue L.D. 179《Jazz Time Paris Vol. 13》（FR 1954，MB 未建；78 轉 V.5180 1953 先發） | 1954 | 六軌逐一相同（Discogs master 1133775） | **Vogue 為原盤、BN 為授權版** |
+| Gigi Gryce & Clifford Brown《Gigi Gryce Clifford Brown Sextet》BLP 5048 | Vogue L.D. 175《Jazz Time Paris Vol. 11》（FR 無年；UK L.D.E. 048 1954） | 1954 | Vogue 5 軌、BN 4 軌——**配置不同** | BN 為主、Vogue 註為來源 |
+| Dizzy Gillespie《Horn of Plenty》BLP 5017 | 78 轉 V.5129／5130／5140（FR 1952）；Vogue LD 077《Plays in Paris》（FR 1953，8 軌） | 1953 | LD 077 只與 BN 共 6 軌，**《Horn of Plenty》8 軌是 BN 自己的編法** | BN 為主、Vogue 註為錄音來源 |
+
+**判準**：簡報第一節第 3 條「原盤他廠 → `year` 取他廠首發年、`label` 寫原廠」——**「原盤」指同一配置的專輯**，
+不是同一批錄音的任何載體。同配置（Sadi、Brown Quartet）才寫 Vogue 為原盤；配置不同（Gryce–Brown、Gillespie）
+釘的 RG 就是 BN 的配置，`label` 以 BN 為主。**四張的 Vogue LP 與 BN LP 同年，`year` 都不動。**
+Jutta Hipp BLP 5056（法蘭克福錄音）實查 Discogs master 591917 之下全是 Blue Note 發行、無德國先發，不算他廠。
+**MB 這四個 RG 只有 Sadi 建了 Vogue 原盤，其餘三張的 Vogue 原盤未建檔**——第 364 條第一型（只建了一邊）的變體，留本機。
+
+## 第 462 條（同批）：**Blue Note 10 吋的編制掛名——群組實體一律收攏到本人，盤名保留編制；例外是對等聯名與側人並列**
+
+MB 把這一段的 credit 幾乎全建成群組實體（Kenny Drew Trio、Sal Salvador Quintet、Elmo Hope Quintet、Clifford Brown Quartet、
+Julius Watkins Sextet、Lou Donaldson Sextet、Jutta Hipp Quintet、"Fats" Sadi's Combo、The Horace Silver Trio／Quintet）。
+依 c-131 第 363 條第 2 型（同一位不同編制 → 池中多數寫法）與池中先例（`Kenny Drew — Kenny Drew Trio`、`Elmo Hope Sextet` 之外 `Elmo Hope` 2 張、
+`Clifford Brown` 2 張），**本組 19 張一律掛本人、編制留在盤名、MB 群組字串進 `queryAlias`**：
+Kenny Drew（池中 4 vs Trio 3）、Elmo Hope（2 vs Sextet 1）、Clifford Brown、Lou Donaldson（8）、Horace Silver（8）、
+Sal Salvador／Julius Watkins／Jutta Hipp／Fats Sadi（池中零張，MB 都另有 Person 實體，第 307 條反查無同字串不同人）。
+**沒有往 `Kenny Drew Trio`／`Elmo Hope Sextet`／`Horace Silver Trio` 任一邊加卡。** 下一批 BLP 1515／1516 Jutta Hipp、1520 Horace Silver Trio 要沿用同字串。
+
+三個例外：
+1. **對等聯名**（第 363 條第 1 型）：`Gigi Gryce & Clifford Brown — Gigi Gryce Clifford Brown Sextet`，MB 群組實體名用 en dash「Gigi Gryce – Clifford Brown Sextet」，
+   chk-prop 擋非 ASCII 連字號，改用池中聯名先例的 `&`（`Clifford Brown & Max Roach`、`Bill Evans & Jim Hall`）。
+2. **側人並列不是聯名**：BLP 5026《Memorable Sessions in Jazz》MB credit 是五人「Edmond Hall / Charlie Christian / Meade Lux Lewis / Red Norvo / Teddy Wilson」，
+   六軌全是 Edmond Hall 領銜的 1941 Celeste Quartet ×4 ＋ 1944 Quintet ×2，**不是 Various Artists 合輯**（MB secondary-types 空；形態同池中 Monk《Genius of Modern Music》、
+   a 組 Ike Quebec 那種 78 轉首次 LP 化）。掛 `Edmond Hall`，五人串進 `queryAlias`，`year` 1953 取 LP 首發年。
+   ⚠ a 組 BLP 7007《Jamming in Jazz》的「Edmond Hall - Sidney De Paris」是對等雙掛名，兩張處理方式不同，a 組要自己定。
+3. **Horace Silver Trio And Art Blakey**（BLP 5034）：Blakey 是 B 面兩軌的鼓 feature（與 Sabu），不是對等聯名；
+   12 吋 BLP 1520 的 MB credit 只掛「Horace Silver」——本卡掛 `Horace Silver`，盤名依第 91／95 條取「Horace Silver Trio, Vol. 2」（MB RG title 只有「Vol. 2」）。
+
+**掛名拼法一筆**：Gil Mellé——MB 這個 RG 的 credit 是「Gill Mellé」（實體 8353ae26，無 type／alias），MB 另有 Person「Gil Mellé」（6cde5a82，1931–2004），
+疑為重複實體；早期 BN 封面確實印 Gill。本卡用通行「Gil Mellé」（12 吋 1517 與所有再發、Apple 皆此），「Gill Mellé」進 queryAlias，下一批 1517 沿用。
+
+## 第 463 條（同批）：**盤名取法——MB RG title 只有「Vol. 2」「Vol. 3」的，依第 91／95 條補上主體名**
+
+MB 把 BLP 5034 建成「Vol. 2」、BLP 5040 建成「Vol. 3」（RG 與 release title 都只有這幾個字）。卡片盤名照抄會在店面變成三張「Vol. N」。
+本組取 `Horace Silver Trio, Vol. 2`、`Miles Davis, Vol. 3`（後者與 a 組 MB title「Miles Davis, Vol. 2」同形），MB 原題進 `queryAlias`。
+同理 BLP 5044：MB RG title「Elmo Hope Quintet」，原盤封面與 Discogs 1954 條目、Apple 都題「Volume 2」（Vol. 1 是 BLP 5029 三重奏）——取 `Elmo Hope Quintet, Volume 2`。
+其餘 16 張照 MB RG title；四張「New Faces – New Sounds」系列盤名把 en dash 改 ASCII 連字號（Wynton Kelly 與 Jutta Hipp 那兩個 RG 的 MB title 本來就是 ASCII）。
+Wynton Kelly BLP 5025 的副題／再發名《Piano Interpretations》兩名並存（1991 CD 用副題、Apple 兩者併寫），照 MB RG title，副題進 queryAlias。
+
+**⚠ 關鍵發現（寫進 a 組要看的地方）**：a 組 RG 29393845《Miles Davis, Vol. 2》轄下 7 個 release 只有 1 個是 10 吋 BLP 5022（6 軌），
+其餘 6 個是 12 吋 BLP 1502／CD《Miles Davis, Volume 2》（11 軌）——**MB 把 10 吋原盤與 12 吋重組盤併成一個 RG**，
+而重組盤的 11 軌含 b 組 BLP 5040 全部六軌。a 組那張的 `label`／軌數若照 CD 寫會寫成 11 軌重組盤。**b 組《Miles Davis, Vol. 3》保留、`risk` 已互指。**
+
+## 第 464 條（同批）：**店面觀察——Apple 把 10 吋盤標成「EP」、年份欄填錄音日或數位再發年；CAA 16/19**
+
+三種查法只寫觀察（第 254 條）。us `search` 一種查法直接命中原配置的 11 張：Mellé（1443170546）、Drew（1455162555）、McGhee（1511079369）、
+Kelly（1455262618）、Salvador（1443269236）、Miles Vol. 3（1443804725，題「Modern Jazz Series, Vol. 3」）、Farlow（1455679648）、Hope（1442856742）、
+Hipp（1443150915）、Mobley（1443139366）、Gryce–Brown（1154299500，Vogue 11 軌擴充版）。
+**Apple 把 6 軌以下的 10 吋盤一律標「- EP」**（McGhee、Salvador、Farlow、Hope、Mobley 五張）——那是店面對 10 吋盤的標法，
+`releaseType` 仍是 Album（MB primary-type Album、secondary-types 空）。**Apple 的 releaseDate 兩張失真**：Kelly 填 1951-07-28（錄音日，℗ 1951）、Hipp 填 2014-01-01（數位再發年）——
+第 364 條的形狀，年份不採。
+search 零命中、藝人目錄 `lookup` 也只見合集或 12 吋重組盤的 8 張：Garner Vol. 5、Gillespie（只有《Dizzy Digs Paris》41 軌）、Hall（只有 1998 CD《Profoundly Blue》17 軌）、
+Silver Trio Vol. 2（只有 12 吋《Horace Silver Trio》16 軌）、Donaldson Sextet Vol. 2（只有 12 吋《Quartet/Quintet/Sextet》10 軌）、
+Brown Quartet（只有 Vogue《Complete Paris Sessions Vol. 1》11 軌）、Watkins、Sadi（只有 Fresh Sound 回顧輯 23 軌）——**「前 N 軌／後 N 軌對應原盤」是否可採，留研究層逐軌比**。
+CAA：16/19 有圖，無圖 3 張＝BLP 5026 Hall、5053 Watkins、5061 Sadi。
