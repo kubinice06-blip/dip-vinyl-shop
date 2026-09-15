@@ -130,5 +130,677 @@
   "status": "full",
   "yearVerified": "一致，1970（首發年）。MB first-release-date 1970，轄下黑膠那筆 release 就是 1970／JP／Victor World Group SMJX-10106；Discogs release 27362238 盤面同記 1970、SMJX-10106、ビクター〈日本のジャズ〉シリーズ。Apple jp／us 的 collection 層與曲目層都是 1970-01-01、℗ 1970 Victor Entertainment（三層一致）。無再發失真。",
   "notes": "**覆核策展層：MB 兩筆 release、廠牌、catno、軌數逐欄相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽**：Apple jp／us `1773905042`，5 軌與 MB 逐軌相符（枯葉／グリーン・ドルフィン・ストリート／ギャッド／マキ／シーホース，長度一秒不差），℗ 1970 Victor Entertainment，掛在 artistId `1770257743`「今田勝トリオ・プラス・ワン」名下——**串流採信 1773905042**。⚠ **張數最多的那個 artistId `357465120`「今田 勝」（姓名間有半形空格，jp 14 張）裡沒有這一張**，只查那一個會整張漏掉（第 434 條同形）。｜⚠ **℗ 年與曲目層日期都是 1970，但這一筆的軌長與 MB 一秒不差**——依 c-133 第 431 條，那是同一份數位母帶同時餵給兩邊的特徵，**不能當成兩個獨立來源**。年份真正的獨立佐證是 Discogs 的實體盤面著錄（SMJX-10106、ビクター〈日本のジャズ〉シリーズ）。｜**人名邊界**：水橋孝、小津昌彦、三森一郎 三位有 Discogs 盤面 credit，可寫。⚠ **水橋孝 同時是本組 笠井紀美子《Just Friends》 的貝斯手**（見那張）、⚠ **北村英治 是 c-134 a 組的掛名**（今田勝 1953 年就在他樂團裡，跨批交集要記）。｜**反同構（今田勝トリオ 兩張）**：本張切入「トリオ＋一支薩克斯風＋B 面兩首長曲」，《Planets》走自資廠牌與十六分鐘的〈Sea's Pasture〉；兩張不得共用「他 1964 年起帶自己的三重奏」這個起手式。"
+ },
+ {
+  "key": "desc4:今田勝トリオ|Planets",
+  "artist": "今田勝トリオ",
+  "album": "Planets",
+  "facts": [
+   {
+    "f": "release-group 228f5722 的欄位：first-release-date 1977、primary-type Album、secondary-types 空、artist-credit「Masaru Imada Trio + 1」。轄下兩筆 release：1977／JP／Official，PLANETS PSJ-7701，12 吋黑膠 5 軌；2022-10-28／Official，BBE 的 Digital Media 6 軌（多一首〈Sea's Pasture〉的短版）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=228f5722-71d2-49d4-9e57-8ad0d2dd6387&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1977 年原盤的全名是《Planets (First Planets On Blueroad)》，盤面註記「Recorded March 17, 1977 at Aoyama Tower Hall」。編制四人：今田勝（鋼琴、打擊樂，兼全曲作曲）、稲葉国光（貝斯、打擊樂）、小原哲次郎（鼓、打擊樂）、今村祐司（康加鼓、打擊樂）；製作 水口進，錄音 倉林茂，刻版 百官忠，設計 渡辺トオル。廠牌 PLANETS 的登記公司是 パーム・サウンドアート（Palm Soundart Corp.），由 ビクター 代壓。",
+    "src": "https://www.discogs.com/release/26383526"
+   },
+   {
+    "f": "五軌全部出自 今田勝 自己的筆：A 面〈Planets〉5:31、〈Blueroad〉7:31、〈A Marionette〉5:29；B 面只有兩首——〈Sea's Pasture〉16:45 幾乎獨佔整面，再由〈Epilogue〉4:09 收尾。",
+    "src": "https://www.discogs.com/release/26383526"
+   },
+   {
+    "f": "2022 年 10 月 28 日，英國廠牌 BBE Music 把本張重發成數位與實體版，附原始封套與腰帶的完整複刻、原版解說的英譯，以及 Tony Higgins 撰寫的三千字新解說（內含對 今田勝 本人的訪談）。BBE 自 2018 年起持續復刻 1960 年代末至 1980 年代初的日本現代爵士。",
+    "src": "https://www.propermusic.com/bbe664alp-planets.html"
+   },
+   {
+    "f": "今田勝 1932 年生於東京，1953 年起在 北村英治 的樂團演奏，1964 年起帶自己的三重奏，1970 年代開始在國際爵士音樂節演出，1984 年另組融合樂團「NOWIN」。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BB%8A%E7%94%B0%E5%8B%9D"
+   }
+  ],
+  "hookCandidates": [
+   "B 面只有兩首，其中〈Sea's Pasture〉十六分四十五秒，幾乎把整面吃光",
+   "自己開廠牌、自己寫五首曲、一天錄完——四十五年後被英國人重新發行"
+  ],
+  "sound": "五軌、約四十分鐘，四人（鋼琴、貝斯、鼓、康加鼓）全部兼打擊樂。A 面三首是有主題的模式（modal）寫法，標題曲〈Planets〉5:31 開場、〈Blueroad〉7:31 拉長、〈A Marionette〉5:29 收；B 面完全換一種時間感——〈Sea's Pasture〉16:45 幾乎獨佔一面，四個人在同一個調式上慢慢堆，最後由〈Epilogue〉4:09 落地。全五首都是 今田勝 自己寫的，這不是標準曲集，是一套為長段落設計的曲目。",
+  "keyTracks": [
+   "Sea's Pasture",
+   "Planets",
+   "Blueroad"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（首發年）。MB first-release-date 1977，轄下黑膠那筆就是 1977／JP／PLANETS PSJ-7701；Discogs release 26383526 盤面同記 1977、PSJ-7701、錄音日 1977-03-17。2022-10-28 的 BBE 版是重發，不取；Apple 的 collection 層寫 2022-10-28、℗ 欄寫「2022 BBE Music / 1977 Planets」，**℗ 欄自己就把原盤年寫成 1977**。無分歧。",
+  "notes": "**覆核策展層：MB 兩筆 release、廠牌、catno、軌數逐欄相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜⚠ **推翻回撈報告的「目錄裡找不到」——第三種查法找回一張。** `apple-candidates.md` 把本張記成「目錄裡找不到」。照第 254 條跑滿三種查法後：藝人目錄 `lookup?id=1541155784&entity=album`（Apple 的第三個 今田勝 artistId，顯示名「Masaru Imada Trio + 1」，名下只有這一張）jp 與 us 都回得到 **`1636006065`**，6 軌與 MB 的 BBE 數位版逐軌相符、全軌有試聽——**串流採信 1636006065**。**漏查成因是第 400a 條的第三種：掛在別的 artistId**（今田勝 在 Apple 上有四個 id，張數最多的 `357465120` 裡沒有這一張）。｜⚠ **店面收的是 2022 年 BBE 的六軌版、不是 1977 年的五軌原盤**：多出來的第 6 軌是〈Sea's Pasture〉3:59 的短版，而第 4 軌標成「(Extended Version)」16:54——**正文寫曲目與長度時要以 1977 年原盤的五軌為準**。｜**人名邊界**：稲葉国光、小原哲次郎、今村祐司、水口進、倉林茂 有 Discogs 盤面 credit，可寫；Tony Higgins 是 2022 年解說作者、非東亞音樂人，寫拉丁原文。⚠ **稲葉国光 也是本組 中本マリ《Unforgettable!》 與 中本マリ《Shiny Stockings》 的貝斯手、小原哲次郎 也是 中本マリ《Unforgettable!》 與 笠井紀美子《Just Friends》 的鼓手**——本組內部四張共用同一批人，依 c-133 第 430a 條，**不得把「同一批錄音室樂手」當共同主軸**。｜**反同構（今田勝トリオ 兩張）**：本張切入「自資廠牌 PLANETS＋全曲自作＋十六分鐘的 B 面」，《Maki》走 ビクター〈日本のジャズ〉與トリオ・プラス・ワン 的編制。"
+ },
+ {
+  "key": "desc4:杉本喜代志カルテット|Country Dream",
+  "artist": "杉本喜代志カルテット",
+  "album": "Country Dream",
+  "facts": [
+   {
+    "f": "release-group b333be00 的欄位：first-release-date 1970、primary-type Album、secondary-types 空、artist-credit「Kiyoshi Sugimoto Quartet」。轄下兩筆 release：1970-03-01／JP／Official，Columbia XMS-10024-CT，12 吋黑膠 5 軌；2007-02-21／JP／Official，Columbia Music Entertainment COCB-53631，CD 5 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b333be00-2273-4c9f-ade7-2bdcf0796a36&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1970 年原盤的盤面註記寫「Recorded at Teichiku Kaikan Studio, Tokyo 7 Dec. 1969. Originally released on 1970/3/1」——錄音在 1969 年 12 月 7 日的テイチク会館スタジオ，發行在 1970 年 3 月 1 日。本張屬於 日本コロムビア 的 Takt Jazz Series／New Stream In Jazz 兩條系列。",
+    "src": "https://www.discogs.com/release/12506082"
+   },
+   {
+    "f": "四人編制：杉本喜代志（吉他）、鈴木宏昌（鋼琴）、池田芳夫（貝斯）、日野元彦（鼓）。日文百科的 杉本喜代志 條目把這一組直接稱作他的「リーダーカルテット『カントリー・ドリーム』」。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97"
+   },
+   {
+    "f": "杉本喜代志 1942 年 2 月 3 日生於靜岡縣，高一暑假為了拜師古典吉他坐夜車上東京，在車上遇到東京交響樂團的大提琴手，經對方引介進了舞廳樂團「奥田宗宏とブルースカイ・オーケストラ」當樂團小弟；1960 年代初加入鄉村樂團 小坂一也&ワゴン・マスターズ（同團還有 かまやつひろし），之後歷經 水原弘ブルーソックス、ジョージ大塚とザ・サンダーバード、山下敬二郎と東京ヤンキース 幾支搖滾樂團，再經 大沢保郎トリオ、岡崎広志とスター・ゲイザーズ、石川晶とカウント・バッファローズ 才走到爵士。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97"
+   },
+   {
+    "f": "本張發表後不久，杉本喜代志 於 1970 年加入 日野皓正クインテット，1971 年隨團演出柏林爵士音樂節、新港爵士音樂節與紐約卡內基廳。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97"
+   },
+   {
+    "f": "五軌：〈Country Dream〉8:26、〈Step Ahead〉11:39 在 A 面；B 面〈The Apple〉7:02、〈Limited Space〉4:14、〈D-51〉6:09。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b333be00-2273-4c9f-ade7-2bdcf0796a36&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "高一暑假坐夜車上東京拜師，在車上被陌生人搭話，那句話把他送進了職業樂團",
+   "一九六九年十二月七日一天錄完，鼓手是 日野元彦、鋼琴是 鈴木宏昌"
+  ],
+  "sound": "五軌、約三十七分鐘，吉他為首的四重奏。A 面兩首都長：標題曲〈Country Dream〉8:26 與〈Step Ahead〉11:39，主題交代完就把空間交給獨奏；B 面〈The Apple〉7:02、〈Limited Space〉4:14、〈D-51〉6:09 三首把節奏推得更緊。杉本喜代志 的電吉他是主線，鈴木宏昌 的鋼琴與他對位，池田芳夫 與 日野元彦 的節奏組在後面不斷改變重心——1969 年底的東京錄音室裡，這是典型的「新一代」編制。",
+  "keyTracks": [
+   "Step Ahead",
+   "Country Dream",
+   "D-51"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（首發年）。MB first-release-date 1970，轄下黑膠那筆記到 1970-03-01；Discogs release 12506082 的盤面註記獨立寫明「Originally released on 1970/3/1」、錄音 1969-12-07。2007-02-21 的 COCB-53631 是 CD 復刻，不取。⚠ **錄音年（1969）與發行年（1970）跨年**，`year` 依規則取首發年 1970，錄音日寫在本欄。",
+  "notes": "**⚠ 覆核策展層第 437 條 A 的「杉本喜代志カルテット 是本批唯一一個沒有店面一手印法的編制掛名」——這一句要更正，一手印法是有的，只是不是「カルテット」。** 兩筆實據：(1) **Discogs release 7265910 的日文對照題把掛名印成「杉本喜代志クワルテット」**（クワ，不是カル），那是腰帶／封套上的日文寫法；(2) **日文百科的 杉本喜代志 條目把這一組稱作「リーダーカルテット『カントリー・ドリーム』」**，並列出 杉本／鈴木宏昌／池田芳夫／日野元彦 四人。**所以策展層補「カルテット」的方向成立**（依池中先例與 c-134 第 427 條），但它不是憑空補的，**盤面另有「クワルテット」這個變體**，建議兩式都進 queryAlias。｜**試聽**：藝人目錄 `lookup?id=1304789994&entity=album`（Apple 顯示名「Kiyoshi Sugimoto」）jp 與 us 都回得到 **`1742130119`**，5 軌與 MB 逐軌相符（カントリー・ドリーム 8:26／ステップ・アヘッド 11:38／ジ・アップル 7:02／リミテッド・スペース 4:15／D-51 6:07），全軌有試聽——**串流採信 1742130119**。⚠ 回撈報告記本張「目錄裡找不到」，**第三種查法找回**；漏查成因是第 400a 條第三種（掛在別的 artistId，而且那個 id 的顯示名是羅馬字）。⚠ **店面該筆的 collection 層日期是 2007-03-12、℗ 欄卻寫 2014 Nippon Columbia**（第 428 條的同形：同一筆條目兩層各給一個年），**兩個都不是原盤年，年份一律以盤面為準**。｜**封面覆核通過**：CAA release-group 端點實測 200。｜**人名邊界**：鈴木宏昌、池田芳夫、日野元彦 有 Discogs 盤面 credit；かまやつひろし、奥田宗宏、大沢保郎、岡崎広志、石川晶、日野皓正、水原弘、ジョージ大塚、山下敬二郎 出自日文百科生平段。⚠ **日野元彦 就是本組自己的另一個掛名（三張卡）、鈴木宏昌 是 c-133 a 組的掛名、石川晶 是 c-133 b 組的掛名、日野皓正 池中已有四張**——這張一次牽到三批，依 c-133 第 430a 條不得拿「同一批錄音室樂手」當主軸。｜**反同構（杉本喜代志 四張）**：本張切入「1969 年底一天錄完的首張領銜作＋Takt Jazz Series」，《Our Time》走十一人大編制、《L.A. Master》走從紐約回國後的 crossover、《One More》走紐約班底與一週寫六曲；四張不得共用「他從鄉村與搖滾樂團走到爵士」這條生平線。"
+ },
+ {
+  "key": "desc4:杉本喜代志|Our Time",
+  "artist": "杉本喜代志",
+  "album": "Our Time",
+  "facts": [
+   {
+    "f": "release-group 33256eb9 的欄位：first-release-date 1975、primary-type Album、secondary-types 空。轄下兩筆 release：1975／JP／Official，Columbia KZ-7505，12 吋黑膠 5 軌；2012-09-05／JP／Official，Columbia COCB-54013，CD 5 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=33256eb9-3eca-4b88-9705-4caa93ff15d7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤面註記寫「Recorded at Nippon Columbia No.1 Studio, Tokyo on December 28, 1974, January 10 and 28, 1975」——三個錄音日跨年，地點是 日本コロムビア 第一錄音室。本張屬於 Creative Sounds Series。",
+    "src": "https://www.discogs.com/release/6803138"
+   },
+   {
+    "f": "這不是四重奏而是輪替的大編制：貝斯三位（岡沢章、江藤勲、寺川正興）、鼓三位（石川晶、日野元彦、村上秀一）、電鋼琴與鍵盤兩位（市川秀男、鈴木宏昌）、薩克斯風 植松孝夫、口琴與節奏吉他 松木恒秀、打擊樂 斉藤フジオ 與 スナガ・ラリー、長號由 新井英治グループ 擔任；製作 谷川勉，錄音 岡田典男，母帶 時枝和弘。",
+    "src": "https://www.discogs.com/release/6803138"
+   },
+   {
+    "f": "五軌：A 面〈Our Time〉6:38 與〈Jones Street〉13:15；B 面〈Take My Blues!!〉7:04、〈Quiet Pulse〉6:00、〈Marmalade Sky〉5:16。〈Jones Street〉十三分十五秒是全片最長的一首。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=33256eb9-3eca-4b88-9705-4caa93ff15d7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "杉本喜代志 是 1970 年代日本錄音室的常駐吉他手，除爵士外也大量參與搖滾、流行、動畫歌曲與歌謠曲的錄音；他曾婉拒 渡辺貞夫 的入團邀約（後來加入的是 増尾好秋），也婉拒過 渡辺香津美 拜師的請求。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97"
+   }
+  ],
+  "hookCandidates": [
+   "三位貝斯手、三位鼓手輪流上場——這張的編制表比曲目表還長",
+   "〈Jones Street〉十三分十五秒，跨年錄的三天裡最放得開的一首"
+  ],
+  "sound": "五軌、約三十八分鐘，但陣容是輪替制：三位貝斯、三位鼓手、兩套鍵盤，加薩克斯風、口琴、打擊樂與一整組長號。〈Our Time〉6:38 開場先把主題立好，〈Jones Street〉13:15 接著把 A 面剩下的時間全部用掉；B 面〈Take My Blues!!〉7:04、〈Quiet Pulse〉6:00、〈Marmalade Sky〉5:16 三首分別走藍調、慢板與明亮的收尾。杉本喜代志 的吉他始終是敘事者，換人的是他背後的節奏組——同一張碟裡可以聽到三種不同的鼓。",
+  "keyTracks": [
+   "Jones Street",
+   "Our Time",
+   "Marmalade Sky"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975（首發年）。MB first-release-date 1975、轄下黑膠那筆就是 1975／JP／Columbia KZ-7505；Discogs release 6803138 盤面同記 1975、KZ-7505、Creative Sounds Series。店面 `1537029571` 的 collection 層另給精確日 **1975-05-25**、℗ 1975 Nippon Columbia——**比 MB 多出月日、方向一致**，可補進 risk。錄音跨 1974-12-28 至 1975-01-28，`year` 取首發年。2012-09-05 的 COCB-54013 是 CD 復刻，不取。",
+  "notes": "**覆核策展層：MB 兩筆 release、廠牌、catno、軌數逐欄相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽**：藝人目錄 `lookup?id=1304789994&entity=album` jp 與 us 都回得到 **`1537029571`**，5 軌、℗ 1975 Nippon Columbia／NIPPONOPHONE，collection 層日期 1975-05-25——**串流採信 1537029571**。⚠ **℗ 年與 MB 的 1975 一致，但這兩邊未必獨立**（依 c-133 第 431 條：數位發行的 metadata 會同時餵給資料庫與店面）；真正獨立的第三筆是 Discogs 的實體盤面著錄（KZ-7505、Creative Sounds Series），三邊都指向 1975。｜**人名邊界**：岡沢章、江藤勲、寺川正興、石川晶、日野元彦、村上秀一、市川秀男、鈴木宏昌、植松孝夫、松木恒秀、斉藤フジオ、新井英治 有 Discogs 盤面 credit，可寫；⚠ **打擊樂那位「スナガ・ラリー」盤面只有片假名／羅馬字，漢字無法確定，不要補漢字**。⚠ **石川晶 是 c-133 b 組掛名、鈴木宏昌 是 c-133 a 組掛名、日野元彦 是本組掛名、新井英治グループ 也出現在本組 中本マリ《Nice Feeling》 的長號組**——跨批交集密集，依 c-133 第 430a 條不得當主軸。渡辺貞夫（c-132 a 組掛名）、渡辺香津美（池中已有）、増尾好秋 出自日文百科的軼事段。｜**反同構（杉本喜代志 四張）**：本張切入「輪替的大編制＋跨年三天的錄音＋十三分鐘的〈Jones Street〉」，與《Country Dream》的四重奏、《L.A. Master》的 crossover、《One More》的紐約班底各不相犯。"
+ },
+ {
+  "key": "desc4:杉本喜代志|L.A. Master",
+  "artist": "杉本喜代志",
+  "album": "L.A. Master",
+  "facts": [
+   {
+    "f": "release-group e4826a30 的欄位：first-release-date 1978、primary-type Album、secondary-types 空。轄下只有一筆 release：1978-06-05／JP／Official，EXPRESS ETP-80020，12 吋黑膠 6 軌，由 東芝 EMI 製造。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e4826a30-c866-42b0-a7cd-bc9679ed0528&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤面註記寫「Recorded December 5, 1976 - October 27, 1977」——錄音橫跨十一個月，錄音地列出 芝浦 Studio A、音響ハウス、Sound City Studio、Freedom Studio 與 東芝 EMI スタジオ 五處。",
+    "src": "https://www.discogs.com/release/13856787"
+   },
+   {
+    "f": "編制：杉本喜代志（電吉他、木吉他）、清水靖晃（次中音、高音、中音薩克斯風）、ジェイク・H・コンセプション（中音薩克斯風）、大徳俊幸（鋼琴）、富樫春生（電鋼琴）、岡沢章（電貝斯）、松木恒秀（電吉他）、渡嘉敷祐一（鼓）、浜口茂外也／斉藤ノブ／中村達也（打擊樂）。",
+    "src": "https://www.discogs.com/release/13856787"
+   },
+   {
+    "f": "日文百科把這張的來歷寫得很直接：杉本喜代志 結束紐約的生活回到日本，身上已經有了「クロスオーバー」與「フュージョン」的經驗，回國後隨即以 清水靖晃、富樫春生、岡沢章、渡嘉敷祐一 這組人馬進錄音室做了《L.A.マスター》。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97"
+   },
+   {
+    "f": "六軌：A 面〈Yeh! Boogie〉、〈Got a Baby Feels Like a Woman〉、〈Sailing Along〉；B 面〈Ivory Flower〉、〈I'm Blind to All but You〉、〈Moving〉。其中〈I'm Blind to All but You〉三年後又被他收進 1981 年的《One More》。",
+    "src": "https://www.discogs.com/release/13856787"
+   },
+   {
+    "f": "EXPRESS 是 東芝 EMI 旗下的副廠；本張的 catalog number ETP-80020 屬於該廠的 ETP 號段。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e4826a30-c866-42b0-a7cd-bc9679ed0528&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "錄音橫跨十一個月、用了五間錄音室，卻只留下六首",
+   "打擊樂那一欄裡有個名字後來去打了搖滾：中村達也"
+  ],
+  "sound": "六軌，crossover 的編制與音色：兩把電吉他、電鋼琴與鋼琴分開掛、電貝斯、鼓，加三個人的打擊樂，薩克斯風由 清水靖晃 與 ジェイク・H・コンセプション 分攤。開場的〈Yeh! Boogie〉直接把節奏推到前面，〈Sailing Along〉與〈Ivory Flower〉走的是七〇年代末那種光滑的推進，〈I'm Blind to All but You〉是全片最慢的一首。這不是 1970 年前後那種以獨奏長度取勝的錄音，而是把整個聲響當成成品在做。",
+  "keyTracks": [
+   "Yeh! Boogie",
+   "Ivory Flower",
+   "I'm Blind to All but You"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978（首發年）。MB first-release-date 1978，轄下唯一那筆 release 記到 1978-06-05／JP／EXPRESS ETP-80020；Discogs release 13856787 與 5355869 兩筆條目的盤面同記 1978、ETP-80020、東芝 EMI。⚠ **錄音橫跨 1976-12-05 至 1977-10-27**，`year` 取首發年 1978，錄音區間寫進本欄。店面無條目可對照（見 notes）。",
+  "notes": "**覆核策展層：MB 單筆 release、廠牌、catno、軌數相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽：三種查法全部落空，確認無來源。**（1）`search`「杉本喜代志 L.A. Master」「Kiyoshi Sugimoto」jp 各回 **0 筆**；（2）藝人目錄 `lookup?id=1304789994&entity=album` jp 與 us 各回 **7 張，全部是 日本コロムビア／NIPPONOPHONE 與一張 Victor**，東芝 EXPRESS 的 ETP 號段一張都沒有；（3）曲名反查 `entity=song`「Yeh! Boogie 杉本」——**回到一筆，但那不是本張**。｜⚠ **這一筆反查的結果值得單獨記：〈Yeh! Boogie〉6:41 出現在 2025-05-21 的合輯《CROSSOVER CITY》（collectionId `1819872762`，掛名 Various Artists，版權標「A USM JAPAN release; This Compilation ℗ 2025 UNIVERSAL MUSIC LLC」）。** 也就是說 **本張的母帶權利人（東芝 EMI 的目錄現由 Universal Music Japan 持有）願意把單曲授權給拼盤，卻沒有替整張盤建數位條目**——這正是 c-132 第 399 條「Sony 把《Pastoral》的一首單曲授權給 2025 年的拼盤，所以缺的不是授權，是整張盤沒有數位條目」的**第二次應驗，形狀一模一樣**。⚠ 這一筆同時是第 429 條「條目掛名是 Various Artists」那種漏查成因的實例——**只是這次找到的是拼盤而不是原盤，所以不採信、本張仍記無來源**。｜⚠ **策展層第 436 條的「本批三張東芝盤在店面上全部查不到、東芝這條線是系統性缺席」要收窄一格。** 本組實測：**中本マリ《Just in Time》（Toshiba Records LF-91012，也是東芝盤）在 Apple 上是有的**（`715844564`，artistId `74576328`，℗ 1976 EMI Music Japan Inc.，10 軌，見那張）。**所以缺席的不是「東芝」這個廠牌，而是「東芝 EMI 目錄裡 2013 年併入 Universal 之後沒被單獨數位化的那一批」**——本張與 中本《Shiny Stockings》、笠井《Umbrella》 缺，而 中本《Just in Time》 在 EMI Music Japan 時期就已數位化所以在。**粒度仍是 c-132 第 399 條說的「廠牌×時期×權利人」，不是廠牌。**｜**人名邊界**：清水靖晃、ジェイク・H・コンセプション、大徳俊幸、富樫春生、岡沢章、松木恒秀、渡嘉敷祐一、浜口茂外也、斉藤ノブ、中村達也 有 Discogs 盤面 credit，可寫。⚠ **這裡的 中村達也 與 日野元彦 門下那位同名鼓手是否同一人，盤面無法確定，正文不要把兩者連起來寫。**⚠ 日文百科把 清水靖晃 記成中音薩克斯風、盤面記次中音／高音／中音三管，**以盤面為準**。｜**反同構（杉本喜代志 四張）**：本張切入「紐約回來之後的 crossover＋十一個月五間錄音室」，不與《Country Dream》《Our Time》《One More》重複。"
+ },
+ {
+  "key": "desc4:杉本喜代志|One More",
+  "artist": "杉本喜代志",
+  "album": "One More",
+  "facts": [
+   {
+    "f": "release-group 96dd4a9c 的欄位：first-release-date 1981、primary-type Album、secondary-types 空。轄下兩筆 release：1981／JP／Official，BETTER DAYS YF-7007-ND，12 吋黑膠 6 軌；2013-06-26／JP／Official，Columbia COCB-54064，CD 6 軌。BETTER DAYS 是 日本コロムビア 的爵士副廠。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=96dd4a9c-64be-4065-8bfe-052be84e8c66&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "編制是一組紐約班底：Warren Bernhardt（鋼琴、電鋼琴）、Marcus Miller（電貝斯）、Omar Hakim（鼓）、大野俊三（小號），杉本喜代志（吉他）。製作 上野勉，副製作 三田治雄，錄音與混音 岡田典男，攝影與美術 杉山賢司。",
+    "src": "https://www.discogs.com/release/23440430"
+   },
+   {
+    "f": "日文百科記下這張的寫作方式：1981 年他以 ウォーレン・バーンハート、マーカス・ミラー、オマー・ハキム、大野俊三 這組人馬錄音，**收進盤裡的六首原創曲是他用一個星期寫出來的**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97"
+   },
+   {
+    "f": "六軌：A 面〈The Island Skyline〉6:42、〈Mujer Española〉4:42、〈Dream 'Bout Butterfly〉8:30；B 面〈Steppin' Up〉4:13、〈Night Train〉6:22、〈I'm Blind To All But You〉5:39。最後一首是他 1978 年《L.A. Master》裡同名曲的重錄。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=96dd4a9c-64be-4065-8bfe-052be84e8c66&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "杉本喜代志 是 筒美京平 的 first call 樂手之一，長年參與 浅川マキ、中島みゆき、竹内まりや、沢田研二、大橋純子 等人的錄音；2021 年獲一般社團法人 日本ジャズ音楽協会 頒發該年度的「ジャズ大賞」。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97"
+   }
+  ],
+  "hookCandidates": [
+   "六首原創曲，他用一個星期寫完；貝斯找的是 Marcus Miller，鼓是 Omar Hakim",
+   "三年前那首〈I'm Blind To All But You〉，這次換一組紐約樂手重錄"
+  ],
+  "sound": "六軌、約三十六分鐘，五人編制。〈The Island Skyline〉6:42 起手就把音色定調：Warren Bernhardt 的電鋼琴鋪底、Marcus Miller 的電貝斯在下方走線、Omar Hakim 的鼓分得很細，杉本喜代志 的吉他在上面說話，大野俊三 的小號負責另一個高音聲部。〈Dream 'Bout Butterfly〉8:30 是最長也最鬆的一首，〈Steppin' Up〉4:13 最緊，收尾的〈I'm Blind To All But You〉5:39 把 1978 年那首慢曲重做一次。六首全是他自己寫的。",
+  "keyTracks": [
+   "Dream 'Bout Butterfly",
+   "The Island Skyline",
+   "I'm Blind To All But You"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1981（首發年）。MB first-release-date 1981，轄下黑膠那筆就是 1981／JP／BETTER DAYS YF-7007-ND；Discogs release 23440430 與 7890023 兩筆條目盤面同記 1981、YF-7007-ND。店面 `1537029598` 的 collection 層另給精確日 **1981-01-25**、℗ 1981 Nippon Columbia——比 MB 多出月日、方向一致。2013-06-26 的 COCB-54064 是 CD 復刻，不取。",
+  "notes": "**覆核策展層：MB 兩筆 release、廠牌、catno、軌數逐欄相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽**：藝人目錄 `lookup?id=1304789994&entity=album` jp 與 us 都回得到 **`1537029598`**，6 軌、℗ 1981 Nippon Columbia／NIPPONOPHONE、collection 層 1981-01-25——**串流採信 1537029598**。｜⚠ **℗ 年與 MB 一致，但依 c-133 第 431 條那不必然是兩個獨立來源**（日本コロムビア 的數位目錄與 MB 可能同源）；獨立的第三筆是 Discogs 的兩個實體盤面條目。｜**人名邊界**：Warren Bernhardt、Marcus Miller、Omar Hakim 是非東亞音樂人，**facts 一律寫拉丁原文**（依 c-04 的教訓，不得寫成中文音譯）；大野俊三、上野勉、三田治雄、岡田典男、杉山賢司 有盤面 credit，寫漢字。⚠ **日文百科在 マーカス・ミラー 與 大野俊三 兩個名字後面各加了「グラミー賞受賞者」，本稿不採用**——依研究層共用規則，獎項要寫就得指明屆次、類別、入圍或得獎，而那個括號三項都沒有，**且與本張無關**。⚠ **岡田典男 同時是本組《Our Time》的錄音師**。｜**反同構（杉本喜代志 四張）**：本張切入「一週寫完六首原創＋紐約班底」，《L.A. Master》走回國後的 crossover、《Our Time》走輪替大編制、《Country Dream》走首張領銜作；四張不得共用「他是錄音室常駐吉他手」這個起手式。"
+ },
+ {
+  "key": "desc4:中本マリ|Unforgettable!",
+  "artist": "中本マリ",
+  "album": "Unforgettable!",
+  "facts": [
+   {
+    "f": "release-group 4cbd7d7a 的欄位：first-release-date 1973、primary-type Album、secondary-types 空。轄下兩筆 release：1973／JP／Official，three blind mice TBM-21，12 吋黑膠 9 軌；2006-11-22／JP／Official，同一筆並記 three blind mice MHCP 10030 與 TBM-21，Hybrid SACD（CD 層）9 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4cbd7d7a-b954-47a9-b259-d4f8cd630b37&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤面註記寫「Recorded on September 12 & 14, 1973」。編制：中本マリ（歌）、宮沢昭（次中音薩克斯風、長笛）、大沢保郎（鋼琴）、横内章次（吉他）、稲葉国光（貝斯）、小原哲次郎（鼓）；製作 藤井武，混音 神成芳彦，封面 西沢ベン。",
+    "src": "https://www.discogs.com/release/4361918"
+   },
+   {
+    "f": "中本マリ 1947 年 3 月 26 日生於宮城縣仙台市，三歲起學鋼琴與古典芭蕾，十歲進東北児童合唱団，1962 年入東邦音楽大学付属高校 聲樂科，同時以ワタナベプロ旗下四人女聲合唱團「ザ・スカーレット」出道。1970 年轉唱爵士，在赤坂的高級俱樂部「VIPA ROOM」駐唱，1973 年就是以本張正式單飛。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9C%AC%E3%83%9E%E3%83%AA"
+   },
+   {
+    "f": "日文百科明記她是 スリー・ブラインド・マイス（three blind mice）廠牌**第三位**女性爵士歌手。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9C%AC%E3%83%9E%E3%83%AA"
+   },
+   {
+    "f": "九軌：A 面〈Time After Time〉3:06、〈But Beautiful〉4:04、〈Blue Prelude〉5:32、〈Sneakin' Up on You〉5:00、〈Cheek to Cheek〉4:19；B 面〈Unforgettable〉4:04、〈Please Send Me Someone to Love〉4:40、〈I've Got You Under My Skin〉4:56、〈After You've Gone〉5:40。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4cbd7d7a-b954-47a9-b259-d4f8cd630b37&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1978 年起她連續八年在《スイングジャーナル》讀者人氣投票的人聲部門拿下第一名，同年與 高橋達也と東京ユニオン 一起登上蒙特勒爵士音樂節。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9C%AC%E3%83%9E%E3%83%AA"
+   }
+  ],
+  "hookCandidates": [
+   "1973 年九月的兩天錄完，這是她從俱樂部駐唱走進唱片行的那張",
+   "伴奏裡那支次中音薩克斯風是 宮沢昭——三盲鼠找來替她墊底的是這個級別的人"
+  ],
+  "sound": "九軌、約四十一分鐘，六人編制的歌本專輯：人聲在正中央，宮沢昭 的次中音薩克斯風與長笛是唯一的管樂對手，横内章次 的吉他、大沢保郎 的鋼琴、稲葉国光 的貝斯、小原哲次郎 的鼓把速度守得很穩。曲目全是美國歌本（〈Time After Time〉〈Cheek to Cheek〉〈I've Got You Under My Skin〉），沒有一首超過六分鐘——重點不在獨奏長度，而在她的咬字與換氣。three blind mice 這條線本來就以錄音的空間感著稱，人聲與鼓之間的距離在這張上聽得特別清楚。",
+  "keyTracks": [
+   "Unforgettable",
+   "Blue Prelude",
+   "After You've Gone"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（首發年）。MB first-release-date 1973、轄下黑膠那筆就是 1973／JP／three blind mice TBM-21；Discogs release 4361918 盤面同記 1973、TBM-21、錄音 1973-09-12 與 09-14；日文百科第三筆獨立寫「1973年アルバム『アンフォゲッタブル』でソロデビュー」。**三個彼此獨立的來源**（資料庫、實體盤面、日文百科生平），不是第 431 條那種同源重覆。2006-11-22 的 MHCP 10030 是 SACD 復刻，不取。",
+  "notes": "**覆核策展層：MB 兩筆 release、廠牌、catno、軌數逐欄相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽：三種查法全部落空，確認無來源。**（1）`search`「中本マリ Unforgettable」「Mari Nakamoto Unforgettable」jp 各 **0 筆**；（2）藝人目錄——她在 Apple 上有兩個 artistId，`182445989`（jp／us 各 16 張，**全部是 Victor**）與 `74576328`（jp／us 各 2 張，**全部是 EMI Music Japan**），**three blind mice 的 TBM 號段一張都沒有**；（3）曲名反查 `entity=song`「Sneakin' Up on You Nakamoto」**0 筆**、「中本マリ」25 筆逐筆核過全部來自 Victor 與 EMI 兩批，沒有一軌屬於本張。**缺的是 three blind mice 這個權利人整批**（c-132 第 399 條「廠牌×時期×權利人」的又一次應驗）。｜**人名邊界**：宮沢昭、大沢保郎、横内章次、稲葉国光、小原哲次郎、藤井武、神成芳彦、西沢ベン 有 Discogs 盤面 credit，可寫。⚠ **宮沢昭 是 c-132 b 組的掛名（本批收 6 張）、稲葉国光 與 小原哲次郎 也在本組《Planets》的編制裡、横内章次 又是本組《Nice Feeling》與《Shiny Stockings》的編曲**——跨批與跨卡交集密集，依 c-133 第 430a 條不得當主軸。⚠ **神成芳彦 也是 菅野邦彦 幾張三盲鼠盤的錄音師**（見日文百科 菅野邦彦 作品表）。｜**「第三位女性歌手」這一句**：日文百科原句是「スリー・ブラインド・マイス レーベルで3人目の女性ジャズシンガーだった」，**有具名出處、是序數不是「第一／唯一」**，依第 253 條與 c-132 第 398 條可寫，但**要照原句寫成「第三位」，不得升格成「第一位」或「唯一」**。｜**反同構（中本マリ 五張）**：本張切入「1973 年兩天錄完的單飛首作＋三盲鼠＋宮沢昭」，《Just in Time》走 Pro-Use Series 的東芝盤、《Nice Feeling》走流行歌本與大編制、《Shiny Stockings》走壓了三年才發的金庫盤、《Aphrodite》走倫敦錄音與得獎；五張不得共用「她從合唱團出身、1970 年轉唱爵士」這條生平線。"
+ },
+ {
+  "key": "desc4:中本マリ|Just in Time",
+  "artist": "中本マリ",
+  "album": "Just in Time",
+  "facts": [
+   {
+    "f": "release-group 270dbbe5 的欄位：first-release-date 1975、primary-type Album、secondary-types 空。轄下只有一筆 release：1975／JP／Official，Toshiba Records LF-91012，12 吋黑膠 10 軌，由 東芝 EMI 製造。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=270dbbe5-30ca-4097-a443-074a057cf2da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本張屬於 東芝 的「Pro-Use Series」。盤面 credit：中本マリ（歌）、藤井貞泰（編曲）、原田政長（貝斯）、中山正治（鼓）、草野浩二（監督）、行方洋一（錄音），解說 小川正夫。",
+    "src": "https://www.discogs.com/release/3881222"
+   },
+   {
+    "f": "十軌的最後一首是開場曲的重唱：A 面第一首〈You Go to My Head〉3:29，B 面最後又放了一個 5:28 的慢速版本，同一首歌在同一張碟裡出現兩次、長度差了兩分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=270dbbe5-30ca-4097-a443-074a057cf2da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "其餘八軌全是美國歌本：〈Just in Time〉4:41、〈Autumn in New York〉4:03、〈I'm Gonna Sit Right Down and Write Myself a Letter〉3:24、〈Angel Eyes〉5:15、〈Baby, Won't You Please Come Home〉3:26、〈I'm Glad There Is You〉4:24、〈We'll Be Together Again〉5:05、〈I Thought About You〉2:33。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=270dbbe5-30ca-4097-a443-074a057cf2da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "中本マリ 1970 年才從流行合唱團轉唱爵士，1973 年以 three blind mice 的《アンフォゲッタブル》單飛；本張是她離開三盲鼠之後、在 東芝 留下的第一批錄音之一。1985 年她拿下第一屆 水島早苗ジャズヴォーカル賞（現・日本ジャズヴォーカル賞）的大獎。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9C%AC%E3%83%9E%E3%83%AA"
+   }
+  ],
+  "hookCandidates": [
+   "同一首〈You Go to My Head〉放了兩次，一次三分半、一次五分半，分別擺在頭和尾",
+   "「Pro-Use Series」——東芝拿她的聲音當錄音示範用的那條產品線"
+  ],
+  "sound": "十軌、約四十分鐘，編制精簡到只剩節奏組：藤井貞泰 的鋼琴與電鋼琴、原田政長 的貝斯、中山正治 的鼓，沒有管樂。曲目全走美國歌本，最短的〈I Thought About You〉2:33、最長的〈You Go to My Head (Slow Version)〉5:28。整張的設計就是把人聲放到最前面——這是 東芝「Pro-Use Series」那條線的邏輯，錄的是聲音本身的細節，不是編曲的厚度。",
+  "keyTracks": [
+   "Just in Time",
+   "You Go to My Head",
+   "Angel Eyes"
+  ],
+  "status": "full",
+  "yearVerified": "維持 1975（卡單值），**但店面給的是 1976，兩說要記進 risk**。MB first-release-date 1975、轄下唯一那筆 release 就是 1975／JP／Toshiba Records LF-91012；**Discogs 的兩筆實體盤面條目（release 3881222 與 16190907）也都記 1975**。**店面 `715844564` 的 collection 層寫 1976-01-01、℗ 欄寫「1976 EMI Music Japan Inc.」**。判準依 c-134 第 422 條的那句「哪一邊在描述原盤」：**Discogs 的兩筆是實體黑膠的盤面著錄、與 MB 同指 1975（二對一）**，而店面那筆是 EMI Music Japan 後來的數位化條目。**取 1975。**⚠ 另記一個細節：店面該筆**曲目層的日期不是同一個值**——第 1、5、6、7、8、9、10 軌標 1976-01-01，第 2、3、4 軌卻標 1987-08-05（那是同廠選輯《JAZZ VOCALのすべて》的日期），**同一筆條目的兩層、甚至同一層的不同軌各給一個日期**，是 c-133 第 428 條的加強版。",
+  "notes": "**覆核策展層：MB 單筆 release、廠牌、catno、軌數相符，封面判斷成立；CAA release-group 端點實測 200。年份提異議一筆，見 yearVerified（不動卡單，列出來給主線）。**｜**試聽**：藝人目錄 `lookup?id=74576328&entity=album`（Apple 的**第二個** 中本マリ artistId，顯示名「中本マリ」，名下只有 2 張、**全部是 EMI Music Japan**）jp 與 us 都回得到 **`715844564`**，10 軌與 MB 逐軌同序，全軌有試聽——**串流採信 715844564**。⚠ **張數最多的那個 artistId `182445989`（16 張、全 Victor）裡沒有這一張**；她在 Apple 上的兩個 id **是按廠牌切開的**（第 436 條已記，本組覆核成立）。⚠ 軌長與 MB 不是一秒不差（3:35 對 3:29、4:47 對 4:41…），**依 c-133 第 431 條，那反而說明這是另一份轉錄、不是同源**。｜⚠ **這張推翻策展層第 436 條的一句話**：策展層寫「本批三張東芝盤在店面上全部查不到⋯東芝這條線是系統性缺席」。**本張也是東芝盤（Toshiba Records LF-91012），而它在店面上有完整條目。** 所以缺席的粒度不是「東芝」，而是「東芝 EMI 目錄裡哪一批母帶被誰、在什麼時候數位化」——在的是 EMI Music Japan 時期就處理過的，缺的是後來歸 Universal 的那批（見本組《L.A. Master》）。**c-132 第 399 條「廠牌×時期×權利人」的再一次應驗。**｜**人名邊界**：藤井貞泰、原田政長、中山正治、草野浩二、行方洋一、小川正夫 有 Discogs 盤面 credit，可寫。⚠ **原田政長 與 藤井貞泰 也在本組《Shiny Stockings》的編制裡**（那張的錄音期 1975–76 與本張同時），兩張不得共用同一段編制敘述。｜**獎項**：水島早苗ジャズヴォーカル賞 是 **1985 年第一屆的大獎、得獎不是入圍**，但**與本張無關**（晚了十年），依反向禁令屬「與作品無關的後續生平事件」，**正文不得寫**；留在 facts 只是給寫作層判斷她的位置用，**hook 層請勿取用**。｜**反同構（中本マリ 五張）**：本張切入「Pro-Use Series 的精簡節奏組＋同一首歌放兩次」。"
+ },
+ {
+  "key": "desc4:中本マリ|Nice Feeling",
+  "artist": "中本マリ",
+  "album": "Nice Feeling",
+  "facts": [
+   {
+    "f": "release-group 6addeb40 的欄位：first-release-date 1977、primary-type Album、secondary-types 空。轄下只有一筆 release：1977／JP／Official，Victor SPX-1039，12 吋黑膠 10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6addeb40-1960-498e-a2c3-9211f1746cc7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤面註記寫「Recording Date: December 8, 1976 ~ January 14, 1977」，發行日 1977 年 4 月 1 日，本張屬於 ビクター 的 Heart & Soul Jazz Series。",
+    "src": "https://www.discogs.com/release/5893634"
+   },
+   {
+    "f": "編曲與吉他都由 横内章次 負責，伴奏團體是タウン・フリーズ，合唱是 Time Five；編制包括 伊藤正明（貝斯）、周代春雄（鼓）、飯吉馨（電鋼琴）、栗林稔（鋼琴）、直居隆雄（吉他）、山川恵子（豎琴）、中島修／小野寺健（打擊樂）、市原康介（次中音薩克斯風）、小山岳（長笛），另有 新井英治グループ 的長號、羽鳥幸次グループ 的小號與 大野グループ 的弦樂。",
+    "src": "https://www.discogs.com/release/5893634"
+   },
+   {
+    "f": "十首全是 1970 年代前半的流行曲翻唱：〈Feelings〉4:22、〈Yesterday When I Was Young〉4:34、〈We've Only Just Begun〉3:25、〈Masquerade〉4:36、〈Without You〉3:12、〈You Are the Sunshine of My Life〉3:07、〈You Are Everything〉2:26、〈Before the Next Teardrop Falls〉2:53、〈Feel Like Makin' Love〉4:22、〈Killin' Me Softly〉4:20。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6addeb40-1960-498e-a2c3-9211f1746cc7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1978 年她在《スイングジャーナル》讀者人氣投票的人聲部門拿下第一名，此後連續八年蟬聯；同年與 高橋達也と東京ユニオン 同赴蒙特勒爵士音樂節演出。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9C%AC%E3%83%9E%E3%83%AA"
+   }
+  ],
+  "hookCandidates": [
+   "十首全是當時的流行榜歌——〈Feelings〉〈Killin' Me Softly〉〈Masquerade〉，一首爵士標準曲都沒有",
+   "弦樂、銅管、豎琴、合唱團全上，跨年錄了五個星期"
+  ],
+  "sound": "十軌、約三十七分鐘，是她五張裡編制最厚的一張：節奏組之外還有弦樂組、長號組、小號組、豎琴與合唱團，全部由 横内章次 統一編曲。曲目一首爵士標準曲都沒有，十首全是當時電台上的流行歌——〈Feelings〉4:22、〈Masquerade〉4:36、〈Killin' Me Softly〉4:20、〈We've Only Just Begun〉3:25。沒有一首超過五分鐘，獨奏空間讓給編曲，人聲被推在整面弦樂與銅管的前面唱。這是 1977 年日本唱片公司替爵士歌手做的「跨界」寫法。",
+  "keyTracks": [
+   "Feelings",
+   "Killin' Me Softly",
+   "Masquerade"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（首發年）。MB first-release-date 1977、轄下唯一那筆 release 就是 1977／JP／Victor SPX-1039；Discogs release 5893634 盤面同記 1977、SPX-1039、Heart & Soul Jazz Series，並多給一個發行日 **1977-04-01** 與錄音期 1976-12-08 至 1977-01-14。店面 `1688960282` 的 collection 層與曲目層都是 1977-01-01、℗ 1977 Victor。⚠ **這張正是 c-134 第 435 條那個 Victor 2023-07-06 整批數位化的名單內的藝人，但本張的 MB 值沒有被拉到 2023**——同一位、同一家廠牌、同一套數位化動作，這一筆 MB 是對的（與第 435 條記的《Aphrodite》反例同形）。",
+  "notes": "**覆核策展層：MB 單筆 release、廠牌、catno、軌數相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**⚠ 逐張覆核第 435 條指名的 中本マリ 年份失真：本組五張裡，MB 值被 Victor 2023-07-06 拉走的一張都沒有。** 五張的 MB first-release-date 分別是 1973／1975／1977／1978／1979，**沒有任何一張是 2023-07-06**；第 435 條點名的三張（《Love Touch》《Just Fine》《Montreux The Best '78》）**全都不在本批收錄名單內**（是第 434 條的候補與第 437 條 C 的合掛）。**所以那條規律在本批的五張卡上不需要動用，策展層的處理成立。**｜**試聽**：藝人目錄 `lookup?id=182445989&entity=album` jp 與 us 都回得到 **`1688960282`**，10 軌、℗ 1977 Victor Entertainment，全軌有試聽——**串流採信 1688960282**。｜**人名邊界**：横内章次、伊藤正明、周代春雄、飯吉馨、栗林稔、直居隆雄、山川恵子、中島修、小野寺健、市原康介、小山岳、新井英治、羽鳥幸次 有 Discogs 盤面 credit。⚠ **盤面的羅馬字與漢字對照有幾處靠推定**（例如鼓手一欄的羅馬字），**寫作層只取本稿已列出的漢字，不要自行補字**。⚠ **横内章次 也是本組《Unforgettable!》的吉他手與《Shiny Stockings》的編曲、新井英治グループ 也在本組《Our Time》裡、直居隆雄 是日文百科記載的 杉本喜代志 追隨者之一**——本組內部交集，依 c-133 第 430a 條不得當主軸。｜**反同構（中本マリ 五張）**：本張切入「十首流行榜翻唱＋弦樂銅管豎琴合唱的大編制」，與《Unforgettable!》的六人歌本盤、《Just in Time》的精簡節奏組、《Shiny Stockings》的金庫盤、《Aphrodite》的倫敦原創盤各不相犯。"
+ },
+ {
+  "key": "desc4:中本マリ|Shiny Stockings",
+  "artist": "中本マリ",
+  "album": "Shiny Stockings",
+  "facts": [
+   {
+    "f": "release-group 2af8e17d 的欄位：first-release-date 1978、primary-type Album、secondary-types 空。轄下只有一筆 release：1978／JP／Official，12 吋黑膠 10 軌，**同一筆 release 的 label-info 掛了兩家廠牌、同一個 catalog number**：EXPRESS ETJ-60002 與 Far East ETJ-60002。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2af8e17d-2241-4cc8-a240-779fb01e749e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤面註記寫「Recorded at Toshiba EMI Studio Oct 16, 17, 22, 1975 / Aug 2, 10, 1976. Released \"Far East Jazz Series\", on August 5, 1978」——**錄音在 1975 年 10 月與 1976 年 8 月，唱片卻要等到 1978 年 8 月 5 日才發**，中間隔了將近三年。",
+    "src": "https://www.discogs.com/release/12248221"
+   },
+   {
+    "f": "編制是一支完整的大樂團：編曲與電吉他 横内章次，指揮 吉沢博；薩克斯風組有 宮沢昭（次中音）、市原康介（次中音）、三森一郎（次中音）、佐野正明（中音）、ジェイク・H・コンセプション（中音）、砂原俊三（上低音）；長號由 新井英治グループ、小號由 羽鳥幸次グループ 擔任；節奏組是 藤井貞泰（鋼琴、Fender 電鋼琴）、江草啓介（Fender 電鋼琴）、稲葉国光／原田政長（貝斯）、ジミー竹内／中山正治（鼓）、藤田正樹（電吉他）。",
+    "src": "https://www.discogs.com/release/12248221"
+   },
+   {
+    "f": "十軌全是美國歌本，其中三首與她 1973 年的《Unforgettable!》和 1975 年的《Just in Time》重複：〈Just In Time〉〈Unforgettable〉〈We'll Be Together Again〉〈Baby, Won't You Please Come Home?〉。其餘是〈But Not for Me〉〈It's All Right With Me〉〈Autumn in New York〉〈Shiny Stockings〉〈That Old Feeling〉〈Someone to Watch Over Me〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2af8e17d-2241-4cc8-a240-779fb01e749e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "標題曲〈Shiny Stockings〉是 Frank Foster 為 Count Basie 樂團寫的曲子，本張用大樂團編制重現的正是那種寫法。",
+    "src": "https://www.discogs.com/release/4596331"
+   }
+  ],
+  "hookCandidates": [
+   "錄音錄完，這張碟在架上躺了將近三年才發行",
+   "薩克斯風那一排六個人，其中一個是 宮沢昭——五年前替她錄第一張的也是他"
+  ],
+  "sound": "十軌、大樂團編制：六管薩克斯風、一整組長號、一整組小號，節奏組裡鋼琴、電鋼琴、貝斯、鼓都各有兩位輪替，全部由 横内章次 編曲、吉沢博 指揮。曲目是歌本裡最結實的那一批，標題曲〈Shiny Stockings〉本來就是 Count Basie 樂團的曲子，這張用的也是那套寫法——人聲坐在銅管的正上方，短前奏、進歌、放一段合奏、收。與她同期那幾張小編制錄音相比，這是把她放進大樂團裡測試的一張。",
+  "keyTracks": [
+   "Shiny Stockings",
+   "But Not for Me",
+   "Someone to Watch Over Me"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978（首發年）。MB first-release-date 1978、轄下唯一那筆 release 記 1978／JP；Discogs 的兩筆實體條目（release 12248221 與 4596331）盤面**獨立寫出精確發行日 1978-08-05** 與 Far East Jazz Series。⚠ **錄音年與發行年差了將近三年**（錄音 1975-10-16／17／22 與 1976-08-02／10），依規則 `year` 取首發年 1978，錄音期寫進 risk。**店面沒有本張的條目可對照。**",
+  "notes": "**覆核策展層：MB 單筆 release、雙廠牌同一個 catno、軌數相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽：三種查法全部落空，確認無來源。**（1）`search`「中本マリ Shiny Stockings」jp 與「Shiny Stockings Mari Nakamoto」us 各 **0 筆**；（2）兩個 artistId 的目錄（`182445989` 16 張全 Victor、`74576328` 2 張全 EMI Music Japan）**都沒有這一張**；（3）曲名反查 `entity=song`「シャイニー・ストッキングス 中本」回 **2 筆，兩筆都不是本張**——一筆是 1987 年同廠選輯《JAZZ VOCALのすべて ~ジャスト・イン・タイム》（`720310207`，18 軌）、一筆是 1998 年的 Various Artists 拼盤《スウィート・ジャズ・ヴォーカル・ベスト》（`724967944`）。⚠ **與本組《L.A. Master》同形**：**單曲被授權進選輯、整張原盤卻沒有數位條目**（c-132 第 399 條）。｜**人名邊界**：横内章次、吉沢博、宮沢昭、市原康介、三森一郎、佐野正明、ジェイク・H・コンセプション、砂原俊三、藤井貞泰、江草啓介、稲葉国光、原田政長、ジミー竹内、中山正治、藤田正樹、新井英治、羽鳥幸次 有 Discogs 盤面 credit。Frank Foster 與 Count Basie 是非東亞音樂人，寫拉丁原文。⚠ **宮沢昭 是 c-132 b 組掛名、三森一郎 也在本組《Maki》裡、稲葉国光 也在《Planets》與《Unforgettable!》裡、原田政長／藤井貞泰／中山正治 也在《Just in Time》裡、横内章次 也在《Unforgettable!》與《Nice Feeling》裡**——**本組二十二張裡至少七張共用同一批東京錄音室樂手**，依 c-133 第 430a 條，**寫作層不得每張都以此為主軸**。｜**這張的招牌事實是「壓了三年才發」**，寫作層請優先用它，那是這張與她其他四張唯一不共用的切入面。｜**反同構（中本マリ 五張）**：本張切入「1975–76 錄音、1978 才發的金庫盤＋大樂團」。"
+ },
+ {
+  "key": "desc4:中本マリ|Aphrodite",
+  "artist": "中本マリ",
+  "album": "Aphrodite",
+  "facts": [
+   {
+    "f": "release-group 014da4cb 的欄位：first-release-date 1979、primary-type Album、secondary-types 空。轄下只有一筆 release：1979／JP／Official，Zen ZEN-1010，12 吋黑膠 9 軌，由 ビクター音楽産業 製造。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=014da4cb-df7f-4a90-ac98-3a97bffc5c95&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "日文盤題是《アフロディーテの祈り》，Discogs 著錄的發行日是 1979 年 8 月 25 日；另有腰帶配色不同的兩種版本（洋紅／銀與紅／紫），其中一種附八頁小冊。",
+    "src": "https://www.discogs.com/release/5364412"
+   },
+   {
+    "f": "九軌以同一首曲子的序曲與終曲包住整張：A 面〈Purple Dawn - Prologue〉、〈Not Another Day〉、〈Too Many Springs〉、〈Orchids〉；B 面〈I'll Get What Is Mine〉、〈Legend of Garbo〉、〈Strange Diseases〉、〈You're Gone〉、〈Purple Dawn - Epilogue〉。日文曲題把首尾兩軌譯成〈紫光のささやき 序曲〉與〈紫光のささやき 終曲〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=014da4cb-df7f-4a90-ac98-3a97bffc5c95&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本張是 1979 年在倫敦與 ロイヤル・フィルハーモニー管弦楽団 合作的錄音，選曲不走標準曲，而是收了 ジャニス・イアン 的三首作品與 スティーヴィー・ワンダー〈I'll Get What Is Mine〉的翻唱。",
+    "src": "https://www.stereo-records.com/detail.php?itemCd=66462"
+   },
+   {
+    "f": "1979 年 中本マリ 以《アフロディーテの祈り》獲《スイングジャーナル》誌 ジャズ・ディスク大賞 的**特別賞**（得獎，非入圍）；同年她與 三木敏悟とインナーギャラクシー 一同登上蒙特勒爵士音樂節。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9C%AC%E3%83%9E%E3%83%AA"
+   },
+   {
+    "f": "Zen 是一個由 ビクター音楽産業 代為製造的小廠牌，catalog number ZEN-1010；2017 年 8 月 23 日 Victor 才把這份母帶數位化。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=014da4cb-df7f-4a90-ac98-3a97bffc5c95&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "首尾兩軌是同一首〈紫光のささやき〉的序曲與終曲，中間夾著三首 ジャニス・イアン",
+   "1979 年飛倫敦，背後是 ロイヤル・フィルハーモニー——這張替她拿下了スイングジャーナル 的特別賞"
+  ],
+  "sound": "九軌，用〈Purple Dawn〉的序曲與終曲把整張框起來，中間七首是一套有敘事感的節目單。編制不是爵士小組而是管弦樂：倫敦錄音、ロイヤル・フィルハーモニー管弦楽団 在後面，人聲在前。選曲也不走標準曲——ジャニス・イアン 的三首與 スティーヴィー・ワンダー 的〈I'll Get What Is Mine〉讓整張更靠近 1970 年代末的創作歌曲，〈Legend of Garbo〉〈Strange Diseases〉這種曲題本身就不是歌本的語言。",
+  "keyTracks": [
+   "Purple Dawn - Prologue",
+   "I'll Get What Is Mine",
+   "Legend of Garbo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1979（首發年）。MB first-release-date 1979、轄下唯一那筆 release 就是 1979／JP／Zen ZEN-1010；Discogs 的四筆實體條目（5364412／13921643／28359448／13911198）全部記 1979，其中一筆另給 **1979-08**、一筆給 **1979-08-25**；日文百科第三筆獨立寫「1979年、『アフロディーテの祈り』でスイングジャーナル誌 ジャズ・ディスク大賞 特別賞を受賞」。⚠ **這是 c-134 第 435 條記的那個反例：店面 `1688964069` 的 collection 層寫 2017-08-23、℗ 2017 Victor Entertainment，但 MB 的 1979 才是對的**——Victor 2017 年才把 Zen 的母帶數位化。**本組覆核成立，維持 1979。**",
+  "notes": "**覆核策展層：MB 單筆 release、廠牌、catno、軌數相符，年份與封面判斷成立；CAA release-group 端點實測 200。第 435 條的反例逐筆覆核通過。**｜**試聽**：藝人目錄 `lookup?id=182445989&entity=album` jp 與 us 都回得到 **`1688964069`**，9 軌、℗ 2017 Victor Entertainment，全軌有試聽，日文曲題與 MB 逐軌對得上（紫光のささやき 序曲／ノット・アナザー・デイ／トゥー・メニー・スプリングス／オーキッズ／アイル・ゲット・ホワット・イズ・マイン／グレタ・ガルボの伝説／ストレンジ・ディズィーズ／ユー・アー・ゴーン／紫光のささやき 終曲）——**串流採信 1688964069**。⚠ **店面那筆是 2017 年的數位化版本、不是 1979 年原盤**，正文不得把 2017 當發行年。｜⚠ **舉證強度要講清楚（第 431 條的紀律）**：〈倫敦錄音、ロイヤル・フィルハーモニー、ジャニス・イアン 三首、スティーヴィー・ワンダー 翻唱〉這一組事實，**目前只有唱片行的商品描述在支持**，而不同唱片行的描述文字高度相似，**很可能都是抄同一份腰帶／內頁解說——那是一個來源不是三個**。Discogs 的四筆條目**一個 credit 欄都沒填**，MB 也只有曲目。**寫作層可以寫倫敦與管弦樂團**（兩家獨立唱片行同記、且與 Zen／ビクター 這種規格相符），**但「ジャニス・イアン 寫了三首」「弦樂編曲是 Don Sebesky」「編曲是 三木敏悟」這三句請標 uncertain、不要當主軸**——本稿只把最保守的版本寫進 facts。｜**獎項**：ジャズ・ディスク大賞 特別賞 **1979 年、得獎**（日文百科原文「受賞」），**與本張直接綁定，可寫**；不得寫成「大賞」或「入圍」。｜**人名邊界**：ジャニス・イアン、スティーヴィー・ワンダー 是非東亞音樂人，**facts 與正文一律寫拉丁原文 Janis Ian、Stevie Wonder**（本稿 facts 沿用來源的片假名是為了對照原文，寫作層請轉回拉丁原文，見 c-04 的教訓）；三木敏悟 寫漢字。｜**反同構（中本マリ 五張）**：本張切入「倫敦與管弦樂團＋序曲終曲的框架＋得獎」，是五張裡唯一不以美國歌本為骨幹的一張。"
+ },
+ {
+  "key": "desc4:笠井紀美子|Just Friends",
+  "artist": "笠井紀美子",
+  "album": "Just Friends",
+  "facts": [
+   {
+    "f": "release-group 4e597bc2 的欄位：first-release-date 1970、primary-type Album、**secondary-types 空**、artist-credit 就是漢字「笠井紀美子」。轄下只有一筆 release：1970／JP／Official，ロンドンレコード SKK(L)3006，黑膠 10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4e597bc2-7cfb-4529-b0f1-c997aedbb268&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **這是一張現場錄音盤**：盤面直接印著「LIVE AT THE YAMAHA HALL SEP. 16. 1970」，全名是《Just Friends – Kimiko Kasai Concert – SJ Jazz Workshop: 9》，屬於《スイングジャーナル》主辦的 Jazz Workshop 系列第九回，同時掛 London Records 的 New Emotional Work Series。日本盤由 キングレコード 壓製發行。",
+    "src": "https://www.discogs.com/release/24226421"
+   },
+   {
+    "f": "伴奏是 大野雄二トリオ：大野雄二（鋼琴）、水橋孝（貝斯）、小原哲次郎（鼓）。",
+    "src": "https://www.discogs.com/release/24226421"
+   },
+   {
+    "f": "十軌：〈There Will Never Be Another You〉2:34、〈Sunny〉4:38、〈Exactly Like You〉3:18、〈Just in Time〉2:51、〈Wild Is the Wind〉6:48、〈By the Time I Get to Phoenix〉3:04、〈Bewiched〉6:07、〈Get Out of Town〉2:41、〈Good Life〉5:28、〈Just Friends〉5:28。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4e597bc2-7cfb-4529-b0f1-c997aedbb268&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "笠井紀美子 1945 年 12 月 15 日生於京都市，同志社女子高校 中輟，1964 年上京，以唱標準曲起家。1971 年 9 月 日清食品 推出杯裝泡麵 カップヌードル 時的廣告歌就是她唱的，商品與歌一起風行。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%AC%A0%E4%BA%95%E7%B4%80%E7%BE%8E%E5%AD%90"
+   },
+   {
+    "f": "她 1978 年移居美國加州洛杉磯，1987 年起一面唱歌一面做珠寶設計，1990 年創立珠寶品牌，1998 年結束長達三十年的音樂活動。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%AC%A0%E4%BA%95%E7%B4%80%E7%BE%8E%E5%AD%90"
+   }
+  ],
+  "hookCandidates": [
+   "一九七〇年九月十六日，ヤマハホール 的一個晚上——這張碟從頭到尾都是現場",
+   "替她伴奏的是 大野雄二トリオ；隔年她唱的那首カップヌードル 廣告歌會紅遍全日本"
+  ],
+  "sound": "十軌、約四十三分鐘，一場音樂會的完整紀錄：人聲加鋼琴三重奏，沒有第二個管樂聲部。曲序刻意在長短之間切換——〈There Will Never Be Another You〉2:34 這種短打之後接〈Wild Is the Wind〉6:48 與〈Bewiched〉6:07 兩首慢的長曲，再由〈Good Life〉5:28 與標題曲〈Just Friends〉5:28 收尾。選曲橫跨爵士歌本（〈Exactly Like You〉〈Get Out of Town〉）與當代流行（Bobby Hebb 的〈Sunny〉、Jimmy Webb 的〈By the Time I Get to Phoenix〉），現場的聽眾反應與換氣都留在盤上。",
+  "keyTracks": [
+   "Just Friends",
+   "Wild Is the Wind",
+   "Sunny"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（首發年）。MB first-release-date 1970、轄下唯一那筆 release 就是 1970／JP／ロンドンレコード SKK(L)3006；Discogs release 24226421 的盤面（初版、deep groove 標籤）記 1970 並印出演出日 1970-09-16。⚠ **店面 `1777021586` 兩層不一致**：collection 層寫 **1971-01-01**、℗ 欄寫「1971 King Record Co.,Ltd」，**但十軌的曲目層全部寫 1970-01-01**——依 c-133 第 428 條要指明是哪一層，**曲目層的 1970 與 MB／Discogs 一致，取 1970**。⚠ 另記：該 collectionId `1777021586` 就落在 c-132 第 391 條點名的 King 2024 年數位化號段（1777007028〜1777021265）的緊鄰上緣，**℗ 年在這一批裡本來是原盤年的線索（第 435 條判準 1），但這一次它比實體盤面晚了一年**——**判準 1 在本張不成立**，實體盤面優先。",
+  "notes": "**⚠ 推翻資料庫端的一項登記：這是現場盤，MB 的 `secondary-types` 是空的。** 依 c-132 第 397 條與 c-133 第 426 條第 7 點，`releaseType` **維持 Album 不動**（它反映的是資料庫端的登記），**但「現場錄音」這個事實必須寫進正文**，hook 層請在 note 指定。**證據有兩層**：(a) Discogs 盤面印「LIVE AT THE YAMAHA HALL SEP. 16. 1970」；(b) 店面條目的**十軌曲名後面全部帶「(ライブ・ヴァージョン)」**，且盤名本身就叫《JUST FRIENDS/KIMIKO KASAI CONCERT》。**這是 c-132 第 397 條同形在本線的第六次**（該條三張＋c-133 第 426 條兩張＋本張）。｜⚠ **推翻回撈報告的「目錄裡找不到」——第三種查法找回一張。** 藝人目錄 `lookup?id=393034466&entity=album`（Apple 顯示名「KASAI KIMIKO」）jp 與 us 都回得到 **`1777021586`**，10 軌與 MB 逐軌對得上、長度差 ≤2 秒，全軌有試聽——**串流採信 1777021586**。**漏查成因是第 400a 條第一種與第二種合併發作：店面盤名多了「/KIMIKO KASAI CONCERT」後綴、曲名又全部改成片假名**，用《Just Friends》去搜尋搜不到。｜**封面覆核通過**：CAA release-group 端點實測 **200**。｜**人名邊界**：大野雄二、水橋孝、小原哲次郎 有 Discogs 盤面 credit，可寫；Bobby Hebb 與 Jimmy Webb 是原曲作者、非東亞音樂人，寫拉丁原文。⚠⚠ **大野雄二 是 c-133 b 組的掛名**（那批收 4 張），**而這張碟的伴奏就是他的三重奏**——**c-134 第 437 條 E 的跨批同碟風險表裡沒有這一筆**（該表列的是《トリオ・バイ・トリオ・プラス・ワン》），**本張是第十筆**：若 c-133 b 組以 大野雄二トリオ 的名義收走同一張碟，`chk-prop` 的折疊鍵（掛名＋盤名）**一樣不會亮燈**。**已實查 `desc-tools/batches/cards/c133-cards.json` 的 22 張 b 組卡，沒有這一張，撞卡 0**，但要寫進交接。⚠ 水橋孝 也在本組《Maki》、小原哲次郎 也在《Planets》與《Unforgettable!》。｜**カップヌードル 那一筆**：日文百科原句寫 1971 年 9 月、世界初のカップ麺，**是她本人唱的廣告歌、有具名出處**，但**發生在本張之後一年**——依反向禁令屬「與作品直接綁定？」的邊界，**本稿判定為可寫但必須標明時序**（「隔年」），不得寫成本張當時的事。｜**反同構（笠井紀美子 六張）**：本張切入「1970 年 ヤマハホール 的現場＋大野雄二トリオ」，《Umbrella》走 かまやつひろし 製作的 folk & rock、《What's New》走日本三重奏的歌本盤、《Thanks, Dear》走洛杉磯、《This Is My Love》走紐約、《TOKYO SPECIAL》走日文原創；六張不得共用「她從京都上東京」這條生平線。"
+ },
+ {
+  "key": "desc4:笠井紀美子|Umbrella",
+  "artist": "笠井紀美子",
+  "album": "Umbrella",
+  "facts": [
+   {
+    "f": "release-group f9d6d893 的欄位：first-release-date 1972、primary-type Album、secondary-types 空。轄下兩筆 release：1972／JP／Official，LIBERTY LTP-9050，12 吋黑膠 10 軌；2014-10-16／JP／Official，ORDERMADE FACTORY DYCL-537，Blu-spec CD 10 軌，曲名改成日文。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f9d6d893-9421-4f64-8a52-34d821d13179&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1972 年原盤的發行日是 3 月 5 日，由 東芝音楽工業 製造，裝在厚紙壓紋的對開封套裡附腰帶與內頁；⚠ **本張掛的系列不是爵士而是「New Folk & Rock」**。",
+    "src": "https://www.discogs.com/release/27978063"
+   },
+   {
+    "f": "製作人是 かまやつひろし。編制也不是爵士小組：村井邦彦（電鋼琴）、大野克夫（鋼琴、Hammond 風琴）、ツノダヒロ 與 原田裕臣（鼓）、モンド・ウーノ（電貝斯）、ほしいも小僧（木吉他與電吉他）；監督 藤本英一 與 平方正。",
+    "src": "https://www.discogs.com/release/4959999"
+   },
+   {
+    "f": "十軌的日文曲題（2014 年 Blu-spec CD 版）是〈ベッドの舟で愛の海へ〉3:03、〈ジョージのブルース〉3:02、〈とじこめて〉4:10、〈窓をよこぎる雲〉3:39、〈渇き〉3:17、〈エンド・オブ・ラヴ〉2:50、〈すべては一部のすべて〉3:54、〈四つの季節〉4:00、〈ちょうど一時間〉4:39、〈ユー・トーク・トゥ・マッチ〉9:55，與 1972 年原盤的英文曲題逐軌對應。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f9d6d893-9421-4f64-8a52-34d821d13179&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "收尾的〈You Talk Too Much〉9:55 是全片唯一超過五分鐘的一首，其餘九首都在三到四分半之間。",
+    "src": "https://www.discogs.com/release/4959999"
+   }
+  ],
+  "hookCandidates": [
+   "唱片背後掛的系列不是爵士，是「New Folk & Rock」——製作人是 かまやつひろし",
+   "九首都三四分鐘，最後一首突然放到九分五十五秒"
+  ],
+  "sound": "十軌、約四十二分鐘，編制是 1972 年的日本搖滾錄音室而不是爵士四重奏：電鋼琴、Hammond 風琴、電貝斯、兩位鼓手輪替、木吉他與電吉他並用，沒有管樂。前九首全部壓在三到四分半、寫法接近歌曲而非即興載體，最後一首〈You Talk Too Much〉9:55 才把節奏組放開。這是把一位爵士歌手放進 folk & rock 製作框架裡的一張——選曲、曲長與音色的決定權都在製作端。",
+  "keyTracks": [
+   "You Talk Too Much",
+   "Over The Waves With Love",
+   "Winter, Spring, Summer & Fall"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972（首發年）。MB first-release-date 1972、轄下黑膠那筆就是 1972／JP／LIBERTY LTP-9050；Discogs 的三筆實體條目（4959999／27978063／15873570）全部記 1972，其中一筆另給精確日 **1972-03-05**。2014-10-16 的 DYCL-537 是 Blu-spec CD 復刻，不取。**店面沒有本張的條目可對照。**",
+  "notes": "**覆核策展層：MB 兩筆 release、廠牌、catno、軌數逐欄相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽：三種查法全部落空，確認無來源。**（1）`search`「笠井紀美子 アンブレラ」「Kimiko Kasai Umbrella」jp 各 **0 筆**；（2）藝人目錄 `lookup?id=393034466&entity=album` jp 與 us 各回 **18 張，全部是 Sony Music Labels、King、Victor、Catalyst 四家**，LIBERTY／東芝 的 LTP 號段一張都沒有；（3）曲名反查 `entity=song`「笠井紀美子 アンブレラ」**0 筆**、「ベッドの舟で愛の海へ」25 筆逐筆核過**全部是別人**（桑田佳祐、テレサ・テン、米米CLUB…），**沒有一軌屬於本張**。⚠ **與本組《L.A. Master》《Shiny Stockings》同一條線**：三張缺席的都是東芝系的母帶（LIBERTY／EXPRESS／Far East），而她同一位藝人的 CBS/Sony 目錄十六張整批都在——**c-132 第 399 條「廠牌×時期×權利人」的又一次應驗**。｜**人名邊界**：かまやつひろし、村井邦彦、大野克夫、ツノダヒロ、原田裕臣、藤本英一、平方正 有 Discogs 盤面 credit，可寫；⚠ **「ほしいも小僧」與「モンド・ウーノ」是化名／片假名藝名，照原樣抄、不要補漢字也不要羅馬化**（依第 395 條，專名照原文字形）。⚠ **かまやつひろし 與本組《Country Dream》有一條暗線**：日文百科記 杉本喜代志 1960 年代初待過的 小坂一也&ワゴン・マスターズ 同團就有 かまやつひろし——**那是跨卡的背景事實，不是本張的 credit，寫作層不得把兩張接成一句**（第 262 條那個「日期取自一筆、廠牌取自另一筆」的教訓）。｜**反同構（笠井紀美子 六張）**：本張切入「New Folk & Rock 系列＋かまやつひろし 製作＋九分五十五秒的收尾曲」，是六張裡唯一一張不以爵士編制為骨幹的。"
+ },
+ {
+  "key": "desc4:笠井紀美子|What's New",
+  "artist": "笠井紀美子",
+  "album": "What's New",
+  "facts": [
+   {
+    "f": "release-group 8b2ff42e 的欄位：first-release-date 1973、primary-type Album、secondary-types 空。轄下只有一筆 release：1973／JP／Official，CBS/Sony SOPL 183，12 吋黑膠 11 軌，錄音地 CBS/Sony Studio。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b2ff42e-4073-4165-863e-34b3cba4af1b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音日是 1973 年 2 月 16 日與 23 日。伴奏是 菊地雅洋（鋼琴）、鈴木良雄（貝斯）、村上寛（鼓）的三重奏；製作 伊藤潔，副製作 守崎幸夫，錄音 鈴木智雄，助理 前島雄一，解說 岩浪洋三，攝影 内藤忠行。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%AF%E3%83%83%E3%83%84%E3%83%BB%E3%83%8B%E3%83%A5%E3%83%BC_(%E7%AC%A0%E4%BA%95%E7%B4%80%E7%BE%8E%E5%AD%90%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+   },
+   {
+    "f": "這是她替 CBS/Sony 錄的第二張專輯，前一張是 1972 年的《サテン・ドール》。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%AF%E3%83%83%E3%83%84%E3%83%BB%E3%83%8B%E3%83%A5%E3%83%BC_(%E7%AC%A0%E4%BA%95%E7%B4%80%E7%BE%8E%E5%AD%90%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+   },
+   {
+    "f": "十一軌全是情歌標準曲：〈But Not For Me〉2:10、〈Guess Who I Saw Today〉3:43、〈The Old Feeling〉4:08、〈They Can't Take That Away From Me〉2:47、〈Body And Soul〉5:28、〈Close Your Eyes〉2:45、〈But Beautiful〉5:13、〈I Thought About You〉3:35、〈Glad To Be Unhappy〉3:36、〈What's New〉5:29、〈The End Of A Love Affair〉3:30。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b2ff42e-4073-4165-863e-34b3cba4af1b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本張的黑膠原盤長年沒有 CD 化，直到 2007 年才以「昭和ジャズlegend」系列的 SACD Hybrid 首度數位化，2009 年另出 Blu-spec CD，兩次都是限量生產。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%AF%E3%83%83%E3%83%84%E3%83%BB%E3%83%8B%E3%83%A5%E3%83%BC_(%E7%AC%A0%E4%BA%95%E7%B4%80%E7%BE%8E%E5%AD%90%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+   },
+   {
+    "f": "她 1973 年時二十八歲；同一時期她也常與美國名手同場錄音，本張反而是純日本班底的一張。",
+    "src": "https://mikiki.tokyo.jp/articles/-/45953"
+   }
+  ],
+  "hookCandidates": [
+   "兩天錄完十一首情歌，伴奏是 菊地雅洋、鈴木良雄、村上寛 的三重奏",
+   "同一時期她都跟美國名手錄音，唯獨這張全是日本班底"
+  ],
+  "sound": "十一軌、約四十三分鐘，人聲加鋼琴三重奏，沒有管樂也沒有弦樂。曲目全是情歌標準曲，最短的〈But Not For Me〉只有 2 分 10 秒、最長的〈What's New〉5:29 與〈Body And Soul〉5:28 也不過五分半——這是一張以歌為單位、不以獨奏為單位的碟。菊地雅洋 的鋼琴留白多，鈴木良雄 與 村上寛 的節奏組刻意壓低音量，全部空間讓給咬字與尾音。",
+  "keyTracks": [
+   "What's New",
+   "But Beautiful",
+   "Body And Soul"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（首發年）。MB first-release-date 1973、轄下唯一那筆 release 就是 1973／JP／CBS/Sony SOPL 183；Discogs 的兩筆實體條目（27979182／5688541）盤面同記 1973、SOPL 183；日文百科的作品條目獨立記錄音日 1973-02-16 與 02-23、發行 1973 年。店面 `1655614307`《ホワッツ・ニュー》collection 層 1973-01-01、℗ 1973 Sony Music Labels，方向一致。**三個獨立來源**（實體盤面、日文百科作品條目、資料庫），不是第 431 條那種同源重覆。",
+  "notes": "**覆核策展層：MB 單筆 release、廠牌、catno、軌數相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽**：藝人目錄 `lookup?id=393034466&entity=album` jp 與 us 都回得到 **`1655614307`**《ホワッツ・ニュー》，11 軌與 MB 一致、℗ 1973 Sony Music Labels——**串流採信 1655614307**。⚠ 回撈報告記本張「目錄裡找不到」，**第三種查法找回**；漏查成因是第 400a 條第二種：**店面盤名是片假名《ホワッツ・ニュー》**，用英文盤名搜尋搜不到。｜⚠⚠ **人名邊界的最高風險在這一張**：鋼琴手的漢字是 **菊地雅洋**，**不是 菊地雅章（Masabumi Kikuchi）**。Discogs 只印羅馬字「Masahiro Kikuchi」，**兩位的羅馬字首字母相同、漢字只差一字**，而 **菊地雅章 正是 c-132 a 組的掛名（那批收 4 張）、池中另有 `Masabumi Kikuchi Quintet` 的英文字串**——**任何以「菊地」或「Kikuchi」為鍵的比對都會把兩位混在一起**。本稿的 菊地雅洋 取自日文百科該專輯條目與 Mikiki 的專文，兩邊一致。**寫作層與 QA 請務必分辨。** 鈴木良雄、村上寛、伊藤潔、守崎幸夫、鈴木智雄、前島雄一、岩浪洋三、内藤忠行 有 credit，可寫。｜**反同構（笠井紀美子 六張）**：本張切入「兩天錄完的純日本三重奏＋長年未 CD 化」，不與《Thanks, Dear》《This Is My Love》兩張美國錄音重複。"
+ },
+ {
+  "key": "desc4:笠井紀美子|Thanks, Dear",
+  "artist": "笠井紀美子",
+  "album": "Thanks, Dear",
+  "facts": [
+   {
+    "f": "release-group 9ef8e5f3 的欄位：first-release-date 1974、primary-type Album、secondary-types 空。轄下只有一筆 release：1974／JP／Official，CBS/Sony SOPM 166，12 吋黑膠 11 軌。Discogs 著錄的發行日是 1974 年 8 月 28 日。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9ef8e5f3-4d1a-43de-8993-834e161c8229&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **這是洛杉磯錄音**：伴奏是 Joe Sample（鋼琴）、Ray Brown（貝斯）、Shelly Manne（鼓），全場由 Oliver Nelson 監製（supervised by），錄音師 Buddy Brundo，內頁解說由樂評家 Leonard Feather 執筆；日本端的製作是 鯉沼利成 與 守崎幸夫。",
+    "src": "https://www.discogs.com/release/2856579"
+   },
+   {
+    "f": "日文樂評把本張形容為「6 時間の集中録音盤」——十一首歌在一次集中的錄音裡完成。",
+    "src": "https://mikiki.tokyo.jp/articles/-/45953"
+   },
+   {
+    "f": "十一軌：〈Get Out Of Town〉3:04、〈I Want To Talk About You〉2:46、〈Too Close For Comfort〉3:22、〈Makin' Whoopee〉3:58、〈Somebody Loves Me〉2:11、〈Mistreated Blues〉4:30、〈Moody Mood For Love〉3:26、〈Sometimes I'm Happy〉2:50、〈I Didn't Know What Time It Was〉4:01、〈Gone With The Wind〉2:10、〈For Once In My Life〉3:47。沒有一首超過四分半。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9ef8e5f3-4d1a-43de-8993-834e161c8229&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Ray Brown 與 Shelly Manne 都是 1950 年代起就在美國西岸留下大量錄音的節奏組名手，Joe Sample 則是 The Crusaders 的鋼琴手；本張是他們替一位日本歌手組成的一次性三重奏。",
+    "src": "https://www.discogs.com/release/2856579"
+   }
+  ],
+  "hookCandidates": [
+   "飛到洛杉磯，鋼琴 Joe Sample、貝斯 Ray Brown、鼓 Shelly Manne，全程由 Oliver Nelson 盯場",
+   "十一首歌，六小時錄完，內頁解說是 Leonard Feather 寫的"
+  ],
+  "sound": "十一軌、約三十六分鐘，人聲加一組美國西岸的鋼琴三重奏。曲長被壓得極短——最長的〈Mistreated Blues〉4:30，最短的〈Gone With The Wind〉2:10，沒有一首給獨奏長段落。Ray Brown 的低音線與 Shelly Manne 的刷鼓把速度守得非常穩，Joe Sample 的鋼琴多用和聲鋪底而非炫技，Oliver Nelson 在監製位上把整張的音量與比例調成人聲優先。這是一張錄音室效率極高、成品密度極高的歌本盤。",
+  "keyTracks": [
+   "Mistreated Blues",
+   "Makin' Whoopee",
+   "For Once In My Life"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974（首發年）。MB first-release-date 1974、轄下唯一那筆 release 就是 1974／JP／CBS/Sony SOPM 166；Discogs release 2856579 盤面同記 1974、SOPM-166，並多給精確日 **1974-08-28**。店面 `1655614305`《Thanks Dear》collection 層 1974-01-01、℗ 1974 Sony Music Labels，方向一致。無分歧。",
+  "notes": "**覆核策展層：MB 單筆 release、廠牌、catno、軌數相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽**：藝人目錄 `lookup?id=393034466&entity=album` jp 與 us 都回得到 **`1655614305`**，11 軌與 MB 一致、℗ 1974 Sony Music Labels——**串流採信 1655614305**。｜⚠⚠ **Oliver Nelson 的掛法要照 c-133 第 433 條辦**：盤面的角色是 **supervised by（監製）**，**不是共同領銜**。MB 的 RG artist-credit 是單一元素「笠井紀美子」。**池中已有 Oliver Nelson 五張卡**（第 437 條 C 記過同一個風險），**正文一律寫成她的專輯、Oliver Nelson 寫成監製**，不得寫成兩人合作盤。⚠ 另注意：**她另有一張 1974 年的《In Person》（rgMbid 7ec81838）MB credit 是「笠井紀美子 & Oliver Nelson」兩人平列，本組依第 321 條不收**——**兩張都是 1974 年、都牽到 Oliver Nelson，正文不得把兩張混講**。｜**人名邊界**：Joe Sample、Ray Brown、Shelly Manne、Oliver Nelson、Buddy Brundo、Leonard Feather 是非東亞音樂人與樂評家，**facts 與正文一律寫拉丁原文**（依 c-04 的教訓，不得寫成中文音譯）；鯉沼利成、守崎幸夫 寫漢字。⚠ **「守崎幸夫」的漢字出自 Mikiki 的專文，Discogs 只印羅馬字 Yukio Morisaki**（另有「森崎」的寫法存在），**若下游要用這個名字請再確認一次**。｜**「6 時間」那一筆**：出自 Mikiki 的專文，**單一來源**；寫作層可用，但不要寫成精確的錄音時刻表。｜**反同構（笠井紀美子 六張）**：本張切入「洛杉磯、西岸三重奏、Oliver Nelson 監製、極短的曲長」，《This Is My Love》走紐約與 Stan Getz 那一組，兩張**都是美國錄音、切入面必須分開**：本張是「效率與節制」，那張是「陣容與越界」。"
+ },
+ {
+  "key": "desc4:笠井紀美子|This Is My Love",
+  "artist": "笠井紀美子",
+  "album": "This Is My Love",
+  "facts": [
+   {
+    "f": "release-group 44cc807e 的欄位：first-release-date 1975、primary-type Album、secondary-types 空。轄下只有一筆 release：1975／JP／Official，CBS/Sony SOPN-165，12 吋黑膠 10 軌。日文盤題是《マイ・ラヴ》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=44cc807e-19d3-3b74-9a62-486cd1b6eaa3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **這是紐約錄音，而且分兩天兩間錄音室**：盤面註記寫「Recorded June 24, 1975 at Electric Ladyland Studios, and July 18, 1975 at Columbia Recording Studios, N.Y.C.」。",
+    "src": "https://www.discogs.com/release/1546604"
+   },
+   {
+    "f": "陣容橫跨三個世代的薩克斯風手：Stan Getz（次中音）、Al Cohn（次中音）、Lee Konitz（中音）；節奏組是 Bob Cranshaw（貝斯）、Allan Schwartzberg 與 Bill Lavorgna（鼓）、Cornell Dupree／Joe Beck／Jerry Friedman（吉他）；編曲、指揮、鍵盤與和聲都由 Bobby Scott 一人包辦；執行製作是 Teo Macero。",
+    "src": "https://www.discogs.com/release/1546604"
+   },
+   {
+    "f": "十軌：A 面〈Use Me〉6:37、〈Come Rain Or Come Shine〉9:04、〈Happy Together〉7:57、〈The Good Life〉5:48；B 面〈Love For Sale〉6:59、〈Autumn Leaves〉5:10、〈The Lamp Is Low〉4:06、〈And Roses And Roses〉5:52、〈I Wish I Could Walk Away〉3:36、〈Little Things〉3:20。**開場三首就佔掉將近二十四分鐘**。",
+    "src": "https://www.discogs.com/release/1546604"
+   },
+   {
+    "f": "選曲把 Bill Withers 的〈Use Me〉、The Turtles 的〈Happy Together〉這類流行曲與〈Come Rain Or Come Shine〉〈Love For Sale〉〈Autumn Leaves〉這些歌本曲目排在同一張節目單上；日文樂評形容本張「時勢の尖鋭性を反映し、狭義なジャズを越境する意志に満ちている」。",
+    "src": "https://mikiki.tokyo.jp/articles/-/45953"
+   },
+   {
+    "f": "她 1978 年移居洛杉磯；本張錄音的 1975 年正是她頻繁往返日美之間的時期，同年另有與 Cedar Walton Trio 合作的《Kimiko Is Here》。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%AC%A0%E4%BA%95%E7%B4%80%E7%BE%8E%E5%AD%90"
+   }
+  ],
+  "hookCandidates": [
+   "錄音室是 Electric Lady——Jimi Hendrix 蓋的那間，1975 年 6 月 24 日",
+   "三支薩克斯風：Stan Getz、Al Cohn、Lee Konitz；執行製作 Teo Macero"
+  ],
+  "sound": "十軌、約五十九分鐘，是她六張裡篇幅最長也最鋪張的一張。前三首〈Use Me〉6:37、〈Come Rain Or Come Shine〉9:04、〈Happy Together〉7:57 加起來就快二十四分鐘——這種長度在歌手專輯上很少見，等於把每首歌都當成一個可以展開的段落。Bobby Scott 的編曲把三支薩克斯風、三把吉他與兩位鼓手安排成會換層次的織體，Bob Cranshaw 的貝斯負責串接。曲目在流行曲與歌本之間來回，聲音則明顯站在 1975 年紐約那一邊。",
+  "keyTracks": [
+   "Come Rain Or Come Shine",
+   "Use Me",
+   "Love For Sale"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975（首發年）。MB first-release-date 1975、轄下唯一那筆 release 就是 1975／JP／CBS/Sony SOPN-165；Discogs release 1546604 盤面同記 1975、SOPN-165、日文題《マイ・ラヴ》，並寫出兩個錄音日（1975-06-24 與 1975-07-18）。⚠ **店面 `1655614721` 兩層不一致**：collection 層寫 **1975-01-01**、℗ 1975 Sony Music Labels，**但十軌的曲目層全部寫 1977-01-01**——依 c-133 第 428 條要指明哪一層，**collection 層與 ℗ 年和 MB／Discogs 一致，取 1975**，曲目層那個 1977 無實據支持。",
+  "notes": "**覆核策展層：MB 單筆 release、廠牌、catno、軌數相符，年份判斷成立。**｜⚠ **封面：CAA release-group 端點實測 404，策展層寫的 404 成立；策展層指的那條路也覆核通過。** 策展層第 436 條給的是「Apple jp `1655614721`《マイ・ラヴ》（10 軌與 MB 一致）→ apple-verified-collection」——**本組逐軌核過，十軌一一對應**（ユーズ・ミー＝Use Me、カム・レイン・オア・カム・シャイン、ハッピー・トゥゲザー、グッド・ライフ、ラヴ・フォー・セール、枯葉、ランプ・イズ・ロウ、アンド・ロージィーズ・アンド・ロージィーズ、アイ・ウィッシュ・アイ・クッド・ウォーク・アウェイ、リトル・シングス），**且長度與 Discogs 盤面的計時逐軌吻合（6:38 對 6:37、9:07 對 9:04、8:01 對 7:57…）——這條封面路成立。**｜⚠ **策展層第 437 條 B 的重複 RG 判斷覆核成立**：`44cc807e`（轄下有 1975 CBS/Sony SOPN-165 原盤）與 `62ef4fea`《マイ・ラヴ》（只有 2014 Sony SICP-4294）是同一張碟，依第 387 條釘有原盤 release 的那一個，**本卡釘 `44cc807e` 正確**；**兩個 RG 的 CAA 都是 404 也覆核成立**（第 387 條「重複 RG 常一個有圖」在本組確實不成立）。｜**試聽**：**串流採信 1655614721**（10 軌全有試聽）。⚠ 該筆是店面上的《マイ・ラヴ》，**正文不得把它當成另一張碟**。｜**人名邊界**：Stan Getz、Al Cohn、Lee Konitz、Bob Cranshaw、Allan Schwartzberg、Bill Lavorgna、Cornell Dupree、Joe Beck、Jerry Friedman、Bobby Scott、Teo Macero、Bill Withers 全是非東亞音樂人，**facts 與正文一律寫拉丁原文**。⚠ **Electric Lady Studios 的盤面寫法是「Electric Ladyland Studios」**，正文用哪一種都要與來源一致。｜**反同構（笠井紀美子 六張）**：本張切入「紐約兩間錄音室、三支薩克斯風、前三首近二十四分鐘」，與《Thanks, Dear》的洛杉磯效率盤明確分開。"
+ },
+ {
+  "key": "desc4:笠井紀美子|TOKYO SPECIAL",
+  "artist": "笠井紀美子",
+  "album": "TOKYO SPECIAL",
+  "facts": [
+   {
+    "f": "release-group d5117d1d 的欄位：first-release-date 1977-09-21、primary-type Album、secondary-types 空。轄下三筆 release：1977-09-21／JP／Official，CBS/Sony 25AP 730，12 吋黑膠 9 軌；1990-10-15／JP／Official，CBS/Sony CSCL-1297，CD 9 軌；2021-09-07／Official，Sony Music Labels 的數位版，題《トーキョー・スペシャル》9 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d5117d1d-169c-4661-b3d1-6eda86dd5bc5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **這是一張全日文原創曲的專輯**：作詞全部由 安井かずみ 執筆，編曲與鍵盤由 鈴木宏昌 負責，伴奏團體是 Colgen Band。九軌的日文題分別是〈バイブレイション (LOVE CELEBRATION)〉4:15、〈やりかけの人生〉6:12、〈夏の初めのイメージ〉4:44、〈ベリー・スペシャル・モーメント〉3:00、〈人はそれぞれ (JUST ANOTHER LOVE SONG)〉4:36、〈TOKYO SPECIAL (MANHATTAN SPECIAL)〉3:55、〈木もれ陽 (SEQUOIA FOREST)〉5:31、〈テイク・ミー〉4:20、〈待ってて (LAID BACK MAD OR MELLOW)〉5:22。",
+    "src": "https://www.discogs.com/release/3527918"
+   },
+   {
+    "f": "錄音分三處三段：Rockwell Studios（南箱根）1977 年 7 月 14 至 19 日、音響ハウス（東京）7 月 24 與 29 日、Sunrise Studio（東京）7 月 29 日至 8 月 3 日錄音與母帶。",
+    "src": "https://www.discogs.com/release/3527918"
+   },
+   {
+    "f": "編制：岡沢章（貝斯）、市原康（鼓）、松木恒秀（吉他）、鈴木宏昌（鍵盤）、福井敬子（豎琴）、安井正臣（打擊樂）、山口真文 與 村岡建（次中音與高音薩克斯風）、新井英治（長號）、数原晋 與 羽鳥幸次（小號與柔音號）、大野グループ（弦樂）；製作 笠井紀美子 與 坂井政利，監修 鯉沼利成 與 野崎達也，錄音 松本裕，封面攝影 篠山紀信。",
+    "src": "https://www.discogs.com/release/3527918"
+   },
+   {
+    "f": "笠井紀美子 本人掛名共同製作，這是她 CBS/Sony 時期少數自己進到製作端的一張。",
+    "src": "https://www.discogs.com/release/3527918"
+   },
+   {
+    "f": "日文樂評把本張評為「日米を渡り歩く女豹の変幻自在ぶりが見事」，並指出 安井かずみ 提供日文詞、Colgen Band 負責伴奏。",
+    "src": "https://mikiki.tokyo.jp/articles/-/45953"
+   }
+  ],
+  "hookCandidates": [
+   "九首全是日文原創，詞是 安井かずみ 寫的、編曲是 鈴木宏昌——封面攝影 篠山紀信",
+   "南箱根、東京兩地三間錄音室，1977 年七月到八月初錄完"
+  ],
+  "sound": "九軌、約四十二分鐘，和前幾張的美國歌本完全切開：九首全是日文原創曲，安井かずみ 的詞配 鈴木宏昌 的編曲與鍵盤，Colgen Band 打底，上面再疊薩克斯風、長號、小號、弦樂組與豎琴。〈やりかけの人生〉6:12 是最長也最重的一首，〈ベリー・スペシャル・モーメント〉3:00 最短。標題曲〈TOKYO SPECIAL〉3:55 的副題是〈MANHATTAN SPECIAL〉——兩個城市並置，正好說明這張碟的位置：人在東京錄音，寫法卻是 1977 年紐約那套流行與爵士交界的語法。",
+  "keyTracks": [
+   "TOKYO SPECIAL",
+   "やりかけの人生",
+   "木もれ陽"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（首發年）。MB first-release-date **1977-09-21**（已有精確日）、轄下黑膠那筆就是 1977-09-21／JP／CBS/Sony 25AP 730；Discogs 的四筆實體條目（13402719／13263421／14917524／3527918）全部記 1977、25AP 730，其中一筆獨立給同一個精確日 1977-09-21。店面 `1596709137`《トーキョー・スペシャル》collection 層也是 1977-09-21、℗ 1977 Sony Music Labels——**三邊逐日相符**。⚠ **依 c-133 第 431 條，「逐日相符」本身不算交叉驗證**（MB 與店面可能同源）；本張真正的獨立佐證是 Discogs 的實體盤面著錄。1990-10-15 的 CSCL-1297 與 2021-09-07 的數位版都是再發，不取。",
+  "notes": "**覆核策展層：MB 三筆 release、廠牌、catno、軌數逐欄相符，年份與封面判斷成立；CAA release-group 端點實測 200。**｜**試聽**：藝人目錄 `lookup?id=393034466&entity=album` jp 與 us 都回得到 **`1596709137`**，9 軌與 MB 一致、℗ 1977 Sony Music Labels——**串流採信 1596709137**。⚠ 回撈報告記本張「目錄裡找不到」，**第三種查法找回**；漏查成因是第 400a 條第二種：**店面盤名是片假名《トーキョー・スペシャル》**。⚠ **店面收的是 2021 年那個數位版的曲目（軌長 4:19／6:23／4:47…），與 1977 年黑膠的 4:15／6:12／4:44 差了幾秒**，正文引長度時以黑膠為準。｜**人名邊界**：安井かずみ、鈴木宏昌、岡沢章、市原康、松木恒秀、福井敬子、安井正臣、山口真文、村岡建、新井英治、数原晋、羽鳥幸次、坂井政利、鯉沼利成、野崎達也、松本裕、篠山紀信 有 Discogs 盤面 credit。⚠ **和聲那三位盤面只有羅馬字，漢字無法確定，本稿略去不寫。**⚠⚠ **村岡建 是 c-133 b 組的掛名（那批收 3 張）、鈴木宏昌 是 c-133 a 組的掛名、岡沢章／松木恒秀／新井英治／羽鳥幸次 又分別出現在本組《Our Time》《L.A. Master》《Nice Feeling》《Shiny Stockings》裡**——**這張是本組跨批交集最密的一張**，依 c-133 第 430a 條，**不得以「同一批錄音室樂手」當主軸**。⚠ **安井かずみ 與 安井正臣 同姓不同人**，不要接成一句。｜**反同構（笠井紀美子 六張）**：本張切入「全日文原創＋安井かずみ 的詞＋自己掛共同製作」，是六張裡唯一一張不唱美國歌本的。"
  }
 ]
