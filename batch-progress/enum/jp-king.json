@@ -24,12 +24,6 @@
    "name": "SEVEN SEAS",
    "type": "Imprint",
    "releases": 846
-  },
-  {
-   "id": "21701fb5-b9bd-4495-9907-f8b9232364ea",
-   "name": "King Jazz",
-   "type": "(none)",
-   "releases": 16
   }
  ],
  "rows": [
@@ -44,7 +38,7 @@
    "inPool": true,
    "poolString": "江利チエミ|チエミの民謡集",
    "note": "",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
@@ -170,29 +164,11 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Elisabeth Waldo",
-   "album": "Realm of the Incas",
-   "year": 1962,
-   "rgMbid": "3020068d-dad5-47c7-9bc7-9c953e1f2066",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -366,8 +342,8 @@
    "format": "CD/Hybrid SACD (CD layer)/Hybrid SACD (SACD layer, 2 channels)",
    "live": true,
    "inPool": false,
-   "poolString": "Bill Evans|Alone",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.40)",
+   "poolString": "",
+   "note": "藝人池中有23張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "KING"
@@ -445,24 +421,6 @@
     "KING"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Embryo",
-   "album": "Embryo’s Rache",
-   "year": 1971,
-   "rgMbid": "9b61f123-ada4-3755-a674-08e0ea3a3fd3",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -646,24 +604,6 @@
    "nrel": 1
   },
   {
-   "artist": "安倍里葎子",
-   "album": "律子の季節",
-   "year": 1972,
-   "rgMbid": "7149f09b-9dde-4f9f-8aae-19c03bbd7734",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "村岡実とニュー・ディメンション・グループ",
    "album": "鳴門",
    "year": 1972,
@@ -690,8 +630,8 @@
    "format": "12\" Vinyl/CD",
    "live": false,
    "inPool": false,
-   "poolString": "Freddie Hubbard|Sky Dive",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.15)",
+   "poolString": "",
+   "note": "藝人池中有11張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "KING"
@@ -1114,24 +1054,6 @@
    "nrel": 2
   },
   {
-   "artist": "Various Artists",
-   "album": "熊送り〜神と二風谷アイヌの語らい〜",
-   "year": 1978,
-   "rgMbid": "1937a4dd-e3f2-41a4-8021-f31c04c4b9b0",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Grease: The Original Soundtrack from the Motion Picture",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.12)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Yoshio Ohtomo Quartet",
    "album": "As a Child",
    "year": 1978,
@@ -1205,24 +1127,6 @@
    ],
    "foreignArtist": false,
    "nrel": 3
-  },
-  {
-   "artist": "高橋ユキヒロ",
-   "album": "Saravah!",
-   "year": 1978,
-   "rgMbid": "c7b7d203-30b0-355e-851d-686fec0b0991",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/HQCD",
-   "live": false,
-   "inPool": true,
-   "poolString": "高橋幸宏|Saravah!",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 4
   },
   {
    "artist": "Hamiet Bluiett Quartet",
@@ -1581,7 +1485,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "ELECTRIC BIRD"
    ],
@@ -1806,24 +1710,6 @@
    "nrel": 2
   },
   {
-   "artist": "Various Artists",
-   "album": "ぼくらのアニメ全曲集",
-   "year": 1982,
-   "rgMbid": "d4e0dec1-7bbd-4697-891f-d9a9a3fed4d6",
-   "country": "JP",
-   "format": "Cassette",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "増尾元章",
    "album": "Natural Mind",
    "year": 1982,
@@ -1868,8 +1754,8 @@
    "format": "12\" Vinyl/CD/SHM-CD",
    "live": false,
    "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有13張(盤名未比中)",
+   "poolString": "富樫雅彦|スピリチュアル・ネイチャー",
+   "note": "疑似池中(盤名相似度0.67)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel",
@@ -1995,8 +1881,8 @@
    "format": "12\" Vinyl",
    "live": true,
    "inPool": false,
-   "poolString": "富樫雅彦|Eternal Duo",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.10)",
+   "poolString": "",
+   "note": "藝人池中有13張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
@@ -2012,9 +1898,9 @@
    "country": "JP",
    "format": "12\" Vinyl",
    "live": true,
-   "inPool": true,
+   "inPool": false,
    "poolString": "高柳昌行|銀巴里セッション",
-   "note": "translit~0.72",
+   "note": "疑似池中(盤名相似度0.72)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
@@ -2032,7 +1918,7 @@
    "live": false,
    "inPool": false,
    "poolString": "富樫雅彦|Eternal Duo",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.61)",
+   "note": "疑似池中(盤名相似度0.61)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
@@ -2051,7 +1937,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
@@ -2105,7 +1991,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "imprint",
+   "why": "artist-disambig",
    "entities": [
     "ELECTRIC BIRD"
    ],
@@ -2401,24 +2287,6 @@
    "nrel": 1
   },
   {
-   "artist": "SPiCK&SPAN",
-   "album": "Twilight in Leblon",
-   "year": 1985,
-   "rgMbid": "4ab1a7a5-cfc4-4457-9dbd-40e6de7652a0",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "imprint",
-   "entities": [
-    "ELECTRIC BIRD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Allan Holdsworth",
    "album": "Atavachron",
    "year": 1986,
@@ -2499,8 +2367,8 @@
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
+   "poolString": "Phineas Newborn Jr.|Harlem Blues",
+   "note": "疑似池中(盤名相似度0.70)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
@@ -2715,31 +2583,13 @@
    "format": "12\" Vinyl",
    "live": true,
    "inPool": false,
-   "poolString": "Mal Waldron & Steve Lacy|Sempre amore",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.22)",
+   "poolString": "",
+   "note": "藝人池中有16張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
    ],
    "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "原色の音絵巻／バリのケチャとバロンダンス",
-   "year": 1987,
-   "rgMbid": "e4336f81-2492-4788-bfd7-b3d05b1911e7",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Dirty Dancing (Original Soundtrack From the Vestron Motion Picture)",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.33)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -2786,9 +2636,9 @@
    "country": "JP/XE",
    "format": "12\" Vinyl/CD",
    "live": true,
-   "inPool": true,
+   "inPool": false,
    "poolString": "Chet Baker|Chet Baker Live in Tokyo",
-   "note": "translit~0.73",
+   "note": "疑似池中(盤名相似度0.73)",
    "why": "artist-tag",
    "entities": [
     "Paddle Wheel",
@@ -2924,24 +2774,6 @@
    "nrel": 2
   },
   {
-   "artist": "山形由美",
-   "album": "mistral",
-   "year": 1988,
-   "rgMbid": "be3f9d48-c006-4324-9625-fd8ebc58df1e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "鮎川麻弥",
    "album": "SMILE",
    "year": 1988,
@@ -3003,9 +2835,9 @@
    "country": "DE/JP/XE",
    "format": "12\" Vinyl/CD",
    "live": true,
-   "inPool": true,
+   "inPool": false,
    "poolString": "Chet Baker|Chet Baker Live in Tokyo",
-   "note": "translit~0.80",
+   "note": "疑似池中(盤名相似度0.80)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
@@ -3063,24 +2895,6 @@
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "L. スプラマニアム",
-   "album": "魔弓旋回～南インドの古典ヴァイオリン",
-   "year": 1989,
-   "rgMbid": "24dce23e-6e6a-4bc8-83ff-31407a3320b9",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
    ],
    "foreignArtist": true,
    "nrel": 1
@@ -3194,60 +3008,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "Shamisen II",
-   "year": 1990,
-   "rgMbid": "8672e8b1-54c9-4af8-82db-3dfc1af4e705",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Shakuhachi",
-   "year": 1990,
-   "rgMbid": "5c772245-5a82-4866-a62b-a71af5302762",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
-   "artist": "Various Artists",
-   "album": "打〜日本のカーニバル",
-   "year": 1990,
-   "rgMbid": "be904168-ac22-3631-94c9-2d02b98c5f37",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "アストゥーリアス",
    "album": "Brilliant Streams",
    "year": 1990,
@@ -3320,24 +3080,6 @@
    "nrel": 1
   },
   {
-   "artist": "Falcom Sound Team J.D.K.",
-   "album": "パーフェクト・コレクション・ソーサリアン Vol. 3",
-   "year": 1991,
-   "rgMbid": "5c99aba3-02d3-497b-83a6-f34b0c3ecf64",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有6張(盤名未比中)",
-   "why": "rg-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Manhattan Jazz Quintet",
    "album": "Funky Strut",
    "year": 1991,
@@ -3369,294 +3111,6 @@
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "絲・南哀〜ヴェトナムの弦楽器",
-   "year": 1991,
-   "rgMbid": "b75f755a-76bc-4526-81f8-78c2f004f3f5",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "The Gamelan of Cirebon",
-   "year": 1991,
-   "rgMbid": "c0e4be91-6c49-43cc-b91d-82c45372d5fb",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.09)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 4
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Music in Bali",
-   "year": 1991,
-   "rgMbid": "727e8241-714d-4e94-a92e-06991e9ebdd0",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.24)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Classical Music of Thailand",
-   "year": 1991,
-   "rgMbid": "122c81ad-6c3e-4570-bb81-b44131a73f22",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.25)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Mongolian Epic Song: Zhangar",
-   "year": 1991,
-   "rgMbid": "85e56b9b-0e91-4327-a071-65f505efc094",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.17)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "Various Artists",
-   "album": "キャラバンの調べ〜ウイグルの器楽",
-   "year": 1991,
-   "rgMbid": "71c5da72-2813-4ee9-acad-793108a93202",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.18)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Music of Iran II",
-   "year": 1991,
-   "rgMbid": "d37d6f60-4db1-471b-915b-73ddba20b59d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.26)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Sundanese Classical Music",
-   "year": 1991,
-   "rgMbid": "03f2ff22-e317-4339-8c8c-004a32005787",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.11)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
-   "artist": "Various Artists",
-   "album": "日本のダンス・ミュージック",
-   "year": 1991,
-   "rgMbid": "926ceeba-785e-4c04-8967-22b94bc7ac92",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.26)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Music of Amami",
-   "year": 1991,
-   "rgMbid": "182acce1-fc37-45c9-8567-a32c0220c8a4",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.24)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "津軽・三味セッション",
-   "year": 1991,
-   "rgMbid": "b21d47c6-3afb-4b74-b0bc-b82fe9c430ab",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.09)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "日本のワーク・ソング",
-   "year": 1991,
-   "rgMbid": "119f4a5c-2102-4029-8d61-18c3e0cdf88c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.25)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Music of Okinawa",
-   "year": 1991,
-   "rgMbid": "55640fdd-e1ed-3b9b-89c6-ac867df00606",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.28)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Harmony of Japanese Music",
-   "year": 1991,
-   "rgMbid": "b8077439-24c4-479f-8d8f-3d2f42570266",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.11)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "日本の音風景",
-   "year": 1991,
-   "rgMbid": "82d241b7-a122-4e14-8bc1-60b6f8a082dc",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "楽器・玉手箱",
-   "year": 1991,
-   "rgMbid": "b977c1ab-ee07-4b97-886c-4916e65f0ea6",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.09)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -3729,24 +3183,6 @@
    "why": "artist-tag",
    "entities": [
     "Paddle Wheel"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Milva",
-   "album": "Canzoni Tra Le Due Guerre",
-   "year": 1992,
-   "rgMbid": "af07608e-0dfb-4f0f-8b7f-22ee2c323ba6",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "SEVEN SEAS"
    ],
    "foreignArtist": true,
    "nrel": 1
@@ -3837,24 +3273,6 @@
    "why": "rg-tag",
    "entities": [
     "ELECTRIC BIRD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "川上和之",
-   "album": "MOVIN’ GROOVIN’",
-   "year": 1992,
-   "rgMbid": "bbfb3429-cffa-4575-bfd8-05a345848f23",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "KING"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -4014,7 +3432,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "imprint",
+   "why": "artist-disambig",
    "entities": [
     "Paddle Wheel"
    ],
@@ -4058,24 +3476,6 @@
    "nrel": 1
   },
   {
-   "artist": "dido",
-   "album": "Ksana",
-   "year": 1994,
-   "rgMbid": "b28bfa5b-7d54-398b-95c1-56a89e5bfabc",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Emiko Shiratori",
    "album": "Dear... Beatles Number Collection",
    "year": 1995,
@@ -4104,7 +3504,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "imprint",
+   "why": "artist-disambig",
    "entities": [
     "Paddle Wheel"
    ],
@@ -4146,42 +3546,6 @@
    ],
    "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "風響のドンブラ〜カザフの音楽2",
-   "year": 1995,
-   "rgMbid": "90133eec-e789-44df-aa37-44c8fd24d51c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|1995 台灣地下音樂檔案 III 呼吸荳荳紀念專輯",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.21)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "Various Artists",
-   "album": "島音彩祭〜ロンボックの音楽",
-   "year": 1995,
-   "rgMbid": "f092a65c-fcf8-42c4-950d-7ea50a9bcca6",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|1995 台灣地下音樂檔案 III 呼吸荳荳紀念專輯",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.20)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "Allan Holdsworth",
@@ -4236,24 +3600,6 @@
    ],
    "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "草原のウル〜キルギスの歌",
-   "year": 1996,
-   "rgMbid": "a6dd09c7-0a35-44df-b67e-d13f06cc9f1b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Platinum Breakz",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "Yoshio Kimura",
@@ -4318,8 +3664,8 @@
    "format": "CD",
    "live": true,
    "inPool": false,
-   "poolString": "Charlie Haden & Pat Metheny|Beyond the Missouri Sky",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.19)",
+   "poolString": "",
+   "note": "藝人池中有6張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
@@ -4382,24 +3728,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "CDドラマ DESIRE",
-   "year": 1998,
-   "rgMbid": "ee97d4ea-de0a-4eda-8f2c-53d9ada782a9",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|The Big Lebowski: Original Motion Picture Soundtrack",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.25)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "中川英二郎 featuring Brecker Brothers",
    "album": "ピース",
    "year": 1998,
@@ -4428,7 +3756,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "curator-list",
+   "why": "artist-disambig",
    "entities": [
     "KING"
    ],
@@ -4472,78 +3800,6 @@
    "nrel": 1
   },
   {
-   "artist": "David Liebman, Phil Markowitz, Davia Sacks, Billy Dowling, Dennis Irwin, Art Frank",
-   "album": "A Tribute to Chet Baker",
-   "year": 1999,
-   "rgMbid": "035e0629-b38d-47c3-aa42-92b67580a438",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "King Jazz"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "中国シルクロードの音楽〜絲綢之路",
-   "year": 1999,
-   "rgMbid": "f302327e-1e42-4de6-aa85-0e23a79dc28f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 20: Indonesian Guitars",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.32)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "タイの古典音楽〜アユタヤの栄華",
-   "year": 1999,
-   "rgMbid": "a1d2a9cc-d248-4f7b-bdf9-83c0fc663871",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 20: Indonesian Guitars",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.06)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "The King of Bass",
-   "year": 1999,
-   "rgMbid": "650a38f8-514d-4653-9fff-71b06713f6ad",
-   "country": "JP",
-   "format": "",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 20: Indonesian Guitars",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.21)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "ナムジリーン・ノロブバンザト",
    "album": "Mongolian Songs",
    "year": 1999,
@@ -4560,24 +3816,6 @@
    ],
    "foreignArtist": true,
    "nrel": 2
-  },
-  {
-   "artist": "Bebel Gilberto",
-   "album": "Tanto tempo",
-   "year": 2000,
-   "rgMbid": "84afe68c-10a8-38cd-9157-3a327257449d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
   },
   {
    "artist": "Richard Davis",
@@ -4598,24 +3836,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "よいこのどうよう",
-   "year": 2000,
-   "rgMbid": "8954e260-ebe0-45a2-a658-c08bdc08ef1c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Éthiopiques 8: Swinging Addis",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.21)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "野獣王国",
    "album": "Full Fantasy",
    "year": 2000,
@@ -4631,24 +3851,6 @@
     "Paddle Wheel"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Chet Baker",
-   "album": "Cool Spring",
-   "year": 2001,
-   "rgMbid": "123d7342-b8d4-38e5-9307-cf076211cdfd",
-   "country": "US",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有17張(盤名未比中)",
-   "why": "artist-tag",
-   "entities": [
-    "King Jazz"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -4755,78 +3957,6 @@
    "why": "rg-tag",
    "entities": [
     "Paddle Wheel"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "verve-circle 002 beat spellbound-agitation mix",
-   "year": 2003,
-   "rgMbid": "afc24ea4-6bea-4148-9464-4c04e7fd19de",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Éthiopiques 13: The Golden Seventies",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.14)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "verve-circle Psychedelic Trance Edition -Fantastic Planet-",
-   "year": 2003,
-   "rgMbid": "4e14a335-e261-4c35-bd41-671b8ac87312",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Éthiopiques 13: The Golden Seventies",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.15)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "verve-circle 003 electronica-mayhem",
-   "year": 2003,
-   "rgMbid": "c79bcbf1-6da7-4294-8015-64cc6c7708ee",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Éthiopiques 13: The Golden Seventies",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.10)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "verve-circle Psychedelic Trance Edition -Featuring GMS-",
-   "year": 2003,
-   "rgMbid": "25d609c3-6acc-46f9-96d8-dc675a7ae5ea",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Éthiopiques 13: The Golden Seventies",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.18)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -4958,42 +4088,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "琉球の深き懐へ〜島唄の真髄に触れる〜",
-   "year": 2004,
-   "rgMbid": "510664e9-e1ec-427c-ba97-35fe2c58007a",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Cambodian Cassette Archives: Khmer Folk and Pop Music, Volume 1",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "SYNCHRONIZED ROCKERS Tribute to the pillows",
-   "year": 2004,
-   "rgMbid": "b563be33-0862-34ad-8be3-c9ee3ee6096c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Cambodian Cassette Archives: Khmer Folk and Pop Music, Volume 1",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.27)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "Gerardo Frisina",
    "album": "The Latin Kick",
    "year": 2005,
@@ -5112,7 +4206,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
@@ -5153,42 +4247,6 @@
     "Paddle Wheel"
    ],
    "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "The Royal Dan: A Tribute",
-   "year": 2006,
-   "rgMbid": "f5395d10-b70d-3c2e-951c-7b257b16181e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Best Of Kira Kira Epic Trance",
-   "year": 2006,
-   "rgMbid": "7e9a56c9-531d-4c88-98a9-3b26884db094",
-   "country": "",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -5336,24 +4394,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "Freeway Jam: To Beck and Back",
-   "year": 2007,
-   "rgMbid": "c99e9b1c-4089-342e-ad91-1ade5c90de31",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|The Roots of Chicha: Psychedelic Cumbias From Peru",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.10)",
-   "why": "rg-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "神保彰",
    "album": "Four Colors",
    "year": 2007,
@@ -5426,24 +4466,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "ブルーナ音楽のおくりもの おやこのどうよう: ベスト50",
-   "year": 2008,
-   "rgMbid": "558b12f3-97c3-45c0-b163-2183796dbe22",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Radio Myanmar (Burma)",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.13)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "秋元順子",
    "album": "セカンド・ストーリー",
    "year": 2008,
@@ -5454,7 +4476,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
@@ -5493,24 +4515,6 @@
    "why": "rg-tag",
    "entities": [
     "ELECTRIC BIRD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "CR花の慶次～斬 メインテーマ曲",
-   "year": 2009,
-   "rgMbid": "2e4b72e9-24cf-4b16-9269-5c87afde28b8",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|5: Five Years of Hyperdub",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -5598,7 +4602,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
@@ -5631,24 +4635,6 @@
    "country": "JP",
    "format": "CD",
    "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Eddie Jobson",
-   "album": "Ultimate Zero Tour: Live",
-   "year": 2010,
-   "rgMbid": "2ee70ac9-0dbc-4f42-be6a-7d7786937232",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
    "inPool": false,
    "poolString": "",
    "note": "",
@@ -5696,42 +4682,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "CR花の慶次～愛 テーマ曲",
-   "year": 2010,
-   "rgMbid": "f550ca36-3042-4854-b1a2-187d7b2eb1b1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|The Sound of Siam: Leftfield Luk Thung, Jazz & Molam in Thailand 1964-1975",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.10)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "B型H系 キャラクターソングアルバム",
-   "year": 2010,
-   "rgMbid": "f9b4a2df-d376-437c-88fe-f840a9a43236",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|The Sound of Siam: Leftfield Luk Thung, Jazz & Molam in Thailand 1964-1975",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "田村ゆかり",
    "album": "シトロンの雨",
    "year": 2010,
@@ -5742,30 +4692,12 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
    "foreignArtist": false,
    "nrel": 2
-  },
-  {
-   "artist": "Brett Garsed",
-   "album": "Dark Matter",
-   "year": 2011,
-   "rgMbid": "6baeeb92-2468-43bc-ab92-4b8f544521ff",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
   },
   {
    "artist": "TRIX",
@@ -5781,24 +4713,6 @@
    "why": "rg-tag",
    "entities": [
     "ELECTRIC BIRD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "pair*",
-   "year": 2011,
-   "rgMbid": "6ae4489b-67ff-469e-a921-294004fb433d",
-   "country": "",
-   "format": "DualDisc (CD side)",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Those Shocking Shaking Days: Indonesian Hard, Psychedelic, Progressive Rock and Funk 1970-1978",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.05)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -5858,24 +4772,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "カンタン!あそびうた",
-   "year": 2012,
-   "rgMbid": "9023a3b4-f597-49f2-b1af-b1fa36bf4ba7",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Theppabutr Productions: The Man Behind the Molam Sound 1972-75",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.22)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "坂田明 & ちかもらち",
    "album": "ちかもらち 空を飛ぶ!",
    "year": 2012,
@@ -5912,24 +4808,6 @@
    "nrel": 1
   },
   {
-   "artist": "Clémentine",
-   "album": "Cinema De Reve",
-   "year": 2013,
-   "rgMbid": "531906e7-a67e-44bf-b7a9-285a4bf2ff82",
-   "country": "JP",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
    "artist": "TRIX",
    "album": "Deluxe",
    "year": 2013,
@@ -5961,24 +4839,6 @@
    "why": "artist-tag",
    "entities": [
     "ELECTRIC BIRD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "長唄 ベスト",
-   "year": 2013,
-   "rgMbid": "c254a2c0-c30d-48fd-b171-971fa5762912",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|I Am the Center: Private Issue New Age Music in America, 1950-1990",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.09)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -6030,7 +4890,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
@@ -6048,7 +4908,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "KING"
    ],
@@ -6089,24 +4949,6 @@
     "ELECTRIC BIRD"
    ],
    "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Gershwin, Paul White; Masahiro Sayama, Taizo Takemoto, Ken Takaseki, Tokyo Symphony Orchestra",
-   "album": "Gershwin: Rhapsody in Blue / An American in Paris / Lullaby / I Got Rhythm Variations / White: Five Miniatures",
-   "year": 2014,
-   "rgMbid": "02c2f862-6451-4d4b-838f-8afd2f2b9301",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "artist-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -6162,42 +5004,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "となりの関くん うたのCD",
-   "year": 2014,
-   "rgMbid": "b68f147d-7c13-4b54-bafe-8303022d855b",
-   "country": "JP",
-   "format": "CD/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|The Sound of Siam, Volume 2: Molam & Luk Thung From North-East Thailand 1970-1982",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.17)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
-   "artist": "Various Artists",
-   "album": "シンフォギアライブ2013",
-   "year": 2014,
-   "rgMbid": "7ca2ffaf-e155-4947-be4d-1679bedc4ced",
-   "country": "JP",
-   "format": "Blu-ray/DVD-Video",
-   "live": true,
-   "inPool": false,
-   "poolString": "Various Artists|The Sound of Siam, Volume 2: Molam & Luk Thung From North-East Thailand 1970-1982",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.26)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "井上忠夫",
@@ -6472,60 +5278,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "NATIONAL ANTHEMS OF THE WORLD FOR BRAZIL 2014",
-   "year": 2016,
-   "rgMbid": "25d9a7c6-2327-4208-a4a5-6b403f501729",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|(The Microcosm) Visionary Music of Continental Europe, 1970-1986",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.25)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "シンフォギアライブ2016",
-   "year": 2016,
-   "rgMbid": "b5dd7f53-d7a5-4407-bfb6-b5e25a0ff41b",
-   "country": "JP",
-   "format": "Blu-ray/DVD-Video",
-   "live": true,
-   "inPool": false,
-   "poolString": "Various Artists|(The Microcosm) Visionary Music of Continental Europe, 1970-1986",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.21)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "Various Artists",
-   "album": "ニンジャスレイヤー フロムコンピレイシヨン 伐",
-   "year": 2016,
-   "rgMbid": "5e2a47f7-651d-418b-970b-56035cb65ae0",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|(The Microcosm) Visionary Music of Continental Europe, 1970-1986",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.23)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "川口千里",
    "album": "CIDER 〜Hard & Sweet〜",
    "year": 2016,
@@ -6652,24 +5404,6 @@
    "nrel": 1
   },
   {
-   "artist": "鷺巣詩郎",
-   "album": "シン・ゴジラ対エヴァンゲリオン交響楽",
-   "year": 2017,
-   "rgMbid": "e2738f79-05f7-45f3-805d-c85572174dc7",
-   "country": "JP",
-   "format": "CD/Digital Media",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
    "artist": "4 Trombones with Masaru Imada",
    "album": "Super Trombone",
    "year": 2018,
@@ -6681,6 +5415,24 @@
    "poolString": "",
    "note": "藝人池中有5張(盤名未比中)",
    "why": "artist-tag",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "DEZOLVE",
+   "album": "PORTRAY",
+   "year": 2018,
+   "rgMbid": "3079a669-a679-4858-9409-e4f444b2353c",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-disambig",
    "entities": [
     "KING"
    ],
@@ -6778,6 +5530,24 @@
    "nrel": 1
   },
   {
+   "artist": "DEZOLVE",
+   "album": "AREA",
+   "year": 2019,
+   "rgMbid": "5d66f51c-3a5e-4fc7-bf24-634a2f7b9613",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-disambig",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "TRIX",
    "album": "ECCENTRIX",
    "year": 2019,
@@ -6796,24 +5566,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "エノケン芸道一代",
-   "year": 2019,
-   "rgMbid": "c0ef3170-5074-4b97-aa75-9c665eb01b8c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Kankyō Ongaku: Japanese Ambient, Environmental & New Age Music 1980-1990",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.23)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "米澤美玖",
    "album": "Exotic Gravity",
    "year": 2019,
@@ -6825,6 +5577,24 @@
    "poolString": "",
    "note": "",
    "why": "artist-tag",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "DEZOLVE",
+   "album": "Frontiers",
+   "year": 2020,
+   "rgMbid": "db6ab680-661f-4544-9ecf-41aa541324f1",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-disambig",
    "entities": [
     "KING"
    ],
@@ -6922,60 +5692,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "劇場版「美少女戦士セーラームーンEternal」キャラクターソング集 Eternal Collection",
-   "year": 2021,
-   "rgMbid": "d8643f67-b285-464e-921c-7f7b1ed6f560",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Wounds of Love: Khmer Oldies, Vol. 1",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "50年後ものこる やっぱりいい!こどものうた～色あせないアニメ編～",
-   "year": 2021,
-   "rgMbid": "41f2bf83-d266-41aa-bc67-a905cfffcb5e",
-   "country": "JP",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Wounds of Love: Khmer Oldies, Vol. 1",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.13)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "NHKみんなのうた 60 アニバーサリー・ベスト ~ぼくはヒーロー~",
-   "year": 2021,
-   "rgMbid": "3995abb1-d0cd-4441-a858-1ef8c1edc9ce",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Wounds of Love: Khmer Oldies, Vol. 1",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.20)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "神保彰",
    "album": "SORA",
    "year": 2021,
@@ -7030,96 +5746,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "シスター・プリンセス VTuber project ～song♥collection～",
-   "year": 2022,
-   "rgMbid": "cd00143e-32f8-4a64-9a70-6f85190622d2",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Saigon Supersound, Vol. 3",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.37)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "TWO‐MIX Tribute Album “Crysta-Rhythm”",
-   "year": 2022,
-   "rgMbid": "f97ebfa9-17b3-4052-b68a-c58b955a6833",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Saigon Supersound, Vol. 3",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "TVアニメ「イジらないで、長瀞さん」キャラクターソング集",
-   "year": 2022,
-   "rgMbid": "d7403667-30f7-4cd0-9198-3f2564a113e8",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Saigon Supersound, Vol. 3",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.21)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "BEST 4 U",
-   "year": 2022,
-   "rgMbid": "fe35b401-629e-4063-b172-9ac31c792ccd",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Saigon Supersound, Vol. 3",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.23)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "TVアニメ「ティアムーン帝国物語〜断頭台から始まる、姫の転生逆転ストーリー〜」オリジナル・サウンドトラック",
-   "year": 2023,
-   "rgMbid": "9da63944-05b9-4ec0-80e4-931358144b12",
-   "country": "JP",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "矢野沙織",
    "album": "The Golden Dawn",
    "year": 2023,
@@ -7156,6 +5782,24 @@
    "nrel": 2
   },
   {
+   "artist": "DEZOLVE",
+   "album": "Asterism",
+   "year": 2024,
+   "rgMbid": "ab0fe4bc-2d45-4312-8838-73d7013a6823",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-disambig",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "KENSO",
    "album": "An Old Warrior Shook the Sun",
    "year": 2024,
@@ -7174,6 +5818,24 @@
    "nrel": 1
   },
   {
+   "artist": "Yucco Miller & H ZETTRIO",
+   "album": "LINK",
+   "year": 2024,
+   "rgMbid": "60c09142-1207-41da-ae3d-34f71b3720c0",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-disambig",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "中村八大",
    "album": "HACHIDAI NAKAMURA",
    "year": 2024,
@@ -7185,6 +5847,24 @@
    "poolString": "",
    "note": "",
    "why": "curator-list",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "DEZOLVE",
+   "album": "Biblion",
+   "year": 2026,
+   "rgMbid": "396cd482-9ca6-4176-934f-7dd0dc5d2979",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-disambig",
    "entities": [
     "KING"
    ],
@@ -7254,8 +5934,8 @@
    "format": "Digital Media",
    "live": true,
    "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
+   "poolString": "江利チエミ|チエミの民謡集",
+   "note": "疑似池中(盤名相似度0.61)",
    "why": "artist-tag",
    "entities": [
     "KING"
@@ -7344,8 +6024,8 @@
    "format": "Digital Media",
    "live": false,
    "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
+   "poolString": "江利チエミ|チエミの民謡集",
+   "note": "疑似池中(盤名相似度0.67)",
    "why": "artist-tag",
    "entities": [
     "KING"
@@ -7444,24 +6124,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "ミッドナイト・イン・トウキョウ 第2集",
-   "year": null,
-   "rgMbid": "f7a3abb2-c88d-4f8d-a859-52eeb7555e2e",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "尾田悟",
    "album": "テナーの黒田節",
    "year": null,
@@ -7518,6 +6180,24 @@
  ],
  "unknown_rows": [
   {
+   "artist": "Elisabeth Waldo",
+   "album": "Realm of the Incas",
+   "year": 1962,
+   "rgMbid": "3020068d-dad5-47c7-9bc7-9c953e1f2066",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "SEVEN SEAS"
+   ],
+   "foreignArtist": true,
+   "nrel": 1
+  },
+  {
    "artist": "Nobuo Hara And His Sharps & Flats",
    "album": "Operation Glenn Miller",
    "year": 1963,
@@ -7572,24 +6252,6 @@
    "nrel": 1
   },
   {
-   "artist": "大月みやこ",
-   "album": "さのさを歌う (みやこの民謡・俗曲集)",
-   "year": 1968,
-   "rgMbid": "b6296ff9-cf2a-44d7-93aa-ec57e478aa44",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "ピンキーとキラーズ",
    "album": "リサイタル",
    "year": 1969,
@@ -7625,6 +6287,24 @@
    ],
    "foreignArtist": true,
    "nrel": 2
+  },
+  {
+   "artist": "Embryo",
+   "album": "Embryo’s Rache",
+   "year": 1971,
+   "rgMbid": "9b61f123-ada4-3755-a674-08e0ea3a3fd3",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": true,
+   "nrel": 1
   },
   {
    "artist": "ピンキーとキラーズ",
@@ -7681,17 +6361,17 @@
    "nrel": 2
   },
   {
-   "artist": "寺内タケシとブルージーンズ",
-   "album": "浪花節だよ！寺内タケシ",
+   "artist": "安倍里葎子",
+   "album": "律子の季節",
    "year": 1972,
-   "rgMbid": "944d06d9-0418-4ff1-8d59-7e3cce09b4a4",
+   "rgMbid": "7149f09b-9dde-4f9f-8aae-19c03bbd7734",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "KING"
    ],
@@ -7699,10 +6379,10 @@
    "nrel": 1
   },
   {
-   "artist": "小林啓子",
-   "album": "かなしみごっこ",
+   "artist": "寺内タケシとブルージーンズ",
+   "album": "浪花節だよ！寺内タケシ",
    "year": 1972,
-   "rgMbid": "ad232f4b-ccfc-470b-bbab-7ddcecf694fd",
+   "rgMbid": "944d06d9-0418-4ff1-8d59-7e3cce09b4a4",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
@@ -7761,8 +6441,8 @@
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
-   "poolString": "Caravan|คนกับควาย",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.00)",
+   "poolString": "",
+   "note": "藝人池中有5張(盤名未比中)",
    "why": "no-tag",
    "entities": [
     "KING"
@@ -7814,24 +6494,6 @@
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "The Country Gentlemen",
-   "album": "Live in Japan",
-   "year": 1975,
-   "rgMbid": "ad53f1e0-f153-3b79-8ad2-179c8e8b8f35",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": true,
    "inPool": false,
    "poolString": "",
    "note": "",
@@ -7915,24 +6577,6 @@
    "nrel": 1
   },
   {
-   "artist": "小林啓子",
-   "album": "ちょっと気分をかえて",
-   "year": 1977,
-   "rgMbid": "0493665a-a0a8-439f-98e4-1f7c5ca9943d",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "Alex North",
    "album": "Charade '79",
    "year": 1978,
@@ -7969,22 +6613,22 @@
    "nrel": 1
   },
   {
-   "artist": "Lizard",
-   "album": "Lizard",
-   "year": 1979,
-   "rgMbid": "9b9cc5d6-dc6f-4944-aedf-d1d49b761213",
+   "artist": "高橋ユキヒロ",
+   "album": "Saravah!",
+   "year": 1978,
+   "rgMbid": "c7b7d203-30b0-355e-851d-686fec0b0991",
    "country": "JP",
-   "format": "CD",
+   "format": "12\" Vinyl/CD/HQCD",
    "live": false,
    "inPool": true,
-   "poolString": "The Jesus Lizard|Liar",
-   "note": "translit~0.80",
-   "why": "no-tag",
+   "poolString": "高橋幸宏|Saravah!",
+   "note": "",
+   "why": "rg-tag-mixed",
    "entities": [
-    "KING"
+    "SEVEN SEAS"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 4
   },
   {
    "artist": "宮之上貴昭,",
@@ -8023,24 +6667,6 @@
    "nrel": 1
   },
   {
-   "artist": "Pal",
-   "album": "Catch Me",
-   "year": 1980,
-   "rgMbid": "af8a714c-6273-4f88-abb5-cd49a4afb102",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Heads in the Sky",
    "album": "Heads in the Sky",
    "year": 1981,
@@ -8056,60 +6682,6 @@
     "KING"
    ],
    "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "三原順子",
-   "album": "いとしのサマーボーイ",
-   "year": 1981,
-   "rgMbid": "cf53577c-9ea9-422a-b9e7-29053e2afe64",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "福士りつ、山田千里",
-   "album": "福士りつ熱唱 新津軽山唄",
-   "year": 1982,
-   "rgMbid": "17be2ee8-621a-48cc-8f0e-8edc8cbfa453",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "紙ふうせん",
-   "album": "ともだち",
-   "year": 1982,
-   "rgMbid": "fd9bacec-7a24-40ae-ab48-40dbcedc4e64",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -8185,24 +6757,6 @@
    "nrel": 1
   },
   {
-   "artist": "山瀬まみ",
-   "album": "RIBBON",
-   "year": 1986,
-   "rgMbid": "dea1f11a-a38f-4d18-961b-b933e5eb91a2",
-   "country": "JP",
-   "format": "CD/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "市川團十郎、片岡孝夫、中村扇雀、他",
    "album": "勧進帳",
    "year": 1986,
@@ -8219,42 +6773,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "Manilal Nag",
-   "album": "Classical Music of North India: Sitar and Tabla I",
-   "year": 1987,
-   "rgMbid": "2d127e7c-2464-49df-8bac-9d65c823a08b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 3
-  },
-  {
-   "artist": "[unknown]",
-   "album": "瞑想変幻〜ジャワのガムラン",
-   "year": 1987,
-   "rgMbid": "8b9307d9-35c6-4ce6-953e-cee259b0ca6b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 2
   },
   {
    "artist": "[unknown]",
@@ -8329,24 +6847,6 @@
    "nrel": 4
   },
   {
-   "artist": "Christina",
-   "album": "Gimme Love",
-   "year": 1988,
-   "rgMbid": "d4f2223a-1cb5-4f07-999e-ea45d4ae5608",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有5張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
    "artist": "King Symphonic Orchestra",
    "album": "Symphony Ys",
    "year": 1988,
@@ -8383,24 +6883,6 @@
    "nrel": 1
   },
   {
-   "artist": "S.バーラチャンダー",
-   "album": "南インドのヴィーナ～バーラチャンダ",
-   "year": 1988,
-   "rgMbid": "0ffcd81c-b77a-45b2-aa5f-5aff46c0c220",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 4
-  },
-  {
    "artist": "[unknown]",
    "album": "ペルシャ追想〜イランの古典音楽",
    "year": 1988,
@@ -8417,24 +6899,6 @@
    ],
    "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "[unknown]",
-   "album": "シタール幻想2〜眞美のラーガ / Classical Music of North India: Sitar and Tabla II",
-   "year": 1988,
-   "rgMbid": "32fcce93-47b8-4f04-969c-6952661800a7",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 2
   },
   {
    "artist": "[unknown]",
@@ -8470,7 +6934,7 @@
     "SEVEN SEAS"
    ],
    "foreignArtist": true,
-   "nrel": 3
+   "nrel": 2
   },
   {
    "artist": "[unknown]",
@@ -8491,58 +6955,22 @@
    "nrel": 2
   },
   {
-   "artist": "三枝成章&難波弘之",
-   "album": "四季",
+   "artist": "山形由美",
+   "album": "mistral",
    "year": 1988,
-   "rgMbid": "66330431-3d0a-4ce0-853a-24f22fdeabeb",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "仲村知夏",
-   "album": "NØ BR A ND",
-   "year": 1988,
-   "rgMbid": "f09633c3-763e-4982-b230-96dbb73d5bdc",
+   "rgMbid": "be3f9d48-c006-4324-9625-fd8ebc58df1e",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "KING"
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "仲村知夏",
-   "album": "100 CARAT",
-   "year": 1988,
-   "rgMbid": "bd26b948-e35d-4682-acdc-d60183ff5263",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "Air Pavilion",
@@ -8560,6 +6988,24 @@
     "KING"
    ],
    "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "L. スプラマニアム",
+   "album": "魔弓旋回～南インドの古典ヴァイオリン",
+   "year": 1989,
+   "rgMbid": "24dce23e-6e6a-4bc8-83ff-31407a3320b9",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "no-tag",
+   "entities": [
+    "SEVEN SEAS"
+   ],
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -8585,42 +7031,6 @@
    "album": "CINEMA EXOTICA",
    "year": 1989,
    "rgMbid": "ca122cdc-b39b-4a6c-969b-75debdb9edb9",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "仲村知夏",
-   "album": "STREET ANGEL",
-   "year": 1989,
-   "rgMbid": "0823e77a-8996-4e3f-9506-1881e1fdad83",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "寺内タケシとブルージーンズ",
-   "album": "Hello Beatles",
-   "year": 1989,
-   "rgMbid": "4bd8ac5a-2eb5-4095-9218-31dfe5c3ba53",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -8707,42 +7117,6 @@
    "nrel": 4
   },
   {
-   "artist": "中島優貴",
-   "album": "I.Q. Story",
-   "year": 1990,
-   "rgMbid": "4c599405-7840-4fbc-8c1c-e0f2aba7230f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "シャンソン・ベスト・ヒッツ",
-   "year": 1990,
-   "rgMbid": "1535c56b-340a-401d-9661-2961f06ac309",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "森脇健児",
    "album": "LANDING BEAM",
    "year": 1990,
@@ -8794,20 +7168,20 @@
     "SEVEN SEAS"
    ],
    "foreignArtist": true,
-   "nrel": 2
+   "nrel": 1
   },
   {
-   "artist": "LU-NA",
-   "album": "MOON GIRLS",
+   "artist": "Falcom Sound Team J.D.K.",
+   "album": "パーフェクト・コレクション・ソーサリアン Vol. 3",
    "year": 1991,
-   "rgMbid": "8a1516ed-bc53-446c-a437-876a9a731d12",
+   "rgMbid": "5c99aba3-02d3-497b-83a6-f34b0c3ecf64",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
+   "note": "藝人池中有6張(盤名未比中)",
+   "why": "rg-tag-mixed",
    "entities": [
     "KING"
    ],
@@ -8855,6 +7229,24 @@
    "album": "Instrumental Music of Rajasthan: Langas and Manganiyars",
    "year": 1991,
    "rgMbid": "01666340-aa6e-483a-b20b-1b45527e70ac",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有4張(盤名未比中)",
+   "why": "no-tag",
+   "entities": [
+    "SEVEN SEAS"
+   ],
+   "foreignArtist": true,
+   "nrel": 1
+  },
+  {
+   "artist": "[unknown]",
+   "album": "Sundanese Classical Music",
+   "year": 1991,
+   "rgMbid": "03f2ff22-e317-4339-8c8c-004a32005787",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -8995,22 +7387,22 @@
    "nrel": 1
   },
   {
-   "artist": "Eka Cita",
-   "album": "Gamelan Gong Kebyar",
+   "artist": "Milva",
+   "album": "Canzoni Tra Le Due Guerre",
    "year": 1992,
-   "rgMbid": "5ac78f48-6b2b-4614-b7ef-f860d5d4a23e",
+   "rgMbid": "af07608e-0dfb-4f0f-8b7f-22ee2c323ba6",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "artist-tag-mixed",
    "entities": [
     "SEVEN SEAS"
    ],
    "foreignArtist": true,
-   "nrel": 3
+   "nrel": 1
   },
   {
    "artist": "Pawiyatan Kraton Surakarta",
@@ -9029,24 +7421,6 @@
    ],
    "foreignArtist": true,
    "nrel": 3
-  },
-  {
-   "artist": "The Fabulous Jokers",
-   "album": "Go Latin '92",
-   "year": 1992,
-   "rgMbid": "1a20dab6-5d3e-4f9a-88d8-e641e51eab16",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
   },
   {
    "artist": "[unknown]",
@@ -9101,7 +7475,7 @@
     "SEVEN SEAS"
    ],
    "foreignArtist": true,
-   "nrel": 2
+   "nrel": 1
   },
   {
    "artist": "[unknown]",
@@ -9158,24 +7532,6 @@
    "nrel": 2
   },
   {
-   "artist": "[unknown]",
-   "album": "Gamelan Gong Gede of Batur Temple",
-   "year": 1992,
-   "rgMbid": "0ae830f1-7a02-47d1-8fe7-e0064e784f46",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 3
-  },
-  {
    "artist": "エジプト国立アラブ音楽アンサンブル",
    "album": "ナイルの詩〜エジプトの近代歌謡",
    "year": 1992,
@@ -9194,60 +7550,6 @@
    "nrel": 1
   },
   {
-   "artist": "ガムラン・スマル・プグリンガン・ビノー",
-   "album": "Gamelan Semar Pegulingan of Binoh Village",
-   "year": 1992,
-   "rgMbid": "44204a25-65a6-43e0-a587-a74ffc56e161",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 2
-  },
-  {
-   "artist": "サラセアン・クラウィタン・スロカルト",
-   "album": "Chamber Music of Central Java",
-   "year": 1992,
-   "rgMbid": "8233b1f8-fdb8-4f8d-b1e1-8462830f460a",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 2
-  },
-  {
-   "artist": "スアール・アグン＝サンカルアグン村 対 プンダム村からのグループ",
-   "album": "Jegog of Negara",
-   "year": 1992,
-   "rgMbid": "a210ad8e-624b-47da-a417-2b25b1600a5b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 2
-  },
-  {
    "artist": "小坂由美子",
    "album": "YUMICO",
    "year": 1992,
@@ -9259,6 +7561,24 @@
    "poolString": "",
    "note": "",
    "why": "no-tag",
+   "entities": [
+    "KING"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "川上和之",
+   "album": "MOVIN’ GROOVIN’",
+   "year": 1992,
+   "rgMbid": "bbfb3429-cffa-4575-bfd8-05a345848f23",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
    "entities": [
     "KING"
    ],
@@ -9302,24 +7622,6 @@
    "nrel": 1
   },
   {
-   "artist": "アストゥーリアス",
-   "album": "Cryptogam Illusion",
-   "year": 1993,
-   "rgMbid": "108943bc-b30a-3c99-92aa-562704cddbf4",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "全日本女子プロレス",
    "album": "全日本女子プロレス・1 (All-Japan Women's Pro Wrestling, Part 1)",
    "year": 1993,
@@ -9348,24 +7650,6 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有5張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "リサイタル〜ラスト・ライヴ！",
-   "year": 1993,
-   "rgMbid": "01475cf2-7331-45e7-9e2e-66d68a80ab1d",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
    "why": "no-tag",
    "entities": [
     "KING"
@@ -9428,43 +7712,6 @@
    "nrel": 1
   },
   {
-   "artist": "Chitti Bābu",
-   "album": "超絶のヴィーナ～チッティ・バーブの芸術",
-   "year": 1994,
-   "rgMbid": "1fe98463-9065-4796-ac41-7a21ce3f6f4d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 3
-  },
-  {
-   "artist": "The Gamêlan Musicians of the R.R.I.",
-   "album": "Klênêngan Session of Solonese Gamelan I",
-   "year": 1994,
-   "rgMbid": "86b9028c-e6a8-46dd-91c9-50ecae7042a5",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS",
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 3
-  },
-  {
    "artist": "[unknown]",
    "album": "遊牧の旋律〜トルクメンの器楽",
    "year": 1994,
@@ -9483,21 +7730,21 @@
    "nrel": 1
   },
   {
-   "artist": "ササックの息子たち",
-   "album": "Cilokaq Music of Lombok",
+   "artist": "dido",
+   "album": "Ksana",
    "year": 1994,
-   "rgMbid": "289d27c6-8ce4-4d66-8fe3-9501635ec2da",
+   "rgMbid": "b28bfa5b-7d54-398b-95c1-56a89e5bfabc",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "",
-   "why": "no-tag",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "rg-tag-mixed",
    "entities": [
-    "SEVEN SEAS"
+    "KING"
    ],
-   "foreignArtist": true,
+   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -9589,42 +7836,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "Chitti Babu",
-   "album": "至高のヴィーナ〜チッティ・バーブの芸術2",
-   "year": 1995,
-   "rgMbid": "c43cf552-1700-4ddf-ab07-6f421ff41c6b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 2
-  },
-  {
-   "artist": "Gunung Sari",
-   "album": "Golden Rain / Gong Kebyar of Gunung Sari, Bali",
-   "year": 1995,
-   "rgMbid": "686f1021-21b1-45f1-94d3-e5fc49ef632e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 4
   },
   {
    "artist": "News From Street Connection",
@@ -9755,24 +7966,6 @@
   },
   {
    "artist": "[unknown]",
-   "album": "Music of Mangkunêgaran Solo II",
-   "year": 1995,
-   "rgMbid": "8c3d222f-eae8-403d-b318-5fedc44b50a2",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 2
-  },
-  {
-   "artist": "[unknown]",
    "album": "深山の名手達〜雲南イ族の音楽I",
    "year": 1995,
    "rgMbid": "361f3a72-44a5-49cd-ae98-cca4d777ccd8",
@@ -9845,24 +8038,6 @@
    "nrel": 1
   },
   {
-   "artist": "RINO / OLP",
-   "album": "ベスト・オブα波トランキリティー 胎教〜すこやかな赤ちゃんを願って〜",
-   "year": 1996,
-   "rgMbid": "98b77c04-7647-4dc8-8847-a2b0012839d4",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Sarasehan Karawitan Surakarta",
    "album": "Rebab and Female Singing of Central Javanese Gamelan",
    "year": 1996,
@@ -9881,28 +8056,28 @@
    "nrel": 2
   },
   {
-   "artist": "Seyed Ali Khan Ensemble",
-   "album": "The Art of Seyed Ali Khan",
+   "artist": "[unknown]",
+   "album": "草原のキュ〜キルギスの器楽",
    "year": 1996,
-   "rgMbid": "24cb4798-d3fd-4dd4-8326-1bb6a109e835",
+   "rgMbid": "70105503-bb54-42dc-9a86-16276c473b8e",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "",
+   "note": "藝人池中有4張(盤名未比中)",
    "why": "no-tag",
    "entities": [
     "SEVEN SEAS"
    ],
    "foreignArtist": true,
-   "nrel": 4
+   "nrel": 1
   },
   {
    "artist": "[unknown]",
-   "album": "草原のキュ〜キルギスの器楽",
+   "album": "草原のウル〜キルギスの歌",
    "year": 1996,
-   "rgMbid": "70105503-bb54-42dc-9a86-16276c473b8e",
+   "rgMbid": "a6dd09c7-0a35-44df-b67e-d13f06cc9f1b",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -10169,24 +8344,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "岸洋子",
-   "year": 1997,
-   "rgMbid": "0eaef182-5514-4c37-aa1f-e52c5a3bd517",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "望月朴清",
    "album": "Tsuzumi: The Art of Mochizuki Bokusei",
    "year": 1997,
@@ -10240,42 +8397,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "陸上自衛隊中央音楽隊, 航空自衛隊航空中央音楽隊, 海上自衛隊東京音楽隊",
-   "album": "世界の国歌",
-   "year": 1997,
-   "rgMbid": "b6843f11-0eff-3abc-9c0e-beb83ce1631f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "Pawiyatan Kraton Surakarta",
-   "album": "Gendhing Bonang: Court Music of Kraton Surakarta III",
-   "year": 1998,
-   "rgMbid": "3967ccc0-75fc-41e1-b9ac-6d0faa1f6a6b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 3
   },
   {
    "artist": "Zhou Hui, Zhou Hao, Dai Shuhong, Du Bingrong & Chai Limin",
@@ -10530,24 +8651,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "決定版 岸洋子",
-   "year": 1998,
-   "rgMbid": "4cda261a-4aa9-4f94-a3f6-ec6a28c7fce0",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "嶋三喜夫",
    "album": "山里しぐれベストアルバム",
    "year": 1998,
@@ -10584,24 +8687,6 @@
    "nrel": 3
   },
   {
-   "artist": "横浜銀蝿",
-   "album": "T.C.R横浜銀蝿R.S/完全復刻盤〜スーパースペシャル・上",
-   "year": 1998,
-   "rgMbid": "f542afc2-f87f-41e4-8f47-98ccae1171ff",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "鏡五郎",
    "album": "全曲集",
    "year": 1998,
@@ -10610,8 +8695,8 @@
    "format": "CD",
    "live": false,
    "inPool": false,
-   "poolString": "Kagami|The Broken Sequencer",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.22)",
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
    "why": "no-tag",
    "entities": [
     "KING"
@@ -11034,24 +9119,6 @@
    "nrel": 1
   },
   {
-   "artist": "石井好子",
-   "album": "全曲集",
-   "year": 1999,
-   "rgMbid": "99a296f0-cc09-4a85-b286-611e11e38dda",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "舘ひろし",
    "album": "全曲集",
    "year": 1999,
@@ -11139,6 +9206,24 @@
     "KING"
    ],
    "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Bebel Gilberto",
+   "album": "Tanto tempo",
+   "year": 2000,
+   "rgMbid": "84afe68c-10a8-38cd-9157-3a327257449d",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "SEVEN SEAS"
+   ],
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -11376,24 +9461,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "岸洋子",
-   "year": 2000,
-   "rgMbid": "a2f27402-8f59-4f2a-8181-4fdf7e3fd494",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "松島詩子",
    "album": "松島詩子",
    "year": 2000,
@@ -11502,24 +9569,6 @@
    "nrel": 1
   },
   {
-   "artist": "Orange Pekoe",
-   "album": "orange pekoe",
-   "year": 2001,
-   "rgMbid": "802e3584-3842-3f69-9ea1-5d913d4daae6",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Unknown Artist",
    "album": "Chine Fanbai : Chant Liturgique Bouddhique, Leçon Du Soir Au Temple De Quanzhou",
    "year": 2001,
@@ -11609,24 +9658,6 @@
    ],
    "foreignArtist": false,
    "nrel": 2
-  },
-  {
-   "artist": "千葉勝友",
-   "album": "津軽口説",
-   "year": 2001,
-   "rgMbid": "83d4b788-2e8d-4f28-9cdf-cbee05ec3b0c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
   },
   {
    "artist": "千葉紘子",
@@ -11755,24 +9786,6 @@
    "nrel": 1
   },
   {
-   "artist": "杉本キクイ",
-   "album": "名人による日本の伝統芸〜越後高田瞽女唄",
-   "year": 2001,
-   "rgMbid": "c7ca8cbf-cce9-421a-bc59-d2b8e4fa63e5",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "松島詩子",
    "album": "全曲集",
    "year": 2001,
@@ -11845,24 +9858,6 @@
    "nrel": 1
   },
   {
-   "artist": "ハックルベリーフィン",
-   "album": "リバーダンス",
-   "year": 2002,
-   "rgMbid": "ace3749e-bdca-431e-ab34-e2f0a1f7a494",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "上松美香",
    "album": "Tesorito",
    "year": 2002,
@@ -11921,24 +9916,6 @@
    "album": "たからもの",
    "year": 2002,
    "rgMbid": "d6ee43c1-4f0b-43d9-9e9e-198b947c3e97",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "皐月雅楽会",
-   "album": "越天楽のすべて",
-   "year": 2002,
-   "rgMbid": "48f258bd-1ea2-4b08-a467-05b30d9e9c70",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -12097,42 +10074,6 @@
    "nrel": 1
   },
   {
-   "artist": "ガレージシャンソンショー",
-   "album": "ガレージシャンソンショー",
-   "year": 2003,
-   "rgMbid": "f51a4be7-82ea-3205-b6e2-de9ba64b9253",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "ハックルベリーフィン",
-   "album": "スタンド!",
-   "year": 2003,
-   "rgMbid": "6f7fc26d-e964-46d1-b16e-8359ce889cd1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "井上あずみ",
    "album": "スタジオジブリ作品名曲集 セルフカバーアルバム 君をのせて〜はるか〜",
    "year": 2003,
@@ -12200,24 +10141,6 @@
    "why": "no-tag",
    "entities": [
     "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岩代太郎",
-   "album": "セルフ・ノーツ～ザ・ロマンティック・コンテンポラリー～",
-   "year": 2003,
-   "rgMbid": "c32164fc-d02b-45a5-be87-f9c85e51cfd2",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -12385,24 +10308,6 @@
    "nrel": 1
   },
   {
-   "artist": "石井好子",
-   "album": "全曲集",
-   "year": 2003,
-   "rgMbid": "fb703f2d-620a-4a05-8cfc-b4b42b5a265c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "高英男",
    "album": "全曲集",
    "year": 2003,
@@ -12506,24 +10411,6 @@
    "why": "no-tag",
    "entities": [
     "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Silent Force",
-   "album": "Worlds Apart",
-   "year": 2004,
-   "rgMbid": "ffcd7d3e-0d40-37ab-bd7c-33a20c97ff5e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
    ],
    "foreignArtist": true,
    "nrel": 1
@@ -12835,24 +10722,6 @@
    "nrel": 1
   },
   {
-   "artist": "ガレージシャンソンショー",
-   "album": "狂歌全集",
-   "year": 2005,
-   "rgMbid": "40a606f3-9872-317a-a95f-8cf97868cf87",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "上松美香",
    "album": "MAXIMA",
    "year": 2005,
@@ -12929,60 +10798,6 @@
    "album": "岩本公水 全曲集",
    "year": 2005,
    "rgMbid": "b5cb77b7-3730-4555-bfc7-f4a88135f7b2",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "岸洋子のカンツォーネ",
-   "year": 2005,
-   "rgMbid": "69ff24b4-7020-4344-b29c-948c3e1d417f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "LP時代・名盤復刻シリーズ(2)岸洋子",
-   "year": 2005,
-   "rgMbid": "65b9899b-caba-4be8-982d-c9dc8949f49a",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "岸洋子のシャンソン",
-   "year": 2005,
-   "rgMbid": "39d9fd81-70be-4c27-af48-a479ec80ef20",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -13102,24 +10917,6 @@
     "KING"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "RAIN",
-   "album": "Eternal Rain",
-   "year": 2006,
-   "rgMbid": "1885cbfd-7082-4c63-8386-8ee23d8c7de4",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -13537,42 +11334,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "岸洋子のカンツォーネ",
-   "year": 2007,
-   "rgMbid": "f38e4861-5d36-4142-8c7f-c7adbf2716e5",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "岸洋子ベストセレクション2007",
-   "year": 2007,
-   "rgMbid": "de1d7bca-38c4-4080-8a3e-710b780973e5",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "新井満",
    "album": "アデュー",
    "year": 2007,
@@ -13717,24 +11478,6 @@
    "nrel": 1
   },
   {
-   "artist": "石井好子",
-   "album": "決定版 石井好子",
-   "year": 2007,
-   "rgMbid": "84f61cee-9f04-4a44-84ca-d189df0e69af",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "高英男",
    "album": "決定版 高英男",
    "year": 2007,
@@ -13771,24 +11514,6 @@
    "nrel": 2
   },
   {
-   "artist": "ReinXeed",
-   "album": "The Light",
-   "year": 2008,
-   "rgMbid": "93246b5e-15cd-447e-a314-d55d5b85e87d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
    "artist": "SHOWTA.",
    "album": "EVE",
    "year": 2008,
@@ -13805,24 +11530,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "Sound Horizon",
-   "album": "Moira",
-   "year": 2008,
-   "rgMbid": "eb0928c9-32a5-3259-b9ea-82db5195ecdd",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "千葉紘子",
@@ -14023,24 +11730,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "ベストセレクション 2009",
-   "year": 2008,
-   "rgMbid": "8a62118e-2a17-4d10-be65-2dedc9597070",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "日之内エミ",
    "album": "ME...",
    "year": 2008,
@@ -14146,42 +11835,6 @@
     "KING"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Angelo",
-   "album": "METALLIC BUTTERFLY",
-   "year": 2009,
-   "rgMbid": "13ce935a-56e9-4cf7-a6c9-46d4849e795f",
-   "country": "JP",
-   "format": "CD/DVD-Video",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有12張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "ReinXeed",
-   "album": "Higher",
-   "year": 2009,
-   "rgMbid": "3aeb8db2-031b-499c-9327-e691cf932320",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -14401,42 +12054,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "決定版 岸洋子のカンツォーネ ベスト",
-   "year": 2009,
-   "rgMbid": "b5be82cf-ff9b-490d-868f-52fd4d19fccd",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "決定版 岸洋子",
-   "year": 2009,
-   "rgMbid": "3390a908-1ed9-4862-a22c-d564dbe2de54",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "嶋三喜夫",
    "album": "決定版 嶋三喜夫",
    "year": 2009,
@@ -14501,24 +12118,6 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "横浜銀蝿",
-   "album": "全曲集2010",
-   "year": 2009,
-   "rgMbid": "c77eb0f9-b96b-436f-836b-a045b5c8f7d3",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
    "why": "no-tag",
    "entities": [
     "KING"
@@ -14653,55 +12252,19 @@
    "nrel": 1
   },
   {
-   "artist": "Golden Resurrection",
-   "album": "Glory to My King",
+   "artist": "Eddie Jobson",
+   "album": "Ultimate Zero Tour: Live",
    "year": 2010,
-   "rgMbid": "67b4ba76-4e92-4ecd-9d03-beeefadb7dd5",
+   "rgMbid": "2ee70ac9-0dbc-4f42-be6a-7d7786937232",
    "country": "JP",
    "format": "CD",
-   "live": false,
+   "live": true,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Lily.",
-   "album": "LOVE Lily.",
-   "year": 2010,
-   "rgMbid": "4e1b4617-fb16-47bc-aa76-9bc9477d696f",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "ReinXeed",
-   "album": "Majestic",
-   "year": 2010,
-   "rgMbid": "6cd8b1ea-7a51-42d7-828c-85ce7e6fb0c8",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
    ],
    "foreignArtist": true,
    "nrel": 1
@@ -14729,24 +12292,6 @@
    "album": "弦楽四重奏による「ドラゴンクエスト」",
    "year": 2010,
    "rgMbid": "6eb6752c-ef82-4f05-835c-d603e7ca581b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "八木さおり",
-   "album": "パーフェクト・ベスト",
-   "year": 2010,
-   "rgMbid": "e930be23-2041-448c-9b10-85b4f5f18fcf",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -14905,24 +12450,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "ベストセレクション2011",
-   "year": 2010,
-   "rgMbid": "013e3c06-a4d3-490c-849f-0128958fbaee",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "真木柚布子",
    "album": "全曲集2011",
    "year": 2010,
@@ -14977,35 +12504,17 @@
    "nrel": 1
   },
   {
-   "artist": "Osaka Monaurail",
-   "album": "State of the World",
+   "artist": "Brett Garsed",
+   "album": "Dark Matter",
    "year": 2011,
-   "rgMbid": "c464c5cd-f85c-4e44-82a3-da0cd5688f67",
+   "rgMbid": "6baeeb92-2468-43bc-ab92-4b8f544521ff",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "ReinXeed",
-   "album": "1912",
-   "year": 2011,
-   "rgMbid": "7c8d1088-ab12-4a25-8fb4-f751c457d012",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
+   "why": "artist-tag-mixed",
    "entities": [
     "KING"
    ],
@@ -15319,42 +12828,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "決定版 岸洋子のカンツォーネ ベスト",
-   "year": 2011,
-   "rgMbid": "bf1f1b8d-2520-44da-befc-5641b750787a",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "決定版 岸洋子 2012",
-   "year": 2011,
-   "rgMbid": "06216e6d-c078-477a-8b4c-318cd985f6ec",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "成底ゆう子",
    "album": "宝 TAKARA",
    "year": 2011,
@@ -15463,24 +12936,6 @@
    "nrel": 1
   },
   {
-   "artist": "石井好子",
-   "album": "決定版 石井好子 2012",
-   "year": 2011,
-   "rgMbid": "a151836a-8d80-4ab6-9737-73fce230e3b1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "鏡五郎",
    "album": "全曲集2012",
    "year": 2011,
@@ -15535,42 +12990,6 @@
    "nrel": 1
   },
   {
-   "artist": "DJ SASA with THE ISLANDERS",
-   "album": "夏ソンちゅ",
-   "year": 2012,
-   "rgMbid": "c940388b-9224-44f6-94e6-2ddd4dab76c7",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "DJ SASA with THE ISLANDERS",
-   "album": "冬ソンちゅ",
-   "year": 2012,
-   "rgMbid": "5b2e3743-750c-4160-b664-37a8378120d2",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "DOLL$BOXX",
    "album": "DOLLS APARTMENT",
    "year": 2012,
@@ -15607,24 +13026,6 @@
    "nrel": 1
   },
   {
-   "artist": "LIGHT BRINGER",
-   "album": "genesis",
-   "year": 2012,
-   "rgMbid": "aaa1314e-fb2b-44a9-ba66-69047c9638b8",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Lily.μ",
    "album": "7 Muse",
    "year": 2012,
@@ -15658,24 +13059,6 @@
     "KING"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "ReinXeed",
-   "album": "Welcome to the Theater",
-   "year": 2012,
-   "rgMbid": "28ff581c-0ea1-4fff-a133-9dd94d4bac9c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -15769,66 +13152,12 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "水に流して",
-   "year": 2012,
-   "rgMbid": "a28f0458-2de4-4908-acea-fc391e9fd614",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "真木柚布子",
    "album": "全曲集2013",
    "year": 2012,
    "rgMbid": "89318cde-3bc4-4711-9e3f-f4523a83eeba",
    "country": "JP",
    "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "石井好子",
-   "album": "ゴンドリエ",
-   "year": 2012,
-   "rgMbid": "d5125249-603f-4c82-a7be-dd7df407909d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "空想委員会",
-   "album": "僕はまだ必要十分条件を満たしていない。",
-   "year": 2012,
-   "rgMbid": "28a8e928-399c-4e10-9d3d-d124cd308b12",
-   "country": "XW",
-   "format": "Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
@@ -15877,75 +13206,21 @@
    "nrel": 1
   },
   {
-   "artist": "DJ SASA with THE ISLANDERS",
-   "album": "癒しんちゅ〜三線上のアリア〜",
+   "artist": "Clémentine",
+   "album": "Cinema De Reve",
    "year": 2013,
-   "rgMbid": "be616047-ed9b-444b-92d1-53450912a386",
+   "rgMbid": "531906e7-a67e-44bf-b7a9-285a4bf2ff82",
    "country": "JP",
-   "format": "CD",
+   "format": "Digital Media",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "artist-tag-mixed",
    "entities": [
     "KING"
    ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "DJ SASA with THE ISLANDERS",
-   "album": "アニソンちゅ",
-   "year": 2013,
-   "rgMbid": "c1c06637-3a96-4108-8d3c-93ddc698331f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "DJ SASA with THE ISLANDERS",
-   "album": "美らソンちゅ",
-   "year": 2013,
-   "rgMbid": "6233f42d-b008-4867-bd88-854bea178073",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "DJ SASA with THE ISLANDERS",
-   "album": "クリスマスんちゅ",
-   "year": 2013,
-   "rgMbid": "d3f2af72-801f-4e3b-b29c-1bd027212e86",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -15985,42 +13260,6 @@
    "nrel": 1
   },
   {
-   "artist": "ReinXeed",
-   "album": "Swedish Hitz Goes Metal Vol. II (Japanese Edition)",
-   "year": 2013,
-   "rgMbid": "a2553b72-92d6-465d-b53c-cc84e8155f60",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "ReinXeed",
-   "album": "A New World",
-   "year": 2013,
-   "rgMbid": "bdac6247-53d7-4049-8d52-40afd1f15043",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
    "artist": "SUPER BELL’’Z",
    "album": "MOTOR MAN みちのく",
    "year": 2013,
@@ -16055,42 +13294,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "bloodthirsty butchers",
-   "album": "youth (青春)",
-   "year": 2013,
-   "rgMbid": "6677a6ec-1bf4-4f36-9608-6d056ef36a5f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "orange pekoe",
-   "album": "Oriental Jazz Mode",
-   "year": 2013,
-   "rgMbid": "e78f4d20-0d6c-4eca-acf7-1b513ac2a796",
-   "country": "JP/TW",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "三條町子",
@@ -16151,24 +13354,6 @@
    "album": "千葉紘子全曲集2014",
    "year": 2013,
    "rgMbid": "01f0cb82-7b58-47ee-8e7c-c1800a5fb04a",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "喜多村英梨",
-   "album": "Chu→ning♪",
-   "year": 2013,
-   "rgMbid": "fe69d5a4-88e5-4ea9-8013-9b6769309804",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -16309,42 +13494,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸洋子",
-   "album": "決定版 岸洋子 カンツォーネ ベスト",
-   "year": 2013,
-   "rgMbid": "b44c0870-a041-49ec-bf0f-dc24e664a3c1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸洋子",
-   "album": "決定版 岸洋子 2014",
-   "year": 2013,
-   "rgMbid": "27d52111-2ab2-488f-8f2d-543ad7c79a35",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "松島詩子",
    "album": "決定版 松島詩子 2014",
    "year": 2013,
@@ -16381,24 +13530,6 @@
    "nrel": 1
   },
   {
-   "artist": "横浜銀蝿",
-   "album": "横浜銀蝿全曲集2014",
-   "year": 2013,
-   "rgMbid": "1de3b03a-f6d3-4b24-931a-e5be00b0ffd3",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "片桐舞子",
    "album": "Solo",
    "year": 2013,
@@ -16421,24 +13552,6 @@
    "album": "真木柚布子全曲集2014",
    "year": 2013,
    "rgMbid": "69046646-74c2-447f-8f89-918133eb7e14",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "石井好子",
-   "album": "決定版 石井好子 2014",
-   "year": 2013,
-   "rgMbid": "49a9977c-7154-41e4-bd09-f608bc7f3835",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -16507,21 +13620,21 @@
    "nrel": 1
   },
   {
-   "artist": "Gus G.",
-   "album": "I Am the Fire",
+   "artist": "Gershwin, Paul White; Masahiro Sayama, Taizo Takemoto, Ken Takaseki, Tokyo Symphony Orchestra",
+   "album": "Gershwin: Rhapsody in Blue / An American in Paris / Lullaby / I Got Rhythm Variations / White: Five Miniatures",
    "year": 2014,
-   "rgMbid": "8609ae9a-fa51-4209-bc28-b68c0f9a7cc9",
+   "rgMbid": "02c2f862-6451-4d4b-838f-8afd2f2b9301",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "",
-   "why": "no-tag",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "artist-tag-mixed",
    "entities": [
-    "SEVEN SEAS"
+    "KING"
    ],
-   "foreignArtist": true,
+   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -16535,24 +13648,6 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "LIGHT BRINGER",
-   "album": "monument",
-   "year": 2014,
-   "rgMbid": "cdbcb801-44cd-45a6-9f27-8a7193cabcff",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
    "why": "no-tag",
    "entities": [
     "KING"
@@ -16670,46 +13765,10 @@
    "nrel": 2
   },
   {
-   "artist": "空想委員会",
-   "album": "種の起源",
-   "year": 2014,
-   "rgMbid": "02d0ed4b-6303-4042-bf94-b7cd7e9e291b",
-   "country": "JP",
-   "format": "CD/DVD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "FOUR GET ME A NOTS",
    "album": "Astraea",
    "year": 2015,
    "rgMbid": "c73cc6cb-7367-4b61-9615-c1c385fca1aa",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "GEEKS",
-   "album": "WAVGLYPH",
-   "year": 2015,
-   "rgMbid": "ccf4cd70-11f6-47bc-bb34-f666475328e4",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -16775,24 +13834,6 @@
     "KING"
    ],
    "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "トワ・エ・モワ",
-   "album": "タイム・フォー・アス",
-   "year": 2015,
-   "rgMbid": "b35e3b1d-6f78-44c1-a5ce-eb8d7e6f6a44",
-   "country": "",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -16904,24 +13945,6 @@
    "nrel": 1
   },
   {
-   "artist": "空想委員会",
-   "album": "GPS",
-   "year": 2015,
-   "rgMbid": "adf0c11c-84e5-43ea-92b1-38e69b93e910",
-   "country": "JP",
-   "format": "CD/DVD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "BOYS AND MEN",
    "album": "Cheer up!",
    "year": 2016,
@@ -16938,24 +13961,6 @@
    ],
    "foreignArtist": false,
    "nrel": 2
-  },
-  {
-   "artist": "Block B",
-   "album": "My Zone",
-   "year": 2016,
-   "rgMbid": "8b26af56-6238-45bb-86b1-52421c29bc34",
-   "country": "JP/XE",
-   "format": "CD/DVD-Video/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 5
   },
   {
    "artist": "Grace Mahya",
@@ -17066,24 +14071,6 @@
    "nrel": 2
   },
   {
-   "artist": "lyrical school",
-   "album": "guidebook",
-   "year": 2016,
-   "rgMbid": "c557e65e-470b-4112-a10c-84770090db74",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "nowisee",
    "album": "掌の戦争",
    "year": 2016,
@@ -17190,24 +14177,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "空想委員会",
-   "album": "ダウトの行進",
-   "year": 2016,
-   "rgMbid": "954cb4a4-b311-457f-a51d-597312d45690",
-   "country": "JP",
-   "format": "CD/DVD-Video/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
   },
   {
    "artist": "藤田恵名",
@@ -17444,64 +14413,10 @@
    "nrel": 2
   },
   {
-   "artist": "空想委員会",
-   "album": "デフォルメの青写真",
-   "year": 2017,
-   "rgMbid": "fa834909-9551-44c4-b684-20cf0af315ec",
-   "country": "JP",
-   "format": "CD/DVD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "藤田恵名",
    "album": "強めの心臓",
    "year": 2017,
    "rgMbid": "7efbda36-1d10-4498-8233-84559ba7d274",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Ark Storm",
-   "album": "Voyage of the Rage",
-   "year": 2018,
-   "rgMbid": "378791b2-2999-42c7-95f1-3bced7ccaff9",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "DEZOLVE",
-   "album": "PORTRAY",
-   "year": 2018,
-   "rgMbid": "3079a669-a679-4858-9409-e4f444b2353c",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -17550,24 +14465,6 @@
    ],
    "foreignArtist": false,
    "nrel": 3
-  },
-  {
-   "artist": "DEZOLVE",
-   "album": "AREA",
-   "year": 2019,
-   "rgMbid": "5d66f51c-3a5e-4fc7-bf24-634a2f7b9613",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
   },
   {
    "artist": "IKUO",
@@ -17805,24 +14702,6 @@
    "nrel": 1
   },
   {
-   "artist": "DEZOLVE",
-   "album": "Frontiers",
-   "year": 2020,
-   "rgMbid": "db6ab680-661f-4544-9ecf-41aa541324f1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "SUPER BELL’’Z",
    "album": "MOTOR MAN 鉄音",
    "year": 2020,
@@ -17877,24 +14756,6 @@
    "nrel": 1
   },
   {
-   "artist": "山瀬まみ",
-   "album": "PRIVATE EDITION",
-   "year": 2020,
-   "rgMbid": "0d32f890-f2a2-4966-b1f0-8c638b41bbbb",
-   "country": "JP",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "成底ゆう子",
    "album": "ダイナリズム～琉球の風～",
    "year": 2020,
@@ -17931,24 +14792,6 @@
    "nrel": 3
   },
   {
-   "artist": "Ever!BE迷わないっっ!!",
-   "album": "#えびまよっっ",
-   "year": 2021,
-   "rgMbid": "e5729ebe-2e63-4935-a14c-3b0c2a5a8f03",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "PiXMiX",
    "album": "君がいたから",
    "year": 2021,
@@ -17964,24 +14807,6 @@
     "KING"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Rhapsody of Fire",
-   "album": "Glory for Salvation",
-   "year": 2021,
-   "rgMbid": "e18f19e4-acc4-4bea-b48d-689089bf895f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -18037,24 +14862,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "真っ白なキャンバス",
-   "album": "共創",
-   "year": 2021,
-   "rgMbid": "f5c4b080-94f6-4d5b-b15d-c77a8172186f",
-   "country": "JP",
-   "format": "Blu-ray/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "Alternation of Generations",
@@ -18183,43 +14990,6 @@
    "nrel": 1
   },
   {
-   "artist": "Elvenking",
-   "album": "Reader of the Runes - Rapture",
-   "year": 2023,
-   "rgMbid": "964b49cc-4726-4a24-83a4-59160e5d1e17",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Ethereal Sin",
-   "album": "タイム・オブ・レクイエム・パート2(鎮魂ノ刻 第二章)",
-   "year": 2023,
-   "rgMbid": "aec685b5-ec51-492b-a9e2-36bb9f446b07",
-   "country": "JP/XW",
-   "format": "CD/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS",
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "Yucco Miller",
    "album": "Ambivalent",
    "year": 2023,
@@ -18310,24 +15080,6 @@
    "nrel": 1
   },
   {
-   "artist": "DEZOLVE",
-   "album": "Asterism",
-   "year": 2024,
-   "rgMbid": "ab0fe4bc-2d45-4312-8838-73d7013a6823",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Kazuhito Yamane",
    "album": "J.S.Bach: Sonatas and Partitas for Violin Solo Complete",
    "year": 2024,
@@ -18364,24 +15116,6 @@
    "nrel": 1
   },
   {
-   "artist": "Rhapsody of Fire",
-   "album": "Challenge the Wind",
-   "year": 2024,
-   "rgMbid": "b07c5412-da99-4de9-acc0-5ec346ee6b10",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
    "artist": "The Asian American Jazz Trio",
    "album": "ムーン・オーバー・ザ・ワールド",
    "year": 2024,
@@ -18392,24 +15126,6 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Yucco Miller & H ZETTRIO",
-   "album": "LINK",
-   "year": 2024,
-   "rgMbid": "60c09142-1207-41da-ae3d-34f71b3720c0",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
    "why": "no-tag",
    "entities": [
     "KING"
@@ -18477,61 +15193,6 @@
    "year": 2025,
    "rgMbid": "2eef57b0-3642-4cce-bf5f-71ea0215e335",
    "country": "",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Furio Chirico's The Trip",
-   "album": "Atlantide 2025",
-   "year": 2025,
-   "rgMbid": "0770e061-3af5-46e5-b196-142b78a4e801",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS",
-    "KING"
-   ],
-   "foreignArtist": true,
-   "nrel": 4
-  },
-  {
-   "artist": "The 7th Guild",
-   "album": "Triumviro",
-   "year": 2025,
-   "rgMbid": "e240e0e2-af12-453e-b552-ecd6ca3f5f82",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "SEVEN SEAS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "WHITE SCORPION",
-   "album": "Corner of my heart",
-   "year": 2025,
-   "rgMbid": "14f4baea-098a-436a-8a87-261f37e7c14a",
-   "country": "XW",
    "format": "Digital Media",
    "live": false,
    "inPool": false,
@@ -18707,24 +15368,6 @@
    "nrel": 1
   },
   {
-   "artist": "DEZOLVE",
-   "album": "Biblion",
-   "year": 2026,
-   "rgMbid": "396cd482-9ca6-4176-934f-7dd0dc5d2979",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "F/ACE",
    "album": "NAUTICAL STAR",
    "year": 2026,
@@ -18759,24 +15402,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "Lonesome_Blue",
-   "album": "FOURTH DIMENSION",
-   "year": 2026,
-   "rgMbid": "0679fed3-d184-4414-b8c2-cffe89c920ac",
-   "country": "JP",
-   "format": "CD/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "KING"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
   },
   {
    "artist": "Yucco Miller",
@@ -18833,5 +15458,5 @@
    "nrel": 1
   }
  ],
- "nonjazz_count": 700
+ "nonjazz_count": 809
 }

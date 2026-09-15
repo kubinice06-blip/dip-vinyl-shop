@@ -1,5 +1,5 @@
 {
- "label": "trio",
+ "label": "Trio Records（含 Whynot）",
  "entities": [
   {
    "id": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
@@ -22,182 +22,6 @@
  ],
  "rows": [
   {
-   "artist": "Freddie Redd",
-   "album": "Jazz Is",
-   "year": null,
-   "rgMbid": "2c60b074-fe80-490a-9d1e-243a7346691d",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": null,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
-   "domestic": false
-  },
-  {
-   "artist": "世良譲トリオ",
-   "album": "Bacchus Swing",
-   "year": null,
-   "rgMbid": "3a45d8fe-b74e-4b8f-851f-4f4a79397b6b",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": null,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz,jazz(jp-list)",
-   "domestic": true
-  },
-  {
-   "artist": "加古隆",
-   "album": "TOK",
-   "year": null,
-   "rgMbid": "c4fbdc2b-d817-435f-bd7e-5479d24a619c",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "Live",
-   "labelYear": null,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz,jazz(jp-list)",
-   "domestic": true
-  },
-  {
-   "artist": "本田竹曠 & 渡辺貞夫カルテット",
-   "album": "Minton Blues",
-   "year": null,
-   "rgMbid": "edccbdd5-4cc4-449c-8616-f0e52914e2ca",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": null,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:hard bop,jazz,jazz(jp-list),post-bop",
-   "domestic": true
-  },
-  {
-   "artist": "渋谷毅",
-   "album": "Cook Note",
-   "year": null,
-   "rgMbid": "6711bd61-5314-42ef-93d0-e8d3a8d72502",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": null,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz,jazz(jp-list)",
-   "domestic": true
-  },
-  {
-   "artist": "辛島文雄",
-   "album": "Hot Islands",
-   "year": null,
-   "rgMbid": "c758659d-f9f7-423e-8acf-df8c67329654",
-   "country": "XW",
-   "format": "Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": null,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz,jazz(jp-list)",
-   "domestic": true
-  },
-  {
-   "artist": "The Toshiko Trio",
-   "album": "George Wein Presents Toshiko",
-   "year": 1956,
-   "rgMbid": "ecb72879-4709-4af4-8059-eb0ec3596eb7",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1974,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Albert Ayler Quartet",
-   "album": "Ghosts",
-   "year": 1964,
-   "rgMbid": "550b5b69-52c4-3846-9c45-54d69ac585d5",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": true,
-   "poolString": "Albert Ayler | Ghosts | 1965 (seed)",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1975,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Mal Waldron",
-   "album": "Les Nuits de la negritude",
-   "year": 1965,
-   "rgMbid": "a9a04f6d-b125-41f9-8357-21140c1e0cac",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1977,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop",
-   "domestic": false
-  },
-  {
-   "artist": "Cecil Taylor Jazz Unit",
-   "album": "Nefertiti, The Beautiful One Has Come",
-   "year": 1966,
-   "rgMbid": "56f6da98-8403-4750-9309-253c1ace2f9c",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1975,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Freddie Hubbard",
-   "album": "Minor Mishap",
-   "year": 1966,
-   "rgMbid": "6c590be0-be53-3661-bc2e-075882523096",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1975,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
-   "domestic": false
-  },
-  {
    "artist": "Teddy Wilson meets Eiji Kitamura",
    "album": "Teddy Wilson meets Eiji Kitamura",
    "year": 1970,
@@ -210,7 +34,6 @@
    "note": "",
    "labelYear": 1970,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -226,7 +49,6 @@
    "note": "",
    "labelYear": 1970,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -242,7 +64,6 @@
    "note": "",
    "labelYear": 1970,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:hard bop,jazz,jazz(jp-list),post-bop",
    "domestic": true
   },
   {
@@ -258,7 +79,6 @@
    "note": "",
    "labelYear": 1971,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -274,7 +94,6 @@
    "note": "",
    "labelYear": 1971,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -290,7 +109,6 @@
    "note": "",
    "labelYear": 1972,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -306,7 +124,6 @@
    "note": "Live",
    "labelYear": 1972,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -322,7 +139,6 @@
    "note": "",
    "labelYear": 1972,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -338,7 +154,6 @@
    "note": "",
    "labelYear": 1972,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -354,7 +169,6 @@
    "note": "Live",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,avant-garde,free jazz",
    "domestic": true
   },
   {
@@ -370,7 +184,6 @@
    "note": "Live",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -386,7 +199,6 @@
    "note": "",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -402,7 +214,6 @@
    "note": "",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -418,7 +229,6 @@
    "note": "",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,soul jazz",
    "domestic": true
   },
   {
@@ -434,7 +244,6 @@
    "note": "Live",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz,free improvisation",
    "domestic": true
   },
   {
@@ -450,7 +259,6 @@
    "note": "",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,pop,jazz,folk,jazz rock,kayōkyoku",
    "domestic": true
   },
   {
@@ -466,7 +274,6 @@
    "note": "Live",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -482,7 +289,6 @@
    "note": "Live",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -498,7 +304,6 @@
    "note": "Live",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop,hard bop",
    "domestic": true
   },
   {
@@ -514,7 +319,6 @@
    "note": "",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:avant-garde jazz,band directors,composers,free jazz,jazz,jazz musicians,pianists,post-bop",
    "domestic": true
   },
   {
@@ -530,7 +334,6 @@
    "note": "",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -546,7 +349,6 @@
    "note": "Live",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -562,7 +364,6 @@
    "note": "",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -578,7 +379,6 @@
    "note": "",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:avant-garde jazz,band directors,composers,free jazz,jazz,jazz musicians,pianists,post-bop",
    "domestic": true
   },
   {
@@ -594,7 +394,6 @@
    "note": "",
    "labelYear": 1975,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,contemporary jazz,free improvisation",
    "domestic": true
   },
   {
@@ -610,7 +409,6 @@
    "note": "",
    "labelYear": 1975,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -626,7 +424,6 @@
    "note": "Live",
    "labelYear": 1975,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free improvisation",
    "domestic": true
   },
   {
@@ -642,40 +439,7 @@
    "note": "",
    "labelYear": 1975,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
-  },
-  {
-   "artist": "Kalapana",
-   "album": "Kalapana",
-   "year": 1975,
-   "rgMbid": "6d7f38c0-b920-4281-9d7d-a762adbb6859",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1977,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,jazz,soul,jazz rock,soft rock,jazz-funk",
-   "domestic": false
-  },
-  {
-   "artist": "Muhal Richard Abrams",
-   "album": "Afrisong",
-   "year": 1975,
-   "rgMbid": "a296d236-41f8-4e11-97f4-91d48cace362",
-   "country": "GB",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 2009,
-   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "rg:jazz,free jazz,free improvisation",
-   "domestic": false
   },
   {
    "artist": "Richie Beirach",
@@ -690,7 +454,6 @@
    "note": "",
    "labelYear": 1975,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,jazz-funk,contemporary jazz",
    "domestic": true
   },
   {
@@ -706,7 +469,6 @@
    "note": "",
    "labelYear": 1975,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -722,7 +484,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -738,7 +499,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop,soul jazz",
    "domestic": true
   },
   {
@@ -754,7 +514,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "rg:jazz,free jazz,afro-cuban jazz",
    "domestic": true
   },
   {
@@ -770,7 +529,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -786,7 +544,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop,contemporary jazz",
    "domestic": true
   },
   {
@@ -802,7 +559,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -818,7 +574,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -834,7 +589,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,pop,jazz",
    "domestic": true
   },
   {
@@ -850,7 +604,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -866,7 +619,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,jazz",
    "domestic": true
   },
   {
@@ -882,7 +634,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,blues,country blues,gypsy jazz",
    "domestic": true
   },
   {
@@ -898,7 +649,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,cool jazz",
    "domestic": true
   },
   {
@@ -914,7 +664,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz,free improvisation",
    "domestic": true
   },
   {
@@ -930,7 +679,6 @@
    "note": "Live",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:instrumental,jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -946,7 +694,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -962,7 +709,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -978,7 +724,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -994,7 +739,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,leftfield",
    "domestic": true
   },
   {
@@ -1010,7 +754,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1026,7 +769,6 @@
    "note": "Live",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -1042,7 +784,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1055,10 +796,9 @@
    "live": false,
    "inPool": true,
    "poolString": "小坂忠 | モーニング | 1977 (seed)",
-   "note": "",
+   "note": "MB 只有串流版",
    "labelYear": null,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:pop,jazz,funk",
    "domestic": true
   },
   {
@@ -1074,7 +814,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1090,7 +829,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,jazz-funk",
    "domestic": true
   },
   {
@@ -1106,7 +844,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop,cool jazz,classic japanese jazz",
    "domestic": true
   },
   {
@@ -1122,7 +859,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1138,7 +874,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:2008 universal fire victim,american,bebop,bop,easy listening soundtracks and musicals,hard bop,jazz,swing,vocal jazz",
    "domestic": true
   },
   {
@@ -1154,7 +889,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:2008 universal fire victim,avant-garde jazz,chamber jazz,hard bop,jazz,jazz fusion,jazz(jp-list),post-bop",
    "domestic": true
   },
   {
@@ -1170,7 +904,6 @@
    "note": "Live",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1186,7 +919,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,jazz fusion",
    "domestic": true
   },
   {
@@ -1202,7 +934,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,jazz,jazz rock,jazz-funk",
    "domestic": true
   },
   {
@@ -1218,7 +949,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:smooth jazz",
    "domestic": true
   },
   {
@@ -1234,7 +964,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -1250,7 +979,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1266,7 +994,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,jazz",
    "domestic": true
   },
   {
@@ -1282,7 +1009,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,jazz,aor",
    "domestic": true
   },
   {
@@ -1298,7 +1024,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:2008 universal fire victim,avant-garde jazz,chamber jazz,hard bop,jazz,jazz fusion,post-bop",
    "domestic": true
   },
   {
@@ -1314,7 +1039,6 @@
    "note": "Live",
    "labelYear": 1979,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1330,7 +1054,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,jazz-rock,contemporary jazz",
    "domestic": true
   },
   {
@@ -1346,7 +1069,6 @@
    "note": "",
    "labelYear": 1980,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz,jazz(jp-list),swing",
    "domestic": true
   },
   {
@@ -1362,7 +1084,6 @@
    "note": "",
    "labelYear": 1980,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:rock,jazz,jazz rock,jazz-funk,surf",
    "domestic": true
   },
   {
@@ -1378,7 +1099,6 @@
    "note": "",
    "labelYear": 1980,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,avant-garde jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1394,7 +1114,6 @@
    "note": "",
    "labelYear": 1980,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz",
    "domestic": true
   },
   {
@@ -1410,7 +1129,6 @@
    "note": "",
    "labelYear": 1980,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1426,7 +1144,6 @@
    "note": "",
    "labelYear": 1980,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1442,7 +1159,6 @@
    "note": "",
    "labelYear": 1981,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,fusion,free jazz,contemporary jazz,latin jazz,avantgarde,folk / world / country",
    "domestic": true
   },
   {
@@ -1458,7 +1174,6 @@
    "note": "",
    "labelYear": 2017,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:contemporary jazz,jazz,jazz fusion,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -1474,7 +1189,6 @@
    "note": "",
    "labelYear": 1981,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,classic japanese jazz",
    "domestic": true
   },
   {
@@ -1490,7 +1204,6 @@
    "note": "",
    "labelYear": 1981,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -1506,7 +1219,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:contemporary jazz,jazz,jazz fusion,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -1522,7 +1234,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1538,7 +1249,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1554,7 +1264,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:classical,jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1570,7 +1279,6 @@
    "note": "Live",
    "labelYear": 1982,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1586,7 +1294,6 @@
    "note": "Live",
    "labelYear": 1983,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,post-bop,cool jazz",
    "domestic": true
   },
   {
@@ -1602,7 +1309,6 @@
    "note": "Live",
    "labelYear": 1983,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1618,7 +1324,6 @@
    "note": "",
    "labelYear": 1983,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz(jp-list),likedis auto,vocal jazz",
    "domestic": true
   },
   {
@@ -1631,27 +1336,10 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "",
+   "note": "MB 只有串流版",
    "labelYear": 1986,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
-  },
-  {
-   "artist": "Jon Faddis, Billy Harper",
-   "album": "Jon & Billy",
-   "year": 1987,
-   "rgMbid": "62320bc0-39dc-46a4-8d7d-06e9e8549e0b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 2021,
-   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
-   "domestic": false
   },
   {
    "artist": "Kenny Barron Trio",
@@ -1666,7 +1354,6 @@
    "note": "Live",
    "labelYear": 1987,
    "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -1682,7 +1369,6 @@
    "note": "",
    "labelYear": 2007,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1698,7 +1384,6 @@
    "note": "Live",
    "labelYear": 2008,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1714,87 +1399,6 @@
    "note": "Live",
    "labelYear": 2008,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz",
-   "domestic": true
-  },
-  {
-   "artist": "George Cables",
-   "album": "Why Not?",
-   "year": 2009,
-   "rgMbid": "2b2d8d68-cf25-4e67-bee8-3251985c8cf0",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 2009,
-   "entity": "6580de3e-23d7-42bd-8a42-d6b4d2db3302",
-   "why": "rg:jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Chico Freeman",
-   "album": "Lord Riff and Me",
-   "year": 2010,
-   "rgMbid": "e551ca9e-a2e0-453d-a6ce-c4f10f3ea7aa",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 2010,
-   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "artist:jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Kenny Barron",
-   "album": "Live",
-   "year": 2010,
-   "rgMbid": "4cf9afc8-831b-47c7-999e-be30e7ac37fa",
-   "country": "US",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "Live",
-   "labelYear": 2010,
-   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "rg:jazz,post-bop",
-   "domestic": true
-  },
-  {
-   "artist": "Sonny Fortune",
-   "album": "Invitation",
-   "year": 2010,
-   "rgMbid": "00555be4-35e7-4992-96d2-513ab89f5bfb",
-   "country": "GB",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 2010,
-   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "rg:jazz,post-bop",
-   "domestic": true
-  },
-  {
-   "artist": "Walt Dickerson",
-   "album": "Walt Dickerson 1976",
-   "year": 2010,
-   "rgMbid": "f0d87d1a-fc53-4068-a3f9-d960903a38ea",
-   "country": "GB",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 2010,
-   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1810,7 +1414,6 @@
    "note": "",
    "labelYear": 2014,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:jazz,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -1826,7 +1429,6 @@
    "note": "",
    "labelYear": 2020,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "rg:jazz,avant-garde jazz",
    "domestic": true
   },
   {
@@ -1842,7 +1444,6 @@
    "note": "",
    "labelYear": 2023,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:contemporary jazz,death by covid-19,easy listening,hard bop,jazz,jazz fusion,jazz(jp-list),post-bop",
    "domestic": true
   },
   {
@@ -1855,11 +1456,295 @@
    "live": true,
    "inPool": false,
    "poolString": "",
-   "note": "Live",
+   "note": "Live；MB 只有串流版",
    "labelYear": 2025,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "artist:cool jazz,hard bop,jazz,jazz(jp-list),modal jazz,post bop,post-bop",
    "domestic": true
+  },
+  {
+   "artist": "Freddie Redd",
+   "album": "Jazz Is",
+   "year": null,
+   "rgMbid": "2c60b074-fe80-490a-9d1e-243a7346691d",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "labelYear": null,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": true
+  },
+  {
+   "artist": "世良譲トリオ",
+   "album": "Bacchus Swing",
+   "year": null,
+   "rgMbid": "3a45d8fe-b74e-4b8f-851f-4f4a79397b6b",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "MB 只有串流版",
+   "labelYear": null,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": true
+  },
+  {
+   "artist": "加古隆",
+   "album": "TOK",
+   "year": null,
+   "rgMbid": "c4fbdc2b-d817-435f-bd7e-5479d24a619c",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": true,
+   "inPool": false,
+   "poolString": "",
+   "note": "Live；MB 只有串流版",
+   "labelYear": null,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": true
+  },
+  {
+   "artist": "本田竹曠 & 渡辺貞夫カルテット",
+   "album": "Minton Blues",
+   "year": null,
+   "rgMbid": "edccbdd5-4cc4-449c-8616-f0e52914e2ca",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "MB 只有串流版",
+   "labelYear": null,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": true
+  },
+  {
+   "artist": "渋谷毅",
+   "album": "Cook Note",
+   "year": null,
+   "rgMbid": "6711bd61-5314-42ef-93d0-e8d3a8d72502",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "MB 只有串流版",
+   "labelYear": null,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": true
+  },
+  {
+   "artist": "辛島文雄",
+   "album": "Hot Islands",
+   "year": null,
+   "rgMbid": "c758659d-f9f7-423e-8acf-df8c67329654",
+   "country": "XW",
+   "format": "Digital Media",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "MB 只有串流版",
+   "labelYear": null,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": true
+  },
+  {
+   "artist": "The Toshiko Trio",
+   "album": "George Wein Presents Toshiko",
+   "year": 1956,
+   "rgMbid": "ecb72879-4709-4af4-8059-eb0ec3596eb7",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1974,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": false
+  },
+  {
+   "artist": "Albert Ayler Quartet",
+   "album": "Ghosts",
+   "year": 1964,
+   "rgMbid": "550b5b69-52c4-3846-9c45-54d69ac585d5",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": true,
+   "poolString": "Albert Ayler | Ghosts | 1965 (seed)",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1975,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": false
+  },
+  {
+   "artist": "Mal Waldron",
+   "album": "Les Nuits de la negritude",
+   "year": 1965,
+   "rgMbid": "a9a04f6d-b125-41f9-8357-21140c1e0cac",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1977,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": false
+  },
+  {
+   "artist": "Cecil Taylor Jazz Unit",
+   "album": "Nefertiti, The Beautiful One Has Come",
+   "year": 1966,
+   "rgMbid": "56f6da98-8403-4750-9309-253c1ace2f9c",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1975,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": false
+  },
+  {
+   "artist": "Freddie Hubbard",
+   "album": "Minor Mishap",
+   "year": 1966,
+   "rgMbid": "6c590be0-be53-3661-bc2e-075882523096",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1975,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": false
+  },
+  {
+   "artist": "Kalapana",
+   "album": "Kalapana",
+   "year": 1975,
+   "rgMbid": "6d7f38c0-b920-4281-9d7d-a762adbb6859",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1977,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": false
+  },
+  {
+   "artist": "Muhal Richard Abrams",
+   "album": "Afrisong",
+   "year": 1975,
+   "rgMbid": "a296d236-41f8-4e11-97f4-91d48cace362",
+   "country": "GB",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "2005 後英美 CD：Whynot／Trio 目錄英美再發或英國 Trio Records 誤掛，非日本原盤；海外原盤日本壓片",
+   "labelYear": 2009,
+   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
+   "domestic": false
+  },
+  {
+   "artist": "Jon Faddis, Billy Harper",
+   "album": "Jon & Billy",
+   "year": 1987,
+   "rgMbid": "62320bc0-39dc-46a4-8d7d-06e9e8549e0b",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 2021,
+   "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
+   "domestic": false
+  },
+  {
+   "artist": "George Cables",
+   "album": "Why Not?",
+   "year": 2009,
+   "rgMbid": "2b2d8d68-cf25-4e67-bee8-3251985c8cf0",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "2005 後英美 CD：Whynot／Trio 目錄英美再發或英國 Trio Records 誤掛，非日本原盤",
+   "labelYear": 2009,
+   "entity": "6580de3e-23d7-42bd-8a42-d6b4d2db3302",
+   "domestic": false
+  },
+  {
+   "artist": "Chico Freeman",
+   "album": "Lord Riff and Me",
+   "year": 2010,
+   "rgMbid": "e551ca9e-a2e0-453d-a6ce-c4f10f3ea7aa",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "2005 後英美 CD：Whynot／Trio 目錄英美再發或英國 Trio Records 誤掛，非日本原盤",
+   "labelYear": 2010,
+   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
+   "domestic": false
+  },
+  {
+   "artist": "Kenny Barron",
+   "album": "Live",
+   "year": 2010,
+   "rgMbid": "4cf9afc8-831b-47c7-999e-be30e7ac37fa",
+   "country": "US",
+   "format": "CD",
+   "live": true,
+   "inPool": false,
+   "poolString": "",
+   "note": "2005 後英美 CD：Whynot／Trio 目錄英美再發或英國 Trio Records 誤掛，非日本原盤；Live；疑 MB 重複 RG（同名另筆 61a9a757）",
+   "labelYear": 2010,
+   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
+   "domestic": false
+  },
+  {
+   "artist": "Sonny Fortune",
+   "album": "Invitation",
+   "year": 2010,
+   "rgMbid": "00555be4-35e7-4992-96d2-513ab89f5bfb",
+   "country": "GB",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "2005 後英美 CD：Whynot／Trio 目錄英美再發或英國 Trio Records 誤掛，非日本原盤；海外原盤日本壓片（初版 2010 GB）",
+   "labelYear": 2010,
+   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
+   "domestic": false
+  },
+  {
+   "artist": "Walt Dickerson",
+   "album": "Walt Dickerson 1976",
+   "year": 2010,
+   "rgMbid": "f0d87d1a-fc53-4068-a3f9-d960903a38ea",
+   "country": "GB",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "2005 後英美 CD：Whynot／Trio 目錄英美再發或英國 Trio Records 誤掛，非日本原盤",
+   "labelYear": 2010,
+   "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
+   "domestic": false
   }
  ],
  "pendingGenre": [
@@ -1873,10 +1758,9 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "待人工判曲風",
+   "note": "待人工判曲風；MB 只有串流版",
    "labelYear": null,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "",
    "domestic": true
   },
   {
@@ -1892,7 +1776,6 @@
    "note": "待人工判曲風",
    "labelYear": 1972,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "",
    "domestic": true
   },
   {
@@ -1908,7 +1791,6 @@
    "note": "待人工判曲風",
    "labelYear": 1973,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "",
    "domestic": true
   },
   {
@@ -1924,7 +1806,6 @@
    "note": "待人工判曲風",
    "labelYear": 1974,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "",
    "domestic": true
   },
   {
@@ -1940,7 +1821,6 @@
    "note": "待人工判曲風",
    "labelYear": 1979,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "",
    "domestic": true
   },
   {
@@ -1956,7 +1836,6 @@
    "note": "待人工判曲風",
    "labelYear": 1987,
    "entity": "1953718e-ca2a-4345-9c18-ef79689a8177",
-   "why": "",
    "domestic": true
   },
   {
@@ -1972,7 +1851,6 @@
    "note": "待人工判曲風",
    "labelYear": 1999,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "",
    "domestic": true
   },
   {
@@ -1988,7 +1866,6 @@
    "note": "待人工判曲風",
    "labelYear": 1999,
    "entity": "3751e54b-ef44-4f53-8167-e5d6aea1d908",
-   "why": "",
    "domestic": true
   }
  ],

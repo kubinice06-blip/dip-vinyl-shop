@@ -68,7 +68,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "Toshiba Records"
    ],
@@ -130,24 +130,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "EXPO ’70: MULTIPLEX SOUNDS FOR “GLOBAL VISION” TOSHIBA‐IHI PAVILION",
-   "year": 1970,
-   "rgMbid": "2fc36552-e30c-453d-a5fa-77fdbd170db5",
-   "country": "JP",
-   "format": "7\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Băng Nhạc Shotguns 7 (Yêu)",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.13)",
-   "why": "rg-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "ジミー竹内",
    "album": "INSPIRE! –大自然への挑戦–",
    "year": 1970,
@@ -174,31 +156,13 @@
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
-   "poolString": "Chick Corea|Piano Improvisations, Volume 1",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.14)",
+   "poolString": "",
+   "note": "藝人池中有9張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "EXPRESS"
    ],
    "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Jimmy Takeuchi",
-   "album": "Drum Drum Drum/Pops Best 24 Vol.2",
-   "year": 1971,
-   "rgMbid": "1a36db2e-083e-4d32-b457-9b2ff0391042",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
    "nrel": 1
   },
   {
@@ -228,8 +192,8 @@
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
-   "poolString": "佐藤允彦とサウンド・ブレイカーズ|Amalgamation",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.19)",
+   "poolString": "",
+   "note": "藝人池中有3張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "EXPRESS"
@@ -338,7 +302,7 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
+   "why": "pool-jazz-artist",
    "entities": [
     "EXPRESS"
    ],
@@ -410,7 +374,7 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
+   "why": "pool-jazz-artist",
    "entities": [
     "EXPRESS"
    ],
@@ -436,24 +400,6 @@
    "nrel": 1
   },
   {
-   "artist": "Jun Fukamachi 21st Century Band",
-   "album": "Rokuyu (六喩)",
-   "year": 1975,
-   "rgMbid": "a649f350-545b-4005-aeb1-6452ecd07823",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Mari Nakamoto",
    "album": "Just in Time",
    "year": 1975,
@@ -472,25 +418,6 @@
    "nrel": 1
   },
   {
-   "artist": "ダウン・タウン・ブギウギ・バンド",
-   "album": "続・脱どん底",
-   "year": 1975,
-   "rgMbid": "7bde741e-124f-4894-a916-35ff5c8200fe",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "Toshiba Records",
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "\"Ponta\" Murakami",
    "album": "Introducing \"Ponta\" Murakami",
    "year": 1976,
@@ -504,24 +431,6 @@
    "why": "artist-tag",
    "entities": [
     "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "Amii",
-   "album": "Shady",
-   "year": 1976,
-   "rgMbid": "d28347b1-9d26-4426-a5f1-07db39536bae",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 2
@@ -563,24 +472,6 @@
    "nrel": 1
   },
   {
-   "artist": "Lily",
-   "album": "Auroila",
-   "year": 1976,
-   "rgMbid": "c9ac6aa2-311a-42be-82c1-288e3a60dbea",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "浅川マキ",
    "album": "灯ともし頃",
    "year": 1976,
@@ -591,7 +482,7 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
+   "why": "pool-jazz-artist",
    "entities": [
     "EXPRESS"
    ],
@@ -636,42 +527,6 @@
    "nrel": 2
   },
   {
-   "artist": "Hi‐Fi Set",
-   "album": "LOVE COLLECTION",
-   "year": 1977,
-   "rgMbid": "ace4bf87-52e0-4993-b873-04b6a4f43363",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Hi‐Fi Set",
-   "album": "The Diary",
-   "year": 1977,
-   "rgMbid": "96788fd5-d981-4dce-9f5d-a0fdf8c7d42b",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Jun Fukamachi",
    "album": "Sgt. Pepper's Lonely Hearts Club Band",
    "year": 1977,
@@ -682,31 +537,13 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "Toshiba Records",
     "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 2
-  },
-  {
-   "artist": "りりィ",
-   "album": "りりシズム",
-   "year": 1977,
-   "rgMbid": "03af2495-656d-4a08-aba5-72888a62f24d",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
   },
   {
    "artist": "浅川マキ",
@@ -719,7 +556,7 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
+   "why": "pool-jazz-artist",
    "entities": [
     "EXPRESS"
    ],
@@ -817,24 +654,6 @@
    "nrel": 1
   },
   {
-   "artist": "Hi‐Fi Set",
-   "album": "SWING",
-   "year": 1978,
-   "rgMbid": "05691e39-5919-4b8f-b0aa-6e488dd6c340",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Kiyoshi Sugimoto",
    "album": "L.A. Master",
    "year": 1978,
@@ -905,42 +724,6 @@
    ],
    "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "タモリ",
-   "album": "タモリ2",
-   "year": 1978,
-   "rgMbid": "9c70dab3-7751-4954-acb1-f89111838376",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "松任谷由実",
-   "album": "紅雀",
-   "year": 1978,
-   "rgMbid": "66a09722-873f-4447-a40a-f978ab09e24b",
-   "country": "JP",
-   "format": "CD/Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "松任谷由実|流線形'80",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.27)",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
   },
   {
    "artist": "浅川マキ",
@@ -1303,24 +1086,6 @@
    "nrel": 1
   },
   {
-   "artist": "井上鑑",
-   "album": "PROPHETIC DREAM 預言者の夢",
-   "year": 1982,
-   "rgMbid": "41cc7dc4-e433-4f92-8618-b8dce80a1561",
-   "country": "JP",
-   "format": "12\" Vinyl/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "山本達彦",
    "album": "Tatsuhiko Live",
    "year": 1982,
@@ -1331,7 +1096,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -1421,27 +1186,9 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Hi‐Fi Set",
-   "album": "I miss you",
-   "year": 1983,
-   "rgMbid": "e9cb8059-9f62-40a6-9528-524b12f1924e",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -1463,24 +1210,6 @@
    ],
    "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "NORIKI",
-   "album": "NORIKI",
-   "year": 1983,
-   "rgMbid": "62b1cf5f-8bd4-4409-977f-ef9984fee6fa",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "Rosemary Clooney with Les Brown & His Band of Renown",
@@ -1509,8 +1238,8 @@
    "format": "CD",
    "live": false,
    "inPool": false,
-   "poolString": "The Jazztet|Moment to Moment",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.17)",
+   "poolString": "",
+   "note": "藝人池中有1張(盤名未比中)",
    "why": "artist-tag",
    "entities": [
     "EASTWORLD"
@@ -1555,24 +1284,6 @@
    "nrel": 1
   },
   {
-   "artist": "井上鑑",
-   "album": "SPLASH",
-   "year": 1983,
-   "rgMbid": "f04ad462-d688-4091-8cde-932e63147d91",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
    "artist": "山本達彦",
    "album": "Martini Hour",
    "year": 1983,
@@ -1583,7 +1294,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -1691,7 +1402,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -1781,25 +1492,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "村田有美",
-   "album": "Uterus Uterus",
-   "year": 1985,
-   "rgMbid": "4719b219-abd4-4537-9546-872134da1aab",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -1871,7 +1564,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -1979,7 +1672,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -2041,24 +1734,6 @@
    "nrel": 1
   },
   {
-   "artist": "風見律子",
-   "album": "Nouvelles",
-   "year": 1987,
-   "rgMbid": "34733a4e-5679-4452-ab5e-e7ecd8816d62",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
    "artist": "Masayoshi Takanaka",
    "album": "HOT PEPPER",
    "year": 1988,
@@ -2077,24 +1752,6 @@
    "nrel": 2
   },
   {
-   "artist": "和田加奈子",
-   "album": "VOCU",
-   "year": 1988,
-   "rgMbid": "4665b3a1-84a7-48ec-a213-c9659f232684",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "山本達彦",
    "album": "Heart Notes",
    "year": 1988,
@@ -2105,7 +1762,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -2257,24 +1914,6 @@
    "nrel": 1
   },
   {
-   "artist": "ORIGINAL LOVE",
-   "album": "LOVE! LOVE! & LOVE!",
-   "year": 1991,
-   "rgMbid": "1b2b0865-6e78-44e2-8d0e-8c2a1a74ad0e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
    "artist": "Takeshi Inomata",
    "album": "If I Were a Bell",
    "year": 1991,
@@ -2286,24 +1925,6 @@
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
    "why": "rg-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "魔狼王風雲伝",
-   "year": 1991,
-   "rgMbid": "cf3d21d7-81cc-4122-9b5f-331fbf31b13d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Music of Indonesia, Vol. 2: Indonesian Popular Music: Kroncong, Dangdut, and Langgam Jawa",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.19)",
-   "why": "pool-jazz-artist",
    "entities": [
     "Toshiba Records"
    ],
@@ -2347,24 +1968,6 @@
    "nrel": 1
   },
   {
-   "artist": "ORIGINAL LOVE",
-   "album": "SOUL LIBERATION「結晶」",
-   "year": 1992,
-   "rgMbid": "27fb1d0d-6382-4024-bc5a-0ed9079d92bf",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "ORIGINAL LOVE|結晶 SOUL LIBERATION",
-   "note": "translit~0.88",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 4
-  },
-  {
    "artist": "Roberta Flack",
    "album": "Stop the World",
    "year": 1992,
@@ -2394,24 +1997,6 @@
    "poolString": "",
    "note": "藝人池中有6張(盤名未比中)",
    "why": "artist-search-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "忌野清志郎 feat. Booker T. & the MG’s",
-   "album": "HAVE MERCY",
-   "year": 1992,
-   "rgMbid": "4f3a3596-29fb-36e4-a3f7-aea77345ff19",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有9張(盤名未比中)",
-   "why": "pool-jazz-artist",
    "entities": [
     "EASTWORLD"
    ],
@@ -2455,24 +2040,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "魔狼王風雲伝II",
-   "year": 1993,
-   "rgMbid": "139475f6-7591-48a8-a697-ebea6a4fab2f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Sounds of the South",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.30)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "M. Takanaka",
    "album": "WOODCHOPPER'S BALL",
    "year": 1994,
@@ -2509,42 +2076,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "Lover’s Hawaiʻi",
-   "year": 1995,
-   "rgMbid": "120d4894-6749-4126-93be-a5a1c6d7aa17",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|1995 台灣地下音樂檔案 III 呼吸荳荳紀念專輯",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.12)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "スチャダラパー",
-   "album": "5th WHEEL 2 the COACH",
-   "year": 1995,
-   "rgMbid": "93a34b5f-47bf-491e-8a94-8b8c99cd7a6f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "スチャダラパー|5th Wheel 2 the Coach",
-   "note": "",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "大貫妙子",
    "album": "Tchou",
    "year": 1995,
@@ -2558,24 +2089,6 @@
    "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "松任谷由実",
-   "album": "KATHMANDU",
-   "year": 1995,
-   "rgMbid": "2f09c16b-7702-4a65-9c41-7deff67247ec",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -2617,60 +2130,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "Strawberry Fields",
-   "year": 1996,
-   "rgMbid": "e2a411a4-74ef-3542-8b71-d37ddea2e339",
-   "country": "XE",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Platinum Breakz",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.20)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "Somethin' Else Records(JP)"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "スチャダラパー",
-   "album": "偶然のアルバム",
-   "year": 1996,
-   "rgMbid": "46892c0f-11e2-48f7-8b18-0b77beccc1e1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "具島直子",
-   "album": "miss.G",
-   "year": 1996,
-   "rgMbid": "f29f3a6c-2e62-4010-853d-f871fda5ff6e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "浅川マキ",
    "album": "こんな風に過ぎて行くのなら",
    "year": 1996,
@@ -2702,24 +2161,6 @@
    "why": "rg-tag",
    "entities": [
     "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "具島直子",
-   "album": "Quiet Emotion",
-   "year": 1997,
-   "rgMbid": "cc3f80bb-f8bd-45ae-b6cd-a12f3345b278",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -2768,45 +2209,9 @@
    "country": "JP",
    "format": "CD",
    "live": false,
-   "inPool": true,
+   "inPool": false,
    "poolString": "高中正義|虹伝説 The Rainbow Goblins",
-   "note": "translit~0.79",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "coba",
-   "album": "Conscious Nega (Subconscious)",
-   "year": 1998,
-   "rgMbid": "2c13542d-f1d1-4ada-96b1-6cbdbd28944b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "coba",
-   "album": "Conscious Posi",
-   "year": 1998,
-   "rgMbid": "4704987a-095d-47ff-bb5b-1335687d8dd6",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
+   "note": "疑似池中(盤名相似度0.79)",
    "why": "rg-tag",
    "entities": [
     "EASTWORLD"
@@ -2869,24 +2274,6 @@
    "nrel": 1
   },
   {
-   "artist": "一路真輝",
-   "album": "ア・ドリーム・オブ・アリア",
-   "year": 1999,
-   "rgMbid": "5281e291-1862-4c44-9bb9-efd1818b726d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "椎名林檎",
    "album": "無罪モラトリアム",
    "year": 1999,
@@ -2897,7 +2284,7 @@
    "inPool": true,
    "poolString": "椎名林檎|無罪モラトリアム",
    "note": "",
-   "why": "rg-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
@@ -2915,29 +2302,11 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有1張(盤名未比中)",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EASTWORLD"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "陈敏",
-   "album": "I Wish",
-   "year": 2001,
-   "rgMbid": "6e938f6f-6092-4d9d-a1d3-94a6d7754491",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -2959,24 +2328,6 @@
    "nrel": 1
   },
   {
-   "artist": "陈敏",
-   "album": "My Story-我的故事-",
-   "year": 2002,
-   "rgMbid": "16d1869c-e6bd-440d-aea6-5c1c54afdbd6",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
    "artist": "coba",
    "album": "運命のレシピ",
    "year": 2003,
@@ -2992,60 +2343,6 @@
     "EASTWORLD"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "陈敏",
-   "album": "i love",
-   "year": 2003,
-   "rgMbid": "160a4bbd-6fd6-4f45-a4b2-5e4c4bd54ada",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "歌謡アルバム 歌う明星<赤>",
-   "year": 2004,
-   "rgMbid": "838e2859-a16d-4f52-a698-c818c4dd009f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Cambodian Cassette Archives: Khmer Folk and Pop Music, Volume 1",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.17)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Chen Min",
-   "album": "恋衣 Koigoromo",
-   "year": 2005,
-   "rgMbid": "53719f5d-a57e-4ba6-ae95-be7cd835abb1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -3067,42 +2364,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "GAL盤 -卒業篇-",
-   "year": 2005,
-   "rgMbid": "463ac247-3d06-3cd7-b253-af24389e91dc",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Molam: Thai Country Groove From Isan",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.12)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Latin De Nippon: Japanese Latin Beat '60s To '90s",
-   "year": 2005,
-   "rgMbid": "09f6dd6c-c278-4cc0-b621-a5d264df712d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|Molam: Thai Country Groove From Isan",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.26)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "クレイジーキャッツ",
    "album": "クレイジー・ムービーズ Vol.2",
    "year": 2005,
@@ -3113,7 +2374,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "Toshiba Records"
    ],
@@ -3131,7 +2392,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "Toshiba Records"
    ],
@@ -3157,60 +2418,6 @@
    "nrel": 1
   },
   {
-   "artist": "陈敏",
-   "album": "MOON",
-   "year": 2005,
-   "rgMbid": "ddf9861f-4fb8-4ccf-b023-588e1990543b",
-   "country": "JP",
-   "format": "Enhanced CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "The Little Willies",
-   "album": "The Little Willies",
-   "year": 2006,
-   "rgMbid": "8eabcd60-89bc-38cc-a61f-c722619336e8",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
-   "entities": [
-    "TOSHIBA EMI"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "ROCK is LOFT～SHINJUKU LOFT 30th ANNIVERSARY～Green Disc「80's ジャパニーズ・ロックの隆盛 / 耽美派ロックの奇跡」",
-   "year": 2006,
-   "rgMbid": "87a68ddf-3692-44a7-93e2-e5146ca386be",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "上妻宏光",
    "album": "蒼風",
    "year": 2007,
@@ -3229,24 +2436,6 @@
    "nrel": 1
   },
   {
-   "artist": "陈敏",
-   "album": "Wings",
-   "year": 2007,
-   "rgMbid": "6455b9c1-0a1b-46f0-979a-53608cd01a3c",
-   "country": "JP",
-   "format": "CD/DVD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "artist-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
    "artist": "クレイジーキャッツ",
    "album": "クレイジー大作戦",
    "year": 2008,
@@ -3257,7 +2446,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EXPRESS"
    ],
@@ -3275,7 +2464,7 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "artist-tag",
+   "why": "artist-search-tag",
    "entities": [
     "EXPRESS"
    ],
@@ -3319,24 +2508,6 @@
    "nrel": 1
   },
   {
-   "artist": "Various Artists",
-   "album": "i 〜ずっと、ずっと、愛してる〜",
-   "year": 2009,
-   "rgMbid": "2dabc61d-956b-4fa1-88d6-ef9232499108",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "Various Artists|5: Five Years of Hyperdub",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.29)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "May Inoue",
    "album": "First Train",
    "year": 2011,
@@ -3353,24 +2524,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "Pink Martini & Saori Yuki",
-   "album": "1969",
-   "year": 2011,
-   "rgMbid": "6fea97fd-e670-442a-9c1c-93da3b1af559",
-   "country": "JP/XE",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "rg-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "寺井尚子",
@@ -3399,8 +2552,8 @@
    "format": "CD",
    "live": true,
    "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
+   "poolString": "浅川マキ|浅川マキの世界",
+   "note": "疑似池中(盤名相似度0.68)",
    "why": "rg-tag",
    "entities": [
     "EXPRESS"
@@ -3420,42 +2573,6 @@
    "poolString": "",
    "note": "藝人池中有2張(盤名未比中)",
    "why": "artist-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Various Artists",
-   "album": "津軽民謡大決定盤 第一集",
-   "year": null,
-   "rgMbid": "fedd8011-6ccf-4250-9024-8c48635c619b",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有122張(盤名未比中)",
-   "why": "pool-jazz-artist",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "柏木玲子",
-   "album": "Dream Of Dream",
-   "year": null,
-   "rgMbid": "6dde01e3-4490-4a19-b8c4-90feb9f329d5",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "rg-tag",
    "entities": [
     "Toshiba Records"
    ],
@@ -3538,17 +2655,17 @@
    "nrel": 1
   },
   {
-   "artist": "ゴールデン・ハーフ",
-   "album": "ゴールデンハーフでーす",
+   "artist": "Jimmy Takeuchi",
+   "album": "Drum Drum Drum/Pops Best 24 Vol.2",
    "year": 1971,
-   "rgMbid": "168dfa9c-0174-4863-86ba-e357cc9406f3",
+   "rgMbid": "1a36db2e-083e-4d32-b457-9b2ff0391042",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "Toshiba Records"
    ],
@@ -3592,42 +2709,6 @@
    "nrel": 2
   },
   {
-   "artist": "アリス",
-   "album": "ALICE I",
-   "year": 1972,
-   "rgMbid": "e12d8574-2e53-4328-a925-9f125b2fbf81",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": true,
-   "poolString": "Alice in Chains|Alice in Chains",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "君のために生れかわろう",
-   "year": 1972,
-   "rgMbid": "7aaba48f-aaf2-4697-a180-667bff5f1321",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
    "artist": "Didier Marouani",
    "album": "Didier",
    "year": 1973,
@@ -3644,150 +2725,6 @@
    ],
    "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "アリス",
-   "album": "ALICE III",
-   "year": 1973,
-   "rgMbid": "92a4f4e7-f3f0-40ff-97a2-e75cfa806f8a",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": true,
-   "poolString": "アリス|ALICE VII",
-   "note": "translit~0.88",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "アリス",
-   "album": "ALICE II",
-   "year": 1973,
-   "rgMbid": "316d5056-51e2-4984-8ce6-5c7cbab980c8",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": true,
-   "poolString": "アリス|ALICE VII",
-   "note": "translit~0.93",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "オフ・コース",
-   "album": "僕の贈りもの",
-   "year": 1973,
-   "rgMbid": "5dd1fb43-af4f-4936-819a-e468946bbf11",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 6
-  },
-  {
-   "artist": "Graciela Susana",
-   "album": "Ruidos",
-   "year": 1974,
-   "rgMbid": "96918b23-37ca-4b6b-a49f-f98b8b08545b",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "オフ・コース",
-   "album": "秋ゆく街で ⁄ オフ・コース・ライヴ・イン・コンサート",
-   "year": 1974,
-   "rgMbid": "3a1c6584-9685-435c-9cdc-8dc0141d6f9f",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/Cassette/SHM-CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 6
-  },
-  {
-   "artist": "オフ・コース",
-   "album": "この道をゆけば",
-   "year": 1974,
-   "rgMbid": "fdb76bd6-0c7e-4f26-bfc6-7c2f7514bdd1",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
-  },
-  {
-   "artist": "チューリップ",
-   "album": "ぼくがつくった愛のうた",
-   "year": 1974,
-   "rgMbid": "cafb2d30-ad68-47d1-a47c-952827066de1",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "チューリップ|TAKE OFF（離陸）",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.20)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "伊藤咲子",
-   "album": "ひまわり娘",
-   "year": 1974,
-   "rgMbid": "3d69d988-eccd-4e1e-9b1d-e1910e22a689",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "小林麻美",
@@ -3808,17 +2745,17 @@
    "nrel": 1
   },
   {
-   "artist": "紙ふうせん",
-   "album": "またふたりになったね",
-   "year": 1974,
-   "rgMbid": "f0e8832e-d5db-4243-a694-9b171184e57e",
+   "artist": "Jun Fukamachi 21st Century Band",
+   "album": "Rokuyu (六喩)",
+   "year": 1975,
+   "rgMbid": "a649f350-545b-4005-aeb1-6452ecd07823",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
@@ -3826,71 +2763,54 @@
    "nrel": 1
   },
   {
-   "artist": "アリス",
-   "album": "ALICE IV",
+   "artist": "ダウン・タウン・ブギウギ・バンド",
+   "album": "続・脱どん底",
    "year": 1975,
-   "rgMbid": "252141e6-a283-4940-9164-da4da02b5792",
+   "rgMbid": "7bde741e-124f-4894-a916-35ff5c8200fe",
    "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": true,
-   "poolString": "アリス|ALICE VII",
-   "note": "translit~0.80",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "オフ・コース",
-   "album": "ワインの匂い",
-   "year": 1975,
-   "rgMbid": "adf2bb81-36a0-4e7d-bb91-161966be0a27",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
+   "format": "12\" Vinyl/CD",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
+   "note": "",
+   "why": "rg-tag-mixed",
    "entities": [
+    "Toshiba Records",
     "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
-  },
-  {
-   "artist": "沢田研二",
-   "album": "いくつかの場面",
-   "year": 1975,
-   "rgMbid": "ea60cd3f-1377-46f4-aa42-fa28ec3f46a6",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
    ],
    "foreignArtist": false,
    "nrel": 2
   },
   {
-   "artist": "アリス",
-   "album": "ALICE V",
+   "artist": "Amii",
+   "album": "Shady",
    "year": 1976,
-   "rgMbid": "696d25bc-c5ab-44ee-b48c-5d10a99d67bb",
+   "rgMbid": "d28347b1-9d26-4426-a5f1-07db39536bae",
+   "country": "JP",
+   "format": "12\" Vinyl/CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EXPRESS"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
+   "artist": "Lily",
+   "album": "Auroila",
+   "year": 1976,
+   "rgMbid": "c9ac6aa2-311a-42be-82c1-288e3a60dbea",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
-   "inPool": true,
-   "poolString": "アリス|ALICE VII",
+   "inPool": false,
+   "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
@@ -3898,40 +2818,58 @@
    "nrel": 1
   },
   {
-   "artist": "オフ・コース",
-   "album": "SONG IS LOVE",
-   "year": 1976,
-   "rgMbid": "ca410aea-f252-44ff-84f6-111b99e77c2e",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
-  },
-  {
-   "artist": "紙ふうせん",
-   "album": "愛と自由を",
-   "year": 1976,
-   "rgMbid": "ac5c491d-fae2-4910-8395-bdac0061ba3a",
+   "artist": "Hi‐Fi Set",
+   "album": "LOVE COLLECTION",
+   "year": 1977,
+   "rgMbid": "ace4bf87-52e0-4993-b873-04b6a4f43363",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 1
+  },
+  {
+   "artist": "Hi‐Fi Set",
+   "album": "The Diary",
+   "year": 1977,
+   "rgMbid": "96788fd5-d981-4dce-9f5d-a0fdf8c7d42b",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EXPRESS"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "りりィ",
+   "album": "りりシズム",
+   "year": 1977,
+   "rgMbid": "03af2495-656d-4a08-aba5-72888a62f24d",
+   "country": "JP",
+   "format": "12\" Vinyl/CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EXPRESS"
+   ],
+   "foreignArtist": false,
+   "nrel": 3
   },
   {
    "artist": "アンリ＆モゼース",
@@ -3988,35 +2926,17 @@
    "nrel": 4
   },
   {
-   "artist": "タモリ",
-   "album": "タモリ",
-   "year": 1977,
-   "rgMbid": "374946c6-d69d-4334-b2e0-dbf6df547954",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有4張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "CREATION",
-   "album": "Super Rock in the Highest Voltage",
+   "artist": "Hi‐Fi Set",
+   "album": "SWING",
    "year": 1978,
-   "rgMbid": "3c768420-e0f5-412a-8097-708aa220a54f",
+   "rgMbid": "05691e39-5919-4b8f-b0aa-6e488dd6c340",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
+   "note": "",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
@@ -4042,40 +2962,22 @@
    "nrel": 1
   },
   {
-   "artist": "アリス",
-   "album": "ALICE VI",
+   "artist": "タモリ",
+   "album": "タモリ2",
    "year": 1978,
-   "rgMbid": "33768cb9-a85a-4515-ae2d-11dbd58fc417",
+   "rgMbid": "9c70dab3-7751-4954-acb1-f89111838376",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
-   "inPool": true,
-   "poolString": "アリス|ALICE VII",
-   "note": "",
-   "why": "no-tag",
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有4張(盤名未比中)",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "オフコース",
-   "album": "FAIRWAY",
-   "year": 1978,
-   "rgMbid": "3d5dbb82-2fda-43da-bce4-eaef9e91057c",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
   },
   {
    "artist": "奥平真吾",
@@ -4096,22 +2998,22 @@
    "nrel": 1
   },
   {
-   "artist": "CREATION",
-   "album": "This is CREATION Studio Live in DIRECT TO DISC Recording",
-   "year": 1979,
-   "rgMbid": "d2a7d3d7-37de-4e55-b061-7bd96a7162a5",
+   "artist": "松任谷由実",
+   "album": "紅雀",
+   "year": 1978,
+   "rgMbid": "66a09722-873f-4447-a40a-f978ab09e24b",
    "country": "JP",
-   "format": "12\" Vinyl",
-   "live": true,
+   "format": "CD/Vinyl",
+   "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
+   "note": "藝人池中有3張(盤名未比中)",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
    "foreignArtist": false,
-   "nrel": 1
+   "nrel": 3
   },
   {
    "artist": "Frank W. Becker / Michiko Akao",
@@ -4130,42 +3032,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "アリス",
-   "album": "ALICE VII",
-   "year": 1979,
-   "rgMbid": "3ef783e7-2d24-47ae-a1e9-041797fac1e4",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": true,
-   "poolString": "アリス|ALICE VII",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "オフコース",
-   "album": "Three and Two",
-   "year": 1979,
-   "rgMbid": "e892c7cb-cd25-487b-98ef-1c999df3d591",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "オフコース|Three and Two",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 6
   },
   {
    "artist": "大友裕子",
@@ -4204,42 +3070,6 @@
    "nrel": 1
   },
   {
-   "artist": "オフコース",
-   "album": "We are",
-   "year": 1980,
-   "rgMbid": "376520d5-02ee-4230-b041-5165f3125e22",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "オフコース|We are",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
-  },
-  {
-   "artist": "オフコース",
-   "album": "LIVE",
-   "year": 1980,
-   "rgMbid": "5926138b-6384-40f2-a70e-d9918658dfb0",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "オフコース|We are",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.22)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
-  },
-  {
    "artist": "項斯華",
    "album": "Master of Chinese Traditional Music",
    "year": 1980,
@@ -4256,42 +3086,6 @@
    ],
    "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "Mikami Kan",
-   "album": "Baby",
-   "year": 1981,
-   "rgMbid": "7f066171-a967-4083-a135-68d72a9eb81b",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "オフコース",
-   "album": "over",
-   "year": 1981,
-   "rgMbid": "e7952a95-4b25-39a5-96ff-e1e151025ca9",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "オフコース|over",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
   },
   {
    "artist": "高岡美智子",
@@ -4313,58 +3107,22 @@
    "nrel": 2
   },
   {
-   "artist": "Kohichi Makigami",
-   "album": "民族の祭典",
+   "artist": "井上鑑",
+   "album": "PROPHETIC DREAM 預言者の夢",
    "year": 1982,
-   "rgMbid": "e5f250ff-ab3f-434f-8649-2c89b7e89b59",
+   "rgMbid": "41cc7dc4-e433-4f92-8618-b8dce80a1561",
    "country": "JP",
-   "format": "12\" Vinyl",
+   "format": "12\" Vinyl/SHM-CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "つちやかおり",
-   "album": "哀愁のオリエント急行",
-   "year": 1982,
-   "rgMbid": "e088d25c-4f69-42e7-a59c-bc3fa0ce4345",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 2
-  },
-  {
-   "artist": "オフコース",
-   "album": "I LOVE YOU",
-   "year": 1982,
-   "rgMbid": "9ed13423-bf77-40d1-af13-4d3f19d0ac19",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
   },
   {
    "artist": "川島なお美",
@@ -4385,58 +3143,58 @@
    "nrel": 2
   },
   {
-   "artist": "つちやかおり",
-   "album": "FRAGRANCE",
+   "artist": "Hi‐Fi Set",
+   "album": "I miss you",
    "year": 1983,
-   "rgMbid": "dca9f4a2-2ee2-4196-8a38-b29865fc1654",
+   "rgMbid": "e9cb8059-9f62-40a6-9528-524b12f1924e",
    "country": "JP",
-   "format": "12\" Vinyl/Cassette",
+   "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "NORIKI",
+   "album": "NORIKI",
+   "year": 1983,
+   "rgMbid": "62b1cf5f-8bd4-4409-977f-ef9984fee6fa",
+   "country": "JP",
+   "format": "12\" Vinyl/CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EASTWORLD"
    ],
    "foreignArtist": false,
    "nrel": 2
   },
   {
-   "artist": "つちやかおり",
-   "album": "かおり白書",
+   "artist": "井上鑑",
+   "album": "SPLASH",
    "year": 1983,
-   "rgMbid": "5ce4ceea-2743-4070-aad9-ab3e66413028",
+   "rgMbid": "f04ad462-d688-4091-8cde-932e63147d91",
    "country": "JP",
-   "format": "12\" Vinyl",
+   "format": "12\" Vinyl/CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EXPRESS"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "Halo",
-   "year": 1983,
-   "rgMbid": "7a562bc8-19d7-43d1-a36f-9e8985ca6ce5",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
+   "nrel": 3
   },
   {
    "artist": "川島なお美",
@@ -4512,24 +3270,6 @@
    "nrel": 2
   },
   {
-   "artist": "BOØWY",
-   "album": "BOØWY",
-   "year": 1985,
-   "rgMbid": "9818fe95-75ff-38b5-852a-5bce72824c44",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "BOØWY|BOØWY",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "RCサクセション",
    "album": "HEART ACE",
    "year": 1985,
@@ -4566,24 +3306,6 @@
    "nrel": 1
   },
   {
-   "artist": "つちやかおり",
-   "album": "Black & White",
-   "year": 1985,
-   "rgMbid": "965946b5-8740-4cc6-a145-34aae911057e",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "安部恭弘",
    "album": "SLIT",
    "year": 1985,
@@ -4602,71 +3324,17 @@
    "nrel": 1
   },
   {
-   "artist": "BOØWY",
-   "album": "JUST A HERO",
-   "year": 1986,
-   "rgMbid": "99bc0899-9d40-3545-955f-59aa58b062fb",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "BOØWY|BEAT EMOTION",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.30)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
-   "artist": "BOØWY",
-   "album": "“GIGS” JUST A HERO TOUR 1986",
-   "year": 1986,
-   "rgMbid": "714bce19-b2ac-3ce5-8421-fb1729cca8b2",
-   "country": "JP",
-   "format": "12\" Vinyl/Blu-spec CD/CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "BOØWY|BEAT EMOTION",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.31)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
-   "artist": "KILLER MAY",
-   "album": "Joy Stick",
-   "year": 1986,
-   "rgMbid": "c6149171-8bd8-41d7-812c-831d17ca4f3f",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 4
-  },
-  {
-   "artist": "やや",
-   "album": "花道",
-   "year": 1986,
-   "rgMbid": "7f168ed0-d6a5-4513-a9e2-c6551386dd1d",
+   "artist": "村田有美",
+   "album": "Uterus Uterus",
+   "year": 1985,
+   "rgMbid": "4719b219-abd4-4537-9546-872134da1aab",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
@@ -4710,24 +3378,6 @@
    "nrel": 1
   },
   {
-   "artist": "BOØWY",
-   "album": "PSYCHOPATH",
-   "year": 1987,
-   "rgMbid": "2a89816e-614b-39a2-8471-ec530d751da9",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "BOØWY|PSYCHOPATH",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "Bluew",
    "album": "Surfbreak",
    "year": 1987,
@@ -4735,24 +3385,6 @@
    "country": "JP",
    "format": "CD",
    "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "NOBODY",
-   "album": "NOBODY LIVE 2",
-   "year": 1987,
-   "rgMbid": "e353fbf0-2ec6-4b6b-a30f-72ba82f4c214",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
    "inPool": false,
    "poolString": "",
    "note": "",
@@ -4800,58 +3432,22 @@
    "nrel": 1
   },
   {
-   "artist": "薬師丸ひろ子",
-   "album": "星紀行",
+   "artist": "風見律子",
+   "album": "Nouvelles",
    "year": 1987,
-   "rgMbid": "d7068ceb-4eca-4cfc-8c9c-93796f270fef",
+   "rgMbid": "34733a4e-5679-4452-ab5e-e7ecd8816d62",
    "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "AKIHABARA ELECTRIC CIRCUS",
-   "album": "Super Mario Bros. 3 Akihabara Electric Circus",
-   "year": 1988,
-   "rgMbid": "c8c39aff-90b1-460e-8f22-a66c65107672",
-   "country": "JP",
-   "format": "CD",
+   "format": "12\" Vinyl/CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "BOØWY",
-   "album": "“LAST GIGS”",
-   "year": 1988,
-   "rgMbid": "f27f77bf-79d3-3d7c-9dad-e90c5a85b682",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
+   "nrel": 3
   },
   {
    "artist": "MINAKO with WILD CATS",
@@ -4882,24 +3478,6 @@
    "inPool": false,
    "poolString": "",
    "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "SHOW‐YA",
-   "album": "Turn Over",
-   "year": 1988,
-   "rgMbid": "2388fcf4-eb2f-43e6-8118-91a7016afb9c",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
    "why": "no-tag",
    "entities": [
     "EASTWORLD"
@@ -4944,6 +3522,24 @@
    "nrel": 1
   },
   {
+   "artist": "和田加奈子",
+   "album": "VOCU",
+   "year": 1988,
+   "rgMbid": "4665b3a1-84a7-48ec-a213-c9659f232684",
+   "country": "JP",
+   "format": "12\" Vinyl/CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EASTWORLD"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
    "artist": "安部恭弘",
    "album": "SUMMERTIME IN BLUE -さよならの共犯者",
    "year": 1988,
@@ -4978,78 +3574,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "沢田研二",
-   "album": "TRUE BLUE",
-   "year": 1988,
-   "rgMbid": "22dfe62f-0db7-4235-ab84-2f1b31a049ec",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "相川恵里",
-   "album": "黄色い麒麟",
-   "year": 1988,
-   "rgMbid": "bca9e3e7-5690-4ec7-adec-2ddd1e8aa1fc",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
-   "artist": "AKIHABARA ELECTRIC CIRCUS",
-   "album": "air=con",
-   "year": 1989,
-   "rgMbid": "38d53c9f-e9fd-4c69-b839-6136a1a1413c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "KILLER MAY",
-   "album": "SANGRE",
-   "year": 1989,
-   "rgMbid": "6bdddc58-248d-4ca8-b8f2-25359d9a69d9",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 4
   },
   {
    "artist": "MINAKO with WILD CATS",
@@ -5111,78 +3635,6 @@
    "album": "SOUVENIR",
    "year": 1989,
    "rgMbid": "09764543-fbd5-4dbd-b5d8-226b9d89128c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "相川恵里",
-   "album": "O・T・O・N・A",
-   "year": 1989,
-   "rgMbid": "6f38927d-4587-4186-97ae-266a11009f02",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "薬師丸ひろ子",
-   "album": "LOVER’S CONCERTO",
-   "year": 1989,
-   "rgMbid": "616a6013-3c0e-4cee-a620-892db0c1541b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "高田みどり / 田村洋 / 小熊達弥",
-   "album": "百億年の交響詩",
-   "year": 1989,
-   "rgMbid": "e6735b6b-5c5e-4741-b867-2ea85b619222",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Darlin’",
-   "album": "d′",
-   "year": 1990,
-   "rgMbid": "d06f0059-1957-4248-8acd-e1a4410a5864",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -5305,24 +3757,6 @@
    "nrel": 1
   },
   {
-   "artist": "Darlin’",
-   "album": "LOVE EDUCATION",
-   "year": 1991,
-   "rgMbid": "58938362-e38c-4aaf-9797-aa762a58ed29",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "MULTI MAX",
    "album": "Still",
    "year": 1991,
@@ -5341,76 +3775,22 @@
    "nrel": 1
   },
   {
-   "artist": "SHOW‐YA",
-   "album": "HARD WAY TOUR 1991",
+   "artist": "ORIGINAL LOVE",
+   "album": "LOVE! LOVE! & LOVE!",
    "year": 1991,
-   "rgMbid": "8d618713-9fd9-4abd-b3cb-c75462f85672",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "ザ・ドリフターズ",
-   "album": "ドリフのシングルコレクション",
-   "year": 1991,
-   "rgMbid": "b8d19afd-c554-4925-9b1b-15159197d225",
+   "rgMbid": "1b2b0865-6e78-44e2-8d0e-8c2a1a74ad0e",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "加藤和彦",
-   "album": "ガーディニア",
-   "year": 1991,
-   "rgMbid": "5f48f6e5-5d14-4454-a9dd-e90077f6406c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
+   "note": "藝人池中有1張(盤名未比中)",
+   "why": "rg-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "富田靖子",
-   "album": "だるまさんがころんだ",
-   "year": 1991,
-   "rgMbid": "9eb08bf6-c8f4-418a-942a-48352b19aee8",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
+   "nrel": 3
   },
   {
    "artist": "小林靖宏",
@@ -5449,24 +3829,6 @@
    "nrel": 2
   },
   {
-   "artist": "沢田研二",
-   "album": "A SAINT IN THE NIGHT",
-   "year": 1991,
-   "rgMbid": "a204cfac-eae3-4beb-ab53-b0f43e8db328",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "沢田聖子",
    "album": "Acoustic Summer",
    "year": 1991,
@@ -5483,24 +3845,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "薬師丸ひろ子",
-   "album": "PRIMAVERA",
-   "year": 1991,
-   "rgMbid": "a4ec8fcf-6787-3d89-9b41-08c3f92fd91c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "青木愛",
@@ -5557,40 +3901,22 @@
    "nrel": 1
   },
   {
-   "artist": "Earthshaker",
-   "album": "EARTHSHAKER",
+   "artist": "ORIGINAL LOVE",
+   "album": "SOUL LIBERATION「結晶」",
    "year": 1992,
-   "rgMbid": "fc05e9c9-08ea-44b0-9a40-2b012350f6a9",
+   "rgMbid": "27fb1d0d-6382-4024-bc5a-0ed9079d92bf",
    "country": "JP",
    "format": "CD",
    "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
+   "inPool": true,
+   "poolString": "ORIGINAL LOVE|結晶 SOUL LIBERATION",
+   "note": "translit~0.88",
+   "why": "rg-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
    "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "吉川晃司",
-   "album": "Shyness Overdrive",
-   "year": 1992,
-   "rgMbid": "106e968c-a919-4fe8-a156-1dd600745282",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
+   "nrel": 4
   },
   {
    "artist": "小林靖宏",
@@ -5629,35 +3955,17 @@
    "nrel": 1
   },
   {
-   "artist": "岡林信康",
-   "album": "MADE IN JAPAN",
+   "artist": "忌野清志郎 feat. Booker T. & the MG’s",
+   "album": "HAVE MERCY",
    "year": 1992,
-   "rgMbid": "b6bdc6f1-080f-403b-989a-391e6199116e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "沢田研二",
-   "album": "Julie-mania～沢田研二武道館コンサート 1991.10.11",
-   "year": 1992,
-   "rgMbid": "2a38b980-432a-495f-9108-8c7865a52f89",
+   "rgMbid": "4f3a3596-29fb-36e4-a3f7-aea77345ff19",
    "country": "JP",
    "format": "CD",
    "live": true,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
+   "note": "藝人池中有9張(盤名未比中)",
+   "why": "artist-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
@@ -5701,24 +4009,6 @@
    "nrel": 1
   },
   {
-   "artist": "ICE",
-   "album": "ICE",
-   "year": 1993,
-   "rgMbid": "34b0d06c-f756-46f9-9cd4-80044083972e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "coba",
    "album": "33 GIRI",
    "year": 1993,
@@ -5747,24 +4037,6 @@
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "たま",
-   "album": "ろけっと",
-   "year": 1993,
-   "rgMbid": "c7ab68ec-b7cd-404e-9624-bfb06e07ff17",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
    "why": "no-tag",
    "entities": [
     "EASTWORLD"
@@ -5881,24 +4153,6 @@
    "nrel": 1
   },
   {
-   "artist": "吉川晃司",
-   "album": "Cloudy Heart",
-   "year": 1994,
-   "rgMbid": "3a420a53-1ec9-48f6-853b-ce5b5541d3df",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "小沢健二",
    "album": "LIFE",
    "year": 1994,
@@ -5908,24 +4162,6 @@
    "live": false,
    "inPool": true,
    "poolString": "小沢健二|LIFE",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "服部隆之",
-   "album": "交響組曲 史上最大の作戦",
-   "year": 1994,
-   "rgMbid": "4e4f714e-4f3e-435a-8ab3-b00f752c280b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
    "note": "",
    "why": "no-tag",
    "entities": [
@@ -5989,24 +4225,6 @@
    "nrel": 1
   },
   {
-   "artist": "dip",
-   "album": "Love to Sleep",
-   "year": 1995,
-   "rgMbid": "bdbb0fc3-794a-458c-afd2-b3fa0df478f9",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "北山修",
    "album": "北山修青春詞歌集",
    "year": 1995,
@@ -6025,24 +4243,6 @@
    "nrel": 2
   },
   {
-   "artist": "吉川晃司",
-   "album": "FOREVER ROAD",
-   "year": 1995,
-   "rgMbid": "b2b97a59-d6fd-4d4a-9fff-d3d4772c73c8",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
    "artist": "岩下清香",
    "album": "風がつれてきた季節",
    "year": 1995,
@@ -6056,6 +4256,24 @@
    "why": "no-tag",
    "entities": [
     "EASTWORLD"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "松任谷由実",
+   "album": "KATHMANDU",
+   "year": 1995,
+   "rgMbid": "2f09c16b-7702-4a65-9c41-7deff67247ec",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有3張(盤名未比中)",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -6115,42 +4333,6 @@
    "nrel": 1
   },
   {
-   "artist": "黒田有紀",
-   "album": "bicycle",
-   "year": 1995,
-   "rgMbid": "e92777c7-145d-475f-bd8c-32f61294896d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "GREAT3",
-   "album": "METAL LUNCHBOX",
-   "year": 1996,
-   "rgMbid": "1630a30d-d819-4a4f-93ee-958195f5b057",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "MULTI MAX",
    "album": "Oki doki!",
    "year": 1996,
@@ -6187,17 +4369,17 @@
    "nrel": 1
   },
   {
-   "artist": "吉川晃司",
-   "album": "BEAT∞SPEED",
+   "artist": "具島直子",
+   "album": "miss.G",
    "year": 1996,
-   "rgMbid": "87690161-b494-4f20-903d-67098140659a",
+   "rgMbid": "f29f3a6c-2e62-4010-853d-f871fda5ff6e",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
@@ -6272,42 +4454,6 @@
    "why": "no-tag",
    "entities": [
     "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "越路吹雪",
-   "album": "メモリアル 参 EDITION3〈ようこそ劇場へ〉-ライヴの軌跡",
-   "year": 1996,
-   "rgMbid": "1a07e82a-e775-4ab5-aeed-8dd729b7da9d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "越路吹雪",
-   "album": "メモリアル 壱 EDITION1〈イカルスの星〉-日本のメロディ",
-   "year": 1996,
-   "rgMbid": "61b435cd-e8e0-46eb-a374-a09b24959066",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -6403,24 +4549,6 @@
    "nrel": 1
   },
   {
-   "artist": "dip",
-   "album": "TIME ACID NO CRY AIR",
-   "year": 1997,
-   "rgMbid": "3a0df86c-a270-4dd9-a407-19926f663ae0",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "さかともえり",
    "album": "さかさま",
    "year": 1997,
@@ -6437,24 +4565,6 @@
    ],
    "foreignArtist": false,
    "nrel": 2
-  },
-  {
-   "artist": "たま",
-   "album": "犬の約束",
-   "year": 1997,
-   "rgMbid": "0f6ad43f-d8ff-444a-afb3-dc06ae554810",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
   },
   {
    "artist": "ペンギンノイズ",
@@ -6527,6 +4637,24 @@
    ],
    "foreignArtist": false,
    "nrel": 2
+  },
+  {
+   "artist": "具島直子",
+   "album": "Quiet Emotion",
+   "year": 1997,
+   "rgMbid": "cc3f80bb-f8bd-45ae-b6cd-a12f3345b278",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EASTWORLD"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
   },
   {
    "artist": "原田喧太",
@@ -6619,17 +4747,35 @@
    "nrel": 1
   },
   {
-   "artist": "SAKURA",
-   "album": "Lover Light",
+   "artist": "coba",
+   "album": "Conscious Nega (Subconscious)",
    "year": 1998,
-   "rgMbid": "bb2577e9-4982-3812-a459-0e1825a2bf86",
+   "rgMbid": "2c13542d-f1d1-4ada-96b1-6cbdbd28944b",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EASTWORLD"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "coba",
+   "album": "Conscious Posi",
+   "year": 1998,
+   "rgMbid": "4704987a-095d-47ff-bb5b-1335687d8dd6",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "rg-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
@@ -6745,60 +4891,6 @@
    "nrel": 1
   },
   {
-   "artist": "岸千恵子",
-   "album": "歌カラベスト4",
-   "year": 1998,
-   "rgMbid": "f30a89d1-a0cd-435e-85b3-45a84d3a9027",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸千恵子",
-   "album": "全曲集",
-   "year": 1998,
-   "rgMbid": "382fbf41-51b2-439a-86de-03b3621f7de4",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "志賀真理子 & 冨永みーな",
-   "album": "懐かしのミュージッククリップ㊷ 魔法のアイドル パステルユーミ",
-   "year": 1998,
-   "rgMbid": "b9644c8a-9978-497d-853e-5c7df1037411",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "東儀秀樹",
    "album": "Togism",
    "year": 1998,
@@ -6817,110 +4909,19 @@
    "nrel": 1
   },
   {
-   "artist": "黒夢",
-   "album": "1997 10.31 LIVE AT 新宿LOFT",
-   "year": 1998,
-   "rgMbid": "8f07656d-bb93-427f-9e84-b3f0132fdb0e",
-   "country": "JP",
-   "format": "CD/SHM-CD/VHS",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD",
-    "TOSHIBA EMI"
-   ],
-   "foreignArtist": false,
-   "nrel": 4
-  },
-  {
-   "artist": "CLOSE",
-   "album": "So Close",
+   "artist": "一路真輝",
+   "album": "ア・ドリーム・オブ・アリア",
    "year": 1999,
-   "rgMbid": "e293f3c0-ce2f-4734-a66e-edf49e19c148",
+   "rgMbid": "5281e291-1862-4c44-9bb9-efd1818b726d",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
-   "why": "no-tag",
+   "note": "",
+   "why": "rg-tag-mixed",
    "entities": [
     "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "SAKURA",
-   "album": "LOVE ON WINGS",
-   "year": 1999,
-   "rgMbid": "c12dc0ab-6e76-37c6-ab2a-3808eb8ea50f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "SION",
-   "album": "Discharge",
-   "year": 1999,
-   "rgMbid": "7c5dbb23-fb50-3de5-97cb-b1c78b5a6e69",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "THE ALFEE",
-   "album": "örb",
-   "year": 1999,
-   "rgMbid": "72e3aa4d-eeb5-4a2d-9200-b270133dae3e",
-   "country": "JP",
-   "format": "8cm CD/Blu-spec CD/CD/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 3
-  },
-  {
-   "artist": "THE BOOM",
-   "album": "No Control",
-   "year": 1999,
-   "rgMbid": "b1ea08e3-8ba2-4392-b5bb-376a4b883f65",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -7070,64 +5071,10 @@
    "nrel": 1
   },
   {
-   "artist": "Something ELse",
-   "album": "ギターマン",
-   "year": 2000,
-   "rgMbid": "2999f1df-d8d9-481e-b79c-a988d7525844",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "THE BOOM",
-   "album": "LOVIBE",
-   "year": 2000,
-   "rgMbid": "492fab59-4029-4eab-ab23-fb789222a030",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Toshiki Nunokawa Project",
    "album": "The Return Of Ultraman Jazz",
    "year": 2000,
    "rgMbid": "f312dbb9-0435-42bb-a19b-ddf215e7560c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "advantage Lucy",
-   "album": "Station",
-   "year": 2000,
-   "rgMbid": "0d26f5bf-0f96-30f5-83d0-21a6ff525db1",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -7160,42 +5107,6 @@
    "nrel": 1
   },
   {
-   "artist": "ザ・ドリフターズ",
-   "album": "ドリフだョ!全員集合 (青盤)",
-   "year": 2000,
-   "rgMbid": "6a4e70c2-a9a3-455c-a06e-ec8a6db8df0c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "ザ・ドリフターズ",
-   "album": "ドリフだョ!全員集合 (赤盤)",
-   "year": 2000,
-   "rgMbid": "35f9d9fb-1178-42e0-a6da-08e54e30aa85",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "中村一義",
    "album": "ERA",
    "year": 2000,
@@ -7214,82 +5125,10 @@
    "nrel": 2
   },
   {
-   "artist": "安田一葉",
-   "album": "波紋",
-   "year": 2000,
-   "rgMbid": "36fc753b-67d9-4db0-af73-99a74e619276",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸千恵子",
-   "album": "2001全曲集",
-   "year": 2000,
-   "rgMbid": "a783b06a-7ef0-43b4-a8a1-21ccc185cbec",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸千恵子",
-   "album": "全曲集〜民謡編",
-   "year": 2000,
-   "rgMbid": "5f8c9999-dcf0-4d75-b5cf-1bb07dc2ff2b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "東儀秀樹",
    "album": "雅楽 天・地・空〜千年の悠雅",
    "year": 2000,
    "rgMbid": "ede2e213-c690-4095-aaa5-cad87ef7527a",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "永井真理子",
-   "album": "ちいさなとびら",
-   "year": 2000,
-   "rgMbid": "b9a57e95-d7c2-3c02-b0ac-3924a13d833d",
    "country": "JP",
    "format": "CD",
    "live": false,
@@ -7322,42 +5161,6 @@
    "nrel": 1
   },
   {
-   "artist": "Ice",
-   "album": "Spectrum",
-   "year": 2001,
-   "rgMbid": "02115f63-8345-4072-ae3f-abaa2b679c05",
-   "country": "JP",
-   "format": "CD/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "Something ELse",
-   "album": "光の糸",
-   "year": 2001,
-   "rgMbid": "f02655b5-67fa-4546-9026-0ed6916fcc6d",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "The Happenings Four",
    "album": "ザ・ハプニングス・フォー・ベスト《2001 millennium+1 BEST》",
    "year": 2001,
@@ -7374,78 +5177,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "MELODY",
-   "year": 2001,
-   "rgMbid": "b83a0064-254f-435a-b343-a5b8322952e3",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "チューリップ",
-   "album": "無限軌道",
-   "year": 2001,
-   "rgMbid": "8a7a3dde-894d-42f8-9fb6-a54c50ee8536",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "チューリップ",
-   "album": "WELCOME TO MY HOUSE",
-   "year": 2001,
-   "rgMbid": "b76209a3-4c7e-47f7-9158-b84fb9ab5be9",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "チューリップ",
-   "album": "日本",
-   "year": 2001,
-   "rgMbid": "450eba2f-1a3c-4803-850b-870521a01a56",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "清貴",
@@ -7502,39 +5233,21 @@
    "nrel": 1
   },
   {
-   "artist": "BLANKEY JET CITY",
-   "album": "Are You Happy?",
-   "year": 2002,
-   "rgMbid": "8d37095e-f6bb-4a7d-b063-3b6870889c06",
-   "country": "JP",
-   "format": "DVD-Video",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "TOSHIBA EMI"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Changin’ My Life",
-   "album": "Changin’ My Life",
-   "year": 2002,
-   "rgMbid": "7bb276a8-cb16-3078-9252-75b9ed629899",
+   "artist": "陈敏",
+   "album": "I Wish",
+   "year": 2001,
+   "rgMbid": "6e938f6f-6092-4d9d-a1d3-94a6d7754491",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "artist-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
-   "foreignArtist": false,
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -7574,78 +5287,6 @@
    "nrel": 1
   },
   {
-   "artist": "SION",
-   "album": "UNTIMELY FLOWERING",
-   "year": 2002,
-   "rgMbid": "83571410-3486-45f7-925b-ebf49cb2231b",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "SION",
-   "album": "SION‐YAON 2002 with THE MOGAMI",
-   "year": 2002,
-   "rgMbid": "94388e8f-88a8-4bd3-9af2-5a10dcf8576e",
-   "country": "JP",
-   "format": "CD/Enhanced CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Something ELse",
-   "album": "Y",
-   "year": 2002,
-   "rgMbid": "e7beec5a-1347-46eb-a87e-8b1a96578554",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "THE BOOM",
-   "album": "OKINAWA〜ワタシノシマ〜",
-   "year": 2002,
-   "rgMbid": "27f27b68-072d-46b0-9c4e-479b42038fd1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "coba & Bellows Lovers",
    "album": "my ジャバラ way",
    "year": 2002,
@@ -7662,60 +5303,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "THE LOVE MAP SHOP",
-   "year": 2002,
-   "rgMbid": "83d86ff6-e6a3-41df-9050-33db86dfec47",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "チューリップ",
-   "album": "Upside-down",
-   "year": 2002,
-   "rgMbid": "50dd0b0f-237e-406e-b4b2-a0b1ce7c40b7",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "チューリップ",
-   "album": "Someday Somewhere",
-   "year": 2002,
-   "rgMbid": "74709496-5a9c-437e-b54f-3d366ae48f9c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
   },
   {
    "artist": "中村一義",
@@ -7754,24 +5341,6 @@
    "nrel": 1
   },
   {
-   "artist": "押尾コータロー",
-   "album": "Starting Point",
-   "year": 2002,
-   "rgMbid": "fb4f1a2b-750d-359b-a69f-6f45b475b44c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "石嶺聡子",
    "album": "花",
    "year": 2002,
@@ -7790,6 +5359,24 @@
    "nrel": 1
   },
   {
+   "artist": "陈敏",
+   "album": "My Story-我的故事-",
+   "year": 2002,
+   "rgMbid": "16d1869c-e6bd-440d-aea6-5c1c54afdbd6",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-tag-mixed",
+   "entities": [
+    "EASTWORLD"
+   ],
+   "foreignArtist": true,
+   "nrel": 1
+  },
+  {
    "artist": "高見沢俊彦",
    "album": "TALKING BLUES -SOUND COLLECTION-",
    "year": 2002,
@@ -7803,42 +5390,6 @@
    "why": "no-tag",
    "entities": [
     "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Changin’ My Life",
-   "album": "Caravan",
-   "year": 2003,
-   "rgMbid": "95140ab9-5a80-34ef-aff1-f0c91ec4850a",
-   "country": "JP",
-   "format": "CD/Copy Control CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "Something ELse",
-   "album": "風見鶏",
-   "year": 2003,
-   "rgMbid": "ad1882e9-17c5-34ef-b342-5514a717499e",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -7862,42 +5413,6 @@
    "nrel": 1
   },
   {
-   "artist": "チューリップ",
-   "album": "ライヴ!!アクト・チューリップ",
-   "year": 2003,
-   "rgMbid": "b3b2d1c7-c672-4b5c-bbc4-7785ec5858d6",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "上條恒彦",
-   "album": "お母さんの写真",
-   "year": 2003,
-   "rgMbid": "a7190698-d267-3ee3-92d3-eed50e9a22fb",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "北山修",
    "album": "25 ばあすでい・こんさあと",
    "year": 2003,
@@ -7916,24 +5431,6 @@
    "nrel": 1
   },
   {
-   "artist": "大場久美子",
-   "album": "春のささやき",
-   "year": 2003,
-   "rgMbid": "fadde1d6-ada5-4087-a73c-2c6284376f5f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "山里勇吉",
    "album": "八重山育ち",
    "year": 2003,
@@ -7942,44 +5439,8 @@
    "format": "CD",
    "live": false,
    "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸千恵子",
-   "album": "2004全曲集",
-   "year": 2003,
-   "rgMbid": "d609f87f-1862-4c2d-8566-06be962bf07f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "押尾コータロー",
-   "album": "Dramatic",
-   "year": 2003,
-   "rgMbid": "1c98a1eb-d773-3693-917e-761b28dc872c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
+   "poolString": "山里勇吉|八重山書生節",
+   "note": "疑似池中(盤名相似度0.69)",
    "why": "no-tag",
    "entities": [
     "EASTWORLD"
@@ -8006,75 +5467,21 @@
    "nrel": 1
   },
   {
-   "artist": "越路吹雪",
-   "album": "愛の讃歌",
+   "artist": "陈敏",
+   "album": "i love",
    "year": 2003,
-   "rgMbid": "4737c80b-42d1-4f4a-8002-51409adf74ca",
+   "rgMbid": "160a4bbd-6fd6-4f45-a4b2-5e4c4bd54ada",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "高石ともや",
-   "album": "高石ともやとザ・ナターシャー・セブン",
-   "year": 2003,
-   "rgMbid": "8d07898b-b87a-4a2f-872e-f95c59bc8305",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "RURUTIA",
-   "album": "Promised Land",
-   "year": 2004,
-   "rgMbid": "9ca2d130-7981-3c98-a707-393233c2aa7f",
-   "country": "JP",
-   "format": "Enhanced CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "SAKURA",
-   "album": "Lana",
-   "year": 2004,
-   "rgMbid": "5fb2aadc-0dc6-38a5-83d4-2dc49c87c5e7",
-   "country": "JP",
-   "format": "Copy Control CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
+   "why": "artist-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
-   "foreignArtist": false,
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -8132,42 +5539,6 @@
    "nrel": 1
   },
   {
-   "artist": "安田一葉",
-   "album": "全曲集",
-   "year": 2004,
-   "rgMbid": "e23cb8dd-9f55-4e8f-ab5e-785b5f9ee7db",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸千恵子",
-   "album": "全曲集",
-   "year": 2004,
-   "rgMbid": "c8f2d4c1-adf3-4b20-9836-812458fd4684",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "押尾コータロー",
    "album": "Bolero!: Be HAPPY LIVE",
    "year": 2004,
@@ -8201,6 +5572,24 @@
     "EASTWORLD"
    ],
    "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "Chen Min",
+   "album": "恋衣 Koigoromo",
+   "year": 2005,
+   "rgMbid": "53719f5d-a57e-4ba6-ae95-be7cd835abb1",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-tag-mixed",
+   "entities": [
+    "EASTWORLD"
+   ],
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -8258,96 +5647,6 @@
    "nrel": 1
   },
   {
-   "artist": "チューリップ",
-   "album": "ライヴ!! アクト・チューリップ Vol.2",
-   "year": 2005,
-   "rgMbid": "26a0d82f-c0ed-4405-a3e8-b2de34e8e2e3",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "TULIP LIVE THE 1000th",
-   "year": 2005,
-   "rgMbid": "fde56e96-59b9-4cae-9ec6-d008143e0167",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "2222年ピクニック",
-   "year": 2005,
-   "rgMbid": "924a3148-204c-4ef7-862c-e970c099aac1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "I dream",
-   "year": 2005,
-   "rgMbid": "4b260c35-a17d-4d18-bd72-5db6ac4c16ad",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "チューリップ",
-   "album": "鈴蘭&田園ライヴ!〜ライヴ!! アクト・チューリップ Vol.3",
-   "year": 2005,
-   "rgMbid": "bd159a9a-0b2d-4028-9814-d678d59fa31c",
-   "country": "JP",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "北山修",
    "album": "北山修ファーストアルバム〜12枚の絵",
    "year": 2005,
@@ -8384,112 +5683,22 @@
    "nrel": 1
   },
   {
-   "artist": "小坂恭子",
-   "album": "フレイバー",
+   "artist": "陈敏",
+   "album": "MOON",
    "year": 2005,
-   "rgMbid": "b46d1983-49de-4aa8-8efc-f1e9201734a7",
+   "rgMbid": "ddf9861f-4fb8-4ccf-b023-588e1990543b",
    "country": "JP",
-   "format": "CD",
+   "format": "Enhanced CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "岸千恵子",
-   "album": "岸千恵子 全曲集",
-   "year": 2005,
-   "rgMbid": "1e2a465d-7336-4096-923f-db38cf6863e5",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "押尾コータロー",
-   "album": "Panorama",
-   "year": 2005,
-   "rgMbid": "7ce2c31c-1e15-3535-b3b2-86350dcdbb76",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
+   "why": "artist-tag-mixed",
    "entities": [
     "EASTWORLD"
    ],
-   "foreignArtist": false,
+   "foreignArtist": true,
    "nrel": 1
-  },
-  {
-   "artist": "越路吹雪",
-   "album": "越路吹雪*愛の生涯",
-   "year": 2005,
-   "rgMbid": "bfee7931-f006-4292-9999-0dbf15f125cb",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "越路吹雪",
-   "album": "宝塚大劇場で歌う",
-   "year": 2005,
-   "rgMbid": "82b7faf2-c8e0-4ce0-a006-08ee345f981f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "THE ALFEE",
-   "album": "ONE -Venus of Rock-",
-   "year": 2006,
-   "rgMbid": "ede361ca-75bc-416d-b083-203adda79e59",
-   "country": "JP",
-   "format": "Blu-spec CD/CD/DVD-Video/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 5
   },
   {
    "artist": "The Happenings Four",
@@ -8510,21 +5719,21 @@
    "nrel": 1
   },
   {
-   "artist": "WILD FLAG",
-   "album": "WILD LAND",
+   "artist": "The Little Willies",
+   "album": "The Little Willies",
    "year": 2006,
-   "rgMbid": "a584d0cc-e0cf-4b0d-b91b-697a0f725d98",
+   "rgMbid": "8eabcd60-89bc-38cc-a61f-c722619336e8",
    "country": "JP",
    "format": "CD",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
-    "EASTWORLD"
+    "TOSHIBA EMI"
    ],
-   "foreignArtist": false,
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -8564,60 +5773,6 @@
    "nrel": 1
   },
   {
-   "artist": "沖仁",
-   "album": "Nacimiento 〜誕生〜",
-   "year": 2006,
-   "rgMbid": "ac8f724c-d577-42ba-b2d5-6d0a95e8a16f",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "越路吹雪",
-   "album": "「じらさないで」+「あの唄・この唄・こんな唄」(2in1)",
-   "year": 2006,
-   "rgMbid": "55b83745-5901-4a13-b4e2-db587b5d6a92",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "越路吹雪",
-   "album": "コシジ・イン・ベラミ",
-   "year": 2006,
-   "rgMbid": "87a92aad-faa1-40f2-bb1b-b9d3f373270c",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Toshiba Records"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "Splash Candy",
    "album": "FRANKEN COASTER & BABEE GO ROUND",
    "year": 2007,
@@ -8633,6 +5788,24 @@
     "EASTWORLD"
    ],
    "foreignArtist": false,
+   "nrel": 1
+  },
+  {
+   "artist": "陈敏",
+   "album": "Wings",
+   "year": 2007,
+   "rgMbid": "6455b9c1-0a1b-46f0-979a-53608cd01a3c",
+   "country": "JP",
+   "format": "CD/DVD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "why": "artist-tag-mixed",
+   "entities": [
+    "EASTWORLD"
+   ],
+   "foreignArtist": true,
    "nrel": 1
   },
   {
@@ -8654,42 +5827,6 @@
    "nrel": 3
   },
   {
-   "artist": "BOØWY",
-   "album": "“LAST GIGS” COMPLETE",
-   "year": 2008,
-   "rgMbid": "20a7619f-7559-460b-9490-5dc4e7ab439f",
-   "country": "JP",
-   "format": "Blu-spec CD/CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "藝人池中有3張(盤名未比中)",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 2
-  },
-  {
-   "artist": "ザ・ドリフターズ",
-   "album": "ドリフの軍歌だよ全員集合!!",
-   "year": 2008,
-   "rgMbid": "f235ae98-5cfd-458a-a65e-ff104ab0eece",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
    "artist": "ジローズ",
    "album": "最後の唄",
    "year": 2008,
@@ -8706,96 +5843,6 @@
    ],
    "foreignArtist": false,
    "nrel": 1
-  },
-  {
-   "artist": "伊藤咲子",
-   "album": "乙女のワルツ",
-   "year": 2008,
-   "rgMbid": "c96800b5-2e71-43c5-8803-77720c5ddda1",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "川島恵",
-   "album": "Sunshine Girl",
-   "year": 2008,
-   "rgMbid": "97d01cd8-aadd-4bbb-9c51-7ca912301af3",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "越路吹雪",
-   "album": "ラスト・ダンスは私に",
-   "year": 2008,
-   "rgMbid": "250ca086-7eb2-4264-89ed-02484729b743",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "BLANKEY JET CITY",
-   "album": "MONKEY STRIP ACT 2",
-   "year": 2009,
-   "rgMbid": "536c3576-8eb5-363e-ab30-46a65abca64b",
-   "country": "JP",
-   "format": "SHM-CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "THE ALFEE",
-   "album": "新世界 -Neo Universe-",
-   "year": 2010,
-   "rgMbid": "631836e0-cf07-4b0b-9b8c-661a40549c21",
-   "country": "JP",
-   "format": "Blu-spec CD/CD/DVD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 4
   },
   {
    "artist": "Takamiy",
@@ -8852,6 +5899,24 @@
    "nrel": 2
   },
   {
+   "artist": "Pink Martini & Saori Yuki",
+   "album": "1969",
+   "year": 2011,
+   "rgMbid": "6fea97fd-e670-442a-9c1c-93da3b1af559",
+   "country": "JP/XE",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "藝人池中有3張(盤名未比中)",
+   "why": "rg-tag-mixed",
+   "entities": [
+    "EXPRESS"
+   ],
+   "foreignArtist": false,
+   "nrel": 2
+  },
+  {
    "artist": "RCサクセション",
    "album": "悲しいことばっかり",
    "year": 2013,
@@ -8865,42 +5930,6 @@
    "why": "no-tag",
    "entities": [
     "EXPRESS"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "Antônio Adolfo e a Brazuca",
-   "album": "Antônio Adolfo e a Brazuca",
-   "year": 2014,
-   "rgMbid": "9584b31c-4276-30d3-bdfa-ba978d223170",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "Odeon RECORDS(JP)"
-   ],
-   "foreignArtist": true,
-   "nrel": 1
-  },
-  {
-   "artist": "葛城ユキ",
-   "album": "～魂を追いかけて～",
-   "year": 2022,
-   "rgMbid": "777019c3-fafa-4f20-ab72-cd2c83725472",
-   "country": "JP",
-   "format": "SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "why": "no-tag",
-   "entities": [
-    "EASTWORLD"
    ],
    "foreignArtist": false,
    "nrel": 1
@@ -8924,17 +5953,17 @@
    "nrel": 1
   },
   {
-   "artist": "福士りつ",
-   "album": "津軽民謡と共に25年／福士りつの唄",
+   "artist": "柏木玲子",
+   "album": "Dream Of Dream",
    "year": null,
-   "rgMbid": "e3d43ac9-645a-4c25-8d06-490984496fad",
+   "rgMbid": "6dde01e3-4490-4a19-b8c4-90feb9f329d5",
    "country": "JP",
    "format": "12\" Vinyl",
    "live": false,
    "inPool": false,
    "poolString": "",
    "note": "",
-   "why": "no-tag",
+   "why": "rg-tag-mixed",
    "entities": [
     "Toshiba Records"
    ],
@@ -8942,5 +5971,5 @@
    "nrel": 1
   }
  ],
- "nonjazz_count": 639
+ "nonjazz_count": 792
 }

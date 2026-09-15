@@ -1,5 +1,5 @@
 {
- "label": "denon",
+ "label": "Denon（含 Denon Jazz）",
  "entities": [
   {
    "id": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
@@ -16,70 +16,6 @@
  ],
  "rows": [
   {
-   "artist": "Kai Winding & J.J. Johnson",
-   "album": "Jay & Kai",
-   "year": 1954,
-   "rgMbid": "1e98ade6-88f4-3785-9186-307b1171c2a3",
-   "country": "XW",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1992,
-   "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Charlie Byrd",
-   "album": "Blues for Night People",
-   "year": 1957,
-   "rgMbid": "6fa22d0f-e85c-4dd4-a976-2dc4f364b936",
-   "country": "XE",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1994,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,swing",
-   "domestic": false
-  },
-  {
-   "artist": "Dizzy Gillespie, Milt Jackson & Joe Carroll",
-   "album": "School Days",
-   "year": 1957,
-   "rgMbid": "f7f21129-39b5-4a36-8c71-96abdb8dac4f",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1998,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Booker Ervin Quintet",
-   "album": "Cookin'",
-   "year": 1960,
-   "rgMbid": "728bc350-e679-4c58-9633-86d0f8670064",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1991,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,hard bop",
-   "domestic": false
-  },
-  {
    "artist": "渡辺貞夫",
    "album": "Sadao Meets Brazilian Friends",
    "year": 1968,
@@ -92,7 +28,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,bossa nova,samba,latin",
    "domestic": true
   },
   {
@@ -108,7 +43,6 @@
    "note": "",
    "labelYear": 1969,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:rock,jazz,jazz rock",
    "domestic": true
   },
   {
@@ -124,7 +58,6 @@
    "note": "",
    "labelYear": 1969,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:heavy psych,jam band,jazz fusion,jazz rock,jazz(jp-list),jazz-funk,likedis auto,progressive rock",
    "domestic": true
   },
   {
@@ -140,7 +73,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -156,24 +88,7 @@
    "note": "",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop",
    "domestic": true
-  },
-  {
-   "artist": "Terumasa Hino Quintet",
-   "album": "Hi-Nology",
-   "year": 1969,
-   "rgMbid": "6fdb39e9-79c1-43ad-bbe6-4a9836d248c7",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "日野皓正 | Hi-nology | 1969 (seed)",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1985,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
-   "domestic": false
   },
   {
    "artist": "Toshiko Akiyoshi Quintet",
@@ -188,24 +103,7 @@
    "note": "",
    "labelYear": 1969,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
-  },
-  {
-   "artist": "Terumasa Hino Quartet",
-   "album": "ALONE, ALONE AND ALONE",
-   "year": 1970,
-   "rgMbid": "98c8b312-f7fd-4bb4-9803-8d47a18dd068",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1985,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop,hard bop,bebop",
-   "domestic": false
   },
   {
    "artist": "伊東ゆかりとグリーン・ジンジャー",
@@ -220,7 +118,6 @@
    "note": "",
    "labelYear": 1971,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:rock,pop,jazz",
    "domestic": true
   },
   {
@@ -236,7 +133,6 @@
    "note": "",
    "labelYear": 1971,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,jazz rock",
    "domestic": true
   },
   {
@@ -252,7 +148,6 @@
    "note": "",
    "labelYear": 1973,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:21st century classical,avant-garde,classical,composer,contemporary classical,eai,electroacoustic,film score,free improvi",
    "domestic": true
   },
   {
@@ -268,7 +163,6 @@
    "note": "",
    "labelYear": 1975,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz(jp-list),kayōkyoku,vocal jazz",
    "domestic": true
   },
   {
@@ -284,7 +178,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz,contemporary jazz,free improvisation",
    "domestic": true
   },
   {
@@ -300,7 +193,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,jazz-funk,contemporary jazz",
    "domestic": true
   },
   {
@@ -316,7 +208,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -332,7 +223,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:rock,jazz",
    "domestic": true
   },
   {
@@ -348,7 +238,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:rock,classical,jazz,folk,funk,big band",
    "domestic": true
   },
   {
@@ -364,7 +253,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,jazz-funk,contemporary jazz",
    "domestic": true
   },
   {
@@ -380,7 +268,6 @@
    "note": "",
    "labelYear": 1976,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -396,7 +283,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -412,7 +298,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz,avant-garde,free jazz",
    "domestic": true
   },
   {
@@ -428,7 +313,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "artist:avant-garde jazz,free jazz,jazz,jazz and blues",
    "domestic": true
   },
   {
@@ -444,7 +328,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz,swing",
    "domestic": true
   },
   {
@@ -460,7 +343,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -476,7 +358,6 @@
    "note": "Live",
    "labelYear": 1977,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:2008 universal fire victim,american,composer,drummer,free jazz,hard bop,jazz,jazz and blues,percussionist",
    "domestic": true
   },
   {
@@ -492,7 +373,6 @@
    "note": "Live",
    "labelYear": 1977,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:2008 universal fire victim,american,composer,drummer,free jazz,hard bop,jazz,jazz and blues,percussionist",
    "domestic": true
   },
   {
@@ -508,7 +388,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -524,7 +403,6 @@
    "note": "Live",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz,swing",
    "domestic": true
   },
   {
@@ -540,7 +418,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "artist:avant-garde jazz,big band,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -556,7 +433,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "artist:avant-garde jazz,contemporary jazz,free jazz,jazz fusion,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -572,7 +448,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz,free jazz",
    "domestic": true
   },
   {
@@ -588,7 +463,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -604,7 +478,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -620,7 +493,6 @@
    "note": "Live",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -636,7 +508,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -652,7 +523,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -668,7 +538,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,big band",
    "domestic": true
   },
   {
@@ -684,7 +553,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,jazz-funk",
    "domestic": true
   },
   {
@@ -700,7 +568,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "artist:avant-garde jazz,classical,composer,experimental electronic,free improvisation,jazz",
    "domestic": true
   },
   {
@@ -716,7 +583,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:rock,jazz",
    "domestic": true
   },
   {
@@ -732,7 +598,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:avant-garde jazz,contemporary jazz,free jazz,jazz fusion,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -748,7 +613,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:avant-garde jazz,jazz,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -764,7 +628,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -780,7 +643,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,free improvisation",
    "domestic": true
   },
   {
@@ -796,23 +658,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Billy Harper",
-   "album": "Knowledge of Self",
-   "year": 1979,
-   "rgMbid": "ec09f5c1-f24c-49f9-919a-296cdca25505",
-   "country": "US",
-   "format": "Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1979,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz,post-bop,spiritual jazz",
    "domestic": true
   },
   {
@@ -828,7 +673,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz,jazz fusion,jazz(jp-list),jazz-funk,rock",
    "domestic": true
   },
   {
@@ -844,7 +688,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:avant-garde jazz,band directors,composers,free jazz,jazz,jazz musicians,pianists,post-bop",
    "domestic": true
   },
   {
@@ -860,7 +703,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:avant-garde jazz,band directors,composers,free jazz,jazz,jazz musicians,pianists,post-bop",
    "domestic": true
   },
   {
@@ -876,7 +718,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,cool jazz",
    "domestic": true
   },
   {
@@ -892,7 +733,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -908,7 +748,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,jazz rock",
    "domestic": true
   },
   {
@@ -924,7 +763,6 @@
    "note": "",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:city pop,j-pop,jazz,jazz(jp-list),likedis auto,singer-songwriter,soul,techno kayō",
    "domestic": true
   },
   {
@@ -940,7 +778,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -956,7 +793,6 @@
    "note": "",
    "labelYear": 1981,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -972,7 +808,6 @@
    "note": "",
    "labelYear": 1981,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:2008 universal fire victim,avant-garde jazz,chamber jazz,hard bop,jazz,jazz fusion,post-bop",
    "domestic": true
   },
   {
@@ -988,7 +823,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:electronic,ambient,jazz,fusion",
    "domestic": true
   },
   {
@@ -1004,7 +838,6 @@
    "note": "",
    "labelYear": 1991,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:electronic,jazz,experimental,jazz-funk,avant-garde jazz,latin,afrobeat",
    "domestic": true
   },
   {
@@ -1020,7 +853,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,reggae,dub,rocksteady",
    "domestic": true
   },
   {
@@ -1036,7 +868,6 @@
    "note": "",
    "labelYear": 1981,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1052,7 +883,6 @@
    "note": "",
    "labelYear": 1983,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,fusion,contemporary jazz,smooth jazz",
    "domestic": true
   },
   {
@@ -1068,7 +898,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:electronic,jazz,synth-pop,why is japan always shouting at me",
    "domestic": true
   },
   {
@@ -1084,7 +913,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1100,7 +928,6 @@
    "note": "",
    "labelYear": 1983,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -1116,7 +943,6 @@
    "note": "",
    "labelYear": 1983,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:pop,jazz",
    "domestic": true
   },
   {
@@ -1132,7 +958,6 @@
    "note": "",
    "labelYear": 1983,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1148,7 +973,6 @@
    "note": "",
    "labelYear": 1983,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1164,7 +988,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,hard bop",
    "domestic": true
   },
   {
@@ -1180,7 +1003,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1196,7 +1018,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,easy listening,bossa nova",
    "domestic": true
   },
   {
@@ -1212,7 +1033,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz,pop,pop soul,smooth soul,soul,vocal jazz",
    "domestic": true
   },
   {
@@ -1228,7 +1048,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,blues,cool jazz,smooth jazz",
    "domestic": true
   },
   {
@@ -1244,7 +1063,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1260,7 +1078,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz",
    "domestic": true
   },
   {
@@ -1276,7 +1093,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1292,7 +1108,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1308,7 +1123,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "rg:jazz,big band,jazz-funk",
    "domestic": true
   },
   {
@@ -1324,7 +1138,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1340,7 +1153,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -1356,7 +1168,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,bossa nova,latin",
    "domestic": true
   },
   {
@@ -1372,7 +1183,6 @@
    "note": "Live",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -1388,7 +1198,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,funk",
    "domestic": true
   },
   {
@@ -1404,7 +1213,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,swing",
    "domestic": true
   },
   {
@@ -1420,7 +1228,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:classical,jazz,easy listening",
    "domestic": true
   },
   {
@@ -1436,7 +1243,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1452,7 +1258,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,mpb,bossa nova,latin,latin jazz",
    "domestic": true
   },
   {
@@ -1468,7 +1273,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,swing",
    "domestic": true
   },
   {
@@ -1484,23 +1288,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Peter Erskine",
-   "album": "Transition",
-   "year": 1986,
-   "rgMbid": "8f3c6e7b-c6dc-3ea1-9988-8509f29a8efe",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1986,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop,contemporary jazz",
    "domestic": true
   },
   {
@@ -1516,7 +1303,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1532,7 +1318,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,big band",
    "domestic": true
   },
   {
@@ -1548,7 +1333,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz,jazz and blues,post-bop",
    "domestic": true
   },
   {
@@ -1564,7 +1348,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:hard bop",
    "domestic": true
   },
   {
@@ -1580,7 +1363,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,fusion",
    "domestic": true
   },
   {
@@ -1596,7 +1378,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:contemporary jazz,flute,jazz,jazz fusion,jazz rock",
    "domestic": true
   },
   {
@@ -1612,7 +1393,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1628,7 +1408,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:rock,jazz,jazz fusion,latin,latin jazz",
    "domestic": true
   },
   {
@@ -1644,7 +1423,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,big band",
    "domestic": true
   },
   {
@@ -1660,23 +1438,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,contemporary jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Zoot Sims",
-   "album": "Somebody Loves Me",
-   "year": 1987,
-   "rgMbid": "2c5650be-41e6-35bb-9de9-071078322e94",
-   "country": "XE",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1987,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:2008 universal fire victim,beat poetry,bossa nova,cool jazz,hard bop,jazz,jazz poetry,multiple ipi,post-bop",
    "domestic": true
   },
   {
@@ -1692,23 +1453,6 @@
    "note": "",
    "labelYear": 1988,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:death by automobile,hard bop,jazz,jazz fusion,post-bop,virtual reality",
-   "domestic": true
-  },
-  {
-   "artist": "Eliane Elias",
-   "album": "Cross Currents",
-   "year": 1988,
-   "rgMbid": "4829985a-7a14-3ea2-98d2-40cb15a43101",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1988,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1724,7 +1468,6 @@
    "note": "",
    "labelYear": 1988,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,latin,latin jazz",
    "domestic": true
   },
   {
@@ -1740,7 +1483,6 @@
    "note": "",
    "labelYear": 1988,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:flugelhorn,hard bop,jazz,post-bop,trumpet",
    "domestic": true
   },
   {
@@ -1756,23 +1498,6 @@
    "note": "",
    "labelYear": 1988,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,swing,cool jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Uncle Festive",
-   "album": "Young People With Faces",
-   "year": 1988,
-   "rgMbid": "7f3232ba-d773-3a9c-94cb-dfe478316c22",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1988,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,jazz-funk",
    "domestic": true
   },
   {
@@ -1788,23 +1513,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop,hard bop",
-   "domestic": true
-  },
-  {
-   "artist": "Henry Mancini",
-   "album": "Mancini Rocks The Pops",
-   "year": 1989,
-   "rgMbid": "1f264359-a336-3042-9934-1f1c8b8d0442",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1989,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,easy listening",
    "domestic": true
   },
   {
@@ -1820,7 +1528,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:contemporary jazz,jazz,jazz fusion,latin jazz,session",
    "domestic": true
   },
   {
@@ -1836,7 +1543,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,big band",
    "domestic": true
   },
   {
@@ -1852,39 +1558,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,cool jazz,contemporary jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Uncle Festive",
-   "album": "That We Do Know",
-   "year": 1989,
-   "rgMbid": "8d51df78-08a1-369d-b314-c31fe63aa2d9",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1989,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:contemporary jazz,jazz fusion",
-   "domestic": true
-  },
-  {
-   "artist": "Bob Berg",
-   "album": "In the Shadows",
-   "year": 1990,
-   "rgMbid": "29340908-bb36-3611-8701-02148192c63b",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1990,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:death by automobile,hard bop,jazz,jazz fusion,post-bop,virtual reality",
    "domestic": true
   },
   {
@@ -1900,7 +1573,6 @@
    "note": "",
    "labelYear": 1990,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,jazz fusion,post-bop,contemporary jazz",
    "domestic": true
   },
   {
@@ -1916,7 +1588,6 @@
    "note": "",
    "labelYear": 1990,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1932,7 +1603,6 @@
    "note": "",
    "labelYear": 1990,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz",
    "domestic": true
   },
   {
@@ -1948,39 +1618,6 @@
    "note": "",
    "labelYear": 1991,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Jane Bunnett Quintet featuring Don Pullen, Billy Hart",
-   "album": "Live at Sweet Basil",
-   "year": 1991,
-   "rgMbid": "b3b57df6-d6b5-46b7-85a1-b1ad0d31877c",
-   "country": "CA",
-   "format": "CD",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "note": "Live",
-   "labelYear": 1991,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop,latin jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Steve Laury",
-   "album": "Stepping Out",
-   "year": 1991,
-   "rgMbid": "e09c4bf3-492e-46ae-be91-c52d07d3e2a1",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1991,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -1996,7 +1633,6 @@
    "note": "Live",
    "labelYear": 1991,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,swing",
    "domestic": true
   },
   {
@@ -2012,87 +1648,6 @@
    "note": "",
    "labelYear": 1991,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,bossa nova,ballad,swing",
-   "domestic": true
-  },
-  {
-   "artist": "Jane Bunnett",
-   "album": "Spirits of Havana",
-   "year": 1992,
-   "rgMbid": "a38385ea-6b93-3f28-b49f-bfd98b5bbedb",
-   "country": "CA",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1992,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,afro-cuban jazz,latin,latin jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Joe Williams",
-   "album": "Joe Williams Sings Everyday",
-   "year": 1992,
-   "rgMbid": "d93d61f7-f89c-359f-8a5e-fd08b8d19507",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1992,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:jazz,vocal jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Steve Laury",
-   "album": "Passion",
-   "year": 1992,
-   "rgMbid": "891c99b9-988c-4dc7-92ef-83bc5cc5511a",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1992,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Various Artists",
-   "album": "Imagine - John Lennon Forever",
-   "year": 1992,
-   "rgMbid": "188bd96d-97cb-463b-8796-f2a13d662364",
-   "country": "XE",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1992,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,blues,soul",
-   "domestic": true
-  },
-  {
-   "artist": "Bob Berg",
-   "album": "Virtual Reality",
-   "year": 1993,
-   "rgMbid": "13cc7095-0841-4b1c-a339-5183bbdca4b5",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1993,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:death by automobile,hard bop,jazz,jazz fusion,post-bop,virtual reality",
    "domestic": true
   },
   {
@@ -2108,23 +1663,6 @@
    "note": "Live",
    "labelYear": 1993,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,big band",
-   "domestic": true
-  },
-  {
-   "artist": "Peter Erskine",
-   "album": "Motion Poet",
-   "year": 1993,
-   "rgMbid": "ebdb2040-d3e2-3a43-805c-fcbfca82e612",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1993,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:contemporary jazz,jazz,jazz fusion",
    "domestic": true
   },
   {
@@ -2140,23 +1678,6 @@
    "note": "",
    "labelYear": 1993,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:electronic,jazz,easy listening,synth-pop,jazz fusion,smooth jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Jane Bunnett",
-   "album": "The Water is Wide",
-   "year": 1994,
-   "rgMbid": "20b320f4-77fb-473c-af4a-6dfdc826e849",
-   "country": "CA",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1994,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,post-bop",
    "domestic": true
   },
   {
@@ -2172,7 +1693,6 @@
    "note": "",
    "labelYear": 1994,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -2188,7 +1708,6 @@
    "note": "",
    "labelYear": 1994,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -2204,39 +1723,6 @@
    "note": "",
    "labelYear": 1995,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:2008 universal fire victim,bebop,dixieland,jazz,standards,swing",
-   "domestic": true
-  },
-  {
-   "artist": "Ann Hampton Callaway",
-   "album": "After Ours",
-   "year": 1997,
-   "rgMbid": "e15789f9-e7ed-39f1-a549-bbfe2dbae9f0",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1997,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:entertainer,girl singer,jazz,jazz singer,performer,vocal jazz",
-   "domestic": true
-  },
-  {
-   "artist": "Jeff Berlin",
-   "album": "Taking Notes",
-   "year": 1997,
-   "rgMbid": "e8c427b9-52d5-334b-bfc4-dc943f3a2f9d",
-   "country": "US",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": 1997,
-   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:rock,jazz,fusion,jazz rock,jazz fusion,jazz-funk",
    "domestic": true
   },
   {
@@ -2252,7 +1738,6 @@
    "note": "Live",
    "labelYear": 1997,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,hard bop",
    "domestic": true
   },
   {
@@ -2268,7 +1753,6 @@
    "note": "",
    "labelYear": 1998,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:contemporary jazz,jazz,jazz fusion,jazz(jp-list),new age,shakuhachi,world fusion",
    "domestic": true
   },
   {
@@ -2284,7 +1768,6 @@
    "note": "",
    "labelYear": 2005,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "artist:hard bop,jazz,post-bop",
    "domestic": true
   },
   {
@@ -2300,8 +1783,382 @@
    "note": "",
    "labelYear": 2017,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "rg:jazz,folk,funk",
    "domestic": true
+  },
+  {
+   "artist": "Kai Winding & J.J. Johnson",
+   "album": "Jay & Kai",
+   "year": 1954,
+   "rgMbid": "1e98ade6-88f4-3785-9186-307b1171c2a3",
+   "country": "XW",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1992,
+   "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
+   "domestic": false
+  },
+  {
+   "artist": "Charlie Byrd",
+   "album": "Blues for Night People",
+   "year": 1957,
+   "rgMbid": "6fa22d0f-e85c-4dd4-a976-2dc4f364b936",
+   "country": "XE",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1994,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Dizzy Gillespie, Milt Jackson & Joe Carroll",
+   "album": "School Days",
+   "year": 1957,
+   "rgMbid": "f7f21129-39b5-4a36-8c71-96abdb8dac4f",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1998,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Booker Ervin Quintet",
+   "album": "Cookin'",
+   "year": 1960,
+   "rgMbid": "728bc350-e679-4c58-9633-86d0f8670064",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1991,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Terumasa Hino Quintet",
+   "album": "Hi-Nology",
+   "year": 1969,
+   "rgMbid": "6fdb39e9-79c1-43ad-bbe6-4a9836d248c7",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": true,
+   "poolString": "日野皓正 | Hi-nology | 1969 (seed)",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1985,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Terumasa Hino Quartet",
+   "album": "ALONE, ALONE AND ALONE",
+   "year": 1970,
+   "rgMbid": "98c8b312-f7fd-4bb4-9803-8d47a18dd068",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1985,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Billy Harper",
+   "album": "Knowledge of Self",
+   "year": 1979,
+   "rgMbid": "ec09f5c1-f24c-49f9-919a-296cdca25505",
+   "country": "US",
+   "format": "Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1979 US）",
+   "labelYear": 1979,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Peter Erskine",
+   "album": "Transition",
+   "year": 1986,
+   "rgMbid": "8f3c6e7b-c6dc-3ea1-9988-8509f29a8efe",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1986 DE,US）",
+   "labelYear": 1986,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Zoot Sims",
+   "album": "Somebody Loves Me",
+   "year": 1987,
+   "rgMbid": "2c5650be-41e6-35bb-9de9-071078322e94",
+   "country": "XE",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1987 XE）",
+   "labelYear": 1987,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Eliane Elias",
+   "album": "Cross Currents",
+   "year": 1988,
+   "rgMbid": "4829985a-7a14-3ea2-98d2-40cb15a43101",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1988 US）",
+   "labelYear": 1988,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Uncle Festive",
+   "album": "Young People With Faces",
+   "year": 1988,
+   "rgMbid": "7f3232ba-d773-3a9c-94cb-dfe478316c22",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1988 US）",
+   "labelYear": 1988,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Henry Mancini",
+   "album": "Mancini Rocks The Pops",
+   "year": 1989,
+   "rgMbid": "1f264359-a336-3042-9934-1f1c8b8d0442",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1989 US）",
+   "labelYear": 1989,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Uncle Festive",
+   "album": "That We Do Know",
+   "year": 1989,
+   "rgMbid": "8d51df78-08a1-369d-b314-c31fe63aa2d9",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1989 US）",
+   "labelYear": 1989,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Bob Berg",
+   "album": "In the Shadows",
+   "year": 1990,
+   "rgMbid": "29340908-bb36-3611-8701-02148192c63b",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1990 US）",
+   "labelYear": 1990,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Jane Bunnett Quintet featuring Don Pullen, Billy Hart",
+   "album": "Live at Sweet Basil",
+   "year": 1991,
+   "rgMbid": "b3b57df6-d6b5-46b7-85a1-b1ad0d31877c",
+   "country": "CA",
+   "format": "CD",
+   "live": true,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1991 CA）；Live",
+   "labelYear": 1991,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Steve Laury",
+   "album": "Stepping Out",
+   "year": 1991,
+   "rgMbid": "e09c4bf3-492e-46ae-be91-c52d07d3e2a1",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1991 US）",
+   "labelYear": 1991,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Jane Bunnett",
+   "album": "Spirits of Havana",
+   "year": 1992,
+   "rgMbid": "a38385ea-6b93-3f28-b49f-bfd98b5bbedb",
+   "country": "CA",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1992 CA）",
+   "labelYear": 1992,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Joe Williams",
+   "album": "Joe Williams Sings Everyday",
+   "year": 1992,
+   "rgMbid": "d93d61f7-f89c-359f-8a5e-fd08b8d19507",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1992 US）",
+   "labelYear": 1992,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Steve Laury",
+   "album": "Passion",
+   "year": 1992,
+   "rgMbid": "891c99b9-988c-4dc7-92ef-83bc5cc5511a",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1992 US）",
+   "labelYear": 1992,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Imagine - John Lennon Forever",
+   "year": 1992,
+   "rgMbid": "188bd96d-97cb-463b-8796-f2a13d662364",
+   "country": "XE",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1992 XE）",
+   "labelYear": 1992,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Bob Berg",
+   "album": "Virtual Reality",
+   "year": 1993,
+   "rgMbid": "13cc7095-0841-4b1c-a339-5183bbdca4b5",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1993 US）",
+   "labelYear": 1993,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Peter Erskine",
+   "album": "Motion Poet",
+   "year": 1993,
+   "rgMbid": "ebdb2040-d3e2-3a43-805c-fcbfca82e612",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1993 US）",
+   "labelYear": 1993,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Jane Bunnett",
+   "album": "The Water is Wide",
+   "year": 1994,
+   "rgMbid": "20b320f4-77fb-473c-af4a-6dfdc826e849",
+   "country": "CA",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1994 CA,US）",
+   "labelYear": 1994,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Ann Hampton Callaway",
+   "album": "After Ours",
+   "year": 1997,
+   "rgMbid": "e15789f9-e7ed-39f1-a549-bbfe2dbae9f0",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1997 US）",
+   "labelYear": 1997,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
+  },
+  {
+   "artist": "Jeff Berlin",
+   "album": "Taking Notes",
+   "year": 1997,
+   "rgMbid": "e8c427b9-52d5-334b-bfc4-dc943f3a2f9d",
+   "country": "US",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1997 US,XW）",
+   "labelYear": 1997,
+   "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
+   "domestic": false
   }
  ],
  "pendingGenre": [
@@ -2318,7 +2175,6 @@
    "note": "海外原盤日本壓片；待人工判曲風",
    "labelYear": null,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": false
   },
   {
@@ -2334,7 +2190,6 @@
    "note": "海外原盤日本壓片；待人工判曲風",
    "labelYear": null,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": false
   },
   {
@@ -2350,7 +2205,6 @@
    "note": "待人工判曲風",
    "labelYear": null,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2366,7 +2220,6 @@
    "note": "待人工判曲風",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2382,7 +2235,6 @@
    "note": "待人工判曲風",
    "labelYear": 1972,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2398,7 +2250,6 @@
    "note": "待人工判曲風",
    "labelYear": 1977,
    "entity": "06a5486b-401a-4640-99b5-d42be3aa4a8d",
-   "why": "",
    "domestic": true
   },
   {
@@ -2414,7 +2265,6 @@
    "note": "待人工判曲風",
    "labelYear": 1978,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2430,7 +2280,6 @@
    "note": "待人工判曲風",
    "labelYear": 1979,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2446,7 +2295,6 @@
    "note": "待人工判曲風",
    "labelYear": 1983,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2462,7 +2310,6 @@
    "note": "待人工判曲風",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2478,7 +2325,6 @@
    "note": "待人工判曲風",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2494,7 +2340,6 @@
    "note": "待人工判曲風",
    "labelYear": 1984,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2510,7 +2355,6 @@
    "note": "待人工判曲風",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2526,7 +2370,6 @@
    "note": "待人工判曲風",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2542,7 +2385,6 @@
    "note": "待人工判曲風",
    "labelYear": 1985,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2558,7 +2400,6 @@
    "note": "待人工判曲風",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2574,7 +2415,6 @@
    "note": "待人工判曲風",
    "labelYear": 1986,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2590,7 +2430,6 @@
    "note": "待人工判曲風",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2606,7 +2445,6 @@
    "note": "待人工判曲風",
    "labelYear": 1987,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2622,7 +2460,6 @@
    "note": "待人工判曲風",
    "labelYear": 1988,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2638,7 +2475,6 @@
    "note": "待人工判曲風",
    "labelYear": 1988,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2654,7 +2490,6 @@
    "note": "待人工判曲風",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2670,7 +2505,6 @@
    "note": "待人工判曲風",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2686,7 +2520,6 @@
    "note": "待人工判曲風",
    "labelYear": 1989,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2702,7 +2535,6 @@
    "note": "待人工判曲風",
    "labelYear": 1990,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2718,7 +2550,6 @@
    "note": "待人工判曲風",
    "labelYear": 1991,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2734,7 +2565,6 @@
    "note": "待人工判曲風",
    "labelYear": 1992,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2750,7 +2580,6 @@
    "note": "待人工判曲風",
    "labelYear": 1992,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2766,7 +2595,6 @@
    "note": "待人工判曲風",
    "labelYear": 1993,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2782,7 +2610,6 @@
    "note": "待人工判曲風",
    "labelYear": 1993,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2798,7 +2625,6 @@
    "note": "待人工判曲風",
    "labelYear": 1993,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2814,7 +2640,6 @@
    "note": "待人工判曲風",
    "labelYear": 1993,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2830,7 +2655,6 @@
    "note": "待人工判曲風",
    "labelYear": 1994,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2843,10 +2667,9 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "待人工判曲風",
+   "note": "待人工判曲風；MB 只有串流版",
    "labelYear": 1994,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2862,7 +2685,6 @@
    "note": "待人工判曲風",
    "labelYear": 1995,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2878,7 +2700,6 @@
    "note": "待人工判曲風",
    "labelYear": 1995,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2894,7 +2715,6 @@
    "note": "待人工判曲風",
    "labelYear": 1997,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2910,7 +2730,6 @@
    "note": "待人工判曲風",
    "labelYear": 1998,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2926,7 +2745,6 @@
    "note": "待人工判曲風",
    "labelYear": 1999,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2942,7 +2760,6 @@
    "note": "待人工判曲風",
    "labelYear": 2004,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2955,10 +2772,9 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "待人工判曲風",
+   "note": "待人工判曲風；MB 只有串流版",
    "labelYear": 2010,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2974,7 +2790,6 @@
    "note": "待人工判曲風",
    "labelYear": 2011,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -2990,7 +2805,6 @@
    "note": "待人工判曲風",
    "labelYear": 2013,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -3006,7 +2820,6 @@
    "note": "待人工判曲風",
    "labelYear": 2018,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -3022,7 +2835,6 @@
    "note": "待人工判曲風",
    "labelYear": 2018,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -3038,7 +2850,6 @@
    "note": "待人工判曲風",
    "labelYear": 2018,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -3054,7 +2865,6 @@
    "note": "待人工判曲風",
    "labelYear": 2019,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -3070,7 +2880,6 @@
    "note": "待人工判曲風",
    "labelYear": 2020,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -3086,7 +2895,6 @@
    "note": "待人工判曲風",
    "labelYear": 2020,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   },
   {
@@ -3102,7 +2910,6 @@
    "note": "待人工判曲風",
    "labelYear": 2024,
    "entity": "c2a2049a-2eff-4ab1-b052-30ff599cd991",
-   "why": "",
    "domestic": true
   }
  ],

@@ -1,5 +1,5 @@
 {
- "label": "polydor-jp",
+ "label": "Polydor Japan",
  "entities": [
   {
    "id": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
@@ -22,86 +22,6 @@
  ],
  "rows": [
   {
-   "artist": "Isao Etoh",
-   "album": "Bass Bass Bass",
-   "year": null,
-   "rgMbid": "99e3297a-6ad2-4fbe-86a6-d3bee3e2b6ce",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "",
-   "labelYear": null,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,pop,jazz,easy listening",
-   "domestic": true
-  },
-  {
-   "artist": "The Ben Webster Quintet",
-   "album": "Soulville",
-   "year": 1957,
-   "rgMbid": "e4dd651d-3c51-4e2a-a9b0-f0f6a4f135cf",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "Ben Webster | Soulville | 1957 (seed)",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1990,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,instrumental jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Baden Powell",
-   "album": "Le Monde Musical de Baden Powell, Volume 2",
-   "year": 1969,
-   "rgMbid": "53b68447-d0af-3d51-97e3-2d0f5f01ce11",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1999,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:bossa nova,jazz,latin,latin jazz,samba-jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Jack Bruce",
-   "album": "Songs for a Tailor",
-   "year": 1969,
-   "rgMbid": "65f4df9f-7655-396b-90ca-f3a4680e6326",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1992,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,progressive rock,jazz,jazz rock,classic pop and rock",
-   "domestic": false
-  },
-  {
-   "artist": "Paul Desmond",
-   "album": "Summertime",
-   "year": 1969,
-   "rgMbid": "5f1a42c9-e953-39da-897a-f609860e15ac",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1998,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,soul,bossa nova,cool jazz,samba-jazz",
-   "domestic": false
-  },
-  {
    "artist": "石川晶とカウント・バッファローズ",
    "album": "バキシンバ：アフリカの想い出",
    "year": 1970,
@@ -114,7 +34,6 @@
    "note": "",
    "labelYear": 1970,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz-funk",
    "domestic": true
   },
   {
@@ -130,7 +49,6 @@
    "note": "",
    "labelYear": 1971,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,jazz,jazz rock,psychedelic rock",
    "domestic": true
   },
   {
@@ -146,40 +64,7 @@
    "note": "",
    "labelYear": 2000,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,pop,jazz,folk rock,jazz rock,psychedelic rock,soft rock",
    "domestic": true
-  },
-  {
-   "artist": "The J.B.’s",
-   "album": "Food for Thought",
-   "year": 1972,
-   "rgMbid": "2ec80ef6-5460-37ff-8745-e9bb942fa84a",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "The J.B.’s | Food for Thought | 1972 (seed)",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1990,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:funk,jazz,soul jazz",
-   "domestic": false
-  },
-  {
-   "artist": "Chick Corea and Return to Forever",
-   "album": "Light as a Feather",
-   "year": 1973,
-   "rgMbid": "bd0ad2df-0cb0-33e5-8619-fcee0dc0502a",
-   "country": "JP",
-   "format": "SHM-CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "Return to Forever | Light as a Feather | 1973 (seed)",
-   "note": "海外原盤日本壓片",
-   "labelYear": 2007,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,fusion,jazz rock,jazz fusion,jazz-rock",
-   "domestic": false
   },
   {
    "artist": "Prism",
@@ -194,7 +79,6 @@
    "note": "",
    "labelYear": 1977,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,jazz,fusion",
    "domestic": true
   },
   {
@@ -210,7 +94,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz rock",
    "domestic": true
   },
   {
@@ -226,7 +109,6 @@
    "note": "",
    "labelYear": 1978,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz rock",
    "domestic": true
   },
   {
@@ -242,24 +124,7 @@
    "note": "Live",
    "labelYear": 1979,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,jazz,jazz rock",
    "domestic": true
-  },
-  {
-   "artist": "Pat Metheny",
-   "album": "80/81",
-   "year": 1980,
-   "rgMbid": "64a01eb3-4ec4-3329-a065-88c562028c00",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": true,
-   "poolString": "Pat Metheny | 80/81 | 1980 (seed)",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1989,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,post bop",
-   "domestic": false
   },
   {
    "artist": "south wind section",
@@ -274,7 +139,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,jazz,reggae,fusion,jazz-funk,latin,aor",
    "domestic": true
   },
   {
@@ -290,7 +154,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,classical,jazz,experimental,modern classical",
    "domestic": true
   },
   {
@@ -306,7 +169,6 @@
    "note": "",
    "labelYear": 1982,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,pop,jazz,disco,pop rock,city pop,kayōkyoku",
    "domestic": true
   },
   {
@@ -322,7 +184,6 @@
    "note": "",
    "labelYear": 1983,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:pop,jazz,ballad",
    "domestic": true
   },
   {
@@ -338,7 +199,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -354,7 +214,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -370,7 +229,6 @@
    "note": "",
    "labelYear": 1984,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:jazz",
    "domestic": true
   },
   {
@@ -386,24 +244,7 @@
    "note": "",
    "labelYear": 1984,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz-funk,free jazz",
    "domestic": true
-  },
-  {
-   "artist": "The Style Council",
-   "album": "Our Favourite Shop",
-   "year": 1985,
-   "rgMbid": "b3e21c5d-b453-3983-8e02-f3550ddbe1fd",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1990,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:classic pop and rock,jazz,pop rock,rock",
-   "domestic": false
   },
   {
    "artist": "Toshinori Kondo & IMA",
@@ -418,7 +259,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,jazz,experimental,abstract,jazz-rock",
    "domestic": true
   },
   {
@@ -434,7 +274,6 @@
    "note": "",
    "labelYear": 1985,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,downtempo,pop,jazz,easy listening,synth-pop,ballad",
    "domestic": true
   },
   {
@@ -450,7 +289,6 @@
    "note": "",
    "labelYear": null,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz-funk,latin,latin jazz",
    "domestic": true
   },
   {
@@ -466,7 +304,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:jazz fusion,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -482,7 +319,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:jazz,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -498,7 +334,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,jazz,jazz-funk",
    "domestic": true
   },
   {
@@ -514,7 +349,6 @@
    "note": "",
    "labelYear": 1986,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,soul jazz",
    "domestic": true
   },
   {
@@ -530,7 +364,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:jazz fusion,jazz(jp-list)",
    "domestic": true
   },
   {
@@ -546,7 +379,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -562,7 +394,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:brit funk,britfunk,jazz,jazz fusion,jazz-funk,post-disco,smooth jazz",
    "domestic": true
   },
   {
@@ -578,7 +409,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,soul jazz",
    "domestic": true
   },
   {
@@ -594,7 +424,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,smooth jazz",
    "domestic": true
   },
   {
@@ -610,7 +439,6 @@
    "note": "",
    "labelYear": 1987,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:hard bop,jazz,jazz fusion,jazz(jp-list),jazz-funk,post-bop",
    "domestic": true
   },
   {
@@ -626,7 +454,6 @@
    "note": "Live",
    "labelYear": 1988,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz-funk,smooth jazz",
    "domestic": true
   },
   {
@@ -642,7 +469,6 @@
    "note": "Live",
    "labelYear": 1988,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz",
    "domestic": true
   },
   {
@@ -658,7 +484,6 @@
    "note": "",
    "labelYear": 1988,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz-funk,soul jazz,smooth jazz",
    "domestic": true
   },
   {
@@ -674,7 +499,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:aor,blue-eyed soul,jazz,jazz-funk,r&b,singer-songwriter,soul,white soul",
    "domestic": true
   },
   {
@@ -690,7 +514,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,soul jazz,smooth jazz",
    "domestic": true
   },
   {
@@ -706,7 +529,6 @@
    "note": "",
    "labelYear": 1989,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,jazz fusion,jazz-funk,1989,jazz guitar",
    "domestic": true
   },
   {
@@ -722,7 +544,6 @@
    "note": "",
    "labelYear": 1990,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:fusion",
    "domestic": true
   },
   {
@@ -738,7 +559,6 @@
    "note": "",
    "labelYear": 1990,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,easy listening",
    "domestic": true
   },
   {
@@ -754,7 +574,6 @@
    "note": "",
    "labelYear": 1990,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,soul jazz",
    "domestic": true
   },
   {
@@ -770,7 +589,6 @@
    "note": "",
    "labelYear": 1990,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:funk,jazz,soul jazz",
    "domestic": true
   },
   {
@@ -786,7 +604,6 @@
    "note": "",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:fusion",
    "domestic": true
   },
   {
@@ -802,7 +619,6 @@
    "note": "",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:brit funk,britfunk,jazz,jazz fusion,jazz-funk,post-disco,smooth jazz",
    "domestic": true
   },
   {
@@ -818,7 +634,6 @@
    "note": "",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:adult contemporary,contemporary r&b,dance-pop,new jack swing,pop,pop soul,soul",
    "domestic": true
   },
   {
@@ -834,7 +649,6 @@
    "note": "",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,downtempo,pop,jazz,easy listening,synth-pop,ballad",
    "domestic": true
   },
   {
@@ -850,7 +664,6 @@
    "note": "",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,ambient,jazz,fusion,instrumental rock,jazz fusion,1992",
    "domestic": true
   },
   {
@@ -866,7 +679,6 @@
    "note": "",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,contemporary jazz,soul jazz,smooth jazz,latin jazz",
    "domestic": true
   },
   {
@@ -882,7 +694,6 @@
    "note": "",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:fusion",
    "domestic": true
   },
   {
@@ -898,7 +709,6 @@
    "note": "Live",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:fusion",
    "domestic": true
   },
   {
@@ -914,7 +724,6 @@
    "note": "",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,classical,ambient,jazz,new age",
    "domestic": true
   },
   {
@@ -930,7 +739,6 @@
    "note": "",
    "labelYear": 1993,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:fusion",
    "domestic": true
   },
   {
@@ -946,24 +754,7 @@
    "note": "",
    "labelYear": 1994,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:fusion",
    "domestic": true
-  },
-  {
-   "artist": "Katerine",
-   "album": "L’Éducation anglaise",
-   "year": 1994,
-   "rgMbid": "96605b3a-873d-3f98-aa5d-6c782ba50213",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "note": "海外原盤日本壓片",
-   "labelYear": 1995,
-   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:pop,jazz,easy listening,chanson",
-   "domestic": false
   },
   {
    "artist": "Toninho Horta",
@@ -978,7 +769,6 @@
    "note": "",
    "labelYear": 1994,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:jazz",
    "domestic": true
   },
   {
@@ -994,7 +784,6 @@
    "note": "",
    "labelYear": 1995,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:fusion",
    "domestic": true
   },
   {
@@ -1010,7 +799,6 @@
    "note": "",
    "labelYear": 1996,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,post-bop,hard bop,contemporary jazz,piano jazz,jazz instrument",
    "domestic": true
   },
   {
@@ -1026,7 +814,6 @@
    "note": "",
    "labelYear": 1996,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,classical,jungle,jazz",
    "domestic": true
   },
   {
@@ -1042,7 +829,6 @@
    "note": "",
    "labelYear": 1996,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,alternative rock,deep slacker jazz",
    "domestic": true
   },
   {
@@ -1058,7 +844,6 @@
    "note": "",
    "labelYear": 1998,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,house,deep house,future jazz",
    "domestic": true
   },
   {
@@ -1074,7 +859,6 @@
    "note": "",
    "labelYear": 1998,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:future jazz",
    "domestic": true
   },
   {
@@ -1090,7 +874,6 @@
    "note": "",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:rock,jazz,punk,jazz rock",
    "domestic": true
   },
   {
@@ -1106,7 +889,6 @@
    "note": "Remix",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:acid jazz,jazz,jazz and blues",
    "domestic": true
   },
   {
@@ -1122,7 +904,6 @@
    "note": "",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:electronic,jazz,acid jazz",
    "domestic": true
   },
   {
@@ -1138,7 +919,6 @@
    "note": "Live",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:jazz,contemporary jazz",
    "domestic": true
   },
   {
@@ -1154,7 +934,6 @@
    "note": "",
    "labelYear": 2000,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:cabaret,european,german,jazz",
    "domestic": true
   },
   {
@@ -1170,7 +949,6 @@
    "note": "",
    "labelYear": 2001,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "rg:pop,jazz,j-pop,soul jazz",
    "domestic": true
   },
   {
@@ -1186,8 +964,157 @@
    "note": "",
    "labelYear": 2001,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "artist:acid jazz,jazz,jazz and blues",
    "domestic": true
+  },
+  {
+   "artist": "Isao Etoh",
+   "album": "Bass Bass Bass",
+   "year": null,
+   "rgMbid": "99e3297a-6ad2-4fbe-86a6-d3bee3e2b6ce",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "",
+   "labelYear": null,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": true
+  },
+  {
+   "artist": "The Ben Webster Quintet",
+   "album": "Soulville",
+   "year": 1957,
+   "rgMbid": "e4dd651d-3c51-4e2a-a9b0-f0f6a4f135cf",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": true,
+   "poolString": "Ben Webster | Soulville | 1957 (seed)",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1990,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "Baden Powell",
+   "album": "Le Monde Musical de Baden Powell, Volume 2",
+   "year": 1969,
+   "rgMbid": "53b68447-d0af-3d51-97e3-2d0f5f01ce11",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1999,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "Jack Bruce",
+   "album": "Songs for a Tailor",
+   "year": 1969,
+   "rgMbid": "65f4df9f-7655-396b-90ca-f3a4680e6326",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1992,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "Paul Desmond",
+   "album": "Summertime",
+   "year": 1969,
+   "rgMbid": "5f1a42c9-e953-39da-897a-f609860e15ac",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1998,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "The J.B.’s",
+   "album": "Food for Thought",
+   "year": 1972,
+   "rgMbid": "2ec80ef6-5460-37ff-8745-e9bb942fa84a",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": true,
+   "poolString": "The J.B.’s | Food for Thought | 1972 (seed)",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1990,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "Chick Corea and Return to Forever",
+   "album": "Light as a Feather",
+   "year": 1973,
+   "rgMbid": "bd0ad2df-0cb0-33e5-8619-fcee0dc0502a",
+   "country": "JP",
+   "format": "SHM-CD",
+   "live": false,
+   "inPool": true,
+   "poolString": "Return to Forever | Light as a Feather | 1973 (seed)",
+   "note": "海外原盤日本壓片",
+   "labelYear": 2007,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "Pat Metheny",
+   "album": "80/81",
+   "year": 1980,
+   "rgMbid": "64a01eb3-4ec4-3329-a065-88c562028c00",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": true,
+   "poolString": "Pat Metheny | 80/81 | 1980 (seed)",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1989,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "The Style Council",
+   "album": "Our Favourite Shop",
+   "year": 1985,
+   "rgMbid": "b3e21c5d-b453-3983-8e02-f3550ddbe1fd",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片",
+   "labelYear": 1990,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
+  },
+  {
+   "artist": "Katerine",
+   "album": "L’Éducation anglaise",
+   "year": 1994,
+   "rgMbid": "96605b3a-873d-3f98-aa5d-6c782ba50213",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "inPool": false,
+   "poolString": "",
+   "note": "海外原盤日本壓片（初版 1994 FR）",
+   "labelYear": 1995,
+   "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
+   "domestic": false
   }
  ],
  "pendingGenre": [
@@ -1204,7 +1131,6 @@
    "note": "待人工判曲風",
    "labelYear": 1961,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1220,7 +1146,6 @@
    "note": "待人工判曲風",
    "labelYear": 1968,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1236,7 +1161,6 @@
    "note": "待人工判曲風",
    "labelYear": 1970,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1252,7 +1176,6 @@
    "note": "待人工判曲風",
    "labelYear": 1973,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1268,7 +1191,6 @@
    "note": "待人工判曲風",
    "labelYear": 1974,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1284,7 +1206,6 @@
    "note": "待人工判曲風",
    "labelYear": 1975,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1300,7 +1221,6 @@
    "note": "待人工判曲風",
    "labelYear": 1977,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1316,7 +1236,6 @@
    "note": "待人工判曲風",
    "labelYear": 1979,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1332,7 +1251,6 @@
    "note": "待人工判曲風",
    "labelYear": 1986,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1348,7 +1266,6 @@
    "note": "待人工判曲風",
    "labelYear": 2022,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1364,7 +1281,6 @@
    "note": "待人工判曲風",
    "labelYear": 1986,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1380,7 +1296,6 @@
    "note": "待人工判曲風",
    "labelYear": 1987,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1396,7 +1311,6 @@
    "note": "待人工判曲風",
    "labelYear": 1988,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1412,7 +1326,6 @@
    "note": "待人工判曲風",
    "labelYear": 1989,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1428,7 +1341,6 @@
    "note": "待人工判曲風；Live",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1444,7 +1356,6 @@
    "note": "待人工判曲風",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1460,7 +1371,6 @@
    "note": "待人工判曲風",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1476,7 +1386,6 @@
    "note": "待人工判曲風",
    "labelYear": 1991,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1492,7 +1401,6 @@
    "note": "待人工判曲風",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1508,7 +1416,6 @@
    "note": "待人工判曲風",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1524,7 +1431,6 @@
    "note": "待人工判曲風",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1540,7 +1446,6 @@
    "note": "待人工判曲風",
    "labelYear": 1992,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1556,7 +1461,6 @@
    "note": "待人工判曲風",
    "labelYear": 1993,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1572,7 +1476,6 @@
    "note": "待人工判曲風",
    "labelYear": 1993,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1588,7 +1491,6 @@
    "note": "待人工判曲風",
    "labelYear": 1993,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1604,7 +1506,6 @@
    "note": "待人工判曲風",
    "labelYear": 1994,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1620,7 +1521,6 @@
    "note": "待人工判曲風",
    "labelYear": 1994,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1636,7 +1536,6 @@
    "note": "待人工判曲風",
    "labelYear": 1995,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1652,7 +1551,6 @@
    "note": "待人工判曲風",
    "labelYear": 1995,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1668,7 +1566,6 @@
    "note": "待人工判曲風",
    "labelYear": 1997,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1684,7 +1581,6 @@
    "note": "待人工判曲風",
    "labelYear": 1997,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1700,7 +1596,6 @@
    "note": "待人工判曲風",
    "labelYear": 1998,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1716,7 +1611,6 @@
    "note": "待人工判曲風",
    "labelYear": 1998,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1732,7 +1626,6 @@
    "note": "待人工判曲風",
    "labelYear": 1998,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1748,7 +1641,6 @@
    "note": "待人工判曲風",
    "labelYear": 1998,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1764,7 +1656,6 @@
    "note": "待人工判曲風",
    "labelYear": 1998,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1780,7 +1671,6 @@
    "note": "待人工判曲風",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1793,10 +1683,9 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "待人工判曲風",
+   "note": "待人工判曲風；疑 MB 重複 RG（同名另筆 b203e6fa）",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1812,7 +1701,6 @@
    "note": "待人工判曲風；Live",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1828,7 +1716,6 @@
    "note": "待人工判曲風；Live",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1844,7 +1731,6 @@
    "note": "待人工判曲風；Live",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1860,7 +1746,6 @@
    "note": "待人工判曲風；Live",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1876,7 +1761,6 @@
    "note": "待人工判曲風；Live",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1892,7 +1776,6 @@
    "note": "待人工判曲風；Live",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1908,7 +1791,6 @@
    "note": "待人工判曲風",
    "labelYear": 1999,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1924,7 +1806,6 @@
    "note": "待人工判曲風",
    "labelYear": 2000,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1940,7 +1821,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "1257c535-8a62-4061-8956-91bd7086246b",
-   "why": "",
    "domestic": true
   },
   {
@@ -1956,7 +1836,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1972,7 +1851,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -1988,7 +1866,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2004,7 +1881,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "1257c535-8a62-4061-8956-91bd7086246b",
-   "why": "",
    "domestic": true
   },
   {
@@ -2020,7 +1896,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "1257c535-8a62-4061-8956-91bd7086246b",
-   "why": "",
    "domestic": true
   },
   {
@@ -2036,7 +1911,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "1257c535-8a62-4061-8956-91bd7086246b",
-   "why": "",
    "domestic": true
   },
   {
@@ -2052,7 +1926,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "1257c535-8a62-4061-8956-91bd7086246b",
-   "why": "",
    "domestic": true
   },
   {
@@ -2068,7 +1941,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "1257c535-8a62-4061-8956-91bd7086246b",
-   "why": "",
    "domestic": true
   },
   {
@@ -2084,7 +1956,6 @@
    "note": "待人工判曲風",
    "labelYear": 2001,
    "entity": "1257c535-8a62-4061-8956-91bd7086246b",
-   "why": "",
    "domestic": true
   },
   {
@@ -2100,7 +1971,6 @@
    "note": "待人工判曲風",
    "labelYear": 2002,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2116,7 +1986,6 @@
    "note": "待人工判曲風",
    "labelYear": 2002,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2132,7 +2001,6 @@
    "note": "待人工判曲風",
    "labelYear": 2002,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2148,7 +2016,6 @@
    "note": "待人工判曲風",
    "labelYear": 2004,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2164,7 +2031,6 @@
    "note": "待人工判曲風",
    "labelYear": 2004,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2180,7 +2046,6 @@
    "note": "待人工判曲風",
    "labelYear": 2005,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2193,10 +2058,9 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "待人工判曲風",
+   "note": "待人工判曲風；疑 MB 重複 RG（同名另筆 ab792ef5）",
    "labelYear": 2005,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2212,7 +2076,6 @@
    "note": "待人工判曲風",
    "labelYear": 2011,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2228,7 +2091,6 @@
    "note": "待人工判曲風",
    "labelYear": 2022,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   },
   {
@@ -2244,7 +2106,6 @@
    "note": "待人工判曲風",
    "labelYear": 2022,
    "entity": "adde0cb6-4535-47b8-9b10-f18cc0b466ae",
-   "why": "",
    "domestic": true
   }
  ],
