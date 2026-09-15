@@ -149,7 +149,10 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   // c-130 波蘭：pl 優先，再走中東歐與德法。
   c130: ['pl', 'de', 'cz', 'sk', 'hu', 'gb', 'us', 'fr'],
   // c-131 爵士深度：日本盤 jp 優先，再走美英歐。
-  c131: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'] };
+  c131: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c132: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c133: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'],
+  c134: ['jp', 'us', 'gb', 'de', 'fr', 'nl', 'tw', 'ca'] };
 
 const cards = [];
 for (const b of BATCHES)
