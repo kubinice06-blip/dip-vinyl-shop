@@ -6120,3 +6120,17 @@ c-135 第 453 條：Miles Davis《Volume 1》BLP 1501、Fats Navarro《The Fabul
 **裁定**：Blue Note 1939–66 六批跑完後，**另開一個 §5.6 子批**，從那 636 張裡撈「1500／4000 系列目錄號、同一位藝人、
 MB 標 Compilation」的，逐張走 §5.6（兩個本盤層級的 HTTPS 舉證）。**主線這輪先記著，不插隊。**
 另 c-135 第 450 條抓到 MB 把 BLP 5021 與 5030 折成同一 RG（5021 記 §1 候選）、第 451 條《New Sounds》BLP 5010 是 split 合輯（§5.6 候補）。
+
+## 第 313 條（主線 2026-09-15，Blue Note 線 c-137／c-138 交件後）：**「Blue Note 目錄」的邊界——Capitol 自家藝人的原盤、只在 1985 後再發時掛了 Blue Note 名的，不歸此線**
+
+列舉檔（MB `release?label=Blue Note`）把 1990 年代 EMI 再發系列掛 Blue Note 名的 Capitol 原盤也撈進來了：
+c-137 a 的 George Shearing《The Shearing Piano》《Black Satin》、June Christy《Fair and Warmer!》，
+c-138 b 的 George Shearing《White Satin》、Frank Sinatra《Sinatra's Swingin' Session!!!》，c-137 b 的 Peggy Lee《Things Are Swingin'》。
+**六張全退。**
+
+**邊界這樣定**：簡報第一節第 3 點「原盤他廠照收」是為 **Pacific Jazz／Transition／Jazz:West／Vogue／World Pacific／United Artists**
+那種**被 Blue Note（經 Liberty／UA）併購或授權、在 1960–80 年代以 Blue Note 目錄號再發**的爵士盤設的——那些是 Blue Note 目錄的一部分。
+**Capitol 自家藝人的原盤，Blue Note 只在 1985 後的 CD／數位再發系列裡出現**——那是 EMI 集團內的品牌調度，不是目錄。
+**判準是「Blue Note 的關聯始於哪一年」：1985 前有 Blue Note 目錄號的收；只有 1985 後再發掛名的退。**
+列舉檔 1,812 張裡這種形狀還會有（1985 後那段尤其多），**c-139 起的派工信要帶這條。**
+另：c-138 第 525 條《Montgomeryland》七人並列掛 `Wes Montgomery`、第 52x 條 Babe's Blues 1961→1986（vault 盤）全數追認。
