@@ -1,0 +1,770 @@
+[
+ {
+  "key": "desc4:本田竹広|Jōdo",
+  "artist": "本田竹広",
+  "album": "Jōdo",
+  "facts": [
+   {
+    "f": "release-group 6d937ed0 的欄位：title「Jōdo」、artist-credit「本田竹広」（掛個人實體 b90d79a5，MB 主名同字）、first-release-date 1970、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1970 Trio RSP-9018、Official、Vinyl 4 軌，無 barcode。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6d937ed0-f0b7-461a-8c5e-a1f42e550e2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1970 原盤 4 軌逐軌（RSP-9018 那筆 release 的軌長）：1〈Jōdo〉11:33、2〈Lazy Dream〉8:04、3〈The Way To Brooklyn〉9:05、4〈Second Country〉6:12，全長約 35 分鐘，四首各佔一面的一半。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6d937ed0-f0b7-461a-8c5e-a1f42e550e2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "三重奏的另兩角是 Reggie Workman（貝斯）與 日野元彦（鼓），本田竹広彈鋼琴，內頁解說由 油井正一 執筆；1970 年的原盤是對開封套、附腰帶與摺頁。",
+    "src": "https://www.discogs.com/release/6920517"
+   },
+   {
+    "f": "錄音在 1970 年 12 月，是他 Trio Records 時期第三張領銜作；同期的三張依序是 1969 年 12 月錄的《本田竹彦の魅力》（1970 年發行，與 渡辺貞夫 合作，他的第一張領銜作）、1970 年 3 月錄的《ザ・トリオ》、以及本張。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   },
+   {
+    "f": "本田竹広 1945 年 8 月 21 日生於岩手縣宮古市、本名 本田昂，國立音樂大學畢業，1966 年起以職業樂手身分在 渡辺明、武田和命 的編制裡演奏，1968 年組成自己的第一個領銜三重奏。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   },
+   {
+    "f": "1970 年原盤封面的掛名印的是「T. Honda＝本田竹彦」——他的藝名在 本田竹広、本田竹彦、本田竹曠 三種漢字之間換過。",
+    "src": "https://www.discogs.com/release/6920517"
+   }
+  ],
+  "hookCandidates": [
+   "三重奏的貝斯是 Reggie Workman——Coltrane 的貝斯手，坐在一張以佛教「淨土」為名的日本唱片裡",
+   "盤名叫《淨土》，四首各佔半面，封面上的名字還不是他後來用的那三個字"
+  ],
+  "sound": "四軌、約 35 分鐘，每首八到十一分半，四首各佔一面的一半——這是長篇即興的規格，不是曲集。標題曲〈Jōdo〉11:33 最長，〈Second Country〉6:12 最短。鋼琴三重奏，Reggie Workman 的貝斯與 日野元彦 的鼓在長段落裡推，鋼琴走調式而不是和弦進行。Apple 把它標成「- EP」，那是 4 軌帶來的欄位誤判，原盤是 12 吋黑膠。",
+  "keyTracks": [
+   "Jōdo",
+   "The Way To Brooklyn",
+   "Second Country"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（首發年）。release-group first-release-date 1970、轄下唯一一筆 release 就是 1970 年 Trio RSP-9018 原盤、Discogs 6920517 同記 1970，無再發失真。ja.wikipedia 本田竹広 條目記「1970 年 12 月錄音、1970 年發行」——錄音月與發行年同年，行文寫「1970 年」即可，不要斷言月份。",
+  "notes": "**覆核策展層：MB 逐欄實查相符，年份與封面判斷成立。** RG 四欄與唯一一筆 release（JP 1970 Official Vinyl 4 軌／Trio RSP-9018）與 mbNote 完全相符；CAA release-group 端點覆核 **200**，策展層的封面判斷成立。｜⚠ **推翻策展層的店面結論**：`curatorRisk` 與 `apple-candidates.md` 都寫本張「藝人目錄查不到」，**實際查得到，而且在另一個 artistId 底下**——Apple 的 本田竹広 有三個 artistId（`1508942921` 本田竹広／`250055187` 本田竹曠／`366407604` 本田竹曠トリオ），Trio Records 的整段目錄全部掛在 **`250055187`** 那個。第三種查法直查 `lookup?id=1327644024&country=jp&entity=song` 實跑：《浄土 - EP》4 軌、℗ TRIO RECORDS、曲序與 1970 原盤逐軌相同（浄土 11:34／Lazy Dream 3:05／The Way to Brooklyn 9:01／Second Country 6:11）。**有固定試聽來源，採信 1327644024**；備用 `1492984291`《浄土 remaster - EP》（2012 Solid Records，同 4 軌）。⚠ 第 2 軌長度兩邊差很多（資料庫端登記 8:04、店面 3:05），**正文不得引單軌長度**，引軌數要說「原盤四首」。｜**掛名**：RG credit 與實體主名都是 `本田竹広`，卡單一致；1970 年原盤封面印的是 **本田竹彦**（第三種漢字，ja.wikipedia 明記「芸名は本田竹彦・本田竹曠とした時期あり」），策展層 queryAlias 已備 本田竹曠／Takehiro Honda／T. Honda，**建議本機再補 本田竹彦**。｜**人名邊界**：Reggie Workman、日野元彦、油井正一 三位有 Discogs 盤面 credit，可寫；日野元彦 是 c-134 b 組的掛名，本張與 c-134 有交集。｜**反同構（本田六張）**：本張的切入點是「Reggie Workman＋日野元彦＋四首長篇＋淨土」，《The Trio》走「Trio 第一張、三重奏同名」，兩張不得共用起源骨架。"
+ },
+ {
+  "key": "desc4:本田竹広|The Trio",
+  "artist": "本田竹広",
+  "album": "The Trio",
+  "facts": [
+   {
+    "f": "release-group ece8ab7a 的欄位：title「The Trio」、artist-credit「本田竹広」、first-release-date 1970、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1970 Trio RSP-9008、Official、Vinyl 5 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ece8ab7a-a39a-45ac-abe0-5b0697050319&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1970 原盤 5 軌逐軌：1〈This Guy's In Love With You〉4:43、2〈Hakai To Jojyo〉7:31、3〈Fall In Love Too Easily〉6:14、4〈CMT & T〉8:10、5〈Emergency〉9:30。第 2 軌的日文原題是〈破壊と叙情〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ece8ab7a-a39a-45ac-abe0-5b0697050319&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音日期是 1970 年 3 月 10 日，三重奏是 本田竹広（鋼琴）、鈴木良雄（貝斯）、渡辺文男（鼓）；封面攝影是 石元泰博，解說 岩浪洋三，原盤定價 2000 日圓，腰帶上印著「トリオジャズシリーズ 第2回発売」。",
+    "src": "https://www.discogs.com/release/3762672"
+   },
+   {
+    "f": "Trio Records 是音響廠商 Trio（トリオ株式会社，今日的 Kenwood）的唱片部門，本田竹広 1970 年代前半的領銜作幾乎都在這家：RSP-9008《ザ・トリオ》、RSP-9018《浄土》、RSP-9021《アイ・ラブ・ユー》、RSP-9026《ワッツ・ゴーイング・オン》，加上 1972 年的《ジス・イズ・ホンダ》。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   },
+   {
+    "f": "《ジス・イズ・ホンダ》（1972 年 4 月錄音）拿下《スイングジャーナル》選定的ジャズ・ディスク大賞最優秀錄音賞，是他 Trio 時期評價最高的一張。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   }
+  ],
+  "hookCandidates": [
+   "腰帶上寫著「トリオジャズシリーズ 第2回発売」——唱片公司是音響廠商，藝人叫本田，盤名就叫《The Trio》",
+   "第二軌叫〈破壊と叙情〉，英文盤面只印羅馬拼音 Hakai To Jojyo，聽的人不知道那是什麼意思"
+  ],
+  "sound": "五軌、約 36 分鐘。開場拿 Burt Bacharach 的〈This Guy's In Love With You〉4:43 當最短的一首，其餘四首都在六到九分半，〈Emergency〉9:30 收尾。鋼琴三重奏編制，鈴木良雄 的貝斯與 渡辺文男 的鼓不是伴奏而是對話對象；自作曲〈破壊と叙情〉7:31 的標題把這張的兩極講清楚了。Apple 把它標成「- EP」，那是 5 軌造成的欄位誤判，原盤是 12 吋黑膠。",
+  "keyTracks": [
+   "Hakai To Jojyo",
+   "Emergency",
+   "CMT & T"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（首發年）。release-group first-release-date 1970、唯一一筆 release 就是 1970 年 Trio RSP-9008 原盤、Discogs 3762672 同記 1970、ja.wikipedia 記「1970 年 3 月錄音、1970 年發行」，四邊一致。Apple 的 1987-07-01 是 Trio 的 CD 化年、2012-03-21 是 Solid Records 的重製年，皆不取。",
+  "notes": "**覆核策展層：MB 相符，年份成立，店面結論被推翻。** RG 四欄與唯一一筆 release（JP 1970 Official Vinyl 5 軌／Trio RSP-9008）與 mbNote 相符；CAA 覆核 **200**。｜⚠ **推翻策展層的一處說法**：`curatorWhy` 寫本張「是本田竹広在 Trio 的第一張三重奏領銜盤，也是這條線的起點」——**ja.wikipedia 的目錄裡它是第二張**，第一張是 1969 年 12 月錄音、1970 年發行的《本田竹彦の魅力》（Trio，與 渡辺貞夫 合作，條目明記「初リーダー作品」）。**正文不得寫「第一張」「起點」**，只能寫「Trio 時期最早的三重奏盤之一」或直接寫編號 RSP-9008。與第 253 條同形。｜⚠ **推翻店面判斷**：策展層說 Apple 兩筆「都不是 1970 原盤」而未下採信結論；第三種查法直查 `lookup?id=1329348273&country=jp&entity=song` 實跑：《The Trio - EP》5 軌、℗ TRIO RECORDS、掛名「本田竹曠」，曲序與 1970 原盤逐軌相同、長度差 1–8 秒（4:47／7:30／6:11／8:02／9:28）。**有固定試聽來源，採信 1329348273**；備用 `1492982668`《ザ・トリオ remaster》（2012 Solid，同 5 軌）。兩筆都在 artistId `250055187`（本田竹曠）的目錄裡，**不在 `1508942921`（本田竹広）底下**——同一位藝人三個 artistId，這是本組最大的漏查來源。｜**人名邊界**：鈴木良雄、渡辺文男、石元泰博、岩浪洋三 四位都有 Discogs 盤面 credit，可寫；⚠ **渡辺文男 是 c-134 b 組的掛名**（3 張），跨批交集要記。｜**反同構**：本張切入「1970-03-10 錄音＋鈴木良雄／渡辺文男＋〈破壊と叙情〉＋トリオジャズシリーズ第二回」，《Jōdo》走 Reggie Workman 與四首長篇，兩張不得互抄。"
+ },
+ {
+  "key": "desc4:本田竹広|I Love You",
+  "artist": "本田竹広",
+  "album": "I Love You",
+  "facts": [
+   {
+    "f": "release-group 2b50e607 的欄位：title「I Love You」、artist-credit「本田竹曠」（掛的實體仍是 b90d79a5，MB 主名「本田竹広」）、first-release-date 1971、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1971 Vinyl 5 軌，Official，label-info 有「Trio」但目錄編號欄是空的。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2b50e607-63f2-4e3b-8f97-a2ad5cab09a8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1971 原盤的目錄編號是 Trio Records RSP-9021，錄音日期 1971 年 4 月 30 日，三重奏是 本田竹広（鋼琴）、鈴木良雄（貝斯）、村上寛（鼓），封面設計 松野勲、攝影 荒井聡，附日文解說。",
+    "src": "https://www.discogs.com/release/3671510"
+   },
+   {
+    "f": "5 軌逐軌（資料庫端登記的軌長）：1〈I Love You〉7:06、2〈Here's That Rainy Day〉12:44、3〈Sunny〉5:17、4〈Willow Weep For Me〉5:42、5〈Autumn Leaves〉9:42——五首全部是標準曲，第二首〈Here's That Rainy Day〉12:44 幾乎佔滿一整面。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2b50e607-63f2-4e3b-8f97-a2ad5cab09a8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "這張後來又以 PA-9705（1974）與 PA-9721（1976）兩個編號在 Trio 系統內重壓，1995 年 CD 化、2012 年由 Solid Records 重製。",
+    "src": "https://www.discogs.com/release/3030306"
+   },
+   {
+    "f": "1971 年 3 月他先錄了與德國薩克斯風手 Gerd Dudek 合作的《フライング・トゥ・ザ・スカイ》，同年 4 月錄下本張；兩張相隔不到兩個月，一張是聯名、一張是純標準曲三重奏。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   }
+  ],
+  "hookCandidates": [
+   "五首全是標準曲，第二首〈Here's That Rainy Day〉一個人彈掉十二分四十四秒，幾乎佔滿一整面",
+   "唱片盤面印的名字是「本田竹曠」——同一個人，在資料庫裡是「本田竹広」"
+  ],
+  "sound": "五軌、約 40 分鐘，全部是標準曲。〈Here's That Rainy Day〉12:44 是全碟的重心，幾乎佔滿一整面；〈Sunny〉5:17 最短。鋼琴三重奏，鈴木良雄 的貝斯與 村上寛 的鼓走的是留白多、拍子鬆的路子，不是《浄土》那種長篇調式。Apple 把它標成「- EP」，那是 5 軌帶來的欄位誤判。",
+  "keyTracks": [
+   "Here's That Rainy Day",
+   "Autumn Leaves",
+   "I Love You"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971（首發年）。release-group first-release-date 1971、唯一一筆 release 就是 1971 原盤、Discogs 3671510（Trio RSP-9021）同記 1971、ja.wikipedia 記「1971 年 4 月錄音」，四邊一致。1974 年 PA-9705 與 1976 年 PA-9721 是同系統重壓，不取。",
+  "notes": "**覆核策展層：MB 相符；補上策展層點名要補的目錄編號；店面結論被推翻。** RG 四欄與唯一一筆 release 與 mbNote 相符，`label-info` 有 Trio 而 catno 欄為空這一點也覆核屬實（第 259 條的形狀，不是問錯端點）。｜✅ **補上 `label` 缺的目錄編號：Trio Records RSP-9021**（Discogs release 3671510 的盤面，1971 JP，與 RSP-9008／9018／9026 同一號段）。｜⚠ **推翻店面結論**：策展層只寫「Apple us 藝人目錄命中兩筆 5 軌版，只是觀察」；第三種查法直查 `lookup?id=1329373434&country=jp&entity=song` 實跑：《I Love You - EP》5 軌、℗ TRIO RECORDS、掛名「本田竹曠トリオ」，曲序與原盤相同、長度差 ≤1 秒（7:07／12:45／5:18／5:42／9:41）。**有固定試聽來源，採信 1329373434**；備用 `1493768901`《アイ・ラヴ・ユー (Remaster)》（2012 Solid，同 5 軌）。｜**掛名**：本張的 MB RG credit 就是 **本田竹曠**，Apple 的條目掛的是 **本田竹曠トリオ**（另一個 artistId `366407604` 也叫 本田竹曠トリオ）——同一張碟三種寫法，依第 355 條取實體主名 `本田竹広`，策展層處置正確。ja.wikipedia 另記第三種漢字 **本田竹彦**，建議本機補進 queryAlias。｜**人名邊界**：鈴木良雄、村上寛 有 Discogs 盤面 credit，可寫；松野勲、荒井聡 是設計與攝影，不進正文。｜⚠ **盤名極通用**：「I Love You」在店面與池中都極易誤配，正文不得暗示與任何同名作品有關，下游必須鎖 rgMbid。｜**反同構**：本張切入「全標準曲＋〈Here's That Rainy Day〉12:44＋1971-04-30」，不與《The Trio》共用三重奏成軍敘事。"
+ },
+ {
+  "key": "desc4:本田竹広|What's Going On",
+  "artist": "本田竹広",
+  "album": "What's Going On",
+  "facts": [
+   {
+    "f": "release-group e6c15d9f 的欄位：title「What’s Going On」（撇號是 U+2019）、artist-credit「T. Honda」（掛個人實體 b90d79a5）、first-release-date 1973、primary-type Album、secondary-types 空。轄下三筆 release：JP 1973 Trio RSP-9026 12 吋黑膠 7 軌、JP 2012-02-22 SOLID RECORDS CDSOL-1482 CD 7 軌（barcode 4526180105671）、XW 2012-02-22 SOLID RECORDS 數位 7 軌，三筆軌數相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e6c15d9f-a5e3-4587-a907-5ec9405e5a14&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "7 軌逐軌（2012 CD 那筆登記的軌長）：1〈Ain’t Tell You a Good Way But〉3:29、2〈Check‐Out Your Mind〉5:10、3〈Ain’t Funky Now〉5:34、4〈What’s Going On〉4:40、5〈Sham Time〉5:11、6〈Greasy Spoon〉5:39、7〈Dock of the Bay〉5:57——只有第四首是 Marvin Gaye 的曲子，其餘六首出自 The Impressions、Grant Green、Otis Redding 等人的曲庫。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e6c15d9f-a5e3-4587-a907-5ec9405e5a14&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1973 年 Trio RSP-9026 原盤的掛名印的是「T. Honda & His Orchestra」，不是三重奏：編制有 峰厚介（中音薩克斯風）、武田和命（次中音薩克斯風）、Teddy Adams（長號兼編曲）、伏見哲夫 與 森川修三（小號）、川端民生（貝斯）、今村祐司（康加鼓）、Ken Lawson（吉他）、James Cheek 與 楠本卓司（鼓），本田竹広 彈鋼琴、電鋼琴與 Hammond 風琴並擔任編曲，對開封套、定價 2500 日圓。",
+    "src": "https://www.discogs.com/release/4111837"
+   },
+   {
+    "f": "本田竹広 1966 年開始跟 武田和命 的編制演出，1978 年又與 峰厚介 等人組成 fusion 團體 ネイティブ・サン——本張的兩位管樂手是他職業生涯前後兩端的長期夥伴。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   },
+   {
+    "f": "這張是他 Trio Records 時期最後一張領銜盤，之後 1974 年轉到 East Wind 錄《サラーム・サラーム》。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   }
+  ],
+  "hookCandidates": [
+   "一張以 Marvin Gaye 曲名為題的唱片，七首裡只有一首真的是 Marvin Gaye",
+   "掛名從三重奏換成「T. Honda & His Orchestra」——十一個人，兩支小號，一把 Hammond 風琴"
+  ],
+  "sound": "七軌、約 36 分鐘，每首三分半到六分，沒有長篇。大編制的靈魂爵士：兩支小號、一支長號、兩把薩克斯風加康加鼓與兩位鼓手，本田竹広 自己兼彈電鋼琴與 Hammond 風琴。標題曲 4:40 反而不是最長的，〈Dock of the Bay〉5:57 才是；整張的節奏重心在 backbeat 而不是 swing。",
+  "keyTracks": [
+   "What's Going On",
+   "Dock of the Bay",
+   "Ain't Funky Now"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（首發年）。release-group first-release-date 1973、原盤 Trio RSP-9026 記 1973、Discogs 4111837 記 1973、Apple 的重製版標 1973-01-01，四邊一致。⚠ **錄音年有兩說**：Discogs 盤面寫「Recorded 1973」，ja.wikipedia 本田竹広 條目寫「1971 年錄音、1973 年發行」。兩說都只有一個來源，**正文不得斷言錄音年**，寫「1973 年發行」即可。",
+  "notes": "**覆核策展層：MB 三筆 release 逐格相符，年份成立，店面結論被推翻。** 三筆 release 的國別、載體、軌數、catno、barcode 與 mbNote 完全相符；CAA 覆核 **200**。｜⚠ **推翻店面結論**：策展層寫「Apple jp／us 兩種查法皆命中，只是觀察」；第三種查法直查 `lookup?id=1327630697&country=jp&entity=song` 實跑：《What's Going On》7 軌、℗ TRIO RECORDS、掛名「本田竹曠 and his orchestra」，曲序與資料庫端相同、長度差 ≤2 秒。**有固定試聽來源，採信 1327630697**；備用 `1493888408`《ホワッツ・ゴーイング・オン remaster》（2012 Solid，同 7 軌，店面標 1973-01-01）。兩筆都掛在 artistId `250055187`。｜⚠ **錄音年兩說已列入 yearVerified，寫作層不得斷言。**｜**掛名**：RG credit 是縮寫「T. Honda」、原盤封面是「T. Honda & His Orchestra」、店面是「本田竹曠 and his orchestra」——同碟四種寫法，依第 355 條取實體主名 `本田竹広`，策展層處置正確。｜⚠ **同盤名不同掛名（第 391 條七之提醒）**：線上池已有 `Marvin Gaye — What's Going On`，**正文一個字都不得暗示本卡與那張有關**，也不得寫成「翻唱 Marvin Gaye 專輯」——七首裡只有一首是 Marvin Gaye 的曲子，曲目來源實查如 facts 所列。｜**人名邊界**：峰厚介（c-132 a 組掛名）、武田和命、伏見哲夫、川端民生、今村祐司、Teddy Adams、Ken Lawson 都有 Discogs 盤面 credit，可寫；森川修三、楠本卓司、James Cheek 的漢字或身分只有一個來源，**CJK 專名上限內優先取 峰厚介 與 武田和命**。｜**反同構**：本張切入「大編制靈魂爵士＋七首只有一首是 Gaye＋峰厚介／武田和命」，不與其他五張共用 Trio 廠牌沿革。"
+ },
+ {
+  "key": "desc4:本田竹広|Another Departure",
+  "artist": "本田竹広",
+  "album": "Another Departure",
+  "facts": [
+   {
+    "f": "release-group 8c0ff84f 的欄位：title「Another Departure」、artist-credit「Takehiro Honda」（掛個人實體 b90d79a5）、first-release-date 1977、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1977 Flying Disk VIJ-6004、12 吋黑膠 5 軌，status 欄未填。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8c0ff84f-72ad-4184-88c0-3c252ffbbdde&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "1977 原盤 5 軌逐軌：1〈Calypso Street〉4:49、2〈Spirits Flow〉6:06、3〈Wonder〉6:31、4〈Longing〉8:31、5〈Puddle〉9:27，全長約 35 分鐘，五首全部由 本田竹広 作曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8c0ff84f-72ad-4184-88c0-3c252ffbbdde&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音是 1977 年 5 月 2、3 日在紐約 Vanguard Studio，三重奏的另兩角是 Ron Carter（貝斯）與 Tony Williams（鼓），錄音師 David Baker、混音 岡田喜兼，製作 伊藤潔 與 森崎行雄，解說 油井正一，發行是ビクター音楽産業，定價 2500 日圓。",
+    "src": "https://www.discogs.com/release/2524891"
+   },
+   {
+    "f": "ja.wikipedia 的 本田竹広 條目把這張記為「1977 年 5 月錄音、Flying Disk、1977 年發行，ロン・カーター、トニー・ウィリアムス が参加」。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+   },
+   {
+    "f": "Flying Disk 是ビクター（Victor）在 1977 年開的純爵士系列，VIJ-6004 是它的第四號；本田竹広 隔年又在同一系列錄了 VIJ-6014《It's Great Outside》。",
+    "src": "https://www.discogs.com/release/2524891"
+   }
+  ],
+  "hookCandidates": [
+   "節奏組是 Ron Carter 和 Tony Williams——Miles Davis 第二代五重奏的那兩位，1977 年五月在紐約錄了兩天",
+   "五首全是他自己寫的曲子，最長的〈Puddle〉叫「水窪」"
+  ],
+  "sound": "五軌、約 35 分鐘，五首全部是 本田竹広 的原創曲。前段短、後段長：〈Calypso Street〉4:49 開場，到〈Longing〉8:31 與〈Puddle〉9:27 才把篇幅放開。鋼琴三重奏，Ron Carter 的貝斯線與 Tony Williams 的鼓在紐約錄音室的乾聲裡特別清楚，與他 Trio 時期日本錄音室那種厚混響是兩種聲音。",
+  "keyTracks": [
+   "Puddle",
+   "Longing",
+   "Calypso Street"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（首發年）。release-group first-release-date 1977、唯一一筆 release 就是 1977 年 Flying Disk VIJ-6004 原盤、Discogs 2524891 記 1977、ja.wikipedia 記「1977 年 5 月錄音、1977 年發行」，四邊一致。錄音 1977-05-02／05-03（Discogs 盤面），行文寫「1977 年 5 月在紐約錄、同年發行」。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立，試聽確認無來源。** RG 四欄與唯一一筆 release（含 status 欄未填）與 mbNote 相符；CAA release-group 端點覆核 **404**，策展層判斷正確。｜✅ **封面路徑覆核通過**：策展層指的 Discogs release **2524891** 實查為 Flying Disk VIJ-6004、1977、Japan、Takehiro Honda、五軌曲名與資料庫端逐首相同、**有 6 張圖**——目錄號、年份、廠牌三項全對，滿足 §4 `discogs` 來源的要件。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 盤名搜 jp／us 皆 0 筆；(2) 三個 artistId 的目錄全拉過（`250055187` 15 筆、`366407604` 2 筆、`1508942921` 3 筆），沒有本張；(3) 無候選 collectionId 可直查，改以曲名 `Calypso Street Honda`、`Spirits Flow Honda`、`Puddle Honda` 反查 song 端點，jp／us 皆 0 筆。**走無來源狀態。**｜⚠ **策展層已寫對的一點，研究層確認**：Ron Carter 與 Tony Williams 的參與有 Discogs 盤面 credit ＋ ja.wikipedia 兩個獨立來源，可寫。｜**人名邊界**：Ron Carter、Tony Williams（Discogs 盤面寫全名 Anthony Williams）、油井正一、伊藤潔 有來源可寫；David Baker、岡田喜兼、森崎行雄 只在 Discogs credit，不進正文。｜**反同構**：本張切入「紐約錄音＋Ron Carter／Tony Williams＋五首全自作」，《It's Great Outside》走同廠次年的紐約 session 樂手群，兩張不得共用 Flying Disk 的廠牌介紹。"
+ },
+ {
+  "key": "desc4:松本英彦|Sleepy",
+  "artist": "松本英彦",
+  "album": "Sleepy",
+  "facts": [
+   {
+    "f": "release-group 6de7306e 的欄位：title「Sleepy」、artist-credit「松本英彦」（掛個人實體 d4027a8f，MB 主名同字，disambiguation 明寫「Japanese jazz saxophonist & bandleader; “Sleepy”」）、first-release-date 1976、primary-type Album、secondary-types 空。轄下兩筆 release：JP 1976 three blind mice TBM-74 12 吋黑膠 6 軌、JP 2006-12-20 three blind mice MHCP 10032／TBM-74 混合 SACD（CD 層與 SACD 層各 6 軌，barcode 4582192931356）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6de7306e-d73c-45ec-8127-e29ee04f29d7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "6 軌逐軌：1〈Duke's Days〉6:52、2〈You Don't Know What Love Is〉7:23、3〈Chasin' The Blues〉6:51、4〈Right-Down Step〉6:42、5〈My One And Only Love〉8:04、6〈Typhoon〉7:22，六首都在六分半到八分之間，全長約 43 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6de7306e-d73c-45ec-8127-e29ee04f29d7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音是 1976 年 9 月 13 日與 24 日在東京 Epicurus Studio，四重奏是 松本英彦（次中音薩克斯風、長笛）、市川秀男（鋼琴）、井野信義（貝斯）、日野元彦（鼓），製作 藤井武，解說 いソノてルヲ，原盤附一本中英日對照的小冊子，盤面掛名印的是「Hidehiko Matsumoto Quartet」。",
+    "src": "https://www.discogs.com/release/4784686"
+   },
+   {
+    "f": "「Sleepy」這個綽號不是藝名而是外號，來自 1944 年前後他在美軍營區駐演時一位美軍給的；他 1926 年 10 月 12 日生於岡山縣、2000 年 2 月 29 日去世，享年 73。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6"
+   },
+   {
+    "f": "他 1951 年加入 渡辺晋とシックス・ジョーズ，1953 年與 ジョージ川口、中村八大、小野満 組成「ビッグ・フォア」，掀起日本戰後第一波爵士熱潮；1959 年加入 白木秀雄 的五重奏。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6"
+   }
+  ],
+  "hookCandidates": [
+   "綽號不是自己取的——1944 年在美軍營區駐演時，一位美軍看他吹得像在睡覺，叫他 Sleepy",
+   "鼓手是 日野元彦，比他小十七歲——1953 年掀起日本第一波爵士熱潮的人，1976 年找的是下一代"
+  ],
+  "sound": "六軌、約 43 分鐘，六首長度整齊地落在六分半到八分之間，沒有短曲。次中音薩克斯風四重奏，松本英彦 兼吹長笛；〈My One And Only Love〉8:04 最長，是整張唯一放慢的一首。1976 年 Epicurus Studio 的錄音，Three Blind Mice 一貫的近距離收音，鼓與貝斯的低頻推得很前面。",
+  "keyTracks": [
+   "Duke's Days",
+   "Typhoon",
+   "My One And Only Love"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976（首發年）。release-group first-release-date 1976、原盤 TBM-74 記 1976、Discogs 4784686 記 1976、ja.wikipedia 松本英彦 條目的目錄記『Sleepy』（1976年）TBM，四邊一致。錄音 1976-09-13／09-24（Discogs 盤面）。⚠ **策展層寫的「10 月 21 日發行」本層查不到第二個來源**，正文不得寫發行日。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立，試聽確認無來源；擋下一處日期。** 兩筆 release 的載體、軌數、catno、barcode 與 mbNote 相符；CAA 覆核 **404**，策展層判斷正確。｜**擋下**：`curatorRisk` 寫「發行 1976-10-21」，**本層在 Discogs 盤面與 ja.wikipedia 都查不到這個日期**，只有錄音日查得到，**正文不得寫發行月日**。｜✅ **封面路徑覆核通過**：Discogs release **4784686** 實查為 Three Blind Mice TBM-74、1976、Japan、Hidehiko Matsumoto Quartet、六軌曲名與資料庫端逐首相同、**有 7 張圖**——目錄號、年份、廠牌三項全對。備用 13349235（同一版本另一筆）。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 盤名＋掛名搜 jp／us（`Sleepy 松本英彦`、`スリーピー 松本`、`Sleepy Matsumoto`）皆 0 筆；(2) 兩個 artistId 的目錄全拉過（`153540229` 5 筆、`304321154` 1 筆），沒有本張；(3) 以曲名 `Duke's Days`、`Chasin' the Blues Matsumoto`、`Right-Down Step` 反查 song 端點，jp／us 皆 0 筆。**走無來源狀態**；與 c-131 第 359 條「TBM 的目錄在店面幾乎全空」同形。｜**掛名**：RG credit 與實體主名都是 `松本英彦`，盤面 credit 是「Hidehiko Matsumoto Quartet」——策展層依第 355 條取實體主名、不另立編制掛名，處置正確；池中既有的 `Hidehiko Matsumoto《Hot Jazz》1983` 是既有分裂，本層不動。｜⚠ **擋下一條 ja.wikipedia 的錯誤事實**：該條目寫「1963 年，日本人として初めてモントルー・ジャズ・フェスティバルに招待出演」——**モントルー・ジャズ・フェスティバル 1967 年才創辦**，1963 年不可能。**這句與「日本第一位」的宣稱一律不得寫**（第 253 條）。｜**人名邊界**：市川秀男、井野信義、日野元彦、藤井武、いソノてルヲ 有 Discogs 盤面 credit；⚠ **日野元彦 是 c-134 b 組掛名**。ビッグ・フォア 的 ジョージ川口／中村八大／小野満 有 ja.wikipedia，**中村八大 是 c-134 a 組掛名**。｜**反同構（松本三張）**：本張切入「綽號的由來＋TBM 四重奏＋日野元彦」，《Rio Manhattan》走紐約 session，《Four Wings》走四人聯名，三張不得共用生平骨架。"
+ },
+ {
+  "key": "desc4:松本英彦|Rio Manhattan",
+  "artist": "松本英彦",
+  "album": "Rio Manhattan",
+  "facts": [
+   {
+    "f": "release-group 91e94cbc 的欄位：title「Rio Manhattan」、artist-credit「松本英彦」（掛個人實體 d4027a8f）、first-release-date 1981、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1981 SEVEN SEAS K28P-6120、Official、Vinyl 7 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=91e94cbc-8b91-4f5a-8d0a-c22cdc88621b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "7 軌逐軌：1〈Rio Manhattan〉5:12、2〈Silk Scarves〉4:24、3〈Memories〉6:55、4〈Caribision〉5:38、5〈Mister Panama〉6:02、6〈Tralfamadore〉5:03、7〈Manhattan Lullaby〉2:09——最後一首 2:09 是全碟最短的收尾。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=91e94cbc-8b91-4f5a-8d0a-c22cdc88621b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤面掛名是「Sleepy Matsumoto With Manhattan Friends」，伴奏是紐約的 session 樂手：Steve Jordan 與 Chris Parker（鼓）、Will Lee（Fender Precision 電貝斯）、Jeff Mironov（Gibson 335 電吉他）、Rob Mounsey（Fender Rhodes 電鋼琴與 Mini-Moog、Prophet 5 合成器），編曲由 松本英彦 與 Jeremy Wall 分擔，原盤附腰帶與內頁。",
+    "src": "https://www.discogs.com/release/4269436"
+   },
+   {
+    "f": "廠牌 Seven Seas 是 King Records 的海外與爵士系列；ja.wikipedia 的 松本英彦 條目把這張記為『リオ・マンハッタン』（1981 年）キング。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6"
+   },
+   {
+    "f": "松本英彦 1977 年獲文化廳藝術祭大賞、1978 年獲南里文雄賞，1988 年獲藝術選獎文部大臣賞，1991 年受紫綬褒章——這張錄於他開始接連受獎的那幾年。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6"
+   }
+  ],
+  "hookCandidates": [
+   "掛名印的是「Sleepy Matsumoto With Manhattan Friends」——那些 friends 是 Will Lee、Steve Jordan 這一掛紐約 session 樂手",
+   "第六首叫〈Tralfamadore〉，那是馮內果小說裡的外星球名字"
+  ],
+  "sound": "七軌、約 35 分鐘，六首在四分半到七分之間，最後一首〈Manhattan Lullaby〉2:09 當作收尾的短曲。1981 年的都會 fusion 聲音：Fender Rhodes 電鋼琴、Mini-Moog 與 Prophet 5 合成器、電貝斯與電吉他撐底，次中音薩克斯風在上面吹旋律，不是 1976 年《Sleepy》那種近距離收音的原聲四重奏。",
+  "keyTracks": [
+   "Rio Manhattan",
+   "Tralfamadore",
+   "Manhattan Lullaby"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1981（首發年）。release-group first-release-date 1981、唯一一筆 release 就是 1981 年 SEVEN SEAS K28P-6120 原盤、Discogs 4269436 記 1981、ja.wikipedia 松本英彦 條目記『リオ・マンハッタン』（1981 年），四邊一致，無再發失真。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立，試聽確認無來源。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **404**，策展層判斷正確。｜✅ **封面路徑覆核通過**：Discogs release **4269436** 實查為 Seven Seas K28P-6120、1981、Japan、七軌曲名與資料庫端逐首相同、**有 6 張圖**——目錄號、年份、廠牌三項全對，滿足 §4 `discogs` 要件。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 盤名搜 jp／us（`Rio Manhattan`、`リオ・マンハッタン`）皆無本盤；(2) 兩個 artistId 目錄全拉過，沒有本張；(3) 以曲名 `Tralfamadore Matsumoto`、`Caribision`、`Silk Scarves Matsumoto`、`Manhattan Lullaby Matsumoto` 反查 song 端點，jp／us 皆 0 筆。**走無來源狀態。**｜⚠ **與《Sleepy》的分工要講清楚**：策展層寫本張是「他 MB 上僅有的三張個人作裡最晚的一張錄音室盤」——**這句在 MB 的範圍內成立，但《Four Wings》經本層改判後是 1980 年的碟**（見該卡），所以三張的時序是 1976／1980／1981，**本張仍是最晚的一張，這句不必改**。｜**掛名**：RG credit 與實體主名都是 `松本英彦`，盤面是「Sleepy Matsumoto With Manhattan Friends」，依第 355 條取實體主名，策展層處置正確；「Sleepy Matsumoto」已在 queryAlias。｜**人名邊界**：Steve Jordan、Will Lee、Jeff Mironov、Rob Mounsey、Chris Parker、Jeremy Wall 有 Discogs 盤面 credit，可寫；獎項四筆出自 ja.wikipedia，屬「得獎」不是「入圍」，但**與本盤無直接綁定，只能當背景一句帶過**。｜**反同構**：本張切入「紐約 session 樂手＋1981 年電聲編制」，不與《Sleepy》共用綽號由來，也不重述 ビッグ・フォア。"
+ },
+ {
+  "key": "desc4:松本英彦|Four Wings",
+  "artist": "松本英彦",
+  "album": "Four Wings",
+  "facts": [
+   {
+    "f": "release-group d19cb142 的欄位：title「Four Wings」、artist-credit「松本英彦」（掛個人實體 d4027a8f）、first-release-date 2023-06-07、primary-type Album、secondary-types 空。轄下兩筆 release：JP 2023-06-07 Octave Lab. OTLCD-2590／Trio OTLCD-2590 CD 6 軌（barcode 4526180591542）、XW Trio 數位 6 軌（barcode 4988008276930，無日期）——**1980 年的原盤在資料庫端沒有建檔**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d19cb142-4e3a-4193-9375-6520204be405&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "原盤是 Trio Records／Full House 的 PAP-9197，1980 年在日本發行，錄音是 1979 年 10 月 23 日在東京 ONKIO HAUS、10 月 26 日在一口坂 Studio 混音；四個人是 松本英彦（次中音薩克斯風、長笛）、菅野邦彦（鋼琴）、鈴木勲（貝斯）、ジョージ大塚（鼓），解說 油井正一。",
+    "src": "https://www.discogs.com/release/6854259"
+   },
+   {
+    "f": "ja.wikipedia 的 松本英彦 條目在領銜作目錄裡把這張記為『FOUR WINGS』（1980 年）トリオ，排在 1979 年的『Samba De Sun』（TBM）與 1980 年的『ザ・セッション』（NEXT WAVE）之間。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6"
+   },
+   {
+    "f": "6 軌逐軌（原盤面別與時長）：A1〈Speak Low〉7:01、A2〈Misty〉7:14、A3〈But Not For Me〉6:52、B1〈You Do Something To Me〉6:23、B2〈Laura〉3:41、B3〈Four Wings〉9:10——五首標準曲加一首與盤名同名的原創曲，後者 9:10 是全碟最長。",
+    "src": "https://www.discogs.com/release/6854259"
+   },
+   {
+    "f": "2023 年 6 月 7 日由 Octave Lab 以紙盒裝復刻成 CD（OTLCD-2590），屬於「NIPPON JAZZ SPIRITS」這套把 Trio Records 目錄重新發行的系列，四人的演奏名單與 1980 年原盤相同。",
+    "src": "https://www.discogs.com/release/27634338"
+   }
+  ],
+  "hookCandidates": [
+   "四個人四對翅膀：次中音、鋼琴、貝斯、鼓各出一位當家，盤名就是這個意思",
+   "錄音在 1979 年 10 月 23 日，唱片 1980 年出——資料庫裡卻寫成 2023 年"
+  ],
+  "sound": "六軌、約 40 分鐘。五首標準曲加一首同名原創曲，前五首都在三分四十秒到七分十五秒之間，只有壓軸的〈Four Wings〉9:10 把篇幅放開。無電聲的四重奏：次中音薩克斯風兼長笛、鋼琴、低音提琴、鼓，是 松本英彦 三張個人領銜盤裡編制最傳統的一張。〈Laura〉3:41 是全碟最短。",
+  "keyTracks": [
+   "Four Wings",
+   "Speak Low",
+   "Misty"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **不一致，本層改判 1980，推翻策展層的 1994（第 383 條第一列）與卡單值。** 三個獨立來源指向 1980：(a) Discogs release 6854259 與 14591114 兩筆同版本條目，盤面是 **Trio Records／Full House PAP-9197、1980、Japan**，並載明錄音 1979-10-23 ONKIO HAUS、混音 1979-10-26 一口坂 Studio；(b) ja.wikipedia 松本英彦 條目的領銜作目錄記『FOUR WINGS』（1980 年）トリオ；(c) 2023 年 Octave Lab 復刻條目（Discogs 27634338）明寫它是把 Trio Records 的舊盤復刻，演奏名單與原盤相同。**Apple 的 1994-12-21（collectionId 1329372640，℗ TRIO RECORDS）是 CD 化年，不是首發年**——與 c-131 第 352 條《Toshiko Meets Her Old Pals》完全同形（店面把 CD 化年當首發）。MB 的 2023-06-07 是第二次再發年。**建議卡單 `year` 改 1980、`label` 改 Trio Records／Full House PAP-9197（1980）。**",
+  "notes": "**⚠ 本組最大的一處改判：年份 1994 → 1980，並補上策展層查不到的原盤目錄編號。** 策展層第 383 條以 Apple 的 1994-12-21 為據把 MB 的 2023 改判成 1994，方向對（MB 只建再發）但**停在中途**：1994-12-21 是 Trio 的 CD 化日，**黑膠原盤是 1980 年的 Trio／Full House PAP-9197**（Discogs 兩筆同版本條目＋ja.wikipedia 目錄，三個獨立來源）。策展層 `label` 欄寫「⚠ 目錄編號本批未查得，研究層請補」——**已補：PAP-9197**。｜**擋下兩處**：(1) `curatorWhy` 寫「盤名《Four Wings》就是ジョージ大塚寫給這個編制的原創曲」——**Discogs 的原盤與復刻條目都沒有作曲者 credit，本層查不到任何來源支持這句**，正文不得指名作曲者，只能寫「與盤名同名的原創曲」。(2) `curatorWhy` 寫這是「1994 年 Trio Records 的四重奏盤」「松本英彦晚年最完整的一次領銜錄音」——年份既已改判 1980，「晚年」這個定性也要退：1980 年他 53 歲，**正文不得寫「晚年」**。｜✅ **試聽有來源**：第三種查法直查 `lookup?id=1329372640&country=jp&entity=song` 實跑：《フォーウィングス》6 軌、℗ TRIO RECORDS、掛名「松本英彦」，曲序與資料庫端相同、長度逐軌相同（7:02／7:17／6:55／6:26／3:44／9:11）。**採信 1329372640**；⚠ 但它的 releaseDate 是 CD 化年，**寫作層不得引店面的年份**。｜封面 CAA **200**（實測，松本三張裡唯一有圖的）。｜**掛名**：MB 與 Apple 的 credit 都是單掛「松本英彦」，Discogs 盤面是四人平列（松本英彦／菅野邦彦／鈴木勲／ジョージ大塚）——策展層依第 355 條掛單人正確。⚠ **跨批撞卡**：菅野邦彦（c-134 b 組）、ジョージ大塚（c-133 b 組）、鈴木勲（池中已有 鈴木勲トリオ）都在別批名單上，第 386 條的提醒成立。｜**人名邊界**：菅野邦彦、鈴木勲、ジョージ大塚、油井正一 有 Discogs 盤面 credit，可寫。｜**反同構**：本張切入「四人各為一方的四重奏＋1979-10-23 錄音＋同名原創曲壓軸」。"
+ },
+ {
+  "key": "desc4:宮沢昭|山女魚",
+  "artist": "宮沢昭",
+  "album": "山女魚",
+  "facts": [
+   {
+    "f": "release-group 63cd7c36 的欄位：title「山女魚」、artist-credit「Akira Miyazawa」（掛個人實體 59e0a0d4，MB 主名「宮沢昭」）、first-release-date 1962、primary-type Album、secondary-types 空。轄下兩筆 release：JP 1962 KING SKJ 1001 12 吋黑膠 7 軌、JP 2012-12-05 KING KICJ 2278 CD 7 軌（barcode 4988003423032）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=63cd7c36-f5bc-4712-8551-9f857f5efddd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "7 軌逐軌：1〈Yamame〉5:46、2〈Memories Through Thick Glasses〉5:15、3〈Fly Casting〉5:48、4〈Like Someone in Love〉4:17、5〈Out of Nowhere〉6:28、6〈Le Crepuscule Embaume〉6:20、7〈Like Sonny〉6:11。第 1–4 軌是四人編制、第 5–7 軌是九人編制。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=63cd7c36-f5bc-4712-8551-9f857f5efddd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "這是 宮沢昭 的第一張領銜專輯，1962 年由 久保田二郎 製作，錄音在 1962 年 5 月 7 日與 14 日的日本都市センターホール，曲目是 宮沢昭 與 八木正生 各自寫的原創曲加標準曲與 John Coltrane 的〈Like Sonny〉；八木正生 那首用法文題名〈Le Crépuscule Embaumé〉（香しきたそがれ）。封面攝影 一村哲也。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%A5%B3%E9%AD%9A_%28%E5%AE%AE%E6%B2%A2%E6%98%AD%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%29"
+   },
+   {
+    "f": "參加者：宮沢昭（次中音薩克斯風）、佐藤允彦（鋼琴）、原田政長（貝斯）、原田寛治（鼓，第 1–4 軌）、渡辺貞夫（中音薩克斯風與長笛，第 5–7 軌）、仲野彰（小號與 flugelhorn，第 5–7 軌）、東本安博 與 松本光彦（長號，第 5–7 軌）、青木武（低音長號，第 5–7 軌）、猪俣猛（鼓，第 5–7 軌）。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%A5%B3%E9%AD%9A_%28%E5%AE%AE%E6%B2%A2%E6%98%AD%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%29"
+   },
+   {
+    "f": "宮沢昭 的原創曲名多半取自他的釣魚愛好——山女魚（やまめ）本身是溪流魚，〈Fly Casting〉是拋竿手法——但〈Memories Through Thick Glasses〉是寫來追念他的盟友、1955 年去世的鋼琴家 守安祥太郎。本作獲《スイングジャーナル》選定金唱片。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%A5%B3%E9%AD%9A_%28%E5%AE%AE%E6%B2%A2%E6%98%AD%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%29"
+   },
+   {
+    "f": "1962 年初發時盤面印的專輯名是《AKIRA MIYAZAWA》，「山女魚」這個題名要到 1977 年再發（King SKA-3002）時才印上唱片標籤，此後才固定下來。同年 King 另以單聲道 KC-20 發行同一內容。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%A5%B3%E9%AD%9A_%28%E5%AE%AE%E6%B2%A2%E6%98%AD%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%29"
+   }
+  ],
+  "hookCandidates": [
+   "他愛釣魚，所以第一張唱片叫《山女魚》、第三首叫〈拋竿〉——但第二首是寫給 1955 年走掉的 守安祥太郎",
+   "1962 年的封面上根本沒有「山女魚」三個字，那是 1977 年再發時才印上去的"
+  ],
+  "sound": "七軌、約 40 分鐘，分成兩種編制：前四首是四人小組、後三首加進六支管樂變成九人編制，同一張唱片裡兩種密度。標題曲〈Yamame〉5:46 開場，最長的〈Out of Nowhere〉6:28。次中音薩克斯風領奏，後三首有 渡辺貞夫 的中音與長笛、三支長號與小號鋪底；八木正生 寫的〈Le Crepuscule Embaume〉6:20 是全碟最像作曲作品的一首。",
+  "keyTracks": [
+   "Yamame",
+   "Memories Through Thick Glasses",
+   "Le Crepuscule Embaume"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1962（首發年）。release-group first-release-date 1962、原盤 KING SKJ 1001 記 1962、Discogs 21739939 記 1962（並載 ℗1962、錄音 1962-05-07／05-14）、ja.wikipedia《山女魚 (宮沢昭のアルバム)》條目的發售履歷第一列就是 1962 年 KC-20 與 SKJ-1001、Apple jp 的 King 官方條目記 1962-10-01，五邊一致。行文寫「1962 年 5 月錄音、同年發行」。",
+  "notes": "**覆核策展層：MB 相符，年份成立，封面路徑成立，試聽找回；策展層的每一項實質宣稱都查證通過，另補一個重要的盤名事實。** RG 四欄與兩筆 release 與 mbNote 相符；CAA 覆核 **404**，策展層判斷正確。｜✅ **策展層宣稱逐項通過**：「第一張領銜專輯」有 ja.wikipedia 專輯條目明寫「宮沢昭の初のリーダー・アルバム」（**這是第 253 條要擋的那種「第一」句的例外——它有明確來源**）；「A 面四曲四人編制、B 面三曲九人編制」「渡辺貞夫 客座」「宮沢與八木正生的原創加標準曲與 Coltrane 曲目」「《スイングジャーナル》金唱片」四項全部由同一條目背書。製作人 久保田二郎 另有 Discogs 盤面 credit 佐證。｜⚠ **本層新查到、策展層沒有的關鍵事實**：**1962 年初發時盤面題名是《AKIRA MIYAZAWA》，「山女魚」是 1977 年再發（SKA-3002）才印上唱片標籤並固定下來的**。**正文不得寫「1962 年的封面上寫著山女魚」**；要寫盤名就寫它是後來定著的題名，或避開。同條目另記同年單聲道盤是 **KC-20**，策展層 `label` 欄寫的「單聲道同源盤 KING KC-20」正確。｜✅ **封面路徑覆核通過**：策展層指的 Apple jp `1777008409` 實查為《YAMAME》、℗ 1962 King Record Co.,Ltd、**7 軌**，曲序與資料庫端逐首對應（山女魚／メモリーズ・スルー・シック・グラセス／フライ・キャスティング／ライク・サムワン・イン・ラヴ／アウト・オブ・ノー・ホェア／香わしきたそがれ／ライク・ソニー），軌數、廠牌、年份三項全對——`apple-verified-collection` 成立。｜✅ **試聽有來源**：同一筆 `1777008409` 七軌全部有 preview，**採信之**。（它在 artistId `1370709057` 的 jp 目錄裡，`apple-candidates.md` 記「目錄裡找不到」是錯的。）｜**掛名**：RG credit 是羅馬字「Akira Miyazawa」，實體主名是漢字 `宮沢昭`，策展層依第 355 條取漢字，正確。｜**人名邊界**：ja.wikipedia 專輯條目列出的九位演奏者漢字可直接引用（渡辺貞夫／佐藤允彦／猪俣猛／原田政長／原田寛治／仲野彰／東本安博／松本光彦／青木武），加上 久保田二郎、八木正生、守安祥太郎、一村哲也。⚠ **CJK 專名上限 3，優先取 渡辺貞夫、佐藤允彦、守安祥太郎**（前兩位是 c-132 a 組與 c-133 a 組的掛名，猪俣猛 同）。｜⚠ **與 c-131《いわな》的關係**：兩張都是魚名、同一位掛名、不同碟（いわな＝岩魚 1969 Victor，Apple 英文題《Bull Trout》），**正文不得互相折疊**。｜**反同構（宮沢七張）**：本張切入「首作＋兩種編制＋釣魚題名的起點＋守安祥太郎」，其餘六張不得重述釣魚這條線的起源。"
+ },
+ {
+  "key": "desc4:宮沢昭|Four Units",
+  "artist": "宮沢昭",
+  "album": "Four Units",
+  "facts": [
+   {
+    "f": "release-group 9e764a87 的欄位：title「Four Units」、artist-credit「宮沢昭」（掛個人實體 59e0a0d4）、first-release-date 1969-04-25、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1969-04-25，5 軌，status 欄未填，label-info 是空陣列，載體欄被填成「12\" Shellac」。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9e764a87-1b61-482e-88e8-15d560124462&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "原盤是 Union Records 的 UPS-2008-J，1969 年在日本發行，錄音在 1969 年 4 月 2 日與 25 日的テイチク會館第一錄音室；四個人是 宮沢昭（次中音薩克斯風、長笛）、佐藤允彦（鋼琴兼編曲）、荒川康男（貝斯）、富樫雅彦（鼓），內頁解說由 小川正夫 與 油井正一 分寫。",
+    "src": "https://www.discogs.com/release/7438580"
+   },
+   {
+    "f": "5 軌逐軌（原盤面別與時長）：A1〈Four Units／フォー・ユニッツ〉10:50、A2〈Dull Slumber／惰眠〉9:24、B1〈Scarborough Fair／スカボロー・フェアー〉7:47、B2〈Rainbow Trout／虹鱒〉3:21、B3〈Black Bass／ブラック・バス〉8:02——〈虹鱒〉與〈ブラック・バス〉延續了 宮沢昭 用魚名當曲名的習慣。",
+    "src": "https://www.discogs.com/release/7438580"
+   },
+   {
+    "f": "ja.wikipedia 的 宮沢昭 條目把這張記為『FOUR UNITS』（1969 年）テイチク——Union Records 是テイチク旗下的廠牌；同一年他還發了『ミュージカル・プレイ・イン・ジャズ』（テイチク）與『いわな』（ビクター）。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD"
+   },
+   {
+    "f": "2020 年 11 月 27 日由法國廠牌 Le Très Jazz Club／Modulor 以「Japanese Jazz Men Series Vol. 3」為名重新發行，數位版的掛名寫成四人平列。",
+    "src": "https://music.apple.com/us/album/1540555407"
+   }
+  ],
+  "hookCandidates": [
+   "四個人四個單位：宮沢昭、佐藤允彦、荒川康男、富樫雅彦，1969 年四月在テイチク會館錄兩天",
+   "五首裡有兩首以魚為名——〈虹鱒〉三分二十一秒，是全碟最短的一首"
+  ],
+  "sound": "五軌、約 40 分鐘，長短落差極大：開場〈Four Units〉10:50 與收尾〈Black Bass〉8:02 撐兩端，中間夾一首 3:21 的〈虹鱒〉。四重奏沒有和聲樂器以外的鋪墊，佐藤允彦 的鋼琴與 富樫雅彦 的鼓在自由與節拍之間來回，宮沢昭 兼吹長笛。翻唱曲只有一首〈Scarborough Fair〉，其餘四首是這個編制自己的東西。",
+  "keyTracks": [
+   "Four Units",
+   "Black Bass",
+   "Rainbow Trout"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（首發年）。release-group first-release-date 1969-04-25、Discogs 7438580（Union Records UPS-2008-J）記 1969、ja.wikipedia 宮沢昭 條目記『FOUR UNITS』（1969 年），三邊一致。⚠ **但 MB 那個「1969-04-25」是錄音日不是發行日**：Discogs 盤面載明錄音為 1969 年 4 月 2 日與 25 日，兩個日期裡的後者正是 MB 填進 release date 的那一天——與第 311 條「first-release-date 有時被填成錄音日」完全同形。**年份 1969 不動，但正文不得寫精確發行日。**",
+  "notes": "**覆核策展層：MB 相符，年份成立但發現一個日期性質問題，封面路徑成立，試聽找回；策展層三處待覆核項全部解決。** RG 四欄與唯一一筆 release（含空 label-info、status 未填、載體欄被填成 12\" Shellac）與 mbNote 相符——**策展層說「1969 年不可能是蟲膠、那是資料庫端錯誤」，本層確認實體是 12 吋黑膠 LP**（Discogs 盤面）。CAA 覆核 **404**，策展層判斷正確。｜⚠ **本層新發現：MB 的 `1969-04-25` 是錄音日**（Discogs 盤面：1969 年 4 月 2 日與 25 日錄於テイチク會館第一錄音室）。策展層自己提出「研究層要分清那是錄音日還是發行日」——**答案是錄音日**，第 311 條的形狀。｜✅ **策展層的廠牌與編制覆核通過**：Union Records UPS-2008-J、四人為 宮沢昭／佐藤允彦／荒川康男／富樫雅彦，Discogs 盤面與 ja.wikipedia（記テイチク，Union 是其旗下）兩邊相符。｜✅ **封面與試聽路徑覆核通過**：策展層指的 Apple **us** `1540555407` 實查為《Four Units - Japanese Jazz Men Series Vol. 3》、**5 軌**，曲序與資料庫端逐首對應、長度差 ≤4 秒（10:51／9:23／7:50／3:26／8:02），jp 店面確實沒有這一筆——**要用 us 店面，策展層正確**。⚠ **但它的 ℗ 是 2020 Le Très Jazz Club／Modulor（法國再發廠），不是 Union／テイチク**——這正是第 391 條第三點講的「廠牌對不上」形狀，所以本層跑了第三步逐軌核對才採信；**封面用的是 2020 年復刻的美術，不是 1969 原盤封套，本機建 `apple-verified-collection` 時要記這一點**。**試聽採信 1540555407（us）。**｜⚠ 資料庫端第 2 軌題「Dull Slumber」、店面題「Dull Summer」，原盤日文是〈惰眠〉——**店面那個是誤植，正文引曲名以〈惰眠〉／Dull Slumber 為準。**｜**掛名**：MB RG credit 就是單掛「宮沢昭」，Discogs 與 Apple 都是四人平列——策展層依第 355 條掛單人正確。⚠ **跨批撞卡**：佐藤允彦 是 c-132 a 組掛名、富樫雅彦 在池中另有卡，第 386 條提醒成立（本層再次確認 a 組沒有收這張）。｜**人名邊界**：佐藤允彦、荒川康男、富樫雅彦、油井正一 有 Discogs 盤面 credit，可寫。｜**反同構**：本張切入「四人各自獨立的單位＋1969 年四月兩天＋魚名曲」，不重述《山女魚》的釣魚起源。"
+ },
+ {
+  "key": "desc4:宮沢昭|Love For Sale",
+  "artist": "宮沢昭",
+  "album": "Love For Sale",
+  "facts": [
+   {
+    "f": "release-group 63193b6e 的欄位：title「Love For Sale」、artist-credit「Akira Miyazawa」（掛個人實體 59e0a0d4）、first-release-date 1978、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1978 RCA RVL-5523、Official、12 吋黑膠 10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=63193b6e-c359-4a45-94fb-a9f0787f14cb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "RCA RVL-5523 的盤面載明錄音日期是 1966 年 10 月 7 日與 1967 年 1 月 13 日，原始 LP 發行於 Takt Jazz 廠牌，這一版屬於 RVC 的「日本のJazz 1500」再發系列。",
+    "src": "https://www.discogs.com/release/4921518"
+   },
+   {
+    "f": "原始 LP 是 宮沢昭《Now's The Time／ナウズ・ザ・タイム》，Takt 的 JAZZ-3，1967 年由 Takt 電機發行，屬「Takt Jazz Series」；ja.wikipedia 的 宮沢昭 條目在領銜作目錄裡也記『ナウズ・ザ・タイム』（1967 年）タクト。1973 年 RCA 曾先以 RGP-1148 重發過一次，當時仍題《Now's The Time》。",
+    "src": "https://www.discogs.com/release/11636775"
+   },
+   {
+    "f": "10 軌逐軌：1〈Love for Sale〉5:56、2〈The Night Has a Thousand Eyes〉4:03、3〈Rock a Bye Your Baby With a Dixie Melody〉2:48、4〈If Ever I Would Leave You〉3:59、5〈East of the Sun〉3:17、6〈Now's the Time〉4:18、7〈I Remember Clifford〉4:25、8〈Oleo〉3:46、9〈Days of Wine and Roses〉3:21、10〈Yesterday〉2:58——十首全部是標準曲，每首三到六分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=63193b6e-c359-4a45-94fb-a9f0787f14cb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "參加者包含 宮沢昭（次中音薩克斯風）、市川秀男 與 世良譲（鋼琴）、原田政長 與 寺川正興（低音提琴）、ジョージ大塚 與 長谷川章弘（鼓）、小西徹（電吉他）——兩個錄音日各用一組節奏組。",
+    "src": "https://www.discogs.com/release/4921518"
+   }
+  ],
+  "hookCandidates": [
+   "十首全是標準曲，最短的〈Yesterday〉不到三分鐘——這是一張把次中音當歌喉用的唱片",
+   "錄音在 1966 和 1967 年，唱片封面上印的年份卻是 1978"
+  ],
+  "sound": "十軌、約 39 分鐘，每首三到六分鐘，是標準曲集的規格而不是長篇即興。〈Love for Sale〉5:56 開場最長，〈Rock a Bye Your Baby With a Dixie Melody〉2:48 與〈Yesterday〉2:58 最短。次中音薩克斯風加鋼琴三重奏，部分曲目有電吉他；兩個錄音日各用一組節奏組，所以聲底不是全碟統一的。",
+  "keyTracks": [
+   "Love for Sale",
+   "Now's the Time",
+   "I Remember Clifford"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **不一致，本層提出改判：1978 → 1967（首發年）。** 兩個獨立來源：(a) Discogs release 4921518（RCA RVL-5523，1978）的盤面註記明寫「Recorded on 7 October 1966 and 13 Jan 1967. **Original LP on Takt Jazz label.**」；(b) 原始 LP 實查到了——宮沢昭《Now's The Time／ナウズ・ザ・タイム》，**Takt JAZZ-3，1967**（Discogs 11636775／27606015 兩筆同版本條目），曲序與本卡的十軌完全相同，只是題名取自 B1 的〈Now's the Time〉；ja.wikipedia 宮沢昭 條目的領銜作目錄也記『ナウズ・ザ・タイム』（1967 年）タクト。**MB 這個 RG 轄下只有 1978 年的 RCA 再發，first-release-date 因此是再發年**——第 352／364 條第一型失真。1973 年 RCA RGP-1148 是中間的另一次再發（仍題《Now's The Time》），1978 年的 RVL-5523 才改題《Love For Sale》。**主線裁定用：若照第 384 條的先例（取原盤年與原盤名），本卡應是 宮沢昭《ナウズ・ザ・タイム》1967；若要保留 1978 RCA 這個版本的身分，`year` 仍應改成 1967 並在 risk 寫明改題。本層不動卡單。**",
+  "notes": "**⚠ 本組第二大改判，而且牽動盤名：這不是 1978 年的新錄音，是 1967 年 Takt 盤《Now's The Time》的 RCA 再發改題。** 策展層 `curatorWhy` 寫它「補的是他目錄裡整個 1970 年代的空檔」「是 1970 年代唯一的一筆」——**這個定位整個不成立**：錄音是 1966–67 年，它在目錄上屬於 1960 年代後期，宮沢昭 的 1970 年代空檔並沒有被補上。`curatorRisk` 寫「轄下唯一 release 就是 1978 原盤，無再發失真」——**那筆 release 本身就是再發**。詳細證據鏈寫在 `yearVerified`。**正文不得寫「1978 年的新作」「1970 年代」。**｜⚠ **另一個連帶**：ja.wikipedia 的 宮沢昭 領銜作目錄裡**沒有**任何 1978 年的碟，這一點本來就是訊號，策展層沒有比對。｜✅ **封面成立**：CAA release-group 端點覆核 **200**，策展層判斷正確。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 盤名＋掛名搜 jp／us（`Love For Sale 宮沢`、`ラヴ・フォー・セール 宮沢`）只回同名他人專輯，逐筆核掛名後排除；(2) 兩個 artistId 目錄全拉過（`1370709057` jp 7 筆／us 6 筆、`1055603130` 2 筆），沒有本張，也沒有《Now's The Time》；(3) 無候選 collectionId，改以曲名反查亦 0 筆。**走無來源狀態。**｜⚠ **同盤名不同掛名（第 391 條七之提醒）**：線上池已有 `Boney M. — Love for Sale`，另有 Tony Bennett & Lady Gaga、Great Jazz Trio 等大量同名盤，**正文不得暗示本卡與任何同名作品有關**，下游必須鎖 rgMbid。｜**人名邊界**：市川秀男、世良譲、原田政長、ジョージ大塚、小西徹 有 Discogs 盤面 credit，可寫；⚠ **世良譲 是 c-134 a 組掛名、ジョージ大塚 是 c-133 b 組掛名**。｜**反同構**：本張切入「1966–67 錄音／1978 改題再發＋十首標準曲」。"
+ },
+ {
+  "key": "desc4:宮沢昭|My Piccolo: Live at Nagoya Yamaha Jazz Club",
+  "artist": "宮沢昭",
+  "album": "My Piccolo: Live at Nagoya Yamaha Jazz Club",
+  "facts": [
+   {
+    "f": "release-group 5431fc8c 的欄位：title「My Piccolo: Live at Nagoya Yamaha Jazz Club」、artist-credit「Akira Miyazawa」（掛個人實體 59e0a0d4）、first-release-date 1981、primary-type Album、secondary-types 含「Live」。轄下只有一筆 release：JP 1981 NEXT WAVE 28PJ-1003、Official、12 吋黑膠 7 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5431fc8c-06e9-4ead-9b62-540681b21caf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "7 軌逐軌：1〈After the Storm〉6:06、2〈King Salmon〉5:39、3〈Blue Lake〉4:47、4〈Cat Fish〉5:22、5〈Doctor U〉8:08、6〈My Piccolo〉5:44、7〈Dandy Fisherman〉10:00——七首全部由 宮沢昭 作曲，〈King Salmon〉〈Cat Fish〉〈Dandy Fisherman〉三首的題名都出自釣魚。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5431fc8c-06e9-4ead-9b62-540681b21caf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音日期是 1981 年 3 月 21 日，演出成員是 宮沢昭（次中音薩克斯風）、佐藤允彦（鋼琴）、井野信義 與 稲葉国光（貝斯）、日野元彦（鼓），製作 児山紀芳，錄音師 福井末憲，解說由 内田晃一、藤井武、清水俊彦 三人分寫。",
+    "src": "https://www.discogs.com/release/4663852"
+   },
+   {
+    "f": "宮沢昭 以釣魚為興趣，曲名與唱片封套都拿它當題材——這張的七首自作曲裡有三首直接用魚或釣客當標題。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD"
+   },
+   {
+    "f": "NEXT WAVE 是同一時期發行 松本英彦 與 Great Jazz Trio 合作的《The Session》（25PJ-1004，1980）的廠牌，兩張的編號只差一號。",
+    "src": "https://www.discogs.com/release/4663852"
+   }
+  ],
+  "hookCandidates": [
+   "七首自作曲，三首以魚為名，壓軸那首整整十分鐘叫〈時髦的釣客〉",
+   "貝斯手有兩位，鼓是 日野元彦——1981 年三月的一個晚上，名古屋"
+  ],
+  "sound": "七軌、約 46 分鐘的現場錄音。前六首在四分四十七秒到八分之間，壓軸〈Dandy Fisherman〉10:00 整整放開一倍。七首全是 宮沢昭 自己的曲子，沒有一首標準曲——這在他的目錄裡少見。次中音薩克斯風領奏，佐藤允彦 的鋼琴、兩位貝斯手與 日野元彦 的鼓，現場的空氣感與掌聲留在盤上。",
+  "keyTracks": [
+   "Dandy Fisherman",
+   "Doctor U",
+   "My Piccolo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1981（首發年，也是演奏年）。release-group first-release-date 1981、唯一一筆 release 就是 1981 年 NEXT WAVE 28PJ-1003 原盤、Discogs 4663852 記 1981、ja.wikipedia 宮沢昭 條目記『マイ・ピッコロ』（1981 年），四邊一致。**演出日期本層查到：1981 年 3 月 21 日**（Discogs 盤面），策展層說「MB 未登記演出日期、研究層要另找」——已找到。",
+  "notes": "**覆核策展層：MB 相符，年份成立，演出日期補上，但發現盤名與錄音地點打架；試聽確認無來源。** RG 五欄（含 secondary-types 的 Live）與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層判斷正確。｜✅ **補上策展層查不到的演出日期：1981 年 3 月 21 日**（Discogs release 4663852 盤面註記）。｜⚠⚠ **新發現的衝突，請主線裁定**：**盤名寫「Live at Nagoya Yamaha Jazz Club」，但 Discogs 盤面的錄音地點註記寫的是「The Studio Wing, Nagoya」**。兩者都在名古屋、都是 1981 年，但不是同一個場地名。本層找不到第三個來源可以判哪一個對。**正文寫演出地點只能寫「名古屋」，不得指名場館**（第 262 條：日期、地點、廠牌要出自同一筆；這裡兩筆打架）。｜⚠ **另一個廠牌兩說**：Discogs 與 MB 都記 **NEXT WAVE 28PJ-1003**，但 ja.wikipedia 的 宮沢昭 條目把『マイ・ピッコロ』記成 **ポリドール**。28PJ 這個前綴確實屬於 Polydor 系統的編號段，兩說可能是「NEXT WAVE 是廠牌、Polydor 是發行體系」的關係，**但本層沒有一手來源可以斷定，正文只寫 NEXT WAVE 28PJ-1003**（與盤面一致的那一筆）。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 盤名搜 jp／us（`My Piccolo 宮沢`、`マイ・ピッコロ`）只回久石讓等他人專輯；(2) 兩個 artistId 目錄全拉過，沒有本張；(3) 以曲名 `Dandy Fisherman`、`King Salmon Miyazawa`、`Cat Fish Miyazawa`、`Doctor U Miyazawa` 反查 song 端點，jp／us 皆 0 筆。**走無來源狀態**；NEXT WAVE 這家的目錄在店面確實全空，策展層觀察正確。｜⚠ **`secondary-types` 含 Live，依第 253 條收但要標**：本盤是現場錄音，正文要寫明。｜**人名邊界**：佐藤允彦、井野信義、稲葉国光、日野元彦、児山紀芳 有 Discogs 盤面 credit，可寫；⚠ **佐藤允彦（c-132 a 組）、日野元彦（c-134 b 組）** 跨批交集。稲葉国光 與 日野元彦 也都是 白木秀雄クインテット 的歷任成員，這條線在本組內部互相牽連。｜**反同構**：本張切入「1981-03-21 名古屋現場＋七首全自作＋三首魚名」，不與《山女魚》共用釣魚起源，也不與《On Green Dolphin Street》共用同一組節奏組的介紹。"
+ },
+ {
+  "key": "desc4:宮沢昭|On Green Dolphin Street",
+  "artist": "宮沢昭",
+  "album": "On Green Dolphin Street",
+  "facts": [
+   {
+    "f": "release-group 66f06f89 的欄位：title「On Green Dolphin Street」、artist-credit「Akira Miyazawa」（掛個人實體 59e0a0d4）、first-release-date 1982、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1982 Union Jazz ULP-7002、Official、12 吋黑膠 6 軌（資料庫端沒有登記軌長）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=66f06f89-29e7-4e87-8a75-e94999c395b6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音日期是 1982 年 10 月 17 日，四重奏是 宮沢昭（次中音與高音薩克斯風）、佐藤允彦（鋼琴）、井野信義（貝斯）、日野元彦（鼓），監修 児山紀芳，製作 横田武夫，錄音師 伊余部富治。",
+    "src": "https://www.discogs.com/release/3900426"
+   },
+   {
+    "f": "六首曲目與日文題名：A1〈On Green Dolphin Street／オン・グリーン・ドルフィン・ストリート〉、A2〈Vierd Blues／ヴァイアー・ブルース〉、A3〈Thriving On A Riff／スライヴィング・オン・ア・リフ〉、B1〈Sweet And Lovely／スウィート・アンド・ラヴリー〉、B2〈All The Things You Are／君はわがすべて〉、B3〈The Shadow Of Your Smile／いそしぎ〉——六首全部是標準曲，其中〈Vierd Blues〉與〈Thriving On A Riff〉分別出自 Miles Davis 與 Charlie Parker 的曲庫。",
+    "src": "https://www.discogs.com/release/3900426"
+   },
+   {
+    "f": "ja.wikipedia 的 宮沢昭 條目把這張記為『グリーン・ドルフィン』（1982 年）テイチク——Union Jazz 是テイチク系的廠牌，與他 1969 年《Four Units》所在的 Union Records 同一家。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD"
+   },
+   {
+    "f": "宮沢昭 1927 年 12 月 6 日生於長野縣松本市，1944 年入陸軍戶山學校軍樂隊，戰後在進駐軍俱樂部演奏，之後與 守安祥太郎、秋吉敏子 等人合作，1954 年參加橫濱那場後來被稱為「幻のモカンボ・セッション」的通宵即興；2000 年 7 月 6 日因急性肺炎去世。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD"
+   }
+  ],
+  "hookCandidates": [
+   "六首全是標準曲，但兩首出自 Miles Davis 與 Charlie Parker 的手筆——這不是給人點歌的唱片",
+   "1982 年十月十七日一天錄完，四個人，隔了十三年他回到同一家廠牌"
+  ],
+  "sound": "六軌的標準曲集，資料庫端沒有登記軌長。宮沢昭 在這張同時吹次中音與高音薩克斯風，是他目錄裡少見的雙管；佐藤允彦、井野信義、日野元彦 這組節奏組與他隔年前的《My Piccolo》現場盤同班底，但這一張是錄音室、一天錄完，聲音收得乾。開場的〈On Green Dolphin Street〉與收尾的〈いそしぎ〉把整張框在抒情曲的邊界內。",
+  "keyTracks": [
+   "On Green Dolphin Street",
+   "Vierd Blues",
+   "The Shadow Of Your Smile"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982（首發年）。release-group first-release-date 1982、唯一一筆 release 就是 1982 年 Union Jazz ULP-7002 原盤、Discogs 3900426 記 1982、ja.wikipedia 宮沢昭 條目記『グリーン・ドルフィン』（1982 年），四邊一致。錄音 1982-10-17（Discogs 盤面），與發行同年。",
+  "notes": "**覆核策展層：MB 相符，年份成立；策展層標為「未證實」的人員本層查到一手來源，予以放行。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層判斷正確。｜✅ **解掉策展層的開放問題**：`curatorRisk` 寫「一則二手資料稱本盤三重奏是 佐藤允彦／井野信義／日野元彦，本批未取得可引用的一手來源，研究層寫簡介前必須自行覆核，不得直接引用」——**本層在 Discogs release 3900426 的盤面 credit 查到同一組名單並加上錄音日 1982-10-17**（佐藤允彦 鋼琴／井野信義 貝斯／日野元彦 鼓，宮沢昭 兼吹高音薩克斯風），**三位可寫**。｜⚠ **試聽：三種查法全部落空，確認無來源。** (1) 盤名搜 jp／us 回的全是 Bill Evans、Vince Guaraldi、The Three Sounds、Albert Ayler、Jimmy Heath、Archie Shepp 等同名他人專輯，逐筆核掛名後排除；(2) 兩個 artistId 目錄全拉過，沒有本張；(3) 以曲名 `Vierd Blues Miyazawa`、`Thriving on a Riff Miyazawa`、`Sweet and Lovely Miyazawa` 反查 song 端點，jp／us 皆 0 筆。**走無來源狀態。**｜⚠ **同盤名極多**：〈On Green Dolphin Street〉是爵士標準曲，店面與池中同名盤成串，**正文不得暗示與任何同名作品有關**，下游必須鎖 rgMbid。｜⚠ **資料庫端沒有登記軌長**，**寫作層不得引任何單軌時長或全長**。｜**人名邊界**：佐藤允彦、井野信義、日野元彦、児山紀芳 有 Discogs 盤面 credit，可寫。CJK 上限內優先取 佐藤允彦、日野元彦。｜**反同構**：本張切入「1982-10-17 一天錄完＋雙管＋六首標準曲裡兩首出自 Miles 與 Parker」，與《My Piccolo》同班底但那張走現場與自作曲，兩張不得共用節奏組介紹。"
+ },
+ {
+  "key": "desc4:宮沢昭|'Round Midnight - Amazing Jazz Ballad",
+  "artist": "宮沢昭",
+  "album": "'Round Midnight - Amazing Jazz Ballad",
+  "facts": [
+   {
+    "f": "release-group 8e076914 的欄位：title「'Round Midnight - Amazing Jazz Ballad」、artist-credit「Akira Miyazawa」（掛個人實體 59e0a0d4）、first-release-date 1985-07-21、primary-type Album、secondary-types 空。轄下只有一筆 release：JP 1985-07-21 Paddle Wheel K28P-6358、Official、12 吋黑膠 8 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8e076914-562b-4c43-bf36-d422286417a1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "8 軌逐軌：1〈My One and Only〉5:39、2〈In a Sentimental Mood〉4:19、3〈Poor Butterfly〉5:06、4〈I Can't Get Started／云い出しかねて〉4:28、5〈'Round Midnight〉7:48、6〈Body and Soul〉5:16、7〈Prelude to a Kiss〉3:38、8〈Polka Dots and Moonbeams〉4:30——八首全部是抒情標準曲，副題「Amazing Jazz Ballad」就是這個意思。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8e076914-562b-4c43-bf36-d422286417a1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音在 King Studio，日期是 1985 年 2 月 6 日與 7 日；編曲 八木正生，演奏是 宮沢昭（次中音薩克斯風）、香西賢二（鋼琴）、池田芳夫（貝斯）、小津昌彦（鼓）與 Tamano Strings 的弦樂組，錄音師 高浪初郎。",
+    "src": "https://www.discogs.com/release/12430898"
+   },
+   {
+    "f": "廠牌 Paddle Wheel 是 King Records 的爵士系列；ja.wikipedia 的 宮沢昭 條目把這張記為『ラウンド・ミッドナイト』（1985 年）キング。他在 King 的第一張與最後一張相隔二十三年——1962 年的《山女魚》（SKJ 1001）與這一張。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD"
+   },
+   {
+    "f": "編曲者 八木正生 也是 1962 年《山女魚》裡那首法文題名〈Le Crépuscule Embaumé〉的作者，兩張隔了二十三年再度合作。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%A5%B3%E9%AD%9A_%28%E5%AE%AE%E6%B2%A2%E6%98%AD%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%29"
+   }
+  ],
+  "hookCandidates": [
+   "八首全是抒情曲，配上弦樂組——一位以釣魚和溪流命名唱片的次中音手，晚年錄了一整張慢歌",
+   "編曲是 八木正生，二十三年前替他的第一張唱片寫過一首法文題名的曲子"
+  ],
+  "sound": "八軌、約 40 分鐘，八首全部是抒情標準曲，最長的〈'Round Midnight〉7:48、最短的〈Prelude to a Kiss〉3:38。次中音薩克斯風加鋼琴三重奏，再鋪一組弦樂——這是把音色本身當主題的錄音，沒有快板、沒有自作曲。1985 年二月在 King Studio 兩天錄完。",
+  "keyTracks": [
+   "'Round Midnight",
+   "Body and Soul",
+   "In a Sentimental Mood"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1985（首發年），而且是本組最乾淨的一張：release-group first-release-date **1985-07-21**、原盤 Paddle Wheel K28P-6358 的 release date 同日、Discogs 12430898 記 1985-07-21、Apple jp 的 King 官方條目 1777008777 也記 1985-07-21，四邊逐日相符。錄音 1985-02-06／02-07（Discogs 盤面）。",
+  "notes": "**覆核策展層：MB 相符，年份逐日相符，試聽確認。** RG 四欄與唯一一筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層判斷正確。｜✅ **試聽有來源**：第三種查法直查 `lookup?id=1777008777&country=jp&entity=song` 實跑：《Round Midnight》8 軌、℗ 1985 King Record Co.,Ltd、掛名「宮沢 昭」，曲序與資料庫端逐首對應、長度差 ≤5 秒（5:44／4:23／5:10／4:32／7:53／5:19／3:41／4:29）。**採信 1777008777。** 它在 artistId `1370709057` 的 jp 與 us 目錄裡都有，策展層說 us 未命中——**本層實查 us 目錄也有這一筆**，策展層的 us 觀察有誤，但不影響採信。｜⚠ **曲名要注意兩處**：資料庫端第 4 軌題「I Can't Get Started」而店面題日文〈云い出しかねて〉（同一首）；第 8 軌資料庫端拼成「Polca Dots and Moon Beams」，正確拼法是 **Polka Dots and Moonbeams**，**正文引曲名用正確拼法**。｜⚠ **編制要寫對**：有弦樂組（Tamano Strings），**不是純四重奏**，正文不得寫成鋼琴三重奏伴奏。｜**人名邊界**：八木正生、池田芳夫、小津昌彦 有 Discogs 盤面 credit，可寫；⚠ **鋼琴手 Discogs 只給羅馬字「Kenji Kosei」，本層無法確定漢字，不進正文**（人名從嚴，第 241／250 條）。八木正生 與 1962 年《山女魚》的連結有 ja.wikipedia 專輯條目背書，可寫。｜⚠ **同名盤極多**：〈'Round Midnight〉是 Thelonious Monk 的標準曲，**正文不得暗示與任何同名作品有關**。｜**反同構**：本張切入「全抒情曲＋弦樂編制＋八木正生 隔二十三年再合作」，不重述釣魚題名，也不與《On Green Dolphin Street》共用標準曲集的說法。"
+ },
+ {
+  "key": "desc4:白木秀雄|白木秀雄",
+  "artist": "白木秀雄",
+  "album": "白木秀雄",
+  "facts": [
+   {
+    "f": "release-group da7146b8 的欄位：title「白木秀雄」、artist-credit「白木秀雄」（掛個人實體 40d40a8c）、first-release-date 1958、primary-type Album、secondary-types 空。轄下三筆 release：JP 1958 KING KC-8 12 吋黑膠 9 軌（release 題「Hideo Shiraki」，status 欄未填）、JP 2007-11-23 Think! Records THCD-064 CD 9 軌、JP 2012-07-11 KICJ-2241 CD 9 軌（barcode 4988003422660，曲名全部改印片假名）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=da7146b8-38e8-478b-8f29-5204a1e15bbd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "9 軌逐軌：1〈I Got Rhythm〉2:36、2〈Moritat〉5:23、3〈The Man I Love〉3:23、4〈A Mono-Drummer〉2:12、5〈Taxedo Junction〉4:01、6〈Lover, Come Back To Me〉3:40、7〈Around The World〉3:54、8〈Drum Boogie〉3:04、9〈A Night In Tunisia〉7:16——九首每首兩分半到四分，只有壓軸的〈A Night In Tunisia〉7:16 放開。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=da7146b8-38e8-478b-8f29-5204a1e15bbd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音是 1958 年 11 月 26 日與 27 日的單聲道錄音，1959 年由 King 以 KC-8 發行，是 白木秀雄 的第一張領銜專輯。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84"
+   },
+   {
+    "f": "KC-8 的參加者是 白木秀雄（鼓）、宮沢昭（次中音薩克斯風）、福原彰（小號）、八城一夫（鋼琴兼編曲）、栗田八郎（貝斯）、小野寺猛（bongo 與 conga）。",
+    "src": "https://www.discogs.com/release/8927524"
+   },
+   {
+    "f": "白木秀雄 1933 年 1 月 1 日生於東京，本名 柏倉秀康，藝名「白木」是把本姓「柏倉」的「柏」字拆開來取的；他 1951 年考進東京藝術大學音樂學部打擊樂科，那一屆打擊樂科的新生只有兩人，另一位是後來成為指揮家的 岩城宏之。1957 年 4 月組成 白木秀雄クインテット。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84"
+   }
+  ],
+  "hookCandidates": [
+   "藝名是把本姓「柏倉」的「柏」字拆成兩半來的——木字邊留給自己，叫白木",
+   "東京藝大打擊樂科那一屆只收了兩個人：他，和後來當指揮家的 岩城宏之"
+  ],
+  "sound": "九軌、約 36 分鐘的單聲道錄音。前八首都在兩分十二秒到五分二十三秒之間，像一張曲集；壓軸的〈A Night In Tunisia〉7:16 才把鼓手的篇幅放開。鼓手掛名的唱片，第四首〈A Mono-Drummer〉2:12 是最直接的自我介紹。六人編制：鼓、次中音薩克斯風、小號、鋼琴、貝斯，外加一位打 bongo 與 conga 的。",
+  "keyTracks": [
+   "A Night In Tunisia",
+   "A Mono-Drummer",
+   "Moritat"
+  ],
+  "status": "full",
+  "yearVerified": "**改判成立，1959（首發年），策展層正確。** MB release `0dd4abf6` 的 date 是 1958，但那是錄音年：(a) ja.wikipedia 白木秀雄 條目的領銜作目錄明寫「『白木秀雄』－ Hideo Shiraki（1958 年 11 月 26～7 日、モノラル録音）(King KC-8) **1959 年**（初リーダー・アルバム）」；(b) Discogs release 8927524（King Records KC-8）記 **1959**，盤面註記「Recorded 26th and 27th November 1958」；(c) Apple jp 的 King 官方條目 1777020927 記 **1959-06-01**（9 軌）。**三個獨立來源都指向 1959，錄音 1958-11-26／27。** 行文寫「1958 年 11 月錄音、1959 年發行」。",
+  "notes": "**覆核策展層：MB 相符，年份改判成立且多一個來源，兩條封面路徑全部覆核通過。** RG 四欄與三筆 release 與 mbNote 相符；`da7146b8` 的 CAA 覆核 **404**，策展層判斷正確。｜✅ **年份多一個來源**：策展層舉了 ja.wikipedia 與 Apple 兩個來源，本層再加 **Discogs 8927524（King KC-8，1959，盤面記 1958-11-26／27 錄音）**，三源同向。｜✅ **封面路徑一覆核通過（重複 RG）**：策展層指的 `8c4f6561`《白木秀雄》2007-11-23 實查為 **Think! Records THCD-064、CAA 200**，轄下那筆 release 的九軌曲名與軌長與 1958 原盤逐首對應（差 1–4 秒）——**確認是同一張碟，可從該 RG 取圖**。⚠ 但那是 2007 年 Think! 復刻的美術，本機建圖時要記。｜✅ **封面路徑二覆核通過（Apple）**：`1777020927` 實查為《HIDEO SHIRAKI》、℗ 1959 King Record Co.,Ltd、**9 軌**，曲序與資料庫端逐首對應（アイ・ガット・リズム／モリタート／私の彼氏／モノ・ドラマー／タキシード・ジャンクション／恋人よ、われにかえれ／80日間世界一周／ドラム・ブギー／チュニジアの夜），軌數、廠牌、年份三項全對——`apple-verified-collection` 成立。｜✅ **試聽有來源**：同一筆 `1777020927` 九軌全部有 preview，**採信之**。｜⚠ **大發現：宮沢昭 是這張的次中音手。** 他與 松本英彦 都當過 白木秀雄クインテット 的次中音——ja.wikipedia 白木秀雄 條目的成員表列出歷任次中音為 芦田ヤスシ、宮沢昭、松本英彦、村岡建、稲垣次郎，小號為 福原彰、小俣尚也、仲野彰、日野皓正，鋼琴為 八城一夫、世良譲、大野雄二，貝斯為 渡辺雄二、栗田八郎、稲葉国光。**本組四位裡有三位（白木秀雄、宮沢昭、松本英彦）在這個編制裡交會**，而 村岡建／稲垣次郎／大野雄二（c-133）、八城一夫／世良譲（c-134）、日野皓正（c-132 a）也全在這三批的名單上。｜**人名邊界**：宮沢昭、福原彰、八城一夫、栗田八郎 有 Discogs 盤面 credit ＋ ja.wikipedia 成員表雙重背書；岩城宏之 有 ja.wikipedia。CJK 上限內優先取 宮沢昭、八城一夫、岩城宏之。｜⚠ **盤名與掛名同字（selfTitled）**，下游必須鎖 rgMbid。｜**反同構（白木六張）**：本張切入「藝名的由來＋藝大打擊樂科兩人＋首作的六人編制」，其餘五張不得重述生平起源。"
+ },
+ {
+  "key": "desc4:白木秀雄|白木秀雄リサイタル",
+  "artist": "白木秀雄",
+  "album": "白木秀雄リサイタル",
+  "facts": [
+   {
+    "f": "release-group f59e3eb2 的欄位：title「白木秀雄リサイタル」、artist-credit「白木秀雄」（掛個人實體 40d40a8c）、first-release-date 1959、primary-type Album、secondary-types 含「Live」。轄下三筆 release：JP 1959 KING LKF 1051 10 吋黑膠 6 軌（release 題「Recital At Sankei Hall, Tokyo」，status 欄未填）、JP 2007-11-23 Think! Records THCD-067 CD 6 軌（barcode 4988044611610）、JP 2012-07-11 KING KICJ 2242 CD 6 軌（barcode 4988003422677，曲名改印片假名）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f59e3eb2-a598-42c5-b263-70636a3318a9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "6 軌逐軌（2007 年 THCD-067 那筆登記的軌長）：1〈Theme (White Wood)〉0:43、2〈Strike Up The Band〉3:33、3〈Yukiya Kon Kon〉3:15、4〈On A Slow Boat To China〉5:23、5〈My Funny Valentine〉5:11、6〈Skin Deep〉7:38——開場的主題曲只有 43 秒，壓軸〈Skin Deep〉7:38 是 Louis Bellson 那首鼓手名曲。第三首的日文原題是〈雪やこんこん〉，2012 年 King 版的曲目表註明它是文部省唱歌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f59e3eb2-a598-42c5-b263-70636a3318a9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "演出是 1959 年 6 月 28 日在東京產經會館（Sankei Hall）的單聲道實況錄音，King 以 10 吋盤 LKF-1051 在 1959 年發行。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84"
+   },
+   {
+    "f": "台上是 白木秀雄クインテット：白木秀雄（鼓）、松本英彦（次中音薩克斯風與長笛）、福原彰（長號）、世良譲（鋼琴）、栗田八郎（貝斯），另有一位打 conga 與 bongo 的樂手，並邀 原信夫とシャープス・アンド・フラッツ 擔任特別來賓。",
+    "src": "https://www.discogs.com/release/9865025"
+   },
+   {
+    "f": "開場曲題名〈White Wood〉是「白木」兩字的英譯——他的藝名本身就是把本姓「柏倉」的「柏」字拆開來取的。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84"
+   }
+  ],
+  "hookCandidates": [
+   "開場主題只有四十三秒，曲名叫〈White Wood〉——那就是「白木」兩個字的英譯",
+   "一張 1959 年的十吋現場盤，第三首是文部省唱歌〈雪やこんこん〉"
+  ],
+  "sound": "六軌、約 26 分鐘，10 吋盤的規格。43 秒的主題曲開場，之後四首在三分十五秒到五分二十三秒，壓軸〈Skin Deep〉7:38 是鼓手獨秀的曲目。單聲道現場錄音，五重奏加一位 conga／bongo，還有一支大樂團當特別來賓——1959 年的日本爵士現場盤本來就少，這張把當時最紅的編制原樣留了下來。",
+  "keyTracks": [
+   "Skin Deep",
+   "Yukiya Kon Kon",
+   "Theme (White Wood)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1959（首發年，也是演奏年）。release-group first-release-date 1959、原盤 KING LKF 1051 記 1959、Discogs 9865025 記 1959、ja.wikipedia 白木秀雄 條目記「1959 年 6 月 28 日、東京 サンケイホールでのモノラル・ライブ録音（King LKF-1051（10 インチ盤））1959 年」、Apple jp 的 King 官方條目 1777021265 記 1959-11-01，五邊一致。**演出日期 1959-06-28 已查到**（策展層說「MB 未登記演出日期、研究層要另找」）。",
+  "notes": "**覆核策展層：MB 相符，年份成立，演出日期補上，試聽找回。** RG 五欄（含 Live）與三筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層判斷正確。｜✅ **補上策展層查不到的演出日期：1959 年 6 月 28 日，東京產經會館**（ja.wikipedia 白木秀雄 條目＋Discogs 9865025 盤面註記，兩個獨立來源同向）。｜✅ **試聽有來源**：第三種查法直查 `lookup?id=1777021265&country=jp&entity=song` 實跑：《HIDEO SHIRAKI RECITAL - EP》6 軌、℗ 1959 King Record Co.,Ltd，曲序與資料庫端逐首對應、長度差 ≤1 秒（0:44／3:33／3:16／5:24／5:11／7:39）。**採信 1777021265。**（`apple-candidates.md` 把它與《白木秀雄》兩筆並列成「依據：年份」的候選而未判定，本層逐軌核對後確認 `1777021265` 對應本卡、`1777020927` 對應《白木秀雄》那一張，兩筆不得對調。）⚠ Apple 因 6 軌把它標成「- EP」，但 MB primary-type 是 Album、載體是 10 吋黑膠，**欄位本身不是判準**（第 253／227 條）。｜⚠ **松本英彦 是這張的次中音手**——本組四位裡兩位在同一個台上。另一位 白木秀雄クインテット 的次中音 宮沢昭 則在《白木秀雄》（1958 錄音）那張，**兩張不要混**。｜⚠ **特別來賓 原信夫とシャープス・アンド・フラッツ 是 c-133 a 組的掛名**（5 張），跨批交集要記。｜**人名邊界**：松本英彦、世良譲、栗田八郎、福原彰 有 Discogs 盤面 credit ＋ ja.wikipedia 成員表雙重背書，可寫；⚠ 打 conga／bongo 的那位 Discogs 只給羅馬字「Joya Masubuchi」，**漢字無法確認，不進正文**。CJK 上限內優先取 松本英彦、世良譲、原信夫とシャープス・アンド・フラッツ。｜⚠ **重複 RG**：MB 另有 `4b426f75`《HIDEO SHIRAKI RECITAL》（掛群組實體 ee00ecfa、無日期、CAA 覆核 **404**），是同一張碟的第二個 RG，策展層釘 `f59e3eb2` 正確。｜**反同構**：本張切入「1959-06-28 產經會館＋43 秒的〈White Wood〉＋雪やこんこん＋大樂團來賓」，不重述藝名由來的完整故事（那條留給《白木秀雄》）。"
+ },
+ {
+  "key": "desc4:白木秀雄|プレイズ・ボッサ・ノバ",
+  "artist": "白木秀雄",
+  "album": "プレイズ・ボッサ・ノバ",
+  "facts": [
+   {
+    "f": "release-group 5ed483fe 的欄位：title「プレイズ・ボッサ・ノバ」、artist-credit「白木秀雄」（掛個人實體 40d40a8c）、first-release-date 1962、primary-type Album、secondary-types 空。轄下三筆 release：JP KING SKJ 1007 12 吋黑膠 7 軌（date 欄只有「1962」、status 欄未填）、JP 2007-11-23 Think! Records THCD-065 CD 7 軌（barcode 4988044611597）、JP 2012-07-11 KING KICJ 2244 CD 7 軌（barcode 4988003422691）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "7 軌逐軌：1〈Tico Tico〉4:25、2〈Besame Mucho〉2:29、3〈Deux Step〉4:24、4〈Gypsy Blue〉5:14、5〈Sayonara Blues〉6:38、6〈Orfeo Negro〉7:52、7〈Groovy Samba〉4:46——只有〈Tico Tico〉〈Besame Mucho〉〈Orfeo Negro〉三首是拉丁美洲曲目，其餘四首是把 bossa nova 的節奏套在別的素材上。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "King SKJ 1007 的盤面註記錄音日期是 1962 年 12 月 7 日與 8 日；五重奏是 白木秀雄（鼓）、松本英彦（次中音薩克斯風與長笛）、小俣尚也（小號）、世良譲（鋼琴）、栗田八郎（貝斯）。",
+    "src": "https://www.discogs.com/release/11158727"
+   },
+   {
+    "f": "Apple jp 的 King 官方條目把它的發行日記為 1963 年 1 月 20 日，7 軌；同一號段的前兩張 King 官方條目分別是 SKJ 1001《山女魚》1962 年 10 月 1 日、SKJ 1006《Plays Horace Silver》1962 年 10 月 30 日。",
+    "src": "https://music.apple.com/jp/album/1777007454"
+   },
+   {
+    "f": "這張與同號段的 SKJ 1006《Plays Horace Silver》是白木秀雄五重奏在 1962 年下半年錄的一對：一張整張只彈 Horace Silver 的曲目，一張整張追巴西節奏。",
+    "src": "https://www.discogs.com/release/9979602"
+   }
+  ],
+  "hookCandidates": [
+   "1962 年十二月錄，1963 年一月發——bossa nova 傳到日本的速度，可以用這張唱片的兩個日期量出來",
+   "七首裡只有三首真的來自拉丁美洲，其餘四首是把節奏搬過來套上去的"
+  ],
+  "sound": "七軌、約 36 分鐘。〈Besame Mucho〉2:29 最短，〈Orfeo Negro〉7:52 最長，落差很大。五重奏編制：鼓、次中音薩克斯風兼長笛、小號、鋼琴、貝斯——沒有吉他，所以它不是模仿巴西那種吉他與人聲的 bossa nova，而是用硬咆哮的編制去打那個節奏。〈Sayonara Blues〉6:38 是全碟最靠近日本自己聲音的一首。",
+  "keyTracks": [
+   "Orfeo Negro",
+   "Sayonara Blues",
+   "Tico Tico"
+  ],
+  "status": "full",
+  "yearVerified": "**改判成立，1963（首發年），策展層正確，而且本層找到了決定性的新證據。** MB release `b22363b1`（KING SKJ 1007）的 date 只有年份「1962」且 status 未填；策展層以 Apple jp 的 King 官方條目 1777007454 記 **1963-01-20** 並用號段旁證（SKJ 1001 → 1962-10-01、SKJ 1006 → 1962-10-30、SKJ 1007 → 1963-01-20，號碼與日期同向遞增）改判 1963。**本層新查到的決定性證據：Discogs release 11158727（King Records SKJ 1007）的盤面註記寫「recorded 1962-12-7, 1962-12-8」——錄音在 1962 年 12 月 7、8 日，1962 年底根本來不及發行，1963 年 1 月 20 日正好對得上。** 資料庫端與 ja.wikipedia 白木秀雄 條目所記的「1962 年」都是錄音年。**1963 成立，錄音 1962-12-07／12-08。**",
+  "notes": "**覆核策展層：MB 相符，年份改判成立並取得新的決定性證據，試聽找回。** RG 四欄與三筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層判斷正確。｜✅ **年份改判補強**：策展層靠 Apple 的精確日期＋號段旁證改判 1963，本層在 Discogs 盤面找到 **錄音日 1962-12-07／12-08** 這個硬證據——錄音在 12 月上旬，1962 年內不可能發行。**第 383 條第三列成立，而且比原論證強。** 順帶：ja.wikipedia 白木秀雄 條目的目錄把這張記成 1962 年，**那是錄音年，不是反證**，已在 yearVerified 寫明。｜✅ **試聽有來源**：第三種查法直查 `lookup?id=1777007454&country=jp&entity=song` 實跑：《HIDEO SHIRAKI plays Bossa Nova》7 軌、℗ 1963 King Record Co.,Ltd，曲序與資料庫端逐首對應、長度差 ≤4 秒（ティコ・ティコ 4:28／ベサメ・ムーチョ 2:32／ドゥー・ステップ 4:27／ジプシー・ブルー 5:18／サヨナラ・ブルース 6:40／黒いオルフェ 7:54／グルーヴィー・サンバ 4:49）。**採信 1777007454。**｜⚠ **編制要寫對**：五重奏沒有吉他，**正文不得寫成模仿巴西吉他／人聲的 bossa nova**。｜**人名邊界**：松本英彦、小俣尚也、世良譲、栗田八郎 有 Discogs 盤面 credit ＋ ja.wikipedia 白木秀雄クインテット 成員表雙重背書，可寫。｜⚠ **重複 RG**：MB 另有 `aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（標 Compilation，CAA 覆核 **200**），策展層刻意不釘、釘有 1962 原盤 release 的 `5ed483fe`，正確。｜**反同構**：本張切入「1962-12 錄／1963-01 發的時間差＋沒有吉他的五重奏」，與同號段的《Plays Horace Silver》成對但不得共用敘事。"
+ },
+ {
+  "key": "desc4:白木秀雄クインテット|Plays Horace Silver",
+  "artist": "白木秀雄クインテット",
+  "album": "Plays Horace Silver",
+  "facts": [
+   {
+    "f": "release-group 7ce34993 的欄位：title「Plays Horace Silver」、artist-credit「Hideo Shiraki Quintet」（掛群組實體 ee00ecfa，MB 主名「白木秀雄クインテット」）、first-release-date 1962、primary-type Album、secondary-types 空。轄下兩筆 release：JP 1962 KING SKJ 1006 12 吋黑膠 7 軌（status 欄未填）、JP 2012-07-11 KING KICJ 2243 CD 7 軌（barcode 4988003422684）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7ce34993-378f-4c85-9146-8e101c12090c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "7 軌逐軌：1〈Senor Blues〉6:35、2〈Sister Sady〉6:01、3〈Doing The Thing〉6:21、4〈Blowing The Blues Away〉4:24、5〈Preacher〉5:18、6〈Swinging The Samba〉5:46、7〈Filthy McNasty〉4:32——七首全部是 Horace Silver 的曲子。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7ce34993-378f-4c85-9146-8e101c12090c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "錄音是 1962 年 9 月 3 日與 4 日，五重奏是 白木秀雄（鼓）、松本英彦（次中音薩克斯風與長笛，兼全碟編曲）、小俣尚也（小號）、世良譲（鋼琴）、栗田八郎（貝斯），福原彰 吹活塞長號，監修 久保田二郎，原盤 ℗1962、定價 2000 日圓。",
+    "src": "https://www.discogs.com/release/9979602"
+   },
+   {
+    "f": "Horace Silver 是 Blue Note 在 1950 年代末到 1960 年代初的核心作曲者，〈Senor Blues〉〈Sister Sadie〉〈Blowin' the Blues Away〉〈The Preacher〉〈Filthy McNasty〉都是他的代表作——這張把它們整個搬成一整張日本盤。",
+    "src": "https://music.apple.com/jp/album/1777007028"
+   },
+   {
+    "f": "白木秀雄クインテット 從 1958 年到 1965 年連續八年拿下《スイングジャーナル》讀者票選的 combo 部門第一名，白木秀雄 本人的鼓手部門則從 1957 年到 1967 年連續十一年第一。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84"
+   }
+  ],
+  "hookCandidates": [
+   "整張只彈一個人的曲子：Horace Silver 的七首，1962 年九月在東京錄兩天",
+   "編曲的人是次中音手 松本英彦——鼓手掛名的唱片，樂譜是薩克斯風寫的"
+  ],
+  "sound": "七軌、約 39 分鐘，七首都在四分二十秒到六分三十五秒之間，長度整齊。五重奏：鼓、次中音薩克斯風兼長笛、小號、鋼琴、貝斯，另有活塞長號。整張只彈 Horace Silver 的曲子，所以節奏底是 funky hard bop 那種重複、帶福音味的短樂句，不是 bebop 的密度。〈Senor Blues〉6:35 開場最長。",
+  "keyTracks": [
+   "Senor Blues",
+   "Filthy McNasty",
+   "Preacher"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1962（首發年）。release-group first-release-date 1962、原盤 KING SKJ 1006 記 1962、Discogs 9979602 記 1962（盤面 ℗1962、錄音 1962-09-03／09-04）、ja.wikipedia 白木秀雄 條目記『プレイズ・ホレス・シルヴァー』（King）1962 年、Apple jp 的 King 官方條目 1777007028 記 1962-10-30，五邊一致。行文寫「1962 年 9 月錄音、同年發行」。",
+  "notes": "**覆核策展層：MB 相符，年份成立，兩條封面路徑全部覆核通過，試聽找回。** RG 四欄與兩筆 release 與 mbNote 相符；`7ce34993` 的 CAA 覆核 **404**，策展層判斷正確。｜✅ **封面路徑一覆核通過（重複 RG）**：策展層指的 `2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23 實查為 **Think! Records THCD-066、CAA 200**，轄下那筆 release 的七軌曲名與軌長與 1962 原盤逐首對應（差 1–6 秒）——**確認是同一張碟，可從該 RG 取圖**；⚠ 那是 2007 年 Think! 復刻的美術。｜✅ **封面路徑二覆核通過（Apple）**：`1777007028` 實查為《HIDEO SHIRAKI plays HORACE SILVER》、℗ 1962 King Record Co.,Ltd、**7 軌**，曲序逐首對應——`apple-verified-collection` 成立。｜✅ **試聽有來源**：同一筆 `1777007028` 七軌全部有 preview、長度差 ≤7 秒（6:41／6:08／6:29／4:31／5:26／6:05／4:38）。**採信 1777007028。**（`apple-candidates.md` 記本張「目錄裡找不到」是錯的，它就在 artistId `900350012` 的 jp 與 us 目錄裡。）｜✅ **掛名覆核通過**：本 RG 的 credit 是英文「Hideo Shiraki Quintet」、所屬實體是群組 `ee00ecfa`（主名 白木秀雄クインテット），策展層依第 354／355 條取漢字＋片假名編制寫法，與池中 峰厚介クインテット 的先例一致，**正確**。⚠ 白木秀雄 在池中會有三個掛名字串（白木秀雄／白木秀雄クインテット／白木秀雄クインテット＆スリー琴ガールズ），對應 MB 三個不同實體，本層逐張核過**沒有同碟被兩種寫法各收一次**。｜⚠ **曲名拼寫**：資料庫端拼「Sister Sady」「Blowing The Blues Away」「Preacher」，Horace Silver 的原曲名是〈Sister Sadie〉〈Blowin' the Blues Away〉〈The Preacher〉，**正文引原曲名用正確拼法、引盤面曲目時說明是日本盤的拼法**。｜⚠ **讀者票選的兩個連續紀錄**（combo 八年、鼓手十一年）出自 ja.wikipedia，**是讀者人氣投票不是評審獎項**；依第 370 條 writer-base 的榜單條款，**寫作層很可能要整條不寫**，facts 保留供判斷。｜**人名邊界**：松本英彦、小俣尚也、世良譲、栗田八郎、福原彰、久保田二郎 有 Discogs 盤面 credit ＋ ja.wikipedia 成員表背書；Horace Silver 是盤名本身。｜**反同構**：本張切入「整張只彈 Horace Silver＋松本英彦 編曲」，與《プレイズ・ボッサ・ノバ》成對但不共用敘事。"
+ },
+ {
+  "key": "desc4:白木秀雄|祭りの幻想",
+  "artist": "白木秀雄",
+  "album": "祭りの幻想",
+  "facts": [
+   {
+    "f": "release-group b545a154 的欄位：title「Hideo Shiraki in Fiesta」、artist-credit「Hideo Shiraki」（掛個人實體 40d40a8c，MB 主名「白木秀雄」）、first-release-date 2005-11-25、primary-type Album、secondary-types 空。轄下三筆 release 全部是再發：JP 2005-11-25 THCD-006 CD 7 軌（barcode 4988044610033，題《祭りの幻想》）、JP 2009-09-25 THCD-100 SHM-CD 9 軌（barcode 4988044613805，題《祭りの幻想》）、XW 2017-06-15 Trunk Records 數位 7 軌（barcode 5056163063241，題《Hideo Shiraki in Fiesta》）——**1961 年的原盤在資料庫端沒有建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b545a154-6a96-4bcb-90bb-ed3e0d692f43&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "原盤是テイチク（Teichiku Records）SL-3002，1961 年在日本發行，封面題《Hideo Shiraki In Fiesta＝祭の幻想》；盤面註記載明 A1、A2、A3、B3 錄於 1961 年 6 月 23 日，B4 錄於 6 月 29 日，B1、B2 錄於 7 月 4 日。",
+    "src": "https://www.discogs.com/release/13563937"
+   },
+   {
+    "f": "7 軌逐軌（面別與時長）：A1〈祭の幻想／In Fiesta〉7:03、A2〈ファイブ・スポット・アフター・ダーク／Five Spot After Dark〉6:30、A3〈ジャスト・ワン・オァ・エイト／Just One Or Eight〉6:31、B1〈チェロキー／Cherokee〉5:32、B2〈ブルー・ロメオ／Blue Romeo〉5:51、B3〈エチュードNo. 1／Etude No. 1〉4:15、B4〈ユー・ドンド・ノウ・ホワット・ラブ・イズ／You Don't Know What Love Is〉4:59。",
+    "src": "https://www.discogs.com/release/13563937"
+   },
+   {
+    "f": "演奏是 白木秀雄（鼓）、松本英彦（次中音薩克斯風與長笛）、小俣尚也（小號）、世良譲（鋼琴）、栗田八郎（低音提琴），加上客座的箏——Discogs 的 credit 把箏手的名字羅馬拼音記為 Kinuko Shirane；解說 油井正一，製作 今井俊夫。",
+    "src": "https://www.discogs.com/release/3153245"
+   },
+   {
+    "f": "ja.wikipedia 的 白木秀雄 條目在領銜作目錄裡記『祭りの幻想』－ In Fiesta (Teichiku) 1961 年，排在 1960 年的《ファンキー！登場》與 1962 年的《プレイズ・ボッサ・ノバ》之間。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84"
+   }
+  ],
+  "hookCandidates": [
+   "1961 年六月到七月分三天錄的，七首裡有一把箏——那是他四年後帶去柏林的那個點子的原型",
+   "標題曲叫〈祭の幻想〉，唱片公司把英文題印成 In Fiesta"
+  ],
+  "sound": "七軌、約 41 分鐘，七首都在四分十五秒到七分三秒之間。五重奏加一把箏：鼓、次中音薩克斯風兼長笛、小號、鋼琴、低音提琴。標題曲〈祭の幻想〉7:03 開場最長，B 面的〈Cherokee〉5:32 是傳統的炫技曲目。箏不是點綴音色，而是把日本的祭典旋律直接放進 hard bop 的和聲裡。",
+  "keyTracks": [
+   "祭の幻想",
+   "Cherokee",
+   "Five Spot After Dark"
+  ],
+  "status": "full",
+  "yearVerified": "**改判成立，1961（首發年），策展層正確。** release-group first-release-date 是 2005-11-25（Think! Records 復刻年），轄下三筆 release 全部是再發，1961 年原盤資料庫端未建。兩個獨立來源指向 1961：(a) Discogs release 13563937 實查為 **Teichiku Records SL-3002、1961、Japan**，並載明錄音 1961-06-23／06-29／07-04；(b) ja.wikipedia 白木秀雄 條目記『祭りの幻想』－ In Fiesta (Teichiku) 1961 年。**策展層 `label` 欄寫的「テイチク SL-3002」經本層以 Discogs 盤面覆核成立**（策展層自註來源是二手唱片行條目、要求研究層覆核——已覆核通過）。⚠ 策展層另寫「另有 TEA-18 的後壓」，本層**查不到 TEA-18 的獨立來源，這個編號不得寫進正文**。",
+  "notes": "**覆核策展層：年份與廠牌改判全部成立，盤名有一個新的細節要提醒，試聽找回。** RG 四欄與三筆 release 與 mbNote 相符；CAA 覆核 **200**，策展層判斷正確。｜✅ **策展層要求覆核的 catno 通過**：テイチク SL-3002 在 Discogs release 13563937 的盤面上確認，年份 1961 相符。⚠ **但「TEA-18 後壓」查不到來源，不得引用。**｜⚠ **盤名的細節**：**1961 年原盤封面印的日文題是《祭の幻想》（沒有「り」）**，《祭りの幻想》是 2005／2009 兩次 Think! 復刻時用的寫法。卡單取《祭りの幻想》可行（有兩筆 release 用這個題），**但正文若要提原盤封面，字要寫《祭の幻想》**；兩種寫法策展層都已放進 queryAlias。｜✅ **試聽有來源**：第三種查法直查 `lookup?id=1255618794&country=jp&entity=song` 實跑：《In Fiesta》7 軌、℗ 2017 Trunk Records，曲序與資料庫端 2017 數位 release（4f1b0920）逐首對應、長度逐軌相同（7:38／6:42／6:42／5:42／6:02／4:20／5:02）。**採信 1255618794。** 策展層說「以盤名搜 jp／us 皆 0 筆、改用藝人目錄才命中」——本層實查相同，第 254 條那個坑成立。｜⚠ **版本軌數要分清（第 251 條）**：1961 原盤與 2005 THCD-006、2017 Trunk 數位都是 **7 軌**，只有 2009 年的 THCD-100 是 **9 軌**（多兩首 bonus）。**正文寫「七首」要指明是原盤。**｜⚠ **擋下一處無來源的宣稱**：`curatorWhy` 寫「標題曲〈祭の幻想〉是 八城一夫 1958 年用調式手法寫的曲子」——**Discogs 的 1961 原盤與 2005 復刻條目都沒有作曲者 credit，ja.wikipedia 也沒有，本層查不到任何來源**。**正文不得指名作曲者，也不得寫 1958 年或「調式手法」。**｜⚠ **箏手的名字**：Discogs credit 只給羅馬拼音「Kinuko Shirane」，**漢字無法確認（策展層寫「白根きぬ子」也沒有附來源），不進正文**；寫「一把箏」或「客座的箏」即可（人名從嚴，第 241／250 條）。｜✅ **松本英彦 是這張的次中音手，策展層的判斷正確**（Discogs 盤面 credit 確認）——本組四位裡把兩位直接接在一起的碟，這是第三張（另兩張是《白木秀雄》的 宮沢昭、《リサイタル》與《Plays Horace Silver》的 松本英彦）。｜⚠ **重複 RG**：MB 另有 `3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（掛群組實體 ee00ecfa，CAA 覆核 **404**），策展層釘 release 較全、CAA 200 的 `b545a154`，正確。｜**反同構**：本張切入「1961 年三天錄音＋箏進 hard bop＋通往 1965 年柏林那張的原型」。"
+ }
+]
