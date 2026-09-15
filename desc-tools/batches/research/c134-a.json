@@ -238,5 +238,485 @@
   "status": "full",
   "yearVerified": "**策展層的 2014 → 1969 改判覆核成立，而且找到了它原本沒有的獨立來源。** 策展層的依據只有 Apple jp 條目 `1699533267` 的「1969-01-01、℗ 1969 Nippon Columbia、7 軌」——⚠ **那是一份數位母帶的 metadata，本身只算一個來源**（第 431 條）。本層補上兩個真正獨立的：(1) **日本コロムビア 自己的商品頁 `columbia.jp/prod-info/COCB-54093/` 逐字寫「オリジナル発売日 1969 年 2 月 10 日／原盤番号 XMS-10009／1968 年 10 月 3 日 テイチク会館スタジオ録音」**；(2) **實體黑膠盤面條目：Columbia XMS-10009-CT、1969、Takt Jazz Series**。三者互相對得上，**1969 成立**，而且可以精確到 **1969-02-10**。MB 的 2014-04-23 是 COCB-5409x 那批 Blu-spec 復刻的日期，正是第 429 條講的形狀。",
   "notes": "**覆核策展層：MB 相符、年份改判成立（且補強了證據）、封面路徑成立、試聽成立。**｜⚠ **第 431 條的實作**：策展層用「Apple 的 ℗ 1969」推翻「MB 的 2014」，方向對，但那只是一個來源。本層照第 431 條去找實體盤面與廠牌自己的目錄頁，**兩者都找到而且都寫 1969**——這條改判現在站在三個獨立來源上，不是一個。**另外一個副產品：原盤編號 XMS-10009 與 1968-10-03 的錄音日，卡單的 label 欄可以補。**｜**MB**：RG 四欄與唯一一筆 release（JP 2014-04-23／Columbia COCB-54093／CD 7 軌）與 mbNote 相符；CAA release-group 端點實測 **404**，與策展層一致。｜**封面路徑覆核通過**：策展層寫「Apple jp 1699533267（7 軌一致）→ apple-verified-collection」，逐項實查——collectionId 1699533267、trackCount **7**、℗ 1969 Nippon Columbia、掛在 artistId **682432830「前田憲男トリオ」**（不是主 id 79434607），七軌曲序與 MB／原盤逐軌相同，**軌數、年份、廠牌三項全對，路徑成立**。｜**試聽（三種查法全跑）**：search、藝人目錄（682432830 整份 dump，六張）、直查 `lookup?id=1699533267&country=jp&entity=song` 三種都命中，**7 軌全部有 previewUrl**。**串流採信 1699533267**。｜⚠ **第 434 條再驗**：前田憲男 在店面有三個 id——`79434607`「前田憲男」（25 張）、`682432830`「前田憲男トリオ」（6 張）、`952100300`「前田憲男 & ヒズ・オーケストラ」（1 張）。**本張只掛在第二個上，主 id 查不到**；策展層點名的兩個之外，本層另查到第三個。｜⚠ **一個要留意的地名**：廠牌頁寫錄音在「テイチク会館スタジオ」，但發行的是 日本コロムビア 的 Takt 系列——**租用テイチク的錄音棚而已，不是テイチク的碟**，正文不得把廠牌寫成テイチク。｜**跨卡交集**：鼓手 **猪俣猛** 是 c-133 a 組的掛名，**正文不得把這張寫成 猪俣猛 的碟**。前田憲男 2018 年辭世與本作無關，依反向禁令不寫進正文。｜**反同構（前田憲男 三張）**：本張切「1968 年一天錄完的首張鋼琴三重奏＋四首自作曲＋Takt Jazz Series」，《Rock Communication》走 1970 年テイチク的民謠爵士放克，《Falling in Love With Love》走 1980 年東芝「Love Touch Piano」系列。"
+ },
+ {
+  "key": "desc4:前田憲男とオールスターズ|Rock Communication",
+  "artist": "前田憲男とオールスターズ",
+  "album": "Rock Communication",
+  "facts": [
+   {
+    "f": "原盤是テイチク（Teichiku Records）的 12 吋黑膠 SL-1329，1970 年日本發行，**盤面印的全名是《Rock Communication 八木節》、掛名「前田憲男とオール・スターズ」**。十四軌全部是日本民謠的改編：〈八木節〉〈津軽じょんがら節〉〈花笠音頭〉〈おてもやん〉〈佐渡おけさ〉〈ソーラン節〉〈金毘羅船々〉〈安里屋ユンタ〉〈北海盆唄〉〈会津磐梯山〉〈お江戸日本橋〉〈大漁唄い込み〉〈ドンパン節〉〈黒田節〉。",
+    "src": "https://api.discogs.com/releases/9984048"
+   },
+   {
+    "f": "release-group a2250d99 的欄位：title「Rock Communication」、artist-credit 單一元素「Norio Maeda & All-Stars」、first-release-date 1970、primary-type Album、secondary-types 空。轄下兩筆 release：JP 1970／Teichiku Records SL-1329／Vinyl 14 軌，與 FR（無日期）／Wewantsounds WWSCD89／CD 14 軌、標題寫成「Rock Communication Yagibushi」。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2250d99-cffc-4262-bf34-23c171563a4a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "法國廠牌 Wewantsounds 以 WWSCD89／WWSLP89 做了本作的**首次國際復刻**，母帶由巴黎的 Coloursound Studio 重新處理，內附 Paul Bowler 撰寫的八頁解說。廠牌的介紹把本作定位成「把十四首日本傳統民謠改成令人瞠目的爵士放克器樂曲」，並說 前田憲男 的編曲「正好落在 David Axelrod 與 Lalo Schifrin 之間」，把他與 大野雄二、羽田健太郎 並列為日本最多產的編曲家。",
+    "src": "https://wewantsounds.bandcamp.com/merch/norio-maeda-rock-communication-yagibushi-cd-edition-with-8p-booklet"
+   },
+   {
+    "f": "Wewantsounds 復刻版的十四軌軌長：〈八木節〉2:43、〈津軽じょんがら節〉2:57、〈花笠音頭〉3:16、〈おてもやん〉2:39、〈佐渡おけさ〉3:25、〈ソーラン節〉3:40、〈金毘羅船々〉2:44、〈安里屋ユンタ〉3:23、〈北海盆唄〉3:11、〈会津磐梯山〉3:15、〈お江戸日本橋〉2:48、〈大漁唄い込み〉3:25、〈ドンパン節〉3:40、〈黒田節〉2:35，全長約 44 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2250d99-cffc-4262-bf34-23c171563a4a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "前田憲男 1934 年 12 月 6 日生於大阪，高中畢業後成為職業爵士鋼琴手、1955 年上東京，鋼琴與指揮都靠自學；他的主要貢獻是替電視節目編曲，《ニュースステーション》《ミュージックステーション》的主題曲都出自他手，1983 年拿下日本唱片大賞的最佳編曲獎；2003 年起任大阪藝術大學教授，2018 年 11 月 25 日因肺炎辭世。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%89%8D%E7%94%B0%E6%86%B2%E7%94%B7"
+   }
+  ],
+  "hookCandidates": [
+   "十四首日本民謠、一首不留全部改成爵士放克器樂曲——五十二年後法國廠牌 Wewantsounds 把它做成第一次國際復刻",
+   "盤面上的全名其實是《Rock Communication 八木節》，第一首就是那支被改得面目全非的〈八木節〉"
+  ],
+  "sound": "十四軌約 44 分鐘，每首壓在 2 分 35 秒到 3 分 40 秒之間——這是編曲家的專輯而不是獨奏者的專輯，篇幅平均、不留長段即興。素材全部是日本民謠的旋律，編制是加了節奏組與銅管的全明星樂團，做法是把民謠旋律架在放克節奏與大樂團和聲上，因此在日本以外的 DJ 與 rare groove 圈子裡比在爵士圈更有名。",
+  "keyTracks": [
+   "八木節",
+   "ソーラン節",
+   "黒田節"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970（維持卡單值）。MB 的 first-release-date 1970 與轄下的 JP 1970／Teichiku SL-1329／12 吋 14 軌自洽，**實體盤面條目也記 Teichiku SL-1329、1970、日本**——兩個獨立來源（資料庫登記與唱片實體條目）相符，且法國復刻版的廠牌文案同樣寫 1970 年錄於テイチク。無改判。",
+  "notes": "⚠ **掛名覆核（本層的主要任務之一）：策展層新立的漢字掛名「前田憲男とオールスターズ」方向正確，但中黑點錯了。** 策展層的依據是「MB 自己把 `Eiji Kitamura & All Stars`（8bd1f9ef）的 disambiguation 寫成『北村英治とオールスターズ』，且 MB 另有實體『八城一夫とオールスターズ』（1a089205）」——這兩條本層都實查確認存在。**但實體盤面上印的是「前田憲男とオール・スターズ」（オール 與 スターズ 之間有中黑）**，而且 Apple jp 對 八城一夫 那個編制的顯示名也是「**八城一夫とオール・スターズ**」（artistId 1749334232，《How to Love How to Play How To?》1967）。**也就是說：漢字＋片假名這個方向有盤面支持，中黑的有無則 MB 端與盤面端相反。** 池中先例（原信夫とシャープス・アンド・フラッツ／猪俣猛とサウンド・リミテッド／石川晶とカウント・バッファローズ）都帶中黑，與盤面一致。**建議主線把卡單的 `前田憲男とオールスターズ` 改成 `前田憲男とオール・スターズ`**；這只是卡單 artist 值、rgMbid 不動（可逆）。**不自行改卡單。**｜⚠ **盤名名實**：卡單與 MB 的 title 都是「Rock Communication」，**實體盤面與國際復刻版的全名都是《Rock Communication 八木節》／《Rock Communication Yagibushi》**。**正文可以提全名，但不要把卡單盤名寫成錯的。**｜**MB**：RG 四欄與兩筆 release 與 mbNote 相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「Rock Communication 前田憲男」「ロック・コミュニケーション」「Norio Maeda Rock Communication」三組詞、jp／us／gb、album 與 song 兩種 entity——回了 前田憲男 名下三十餘筆，**沒有一筆是本作**；(2) 藝人目錄把 **三個 artistId（79434607 二十五張、682432830 六張、952100300 一張）整份 dump**，三十二張裡沒有本作；(3) 沒有候選 collectionId 可直查。**與策展層的觀察一致。**｜⚠ **第 434 條再驗**：前田憲男 在店面有三個 artistId（見上），策展層只點了兩個。｜**跨卡交集（第 426 條）**：本盤的 rgMbid 與 c-134 b 組實收 22 張零交集；artist-credit 是單一元素，不是合掛。⚠ 另注意：同樣改編日本民謠的還有本組 中村八大モダン・トリオ《日本の旅》（1961），**兩張有五首同曲**（黒田節／ソーラン節／佐渡おけさ／お江戸日本橋／八木節），**但那是兩張不同的碟、不得折疊**。｜**反同構**：本張切「十四首民謠全改成放克器樂＋Wewantsounds 的國際復刻」，與《Alpha Ray》的自作曲三重奏、《Falling in Love With Love》的東芝抒情鋼琴系列互斥。｜**人名邊界**：Paul Bowler（解說撰稿）、David Axelrod／Lalo Schifrin（廠牌文案的比擬對象）都寫拉丁原文；**比擬是廠牌文案的說法，正文若引用要標明是誰說的。**"
+ },
+ {
+  "key": "desc4:前田憲男|Falling in Love With Love",
+  "artist": "前田憲男",
+  "album": "Falling in Love With Love",
+  "facts": [
+   {
+    "f": "原盤是東芝（Toshiba Records）的 12 吋黑膠 TP-72340，1980 年日本發行，屬於東芝的「**Love Touch Piano**」系列；盤面註明 1980 年錄於 Toshiba EMI Studio Tokyo。班底是 前田憲男（鋼琴）、荒川康男（貝斯）、関根英雄（鼓），統籌 ジミー竹内、錄音 川田為夫、母帶 岡崎好男、製作 高橋秀明，封面攝影與設計 遠藤享。",
+    "src": "https://api.discogs.com/releases/8556773"
+   },
+   {
+    "f": "十二軌曲序：A 面〈How High the Moon〉〈Falling in Love With Love〉〈Easy Living〉〈Georgia on My Mind〉〈Five Foot Two, Eyes of Blue〉〈Everybody Loves Somebody〉；B 面〈Gal in Calico〉〈Here's That Rainy Day〉〈Goody Goody〉〈Embraceable You〉〈Fascinating Rhythm〉〈Honeysuckle Rose〉——全部是美國歌本的定番，沒有自作曲。",
+    "src": "https://api.discogs.com/releases/8556773"
+   },
+   {
+    "f": "東芝的「Love Touch Piano」是一整條鋼琴系列，同一段編號裡緊鄰的兩張分別是 世良譲《Bei Mir Bist Du Schön》（TP-72339）與 八城一夫《It's a Sin to Tell a Lie》（TP-72341）——**三張連號、三位都是本批的掛名**；系列內更早的編號還有 八城一夫《The Way We Were》（TP-60303，1978）與 中村八大《Misty》（TP-60301，1978）。",
+    "src": "https://api.discogs.com/releases/8556835"
+   },
+   {
+    "f": "release-group 45ca750d 的欄位：title「Falling in Love With Love」、artist-credit 單一元素「Norio Maeda」、first-release-date 1980、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1980、Official、Toshiba Records TP-72340、12 吋黑膠 12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=45ca750d-32c1-4860-a388-881d4c03ff20&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "前田憲男 1934 年 12 月 6 日生於大阪，鋼琴與指揮都靠自學，1955 年上東京；他晚年與貝斯手 荒川康男、鼓手 猪俣猛 組成鋼琴三重奏「WE3」——**本作 1980 年的貝斯手就是 荒川康男**，兩人的搭檔早在這裡就成形。1983 年他拿下日本唱片大賞的最佳編曲獎。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%89%8D%E7%94%B0%E6%86%B2%E7%94%B7"
+   }
+  ],
+  "hookCandidates": [
+   "東芝的「Love Touch Piano」系列把三位戰後鋼琴手排成連號：TP-72339 世良譲、72340 前田憲男、72341 八城一夫",
+   "貝斯坐的是 荒川康男——他和 前田憲男 後來組成的三重奏「WE3」，起點就在這張 1980 年的東芝盤"
+  ],
+  "sound": "十二軌的鋼琴三重奏，曲目一首自作曲都沒有、全是美國歌本定番（〈How High the Moon〉〈Georgia on My Mind〉〈Embraceable You〉〈Honeysuckle Rose〉）。這是為「Love Touch Piano」這條抒情鋼琴系列量身做的節目：篇幅平均、旋律清楚、不走長段即興，重心在觸鍵與音色，與他同一時期在電視上寫大樂團編曲的身分刻意分開。",
+  "keyTracks": [
+   "Falling in Love With Love",
+   "Georgia on My Mind",
+   "Honeysuckle Rose"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1980（維持卡單值）。MB 的 first-release-date 1980 與轄下唯一一筆 release（JP 1980／Toshiba Records TP-72340／12 吋 12 軌）自洽；**實體盤面條目同樣記 Toshiba Records TP-72340、1980、日本，並註明 1980 年錄於 Toshiba EMI Studio**——兩個獨立來源相符。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、店面觀察成立。**｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面直接走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「Falling in Love With Love 前田憲男」「Norio Maeda Falling in Love」、jp／us／gb、album 與 song 兩種 entity——**零筆**；(2) 藝人目錄三個 artistId（79434607／682432830／952100300）整份 dump，三十二張裡沒有本作；(3) 沒有候選 collectionId。**與策展層的觀察一致。**｜⚠ **本層查到的規律（可往後帶）**：**東芝「Love Touch Piano」系列（TP-60xxx 與 TP-7233x–7234x 兩段）在 Apple 上整條都不在**——本批有四張屬於這條系列（前田憲男 TP-72340、八城一夫 TP-60303 與 TP-72341），四張全部三種查法零筆。**這是 c-132 第 399 條「粒度是廠牌×時期×權利人」的又一個實例：缺的不是東芝，是東芝這條系列的母帶沒有被數位化。**｜**跨卡交集**：貝斯手 **荒川康男** 與統籌 **ジミー竹内** 在本組別張卡上也出現（ジミー竹内 是 八城一夫トリオ《LOVE IS HERE TO STAY》1968 的鼓手）；**正文不得把這張寫成他們的碟**。｜**廠牌**：卡單的「東芝 Toshiba Records TP-72340」與盤面一致，**可補上系列名「Love Touch Piano」**。｜**反同構**：本張切「東芝 Love Touch Piano 連號三張＋荒川康男＋全定番曲」，與《Alpha Ray》的自作曲、《Rock Communication》的民謠放克互斥。｜**人名邊界**：荒川康男、関根英雄、ジミー竹内、川田為夫、岡崎好男、高橋秀明、遠藤享 都出自實體盤面 credits，可寫；前田憲男 2018 年辭世與本作無關，依反向禁令不寫。"
+ },
+ {
+  "key": "desc4:八城一夫トリオ|LOVE IS HERE TO STAY",
+  "artist": "八城一夫トリオ",
+  "album": "LOVE IS HERE TO STAY",
+  "facts": [
+   {
+    "f": "原盤是 Takt 的 12 吋黑膠 JAZZ-17，1968 年日本發行、屬於「Takt Jazz Series」，盤面註明 **1968 年 1 月 23 日錄音**、發売元是**タクト電機株式会社**、定價 ¥1,500。編制：八城一夫（鋼琴）、原田政長（貝斯）、ジミー竹内（鼓），另有 宮田英夫 打 cabasa。",
+    "src": "https://api.discogs.com/releases/6193603"
+   },
+   {
+    "f": "release-group 6e5a3bec 的欄位：title「LOVE IS HERE TO STAY」、artist-credit 單一元素「八城一夫トリオ」、first-release-date 1968、primary-type Album、secondary-types 空。轄下兩筆 release：**1968 JP／Takt JAZZ-17／12 吋黑膠 10 軌**（原盤），與 **2014-04-23 JP／Columbia COCB-54090／Blu-spec CD 11 軌、標題寫成「LOVE IS HERE TO STAY +1」**（多出來的第 11 軌是〈JADA〉的現場版）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6e5a3bec-c568-414b-8e8e-8bffb86b5925&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "原盤十軌曲序：〈What Is This Thing Called Love?〉〈Being a Good Magician〉〈How Insensitive〉〈Spring Is Here〉〈Ja-Da〉〈Summer Samba (So Nice)〉〈Love Is Here to Stay〉〈Emily〉〈Sunny〉〈Day Tripper〉——**最後兩首是 Bobby Hebb 的〈Sunny〉與披頭四的〈Day Tripper〉**，1968 年的流行曲直接進了爵士三重奏的曲單。",
+    "src": "https://api.discogs.com/releases/6193603"
+   },
+   {
+    "f": "2014 年 COCB-54090 那張 Blu-spec 復刻的數位版軌長：〈ホワット・イズ・ディス・シング・コールド・ラヴ〉3:58、〈気分のいい手品師〉3:23、〈ハウ・インセンシティヴ〉3:27、〈スプリング・イズ・ヒア〉3:54、〈ジャダ〉4:04、〈サマー・サンバ〉3:45、〈ラヴ・イズ・ヒア・トゥ・ステイ〉3:47、〈エミリー〉3:18、〈サニー〉3:06、〈デイ・トリッパー〉3:18，加上追加的〈ジャダ (Live)〉4:17。",
+    "src": "https://music.apple.com/jp/album/1742431392"
+   },
+   {
+    "f": "八城一夫 1930 年 2 月生於東京，本名 屋代和雄，鋼琴自學、1948 年職業出道，1958 年組成 八城一夫トリオ，1960 年加入 渡辺貞夫 擴編成四重奏；他在 1976 與 1977 年（第 10 屆與第 11 屆）連兩年拿下日本ジャズ・ディスク大賞的錄音賞，1991 年 7 月 13 日辭世。",
+    "src": "https://kotobank.jp/word/%E5%85%AB%E5%9F%8E%20%E4%B8%80%E5%A4%AB-1657104"
+   }
+  ],
+  "hookCandidates": [
+   "1968 年 1 月 23 日一天錄完的三重奏盤，末兩首直接排上〈Sunny〉與披頭四的〈Day Tripper〉",
+   "發行的是「タクト電機株式会社」——Takt Jazz Series 是一家電機公司在做的爵士廠牌，定價印在封底：¥1,500"
+  ],
+  "sound": "十軌約 36 分鐘，每首壓在 3 分到 4 分之間的鋼琴三重奏。曲目把美國歌本（〈What Is This Thing Called Love?〉〈Spring Is Here〉）、巴薩諾瓦（〈How Insensitive〉〈Summer Samba〉）與 1966 至 65 年的流行曲（〈Sunny〉〈Day Tripper〉）排在同一面，是 1968 年日本三重奏典型的選曲策略。多一位打 cabasa 的樂手，節奏層比純三重奏厚一點。",
+  "keyTracks": [
+   "Love Is Here to Stay",
+   "Day Tripper",
+   "Summer Samba (So Nice)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（維持卡單值）。**這張是本批最乾淨的一筆**：MB 轄下同時留著 1968 年的原盤 release（Takt JAZZ-17／12 吋／10 軌）與 2014 年的復刻（Columbia COCB-54090／Blu-spec／11 軌），first-release-date 正確地取了 1968；**實體盤面條目同樣記 Takt JAZZ-17、1968、Takt Jazz Series，並補上 1968-01-23 的錄音日**。策展層第 429 條把這張當成「COCB-5409x 那段號碼的定年錨」是對的——**它是那一段裡唯一還留著原盤 release 的一張**。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、試聽成立；並更正卡單廠牌欄的一個時代錯置。**｜⚠ **廠牌欄要更正**：卡單寫「Takt JAZZ-17（⋯日本コロムビア 的 Takt 爵士線）」，**1968 年的 Takt 不是 日本コロムビア 的線**——實體盤面明印「発売元・**タクト電機株式会社**（Takt Denki Co., Ltd.）」。日本コロムビア 是 2014 年做 COCB-5409x 那批 Blu-spec 復刻時才出現的權利人。**「日本コロムビア 的 Takt 爵士線」這個描述對 2014 年成立、對 1968 年不成立**，建議改成「Takt（タクト電機）JAZZ-17，2014 年由 日本コロムビア 以 COCB-54090 復刻」。**不自行改卡單。**｜**MB**：RG 四欄與兩筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜**試聽（三種查法全跑）**：search（Love Is Here to Stay 八城一夫／ラヴ・イズ・ヒア・トゥ・ステイ）命中、藝人目錄 **artistId 1621854449「Kazuo Yashiro Trio」**（五張）命中、直查 `lookup?id=1742431392&country=jp&entity=song` 實跑 **11 軌全部有 previewUrl**。**串流採信 1742431392**。⚠ **要記兩件事**：(a) 店面那筆是 **2014 年的 +1 版（11 軌）而不是 1968 年原盤的 10 軌**，多出來的是〈ジャダ (Live)〉；(b) 店面 collection 層的日期欄寫 **2000-01-01**、℗ 欄卻寫 2014——**兩個欄位互相矛盾，兩個都不是原盤年**，任何拿店面日期定年的作法在這張會錯得離譜。｜⚠ **第 434 條再驗**：八城一夫 在店面有**三個** artistId——`151990570`「八城一夫」（2 張）、`1621854449`「Kazuo Yashiro Trio」（5 張）、`1749334232`「Kazuo Yashiro & All Stars／八城一夫とオール・スターズ」（1 張）。**策展層只點了前兩個，第三個是本層新查到的**（第 434 條「同一位在店面的 artistId 數目沒有上限」再驗一次）。｜**跨卡交集**：鼓手 **ジミー竹内** 也出現在本組 前田憲男《Falling in Love With Love》（1980）的 credits 裡（統籌）。｜**盤名近似不得折疊**：池中的 `Starsailor《Love Is Here》` 與本張只是子字串命中，策展層的判定正確。｜**反同構（八城一夫 六張）**：本張切「1968 Takt 原盤＋タクト電機＋〈Sunny〉〈Day Tripper〉進曲單」，《Drivin'》走 1973 飯野ホール 與 松本英彦 客席，《Side By Side》走 Audio Lab 的兩架鋼琴，《Side By Side 2》走同系列續作，《The Way We Were》走東芝的電影主題曲獨奏，《It's a Sin to Tell a Lie》走 Love Touch Piano 連號。"
+ },
+ {
+  "key": "desc4:八城一夫|Drivin'",
+  "artist": "八城一夫",
+  "album": "Drivin'",
+  "facts": [
+   {
+    "f": "原盤是 Trio Records 的 12 吋黑膠 PA-7059，1973 年日本發行、屬於「Trio Jazz Mania」系列，盤面註明 **1973 年 2 月 28 日在飯野ホール（Iino Hall）錄音**。班底是 八城一夫（鋼琴）、原田政長（貝斯）、五十嵐武要（鼓），另有兩位客席：**松本英彦（次中音薩克斯風）**與 清水潤（鼓）。錄音與混音由 菅野沖彦 負責，製作 大熊隆文、企畫指揮 森山浩志。",
+    "src": "https://api.discogs.com/releases/7260500"
+   },
+   {
+    "f": "八軌曲序與軌長：A 面〈June Night〉5:20、〈Fantastic That's You〉8:18、〈Don't Get Around Much Anymore〉5:33；B 面〈Don't Be That Way〉4:57、〈Just Friends〉5:21、〈The Things We Did Last Summer〉3:42、〈Someday My Prince Will Come〉4:28、〈The Song Is Ended〉2:17。",
+    "src": "https://api.discogs.com/releases/7260500"
+   },
+   {
+    "f": "release-group ae3b312c 的欄位：title「Drivin'」、artist-credit 單一元素「Kazuo Yashiro」、first-release-date 1973、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1973、Official、Trio PA-7059、12 吋黑膠 8 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ae3b312c-90ca-4e79-8501-c1e5cc9e3c59&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八城一夫 1930 年 2 月生於東京，本名 屋代和雄，鋼琴自學、1948 年職業出道；1958 年組成 八城一夫トリオ，1960 年加入 渡辺貞夫 擴編成四重奏。他在 1976 與 1977 年（第 10 屆與第 11 屆）連兩年拿下日本ジャズ・ディスク大賞的**錄音賞**，1991 年 7 月 13 日辭世。",
+    "src": "https://kotobank.jp/word/%E5%85%AB%E5%9F%8E%20%E4%B8%80%E5%A4%AB-1657104"
+   },
+   {
+    "f": "同一位錄音師 菅野沖彦 在 1971 年創辦了自己的發燒廠牌 Audio Lab Record，1970 年代以當時最先進的錄音手法著稱；八城一夫 1974 年的《Side By Side》（ALJ-1012）就是那條線上的碟。",
+    "src": "https://www.octavia.co.jp/special/post-audio1.html"
+   }
+  ],
+  "hookCandidates": [
+   "1973 年 2 月 28 日在飯野ホール一次錄完，次中音薩克斯風的客席是 松本英彦——日本第一代「八城一夫 加一位老朋友」的典型場面",
+   "八首裡〈Fantastic That's You〉一首就佔 8 分 18 秒，末曲〈The Song Is Ended〉只有 2 分 17 秒"
+  ],
+  "sound": "八軌約 40 分鐘，長度落差很大：〈Fantastic That's You〉8:18 是全張的重心，末曲〈The Song Is Ended〉2:17 收得極快。編制以鋼琴三重奏為底，兩位客席（松本英彦 的次中音薩克斯風、清水潤 的鼓）讓部分曲目變成四、五人。曲目是搖擺與歌本定番（〈Don't Be That Way〉〈Just Friends〉〈Someday My Prince Will Come〉），錄音在音樂廳裡做，殘響與空氣感是 菅野沖彦 那一派的招牌。",
+  "keyTracks": [
+   "Fantastic That's You",
+   "Don't Be That Way",
+   "June Night"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（維持卡單值）。MB 的 first-release-date 1973 與轄下唯一一筆 release（JP 1973／Trio PA-7059／12 吋 8 軌）自洽；**實體盤面條目同樣記 Trio Records PA-7059、1973、Trio Jazz Mania，並補上 1973-02-28 飯野ホール 的錄音日**——兩個獨立來源相符。店面 1329380757 的 2001-11-05 比 MB 晚二十八年，依 c-134 第 422 條 C 組不構成改判理由；**策展層維持 1973 的判斷覆核成立。**",
+  "notes": "**覆核策展層：MB 相符、年份判斷成立、封面走 CAA、試聽成立。**｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜**試聽（三種查法全跑）**：search（Drivin 八城一夫）命中、藝人目錄 **artistId 151990570「八城一夫」**（2 張）命中、直查 `lookup?id=1329380757&country=jp&entity=song` 實跑 **8 軌全部有 previewUrl**、℗ TRIO RECORDS。**串流採信 1329380757**。⚠ 店面 collection 層的顯示名在 `search` 端點回「K.Yashiro」、在 `lookup` 端點回「八城一夫」——**同一個實體在兩個端點回不同顯示名**，c-132 第 400a 條那個坑的同形再現。｜⚠ **跨卡交集（要擋的那種）**：客席的次中音薩克斯風是 **松本英彦**，他是 **c-132 b 組的掛名**（池中字串是英文 `Hidehiko Matsumoto`）。**本張的 MB artist-credit 是單一元素「Kazuo Yashiro」、不是合掛，收得正確**；但**正文不得把這張寫成兩人的共同領銜作**，只能寫成客席。｜**跨卡交集（同批）**：貝斯手 原田政長 與鼓手 五十嵐武要 是 八城一夫 Audio Lab 兩張《Side By Side》的同一組班底，鼓手客席 清水潤 則出現在 世良譲《バッカス・グルーヴ》（1977）。｜**錄音師**：菅野沖彦 一個人串起本組六張（世良譲 三張、八城一夫 三張），**這是本批最強的一條暗線**，但反同構上不得每張都用它當主軸。｜**反同構**：本張切「1973 飯野ホール＋松本英彦 客席＋8 分 18 秒的長篇」。｜**人名邊界**：松本英彦、清水潤、原田政長、五十嵐武要、菅野沖彦、大熊隆文、森山浩志 都出自實體盤面 credits，可寫；八城一夫 1991 年辭世距本作十八年、與本作無關，依反向禁令不寫。"
+ },
+ {
+  "key": "desc4:八城一夫|Side By Side",
+  "artist": "八城一夫",
+  "album": "Side By Side",
+  "facts": [
+   {
+    "f": "原盤是 Audio Lab. Record 的 12 吋黑膠 ALJ-1012，1974 年日本發行。盤面把兩面的錄音條件分開寫死：**A 面 1974 年 2 月 20 日在青山タワーホール、鋼琴用 Bösendorfer；B 面 1974 年 3 月 6 日在飯野ホール、鋼琴用 Steinway**——同一位鋼琴手、同一組班底，換場地也換琴，這就是盤名「Side By Side」的意思。",
+    "src": "https://api.discogs.com/releases/6422199"
+   },
+   {
+    "f": "班底是 八城一夫（鋼琴）、原田政長（貝斯）、潮先郁男（吉他）、五十嵐武要（鼓）；混音由廠牌主人 菅野沖彦 親自操刀。十軌軌長：A 面〈Stardust〉3:16、〈Love Letters〉2:59、〈The Things I Didn't Do〉3:05、〈Tea for Two〉3:46、〈Manhattan〉3:53、〈Ramona〉3:03；B 面〈St. Thomas〉6:07、〈Come Rain or Come Shine〉5:36、〈What's New〉3:40、〈Stella by Starlight〉6:59。",
+    "src": "https://api.discogs.com/releases/6422199"
+   },
+   {
+    "f": "Audio Lab Record 是音響評論家 菅野沖彦（1932–2018）在 1971 年創辦的廠牌，1970 年代以當時最先進的錄音手法聞名；2000 年代 Octavia Record 把這條目錄做成直刻 SACD 重發，《Side by Side》與《Side by Side 2》兩張的班底在該系列的介紹頁上仍寫成 八城一夫（鋼琴）、原田政長（貝斯）、潮先郁男（吉他）、五十嵐武要（鼓）。",
+    "src": "https://www.octavia.co.jp/special/post-audio1.html"
+   },
+   {
+    "f": "release-group 86c1a08f 的欄位：title「Side By Side」、artist-credit 單一元素「Kazuo Yashiro」、first-release-date 1974、primary-type Album、secondary-types 空。轄下兩筆 release：**1974 JP／AUDIO LAB RECORD ALJ-1012／12 吋黑膠 10 軌，status 欄是空的**；與 2012-05-23 JP／AUDIO LAB RECORD OVGL-00023／SACD（2 channels）10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=86c1a08f-5ece-41a3-b50c-84b147ee3e5e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八城一夫 1930 年 2 月生於東京，本名 屋代和雄，鋼琴自學、1948 年職業出道，1958 年組成 八城一夫トリオ；他在 1976 與 1977 年（第 10 屆與第 11 屆）連兩年拿下日本ジャズ・ディスク大賞的錄音賞。",
+    "src": "https://kotobank.jp/word/%E5%85%AB%E5%9F%8E%20%E4%B8%80%E5%A4%AB-1657104"
+   }
+  ],
+  "hookCandidates": [
+   "A 面在青山タワーホール彈 Bösendorfer、B 面在飯野ホール彈 Steinway——盤名「Side By Side」講的是兩架鋼琴，不是兩個人",
+   "廠牌 Audio Lab 是音響評論家 菅野沖彦 1971 年自己開的，這張的混音就是他親手做的"
+  ],
+  "sound": "十軌約 42 分鐘，A 面六首都壓在 3 分上下、B 面四首放到 5 至 7 分（〈St. Thomas〉6:07、〈Stella by Starlight〉6:59）——這個長短配置對應的正是兩面不同的琴與不同的場地。編制是鋼琴、吉他、貝斯、鼓的四人，吉他（潮先郁男）讓中頻更厚。曲目全是歌本定番，這張碟真正的主角其實是錄音本身：兩架鋼琴的音色差異就是它的內容。",
+  "keyTracks": [
+   "St. Thomas",
+   "Stella by Starlight",
+   "Stardust"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974（維持卡單值）。MB 的 first-release-date 1974 與轄下那筆 1974 JP／ALJ-1012／12 吋 10 軌自洽（另一筆是 2012 年的 SACD OVGL-00023）；**實體盤面條目同樣記 Audio Lab. Record ALJ-1012、1974、日本，並把兩面的錄音日 1974-02-20 與 1974-03-06 分開寫明**——兩個獨立來源相符。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、店面觀察成立。**｜**MB**：RG 四欄與兩筆 release 與 mbNote 相符（卡單提到 1974 那筆的 release status 欄是空的，實查確認）；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「Side By Side 八城一夫」「Kazuo Yashiro Side By Side」「サイド・バイ・サイド 八城」、jp／us／gb、album 與 song 兩種 entity——**零筆命中本作**；(2) 藝人目錄把 **三個 artistId（151990570／1621854449／1749334232）整份 dump**，八張裡沒有本作；(3) 沒有候選 collectionId。**與策展層的觀察一致。**⚠ **本層查到的規律**：**Audio Lab 這條目錄在 Apple 上整條都不在**——本批屬於 Audio Lab 的三張（八城一夫 ALJ-1012／ALJ-3042、北村英治 ALJ-1046）**全部零筆**，與東芝 Love Touch Piano 系列同形（c-132 第 399 條「粒度是廠牌×時期×權利人」的再一次應驗）。｜⚠ **不要把「在音樂廳錄音」寫成「現場演出」**：兩面都在音樂廳錄，但那是為了廳堂殘響而借場地的錄音場次，**盤面沒有任何觀眾或實況的記載，MB 的 `secondary-types` 也是空的**。依第 397 條家族從嚴：**正文只能寫錄音地點，不得寫成現場盤**。｜⚠ **實體盤面 credits 裡有一個名字本層判定不採用**：該條目把錄音工程師之一記成「Masabumi Kikuchi」——與鋼琴家 **菊地雅章**（c-132 a 組的掛名）同名。**沒有第二個來源佐證同一人，依研究層「單一來源的編制與人名要交叉驗證」不寫進 facts**，在此備註供主線知情。｜**不折疊**：池中的 `Barbra Streisand《The Way We Were》` 與本組 八城一夫《The Way We Were》是同盤名不同掛名，策展層判定正確；本張與《Side By Side 2》（ALJ-3042）是兩張不同的碟，互相指向。｜**反同構**：本張切「兩架鋼琴兩個場地＋Audio Lab 的發燒錄音」，續作切「1976 年他生前唯一的續篇」。"
+ },
+ {
+  "key": "desc4:八城一夫|The Way We Were",
+  "artist": "八城一夫",
+  "album": "The Way We Were",
+  "facts": [
+   {
+    "f": "原盤是東芝（Toshiba Records）的 12 吋黑膠 TP-60303，1978 年日本發行、屬於東芝的「**Love Touch Piano**」系列；實體盤面的 credits 只列一項「Kazuo Yashiro — Piano」。",
+    "src": "https://api.discogs.com/releases/11599484"
+   },
+   {
+    "f": "十四軌全部是電影與音樂劇主題曲，盤面以日英對照排列：〈追憶＝The Way We Were〉〈シャレード＝Charade〉〈虹の彼方に＝Over the Rainbow〉〈酒とバラの日々＝The Days of Wine and Roses〉〈慕情＝Love Is a Many Splendored Thing〉〈サウンド・オブ・サイレンス＝Sound of Silence〉〈夏の日の恋＝A Summer Place〉〈ある愛の詩＝Love Story〉〈エデンの東＝East of Eden〉〈ムーン・リバー＝Moon River〉〈雨に唄えば＝Singin' in the Rain〉〈五つの銅貨＝Five Pennies〉〈マック・ザ・ナイフ＝Mack the Knife〉〈星に願いを＝When You Wish Upon a Star〉。",
+    "src": "https://api.discogs.com/releases/11599484"
+   },
+   {
+    "f": "東芝的「Love Touch Piano」是一整條鋼琴系列，同系列裡 中村八大 也錄過兩張（《Misty》TP-60301／1978、《Till》TP-60441／1982），1980 年那一段編號則排成 世良譲《Bei Mir Bist Du Schön》TP-72339、前田憲男《Falling in Love With Love》TP-72340、八城一夫《It's a Sin to Tell a Lie》TP-72341 三張連號。",
+    "src": "https://api.discogs.com/releases/8556835"
+   },
+   {
+    "f": "release-group 49401b1f 的欄位：title「The Way We Were」、artist-credit 單一元素「Kazuo Yashiro」、first-release-date 1978、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1978、Official、Toshiba Records TP-60303、12 吋黑膠 14 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=49401b1f-2d72-445b-86ce-65204ed20217&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八城一夫 1930 年 2 月生於東京，本名 屋代和雄，鋼琴自學、1948 年職業出道，1958 年組成 八城一夫トリオ，1960 年加入 渡辺貞夫 擴編成四重奏；他在 1976 與 1977 年（第 10 屆與第 11 屆）連兩年拿下日本ジャズ・ディスク大賞的錄音賞，1991 年 7 月 13 日辭世。",
+    "src": "https://kotobank.jp/word/%E5%85%AB%E5%9F%8E%20%E4%B8%80%E5%A4%AB-1657104"
+   }
+  ],
+  "hookCandidates": [
+   "十四首全部是電影主題曲，從〈追憶〉〈慕情〉一路排到〈星に願いを〉——東芝把它放進一條叫「Love Touch Piano」的鋼琴系列",
+   "同一條系列後來排出三張連號：世良譲、前田憲男、八城一夫，一位接一位"
+  ],
+  "sound": "十四軌的電影主題曲鋼琴集，盤面 credits 只登記鋼琴一項。曲目從 1950 年代的〈East of Eden〉〈Love Is a Many Splendored Thing〉排到 1970 年代的〈The Way We Were〉〈Love Story〉，每首篇幅都短、旋律保留完整，是為了「一次聽完不費力」設計的節目，而不是留給即興的爵士錄音。",
+  "keyTracks": [
+   "The Way We Were",
+   "The Days of Wine and Roses",
+   "Moon River"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978（維持卡單值）。MB 的 first-release-date 1978 與轄下唯一一筆 release（JP 1978／Toshiba Records TP-60303／12 吋 14 軌）自洽；**實體盤面條目同樣記 Toshiba Records TP-60303、1978、日本、Love Touch Piano 系列**——兩個獨立來源相符。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、店面觀察成立。**｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「The Way We Were 八城一夫」「Kazuo Yashiro The Way We Were」「追憶 八城一夫」、jp／us／gb、album 與 song 兩種 entity——**零筆命中本作**；(2) 藝人目錄三個 artistId（151990570／1621854449／1749334232）整份 dump，八張裡沒有本作；(3) 沒有候選 collectionId。**東芝「Love Touch Piano」系列整條在店面都不在**（本批四張同系列全零筆）。｜⚠ **不得折疊**：池中已有 `Barbra Streisand《The Way We Were》`，本張是同盤名不同掛名，策展層判定正確。｜⚠ **定性**：十四首全是既有的電影與音樂劇主題曲、由他重新演奏——**這不是選輯或重發，是一張為系列企畫錄的新錄音**（MB 的 `secondary-types` 空、轄下只有 1978 一筆 release、沒有任何更早的原盤），依研究層「選輯／重發要主動標記」的反面：**本張不需要標記，但正文也不宜寫成「原創專輯」的姿態**，它是廠牌企畫盤。｜**廠牌**：卡單的「東芝 Toshiba Records TP-60303」與盤面一致，**可補上系列名「Love Touch Piano」**。｜**反同構（八城一夫 六張）**：本張切「東芝 Love Touch Piano 的電影主題曲鋼琴集＋十四首短篇」，與《Side By Side》兩集的發燒錄音、《Drivin'》的飯野ホール、《LOVE IS HERE TO STAY》的 Takt、《It's a Sin to Tell a Lie》的同系列連號互斥。"
+ },
+ {
+  "key": "desc4:北村英治|Happy Cooking",
+  "artist": "北村英治",
+  "album": "Happy Cooking",
+  "facts": [
+   {
+    "f": "⚠ 廠牌更正：原盤是 **Living Audio 的 12 吋黑膠 CE-3001**，1973 年日本發行（MB 的 release 端點回問 `inc=labels` 時 label-info 是空陣列，資料庫端確實沒登記，但實體盤面上有）。班底是 北村英治（單簧管）、**八城一夫（鋼琴）**、潮先郁男（電吉他）、増田一郎（顫音琴）、原田政長（貝斯）、五十嵐武要（鼓），封面美術 松永真。",
+    "src": "https://api.discogs.com/releases/3021402"
+   },
+   {
+    "f": "十軌曲序與軌長：A 面〈Sweet Georgia Brown〉5:02、〈Sweet Lorraine〉3:34、〈Rose Room〉4:39、〈I Never Knew〉3:41、〈Slipped Disc〉4:02；B 面〈Just One of Those Things〉3:57、〈On the Alamo〉3:58、〈Oh, Lady Be Good〉3:07、〈Emaline〉4:43、〈Sheik of Araby〉3:06。**第五軌〈Slipped Disc〉是 Benny Goodman 的作品**，〈Rose Room〉則是 Goodman 六重奏最著名的曲目之一。",
+    "src": "https://api.discogs.com/releases/3021402"
+   },
+   {
+    "f": "release-group b20d6496 的欄位：title「Happy Cooking」、artist-credit 單一元素「Eiji Kitamura」、first-release-date 1973、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1973、Official、12 吋黑膠 10 軌，**label-info 是空陣列**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b20d6496-a61d-4024-aa14-5fa7057f8783&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "北村英治 1929 年 4 月 8 日生於東京，慶應義塾大學出身，1951 年、二十二歲時職業出道，是日本爵士單簧管的開創者；三十歲那年他在 Benny Goodman 訪日時當著偶像的面演奏並得到讚賞。他與 Teddy Wilson 從 1970 到 1992 年錄過多張唱片，1980 年與 Concord Jazz All-Stars 合作了《Dear Friends》；2007 年獲頒旭日小綬章。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB"
+   },
+   {
+    "f": "「Happy Cooking」後來成為他樂團的名字——1980 年的《札幌コンサート》（Trio Records PAP-9212）就掛成「Eiji Kitamura & Happy Cooking All Stars」，2003 年的《Something Wild Something Mild》（GML）則掛「北村英治とハッピー・クッキング・オールスターズ」。",
+    "src": "https://music.apple.com/jp/artist/359649145"
+   }
+  ],
+  "hookCandidates": [
+   "鋼琴坐的是 八城一夫——這張碟的班底和他同年在 Audio Lab 錄的那幾張是同一批人",
+   "「Happy Cooking」後來從盤名變成他樂團的名字，1980 年的札幌音樂會就掛成 Happy Cooking All Stars"
+  ],
+  "sound": "十軌約 40 分鐘，六人編制：單簧管領奏，鋼琴、電吉他、顫音琴、貝斯、鼓在後面墊出一層厚中頻——這個配置直接對應 Benny Goodman 六重奏的聲音，曲目也是（〈Rose Room〉〈Slipped Disc〉〈Oh, Lady Be Good〉）。每首壓在 3 到 5 分之間，開場的〈Sweet Georgia Brown〉5:02 最長，走的是輕快搖擺而非長段即興。",
+  "keyTracks": [
+   "Rose Room",
+   "Slipped Disc",
+   "Sweet Georgia Brown"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（維持卡單值）。MB 的 first-release-date 1973 與轄下唯一一筆 release（JP 1973／12 吋 10 軌）自洽；**實體盤面條目補上了 MB 沒有的廠牌與編號：Living Audio CE-3001、1973、日本**——兩個獨立來源在年份上相符。無改判。",
+  "notes": "⚠ **廠牌欄可以補上（本層的具體更正）**：卡單寫「廠牌資料庫端未登記（MB release 端點回問 `inc=labels`，1973 那筆的 label-info 是空陣列）」——**這個描述對資料庫端是準確的**（本層用 release 端點複驗，確實是空陣列，第 259／262 條的作法正確），**但實體盤面上有廠牌：Living Audio、目錄編號 CE-3001**。同批的《Happy Cooking Vol. II》是 Chrysler CE-3002，**兩張是同一段 CE-300x 編號、廠牌名卻登記成兩家**（Living Audio 與 Chrysler），這一點本層無法再往下查證，一併記在此。**建議把 label 欄改成「Living Audio CE-3001（實體盤面；MB 的 label-info 是空陣列）」。不自行改卡單。**｜⚠ **跨卡交集（本組最強的一條）**：**鋼琴是 八城一夫**——他是本組另外六張卡的掛名，而且本盤的 原田政長（b）、潮先郁男（g）、五十嵐武要（ds）正好是 八城一夫 1974 年《Side By Side》（Audio Lab ALJ-1012）的同一組四人。**本張的 MB artist-credit 是單一元素「Eiji Kitamura」、不是合掛，收得正確**；但**正文不得把這張寫成兩人共同領銜**。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「Happy Cooking 北村英治」「ハッピー・クッキング 北村」、jp／us／gb、album 與 song 兩種 entity；(2) 藝人目錄把 **兩個 artistId（`304482457`「Eiji Kitamura」十三張、`359649145`「ハッピー・クッキング・オールスターズ」兩張）整份 dump**，十四張裡沒有本作；(3) 沒有候選 collectionId。⚠ **一個非常容易誤採的假陽性**：店面有 `1329382211`《ハッピー・クッキング》12 軌、1986-12-16、℗ TRIO RECORDS——**盤名一模一樣**，但直查曲目後與本作**一首都不重疊**（那張的曲目是〈BHAIAZINHO〉〈LOST IN A FOG〉〈HAPPY COOKING〉⋯），**那是第 424 條候補清單裡的 1986 年同名碟（RG `70f376a1`），不是本作**。｜⚠ **第 434 條再驗**：北村英治 在店面有兩個 artistId（`304482457` 與 `359649145`），策展層一個都沒點名，兩個都是本層查到的。｜**人名邊界**：Benny Goodman 是〈Slipped Disc〉的作曲者與 北村英治 的偶像（ja.wikipedia 有記），可寫；**不得寫成他參與本盤錄音**。｜**反同構（北村英治 六張）**：本張切「Living Audio 的六重奏＋八城一夫 的鋼琴＋Goodman 六重奏的曲目」，第二集切「同系列續作與 Chrysler 的廠牌登記」，《Because of You》切 Audio Lab 與 秋満義孝，《Sophisticated Lady》切 Yupiteru 的 Seeking For Jazz，《April Date》切 John Lewis 與 Master Sound，《Ai No Cocktail》切 1960 年的 King 原盤。"
+ },
+ {
+  "key": "desc4:北村英治|Because of You",
+  "artist": "北村英治",
+  "album": "Because of You",
+  "facts": [
+   {
+    "f": "原盤是 Audio Lab. Record 的 12 吋黑膠 ALJ-1046，1976 年日本發行，封面標語印著「Okihiko Sugano Presents!」（菅野沖彦 呈獻），錄音地點是飯野ホール。班底是 北村英治（單簧管、低音單簧管、中音與次中音薩克斯風）、**秋満義孝（鋼琴）**、原田政長（貝斯）、須永宏（鼓）；錄音由廠牌主人 菅野沖彦 親自擔任，製作 森山浩志，工程 大塚眞司、助理 大村孝夫。",
+    "src": "https://api.discogs.com/releases/4609309"
+   },
+   {
+    "f": "十二軌曲序與軌長：A 面〈The Blue Room〉3:07、〈After You've Gone〉3:47、〈Where or When〉3:33、〈Isn't It Romantic〉3:38、〈China Boy〉2:30、〈Stars Fell on Alabama〉3:40；B 面〈Because of You〉3:35、〈Liza〉2:39、〈Do You Know What It Means to Miss New Orleans〉4:18、〈Time on My Hands〉3:31、〈La Cucaracha〉3:13、〈Stranger on the Shore〉2:51。**末軌〈Stranger on the Shore〉是英國單簧管手 Acker Bilk 1961 年的招牌曲**。",
+    "src": "https://api.discogs.com/releases/4609309"
+   },
+   {
+    "f": "release-group 79426530 的欄位：title「Because of You」、artist-credit 單一元素「Eiji Kitamura」、first-release-date 1976、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1976、Official、AUDIO LAB RECORD ALJ-1046、12 吋黑膠 12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=79426530-cc1e-4740-9007-c75ba5831afd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Audio Lab Record 是音響評論家 菅野沖彦（1932–2018）1971 年創辦的發燒廠牌，1970 年代以當時最先進的錄音手法著稱；同一條目錄裡還有 八城一夫 的《Side by Side》兩集與 猪俣猛《The Dialogue》。",
+    "src": "https://www.octavia.co.jp/special/post-audio1.html"
+   },
+   {
+    "f": "北村英治 1929 年 4 月 8 日生於東京，慶應義塾大學出身，1951 年二十二歲職業出道；三十歲那年在 Benny Goodman 訪日時當著偶像的面演奏並得到讚賞。他與 Teddy Wilson 從 1970 到 1992 年錄過多張唱片，1980 年與 Concord Jazz All-Stars 合作《Dear Friends》，2007 年獲頒旭日小綬章；五十歲之後他還跟門生 村井祐児 學古典單簧管的奏法。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB"
+   }
+  ],
+  "hookCandidates": [
+   "封面上印著「菅野沖彦 呈獻」——這是音響評論家自己開的發燒廠牌，把日本第一把爵士單簧管請進飯野ホール錄的",
+   "鋼琴坐的是 秋満義孝：一位在音樂資料庫上幾乎不存在、卻在這條 Audio Lab 目錄裡連錄兩張的鋼琴手"
+  ],
+  "sound": "十二軌約 40 分鐘，每首壓在 2 分半到 4 分半之間的四人編制。北村英治 在這張碟上不只吹單簧管，還吹低音單簧管與中音、次中音薩克斯風，是他少數把管樂器全攤開的錄音。曲目從 Rodgers & Hart 的〈The Blue Room〉〈Where or When〉到 Acker Bilk 的〈Stranger on the Shore〉，重心在音色與旋律線，錄音的空氣感是廠牌本身的賣點。",
+  "keyTracks": [
+   "Because of You",
+   "Stranger on the Shore",
+   "China Boy"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976（維持卡單值）。MB 的 first-release-date 1976 與轄下唯一一筆 release（JP 1976／AUDIO LAB RECORD ALJ-1046／12 吋 12 軌）自洽；**實體盤面條目同樣記 Audio Lab. Record ALJ-1046、1976、日本**——兩個獨立來源相符。無改判。",
+  "notes": "⚠⚠ **本層最有價值的一個發現：秋満義孝 就在這一組裡，只是不是掛名。** 策展層第 421／429a 條把 秋満義孝 整位判成 0 張（MB 名下 0 個 RG、五種查法零筆——**這個結論本層複驗無誤**），但**他本人在本組的實體盤面上出現兩次**：本張《Because of You》（ALJ-1046、1976）與《Sophisticated Lady》（YJ25-7011、1978）**的鋼琴手都是他**（盤面 credits 寫 Yoshitaka Akimitsu，正是第 423 條那份 §1 候選清單裡用過的羅馬字寫法）。**這不影響收卡判定**（本張的 MB artist-credit 是單一元素「Eiji Kitamura」，不是合掛），**但它讓第 423 條那份 §1 候選清單多了一條可查的線**：秋満義孝 1976–78 年在 Audio Lab 與 Yupiteru 兩家的側錄有實體盤面可考。**寫作層可以在這兩張上寫他，但不得把他寫成共同領銜。**｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「Because of You 北村英治」「Eiji Kitamura Because of You」、jp／us／gb、album 與 song 兩種 entity——回了 北村英治 名下十餘筆，**沒有一筆是本作**；(2) 藝人目錄把兩個 artistId（304482457 十三張、359649145 兩張）整份 dump，十四張裡沒有本作；(3) 沒有候選 collectionId。**Audio Lab 整條目錄在店面都不在**（本批三張同廠牌全零筆）。｜⚠ **一個要擋的假陽性**：search 回了 `429741461`《Oriental Jazz Essentials》14 軌、掛名 Eiji Kitamura——**那是 2011 年的拼盤合輯，不是本作**。｜**跨卡交集**：貝斯手 原田政長 同時是 八城一夫《Side By Side》《Drivin'》與 世良譲《スモーク・リングス》的貝斯手；鼓手 須永宏 也在《スモーク・リングス》與《Sophisticated Lady》上。｜**人名邊界**：秋満義孝、原田政長、須永宏、菅野沖彦、森山浩志、大塚眞司、大村孝夫 出自實體盤面 credits，可寫；Acker Bilk、Benny Goodman、Teddy Wilson 寫拉丁原文，**且不得寫成本盤參與者**。｜**反同構**：本張切「Audio Lab＋菅野沖彦 呈獻＋秋満義孝 的鋼琴＋北村英治 攤開四種管樂器」。"
+ },
+ {
+  "key": "desc4:北村英治|Sophisticated Lady",
+  "artist": "北村英治",
+  "album": "Sophisticated Lady",
+  "facts": [
+   {
+    "f": "原盤是 Yupiteru Records 的 12 吋黑膠 YJ25-7011，**1978 年 8 月 28 日**日本發行，屬於該廠的「**Seeking For Jazz**」系列。班底是 北村英治（單簧管）、**秋満義孝（鋼琴）**、増田一郎（顫音琴）、池沢行雄（貝斯）、須永宏（鼓）；製作 志摩忠男、監督 片岡光彦、助理監督 田部井逸夫、錄音 菊池信一、助理 小倉幸雄、刻版 中村耕平、解說 行田義雄、設計 徳田明。",
+    "src": "https://api.discogs.com/releases/11896326"
+   },
+   {
+    "f": "九軌曲序與軌長：A 面〈The World Is Waiting for the Sunrise〉3:15、〈Sophisticated Lady〉4:24、〈Sweet Sue Just You〉3:05、〈Rosetta〉4:35、〈Undecided〉3:20；B 面〈Stompin' at the Savoy〉4:37、〈I Want to Be Happy〉4:49、〈Poor Butter Fly〉4:33、〈Someone to Watch Over Me〉4:29。**〈Stompin' at the Savoy〉與〈The World Is Waiting for the Sunrise〉都是 Benny Goodman 樂團的代表曲，〈Sophisticated Lady〉則是 Duke Ellington 的作品。**",
+    "src": "https://api.discogs.com/releases/11896326"
+   },
+   {
+    "f": "release-group 8744704c 的欄位：title「Sophisticated Lady」、artist-credit 單一元素「Eiji Kitamura」、first-release-date 1978-08-28、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1978-08-28、Official、Yupiteru Records YJ25-7011、12 吋黑膠 9 軌——**這是本組少數 MB 端就有精確到日的日期、而且與實體盤面完全一致的一張**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8744704c-7400-4dde-bf06-c44fc534096e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Yupiteru 的「Seeking For Jazz」是一整條系列，同一段編號裡還有 世良譲 的兩張——《Moonglow》（YJ25-7001）與《Night in Tunisia》（YJ25-7013）——**YJ25-7011 的 北村英治 正好夾在中間**。",
+    "src": "https://api.discogs.com/releases/4371543"
+   },
+   {
+    "f": "北村英治 1929 年 4 月 8 日生於東京，慶應義塾大學出身，1951 年二十二歲職業出道；三十歲時在 Benny Goodman 訪日期間當著偶像的面演奏並得到讚賞。他與 Teddy Wilson 從 1970 到 1992 年錄過多張唱片，1980 年與 Concord Jazz All-Stars 合作《Dear Friends》，2007 年獲頒旭日小綬章；2012 年心臟病發後康復，九十多歲仍在現場演出。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB"
+   }
+  ],
+  "hookCandidates": [
+   "九首裡三首直接取自 Benny Goodman 與 Duke Ellington 的樂團招牌曲——三十歲那年他當著 Goodman 的面吹過一次",
+   "Yupiteru 的「Seeking For Jazz」系列把 世良譲 排在 7001 與 7013、北村英治 的 7011 正好夾在中間"
+  ],
+  "sound": "九軌約 37 分鐘的五人編制：單簧管領奏，鋼琴、顫音琴、貝斯、鼓在後面——顫音琴的加入讓聲音直接指向 Benny Goodman 四重奏與六重奏的配置。每首落在 3 到 5 分之間，曲目全是搖擺時代的樂團招牌（〈Stompin' at the Savoy〉〈The World Is Waiting for the Sunrise〉）與歌本抒情曲（〈Someone to Watch Over Me〉〈Poor Butterfly〉）。",
+  "keyTracks": [
+   "Sophisticated Lady",
+   "Stompin' at the Savoy",
+   "Someone to Watch Over Me"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978（維持卡單值；MB 精確到 1978-08-28）。MB 的 first-release-date 1978-08-28 與轄下唯一一筆 release（JP 1978-08-28／Yupiteru Records YJ25-7011／12 吋 9 軌）自洽；**實體盤面條目同樣記 1978 年 8 月 28 日、Yupiteru Records YJ25-7011、Seeking For Jazz 系列——逐日相符，而且這兩個來源是真正獨立的**（一邊是資料庫登記、一邊是唱片實體條目，不是第 431 條那種同一份數位 metadata 餵兩處的形狀）。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、店面觀察成立。**｜⚠ **秋満義孝 第二次出現**：本盤的鋼琴手也是他（盤面 credits 寫 Yoshitaka Akimitsu）——與《Because of You》（Audio Lab ALJ-1046、1976）同一位。**策展層第 421 條「秋満義孝 MB 名下 0 個 RG」的結論本層複驗無誤，但他在本組兩張實體盤面上有署名**，詳見《Because of You》那張的 notes。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源，而且這一張的 search 是本組唯一「連一筆結果都沒回」的。** (1) search 跑了「Sophisticated Lady 北村英治」「Eiji Kitamura Sophisticated Lady」、jp／us／gb、album 與 song 兩種 entity——**十二次查詢全部零結果**（其他二十二張至少會回一堆不相干的東西）；(2) 藝人目錄兩個 artistId（304482457／359649145）整份 dump，十四張裡沒有本作；(3) 沒有候選 collectionId。⚠ **本層查到的規律**：**Yupiteru「Seeking For Jazz」整條在店面都不在**——本層順手查了同系列的 世良譲《Moonglow》YJ25-7001 與《Night in Tunisia》YJ25-7013，在 世良譲 的兩個 artistId 目錄（共六張）裡同樣一張都沒有。**與 Audio Lab、東芝 Love Touch Piano 兩條同形，本批第三條「整條系列缺席」的實例**（c-132 第 399 條）。｜**廠牌**：卡單的「Yupiteru Records YJ25-7011」與盤面一致，**可補上系列名「Seeking For Jazz」**。｜**人名邊界**：秋満義孝、増田一郎、池沢行雄、須永宏 出自實體盤面 credits，可寫；Benny Goodman、Duke Ellington 是曲目來源與偶像，**不得寫成參與者**。｜**反同構**：本張切「Yupiteru Seeking For Jazz＋加顫音琴的 Goodman 六重奏配置＋精確到日的 1978-08-28」。"
+ },
+ {
+  "key": "desc4:北村英治|April Date",
+  "artist": "北村英治",
+  "album": "April Date",
+  "facts": [
+   {
+    "f": "原盤是 CBS/Sony 的 12 吋黑膠 25AP 1035，1979 年日本發行，屬於「**Master Sound DR Digital Recording**」系列；盤面註明 **1979 年 4 月 14 日與 18 日錄於 CBS/SONY STUDIO, TOKYO**。編制是四人：北村英治（單簧管）、**John Lewis（鋼琴）**、**George Duvivier（貝斯）**、**Shelly Manne（鼓）**——三位都是美國一線樂手。",
+    "src": "https://api.discogs.com/releases/5355498"
+   },
+   {
+    "f": "九軌曲序：A 面〈Delaunay's Dilemma〉〈Just Friends〉〈Two Degrees East, Three Degrees West〉〈Take the \"A\" Train〉；B 面〈Cavendish〉〈Body and Soul〉〈Django〉〈I Cover the Waterfront〉〈Confirmation〉。**〈Delaunay's Dilemma〉〈Two Degrees East, Three Degrees West〉〈Cavendish〉〈Django〉四首都是鋼琴手 John Lewis 自己的作品**——曲單有將近一半是為了配合他排的。",
+    "src": "https://api.discogs.com/releases/5355498"
+   },
+   {
+    "f": "release-group 8b9fc089 的欄位：title「April Date」、artist-credit 單一元素「Eiji Kitamura」、first-release-date 1979、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1979、Official、CBS/Sony 25AP 1035、12 吋黑膠 9 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8b9fc089-2f11-478d-8c5b-9ad440455d2a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "北村英治 1929 年 4 月 8 日生於東京，慶應義塾大學出身，1951 年二十二歲職業出道，是日本爵士單簧管的開創者；三十歲時在 Benny Goodman 訪日期間當著偶像的面演奏並得到讚賞。他與 Teddy Wilson 從 1970 到 1992 年錄過多張唱片，1980 年與 Concord Jazz All-Stars 合作了《Dear Friends》；2007 年獲頒旭日小綬章。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB"
+   },
+   {
+    "f": "盤名《April Date》與錄音日（4 月 14、18 日）、與他自己的生日（4 月 8 日）都落在同一個月；本作是他 1979 至 1980 這兩年間連續與美國一線樂手合作的其中一張，翌年他就與 Concord Jazz All-Stars 錄了《Dear Friends》。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB"
+   }
+  ],
+  "hookCandidates": [
+   "鋼琴是 MJQ 的 John Lewis、鼓是 Shelly Manne、貝斯是 George Duvivier——1979 年 4 月在 CBS/Sony 的錄音室裡，日本單簧管手當家",
+   "九首裡四首是 John Lewis 自己的作品，連〈Django〉都排進去了"
+  ],
+  "sound": "九軌的四人編制，單簧管加鋼琴三重奏。曲單的重心明顯偏向 John Lewis 的作曲（〈Delaunay's Dilemma〉〈Two Degrees East, Three Degrees West〉〈Cavendish〉〈Django〉），其餘是〈Take the \"A\" Train〉〈Body and Soul〉〈Confirmation〉這類定番。這是 CBS/Sony「Master Sound」數位錄音系列的碟，聲音乾淨、動態大，與同時期日本廠牌的類比發燒盤是兩種取向。",
+  "keyTracks": [
+   "Django",
+   "Delaunay's Dilemma",
+   "Take the \"A\" Train"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1979（維持卡單值）。MB 的 first-release-date 1979 與轄下唯一一筆 release（JP 1979／CBS/Sony 25AP 1035／12 吋 9 軌）自洽；**實體盤面條目同樣記 CBS/Sony 25AP 1035、1979、日本，並補上 1979 年 4 月 14 與 18 日在 CBS/SONY STUDIO 的錄音日**——兩個獨立來源相符。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、店面觀察成立。**｜⚠ **掛名判定要講清楚**：本盤的 MB artist-credit 是**單一元素「Eiji Kitamura」**，三位美國樂手是 release 層的 credits 而不是 artist-credit——**因此它不是第 321／425 條要擋的合掛，收得正確**。但 **John Lewis、Shelly Manne、George Duvivier 三位在池中極可能已有卡**，**正文不得把本盤寫成四人共同領銜**，只能寫成 北村英治 的碟加三位客席。這與策展層第 425 條擋掉《Dear Friends》（credit 是 `Eiji Kitamura With The Concord Jazz All-Stars`，n=2）的差別正在 artist-credit 的元素數，**兩個判定互相自洽**。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「April Date 北村英治」「Eiji Kitamura April Date」「エイプリル・デイト」、jp／us／gb、album 與 song 兩種 entity——回了 北村英治 名下十餘筆，**沒有一筆是本作**；(2) 藝人目錄兩個 artistId（304482457／359649145）整份 dump，十四張裡沒有本作；(3) 沒有候選 collectionId。⚠ **策展層第 428 條寫「北村英治 四張全部未命中，但他在 Apple 上有 13 張——缺的全是 1973–79 的 Audio Lab／Yupiteru／CBS/Sony，在的全是 Trio Records 的目錄」**：本層把兩個 artistId 的十四張全部列出來複驗，**這個判斷完全成立**——在店面上的十四張裡，十一張的 ℗ 欄是 TRIO RECORDS，另三張是 Columbia（2009 選輯）、GML（1998／2003）與テイチク（2011 拼盤），**Audio Lab、Yupiteru、CBS/Sony、Living Audio、Chrysler、King 六家一張都沒有**。｜**人名邊界**：John Lewis、Shelly Manne、George Duvivier 一律寫拉丁原文（第 163 條家族），不得音譯。｜**反同構**：本張切「1979 年 4 月 CBS/Sony Master Sound 數位錄音＋John Lewis 的四首作曲」，與《Because of You》的 Audio Lab 類比發燒、《Sophisticated Lady》的 Yupiteru、《Happy Cooking》兩集的 Living Audio／Chrysler 互斥。"
+ },
+ {
+  "key": "desc4:八城一夫|Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway",
+  "artist": "八城一夫",
+  "album": "Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway",
+  "facts": [
+   {
+    "f": "原盤是 Audio Lab. Record 的 12 吋黑膠 ALJ-3042，**1976 年 10 月**日本發行，定價 ¥3,000（印在腰帶上）；班底與 1974 年的第一集完全相同：八城一夫（鋼琴）、原田政長（貝斯）、潮先郁男（吉他）、五十嵐武要（鼓）。",
+    "src": "https://api.discogs.com/releases/18947140"
+   },
+   {
+    "f": "十軌曲序：A 面〈She's Funny That Way〉〈If I Had You〉〈So Tired〉〈Again〉〈C'est Magnifique〉〈My Silent Love〉；B 面〈When I Grow Too Old to Dream〉〈Lover Man〉〈Joy Spring〉〈Day Dream〉——與第一集一樣以歌本定番為主，B 面放進 Clifford Brown 的〈Joy Spring〉與 Billy Strayhorn 的〈Day Dream〉兩首爵士作曲家的曲目。",
+    "src": "https://api.discogs.com/releases/18947140"
+   },
+   {
+    "f": "release-group fea314e0 的欄位：title「Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway」、artist-credit 單一元素「Kazuo Yashiro」、first-release-date **1976-10**（有年有月）、primary-type Album、secondary-types 空。轄下兩筆 release：1976-10 JP／AUDIO LAB RECORD ALJ-3042／12 吋黑膠 10 軌，與 2001-04-20 JP／AUDIO LAB RECORD OVXA-00004／Hybrid SACD 10 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fea314e0-8aca-4e20-9da5-ebaa4a6ec7c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Audio Lab Record 是音響評論家 菅野沖彦（1932–2018）1971 年創辦的發燒廠牌；2000 年代 Octavia Record 把《Side by Side》與《Side by Side 2》兩張一起做成直刻 SACD（OVXL-00041／OVXL-00042），同批還有 西条孝之介 與 八城一夫 的《West 8th Street / On Castle Ave.》、猪俣猛《The Dialogue》與 前田憲男《N. Maeda Meets 5 Saxophones》。",
+    "src": "https://www.octavia.co.jp/special/post-audio1.html"
+   },
+   {
+    "f": "八城一夫 1930 年 2 月生於東京，本名 屋代和雄，鋼琴自學、1948 年職業出道，1958 年組成 八城一夫トリオ、1960 年加入 渡辺貞夫 擴編成四重奏；他在 1976 與 1977 年（第 10 屆與第 11 屆）連兩年拿下日本ジャズ・ディスク大賞的錄音賞，1991 年 7 月 13 日辭世。",
+    "src": "https://kotobank.jp/word/%E5%85%AB%E5%9F%8E%20%E4%B8%80%E5%A4%AB-1657104"
+   }
+  ],
+  "hookCandidates": [
+   "同一組四個人、同樣兩架琴，1976 年 10 月把兩年前的錄音實驗再做一次——這是 八城一夫 生前最後一次回到這個題目",
+   "Audio Lab 的這條目錄後來被做成一張兩萬日圓的直刻 SACD，第一集與第二集編號相鄰"
+  ],
+  "sound": "十軌的四人編制（鋼琴、吉他、貝斯、鼓），承接第一集「兩架鋼琴並置」的概念。A 面六首走抒情與中速（〈She's Funny That Way〉〈If I Had You〉〈My Silent Love〉），B 面把 Clifford Brown 的〈Joy Spring〉與 Strayhorn 的〈Day Dream〉放進來，讓後半的爵士語彙比前半重。與第一集一樣，錄音本身的音色差異就是這張碟的內容。",
+  "keyTracks": [
+   "Joy Spring",
+   "Lover Man",
+   "Day Dream"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976（維持卡單值；MB 精確到 1976-10）。MB 的 first-release-date 1976-10 與轄下那筆 1976-10 JP／ALJ-3042／12 吋 10 軌自洽；**實體盤面條目同樣記 Audio Lab. Record ALJ-3042、1976 年 10 月、日本，並註明腰帶上的定價 ¥3,000**——兩個獨立來源相符。⚠ 依第 311 條「`first-release-date` 是年-月時要留意是不是錄音月」查過：**盤面條目沒有另記錄音日，也沒有 1976 年 10 月有錄音場次的記載**，沒有把發行月誤填成錄音月的跡象。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、選這一張的理由成立。**｜**策展層第 429a 條挑這張的理由（「本批已收第一集，這是這條 Audio Lab 招牌系列在他生前唯一的續作」）覆核成立**：八城一夫 1991 年辭世，Octavia 的直刻 SACD 系列是 2000 年代才做的，**第三集在他身後才出**——策展層的敘述與實體條目對得上。｜**MB**：RG 四欄與兩筆 release 與 mbNote 相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「Side By Side 2 Kazuo Yashiro」「八城一夫 ベーゼンドルファー」「Bosendorfer Steinway Yashiro」、jp／us／gb、album 與 song 兩種 entity——**零筆**；(2) 藝人目錄三個 artistId（151990570／1621854449／1749334232）整份 dump，八張裡沒有本作；(3) 沒有候選 collectionId。**Audio Lab 整條目錄在店面都不在**（見《Side By Side》那張的同一條備註）。｜⚠ **獎項要小心（研究層獎項規則）**：八城一夫 **1976 與 1977 年（第 10、11 屆）連兩年拿日本ジャズ・ディスク大賞的錄音賞**，這件事本身有辭典條目支撐；**但沒有任何來源指明是哪一張碟得的獎**。本作 1976 年 10 月發行、正好落在那兩屆的區間，**但那只是時間相符、不是證據**。**facts 只寫「八城一夫 在那兩屆得了錄音賞」，正文絕對不得寫成「本作獲頒錄音賞」**（第 253 條家族：表面相符不是證據）。｜**不得與第一集折疊**：兩張是不同的碟（ALJ-1012／1974 十軌 vs ALJ-3042／1976-10 十軌，曲目完全不同），互相指向即可。｜**反同構**：本張切「同一組人兩年後的續篇＋生前最後一次＋Octavia 的直刻 SACD 重發」。"
+ },
+ {
+  "key": "desc4:八城一夫|It's a Sin to Tell a Lie",
+  "artist": "八城一夫",
+  "album": "It's a Sin to Tell a Lie",
+  "facts": [
+   {
+    "f": "原盤是東芝（Toshiba Records）的 12 吋黑膠 TP-72341，1980 年日本發行、屬於東芝的「**Love Touch Piano**」系列。班底是 八城一夫（鋼琴）、外山浩爾（貝斯）、八城邦義（鼓）；盤面另外註明 **A4〈I'm in the Mood for Love〉、A6〈Lush Life〉、B2〈In a Sentimental Mood〉、B4〈Ja-Da〉四首是鋼琴獨奏**。",
+    "src": "https://api.discogs.com/releases/8556835"
+   },
+   {
+    "f": "十二軌曲序與作曲者：A 面〈I Can't Give You Anything But Love〉（Jimmy McHugh／Dorothy Fields）、〈It's a Sin to Tell a Lie〉（Billy Mayhew）、〈Just in Time〉（Jule Styne／Comden & Green）、〈I'm in the Mood for Love〉、〈Lover Man〉、〈Lush Life〉（Billy Strayhorn）；B 面〈Just Friends〉、〈In a Sentimental Mood〉（Duke Ellington）、〈Lover, Come Back to Me〉（Sigmund Romberg／Oscar Hammerstein II）、〈Ja-Da〉、〈The Lady Is a Tramp〉（Rodgers & Hart）、〈June Night〉。",
+    "src": "https://api.discogs.com/releases/8556835"
+   },
+   {
+    "f": "同一段編號裡緊鄰的兩張是 世良譲《Bei Mir Bist Du Schön》（TP-72339）與 前田憲男《Falling in Love With Love》（TP-72340）——**TP-72339／72340／72341 三張連號，三位都是本批的掛名**；前田憲男 那張的盤面註明 1980 年錄於 Toshiba EMI Studio Tokyo。",
+    "src": "https://api.discogs.com/releases/8556773"
+   },
+   {
+    "f": "release-group 73de7c53 的欄位：title「It's a Sin to Tell a Lie」、artist-credit 單一元素「Kazuo Yashiro」、first-release-date 1980、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1980、Official、Toshiba Records TP-72341、12 吋黑膠 12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=73de7c53-76cb-4330-9713-509ed7b2db4a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八城一夫 1930 年 2 月生於東京，本名 屋代和雄，鋼琴自學、1948 年職業出道，1958 年組成 八城一夫トリオ，1960 年加入 渡辺貞夫 擴編成四重奏；1991 年 7 月 13 日辭世。",
+    "src": "https://kotobank.jp/word/%E5%85%AB%E5%9F%8E%20%E4%B8%80%E5%A4%AB-1657104"
+   }
+  ],
+  "hookCandidates": [
+   "十二首裡有四首在盤面上被標成「Piano Solo」——同一張碟裡三重奏與獨奏交替，是東芝那條系列刻意排的",
+   "TP-72339 世良譲、72340 前田憲男、72341 八城一夫：東芝把三位戰後鋼琴手排成三張連號"
+  ],
+  "sound": "十二軌的鋼琴盤，編制在三重奏與獨奏之間交替——四首標明是獨奏（〈I'm in the Mood for Love〉〈Lush Life〉〈In a Sentimental Mood〉〈Ja-Da〉），其餘八首是鋼琴、貝斯、鼓。曲目全是 1920 至 50 年代的美國歌本，含 Strayhorn 的〈Lush Life〉與 Ellington 的〈In a Sentimental Mood〉兩首爵士作曲家的作品；末曲〈June Night〉也是他 1973 年《Drivin'》的開場曲。",
+  "keyTracks": [
+   "Lush Life",
+   "It's a Sin to Tell a Lie",
+   "In a Sentimental Mood"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1980（維持卡單值）。MB 的 first-release-date 1980 與轄下唯一一筆 release（JP 1980／Toshiba Records TP-72341／12 吋 12 軌）自洽；**實體盤面條目同樣記 Toshiba Records TP-72341、1980、日本、Love Touch Piano 系列**——兩個獨立來源相符。無改判。",
+  "notes": "**覆核策展層：MB 相符、年份成立、封面走 CAA、選這一張的理由成立。**｜**策展層第 429a 條挑這張的理由（「把他的目錄收在 1980 年，與本批的 1968／1973／1974／1976／1978 連成六個年份不重複的線」）覆核成立**——六張的 first-release-date 實查為 1968、1973、1974、1976-10、1978、1980，確實不重複。｜**MB**：RG 四欄與唯一一筆 release 與 mbNote 完全相符；CAA release-group 端點實測 **200**，封面走 CAA。｜⚠ **試聽：三種查法全部落空，判定無來源。** (1) search 跑了「It's a Sin to Tell a Lie 八城一夫」「Kazuo Yashiro Sin to Tell a Lie」、jp／us／gb、album 與 song 兩種 entity——**零筆命中本作**；(2) 藝人目錄三個 artistId 整份 dump，八張裡沒有本作；(3) 沒有候選 collectionId。**東芝「Love Touch Piano」系列整條在店面都不在。**｜⚠ **鼓手的名字要注意**：實體盤面把鼓手記成「Kuniyoshi Yashiro（八城邦義）」，**與領銜者 八城一夫 同姓**。沒有第二個來源說明兩人的關係，**正文不得寫成親屬或任何推測的關係**，只能寫名字。｜**跨卡交集**：末曲〈June Night〉與他 1973 年《Drivin'》的開場曲同名同曲；TP-72339／72340 兩張連號分別是 世良譲 與 前田憲男（本組掛名）。｜**廠牌**：卡單的「東芝 Toshiba Records TP-72341」與盤面一致，**可補上系列名「Love Touch Piano」**。｜**反同構**：本張切「三重奏與獨奏交替的四首 Piano Solo＋東芝連號三張」。"
  }
 ]
