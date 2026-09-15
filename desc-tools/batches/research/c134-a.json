@@ -1,0 +1,122 @@
+[
+ {
+  "key": "desc4:世良譲トリオ|Bacchus Swing",
+  "artist": "世良譲トリオ",
+  "album": "Bacchus Swing",
+  "facts": [
+   {
+    "f": "release-group 3a45d8fe 的欄位：title「Bacchus Swing」、artist-credit 單一元素「世良譲トリオ」（群組實體 c80d9a8c，Group／JP）、primary-type Album、secondary-types 空、**first-release-date 是空字串**。轄下只有一筆 release：country XW、無日期、Official、廠牌 Trio、無目錄編號、Digital Media 8 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3a45d8fe-b74e-4b8f-851f-4f4a79397b6b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八軌逐軌與軌長：1〈Mac's Blues〉7:50、2〈Peg O'My Heart〉3:30、3〈After You've Gone〉4:34、4〈Misty〉3:44、5〈Shiny Stockings〉6:44、6〈My Ideal〉3:09、7〈Softly as in a Morning Sunrise〉7:05、8〈Thanks for the Memory〉2:42，全長約 39 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3a45d8fe-b74e-4b8f-851f-4f4a79397b6b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本作是 1973 年的錄音盤，三重奏編制是 世良譲（鋼琴）、栗田八郎（貝斯）、原田イサム（鼓）。2008 年 3 月 26 日由 ART UNION 以 ABCJ-469 發行 CD 版，商品說明把它形容成「世良譲 眾多專輯裡搖擺感最突出的一張」。",
+    "src": "https://tower.jp/item/2378019/"
+   },
+   {
+    "f": "2014 年 12 月 3 日的 SHM-CD 復刻（POCS-9320，完全初回受注生産限定盤）把本作歸進「音の匠・菅野沖彦・昭和のジャズ モダン・スイング・シリーズ」，24bit 數位重製、紙盒復刻原始內頁。同頁列的三重奏成員與原盤一致：世良譲（p）、栗田八郎（b）、原田イサム（ds）。",
+    "src": "https://www.universal-music.co.jp/swing/products/pocs-9320/"
+   },
+   {
+    "f": "世良譲 1932 年 3 月 10 日生於島根縣，本名 世良哲壮，1950 年就讀明治大學期間開始職業演奏；1965 年以 白木秀雄クインテット 成員身分在柏林爵士節演出；1974 至 1981 年固定上 TBS《サウンド・イン\"S\"》；1988 年率自己的三重奏登上蒙特勒爵士節；2003 年獲南里文雄賞；2004 年 2 月 17 日因多重器官衰竭辭世，享年 71。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%96%E8%89%AF%E8%AD%B2"
+   }
+  ],
+  "hookCandidates": [
+   "日本戰後搖擺鋼琴三重奏的招牌盤名「バッカス（酒神）」，第一集是 1973 年錄的，錄音師是後來開 Audio Lab 的 菅野沖彦",
+   "資料庫裡這張碟的發行日欄位是空的——它在 MusicBrainz 上只剩一筆沒有日期的數位版，紙本線索全在廠牌的復刻頁上"
+  ],
+  "sound": "八軌約 39 分鐘，鋼琴三重奏的標準編制，但長度分佈很極端：〈Mac's Blues〉7:50、〈Softly as in a Morning Sunrise〉7:05、〈Shiny Stockings〉6:44 這三首各給了樂手大段獨奏空間，〈Thanks for the Memory〉只有 2:42、〈My Ideal〉3:09 則收成短篇抒情曲。曲目全是搖擺時代與戰後的美國定番，重點在三人的律動咬合與 世良譲 右手的線條，不在前衛語彙。",
+  "keyTracks": [
+   "Mac's Blues",
+   "Shiny Stockings",
+   "Softly as in a Morning Sunrise"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與卡單不合，建議 1994 → 1973（錄音年）**。卡單的 1994 來自 Apple jp 官方條目 1329371607 的 1994-11-25，但那是 CD 化上架日：MB 這個 RG 的 first-release-date 是空的、轄下唯一那筆是沒有日期的數位版，兩邊都不是原盤。**tower.jp 的 ABCJ-469 商品說明逐字寫「1973年録音盤」**，Universal 的 2014 年 SHM-CD 復刻頁（POCS-9320）把它歸進 Trio Records 的「昭和のジャズ モダン・スイング・シリーズ」、成員與原盤相同。原盤首發年未能查到確切月日，依研究層通則「首發年查不到但錄音年確定時取錄音年」建議 1973。**不自行改卡單。**",
+  "notes": "**覆核策展層：MB 逐欄實查相符、封面路徑成立、試聽成立；年份推翻策展層取值。**｜**MB**：RG 四欄與唯一一筆 release（XW／無日期／Trio／無 catno／Digital Media 8 軌）與 mbNote 完全相符；CAA release-group 端點實測 **200**，策展層寫的「世良譲 名下唯一有圖的 RG」成立，封面直接走 CAA、不需 apple-verified-collection。｜**試聽（第 254 條三種查法全跑）**：search（バッカス・スイング／Bacchus Swing 世良譲）命中、藝人目錄 artistId 359071435 命中、直查 `lookup?id=1329371607&country=jp&entity=song` 實跑 **8 軌全部有 previewUrl**，曲序與 MB 逐軌相同。**串流採信 1329371607**。｜⚠ **第 431 條的眼光**：Apple 的 1994-11-25 與 MB 的「空日期數位版」不是兩個獨立來源，兩邊描述的都是同一份 Trio／Absord 數位母帶。**真正的獨立來源是 tower.jp 的實體 CD 商品頁（ABCJ-469，明寫 1973 年録音）與 Universal 的復刻頁（POCS-9320）**——兩者都指向 1970 年代原盤，不是 1994。｜⚠ **Apple 藝人 id 分裂覆核（第 434 條）**：世良譲 在店面實測有兩個 id——`359079027`「Yuzuru Sera」（4 張）與 `359071435`「世良譲トリオ」（2 張）；策展層說的「世良 譲」半形空格是 `359079027` 的日文顯示名。**兩個 id 的目錄都整份 dump 過**，沒有第三個。｜**跨批同碟覆核（第 426 條）**：本張 artist-credit 是單一元素「世良譲トリオ」，**不含 笠井紀美子**；c-134 b 組實收的 22 張 rgMbid 與 a 組 23 張**零交集**（逐筆比對過），策展層點名的 `57f599f0`（世良譲トリオ・イントロデューシング・笠井紀美子）b 組確實沒收。｜**人名邊界**：世良譲、栗田八郎、原田イサム、菅野沖彦 都有可具名出處；**日文原字一律保留**（第 395 條）。世良譲 2004 年辭世距本作三十年、與本作無關，依反向禁令不寫進正文。｜**反同構（世良譲 五張）**：本張切入「バッカス 系列第一集＋1973 錄音＋菅野沖彦 的モダン・スイング・シリーズ」，《スモーク・リングス》走 世良譲&ヒズ・フレンズ 的大編制與 19 軌，《バッカス・グルーヴ》走第二集與 横内章次 的吉他，《50th Anniversary Concert》走 2000 年的五十週年，《世良譲と仲間たち》走 2004 年的最後一張。"
+ },
+ {
+  "key": "desc4:世良譲|スモーク・リングス",
+  "artist": "世良譲",
+  "album": "スモーク・リングス",
+  "facts": [
+   {
+    "f": "release-group 721e76b5 的欄位：title「スモーク・リングス」、artist-credit 單一元素「世良譲」、first-release-date 1987-08-01、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 1987-08-01、Official、CD 19 軌，label-info 有兩筆目錄編號 ABCJ-467 與 BRJ-4046、兩筆的廠牌名欄都是空的。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=721e76b5-5ed3-4e4e-91db-41b466589d99&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "十九軌全部是搖擺時代的美國定番，曲序（片假名為 MB 登記的日文軌名）：〈アンダー・ザ・ブランケット・オブ・ブルー〉〈スモーク・リングス〉〈恋のため息〉〈古くさいね〉〈ペイパー・ムーン〉〈プレリュード・トゥ・ア・キッス〉〈ミーン・トゥ・ミー〉〈ベイリーさん帰ってくれないか〉〈誰かが誰かを愛してる〉〈シャイン〉〈ギブ・ミー・ア・シンプル・ライフ〉〈ジャスト・ワン・モア・チャンス〉〈ローズ・ルーム〉〈ジャスト・ア・ジゴロ〉〈チーク・トゥ・チーク〉〈ウィロー・ウィープ・フォー・ミー〉〈ホワット・キャン・アイ・セイ・ディア〉〈オン・ア・スロー・ボート・トゥ・チャイナ〉〈ステアウェイ・トゥ・ザ・スターズ〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=721e76b5-5ed3-4e4e-91db-41b466589d99&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "店面官方條目把掛名印成「世良譲&ヒズ・フレンズ」——本作不是三重奏盤而是 世良譲 領軍的合奏團編制，十九軌全部有試聽，軌長從〈Smoke Rings〉2:33 到〈Willow Weep for Me〉4:49，全長約 68 分鐘。",
+    "src": "https://music.apple.com/jp/album/1327682788"
+   },
+   {
+    "f": "世良譲 1932 年 3 月 10 日生於島根縣，本名 世良哲壮；1965 年以 白木秀雄クインテット 的成員身分在柏林爵士節演出，1974 至 1981 年固定上 TBS《サウンド・イン\"S\"》，以機智的談話為大眾所熟知；1988 年率自己的三重奏登上蒙特勒爵士節。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%96%E8%89%AF%E8%AD%B2"
+   },
+   {
+    "f": "世良譲 名下另有一張 19 軌之外的《スモーク・リング Vol.1》（ABCJ-474、CD 14 軌），與本張 19 軌的《スモーク・リングス》是兩張不同的碟，不得合併。",
+    "src": "https://musicbrainz.org/ws/2/release-group/24ae374b-fafe-47b7-8d65-e3476167cbf8?fmt=json&inc=artist-credits+releases"
+   }
+  ],
+  "hookCandidates": [
+   "一張 19 軌、68 分鐘的搖擺定番全餐，掛名在資料庫裡是「世良譲」，在店面卻印成「世良譲&ヒズ・フレンズ」",
+   "MB 上這筆 release 掛著 ABCJ-467 與 BRJ-4046 兩個目錄編號、廠牌名卻兩欄都空——這是 Trio 母帶輾轉換權利人留下的痕跡"
+  ],
+  "sound": "十九軌約 68 分鐘，是單曲長度的搖擺選粹而不是長篇即興：多數落在 2 分半到 3 分半，只有〈Cheek to Cheek〉4:32、〈Willow Weep for Me〉4:49、〈On a Slow Boat to China〉4:38 三首放長。編制是 世良譲 加一組管樂與節奏組的「His Friends」而非鋼琴三重奏，重點在合奏的搖擺律動與曲目的世代記憶。",
+  "keyTracks": [
+   "Smoke Rings",
+   "Cheek to Cheek",
+   "Prelude to a Kiss"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987（維持卡單值）。MB 的 first-release-date 1987-08-01 與轄下唯一一筆 release（JP 1987-08-01／ABCJ-467＋BRJ-4046／CD 19 軌）自洽；店面 1327682788 的 2008-05-21 比 MB **晚**二十一年，依 c-134 第 422 條 C 組的通則（店面精確日期只在比 MB *早* 時適用）那是數位上架日，不構成改判理由。**策展層維持 1987 的判斷覆核成立。**",
+  "notes": "**覆核策展層：MB 相符、年份判斷成立、封面路徑成立、試聽成立。**｜**MB**：CAA release-group 端點實測 **404**，與策展層一致。｜**封面路徑覆核通過**：策展層寫「Apple jp 1327682788（19 軌與 MB 一致）→ apple-verified-collection」，逐項實查——collectionId 1327682788、trackCount **19**、軌序與 MB 的 19 軌逐軌對得上（MB 記片假名軌名、Apple 記英文原題，〈古くさいね〉＝That Old Feeling、〈誰かが誰かを愛してる〉＝Everybody Loves Somebody、〈ベイリーさん帰ってくれないか〉＝Bill Bailey, Won't You Please Come Home?），**三項全對，路徑成立**。｜**試聽（三種查法全跑）**：search 命中、藝人目錄 artistId **359079027**（不是策展層主要在講的 359071435）命中、直查 `lookup?id=1327682788&country=jp&entity=song` 實跑 **19 軌全部有 previewUrl**。**串流採信 1327682788**。｜⚠ **掛名落差要記**：店面的 collection 層 artistName 是「世良譲&ヒズ・フレンズ」，卡單與 MB 都是「世良譲」。**這不是另一張碟**（19 軌逐軌相符），但下游若拿掛名字串比對會不命中。｜⚠ **不得與《スモーク・リング Vol.1》折疊**：那是另一個 RG（`24ae374b`，ABCJ-474、14 軌，第 424 條的候補清單裡），盤名近似、軌數不同。｜**廠牌**：MB 的 label-info 兩筆廠牌名皆空、只有 ABCJ-467 與 BRJ-4046 兩個編號（用 release 端點問來的，第 259 條）；店面 ℗ 欄是 TRIO RECORDS。**正文不得把 ABCJ／BRJ 寫成廠牌名。**｜**反同構**：本張切「19 軌搖擺定番全餐＋His Friends 合奏編制」，與《バッカス》兩集的三重奏路線互斥。"
+ },
+ {
+  "key": "desc4:世良譲|バッカス・グルーヴ",
+  "artist": "世良譲",
+  "album": "バッカス・グルーヴ",
+  "facts": [
+   {
+    "f": "release-group a5d2ed5e 的欄位：title「バッカス・グルーヴ」、artist-credit 單一元素「世良譲」、first-release-date 2008-05-21、primary-type Album、secondary-types 空。轄下唯一一筆 release：JP 2008-05-21、Official、CD 8 軌、目錄編號 ABCJ-475，label-info 的廠牌名欄是空字串。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a5d2ed5e-e799-4bae-8be2-8d4afbb85ce7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "八軌曲序（MB 登記的片假名軌名）：〈バイ・バイ・ブラックバード〉〈バット・ノット・フォー・ミー〉〈リンダ〉〈アイム・ゴナ・シットライト・ダウン・アンド・ライト・マイセルフ・ア・レター〉〈ペイパー・ドール〉〈イット・クッド・ハップンス・トゥー・ユー〉〈エヴリシング・ハップンス・トゥ・ミー〉〈ユー・トゥック・アドヴァンテイジ・オブ・ミー〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a5d2ed5e-e799-4bae-8be2-8d4afbb85ce7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "本作是「バッカス」系列繼《バッカス・スイング》之後的第二張，編制不是三重奏而是四人：世良譲（鋼琴）、横内章次（吉他）、稲葉国光（貝斯）、清水潤（鼓）。2014 年 12 月 3 日以 SHM-CD（POCS-9322、完全初回受注生産限定盤）24bit 重製復刻，歸在同一套「音の匠・菅野沖彦・昭和のジャズ モダン・スイング・シリーズ」底下。",
+    "src": "https://www.universal-music.co.jp/swing/products/pocs-9322/"
+   },
+   {
+    "f": "2008 年 5 月 21 日 ART UNION 發行的 ABCJ-475 商品頁註明是「初 CD 化」——本作在那之前只有黑膠，二手黑膠條目把原盤記在 1970 年代的 Trio Records，目錄編號 PAP-9073。",
+    "src": "https://tower.jp/item/2399417/"
+   },
+   {
+    "f": "世良譲 1932 年 3 月 10 日生於島根縣，1950 年就讀明治大學期間開始職業演奏，曾在 奥田宗宏 的樂團裡工作；1965 年以 白木秀雄クインテット 成員身分在柏林爵士節演出；2003 年獲南里文雄賞，2004 年 2 月 17 日辭世。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%B8%96%E8%89%AF%E8%AD%B2"
+   }
+  ],
+  "hookCandidates": [
+   "「バッカス」第二集把三重奏換成加一把吉他的四人編制，横内章次 的 groove 是整張碟的名字由來",
+   "2008 年的 ABCJ-475 商品頁寫著「初 CD 化」——這張酒神第二集在黑膠上躺了三十年才第一次進 CD"
+  ],
+  "sound": "八軌的中型專輯，編制是鋼琴＋吉他＋貝斯＋鼓的四人組，比《バッカス・スイング》的純三重奏多了一層 groove。曲目走的是搖擺與抒情定番的路線：〈Bye Bye Blackbird〉〈But Not for Me〉〈Paper Doll〉〈Everything Happens to Me〉，重點在 世良譲 的右手與 横内章次 的吉他互推，四拍到接近 ragtime 的收放都在同一張裡。",
+  "keyTracks": [
+   "Bye Bye Blackbird",
+   "Everything Happens to Me",
+   "You Took Advantage of Me"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與卡單不合，建議 2008 → 1977（原盤年，標 uncertain）**。卡單的 2008 與 MB 的 2008-05-21 都指向 ABCJ-475 那張 CD，而該商品頁自己註明是「**初 CD 化**」——也就是 2008 之前本作只有黑膠。二手黑膠條目把原盤記成 Trio Records **PAP-9073**、1970 年代日本盤；零售端的系列說明把原盤年寫成 **1977**。⚠ **1977 目前只有零售與二手盤面描述支撐，沒有廠牌自己的目錄頁**（Universal 的 POCS-9322 復刻頁只寫 2014 年復刻日、不記原盤年），所以標 uncertain。**可確定的是 2008 不是原盤年**。不自行改卡單。",
+  "notes": "**覆核策展層：MB 相符、封面路徑成立、試聽成立；年份推翻策展層取值。**｜**MB**：CAA release-group 端點實測 **404**，與策展層一致。｜**封面路徑覆核通過**：策展層寫「Apple jp 1327671148（8 軌一致）→ apple-verified-collection」，逐項實查——collectionId 1327671148、trackCount **8**、℗ TRIO RECORDS、掛在 artistId 359079027「世良 譲」，八軌曲序與 MB 逐軌對得上（片假名 vs 英文原題），**路徑成立**。｜**試聽（三種查法全跑）**：search、藝人目錄（359079027）、直查 `lookup?id=1327671148&country=jp&entity=song` 三種都命中，**8 軌全部有 previewUrl**。**串流採信 1327671148**。｜⚠ **第 431 條的眼光**：MB 的 2008-05-21 與 Apple 的 2008-05-21 **逐日相符**，但那正是同源的特徵——兩邊描述的都是 ART UNION 那張 ABCJ-475 CD 的 metadata，**不是兩個獨立來源**。真正獨立的是 tower.jp 商品頁的「初 CD 化」註記與二手黑膠條目的 PAP-9073。｜**編制**：本作是四人而不是三重奏（多一把 横内章次 的吉他），**正文不得寫成鋼琴三重奏盤**。貝斯手 **稲葉国光** 是日文原字，依第 395 條不得當簡體字改寫。｜**廠牌**：MB 的 label-info 只有 ABCJ-475、廠牌名欄空字串（release 端點問來的，第 259 條），**正文不得把 ABCJ 寫成廠牌名**。｜**反同構**：本張切「系列第二集＋四人編制＋初 CD 化拖了三十年」，與第一集的「1973 錄音＋純三重奏」互斥。"
+ }
+]
