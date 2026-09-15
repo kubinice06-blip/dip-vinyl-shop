@@ -1709,7 +1709,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "",
+   "note": "藝人池中有1張(盤名未比中)",
    "why": "artist-tag",
    "entities": [
     "Victor(JP imprint)"
@@ -2214,7 +2214,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
+   "note": "藝人池中有2張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "Flying Disk"
@@ -2305,7 +2305,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
+   "note": "藝人池中有15張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "INVITATION"
@@ -2605,6 +2605,24 @@
    "nrel": 1
   },
   {
+   "artist": "坂本龍一",
+   "album": "宇宙～人類の夢と希望～",
+   "year": 1978,
+   "rgMbid": "856d363a-a8a6-44b0-ad7d-46e213655812",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "inPool": false,
+   "poolString": "坂本龍一|Thousand Knives",
+   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
+   "why": "artist-search-tag",
+   "entities": [
+    "Victor(JP imprint)"
+   ],
+   "foreignArtist": false,
+   "nrel": 1
+  },
+  {
    "artist": "日野皓正",
    "album": "Hip Seagull",
    "year": 1978,
@@ -2632,7 +2650,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有1張(盤名未比中)",
+   "note": "藝人池中有2張(盤名未比中)",
    "why": "artist-tag",
    "entities": [
     "Flying Disk"
@@ -2688,7 +2706,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
+   "note": "藝人池中有15張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "INVITATION"
@@ -2962,7 +2980,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
+   "note": "藝人池中有15張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "INVITATION"
@@ -2980,7 +2998,7 @@
    "live": true,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
+   "note": "藝人池中有15張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "INVITATION"
@@ -3706,7 +3724,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
+   "note": "藝人池中有15張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "INVITATION"
@@ -4719,7 +4737,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
+   "note": "藝人池中有15張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "INVITATION"
@@ -5710,7 +5728,7 @@
    "live": false,
    "inPool": false,
    "poolString": "",
-   "note": "藝人池中有2張(盤名未比中)",
+   "note": "藝人池中有15張(盤名未比中)",
    "why": "rg-tag",
    "entities": [
     "INVITATION"
@@ -13968,24 +13986,6 @@
    "why": "no-tag",
    "entities": [
     "INVITATION"
-   ],
-   "foreignArtist": false,
-   "nrel": 1
-  },
-  {
-   "artist": "坂本龍一",
-   "album": "宇宙～人類の夢と希望～",
-   "year": 1978,
-   "rgMbid": "856d363a-a8a6-44b0-ad7d-46e213655812",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "坂本龍一|Thousand Knives",
-   "note": "疑似池中(同藝人同年, 盤名相似度0.16)",
-   "why": "artist-tag-mixed",
-   "entities": [
-    "Victor(JP imprint)"
    ],
    "foreignArtist": false,
    "nrel": 1
