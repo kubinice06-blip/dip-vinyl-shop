@@ -1,0 +1,126 @@
+[
+{
+ "key": "desc2:Benyamin S. & Rossy|Indehoi",
+ "artist": "Benyamin S. & Rossy",
+ "album": "Indehoi",
+ "facts": [
+  {"f": "release-group 23fe93e1 的欄位：title「Indehoi」、first-release-date 1968、primary-type Album、secondary-types 空、artist-credit 字串「Benjamin S & Rossy」（兩個實體：Benyamin Sueb 33ae9e5e，Person、Indonesia、1939-03-05 生、1995-09-05 歿，disambiguation 明寫 a.k.a. Benyamin S.；Rossy 243a0871，Person、Indonesia）。轄下**只有一筆 release** 3f3e7b21：1968 ID Official、**10 吋黑膠 8 軌**、label-info 記 Mesra／MP-42、無 barcode、語言欄 ind。", "src": "https://musicbrainz.org/ws/2/release?release-group=23fe93e1-11e4-4028-acef-7604541c5da9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"},
+  {"f": "八軌逐軌帶軌級掛名：1〈Si Neneng〉3:09（Benjamin S.）2〈Taisennje〉2:17（Benjamin S.）3〈Daag Saj〉2:17（Benjamin S. & Si Gogo）4〈Ngundang〉2:58（Benjamin S.）5〈Masih Untung〉3:10（Rossy）6〈Njai Dasime〉2:04（Rossy）7〈Ade Deh〉2:30（Si Gogo）8〈Apa Boleh Buat〉2:12（Benjamin S.）。**盤面掛兩個人，實際是三個聲音**：Benyamin 四軌獨唱加一軌合唱、Rossy 兩軌、Si Gogo 一軌獨唱加一軌合唱。八軌全部在 2 到 3 分多鐘之間，全碟不到 21 分鐘。", "src": "https://musicbrainz.org/ws/2/release/3f3e7b21-31c8-4188-8612-f898b27fd486?fmt=json&inc=media+recordings+artist-credits"},
+  {"f": "藝人端點：Benyamin Sueb 名下 10 個 release-group，**只有《Indehoi》一張帶 1960 年代的日期**，其餘有日期的全部落在 1990 年之後（1990-12-01《Mas Roni》《Selection Pop Dangdut》、1991-04-01《20 Super Pop Dangdut Terlaris》、1995-10-04《Tung Ali Onde Jande Mude》，再來是 2002／2004／2022 的三張 Compilation），另有《Biographie》《Tukang Solder》兩張沒有日期。實體登記的別名有 Benyamin S、Benyamin S.、Bunjamin S. 三種。", "src": "https://musicbrainz.org/ws/2/artist/33ae9e5e-e94e-462b-b047-68f7d9ac0cb6?fmt=json&inc=aliases+release-groups&limit=100"},
+  {"f": "印尼文維基的作品表把這張列為 1968 年與 Rossy 合唱的《Indehoy》，並寫他在音樂上的成功「diawali dengan bergabungnya Benyamin dengan satu grup Naga Mustika」（從加入 gambang kromong 樂團 Naga Mustika 開始）。英文維基另記他 1950 年代加入 Melody Boys、該團 1963 年改名 Melodi Ria，原創曲目裡就有〈Si Neneng〉——本碟第 1 軌。", "src": "https://id.wikipedia.org/wiki/Benyamin_Sueb"},
+  {"f": "荷蘭的印尼唱片目錄站 musictime 把這張登記為 Mesra MP-42，演出者列 Benyamin Sueb、Rossy、Si Gogo 與伴奏樂團 Melodi Ria，同一目錄把同年的 Mesra 編號記到 LP-17、MP-57、MP-58（《Oom Senang》《Rapi Djali》）——**MP-42 落在 Mesra 1968 到 1969 年這一段編號區間內**。", "src": "https://www.musictime.nl/artist/benyamin"}
+ ],
+ "hookCandidates": [
+  "盤面掛兩個名字，八軌裡其實是三個聲音——Si Gogo 唱了兩軌卻沒上封面",
+  "同一個人、同一個 MBID，在資料庫的三張碟上被拼成 Benjamin S、Bunjamin S.、Benyamin S. 三種"
+ ],
+ "sound": "10 吋黑膠、8 軌、全碟不到 21 分鐘，每軌 2 到 3 分多鐘。雅加達 Betawi 語的 gambang kromong 流行曲，伴奏樂團登記為 Melodi Ria。〈Si Neneng〉開場，〈Njai Dasime〉〈Masih Untung〉兩軌是 Rossy 的獨唱，〈Ade Deh〉由 Si Gogo 獨唱，〈Apa Boleh Buat〉收尾。",
+ "keyTracks": ["Si Neneng", "Ngundang", "Njai Dasime"],
+ "status": "partial",
+ "yearVerified": {"year": 1968, "recorded": null, "note": "release-group first-release-date 1968，唯一 release 也是 1968 ID；印尼文維基作品表同記 1968。⚠ musictime 目錄把這張排在 1969 年那一段——單一來源、與資料庫端及維基相左，不採；正文寫 1968。錄音年未登錄。"},
+ "notes": "**覆核策展層：MBID、廠牌 Mesra／MP-42、10 吋 8 軌、掛名三拼法、CAA 404 全部屬實，未擋下任何一處。** 裁定 341 取「Benyamin S. & Rossy」站得住：實體 aliases 欄實查就是 Benyamin S／Benyamin S.／Bunjamin S. 三筆，disambiguation 明寫 a.k.a. Benyamin S.。｜**第三種查法（裁定 254）跑完：無來源。** `id`／`th`／`us`／`sg`／`my`／`gb` 六店以 Benyamin Indehoi／Benjamin S Indehoi／Benyamin Sueb 等四組詞 search 皆無此碟；藝人目錄 286016552（Benyamin S.）與 1498612114（Benyamin Sueb）兩份都沒有；song 級 search 只撈到 **2023 年的精選輯《Lagu Lagu Terbaik》（collectionId 1707193249）**裡有〈Si Neneng〉與〈Ngundang〉——**那是精選輯不是本碟，不採信**。回撈報告也記「目錄裡找不到」。**這張沒有試聽來源。**｜**封面待補**：唯一那筆 release 的 cover-art-archive 欄 artwork false、count 0，CAA release-group 404 是真的沒圖、不是探測失敗；Apple 端沒有本碟的條目可借圖；musictime 目錄頁有掃圖縮圖（只寫觀察）。｜**性質**：原創錄音室專輯，不是選輯、不是重發；資料庫端只有 1968 年 10 吋這一種形態，無再發。｜**人名邊界（裁定 241／250）**：Rossy 與 Si Gogo 是 release 軌級 artist-credit 登記的名字，可寫；Rossy 的 MB 實體 disambiguation 只寫「Indonesian artist」、無本名無生卒，**不得補寫她的本名或生平**。Melodi Ria 這個伴奏樂團名只有 musictime 一個目錄站支撐，英文維基只講到 1963 年改名這一步，**寫成「伴奏樂團登記為」即可，不要寫成確定的錄音編制**。｜**盤名**：MB RG title 是「Indehoi」，印尼文維基寫「Indehoy」，兩種都進 queryAlias（策展層已填）。｜**軌數只有一種形態**（10 吋 8 軌），無版本選擇問題。｜**政治中立**：本張 1968 年是新秩序初期的雅加達本地盤，資料裡沒有任何審查或查禁記錄，**正文不要替它鋪任何體制背景**；能寫的只有發行事實。｜**主線的說法「gambang kromong 這一塊池中一張也沒有」屬策展層的池中實掃，本層未複驗池，不評。**"
+},
+{
+ "key": "desc2:Titiek Puspa|Sok Teu",
+ "artist": "Titiek Puspa",
+ "album": "Sok Teu",
+ "facts": [
+  {"f": "release-group f2b0a715 的欄位：title「Sok Teu」、first-release-date 1970、primary-type Album、secondary-types 空、artist-credit「Titiek Puspa」。轄下**只有一筆 release** 402c49c7：1970 ID Official、**10 吋黑膠 8 軌**、label-info 記 J&B Records／JBL. 28837、無 barcode。八軌逐軌：1〈Sok Teu〉1:52、2〈Hilang〉2:24、3〈Si Djangkung〉2:25、4〈Menanti〉3:22、5〈Helo Kasih (Bersama Robby Amin)〉2:22、6〈Si Djali〉2:06、7〈Pergi Pergi Pergi〉2:27、8〈Mohon Diri〉3:24——**開場曲不到兩分鐘，全碟 20 分 22 秒**，第 5 軌的曲名裡就標了與 Robby Amin 合唱。", "src": "https://musicbrainz.org/ws/2/release?release-group=f2b0a715-25ed-43ca-952d-1b6143f6afcc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"},
+  {"f": "藝人端點：Titiek Puspa（Person、Indonesia、1937-11-01 生、2025-04-10 歿）名下 8 個 release-group：1964《Doa Ibu》、1969《Senyum》（EP）、**1970《Sok Teu》**，然後一路跳到 1986《Tinggal Bilang Yang》——**資料庫端她 1970 到 1986 年之間是空白的**，《Sok Teu》是登錄上 1960 年代那一段最後一張長篇。", "src": "https://musicbrainz.org/ws/2/artist/a1ad0276-aa91-4749-9fa5-2ba2952c4ee9?fmt=json&inc=aliases+release-groups&limit=100"},
+  {"f": "印尼文維基：本名 Sudarwati，1937 年 11 月 1 日生於婆羅洲的 Tanjung（Tabalong），十四歲左右在歌唱比賽勝出後取藝名 Titiek Puspa；1954 年在 RRI 的 Semarang「Bintang Radio」比賽出道；早期由她自己的樂團 **Puspa Sari** 伴奏；1960 年代初起改唱自己寫的歌，1963 年的《Si Hitam》與《Pita》「masing-masing berisi 12 lagu, semuanya adalah karyanya sendiri」。2025 年 4 月 10 日因腦出血辭世。", "src": "https://id.wikipedia.org/wiki/Titiek_Puspa"},
+  {"f": "荷蘭的印尼唱片目錄站 musictime 把《Sok Teu》登記為「Titiek Puspa／Puspa Sari」、J&B JBL-28837，同一頁列出她同期在 Remaco（RL-059《Mini》、RL-075《Taruna Djatuh Tjinta》）、Irama（《Aneka Gaja》《Pita》）、Mesra（MP-34《Si Kumbang》）三家廠牌的碟——**《Sok Teu》是她這一段裡唯一一張掛在 J&B 這家小廠牌名下的**。", "src": "https://www.musictime.nl/indonesia/titiek_puspa"}
+ ],
+ "hookCandidates": [
+  "資料庫端她 1970 到 1986 年之間一片空白——這張是那段空白之前最後一張長篇",
+  "開場曲不到兩分鐘，八軌全碟 20 分鐘出頭，第 5 軌把合唱者的名字直接寫進曲名"
+ ],
+ "sound": "10 吋黑膠、8 軌、全碟 20 分 22 秒，最短的〈Sok Teu〉1 分 52 秒開場、最長的〈Mohon Diri〉3 分 24 秒收尾。她自己的樂團 Puspa Sari 伴奏的 1970 年印尼流行曲，〈Helo Kasih〉是與 Robby Amin 的對唱，〈Si Djangkung〉〈Si Djali〉兩軌是以人物綽號為題的小曲。",
+ "keyTracks": ["Sok Teu", "Helo Kasih (Bersama Robby Amin)", "Mohon Diri"],
+ "status": "partial",
+ "yearVerified": {"year": 1970, "recorded": null, "note": "release-group first-release-date 1970 ＝ 唯一 release 的 date，musictime 目錄與 Discogs 條目標題同記 1970。錄音年未登錄。"},
+ "notes": "**覆核策展層：MBID、J&B Records／JBL. 28837、10 吋 8 軌、CAA 200、掛名與池中《Doa Ibu》一字不差——全部屬實，未擋下任何一處。**｜**第三種查法（裁定 254）跑完：無來源。** 六店 search（Titiek Puspa Sok Teu／Titiek Puspa／Sok Tahu Titiek）皆無此碟；藝人目錄 284032150 無；song 級 search 撈到 **2024 年的 26 軌精選輯《Seleksi Emas》（collectionId 1726571821）**裡有〈Sok Teu〉〈Si Djangkung〉〈Mohon Diri〉〈Pergi Pergi Pergi〉四軌——**精選輯不是本碟，不採信**。回撈報告給的候選 1732996008 是 1970 年標的〈Kupu Kupu Malam〉單曲、1 軌，與本碟無關。**這張沒有試聽來源。**｜**封面**：唯一 release 的 cover-art-archive front true（count 1），CAA 200 屬實。｜**性質**：原創錄音室專輯；資料庫端只有 1970 年 10 吋一種形態，軌數只有 8 這一種。｜**人名邊界**：Robby Amin 是 release 曲名裡登記的合唱者，可寫；Puspa Sari 是她自己的樂團（印尼文維基與 musictime 兩處一致），可寫；**編曲、樂手不得補寫**（無來源）。｜**盤名意思**：策展層 queryAlias 填了「Sok Tahu」（雅加達口語「裝懂」的舊拼法），本層查無來源證實盤名就是這個意思，**正文不要解釋盤名**。｜**反向禁令**：2025 年辭世是與作品無關的後續生平事件，**正文不寫**；facts 裡那句只供背景。｜**政治中立**：資料裡沒有任何審查或查禁記錄，正文只寫發行事實。"
+},
+{
+ "key": "desc2:AKA|Reflection",
+ "artist": "AKA",
+ "album": "Reflection",
+ "facts": [
+  {"f": "release-group 04f56d24 的欄位：title「Reflection」（單數）、first-release-date 1971、primary-type Album、secondary-types 空、artist-credit「AKA」（實體 d991e1c6，Group、Indonesia、disambiguation「Indonesian funk band」、alias「Group AKA」）。轄下兩筆 release：**b3de76f2 是 1971 ID Official、12 吋黑膠 9 軌、Indra／AKL - 029**；c472f3b8 是 2014-11-25 XW Official 數位版（Granadilla Music）同 9 軌。", "src": "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"},
+  {"f": "1971 年原盤九軌逐軌：1〈Reflection〉4:26、2〈Jeritan Seniman〉2:56、3〈Mendaki Gunung〉2:26、4〈Cahaya Tuhan〉3:18、5〈Akhir Kesucian Gadis〉4:48、6〈Only One Man〉**8:22**、7〈Jatuh Cinta〉2:30、8〈Mira〉3:10、9〈Penjaga Padi〉2:42。九軌裡**兩軌英文曲名、七軌印尼文**；〈Only One Man〉一軌就佔全碟 34 分 38 秒的近四分之一。", "src": "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+recordings&limit=100"},
+  {"f": "藝人端點：AKA 名下只有 4 個 release-group——1970《Do What You Like》、**1971《Reflection》**、1972《Crazy Joe》、2011-06-24《Hard Beat》。《Reflection》是三張 1970 年代連續出版裡的第二張。", "src": "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100"},
+  {"f": "印尼文維基：AKA 1967 年 5 月 23 日成立於泗水（Surabaya），「Nama AKA merupakan singkatan dari Apotik Kaliasin, apotek milik orang tua Ucok Harahap」——團名是 Ucok Harahap 父母開的 Kaliasin 藥局的縮寫，藥局就是排練場。首張《Do What You Like》1970 年由 Indra Records 出版；1975 年前後 Ucok 另組 Ucok and His Gangs，其餘三人於 1975 年底組成 SAS。", "src": "https://id.wikipedia.org/wiki/AKA_(grup_musik)"},
+  {"f": "印尼樂迷站 iMusik 的 AKA 條目把《Reflection》記為 1971 年 Indra 出版、兩面混搭搖滾與印尼語曲目，並把首張的聲音描述為借自 1960 年代末英美樂團的 fuzz-rock、hard rock 加迷幻與 funk-rock 元素。", "src": "https://shardianto.wordpress.com/2020/07/05/aka/"}
+ ],
+ "hookCandidates": [
+  "團名是一間藥局的縮寫——Ucok Harahap 父母開的 Kaliasin 藥局，也是他們的排練場",
+  "九軌裡〈Only One Man〉一軌 8 分 22 秒，佔了全碟近四分之一"
+ ],
+ "sound": "12 吋黑膠、9 軌、34 分 38 秒。〈Reflection〉4 分半開場，中段〈Akhir Kesucian Gadis〉4 分 48 秒，第 6 軌〈Only One Man〉拉到 8 分 22 秒是全碟的重心，之後〈Jatuh Cinta〉〈Mira〉〈Penjaga Padi〉三軌各 2 到 3 分鐘收尾。泗水四人團的印尼語硬搖滾，鍵盤與主唱是 Ucok Harahap。",
+ "keyTracks": ["Reflection", "Only One Man", "Jeritan Seniman"],
+ "status": "full",
+ "yearVerified": {"year": 1971, "recorded": null, "note": "release-group first-release-date 1971 ＝ 原盤 release 的 date，印尼文維基與 iMusik 同記 1971；2014-11-25 是 Granadilla Music 的數位再發年，不進 year。錄音年未登錄。"},
+ "notes": "**覆核策展層：MBID、Indra／AKL - 029、12 吋 9 軌、2014 數位再發、盤名單數、CAA 200、身分四項交叉（Group／Indonesia／Indonesian funk band）全部屬實，未擋下任何一處。**｜**第三種查法（裁定 254）跑完：無來源。** 六店 search（AKA Reflection Ucok／AKA Indonesia Reflection／Ucok Harahap AKA／AKA Reflection 1971）與 song 級 search（Jeritan Seniman AKA／AKA Only One Man）皆無此碟；店端唯一對得上這位的實體是 Ucok \"A.K.A\" Harahap（artistId 389866122），目錄只有 1978 年的《Duo Kribo》原聲帶。**主線探測把這張列在「有試聽」那一側（缺的 12 張裡沒有它），本層三種查法都找不到對得上的 collectionId——請主線回頭核探測層採的是哪個 id；若是南非饒舌歌手 AKA 的條目，那是撞名。這張以本層結論為準：沒有試聽來源。**｜**封面**：1971 原盤的 cover-art-archive artwork false，**CAA release-group 200 靠的是 2014 數位版那一筆的封面**（front true）——正文引封面時知道那是再發版的圖即可。｜**軌數**：兩版都是 9 軌，數位版逐軌短 2 到 6 秒（4:23／2:55／2:24／3:15／4:42／8:19／2:27／3:08／2:36），正文引長度以 1971 原盤為準。iMusik 把本碟寫成「八首」，**與資料庫端兩筆 release 的 9 軌不合，以資料庫端為準**。｜**人名邊界（裁定 241／250）**：Ucok Harahap（主唱／鍵盤）由印尼文維基與 iMusik 兩處一致，可寫；**貝斯手兩處對不上**（維基寫 Peter Wass、iMusik 寫 Lexy Rumagit），鼓手也有 Zainal Abidin→Syech Abidin 的更替——**正文不要列全編制，最多寫「Ucok Harahap 領軍的泗水四人團」**。｜**性質**：原創錄音室專輯。｜**政治中立**：資料裡沒有查禁記錄，正文只寫發行事實；曲名〈Cahaya Tuhan〉是宗教題材曲名，照抄曲名即可、不評。｜曲名〈Do What You Like〉在 Rolling Stone Indonesia 2009 年 150 首名單排第 125，**那是首張的歌、不是本碟**，不得寫進本卡。"
+},
+{
+ "key": "desc2:AKA|Crazy Joe",
+ "artist": "AKA",
+ "album": "Crazy Joe",
+ "facts": [
+  {"f": "release-group 7fc685d9 的欄位：title「Crazy Joe」、first-release-date 1972、primary-type Album、secondary-types 空、artist-credit「AKA」（同一實體 d991e1c6）。轄下兩筆 release：**20e60399 是 1972 ID、12 吋黑膠 9 軌、Indra／AKL-047，status 欄空**；3b5135b6 是 2015-04-10 XE Official CD、Granadilla Music／GM 208C3、barcode 5291103811180、同 9 軌。九軌曲序：〈Crazy Joe〉〈Kenangan Beku〉〈Senyum〉〈Batu Nisan〉〈Maafkanlah〉〈Skip Away〉〈Kurban Cinta〉〈Raja Jalan〉〈Bidadari〉——**兩版都沒有登錄軌長**。", "src": "https://musicbrainz.org/ws/2/release?release-group=7fc685d9-6364-442e-a33e-d74ab8aa859e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"},
+  {"f": "藝人端點：AKA 名下 4 個 release-group 依年序是 1970《Do What You Like》、1971《Reflection》、**1972《Crazy Joe》**、2011《Hard Beat》——本碟是 1970 年代三張連續出版的最後一張，原盤編號 AKL-047 接在《Reflection》的 AKL - 029 之後。", "src": "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100"},
+  {"f": "印尼文維基記 AKA 以舞台特技出名：1973 年在雅加達的一場演出裡「Ucok melompat ke tembok dan naik ke genteng…tubuhnya digantung…dimasukkan ke peti mati」——主唱跳上牆、爬上屋瓦、被吊起、被放進棺材。iMusik 的條目把這段特技寫成是在演〈Crazy Joe〉這首歌時做的。", "src": "https://id.wikipedia.org/wiki/AKA_(grup_musik)"},
+  {"f": "iMusik 把《Crazy Joe》記為 1972 年 Indra 出版、編制與前兩張相同，並把 1973 年雅加達那場含棺材、刀劍與吊掛的演出綁在〈Crazy Joe〉這首歌上；同一條目記樂團 1967 年 5 月成立於泗水、團名來自 Ucok Harahap 家的 Kaliasin 藥局。", "src": "https://shardianto.wordpress.com/2020/07/05/aka/"}
+ ],
+ "hookCandidates": [
+  "1973 年雅加達的演出裡，主唱在唱這首標題曲時被吊起來、再放進棺材",
+  "九軌兩個英文曲名、七個印尼文曲名，原盤編號 AKL-047 接在前一張的 029 之後"
+ ],
+ "sound": "12 吋黑膠、9 軌，資料庫端兩版都沒有登錄軌長。〈Crazy Joe〉開場、〈Skip Away〉是另一首英文曲名，中間〈Kenangan Beku〉〈Batu Nisan〉〈Maafkanlah〉〈Kurban Cinta〉四軌是印尼語曲名，〈Bidadari〉收尾。泗水四人團 1972 年的硬搖滾，鍵盤與主唱是 Ucok Harahap。",
+ "keyTracks": ["Crazy Joe", "Skip Away", "Batu Nisan"],
+ "status": "full",
+ "yearVerified": {"year": 1972, "recorded": null, "note": "release-group first-release-date 1972 ＝ 原盤 release 的 date，印尼文維基與 iMusik 同記 1972；2015-04-10 是 Granadilla Music 的 CD 再發年，不進 year。錄音年未登錄。"},
+ "notes": "**覆核策展層：MBID、Indra／AKL-047、原盤 status 欄空、2015 XE CD 再發（GM 208C3、barcode 5291103811180）、CAA 200、身分四項交叉全部屬實，未擋下任何一處。**｜**第三種查法（裁定 254）跑完：無來源。** 六店 search（AKA Crazy Joe／Crazy Joe Ucok Harahap）回的全是 Surf Mesa、Lana Del Rey、Cheap Magic 這類不相干的單曲；song 級 search（AKA Kenangan Beku／AKA Batu Nisan／Ucok Harahap Crazy Joe／AKA Skip Away）皆無；店端無印尼 AKA 的藝人實體。回撈報告記「目錄裡找不到」。**這張沒有試聽來源。**｜**封面**：1972 原盤 cover-art-archive artwork false，**CAA release-group 200 靠的是 2015 CD 那一筆**（front true）。｜**軌長**：兩版都無軌長登錄，**正文不得寫任何時長**。｜**status 欄空**：策展層已提醒不得寫 Official，本層同意。｜**人名邊界**：同《Reflection》那卡——貝斯手兩處對不上、鼓手有更替，正文不列全編制。｜**舞台特技那段**：印尼文維基寫的是「1973 年雅加達一場演出」，把它綁到〈Crazy Joe〉這首歌上的只有 iMusik 一處——**正文可寫「1973 年雅加達演出的棺材特技」，但「是在唱〈Crazy Joe〉時做的」要標 uncertain 或不寫**。｜**性質**：原創錄音室專輯。｜**政治中立**：無查禁記錄，只寫發行事實。"
+},
+{
+ "key": "desc2:The Mercy's|The Mercy's",
+ "artist": "The Mercy's",
+ "album": "The Mercy's",
+ "facts": [
+  {"f": "release-group d345af59 的欄位：title「The Mercy's」（與團名同名）、first-release-date 1973、primary-type Album、secondary-types 空、artist-credit「The Mercy's」（實體 72ae23d8，Group、Indonesia、disambiguation「1970s Indonesian rock band」）。轄下**只有一筆 release** ab7a62e1：1973 ID Official、media.format 只寫 Vinyl（未登記尺寸）、11 軌、label-info 記 Purnama Records／PLL-1002、無 barcode；cover-art-archive front 與 back 各一張。", "src": "https://musicbrainz.org/ws/2/release?release-group=d345af59-558e-49d6-8a1c-f957fa4d7671&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"},
+  {"f": "十一軌逐軌：1〈Hidupku Sunyi〉3:31、2〈Tiada Lagi〉3:41、3〈Badju Baru〉2:15、4〈Untukmu〉4:00、5〈Love〉3:47、6〈Dipantai〉2:28、7〈Bebaskanlah〉2:59、8〈Untukku〉2:11、9〈Women〉2:53、10〈Kurela Dikau Kasih〉2:49、11〈Kisah Seorang Pramuria〉3:16。**十一軌裡兩軌英文曲名（〈Love〉〈Women〉）**，第 4 軌〈Untukmu〉（給你）與第 8 軌〈Untukku〉（給我）互為對題，全碟 33 分 50 秒。", "src": "https://musicbrainz.org/ws/2/release?release-group=d345af59-558e-49d6-8a1c-f957fa4d7671&fmt=json&inc=media+recordings&limit=100"},
+  {"f": "印尼文維基把這張建成《Volume 1》條目：「album perdana dari grup musik The Mercy's yang dirilis pada tahun 1972」，Purnama 出版、11 軌、33 分 32 秒、兩面各五與六軌；**多數曲目由 Charles Hutagalung 寫，Rinto Harahap 與 Reynold Panggabean 各寫一首**，開場曲〈Hidupku Sunyi〉由 Charles 與 Rinto 兩人合唱。編制：Erwin Harahap（吉他、主唱）、Rinto Harahap（貝斯、主唱）、Reynold Panggabean（鼓、主唱）、Charles Hutagalung（鍵盤、主唱）、Albert Sumlang（薩克斯風）。", "src": "https://id.wikipedia.org/wiki/Volume_1_(album_The_Mercy's)"},
+  {"f": "印尼文維基的樂團條目：1965 年 2 月 3 日在棉蘭（Medan）成立、初名 Watches、同年改名 The Mercy's（取自成員喜歡的 Mercedes-Benz）；1960 年代末長期在馬來西亞與新加坡駐唱，並有一段在越南演出的時期、Charles Hutagalung 在那裡寫了幾首歌；1972 年遷到雅加達後出首張專輯，「Album perdana ini di luar dugaan meledak dan langsung mengangkat nama The Mercy's」——首張出乎意料地大賣、立刻把團名推上印尼樂壇。", "src": "https://id.wikipedia.org/wiki/The_Mercy's"},
+  {"f": "馬來文維基同記首張《Hidupku Sunyi》1972 年經 Remaco／Purnama 發行，並寫「kumpulan ini dapat memecahkan rekod jualan dan pita kumpulan senior seperti Koes Plus dan Panbers」（打破了 Koes Plus 與 Panbers 這些前輩團的銷售紀錄）；成員名單裡貝斯手是 Rinto Harahap、鍵盤手 Charles Hutagalung 是 1960 年代中在馬來西亞時期接替 Iskandar 加入的。", "src": "https://ms.wikipedia.org/wiki/The_Mercys"}
+ ],
+ "hookCandidates": [
+  "資料庫叫它《The Mercy's》、維基叫它《Volume 1》——同一張碟兩個名字，連年份也各記 1973 與 1972",
+  "第 4 軌〈Untukmu〉給你、第 8 軌〈Untukku〉給我，一張碟裡互為對題"
+ ],
+ "sound": "黑膠 11 軌、33 分 50 秒，每軌 2 到 4 分鐘。〈Hidupku Sunyi〉由 Charles Hutagalung 與 Rinto Harahap 合唱開場，〈Tiada Lagi〉〈Untukmu〉是鍵盤帶頭的慢板情歌，〈Love〉〈Women〉兩軌英文曲名，Albert Sumlang 的薩克斯風是五人編制裡最特別的一件樂器，〈Kisah Seorang Pramuria〉收尾。",
+ "keyTracks": ["Hidupku Sunyi", "Tiada Lagi", "Kisah Seorang Pramuria"],
+ "status": "full",
+ "yearVerified": {"year": 1973, "recorded": null, "note": "⚠ 年份異議（第 311 條形狀）：release-group first-release-date 1973 ＝ 唯一 release 的 date，但**印尼文維基《Volume 1》條目與樂團條目、馬來文維基三處都記 1972 年發行**（樂團 1972 年遷雅加達後出首張）。資料庫端的 1973 沒有第二個獨立來源；本層**不改卡單**，year 維持 1973，但正文不得寫「1973 年發行」這種斷言，只能寫「資料庫端登記 1973、維基記 1972」或避開年份。錄音年未登錄。"},
+ "notes": "**覆核策展層：MBID、Purnama Records／PLL-1002、Vinyl 未記尺寸、11 軌、自我同名、CAA 200、身分交叉（Group／Indonesia／1970s Indonesian rock band）全部屬實。擋下一處：策展層把它當成 1973 年的碟收，本層查到三處維基一致記 1972，列為年份異議（見 yearVerified），不自行改卡單。**｜**盤名兩鏈（要寫給本機）**：MB RG title 是「The Mercy's」，印尼文維基建成「Volume 1」、馬來文維基叫它「Hidupku Sunyi」——**三個名字指同一張 11 軌的碟**（曲序與軌數與維基完全一致）。queryAlias 建議補「Volume 1」與「Hidupku Sunyi」。｜**第三種查法（裁定 254）跑完：無來源。** 六店 search 與 song 級 search（Hidupku Sunyi／Badju Baru／Kisah Seorang Pramuria／Dipantai）撈到的**全部是 1980 年後的精選與致敬輯**（《35 Tahun Album Special Platinum》891693780、《Tribute to the Legend Series》系列、《The Mercy's - Edisi Platinum》575824809），藝人目錄 575824810 亦無原盤。**這張沒有試聽來源。**｜**軌數只有一種形態**（11 軌），維基 33:32 與資料庫端 33:50 相差 18 秒，正文引總長以資料庫端為準或不引。｜**人名邊界**：五人編制與各曲作者出自維基專輯條目，可寫；**「打破 Koes Plus 與 Panbers 銷售紀錄」只有馬來文維基一處、無數字**，正文最多寫「首張出乎意料地大賣」（印尼文維基有）。馬來文維基的「六座 Golden Awards」「Band of the Year 1972–1973」**查無屆次與主辦單位，不採**。｜**性質**：原創錄音室專輯。｜**政治中立**：無查禁記錄，只寫發行事實；越南演出那段是 1960 年代末的駐唱，**不要鋪成戰爭敘事**。"
+},
+{
+ "key": "desc2:Koes Plus|Volume 8",
+ "artist": "Koes Plus",
+ "album": "Volume 8",
+ "facts": [
+  {"f": "release-group fb0e8f04 的欄位：title「Volume 8」、first-release-date 1973、primary-type Album、secondary-types 空、artist-credit「Koes Plus」（實體 a1ba8a6b，Group、Indonesia、begin 1969）。轄下**只有一筆 release** 7534b6e8：1973 ID Official、12 吋黑膠 12 軌、label-info 記 Remaco／RLL-187、無 barcode、無軌長；十二軌曲序：〈Diana〉〈Desember〉〈Mana Hatimu〉〈Buat Apa Susah〉〈Tak Mungkin Kembali〉〈Waktu〉〈Jangan Bimbang Ragu〉〈Nusantara〉〈Tiada Lain Dihatiku〉〈Percaya Padaku〉〈Semanis Rayuanmu〉〈Kolam Susu〉。", "src": "https://musicbrainz.org/ws/2/release?release-group=fb0e8f04-aaa1-402a-8fd5-b9982fcf880d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"},
+  {"f": "串流側（id 店 collectionId 1777356356，℗ 2024 Remaco）releaseDate 1973-07-01、12 軌與資料庫端曲序一一對應，逐軌長度：Diana 2:08／Desember 2:55／Mana Hatimu 3:00／Buat Apa Susah 2:58／Tak Mungkin Kembali 2:52／Waktu 2:32／Jangan Bimbang Ragu 2:00／Nusantara II 2:22／Tiada Lain Dihatiku 2:55／Percaya Padaku 2:13／Semanis Rayuanmu 2:06／Kolam Susu 2:21——**十二軌沒有一軌超過三分鐘，全碟 30 分 22 秒**；第 8 軌在串流側標成〈Nusantara II〉。", "src": "https://itunes.apple.com/lookup?id=1777356356&country=id&entity=song&limit=200"},
+  {"f": "印尼文維基：1973 年 7 月 1 日由 Remaco 發行，1973 年 1 月 1 日到 6 月 1 日錄音，全長 30:31，流行與搖滾；單曲有〈Buat Apa Susah〉〈Desember〉〈Jangan Bimbang Ragu〉〈Semanis Rayuanmu〉〈Nusantara〉〈Diana〉〈Kolam Susu〉；**〈Kolam Susu〉在 Rolling Stone Indonesia 2009 年 12 月號「150 Lagu Indonesia Terbaik」排第 31**；編制 Tonny Koeswoyo（鍵盤、吉他、主唱）、Yon Koeswoyo（吉他、主唱）、Yok Koeswoyo（貝斯、主唱）、Murry（鼓、主唱）。", "src": "https://id.wikipedia.org/wiki/Volume_8_(album_Koes_Plus)"},
+  {"f": "印尼文維基的樂團條目給了廠牌時間表：Melody（1969-03-01 到 1970-04-27，1 張）、Mesra（1970-04-27 到 1973-01-01，7 張）、**Remaco（1973-01-01 到 1977，39 張）**；《Volume 7》條目記它 1973 年 4 月 1 日發行、是「album terakhir Koes Plus bersama label Mesra」，《Volume 8》條目則把本碟記為與 Remaco 合作的第一張專輯。", "src": "https://id.wikipedia.org/wiki/Koes_Plus"},
+  {"f": "英文維基：Koeswoyo 兄弟 1965 年因演唱披頭四歌曲被最高作戰指揮部（KOTI）逮捕，1965 年 9 月 29 日獲釋——政變前一天；1969 年鼓手 Nomo 退出、外人 Murry 加入，樂團因此從 Koes Bersaudara 改名 Koes Plus（「Koeswoyo 家加一個外人」）。1973 到 1974 年是他們產量最高的時期，光 1974 年就有 23 張出版。", "src": "https://en.wikipedia.org/wiki/Koes_Plus"}
+ ],
+ "hookCandidates": [
+  "十二軌沒有一軌超過三分鐘，收尾的〈Kolam Susu〉後來被滾石印尼版排進史上第 31 首",
+  "第 8 軌〈Nusantara〉是一組編號歌的第二首——下下張的《Vol. 10》裡接著出第四首"
+ ],
+ "sound": "12 吋黑膠、12 軌、30 分 22 秒，最長的〈Mana Hatimu〉剛好 3 分鐘、最短的〈Jangan Bimbang Ragu〉2 分整。Koeswoyo 三兄弟加 Murry 的四人流行搖滾，〈Diana〉〈Desember〉開場，〈Buat Apa Susah〉〈Semanis Rayuanmu〉是中段的流行單曲，〈Nusantara〉（串流側標 II）是編號系列的一首，〈Kolam Susu〉2 分 21 秒收尾。",
+ "keyTracks": ["Kolam Susu", "Buat Apa Susah", "Diana"],
+ "status": "full",
+ "yearVerified": {"year": 1973, "recorded": 1973, "note": "release-group first-release-date 1973 ＝ 唯一 release 的 date；印尼文維基記 1973-07-01 發行、1973-01-01 至 06-01 錄音；串流側 releaseDate 同為 1973-07-01。三邊一致。"},
+ "notes": "**覆核策展層：MBID、Remaco／RLL-187、12 吋 12 軌、CAA 404、store 兩個 Koes Plus 實體（1770772377 才是原盤系列）全部屬實，未擋下任何一處。**｜**串流採信 1777356356**（id 店，藝人實體 1770772377）：12 軌對 12 軌、曲序一一對應（第 8 軌資料庫端〈Nusantara〉＝串流〈Nusantara II〉，其餘曲名逐字相同），releaseDate 1973-07-01 與維基發行日同日，℗ Remaco 與 label-info 同一家。探測層本來就判有試聽，本層確認。｜**封面待補**：唯一 release 的 cover-art-archive artwork false、count 0，CAA 404 是真的沒圖；**串流側 1777356356 有 artworkUrl（℗ 2024 Remaco 的數位版封面）**，本機補圖時可從那裡看是不是原盤圖（只寫觀察）。｜**「與 Remaco 的第一張」要退一層**（廠牌第一張規則）：《Volume 8》條目寫它是 Remaco 首張，《Volume 7》條目寫 V7 是 Mesra 最後一張、發行 1973-04-01，**但樂團條目的廠牌表把 Remaco 起點寫成 1973-01-01，三處自相矛盾**；Apple 目錄裡 V6（1973-02-01）與 V7（1973-04-01）也在 V8 之前。正文最多寫「維基把它記為 Koes Plus 在 Remaco 的第一張」，**不得寫成確定事實**。｜**軌數只有一種形態**（12 軌）；軌長只有串流側有，資料庫端無，正文引時長以串流側為準。｜**Nusantara 編號系列**：英文維基作品表有 1971《Nusantara I》，本碟第 8 軌串流側標 II，《Vol. 10》第 10 軌是〈Nusantara IV〉——**III 在哪一張本層未查到，正文不要寫「系列共幾首」**。｜**人名邊界**：四人編制出自維基專輯條目，可寫。｜**1965 年被捕那段是樂團前身 Koes Bersaudara 的事**，與本碟隔八年，**正文若引只能一句帶過、不得鋪成敘事**，這是這條體制線唯一能寫的產製條件。｜**性質**：原創錄音室專輯。"
+}
+]

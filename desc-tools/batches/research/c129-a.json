@@ -538,5 +538,293 @@
   "status": "partial",
   "yearVerified": "一致，1975。release-group first-release-date 1975、唯一 release 1975、英文與緬文維基皆記 1975 出道，四邊同年。",
   "notes": "**覆核策展層：MB 欄位逐項相符（1975 MM 15 軌 format 欄空、label-info 空），未擋下欄位。** ⚠ **補策展層完全沒看到的一層**：MB 曲目端 **第 4、11、15 軌的 artist-credit 是 မွှေး 與 မေသော်、第 7 軌是對唱**——正文不得寫「十五軌全由他演唱」，也不得把這張寫成純個人盤（這是 c-124《Persian Music Hits 8》那個坑的弱化版）。｜**盤名兩種拼法**：MB RG 寫 ကျနော်ပါ、緬文維基寫 ကျွန်တော်ပါ（多一個 ွ），兩者是同一個詞的口語與正寫，卡片照 MB。｜**串流：無來源。** 三種查法：search「Hlwan Moe」六店（策展層那次 us 連線錯誤本層重跑成功，71 筆）；藝人目錄 lookup（artistId 1487591970）45 張，**全部是 2022–2025 年 Billionaire Minds Group 的重發與精選、以及 1994／2000／2011 三張別的碟，沒有 1975 年這張**；回撈報告「目錄裡找不到」。**無固定試聽來源。**｜**封面**：CAA 200、1 張圖（策展層實測）。｜**掛名與轉寫**：正文用「Hlwan Moe」；出資者 မဘေဘီ 只在緬文維基出現，**正文不寫名字**，寫成「一位在澳洲大使館工作的出資者」；The King 樂團可寫。｜**status partial 的理由**：MB 端無長度無載體，外部只有維基一段出資記述。｜⚠ **反向禁令**：他 2001 年車禍辭世與本張無關，整條不寫。｜**反同構**：本張切「十萬緬元出資、半張合輯」；同批同年的 Sai Htee Saing 那張切三軌別人唱與曲名夾英文字，兩張不得共用「1975 年的緬甸原盤」骨架。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Big Bag|AD 3000",
+  "artist": "Big Bag",
+  "album": "AD 3000",
+  "facts": [
+   {
+    "f": "release-group eb971df7 的欄位：title「AD 3000」、artist-credit「Big Bag」（實體 03f325d4，Group／MM／2001，disambiguation「Burmese punk band」）、first-release-date 2007、Album、secondary-types 空；轄下唯一 release：2007 MM Official CD 16 軌，label-info 記緬文廠牌名「ချိုကြည်သာ」、無目錄號、無 barcode。",
+    "src": "https://musicbrainz.org/ws/2/release-group/eb971df7-3de4-4c6b-b21a-ce1e5dcc86c9?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "16 軌逐軌（串流側 collectionId 1585607378 同數同序、長度逐軌相差 ≤1 秒，店端曲名多為英譯）：1〈AD 3000〉4:21、2〈မဆိုင်သလိုဘဲ〉3:01、3〈တည်မြဲနေသော〉3:37、4〈စိတ်ပျက်စရာကြီး〉2:25、5〈မိန်းကလေး〉3:34、6〈သွားရည်စာ〉3:26、7〈အရင်အတိုင်းရန်ကုန်〉2:27（店端 Yangon as Before）、8〈ကိုရီးယား〉2:13（店端 Korea）、9〈Unfreeze Me〉2:26、10〈နင်နဲ့ငါအကြောင်း〉2:32、11〈ပျော်သည်〉1:28、12〈အဝိဇ္ဇာ〉3:36、13〈သဘောပဲ〉2:06、14〈တွယ်ရာမဲ့သော〉3:00、15〈မဆိုင်သလိုဘဲ (Rough Take2)〉3:37、16〈One Minute In D Minor〉1:02。店端盤名「A.D 3000」、年份 2007-02-01、℗ 2007 Bipolarbear、歸 Rock 類。",
+    "src": "https://itunes.apple.com/lookup?id=1585607378&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基（Kyar Pauk 條目）記：「He founded punk rock band Big Bag in the summer of 2001」，成員 Kyar Pauk（主唱兼主奏吉他）、Ye Zaw Myo、Mung Boih、Phyo Min Naing；Kyar Pauk 是歌手 Ringo 的兒子；該條目的專輯表把《Villain》記為 2005、《AD 3000》記為 2008、其後是《Telepunk》2009、《One Eleven》2011。",
+    "src": "https://en.wikipedia.org/wiki/Kyar_Pauk"
+   },
+   {
+    "f": "MB 端這支團名下 5 張 Album ＋ 2 張 Single；串流側藝人目錄（artistId 1022215749）另有《Villain》（13 軌、2004-08-12）、《Bedtime Songs - EP》（4 軌、2007-12-07、℗ Bipolarbear）、《One Eleven》（14 軌、2011-05-20）與 2020 年的單曲〈Yangon as Before, Pt. 1.5〉——後者曲名接的就是本張第 7 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1022215749&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十六軌裡塞了一軌 Rough Take 2 與一段一分零二秒的〈One Minute In D Minor〉，第 11 軌只有一分二十八秒",
+   "第 7 軌〈Yangon as Before〉十三年後長出一首〈Pt. 1.5〉的續集單曲"
+  ],
+  "sound": "十六軌、資料庫端掛名為緬甸龐克團的專輯：曲長從一分零二秒到四分二十一秒，開場同名曲〈AD 3000〉四分二十一秒最長，多數落在兩到三分半，第 15 軌是第 2 軌的 Rough Take 2、末軌是一分零二秒的 D 小調小品；串流側歸 Rock。",
+  "keyTracks": [
+   "AD 3000",
+   "အရင်အတိုင်းရန်ကုန်",
+   "Unfreeze Me"
+  ],
+  "status": "full",
+  "yearVerified": "取 **2007**：release-group first-release-date 2007、唯一 release 2007、串流側 releaseDate 2007-02-01 且 ℗ 2007，三邊同年；**英文維基寫 2008，標 uncertain 但不採**（維基那張表連《Villain》都寫成 2005，與 MB 及串流側的 2004 不合，是整張表偏一年）。",
+  "notes": "**覆核策展層：MB 欄位逐項相符（2007 MM CD 16 軌、label-info ချိုကြည်သာ），未擋下欄位。** 補一處：**串流側的 ℗ 是 Bipolarbear，與 MB 的 ချိုကြည်သာ 不同**——依第 304 條「資料庫登記與實體／串流印的可以是兩家」，兩家都寫進 notes、正文只寫 MB 那家或都不寫，不得把其中一家當訂正。｜**串流採信 1585607378**（第 254 條第三種查法 `lookup?id=1585607378&country=us&entity=song` 實跑；回撈報告的候選 th 店 1585607378 本層改在 us 店直查同 id 成功）：16 軌同數同序，**長度逐軌相差 ≤1 秒**（4:21／3:01／3:37／2:25／3:34／3:26／2:27／2:13／2:26／2:32／1:28／3:36／2:06／3:01／3:37／1:02），店端盤名「A.D 3000」多一個點，曲名多為英譯（Ever Lasting Smile／Disappointment／Girl／Korea／Yangon as Before…）。**有固定試聽來源。**｜**掛名**：短掛名撞名極多（策展層已記 search 回 199 筆嘻哈單曲），店端本團的 artistId 是 **1022215749**，本機端比對要用 id 不用字串。｜**人名邊界**：Kyar Pauk 與三位團員名出自英文維基、無 MB 關係登錄——**正文不得寫團員本名**，Ringo 之子一事也不寫；要講編制只能寫「四人龐克團」。｜**反同構（本批緬甸線）**：本張切「Rough Take 與一分鐘小品、續集單曲」。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Various Artists|Laos: Lam Saravane / Musique pour le khène",
+  "artist": "Various Artists",
+  "album": "Laos: Lam Saravane / Musique pour le khène",
+  "facts": [
+   {
+    "f": "release-group 2a406a64 的欄位：title「Laos: Lam Saravane / Musique pour le khène」、artist-credit Various Artists、first-release-date 1989-01、primary-type Album、secondary-types 空，資料庫端掛 field recording／non-music 標籤；轄下唯一 release：1989-01 FR Official，Ocora C 559 058，CD 6 軌，barcode 3149025037589。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "6 軌逐軌（串流側 collectionId 466420729，gb 店直查同數同序，長度逐軌比 MB 長 7–8 秒）：1〈Lam Saravane〉45:22，演出者 Nang Soubane Vongath、Sengphet Souryavongxay（歌）與 Nouthong Phimvilayphone（khène）；2〈Musique pour le khène: Nam phat khay〉4:06、3〈Khangdeuk〉4:24、4〈Khène〉4:42、5〈Mengphou Tom Dokmay〉6:22、6〈Pao Sat〉4:24 五軌全是 Nouthong Phimvilayphone 的 khène 獨奏。全長約 70 分鐘，第一軌一首佔了三分之二。",
+    "src": "https://itunes.apple.com/lookup?id=466420729&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "法國國家圖書館目錄記：「Laos [Enregistrement sonore] : Lam Saravane : musique pour le khène」，演出者 Nang Soubane Vongath（chant）、Sengphet Souryavongxay（chant）、Nouthong Phimvilayphone，Paris: Radio-France / Arles: Harmonia mundi France, 1989，Ocora C559058 (HM83)，全長 70 分 5 秒，Jacques Brunet 為 scientific editor；Lam Saravane 一軌 45:22。",
+    "src": "https://catalogue.bnf.fr/ark:/12148/cb381700065"
+   },
+   {
+    "f": "Radio France 出版頁記本輯的原始發行是 1978 年的雙 LP（ref. 558537-38），1989 年以 C559058 出 CD，2002-06-03 再以 C 582058 重發（Harmonia Mundi 發行，70'05）；頁面把內容形容為「the vocal art of lam (the dominant form in Laos) and the khen mouth organ (the national instrument), performed here by exceptional musicians」。",
+    "src": "https://www.radiofrance.com/les-editions/musique/laos-lam-saravane-musique-pour-le-khene"
+   }
+  ],
+  "hookCandidates": [
+   "一首〈Lam Saravane〉唱了四十五分二十二秒，佔掉整張 CD 的三分之二",
+   "1978 年先以雙 LP 出版、1989 年才併成一張 CD——MB 上登記的 1989 其實是 CD 版的年份"
+  ],
+  "sound": "六軌、七十分鐘的 Ocora 盤：第一軌四十五分二十二秒的 lam saravane 是兩位歌者與一把 khène（笙）的對唱長篇，後五軌是同一位 khène 演奏者的獨奏、每首四到六分鐘。資料庫端掛 field recording 標籤，串流側歸 Worldwide。",
+  "keyTracks": [
+   "Lam Saravane",
+   "Musique pour le khène: Mengphou Tom Dokmay",
+   "Musique pour le khène: Khène"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **卡片 1989 是 CD 版年份，原始發行是 1978 年雙 LP**（Radio France 出版頁：ref. 558537-38）。release-group first-release-date 1989-01 只登記了 CD 那筆，MB 上沒有 1978 雙 LP 的 release。依「year 取原盤年」本張應為 **1978**，但 MB 端釘不住 1978 那筆（無 release 建檔），**建議主線裁定：year 改 1978 並在 mbNote 註明來源是 Radio France 出版頁；若堅持只取 MB 登記值則維持 1989 並在正文寫明是 CD 版年**。錄音年兩邊都沒有登記（搜尋摘要提到 1977 但沒有可讀到的頁面背書），不得補。",
+  "notes": "**覆核策展層：MB 欄位逐項相符（1989-01 FR Ocora C 559 058 CD 6 軌 barcode），未擋下欄位。** ⚠ **年份擋一處**：策展層寫「無原盤年與合輯年的落差」——**有落差**：本輯 1978 年就以雙 LP 出版（Radio France 出版頁），1989 是 CD 版，見 yearVerified。｜**串流採信 466420729**（第 254 條第三種查法：us 店 lookup 只回集合不回曲目，改 `lookup?id=466420729&country=gb&entity=song` 回 6 軌）：6 軌同數同序、演出者逐軌相符，**但長度逐軌比 MB 長 7–8 秒**（45:30 對 45:22、4:13 對 4:06、4:32 對 4:24、4:50 對 4:42、6:30 對 6:22、4:25 對 4:24）——偏差量一致，是切軌位置不同的同一份母帶，不是另一次錄音（第 174 條的判準是「每個樂章差三到四分鐘」那種量級）；店端盤名帶系列前綴「Collection Ocora Radio France : Laos (Lam saravane, musique pour le khène)」、℗ 1989 Ocora Radio-France。**有固定試聽來源。** 店端第 1 軌把歌者寫成 Soubane Voleath（MB 寫 Nang Soubane Vongath），正文照 MB／BnF。｜⚠ **掛名是 Various Artists**：實際是三位演出者的錄音集，**不得寫成任何一位的個人專輯**；但第 2–6 軌全是 Nouthong Phimvilayphone 獨奏，他就是本批另收《Visions of the Orient》那位，正文可以點出這個連結。｜**人名邊界**：三位演出者與 Jacques Brunet（科學編輯）都有 BnF 目錄背書，可寫。｜**反同構（同批寮國七張）**：本張切「一軌四十五分、1978 雙 LP 併 CD」。｜**國別邊界**：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52，本張只寫寮國，不得與池中泰國 molam 卡混談。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Various Artists|Laos - L'art Du Khène",
+  "artist": "Various Artists",
+  "album": "Laos - L'art Du Khène",
+  "facts": [
+   {
+    "f": "release-group 380493d0 的欄位：title「Laos - L'art Du Khène」、Various Artists、first-release-date 1972、Album＋Compilation；轄下唯一 release：1972 FR Official，Galloway Records GB 600 545 B，media.format 記「Vinyl」（未記吋數）8 軌，barcode 欄空。",
+    "src": "https://musicbrainz.org/ws/2/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "8 軌逐軌：1 Phomma Syvath〈Loy Khoy Hoy and Song Khoy Noy〉8:22、2 Phet Sananikhone〈Lam Savannakhet and Nang Thiem〉5:25、3 Phomma Syvath & Phet Sananikhone〈Lao Long Nong〉2:13、4 Phet Sananikhone〈Improvisations on Lao Themes〉6:46、5 Thao Salilat〈Phi Tom Dork Lam Long and Lam Thoy〉7:34、6 Thao Salilat〈Phi Thay Noy and Phi Thay Nay〉5:26、7 Thao Salilat〈Noy VI Koy Liap Hat and Pao Thang Titsut〉5:36、8 Thao Salilat〈Pao Lam Thang Soy〉3:42。B 面四軌全是 Thao Salilat。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=380493d0-45bc-4284-a710-fb71f2ba9f2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "盤面解說（MusicRepublic 轉錄）記本輯由音樂學者 Jacques Brunet 於 1972 年錄製，屬 Galloway 的「Collection Musique du Monde 26」；三位演奏者各持不同尺寸的 khène：Phet Sananikhone 吹長管低音、Phomma Syvath 吹中管中音、Thao Salilat 吹短管高音；解說稱「Sananikhone was probably the leading khene player at the time」。",
+    "src": "https://music-republic-world-traditional.blogspot.com/2022/04/laos-lart-du-khene-collection-musique.html"
+   },
+   {
+    "f": "MB 端以「Laos」為題的 release-group 全域只有 38 筆，本張 1972 是其中年代最早的一筆建檔；同年同區另一張《Laos - Musique du nord》在 MB 上 primary-type 欄為空。Galloway 這張的三位演奏者在 MB 上都沒有名下帶 release-group 的獨立藝人實體（Phet Sananikhone 有實體但 0 個 RG）。",
+    "src": "https://musicbrainz.org/ws/2/artist?query=artist%3A%22Phet%20Sananikhone%22&fmt=json&limit=5"
+   }
+  ],
+  "hookCandidates": [
+   "三位演奏者三種尺寸的笙：長管低音、中管中音、短管高音，一面一種音域",
+   "MB 上寮國最早的一筆建檔就是這張 1972 年的法國黑膠，比 Ocora 那張 CD 早了十七年"
+  ],
+  "sound": "八軌、全器樂的 khène（寮國笙）盤：A 面四軌是長管與中管的 Phet Sananikhone 與 Phomma Syvath（含一軌二重奏與一軌即興），B 面四軌是短管高音的 Thao Salilat；最長是開場〈Loy Khoy Hoy and Song Khoy Noy〉八分二十二秒，最短是二重奏〈Lao Long Nong〉兩分十三秒。",
+  "keyTracks": [
+   "Loy Khoy Hoy and Song Khoy Noy",
+   "Improvisations on Lao Themes",
+   "Phi Tom Dork Lam Long and Lam Thoy"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。release-group first-release-date 1972、唯一 release 1972、盤面解說記 1972 年錄製三邊相同——本張是少數錄音年與發行年同年的寮國盤。",
+  "notes": "**覆核策展層：MB 欄位逐項相符（1972 FR Galloway GB 600 545 B Vinyl 8 軌），未擋下欄位。** 補正一處：策展層 exceptionReason 寫「原始形態是田野與電台母帶」——盤面解說只說 Jacques Brunet 1972 年錄製、沒有說是田野或電台，**正文不要寫「電台母帶」**，寫「Brunet 1972 年錄製」就好。｜**§5.6 舉證覆核**：兩個 MB 網址逐格對得上（1972／Galloway／GB 600 545 B／FR／Vinyl／8 軌），**舉證站得住**；「MB 端沒有任何一位演出者名下有對應的個人原盤」本層實查：Phet Sananikhone 有實體、0 個 RG，另兩位查無實體，**成立**。｜**串流：無來源。** 三種查法：search「L'art du khene」us／gb 0 筆；沒有可查的藝人目錄；回撈候選 1608193788 是 1973 年的拉丁美洲舞曲盤，駁回。**無固定試聽來源。**｜**封面**：CAA 首次 500、重試後 200、1 張圖（策展層實測，本層未再探）。｜**載體**：release 只記 Vinyl，正文寫黑膠、不寫吋數。｜**人名邊界**：三位演奏者與 Jacques Brunet 有盤面解說背書，可寫；「當時最頂尖的 khène 演奏者」是解說的說法，引用要註明出處。｜**反同構**：本張切「三種尺寸的笙、MB 上寮國最早建檔」。｜**國別邊界**：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52，本張只寫寮國，不得與池中泰國 molam 卡混談。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Molam Lao|Music from Southern Laos",
+  "artist": "Molam Lao",
+  "album": "Music from Southern Laos",
+  "facts": [
+   {
+    "f": "release-group fc12c43f 的欄位：title「Music from Southern Laos」、artist-credit「Molam Lao」（實體 99bae4c6，Group／LA）、first-release-date 1994-01-01、Album、secondary-types 空；轄下兩筆 release：1994 GB Official Nimbus Records NI 5401 CD 11 軌（barcode 083603540128）、1994-01-01 XW 數位 11 軌（Nimbus，barcode 190374078368）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/fc12c43f-e204-474a-a212-b4fe2f61215f?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "11 軌逐軌（串流側 collectionId 1086413188：trackCount 欄記 12、攤開的曲目列只有 11，長度逐軌相差 ≤1 秒）：1〈Pheng Sat Niao〉4:06、2〈Lam Saravane〉5:42、3〈Pheng Borane〉3:45、4〈Lam Khon Savan〉4:58、5〈Kao Nok〉5:37、6〈Lam Tangvay〉4:52、7〈Pheng Sat Soy〉4:26、8〈Lam Phuthay〉6:28、9〈Pheng Lom Phat Phay〉6:06、10〈Lam Mahaxay〉5:51、11〈Lam Khone〉9:41。℗ 1994 Wyastone Estate Limited（Nimbus 的母公司）。",
+    "src": "https://itunes.apple.com/lookup?id=1086413188&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "曲名裡的 lam 是寮國南部的歌唱形式、以地名分支（Saravane、Khon Savan、Tangvay、Phuthay、Mahaxay、Khone），pheng 是器樂曲；本張是 MB 上少數以 molam 樂團（不是 Various Artists）為掛名的寮國盤，這支團名下只有這一個 release-group。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fc12c43f-e204-474a-a212-b4fe2f61215f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Ocora 那張 1989 年《Laos: Lam Saravane》的第一軌也叫〈Lam Saravane〉、長四十五分鐘，本張第 2 軌同名曲只有五分四十二秒——同一個曲類在兩張盤上長度差八倍，可見 lam 的長度取決於演出場合而不是曲名。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a?fmt=json&inc=artist-credits+genres"
+   }
+  ],
+  "hookCandidates": [
+   "末軌〈Lam Khone〉九分四十一秒，比全碟平均長了一倍",
+   "串流側的 trackCount 寫 12、攤開只有 11 軌，與 MB 的 11 軌才對得上"
+  ],
+  "sound": "十一軌、以樂團為掛名的寮國南部 molam 盤：六軌 lam（歌唱）與五軌 pheng（器樂）交替，曲長三分四十五秒到九分四十一秒，末軌〈Lam Khone〉最長；串流側歸 Worldwide。與池中泰國 molam 卡不是同一批錄音。",
+  "keyTracks": [
+   "Lam Khone",
+   "Lam Saravane",
+   "Lam Phuthay"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1994。release-group first-release-date 1994-01-01、CD release 1994、數位 release 1994-01-01、串流側 1994-01-01 全部同年；錄音年 MB 端未登記，不得補。",
+  "notes": "**覆核策展層：MB 兩筆 release 逐欄相符（GB CD NI 5401／XW 數位），未擋下欄位。**｜**串流採信 1086413188**（第 254 條第三種查法 `lookup?id=1086413188&country=us&entity=song` 實跑）：**trackCount 欄記 12、攤開只有 11 軌**（第 175 條的形狀，以攤開的曲目列為準），11 軌與 MB 同數同序、長度逐軌相差 ≤1 秒（4:06／5:42／3:45／4:59／5:37／4:52／4:26／6:29／6:06／5:52／9:42），℗ 1994 Wyastone Estate Limited；店端第 4 軌拼成 Lam Khonsavane、MB 拼 Lam Khon Savan，正文照 MB。**有固定試聽來源。**｜**status partial 的理由**：Nimbus／Wyastone 的解說頁本層 403（wyastone.co.uk、europadisc、clicmusique 三處都 403），搜尋摘要提到「樂手 1976 年移居法國」與五位歌者名字，**但沒有一個可開啟的頁面背書，整條不寫**；正文素材只有曲目與曲類名。｜**掛名**：「Molam Lao」同時是團名與曲種名，本機端比對一定要帶盤名；店端 artistId 220034562。｜**人名邊界**：沒有可背書的樂手名，不寫編制。｜**反同構**：本張切「lam 與 pheng 交替、同名曲長度差八倍」。｜**國別邊界**：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52，本張只寫寮國，不得與池中泰國 molam 卡混談。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Nouthong Phimvilayphone|Visions of the Orient: Music from Laos",
+  "artist": "Nouthong Phimvilayphone",
+  "album": "Visions of the Orient: Music from Laos",
+  "facts": [
+   {
+    "f": "release-group fd323fc6 的欄位：title「Visions of the Orient: Music from Laos」、artist-credit「Nouthong Phimvilayphone」（實體 1006498b，Person／LA，名下只有這 1 個 RG）、first-release-date 1995、Album、secondary-types 空；轄下唯一 release：1995 XW Official，Amiata Records，Digital Media 12 軌，barcode 3661585079170，無目錄號——MB 端沒有任何實體盤的建檔。",
+    "src": "https://musicbrainz.org/ws/2/release-group/fd323fc6-a5d6-40ca-b64d-2b49fec81022?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "12 軌逐軌（串流側 collectionId 156724493 同數同序、長度逐軌相同，店端盤名是單數的「Vision of the Orient - Music from Laos」）：1〈Khène〉6:03、2〈Lam Khan〉5:57、3〈Lam Mahaxai〉5:57、4〈Lok Baham〉4:36、5〈Kachaphi〉3:09、6〈Lam Phoeng〉4:29（店端註 instrumental）、7〈Lam Khonesavane〉4:35（店端註 alternating song）、8〈Putainoi〉4:35、9〈Lam Tanvai〉4:02（instrumental）、10〈Pheng Bo Lan〉4:02（solo）、11〈Lam Khan〉7:38、12〈Saravane〉4:41（traditional dance）；℗ 1995 Amiata Records。",
+    "src": "https://itunes.apple.com/lookup?id=156724493&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "廠牌頁記：「Nouthong Phimvilayphone is a master of the Khène (hand-held mouth organ) who has spent his life learning the various regional styles of Laotian music」，他專長為 lam 伴奏、也以 khène 與笛獨奏；廠牌的實體版目錄號 ARNR 0195、jewelbox、12 軌約 58 分鐘，並稱寮國傳統音樂的旋律多為複音、在東南亞獨樹一格。",
+    "src": "https://amiatarecords.com/nouthong-phimvilayphone"
+   },
+   {
+    "f": "同一位就是 Ocora 1989 年《Laos: Lam Saravane / Musique pour le khène》裡吹 khène 的那位（該盤第 2–6 軌全是他的獨奏、第 1 軌為兩位歌者伴奏），本張是他在 MB 上唯一以個人掛名的碟；同一個曲名〈Lam Khan〉在本張出現兩次（第 2 軌 5:57、第 11 軌 7:38）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a?fmt=json&inc=artist-credits+genres"
+   }
+  ],
+  "hookCandidates": [
+   "MB 上寫複數 Visions、串流上寫單數 Vision，同一張碟差一個 s",
+   "六年前在 Ocora 那張替人伴奏的 khène 手，這次十二軌全掛自己的名字"
+  ],
+  "sound": "十二軌、五十八分鐘的 khène 手個人盤：獨奏、器樂曲與 lam 對唱伴奏交替，第 5 軌〈Kachaphi〉三分零九秒是琵琶類樂器 kachapi 的曲目，最長是第 11 軌〈Lam Khan〉七分三十八秒；店端曲名括號標了 instrumental／solo／alternating song／traditional dance 四種形態。串流側歸 Worldwide。",
+  "keyTracks": [
+   "Khène",
+   "Lam Khan",
+   "Saravane"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date 1995、唯一（數位）release 1995、串流側 releaseDate 1995-01-01、廠牌實體版 ARNR 0195 亦為 1995 系列編號，四邊同年；錄音年未登記，不得補。",
+  "notes": "**覆核策展層：MB 欄位逐項相符，未擋下欄位。** 補一處：策展層寫「MB 端沒有任何實體盤建檔，行文不得寫成 CD」——**廠牌頁記有實體版 ARNR 0195 jewelbox**，所以實體 CD 存在、只是 MB 沒建檔；正文可以寫「Amiata 的 CD」但**不得引 MB 的 barcode 去配 CD**（那是數位那筆的），日期、廠牌、載體要出自同一筆（第 262 條）。｜**串流採信 156724493**（第 254 條第三種查法 `lookup?id=156724493&country=us&entity=song` 實跑；回撈報告給的是 th 店同 id）：12 軌同數同序，**長度逐軌一秒不差**（6:03／5:57／5:57／4:36／3:09／4:29／4:35／4:35／4:02／4:02／7:38／4:41），℗ 1995 Amiata Records。店端盤名單數 Vision、連字號取代冒號，本機端比對要放寬（裁定 260）。**有固定試聽來源。**｜**掛名與轉寫**：MB 只有這一種拉丁轉寫，照用。｜**人名邊界**：沒有其他樂手名來源，不寫編制；「大師」是廠牌頁自述，引用要註明。｜**反同構**：本張切「Ocora 伴奏者升格個人盤、單複數差一個 s」；《Lam Saravane》那張切一軌四十五分。｜**國別邊界**：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52，本張只寫寮國，不得與池中泰國 molam 卡混談。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Boua Xou Mua|The Music of the Hmong People of Laos",
+  "artist": "Boua Xou Mua",
+  "album": "The Music of the Hmong People of Laos",
+  "facts": [
+   {
+    "f": "release-group 222fbd16 的欄位：title「The Music of the Hmong People of Laos」、artist-credit「Boua Xou Mua」（實體 83fffd77，名下只有這 1 個 RG）、first-release-date 1995、Album、secondary-types 空；轄下唯一 release：1995 US Official，Arhoolie CD 446，CD 12 軌，Jewel Case，barcode 096297044622。",
+    "src": "https://musicbrainz.org/ws/2/release-group/222fbd16-f812-425f-aa94-6db4dd5acb63?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "12 軌逐軌（串流側 collectionId 1508954924 同數同序、長度逐軌相同，店端曲名附英譯）：1〈Qeej Kawm Ntawv〉9:40（Gaeng School Song）、2〈Lug Txaj Sib Dleev〉9:48（Love Song）、3〈Lug Txaj Ua Nyaab〉6:57（The Way of Becoming a Wife，courtship song）、4〈Tsaaj Ntsaws〉2:03（fipple flute）、5〈Tsaaj Nplaim〉1:11（free reed flute）、6〈Tsnuab Nplooj〉1:39（Leaf）、7〈Ncaas〉2:54（Jew's harp）、8〈Zaaj Tshoob - Ceeb Toom Nam Txiv〉4:10（Announcement to the Parents of the Groom）、9〈Zaaj Tshoob - Qeb Tsoog Tuam Ntsaa〉6:40（…of the Bride）、10〈Qeej Nqug Rooj〉7:18（Pull the Table，Gaeng Evening Song）、11〈Qeej Taag Mo〉5:47（Gaeng Midnight Song）、12〈Tsaaj Ntsaws - Tsi Teb Tsaws Chaw〉1:38（Refugee Song）；℗ 1995 Smithsonian Folkways Recordings. Originally released on Arhoolie Records。",
+    "src": "https://itunes.apple.com/lookup?id=1508954924&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基記 Bua Xou Mua 1915 年生於寮國 Ban Whoi Na，1978 年移居美國、定居奧勒岡州波特蘭，1985 年獲 National Heritage Fellowship（「the United States government's highest honor in the folk and traditional arts」）；1991 年在 Dallas Folk Festival 演出時由 Documentary Arts 錄音，曲目「traditional songs that commemorated New Year's celebrations, weddings, and funerals」，1995 年由 Arhoolie 以《The Music of the Hmong People of Laos》發行；主要樂器是 qeej（gaeng，苗族竹製笙），另以人聲吟誦口傳史詩。",
+    "src": "https://en.wikipedia.org/wiki/Bua_Xou_Mua"
+   },
+   {
+    "f": "曲目依店端英譯分成四類：qeej（笙）曲三軌（第 1、10、11 軌，合計二十二分鐘）、lug txaj 歌唱兩軌、zaaj tshoob 婚禮宣告兩軌、以及五軌一到三分鐘的短笛、葉片與口簧琴小品；末軌〈Tsi Teb Tsaws Chaw〉英譯是 Refugee Song，一分三十八秒。",
+    "src": "https://itunes.apple.com/lookup?id=1508954924&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1991 年在達拉斯的民俗節上錄的，錄音者是替美國民俗檔案工作的機構，四年後才由 Arhoolie 出成 CD",
+   "十二軌裡有五軌不到三分鐘：一片樹葉、一把口簧琴、兩支笛子輪流上場"
+  ],
+  "sound": "十二軌、單一演奏者的苗族音樂盤：三軌 qeej 笙曲各五到十分鐘撐起主體，兩軌長篇歌唱（九分四十八秒的〈Lug Txaj Sib Dleev〉最長），兩軌婚禮宣告，其餘五軌是一到三分鐘的樹葉、口簧琴與笛子小品。串流側歸 Asia 類，℗ 已轉到 Smithsonian Folkways 名下。",
+  "keyTracks": [
+   "Qeej Kawm Ntawv",
+   "Lug Txaj Sib Dleev",
+   "Tsaaj Ntsaws - Tsi Teb Tsaws Chaw"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date 1995、唯一 release 1995、串流側 1995-01-01、英文維基 1995 四邊同年；**錄音年是 1991（Dallas Folk Festival，英文維基）**，行文可寫「1991 年錄、1995 年發行」。",
+  "notes": "**覆核策展層：MB 欄位逐項相符（1995 US Arhoolie CD 446 12 軌 barcode），未擋下欄位。** 補正兩處：(1) 策展層寫「MB 端沒有登記錄音年」——MB 沒有，**但英文維基有：1991 年 Dallas Folk Festival**，見 yearVerified；(2) 策展層 why 寫「在美國錄製與發行……補的是苗族社群移居美國那一條通路」——事實成立（1978 移美、1991 達拉斯錄音），但依本批行文界線**移居只當發行事實寫，不鋪成敘事**；末軌英譯 Refugee Song 也只當曲名寫。｜**串流採信 1508954924**（第 254 條第三種查法 `lookup?id=1508954924&country=us&entity=song` 實跑）：12 軌同數同序，**長度逐軌一秒不差**（9:40／9:48／6:57／2:03／1:11／1:39／2:54／4:10／6:40／7:18／5:47／1:38），店端曲名多了英譯括號，℗ 已寫成 Smithsonian Folkways（Arhoolie 目錄後來併入），正文廠牌仍寫 Arhoolie CD 446（MB release 那筆）。**有固定試聽來源。**｜**掛名與轉寫**：MB 寫 Boua Xou Mua、英文維基寫 Bua Xou Mua，正文照 MB；queryAlias 的 Mua Boua Xou 是姓前名後的另一種順序。｜**人名邊界**：Alan Govenar（製作）只在搜尋摘要出現、沒有可開啟頁面背書，**不寫**。｜**反同構**：本張切「民俗節錄音四年後出版、五軌小品」。｜**國別邊界**：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52，本張只寫寮國，不得與池中泰國 molam 卡混談。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Various Artists|Ethnic Minority Music of Southern Laos",
+  "artist": "Various Artists",
+  "album": "Ethnic Minority Music of Southern Laos",
+  "facts": [
+   {
+    "f": "release-group 400d78ab 的欄位：title「Ethnic Minority Music of Southern Laos」、Various Artists、first-release-date 2007、Album＋Compilation，資料庫端掛 folk 標籤；轄下唯一 release：2007 US Sublime Frequencies SF036 CD 17 軌，barcode 751937314523。MB 曲目端 17 軌演出者全部記為 [unknown]。",
+    "src": "https://musicbrainz.org/ws/2/release-group/400d78ab-35fb-45e4-ab10-a1a4d6e151b5?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "17 軌逐軌：1〈Molam〉0:48、2〈Khen le molam〉5:23、3〈Khen〉2:54、4〈Gaw gawng jing pe play〉5:10、5〈Gaw ja galpeu〉2:16、6〈Thalong tha ka-nying〉6:11、7〈Reum bang〉0:24、8〈Ding boo〉1:53、9〈Jing riang me lun〉4:37、10〈Gaw mat〉6:34、11〈Jing riang〉5:07、12〈Npo it npo it janeel goor〉0:34、13〈Npo it npo it a we mawn siang grai jeu leuay〉1:31、14〈Gaw joor nyet〉7:45、15〈Gaw gawng jing pe play〉5:10（與第 4 軌同名同長）、16〈Jeu phawn peng gawng ploung ken〉7:29、17〈Boyt tawng〉5:58。最短第 7 軌二十四秒，最長第 14 軌七分四十五秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=400d78ab-35fb-45e4-ab10-a1a4d6e151b5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "廠牌頁記本輯是 Laurent Jeanneau 的錄音與解說（「Recorded by Laurent Jeanneau」），內容是寮國南部 Xekong、Champasak 與 Attapeu 三省 Harak 與各 Brao 族群的音樂，「Collection of landmark recordings...documenting music created by the Harak and various Brao ethnic groups in Southern Laos」；廠牌頁的數位版標 2010-05-06 上架。",
+    "src": "https://sublime-frequencies.bandcamp.com/album/ethnic-minority-music-of-southern-laos"
+   },
+   {
+    "f": "Sublime Frequencies 的同一條田野錄音線在 MB 上還有《Ethnic Minority Music of Northeast Cambodia》(SF027) 與《…of North Vietnam》(SF037)，本張 SF036 是其中寮國那一張；錄音者 Laurent Jeanneau 在 MB 上另以 Kink Gong 名義有 11 個 RG，但都是中國、西藏、新疆與坦尚尼亞的錄音，寮國這批只在 Sublime Frequencies 名下。",
+    "src": "https://musicbrainz.org/ws/2/label/6fed5076-6bad-4b8d-8cca-fee530455666?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "第 4 軌與第 15 軌同一個曲名、同樣五分十秒，一張碟裡出現兩次",
+   "十七軌裡有四軌不到一分鐘，最短的〈Reum bang〉只有二十四秒"
+  ],
+  "sound": "十七軌的田野錄音輯：khène 與 molam 的兩軌開場之後是 gong 圈、弦樂器、鈸與鼓的族群曲目，曲長從二十四秒到七分四十五秒，四軌不到一分鐘、四軌超過六分鐘；資料庫端掛 folk 標籤，曲目掛名全部 [unknown]。",
+  "keyTracks": [
+   "Khen le molam",
+   "Gaw joor nyet",
+   "Jeu phawn peng gawng ploung ken"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2007。release-group first-release-date 2007 與唯一 release 2007 同年；廠牌頁的 2010-05-06 是數位上架日。錄音年廠牌頁與 MB 都沒有登記，不得補。",
+  "notes": "**覆核策展層：MB 欄位逐項相符（2007 US SF036 CD 17 軌 barcode），未擋下欄位。**｜**§5.6 舉證覆核**：兩個 MB 網址逐格對得上（2007／SF036／US／CD／17 軌／barcode），**舉證站得住**；「每一軌的演出者在 MB 上不是沒有實體就是 0 個 RG」與曲目端 17 軌全 [unknown] 相符，成立。｜**串流：無來源。** search「Ethnic Minority Music of Southern Laos」us／gb 0 筆；SF 的 Apple 目錄無此輯；回撈候選三筆是 2006 年華語專輯，駁回。｜**補策展層沒寫的**：第 4 軌與第 15 軌在 MB 曲目端**同名同長**（Gaw gawng jing pe play 5:10），可能是同一錄音重複建檔或真的收兩次，正文不要引「十七軌全部不同」。｜**人名邊界**：Laurent Jeanneau（錄音者、解說）出自廠牌頁可寫，Kink Gong 是他在 MB 上的另一個掛名（label 目錄回問所見），可寫；族群名 Harak、Brao 與三省名出自廠牌頁。｜**反同構（本批五張 SF）**：本張切「三省族群田野錄音、二十四秒到七分四十五秒」。｜**國別邊界**：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52，本張只寫寮國，不得與池中泰國 molam 卡混談。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
+ },
+ {
+  "key": "desc2:Tiao Phün Muang|Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)",
+  "artist": "Tiao Phün Muang",
+  "album": "Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)",
+  "facts": [
+   {
+    "f": "release-group 0cb411e3 的欄位：title「Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)」、artist-credit「Tiao Phün Muang」（實體 c8e975c8，LA，名下只有這 1 個 RG）、first-release-date 2008、Album、secondary-types 空；轄下唯一 release：2008 XW Official，VDE-GALLO，Digital Media 10 軌，barcode 887845148582——MB 端沒有實體 CD 的建檔。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0cb411e3-b4e7-45a3-b840-64fa691a86a2?fmt=json&inc=artist-credits+genres"
+   },
+   {
+    "f": "10 軌逐軌（串流側 collectionId 591505662 同數同序、長度逐軌相同）：1〈An nangsu kong muang (Sweet Reading)〉2:38、2〈Khab toum luang prabang (Song from Luang Prabang)〉8:19、3〈Nok khao sinouane (The Flight of the Dove)〉2:50、4〈Xom dok mai (Admiring the Flowers)〉4:21、5〈Malay boye (A Crown of Flowers)〉3:31、6〈Lao Duang Deuane (The People of the Full Moon)〉4:58、7〈Chinh pae (The Chinese Pedlar)〉13:09、8〈Vay (Praying the Buddha)〉9:29、9〈Ka cham lang (The Raven of the Pagoda)〉2:14、10〈Long Song (Aspersion)〉2:41；℗ 2008 VDE-GALLO，串流側歸 Asia 類。",
+    "src": "https://itunes.apple.com/lookup?id=591505662&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "VDE-GALLO 廠牌頁記實體版目錄號 VDE CD-1213、屬 Collection AIMP LXXXI（日內瓦民族音樂檔案的 Archives internationales de musique populaire 系列第 81 號），「Enregistrement et textes (2007) : Jean-Marie Knapp」——錄音與解說由 Jean-Marie Knapp 於 2007 年完成，十軌曲名法英並列。",
+    "src": "https://vdegallo.com/en/produit/laos-musique-de-lancienne-cour-de-luang-prabang-music-of-the-ancient-royal-court-of-luang-prabang-2/"
+   },
+   {
+    "f": "《Yearbook for Traditional Music》的評介條目記本輯規格：AIMP 81、VDE CD-1213、Jean-Marie Knapp 錄音與解說、27 頁法英雙語解說（英譯 Isabelle Schulte-Tenckhoff）、2 張彩色與 5 張黑白照片、1 張 CD 10 軌 54:09。",
+    "src": "https://www.cambridge.org/core/journals/yearbook-for-traditional-music/article/abs/laos-tiao-phun-muang-musique-de-lancienne-cour-de-luang-prabangmusic-of-the-ancient-royal-court-of-luang-prabang-2008-archives-internationales-de-musique-populaire-aimp-81-disques-vdegallo-vde-cd1213-recorded-and-annotated-by-jeanmarie-knapp-27-pp-of-notes-in-french-and-english-english-translation-by-isabelle-schultetenckhoff-2-colour-5-bw-photographs-1-compact-disc-10-tracks-5409/CC8EB5CC919CF619DB23CA7E41D8654A"
+   }
+  ],
+  "hookCandidates": [
+   "十軌五十四分鐘裡，第 7 軌〈Chinh pae〉一首就佔了十三分零九秒，第 9 軌只有兩分十四秒",
+   "日內瓦民族音樂檔案系列的第 81 號，2007 年錄、2008 年出，MB 上寮國宮廷樂唯一的一筆"
+  ],
+  "sound": "十軌、五十四分零九秒的琅勃拉邦宮廷樂盤：曲長兩分十四秒到十三分零九秒，〈Chinh pae (The Chinese Pedlar)〉十三分與〈Vay (Praying the Buddha)〉九分二十九秒兩軌長篇撐起後半，前段多是三到五分鐘的歌曲；曲名法英並列，串流側歸 Asia 類。",
+  "keyTracks": [
+   "Chinh pae (The Chinese Pedlar)",
+   "Khab toum luang prabang (Song from Luang Prabang)",
+   "Vay (Praying the Buddha)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2008。release-group first-release-date 2008、唯一（數位）release 2008、串流側 2008-01-01、Yearbook 條目 2008 四邊同年；**錄音年是 2007（廠牌頁「Enregistrement et textes (2007)」）**，行文可寫「2007 年錄、2008 年出版」。",
+  "notes": "**覆核策展層：MB 欄位逐項相符，未擋下欄位。** 補正兩處：(1) 策展層寫「宮廷樂錄音的年份 MB 端沒有登記，行文不得補」——MB 沒有，**但廠牌頁有：2007 年 Jean-Marie Knapp 錄音**，見 yearVerified；(2) 策展層寫「MB 端沒有實體盤建檔，行文不得寫成 CD」——**實體 CD 存在（VDE CD-1213，廠牌頁與 Yearbook 條目都記）**，正文可寫 CD，但 barcode 是 MB 數位那筆的、不得配到 CD 上（第 262 條）。｜**串流採信 591505662**（第 254 條第三種查法 `lookup?id=591505662&country=us&entity=song` 實跑）：10 軌同數同序，**長度逐軌一秒不差**（2:38／8:19／2:50／4:21／3:31／4:58／13:09／9:29／2:14／2:41），店端掛名與盤名與 MB 一字不差、℗ 2008 VDE-GALLO。**有固定試聽來源。** ⚠ **封面：CAA 404（策展層實測）——串流側這筆有 artworkUrl100，本機端可以拿 591505662 當封面來源**，不必人工掃圖。｜**掛名**：Tiao Phün Muang 究竟是個人還是樂團名，廠牌頁與 Yearbook 條目都沒有說明，**正文不得寫成「某位樂師」也不得寫成「樂團」，只寫掛名**。｜**人名邊界**：Jean-Marie Knapp、Isabelle Schulte-Tenckhoff 出自廠牌頁與 Yearbook 條目，可寫。｜⚠ **宗教中立**：第 8 軌英譯 Praying the Buddha 只當曲名寫。｜**反同構**：本張切「AIMP 第 81 號、一軌十三分、CAA 404 但串流有圖」。｜**國別邊界**：柬埔寨與越南在 c-64、泰國與印尼在 c-SEA 與 c-52，本張只寫寮國，不得與池中泰國 molam 卡混談。｜**行文界線**：本卡只寫發行年、廠牌、編號、載體、軌數、國別、掛名與曲目等可查證的發行事實；不得寫政治評價或宗教評價，不得把審查、被禁、流亡鋪成敘事，也不得用曲名或盤名反推政治因果。"
  }
 ]
