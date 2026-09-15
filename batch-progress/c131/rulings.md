@@ -376,3 +376,21 @@ TBM「第一張」、Sound Ltd.「系列頭號」）——**與第 253 條同形
 Toshiko Plays Billy Strayhorn、Time Stream、Got The Spirit、Jamal Plays Jamal。
 
 **QA 的「千分位逗號 30,890」是假陽性**——那是澳洲 Impulse! 的 catno `IL-30,890`。
+
+## 第 368 條（主線 2026-09-15，hook 層交件後）：**研究稿 `yearVerified` 欄位在 b 組是物件、a 組是字串——形狀要統一**
+
+`c131-b.json` 全 22 筆的 `yearVerified` 是 `{year, recorded, note}` 物件，a 組 23 筆是字串。
+`JSON.stringify` 出來是 `[object Object]`，**任何吃這個欄位的下游工具都會拿到空值**。
+年份論證本身完好（在物件的 `note` 裡），hook 層是從 `notes` 取用的，沒有損失。
+**c-129 b 組也是同一個形狀**（第 345 條那批）。
+**往後的研究層派工要明寫 `yearVerified` 是字串**；本機端若有工具讀這欄，先做型別容錯。
+
+## 第 369 條（同日）：**hookCandidates 裡有 facts 查無的事實——hook 層沒採用是對的**
+
+兩處：《Toshiko's Piano》的「Miles Davis 的貝斯手」（facts 只寫 Paul Chambers 本人，沒有這個修飾語）、
+《Sakura Sakura》的「白木在標題曲用木槌、手指、刷子、鼓棒輪流打」（沒有任何 fact 提到打法）。
+**與第 253 條同形**：候選句比 facts 多說了一點，多出來的那一點沒有來源。
+**hook 層採用 hookCandidates 前要逐句回 facts 對照。**
+
+另記：派工詞寫「秋吉敏子全目錄 14 ＋ 第一世代 9」，**實際卡單是秋吉系 13 ＋ 第一世代 10**（總數 23 無誤）——
+主線派工詞的組成數字第六次出錯（第 253 條家族），hook 層照卡單走。
