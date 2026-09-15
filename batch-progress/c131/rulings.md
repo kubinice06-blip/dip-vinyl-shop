@@ -139,3 +139,194 @@ Picture of Heath 只是 1961–1980 年代之間的壓片名。**第 45 條的�
 **MB 查無而未收：0 張**——這 25 位的目錄 MB 建檔完整，本批不需要 §1。
 
 **中間檔**：`scratchpad/c131b/`（c131b-poolscan.txt 實掃全文、c131b-mb/ 25 位目錄快取與 27 個 RG 的 release 端點回傳、c131b-catalog-detail.txt 逐位純 Album＋Live 清單含池中標記、c131b-apple.json 店面 search 結果）。
+# c-131 裁定與未收清單
+
+> 兩組共用一檔。**接著寫（append），不要覆蓋別組的段落。** a 組號段 350 起、b 組 360 起。
+
+---
+
+# a 組（秋吉敏子全目錄 ＋ 日本爵士 1950–60 年代第一世代，23 張／14 位）
+
+策展層 a 組，2026-09-15。交件 `batch-progress/c131/prop-a.json`，
+`node batch-progress/c131/chk-prop.mjs a` **標記 0**（線上池撞卡 0、跨組重複 0、跨批撞卡 0／94 批 3,906 張）。
+與 `desc-tools/batches/cards/c121-cards.json`（51 張）逐張 `artist|album` 比對**撞卡 0**（c-121 那批沒有本組任何一位）；
+`onboarding-manifest-c67-20260904.json` 與 `c87-cards.json`（Johnny's Disk 線）也比過，Johnny's Disk 的秋吉卡兩批都沒收。
+號段 **350–359**。
+
+## 〇、交件數字
+
+| 項 | 數 |
+|---|---:|
+| 秋吉敏子（含 トリオ／カルテット／クインテット 三種編制掛名） | **13** |
+| 第一世代（本田竹広、白木秀雄クインテット＆スリー琴ガールズ、宮沢昭、ジョージ大塚クインテット、鈴木宏昌トリオ、高橋達也と東京ユニオン、石川晶とカウント・バッファローズ、猪俣猛とサウンド・リミテッド、原信夫とシャープス・アンド・フラッツ、稲垣次郎とソウル・メディア） | **10（各 1 張）** |
+| CAA release-group 端點 200 | **23／23** |
+| Apple search／藝人目錄兩種查法有命中（只是觀察，第 254 條） | **16／23** |
+| `secondary-types` 含 Live | 1（ジョージ大塚《Loving You George》）；另 3 張實為現場但 MB 未標（Top of the Gate、陸前高田、Newport），已在 `risk` 標明 |
+| 合輯（§5.6） | 0 |
+
+**秋吉敏子在 MB 上的量**：個人實體 `78fe2146` 名下 **33 個 RG**；加上 Trio 8、Quartet 2、Quintet 1、
+Toshiko Mariano Quartet 1、The Toshiko Trio 1、International Jazz Sextet 1、Toshiko Mariano and Her Big Band 1、
+秋吉敏子ジャズ・オーケストラ 8、大樂團 16，**十個實體合計 72 個 RG**。
+排除大樂團／Jazz Orchestra（24）、合輯（4）、EP（1）、合掛（6）、CAA 404（15）之後，**能收的就是這 13 張＋額度未收 4 張**
+（《Four Seasons》1990、《Dig》1993、《Sketches of Japan》1999、《Live at Blue Note Tokyo '97》2001，rgMbid 見第 356 條）。
+
+## 350（本批立）⚠ **秋吉敏子的主名取「秋吉」，「穐吉」進 queryAlias——證據是日本盤與店面，不是 MB 主名**
+
+MB 個人實體 `78fe2146-ec71-44c8-86eb-117607e53933` 的主名是 **「穐吉敏子」**（Person／US／1929-12-12），
+alias 列了 秋吉 敏子、穐吉 敏子、龝吉敏子、あきよし としこ、Toshiko Akiyoshi、Toshiko Mariano。
+簡報要求「主名取她日本盤實體上的印法」，實測四個方向都指向「秋吉」：
+
+| 來源 | 印法 |
+|---|---|
+| Apple jp 店面（藝人目錄全部條目，含 Johnny's Disk 陸前高田、Sony《孤軍》、Verve、Studio Songs） | **秋吉敏子**（陸前高田那張掛「秋吉敏子トリオ」） |
+| King 1961 原盤《Toshiko Meets Her Old Pals》（Discogs 21987391） | Toshiko Akiyoshi = **秋吉敏子** |
+| MB 名下 RG 的漢字 artist-credit | 9 個寫「秋吉敏子」（Finesse、Interlude、Desert Lady、Night and Dream、Hope…），**只有 1 個寫「穐吉敏子」**（Sketches of Japan） |
+| MB 群組實體 | `秋吉敏子ジャズ・オーケストラ`（主名）、大樂團 alias `秋吉敏子゠ルー・タバキン・ビッグ・バンド` |
+
+**裁定：卡片掛名「秋吉敏子」；「穐吉敏子」「龝吉敏子」「Toshiko Akiyoshi」全部進每一張的 queryAlias。**
+編制卡照池中先例「漢字＋片假名編制」：`秋吉敏子トリオ`（MB Toshiko Akiyoshi Trio）、`秋吉敏子カルテット`（Toshiko Akiyoshi Quartet，JP）、
+`秋吉敏子クインテット`（Toshiko Akiyoshi Quintet）。「カルテット」不取「クァルテット」——池中兩種都有，取 MB（ジョージ・大塚カルテット）與 Apple 的用法。
+第 307 條反查：池中「秋吉」「穐吉」「Akiyoshi」「Toshiko」四種子字串只命中大樂團那一張，無同字串不同人。
+**大樂團那張英文字串不動**；`Kogun`（`58e816d6`）MB 掛的是大樂團實體 `a05e0d88`，依簡報歸大樂團、本批不收。
+依判準 1（池中編制掛名先例）＋判準 2（可逆）當場定。
+
+## 351（本批立）**1950 年代美國廠牌那幾張的 credit（Toshiko／The Toshiko Trio／Toshiko Mariano Quartet）全部掛個人「秋吉敏子」**
+
+MB 把她 1950–61 年美國廠的碟拆在四個 credit 底下：「Toshiko Akiyoshi」（Norgran）、「Toshiko」（Storyville STLP 918）、
+「The Toshiko Trio」（Storyville STLP 912，獨立實體 `5590fdbf`，type 誤建成 Person）、
+「Toshiko Mariano Quartet」（Candid，獨立實體 `d7bd5a3a`）。
+
+**裁定：這四種全部掛「秋吉敏子」，credit 原文進 queryAlias。** 理由：
+1. 它們是同一位的婚前／婚後名與封面簡稱，不是編制實體（MB 個人 alias 本身就列了 Toshiko Mariano）；
+2. MB 自己把 Candid 那張的 2006 再發建成第二個 RG `bb5f0db2` 直接掛在個人名下——同碟兩個 RG，一個掛群組一個掛個人；
+3. 若掛「秋吉敏子トリオ」會與 1976 年後 MB 的 Toshiko Akiyoshi Trio 實體混在一起。
+`秋吉敏子トリオ` 這個掛名**只給 MB 實體 `abbd1a67` 名下的碟**（Discomate 三部曲、EASTWORLD、Johnny's Disk）。
+
+## 352（本批立）⚠ **MB 轄下只有再發 release 時，`first-release-date` 不是首發年——兩張取 Discogs／Apple 的原盤年**
+
+| 卡 | MB first-release-date | 實際首發 | 取 |
+|---|---|---|---|
+| 秋吉敏子《The Many Sides of Toshiko》 | **1999-06-23**（只登錄 JP CD POCJ 2748） | Verve MGV-8273，US **1958**（Discogs master 700260；release 18758419 封底「Recorded September 28, 1957」） | **1958** |
+| 秋吉敏子《Toshiko Meets Her Old Pals》 | **1974**（只登錄 1974 SKK 3018／1978 SKA 3019／2024 數位） | King SKC 3／KC 13，JP **1961**（Discogs 21987391／21848362；Apple jp 官方條目 ℗ 1961 King、1961-06-10） | **1961** |
+
+依裁定 91／95（rgMbid 是身分鍵不是年份來源）與簡報「年份取首次發行年」的本意，取原盤年；MB 的日期寫進 `risk`。
+**建議本機補建這兩張的 MB 原盤 release**，否則 `reconcile-year` 一類工具會回讀成 1999／1974。
+c-121 第 2 條那個「不失者 first-release 落在 Pseudo-Release 上」是同族：**`first-release-date` 只反映「有人建檔的最早那筆」。**
+
+## 353（本批立）**秋吉敏子トリオ《1980 Toshiko Akiyoshi Trio in Rikuzentakata》取演奏年 1980，不取 MB 的首發年 2014**
+
+MB first-release-date 2014（Johnny's Disk JD-36-CD 是首發），演奏 1980。
+沿用 c-121 第 2 條的例外（盤名載明錄音年的延後發行盤取演奏年；先例 阿部薫《スタジオ・セッション1976.3.12》記 1976、
+光束夜《ファースト・ライブ1979 吉祥寺マイナー》記 1979）——盤名第一個字就是「1980」，卡面記 2014 會自相矛盾。
+`risk` 已寫明發行年 2014。有先例，不上呈。
+**順帶**：這張是 c-67／c-87 那條 Johnny's Disk 線（照井顕）回到秋吉本人的一張，`why` 已把 c-87 廠牌史卡的線索接上。
+
+## 354（本批立）**第一世代的編制掛名——MB 實體是英文的，卡片照池中先例寫「漢字＋片假名編制」**
+
+| MB 實體 | 卡片掛名 | 依據 |
+|---|---|---|
+| `George Otsuka Quintet`（`60110097`，無國別） | **ジョージ大塚クインテット** | 個人實體主名「ジョージ大塚」（混漢字，08-11 裁定照寫）＋ 池中 峰厚介クインテット 先例；Apple jp King 官方條目掛名正是這字串。**不加中黑**（MB 另有空實體「ジョージ・大塚カルテット」帶中黑，不採） |
+| `Toshiko Akiyoshi Trio`／`Quartet`／`Quintet` | 秋吉敏子トリオ／カルテット／クインテット | 第 350 條 |
+| `鈴木宏昌トリオ`、`高橋達也と東京ユニオン`、`石川晶とカウント・バッファローズ`、`猪俣猛とサウンド・リミテッド`、`原信夫とシャープス・アンド・フラッツ`、`稲垣次郎とソウル・メディア`、`白木秀雄クインテット＆スリー琴ガールズ` | **照 MB 實體原文** | 本來就是漢字＋假名 |
+
+**`白木秀雄クインテット＆スリー琴ガールズ` 的全形＆照 MB 原文保留**：Discogs 的三種日本 CD（UCCM-9237／UCCJ-4067／UCCU-9776）都印這個字串，
+`chk-prop` 的 `k()` 會把全形＆摺成 and，不會亮燈。英文 credit「Hideo Shiraki Quintet + 3 Koto Girls」與 白木秀雄／白木秀雄クインテット 進 queryAlias。
+**個人實體名下 0 個 RG 的有兩位**（高橋達也 `81a4e935`、原信夫 `e4207dc5`）——他們的碟全部在樂團實體底下，所以這兩位「個人掛名」在池中永遠會是零，實掃時要用樂團名查。
+
+## 355（本批立）**RG 的 artist-credit 與所屬實體主名不同時，取實體主名——石川晶《ウガンダ》一案**
+
+`74d39c14`《ウガンダ（アフリカン・ロックの夜明け）》的 artist-credit 是「カウント・バッファロー」（原盤封面只印團名），
+但它掛在實體 `2acbf5b2`「石川晶とカウント・バッファローズ」底下，同實體 22 個 RG 的 credit 有五種寫法
+（石川晶とカウント・バッファローズ／Akira Ishikawa & His Count Buffalos／Count Buffalo & The Jazz Rock Band／カウント・バッファロー／石川晶と彼のグループ）。
+**裁定：卡片掛實體主名「石川晶とカウント・バッファローズ」**，五種 credit 全進 queryAlias。
+同一判準也用在 本田竹広（同實體 credit 有 本田竹広／本田竹曠／T. Honda／Takehiro Honda 四種，取 MB 主名「本田竹広」）
+與 宮沢昭（1978 年後的 RG credit 寫 Akira Miyazawa）。這是裁定 6／70／120 與 c-116 第 3 條的直接套用，有先例。
+
+## 356（本批立）**未收清單（分類，rgMbid 已備妥）**
+
+### A. 秋吉敏子——CAA 404 而不收（MBID 已釘、身分已查，補到圖就能建卡）
+`a8ab1297`《Finesse》1978（Concord）、`12951157`《Notorious Tourist From The East》1980（Inner City IC 6066）、
+`dbbd38af`《Interlude》1992（Concord CCD-4324）、`e39c9ec9`《Remembering Bud: Cleopatra's Dream》1992（Evidence）、
+`2c4909da`《Night and Dream》1994（Ninety-One CRCJ-9123）、`47b5aad6`《Maybeck Recital Hall Series, Volume Thirty-Six》1995（Concord，solo Live）、
+`964322f8`《With Brazilian Friends》1997、`482bbadb`《Toshiko Plays Toshiko》1999-06（疑即 Crown 1997《Toshiko Plays Toshiko -Time Stream》）、
+`8fae12b3`《Hope》2006、`bb5f0db2`《Toshiko Mariano Quartet》2006（同碟重複 RG，已釘 1961 原盤）、
+`029b14f1`《Toshiko & Modern Jazz》2010（Columbia COCB-53621）、`9a51c133`《United Notions》1958（MetroJazz E1001，掛 International Jazz Sextet）、
+`b21bc0b9`《Early Numbers》2021、`9648c6a1`《Toshiko's Blues》2023（整編）、`e6fd3b1b`《farewell》（無日期，5 軌）。
+
+### B. 秋吉敏子——額度未收、CAA 200、可直接進後續批
+`b918be81`《Four Seasons》1990（Ninety-One PAS-1006，Trio）、`fc23702c`《Dig》1993（Ninety-One CRCJ-9115，個人）、
+`b47b227a`《Sketches of Japan》1999（Ninety-One CRCJ-91001，credit 穐吉敏子）、`f0f52cb5`《Live at Blue Note Tokyo '97》2001（Trio，Live）、
+`939233d1`《Solo Live 2004》2009（Studio Songs 數位，Live）、`ae1d57af`《Porgy and Bess》2016（Studio Songs 數位，來歷未查）、
+`32c3bf59`《In Japan》1996（EXPRESS TOCT-9361，只有 3 軌，形態存疑）、`52c56890`《Toshiko Plays Toshiko》2019（Quartet，Studio Songs CD 5 軌，來歷未查）。
+
+### C. 秋吉敏子——合掛、大樂團、合輯、EP，不收
+合掛（第 258／321 條）：`34a86b38`《Toshiko & Leon Sash at Newport》1958（分面合盤）、`53cf9d62`《The Country & Western Sound of Jazz Pianos》1963（Steve Kuhn &）、
+`f41bd4a7`《Toshiko‐Mariano Quartet (Live at Birdland)》1991（& Charlie Mariano，CAA 404）、`302306d4`《Tuttie Flutie》1981（Trio & Flute Quartet）、
+`094e019e`《Classic Encounters》2010（with Reiko Honshoh）、`c7753608`《Jazz Conversations》2016（MONDAY満ちる &）。
+大樂團（簡報明令不收）：`a05e0d88` 名下 16 個（含 `58e816d6`《Kogun》1974）、`2fe7f7ac` 秋吉敏子ジャズ・オーケストラ 8 個、
+`3ef34913`《Let Freedom Swing》2007（SWR Big Band）、`eab49f3e`《Desert Lady / Fantasy》1994（**MB 掛個人但實為 Jazz Orchestra featuring Lew Tabackin 的大樂團盤**，不收）、
+`0ce25a4f`《Jazz in Japan Recorded in Tokyo》1965（Toshiko Mariano and Her Big Band，五實體合掛）。
+合輯：`6e28e045`《New York Sketch Book》2004、`75880be9`《Her Trio, Her Quartet》2012（Mad About，兩張 Storyville 併盤）。EP：`f13fc3f9`《Toshiko Akiyoshi Recital》2010。
+
+### D. 秋吉敏子——**MB 查無 RG**（唱片實體確鑿，可進 §1 補遺批）
+1961 Nippon Columbia《Long Yellow Road》（Toshiko Akiyoshi Quartet 東京錄音，**與池中大樂團 1975 同名**）、
+1963 Takt《Toshiko Mariano Quartet in West Side》（Apple jp `1695944423`《Toshiko Akiyoshi & Charlie Mariano》1997 Nippon Columbia 8 軌疑即此）、
+1965《Toshiko Akiyoshi Quartet - Lullabies for You》系（Takt）、1971 RCA《Toshiko Akiyoshi Solo Piano》、1979–80 Discomate《Sumie》（trio）、
+1981 Trio《Just Be-Bop》。**這六張是簡報點名的「1960 年代日本盤、1970 年代 RCA／Victor 的 trio 與 solo」的核心，MB 一張都沒建檔。**
+
+### E. 第一世代——額度未收、CAA 200、原盤 Official，可直接進後續批（逐張已寫在各卡的刻意不釘）
+本田竹広《Jōdo》1970 `6d937ed0`／《The Trio》1970 `ece8ab7a`／《I Love You》1971 `2b50e607`／《What's Going On》1973 `e6c15d9f`；
+白木秀雄《白木秀雄リサイタル》1959 `f59e3eb2`（Live）／《プレイズ・ボッサ・ノバ》1962 `5ed483fe`／《白木秀雄》1958 `8c4f6561`（2007 RG，與 `da7146b8` 重複）；
+宮沢昭《Love For Sale》1978 `63193b6e`／《My Piccolo》1981 `5431fc8c`（Live）／《On Green Dolphin Street》1982 `66f06f89`；
+ジョージ大塚クインテット《Physical Structure》1976 `6be3e9a9`（TBM-62）；
+鈴木宏昌《Rock Joint Cither ー Silk Road》1973 `9198e151`／《High‐Flying》1976 `a85636fa`／鈴木宏昌トリオ《Primrose》1978 `c796641c`；
+高橋達也と東京ユニオン《The Rock Seasons》1973 `e8a53d83`／《Black Pearl》1980 `736ea34e`／《Soul Porter》1978 `9f39f6d9`／《Up In The Blues》1981 `794d6b64`；
+石川晶とカウント・バッファローズ《エレクトラム》1970 `afa1adcc`／《バキシンバ》1970 `056a936c`／《African Rock》1971 `94fdf242`／《Get Up!》1975 `18e8b3dd`／《Okinawa》1976 `75c81ed9`／石川晶《Back To Rhythm》1975 `6751b48c`；
+猪俣猛とサウンド・リミテッド《Innocent Canon》1971 `751d2e0a`；
+稲垣次郎とソウル・メディア《Woodstock Generation》1970 `99c3f630`／《Jazz & Rock "Out"》1970 `9938ac9f`／《Wandering Birds》1971 `667ea191`／《In the Groove》1973 `6863111f`。
+**這 26 張全部可以直接建卡**——第一世代這條線遠沒挖完，光這十位就還有一整批的存貨。
+
+### F. 第一世代——不收與原因
+- **松本英彦 本批 0 張**：《Sleepy》1976（TBM-74，`6de7306e`）與《Rio Manhattan》1981（`91e94cbc`）**CAA 404**；
+  《The Session / Sleepy Meets the Great Jazz Trio》1980（`d2119a73`，CAA 200）是與 The Great Jazz Trio 的合掛（池中已有 GJT 1 張，兩邊都有卡就不能掛單人，第 258 條）；
+  《Four Wings》2023（`d19cb142`，Trio／Octave，CAA 200）來歷未查（疑為 1970 年代未發表錄音）；其餘是演歌伴奏與合輯。
+  池中既有的 `Hidehiko Matsumoto《Hot Jazz》1983`（c-87 Johnny's Disk 線）是英文字串，**待本機統一為「松本英彦」**——本批沒有新卡可以掛，分裂暫時不擴大。
+- **ジョージ大塚**：《Page 1》1967 `de5ffd98` CAA 404；《Page 2》1968 `8dbfa30b` 1968 原盤 status 是 Promotion、只有 2014 CD Official；
+  《Go On'》1972（TBM-13）`d93860bf` CAA 404；《Sea Breeze》`f1f64d5b` 只有 2014 RG（1971 原盤 MB 未建檔）且 CAA 404；《Maracaibo Cornpone》`ba19a978` 無日期、只有數位。
+- **宮沢昭《山女魚》1962**（King SKJ 1001，`63cd7c36`）CAA 404——這是他最有名的一張，**最值得本機手動補圖**；《Four Units》1969 `9e764a87` CAA 404。
+- **原信夫**：1963–1970 的 King／Columbia 正規盤五張全部 CAA 404（`3cc0ac9f`《Operation Glenn Miller》、`5ba9d38f`《Western Dynamics》、`1e261c1e`《LITTLE GIANT》、`3b3d4658`《エレクトロニクス！》、`6f1b266c`《Big Band Dynamics》2008 復刻）；
+  `38e2e165`《Giant Steps》1978 CAA 200 但三實體合掛（Elvin Jones／Frank Foster）。**Newport 1967 那張是他名下唯一能收的。**
+- **白木秀雄**：`7ce34993`《Plays Horace Silver》1962、`3a9a8c2c`《祭りの幻想》1998、`6a973d95`《ステレオ・ドラム》1998 CAA 404；
+  `b545a154`《Hideo Shiraki in Fiesta》2005（＝祭りの幻想）CAA 200 但 1961 Teichiku 原盤 MB 未建檔、RG 年份是復刻年，留待補建原盤後再收。
+- **猪俣猛個人**：《Drum Shot》1971、《Drummer Man》1975 只有數位 release；《ドラム・メソード》1972 是教材盤。
+- **高橋達也と東京ユニオン《Maiden Voyage》1977**（TBM-3001）唯一 release 是 Promotion。
+- **合掛不收**：本田竹広《Flying To The Sky》（& G. Dudek）、《In a Sentimental Mood》（三人平列）；稲垣《Something》（Steve Marcus +）、《Bridge Over Troubled Water》（佐藤允彦 &）、《By the Red Stream》（鈴木宏昌 +）。
+- **原聲帶不收**：鈴木宏昌《海のトリトン》《クレオパトラD.C.》、高橋達也《大都会》《西部警察》×2、石川晶《マクロス》《Lupin III》《フィリップ・マーロウ》、猪俣猛《うる星やつら》×3。
+- **MB 查無 RG（§1 候選）**：白木秀雄《祭りの幻想》1961 Teichiku 原盤、ジョージ大塚《Sea Breeze》1971 原盤、宮沢昭とオールスターズ（實體 `312ca341` 名下 0 個 RG）、
+  松本英彦とスリーピーラテン楽団（`ad02820f` 0 個）、稲垣次郎Section（`29fd3a16` 0 個）、ジョージ・大塚カルテット（`5e73770e` 0 個）、石川晶とザ・ゲンチャーズ（`6d2c4e53` 0 個）。
+
+## 357（本批立）**池中兩組既有的英文字串分裂，本批各新增一張漢字卡，待本機統一**
+
+| 池中既有 | 本批新收 | 處置 |
+|---|---|---|
+| `Jiro Inagaki and Soul Media`（《Head Rock》1970、《Funky Stuff》1975） | `稲垣次郎とソウル・メディア《Dosojin》1972` | 依簡報第 3 點用漢字；上架後池中同團兩種掛名，**本機應把既有 2 張改成 MB 主名「稲垣次郎とソウル・メディア」**（同 c-121 第 4／4.5 條 灰野敬二／裸のラリーズ 的形狀） |
+| `Hidehiko Matsumoto`（《Hot Jazz》1983，c-87） | 本批 0 張（第 356 條 F） | 分裂沒有擴大，但既有那張仍待改成「松本英彦」 |
+| `Toshiko Akiyoshi-Lew Tabackin Big Band`（《Long Yellow Road》1975） | 秋吉敏子 13 張 | **不是分裂**——大樂團是另一個 MB 實體，簡報明令字串不動；但 D 類的 1961《Long Yellow Road》若日後收進來，會與它同盤名不同掛名，`risk` 要互指 |
+
+## 358（本批立）**同名撞擊實測——score 一次都沒用上；三個坑記下來**
+
+- `artist?query=country:JP AND artist:Akiyoshi` **只回 3 筆、沒有她**（個人實體 country 是 US），第 309 條的 `country:` 列舉在這裡反而漏；
+  改用 `alias:"Toshiko Akiyoshi"` 才把 `78fe2146` 找出來——**非拉丁圈的旅外藝人，country 不可當前提，alias 查法要並行。**
+- `artist:"Toshiko"` 回 15 筆，她的相關實體佔 8 個（Trio／Quintet／Big Band／Mariano Quartet／Mariano & Toshiko／International Jazz Sextet／Mariano and Her Big Band／The Toshiko Trio），
+  其餘 7 個是同名他人（Toshiko Katsura、Kohno、Sakakibara…），全靠 disambiguation 與名下 RG 判，未用 score。
+- `artist:"ジョージ大塚"` 只回個人與空的 カルテット 實體，**Trio／Quintet 兩個實體是英文名**，要用 `artist:"George Otsuka"` 才找得到——同一位的實體分散在兩種文字系統，一種查法一定漏。
+- 實掃卡池的假陽性：`Buffalo`（5 張：Buffalo／Buffalo Springfield／Buffalo Tom／Buffalo Nichols）、`Hara`（9 張：Rei Harakami、Charalambides…）、`琴`（蔡琴 3 張）、`Koto`（Makoto ×2）、`Suzuki`（鈴木雅明、Suzukiski）——全部逐筆核整個掛名字串後排除。
+
+## 359（本批立）**封面與試聽的觀察（只寫觀察，不下結論——裁定 254）**
+
+- **CAA**：本組逐張探測 release-group 端點，候選 ~130 個 RG（秋吉 44 ＋第一世代 81 ＋補查 7），**5xx 為 0**，404 都是真的沒圖；入選 23 張全部 200。
+  秋吉的 404 集中在 **Concord／Ninety-One／Studio Songs 三家**（1978 年後的美國與日本 CD 時期），1950–70 年代的原盤反而幾乎都有圖。
+- **Apple**（店面 jp 為主、us 對照，`search` 與藝人目錄兩種查法）：16／23 有命中且軌數與 MB 一致，明細在各卡 `risk`。
+  **未命中的 7 張**：Meditation、Dedications、Dedications (II)、Toshiko Plays Billy Strayhorn、Time Stream（只回 1997 同名別碟）、Got The Spirit、ウガンダ——
+  **DAN／Discomate／EASTWORLD／TBM／Toshiba 這五家 1970 年代日本廠的目錄在 Apple 上幾乎全空**（c-116 第 6 條、c-121 第 5.2 節那條規律第三次應驗）。
+- **灰色再發廠要注意**：《The Many Sides of Toshiko》Apple 只有 Record Vault 與 TP4 Music（版權到期再發）；《Her Trio Her Quartet》《George Wein Presents Toshiko》是 1201 Music——研究層配對時要核曲目與長度。
