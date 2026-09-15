@@ -353,3 +353,26 @@ MB first-release-date 2014（Johnny's Disk JD-36-CD 是首發），演奏 1980�
 
 另研究層補正三處（不影響年份）：《Stan Getz Plays》原 Norgran MGN 1042 是 11 軌不是 8 軌；
 《at the Blackhawk》錄音月份無來源、不得寫；《Oblique》美國首發 CD 是 1990 不是 1992。
+
+## 第 367 條（主線 2026-09-15，研究層 a 組交件後）：**《Meditation》的 catno 改 DAN VC-6001；a 組年份全部成立**
+
+策展層 `label` 寫「DAN VC-7513（1971）」——**VC-7513 是 1976 年再發編號**，1971 原盤是 **VC-6001**
+（維基／microgroove／jazzdisco 三邊一致）。MB 把再發 catno 掛在 1971 那筆 release 上，
+是第 262 條（日期、廠牌、catno、載體要出自同一筆）的又一個實例。**卡單 `label` 已改，年份不動。**
+
+a 組其餘年份全部成立：《The Many Sides of Toshiko》維持 1958（錄音 1957-09-28，正文寫
+「1957 年 9 月錄音、翌年發行」）；《Toshiko Meets Her Old Pals》1961（MB 的 1974 是再發，
+King SKC 3 原盤未建檔，留本機補）；陸前高田 1980 是演奏年；《Loving You George》1975。
+
+**研究層擋下策展層 20 處（15 張）**，全部寫進 notes，其中五處是**無來源的「第一張／唯一」句**
+（Toshiko's Piano「日本樂手在美廠第一張」、Candid「唯一日本樂手領銜作」、Strayhorn「唯一單一作曲家專輯」、
+TBM「第一張」、Sound Ltd.「系列頭號」）——**與第 253 條同形，寫作層一律不得沿用**。
+另《Dedications》受獻者不是八位鋼琴手、Inner City IC 6046 是第二集不是第一集的美版、
+《Salaam Salaam》是鋼琴三重奏不是電鋼琴四重奏、高橋達也 1966 才接任團長。
+
+**試聽**：a 組三種查法找回 8 張、b 組找回 6 張＋修正 1 筆，**全批 21→38/45**。
+`ウガンダ` 那筆附條件（官方 ℗1972 但 7 軌、前三首各拆 I/II，秒數合計與資料庫端 4 軌相符）——
+**寫作層按曲名配，不得寫軌數**。無來源 7 張：Meditation、Dedications、Dedications (II)、
+Toshiko Plays Billy Strayhorn、Time Stream、Got The Spirit、Jamal Plays Jamal。
+
+**QA 的「千分位逗號 30,890」是假陽性**——那是澳洲 Impulse! 的 catno `IL-30,890`。
