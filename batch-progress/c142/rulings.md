@@ -197,3 +197,47 @@ The Worm 走 **(c)**：Solid State 屬 United Artists，1968 年 Liberty 尚未�
   2. **Solid State／United Artists 的目錄（McGriff、Thad Jones/Mel Lewis、Joe Williams……）照判準表 (c) 退**；**World Pacific／Pacific Jazz 照 (b) 收、`label` 寫原廠**（本組 King Kong 是第四張）。
   3. **Jimmy McGriff 的碟池中已有三張 seed（I've Got a Woman、The Worm、Electric Funk）**，後批排到他的 Blue Note／Solid State 目錄要先實掃——**`chk-prop` 對「群組掛名 vs 個人掛名」的撞卡是假陰性**（第 600 條退表 #1）。
   4. **Charles Earland／Melvin Sparks／Leo Morris（Idris Muhammad）／James Blood Ulmer** 這批人在 1970 年代初的 Blue Note 目錄會大量出現，本組四張（Say It Loud!、Turning Point、Fancy Free、Accent on the Blues）是他們的起點，正文互指時要分場。
+
+## 第 611 條（主線 2026-09-16，策展 a 組交件後）：**`chk-prop` 的撞卡檢查折不到「群組掛名 vs 個人掛名」——標記 0 不等於沒撞卡**
+
+a 組退掉的《The Worm》是 `Jimmy McGriff Organ and Blues Band` 掛名，池中那張是 `Jimmy McGriff`
+——**`chk-prop` 兩個字串折不到同一鍵，跨批撞卡報 0**，是代理自己實掃卡池抓到的。
+**裁定**：`chk-prop` 的「標記 0」**只代表程式查得到的那幾種撞法沒中**，
+**簡報第一節第 2 點的「實掃卡池」仍然是每一筆都要做的動作，不得因為 chk-prop 清了就跳過。**
+（「失敗與正常長得一樣」家族：**沒撞到，與撞到了但工具折不出來，在 chk-prop 的輸出上長得一模一樣。**）
+——與第 179／250／324 條（同名撞擊）、第 307 條（掛名先例）是同一組問題的三個面向。
+
+## 第 612 條（同日）：**新判準——廠牌的「檔期廣告」比評論欄更硬**
+
+a 組靠 **Billboard 1970-07-18 一整版「Liberty/UA, Inc. presents a solid Jazz program for July & August」廠牌檔期廣告**，
+把《The Sixth Sense》與《Soul Symphony》從「MB＝jazzdisco＝Discogs 三邊一致的 1969」推到 **1970**。
+**階序更新**：**廠牌檔期廣告 ＞ 評論欄／新片欄 ＞ Discogs 原壓群 ＞ jazzdisco／MB 欄位。**
+理由：檔期廣告是廠牌自己在**上市當月**掛的，評論欄可能延後幾週到幾個月。
+
+⚠ **這一段（1968–70）MB 與 jazzdisco 的年份是系統性提前一年**——**配好目錄號卻拖到隔年才上市**。
+a 組 23 筆裡改判 **12 張**（過半）：On Broadway／Plain Talk／Heaven on Earth／The Ultimate／Understanding **1968→1969**；
+The Flip／The Prisoner／The Sixth Sense／King Kong／Soul Symphony／Accent on the Blues／Song for My Daughter **1969→1970**。
+**c-143（1970–74）要預期同樣的偏移。**
+
+## 第 613 條（同日）：**a 組收 20 退 3；兩張進 §5.6 待撈清單**
+
+**退表**：
+1. Jimmy McGriff Organ and Blues Band《The Worm》——**撞池**（見第 611 條）＋原盤 Solid State SS-18045（第 313 條判準表 (c)）。
+2. Horace Silver《The Best of Horace Silver》BST 84325——**合輯**（六軌來自六個不同場次，Discogs 12 筆全標 Compilation，
+   **MB 的 `secondary-types` 是空的**——第 397 條又中一次）→ **歸 §5.6**。
+3. Edmond Hall《Celestial Express》B-6505——Blue Note 1969 年「Jazz Classics 6500 系列」的 78 轉重組再發，
+   **內容與池中 c-135 b 的《Memorable Sessions in Jazz》是同兩場** → **歸 §5.6**。
+
+**MB 資料錯一筆**：Jack Wilson《Song for My Daughter》的 catno 在 MB 登成 **BST 84238**
+——**那是 Donald Byrd《Mustang!》的號**（池中已有），真號 **BST 84328**；enum 照抄了，**rgMbid 本身沒錯**。
+
+**可逆的一筆**：《King Kong》原盤不是 Blue Note，是 **World Pacific Jazz ST-20172（1970）**，
+依 c-141 判準表 (b) 收、`label` 寫原廠。**主線若日後收緊判準，要與 c-141 的 Pacific Jazz 三張一起退。**
+
+## 第 614 條（同日）：**紙本抓取端的訂正——Billboard 1969 年的檔名有三種形狀**
+
+a 組入庫 `billboard-bn-1968h2-1970-ocr.txt`（112 期）與 `cashbox-bn-1968h2-1970-ocr.txt`（110 期），
+**1970 年兩刊至此全掃**。並**訂正 c-141 a 寫在 SOURCES 表的抓取端筆記**：
+**Billboard 1969 年的檔名有三種形狀（`BB-`、`Billboard%20`、`Billboard-`），1970 年只有 `Billboard%20`**
+——**只試一種會誤判成「這期抓不到」**。
+（又一個「失敗與正常長得一樣」：**檔案不存在，與檔名猜錯，在 404 上長得一模一樣。**）
