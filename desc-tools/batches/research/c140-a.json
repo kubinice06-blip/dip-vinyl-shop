@@ -1,0 +1,618 @@
+[
+ {
+  "key": "desc2:Joe Pass|For Django",
+  "artist": "Joe Pass",
+  "album": "For Django",
+  "facts": [
+   {
+    "f": "release-group 80abeaef 的欄位：title「For Django」、artist-credit「Joe Pass」（Person 2f43e416）、first-release-date 1964、primary-type Album、secondary-types 空，轄下 27 筆 release。**原盤是 1964 US Pacific Jazz PJ-85（mono，5637db03）與 Pacific Jazz 85／ST-85（stereo，4d86d8e1），12 吋 10 軌**；同年另有 JP Victor SMJ 7338、GB／NL Fontana 688 146 ZL、NZ Fontana TL688146。再發沿革：1975 JP Liberty LLJ-80059、1975 GB United Artists UAS 29768、1978 JP Pacific Jazz GXF-3107／K23P 6706、1998 GB BGO CD、2001 JP TOCJ-9319（11 軌）、**2022-02-04 Blue Note／Pacific Jazz B0033158-01（Tone Poet，沿用 ST-85 號）**、2024-12-18 JP Blue Note UCCQ-9783 HQCD。原 LP 十軌與長度：Django 3:23／Rosetta 3:09／Nuages 2:36／For Django 3:00／Night and Day 3:49／Fleur d'ennui 2:57／Insensiblement 3:14／Cavalerie 4:25／Django's Castle 3:51／Limehouse Blues 2:16。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=80abeaef-6c4f-45c6-abe7-0029b33dd2e1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1964 年 12 月 12 日第 26 頁的爵士評論欄**評「FOR DJANGO—Joe Pass—Pacific Jazz 85」：「Joe Pass pays tribute to the talent and influence of gypsy guitarist Django Reinhardt on this vibrant jazz set from Pacific. The guitarist has a subtle but always lyrical touch that makes for top-notch mood listening enjoyment. **The quartet has that special rapport that spells communication**—particularly effective are 'Django,' 'Fleur d'Ennui,' [Night] And Day' and 'Limehouse Blues.'」——這是本盤在同期紙本上的實體目錄號記載，與 MB／Discogs 相互獨立。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-12-12.pdf"
+   },
+   {
+    "f": "英文維基 infobox：released 1964 年 10 月、recorded 1964 年 10 月、**studio 是 Pacific Jazz Studios, Hollywood（不是 Van Gelder，本組唯一一張非 Englewood Cliffs 的錄音室盤）**、producer Richard Bock、label Pacific。編制四重奏：Joe Pass 吉他、John Pisano 節奏吉他、Jim Hughart 貝斯、Colin Bailey 鼓。十軌裡〈Django〉是 John Lewis 寫給 Reinhardt 的題獻曲、〈Nuages〉〈Fleur d'Ennui〉〈Cavalerie〉〈Django's Castle〉是 Reinhardt 自己的曲子、〈For Django〉是 Pass 寫的。AllMusic 的 Scott Yanow 給 4.5 星，說本盤「long considered a classic」，並點出**Pass 其實受 Charlie Christian 的影響大於 Reinhardt、當時已經成形了自己的語法，「he has no difficulty fitting into the music」**。維基 chronology：前作《Joy Spring》（1964）、後作《A Sign of the Times》（1965）。",
+    "src": "https://en.wikipedia.org/wiki/For_Django"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=PJ-85` 回 11 筆，**其中只有兩筆是本盤（都是 US Pacific Jazz PJ-85 Vinyl LP，年份都標 1964）**，其餘九筆是 SPJ 85 005、PJ 8501、PJ853 之類的同號干擾。`catno=ST-85` 回 100 筆幾乎全是 Capitol ST858（George Shearing）等噪音——**ST-85 這個號在 Discogs 上不具鑑別力，判年份只能靠 PJ-85 那一組**。兩筆美國原壓年份一致（1964），與同期紙本、MB、維基四邊相符。",
+    "src": "https://api.discogs.com/database/search?catno=PJ-85&per_page=100"
+   },
+   {
+    "f": "廠牌邊界：Pacific Jazz 是 Richard Bock 1952 年在洛杉磯創的獨立廠，1965 年賣給 Liberty；**Blue Note 自己也是 1965 年被 Liberty 併購**（英文維基 Blue Note Records：「Blue Note was acquired by Liberty Records in 1965 and Lion... retired in 1967」）。兩個目錄因此在 Liberty→United Artists→EMI→Universal 這條線上合流，Blue Note 2022 年才用 Tone Poet 系列重發本盤並沿用 ST-85 的號。**本盤 1964 年首發時與 Blue Note 毫無關係。**",
+    "src": "https://en.wikipedia.org/wiki/Blue_Note_Records"
+   },
+   {
+    "f": "同批跨卡：本批 a 組另有 Joe Pass《Joy Spring》——1964-02-06 在 Los Angeles 的 Encore Theater 現場錄音，班底是 Mike Wofford 鋼琴、Jim Hughart 貝斯、Colin Bailey 鼓，1981 年才以 Blue Note LT-1103 首次發行。**兩張的共同成員只有 Hughart 與 Bailey，《For Django》多了 John Pisano 的第二把吉他、少了鋼琴**；一張是 1964 年 10 月的錄音室四重奏、一張是同年 2 月的現場。正文不得互抄或寫成同一個班底。",
+    "src": "https://en.wikipedia.org/wiki/Joy_Spring_(Joe_Pass_album)"
+   }
+  ],
+  "hookCandidates": [
+   "十首曲子裡有五首直接來自 Django Reinhardt，但 Yanow 說了實話：Pass 真正的養分來自 Charlie Christian——這張致敬盤反而是他把自己的手法擺進別人房間的紀錄",
+   "1964 年 12 月 Cash Box 的評論沒去誇吉他手，誇的是四個人之間「that special rapport that spells communication」——那年 Pass 才剛從勒戒機構 Synanon 出來沒幾年"
+  ],
+  "sound": "10 軌、約 32 分半的吉他四重奏，沒有鋼琴：Joe Pass 的主奏之外只有 John Pisano 的節奏吉他、Jim Hughart 的貝斯與 Colin Bailey 的鼓。曲目一半是 Django Reinhardt 曲庫（〈Nuages〉〈Fleur d'ennui〉〈Cavalerie〉〈Django's Castle〉）與 John Lewis 的〈Django〉，另一半是〈Night and Day〉〈Limehouse Blues〉這類搖擺標準曲；單軌多在 2–4 分鐘，是小品密度而非長篇即興。錄音在 Hollywood 的 Pacific Jazz Studios，不是 Van Gelder。",
+  "keyTracks": [
+   "Django",
+   "Nuages",
+   "Limehouse Blues"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1964 成立，本層以同期紙本獨立佐證。** 舉證階序四層全部指向 1964：**同期紙本＝Cash Box 1964-12-12 p26 的評論已印出「Pacific Jazz 85」**；Discogs `catno=PJ-85` 的兩筆美國原壓都標 1964（第 531 條）；維基 infobox 記 1964 年 10 月發行、10 月錄音；MB first-release-date 1964、原盤 release 5637db03／4d86d8e1 也都 1964。⚠ **第 431 條的警覺**：維基的「1964-10」與 Apple 的 1964-10-01 很可能同源，不能當兩個獨立來源算——但 Cash Box 的紙本是第三個獨立來源，12 月的評論與 10 月的發行月相容（Cash Box 評爵士盤普遍落後一至兩個月，本組另外十多張都是這個時差）。⚠ **第 526 條不適用**：本盤走的是 Pacific Jazz 的 PJ 號，不是 Blue Note 的 BLP 4000 系列。",
+  "notes": "**覆核策展層：RG 80abeaef／原盤 PJ-85 10 軌／掛名 `Joe Pass`／`label` 寫 Pacific Jazz／年份 1964 全部成立，本張未擋下。** 本層補上策展層沒有的一手佐證：Cash Box 1964-12-12 p26 的評論。｜⚠ **原盤他廠（第 472／512 條）**：`label` 是 Pacific Jazz PJ-85／ST-85，**Blue Note 名下最早只有 2022 年的 Tone Poet**；正文不得把本盤寫成「Blue Note 的唱片」，也不要寫成「Blue Note 1964 年發的」。兩廠的關係是 1965 年雙雙被 Liberty 買下後在同一條母帶線上合流（facts 第 5 條），可以寫，但要寫成後來的事。｜⚠ **非 Van Gelder**：本組十八張裡十五張錄於 Englewood Cliffs 的 Van Gelder Studio，**本盤錄在 Hollywood 的 Pacific Jazz Studios、製作人是 Richard Bock 不是 Alfred Lion**——這是本卡與同批其他卡最乾淨的區隔點，正文若要寫錄音現場請務必寫對。｜**人名邊界**：John Pisano／Jim Hughart／Colin Bailey 有維基專輯層背書，可寫。｜**跨卡連結**：與同批《Joy Spring》共用 Hughart＋Bailey，但**不是同一個班底**（facts 第 6 條），不得互抄。｜非選輯：單一錄音計畫的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Johnny Coles|Little Johnny C",
+  "artist": "Johnny Coles",
+  "album": "Little Johnny C",
+  "facts": [
+   {
+    "f": "release-group 47133e15 的欄位：title「Little Johnny C」、artist-credit「Johnny Coles」（Person 717377ec）、first-release-date 1964-03、primary-type Album、secondary-types 空，轄下 7 筆 release。**原盤 54858f25 是 1964-03 US Blue Note BST 84144、12 吋 6 軌**（mono 的 BLP 4144 MB 未建，Discogs 有）。再發沿革：1997 XE CD 7243 8 32129 2 7、2005-02-15 US RVG CD 7243 8 64475 2 4、2010 US Audio Wave AWMXR-0006、2015-11 Music Matters MMBST-84144、2023-04-21 Blue Note Classic Vinyl 00602455041449、2024-02-28 JP UCCQ-9657 HQCD。原 LP 六軌與長度：Little Johnny C 5:13／Hobo Joe 8:16／Jano 7:24／My Sweet Passion 7:10（⚠ 見下）／Heavy Legs 6:02／So Sweet My Little Girl 6:26。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=47133e15-ae17-4005-a424-2f2036eb147d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1964 年 4 月 4 日第 24 頁的 JAZZ PICKS** 評「'LITTLE JOHNNY'—Johnny Coles—Blue Note 4144」：「Ace jazz trumpeter Johnny Coles teams-up with an accomplished crew of jazzmen on this Blue Note set including Leo Wright (alto), Joe Henderson (tenor), Duke Pearson (piano) and [Bob] Cranshaw (bass). Coles pulls out all the musical stops as he goes through his avant-garde paces with all of his expected authority. **Highlights of the swingin' session include 'Hobo Joe,' 'Jano' and 'My Secret Passion.'**」——這段同時做兩件事：坐實 1964 年的實體發行，並印出第四軌的正確曲名是 **My Secret Passion**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-04-04.pdf"
+   },
+   {
+    "f": "**Cash Box 1964 年 4 月 11 日第 35 頁「NEW SPRING ALBUM PRODUCT — A Re-Cap Of Product Issued In March And April」**的 BLUE NOTE 欄，把本盤與同期新片並列：「Little Johnny C—Johnny Coles—BLP 4144／BST 84144」「Inventions & Dimensions—Herbie Hancock—BLP 4147／BST 84147」「The Freedom Rider—Art Blakey And The Jazz Messengers—BLP 4156／BST 84156」「Black Fire—Andrew Hill—BLP 4151／BST 84151」「Evolution—Grachan Moncur III—BLP 4153／BST 84153」「Black Orchid—The Three Sounds—BLP 4155／BST 84155」。**這一張表本身就是第 526 條的教材：4144、4147、4151、4153、4155、4156 六個目錄號是同一批 1964 年 3–4 月出的貨，目錄號完全不等於發行順序。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-04-11.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4144 的兩場錄音：**1963-07-18（tk.8 Little Johnny C／tk.12 Hobo Joe／tk.21 Jano，鼓手 Walter Perkins）與 1963-08-09（tk.4 Heavy Legs／tk.18 My Secret Passion／tk.22 So Sweet My Little Girl，鼓手 Pete La Roca）**，兩場都在 Van Gelder Studio, Englewood Cliffs；其餘編制相同：Johnny Coles 小號、Leo Wright 中音薩克斯風與長笛、Joe Henderson 次中音薩克斯風、Duke Pearson 鋼琴、Bob Cranshaw 貝斯。年份欄記 1964。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox 記 released「Early March 1964」（引 Billboard 1964-03-28）、recorded 1963-07-18（#1–3）與 1963-08-09（#4–6）、producer Alfred Lion、label Blue Note BST 84144。**六軌裡除〈Hobo Joe〉是 Joe Henderson 寫的之外，其餘五首全是 Duke Pearson 的曲子**——Pearson 1963 年起接替 Ike Quebec 做 Blue Note 的 A&R。Coles 的 chronology：前作是 1961 年 Epic 的《The Warm Sound》、後作要等到 1971 年的《Katumbo (Dance)》——**本盤之後他有十年沒有再以領銜身分出過專輯**。AllMusic 的 Scott Yanow 給 4.5 星：「The typically impressive Blue Note lineup handles the obscure material with creative invention」。",
+    "src": "https://en.wikipedia.org/wiki/Little_Johnny_C"
+   },
+   {
+    "f": "串流採信 724873023（us 店面，Johnny Coles《Little Johnny C (The Rudy Van Gelder Edition Remastered)》，℗ 2004 Blue Note Records，6 軌）：曲序與原 LP **逐軌同序且無加曲**——1 Little Johnny C 5:11／2 Hobo Joe 8:15／3 Jano 7:23／4 **My Secret Passion** 7:10／5 Heavy Legs 6:00／6 So Sweet My Little Girl 6:27，**六軌全部有試聽**。第 254 條三種查法裡 `search?term=Johnny Coles Little Johnny C&entity=album&country=us` 一種即命中；jp／gb 店面同 collectionId。",
+    "src": "https://itunes.apple.com/lookup?id=724873023&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六首曲子裡五首是 Duke Pearson 寫的——那年 Pearson 剛接下 Blue Note 的 A&R，等於是替公司裡一個不太紅的小號手量身訂做一張唱片",
+   "Cash Box 1964 年 4 月 11 日那張「三四月新貨總表」把 4144、4147、4151、4153、4155、4156 六個號一起列出來——Blue Note 的目錄號從來不是出貨順序"
+  ],
+  "sound": "6 軌、約 40 分半的六重奏 hard bop：Johnny Coles 的小號在前，Leo Wright 的中音薩克斯風與長笛、Joe Henderson 的次中音在兩側，Duke Pearson 鋼琴、Bob Cranshaw 貝斯、Walter Perkins（第 1–3 軌）與 Pete La Roca（第 4–6 軌）分擔鼓。單軌普遍六到八分鐘，是留給獨奏走完整段的長度；〈Hobo Joe〉8:16 最長。曲子除〈Hobo Joe〉外全出自 Duke Pearson。串流側歸 Jazz。",
+  "keyTracks": [
+   "Little Johnny C",
+   "Hobo Joe",
+   "My Secret Passion"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1964 成立，且本層在此推翻 Discogs。** ⚠ **第 550 條的正面案例**：Discogs `catno=BLP 4144` 的**三筆美國原壓全部標 1963**（另有一筆 1966 Liberty 期再壓、一筆 2010 再發），`catno=BST 84144` 的最早一筆也標 1963——**整群繼承了同一個錯的回填年（1963 是錄音年）**。**同期紙本壓過它**：Cash Box 1964-04-04 p24 已評出「Blue Note 4144」，1964-04-11 p35 的「三四月新貨總表」再次把 BLP 4144／BST 84144 列為 1964 年 3–4 月出的貨；維基 infobox 也引 Billboard 1964-03-28 記 early March 1964。MB first-release-date 1964-03 與紙本相符。**年份取 1964，Discogs 的 1963 不採。** ⚠ **第 526 條**：4144 這個號與 4147／4151／4153／4155／4156 同批出貨，不得用目錄號回推年份。",
+  "notes": "**覆核策展層：RG 47133e15／原盤 BST 84144 6 軌／掛名 `Johnny Coles`／`label` Blue Note／年份 1964 全部成立，本張未擋下。**｜⚠ **擋下 MB 的曲名**：MB release 54858f25 第四軌寫「My **Sweet** Passion」，**Cash Box 1964-04-04 的評論、jazzdisco、Apple 724873023 三邊都作「My **Secret** Passion」**——正文若要點名這一軌，**一律寫 My Secret Passion**，不要抄 MB。（同一張碟第六軌才是「So **Sweet** My Little Girl」，MB 很可能是被這一軌帶偏。）｜⚠ **mono／stereo**：MB 只建了 stereo 的 BST 84144，mono 的 BLP 4144 要看 Discogs 與 Cash Box；正文寫目錄號請兩個都帶（BLP 4144／BST 84144）。｜**可寫的生涯位置**：本盤是 Coles 1961 年《The Warm Sound》之後的第二張領銜作，**下一張領銜要等到 1971 年的《Katumbo (Dance)》**（維基 chronology），這個十年空窗是本卡最有力的一句。｜**跨卡連結**：Pete La Roca 在本盤打第 4–6 軌的鼓，而他本人是同批 a 組《Basra》的領班；Duke Pearson 寫了本盤六分之五的曲子，也是同批《Wahoo!》的領班、同批《I'm Tryin' to Get Home》的編曲——**三張卡可互相呼應，但不得寫成同一個班底**。｜**串流採信 724873023**（us，6 軌逐軌同序、無加曲、全部有試聽）。**本卡原本缺試聽，本層已補上固定來源。**｜非選輯：單一錄音計畫的原創專輯。"
+ },
+ {
+  "key": "desc2:Joe Pass|Joy Spring",
+  "artist": "Joe Pass",
+  "album": "Joy Spring",
+  "facts": [
+   {
+    "f": "release-group deee0cab 的欄位：title「Joy Spring」、artist-credit「Joe Pass」（Person 2f43e416）、first-release-date 1964（⚠ 出自一筆 bare release）、primary-type Album、**secondary-types 空——但本盤實際是現場錄音**，轄下 4 筆 release。release 端點：6c7debbf（標「1964 US 12 吋黑膠」5 軌，**label-info 空、無 catalog-number**，是沒有實體對應的 bare 建檔）、**c5f6d9e8（1981 US Blue Note LT-1103，12 吋 5 軌，這才是首次商業發行）**、bf4f189d（1995 US CD 5 軌，無廠牌）、4652d205（1996-01-23 US Pacific Jazz 7243 8 35222 2 4，bc 724383522224）。原 LP 五軌與長度：Joy Spring 8:39／Sometime Ago 6:34／The Night Has A Thousand Eyes 6:58／Relaxin' At Camarillo 10:29／There Is No Greater Love 9:02。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=deee0cab-8ab2-3db9-8dd4-6e160a8374d7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "英文維基 infobox 明寫 **type = live**：recorded 1964-02-06、**venue 是 Los Angeles 的 Encore Theater**、label Pacific Jazz、producer Richard Bock、**released 1981**。正文第一句：「''Joy Spring'' is a live album by jazz guitarist Joe Pass that was **recorded in 1964 for Pacific Jazz Records, but not released until 1981 under the Blue Note label by Liberty records**.」編制四重奏：Joe Pass 吉他、Mike Wofford 鋼琴、Jim Hughart 貝斯、Colin Bailey 鼓。五軌全是標準曲與 bebop 曲目：Clifford Brown 的〈Joy Spring〉、Sergio Mihanovich 的〈Sometime Ago〉、Buddy Bernier／Jerry Brainin 的〈The Night Has a Thousand Eyes〉、Charlie Parker 的〈Relaxin' at Camarillo〉、Isham Jones／Marty Symes 的〈There Is No Greater Love〉。維基 chronology：前作《Catch Me!》（1963）、後作《For Django》（1964）。",
+    "src": "https://en.wikipedia.org/wiki/Joy_Spring_(Joe_Pass_album)"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=LT-1103` 回 4 筆，**兩筆是本盤（都是 US Blue Note／Blue Note Classic LT-1103，Vinyl LP，年份都標 1981）**，另兩筆是加拿大 Love Light 的 LLT 1103／LLT-1103 干擾。Discogs 的掛名寫「**Joe Pass Quartet**」（與卡單／MB 的 `Joe Pass` 不同，見 notes）。**沒有任何一筆 LT-1103 的壓片標在 1981 年之前**——這與「1964 年沒有實體發行」相符。",
+    "src": "https://api.discogs.com/database/search?catno=LT-1103&per_page=100"
+   },
+   {
+    "f": "AllMusic 的 Scott Yanow（經維基轉引）評：「**The group stretches out on five standards (the renditions are 6 1/2–10 1/2 minutes apiece) but never runs out of inventive ideas.** Easily recommended.」——五軌全部六分半到十分半，是現場盤才有的長度。《The Rolling Stone Jazz Record Guide》（1985）給 3／5、《The Penguin Guide to Jazz Recordings》（第 9 版）給 3／4。",
+    "src": "https://en.wikipedia.org/wiki/Joy_Spring_(Joe_Pass_album)"
+   },
+   {
+    "f": "廠牌路徑：Pacific Jazz 1965 年賣給 Liberty，Liberty 1968 年被 Transamerica 買下、同年與 United Artists 合併，1972 年整併為 United Artists Records，1979 年 EMI 買下 UA——**因此 1964 年為 Pacific Jazz 錄的這卷母帶，1981 年是掛在 Blue Note 的 LT 庫存系列（LT-1103）出土的**，1996 年的 CD 才改回 Pacific Jazz 的號（7243 8 35222 2 4）。英文維基 Blue Note Records 條記 Blue Note 本身也在 1965 年被 Liberty 併購、Alfred Lion 1967 年退休。",
+    "src": "https://en.wikipedia.org/wiki/Blue_Note_Records"
+   },
+   {
+    "f": "同批跨卡：本批 a 組另有 Joe Pass《For Django》——1964 年 10 月錄於 Hollywood 的 Pacific Jazz Studios，原盤 Pacific Jazz PJ-85，班底是 John Pisano 節奏吉他、Jim Hughart 貝斯、Colin Bailey 鼓（**沒有鋼琴**）。**兩張相隔八個月：2 月的《Joy Spring》是有鋼琴（Mike Wofford）的現場四重奏、10 月的《For Django》是雙吉他的錄音室四重奏**；共同成員只有 Hughart 與 Bailey。維基把《Joy Spring》排在《For Django》之前一位。",
+    "src": "https://en.wikipedia.org/wiki/For_Django"
+   }
+  ],
+  "hookCandidates": [
+   "1964 年 2 月在洛杉磯 Encore Theater 錄下的一晚，母帶在櫃子裡躺了十七年——1981 年才由 Blue Note 的 LT 庫存系列放出來，那時 Pacific Jazz 這個牌子早就換過三次主人",
+   "五首標準曲，每一首都拉到六分半以上、最長的〈Relaxin' at Camarillo〉超過十分鐘——這是現場才敢給的長度，錄音室盤《For Django》同年十首曲子加起來才三十二分鐘"
+  ],
+  "sound": "5 軌、約 41 分鐘的現場四重奏：Joe Pass 吉他、Mike Wofford 鋼琴、Jim Hughart 貝斯、Colin Bailey 鼓。每軌 6:34–10:29，全是 bebop 與標準曲——Clifford Brown 的〈Joy Spring〉、Charlie Parker 的〈Relaxin' at Camarillo〉、〈The Night Has a Thousand Eyes〉、〈There Is No Greater Love〉。有鋼琴、單吉他，與同年《For Django》的雙吉他無鋼琴編制正好相反。1964 年 2 月 6 日錄於 Los Angeles 的 Encore Theater。",
+  "keyTracks": [
+   "Joy Spring",
+   "Relaxin' at Camarillo",
+   "The Night Has a Thousand Eyes"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1981 成立（vault／庫存盤，兩個年份都查到）。錄音年 1964-02-06，首次商業發行年 1981。** 舉證：**Discogs `catno=LT-1103` 的兩筆美國原壓都標 1981，且沒有任何更早年份的壓片**（第 531 條）；維基 infobox released 1981、recorded 1964-02-06，正文明寫「recorded in 1964... but **not released until 1981**」；MB 轄下唯一一筆有廠牌有目錄號的黑膠就是 1981 的 LT-1103。⚠ **MB 的 first-release-date 1964 不可採**：它是被 bare release 6c7debbf（「1964 US 12\" Vinyl」，**label-info 空、無 catno**）拉出來的，那筆沒有任何實體對應——這正是第 470 條「一份來源要按欄位評價」的典型：同一個 RG 的 release 清單可信，frd 欄位不可信。⚠ 本層沒有 1981 年的同期紙本（repo 內與本層抓的 Cash Box 只涵蓋 1962–1967），**年份靠 Discogs 原壓群＋維基兩層成立**，未與紙本對質。",
+  "notes": "**覆核策展層：RG deee0cab／原盤 Blue Note LT-1103／年份 1981／`label` 寫 Blue Note 全部成立，本張未擋下。**｜⚠ **這是 vault 盤，正文必須把兩個年份分開寫**：1964 年 2 月 6 日在 Encore Theater 錄，1981 年才第一次發行。**不得寫成「1964 年的專輯」**。｜⚠ **這是現場盤，但 MB 的 secondary-types 是空的**（維基 infobox type=live、venue=Encore Theater, Los Angeles）——策展層的 `releaseType` 若照 MB 填成 Album，本層建議以維基為準視為現場盤；**這一點是可逆的欄位問題，不影響卡池結構，本層直接定：正文寫成現場錄音**。｜⚠ **掛名分歧**：卡單／MB 作 `Joe Pass`，**Discogs 兩筆原壓都掛「Joe Pass Quartet」**。照 MB＝池中掛名不動，「Joe Pass Quartet」進 queryAlias（策展層已做）。｜⚠ **廠牌**：原始錄音是 Pacific Jazz 的案子（製作人 Richard Bock），**但實體首發是 Blue Note LT-1103**，`label` 寫 Blue Note 成立；正文若要提 Pacific Jazz，要寫成「母帶原屬 Pacific Jazz」而不是「Pacific Jazz 發行」。｜**人名邊界**：Mike Wofford／Jim Hughart／Colin Bailey 有維基專輯層背書，可寫。｜**跨卡連結**：與同批《For Django》同一位領班、共用 Hughart＋Bailey，**但編制與場合完全不同**（facts 第 6 條），兩張卡的正文不得互抄。｜非選輯：單一場次的現場錄音。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:George Braith|Extension",
+  "artist": "George Braith",
+  "album": "Extension",
+  "facts": [
+   {
+    "f": "release-group eb8a47d6 的欄位：title「Extension」、artist-credit「George Braith」（Person c5afb6db）、**first-release-date 1964（＝錄音年，非發行年）**、primary-type Album、secondary-types 空，轄下只有 2 筆 release：74e67470（MB 標「1964」US Blue Note BLP 4171，12 吋 6 軌）與 c446ec7d（2024-05-22 JP Blue Note UCCQ-9673 HQCD，Blue Note@85 UHQCD，bc 4988031631485）。原 LP 六軌與長度：Nut City 5:57／Ethlyn's Love 7:22／Out Here 6:58／Extension 6:39／Sweetville 6:03／Ev'ry Time We Say Goodbye 4:30。**MB 的 1964 是錄音年，實體發行是 1967，見 yearVerified。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eb8a47d6-7022-4cef-b66c-613713c330d1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1967 年 1 月 21 日第 25 頁的 Blue Note 整版廣告**，標題「FOR THE 'LOOK' OF PURE JAZZ」，兩張並列：「**BLP 4171／BST 84171 — \"EXTENSION\" — George Braith**」與「BLP 4196／BST 84196 — BLUE SPIRITS — Freddie Hubbard」，頁腳印著「THE FINEST IN JAZZ SINCE 1939 — BLUE NOTE — **A PRODUCT OF LIBERTY RECORDS**」。**這是本盤在同期紙本上的首次出現，時間是 1967 年 1 月、Liberty 期的盤標**；本層掃過 1964-01 至 1967-08 共 154 期 Cash Box，1964–1966 全段沒有 BLP 4171 的任何條目（唯一的「4171」是 1965-02 Top 100 Albums 裡 Goldfinger 原聲帶的 United Artists UAL 4171，不同廠不同碟）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1967/CB-1967-01-21.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4171 **年份欄 1967**，錄音 **1964-03-27 Van Gelder Studio, Englewood Cliffs**，母帶編號 1325–1330（tk.5 Nut City／tk.10 Sweetville／tk.14 Ethlyn's Love／tk.15 Out Here／tk.31 Extension／tk.33 Ev'ry Time We Say Goodbye），編制四人：**George Braith 次中音、高音、中音薩克斯風；Billy Gardner 管風琴；Grant Green 吉他；Clarence Johnston 鼓**。附註「also released on Blue Note BST 84171 in 1967」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released **1967**、recorded 1964-03-27、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BST 84171。正文第一句：「''Extension'' is **the third album** by American saxophonist George Braith recorded in 1964 and released on the Blue Note label.」chronology：前作《Soulstream》（1963）、後作《Laughing Soul》（1966）——**兩張都比本盤早出**，本盤是 Braith 在 Blue Note 的最後一張。AllMusic 的 Stephen Thomas Erlewine 給 4.5 星：「George Braith turned in his strongest record with ''Extension''. **Largely freed from the restraints of the dueling horns**, Braith is able to explore the outer reaches of his music. He still remains grounded in soul-jazz — any guitar-organ combo is bound to have soul-jazz roots — but he pushes the music toward adventurous hard bop」。",
+    "src": "https://en.wikipedia.org/wiki/Extension_(George_Braith_album)"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4171` 的**兩筆美國原壓都標 1967**（另兩筆是同號干擾的 Polydor／Urban 合輯）；`catno=BST 84171` 的三筆美國盤分別是 1967（Liberty Records, Inc. 盤標）、1967（Blue Note）、1970（Liberty/UA）。**沒有任何一筆 1964–1966 的壓片。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4171&per_page=100"
+   },
+   {
+    "f": "編制的跨卡意義：本盤的管風琴＋吉他＋鼓四重奏（Billy Gardner／Grant Green／Clarence Johnston）與同批 a 組 Big John Patton《The Way I Feel》（Grant Green 吉他、Ben Dixon 鼓）、Freddie Roach《All That's Good》（**Clarence Johnston 鼓**）是同一條 Blue Note 管風琴線上的人。jazzdisco 另記 Braith 本人 1963 年就以薩克斯風手身分參與 Patton 的《Blue John》（BLP 4143）錄音。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   }
+  ],
+  "hookCandidates": [
+   "1964 年 3 月 27 日一天錄完，然後在 Blue Note 的櫃子裡放了將近三年——1967 年 1 月出貨時，盤標上已經印著「A Product of Liberty Records」",
+   "Erlewine 說這是 Braith 最好的一張，理由是他終於「largely freed from the restraints of the dueling horns」——不用再同時吹兩支管子，剩下的就是他跟 Grant Green 的吉他對著走"
+  ],
+  "sound": "6 軌、約 37 分半的管風琴四重奏：George Braith 的次中音／高音／中音薩克斯風在前，Billy Gardner 的管風琴、Grant Green 的吉他、Clarence Johnston 的鼓在後——吉他加管風琴的底子是 soul jazz，但曲子往 hard bop 推。五首 Braith 自己的曲子加一首 Cole Porter 的〈Ev'ry Time We Say Goodbye〉；單軌六到七分鐘，只有那首 Porter 標準曲收在 4:30。1964 年 3 月 27 日一天錄完於 Van Gelder Studio。",
+  "keyTracks": [
+   "Nut City",
+   "Extension",
+   "Ev'ry Time We Say Goodbye"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1967 成立，本層以同期紙本獨立佐證，並在此推翻 MB。** ⚠ **MB 的 1964 是錄音年不是發行年**：RG first-release-date 1964、release 74e67470 也標「1964」，但那一筆的內容（BLP 4171、6 軌）與 1967 年的實體完全相同，是把 session 日期填進了 date 欄。**舉證階序四層一致指向 1967**：**同期紙本＝Cash Box 1967-01-21 p25 的 Blue Note 整版廣告以新片身分推 BLP 4171／BST 84171，頁腳已是「A Product of Liberty Records」**；Discogs `catno=BLP 4171`／`BST 84171` 的美國原壓**全部標 1967，沒有更早年份的壓片**（第 531 條）；jazzdisco 年份欄 1967；維基 infobox released 1967。本層另掃過 1964-01→1967-08 共 154 期 Cash Box，**1964–1966 全段查無 BLP 4171**（第 509b 條：全段沒有廣告或評論本身是證據）。⚠ **第 526 條的教材**：4171 這個號在 1964 年 3 月就分配了，卻排在 1965 年的 4177／4179／4181 與 1966 年的 4207 之後才出貨——**本組絕不可用目錄號回推年份**。",
+  "notes": "**覆核策展層：RG eb8a47d6／原盤 BLP 4171／BST 84171／掛名 `George Braith`／`label` Blue Note／年份 1967 全部成立，本張未擋下。** 策展層已正確標出「MB 74e67470 標 1964＝錄音年」，本層以 Cash Box 1967-01-21 的廣告把它坐實。｜⚠ **正文必須把兩個年份分開寫**：1964 年 3 月 27 日錄、1967 年 1 月才上市。**不得寫成「1964 年的專輯」**，也不要寫成「壓了三年才發」以外的推測（為什麼壓著，本層查不到一手說法）。｜⚠ **生涯位置要小心**：維基說本盤是 Braith「第三張專輯」，但 chronology 的後作《Laughing Soul》標 1966——**以出貨順序看，本盤是 Braith 在 Blue Note 的最後一張、發行順序上排在《Laughing Soul》之後**。正文寫「第三張」時請跟著錄音順序寫，或直接寫「他在 Blue Note 的最後一張」。｜⚠ **Braith 的招牌是同時吹兩支管子**（他自製的 braithophone／stritch），**但本盤正是他放下這個噱頭的那一張**（Erlewine 的原話），正文不要把「雙管齊吹」當本盤的賣點。｜**人名邊界**：Grant Green 有維基獨立條目與專輯層背書，可寫；Billy Gardner／Clarence Johnston 只在維基與 jazzdisco 的編制欄，可寫但不宜當主軸。｜**跨卡連結**：Grant Green 也在同批《The Way I Feel》、Clarence Johnston 也在同批《All That's Good》——可呼應，**不得寫成同一個班底**。｜非選輯：單一 session 的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Big John Patton|The Way I Feel",
+  "artist": "Big John Patton",
+  "album": "The Way I Feel",
+  "facts": [
+   {
+    "f": "release-group d4a9fa82 的欄位：title「The Way I Feel」、artist-credit「John Patton」（Person b76182c3，US，1935–2002）、first-release-date 1964、primary-type Album、secondary-types 空，轄下 2 筆 release，**兩筆都是 1964 US Blue Note 12 吋 5 軌**：ed1247b2（BLP 4174，title 作「'The Way I Feel'」帶引號、credit 作「'Big' John Patton」）與 21e3cdbc（catno 誤登「BST 4174」，**應為 BST 84174**）。原 LP 五軌與長度：The Rock 7:29／The Way I Feel 8:38／Jerry 6:45／Davene 7:25／Just 3/4 6:51。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d4a9fa82-bd53-4c85-bc3d-771e151ef80c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1964 年 11 月 28 日第 24 頁的 JAZZ BEST BETS** 評「[THE W]AY I FEEL—Big John Patton—Blue Note [4]174」：「**For this his third album as a leader** jazz organist Big John Patton teams-up with an accomplished crew of musicians including Richard Williams on trumpet, Fred Jackson on tenor and baritone sax and Be[n] Dixon on drums. Although each man gets a chance to show his stuff in the solo spotlight, **Patton effectively takes a cookin' lead on most of the tracks**. Highlights here are 'The Rock,' 'The Way I Feel' and 'Davene.' Fine after hours mood companion.」——同期紙本坐實 1964 年發行，並指出這是 Patton 的**第三張領銜作**。（⚠ 第 509c 條：該頁 OCR 把目錄號印成「1174」，靠編制、曲名與「Big John Patton」交叉定位為 BLP 4174。）",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-11-28.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4174 **年份欄 1964**，錄音 **1964-06-19 Van Gelder Studio, Englewood Cliffs**，母帶編號 1376–1380，編制：**Richard Williams 小號（#1–4）、Fred Jackson 次中音與上低音薩克斯風（#1–4）、John Patton 管風琴、Grant Green 吉他、Ben Dixon 鼓**。附註「also released on Blue Note BST 84174 in 1964」「part of John Patton - Mosaic Select, Mosaic MS-006 in 2003」。⚠ jazzdisco 的曲序（1 Jerry／2 The Rock／3 The Way I Feel／4 Just 3/4／5 Davene）是**母帶編號順序，不是 LP 曲序**；LP 曲序以 MB／維基為準。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released 1964、recorded 1964-06-19、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BST 84174。**五軌全是 John Patton 自己的曲子。**編制註記與 jazzdisco 略異：Richard Williams 小號與 Fred Jackson 薩克斯風標在第 1–3、5 軌（也就是**第 4 軌〈Davene〉是管風琴三重奏**）。chronology：前作《Blue John》（1963）、後作《Oh Baby!》（1965）。AllMusic 給 3／5。",
+    "src": "https://en.wikipedia.org/wiki/The_Way_I_Feel_(John_Patton_album)"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4174` 的美國壓片依序是 **1964（兩筆，Blue Note Records Inc. 盤標）**、1966（Blue Note Records Inc.）、1967（Liberty Records, Inc.）、1973（BST 84174）；`catno=BST 84174` 的**兩筆美國原壓也都標 1964**，其餘是 1973 的美國／南非再壓與 2016 的 Elemental ERLP 1040。**最早的一群是 1964，且沒有更早年份的壓片**，與同期紙本、jazzdisco、維基、MB 五邊一致。Discogs 掛名一律作「'Big' John Patton」。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4174&per_page=100"
+   },
+   {
+    "f": "Blue Note 管風琴線的跨卡座標：本盤的吉他是 **Grant Green**、鼓是 Ben Dixon——同一組人 1963 年就替 Patton 錄了《Blue John》（BLP 4143，jazzdisco 記 Tommy Turrentine 小號、**George Braith 高音薩克斯風與 stritch**、Grant Green 吉他、Ben Dixon 鼓）。Grant Green 也在同批 a 組 George Braith《Extension》（1964-03-27 錄）裡彈吉他。Cash Box 1966 年間反覆把 Patton、Grant Green、Hank Mobley 並列為 Blue Note 的招牌陣容。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   }
+  ],
+  "hookCandidates": [
+   "Cash Box 1964 年 11 月的評語只用了一個動詞形容他：Patton「takes a cookin' lead on most of the tracks」，然後補一句——這張很適合打烊以後聽",
+   "五首曲子全是 Patton 自己寫的，而 Blue Note 給他配的吉他手是 Grant Green——同一年 Green 也在同批那張《Extension》裡，替另一個管風琴手撐同樣的位置"
+  ],
+  "sound": "5 軌、約 36 分半的管風琴五重奏：John Patton 的 Hammond 在正中，Richard Williams 的小號與 Fred Jackson 的次中音／上低音薩克斯風在前排，Grant Green 的吉他與 Ben Dixon 的鼓在後——第 4 軌〈Davene〉縮成管風琴三重奏。五首全是 Patton 自己的曲子，單軌 6:45–8:38，soul jazz 的底子配 hard bop 的獨奏長度。1964 年 6 月 19 日一天錄完於 Van Gelder Studio。",
+  "keyTracks": [
+   "The Rock",
+   "The Way I Feel",
+   "Davene"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1964 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致：**同期紙本＝Cash Box 1964-11-28 p24 的 JAZZ BEST BETS 已評出「Big John Patton — Blue Note [4]174」並點名〈The Rock〉〈The Way I Feel〉〈Davene〉三軌**；Discogs `catno=BLP 4174`／`BST 84174` 的美國原壓群最早都是 1964、沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1964；維基 infobox 1964；MB frd 1964、兩筆 release 都 1964。⚠ **第 509c 條**：Cash Box 該頁的 OCR 把目錄號印成「1174」、把標題吃掉成「[THE W]AY I FEEL」——本層是靠編制（Richard Williams／Fred Jackson／Ben Dixon）、曲名與「Big John Patton」交叉定位，不是只信印出來的號碼。⚠ **第 526 條**：4174 這個號比 4171（1967 才出）早出貨兩年多，本組不得用目錄號回推年份。",
+  "notes": "**覆核策展層：RG d4a9fa82／原盤 BLP 4174（BST 84174）5 軌／掛名 `Big John Patton`／`label` Blue Note／年份 1964 全部成立，本張未擋下。** 策展層已正確標出 MB release 21e3cdbc 的 catno「BST 4174」是誤登；本層確認正確號是 **BST 84174**（Discogs 與 Cash Box 都作 84174）。｜⚠ **編制的第 470 條分歧**：jazzdisco 說 Richard Williams 與 Fred Jackson 在第 1–4 軌、維基說在第 1–3、5 軌。**兩者都同意〈Davene〉這一軌少了管樂**（只是編號不同），正文若要寫「有一軌縮成三重奏」是安全的，**但不要點名說是第幾軌**。｜⚠ **曲序**：jazzdisco 列的是母帶編號順序（Jerry 在前），**LP 曲序是 The Rock／The Way I Feel／Jerry／Davene／Just 3/4**（MB＋維基一致），正文以 LP 曲序為準。｜**生涯位置**：Cash Box 1964 年當下就寫明這是 Patton「第三張領銜作」——這是同期紙本自己給的定位，比後世推算可靠，可直接寫。｜**人名邊界**：Grant Green 有維基獨立條目，可寫；Richard Williams／Fred Jackson／Ben Dixon 有維基專輯層背書，可寫但不宜當主軸。｜**跨卡連結**：Grant Green 同時在同批《Extension》；**不得寫成同一個班底**。｜非選輯：單一 session 的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Art Blakey and the Jazz Messengers|The Freedom Rider",
+  "artist": "Art Blakey and the Jazz Messengers",
+  "album": "The Freedom Rider",
+  "facts": [
+   {
+    "f": "release-group 7f94fdd3 的欄位：title「The Freedom Rider」、artist-credit「Art Blakey & The Jazz Messengers」（Group 209ddf15）、first-release-date 1964、primary-type Album、secondary-types 空，轄下 4 筆 release。**原盤 b0731b27 是 1964 US Blue Note BLP 4156／BST 84156、12 吋 5 軌**；再發：1998 XE CD 7243 8 21287 2 4（8 軌，含 3 首 bonus）、2000-08-23 JP TOCJ-9217（5 軌）、2015-03-25 JP UCCQ-5105 SHM-CD（8 軌）。原 LP 五軌與長度：Tell It Like It Is 7:56／**The Freedom Rider 7:28**／El Toro 6:23／Petty Larceny 6:16／Blue Lace 6:00。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7f94fdd3-0060-30cc-8a55-67a39cfb04be&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1964 年 3 月 21 日第 24 頁的 JAZZ PICKS** 評「'THE FREEDOM RIDER'—Art Blakey & Jazz Messengers—Blue Note 4156」：「Art Blakey, who has earned many laurels in the past with his distinctive brand of jazz drumming, **unleashes his potent instrumental talents full-blast** on this high-powered set from Blue Note. All the emotional stops have been pulled out as Art and the Messengers go through their paces in a relaxed style of improvisation. Highlights of the disk are 'Tell It Like It Is,' 'The Freedom Rider' and 'Blue Lace.'」——同一頁另評 Dave Brubeck《Time Changes》與 Coltrane《Live at Birdland》。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-03-21.pdf"
+   },
+   {
+    "f": "**Cash Box 1964 年 4 月 11 日第 35 頁「NEW SPRING ALBUM PRODUCT — A Re-Cap Of Product Issued In March And April」**的 BLUE NOTE 欄把本盤列進 1964 年三、四月的新貨：「The Freedom Rider—Art Blakey And The Jazz Messengers—BLP 4156／BST 84156」，同欄還有 Johnny Coles《Little Johnny C》BLP 4144、Herbie Hancock《Inventions & Dimensions》BLP 4147、Andrew Hill《Black Fire》BLP 4151、Grachan Moncur III《Evolution》BLP 4153、The Three Sounds《Black Orchid》BLP 4155。**六個目錄號同批出貨——第 526 條的教材。** 本盤年底又進了 **Cash Box 1964-12-26 第 8 頁 Blue Note 的「25 Years」年終整版廣告**（與《The Sidewinder》BLP 4157、《Song for My Father》BLP 4185、《A Chip Off The Old Block》BLP 4150 等並列）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-04-11.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4156 **年份欄 1964**，錄音分兩場、都在 Van Gelder Studio, Englewood Cliffs：**1961-02-18（tk.12 Petty Larceny）**與 **1961-05-27（tk.6 The Freedom Rider／tk.7 Tell It Like It Is／tk.13 El Toro／tk.19 Blue Lace）**。編制：Lee Morgan 小號、Wayne Shorter 次中音薩克斯風、Bobby Timmons 鋼琴、Jymie Merritt 貝斯、Art Blakey 鼓——**但 1961-05-27 那場的編制欄註明 Morgan／Shorter／Timmons／Merritt 只在 #2–4，也就是〈The Freedom Rider〉那一軌只有 Blakey 一個人**。附註：also released on BST 84156 in 1964、CDP 7243 8 21287 2 4 in 1998；收在 Mosaic《The Complete Blue Note Recordings Of Art Blakey's 1960 Jazz Messengers》MR10-141（1992）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released 1964 年 2 月、recorded 1961-02-12、02-18 與 05-27、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion。正文兩個關鍵：**（一）「This was the final album by this particular edition of the Jazz Messengers, who had been together for 18 months, as Lee Morgan left after this album and was replaced by Freddie Hubbard.」（二）「The title track is a seven-and-a-half-minute solo drum composition by Blakey that combines swing, Latin American and African rhythmic influences, and is named in honor of the Freedom Riders — activists who participated in American Civil Rights Movement Freedom Rides beginning in 1961.」** 曲子作者：〈Tell It Like It Is〉〈El Toro〉Wayne Shorter、〈Petty Larceny〉〈Blue Lace〉Lee Morgan、〈The Freedom Rider〉Blakey；CD bonus 三軌裡的〈Blue Ching〉是前任 Messenger Kenny Dorham 寫的。2019 年為紀念 Blakey 百歲誕辰，本盤是 Blue Note 選出重發黑膠特別版的五張之一（Vinyl Me, Please 限定，Evan Haga 新寫內頁）。AllMusic 4.5／5。",
+    "src": "https://en.wikipedia.org/wiki/The_Freedom_Rider"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4156` 回 6 筆美國盤，**四筆原壓全部標 1964（Blue Note Records Inc. 盤標），另兩筆 1966 是 Liberty 期再壓**；`catno=BST 84156` 的最早兩筆也標 1964，之後是 1966（四筆）、1970、1974、1977、1978。**最早的一群一致是 1964，沒有更早年份的壓片。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4156&per_page=100"
+   }
+  ],
+  "hookCandidates": [
+   "同名的那一軌是七分半的無伴奏鼓獨奏，Blakey 把搖擺、拉丁與非洲節奏疊在一起，題獻給 1961 年上路的自由乘車者",
+   "錄的是 1961 年，出的是 1964 年——而這是 Lee Morgan 在這支 Messengers 的最後一張，他走之後補上的是 Freddie Hubbard，也就是同批那張《The Night of the Cookers》的領班"
+  ],
+  "sound": "5 軌、約 34 分鐘的五重奏 hard bop：Lee Morgan 小號、Wayne Shorter 次中音薩克斯風、Bobby Timmons 鋼琴、Jymie Merritt 貝斯、Art Blakey 鼓。曲子由 Shorter（〈Tell It Like It Is〉〈El Toro〉）與 Morgan（〈Petty Larceny〉〈Blue Lace〉）分寫，**同名曲〈The Freedom Rider〉7:28 是 Blakey 一個人的無伴奏鼓獨奏**。單軌 6:00–7:56。1961 年二月與五月分兩場錄於 Van Gelder Studio。",
+  "keyTracks": [
+   "The Freedom Rider",
+   "Tell It Like It Is",
+   "Blue Lace"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1964 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致指向 1964：**同期紙本＝Cash Box 1964-03-21 p24 的 JAZZ PICKS 評出「Blue Note 4156」、1964-04-11 p35 的三四月新貨總表列出「BLP 4156／BST 84156」、1964-12-26 p8 的 Blue Note 年終整版廣告再列一次**；Discogs `catno=BLP 4156` 的四筆美國原壓全部標 1964、`BST 84156` 的最早兩筆也是 1964，沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1964；MB frd 1964。⚠ **月份有小分歧（不影響年份）**：維基 infobox 記 released「February 1964」，**Cash Box 自己的新貨總表則把它算進「March and April」issued 的貨、評論在 3 月 21 日**。本層採「1964 年初」的寫法，**正文不要把月份寫死**。⚠ **錄音年 1961 ≠ 發行年 1964**：本盤是壓了近三年的庫存盤，兩個年份都要分開寫。⚠ 第 431 條：維基與 jazzdisco 的 session 日期高度一致（jazzdisco 只列 02-18 與 05-27、維基多一個 02-12），**不算兩個獨立來源**；紙本無 session 資訊。",
+  "notes": "**覆核策展層：RG 7f94fdd3／原盤 BLP 4156／BST 84156 5 軌／掛名 `Art Blakey & The Jazz Messengers`／`label` Blue Note／年份 1964 全部成立，本張未擋下。**｜⚠ **正文必須把兩個年份分開寫**：1961 年錄、1964 年才發。｜⚠ **同名曲是無伴奏鼓獨奏**——維基與 jazzdisco 兩邊都支持（jazzdisco 的編制欄註明其餘四人只在 #2–4），這是本卡最硬的一個具體事實，可以當主軸。曲名的由來（向 1961 年的 Freedom Riders 致敬）只有維基一個來源，**可寫，但寫成「取名自」而不是考據結論**。｜⚠ **班底斷代**：維基說這是這一版 Messengers（合作 18 個月）的最後一張，Lee Morgan 之後由 Freddie Hubbard 接替——**Hubbard 正是同批 a 組《The Night of the Cookers》的領班**，兩張卡可互相呼應，但**不得寫成同一個班底**。｜**對照組（不釘、不同碟）**：同編制 1961 年另有兩張庫存盤《Roots & Herbs》《Pisces》，分屬別的年段，覆核成立。｜**人名邊界**：Lee Morgan／Wayne Shorter／Bobby Timmons／Jymie Merritt 全有維基獨立條目，可寫。｜非選輯：兩場 session 併成的原創專輯，非精選。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|A Chip off the Old Block",
+  "artist": "Stanley Turrentine",
+  "album": "A Chip off the Old Block",
+  "facts": [
+   {
+    "f": "release-group 138172cb 的欄位：title「A Chip off the Old Block」、artist-credit「Stanley Turrentine」（Person 51e0df97）、first-release-date 1964、primary-type Album、secondary-types 空，轄下 4 筆 release。**原盤 c6a2d1d8 是 1964 US Blue Note BLP 4150、12 吋 5 軌**；再發：2009 XE／US RVG CD 50999 2 65141 2 3（7 軌，含 2 首 bonus，bc 5099926514123）、2014-11-19 JP UCCQ-5060 SHM-CD（7 軌）。原 LP 五軌與長度：One O'Clock Jump 7:51／Midnight Blue 9:54／Blues in Hoss' Flat 6:43／Spring Can Really Hang You Up the Most 6:17／Cherry Point 6:02。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=138172cb-6f8b-4df6-8b83-92eae5f5578f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1964 年 8 月 22 日第 26 頁的 JAZZ BEST BETS** 評「A CHIP OFF THE OLD BLOCK—Stanley Turrentine—Blue Note 4150」：「Ace jazz tenor saxist Stanley Turrentine should earn a host of new laurels for himself with this excellent bluesey midstream LP outing from Blue Note. **While backed by a small but potent combo, Turrentine constructs some valid, inventive melodic constructions on 'One O'Clock Jump,' 'Midnight Blue' and 'Cherry Point.'** First-rate listening throughout.」——同期紙本坐實 1964 年八月出貨。本盤年底又進了 **Cash Box 1964-12-26 第 8 頁 Blue Note 的「25 Years」年終整版廣告**，封面圖上印著 CHERRY POINT／BLUES IN HOSS' FLAT／MIDNIGHT BLUE／SPRING CAN REALLY HANG YOU UP THE MOST 四個曲名，並標「BLP 4150」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-08-22.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4150 **年份欄 1964**，錄音 **1963-10-21 Van Gelder Studio, Englewood Cliffs**，編制五重奏：**Blue Mitchell 小號、Stanley Turrentine 次中音薩克斯風、Shirley Scott 管風琴、Earl May 貝斯、Al Harewood 鼓**；tk.9 Cherry Point／tk.17 Blues In Hoss' Flat／tk.20 Midnight Blue／tk.25 One O'Clock Jump／tk.30 Spring Can Really Hang You Up The Most。附註「also released on Blue Note BST 84150 in 1964」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released「End of August 1964」、recorded 1963-10-14 與 10-21、producer Alfred Lion、label Blue Note BLP 4150。正文說本盤「featuring songs written or played by bandleader **Count Basie**」——〈One O'Clock Jump〉是 Basie 的曲子、〈Blues in Hoss' Flat〉是 Basie 與 Frank Foster、〈Midnight Blue〉與〈Cherry Point〉是 **Neal Hefti**（Basie 樂團的王牌編曲）、〈Spring Can Really Hang You Up the Most〉是 Fran Landesman／Tommy Wolf。**錄音背景：本盤原本規劃成七重奏，錄過一次之後決定瘦身成五重奏重錄**（Shirley Scott 管風琴、Blue Mitchell 小號、Earl May 貝斯、Al Harewood 鼓）；**CD 再發收的兩首 bonus 正是早先那個七重奏版本**（多了 Tom McIntosh 長號、Charles Davis 薩克斯風，鼓換成 Ben Dixon）。AllMusic 的 Michael G. Nastos 給 3.5 星：「The spare approach of Basie is hard to ignore... **it is an interesting item that showcases his lighter side positively.**」",
+    "src": "https://en.wikipedia.org/wiki/A_Chip_off_the_Old_Block_(album)"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4150` 的**兩筆美國原壓都標 1964**（Blue Note Records Inc. 盤標），其餘是 1970、1983、1985 的再壓與 NBLP 7037（Kiss）等同號干擾；`catno=BST 84150` 的最早兩筆也標 1964，之後是 1966（Liberty Records, Inc.）、1970、1972（United Artists Records, Inc.）、1975。**最早的一群一致是 1964，沒有更早年份的壓片。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4150&per_page=100"
+   },
+   {
+    "f": "串流採信 715562180（us 店面，Stanley Turrentine《A Chip Off the Old Block (Rudy Van Gelder Edition)》，℗ 2009 The Blue Note Label Group，7 軌）：**前 5 軌與原 LP 逐軌同序**——1 One O'Clock Jump 7:51／2 Midnight Blue 9:54／3 Blues In Hoss's Flat 6:42／4 Spring Can Really Hang You Up the Most 6:17／5 Cherry Point 6:02；第 6、7 軌是 **One O'Clock Jump (First Version)** 與 **Cherry Point (First Version)**，也就是維基說的那個七重奏早期版本。**七軌全部有試聽。**（第 472／532 條：非合訂版，本盤第一軌就是該條目的第一軌。）第 254 條三種查法裡 `search?term=Stanley Turrentine A Chip Off the Old Block&entity=album&country=us` 一種即命中；jp／gb 同 collectionId。",
+    "src": "https://itunes.apple.com/lookup?id=715562180&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "曲目表其實是一份 Count Basie 的名單：〈One O'Clock Jump〉是 Basie 自己的招牌，〈Midnight Blue〉與〈Cherry Point〉出自替 Basie 寫譜的 Neal Hefti——Turrentine 是拿大樂團的曲子讓五個人吹",
+   "這張原本要錄成七重奏，錄完一次之後決定砍掉重來、瘦成五重奏——被砍掉的那個版本四十五年後才以 CD 加曲的身分出土"
+  ],
+  "sound": "5 軌、約 36 分半的管風琴五重奏：Stanley Turrentine 的次中音薩克斯風在前，Shirley Scott 的管風琴撐底，Blue Mitchell 小號、Earl May 貝斯、Al Harewood 鼓。曲目幾乎全繞著 Count Basie 的曲庫走——〈One O'Clock Jump〉、Basie 與 Frank Foster 的〈Blues in Hoss' Flat〉、Neal Hefti 的〈Midnight Blue〉與〈Cherry Point〉，中間插一首慢速標準曲〈Spring Can Really Hang You Up the Most〉。單軌 6:02–9:54，藍調氣味重、行進從容。1963 年 10 月 21 日錄於 Van Gelder Studio。",
+  "keyTracks": [
+   "One O'Clock Jump",
+   "Midnight Blue",
+   "Cherry Point"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1964 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致：**同期紙本＝Cash Box 1964-08-22 p26 的 JAZZ BEST BETS 已評出「Blue Note 4150」並點名三軌曲名，1964-12-26 p8 的 Blue Note 年終整版廣告再列一次「BLP 4150」**；Discogs `catno=BLP 4150`／`BST 84150` 的美國原壓群最早都是 1964、沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1964；維基 infobox「End of August 1964」；MB frd 1964。三邊對月份也一致（維基「八月底」vs Cash Box 8 月 22 日的評論）。⚠ **錄音年 1963 ≠ 發行年 1964**，相隔十個月，兩個年份要分開寫。⚠ **session 日期有第 470 條分歧**：jazzdisco 只記 1963-10-21，維基記 10-14 與 10-21 兩場（10-14 是被放棄的七重奏版）。**正文寫「1963 年 10 月 21 日錄成」是兩邊都成立的寫法。**",
+  "notes": "**覆核策展層：RG 138172cb／原盤 BLP 4150 5 軌／掛名 `Stanley Turrentine`／`label` Blue Note／年份 1964 全部成立，本張未擋下。**｜⚠ **七重奏→五重奏的改錄只有維基一個來源**（AllMusic／內頁轉述），**但 CD bonus 的兩首「First Version」是實物佐證**（Apple 715562180 第 6、7 軌，編制與正式版不同）——可以寫，寫成「先錄過一次、後來瘦身重錄」是安全的。｜⚠ **Basie 主題**是維基的歸納，但四首曲子的作者（Basie／Foster／Hefti）是可查的硬事實，正文可寫。｜**跨卡連結**：**Blue Mitchell 在本盤吹小號，而他本人是同批 a 組《Bring It Home to Me》的領班**；Stanley Turrentine 在同批還有一張《Joyride》（1965-04-14 錄、大樂團編制）——**三張卡可互相呼應，但《Joyride》與本盤的編制天差地遠（本盤五重奏、《Joyride》是 Oliver Nelson 編的十六人大樂團），正文絕不可互抄**。｜**人名邊界**：Shirley Scott／Blue Mitchell／Al Harewood 有維基獨立條目，可寫；Earl May 有專輯層背書，可寫。｜**串流採信 715562180**（us，前 5 軌與原 LP 逐軌同序，第 6、7 軌是早期七重奏版；七軌全部有試聽）。**本卡原本缺試聽，本層已補上固定來源。**｜非選輯：單一錄音計畫的原創專輯。"
+ },
+ {
+  "key": "desc2:Kenny Dorham|Trompeta Toccata",
+  "artist": "Kenny Dorham",
+  "album": "Trompeta Toccata",
+  "facts": [
+   {
+    "f": "release-group 7ec8242f 的欄位：title「Trompeta Toccata」、artist-credit「Kenny Dorham」（Person 4476453a）、first-release-date 1965、primary-type Album、secondary-types 空，轄下 9 筆 release。**原盤 3e5034f9 是 1965 US Blue Note BLP 4181／BST 84181、12 吋 4 軌**；再發沿革：1985-05-22 JP BNJ-71074（黑膠）、1995 US CDP 7 84181 2、1995-02-22 JP TOCJ-4181、2006 US／XE RVG CD 0946 3 62635 2 6、2015-01-06 數位（2014 Remaster）、2020-06-19 Blue Note 80 黑膠 00602508525490。原 LP 四軌與長度：**Trompeta Toccata 12:30／Night Watch 5:51／Mamacita 11:08／The Fox 8:02**——四軌撐滿一張 LP，兩軌超過十一分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7ec8242f-cb94-3ed4-ace7-671de3784037&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1965 年 8 月 21 日第 34 頁的 JAZZ BEST BETS** 評「TROMPETA TOCCATA—Kenny Dorham—Blue Note 4181」：「Three Kenny Dorham works, and one piece by Joe Henderson provide the material for a great session on this Blue Note offering, tabbed after the opening track 'Trompeta Toccata.' **Excellent interplay from Dorham on trumpet, and Henderson on tenor sax should grab plenty of attention from jazzophiles**; and the rest of the combo (Tommy Flanagan, piano; Richard Davis, bass; and Al Heath, drums) shows very strongly...」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-08-21.pdf"
+   },
+   {
+    "f": "**Cash Box 1965 年 9 月 4 日第 24 頁的 Blue Note 廣告**，標題「BLUE NOTE HAS THE HOTTEST JAZZ SINGLES JUST RELEASED!」，兩欄並列：「**KENNY DORHAM — MAMACITA — BLUE NOTE 45x1922 — The Big Single From His New Album TROMPETA TOCCATA — BLP 4181**」與「BLUE MITCHELL — FUNGII MAMA — BLUE NOTE 45x1921 — The Big Single From His New Album THE THING TO DO — BLP 4178」。**〈Mamacita〉被剪成 45 轉單曲主打，是本盤在當時市場上的定位證據。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-09-04.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4181 **年份欄 1965**，錄音 **1964-09-14 Van Gelder Studio, Englewood Cliffs**，母帶編號 1434–1437（tk.4 The Fox／tk.6 Night Watch／tk.10 Trompeta Toccata／tk.11 Mamacita），編制五重奏：**Kenny Dorham 小號、Joe Henderson 次中音薩克斯風、Tommy Flanagan 鋼琴、Richard Davis 貝斯、Albert Heath 鼓**。附註「also released on Blue Note BST 84181 in 1965」；收在 Mosaic《The Complete Joe Henderson Blue Note Studio Sessions》MD5-271（2021）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released「End of July 1965」、recorded 1964-09-14、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BST 84181。正文兩個關鍵：**（一）「''Trompeta Toccata'' would be his last appearance as a leader」**——Bob Blumenthal 在 2006 年的內頁寫「the remainder of Dorham's recorded career was confined to sideman appearances that can be counted on the fingers of one hand」；（二）Dorham 自己對曲子的說法：他把專輯取名 Trompeta Toccata「since the term 'toccata' comes from a Latin language base, and since the song is in **6/8 with an Afro-Latin feeling**」；〈Night Watch〉是藍調，「It's very late at night, and the mood is what comes when you're alone at that time」；**〈Mamacita〉是十二小節的 bossa nova**，錄的時候「once they got started on it, they caught fire; **even Blue Note producer Alfred Lion and photographer Francis Wolff began to move to rhythm**」。Dorham 談 Henderson：「He never fails to excite me... after I played him the melody of 'Trompeta Toccata', he wrote the chords for it. And what he wrote is what I heard in my own ear.」AllMusic 4／5、Penguin 3.5／4、DownBeat 3.5／5。",
+    "src": "https://en.wikipedia.org/wiki/Trompeta_Toccata"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4181` 回 6 筆美國盤，**四筆原壓標 1965**，另有 1966 一筆與一筆無年份；`catno=BST 84181` 最早一筆標 1965，其後 1966（兩筆）、1970（兩筆）、1983 JP、1985 FR／US。**最早的一群一致是 1965，沒有更早年份的壓片**，與同期紙本、jazzdisco、維基、MB 五邊相符。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4181&per_page=100"
+   }
+  ],
+  "hookCandidates": [
+   "Dorham 說他把〈Mamacita〉錄下來那天，連製作人 Alfred Lion 跟攝影師 Francis Wolff 都跟著節奏晃起來——那首後來被剪成 45 轉單曲，1965 年九月登上 Blue Note 的廣告",
+   "四首曲子撐滿一張 LP，同名曲十二分半、〈Mamacita〉十一分——而這是 Kenny Dorham 最後一次以領班身分進錄音室，之後的錄音「用一隻手就數得完」"
+  ],
+  "sound": "只有 4 軌、約 37 分鐘的五重奏：Kenny Dorham 小號、Joe Henderson 次中音薩克斯風、Tommy Flanagan 鋼琴、Richard Davis 貝斯、Albert Heath 鼓。曲子三首 Dorham、一首 Henderson；同名曲 12:30 是 6/8 拍的 Afro-Latin，〈Mamacita〉11:08 是十二小節 bossa nova，〈Night Watch〉5:51 是深夜藍調，〈The Fox〉8:02 收尾。單軌長度是本組之最（除了現場盤），兩支管樂的來回是全片重心。1964 年 9 月 14 日一天錄完於 Van Gelder Studio。",
+  "keyTracks": [
+   "Trompeta Toccata",
+   "Mamacita",
+   "Night Watch"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1965 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致：**同期紙本＝Cash Box 1965-08-21 p34 的 JAZZ BEST BETS 已評出「Blue Note 4181」、1965-09-04 p24 的 Blue Note 單曲廣告再印一次「BLP 4181」**；Discogs `catno=BLP 4181` 的四筆美國原壓標 1965、`BST 84181` 最早一筆也是 1965，沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1965；維基 infobox「End of July 1965」；MB frd 1965。維基的七月底與 Cash Box 八月下旬的評論相容（本組其餘各張的評論時差也是一至兩個月）。⚠ **錄音年 1964-09-14 ≠ 發行年 1965**，相隔約十個月。⚠ **第 526 條**：4181 出在 1965 年八月，而號碼更小的 4171（Extension）要到 1967 年一月才出——**同一組號碼絕不可回推年份**。",
+  "notes": "**覆核策展層：RG 7ec8242f／原盤 BLP 4181／BST 84181 4 軌／掛名 `Kenny Dorham`／`label` Blue Note／年份 1965 全部成立，本張未擋下。**｜⚠ **「最後一張領銜作」是本卡最有力的一句**，維基引 Bob Blumenthal 2006 年內頁，**單一來源但具名可查**——寫成「這是他最後一次以領班身分錄音」可以，**不要加上任何死因或退隱的推測**（Dorham 卒於 1972 年，本層未查該段）。｜⚠ **Dorham 的自述**（toccata 的取名、〈Mamacita〉錄音時 Alfred Lion 與 Francis Wolff 跟著搖）出自維基轉引的內頁，**寫的時候要標成「Dorham 自己的說法」**，不要寫成第三方紀錄。｜⚠ **曲序**：jazzdisco 列的是母帶編號順序（The Fox 在前），**LP 曲序是 Trompeta Toccata／Night Watch／Mamacita／The Fox**（MB 與 Cash Box 的「tabbed after the opening track」一致），正文以 LP 曲序為準。｜**跨卡連結**：**Joe Henderson 在本盤吹次中音，同一批 a 組他還在《Little Johnny C》《Basra》《Wahoo!》三張裡出現**——本組 18 張裡他佔四張，是最密的一條人線，可寫，但**四張的編制與年份都不同，不得寫成同一個班底**。｜**人名邊界**：Joe Henderson／Tommy Flanagan／Richard Davis／Albert Heath 全有維基獨立條目，可寫。｜非選輯：單一 session 的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Jackie McLean|It's Time!",
+  "artist": "Jackie McLean",
+  "album": "It's Time!",
+  "facts": [
+   {
+    "f": "release-group 31437cf6 的欄位：title「It's Time!」、artist-credit「Jackie McLean」（Person 5b6993ef）、first-release-date 1965-06、primary-type Album、secondary-types 空，轄下 14 筆 release。**原盤兩筆：d64c3588（1965 US Blue Note BLP 4179，mono）與 78b51a48（1965-06 US Blue Note BST 84179／ST-84179，stereo），都是 12 吋 6 軌**；再發沿革：1977 JP LNJ-80158、1990-09-19 JP BN 4179、1995-01-25 JP TOCJ-4179、1998 JP TOCJ-9035、2005 JP TOCJ-6631、2006 US／XE Connoisseur CD 0946 3 58286 2 7／58285 2 8、2016 XE Elemental ERLP 1035、2019 JP UCCQ-9541、**2020-08-28 Blue Note Tone Poet B0031655-01**、2024-10-23 JP UCCQ-9735。原 LP 六軌與長度：Cancellation 7:47／Das' Dat 6:29／It's Time 6:39／Revillot 7:55／'Snuff 7:51／Truth 6:30。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=31437cf6-e48b-3916-8f46-eae2e6a1a3ce&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1965 年 7 月 31 日第 34 頁的爵士評論**評「IT'S TIME—Jackie McLean—Blue Note 4179」：「Up-tempo and blues grooving make for some wild listening on this Blue Note LP featuring the alto sax work of Jackie McLean **with a new trumpet talent, Charles Tolliver**, and notable sidemen Herbie Hancock (piano), Roy Hay[ne]s (drums) and Cecil McBee (bass). Tracks include six compositions by both hornmen, among the best being 'Das' Dat,' 'Revillot' and 'It's Time.' **A long standing artist, McLean's LP could be the star of happenings for the superb new Tolliver.**」——同期紙本不但坐實 1965 年發行，還當場把 Tolliver 標成新人。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-07-31.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4179 **年份欄 1965**，錄音 **1964-08-05 Van Gelder Studio, Englewood Cliffs**，母帶編號 1402–1407（tk.5 Truth／tk.17 'Snuff／tk.18 Das Dat／tk.24 Revillot／tk.31 Cancellation／tk.33 It's Time），編制五重奏：**Charles Tolliver 小號、Jackie McLean 中音薩克斯風、Herbie Hancock 鋼琴、Cecil McBee 貝斯、Roy Haynes 鼓**。附註「also released on Blue Note BST 84179 in 1965」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released「Late June/early July 1965」、recorded 1964-08-05、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BST 84179、genre 標 post-bop 與 modal jazz。曲子分工：**〈Cancellation〉〈Revillot〉〈Truth〉是 Charles Tolliver 寫的、其餘三首是 McLean**——一個剛出道的小號手在自己的首張錄音裡就佔了專輯一半的作曲。chronology：前作《Destination... Out!》（1963）、後作《Action Action Action》。AllMusic 的 Thom Jurek 給 3.5 星。",
+    "src": "https://en.wikipedia.org/wiki/It's_Time!_(Jackie_McLean_album)"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4179` 回 6 筆，**四筆美國原壓全部標 1965**（其餘兩筆是 NBLP 7195 Parliament、FBLP 4.00239 的同號干擾）；`catno=BST 84179` 最早一筆標 1965，其後 1966、1967（Liberty Records, Inc.）、1970（Liberty/UA）、1978 JP GXK 8085、1980。**最早的一群一致是 1965，沒有更早年份的壓片。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4179&per_page=100"
+   },
+   {
+    "f": "同批跨卡：本盤的鋼琴手 **Herbie Hancock** 與貝斯手 **Cecil McBee** 同時也在同批 a 組 Grachan Moncur III《Some Other Stuff》（1964-07-06 錄，早本盤一個月），那張還多了 Wayne Shorter 與 Tony Williams。**兩張是 1964 年夏天前後一個月、在同一間錄音室、用重疊的節奏組錄的兩張前衛向 hard bop**——可互相呼應，但領班、編制與曲子完全不同。",
+    "src": "https://en.wikipedia.org/wiki/Some_Other_Stuff"
+   }
+  ],
+  "hookCandidates": [
+   "Cash Box 1965 年七月的評論最後一句把重點讓給了別人：「A long standing artist, McLean's LP could be the star of happenings for the superb new Tolliver」——那是 Charles Tolliver 第一次進錄音室",
+   "六首曲子裡有三首是那個新人小號手寫的——McLean 把自己專輯的一半讓給了一個還沒錄過音的人"
+  ],
+  "sound": "6 軌、約 43 分鐘的五重奏：Jackie McLean 的中音薩克斯風與 Charles Tolliver 的小號在前，Herbie Hancock 鋼琴、Cecil McBee 貝斯、Roy Haynes 鼓。曲子由兩位管樂各寫三首，調性偏 post-bop 與 modal——Cash Box 當年的形容是「up-tempo and blues grooving」。單軌 6:29–7:55，六軌長度接近平均，沒有特別突出的長篇。1964 年 8 月 5 日一天錄完於 Van Gelder Studio。",
+  "keyTracks": [
+   "It's Time",
+   "Das' Dat",
+   "Revillot"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1965 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致：**同期紙本＝Cash Box 1965-07-31 p34 已評出「Blue Note 4179」並點名〈Das' Dat〉〈Revillot〉〈It's Time〉三軌**；Discogs `catno=BLP 4179` 的四筆美國原壓全部標 1965、`BST 84179` 最早一筆也是 1965，沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1965；維基 infobox「Late June/early July 1965」；MB frd 1965-06、stereo 原盤 78b51a48 也標 1965-06。維基的「六月底七月初」與 Cash Box 7 月 31 日的評論相容。⚠ **錄音年 1964-08-05 ≠ 發行年 1965**，相隔近一年。⚠ **第 431 條**：維基的「Late June/early July」與 MB 的「1965-06」很可能同源（MB 的 stereo 日期常被維基引用），**不算兩個獨立來源**；本層以 Cash Box 為第三個獨立來源。",
+  "notes": "**覆核策展層：RG 31437cf6／原盤 BLP 4179（mono）與 BST 84179（stereo）6 軌／掛名 `Jackie McLean`／`label` Blue Note／年份 1965 全部成立，本張未擋下。**｜⚠ **Charles Tolliver 的「首次錄音」要小心措辭**：Cash Box 1965 年當場寫「a new trumpet talent」「the superb new Tolliver」——**這是同期紙本自己給的定位，可以直接引**；但「這是他第一次進錄音室」這個更強的說法本層沒有獨立一手佐證，**正文請寫成「當時還是新人」或直接引 Cash Box 的字，不要寫成錄音史考據結論**。｜⚠ **曲名寫法**：MB 作「Das' Dat」、jazzdisco 作「Das Dat」、維基作「Das' Dat」——**以 MB／維基的 Das' Dat 為準**。｜⚠ **曲序**：jazzdisco 列的是母帶編號順序（Truth 在前），**LP 曲序是 Cancellation／Das' Dat／It's Time／Revillot／'Snuff／Truth**。｜**人名邊界**：Charles Tolliver／Herbie Hancock／Cecil McBee／Roy Haynes 全有維基獨立條目，可寫。｜**跨卡連結**：Hancock＋McBee 同時在同批《Some Other Stuff》（早一個月錄）——**可呼應，不得寫成同一個班底**。｜非選輯：單一 session 的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Jimmy Smith|Softly as a Summer Breeze",
+  "artist": "Jimmy Smith",
+  "album": "Softly as a Summer Breeze",
+  "facts": [
+   {
+    "f": "release-group fbbf10e3 的欄位：title「Softly as a Summer Breeze」、artist-credit「Jimmy Smith」（Person 4f8a0d9b）、first-release-date 1965、primary-type Album、secondary-types 空，轄下 4 筆 release。**原盤 98cf5720 是 1965 US Blue Note（MB 的 catno 只登「4200」）、12 吋 6 軌**；再發：1998 US CD 7243 4 97505 2 4（10 軌，含 4 首 bonus，credit 作「The Incredible Jimmy Smith」，bc 724349750524）、2006-02-21 US RVG CD 0946 3 37779 2 7（10 軌）、2006-02-23 DE 0946 3 55523 2 4（10 軌）。原 LP 六軌與長度：These Foolish Things 5:25／Hackensack 5:55／It Could Happen to You 5:55／Sometimes I'm Happy 8:15／Someone to Watch Over Me 6:40／Home Cookin' 4:45。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fbbf10e3-f412-3cd3-ad0b-a943422721b9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1965 年 12 月 4 日第 8 頁的 Blue Note 整版廣告**，標題「**Just Released!**」：「JIMMY SMITH — SOFTLY AS A SUMMER BREEZE — **with Kenny Burrell, Philly Joe Jones** — on BLUE NOTE」，文案寫「Jimmy Smith will always be an inspiration, whether he blows like a hurricane or comes on softly as a summer breeze. An album with wide appeal」，並印出完整曲序：「**SIDE 1: THESE FOOLISH THINGS / HACKENSACK / IT COULD HAPPEN TO YOU. SIDE 2: SOMETIMES I'M HAPPY / SOMEONE TO WATCH OVER ME / HOME COOKIN'. Blue Note Album BLP 4200 (Stereo BST 84200)**」。同月 **Cash Box 1965-12-04 第 30 頁**另有評論：「Outstanding jazz organist Jimmy Smith is joined by a pair of top-notch artists, Kenny Burrell (guitar) and Philly Joe Jones (drums) in the creation of this groovy set of masterful melodies. **The boys blend into one being in their beautifully complementary playing.**」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-12-04.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4200「**The Incredible Jimmy Smith - Softly As A Summer Breeze**」**年份欄 1965**，錄音 **1958-02-26 Manhattan Towers, NYC**（⚠ 不是 Van Gelder Studio，本組唯二不在 Englewood Cliffs 錄的盤），編制分兩組：**Jimmy Smith 管風琴全程；Kenny Burrell 吉他與 Philly Joe Jones 鼓只在第 1–4 軌；Eddie McFadden 吉他與 Donald Bailey 鼓在第 5、6 軌**。tk.5 It Could Happen To You／tk.6 Hackensack／tk.7 These Foolish Things／tk.8 Sometimes I'm Happy／tk.10 Someone To Watch Over Me／tk.12 **Home Cookin' (aka Ode To Philly Joe)**。附註「also released on Blue Note BST 84200 in 1965」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released 1965、recorded 1958-02-26（bonus 四軌另錄於 1958-10-14 的 Van Gelder Studio, Hackensack）、studio Manhattan Towers, New York、producer Alfred Lion。正文明寫本盤是「**featuring performances recorded in 1958 but not released on the Blue Note label until 1965**」。第六軌的正式曲名維基作「**One for Philly Joe**〔aka 'Home Cookin''〕」。AllMusic 的 Scott Yanow 給 3 星：「''Softly As a Summer Breeze'' is **one of Jimmy Smith's more obscure Blue Notes**... Overall, this CD is not too essential, but it does fill in a few gaps.」chronology 把本盤排在《The Sermon!》（1957）與《Cool Blues》（1958）之間——**照錄音年排，不是照發行年**。",
+    "src": "https://en.wikipedia.org/wiki/Softly_as_a_Summer_Breeze"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4200` 的**三筆美國原壓全部標 1965**（掛名都作「The Incredible Jimmy Smith」）；`catno=BST 84200` 的最早兩筆也標 1965（掛名作「The Incredible Jimmy Smith **With Kenny Burrell & Philly Joe Jones**」——**盤面把兩位客席寫進了掛名**），其後 1966、1970（Liberty/UA）。**最早的一群一致是 1965，沒有更早年份的壓片。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4200&per_page=100"
+   },
+   {
+    "f": "本盤在市場上的壽命：Cash Box 1966 年 1 月 8 日、1 月 15 日、1 月 22 日、1 月 29 日、2 月 5 日連續五期的爵士榜／庫存表都列著「(Blue Note BLP 4200／BST 84200)」，1966-03-12、03-26、06-11、09-24 與 1967-01-14 的「BASIC ALBUM INVENTORY」（Cash Box 供零售商與批發商參考的常備盤清單）仍把 BLP 4200／BST 84200 列在 Blue Note 欄內——**一張 1958 年錄的碟，1965 年底出貨後在 1966 全年都還在常備清單上**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1966/CB-1966-03-12.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "1958 年 2 月在 Manhattan Towers 錄的一場，母帶擱了七年——Blue Note 1965 年 12 月才把它推出來，廣告上還寫著「Just Released!」",
+   "Discogs 上 BST 84200 的原壓掛名是「The Incredible Jimmy Smith With Kenny Burrell & Philly Joe Jones」，但那兩位其實只在前四軌；後兩軌換成 Eddie McFadden 與 Donald Bailey"
+  ],
+  "sound": "6 軌、約 37 分鐘的管風琴三重奏，全是標準曲與一首 Monk：Jimmy Smith 的 Hammond 全程在中央，前四軌由 Kenny Burrell 的吉他與 Philly Joe Jones 的鼓伴著，後兩軌換成 Eddie McFadden 與 Donald Bailey。〈These Foolish Things〉〈It Could Happen to You〉〈Someone to Watch Over Me〉是慢速標準曲，〈Hackensack〉是 Monk 的快板，收尾的〈Home Cookin'〉（又名〈One for Philly Joe〉）4:45 最短。單軌 4:45–8:15。1958 年 2 月 26 日錄於紐約的 Manhattan Towers，不是 Van Gelder。",
+  "keyTracks": [
+   "These Foolish Things",
+   "Hackensack",
+   "Home Cookin'"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1965 成立（vault／庫存盤，兩個年份都查到）。錄音年 1958-02-26，首次商業發行年 1965。** 舉證階序五層一致：**同期紙本最硬——Cash Box 1965-12-04 p8 的 Blue Note 整版廣告標題就是「Just Released!」，並印出「Blue Note Album BLP 4200 (Stereo BST 84200)」與完整兩面曲序；同期 p30 另有評論**；Discogs `catno=BLP 4200` 的三筆美國原壓與 `BST 84200` 最早兩筆全部標 1965，沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1965；維基 infobox 1965、正文明寫「recorded in 1958 but not released... until 1965」；MB frd 1965。**發行月可定在 1965 年 11 月底至 12 月初**（廣告在 12 月 4 日那期）。⚠ **不得把錄音年 1958 寫成專輯年**；維基的 chronology 把本盤排在 1957／1958 兩張之間是照錄音年排的，**不要當成發行序**。",
+  "notes": "**覆核策展層：RG fbbf10e3／原盤 BLP 4200（MB catno 只登「4200」）6 軌／掛名 `Jimmy Smith`／`label` Blue Note／年份 1965 全部成立，本張未擋下。** 本層補上完整目錄號：**BLP 4200（mono）／BST 84200（stereo）**，出自 Cash Box 1965-12-04 p8 的廣告與 Discogs。｜⚠ **這是 vault 盤，正文必須把兩個年份分開寫**：1958 年 2 月錄、1965 年 12 月才發。｜⚠ **編制的分段一定要寫對**：**Kenny Burrell 與 Philly Joe Jones 只在第 1–4 軌**，第 5、6 軌是 Eddie McFadden 與 Donald Bailey（jazzdisco）。**Cash Box 的廣告與 Discogs 的原壓掛名都只提 Burrell 與 Jones**——正文若照廣告寫，會漏掉後兩軌換人這件事；要寫就寫全。｜⚠ **第六軌有兩個名字**：LP 作〈Home Cookin'〉、維基正式曲名作〈One for Philly Joe〉、jazzdisco 註「Home Cookin' (aka Ode To Philly Joe)」——**三個寫法都存在，正文以 LP 盤面的 Home Cookin' 為主，要提別名請標明是別名**。另注意 Jimmy Smith 1959 年另有一張同名專輯《Home Cookin'》（BLP 4050），**不要混成同一張**。｜⚠ **非 Van Gelder**：錄音在 Manhattan Towers，與本組其他十五張的 Englewood Cliffs 不同，正文寫錄音現場請務必寫對。｜**盤面掛名**：原壓作「The Incredible Jimmy Smith」，池中掛名照 MB 的 `Jimmy Smith` 不動。｜非選輯：單一 session 的原創專輯（CD 加的四軌是 1958-10-14 另一場）。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|Joyride",
+  "artist": "Stanley Turrentine",
+  "album": "Joyride",
+  "facts": [
+   {
+    "f": "release-group 237dbd01 的欄位：title「Joyride」、artist-credit「Stanley Turrentine」（Person 51e0df97）、first-release-date 1965-09、primary-type Album、secondary-types 空，轄下 5 筆 release。**原盤 866aadbb 是 1965-09 US Blue Note 84201／BST 84201／ST-84201、12 吋 6 軌**（mono 的 BLP 4201 MB 未建，Discogs 與 Cash Box 有）；再發：1995-07-24 CD CDP 7 46100 2（8 軌，含 2 首 bonus，bc 077774610025）、2006 XE／US RVG CD 0946 3 55208 2 8／37766 2 3（8 軌）、2009-09-16 JP TOCJ-8594（6 軌）。原 LP 六軌與長度：River's Invitation 6:20／I Wonder Where Our Love Has Gone 4:18／Little Sheri 6:30／Mattie T. 6:00／Bayou 6:15／A Taste of Honey 3:55。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=237dbd01-a189-3a6c-92c6-8de15c0963e6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1965 年 10 月 23 日第 34 頁的 ALBUM REVIEWS** 評「JOYRIDE—Stanley Turrentine—Blue Note 4201」：「**This LP marks Stanley Turrentine['s] first disk effort with a big band backing** and the effect of it is an interestingly increased range of sound in which the tenor sax man can swing. **Oliver Nelson, who arranged and conducted the session, provided Turrentine with this basically simple, funky background that smoothly finds a groove**...」——同期紙本當場點出這是 Turrentine **第一張大樂團伴奏的專輯**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-10-23.pdf"
+   },
+   {
+    "f": "**Blue Note 為本盤推了 45 轉單曲**：Cash Box 1965-10-23 p24、1965-10-30 p26、1965-11-06 p20 與 1966-01-01 p24 連著四期刊同一則廣告——「BLUE NOTE HAS THE HOTTEST JAZZ SINGLES **MOVING STRONGLY!** — **STANLEY TURRENTINE — RIVER'S INVITATION — BLUE NOTE 45x1917 — The Big Single From His New Album 'JOYRIDE' — BLP 4201 (BST 84201)**」。本盤隨後進了 Cash Box 的「BASIC ALBUM INVENTORY」常備盤清單（1966-03-12 p44、1966-03-26 p40 等期，Blue Note 欄內列「Stanley Turrentine — Joyride — BLP 4201／BST 84201」）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-10-23.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4200 系列目錄記 BLP 4201 **年份欄 1965**，錄音 **1965-04-14 Van Gelder Studio, Englewood Cliffs**，母帶編號 1563–1569。**編制是十六人的大樂團**：Ernie Royal、Snooky Young 小號；Clark Terry 小號與柔音號；Jimmy Cleveland、J.J. Johnson、Tony Studd 長號；Jerry Dodgion 中音薩克斯風／長笛／中音長笛／單簧管／短笛；Phil Woods 中音薩克斯風與單簧管；**Stanley Turrentine 次中音薩克斯風**；Robert Ashton 次中音與單簧管；Budd Johnson 次中音／高音／單簧管／低音單簧管；Danny Bank 上低音薩克斯風等；Herbie Hancock 鋼琴；Kenny Burrell 吉他；Bob Cranshaw 貝斯；Grady Tate 鼓；**Oliver Nelson 編曲與指揮**。附註「also released on Blue Note BST 84201 in 1965」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "英文維基：infobox released「Early October 1965」、recorded 1965-04-14 Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BST 84201、genre soul jazz／hard bop。曲目來源很雜：**〈River's Invitation〉是 Percy Mayfield 的藍調、〈I Wonder Where Our Love Has Gone〉是 Buddy Johnson、〈Bayou〉是 Jimmy Smith 的曲子、〈A Taste of Honey〉是當時的流行標準曲**，只有〈Little Sheri〉與〈Mattie T.〉是 Turrentine 自己寫的；CD 加曲〈Gravy Train〉（Lou Donaldson）與〈A Kettle of Fish〉（Jack McDuff）。核心節奏組是 Herbie Hancock、Kenny Burrell、Bob Cranshaw、Grady Tate。AllMusic 4／5、Penguin 3／4。",
+    "src": "https://en.wikipedia.org/wiki/Joyride_(Stanley_Turrentine_album)"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4201` 的**三筆美國原壓全部標 1965**；`catno=BST 84201` 的最早兩筆也標 1965，其後 1966（Liberty Records, Inc.）、1971、1977（兩筆）、1985 FR。**最早的一群一致是 1965，沒有更早年份的壓片**，與同期紙本、jazzdisco、維基、MB 五邊相符。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4201&per_page=100"
+   }
+  ],
+  "hookCandidates": [
+   "Cash Box 1965 年十月的評論開頭就點名：這是 Turrentine 第一次讓大樂團在背後撐——編曲與指揮是 Oliver Nelson，樂手裡有 J.J. Johnson、Clark Terry、Phil Woods",
+   "Blue Note 把〈River's Invitation〉剪成 45 轉單曲 45x1917，連著四期在 Cash Box 打廣告，標語是「MOVING STRONGLY!」——這是一張被當成會賣的碟來推的"
+  ],
+  "sound": "6 軌、約 33 分鐘的大樂團 soul jazz：Stanley Turrentine 的次中音薩克斯風在最前，背後是 Oliver Nelson 編曲指揮的十六人編制——Clark Terry、Ernie Royal、Snooky Young 的小號，J.J. Johnson、Jimmy Cleveland 的長號，Phil Woods、Jerry Dodgion、Budd Johnson、Danny Bank 的木管，加上 Herbie Hancock 鋼琴、Kenny Burrell 吉他、Bob Cranshaw 貝斯、Grady Tate 鼓。曲目多半是藍調與流行標準曲（Percy Mayfield 的〈River's Invitation〉、〈A Taste of Honey〉），單軌 3:55–6:30，短而滿。1965 年 4 月 14 日錄於 Van Gelder Studio。",
+  "keyTracks": [
+   "River's Invitation",
+   "Little Sheri",
+   "A Taste of Honey"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1965 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致：**同期紙本＝Cash Box 1965-10-23 p34 已評出「Blue Note 4201」，同期 p24 起連四期刊出「RIVER'S INVITATION... From His New Album 'JOYRIDE' BLP 4201 (BST 84201)」的單曲廣告**；Discogs `catno=BLP 4201` 三筆美國原壓與 `BST 84201` 最早兩筆全部標 1965，沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1965；維基 infobox「Early October 1965」；MB frd 1965-09。維基的十月初與 Cash Box 10 月 23 日的評論、10 月 23 日起的廣告相容；MB 的 1965-09 也在同一個窗口內。⚠ **第 526 條**：4201 出在 1965 年十月，而 4207（Night of the Cookers Vol. 1）與 4200（Softly as a Summer Breeze）都在其後的十一、十二月，號碼更小的 4171 更是要等到 1967 年——**本組不得用目錄號回推年份**。",
+  "notes": "**覆核策展層：RG 237dbd01／原盤 BST 84201 6 軌／掛名 `Stanley Turrentine`／`label` Blue Note／年份 1965 全部成立，本張未擋下。** 本層補上 mono 號 **BLP 4201**（MB 只建 stereo，Cash Box 的廣告與評論都印 BLP 4201）。｜⚠ **「第一張大樂團盤」是同期紙本當下的說法**（Cash Box 1965-10-23），比後世推算可靠，可直接寫；但**不要延伸成「Blue Note 第一次替他配大樂團」之外的更強主張**。｜⚠ **編制人數**：jazzdisco 的編制欄列到十六人，**正文可寫「大樂團」「十餘人編制」，不要把人數寫死**（第 470 條：jazzdisco 的編制歸屬容易被讀錯）。｜⚠ **與同批另一張 Turrentine 的區隔**：同批 a 組還有《A Chip off the Old Block》（1963-10-21 錄、1964 年八月出、**五重奏**、Basie 曲目）。**兩張的編制與企圖完全相反**——一張是管風琴小編制的藍調，一張是 Oliver Nelson 編的大樂團。正文絕不可互抄，也不要寫成「同一時期的延續」。｜**跨卡連結**：Herbie Hancock 也在同批《It's Time!》《Some Other Stuff》，Bob Cranshaw 也在同批《Little Johnny C》《Wahoo!》，Grady Tate 也在同批《I'm Tryin' to Get Home》——**可呼應，不得寫成同一個班底**。｜**人名邊界**：Oliver Nelson／Clark Terry／J.J. Johnson／Phil Woods／Herbie Hancock／Kenny Burrell／Grady Tate 全有維基獨立條目，可寫。｜非選輯：單一 session 的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Freddie Roach|All That's Good",
+  "artist": "Freddie Roach",
+  "album": "All That's Good",
+  "facts": [
+   {
+    "f": "release-group 40043700 的欄位：title「All That's Good」、artist-credit「Freddie Roach」（Person d2d260d5，US，1934–1980）、first-release-date 1965、primary-type Album、secondary-types 空，**轄下只有 2 筆 release**：e9e64458（1965 US Blue Note BLP 4190，12 吋 6 軌）與 eddad256（2014-11-19 JP Blue Note UCCQ-5064 CD，**credit 作「Frederick Roach」**，bc 4988005851031）。**美國從未 CD 化，唯一的 CD 是 2014 年的日本限定盤。**原 LP 六軌與長度：Journeyman 7:38／All That's Good 6:23／Blues For 007 5:52／Busted 6:05／Cloud 788 6:25／Loie 6:34。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=40043700-4048-301d-97a1-fdb8930740e5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1965 年 10 月 2 日第 24 頁的 Blue Note 廣告**：「blue note — THE FINEST IN JAZZ SINCE 1939 — **JUST RELEASED AND MOVING! — ALL THAT'S GOOD — FREDERICK ROACH — BLP 4190 — A Soulful New Album By The Popular Organist**」。同期 **第 30 頁的 JAZZ BEST BETS** 評「ALL THAT'S GOOD—Frederick Roach—Blue Note BLP 4190」：「**Organ-grinder Frederick Roach is the featured artist on this fine collection of raunchy jazz tracks.** Also spotlighting Conrad Lester on the sax and Calvin Newborn on the axe, with Clarence John[ston] handling the percussion, the package boasts of plenty of 'soul'-filled blues arrangements. **Vocal backing by a fine trio makes for excellent listening on such tracks as 'Blues For 007' and 'Busted.'**」另外 1965-09-18 p22 與 1965-10-09 p24 的 Blue Note「RECENT FAVORITES」小幅廣告也把 BLP 4190 與 Horace Silver《Song for My Father》BLP 4185 並列。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-10-02.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4190 **年份欄 1965**，錄音 **1964-10-16 Van Gelder Studio, Englewood Cliffs**，母帶編號 1443–1448，編制：**Conrad Lester 次中音薩克斯風、Freddie Roach 管風琴、Calvin Newborn 吉他、Clarence Johnston 鼓、Marvin Robinson／Phyllis Smith／Willie Tate 人聲**。tk.8 Blues For 007／tk.15 Busted／tk.22 Loie／tk.32 Cloud 788／tk.33 All That's Good／tk.45 Journeyman。附註「also released on Blue Note BST 84190 in 1965」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released 1965 年 10 月、recorded 1964-10-16、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BST 84190。正文：「''All That's Good'' is **the fifth album** by American organist Freddie Roach... **It was reissued on CD only in Japan, as a limited edition.**」曲子四首 Roach 自己寫，另兩首是 **Harlan Howard 的〈Busted〉**（1963 年 Ray Charles 唱紅的鄉村曲）與 **Kenny Burrell 的〈Loie〉**。chronology：前作《Brown Sugar》（1964）、後作《The Freddie Roach Soul Book》（1966）。AllMusic 只給 2／5。",
+    "src": "https://en.wikipedia.org/wiki/All_That's_Good"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4190` 的**兩筆美國原壓都標 1965**（掛名作「Frederick Roach」，另兩筆是 Kiss《Double Platinum》NBLP-7100-2 的同號干擾）；`catno=BST 84190` 的四筆美國盤依序標 1965、1966（ST-84190）、1967、1973。**最早的一群一致是 1965，沒有更早年份的壓片。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4190&per_page=100"
+   },
+   {
+    "f": "掛名的實證：**原壓盤面與 1965 年的 Cash Box 廣告、評論一律作「Frederick Roach」，不是「Freddie Roach」**（Discogs 兩筆 1965 原壓、2014 年日本 CD 的 credit 也都是 Frederick Roach）；MB 的 artist 實體則登記成 Freddie Roach（d2d260d5，1934–1980）。同一位樂手在同批 a 組 Donald Byrd《I'm Tryin' to Get Home》（1964-12-17／18 錄）裡以管風琴手身分參與，jazzdisco 該處的編制欄寫的是「Freddie Roach, organ」。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4190&per_page=100"
+   }
+  ],
+  "hookCandidates": [
+   "Cash Box 1965 年十月的評論用了一個很老派的詞叫他：organ-grinder——手搖風琴師；而那張碟裡真的有三個人在後面唱和聲",
+   "美國從來沒有替這張發過 CD——唯一的一次 CD 化是 2014 年的日本限定盤，掛名還照原盤寫成 Frederick Roach"
+  ],
+  "sound": "6 軌、約 39 分鐘的管風琴四重奏加人聲：Freddie Roach 的 Hammond 領頭，Conrad Lester 次中音薩克斯風、Calvin Newborn 吉他、Clarence Johnston 鼓，另有 Marvin Robinson、Phyllis Smith、Willie Tate 三人的和聲人聲鋪在幾軌上——這是本組唯一用人聲伴唱的管風琴盤。曲子四首 Roach 自己寫，另收 Harlan Howard 的〈Busted〉與 Kenny Burrell 的〈Loie〉。單軌 5:52–7:38，blues 與 soul jazz 的路數。1964 年 10 月 16 日錄於 Van Gelder Studio。",
+  "keyTracks": [
+   "Journeyman",
+   "Blues For 007",
+   "Busted"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1965 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致：**同期紙本＝Cash Box 1965-10-02 p24 的 Blue Note 廣告直接寫「JUST RELEASED AND MOVING! ALL THAT'S GOOD — FREDERICK ROACH — BLP 4190」，同期 p30 另有評論**；Discogs `catno=BLP 4190` 兩筆美國原壓與 `BST 84190` 最早一筆全部標 1965，沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1965；維基 infobox 1965 年 10 月；MB frd 1965。**發行月可定在 1965 年九月底至十月初**（9 月 18 日已進「RECENT FAVORITES」小廣告、10 月 2 日標「Just Released」）。⚠ **錄音年 1964-10-16 ≠ 發行年 1965**，整整差一年。",
+  "notes": "**覆核策展層：RG 40043700／原盤 BLP 4190 6 軌／掛名 `Freddie Roach`／`label` Blue Note／年份 1965 全部成立，本張未擋下。** 策展層已標出日本 CD 的 credit 是「Frederick Roach」，本層再確認**1965 年的原壓盤面與 Cash Box 廣告、評論也都作 Frederick Roach**——池中掛名照 MB 的 `Freddie Roach` 不動，正文若要提盤面寫法可寫成「原盤印的是 Frederick Roach」。｜⚠ **人聲不是主唱**：Marvin Robinson／Phyllis Smith／Willie Tate 是**和聲伴唱**（Cash Box 的原話是「Vocal backing by a fine trio」），**不要寫成這是一張有主唱的專輯**。｜⚠ **「第五張專輯」只有維基一個來源**，可寫但語氣放軟。｜⚠ **AllMusic 只給 2 星、美國從未 CD 化**——這兩點是本卡最誠實的稀有度依據，可寫，但**不要把「冷門」寫成「被埋沒的傑作」那種推銷語氣**。｜**人名邊界**：Calvin Newborn 有維基獨立條目，可寫；Conrad Lester／Clarence Johnston／三位人聲只在維基與 jazzdisco 的編制欄，可寫但不宜當主軸。｜**跨卡連結**：Clarence Johnston 也在同批《Extension》打鼓；Freddie Roach 本人以管風琴手身分出現在同批《I'm Tryin' to Get Home》——**可呼應，不得寫成同一個班底**。｜非選輯：單一 session 的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Pete La Roca|Basra",
+  "artist": "Pete La Roca",
+  "album": "Basra",
+  "facts": [
+   {
+    "f": "release-group 240fd2e7 的欄位：title「Basra」、artist-credit「Pete La Roca」（Person da386a16，US，1938–2012）、first-release-date 1965、primary-type Album、secondary-types 空，轄下 7 筆 release。**原盤 f721da66 是 1965 US Blue Note BLP 4205、12 吋 6 軌**；再發沿革：1995 US CD B2-32091（bc 724383209125）、1997-06-25 JP TOCJ-4205、2005 XE 7243 8 75259 2 4、**2012 US Music Matters MMBST-84205（兩張 12 吋 45 轉，3＋3 軌）**、2015-06-03 JP UCCQ-9123、2020-01-31 XE Blue Note 80 黑膠 0838650。原 LP 六軌與長度：Malagueña 9:01／Candu 6:44／Tears Come From Heaven 4:58／Basra 9:57／Lazy Afternoon 5:33／Eiderdown 4:27。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=240fd2e7-e57c-3707-bcfc-5ed4be334e0d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 4200 系列目錄記 BLP 4205 **年份欄 1965**，錄音 **1965-05-19 Van Gelder Studio, Englewood Cliffs**，母帶編號 1576–1581（tk.8 Candu／tk.15 Malaguena／tk.16 Basra／tk.18 Lazy Afternoon／tk.19 Eiderdown／tk.20 Tears Come From Heaven），編制四重奏：**Joe Henderson 次中音薩克斯風、Steve Kuhn 鋼琴、Steve Swallow 貝斯、Pete La Roca 鼓**。附註「also released on Blue Note BST 84205 in 1965, B1-32091 in 1995, CDP 7243 8 32091 2 5 in 1995」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "英文維基：infobox released 1965 年 10 月、recorded 1965-05-19、studio Van Gelder（Englewood Cliffs）、producer Alfred Lion、label Blue Note BST 84205。正文第一句：「''Basra'' is **the debut album by drummer Pete La Roca**」——chronology 的 prev_title 是空的、next_title 是 1967 年的《Turkish Women at the Bath》。**錄音現場的一段軼事**：「Bassist Steve Swallow recounted that **he and La Roca had taken LSD prior to traveling to recording engineer Rudy Van Gelder's New Jersey studio for the session**. He also said that **Van Gelder threatened to end the session after pianist Steve Kuhn started manually plucking the piano strings.**」曲子四首 La Roca 自己寫，另兩首是 **Ernesto Lecuona 的〈Malagueña〉與 Steve Swallow 的〈Eiderdown〉**（〈Lazy Afternoon〉是 John La Touche／Jerome Moross）。AllMusic 4.5／5、DownBeat 3／5。",
+    "src": "https://en.wikipedia.org/wiki/Basra_(album)"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4205` 只回 **2 筆，都是 US Blue Note BLP 4205 Vinyl LP、年份都標 1965**，沒有任何同號干擾；`catno=BST 84205` 的美國盤依序是 1965（84205）、1966（兩筆）、1967，其後是 1979／1984 的日本盤與 2012 Music Matters、2020 Blue Note 80。**最早的一群一致是 1965，沒有更早年份的壓片。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4205&per_page=100"
+   },
+   {
+    "f": "⚠ **同期紙本查無（第 509b 條）**：本層掃過 **1964-01 至 1967-08 共 154 期 Cash Box**（每期全文檢索 Blue Note 目錄號 BLP/BST 4100–4200 系列、專輯名、藝人名），**BLP 4205／84205／「Basra」／「Eiderdown」四組關鍵字全段零命中**；「Pete La Roca」只在三處出現，都與本盤無關：1964-02-29 p32（提他是別人盤上的鼓手）、1965-02-13 p26（同上）、**1966-10-22 p36 的評論——那是 Contact 廠的 Steve Kuhn Trio《Three Waves》（CM/CS-5），「Steve Swallow and Pete La Roca are featured in the set」，是同一組人 1966 年在別家廠的碟，不是本盤**。Cash Box 1965 年並未評到或登廣告 BLP 4205。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1966/CB-1966-10-22.pdf"
+   },
+   {
+    "f": "同批跨卡的兩條線：**（一）Pete La Roca 本人在同批 a 組 Johnny Coles《Little Johnny C》（1963-08-09 那場）打鼓，也在同批 Freddie Hubbard《The Night of the Cookers Vol. 1》（1965-04 現場）打鼓**——他在本組十八張裡出現三次，只有這一張是以領班身分。**（二）Joe Henderson** 在本盤吹次中音，同批還在《Little Johnny C》《Trompeta Toccata》《Wahoo!》三張裡出現。本盤的錄音日 1965-05-19 距《The Night of the Cookers》的現場（1965-04-09／10）只有五週。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   }
+  ],
+  "hookCandidates": [
+   "Steve Swallow 後來說：進 Van Gelder 的錄音室之前，他跟 La Roca 嗑了 LSD；等 Steve Kuhn 開始用手撥鋼琴裡的弦，Van Gelder 揚言要中止這場錄音",
+   "六軌裡兩軌接近十分鐘，鼓手掛頭牌卻不炫技——這是 Pete La Roca 第一張以領班身分的專輯，下一張要等到兩年後"
+  ],
+  "sound": "6 軌、約 41 分鐘的無小號四重奏：Joe Henderson 的次中音薩克斯風是唯一的管樂，Steve Kuhn 鋼琴、Steve Swallow 貝斯、Pete La Roca 鼓。同名曲〈Basra〉9:57 與開場的〈Malagueña〉9:01 是兩塊長篇，中間夾著 4:27–6:44 的短曲；調性偏 modal 與東方色彩，Lecuona 的西班牙曲〈Malagueña〉被拆解重排。四首曲子 La Roca 自己寫、一首 Steve Swallow 的〈Eiderdown〉。1965 年 5 月 19 日錄於 Van Gelder Studio。",
+  "keyTracks": [
+   "Basra",
+   "Malagueña",
+   "Eiderdown"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1965 成立，但本層必須註明：這是本組十八張裡唯一一張沒有同期紙本佐證的卡。** 舉證只到第二層：Discogs `catno=BLP 4205` 的**兩筆美國原壓都標 1965 且無任何同號干擾**、`BST 84205` 最早一筆也標 1965，**沒有更早年份的壓片**（第 531 條）；jazzdisco 年份欄 1965；維基 infobox 1965 年 10 月；MB frd 1965。四邊一致，**但四邊之間有第 431 條的疑慮**（維基的 infobox 常引 jazzdisco，MB 的 frd 也常來自同一批來源）。⚠ **第 509b 條的反向用法**：本層掃過 1964-01→1967-08 共 154 期 Cash Box，**BLP 4205／84205／Basra／Eiderdown 全段零命中**——**這不足以推翻 1965，只能說明 Blue Note 沒有替這張買廣告、Cash Box 也沒有評它**（同期 Blue Note 有廣告的 4190、4200、4201、4188 都命中了）。**年份維持 1965，但這張的把握度低於本組其他十七張。**",
+  "notes": "**覆核策展層：RG 240fd2e7／原盤 BLP 4205 6 軌／掛名 `Pete La Roca`／`label` Blue Note／年份 1965 全部成立，本張未擋下。**｜⚠ **本卡是全組唯一沒有同期紙本的一張**（yearVerified 已說明）。正文**不得寫出任何「當年造成話題」「上市即受矚目」之類的市場語氣**——Cash Box 1965 年連一則廣告或評論都沒有。｜⚠ **LSD 與 Van Gelder 揚言中止錄音**這段只有維基一個來源（轉引 Steve Swallow 的口述），**寫的時候要標成「Steve Swallow 後來的說法」**，不得寫成確定事實。這一段是本卡最有畫面的素材，但語氣一定要收好。｜⚠ **「首張領銜作」**：維基正文明寫 debut album、chronology 的前作欄是空的，可寫。｜⚠ **曲名寫法**：MB／維基作「Malagueña」、jazzdisco 作「Malaguena」——**以 Malagueña 為準**。｜**人名邊界**：Joe Henderson／Steve Kuhn／Steve Swallow 全有維基獨立條目，可寫。｜**跨卡連結**：La Roca 也在同批《Little Johnny C》與《The Night of the Cookers Vol. 1》打鼓、Joe Henderson 在同批另有三張——**這是本組最密的兩條人線，可呼應，但三張／四張的編制與年份都不同，不得寫成同一個班底**。｜**同名不同碟的警覺**：Steve Kuhn Trio《Three Waves》（Contact CM/CS-5，1966）是同一組人在別廠的碟，**不是本盤的再發**。｜非選輯：單一 session 的原創專輯。｜串流：本卡店面探測**不缺試聽**，本層未再跑第 254 條。"
+ },
+ {
+  "key": "desc2:Grachan Moncur III|Some Other Stuff",
+  "artist": "Grachan Moncur III",
+  "album": "Some Other Stuff",
+  "facts": [
+   {
+    "f": "release-group 64fdbdf6 的欄位：title「Some Other Stuff」、artist-credit「Grachan Moncur III」（Person 2098836b，US，1937–2022，disambiguation「trombonist」）、first-release-date 1965-02、primary-type Album、secondary-types 空，轄下 7 筆 release。**原盤 5807d82d 是 1965-02 US Blue Note BST 84177（stereo）、12 吋 4 軌**（mono 的 BLP 4177 MB 未建，Discogs 與 Cash Box 有）；再發：1995-01-25 JP TOCJ-4177、1995-05-30 US Connoisseur CDP 7243 8 32092 2 4（bc 724383209224）、2009 US／XE 50999 2 65152 2 9、2009-02-10 數位、**2025-05-02 US 黑膠再發 BST 84177（bc 602455421487）**。原 LP 四軌：Gnostic／Thandiwa／The Twins／Nomadic，**全部由 Moncur 作曲**（MB 未登逐軌長度）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=64fdbdf6-f449-3474-9628-94aca9eed5ac&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Cash Box 1965 年 3 月 27 日第 30 頁的專輯評論**評「SOME OTHER STUFF—Grachan Moncur III—Blue Note 4177」：「**A quartet of Grachan Moncur compositions provides the scintillating fare on this Blue Note showcase of the great solo abilities of each of the five artists gathered together for the session.** Essentially, the themes introduced are worked on by the individual...」——同期紙本坐實 1965 年發行，並指出四首曲子全出自 Moncur、五位樂手各自獨奏。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1965/CB-1965-03-27.pdf"
+   },
+   {
+    "f": "jazzdisco 的 4100 系列目錄記 BLP 4177 **年份欄 1965**，錄音 **1964-07-06 Van Gelder Studio, Englewood Cliffs**，母帶編號 1382–1385（tk.1 The Twins／tk.6 Gnostic／tk.14 Thandiwa／tk.19 Nomadic），編制五重奏：**Grachan Moncur III 長號、Wayne Shorter 次中音薩克斯風、Herbie Hancock 鋼琴、Cecil McBee 貝斯、Anthony（Tony）Williams 鼓**。附註「also released on Blue Note BST 84177 in 1965, B1-32092 in 1995, CDP 7243 8 32092 2 4 in 1995」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基：infobox released「January/February 1965」、recorded 1964-07-06、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BLP 4177、genre avant-garde jazz／post-bop。正文：「''Some Other Stuff'' is **the second album** by American trombonist Grachan Moncur III, recorded on July 6, 1964 and released on Blue Note **early the following year**.」**Moncur 自己對三首曲子的說法**：〈Gnostic〉是一首「**which eliminates a pulsating meter**」的自由爵士，代表「the achievement of salvation through the expression of knowledge and wisdom」；〈Thandiwa〉（祖魯語「Beloved One」）是全片最不實驗的一軌；〈The Twins〉寫他的雙胞胎弟弟，**只用一個和弦建起來**，他認為節奏才是這首的重心。AllMusic 的 Scott Yanow：「Grachan Moncur III was one of the top trombonists of the jazz avant-garde in the 1960s **although he had only a few chances to lead his own record sessions**. This 1964 set... was one of his finest」。Penguin 3.5／4。chronology：前作《Evolution》（1963）、後作《New Africa》（1969）。",
+    "src": "https://en.wikipedia.org/wiki/Some_Other_Stuff"
+   },
+   {
+    "f": "第 531 條加跑：Discogs `search?catno=BLP 4177` 回 3 筆美國盤，**兩筆原壓標 1965、一筆 1966**；`catno=BST 84177` 的美國盤依序是 1965、1966（兩筆）、1967（三筆，Liberty Records, Inc. 與 Blue Note 盤標）、1970（Liberty/UA）。**最早的一群一致是 1965，沒有更早年份的壓片。**（⚠ `catno=BLP 4177` 的搜尋另會撈到大量 A&M 的「LP 177/SP 4177」——The Sandpipers 的《Guantanamera》，1966–1967 年在 Cash Box 榜上連掛半年；**那是同號干擾，不是本盤**。）",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4177&per_page=100"
+   },
+   {
+    "f": "串流採信 716361354（us 店面，Grachan Moncur《Some Other Stuff (Rudy Van Gelder Edition) [Remastered]》，A Blue Note Records Release；℗ 2009 Capitol Records, LLC，4 軌）：曲序與原 LP **逐軌同序且無加曲**——1 Gnostic 11:46／2 Thandiwa 8:21／3 The Twins 12:55／4 Nomadic 7:43，**四軌全部有試聽**。releaseDate 標 1965-01-01。第 254 條三種查法裡 `search?term=Grachan Moncur Some Other Stuff&entity=album&country=us` 一種即命中，jp／gb 同 collectionId；**這也是 MB 未登的逐軌長度的唯一可查來源**（第 472／532 條：非合訂版，本盤第一軌就是該條目的第一軌）。",
+    "src": "https://itunes.apple.com/lookup?id=716361354&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "〈The Twins〉寫的是他的雙胞胎弟弟，整首只用一個和弦搭起來——Moncur 說這首的重心根本不在和聲，在節奏",
+   "Wayne Shorter、Herbie Hancock、Cecil McBee、十八歲的 Tony Williams——Blue Note 給了一個很少有機會當領班的長號手這樣一組人，然後他寫了四首自己的曲子"
+  ],
+  "sound": "只有 4 軌、約 41 分鐘的五重奏前衛 hard bop：Grachan Moncur III 的長號領頭，Wayne Shorter 次中音薩克斯風、Herbie Hancock 鋼琴、Cecil McBee 貝斯、Tony Williams 鼓。四首全是 Moncur 的曲子，單軌 7:43–12:55——〈Gnostic〉刻意抽掉了固定的脈動、〈The Twins〉只建在一個和弦上、〈Thandiwa〉（祖魯語「摯愛之人」）是全片最貼近傳統的一軌。整體偏 avant-garde 與 post-bop 之間。1964 年 7 月 6 日一天錄完於 Van Gelder Studio。",
+  "keyTracks": [
+   "Gnostic",
+   "The Twins",
+   "Thandiwa"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1965 成立，本層以同期紙本獨立佐證。** 舉證階序五層一致：**同期紙本＝Cash Box 1965-03-27 p30 的專輯評論已印出「Blue Note 4177」**；Discogs `catno=BLP 4177` 的兩筆美國原壓與 `BST 84177` 最早一筆標 1965，沒有更早年份的壓片（第 531 條）；jazzdisco 年份欄 1965；維基 infobox「January/February 1965」；MB frd 1965-02。維基的「一、二月」與 Cash Box 3 月 27 日的評論相容（本組其餘各張的評論時差也是一至兩個月）。⚠ **錄音年 1964-07-06 ≠ 發行年 1965**，相隔約七個月。⚠ **第 531 條的干擾警告**：`catno=BLP 4177` 也會撈到 A&M 的「LP 177／SP 4177」（The Sandpipers），Cash Box 1966–1967 年榜單上那一長串「(A&M LP 177/SP 4177)」與本盤無關，**判年份時必須先把這一群剔掉**。",
+  "notes": "**覆核策展層：RG 64fdbdf6／原盤 BST 84177（stereo）4 軌／掛名 `Grachan Moncur III`／`label` Blue Note／年份 1965 全部成立，本張未擋下。** 本層補上 mono 號 **BLP 4177**（MB 只建 stereo，Cash Box 的評論與 Discogs 都作 BLP 4177）與**四軌的逐軌長度**（MB 未登，取自 Apple 716361354）。｜⚠ **編制人數的措辭**：Cash Box 寫「each of the **five** artists」，與 jazzdisco／維基的五重奏一致；**但這是四軌的專輯**——正文寫「四首曲子、五個人」是安全的。｜⚠ **Moncur 對曲子的自述**（〈Gnostic〉抽掉脈動、〈The Twins〉單一和弦、〈Thandiwa〉是祖魯語）出自維基轉引，**寫成「Moncur 自己的說法」**。｜⚠ **Tony Williams 當時的年紀**：他生於 1945 年，1964 年 7 月錄本盤時 18 歲——**這個推算本層沒有一手來源直接寫出，正文若要提請寫成「當時還很年輕」，不要把歲數寫死**。｜**人名邊界**：Wayne Shorter／Herbie Hancock／Cecil McBee／Tony Williams 全有維基獨立條目，可寫。｜**跨卡連結**：Herbie Hancock＋Cecil McBee 同時在同批《It's Time!》（晚一個月錄）——**可呼應，不得寫成同一個班底**。｜**串流採信 716361354**（us，4 軌逐軌同序、無加曲、全部有試聽）。**本卡原本缺試聽，本層已補上固定來源。**｜非選輯：單一 session 的原創專輯。"
+ }
+]

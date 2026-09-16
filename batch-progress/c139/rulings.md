@@ -397,3 +397,13 @@ Cash Box 1963-03-09 把 Iron Sheep 印成「Year of the Sheep／United Artists 1
 
 ⚠ **1964–66 只是抽查**，c-140／c-141 要那幾年的紙本仍須自己補抓。涵蓋表已更新到
 `batch-progress/enum/SOURCES-billboard-cashbox.md`（**開工看表不看檔名**，第 533 條）。
+
+## 第 556 條（主線 2026-09-16，鉤子層交件後）：**《'Way, 'Way Out》不得寫「七軌全自作」——首軌〈Miss Ann〉是 Eric Dolphy 的曲**
+
+卡單的 `curatorWhy` 寫「七軌全自作」，研究層 F4 指出**首軌〈Miss Ann〉出自 Eric Dolphy**
+（McIntyre 與 Dolphy 1960 年一起錄過）。**鉤子層自行改掉，主線追認**：正文不寫「全自作」，
+改寫〈Miss Ann〉的出處與兩人 1960 年的合作，並補上 1963-05-27 錄音日、Bob Cunningham／Edgar Bateman 與製作人 George Wein。
+**這是策展層「全／唯一／皆」這類全稱句的又一次落空**——與第 527 條同形。
+
+鉤子層 36 筆 QA 全清（hook 加權 19–37、note 294–350），**36 筆的 note 都帶「發行年寫 XXXX 年」並逐筆與卡單 `year` 比對零不符**
+（含改判的七張與 Blue John 1986）——**這個做法後批沿用**，它把第 475 條那種「裁定改了、卡單沒改」的漏接擋在鉤子層。
