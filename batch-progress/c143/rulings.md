@@ -419,3 +419,48 @@ Blue Note 1973 年 BN-LA 序列的 `-G2`（雙唱片）**多半是舊料重編�
   3. **現場盤的 MB frd 要先當成演出日檢查**（第 693 條）；1973-07-05 蒙特勒那一晚還有兩張沒收（Ronnie Foster BN-LA250-G、Bobbi Humphrey BN-LA252-G），1976 年另有 BN-LA663-J2《Blue Note Live At The Roxy》（V.A.，合輯，照第 312 條退）。
   4. **Gene Harris／Marlena Shaw／Bobbi Humphrey／Ronnie Foster／Alphonse Mouzon／Bobby Hutcherson／Donald Byrd** 這批人 1975–77 年在 Blue Note 還有十幾張，**池中已有的 seed（Astral Signal／Who Is This Bitch, Anyway?／Fancy Dancer／Virtue／Montara／Blacks and Blues／Satin Doll）要先實掃再排**。
   5. **紙本 Billboard 已掃到 1975-09-27、Cash Box 到 1975-09-27**（見 SOURCES 表第七度追加），1975-10 之後還沒有人掃。
+
+## 第 704 條（主線 2026-09-16，研究層 a 組交件後）：**《Live at the Lighthouse》從「同型推定」升級為直接證據——而升級的原因是「命中頁檔」本身會漏**
+
+a 組 21 筆全 `full`、**年份疑議 0**。四張覆核全部成立，其中一張升級：
+**Elvin Jones《Live at the Lighthouse》1973** 原本是「同型推定、可逆」，
+現在有 **Billboard 1973-01-20 p48 的爵士評介欄**，逐字印「Blue Note BN LA015-G2」並描述 Liebman／Grossman／Perla 的無鋼琴四重奏。
+**卡上的「可逆」註記已拿掉。**
+
+⚠ **升級的原因值得記下來**：策展層說「516 期查無」，是因為 **repo 的四份掃描檔只存關鍵字命中頁，這一頁沒被撈進去**
+——研究層直接抓該期 PDF 才看到。
+**通則：`enum/` 的命中頁檔是「有就省事」，不是「沒有就等於紙本沒有」。**
+**關鍵的一兩張碟，要直接抓原始 PDF 再確認一次。**（「失敗與正常長得一樣」家族：
+**紙本沒登，與紙本登了但關鍵字沒撈到那一頁，在命中頁檔上長得一模一樣。**）
+
+另 Flute-In 補成完整時間線（1971-07-31 簽約 → 10-16 在 Van Gelder 收尾 → 1972-01-22 仍寫「即將推出」→
+**1972-03-27 隨 Blue Note Month 上市**），Maestro 1973、Pretty Things 1971 再證。其餘 17 張抽查無同型偏移。
+
+## 第 705 條（同日）：**訂正第 667 條的抓取端筆記——Billboard 1970 年代混用兩種檔名**
+
+**第 667 條原文寫「`BB-` 在 70 年代一律 404」是錯的**：
+**Billboard 1970 年代的檔案館混用 `Billboard%20YYYY-MM-DD.pdf` 與 `BB-YYYY-MM-DD.pdf` 兩種**，
+**1972 全年與 1971 的部分期只有 `BB-` 有效**。研究層已把 10 個受影響的 src 換成可開的形式。
+**與第 614／642／647 條合起來：這個檔案館的檔名形狀沒有規律，一律兩種都試。**
+
+## 第 706 條（同日）：**研究層訂正策展層四處**
+
+1. **《Live at the Lighthouse》的目錄號是 BN-LA015-G2**（雙唱片後綴）——紙本與維基都這樣印，
+   **MB 原盤只登一片、維基明寫 double LP**（第 664 條第 3 點重演）。卡單欄位已改，可逆。
+2. **《Keep the Customer Satisfied》的爵士榜實為連八週、最高第 9 名**（策展層記三週、#16）；
+   **錄音地點與日期已查到**（維基：1970-03-30～04-01, Tropicana, Las Vegas）
+   ——策展層「正文不得寫場地日期」的禁令**放寬成「註明維基單一來源」**。
+3. **《Head On》第 670 條寫反了**：CD 多的三軌**不是**把〈At The Source〉拆開編號，
+   而是〈Togo Land〉〈Jonathan〉〈Hey Harold〉三首 2008 年 CD 的同場次 bonus track。
+4. **三張的維基 infobox 發行年／日無引註且與紙本衝突，一律不採信**：
+   McDuff《Who Knows…》寫 1970、Maestro 寫 1972、Flute-In 寫 1971-12-12。
+
+## 第 707 條（同日）：**c-143 a 試聽只採信 1 張；《The 3 Sounds》確認查無**
+
+**串流採信 1 張**：Horace Silver《Total Response》**`1460194295`**（9 軌逐軌與原盤同序同長），主線已補進 `previews.json`。
+**The Three Sounds《The 3 Sounds》跑完三種查法確認查無**——**探測層候選 `724864633` 逐軌核後是
+《Live at the "It Club"》、八軌無一相同**（**第 528 條再一例：`apple-candidates.md` 會給錯碟**）。
+**c-143 試聽 38/42。**
+
+**封面**：Elvin Jones《Live at the Lighthouse》替代圖來源首選 **Discogs release 294222**（1972 US 原壓 BN-LA015-G），
+備選 16230827／10946809／G2 的 15413552／日版 8945245。
