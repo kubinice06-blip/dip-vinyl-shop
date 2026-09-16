@@ -139,3 +139,20 @@ Capitol 三張（含 Adderley 這張爵士現場盤）全退——第 313 條不
 - 中間檔 `scratchpad/c141a/`：c141a-mbfetch.mjs／mb/（23 個 RG 的 release-group＋release＋CAA 回傳＋7 個 artist／RG 搜尋）、c141a-mbsum.txt（逐張摘要）、c141a-tracks.json（20 張原盤＋5 張 CD 軌序）、c141a-poolscan.txt（實掃全文）、wiki/（26 個維基 infobox＋track listing＋personnel）、discogs/（33 個 catno／master 反查）、c141a-apple.json（店面 search 兩輪）、c141a-build1～4.mjs（卡單產生）。jazzdisco 4200 頁沿用 c140a 的抓取。
 - **給 b 組**：(1) 本組改判為 1968 的 7 張（Hi Voltage、Slow Drag、Contrasts、Easy Walker、Easterly Winds、New and Old Gospel、Blackjack，rgMbid 見 prop-a）若出現在 b 組 1968 段的 slice，是同 RG、退；(2) BST 842xx 後段的 MB frd 一律先當錄音年，jazzdisco 目錄年再對 Billboard；(3) `Jack Wilson` 字串的第 307 條預警。
 - **給後批（1968–84 段）**：(1) Blakey《Roots & Herbs》BST 84303 與本組 Witch Doctor、c-140 a Freedom Rider 互指；(2) Gale《Black Rhythm Happening》BST 84320 掛名沿用 `Eddie Gale`；(3) Tyrone Washington《Natural Essence》BST 84274 領班盤新掛名；(4) Adderley／Nancy Wilson 的 Capitol 目錄在 1985 後段整批出現，照第 313 條退；(5) 「Blue Note 自家 vault 首發是 CD」的形（Standards）在 1985 後段會很多（1990 年代 Connoisseur／Cuscuna 系列），`label` 寫 CD 號、`year` 取 CD 年。
+
+## 第 579a 條（同批，接力代理覆核，2026-09-16）：**a 組 23 筆已全數處理完畢——「剩 3 筆」是第 570 條的 3 張退件，不是未做**
+
+前一支 a 組代理撞 API 額度中斷，交接時只看到 `prop-a.json` 20 筆，誤判為「還剩 3 筆」。
+接力代理程式比對 `slice.json`（`g: "a"` 23 筆）與 `prop-a.json`（20 筆，以 `mbNote` 第一個 UUID 為鍵）：
+**差集恰為第 570 條退表的 3 個 rgMbid**（Nancy Wilson《Lush Life》6670b49f／《Welcome to My Love》94343818／Cannonball《74 Miles Away》643fd9d8），
+`prop` 無 slice 外的多餘卡、與 `g: "b"` 22 筆重疊 0。**23 = 20 收 + 3 退，無遺漏。**
+
+**三張退件獨立重驗（重打 MB `release-group` ＋ `release?inc=media+labels+artist-credits`）**，與第 570／572 條完全相符、第 313 條成立：
+- 《Lush Life》：轄下 3 筆＝Capitol Records **ST 2757**（1967 US 12" Vinyl 11 軌）／Capitol Jazz CD（1995）／**Blue Note CD 1995-08-01**（12 軌，無 catno）——BN 關聯始於 1995。
+- 《Welcome to My Love》：轄下 2 筆＝Capitol Records **ST 2844**（1967 US 12" Vinyl 11 軌）／**Blue Note CD 1994-06-14**（無國別無 catno）——BN 關聯始於 1994。
+- 《74 Miles Away》：轄下 4 筆＝Capitol **SMK 74418**（1967 DE 12" Vinyl 5 軌）／**Blue Note 2008 NL Digital**（5 軌）／2011＋2021 JP CD（Capitol ST-2822／TOCJ-50153／UCCU-8271）——BN 關聯始於 2008；RG secondary-types `["Live"]` 確認（第 575 條的 studio-with-audience 保留意見不變）。
+  ⚠ 補正第 577 條末句：**US ST-2822 這個號在 MB 有建**，但只出現在 2011／2021 兩筆日本 CD 的 label-info，1967 年的美國黑膠 release 確實沒建。
+
+**交件狀態**：`node batch-progress/c141/chk-prop.mjs a` 重跑 → **20 張、19 位、標記 0**（跨批 104 批 4,292 張撞卡 0、同 rgMbid 不同掛名 0）；
+20 筆的 `mbNote` 第一個 UUID 全數等於 enum 的 `rgMbid`；欄位鍵與 `c140/prop-a.json` 完全一致（`queryAlias` 為全形分號串字串，非陣列）；
+`why` 均長 542／`risk` 705／`mbNote` 710 字元（c-140 a 為 468／707／708）——密度達標。**a 組結案，無待辦。**
