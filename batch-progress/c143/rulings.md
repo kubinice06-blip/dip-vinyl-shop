@@ -225,7 +225,7 @@ Billboard 1970–74 則單一形狀 **`.../Billboard/70s/<年>/Billboard%20YYYY-
 
 | # | slice | rgMbid | 理由分類 | 說明 |
 |---|---|---|---|---|
-| 1 | Lee Morgan《Lee Morgan》1972（BST 84901／TYCJ-81075／UCCQ-3010） | c6d6b439-4273-414e-8d08-1502211cae5e | **漏折的重複 RG（簡報二、1）＋ 與 a 組同批撞卡** | **同批 a 組 slice 第 21 筆是 Lee Morgan《The Last Session》1972，rgMbid 36a658bb-2be8-3496-a064-d260a68038b3，catno 同樣是 BST 84901。** 本層回問該 RG：轄下 3 個 release，其中 **6edc7f1f 就是「1972 US 12\" Vinyl 5 軌，Blue Note BST 84901」——與本組 c6d6b439 轄下的 f4459083（1972 US，12\" Vinyl×2＋12\" Vinyl×3＝雙唱片 5 軌，BST 84901）是同一張盤**；另兩筆是 1998 年的美／英 CD（7243 4 93401 2 1）。**維基把兩者當同一張處理**：`Lee Morgan (album)` 直接轉址到 `The Last Session (Lee Morgan album)`，infobox 標題寫「Lee Morgan (The Last Session)」、正文說「**retroactively titled The Last Session**」、released「May 1972」引 Billboard 1972-05-20。Discogs `catno=BST 84901` 回 9 筆，**全部盤名都是「Lee Morgan - Lee Morgan」**、沒有一筆叫 The Last Session。**裁定：b 組退，讓 a 組收。** 依據：(1) 先例——第 610 條給 c-142 b 的第 1 點就是「a 組已收的同一張碟再出現在 b 組 slice 一律退」，本組是同形狀（不同 rgMbid、同一張碟）；(2) 可逆——退的是卡單一列，不動卡池結構。⚠ **但 a 組那張的盤名要改**：1972 年原盤上印的是自名的「Lee Morgan」（Discogs 九筆一致），「The Last Session」是 1998 年 CD 才追加的標題——**主線上架前建議把 a 組那張的 `album` 改成 `Lee Morgan`、`selfTitled: true`，「The Last Session」進 queryAlias**（本層不動 `prop-a.json`）。⚠ **`chk-prop` 抓不到這一筆**：它的鍵是「掛名＋盤名」，`Lee Morgan|Lee Morgan` 與 `Lee Morgan|The Last Session` 折不到同一鍵，跨組重複報 0——**第 611 條「失敗與正常長得一樣」的第三種形狀：同一張碟在兩個 RG 底下用兩個盤名，chk-prop 的跨組檢查與 rgMbid 檢查同時失效。** |
+| 1 | Lee Morgan《Lee Morgan》1972（BST 84901／TYCJ-81075／UCCQ-3010） | c6d6b439-4273-414e-8d08-1502211cae5e | **漏折的重複 RG（簡報二、1）＋ 與 a 組同批撞卡** | **同批 a 組 slice 第 21 筆是 Lee Morgan《The Last Session》1972，rgMbid 36a658bb-2be8-3496-a064-d260a68038b3，catno 同樣是 BST 84901。** 本層回問該 RG：轄下 3 個 release，其中 **6edc7f1f 就是「1972 US 12\" Vinyl 5 軌，Blue Note BST 84901」——與本組 c6d6b439 轄下的 f4459083（1972 US，12\" Vinyl×2＋12\" Vinyl×3＝雙唱片 5 軌，BST 84901）是同一張盤**；另兩筆是 1998 年的美／英 CD（7243 4 93401 2 1）。**維基把兩者當同一張處理**：`Lee Morgan (album)` 直接轉址到 `The Last Session (Lee Morgan album)`，infobox 標題寫「Lee Morgan (The Last Session)」、正文說「**retroactively titled The Last Session**」、released「May 1972」引 Billboard 1972-05-20。Discogs `catno=BST 84901` 回 9 筆，**全部盤名都是「Lee Morgan - Lee Morgan」**、沒有一筆叫 The Last Session。**裁定：b 組退，讓 a 組收。** 依據：(1) 先例——第 610 條給 c-142 b 的第 1 點就是「a 組已收的同一張碟再出現在 b 組 slice 一律退」，本組是同形狀（不同 rgMbid、同一張碟）；(2) 可逆——退的是卡單一列，不動卡池結構。⚠ **盤名不另提議**：a 組已在 **第 666 條第 2 點**裁定 BST 84901 取《The Last Session》、原盤自名的《Lee Morgan》進 queryAlias、`selfTitled` 設 false，依據是第 45 條「取現行流通名」——**本層照收，不推翻**（有先例即照先例，第 691 條只負責退掉重複的那個 RG）。唯一要請寫作層守住的是 a 組自己寫的那句：**正文提到原盤同名時要說清楚**，因為 Discogs 九筆 1972 年壓片的 title 欄全部是「Lee Morgan - Lee Morgan」。⚠ **`chk-prop` 抓不到這一筆**：它的鍵是「掛名＋盤名」，`Lee Morgan|Lee Morgan` 與 `Lee Morgan|The Last Session` 折不到同一鍵，跨組重複報 0——**第 611 條「失敗與正常長得一樣」的第三種形狀：同一張碟在兩個 RG 底下用兩個盤名，chk-prop 的跨組檢查與 rgMbid 檢查同時失效。** |
 
 ## 第 692 條（同批）：**1970–74 這一段的年份偏移比 1968–70 小得多——22 筆只改判 1 張**
 
@@ -290,17 +290,31 @@ Blue Note 1973 年 BN-LA 序列的 `-G2`（雙唱片）**多半是舊料重編�
 → **給後批**：BN-LA 序列的 `-G2`／`-H2`／`-J2` 尾碼**要逐張查 jazzdisco 的 session 區塊**；
 1975 年起的 `-H2`（BN-LA356／392／393／394／395／399～402-H2 那一整段）**幾乎全是舊料雙唱片重編**，後批看到要照第 312 條退進 §5.6 子批。
 
-## 第 697 條（同批）：**掛名——三部曲與 Three Sounds 兩組字串要在上架前統一（給 a 組與主線，本層不動 `prop-a.json`）**
+## 第 697 條（同批）：**掛名與盤名——與 a 組對照的結果：三部曲已經一致，Three Sounds 這一組要主線定**
 
-1. **Horace Silver「The United States of Mind」三部曲**：
-   - Phase 1《That Healin' Feelin'》（BST 84352，1970）——**c-142 b 已收，掛 `Horace Silver`**。
-   - Phase 2《Total Response》（BST 84368，1972）——**c-143 a 的 slice 掛名寫 `The Horace Silver Quintet / Sextet`**。
-   - Phase 3《All》（BST-84420，1972）——**本組收，依第 307 條與 Phase 1 的先例掛 `Horace Silver`**（MB RG credit 是兩個 Group 並列：e9ac5139「The Horace Silver Quintet」＋8efa0fa8「Horace Silver Sextet」，已進 queryAlias）。
-   → **若 a 組照 slice 原樣交件，三部曲會在池中裂成兩種字串。建議主線把三張統一到 `Horace Silver`**（池中該字串已有 20 列）。**改的是卡單值、可逆。**
-2. **Gene Harris**：
-   - 《The 3 Sounds》（BST 84378，1971）——**c-143 a 的 slice 掛名寫 `Gene Harris The 3 Sounds`**。
-   - 《Gene Harris of the Three Sounds》（BST 84423，1972）與《Yesterday, Today & Tomorrow》（BN-LA141-G2，1973）——**本組兩張都掛 `Gene Harris`**（MB RG credit 就是 `Gene Harris`／1dbdc230 Person；池中 seed《Astral Signal》1974 也是這個字串）。
-   → **連續三張同一個人、兩種字串**；建議統一到 `Gene Harris`。**注意池中另有群組字串 `The Three Sounds` 12 列（seed 1＋c-137～c-141 的 11 張），那是 1958–69 年的團，不要跟 1971 年之後的個人掛名合併**（第 307 條：不自行合併）。
+本層交件後回讀 `prop-a.json` 與 a 組的第 666 條，逐項對照：
+
+1. **Horace Silver「The United States of Mind」三部曲——已經一致，無須主線介入。**
+   - Phase 1《That Healin' Feelin'》（BST 84352，1970）——c-142 b 收，掛 `Horace Silver`、**短題**。
+   - Phase 2《Total Response》（BST 84368，1972）——**a 組收，掛名 `Horace Silver`、短題**（a 組第 666 條第 1 點：
+     Billboard 1972-04-15 的整版廣告只印「HORACE SILVER TOTAL RESPONSE」，且「三部曲的卡必須同一種命名法」）。
+   - Phase 3《All》（BST-84420，1972）——**本組收**；**掛名照第 307 條與前兩部取 `Horace Silver`**（MB RG credit 是兩個 Group 並列：
+     e9ac5139「The Horace Silver Quintet」＋8efa0fa8「Horace Silver Sextet」，已進 queryAlias），
+     **盤名依 a 組第 666 條改用短題《All》**（長題「The United States of Mind, Phase 3: All」與 Discogs 盤面題進 queryAlias）。
+     ⚠ a 組第 666 條原文已預告「第三部《All》BST 84420 不在本批 slice」——**那句話就是寫給本組的，本層照辦。**
+   ⚠ **短題《All》是極常見字串**：實掃池中 `album == All` 命中 4 列，全是 Descendents《All》（1987，seed ＋ c-50 的三個中間檔），
+     **掛名不同、chk-prop 不亮燈**；已寫進該卡 risk，店面查詢與上架比對必須連掛名帶 catno。
+
+2. **Gene Harris／The Three Sounds——兩種字串並存，請主線定（本層不動 `prop-a.json`）。**
+   - 《The 3 Sounds》（BST 84378，1971）——**a 組收，掛 `The Three Sounds`**（池中該群組字串已有 12 列：seed 1 ＋ c-137～c-141 的 11 張），
+     a 組並在第 666 條末把 `selfTitled` 設 true。
+   - 《Gene Harris of the Three Sounds》（BST 84423，1972）與《Yesterday, Today & Tomorrow》（BN-LA141-G2，1973）——
+     **本組兩張都掛 `Gene Harris`**：MB RG credit 就是 `Gene Harris`（1dbdc230 Person），**池中 seed《Astral Signal》（BN-LA313-G，1974）也是這個字串**。
+   → **這不是矛盾，是同一個人在 1971→1972 之間真的改了掛名**（盤名本身從「The 3 Sounds」變成「Gene Harris of the Three Sounds」再變成個人名義），
+     **兩邊各自都照第 307 條用了池中既有寫法**。**但池中會出現「1971 年掛群組、1972 年起掛個人」的斷點**——
+     主線若要一致，只能二選一：(a) 維持現狀（歷史正確，但同一支團在池中橫跨兩個字串）；(b) 把 1971 年那張也改掛 `Gene Harris`（會讓 `The Three Sounds` 的 12 列少一張姊妹卡）。
+     **本層建議 (a) 維持現狀**——理由是盤面掛名確實在變，第 307 條的「不新造分裂、不自行合併」兩邊都沒有違反。**可逆，改的是卡單值。**
+     ⚠ 無論主線選哪一個，**1958–69 年的 `The Three Sounds` 12 列不得與 1972 年之後的 `Gene Harris` 合併**（那是兩個時期兩種編制）。
 
 ## 第 698 條（同批）：**資料庫與紙本的錯誤清單（22 筆裡查出 13 處）**
 
@@ -387,8 +401,10 @@ c-142 b 記「Cash Box 1971 年起是 `Cash-Box-` 前綴，1970 年仍是 `CB-`�
   `dg.mjs`＋`discogs/`（24 個 catno 反查）、`wiki.mjs`／`wiki2.mjs`＋`wiki.json`（32 查 19 中的原始 wikitext）、`apple.mjs`／`apple2.mjs`／`apple.json`、
   `np.py`（八支 shard 的抓取器，含 `.done` 續跑檔）、`np2.py`（命中頁檢索工具）、`srch.py`／`np-hits.txt`、`b1.py`～`b4.py`（卡單產生，每 5 張寫回磁碟一次）。
 - **給 a 組（c-143 前 23 筆）**：
-  1. **Lee Morgan《The Last Session》36a658bb 由你們收**（本組已退同碟的 c6d6b439）；**建議把 `album` 改成 `Lee Morgan`、`selfTitled: true`**（1972 年原盤是自名盤，The Last Session 是 1998 CD 的追加標題，Discogs 九筆原壓無一叫 The Last Session），維基 `Lee Morgan (album)` 轉址到 `The Last Session (Lee Morgan album)` 可佐。
-  2. **《The United States of Mind, Phase 2: Total Response》的掛名建議改成 `Horace Silver`**（第 697 條），**《The 3 Sounds》(BST 84378) 建議改成 `Gene Harris`**。
+  1. **Lee Morgan《The Last Session》36a658bb 由你們收，盤名照你們的第 666 條第 2 點不動**（本組已退同碟的 c6d6b439，見第 691 條）。
+     ⚠ 本層另補一條證據給寫作層：**維基 `Lee Morgan (album)` 直接轉址到 `The Last Session (Lee Morgan album)`，infobox 標題寫「Lee Morgan (The Last Session)」、正文說「retroactively titled The Last Session」、released「May 1972」引 Billboard 1972-05-20**——與你們用 BB 1972-05-20 整版廣告定年的結論一致。
+  2. **《All》BST 84420 本組已照你們第 666 條第 1 點取短題、掛 `Horace Silver`，三部曲三張命名法一致**（第 697 條）。
+     **Gene Harris／The Three Sounds 那一組兩種字串並存，本層建議維持現狀、請主線裁定**（第 697 條第 2 點），不需要你們改。
   3. **本層抓的紙本已入庫**（`billboard-bn-1971h2-1975-ocr.txt` 209 期、`cashbox-bn-1971h2-1975-ocr.txt` 204 期），但**關鍵字是 b 組的 22 個目錄號＋20 個盤名＋14 個人名**——你們的碟多半不在裡面，要自己重抓或放寬關鍵字。
   4. **Cash Box 1973-03-10 p26／1973-07-21 p25／Billboard 1972-04-01 p58＋04-15 p55／Cash Box 1974-10-05 p19 四份廠牌檔期文件**（第 695 條）覆蓋 BN-LA014／024／054／059／109／110／098／259／261／267／313／260-G 與 BST 84413／84414／84415／84368／84379——**a 組的碟若在這些號裡，年份直接可定。**
 - **給後批（1975–84 段）**：
