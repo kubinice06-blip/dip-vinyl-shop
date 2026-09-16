@@ -234,3 +234,45 @@ Apple 的 releaseDate 本組 12 張裡 8 張是錄音日（Spoiler 09-22、Musta
 - **1939–66 段收尾（c-135～c-140 六批）**：本組是 Lion 期的最後一組。本組 12 張裡 **7 張的實際首發年已在 1967–84 段**（6 張 1967、Rajah 1984），連同 a 組的 Extension／Bring It Home to Me（1967）、Joy Spring（1981），**1956–66 段的 enum 清單裡至少 10 張其實是 1967 後出版的**——同 RG 不會再排到，已含在此。反向也要記：1967–84 段的 enum 清單裡會有 1966 年錄、MB 填 1967 的；那一段開工先跑 jazzdisco 4200／4300 目錄頁整頁比對，不要逐張等 MB。
 - **給 1967–84 段的三件**：(1) **BLP 4238–4262 段 MB 年份幾乎全＝錄音年**（第 561 條），jazzdisco＋Billboard 先行；(2) **84400 段的 vault 盤 MB 可能填錄音年**（Rajah 形），判準是「catno 號段與年份不相容」；(3) Cannonball《Why Am I Treated So Bad!》rgMbid 5782ce84 已釘，走 Cannonball／Capitol 線時直接用。
 - 中間檔 `scratchpad/c140b/`：c140b-mbfetch.mjs＋mb/（13 個 RG 的 release-group＋release＋CAA 回傳）、c140b-mbsum.mjs／.txt（逐張摘要）、c140b-tracks.mjs／.json（16 筆 release 的軌序）、c140b-poolscan.mjs／.txt（實掃全文）、c140b-wiki.mjs／c140b-wiki2.mjs＋wiki/（17 個維基 infobox）、c140b-discogs.mjs／c140b-discogs2.mjs＋discogs/（22 個 search＋9 個 release 詳情）、c140b-apple.mjs／c140b-apple2.mjs＋c140b-apple.json（店面 search 含重試）、web/（jd-index、jd-4400 目錄頁、jd-4200-disco／jd-4400-disco session 頁）、c140b-build1／2.mjs（卡單產生）。
+
+## 第 570 條（主線 2026-09-16，研究層 b 組交件後）：**年份改兩張——盤面的 ℗© 年是版權年不是上市年**
+
+b 組 12 筆全 `full`、QA 清、**十張拿到同期紙本佐證**（6 張 Cash Box 新片評介／廣告、2 張 Billboard 1967-09-16 新片欄）。
+**兩張改判，全部採信**：
+
+- **Ornette Coleman《The Empty Foxhole》1966 → 1967**：Cash Box **1967-01-21** 短訊寫這張
+  「to be released in the near future」（1967 年 1 月還沒上市），**1967-04-15 JAZZ PICKS** 當新片評介 BLP 4246／84246；
+  jazzdisco 也記 1967。反面只有 MB 的 1966 與**同源的** Discogs 1966 原壓群（第 550 條形）。
+- **Lee Morgan《The Rajah》1984 → 1985**：Cash Box 1984-10-06／10-13（Blue Note 重啟仍是未來式、
+  首批「will see the light of day in January」）、**1985-01-19 Lundvall 訪談**（首批含四張未發行庫存盤
+  ＝BST 84425／84426／84427／84428）、1985-03-09 Town Hall 重啟報導＋姊妹盤 84428 的新片評介。
+  維基亦記 1985；母帶是 Cuscuna **1984 年**在庫房翻出的。**盤面 ℗© 1984 是版權年**（法／日盤標 1985）。
+
+**兩條給後批的通則**：
+1. **盤面的 ℗© 年是版權年，不是上市年**——**Discogs 原壓群多半抄它，所以會整群一起錯**（與第 550／553 條同一件事）。
+2. **Cash Box 常在正式評介前幾個月先登「to be released in the near future」這類短訊**——
+   **預告 ＋ 評介兩則一起用，可以夾出上市月份**，比單一則評介準。
+
+## 第 571 條（同日）：**b 組缺試聽兩張都補上；順手修掉 prop 的五處事實錯**
+
+**串流採信**：Ornette Coleman《Golden Circle Vol. Two》**`1443127075`**（原盤四軌同序，非合訂版；
+備案 `723626552` 是 RVG 7 軌、前 4 軌對應原盤）；
+Freddie Hubbard《Night of the Cookers Vol. 2》**`1443156966`**（兩軌＝原盤兩軌，
+〈Jodo〉23:33／〈Breaking Point〉21:43，與 MB 差 2 秒與 0 秒）。主線已補進 `previews.json`。**c-140 試聽 26/30**（缺的 4 張在 a 組）。
+
+**修掉的 prop 事實錯五處（寫作層要照）**：
+《The Rajah》**曲目作者反了**（〈The Rajah〉是 Morgan、〈A Pilgrim's Funny Farm〉是 Cal Massey，
+不是 Cedar Walton／Morgan）；《Of Love and Peace》的〈Pavanne〉作者是 **Morton Gould** 不是 Young；
+《Delightfulee》大樂團漏了 **Jim Buffington（法國號）與 Don Butterfield（低音號）**；
+《Vibrations》MB 第 7 軌〈Pavane〉**＝ jazzdisco／維基的〈The Lamp Is Low〉**（同一軌兩個名字）；
+《Mustang!》的「Freddie Waits 出道作」**找不到獨立來源，不要寫**。
+
+## 第 572 條（同日）：**b 組自抓的紙本收進 repo（149 期全文）**
+
+- `batch-progress/enum/cashbox-bn-1966-67-ocr.txt`（**7.9 MB，1966＋1967 全 105 期全文**，
+  檔案館缺 1966-07-02、07-09；每期以 `######## CB-YYYY-MM-DD` 分隔）
+- `batch-progress/enum/cashbox-bn-1984-85-ocr.txt`（**0.9 MB，1984-09→1985-06 共 44 期**，
+  **Blue Note 1985 年重啟那一段**——查 1980 年代才出土的 vault 盤首次商業發行年就用這份）
+
+⚠ 這兩份與先前幾份不同：**存的是整期全文，不是關鍵字命中頁**。涵蓋表已更新到 `SOURCES-billboard-cashbox.md`。
+（c-139 b 的 cbtext 只到 1964-09，對 1966–67 這段無用——**這就是為什麼要看涵蓋表不看檔名**，第 533 條。）
