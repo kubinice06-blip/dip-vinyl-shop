@@ -1,0 +1,442 @@
+[
+ {
+  "key": "desc2:Andrew Hill|Grass Roots",
+  "artist": "Andrew Hill",
+  "album": "Grass Roots",
+  "facts": [
+   {
+    "f": "release-group 9d12a1bd 的欄位：title「Grass Roots」、artist-credit 單一 Person `Andrew Hill`（ede80a9f）、first-release-date 1968、primary-type Album、secondary-types 空。轄下五筆：**原盤 e559260e 是 1968 US Official Blue Note BST 84303、12 吋 5 軌**（〈Grass Roots〉341 秒、〈Venture Inward〉286、〈Mira〉380、〈Soul Special〉503、〈Bayou Red〉466，MB 這筆罕見地有填軌長）；2000 US CD 4fc95481（7243 5 22672 2 4，**10 軌**）與同年 XE ad4d3dbf（522 6722，同 barcode 724352267224）；2004-10-01 XW 數位 0964fe24；2025-01-03 Tone Poet 黑膠 86a4fa10（602455187697＋BST 84303，回到 5 軌）。CAA 的封面掛在 2000 年 XE CD ad4d3dbf、不是原盤。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9d12a1bd-a07c-3276-b916-0c845a82cc13&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄記「BST 84303 Andrew Hill - Grass Roots **1968**」，並給完整場次：**1968 年 8 月 5 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制 Lee Morgan（trumpet）、Booker Ervin（tenor sax）、Andrew Hill（piano）、Ron Carter（bass）、Freddie Waits（drums）；母帶序 3069 tk.10〈Grass Roots〉、3070 tk.20〈Venture Inward〉、3071 tk.23〈Bayou Red〉、3072 tk.36〈Soul Special〉、3073 tk.41〈Mira〉——**盤面曲序（Grass Roots／Venture Inward／Mira／Soul Special／Bayou Red）與錄音順序不同**。附註 also released on Blue Note 7243 5 22672 2 4 in 2000。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r1048765（1968 US BST 84303）的**完整製作名單**：Francis Wolff＝Producer、Rudy Van Gelder＝Recorded By 兼 Lacquer Cut By、**Nat Hentoff＝內頁文案**、**Jordan Malek＝封面攝影**（⚠ 不是 Reid Miles、也不是 Francis Wolff 拍的封面照——這是本組唯一一張封面攝影掛 Jordan Malek 的）、Andrew Hill＝piano 兼全曲作者。盤面註記「White/blue labels with 『A Division Of Liberty Records, Inc.』」、runout「BNST·84303·A· 114 VAN GELDER」。`catno=BST 84303` 的美國原壓群（1048765／12206028／23103824）全標 1968，1975 年 UA 期再壓 1250592，**德國壓片 6968270 標 1969**。",
+    "src": "https://api.discogs.com/releases/1048765"
+   },
+   {
+    "f": "⚠ **年份有疑議（本張是本組唯一一筆與卡單牴觸的）。** 本層新掃的 Cash Box 1968-10→1969-12 共 69 期（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）給出一條連續的 Blue Note 目錄號↔評介週對照：**84283 評於 1968-11-09、84272 評於 1968-11-30、84289 評於 1969-01-04、84296 評於 1969-03-22、84299 評於 1969-03-08、84300 評於 1969-04-12、84302 評於 1969-05-31、84313 評於 1969-07-19**。**84303 夾在 84302（1969-05-31）與 84307（Billboard 1969-08-02）之間，落點是 1969 年年中，不可能是 1968 年的碟。**另 Cash Box 1968-12-07 的年度唱片目錄把 Blue Note 當時在架的盤全部列出、**最高只到 BST 84292**——84303 當時根本還沒上市。英文維基 infobox 亦寫 released **1969**。Discogs 美國原壓群標 1968 屬第 570 條的「整群抄 ℗© 年」形。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
+   },
+   {
+    "f": "英文維基《Grass Roots (Andrew Hill album)》：infobox released **1969**、recorded「April 19 (tracks 6–10) and August 5, 1968」、studio Van Gelder、producer **Francis Wolff**、label Blue Note BST 84303；前作《Change》（1966）、後作《Dance with Death》。正文寫原盤是 Hill 與 Lee Morgan、Booker Ervin、Ron Carter、Freddie Waits 演 **五首 Hill 自己的曲子**；**2000 年 CD 多出的五軌是另一個六重奏、另一場（Woody Shaw 小號、Frank Mitchell 次中音、Jimmy Ponder 吉他、Reggie Workman 貝斯、Idris Muhammad 鼓）**。AllMusic 的 Stephen Thomas Erlewine 給四星，說「the songs have strong melodies, even hooks, to bring casual listeners in, but they give the musicians the freedom to find a distinctive voice in their solos」。",
+    "src": "https://en.wikipedia.org/wiki/Grass_Roots_(Andrew_Hill_album)"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 724719257「Grass Roots」掛 Andrew Hill、**10 軌＝2000 年 CD 形**、releaseDate 欄填的是錄音日 1968-08-05、「℗ 2000 Blue Note Records」。**前 5 軌對應原盤 5 軌**、第 6–10 軌是 1968-04-19 那場六重奏的 bonus。本張不在缺試聽名單裡，本層未逐軌重跑；寫作層引軌數要寫 5 軌（原盤），不得用店面的 10。",
+    "src": "https://itunes.apple.com/lookup?id=724719257&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Lion 走了、Liberty 接手，Francis Wolff 把 Lee Morgan 和 Booker Ervin 一起塞進 Andrew Hill 的錄音室——這是 Hill 六〇年代最後一張正式發行的領銜盤，也是他最好聽的一張",
+   "五首曲子全是 Hill 自己寫的，卻刻意收掉《Point of Departure》那套多調性寫作，換上 groove：錯位的節奏底下，兩管在吹的是硬咆勃"
+  ],
+  "sound": "5 軌、約 33 分鐘的五重奏：Lee Morgan 小號、Booker Ervin 次中音薩克斯風兩管在前，Andrew Hill 鋼琴、Ron Carter 貝斯、Freddie Waits 鼓在後。全部是 Hill 自己的曲子，寫法比《Point of Departure》收斂、節奏更黏，長曲是〈Soul Special〉（8 分 23 秒）與〈Bayou Red〉（7 分 46 秒），開場同名曲 5 分 41 秒。1968 年 8 月 5 日一次進棚錄完，Van Gelder 收音、Francis Wolff 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Grass Roots",
+   "Soul Special",
+   "Bayou Red"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與卡單不一致，建議改 1968 → 1969。** 本層新掃的同期紙本（Cash Box 1968-10→1969-12，69 期，已存成 repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）給出兩條互相獨立的證據：(a) **Cash Box 1968-12-07 年度唱片目錄列的 Blue Note 在架盤最高只到 BST 84292**，84303 不在其中；(b) 目錄號↔評介週對照顯示 **84302 評於 1969-05-31、84300 評於 1969-04-12、84299 評於 1969-03-08**，84303 只能落在 1969 年年中。英文維基 infobox 也寫 1969。反方只有 jazzdisco 年份欄（1968）與 Discogs 美國原壓群（1968，且德國壓片標 1969）——依階序「同期紙本 ＞ Discogs 原壓群 ＞ jazzdisco ＞ MB」，且第 570 條已指出 Discogs 原壓群多半整群抄盤面 ℗© 年。**錄音年是 1968-08-05，與首發年不同年。**",
+  "notes": "**vault 盤？否——錄音 1968-08-05、出版 1968 年底或 1969 年，中間不到一年。**｜⚠ **年份改判建議 1969，見 yearVerified；若改成 1969，正文不得寫「1968 年發行」，但「1968 年錄」是安全的。**｜**製作是 Francis Wolff（Lion 已於 1967 年離開），錄音與刻片都是 Rudy Van Gelder，內頁文案 Nat Hentoff，封面攝影 Jordan Malek——本組唯一一張封面不出自 Reid Miles／Forlenza Venosa／Francis Wolff 的碟。**｜**盤面曲序 ≠ 錄音順序**（jazzdisco 母帶序 3069→3073 的順序是 Grass Roots／Venture Inward／Bayou Red／Soul Special／Mira）。｜**原盤 5 軌、2000 年 CD 10 軌**：多出的五軌是 1968-04-19 完全不同的六重奏（Woody Shaw／Frank Mitchell／Jimmy Ponder／Reggie Workman／Idris Muhammad），**串流側（724719257）上的是 10 軌 CD 形**，正文引軌數一律用 5。｜**跨卡互指（第 585 條）**：Booker Ervin 在本張是側人，他的領銜盤《The In Between》同批（1968-01-12）；Lee Morgan 的《!Caramba!》也在同批（1968-05-03）——三場完全不同，正文不得互抄。｜CAA 封面來自 2000 年 XE CD ad4d3dbf，不是原盤版式，主線若要原盤封面看 Discogs r1048765（4 圖）。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|Common Touch",
+  "artist": "Stanley Turrentine",
+  "album": "Common Touch",
+  "facts": [
+   {
+    "f": "release-group 143f6fe3 的欄位：title「Common Touch」、artist-credit「Stanley Turrentine featuring Shirley Scott」（兩個 Person：Stanley Turrentine 51e0df97、Shirley Scott f80398eb）、first-release-date **1968**（⚠ 與卡單 1969 不同，見 yearVerified）、primary-type Album、secondary-types 空。轄下五筆：**原盤 d066156b 是 1968 US Official Blue Note BST 84315、12 吋 6 軌**（〈Buster Brown〉320 秒、〈Blowin' in the Wind〉345、〈Lonely Avenue〉482、〈Boogaloo〉380、〈Common Touch〉375、〈Living Through It All〉435）；1997 US CD 6268df5a 與 XE d6877062（同 barcode 724385471926，**7 軌**）；2022-10 Tone Poet 黑膠 26705854（4535327）；2024-02-28 JP HQCD c28f5bff（UCCQ-9663）。CAA 的 4 張圖掛在原盤 d066156b。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=143f6fe3-8531-351a-8cb4-b11570504d6a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄記「BST 84315 Stanley Turrentine Featuring Shirley Scott - Common Touch **1968**」，場次是 **1968 年 8 月 30 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制 Stanley Turrentine（tenor sax）、**Shirley Scott（organ）**、Jimmy Ponder（guitar）、**Bob Cranshaw（electric bass，不是低音提琴）**、Leo Morris（drums，即日後的 Idris Muhammad）；母帶序 3095–3100。⚠ **同一頁 84315 之前先列了另一場**（Woody Shaw／Booker Ervin／Kenny Barron／Jan Arnett／Billy Higgins，1968-05-24，五軌）——**那是 Booker Ervin 從未發行的第二張 Blue Note，不是本張的一部分**（第 589 條給後批的第 3 點）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r9882699（1968 US BST 84315）的製作名單：**Francis Wolff＝Producer 兼封面攝影**、Rudy Van Gelder＝Recorded By、**Frank Gauna＝Art Direction**、**Viv Roundtree＝內頁文案**；編制欄明寫 Bob Cranshaw＝Bass [Fender]。`catno=BST 84315` 共 7 筆，美國原壓 9882699／2990483 標 1968，另有德國 10828310／25180114、日本 27087894、2022 年 UMe 再壓 24884279——**整個 Discogs 沒有任何一筆標 1969 的 84315**。",
+    "src": "https://api.discogs.com/releases/9882699"
+   },
+   {
+    "f": "英文維基《Common Touch》infobox：released **September 1969**，引的是 **Billboard 1969-09-06**；recorded 1968-08-30、studio Van Gelder、producer Francis Wolff、label Blue Note BST 84315、length 39:30（原 LP）。正文：CD 再發多出的 bonus〈Ain't No Way〉錄於 **1968-05-10**、鼓手換成 Ray Lucas，原本收在 1980 年的 vault 盤《Ain't No Way》（LT 1095）。Scott Yanow 在 AllMusic 給三星，說「Although not essential (no one seems to sweat much and none of the tempos are above a slow-medium pace), this lazy date has its pleasurable moments」。",
+    "src": "https://en.wikipedia.org/wiki/Common_Touch"
+   },
+   {
+    "f": "本層新掃的 Cash Box 1968-10→1969-12 共 69 期裡**查無 84315 的評介**（Cash Box 沒評到這張）；但 **1968-12-07 的年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84315 不在其中——與維基引的 Billboard 1969-09-06 一致，**首發是 1969 年，卡單的 1969 正確、MB／jazzdisco／Discogs 的 1968 是錄音年回填**。同一份掃描檔可交叉核對的鄰居：84313 評於 1969-07-19、84318 評於 1969-08-23，**84315 正好夾在中間**。",
+    "src": "batch-progress/enum/cashbox-bn-1968-69-ocr.txt"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 724869927「Common Touch」掛 Stanley Turrentine（**店面掛名沒有 featuring Shirley Scott**）、**7 軌＝1997 年 CD 形**、releaseDate 欄填錄音日 1968-08-30、「℗ 1997 Blue Note Records」。前 6 軌對應原盤 6 軌，第 7 軌是〈Ain't No Way〉bonus。本張不在缺試聽名單裡，本層未逐軌重跑。",
+    "src": "https://itunes.apple.com/lookup?id=724869927&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Turrentine 的薩克斯風配上 Shirley Scott 的管風琴——當時他們是夫妻，這是他們一起錄的最後幾張之一，盤面上她的名字只掛在 featuring 後面",
+   "六首裡有 Bob Dylan 的〈Blowin' in the Wind〉和 Doc Pomus 的〈Lonely Avenue〉：1968 年的 Blue Note 正在把流行曲拉進管風琴爵士的節奏裡"
+  ],
+  "sound": "6 軌、約 39 分半的管風琴爵士五重奏：Stanley Turrentine 的次中音薩克斯風在前，Shirley Scott 的管風琴撐住和聲，Jimmy Ponder 吉他、Bob Cranshaw 的 Fender 電貝斯、Leo Morris 的鼓在底下。節奏一路壓在中慢板，最長的是〈Lonely Avenue〉8 分 2 秒。三首 Turrentine 自己的曲子（〈Buster Brown〉〈Common Touch〉〈Living Through It All〉）、Shirley Scott 寫的〈Boogaloo〉，加上 Dylan 的〈Blowin' in the Wind〉與 Doc Pomus 的〈Lonely Avenue〉兩首翻唱。1968 年 8 月 30 日一次錄完。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Buster Brown",
+   "Lonely Avenue",
+   "Common Touch"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（首發年），與卡單相同。依據：英文維基 infobox 引 **Billboard 1969-09-06** 標 September 1969；本層新掃的 Cash Box **1968-12-07 年度目錄把 Blue Note 在架盤列到 BST 84292 為止**（84315 不在），且同一掃描檔中 **84313 評於 1969-07-19、84318 評於 1969-08-23**，84315 正好夾在兩者中間。⚠ **MB first-release-date 1968、jazzdisco 1968、Discogs 七筆壓片全標 1968，都是把錄音年（1968-08-30）回填成發行年**——這正是第 589a 條第 4 點說的「跨年出版被四捨五入到錄音年，只發生在 1968 年 5 月後錄的 84300+ 號段」。**錄音年 1968、首發年 1969，兩個年份不同，正文要分清楚。**",
+  "notes": "**錄音 1968-08-30、首發 1969（跨年），卡單取首發年 1969。**｜**製作 Francis Wolff（Lion 已離開），封面照也是 Wolff 拍的，美術指導 Frank Gauna、內頁文案 Viv Roundtree、錄音 Rudy Van Gelder。**｜**Shirley Scott 是聯名不是側人**（RG credit「featuring Shirley Scott」、Discogs 盤面掛名亦然），第 583 條已判卡上掛名收攏成 `Stanley Turrentine`，**但正文必須寫出 Shirley Scott**。⚠ **店面掛名沒有 featuring**（724869927），上架比對要用店面寫法。｜**Bob Cranshaw 在本張彈的是 Fender 電貝斯**（jazzdisco 與 Discogs 盤面都標 electric/Fender），不是低音提琴。｜**跨卡互指（第 585 條）**：Turrentine 同批還有《Serenade to a Soul Sister》（1968-02-23，以聯名側人身分替 Horace Silver 吹）——**同一年、兩種身分、兩場不同的錄音**，正文不得混寫。｜⚠ **jazzdisco 4300 頁在 84315 之前那一場（1968-05-24，Woody Shaw／Booker Ervin／Kenny Barron／Jan Arnett／Billy Higgins）不是本張**，是 Booker Ervin 那張從未發行的第二張 Blue Note，讀 jazzdisco 時極易讀串。｜原盤 6 軌，**串流（724869927）與 1997 CD 是 7 軌**，多出的〈Ain't No Way〉錄於 1968-05-10、鼓手是 Ray Lucas——正文引軌數用 6。"
+ },
+ {
+  "key": "desc2:Andrew Hill|Andrew!!!",
+  "artist": "Andrew Hill",
+  "album": "Andrew!!!",
+  "facts": [
+   {
+    "f": "release-group 80d6d862 的欄位：title「Andrew!!!」（三個 ASCII 驚嘆號）、artist-credit 單一 Person `Andrew Hill`（ede80a9f）、**first-release-date 1968-04**（MB 這筆給到月）、primary-type Album、secondary-types 空。轄下四筆：**原盤 d51d9cbb 是 1968-04 US Official Blue Note BST 84203、12 吋 6 軌**（〈The Groits〉360 秒、〈Black Monday〉530、〈Duplicity〉365、〈Le Serpent Qui Danse〉410、〈No Doubt〉260、〈Symmetry〉430）；2005 US CD 93f7d9e5（0946 3 11437 2 4，**8 軌**）＋同內容 XW 數位 e40d9752；2025-06-06 Tone Poet 黑膠 90d51bbb（602458119985＋BST 84203）。CAA 的 6 張圖掛在原盤 d51d9cbb。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=80d6d862-62de-4e71-9d25-f25d94413f6e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BLP 4203 Andrew Hill - Andrew!!! **1968**」——**目錄號 4203 屬 1964 年的號段，盤子卻隔了四年才發**。場次：**1964 年 6 月 25 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制 **John Gilmore（tenor sax，#1,2,4-6；Sun Ra 樂團的台柱）**、Bobby Hutcherson（vibes）、Andrew Hill（piano）、Richard Davis（bass）、Joe Chambers（drums）；母帶序 1381–1386。⚠ **jazzdisco 明確註記第 3 軌「The Griots (mistitled as The Groits)」——盤面與 MB 登的 The Groits 是印錯的**。附註 also released on Blue Note BST 84203 **in 1968**、收進 Mosaic MR10-161《The Complete Blue Note Andrew Hill Sessions (1963-66)》（1995）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r1247517（1968 US BST 84203）的製作名單：**Alfred Lion＝Producer**（⚠ **本組只有兩張是 Lion 監製的，這是其中之一——因為錄音在 1964 年、Lion 1967 年才離開**）、Rudy Van Gelder＝Recorded By 兼 Lacquer Cut By、**Reid Miles＝Design [Cover] 兼 Photography By [Cover Photo]**（⚠ **本組唯一一張封面出自 Reid Miles 的碟**）、Don Heckman＝內頁文案。盤面註記「Blue and white label, with 『Blue Note Records • A Division Of Liberty Records, Inc.』」、runout「BNST.84203 ⋅ A VAN GELDER 114」。`catno=BST 84203` 共 8 筆，美國原壓 1247517／6450349／36789772 全標 1968，另有德國 3473792、日本 31368850、義大利 14423486、1970 年 Liberty/UA 再壓 5756961、2025 Tone Poet 34088512——**沒有任何 1964–67 的壓片**。",
+    "src": "https://api.discogs.com/releases/1247517"
+   },
+   {
+    "f": "英文維基**沒有本專輯條目**（`Andrew!!!` 指向人名消歧義頁），本張的年份與班底只能靠 jazzdisco＋Discogs master 360619＋Mosaic MR10-161 的曲目表交叉核對，三邊一致：1964-06-25 錄、1968 年出版、六軌全是 Hill 自己的曲子。**這也是本組資料最薄的一張。**",
+    "src": "https://en.wikipedia.org/wiki/Andrew"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 715987966「Andrew!!!」掛 Andrew Hill、**8 軌**（比原盤多兩軌，是 2005 年 CD 形）、releaseDate 欄填的是**錄音日 1964-06-25**、「℗ 2005 Blue Note Records」。前 6 軌對應原盤 6 軌、bonus 在後。⚠ **同一次查詢還回了 Andrew Hill 的《Dance With Death》（724721105，releaseDate 1968-10-11）——那是另一張 1968 年錄、1980 年才從庫房挖出來的碟，不是本張**。本張不在缺試聽名單裡，本層未逐軌重跑。",
+    "src": "https://itunes.apple.com/lookup?id=715987966&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1964 年六月錄完，盤子在庫房躺了四年才印出來：Alfred Lion 監製、Reid Miles 設計封面，上市時 Lion 已經離開 Blue Note、公司也換成了 Liberty",
+   "次中音薩克斯風是 John Gilmore——Sun Ra 樂團的台柱；他離開那個星球一天，跑來跟 Andrew Hill、Bobby Hutcherson、Richard Davis 錄了這張"
+  ],
+  "sound": "6 軌、約 38 分鐘的五重奏：John Gilmore 的次中音薩克斯風（六軌中有五軌）與 Bobby Hutcherson 的顫音琴在前，Andrew Hill 鋼琴、Richard Davis 貝斯、Joe Chambers 鼓在後。全部是 Hill 自己的曲子，走的還是《Point of Departure》那一路的多調性與錯位節奏，最長的〈Black Monday〉8 分 50 秒，最短的〈No Doubt〉4 分 20 秒。1964 年 6 月 25 日一次錄完，Van Gelder 收音、Alfred Lion 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Black Monday",
+   "Symmetry",
+   "Le Serpent Qui Danse"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同，MB 甚至給到 1968-04。**這是 vault 盤：錄音 1964-06-25、首發 1968-04，中間隔四年**（第 584 條已列）。三邊獨立：jazzdisco 4200 頁「BLP 4203 … 1968」與附註「also released on BST 84203 in 1968」、Discogs `catno=BST 84203` 八筆壓片**沒有任何一筆早於 1968**、MB 原盤 release d51d9cbb 標 1968-04。⚠ **目錄號 4203 是 1964 年的號段，與 1968 年的上市年不相容——正是第 526 條「目錄號不等於發行順序」的典型**，讀者若只看號碼會以為這是 1964 年的碟。本層新掃的 Cash Box 從 1968-10 起，涵蓋不到 1968-04，無法再加一條紙本旁證。",
+  "notes": "**vault 盤，本組兩張之一（另一張是《Open House》八年）。錄音 1964-06-25、首發 1968-04，隔四年。正文必須寫清楚是哪一年錄、哪一年發。**｜**監製 Alfred Lion**——本組 19 張裡只有這張與《Open House》是 Lion 監製的，**因為兩張都是 Lion 時代錄的庫存**；其餘 17 張都已是 Wolff／Pearson／Bock／Higgins 的時代。**封面 Reid Miles 設計兼攝影，也是本組唯一一張 Reid Miles 的封面。**｜⚠ **曲名坑（第 586 條）**：第 1 軌 MB 與盤面登「The Groits」，**jazzdisco 明確註記「mistitled as The Groits」、正確是「The Griots」**（西非的世襲樂師）——寫作層若要引這首，用通行拼法 The Griots，但不要改 MB。｜⚠ **維基沒有本專輯條目**，本張是本組資料最薄的一張，正文不要寫沒有出處的評價。｜**跨卡互指（第 585 條）**：Andrew Hill 同批還有《Grass Roots》（1968-08-05 錄），**兩張的班底完全不同、相隔四年**，正文不得互抄；池中另有 Hill 的 9 張 seed。｜串流側 715987966 是 8 軌 CD 形，正文引軌數用 6。"
+ },
+ {
+  "key": "desc2:Frank Foster|Manhattan Fever",
+  "artist": "Frank Foster",
+  "album": "Manhattan Fever",
+  "facts": [
+   {
+    "f": "release-group f4b24e59 的欄位：title「Manhattan Fever」、artist-credit 單一 Person `Frank Foster`（**c62ceb28**，US，1928-09-23–2011-07-26，MB 註記 saxophonist）、first-release-date 1968、primary-type Album、secondary-types 空。**轄下只有兩筆**：**原盤 e6bdb76b 是 1968 US Official Blue Note BST 84278、12 吋 6 軌**（〈Little Miss No Nose〉415 秒、〈Manhattan Fever〉630、〈Loneliness〉175、〈Stammpede〉345、〈You Gotta Be Kiddin'〉207、〈Seventh Avenue Bill〉705）；2007 XE CD 064c4156（0946 3 85191 2 6，Connoisseur Series，**11 軌**）。CAA 的 2 張圖掛在原盤 e6bdb76b。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f4b24e59-0b40-4a38-90fa-5109c6191945&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BST 84278 Frank Foster - Manhattan Fever **1968**」，場次是 **1968 年 3 月 21 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制 Marvin Stamm（trumpet）、Garnett Brown（trombone）、Frank Foster（tenor sax）、Richard Wyands（piano）、Bob Cranshaw（bass）、Mickey Roker（drums）——**六重奏、三管**；母帶序 2075 tk.10〈You Gotta Be Kiddin'〉、2076 tk.17〈Stammpede〉、2077 tk.20〈Manhattan Fever〉、2078 tk.26〈Little Miss No Nose〉、2079 tk.27〈Seventh Avenue Bill〉、2080 tk.29〈Loneliness〉。附註 also released on Blue Note 0946 3 85191 2 6 in 2007。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r17022432（1968 US BST 84278）的製作名單：**Duke Pearson＝Producer 兼內頁文案**（⚠ **本組三張 Pearson 監製的碟之一**）、Rudy Van Gelder＝Recorded By、**Forlenza Venosa Associates＝Design [Cover]**、**Joel Brodsky＝封面攝影**。盤面註記「Original blue & white Division Of Liberty label」、runout 有 VAN GELDER 鋼印、封底印 1776 Broadway/6920 Sunset Blvd 雙地址。`catno=BST 84278` 共 7 筆：美國原壓 17022432／6030153 標 1968，德國 5991299、義大利宣傳盤 32819037 亦 1968，1970 年 Liberty/UA 再壓 1183676，2014 日本 TYCJ-81080 兩筆。",
+    "src": "https://api.discogs.com/releases/17022432"
+   },
+   {
+    "f": "**本層在 Cash Box 1968-09-07 找到 BST 84278 的同期紙本**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`），且 **1968-12-07 的 Cash Box 年度唱片目錄把「Manhattan Fever／Frank Foster／84278」列進 Blue Note 在架盤**（該目錄最高列到 BST 84292）——**1968 年首發確定，與卡單一致**。同一份掃描檔的鄰號校準：84279 見於 1968-09-21、84283 評於 1968-11-09、84272 評於 1968-11-30。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-09-07.pdf"
+   },
+   {
+    "f": "英文維基《Manhattan Fever》infobox：released 1968、recorded「March 21, 1968 / January 31, 1969 (bonus tracks)」、producer **Duke Pearson**、label Blue Note、前作《Soul Outing!》（1966）、後作《The Loud Minority》（1974）。正文寫 CD 再發多加了 **1969-01-31 那場從未發行的五首**，該場編制完全不同（Burt Collins 小號、Jimmy Cleveland 長號、Ed Pazant 中音／長笛／雙簧管、George Cables 鋼琴、Buster Williams 貝斯）。AllMusic 的 Steve Leggett 給三星，說「Foster's compositional and arranging talents are at center stage, but when he steps out front as a soloist like he does on 『The House That Love Built』, he shows why he is a top line tenor sax player」——⚠ **他舉的〈The House That Love Built〉是 CD bonus，不在原盤上**。",
+    "src": "https://en.wikipedia.org/wiki/Manhattan_Fever"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 715516448「Manhattan Fever」掛 Frank Foster、**11 軌＝2007 年 Connoisseur CD 形**、releaseDate 欄填錄音日 1968-03-21、「℗ 2007 The Blue Note Label Group」。前 6 軌對應原盤 6 軌、bonus 五軌在後（1969-01-31 那場）。⚠ **同一次查詢回的 1806988030 是 Frank Foster and the Loud Minority 的同名盤《Manhattan Fever》（1978，Nippon Columbia，4 軌）——盤名與掛名子字串雙撞，上架比對必須帶 catno BST 84278**（第 583 條第 307 條預警）。本張不在缺試聽名單裡，本層未逐軌重跑。",
+    "src": "https://itunes.apple.com/lookup?id=715516448&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Frank Foster 在 Count Basie 樂團寫了十幾年的譜，這是他 1968 年帶進 Van Gelder 的六重奏——三管在前，全部的曲子和編曲都出自他自己的筆",
+   "〈Seventh Avenue Bill〉11 分 50 秒、〈Manhattan Fever〉10 分 33 秒：六首曲子裡兩首吃掉半張唱片，剩下的〈Loneliness〉只有 2 分 58 秒"
+  ],
+  "sound": "6 軌、約 41 分半的六重奏：Marvin Stamm 小號、Garnett Brown 長號、Frank Foster 次中音薩克斯風三管在前，Richard Wyands 鋼琴、Bob Cranshaw 貝斯、Mickey Roker 鼓在後。長度落差極大——〈Seventh Avenue Bill〉11 分 50 秒、同名曲 10 分 33 秒，〈Loneliness〉卻只有 2 分 58 秒。除 Bill English 寫的〈Seventh Avenue Bill〉外全是 Foster 自己的曲子與編曲。1968 年 3 月 21 日一次錄完，Van Gelder 收音、Duke Pearson 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Manhattan Fever",
+   "Seventh Avenue Bill",
+   "Little Miss No Nose"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同，且**本組少數有同期紙本直接坐實的一張**：本層新掃的 Cash Box **1968-09-07 已出現 BST 84278**、**1968-12-07 的年度唱片目錄把「Manhattan Fever／Frank Foster／84278」列進 Blue Note 在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）。另外三邊一致：jazzdisco 4200 頁 1968、Discogs `catno=BST 84278` 美國原壓 17022432／6030153 與德義壓片全標 1968、MB first-release-date 1968。**錄音 1968-03-21，與首發同年。**",
+  "notes": "**掛名是本批兩個新掛名之一**（第 583 條）：池中零張 `Frank Foster`，MB Person c62ceb28。⚠ **第 307 條預警**：MB 同字串還有鄉村創作歌手 d9684478（搜尋分數更高）與小提琴 cfa6f9c9，另有群組 `Frank Foster and The Loud Minority`（39d07a3b）；**而且撞到同名盤**——Apple 上 1806988030 是 Loud Minority 1978 年的《Manhattan Fever》，**上架比對務必帶 catno BST 84278**。｜**製作是 Duke Pearson**（本組三張之一，另兩張是《Introducing Kenny Cox》與《Time for Tyner》），封面 **Forlenza Venosa Associates** 設計、Joel Brodsky 攝影。｜**跨卡互指（第 585 條）**：Foster 同批還以薩克斯組成員身分出現在《Introducing Duke Pearson's Big Band》（1967-12-15）——**兩場差九個月、編制天差地遠**（六重奏 vs 十六人大樂團），正文不得互抄。Bob Cranshaw／Mickey Roker 在本組出現四次，寫節奏組時務必分場。｜⚠ **維基引的 AllMusic 評語舉〈The House That Love Built〉，那是 2007 年 CD 的 bonus、不在原盤上**——正文不得把它當本盤曲目。｜原盤 6 軌，**串流（715516448）與 2007 CD 是 11 軌**，正文引軌數用 6。｜MB 轄下只有兩筆、CD 化史薄（第 587 條第 8 點），Discogs `catno` 反查已補齊壓片群。"
+ },
+ {
+  "key": "desc2:Hank Mobley|Reach Out!",
+  "artist": "Hank Mobley",
+  "album": "Reach Out!",
+  "facts": [
+   {
+    "f": "release-group 772e9a9b 的欄位：title「Reach Out!」、artist-credit 單一 Person `Hank Mobley`（026b096e）、first-release-date 1968、primary-type Album、secondary-types 空。轄下五筆：**原盤 70b0e803 是 1968 US Official Blue Note BST 84288、12 吋 6 軌**（〈Reach Out I'll Be There〉406 秒、〈Up Over and Out〉350、〈Lookin' East〉316、〈Goin' Out of My Head〉443、〈Good Pickin's〉328、〈Beverly〉421）；1997 US 5192975e 與 XE 20bd7ec2（**同 barcode 724385996429 的重複建檔**，第 587 條第 6 點）；2005 US RVG CD 832b5d3b（0946 3 11496 2 7）；2005-09-13 XW 數位 653c8048。**CAA 只有 1 張圖、掛在原盤 70b0e803。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=772e9a9b-4949-32f3-85af-482287056346&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BST 84288 Hank Mobley - Reach Out! **1968**」，場次是 **1968 年 1 月 19 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制 **Woody Shaw（trumpet, flugelhorn）**、Hank Mobley（tenor sax）、Lamont Johnson（piano）、**George Benson（guitar）**、Bob Cranshaw（bass）、Billy Higgins（drums）——六重奏；母帶序 2027 tk.6〈Up, Over And Out〉、2028 tk.8〈Lookin' East〉、2029 tk.9〈Goin' Out Of My Head〉、2030 tk.12〈Beverly〉、2031 tk.15〈Good Pickin's〉、2032 tk.19〈Reach Out I'll Be There〉——**盤面把最後錄的那首放到第一軌**。附註收進 Mosaic MD8-268《The Complete Hank Mobley Blue Note Sessions 1963-70》（2019）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r2132149（1968 US BST 84288）的製作名單：**Francis Wolff＝Producer 兼（與 Bob Lampard 並列）攝影**、Rudy Van Gelder＝Recorded By、**Forlenza Venosa Associates＝Cover**、**Nat Hentoff＝內頁文案**。盤面註記「Recorded on January 19, 1968. Blue Note Records - A Division Of Liberty Records, Inc. Printed in USA」、runout「BNST-84288-A 114」＋VAN GELDER 鋼印。`catno=BST 84288` 共 5 筆：美國原壓 2132149／12619112／11533349、德國 6986048（BST 84288 K）、2015 年 Elemental/Blue Note Collection 再壓 8045081。",
+    "src": "https://api.discogs.com/releases/2132149"
+   },
+   {
+    "f": "**本層在 Cash Box 找到兩處紙本**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）：**1968-12-07 的年度唱片目錄把「Reach Out／Hank Mobley／84288」列進 Blue Note 在架盤**，另 1968-11-23 與 1969-01-18 各有一處 84288。與英文維基 infobox 引的 **Billboard 1968-11-02** 相符——**1968 年 11 月上市，卡單的 1968 正確**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
+   },
+   {
+    "f": "英文維基《Reach Out! (Hank Mobley album)》infobox：released **November 1968**（引 Billboard 1968-11-02）、recorded 1968-01-19、studio Van Gelder、producer **Francis Wolff**、label Blue Note BST 84288、length 37:56。正文引了兩則負評：JazzTimes 的 Bill Shomaker 稱它是「severely blemished date」；All About Jazz 的 Robert Spencer 寫「By 1968, when this sextet date was recorded, the sweet mainstream jazz Hank Mobley loved and championed was on the defensive. **This post-Lion Blue Note recording** goes even farther than the gutbucket r&b that Lee Morgan was purveying in kowtowing to the rock and roll emperor: Mobley includes two pallid covers of contemporary soul hits」——**兩首翻唱是 Four Tops 的〈Reach Out I'll Be There〉（Holland–Dozier）與 Little Anthony 的〈Goin' Out of My Head〉（Teddy Randazzo）**。",
+    "src": "https://en.wikipedia.org/wiki/Reach_Out!_(Hank_Mobley_album)"
+   },
+   {
+    "f": "**缺試聽第 254 條三種查法全部命中同一張**：(1) `search?term=Hank Mobley Reach Out&entity=album` → 只回 **781561645**「Reach Out! (The Rudy Van Gelder Edition) [Remastered]」、6 軌、℗ 2005 Blue Note；(2) `lookup?id=999776&entity=album`（Hank Mobley 藝人頁，37 張）→ 含 Reach 字樣的只有 781561645 這一筆；(3) `lookup?id=781561645&entity=song` → **6 軌、單片、曲序與原盤 70b0e803 逐軌相同**：Reach Out - I'll Be There 409s／Up Over and Out 353s／Lookin' East 319s／Goin' Out of My Head 446s／Good Pickin's 331s／Beverly 422s，對原盤 406／350／316／443／328／421 秒，**六軌逐軌差 2–3 秒（RVG 2005 重製的淡入淡出差），無多軌無缺軌無合訂**，六軌 previewUrl 全部有。",
+    "src": "https://itunes.apple.com/lookup?id=781561645&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "串流採信 781561645",
+    "src": "https://itunes.apple.com/lookup?id=781561645&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Lion 走了以後的 Blue Note 要 Mobley 翻唱 Four Tops 和 Little Anthony——這張因此成了他被罵得最兇的一張，但吉他上的 George Benson 那年才二十四歲",
+   "六首裡兩首是當紅靈魂樂翻唱、四首是自己的硬咆勃：1968 年的 Hank Mobley 被夾在中間，這張盤面就是那個位置的紀錄"
+  ],
+  "sound": "6 軌、約 38 分鐘的六重奏：Woody Shaw 的小號與短號、Hank Mobley 的次中音薩克斯風兩管在前，George Benson 吉他、Lamont Johnson 鋼琴、Bob Cranshaw 貝斯、Billy Higgins 鼓在後。一半是流行翻唱（Four Tops 的〈Reach Out I'll Be There〉、Little Anthony 的〈Goin' Out of My Head〉），一半是 Mobley 自己的硬咆勃曲子，另有 Lamont Johnson 寫的〈Beverly〉。最長的〈Goin' Out of My Head〉7 分 25 秒。1968 年 1 月 19 日一次錄完，Van Gelder 收音、Francis Wolff 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Reach Out I'll Be There",
+   "Lookin' East",
+   "Beverly"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同。四邊互相獨立：**同期紙本最強——本層新掃的 Cash Box 1968-12-07 年度唱片目錄把「Reach Out／Hank Mobley／84288」列進 Blue Note 在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`），另 1968-11-23 與 1969-01-18 各一處；英文維基 infobox 引 **Billboard 1968-11-02** 標 November 1968；jazzdisco 4200 頁 1968；Discogs `catno=BST 84288` 美國原壓三筆全 1968。**錄音 1968-01-19，與首發同年。**",
+  "notes": "**缺試聽三張之一——已確認，串流採信 collectionId 781561645**（Apple us，「Reach Out! (The Rudy Van Gelder Edition) [Remastered]」，6 軌，**與原盤 70b0e803 逐軌同序、逐軌差 2–3 秒，非合訂版**，六軌 previewUrl 齊全）。第 254 條三種查法（search／artistId 999776 entity=album／collectionId entity=song）全部指向同一筆，無第二候選。｜**製作 Francis Wolff**（Lion 已離開，維基引的樂評直接把本張稱作「post-Lion Blue Note recording」——這句可以當成寫作層的抓手，但**要註明是樂評的說法、不是事實陳述**）；封面 **Forlenza Venosa Associates**、內頁文案 Nat Hentoff。｜**George Benson 這年二十四歲、Woody Shaw 二十三歲**（正文若寫年齡請自行再核）。｜**跨卡互指（第 585 條）**：Woody Shaw 在本組出現三次（《'Bout Soul》1967-09-08、《Natural Essence》1967-12-29、本張 1968-01-19），**三場全不同、且都是側人**；Billy Higgins 在本組兩次（本張與《!Caramba!》）。｜**CAA 只有一張圖**，封面在架但版式單薄；MB 有同 barcode 重複建檔兩筆（5192975e／20bd7ec2）。｜原盤 6 軌，串流也是 6 軌，**這是本組少數店面形狀與原盤完全一致的碟**。"
+ },
+ {
+  "key": "desc2:The Contemporary Jazz Quintet|Introducing Kenny Cox and the Contemporary Jazz Quintet",
+  "artist": "The Contemporary Jazz Quintet",
+  "album": "Introducing Kenny Cox and the Contemporary Jazz Quintet",
+  "facts": [
+   {
+    "f": "release-group d7366741 的欄位：title「Introducing Kenny Cox and the Contemporary Jazz Quintet」、artist-credit「Kenny Cox and the Contemporary Jazz Quintet」（Person fd303f18 ＋ **群組 16d697f2**）、first-release-date 1968（⚠ 與卡單 1969 不同，見 yearVerified）、primary-type Album、secondary-types 空。**轄下只有兩筆**：**原盤 51a5ff0b 是 1968 US Official Blue Note BST 84302、12 吋 6 軌**（〈Mystique〉284 秒、〈You〉328、〈Trance Dance〉369、〈Eclipse〉351、〈Number Four〉648、〈Diahnn〉518）；2007-06-05 XE CD 60c6b1c5（0946 3 85189 2 1，Connoisseur Series，**12 軌**）。**CAA 只有 1 張圖、掛在 2007 年 CD，不是原盤。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d7366741-4cfd-4c27-b049-3272bf505d6f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄記「BST 84302 Introducing Kenny Cox And The Contemporary Jazz Quintet **1969**」，場次是 **1968 年 12 月 9 日、United Sound Systems, Detroit, MI**——**本組 19 張裡唯一一場不在 Van Gelder 錄的 Blue Note 棚外錄音（另一個例外是《Elegant Soul》的洛杉磯 RPM）**；編制 Charles Moore（trumpet）、Leon Henderson（tenor sax）、Kenny Cox（piano）、Ron Brooks（bass）、Danny Spencer（drums）；母帶序 3046–3051，**tk 編號與盤面曲序完全錯開**（3050 tk.1 Eclipse、3048 tk.2 Diahnn、3047 tk.3 Trance Dance、3049 tk.4 Number Four、3046 tk.5 Mystique、3051 tk.7 You）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r4248403（1968 US BST 84302）的製作名單：**Duke Pearson＝Producer**、**Rudy Van Gelder＝Recorded By [Re-recording By]**（⚠ **Van Gelder 只做了轉錄／後製，原始錄音是底特律的 United Sound Systems**，盤面背面另印「Recording by United Sound Systems Detroit, Mich.」）、Leonard Feather＝內頁文案、Leo Knight＝封面攝影。⚠ **最關鍵的一條：盤面正面印「© MCMLXIX - Liberty Records, Inc.」，也就是羅馬數字的 1969**——Discogs 把這筆年份欄填成 1968，與它自己抄下來的封面版權年互相矛盾。另印「Blue Note - Entertainment from Transamerica Corporation」。`catno=BST 84302` 共 5 筆，美國 4248403／13730338、德國 10006318／14302882、2021 UMe 再壓 21306799。",
+    "src": "https://api.discogs.com/releases/4248403"
+   },
+   {
+    "f": "**同期紙本直接坐實 1969：Cash Box 1969-05-31 的 Jazz Picks 評介「INTRODUCING KENNY COX & THE CONTEMPORARY JAZZ QUINTET - Blue Note BST 84302」**，評語寫「Pianist Kenny Cox marks his debut on the recording scene with a well-chosen and well presented set of contemporary jazz that should win him many fans in a short time. The tunes, all new and mostly written by the group members, include such standouts as 〈Mystique〉,〈Trance Dance〉,〈Number Four〉and〈Diahnn〉」。同一份掃描檔（repo `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）的鄰號校準：84299 評於 1969-03-08、84300 評於 1969-04-12、84313 評於 1969-07-19，**84302 落在 1969 年 4–5 月上市，與卡單的 1969 相符**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1969/CB-1969-05-31.pdf"
+   },
+   {
+    "f": "英文維基《Introducing Kenny Cox》infobox：released **1969**、recorded 1968-12-09、producer **Michael Cuscuna**（⚠ **這一格是錯的——Cuscuna 是 1970 年代以後才進 Blue Note 做再發的製作人，1968 年的原盤製作是 Duke Pearson，Discogs 盤面可證；維基這格多半是把 2000 年代 CD 再發的製作人填進了原盤欄**）、label Blue Note、length 79:41（CD 再發）。正文：這是 Kenny Cox 的首張領銜盤，**2000 年 CD 再發把他的第二張 Blue Note《Multidirection》整張當 bonus 收進來**（第 7–12 軌，錄於 1969-11-26、G.M. Recording Studios, Detroit）。AllMusic 的 Matt Collar 給四星，說這團「resemble most closely here the classic Miles Davis quintet of the mid- and late '60s. But rather than merely aping Davis, the Contemporary Jazz Quintet had a muscular and urban group sensibility all its own」。",
+    "src": "https://en.wikipedia.org/wiki/Introducing_Kenny_Cox"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 716068112「Introducing Kenny Cox and the Contemporary Jazz Quintet」**掛名是 Kenny Cox（不是卡上的 The Contemporary Jazz Quintet）**、**12 軌＝2007 年 Connoisseur CD 形**、releaseDate 欄填 2007-01-01、「℗ 2007 The Blue Note Label Group」。前 6 軌對應原盤 6 軌，第 7–12 軌是《Multidirection》。本張不在缺試聽名單裡，本層未逐軌重跑；**上架比對要用店面掛名 Kenny Cox**。",
+    "src": "https://itunes.apple.com/lookup?id=716068112&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1968 年 12 月，Blue Note 把錄音車開去底特律的 United Sound Systems——這是本組唯一一張沒在 Van Gelder 錄的 Blue Note，五個底特律人自己寫、自己吹",
+   "Leon Henderson 的次中音是 Joe Henderson 的弟弟，Kenny Cox 的五重奏聽起來像六〇年代中後期的 Miles 五重奏——但這是底特律，不是紐約"
+  ],
+  "sound": "6 軌、約 40 分鐘的後咆勃五重奏：Charles Moore 小號、Leon Henderson 次中音薩克斯風兩管在前，Kenny Cox 鋼琴、Ron Brooks 貝斯、Danny Spencer 鼓在後。六首全新曲、幾乎都出自團員自己的筆（Cox 三首、Henderson 兩首、Moore 一首、David Durrah 一首）。兩首長曲吃掉後半張——〈Number Four〉10 分 48 秒、〈Diahnn〉8 分 37 秒。1968 年 12 月 9 日在底特律 United Sound Systems 一次錄完，Duke Pearson 監製、Van Gelder 只做轉錄。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Mystique",
+   "Trance Dance",
+   "Number Four"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（首發年），與卡單相同，且**本張是本組年份證據最硬的一筆**：**Cash Box 1969-05-31 有正式評介「Blue Note BST 84302」**（本層新掃，repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`），**Discogs 盤面正面印的版權年是羅馬數字「© MCMLXIX」＝1969**，jazzdisco 4300 頁年份欄也寫 1969，英文維基 infobox 亦 1969。⚠ **反方是 MB first-release-date 1968、MB 原盤 release 51a5ff0b 標 1968、Discogs master 1152720 與五筆壓片年份欄標 1968——全部是把錄音年（1968-12-09）回填成發行年**，而 Discogs 自己抄下來的封面版權年恰好打自己的臉。**錄音 1968-12-09、首發 1969，跨年。**",
+  "notes": "**跨年盤：1968-12-09 錄、1969 出版。**｜**掛名（第 583 條）是本批唯一一筆「往群組收攏」的**：卡上 `The Contemporary Jazz Quintet`（MB 群組 16d697f2），因為池中既有字串是這個群組（《Location》1973，RG de2e8401），**池中沒有 `Kenny Cox`**。⚠ **第 307 條預警**：MB 另有丹麥的同名群組 e6be0d2e，`Kenny Cox` 同字串亦有三個 Person——日後這兩個字串進池都要先帶消歧。⚠ **店面掛名是 Kenny Cox**（716068112），上架比對用店面寫法。｜**本組唯一一張不在 Van Gelder 棚錄的 Blue Note**：原始錄音在底特律 United Sound Systems，Van Gelder 只掛 Re-recording（另一張棚外的是《Elegant Soul》，洛杉磯 RPM，但那張是 Blue Note 的洛杉磯外製）。｜⚠ **維基 infobox 的 producer 欄寫 Michael Cuscuna，那是再發製作人、不是原盤製作人**——原盤是 **Duke Pearson**（Discogs 盤面），正文不得採維基那格。｜**原盤 6 軌，2007 CD／串流是 12 軌**（後六軌是 Cox 第二張《Multidirection》整張），正文引軌數用 6、**不得把《Multidirection》的曲子寫成本盤曲目**。｜**CAA 的圖來自 2007 年 CD、不是原盤版式**，主線要原盤封面看 Discogs r4248403（4 圖）。"
+ },
+ {
+  "key": "desc2:Tyrone Washington|Natural Essence",
+  "artist": "Tyrone Washington",
+  "album": "Natural Essence",
+  "facts": [
+   {
+    "f": "release-group 69846337 的欄位：title「Natural Essence」、artist-credit 單一 Person `Tyrone Washington`（**2c77572d**，US，1944–，MB 同字串只有這一個實體、無消歧問題）、first-release-date 1968、primary-type Album、secondary-types 空。**轄下只有兩筆、而且都是 1968 年的 12 吋黑膠——本組唯一一張 mono 與 stereo 兩個目錄號都建了檔的碟**：**b0dbb8c5＝BLP 4274（mono）**與 **7a9ae7c5＝BST 84274（stereo）**，都是 6 軌（〈Natural Essence〉301 秒、〈Yearning for Love〉387、〈Positive Path〉486、〈Soul Dance〉482、〈Ethos〉374、〈Song of Peace〉311）。**這個 RG 連一張 CD 都沒建**（第 587 條第 8 點）。CAA 的 1 張圖掛在 mono 原盤 b0dbb8c5。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=69846337-a0d4-44f2-8d28-243c67e38111&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BST 84274 Tyrone Washington - Natural Essence **1968**」，場次是 **1967 年 12 月 29 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制 **Woody Shaw（trumpet，#1-5）**、**James Spaulding（alto sax, flute，#1-5）**、Tyrone Washington（tenor sax）、**Kenny Barron（piano，#1-5）**、Reggie Workman（bass）、Joe Chambers（drums）——**第 6 軌〈Song of Peace〉是縮編的三重奏（Washington／Workman／Chambers）**；母帶序 2015 tk.4〈Ethos〉、2016 tk.7〈Soul Dance〉、2017 tk.11〈Yearning For Love〉、2018 tk.14〈Positive Path〉、2019 tk.15〈Natural Essence〉、2020 tk.18〈Song Of Peace〉。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r9715940（1968 US **BLP 4274 mono**）的製作名單：Rudy Van Gelder＝Recorded By 兼 Lacquer Cut By、**Forlenza Venosa Associates＝Design [Cover]**、**Francis Wolff＝封面攝影**、**A. B. Spellman（Alfred Bennett Spellman, Jr.）＝內頁文案**；Tyrone Washington 掛 tenor sax 兼全曲作者。⚠ **這一筆本身是宣傳用的 mono audition copy**：盤面註記說它裝在 **stereo 版 BST 84274 的封套（r2464846）**裡，封面上的 STEREO 字樣被一張「AUDITION MONO LP NOT FOR SALE」小貼紙蓋住。`catno=BST 84274` 另有美國原壓 26825363／2464846（1968）、德國 20054032（1968）、義大利 21686329、1970 Liberty/UA 再壓 7435311、1991 日本 BN 4274（3329163）、2026 再壓 36009907。",
+    "src": "https://api.discogs.com/releases/9715940"
+   },
+   {
+    "f": "英文維基《Natural Essence》infobox：released **May 1968**（引 **Billboard 1968-06-01**）、recorded 1967-12-29、studio Van Gelder、**producer「Duke Pearson, Francis Wolff」兩人並列**、label Blue Note、length 38:37。正文寫這是 Tyrone Washington 的**首張領銜盤**、六首全是他自己寫的；AllMusic 的 Ken Dryden 給四星半，說「**Only 23 at the time of the recording**, the tenor saxophonist composed six originals and is joined by other promising young lions who went onto great careers… Washington shows the influence of John Coltrane during his rapid-fire runs」。下一張領銜盤《Roots》要等到 1973 年。",
+    "src": "https://en.wikipedia.org/wiki/Natural_Essence"
+   },
+   {
+    "f": "本層新掃的 Cash Box 1968-10→1969-12 共 69 期裡**查無 84274**——連 1968-12-07 的年度唱片目錄都沒列它（該目錄 Blue Note 段列到 BST 84292，84274 被跳過）。**這不構成年份反證**：維基引的 Billboard 1968-06-01 早於本層掃描檔的起點（1968-10），Cash Box 的年度目錄本來就會漏掉當年稍早、已不再主推的品項。**1968 年首發仍成立。**",
+    "src": "batch-progress/enum/cashbox-bn-1968-69-ocr.txt"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 1467243764「Natural Essence」掛 Tyrone Washington、**6 軌＝與原盤同形**、releaseDate 欄填 1968-01-01、「A Blue Note Records Release; ℗ 1968 Capitol Records, LLC」。本張不在缺試聽名單裡，本層未逐軌重跑；店面軌數與原盤一致。",
+    "src": "https://itunes.apple.com/lookup?id=1467243764&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "錄音時他二十三歲，六首曲子全是自己寫的，Woody Shaw、James Spaulding、Kenny Barron、Reggie Workman、Joe Chambers 替他墊底——然後他的下一張領銜盤等了五年",
+   "最後一軌〈Song of Peace〉把前面的六重奏拆掉，只剩薩克斯風、貝斯、鼓三個人：整張碟從熱鬧走到空曠，剛好收在那裡"
+  ],
+  "sound": "6 軌、約 38 分半的六重奏：Woody Shaw 小號、James Spaulding 中音薩克斯風與長笛、Tyrone Washington 次中音薩克斯風三管在前，Kenny Barron 鋼琴、Reggie Workman 貝斯、Joe Chambers 鼓在後。六首全是 Washington 自己寫的，吹法帶明顯的 Coltrane 影子，最長的〈Positive Path〉8 分 6 秒、〈Soul Dance〉8 分 2 秒。**收尾的〈Song of Peace〉縮成薩克斯風、貝斯、鼓的三重奏**。1967 年 12 月 29 日一次錄完，Van Gelder 收音。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Natural Essence",
+   "Positive Path",
+   "Song of Peace"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同。最強的一條是同期紙本：英文維基 infobox 引 **Billboard 1968-06-01** 標 released May 1968。另三邊一致：jazzdisco 4200 頁 1968、Discogs `catno=BST 84274`／`BLP 4274` 的美國原壓（9715940 mono、2464846／26825363 stereo）與德國壓片全標 1968、MB 兩筆原盤 release 皆 1968。**錄音 1967-12-29、首發 1968-05，跨年但只跨五個月，卡單取首發年 1968。**⚠ 本層新掃的 Cash Box 起點是 1968-10，涵蓋不到 1968 年 5 月，**查無 84274 不是反證**（連 1968-12-07 年度目錄都跳過它）。",
+  "notes": "**跨年盤：1967-12-29 錄、1968-05 出版。**｜**掛名是本批兩個新掛名之一**（第 583 條）：池中零張，MB Person 2c77572d，**同字串只有這一個實體、無第 307 條風險**——本組掛名最乾淨的一張。｜**首次領銜盤**（維基明寫 debut album），**錄音時二十三歲**（AllMusic）；**下一張領銜盤《Roots》隔了五年（1973）**——「Blue Note 只出過這一張」是安全的寫法。｜**編制有兩層**：#1–5 是六重奏，**第 6 軌〈Song of Peace〉只剩 Washington／Workman／Chambers 三人**（jazzdisco 與維基的 personnel 欄一致），正文不得寫成整張都是六重奏。｜**製作維基寫「Duke Pearson, Francis Wolff」兩人並列**，Discogs 那筆 mono audition copy 沒有 producer 欄——本張的監製是本組唯一一筆兩人並列的。封面 **Forlenza Venosa Associates** 設計、**Francis Wolff 攝影**、內頁文案 A. B. Spellman。｜⚠ **MB 是本組唯一 mono／stereo 兩號都建檔的碟**（BLP 4274 b0dbb8c5 ＋ BST 84274 7a9ae7c5），且**RG 轄下連一張 CD 都沒有**——CD 化史要靠 Discogs 補。｜**跨卡互指（第 585 條）**：Woody Shaw 在本組三次（《'Bout Soul》《Natural Essence》《Reach Out!》），三場全不同。"
+ },
+ {
+  "key": "desc2:Big John Patton|That Certain Feeling",
+  "artist": "Big John Patton",
+  "album": "That Certain Feeling",
+  "facts": [
+   {
+    "f": "release-group e697d401 的欄位：title「That Certain Feeling」、artist-credit 單一 Person `John Patton`（b76182c3，**注意 RG 上是 John Patton、不是卡上的 Big John Patton**）、first-release-date 1968、primary-type Album、secondary-types 空。**轄下只有兩筆**：**原盤 928da3a6 是 1968 US Official Blue Note BST 84281、12 吋 6 軌**（〈String Bean〉344 秒、〈I Want to Go Home〉518、〈Early A.M.〉439、〈Dirty Fingers〉379、〈Minor Swing〉401、〈Daddy James〉409）；2014-01-22 JP SHM-CD 3a34a19d（Blue Note BN 4281／4988005803214，6 軌）。⚠ **CAA 一度回 nginx 500 錯誤頁（第 588 條末的坑）**，重抓後得到 4 圖、來源是原盤 928da3a6。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e697d401-431f-42f7-ba4c-f892ab93d97f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BST 84281 John Patton - That Certain Feeling **1968**」，場次是 **1968 年 3 月 8 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制只有四個人——Junior Cook（tenor sax）、John Patton（organ）、**Jimmy Ponder（guitar）**、Clifford Jarvis（drums），**無貝斯、無小號**；母帶序 2052 tk.2〈Daddy James〉、2053 tk.9〈Early A.M.〉、2054 tk.14〈Minor Swing〉、2055 tk.16〈Dirty Fingers〉、2056 tk.19〈I Want To Go Home〉、2057 tk.23〈String Bean〉——**盤面曲序正好是錄音順序的倒序**。附註收進 Mosaic Select MS-006（2003）。⚠ **同一頁 84281 之前先列了 1968-03-15 Lou Donaldson《Midnight Creeper》那場**（Blue Mitchell／Lonnie Smith／George Benson／Leo Morris），**只差一週、都在 Van Gelder，但班底完全不同**，讀 jazzdisco 時極易讀串。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r9665429（1968 US BST 84281）的製作名單：**Francis Wolff＝Producer**、Rudy Van Gelder＝Recorded By 兼 Lacquer Cut By、**Forlenza Venosa Associates＝Design [Cover]**、**Joel Brodsky＝封面攝影**、Ed Williams＝內頁文案。盤面註記「non-laminated front cover」、封底 1776 Broadway/6920 Sunset Blvd 雙地址、藍白標「Blue Note Records • A Division Of Liberty Records, Inc.」、runout「BNST•84281•A VAN GELDER」。`catno=BST 84281` 共 5 筆：美國原壓 9665429／12633242 標 1968、德國 10800588 標 1968、義大利 29066761、1970 年 Liberty/UA 再壓 2516378。",
+    "src": "https://api.discogs.com/releases/9665429"
+   },
+   {
+    "f": "**同期紙本：Cash Box 1968-12-07 的年度唱片目錄把「That Certain Feeling／John Patton／84281」列進 Blue Note 在架盤**（該目錄最高列到 BST 84292；repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）——**1968 年首發確定**。同一份掃描檔的鄰號校準：84278 見於 1968-09-07、84283 評於 1968-11-09、84272 評於 1968-11-30、84289 評於 1969-01-04。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
+   },
+   {
+    "f": "英文維基《That Certain Feeling (album)》infobox：released **1968**、recorded 1968-03-08、studio Van Gelder、**producer Francis Wolff**、label Blue Note、length 41:09、前作《Got a Good Thing Goin'》（1966）、後作《Boogaloo》（1968）。personnel 欄寫的是 **Big John Patton – organ**（與卡上掛名同）。AllMusic 的 Stephen Thomas Erlewine 給三星半，說「there are moments when everything comes together and it just cooks. And those are the moments that make *That Certain Feeling* worth a search」。",
+    "src": "https://en.wikipedia.org/wiki/That_Certain_Feeling_(album)"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 1438184740「That Certain Feeling」**掛名 Big John Patton（與卡上一致）**、**6 軌＝與原盤同形**、releaseDate 欄填錄音日 1968-03-08、「A Blue Note Records Release; ℗ 1968 Capitol Records, LLC」。本張不在缺試聽名單裡，本層未逐軌重跑；店面軌數與原盤一致。",
+    "src": "https://itunes.apple.com/lookup?id=1438184740&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "四個人、沒有貝斯：管風琴的左腳就是貝斯線。Junior Cook 的次中音、Jimmy Ponder 的吉他、Clifford Jarvis 的鼓，剩下的全交給 Patton 的腳",
+   "盤面曲序正好是錄音順序的倒序——那天最後錄的〈String Bean〉被放到 A 面第一軌，最先錄的〈Daddy James〉壓到最後"
+  ],
+  "sound": "6 軌、約 41 分鐘的管風琴爵士四重奏，**沒有貝斯手**——低音全靠 Big John Patton 的管風琴腳鍵盤。Junior Cook 的次中音薩克斯風在前，Jimmy Ponder 吉他、Clifford Jarvis 鼓在後。五首 Patton 自己的曲子加上 Jimmy Watson 寫的〈Daddy James〉，最長的〈I Want to Go Home〉8 分 36 秒。1968 年 3 月 8 日一次錄完，Van Gelder 收音、Francis Wolff 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "String Bean",
+   "I Want to Go Home",
+   "Dirty Fingers"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同。四邊互相獨立：**同期紙本最強——本層新掃的 Cash Box 1968-12-07 年度唱片目錄把「That Certain Feeling／John Patton／84281」列進 Blue Note 在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）；jazzdisco 4200 頁 1968；Discogs `catno=BST 84281` 美國原壓 9665429／12633242 與德國壓片全標 1968；MB first-release-date 1968。英文維基 infobox 亦 1968。**錄音 1968-03-08，與首發同年、只差幾個月。**",
+  "notes": "**掛名（第 583 條）：卡上 `Big John Patton`，是「既有分裂取多數」**——池中 `Big John Patton` 7 列 ＞ `John Patton` 1 列（《Along Came John》seed），依 c-140 a 第 550 條先例；**MB RG／Discogs 盤面／jazzdisco 都寫 John Patton，只有維基 personnel 欄與 Apple 店面寫 Big John Patton**。⚠ 池中 `Charley Patton` 2 張是不同人。｜**編制無貝斯**（jazzdisco 與維基 personnel 欄一致，只有四人），正文不得寫成五重奏、不得補一個不存在的貝斯手。｜**製作 Francis Wolff**，封面 **Forlenza Venosa Associates** 設計、Joel Brodsky 攝影、內頁文案 Ed Williams。｜**盤面曲序是錄音順序的倒序**（母帶序 2052→2057 對應盤面第 6→1 軌），這是個可寫進正文的具體細節。｜⚠ **與池中既有的 Lou Donaldson《Midnight Creeper》（BST 84280，1968-03-15）只差一週、都在 Van Gelder，但班底完全不同**（那場是 Blue Mitchell／Lonnie Smith／George Benson／Leo Morris）——**jazzdisco 4200 頁把兩場排在一起，極易讀串**，正文不得互抄。｜⚠ **CAA 的坑（第 588 條末）**：前一支代理存下的 `.caa.json` 是 nginx 500 錯誤頁、與「沒有圖」長得一樣；本層重抓（RG 端點回 307、需 `redirect: follow`）後得到 4 圖、來源是原盤 928da3a6。｜原盤 6 軌、串流 6 軌、日本 SHM-CD 6 軌——**本組少數三邊軌數全一致的碟**。"
+ },
+ {
+  "key": "desc2:McCoy Tyner|Time for Tyner",
+  "artist": "McCoy Tyner",
+  "album": "Time for Tyner",
+  "facts": [
+   {
+    "f": "release-group 082e2800 的欄位：title「Time for Tyner」、artist-credit 單一 Person `McCoy Tyner`（22fe7b6f）、first-release-date 1968（⚠ 與卡單 1969 不同，見 yearVerified）、primary-type Album、secondary-types 空。**轄下八筆、是本組最多的一個 RG**：**原盤 fbf9d231 是 1968 US Official Blue Note BST 84307、12 吋 6 軌**（〈African Village〉731 秒、〈Little Madimba〉515、〈May Street〉322、〈I Didn't Know What Time It Was〉430、〈The Surrey With the Fringe on Top〉312、〈I've Grown Accustomed to Your Face〉267）；1995 US CD 1bf35b36（status 空）；2005 US 2ceeeadb 與 3c80f08c（**同 barcode 724356383920 重複建檔**）、XE Copy Control CD 0931f0f9；2015-04-24 XW 數位 aa49c468；2023-06-02 Tone Poet 黑膠 6eb9593b（B0034363-01）；2024-01-24 JP HQCD f963d238（UCCQ-9640）。CAA 的 10 張圖掛在 2005 年 US CD 2ceeeadb、**不是原盤**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=082e2800-db06-34e7-a76c-130d326bedc9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄記「BST 84307 McCoy Tyner - Time For Tyner **1969**」，場次是 **1968 年 5 月 17 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制標得很細：**Bobby Hutcherson（vibes，#1-4）、McCoy Tyner（piano）、Herbie Lewis（bass，#1-5）、Freddie Waits（drums，#1-5）**——也就是**前四軌是四重奏、第五軌是三重奏（沒有 Hutcherson）、第六軌是 Tyner 一個人的鋼琴獨奏**；母帶序 3026 tk.2〈Little Madimba〉、3027 tk.8〈May Street〉、3028 tk.11〈I Didn't Know What Time It Was〉、**3029 tk.18〈Afrika Village〉（jazzdisco 拼 Afrika，盤面與 MB 是 African Village）**、3030 tk.20〈The Surrey With The Fringe On Top〉、3031 tk.23〈I've Grown Accustomed To Your Face〉。附註 also released on Blue Note CDP 7 84307 2 in 1987。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Discogs 的年份在這張特別乾淨：`catno=BST 84307` 共 24 筆，美國原壓是 1698145 與 11656809，兩筆都標 1969；日本原壓 30415250 也標 1969；整個 24 筆裡沒有任何一筆標 1968。**實體盤面 r1698145（1969 US BST 84307）的製作名單：**Duke Pearson＝Producer**、Rudy Van Gelder＝Recorded By、**Fred Marcellino＝Design [Cover]**（⚠ **本組唯一一張封面出自 Fred Marcellino 的碟——他日後以童書插畫聞名**）、**Frank Gauna＝封面攝影**、Ed Williams＝內頁文案。盤面註記「Original release with white/blue labels / A DIVISION OF LIBERTY RECORDS, INC. / VAN GELDER stamp in runouts / Recorded on May 17, 1968」。",
+    "src": "https://api.discogs.com/releases/1698145"
+   },
+   {
+    "f": "英文維基《Time for Tyner》infobox：released **August 1969**（引 **Billboard 1969-08-02**）、recorded 1968-05-17、studio Van Gelder、producer **Duke Pearson**、label Blue Note BST 84307、length 42:56。正文明寫這是 Tyner 的**第九張領銜盤、第三張 Blue Note**，並把編制層次講清楚：「The album includes three Tyner originals followed by three jazz standards. **The first four tracks are played by the full quartet, the fifth by a trio (without Hutcherson), and the final track is a piano solo.**」另寫 Tyner 與 Hutcherson 從此結為長期搭檔（後來還有《Quartets 4 X 4》1980、《Land of Giants》2003、二重奏《Manhattan Moods》1993）。",
+    "src": "https://en.wikipedia.org/wiki/Time_for_Tyner"
+   },
+   {
+    "f": "本層新掃的 Cash Box 1968-10→1969-12 共 69 期裡**查無 84307 的評介**，但兩條旁證都指向 1969：(a) **1968-12-07 的年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84307 不在其中；(b) 同一份掃描檔的鄰號校準 **84302 評於 1969-05-31、84309 評於 1969-05-24、84313 評於 1969-07-19**——84307 只能落在 1969 年中。與維基引的 Billboard 1969-08-02 相符。",
+    "src": "batch-progress/enum/cashbox-bn-1968-69-ocr.txt"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 1443282060「Time for Tyner」掛 McCoy Tyner、**6 軌＝與原盤同形**。本張不在缺試聽名單裡，本層未逐軌重跑；店面軌數與原盤一致。",
+    "src": "https://itunes.apple.com/lookup?id=1443282060&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六首曲子、三種編制：前四軌四重奏、第五軌抽掉顫音琴變三重奏、最後一軌只剩 Tyner 一個人——一張唱片從四個人減到一個人",
+   "離開 Coltrane 四重奏之後的第九張領銜盤，Tyner 找來 Bobby Hutcherson 的顫音琴；這一組後來還會一起錄三十年"
+  ],
+  "sound": "6 軌、約 43 分鐘，編制一路遞減：前四軌是 Bobby Hutcherson 顫音琴＋McCoy Tyner 鋼琴＋Herbie Lewis 貝斯＋Freddie Waits 鼓的四重奏，第五軌抽掉 Hutcherson 變三重奏，**最後一軌〈I've Grown Accustomed to Your Face〉是 Tyner 的鋼琴獨奏**。前三首是 Tyner 自己的曲子（其中〈African Village〉12 分 11 秒，貝斯的固定音型撐起整首），後三首是標準曲。1968 年 5 月 17 日一次錄完，Van Gelder 收音、Duke Pearson 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "African Village",
+   "Little Madimba",
+   "I've Grown Accustomed to Your Face"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（首發年），與卡單相同，**而且這張的 Discogs 年份反而比 MB 準**：`catno=BST 84307` 共 24 筆壓片，**美國原壓 1698145／11656809 與日本原壓 30415250 全標 1969，24 筆裡沒有任何一筆標 1968**。另三邊一致：jazzdisco 4300 頁年份欄寫 1969、英文維基 infobox 引 **Billboard 1969-08-02**、Discogs master 92932 標 1969。⚠ **反方只有 MB first-release-date 1968 與原盤 release fbf9d231 的 1968，是把錄音年（1968-05-17）回填成發行年**（第 589a 條第 4 點的 84300+ 號段形）。本層新掃的 Cash Box 亦旁證：**1968-12-07 年度目錄列到 84292 為止**、**84302 評於 1969-05-31、84313 評於 1969-07-19**。**錄音 1968-05-17、首發 1969-08，跨年。**",
+  "notes": "**跨年盤：1968-05-17 錄、1969-08 出版（Billboard）。**｜**編制有三層、這是本張最該寫的事**：前四軌四重奏、第五軌三重奏（無 Hutcherson）、**第六軌是鋼琴獨奏**——jazzdisco 的 #1-4／#1-5 標記與維基正文兩邊互相印證，**正文不得寫成整張都是四重奏**。｜**製作 Duke Pearson**（本組三張之一），**封面設計 Fred Marcellino**（本組唯一一張）、封面攝影 Frank Gauna、內頁文案 Ed Williams。｜⚠ **曲名**：jazzdisco 把第一軌拼成「Afrika Village」，**盤面與 MB 都是「African Village」**——以盤面為準。｜**維基說這是 Tyner 的第九張領銜盤、第三張 Blue Note**（前兩張是《The Real McCoy》與同批 c-141 a 的《Tender Moments》）。｜**跨卡互指（第 585 條）**：Tyner 在本組還以側人身分出現在 Blue Mitchell《Heads Up!》（1967-11-17 大編制），c-141 a 的《Tender Moments》（1967-12-01）是第三場；**Freddie Waits 在本組兩次**（本張與《Grass Roots》）。｜**CAA 的圖來自 2005 年 US CD 2ceeeadb、不是原盤版式**，主線要原盤封面看 Discogs r1698145（4 圖）。｜MB 有同 barcode 重複建檔兩筆（2ceeeadb／3c80f08c）與 status 空一筆（1bf35b36）。"
+ },
+ {
+  "key": "desc2:The Jazz Crusaders|Lighthouse '68",
+  "artist": "The Jazz Crusaders",
+  "album": "Lighthouse '68",
+  "facts": [
+   {
+    "f": "release-group cb652f80 的欄位：title「Lighthouse '68」、artist-credit「The Jazz Crusaders」（**掛在群組 fcb79f1a，該群組的主名是 The Crusaders**）、first-release-date 1968、primary-type Album、**secondary-types [Live]**。轄下三筆：**原盤 575ce0a6 是 1968 US Official **Pacific Jazz ST-20131**、12 吋 6 軌**（〈Oogo-Boo-Ga-Loo〉416 秒、〈Eleanor Rigby〉465、〈Native Dancer〉550、〈Never Had It So Good〉444、〈The Emperor〉547、〈Impressions〉398）；無日期的美國 CD 817a2781（Applause 4406／APBC 2312，**credit 改用 The Crusaders**）；**2004-04-20 US CD 86f3f9c3（Pacific Jazz／Blue Note 雙掛名，7343 5 76850 2 3，10 軌）**。CAA 的 6 張圖掛在原盤 575ce0a6。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cb652f80-c489-3dac-894b-1df9a0e6b769&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Pacific Jazz 10100/20100 系列目錄記「PJ-10131 The Jazz Crusaders - Lighthouse '68 **1968**」，演出是 **1967 年 11 月 10–13 日、The Lighthouse, Hermosa Beach, CA**（**連四晚**），編制 Wayne Henderson（trombone）、Wilton Felder（tenor sax）、Joe Sample（piano）、Stix Hooper（drums）、**Buster Williams（bass）**；六首曲目與盤面同序。⚠ **jazzdisco 明確註記第 1 軌「Ooga-Boo-Ga-Loo (as Oogo-Boo-Ga-Loo)」——盤面與 MB 登的 Oogo- 是印錯的**。附註 also released on Pacific Jazz ST-20131 in 1968、7243 5 76850 2 3 in 2004。",
+    "src": "https://www.jazzdisco.org/pacific-jazz-records/catalog-10100-20100-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r3099537（1968 US ST-20131）的製作名單：**Richard Bock＝Producer**（Pacific Jazz 的創辦人，**本組唯一一張不是 Blue Note 自家人監製的碟**）、**Dino Lappas＝Engineer**（不是 Van Gelder）、**Gabor Halmos＝Design [Cover]**、**Woody Woodward＝Art Direction**、**Howard Rumsey＝內頁文案**（⚠ **Rumsey 正是 The Lighthouse 這家俱樂部的主人兼樂團領班，由他寫內頁是個可寫的細節**）、Fred Seligo＝內頁攝影。盤面註記「Gatefold jacket. Recorded live at The Lighthouse, Hermosa Beach, California.」。`catno=ST-20131` 共 9 筆：美國 Pacific Jazz 原壓 3099537／7497383／2846067／28486234（1968）、**World Pacific Jazz 版 18460489／10182938**、加拿大 8071127、另有一筆誤壓盤 1897737。",
+    "src": "https://api.discogs.com/releases/3099537"
+   },
+   {
+    "f": "**同期紙本：Cash Box 1968-09-21 有 World Pacific 的整版廣告**「THE JAZZ CRUSADERS ARE CLEANING UP! SEE YOUR WORLD PACIFIC JAZZ DISTRIBUTOR FOR THE COMPLETE JAZZ CRUSADERS CATALOG!」，列出 **LIGHTHOUSE '68 ST-20131／UH HUH ST-20124／THE FESTIVAL ALBUM ST-20115** 三張，版面下角印「A PRODUCT OF liberty records」（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）——**1968 年 9 月已在架、1968 年首發確定；同時也直接證明 1968 年的 Pacific Jazz／World Pacific 與 Blue Note 同屬 Liberty**（第 582 條判準表 (b) 的事實基礎）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-09-21.pdf"
+   },
+   {
+    "f": "英文維基《Lighthouse '68》infobox：type **Live album**、released 1968、recorded **November 10–13, 1967**、venue **The Lighthouse, Hermosa Beach, CA**、label Pacific Jazz **PJ 10131**、producer **Richard Bock**、length 73:39（含 CD bonus）、前作《Uh Huh》（1967）、後作《Powerhouse》（1968）。infobox 另列單曲 **〈Ooga-Boo-Ga-Loo〉/〈Eleanor Rigby〉**。track listing 標明第 7–10 軌（〈Cathy the Cooker〉〈Shadows〉〈Tough Talk〉〈Third Principle〉）是 **CD 再發的 bonus**。",
+    "src": "https://en.wikipedia.org/wiki/Lighthouse_'68"
+   },
+   {
+    "f": "串流側 us 店面同時有兩個版本：**716096654（10 軌＝2004 年 CD 形）與 1507011032（6 軌＝原盤形）**。本張不在缺試聽名單裡，本層未逐軌重跑；**主線上架若要對到原盤形，用 1507011032**。",
+    "src": "https://itunes.apple.com/lookup?id=1507011032&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1967 年 11 月連四晚，Hermosa Beach 的 The Lighthouse——內頁文案是俱樂部主人 Howard Rumsey 自己寫的；隔年 Pacific Jazz 把那四晚剪成一張唱片",
+   "六首裡有披頭四的〈Eleanor Rigby〉和 Coltrane 的〈Impressions〉：長號、次中音、鋼琴、貝斯、鼓，西岸的 The Jazz Crusaders 就靠這套撐場"
+  ],
+  "sound": "6 軌、約 43 分鐘的現場五重奏：Wayne Henderson 的長號與 Wilton Felder 的次中音薩克斯風兩管在前（**長號當前排，是這團最好認的聲音**），Joe Sample 鋼琴、Buster Williams 貝斯、Stix Hooper 鼓在後。兩首翻唱撐住兩端——披頭四的〈Eleanor Rigby〉7 分 32 秒、Coltrane 的〈Impressions〉6 分 12 秒；其餘四首是團員自己寫的，最長的〈Native Dancer〉8 分 52 秒。1967 年 11 月 10–13 日在 Hermosa Beach 的 The Lighthouse 連錄四晚，Richard Bock 監製、Dino Lappas 收音。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Ooga-Boo-Ga-Loo",
+   "Eleanor Rigby",
+   "Native Dancer"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同。**同期紙本直接坐實：Cash Box 1968-09-21 的 World Pacific 整版廣告已把「LIGHTHOUSE '68 ST-20131」列進在架目錄**（本層新掃，repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）。另三邊一致：jazzdisco Pacific Jazz 10100/20100 頁「PJ-10131 … 1968」、Discogs `catno=ST-20131` 的美國原壓四筆全標 1968、MB first-release-date 1968、英文維基 infobox 1968。**演出年是 1967-11-10～13（連四晚），與發行年不同年——正文要分清楚。**",
+  "notes": "**本組唯一一張現場盤**（MB secondary-types [Live]、enum live:true）。**場地全名 The Lighthouse（Lighthouse Café），加州 Hermosa Beach；演出 1967 年 11 月 10–13 日連四晚**——盤名裡的 '68 是發行年、不是演出年，**正文絕不能寫成「1968 年的現場」**。｜**原盤他廠：Pacific Jazz ST-20131（stereo）／PJ-10131（mono），不是 Blue Note**（第 582 條判準表 (b)：1968 年 Pacific Jazz 與 Blue Note 同屬 Liberty 才收，`label` 寫 Pacific Jazz）；**Blue Note 只在 2004-04-20 出過雙掛名 CD（86f3f9c3，10 軌）**，正文不得寫成 Blue Note 的碟。**本層另找到直接證據**：Cash Box 1968-09-21 那版 World Pacific 廣告下角就印著「A PRODUCT OF liberty records」。｜**製作 Richard Bock、錄音 Dino Lappas——本組唯一一張不是 Wolff／Pearson／Lion 監製、也不是 Van Gelder 收音的碟。**封面設計 Gabor Halmos、美術指導 Woody Woodward，**內頁文案是 The Lighthouse 的主人兼樂團領班 Howard Rumsey 親筆**；gatefold 對開封套。｜**掛名（第 583 條）**：卡上 `The Jazz Crusaders`，MB credit 同字串但掛在群組 fcb79f1a（主名 The Crusaders）——**是改名前後的既有分法、不是分裂**；池中 `The Jazz Crusaders` 2 張、`The Crusaders` 5 張（1971 後）。MB 的 Applause CD（817a2781）credit 用 The Crusaders。｜⚠ **曲名坑（第 586 條）**：第 1 軌 MB 與盤面登「Oogo-Boo-Ga-Loo」，**jazzdisco 註記正確是「Ooga-Boo-Ga-Loo」、維基與當年單曲面也是 Ooga-**——寫作層用通行拼法。｜**串流有兩個版本**：716096654（10 軌 CD 形）與 **1507011032（6 軌原盤形）**，上架用後者。"
+ }
+]
