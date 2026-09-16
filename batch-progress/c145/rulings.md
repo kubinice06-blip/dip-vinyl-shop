@@ -698,3 +698,56 @@ Jimmy Smith 在 **Manhattan Towers**（→LT-992），**而且兩場有三個共
 
 第 817 條《Poppin'》的「1980 US BLP 1620」不存在**兩路獨立複驗**
 （Discogs `catno=BLP 1620` 在 Blue Note 名下 0 筆 ＋ 1980–81 兩刊 206 期零命中）。
+
+## 第 864 條（主線 2026-09-16，研究層 b 組交件後）：**b 組 21 筆全 full；兩張改判獨立驗證通過，兩張疑議維持 1980**
+
+- **《Remembering》GXF 3071＝1980、《Gooden's Corner》GXF 3058＝1979 獨立驗證通過**
+  （Discogs 兩筆首發＋**GXK 條目 notes 明寫 Renumbered issue**＋jazzdisco；**維基在 Gooden's 上錯記 1980**）。
+  ⚠ **MB 新錯誤型**：《Remembering》的 release date 寫 **1981-08-29**，**月日等於錄音日 1961-08-29**
+  ——**年被改過、月日沒改**，比整個欄位填錯更難發現。
+- **《Vertigo》《Medina》維持 1980，但相反證據比第 847 條強**：
+  Cash Box 1980-12-27 p18 那張第一季表的**二月格（Blakey LT-1088、Quebec LT-1089）
+  後來被 Billboard 1981-02-21 p37／p40 目錄頁獨立證實**，且 **LT-1085／1086 在 206 期裡完全查無，
+  而同期其他九個 LT 號每一個都至少出現過一次**。
+  **維持 1980 的理由**：第 612 條階序（**季度預告表不在階序內**）＋℗ 1980＋四個資料庫，**且可逆**。
+  **寫作層只寫年份、不寫月份。**
+- 另釘出 **9 張的上市月份**，並找到 **a 組第 812 條那張廣告表上沒有的第六則：Billboard 1980-05-17 p77**。
+
+## 第 865 條（同日）：**撞陳列——七組全部用母帶／take 號比對，並新查出兩組**
+
+1. **《Swingin'》↔ 池中四張：零重複**（1956-03-12 本盤 tk.42 vs BLP 1543 的 tk.10/13/27/43；
+   1958-05-14 tk.1 vs Blue Lights 的 tk.2/8/11/14 與 4/9/10/12；1959-08-25 Five Spot 本盤 tk.3/8/14 vs On View 的 tk.10/11/15/19/22）。
+2. **《On the Sunny Side》↔ 池中五張＋a 組《Confirmation》：四場全部零重複**
+   （1957-08-25 那晚 tk.2/3/4/5/6/11 **被四張碟分走，本盤只拿 tk.6**）。
+   ⚠ **另查出 A2〈Since I Fell for You〉先前以 45 轉單曲 BN 45-1769 的 B 面發過，
+   而該單曲 A 面〈Motorin' Along〉就在池中《Home Cookin'》上**——**第 860 條的 45 轉形狀再一例**。
+3. ⚠ **《Vertigo》〈Formidable〉——本批唯一真重複，而且方向反了**：黑膠層與《New Soil》take 互補零重複，
+   **但 Apple 上《New Soil》(724664824) 第 6 軌就是〈Formidable〉，而《Vertigo》(724221951) 的 11 軌裡沒有它**。
+   ⚠ **更嚴重：`724221951` 第 6–11 軌整批是 1962-06-14 的 BLP 4116，
+   即 c-144《The Jackie McLean Quintet》／《Hipnosis》兩張卡的全部內容**
+   （那兩張店面判查無、id 不撞，**但寫作層不得把這 11 軌當成這張碟**）。
+   **——店面條目的內容與盤名不一致，是第 528 條的新變形：不是給錯碟，是一個條目裡混了三張碟。**
+4. **新查出第七組（第 845 條表上沒有的）：《Gooden's Corner》↔ 池中 seed《Blue & Sentimental》(BLP 4098)**
+   ——1961-12-23 同一場共七個 take，本盤取六個，**第七個 tk.24 是本盤四重奏＋Ike Quebec 的五重奏**，
+   收在《Blue & Sentimental》壓軸。**零重複，三重核對通過。**
+5. 《Congo Lament》↔ 未收的《Easy Living》**精確化為 8 個 take**（共用三軌；**1987 年 CD 收齊本盤全部五軌**）。
+6. 《Africaine》↔ seed《The Big Beat》：〈Lester Left Town〉同曲兩次錄音，**兩場 take 號有重號但屬不同序列**。
+7. 《Medina》↔ a 組《Spiral》：母帶無關，**撞的是 1998 年合體 CD**。
+
+**假陽性覆核（第 855／861 條）新增一則**：**《On the Sunny Side》1957-08-25 反查命中 Lee Morgan《City Lights》
+——那場在 Hackensack 不是 Manhattan Towers**。另 Patterns 1968-03-14 的 Chick Corea **有兩個 BN-LA 號**
+（LA395-H2 與 LA472-H2，a 組只記了 LA472）。
+
+## 第 866 條（同日）：**b 組試聽採信 4 張、查無 5 張；c-145 試聽 38/44**
+
+**採信**：Cool Blues `716409565`、Rollin' With Leo `715675271`、
+**Remembering `724581898`**（⚠ **Apple 上題名為《Standards》**，Discogs 1998 CD notes 證實 #2-7 即日本 GXF 六軌）、
+**Medina `716626996`**（a 組已依第 862 條讓號）。**明寫查無 5 張**：Swingin'、Inner Glow、Congo Lament、
+On the Sunny Side、Live at Donte's。
+**缺封面 2 張的替代圖**：Congo Lament → Discogs **3357862**；The Creeper → Discogs **1211006**（各 4 圖）。
+
+**這一段的共同寫法**：**Michael Cuscuna 掛「Produced For Release」的有 20/21 張**
+——**唯一例外是《Live at Donte's》**（Pacific Jazz 舊母帶，製作／錄音／重混三職全是 Richard Bock，
+整理發行是 Pete Welding，**錄音師不是 Van Gelder**）。
+另《Thinking of Home》同一場**被配過 BST 84367 與 BST 84417 兩個都沒發的號**；
+jazzdisco 人名錯（Herbert Mogan→**Morgan**）、曲名錯（If Had You、Que's Pill）已逐條訂正。
