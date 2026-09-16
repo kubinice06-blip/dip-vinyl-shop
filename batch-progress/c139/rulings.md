@@ -343,3 +343,57 @@ Stanley Turrentine《Never Let Me Go》**`716038904`**（8 軌，本盤第一軌
 **b 組掃到的 91 期 Cash Box 命中頁全文留在 scratchpad `c139b/research/cbtext/`**——
 ⚠ **scratchpad 不隨容器存活**，c-140 起若還要 1963–64 的紙本，要嘛趁容器還在時複用，要嘛比照
 `batch-progress/enum/cashbox-bn-1960-62-ocr.txt` 收進 repo。
+
+## 第 553 條（主線 2026-09-16，研究層 a 組交件後）：**UAJ 14000 系列的年份——兩張改判 1963，且這段目錄號讓第 531 條失效**
+
+a 組 17 筆全 `full`、QA 清。**年份改判兩張，全部採信**：
+**Ken McIntyre《Year of the Iron Sheep》（UAJ 14015）1962 → 1963**、
+**Vi Redd《Bird Call》（UAJ 14016）1962 → 1963**——同一批貨、同一條證據鏈，**兩張一起改**。
+
+證據鏈：錄音最後一場 1962-09-04；**1962-09 到 1963-01 之間兩家週刊完全沒有記載**
+（期間唯一的 UA Jazz 新片是 Cash Box 1962-10-27 只列三張的廣告，兩盤都不在其中）；
+Cash Box 1963-01-05 p7 記 UA 於 **1963-01-04 的 '63 Jamboree** 推出含「五張新 Jazz／Tale-Spinners」的 27 張新片；
+**Billboard 1963-02-09 p29 一口氣評五張 UA Jazz（15007／15010／15015／15016／15019）**，
+Cash Box 也在 1963-02-02、02-09、**03-09（Iron Sheep）**接連評出同一批。
+
+⚠ **第 531 條在這段目錄號失效**：Discogs 的 UAJ 14007／14010／14001 都標 1963，
+但《Coltrane Time》（14001）明明是 **1962-07** 首發——**這段 Discogs 的年份兩個方向都錯，多半抄封套 © 年**。
+MB／維基／Apple 的 1962 三邊同源（第 431 條），一併不採。
+另 **MB＋Apple 給《Bird Call》的「1962-05-22」不可能是上市日**（UA Jazz 首批 1962-07 才推出），判為 session 日。
+
+**與第 550 條合起來是同一件事**：`Discogs 原壓群` 這條舉證**會整群繼承同一個錯誤的回填年**
+（c-139 b 的《Soul Stream》、本組的整個 UAJ 14000 段）。**同期紙本永遠壓過它。**
+
+## 第 554 條（同日）：**c-139 試聽補滿 36/36；a 組另擋下五處資料庫錯誤**
+
+**串流採信 9 張 ＋ 缺試聽的 4 張全部解決**，主線已補進 `previews.json`：
+Ladylove `1728555676`（合訂 16 軌，原盤十軌＝第 1–8 與 10–11 軌；⚠ **第 1 軌是 Leonard Feather 的報幕，
+`previewUrl` 主線改取第 2 軌〈Blue Moon〉**）、Blakey Vol. 2 `723618161`（2002 兩張一套，
+**本盤起始軌＝第 2 片第 2 軌**）、Three Blind Mice `724646592`（原盤六軌＝第 1–5 與第 7 軌）、
+The Latin Bit `716598141`（原盤六軌＝第 1–6 軌）。
+**不採信 4 張**（只跑 search 或曲序不符）：The Cat Walk、That's Where It's At、Town Hall Concert、After Hours
+——**那四張探測層本來就有命中，維持探測層的 id**。
+**缺封面的《Black Orchid》**：串流 `1379055147` 有完整封面與八軌試聽，**可作本機補圖線索**。
+
+**擋下的資料庫錯誤五處**（已寫進各卡 notes）：
+《Black Orchid》MB 原盤**目錄號 4165／年份 1962 兩欄都錯**（應 BLP 4155／1964）；
+《Out of This World》MB 記 1962（**應 1966**，錄音年誤登）；《Portrait of Sheila》MB 與 jazzdisco 都記 1962（**應 1963**）；
+《My Hour of Need》MB 原盤黑膠登成 16 軌（**原盤 10 軌**）；
+Cat Walk／That's Where It's At／Iron Sheep 的 **MB 只收立體聲、沒收 mono 原盤**。
+
+**第 509c 條（紙本誤植目錄號）本組中三次**：Billboard 1963-06-22 把 Ike Quebec《Blue & Sentimental》印成 4096（實為 4098）、
+Billboard 1962-08-18 把《Three Blind Mice》印成 UAJ 14102（實為 14002）、
+Cash Box 1963-03-09 把 Iron Sheep 印成「Year of the Sheep／United Artists 15015」。**這條已是常態。**
+
+**佐證最弱的一張**：Richard "Groove" Holmes《After Hours》（PJ-59）——1962-05→1963-12、1964、1966 各段掃過，
+只在 Cash Box 1966-08-27 的回顧廣告找到目錄號、無同期評論；靠 Pacific Jazz 同段號碼受評時間
+（PJ-56＝1962-11-03）與 1962-04／07 兩則廣告夾出「1962 年 11 月之後」，**照 Discogs 原壓採 1962，正文不寫月份**。
+
+## 第 555 條（同日）：**c-139 兩組掃的紙本收進 repo（180 期）**
+
+- `batch-progress/enum/billboard-bn-1962-63-ocr.txt`（1.6 MB，**1962-06-02 → 1963-06-29 共 56 期**）
+- `batch-progress/enum/cashbox-bn-1962-66-ocr.txt`（3.7 MB，**1962-05-05 → 1966-08-27 共 124 期**：
+  1962 有 139 頁命中、1963 有 141、**1964 只有 62、1966 只有 119——後兩年是抽查段不是全掃**）
+
+⚠ **1964–66 只是抽查**，c-140／c-141 要那幾年的紙本仍須自己補抓。涵蓋表已更新到
+`batch-progress/enum/SOURCES-billboard-cashbox.md`（**開工看表不看檔名**，第 533 條）。
