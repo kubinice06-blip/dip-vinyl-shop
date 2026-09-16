@@ -464,3 +464,56 @@ a 組 21 筆全 `full`、**年份疑議 0**。四張覆核全部成立，其中�
 
 **封面**：Elvin Jones《Live at the Lighthouse》替代圖來源首選 **Discogs release 294222**（1972 US 原壓 BN-LA015-G），
 備選 16230827／10946809／G2 的 15413552／日版 8945245。
+
+## 第 708 條（主線 2026-09-16，研究層 b 組交件後）：**年份疑議 0；第五份廠牌檔期文件；Discogs 的年份連「抄 ℗© 年」都不是**
+
+b 組 21 筆全 `full`、QA 清、`src` 全部 https。**年份疑議 0**，策展層唯一的改判
+（Hutcherson《Live at Montreux》1973→1974）**覆核通過**，並補到一條獨立佐證：
+**同一晚、相鄰目錄號的 Marlena Shaw《Live at Montreux》BN-LA251-G 的 MB frd 就正確寫 1974**
+——**同一筆資料庫裡相鄰的兩張碟，一張對一張錯**，證明 Hutcherson 那筆的 1973-07-05 是欄位填成演出日。
+
+**第五份廠牌檔期文件（第 612 條家族）**：Billboard **1974-04-20 封面頁廣告**
+「Alphonze Mouzon's *Funky Snakefoot*… **April is Blue Note month**」＋
+Cash Box 1974-04-13 p28「three albums from Blue Note during April: *Funky Snakefoot*、McCoy Tyner《Asante》、
+*Lee Morgan Memorial Album*」——**把《Funky Snakefoot》從「1974 年春」釘到 1974 年 4 月。**
+
+⚠ **Gene Harris BST 84423 的 Discogs 1971 被它自己的 notes 否證**：同一批條目的 notes 寫
+「Recorded June 29th & 30th, **1972**」與「[On labels]: **℗ 1972** United Artists」
+——**連「抄盤面 ℗© 年」都不是，是憑空填錯**。**第 550／570 條再加一層：Discogs 的年份欄與它自己的 notes 也會打架，要對照著看。**
+
+## 第 709 條（同日）：**b 組試聽採信 2 張、查無 1 張；c-143 試聽 40/42**
+
+- Horace Silver《In Pursuit of the 27th Man》→ **`723390830`**（RVG Edition，7 軌逐軌核過、軌長誤差 ≤4 秒）。
+- Horace Silver《All》→ **`781564752`**（2004 年兩片合輯《The United States of Mind》；
+  **本盤第一軌〈The Merger of the Minds〉是第 2 片第 5 軌**，之後連續十軌＝本盤全部）——
+  `previewUrl` 已依第 472／554 條指到**第 2 片第 5 軌**。
+- Gene Harris《Gene Harris of the Three Sounds》→ **查無**（三種查法全跑完；
+  **探測層候選 `1442984962` 是《Yesterday, Today & Tomorrow》，撞錯碟**——第 528／707 條再一例）。
+
+**缺封面 1 張**：Duke Pearson《It Could Only Happen With You》CAA 親測 404，
+替代圖依序 **Discogs 美國原壓 31884442（6 圖）** → 22799219（4 圖）→ 1980 日版 GXF-3149。
+
+## 第 710 條（同日）：**研究層訂正與新線索六則（給寫作層）**
+
+1. **Hutcherson《Live at Montreux》的三軌／四軌之爭解決**：Discogs 美國原壓曲目欄是 A1／A2／B1／B2，
+   **〈The Moontrane〉被切成兩面續奏**——原 LP 是**三首演出、四條 band**；MB 的〈Farallone〉是 1994 CD 才加的。
+   **而且盤面印的就是「Anton's Bail」，不是 MB 打錯。**
+2. **《Sweet Lou》的榜位（策展層漏查）**：Billboard **Soul LP's 1974-09-21 起在榜**（10-05 #51、10-12 #54）、
+   **Jazz LP's 1974-11-09 才第 1 週 #25**——**Soul 榜比 Jazz 榜早七週**。
+   **這一段的碟要先查 Soul 榜再查 Jazz 榜**（第 58x 條在 BN-LA 段的用法）。
+   《Sassy Soul Strut》另有完整走勢（Jazz #28→#20 連 13 週、年度唱片第 139 名、年度名錄標 `PLP/SLP/JLP` 三榜全上）。
+3. **美術掛名對應三個時期**：**Mike Salisbury 是 BN-LA 段的美術總監**（本組 6 張）＋**Lloyd Ziff 設計 4 張**；
+   **1972 年 BST 84xx 段是 Norman Seeff**（5 張）；**1970 年錄的兩張庫存盤（Moto Grosso Feio／
+   It Could Only Happen With You）掛的是 UA 創意副總 Bob Cato**。
+4. **《Mr. Jones》盤面並列 Francis Wolff 與 George Butler 兩位製作人**（1969 那軌是 Wolff 的）
+   ——**Wolff→Butler 換手最乾淨的物證。**
+5. **第 642 條再中一次**：策展層記「Marlena Shaw《Live at Montreux》原盤未填軌長」，
+   改用 `release?release-group=…&inc=media+labels+recordings` 瀏覽端點 **21/21 全部取到軌長**。
+6. **逐卡訂正**：Duke Pearson 盤面次中音**確認是 Frank Foster**（非 jazzdisco 的「possibly」）、
+   「Theo」＝**Theo De Barros**、**Flora Purim**（jazzdisco 誤植 Pulim）；
+   《Yesterday, Today & Tomorrow》貝斯手是 **John Hatton** 非 John Halton，
+   **且盤面封面掛個人名、盤標掛「Gene Harris / The Three Sounds」**（第 697 條掛名斷點的實物證據）；
+   《Dig This!》維基條目在 `Dig This!`，〈Lonely Town, Lonely Street〉作者是 **Bill Withers** 非 Lou Rawls、
+   〈Nubian Lady〉是 **Kenny Barron**；
+   ⚠ **《All》維基 infobox 的「Francis Wolff」製作掛名是錯的**——**兩場都錄於 1972 年，Wolff 1971 年已過世**，
+   Discogs 原壓只掛 Butler。**這是「用生卒年就能否證的掛名錯誤」，寫作層遇到製作人掛名一律先對時間。**
