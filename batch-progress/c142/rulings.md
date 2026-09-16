@@ -517,3 +517,52 @@ Woody Woodward／Gabor Halmos／Ken Kim（Coldwater Flat）、
 **英文維基的「Jack Wilson (pianist)」講的是 1907–2006 的英國樂團領班、不是本人，本人沒有英文維基個人條目**
 （與 c-141 第 591 條同一個坑，**這次是實測 17 個實體確認的**）。
 `Larry Young` 實測 5 個實體，本人是 `81971abd-8a02-4d66-a499-8487ba7f20d8`（1940-10-07–1978-03-30）。
+
+## 第 645 條（主線 2026-09-16，研究層 b 組交件後）：**策展層改判的 4 張獨立覆核全部成立；兩張疑議維持卡單**
+
+b 組 19 筆全 `full`、QA 清、`src` 全部 https 且逐一驗過 200。
+**Poly-Currents／Multidirection／Wayfaring Stranger／How Insensitive 四張逐條獨立覆核全部成立**
+（Poly-Currents 在 CB 與 BB 同週兩刊、**文字不同＝兩則獨立稿**，這正是第 431 條要的「真獨立」；
+Wayfaring Stranger 再補到 CB 1971-02-06 預告與 BB 1972-02-05 蒙特勒 Grand Prix 圖說）。其餘 15 張抽查無同型偏移。
+
+**兩張疑議，照多數維持卡單、可逆**：
+1. **《Score》**：MB／Discogs／Apple ℗ 1970 vs 維基 1969；三組關鍵字掃六份紙本檔**零命中** → 維持 1970。
+2. **《Something To Listen To》**：紙本唯一一則是 BB **1971-03-27** 評介，1970 年零命中。
+   **第 631 條交代的改判條件（1971 年初的 Liberty/UA 檔期廣告）b 組查過、沒有**
+   ——CB 1971-02-06／02-13 的二月檔期只列 84353/84354/84356/84357/84361、CB 1971-07-03 在架目錄列到 84362，
+   **都沒有 84364** → 維持 1970。**「改判條件沒被滿足」本身要寫進 `yearVerified`，不能只說「維持」。**
+
+**榜位新做的一層**：掃 Billboard 1968-11→1972 的 Best Selling Jazz LP's 與 Soul LP's，**本批 19 張全部無榜位**
+（對照組：McDuff 84322／84334 在 Soul 榜、McGriff SS 18045 在爵士榜 29 週、Byrd 84319 在爵士榜
+——**本批這幾張正好夾在中間卻都沒進榜**，是可寫進正文的背景）。
+
+## 第 646 條（同日）：**b 組試聽 15 採信 4 查無；《Roots & Herbs》改採 6 軌版**
+
+**查無 4 張**（都跑滿三種查法）：To Seek a New Home／Worth Waiting For...／Something To Listen To／Multidirection
+——**走固定無來源狀態**。
+⚠ **《Multidirection》的裁定（研究層自行決定，主線追認）**：姊妹盤《Introducing Kenny Cox…》的 `716068112`
+是 2007 Connoisseur 二合一（12 軌），**第 7–12 軌逐軌就是本張全碟**（差 5 秒內）——**但不採信**，
+理由是盤名與掛名都是姊妹盤、且 c-141 b 那張卡極可能已用同一個 collectionId，
+**共用同一個 collectionId 會讓固定試聽指錯碟**。逐軌核實資料已寫進 facts，日後若支援「同 collection 指定軌段」可改採。
+**這條補上了第 472／532／554 條的邊界：合訂版可用，但兩張卡不得共用同一個 collectionId。**
+
+**主線改採一張**：《Roots & Herbs》探測層原採 `738332002`（RVG 9 軌，多兩首 alternate），
+研究層逐軌核出 **`1444212001` 就是原盤六軌**——**改採 6 軌版**。
+**c-142 試聽 34/39、無來源 5 張**（含 a 組的《Collision in Black》）。
+
+**封面 4 張缺口全部有來源**：《That Healin' Feelin'》**可直接取被退掉的重複 RG `cbd38639` → release `a0d32fd4` 的 front**
+（研究層驗過 200，圖 id `4310531101`）；其餘三張走 Discogs 原壓 `r1018259`／`r1188467`／`r17230279` 的 `images[0].uri`。
+
+## 第 647 條（同日）：**研究層訂正前層四處，另記兩處資料錯**
+
+1. **第 635 條把《Score》錄音地列為 A&R Studios，應為 Van Gelder**（維基 infobox＋Discogs 盤面 Recorded By，
+   且無 `Recorded At=A&R`）。
+2. **第 635 條漏了《Worth Waiting For...》也在洛杉磯錄**（jazzdisco：United Artists Studio, LA；
+   Discogs：Liberty/UA Recording Studios）。
+3. **第 638 條「本批 19 張軌長全有」有例外**：**《Another Story》MB 第 2 軌差 163 秒**（MB 390s vs 維基／Apple 553s）
+   ——**該張引軌長要用 Apple／維基**。
+4. **檔名形狀再補兩期**：**BB 1970-04-25 與 BB 1972-02-05 只有 `BB-` 形狀可用**（第 614／642 條的續）。
+
+**資料錯兩處**：MB 把《Roots & Herbs》兩軌登成〈The Black Sliders〉〈Look at the Bride〉
+（**應為 The Back Sliders／Look At The Birdie**）；《Multidirection》原壓 runout **把 84339 刻成 84399**
+——**連盤面壓模都會刻錯號**，第 509c 條的實體版。
