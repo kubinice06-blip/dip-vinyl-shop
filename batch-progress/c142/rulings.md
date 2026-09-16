@@ -460,3 +460,60 @@ Cash Box 1970-10-24 把《That Healin' Feelin'》的副題印成 **The United Ph
   3. **jazzdisco 4300 頁記為 `not released` 的四個號**：84314（Booker Ervin，c-141 b 第 589 條第 3 點已記）、84316（Frank Foster）、84366（John Patton《Memphis To New York Spirit》）、84367（Hank Mobley《Thinking Of Home》）——**84366／84367 後來都在 1970 年代末以 LT 系列出土，屬 vault 盤，後批看到 `year` 取首次商業發行年。**
   4. **1971 年起 MB 的 `first-release-date` 可信度下降、jazzdisco 4300 頁反而變準**（第 631 條方法論 2）。
   5. **Thad Jones/Mel Lewis 的 Solid State 目錄**：c-141 b 第 589 條第 4 點說「BST 84346《Consummation》照收」——**已在池中，不要再收**（第 630 條退表 #2）。
+
+## 第 641 條（主線 2026-09-16，研究層 a 組交件後）：**策展層改判的 12 張全部成立；本層再往上補到「榜位」層級**
+
+a 組 20 筆全 `full`、QA 清、**年份 0 張有疑議**（策展層改判的 12 張逐條覆核全部成立，未改判的 8 張也覆核成立）。
+**新找到三條比第 612 條的檔期廣告更硬的證據**（第 58x 條「榜位最硬」的正面案例）：
+- **《Soul Symphony》**：Billboard 爵士榜 **1970-10-31 第 15 名新進、11-07 第 2 週**——**1969 徹底排除**。
+- **《Fancy Free》**：爵士榜 13 週（峰值第 7）＋ **Best Selling Soul LP's 兩週**（1970-02-14 新進）。
+- **《Say It Loud!》**：爵士榜 21 週、峰值第 4；Soul LP's 峰值約 27；Top LP's 第 184。
+  另 **Billboard 1969-04-05 p74 廠牌報導**：總經理 Mel Fuhrman 點名它與《Always Something There》是那一季四張主力之一（正文素材）。
+另《Accent on the Blues》的評論週往前推到 **BB 1970-06-20 四星評論欄**；
+《The Ultimate》補到 **BB 1969-09-20 倫敦 Ronnie Scott 檔期報導**（廠牌把發片綁上檔期，並自稱三重奏第二張）。
+
+**《Song for My Daughter》的 catno 確認**：Discogs `catno:"BST 84328"` 反查四筆全是本張、沒有一筆是《Mustang!》，
+**Billboard 1970-02-14 四星欄也完整印出 BST 84328**——**MB 那個 84238 確為登錄錯誤**，正文一律用真號。
+
+## 第 642 條（同日）：**研究層訂正策展層與 SOURCES 表各一處**
+
+1. **第 607 條第 1 點不成立**：被列為「有軌數無軌序」的 5 張（On Broadway／The Ultimate／Collision in Black／
+   The Sixth Sense／Always Something There），改用
+   **`release?release-group=<rg>&fmt=json&inc=media+labels+recordings+artist-credits` 瀏覽端點全部取得到完整軌序與軌長**
+   ——策展層是先 browse 再對單一 release 打 `?inc=recordings`，**那條路徑會漏**。
+   **寫作層可以引軌序與軌長，不必只靠 jazzdisco。**
+   **通則：MB 取不到某個欄位時，先換一種端點組合再說「MB 沒有」。**
+2. **第 614 條「1970 年 Billboard 全部是 `Billboard%20YYYY-MM-DD.pdf`」不完全對**：
+   **`1970-01-31`／`1970-03-21`／`1970-04-11` 三期只有 `BB-YYYY-MM-DD.pdf` 可用**，`Billboard%20` 回 404。
+   **1970 年兩種形狀都要試。** SOURCES 表已補這句。
+
+## 第 643 條（同日）：**c-142 a 試聽補 4 張；《Collision in Black》確定無串流版**
+
+**串流採信 19/20**：Turning Point `716428281`、You Gotta Take a Little Love `715924725`、
+The Sixth Sense `724852908`（9 軌 RVG 形，**前 6 軌逐軌對應原盤**）、King Kong `724662852`，主線已補進 `previews.json`。
+**《Collision in Black》跑完三種查法仍全落空**——Blue Mitchell artistId 3007072 的整份 31 張目錄裡沒有它，
+兩個同名實體也沒有，**確定無串流版，走固定無來源狀態；寫作層不得寫成有固定試聽來源。**
+
+**缺封面 3 張的替代圖來源**（本機上傳時用，CAA 在 RG 與 release 兩層都重驗過確為 404）：
+- Collision in Black → Discogs master 332288／r1640346／r15626152／r35843143（**沒有日本再發盤**）
+- Soul Symphony → Discogs master 177750／r4434135／r10100377，或 **Apple `716184995` 的 artwork**（2008 US CD 版式）
+- Song for My Daughter → Discogs master 1041075／r3378314／r28891183，或 **Apple `1768828974` 的 artwork**（2024 數位再發版式）
+
+## 第 644 條（同日，給寫作層）：**這一段的製作人與封套美術，有名有姓**
+
+**製作人四種**：Francis Wolff 7 張、Duke Pearson 4 張（The Ultimate／Fancy Free／The Prisoner／Always Something There）、
+Alfred Lion 2 張（皆舊錄音）、**Jack Tracy 1 張**（Coldwater Flat，Liberty 那邊的 A&R）、
+**Monk Higgins＋Dee Ervin 外製 1 張**（Collision in Black，掛 For Wally Roker & Associates）、
+**Billy Byers 1 張**（Song for My Daughter，**維基 producer 欄是空的，Discogs 是唯一來源**）、Richard Bock 1 張（King Kong）。
+
+**封套美術（Reid Miles 全組 0 張）**：Forlenza Venosa Associates（On Broadway）、
+**Bob Venosa／Havona 三張**（The Flip、The Sixth Sense、Accent on the Blues）、**Frank Gauna 美術指導 4 張**、
+Ron Wolin（King Kong，與 b 組兩張同一人）、Tony De Stefano（The Ultimate）、
+Woody Woodward／Gabor Halmos／Ken Kim（Coldwater Flat）、
+**Moki Cherry 的封面畫＋Ornette Coleman 的封底文字**（Where Is Brooklyn?）、**Louis Delsarte 的封面畫**（Fancy Free）。
+
+**第 307 條預警覆核**：`Jack Wilson` MB 同字串實測 **17 個實體**，本人是
+`219c17de-f8fc-4369-bb79-4ad124910b16`（US，1936-08-03–2007-10-05，jazz pianist）；
+**英文維基的「Jack Wilson (pianist)」講的是 1907–2006 的英國樂團領班、不是本人，本人沒有英文維基個人條目**
+（與 c-141 第 591 條同一個坑，**這次是實測 17 個實體確認的**）。
+`Larry Young` 實測 5 個實體，本人是 `81971abd-8a02-4d66-a499-8487ba7f20d8`（1940-10-07–1978-03-30）。

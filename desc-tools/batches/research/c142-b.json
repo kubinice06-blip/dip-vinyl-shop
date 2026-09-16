@@ -130,5 +130,137 @@
   "status": "full",
   "yearVerified": "一致，1969（首發年），與卡單相同，**錄音年與首發年同年**（1969-05-02 錄、1969-10／11 上市）。MB frd／jazzdisco 4300 頁／Discogs 美英德壓片群／維基全 1969，紙本兩則獨立坐實：Billboard **1969-10-25** 爵士四星評介、Billboard **1969-11-01**「New Album Releases」。本層掃 Billboard／Cash Box 1968-11→1972 全段，1970 年後查無痕跡。⚠ Apple 的 ℗ 2003 跟的是 Water 再發的版權年，**不是第三個獨立年份來源**（第 550／570 條同族）。",
   "notes": "**錄音 1969-05-02、首發 1969（同年），卡單取 1969。**｜⚠ **監製不明**：維基 producer 欄留空、Discogs 盤面也沒有列製作人——**依第 639 條，正文不得指名監製**（Francis Wolff 或任何人都不行）。｜**封面缺口（本組四張之一）**：**CAA 整個 RG 8c5153c4 是 404**（本層以 `redirect: follow` ＋ 500 重試三次重抓、狀態碼確為 404）。**替代圖走 Discogs 原壓條目**：`https://api.discogs.com/releases/1018259` 的 images[0].uri（primary，來源是 R-1018259 的封面掃描，600×596），另有 `r15836411`／`r10577383`／`r7432405` 同為美國原壓可交叉比對；⚠ 2003 年 Water water118 CD 的封面與原壓同版式，但 CAA 上沒有建檔。｜⚠ **本張的再發不是 Blue Note**：2003 年 CD 是獨立廠 **Water**（water118），正文若提再發要寫對廠牌。｜⚠ **同批跨卡互指（第 635 條）**：**Elvin Jones 在本張打鼓（1969-05-02）↔ 同批《Poly-Currents》是他自己的領班盤（1969-09-26）**——兩場差近五個月，正文不得寫成同一批 session。｜**掛名**：MB 與池中皆 `Eddie Gale`（Person 13f630fb），池中 seed 0 張、未上傳批次 1 張。｜**榜位**：Billboard 爵士／Soul 榜 1968-11→1972 全段掃過，**本張無榜位**。"
+ },
+ {
+  "key": "desc2:Duke Pearson|Merry Ole Soul",
+  "artist": "Duke Pearson",
+  "album": "Merry Ole Soul",
+  "facts": [
+   {
+    "f": "release-group 9d4daabd 的欄位：title「Merry Ole Soul」、artist-credit 單一 Person `Duke Pearson`（ea39ae7d）、first-release-date 1969、primary-type Album、secondary-types **空**（⚠ **MB 沒有標 Christmas／Holiday 類型**，但這是一張聖誕碟）、轄下四筆：**原盤 a5416080（1969 US Official、Blue Note BST 84323、12 吋 9 軌）**、2003 XW 數位 a0f70aed（9 軌）、2003-11-27 JP CD d150c53c（TOCJ-9559、**10 軌**）、2021-10-01 黑膠 aee14a30（602438089543，catno 同時登「84323」與「BST 84323」、**無國別**）。原 LP 九軌與軌長：〈Sleigh Ride〉385 秒、〈The Little Drummer Boy〉347、〈Have Yourself a Merry Little Christmas〉120、〈Jingle Bells〉310、〈Santa Claus Is Coming to Town〉247、〈Go Tell It on the Mountain〉224、〈Wassail Song〉184、〈Silent Night〉252、〈O Little Town of Bethlehem〉**74 秒（本批最短的一軌）**。CAA 封面掛在原盤 a5416080。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9d4daabd-c5f6-46d8-9289-6bfc4361e514&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4300 頁記「BST 84323 Duke Pearson - Merry Ole Soul **1969**」，**是兩場錄音**：(1) **1969 年 2 月 25 日、Van Gelder Studio**，Duke Pearson（piano, celeste）、Bob Cranshaw（bass）、Mickey Roker（drums）三重奏，只錄了母帶 3705 tk.4〈Sleigh Ride〉一首；(2) **1969 年 8 月 19 日、A&R Studios, NYC**，同三人**加上 Airto Moreira（percussion）**，錄了其餘八首（母帶 3706–3712、3725），其中 **〈O Little Town Of Bethlehem〉Pearson 只彈鋼琴、沒有打擊也沒有貝斯鼓（jazzdisco 標「piano #8」）**。⚠ **一張碟兩場、兩種編制、兩間錄音室，正文不得寫成一場**（第 635 條本批五張之一）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 3389282（1969 US BST 84323）的盤面名單：Duke Pearson＝Producer 兼 Piano, Celesta、Bob Cranshaw＝Bass、Mickey Roker＝Drums、**Airto Moreira＝Percussion**、**Frank Gauna＝Art Direction**、**Photo Media＝Cover Photo**、**Father Norman O'Connor＝Liner Notes**（「爵士神父」寫的內頁文案，配這張聖誕碟）、Rudy Van Gelder＝Recording By、All Disc 壓片。⚠ **Discogs 的錄音日期與 jazzdisco 差幾天**：條目寫「Van Gelder Studio 1969 年 **2 月 21 日**（A1）＋ A&R Studios 1969 年 **8 月 20 日**（A2–B5）」，jazzdisco 寫 **2 月 25 日／8 月 19 日**——**兩說相差 2～4 天，正文寫「1969 年 2 月與 8 月兩場」最安全**。",
+    "src": "https://api.discogs.com/releases/3389282"
+   },
+   {
+    "f": "**年份紙本三則、皆 1969 年底**：Billboard **1969-11-22** 的聖誕新碟欄；Billboard **1969-12-06** 第 153 頁「New Album Releases」欄「DUKE PEARSON -Merry Ole Soul Blue Note, BST 84323」；Cash Box **1969-12-20** 的評介「MERRY OLE SOUL — Duke Pearson — Blue Note BST 84323：Duke Pearson's piano and celeste work, aided by Bob Cranshaw's bass, Mickey Roker's drums and the percussion work of Airto Moreira, have resulted in a gently swinging, memorable jazz Christmas package」——**這則同時坐實了四人編制與「jazz Christmas package」的定位**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1969/CB-1969-12-20.pdf"
+   },
+   {
+    "f": "英文維基 infobox：released 1969、recorded **February 25 & August 19, 1969**（與 jazzdisco 同）、studio Van Gelder（⚠ **維基漏了 A&R Studios 那一場**）、genre Jazz／Christmas、producer **Duke Pearson**、label Blue Note。本張是 **Blue Note 目錄裡極少數的聖誕專輯**，也是 Pearson 1969 年三張領班盤的中間那張（前有 12 月錄的大樂團《Now Hear This》、後有 4／5 月錄的巴西企劃《How Insensitive》）。",
+    "src": "https://en.wikipedia.org/wiki/Merry_Ole_Soul"
+   },
+   {
+    "f": "店面（第 254 條，只寫觀察）：Apple us `lookup?id=1443872276&entity=song` 回 **9 軌＝原盤形**，掛名 `Duke Pearson`、盤名 `Merry Ole Soul`、copyright「℗ 1969 Blue Note Records」。**逐軌核**：Sleigh Ride 386 秒／Little Drummer Boy 343／Have Yourself a Merry Little Christmas 122／Jingle Bells 312／Santa Claus Is Coming To Town 249／Go Tell It On the Mountain 227／Wassail Song 184／Silent Night 256／O Little Town of Bethlehem 77——**九軌逐軌同序、軌長差 4 秒內**（Apple 第 2 軌少了定冠詞作「Little Drummer Boy」）。**串流採信 1443872276**；⚠ 2003 年日本 CD（TOCJ-9559）是 **10 軌**的擴充版，**比對一律只認原盤 9 軌**。",
+    "src": "https://itunes.apple.com/lookup?id=1443872276&entity=song&limit=60&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "Blue Note 目錄裡幾乎沒有聖誕碟，這是其中一張：Pearson 的鋼琴與鋼片琴、Bob Cranshaw 的貝斯、Mickey Roker 的鼓，第二場再加進 Airto Moreira 的打擊",
+   "九首裡最後一首〈O Little Town of Bethlehem〉只有 1 分 14 秒，Pearson 一個人彈完——整張碟就這樣收在一段獨奏上"
+  ],
+  "sound": "9 軌、約 36 分鐘的聖誕爵士：Duke Pearson 的鋼琴與鋼片琴為主，Bob Cranshaw 貝斯、Mickey Roker 鼓，八首裡再加上 Airto Moreira 的打擊。選的全是聖誕標準曲——〈Sleigh Ride〉〈The Little Drummer Boy〉〈Jingle Bells〉〈Silent Night〉〈Go Tell It on the Mountain〉〈Wassail Song〉。節奏一路壓在輕快的中板，最長的〈Sleigh Ride〉6 分 25 秒，最短的〈O Little Town of Bethlehem〉只有 1 分 14 秒、鋼琴獨奏收尾。兩場錄音：1969 年 2 月在 Van Gelder 錄了〈Sleigh Ride〉一首，8 月在紐約 A&R Studios 錄完其餘八首。",
+  "keyTracks": [
+   "Sleigh Ride",
+   "The Little Drummer Boy",
+   "Go Tell It on the Mountain"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（首發年），與卡單相同，**錄音年與首發年同年**。MB frd／jazzdisco 4300 頁／Discogs 美國原壓／維基／Apple ℗ 全 1969，紙本三則獨立坐實：Billboard 1969-11-22 聖誕欄、Billboard 1969-12-06「New Album Releases」、Cash Box 1969-12-20 評介。⚠ **錄音日期本身有兩說**（jazzdisco 2/25＋8/19 vs Discogs 盤面 2/21＋8/20），**但兩說都在 1969 年、不影響年份**；正文寫「1969 年 2 月與 8 月」即可。本層掃 Billboard／Cash Box 1968-11→1972 全段，1970 年後只在 Liberty/UA 在架目錄出現，無第二次上市跡象。",
+  "notes": "**錄音 1969-02（Van Gelder，只有〈Sleigh Ride〉）＋1969-08（A&R Studios，其餘八首）、首發 1969-11／12，卡單取 1969。**｜⚠ **一張碟兩場、兩間錄音室、兩種編制**（第 635 條）：**Airto Moreira 只在 A&R 那一場**，〈O Little Town of Bethlehem〉更只有 Pearson 一個人——**正文不得寫成一場錄完**。｜⚠ **錄音日兩說**：jazzdisco 2/25＋8/19 vs Discogs 盤面 2/21＋8/20；維基跟 jazzdisco 但漏了 A&R 那一場。｜**製作 Duke Pearson 本人**，美術指導 Frank Gauna，封面照掛 **Photo Media**（公司不是個人），內頁文案 **Father Norman O'Connor**（「爵士神父」）。｜⚠ **MB 的 secondary-types 空**——這張是聖誕碟但 MB 沒標，卡上若有節慶標籤要人工補。｜⚠ **原盤 9 軌／2003 日本 CD 10 軌**，比對只認 9 軌。｜⚠ **同批跨卡互指**：Airto Moreira 三處（本張／《How Insensitive》／《Electric Byrd》）、Mickey Roker 六處、Bob Cranshaw 三處——**寫節奏組務必分場**；Pearson 本批五處（三張領班盤形狀各不相同，正文不得互抄）。｜**榜位**：Billboard 爵士／Soul 榜 1968-11→1972 全段掃過，**本張無榜位**。"
+ },
+ {
+  "key": "desc2:Blue Mitchell|Bantu Village",
+  "artist": "Blue Mitchell",
+  "album": "Bantu Village",
+  "facts": [
+   {
+    "f": "release-group 1ff7fe45 的欄位：title「Bantu Village」、artist-credit 單一 Person `Blue Mitchell`（ee287f2c）、first-release-date 1969、primary-type Album、secondary-types 空、轄下**只有兩筆**：原盤 17ed2bdc（1969 US Official、Blue Note BST 84324、12 吋 7 軌）與 **2011-07-18 GB CD 6a18320c（Soul Brother Records CD SBCS 47，5013993574729，7 軌）**——**1969 到 2011 之間 MB 一片空白**。原 LP 七軌與軌長：〈Hnic〉317 秒、〈Flat Backing〉258、〈Na Ta Ka〉248、〈Heads Down〉320、〈Bantu Village〉227、〈Blue Dashiki〉291、〈Bush Girl〉180。⚠ **CAA 的封面掛在 2011 年英國 Soul Brother CD 6a18320c（8 圖、front 1），不是原盤**——研究層看版式。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1ff7fe45-606d-3375-8c43-e856455a254d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4300 頁記「BST 84324 Blue Mitchell - Bantu Village **1969**」，**兩場、在洛杉磯錄**（本批唯一不在東岸的兩張之一）：(1) **1969 年 5 月 22 日、RPM International Studios, Los Angeles**——Bobby Bryant／Blue Mitchell（trumpet）、Charlie Loper（trombone）、Buddy Collette（flute）、Bill Green（alto sax, flute）、**Plas Johnson（tenor sax，《粉紅豹》主題那位）**、Dee Ervin（piano, percussion）、**Monk Higgins（piano, percussion, arranger, conductor）**、Fred Robinson／Al Vescovo（guitar）、Bob West（electric bass）、John Guerin（drums）、Alan Estes（conga）；(2) **5 月 23 日**同編制但 **Wilton Felder（electric bass，Crusaders 的）／Paul Humphrey（drums）／King Ellison（conga）換掉 West／Guerin／Estes**。母帶序 4779/80 與 5166–5171。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 1213824（1969 US BST 84324）的盤面名單與**製作歸屬**：**Producer [Produced By]＝Wally Roker & Associates**（外製公司）、**Monk Higgins＝Arranged By 兼 Conductor 兼 Percussion, Piano**、Jim Saunders＝Engineer、**Frank Gauna＝Art Direction**、Recorded At＝**Master Sounds**（⚠ **與 jazzdisco 的 RPM International Studios 兩說**）、Published By 含 **Wally Roker Music**、Record Company＝Liberty Records, Inc.、All Disc 壓片、盤標「Blue & white 『Blue Note Records, A Division of Liberty Records, Inc.』」。條目註記「Recorded May 22 & 23, 1969」。⚠ **runout 有錯刻**：A 面刻成「BNST **84324**-A」但另一組刻「BNST 84324-1 114」與「BST 84324-2 114」，同一張盤面上三種寫法。",
+    "src": "https://api.discogs.com/releases/1213824"
+   },
+   {
+    "f": "**年份紙本**：Billboard **1969-12-06** 第 153 頁「New Album Releases」欄「BLUE MITCHELL -Bantu Village Blue Note, BST 84324」，與同批《Merry Ole Soul》登在同一欄同一頁——**兩張一起進新片欄，互相佐證 1969 年底上市**。本層掃 Billboard／Cash Box 1968-11→1972 全段，**本張只有這一次命中**，1970 年後查無痕跡。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-12-06.pdf"
+   },
+   {
+    "f": "英文維基 infobox：released **September 16, 1969**、recorded **May 22–23, 1969**、studio 欄空、genre Jazz、label Blue Note、**producer 欄留空**。⚠ **維基那個 1969-09-16 的日期沒有引註**，而 **Apple 的 releaseDate 剛好也是 1969-09-16**——**兩者同源機率高，依第 431 條不得當兩個獨立來源**；紙本的新片欄在 12 月，兩者差近三個月。本張是 Mitchell 替 Blue Note 錄的第六張，也是他 1969–70 年「外製、洛杉磯棚、soul jazz 編曲」那一批的代表。",
+    "src": "https://en.wikipedia.org/wiki/Bantu_Village"
+   },
+   {
+    "f": "店面（第 254 條，只寫觀察）：Apple us `lookup?id=1436246997&entity=song` 回 **7 軌＝原盤形**，掛名 `Blue Mitchell`、盤名 `Bantu Village`、copyright「A Blue Note Records Release; ℗ 1969 Capitol Records, LLC」、**releaseDate 1969-09-16＝維基那個沒有引註的日期**（第 431 條）。**逐軌核**：H.N.I.C. 320 秒／Flat Backing 261／Na Ta Ka 239／Heads Down 322／Bantu Village 229／Blue Dashiki 293／Bush Girl 184——**七軌逐軌同序、軌長差 9 秒內**；⚠ 第 1 軌 Apple 與盤面作「**H.N.I.C.**」、MB 登成「Hnic」（**MB 這筆軌名把縮寫的點吃掉了**）。**串流採信 1436246997。**",
+    "src": "https://itunes.apple.com/lookup?id=1436246997&entity=song&limit=60&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "1969 年 5 月，Blue Mitchell 沒有去 Van Gelder 的錄音室，而是在洛杉磯錄了這張：編曲、指揮、彈鋼琴的是 Monk Higgins，製作掛的是外面的公司 Wally Roker & Associates",
+   "兩天錄音換了整組節奏組——第二天 Wilton Felder 的電貝斯、Paul Humphrey 的鼓、King Ellison 的康加接手，同一張碟因此有兩種底"
+  ],
+  "sound": "7 軌、約 30 分鐘的洛杉磯 soul jazz：Blue Mitchell 與 Bobby Bryant 兩支小號、Charlie Loper 長號，木管是 Buddy Collette 的長笛、Bill Green 的中音與長笛、Plas Johnson 的次中音；Monk Higgins 編曲、指揮兼彈鋼琴與打擊，兩把吉他（Fred Robinson、Al Vescovo）、電貝斯與康加把節奏壓得很重。兩天錄音換了整組節奏組：5 月 22 日是 Bob West／John Guerin／Alan Estes，23 日換成 Wilton Felder／Paul Humphrey／King Ellison。最長的〈Hnic〉5 分 17 秒，最短的〈Bush Girl〉3 分整。",
+  "keyTracks": [
+   "Bantu Village",
+   "Blue Dashiki",
+   "Flat Backing"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（首發年），與卡單相同，**錄音年與首發年同年**（1969-05-22／23 錄）。MB frd／jazzdisco 4300 頁／Discogs 美德日壓片群／維基／Apple ℗ 全 1969，紙本一則：Billboard **1969-12-06**「New Album Releases」。⚠ **上市月份有兩說**：維基寫 1969-09-16（**無引註**）、Apple 的 releaseDate 也是 1969-09-16（**與維基同源機率高，第 431 條不得當第二個獨立來源**），但紙本的新片欄在 **12 月 6 日**；**年份不受影響，正文只寫 1969、不要寫月份**。本層掃 Billboard／Cash Box 1968-11→1972 全段，本張僅此一次命中。",
+  "notes": "**錄音 1969-05-22／23、首發 1969，卡單取 1969。**｜⚠ **監製不是 Blue Note 自家人**：Discogs 盤面掛 **Wally Roker & Associates**（外製公司），**Monk Higgins 是編曲、指揮兼鍵盤與打擊，不是製作人**；維基 producer 欄留空——**正文要寫清楚 Higgins 的角色是編曲／指揮**。｜⚠ **錄音室兩說**：jazzdisco 寫 **RPM International Studios, Los Angeles**、Discogs 盤面寫 **Master Sounds**；**兩者都在洛杉磯**，正文寫「洛杉磯」最安全。**本批只有兩張不在東岸錄（本張與《Worth Waiting For...》），另有一張在倫敦（《To Seek a New Home》）。**｜⚠ **一張碟兩場、節奏組整組換人**（第 635 條），正文不得寫成一組人。｜**封面**：CAA 有 front，**但來源是 2011 年英國 Soul Brother Records CD 6a18320c、不是原盤**——研究層看版式；原壓封面見 Discogs `r1213824`（images[0]）與 `r7908587`。｜⚠ **MB 軌名 `Hnic` 少了縮寫點**（盤面與 Apple 都是 `H.N.I.C.`）。｜**掛名**：MB 與池中皆 `Blue Mitchell`（Person ee287f2c），池中 seed 4／未上傳批次 3。｜**榜位**：Billboard 爵士／Soul 榜 1968-11→1972 全段掃過，**本張無榜位**。"
+ },
+ {
+  "key": "desc2:Elvin Jones|Poly-Currents",
+  "artist": "Elvin Jones",
+  "album": "Poly-Currents",
+  "facts": [
+   {
+    "f": "release-group 1c3b0b7c 的欄位：title「Poly-Currents」（**ASCII U+002D 連字號**）、artist-credit 單一 Person `Elvin Jones`（d5ac66e4）、**first-release-date 1969（錯，實為 1970，見 yearVerified）**、primary-type Album、secondary-types 空、轄下四筆：**原盤 119ff6ee（登 1969 US Official、Blue Note BST 84331、12 吋 5 軌——release 的 date 也一起錯）**、1988 US 6e92748a（CDP 7 84331 2，077778433125，**MB 把載體登成 CD-R，應為 CD**）、2024-01-05 Tone Poet 黑膠 08b27c90（BST-84331、602445262168）、2024-05-22 JP HQCD b068644d（UCCQ-9684）。原 LP 五軌與軌長：〈Agenda〉**835 秒（13 分 55 秒，本批最長的一軌）**、〈Agappe Love〉348、〈Mr. Jones〉454、〈Yes〉**140 秒**、〈Whew〉567。CAA 封面掛在原盤 119ff6ee（4 圖、front 1）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1c3b0b7c-6707-463f-817f-02b1cbffe362&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4300 頁記「BST 84331 Elvin Jones - Poly-Currents **1970**」（**與 MB 的 1969 不同，jazzdisco 對**），場次 **1969 年 9 月 26 日、Van Gelder Studio, Englewood Cliffs, NJ**，**編制逐軌不同**：Fred Tompkins（flute，**只在第 2 首**）、George Coleman（tenor sax #1,3-5）、**Joe Farrell（tenor sax, flute, English horn, bass flute——全碟都在，且一人吹四種管）**、Pepper Adams（baritone sax #1,3,5）、Wilbur Little（bass）、Elvin Jones（drums）、**Candido（conga #1,3,5）**。⚠ **本碟沒有鋼琴**——低音提琴、鼓、康加加上三到四支管，是 Elvin Jones 1968–70 年那套「無鋼琴」編制。母帶序 5210–5214（錄音序 Mr. Jones／Yes／Agappe Love／Whew／Agenda，**與盤面曲序不同**）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 3992317（**標 1970** US BST 84331）的盤面名單：**Francis Wolff＝Produced By**、Rudy Van Gelder＝Recording By 兼 Lacquer Cut By、**Bob Venosa＝Cover Design、Havona＝Design [Cover]**（⚠ **Forlenza Venosa Associates 接手 Reid Miles 之後的 Blue Note 封面**，本批另有《Lift Every Voice》《Multidirection》同樣掛 Venosa／Havona）、**Frank Gauna＝Art Direction**、**Leonard Feather＝Liner Notes**、Published By 含 Unart Music Corp. 與 **Junito Publishing Company**。條目註記「Recorded September 26, 1969」、盤標「Blue and white Blue Note Records - A Division of Liberty Records, Inc.」、runout 有 VAN GELDER 戳。**`catno=BST 84331` 的美國原壓 3992317 與德／法／英／日壓片全標 1970**，1971 年美國再壓 9537723／2930141。",
+    "src": "https://api.discogs.com/releases/3992317"
+   },
+   {
+    "f": "**年份改判 1969→1970 的紙本（本層獨立覆核，三則）**：(1) Cash Box **1970-05-02** 的評介「POLY-CURRENTS — Elvin Jones — Blue Note BST 84331：Adding more saxophone to the basic drum sound which catapulted him to the forefront among the jazzmen of today, Elvin Jones and his group emerge victorious in an excellent LP which lives up to its name」；(2) Billboard **1970-05-02** 的爵士評介（**兩刊同週但文字完全不同，是兩則獨立稿，不是第 509c／431 條的同一則**）；(3) Billboard **1970-06-06** 的「New Album Releases」欄「ELVIS JONES-Poly-Currents Blue [Note] ... 31」（⚠ **OCR 把 ELVIN 印成 ELVIS、把 84331 截成 31**，靠盤名定位）。另 Cash Box **1970-08-08** 與 **1971-01-23**、**1971-07-31** 的 Liberty/UA 在架目錄都列了 BST-84331。**本層掃 1968-11→1972 全段，1969 年查無本張任何評介、新片欄或廣告。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1970/CB-1970-05-02.pdf"
+   },
+   {
+    "f": "英文維基 infobox：released **June 1970**（引 Billboard 1970-06-06）、recorded **September 26, 1969**、studio Van Gelder、genre Jazz、length 39:16、label Blue Note BST 84331、**producer Francis Wolff**。內文另記 Harvey Pekar 在當期 *DownBeat* 給了四星，AllMusic 的 Scott Yanow 稱它「advanced modal hard bop with all of the musicians playing in top form」。**本張的前一張是 1968 年的《The Ultimate》、下一張是 1970 年的《Coalition》**（《Coalition》BST 84361 是 Cash Box 1971-02-13 列的二月檔期五張之一，**池中未收、後批要查**）。",
+    "src": "https://en.wikipedia.org/wiki/Poly-Currents"
+   },
+   {
+    "f": "店面（第 254 條，只寫觀察）：Apple us `lookup?id=1444204534&entity=song` 回 **5 軌＝原盤形**，掛名 `Elvin Jones`、盤名 `Poly-Currents`、copyright「℗ **2015** Blue Note Records」（**跟的是 2015 再發**），**releaseDate 1969-01-01——沿用了 MB／資料庫那個錯年，卡上是 1970**。**逐軌核**：Agenda 831 秒／Agappe Love 355／Mr. Jones 458／Yes 144／Whew 574——**五軌逐軌同序、軌長差 7 秒內**。**串流採信 1444204534。**",
+    "src": "https://itunes.apple.com/lookup?id=1444204534&entity=song&limit=60&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟沒有鋼琴：低音提琴、鼓、康加，加上三到四支管——Joe Farrell 一個人就吹了次中音、長笛、英國管和低音長笛",
+   "開場的〈Agenda〉將近十四分鐘，是這批 Blue Note 裡最長的一軌；收在 2 分 20 秒的〈Yes〉，兩端差了六倍"
+  ],
+  "sound": "5 軌、約 39 分 16 秒的無鋼琴編制：Elvin Jones 的鼓在中央，Wilbur Little 的低音提琴與 Candido 的康加（只在三首）撐底，管樂是 Joe Farrell（次中音、長笛、英國管、低音長笛）、George Coleman（次中音，四首）、Pepper Adams（上低音，三首）、Fred Tompkins（長笛，只在〈Agappe Love〉）。編制逐軌不同，最長的〈Agenda〉13 分 55 秒、最短的〈Yes〉2 分 20 秒。1969 年 9 月 26 日在 Van Gelder 一次錄完，Francis Wolff 製作、Rudy Van Gelder 錄音。",
+  "keyTracks": [
+   "Agenda",
+   "Mr. Jones",
+   "Whew"
+  ],
+  "status": "full",
+  "yearVerified": "**改判成立：1970（首發年），與卡單相同；MB 的 1969 是錯的。**本層獨立覆核策展層第 631 條的改判，結論相同且再加一則。**1969 說只有 MB**（frd 與原盤 release 的 date 一起錯，第 638 條第 2 點「frd＝錄音年」）；**1970 說有五方**：jazzdisco 4300 頁 1970、Discogs 美德法英日原壓群全 1970、維基 **June 1970**（引 Billboard 1970-06-06）、以及**兩刊三則獨立紙本**——Cash Box **1970-05-02** 評介、Billboard **1970-05-02** 評介（**同週兩刊但文字完全不同，是兩則獨立稿**）、Billboard **1970-06-06**「New Album Releases」。**缺席即證據**：本層掃 Billboard／Cash Box 1968-11→1972 共三份重疊檔案，**1969 年零命中**。判準走第 612 條的次一層（評論欄＞Discogs 原壓群＞MB 欄位）＋c-141 b 第 581 條方法論 1（**1969-09-26 錄，1969 年內出版時間不夠**）。⚠ **錄音年 1969、首發年 1970，正文要分清楚。**",
+  "notes": "**錄音 1969-09-26、首發 1970（跨年），卡單取首發年 1970；MB frd 1969 是錯的，原盤 release 的 date 也一起錯。**｜**製作 Francis Wolff**（維基＋Discogs 盤面一致），錄音／刻片 Rudy Van Gelder，**封面設計 Bob Venosa／Havona、美術指導 Frank Gauna、內頁文案 Leonard Feather**——**Venosa 就是 Reid Miles 離開後接手 Blue Note 封面的 Forlenza Venosa Associates 那一線**，本批另有《Lift Every Voice》《Multidirection》同樣掛他。｜⚠ **本碟沒有鋼琴**，正文不要寫成常規四重奏；**編制逐軌不同**（Fred Tompkins 只在〈Agappe Love〉、Pepper Adams 與 Candido 只在三首）。｜⚠ **同批跨卡互指（第 635 條）**：**Candido 在本張打康加（1969-09-26）↔ 同批《Thousand Finger Man》是他自己的領班盤（1969-09-04／09）——兩場只差三週，正文不得寫成同一批 session**；**Elvin Jones 在《Black Rhythm Happening》打鼓（1969-05-02）**；Pepper Adams 本批三處。｜⚠ **MB 資料坑**：1988 年那筆 6e92748a 載體登成 **CD-R**（應為 CD）。｜⚠ **盤名寫法**：正確是 `Poly-Currents`（ASCII 連字號），Cash Box 印成「POLY-CURRENTS」、Discogs 部分條目寫「Poly Currents」「Poly -Currents」。｜**後批**：Elvin Jones《Coalition》BST 84361（1971）是 Cash Box 1971-02-13 列的二月檔期五張之一，**池中未收**。｜**榜位**：Billboard 爵士／Soul 榜 1968-11→1972 全段掃過，**本張無榜位**。"
  }
 ]

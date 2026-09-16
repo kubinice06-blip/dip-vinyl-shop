@@ -174,7 +174,7 @@
    },
    {
     "f": "MB 的 Larry Young 同字串另有兩個實體（民謠的 e1506503、新英格蘭歌手 a522abff），**本卡與池中五張都是 81971abd（US jazz organist，1940–1978）**；本盤的 George Benson 此時二十五歲、離他自己在 Verve 與 A&M 的翻身還有幾年，**Larry Young 本人則在錄完本盤後不到一年就去了 Tony Williams 的 Lifetime**（1969 年《Emergency!》）。",
-    "src": "https://musicbrainz.org/ws/2/artist/81971abd-4235-4b23-9b8c-1f1f0b18e7f0?inc=aliases&fmt=json"
+    "src": "https://musicbrainz.org/ws/2/artist?query=artist%3A%22Larry+Young%22&fmt=json&limit=25"
    }
   ],
   "hookCandidates": [
@@ -718,5 +718,245 @@
   "status": "full",
   "yearVerified": "**覆核策展層的 1969→1970 改判：成立，而且連廠牌名一起改對了。** **MB 的 cd7bc624 登「1969 US Pacific Jazz ST-20172」——年份與廠牌名都錯**；另一邊是 **Discogs 八筆美加原壓全部作「1970 World Pacific Jazz」**、**Billboard 1970-05-30 Jazz 評論欄原文就印「World Pacific Jazz ST-20172」**、**維基 infobox「May 25, 1970」（與評論週只差五天）**、**Billboard 1970-09-12 大學電台回報欄再提一次**。四條對一條——**1970 成立**，上市月取 **1970 年 5 月**。⚠ **本張不是 Blue Note 原盤**（第 602 條走判準表 (b)：1970 年 World Pacific 與 Blue Note 同屬 Liberty/UA，`label` 寫 World Pacific Jazz），**Blue Note 只有 1993 年三筆 CD**；**主線若日後把判準收緊到「該張本身 1985 前有沒有 BN 號」，本張要與 c-141 的 Pacific Jazz 三張一起退**（第 613 條，可逆）。⚠ 錄音 1969-10-06／07 到上市約七個半月。",
   "notes": "**覆核策展層：rgMbid c992e5f4／原盤 cd7bc624／ST-20172／6 軌／掛名 `Jean-Luc Ponty`／年份 1970／`label` 寫 World Pacific Jazz 全部成立，本張未擋下。** 本層補上 **Billboard 1969-04-12 的 World Pacific 企劃報導**（Dick Bock 把 Ponty 帶到美國、《Electric Connection》排在 5 月）與 **1970-09-12 的電台回報**，兩條都是策展層沒有的。｜⚠ **掛名**：MB 的 Person 44cd4e2e 名字與 credit **都含 U+2010 連字號**，卡上依第 473／506 條摺成 ASCII 的 **`Jean-Luc Ponty`（新掛名，池中三種寫法全 0 張）**——**寫作層一律用 ASCII 連字號**。｜⚠ **盤名取短名**：MB RG title 與 1970 美國原盤盤面都是「King Kong」，全名「King Kong: Jean-Luc Ponty Plays the Music of Frank Zappa」是副標（英國 Liberty LBS 83375、Discogs 與 Apple 用全名）——**依第 45 條取現行流通名，全名進 queryAlias**。｜⚠ **搜尋汙染本組最嚴重**（第 606 條）：Zappa 自己的〈King Kong〉、電影原聲、Mothers 現場——**查詢一律帶 Ponty 或 Zappa**。｜**製作人 Richard Bock（＝Dick Bock，World Pacific 總經理）、美術指導與設計 Ron Wolin、編曲 Frank Zappa、指揮 Ian Underwood、錄音師 Dick Kunc**（Discogs 1064387＋維基）。｜⚠ **MB 坑**：英國 Liberty LBS 83375 **兩筆重複建檔**（a249f51f／f1eac64a，第 607 條第 5 點）。｜**跨卡**：本組沒有第二張 Ponty；**George Duke 在同一版 Billboard 1970-07-18 檔期廣告裡有自己的 LST-11004《Save The Country》，但那不是本批的卡**。｜**串流採信 724662852**（us，6 軌逐軌同序同長，全部有試聽）——**本張的試聽缺口本層已補上**。**CAA front 出自原盤 cd7bc624。**｜非選輯：兩天錄完的單一企劃。"
+ },
+ {
+  "key": "desc2:The Three Sounds|Soul Symphony",
+  "artist": "The Three Sounds",
+  "album": "Soul Symphony",
+  "facts": [
+   {
+    "f": "release-group 02cf556d 的欄位：title「Soul Symphony」、artist-credit「The Three Sounds」（群組 cf2115e9，US），**first-release-date 1969-09-01——本組唯一帶完整月日的 RG，但那個日期是最後一場錄音後的第四天**，primary-type Album、secondary-types 空、轄下 2 筆。原盤 1759c79e 登 **1969-09-01 US Blue Note BST 84341、12 吋 5 軌、無 barcode**，軌序與軌長：**Soul Symphony（1565s，二十六分鐘，整整一面）**／Repeat After Me（405s）／Upper Four Hundred（243s）／Popsicle Pimp（175s）／Black Sugar（255s）；另一筆 f393b4e5 是 2008-09-02 US CD（Blue Note 50999 5 22384 2 0）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=02cf556d-ebbe-31bc-82f6-97037e2dbffb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4300 系列目錄頁把本盤登成「**A New Sound From The Three Sounds - Soul Symphony**」，拆成**兩場**（皆 Liberty Studios, Los Angeles）：**1969-08-26**——Gene Harris（鋼琴）、**Henry Franklin（貝斯）、Carl Burnett（鼓）**，加 David Duke（法國號）、Buddy Collette（長笛、中音長笛）、Fred Robinson（吉他）、Alan Estes（打擊）、**由 Sid Sharp 領銜的不具名弦樂組**、**Monk Higgins（作曲、編曲、指揮）**，母帶號 5087–5090：Repeat After Me／Upper Four Hundred／Popsicle Pimp／Black Sugar；**1969-08-28**——弦樂改由 James Getzoff 領銜、法國號加 Art Maebe，**並疊錄 Specialties Unlimited 的和聲人聲（Alex Brown、Mamie Galore、Clydie King）**，母帶號 5086：Soul Symphony。**那首二十六分鐘的標題曲是第二場單獨錄的。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1970 年 7 月 18 日的 Liberty/UA 整版檔期廣告（第 612 條的原始出處，本層原文覆核）**：標題「Liberty/UA, Inc. presents a solid Jazz program for July & August」，版面上印著「**SOUL SYMPHONY　A NEW SOUND FROM THE THREE SOUNDS　BST-84341**」，與 **BST-84335**（Lee Morgan《The Sixth Sense》）、BST-84342／3／4、LST-11004／5／6 並列，註明「Available on album, cartridge & cassette」，落款「Liberty/UA, Inc., An Entertainment Service of Transamerica Corporation」。**Cash Box 1970-07-18 同一週登了同一版廣告**（版面上可見「SOUL SYMPHONY A NEW SOUND FROM THE THREE SOUNDS　BLUE NOTE BST-84341*」）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-07-18.pdf"
+   },
+   {
+    "f": "**Billboard 1970 年 7 月 25 日的 Jazz 評論欄**：「THREE SOUNDS SOUL SYMPHONY—Blue Note BST 84341　A fantastic collage of sound…the trio can be heard as one…the individual cuts…backed by an orchestra throughout most of the album, the Three Sounds demonstrate basic jazz technique with an influx of light and appropriate sound throughout.」（掃描破損，內容以可辨讀處為準）；**Billboard 1970 年 8 月 8 日的新片列表**再列「THREE SOUNDS-Soul Symphony (Blue Note) BST 84341」。**檔期廣告（7/18）→評論欄（7/25）→新片列表（8/8）三週連續。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-07-25.pdf"
+   },
+   {
+    "f": "**Billboard「Best-Selling Jazz LP's」榜（本層新找到的一條，也是本張年份最硬的證據）**：**1970 年 10 月 31 日那期以第 15 名新進榜**（「15 — SOUL SYMPHONY　Three Sounds, Blue Note BST 84341」，前一週欄是「—」），**1970 年 11 月 7 日那期仍是第 15 名、榜列自印「第 2 週」**（「15 15 SOUL SYMPHONY 2　Three Sounds, Blue Note BST 84341」）。**第 58x 條：一張碟不可能在上市隔年才以第 1／2 週進榜——這條把 1969 年的說法徹底排除。**同榜同期還有 Lou Donaldson《Everything I Play Is Funky》BST 84337。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-11-07.pdf"
+   },
+   {
+    "f": "Discogs release 4434135（美國原壓）：盤面「Black and Blue label with Liberty UA Inc. Los Angeles California」，**作曲、編曲、指揮 Monk Higgins**（另一位作曲者 Dee Ervin），鋼琴 Gene Harris、貝斯 Henry Franklin、鼓 Carl Burnett、法國號 David Duke、木管 Buddy Collette、吉他 **Freddie Robinson**、打擊 Alan Estes、**弦樂首席 Sidney Sharp**、人聲 Alex Brown／Clydie King／Mamie Galore。⚠ `database/search?catno=BST 84341` 的四筆（177750 master／4434135／10100377、德國 2246399）**全部標 1969——整群早一年**（第 550／553 條），**與廠牌自家 1970 年 7 月的檔期廣告和 1970 年 10 月的榜位直接矛盾**。",
+    "src": "https://api.discogs.com/releases/4434135"
+   },
+   {
+    "f": "**串流採信 716184995**：iTunes `lookup?id=716184995&entity=song` 回 5 軌，**逐軌與 MB 原盤 1759c79e 同序**——Soul Symphony 1553s／Repeat After Me 402s／Upper Four Hundred 242s／Popsicle Pimp 175s／Black Sugar 256s（MB：1565／405／243／175／255），**5 軌全部有 previewUrl**；店面掛名寫「The Three Sounds」，與卡上一致。⚠ **releaseDate 標 1969-09-01，與 MB frd 完全相同、疑似同源**（第 431 條，第 601 條方法論 6 已記）——**不得當第二個獨立來源**。⚠ **本張 CAA 404，但這個店面條目有封面圖**（`artworkUrl100` 指向 `…/05099952238352.jpg`，把尾段改成 `1400x1400bb.jpg` 可取大圖），**那是 2008 年美國 CD 的版式、不是 1970 年原壓**。",
+    "src": "https://itunes.apple.com/lookup?id=716184995&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "A 面只有一首曲子：二十六分鐘的〈Soul Symphony〉，Monk Higgins 寫的、編的、指揮的，還疊上了 Clydie King 那組和聲——B 面才回到四首三分鐘的放克",
+   "1970 年 7 月 Liberty/UA 在 Billboard 買了一整版廣告把它排進暑期檔，十月它爬上爵士榜第 15 名；MB 與 Discogs 卻都還把它記成 1969 年的碟"
+  ],
+  "sound": "5 軌，管弦樂包住鋼琴三重奏的 soul jazz：Gene Harris 的鋼琴、Henry Franklin 的貝斯、Carl Burnett 的鼓為核心，外圈是 Monk Higgins 寫並指揮的編制——David Duke 的法國號、Buddy Collette 的長笛、Freddie Robinson 的吉他、Alan Estes 的打擊、Sidney Sharp 領的弦樂組，標題曲還疊了三位女聲的和聲。〈Soul Symphony〉一首佔掉整整一面二十六分鐘，另外四軌全在三到七分鐘。串流條目與原盤同序。",
+  "keyTracks": [
+   "Soul Symphony",
+   "Black Sugar",
+   "Popsicle Pimp"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1969→1970 改判：成立，而且本層另外找到一條比檔期廣告更硬的證據——榜位。** **MB frd 1969-09-01（原盤 release 的 date 也是它）、jazzdisco 1969、Discogs 四筆原壓全 1969——三邊一致地早一年**；但 **Billboard 1970-07-18 與 Cash Box 1970-07-18 的 Liberty/UA 整版檔期廣告把 BST-84341 逐號印進七、八月檔期**（第 612 條最上位證據），**Billboard 1970-07-25 有 Jazz 評論欄**、**1970-08-08 有新片列表**，**最硬的是 Billboard 爵士榜：1970-10-31 以第 15 名新進榜、1970-11-07 第 15 名且榜列自印「第 2 週」**（第 58x 條）。**六條壓三條——1970 成立**，上市月取 **1970 年 7 月**。⚠ **MB 的 1969-09-01 不是上市日，是 1969-08-28 最後一場錄音後的第四天**——這是「把錄音檔期四捨五入成發行日」的典型（第 577 條族）；**Apple 的 releaseDate 與它一字不差，疑似同源，不能當第二個來源**（第 431 條）。",
+  "notes": "**覆核策展層：rgMbid 02cf556d／原盤 1759c79e／BST 84341／5 軌／掛名 `The Three Sounds`／年份 1970 全部成立，本張未擋下。** 本層新增 **Billboard 爵士榜 1970-10-31 新進、11-07 第 2 週的榜位**（策展層只有檔期廣告與評論欄）——**這是本組第二張能用榜位定年的碟**。｜⚠ **掛名**：**盤面與 jazzdisco 作「A New Sound From The Three Sounds」、Billboard 那版廣告也照印**，卡上依第 307 條照池中多數收攏成 **`The Three Sounds`**（c-141 b 第 589 條已預告）——**正文可以提盤面那個長名，但不得拿它當掛名**。｜**作曲、編曲、指揮 Monk Higgins**（另一作曲者 Dee Ervin）、**弦樂首席 Sidney Sharp（8/26 場）／James Getzoff（8/28 場）**、**和聲 Specialties Unlimited：Alex Brown、Mamie Galore、Clydie King**（jazzdisco＋Discogs 雙背書）。⚠ **Discogs 寫「Freddie Robinson」、jazzdisco 寫「Fred Robinson」——同一人，通行寫法 Freddie Robinson。**⚠ **維基 infobox 的製作人欄寫 Monk Higgins／Dee Ervin，但 Discogs 原壓沒有 producer 欄**——**正文提製作時照 Monk Higgins 的「作曲編曲指揮」寫，比較保險**。｜⚠ **本組三個封面缺口之一**：**CAA 在 RG 與 release 兩層都是 404**（本層對原盤 1759c79e 與 2008 CD f393b4e5 各驗過一次，都 404）。**封面替代圖來源（給主線）**：(1) **Apple 條目 716184995 的 artwork**（`artworkUrl100` → 改成 `1400x1400bb.jpg`，**2008 年美國 CD 版式**）；(2) **Discogs 1969／1970 美國原壓 master 177750、r4434135、r10100377**（有 4 張圖）、**德國壓片 r2246399**；(3) **2008 年美國 CD 的 Discogs 條目 r1564227／r16757634、歐洲 r7655343**。**優先取 Discogs 原壓那一群，版式才是 1970 年的黑膠。**｜**跨卡**：**Monk Higgins 在同批《Collision in Black》（1968-09）是製作兼編曲兼多樂器，那是完全不同的一支樂團**（第 606 條第 2 點）；**The Three Sounds 在本線共三處**——本張、同批《Coldwater Flat》（1968-04，Oliver Nelson 編曲、Simpkins／Bailey）、c-141 b《Elegant Soul》（1968-09，Van Gelder）——**三張的節奏組與編曲者全不同，正文不得互抄**（第 606 條第 8 點）。｜**串流採信 716184995**（us，5 軌逐軌同序，全部有試聽）。**有固定試聽來源；封面要走替代圖。**｜非選輯：兩場同企劃的錄音室盤。"
+ },
+ {
+  "key": "desc2:Big John Patton|Accent on the Blues",
+  "artist": "Big John Patton",
+  "album": "Accent on the Blues",
+  "facts": [
+   {
+    "f": "release-group cb96d312 的欄位：title「Accent on the Blues」、**artist-credit「John Patton」**（Person b76182c3，US），**first-release-date 1969**（與 Billboard 的 1970 不符，本層不改 MB），primary-type Album、secondary-types 空、轄下 3 筆。原盤 fb05755f 是 **US Blue Note BST 84340、12 吋 6 軌、無 barcode**，軌序與軌長：Rakin' and Scrapin'（605s）／Freedom Jazz Dance（284s）／Captain Nasty（306s）／Village Lee（441s）／Lite Hit（381s）／Don't Let Me Lose This Dream（416s）；另兩筆是 **1997 XE CD（CDP 7243 8 53924 2 9，10 軌）** 與 1997 US 黑膠再壓（Blue Note 53924，6 軌，軌序與原盤相同）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cb96d312-6ecd-49f1-bfe7-acafc4e7081e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4300 系列目錄頁的 BST 84340 區塊：**一場錄完，Van Gelder Studio, Englewood Cliffs, NJ, 1969 年 8 月 15 日**，四重奏 **Marvin Cabell（次中音、長笛、saxello）、John Patton（電風琴）、James Ulmer（吉他）、Leroy Williams（鼓）**，母帶號 4992–4997：tk.11 Lite Hit／tk.21 Freedom Jazz Dance／tk.23 Captain Nasty／tk.27 Don't Let Me Lose This Dream／tk.31 Rakin' And Scrapin'／tk.34 Village Lee。同頁註記後收進 1997 年的 B1-53924／CDP 7243 8 53924 2 9。**吉他的「James Ulmer」就是後來的 James Blood Ulmer——Discogs 原壓直接把他登成 James Blood Ulmer。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1970 年 6 月 20 日的四星 Jazz 評論欄（本層新找到的一條，策展層沒有）**：「JAZZ ****　McCOY TYNER—Expansions. Blue Note BST 84338 (S)／**JOHN PATTON—Accent on the Blues. Blue Note**（目錄號掃描成「EST 61540」，OCR 破損）／KENNY COX & THE CONTEMPORARY JAZZ QUINTET—Multidirection, Blue Note BST 84329（**原文誤植，該盤實為 84339**）」——**同一欄三張全是 Blue Note，靠盤名與人名交叉定位；本張的評論週因此從策展層的「1970-07-04 新片欄」往前推到 1970 年 6 月中。**⚠ 這一則同時是第 509c 條的實例（**一欄裡就有兩個目錄號被印錯**）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-06-20.pdf"
+   },
+   {
+    "f": "**Billboard 1970 年 7 月 4 日的新片列表**：「JOHN PATTON -Accent on the Blues (Blue Note) BST 84340」（掃描把盤名讀成「Assent on the Blues」）。**評論欄（6 月中）→新片列表（7 月初），兩則都在 1970 年。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-07-04.pdf"
+   },
+   {
+    "f": "Discogs release 1811991（master 263098 的主版本，1969 US 原壓）：註記「Recorded on August 15, 1969」，**製作人 Francis Wolff、封套設計 Bob Venosa、封面與內頁攝影 Charles Keddie、內頁文字 Mort Goode、錄音 Rudy Van Gelder、吉他掛 James Blood Ulmer**。⚠ `database/search?catno=BST 84340` 的**美國原壓 263098（master）／1811991 與德國 5265355 標 1969、美國 repress 10340040 才標 1970**——**Discogs 這一群早一年**（第 550／553 條），紙本是仲裁。",
+    "src": "https://api.discogs.com/releases/1811991"
+   },
+   {
+    "f": "**串流觀察 716205420（10 軌＝1997 CD 形，前 6 軌對應原盤）**：iTunes `lookup?id=716205420&entity=song` 回 10 軌，**前 6 軌逐軌與 MB 原盤 fb05755f 同序同長**——Rakin' and Scrapin' 607s／Freedom Jazz Dance 287s／Captain Nasty 310s／Village Lee 445s／Lite Hit 385s／Don't Let Me Lose This Dream 419s（MB：605／284／306／441／381／416）；**第 7–10 軌（Lite Hit alternate take／Buddy Boy／2 J／Sweet Pea）是 1997 年 CD 的加料，不在 1970 年的黑膠上**，**10 軌全部有 previewUrl**。店面掛名寫「Big John Patton」，與卡上一致。⚠ **releaseDate 標 1970-08-01——本組二十張裡唯一一個與紙本同月份的店面日期**（第 601 條方法論 6 已記）。",
+    "src": "https://itunes.apple.com/lookup?id=716205420&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "維基 infobox：錄音 1969-08-15、**製作人 Francis Wolff**、發行欄寫 1969 **且沒有引註**——**與 Billboard 的兩則直接矛盾，不採**（第 601 條方法論 5：本段維基「沒引註或只引 jazzdisco」的六張全部錯，本張是其中之一）。曲目作者：〈Freedom Jazz Dance〉是 Eddie Harris 的曲子、〈Don't Let Me Lose This Dream〉是 Aretha Franklin 1968 年的單曲。",
+    "src": "https://en.wikipedia.org/wiki/Accent_on_the_Blues"
+   }
+  ],
+  "hookCandidates": [
+   "彈吉他的那個人在盤面上寫作 James Ulmer——再過幾年，他會以 James Blood Ulmer 的名字走進自由放克；這是他在 Blue Note 的起點",
+   "四個人、一天錄完六首：一台 Hammond、一支能吹 saxello 的次中音、一把吉他、一組鼓，連貝斯手都不用"
+  ],
+  "sound": "6 軌，電風琴四重奏的 soul jazz／blues：Patton 的 Hammond 兼顧低音，Marvin Cabell 在次中音、長笛與 saxello 之間換手，James Blood Ulmer 的吉他與 Leroy Williams 的鼓在後。〈Rakin' and Scrapin'〉十分鐘最長，〈Freedom Jazz Dance〉（Eddie Harris 的曲子）不到五分鐘最短，〈Don't Let Me Lose This Dream〉來自 Aretha Franklin。串流條目是 1997 年的 CD 形，前六軌對應原盤。",
+  "keyTracks": [
+   "Rakin' and Scrapin'",
+   "Village Lee",
+   "Freedom Jazz Dance"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1969→1970 改判：成立，而且本層把評論週往前推了兩週。** MB frd 1969、jazzdisco 1969、**Discogs 美德原壓三筆 1969（只有美國 repress 10340040 標 1970）**——三邊早一年；紙本兩則都在 1970：**Billboard 1970-06-20 的四星 Jazz 評論欄**（本層新找到；策展層只有下面那則）與 **Billboard 1970-07-04 的新片列表**，**Apple 的 releaseDate 1970-08-01 也與這個月份相容**（雖然店面日期不能單獨當證據）。階序照第 612 條——**1970 成立**，上市月取 **1970 年 6 月**。⚠ 錄音 1969-08-15 到上市約十個月，屬正常節奏。⚠ 維基寫 1969 **沒有引註**，不採。⚠ **本張的紙本證據本身就帶第 509c 條的坑**：1970-06-20 那一欄同時把本張的目錄號掃成「EST 61540」、把 Kenny Cox 那張誤植成「BST 84329」——**不能只信印出來的號碼**。",
+  "notes": "**覆核策展層：rgMbid cb96d312／原盤 fb05755f／BST 84340／6 軌／掛名 `Big John Patton`／年份 1970 全部成立，本張未擋下。** 本層新增 **Billboard 1970-06-20 四星評論欄**（策展層沒有）與 Discogs 原壓的完整美術製作名單。｜**掛名**：MB／盤面／jazzdisco 都作 `John Patton`，卡上依第 583 條取池中多數 **`Big John Patton`**，**Apple 店面掛的也是 Big John Patton**。｜**製作人 Francis Wolff、封套設計 Bob Venosa、封面與內頁攝影 Charles Keddie、內頁文字 Mort Goode、錄音 Rudy Van Gelder**（Discogs 1811991＋維基）——**Bob Venosa 在本組共三張**（本張、《The Flip》《The Sixth Sense》）。｜⚠ **人名**：jazzdisco 寫「James Ulmer」、Discogs 原壓寫「**James Blood Ulmer**」——**同一人，正文用 James Blood Ulmer 並可寫明這是他早期的 Blue Note 側人工作**；Marvin Cabell 吹的 **saxello** 是一種彎頸高音薩克斯，**不要寫成一般高音薩克斯**。｜⚠ **曲名**：〈Rakin' and Scrapin'〉〈Don't Let Me Lose This Dream〉在 MB 帶 U+2019 撇號——**寫作層摺 ASCII**（第 473／506 條）。｜**跨卡**：**Big John Patton 在本組另有《Understanding》（1968-10-25，Harold Alexander／Hugh Walker 三重奏），班底與本張零重疊**，再加 c-141 b《That Certain Feeling》共三場（第 606 條）——**三張不得互抄**。｜**串流觀察 716205420**（us，10 軌 CD 形，**前 6 軌逐軌對應原盤**，全部有試聽）——**上架比對不得用 10 這個軌數**。⚠ **CAA front 的來源是 1997 歐洲 CD 4013a81e、不是原盤**（第 608 條）——**Discogs 原壓條目見 1811991／263098（master）**。｜非選輯：單一場次。"
+ },
+ {
+  "key": "desc2:Lou Donaldson|Say It Loud!",
+  "artist": "Lou Donaldson",
+  "album": "Say It Loud!",
+  "facts": [
+   {
+    "f": "release-group caaaccad 的欄位：title「Say It Loud!」、artist-credit「Lou Donaldson」（Person db147d97，US），first-release-date 1969、primary-type Album、secondary-types 空、轄下 6 筆。原盤 0edb8542 是 **1969 US Blue Note BST 84299、12 吋 5 軌、無 barcode**，軌序與軌長：**Say It Loud (I'm Black and I'm Proud)（452s）**／Summertime（350s）／Caravan（323s）／Snake Bone（571s）／Brother Soul（497s）。其餘：1969 德國 BST 84 299 K（cf6a56a1）、**無日期的德國一筆 398f1219**（第 607 條第 7 點）、2005-01-25 美國 CD **Water WATER143**（非 Blue Note 發行）、2014-01-22 JP SHM-CD TYCJ-81062（**6 軌**）、2025-03-21 XW 黑膠 6514970。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=caaaccad-b002-3438-b5bf-af92d8f7e72c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4200 系列目錄頁的 BST 84299 區塊：**一場錄完，Van Gelder Studio, Englewood Cliffs, NJ, 1968 年 11 月 6 日**，編制 **Blue Mitchell（小號）、Lou Donaldson（電中音薩克斯、人聲）、Charles Earland（電風琴）、Jimmy Ponder（吉他）、Leo Morris（鼓）**，take 序 tk.2 Brother Soul／tk.3 Snake Bone／tk.8 Say It Loud／tk.10 Caravan／tk.12 Summertime。⚠ **Donaldson 在這張上吹的是「electric alto sax」並且自己唱**——jazzdisco 的編制欄就這麼寫。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "**Cash Box 1969 年 1 月 18 日先評了單曲**：「LOU DONALDSON (Blue Note 1943) Say It Loud (3:02) [Golo; BMI-Brown]　Jazz instrumentalist Lou Donaldson is featured on this funky mainly-instrumental **revisal of James Brown's recent blockbuster**. Side could catch Latin, blues and one-stop sales action. Flip: 'Snake Bone' (3:05)」——**Blue Note 先出 45 轉單曲（編號 1943）、專輯才跟上**。⚠ **第 593 條：單曲評論不能當專輯上市證據**，這一條只用來說明廠牌的推法。**Cash Box 1969 年 3 月 8 日才評專輯**：「SAY IT LOUD - Lou Donaldson - Blue Note BST 84299　Using James Brown's recent soul message song… as a starting point, alto saxist Lou Donaldson turns in another first rate merging of jazz and R&B sounds. Along with Blue Mitchell (trumpet), Jimmy Ponder (guitar), Leo Morris (drums) and **newcomer Charles Earland (organ)**…」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1969/CB-1969-03-08.pdf"
+   },
+   {
+    "f": "**Billboard 1969 年 4 月 5 日那一期同時有四件事**：(1) New Album Releases 列「LOU DONALDSON—Say It Loud!　Blue Note, BST 84299」；(2) **「Best-Selling Jazz LP's」榜以第 20 名、榜列自印「第 1 週」進榜**（「20 — SAY IT LOUD 1　Lou Donaldson, Blue Note BST 84299」）；(3) **「Best Selling Soul LP's」榜第 43 名（第 2 週）**；(4) **Top LP's 總榜第 184 名**。**三張榜同期在榜——這不是一張只給爵士樂評看的碟。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-04-05.pdf"
+   },
+   {
+    "f": "**Billboard 1969 年 4 月 5 日第 74 頁的廠牌報導（本層新找到的一條）**：「…According to BN's general manager **Mel Fuhrman**, **four albums played the key role in the label's peak sales: Horace Silver's 'Serenade to a Soul Sister'; 'Always Something There,' by Stanley Turrentine; 'Think,' by Lonnie Smith, and Lou Donaldson's 'Say It Loud.'** 'Think' is Smith's debut album. Fuhrman also credits strong sales in Europe and the Far East… And with **Solid State Records now under the BN flag (following the Liberty-United Artists merger)**…」——**Blue Note 自家總經理點名本張是那一季銷售的四張主力之一**（同批《Always Something There》也在名單上）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-04-05.pdf"
+   },
+   {
+    "f": "**Billboard 兩張榜的完整在榜紀錄（第 58x 條）**：**Best-Selling Jazz LP's**——1969-04-05 第 20 名（第 1 週）、04-12 第 10 名（第 2 週）、04-19 第 8 名、05-03 第 5 名（第 5 週）、05-17 第 5 名（第 7 週）、06-07 第 7 名（第 10 週）、**06-21 第 4 名（第 12 週，峰值）**、07-12 第 5 名（第 15 週）、07-19 第 5 名（第 16 週）、08-09 第 10 名（第 19 週）、08-16 第 10 名（第 20 週）、**08-23 第 16 名（第 21 週）**；**Best Selling Soul LP's（R&B 榜）**——1969-04-05 第 43 名（第 2 週）、05-03 第 36 名（第 3 週）、05-17 第 31 名（第 5 週）、**06-14 那期前一週欄顯示曾到第 27 名（第 9 週）**。**在爵士榜連掛二十一週以上、峰值第 4，同時在黑人音樂專輯榜爬到接近前 25。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-06-21.pdf"
+   },
+   {
+    "f": "Discogs release 1253056（1969 US 原壓，run-out 刻「VAN GELDER」）：**製作人 Francis Wolff、錄音與刻片 Rudy Van Gelder**，編制掛 Lou Donaldson（薩克斯）、Blue Mitchell（小號）、Charles Earland（風琴）、Jimmy Ponder（吉他）、Leo Morris（鼓）。`database/search?catno=BST 84299` 回 19 筆，**1969 年的原壓十三筆以上（美國多筆＋德國 3920564＋日本 27141519＋加拿大 2718292／13220390）全部標 1969**，另有 1970／1971／1973 的再壓與 2025 年的 XW 黑膠 6514970。**串流採信 715797306**：iTunes 回 5 軌，**逐軌與 MB 原盤同序同長**（Say It Loud (I'm Black and I'm Proud) 452s／Summertime 350s／Caravan 323s／Snake Bone 571s／Brother Soul 497s，與 MB 完全一致），**5 軌全部有 previewUrl**。",
+    "src": "https://api.discogs.com/releases/1253056"
+   }
+  ],
+  "hookCandidates": [
+   "標題曲是 James Brown 1968 年那首〈Say It Loud – I'm Black and I'm Proud〉的翻奏——Blue Note 先把它切成三分鐘的 45 轉單曲，專輯才跟上；1969 年春天它同時掛在 Billboard 的爵士榜、黑人音樂專輯榜與總榜上",
+   "風琴手是當時還沒沒無聞的 Charles Earland，Cash Box 的評介直接叫他「newcomer」；Donaldson 手上拿的是接了拾音器的中音薩克斯，而且自己唱"
+  ],
+  "sound": "5 軌，電中音薩克斯領軍的 boogaloo／soul jazz：Donaldson 吹接了拾音器的中音並親自唱，Blue Mitchell 的小號、Charles Earland 的 Hammond、Jimmy Ponder 的吉他、Leo Morris 的鼓在後。標題曲翻的是 James Brown 1968 年的〈Say It Loud – I'm Black and I'm Proud〉，〈Summertime〉與〈Caravan〉是標準曲，〈Snake Bone〉九分半最長。串流條目與原盤同序同長。",
+  "keyTracks": [
+   "Say It Loud (I'm Black and I'm Proud)",
+   "Snake Bone",
+   "Brother Soul"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1969 成立，本張不在改判的 12 張之內，而且是全組證據最厚的一張。** MB frd 1969＝jazzdisco 1969＝**Discogs 十三筆以上的 1969 原壓（美、德、日、加）**；紙本：**Cash Box 1969-01-18 的單曲評（Blue Note 1943）**——⚠ **第 593 條：單曲評論不能當專輯上市證據**，只作背景；**Cash Box 1969-03-08 的專輯 Jazz 評介**才是；**Billboard 1969-04-05 同一期有 New Album Releases、爵士榜第 20 名（第 1 週）、Soul LP's 第 43 名、Top LP's 第 184 名**。**榜位最硬**（第 58x 條）：爵士榜從 1969-04-05 的第 1 週一路掛到 1969-08-23 的第 21 週、峰值第 4（1969-06-21）；Soul LP's 峰值約第 27 名。**上市月取 1969 年 2–3 月**（單曲 1 月中、專輯評介 3 月初、進榜 4 月初）。",
+  "notes": "**覆核策展層：rgMbid caaaccad／原盤 0edb8542／BST 84299／5 軌／掛名 `Lou Donaldson`／年份 1969 全部成立，本張未擋下。** 本層新增三條策展層沒有的：**Cash Box 1969-01-18 的 45 轉單曲評（Blue Note 1943，A 面 3:02／B 面〈Snake Bone〉3:05）**、**Billboard 1969-04-05 p74 的廠牌報導（總經理 Mel Fuhrman 點名本張是該季四張主力之一）**、**兩張榜的完整在榜紀錄（爵士榜 21 週、峰值第 4；Soul LP's 峰值約第 27）**。｜⚠ **真的同名撞擊（第 606 條）**：池中已有 **James Brown《Say It Loud: I'm Black and I'm Proud》（1969，seed）**，**而且本盤的標題曲就是翻唱那一首**——**正文必須寫清楚本張是翻奏，上架比對與試聽核對務必帶掛名＋catno BST 84299**；Apple 搜尋時還會混進 Donaldson 自己的《Hot Dog》（BST 84318，池中已有）。｜**製作人 Francis Wolff、錄音刻片 Rudy Van Gelder**（Discogs 1253056）；**本張 Discogs 原壓沒有美術掛名**，**正文不得指名封面設計者**。｜⚠ **編制**：Donaldson 吹 **electric alto sax 並兼人聲**（jazzdisco），**正文不得寫成單純的中音薩克斯手**。｜**生涯位置**：**Charles Earland 在 Cash Box 1969-03-08 的評介裡被稱作「newcomer」**——這是他在 Blue Note 的起點（第 610 條「給後批」第 4 點把他、Melvin Sparks、Leo Morris、James Blood Ulmer 列為 1970 年代初大量出現的一批人）。｜**跨卡**：**Blue Mitchell 三處**（本張側人、《Collision in Black》領銜、《Plain Talk》1960 年那場）、**Jimmy Ponder 三處**（本張、《Fancy Free》、c-141 b《Common Touch》）、**Leo Morris 三處**（本張、《Fancy Free》第二場、《Turning Point》）——**全部不同場，正文陣容不得互抄**（第 606 條第 1／5 點）。｜⚠ **MB 坑**：德國那筆 398f1219 **無日期**、catno 同時登 BST 84299 與 BST 84 299 K（**帶空格的德國號在本段很常見，上架比對要一起試**，第 607 條第 7 點）；2014 日本 SHM-CD 是 **6 軌**、不是 5 軌。｜**串流採信 715797306**（us，5 軌逐軌同序同長，全部有試聽）。**有固定試聽來源、CAA front 出自原盤 0edb8542。**｜非選輯：單一場次。"
+ },
+ {
+  "key": "desc2:Jack Wilson|Song for My Daughter",
+  "artist": "Jack Wilson",
+  "album": "Song for My Daughter",
+  "facts": [
+   {
+    "f": "release-group 802871da 的欄位：title「Song for My Daughter」、artist-credit「Jack Wilson」（**Person 219c17de，US，disambiguation「jazz pianist」，1936-08-03–2007-10-05**），first-release-date 1969、primary-type Album、secondary-types 空，**轄下只有 1 筆 release**（第 607 條第 8 點）。⚠ **那一筆 9cc97adc 的 catno 在 MB 登成「Blue Note BST 84238」——那是 Donald Byrd《Mustang!》的號（池中已由 c-140 b 收），真號是 BST 84328**（第 604／613 條；rgMbid 本身沒釘錯）。10 軌軌序與軌長：Imagine（256s）／Herman's Helmet（264s）／Changing With the Times（175s）／Night Creature（227s）／Scarborough Fair - Canticle（301s）／Song for My Daughter（177s）／Eighty-One（374s）／Se Todas Fossem Iguais A Voce（134s）／Stormy（318s）／Soft Summer Rain（344s）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=802871da-c459-406f-98eb-18bd85c8d4fd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4300 系列目錄頁的 **BST 84328** 區塊（**真號在這裡，jazzdisco 沒有跟著 MB 錯**）把本盤拆成**五場外加一次疊錄，全部在 Liberty Studios, Los Angeles**：**1968-09-28**——Stan Levey（顫音琴、沙鈴）、Jack Wilson（鋼琴）、John Gray（吉他）、Ray Brown（貝斯）、Varney Barlow（鼓）＋**7 把小提琴、2 把中提琴、3 把大提琴**，**Billy Byers 編曲指揮**，錄 Imagine／Changing With The Times／Se Todos Fossem Iguais A Voce；**1968-12-16**——Victor Feldman（顫音琴、定音鼓）、Howard Roberts（吉他）、**Andy Simpkins（貝斯）**、Jimmie Smith（鼓）＋8／2／2 的弦樂，錄 Eighty-One／Herman's Helmet／Night Creature；**1969-04-23**——Tommy Vig（顫音琴）、Howard Roberts、Ray Brown、Donald Bailey，錄 Soft Summer Rain；**1969-06-19**——Wilson／Ike Isaacs／Donald Bailey 三重奏，錄 Scarborough Fair / Canticle；**1969-06-21 ＋ 06-26 疊錄弦樂**，錄 Song For My Daughter；另 Stormy 是三重奏加疊錄弦樂。**十軌出自五場、三位不同的顫音琴手、三位不同的貝斯手、三位不同的鼓手。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1970 年 2 月 7 日的 New Album Releases**：「JACK WILSON -Song for My Daughter　Blue Note, **B5T -84328**」（掃描把 BST 讀成 B5T，但**號碼是 84328，不是 MB 那個 84238**）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-02-07.pdf"
+   },
+   {
+    "f": "**Billboard 1970 年 2 月 14 日的四星 Jazz 評論欄**：「JAZZ ****　TONY SCOTT—Verve V6-8788 (S)／**JACK WILSON—Song for My Daughter. Blue Note BST 84328 (S)**／JOE HENDERSON—Power to the People. Milestone MSP 9024 (S)／EARL HINES—A Monday Date: 1928. Milestone MLP 2012 (M)／KLAUS DOLDINGER QUARTET—Blues Happening. World Pacific Jazz ST 20167 (S)」——**這一則把真號 BST 84328 完整印出來，是 MB 那個 84238 是登錄錯誤的直接證明；新片欄（2/7）→評論欄（2/14）兩則都在 1970 年。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-02-14.pdf"
+   },
+   {
+    "f": "Discogs release 3378314（1969 US 原壓）：註記「**Recorded at Liberty Studios, West Hollywood, CA**」，**製作、編曲、指揮都掛 Billy Byers**（維基 infobox 的 producer 欄是空的，**Discogs 是本張製作人的唯一來源**）、**封面攝影 Fred Seligo、內頁文字 Michael Randall**；編制掛 Jack Wilson（鋼琴）、Ray Brown／Ike Isaacs／Andrew Simpkins（貝斯）、Donald Bailey／Jimmie Smith／Varney Barlow（鼓）、Howard Roberts／John Gray（吉他）、Stan Levey／Tommy Vig／Victor Feldman（顫音琴）。⚠ `database/search?catno=BST 84328` 的四筆（1041075 master／3378314／28891183、德國 24623720）**全部標 1969——整群早一年**（第 550／553 條）；**把同一個號拿去反查，回來的全是本張，沒有一筆是 Mustang!——這正是第 604 條說的「catno 反查一次就看得出 MB 登錯」。**",
+    "src": "https://api.discogs.com/releases/3378314"
+   },
+   {
+    "f": "**串流採信 1768828974**：iTunes `lookup?id=1768828974&entity=song` 回 10 軌，**逐軌與 MB 原盤 9cc97adc 同序**——Imagine 265s／Herman's Helmet 273s／Changing With The Times 182s／Night Creature 235s／Scarborough Fair / Canticle 310s／Song For My Daughter 182s／Eighty-One 386s／Se Todas Fossem Iquais A Voce 139s／Stormy 330s／Soft Summer Rain 356s（MB：256／264／175／227／301／177／374／134／318／344），**10 軌全部有 previewUrl**。⚠ **releaseDate 標 1968-09-01，那是第一場錄音的月份**（第 484 條）；**第 8 軌店面拼成「Se Todas Fossem Iquais A Voce」（兩處錯字）、MB 作「Se Todas Fossem Iguais A Voce」、jazzdisco 作「Se Todos Fossem Iguais A Voce」——Jobim 原曲是〈Se Todos Fossem Iguais a Você〉，jazzdisco 的 Todos 才對**（第 604 條）。⚠ **本張 CAA 404，但這個店面條目有封面圖**（`artworkUrl100` 指向 `…/24UMGIM94402.rgb.jpg`，把尾段改成 `1400x1400bb.jpg` 可取大圖）——**那是 2024 年數位再發的版式、不是 1970 年原壓**。",
+    "src": "https://itunes.apple.com/lookup?id=1768828974&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "⚠ **掛名邊界（第 603 條第 2 點的第三次記錄）**：**MB 的 `Jack Wilson` 同字串有 17 個實體**——`artist:\"Jack Wilson\"` 分數最高的是製作音樂作曲家 4b2dc66f，另有**英國樂團領班（1907–2006，維基的「Jack Wilson (pianist)」條目講的正是他、不是本人）**、美國民謠搖滾歌手、雷鬼歌手、Fickle Friends 鍵盤手、小號手、金屬吉他手、匹茲堡饒舌歌手。**本卡與池中兩張都是 219c17de（US，1936-08-03–2007-10-05，jazz pianist）**；**英文維基沒有這位 Jack Wilson 的個人條目，只有專輯條目**——**寫作層查生平務必帶 jazz pianist／Blue Note／1936–2007，抓到「Jack Wilson (pianist)」那個條目就是抓錯人。**",
+    "src": "https://musicbrainz.org/ws/2/artist?query=artist%3A%22Jack+Wilson%22&fmt=json&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十首曲子出自五場錄音、跨了九個月：三位不同的顫音琴手、三位不同的貝斯手、三位不同的鼓手，弦樂則是 Billy Byers 一路編下來的",
+   "MusicBrainz 把它的目錄號登成 BST 84238——那是 Donald Byrd《Mustang!》的號；Billboard 1970 年 2 月 14 日的四星欄印的才是真號 BST 84328"
+  ],
+  "sound": "10 軌，鋼琴加弦樂的抒情爵士：Jack Wilson 的鋼琴在前，Billy Byers 編寫並指揮的弦樂組（小提琴、中提琴、大提琴）鋪底，顫音琴、吉他、貝斯、鼓的組合每一場都不同。軌長全部壓在兩到六分半，曲目混著約翰藍儂的〈Imagine〉、Simon & Garfunkel 的〈Scarborough Fair / Canticle〉、Jobim 的〈Se Todos Fossem Iguais a Você〉、Miles Davis 圈子的〈Eighty-One〉與 Classics IV 的〈Stormy〉。串流條目與原盤同序。",
+  "keyTracks": [
+   "Song for My Daughter",
+   "Eighty-One",
+   "Scarborough Fair - Canticle"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1969→1970 改判：成立。** MB frd 1969、jazzdisco 4300 目錄頁 1969、**Discogs 四筆原壓（美、德）全標 1969**——三邊早一年；但紙本兩則都在 1970：**Billboard 1970-02-07 New Album Releases**（印 B5T -84328）與 **Billboard 1970-02-14 四星 Jazz 評論欄**（印 BST 84328）。階序照第 612 條——**1970 成立**，上市月取 **1970 年 2 月**。⚠ **最後一場疊錄在 1969-06-26、上市 1970-02：約七個月**，屬正常節奏，但**第一場錄音是 1968-09-28，前後跨了十七個月**——**正文不得把它寫成一次錄完的碟**。⚠ 維基 infobox 寫 1969 **沒有引註**（第 601 條方法論 5 的六張錯的之一），不採。",
+  "notes": "**覆核策展層：rgMbid 802871da／原盤 9cc97adc／10 軌／掛名 `Jack Wilson`／年份 1970 全部成立，本張未擋下；catno 依第 604 條用真號 BST 84328、不用 MB 登的 84238。** 本層把兩件事補到一手：**Billboard 1970-02-14 的四星欄原文完整印出 BST 84328**（這是 MB 登錯的直接證明），以及 **Discogs `catno:\"BST 84328\"` 反查四筆全是本張、沒有一筆是 Mustang!**。｜⚠ **catno**：正文與 facts 一律用 **BST 84328**；**MB 的 BST 84238 是錯的，那是池中已有的 Donald Byrd《Mustang!》**。｜⚠ **第 307 條預警（第 603 條第 2 點，本線第三次記）**：`Jack Wilson` 在 MB 有 17 個同字串實體，**英文維基的「Jack Wilson (pianist)」是 1907–2006 的英國樂團領班、不是本人**；本人是 219c17de（US，1936-08-03–2007-10-05），**英文維基沒有他的個人條目**。｜**製作、編曲、指揮都是 Billy Byers；封面攝影 Fred Seligo、內頁文字 Michael Randall**（Discogs 3378314；**維基的 producer 欄是空的**，第 639／595 條的「維基留空就不指名」在這張靠 Discogs 補上了——**正文可以寫 Billy Byers，但要知道只有 Discogs 一個來源**）。**錄音地點 Discogs 寫 West Hollywood 的 Liberty Studios、jazzdisco 寫 Los Angeles 的 Liberty Studios，是同一間。**｜⚠ **五場、班底幾乎每場都換**（第 605 條）——**正文不得寫成固定編制**。｜⚠ **曲名**：第 8 軌三個來源三種拼法，**寫作層照 Jobim 原曲〈Se Todos Fossem Iguais a Você〉的通行拼法**（第 604 條）。｜⚠ **本組三個封面缺口之一**：**CAA 在 RG 與 release 兩層都是 404**（本層對 9cc97adc 驗過，404）。**封面替代圖來源（給主線）**：(1) **Apple 條目 1768828974 的 artwork**（`artworkUrl100` → 改 `1400x1400bb.jpg`，**2024 年數位再發版式**）；(2) **Discogs 1969 美國原壓 master 1041075、r3378314、r28891183**（各有 4 張圖）、**德國壓片 r24623720**。**優先取 Discogs 原壓，版式才是當年的黑膠。**｜**跨卡**：**Andy Simpkins（1968-12-16 那場的貝斯）就是同批《Coldwater Flat》的 The Three Sounds 貝斯手**（第 606 條第 8 點），**Donald Bailey 也同時是《Coldwater Flat》與《Plain Talk》的鼓手**——**三處都是不同場，正文不得互抄**。｜**串流採信 1768828974**（us，10 軌逐軌同序，全部有試聽）。**有固定試聽來源；封面要走替代圖。**｜非選輯：五場拼成的單一企劃，不是精選。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|Always Something There",
+  "artist": "Stanley Turrentine",
+  "album": "Always Something There",
+  "facts": [
+   {
+    "f": "release-group 2388d9a9 的欄位：title「Always Something There」、artist-credit「Stanley Turrentine」（Person 51e0df97，US），first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 筆。原盤 dd3c7699 是 **1969 US Blue Note BST 84298、12 吋 10 軌、無 barcode**；⚠ **策展層記本張「有軌數無軌序」，本層用 release 瀏覽端點取到了完整軌序與軌長**：(There's) Always Something There（166s）／Little Green Apples（253s）／When I Look Into Your Eyes（155s）／Light My Fire（193s）／Those Were the Days（264s）／Stoned Soul Picnic（233s）／Home Town（267s）／Song for Bonnie（155s）／Hey Jude（309s）／Fool on the Hill（214s）——**十軌全部在兩到五分鐘之間**。另一筆是 2014-02-26 JP SHM-CD TYCJ-81085。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2388d9a9-d0d5-328b-b7bf-c8b39aaea944&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 4200 系列目錄頁的 BST 84298 區塊拆成**三場，全部在 A&R Studios, NYC**（**不是 Van Gelder**）：**1968-10-01**——Burt Collins（柔音號）、Jimmy Cleveland（長號）、Dick Berg／Jim Buffington（法國號）、Jerry Dodgion（中音、長笛、單簧管）、Stanley Turrentine（次中音）、Jerome Richardson（次中音、長笛、單簧管）、**Hank Jones（鋼琴）**、**Barry Galbraith（吉他）**、Bob Cranshaw（貝斯、電貝斯）、**Mel Lewis（鼓）**、**Thad Jones（編曲）**，**外加疊錄的十把弦樂（含 Gene Orloff）**，錄 Fool On The Hill／Little Green Apples；**1968-10-14**——鋼琴換 **Herbie Hancock**、吉他換 **Kenny Burrell**、法國號換 Brooks Tillotson，弦樂 11 把，錄 Hey Jude／Light My Fire／There's Always Something There To Remind Me；**1968-10-28**——**Thad Jones 自己下來吹小號並編曲**、鼓換 **Mickey Roker**、弦樂 12 把，錄 Home Town／Stoned Soul Picnic／When I Look Into Your Eyes／Those Were The Days／Song For Bonnie。**三場裡鋼琴、吉他、鼓各換過一次，弦樂全部是疊錄的。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "**Billboard 1969 年 3 月 15 日的 Jazz 評論欄**：「STANLEY TURRENTINE—Always Something There, Blue Note BST 84298 (S)　Turrentine is at his best in this latest album outing, and **should quickly win the approval of pop fans**, along with his steady following. The first-rate material, including 'Hey Jude,' 'Those Were the Days' and a flawless reading of 'When I Look Into Your Eyes,' is enhanced by **Thad Jones'** …」——**同期紙本把編曲者 Thad Jones 與「打進流行樂聽眾」這條路線一起點名。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard-1969-03-15.pdf"
+   },
+   {
+    "f": "**Billboard 1969 年 4 月 5 日那一期兩處**：(1) New Album Releases 列「STANLEY TURRENTINE—Always Something There　Blue Note, BST 84298」；(2) **第 74 頁的廠牌報導**：Blue Note 總經理 **Mel Fuhrman** 說那一季是廠牌歷史上的銷售高峰，**點名四張主力——Horace Silver《Serenade to a Soul Sister》、「Always Something There」by Stanley Turrentine、Lonnie Smith《Think》、Lou Donaldson《Say It Loud》**（同批《Say It Loud!》也在名單上），並提到 Liberty-United Artists 合併後 Solid State 已納入 Blue Note 旗下。**廠牌自己在 1969 年 4 月把本張講成當季主力——這條同時是年份證據與正文素材。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-04-05.pdf"
+   },
+   {
+    "f": "**Cash Box 1969 年 8 月 16 日**那期的 Blue Note 號段目錄把在架號列到 84313，序列中可見「…84294 84295 84296 84297 **84298** 84299 84300 84301 84303 84306 84307 84309 84312 84313」——**84298 在 1969 年 8 月的在架表裡**；這份表與 **Cash Box 1968-12-07 那份（只列到 84292）** 一夾，就把 84293–84313 這一段的上市窗口卡在 **1968 年 12 月之後、1969 年 8 月之前**（第 601 條方法論 2；⚠ 夾擠是推定不是直接證據，可逆）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1969/CB-1969-08-16.pdf"
+   },
+   {
+    "f": "Discogs release 2623738（美國原壓）：**編曲 Thad Jones、製作人 Duke Pearson、內頁文字 Leonard Feather、攝影 Harold Zipkowitz**，編制掛 Jerry Dodgion（中音、長笛、單簧管）、Jerome Richardson（次中音、長笛、單簧管）、Hank Jones 與 Herbie Hancock（鋼琴）、Barry Galbraith 與 Kenny Burrell（吉他）、Bob Cranshaw（貝斯、Fender 電貝斯）、Mel Lewis 與 Mickey Roker（鼓）、Burt Collins（柔音號）、Jimmy Cleveland（長號）、Jim Buffington 與 Richard Berg（法國號）。⚠ `database/search?catno=BST 84298` 的**美國原壓 457030（master）／2623738／11919493 與德國 13434419 標 1968、加拿大 11347735／19141267 標 1969**——**Discogs 這一群分裂**，加拿大那兩筆與紙本同邊。",
+    "src": "https://api.discogs.com/releases/2623738"
+   },
+   {
+    "f": "**串流採信 1435545055**：iTunes `lookup?id=1435545055&entity=song` 回 10 軌，**逐軌與 MB 原盤 dd3c7699 同序**——(There's) Always Something There To Remind Me 167s／Little Green Apples 259s／When I Look Into Your Eyes 153s／Light My Fire 193s／Those Were The Days 257s／Stone Soul Picnic 233s／Home Town 264s／Song for Bonnie 153s／Hey Jude 306s／Fool On The Hill 213s（MB 十軌逐一相符），**10 軌全部有 previewUrl**。⚠ **releaseDate 標 1968-10-28，那是第三場錄音日**（第 484 條）；**第 6 軌店面拼成「Stone Soul Picnic」、MB 與 jazzdisco 作「Stoned Soul Picnic」——Laura Nyro 原曲是〈Stoned Soul Picnic〉**（第 604 條）。",
+    "src": "https://itunes.apple.com/lookup?id=1435545055&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十首曲子，八首是當年的流行歌——〈Hey Jude〉〈Light My Fire〉〈Fool on the Hill〉〈Stoned Soul Picnic〉；Thad Jones 寫編曲，弦樂全部是後來疊上去的",
+   "1969 年 4 月，Blue Note 總經理對 Billboard 說那一季是廠牌史上的銷售高峰，並點名四張主力，這是其中之一"
+  ],
+  "sound": "10 軌，次中音薩克斯加大編制的流行曲翻奏：Turrentine 的次中音在前，Thad Jones 寫的編曲把柔音號、長號、兩支法國號、兩組木管圈在外面，鋼琴（Hank Jones／Herbie Hancock）、吉他（Barry Galbraith／Kenny Burrell）、Bob Cranshaw 的電貝斯與鼓（Mel Lewis／Mickey Roker）撐節奏，十到十二把弦樂是事後疊錄上去的。十軌全部壓在兩到五分鐘，錄音在紐約 A&R Studios、不是 Van Gelder。串流條目與原盤同序。",
+  "keyTracks": [
+   "(There's) Always Something There",
+   "Hey Jude",
+   "Stoned Soul Picnic"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1969 成立，本張不在改判的 12 張之內——但它是第 601 條特別點名的「slice 對、jazzdisco 錯」那一張，本層逐條覆核後維持 1969。** **jazzdisco 4200 目錄頁寫 1968、Discogs 美德原壓四筆標 1968、維基 infobox 也寫 1968（只引 jazzdisco，第 431 條）**——這一邊是 1968；另一邊是 **MB frd 1969**、**Discogs 加拿大原壓兩筆 1969**、**Billboard 1969-03-15 Jazz 評論欄**、**Billboard 1969-04-05 New Album Releases**、**同期第 74 頁廠牌報導把本張列為當季四張主力之一**、**Cash Box 1969-08-16 的在架號段目錄**。階序照第 612 條（評論欄／新片欄 ＞ Discogs 原壓群 ＞ jazzdisco／MB 欄位）——**1969 成立**，上市月取 **1969 年 3 月**。⚠ **Cash Box 1968-12-07 那份只列到 84292、1969-08-16 那份列到 84313**，把 84298 夾在 1968 年 12 月之後——**夾擠推定，可逆**（第 593 條）。⚠ 錄音 1968-10-01／14／28 到上市約五個月，是本組最快的幾張之一。",
+  "notes": "**覆核策展層：rgMbid 2388d9a9／原盤 dd3c7699／BST 84298／10 軌／掛名 `Stanley Turrentine`／年份 1969 全部成立，本張未擋下。** 本層新增 **Billboard 1969-04-05 p74 的廠牌報導**（總經理 Mel Fuhrman 點名本張與同批《Say It Loud!》是當季四張主力）——**那是本組唯一由廠牌高層具名講出來的銷售證詞，寫作層可以直接用**。｜⚠ **訂正策展層第 607 條第 1 點**：本張同樣在「有軌數無軌序」名單裡，**但 release 瀏覽端點取得到完整軌序與軌長**——**十軌全部在 153–309 秒之間這件事本身就是重點**（這是一張按電台長度切的碟）。｜**編曲 Thad Jones、製作人 Duke Pearson、內頁文字 Leonard Feather、攝影 Harold Zipkowitz**（Discogs 2623738＋維基）——**本張沒有封套設計掛名，正文不得指名設計者**。｜⚠ **三場、鋼琴／吉他／鼓各換過一次、弦樂全部疊錄**（jazzdisco）：**Hank Jones→Herbie Hancock、Barry Galbraith→Kenny Burrell、Mel Lewis→Mickey Roker**，**第三場 Thad Jones 自己下來吹小號**——**正文不得寫成一場錄完或固定編制**（第 605 條）。**錄音在 A&R Studios, NYC，不是 Van Gelder**。｜⚠ **曲名**：第 6 軌店面作「Stone Soul Picnic」，**Laura Nyro 原曲是〈Stoned Soul Picnic〉**；首軌 MB 作「(There's) Always Something There」、jazzdisco 作「There's Always Something There To Remind Me」、店面用全名——**上架比對三種都要試**（第 604 條）。｜**跨卡**：**Herbie Hancock 在本組另有領銜的《The Prisoner》（1969-04）**，**Jerome Richardson 兩處都在**（第 606 條第 7 點）——**兩張差半年、兩支完全不同的樂團**；**Duke Pearson 在本組共製作四張**（本張、《The Ultimate》《Fancy Free》《The Prisoner》），**四張的班底毫無重疊**。｜**串流採信 1435545055**（us，10 軌逐軌同序，全部有試聽）。**有固定試聽來源、CAA front 出自原盤 dd3c7699。**｜非選輯：三場同企劃的錄音室盤。"
  }
 ]
