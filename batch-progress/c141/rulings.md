@@ -329,3 +329,43 @@ b 組 19 個 rgMbid 與同批 a 組 20 個、c-135～c-140 各批 251 筆程式�
    ⚠ **jazzdisco 不是單一可信來源**（84302／84307 比資料庫準，84315 卻與同期紙本站反邊）——要配號段鄰居一起看。
 5. **訂正 a 組第 579 條**：Blakey《Roots & Herbs》是 BST 84347（1970），不是 84303（那是《Grass Roots》）。
 6. **《Plain Talk》BST 84296 池中零張、本批 slice 也沒有**（與《Open House》同一場 1960-03-22 錄音拆成兩張）——**後批要收**。
+
+## 第 590 條（主線 2026-09-16，研究層 a 組交件後）：**a 組 20/20 full；19 張年份定死，並撤掉第 571 條兩張「最弱改判」的 risk**
+
+**研究層的四處改動全部追認**（都往「證據變硬」的方向走）：
+1. **撤掉《New and Old Gospel》與《Blackjack》的「最弱改判」risk**：
+   前者有 Billboard 1968-01-13 新片欄 ＋ 01-27 兩刊整版廣告 ＋ 四星評論；
+   後者有 **Billboard 爵士榜 1968-04-27→06-01 連續六週、最高 #17**。
+2. **《The Festival Album》的「1966 說」不成立**（Cash Box 1967-02-25 發片預告＋1967-03-18 評介；
+   第二場錄音才 1966-10-08）。
+3. **推翻 Discogs 對《A New Conception》的 1966**（＝錄音年；Cash Box 1967-12-02 評介、Billboard 1967-12-09 新片欄）。
+4. **《Tender Moments》從「Schwann，弱」換成 Billboard 1968-07-27 同期新片欄。**
+
+**年份有疑議只剩 1 張**：Eddie Gale《Ghetto Music》——卡單 1968 是目錄年，但兩刊的評介都在 **1969-01-25**，
+1968 年內查無新片欄或廣告。**維持 1968，但正文不得寫具體上市月。**
+
+⚠ **第 58x 條（a 組立的，寫進 SOURCES 表）：Billboard 的「Best-Selling Jazz LP's」榜是判 1967–69 上市月最硬的一條。**
+榜列印「在榜第幾週」，**一張碟不可能在上市隔年才以第 1 週進榜**。**有進榜的碟，榜位比評論欄、比新片欄都硬。**
+
+## 第 591 條（同日）：**a 組四張缺試聽全部補齊；兩個下游要注意的坑**
+
+**串流採信**：Hi Voltage `724925658`、Boss Horn `716323306`、New and Old Gospel `716131477`、Slow Drag `723533139`
+——四張都逐軌對上原盤、全軌有 preview，主線已補進 `previews.json`。**c-141 試聽 36/39**（缺的 3 張在 b 組）。
+
+⚠ **第 307 條（同名撞擊）又中一次**：《Easterly Winds》的 Jack Wilson，
+scratchpad 抓到的是**英國樂團領班 Jack Wilson（1907–2006）**，本卡是**美國爵士鋼琴家（1936–2007）**。
+**寫作層查生平務必走 `Jack Wilson (jazz pianist)`。**
+
+⚠ **第 509c 條（紙本誤植目錄號）在這一段極密集**：Billboard 把《Blackjack》catno 印成 84250、
+把《New and Old Gospel》印成 BLP 4252 **且掛名寫「Various Artists」**、把《Look of Love》配成 84268；
+**Blue Note 自家廣告**把《Contrasts》的 84266 安給《The Gigolo》，**同一則錯誤同週登在兩刊**。
+——**同一則錯誤同時出現在兩份刊物，不是兩個獨立來源**（第 431 條的紙本版）。各卡 notes 已逐條標。
+
+## 第 592 條（同日）：**a 組自抓的 187 期紙本收進 repo，Cash Box 1966–69 至此無缺口**
+
+- `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`（4.3 MB，**1968-01-06 → 1969-06-28 共 77 期命中頁**）
+- `batch-progress/enum/billboard-bn-1967-69-ocr.txt`（7.3 MB，**1967-01-07 → 1969-04-26 共 110 期命中頁**）
+
+⚠ 這兩份存的是**關鍵字命中頁**（關鍵字是 c-141 a 的目錄號與盤名），**查別的碟要重抓或放寬關鍵字**。
+抓取端兩個坑已寫進 SOURCES 表：**Billboard 1968-08 起、整個 1969 年改成 `BB-YYYY-MM-DD.pdf`**；
+Cash Box 每期約 12 MB，`pymupdf` 直接讀文字層即可。
