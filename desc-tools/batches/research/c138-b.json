@@ -1,0 +1,426 @@
+[
+ {
+  "key": "desc2:Donald Byrd|At the Half Note Cafe, Volume 2",
+  "artist": "Donald Byrd",
+  "album": "At the Half Note Cafe, Volume 2",
+  "facts": [
+   {
+    "f": "release-group 16540bf3 的欄位：title「At the Half Note Cafe, Volume 2」、artist-credit「Donald Byrd with Pepper Adams, Duke Pearson, Laymon Jackson & Lex Humphries」（五個 Person 實體並列：Donald Byrd 69f95e5c、Pepper Adams 98fb6594、Duke Pearson ea39ae7d、Laymon Jackson 82109edc、Lex Humphries 9a9d6c18）、first-release-date 1960-11-11（⚠＝演出日，不是發行日）、primary-type Album、secondary-types [Live]。轄下三筆：**原盤 4bdc08a7 是 1960-11-11 US Official Blue Note、12 吋 4 軌，catno 欄被登錄成「11」（應為 BLP 4061，MB 資料錯誤）**；2002 US CD bd40c553（Blue Note 90881，6 軌，credit 收攏成 Donald Byrd）；2015 XW 數位 4edf54c7（Capitol，title「At the Half Note Cafe, Vol. 2 (live at the Half Note Cafe, NY/1960)」）。原 LP 4 軌：〈Jeannine〉12:46、〈Pure D Funk〉6:09、〈Kimyas〉11:59、〈When Sunny Gets Blue〉5:50，全長約 36 分 44 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=16540bf3-2655-47db-95b1-09379c1551d7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4000 系列目錄把 BLP 4061《Donald Byrd - At The Half Note Cafe Vol. 2》記為 **1963** 年出版（同頁 BLP 4060《Vol. 1》記 1961），並把四首曲子分屬同一晚的三個不同 set：**1960 年 11 月 11 日 Half Note, NYC**，1st set 出 tk.5〈Jeannine〉與 tk.6〈Pure D. Funk (theme)〉、3rd set 出 tk.14〈Kimyas〉、4th set 出 tk.17〈When Sunny Gets Blue〉；編制標「same personnel」，即與 Vol. 1 同一組人。附註「also released on Blue Note BST 84061 **in 1963**, CDP 7 46540 2 in 1987」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/"
+   },
+   {
+    "f": "**Discogs 實體盤面條目：BLP 4061 與 BST 84061 的最早美國原壓全部標 1963**——`catno=BLP 4061` 三筆美國盤分別是 1963 Mono、1963 Repress、1966 Repress；`catno=BST 84061` 最早兩筆是 1963 US Stereo（Blue Note Records Inc.），其後 1966／1970 repress、1978 JP GXK 8105。**整個 Discogs 沒有任何一筆 1961 或 1962 的 4061／84061 壓片**。對照姊妹盤 BLP 4060《Vol. 1》在池中與各家都記 1961——兩集之間確實隔了約兩年。",
+    "src": "https://api.discogs.com/database/search?catno=BST+84061&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基把兩集寫在同一條目《At the Half Note Cafe》：1960 年 11 月 11 日在曼哈頓 Half Note 錄音、**「released on Blue Note the following year」（即 1961）**，infobox 也寫 released 1961、label「BLP 4060 (Vol. 1) / BLP 4061 (Vol. 2)」、分類掛「1961 live albums」。編制 Donald Byrd（trumpet）、Pepper Adams（baritone sax）、Duke Pearson（piano）、Laymon Jackson（bass）、Lex Humphries（drums）；製作 Alfred Lion、錄音兼母帶 Rudy Van Gelder、封面設計 Reid Miles、攝影 Francis Wolff、內頁文案 Leonard Feather。Vol. 2 的 A 面〈Jeannine〉（Duke Pearson 作）、〈Pure D. Funk〉，B 面〈Kimyas〉、〈When Sonny Gets Blue〉（Marvin Fisher／Jack Segal 作）。AllMusic 四顆半星（Thom Jurek：「This was a hot quintet, one that not only swung hard, but possessed a deep lyricism and an astonishing sense of timing」）；《Penguin Guide to Jazz》三顆（1992 年第 1 版 p.171）評「impeccable played and atmospherically recorded, but they tend to show off the best and worst of Byrd」。⚠ **維基這條「the following year」與 jazzdisco／Discogs 的 1963 對立，且維基沒有為 Vol. 2 單獨舉證**。",
+    "src": "https://en.wikipedia.org/wiki/At_the_Half_Note_Cafe"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1443125518）盤名「At the Half Note Cafe (Vol. 2 / Live At the Half Note Cafe, NY/1960/Remastered 2015) [feat. Pepper Adams, Duke Pearson, Laymon Jackson & Lex Humphries]」、掛名 Donald Byrd、4 軌、**releaseDate 1963-01-01**、「A Blue Note Records release; ℗ 2015 Capitol Records, LLC」；4 軌曲名曲序與 BLP 4061 原盤逐軌相同（Jeannine／Pure D. Funk／Kimyas／When Sonny Gets Blue），長度 770／390／720／377 秒 vs 原盤 766／369／719／350 秒（差 4–27 秒，2015 remaster 保留了較多場內收音與掌聲），四軌全部有試聽。**Apple 的 1963-01-01 是「年＋01-01」占位形（第 484 條），不能當發行日用，但它指向的年是 1963 而不是 1961，與 jazzdisco／Discogs 同向。**",
+    "src": "https://itunes.apple.com/lookup?id=1443125518&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "串流採信 1443125518",
+    "src": "https://itunes.apple.com/lookup?id=1443125518&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一個晚上、同一組人，Blue Note 把 Half Note 的四個 set 剪成兩張唱片——Vol. 1 在 1961 年上架，Vol. 2 的盤面卻要等到 1963 年才印出來",
+   "〈Jeannine〉一首就吃掉 12 分 46 秒、〈Kimyas〉11 分 59 秒：四首曲子、三個 set，這張碟的節奏是夜店的節奏，不是錄音室的"
+  ],
+  "sound": "4 軌、約 36 分 44 秒的現場五重奏：Donald Byrd 的小號與 Pepper Adams 的上低音薩克斯風兩管在前，Duke Pearson 的鋼琴、Laymon Jackson 的貝斯、Lex Humphries 的鼓在後。兩首長曲（〈Jeannine〉12:46、〈Kimyas〉11:59）走延伸獨奏的硬咆勃路子，〈Pure D. Funk〉是 6 分多的 theme，〈When Sunny Gets Blue〉是唯一的慢板標準曲。全程收進 Half Note 的場內聲響。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Jeannine",
+   "Kimyas",
+   "When Sunny Gets Blue"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與 prop 不一致，建議改 1961 → 1963。** prop／策展層第 521 條取 1961 的兩個依據是（a）維基「released the following year」與（b）姊妹卡 Vol. 1＝1961；但這兩者其實同源於「兩集一起發」的假設，維基沒有為 Vol. 2 單獨舉證。三條指向 1963 的證據互相獨立：**jazzdisco 目錄頁 BLP 4061＝1963（且同頁 4060＝1961，是分開寫的，不是一筆帶過）**、**Discogs 實體盤面 BLP 4061／BST 84061 最早美國原壓全部 1963、無任何 1961–62 壓片**、Apple 店面 releaseDate 年份 1963。依第 509b 條「同期紙本＞廠牌目錄頁＞jazzdisco 年份欄」的序位，本張沒查到同期紙本（worldradiohistory 的 1961 年 1–3 月缺期、1963 年的 Blue Note 廣告本層未掃到 4061），但**廠牌目錄頁與實體盤面兩條硬證據都指 1963，而 1961 只有維基一條軟證據**。⚠ 另注意 MB first-release-date 1960-11-11 是演出日（第 528 條已記），不可採。**建議年份 1963；若主線堅持與姊妹卡對齊而維持 1961，請在 rulings 記下這是「與 jazzdisco＋Discogs 對立」的一筆。**",
+  "notes": "**現場盤，四張之一。場地全名：Half Note Cafe（Half Note Club），紐約曼哈頓；演出日 1960 年 11 月 11 日。**｜**同場拆盤：Vol. 1（BLP 4060，池中已有）↔ Vol. 2（本卡），同一晚、同一組人、拆成兩張唱片，正文不得寫成兩場、不得互抄曲目。**jazzdisco 指出四軌各出自 1st／3rd／4th 三個不同 set。｜⚠ **年份有疑議，見 yearVerified：建議 1963。若改成 1963，正文就不能寫「與 Vol. 1 同年發行」。**｜MB 坑：原盤 release 4bdc08a7 的 catno 登錄成「11」，正文／卡單一律寫 BLP 4061（stereo BST 84061）。｜**人名邊界**：Pepper Adams／Duke Pearson／Laymon Jackson／Lex Humphries 有 MB 原盤 artist-credit＋jazzdisco＋維基三重背書，可寫；Reid Miles（設計）、Francis Wolff（攝影）、Leonard Feather（文案）只在維基，可不提。｜掛名：MB credit 是五人並列，卡單收攏成 `Donald Byrd`（第 462 條側人並列，池中 Vol. 1 同掛），成立。｜**串流採信 1443125518**（us，4 軌逐軌同序同名，長度差來自 remaster 保留的場內聲）。**這張補上了缺試聽的六張之一。**｜非選輯：單一場演出的原創現場專輯。"
+ },
+ {
+  "key": "desc2:Wes Montgomery|Montgomeryland",
+  "artist": "Wes Montgomery",
+  "album": "Montgomeryland",
+  "facts": [
+   {
+    "f": "release-group 4b3e888f 的欄位：title「Montgomeryland」、artist-credit 是**七個 Person 並列**「Monk Montgomery, Wes Montgomery, Buddy Montgomery, Harold Land, Pony Poindexter, Louis Hayes, Tony Bazley」、first-release-date 1960、primary-type Album、secondary-types 空。轄下六筆：**原盤 6fb6fcee 是 1960 US Official Pacific Jazz PJ-5、12 吋 8 軌**，credit 就是那七人並列；1990 US CD 2dce060b《Far Wes》（Pacific Jazz CDP 7 94475 2，11 軌，credit 改成 Wes Montgomery）與同年 11 軌 LP 6a53c645；2016 XE CD c056d37c（Poll Winners PWR 27357，17 軌）；2018-10-17 JP CD 39405cb5（Pacific Jazz UCCQ-9398，11 軌）；**2020-02-21 XW 數位 0d2bb057 是唯一掛 Blue Note 的一筆（11 軌，credit Wes Montgomery）**。原 LP 8 軌曲序：〈Monk's Shop〉〈Summertime〉〈Falling in Love〉〈Renie〉〈Far Wes〉〈Leila〉〈Old Folks〉〈Wes' Tune〉（MB 未填長度）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4b3e888f-60de-4d11-99cf-dc2e0b5814bd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Pacific Jazz 分年 discography 把 PJ-5 的 8 軌拆成**兩場、相隔一年半**：(1)**1958 年 4 月 18 日，洛杉磯，掛名「Wes Montgomery - Harold Land Quintet」**，Harold Land（tenor sax）、Buddy Montgomery（piano）、Wes Montgomery（guitar）、Monk Montgomery（Fender electric bass）、Tony Bazley（drums），母帶序 4321〈Far Wes〉、4322〈Leila〉、4323〈Old Folks〉、〈Wes' Tune〉四首進 PJ-5；同場另外三首（〈Hymn For Carl〉〈Montgomery Funk〉〈Stompin' At The Savoy〉）沒進 PJ-5，去了 PJ-17。(2)**1959 年 10 月 1 日，洛杉磯，掛名「Wes Montgomery Quintet」**，Pony Poindexter（alto sax，只在第 1、3、4 首）、Buddy Montgomery（piano）、Wes Montgomery（guitar）、Monk Montgomery（Fender electric bass）、**Louis Hayes（drums）**，出〈Monk's Shop〉、6555〈Summertime〉、6557〈Falling In Love With Love〉、〈Renie〉。目錄列「* Pacific Jazz PJ-5, ST-5 — Monk Montgomery, Wes Montgomery, Buddy Montgomery - Montgomeryland **1960**」。八軌後來全收進 Blue Note BN-LA531-H2《Wes Montgomery - Beginnings》（1975）。",
+    "src": "https://www.jazzdisco.org/pacific-jazz-records/discography-1957-1958/"
+   },
+   {
+    "f": "同一份 jazzdisco 的 1959–1960 分頁記 1959-10-01 那場，並列出該場四首的後續去向（PJ-5、World Pacific WP-1289、Pacific Jazz ST-20137《A Portrait Of Wes Montgomery》1968、Blue Note BN-LA531-H2 1975、單曲 Pacific Jazz X-301〈Summertime〉/〈Fingerpickin'〉1960）。**Monk Montgomery 在兩場都彈 Fender 電貝斯**——這是 1958–59 年爵士錄音裡相當早的電貝斯用例，兩場的編制註記都寫「Fender electric bass」。",
+    "src": "https://www.jazzdisco.org/pacific-jazz-records/discography-1959-1960/"
+   },
+   {
+    "f": "Discogs 實體盤面：`catno=PJ-5` 的美國原壓是 **1960 US Pacific Jazz PJ-5 Vinyl LP Album Stereo**，掛名就是 MB 那串七人並列「Monk Montgomery, Wes Montgomery, Buddy Montgomery, Harold Land, Pony Poindexter, Louis Hayes, Tony Bazley - Montgomeryland」。**沒有 1958／1959 的 PJ-5 壓片**，PJ-5 這個號本身是 1960 年的。",
+    "src": "https://api.discogs.com/database/search?catno=PJ-5&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基沒有《Montgomeryland》條目，只有 1990 年再發版《Far Wes》的條目，該條目開頭寫「Far Wes is a reissue of Montgomeryland, **a 1958 album by the Montgomery Brothers**, including guitarist Wes Montgomery」，並列出 11 軌再發曲序與「Original release track listing」8 軌（Monk's Shop 3:58、Summertime 4:53、Falling in Love 6:16、Renie 3:33、Far Wes 5:55、Leila 3:30、Old Folks、Wes' Tune）；AllMusic 的 Scott Yanow 稱它是「historical album」、Montgomery 的「sound was already quite recognizable」。⚠ **維基這句「a 1958 album」是把最早那場錄音年當成發行年，與 jazzdisco 目錄頁與 Discogs 原壓的 1960 對立，不採。**",
+    "src": "https://en.wikipedia.org/wiki/Far_Wes"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1498968787，第 529 條的觀察值）盤名「Montgomeryland」、掛名 Wes Montgomery、**11 軌，是 1990 年《Far Wes》的擴充曲序、不是 PJ-5 的 8 軌原盤形**；MB 那筆 2020-02-21 掛 Blue Note 的數位版也是 11 軌，兩者同形。本張本來就不在缺試聽名單裡（第 254 條只要求對缺試聽的六張跑三種查法），本層未逐軌重跑。",
+    "src": "https://itunes.apple.com/lookup?id=1498968787&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Pacific Jazz 把 1958 年 4 月和 1959 年 10 月的兩場拼成一張 LP，盤面上並排印了七個名字——沒有領班，Wes Montgomery 只是其中一個",
+   "兩場之間隔了一年半，唯一不變的是 Monk Montgomery 手上那把 Fender 電貝斯：1958 年的爵士錄音裡，這還是個新東西"
+  ],
+  "sound": "8 軌的西岸小編制爵士，吉他在前、電貝斯墊底。1958 年那半邊（〈Far Wes〉〈Leila〉〈Old Folks〉〈Wes' Tune〉）是 Harold Land 的次中音薩克斯風＋Wes 吉他的五重奏；1959 年那半邊（〈Monk's Shop〉〈Summertime〉〈Falling in Love with Love〉〈Renie〉）換成 Pony Poindexter 的中音薩克斯風與 Louis Hayes 的鼓。兩場都有 Buddy Montgomery 的鋼琴與 Monk Montgomery 的 Fender 電貝斯。標準曲兩首（〈Summertime〉〈Falling in Love with Love〉），其餘是 Wes 自己的曲子。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Far Wes",
+   "Monk's Shop",
+   "Summertime"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1960（首發年），與 prop 相同。jazzdisco Pacific Jazz 目錄「* Pacific Jazz PJ-5, ST-5 … 1960」、Discogs `catno=PJ-5` 美國原壓 1960、MB first-release-date 1960 與原盤 release 6fb6fcee 的 1960，四邊一致。錄音是 **1958-04-18（4 軌）與 1959-10-01（4 軌）兩場，洛杉磯**，都不是發行年。⚠ **維基《Far Wes》條目寫「a 1958 album」是取了較早那場的錄音年，不採（第 484 條同形）。** 本張原盤是 Pacific Jazz、不是 Blue Note（第 522 條已判成立），Blue Note 只有 2020-02-21 的數位再發。",
+  "notes": "**原盤他廠：Pacific Jazz PJ-5／ST-5（1960），Blue Note 只在 2020-02-21 出過數位再發（MB release 0d2bb057）。正文不得寫成 Blue Note 的碟。**｜**掛名（第 525 條已判、本層覆核成立）**：MB 與 Discogs 原盤都是七個 Person 並列、沒有單一領班，但 jazzdisco 把兩場分別記成「Wes Montgomery - Harold Land Quintet」與「Wes Montgomery Quintet」——**兩場的掛名都以 Wes 為首**，收攏到 `Wes Montgomery` 有出處，成立。｜**正文不得寫成「三兄弟合輯」**：1958 場是 Wes＋Buddy＋Monk＋Harold Land＋Tony Bazley，1959 場是 Wes＋Buddy＋Monk＋Pony Poindexter＋Louis Hayes——**Harold Land 與 Pony Poindexter 不在同一場**，兩場的第五人也不同。｜**兩場相隔一年半、曲目分屬兩半，正文不得寫成一次錄音。**｜**人名邊界**：Harold Land／Pony Poindexter／Buddy Montgomery／Monk Montgomery／Louis Hayes／Tony Bazley 有 MB 原盤 credit＋jazzdisco 雙重背書，可寫。｜⚠ **Monk Montgomery 的 Fender 電貝斯**只在 jazzdisco 的編制註記裡（兩場都寫「Fender electric bass」），**可寫「他在這兩場用的是 Fender 電貝斯」，不得寫成「爵士史上第一把電貝斯」（第 253 條無出處的「第一」）。**｜串流：us 1498968787 是 11 軌《Far Wes》形、非 8 軌原盤形；本張不在缺試聽名單，**本層不寫串流採信**。｜非選輯：兩場 session 拼成的原創專輯，不是精選。"
+ },
+ {
+  "key": "desc2:Carmell Jones|The Remarkable Carmell Jones",
+  "artist": "Carmell Jones",
+  "album": "The Remarkable Carmell Jones",
+  "facts": [
+   {
+    "f": "release-group 2c511b44 的欄位：title「The Remarkable Carmell Jones」、artist-credit「Carmell Jones also featuring Harold Land」（Carmell Jones 7c2b9eb2 Person、Harold Land Person）、first-release-date 1961、primary-type Album、secondary-types 空。轄下三筆：**原盤 7a115999 是 1961 US Official Pacific Jazz STEREO-29、12 吋 6 軌**；1984 GB 12 吋 cc0c1c40（Affinity 132，6 軌，credit 只寫 Carmell Jones）；**2023-03 XW 12 吋 e352215a 是 Blue Note Tone Poet 再發（Blue Note B0034579-01／Pacific Jazz ST-29／STEREO-29，6 軌，credit「Carmell Jones Featuring Harold Land」）**。原 LP 6 軌曲序：〈I'm Gonna Go Fishing〉〈Come Rain or Come Shine〉〈Night Tide〉〈Sad March〉〈Stellisa〉〈Full Moon and Empty Arms〉（MB 未填長度）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2c511b44-bb45-46ba-9a5b-1d0029ee0dc1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Pacific Jazz 1961–1962 discography 把 PJ-29 的 6 軌拆成**同一組人、三次進棚**，全部在 Pacific Jazz Studios, Los Angeles：編制固定為 Carmell Jones（trumpet）、Harold Land（tenor sax）、Frank Strazzeri（piano）、Gary Peacock（bass）、Leon Petties（drums），掛名「Carmell Jones Quintet」。**1961 年 6 月 13 日**出〈Full Moon And Empty Arms〉與〈Blues March〉（後者沒進本張，去了單曲 X-326 與合輯 PJ-100）；**1961 年 6 月 14 日**出〈Night Tide〉〈Sad March〉〈Stellisa〉；**1961 年 6 月 30 日**出〈I'm Gonna Go Fishin'〉〈Come Rain Or Come Shine〉。目錄三處都列「* Pacific Jazz PJ-29, ST-29 — The Remarkable Carmell Jones **1961**」，並註 2003 年全部收進 Mosaic MS-002《Carmell Jones - Mosaic Select》。",
+    "src": "https://www.jazzdisco.org/pacific-jazz-records/discography-1961-1962/"
+   },
+   {
+    "f": "Discogs 實體盤面：`catno=PJ-29` 的兩筆美國原壓都是 **1961**——「1961 US Pacific Jazz Vinyl/LP/Album/Stereo PJ-29」與「1961 US Pacific Jazz／World-Pacific Records Vinyl/LP/Album/Mono PJ-29」，兩筆盤面掛名都印「Carmell Jones Featuring Harold Land」。沒有更早的壓片。",
+    "src": "https://api.discogs.com/database/search?catno=PJ-29&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基沒有本專輯條目，只有藝人條目〈Carmell Jones〉：Carmell Jones（1936-07-19 堪薩斯州堪薩斯市 – 1996-11-07）五歲學鋼琴、七歲學小號，最早在堪薩斯市與 Nathan Davis、Cleanhead Vinson、Frank Smith 一起工作，**1961 年搬到加州**，之後幾年當錄音室樂手（《Seven Days in May》與《The Manchurian Candidate》兩部電影配樂的樂團都有他），**這段期間在 Pacific Jazz 以領班身分出了兩張唱片**，同時以側人身分錄 Bud Shank、Onzy Matthews、Curtis Amy、Harold Land、Gerald Wilson 的盤。1964–65 隨 Horace Silver 巡演、參與 1965 年 Blue Note 的《Song for My Father》。1965 年移居德國住了 15 年，1968–80 在 SFB 大樂團。條目的 as leader 清單第一筆就是「The Remarkable Carmell Jones (Pacific Jazz, **1961**)」，第二、三筆是 1962 年的《Brass Bag》與《Business Meetin'》。",
+    "src": "https://en.wikipedia.org/wiki/Carmell_Jones"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1450312743，第 529 條的觀察值）形狀與原盤一致（6 軌）。本張不在缺試聽的六張名單裡，本層未逐軌重跑；CAA 有 front（第 529 條 21/22 之一），2023 Tone Poet 再發（Blue Note B0034579-01）用的是同一張 Pacific Jazz 原封面。",
+    "src": "https://itunes.apple.com/lookup?id=1450312743&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1961 年六月，Carmell Jones 剛搬到加州，Pacific Jazz 連著三次把同一組五個人叫進錄音室，湊出他生涯第一張領銜唱片",
+   "貝斯是 Gary Peacock——十年後他會是 Keith Jarrett 三重奏的一半；這裡他還在洛杉磯，替一個從堪薩斯來的小號手墊底"
+  ],
+  "sound": "6 軌的西岸硬咆勃五重奏：Carmell Jones 的小號與 Harold Land 的次中音薩克斯風兩管在前，Frank Strazzeri 鋼琴、Gary Peacock 貝斯、Leon Petties 鼓。三首 Jones 自己的曲子（〈Night Tide〉〈Sad March〉〈Stellisa〉），兩首標準曲（〈Come Rain or Come Shine〉〈Full Moon and Empty Arms〉），加〈I'm Gonna Go Fishing〉。原盤是 Pacific Jazz 的立體聲盤（STEREO-29）。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Night Tide",
+   "I'm Gonna Go Fishing",
+   "Come Rain or Come Shine"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1961（首發年），與 prop 相同。jazzdisco Pacific Jazz 目錄三處都寫 PJ-29／ST-29＝1961、Discogs 美國原壓兩筆（mono＋stereo）皆 1961、MB first-release-date 1961 與原盤 release 7a115999 的 1961、維基藝人條目的 as-leader 清單也記 1961——四邊一致。錄音 1961-06-13／06-14／06-30，Pacific Jazz Studios, Los Angeles，三場都在同年，與發行年同年。原盤他廠 Pacific Jazz（第 522 條已判成立），Blue Note 的關聯是 2023-03 的 Tone Poet 再發。",
+  "notes": "**原盤他廠：Pacific Jazz PJ-29／ST-29（1961）。Blue Note 的關聯只有 2023 年 3 月的 Tone Poet 再發（B0034579-01）。正文不得寫成 1961 年的 Blue Note 碟。**｜掛名：MB RG credit「Carmell Jones also featuring Harold Land」是 featured 側人、不是對等聯名，卡單 `Carmell Jones` 成立（第 525 條）；盤面實際印「Carmell Jones Featuring Harold Land」（Discogs 兩筆原壓與 2023 Tone Poet 都是），**這個寫法進 queryAlias 即可，不要寫進卡單掛名**。｜**這是 Carmell Jones 以領班身分的第一張唱片**——維基藝人條目的 as-leader 清單以它開頭、其後是 1962 年兩張；**可寫「他領銜的第一張」，但不要寫成「他的第一次錄音」**（他此前已以側人身分錄音）。｜**人名邊界**：Harold Land／Frank Strazzeri／Gary Peacock／Leon Petties 有 jazzdisco 三場編制＋MB／Discogs 盤面背書，可寫。｜**三場錄音、同一組人**，正文可寫「三次進棚」，不得寫成三個不同編制。｜串流：不在缺試聽六張內，第 529 條觀察值 1450312743 形狀與原盤一致，**本層未逐軌核，不寫串流採信**。｜非選輯：同一五重奏三場的原創專輯。｜姊妹關係：同組的 Curtis Amy & Frank Butler《Groovin' Blue》（本批第 17 筆，PJ-19）編制裡也有 Carmell Jones 與 Frank Strazzeri——**兩張是不同的碟、不同的領班，正文不得互指為同一組人的作品**。"
+ },
+ {
+  "key": "desc2:Donald Byrd|Royal Flush",
+  "artist": "Donald Byrd",
+  "album": "Royal Flush",
+  "facts": [
+   {
+    "f": "release-group 65fea999 的欄位：title「Royal Flush」、artist-credit「Donald Byrd」（Person 69f95e5c）、first-release-date 1961-09-21（⚠＝錄音日）、primary-type Album、secondary-types 空。轄下七筆：**原盤 eae40598 是 1961-09-21 US Official Blue Note BST 84101、12 吋 6 軌**（date 欄直接填了 session 日）；1999-11-26 JP CD 00607f2a（Blue Note ST-84101／TOCJ-9157）；2006 US 與 XE CD 各一（0946 3 62632 2 9）；2013 US Music Matters 雙 45 轉 bfcdc20a（MMBST 84101，3＋3 軌）；2021-06-22 US 數位 e0f537b5；2024-10-18 12 吋 b4b90feb（Blue Note／UMe 6500765，Classic Vinyl 形）。原 LP 6 軌：〈Hush〉6:27、〈I'm a Fool to Want You〉6:20、〈Jorgie's〉8:12、〈Shangri-La〉6:41、〈6 M's〉6:34、〈Requiem〉7:11，全長約 41 分 45 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65fea999-31df-3a3b-a9a5-d6c88aebc8e8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note **4100** 系列目錄（4000 系列頁只到 BLP 4100，本張要翻下一頁）記「BLP 4101 Donald Byrd - Royal Flush **1962**」，單一場錄音：**1961 年 9 月 21 日 Van Gelder Studio, Englewood Cliffs, NJ**，編制 Donald Byrd（trumpet）、Pepper Adams（baritone sax）、**Herbie Hancock（piano）**、Butch Warren（bass）、Billy Higgins（drums），母帶序 tk.1〈Jorgie's〉、tk.6〈Shangri-La〉、tk.10〈Hush〉、tk.16〈6 M's〉、tk.19〈Requiem〉、tk.26〈I'm A Fool To Want You〉。附註「also released on Blue Note BST 84101 in 1962」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+   },
+   {
+    "f": "英文維基《Royal Flush (album)》：1961 年 9 月 21 日錄於 Van Gelder Studio（Englewood Cliffs），**「released on Blue Note the following year」**，infobox 的 released 欄寫「**September 1962**」並直接引《Billboard》1962 年 9 月 22 日第 74 頁；製作 Alfred Lion。Background 一節只有一句話：**「The album is Herbie Hancock's first Blue Note session to be released.」**（Hancock 的《Takin' Off》錄於 1962 年 5 月）。曲目作者除〈I'm a Fool to Want You〉（Joel Herron／Frank Sinatra／Jack Wolf）與〈Requiem〉（Hancock 作）外都是 Byrd；Pepper Adams 在〈I'm a Fool to Want You〉不吹。AllMusic 的 Stephen Thomas Erlewine 評「For the most part, the quintet plays a set of vital hard bop... But what's really interesting is when they begin pushing the boundaries.」",
+    "src": "https://en.wikipedia.org/wiki/Royal_Flush_(album)"
+   },
+   {
+    "f": "⚠ **Discogs 與上面三邊對立**：`catno=BLP 4101` 與盤名檢索回到的最早兩筆美國壓片是 **1961** 標年——release 3994366「1961 US Blue Note Records Inc. Vinyl/LP/Album/Mono BLP 4101」與 release 17330191「1961 US Vinyl/LP/Album/Stereo BST 84101」；其後才是 1962 的 ST-84101（release 1807085）、1966／1970／1973–78 的一連串 reissue。**本層判 Discogs 這兩筆的 year 欄是投稿者依錄音日回填（與 MB 的 first-release-date＝1961-09-21 同形），不採**：jazzdisco 目錄頁、維基所引的 Billboard 1962-09-22、以及 4100 號段整段都是 1962 年的碟（4102《Hey There!》也是 1962），三者一致。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4101&type=release&per_page=100"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 715588020，第 529 條的觀察值）形狀與原盤一致；⚠ 其 releaseDate 標 **1961-09-21**，與 MB 原盤 release 的日期一字不差——**這是第 431 條講的「兩個來源逐日相符其實是同一份母帶／同一份 metadata」的典型**，兩者不能互相佐證。本張不在缺試聽的六張名單裡，本層未逐軌重跑。",
+    "src": "https://itunes.apple.com/lookup?id=715588020&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1961 年 9 月 21 日，二十一歲的 Herbie Hancock 第一次走進 Van Gelder 的錄音室替 Blue Note 錄音——這張碟是他在這家廠牌最早問世的聲音，比他自己的《Takin' Off》還早",
+   "六首曲子裡，最後一首〈Requiem〉是那個剛進來的鋼琴手寫的；其餘除了一首 Sinatra 的歌，全是 Donald Byrd 自己的"
+  ],
+  "sound": "6 軌、約 41 分 45 秒的硬咆勃五重奏：Donald Byrd 的小號與 Pepper Adams 的上低音薩克斯風兩管在前（〈I'm a Fool to Want You〉只有小號），Herbie Hancock 的鋼琴、Butch Warren 的貝斯、Billy Higgins 的鼓在後。四首 Byrd 原創（〈Hush〉〈Jorgie's〉〈Shangri-La〉〈6 M's〉）、一首 Hancock 的〈Requiem〉、一首慢板標準曲〈I'm a Fool to Want You〉。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Hush",
+   "Requiem",
+   "Jorgie's"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1962（首發年），與 prop 相同（策展層第 521 條已由 1961 改到 1962，本層追認）。三條證據：**jazzdisco 4100 系列目錄「BLP 4101 … 1962」＋附註「BST 84101 in 1962」**、**維基 infobox 的 released「September 1962」並直引《Billboard》1962-09-22 第 74 頁**（同期紙本，序位最高）、**4100 號段整段是 1962 年的碟**（同批的 BLP 4102《Hey There!》亦然）。⚠ **兩個要擋下的來源**：MB first-release-date 與原盤 release 的 date 都是 1961-09-21＝錄音日（第 484 條）；Apple 的 releaseDate 與它逐日相符，是第 431 條的同源，不能算第二個來源。⚠ **另有一筆新發現的對立**：Discogs 的 BLP 4101 mono（3994366）與 BST 84101 stereo（17330191）兩筆都標 1961——這與第 521 條記的「Discogs 原壓 1962」不同，本層實查如此。判定不採（同樣是錄音年回填），**但主線若要重新裁定，這是可逆的卡單值**。本層未掃到 Billboard 1962-09-22 原頁（worldradiohistory 的 1962 年各期為週六日期、本層 OCR 佇列未跑到該期），維基的頁碼引用是現有最強的同期紙本線索。",
+  "notes": "**Herbie Hancock 的 Blue Note 首度問世**——維基 Background 一節原句「The album is Herbie Hancock's first Blue Note session to be released」。**可寫「他在 Blue Note 最早問世的錄音」，不得寫成「他的第一次錄音」或「他的出道」**（他 1961 年前已與 Donald Byrd 等人工作），第 253 條。｜掛名：MB RG credit 就是 `Donald Byrd`（Person），與池中同字串，無爭議。｜盤名：MB RG title「Royal Flush」，原盤 release title 相同，無變體問題。｜**人名邊界**：Pepper Adams／Herbie Hancock／Butch Warren／Billy Higgins 有 jazzdisco 編制＋維基 personnel 雙重背書，可寫。｜⚠ **與本批另兩張 Donald Byrd 的關係**：本卡（BLP 4101，1962，錄音室）與第 1 筆《At the Half Note Cafe, Volume 2》（BLP 4061，現場，1960-11-11 演出）**編制完全不同**（Half Note 是 Pepper Adams＋Duke Pearson＋Laymon Jackson＋Lex Humphries），**正文不得把兩張的班底混寫**；共同點只有 Pepper Adams 一人。｜串流：不在缺試聽六張內，第 529 條觀察值 715588020，**其 releaseDate 與 MB 同源（第 431 條），本層不寫串流採信**。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Leo Parker|Let Me Tell You 'Bout It",
+  "artist": "Leo Parker",
+  "album": "Let Me Tell You 'Bout It",
+  "facts": [
+   {
+    "f": "release-group 43b79a38 的欄位：title「Let Me Tell You ’Bout It」（印刷體彎撇號）、artist-credit「Leo Parker」（Person）、first-release-date 1961-12、primary-type Album、secondary-types 空。轄下三筆：**原盤 c7435dd1 是 1961-12 US Official Blue Note catno 4087、12 吋 7 軌**（release title 用 ASCII 直撇號）；2005-09-13 US CD c5ac6c83（Blue Note 0946 3 11490 2 3，9 軌）；2005 XE CD 4de946a2（0946 3 11491 2 2，9 軌）。原 LP 7 軌：〈Glad Lad〉5:18、〈Blue Leo〉5:06、〈Let Me Tell You 'Bout It〉4:19、〈VI〉4:42、〈Parker's Pals〉6:22、〈Low Brown〉5:49、〈TCTB〉6:26，全長約 38 分 2 秒。**原盤 release 帶月份（1961-12），是本組少數 MB 有月份的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=43b79a38-3c8c-3e83-8881-4cbc1352f966&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4000 系列目錄記「BLP 4087 Leo Parker - Let Me Tell You 'Bout It **1961**」，單一場錄音：**1961 年 9 月 9 日 Van Gelder Studio, Englewood Cliffs, NJ**，編制 John Burks（trumpet，第 1–6 首）、Bill Swindell（tenor sax，第 1–6 首）、Leo Parker（baritone sax）、Yusef Salim（piano）、Stan Conover（bass）、Purnell Rice（drums），母帶序 1. tk.4〈Gland Lad〉、2. tk.6〈Low Brown〉、3. tk.9〈Parker's Pals〉、4. tk.11〈TCTB〉、5. tk.25〈Vi〉、6. tk.28〈Let Me Tell You 'Bout It〉、7. tk.31〈Blue Leo〉。附註「also released on Blue Note BST 84087 **in 1962**, (J) DY-5801-02 in 1983, CDP 7 84087 2 in 1990」——**mono 原盤 1961、stereo 版隔年**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/"
+   },
+   {
+    "f": "Discogs 實體盤面：`catno=BLP 4087` 的美國原壓是 **1961 US Blue Note Records Inc. Vinyl/LP/Album/Mono BLP 4087**，下一筆同號美國盤已是 1966 repress。沒有 1960 或 1962 的 4087 首壓。（同號在 2004 年之後被 BOMP! 廠牌重複使用於 Black Lips 的唱片，與本張無關。）",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4087&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基《Let Me Tell You 'bout It》：**「is the debut album by American jazz saxophonist Leo Parker」**，1961 年 9 月 9 日錄音、同年稍晚由 Blue Note 發行；infobox 的 released 欄 1961、studio Van Gelder Studio（Englewood Cliffs）、label「Blue Note／BST 84087」、producer Alfred Lion、length「37:58（original LP）／50:48（CD reissue）」；chronology 的 prev 是 1957 年的《Billy in the Lion's Den》、next 是 1961 年的《Rollin' with Leo》。六重奏：Leo Parker（baritone sax）、Bill Swindell（tenor sax）、John Burks（trumpet）、Yusuf Salim（piano）、Stan Conover（bass）、Purnell Rice（drums）。曲目作者除〈Blue Leo〉（Parker 與 **Ike Quebec** 合寫）、〈Let Me Tell You 'bout It〉與〈Vi〉（Robert Lewis 作）外都是 Parker。AllMusic 的 Scott Yanow 給四星，評「Parker (who is joined by obscure sidemen) sounds in top form during his varied program which includes several hard swingers.」",
+    "src": "https://en.wikipedia.org/wiki/Let_Me_Tell_You_%27bout_It"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 715978965，第 529 條的觀察值）是 **9 軌的 RVG／擴充版**、不是 7 軌原盤形（MB 的兩筆 2005 CD 也是 9 軌，多出兩首）。本張不在缺試聽的六張名單裡，本層未逐軌重跑；若主線要對，原盤 7 軌的曲序見第一條 fact。CAA 的圖來源是 2005 CD 而不是 1961 原盤（第 529 條）。",
+    "src": "https://itunes.apple.com/lookup?id=715978965&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Leo Parker 1957 年後幾乎從唱片上消失，1961 年 9 月 9 日走進 Van Gelder 的錄音室，帶著一組沒人聽過的華府樂手，錄下他生涯第一張正式專輯",
+   "上低音薩克斯風當家、三管編制、七首曲子有四首是他自己寫的——〈Blue Leo〉那首還是跟 Ike Quebec 一起寫的"
+  ],
+  "sound": "7 軌、約 38 分鐘的硬咆勃六重奏，Leo Parker 的上低音薩克斯風領銜：John Burks 的小號與 Bill Swindell 的次中音薩克斯風在前六首加進來，節奏組是 Yusef Salim 的鋼琴、Stan Conover 的貝斯、Purnell Rice 的鼓。多為中快板的搖擺與藍調（〈Glad Lad〉〈Low Brown〉〈Parker's Pals〉），標題曲 4 分 19 秒是全碟最短的一首。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Glad Lad",
+   "Blue Leo",
+   "Let Me Tell You 'Bout It"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1961（首發年），與 prop 相同。四邊一致：**MB 原盤 release 帶月份 1961-12**、jazzdisco 目錄「BLP 4087 … 1961」、Discogs 美國原壓 1961 mono、維基 1961。錄音 1961-09-09 Van Gelder Studio, Englewood Cliffs，同年出版。⚠ **注意 stereo 版是隔年**：jazzdisco 附註「BST 84087 in **1962**」，而維基 infobox 的 label 欄寫的正是 BST 84087——**正文若要提目錄號，mono 的 BLP 4087 才是 1961 那張**。本層未在已掃的同期紙本裡找到 4087 的評論（Billboard 1961-12 各期尚未跑完 OCR 佇列），但 MB 的月份與 Discogs 原壓一致，無異說。",
+  "notes": "**這是 Leo Parker 的第一張正式領銜專輯**——維基開頭句「is the debut album by American jazz saxophonist Leo Parker」，可寫；**不得寫成「他的第一次錄音」**（他 1940 年代末就在 Savoy／Chess 等廠牌錄過，維基 chronology 的 prev 是 1957 年的《Billy in the Lion's Den》），第 253 條。｜盤名：MB RG title 用印刷體彎撇號「Let Me Tell You ’Bout It」，**1961 原盤 release title 本來就是 ASCII 直撇號**，卡單照第 473 條用 ASCII（第 527 條已定）。｜掛名：`Leo Parker` 是新掛名，第 307 條反查無同字串（第 525 條）。｜**人名邊界**：John Burks／Bill Swindell／Yusef Salim（維基拼 Yusuf Salim）／Stan Conover／Purnell Rice 有 jazzdisco 編制＋維基 personnel 雙重背書，可寫；**Ike Quebec 只是〈Blue Leo〉的共同作曲者、不在編制裡**，正文不得寫成他有參與演奏。｜⚠ 維基把樂手形容成「obscure sidemen」（AllMusic 語），**這是評論語不是事實，正文不要照抄成「沒沒無聞」的斷言**。｜串流：不在缺試聽六張內，第 529 條觀察值 715978965 是 9 軌擴充版，**本層不寫串流採信**。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Horace Silver|Doin' the Thing: Live at the Village Gate",
+  "artist": "Horace Silver",
+  "album": "Doin' the Thing: Live at the Village Gate",
+  "facts": [
+   {
+    "f": "release-group 391a0968 的欄位：title「Doin' the Thing: Live at the Village Gate」、artist-credit「The Horace Silver Quintet」（群組實體 e9ac5139）、first-release-date 1961-08、primary-type Album、**secondary-types [Live]**。轄下六筆：**原盤 a06b5e48 是 1961-08 US Official Blue Note BLP 4076、12 吋，MB 記 5 軌**（〈Flithy McNasty〉11:25、〈Doin' the Thing〉10:56、〈Kiss Me Right〉9:19、〈The Gringo〉10:38、〈The Theme〉1:06——**MB 把原 LP 的 4 首＋theme 拆算成 5 軌，見第 528 條**）；同年另一筆 9cf7f9a8 是 BST 84076 立體聲 **4 軌**，第 4 軌題「The Gringo / The Theme: Cool Eyes」——**這才是原 LP 的實際切軌**；1988 US CD be6924d6（CDP 7 84076 2，7 軌）；2006 US／XE CD 三筆（0946 3 62682 2 4，6 軌），其中 86ff98fe 題「Doin' the Thing (At the Village Gate)」。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=391a0968-ce85-3cce-bb13-52d5194b5eb1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4000 系列目錄記「BLP 4076 Horace Silver - Doin' The Thing **1961**」，並把曲目分成**連續兩晚**：編制固定為 Blue Mitchell（trumpet）、Junior Cook（tenor sax）、Horace Silver（piano）、Gene Taylor（bass）、Roy Brooks（drums）。**1961 年 5 月 19 日，Village Gate, Greenwich Village, NY**：tk.3〈Doin' The Thing〉、tk.4〈Filthy McNasty〉、〈Cool Eyes (theme)〉；**1961 年 5 月 20 日，同場地**：tk.17〈The Gringo〉、tk.21〈Kiss Me Right〉。附註「also released on Blue Note BST 84076, CDP 7 84076 2 in 1988」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/"
+   },
+   {
+    "f": "Discogs 實體盤面：`catno=BLP 4076` 最早兩筆都是 **1961 US**——一筆是正式的 Mono LP（catno 印 4076，label 欄 Blue Note），另一筆是 **1961 US Blue Note Records Inc. 的 Test Pressing**；其後是 1962 repress、1966 兩筆 repress、1973 的 84076 reissue。**沒有 1960 或 1962 的首壓。** 盤面題名是「Doin' The Thing - At The Village Gate」。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4076&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基《Doin' the Thing》：Horace Silver 的現場專輯，1961 年由 Blue Note 發行，**「It was the only live album released featuring the \"classic\" Horace Silver Quintet.」**；infobox：type live、artist「the Horace Silver Quintet」、recorded「May 19 & May 20, 1961」、venue「Village Gate, New York City」、genre Jazz／hard bop、length「43:39 original LP／53:56 CD reissue」、label「Blue Note／BST 84076」、producer Alfred Lion；chronology prev《Horace-Scope》(1960)、next《The Tokyo Blues》(1962)。Production 一欄：Alfred Lion 製作、**Reid Miles 設計、Rudy Van Gelder 錄音、Jim Marshall 攝影**（⚠ 攝影不是慣例的 Francis Wolff）。AllMusic 的 Scott Yanow 評「This live set finds pianist/composer Horace Silver and his most acclaimed quintet stretching out」；All About Jazz 的 Hrayr Attarian 評它「especially unique, not only because of its quality, but because it is the only live recording of his most famous quintet」。",
+    "src": "https://en.wikipedia.org/wiki/Doin%27_the_Thing"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 715516295）盤名「Doin' the Thing: The Horace Silver Quintet At the Village Gate」、掛名 Horace Silver、**6 軌**、releaseDate 1988-01-01（＝CD 年占位）、「℗ 2006 Blue Note Records」，六軌全部有試聽。逐軌比對原盤 BST 84076 的 4 軌切法：**第 1–4 軌與原盤同名同序**——〈Filthy McNasty〉662 秒、〈Doin' the Thing〉676 秒、〈Kiss Me Right〉559 秒（與 MB 的 559 秒一字不差）、〈The Gringo / The Theme: Cool Eyes〉721 秒（＝MB 拆算的 638＋66＝704 秒，同一段落）；**第 5–6 軌〈It Ain't S'Posed to Be Like That〉381 秒與〈Cool Eyes〉236 秒是 1988／2006 再發加的 bonus，不在 1961 原 LP 上**。這是第 254 條允許的「前 N 軌對應原盤」形（c-130 Perfect 先例）。",
+    "src": "https://itunes.apple.com/lookup?id=715516295&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "串流採信 715516295",
+    "src": "https://itunes.apple.com/lookup?id=715516295&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1961 年 5 月 19 日和 20 日兩個晚上，Horace Silver 把他那組跟了好幾年的五重奏搬進格林威治村的 Village Gate——這是這個編制唯一一張現場唱片",
+   "〈Filthy McNasty〉在夜店裡拉到 11 分 25 秒，錄音室版本從來沒這樣過；四首曲子就填滿一張 LP"
+  ],
+  "sound": "原 LP 4 軌（MB 把結尾的〈Cool Eyes〉主題拆算成第 5 軌）、約 43 分 39 秒的現場硬咆勃：Blue Mitchell 的小號與 Junior Cook 的次中音薩克斯風兩管在前，Horace Silver 的鋼琴、Gene Taylor 的貝斯、Roy Brooks 的鼓在後。四首全是 Silver 自己的曲子，每首都拉到 9–11 分鐘（〈Filthy McNasty〉11:25、〈Doin' the Thing〉10:56、〈The Gringo〉10:38、〈Kiss Me Right〉9:19），收場接〈Cool Eyes〉的主題。全程有 Village Gate 的場內聲響。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Filthy McNasty",
+   "Doin' the Thing",
+   "The Gringo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1961（首發年），與 prop 相同。四邊一致且其中兩條帶月份：**MB 原盤 release 帶月份 1961-08**、jazzdisco 目錄 1961、**Discogs 美國原壓 1961（含同年的 Test Pressing 一筆——測試壓片與正式壓片同年，是發行年落在 1961 的旁證）**、維基 1961。錄音 1961-05-19／05-20，Village Gate，紐約，同年發行。⚠ Apple 的 releaseDate 1988-01-01 是 CD 年占位（第 484 條），不採。本層未在已掃的同期紙本裡找到 4076 的評論（Billboard 1961 年 8–9 月各期 OCR 佇列尚未跑到），但四邊無異說。",
+  "notes": "**現場盤，四張之一。場地全名：Village Gate，紐約格林威治村（Bleecker Street）；演出日 1961 年 5 月 19 日與 20 日連續兩晚。**jazzdisco 把〈Doin' The Thing〉〈Filthy McNasty〉〈Cool Eyes〉歸 19 日、〈The Gringo〉〈Kiss Me Right〉歸 20 日——**正文若要寫「一個晚上」是錯的，是兩晚。**｜**同場沒有拆成兩張**（與本批另外三張現場盤不同），沒有 Volume 2。｜**「classic quintet 唯一一張現場唱片」**有維基與 All About Jazz 兩處背書，可寫。｜掛名：MB RG credit 是群組 `The Horace Silver Quintet`（e9ac5139），卡單收攏成 `Horace Silver`（第 482／525 條，池中 14 張；**a 組《Horace-Scope》同形，主線要對齊**）。｜盤名：變體很多——原盤「Doin' the Thing - At the Village Gate」、維基與 Apple「The Horace Silver Quintet at the Village Gate」、2006 RVG「Doin' the Thing (At the Village Gate)」——卡單照 MB RG title「Doin' the Thing: Live at the Village Gate」（第 527 條），其餘進 queryAlias。｜MB 坑（第 528 條第 3 點）：BLP 4076 那筆記 5 軌是把〈Cool Eyes〉主題拆出來算，**原 LP 是 4 軌**，BST 84076 那筆的 4 軌才對。｜**人名邊界**：Blue Mitchell／Junior Cook／Gene Taylor／Roy Brooks 有 jazzdisco＋維基雙重背書，可寫；Reid Miles（設計）、**Jim Marshall（攝影，⚠ 不是 Francis Wolff）** 只在維基，要提就提這個差異、否則不提。｜**串流採信 715516295**（us，前 4 軌與原盤同名同序、長度對得上，第 5–6 軌是再發 bonus，須註明）。**這張補上了缺試聽的六張之一。**｜非選輯：兩晚現場的原創專輯。"
+ },
+ {
+  "key": "desc2:Art Blakey and the Jazz Messengers|Meet You at the Jazz Corner of the World, Volume 1",
+  "artist": "Art Blakey and the Jazz Messengers",
+  "album": "Meet You at the Jazz Corner of the World, Volume 1",
+  "facts": [
+   {
+    "f": "release-group 47bfc480 的欄位：title「Meet You at the Jazz Corner of the World, Volume 1」、artist-credit「Art Blakey & The Jazz Messengers」（群組 209ddf15）、first-release-date 1961、primary-type Album、**secondary-types 空——MB 漏標 Live（第 523 條）**。轄下四筆：**原盤 585e08b2 是 1961 US Official Blue Note catno 4054、Vinyl 5 軌，title 作「Meet You at the Jazz Corner of the World (Volume 1)」**；2005 JP CD cdc283aa（Blue Note BST-84054／EMI Music Japan TOCJ-6587，5 軌）；2019-11-15 XW 12 吋 2b3f9aba（Blue Note BST 84054／ST-84054，5 軌）；2024-11-13 JP SHM-CD 4c870249（UCCQ-9764，7 軌）。原 LP 5 軌：〈The Opener〉9:36、〈What Know〉10:25、〈The Theme〉1:40、〈'Round About Midnight〉10:07、〈The Breeze and I〉10:35，全長約 42 分 23 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=47bfc480-a569-3a59-8a86-2ef842a68cba&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4000 系列目錄記「BLP 4054 Art Blakey & The Jazz Messengers - Meet You At The Jazz Corner Of The World Volume 1 **1961**」（下一號 BLP 4055 的 Volume 2 記 **1962**），並把五軌分成**同一晚的兩個 set**：編制 Lee Morgan（trumpet）、Wayne Shorter（tenor sax）、Bobby Timmons（piano）、Jymie Merritt（bass）、Art Blakey（drums）。**1960 年 9 月 14 日，Birdland, NYC, 3rd set**：tk.7〈What Know〉、tk.8〈The Theme〉；**同日 4th set**：tk.9〈The Breeze And I〉、tk.10〈The Opener〉、tk.12〈'Round Midnight〉。附註「also released on Blue Note BST 84054 in 1961」，全部收進 Mosaic MR10-141／MD6-141《The Complete Blue Note Recordings Of Art Blakey's 1960 Jazz Messengers》（1992）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/"
+   },
+   {
+    "f": "Discogs 實體盤面：`catno=BLP 4054` 的美國原壓是 **1961 US Blue Note Records Inc. Vinyl/LP/Album/Mono**，盤面題名「Meet You At The Jazz Corner Of The World (Volume 1)」；其後是 1963 Repress、1966 與 1976 的 84054 reissue。沒有 1960 或 1962 的首壓。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4054&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基把兩集寫在同一條目：兩張是「a pair of separate but related live albums by Art Blakey & the Jazz Messengers **recorded at the Birdland jazz club on September 14, 1960**」，**「released on Blue Note in July 1961 and May 1962 respectively」**；infobox 的 released 欄寫「July 1961 (Vol. 1)／May 1962 (Vol. 2)／January 8, 2002 (CD Reissue)」、label「BLP 4054 (Vol. 1)／BLP 4055 (Vol. 2)」、producer Alfred Lion、錄音兼 2002 remaster 由 Rudy Van Gelder。Background 一節：曲目以標準曲為主，**加上三首前任 Messenger 成員 Hank Mobley 寫的曲子**，Morgan 與 Shorter 各出一首，兩集都以 Miles Davis 常用的收場曲〈The Theme〉作結。維基也記 Volume 2 的曲目是**由 Birdland 的司儀 Pee Wee Marquette 報幕**。AllMusic 的 Lindsay Planer 評 Wayne Shorter「is quickly developing into the undaunted instrumentalist who would revolutionize modern jazz with Miles Davis in the mid-'60s」，並稱 Birdland（別號「the jazz corner of the world」）產出了 Blakey 最受推崇的幾張現場錄音。",
+    "src": "https://en.wikipedia.org/wiki/Meet_You_at_the_Jazz_Corner_of_the_World"
+   },
+   {
+    "f": "**串流：三種查法都沒有找到 5 軌原盤形的獨立條目（第 254 條，只寫觀察、不採信）。** (1) `search?term=Art Blakey Meet You at the Jazz Corner of the World&entity=album&country=us` 25 筆裡與本盤相關的只有 **723618161**（「Meet You at the Jazz Corner of the World」，2002-01-01，**13 軌**，℗ 2002 Blue Note）與 724336485（1959 年那張《At the Jazz Corner of the World》，10 軌，不同碟）；jp／gb 兩個店面回傳同樣結果。(2) 藝人目錄查法：`lookup?id=999447&entity=album&limit=200`（Art Blakey & The Jazz Messengers）與 id=331584（Art Blakey）全目錄裡，含「Corner」字樣的只有上面兩筆。(3) 逐軌核 723618161：它是 **Vol. 1＋Vol. 2 的 2002 雙碟合併版被店面攤平成 13 軌**——第一片 7 軌（〈Announcement by Pee Wee Marquette〉66 秒、〈The Opener〉509 秒、〈What Know〉627 秒、〈The Theme〉97 秒、〈Announcement by Art Blakey〉21 秒、〈Round About Midnight〉584 秒、〈The Breeze and I〉639 秒）確實對得上 BLP 4054 的五軌同序（**長度差正好是被拆出去的報幕：576－509≈66、607－584≈21**），但**第二片 6 軌〈High Modes〉〈Night Watch〉〈The Things I Love〉〈The Summit〉等整片是 Volume 2（BLP 4055）的內容**。依第 524 條，這種 Vol. 1＋2 合併再發**不是同一張碟**，故**不寫串流採信**。主線若要拿它補試聽，只能取第一片的第 2、3、4、6、7 軌，這是可逆的決定。",
+    "src": "https://itunes.apple.com/lookup?id=723618161&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Birdland 的招牌語就是「the jazz corner of the world」，1960 年 9 月 14 日那晚的第三、四個 set 被錄下來，剪成兩張唱片——第一集 1961 年 7 月上架，第二集等到 1962 年 5 月",
+   "台上的次中音薩克斯風手是剛進團的 Wayne Shorter，鋼琴是 Bobby Timmons、小號是 Lee Morgan；五首曲子裡有三首是已經離團的 Hank Mobley 寫的"
+  ],
+  "sound": "5 軌、約 42 分 23 秒的現場硬咆勃五重奏：Lee Morgan 的小號與 Wayne Shorter 的次中音薩克斯風兩管在前，Bobby Timmons 的鋼琴、Jymie Merritt 的貝斯、Art Blakey 的鼓在後。三首長曲（〈What Know〉10:25、〈The Breeze and I〉10:35、〈'Round About Midnight〉10:07）與開場的〈The Opener〉9:36 都拉到十分鐘上下，最後接 1 分 40 秒的〈The Theme〉收場。全程收進 Birdland 的場內聲響。串流側歸「Jazz」。",
+  "keyTracks": [
+   "The Opener",
+   "What Know",
+   "'Round About Midnight"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1961（首發年），與 prop 相同；**並可加寫月份 1961 年 7 月**。四邊一致：MB first-release-date 1961 與原盤 release 1961、jazzdisco 目錄「BLP 4054 … 1961」、Discogs 美國原壓 1961 mono、維基「released on Blue Note in **July 1961**」。演出日 1960-09-14 Birdland，不是發行年。⚠ **姊妹盤 Volume 2（BLP 4055）是 1962 年 5 月**（jazzdisco 與維基一致），**正文不得寫成兩集同年發行**。本層未在已掃的同期紙本裡找到 4054 的評論（Billboard 1961 年 7–8 月各期 OCR 佇列只跑到 07-31、該期 0 命中），但四邊無異說、且維基給到月份。",
+  "notes": "**現場盤，四張之一。場地全名：Birdland，紐約（Broadway 1678 號，別號「the jazz corner of the world」，盤名即取自此）；演出日 1960 年 9 月 14 日，本集取當晚的第 3 與第 4 個 set。**｜⚠ **MB 漏標 Live**（secondary-types 空、enum `live: false`），但維基、jazzdisco、2002 合併版收的 Pee Wee Marquette 報幕三方證實是現場盤（第 523 條已判，本層覆核成立）。｜**同場拆盤：Vol. 1（本卡，BLP 4054，1961-07）↔ Vol. 2（BLP 4055，1962-05，MB RG 76752ee1，enum 1962 段、下一批）。同一晚、同一組人，正文不得寫成兩場、不得互抄曲目；也不得寫成同年發行。**｜掛名：MB credit `Art Blakey & The Jazz Messengers`，卡單用 `Art Blakey and the Jazz Messengers`（第 470／525 條，池中 12 ＞ 5）。｜盤名：原盤與 Discogs 盤面題「…(Volume 1)」帶括號，卡單照 MB RG title 的逗號形（第 527 條），括號形進 queryAlias。｜**人名邊界**：Lee Morgan／Wayne Shorter／Bobby Timmons／Jymie Merritt 有 jazzdisco 編制＋維基 personnel 雙重背書，可寫；**Hank Mobley 是三首曲子的作者、不在台上**，正文不得寫成他有參與演出；Pee Wee Marquette 是 Birdland 司儀，只出現在 Volume 2 與 2002 合併版的報幕軌上，**本集（Vol. 1）的原 LP 上沒有他的報幕**，正文要提請寫成「Birdland 的司儀」而不是「這張碟上的報幕」。｜**串流：查無同一張碟的獨立條目，不寫串流採信**（詳見第 5 條 fact）。**這張仍是缺試聽的一張，主線需另裁。**｜非選輯：單一場演出的原創現場專輯。"
+ },
+ {
+  "key": "desc2:Freddie Hubbard|Goin' Up",
+  "artist": "Freddie Hubbard",
+  "album": "Goin' Up",
+  "facts": [
+   {
+    "f": "release-group 05c9ae05 的欄位：title「Goin’ Up」（印刷體彎撇號）、artist-credit「Freddie Hubbard」（Person）、first-release-date 1961、primary-type Album、secondary-types 空。轄下八筆：**原盤 a04e1fa8 是 1961 US Official Blue Note BLP 4056、12 吋 6 軌**；1967 US 12 吋 ac0ed5c8（BNST 84056／BST 84056）；1993-09-22 與 1999-11-26 兩張 JP CD（TOCJ-4056／TOCJ-9148）；1997 US CD d695d7ef（CDP 7243 8 59380 2 3）；2013-10-05 數位 efdb9dbe；2015-07-01 JP CD 283b8686（UCCQ-9169）；2018-04-04 JP SHM-CD fccd42e0（UCCQ-3011）。原 LP 6 軌：〈Asiatic Raes〉6:48、〈The Changing Scene〉5:51、〈Karioka〉6:17、〈A Peck a Sec.〉5:52、〈I Wished I Knew〉7:50、〈Blues for Brenda〉6:58，全長約 39 分 36 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=05c9ae05-5a1e-3a32-a453-5df84cf76c38&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4000 系列目錄記「BLP 4056 Freddie Hubbard - Goin' Up **1961**」，單一場錄音：**1960 年 11 月 6 日 Van Gelder Studio, Englewood Cliffs, NJ**，編制 Freddie Hubbard（trumpet）、Hank Mobley（tenor sax）、**McCoy Tyner（piano）**、Paul Chambers（bass）、Philly Joe Jones（drums），母帶序 tk.2〈Blues For Brenda〉、tk.9〈Karioka〉、tk.17〈Asiatic Raes (aka Lotus Blossom)〉、tk.19〈A Peck A Sec. (aka The Latest)〉、tk.21〈The Changing Scene〉、tk.24〈I Wished I Knew〉。附註「also released on Blue Note BST 84056 in 1961, CDP 7243 8 59380 2 3 in 1997」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/"
+   },
+   {
+    "f": "**同期紙本（序位最高的年份證據）**：《Billboard Music Week》1961 年 5 月 15 日第 40 頁「Reviews and Ratings of New Albums」評了「**GOIN' UP — Freddie Hubbard. Blue Note 4056**」，評語原文「Freddie Hubbard is a young horn man on **his second album for Blue Note**. His trumpet tones are bold and brash and occasionally show considerable imagination, on these six selections. There is also a load of beat there, as laid down by Philly Joe Jones. Hank Mobley is heard on tenor, with McCoy Tyner, piano, and Paul Chambers, bass. Good modern sound with solo spotlight well distributed, Jones' heavy hand on the percussion makes it danceable jazz as well.」——**編制、曲數（six selections）、目錄號逐項與 BLP 4056 相符**。同頁還評了 Grant Green《Grant's First Stand》（Blue Note 4064）與 Duke Jordan《Flight to Jordan》（Blue Note 4046），第 38 頁評 Freddie Redd《Shades of Redd》（Blue Note 4045）與 Lee Morgan《Lee-Way》（Blue Note 4034）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1961/Billboard%201961-05-15.pdf"
+   },
+   {
+    "f": "Discogs 實體盤面：`catno=BLP 4056` 只有三筆——**1960 US Blue Note Records Inc. 的 Test Pressing**、**1961 US Blue Note Records Inc. Vinyl/LP/Album/Mono**（正式原壓）、1966 US reissue。**測試壓片在 1960 年底（錄音是 1960-11-06）、正式盤 1961，這個時間差與 Billboard 1961-05-15 的評論日對得上。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4056&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基《Goin' Up》：1961 年由 Blue Note 發行，infobox 的 released 欄寫「**May 1961**」並引《Billboard》1961 年 5 月 15 日第 40 頁（與上面那條同一則評論）、recorded「November 6, 1960」、studio Van Gelder（Englewood Cliffs）、label「Blue Note／BST 84056」、producer Alfred Lion、length 39:26；chronology prev《Open Sesame》(1960)、next《Hub Cap》。曲目作者：〈Asiatic Raes〉（又名〈Lotus Blossom〉）與〈Karioka〉是 **Kenny Dorham** 作、〈The Changing Scene〉與〈A Peck a Sec〉是 Hank Mobley 作、〈I Wished I Knew〉是 Bill Smith 作、〈Blues for Brenda〉是 Hubbard 自己作。AllMusic 的 Scott Yanow 稱許 Hubbard 的「outstanding solos」。",
+    "src": "https://en.wikipedia.org/wiki/Goin%27_Up"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 723410188，第 529 條的觀察值）形狀與原盤一致（6 軌）；⚠ 其 releaseDate 標 1960-11-06＝錄音日（第 484 條，第 521 條已記），不是發行日。本張不在缺試聽的六張名單裡，本層未逐軌重跑。",
+    "src": "https://itunes.apple.com/lookup?id=723410188&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "《Billboard》1961 年 5 月 15 日的評語第一句就把他定位好了：「Freddie Hubbard is a young horn man on his second album for Blue Note」——那年他二十三歲",
+   "六首曲子裡有兩首是 Kenny Dorham 寫的、兩首是台上的 Hank Mobley 寫的，Hubbard 自己只交出一首〈Blues for Brenda〉"
+  ],
+  "sound": "6 軌、約 39 分 36 秒的硬咆勃五重奏：Freddie Hubbard 的小號與 Hank Mobley 的次中音薩克斯風兩管在前，McCoy Tyner 的鋼琴、Paul Chambers 的貝斯、Philly Joe Jones 的鼓在後。中快板為主（〈Asiatic Raes〉6:48、〈Karioka〉6:17），一首慢板〈I Wished I Knew〉7:50，收在藍調〈Blues for Brenda〉。當年 Billboard 的評語特別點名 Philly Joe Jones 的鼓「makes it danceable jazz」。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Asiatic Raes",
+   "Blues for Brenda",
+   "I Wished I Knew"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1961（首發年），與 prop 相同；**並可加寫月份 1961 年 5 月，有同期紙本為證**。最硬的一條是**《Billboard Music Week》1961-05-15 第 40 頁的新片評論**（依第 509b 條，同期紙本序位最高），評論內容的編制與曲數與 BLP 4056 逐項相符；其餘三邊同向：jazzdisco 目錄 1961、Discogs 正式原壓 1961 mono（另有 1960 的 test pressing，時間差合理）、維基 1961-05（所引即同一則評論，**與紙本同源，不另計為獨立來源**）。⚠ Apple 的 releaseDate 1960-11-06 是錄音日（第 484 條），不採。",
+  "notes": "**「第二張 Blue Note 專輯」有同期紙本直接背書**（Billboard 1961-05-15「his second album for Blue Note」），可寫；**不得寫成「他的第二張唱片」**（那是 Blue Note 內的序數，第 253 條）。維基 chronology 的 prev 是 1960 年的《Open Sesame》，與此相符。｜盤名：MB RG title 用印刷體彎撇號「Goin’ Up」，卡單照第 473／527 條改 ASCII「Goin' Up」。｜掛名：`Freddie Hubbard` 照 MB＝照池中，無爭議。｜**人名邊界**：Hank Mobley／McCoy Tyner／Paul Chambers／Philly Joe Jones 有 jazzdisco 編制＋維基 personnel＋**Billboard 同期評論**三重背書，可寫。**McCoy Tyner 這時尚未加入 John Coltrane 四重奏的說法本層未查證，正文不要寫。**｜**曲目歸屬**：〈Asiatic Raes〉與〈Karioka〉是 Kenny Dorham 的曲子、〈The Changing Scene〉與〈A Peck a Sec〉是台上的 Hank Mobley 寫的——**六首裡 Hubbard 只寫了〈Blues for Brenda〉一首**，這點有維基曲目表為證，可寫。｜⚠ 〈Asiatic Raes〉同時也出現在 Sonny Rollins《Newk's Time》（BLP 4001）上，**正文不要把兩張連起來**，本層未查兩者的關係。｜串流：不在缺試聽六張內，第 529 條觀察值 723410188，**本層未逐軌核，不寫串流採信**。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|Up at Minton's, Volume 1",
+  "artist": "Stanley Turrentine",
+  "album": "Up at Minton's, Volume 1",
+  "facts": [
+   {
+    "f": "release-group 024541d9 的欄位：title「Up at \"Minton's\", Vol. 1」（MB 的 RG 題名帶印刷體引號與 Vol. 縮寫）、artist-credit「Stanley Turrentine」（Person）、first-release-date 1961、primary-type Album、**secondary-types [Live]**。轄下三筆：**原盤 99d61c8c 是 1961 US Official Blue Note BLP 4069、12 吋 4 軌，release title 題「Up at Minton's, Volume 1」（不帶引號、寫全 Volume）**；2011 US Analogue Productions 混合 SACD 4d8fb430（CBNJ 84069 SA／Blue Note ST-84069，4＋4 軌）；2019-07-17 JP CD d108d6b4（Blue Note UCCQ-9529，4 軌）。原 LP 4 軌：〈But Not for Me〉11:29、〈Stanley's Time〉11:04、〈Broadway〉10:38、〈Yesterdays〉11:40，全長約 44 分 51 秒——**四首全在十分半以上，是本組最長的一張**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=024541d9-f86e-3098-bf98-1601ce19b2cc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4000 系列目錄記「BLP 4069 Stanley Turrentine - Up At \"Minton's\" Vol. 1 **1961**」（下一號 BLP 4070 的 Vol. 2 記 **1962**），並把四軌分成**同一晚的兩個 set**：編制 Stanley Turrentine（tenor sax）、Horace Parlan（piano）、Grant Green（guitar）、George Tucker（bass）、Al Harewood（drums）。**1961 年 2 月 23 日，Minton's Playhouse, NYC, 2nd set**：tk.7〈But Not For Me〉；**同日 3rd set**：tk.8〈Stanley's Time〉、tk.9〈Broadway〉、tk.11〈Yesterdays〉。附註「also released on Blue Note BST 84069 **in 1961**」與「part of Up At \"Minton's\", Blue Note CDP 7243 8 28885 2 9 in 1994」（1994 年的 Vol. 1＋2 合併 CD）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/"
+   },
+   {
+    "f": "Discogs 實體盤面：`catno=BLP 4069` 的最早兩筆美國壓片都是 **1961 US Blue Note Records Inc. Vinyl/LP/Album/Mono**，其後是 1962 三筆、1963 Repress、1966 兩筆。**首壓落在 1961，與 Vol. 2 的 BLP 4070（首壓全部 1962）明顯分開。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4069&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基把兩集寫在同一條目《Up at \"Minton's\"》：兩張是「a pair of separate but related live albums by American jazz saxophonist Stanley Turrentine **recorded on February 23, 1961** and **released on Blue Note later that year**」；infobox：recorded「February 23, 1961」、**venue「Minton's Playhouse, NYC」**、released 1961、length 88:47（兩集合計）、label「Blue Note／BLP 4069 (Vol. 1)／BLP 4070 (Vol. 2)」、producer Alfred Lion；chronology prev《Comin' Your Way》、next《Dearly Beloved》。五重奏：Stanley Turrentine（tenor sax）、**Grant Green（guitar）**、Horace Parlan（piano）、George Tucker（bass）、Al Harewood（drums）；technical personnel：Alfred Lion 製作、Rudy Van Gelder 錄音、Reid Miles 設計、Francis Wolff 攝影。AllMusic 的 Scott Yanow 評「Standards and a couple of blues make up the repertoire, giving listeners a definitive look at the soulful Mr. T. near the beginning of his productive musical life.」⚠ **維基的「later that year」把兩集都算成 1961，與 jazzdisco／Discogs 對 Vol. 2 的 1962 對立（見本批第 10 筆）。**",
+    "src": "https://en.wikipedia.org/wiki/Up_at_%22Minton%27s%22"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1436091771）盤名「Up At \"Minton's\" (Vol. 1/Live From Minton's Playhouse/1961)」、掛名 Stanley Turrentine、**4 軌**、releaseDate 1961-04-19、「A Blue Note Records Release; ℗ 1961 Capitol Records, LLC」，四軌全部有試聽。逐軌比對 BLP 4069 原盤：**曲名曲序完全相同**——〈But Not For Me〉689 秒（MB 689）、〈Stanley's Time〉661 秒（MB 664）、〈Broadway〉634 秒（MB 638）、〈Yesterdays〉702 秒（MB 700），**四軌長度差全在 4 秒內、沒有 bonus track**。⚠ 附帶觀察：**Vol. 1 與 Vol. 2 兩個店面條目的 releaseDate 都是 1961-04-19**——這個日期既不是演出日（1961-02-23）也不是 01-01 占位，但兩集共用同一個日期，形狀像 Capitol 把同一批母帶的 metadata 一起回填，**不足以當年份來源**（第 484／431 條）。",
+    "src": "https://itunes.apple.com/lookup?id=1436091771&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "串流採信 1436091771",
+    "src": "https://itunes.apple.com/lookup?id=1436091771&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1961 年 2 月 23 日，哈林區 118 街的 Minton's Playhouse——咆勃樂當年就是在這間店裡被發明出來的——Blue Note 把錄音機架進去，錄下第二、三個 set",
+   "四首曲子沒有一首短於十分半：〈Yesterdays〉11 分 40 秒、〈But Not for Me〉11 分 29 秒，這是夜店的長度，不是唱片公司的長度"
+  ],
+  "sound": "4 軌、約 44 分 51 秒的現場硬咆勃／靈魂爵士：Stanley Turrentine 的次中音薩克斯風領銜，Grant Green 的吉他與 Horace Parlan 的鋼琴雙和聲樂器，George Tucker 的貝斯、Al Harewood 的鼓。三首標準曲（〈But Not for Me〉〈Broadway〉〈Yesterdays〉）加一首 Turrentine 自己的〈Stanley's Time〉，每首都拉到十分半以上的延伸獨奏。全程收進 Minton's 的場內聲響。串流側歸「Jazz」。",
+  "keyTracks": [
+   "But Not for Me",
+   "Stanley's Time",
+   "Yesterdays"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1961（首發年），與 prop 相同。四邊一致：MB first-release-date 1961 與原盤 release 1961、jazzdisco 目錄「BLP 4069 … 1961」＋附註「BST 84069 in 1961」、Discogs 美國原壓兩筆皆 1961、維基 1961。演出日 1961-02-23 Minton's Playhouse，同年發行。⚠ **姊妹盤 Vol. 2（BLP 4070）本層判 1962**（見第 10 筆），**正文不得寫成兩集同年發行**。⚠ Apple 的 releaseDate 1961-04-19 年份雖然對，但 Vol. 1／Vol. 2 共用同一日期，形狀是 metadata 回填，不當年份來源。本層未在已掃的同期紙本裡找到 4069 的評論（Billboard 1961 年 4–6 月的 OCR 佇列只跑到 04-03／04-10／04-17／05-15，那幾期沒有 4069）。",
+  "notes": "**現場盤，四張之一。場地全名：Minton's Playhouse，紐約哈林區西 118 街 210 號（Hotel Cecil 內）；演出日 1961 年 2 月 23 日，本集取當晚的第 2 與第 3 個 set。**｜**同場拆盤：Vol. 1（本卡，BLP 4069）↔ Vol. 2（本批第 10 筆，BLP 4070）。同一晚、同一組人，jazzdisco 記 Vol. 2 另取第 2、3、4 個 set 的曲子。正文不得寫成兩場、不得互抄曲目；⚠ 也不得寫成同年發行（本層判 Vol. 1＝1961、Vol. 2＝1962）。**｜盤名（第 527 條已定）：MB RG title 是「Up at \"Minton's\", Vol. 1」，但 **1961 原盤 release 99d61c8c 題「Up at Minton's, Volume 1」**、Vol. 2 的 RG title 也是「…, Volume 2」——卡單取原盤題名、與姊妹卡同形；MB RG title 與 Apple 的寫法進 queryAlias。｜掛名：`Stanley Turrentine` 照 MB＝照池中，無爭議。｜**人名邊界**：Grant Green／Horace Parlan／George Tucker／Al Harewood 有 jazzdisco 編制＋維基 personnel 雙重背書，可寫；Reid Miles（設計）、Francis Wolff（攝影）只在維基，可不提。｜⚠ **與本批其他卡的交叉**：Grant Green 同時是第 14 筆《Grant's First Stand》的領班、Horace Parlan 是第 12 筆《On the Spur of the Moment》的領班——**三張是不同的碟，正文不得互相代入**。｜**串流採信 1436091771**（us，4 軌逐軌同名同序、長度差 ≤4 秒、無 bonus）。**這張補上了缺試聽的六張之一。**｜第 524 條留給後批的重複 RG：96ddfbe9《Up at \"Minton's\"》是 1994 年的 Vol. 1＋2 合併 CD，不是新碟。｜非選輯：單一場演出的原創現場專輯。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|Up at Minton's, Volume 2",
+  "artist": "Stanley Turrentine",
+  "album": "Up at Minton's, Volume 2",
+  "facts": [
+   {
+    "f": "release-group d3af3051 的欄位：title「Up at Minton's, Volume 2」、artist-credit「Stanley Turrentine」（Person）、first-release-date 1961、primary-type Album、**secondary-types [Live]**。**轄下只有一筆 release：5da9d52d，1961 US Official Blue Note BLP 4070、12 吋 4 軌**——整個 RG 沒有任何再發，也因此 CAA 打 release-group 端點回 404（第 529 條的唯一一張缺封面）。原 LP 4 軌：〈Later at Minton's〉13:53、〈Come Rain or Come Shine〉8:45、〈Love for Sale〉15:01、〈Summertime〉7:18，全長約 45 分 17 秒；**〈Love for Sale〉15 分 1 秒是本組最長的一軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d3af3051-97c6-358c-ba98-997085e09d5d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4000 系列目錄記「BLP 4070 Stanley Turrentine - Up At \"Minton's\" Vol. 2 **1962**」（上一號 BLP 4069 的 Vol. 1 記 1961），並把四軌分成**同一晚的三個 set**：編制標「same personnel」，即與 Vol. 1 相同的 Stanley Turrentine（tenor sax）、Horace Parlan（piano）、Grant Green（guitar）、George Tucker（bass）、Al Harewood（drums）。**1961 年 2 月 23 日，Minton's Playhouse, NYC, 2nd set**：tk.4〈Love For Sale〉、tk.6〈Come Rain Or Come Shine〉；**同日 3rd set**：tk.10〈Later At Minton's〉；**同日 4th set**：tk.15〈Summertime〉。附註「also released on Blue Note BST 84070 **in 1962**」與「part of Up At \"Minton's\", Blue Note CDP 7243 8 28885 2 9 in 1994」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/"
+   },
+   {
+    "f": "**Discogs 實體盤面：BLP 4070 與 BST 84070 的最早美國壓片全部是 1962**——`catno=BLP 4070` 回三筆 1962 US Mono（Blue Note Records Inc.）與兩筆 1962 US Stereo（catno 印 BLP 84070），再下一筆是 1964 Mono；`catno=BST 84070` 最早一筆是 1962 US Stereo，其後 1966／1970 reissue、1983 與 1992 的日本盤、2010 Music Matters。**整個 Discogs 沒有任何一筆 1961 的 4070／84070 壓片**，與 Vol. 1（BLP 4069 首壓兩筆皆 1961）形成清楚的分界。",
+    "src": "https://api.discogs.com/database/search?catno=BLP+4070&type=release&per_page=100"
+   },
+   {
+    "f": "英文維基把兩集寫在同一條目《Up at \"Minton's\"》：「a pair of separate but related live albums ... recorded on February 23, 1961 and **released on Blue Note later that year**」，infobox 的 released 欄只寫 1961、label「BLP 4069 (Vol. 1)／BLP 4070 (Vol. 2)」、venue「Minton's Playhouse, NYC」、length 88:47（兩集合計）、producer Alfred Lion、Rudy Van Gelder 錄音、Reid Miles 設計、Francis Wolff 攝影；五重奏同 Vol. 1。⚠ **維基把兩集一併寫成 1961，沒有為 Vol. 2 單獨舉證**，與 jazzdisco 目錄頁與 Discogs 實體盤面的 1962 對立。",
+    "src": "https://en.wikipedia.org/wiki/Up_at_%22Minton%27s%22"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1436190027）盤名「Up At \"Minton's\" (Vol. 2/Live From Minton's Playhouse/1961)」、掛名 Stanley Turrentine、**4 軌**、releaseDate 1961-04-19、「A Blue Note Records Release; ℗ 1961 Capitol Records, LLC」，四軌全部有試聽。逐軌比對 BLP 4070 原盤：**曲名曲序完全相同**——〈Later At Minton's〉833 秒（MB 833，一字不差）、〈Come Rain Or Come Shine〉525 秒（MB 525）、〈Love For Sale〉901 秒（MB 901）、〈Summertime〉439 秒（MB 438），**四軌幾乎逐秒相同、沒有 bonus track**。⚠ 其 releaseDate 1961-04-19 與 Vol. 1 的店面條目完全相同，是 Capitol 對同一批母帶的 metadata 回填，**不能當作 Vol. 2 是 1961 的證據**（第 431／484 條）。",
+    "src": "https://itunes.apple.com/lookup?id=1436190027&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "串流採信 1436190027",
+    "src": "https://itunes.apple.com/lookup?id=1436190027&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一晚、同一組人，Vol. 1 在 1961 年上架，剩下的四首要等到 1962 年才印成第二張——其中〈Love for Sale〉一首就跑了 15 分 1 秒",
+   "Blue Note 把 Minton's 那晚的第二、三、四個 set 各挑一兩首湊成這張碟；整個 MusicBrainz 上它只有 1961 年那一筆壓片，連再發都沒有"
+  ],
+  "sound": "4 軌、約 45 分 17 秒的現場硬咆勃／靈魂爵士，編制與 Vol. 1 相同：Stanley Turrentine 的次中音薩克斯風領銜，Grant Green 的吉他、Horace Parlan 的鋼琴、George Tucker 的貝斯、Al Harewood 的鼓。兩首超長的延伸獨奏（〈Love for Sale〉15:01、〈Later at Minton's〉13:53）加兩首較短的標準曲（〈Come Rain or Come Shine〉8:45、〈Summertime〉7:18）。全程收進 Minton's 的場內聲響。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Love for Sale",
+   "Later at Minton's",
+   "Summertime"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與 prop 不一致，建議改 1961 → 1962。** 兩條互相獨立的硬證據都指 1962：**jazzdisco 目錄頁「BLP 4070 … 1962」＋附註「BST 84070 in 1962」（且同頁的 4069 Vol. 1 分開寫成 1961，不是一筆帶過）**、**Discogs 實體盤面 BLP 4070／BLP 84070／BST 84070 的最早美國壓片共六筆全部 1962、沒有任何 1961 壓片**。指 1961 的兩個來源都站不住：MB 的 first-release-date 1961 與唯一那筆 release 的 1961 是同一個資料點（RG 底下只有這一筆，沒有第二筆可交叉）；維基把兩集一併寫成「later that year」、沒有為 Vol. 2 單獨舉證；Apple 的 1961-04-19 與 Vol. 1 條目逐日相同，是第 431 條的同源 metadata。依第 509b 條「同期紙本＞廠牌目錄頁＞jazzdisco 年份欄」，本張沒查到同期紙本（Billboard 1962 年各期為週六日期、本層 OCR 佇列只跑到 1962-09-22 且該期 1 命中不含 4070），但**廠牌目錄頁與實體盤面兩條都指 1962**。**建議年份 1962。**",
+  "notes": "**現場盤，四張之一。場地全名：Minton's Playhouse，紐約哈林區西 118 街 210 號；演出日 1961 年 2 月 23 日，本集取當晚的第 2、3、4 個 set。**｜**同場拆盤：Vol. 2（本卡，BLP 4070）↔ Vol. 1（本批第 9 筆，BLP 4069）。同一晚、同一組人（jazzdisco 對本張的編制欄直接寫 same personnel），正文不得寫成兩場、不得互抄曲目。**｜⚠ **年份有疑議，見 yearVerified：建議 1962。若改成 1962，正文就不能寫「與 Vol. 1 同年發行」，反而「隔了一年才出第二集」是可寫的。**｜⚠ **缺封面的唯一一張**（第 529 條）：MB RG 轄下只有 1961 原盤一筆、無圖，CAA 404。可走 Discogs 的 BLP 4070 原壓條目或 2019 年日本盤 UCCQ-9530 的圖——**⚠ 注意 UCCQ-9530 掛在另一個重複 RG 26026a87 底下（第 524 條），那個 RG 應退，但它的封面圖是同一張碟的。**｜盤名：MB RG title 本來就是「Up at Minton's, Volume 2」（不帶引號、寫全 Volume），與姊妹卡同形，照用即可。｜掛名：`Stanley Turrentine` 照 MB＝照池中。｜**人名邊界**：與 Vol. 1 相同的四位側人有 jazzdisco＋維基雙重背書，可寫。｜**串流採信 1436190027**（us，4 軌逐軌同名同序、長度幾乎逐秒相同、無 bonus）。**這張補上了缺試聽的六張之一（也是缺封面那一張）。**｜非選輯：單一場演出的原創現場專輯。"
+ }
+]
