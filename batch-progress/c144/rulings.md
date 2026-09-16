@@ -627,3 +627,67 @@ c-144 a 第 757 條第 4 點的結論是「1974–76 的 Blue Note 雖然全面�
      `Chick Corea —《Circulus》`↔ 池中 seed《A.R.C.》（同一支三重奏，早九個月）↔ c-147 b《Early Circle》；
      `John Lee & Gerry Brown —《Still Can't Say Enough》`↔ c-144 a 的《Mango Sunrise》；
      `Carmen McRae —《Can't Hide Love》`↔ c-144 a 的《I Am Music》。
+
+## 第 796 條（主線 2026-09-16，研究層 a 組交件後）：**年份疑議 0；研究層訂正前層五處，其中兩處是「前層說查無、其實有」**
+
+a 組 21 筆全 `full`、**年份疑議 0**（策展層的判斷一張都沒被推翻）、`src` 100 個網址逐一驗過全 200。
+
+**訂正前層五處**：
+1. ⚠ **第 752 條寫「BB 1976-07-24 的評介沒有評到《The Prime Element》」是錯的**
+   ——那則評介的「前五張」就含 Elvin Jones，原文
+   「Elvin Jones' entry ... **have never before been released** although all were recorded in 1969 and 1973」。
+   **那句話本身就是庫存首發的第三方背書**；只有「沒有榜位」那半句成立。
+2. ⚠ **第 757 條第 4 點把《Waters》算進「9 張進過爵士榜」是算錯的**——1975 全年爵士榜與 Soul 榜逐週掃過，
+   **《Waters》一次都沒進榜**，只有評介與價目表。
+3. **《Cheshire Cat》的 George Benson 不只是側人**——Discogs 美國原壓 credit 是
+   「George Benson - Producer, Backing Vocals」，**他製作了整張碟**（掛名不動，正文寫法要改）。
+4. **《Cirrus》的〈Even Later〉不是 William Henderson 寫的**——Discogs 原壓作曲欄：
+   〈Rosewood〉是 Woody Shaw、其餘四軌全是 Hutcherson。
+5. **《I Am Music》的製作人只有 Roger Kellaway 一個**（五處來源一致），Grusin 與 Olson 是編曲配器指揮。
+另：策展層說《Live at Montreux》(Bobbi Humphrey) 的〈Virtue〉與池中 seed《Virtue》無關
+——**Discogs 原壓作曲欄是 Alphonse Mouzon，兩者同人同字**。
+
+## 第 797 條（同日）：⚠ **第 756 條「1975Q4–1976 兩刊各自單一檔名形狀」線上實測不成立**
+
+研究層驗網址時抓到 **5 期只有備援形狀能開**：`Billboard-1975-10-18.pdf`（不是 `Billboard%20`）、
+`Cash-Box-1972-09-23`／`-1976-01-17`／`-1976-04-03`／`-1976-05-08`（不是 `CB-`）。序列重試過，**是真 404 不是限流**。
+**第 701／614／705 條的檔名亂象沒有在 1975Q4 結束——c-145 以後的抓取器一定要留備援形狀。**
+（「失敗與正常長得一樣」家族：**這一期不存在，與這一期換了檔名，在 404 上長得一模一樣。**）
+
+## 第 798 條（同日）：**兩份新的檔期文件；榜位補全；第 791 條在 1976 年不成立**
+
+**新抓到兩份第 612 條檔期文件**（策展層沒有）：
+- **Cash Box 1975-02-15 p14「February Is Blue Note Month」**——一篇同時把《Linger Lane》《Mind Transplant》
+  《Silver 'n Brass》《Waters》釘在 1975 年 2 月，還講出「**Waters 是 Blue Note 史上第一支簽約的人聲團**」
+  （Billboard 1977-06-11 p84 兩年後獨立又講一次，**兩則獨立，可寫**）。
+- **Cash Box 1976-05-08 p20**「July has been declared Blue Note Month」——《Cosmos》《The Prime Element》
+  1976-07 的**第二個獨立來源**。
+另補 Cash Box 1975-06-14 p7 的 Carmen McRae 簽約稿、Billboard 1975-05-31 p6 的第二波九套全文
+（「Nine more will bow June 15」）、Billboard 1975-10-18 p50 的英國開線報導（**一次釘住本組 5 張**）。
+
+**榜位補全**：《Silver 'n Brass》從「七週」補到**十四週以上、最高第 15 名（1975-04-26）**；
+另補 Linger Lane／I Am Music／Cheshire Cat／Nexus／Silver 'n Wood／The Man Incognito／Spoonful 的逐週名次。
+⚠ **第 791 條在 1976 年不成立**：**《The Man Incognito》擺明做舞曲卻只進爵士榜、Soul 榜零命中**
+——**「1977 年起主戰場是 R&B 榜」是 1977–79 的現象，1976 年還不是；c-144 b 的 1977–79 段要自己重測。**
+
+## 第 799 條（同日）：**a 組試聽採信 3 張、查無 2 張；《Jacknife》的採信有條件**
+
+**採信**：Ronnie Foster《Live at Montreux》`1444221296`、Bobbi Humphrey《Live at Montreux》`1396315411`、
+Jackie McLean《Jacknife》`724760207`。**查無 2 張**（Andrew Hill《One for One》、
+John Lee & Gerry Brown《Mango Sunrise》，都跑滿三種查法）。**c-144 試聽 36/43。**
+
+⚠ **《Jacknife》的採信是有條件的**：那是 2002 年單片 CD 形、**只有 1965 那場的 5 軌（原盤 10 軌）**。
+逐軌與 MB 的 2002 CD 相符、池中沒有第二張卡會用到這個 collectionId（第 646 條的邊界過得去），故採信；
+**但正文與軌序不得拿五軌代表原盤**——**1966 那場從沒單獨數位化過**。
+
+**封面 4 張缺口全部有替代圖**（Discogs master `images[0].uri`）：Silver 'n Brass `1002632`／
+Carnival of the Spirits `904801`／Spoonful `607906`／The Prime Element `1398414`。
+
+## 第 800 條（同日）：⚠ **訂正第 710 條的美術班底——1974–76 段是 Bob Cato 不是 Mike Salisbury**
+
+第 710 條（c-143 立的）說 BN-LA 段的班底是「Mike Salisbury 美術總監＋Lloyd Ziff 設計」，
+**但本組 21 張的原壓 credit 裡 Mike Salisbury 一次都沒出現**。
+**1974–76 段的班底是 Bob Cato（藝術總監，12 張以上）**，
+**Lloyd Ziff 只出現在 1975 年那四張**（Linger Lane／Waters／Silver 'n Brass／Mind Transplant），
+設計常是 **John Kehe 或 Ria Lewerke**。
+**通則：美術班底要按「批次實查的 credit」寫，不要把前一批的結論當成整個時期的通則。**
