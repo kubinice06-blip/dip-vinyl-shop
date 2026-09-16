@@ -66,7 +66,7 @@
    },
    {
     "f": "本層新掃的 Cash Box 1968-10→1969-12 共 69 期裡**查無 84315 的評介**（Cash Box 沒評到這張）；但 **1968-12-07 的年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84315 不在其中——與維基引的 Billboard 1969-09-06 一致，**首發是 1969 年，卡單的 1969 正確、MB／jazzdisco／Discogs 的 1968 是錄音年回填**。同一份掃描檔可交叉核對的鄰居：84313 評於 1969-07-19、84318 評於 1969-08-23，**84315 正好夾在中間**。",
-    "src": "batch-progress/enum/cashbox-bn-1968-69-ocr.txt"
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
    },
    {
     "f": "串流側 us 店面 collectionId 724869927「Common Touch」掛 Stanley Turrentine（**店面掛名沒有 featuring Shirley Scott**）、**7 軌＝1997 年 CD 形**、releaseDate 欄填錄音日 1968-08-30、「℗ 1997 Blue Note Records」。前 6 軌對應原盤 6 軌，第 7 軌是〈Ain't No Way〉bonus。本張不在缺試聽名單裡，本層未逐軌重跑。",
@@ -286,7 +286,7 @@
    },
    {
     "f": "本層新掃的 Cash Box 1968-10→1969-12 共 69 期裡**查無 84274**——連 1968-12-07 的年度唱片目錄都沒列它（該目錄 Blue Note 段列到 BST 84292，84274 被跳過）。**這不構成年份反證**：維基引的 Billboard 1968-06-01 早於本層掃描檔的起點（1968-10），Cash Box 的年度目錄本來就會漏掉當年稍早、已不再主推的品項。**1968 年首發仍成立。**",
-    "src": "batch-progress/enum/cashbox-bn-1968-69-ocr.txt"
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
    },
    {
     "f": "串流側 us 店面 collectionId 1467243764「Natural Essence」掛 Tyrone Washington、**6 軌＝與原盤同形**、releaseDate 欄填 1968-01-01、「A Blue Note Records Release; ℗ 1968 Capitol Records, LLC」。本張不在缺試聽名單裡，本層未逐軌重跑；店面軌數與原盤一致。",
@@ -374,7 +374,7 @@
    },
    {
     "f": "本層新掃的 Cash Box 1968-10→1969-12 共 69 期裡**查無 84307 的評介**，但兩條旁證都指向 1969：(a) **1968-12-07 的年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84307 不在其中；(b) 同一份掃描檔的鄰號校準 **84302 評於 1969-05-31、84309 評於 1969-05-24、84313 評於 1969-07-19**——84307 只能落在 1969 年中。與維基引的 Billboard 1969-08-02 相符。",
-    "src": "batch-progress/enum/cashbox-bn-1968-69-ocr.txt"
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
    },
    {
     "f": "串流側 us 店面 collectionId 1443282060「Time for Tyner」掛 McCoy Tyner、**6 軌＝與原盤同形**。本張不在缺試聽名單裡，本層未逐軌重跑；店面軌數與原盤一致。",
@@ -438,5 +438,233 @@
   "status": "full",
   "yearVerified": "一致，1968（首發年），與卡單相同。**同期紙本直接坐實：Cash Box 1968-09-21 的 World Pacific 整版廣告已把「LIGHTHOUSE '68 ST-20131」列進在架目錄**（本層新掃，repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）。另三邊一致：jazzdisco Pacific Jazz 10100/20100 頁「PJ-10131 … 1968」、Discogs `catno=ST-20131` 的美國原壓四筆全標 1968、MB first-release-date 1968、英文維基 infobox 1968。**演出年是 1967-11-10～13（連四晚），與發行年不同年——正文要分清楚。**",
   "notes": "**本組唯一一張現場盤**（MB secondary-types [Live]、enum live:true）。**場地全名 The Lighthouse（Lighthouse Café），加州 Hermosa Beach；演出 1967 年 11 月 10–13 日連四晚**——盤名裡的 '68 是發行年、不是演出年，**正文絕不能寫成「1968 年的現場」**。｜**原盤他廠：Pacific Jazz ST-20131（stereo）／PJ-10131（mono），不是 Blue Note**（第 582 條判準表 (b)：1968 年 Pacific Jazz 與 Blue Note 同屬 Liberty 才收，`label` 寫 Pacific Jazz）；**Blue Note 只在 2004-04-20 出過雙掛名 CD（86f3f9c3，10 軌）**，正文不得寫成 Blue Note 的碟。**本層另找到直接證據**：Cash Box 1968-09-21 那版 World Pacific 廣告下角就印著「A PRODUCT OF liberty records」。｜**製作 Richard Bock、錄音 Dino Lappas——本組唯一一張不是 Wolff／Pearson／Lion 監製、也不是 Van Gelder 收音的碟。**封面設計 Gabor Halmos、美術指導 Woody Woodward，**內頁文案是 The Lighthouse 的主人兼樂團領班 Howard Rumsey 親筆**；gatefold 對開封套。｜**掛名（第 583 條）**：卡上 `The Jazz Crusaders`，MB credit 同字串但掛在群組 fcb79f1a（主名 The Crusaders）——**是改名前後的既有分法、不是分裂**；池中 `The Jazz Crusaders` 2 張、`The Crusaders` 5 張（1971 後）。MB 的 Applause CD（817a2781）credit 用 The Crusaders。｜⚠ **曲名坑（第 586 條）**：第 1 軌 MB 與盤面登「Oogo-Boo-Ga-Loo」，**jazzdisco 註記正確是「Ooga-Boo-Ga-Loo」、維基與當年單曲面也是 Ooga-**——寫作層用通行拼法。｜**串流有兩個版本**：716096654（10 軌 CD 形）與 **1507011032（6 軌原盤形）**，上架用後者。"
+ },
+ {
+  "key": "desc2:Lee Morgan|!Caramba!",
+  "artist": "Lee Morgan",
+  "album": "!Caramba!",
+  "facts": [
+   {
+    "f": "release-group dcacff75 的欄位：title「!Caramba!」（前後各一個 ASCII 驚嘆號）、artist-credit 單一 Person `Lee Morgan`（a1235272）、first-release-date 1968、primary-type Album、secondary-types 空。轄下五筆：⚠ **MB 把原盤 b3ba26ce 登成「1968 US Official **CD** × 6 軌、無 catno、無 barcode」——1968 年不可能有 CD，而且真正的原盤是 5 軌 LP**（第 587 條第 1 點，「載體與年份不相容」）；1996 US CD f8791bbc（CDP 7243 8 53358 2 2，6 軌，題「¡Caramba!」）；2022-02-18 黑膠 b3cbc7e7 與 f7131d28（**同 barcode 602438761852 重複建檔，一筆無國別**，5 軌，題「¡Caramba!」）；2024-05-22 JP HQCD d303f068（UCCQ-9679，5 軌）。**CAA 的 1 張圖就掛在那筆登錯載體的 b3ba26ce。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dcacff75-c1ed-36f9-b139-425cf2612574&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BST 84289 Lee Morgan - **Caramba!** 1968」（**jazzdisco 只寫一個驚嘆號、在後**），場次是 **1968 年 5 月 3 日、Van Gelder Studio, Englewood Cliffs, NJ**，編制 Lee Morgan（trumpet）、Bennie Maupin（tenor sax）、Cedar Walton（piano）、Reggie Workman（bass）、Billy Higgins（drums）、**Cal Massey（arranger）**；**母帶序只有五筆——3005 tk.4〈Helen's Ritual〉、3006 tk.6〈Suicide City〉、3007 tk.16〈Cunning Lee〉、3008 tk.19〈Caramba (aka Dig Dis)〉、3009 tk.21〈Soulita〉**，坐實原盤是 5 軌。附註 also released on Blue Note CDP 7243 8 53358 2 2 in 1996。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r1249725（1968 US BST 84289，盤面題「Caramba」無驚嘆號）的製作名單：**Francis Wolff＝Producer**、**Rudy Van Gelder＝Recorded By 兼 Mastered By 兼 Lacquer Cut By**（三項全包，本組少見）。盤面註記「Comes in a printed Liberty promotional inner sleeve. **Unipak sleeve.** Label is blue and white, with 『Blue Note Records • A Division Of Liberty Records, Inc.』. Some copies were exported to Japan where an insert with Japanese liner notes was added.」；runout「[etched] BNST•84289•A• [stamped] VAN GELDER」。`catno=BST 84289` 共 7 筆：美國原壓 1249725／12282869／12478137／22901180 全標 1968，德國 16200958、日本 27803568 亦 1968，2022 UMe 再壓 22192822 題「¡Caramba!」。⚠ **這一筆沒有封面設計／攝影 credit**，本組少數查不到封面設計者的碟。",
+    "src": "https://api.discogs.com/releases/1249725"
+   },
+   {
+    "f": "**同期紙本直接坐實：Cash Box 1969-01-04 的 Jazz Picks 評介「CARAMBA!-Lee Morgan-Blue Note BST 84289」**，評語寫「Lee Morgan is both an excellent trumpeter and an excellent composer, as this album proves. The artist and Bennie Maupin (tenor sax), Cedar Walton (piano), Reginald Workman (bass), and Billy Higgins (drums), playing with a sensitivity rarely found in jazz these days, **offer five of Morgan's compositions**」（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）——**同期紙本自己就寫「五首」，再次坐實原盤 5 軌**；評介刊於 1969 年第一期、盤子是 1968 年 12 月上市。**1968-12-07 的年度唱片目錄也已把「Caramba／Lee Morgan／84289」列進 Blue Note 在架盤。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1969/CB-1969-01-04.pdf"
+   },
+   {
+    "f": "英文維基《Caramba! (album)》infobox：title 用 **¡Caramba!**（倒驚嘆號）、released **Mid-December 1968**（引 **Billboard 1968-12-21 的四星評**）、recorded 1968-05-03、studio Van Gelder、producer **Francis Wolff**、label Blue Note、length **38:41（原 LP）／44:41（CD 再發）**、前作《Taru》（1968）、後作《Live at the Lighthouse》（1970）。track listing 明標第 6 軌〈A Baby's Smile〉（Cal Massey 作）是 **Bonus track on CD**。條目另引 Joel Whitburn《Top LPs 1955–1972》，本張曾進 Billboard Top LPs 榜。",
+    "src": "https://en.wikipedia.org/wiki/Caramba!_(album)"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 724256045「Caramba」掛 Lee Morgan、**6 軌＝1996 年 CD 形**（多了〈A Baby's Smile〉）。本張不在缺試聽名單裡，本層未逐軌重跑。⚠ **盤名比對坑**：RG 是 `!Caramba!`、jazzdisco 與 1968 原壓盤面是 `Caramba`、1996 CD 與 2022 黑膠與維基是 `¡Caramba!`（倒驚嘆號 U+00A1）——**三種寫法都在流通，上架比對必須用 RG 寫法並帶 catno BST 84289**。",
+    "src": "https://itunes.apple.com/lookup?id=724256045&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Cal Massey 掛編曲、Bennie Maupin 吹次中音、Cedar Walton 彈琴——1968 年 5 月的 Lee Morgan，離《The Sidewinder》四年，離他在 Slugs' 被槍殺還有四年",
+   "同一張碟有三個名字：原壓盤面印 Caramba、CD 印 ¡Caramba!、MB 登 !Caramba!；而第六首〈A Baby's Smile〉根本不在 1968 年那張黑膠上"
+  ],
+  "sound": "原盤 5 軌、約 38 分 41 秒的五重奏：Lee Morgan 小號、Bennie Maupin 次中音薩克斯風兩管在前，Cedar Walton 鋼琴、Reggie Workman 貝斯、Billy Higgins 鼓在後，Cal Massey 掛編曲。開場同名曲一首就吃掉 12 分 24 秒（別名〈Dig Dis〉），其餘四首落在 6–7 分半。全部是 Morgan 自己寫的曲子。1968 年 5 月 3 日一次錄完，Van Gelder 收音兼母帶、Francis Wolff 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Caramba",
+   "Suicide City",
+   "Soulita"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同，**而且是本組紙本證據最直接的一張**：本層新掃的 **Cash Box 1969-01-04 有正式評介「CARAMBA!-Lee Morgan-Blue Note BST 84289」**，且 **1968-12-07 的年度唱片目錄已把 84289 列進在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）；英文維基 infobox 引 **Billboard 1968-12-21** 標 Mid-December 1968。另 jazzdisco 4200 頁 1968、Discogs `catno=BST 84289` 美國原壓四筆全標 1968、MB 1968。**錄音 1968-05-03、首發 1968-12，同年。**",
+  "notes": "⚠ **軌數坑，本組最該小心的一張**：**原盤是 5 軌 LP**（jazzdisco 母帶序只有 3005–3009 五筆、維基標第 6 軌是 CD bonus、Cash Box 1969-01-04 的評介也寫「offer five of Morgan's compositions」、2022 黑膠與 2024 HQCD 都是 5 軌）；**MB 卻把原盤 b3ba26ce 登成「1968 US CD 6 軌」——1968 年不可能有 CD**（第 587 條第 1 點、第 589a 條第 3 點的「載體與年份不相容」）。**正文一律寫 5 軌，不得引〈A Baby's Smile〉為本盤曲目。**｜⚠ **盤名三種寫法（第 586 條）**：卡上照 RG 用 **`!Caramba!`**（前後各一個 ASCII 驚嘆號）；1968 原壓盤面與 jazzdisco 是 `Caramba`；1996 CD／2022 黑膠／維基是 `¡Caramba!`（倒驚嘆號 U+00A1）。**倒驚嘆號會讓標題比對失準，上架務必用 RG 寫法並帶 catno。**｜**製作 Francis Wolff、Van Gelder 一手包錄音與母帶**；**Discogs 這筆查不到封面設計／攝影 credit**，本組唯一一張封面作者不明的 Blue Note。原壓是 **unipak 對開封套**、附 Liberty 印刷內袋。｜**CAA 的唯一一張圖掛在登錯載體的 b3ba26ce 上**——主線要原盤封面看 Discogs r1249725（8 圖）。｜**跨卡互指（第 585 條）**：Billy Higgins 在本組兩次（本張與《Reach Out!》，相隔三個半月）；Lee Morgan 同批還以側人身分出現在 Andrew Hill《Grass Roots》（1968-08-05）。"
+ },
+ {
+  "key": "desc2:The Three Sounds|Elegant Soul",
+  "artist": "The Three Sounds",
+  "album": "Elegant Soul",
+  "facts": [
+   {
+    "f": "release-group 96ca326b 的欄位：title「Elegant Soul」、artist-credit **群組 `Gene Harris & The Three Sounds`（9b58e361）**、first-release-date 1968、primary-type Album、secondary-types 空。**轄下只有兩筆**：**原盤 acaa1a1c 是 1968 US Official Blue Note BST 84301、12 吋 9 軌**（〈Elegant Soul〉200 秒、〈Do It Right Now〉378、〈Sittin' Duck〉555、〈(Sock It To Me) Harper Valley P.T.A.〉165、〈Sugar Hill〉165、〈African Sweets〉275、〈Black Gold〉236、〈Book Of Slim〉226、〈Walls Of Respect〉220）；2008 US CD 791c951e（50999 5 22386 2 8，9 軌，**credit 收攏成 The Three Sounds**）。CAA 的 1 張圖掛在原盤 acaa1a1c。**本組軌數最多的碟（9 軌），也是平均單軌最短的（多半 2–4 分鐘）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=96ca326b-1932-480c-9b01-843ad35f8cef&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄記「BST 84301 Gene Harris And His Three Sounds - Elegant Soul 1968」，**場次是連續兩天、都在洛杉磯 RPM International Studios**（不是 Van Gelder）：**1968 年 9 月 19 日**出 2958〈Sittin' Duck〉、2959〈(Sock It To Me) Harper Valley PTA〉、2963〈Book Of Slim〉；**1968 年 9 月 20 日**出 2956〈Elegant Soul〉、2957〈Do It Right Now〉、2960〈Sugar Hill〉、2961〈African Sweets〉、2962〈Black Gold〉、2964〈Walls Of Respect〉。核心三人是 Gene Harris（piano）、Andrew Simpkins（bass）、Carl Burnett（drums）；**外加整組弦樂（六至九把提琴／中提琴／大提琴）、長笛 Jim Horn、顫音琴 Alan Estes、吉他 Al Vescovo、第二鼓手 Paul Humphrey、打擊 Dee Ervin 與 Miles Grayson，Monk Higgins 編曲兼指揮**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r2019814（1968 US BST 84301）的製作名單：**Monk Higgins＝Arranged By, Conductor, Producer**、**Dee Ervin＝Producer**、F. Byron Clark＝Engineer（RPM Studios）、Bert Agudelo＝Lacquer Cut By、**Fred Seligo＝Art Direction 兼攝影**、**Andrew C. Rodriguez＝Graphic Design**、Herb Wong＝內頁文案。盤面註記「Produced by Monk Higgins and Dee Ervin of **Wally Roker Associates**」、**封面與書背的掛名是「Gene Harris And His Three Sounds」、唱片標籤上的掛名卻是「The Three Sounds」**、封面目錄號寫 BST-84301 而標籤寫 BST 84301。`catno=BST 84301` 共 10 筆：美國原壓 2019814／21036109／37522668／12963175 全標 1968，德國 13685740／14683644，1971 年 UA 期再壓 19697071、1973 年 4947157。",
+    "src": "https://api.discogs.com/releases/2019814"
+   },
+   {
+    "f": "⚠ **年份有疑議（本組第二筆）。** 本層新掃的 Cash Box（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`，1968-10→1969-12 共 69 期）**查無 BST 84301 的 LP 評介**，但兩條旁證都把它推到 1969：(a) **1968-12-07 的年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84301 不在其中；(b) 鄰號評介週 **84299＝1969-03-08、84300＝1969-04-12、84302＝1969-05-31**——84301 只能落在 1969 年春天。**唯一指向 1968 的紙本是單曲不是專輯**：Cash Box **1968-12-21** 評了 **Blue Note 1924 單曲〈Harper Valley PTA〉/〈Elegant Soul〉**（「R&B rendering of the pop monster… Instrumental rendering is beautifully done and packs a wallop. Flip: 『Elegant Soul』 (3:20) [Wally Roker, BMI-Bland]」）——**單曲先出、專輯後出是常態，這條不能當專輯的發行日。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-21.pdf"
+   },
+   {
+    "f": "英文維基《Elegant Soul》infobox：artist **The Three Sounds**、released **September 21, 1968**、recorded **September 19–20, 1968**、producer **Monk Higgins, Dee Ervin**、label Blue Note、genre 標 **Jazz-funk**、length 36:27、前作《Coldwater Flat》（1968）、後作《Soul Symphony》（1969）。⚠ **infobox 那個「September 21, 1968」只比錄音結束晚一天，實務上不可能是上市日**——多半是把錄音日抄成發行日。AllMusic 的 Thom Jurek 給三星半，說「*Elegant Soul* was -- and could even be currently -- dismissed with a casual listen as lightweight pop with a compelling rhythmic sense. But that would be selling it way short. This album warrants close listening to discern all that's happening in its production and arrangements」。",
+    "src": "https://en.wikipedia.org/wiki/Elegant_Soul"
+   },
+   {
+    "f": "串流側 us 店面 collectionId 716251274「Elegant Soul」**掛名 Gene Harris & The Three Sounds（不是卡上的 The Three Sounds）**、**9 軌＝與原盤同形**。本張不在缺試聽名單裡，本層未逐軌重跑；**上架比對要用店面掛名**。",
+    "src": "https://itunes.apple.com/lookup?id=716251274&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Blue Note 把 The Three Sounds 送進洛杉磯的 RPM，Monk Higgins 在三重奏外面套上一整組弦樂、長笛與打擊——九首曲子，最長九分鐘、最短兩分四十五秒",
+   "第四軌是〈Harper Valley P.T.A.〉的器樂版：1968 年紅遍全美的鄉村暢銷曲，被改成靈魂爵士後還先發了單曲"
+  ],
+  "sound": "9 軌、約 36 分半的靈魂爵士／爵士放克，是本組軌數最多、單軌最短的一張。核心是 Gene Harris 鋼琴、Andrew Simpkins 貝斯、Carl Burnett 鼓的三重奏，外面套上 Monk Higgins 編寫指揮的整組弦樂、Jim Horn 的長笛、顫音琴、吉他、第二鼓手與兩位打擊。多數曲子只有兩三分鐘，唯一的長曲是 9 分 18 秒的〈Sittin' Duck〉；第四軌是當年鄉村暢銷曲〈Harper Valley P.T.A.〉的器樂版。1968 年 9 月 19–20 日連兩天在洛杉磯 RPM International Studios 錄完。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Elegant Soul",
+   "Sittin' Duck",
+   "(Sock It To Me) Harper Valley P.T.A."
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與卡單不一致，建議改 1968 → 1969；但把握度低於《Grass Roots》那筆，主線可自行權衡。** 支持 1969 的是本層新掃的同期紙本（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）：(a) **Cash Box 1968-12-07 年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84301 不在其中；(b) 鄰號評介週 **84299＝1969-03-08、84300＝1969-04-12、84302＝1969-05-31**，84301 落在 1969 年春天。⚠ **反方有四家但都可疑**：jazzdisco 4300 頁 1968；Discogs `catno=BST 84301` 美國原壓四筆全 1968（第 570 條的「整群抄 ℗© 年」形）；MB 1968；**英文維基 infobox 的「September 21, 1968」只比錄音結束晚一天，幾乎確定是把錄音日誤填成發行日**。⚠ **另有一條容易誤導的紙本**：Cash Box **1968-12-21** 評的是 **Blue Note 1924 單曲**〈Harper Valley PTA〉/〈Elegant Soul〉，**不是專輯**——單曲先行是常態，不能拿來定專輯年。**錄音 1968-09-19／20 兩天，與首發年不同年（若採 1969）。**",
+  "notes": "⚠ **年份改判建議 1969（把握度中等），見 yearVerified。若主線維持 1968，正文寫「1968 年」仍有四家資料庫背書；若改 1969，正文只能寫「1968 年 9 月錄」。**｜**掛名（第 583 條）**：MB 是群組 `Gene Harris & The Three Sounds`（9b58e361），卡上收攏成 **`The Three Sounds`**（池中 21 列，`Gene Harris` 個人只有 1 張）；**盤面本身就分裂——封面與書背印「Gene Harris And His Three Sounds」、唱片標籤印「The Three Sounds」**，2008 年 CD 也用 The Three Sounds。⚠ **店面掛名是 Gene Harris & The Three Sounds**，上架比對用店面寫法。｜**本組兩張不在 Van Gelder 錄的碟之一**（另一張是《Introducing Kenny Cox》的底特律）：這張在**洛杉磯 RPM International Studios**，工程師 F. Byron Clark。**製作是 Wally Roker Associates 的 Monk Higgins 與 Dee Ervin，不是 Wolff 也不是 Pearson**——本組唯一一張 Blue Note 外製。｜**編制是三重奏＋管弦與打擊的大組**（jazzdisco 兩天的名單略有不同，19 日那天是六把弦樂、20 日那天是六把小提琴＋兩把中提琴＋大提琴），**正文不得寫成單純的鋼琴三重奏**。連續兩天同一路數，第 584 條已判**可寫成一次錄音**。｜**給後批（第 589 條第 5 點）**：The Three Sounds 1969 年後在 Blue Note 改叫 `A New Sound From The Three Sounds`（BST 84341《Soul Symphony》），掛名仍沿用池中 `The Three Sounds`。｜**9 軌全部在 5 分鐘以內、只有〈Sittin' Duck〉例外**，是本組節奏感最強、最接近 jazz-funk 的一張（維基 genre 欄就標 Jazz-funk）。"
+ },
+ {
+  "key": "desc2:Horace Silver|Serenade to a Soul Sister",
+  "artist": "Horace Silver",
+  "album": "Serenade to a Soul Sister",
+  "facts": [
+   {
+    "f": "release-group b3d7aa9a 的欄位：title「Serenade to a Soul Sister」、artist-credit「The Horace Silver Quintet with Stanley Turrentine」（**群組 e9ac5139 ＋ Person 51e0df97**）、first-release-date 1968、primary-type Album、secondary-types 空。轄下七筆：⚠ **MB 只建了 mono——原盤 e57e2c9b 登的是 1968 US Official Blue Note **BLP 4277**、12 吋 6 軌**（〈Psychedelic Sally〉435 秒、〈Serenade to a Soul Sister〉381、〈Rain Dance〉382、〈Jungle Juice〉408、〈Kindred Spirits〉357、〈Next Time I Fall in Love〉318），**stereo 的 BST 84277 在 MB 上沒有建檔**（第 587 條第 4 點，與本組其餘 17 張「只建 stereo」的方向正好相反）；CD 有 1988 US 4c805a69、1997 JP 353bc1fe（TOCJ-4277）、2004 US a909a05b／c8f5826c 與 XE 876f7053；2025-03-21 XW 黑膠 c1c70c80（6514969＋BST 84277）。CAA 的 6 張圖掛在 1988 年 US CD 4c805a69、**不是原盤**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b3d7aa9a-49e8-37d1-92e2-c3ac8e5c400e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BLP 4277 The Horace Silver Quintet - Serenade To A Soul Sister 1968」，**明確拆成兩場、編制不同**：**(1) 1968 年 2 月 23 日、Van Gelder Studio**，Charles Tolliver（trumpet）、**Stanley Turrentine（tenor sax）**、Horace Silver（piano）、Bob Cranshaw（bass, electric bass）、Mickey Roker（drums），母帶序 2049 tk.5〈Serenade To A Soul Sister〉、2050 tk.10〈Psychedelic Sally〉、2051 tk.20〈Rain Dance〉；**(2) 1968 年 3 月 29 日、同棚**，Charles Tolliver（trumpet，#1,2）、**Bennie Maupin（tenor sax，#1,2）**、Horace Silver（piano）、**John Williams（bass）**、**Billy Cobham（drums）**，母帶序 2081〈Kindred Spirits〉、2082〈Jungle Juice〉、2083〈Next Time I Fall In Love〉。附註 also released on Blue Note BST 84277 in 1968、CDP 7 84277 2 in 1988。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r13669340（**1968 US BST 84277 stereo**，MB 沒建的那一號）的製作名單：**Francis Wolff＝Producer**、Rudy Van Gelder＝Recorded By、Horace Silver＝Piano 兼全曲作者；**分軌編制欄把兩場拆得很乾淨**——Bob Cranshaw 貝斯 [A1,A2,A3]／John Williams 貝斯 [B1,B2,B3]、Mickey Roker 鼓 [A1,A2,A3]／**Billy Cobham 鼓 [B1,B2,B3]**、Stanley Turrentine 次中音 [A1,A2,A3]／Bennie Maupin 次中音 [B1,B2,B3]，**也就是 A 面是第一場、B 面是第二場**。盤面註記這張雖有 Liberty 藍白標，**母帶卻是在好萊塢的 Columbia 刻的**（matrix「BST 84277 SIDE 1 - 1B」是 Columbia 式編號、runout 沒有 VAN GELDER 鋼印），仍屬原壓。`catno=BST 84277` 共 19 筆，1968 年的美國原壓有 13669340／7565130／13882485／14538513／19052569／30574042 等六筆、日本 27160818 亦 1968；`catno=BLP 4277` 的 mono 原壓是 5552878（1968）。",
+    "src": "https://api.discogs.com/releases/13669340"
+   },
+   {
+    "f": "**同期紙本：Cash Box 1968-12-07 的年度唱片目錄把「Serenade To A Soul Sister／Horace Silver／BST 84277」列進 Blue Note 在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`），與英文維基 infobox 引的 **Billboard 1968-06-01**（released Early June 1968）相符——**1968 年首發確定**。同一份掃描檔另可見 Horace Silver 的下一張《You Gotta Take A Little Love》（BST 84309）評於 **1969-05-24**，Cash Box 1969-05-31 的 FOCUS ON JAZZ 專欄還寫「One sure way to be reminded that about a year has gone by again is the release of a new Horace Silver album」——**一年一張的節奏，正好把本張定在 1968 年年中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
+   },
+   {
+    "f": "英文維基《Serenade to a Soul Sister》infobox：artist **Horace Silver**、released **Early June 1968**（引 **Billboard 1968-06-01**）、recorded **February 23 and March 29, 1968**、studio Van Gelder、producer **Francis Wolff**、label Blue Note BST 84277、length 37:54、前作《The Jody Grind》（1966）、後作《You Gotta Take a Little Love》（1969）。personnel 欄與 jazzdisco 一致（tracks 1–3 是 Turrentine／Cranshaw／Roker，tracks 4–6 是 Maupin／John Williams／Cobham，**且 Tolliver 與 Maupin 都不在第 6 軌**）。條目另提內頁文案收錄了 Silver 自述的作曲原則。",
+    "src": "https://en.wikipedia.org/wiki/Serenade_to_a_Soul_Sister"
+   },
+   {
+    "f": "**缺試聽第 254 條三種查法全部命中同一張**：(1) `search?term=Horace Silver Serenade to a Soul Sister&entity=album` → 只回 **724490548**「Serenade to a Soul Sister (The Rudy Van Gelder Edition) [Remastered]」、6 軌、℗ 2004 Blue Note（⚠ **第 588 條記錄的「第一個查詞只回《Silver's Serenade》近似盤」在本層重跑時沒有重現，用完整句一次命中**）；(2) `lookup?id=27820&entity=album`（Horace Silver 藝人頁，50 張）→ 含 Serenade 字樣的有三筆，**其中兩筆是 1963 年的《Silver's Serenade》（716268905／724198827，各 5 軌）**，本張是 724490548；(3) `lookup?id=724490548&entity=song` → **6 軌、單片、曲序與原盤 e57e2c9b 逐軌相同**：Psychadelic Sally 434s（⚠ 店面把 Psychedelic 拼成 Psychadelic）／Serenade to a Soul Sister 379s／Rain Dance 382s／Jungle Juice 407s／Kindred Spirits 356s／Next Time I Fall In Love 320s，對原盤 435／381／382／408／357／318 秒，**六軌逐軌差 1–2 秒，非合訂版**，六軌 previewUrl 全部有。",
+    "src": "https://itunes.apple.com/lookup?id=724490548&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "串流採信 724490548",
+    "src": "https://itunes.apple.com/lookup?id=724490548&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "A 面和 B 面是兩場不同的錄音：二月那場的次中音是 Stanley Turrentine、鼓是 Mickey Roker；三月那場換成 Bennie Maupin，鼓椅上坐的是二十四歲的 Billy Cobham",
+   "〈Psychedelic Sally〉開場——1968 年的 Horace Silver 把迷幻這個詞寫進曲名，底下跑的還是他自己那套硬咆勃的低音型"
+  ],
+  "sound": "6 軌、約 38 分鐘的五重奏，**A 面與 B 面其實是兩場不同的錄音**。兩面都由 Charles Tolliver 的小號與 Horace Silver 的鋼琴領頭：A 面（〈Psychedelic Sally〉〈Serenade to a Soul Sister〉〈Rain Dance〉）的次中音是 Stanley Turrentine、Bob Cranshaw 貝斯、Mickey Roker 鼓；B 面（〈Jungle Juice〉〈Kindred Spirits〉〈Next Time I Fall in Love〉）換成 Bennie Maupin、John Williams 與 Billy Cobham，收尾那首只剩鋼琴三重奏。六首全是 Silver 自己寫的，節奏偏靈魂爵士。1968 年 2 月 23 日與 3 月 29 日在 Van Gelder 錄，Francis Wolff 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Psychedelic Sally",
+   "Serenade to a Soul Sister",
+   "Jungle Juice"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同。兩條同期紙本互相印證：英文維基 infobox 引 **Billboard 1968-06-01**（Early June 1968）；本層新掃的 **Cash Box 1968-12-07 年度唱片目錄把「Serenade To A Soul Sister／BST 84277」列進 Blue Note 在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）。另 jazzdisco 4200 頁 1968、Discogs `catno=BST 84277` 的 1968 年美國原壓多達六筆、`catno=BLP 4277` mono 原壓 5552878 亦 1968、MB 1968。**錄音 1968-02-23 與 1968-03-29 兩場，與首發同年。**",
+  "notes": "**缺試聽三張之一——已確認，串流採信 collectionId 724490548**（Apple us，「Serenade to a Soul Sister (The Rudy Van Gelder Edition) [Remastered]」，6 軌，**與原盤 e57e2c9b 逐軌同序、逐軌差 1–2 秒，非合訂版**，六軌 previewUrl 齊全）。第 254 條三種查法全部指向同一筆；⚠ **藝人頁查法會撈到 1963 年的《Silver's Serenade》兩筆（716268905／724198827）——盤名近似、別選錯**。⚠ 店面把第一軌拼成「Psychadelic Sally」。｜**一張碟兩場錄音（第 584 條）**：A 面＝1968-02-23（Turrentine／Cranshaw／Roker），B 面＝1968-03-29（Maupin／John Williams／**Billy Cobham**），**正文絕不能寫成一場**；Discogs r13669340 的分軌編制欄把兩場拆得最乾淨。｜**掛名（第 583 條）**：MB 是「The Horace Silver Quintet with Stanley Turrentine」，卡上收攏成 **`Horace Silver`**（c-141 a 第 573 條先例，池中 25 列＋王牌 1）；**Turrentine 是聯名不是側人，正文要寫出他**——但也要寫清楚他只在 A 面三軌。｜**製作 Francis Wolff、錄音 Van Gelder**；⚠ **Discogs 那筆 1968 US stereo 原壓的母帶是在好萊塢 Columbia 刻的**（matrix 是 Columbia 式、runout 無 VAN GELDER 鋼印），仍屬原壓。｜⚠ **MB 只建 mono（BLP 4277）、stereo（BST 84277）沒建**，是本組唯一反方向的一筆（其餘 17 張只建 stereo）；**CAA 的圖來自 1988 年 US CD**，主線要原盤封面看 Discogs r13669340（5 圖）或 mono 的 r5552878。｜**跨卡互指（第 585 條）**：Turrentine 同批還有領銜盤《Common Touch》（1968-08-30）——**同年、兩種身分、兩場不同錄音**；Bob Cranshaw／Mickey Roker 在本組出現四次。"
+ },
+ {
+  "key": "desc2:Duke Pearson|The Phantom",
+  "artist": "Duke Pearson",
+  "album": "The Phantom",
+  "facts": [
+   {
+    "f": "release-group 9087a892 的欄位：title「The Phantom」、artist-credit 單一 Person `Duke Pearson`（ea39ae7d）、first-release-date 1968、primary-type Album、secondary-types 空。轄下八筆：**原盤 a86a0fb5 是 1968 US Official Blue Note BST 84293、12 吋 6 軌**（〈The Phantom〉615 秒、〈Blues for Alvina〉185、〈Bunda Amerela (Little Yellow Streetcar)〉365、〈Los Ojos Alegres (The Happy Eyes)〉375、〈Say You're Mine〉350、〈The Moana Surf〉445）；**1968 德國同期壓片 7cdb19b4（BST 84293 K）**；**1969 南非 7b6af419（BLC 84293）**；2004 US CD a28ae22a（Water WATER 133）；1992-12-02 JP CD db6f47b1（TOCJ-5738，credit「Duke Pearson Featuring Bobby Hutcherson」）；2011 FR 黑膠 8b57b1cd（Heavenly Sweetness HSV034VL）；2016-05-27 XW 數位 abf6bec4；2020-10-30 Tone Poet 黑膠 030bdb75（B0031883-01）。**CAA 的 3 張圖掛在 1968 德國壓片 7cdb19b4**，版式與美國原壓同期。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9087a892-364f-3ff8-a5ce-a9e81768c853&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BST 84293 Duke Pearson - The Phantom 1968」，**明確拆成兩場、康加手不同**：**(1) 1968 年 6 月 24 日、Van Gelder Studio**，Jerry Dodgion（flute, alto flute）、Bobby Hutcherson（vibes）、Duke Pearson（piano, arranger）、Sam Brown（acoustic guitar）、Al Gafa（electric guitar）、Bob Cranshaw（bass）、Mickey Roker（drums）、**Victor Partajo（conga）**——**只錄了一首**：3049 tk.22〈Bunda Amerela (Little Yellow Streetcar)〉；**(2) 1968 年 9 月 11 日、同棚**，同一組人但康加換成 **Carlos 『Patato』 Valdes（conga, guiro）**，且 Hutcherson／Sam Brown 只在部分軌，母帶序 4013 tk.7〈Los Ojos Alegres〉、4014 tk.8〈Blues For Alvena〉、4015 tk.11〈The Phantom〉、4017 tk.22〈The Moana Surf〉、4018 tk.24〈Say You're Mine〉——**其餘五軌全出自這一場**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r577698（1968 US BST 84293）的製作名單：**Francis Wolff＝Producer 兼封面攝影**、Rudy Van Gelder＝Recorded By 兼 Lacquer Cut By、**Forlenza Venosa Associates＝Design [Cover]**、**Nat Hentoff＝內頁文案**；編制欄把兩位康加手都列出來（**Victor Pantoja** 與 Carlos 『Patato』 Valdes）。盤面註記「Recorded June 24 (track A3) and September 11 (all other tracks), 1968. 藍白標『Blue Note Records • A Division Of Liberty Records, Inc.』、70mm pressing ring、VAN GELDER 鋼印」，runout「BNST•84293•A• 114 VAN GELDER」。`catno=BST 84293` 共 7 筆：美國原壓 577698／8385601／15972084 全標 1968、德國 8334442（BST 84293 K）1968、2011 Heavenly Sweetness 2857121、2020 Tone Poet 16136392。",
+    "src": "https://api.discogs.com/releases/577698"
+   },
+   {
+    "f": "⚠ **年份落在年底邊界，但不建議改。** 本層新掃的 Cash Box（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）**查無 84293 的評介**；**1968-12-07 的年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84293 剛好差一號沒進去。鄰號評介週：**84292＝1968-12-28、84294／84295＝1969-01-25、84296＝1969-03-22**——**84293 的上市落在 1968 年 12 月到 1969 年 1 月之間**。由於 jazzdisco、Discogs 三筆美國原壓與一筆德國同期壓片、MB、英文維基**五邊都標 1968**，且年度目錄的編纂截止通常早於出刊（12-07）數週，**本層維持 1968，但註記這是本組最靠近年底邊界的一張**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-12-07.pdf"
+   },
+   {
+    "f": "英文維基《The Phantom (album)》infobox：released **1968**、recorded「**June 24, 1968 (#3) / September 11, 1968 (#1–2, 4–6)**」、studio Van Gelder、producer **Francis Wolff**、label Blue Note BST 84293、length 38:36、前作《Introducing Duke Pearson's Big Band》（1967）、後作《Now Hear This》（1968）。正文寫這是 Pearson 的**第十二張領銜盤**；AllMusic 的 Stephen Thomas Erlewine 給三星，說「*The Phantom* finds Pearson writing an ambitious set of post-bop that expands the boundaries of the music with **Latin percussion and complex harmonies derived from the avant-garde**… The results aren't always successful, but they are intriguing and worth investigating」。personnel 欄兩位康加手並列（Victor Pantoja／Carlos 『Patato』 Valdés）。",
+    "src": "https://en.wikipedia.org/wiki/The_Phantom_(album)"
+   },
+   {
+    "f": "**缺試聽第 254 條三種查法全部命中同一張**：(1) `search?term=Duke Pearson The Phantom&entity=album` → 只回 **1445883152**「The Phantom (feat. Bobby Hutcherson)」、6 軌、**℗ 1968 Blue Note Records**；(2) `lookup?id=5652847&entity=album`（Duke Pearson 藝人頁，19 張）→ 含 Phantom 字樣的只有 1445883152 這一筆；(3) `lookup?id=1445883152&entity=song` → **6 軌、單片、曲序與原盤 a86a0fb5 逐軌相同**：The Phantom 619s／Blues For Alvina 189s／Bunda Amerela (Little Yellow Streetcar) 346s／Los Ojos Alegres (The Happy Eyes) 377s／Say You're Mine 338s／The Moana Surf 446s，對原盤 615／185／365／375／350／445 秒，**六軌逐軌差 1–19 秒（第 3 軌差最大），無多軌無缺軌無合訂**，六軌 previewUrl 全部有。⚠ **店面掛名是「Duke Pearson (feat. Bobby Hutcherson)」**，上架比對要用店面寫法。",
+    "src": "https://itunes.apple.com/lookup?id=1445883152&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "串流採信 1445883152",
+    "src": "https://itunes.apple.com/lookup?id=1445883152&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "兩把吉他、一支長笛、一組顫音琴，外加一個康加手——Duke Pearson 1968 年把拉丁打擊和前衛和聲一起拌進後咆勃，開場那首同名曲一路走了十分二十一秒",
+   "六月那天只錄成一首〈Bunda Amerela〉，康加是 Victor Pantoja；九月再進棚錄剩下五首時，鼓椅旁邊換成了 Carlos 『Patato』 Valdés"
+  ],
+  "sound": "6 軌、約 38 分半的小編制拉丁後咆勃：Jerry Dodgion 的長笛與中音長笛、Bobby Hutcherson 的顫音琴在前，Duke Pearson 鋼琴兼編曲、Sam Brown 木吉他與 Al Gafa 電吉他兩把吉他、Bob Cranshaw 貝斯、Mickey Roker 鼓，外加一位康加手。**兩場錄音的康加手不同**：六月那場是 Victor Pantoja、九月那場是 Carlos 『Patato』 Valdés（兼刮胡）。開場同名曲 10 分 21 秒，最短的〈Blues for Alvina〉只有 3 分 9 秒。1968 年 6 月 24 日與 9 月 11 日在 Van Gelder 錄，Francis Wolff 監製。串流側歸「Jazz」。",
+  "keyTracks": [
+   "The Phantom",
+   "Los Ojos Alegres (The Happy Eyes)",
+   "Bunda Amerela (Little Yellow Streetcar)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同，**但這是本組最靠近年底邊界的一張，請留意**。五邊一致：jazzdisco 4200 頁 1968、Discogs `catno=BST 84293` 美國原壓三筆與德國同期壓片 8334442 全標 1968、MB 1968、英文維基 infobox 1968。⚠ **本層新掃的 Cash Box 查無 84293 評介**，且 **1968-12-07 年度唱片目錄列到 BST 84292 為止、84293 剛好差一號沒進去**；鄰號評介週 **84292＝1968-12-28、84294／84295＝1969-01-25**，**上市落點是 1968 年 12 月至 1969 年 1 月**。年度目錄的編纂截止早於出刊數週，不足以推翻五家的 1968，**本層維持 1968**。**錄音 1968-06-24 與 1968-09-11 兩場，與首發同年。**",
+  "notes": "**缺試聽三張之一——已確認，串流採信 collectionId 1445883152**（Apple us，「The Phantom (feat. Bobby Hutcherson)」，6 軌，**與原盤 a86a0fb5 逐軌同序、逐軌差 1–19 秒，非合訂版**，六軌 previewUrl 齊全）。第 254 條三種查法全部指向同一筆，無第二候選。⚠ **店面掛名是「Duke Pearson (feat. Bobby Hutcherson)」**，上架比對用店面寫法。｜**一張碟兩場錄音（第 584 條）**：**1968-06-24 只錄成第 3 軌〈Bunda Amerela〉一首（康加 Victor Pantoja）**，其餘五軌出自 **1968-09-11（康加 Carlos 『Patato』 Valdés，兼刮胡）**——**正文絕不能寫成一場，也不能把兩位康加手寫成同一人**。⚠ **jazzdisco 把第一場的康加手拼成「Victor Partajo」，Discogs 與維基都是「Victor Pantoja」**，以後者為準。｜⚠ **曲名**：jazzdisco 第二場的母帶表寫〈Blues For **Alvena**〉，盤面／MB／維基是〈Blues for **Alvina**〉，以盤面為準。｜**製作 Francis Wolff 兼封面攝影**，封面 **Forlenza Venosa Associates** 設計、內頁文案 Nat Hentoff。｜**掛名（第 583 條）**：卡上 `Duke Pearson`，與同批《Introducing Duke Pearson's Big Band》同字串、**兩卡互指**——**兩場相隔半年、編制天差地遠**（十六人大樂團 vs 八人拉丁小編制），正文不得互抄；c-141 a 的《Sweet Honey Bee》是第三張。｜**年份靠近年底邊界，見 yearVerified。**｜**CAA 的圖來自 1968 德國同期壓片 7cdb19b4**（版式與美國原壓同期，可用）；美國原壓封面另見 Discogs r577698（4 圖）。"
+ },
+ {
+  "key": "desc2:Jimmy Smith|Open House",
+  "artist": "Jimmy Smith",
+  "album": "Open House",
+  "facts": [
+   {
+    "f": "release-group 28ee5a05 的欄位：title「Open House」、artist-credit「**The Incredible Jimmy Smith**」（Person 4f8a0d9b）、first-release-date 1968、primary-type Album、secondary-types 空。**轄下只有一筆——本組 RG 最單薄的一張**：**原盤 4232ecef 是 1968 US Official Blue Note BST 84269、12 吋 4 軌**（〈Open House〉970 秒、〈Old Folks〉290、〈Sista Rebecca〉660、〈Embraceable You〉390）。**沒有任何 CD、數位或再發被建檔**（第 587 條第 8 點）。**CAA 404、沒有封面**（第 588 條，本組兩張缺封面之一）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=28ee5a05-3774-434e-9530-45026a6e55c3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4200 系列目錄記「BST 84269 The Incredible Jimmy Smith - Open House **1968**」，錄音卻是 **1960 年 3 月 22 日、Van Gelder Studio, Englewood Cliffs, NJ**——**隔了八年，是本組（也是本線 1967–84 段目前）最長的一張 vault 盤**。編制 Blue Mitchell（trumpet，#1,4）、**Jackie McLean（alto sax，#1,2,4）**、**Ike Quebec（tenor sax，#1,3,4）**、Jimmy Smith（organ）、Quentin Warren（guitar）、Donald Bailey（drums）；四軌 tk 序 tk.3〈**Sister** Rebecca〉、tk.4〈Embraceable You〉、tk.6〈Old Folks〉、tk.7〈Open House〉。**附註「part of Open House / Plain Talk, Blue Note CDP 7 84269 2 in 1992」——1992 年 Blue Note 把本張與同場的姊妹盤《Plain Talk》合成一張 CD 發行。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 實體盤面 r13057784（1968 US BST 84269）的製作名單：**Alfred Lion＝Producer**（⚠ **本組只有兩張是 Lion 監製的，這是其中之一——因為錄音在 1960 年**）、Rudy Van Gelder＝Recorded By、**Reid Miles＝Design [Cover]**、**Francis Wolff＝Photography By [Cover Photo]**、**Leonard Feather＝內頁文案**。盤面註記「Recorded on March 22, 1960. Original stereo release with liberty label and VAN GELDER stamp in deadwax.」**此條目有 4 張實拍圖，可當缺封面的替代來源。**`catno=BST 84269` 共 10 筆：美國原壓 13057784／10845474／3086251（1968）、1970 年 Liberty/UA 再壓 12657804、德國 3525753（BST 84 269 K）、加拿大 7187799、**1991 年日本 The 4000 Series Collection BN 4269（5967344）**。",
+    "src": "https://api.discogs.com/releases/13057784"
+   },
+   {
+    "f": "**同期紙本直接坐實 1968：Cash Box 1968-12-07 的年度唱片目錄把「Open House／Jimmy Smith／BST 84269」列進 Blue Note 在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）。**同一份掃描檔還抓到姊妹盤的評介——Cash Box 1969-03-22：「PLAIN TALK - Jimmy Smith - Blue Note BST 84296. Organist Jimmy Smith delivers a fine performance on his latest LP. Assisted by Blue Mitchell (trumpet), Jackie McLean (alto sax), Ike Quebec (tenor sax), Quentin Warren (guitar) and Donald Bailey (drums), Smith grooves it on four striking numbers」**——**兩張的班底一字不差，坐實是同一場錄音拆成兩張 LP，而且《Plain Talk》晚了三個月才上市**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1969/CB-1969-03-22.pdf"
+   },
+   {
+    "f": "**英文維基沒有本專輯條目**（`Open House` 指向一般名詞的消歧義頁），也沒有《Plain Talk》以外的相關條目可引。本張的年份、編制與錄音日只能靠 jazzdisco＋Discogs 盤面＋Cash Box 年度目錄三邊交叉，三邊一致：1960-03-22 錄、1968 年出版、四軌。**這是本組資料最薄的兩張之一（另一張是《Andrew!!!》）。**",
+    "src": "https://en.wikipedia.org/wiki/Open_House"
+   },
+   {
+    "f": "⚠ **本組唯一一張店面掛零的碟。** 第 254 條三種查法全部落空：`search` 用「Jimmy Smith Open House」「Jimmy Smith Open House Blue Note」「The Incredible Jimmy Smith Open House」都沒回到本盤；改查「Open House Plain Talk Jimmy Smith」只回**姊妹盤《Plain Talk》**（1443283445／1587407764，各 4 軌）。**本張疑似從未上串流，而同一場錄音的另一半上了。**",
+    "src": "https://itunes.apple.com/lookup?id=1443283445&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1960 年 3 月 22 日一場錄音，Blue Note 剪成兩張唱片：這半張在庫房躺了八年才印出來，另外那半張《Plain Talk》又多等了三個月",
+   "Jackie McLean 的中音、Ike Quebec 的次中音、Blue Mitchell 的小號一起擠進 Jimmy Smith 的管風琴後面——開場同名曲一首就吹了十六分十秒"
+  ],
+  "sound": "4 軌、約 38 分半的管風琴爵士六重奏：Jimmy Smith 的管風琴在中央，Blue Mitchell 小號、Jackie McLean 中音薩克斯風、Ike Quebec 次中音薩克斯風三管輪流上，Quentin Warren 吉他、Donald Bailey 鼓在後——**四軌的編制各不相同，不是每首都六個人**。曲目極長：開場同名曲 16 分 10 秒、〈Sista Rebecca〉11 分，另兩首是標準曲〈Old Folks〉與〈Embraceable You〉。1960 年 3 月 22 日在 Van Gelder 一次錄完，Alfred Lion 監製；盤子 1968 年才出。**本張未上串流。**",
+  "keyTracks": [
+   "Open House",
+   "Sista Rebecca",
+   "Embraceable You"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1968（首發年），與卡單相同。**這是 vault 盤、而且是本組間隔最長的一張：錄音 1960-03-22、首發 1968，隔八年**（第 584 條）。同期紙本直接坐實：本層新掃的 **Cash Box 1968-12-07 年度唱片目錄把「Open House／Jimmy Smith／BST 84269」列進 Blue Note 在架盤**（repo 檔 `batch-progress/enum/cashbox-bn-1968-69-ocr.txt`）。另 jazzdisco 4200 頁 1968、Discogs `catno=BST 84269` 美國原壓三筆全標 1968、MB 1968。⚠ **目錄號 4269 是 1968 年的號段、錄音卻在 1960 年——第 526 條的反向案例：這次是號碼對、錄音年遠早於號碼**。維基無本專輯條目，無第五家可交叉。",
+  "notes": "⚠ **缺封面兩張之一（CAA 404）。替代圖來源建議**：**Discogs 美國原壓 r13057784（1968 US BST 84269，4 張實拍圖，Reid Miles 設計、Francis Wolff 封面攝影）**，另有同版式的 r10845474 與 r3086251；若要乾淨的再發掃圖，可用 **1991 年日本 The 4000 Series Collection BN 4269（Discogs r5967344）**。**MB 這個 RG 只有一筆 release、CAA 沒有任何圖，主線需自行接手。**｜⚠ **本組唯一店面掛零的碟**：第 254 條三種查法全部落空，**疑似從未上串流**；同一場錄音的姊妹盤《Plain Talk》反而在架（Apple 1443283445／1587407764）。｜**vault 盤，本組兩張之一，間隔八年（1960-03-22 → 1968），是本線 1967–84 段目前最長的一張。監製 Alfred Lion、封面 Reid Miles 設計＋Francis Wolff 攝影、內頁文案 Leonard Feather——整套都是 Lion 時代的班底，盤子卻是 Liberty 時代才印。**｜**《Plain Talk》（BST 84296）是同一場錄音拆出的另一半**：本層在 Cash Box **1969-03-22** 找到它的評介，**班底一字不差、晚三個月上市**；1992 年 Blue Note 又把兩張合成一張 CD（CDP 7 84269 2）。**《Plain Talk》實掃池中零張、本批 slice 也沒有——後批要收，兩卡 risk 互指、正文不得互抄**（第 589 條給後批第 2 點）。｜⚠ **曲名**：第 3 軌 MB 與盤面登「Sista Rebecca」、jazzdisco 寫「Sister Rebecca」，以盤面為準。｜**掛名（第 583 條）**：RG 與原盤 credit 都是「The Incredible Jimmy Smith」，卡上收攏成 `Jimmy Smith`（池中 40 列）。｜**四軌的編制各不相同**（jazzdisco 的 #1,4／#1,2,4／#1,3,4 標記），正文不得寫成整張都是六重奏。"
  }
 ]
