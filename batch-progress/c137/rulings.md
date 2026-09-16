@@ -271,3 +271,30 @@ MB RG b594f1ab 唯一 release 69c52708：1958-09-16、Vinyl 6 軌、Blue Note「
 2. **The Three Sounds《Introducing The Three Sounds, Volume 2》退**：1985 年日本限定 outtakes LP，六軌就是 Vol. 1 CD 的 bonus，店面無獨立條目。
    **這條線收的是目錄，不是 outtakes。** 同形（日本限定 LT／GXF／BNJ 首發的庫存盤）**若是完整的 session 專輯就收**（Minor Move、Two Bones 那種），**若是別張的 bonus 拆出來的就退**。
 **b 組 22 → 20，本批 42 張。** 年份改判 8 張全數追認（MB 首發日在這段幾乎全是錄音日 placeholder，jazzdisco 目錄頁＋Billboard 是硬證據）。
+
+## 第 509b 條（主線 2026-09-16，研究層 a 組交件後）：**《Blue Lights, Volume 2》改 1961；三張與 jazzdisco 對立的維持卡單**
+
+**BLP 1597 從 1958 改 1961。** 三條獨立證據：jazzdisco 1500 目錄記 1597＝1961（同頁 1596／1598 都是 1958）；
+外部條目明寫「**1958 年壓片但從未以深溝標商業發行，第一次商業發行是 1961 年**」；
+研究層掃完同期紙本 1957-10～1959-12 共 117 期，**全段沒有 1597 的評論或廣告**，而同卷 1596 在 1958-10-20 有評論。
+**形狀與同批 Curtis Fuller《Volume 3》（1583，錄 1957 出 1960）相同。策展層第 492 條漏了這張。**
+
+**三張與 jazzdisco 對立、維持卡單年**（同期紙本評論日勝過目錄年份欄）：
+Bone & Bari 1958（紙本 1958-01-27 評論）、The Cooker 1958（同期）、J. R. Monterose 1957（1957-03-09 評論）。
+**Bone & Bari 與 The Cooker 是同形（1957 年底壓、1958 年 1 月上市），要改要兩張一起改。**
+
+## 第 509c 條（同日）：**紙本掃描本身會誤植目錄號——引用時只引評論日與可交叉驗證的敘述**
+
+兩例：1958-06-30 的 Hank Mobley 評論印成「Blue Note 1548」，但編制與曲目與 **BLP 1568** 逐項相符、且寫「his fourth for the label」；
+1958-10-20 的 Blue Lights 評論印成「1591」，但點名的曲子只在 **BLP 1596** 上。
+另 1958-08-11 那則 1552 的評論**列的是 Vol. 1 的曲目**。
+**通則：同期紙本是最硬的年份證據，但它的目錄號欄位不可盡信——要用編制、曲目、「第幾張」這類敘述交叉定位。**
+
+## 第 509d 條（同日）：**單字掛名在店面反而查得到——`Sabu Palo Congo` 中、`Sabu Martinez Palo Congo` 回 0**
+
+策展層依第 307 條把掛名定成 `Sabu Martinez`（避免與單字 `Sabu` 合併），**卡單掛名不變**；
+但**查店面時要用盤面上的單字形**。與第 400a／429 條合為第三種查法的第五種漏查成因。
+
+**OCR 與目錄文字檔已進 repo 給後續批次共用**：
+`batch-progress/enum/billboard-bn-1957-59-ocr.txt`、`billboard-bn-1959-61-ocr.txt`、
+`jazzdisco-bn-1500.txt`、`jazzdisco-bn-4000.txt`。⚠ **worldradiohistory 缺 1961 年 1–3 月各期。**
