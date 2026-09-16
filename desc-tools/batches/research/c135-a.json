@@ -133,7 +133,7 @@
   "album": "Jamming in Jazz",
   "facts": [
    {
-    "f": "release-group d45acc68 的欄位：title「Jamming in Jazz」、**artist-credit 是兩個 Person 以「 - 」相連的「Edmond Hall - Sidney De Paris」**（d0025855 ＋ 6981867e）、first-release-date 1951、primary-type Album、secondary-types 空、轄下 1 筆 release。release 37e4e0cb：1951 US Official、6 軌、Blue Note，目錄號同時登記 BLP 7007 與 LP 7007；六軌依序 High Society／Blues at Blue Note／Ballin' the Jack／Royal Garden Blues／Night Shift Blues／Who's Sorry Now。⚠ **MB 這筆的 media.format 登錄成「12\" Vinyl」，與 7000 系列的實體規格不符**。",
+    "f": "release-group d45acc68 的欄位：title「Jamming in Jazz」、**artist-credit 是兩個 Person 以「 - 」相連的「Edmond Hall - Sidney De Paris」**（d0025855 ＋ 6981867e）、first-release-date 1951、primary-type Album、secondary-types 空、轄下 1 筆 release。release 37e4e0cb：1951 US Official、6 軌、Blue Note，目錄號同時登記 BLP 7007 與 LP 7007；六軌依序 High Society／Blues at Blue Note／Ballin' the Jack／Royal Garden Blues／Night Shift Blues／Who's Sorry Now。MB 這筆的 media.format 欄登錄的是「12\" Vinyl」。",
     "src": "https://musicbrainz.org/ws/2/release?release-group=d45acc68-05da-401f-9522-386c3e936828&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
    },
    {
@@ -213,7 +213,7 @@
   "album": "Jazz Band Ball",
   "facts": [
    {
-    "f": "release-group 7a44da58 的欄位：title「Jazz Band Ball」、**artist-credit 是群組實體「James P. Johnson’s Blue Note Jazzmen」**（a2952eb9，字串含 U+2019 彎撇號）、first-release-date 1951、primary-type Album、secondary-types 空、轄下 1 筆 release。release 9bdc02e9：1951 US Official、**10 吋黑膠 6 軌**、Blue Note BLP 7012；六軌依序 At the Ball／Walkin' the Dog／Tishomingo Blues／After You've Gone／The Call of the Blues／Everybody Loves Me Baby。⚠ **末軌 MB 拼成「Everybody Loves Me Baby」，盤面與目錄都是「Everybody Loves My Baby」**。",
+    "f": "release-group 7a44da58 的欄位：title「Jazz Band Ball」、**artist-credit 是群組實體「James P. Johnson’s Blue Note Jazzmen」**（a2952eb9，字串含 U+2019 彎撇號）、first-release-date 1951、primary-type Album、secondary-types 空、轄下 1 筆 release。release 9bdc02e9：1951 US Official、**10 吋黑膠 6 軌**、Blue Note BLP 7012；六軌依序 At the Ball／Walkin' the Dog／Tishomingo Blues／After You've Gone／The Call of the Blues／Everybody Loves Me Baby（MB 的拼法；盤面與目錄作「Everybody Loves My Baby」）。",
     "src": "https://musicbrainz.org/ws/2/release?release-group=7a44da58-49e1-4490-b96c-ff29a999c712&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
    },
    {
@@ -425,7 +425,7 @@
     "src": "https://musicbrainz.org/ws/2/release?release-group=927fad28-f222-408c-bf66-1ffec1b20d89&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
    },
    {
-    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5008 的四軌分繫在四個日期，地點都是 **Timme Rosenkrantz 的紐約公寓**：**1944-11-18** 出〈Floating On A Cloud〉、**1944-11-22** 出〈Autumn Mood〉、**1944-12-10～12** 出〈Erroll's Concerto (To You)〉、**1944-12-14** 出〈I Surrender, Dear〉。⚠ **jazzdisco 對最後一軌另加一條註記：「Erroll Garner, piano; George Wettling or maybe Doc West, drums; overdubbed in at a later date, poss. 1953」**——鼓聲是後來（可能 1953 年）疊上去的，鼓手是誰不確定。",
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5008 的四軌分繫在四個日期，地點都是 **Timme Rosenkrantz 的紐約公寓**：**1944-11-18** 出〈Floating On A Cloud〉、**1944-11-22** 出〈Autumn Mood〉、**1944-12-10～12** 出〈Erroll's Concerto (To You)〉、**1944-12-14** 出〈I Surrender, Dear〉。jazzdisco 對最後一軌另加一條註記：「Erroll Garner, piano; George Wettling or maybe Doc West, drums; overdubbed in at a later date, poss. 1953」**——鼓聲是後來（可能 1953 年）疊上去的，鼓手是誰不確定。",
     "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
    },
    {
@@ -641,7 +641,7 @@
     "src": "https://www.discogs.com/release/3330701"
    },
    {
-    "f": "串流側 gb 店面 collectionId **296585618**《Complete Jazz Series 1952》（15 軌、公版整編廠 CJS，逐軌標錄音日期）含本盤四軌、日期與 Discogs／jazzdisco 逐筆相符：〈High Society (01-31-52)〉291 秒、〈Sweet Georgia Brown (01-31-52)〉549 秒、〈Maryland (01-31-52)〉233 秒、〈I've Found a New Baby - Part 1／Part 2 (03-12-52)〉228＋231 秒，全部有試聽；⚠ **其中 High Society 與 Sweet Georgia Brown 被標成 01-31-52，與 Discogs 把 High Society 歸在 03-12-52 不合**。〈Casey Jones (03-12-52)〉在同廠的 `296572607`《Complete Jazz Series 1952 Vol. 2》，〈Petite Fleur〉三種查法在 1952 年的輯裡皆無。",
+    "f": "串流側 gb 店面 collectionId **296585618**《Complete Jazz Series 1952》（15 軌、公版整編廠 CJS，逐軌標錄音日期）含本盤四軌、日期與 Discogs／jazzdisco 逐筆相符：〈High Society (01-31-52)〉291 秒、〈Sweet Georgia Brown (01-31-52)〉549 秒、〈Maryland (01-31-52)〉233 秒、〈I've Found a New Baby - Part 1／Part 2 (03-12-52)〉228＋231 秒，全部有試聽；其中 High Society 在這張被標成 01-31-52，Discogs 原盤 notes 則把它歸在 03-12-52。〈Casey Jones (03-12-52)〉在同廠的 `296572607`《Complete Jazz Series 1952 Vol. 2》，〈Petite Fleur〉三種查法在 1952 年的輯裡皆無。",
     "src": "https://itunes.apple.com/lookup?id=296585618&country=gb&entity=song&limit=200"
    }
   ],
@@ -789,7 +789,7 @@
     "src": "https://musicbrainz.org/ws/2/release?release-group=2cdf806e-b4df-4534-81e7-dc4c84ce2a28&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
    },
    {
-    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5014 的四軌分繫在四個日期，地點都是 **Timme Rosenkrantz 的紐約公寓**：**1944-11-24** 出〈On The Sunny Side Of The Street〉；**1944-12-10～12** 出〈Yesterdays〉；**1944-12-20** 出〈Fast Company〉；**1944-12-23** 出〈I Got Rhythm〉。⚠ **這一卷是五卷裡註記最多的**：〈Yesterdays〉那一段寫「Erroll Garner, piano; **others unknown but possibly include Vick Dickenson, Bobby Platt, trombone; Barney Bigard, clarinet; Timme Rosenkrantz, percussion; However, most of them were overdubbed in 1953?**」；〈Fast Company〉寫「Erroll Garner, piano; **unknown, guitar**」；〈I Got Rhythm〉寫「**possibly John Simmons, bass; overdubbed in at a later date, poss. 1953**」。",
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5014 的四軌分繫在四個日期，地點都是 **Timme Rosenkrantz 的紐約公寓**：**1944-11-24** 出〈On The Sunny Side Of The Street〉；**1944-12-10～12** 出〈Yesterdays〉；**1944-12-20** 出〈Fast Company〉；**1944-12-23** 出〈I Got Rhythm〉。jazzdisco 對這一卷另加了三條註記：〈Yesterdays〉那一段寫「Erroll Garner, piano; **others unknown but possibly include Vick Dickenson, Bobby Platt, trombone; Barney Bigard, clarinet; Timme Rosenkrantz, percussion; However, most of them were overdubbed in 1953?**」；〈Fast Company〉寫「Erroll Garner, piano; **unknown, guitar**」；〈I Got Rhythm〉寫「**possibly John Simmons, bass; overdubbed in at a later date, poss. 1953**」。",
     "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
    },
    {
