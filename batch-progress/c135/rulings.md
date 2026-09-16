@@ -250,3 +250,69 @@ Konitz／Mulligan 那張的 The Haig 現場是 **1953-01-23**（不是 01-30）�
 第 456 條的三件事全部補齊：Vol.1 有條目、7025 的場地與兩個演出日核到、**Garner 五卷外部條目全部存在**（只是沒建 master，要用盤名搜）。
 **Ike Quebec 那張不必退回 §1 候選**（BN 102 三張裝 78 轉的條目有 8 張圖、逐面標母帶編號）；
 同時擋下策展層三處無出處宣稱（「廠牌第一張賣座 78 轉」、「Monk、Powell 都經他引介」、Topsy 錄音日 1944-07 實為 1945-07-17）。
+
+## 第 469 條（主線 2026-09-16，研究層 b 組交件後）：**b 組擋下策展層八處，全部採信；`year` 一張都不改，只改 Fats Sadi 的 `label` 年份**
+
+研究層 b 組 19/19 全 `full`、年份異議 0。**擋下的八處逐條採信**（全是正文層級的事實錯，不動任何裁定結論）：
+1. Gil Mellé BLP 5020 錄音日 → **1952-03-02 與 1953-01-31**（策展層寫 1952-12／1953-01）。
+2. Howard McGhee BLP 5024 錄音日 → **1953-05-20**（策展層寫 1953-10-20，但 Billboard 1953-10-10 已刊評論，10-20 不可能）。
+3. Sal Salvador BLP 5035 錄音日 → **1953-12-24**（策展層寫 1954-01-22）。
+4. Edmond Hall BLP 5026：Charlie Christian 彈的是**原聲吉他**，不是電吉他——那正是這場被反覆提起的原因；「唯一一次原聲錄音」查無來源，退成「難得」。
+5. Horace Silver BLP 5034：Sabu **只在〈Message From Kenya〉一軌**，〈Nothing But the Soul〉是 Blakey 一人。
+6. Clifford Brown BLP 5047「生前唯一一組純四重奏錄音室錄音」查無出處 → 第 253 條擋。
+7. Jutta Hipp BLP 5056「Blue Note 第一張非美國樂手領銜的盤」不成立（BLP 5019 1953、5052 1954 更早）→ 擋；
+   **同時推翻英文維基「1956 年才在美國發行」**——Billboard 1955-01-29 就已評（61 分）。
+   （Fats Sadi「10 吋唯一一張歐陸樂手領銜盤」同理擋——同批 Jutta Hipp 就是。）
+8. Hank Mobley BLP 5066「5000 系列倒數第二張」不成立（系列到 **BLP 5070**）；「24 張領銜盤」查無來源 → 擋。
+
+**卡單唯一要動的一筆**：Fats Sadi BLP 5061 的 `label` 欄 US 年份 **1954 → 1955**
+（jazzdisco 5000 系列記 1955、Billboard 1955-06-18 才刊評 74 分）。**`year` 維持 1954**——原盤是 Vogue L.D. 212（FR 1954），
+`year` 取原盤首發年不變。已改 `desc-tools/batches/cards/c135-cards.json` 與 `batch-progress/c135/prop-b.json`。
+
+## 第 470 條（同日）：**jazzdisco 的 5000 系列年份欄可信，但它的曲名欄與編制歸屬會錯——欄位要分開評價，不能整份採信或整份不信**
+
+第 467 條說 7000 系列年份欄系統性晚 1–2 年；b 組這次證實 **5000 系列的年份欄反而最準**
+（Fats Sadi 那筆贏過 MB 與 Discogs 兩個資料庫）。但同一份目錄的**曲名欄會錯**
+（Kenny Drew BLP 5023 記〈Spring Will Be A Little Late〉，MB 與店面都作〈It Might as Well Be Spring〉），
+**編制欄也會被讀錯**（Sabu 只在一軌，策展層讀成整張）。
+**通則：一份來源的可信度要按欄位評價，不是按來源評價。**「這份目錄準」與「這份目錄的這一欄準」是兩件事。
+
+## 第 471 條（同日）：⚠ **12 吋重組盤不一定收滿 10 吋的全部軌——「1537 ＝ 5021＋5055」這種算術式的回指要逐軌驗**
+
+b 組實查：**BLP 1537 只收了 BLP 5055 四軌裡的三軌**（〈After You've Gone〉被拿掉），也漏了 5021 的〈Things We Did Last Summer〉。
+**c-136 收 BLP 1537 時的回指寫法要改**，不得寫成「兩張 10 吋合起來就是這張 12 吋」。
+反例（可以逐軌驗證的）：BLP 5034 與 12 吋 1520 → 店面 724469019 十六軌 ＝ 前 8 軌 BLP 5018（a 組）＋ 後 8 軌 BLP 5034；
+BLP 5040 六軌全數併進 BLP 1502（a 組那張引軌數必須用 10 吋的 6 軌，不是 CD 的 11 軌）。
+「失敗與正常長得一樣」家族：**兩張 10 吋的軌數加起來剛好等於 12 吋的軌數時，漏收與收滿長得一模一樣。**
+
+## 第 472 條（同日）：**b 組 15 張的試聽來源已補進 `previews.json`；合訂版要指到本盤的那一軌**
+
+19/19 全部有固定試聽來源（0 張無來源）。其中 4 張探測層本來就命中，**15 張由主線依第 254 條補入**。
+合訂版的 `previewUrl` **不取第 1 軌，取本盤第一軌在該條目裡的軌序**：
+Edmond Hall `1877197493` 第 1 軌、Horace Silver `724469019` **第 9 軌**、Fats Sadi `1661109180` **第 4 軌**、
+Clifford Brown Quartet `1154299500` **第 6 軌**／Gryce–Brown 同一條目 **第 1 軌**、Lou Donaldson `1442286960` **第 7 軌**、
+Julius Watkins `1854316164`（**gb**，策展層只查 us 所以說零命中）、Erroll Garner `305742218`（gb 公版廠）、
+Dizzy Gillespie `418323034`（us，℗ Disques Vogue）**第 2 片第 1 軌〈Afro Paris〉**——
+⚠ 這一張補的時候踩到：`lookup` 回的 song 陣列是**跨片連號**的，用「第 11 軌」取到的是第 1 片的〈Embraceable You〉，
+**多片合訂版必須用 `discNumber` ＋ `trackNumber` 指定，不能用陣列索引**，已修正。
+策展層猜的《Dizzy Digs Paris》實查**零重疊，不可採**。
+c-135 全批試聽 **35/40**，剩 5 張（全在 a 組：Bechet、Edmond Hall & De Paris、James P. Johnson、Lee Konitz、Garner Vol. 3）走固定無來源狀態。
+
+## 第 473 條（同日，Vogue 授權盤覆核）：**第 461 條四張全部維持原判，但「同年」的推定要寫清楚是推的**
+
+用 a 組 James Moody 那把「同配置才算原盤」的尺覆核：
+- **Sadi BLP 5061**：Vogue L.D. 212 與 BN 八軌全同、只有曲序不同 → **Vogue 原盤** ✓
+- **Brown Quartet BLP 5047**：Discogs master 1133775 三筆（法 L.D. 179／英 L.D.E. 042／BN 5047）六軌完全相同 → **Vogue 原盤** ✓。
+  補一筆策展層沒提的**英版 L.D.E. 042**（1954，jazzdisco 說它才是「originally released」）；三張同年、誰先無法判定，**正文只寫「原盤是 Vogue」**。
+- **Gryce–Brown BLP 5048**：兩個 Vogue 版都是 **5 軌**（多〈No Start No End〉）、BN 是 **4 軌** → 配置不同，**BN 為主** ✓。
+  另法版 L.D. 175 在 Discogs **無年份**，「同年」只能靠英版推——正文不得寫成查到的。
+- **Gillespie BLP 5017**：Discogs 首壓 notes 明寫「US version with two different tracks」→ **BN 為主** ✓。
+
+## 第 474 條（同日，給寫作層與後批）：**1953–55 全 156 期 Billboard 已掃完；10 吋末期的封面 credits 出現 Reid Miles**
+
+b 組掃完 worldradiohistory 的 Billboard **1953–1955 全 156 期**，找到 **8 張的同期評論**：
+BLP 5020（1953-10-03，68 分）、5023（同日，65）、5024（1953-10-10，66）、5025（1953-10-31，63）、
+5034（1954-06-26，78）、5056（1955-01-29，61）、5061（1955-06-18，74）、5066（1955-11-12，77）。
+其餘 11 張 Billboard 未評（含 Miles Vol. 3），年份靠 MB＋Discogs＋jazzdisco 三筆一致、無紙本反證。
+**封面實線**：BLP 5055、5066 的封面 credits 已出現 **Reid Miles**（與 John Hermansader、Francis Wolff 並列）；
+**Gil Mellé 本人畫了 BLP 5020、5025、5026 三張封面**——同一批裡的實線，寫作層可用。
