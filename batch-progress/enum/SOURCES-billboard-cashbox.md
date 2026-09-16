@@ -162,3 +162,47 @@ Billboard 方面本層實測與 c-142 a 的訂正一致：1970 年只有 `Billbo
 本層第一輪因此誤判「這兩張查無紙本」。
 **→ 比對前一定要先把換行摺成空白（`' '.join(text.split())`）再跑正則**，
 目錄號搜尋也要同時試 `84349`／`4349`／`04347` 這類 OCR 變體。
+
+## 2026-09-16 六度追加（c-143 a 掃的，**1970–74 全段；命中頁不是全文**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1970-72-ocr.txt`（10.8 MB） | Billboard | **1970-01-03 → 1972-12-30 共 157 期命中頁，一期不缺** | c-143 a 掃 |
+| `billboard-bn-1973-74-ocr.txt`（7.1 MB） | Billboard | **1973-01-06 → 1974-12-28 共 104 期命中頁，一期不缺** | c-143 a 掃 |
+| `cashbox-bn-1970-72-ocr.txt`（7.0 MB） | Cash Box | **1970-01-03 → 1972-12-30 共 155 期命中頁**（404 兩期：1970-10-17、1972-01-29） | c-143 a 掃 |
+| `cashbox-bn-1973-74-ocr.txt`（3.4 MB） | Cash Box | **1973-01-06 → 1974-12-28 共 100 期命中頁**（404 四期：1973-09-22、1974-07-06、1974-08-03、1974-11-23） | c-143 a 掃 |
+
+**兩家至此覆蓋 1955 → 1974 年底**（Billboard 1970–74 一期不缺；Cash Box 1960-11 → 1974 只缺上表六期）＋Cash Box 1984-09→1985-06。
+
+⚠ 關鍵字＝c-143 a 的 24 個目錄號（84353–84379、89906、84901、BN-LA007／015、LST-11006、ST-616、SABB-11120、PR 7514）
+＋22 個盤名＋17 個人名＋**「Blue Note」**。**「Blue Note」是通配關鍵字，1970–74 任何提到 Blue Note 的頁都在裡面**
+——查別的 Blue Note 碟大致夠用，查非 Blue Note 的碟仍須重抓。每期以 `######## BB-YYYY-MM-DD pages=N`／`######## CB-…` 分隔，頁內以 `---- pN` 分隔。
+
+### ⚠ 抓取端重大訂正（c-143 a 實測，**派工信給的 Cash Box URL 形狀只對 1970 年**）
+
+**Cash Box 從 1971 年起檔名改成 `Cash-Box-YYYY-MM-DD.pdf`，`CB-` 前綴一律 404。**
+
+- 1970 年：`https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1970/CB-1970-MM-DD.pdf` ✓
+- **1971–74 年：`https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/<年>/Cash-Box-YYYY-MM-DD.pdf`** ✓
+
+c-143 a 第一輪照派工信用 `CB-` 抓 1970–73 共 209 期，**只成功 54 期**（幾乎全是 1970 年），
+差點把 1971 年起的 155 期記成「檔案館沒有」。**目錄列表頁回 403、`Cashbox-Magazine.htm` 與 `Cash_Box_Magazine.htm` 都回 404，沒有索引可查**
+——只能一個一個試檔名形狀。**與 c-142 a 對 Billboard 1969 年「三種檔名混用」的訂正同型：「抓不到」多半是檔名變了，不是檔案館沒有。**
+
+**Billboard 1970–74 是單一形狀** `.../Billboard/70s/<年>/Billboard%20YYYY-MM-DD.pdf`（`BB-` 在 70 年代一律 404，與 c-142 a 一致），261 期一期不缺。
+兩家 1970 年代的 PDF 都有文字層，`pymupdf` 直接讀即可；每期約 12 MB，六路並行跑 261 期約 6 分鐘。
+
+### c-143 a 立的一條（第 663 條）：**BN-LA 系列低號段的 1972 多半是盤面 ℗© 年，實際檔期在 1973 初**
+
+Billboard 1970–74 全 261 期裡，**「BN-LA」這個前綴第一次出現是 1973-02-17**（Moacir Santos《Maestro》BN-LA007-F 的評介）。
+兩張可檢驗的樣本（LA007《Maestro》、LA037 Grant Green《Live at the Lighthouse》）**jazzdisco 都記 1972、Billboard 都在 1973-02 才評介**。
+→ **看到 jazzdisco／Discogs／MB 給 BN-LA 低號段記 1972 的，一律先假設 1973。**
+
+⚠ **但第 593 條的「目錄號↔評介週夾擠」在 BN-LA 段用不上，號序是亂的**：
+LA007＝1973-02 評、**LA014 jazzdisco 記 1974（錄音卻是 1970）**、LA024＝1973-06 評、LA037＝1973-02 評、LA047＝1973-03 起上榜、LA054＝1973-03-24 評。
+**第 526 條在這一段是強形的。**
+
+### c-143 a 的一條查法補充：**1973 年起 Blue Note 的榜位要看 Soul LP's，不是 Jazz LP's**
+
+c-143 a 逐張查過：**1970–72 段的 Blue Note（本組 21 張）沒有任何一張進過 Billboard 的 Soul LP's 榜，銷量只反映在 Jazz LP's 榜上。**
+真正跨到 Soul 榜是 1973 年 Donald Byrd《Black Byrd》BN-LA047-F 那一線（1973-07-21 Soul LP 第 32 名，07-28／08-04 續在）。
