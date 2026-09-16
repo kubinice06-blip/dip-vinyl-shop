@@ -422,3 +422,20 @@ Duke Pearson《Introducing Duke Pearson's Big Band》→ Discogs 原壓 `r228070
   版面下角印「A PRODUCT OF liberty records」——坐實第 582 條判準表 (b) 的事實基礎。
 - 《Introducing Kenny Cox》Discogs 盤面正面印 **© MCMLXIX（＝1969）**，與 Discogs 自己填的 1968 年份欄互相矛盾
   ——**又一個「盤面 ℗© 年與資料庫年份欄不一致」的實例**；維基 producer 欄寫 Michael Cuscuna 是錯的（原盤是 Duke Pearson）。
+
+## 第 596 條（主線 2026-09-16，鉤子層交件後）：**派工信把姊妹盤張冠李戴——同場拆兩張的是《Open House》↔《Plain Talk》，不是《The Phantom》**
+
+主線在鉤子層派工信裡把第 595 條轉述成「Duke Pearson《The Phantom》與 c-142 的《Plain Talk》是同一場錄音拆兩張」，
+**錯了**：研究層 b-15 與第 584／595 條原文指的是 **Jimmy Smith《Open House》↔《Plain Talk》（BST 84296）**
+（1960-03-22 同場、Cash Box 1969-03-22 的評介班底與《Open House》一字不差、晚三個月上市）。
+**鉤子層自行改正並追認**：互指寫進《Open House》的 note；
+《The Phantom》的 note 改成提醒它與同批《Introducing Duke Pearson's Big Band》**同掛名、陣容別互抄**
+——那才是它真正的互撞風險。
+
+**這是主線轉述裁定時的失誤，記在這裡當程序教訓**：
+**派工信轉述裁定時，一律把裁定原文的盤名與編號照抄，不要用記憶重述。**
+（「失敗與正常長得一樣」家族：**轉述得很具體、很像有查過，與真的查過原文，長得一模一樣。**）
+
+鉤子層 39 筆 QA 全清（hook 加權 22–37、note 307–350），**發行年逐筆比對 39/39 相符**
+（1967×7、1968×24、1969×5、1980×1、1998×1）；夾擠推定三張（Grass Roots 1969、Elegant Soul 1969、
+Ghetto Music 1968）的 note 都寫了「上市月略過」。
