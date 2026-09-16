@@ -1,0 +1,440 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Tippin’ the Scales（MB RG 題用 U+2019）；Tippin' The Scales（GXF 3062／BST 84427 盤面全大寫式）",
+  "artist": "Jackie McLean",
+  "album": "Tippin' the Scales",
+  "year": 1979,
+  "label": "Blue Note（J）GXF 3062（1979 日本首發 12\" Vinyl 6 軌，King Records「ブルーノート世界初登場1800シリーズ」；MB eafd2531；Discogs 日本原壓兩筆皆 1979）；GXK 8160（1980 JP「Unissued Masters Series Part 1」，MB c13eacb8）；美國首發要到 BST 84427（1984，MB 00a9bd2e）／FR 991513ab／GR 778fd25c 同年；JP BNJ 71065（1985-04-20 8bf1fd76）；CD CDP 7 84427 2（1989 8734c2bb／1995 4908bbe0，9 軌）；JP UCCQ-5017（2014）／UCCQ-9323（2017）；2022-04-01 XW 黑膠 fa6f4925（602435519753）",
+  "why": "Jackie McLean 1962 年 9 月 28 日 Van Gelder 錄音的四重奏盤，班底是 Sonny Clark 鋼琴、Butch Warren 貝斯、Art Taylor 鼓——與《A Fickle Sonance》《Let Freedom Ring》同一段轉型期，卻是整張被壓進庫房、配了 BLP 4128 的號卻沒發的一場。六軌裡〈Nursery Blues〉〈Rainy Blues〉兩首慢藍調與領班原創〈Tippin' the Scales〉〈Nicely〉〈Two for One〉並置，是他在 free 化之前最後一次把 bebop 語法彈得這麼直（jazzdisco GXF-3062 條；維基 Tippin' the Scales；MB release eafd2531）。十七年後由日本 King 先發，是這條 1979–81 線的起點形狀。實掃池中 `Jackie McLean` **線上池（seed）10 張／未上架批次 10 張**（c131 Jackie's Bag、Right Now!；c138 Capuchin Swing；c140 It's Time!；c141 New and Old Gospel、'Bout Soul；c144 Jacknife、The Jackie McLean Quintet、Hipnosis），另有 `Jackie McLean & Dexter Gordon`（seed）與 `Kenny Dorham & Jackie McLean`（c139）兩個聯名字串；1962 年這一場池中一張都沒有。",
+  "risk": "⚠ **盤名改判**：列舉檔與 MB RG 題作 `Tippin’ the Scales`（U+2019 彎撇號），**本卡改用 ASCII 直撇號 `Tippin' the Scales`**——池中 `seed_cards.json` 專輯名用 ASCII 撇號 860 列、U+2019 只有 32 列，第 45／666 條取池中多數寫法。⚠ **年份 1979 是日本首發年，不是美國年**（第 694／786 條的「日本首發」形狀）：GXF 3062＝1979，美國 BST 84427 要到 **1984**，維基 infobox 直接寫「1979 (Japan); 1984 (US)」——**正文不得寫成 1979 年在美國上市**。⚠ **列舉檔的 `catno` 四個號（14C 062-2613611／4BN 84427／4BN-84427／84427）全部是 1984 年以後的美／希臘／卡帶號，原盤號 GXF 3062 一個都沒收**（第 787 條 catno 空／錯家族）；`country: \"JP\"` 對，但 `note` 只寫「再發系列: Blue Note Tone Poet Series」、沒提日本首發。⚠ 掛名 `Jackie McLean`（MB 5b6993ef Person US），與池中 18 列同字串，直接一致；**不與 c-144 的 `Jackie McLean Quintet` 收攏案混為一談**（那是第 784 條的 credited-as 字串）。⚠ **母帶比對（第 738 條形狀）**：1962-09-28 這一場 **jazzdisco 顯示九個 take 全部只出現在 GXF 3062 與 1989 CD**，池中零軌重複——**本張不撞陳列**。⚠ 但 **Sonny Clark 同時是本批《Blues in the Night》的領班**，兩卡正文不得互抄（那是 1958 年的三重奏，這是 1962 年當側人）。⚠ 店面（第 254 條，只寫觀察）：Apple us `search` 一種查法命中 1617106179，**9 軌＝1989 CD 形（多三個 alternate take），原盤是 6 軌**，`releaseDate` 1962-09-28＝錄音日（第 484 條）。CAA：RG 層 6 圖，**來源是 eafd2531＝1979 日本原壓** ✓。",
+  "mbNote": "釘 release-group cebd071f-ee74-40c7-b2ed-92abe74e6907。回問 release-group 端點（inc=artist-credits）：title「Tippin’ the Scales」、artist-credit「Jackie McLean」（5b6993ef Person US）、first-release-date 1979、primary-type Album、secondary-types 空。release 端點（release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100）回 13 個 release：eafd2531（1979 JP Official 12\" Vinyl 6 軌，Blue Note GXF 3062，無 barcode，**最早**）、c13eacb8（1980 JP 12\" Vinyl 6 軌，GXK 8160）、00a9bd2e（1984 US 12\" Vinyl 6 軌，BST 84427，barcode 077778442714）、991513ab（1984 FR）、778fd25c（1984 GR，14C 062-2613611）、8bf1fd76（1985-04-20 JP，BNJ 71065＋BST 84427）、c18aaf53（1985-01 US Cassette 4BN 84427）、d2eea255（1985 CA Cassette）、8734c2bb（1989 US CD 9 軌 CDP 7 84427 2）、4908bbe0（1995 US CD 9 軌）、c004627d（2014-06-25 JP CD UCCQ-5017）、9cd12b2d（2017-12-06 JP CD UCCQ-9323）、fa6f4925（2022-04-01 XW 12\" Vinyl 6 軌，602435519753，Tone Poet）。原盤六軌（eafd2531 的 recordings）：Tippin' the Scales 5:58／Rainy Blues 5:09／Nursery Blues 6:33／Nicely 6:24／Two for One 6:01／Cabin in the Sky 5:30。錄音 1962-09-28 Van Gelder Studio, Englewood Cliffs（jazzdisco 1961-1962 session 頁：tk.5／8／9／11／15／16／17／20／21，原定 BLP 4128）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Consequences（Cash Box 1979-09-15 與 Billboard 1979-09-22 的誤植複數形）；Consequence (The Blue Note Classic Series)",
+  "artist": "Jackie McLean",
+  "album": "Consequence",
+  "year": 1979,
+  "label": "Blue Note LT-994（US 1979 12\" Vinyl 6 軌，「Back to Blue Note／Blue Note Classic」系列；MB 3c722469；Discogs 美國原壓 LP 兩筆＋卡帶 4LT 994 皆 1979）；CD Blue Note 0946 3 11428 2 6（2005-10-04 US 9ad32dbf）／0946 3 11429 2 5（2005 XE adc8d5e2）；JP CD TOCJ-50278（2012）",
+  "why": "Jackie McLean 1965 年 12 月 3 日 Van Gelder 錄音的五重奏盤：Lee Morgan 小號、Harold Mabern 鋼琴、Herbie Lewis 貝斯、Billy Higgins 鼓，六軌全部出自領班與 Mabern 之手（Bluesanova／Consequence／Tolypso／Slumber／Vernestune ＋ 唯一的標準曲 My Old Flame）。這是 McLean 在 1960 年代中期「把 hard bop 的骨架留著、把和聲往外推」那條線上最完整卻最晚見天日的一場——整張錄完即入庫，十四年後才作為 1979 年「Back to Blue Note」十張庫存首發之一上市（Cash Box 1979-11-10 p17；jazzdisco LT-994；MB release 3c722469）。與 Morgan 的合作從 1956 年就開始，這是兩人最後一次同棚。實掃池中 `Jackie McLean` **線上池 10 張／未上架批次 10 張**，1965 年只有 c-144 的《Jacknife》（1965-09-24／1966-05-24 兩場）與本張，**兩者不同場**。",
+  "risk": "⚠ **紙本誤植（第 509c 條）**：**Cash Box 1979-09-15 p41 與 Billboard 1979-09-22 都把盤名印成複數的「Consequences」**，只有 **Cash Box 1979-11-10 p17 印對單數「Consequence」**；jazzdisco 的曲目欄也把 tk.3 記成「Consequences」而盤名欄記單數。**同一則檔期消息在兩刊登成同一個錯，不算兩個獨立來源**（第 509c／614 條）。⚠ 年份 1979 由 **Cash Box 1979-09-15＋1979-11-10 與 Billboard 1979-09-22／11-24 的「Back to Blue Note」十張檔期文件**釘死（c-144 第 783 條已立；本層另找到 **Cash Box 1979-10-06「Beginning this week... ten previously unreleased jazz masters」**把上市週定在 1979 年 10 月第一週）——⚠ **這一整組仍然只算一份廠牌檔期文件，不是十個獨立來源**。⚠ **§5.6 不適用**：LT 系列是庫存首發不是舊料重編（第 752／782／783 條），`releaseType` 維持 Album；**MB `secondary-types` 空、Discogs format 欄作 Album，兩邊一致**。⚠ **母帶比對**：1965-12-03 這一場六個 take 全部只出現在 LT-994（jazzdisco），池中零軌重複，**不撞陳列**。⚠ 掛名 `Jackie McLean`＝池中 18 列同字串。⚠ 同批互指：本批另有 `Jackie McLean —《Tippin' the Scales》`（1962）與 `Jackie McLean & Tina Brooks —《Street Singer》`（1960），三張錄音年相隔五年、班底完全不同。**Lee Morgan 同時是本批《Sonic Boom》《Taru》的領班、也是《Confirmation》《A Slice of the Top》《Mr. Natural》《Third Season》的側人**——正文不得把他寫成本張的共同領班。⚠ 店面：Apple us `search` 命中 715609970，6 軌＝原盤形 ✓，`releaseDate` 1965-12-03＝錄音日。CAA：RG 層 4 圖，**來源是 3c722469＝1979 美國原壓** ✓。",
+  "mbNote": "釘 release-group ddefb8f2-1124-318a-8ffc-6a8ededc6ce8。release-group 端點：title「Consequence」、artist-credit「Jackie McLean」（5b6993ef Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點（inc=media+labels+recordings+artist-credits）：3c722469（1979 US Official 12\" Vinyl 6 軌，Blue Note LT-994，無 barcode）、9ad32dbf（2005-10-04 US CD 6 軌，0946 3 11428 2 6＋11428，barcode 094631142826）、adc8d5e2（2005 XE CD 6 軌，0946 3 11429 2 5＋11429＋311 4292）。原盤六軌（3c722469 的 recordings）：Bluesanova 7:31／Consequence 5:33／My Old Flame 5:19／Tolypso 6:03／Slumber 6:06／Vernestune 5:53。錄音 1965-12-03 Van Gelder Studio, Englewood Cliffs（jazzdisco 1965-1966 session 頁，matrix 1687–1692，tk.3／4／10／11／12／16；jazzdisco 把 1687 tk.3 的曲名記成「Consequences」、把 1690／1691 標注 aka Soft Touch／The Three Minors）。MB 的 `catno` 只有 CD 號與 11428／11429，**列舉檔因此把原盤號 LT-994 漏掉**（enum catno 四筆全是 CD 號）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Confirmation (Blue Note Classic LT-992)；Jimmy Smith — Confirmation（與池中 `Tommy Flanagan —《Confirmation》` 同盤名不同碟）",
+  "artist": "Jimmy Smith",
+  "album": "Confirmation",
+  "year": 1979,
+  "label": "Blue Note LT-992（US 1979 12\" Vinyl 3 軌，「Back to Blue Note／Blue Note Classic」系列；MB 1ac06a11＝MB 唯一的 release；Discogs 美國原壓 LP 三筆＋8-track 8LT 992 皆 1979，其中一筆標 Misprint）；JP CD TOCJ-50276（2012）",
+  "why": "Jimmy Smith 1957–58 年在紐約 Manhattan Towers 兩場大編制管風琴夜戰的庫存殘篇：1957 年 8 月 25 日那場是 Lee Morgan 小號、Curtis Fuller 長號、George Coleman 中音、Eddie McFadden 與 Kenny Burrell 兩把吉他、Donald Bailey 鼓；1958 年 2 月 25 日那場換成 Lee Morgan、Lou Donaldson 中音、Tina Brooks 次中音、Kenny Burrell、Art Blakey。全盤只有三軌，〈What Is This Thing Called Love〉15:13、〈Cherokee〉20:20 幾乎吃掉整個 B 面——這是 Blue Note 早期唯一敢把整卷盤帶讓樂手跑到底的錄法（jazzdisco LT-992；MB release 1ac06a11）。1979 年列入「Back to Blue Note」十張首發。實掃池中 `Jimmy Smith` **線上池 12 張／未上架批次 18 張**（c136 六張 10 吋期、c137／c139／c140／c141／c142 各一至二張、c147《Cherokee》），另 `Jimmy Smith & Wes Montgomery` 一張；這兩場的正盤在池中已有兩張，本張是它們的背面。",
+  "risk": "⚠ **撞的不是碟是陳列（第 738 條形狀，本批最硬的一組）**：**LT-992 的三軌與池中 seed 的《The Sermon!》（BLP 4011）《House Party》（BLP 4002）出自完全相同的兩場**——1957-08-25 那場八個 take 裡，tk.2〈J.O.S.〉與 tk.11〈Blues After All〉給了 BLP 4011／4002，tk.3／tk.5 給 LT-992；1958-02-25 那場 tk.12〈Confirmation〉給 LT-992，tk.13／14／15（〈Au Private〉〈Flamingo〉〈The Sermon〉）給 BLP 4002／4011。**逐軌比對後零重複**，但**正文不得把本張寫成獨立的一場錄音，也不得把〈The Sermon〉那晚的說法搬過來**。⚠ **同一場還往 b 組延伸**：1957-08-25 的 tk.6〈Little Girl Blue〉是 b 組 `Jimmy Smith —《On the Sunny Side》`（LT-1092）的曲目——**a／b 兩組三張碟共用兩個晚上**，`chk-prop` 一張都不會亮燈（第 611 條盲區）。⚠ **同盤名撞擊**：池中 seed 有 `Tommy Flanagan —《Confirmation》`（apex 4），**而 Tommy Flanagan 本人也在本批（《Lonely Town》）**——盤名鍵相同、掛名不同，`chk-prop` 不亮燈；另 c132 有 `菊地雅章セクステット —《Re-confirmation》`。**店面與上架比對一律連掛名帶 LT-992。**⚠ 另一層：**本張的 B 面曲名〈Cherokee〉與池中 c147 的專輯 `Jimmy Smith —《Cherokee》`（1996）同名**，但那張出自 1957-05-08 那場（第 738 條已記），**與本張不同晚**。⚠ 年份 1979 照「Back to Blue Note」檔期（同 Consequence 卡，只算一份文件）。⚠ 掛名 `Jimmy Smith`（MB 4f8a0d9b Person US）＝池中 29 列同字串。⚠ 店面（第 254 條）：**Apple us `search` 一種查法零命中**（回的全是他別的碟）。CAA：**RG 層 HTTP 404、零圖**，`redirect: 'follow'` 重試三次確認是真 404（第 589a 條）——建議取 Discogs 美國原壓條目。⚠ MB 這個 RG **只建了一個 release**，Discogs 有六筆（含 8-track 與一筆 Misprint 壓片），**MB 漏建五筆以上**。",
+  "mbNote": "釘 release-group 901ff61d-cf6f-406f-a05a-6f987ee40f2f。release-group 端點：title「Confirmation」、artist-credit「Jimmy Smith」（4f8a0d9b Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 **只有 1 個 release**。release 端點：1ac06a11（1979 US Official 12\" Vinyl 3 軌，Blue Note LT-992，無 barcode）。三軌（1ac06a11 的 recordings）：A1 What Is This Thing Called Love 15:13／A2 Confirmation 10:31／B Cherokee 20:20。⚠ **MB 的軌序把〈Confirmation〉放 A2、〈Cherokee〉放整個 B 面，與 jazzdisco 的 session 編號（1957-08-25 tk.3 What Is This Thing／tk.5 Cherokee；1958-02-25 tk.12 Confirmation）不是同一個順序**——盤面軌序以 MB／Discogs 為準，錄音先後以 jazzdisco 為準。錄音：Manhattan Towers, NYC，1957-08-25（tk.3／tk.5）與 1958-02-25（tk.12），jazzdisco 1957-1958 session 頁。同場其他 take 去向見 risk。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Spiral (Blue Note Classic LT-996)；Medina & Spiral（1998 年雙盤 CD 合體形，Apple 上就是這一筆）",
+  "artist": "Bobby Hutcherson",
+  "album": "Spiral",
+  "year": 1979,
+  "label": "Blue Note LT-996（US 1979 12\" Vinyl 6 軌，「Back to Blue Note／Blue Note Classic」系列；MB f2896cfd；Discogs 美國原壓兩筆＋卡帶 4LT 996＋南非壓一筆皆 1979，2009 年另有美國再壓）；JP CD TOCJ-50289（2012-07-25 6d18965e）／TOCJ-50280＋UCCU-8164（2021-10-21 220634fb）",
+  "why": "Bobby Hutcherson 兩場相隔三年半的庫存錄音併成的一張：A3 面的〈Jasper〉出自 1965 年 4 月 3 日那場六重奏（Freddie Hubbard 小號、Sam Rivers 次中音與低音單簧管、Andrew Hill 鋼琴、Richard Davis 貝斯、Joe Chambers 鼓），其餘五軌出自 1968 年 11 月 25 日的五重奏（Harold Land 次中音、Stanley Cowell 鋼琴、Reggie Johnson 貝斯、Joe Chambers 鼓）。前者是《Dialogue》那個自由度最高的班底，後者是他移居西岸前與 Land 合作的起點——**同一張碟把他 1960 年代的兩端接在一起**（jazzdisco LT-996；維基 Spiral (Bobby Hutcherson album)；MB release f2896cfd）。1979 年列入「Back to Blue Note」十張。實掃池中 `Bobby Hutcherson` **線上池 7 張／未上架批次 10 張**（c131 Oblique、Now!；c143 三張；c144 Cirrus、Linger Lane、Waiting、The View From the Inside、Knucklebean）。",
+  "risk": "⚠ **撞陳列兩處（第 738 條形狀）**：(1) **〈Jasper〉那一場（1965-04-03）就是池中 seed 《Dialogue》（BLP 4198）的錄音日**——同場六個 take，tk.3／18／24／29／30 全在《Dialogue》，只有 tk.11〈Jasper〉留到本張；**正文不得把 1965 那場寫成本張獨有的錄音**。(2) **1968-11-25 那場的〈Spiral〉tk.8 與〈Ruth〉tk.28，在 1998 年的 CD《Medina》（Blue Note 7243 4 97508 2 1）裡也收了**——**《Medina》正是 b 組的 LT-1086**，1980 年的 LP 版不含這兩軌、1998 年 CD 版才合併，**兩卡 risk 必須互指，店面查詢極易撞**。⚠ **店面已經撞了**：Apple us `search` 一種查法**唯一命中 716626996「Medina & Spiral」11 軌（＝1998 雙盤合體 CD）**，**沒有單獨的 6 軌原盤形**——這是本批唯一一張「店面只找得到與別張合體的版本」。⚠ **維基錯 1 處**：Spiral (Bobby Hutcherson album) infobox 把第二場錄音日寫成 **November 11, 1968**，jazzdisco 記 **November 25, 1968**——取 jazzdisco（它有 take 號）。⚠ 年份 1979 照「Back to Blue Note」檔期文件（同 Consequence 卡，只算一份）；**Billboard 1980-03-08 p34 的「fourteen unreleased masters」整版廣告仍把 Spiral 列進去**，那是續賣不是首發，**不得據此改判 1980**。⚠ 掛名 `Bobby Hutcherson`（MB edbe5d7f Person US）＝池中 17 列同字串。⚠ **Harold Land 是本張 1968 年那場的次中音、同時是本批《Take Aim》的領班**；**Andrew Hill 是 1965 年那場的鋼琴、同時是 b 組《Dance With Death》的領班**——三卡正文不得互抄。⚠ CAA：RG 層 1 圖，**來源是 f2896cfd＝1979 美國原壓** ✓。",
+  "mbNote": "釘 release-group 3cca0093-01c7-487e-91fb-51752d462b83。release-group 端點：title「Spiral」、artist-credit「Bobby Hutcherson」（edbe5d7f Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點：f2896cfd（1979 US Official 12\" Vinyl 6 軌，Blue Note LT-996，無 barcode）、6d18965e（2012-07-25 JP CD 6 軌，Blue Note Classic TOCJ-50289，barcode 4988006895690）、220634fb（2021-10-21 JP CD 6 軌，TOCJ-50280＋UCCU-8164，barcode 4988031450789）。⚠ **兩筆日本 CD 的 catno 互相錯開**（TOCJ-50289 在 MB 同時也掛在 Dexter Gordon《Landslide》的 2021 日本 CD 上，見該卡）。原盤六軌（f2896cfd）：A1 Ruth 7:55／A2 The Wedding March 3:56／A3 Poor People's March 6:19／B1 Spiral 6:17／B2 Visions 3:53／B3 Jasper 8:28。錄音：1965-04-03（〈Jasper〉，matrix 1557 tk.11）與 1968-11-25（tk.8／14／18／28／36），皆 Van Gelder Studio, Englewood Cliffs（jazzdisco 1965-1966 與 1967-1968 session 頁）；1968 那場另有 tk.44〈Photon in a Paper World〉只收進 Mosaic MD7-278（2024）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "In Memory Of (Blue Note Classic LT-1037)；In Memory Of — Stanley Turrentine（維基條目名 In Memory Of (Stanley Turrentine album)）",
+  "artist": "Stanley Turrentine",
+  "album": "In Memory Of",
+  "year": 1980,
+  "label": "Blue Note LT-1037（US **1980** 12\" Vinyl 6 軌，「Blue Note Classic」；MB d3f3dfc0；Discogs 美國原壓兩筆＋卡帶 4LT 1037 皆 **1980**）；JP CD TOCJ-50285＋UCCU 8144（2021-10-20 7504739e）；2025-10-03 XW 黑膠 2898dc9c（602455716088）",
+  "why": "Stanley Turrentine 1964 年 6 月 3 日 Van Gelder 錄音的六重奏盤：Blue Mitchell 小號、Curtis Fuller 長號、**Herbie Hancock 鋼琴**、Bob Cranshaw 貝斯、Otis Finch 鼓，前兩軌另加 Mickey Roker 的康加。六軌裡有 Wes Montgomery 的〈Fried Pies〉、Turrentine 自己的〈In Memory Of〉與拉丁味的〈Niger Mambo〉〈Jodi's Cha Cha〉——這是他在 Shirley Scott 管風琴編制之外，唯一一次用完整號組與 Hancock 對位的一場（jazzdisco LT-1037；維基 In Memory Of (Stanley Turrentine album)；MB release d3f3dfc0）。整場原本要以 BLP 4234 上市，配了號沒發，十六年後才進 LT 系列。實掃池中 `Stanley Turrentine` **線上池 5 張（Sugar／Hustlin'／Blue Hour／Look Out!／Salt Song）／未上架批次 13 張**（c138～c144 與 c147），1964 年只有本張與同批的《Mr. Natural》。",
+  "risk": "⚠ **年份改判 1979→1980（本組唯一一張改判）**。反方三個來源：**MB first-release-date 1979、jazzdisco LT-1037 欄記 1979、維基 infobox 記 1979**（Apple 的 `releaseDate` 也是 1979-01-01，等於抄同一個錯）。正方：**Billboard 1980-04-26 p13 的 EMI-America／United Artists 檔期整版廣告逐字印「STANLEY TURRENTINE / In Memory Of LT-1037 8LT-1037 4LT-1037」**，同版還有 Larry Young《Mother Ship》LT-1038（b 組）與 Bill Medley LT-1024；**Discogs 三筆美國原壓（LP×2＋卡帶）全部標 1980**。依 **第 612 條階序「廠牌檔期廣告 ＞ 榜位 ＞ 評論欄 ＞ Discogs 原壓群 ＞ jazzdisco／MB」**取 **1980**。⚠ **這一張是第 753 條「同一次配號分兩年出」的反向樣本**：LT-1028／1030／1031／1032 都在 1980 年 2–3 月上市，LT-1038 與本張同在 4 月——**號段連續、年份卻被三個資料庫一致誤記成 1979，成因是它被算進 1979 年那波「Back to Blue Note」的宣傳**。⚠ **BLP 4234 這個沒發出去的號同時掛著兩場**：1964-06-03（本張）與 1964-09-04（本批《Mr. Natural》）——jazzdisco 顯示〈Fried Pies〉〈Make Someone Happy〉與《Mr. Natural》的〈Shirley〉〈Tacos〉都曾排進 BLP 4234。**兩卡 risk 互指；正文不得把兩場寫成一場，也不得說 BLP 4234 就是本張。**⚠ **母帶比對**：兩場的 take 池中零重複，**不撞陳列**。⚠ 掛名 `Stanley Turrentine`（MB 51e0df97 Person US）＝池中 18 列同字串。⚠ 店面（第 254 條）：Apple us `search` 命中 1845419682，6 軌＝原盤形 ✓，但 `releaseDate` 1979-01-01＝**被推翻的那個錯年**（第 484 條在本組的最壞樣本）。CAA：RG 層 11 圖，**來源是 7504739e＝2021 日本 CD，不是原盤**——研究層看版式，Discogs 美國原壓條目。",
+  "mbNote": "釘 release-group 7e77ea62-43dd-4a88-b648-67eb4b1dd443。release-group 端點：title「In Memory Of」、artist-credit「Stanley Turrentine」（51e0df97 Person US）、**first-release-date 1979（已推翻，見 risk）**、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點：d3f3dfc0（**1979** 標示、實為 1980 US Official 12\" Vinyl 6 軌，Blue Note LT-1037，無 barcode）、7504739e（2021-10-20 JP CD 6 軌，LT 1037＋TOCJ-50285＋UCCU 8144，barcode 4988031450581）、2898dc9c（2025-10-03 XW 12\" Vinyl 6 軌，1037＋602455716088＋LT 1037＋LT-1037）。原盤六軌（d3f3dfc0）：A1 Fried Pies 10:26／A2 In Memory Of 6:57／A3 Niger Mambo 3:23／B1 Make Someone Happy 6:19／B2 Jodi's Cha Cha 6:13／B3 Sunday In New York 6:48。⚠ **曲名拼法**：MB 作「Jodi's Cha Cha」、**jazzdisco 作「Jodie's Cha Cha」**（第 787 條曲名錯家族，兩邊各執一詞，盤面以 Discogs 原壓為準）。錄音 1964-06-03 Van Gelder Studio, Englewood Cliffs（jazzdisco 1963-1964 session 頁，matrix 1361–1366，tk.2／5／13／30／35／38，原定 BLP 4234）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Blues In The Night（GXF 3051 盤面全大寫式）；Sonny Clark — Blues in the Night（與同名爵士標準曲、與 Blues in the Night 消歧義頁區分）",
+  "artist": "Sonny Clark",
+  "album": "Blues in the Night",
+  "year": 1979,
+  "label": "Blue Note（J）GXF 3051（1979 日本首發 12\" Vinyl **8 軌**，King Records「ブルーノート世界初登場1800シリーズ」；MB 224c7983＝**MB 只登 7 軌**；Discogs 日本原壓兩筆＋白標宣傳盤一筆 29395174 皆 1979，Ⓟ1979）；GXK 8156（1980 JP「Unissued Masters Series Part 1」）；CD TOCJ-1618（1998-11-26 b436d807，7 軌）／UCCQ-9310（2017-12-06 e5c95a67，**14 軌**）",
+  "why": "Sonny Clark 1958 年兩場鋼琴三重奏庫存錄音的日本首發盤：A 面到 B3 出自 1958 年 12 月 7 日 Hackensack 那場（Paul Chambers 貝斯、Wesley Landers 鼓），B4 的〈Gee Baby, Ain't I Good to You（別take）〉出自同年 11 月 16 日那場（Jymie Merritt 貝斯、同一位鼓手）。八軌裡六首是標準曲，只有〈Blues in the Night〉連正式 take 與別 take 一起收——**同一首曲子兩個版本放在一張碟的兩面**，是這批 Alfred Lion 庫存盤最少見的編法（jazzdisco GXF-3051；維基 Blues in the Night (Sonny Clark album)；Discogs 29395174 的 notes 逐軌標錄音日）。Clark 1963 年就過世，這些三重奏帶子在庫房躺了二十一年。實掃池中 `Sonny Clark` **線上池 7 張（Cool Struttin'／Leapin' and Lopin'／Sonny's Crib／Dial \"S\" for Sonny／Sonny Clark Trio／My Conception ＋ 致敬團 The Sonny Clark Memorial Quartet）／未上架批次 0 張**，1958 年這兩場一張都沒有。",
+  "risk": "⚠ **MB 漏軌 1 處**：**Discogs 原壓 29395174 的軌目是八軌**（A1–B4），**MB 的 224c7983 只登七軌、少了 B4〈Gee Baby, Ain't I Good to You (Alternate Take)〉**，且軌序與盤面不同（MB 把 Dancing in the Dark 排第四）。jazzdisco 也把 1958-11-16 的 tk.6 記在 GXF-3051 名下——**三比一，盤面是八軌，正文以 Discogs／jazzdisco 為準**。⚠ **MB 的 catno 整個空著**（224c7983 的 label-info 只有「Blue Note」），**列舉檔的 `catno` 因此只剩 TOCJ-1618／UCCQ-9310 兩個 CD 號、`format` 欄落成「?」、`formats` 只列 CD**——原盤號 **GXF 3051** 與 12\" Vinyl 都要補（第 787 條 catno 空家族）。⚠ **母帶比對**：1958-12-07 那場七個 take 全部只出現在 GXF-3051 與 1985 年的 BNJ-61018《Sonny Clark Trio Vol. 3》；1958-11-16 那場的正 take 去了 45 轉單曲與 GXF-3069《The Art of the Trio》，**池中 seed 的《Sonny Clark Trio》是 1957-10-13 的 BLP 1579、不是這兩場**——**不撞陳列**，但**正文不得把本張寫成《Sonny Clark Trio》的續篇**。⚠ **2017 年的 UCCQ-9310 是 14 軌**（MB 同一個號建了兩個 release：b305e010 無媒體、e5c95a67 14 軌），多出來的六軌是同兩場的其餘 take，**維基 infobox 的「#1–7／#8–14」講的就是那個 CD 形、不是原盤**。⚠ 掛名 `Sonny Clark`（MB 58368691 Person US）＝池中 6 列同字串；**不與 `The Sonny Clark Memorial Quartet`（1980 年代的致敬團）合併**。⚠ **Sonny Clark 同時是本批《Tippin' the Scales》《Nigeria》《Oleo》三張的側人鋼琴**——四卡正文不得互抄。⚠ 店面（第 254 條）：Apple us `search` 命中 1436732085「Blues In The Night」**14 軌＝2017 CD 形**，`releaseDate` 1958-10-16（**既不是錄音日也不是發行日**，第 484 條的新偏移樣本）。CAA：RG 層 1 圖，**來源是 224c7983＝1979 日本原壓** ✓。",
+  "mbNote": "釘 release-group 10ae1cca-e9f8-4b58-a331-e209c9daac73。release-group 端點：title「Blues in the Night」、artist-credit「Sonny Clark」（58368691 Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 4 個 release。release 端點：224c7983（1979 JP Official，format 欄空，**7 軌**，label-info 只有「Blue Note」、**catalog-number 空**）、b436d807（1998-11-26 JP CD 7 軌，TOCJ-1618，barcode 4988006723337）、b305e010（2017-12-06 JP，UCCQ-9310，**無媒體資料**）、e5c95a67（2017-12-06 JP CD **14 軌**，UCCQ-9310，barcode 4988031254301）。**同一個 UCCQ-9310 在 MB 建成兩個 release**（第 611 條「MB 把同一張碟建成兩個」的變形）。原盤八軌以 Discogs 29395174 為準：A1 Can't We Be Friends 4:18／A2 I Cover the Waterfront 4:39／A3 Somebody Loves Me 4:16／A4 Blues in the Night 5:58／B1 Blues in the Night (Alternate Take) 7:14／B2 All of You 3:53／B3 Dancing in the Dark 3:30／B4 Gee Baby, Ain't I Good to You (Alternate Take) 3:52。錄音：1958-12-07（A1–B3，tk.3／4／8／9／10／12／14）與 1958-11-16（B4，tk.6），皆 Van Gelder Studio, Hackensack（jazzdisco 1957-1958 session 頁）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "K. B. Blues（MB RG 題，初一與初二之間有空格）；K.B.Blues = K・B・ブルース（GXF 3052 盤面日英對照）；K.B. Blues (Tone Poet Series)",
+  "artist": "Kenny Burrell",
+  "album": "K.B. Blues",
+  "year": 1979,
+  "label": "Blue Note（J）**GXF 3052(M)**（1979 日本首發 12\" Vinyl 5 軌、**單聲道**，King Records「ブルーノート世界初登場1800シリーズ」，Ⓟ1979；MB 921ea852＝**catno 空、format 空**；Discogs 日本原壓 5759955）；GXK 8154（1980 JP「Unissued Masters Series Part 1」，同為 Mono）；2023-11-03 XW Tone Poet 黑膠 3faf950b（Blue Note B0034797-01＋「BLP 3052」「BN 3052」，barcode 602445092574）",
+  "why": "1957 年 2 月 10 日 Hackensack 的一場五重奏，掛 Kenny Burrell 的名，但陣容是 Blue Note 那幾年最硬的一組側人：Hank Mobley 次中音、Horace Silver 鋼琴、Doug Watkins 貝斯、Louis Hayes 鼓。五軌裡〈Nica's Dream〉9:35 是 Silver 自己的曲子、〈D.B. Blues〉借自 Lester Young，領班原創〈K.B. Blues〉連正 take 與別 take 一起收——其中兩軌當年就以 45 轉單曲 Blue Note 45-1674 發過，整場的 LP 版卻等了二十二年才在日本出現（jazzdisco GXF-3052；Discogs 5759955 notes「Recorded on February 10, 1957」）。**這是池中 Kenny Burrell 1957 年那一段唯一缺的一場**。實掃池中 `Kenny Burrell` **線上池 4 張（Midnight Blue／The Cats／Guitar Forms ＋ 與 Coltrane 的聯名盤）／未上架批次 6 張**（c136 Introducing Kenny Burrell、Kenny Burrell；c137 Blue Lights 兩冊與 John Jenkins with Kenny Burrell；c138 On View at the Five Spot Cafe）。",
+  "risk": "⚠ **盤名改判**：列舉檔與 MB RG 題作 `K. B. Blues`（縮寫中間有空格），**本卡改用 `K.B. Blues`**——盤面（Discogs 5759955「K.B.Blues」）、jazzdisco（K.B. Blues）、2023 Tone Poet 都不加內部空格，池中縮寫的既有寫法也是 `B.B. King`／`J.J. Cale`／`A.T.'s Delight`／`S.F. Sorrow`（第 45／666 條）。**MB 的空格式是四方裡唯一的一個。**⚠ **列舉檔的 `catno` 全是 2023 年 Tone Poet 的號**（3052／B0034797-01／BLP 3052／BN 3052），**原盤號 GXF 3052 一個都沒收**；更麻煩的是**「BLP 3052」這個號在 Blue Note 的 BLP 系列裡根本不存在**（BLP 是 1500／4000 系列，沒有 3000 段），它是 Tone Poet 沿用日本 GXF-3052 的尾數再冠上 BLP——**不得把本張寫成 1950 年代就配過 BLP 3052 的盤**。⚠ **列舉檔 `format: \"?\"`、`formats: [\"12\\\" Vinyl\"]` 只反映 Tone Poet**；原盤是 **Mono 12\" Vinyl**（Discogs 明標 Mono、GXK 8154 亦然）——**本張是這一段少數的單聲道盤**。⚠ **母帶比對**：1957-02-10 五個 take 全部只出現在 GXF-3052 與 45-1674；**池中 c136 的《Kenny Burrell》與《Introducing Kenny Burrell》是 1956-05-30 那幾場、不是這一場**——**不撞陳列**。⚠ 掛名 `Kenny Burrell`（MB a85b66d2 Person US）＝池中 8 列同字串；池中另有 `Kenny Burrell & John Coltrane`／`John Jenkins with Kenny Burrell` 兩個聯名字串，**本卡是他自己的領班盤、不走聯名**。⚠ **Hank Mobley 同時是本批三張卡的領班（A Slice of the Top／Poppin'／Third Season）**，**Kenny Burrell 本人又是本批《Confirmation》兩場的吉他手**——正文不得互抄。⚠ 店面（第 254 條）：Apple us `search` 命中 1711706134「K.B. Blues」5 軌＝原盤形 ✓，`releaseDate` 1957-02-10＝錄音日（第 484 條）。CAA：RG 層 1 圖，**來源是 921ea852＝1979 日本原壓** ✓。",
+  "mbNote": "釘 release-group 9de49a54-2a74-49d0-a79e-39e5ca6dfbe1。release-group 端點：title「K. B. Blues」、artist-credit「Kenny Burrell」（a85b66d2 Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 **只有 2 個 release**。release 端點：921ea852（1979 JP Official，**format 欄空**、5 軌、**label-info 只有「Blue Note」、catalog-number 空**）、3faf950b（2023-11-03 XW Official 12\" Vinyl 5 軌，Blue Note 3052／B0034797-01／BLP 3052／BN 3052，barcode 602445092574，Tone Poet）。⚠ **MB 的 1979 原盤條目沒有目錄號、沒有載體、沒有 barcode**，Discogs 5759955 補為 **GXF 3052(M)**、12\" Vinyl、Mono、Ⓟ1979。原盤五軌（Discogs 軌序）：A1 Nica's Dream 9:35／A2 Out for Blood 9:07／B1 K.B. Blues 6:22／B2 D.B. Blues 5:48／B3 K.B. Blues (Alternate Take) 6:15；**MB 的 3faf950b 軌序把 K.B. Blues 排 B1、D.B. Blues 排 B2、別 take 排 B3，與 Discogs 一致** ✓。錄音 1957-02-10 Van Gelder Studio, Hackensack（jazzdisco 1957-1958 session 頁，tk.3／6／7／8／9；tk.6／tk.8 另發過 Blue Note 45-1674）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Lonely Town (King GP-3186)；Tommy Flanagan Trio — Lonely Town；Lonely Town: The Music of Leonard Bernstein",
+  "artist": "Tommy Flanagan",
+  "album": "Lonely Town",
+  "year": 1979,
+  "label": "Blue Note／King Record Co. Ltd.（J）**GP 3186**（1979 日本首發 12\" Vinyl 7 軌，Ⓟ1979，附日文解說；MB 6c2c17eb；Discogs 日本原壓兩筆 4293365 皆 1979）；CD Blue Note（J）TOCJ-66081（2000-01-26 b6a2785c，7 軌）",
+  "why": "Tommy Flanagan 1959 年 3 月 10 日在紐約留下的三重奏錄音，Joe Benjamin 貝斯、**Elvin Jones** 鼓。七軌全部出自 Leonard Bernstein 的音樂劇——〈America〉〈Tonight〉來自《西城故事》、〈Lonely Town〉〈Lucky to Be Me〉來自《On the Town》、〈It's Love〉來自《Wonderful Town》、〈Glitter and Be Gay〉〈Make Our Garden Grow〉來自《Candide》。1959 年百老匯歌曲進爵士三重奏還算新鮮事，而 Flanagan 這時剛結束與 Coltrane 的《Giant Steps》錄音不到三個月，Elvin Jones 也還沒進 Coltrane 四重奏——**整張是兩位日後名家在成名前的一次側寫**（jazzdisco GP-3186；維基 Lonely Town (album)；Discogs 4293365 notes「Recorded in New York City, March 10, 1959」）。帶子沒在美國發過，二十年後由日本 King 首發。實掃池中 `Tommy Flanagan` **線上池 7 張（Overseas／Confirmation／Thelonica／Ballads & Blues／Let's Play the Music of Thad Jones／Jazz Poet／Eclypso）／未上架批次 0 張**，1959 年這一場沒有。",
+  "risk": "⚠ **同盤名撞擊的反向樣本（第 611 條盲區）**：**池中 seed 的 `Tommy Flanagan —《Confirmation》`（apex 4）與本批的 `Jimmy Smith —《Confirmation》` 同名**——也就是說，**本批同時收了「與池中 Flanagan 卡同名的別人的碟」，而 Flanagan 自己又有一張新卡在同一批**。`chk-prop` 兩邊都不會亮燈（掛名不同）。**兩卡 risk 已互指；店面比對一律連 LT-992／GP 3186 帶掛名。**⚠ **jazzdisco 整條缺（第 787 條形狀）**：**jazzdisco 的 Blue Note 分年 session 頁（1959–1960）完全沒有這一場**，只有 Toshiba／King 目錄頁列出 GP-3186 與七個曲名、沒有 take 號與 matrix——**本張的錄音細節只有 Discogs notes 與維基兩個來源，母帶號無法比對**，risk 標明。⚠ **廠牌歸屬**：MB 的 label-info 寫「Blue Note」、Discogs 標 **Blue Note ／ King Record Co. Ltd.**、jazzdisco 把它收進 Blue Note 的 Toshiba／King 目錄頁——**帶子屬 Blue Note 庫存、發行由日本 King 執行**，`label` 兩邊都要寫，**不得只寫 King、也不得寫成美國 Blue Note 發行**。⚠ 年份 1979 由 MB frd ＋ Discogs 兩筆日本原壓 ＋ jazzdisco ＋ 維基四邊一致；**美國紙本（Billboard／Cash Box 1979 全年命中頁）查無**——日本首發盤本來就不會登美國榜或新片欄，**這不算「紙本沒有」（第 704 條）**。⚠ 掛名 `Tommy Flanagan`（MB c39a1eeb Person US）＝池中 7 列同字串。⚠ **Elvin Jones 在池中已有卡（c143《The Prime Element》等）**，**正文不得把本張寫成 Elvin Jones 的領班盤**。⚠ 店面（第 254 條）：**Apple us `search` 一種查法零命中**。CAA：**RG 層 HTTP 404、零圖**（重試三次確認，第 589a 條）——只能取 Discogs 日本原壓條目 4293365。",
+  "mbNote": "釘 release-group 9a787d55-27e1-4efb-b09a-9060b31e27cc。release-group 端點：title「Lonely Town」、artist-credit「Tommy Flanagan」（c39a1eeb Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：6c2c17eb（1979 JP Official 12\" Vinyl 7 軌，Blue Note **GP 3186**，無 barcode）、b6a2785c（2000-01-26 JP CD 7 軌，Blue Note TOCJ-66081，barcode 4988006778375）。⚠ **TOCJ-66081 與本批《Street Singer》的 TOCJ-66080 是同一天（2000-01-26）發的連號日本 CD**——兩卡的 2000 年再發是同一批企劃。原盤七軌（6c2c17eb 的 recordings）：A1 America 5:55／A2 Lonely Town 7:28／A3 Tonight 3:44／B1 It's Love 3:46／B2 Lucky to Be Me 4:16／B3 Glitter and Be Gay 4:13／B4 Make Our Garden Grow 3:10；Discogs 4293365 的軌序完全相同、但**沒有時長**。錄音 1959-03-10 NYC（jazzdisco Toshiba／King 目錄頁：Tommy Flanagan, piano; Joe Benjamin, bass; Elvin Jones, drums；**該頁沒有 take 號，分年 session 頁亦無此場**）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "queryAlias": "Heart Strings（Billboard Soul LPs 榜連續數週的誤植複數形）；Heart String (United Artists UA-LA942-H)；Heart String (2000 Blue Note CD)",
+  "artist": "Earl Klugh",
+  "album": "Heart String",
+  "year": 1979,
+  "label": "**United Artists UA-LA942-H**（US 1979 12\" Vinyl 8 軌，Liberty／UA, Inc. 發行、Capitol 配銷；MB 8be0748f；Discogs 美國原壓七筆以上＋加拿大／菲律賓／香港壓片，另 1979 年 Liberty 再壓 LO-942）；**Blue Note 首發是 CD 7243 5 23546 2 7**（2000-03-28 US 720eef4e／2000-03-31 XE cdb20823，8 軌）",
+  "why": "Earl Klugh 1978 年 10–11 月在紐約 Electric Lady Studios 錄的第四張原聲吉他盤，製作仍是 Dave Grusin 與 Larry Rosen 那條線。八軌裡〈Heart String〉開場、〈Heart String (reprise)〉收尾，中間〈Acoustic Lady, Parts I & II〉7:44 是他少數寫成組曲的曲子，〈Pretty World〉借自 Sérgio Mendes——整張把尼龍弦吉他放在弦樂與電貝斯之間，是 1970 年代末 crossover 爵士賣得最好的一種做法。**這是他 1979 年同時打進 Billboard 靈魂榜與爵士榜的一張**（Billboard 1979-07-07／07-14 爵士榜前段；維基 Heart String；MB release 8be0748f）。實掃池中 `Earl Klugh` **線上池（seed）0 張／未上架批次 3 張**（c-144 的《Earl Klugh》1976、《Living Inside Your Love》1976、《Finger Paintings》1977）——**線上池目前一張都沒有**（第 409b 條）。",
+  "risk": "⚠ **原盤是他廠：`label` 寫 United Artists，不是 Blue Note**（簡報第一節第 3 點）。列舉檔 `note` 已標「BN 首發 2000，原盤 1979 可能他廠（再發）」——**覆核成立**：Discogs 十五筆裡 1979 年的全部是 **United Artists UA-LA942-H**（US／加／菲／港），Blue Note 名下只有 2000 年的 CD 7243 5 23546 2 7。**`year` 取原盤首發年 1979**，Blue Note 版年份（2000）寫進本欄。⚠ **列舉檔的 `format: \"CD\"`、`formats: [\"CD\"]`、`catno: [\"7243 5 23546 2 7\"]` 全部只反映 Blue Note 的 2000 年 CD**，原盤是 12\" Vinyl、號是 UA-LA942-H——**這是第 664 條「MB 只建了再發、列舉檔照抄再發欄位」在本組的樣本**（MB 其實有建原盤 8be0748f，是列舉檔挑錯了代表 release）。⚠ **紙本誤植（第 509c 條）**：**Billboard 的 Soul LPs 榜自 1979-05-26 起連續數週把盤名印成複數的「HEART STRINGS」，同一期的爵士榜卻印單數「HEART STRING」**——**1979-07-14 那期兩個榜同時出現兩種拼法**；目錄號也被印成「UALA-942」「UALA 942」等多種形。**單數是對的**（盤面、MB、Discogs、維基一致）。⚠ **查榜順序（第 791 條）成立**：本張**先進 Soul LPs（1979-05-26 起）、再進 Best Selling Jazz LPs（1979-06-09 新進 → 07-07／07-14 爬到前段）**——**本批 23 張裡唯一一張真正上榜的碟**，其餘 22 張是庫存首發或日本盤，兩刊 1977–81 命中頁查無榜位。⚠ `genres` 用 `['jazz','soul']`：與 c-144 b 給 Earl Klugh 另三張的分派一致（第 788／790 條——**crossover 不破例進 `rock`**）。⚠ 掛名 `Earl Klugh`（MB 5c44b1b8 Person US），沿用 c-144 b 第 784 條新立的字串，**未上架批次已有 3 張同字串**。⚠ **Dave Grusin／Larry Rosen 線（第 793 條）**：本張是那張互指表的第五格，**正文不得把它寫成與《Finger Paintings》同一次企劃**（錄音室、年份、編制都不同）。⚠ 店面（第 254 條）：Apple us `search` 命中 738338906，8 軌＝原盤形 ✓，`releaseDate` 1979-01-01＝年頭佔位。CAA：RG 層 1 圖，**來源是 8be0748f＝1979 美國 UA 原壓** ✓。",
+  "mbNote": "釘 release-group e4a33a24-9a75-3ee1-b6cc-900b96ba7459。release-group 端點：title「Heart String」、artist-credit「Earl Klugh」（5c44b1b8 Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點：**8be0748f（1979 US Official 12\" Vinyl 8 軌，United Artists UA-LA942-H，無 barcode——原盤）**、720eef4e（2000-03-28 US CD 8 軌，Blue Note 7243 5 23546 2 7，barcode 724352354627）、cdb20823（2000-03-31 XE CD 8 軌，同號同 barcode）。原盤八軌（8be0748f 的 recordings）：A1 Heart String 6:24／A2 I'll See You Again 5:53／A3 Acoustic Lady, Parts I & II 7:44／B1 Spanish Night 3:19／B2 Pretty World 4:58／B3 Waiting for Cathy 2:51／B4 Rayna 5:16／B5 Heart String (reprise) 4:05。錄音 1978 年 10–11 月 Electric Lady Studios, New York City（維基 Heart String，infobox studio 欄；Discogs 多筆美國原壓的 credits 亦標 Electric Lady Studios）。⚠ **本張沒有 jazzdisco 條目**（jazzdisco 只做 Blue Note 目錄，UA 的 LA900 段不在內）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "A Slice Of The Top（盤面全大寫式）；A Slice of the Top (Blue Note Classic LT-995)；A Slice of the Top (Rudy Van Gelder Edition, 1995 CD)",
+  "artist": "Hank Mobley",
+  "album": "A Slice of the Top",
+  "year": 1979,
+  "label": "Blue Note LT-995（US 1979 12\" Vinyl 5 軌，「Back to Blue Note／Blue Note Classic」；MB d31f5dcf；Discogs 美國原壓兩筆＋卡帶 4LT 995 皆 1979，**另有 1979 英國壓 Blue Note LBR 1028**，2009 年美國再壓）；CD Blue Note CDP 7243 8 33582 2 9（1995-10-24 US 5d528253）；JP CD LT-995＋TOCJ-50279＋UCCU-8163（2021-10-20 340ed849）；2024-12-06 XW 黑膠 111cd6ba（602455059789）",
+  "why": "Hank Mobley 1966 年 3 月 18 日 Van Gelder 錄音的八人編制盤，**是他整個 Blue Note 時期唯一一次寫大編制**：Lee Morgan 小號、Kiane Zawadi 上低音號、Howard Johnson 低音號、James Spaulding 中音與長笛、McCoy Tyner 鋼琴、Bob Cranshaw 貝斯、Billy Higgins 鼓，編曲由領班與 Duke Pearson 分攤。低音號＋上低音號這種配置在 hard bop 裡幾乎沒人用過，〈A Slice of the Top〉9:40 與〈A Touch of Blue〉8:47 兩首長曲把 Mobley 一貫的中音域旋律感放進厚重的銅管底座裡。整場配了 BLP 4241 的號卻沒發，1979 年列入「Back to Blue Note」十張（jazzdisco LT-995；維基 A Slice of the Top；MB release d31f5dcf）。實掃池中 `Hank Mobley` **線上池 9 張／未上架批次 10 張**（c131 Another Workout；c135／c136／c137 六張 1950 年代；c141 Hi Voltage、Reach Out!；c142 The Flip），1966 年這一場沒有。",
+  "risk": "⚠ **同一位領班本批三張（第 792 條形狀）**：`Hank Mobley` 在本組還有 **《Poppin'》（1957-10-20 錄音、1980 日本首發）與《Third Season》（1967-02-24 錄音、1980 LT-1081）**——**三張是三個完全不同的年代與編制**（1957 六重奏／1966 八重奏／1967 七重奏），**正文不得互抄班底**。⚠ **母帶比對**：1966-03-18 五個 take 全部只出現在 LT-995 與其後的 CD／Mosaic MD8-268；**未發的 BLP 4241 也只掛這一場**，池中零軌重複，**不撞陳列**。⚠ 年份 1979 由「Back to Blue Note」十張的檔期文件釘（Cash Box 1979-09-15 p41、Billboard 1979-09-22、Cash Box 1979-11-10 p17 三則都逐字列出「A Slice Of The Top」by Hank Mobley）——⚠ **三則仍算一份文件**（第 509c／614 條）。**Billboard 1980-03-08 p34「fourteen unreleased masters」整版廣告也列了它，那是續賣不是首發。**⚠ **列舉檔的 `catno` 收了 LT 995／LT-995 兩種寫法與兩個 CD 號，但漏了 1979 年的英國號 LBR 1028**（Discogs 有）——`countries` 也只有 JP／US／XW，**英國壓片 MB 漏建**。⚠ 掛名 `Hank Mobley`（MB 026b096e Person US）＝池中 19 列同字串。⚠ **Lee Morgan 是本張側人，而他自己在本批有《Sonic Boom》《Taru》兩張領班盤**；**McCoy Tyner 在池中已有卡（c-144《Cosmos》等）**——正文不得把任一位寫成本張的共同領班。⚠ 店面（第 254 條）：Apple us `search` 命中 1462368606，5 軌＝原盤形 ✓，`releaseDate` 1966-03-18＝錄音日。CAA：RG 層 2 圖，**來源是 d31f5dcf＝1979 美國原壓** ✓。",
+  "mbNote": "釘 release-group 602e97b7-f922-30c0-8dfd-7f544b9fe3a5。release-group 端點：title「A Slice of the Top」、artist-credit「Hank Mobley」（026b096e Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 4 個 release。release 端點：d31f5dcf（1979 US Official 12\" Vinyl 5 軌，Blue Note LT-995，無 barcode）、5d528253（1995-10-24 US CD 5 軌，CDP 7243 8 33582 2 9，barcode 0724383358229）、340ed849（2021-10-20 JP CD 5 軌，LT-995＋TOCJ-50279＋UCCU-8163，barcode 4988031450772）、111cd6ba（2024-12-06 XW 12\" Vinyl 5 軌，LT 995＋LT-995，barcode 602455059789）。原盤五軌（d31f5dcf 的 recordings）：A1 Hank's Other Bag 7:13／A2 There's a Lull in My Life 5:25／A3 Cute 'n Pretty 7:37／B1 A Touch of the Blues 8:47／B2 A Slice of the Top 9:40。⚠ **曲名**：MB 作「A Touch of the Blues」，**jazzdisco 作「A Touch Of Blue」**（無 the，第 787 條曲名家族）；MB 作「Cute 'n Pretty」、jazzdisco 作「Cute 'N Pretty」。錄音 1966-03-18 Van Gelder Studio, Englewood Cliffs（jazzdisco 1965-1966 session 頁，matrix 1714–1718，tk.1／9／15／21／25，原定 BLP 4241）；另收進 Mosaic MD8-268《The Complete Hank Mobley Blue Note Sessions 1963-70》(2019)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Sonic Boom (Blue Note Classic LT-987)；Sonic Boom (2003 CD, 13 軌)；⚠ 與 Jackson State「Sonic Boom of the South」管樂隊同名干擾",
+  "artist": "Lee Morgan",
+  "album": "Sonic Boom",
+  "year": 1979,
+  "label": "Blue Note LT-987（US 1979 12\" Vinyl 6 軌，「Back to Blue Note／Blue Note Classic」系列首號；MB 1d95c6c6；Discogs 美國原壓兩筆＋卡帶 4LT 987＋**南非壓一筆**皆 1979，2009 年美國再壓）；CD Blue Note 90414／7243 5 90414 2 1（2003 US 676c933f／XE 97c9fd72，**13 軌**）；JP CD TOCJ-1630（1996）／LT-987＋TOCJ-50271（2012-07-25 a9364678，6 軌）",
+  "why": "Lee Morgan 1967 年 4 月 14 日與 28 日兩次 Van Gelder 錄音的五重奏盤：**David \"Fathead\" Newman 次中音**、Cedar Walton 鋼琴、Ron Carter 貝斯、Billy Higgins 鼓。Newman 是 Ray Charles 樂團出身的 R&B 吹奏者，**Morgan 只找他錄過這一次**，B 面〈Fathead〉就是寫給他的；〈Sonic Boom〉〈The Mercenary〉〈Mumbo Jumbo〉三首領班原創延續《The Sidewinder》之後那條 boogaloo 線，但節奏組換成 Walton／Carter／Higgins 之後明顯更硬（jazzdisco LT-987；維基 Sonic Boom (Lee Morgan album)；MB release 1d95c6c6）。**LT-987 是整個 LT 系列的第一號**，1979 年「Back to Blue Note」十張的頭一張，兩刊的檔期報導都把它排在名單最前面。實掃池中 `Lee Morgan` **線上池 12 張／未上架批次 13 張**（c136／c137 五張 1950 年代；c140 Delightfulee、The Rajah；c141 Standards、!Caramba!；c142 The Sixth Sense、Charisma；c143 Live at the Lighthouse、The Last Session），1967 年 4 月這兩場沒有。",
+  "risk": "⚠ 年份 1979：**Billboard 1979-09-22 與 Cash Box 1979-09-15／11-10 三則都把「Sonic Boom」列為十張之首**，**Cash Box 1979-10-06 把上市週定在 1979 年 10 月第一週**——⚠ **四則都是同一個檔期企劃，只算一份文件**（第 509c／614／783 條）。⚠ **紙本誤植（第 509c 條，本批最有意思的一處）**：**Billboard 1979-09-22 把十張裡 Donald Byrd 那張寫成「You're Next」，Cash Box 兩則都寫「Chant」**——查 jazzdisco：**〈You're Next〉是 LT-991《Chant》的第二軌**，Billboard 把曲名當成了盤名。同一波十張、兩刊一個對一個錯。⚠ **母帶比對**：1967-04-14 只錄成一軌（matrix 1878 tk.7〈Sonic Boom〉），1967-04-28 的五軌全部進本盤，**兩場的 take 池中零重複**，**不撞陳列**。⚠ **2003 年 CD（676c933f／97c9fd72）是 13 軌**，多出的七軌是同兩場的其餘 take 與別 take——**正文不得把 13 軌當成原盤內容**；維基 infobox 也分開標「37:25 original LP／74:19 CD reissue」。⚠ 掛名 `Lee Morgan`（MB a1235272 Person US）＝池中 25 列同字串。⚠ **Lee Morgan 在本批出現五次**：本張與《Taru》是領班，《Confirmation》《A Slice of the Top》《Mr. Natural》是側人——**五卡正文不得互抄，尤其不得把 1957／58 年 Manhattan Towers 那個二十歲的 Morgan 與 1967 年的寫成同一個階段**。⚠ **店面同名干擾**：Apple us `search` 第二筆回的是 **Jackson State「Sonic Boom of the South」管樂隊的《Destroy '24》**——比對一定要連掛名。命中的 716571727 是 **13 軌＝2003 CD 形**，`releaseDate` 1967-04-14＝第一場錄音日。CAA：RG 層 4 圖，**來源是 1d95c6c6＝1979 美國原壓** ✓。⚠ **MB 有一筆 119149d1 是 date／country 全空的 CD**（barcode 4988006739376＝TOCJ-1630），第 787 條欄位缺漏家族。",
+  "mbNote": "釘 release-group 4dc5829b-b079-3102-9de4-37dd25028984。release-group 端點：title「Sonic Boom」、artist-credit「Lee Morgan」（a1235272 Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 5 個 release。release 端點：1d95c6c6（1979 US Official 12\" Vinyl 6 軌，Blue Note LT-987，無 barcode）、a9364678（2012-07-25 JP CD 6 軌，LT-987＋TOCJ-50271，barcode 4988006895607）、676c933f（2003 US CD **13 軌**，Blue Note 90414，barcode 724359041421）、97c9fd72（2003 XE CD 13 軌，7243 5 90414 2 1，同 barcode）、119149d1（**date／country／catno 全空**的 CD 6 軌，barcode 4988006739376＝日本 TOCJ-1630）。原盤六軌（1d95c6c6 的 recordings）：A1 Sneaky Pete 5:43／A2 The Mercenary 7:07／A3 Sonic Boom 6:14／B1 Fathead 5:24／B2 I'll Never Be the Same 7:16／B3 Mumbo Jumbo 5:24。錄音：1967-04-14（matrix 1878 tk.7〈Sonic Boom〉）與 1967-04-28（matrix 1879–1883，tk.8／9／14／20／22），皆 Van Gelder Studio, Englewood Cliffs（jazzdisco 1967-1968 session 頁）；⚠ **jazzdisco 的 LT-987 曲序把〈Mumbo Jumbo〉排第 3、〈Fathead〉排第 4，與盤面（MB／Discogs）的 A3／B1 順序不同**。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Freedom (Blue Note GXF 3057)；Kenny Burrell — Freedom（與池中五張以上同名／含 Freedom 的碟區分）；Freedom (Music Matters 45rpm 2LP)",
+  "artist": "Kenny Burrell",
+  "album": "Freedom",
+  "year": 1979,
+  "label": "Blue Note（J）GXF 3057（1979 日本首發 12\" Vinyl 9 軌，King Records「ブルーノート世界初登場1800シリーズ」；MB 3303718d；Discogs 日本原壓兩筆皆 1979）；GXK 8170（1981 JP「Unissued Masters Series Part 1」）；2011 US Music Matters 45 轉雙唱片 d1f738e3（509996-47018-1-3＋MMGXF-3057）；2018-01-01 數位 5397d087（Reborn Recordings，**非 Blue Note 授權形**）",
+  "why": "Kenny Burrell 三場庫存錄音併成的九軌盤，跨度一年半：1963 年 3 月 27 日與 4 月 2 日兩場是 Seldon Powell（低音薩克斯與長笛）、Hank Jones（鋼琴兼管風琴）、Milt Hinton 貝斯、Osie Johnson 鼓的小編制；1964 年 10 月 22 日那場換成 **Stanley Turrentine 次中音、Herbie Hancock 鋼琴**、Ben Tucker 貝斯、Bill English 鼓、Ray Barretto 康加，五軌一口氣錄完，包括領班原創〈Freedom〉〈G Minor Bash〉〈K Twist〉。1963 年那批多是三分鐘上下的短曲（其中兩軌當年發過 45 轉單曲 Blue Note 45-1884），1964 年那批才是完整的爵士演奏——**同一張碟把 Blue Note 的單曲部門與專輯部門並置**（jazzdisco GXF-3057；維基 Freedom (Kenny Burrell album)；MB release 3303718d）。實掃池中 `Kenny Burrell` **線上池 4 張／未上架批次 6 張**，1963–64 這三場一場都沒有。",
+  "risk": "⚠ **維基年份被推翻**：**Freedom (Kenny Burrell album) 的 infobox 記 released 1980**，但 **MB frd 1979 ＋ jazzdisco「GXF-3057 … 1979」＋ Discogs 兩筆日本原壓皆 1979**——**三比一取 1979**，維基的 1980 說寫進本欄（可能是把 GXK 8170 的 1981 或同系列他盤的年份抄錯）。⚠ **同盤名撞擊（第 611 條盲區，本批最多的一張）**：**池中 `Freedom` 或含 Freedom 的專輯名有 16 列**（Sonny Rollins《Freedom Suite》、The Jazz Crusaders《Freedom Sound》、Jackie McLean《Let Freedom Ring》、Booker Ervin《The Freedom Book》、Devo《Freedom of Choice》、The Staple Singers《Freedom Highway》、Art Blakey《The Freedom Rider》……），**但沒有一張的專輯名正好是 `Freedom`**，`chk-prop` 折出來的鍵不會撞。**⚠ 其中 `Jackie McLean —《Let Freedom Ring》` 的掛名同時出現在本批三張卡上**，店面查詢極易混。⚠ **母帶比對**：三場的 take **全部只出現在 GXF-3057 與 45-1884**（jazzdisco 1963-1964 session 頁），池中零軌重複，**不撞陳列**。⚠ **列舉檔 `note` 標「再發系列: Music Matters」**——那是 2011 年的 45 轉重刻（d1f738e3），**不是原盤**；`catno` 三筆（509996-47018-1-3／GXF 3057／MMGXF-3057）**只有一筆是原盤號** ✓。⚠ **MB 有一筆來歷可疑的 release**：5397d087（2018-01-01 country `AF`、廠牌「Reborn Recordings」、barcode 5056303000082）——**AF 是阿富汗，幾乎確定是欄位誤填**，且該廠牌不是 Blue Note 授權線，**正文與封面都不得用它**。⚠ 掛名 `Kenny Burrell`（MB a85b66d2 Person US）＝池中 8 列同字串；**與本批《K.B. Blues》同一位領班，兩張錄音年差六年、編制完全不同**。⚠ **Stanley Turrentine 是 1964 那場的側人，而他自己在本批有《In Memory Of》《Mr. Natural》兩張領班盤**；**Hank Jones／Herbie Hancock 都不得寫成本張的共同領班**。⚠ 店面（第 254 條）：**Apple us `search` 一種查法零命中**（回的是別人的 Freedom）。CAA：RG 層 5 圖，**來源是 3303718d＝1979 日本原壓** ✓。",
+  "mbNote": "釘 release-group 2280da6c-6711-4ff3-a81c-230de95a6f54。release-group 端點：title「Freedom」、artist-credit「Kenny Burrell」（a85b66d2 Person US）、first-release-date 1979、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點：3303718d（1979 JP Official 12\" Vinyl **9 軌**，Blue Note GXF 3057，無 barcode）、d1f738e3（2011 US Official 12\" Vinyl 4 軌＋12\" Vinyl 5 軌＝45 轉雙唱片，Blue Note 509996-47018-1-3＋Music Matters Ltd. MMGXF-3057）、5397d087（2018-01-01 **country AF**、Digital Media 9 軌，Reborn Recordings，barcode 5056303000082）。原盤九軌（3303718d 的 recordings）：A1 G Minor Bash 5:56／A2 Freedom 4:49／A3 Lonesome Road 5:15／A4 K Twist 4:42／B1 Love Your Spell Is Everywhere 4:45／B2 The Good Life 2:34／B3 Stairway to the Stars 2:43／B4 Loie 3:01／B5 I Hadn’t Anyone ’Til You 2:44。⚠ **MB 的 B1 曲名作「Love Your Spell Is Everywhere」，jazzdisco 作「Love, Your Spell Is Everywhere」（有逗號）**；B5 的 MB 題用 U+2019 彎撇號。錄音三場（jazzdisco 1963-1964 session 頁）：1963-03-27（tk.13／21／27，其中 tk.13／27 另發 Blue Note 45-1884）、1963-04-02（tk.35）、1964-10-22（matrix 1449–1453，tk.2／20／25／31／42），皆 Van Gelder Studio, Englewood Cliffs。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Poppin' (Blue Note GXF 3066)；Poppin' (BLP 1620)（**1957 年配了卻沒發的號，不是實際發行盤**）；Poppin' (Tone Poet Series, B0030597-01)",
+  "artist": "Hank Mobley",
+  "album": "Poppin'",
+  "year": 1980,
+  "label": "Blue Note（J）GXF 3066（**1980 日本首發** 12\" Vinyl 5 軌，King Records「ブルーノート世界初登場1800シリーズ」；MB e276a4ba；Discogs 日本原壓三筆皆 1980）；GXK 8163（1981 JP，MB 906a1315）；CD TOCJ-1620（1996-11-27 JP 6d8f3e6e／79a29731；1998 ES 0ecffe58）／UCCQ-5020（2014）；2020-02-28 XW Tone Poet 黑膠 b680ac4a（B0030597-01，barcode 602577912726）",
+  "why": "Hank Mobley 1957 年 10 月 20 日在 Hackensack 錄的六重奏盤，配了 BLP 1620 的號、印了封面、**最後沒發**。班底是 Art Farmer 小號、Pepper Adams 上低音薩克斯、**Sonny Clark 鋼琴、Paul Chambers 貝斯、Philly Joe Jones 鼓**——等於 Miles Davis 第一代五重奏的節奏組加上兩位管樂。五軌裡〈Poppin'〉〈Gettin' Into Something〉〈East of Brooklyn〉是領班原創，〈Tune Up〉10:53 借 Miles 的曲子、〈Darn That Dream〉是唯一的抒情曲。**這是 Mobley 1957 年那一連串錄音裡最晚見天日的一場**，二十三年後由日本 King 首發（jazzdisco GXF-3066；維基 Poppin' (album)；MB release e276a4ba）。實掃池中 `Hank Mobley` **線上池 9 張／未上架批次 10 張**，1957 年的《Hank Mobley Quintet》《Hank》《Hank Mobley and His All Stars》等六張都在 c135–c137，**10 月 20 日這一場沒有**。",
+  "risk": "⚠ **MB 建了一張不存在的美國原盤，列舉檔照抄成 `country: \"US\"`（第 664／787 條最極端的形狀）**：MB 的 **6c04421a 標「1980 US 12\" Vinyl，Blue Note BLP 1620」**，但 **Discogs 以 `artist=Hank Mobley & release_title=Poppin'` 反查 13 筆，1980–81 年的四筆全部是日本盤（GXF 3066×3、GXK 8163×1），美國壓片一筆都沒有**；`catno=BLP 1620` 反查 **Blue Note 名下 0 筆**；**Billboard／Cash Box 1980–81 共 206 期命中頁搜 `Poppin'`＋Mobley＋`BLP 1620` 全部查無**。→ **原盤是 1980 年日本 GXF 3066，`country` 應為 JP**；「BLP 1620」是 1957 年配了沒用的號，維基 infobox 把它與 GXF 3066 並列才造成這個誤建。⚠ **本卡的 `year` 1980 維持列舉檔值**，依據是 jazzdisco「GXF-3066 … 1980」＋Discogs 三筆日本原壓 1980＋維基 infobox 1980，三邊一致。⚠ **母帶比對**：1957-10-20 五個 take **全部只出現在 GXF-3066**（jazzdisco 1957-1958 session 頁），池中零軌重複，**不撞陳列**。⚠ **曲名**：MB 作「East of Brooklyn」，**jazzdisco 記「East Of Brooklyn (aka Night Watch)」**；MB 作「Getting Into Something」、**盤面與 jazzdisco 作「Gettin' Into Something」**（第 787 條曲名家族）。⚠ 掛名 `Hank Mobley`（MB 026b096e Person US）＝池中 19 列同字串；**本批他有三張，這是最早的一場錄音、也是三張裡唯一的日本首發**。⚠ **Sonny Clark 是本張的鋼琴，而他在本批有《Blues in the Night》這張領班盤**；**Art Farmer／Pepper Adams／Philly Joe Jones 都不得寫成共同領班**。⚠ 店面（第 254 條）：Apple us `search` 命中 1494403691「Poppin'」5 軌＝原盤形 ✓，`releaseDate` 1980-01-01＝年頭佔位。CAA：RG 層 2 圖，**來源是 6c04421a＝上面那筆被推翻的「1980 美國盤」**——**封面實體以 Discogs 日本原壓 GXF 3066 為準**。",
+  "mbNote": "釘 release-group 2f7250b4-bb64-40bc-a2fb-79c5c689d0d4。release-group 端點：title「Poppin'」、artist-credit「Hank Mobley」（026b096e Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 8 個 release。release 端點：**e276a4ba（1980 JP Official 12\" Vinyl 5 軌，Blue Note GXF 3066，無 barcode——實際的原盤）**、**6c04421a（標「1980 US 12\" Vinyl 5 軌，Blue Note BLP 1620」，Discogs／紙本皆查無，見 risk）**、906a1315（1981 JP 12\" Vinyl 5 軌，GXK 8163）、6d8f3e6e／79a29731（皆 1996-11-27 JP CD 5 軌，TOCJ-1620，barcode 4988006723351，**同一張碟建成兩個 release**，79a29731 另掛「LP-1620」）、0ecffe58（1998 **ES** CD 5 軌，TOCJ-1620——日本號卻標西班牙，欄位可疑）、da12e379（2014-06-25 JP CD 5 軌，UCCQ-5020）、b680ac4a（2020-02-28 XW 12\" Vinyl 5 軌，B0030597-01，barcode 602577912726，Tone Poet）。原盤五軌（軌序取 MB 6c04421a／Discogs 日本原壓一致）：A1 Poppin' 6:31／A2 Darn That Dream 6:10／A3 Getting Into Something 6:32／B1 Tune Up 10:53／B2 East of Brooklyn 10:09。錄音 1957-10-20 Van Gelder Studio, Hackensack（jazzdisco 1957-1958 session 頁，tk.3／6／8／9／12）；另收進 Mosaic MQ10-181／MD6-181《The Complete Blue Note Hank Mobley Fifties Sessions》(1998)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Nigeria (Blue Note Classic LT-1032)；Nigeria (Tone Poet Series, B0031299-01)；⚠ 維基 `Nigeria` 是國名消歧義頁，album 條目名為 Nigeria (Grant Green album)",
+  "artist": "Grant Green",
+  "album": "Nigeria",
+  "year": 1980,
+  "label": "Blue Note LT-1032（US 1980 12\" Vinyl 5 軌，「Blue Note Classic」；MB 1c8ff6be／3661e823 兩筆同號；Discogs 美國原壓三筆皆 1980，2009 年再壓）；GXK 8180（1981 JP，MB e2f62736）；JP CD TOCJ-50284（2012-08-22 3cbcab2e，7 軌）／TOCJ-50284＋UCCU-8143（2021-10-20 fb700ecc）；2020-02-28 XW Tone Poet 黑膠 2fb7476d（B0031299-01）；**非授權歐壓** EJC55649（2014 XE）／WaxTime 772001（2015 ES）",
+  "why": "Grant Green 1962 年 1 月 13 日 Van Gelder 錄音的四重奏盤，**Sonny Clark 鋼琴、Sam Jones 貝斯、Art Blakey 鼓**——這是 Green 與 Clark 在 1961 年底到 1962 年初連錄四場的其中一場，也是四場裡唯一由 Blakey 打鼓的。五軌全是別人的曲子：Sonny Rollins 的〈Airegin〉7:32 開場（盤名〈Nigeria〉正是 Airegin 倒過來拼的還原）、Gershwin 的〈It Ain't Necessarily So〉10:23、Cole Porter、Jule Styne 與 Jerome Kern 各一——**Green 那種把單音線條拉得極長的彈法在標準曲上最清楚**（jazzdisco LT-1032；維基 Nigeria (Grant Green album)；MB release 1c8ff6be）。整場入庫十八年，1980 年 3 月才進 LT 系列。實掃池中 `Grant Green` **線上池 18 張／未上架批次 3 張**（c138 Grant's First Stand、c139 The Latin Bit、Am I Blue），**1961–62 年與 Sonny Clark 那四場一張都沒有**。",
+  "risk": "⚠ **年份 1980 有廠牌檔期廣告直證（第 612 條最高階）**：**Billboard 1980-03-29 p6 的 EMI-America／United Artists 整版新片廣告逐字印「GRANT GREEN / Nigeria LT-1032 8LT-1032 4LT-1032」**（同版還有 LEE MORGAN / Taru LT-1031）；**Billboard 1980-05-03 p14 的爵士價目表「GREEN, GRANT Nigeria LP Blue Note LT1032 $7.98」**；**Cash Box 1980-04-26 p14 的 JAZZ ALBUM PICKS 評介「NIGERIA — Grant Green — Blue Note LT-1032 — Producer: Alfred Lion — List: $7.98」**。三則各自獨立（廣告／價目表／評論欄），與 MB／jazzdisco／維基／Discogs 全部一致。⚠ **Cash Box 那則評介把製作人記成 Alfred Lion**——**錄音是 Lion 製作的沒錯，但 1980 年這次發行是 Michael Cuscuna 監製**（Cash Box 1979-11-10 已載明整個 LT 系列由 Cuscuna 製作），**正文不得把 1980 年的發行寫成 Lion 做的**。⚠ **撞的是同一批四場錄音（第 611 條盲區第五種）**：**本張（1962-01-13）與本批的《Oleo》（GXF 3065，1962-01-31）、b 組沒有但同系列的《Gooden's Corner》（GXF-3058，1961-12-23）《Remembering》（GXF-3071，1961-11-26）是同一支四重奏的連續四場**，Mosaic 後來以 MR5-133《The Complete Blue Note Recordings of Grant Green with Sonny Clark》整套發行。**逐軌比對後本張五軌與《Oleo》五軌零重複**（jazzdisco take 號互不相同），**但正文不得把兩張寫成同一場，也不得說本張的鼓手是 Louis Hayes**（那是《Oleo》那場）。⚠ **MB 把同一張碟建成兩個 release**：1c8ff6be 與 3661e823 **同為 1980 US、同 catno LT-1032、同 5 軌**（第 611 條盲區第三種）。⚠ **兩筆非授權歐壓**（EJC55649 8 軌／WaxTime 772001 6 軌）**軌數比原盤多**，不得當版本依據。⚠ 掛名 `Grant Green`（MB 1a88b270 Person US）＝池中 21 列同字串。⚠ **Art Blakey 在本張是側人，而 b 組有 `Art Blakey & The Jazz Messengers —《Africaine》`**；**Sonny Clark 在本批有《Blues in the Night》領班盤**。⚠ 店面（第 254 條）：Apple us `search` 命中 1499018947，5 軌＝原盤形 ✓，`releaseDate` **1980-04-11**——**本組唯一一筆與紙本對得上的 releaseDate**（介於 Billboard 3-29 廣告與 Cash Box 4-26 評介之間）。CAA：RG 層 2 圖，**來源是 3661e823＝1980 美國原壓** ✓。",
+  "mbNote": "釘 release-group 7d4ff678-2d18-4a4e-97b2-03b21ec823c2。release-group 端點：title「Nigeria」、artist-credit「Grant Green」（1a88b270 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 9 個 release。release 端點：**1c8ff6be 與 3661e823（皆 1980 US Official 12\" Vinyl 5 軌，Blue Note LT-1032，無 barcode——同一張碟的兩個條目）**、74aeb18d（2009 US 12\" Vinyl 5 軌，LT-1032）、e2f62736（1981 JP 12\" Vinyl 5 軌，GXK 8180）、2fb7476d（2020-02-28 XW 12\" Vinyl 5 軌，B0031299-01＋LT-1032，barcode 602508358906）、3cbcab2e（2012-08-22 JP CD **7 軌**，TOCJ-50284）、fb700ecc（2021-10-20 JP CD 7 軌，TOCJ-50284＋UCCU-8143）、0eac35fb（2014 XE CD 8 軌，Essential Jazz Classics EJC55649）、9d25bcca（2015-01-12 ES 12\" Vinyl 6 軌，WaxTime 772001）。原盤五軌（1c8ff6be 的 recordings）：A1 Airegin 7:32／A2 It Ain’t Necessarily So 10:23／B1 I Concentrate on You 5:49／B2 The Things We Did Last Summer 5:54／B3 The Song Is You 7:46。錄音 1962-01-13 Van Gelder Studio, Englewood Cliffs（jazzdisco 1961-1962 session 頁，tk.5／8／12／21／24；同場另有 tk.4 Airegin 別 take 與 tk.7〈Nancy〉只收進 Mosaic MR5-133）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Midnight Sun (Blue Note Classic LT-1028)；Lou Donaldson — Midnight Sun（與池中 `山本剛トリオ —《Midnight Sun》` 同盤名不同碟）",
+  "artist": "Lou Donaldson",
+  "album": "Midnight Sun",
+  "year": 1980,
+  "label": "Blue Note LT-1028（US 1980 12\" Vinyl 7 軌，「Blue Note Classic」；MB ae5034fc＝**MB 唯一的 release**；Discogs 美國原壓兩筆皆 1980）；JP CD TOCJ-50281（2012）",
+  "why": "Lou Donaldson 1960 年 7 月 22 日 Van Gelder 錄音的四重奏加打擊：**Horace Parlan 鋼琴、George Tucker 貝斯、Al Harewood 鼓、Ray Barretto 康加**——與《Sunny Side Up》《Here 'Tis》同一支班底，卻是整場沒發的一次。七軌裡只有〈Si Si Safronia〉〈Dog Walk〉是領班原創，其餘是〈Candy〉〈Avalon〉〈Exactly Like You〉這類老標準曲，加上 Tadd Dameron 的〈The Squirrel〉與 Lionel Hampton 的〈Midnight Sun〉——**這是 Donaldson 在轉進 boogaloo 之前，把 Charlie Parker 那一路中音吹得最直白的一張**（jazzdisco LT-1028；維基 Midnight Sun (Lou Donaldson album)；MB release ae5034fc）。二十年後進 LT 系列。實掃池中 `Lou Donaldson` **線上池 8 張／未上架批次 18 張**（c135–c143 共 18 張，含 c141 的《Lush Life》1980），**1960 年 7 月這一場沒有**。",
+  "risk": "⚠ **年份 1980 有廠牌檔期廣告直證（第 612 條）**：**Billboard 1980-02-23 p13 的 EMI-America／United Artists 整版新片廣告逐字印「LOU DONALDSON / Midnight Sun LT-1028 8LT-1028 4LT-1028」**（同版另有 ANDREW HILL / Dance With Death LT-1030＝b 組那張）；**Cash Box 1980-04-12 p15 的 JAZZ ALBUM PICKS 評介「MIDNIGHT SUN — Lou Donaldson — Blue Note Classic LT-1028 — Producer: Michael Cuscuna — List: 8.98」**；**Billboard 1980-03-08 p34 的「fourteen unreleased masters」整版廣告也列了它**。MB／jazzdisco／維基／Discogs 全部 1980，無異議。⚠ **同盤名撞擊（第 611 條盲區）**：**池中 seed 有 `山本剛トリオ —《Midnight Sun》`**（日本爵士線），掛名不同、`chk-prop` 不亮燈；**店面查詢一律連掛名帶 LT-1028**。⚠ **母帶比對**：1960-07-22 的七個 take **全部只出現在 LT-1028 與 2002 年的 Mosaic MD6-215**（jazzdisco 1959-1960 session 頁），**池中零軌重複，不撞陳列**——但**正文不得把本張寫成《Sunny Side Up》的續集**（那是 1960 年 2 月的兩場）。⚠ **MB 這個 RG 只建了一個 release**（連 2012 年的日本 CD TOCJ-50281 都沒建），**列舉檔的 `nReleases: 1`、`catno: [\"LT-1028\"]` 因此是最小集**。⚠ 掛名 `Lou Donaldson`（MB db147d97 Person US）＝池中 26 列同字串；**他同時是本批《Confirmation》1958 年那場的中音薩克斯**，兩卡正文不得互抄。⚠ **Ray Barretto 在本批出現兩次**（本張與《Mr. Natural》），**Horace Parlan／George Tucker／Al Harewood 不得寫成共同領班**。⚠ 店面（第 254 條）：**Apple us `search` 一種查法零命中**——回的第一筆是他自己的《Midnight Creeper》（1968），**盤名近似、不是同一張**，比對必須看軌數與年份。CAA：RG 層 2 圖，**來源是 ae5034fc＝1980 美國原壓** ✓。",
+  "mbNote": "釘 release-group 38e24351-33ea-4713-8784-9f3c43867015。release-group 端點：title「Midnight Sun」、artist-credit「Lou Donaldson」（db147d97 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 **只有 1 個 release**。release 端點：ae5034fc（1980 US Official 12\" Vinyl 7 軌，Blue Note LT-1028，無 barcode）。七軌（ae5034fc 的 recordings）：A1 Candy 6:12／A2 Midnight Sun 5:46／A3 Avalon 5:18／B1 The Squirrel 3:33／B2 Si Si Safronia 4:31／B3 Exactly Like You 5:04／B4 Dog Walk 4:24。⚠ **盤面軌序與錄音 take 號的順序相反**：jazzdisco 記 tk.2 The Squirrel／tk.5 Si Si Safronia／tk.6 Dog Walk／tk.7 Exactly Like You／tk.10 Avalon／tk.12 Midnight Sun／tk.13 Candy，**唱片把最後錄的三首放 A 面**。錄音 1960-07-22 Van Gelder Studio, Englewood Cliffs（jazzdisco 1959-1960 session 頁；Ray Barretto 的康加標 #1-5,7，**即〈Exactly Like You〉那軌沒有康加**）；另收進 Mosaic MD6-215《The Complete Blue Note Lou Donaldson Sessions 1957-60》(2002)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Taru (Blue Note Classic LT-1031)；Lee Morgan — Taru（與池中 `Toby Fox —《DELTARUNE Chapter 1 OST》` 的子字串撞擊區分）",
+  "artist": "Lee Morgan",
+  "album": "Taru",
+  "year": 1980,
+  "label": "Blue Note LT-1031（US 1980 12\" Vinyl 6 軌，「Blue Note Classic」；MB f3f2e30d；Discogs 美國原壓兩筆 1980＋2009 年再壓）；CD Blue Note 7243 5 22670 2 6（2000 US 2f55c374）／JP TOCJ-1631（1998）／TOCJ-50283（2012）；2024-08-02 XW 黑膠 70749048（602448644282）",
+  "why": "Lee Morgan 1968 年 2 月 15 日 Van Gelder 錄音的六重奏盤，**George Benson 彈吉他**——這是 Benson 極少數以側人身分進 Blue Note 錄音室的場次之一。其餘是 Bennie Maupin 次中音、John Hicks 鋼琴、Reggie Workman 貝斯、Billy Higgins 鼓。六軌全是新曲，〈Avotcja One〉〈Haeschen〉〈Durem〉這些怪名字出自樂手的暱稱與外語詞，〈Taru, What's Wrong with You?〉一軌把 Morgan 慣用的 boogaloo 節奏拆成不規則的段落——**1968 年的 Morgan 已經離《The Sidewinder》很遠，這張是那個轉向裡最少人聽過的一份紀錄**（jazzdisco LT-1031；維基 Taru (album)；MB release f3f2e30d）。整場入庫十二年。實掃池中 `Lee Morgan` **線上池 12 張／未上架批次 13 張**，1968 年只有 c141 的《!Caramba!》（1968-05-03），**2 月這一場沒有**。",
+  "risk": "⚠ **年份 1980 有廠牌檔期廣告直證（第 612 條）**：**Billboard 1980-03-29 p6 的 EMI-America／United Artists 整版新片廣告逐字印「LEE MORGAN / Taru LT-1031 8LT-1031 4LT-1031」**（同版有 GRANT GREEN / Nigeria LT-1032）；**Billboard 1980-05-03 p14 爵士價目表「MORGAN, LEE Taru LP Blue Note LT1031 $7.98」**；**Billboard 1980-03-08 p34「fourteen unreleased masters」廣告**亦列。MB／jazzdisco／維基／Discogs 全部 1980。⚠ **盤名子字串撞擊（第 611 條盲區）**：**池中 seed 的 `Toby Fox —《DELTARUNE Chapter 1 OST》` 含 `TARU` 這四個字母**，掛名與內容毫不相干；**`chk-prop` 用的是全字串鍵，不會亮燈**，但**任何用 `LIKE '%taru%'` 的檢索都會撞**，店面與後續稽核要注意。⚠ **母帶比對**：1968-02-15 六個 take **全部只出現在 LT-1031**（jazzdisco 1967-1968 session 頁，matrix 2043–2048），池中零軌重複，**不撞陳列**。⚠ **曲名**：MB 作「Taru, What's Wrong With You?」，**jazzdisco 記「Taru, What's Wrong With You (aka What's Wrong)」（無問號）**；MB 的〈Avotcja One〉與 jazzdisco 同，但兩邊的軌序不同（jazzdisco 以 take 號排 Haeschen 在前，盤面把 Avotcja One 放 A1）。⚠ 掛名 `Lee Morgan`（MB a1235272 Person US）＝池中 25 列同字串；**本批他有《Sonic Boom》（1967）與本張（1968）兩張領班盤、另在三張當側人**，**五卡正文不得互抄**。⚠ **George Benson 在池中已有卡**，**正文不得把本張寫成 Benson 的作品，也不得誇大他的比重**（六軌裡他只在部分段落獨奏）。⚠ 店面（第 254 條）：Apple us `search` 命中 1368855909「Taru」6 軌＝原盤形 ✓，`releaseDate` 1980-01-01＝年頭佔位。CAA：RG 層 2 圖，**來源是 2f55c374＝2000 年美國 CD，不是原盤**——研究層看版式，Discogs 美國原壓條目。",
+  "mbNote": "釘 release-group e308526b-6e5c-39c4-b21d-5fbff7a367af。release-group 端點：title「Taru」、artist-credit「Lee Morgan」（a1235272 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點：f3f2e30d（1980 US Official 12\" Vinyl 6 軌，Blue Note LT-1031，無 barcode）、2f55c374（2000 US CD 6 軌，Blue Note 7243 5 22670 2 6，barcode 724352267026）、70749048（2024-08-02 XW 12\" Vinyl 6 軌，1031＋602448644282＋LT 1031＋LT-1031，barcode 602448644282）。⚠ **MB 沒建 1998 年的日本 TOCJ-1631 與 2012 年的 TOCJ-50283**（Discogs 有），列舉檔的 `nReleases: 3` 因此偏低。原盤六軌（f3f2e30d 的 recordings）：A1 Avotcja One 6:42／A2 Haeschen 6:10／A3 Dee Lawd 5:50／B1 Get Yourself Together 6:23／B2 Taru, What's Wrong With You? 5:16／B3 Durem 7:28。錄音 1968-02-15 Van Gelder Studio, Englewood Cliffs（jazzdisco 1967-1968 session 頁，matrix 2043 tk.6 Haeschen／2044 tk.11 Avotcja One／2045 tk.22 Durem／2046 tk.24 Dee Lawd／2047 tk.28 Taru／2048 tk.29 Get Yourself Together）；班底 Lee Morgan tp、Bennie Maupin ts、John Hicks p、George Benson g、Reggie Workman b、Billy Higgins d。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Landslide (Blue Note Classic LT-1051)；Dexter Gordon — Landslide（維基條目名 Landslide (album)）；Landslide (2025 Blue Note Classic Vinyl, ST-1051)",
+  "artist": "Dexter Gordon",
+  "album": "Landslide",
+  "year": 1980,
+  "label": "Blue Note LT 1051（US 1980 12\" Vinyl 7 軌，「Blue Note Classic」；MB d033f7b4；Discogs 美國原壓兩筆 1980＋8-track 8LT 1051）；JP CD LT-1051＋TOCJ-50289＋UCCU-8148（2021-10-20 8eb0ef58）；2021-02-26 XW 數位 a3c9b546；2025-07-04 XW 黑膠 920e03c7（BST-1051／ST-1051，barcode 602455600721）",
+  "why": "Dexter Gordon 三場庫存錄音併成的七軌盤，跨度一年多：1961 年 5 月 9 日那場是 Kenny Drew 鋼琴、Paul Chambers 貝斯、Philly Joe Jones 鼓（只留下同名的〈Landslide〉一軌）；1962 年 5 月 5 日那場換成 Tommy Turrentine 小號、Sir Charles Thompson 鋼琴、Al Lucas 貝斯、**Willie Bobo 打鼓**；1962 年 6 月 25 日那場再換成 Dave Burns 小號、**Sonny Clark 鋼琴**、Ron Carter 貝斯、Philly Joe Jones。三場都是 Gordon 在《Doin' Allright》到《Go》之間、離開美國之前的紐約錄音，**後兩場整場沒發**——〈Second Balcony Jump〉〈Six Bits Jones〉這些曲子要等十八年才聽得到（jazzdisco LT-1051；維基 Landslide (album)；MB release d033f7b4）。實掃池中 `Dexter Gordon` **線上池 16 張／未上架批次 2 張**（c131 Clubhouse、c147 The Other Side of Round Midnight），另有 `Dexter Gordon Quartet`／`Jackie McLean & Dexter Gordon` 兩個聯名字串。",
+  "risk": "⚠ **撞陳列（第 738 條形狀）**：**A 面第一軌〈Landslide〉（1961-05-09 tk.4）與池中 seed 的《Dexter Calling…》（BLP 4083）是同一場**——那場八個 take 裡有七個進了 BLP 4083（〈Modal Mood〉〈Clear the Dex〉〈Soul Sister〉〈Smile〉〈Ernie's Tune〉〈I Want More〉〈The End of a Love Affair〉），**只有 tk.4 留到本張**；1975 年的雙唱片 BN-LA393-H2 也收了其中三軌。**正文不得把 1961 年那場寫成本張獨有的錄音**，也**不得把《Dexter Calling…》的班底說法搬到 1962 年那兩場**（鋼琴分別是 Sir Charles Thompson 與 Sonny Clark，不是 Kenny Drew）。⚠ **年份 1980**：**Billboard 1980-07-26 p17 的爵士價目表「GORDON, DEXTER Landslide LP Blue Note LT1051 $7.98 8T 8LT1051 CA 4LT1051」**＋Discogs 兩筆美國原壓 1980＋MB frd 1980＋jazzdisco 1980＋維基 infobox 1980，五邊一致。⚠ **池中已有的 `Dexter Gordon —《Clubhouse》`（c131，1979）就是 LT-989**，與本張同屬 LT 系列、也是 Cuscuna 監製的庫存首發——**兩卡是同一條線的前後棒**。⚠ **MB 的日本 CD catno 撞號**：8eb0ef58 掛 **TOCJ-50289**，但**同一個 TOCJ-50289 在 MB 也掛在本批《Spiral》的 2012 日本 CD 上**（6d18965e）——**兩者必有一個錯**（Discogs 顯示 Landslide 的 2021 日本 CD 是 UCCU-8148、Spiral 的 2012 是 TOCJ-50289），**Landslide 那筆的 TOCJ-50289 是誤填**。⚠ 掛名 `Dexter Gordon`（MB **cc1588e1** Person US）＝池中 16 列同字串；**⚠ 注意 MB 另有 `Dexter Gordon Quartet` 等實體，本 RG 用的是 Person**，不新造分裂。⚠ **Sonny Clark 是 1962-06-25 那場的鋼琴，而他在本批有《Blues in the Night》領班盤**；**Willie Bobo 是 c-144 b 第 784 條新立的掛名、在本張只是鼓手**——正文不得把他寫成領班。⚠ 店面（第 254 條）：Apple us `search` 命中兩筆同名同軌數（1552986102 與 1845419509，皆 7 軌、rel 1980-01-01），**同一張碟在店面上有兩個條目**。CAA：RG 層 1 圖，**來源是 a3c9b546＝2021 年數位版，不是原盤**——研究層看版式，Discogs 美國原壓條目。",
+  "mbNote": "釘 release-group d77df508-91dd-3efb-a256-2488455328e6。release-group 端點：title「Landslide」、artist-credit「Dexter Gordon」（cc1588e1 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 4 個 release。release 端點：d033f7b4（1980 US Official 12\" Vinyl 7 軌，Blue Note **LT 1051**，無 barcode）、8eb0ef58（2021-10-20 JP CD 7 軌，LT-1051＋**TOCJ-50289**＋UCCU-8148，barcode 4988031450628，**TOCJ 號與《Spiral》撞號，見 risk**）、a3c9b546（2021-02-26 XW Digital Media 7 軌，barcode 602435787640）、920e03c7（2025-07-04 XW 12\" Vinyl 7 軌，1051＋602455600721＋BST-1051＋ST-1051）。原盤七軌（d033f7b4 的 recordings）：A1 Landslide 5:15／A2 Love Locked Out 4:48／A3 You Said It 4:31／A4 Serenade in Blue 5:04／B1 Blue Gardenia 6:43／B2 Six Bits Jones 6:17／B3 Second Balcony Jump 6:01。錄音三場（jazzdisco 1961-1962 session 頁）：1961-05-09（tk.4 Landslide；同場其餘七 take 進 BLP 4083《Dexter Calling...》）、1962-05-05（tk.11／12／19）、1962-06-25（tk.6／12／21），皆 Van Gelder Studio, Englewood Cliffs。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "With A Song In My Heart（列舉檔與 MB RG 的全大寫式題）；With a Song in My Heart (Blue Note Classic LT-1052)；⚠ 與池中 `Stevie Wonder —《With a Song in My Heart》`同盤名不同碟",
+  "artist": "Ike Quebec",
+  "album": "With a Song in My Heart",
+  "year": 1980,
+  "label": "Blue Note LT-1052（US 1980 12\" Vinyl 9 軌，「Blue Note Classic」；MB 490368cf；Discogs 美國原壓兩筆＋卡帶 4LT-1052＋**紐西蘭壓一筆**皆 1980）；GXK 8190（1981 JP，Discogs 兩筆）；JP CD TOCJ-50290（MB 434089eb，**date／country 全空**）",
+  "why": "Ike Quebec 1962 年 2 月 5 日與 13 日兩場「45 轉用」錄音的庫存合集：Quebec 次中音、**Earl Van Dyke 管風琴**（他兩年後成為 Motown 棚內樂團 Funk Brothers 的團長）、Willie Jones 吉他、Wilbert Hogan 鼓，第二場加 Sam Jones 貝斯。九軌全是三到六分鐘的標準曲——〈All of Me〉〈Imagination〉〈But Not for Me〉〈There Is No Greater Love〉——因為 Blue Note 當年錄它們是為了做點唱機單曲，不是為了做專輯。實際只發出一張 45（Blue Note 45-1840），其餘壓在庫房；Quebec 1963 年初就過世，這些帶子等了十八年（jazzdisco LT-1052；MB release 490368cf；Mosaic MR3-121《The Complete Blue Note 45 Sessions of Ike Quebec》）。**這是他最後一批錄音裡最完整的一份，也是池中缺口最大的一段。** 實掃池中 `Ike Quebec` **線上池 4 張（Blue & Sentimental／Bossa Nova Soul Samba／Heavy Soul／It Might as Well Be Spring）／未上架批次 1 張**（c135《Ike Quebec Tenor Sax》1946），1962 年這兩場沒有。",
+  "risk": "⚠ **盤名改判**：列舉檔與 MB RG 題作 `With A Song In My Heart`（介系詞與冠詞全大寫），**本卡改用 `With a Song in My Heart`**——池中 seed 已有 `Stevie Wonder —《With a Song in My Heart》` 用小寫式，**同一個詞在池中不能兩種寫法**（第 666 條）。⚠ **改完之後與那張 Stevie Wonder 卡折成同一個 `chk-prop` 鍵的前半**（`k()` 會剝掉大小寫與標點），**但掛名不同，程式不會亮燈**；**店面與上架比對一律連掛名帶 LT-1052**（第 611 條盲區）。⚠ **年份 1980 有兩則獨立紙本**：**Billboard 1980-07-26 p17 爵士價目表「QUEBEC, IKE With A Song In My Heart LP Blue Note LT1052 $7.98 8T8LT1052 CA4LT1052」**；**Cash Box 1980-08-16 p11 JAZZ ALBUM PICKS 評介「WITH A SONG IN MY HEART - Ike Quebec - Blue Note LT-1052 - Producer: Michael Cuscuna - List: 7.98」**（價目表與評論欄是兩種欄位、隔三週，**算兩個來源**）。MB／jazzdisco／Discogs 亦全部 1980。⚠ **母帶比對**：1962-02-05 那場四個 take 裡 tk.28／32／37 進本盤（tk.28／37 曾發 45-1840、tk.32／34 原定的 45-1841 沒發），1962-02-13 那場五個 take 全進；**池中零軌重複，不撞陳列**。⚠ **同一天還有另一場不相干的錄音**：1962-02-05 Van Gelder 那天 Fred Jackson 也錄了《Hootin' 'N Tootin'》（BLP 4094）——**jazzdisco 把兩場並列在同一個日期底下，正文不得混**。⚠ 掛名 `Ike Quebec`（MB d2301fc2 Person US）＝池中 5 列同字串。⚠ 店面（第 254 條）：**Apple us `search` 一種查法零命中**。CAA：**RG 層 HTTP 404、零圖**（重試三次確認，第 589a 條）——取 Discogs 美國原壓條目。⚠ **MB 只建了 2 個 release**，其中 434089eb **date／country／status 全空、廠牌登成「EMI」**（第 787 條欄位缺漏家族），**列舉檔的 `nReleases: 1`／`catno: [\"LT-1052\"]` 因此漏掉日本 GXK 8190 與紐西蘭壓。",
+  "mbNote": "釘 release-group c2a6643e-c511-4636-bef2-e160e6432ca2。release-group 端點：title「With A Song In My Heart」、artist-credit「Ike Quebec」（d2301fc2 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：490368cf（1980 US Official 12\" Vinyl 9 軌，Blue Note LT-1052，無 barcode）、434089eb（**date／country／status 全空**，CD 9 軌，廠牌「EMI」、catno TOCJ-50290）。原盤九軌（490368cf 的 recordings）：A1 How Long Has This Been Going On 5:58／A2 With a Song in My Heart 3:54／A3 Imagination 5:07／A4 What Is There to Say 4:26／B1 There Is No Greater Love 4:48／B2 All of Me 2:55／B3 Intermezzo 3:42／B4 But Not for Me 3:42／B5 All the Way 3:52。⚠ **盤面把兩場交錯編排**：A 面四軌全出自 1962-02-13，B 面前兩軌亦然、後三軌才是 1962-02-05（jazzdisco 1961-1962 session 頁：02-05 tk.28 Intermezzo／tk.32 But Not for Me／tk.34 All the Way／tk.37 All of Me；02-13 tk.3 How Long／tk.6 What Is There to Say／tk.15 Imagination／tk.24 With a Song in My Heart／tk.27 There Is No Greater Love）。班底：Ike Quebec ts、Earl Van Dyke（盤面作 Earl Vandyke）org、Willie Jones g、Wilbert Hogan d，02-13 那場加 Sam Jones b。另收進 Mosaic MR3-121／MD2-121（1987）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Take Aim (Blue Note Classic LT-1057)；Harold Land — Take Aim（維基條目名 Take Aim (album)）；Take Aim (UK LBR 1038／JP GXK 8174)",
+  "artist": "Harold Land",
+  "album": "Take Aim",
+  "year": 1980,
+  "label": "Blue Note LT-1057（US 1980 12\" Vinyl 6 軌，「Blue Note Classic」；MB de7cc618＝**MB 唯一的 release**；Discogs 美國原壓三筆皆 1980）；**1981 英國壓 Blue Note LBR 1038**、**1981 日本 GXK 8174**（皆 Discogs，MB 未建）",
+  "why": "Harold Land 1960 年 7 月 25 日在洛杉磯 Radio Recorders 錄的五重奏盤——**這是他為 Blue Note 錄的唯一一場領班錄音**，也是整個 LT 系列裡極少數不在 Van Gelder 錄的碟。班底全是西岸人：Martin Banks 小號、Amos Trice 鋼琴、Clarence Jones 貝斯、Leon Pettis 鼓。六軌裡〈Take Aim〉〈Land of Peace〉〈Blue Nellie〉是領班原創，〈Reflections〉是 Monk 的曲子，〈You're My Thrill〉8:05 是全盤最長的一軌。Land 那時剛錄完《The Fox》（Hifijazz）、正要往 Bobby Hutcherson 那條線走——**Blue Note 把這一場放進庫房二十年，等到 1980 年才發**（jazzdisco LT-1057；維基 Take Aim (album)；MB release de7cc618）。實掃池中 `Harold Land` **線上池 4 張（The Fox／Harold in the Land of Jazz／A New Shade of Blue／The Peace-Maker）／未上架批次 0 張**。",
+  "risk": "⚠ **年份 1980 有紙本**：**Billboard 1980-09-20 p14 爵士價目表「LAND, HAROLD Take Aim LP Blue Note LT1057 $7.98 8T 8LT1057 CA4LT1057」**；Discogs 三筆美國原壓 1980、MB frd 1980、jazzdisco 1980、維基 infobox 1980，五邊一致。⚠ **jazzdisco 這一條沒有 take 號也沒有 matrix**（Radio Recorders 那場它只列六個曲名、personnel 與日期，沒有母帶編號）——**本張是本組唯一無法用母帶號比對的 Blue Note 錄音**（第 738 條要求的比對方式在此只能退回曲名比對）。曲名比對結果：**六軌在池中零重複**，Land 池中四張的曲目與本張無交集，**不撞陳列**。⚠ **Harold Land 同時是本批《Spiral》1968-11-25 那場的次中音**——**兩卡正文不得互抄，尤其不得把 1960 年洛杉磯那個 Land 與 1968 年舊金山那個寫成同一個階段**。⚠ **維基 infobox 的 length 記 57:23**，**但原盤六軌（MB de7cc618）合計約 36:52**——57 分鐘是後來 CD 版加別 take 的長度，**正文不得引用維基那個時長**。⚠ **列舉檔 `nReleases: 1`、`countries: [\"US\"]` 偏低**：Discogs 另有 **1981 英國 LBR 1038** 與 **1981 日本 GXK 8174**，MB 一筆都沒建（第 787 條「MB 漏建各國同年壓片」家族）。⚠ 掛名 `Harold Land`（MB 8f5c28d7 Person US）＝池中 4 列同字串；**MB `artist:\"Harold Land\"` 反查無異人同名**，不必帶消歧。⚠ 店面（第 254 條）：**Apple us `search` 一種查法零命中**。CAA：RG 層 2 圖，**來源是 de7cc618＝1980 美國原壓** ✓。",
+  "mbNote": "釘 release-group 9cc3c7f9-45eb-4f19-8ef8-6ec576cae3c1。release-group 端點：title「Take Aim」、artist-credit「Harold Land」（8f5c28d7 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 **只有 1 個 release**。release 端點：de7cc618（1980 US Official 12\" Vinyl 6 軌，Blue Note LT-1057，無 barcode）。六軌（de7cc618 的 recordings）：A1 As You Like It 7:15／A2 Take Aim 3:40／A3 Land of Peace 6:20／B1 Reflections 6:42／B2 Blue Nellie 4:50／B3 You're My Thrill 8:05。錄音 1960-07-25 **Radio Recorders, Los Angeles, CA**（jazzdisco 1959-1960 session 頁；**該條只有 personnel、地點、日期與六個曲名，無 take 號、無 matrix**）；班底 Martin Banks tp、Harold Land ts、Amos Trice p、Clarence Jones b、Leon Pettis d。Discogs 另載 1981 英國 Blue Note LBR 1038 與 1981 日本 GXK 8174，MB 皆未建。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Mr. Natural (Blue Note Classic LT-1075)；Stanley Turrentine — Mr. Natural（維基條目名 Mr. Natural (Stanley Turrentine album)；`Mr. Natural` 本身是消歧義頁）；Mr. Natural (2023 Tone Poet, B0034170-01)",
+  "artist": "Stanley Turrentine",
+  "album": "Mr. Natural",
+  "year": 1980,
+  "label": "Blue Note LT-1075（US 1980 12\" Vinyl 5 軌，MB a38194ad 的廠牌名登成「Blue Note Classic」；Discogs 美國原壓兩筆皆 1980）；**1981 紐西蘭 World Record Club WC 4465**（MB 8fa71155）；**1981 日本 GXK 8176**（MB c456229b）；JP CD LT-1075＋TOCJ-50295（2012-09-19 45a4a902）／＋UCCU-8152（2021-10-20 f2569d7c）；2023-04-07 XW Tone Poet 黑膠 775b649b（B0034170-01／BST 1075／ST-1075）",
+  "why": "Stanley Turrentine 1964 年 9 月 4 日 Van Gelder 錄音的六重奏盤：**Lee Morgan 小號（前四軌）、McCoy Tyner 鋼琴、Bob Cranshaw 貝斯、Elvin Jones 鼓、Ray Barretto 康加（前三軌）**——等於把 Coltrane 四重奏的鋼琴與鼓借來，配上 Blue Note 自家的號手。五軌裡〈Stanley's Blues〉其實是 Duke Pearson 的曲子〈Wahoo〉改名，〈Shirley〉10:45 寫給當時的妻子、管風琴手 Shirley Scott，最後一軌是披頭四的〈Can't Buy Me Love〉——**1964 年 9 月距離那首歌上榜才半年，Blue Note 這種反應速度在當時罕見**（jazzdisco LT-1075；維基 Mr. Natural (Stanley Turrentine album)；MB release a38194ad）。整場配了 BLP 4234 的號沒發，十六年後才進 LT 系列。實掃池中 `Stanley Turrentine` **線上池 5 張／未上架批次 13 張**，1964 年只有本張與同批的《In Memory Of》。",
+  "risk": "⚠ **年份 1980 有廠牌檔期廣告直證（第 612 條）**：**Billboard 1980-11-01 p35 的 EMI-America／United Artists 整版新片廣告逐字印「STANLEY TURRENTINE / Mr. Natural LT-1075 4LT-1075 8LT-1075」**（同版還有 BLUE MITCHELL / Step Light LT-1082、HANK MOBLEY / Third Season LT-1081、LEO PARKER / Rollin' With Leo LT-1076——**後兩張是 b 組的卡**）；**Billboard 1980-11-15 p19 爵士價目表「TURRENTINE, STANLEY Mr. Natural LP Blue Note LT1075 $7.98」**。MB／jazzdisco／維基／Discogs 亦全 1980。⚠ **紙本誤植（第 509c 條）**：**同一則 1980-11-01 廣告把 Blue Mitchell 的《Step Lightly》印成「Step Light」**（封面圖上的字是 Step Lightly），**Billboard 1980-11-15 的價目表照抄「Step Light」**——**同一刊兩週連錯，不算兩個獨立來源**；本批不收那張，但**後批做 LT-1082 時不得照抄**。⚠ **BLP 4234 這個沒發出去的號同時掛兩場**：1964-06-03（本批《In Memory Of》）與 1964-09-04（本張），**兩卡 risk 互指**；jazzdisco 顯示本場的〈Shirley〉〈Tacos〉曾排進 BLP 4234。⚠ **曲名改名**：**jazzdisco 記 matrix 1423 tk.11 為「Wahoo (as Stanley's Blues)」**——盤面作〈Stanley's Blues〉，**正文可寫這是 Duke Pearson〈Wahoo〉的改名，但盤名欄與曲目欄一律用盤面寫法**。⚠ **母帶比對**：1964-09-04 五個 take 全部只出現在 LT-1075 與 1998 年的歐洲精選《Stanley Turrentine Plays the Pop Hits - Easy!》（那只收〈Can't Buy Me Love〉一軌），**池中零軌重複，不撞陳列**。⚠ 掛名 `Stanley Turrentine`（MB 51e0df97 Person US）＝池中 18 列同字串；**他同時是本批《Freedom》1964-10-22 那場的次中音**——**那一場與本場只差七週，正文不得混**。⚠ **Lee Morgan／McCoy Tyner／Elvin Jones／Ray Barretto 都不得寫成共同領班**；Ray Barretto 在本批出現兩次（本張與《Midnight Sun》）。⚠ 店面（第 254 條）：Apple us `search` 命中 1680955686，5 軌＝原盤形 ✓，`releaseDate` 1980-01-01＝年頭佔位。CAA：RG 層 2 圖，**來源是 a38194ad＝1980 美國原壓** ✓。",
+  "mbNote": "釘 release-group 4e576291-a08c-43d6-9c13-99f098263203。release-group 端點：title「Mr. Natural」、artist-credit「Stanley Turrentine」（51e0df97 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 6 個 release。release 端點：a38194ad（1980 US Official 12\" Vinyl 5 軌，**廠牌名登成「Blue Note Classic」**、catno LT-1075，無 barcode）、c456229b（1981 JP 12\" Vinyl 5 軌，GXK 8176）、8fa71155（1981 **NZ** 12\" Vinyl 5 軌，**World Record Club WC 4465**）、45a4a902（2012-09-19 JP CD 5 軌，LT-1075＋TOCJ-50295，barcode 4988006895843）、f2569d7c（2021-10-20 JP CD 5 軌，＋UCCU-8152）、775b649b（2023-04-07 XW 12\" Vinyl 5 軌，1075＋B0034170-01＋BST 1075＋ST-1075，barcode 602438371013，Tone Poet）。原盤五軌（a38194ad 的 recordings）：A1 Stanley’s Blues 8:59／A2 Shirley 10:45／B1 Tacos 6:29／B2 My Girl Is Just Enough Woman For Me 6:31／B3 Can’t Buy Me Love 6:45（MB 題用 U+2019 彎撇號）。錄音 1964-09-04 Van Gelder Studio, Englewood Cliffs（jazzdisco 1963-1964 session 頁，matrix 1422–1426，tk.1／11／14／22／23，原定 BLP 4234）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Third Season (Blue Note Classic LT-1081)；Hank Mobley — Third Season（維基條目名 Third Season (album)）；Third Season (NZ World Record Club WC 4468)",
+  "artist": "Hank Mobley",
+  "album": "Third Season",
+  "year": 1980,
+  "label": "Blue Note LT-1081（US **1980** 12\" Vinyl 6 軌，「Blue Note Classic」；MB 26613ec1；Discogs 美國原壓兩筆＋卡帶 4LT-1081 皆 **1980**）；**1982 紐西蘭 World Record Club WC 4468**（Discogs，MB 未建）；CD Blue Note 7243 4 97506 2 3（1998 US 3d293214）／JP TOCJ-50296（2012-09-19 34a7b9d1，**7 軌**）／UCCU-8153（2021）；2025-03-07 XW 黑膠 8b880ae7（602455421463）",
+  "why": "Hank Mobley 1967 年 2 月 24 日 Van Gelder 錄音的七重奏盤，**加拿大吉他手 Sonny Greenwich 在六軌裡的五軌彈電吉他**——那是 Greenwich 生涯僅有的兩次 Blue Note 錄音之一，也是 Mobley 唯一一次在編制裡放吉他。其餘是 Lee Morgan 小號、James Spaulding 中音與長笛、Cedar Walton 鋼琴、Walter Booker 貝斯、Billy Higgins 鼓。六軌全是領班原創，〈The Third Season〉〈Boss Bossa〉把拉丁節奏拆進 hard bop 的架子裡——**這是 Mobley 1960 年代後期最外向的一場，卻整場入庫十三年**（jazzdisco LT-1081；維基 Third Season (album)；MB release 26613ec1）。實掃池中 `Hank Mobley` **線上池 9 張／未上架批次 10 張**，1967 年只有 c141 的《Hi Voltage》（1967-10-09），**2 月這一場沒有**。",
+  "risk": "⚠ **jazzdisco 年份被推翻（本組推翻的第二個單一來源）**：**jazzdisco 的 LT 系列頁把 LT-1081 記成 1981**。正方四項：**Billboard 1980-11-01 p35 的 EMI-America／United Artists 整版新片廣告逐字印「HANK MOBLEY / Third Season LT-1081 4LT-1081 8LT-1081」**；**Billboard 1980-11-15 p19 爵士價目表「MOBLEY, HANK Third Season LP Blue Note LT 1081 $7.98」**；**Discogs 三筆美國原壓（LP×2＋卡帶）全 1980**；MB frd 1980 與維基 infobox 1980。→ **取 1980，維持列舉檔值**，jazzdisco 的 1981 說寫進本欄。**⚠ 這是第 470 條「jazzdisco 在別的號段年份欄準、在 LT 段照樣會錯」的第一個樣本**——後批做 LT-1085 以後那幾張時，**jazzdisco 的年份欄一律要用紙本覆核**。⚠ **母帶比對**：1967-02-24 七個 take 裡六個進本盤，另一個（tk.14〈Don't Cry, Just Sigh〉別 take）只收進 2012 年日本 CD 與 Mosaic MD8-268；**池中零軌重複，不撞陳列**。⚠ **2012 年的 TOCJ-50296 是 7 軌**（多那個別 take），**列舉檔沒標軌數差**。⚠ **曲名**：MB 作「The Steppin' Stone」，**jazzdisco 作「Steppin' Stone」（無 the）**；MB 的〈An Aperitif〉與 jazzdisco 同。⚠ 掛名 `Hank Mobley`（MB 026b096e Person US）＝池中 19 列同字串；**本批他有三張（《A Slice of the Top》1966／《Poppin'》1957／本張 1967），三張的編制與年代全不同，正文不得互抄**——維基的 Third Season infobox 甚至把 prev_title 直接指向《A Slice of the Top》（**那是發行順序不是錄音順序**，正文不得寫成「上一張」）。⚠ **Lee Morgan 在本張是側人**，他在本批另有兩張領班盤。⚠ **列舉檔 `countries` 只有 JP／US／XW**，Discogs 另有 1982 紐西蘭 World Record Club 壓片（與本批《Mr. Natural》的 WC 4465 同一個系列），MB 未建。⚠ 店面（第 254 條）：Apple us `search` 命中 715748511，6 軌＝原盤形 ✓，`releaseDate` 1967-02-24＝錄音日。CAA：RG 層 2 圖，**來源是 26613ec1＝1980 美國原壓** ✓。",
+  "mbNote": "釘 release-group 1e4e29f6-fd23-477e-9849-28bc356d6fa2。release-group 端點：title「Third Season」、artist-credit「Hank Mobley」（026b096e Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 4 個 release。release 端點：26613ec1（1980 US Official 12\" Vinyl 6 軌，Blue Note LT-1081，無 barcode）、3d293214（1998 US CD 6 軌，7243 4 97506 2 3，barcode 724349750623）、34a7b9d1（2012-09-19 JP CD **7 軌**，TOCJ-50296，barcode 4988006895850）、8b880ae7（2025-03-07 XW 12\" Vinyl 6 軌，1081＋602455421463＋LT 1081＋LT-1081）。原盤六軌（26613ec1 的 recordings）：A1 An Aperitif 6:49／A2 Don't Cry, Just Sigh 6:48／A3 The Steppin' Stone 5:36／B1 The Third Season 6:44／B2 Boss Bossa 5:10／B3 Give Me That Feelin' 6:32。⚠ **盤面軌序把最後錄的 tk.36〈An Aperitif〉放 A1**，jazzdisco 的 matrix 順序（1846–1851）恰好相反。錄音 1967-02-24 Van Gelder Studio, Englewood Cliffs（jazzdisco 1967-1968 session 頁，tk.14 別 take／15／16／29／30／33／36）；班底 Lee Morgan tp、James Spaulding as & fl（#2-6）、Hank Mobley ts、Cedar Walton p、**Sonny Greenwich g（#2-6）**、Walter Booker b、Billy Higgins d。另收進 Mosaic MD8-268（2019）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Oleo (Blue Note GXF 3065)；Grant Green — Oleo（維基條目名 Oleo (Grant Green album)；`Oleo` 本身是 Sonny Rollins 曲名的消歧義頁）；Oleo (JP GXK 8169)",
+  "artist": "Grant Green",
+  "album": "Oleo",
+  "year": 1980,
+  "label": "Blue Note（J）GXF 3065（**1980 日本首發、僅日本盤** 12\" Vinyl 5 軌，King Records「ブルーノート世界初登場1800シリーズ」；MB c343aa1a＝**MB 唯一的 release**；Discogs 日本原壓兩筆＋白標宣傳盤一筆皆 1980）；GXK 8169（1981 JP「Unissued Masters Series Part 1」，Discogs 有、MB 未建）",
+  "why": "Grant Green 1962 年 1 月 31 日 Van Gelder 錄音的四重奏盤，**Sonny Clark 鋼琴、Sam Jones 貝斯、Louis Hayes 鼓**——與十八天前那場（本批《Nigeria》）只換了鼓手，卻是完全不同的一次。五軌全是別人的曲子：Sonny Rollins 的〈Oleo〉、Rodgers & Hart 的〈Little Girl Blue〉7:15、Miles Davis 的〈Tune-Up〉7:19、Richard Rodgers 的〈My Favorite Things〉8:32，加上一首來源不明的〈Hip Funk〉8:39。**Green 與 Clark 這組四重奏在 1961 年底到 1962 年初連錄四場、一場都沒發**，全部塞進庫房——本張是其中最後錄的一場，1980 年由日本 King 首發，美國至今沒有發過黑膠（jazzdisco GXF-3065；維基 Oleo (Grant Green album)；MB release c343aa1a）。實掃池中 `Grant Green` **線上池 18 張／未上架批次 3 張**，**與 Sonny Clark 那四場一張都沒有**。",
+  "risk": "⚠ **只有日本盤，美國紙本必然查無**：**Billboard／Cash Box 1980–81 共 206 期命中頁搜 `Oleo`＋Grant Green＋`GXF 3065` 全部零命中**——**這不等於「紙本沒有」，而是這張碟從來沒在美國上市**（第 704 條的反面用法）。年份 1980 由 **jazzdisco「GXF-3065 … 1980」＋Discogs 三筆日本原壓 1980＋MB frd 1980＋維基 infobox 1980** 四邊釘死。⚠ **與同批《Nigeria》是同一支四重奏的兩場（第 611 條盲區第五種）**：**逐 take 比對零重複**（本場 tk.4／5／6／11／15；Nigeria 那場 tk.5／8／12／21／24），**但兩張的曲風、編制、甚至 Mosaic 盒裝歸屬（MR5-133）完全相同**——**兩卡 risk 必須互指，正文不得把鼓手寫錯**（本場是 Louis Hayes，Nigeria 那場是 Art Blakey）。**同一支四重奏還有 GXF-3058《Gooden's Corner》（1961-12-23）與 GXF-3071《Remembering》（1961-11-26），兩張都不在本批、池中也沒有**——後批收到時要回頭比。⚠ **曲名重複**：本張的〈Tune-Up〉與本批《Poppin'》的〈Tune Up〉是同一首曲子的不同錄音（1962 vs 1957），**正文不得寫成同一次演奏**；〈Oleo〉這個曲名在池中另有多張碟收過。⚠ **MB 這個 RG 只建了一個 release**，連 1981 年的 GXK 8169 都沒建，**列舉檔的 `nReleases: 1`／`countries: [\"JP\"]`／`catno: [\"GXF 3065\"]` 是最小集但沒有錯** ✓。⚠ **MB 的軌號沒有 A／B 面**（作 1-1～1-5），盤面是單張 LP 分兩面，**軌序以 Discogs 日本原壓為準**。⚠ 掛名 `Grant Green`（MB 1a88b270 Person US）＝池中 21 列同字串。⚠ **Sonny Clark 在本批有《Blues in the Night》領班盤、又是本張與《Nigeria》《Tippin' the Scales》的側人**——四卡互指。⚠ 店面（第 254 條）：Apple us `search` 命中 1371787284「Oleo」5 軌＝原盤形 ✓，`releaseDate` 1980-01-01＝年頭佔位。CAA：RG 層 1 圖，**來源是 c343aa1a＝1980 日本原壓** ✓。",
+  "mbNote": "釘 release-group bb811424-64ab-4431-a9ef-1eee2952b2a7。release-group 端點：title「Oleo」、artist-credit「Grant Green」（1a88b270 Person US）、first-release-date 1980、primary-type Album、secondary-types 空，轄下 **只有 1 個 release**。release 端點：c343aa1a（1980 JP Official 12\" Vinyl 5 軌，Blue Note GXF 3065，無 barcode）。五軌（c343aa1a 的 recordings，**MB 的軌號作 1-1～1-5、無 A/B 面標記**）：Oleo 5:37／Little Girl Blue 7:15／Tune-Up 7:19／Hip Funk 8:39／My Favorite Things 8:32。錄音 1962-01-31 Van Gelder Studio, Englewood Cliffs（jazzdisco 1961-1962 session 頁，tk.4 My Favorite Things／tk.5 Hip Funk／tk.6 Oleo／tk.11 Little Girl Blue／tk.15 Tune Up；**同場另有 tk.8 Oleo 別 take 只收進 Mosaic MR5-133**）；班底 Sonny Clark p、Grant Green g、Sam Jones b、Louis Hayes d。⚠ **jazzdisco 的曲序與盤面不同**（它以 take 號排，盤面把〈Oleo〉放第一軌）。另收進 Mosaic MR5-133／MD4-133《The Complete Blue Note Recordings of Grant Green with Sonny Clark》(1990)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Street Singer (Blue Note GXF 3067)；Jackie McLean, Tina Brooks — Street Singer（jazzdisco 用逗號式掛名）；⚠ 與池中 `Reverend Gary Davis —《Harlem Street Singer》`／`Snooks Eaglin —《New Orleans Street Singer》` 子字串相近",
+  "artist": "Jackie McLean & Tina Brooks",
+  "album": "Street Singer",
+  "year": 1980,
+  "label": "Blue Note（J）GXF 3067（**1980-06-06 日本首發、僅日本盤** 12\" Vinyl 6 軌，King Records「ブルーノート世界初登場1800シリーズ」；MB 472ac63a；Discogs 日本原壓兩筆皆 1980）；GXK 8161（1981 JP「Unissued Masters Series Part 1」，Discogs 有、MB 未建）；CD Blue Note（J）TOCJ-66080（2000-01-26 ae194c73）",
+  "why": "1960 年 9 月 1 日 Van Gelder 那一場六重奏的另一半：Blue Mitchell 小號、Jackie McLean 中音、**Tina Brooks 次中音**、Kenny Drew 鋼琴、Paul Chambers 貝斯、Art Taylor 鼓。那天錄了六個 take，Blue Note 當年挑三首放進 McLean 的《Jackie's Bag》、把〈Street Singer〉留給 Brooks 原定的《Back to the Tracks》，**剩下的與整場的完整面貌一直沒發**——直到 1980 年日本 King 把六軌按錄音順序重新排成一張碟。Brooks 寫的〈Street Singer〉10:20 是全盤最長的一軌，〈Melonae's Dance〉與〈Medina〉則是 McLean 的曲子。**兩位領班都在 1960 年代末退出錄音，這場是他們合作的頂點**（jazzdisco GXF-3067；維基 Street Singer (album)；MB release 472ac63a）。實掃池中 `Tina Brooks` **線上池 3 張（True Blue／Back to the Tracks／The Waiting Game）／未上架批次 1 張**（c137《Minor Move》1980）；`Jackie McLean` **線上池 10 張／未上架批次 10 張**。",
+  "risk": "⚠ **本批最嚴重的撞陳列（第 738 條形狀，六軌裡四軌與池中重疊）**：jazzdisco 1959-1960 session 頁逐軌顯示——**tk.5〈Appointment in Ghana〉、tk.11〈Isle of Java〉、tk.15〈A Ballad for Doll〉三軌同時在 Blue Note BLP 4051＝池中 c131 的 `Jackie McLean —《Jackie's Bag》`**；**tk.12〈Street Singer〉同時在 BLP 4052＝池中 seed 的 `Tina Brooks —《Back to the Tracks》`（apex 4）**。**只有 tk.3〈Melonae's Dance〉與 tk.6〈Medina〉是池中沒有的**。**`chk-prop` 一個都不會亮燈**（掛名與盤名都不同）。→ **正文絕不得把本張寫成「六軌全部首度公開」，也不得把那四軌寫成本張獨有的內容**；可寫的是「同一場的完整版本、按錄音順序排列」。⚠ **第三層**：本張的〈Medina〉曲名與 b 組的 `Bobby Hutcherson —《Medina》`（LT-1086）同字，**毫無關係**，但店面檢索會撞。⚠ **掛名 `Jackie McLean & Tina Brooks`（新聯名字串）**：MB RG credit 就是這兩個 Person（5b6993ef ＋ aa0bb932）以 `&` 相連；**池中已有 `Jackie McLean & Dexter Gordon`（seed）、`Kenny Burrell & John Coltrane`（seed）、`Kenny Dorham & Jackie McLean`（c139）三個同形聯名字串**，第 307 條照池中先例走，**不拆成兩張卡、也不收攏成 `Jackie McLean`**。⚠ **jazzdisco 用逗號式「Jackie McLean, Tina Brooks」、Discogs 與 MB 用 `&`**——`&`／`and` 分裂是第 611 條盲區第四種，**queryAlias 已收兩種寫法**。⚠ **年份 1980 有精確日期**：**維基 infobox 記 released June 6, 1980**；jazzdisco／Discogs 兩筆日本原壓／MB frd 亦全 1980。⚠ **只有日本盤，美國紙本必然查無**（Billboard／Cash Box 1980–81 共 206 期命中頁零命中，第 704 條反面用法）。⚠ **同系列的近鄰已在池中**：**c137 的 `Tina Brooks —《Minor Move》` 是 GXF-3072、同一年同一個日本系列**——**兩卡是同一波企劃，risk 互指**。⚠ 店面（第 254 條）：Apple us `search` 命中 1361759457「Jackie McLean & Tina Brooks / Street Singer」6 軌＝原盤形 ✓，**`releaseDate` 1960-10-02 既不是錄音日（09-01）也不是發行日（1980-06-06）**（第 484 條新偏移樣本）。CAA：RG 層 2 圖，**來源是 472ac63a＝1980 日本原壓** ✓。",
+  "mbNote": "釘 release-group 9336aa35-4a57-45fa-b520-98076200d53e。release-group 端點：title「Street Singer」、**artist-credit「Jackie McLean」（5b6993ef Person US）＋ joinphrase「 & 」＋「Tina Brooks」（aa0bb932 Person US）**、first-release-date 1980、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：472ac63a（1980 JP Official 12\" Vinyl 6 軌，Blue Note GXF 3067，無 barcode，credit「Jackie McLean & Tina Brooks」）、ae194c73（2000-01-26 JP CD 6 軌，Blue Note TOCJ-66080，barcode 4988006778368）。⚠ **TOCJ-66080 與本批《Lonely Town》的 TOCJ-66081 是同一天發的連號日本 CD**。六軌（472ac63a 的 recordings）：A1 Melonae's Dance 6:50／A2 Appointment in Ghana 7:00／A3 Medina 6:46／B1 Isle of Java 7:30／B2 Street Singer 10:20／B3 A Ballad for Doll 3:18。錄音 1960-09-01 Van Gelder Studio, Englewood Cliffs（jazzdisco 1959-1960 session 頁，tk.3／5／6／11／12／15；**盤面軌序＝take 號順序**）；班底 Blue Mitchell tp、Jackie McLean as、Tina Brooks ts、Kenny Drew p、Paul Chambers b、Art Taylor d。同場去向：tk.5／11／15 → Blue Note BLP 4051《Jackie's Bag》(1961)；tk.12 → BLP 4052《Back to the Tracks》；全六軌 → Mosaic MR4-106《The Complete Blue Note Recordings of the Tina Brooks Quintets》(1985) 與 CD CDP 7 46142 2 (1987)。"
+ }
+]
