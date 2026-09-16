@@ -281,3 +281,51 @@ c-143 a 逐張查過：**1970–72 段的 Blue Note（本組 21 張）沒有任�
    → **以「哪一波檔期」定年，不要以「哪一段號」定年**（第 663 條在 1975–76 段的新形狀：這次不是年份整群偏移，是同一次配號的一批貨分兩年出）。
 
 **紙本至此的覆蓋：Billboard 1955–1976-12、Cash Box 1960-11–1976-12 ＋ 1984-09–1985-06。1977-01 之後還沒有人掃。**
+
+## 2026-09-16 九度追加（c-144 b 掃的，**命中頁不是全文；1977 全年到 1979 年底**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1977-1979-ocr.txt`（33.2 MB） | Billboard | **1977-01-08 → 1979-12-22，157 期中 153 期的命中頁** | c-144 b 掃；缺 **1977-01-01／1977-12-31／1978-12-30／1979-12-29** 四期 |
+| `cashbox-bn-1977-1979-ocr.txt`（24.4 MB） | Cash Box | **1977-01-01 → 1979-12-29，157 期全中的命中頁** | c-144 b 掃；**一期不缺** |
+
+⚠ 關鍵字＝c-144 b 的 **20 個目錄號**（BN-LA473／483／596／606／615／628／634／635／636／664／667／701／710／711／736／737／760／789／853／882，
+含 `BN-LA`／`BNLA`／`BN LA`／`BN-EA`／`BN-LT` 五種前綴通配 ＋ `LT-991`／`LT 991`／`LT991` ＋ `LNJ-80118`）
+＋**24 個盤名**＋**15 個人名**＋廠牌詞 `blue note`。
+**「blue note」是通配關鍵字，1977-01→1979-12 任何提到 Blue Note 的頁都在裡面**——查別的 Blue Note 碟大致夠用，
+**查 1980 以後或非 Blue Note 的碟仍須重抓。**
+每期以 `######## BB-YYYY-MM-DD pages=N`／`######## CB-YYYY-MM-DD pages=N` 分隔，頁內以 `===== PAGE n =====` 分隔，
+**頁內文字已先把換行摺成空白**（第 636 條），可直接跑跨行片語的正則。
+
+### 檔名形狀（c-144 b 逐期實測，與第 756 條一致）
+
+| 年 | Billboard | Cash Box |
+|---|---|---|
+| **1977／1978／1979** | `Billboard%20YYYY-MM-DD.pdf`（單一形狀） | `CB-YYYY-MM-DD.pdf`（單一形狀） |
+
+抓取器仍對 Billboard 試三種（`Billboard%20`／`BB-`／`Billboard-`）、對 Cash Box 試兩種（`CB-`／`Cash-Box-`），
+**實測 313 期沒有一期落到備援形狀上**——**第 701 條「同一年裡會換形狀」的亂象確定只發生在 1971–75。**
+四路並行跑 313 期約 12 分鐘。
+
+### ⚠ Billboard 缺的四期是規律不是失誤
+
+**1977-01-01、1977-12-31、1978-12-30、1979-12-29**——**每一年的最後一個週六（加 1977 年的第一個週六）全缺，其餘 153 期一期不漏**。
+三種檔名形狀各試兩輪、逐期重試過皆 404。**判為 Billboard 的年終雙數合刊那一週不出單期**；**Cash Box 那四週全部有出刊。**
+→ **缺期規律得這麼乾淨，本身就是「不是檔名問題」的證據**（第 614／701 條的反面用法）。
+
+### c-144 b 立的三條（第 782／783／791 條）
+
+1. **第 782 條：第 752 條的判準要連「報導／系列的標題」一起排除。**
+   **Billboard 1978-11-11 p18「UA Reissues Blue Note Masters In 5 New Albums」標題與導言連用兩次 reissue，逐張文案卻五套全部是未發行母帶**
+   （Morgan「None has been issued previously」、Turrentine「previously unreleased」、**McLean《Hipnosis》p98「has not previously been issued」**、
+   Blakey《Live Messengers》、Corea《Circulus》；Cash Box 1978-10-14 p42「**all performances are new to LP**」）。
+   → **`-H2`／`-J2` 一律讀逐張文案，不讀標題、不看目錄號尾碼、不看系列名、不看軌數、不看 Discogs 的 format 欄。**
+2. **第 783 條：LT 系列（1979 起）＝「Back to Blue Note」企劃，整段是庫存首發、不走 §5.6。**
+   **Cash Box 1979-09-15 p41「10 albums culled from never-before-released masters produced by Michael Cuscuna」**（點名 Chant、Sonic Boom、The Soothsayer、Club House、Solid、Confirmation、New Time Shuffle、Consequences、A Slice Of The Top、Spiral）
+   ＋ **Cash Box 1979-11-10 p15** 的續報。**這十張的 `year` 可直接用 1979。**
+3. **第 791 條（訂正 c-144 a 第 757 條第 4 點）：1976 年年中起的 Blue Note，查榜一律 Soul LPs 先、Jazz LP's 次、主榜也要看。**
+   a 組記「1974–76 的 Blue Note 銷量仍主要反映在爵士榜」——**1977 年起完全翻轉**：
+   《Fever》同時進 Soul LPs 與主榜（爵士榜反而沒進）、《Phantazia》與《Finger Paintings》**三榜齊上**、
+   **《Tone Tantrum》只進 Cash Box 的 R&B LP 榜、爵士榜零**。
+
+**紙本至此的覆蓋：Billboard 1955–1979-12、Cash Box 1960-11–1979-12 ＋ 1984-09–1985-06。1980-01 之後還沒有人掃。**

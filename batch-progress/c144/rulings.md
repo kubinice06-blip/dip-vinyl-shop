@@ -298,3 +298,332 @@ Gene Harris 一張照 c-143 b 第 697 條第 2 點的現狀維持，**1958–69 
 - **給後批（1979 後與 LT 系列）**：
   1. **1979 年後 Blue Note 進入休眠期**，LT 系列（1979–81 的庫存盤）的 `year` 一律取首次商業發行年、`risk` 寫明錄音年（派工信已定），**判準照本層第 752 條：看廠牌文案是不是 previously unreleased。**
   2. **第 753 條的「同一次配號分兩年出」要繼續當預設**：BN-LA 的號段相鄰不代表同月上市，**以「哪一波檔期」定年，不要以「哪一段號」定年。**
+
+---
+
+# c-144 裁定（b 組，Blue Note 1976–79 第二段，編號 780–809）
+
+策展層 b 組，2026-09-16。交件 `batch-progress/c144/prop-b.json`（`g: "b"`），
+`node batch-progress/c144/chk-prop.mjs b` **標記 0**（欄位 0、線上池撞卡 0、跨組 0、
+跨批撞卡 0／108 批 4,448 張、同 rgMbid 不同掛名 0）。
+22 筆的 `mbNote` 第一個 UUID 全數等於 enum 的 `rgMbid`、**22 個 rgMbid 各用一次**，欄位鍵與 `c141/prop-b.json` 完全一致。
+
+## 第 780 條（c-144 b 組交件）：**22 筆 → 收 22、退 0；年份改判 0；盤名改判 3 張；掛名收攏 2 張、新掛名 4 位**
+
+- **收 22 張、16 位**（Bobby Hutcherson 3、Earl Klugh 3、Gene Harris 2、Jackie McLean 2，其餘 12 位各 1）。
+- **退 0**（第 781 條說明為什麼這一批一張都不必退）。**第 315 條：prop 22 ＋ 退表 0 ＝ 22 ✓。**
+- **年份**：22 張的 `year` **全部維持 enum 值，一張都沒改**。但推翻了**三個**單一來源：
+  jazzdisco 的 LNJ-80118＝1976（實際 1977，第 786 條）、**維基的 Silver 'n Percussion＝1977（實際 1978，第 785 條）**、
+  jazzdisco 的 BN-LA628-**H** 尾碼（實際 -G，第 787 條）。
+- **`releaseType`**：22 張全是 Album，**合輯 0**；**1978 年那一波三筆雙唱片（`-J2`×2 ＋ 日本單片）全部覆核為庫存首發、不走 §5.6**（第 782 條）；
+  **1979 年的 LT 系列同樣不走 §5.6**（第 783 條）。
+- **`label` 改他廠 0**（22 張全是 Blue Note 自家原盤，含兩張日本首發）。
+- **掛名**：**新掛名 4 位**（`Earl Klugh`、`Robby Krieger`、`Willie Bobo`、`Noel Pointer`），
+  **群組收攏 2 張**（兩張 Jackie McLean，第 784 條），其餘 16 張沿用池中既有字串；**自行合併 0、新造分裂 0**。
+- **現場 1 張**（Art Blakey《Live Messengers》，MB `secondary-types` 有 Live ✓）；**庫存／延遲發行 5 張**（第 782／783 條）。
+- **CAA 17/22 有圖**，其中 12 張的來源是美國原壓、2 張是同年的加／瑞壓、3 張是後來的日本 CD；**5 張 RG 層 404、零圖**（第 788 條）。
+- **店面命中 17/22**（第 788 條）。
+- **紙本**：本層自抓 **Billboard 1977-01-08→1979-12-29 共 153 期、Cash Box 1977-01-01→1979-12-29 共 157 期**收進 repo（第 789 條）。
+- `why` 均長 **578**／`risk` **1,004**／`mbNote` **947** 字元（`c141/prop-b` 為 556／933／784）。
+
+## 第 781 條（同批）：**退表 0 筆——這一批為什麼一張都不必退，以及四個「看起來該退卻不該退」的位置**
+
+c-143 b 退 1、c-144 a 退 2，本組退 0。**不是沒查，是四個候選逐一被證偽**：
+
+| 候選 | 為什麼看起來該退 | 為什麼不退 |
+|---|---|---|
+| Art Blakey《Live Messengers》BN-LA473-J2 | `-J2` 雙唱片、**號段屬 1975 年 2 月那一批**、Billboard 的標題寫「UA **Reissues** Blue Note Masters」 | **同一篇正文與 Cash Box 評介都寫 previously unreleased／all performances are new to LP**（第 782 條） |
+| Chick Corea《Circulus》BN-LA882-J2 | `-J2` 雙唱片、1970 年錄音、掛名與實際演出團體（Circle）不符 | 同上；且 MB `secondary-types` 空、Discogs 五筆無一標 Compilation |
+| Jackie McLean《Hipnosis》 | **Discogs 把美版 BN-LA483-J2 的 format 標成 `Compilation`** | **Billboard 1978-11-11 p98 原文「has not previously been issued」**；本卡釘的是**日本單片**（只收 1967 那五軌），更不可能是合輯（第 782 條） |
+| Jackie McLean《The Jackie McLean Quintet》LNJ-80118 | 與上一列是**同一套美國雙唱片的另一半**，形狀像 c-143 b 第 691 條那種「同碟兩個 RG」 | **兩張零軌重複**（1962-06-14 六軌 vs 1967-02-03 五軌），是兩場完全不同的錄音；日本本來就拆成兩張單片先後發行，依簡報 §6「Volume 拆盤各算一張」收兩張（第 784 條） |
+
+⚠ **這四筆全部落在「第 312 條該退」與「第 752 條該收」的交界上**——**判準只有一條：回查當期廠牌文案裡有沒有 previously unreleased**，
+**不看目錄號尾碼、不看系列名、不看軌數、不看 Discogs 的 format 欄、也不看報導標題用的是不是 reissue。**
+
+## 第 782 條（同批，**第 752 條在 1978 年這一波的續證，並加強一格**）：**「標題寫 reissue、內容物是庫存首發」——第 752 條的判準要連報導標題一起排除**
+
+c-144 a 第 752 條立的判準是「看廠牌廣告文案有沒有 previously unreleased」。**本層取得 1978 年那一波的完整文件，證明這條判準必須再擋一層：連報導的標題都不能信。**
+
+**Billboard 1978-11-11 p18「ALBUM SERIES REVIEW — UA Reissues Blue Note Masters In 5 New Albums」**（Dave Dexter Jr. 署名，續頁 p98）：
+> 「Chick Corea, Stanley Turrentine, Jackie McLean, Art Blakey and Lee Morgan are the jazzmen featured in United Artists' **reissue** of well-remembered masters originally taped for the Blue Note label. The five packages, generously annotated, are **all two-LP presentations**...」
+
+**標題與導言連用兩次 reissue，但同一篇的逐張說明全部是庫存首發**：
+- Lee Morgan《The Procrastinator》→「**None has been issued previously.**」
+- Stanley Turrentine《Jubilee Shouts》→「offers 11 tunes, **previously unreleased**, dating from 1961-62 sessions」
+- Jackie McLean《Hipnosis》→（p98）「Taped in 1962 and 1967, **'Hipnosis' has not previously been issued.** Alfred Lion was the original producer. **Michael Cuscuna and Charlie Lourie made the new series possible.**」
+- Art Blakey《Live Messengers》→「nine tracks taped live in 1954, 1961 and 1962. The bonus is the presence of the late Clifford Brown's trumpet on the fourth LP side」
+- Chick Corea《Circulus》→「Corea's five tracks, recorded in 1970 in New York」（**沒有任何 brought together／long unavailable 字樣**）
+
+**佐證（第二個獨立來源）**：**Cash Box 1978-10-14 p42 的《Live Messengers》評介**——
+「Knockout stuff by two of Blakey's very best groups and **all performances are new to LP**.」
+
+→ **第 752 條補一句（本條）：判準的否定清單要加上「報導／系列的標題」。**
+1975 年那一波的病灶是系列名叫 Re-Issue Series 而內容物分兩種；
+**1978 年這一波更進一步——整篇報導的標題就是 reissue，內容物卻五套全部是未發行母帶。**
+**判準仍然只有一條：讀逐張的文案，不讀標題。**
+（歷史脈絡：Michael Cuscuna 與 Charlie Lourie 1975 年起替 Blue Note 整理母帶，1978 年這一波與 1979 年的 LT 系列是同一條線；
+**Cash Box 1977-08-20 p27 記「Donald Byrd, the new director of that soon-to-be 40-year-old jazz label」**——本組《Chant》的發行正好在他任內。）
+
+**本組三筆的判定**：
+| 盤 | 目錄號 | 錄音 | 首發 | 判定 |
+|---|---|---|---|---|
+| Art Blakey《Live Messengers》 | BN-LA473-J2（2LP，9 軌） | 1954-02-21 Birdland ＋ 1961-08-17 Village Gate ＋ 1962-03-18 The Renaissance | **1978** | Album，`live: true`，`secondary-types` 有 Live ✓ |
+| Chick Corea《Circulus》 | BN-LA882-J2（2LP，5 軌） | 1970-04-08 ＋ 1970-08-19 ＋ 1970-08-21 A&R Studios | **1978** | Album |
+| Jackie McLean《Hipnosis》 | 日本單片 GXF 3022／ST-83022（5 軌）；美版 BN-LA483-J2（2LP，11 軌） | 1967-02-03 Van Gelder | **1978** | Album（**推翻 Discogs 的 Compilation 標記**） |
+
+## 第 783 條（同批，新立）：**LT 系列（1979 起）＝「Back to Blue Note」企劃，整段適用第 752 條的 previously-unreleased 判準；本層取得該企劃的兩份紙本**
+
+派工信與 c-144 a 第 764 條都預告「1979 年後的 LT 系列 `year` 取首次商業發行年」。**本層把那一波的廠牌文件找齊了**：
+
+1. **Cash Box 1979-09-15 p41**：「〔Capitol/UA〕a marketing campaign in support of its famed Blue Note catalog. The program, called **'Back to Blue Note,'** will focus on **10 albums culled from never-before-released masters produced by Michael Cuscuna**. Among the titles are: 'Sonic Boom' by Lee Morgan, 'The Soothsayer' by Wayne Shorter, 'Club House' by Dexter Gordon, **'Chant' by Donald Byrd**, 'Solid' by Grant Green, 'Confirmation' by Jimmy Smith, 'New Time Shuffle' by Stanley Turrentine, 'Consequences' by Jackie McLean, 'A Slice Of The Top' by Hank Mobley and Bobby Hutcheson's 'Spiral.' The campaign... runs through the end of the year」
+2. **Cash Box 1979-11-10 p15**：同一波的續報，十張全名逐一列出，並註「Originally produced by Blue Note owner **Alfred Lion**, the LPs have been attractively packaged and beautifully produced by **Michael Cuscuna**」。
+
+→ **判定**：LT 系列**不是**第 312 條的舊料重編，是庫存首發；`releaseType` 維持 Album、`year` 取首次商業發行年（1979 起）、錄音年只寫正文。
+⚠ **一則檔期文件釘十張，不是十個獨立來源**（第 509c／614 條）——後批做到 LT-1001 以後那幾十張時，**這兩則只能各算一份**。
+⚠ **給後批的名單**：上面那十張裡，**《Spiral》(Bobby Hutcherson)、《Consequences》(Jackie McLean)、《Sonic Boom》(Lee Morgan)、《The Soothsayer》(Wayne Shorter)、《Club House》(Dexter Gordon)、《Solid》(Grant Green)、《Confirmation》(Jimmy Smith)、《New Time Shuffle》(Stanley Turrentine)、《A Slice of the Top》(Hank Mobley)** 九張本批沒有，年份可直接用 1979。
+
+## 第 784 條（同批）：**掛名——新掛名 4 位、群組收攏 2 張；第 611 條「群組掛名 vs 個人掛名」在同一批裡中了兩次**
+
+| MB artist-credit | 卡上掛名 | 依據 |
+|---|---|---|
+| `Earl Klugh`（5c44b1b8 Person US 1953-09-16） | **`Earl Klugh`**（**新掛名**，本組 3 張同字串） | 池中 0 列。第 307 條同名撞擊核過：MB `artist:"Earl Klugh"` 只回本人與 `Earl Klugh Trio`（b3fb7437 Group）、`Bob James And Earl Klugh`，**無異人同名**，不必帶消歧 |
+| `Robby Krieger`（b553f0ad Person US 1946-01-08，disambiguation「American guitarist, member of The Doors」） | **`Robby Krieger`**（**新掛名**） | 池中 0 列（`The Doors` 7 列是另一個掛名，不合併）。⚠ **盤面、Discogs 四筆、維基條目、jazzdisco 全部作 `Robbie Krieger`**；MB `artist:"Robbie Krieger"` 反查 **0 筆**。裁定見第 785 條 |
+| `Willie Bobo`（dadec058 Person US 1934-02-28） | **`Willie Bobo`**（**新掛名**） | 池中 0 列。MB 只回本人與 `Willie Bobo & The Bo Gents`（3503549a Group GB），無異人同名 |
+| `Noel Pointer`（7cf8a532 Person US 1954-12-26） | **`Noel Pointer`**（**新掛名**） | 池中 0 列。MB `artist:"Noel Pointer"` **只回一筆** |
+| `Jackie McLean`（RG a0d48d4a 的 credit 字串） | **`Jackie McLean`**（池中 16 列） | 直接一致 |
+| **`Jackie McLean Quintet`（RG 15de86ae 的 credit 字串，實體卻是 5b6993ef＝Jackie McLean Person）** | **`Jackie McLean`**（**群組收攏**） | ⚠ **第 611 條盲區**：MB 另有獨立的 Group 實體 **`Jackie McLean Quintet`（8ed76c7c，US，life-span begin 1956）**，**本 RG 用的不是它**，只是在 Person 上掛了一個 credited-as 字串。列舉檔照抄 credit 字串，所以 `slice.json` 的 `artist` 是 `Jackie McLean Quintet`——**卡上必須收攏成池中既有的 `Jackie McLean`，絕不新造分裂** |
+| `Art Blakey`（601e7466 Person US 1919-10-11） | **`Art Blakey`**（池中 6 列） | MB RG credit 與 Discogs 唯一一筆條目都是 `Art Blakey`。⚠ 池中另有 `Art Blakey and the Jazz Messengers`／`& The Jazz Messengers` **23 列**，MB 也有 `Art Blakey & The Jazz Messengers`（209ddf15 Group US 1954）等六個團體實體——**兩個字串池中並存已久，本卡照 credit 取 Person 形，不合併、不推翻** |
+| 其餘 14 張 | **全部沿用池中既有字串** | Marlena Shaw／Bobby Hutcherson／Gene Harris／Carmen McRae／`John Lee & Gerry Brown`（**與 c-144 a 第 754 條同字串**）／Eddie Henderson／Ronnie Laws／Horace Silver／Chick Corea／Donald Byrd |
+
+⚠ **第 307 條預警（本批最危險的一筆）**：**《The Jackie McLean Quintet》是同名兩張碟**。
+Discogs `artist=Jackie McLean, release_title=The Jackie McLean Quintet` 回 **19 筆，其中十七筆是 1957 年 Ad Lib AL 6601／Jubilee 1064 的另一張同名盤**
+（Mono，Donald Byrd 參與，日本再發 UPS-511-J／1972、YW-7561-RO／1977、35C38-7218／1984、TOCJ-5360、UCCQ-5005／2014……）。
+**本卡是 Blue Note LNJ-80118（1977 JP，Stereo，1962-06-14 錄音，原定 BLP 4116）**，與那張毫無關係。
+⚠ 更麻煩的一層：**2002 年那筆日本 CD 的廠牌名是「Ad Lib Records」（TOCJ-9428）**——那是東芝的復刻副廠，**與 1957 年那張的原廠 Ad Lib Records 同名不同公司**，不得據此改判原盤廠牌。
+**店面與紙本比對一律連 `LNJ-80118`／`ST-84116` 與 Stereo 標示。**
+
+⚠ **`Chick Corea` 沒有收攏成 `Circle`**：《Circulus》的演出團體是 Circle（Corea／Braxton／Holland／Altschul），維基 infobox 甚至掛了兩條 chronology，
+但盤面與 MB credit 都是 `Chick Corea`，池中 `Chick Corea` 7 列——照第 307 條取池中形，**Braxton／Holland／Altschul 寫進正文**。
+
+## 第 785 條（同批）：**盤名三則改判**
+
+1. **`Silver 'n Percussion`（小寫 n ＋ ASCII 直引號 ＋ 兩側空格），不是列舉檔的 `Silver'n Percussion`**——**執行 c-144 a 第 755 條第 2 點的指示**。
+   依據：**MB 的 release 題本來就有空格**（RG 題才是無空格的那個）、池中 seed 第五部叫 `Silver 'n Strings Play the Music of the Spheres`、
+   c-144 a 已把前兩部統一成 `Silver 'n Brass`／`Silver 'n Wood`——第 666 條「同一套的卡必須同一種命名法」。
+   **五部曲至此：Brass(1975，c-144 a)／Wood(1976，c-144 a)／Voices(1977，BN-LA708-G，尚未有人收)／Percussion(1978，本組)／Strings(1979，池中 seed)。**
+   ⚠ **給後批：Phase 3《Silver 'n Voices》BN-LA708-G 是這套唯一的缺口**，jazzdisco 記 1977（錄音 1976-09-24 ＋ overdub 1976-10-19／22）。
+2. **`Tone Tantrum`（單數），推翻 jazzdisco 的「Tone Tantrums」**。
+   MB／Discogs 八筆／維基／**Cash Box 1977-08-27 p26 評介標頭「TONE TANTRUM - Gene Harris - Blue Note LA760」**四邊都是單數。
+   與 c-144 a 第 755 條第 3 點的「Silver 'N **Woods**」同形——**第 470 條：jazzdisco 在 BN-LA 段年份欄準、盤名欄照樣多加 s。**
+3. **`Robby Krieger & Friends`（不是盤面的 `Robbie Krieger & Friends`）**，掛名 `Robby Krieger`。
+   ⚠ **這一則與前兩則方向相反：這次是「推翻盤面」。** 盤面／Discogs 四筆／維基條目名／jazzdisco 都作 `Robbie`，
+   MB 的 artist 實體、MB RG 題、**Cash Box 1977-06-04 p23 評介標頭「ROBBY KRIEGER & FRIENDS - Robby Krieger」**、1991 Capitol CD 都作 `Robby`；
+   **MB `artist:"Robbie Krieger"` 反查 0 筆。**
+   判準兩條：(a) **第 45 條「取現行流通名」**——他四十年來的通行寫法是 Robby；
+   (b) **第 666 條「同一張卡的掛名與盤名必須同一種拼法」**——掛 `Robby Krieger` 卻題《Robbie Krieger & Friends》，卡面自相矛盾。
+   **盤面拼法進 queryAlias 與 risk。可逆。**
+
+## 第 786 條（同批）：**年份——22 張改判 0，但推翻了三個單一來源；「日本首發盤」是這條線的新年份形狀**
+
+**22 張的 `year` 全部維持 enum 值。** 三處單一來源被推翻：
+
+| 盤 | 被推翻的來源 | 取值依據 |
+|---|---|---|
+| 《The Jackie McLean Quintet》LNJ-80118 | **jazzdisco 的 Toshiba EMI 頁記 1976** | MB frd 1977 ＋ **Discogs 日本原壓兩筆（正盤與宣傳盤）皆 1977** ＋ 列舉檔 1977，三比一取 **1977** |
+| 《Silver 'n Percussion》BN-LA853-H | **維基 infobox 記 1977** | 錄音 1977-11-12→11-30（**十一月底才疊完人聲**）＋ MB frd 1978 ＋ jazzdisco 1978 ＋ Discogs 六筆全 1978 ＋ **Cash Box 1978-03-11 p16「Horace Silver's latest Blue Note」** ＋ **Billboard 1978-04-08 p80 價目表**，五比一取 **1978** |
+| 《Fever》 | **jazzdisco 的目錄號尾碼 BN-LA628-H** | MB／Discogs 十三筆／Billboard 三次都是 `BN-LA628-**G**`；**Discogs `catno=BN-LA628-H` 反查 0 筆**（第 787 條） |
+
+⚠ **新形狀：「日本首發、美國隔年才發」**。
+本組兩張 Jackie McLean 的卡都是**日本先發、美國後發**——LNJ-80118（1977 JP）與 GXF 3022（1978 JP），
+美國要到 1978 年才以 BN-LA483-J2 一次發完。**`year` 取的是全世界的首次商業發行年（第 694 條），所以這兩張的年份由日本盤決定，不由美國盤決定。**
+→ **給後批：1976–81 的東芝 EMI LNJ-80100／King GXF-3000 兩個系列裡有大量「日本首發的 Blue Note 庫存盤」**，
+**jazzdisco 的 toshiba-king 頁只列了 GXF-3023 以後**（本組的 GXF 3022 那一條**它沒有**），**年份要靠 Discogs ＋ 維基補**。
+
+⚠ **第 753 條的「同一次配號分兩年出」在本組拉到三年**：
+**BN-LA473-J2《Live Messengers》的號屬於 1975 年 2 月一次配完的那一批**（同段的 LA474-H2《The Trio Sides》jazzdisco 記 1976、LA483-J2《Hipnosis》記 1978），
+**本張要到 1978 年 10–11 月才上市。號段相鄰、年份差三年，兩邊都對。**
+→ **第 753 條的判準在 BN-LA 高號段仍然成立且更強：以「哪一波檔期」定年，不要以「哪一段號」定年。**
+
+## 第 787 條（同批）：**資料庫與紙本的錯誤清單（22 筆裡查出 26 處）**
+
+**MB**（欄位錯與漏建）：
+- **漏建美國原盤 1 張**：**《Silver 'n Percussion》MB 只建了加拿大壓（10ffb6c1，country `CA`，catno 登成「BN-LA **853**-H」中間多空格）**，Discogs 的三筆美國原壓一筆都沒有
+  → **列舉檔的 `country: "CA"`／`countries: ["CA"]` 因此把一張美國盤標成加拿大盤**（第 664 條第 4 種形狀的最極端一例）。
+- **目錄號整個空著 1 筆**：《Hipnosis》的 61338441（1978 JP）**label-info 只有「Blue Note」、catalog-number 空**——列舉檔的 `catno: []` 就是照抄這個空值（Discogs 補為 GXF 3022、維基作 ST-83022）。
+- **欄位缺漏 7 處**：《Living Inside Your Love》b4e85e1d **date 欄空**；《Fever》dcf3b7e1 **date 空＋catno 空**；《Robby Krieger & Friends》aede5100 **country／catno／barcode 三空**；
+  《Tone Tantrum》70caf52e **barcode 空**；《Can't Hide Love》2a7133d5 **label-info 整個空**；《Heritage》d2cba1ce **catno 空**；《Silver 'n Percussion》1634ad55 **date／country／label-info 全空**；《Chant》902a449a **country 空、catno 登成「[none]」**。
+- **曲名錯 6 處**：**《Silver 'n Percussion》六軌中三軌把 Ascension 拼成「Ascencion」**；《Live Messengers》〈**Weet Dot**〉應為 Wee-Dot、〈**Its** Only a Paper Moon〉缺撇號；
+  《Heritage》〈Acuphuncture〉／〈Dr. Mganga〉與 jazzdisco 的 Acupuncture／Dr. Manga 打架；《Living Inside Your Love》〈Captain **Caribė**〉帶重音符而盤面無。
+- **漏建各國同年壓片 8 張以上**：Shaw（加／祕／澳）、Klugh 三張（菲／新馬港／加／英 UAG 20009／南非）、Heritage（加＋2025 全球再壓）、Fever（加／新／JP GP-3126）、
+  Phantazia（加＋1993 CD＋TOCJ-50519）、In a Special Way（加＋兩張日本 CD）、Knucklebean（1978 JP GP 3137）、Circulus（**日本 GXF 3026／3027 與法國兩號的拆片版全缺**）。
+
+**jazzdisco**（第 470 條：BN-LA 段年份欄準，其他欄照樣錯）：
+- **年份錯 1 處**：LNJ-80118 記 1976（實際 1977，第 786 條）。**BN-LA 段 20 張的年份欄一張都沒錯。**
+- **目錄號錯 1 處**：BN-LA628-**H**（實際 -G）。
+- **盤名錯 2 處**：「Tone Tantrum**s**」（多 s）；「The View From Inside」（**少一個 the**）。
+- **曲名錯 4 處**：「Keep On **Waling**」（少 k，應為 Walking）、「**Wicky** Tobacky」（MB 作 Wacky）、「Spare Change**s**」（多 s）、「Keep Your **Eyes** On The Sparrow」（複數）。
+- **整條缺 1 處**：**Toshiba／King 頁沒有 GXF-3022**（該頁從 GXF-3023 起列），《Hipnosis》的日本號查不到。
+
+**紙本**（第 509c 條，本組五處）：
+- **Billboard 1976-07-10／07-24 的爵士榜把《Just a Matter of Time》印成「IT'S JUST A MATTER OF TIME」**（多 It's，連續兩週同一錯）。
+- Billboard 1976-12-11 把《In a Special Way》印成「In A Special **Wry**」、目錄號印成「**891A6346**」。
+- Billboard 1976-08-21 把《Waiting》印成「**Wai ti n'**」。
+- **Billboard 1978-04-08 把 BN-LA853-H 印成「BNLA**B**53H」**（8→B）；1977-11-26 把 BN-LA736-H 印成「BN LA736**.0**」、1977-07-30 印成「**ON**-LA7368」。
+- Cash Box 1976-11-06 把 BN-LA628-G 印成「**BNLA 828Q**」、1976-10-30 印成「BNLA 667**.**G」。
+
+**維基**：
+- **年份錯 1 處**：《Silver 'n Percussion》infobox 1977（第 786 條）。
+- **姊妹頁互相打架 1 處**：《Waiting》條目的 `next_year` 把《The View From the Inside》標成 1976，**該頁自己的 infobox 寫 1977**。
+- **目錄號錯 1 處**：《Hipnosis》infobox 作「BN-LA 483-**H2**」，jazzdisco 與 Discogs 都是 **-J2**。
+- ⚠ **`Phantazia` 條目講的是 Marvel 漫畫《X-Force》#6（1992）的變種人 Eileen Harsaw**，不是本盤；`Phantazia (album)` 與 `Phantazia (Noel Pointer album)` 兩個條目名都不存在
+  ——**c-144 a 第 754 條 `Waters (band)` 那種陷阱的第二例，寫作層不得引用。**
+
+**Discogs**：
+- **format 欄錯 1 處**：把 BN-LA483-J2《Hipnosis》標成 `Compilation`，**被 Billboard 1978-11-11 p98 的原文推翻**（第 782 條）。
+- **同名混流 1 處**：`release_title=The Jackie McLean Quintet` 回的 19 筆裡十七筆是 1957 年 Ad Lib／Jubilee 那張（第 784 條）。
+
+## 第 788 條（同批）：**店面與封面觀察（第 254 條，只寫觀察不寫結論）**
+
+- **CAA 17/22 有圖，5 張 RG 層 HTTP 404、零圖**（皆 `redirect: 'follow'` ＋重試三次確認是真 404，第 589a 條第 2 點）：
+  **Gene Harris《In a Special Way》、Willie Bobo《Tomorrow Is Here》、Noel Pointer《Phantazia》、Jackie McLean《The Jackie McLean Quintet》、Jackie McLean《Hipnosis》**
+  ——前三張建議取 Discogs 美國原壓條目；後兩張只能取日本原壓條目，**且《Hipnosis》的日、美兩版封面完全不同**（維基載明日版「with a different cover」）。
+- **17 張有圖的裡面，12 張的來源是美國原壓**；**5 張不是**：
+  《Silver 'n Percussion》→1978 **加拿大**壓（10ffb6c1）、《Circulus》→1978 **瑞士**壓（e3e46d82）、
+  《Can't Hide Love》→2012 日本 CD、《Still Can't Say Enough》→2013 日本 CD、《Tone Tantrum》→2013 日本 CD。
+- **Apple us `search` 一種查法 22 張命中 17 張**。沒命中的五張：**`John Lee & Gerry Brown —《Still Can't Say Enough》`**（與 c-144 a 的《Mango Sunrise》同樣零命中）、
+  **`Robby Krieger —《Robby Krieger & Friends》`**（回的八筆全是 The Doors）、**`Jackie McLean —《The Jackie McLean Quintet》`**（回他盤）、
+  **`Art Blakey —《Live Messengers》`**（回《Moanin'》等）、**`Jackie McLean —《Hipnosis》`**（零命中）。
+- **命中的 17 張裡 15 張軌數等於原盤**；兩張對不上的都是 **Earl Klugh**：《Earl Klugh》回 11 軌（＝2005 歐版 CD，原盤 8 軌）、《Living Inside Your Love》回 8 軌（＝2005 歐版，原盤 7 軌）。
+- ⚠ **`releaseDate` 只有 2 張與紙本對得上**（第 484 條在本組再中一次）：
+  **《Circulus》1978-11-01**（與 Billboard 1978-11-11 的報導同月）與 **《The View From the Inside》1977-11-01**（同季）。
+  其餘 15 張是年頭佔位或偏移，**三張特別值得記**：
+  **《Silver 'n Percussion》1977-01-01（＝維基那個被推翻的錯年，第 786 條）**、
+  **《Tone Tantrum》1977-12-13（比 MB 的 1977-05 與紙本的 8 月評介都晚半年）**、
+  **《Tomorrow Is Here》1977-10-06（比 Billboard 1977-03-12 的評介晚七個月）**。
+- **`genres` 分派**：`['jazz','soul']` **12 張**（人聲盤、crossover、disco 向、jazz-funk）、`['jazz']` **9 張**（樂團盤、庫存首發、自由即興、hard bop）、
+  **`['jazz','rock']` 1 張**（Robby Krieger《Robby Krieger & Friends》，見第 790 條）。
+
+## 第 789 條（同批，**紙本入庫**）：**本層自抓 Billboard 1977-01→1979-12 共 153 期、Cash Box 同區間 157 期，兩刊至此 1955→1979 底無缺口**
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `batch-progress/enum/billboard-bn-1977-1979-ocr.txt`（33.2 MB） | Billboard | **1977-01-08 → 1979-12-22，157 期中 153 期的命中頁** | c-144 b 掃；缺 **1977-01-01／1977-12-31／1978-12-30／1979-12-29** 四期 |
+| `batch-progress/enum/cashbox-bn-1977-1979-ocr.txt`（24.4 MB） | Cash Box | **1977-01-01 → 1979-12-29，157 期全中的命中頁** | c-144 b 掃；**一期不缺** |
+
+- **檔名形狀（第 756 條的續測，結論一致）**：**1977–1979 三年，Billboard 一律 `Billboard%20YYYY-MM-DD.pdf`、Cash Box 一律 `CB-YYYY-MM-DD.pdf`。**
+  抓取器仍對 Billboard 試三種、對 Cash Box 試兩種，**實測 313 期沒有一期落到備援形狀上**——**第 701 條的「同一年裡換形狀」亂象確定只發生在 1971–75。**
+- **Billboard 缺的四期全部落在年末／年初那一週，而且是完整的規律**：**1977-01-01、1977-12-31、1978-12-30、1979-12-29**——**三年裡每一個「該年最後一個週六」與「1977 年第一個週六」全缺，其餘 153 期一期不漏**。三種檔名形狀各試兩輪皆 404、**逐期重試過**。
+  → **判為 Billboard 的年終雙數合刊那一週不出單期**（與第 756 條的 1976-07-03 是不同成因：那次是兩刊同週停刊，這次只有 Billboard）。**Cash Box 那四週全部有出刊、157 期一期不缺**——**缺期規律得這麼乾淨，本身就是「不是檔名問題」的證據**（第 614／701 條的反面用法）。
+- 關鍵字＝本組的 **20 個目錄號**（BN-LA473／483／596／606／615／628／634／635／636／664／667／701／710／711／736／737／760／789／853／882，含 `BN-LA`／`BNLA`／`BN LA`／`BN-EA`／`BN-LT` 五種前綴通配 ＋ `LT-991`／`LT 991`／`LT991` ＋ `LNJ-80118`）
+  ＋**24 個盤名**＋**15 個人名**＋廠牌詞 `blue note`。**「blue note」是通配關鍵字，1977-01→1979-12 任何提到 Blue Note 的頁都在裡面**——查別的 Blue Note 碟大致夠用，**查 1980 以後或非 Blue Note 的碟仍須重抓。**
+- 每期以 `######## BB-YYYY-MM-DD pages=N`／`######## CB-YYYY-MM-DD pages=N` 分隔，頁內以 `===== PAGE n =====` 分隔，
+  **頁內文字已先 `' '.join(text.split())` 把換行摺成空白**（第 636 條），可直接跑跨行片語的正則。
+- 兩刊 1977–79 的 PDF 都有文字層，`pymupdf` 直接讀；**四路並行跑 313 期約 12 分鐘**（比 1975–76 段快，因為期均頁數少）。
+
+## 第 790 條（同批）：**`genres` 破例第二次：Robby Krieger《Robby Krieger & Friends》用 `['jazz','rock']`——並把第 763 條的界線收窄**
+
+c-144 a 第 763 條為 Alphonse Mouzon《Mind Transplant》破例一次，並聲明「不擴張，c-144 b 的 Robby Krieger 形狀更極端，請 b 組自行判」。**本層判 `['jazz','rock']`。**
+
+理由四條：
+1. **維基 infobox 的 genre 欄直接寫 `Jazz rock`**（第 763 條那張是靠 Cash Box 的評介文字才判出來的，本張連資料庫欄位都已經這樣寫）。
+2. **Cash Box 1977-06-04 p23 的評介**：「The same Robby Krieger that played such a stellar guitar for the Doors is in the forefront of **a very hot little jazz/rock combo** which makes up for the lack of vocal statement with a mostly melodic but sometimes progressive fusion」。
+3. **領班本身是搖滾樂團吉他手**（The Doors），池中 `The Doors` 7 列全在 `rock` 底下；八軌全是電吉他主導的器樂。
+4. 三條判準都過：**有先例**（第 763 條）、**可逆**（改的是卡單值）、**卡住整條線**（不決定就得塞進 `['jazz']`，與內容不符）。
+
+⚠ **界線收窄（本條的重點）**：第 763 條與本條加起來，這條線上破例的只有兩張，**兩張的共同條件是「領班或核心編制本身來自搖滾，而且有同期紙本用 rock 這個字評它」**。
+**不符合這兩個條件的一律不破例**——本組的 Ronnie Laws《Fever》、Earl Klugh 三張、Noel Pointer《Phantazia》、Gene Harris 兩張雖然都是 crossover，**全部維持 `['jazz','soul']`**。
+
+## 第 791 條（同批，**訂正 c-144 a 第 757 條第 4 點**）：**1976–79 的 Blue Note 確實以 R&B 榜為主戰場——a 組那條結論只適用 1974–76**
+
+c-144 a 第 757 條第 4 點的結論是「1974–76 的 Blue Note 雖然全面做 R&B／disco 的音樂，銷量仍然主要反映在爵士榜上，21 張裡只有 2 張進 Soul 榜」，並要 b 組重測。**本層重測結果：a 組那條在 1976 年年中就開始失效，1977 年起完全翻轉。**
+
+| 盤 | Billboard Soul LPs | Best Selling Jazz LP's | Top LPs & Tape（主榜） |
+|---|---|---|---|
+| Ronnie Laws《Fever》（1976） | **✓ 1976-08-14 #32、08-28 #32、09-11** | — | **✓ 1976-06-12 新進、07-17 #48、08-14 #49、08-28 #66、09-11 #67** |
+| Marlena Shaw《Just a Matter of Time》（1976） | — | ✓ 1976-06-26 #25 新進、07-10、07-24 | — |
+| Earl Klugh《Earl Klugh》（1976） | — | ✓ Cash Box 爵士榜 1976-07-10 #31→10-02（13 週） | — |
+| Earl Klugh《Living Inside Your Love》（1976–77） | — | ✓ Cash Box 1976-10-30 新進→1977-04-02 | — |
+| Bobby Hutcherson《Waiting》（1976） | — | ✓ 1976-10-09 | — |
+| **Noel Pointer《Phantazia》（1977）** | **✓ 1977-07-02** | **✓ 07-09 #12→12-24 #28（29 週）** | **✓ 07-02 #175、07-23 #144** |
+| **Earl Klugh《Finger Paintings》（1977）** | **✓ 1977-09-10 #47** | **✓ 07-23→12-24 #25** | **✓ 1977-07-23（前百名）** |
+| **Gene Harris《Tone Tantrum》（1977）** | **✓ Cash Box R&B LP 1977-09-24 #48** | **✗ 沒進** | — |
+| Robby Krieger《Robby Krieger & Friends》（1977） | — | ✓ Cash Box 1977-07-30 #35→08-06 #33 | — |
+
+→ **判準（本條）**：**1976 年年中起的 Blue Note，查榜一律 Soul LPs 先、Jazz LP's 次、主榜也要看**（第 710 條第 2 點的「先查 Soul 榜」在這一段完全成立）。
+**a 組第 757 條第 4 點的結論不得往 1977 以後套用；本條也不得往 1974–75 回推。**
+⚠ **《Tone Tantrum》是本組唯一「只進 R&B 榜、爵士榜零」的一張**——與 c-144 a 的《Spoonful》同形狀但成因相反（那張是藍調歌手，這張是 disco 編制的爵士鋼琴家）。
+
+## 第 792 條（同批）：**四組 `chk-prop` 抓不到的同名／同碟關係——第 611 條盲區在本批的四種樣本**
+
+1. **《The Jackie McLean Quintet》↔《Hipnosis》**：**同一套美國雙唱片 BN-LA483-J2 的兩半**，日本拆成兩張單片先後發行（LNJ-80118／1977、GXF 3022／1978）。
+   兩張零軌重複，`chk-prop` 折出兩個不同鍵、跨組與跨批全部回 0。**兩卡 risk 已互指。**
+2. **《The Jackie McLean Quintet》↔ 1957 年 Ad Lib／Jubilee 1064 的同名盤**：**同掛名、同盤名、差二十年、完全不同的錄音**（第 784 條）。
+   池中目前 0 列，但 **Ad Lib／Jubilee 線一旦開，這兩張會在 `chk-prop` 裡撞成同一鍵**——**後批收那張時必須在盤名上加消歧**（建議照 Discogs 的 `Jubilee 1064` 或錄音年）。
+3. **《Chant》↔ 池中 seed 的 `The Monks of Santo Domingo de Silos —《Chant》`（1994）**：同盤名、不同掛名，`chk-prop` 不亮燈。
+4. **《Fever》↔ 池中五張同名碟**（Kylie Minogue 2001、Tenor Saw 1985、Con Funk Shun 1983、Little Willie John 1956、Roy Ayers 1979）：**盤名 `Fever` 池中已有 5 列**，掛名各異。
+   ⚠ **Roy Ayers 那張（1979）與本張同樣是爵士／放克脈絡**，店面查詢最容易撞。
+   另《Waiting》池中有 Suzukiski 同名盤（1995）、《In a Special Way》有 DeBarge 同名盤（1983）。
+→ **四組都已寫進各卡 risk：店面查詢與上架比對一律連掛名帶 catno。**
+
+## 第 793 條（同批）：**Dave Grusin／Larry Rosen 這條線是本批五張卡的交叉點——寫作層的互指清單**
+
+**Dave Grusin 與 Larry Rosen 1976–77 在 Blue Note 做的新人線，本批佔五張，而且五張互相客席**：
+
+| 卡 | 他們的角色 | 錄音 |
+|---|---|---|
+| `Earl Klugh —《Earl Klugh》`（BN-LA596-G，1976） | 製作＋Grusin 彈鍵盤 | 1976-01-12／14，Kendun Recorders, Burbank |
+| `Earl Klugh —《Living Inside Your Love》`（BN-LA667-G，1976） | 同上；**Noel Pointer 在弦樂組裡拉小提琴** | 1976-07-26／27，Electric Lady, NYC |
+| `Noel Pointer —《Phantazia》`（BN-LA736-H，1977） | Grusin 製作、編曲兼鍵盤；**Earl Klugh 彈原聲吉他** | 1977-01-10→12，Camp Colomby Studio, New City, NY |
+| `Earl Klugh —《Finger Paintings》`（BN-LA737-H，1977） | 同上；Tom Scott 編銅管 | 1977-02-15，Kendun Recorders |
+| （旁證）`Gene Harris —《In a Special Way》` | **不是 Grusin 線**，是 Jerry Peters 線 | 1976-03／04，Total Experience Studios, LA |
+
+**節奏組高度重疊**（Steve Gadd、Ralph MacDonald、Francisco Centeno、Will Lee、Harvey Mason），
+**但四張的錄音日、錄音室、編曲規模完全不同**——**正文不得把四張寫成同一個企劃，也不得把 Klugh 與 Pointer 寫成對方樂團的成員**（兩人是互相客席）。
+⚠ 另一條平行線：**Jerry Peters ＋ Total Experience Studios ＋ Waters 三兄妹**串起 c-144 a 的《Nexus》、本組的《In a Special Way》與《Tone Tantrum》三張
+——**這是 c-144 a 第 762 條那張 Waters 互指表的第五、第六格。**
+
+## 第 794 條（同批）：**Bobby Hutcherson 的舊金山三部曲——三張的班底斷點**
+
+本組收的三張是同一支樂團的連續紀錄，**但每一張都換了人，正文不得互抄**：
+
+| 卡 | 錄音 | 鋼琴 | 客席／額外 |
+|---|---|---|---|
+| 《Waiting》BN-LA615-G（1976） | 1976-02-24／25／26，Different Fur Studios | **George Cables** | Kenneth Nash 康加；〈Prime Thought〉加兩支長笛 |
+| 《The View From the Inside》BN-LA710-G（1977） | 1976-08-04／05／06，Wally Heider Recording | **Larry Nash** | **無打擊、無客席**（三張裡最精簡） |
+| 《Knucklebean》BN-LA789-H（1977） | 1977-03-01／02，Wally Heider Recording | **George Cables**（回歸） | **Freddie Hubbard 小號 ＋ Hadley Caliman 次中音與長笛** |
+
+三張的固定班底是 Emanuel Boyd（薩克斯）、James Leary III（貝斯）、Eddie Marshall（鼓），製作全部是 **Dale Oehler**。
+⚠ **《Knucklebean》的六軌領班一首都沒寫**（出自 Cables／Marshall／Leary），**〈Little B's Poem〉是他 1965 年《Components》那首曲子的重訪**
+——池中 seed 的《Components》與《Montara》都有這首曲子的別的版本，**正文必須寫明是哪一次錄音**。
+⚠ 往前接：c-144 a 的《Cirrus》（1974）、《Linger Lane》（1975）與 c-143 b 的《Live at Montreux》（1974）、池中 seed 的《Montara》（1975）。
+
+## 第 795 條（同批）：**交件數字、中間檔、給後批**
+
+- **交件 22 張、16 位；退 0**（第 781 條）；**年份改判 0**（但推翻單一來源 3 處，第 786 條）；`label` 改他廠 0；
+  **新掛名 4 位、群組收攏 2 張**（第 784 條）；**盤名改判 3 張**（第 785 條）；現場 1（`secondary-types` 有 Live ✓）、庫存／延遲發行 5（第 782／783 條）；
+  **合輯 0**（`-J2` 兩筆與日本單片一筆全部覆核為庫存首發、LT 系列一筆同樣，**沒有一筆進 §5.6**）；CAA 17/22、店面 17/22。
+- `chk-prop b`：**22 張 16 位、標記 0**；跨批 108 批 4,448 張撞卡 0、同 rgMbid 不同掛名 0。
+- `why` 均長 **578**／`risk` **1,004**／`mbNote` **947** 字元（`c141/prop-b` 為 556／933／784）。
+- 中間檔 `scratchpad/c144b/`：`mb-fetch.mjs`＋`caa-retry.mjs`＋`mb.json`（22 個 RG 的 rg／rel／caa 回傳）、`mbsum.mjs`／`mbsum.txt`、
+  `poolscan.mjs`／`poolscan.txt`（實掃 25,366 列＝seed 16,450 ＋ 182 個卡單檔 ＋ 各批 prop）、
+  `web/catalog-bn-la-series.txt`／`catalog-lt-series.txt`／`catalog-toshiba-king-series.txt`（jazzdisco 三個系列全頁）、
+  `dg.mjs`／`dg2.mjs`＋`discogs.json`／`discogs2.json`（26 個 catno ＋ 7 組 artist+title 反查）、
+  `wiki.mjs`＋`wiki.json`（41 查 33 中的原始 wikitext）、`art.mjs`＋`artists.json`（第 307 條同名反查）、
+  `apple.mjs`＋`apple.json`、`np.py`＋`np/`（四支 shard 的抓取器，含 `.done` 續跑檔）、`srch.py`（命中頁檢索工具）、
+  `b1.mjs`～`b4.mjs`（卡單產生，**每 6／6／6／4 張寫回磁碟一次**）。
+- **給後批（1979 後與 LT 系列、以及日本首發那一段）**：
+  1. **LT 系列整段照第 783 條**：「Back to Blue Note」企劃＝never-before-released masters，`year` 取首次商業發行年、`releaseType` Album。
+     **1979 年那十張的名單已列在第 783 條**，年份可直接用 1979。
+  2. **第 782 條的判準要連標題一起排除**：`-H2`／`-J2`／LT 看到「reissue」字樣不代表是舊料重編，**讀逐張文案**。
+  3. **`Silver 'n Voices`（BN-LA708-G，1977）是 Silver 五部曲唯一的缺口**，命名法照第 785 條第 1 點。
+  4. **日本首發盤**：東芝 EMI LNJ-80100 與 King GXF-3000 兩個系列有大量 Blue Note 庫存盤的日本首發，
+     **jazzdisco 的 toshiba-king 頁只從 GXF-3023 起列**（本組的 GXF 3022 它就沒有），年份要靠 Discogs ＋ 維基補（第 786 條）。
+  5. **紙本 1977–79 已入庫**（第 789 條），關鍵字含通配 `blue note`；**1980 年起還沒有人掃。**
+  6. **查榜順序照第 791 條**：Soul LPs 先、Jazz LP's 次、主榜也要看——**不要照搬 c-144 a 第 757 條第 4 點。**
+  7. **本組已預約的互指**：`Jackie McLean —《The Jackie McLean Quintet》`↔`《Hipnosis》`（同一套美版 2LP 的兩半）；
+     `Earl Klugh` 三張 ↔ `Noel Pointer —《Phantazia》`（Grusin 線互相客席，第 793 條）；
+     `Bobby Hutcherson` 三張互指（第 794 條）；`Gene Harris —《In a Special Way》`↔`《Tone Tantrum》`↔ c-144 a 的《Nexus》；
+     `Horace Silver —《Silver 'n Percussion》`↔ c-144 a 的《Silver 'n Brass》《Silver 'n Wood》↔ 池中 seed《Silver 'n Strings...》；
+     `Chick Corea —《Circulus》`↔ 池中 seed《A.R.C.》（同一支三重奏，早九個月）↔ c-147 b《Early Circle》；
+     `John Lee & Gerry Brown —《Still Can't Say Enough》`↔ c-144 a 的《Mango Sunrise》；
+     `Carmen McRae —《Can't Hide Love》`↔ c-144 a 的《I Am Music》。
