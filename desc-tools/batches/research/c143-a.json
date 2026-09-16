@@ -1,0 +1,434 @@
+[
+ {
+  "key": "desc2:Lou Donaldson|Pretty Things",
+  "artist": "Lou Donaldson",
+  "album": "Pretty Things",
+  "facts": [
+   {
+    "f": "release-group 7555484e 的欄位：title「Pretty Things」、artist-credit「Lou Donaldson」（Person db147d97）、first-release-date **1970**、primary-type Album、secondary-types 空。轄下四筆：**原盤 75f7319b 是 1970 US Blue Note BST 84359、12 吋 6 軌**（無 barcode）；1993 US LP B1 89794（0b207088）；1993 XE CD CDP 0777 7 89794 2 5（198f006a）；1993 CA CDP 0777 7 89794 2 18（89d6527b）。**MB 原盤的軌序是〈Tennessee Waltz〉〈Curtis' Song〉〈Sassie Lassie〉〈Just for a Thrill〉〈Pot Belly〉〈Love〉，與 jazzdisco 錄音順序不同**——〈Love〉在盤上排最後一軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7555484e-8351-3fca-9037-3fd137c8377c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84359 分兩場錄。**第一場 Van Gelder Studio, Englewood Cliffs, NJ，1970 年 1 月 9 日**，Blue Mitchell（小號）、Lou Donaldson（**電中音薩克斯風、人聲**）、Lonnie Smith（管風琴）、Melvin Sparks（吉他）、Jimmy Lewis（電貝斯）、Idris Muhammad（鼓），母帶號 5760，**只留下〈Tennessee Waltz〉一軌**。**第二場同一錄音室 1970 年 6 月 12 日**，管風琴換 Leon Spencer Jr.、吉他換 Ted Dunbar、**沒有貝斯手**，母帶號 6520／6521／6523／6524／6525 錄完其餘五軌。jazzdisco 的年份欄記 **1970**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard「Best Selling Jazz LP's」榜，1971 年 4 月 24 日第 20 名、在榜第 1 週**（榜上印「20 — PRETTY THINGS 1 ／ Lou Donaldson, Blue Note BST 84359」，第 58x 條的「在榜第幾週」欄位）。**一張 1970 年的碟不可能隔年 4 月才以第 1 週進榜**——MB frd 1970 與 jazzdisco 1970 在這條證據前都不成立。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-04-24.pdf"
+   },
+   {
+    "f": "榜位續跑八週：1971-05-01 #20、**05-08 #18（第 3 週）**、05-15 #15（4）、05-22 #14（5）、**05-29 #11（第 6 週，最高名次）**、06-05 #18（7）、06-12 #17（8）。**最高第 11 名**是 Donaldson 這條管風琴放克線最好的榜績。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-05-29.pdf"
+   },
+   {
+    "f": "**Cash Box 1971 年 7 月 3 日的 Liberty／UA 目錄表**，BLUE NOTE BST 欄列「Electric Byrd 84349／Drives 84251／That Healin' Feeling 84352／Wayfaring Stranger 84354／Worth Waiting For 84355／Love Call 84356／**Pretty Things 84359**／Alive 84360／San Francisco 84362／Best of Herbie Hancock 89907」——1971 年年中本盤仍在架上目錄裡，且與同批《Love Call》同列。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1971/Cash-Box-1971-07-03.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84359` 回 9 筆，年份只有 1971、1973、1993 三種，**沒有任何一筆標 1970**（1973 那筆是 United Artists 期的再壓）。這與第 550／570 條「Discogs 原壓群整群抄盤面 ℗© 年」相反——**本張的 Discogs 群反而比 MB 與 jazzdisco 正確**。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084359"
+   },
+   {
+    "f": "店面觀察：Apple us 條目 1442949297，6 軌＝原盤軌數，**releaseDate 標 1970-01-01、℗ 2014 Blue Note Records**——是 placeholder 形的年份，與 MB 同錯，不可當年份來源。",
+    "src": "https://itunes.apple.com/lookup?id=1442949297&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "兩場錄音只共用三個人：1970 年 1 月那場留下的只有 Donaldson 自己開口唱的〈Tennessee Waltz〉，其餘五軌是半年後換掉管風琴手與吉他手、連貝斯都不要了才錄的",
+   "盤面與資料庫都寫 1970，Billboard 的爵士榜卻要到 1971 年 4 月才讓它以「在榜第 1 週」進榜——連上八週、最高第 11 名"
+  ],
+  "sound": "6 軌，管風琴＋吉他＋放克鼓的靈魂爵士。Donaldson 全程吹電中音薩克斯風，音色帶電、線條短促。開場〈Tennessee Waltz〉是他自己唱的慢板，Blue Mitchell 的小號在旁邊接腔；其餘五軌是 Leon Spencer Jr. 的管風琴與 Ted Dunbar 的吉他撐起的中板放克，〈Pot Belly〉八分多鐘最長。無鋼琴、第二場無貝斯手。",
+  "keyTracks": [
+   "Tennessee Waltz",
+   "Pot Belly",
+   "Sassie Lassie"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1970→1971 改判：成立，本層再加一層。** MB frd 1970、MB 原盤 release 75f7319b 登 1970、jazzdisco 4300 頁記 1970——**三個都錯**。**最硬的一條是 Billboard 爵士榜**（第 58x 條）：1971-04-24 以第 20 名、**在榜第 1 週**進榜，之後連續八週到 06-12，最高第 11 名（05-29）。**旁證兩條**：Discogs 九筆沒有一筆標 1970；Cash Box 1971-07-03 的 Blue Note 目錄表把 84359 列在架上。⚠ **本層在 Billboard 1970 全年 52 期與 Cash Box 1970 全年裡都查不到本盤的評介或新片欄**——1970 說連一則同期紙本都沒有。**上市取 1971 年春（榜位回推約 4 月）**。錄音 1970-01-09 與 06-12 只寫正文，**正文不得寫成「1970 年的專輯」**。⚠ 第 526 條：84359 的號比同批《Cosmos》84370 小，但兩張都在 1971 年上市。",
+  "notes": "**覆核策展層：rgMbid／原盤 75f7319b／BST 84359／6 軌／掛名 `Lou Donaldson`／年份 1971 全部成立，本張未擋下。** 本層補上 Billboard 1971-04-24→06-12 的八週榜位逐週數字、Cash Box 1971-07-03 目錄表原文，以及 jazzdisco 的完整兩場編制與母帶號。｜⚠ **兩場班底不同，正文不得把八個人寫成同一團**：Lonnie Smith／Melvin Sparks／Jimmy Lewis 只在 1970-01-09 那場，Leon Spencer Jr.／Ted Dunbar 只在 06-12 那場，**Blue Mitchell 與 Idris Muhammad 兩場都在**；第二場沒有貝斯手。｜⚠ **軌序**：MB 原盤把〈Love〉排在第 6 軌，jazzdisco 依母帶號列成第 3 軌——**正文不得寫「第幾軌」**。｜**製作人**：維基無本盤條目，MB 與 jazzdisco 都沒登製作人，**本層查無**——**正文不得寫製作人**（同批《Cosmos》的維基寫 George Butler，**不得互抄到本盤**）。｜**封面設計者查無。**｜⚠ **Apple 1442949297 標 1970-01-01 是 placeholder**，不得當年份來源。｜**跨卡**：Lou Donaldson 在本組有兩張（本盤與《Cosmos》），**兩張的班底只有 Idris Muhammad 與 Leon Spencer Jr. 重疊，Melvin Sparks 在本盤只吹第一場、在《Cosmos》整張都在**——兩卡正文不得互抄。｜非選輯：單一藝人的原創專輯（兩場次）。"
+ },
+ {
+  "key": "desc2:Buddy Rich|Keep the Customer Satisfied",
+  "artist": "Buddy Rich",
+  "album": "Keep the Customer Satisfied",
+  "facts": [
+   {
+    "f": "release-group b1ff9ad6 的欄位：title「Keep the Customer Satisfied」、artist-credit「The Buddy Rich Big Band」（**Group 67808f96**）、first-release-date **1970-07**、primary-type Album、**secondary-types [\"Live\"]**。轄下兩筆：**原盤 0596436f 是 1970-07 US Liberty LST-11006、12 吋 7 軌**（無 barcode）；**Blue Note 的關聯始於 2001-01-23 US CD a1a16edb（13 軌，無 catno）**。原 LP 七軌：〈Keep the Customer Satisfied〉〈Long Day's Journey〉〈Midnight Cowboy Medley: Midnight Cowboy / He Quit Me / Everybody's Talkin' / Tears and Joys〉（11 分 12 秒）〈Celebration〉〈Groovin' Hard〉〈The Juicer Is Wild〉〈Winning the West〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b1ff9ad6-ad0e-432e-bb39-da40dac53bd9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Billboard 1970 年 7 月 18 日的 Liberty/UA 整版檔期廣告**：「Liberty/UA, Inc. presents a solid Jazz program for July & August」，逐號印出 **LST-11005、LST-11006** 與 Blue Note 的 BST-84335、84341（The Three Sounds《Soul Symphony》）、84342、84343、84344，版面下緣寫「Liberty/UA, Inc. — a subsidiary of Transamerica Corporation」。**Pacific Jazz、Liberty 與 Blue Note 在這一版上是同一家公司的同一批檔期。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-07-18.pdf"
+   },
+   {
+    "f": "**Billboard 1970 年 8 月 8 日的 New Album Releases**：「BUDDY RICH BIG BAND — Keep the Customer Satisified (Liberty) LST-11006」（**原文盤名少一個 f，是紙本誤植，第 509c 條**）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-08-08.pdf"
+   },
+   {
+    "f": "**Billboard「Best Selling Jazz LP's」榜**：1970-09-05 以第 18 名、**在榜第 1 週**進榜；09-12 #18（第 2 週）、09-19 #16（3）、10-03 #9（5）、10-10 #15（6）、10-17 #15（7）、10-24 #19（8）——**連續八週在榜、最高第 9 名（1970-10-03）**，比策展層當時掌握的三週更長。同一張榜上還有 Lou Donaldson《Everything I Play Is Funky》BST 84337 與 Brother Jack McDuff《Moon Rappin'》BST 84334。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-10-03.pdf"
+   },
+   {
+    "f": "維基的專頁 infobox：**錄音 1970 年 3 月 30 日至 4 月 1 日、地點 Tropicana Resort & Casino, Las Vegas**（現場），廠牌 Liberty Records，**製作人 Richard Bock**（Pacific Jazz 的創辦人），長度 43:36；製作群另列 **Ron Wolin — 封面設計、Ron Waller — 攝影、Reice Hamel — 錄音師、Paul Wertheimer — 內頁文字**。**這補上了 MB 與 jazzdisco 都沒有的錄音地點與日期。**",
+    "src": "https://en.wikipedia.org/wiki/Keep_the_Customer_Satisfied_(album)"
+   },
+   {
+    "f": "Discogs `database/search?catno=LST-11006` 回 7 筆，**年份全部是 1970**（美國原壓、Pacific Jazz Series、加拿大 London Records Canada 壓片、義大利 LST 11006、英國 Liberty LBS 83334 等），無異說。",
+    "src": "https://api.discogs.com/database/search?catno=LST-11006"
+   }
+  ],
+  "hookCandidates": [
+   "盤名那首〈Keep the Customer Satisfied〉是 Simon & Garfunkel《Bridge Over Troubled Water》裡的曲子——1970 年的大樂團要活下去，就得把當紅流行曲改成重銅管編制",
+   "Blue Note 只是 2001 年才把它收進自家目錄；1970 年 7 月它掛的是 Liberty 的 Pacific Jazz Series 號，跟 Blue Note 那批新片印在 Billboard 的同一版廣告上"
+  ],
+  "sound": "7 軌現場大樂團。重銅管、快速換段，Rich 的鼓幾乎全程在推。〈Keep the Customer Satisfied〉與〈Groovin' Hard〉是快板競技；〈Midnight Cowboy Medley〉把四首串成十一分鐘的慢板組曲，是全盤最長也最抒情的一段；〈Winning the West〉收尾。串流與 CAA 掛的是 2001 年那張 13 軌 CD，**比原盤多六軌**。",
+  "keyTracks": [
+   "Keep the Customer Satisfied",
+   "Groovin' Hard",
+   "Midnight Cowboy Medley: Midnight Cowboy / He Quit Me / Everybody's Talkin' / Tears and Joys"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1970 成立，四條同期紙本＋Discogs 七筆全部同邊。** MB frd 1970-07＝Discogs 七筆原壓 1970；紙本三條互相獨立：**Billboard 1970-07-18 的 Liberty/UA 檔期整版廣告**（逐號印出 LST-11006，第 612 條「廠牌檔期廣告最硬」）、**1970-08-08 的 New Album Releases**、**爵士榜 1970-09-05 以第 1 週進榜、連八週、最高第 9 名（10-03）**。**上市取 1970 年 7 月**（廠牌自己的檔期月）。⚠ jazzdisco 不收 Liberty 的號，本盤沒有 jazzdisco 欄位可比。⚠ **錄音日期本層已補到**：維基作 1970-03-30～04-01、Tropicana Resort & Casino, Las Vegas——**這推翻了策展層的「正文不得寫出錄音地點或演出日期」**，但**只有維基一個來源**，正文若要寫請標成「維基所記」或改寫成保守說法。",
+  "notes": "**覆核策展層：rgMbid／原盤 0596436f／Liberty LST-11006／7 軌／掛名 `Buddy Rich`／年份 1970 全部成立，本張未擋下。** 本層補上爵士榜完整八週（策展層只抓到三週、最高名次也從 #16 修正為 **#9**）、Billboard 1970-07-18 廣告的版面原文，以及維基的錄音地點／日期／製作群。｜⚠ **他廠原盤、依第 313 條判準表 (b) 收、`label` 寫 Liberty**：出版當時 Liberty、Pacific Jazz 與 Blue Note 同屬 Liberty/UA, Inc.（Transamerica 旗下），**Billboard 1970-07-18 那一版廣告就是證據**。與 c-141 a 第 572 條、c-141 b 第 582 條、c-142 a 第 602 條同形。｜⚠ **`live: true`**：MB RG 的 secondary-types 有 Live，維基給出場地。**正文寫「1970 年春在拉斯維加斯 Tropicana 錄的現場」時，請註明這是維基單一來源。**｜⚠ **紙本誤植**（第 509c 條）：Billboard 1970-08-08 把盤名印成「Satisified」。｜⚠ **掛名收攏**（第 603／665 條）：MB artist-credit 是群組 `Buddy Rich Big Band`，2001 年 CD 作 `The Buddy Rich Big Band`，**卡上收攏成 `Buddy Rich`**，正文可寫「Buddy Rich 的大樂團」。｜**製作人 Richard Bock**（Pacific Jazz 創辦人）——**與本組其餘二十張的 Wolff／Butler 完全不同，絕不得互抄。**｜**封面設計 Ron Wolin、攝影 Ron Waller**（維基；本組唯一有封面設計者姓名的一張）。｜**串流／CAA 是 2001 年 13 軌 CD 形，軌數與原盤 7 軌對不上。**｜非選輯：單一場檔期的現場專輯。"
+ },
+ {
+  "key": "desc2:Candido|Beautiful",
+  "artist": "Candido",
+  "album": "Beautiful",
+  "facts": [
+   {
+    "f": "release-group cb56e01a 的欄位：title「Beautiful」、artist-credit「Candido」（Person 1f92d1d9，**不帶重音符號**）、first-release-date 1971、primary-type Album、secondary-types 空。轄下兩筆：**原盤 5a14c432 是 1971 US Blue Note BST 84357、12 吋 10 軌**（無 barcode）；2003 XE CD 0b9516e9（7243 5 80730 2 7，10 軌）。原 LP 十軌：〈I'm on My Way〉〈Tic Tac Toe〉〈Hey, Western Union Man〉〈Serenade to a Savage〉〈New World in the Morning〉〈Beautiful〉〈I Shouldn't Believe〉〈Money Man〉〈Ghana Spice (Part One)〉〈Ghana Spice (Part Two)〉——**每軌只有三到五分鐘，是本組軌數最多、單軌最短的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cb56e01a-711d-4517-80cd-596dcc3d0032&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84357 分兩場錄於 **A&R Studios, NYC**。**1970 年 10 月 20 日**：Bernie Glow、Pat Russo（小號），Alan Raph（長號、低音長號），Joe Grimm（高音、上低音薩克斯風），Frank Anderson（鋼琴、管風琴），David Spinozza（吉他），**Jerry Jemmott（電貝斯）**，Herbie Lovelle（鼓），Candido（康加、邦哥），**Joe Cain（編曲）**，母帶號 6910–6913。**1970 年 10 月 27 日**：同班底但**電貝斯換成 Richard Davis**、Joe Grimm 加吹長笛，母帶號 6914–6917 與 6954／6955。jazzdisco 年份欄記 1971。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1971 年 2 月 27 日的四星評介欄（JAZZ ****）**：「CANDIDO — Beautiful. Blue Note BST 84357 (S)」，**同一格裡還有「CHICK COREA — The Song of Singing. Blue Note BST 34253」**（後者的號是 OCR／紙本誤讀，實為 BST 84353，第 509c 條）——**本組兩張碟在同一期同一欄拿到四星。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-02-27.pdf"
+   },
+   {
+    "f": "**Billboard 1971 年 5 月 22 日的新片價目表（New LP/Tape Releases）**：「CANDIDO — Beautiful (LP) Blue Note BST 84357 $5.98」，與 Duke Ellington《New Orleans Suite》、Karen Dalton《In My Own Time》同列。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-05-22.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84357` 回 6 筆，年份 1971（美國原壓群）與 1973 各有，**無 1970 說**；另有 1990 年代的歐版 B1-84357（jazzdisco 亦記此再發）。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084357"
+   }
+  ],
+  "hookCandidates": [
+   "兩場錄音的差別只在貝斯手：10 月 20 日是 Jerry Jemmott 的電貝斯，一週後換成 Richard Davis——其餘九個人、連編曲的 Joe Cain 都沒動",
+   "十首曲子、每首三到五分鐘，Candido 的康加與邦哥架在銅管小組前面，是 Blue Note 那幾年少見的「單曲長度」專輯"
+  ],
+  "sound": "10 軌，康加為主軸的拉丁靈魂爵士。小號兩把、長號一把、薩克斯風一把的小型銅管組，Frank Anderson 的鋼琴與管風琴、David Spinozza 的吉他鋪底，Joe Cain 編曲。曲子短促（多在三到五分鐘），〈Hey, Western Union Man〉與〈New World in the Morning〉是流行曲改編，〈Ghana Spice〉拆成兩部分收尾。",
+  "keyTracks": [
+   "I'm on My Way",
+   "Beautiful",
+   "Ghana Spice (Part One)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立，紙本兩則獨立＋Discogs 同邊。** MB frd 1971＝jazzdisco 1971＝Discogs 美國原壓群 1971；**Billboard 1971-02-27 的四星評介**與 **1971-05-22 的新片價目表**是不同週、不同欄位的兩則（第 431 條的正面例子）。錄音 1970-10-20／10-27，**錄後約四個月上市**。**上市取 1971 年初**（評介週 2 月底回推）。⚠ **無同型偏移**：本張的 MB／jazzdisco／Discogs／紙本四邊全部指 1971。",
+  "notes": "**覆核策展層：rgMbid／原盤 5a14c432／BST 84357／10 軌／掛名 `Candido`／年份 1971 全部成立，本張未擋下。** 本層補上 jazzdisco 完整兩場編制（含兩位貝斯手的分場）與 Billboard 1971-05-22 價目表。｜⚠ **第 307 條預警照收**：`Candido` 本名 **Cándido Camero（古巴康加鼓手，1921–2020）**，卡上字串不帶重音符號；**Apple 搜「Candido Beautiful」會跳出巴西歌手 Adriana Candido**，寫作層查生平務必認 Camero。｜⚠ **紙本誤植**（第 509c 條）：同一格四星欄把 Chick Corea 的 BST 84353 印成「BST 34253」——**本組兩張的評介同格，正文不得因此把兩張寫成同一件事**（兩張的錄音室、班底、樂風完全不同）。｜**製作人查無**：維基無本盤條目，MB 與 jazzdisco 都沒登；**正文不得寫製作人**。**封面設計者查無。**｜**跨卡**：Candido 本人在本組另一張卡上是側人——**Elvin Jones《Coalition》BST 84361 的康加手就是他**（jazzdisco 與 Cash Box 1971-03-13 都列），兩卡可互指。｜**編曲 Joe Cain** 只在本盤，不得寫到別卡。｜非選輯：單一藝人的原創專輯（兩場次）。"
+ },
+ {
+  "key": "desc2:Richard \"Groove\" Holmes|Comin' On Home",
+  "artist": "Richard \"Groove\" Holmes",
+  "album": "Comin' On Home",
+  "facts": [
+   {
+    "f": "release-group 7f973c83 的欄位：title「Comin' On Home」、artist-credit「Richard “Groove” Holmes」（Person 726cfe69，**MB 實體名含 U+201C／U+201D 印刷體引號**）、first-release-date 1971、primary-type Album、secondary-types 空。轄下兩筆：**原盤 a23ca238 是 1971 US 12 吋 7 軌**，但 **label-info 登成「Blue Note ／ PR 7514」**；2002 CD 5a12de75（Blue Note 7243 5 38701 2 6，barcode 724353870126，7 軌）。七軌：〈Groovin' for Mr. G〉〈Theme from “Love Story”〉〈Mr. Clean〉〈Down Home Funk〉〈Don't Mess With Me〉〈Wave〉〈This Here〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7f973c83-4d76-3a69-81d6-8f9fa2be9af3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**MB 的 catno 串錯廠牌（第 664 條第 1 點）已覆核成立**：Discogs `database/search?catno=BST 84372` 回 8 筆，**全部是本盤**（1971 美國原壓群、1972、1975 各有）；**PR 7514 則是 Prestige 的號**。真正的目錄號是 **BST 84372**。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084372"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84372 錄於 **A&R Studios, NYC，1971 年 5 月 19 日**。**〈Theme From Love Story〉那一軌的編制**是 Richard Groove Holmes（管風琴）、Gerald Hubbard（吉他）、**Chuck Rainey（電貝斯）**、Darryl Washington（鼓）、Ray Armando（康加）；**其餘六軌的編制不同**——電貝斯換成 **Jerry Jemmott**、**加進 Weldon Irvine 的電鋼琴**，另有 James Davis 打鈴鼓、沙鈴、牛鈴與人聲，Ray Armando 只在其中五軌。jazzdisco 年份欄記 1971。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1971 年 11 月 13 日的評介欄**：「RICHARD GROOVE HOLMES — Comin' On Home. Blue Note BST 84372 ／ In a short time Richard (Groove) Holmes has increasingly become one of the masters of the organ and **this George Butler production** will help strengthen his status as an exciting jazz organist.」——**紙本直接點名製作人是 George Butler**，這是本盤製作人的唯一硬來源（維基無本盤條目）。同一頁還評了本組的 Bobby Hutcherson《Head On》與 Lou Donaldson《Cosmos》。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-11-13.pdf"
+   },
+   {
+    "f": "**同一期 Billboard 1971-11-13 的新片價目表**：「HOLMES, RICHARD (GRROVE) Comin' On Home (LP) Blue Note BST84372」（原文把 GROOVE 拼成 GRROVE），與 HUTCHERSON, BOBBY《Head On》BST84376、HARRIS, GENE《3 Sounds》BST84378、DONALDSON, LOU《Cosmos》BST84370 同列——**本組五張在同一期一次列完（第 669 條第 3 點）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-11-13.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "同一天在 A&R Studios 錄的七首，卻不是同一個團：〈Theme From Love Story〉用的是 Chuck Rainey 的電貝斯，其餘六首換成 Jerry Jemmott，還多了 Weldon Irvine 的電鋼琴",
+   "Billboard 1971 年 11 月 13 日那一期的評介欄直接寫出「這張 George Butler 的製作」——那是 Blue Note 交棒給新 A&R 之後，樂評開始用製作人來認廠牌的時候"
+  ],
+  "sound": "7 軌，管風琴放克。Holmes 的 Hammond 在前，吉他、電貝斯、鼓與康加撐節奏，沒有管樂。〈Groovin' for Mr. G〉開場，〈Theme from “Love Story”〉與〈Mr. Clean〉是當年的流行／廣告曲改編，〈Don't Mess With Me〉近七分鐘最長，〈Wave〉是 Jobim 的巴薩諾瓦，〈This Here〉收尾。",
+  "keyTracks": [
+   "Groovin' for Mr. G",
+   "Don't Mess With Me",
+   "This Here"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立，紙本兩欄同期＋Discogs 八筆同邊。** MB frd 1971＝jazzdisco 1971＝Discogs 八筆（1971 美國原壓群）；**Billboard 1971-11-13 同一期的評介欄與新片價目表**兩處都印 BST 84372。⚠ **依第 431／509c 條，同一期的兩個欄位不算兩個獨立來源**——但 MB／jazzdisco／Discogs 三邊都同邊，年份沒有爭議。**上市取 1971 年 11 月**。⚠ **MB 的 catno 錯（第 664 條第 1 點）與年份無關**，已覆核：a23ca238 的 label-info 登「Blue Note／PR 7514」，PR 7514 是 Prestige 的號，本盤真正的號是 BST 84372。",
+  "notes": "**覆核策展層：rgMbid／原盤 a23ca238／7 軌／掛名 `Richard \"Groove\" Holmes`／年份 1971 全部成立，本張未擋下；catno 訂正為 BST 84372 亦成立。** 本層補上 jazzdisco 的分軌編制與 Billboard 1971-11-13 的評介原文。｜⚠ **掛名摺標點**（第 473／506／566／665 條）：MB 實體名是 `Richard “Groove” Holmes`（印刷體引號），卡上摺成 ASCII 直引號，與池中三張既有寫法一致。｜⚠ **一場錄音、兩種編制**：〈Theme From Love Story〉的貝斯是 Chuck Rainey，其餘六軌是 Jerry Jemmott 並多出 Weldon Irvine 的電鋼琴——**正文不得把七個人寫成同一團**。｜**製作人 George Butler**，來源是 **Billboard 1971-11-13 的評介本文**（不是資料庫欄位）——本組少數有紙本背書的製作人。**封面設計者查無。**｜⚠ **紙本誤植**（第 509c 條）：同期價目表把 GROOVE 印成「GRROVE」。｜**跨卡**：Ray Armando 同時在本盤、《Cosmos》《Set Us Free》《Flute-In》打康加；Jerry Jemmott 也在本組《Beautiful》與《Cosmos》——**這些是同一批紐約錄音室樂手，不是同一個團，正文不得寫成同一個班底**（第 669 條第 3 點的警告）。｜非選輯：單一場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Bobby Hutcherson|Head On",
+  "artist": "Bobby Hutcherson",
+  "album": "Head On",
+  "facts": [
+   {
+    "f": "release-group 333db4f6 的欄位：title「Head On」、artist-credit「Bobby Hutcherson」（Person edbe5d7f）、first-release-date 1971、primary-type Album、secondary-types 空。轄下四筆：**原盤 2185d781 是 1971 US Blue Note BST-84376、12 吋 4 軌**（無 barcode）；2008-05-13 US CD 591b99c0（50999 5 17464 2 1，**7 軌**）；2008 US CD d692d5bc（同號＋BMG Direct D 173385）；2014-02-26 JP SHM-CD 0255af9e（TYCJ-81099，7 軌）。**原 LP 只有四軌**：〈At the Source: Ashes & Rust / Eucalyptus / Obsidian〉（8 分 18 秒，**三個樂章併成一軌**）、〈Many Thousands Gone〉（11 分 22 秒）、〈Mtume〉（8 分 24 秒）、〈Clockwork of the Spirits〉（7 分 17 秒）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=333db4f6-073b-49a9-962f-f443b508f0c6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84376 錄於 **Poppi Recording Studios, Los Angeles, CA**，分兩天。**1971 年 7 月 1 日**是**大編制**：Oscar Brashear（小號、粗管短號），George Bohanon、Louis Spears（長號），**Willie Ruff（法國號）**，Fred Jackson（短笛），Harold Land（次中音薩克斯風、長笛），Delbert Hill／Charles Owens／Herman Riley／Ernie Watts（簧管群），Hutcherson（顫音琴、馬林巴），**Todd Cochran（鋼琴、編曲）**，William Henderson（電鋼琴），Reggie Johnson 或 James Leary III（貝斯），**Leon “Ndugu” Chancler／Nesbert “Stix” Hooper／Woody Theus 三位鼓手**，Warren Bryant（康加、邦哥），Donald Smith（人聲），母帶號 8060／8063／8065。**7 月 3 日那場人減到十人**，去掉簧管群、法國號、電鋼琴與人聲，母帶號 8061／8062／8064。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "維基的專頁 infobox 與製作群：錄音 1971 年 7 月 1–3 日、**Poppi Recording Studios, Los Angeles**，**製作人 George Butler**，原 LP 長度 35:16、CD 78:31；**Rick Pekkoven 錄音、Rudy Van Gelder 重混（re-mix）、Colman Andrews 內頁文字**；發行寫「Late October/early November 1971」並引 Billboard 1971-11-13。**2008 年 CD 多出的三軌〈Togo Land〉〈Jonathan〉〈Hey Harold〉是同場次的 bonus track。**",
+    "src": "https://en.wikipedia.org/wiki/Head_On_(Bobby_Hutcherson_album)"
+   },
+   {
+    "f": "**Billboard 1971 年 11 月 13 日的評介欄**：「JAZZ ／ BOBBY HUTCHERSON — Head On. Blue Note BST 84376 ／ This is a highly esoteric jazz product. The musical explorations are quite adept. On “Mtume,” the effect of sax and junglish percussion threatens at one and the same time to become boring while there is an exciting undercurrent.」；**同一期的新片價目表**另列「HUTCHERSON, BOBBY Head On (LP) Blue Note BST84376」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-11-13.pdf"
+   },
+   {
+    "f": "**Billboard 1971 年 10 月 16 日的錄音室動態欄**（同一則裡還有 Bobbi Humphrey 與 Ronnie Foster）：「Other action for Butler includes ... **A new Bobby Hutcherson and Harold Land LP at Poppi in Los Angeles.**」——**紙本獨立坐實了錄音室與 Butler 的參與**，而且把本盤寫成「Hutcherson 與 Harold Land 的合作盤」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-10-16.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84376` 回 8 筆，年份 1971（美國原壓群）與 1973 各有，**無 1970 或 1972 說**。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084376"
+   }
+  ],
+  "hookCandidates": [
+   "7 月 1 日那場擠了十八個人進洛杉磯的 Poppi 錄音室——三個鼓手、四把簧管、一支法國號；兩天後再錄剩下三軌時，人已經減到十個",
+   "原盤只有四軌，其中〈At the Source〉是三個樂章壓成一整面的一軌；後來的 CD 把它拆開編號，於是同一張碟在店面看起來有七軌"
+  ],
+  "sound": "4 軌（原 LP），大編制的前衛靈魂爵士。Hutcherson 的顫音琴與馬林巴在前，Todd Cochran 編曲並彈鋼琴，Harold Land 的次中音與長笛是第二聲部；7 月 1 日那場有三把鼓、四把簧管與一支法國號堆出的厚層次。〈Many Thousands Gone〉十一分多鐘最長，〈Mtume〉是薩克斯風與打擊樂的長段對峙。",
+  "keyTracks": [
+   "At the Source: Ashes & Rust / Eucalyptus / Obsidian",
+   "Many Thousands Gone",
+   "Mtume"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立，紙本三則（其中兩則獨立）＋Discogs 同邊。** MB frd 1971＝jazzdisco 1971＝Discogs 美國原壓群 1971＝維基「Late October/early November 1971」；**Billboard 1971-10-16 的錄音室動態（獨立一則）**＋**1971-11-13 的評介與價目表**。**上市取 1971 年 10 月底／11 月初**（維基與評介週一致）。錄音 1971-07-01／07-03。⚠ **無同型偏移。**",
+  "notes": "**覆核策展層：rgMbid／原盤 2185d781／BST 84376／4 軌／掛名 `Bobby Hutcherson`／年份 1971 全部成立，本張未擋下。** 本層補上 Billboard 1971-10-16 的錄音室動態、jazzdisco 的兩場人數落差，以及維基的製作群。｜⚠ **軌數（第 670 條）**：**原盤 4 軌、店面與 CAA 掛的 CD 是 7 軌**；**多出來的三軌〈Togo Land〉〈Jonathan〉〈Hey Harold〉是 2008 年 CD 的同場次 bonus track**（維基），**不是把〈At the Source〉拆開編號**——策展層那句寫反了，以維基為準。｜**製作人 George Butler**（維基＋Billboard 1971-10-16 雙背書）。**錄音師 Rick Pekkoven、重混 Rudy Van Gelder、內頁 Colman Andrews。封面設計者查無。**｜⚠ **貝斯手歸屬不確定**：jazzdisco 寫「Reggie Johnson **or** James Leary III」，維基兩個都列——**正文不得指名貝斯手**。｜⚠ **三位鼓手**（Chancler／Hooper／Theus）是同場疊錄，正文寫「三把鼓」可以，不得寫成輪流。｜**跨卡**：Oscar Brashear 同時吹在本盤與本組《Maestro》（BN-LA007-F），**兩場相隔一年多、在不同錄音室，正文不得互抄**。｜非選輯：單一藝人的原創專輯（兩場次）。"
+ },
+ {
+  "key": "desc2:Reuben Wilson|Set Us Free",
+  "artist": "Reuben Wilson",
+  "album": "Set Us Free",
+  "facts": [
+   {
+    "f": "release-group 004d8b52 的欄位：title「Set Us Free」、artist-credit「Reuben Wilson」（Person 4528b43b）、first-release-date 1971、primary-type Album、secondary-types 空。轄下兩筆：**原盤 b83b9de0 是 1971 US Blue Note BST-84377、12 吋 7 軌**（無 barcode）；2008-09-01 US CD 1b8f4588（50999 5 22378 2 9，barcode 5099952237829，7 軌）。七軌：〈Set Us Free〉〈We're in Love〉〈Sho-Nuff Mellow〉〈Mr. Big Stuff〉〈Right on With This Mess〉〈Mercy Mercy Me (The Ecology)〉〈Tom's Thumb〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=004d8b52-ab10-3f09-b5cd-98b4f52c7276&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84377 **一場錄完**，Van Gelder Studio, Englewood Cliffs, NJ，**1971 年 7 月 23 日**。編制：Jerome Richardson（次中音、高音薩克斯風），**Eugene Bianco（豎琴）**，Reuben Wilson（管風琴），David Spinozza（吉他、**電西塔琴**），Richard Davis（貝斯），Jimmy Johnson（鼓），Ray Armando（康加），Gordon “Specs” Powell（打擊樂），**Mildred Brown／Rosalyn Brown／Naomi Thomas（人聲，第 3、6、7 軌）**，Jimmy Briggs（人聲編寫），**Wade Marcus（編曲）**；母帶號 8166–8172。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1971 年 11 月 13 日的四星欄（JAZZ ****）**：「REUBEN WILSON — Set Us Free. Blue Note BST 84377.」，同一格還有「GENE HARRIS — The 3 Sounds. Blue Note BST 84378 (United Artists)」——**本組兩張在同一格拿四星**。同期的新片價目表另列本盤。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-11-13.pdf"
+   },
+   {
+    "f": "**Billboard 1971 年 10 月 16 日的錄音室動態欄**記 George Butler 在 Van Gelder 的工作：「There he was finishing up tracks on two new Blue Note artists, Bobbi Humphrey ... and Ronnie Foster ... **He was also finishing up a Ruben Wilson LP and Lou Donaldson's latest.**」（原文把 Reuben 拼成 Ruben）——**這則把本盤、《Flute-In》與《Cosmos》釘在 1971 年秋同一段後製期，且點名 Butler。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-10-16.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84377` 回 5 筆，**年份全部 1971**，無異說。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084377"
+   }
+  ],
+  "hookCandidates": [
+   "管風琴放克盤裡放一把豎琴：Eugene Bianco 的豎琴、David Spinozza 的電西塔琴，加上三位女聲，Wade Marcus 把 1971 年的靈魂樂編法整套搬進 Van Gelder 錄音室",
+   "七首裡有三首是當年的暢銷曲——Jean Knight 的〈Mr. Big Stuff〉、Marvin Gaye 的〈Mercy Mercy Me〉——這正是 Blue Note 那幾年賣唱片的方式"
+  ],
+  "sound": "7 軌，管風琴靈魂爵士。Wilson 的 Hammond 在中心，Jerome Richardson 的薩克斯風是唯一管樂，David Spinozza 的吉他與電西塔琴、Eugene Bianco 的豎琴、Ray Armando 與 Gordon “Specs” Powell 的雙層打擊樂鋪出厚底，Wade Marcus 編曲。三軌有女聲合音。〈Tom's Thumb〉五分半最長，〈Mr. Big Stuff〉與〈Mercy Mercy Me〉是流行曲改編。",
+  "keyTracks": [
+   "Set Us Free",
+   "Mr. Big Stuff",
+   "Tom's Thumb"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立，紙本兩則獨立＋Discogs 五筆全 1971。** MB frd 1971＝jazzdisco 1971＝Discogs 五筆；**Billboard 1971-10-16 的錄音室動態**（後製中）與 **1971-11-13 的四星欄＋價目表**（已上市），**兩則不同週、不同欄位**。**上市取 1971 年 11 月**。錄音 1971-07-23 一場錄完。⚠ **無同型偏移。**",
+  "notes": "**覆核策展層：rgMbid／原盤 b83b9de0／BST 84377／7 軌／掛名 `Reuben Wilson`／年份 1971 全部成立，本張未擋下。** 本層補上 Billboard 1971-10-16 的錄音室動態（把本盤與《Flute-In》《Cosmos》釘在同一段後製期）與 jazzdisco 的完整編制。｜**製作人**：維基無本盤條目，MB 與 jazzdisco 都沒登；**Billboard 1971-10-16 只寫 Butler「在收尾一張 Reuben Wilson 的 LP」**——**正文可寫成「George Butler 手上那一批」，不得直接寫成掛名製作人**。**封面設計者查無。**｜⚠ **紙本誤植**（第 509c 條）：1971-10-16 把 Reuben 拼成「Ruben」。｜⚠ **Reuben Wilson 在本組有兩張**（本盤與《A Groovy Situation》BST 84365）：**《A Groovy Situation》是四人小編制、1970 年 9 月錄；本盤是十一人大編制、1971 年 7 月錄，兩張沒有任何一位側人重疊**——兩卡正文絕不得互抄。｜**跨卡**：〈Set Us Free〉這個曲名在本組出現兩次——**Bobbi Humphrey《Flute-In》也有一軌叫〈Set Us Free〉**（母帶號 8485，1971-09-30／10-01 錄），**不是同一個錄音**，寫作層務必分清。｜**人名邊界**：Jerome Richardson／Richard Davis／David Spinozza／Ray Armando／Wade Marcus 都有 jazzdisco 背書。｜非選輯：單一場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Chick Corea|The Song of Singing",
+  "artist": "Chick Corea",
+  "album": "The Song of Singing",
+  "facts": [
+   {
+    "f": "release-group 847dcc5e 的欄位：title「The Song of Singing」、artist-credit「Chick Corea」（Person 8446fcca）、first-release-date 1971、primary-type Album、secondary-types 空。轄下三筆：**原盤 ecdd0510 是 1971 US Blue Note BST 84353、12 吋 6 軌**（無 barcode）；1989 US CD 682edde8（CDP 7 84353 2，**9 軌**）；1998-02-25 JP CD cb7fe5f5（TOCJ-4353，6 軌）。原 LP 六軌：〈Toy Room〉〈Ballad I〉〈Rhymes〉〈Flesh〉〈Ballad III〉〈Nefertiti〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=847dcc5e-88c9-41a4-9480-b83e3165335e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84353 分兩天錄於 **A&R Studios, NYC**。**1970 年 4 月 7 日**：Chick Corea（鋼琴）、**Dave Holland（貝斯）**、**Barry Altschul（鼓）**，母帶號 6160／6157／6162，錄〈Flesh〉〈Toy Room〉〈Nefertiti〉。**4 月 8 日**：同三人但**三個人都兼打擊樂**，母帶號 6159／6158／6161，錄〈Rhymes〉〈Ballad I〉〈Ballad III〉。**全盤只有三個人。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Cash Box 1971 年 2 月 27 日的評介**：「THE SONG OF SINGING — Chick Corea — Blue Note BST 84353 ／ Chick Corea has distinguished himself recently as a member of Miles Davis' group and now he solidifies his position as one of the most innovative piano players around with an exceptional album of his own. Well, almost his own; with him and contributing greatly are **Dave Holland on bass fiddle and Barry Altschul on drums**. The three wrote a couple of the selections and there is also “Nefertitti”…」——**同期紙本明白把他定位成「剛從 Miles Davis 樂團出來」。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1971/Cash-Box-1971-02-27.pdf"
+   },
+   {
+    "f": "**Billboard 1971 年 2 月 27 日的四星欄（JAZZ ****）**（與 Cash Box 同一週）：「CANDIDO — Beautiful. Blue Note BST 84357 (S) ／ CHICK COREA — The Song of Singing. Blue Note **BST 34253** (S)」——**號碼是紙本誤植，實為 BST 84353**（第 509c 條）；靠盤名與同格的 84357 交叉定位。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-02-27.pdf"
+   },
+   {
+    "f": "維基的專頁 infobox：發行 **1971 年 2 月 2 日**（引 daveholland.com 的作品頁）、錄音 1970 年 4 月 7–8 日、錄音室 A & R Recording, New York City、長度 35:43、**製作人 Sonny Lester**、廠牌欄同時列 BLP 4353 與 BST 84353。",
+    "src": "https://en.wikipedia.org/wiki/The_Song_of_Singing"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84353` 回 34 筆（1971 美國原壓群一路到 2020 年代的再發），**沒有 1970 說**；筆數多是因為這張後來被反覆再版。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084353"
+   }
+  ],
+  "hookCandidates": [
+   "Corea、Dave Holland、Barry Altschul 三個人，兩天，六首曲子——第二天連鋼琴、貝斯、鼓三個人都兼打擊樂",
+   "同期的 Cash Box 把他介紹成「Miles Davis 樂團的那位鋼琴手」：這張正是他離開電化的 Miles 之後，回到原音三重奏的自由即興"
+  ],
+  "sound": "6 軌，原音鋼琴三重奏的自由即興。Corea 的鋼琴、Dave Holland 的貝斯、Barry Altschul 的鼓，沒有管樂、沒有電子樂器。〈Toy Room〉〈Rhymes〉是集體即興的長段，〈Ballad I〉〈Ballad III〉安靜；結尾的〈Nefertiti〉是 Wayne Shorter 寫給 Miles Davis 的曲子，七分多鐘最長。第二天那場三人都兼打擊樂。",
+  "keyTracks": [
+   "Toy Room",
+   "Nefertiti",
+   "Rhymes"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立，紙本兩則（同週）＋維基＋Discogs 同邊。** MB frd 1971＝jazzdisco 1971＝Discogs 原壓群 1971＝維基「1971-02-02」；**Cash Box 1971-02-27 的評介**與 **Billboard 1971-02-27 的四星欄**是同一週的兩個落點，依第 431 條**不算兩個完全獨立的來源**，但兩刊的文字完全不同（Cash Box 是整段評論、Billboard 是四星列表）。**上市取 1971 年 2 月**。錄音 1970-04-07／04-08，**錄後約十個月才出**。⚠ **無同型偏移**：四邊都指 1971。⚠ 紙本誤植：Billboard 把號印成「BST 34253」（第 509c 條）。",
+  "notes": "**覆核策展層：rgMbid／原盤 ecdd0510／BST 84353／6 軌／掛名 `Chick Corea`／年份 1971 全部成立，本張未擋下。** 本層補上 Cash Box 1971-02-27 的完整評論原文與維基的 1971-02-02 發行日。｜**製作人 Sonny Lester**（維基）——**與本組多數的 Wolff／Butler 不同**，且與本組《Black Pearl》同為 Lester，兩卡可互指但不得混寫。**封面設計者查無。**｜⚠ **1989 年 CD 是 9 軌**（多出同場次未發行段落），**原盤 6 軌**；店面若掛 CD 形，軌數對不上（第 670 條）。｜⚠ **〈Nefertiti〉是 Wayne Shorter 的曲子**，Miles Davis 1967 年同名專輯的主題曲——**正文寫它時不得寫成 Corea 自己的作品**。｜**跨卡**：Dave Holland 與 Barry Altschul 這個三重奏在本組只此一張；**Chick Corea 另以打擊樂手身分出現在 BN-LA014-G（Wayne Shorter《Moto Grosso Feio》），那張不在本批 slice。**｜⚠ 同格四星的《Beautiful》是完全不同的碟（十人拉丁編制），**正文不得因同格而互寫**。｜非選輯：單一藝人的原創專輯（兩場次）。"
+ },
+ {
+  "key": "desc2:Ornette Coleman|Love Call",
+  "artist": "Ornette Coleman",
+  "album": "Love Call",
+  "facts": [
+   {
+    "f": "release-group 4173bc01 的欄位：title「Love Call」、artist-credit「Ornette Coleman」（Person 169c0d1b）、first-release-date 1971、primary-type Album、secondary-types 空。轄下三筆：**原盤 7a01db57 是 1971 US Blue Note BST-84356、12 吋 4 軌**（無 barcode）；1990 US CD d39df5bc（CDP 7 84356 2，7 軌）；2014-02-26 JP CD de7dbc53（TYCJ-81095，7 軌）。原 LP 四軌：〈Airborne〉（10 分 25 秒）〈Love Call〉〈Open to the Public〉〈Check Out Time〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4173bc01-68cf-3fc8-9e6f-c7674eabd13e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84356 分兩場錄於 **A&R Studios, NYC**，**時間卻是 1968 年**——**1968 年 4 月 29 日**（母帶號 3001 tk.12〈Open To The Public〉、3004 tk.18〈Airborne〉）與 **1968 年 5 月 7 日**（3018 tk.4〈Love Call〉、tk.13〈Check Out Time〉）。編制固定四人：**Ornette Coleman（中音薩克斯風、小提琴）、Dewey Redman（次中音薩克斯風）、Jimmy Garrison（貝斯）、Elvin Jones（鼓）**。jazzdisco 年份欄記 1971。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard「Best Selling Jazz LP's」榜 1971 年 5 月 8 日**：「20 — LOVE CALL 1 ／ Ornette Coleman, Blue Note BST 84356」，**在榜第 1 週**；隔週 05-15 仍在第 20 名（第 2 週）。同一張榜上還有本組的《Pretty Things》（該週第 18 名、第 3 週）。**有進榜，依第 58x 條年份最硬。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-05-08.pdf"
+   },
+   {
+    "f": "**Cash Box 1971 年 7 月 3 日的 Liberty／UA 目錄表**，BLUE NOTE BST 欄把「**Love Call 84356**」與「Pretty Things 84359」「That Healin' Feeling 84352」「Wayfaring Stranger 84354」「Worth Waiting For 84355」「Alive 84360」「San Francisco 84362」列在同一份架上目錄。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1971/Cash-Box-1971-07-03.pdf"
+   },
+   {
+    "f": "維基的專頁 infobox：發行 **1971 年 2 月**（引 Billboard 1971-03-06）、錄音 1968 年 4 月 29 日與 5 月 7 日、**製作人 Francis Wolff**、原 LP 長度 39:58、CD 53:23。",
+    "src": "https://en.wikipedia.org/wiki/Love_Call_(album)"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84356` 回 7 筆，年份 1971（美國原壓群）與 2017 各有，**沒有 1968 或 1970 說**——**Discogs 這次沒有抄錄音年**。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084356"
+   }
+  ],
+  "hookCandidates": [
+   "錄的時候是 1968 年，出的時候是 1971 年：Coleman 與 Dewey Redman、Jimmy Garrison、Elvin Jones 在 A&R Studios 錄了兩天，Blue Note 把素材拆成兩張碟，這一半壓了快三年才上架",
+   "Coltrane 的貝斯手 Jimmy Garrison 與鼓手 Elvin Jones 一起坐進 Ornette Coleman 的四重奏——1968 年那兩場是自由爵士與 Coltrane 樂團的一次正面交會"
+  ],
+  "sound": "4 軌，無鋼琴的自由爵士四重奏。Coleman 的中音薩克斯風與小提琴、Dewey Redman 的次中音在前面對吹，Jimmy Garrison 的貝斯與 Elvin Jones 的鼓在下面推。四首都長（8 到 10 分鐘），〈Airborne〉十分半最長。整張沒有和聲樂器。",
+  "keyTracks": [
+   "Airborne",
+   "Love Call",
+   "Open to the Public"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立，榜位＋目錄表＋維基＋Discogs 同邊。** MB frd 1971＝jazzdisco 1971＝Discogs 原壓群 1971；**最硬的是 Billboard 爵士榜 1971-05-08 以第 20 名、在榜第 1 週進榜**（第 58x 條），05-15 續第 2 週；旁證是 Cash Box 1971-07-03 的目錄表與維基的「1971 年 2 月」（引 Billboard 1971-03-06）。**錄音卻是 1968-04-29／05-07——錄後近三年才出，是本組唯一的 vault 盤**，正文絕不得寫成「1968 年的專輯」。**上市取 1971 年上半**。⚠ **無同型偏移**：Discogs 這次沒有抄錄音年。",
+  "notes": "**覆核策展層：rgMbid／原盤 7a01db57／BST 84356／4 軌／掛名 `Ornette Coleman`／年份 1971 全部成立，本張未擋下。** 本層補上榜位逐週、Cash Box 目錄表與維基的製作人。｜⚠ **本組唯一的 vault 盤**（1968 錄、1971 出）。**同兩場次的另一半已在池中**：seed 卡 Ornette Coleman《New York Is Now!》——**兩張是同一個四重奏、同兩天錄的**，兩卡務必互指，但**正文不得把本盤寫成《New York Is Now!》的「續集」**（是同一批素材的另一半）。｜**製作人 Francis Wolff**（維基）——**錄音時 Wolff 仍在世（1971 年 3 月過世）**，這是本組少數 Wolff 掛名的一張，**不得與 Butler 的那批互抄**。**封面設計者查無。**｜⚠ **軌數（第 670 條）**：原盤 4 軌，1990 年 CD 與 2014 年日版都是 7 軌，店面／CAA 掛的是 CD 形。｜**跨卡**：**Elvin Jones 在本盤是側人（鼓）**，本組另有三張他的領班盤（《Coalition》《Genesis》《Live at the Lighthouse》）——四卡互指，但**四個場次的班底完全不同**。｜非選輯：單一藝人的原創專輯（兩場次）。"
+ },
+ {
+  "key": "desc2:Brother Jack McDuff|Who Knows What Tomorrow's Gonna Bring?",
+  "artist": "Brother Jack McDuff",
+  "album": "Who Knows What Tomorrow's Gonna Bring?",
+  "facts": [
+   {
+    "f": "release-group 696ecbce 的欄位：title「Who Knows What Tomorrow's Gonna Bring?」、artist-credit「“Brother” Jack McDuff」（Person e0cd33e5，**MB 實體名帶印刷體引號**）、first-release-date 1971、primary-type Album、secondary-types 空。**轄下兩筆欄位完全相同的 release：58284961 與 c8d3f8e4，都是 1971 US Blue Note BST 84358、12 吋 6 軌**——**同一張實體被建成兩筆（第 664 條第 2 點），本層覆核成立，`chk-prop` 的 rgMbid 掃描抓不到這種形狀。** 六軌：〈Who Knows What Tomorrow's Gonna Bring?〉〈Ya Ya Ya Ya Ya Ya〉〈Who's Pimpin' Who?〉〈Classic Funke〉〈Ya'll Remember Boogie?〉〈Wank's Thang〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=696ecbce-0b35-3ce3-94eb-3421d218d794&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84358 分三天錄於 **The Hit Factory, NYC**（**不是 Van Gelder**）——1970 年 **12 月 1 日**（母帶號 7105／7106）、**12 月 2 日**（7107／7108）、**12 月 3 日**（7109／7110），三天班底完全相同：Randy Brecker、Olu Dara（小號），Dick Griffin、John Pierson（長號），Paul Griffin（鋼琴），McDuff（管風琴），Joe Beck（吉他），**Tony Levin（電貝斯）**，Donald McDonald（鼓），Mike Mainieri（打擊樂），**Ray Draper（打擊樂、人聲、低音號、編曲）**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1971 年 8 月 7 日的評介欄**：「JAZZ ／ BROTHER JACK McDUFF — Who Knows What Tomorrow's Gonna Bring? Blue Note BST 84358 ／ McDuff was always an organist who could dig deep into the blues and make it come up funky and yet natural. Here he has a tight little (**two trumpet, two trombone front line**) group that provide impetus for his improvisations. Appeal will also be to soul enthusiasts. **Orchestrator and conductor is Ray Draper who also provided four of the six originals.**」——**紙本點名 Ray Draper 是編曲指揮並寫了六首中的四首。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-08-07.pdf"
+   },
+   {
+    "f": "**同一期 Billboard 1971-08-07 的新片價目表**：「McDUFF, BROTHER JACK Who Knows What Tomorrow's Gonna Bring (LP) Blue Note BST 84358 $5.98」（**標題沒有問號**）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-08-07.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84358` 回 4 筆，**年份全部 1971**，無異說；維基的專頁 infobox 卻把 released 欄寫成 **1970**（錄音 1970-12-01～03、**製作人 Lew Futterman**）——**維基的發行年與紙本、Discogs、MB 三邊都不合，本層不採信。**",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084358"
+   },
+   {
+    "f": "維基的專頁：錄音 1970 年 12 月 1–3 日、廠牌 Blue Note、**製作人 Lew Futterman**（**與本組其餘二十張的 Wolff／Butler 都不同**）。",
+    "src": "https://en.wikipedia.org/wiki/Who_Knows_What_Tomorrow%27s_Gonna_Bring%3F"
+   }
+  ],
+  "hookCandidates": [
+   "管風琴盤卻帶著兩把小號、兩把長號的銅管前線，編曲的 Ray Draper 自己吹低音號、打打擊樂、還開口唱——六首裡有四首是他寫的",
+   "三天在紐約 The Hit Factory 錄完，班底一個人都沒換：Randy Brecker 的小號、Joe Beck 的吉他、Tony Levin 的電貝斯，全是當時紐約最忙的錄音室樂手"
+  ],
+  "sound": "6 軌，銅管前線的管風琴放克。McDuff 的 Hammond 與 Paul Griffin 的鋼琴雙鍵盤，兩把小號、兩把長號堆前線，Joe Beck 吉他、Tony Levin 電貝斯，Ray Draper 編曲兼吹低音號。〈Ya Ya Ya Ya Ya Ya〉九分多鐘最長，〈Classic Funke〉與〈Wank's Thang〉是中快板放克。",
+  "keyTracks": [
+   "Who Knows What Tomorrow's Gonna Bring?",
+   "Ya Ya Ya Ya Ya Ya",
+   "Classic Funke"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立；維基的 1970 說被推翻。** MB frd 1971（兩筆 release 都登 1971）＝jazzdisco 1971＝Discogs 四筆全 1971；**Billboard 1971-08-07 的評介欄與新片價目表**（同一期兩欄，依第 431 條不算兩則獨立）。⚠ **唯一的反方是維基 infobox 的 released 1970**——**維基那一格沒有任何引註**，與四邊相衝，**不採信**。**上市取 1971 年 8 月**（價目表與評介同週）。錄音 1970-12-01～03。⚠ **同型偏移排查**：本張的形狀是「錄音年早一年、維基抄成發行年」，**與第 550／570 條的 Discogs 抄 ℗© 年不同**，Discogs 這次是對的。",
+  "notes": "**覆核策展層：rgMbid／BST 84358／6 軌／掛名 `Brother Jack McDuff`／年份 1971 全部成立，本張未擋下；第 664 條第 2 點的「同一張實體建兩筆 release」也覆核成立（58284961 與 c8d3f8e4 欄位完全相同）。** 本層另抓到**維基 infobox 把發行年寫成 1970**，與四邊相衝、無引註，已標為不採信。｜⚠ **掛名**（第 665 條）：MB 實體名 `“Brother” Jack McDuff`（印刷體引號），卡上摺成 `Brother Jack McDuff`；群組 `The Brother Jack McDuff Quartet`／`Quintet` **不收攏**。｜⚠ **錄音室不是 Van Gelder**：是紐約的 **The Hit Factory**——**本組只有這一張在這裡錄**，正文不得寫成 Van Gelder。｜**製作人 Lew Futterman**（維基；MB／jazzdisco 無欄位）；**編曲與指揮是 Ray Draper**（Billboard 1971-08-07 本文，紙本背書最硬）。**封面設計者查無。**｜⚠ **盤名問號**：MB 與 Billboard 評介欄都帶問號，**同期價目表沒有問號**——卡上照 MB 帶問號。｜**人名邊界**：Randy Brecker／Joe Beck／Tony Levin／Mike Mainieri／Paul Griffin／Olu Dara 都有 jazzdisco 背書，**Tony Levin 即後來 King Crimson 與 Peter Gabriel 的那位貝斯手**（本層未查到獨立來源佐證同一人，**正文不得寫這一層**）。｜非選輯：單一藝人的原創專輯（三場次、同班底）。"
+ },
+ {
+  "key": "desc2:Elvin Jones|Coalition",
+  "artist": "Elvin Jones",
+  "album": "Coalition",
+  "facts": [
+   {
+    "f": "release-group 21ac6ac7 的欄位：title「Coalition」、artist-credit「Elvin Jones」（Person d5ac66e4）、first-release-date 1971、primary-type Album、secondary-types 空。轄下四筆：**原盤 65889154 是 1971 US Blue Note BST-84361、12 吋 5 軌**（無 barcode）；2014-02-26 JP CD d517198e（TYCJ-81096）；2015 XW 數位 d1ebb74e；2022-11-30 JP HQCD 1e1dff29（UCCU-45061）。五軌：〈Shinjitu〉〈Yesterdays〉（10 分 52 秒）〈5/4 Thing〉〈Ural Stradania〉〈Simone〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=21ac6ac7-1c2e-4b70-88e6-5540fe423aa4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 4300 系列目錄頁：BST 84361 **一場錄完**，Van Gelder Studio, Englewood Cliffs, NJ，**1970 年 7 月 17 日**。編制五人：**George Coleman（次中音薩克斯風）、Frank Foster（次中音薩克斯風、倍中音單簧管）、Wilbur Little（貝斯）、Elvin Jones（鼓）、Candido（康加、鈴鼓）**——**沒有鋼琴，兩支次中音在前**；母帶號 6671–6675。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+   },
+   {
+    "f": "**Billboard 1971 年 2 月 27 日的爵士評介欄**：「ELVIN JONES — Coalition. Blue Note BST 84361 (S) ／ This Elvin Jones … back to basics … from his immediate post-Coltrane period and further develops the … dimension … **Candido, adds yet another dimension to Jones' drumming, as the conga not only complements Jones, but reinforces** …」——同一格還評了 Maynard Ferguson《M.F. Horn》與 Jeremy Steig《Wayfaring Stranger》（Blue Note BST 84354）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-02-27.pdf"
+   },
+   {
+    "f": "**Cash Box 1971 年 3 月 13 日的 Pop Best Bets**（**與 Billboard 那則不同週、文字完全不同，是真正獨立的第二則**，第 431／669 條）：「COALITION — Elvin Jones — Blue Note BST-84361 ／ An aptly named album, since it features drummer extraordinaire Jones working in total accord within a quintet framework. Along with Jones stalwarts **George Coleman (tenor sax) and Wilbur Little (bass) are Frank Foster, who contributes some sparkling bass clarinet work, as well as Candido**, joining Elvin on the skins. There is a nice Oriental taste to “Shinjitu,” and the standard, “Yesterdays” is in…」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1971/Cash-Box-1971-03-13.pdf"
+   },
+   {
+    "f": "維基的專頁 infobox：發行 **1971 年 2 月**（引 Billboard 1971-02-27）、錄音 1970 年 7 月 17 日、錄音室 Van Gelder, Englewood Cliffs, NJ、長度 39:00、**製作人 Francis Wolff**、廠牌欄 BST 84361。",
+    "src": "https://en.wikipedia.org/wiki/Coalition_(album)"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84361` 回 9 筆，年份 1971（美國原壓群）與 1983／2012／2014／2025 的再發，**無 1970 說**。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084361"
+   }
+  ],
+  "hookCandidates": [
+   "沒有鋼琴，只有兩支次中音薩克斯風、一把貝斯、一套鼓，再加 Candido 的康加——Cash Box 說那面康加「不只是陪襯 Jones，是在加強他」",
+   "〈Shinjitu〉的曲名是日文「真実」：Jones 離開 Coltrane 樂團之後，這張把那套高強度的自由節奏收進五人編制裡"
+  ],
+  "sound": "5 軌，無鋼琴的五重奏。George Coleman 與 Frank Foster 兩支次中音薩克斯風在前（Foster 另吹倍中音單簧管），Wilbur Little 貝斯，Jones 的鼓幾乎是主聲部，Candido 的康加與鈴鼓再加一層。〈Yesterdays〉是十分半的標準曲改編，〈Shinjitu〉帶東方調式，〈5/4 Thing〉走五拍。",
+  "keyTracks": [
+   "Shinjitu",
+   "Yesterdays",
+   "Simone"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1971 成立，本組唯一有「兩則真正獨立紙本」的一張。** MB frd 1971＝jazzdisco 1971＝Discogs 原壓群 1971＝維基「1971 年 2 月」；**Billboard 1971-02-27 的爵士評介**與 **Cash Box 1971-03-13 的 Pop Best Bets**——**不同週、文字完全不同**，符合第 431 條對「兩個獨立來源」的正面定義（第 669 條末段點名本張）。**上市取 1971 年 2 月**。錄音 1970-07-17 一場錄完。⚠ **無同型偏移。**",
+  "notes": "**覆核策展層：rgMbid／原盤 65889154／BST 84361／5 軌／掛名 `Elvin Jones`／年份 1971 全部成立，本張未擋下。** 本層補上兩則紙本的完整原文與維基的製作人。｜**製作人 Francis Wolff**（維基）——**Wolff 1971 年 3 月過世，本盤與《Love Call》《Live at the Lighthouse》（Lee Morgan）是本組少數掛他名的**；**《Genesis》維基列 Wolff 與 Butler 兩人，是交棒期**。**封面設計者查無。**｜⚠ **本組三張 Elvin Jones 領班盤班底完全不同**：本盤是 Coleman／Foster／Little／Candido 的五重奏（1970-07 錄）、《Genesis》是 Foster／Farrell／Liebman／Perla 的五重奏（1971-02 錄）、《Live at the Lighthouse》是 Grossman／Liebman／Perla 的四重奏現場（1972-09 錄）——**三卡互指，正文絕不得互抄**；**只有 Frank Foster 同時在本盤與《Genesis》、只有 Dave Liebman 同時在《Genesis》與《Live at the Lighthouse》**。｜**跨卡**：**Candido 是本組《Beautiful》BST 84357 的領班**，在這裡是側人——兩卡互指。｜**人名邊界**：George Coleman／Frank Foster／Wilbur Little 有 jazzdisco＋Cash Box 雙背書。｜⚠ **Cash Box 把 Foster 的樂器寫成 bass clarinet，jazzdisco 寫 contra-alto clarinet**（倍中音單簧管）——**以 jazzdisco 為準**。｜非選輯：單一場次的原創專輯。"
+ }
+]
