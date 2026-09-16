@@ -316,3 +316,13 @@ BLP 5020（1953-10-03，68 分）、5023（同日，65）、5024（1953-10-10，
 其餘 11 張 Billboard 未評（含 Miles Vol. 3），年份靠 MB＋Discogs＋jazzdisco 三筆一致、無紙本反證。
 **封面實線**：BLP 5055、5066 的封面 credits 已出現 **Reid Miles**（與 John Hermansader、Francis Wolff 並列）；
 **Gil Mellé 本人畫了 BLP 5020、5025、5026 三張封面**——同一批裡的實線，寫作層可用。
+
+## 第 475 條（主線 2026-09-16，鉤子層交件後）：**第 466 條漏改一筆——Horace Silver BLP 5018 的 `year` 仍是 1952，已補改 1953**
+
+第 466 條的表列了五列，實際只改了四筆（Quebec／Moody／Miles 5013／Bechet 7025），
+**Horace Silver《New Faces New Sounds》BLP 5018 那一列漏改**，鉤子層對卡單時抓到。
+已改 `desc-tools/batches/cards/c135-cards.json` 與 `batch-progress/c135/prop-a.json` 的 `year` 與 `label` 欄（1952 → 1953）。
+
+**這是主線自己的疏漏，記在這裡當程序教訓**：裁定表列 N 列、實際改 N-1 筆，**在檔案上與全改完長得一模一樣**
+（「失敗與正常長得一樣」家族）。**通則：裁定表如果列了 N 列改動，commit 前要逐列回查卡單值，
+commit 訊息的數字（當時寫「4 year fixes」）不能當成驗收依據——那個數字本身就是錯的那一半。**
