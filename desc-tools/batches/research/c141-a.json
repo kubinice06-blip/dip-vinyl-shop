@@ -1,0 +1,242 @@
+[
+ {
+  "key": "desc2:Hank Mobley|Hi Voltage",
+  "artist": "Hank Mobley",
+  "album": "Hi Voltage",
+  "facts": [
+   {
+    "f": "release-group d336b40d 的欄位：title「Hi Voltage」、artist-credit「Hank Mobley」（Person 026b096e）、first-release-date 1967、primary-type Album、secondary-types 空。轄下四筆：**原盤 e14e3ce9 是 1967 US Blue Note BST 84273、12 吋 6 軌**（無月日、無 barcode）；1988 US CD CDP 7 84273 2；2005 US RVG CD 7 243 864476 2 3；2005 XE CD 7243 8 75262 2 8。原 LP 6 軌：〈High Voltage〉〈Two and One〉〈No More Goodbys〉〈Advance Notion〉〈Bossa De Luxe〉〈Flirty Gerty〉——**後兩個曲名是 MB 的誤拼**，盤面與 jazzdisco 作〈Advance Notice〉〈No More Goodbys〉、通行拼法〈No More Goodbyes〉〈Advance Notice〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d336b40d-ba8a-39ff-ab6e-3312e9937951&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Hank Mobley 場次頁：**Hank Mobley Sextet，Van Gelder Studio, Englewood Cliffs, NJ, 1967 年 10 月 9 日**，編制 Blue Mitchell（小號，#1-5）、Jackie McLean（中音，#1-5）、Hank Mobley（次中音）、John Hicks（鋼琴）、Bob Cranshaw（貝斯）、Billy Higgins（鼓）；母帶號 1965–1970、tk.4 起，六軌一場錄完，全部發在 BST 84273。同一頁可見 Mobley 1967 年另兩場（02-24 七重奏＝1981 年才出的《Third Season》LT-1081、05-26 五重奏＝1985 年才出的《Far Away Lands》BST 84425）——**1967 年他錄了三場，只有這一場當年就排上發行**。",
+    "src": "https://www.jazzdisco.org/hank-mobley/discography/"
+   },
+   {
+    "f": "**Billboard 1968 年 3 月 9 日的 New Album Releases 欄**，BLUE NOTE 段落列「DONALD BYRD—Blackjack; BLP 4259, BST 84250（原文誤植，應為 84259）／CECIL TAYLOR—Conquistador, BLP 4260, BST 84260／HANK MOBLEY—High Voltage; BLP 4273, BST 84273」——本盤與 Byrd《Blackjack》是同一批新片。**Billboard 1968 年 3 月 30 日**的 Jazz 評論欄再給四星：「NI VOLTAGE（掃描誤讀，即 HI VOLTAGE）—Hank Mobley. Blue Note BLP 4273 (M); BST 84273 (S)」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1968/Billboard%201968-03-09.pdf"
+   },
+   {
+    "f": "**Cash Box 1968 年 5 月 11 日的 Jazz 評介**：「HI VOLTAGE—Hank Mobley—Blue Note BST 84273　As a follow-up to his previous Blue Note album, 'A Caddy For Daddy,' Hank Mobley brings out this electrifying package.」——**與 Billboard 各自獨立的第二份同期紙本**（第 431 條要的非同源佐證），且刊物把它接在《A Caddy for Daddy》（BLP 4230，1966）之後，可見當時市場認知的前作就是那張。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1968/CB-1968-05-11.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84273` 回 13 筆：**1967 六筆（US／DE／IT 原壓）、1970 Liberty/UA 一筆、1985 四筆、2003 JP 一筆、2010 一筆**——Discogs 這一群把原壓標成 1967（第 550／553 條的「整群繼承同一個回填年」形，多半抄封套 ℗© 年），**與兩份同期紙本相反，本層取紙本**。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084273"
+   },
+   {
+    "f": "維基 infobox：錄音 1967-10-09、發行「Early March 1968」（引 Billboard 1968-03-09）、**製作人 Francis Wolff**、長度 40:37、曲風 hard bop／soul jazz；前作《Far Away Lands》、後作《Reach Out!》。**Alfred Lion 1967 年因健康退休、Liberty 買下 Blue Note 後由 Wolff 接手製作**，本盤是 Wolff 掛名製作的 Mobley 盤。",
+    "src": "https://en.wikipedia.org/wiki/Hi_Voltage"
+   },
+   {
+    "f": "**串流採信 724925658**：iTunes `lookup?id=724925658&entity=song` 回 6 軌，逐軌與 MB 原盤同序同長——Hi Voltage 489s／Two and One 369s／No More Goodbyes 341s／Advance Notice 357s／Bossa de Luxe 452s／Flirty Gerty 421s（MB：489／369／340／358／452／417），**6 軌全部有 previewUrl**。條目是 2004 RVG 重製（℗ 2004 Blue Note），releaseDate 標 1967-01-01 是 placeholder（第 484 條）。",
+    "src": "https://itunes.apple.com/lookup?id=724925658&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "Alfred Lion 1967 年因心臟病退休、Liberty 買下 Blue Note，這張是 Francis Wolff 接手製作台後 Mobley 的第一張——六首全是 Mobley 自己寫的，班底卻是臨時湊的：Blue Mitchell、Jackie McLean 各自也在同一批卡裡有自己的領銜盤",
+   "1967 年 Mobley 進 Van Gelder 錄了三場，另外兩場（2 月的《Third Season》、5 月的《Far Away Lands》）被壓進庫房，一張等到 1981、一張等到 1985 才出——只有 10 月 9 日這場當年就排上了發行線"
+  ],
+  "sound": "6 軌，全部 Mobley 原創的六重奏 hard bop／soul jazz：三管前線（Blue Mitchell 小號、Jackie McLean 中音、Mobley 次中音）＋John Hicks 鋼琴、Bob Cranshaw 貝斯、Billy Higgins 鼓。〈High Voltage〉是八分多鐘的長篇快板，〈Bossa De Luxe〉走巴薩諾瓦，〈Flirty Gerty〉收在放克化的 soul jazz 上。串流是 2004 RVG 重製版。",
+  "keyTracks": [
+   "High Voltage",
+   "Two and One",
+   "Bossa De Luxe"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1968 成立，本層以兩份互相獨立的同期紙本坐實。** MB frd 1967＝錄音年（原盤 e14e3ce9 無月日無 barcode，第 577 條第 3 點的形）、Discogs 原壓群六筆全標 1967（第 550／553 條的整群回填）；但 **Billboard 1968-03-09 New Album Releases 已把它列進 Blue Note 新片**，**Billboard 1968-03-30 給四星評論**，**Cash Box 1968-05-11 另有一則獨立評介**——紙本壓過 Discogs 與 MB 欄位（階序照第 531／550 條）。jazzdisco 4200 目錄頁亦作 1968。**上市月取 1968 年 3 月前後**，正文可寫「1967 年 10 月錄、隔年三月出」。⚠ 目錄號 84273 不可回推年份（第 526 條）：同段的 84266《Contrasts》1968-06 才出、84275《Tender Moments》1968-07 才出，號碼與發行序在 Liberty 期完全對不上。",
+  "notes": "**覆核策展層：rgMbid／原盤 e14e3ce9／BST 84273／6 軌／掛名 `Hank Mobley`／年份 1968 全部成立，本張未擋下。** 本層補上策展層沒有的一手佐證：Billboard 1968-03-09 新片欄、1968-03-30 四星評論、Cash Box 1968-05-11 評介，以及 jazzdisco 的完整場次（母帶號 1965–1970）。｜⚠ **曲名**：MB 原盤登「No More Goodbys」「Advance Notion」，jazzdisco 作「No More Goodbys」「Advance Notice」，Apple／維基作「No More Goodbyes」「Advance Notice」——**寫作層照通行拼法**，不要照抄 MB。｜⚠ **紙本自己也會錯**（第 509c 條）：Billboard 1968-03-09 把 Blackjack 的 catno 印成「BST 84250」、1968-03-30 把片名掃成「NI VOLTAGE」——靠編制／軌數／同批片名交叉定位，不要只信印出來的號碼。｜**製作人**：維基寫 Francis Wolff；同批《Boss Horn》《New and Old Gospel》維基寫 Alfred Lion——**Lion／Wolff 的交替是這批的實線，但每張要照各自的來源寫，不得互抄**。｜**跨卡**：Blue Mitchell（本批《Boss Horn》領銜）、Jackie McLean（本批《New and Old Gospel》領銜）、Billy Higgins（本批 Byrd 兩張、《Easterly Winds》《New and Old Gospel》）都在這場，**但都是不同場錄音，正文陣容不得互抄**（第 576 條第 5 點）。｜**串流採信 724925658**（us，6 軌逐軌與原盤同序，全部有試聽）。**有固定試聽來源。**｜非選輯：單一場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Blue Mitchell|Boss Horn",
+  "artist": "Blue Mitchell",
+  "album": "Boss Horn",
+  "facts": [
+   {
+    "f": "release-group a2960578 的欄位：title「Boss Horn」、artist-credit「Blue Mitchell」（Person ee287f2c）、first-release-date 1967、primary-type Album、secondary-types 空。轄下三筆：**原盤 f9a71918 是 1967 US Blue Note BLP 4257、12 吋 6 軌**（MB 只建 mono，stereo 的 BST 84257 沒建，第 577 條第 4 點）；2005 US RVG CD 7243 5 63813 2 2（另掛 BMG Direct D162125）；2005-07-11 XE RVG CD 7243 5 63814 2 1。原 LP 6 軌：〈Millie〉〈O Mama Enit〉〈I Should Care〉〈Rigor Mortez〉〈Tones for Joan's Bones〉〈Straight Up and Down〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2960578-dcd6-31f1-b84b-d6b1b5196596&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Mitchell 場次頁：**Blue Mitchell Octet，Van Gelder Studio, Englewood Cliffs, NJ, 1966 年 11 月 17 日**，編制 Blue Mitchell（小號）、Julian Priester（長號）、Jerry Dodgion（中音、長笛）、Junior Cook（次中音）、Pepper Adams（上低音）、**Cedar Walton（鋼琴，#1-4）／Chick Corea（鋼琴，#5,6）**、Gene Taylor（貝斯）、Mickey Roker（鼓）、**Duke Pearson（編曲）**；母帶號 1788–1793，八重奏一場錄完六軌。",
+    "src": "https://www.jazzdisco.org/blue-mitchell/discography/"
+   },
+   {
+    "f": "**Cash Box 1967 年 10 月 28 日的 Jazz Picks**：「BOSS HORN—Blue Mitchell—Blue Note BLP 4257/84257　Trumpeter Blue Mitchell serves up a tasteful package of jazz tunes which should h[it]…」——同期紙本的首次評介，mono／stereo 兩個號碼都印出來了。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1967/CB-1967-10-28.pdf"
+   },
+   {
+    "f": "**Billboard 1967 年 10 月 28 日的 New Album Releases**（與 Cash Box 同一週）BLUE NOTE 段列「DONALD BIRD—Mustang!; BLP 4238／**BLUE MITCHELL—Boss Horn; BLP 4257, BLP 84257**／McCOY TYNER—The Real McCoy; BLP 4264」；**Billboard 1967 年 11 月 4 日**再給評論：「BOSS HORN　Blue Mitchell. Blue Note BLP 4257 (M); BLP 84257 (S)」。⚠ 兩期都把 stereo 前綴印成 BLP（應為 BST），第 509c 條。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1967/Billboard%201967-10-28.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BLP 4257` 回 5 筆：**1967 三筆美國 mono 原壓**、1998 西班牙 CD 一筆、無年份一筆——**Discogs 原壓群與紙本同邊（1967），本張沒有年份爭議**。",
+    "src": "https://api.discogs.com/database/search?catno=BLP%204257"
+   },
+   {
+    "f": "維基 infobox：錄音 1966-11-17、發行「End of October/early November 1967」（引 Billboard 1967-10-28）、**製作人 Alfred Lion**、長度 38:57；前作《Bring It Home to Me》、後作《Heads Up!》。曲目作者：〈Millie〉Duke Pearson、〈Rigor Mortez〉Dave Burns、〈Tones for Joan's Bones〉**Chick Corea**、〈I Should Care〉Cahn／Stordahl／Weston——**Corea 在本盤既是第 5、6 軌的鋼琴手，也是〈Tones for Joan's Bones〉的作者**，那是他自己 1966 年同名首張領銜作的主題曲。",
+    "src": "https://en.wikipedia.org/wiki/Boss_Horn"
+   },
+   {
+    "f": "**串流採信 716323306**：iTunes `lookup?id=716323306&entity=song` 回 6 軌，逐軌與 MB 原盤同序同長——Millie 376s／O Mama Enit 334s／I Should Care 451s／Rigor Mortez 382s／Tones for Joan's Bones 397s／Straight Up and Down 397s（MB：380／330／450／380／390／390），**6 軌全部有 previewUrl**。條目是 2005 RVG 重製（℗ 2005 Blue Note）。",
+    "src": "https://itunes.apple.com/lookup?id=716323306&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "〈Tones for Joan's Bones〉的作者 Chick Corea 就坐在這張唱片的鋼琴前面——他只彈最後兩軌，前四軌是 Cedar Walton，八重奏的編曲則出自 Duke Pearson 之手",
+   "Mitchell 從 Horace Silver 的五重奏出來自組樂團，這張把陣容擴到八人：Julian Priester 的長號、Pepper Adams 的上低音薩克斯，前線厚得像個小型大樂團"
+  ],
+  "sound": "6 軌，八重奏編制的 hard bop：Mitchell 小號在前，Julian Priester 長號、Jerry Dodgion 中音與長笛、Junior Cook 次中音、Pepper Adams 上低音撐出厚重前線，Duke Pearson 編曲。〈Millie〉〈O Mama Enit〉是中快板，〈I Should Care〉是七分半的抒情標準曲，〈Tones for Joan's Bones〉換 Chick Corea 上鋼琴。串流是 2005 RVG 重製版。",
+  "keyTracks": [
+   "Millie",
+   "Tones for Joan's Bones",
+   "I Should Care"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1967 成立，三個來源同邊。** MB frd 1967＝Discogs 三筆美國 mono 原壓 1967＝jazzdisco 目錄頁 1967；**同期紙本再獨立坐實**：Cash Box 1967-10-28 Jazz Picks 與 Billboard 1967-10-28 New Album Releases（兩刊同一週，是廠牌同一份發片通知的兩個落點，不算完全獨立——第 431 條）、Billboard 1967-11-04 另有一則評論。**上市月取 1967 年 10 月底／11 月初**。錄音 1966-11-17，**錄後一年才出**——這是 Liberty 接手前後 Blue Note 的常態（第 571 條方法論 2）。⚠ 目錄號 4257 不可回推（第 526 條）。",
+  "notes": "**覆核策展層：rgMbid／原盤 f9a71918／BLP 4257／6 軌／掛名 `Blue Mitchell`／年份 1967 全部成立，本張未擋下。** 本層補上 Cash Box 1967-10-28 與 Billboard 1967-10-28／11-04 的一手記載，以及 jazzdisco 完整八重奏編制（含兩位鋼琴手的分軌）。｜⚠ **MB 只建 mono**（BLP 4257），stereo BST 84257 沒建；卡上兩號並列的 stereo 號出自 Discogs／紙本（Cash Box 1967-10-28 印「BLP 4257/84257」）。｜⚠ **紙本誤植**（第 509c 條）：Billboard 1967-10-28 與 11-04 都把 stereo 前綴印成「BLP 84257」，Cash Box 1967-12-09 與 1968-03-30 的 Blue Note 目錄表把《Compulsion》配成 4257（實為 4217）——靠片名／編制交叉定位。｜**製作人**：維基寫 Alfred Lion（**與同批《Hi Voltage》的 Wolff 不同**，不得互抄）。｜**跨卡**：Duke Pearson 在本批既是《Sweet Honey Bee》的領銜、也是本盤與《Lush Life》《Standards》的編曲（第 576 條第 2 點）；Blue Mitchell 本人吹在本批《Hi Voltage》上——**不同場，正文不得寫成同一個班底**。｜**人名邊界**：Chick Corea／Cedar Walton／Pepper Adams／Julian Priester／Jerry Dodgion／Junior Cook／Mickey Roker／Gene Taylor 都有 jazzdisco＋維基雙背書，可寫。｜**串流採信 716323306**（us，6 軌逐軌與原盤同序，全部有試聽）。**有固定試聽來源。**｜非選輯：單一場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Freddie Hubbard|Blue Spirits",
+  "artist": "Freddie Hubbard",
+  "album": "Blue Spirits",
+  "facts": [
+   {
+    "f": "release-group 4c1a0908 的欄位：title「Blue Spirits」、artist-credit「Freddie Hubbard」（Person 59ae7a1a）、first-release-date 1967、primary-type Album、secondary-types 空、共 16 筆 release。**原盤兩筆同年**：2ab48b23 1967 US Blue Note BLP 4196（mono，5 軌）與 777c876b 1967 US BST 84196（stereo，5 軌）；1987 起的 CD 一律 7 軌（加 1966-03-05 那場的兩軌）。原 LP 5 軌：〈Soul Surge〉〈Blue Spirits〉〈Outer Forces〉〈Cunga Black〉〈Jodo〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4c1a0908-8d9b-3693-ae65-0ea95388ad8f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Freddie Hubbard 場次頁把 BLP 4196 拆成兩場：**(a) Freddie Hubbard Octet，Van Gelder，1965 年 2 月 19 日**——Hubbard（小號）、Kiane Zawadi（上低音號）、James Spaulding（中音、長笛）、**Joe Henderson**（次中音）、Harold Mabern（鋼琴）、Larry Ridley（貝斯）、Clifford Jarvis（鼓）、Big Black（康加）；出〈Soul Surge〉〈Cunga Black〉（〈Outer Forces〉當天 rejected）。**(b) Freddie Hubbard Septet，Van Gelder，1965 年 2 月 26 日**——同前但換 **Hank Mobley（次中音）、McCoy Tyner（鋼琴）、Bob Cranshaw（貝斯）、Pete La Roca（鼓）**；出〈Jodo〉〈Blue Spirits〉〈Outer Forces〉。**一張五軌的碟出自兩組幾乎全換的班底，只有 Hubbard／Zawadi／Spaulding 兩場都在。**",
+    "src": "https://www.jazzdisco.org/freddie-hubbard/discography/"
+   },
+   {
+    "f": "**Cash Box 1967 年 1 月 21 日的 Blue Note 全頁廣告**（標題「FOR THE 'LOOK' OF PURE JAZZ」）只打兩張新片：「BLP 4171/BST 84171 'EXTENSION' George Braith」與「**BLP 4196/BST 84196 BLUE SPIRITS Freddie Hubbard**」，頁腳印「THE FINEST IN JAZZ SINCE 1939　**BLUE NOTE A PRODUCT OF LIBERTY RECORDS**」——**這是本批 20 張裡最早的一則廠牌廣告，也直接寫出 Liberty 已經是 Blue Note 的母公司**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1967/CB-1967-01-21.pdf"
+   },
+   {
+    "f": "**Cash Box 1967 年 2 月 25 日的 Jazz 評介**：「BLUE SPIRITS—Freddie Hubbard—Blue Note 4196/84196　Trumpeter Freddie Hubbard plays…」；**Billboard 1967 年 2 月 18 日**的 Jazz 評論欄同樣列「BLUE SPIRITS　Freddie Hubbard. Blue Note BLP 4196 (M); BST 4196 (S)」。**兩份紙本把上市時間夾在 1967 年 1 月下旬到 2 月中**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1967/Billboard%201967-02-18.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BLP 4196` 回 6 筆，其中 **1967 兩筆美國 mono 原壓**，其餘是無年份的 repress 與希臘壓片（另有兩筆同號的以色列搖滾盤是撞號假陽性）。**Discogs 與紙本同邊。**",
+    "src": "https://api.discogs.com/database/search?catno=BLP%204196"
+   },
+   {
+    "f": "維基 infobox：**錄音 1965 年 2 月 19 日與 26 日、1966 年 3 月 5 日（CD 加曲）**、發行「Mid February 1967」（引 Billboard 1967-02-18）、**製作人 Alfred Lion**、原 LP 44:35／CD 62:04。維基並記這是 **Hubbard 1960 年代最後一張 Blue Note 錄音室領銜作**；CD 加的 1966 年那場有 Hosea Taylor、Herbie Hancock、Reggie Workman、Elvin Jones。",
+    "src": "https://en.wikipedia.org/wiki/Blue_Spirits"
+   },
+   {
+    "f": "Cash Box 1967 年 8 月 19 日與 1967 年 12 月 9 日的 Blue Note 完整目錄表都把「Freddie Hubbard　Blue Spirits　BLP 4196　BST 84196」與《The Sidewinder》4157、《Maiden Voyage》4195、《Song For My Father》4185 並列——**上市後整年都留在現役目錄裡**。",
+    "src": "batch-progress/enum/cashbox-bn-1966-67-ocr.txt"
+   }
+  ],
+  "hookCandidates": [
+   "1965 年 2 月的兩個星期二，Hubbard 在 Van Gelder 錄了兩場幾乎全換人的班底：一場有 Joe Henderson，一場有 Hank Mobley 和 McCoy Tyner——五首曲子就這樣拼成一張碟，卻在庫房躺到 1967 年才上市",
+   "目錄號 4196 是 1965 年配的，實際上市卻晚到 1967 年 1 月：Blue Note 那則全頁廣告的頁腳已經印上「A PRODUCT OF LIBERTY RECORDS」——這是 Hubbard 在 Blue Note 的最後一張錄音室領銜作"
+  ],
+  "sound": "原 LP 5 軌，全部 Hubbard 原創的七／八重奏 hard bop，兩場錄音拼成：Kiane Zawadi 的上低音號與 James Spaulding 的中音、長笛把和聲堆厚，〈Soul Surge〉〈Cunga Black〉那場有 Joe Henderson 與 Big Black 的康加，〈Blue Spirits〉〈Jodo〉〈Outer Forces〉那場換成 Hank Mobley 與 McCoy Tyner。CD 版多出 1966 年的兩軌。",
+  "keyTracks": [
+   "Blue Spirits",
+   "Soul Surge",
+   "Jodo"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1967 成立，紙本把上市月夾到 1967 年 1 月下旬–2 月中。** MB 兩筆原盤（mono 2ab48b23／stereo 777c876b）都標 1967＝Discogs 兩筆美國 mono 原壓 1967＝jazzdisco 4100 目錄頁 1967；**同期紙本獨立坐實**：Cash Box 1967-01-21 的 Blue Note 全頁新片廣告（只打兩張，本盤是其一）＋Billboard 1967-02-18 Jazz 評論＋Cash Box 1967-02-25 Jazz 評介。⚠ **本張是第 526 條最清楚的例子**：目錄號 BLP 4196 屬 1965 年那一段（同段 4195《Maiden Voyage》1965 就出了），**實際上市晚了將近兩年**，號碼完全不能回推年份。錄音年 1965（2/19、2/26）要寫進正文，**不得寫成 1967 年錄的**。",
+  "notes": "**覆核策展層：rgMbid／兩筆原盤／BLP 4196＋BST 84196／5 軌／掛名 `Freddie Hubbard`／年份 1967 全部成立，本張未擋下。** 本層補上 Cash Box 1967-01-21 廣告、Billboard 1967-02-18 評論、Cash Box 1967-02-25 評介，以及 jazzdisco 的兩場分軌編制。｜⚠ **兩場錄音、兩組班底**：正文若寫樂手必須分清楚哪一場（Joe Henderson 只在 2/19，Hank Mobley／McCoy Tyner 只在 2/26），**不得把兩組並成一個班底**。｜⚠ **軌數**：原 LP 5 軌、1987 起的 CD 7 軌（加 1966-03-05 那場）——**上架只認 5 軌形**；CD 加曲的 Herbie Hancock／Elvin Jones 不屬原盤，正文不得當本盤陣容。｜**CAA 來源是 2004 RVG CD（b19b9adf）不是原盤**（第 578 條），封面版式要看 Discogs 的 mono 原壓條目。｜**Lion 期錄音、Liberty 期出版**（第 575 條）：本盤與《The Witch Doctor》《I'm Movin' On》同型。｜**製作人**：維基寫 Alfred Lion。｜**未跑試聽**：本組探測顯示本張不缺試聽（第 578 條記 Apple us 命中 1443174543，5 軌），本層未再逐軌核。｜非選輯：單一錄音計畫的原創專輯（兩場同一計畫）。"
+ },
+ {
+  "key": "desc2:Jackie McLean|New and Old Gospel",
+  "artist": "Jackie McLean",
+  "album": "New and Old Gospel",
+  "facts": [
+   {
+    "f": "release-group 65f68506 的欄位：title「New and Old Gospel」、artist-credit「Jackie McLean」（Person 5b6993ef）、first-release-date 1967、primary-type Album、secondary-types 空。轄下五筆：**原盤 fd4dc90b 是 1967 US Blue Note BST 84262、12 吋 3 軌**（MB 只建 stereo、status 空，第 577 條第 4／6 點）；1996 US／XE CD CDP 7243 8 53356 2 4（含 Columbia House CDP 553356）；2007 RVG CD 0946 3 74234 2 4。原 LP 3 軌：〈Lifeline Medley: Offering / Midway / Vernzone / The Inevitable End〉（21:37）〈Old Gospel〉（10:41）〈Strange as It Seems〉（9:08）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65f68506-36a0-3fe9-bf16-a718e2a90963&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Jackie McLean 場次頁：**Jackie McLean Quintet，Van Gelder Studio, Englewood Cliffs, NJ, 1967 年 3 月 24 日**，編制 **Ornette Coleman（小號）**、Jackie McLean（中音）、Lamont Johnson（鋼琴）、Scott Holt（貝斯）、Billy Higgins（鼓）；母帶號 1864–1866，三軌一場錄完。同頁可見 McLean 1967 年 2 月 3 日另一場（Grachan Moncur III 在列）被壓到 1978 年才以《Hipnosis》出版。**jazzdisco 把組曲標題記成「Lifetime: Offspring / Midway / Vernzone / The Inevitable End」，MB 與 Apple 作「Lifeline Medley: Offspring…」、維基作「Lifeline Medley: Offering…」——三方拼法都不同（第 470 條：jazzdisco 曲名欄會錯）。**",
+    "src": "https://www.jazzdisco.org/jackie-mclean/discography/"
+   },
+   {
+    "f": "**Billboard 1968 年 1 月 27 日第 33 頁的 Blue Note 整版廣告**：主打 Lou Donaldson《Mr. Shing-A-Ling》BLP-4271/BST-84271（打語「A Hit Album Following In The Tracks of 'Alligator Boogaloo'」），下方「More Great New Albums From Blue Note Records!」三張為「**'NEW AND OLD GOSPEL' JACKIE McLEAN BLP-4262/BST-84262**」「'THE RIGHT TOUCH' DUKE PEARSON BLP-4267/BST-84267」「'OPEN HOUSE' JIMMY SMITH BLP-4269/BST84269」。**同一則廣告同一週也登在 Cash Box 1968-01-27 第 33 頁。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1968/Billboard%201968-01-27.pdf"
+   },
+   {
+    "f": "**Billboard 1968 年 1 月 13 日的 New Album Releases**，BLUE NOTE 段落已列「**JACKIE McLEAN—New and Old Gospel; BLP 4252（誤植，應為 4262）, BST 84262**／DUKE PEARSON—The Right Touch; BLP 5267（誤植）…」；**Billboard 1968 年 1 月 27 日**的評論欄再給四星，但**把掛名誤植為「Various Artists」**：「NEW AND OLD GOSPEL—Various Artists. Blue Note 8LP 4262 (M); BST 84262 (S)」——第 509c 條在同一張碟上連中三次（號碼、掛名都錯），**靠編制／軌數／同批片名交叉定位**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1968/Billboard%201968-01-13.pdf"
+   },
+   {
+    "f": "Discogs `database/search?catno=BST 84262` 回 15 筆：**1968 四筆（三筆美國、一筆日本）對 1967 僅一筆**，另有 1970／1979／1984／1996 再發。**Discogs 原壓群本身就偏 1968**，與紙本同邊——策展層第 571 條當時記為「本批最弱的改判之一」，**本層以 Billboard 1968-01-13 新片欄＋1968-01-27 整版廣告與四星評論把它升為確定**。",
+    "src": "https://api.discogs.com/database/search?catno=BST%2084262"
+   },
+   {
+    "f": "維基 infobox：錄音 1967-03-24、發行「January 1968」（引 Billboard 1968-01-27）、**製作人 Alfred Lion**、長度 41:32、曲風 avant-garde jazz／free jazz。**Ornette Coleman 在這張上吹的是小號不是薩克斯**，這是他極少數以側人身分參與他人 Blue Note 領銜盤的錄音。",
+    "src": "https://en.wikipedia.org/wiki/New_and_Old_Gospel"
+   },
+   {
+    "f": "**串流採信 716131477**：iTunes `lookup?id=716131477&entity=song` 回 3 軌，逐軌與 MB 原盤同序同長——Lifeline Medley 1297s／Old Gospel 640s／Strange As It Seems 551s（MB：1297／641／548），**3 軌全部有 previewUrl**。條目是 2007 RVG 重製（℗ 2007 The Blue Note Label Group），releaseDate 標 1967-03-24＝**錄音日**（第 484 條）。",
+    "src": "https://itunes.apple.com/lookup?id=716131477&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "Ornette Coleman 在這張唱片上不吹薩克斯，改吹小號——這是他極罕見地以側人身分走進別人的 Blue Note 錄音，A 面整面就是一首二十一分半的四段組曲",
+   "1967 年 3 月錄完後壓了將近一年，1968 年 1 月才隨 Blue Note 的整版廣告上市；同一則廣告的主打是 Lou Donaldson 的《Mr. Shing-A-Ling》——廠牌那時正把資源押在 boogaloo 上"
+  ],
+  "sound": "3 軌，一場錄完的前衛／自由爵士五重奏：McLean 的中音對上 Ornette Coleman 的小號，Lamont Johnson 鋼琴、Scott Holt 貝斯、Billy Higgins 鼓。A 面整面是 21 分半的四段組曲〈Lifeline Medley〉（Offering／Midway／Vernzone／The Inevitable End），B 面是 Coleman 作的 10 分半〈Old Gospel〉與 9 分〈Strange as It Seems〉。串流是 2007 RVG 重製版。",
+  "keyTracks": [
+   "Old Gospel",
+   "Lifeline Medley",
+   "Strange as It Seems"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1968 成立，本層把策展層標為「最弱改判之一」的這張升為確定。** MB frd 1967＝錄音年（原盤 fd4dc90b 無月日、status 空）、jazzdisco 目錄頁 1967；但 **Billboard 1968-01-13 New Album Releases 已列為 Blue Note 新片**、**Billboard 與 Cash Box 1968-01-27 同週刊出 Blue Note 整版廣告把它列在「More Great New Albums」**、**Billboard 1968-01-27 另給四星評論**；Discogs `catno=BST 84262` 的 1968 條目（四筆）也多於 1967（一筆）。**四條線同指 1968 年 1 月**，第 571 條原先寫的「實際上市可能 1967 年底」可以撤掉。⚠ 目錄號 4262 不可回推（第 526 條）。",
+  "notes": "**覆核策展層：rgMbid／原盤 fd4dc90b／BST 84262／3 軌／掛名 `Jackie McLean`／年份 1968 全部成立；並把第 571 條列為「最弱改判之一」的 risk 撤掉——Billboard 1968-01-13 新片欄與 01-27 整版廣告是決定性的。**｜⚠ **紙本連錯三處**（第 509c 條）：Billboard 1968-01-13 把 catno 印成「BLP 4252」（那是 Duke Pearson《Sweet Honey Bee》的號）、1968-01-27 評論把掛名印成「Various Artists」、把 BLP 印成「8LP」——**不得引用那則評論的掛名**。｜⚠ **組曲標題三種拼法**：MB／Apple「Lifeline Medley: Offspring / Midway / Vernzone / The Inevitable End」、維基「Lifeline Medley: Offering / …」、jazzdisco「Lifetime: Offspring / …」。**寫作層引組曲名時只寫〈Lifeline Medley〉，不要展開四段的拼法**（沒有一個來源能單獨採信）。｜⚠ **MB 只建 stereo**（BST 84262），mono BLP 4262 沒建；卡上 mono 號出自 Discogs 與 1968-01-27 廣告。｜**製作人**：維基寫 Alfred Lion。｜**Ornette Coleman 吹小號**——這點務必寫對，不要寫成薩克斯。｜**跨卡**：Billy Higgins 在本批《Hi Voltage》《Blackjack》《Slow Drag》《Easterly Winds》都在，**四張各寫各的**（第 576 條第 5 點）。｜**CAA 來源是 1996 XE CD（85dea17e）不是原盤**（第 578 條）。｜**串流採信 716131477**（us，3 軌逐軌與原盤同序，全部有試聽）。**有固定試聽來源。**｜非選輯：單一場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Lou Donaldson|Lush Life",
+  "artist": "Lou Donaldson",
+  "album": "Lush Life",
+  "facts": [
+   {
+    "f": "release-group 6684b613 的欄位：title「Lush Life」、artist-credit「Lou Donaldson」（Person db147d97）、first-release-date 1967、primary-type Album、secondary-types 空。轄下四筆：e0ae63a3「1967 US Blue Note BST 84254、12 吋 7 軌」、**32230f1e 1980 JP Blue Note GXF 3068、12 吋 7 軌、title 作《Sweet Slumber》**、2007 US RVG CD 0946 3 74214 2 0、2007-02-06 XW 數位。**⚠ e0ae63a3 是錯登**：BST 84254 這個實體號的實際年份是 1986（見下條），1967 年沒有任何實體發行。七軌全為標準曲：〈Sweet Slumber〉〈You've Changed〉〈The Good Life〉〈Stardust〉〈What Will I Tell My Heart〉〈It Might as Well Be Spring〉〈Sweet and Lovely〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6684b613-a33d-3d93-bae2-428a3bcc28f8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**jazzdisco 的 Blue Note 4200 系列目錄頁把這張直接列為「BST-84254　Lou Donaldson - Lush Life　1986」，並在場次下方註明「** originally released on Sweet Slumber, Blue Note (J) GXF-3068 in 1980」**——目錄頁自己就寫明 1986 只是美國再發、世界首發是 1980 年的日本盤。**場次：Van Gelder Studio, Englewood Cliffs, NJ, **1967 年 1 月 20 日**，母帶號 1822–1828，編制 Freddie Hubbard（小號）、Garnett Brown（長號）、Lou Donaldson（中音）、Jerry Dodgion（中音、長笛）、**Wayne Shorter（次中音）**、Pepper Adams（上低音）、**McCoy Tyner（鋼琴）**、Ron Carter（貝斯）、Al Harewood（鼓）、**Duke Pearson（編曲）**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-4200-series/"
+   },
+   {
+    "f": "Discogs 兩次 `database/search`：`catno=GXF-3068` 回 **3 筆、全部 1980 日本盤、題《Sweet Slumber》**（含一張限定 promo）；`catno=BST-84254` 回 6 筆，**最早是 1986 三筆（US 兩筆、法國一筆），全部標 Reissue**，其後 2000 JP CD、2014 歐美重製 LP。**兩個號碼的實體年份與 MB 的「1967 US BST 84254」完全對不上，證實 e0ae63a3 是 bare 錯登。**",
+    "src": "https://api.discogs.com/database/search?catno=GXF-3068"
+   },
+   {
+    "f": "**同期紙本的負面證據（第 509b 條）**：本層掃過 Cash Box 1967-01-07 → 1969-06-28 共 130 期（自抓）與 repo 的 Cash Box 1966＋1967 全 105 期全文，**「84254」與「Lush Life」在 1967–69 年間沒有任何一筆指向 Donaldson**——同名條目全是 Nancy Wilson 的 Capitol《Lush Life》（T/ST 2757，1967-08 上市，Cash Box 1967-08-26 評介並進 Top 100）與 Prestige 的 Coltrane 目錄。**1967 年 Blue Note 完全沒有發過這張。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1967/CB-1967-08-26.pdf"
+   },
+   {
+    "f": "**1986 年那個 BST-84254 的來歷**：Cash Box 1984 年 10 月 13 日的爵士專欄記「beginning in January those familiar blue covers will be back… Manhattan Records, and their jazz-loving chief, **Bruce Lundvall**, will be resurrecting Blue Note in a big way. There will be new signings to the label (Jordan and **Stanley Turrentine**, to name two), and **reissues galore (Lundvall guesses 60 to 70 by the end of '85)**. The first product (five new artists, about 15 reissues) will see the light of day in January」——**Blue Note 1985 年在 Manhattan／EMI 體系下重啟、大量翻庫存，本盤的美國首版就是那一波的產物。**",
+    "src": "batch-progress/enum/cashbox-bn-1984-85-ocr.txt"
+   },
+   {
+    "f": "維基（Lush Life, Lou Donaldson album）：錄音 1967-01-20、**發行 1980**、廠牌 Blue Note GXF 3068、製作人 Alfred Lion、長度 35:23；並記「**Due to the success of Donaldson's 《Alligator Bogaloo》(1967) the album was not released until 1980 in Japan under the title 《Sweet Slumber》**」。AllMusic（Stephen Thomas Erlewine）給四顆半：「With its plush arrangements and unabashedly pretty melodies, Lush Life stands in stark contrast to most everything else he cut in the '60s. There are no blues, no stabs at soul-jazz grooves, no hard bop — only sweet, sensitive renditions of romantic standards.」",
+    "src": "https://en.wikipedia.org/wiki/Lush_Life_(Lou_Donaldson_album)"
+   },
+   {
+    "f": "對照：Donaldson 1967 年真正上市的是 **《Alligator Bogaloo》BLP 4263／BST 84263**（Cash Box 1967-12-09 的 Blue Note 目錄表已列；Billboard／Cash Box 1968-01-27 的 Blue Note 整版廣告把後續作《Mr. Shing-A-Ling》BLP-4271 的打語寫成「A Hit Album Following In The Tracks of 'Alligator Boogaloo'」）——**廠牌那兩年把 Donaldson 押在 boogaloo 路線上，這張弦樂式的標準曲盤因此被擱置。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1968/Billboard%201968-01-27.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "1967 年 1 月 20 日這場錄音有 Wayne Shorter、Freddie Hubbard、McCoy Tyner、Ron Carter，還有 Duke Pearson 的編曲——結果整盤被壓進庫房，因為同一年 Donaldson 的《Alligator Bogaloo》大賣，廠牌決定讓他繼續做 boogaloo",
+   "這張碟的世界首發是 1980 年的日本，題名還不是《Lush Life》而是《Sweet Slumber》；美國要等到 1985 年 Bruce Lundvall 把 Blue Note 重新開機、一年翻出六七十張庫存盤，1986 年才輪到它"
+  ],
+  "sound": "7 軌全是抒情標準曲，沒有藍調也沒有 soul jazz：Donaldson 的中音在 Duke Pearson 編給九人編制的織體上走旋律，Freddie Hubbard 小號、Garnett Brown 長號、Wayne Shorter 次中音、Pepper Adams 上低音、Jerry Dodgion 的長笛層層鋪底，McCoy Tyner 鋼琴、Ron Carter 貝斯、Al Harewood 鼓。〈Stardust〉只有三分半，〈Sweet Slumber〉是 1980 年日本首版的題名曲。",
+  "keyTracks": [
+   "Sweet Slumber",
+   "Stardust",
+   "You've Changed"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1980 成立——這是 vault 盤，錄音年與首次商業發行年要分開寫。** **錄音年 1967（1 月 20 日，Van Gelder）**；**首次商業發行年 1980**（日本 King 版 Blue Note GXF 3068，題《Sweet Slumber》，Discogs `catno=GXF-3068` 三筆全 1980，MB 32230f1e、維基 infobox 皆同）；**美國首發 1986**（BST-84254，Discogs 三筆全標 Reissue／1986；jazzdisco 4200 目錄頁直接寫「BST-84254 … 1986」並註明「originally released on Sweet Slumber, Blue Note (J) GXF-3068 in 1980」）。⚠ **推翻 MB**：release e0ae63a3「1967 US BST 84254」是 bare 錯登，**1967 年沒有任何實體**——本層以同期紙本的負面證據獨立確認（Cash Box 1967-01→1969-06 共 130 期自抓＋repo 的 1966–67 全文 105 期，1967–69 年間「84254」／Donaldson《Lush Life》零筆；同期出現的 Lush Life 全是 Nancy Wilson 的 Capitol 盤與 Coltrane 的 Prestige 盤，第 509b 條）。⚠ 目錄號 84254 更不能回推年份（第 526 條的極端例）。",
+  "notes": "**覆核策展層：rgMbid／`year` 1980／`label` 寫 GXF 3068（JP 首發）＋BST 84254（US 1986）／掛名 `Lou Donaldson`／7 軌全部成立，本張未擋下；第 572 條「enum 漏標 vault 盤」的判定本層獨立重現。**｜⚠ **盤名**：卡上照 MB RG title《Lush Life》（現行流通名，第 45 條），**但 1980 年的世界首發實體題名是《Sweet Slumber》**——正文提首發時必須寫出這個題名，不得說「1980 年《Lush Life》在日本發行」。｜⚠ **同名撞擊三處**：池中有 John Coltrane《Lush Life》；同批策展層退掉的 Nancy Wilson《Lush Life》（Capitol T/ST 2757，1967-08，第 570 條退表 #1）；紙本比對務必帶 catno 或藝人名。｜**製作人**：維基寫 Alfred Lion（1967 年那場錄音時 Lion 尚未退休）。｜**擱置原因**：維基寫是因為《Alligator Bogaloo》(1967) 大賣——**這是維基單一來源的因果敘述，正文要寫成「據維基的記載」或只陳述並列事實**（1967 年 Donaldson 上市的是 BLP 4263《Alligator Bogaloo》，1968 年初是 BLP 4271《Mr. Shing-A-Ling》，本盤沒排上），不得斷言為廠牌決策。｜**CAA 來源是年份錯登的 e0ae63a3**（第 578 條），**封面版式應為 1986 年美版**，與 1980 年日版《Sweet Slumber》封面不同（維基有 extra album cover）。｜**跨卡**：McCoy Tyner 在本批另有領銜盤《Tender Moments》與側人盤《Easy Walker》；Duke Pearson 的編曲同期還有本批《Boss Horn》《Standards》——**《Lush Life》與《Standards》是 1967 年 1 月同一週（1/13、1/20）的兩個「標準曲企劃」且都被壓下，可寫成一對，但不得寫成同場**（第 576 條第 2 點）。｜**未跑試聽**：本組探測顯示本張不缺試聽（第 578 條記 Apple us 命中 1442936579，7 軌）。｜非選輯：單一場次的原創專輯。"
+ }
+]
