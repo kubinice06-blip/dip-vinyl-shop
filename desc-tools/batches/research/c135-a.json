@@ -246,5 +246,377 @@
   "status": "full",
   "yearVerified": "一致，**1951**（卡單值成立）。MB first-release-date 1951；**Discogs master 1705301 年份 1951、main_release 5036699 是 1951 年原壓**（另一筆 1955 標 Repress）。同期紙本把 7000 系列夾在 1950 年 9 月（Billboard 1950-09-30 的 LP 上市短訊）與 1951 年 8 月（Billboard 1951-08-25 已預告 BLP 7013／7014）之間，7012 就在 7013 前面。錄音 1944-03-04／1944-06-21／1944-10-26，WOR Studios, NYC。⚠ jazzdisco 記 1953 不採（其 7000 系列年份欄偏晚——它把已被 1951-08-25 Billboard 預告的 7013／7014 也記成 1953）。",
   "notes": "**覆核策展層：MBID／RG／單一 release／BLP 7012／10 吋 6 軌／年份 1951／掛名收攏成立，未擋下。**｜**補正一處拼寫**：MB 末軌寫「Everybody Loves Me Baby」，jazzdisco 與 Discogs 都是「**Everybody Loves My Baby**」，**正文與 keyTracks 用 My**。｜**掛名（第 452 條）**：卡單 `James P. Johnson` 成立（池中 2 張）；MB 的群組字串「James P. Johnson’s Blue Note Jazzmen」含 U+2019，已在 queryAlias，**下游比對時要留意那個彎撇號**。｜**串流：三種查法跑完，判定無來源**（單一條目最高 2/6，且 1944-10-26 那場三軌全網查無）。**標無來源。**｜**封面**：CAA 命中（策展層第 457 條），不需 Discogs 路徑。｜**人名邊界**：Sidney De Paris、Vic Dickenson、Ben Webster、Edmond Hall、Jimmy Shirley、John Simmons、Al Lucas、Arthur Trappier、Sidney Catlett 只有 **jazzdisco 一個來源**（MB 六軌零錄音層關係、Discogs 兩筆無逐項 credits）——⚠ **依第 241／250 條從嚴，正文具名以 Ben Webster 與 Edmond Hall 兩位為限**（兩人的參與同時見於 Mosaic MR6-109 的全集標題與 jazzdisco），其餘寫成「七人編制」。｜**與本組第 4 張（BLP 7007《Jamming in Jazz》）**：兩張共用 1944-06-21 那一場，**但曲目不重疊**（7007 取 Ballin' the Jack／Who's Sorry Now，7012 取 Everybody Loves My Baby／The Call of the Blues）——正文不得寫成同一張碟。｜**性質**：三場 1944 年 78 轉錄音的 LP 整編，非原創錄音室專輯；**有定位，不列建議移除**。"
+ },
+ {
+  "key": "desc2:Art Hodes|Dixieland Clambake",
+  "artist": "Art Hodes",
+  "album": "Dixieland Clambake",
+  "facts": [
+   {
+    "f": "release-group f65ca4cc 的欄位：title「Dixieland Clambake」、**artist-credit 是群組實體「Art Hodes's Hot Seven」**（c92ff6a5）、first-release-date 1951、primary-type Album、secondary-types 空、轄下 1 筆 release。release 1be0880f：1951 US Official、**10 吋黑膠 8 軌**、Blue Note LP 7015。MB 逐軌填了錄音層關係與軌長：〈Willie the Weeper〉175 秒、〈Mr. Jelly Lord〉198 秒、〈I Never Knew What a Gal Could Do〉171 秒、〈Chicago Gal〉181 秒、〈Milenburg Joys〉157 秒、〈Bujie〉188 秒、〈Wolverine Blues〉202 秒、〈Walk on Down〉187 秒；固定班底 Art Hodes（鋼琴）、Bujie Centobie（單簧管）、Jack Lesberg（貝斯）、Chick Robertson（吉他）、Danny Alvin（鼓），其中五軌另加 Max Kaminsky（小號）與 George Lugg（長號）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f65ca4cc-f6d8-419f-8a3d-84d7faed60b0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 把 BLP 7015 記為「Art Hodes And His Hot 7 - Dixieland Clambake」，八軌來自兩場 WOR Studios, NYC 錄音、七人編制自始至終不變（Max Kaminsky 小號、George Lugg 長號、Bujie Centobie 單簧管、Art Hodes 鋼琴、Chick Robertson 吉他、Jack Lesberg 貝斯、Danny Alvin 鼓）：**1945 年 5 月 17 日**出 Chicago Gal／I Never Knew What A Gal Could Do／Mr. Jelly Lord；**1945 年 5 月 23 日**出 Wolverine Blues／Milenberg Joys／Walk On Down／Willie The Weeper／Bujie。同一批 78 轉裡有六面在 1940 年代先編成 10 吋 78 轉套裝「Blue Note 104 — Art Hodes' Hot Seven: A Monday Date At Blue Note」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-7000-series/"
+   },
+   {
+    "f": "Discogs release 4692174 是 **Blue Note LP 7015／BLP 7015、US、1954、10 吋單聲道、標 Repress**（4 張圖）；notes 逐軌標錄音日期（1945-05-17 的 A2–A4、1945-05-23 的 A1 與 B1–B4，與 jazzdisco 相同），並記下三層不同的掛名——**唱片標籤印「Art Hodes' Hot Seven」、背面印「Art Hodes' Hot Seven With Max Kaminsky And Bujie Centobie」、封面印「Art Hodes' Hot 7 With Max Kaminsky And Bujie Centobie」**；credits 逐項列出 Jack Lesberg（貝斯）、Bujie Centobie（單簧管）、Danny Alvin（鼓）、Chick Robertson（吉他）、Art Hodes（鋼琴）、George Lugg（長號）、Max Kaminsky（小號），封面設計 Paul Bacon。Discogs 目前只有這一筆 BLP 7015 條目，沒有建 master。",
+    "src": "https://www.discogs.com/release/4692174"
+   },
+   {
+    "f": "Art Hodes（本名 Arthur W. Hodes，1904-11-14 生於俄羅斯帝國的尼古拉耶夫、今烏克蘭 Mykolaiv，1993-03-04 辭世於伊利諾州 Harvey）是 Blue Note 1940 年代 Dixieland 路線的核心人物之一，同時是樂評與教育者；他在 Blue Note 以 Hot Five、Hot Seven、Chicagoans、Blue Note Jazzmen、Back Room Boys 等好幾個編制名出過碟。英文維基引述他 1981 年的話：「Bebop? Avant-garde? Yeah, I heard of them.」——他終生站在傳統爵士這一邊。",
+    "src": "https://en.wikipedia.org/wiki/Art_Hodes"
+   },
+   {
+    "f": "串流側 us 店面 collectionId **1880523210**《Shine: Hot Jazz at Blue Note》（17 軌，掛「Art Hodes' Hot Five & Art Hodes' Hot Seven」，「A Blue Note Records Release; This Compilation ℗ 1999 Capitol Records, LLC」）：**第 8–17 軌是 Hot Seven 的部分，本盤八軌全部在內**——Chicago Gal（8，181 秒）、I Never Knew Just What A Gal Could Do（9，174 秒）、Mr. Jelly Lord（10，198 秒）、Wolverine Blues（12，201 秒）、Milenberg Joys（13，160 秒）、Walk On Down（14，192 秒）、Willie The Weeper（15，177 秒）、Bujie（17，190 秒），與 MB 原盤軌長差 ≤5 秒，全部有試聽；另有〈At The Jazz Band Ball〉（11）與〈Willie The Weeper〉的 alternate take（16）是加軌，前 7 軌是 Hot Five 1945 年 10 月那場（BLP 7005 的內容）。",
+    "src": "https://itunes.apple.com/lookup?id=1880523210&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一支七人樂團在 1945 年 5 月的兩個下午錄完八面，Blue Note 先把其中六面做成 78 轉套裝，六年後才整張改成 10 吋 LP",
+   "1981 年有人問 Art Hodes怎麼看咆勃與前衛：他說他也聽過那兩個名字，就像聽過有兩個小子說能讓人飛上天一樣——不會流行的"
+  ],
+  "sound": "八軌 10 吋、每軌約三分鐘，1945 年紐約的七人 Dixieland：Max Kaminsky 小號、George Lugg 長號、Bujie Centobie 單簧管的三管集體即興，Art Hodes 的藍調鋼琴在中段出線，Danny Alvin 的鼓維持二拍。曲目多是 Jelly Roll Morton 一系的老曲（〈Mr. Jelly Lord〉〈Wolverine Blues〉〈Milenburg Joys〉）。串流側可逐軌對應到 Blue Note 官方數位整編的後半段。",
+  "keyTracks": [
+   "Mr. Jelly Lord",
+   "Wolverine Blues",
+   "Willie the Weeper"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1951 保留，但只有 MB 一個資料庫來源**（Discogs 沒建 master、唯一那筆 BLP 7015 條目是 1954 年重壓，標 Repress——代表更早有原壓但 Discogs 未建）。同期紙本把 7000 系列夾在 1950 年 9 月（Billboard 1950-09-30 的 LP 上市短訊）與 1951 年 8 月（Billboard 1951-08-25 的 Advance Record Releases 已列 BLP 7013／7014）之間，**7015 緊接在 7014 後面，1951 年成立**。錄音 1945-05-17 與 1945-05-23，WOR Studios, NYC。⚠ jazzdisco 記 1953 不採（其 7000 系列年份欄偏晚，它把 1951 年 8 月就已預告的 7013／7014 也記成 1953）。",
+  "notes": "**覆核策展層：MBID／RG／單一 release／BLP 7015／10 吋 8 軌／掛名收攏成立，未擋下。**｜**補強第 456 條末段點名的「只有 MB 一個來源」**：Discogs 確實只有 1954 年重壓那一筆（4692174），**但它標 Repress、逐軌標錄音日期、附 4 張圖，足以證明實體盤存在**；年份仍以 MB 的 1951 為準，理由見 yearVerified。｜**掛名（第 452 條）**：卡單 `Art Hodes` 成立——**Discogs 記下的三層盤面掛名（標籤 Hot Seven／背面與封面 Hot 7 With Max Kaminsky And Bujie Centobie）顯示 Kaminsky 與 Centobie 是封面共同署名的客座，不是對等領班**；池中 Hodes 零張、MB 另有 Person 實體與四個群組實體，取本名是對的。編制字串已在 queryAlias。｜**串流採信 1880523210**（us，Blue Note 官方數位整編）：**本盤八軌全在第 8–17 軌之間、但不連續也不是前 N 軌，寫作層按曲名配**（第 477 條）；第 11 軌〈At The Jazz Band Ball〉與第 16 軌 alternate take 是加軌，**前 7 軌是 Hot Five 1945 年 10 月那場（BLP 7005《Hot Jazz at Blue Note》的內容，與本盤無關），不得寫進正文**。**有固定試聽來源。**｜**人名邊界**：Max Kaminsky、George Lugg、Bujie Centobie、Jack Lesberg、Chick Robertson、Danny Alvin 有 MB 錄音層＋jazzdisco＋Discogs credits 三重背書，可寫。｜**性質**：兩場 1945 年 78 轉錄音的 LP 整編，非原創錄音室專輯；六面先以 78 轉套裝 Blue Note 104 出過；**有定位，不列建議移除**。"
+ },
+ {
+  "key": "desc2:James Moody|James Moody With Strings",
+  "artist": "James Moody",
+  "album": "James Moody With Strings",
+  "facts": [
+   {
+    "f": "release-group 539cbbde 的欄位：title「James Moody With Strings」、artist-credit「James Moody」（Person cb8c8b87）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 1 筆 release。release c389601c：1952 US Official、**10 吋黑膠 8 軌**、Blue Note BLP 5005；八軌依序 Loving You the Way I Do／Bedelia／Autumn Leaves／So Very Pretty／Singing for You／Shades of Blonde／Jackie My Little Cat／September Serenade。MB 的錄音層關係八軌一致：James Moody（次中音與中音薩克斯風）、**André Hodeir（編曲與指揮）**、Raymond Fol（鋼琴）、Pierre Michelot（貝斯）、Pierre Lemarchand（鼓）、Pepito Riebe（bongo）、Bernard Galais（豎琴）、Max Porret（長笛）、Robert Jeannoutot（雙簧管）、Henri Bellicourt（單簧管）、René Reumont（法國號）、四把小提琴（Marcel Beaujojan、Lionel Gali、Jean Gaunet、Charles Vaudevoir）與兩把大提琴（Robert Jadoux、Guy Rogne）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=539cbbde-0296-44a5-bd01-1a659e8c0a3e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5005 的八軌全部繫在**同一場：1951 年 7 月 13 日，法國巴黎**，母帶編號 V4055–V4062（Loving You The Way I Do／Bedelia／Autumn Leaves／So Very Pretty／Singing For You／Shade Of Blond／Jackie My Little Cat／September Serenade），編制與 MB 相同、André Hodeir 任編曲與指揮。同一段下方明寫「**originally released on Moody's Mood, Vogue (F) LD 018**」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "**Discogs release 15317069 是 Vogue L.D. 018《Moody's Mood》、法國、1951、10 吋單聲道 LP，掛名「James Moody With Strings」**，notes 寫「Recorded in Paris, July 13, 1951」；八軌是 A 面 Aimer Comme Je T'aime／Si Jolie／Les Feuilles Mortes／Chanter Pour Toi、B 面 Bedelia／Une Boucle Blonde／September Serenade／Jackie My Little Cat——**與 BLP 5005 完全同一批八首、只是四首用了法文題名**（Aimer Comme Je T'aime＝Loving You the Way I Do、Si Jolie＝So Very Pretty、Les Feuilles Mortes＝Autumn Leaves、Chanter Pour Toi＝Singing for You、Une Boucle Blonde＝Shades of Blonde）。Discogs 把它與 BLP 5005 收在同一個 master 1506011，main_release 就是這筆法國盤。",
+    "src": "https://www.discogs.com/release/15317069"
+   },
+   {
+    "f": "Discogs release 10087023 是 **Blue Note BLP 5005、US、released 欄 1952 年 4 月 26 日**、10 吋單聲道；同 master 另有 1953 年的三筆同號重壓（29947003／13251973／23140151）。",
+    "src": "https://www.discogs.com/release/10087023"
+   },
+   {
+    "f": "James Moody 1948 年首度替 Blue Note 錄音，同年移居歐洲住了三年，他說自己是被美國的種族歧視「刮傷」（scarred by racism）才走的；那三年他加上中音薩克斯風、在歐洲建立了自己的錄音事業，1952 年才回到美國轉簽 Prestige。本盤這場 1951 年 7 月的巴黎弦樂錄音，是他歐洲三年尾聲的作品。",
+    "src": "https://en.wikipedia.org/wiki/James_Moody_(saxophonist)"
+   },
+   {
+    "f": "串流側三種查法全部落空。`search` us／gb 回的 `1809205170`／`6810538415`《Moody With Strings》是 **1961 年的 Verve 同名專輯**（11 軌：Dorothee／Love For Sale／I Remember Clifford…），與本盤無一軌相同；藝人目錄 `lookup?id=57053&entity=album`（us 46 張、gb 103 張）沒有本盤；直查候選：`461645520`《Moody's Moods, Vol. 1》（AP Music，24 軌）含 Aimer Comme Je T'aime、Si Lolie、Bedilia 三軌，`461726671` Vol. 2（24 軌）含 Chanter pour Toi、Les Feuilles Mortes、September Serenade 三軌，`1750065461`／`1750074898`《The Moody Story · James Moody Septet 1951-1955》Vol. 2／3（Fresh Sound）無一軌相符。**單一條目最高覆蓋 3/8。**",
+    "src": "https://itunes.apple.com/lookup?id=461645520&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "這八首先在法國以 Vogue 的《Moody's Mood》出版，四首曲名還是法文；隔年 Blue Note 換上英文題名、改號 BLP 5005 在美國發行",
+   "編曲與指揮是 André Hodeir——法國那一代最重要的爵士理論家兼作曲家，樂團裡有長笛、雙簧管、法國號、豎琴和一組弦樂"
+  ],
+  "sound": "八軌 10 吋、每軌約三分鐘，1951 年巴黎的一場弦樂編制錄音：四把小提琴、兩把大提琴、豎琴、長笛、雙簧管、單簧管、法國號加節奏部，André Hodeir 的編曲把 Moody 的次中音／中音薩克斯風擺在很前面，〈Autumn Leaves〉是最抒情的一首。串流側無對應配置。",
+  "keyTracks": [
+   "Autumn Leaves",
+   "Loving You the Way I Do",
+   "September Serenade"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **年份異議：卡單 1952 與 `label` 的「Blue Note 原盤」都要重看——本盤的原盤是法國 Vogue L.D. 018《Moody's Mood》（1951）。** 依第 461 條的判準（「原盤」指同一配置的專輯），**Vogue L.D. 018 與 BLP 5005 是同八首、同為 10 吋 LP、Discogs 收在同一個 master 1506011 且 main_release 就是法國盤**，jazzdisco 也明寫「originally released on Moody's Mood, Vogue (F) LD 018」——**建議 `year` 改 1951、`label` 改 Vogue（法國），Blue Note BLP 5005（1952-04-26）寫成美國授權版**。若主線決定維持 Blue Note 配置為主，`year` 1952 有 Discogs release 10087023 的 1952-04-26 支撐。錄音 1951-07-13，巴黎。",
+  "notes": "**擋下策展層一處（原盤他廠未判）**：策展層把本盤當成 Blue Note 原盤處理，**但原盤是 Vogue L.D. 018（法國 1951）**，見 yearVerified——這是第 461 條「同配置才算原盤」的正面案例（Sadi BLP 5061、Clifford Brown BLP 5047 同型）。**策展層 risk 沒有提到 Vogue**；enum 檔的「BN 首發晚原盤 3 年以上」判準抓不到只差一年的這種。**本層不改卡單值，請主線裁定。**｜**串流：三種查法跑完，判定無來源**（單一條目最高 3/8，且分散在兩張公版精選裡、四首還是法文題名）。**標無來源。**｜⚠ **陷阱**：Apple 上有一張 1961 年 Verve 的同名《Moody With Strings》（`1809205170`），**曲目完全不同，不得當成本盤**——第 449 條那個形狀（同名不同碟）。｜**封面**：CAA 命中（第 457 條）。｜**人名邊界**：André Hodeir、Raymond Fol、Pierre Michelot、Pierre Lemarchand、Pepito Riebe、Bernard Galais、Max Porret、Robert Jeannoutot、Henri Bellicourt、René Reumont 與六位弦樂手有 MB 錄音層＋jazzdisco 雙重背書，可寫；**André Hodeir 是本盤最值得寫的人名**（編曲兼指揮，全八軌）。｜**與本組第 9 張（BLP 5006）**：同一位、相鄰目錄號，但**一張是 1951 年巴黎弦樂、一張是 1948 年紐約大編制咆勃，完全不同的錄音**，正文互不混寫。｜**性質**：同一場錄音的完整專輯（非拼盤），但美國版是他廠授權；**不列建議移除**。"
+ },
+ {
+  "key": "desc2:James Moody|James Moody and His Modernists",
+  "artist": "James Moody",
+  "album": "James Moody and His Modernists",
+  "facts": [
+   {
+    "f": "release-group 056ef42f 的欄位：title「James Moody and His Modernists」、**artist-credit 是兩段「James Moody and His Modernists With Chano Pozo」**（Person cb8c8b87 以編制名當 credit-name ＋ Person 505047e5 Chano Pozo）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 1 筆 release。release 61e9034c：1952 US Official、**10 吋黑膠 8 軌**、Blue Note BLP 5006；八軌依序 Workshop／Tin Tin Deo／Oh Henry／Mood's All Frantic／Tropicana／The Fuller Bop Man／Cu-Ba／Moodamorphosis。MB 的錄音層關係顯示固定班底是 Dave Burns 與 Elmon Wright（小號）、Ernie Henry（中音薩克斯風）、James Moody（次中音）、Cecil Payne（上低音）、James Forman Jr.（鋼琴）、Nelson Boyd（貝斯），**四軌鼓手是 Teddy Stewart、四軌是 Art Blakey 並加 Chano Pozo 的 bongo 與人聲**，編曲 Walter「Gil」Fuller。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=056ef42f-f8f3-4d59-84a3-33baf799a808&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5006 記為「James Moody And His Modernists With Chano Pozo」，八軌來自 Apex Studios, NYC 的兩場：**1948 年 10 月 19 日**（鼓 Teddy Stewart，無 Pozo）出 The Fuller Bop Man／Workshop／Oh Henry!／Mooda-Morphosis；**1948 年 10 月 25 日**（鼓 Art Blakey，加 Chano Pozo 的人聲與 bongo）出 Tropicana／Cu-Ba／Moody's All Frantic／Tin Tin Deo。兩場的編制其餘不變（Dave Burns、Elmon Wright 小號，Ernie Henry 中音，Moody 次中音，Cecil Payne 上低音，Hen Gates 鋼琴，Nelson Boyd 貝斯，「Gil」Fuller 編曲）。同段註明這八面 1991 年併進 CD《Art Blakey's Messengers, James Moody's Modernists - New Sounds》（Blue Note CDP 7 84436 2）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs master 315544 的年份是 **1952**、main_release 8473931（US 1952、10 吋單聲道、Blue Note BLP 5006）；同 master 另有標 1951 的 21830869、1955 年的重壓 27364251，以及 1991 年日本 BN 0004 與 1999 年日本 TOJJ-5006 兩次復刻。",
+    "src": "https://www.discogs.com/master/315544"
+   },
+   {
+    "f": "Chano Pozo（本名 Luciano Pozo González，1915-01-07 哈瓦那出生）**1948 年 12 月 2 日在紐約辭世，得年 33**；他是 Dizzy Gillespie 樂團的第一位拉丁打擊樂手，〈Manteca〉與〈Tin Tin Deo〉都有他的共同作曲。本盤 1948 年 10 月 25 日那一場是他生前最後幾次錄音之一，而他共同寫的〈Tin Tin Deo〉就在這張碟裡。",
+    "src": "https://en.wikipedia.org/wiki/Chano_Pozo"
+   },
+   {
+    "f": "James Moody 1948 年首度替 Blue Note 錄音，那是他長達六十年的錄音生涯的起點；同年他移居歐洲住了三年。本盤這兩場 1948 年 10 月的紐約錄音就是那次首錄，四年後才以 10 吋 LP 出版。",
+    "src": "https://en.wikipedia.org/wiki/James_Moody_(saxophonist)"
+   },
+   {
+    "f": "串流側 gb 店面 collectionId **1694443322**《James Moody and His Modernists》（掛「James Moody & Chano Pozo」，公版廠 Grand Avenue，「℗ 1952」）：**8 軌、曲名與曲序與 10 吋原盤逐軌相同**——Workshop 198 秒／Tin Tin Deo 167 秒／Oh Henry 151 秒／Mood's All Frantic 157 秒／Tropicana 184 秒／The Fuller Bop Man 178 秒／Cu-Ba 158 秒／Moodamorphosis 181 秒，八軌全部有試聽。MB 這筆原盤沒有填軌長，無法逐秒比對。",
+    "src": "https://itunes.apple.com/lookup?id=1694443322&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1948 年 10 月 25 日那場錄了〈Tin Tin Deo〉——曲子的共同作者 Chano Pozo 本人打 bongo、唱和聲；五週後他在紐約辭世，33 歲",
+   "這是 James Moody 生涯的第一次錄音，錄完他就搬去歐洲住了三年；Blue Note 把這八面擱到 1952 年才編成 10 吋 LP"
+  ],
+  "sound": "八軌 10 吋、每軌兩分半到三分半，1948 年紐約的九人咆勃大編制：兩把小號、中音／次中音／上低音薩克斯風的管群，Gil Fuller 的編曲把和聲寫得很密。四軌是 Art Blakey 的鼓加上 Chano Pozo 的 bongo 與人聲，Afro-Cuban 節奏與咆勃直接撞在一起（〈Tin Tin Deo〉〈Cu-Ba〉〈Tropicana〉）。串流側可逐軌對應。",
+  "keyTracks": [
+   "Tin Tin Deo",
+   "Cu-Ba",
+   "The Fuller Bop Man"
+  ],
+  "status": "full",
+  "yearVerified": "一致，**1952**（卡單值成立）。MB first-release-date 1952；**Discogs master 315544 年份 1952、main_release 8473931 是 1952 年那筆**（同 master 另有一筆標 1951 的 21830869，但不是 main_release）；jazzdisco 記 1952。錄音 1948-10-19 與 1948-10-25，Apex Studios, NYC。⚠ Discogs 的 21830869 標 1951，是第 454 條列的「差一年」那型，**照資料庫 main_release 與 MB 取 1952**。",
+  "notes": "**覆核策展層：MBID／RG／單一 release／BLP 5006／10 吋 8 軌／年份 1952／掛名收攏成立，未擋下。**｜**串流採信 1694443322**（gb，公版廠 Grand Avenue；依第 359／489 條「灰色再發廠但曲目逐軌相符可採、發行資訊不引店面」）：**8 軌曲名與曲序與原盤完全相同**，是本組少數幾張逐軌全中的。**有固定試聽來源。**｜**掛名（第 452 條）**：卡單 `James Moody` 成立；MB 的「James Moody and His Modernists With Chano Pozo」與店面的「James Moody & Chano Pozo」都已在 queryAlias。**Pozo 只在八軌中的四軌，不是對等領班**，正文不得寫成雙掛名。｜**時序（研究層通則的「與作品直接綁定的後續事件」）**：**Chano Pozo 在 1948-10-25 那場之後五週辭世（1948-12-02，33 歲）**，本盤因此是他生前最後幾次錄音之一，且收了他共同作曲的〈Tin Tin Deo〉——**可寫，但依逝者克制原則只寫時間與年齡，不寫死因細節**。｜**人名邊界**：Dave Burns、Elmon Wright、Ernie Henry、Cecil Payne、Nelson Boyd、Teddy Stewart、Art Blakey、Chano Pozo、Walter「Gil」Fuller 有 MB 錄音層＋jazzdisco 雙重背書，可寫。⚠ **鋼琴手的名字兩邊不同**：MB 寫「James Forman Jr.」、jazzdisco 寫「Hen Gates」（同一人的兩個名字），**正文寫哪一個都會與另一個來源對不上，建議不具名**。｜⚠ **MB 有一個建檔雜訊**：多軌同時掛了「Dave Burnes」與「Dave Burns」兩個實體，**是同一人的重複實體，正文用 Dave Burns**。｜**性質**：兩場 1948 年 78 轉錄音的 LP 整編，非原創錄音室專輯；**有定位（Moody 的首次錄音、Pozo 的末期錄音），不列建議移除**。｜**與本組第 8 張（BLP 5005）**：目錄號相鄰但錄音相隔三年、地點與編制完全不同，正文互不混寫。"
+ },
+ {
+  "key": "desc2:Erroll Garner|Overture to Dawn (The Apartment Sessions, Volume 1)",
+  "artist": "Erroll Garner",
+  "album": "Overture to Dawn (The Apartment Sessions, Volume 1)",
+  "facts": [
+   {
+    "f": "release-group 3ef21ea1 的欄位：title「Overture to Dawn (The Apartment Sessions, Volume 1)」、artist-credit「Erroll Garner」（Person 75bd5186）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 2 筆 release：**543610bd（1952 US Official，10 吋黑膠，題《Overture to Dawn, Volume 1》，Blue Note BLP 5007，只有 3 軌）** 與 3b30d1b6（1999-07-01 GB Official，CD 10 軌，Charly Records）。三軌與軌長：〈I Hear a Rhapsody〉502 秒、〈You Were Born to Be Kissed〉316 秒、〈Overture to Dawn〉534 秒，逐軌錄音層只掛 Erroll Garner（鋼琴）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3ef21ea1-8d17-48ca-b2df-6b4993270cec&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5007 記為「Erroll Garner - Overture To Dawn Vol. 1」，三軌來自兩次同一地點的錄音：**Timme Rosenkrantz 的公寓，紐約，1944 年 12 月 10–12 日**出〈Overture To Dawn〉；**同地 1944 年 12 月 14 日**出〈I Hear A Rhapsody〉（母帶編號 215A 12A／12B 分成 Part 1 與 Part 2）與〈You Were Born To Be Kissed〉。全部是 Garner 的鋼琴獨奏。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Timme Rosenkrantz（1911-07-06～1969-08-11）是丹麥男爵、作家與爵士愛好者，很早就資助黑人爵士樂手、辦演出與錄音。**他 1944 年在自家公寓私錄的那批 Erroll Garner 醋酸盤，是這位鋼琴家最早的錄音**；這些盤後來在 Blue Note 與其他廠牌陸續發行。他 1946 年還籌辦了 Don Redman 全明星樂團的歐洲巡演，是二戰後第一支到哥本哈根與斯德哥爾摩演出的美國爵士樂團。",
+    "src": "https://en.wikipedia.org/wiki/Timme_Rosenkrantz"
+   },
+   {
+    "f": "Discogs 的 Blue Note LP 5007 條目（release 4496736）記 **US、1952、10 吋 LP**，題《Overture To Dawn (Vol. 1)》；同系列另有 LP 5008（4532102，1952）、LP 5014（4208246，1953）、LP 5015（5886119，1953）、LP 5016（6791279，1953）四張，**五卷都沒有建 master、Discogs 各只有一筆條目**。",
+    "src": "https://www.discogs.com/release/4496736"
+   },
+   {
+    "f": "串流側 gb 店面 collectionId **304957904**《Complete Jazz Series 1944 Vol. 2》（18 軌、公版整編廠 CJS，逐軌標錄音日期）含本盤兩軌：〈I Hear a Rhapsody (Parts 1 & 2) (12-14-44)〉**501 秒**與〈You Were Born to Be Kissed (12-14-44)〉**316 秒**——與 MB 原盤的 502 秒／316 秒逐軌相符，全部有試聽；第三軌〈Overture to Dawn (12-10/12-44)〉**535 秒**（MB 534 秒）在同廠的 `305742218`《Complete Jazz Series 1944 Vol. 1》。",
+    "src": "https://itunes.apple.com/lookup?id=304957904&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "一張 10 吋只放三首：三首都超過五分鐘，其中兩首各佔一面，這在 1952 年的爵士 10 吋盤裡很少見",
+   "錄音地點是丹麥男爵 Timme Rosenkrantz 的紐約公寓，1944 年 12 月——那批私人醋酸盤是 Erroll Garner 留下的最早錄音"
+  ],
+  "sound": "三軌 10 吋、約 22 分鐘，1944 年 12 月的鋼琴獨奏：〈I Hear a Rhapsody〉八分二十秒、〈Overture to Dawn〉八分五十四秒，兩首都遠長於當時 78 轉的三分鐘上限，因為它們本來就不是為 78 轉錄的。Garner 二十出頭、左手的和弦推進與右手的延遲樂句已經成形。串流側可逐軌對應到公版整編廠的 1944 年輯。",
+  "keyTracks": [
+   "Overture to Dawn",
+   "I Hear a Rhapsody",
+   "You Were Born to Be Kissed"
+  ],
+  "status": "full",
+  "yearVerified": "一致，**1952**（卡單值成立）。MB first-release-date 1952（10 吋那筆 543610bd 標 1952）；Discogs 的 LP 5007 條目（4496736）記 1952；jazzdisco 記 1952；同系列 5008 亦 1952、5014／5015／5016 為 1953，**卷號與年份的排序自洽**。錄音 1944-12-10～12 與 1944-12-14，紐約 Timme Rosenkrantz 公寓。",
+  "notes": "**覆核策展層：MBID／RG／兩筆 release／BLP 5007／10 吋 3 軌／年份 1952 全部成立，未擋下。**｜**補強第 456 條末段點名的「Garner Vol. 2／3／4 只有 MB 一個來源」**：**Discogs 其實五卷都有條目**（LP 5007＝4496736、5008＝4532102、5014＝4208246、5015＝5886119、5016＝6791279），只是沒建 master、以盤名而非目錄號才搜得到——**策展層那條限制解除，五卷都有第二個資料庫來源**。｜**盤名**：卡單用的長題「Overture to Dawn (The Apartment Sessions, Volume 1)」取自 MB RG title，**而 RG title 是 1999 年 Charly CD 的題法**；10 吋原盤的題名是《Overture to Dawn, Volume 1》（MB release 543610bd 與 Discogs 皆此）。**本層不改卡單，但正文寫到原盤時要用短題**，長題的「Apartment Sessions」副題正好點出錄音地點、不算錯。｜**串流採信 304957904**（gb，公版整編廠 CJS；第 359 條）：**對應本盤的是〈I Hear a Rhapsody〉與〈You Were Born to Be Kissed〉兩軌、軌長與 MB 差 ≤1 秒**；第三軌〈Overture to Dawn〉在同廠 `305742218`。**三軌不在同一個條目裡，寫作層不得寫成整張碟上架。有固定試聽來源。**｜**人名邊界**：全碟只有 Garner 一人；Timme Rosenkrantz 有維基專條與 jazzdisco 雙重背書，可具名。｜**性質**：1944 年私人錄音八年後的首度發行，非錄音室專輯也非現場；MB／Discogs 都未標 Compilation。**有定位（Garner 最早的錄音），不列建議移除**。｜**反同構**：本組還有 Vol. 2（BLP 5008）、Vol. 3（5014）、Vol. 4（5015）三張同源，b 組另有 Vol. 5（5016）。**本張的切入面向＝「三軌超長、Garner 最早的錄音」**，Vol. 2 寫後製疊錄、Vol. 3 寫來源存疑的側人、Vol. 4 寫系列的收尾與卷號分年，互不重覆。"
+ },
+ {
+  "key": "desc2:Erroll Garner|Overture to Dawn, Volume 2",
+  "artist": "Erroll Garner",
+  "album": "Overture to Dawn, Volume 2",
+  "facts": [
+   {
+    "f": "release-group 927fad28 的欄位：title「Overture to Dawn, Volume 2」、artist-credit「Erroll Garner」（Person 75bd5186）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 1 筆 release。release 6f8726c9：1952 US Official、**10 吋黑膠 4 軌**、Blue Note BLP 5008；四軌依序 Autumn Mood／Erroll's Concerto／Floating on a Cloud／I Surrender Dear，逐軌錄音層只掛 Erroll Garner（鋼琴），MB 未填軌長。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=927fad28-f222-408c-bf66-1ffec1b20d89&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5008 的四軌分繫在四個日期，地點都是 **Timme Rosenkrantz 的紐約公寓**：**1944-11-18** 出〈Floating On A Cloud〉、**1944-11-22** 出〈Autumn Mood〉、**1944-12-10～12** 出〈Erroll's Concerto (To You)〉、**1944-12-14** 出〈I Surrender, Dear〉。⚠ **jazzdisco 對最後一軌另加一條註記：「Erroll Garner, piano; George Wettling or maybe Doc West, drums; overdubbed in at a later date, poss. 1953」**——鼓聲是後來（可能 1953 年）疊上去的，鼓手是誰不確定。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs 的 Blue Note LP 5008 條目（release 4532102）記 **US、1952、10 吋 LP**，題《Overture To Dawn (Vol. 2)》。Discogs 未替這五卷建 master，因此沒有版本清單可比對重壓。",
+    "src": "https://www.discogs.com/release/4532102"
+   },
+   {
+    "f": "Timme Rosenkrantz（1911–1969）是丹麥男爵與爵士愛好者，1944 年在自家紐約公寓私錄了一批醋酸盤，那是 Erroll Garner 最早的錄音；Blue Note 從 1952 年起把它們分成五卷 10 吋出版（BLP 5007／5008／5014／5015／5016）。",
+    "src": "https://en.wikipedia.org/wiki/Timme_Rosenkrantz"
+   },
+   {
+    "f": "串流側 gb 店面 collectionId **305742218**《Complete Jazz Series 1944 Vol. 1》（11 軌、公版整編廠 CJS，逐軌標錄音日期）**含本盤全部四軌**：〈Floating On a Cloud (11-18-44)〉613 秒、〈Autumn Mood (11-22-44)〉446 秒、〈I Surrender, Dear (12-?-44)〉146 秒、〈Erroll's Concerto (12-10/12-44)〉337 秒，四軌全部有試聽，錄音日期與 jazzdisco 逐筆相符。同一張還有 Vol. 1（BLP 5007）的〈Overture to Dawn〉與 Vol. 3（BLP 5014）的兩軌。",
+    "src": "https://itunes.apple.com/lookup?id=305742218&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "〈I Surrender Dear〉裡的那組鼓不是 1944 年錄的——目錄註明是後來（可能 1953 年）疊上去的，連鼓手是誰都只能寫「George Wettling 或者 Doc West」",
+   "四首各自錄於 1944 年 11 月到 12 月之間的四個不同日子，地點都是同一間公寓"
+  ],
+  "sound": "四軌 10 吋，1944 年 11–12 月在紐約一間公寓錄下的鋼琴獨奏，長度從兩分半到十分鐘不等（串流側對應版本 146–613 秒）。〈Erroll's Concerto〉是即興的組曲式段落，〈Floating on a Cloud〉最長。錄音是私人醋酸盤，音質與正規錄音室不同。串流側四軌可逐一對應。",
+  "keyTracks": [
+   "Erroll's Concerto",
+   "Floating on a Cloud",
+   "Autumn Mood"
+  ],
+  "status": "full",
+  "yearVerified": "一致，**1952**（卡單值成立）。MB first-release-date 1952；**Discogs 的 LP 5008 條目 4532102 記 1952**（策展層說 Discogs 查無，實為要用盤名搜、不能用目錄號）；jazzdisco 記 1952。錄音 1944-11-18／1944-11-22／1944-12-10～12／1944-12-14，紐約 Timme Rosenkrantz 公寓；⚠ 末軌的鼓聲可能是 1953 年疊錄。",
+  "notes": "**覆核策展層：MBID／RG／單一 release／BLP 5008／10 吋 4 軌／年份 1952 全部成立，未擋下。**｜**推翻第 456 條末段「Garner Vol. 2／3／4 只有 MB 一個來源」**：Discogs 有條目（4532102），只是沒建 master、要用盤名搜。｜**串流採信 305742218**（gb，公版整編廠 CJS；第 359 條）：**本盤四軌全部在內、錄音日期逐筆對得上 jazzdisco**，但**這張 11 軌裡還混了 Vol. 1 與 Vol. 3 的軌，寫作層按曲名配、不得寫成「前 N 軌」**。**有固定試聽來源。**｜⚠ **關鍵發現（寫作層必讀）**：jazzdisco 註明〈I Surrender, Dear〉的鼓是**後期疊錄**（可能 1953 年），鼓手「George Wettling 或者 Doc West」——**正文若提到這件事，只能寫「有一軌的鼓是後來補上去的、鼓手身分沒有定論」，不得具名任一位鼓手**（第 241／250 條）。｜**人名邊界**：碟上只有 Garner 一人；Timme Rosenkrantz 可具名。｜**性質**：1944 年私人錄音的首度發行，MB／Discogs 均未標 Compilation；**有定位，不列建議移除**。｜**反同構**：與本組 Vol. 1（5007）、Vol. 3（5014）、Vol. 4（5015）及 b 組 Vol. 5（5016）同源。**本張的切入面向＝「後期疊錄與身分不明的鼓手」**，不得重寫 Vol. 1 的「Garner 最早錄音」框架。"
+ },
+ {
+  "key": "desc2:Milt Jackson|Wizard of the Vibes",
+  "artist": "Milt Jackson",
+  "album": "Wizard of the Vibes",
+  "facts": [
+   {
+    "f": "release-group 8a8a135a 的欄位：title「Wizard of the Vibes」、artist-credit「Milt Jackson」（Person 2e38e1de）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 5 筆 release：**原盤 f30e0e0a（1952 US Official，10 吋黑膠 8 軌，Blue Note BLP 5011）**、1991-03-12 日本 12 吋 BN 5011（9bb4d9a0，8 軌）、2001 年美國與歐洲的 17 軌 CD（753f6d38／e1a62f9d，Blue Note 7243 5 32140 2 9）、2014 年 8 軌數位版（f9830657）。原盤八軌與軌長：〈Tahiti〉206 秒、〈Lillie〉192 秒、〈Criss Cross〉182 秒、〈Willow Weep for Me〉190 秒、〈What's New〉177 秒、〈Bags' Groove〉161 秒、〈On the Scene〉195 秒、〈Eronel〉192 秒。MB 的錄音層把八軌分成兩組：**Thelonious Monk（鋼琴）、Sahib Shihab（中音薩克斯風）、Al McKibbon（低音提琴）、Art Blakey（鼓）在〈Criss Cross〉〈Willow Weep for Me〉〈Eronel〉三軌；John Lewis（鋼琴）、Lou Donaldson（中音）、Percy Heath（貝斯）、Kenny Clarke（鼓）在其餘五軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8a8a135a-b743-348c-9840-d286f815889a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5011 的八軌分成兩場，全在 WOR Studios, NYC：**1951 年 7 月 23 日**（Sahib Shihab 中音、Milt Jackson 顫音琴、Thelonious Monk 鋼琴、Al McKibbon 貝斯、Art Blakey 鼓）出 Criss-Cross／Eronel／Willow Weep For Me；**1952 年 4 月 7 日**（Lou Donaldson 中音、Jackson 顫音琴、John Lewis 鋼琴、Percy Heath 貝斯、Kenny Clarke 鼓）出 Tahiti／Lillie／Bags' Groove／What's New／On The Scene。同段註明八軌 1954 年也以 Vogue (E) LDE 044 與 Vogue (F) LD 138《Milt Jackson And His New Group》在歐洲發行。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "英文維基的專條把《Wizard of the Vibes》記為 **studio album、1952 年發行、Blue Note BLP 5011、錄音 1951 年 7 月 23 日與 1952 年 4 月 7 日、製作人 Alfred Lion**；同一條目另記 1956 年的 12 吋 BLP 1509《Milt Jackson and the Thelonious Monk Quintet》是把 1948 年 7 月 2 日那場加進來的重組盤（標 compilation album）。",
+    "src": "https://en.wikipedia.org/wiki/Milt_Jackson_and_the_Thelonious_Monk_Quintet"
+   },
+   {
+    "f": "Discogs 的 Blue Note LP 5011 條目歸在 master 178126，最早一筆是 **9932195（US 1952、10 吋、標 Compilation）**，其後有 1953 年的 14195090／33042246、1955 年的 23475257、1953 年法國 Vogue LD 138（4617428）、1991 年日本 BN 0005、1999 年日本 TOJJ-5011 與 2014 年美國復刻。",
+    "src": "https://www.discogs.com/master/178126"
+   },
+   {
+    "f": "串流側 us 店面 collectionId **1442981100**《Wizard of the Vibes》（8 軌、「℗ 2014 Blue Note Records」、releaseDate 1952-01-01）：**曲名與曲序與 10 吋原盤逐軌相同**——Tahiti 208／Lillie 195／Criss Cross（feat. Thelonious Monk Quintet）176／Willow Weep For Me（feat. Thelonious Monk Quintet）181／What's New 193／Bags' Groove 186／On the Scene 164／Eronel（feat. Thelonious Monk Quintet）183 秒，與 MB 原盤差 ≤6 秒，八軌全部有試聽。另有 17 軌的 RVG 版 `724474129`，曲序打散並加入 Monk 1948 年場次與多個 alternate take。",
+    "src": "https://itunes.apple.com/lookup?id=1442981100&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌其實是兩個不同的五重奏：三軌的鋼琴是 Thelonious Monk、五軌是 John Lewis——後者當時正在把現代爵士四重奏的雛形拼起來",
+   "〈Bags' Groove〉在這張碟上只佔兩分四十一秒；Bags 是 Milt Jackson 的綽號，這首後來變成他一輩子的名片"
+  ],
+  "sound": "八軌 10 吋、每軌兩分半到三分半，1951 與 1952 年兩場紐約五重奏錄音。顫音琴當前線、中音薩克斯風配和聲；Monk 那三軌的鋼琴語法稜角分明（〈Criss Cross〉〈Eronel〉是他自己的曲子），John Lewis 那五軌則收斂而重室內感，已經接近後來現代爵士四重奏的聲音。串流側可逐軌對應。",
+  "keyTracks": [
+   "Bags' Groove",
+   "Criss Cross",
+   "Willow Weep for Me"
+  ],
+  "status": "full",
+  "yearVerified": "一致，**1952**（卡單值成立）。MB first-release-date 1952（原盤 f30e0e0a 標 1952）；**Discogs master 178126 最早一筆 9932195 是 1952 年 10 吋**；英文維基專條 1952；jazzdisco 1952。錄音 1951-07-23 與 1952-04-07，WOR Studios, NYC。",
+  "notes": "**覆核策展層：MBID／RG／五筆 release／BLP 5011／10 吋 8 軌／年份 1952／掛名 `Milt Jackson` 全部成立，未擋下。**｜**串流採信 1442981100**（us，8 軌曲名曲序與原盤完全相同、長度差 ≤6 秒）。**有固定試聽來源。**⚠ **另一個 17 軌的 RVG 版 `724474129` 不要採**：它把 Monk 1948 年 7 月的場次與多個 alternate take 併進來、曲序打散，是 12 吋／CD 重組的形狀（第 449 條）。｜**12 吋重組互指（第 453 條）**：本盤內容 1956 年重組進 12 吋 BLP 1509《Milt Jackson and the Thelonious Monk Quintet》（加了 1948-07-02 那場），**英文維基把 1509 標成 compilation、把本盤標成 studio album**——**正文不得把 10 吋與 12 吋寫成兩張不同的錄音**，1509 的 RG 是獨立的、本批刻意不釘。｜⚠ **Discogs 把 1952 年那筆原盤標成 Compilation**，MB secondary-types 空、維基標 studio album——**依第 253／487 條照一般 Album 寫、不走 §5.6**；但正文要誠實寫成「兩場錄音」，不要寫成一次進棚完成的專輯。｜**人名邊界**：Thelonious Monk、Sahib Shihab、Al McKibbon、Art Blakey、John Lewis、Lou Donaldson、Percy Heath、Kenny Clarke 有 MB 錄音層＋jazzdisco 雙重背書，可寫；Alfred Lion（製作）有維基背書。｜**歐洲版**：1954 年 Vogue (E) LDE 044／(F) LD 138 題《Milt Jackson And His New Group》——**那是授權再發、不是原盤**（與本組第 8 張 BLP 5005 的情形不同，那張的 Vogue 版在先）。｜**性質**：兩場錄音的專輯，非拼盤；**不列建議移除**。"
+ },
+ {
+  "key": "desc2:Howard McGhee|Howard McGhee All Stars",
+  "artist": "Howard McGhee",
+  "album": "Howard McGhee All Stars",
+  "facts": [
+   {
+    "f": "release-group e87294ee 的欄位：title「Howard McGhee All Stars」、**artist-credit 是兩段「Howard McGhee All Stars / Howard McGhee」**（群組實體 7724de80 無 type ＋ Person 22b66dc2）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 1 筆 release。release 0e118fd4：1952 US Official、**10 吋黑膠 8 軌**、Blue Note BLP 5012；八軌依序 Meciendo／Lo-Flame／Fluid Drive／Boperation／I'll Remember April／Fuguetta／Donnellon Square／The Skunk。MB 的錄音層把八軌分成兩組：**六軌是 Howard McGhee（小號）、J.J. Johnson（長號）、Brew Moore（薩克斯風）、Kenny Drew（鋼琴）、Curley Russell（低音提琴）、Max Roach（鼓）；兩軌（〈Boperation〉〈The Skunk〉）是 McGhee 與 Fats Navarro 雙小號、Ernie Henry（中音）、Milt Jackson（顫音琴兼鋼琴）、Curley Russell、Kenny Clarke**，〈Boperation〉另掛 Alfred Lion（製作）與 Harry Smith（錄音）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e87294ee-6d4a-4353-b862-40dc4666b8f3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5012 記為「**Howard McGhee's All Stars - The McGhee-Navarro Sextet**」，八軌分兩場：**Apex Studios, NYC 1948 年 10 月 11 日**（Howard McGhee 與 Fats Navarro 雙小號、Ernie Henry 中音、Milton Jackson 顫音琴兼鋼琴、Curley Russell 貝斯、Kenny Clarke 鼓）出 Boperation／The Skunk；**WOR Studios, NYC 1950 年 1 月 23 日**（McGhee 小號、Jay Jay Johnson 長號、Brew Moore 次中音、Kenny Drew 鋼琴、Curley Russell 貝斯、Max Roach 鼓）出 Lo-Flame／Fuguetta／Fluid Drive／Meciendo／Donnellon Square／I'll Remember April。同段註明這八面後來收進 1983 年日本 K18P-9274 與 1998 年的《Howard McGhee / Introducing The Kenny Drew Trio》（Blue Note 7243 4 95747 2 4）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs master 910762 的年份是 **1952**、main_release 7698357（US 1952、10 吋單聲道、Blue Note BLP 5012、題《Howard McGhee》、標 Compilation）；版本清單只有四筆：1952 年原壓、1991 年日本 BN 0006、1999 年日本 TOJJ-5012 兩筆。",
+    "src": "https://www.discogs.com/master/910762"
+   },
+   {
+    "f": "**Billboard 1953 年 10 月 10 日第 40 頁**的專輯評分表另列了「HOWARD McGHEE, VOL. 2 (1-10\") Blue Note 5024」，同號的 Vol. 2 是隔一年的另一張碟；同刊第 48 頁的樂評寫「trumpet-man Howard McGhee and a group of progressive jazzmen sell a collection of original tunes with a lilt on a recently released Blue Note LP. For modernists only.」——1953 年秋的 Blue Note McGhee 盤是 5024，本盤 5012 早它一年多。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-10-10.pdf"
+   },
+   {
+    "f": "串流側 us 店面 collectionId **1657546156**《Howard McGhee All Stars》（8 軌、「A Blue Note Records Release; ℗ 1952 Capitol Records, LLC」、releaseDate 1952-01-01）：**曲名與曲序與 10 吋原盤逐軌相同**——Meciendo 157／Lo-Flame 170／Fluid Drive 173／Boperation 190／I'll Remember April 174／Fuguetta 191／Donnellon Square 171／The Skunk 178 秒，八軌全部有試聽。gb 店面同一個 id。",
+    "src": "https://itunes.apple.com/lookup?id=1657546156&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌裡有兩軌是 1948 年的雙小號對飆——McGhee 跟 Fats Navarro 同台，那兩面 Blue Note 也放進了 Navarro 的紀念盤",
+   "另外六軌錄於 1950 年 1 月，陣容是 J.J. Johnson、Brew Moore、Kenny Drew、Curley Russell、Max Roach，全是原創曲"
+  ],
+  "sound": "八軌 10 吋、每軌兩分半到三分半，兩場咆勃小編制：六軌的六重奏有長號與次中音撐中聲部，兩軌的 1948 年六重奏則是雙小號加顫音琴。曲目幾乎全是團員自己的原創（〈Fluid Drive〉〈Fuguetta〉〈Donnellon Square〉），只有〈I'll Remember April〉是標準曲。串流側可逐軌對應。",
+  "keyTracks": [
+   "Boperation",
+   "Fluid Drive",
+   "I'll Remember April"
+  ],
+  "status": "full",
+  "yearVerified": "一致，**1952**（卡單值成立）。MB first-release-date 1952；**Discogs master 910762 年份 1952、main_release 7698357 是 1952 年 10 吋原壓**；jazzdisco 記 1952。錄音 1948-10-11（Apex Studios）與 1950-01-23（WOR Studios），紐約。同期紙本的旁證：Billboard 1953-10-10 評的 Blue Note McGhee 盤是 **5024（Vol. 2）**，可見 5012 更早。",
+  "notes": "**覆核策展層：MBID／RG／單一 release／BLP 5012／10 吋 8 軌／年份 1952 全部成立，未擋下。**｜**掛名（第 452 條）**：卡單 `Howard McGhee` 成立——MB 的 credit 是「Howard McGhee All Stars / Howard McGhee」兩段、群組實體連 type 都沒填，池中零張、無多數可循，取 Person 實體名是對的；**jazzdisco 的條目名是「Howard McGhee's All Stars - The McGhee-Navarro Sextet」、Discogs 原壓的題名只有「Howard McGhee」**，三個來源三種寫法，全部進 queryAlias。｜**盤名**：卡單《Howard McGhee All Stars》照 MB RG title 與串流條目；**Discogs 原壓題《Howard McGhee》**，差異記在此。｜**串流採信 1657546156**（us，Blue Note 官方數位版，8 軌曲名曲序與原盤完全相同）。**有固定試聽來源。**｜**與本組第 3 張（Navarro《Memorial Album》BLP 5004）**：〈Boperation〉與〈Double Talk〉出自同一場 1948-10-11 錄音，**5004 收〈Double Talk〉、5012 收〈Boperation〉與〈The Skunk〉，曲目不重疊**——正文可以互指那場雙小號錄音，但不得寫成同一張碟。｜**與 b 組／後批的《Howard McGhee, Vol. 2》（BLP 5024）**：是 1953 年的另一張碟（Billboard 1953-10-10 評過），**同一位、相近盤名，上架比對時要連年份一起看**（第 459 條的同題坑）。｜**人名邊界**：J.J. Johnson、Brew Moore、Kenny Drew、Curley Russell、Max Roach、Fats Navarro、Ernie Henry、Milt Jackson、Kenny Clarke 有 MB 錄音層＋jazzdisco 雙重背書，可寫；Alfred Lion（製作）、Harry Smith（錄音）只在 MB 錄音層、且只掛在〈Boperation〉一軌，**不得寫成全碟的製作人**。｜**性質**：兩場 78 轉錄音的 LP 整編（Discogs 標 Compilation、MB secondary-types 空），依第 487 條照一般 Album 寫；**有定位，不列建議移除**。"
+ },
+ {
+  "key": "desc2:Miles Davis|Young Man With a Horn",
+  "artist": "Miles Davis",
+  "album": "Young Man With a Horn",
+  "facts": [
+   {
+    "f": "release-group 093a3235 的欄位：title「Young Man With a Horn」、artist-credit「Miles Davis」（Person 561d854a）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 4 筆 release：**af3a09c5（1952 US Official，10 吋黑膠 6 軌，Blue Note BLP 5013）**、49aa17f3（1952 US 無 status，同規格同號）、ea37d30a（2014 US，Blue Note BLP 5013-45）、3f4d8118（2018-01-06 XW，TP4 Music，數位 20 軌）。原盤六軌與軌長：〈Dear Old Stockholm〉251 秒、〈Chance It〉182 秒、〈Yesterdays〉225 秒、〈Donna〉193 秒、〈Would'n You〉204 秒、〈How Deep Is the Ocean〉279 秒；MB 的錄音層六軌一致：Miles Davis（小號）、J.J. Johnson（長號）、Jackie McLean（中音薩克斯風）、Gil Coggins（鋼琴）、Oscar Pettiford（低音提琴）、Kenny Clarke（鼓）、Alfred Lion（製作）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=093a3235-7271-46d5-9c94-c092edf1fb25&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5013 記為「Miles Davis - Young Man With A Horn」、**年份欄 1953**，六軌全部出自 **WOR Studios, NYC 1952 年 5 月 9 日**一場，母帶編號 BN428–BN433；編制寫「Miles Davis, trumpet; Jay Jay Johnson, trombone #1-4; Jackie McLean, alto sax #1-4; \"Gil\" Coggins, piano; Oscar Pettiford, bass; Kenny Clarke, drums」——**Johnson 與 McLean 只列在前四個母帶號上**。同段註明八軌後來以 Vogue (E) LDE 028（1954）與 Vogue (F) LD 122（1954）在歐洲發行。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "**Billboard 1953 年 3 月 21 日第 52 頁的「Hot Jazz」新片評論**：「YOUNG MAN WITH A HORN — Miles Davis (1-10\") — **Blue Note (33) LP 5013**」，評分 65，評語開頭寫「Modern jazz aficionados, and those who enjoy Davis' trumpet work should listen to **this new release**」，並點名〈Dear Old Stockholm〉〈Yesterdays〉〈How Deep Is the Ocean〉。**這是 BLP 5013 在同期紙本上被當成新發行評論的日期。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-03-21.pdf"
+   },
+   {
+    "f": "Discogs master 531795 的年份是 **1953**，main_release 27411597（US，**released 欄 1953 年 3 月**，10 吋 LP，Blue Note BLP 5013）；版本清單裡的 1953 年美國原壓有五筆（11725031／4462636／21831544／27411597 與無年份的 30036490），法國 Vogue L.D. 122 亦 1953，**沒有任何一筆標 1952**。後續是 1999 年日本 TOJJ-5013、2002 年與 2014 年美國復刻。",
+    "src": "https://www.discogs.com/master/531795"
+   },
+   {
+    "f": "串流側 us 店面 collectionId **1886576377**《Young Man With A Horn - EP》（6 軌、「A Blue Note Records Release; ℗ 1953 Capitol Records, LLC」、**releaseDate 1953-03-01**、掛「Miles Davis Sextet」）：六軌與原盤同名同數、長度差 ≤2 秒（Dear Old Stockholm 251／Would'n You 204／Yesterdays 223／Chance It 182／Donna 194／How Deep Is The Ocean 279 秒），全部有試聽；**曲序與 MB 原盤不同**（Apple 把 Would'n You 排第 2、Chance It 排第 4）。Apple 把 6 軌的 10 吋盤標成「- EP」，那是店面的長度規則。",
+    "src": "https://itunes.apple.com/lookup?id=1886576377&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 在 1953 年 3 月 21 日把它當成新片評論，給了 65 分——「給現代爵士的行家，以及喜歡 Davis 小號的人」",
+   "六軌一次錄完，1952 年 5 月 9 日的 WOR Studios：Miles 二十六歲，長號是 J.J. Johnson，中音是十九歲的 Jackie McLean"
+  ],
+  "sound": "六軌 10 吋、約 22 分鐘，1952 年一場六重奏錄音：小號、長號、中音薩克斯風的三管前線加上鋼琴三重奏。〈Dear Old Stockholm〉四分十一秒與〈How Deep Is the Ocean〉四分三十九秒是最長的兩首，其餘三分鐘上下。Miles 這時期的音色已經收斂、不炫技。串流側可逐軌對應（曲序不同）。",
+  "keyTracks": [
+   "Dear Old Stockholm",
+   "Donna",
+   "How Deep Is the Ocean"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與卡單不合，建議改判 1953**（卡單 1952）。**同期紙本：Billboard 1953 年 3 月 21 日第 52 頁把「Blue Note (33) LP 5013」當成 this new release 刊出評論（評分 65）**；同刊 1953-03-07 第 37 頁評的是 BLP 5018、1953-10-03／10-10／10-31 才評到 5020／5021／5023／5024／5025 與 5022，**整個 5013–5025 區段的評論都落在 1953 年**。資料庫側：**Discogs master 531795 年份 1953、main_release 27411597 的 released 欄是 1953 年 3 月，五筆美國 10 吋條目零筆標 1952**；jazzdisco 亦 1953；Apple 官方數位版 releaseDate 1953-03-01、℗ 1953。**MB 的 1952 是本盤唯一的 1952 說，且 1952 正是錄音年（1952-05-09）**——第 311／364 條那個「把錄音年當發行年」的形狀。錄音 1952-05-09，WOR Studios, NYC。",
+  "notes": "**擋下策展層一處（年份）＋補齊第 454 條指名要找的一手來源**：第 454 條說「5013 是四張裡最可能翻的，真要翻要拿 Blue Note 目錄頁或同期 Down Beat／Billboard 廣告」——**拿到了：Billboard 1953-03-21 第 52 頁的新片評論**，見 yearVerified。**建議卡單改 1953；本層不改卡單值。**｜**串流採信 1886576377**（us，Blue Note 官方數位版，6 軌同名同數、長度差 ≤2 秒）。⚠ **曲序與原盤不同，寫作層按曲名配、不得用「前 N 軌」**。**有固定試聽來源。**⚠ **Apple 標「- EP」是店面對 6 軌 10 吋盤的標法，不是本專案的 EP 判定**（MB primary-type Album），上架時別被擋掉（第 458 條）。｜**12 吋重組互指（第 453 條）**：本盤內容 1955 年重組進 12 吋 BLP 1501《Miles Davis, Volume 1》，**而 MB 把 1501 標成 Album+Compilation、列舉檔已濾掉**（第 312 條已記為 §5.6 候補）。**正文不得把 10 吋與 12 吋寫成兩張不同的錄音。** 串流側的 `1443224843`《Miles Davis, Vol. 1》（12 軌、1955）就是 12 吋那張的形狀，不要拿來當本盤的試聽。｜⚠ **編制有一處兩說**：MB 六軌都掛 J.J. Johnson 與 Jackie McLean，**jazzdisco 只把兩人列在前四個母帶號（BN428–BN431）上**。串流條目掛「Miles Davis Sextet」但第 4 軌〈Chance It〉掛的是「Miles Davis」單名。**正文寫成六重奏可以，但不要斷言兩人參與全部六軌。**｜**人名邊界**：J.J. Johnson、Jackie McLean、Gil Coggins、Oscar Pettiford、Kenny Clarke 有 MB 錄音層＋jazzdisco 雙重背書，可寫；Alfred Lion（製作）有 MB 錄音層背書。｜**性質**：一場錄音的原創錄音室專輯；**不列建議移除**。｜**與本組第 19 張（BLP 5022《Miles Davis, Vol. 2》）**：不同場錄音（1953-04-20）、不同編制，正文互不混寫。"
+ },
+ {
+  "key": "desc2:Horace Silver|New Faces New Sounds",
+  "artist": "Horace Silver",
+  "album": "New Faces New Sounds",
+  "facts": [
+   {
+    "f": "release-group c1b1cbe8 的欄位：title「New Faces New Sounds」、**artist-credit 是群組實體「The Horace Silver Trio」**（e8c90011）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 2 筆 release：**936255f4（1952 US Official，10 吋黑膠 8 軌，題《New Faces - New Sounds》，Blue Note BLP 5018）** 與 c8d37a1d（2014-06-25 數位 11 軌）。原盤八軌依序 Safari／Ecaroh／Prelude to a Kiss／Thou Swell／Quicksilver／Horoscope／Yeah／Knowledge Box；MB 的錄音層八軌都掛 Horace Silver（鋼琴）、Art Blakey（鼓）、Alfred Lion（製作）、Doug Hawkins（錄音），**貝斯手四軌是 Gene Ramey、四軌是 Curley Russell**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c1b1cbe8-8965-4017-83cb-add9ae6448b2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5018 記為「Horace Silver - New Faces-New Sounds」、**年份欄 1953**，八軌分兩場，都在 WOR Studios, NYC：**1952 年 10 月 9 日**（Horace Silver 鋼琴、Gene Ramey 貝斯、Art Blakey 鼓）出 Horoscope／Safari／Thou Swell；**1952 年 10 月 20 日**（貝斯換 Curly Russell）出 Quicksilver／Ecaroh／Yeah!／Knowledge Box／Prelude To A Kiss。同段註明這八軌 1954 年也以 Vogue (E) LDE 065 與 (F) LD 176《Horace Silver Trio》在歐洲發行。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "**Billboard 1953 年 3 月 7 日第 37 頁的新片評論**：「NEW FACES - NEW SOUNDS — Horace Silver Trio (1-10\") — **Blue Note (33) LP 5018**」，評分 70，評語寫「Horace Silver, a new young pianist on the modern jazz scene, shows off a powerful and facile style on this collection of tunes, which features Silver, Curley Russell and Gene Ramey on bass and Art Blakey on drums.」——**四位樂手的名字與兩位貝斯手並列的事實，同期紙本就寫明了。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-03-07.pdf"
+   },
+   {
+    "f": "**Billboard 1953 年 4 月 11 日第 43 頁**另評了同批錄音拆出的 78／45 轉單片：「HORACE SILVER — Safari — 75 — **BLUE NOTE 1608** — Horace Silver, a bright new face on the jazz scene, demonstrates his unusual piano technique and agility on this wild and…」；同版面還有 Blue Note 1605（The Swingin' Swedes）與 1609（Lou Donaldson《Sweet Juice》，評語點名 Horace Silver 的鋼琴、Percy Heath 的貝斯與 Art Blakey 的鼓）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-04-11.pdf"
+   },
+   {
+    "f": "Discogs master 487897 的年份是 **1953**、main_release 2169167（US 1953、10 吋單聲道、Blue Note BLP 5018、題《New Faces - New Sounds》）；版本清單：1954 年英國 Vogue L.D.E. 065《Horace Silver Trio》、法國 LD 176、1991 年日本 BN 0008、1999 年日本 TOJJ-5018 兩筆，**沒有任何一筆標 1952**。",
+    "src": "https://www.discogs.com/master/487897"
+   },
+   {
+    "f": "串流側 gb 店面 collectionId **1761809320**《New Faces New Sounds》（掛「Horace Silver Trio」、公版廠 Tone Records、「℗ 2023」）：**8 軌曲名與曲序與 10 吋原盤逐軌相同**——Safari 173／Ecaroh 193／Prelude to a Kiss 172／Thou Swell 177／Quicksilver 184／Horoscope 232／Yeah 171／Knowledge Box 170 秒，八軌全部有試聽。MB 原盤未填軌長，無法逐秒比對。",
+    "src": "https://itunes.apple.com/lookup?id=1761809320&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 1953 年 3 月 7 日給了 70 分，形容他是「爵士場上的新面孔、一種有力而流暢的風格」——那年他二十四歲",
+   "八軌分兩次錄，只有貝斯手換了人：一場是 Gene Ramey、一場是 Curley Russell，鼓永遠是 Art Blakey"
+  ],
+  "sound": "八軌 10 吋、每軌三分鐘上下，1952 年秋兩場鋼琴三重奏錄音。五首是 Silver 自己的曲子（〈Safari〉〈Ecaroh〉——他名字倒過來拼、〈Quicksilver〉〈Horoscope〉〈Knowledge Box〉），〈Thou Swell〉與〈Prelude to a Kiss〉是標準曲。左手的重音與藍調語彙已經是後來 hard bop 的雛形，Art Blakey 的鼓在後面推。串流側可逐軌對應。",
+  "keyTracks": [
+   "Ecaroh",
+   "Safari",
+   "Quicksilver"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **與卡單不合，建議改判 1953**（卡單 1952）。**同期紙本：Billboard 1953 年 3 月 7 日第 37 頁把「Blue Note (33) LP 5018」當成新片評論刊出（評分 70）**；同批錄音拆出的單片 Blue Note 1608〈Safari〉在 1953-04-11 第 43 頁受評。資料庫側：**Discogs master 487897 年份 1953、main_release 2169167 是 1953**，版本清單零筆 1952；jazzdisco 亦 1953。**MB 的 1952 是唯一的 1952 說，而 1952 正是錄音年（1952-10-09／1952-10-20）**——與本組第 14 張同一個形狀（第 311／364 條）。",
+  "notes": "**擋下策展層一處（年份）**：第 454 條把 5018 列為「MB 1952 vs Discogs 1953」其中一張、照第 364 條取 MB；**同期紙本推翻——Billboard 1953-03-07 的新片評論把它釘在 1953 年 3 月**，見 yearVerified。**建議卡單改 1953；本層不改卡單值。**｜**串流採信 1761809320**（gb，公版廠 Tone Records；依第 359／489 條「逐軌相符可採、發行資訊不引店面」）：**8 軌曲名曲序與原盤完全相同**。**有固定試聽來源。**｜**掛名（第 452 條）**：卡單 `Horace Silver` 成立（池中 8 張）；MB 的群組字串「The Horace Silver Trio」與店面掛名已在 queryAlias。**Billboard 的評論也用「Horace Silver Trio」**，那是編制名不是另一個藝人。｜**12 吋重組互指（第 453 條）**：本盤與 b 組的 BLP 5034《Horace Silver Trio, Vol. 2》1956 年合併成 12 吋 BLP 1520《Horace Silver Trio》（RG bafa443c，已在 c-136 a），**`risk` 三邊互指、正文不得寫成兩張不同的錄音**。｜**盤名（第 459 條的同題坑）**：「New Faces – New Sounds」是 Blue Note 5000 系列的新人系列名，本批與後批至少還有 Gil Mellé 5020、Lou Donaldson 5021、Kenny Drew 5023、Wynton Kelly 5025、Julius Watkins 5053、Jutta Hipp 5056 同題，**上架比對盤名時要連掛名一起看**。｜**人名邊界**：Art Blakey、Gene Ramey、Curley Russell 有 MB 錄音層＋jazzdisco＋**Billboard 評論原文**三重背書，可寫；Alfred Lion（製作）、Doug Hawkins（錄音）有 MB 錄音層背書。｜**性質**：兩場錄音的原創專輯（曲目五首自作），非拼盤；**不列建議移除**。"
  }
 ]

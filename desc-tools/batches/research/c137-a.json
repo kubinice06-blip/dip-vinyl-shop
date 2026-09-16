@@ -130,5 +130,337 @@
   "status": "full",
   "yearVerified": "⚠ **卡單 1958 成立，但本層要記一筆對立證據**。支持 1958 的：**Billboard 1958-01-27 p29 的新爵士專輯評論欄評了本盤**（編制逐項相符），**Billboard 1958-01-06 p53 的新片名單已列出本盤**；維基 infobox「Early January 1958」並引同一份 Billboard；Apple ℗1958、releaseDate 1958-01-01；維基分類「1958 albums」。支持 1957 的：**jazzdisco 1500 系列目錄把 BLP 1572 記為 1957**；Discogs 最早原壓條目記 1957；MB first-release-date 1957。兩邊都是硬來源（第 431 條的「廠牌目錄頁」vs「同期紙本」），差距只有一年、且成因是「1957 年底壓片、1958 年 1 月上市」。**依第 262 條「year 取首發年」＋同期紙本優先，維持卡單 1958**，1957 說寫進 risk。錄音 1957-08-04。",
   "notes": "**覆核策展層：MBID／RG／三筆 release／原盤 BLP 1572 6 軌／年份改判 1958 成立，未擋下。** 本層補上策展層沒有的一手佐證（Billboard 1958-01-27 p29 評論原文＋1958-01-06 p53 新片名單），並**新增一筆策展層沒查到的對立證據：jazzdisco 目錄與 Discogs 原壓條目都記 1957**——見 yearVerified，主線若要改回 1957 有據可依，但本層建議維持 1958。｜**MB 建檔問題**（第 498 條已記，本層確認）：91c90410 是無日期／無國別／無載體／無廠牌的殘缺 release，522f726c 是無日期數位。｜**串流採信 1445790951**（us，6 軌逐軌相同）。**有固定試聽來源。**｜**人名邊界**：Tate Houston／Sonny Clark／Paul Chambers／Art Taylor 有 MB＋jazzdisco＋Billboard＋維基四重背書，可寫；Tom Hannan（設計）、Francis Wolff（攝影）、Leonard Feather（文案）只在維基，可不提。｜⚠ **編制的細節不要寫死**：維基標註 Fuller 缺席第 5 軌、Houston 缺席第 4 軌，但維基自己掛 {{Citation needed}} 並註明「是編輯自己聽出來的」；jazzdisco 的 #1-3,5,6 與 #1-4,6 標註與維基不完全一致，**正文只寫「兩人並非每軌都上」或乾脆不提**。｜**同名撞擊（第 496 條）**：同批另有 Curtis Fuller《Volume 3》（BLP 1583），與池中／c-136 b 的 Lee Morgan《Vol. 3》、Bud Powell《…Vol. 3》會混，比對帶 BLP 號。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Curtis Fuller|Volume 3",
+  "artist": "Curtis Fuller",
+  "album": "Volume 3",
+  "facts": [
+   {
+    "f": "release-group 6bb3522b 的欄位：title「Volume 3」、artist-credit「Curtis Fuller」（Person 實體）、first-release-date 1957、primary-type Album、secondary-types 空。轄下只有兩筆：**原盤 6aae4563 是 1957 US Official Blue Note BLP 1583、12 吋 6 軌**（日期無月日），以及 2022-02-07 XW 數位 Blue Note（8b8b7c23，6 軌）。原 LP 6 軌：〈Little Messenger〉6:18、〈Quantrale〉6:12、〈Jeanie〉6:48、〈Carvon〉6:56、〈Two Quarters of a Mile〉6:30、〈It's Too Late Now〉6:53。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6bb3522b-5101-4596-aff0-75c2812131fb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1500 系列目錄把 BLP 1583《Curtis Fuller Vol. 3》記為 **1960** 年出版，錄音卻是 **1957 年 12 月 1 日 Van Gelder Studio, Hackensack, NJ**：Art Farmer（trumpet）、Curtis Fuller（trombone）、Sonny Clark（piano）、George Tucker（bass）、Louis Hayes（drums），母帶 tk.3 Quantrale、tk.4 Two Quarters Of A Mile、tk.6 Little Messenger、tk.8 Too Late Now、tk.9 Jeanie、tk.12 Carvon。**錄完到出版隔了三年**；同一份目錄裡緊鄰的 BLP 1579《Sonny Clark Trio》記 1958、BLP 1587《Back On The Scene》記 1958，1583 是這一段唯一被押後到 1960 的號。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+   },
+   {
+    "f": "英文維基開頭直接寫「recorded on December 1, 1957 but not released on Blue Note until late 1960」，infobox 記發行「December 1960」並引 Billboard 1961 年 1 月 16 日；五重奏為 Art Farmer、Sonny Clark、George Tucker、Louis Hayes；製作 Alfred Lion、錄音與母帶 Rudy Van Gelder、攝影 Francis Wolff、文案 Nat Hentoff。〈It's Too Late Now〉為 Burton Lane 與 Alan Jay Lerner 作，其餘由 Fuller 作。AllMusic 給三星。",
+    "src": "https://en.wikipedia.org/wiki/Curtis_Fuller,_Volume_3"
+   },
+   {
+    "f": "Discogs 以 catno 反查 BLP 1583：US 原壓條目年份記 **1960**，其後是 1966 US 再壓、1978 日本 GXK 8039(M)、1984 日本 BLP 1583。",
+    "src": "https://www.discogs.com/search/?catno=BLP+1583"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 1445792305）盤名「Volume 3」、掛名 Curtis Fuller、6 軌、releaseDate 1957-01-01、「A Blue Note Records Release; ℗ 1957 Capitol Records, LLC」；6 軌曲名曲序與 BLP 1583 原盤逐軌相同、長度差 ≤3 秒（〈Little Messenger〉376 秒、〈It's Too Late Now〉413 秒），全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1445792305&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1957 年 12 月 1 日錄完，帶子在 Blue Note 的架上躺了三年——目錄號 1583 排在 1957 年那一段，唱片卻要到 1960 年年底才上市",
+   "Art Farmer 的小號與 Fuller 的長號，配 Sonny Clark、George Tucker、Louis Hayes：六首都在六分鐘上下，是一張刻意讓每個人都吹夠的碟"
+  ],
+  "sound": "6 軌、約 38 分 49 秒，每軌都在六分半上下、長度整齊得像刻意排的：Art Farmer 的小號與 Fuller 的長號齊奏主題後各自展開，Sonny Clark 的鋼琴、George Tucker 的貝斯與 Louis Hayes 的鼓維持中速搖擺。五首 Fuller 原創加一首〈It's Too Late Now〉。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Little Messenger",
+   "Quantrale",
+   "Carvon"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ 與 MB 不合但**卡單 1960 成立**（策展層第 492 條改判覆核成立）：MB first-release-date 1957 ＝錄音年（1957-12-01），原盤 release 無月日；**jazzdisco 1500 系列目錄 BLP 1583＝1960**；**Discogs US 原壓條目＝1960**；維基正文「not released on Blue Note until late 1960」、infobox「December 1960」並引 Billboard 1961-01-16。本層另掃了 worldradiohistory 的 Billboard 1957-10～1959-12 共 117 期與 1960 年 11–12 月各期，**全段沒有 BLP 1583 的評論或廣告**，與「1960 年底才上市」相符（1961 年 1–3 月各期該站缺檔，未能直接取得維基所引的 1961-01-16 那期）。Apple 的 1957-01-01／℗1957 是資料庫 placeholder，不採（第 484 條）。年份 1960。",
+  "notes": "**覆核策展層：MBID／RG／兩筆 release／原盤 BLP 1583 6 軌／年份改判 1960 全部成立，未擋下。** 本層補了兩個策展層沒用的獨立來源（jazzdisco 目錄頁 1960、Discogs 原壓 1960），**三邊互相獨立、都指 1960**。｜**壓盤延遲三年是本張的主故事**，但**不要寫成「Blue Note 唯一一次」**——同批的 Kenny Burrell《Blue Lights, Volume 2》（BLP 1597）也有同樣形狀（jazzdisco 與 Discogs 都記 1961，見該卡），**正文不得寫成孤例**（第 253 條）。｜**同名撞擊（第 496 條）**：《Volume 3》這個盤名在池中與同線會撞 Lee Morgan《Vol. 3》（BLP 1557，c-136 b）與 Bud Powell《The Amazing Bud Powell Vol. 3》（BLP 1571），**正文與店面比對務必帶 BLP 1583 與掛名**。｜**串流採信 1445792305**（us，6 軌逐軌相同）。**有固定試聽來源。**⚠ 該條目的年份與 ℗ 都標 1957，**寫作層不得引店面年份**。｜**人名邊界**：Art Farmer／Sonny Clark／George Tucker／Louis Hayes 有 MB＋jazzdisco＋維基三重背書，可寫；Nat Hentoff（文案）、Francis Wolff（攝影）只在維基，可不提。｜維基分類欄寫「1961 albums」、正文與 infobox 寫 1960，**分類欄不採**。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:John Jenkins with Kenny Burrell|John Jenkins with Kenny Burrell",
+  "artist": "John Jenkins with Kenny Burrell",
+  "album": "John Jenkins with Kenny Burrell",
+  "facts": [
+   {
+    "f": "release-group 6758780e 的欄位：title「John Jenkins with Kenny Burrell」、artist-credit 由兩個 Person 實體「John Jenkins」與「Kenny Burrell」串成、first-release-date 1957、primary-type Album、secondary-types 空。轄下三筆：**371ccb97 日期只有「1957」、國別／載體／廠牌／軌數欄全空（bare release）**；1996 US CD Blue Note CDP 7243 8 52437 2 1（434478e2，8 軌）；2009-09 US 12 吋 Music Matters MMBLP-1573（74086d42，MB 只建 3 軌）。原盤的目錄號與軌目 MB 沒有登錄，須由 jazzdisco 與 Discogs 補。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6758780e-0e98-4244-83fb-311394d90d6f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1500 系列目錄把 BLP 1573《John Jenkins With Kenny Burrell》記為 **1957** 年出版，錄音 **1957 年 8 月 11 日 Van Gelder Studio, Hackensack, NJ**：John Jenkins（alto sax）、Sonny Clark（piano）、Kenny Burrell（guitar）、Paul Chambers（bass）、Dannie Richmond（drums），母帶 tk.2/1 Chalumeau、tk.3 From This Moment On、tk.4 Motif、tk.5 Everything I Have Is Yours、tk.7/6 Sharon、tk.9 Blues For Two；1996 年以 CDP 7243 8 52437 2 1 再發。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+   },
+   {
+    "f": "英文維基：1957 年 8 月 11 日錄音、同年由 Blue Note 發行；原 LP 六軌 A 面〈From This Moment On〉7:37、〈Motif〉6:14、〈Everything I Have Is Yours〉6:10，B 面〈Sharon〉7:47、〈Chalumeau〉5:56、〈Blues for Two〉4:42（〈Blues for Two〉是 Burrell 的曲、〈From This Moment On〉是 Cole Porter、〈Everything I Have Is Yours〉是 Harold Adamson 與 Burton Lane，其餘 Jenkins 作）；1996 CD 加兩軌〈Sharon〉〈Chalumeau〉的另一個 take。製作 Alfred Lion、錄音 Rudy Van Gelder、設計 Tom Hannan、攝影 Francis Wolff、文案 Ira Gitler。AllMusic 的 Scott Yanow：Jenkins「聽起來時而像 Charlie Parker（帶點 Phil Woods 與 Jackie McLean 的影子），輕鬆跟上比他有名得多的樂手……聽完這套高水準的錄音，你會納悶 Jenkins 為什麼沒紅起來」。",
+    "src": "https://en.wikipedia.org/wiki/John_Jenkins_with_Kenny_Burrell"
+   },
+   {
+    "f": "Discogs 以 catno 反查 BLP 1573：**US 原壓條目年份記 1957**，其後是 1972 US 再壓、1981 日本 GXK-8214、1984／1990 日本 BLP 1573／BN 1573、1999 與 2005 的日本 CD（TOCJ-9150、TOCJ-6557）。",
+    "src": "https://www.discogs.com/search/?catno=BLP+1573"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 724874808）盤名「John Jenkins With Kenny Burrell」、掛名「John Jenkins & Kenny Burrell」、8 軌、releaseDate 1957-01-01、「℗ 1996 Blue Note Records」；**前 6 軌曲名曲序與原 LP 逐軌相同**（〈From This Moment On〉460 秒、〈Motif〉377 秒、〈Everything I Have Is Yours〉373 秒、〈Sharon (Mono)〉469 秒、〈Chalumeau (Mono)〉359 秒、〈Blues For Two〉284 秒），第 7、8 軌是店面標為 Stereo 的〈Sharon〉〈Chalumeau〉，全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=724874808&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "AllMusic 的評語停在一個問號：Jenkins 在這張碟上輕鬆跟上 Sonny Clark、Paul Chambers 這些比他有名得多的人，「你會納悶他為什麼沒紅起來」",
+   "鼓手是 Dannie Richmond——那一年他剛跟上 Charles Mingus，這是他少數幾次出現在 Blue Note 錄音室的場合"
+  ],
+  "sound": "6 軌、約 38 分鐘（1996 CD 版 50 分 51 秒），中音薩克斯風與電吉他的雙前線：Jenkins 的中音偏 Parker 一路的直線咆勃，Burrell 的吉他接在後面走藍調，Sonny Clark、Paul Chambers、Dannie Richmond 的節奏組推著跑。三首 Jenkins 原創（〈Motif〉〈Sharon〉〈Chalumeau〉）加 Burrell 的〈Blues for Two〉與兩首標準曲。串流側歸「Jazz」。",
+  "keyTracks": [
+   "From This Moment On",
+   "Motif",
+   "Blues for Two"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1957（首發年）。**策展層第 491 條「列舉檔 note『BN 首發 1996』是假警報」覆核成立**：MB 轄下 1957 那筆 371ccb97 確實是欄位全空的 bare release（label-info／media／country 皆空），列舉檔的腳本因此跳到 1996 CD；但 **jazzdisco 1500 系列目錄 BLP 1573＝1957**、**Discogs US 原壓條目＝1957**、維基 infobox「1957」三邊一致，原廠就是 Blue Note、不走簡報一.3 他廠形。錄音 1957-08-11。⚠ 本層另掃了 Billboard 1955-10～1959-12，**未找到 BLP 1573 的新片評論**（1957-08-19 那期的 Blue Note 廣告當時只排到 BLP 1563），故未能以評論日獨立定月；但三個來源皆 1957、無異說。年份 1957。",
+  "notes": "**覆核策展層：MBID／RG／三筆 release／原廠是 Blue Note（第 491 條假警報判定）／年份 1957／聯名掛名全部成立，未擋下。**｜⚠ **維基 infobox 的 catno 打成「BLP 1537」**（那是 Lou Donaldson《Quartet/Quintet/Sextet》）——策展層第 491 條已記，本層確認：**jazzdisco 與 Discogs 都是 1573，正文以 1573 為準**。｜**掛名**：卡單照 MB 的「with」寫法 `John Jenkins with Kenny Burrell`，**正文用卡單掛名**；店面條目用 `&`（第 493 條允許研究層改 `&`，但本層不建議動——盤名本身就含 with，改成 & 會與盤名不一致）。｜**串流採信 724874808**（us，前 6 軌對應原盤）。**有固定試聽來源。**⚠ 第 7、8 軌：**維基說 1996 CD 的加軌是〈Sharon〉〈Chalumeau〉的 alternate take，店面標的卻是 Stereo 版**，兩說不合，**正文不引加軌性質**。｜**人名邊界**：Sonny Clark／Kenny Burrell／Paul Chambers／Dannie Richmond 有 jazzdisco＋維基雙重背書，可寫；Tom Hannan（設計）、Francis Wolff（攝影）、Ira Gitler（文案）只在維基，可不提。｜⚠ **Dannie Richmond 與 Mingus 的關係**：本層只查到他在本盤打鼓這一項，**「這是他少數幾次上 Blue Note」這種量化說法無出處，正文要寫請退成「鼓手是 Dannie Richmond」**（hook 候選裡那句只是切入點提示，不是可直接引用的事實）。｜**同名撞擊**：池中另有 `Kenny Burrell & John Coltrane`，與本張不同碟。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Sabu Martinez|Palo Congo",
+  "artist": "Sabu Martinez",
+  "album": "Palo Congo",
+  "facts": [
+   {
+    "f": "release-group 6f5ccb2e 的欄位：title「Palo Congo」、first-release-date 1957、primary-type Album、secondary-types 空。轄下三筆：**原盤 cd84eeb0 是 1957 US Official Blue Note BLP 1561、12 吋 8 軌、release credit 印「Sabu Martinez」**；1999 US CD Blue Note 22665／7243 5 22665 2 4（551058ca，8 軌，credit 縮成「Sabu」）；2000-01-13 XW 數位 Blue Note（a7edbcb3，8 軌，credit「Sabu」）。原 LP 8 軌：〈El cumbanchero〉5:42、〈Billumba-Palo congo〉6:10、〈Choferito-Plena〉4:05、〈Asabache〉4:25、〈Simba〉5:59、〈Rhapsodia del maravilloso〉4:42、〈Aggo elegua〉4:31、〈Tribilín cantore〉5:23。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6f5ccb2e-12d6-39dc-9796-add20424200e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1500 系列目錄把 BLP 1561《Sabu - Palo Congo》記為 1957 年出版，單一場錄音 **Manhattan Towers, NYC，1957 年 4 月 28 日**，編制：Evaristo Baro（bass）、Ray「Mosquito」Romero 與 Israel Moises「Quique」Travieso（conga）、**Arsenio Rodriguez（conga、guitar、vocal）**、「Sabu」L. Martinez（conga、bongo、vocal）、Raul「Caesar」Travieso（conga、vocal）、Sarah Baro 與 Willie Capo（vocal）；母帶序 tk.1 Aggo Elegua、tk.4 Billumba-Palo Congo、tk.7 Choferito-Plena、tk.8 El Cumbanchero、tk.11 Tribilin Cantore、tk.13 Asabache、tk.14 Simba、tk.15 Rhapsodia Del Maravilloso。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+   },
+   {
+    "f": "Billboard 1957 年 10 月 7 日第 61 頁「Reviews and Ratings of New Jazz Albums」評了「SABU — PALO CONGO (1-12\") Blue Note 1561」，給 72 分，評語：「Essentially an Afro-Cuban drum session that features percussionist Sabu Martinez and a battery of conga and bongo drummers. Set emphasises the Africa-rooted, primitively exciting rhythms. The chanting and vocals here lend authenticity. Sales could be strong in Latin market, and with jazz fans who go for percussion sets.」同頁另評 Curtis Fuller《The Opener》（Blue Note 1567，67 分）。三週後的 Billboard 1957-10-28 第 59 頁新片名單也列了「Congo, Palo」與「Blue Note BLP 1561」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-10-07.pdf"
+   },
+   {
+    "f": "英文維基《Palo Congo》條目：這是 conguero Sabú Martínez 掛自己名字的首張專輯，1957 年 4 月 27 日錄音、同年由 Blue Note 發行；八人編制含 Arsenio Rodríguez 與他的兄弟 Raúl、「Quique」，以及 Ray「Mosquito」Romero 的康加、Evaristo Baró 的貝斯、Willie Capó 與 Sarah Baró 的人聲；製作 Alfred Lion（未具名）、錄音 Rudy Van Gelder、設計 Reid Miles、攝影 Francis Wolff、內頁文案 Hsio-yen Shih。AllMusic 給 4.5 星；本盤收錄於《1001 Albums You Must Hear Before You Die》書單。曲風欄標的是 Cuban rumba。",
+    "src": "https://en.wikipedia.org/wiki/Palo_Congo"
+   },
+   {
+    "f": "英文維基 Sabu Martinez 條目：本名 Louis Martinez，1930 年 7 月 14 日生於紐約市、波多黎各裔，1979 年 1 月 13 日在瑞典病逝，享年 48。11 歲（1941 年）職業出道，1948 年接替 Chano Pozo 進 Dizzy Gillespie 的樂團，1949 年起與 Benny Goodman 的 Bebop Orchestra 同台，之後十五年與 Charlie Parker、Duke Ellington、Count Basie、Thelonious Monk、Charles Mingus、Lionel Hampton、Tito Rodríguez 等人合作。1953 年首度與 Art Blakey 錄音，1957–58 年參與 Blakey 的《Orgy in Rhythm》與《Holiday for Skins》；1957 年開始領銜，首張就是 Blue Note 的《Palo Congo》，之後轉往 Vik 與 Alegre。1967 年移居瑞典。",
+    "src": "https://en.wikipedia.org/wiki/Sabu_Martinez"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 724750084）盤名「Palo Congo」、掛名「Sabu」、8 軌、releaseDate 1957-01-01、「℗ 2000 Blue Note Records」；8 軌曲名曲序與 BLP 1561 原盤逐軌相同、長度差 ≤3 秒（〈El Cumbanchero〉340 秒、〈Tribilin Cantore〉320 秒），全部有試聽。gb 店面另有三筆公版商版本（336358580 ℗2009 AudioSonic、1155043945 ℗2007 PoppyDisc、680481847 ℗2013 Supreme Media），軌目相同但**這三筆在 us 直查回 0**，本卡採 us 的官方條目。",
+    "src": "https://itunes.apple.com/lookup?id=724750084&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 1957 年給它 72 分，歸類寫得很直白：「本質上是一場 Afro-Cuban 鼓的錄音」，還預測它在拉丁市場會賣得比在爵士市場好",
+   "Blue Note 這張碟的錄音室裡站著 Arsenio Rodríguez——古巴 son montuno 的奠基者之一，在這裡不彈他招牌的 tres 主奏，而是打康加、唱和聲"
+  ],
+  "sound": "8 軌、約 40 分 51 秒，幾乎全是打擊樂與人聲：四到五把康加、邦哥與 Sabu 自己的領唱／應答，Evaristo Baró 的貝斯是唯一的低音線，Arsenio Rodríguez 偶爾撥弦。〈Billumba-Palo congo〉與〈Aggo elegua〉是非洲裔宗教儀式的唱名，〈Choferito-Plena〉走波多黎各 plena 的節奏，〈El cumbanchero〉是拉丁流行曲的改編。串流側歸「Jazz」，維基曲風欄標 Cuban rumba。",
+  "keyTracks": [
+   "El cumbanchero",
+   "Billumba-Palo congo",
+   "Simba"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1957（首發年）。MB first-release-date 1957（原盤 cd84eeb0）、jazzdisco BLP 1561＝1957、Discogs BLP 1561 最早 US 原壓 1957、維基 infobox「October 1957」，四邊一致；**同期紙本再確認：Billboard 1957-10-07 p61 的新爵士專輯評論欄評了本盤、1957-10-28 p59 的新片名單再列一次**，與維基的「1957 年 10 月」相符。⚠ 錄音日兩說：**jazzdisco 記 1957 年 4 月 28 日、維基記 4 月 27 日**，差一天、無法判定，正文寫「1957 年 4 月底」即可。年份 1957。",
+  "notes": "**覆核策展層：MBID／RG／三筆 release／原盤 BLP 1561 8 軌／年份 1957／新掛名 `Sabu Martinez`（第 493 條）全部成立，未擋下。** 掛名裁定另得一項支持：**1957 原盤 release 的 credit 本來就印「Sabu Martinez」**，只有 1999 CD 與數位縮成「Sabu」。｜**⚠ 曲風：卡單 `jazz` ＋ `world` 成立但不精確**——Billboard 當年就寫「essentially an Afro-Cuban drum session」、維基曲風欄標 Cuban rumba、串流側歸 Jazz。**正文請寫清楚這是一張 Afro-Cuban 打擊樂與儀式唱腔的碟，不要當成一般硬咆勃寫。**｜**Arsenio Rodríguez 在場是本張最值得寫的一點**（jazzdisco 與維基雙重背書），但**他在這裡打康加、彈 tres／吉他並唱**，不是主奏位置；維基說 Raúl 與「Quique」Travieso 是他的兄弟（Arsenio 本名 Ignacio Arsenio Travieso Scull），此說只有維基單一來源，**正文可寫三人同姓 Travieso，兄弟關係標 uncertain 或略去**。｜**串流採信 724750084**（us，8 軌逐軌相同）。**有固定試聽來源。**⚠ 策展層／回撈清單走的是 gb 的公版商條目，**本層在 us 以盤名＋單字掛名「Sabu Palo Congo」查到官方條目（第 254 條第一種查法，換掛名寫法才命中）——用 `Sabu Martinez Palo Congo` 當關鍵字在 us 回 0**，這是本批店面查法的一個實用教訓。｜**人名邊界**：Arsenio Rodríguez／Evaristo Baró／Ray「Mosquito」Romero／Raúl 與「Quique」Travieso／Willie Capó／Sarah Baró 有 jazzdisco＋維基雙重背書，可寫；Reid Miles、Francis Wolff、Hsio-yen Shih 只在維基，可不提。｜**生平邊界**：Sabu Martinez 1979 年在瑞典辭世與本作無直接關聯，屬研究層共用規則「與作品無關的後續生平事件」，**正文不寫**；1948 年接替 Chano Pozo 進 Gillespie 樂團是本作之前的資歷，可寫。｜**同場關係**：本張與 Art Blakey《Orgy in Rhythm》（同批，1957-03-07 Manhattan Towers）、《Holiday for Skins》（同批，1958-11-09 同址）都有 Sabu，**但是三場不同的錄音**，正文不得混寫。｜非選輯：單一場錄音的原創專輯，且是他的領銜首作。"
+ },
+ {
+  "key": "desc2:J. R. Monterose|J. R. Monterose",
+  "artist": "J. R. Monterose",
+  "album": "J. R. Monterose",
+  "facts": [
+   {
+    "f": "release-group 9ef7b7dc 的欄位：title「J. R. Monterose」、first-release-date 1957、primary-type Album、secondary-types 空。轄下四筆：**原盤 9cffd529 是 1957 US Official Blue Note BLP 1536、12 吋 7 軌、release title 印「J.R. Monterose」（無空格）**；1994 US CD Blue Note CDP 7243 8 29102 2 0（1534204f）；1994-09-20 US CD Blue Note 29102（55366f7b）；2008 US CD Blue Note 50999 2 15387 2 8（70a7681d）。四筆皆 7 軌。原 LP 6 軌加一個 alternate：〈Wee-Jay〉6:59、〈The Third〉5:19、〈Bobbie Pin〉8:06、〈Marc V〉6:35、〈Ka-Link〉9:01、〈Beauteous〉5:24、〈Wee-Jay（alternate take）〉7:17。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9ef7b7dc-1976-3eec-92f9-146e7ca63e5e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1500 系列目錄：BLP 1536《J.R. Monterose》，錄音 **1956 年 10 月 21 日 Van Gelder Studio, Hackensack, NJ**，編制 Ira Sullivan（trumpet）、J.R. Monterose（tenor sax）、Horace Silver（piano）、Wilbur Ware（bass）、「Philly」Joe Jones（drums），母帶 tk.3 Wee-Jay、tk.7 Marc V、tk.9 The Third、tk.10 Bobbie Pin、tk.12 Ka-Link、tk.15 Beauteous；1994 年以 B1-29102／CDP 7243 8 29102 2 0 再發。**這份目錄把出版年記成 1956**（與 Billboard 評論日與 Discogs 原壓的 1957 不合，見 yearVerified）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+   },
+   {
+    "f": "Billboard 1957 年 3 月 9 日第 36 頁「Reviews and Ratings of New Jazz Albums」評了「J. R. MONTROSE (1-12\") Blue Note 1536」，給 71 分。評語：「J. R. Montrose (not to be confused with another tenor-man, Jack Montrose) here gets his first LP showcase as leader. For the date he picked a stimulating group of colleagues: Ira Sullivan, trumpet; Horace Silver, piano; Wilbur Ware, bass, and Philly Joe Jones, drums. Tho there is no scarcity of boppish, Rollins-influenced tenor around today, Montrose is a serious, well-equipped musician who makes profitable use of the opportunity to express himself at length here.」（該刊把姓氏誤植為 Montrose）同頁另評 Tadd Dameron 與 John Coltrane 的《Mating Call》。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-03-09.pdf"
+   },
+   {
+    "f": "英文維基：這是 J. R. Monterose 的首張領銜專輯，1956 年 10 月 21 日錄音、隔年由 Blue Note 發行；五重奏為 Ira Sullivan、Horace Silver、Wilbur Ware、Philly Joe Jones。曲目除〈The Third〉（Donald Byrd 作）、〈Ka-Link〉（Philly Joe Jones 作）、〈Beauteous〉（Paul Chambers 作）外由 Monterose 作。製作 Alfred Lion、錄音 Rudy Van Gelder、設計 Reid Miles、攝影 Francis Wolff、文案 Leonard Feather。AllMusic 的 Stephen Thomas Erlewine 給 4.5 星：「Monterose 的首場領銜錄音是一套徹頭徹尾令人享受的直線咆勃……音樂水準高到讓這張碟成為 Blue Note 五〇年代中期目錄裡被低估的珍品之一。」",
+    "src": "https://en.wikipedia.org/wiki/J._R._Monterose_(album)"
+   },
+   {
+    "f": "Discogs 以 catno 反查 BLP 1536：**US 原壓條目年份記 1957**，其後是 1963、1972 兩次 US 再壓、1983 日本 BLP 1536、2002 與 2009 的 US 再發、2011 的 Music Matters 45 轉雙片 MMBLP-1536。",
+    "src": "https://www.discogs.com/search/?catno=BLP+1536"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 716790988）盤名「J. R. Monterose (The Rudy Van Gelder Edition) [Remastered]」、掛名「J.R. Monterose」、7 軌、releaseDate 2008-01-01、「℗ 2008 The Blue Note Label Group」；7 軌曲名曲序與 MB 原盤登錄逐軌相同、長度差 ≤4 秒（〈Wee-Jay〉419 秒、〈Ka-Link〉545 秒），全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=716790988&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 1957 年評這張時得先澄清一件事：「別跟另一位次中音手 Jack Montrose 搞混」——連姓氏都被印錯成 Montrose",
+   "三首曲子的作者是同場之外的人：〈The Third〉是 Donald Byrd 的、〈Ka-Link〉是鼓手 Philly Joe Jones 的、〈Beauteous〉是 Paul Chambers 的"
+  ],
+  "sound": "原 LP 6 軌、約 41 分鐘（CD 版 7 軌），小號＋次中音的五重奏：Monterose 的次中音偏 Sonny Rollins 一路的粗線條，Ira Sullivan 的小號在旁對位，Horace Silver 的鋼琴、Wilbur Ware 的貝斯與 Philly Joe Jones 的鼓撐住。〈Ka-Link〉九分鐘、〈Bobbie Pin〉八分鐘，是刻意留長讓人吹夠的安排。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Wee-Jay",
+   "Ka-Link",
+   "Bobbie Pin"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **卡單 1957 成立，但本層要記一筆對立證據**。支持 1957 的：**Billboard 1957-03-09 p36 的新爵士專輯評論欄評了「Blue Note 1536」並明說是他的首張領銜 LP**；**Discogs US 原壓條目＝1957**；維基 infobox「1957」；MB first-release-date 1957。支持 1956 的：**jazzdisco 1500 系列目錄把 BLP 1536 記為 1956**。錄音是 1956-10-21，jazzdisco 的 1956 可能是把錄音年當出版年（該目錄同段的 BLP 1537／1538 分別記 1957／1956，並不一致）。**依同期紙本優先，維持卡單 1957**，1956 說寫進 risk。",
+  "notes": "**覆核策展層：MBID／RG／四筆 release／原盤 BLP 1536 7 軌／selfTitled／掛名 `J. R. Monterose`（MB 的空格寫法）／年份 1957 全部成立，未擋下。** 本層新增一筆策展層沒查到的對立證據：**jazzdisco 目錄把 BLP 1536 記為 1956**——見 yearVerified，本層建議維持 1957（Billboard 評論日是硬證據）。｜**MB 建檔問題**（第 498 條已記，本層確認）：1994 年的 CD 重複建了兩筆（1534204f／55366f7b）。｜**盤名／掛名寫法**：MB RG title 與卡單用「J. R. Monterose」（帶空格），**原盤 release title 與店面都印「J.R.」**，Billboard 甚至誤植成「Montrose」；卡單的 queryAlias 已收 `J.R. Monterose`／`JR Monterose`。｜**串流採信 716790988**（us，7 軌逐軌相同，2008 RVG 版）。**有固定試聽來源。**｜**人名邊界**：Ira Sullivan／Horace Silver／Wilbur Ware／Philly Joe Jones 有 MB＋jazzdisco＋Billboard＋維基四重背書，可寫；Reid Miles、Francis Wolff、Leonard Feather 只在維基，可不提。｜⚠ **「首張領銜專輯」有出處**（Billboard 1957-03-09「gets his first LP showcase as leader」＋維基「debut album」），**可寫**；但**不得升級成「Blue Note 唯一一張 Monterose」或「他生涯唯一」**——他 1959 年在 Jaro 還有《The Message》（店面 634462859）。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Art Pepper|The Return of Art Pepper",
+  "artist": "Art Pepper",
+  "album": "The Return of Art Pepper",
+  "facts": [
+   {
+    "f": "release-group bdb3c938 的欄位：title「The Return of Art Pepper」、artist-credit「Art Pepper」、first-release-date 1957、primary-type Album、secondary-types 空。轄下三筆：**原盤 534028e2 是 1957 US Official Jazz West JWLP-10、12 吋 10 軌**（MB 的廠牌實體名寫「Jazz West」）；1988 US CD Blue Note CDP 7 46863 2（2faf48c5，15 軌，title 改為「The Return of Art Pepper: The Complete Aladdin, Volume 1」）；2001-08-29 JP CD Jazz West TOCJ-9312（e860aec7，10 軌）。原 LP 10 軌：〈Pepper Returns〉4:26、〈Broadway〉5:00、〈You Go to My Head〉4:18、〈Angel Wings〉4:43、〈Funny Blues〉4:38、〈Five More〉4:42、〈Minority〉4:19、〈Patricia〉3:38、〈Mambo De La Pinta〉4:16、〈Walkin' Out Blues〉5:56。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bdb3c938-1f60-3a9f-8c2d-e8d9c67091d2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Art Pepper 目錄：**Jazz: West JWLP-10《The Return Of Art Pepper》＝1957 年出版**（其後 Score SLP-4032 1958、日本 Jazz: West GXF-3127 1979）。錄音一場：**Capitol Tower, Los Angeles, CA，1956 年 8 月 6 日**，掛名「Art Pepper Quintet」，編制 Jack Sheldon（trumpet，#1,2,4-7,9,10）、Art Pepper（alto sax）、Russ Freeman（piano）、Leroy Vinnegar（bass）、Shelly Manne（drums），母帶編號 IM-3827 起（IM 是 Imperial 的序號，〈Pepper Returns〉等數首另上 Imperial LP-9238）；這批母帶後來進了 Blue Note 的 BN-LA591-H2 與 CDP 7 46863 2。",
+    "src": "https://www.jazzdisco.org/art-pepper/discography/"
+   },
+   {
+    "f": "Billboard 1957 年 1 月 5 日第 20 頁「Reviews and Ratings of New Jazz Albums」評了「THE RETURN OF ART PEPPER — Art Pepper Quintet (1-12\") Jazz: West JWLP-10」，給 80 分。評語：「The sound of Pepper's alto has been badly missed the last few years. He is active now again on the West Coast and in very good form, if one may judge from this LP. On this date, he was seconded by Jack Sheldon on trumpet and a rhythm section composed of Shelly Manne, Russ Freeman and Leroy Vinnegar. As remembered, Pepper's touch is light and crisp, with a magnificent gift for understatement. Sheldon makes more of an impression than on his recent solo album for Jazz: West.」同年 3 月 23 日第 50 頁的爵士專輯名單再列一次「THE RETURN OF ART PEPPER — Art Pepper Quintet … Jazz West JWLP 10」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-01-05.pdf"
+   },
+   {
+    "f": "英文維基：本盤收的是 1956 年的錄音，由 Jazz: West（Aladdin 旗下）發行，時間點是 Pepper 第一次出獄之後；1988 年 Blue Note 以 CD 再發並加了 bonus track，改題《The Return of Art Pepper: The Complete Art Pepper Aladdin Recordings Volume 1》。錄音 1956 年 8 月 6 日，地點 Capitol Studios（好萊塢），製作人 Herbert Kimmel。編制 Art Pepper（alto）、Jack Sheldon（trumpet，第 1、2、4–7、9、10 軌）、Russ Freeman（piano）、Leroy Vinnegar（bass）、Shelly Manne（drums）。AllMusic 的 Stephen Thomas Erlewine 給三星：「Pepper 的技巧有點生鏽，但你聽得出他對演奏仍有熱情，而且在這些曲目的過程中一路好轉。」",
+    "src": "https://en.wikipedia.org/wiki/The_Return_of_Art_Pepper"
+   },
+   {
+    "f": "Discogs 以 catno 反查 JWLP-10：**US 原壓條目年份記 1957**；日本再發 LR-8036（1967）、K23P-6712（1981），1987 年日本 CD CP32-5441。",
+    "src": "https://www.discogs.com/search/?catno=JWLP-10"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 724255682）盤名「The Return of Art Pepper: The Complete Art Pepper Aladdin Recordings, Vol. 1」、掛名 Art Pepper、15 軌、releaseDate 1988-01-01、「℗ 1988 Blue Note Records」；**前 10 軌曲名曲序與 JWLP-10 原盤逐軌相同**、長度差 ≤2 秒（〈Pepper Returns〉266 秒、〈Walkin' Out Blues〉356 秒），第 11–15 軌（〈Pepper Steak〉〈You're Driving Me Crazy〉〈Tenor Blooz〉〈Yardbird Suite〉〈Straight Life〉）是 1988 年加的，全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=724255682&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 1957 年 1 月的第一句話就是定位：「這幾年大家很想念 Pepper 的中音」——他剛從牢裡出來，這張碟就是回來的證據，所以盤名直接叫《The Return》",
+   "母帶編號是 IM-3827 起頭的 Imperial 序號：Jazz: West 是 Aladdin 旗下的支線廠牌，這批帶子三十年後輾轉進了 Blue Note 的 CD 目錄"
+  ],
+  "sound": "10 軌、約 37 分 25 秒，每首都在四到六分鐘：Pepper 的中音輕而乾脆、以節制取勝，Jack Sheldon 的小號在八首裡對位，Russ Freeman 的鋼琴、Leroy Vinnegar 的走路貝斯與 Shelly Manne 的鼓是西岸最穩的節奏組。〈Mambo De La Pinta〉帶拉丁拍，〈Funny Blues〉〈Walkin' Out Blues〉是藍調。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Pepper Returns",
+   "Minority",
+   "Walkin' Out Blues"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1957（原廠首發年）。**原盤是 Jazz:West JWLP-10、不是 Blue Note**（簡報一.3 的他廠形，第 494 條）：jazzdisco 的 Art Pepper 目錄明記「Jazz: West JWLP-10《The Return Of Art Pepper》1957」、Discogs US 原壓 1957、MB 原盤 release 534028e2 是 1957 US Jazz West JWLP-10、維基 infobox 1957。**同期紙本：Billboard 1957-01-05 p20 已刊出評論**（評分 80），故上市應在 1956 年底至 1957 年初，取 1957。錄音 1956-08-06 Capitol Tower／Capitol Studios, Los Angeles。Blue Note 只是 1988 年 CD 再發方（CDP 7 46863 2）。",
+  "notes": "**覆核策展層第 494 條（原盤他廠）：Jazz:West JWLP-10／1957／Blue Note 1988 CD 改題 15 軌，全部成立，未擋下。** 本層補上一手佐證：**Billboard 1957-01-05 p20 的評論原文**（策展層沒有紙本）與 **jazzdisco Art Pepper 目錄的年份欄**。｜**廠牌寫法**：jazzdisco 與 Billboard 都寫「Jazz: West」（帶空格）、MB 實體名「Jazz West」、卡單照池中先例「Jazz:West」——三種寫法指同一家，**正文照卡單**。維基把 Jazz: West 連到 Aladdin Records，jazzdisco 的母帶編號 IM-38xx 是 Imperial 序號、部分曲目另上 Imperial LP-9238，**「Aladdin 旗下」有維基單一來源＋母帶序號旁證，正文可寫「Aladdin 體系的支線廠牌 Jazz:West」，不要寫成 Blue Note 出版**。｜**盤名**：卡單取原名《The Return of Art Pepper》成立；1988 CD 的長題已進 queryAlias，**正文不要把 15 軌的 CD 題名當原盤題名**。｜**串流採信 724255682**（us，**前 10 軌對應原盤**，第 11–15 軌是 1988 年加軌）。**有固定試聽來源。**｜**人名邊界**：Jack Sheldon／Russ Freeman／Leroy Vinnegar／Shelly Manne 有 jazzdisco＋Billboard＋維基三重背書，可寫；Herbert Kimmel（製作）只在維基，可不提。｜**「第一次出獄之後」**：維基原文「after his first release from prison」有出處（維基本條目），Billboard 1957 年的評語「這幾年大家很想念他的中音……他現在又在西岸活動」是同一件事的同期側寫，**可寫，但依研究層共用規則「逝者／成癮題材克制」，只寫事實時序、不渲染細節**。｜池中另有 Art Pepper《Modern Art》1957（Intro 原盤），是不同碟。｜非選輯：單一場錄音的原創專輯（1988 CD 才變成合輯形態）。"
+ },
+ {
+  "key": "desc2:Paul Chambers|Paul Chambers Quintet",
+  "artist": "Paul Chambers",
+  "album": "Paul Chambers Quintet",
+  "facts": [
+   {
+    "f": "release-group ba04a054 的欄位：title「Paul Chambers Quintet」、first-release-date 1957-05-19、primary-type Album、secondary-types 空。轄下四筆：**原盤 cd3df116 是 1957-05-19 US Official Blue Note BLP 1564、12 吋 6 軌，artist-credit 串成「Paul Chambers／Donald Byrd／Clifford Jordan／Tommy Flanagan／Elvin Jones」五人**；1996 US CD Blue Note CDP 7243 8 52441 2 4（7 軌）；2009 XE 與 2009-02-10 US CD Blue Note 50999 2 65144 2 0（7 軌）。原 LP 6 軌：〈Minor Run Down〉7:37、〈The Hand of Love〉6:23、〈Softly, as in a Morning Sunrise〉3:07、〈Four Strings〉5:27、〈What's New〉5:39、〈Beauteous〉8:05。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ba04a054-0167-3e67-b7d4-f47b658f1928&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1500 系列目錄把 BLP 1564《Paul Chambers Quintet》記為 **1958** 年出版，錄音卻是 **1957 年 5 月 19 日 Van Gelder Studio, Hackensack, NJ**：Donald Byrd（trumpet，#1-5）、Clifford Jordan（tenor sax，#1-5）、Tommy Flanagan（piano）、Paul Chambers（bass）、Elvin Jones（drums），母帶 tk.3 Four Strings、tk.8 Minor Run-Down、tk.9 Beauteous、tk.12 What's New、tk.15 The Hand Of Love、tk.16 Softly, As In A Morning Sunrise；1996 年以 CDP 7243 8 52441 2 4 再發。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+   },
+   {
+    "f": "Billboard 1958 年 4 月 28 日第 18 頁的「Review Spotlight on…」把本盤選為該週的 **Special Merit Jazz Album**：「PAUL CHAMBERS QUINTET (1-12\") — Blue Note 1564。Chambers grows on bass with each new effort. In this set he fronts a group of hard bop jazz men that spotlights D. Byrd, trumpet; C. Jordan, tenor sax; T. Flanagan, piano and E. Jones, drums. 『Minor Run Down』gives the artist full opportunity to display his talent. It's a set that should click with the modern jazz buff. Other numbers include『Softly as the Morning Sunrise』and『The Hand of Love』, a Chambers original.」同一欄位同期選的 New Jazz Talent Album 是 Louis Smith《Here Comes Louis Smith》（Blue Note 1584）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1958/Billboard%201958-04-28.pdf"
+   },
+   {
+    "f": "英文維基：這是 Paul Chambers 的第四張錄音室專輯，1958 年 4 月由 Blue Note 發行（infobox 引 Cash Box 與 Billboard 1958 年 4 月），錄音是 1957 年 5 月 19 日；五重奏為 Donald Byrd、Clifford Jordan、Tommy Flanagan、Elvin Jones，其中 Byrd 與 Jordan 不上〈Softly, as in a Morning Sunrise〉。〈Minor Run-Down〉與〈Four Strings〉是 Benny Golson 作、〈Softly…〉是 Hammerstein 與 Romberg、〈What's New?〉是 Johnny Burke 與 Bob Haggart，其餘由 Chambers 作。製作 Alfred Lion、錄音 Rudy Van Gelder、設計 Tom Hannan、文案 Robert Levin。AllMusic 給四星。",
+    "src": "https://en.wikipedia.org/wiki/Paul_Chambers_Quintet"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 715489118）盤名「Paul Chambers Quintet (Rudy Van Gelder Edition)」、掛名「Paul Chambers Quintet」、7 軌、releaseDate 1957-05-19、「℗ 2009 The Blue Note Label Group」；**前 6 軌曲名曲序與 BLP 1564 原盤逐軌相同**、長度差 ≤4 秒（〈Minor Run-Down〉460 秒、〈Beauteous〉489 秒），第 7 軌是〈Four Strings〉的另一個 take，全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=715489118&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 1958 年 4 月把它選進當週的 Review Spotlight，評語是「Chambers 每出一張，貝斯就長一分」——這是貝斯手掛頭牌、其他四人替他抬轎的一張碟",
+   "兩首最吃重的曲子〈Minor Run-Down〉與〈Four Strings〉都不是 Chambers 寫的，是 Benny Golson 給他的——而 Golson 本人沒有出現在錄音室裡"
+  ],
+  "sound": "6 軌、約 41 分 24 秒，貝斯手領銜的五重奏：Donald Byrd 的小號與 Clifford Jordan 的次中音在前線，Tommy Flanagan 的鋼琴與 Elvin Jones 的鼓在後，Chambers 的貝斯不只走低音、也拉弓獨奏。〈Softly, as in a Morning Sunrise〉只有三分鐘且兩管缺席，是全盤唯一的三重奏段落；〈Beauteous〉八分鐘收尾。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Minor Run Down",
+   "Softly, as in a Morning Sunrise",
+   "Beauteous"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ 與 MB 不合但**卡單 1958 成立**（策展層第 492 條改判覆核成立，且本層取得一手佐證）：**MB 的 first-release-date 1957-05-19 是錄音日**（jazzdisco 的錄音日逐字相同），第 493 條所說「帶月日的 first-release-date 也可能是錄音日」在本張確認；**Billboard 1958-04-28 p18 把本盤選為該期 Special Merit Jazz Album**（等同新片評介），jazzdisco 1500 系列目錄 BLP 1564＝1958，維基 infobox 1958 年 4 月並引 Cash Box 與 Billboard。三個來源互相獨立。錄音 1957-05-19。年份 1958，月份可寫 1958 年 4 月。",
+  "notes": "**覆核策展層：MBID／RG／四筆 release／原盤 BLP 1564 6 軌／年份改判 1958／掛名 `Paul Chambers` 全部成立，未擋下。** 本層補上一手佐證（Billboard 1958-04-28 p18 的 Review Spotlight 原文），並確認 **MB 的 1957-05-19 就是 jazzdisco 記的錄音日**——第 492 條提出的「帶月日也可能是錄音日」在本張成立。｜**掛名**：MB 原盤 release 把五個人全串進 artist-credit，卡單只取 `Paul Chambers` 成立（池中 2 張）；店面 credit 是「Paul Chambers Quintet」。｜**串流採信 715489118**（us，前 6 軌對應原盤，第 7 軌是 alternate take）。**有固定試聽來源。**⚠ 店面日期 1957-05-19 是錄音日，**不得當年份來源**（第 484 條）。｜**人名邊界**：Donald Byrd／Clifford Jordan／Tommy Flanagan／Elvin Jones 有 MB＋jazzdisco＋Billboard＋維基四重背書，可寫；**Benny Golson 是〈Minor Run-Down〉與〈Four Strings〉的作者、不在錄音室**（維基單一來源標作者，jazzdisco 未列作者），要寫請寫明他是作曲者而非樂手，或標 uncertain。Tom Hannan（設計）、Robert Levin（文案）只在維基，可不提。｜⚠ **「第四張錄音室專輯」只有維基單一來源**，正文要寫請標 uncertain 或退成「他早期領銜的幾張之一」。｜**編制細節**：維基與 jazzdisco 一致指出 Byrd 與 Jordan 不上〈Softly, as in a Morning Sunrise〉，**這一點雙來源，可寫**。｜非選輯：單一場錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Art Blakey|Orgy in Rhythm, Volume One",
+  "artist": "Art Blakey",
+  "album": "Orgy in Rhythm, Volume One",
+  "facts": [
+   {
+    "f": "release-group a81322c9 的欄位：title「Orgy in Rhythm, Volume One」、artist-credit「Art Blakey」、first-release-date 1957、primary-type Album、**secondary-types 空（MB 沒有標 Live）**。轄下三筆：**原盤 986666e2 是 1957 US Official Blue Note BLP 1554、12 吋 4 軌**；1993 FR CD Blue Note 7893902／EMI France（690c9c40，4 軌）；2000-03-23 JP 殘缺登錄（7f61b90c，無載體、無廠牌，4 軌）。原 LP 4 軌：〈Buhaina Chant〉10:28、〈Ya Ya〉7:04、〈Toffi〉12:18、〈Split Skins〉8:53。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a81322c9-cc76-39ba-8b7b-4b3d441864e2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1500 系列目錄把 BLP 1554《Art Blakey - Orgy In Rhythm Volume One》記為 1957 年出版，錄音一場：**Manhattan Towers, NYC，1957 年 3 月 7 日**，十一人編制：Herbie Mann（flute，#1,3,4）、Ray Bryant（piano，#1,3,4）、Wendell Marshall（bass，#1,3,4）、Jo Jones 與 Art Taylor（drums）、Charles「Specs」Wright（drums，#1,3,4）、Art Blakey（drums、vocal #1,3,4）、Carlos「Patato」Valdes 與 Jose Valiente（conga，#1,3,4）、「Sabu」Martinez（bongo、timbales、vocal，#1,3,4）、Ubaldo Nieto（timbales，#1,3,4）、Evilio Quintero（cencerro、maracas、tree log，#1,3,4）；母帶 tk.1 Toffi、tk.4 Split Skins、tk.6 Ya Ya、tk.11 Buhaina Chant。**同一場的另外四首出成 BLP 1555《Volume Two》**；1997 年兩卷合成一張 CD（CDP 7243 8 56586 2 4）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+   },
+   {
+    "f": "Billboard 1957 年 6 月 3 日第 27 頁「Reviews and Ratings of New Jazz Albums」評了「ORGY IN RHYTHM — Art Blakey (1-12\") Blue Note 1554」：「A potent, if primitive, percussion showcase for Blakey and a battery of percussionists, that should strike the fancy of the hi-fi conscious buyer. Incorporates all kinds of rhythms, chanting, singing and occasional contributions from flutist H. Mann, pianist R. Bryant and bassist W. Marshall.」兩個半月後的 Billboard 1957 年 8 月 19 日第 60 頁爵士專輯名單再列一次「ORGY IN RHYTHM — Art Blakey … Blue Note 1554」。Blue Note 自家 1958-10-27 第 30 頁的廣告也把「1554/55 Orgy in Rhythm — Art Blakey」列進近期重點發行。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-06-03.pdf"
+   },
+   {
+    "f": "英文維基《Orgy in Rhythm》條目（Volumes One & Two 合寫）：兩張是「separate but related albums」，同在 1957 年 3 月 7 日錄音、同年由 Blue Note 分別在 **5 月（Vol. One）與 10 月（Vol. Two）** 發行；條目把它列為以打擊樂為主體的早期爵士唱片之一，並指出 Blakey 在本作前一個月剛在 Columbia 發過《Drum Suite》的打擊樂面。Vol. One 全長 38:54（A 面〈Buhaina Chant〉10:30、〈Ya Ya〉7:06；B 面〈Toffi〉12:20、〈Split Skins〉8:58），四首均由 Blakey 作。1997 年 Blue Note 的限量 CD 把兩卷併成一張。AllMusic 給四星，Penguin Guide 給四星。",
+    "src": "https://en.wikipedia.org/wiki/Orgy_in_Rhythm"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 723693662）盤名「Orgy In Rhythm, Vols. 1 & 2」、掛名 Art Blakey、8 軌、releaseDate 1957-01-01、「℗ 1997 Blue Note Records」；**前 4 軌曲名曲序與 BLP 1554 原盤逐軌相同**（〈Buhaina Chant〉631 秒、〈Ya Ya〉427 秒、〈Toffi〉740 秒、〈Split Skins〉538 秒，與 MB 原盤登錄差 ≤5 秒），第 5–8 軌（〈Amuck〉〈Elephant Walk〉〈Come Out and Meet Me Tonight〉〈Abdallah's Delight〉）是 BLP 1555《Volume Two》的內容，全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=723693662&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1957 年 3 月 7 日一個晚上，Manhattan Towers 裡塞了三位鼓手、四位拉丁打擊樂手加 Blakey 自己——錄出來的東西多到要分成兩張 12 吋才裝得下",
+   "Billboard 當年的用字是「potent, if primitive」：一張賣點寫給玩音響的人看的碟，各種節奏、吟唱與歌聲，長笛與鋼琴只是偶爾插話"
+  ],
+  "sound": "4 軌、約 38 分 54 秒，每軌七到十二分鐘：三套爵士鼓（Blakey、Jo Jones、Art Taylor，另加 Specs Wright）與康加、邦哥、timbales、牛鈴、沙鈴、木鼓的拉丁打擊組疊在一起，加上吟唱與人聲應答；Herbie Mann 的長笛、Ray Bryant 的鋼琴與 Wendell Marshall 的貝斯只在其中三軌出現。〈Split Skins〉是純鼓對話。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Buhaina Chant",
+   "Toffi",
+   "Split Skins"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1957（首發年）。MB first-release-date 1957（原盤 986666e2 無月日）、jazzdisco BLP 1554＝1957、Discogs BLP 1554 最早 US 原壓 1957、維基「1957 年 5 月底（Vol. One）」；**同期紙本：Billboard 1957-06-03 p27 的新爵士專輯評論欄評了本盤**、1957-08-19 p60 的名單再列一次，與維基的 5 月底上市相符。錄音 1957-03-07。年份 1957。",
+  "notes": "**覆核策展層：MBID／RG／三筆 release／原盤 BLP 1554 4 軌／年份 1957／掛名 `Art Blakey`（個人、非 Jazz Messengers）／live 0 全部成立，未擋下。**｜**⚠ 不是現場（第 485／495 條）**：Manhattan Towers 是 Blue Note 1957–58 用過十幾次的錄音場地，**MB secondary-types 空、Billboard 評語無觀眾字樣、維基未標 live**，**正文不得寫成現場演出**。｜**同場拆盤（第 495 條）**：本張 BLP 1554 與《Orgy in Rhythm, Volume Two》BLP 1555（c-136 b，rgMbid 5ef5035d）是**同一場 1957-03-07 錄音拆成兩張 12 吋**，1997 年 CD 又合回一張；**正文不得寫成兩場不同的錄音**，也不要把 Vol. Two 的曲目寫進本卡。｜**另一組同場關係**：同批的《Holiday for Skins》Vol. 1／2 是 1958-11-09 在同一個 Manhattan Towers 錄的**另一場**（前後相隔二十個月、編制不同），**兩者不得混寫**（第 495 條）。｜**串流採信 723693662**（us，**前 4 軌對應原盤**，第 5–8 軌是 Vol. Two）。**有固定試聽來源。**｜**人名邊界**：Herbie Mann／Ray Bryant／Wendell Marshall／Jo Jones／Art Taylor／Specs Wright／Carlos「Patato」Valdes／Sabu Martinez／Ubaldo Nieto 等有 jazzdisco＋Billboard（部分）雙重背書，可寫；**編制人數很多，正文不必逐一點名**。｜**Sabu Martinez 同時出現在本批的《Palo Congo》（1957-04-28）與《Holiday for Skins》（1958-11-09）**，三張各寫各的、不得互抄。｜維基「Blakey 在本作前一個月剛發過 Columbia 的《Drum Suite》打擊樂面」那句原文掛 {{Citation needed}}，**要寫請標 uncertain 或略去**。｜非選輯：單一場錄音的原創專輯（分卷發行）。"
+ },
+ {
+  "key": "desc2:Cecil Taylor|Jazz Advance",
+  "artist": "Cecil Taylor",
+  "album": "Jazz Advance",
+  "facts": [
+   {
+    "f": "release-group 7d93f21b 的欄位：title「Jazz Advance」、artist-credit「Cecil Taylor Quartet」（群組實體 1f4ce030）、first-release-date 1957、primary-type Album、secondary-types 空。轄下八筆：**原盤 e5357b9f 是 1957 US Official Transition TRLP 19、12 吋 6 軌**；1976 JP 12 吋 Blue Note LNJ-70072（7 軌）；1979 JP 12 吋 Transition GXF-3121(M)／TRLP-19（6 軌）；1991 US CD Blue Note CDP 7 84462 2（7 軌）等。原 LP 6 軌：〈Bemsha Swing〉7:31、〈Charge 'Em Blues〉11:10、〈Azure〉7:32、〈Song〉5:23、〈You'd Be So Nice to Come Home To〉9:21、〈Rick Kick Shaw〉6:05。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7d93f21b-b8d5-3046-9426-e56abb96f354&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Cecil Taylor 目錄：**Transition trlp 19《Cecil Taylor Quartet - Jazz Advance》＝1957 年出版**（日本再發 Transition LNJ-70072 1976、GXF-3121 1979；Blue Note BN-LA458-H2《Cecil Taylor - In Transition》1975）。錄音一場：**Boston, MA，1956 年 9 月 14 日**，編制 Steve Lacy（soprano sax，只上第 2、4 軌）、Cecil Taylor（piano）、Buell Neidlinger（bass，第 1-4、6、7 軌）、Dennis Charles（drums，第 1-4、6、7 軌）——**第 5 軌〈You'd Be So Nice To Come Home To〉因此是鋼琴獨奏**。同場的第 7 首〈Sweet And Lovely〉**沒有收進 TRLP 19**，先出在 Transition trlp 30 的合輯《Jazz In Transition》（1956），日後才進日本再發盤與 Blue Note 的 CD。",
+    "src": "https://www.jazzdisco.org/cecil-taylor/discography/"
+   },
+   {
+    "f": "英文維基：這是 Cecil Taylor 的首張專輯，1956 年 9 月在 Boston 為 Transition 廠牌錄音，製作人 Tom Wilson，同行的是 Buell Neidlinger、Dennis Charles 與 Steve Lacy。全盤三首 Taylor 原創、三首標準曲，另加一首「即將成為標準曲」的 Thelonious Monk〈Bemsha Swing〉——該曲首錄僅早於 Taylor 版四年，在這裡被彈得「隱晦而簡潔，線條碎成鋸齒狀的片段與突起的和弦」；〈Azure〉開頭的和弦與高音區觸鍵近似 Abdullah Ibrahim，隨後「日後 Taylor 招牌的交錯節奏即興與叢聚和弦浮現」。Penguin Guide 把本盤選進 Core Collection，評語「Taylor 的第一張唱片仍是爵士史上最不尋常的出道作之一，以 1956 年而論更是難以置信的成果」；AllMusic 給 4.5 星，Chris Kelsey 在 AllMusic 的自由爵士史專文裡把它列為 20 張必聽自由爵士專輯之一。",
+    "src": "https://en.wikipedia.org/wiki/Jazz_Advance"
+   },
+   {
+    "f": "Discogs 以 catno 反查 TRLP 19：**US 原壓條目年份記 1957**、掛名「Cecil Taylor Quartet」；另有 1989 年日本 TRLP-19 再發。",
+    "src": "https://www.discogs.com/search/?catno=TRLP+19"
+   },
+   {
+    "f": "串流側（us 店面 collectionId 862524164）盤名「Jazz Advance」、掛名 Cecil Taylor、7 軌、releaseDate 1956-09-14、「℗ 1991 Blue Note Records」；**前 6 軌曲名曲序與 TRLP 19 原盤逐軌相同**、長度差 ≤4 秒（〈Bemsha Swing〉447 秒、〈Rick Kick Shaw〉366 秒），第 7 軌〈Sweet & Lovely〉是同場但未收進原 LP 的那一首，全部有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=862524164&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1956 年 9 月在波士頓錄的一張碟，Penguin Guide 的說法是：「以 1956 年而論，這是難以置信的成果」——Taylor 的第一張唱片就已經在拆解和聲",
+   "Steve Lacy 的高音薩克斯只出現在六首裡的兩首，第五首〈You'd Be So Nice to Come Home To〉連貝斯與鼓都退場，剩下鋼琴獨奏"
+  ],
+  "sound": "6 軌、約 47 分鐘，鋼琴四重奏但四個人很少同時在場：Taylor 的鋼琴把和弦敲成叢聚、把線條切成碎片，Buell Neidlinger 的貝斯與 Dennis Charles 的鼓跟著走，Steve Lacy 的高音薩克斯只上兩軌，第五軌是鋼琴獨奏。三首 Taylor 原創與三首標準曲交錯，開場是 Monk 的〈Bemsha Swing〉。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Bemsha Swing",
+   "Charge 'Em Blues",
+   "Rick Kick Shaw"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1957（原廠首發年）。**原盤是 Transition TRLP 19、不是 Blue Note**（簡報一.3 的他廠形，第 494 條）：**jazzdisco 的 Cecil Taylor 目錄明記「Transition trlp 19 — 1957」**、Discogs US 原壓 1957、MB 原盤 release e5357b9f 是 1957 US Transition TRLP 19、維基 infobox 1957。⚠ 第 492 條留的「1956 說」本層追到源頭：**1956 是錄音年（1956-09-14），而同場的〈Sweet And Lovely〉確實在 1956 年就先出在 Transition trlp 30 的合輯上**——這是「1956」說的來源，但那不是本盤。Blue Note 只是後來的再發方（1975 BN-LA458-H2、1976 日本 LNJ-70072、1991 CDP 7 84462 2）。年份 1957。",
+  "notes": "**覆核策展層第 494 條（原盤他廠）：Transition TRLP 19／1957／Blue Note 1976 日本 LP 與 1991 CD，全部成立，未擋下。** 本層並**解掉第 492 條留的兩說**：1956 是錄音年，且同場的〈Sweet And Lovely〉1956 年先出在 Transition 的合輯 trlp 30——**「1956」指的是那一首，不是本盤**（jazzdisco 目錄）。｜**⚠ 原盤 6 軌、不是 7 軌**：MB 的 1976 日本盤與 1991 CD 都是 7 軌，多出來的〈Sweet & Lovely〉不在 TRLP 19 上，**正文引軌數請用 6 軌**。｜**掛名**：MB RG credit 是群組實體 `Cecil Taylor Quartet`，卡單收攏成 `Cecil Taylor`（池中 9 張，第 493 條）成立；Discogs 原壓也印 Cecil Taylor Quartet。｜**串流採信 862524164**（us，前 6 軌對應原盤）。**有固定試聽來源。**⚠ 店面日期 1956-09-14 是錄音日，不得當年份來源。｜**人名邊界**：Steve Lacy／Buell Neidlinger／Dennis Charles 有 jazzdisco＋維基雙重背書，可寫；**維基把鼓手寫成 Denis Charles、jazzdisco 寫 Dennis Charles**，兩種拼法都流通，正文擇一即可。Tom Wilson（製作）只在維基，可不提。｜**編制細節雙來源**：Lacy 只上兩軌、第 5 軌是鋼琴獨奏，jazzdisco 的軌號標註與維基的描述一致，**可寫**。｜**「首張專輯」有雙來源**（維基「debut album」＋jazzdisco 目錄裡 1956 年那場是他最早的一筆），可寫；但**「爵士史上最不尋常的出道作之一」與「20 張必聽自由爵士」是 Penguin Guide 與 AllMusic 的評價，要寫請指名出處**，不得寫成無主詞的斷言（第 253 條）。｜非選輯：單一場錄音的原創專輯。"
  }
 ]
