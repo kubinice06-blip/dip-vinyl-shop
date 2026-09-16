@@ -1,0 +1,266 @@
+[
+ {
+  "key": "desc2:Jackie McLean|Tippin' the Scales",
+  "artist": "Jackie McLean",
+  "album": "Tippin' the Scales",
+  "facts": [
+   {
+    "f": "release-group cebd071f 的欄位：title「Tippin’ the Scales」（**MB 用 U+2019 彎撇號**）、artist-credit「Jackie McLean」（Person 5b6993ef）、first-release-date **1979**、primary-type Album、secondary-types 空。轄下 13 筆，**最早的 eafd2531 是 1979 日本 Blue Note GXF 3062、12 吋 6 軌**（無 barcode）；**美國盤要到 1984 年的 BST 84427（00a9bd2e，barcode 077778442714）**，同年另有法國 991513ab 與希臘 778fd25c；1985-04-20 日本 BNJ 71065；1989／1995 美國 CD CDP 7 84427 2 皆 **9 軌**；2014 UCCQ-5017／2017 UCCQ-9323；2022-04-01 Tone Poet 黑膠 fa6f4925。原盤六軌：〈Tippin' the Scales〉〈Rainy Blues〉〈Nursery Blues〉〈Nicely〉〈Two for One〉〈Cabin in the Sky〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cebd071f-ee74-40c7-b2ed-92abe74e6907&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Toshiba／King 目錄頁：**GXF-3062，1979**，錄於 **Van Gelder Studio, Englewood Cliffs, NJ，1962 年 9 月 28 日**，編制 Jackie McLean（中音薩克斯風）、Sonny Clark（鋼琴）、Butch Warren（貝斯）、Art Taylor（鼓）。頁末標「** also released on Blue Note (J) GXK-8160 in 1980, BST 84427 in 1984, CDP 7 84427 2 in 1989」——**廠牌自己的目錄把日本 1979、日本再壓 1980、美國 1984 三層分得很清楚。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-toshiba-king-series/"
+   },
+   {
+    "f": "**逐軌母帶比對（本層自跑，第 738／855 條做法）**：1962-09-28 那一場 jazzdisco 分年 session 頁列出**九個 take**——tk.5〈Nursery Blues〉／tk.11〈Rainy Blues〉／tk.16〈Tippin' The Scales〉三軌標 GXF-3062；tk.8〈Two For One (alternate take 1)〉與 tk.15〈Tippin' The Scales (alternate take)〉標 CDP 7 84427 2（1989 CD，**這就是 CD 變 9 軌的原因**）；tk.9〈Two For One (alternate take 2)〉標「-」＝未發行；tk.17〈Nicely〉tk.20〈Cabin In The Sky〉tk.21〈Two For One〉承接 GXF-3062。**九個 take 全部只去過 GXF 3062／1989 CD 兩個目的地，池中零軌重複，本張不撞陳列。** ⚠ **同日反查只命中這一場**（無第二場），**錄音室與編制不必再篩。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1961-1962/"
+   },
+   {
+    "f": "維基 infobox 直接把兩個年份並列：**released「1979 (Japan); 1984 (US)」**、recorded September 28, 1962、studio Van Gelder Studio, Englewood Cliffs、label「Blue Note GXF 3062 (1979); BST 84427 (1984)」、**producer Alfred Lion**、length 36:00、genre Jazz blues；chronology 前一張《Let Freedom Ring》(1962)、後一張《Vertigo》(1962-63，**＝c-145 b 組的卡**）。另掛一張 alternative cover「1984 US edition (BST 84427)」——**兩個年份有兩種封面。**",
+    "src": "https://en.wikipedia.org/wiki/Tippin%27_the_Scales"
+   },
+   {
+    "f": "Discogs `catno=GXF 3062` 反查：**日本原壓 1979 兩筆**，另有 1984 年美國 BST 84427 群。**沒有任何一筆把日本盤標成 1980 或把美國盤標成 1979**——四邊（MB／jazzdisco／維基／Discogs）在「1979 日本首發」這件事上全部同邊。",
+    "src": "https://api.discogs.com/database/search?catno=GXF%203062"
+   },
+   {
+    "f": "**同期紙本查無，而且是預期中的查無**（第 704 條的反面用法、第 822 條）：本層在 `billboard-bn-1977-1979-ocr.txt`（1977-01→1979-12，153 期命中頁）與 `cashbox-bn-1977-1979-ocr.txt`（157 期一期不缺）裡，用寬鬆式 `GXF\\s*-?\\s*3062`、`Tippin`、`Scales` 三種檢索**全部零命中**。**1979 年 Blue Note 在美國紙本上的動靜只有 LT 系列那十張**（Billboard 1979-09-22 p8 的十張名單裡沒有本盤）——**日本 King 那條產線本來就不進美國商業刊。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1979/Billboard%201979-09-22.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "1962 年 9 月 28 日錄完，配了 BLP 4128 的號卻被壓進庫房；十七年後先在日本以 GXF 3062 出土，美國要再等五年才看得到自己的盤",
+   "那一場錄了九個 take，只有六個上了 1979 年的日本盤——兩個替代版本一直等到 1989 年的 CD 才出來，還有一個到今天沒發過"
+  ],
+  "sound": "6 軌四重奏：中音薩克斯風加鋼琴三重奏，沒有第二支管樂。Sonny Clark 的鋼琴與 Butch Warren、Art Taylor 的節奏組把速度壓得很穩，McLean 的音色還在 1962 年那個「還沒轉向自由」的位置上。〈Nursery Blues〉與〈Rainy Blues〉是兩首慢藍調，領班原創〈Tippin' the Scales〉〈Nicely〉〈Two for One〉是中快板的 bebop 語法，〈Cabin in the Sky〉收尾。六軌長度都在五到六分半之間。",
+  "keyTracks": [
+   "Tippin' the Scales",
+   "Nursery Blues",
+   "Two for One"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1979 成立，四個來源全部同邊，本層無異議。** MB frd 1979（原盤 eafd2531＝JP GXF 3062）＝jazzdisco Toshiba／King 頁 1979＝維基 infobox「1979 (Japan)」＝Discogs 日本原壓兩筆 1979。**這裡的 1979 是「日本首發年」而不是「美國發行年」**：美國 BST 84427 是 **1984**，維基把兩個年份並列、jazzdisco 在同一條裡標「also released on … BST 84427 in 1984」。→ **正文不得寫成 1979 年在美國上市**，也不得寫成「1962 年的專輯」。**錄音年 1962-09-28 與首次商業發行年 1979 必須分開講**（本段的通則）。⚠ **美國紙本零命中不是漏查**：1977–79 兩刊共 310 期命中頁裡 `GXF 3062`／`Tippin`／`Scales` 全無，**日本 King 產線本來就不進美國商業刊**（第 822 條第 2 點）。",
+  "notes": "**覆核策展層：rgMbid cebd071f／原盤 eafd2531／GXF 3062／6 軌／掛名 `Jackie McLean`／年份 1979 全部成立，本張未擋下。** 盤名改判 `Tippin’ the Scales`→`Tippin' the Scales`（ASCII 撇號）本層同意，**MB RG 題至今仍是 U+2019**。｜⚠ **撞陳列：無。** 本層逐 take 跑過 1962-09-28 那一場的九個 take，**去向只有 GXF 3062 與 1989 年 CD 兩處，池中零軌重複**；同日反查也只有這一場，沒有第 855 條的假陽性風險。｜**製作人 Alfred Lion**（維基 infobox；jazzdisco 與 MB 都沒有欄位）——**那是 1962 年錄音當時的製作人，不是 1979 年發行的監製**，兩者在本段必須分開寫（1979 年那一波的監製是 Michael Cuscuna，見同批《Midnight Sun》《With a Song in My Heart》的 Cash Box 評介）。**封面設計者查無。**｜⚠ **跨卡三處**：**Sonny Clark 在本組出現四次**——本盤與《Nigeria》《Oleo》他是側人鋼琴，《Blues in the Night》才是他自己的三重奏領班盤，**四卡正文不得互抄**；**Art Taylor 同時在本盤與《Street Singer》**（1960-09-01）打鼓；**維基把後一張指向《Vertigo》，那是 c-145 b 組的卡**。｜**店面**：Apple us 命中 1617106179，**9 軌＝1989 CD 形（多兩個 alternate take），原盤是 6 軌**，`releaseDate` 1962-09-28＝錄音日（第 484 條）。**CAA 有圖，來源 eafd2531＝1979 日本原壓** ✓。｜非選輯：單一場次的四重奏原創專輯。"
+ },
+ {
+  "key": "desc2:Jackie McLean|Consequence",
+  "artist": "Jackie McLean",
+  "album": "Consequence",
+  "facts": [
+   {
+    "f": "release-group ddefb8f2 的欄位：title「Consequence」（**單數**）、artist-credit「Jackie McLean」（Person 5b6993ef）、first-release-date 1979、primary-type Album、secondary-types 空。**轄下只有三筆**：**原盤 3c722469 是 1979 US Blue Note LT-994、12 吋 6 軌**（無 barcode）；2005-10-04 US CD 9ad32dbf（0946 3 11428 2 6）；2005 XE CD adc8d5e2（0946 3 11429 2 5）。**兩張 CD 也是 6 軌，與原盤一致——本組少數沒有 bonus track 版本的碟。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ddefb8f2-1124-318a-8ffc-6a8ededc6ce8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 LT 系列頁：**LT-994，1979**，錄於 **Van Gelder Studio, Englewood Cliffs, NJ，1965 年 12 月 3 日**，編制 Lee Morgan（小號）、Jackie McLean（中音薩克斯風）、Harold Mabern（鋼琴）、Herbie Lewis（貝斯）、Billy Higgins（鼓）。六個母帶號連號：1687 tk.3〈Consequences〉、1688 tk.4〈Bluesanova〉、1689 tk.10〈Tolypso〉、1690 tk.11〈Slumber (aka Soft Touch)〉、1691 tk.12〈Vernestune (aka The Three Minors)〉、1692 tk.16〈My Old Flame〉。⚠ **jazzdisco 的盤名欄作單數「Consequence」、曲目欄的 tk.3 卻作複數「Consequences」**（第 818 條已記）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/"
+   },
+   {
+    "f": "**逐軌母帶比對（本層自跑）**：1965-12-03 的六個 take **全部只指向 LT-994**，分年 session 頁裡沒有任何一軌流向別的目錄號，**池中零軌重複**。⚠ **同日反查出現第二場、且是第 855 條那種假陽性**：**同一天 Ornette Coleman Trio 在瑞典斯德哥爾摩的 Gyllene Cirkeln 現場錄音**（產出 BLP 4224／4225 兩張《At the Golden Circle》），**錄音室與編制完全不同、與本盤毫無關係**。→ **只憑錄音日反查就會把紐澤西的五重奏棚錄與斯德哥爾摩的三重奏現場寫成同一件事。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1965-1966/"
+   },
+   {
+    "f": "**Cash Box 1979 年 9 月 15 日 p41 的「Back to Blue Note」十張名單**（第 783 條的原始出處）：「…ten albums culled from never-before-released masters produced by Michael Cuscuna」，逐一列出 Sonic Boom／The Soothsayer／Club House／Chant／Solid／**Confirmation**／New Time Shuffle／**Consequences**／A Slice Of The Top／Spiral。⚠ **這一則與 Billboard 1979-09-22 都把本盤印成複數的「Consequences」**，**只有 Cash Box 1979-11-10 p15 印對單數「Consequence」**（第 509c 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1979/CB-1979-09-15.pdf"
+   },
+   {
+    "f": "**Billboard 1980 年 3 月 8 日的整版「fourteen unreleased masters」廣告（OCR 檔第 34 頁）**：逐個盤名列出，**第一個就是「JACKIE McLEAN Consequence bBlue Note CLASSIC」**（這裡印的是單數），同版還有 ANDREW HILL《Dance With Death》、GRANT GREEN《Solid》、LOU DONALDSON《Midnight Sun》、WAYNE SHORTER《The Soothsayer》、STANLEY TURRENTINE《New Time Shuffle》、GRANT GREEN《Nigeria》、HANK MOBLEY《A Slice Of The Top》、JIMMY SMITH《Confirmation》、LEE MORGAN《Taru》、BOBBY HUTCHERSON《Spiral》、DEXTER GORDON《Clubhouse》——**1979 那十張與 1980 年新出的四張被廠牌合併成一個「十四張」的檔期在賣。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-03-08.pdf"
+   },
+   {
+    "f": "維基 infobox：released「1979; 2005 (CD)」、recorded December 3, 1965、studio Van Gelder Studio, Englewood Cliffs, NJ、label「Blue Note LT-994; 0946 3 11428 2 6 (CD)」、**producer Alfred Lion**、length 36:18；chronology 前一張《Jacknife》(1965)、後一張《Dr Jackle》(1966)。⚠ **《Jacknife》是池中 c-144 已收的卡**——**但那也是庫存盤，維基的 chronology 排的是錄音順序不是發行順序，正文不得寫成「上一張」。**",
+    "src": "https://en.wikipedia.org/wiki/Consequence_(album)"
+   }
+  ],
+  "hookCandidates": [
+   "1965 年 12 月 3 日那天錄的六首，母帶號 1687 到 1692 一個不漏地連著，卻整套在庫房裡躺了十四年才第一次出貨",
+   "同一天的另一場 Blue Note 錄音在斯德哥爾摩——Ornette Coleman 的現場；廠牌那一年在兩個大陸上同時開機，只有這一卷沒發出來"
+  ],
+  "sound": "6 軌五重奏，小號與中音薩克斯風的前線。Lee Morgan 在 1965 年年底的音色已經是《The Sidewinder》之後那個更放鬆的版本，McLean 的中音則帶著硬邊。Harold Mabern 的鋼琴、Herbie Lewis 的貝斯與 Billy Higgins 的鼓把六首撐在中快板上。〈Bluesanova〉是巴薩諾瓦拍子的藍調，〈Tolypso〉帶加勒比節奏，〈My Old Flame〉是全盤唯一的標準曲慢板。",
+  "keyTracks": [
+   "Consequence",
+   "Bluesanova",
+   "My Old Flame"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1979 成立，且是本組年份證據最硬的一張。** MB frd 1979（原盤 3c722469＝US LT-994）＝jazzdisco LT 頁 1979＝維基 1979＝Discogs 美國原壓兩筆＋卡帶 4LT 994 皆 1979。**紙本三則、兩刊獨立**：**Cash Box 1979-09-15 p41** 的十張名單（第 783 條）、**Cash Box 1979-11-10 p15** 的續報（**唯一把盤名印對成單數的一則**）、**Billboard 1980-03-08 p34** 的「fourteen unreleased masters」整版廣告（本盤列在第一個）。**上市取 1979 年 10 月第一週**（Cash Box 1979-10-06「Beginning this week」，第 812 條）。⚠ **錄音年 1965-12-03 與首次商業發行年 1979 要分開寫**：這是庫存盤，不是 1965 年的專輯。⚠ **盤名單複數**：紙本 1979 年兩則都印「Consequences」、jazzdisco 曲目欄也是複數，**卡上的單數 `Consequence` 以 MB RG／Discogs 原壓盤面／Cash Box 11-10 為準，正文不得寫成複數。**",
+  "notes": "**覆核策展層：rgMbid ddefb8f2／原盤 3c722469／LT-994／6 軌／掛名 `Jackie McLean`／年份 1979 全部成立，本張未擋下。** 本層補上 Billboard 1980-03-08 的整版廣告（策展層把本盤列在 1979 那波，**廠牌自己 1980 年 3 月還在同一個檔期裡賣它**）。｜⚠ **撞陳列：無。** 1965-12-03 六個 take 全部只去 LT-994。⚠ **但同日反查中了一個第 855 條的假陽性**：同一天 Ornette Coleman Trio 在斯德哥爾摩 Gyllene Cirkeln 錄的現場（BLP 4224／4225）——**兩個大陸、兩組人，只有日期相同**。**正文提到「那一天」時不得把兩場寫成同一件事。**｜**製作人**：維基 infobox 作 **Alfred Lion**（1965 年那一場的製作人）；**1979 年發行這一波的監製是 Michael Cuscuna**（Cash Box 1979-09-15 原文「masters produced by Michael Cuscuna」是講母帶整理，同批《Midnight Sun》LT-1028 的 Cash Box 評介直接把 Producer 欄寫成 Cuscuna）——**兩層製作人不得混寫。** **封面設計者查無。**｜⚠ **跨卡**：**Lee Morgan 在本組出現五次**（《Sonic Boom》《Taru》是領班盤，本盤與《Confirmation》《A Slice of the Top》《Mr. Natural》《Third Season》他是側人）；**Billy Higgins 在本組出現六次**——**正文不得因為名字重複就寫成同一個班底**（第 669 條第 3 點）。｜**店面**：Apple us 命中，軌數等於原盤 6 軌。**CAA 有圖、來源是美國原壓。**｜非選輯：單一場次的五重奏原創專輯。"
+ },
+ {
+  "key": "desc2:Jimmy Smith|Confirmation",
+  "artist": "Jimmy Smith",
+  "album": "Confirmation",
+  "facts": [
+   {
+    "f": "release-group 901ff61d 的欄位：title「Confirmation」、artist-credit「Jimmy Smith」（Person）、first-release-date 1979、primary-type Album、secondary-types 空。**轄下只有一筆 release**：**1ac06a11＝1979 US Blue Note LT-992、12 吋、只有 3 軌**（無 barcode）——〈What Is This Thing Called Love〉〈Confirmation〉〈Cherokee〉。**三軌一張 LP，是本組軌數最少的一張**（Discogs 的 2012 日本 CD TOCJ-50276 MB 未建）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=901ff61d-cf6f-406f-a05a-6f987ee40f2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 LT 系列頁：**LT-992，1979**，**兩晚、兩組人，都在 Manhattan Towers, NYC（不是 Van Gelder）**。**1957 年 8 月 25 日**：Lee Morgan（小號）、Curtis Fuller（長號）、George Coleman（中音薩克斯風）、Jimmy Smith（管風琴）、**Eddie McFadden 與 Kenny Burrell 兩位吉他手分軌**、Donald Bailey（鼓），留下 tk.3〈What Is This Thing Called Love〉與 tk.5〈Cherokee〉。**1958 年 2 月 25 日**：Lee Morgan、**Lou Donaldson（中音）**、**Tina Brooks（次中音）**、Smith、Kenny Burrell、**Art Blakey（鼓）**，留下 tk.12〈Confirmation〉。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/"
+   },
+   {
+    "f": "⚠ **本張最重要的逐軌結論（第 738 條做法，本層自跑）**：**LT-992 的三軌在原始 LP 層對池中零重複，但在 CD 層三軌全部落進池中既有卡的 CD 版**。分年 session 頁逐軌寫得很清楚——**1957-08-25 那晚八個 take 的去向**：tk.2〈J.O.S.〉→BLP 4011 ＋ **CDP 7 46546 2**；**tk.3〈What Is This Thing Called Love〉→LT-992 ＋ CDP 7 46546 2**；tk.4〈Just Friends〉→BLP 4002 ＋ CDP 7 46546 2；**tk.5〈Cherokee〉→LT-992 ＋ CDP 7 46546 2**；tk.6〈Little Girl Blue〉→**LT-1092**（＝b 組《On the Sunny Side》）；tk.8／tk.9→BNJ-50101；tk.11→BLP 4002。**而 CDP 7 46546 2 就是 seed 卡《House Party》（BLP 4002）的 1987 年 CD。** **1958-02-25 那晚**：**tk.12〈Confirmation〉→LT-992 ＋ CDP 7 46097 2**，**而 CDP 7 46097 2 就是 seed 卡《The Sermon!》（BLP 4011）的 1987 年 CD**。→ **三軌全在池中兩張卡的 CD 版上。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1957-1958/"
+   },
+   {
+    "f": "⚠ **第 855 條的教科書級假陽性，就發生在本張的日期上**：**1957 年 8 月 25 日 Blue Note 同一天有兩場**——一場是 **Lee Morgan Sextet 在 Van Gelder Studio, Hackensack**（產出 BLP 1575《City Lights》，**池中 c-136 已有卡**），另一場才是 **Jimmy Smith 在 Manhattan Towers, NYC**。**更狠的是兩場有三個共同樂手**（Lee Morgan、Curtis Fuller、George Coleman 同一天跑了兩個棚）——**第 855 條要求的「同錄音室＋至少一位共同樂手」兩項裡，共同樂手那一項會通過，只有錄音室能把兩場分開。** → **判準要收緊成：錄音室對不上就是兩場，不管共同樂手有幾個。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1957-1958/"
+   },
+   {
+    "f": "**Discogs 美國原壓 3808231（LT-992，1979 US）的實體盤面資料**：notes「Recorded at Manhattan Towers, New York City. 'Confirmation' recorded on February 25, 1958. All other tunes recorded on August 25, 1957. **This material is released here for the first time.** Sleeve credits either 'Kenny Burrell or Eddie McFadden' for guitar」——**廠牌自己在封套上承認吉他手考不出是誰**。credits 欄：**Producer [Original Sessions] Alfred Lion、Engineer [Recording] Rudy Van Gelder、Engineer [Remix] Tony Sestanovich、Liner Notes Leonard Feather、Art Direction/Design Bill Burks、Photography Jennifer Griffiths**。⚠ 同號另有一筆 **13146418 標「Misprint」**：notes 記那批錯體「有 LT-992 的封面與母模，A 面標籤卻是 Jackie McLean 的 LT-994、B 面是 Donald Byrd 的 LT-991」。",
+    "src": "https://api.discogs.com/releases/3808231"
+   },
+   {
+    "f": "**Cash Box 1980 年 2 月 2 日 p44** 把「Back to Blue Note」十張再列一次（「…previously unreleased masters by some of the greatest musicians of the 1960s」，含「'Confirmation' by organist Jimmy Smith」）；**Billboard 1980-03-08 p34 的整版「fourteen unreleased masters」廣告**也印「JIMMY SMITH Confirmation bBlue Note CLASSIC」。⚠ **兩則的文案都說是 1960 年代的母帶——本盤其實是 1957／58 年錄的，廠牌文案自己把年代寫寬了。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1980/CB-1980-02-02.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "三首曲子撐滿一整張 LP，而且不是同一晚錄的：兩首來自 1957 年 8 月 Manhattan Towers 那場，剩下的〈Confirmation〉是半年後 Art Blakey 坐上鼓椅的另一晚",
+   "封套上廠牌自己寫「吉他不是 Kenny Burrell 就是 Eddie McFadden」——二十年後連自家的 A&R 也分不出那一晚是誰在彈"
+  ],
+  "sound": "3 軌，管風琴為中心的大編制 jam。不是 Jimmy Smith 慣見的三重奏，而是把小號、長號、薩克斯風架在 Hammond 前面，每首都拉到十分鐘以上讓每個人輪流獨奏。〈What Is This Thing Called Love〉與〈Cherokee〉是 1957 年那晚的快板競技，兩把吉他分軌出現；〈Confirmation〉是 Charlie Parker 的曲子，1958 年那晚由 Art Blakey 推著跑，Lou Donaldson 與 Tina Brooks 的兩支薩克斯風接腔。錄音地點是 Manhattan Towers 的大廳，不是 Van Gelder 的棚。",
+  "keyTracks": [
+   "Confirmation",
+   "Cherokee",
+   "What Is This Thing Called Love"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1979 成立。** MB frd 1979（**MB 唯一的 release** 1ac06a11＝US LT-992）＝jazzdisco LT 頁 1979＝Discogs 美國原壓三筆＋8-track 8LT 992 皆 1979。**紙本四則**：Cash Box 1979-09-15 p41 與 1979-11-10 p15 的十張名單、**Cash Box 1980-02-02 p44** 的再列（本層新找到）、**Billboard 1980-03-08 p34** 的整版廣告。**上市取 1979 年 10 月第一週**（第 812 條）。⚠ **錄音年 1957-08-25／1958-02-25 與首次商業發行年 1979 差二十一、二年**——**本組時間落差最大的一張，正文必須把兩層分開**。⚠ **廠牌文案把它說成「1960 年代的母帶」（Cash Box 1980-02-02），那是錯的**，正文不得照抄。",
+  "notes": "**覆核策展層：rgMbid 901ff61d／原盤 1ac06a11／LT-992／3 軌／掛名 `Jimmy Smith`／年份 1979 全部成立，本張未擋下。** ⚠ **但策展層第 816 條說本張「逐軌零重複」，本層要收緊**：**LP 層確實零重複，CD 層三軌全部重複**——tk.3 與 tk.5 在 **CDP 7 46546 2＝seed《House Party》的 1987 CD**、tk.12 在 **CDP 7 46097 2＝seed《The Sermon!》的 1987 CD**。→ **寫作層的硬約束**：**三軌都不得寫成「只有這張碟聽得到」**；可以寫的是「同兩晚的三段長獨奏，1979 年才第一次以 LP 形式單獨出版」。｜⚠ **第二條硬約束**：**1957-08-25 那晚的 tk.6〈Little Girl Blue〉去了 b 組《On the Sunny Side》（LT-1092）**——**a、b 兩卡共用同一晚，兩張的正文不得各自寫成「那一晚的唯一出土」**（b 組第 845 條已互指）。｜⚠ **第三條**：**同一晚的 Manhattan Towers 素材也構成 seed《House Party》《The Sermon!》兩張正盤**——**三張碟共用兩個晚上，上架後相似推薦會互相打架。**｜⚠ **第 855 條假陽性**：1957-08-25 同日另有 Lee Morgan Sextet 在 **Van Gelder Hackensack** 的 BLP 1575《City Lights》（**池中 c-136 已有**），**兩場有三個共同樂手**——**只有錄音室分得開。**｜**製作人（原始場次）Alfred Lion、錄音 Rudy Van Gelder、重混 Tony Sestanovich、內頁文字 Leonard Feather、封面設計 Bill Burks、攝影 Jennifer Griffiths**（Discogs 原壓 3808231 的 credits，**本組資料最全的一張封套**）。｜**封面缺口的替代圖**：**CAA RG 層 404、零圖**，建議取 **Discogs 美國原壓 3808231 的 `images[0].uri`**（primary，600px）：`https://i.discogs.com/MM5Dm2KZ7RU8H9Za5vL42Vb2qhNzSobLPBiYsQOTAq4/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MDgy/MzEtMTM0NTI5Nzk5/MS00NDQyLmpwZWc.jpeg`。**不要取 13146418**——那是 Misprint 錯體盤。｜**店面**：Apple us 三種查法（藝人＋盤名、藝人目錄、盤名單查）**全部回別人的盤或 Jimmy Smith 的他盤，本張查無**。⚠ **池中另有 seed `Tommy Flanagan —《Confirmation》`（apex 4），而 Tommy Flanagan 自己也在本批（《Lonely Town》）**——**盤名鍵相同、掛名不同，店面比對一律連掛名帶 LT-992。**｜非選輯：兩場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Bobby Hutcherson|Spiral",
+  "artist": "Bobby Hutcherson",
+  "album": "Spiral",
+  "facts": [
+   {
+    "f": "release-group 3cca0093 的欄位：title「Spiral」、artist-credit「Bobby Hutcherson」（Person）、first-release-date 1979、primary-type Album、secondary-types 空。轄下三筆：**原盤 f2896cfd 是 1979 US Blue Note LT-996、12 吋 6 軌**（無 barcode）；2012-07-25 JP CD 6d18965e（**廠牌名登成「Blue Note Classic」，catno TOCJ-50289**）；2021-10-21 JP CD 220634fb（TOCJ-50280＋UCCU-8164）。原盤六軌：〈Ruth〉〈The Wedding March〉〈Poor People's March〉〈Spiral〉〈Visions〉〈Jasper〉。⚠ **TOCJ-50289 這個號在 MB 上同時掛在本張的 2012 日本 CD 與《Landslide》的 2021 日本 CD 上，是 MB 的撞號**（第 818 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3cca0093-01c7-487e-91fb-51752d462b83&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 LT 系列頁：**LT-996，1979**，**兩場、相隔三年半、兩組完全不同的人，都在 Van Gelder Studio, Englewood Cliffs**。**1965 年 4 月 3 日**是六重奏：Freddie Hubbard（小號）、Sam Rivers（次中音、高音薩克斯風、低音單簧管、長笛）、Hutcherson（顫音琴、馬林巴）、**Andrew Hill（鋼琴）**、Richard Davis（貝斯）、Joe Chambers（鼓）——**只留下 1557 tk.11〈Jasper〉一軌**。**1968 年 11 月 25 日**是五重奏：**Harold Land（次中音）**、Hutcherson（顫音琴）、Stanley Cowell（鋼琴）、Reggie Johnson（貝斯）、Joe Chambers（鼓）——tk.8〈Spiral〉tk.14〈Visions〉tk.18〈Poor People's March〉tk.28〈Ruth〉tk.36〈The Wedding March〉五軌。**Joe Chambers 是唯一橫跨兩場的人。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/"
+   },
+   {
+    "f": "⚠ **逐軌母帶比對（本層自跑，比策展層再深一層）**：**1965-04-03 那一場六個 take，五個是 seed 卡《Dialogue》（BLP 4198）的內容**（1556 tk.3〈Catta〉、1558 tk.18〈Idle While〉、1559 tk.24〈Ghetto Lights〉、1560 tk.29〈Les Noirs Marchent〉、1561 tk.30〈Dialogue〉），**只有 1557 tk.11〈Jasper〉歸 LT-996**——**但 session 頁把 tk.11 的去向寫成「Blue Note LT-996, CDP 7 46537 2」，而 CDP 7 46537 2 正是《Dialogue》的 1987 年 CD**。→ **〈Jasper〉在 CD 層也是《Dialogue》的一軌。** **1968-11-25 那一場**：tk.8〈Spiral〉與 tk.28〈Ruth〉的去向是「LT-996, **7243 4 97508 2 1**」＝**b 組卡《Medina》的 1998 年 CD**；同場的 tk.44〈Photon In A Paper World〉只進 Mosaic MD7-278。→ **本張六軌裡有三軌（Jasper／Spiral／Ruth）在池中兩張卡的 CD 版上。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1965-1966/"
+   },
+   {
+    "f": "**Cash Box 1980 年 2 月 16 日（OCR 檔第 36 頁）的 JAZZ ALBUM PICKS 評介**（本層新找到、策展層未收）：「**SPIRAL — Bobby Hutcherson — Blute Note LT-996 — Producers: Alfred Lion, Francis Wolff and Duke Pearson — List: $7.98** ／ The innovative vibist's **1965 recording** sounds as bold and fresh as anything called modern jazz in 1980. These elliptical, melodic compositions fall halfway between the bop of Bird, Rollins and Miles and the 'new thing' of Coltra…」。⚠ **兩處錯**：廠牌名印成「Blute Note」（第 509c 條）；**把整張說成「1965 年的錄音」，實際上六軌裡五軌是 1968 年錄的。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1980/CB-1980-02-16.pdf"
+   },
+   {
+    "f": "維基 infobox：released 1979、**recorded「April 3, 1965; November 11, 1968」**、studio Van Gelder Studio, Englewood Cliffs、genre Post-bop、length 36:38、label Blue Note LT 996、**producer Michael Cuscuna, Duke Pearson, Francis Wolff, Alfred Lion**。⚠ **錄音日錯一處**：維基的 **November 11, 1968** 與 jazzdisco 的 **November 25, 1968** 打架，**jazzdisco 有 take 號、維基沒有，取 jazzdisco**（第 818 條）。✓ **但維基比 Cash Box 多給一個名字**：**Michael Cuscuna**——**那是 1979 年整理發行的監製，Lion／Wolff／Pearson 是 1965／68 年錄音當時的製作人，四個人分屬兩層。**",
+    "src": "https://en.wikipedia.org/wiki/Spiral_(Bobby_Hutcherson_album)"
+   },
+   {
+    "f": "**店面的合體問題（第 646 條在本組最危險的一處）**：Apple us 唯一命中的是 **collectionId 716626996「Medina & Spiral」11 軌（1998 年合體 CD）**，逐軌核過：**第 1–6 軌是《Medina》**（Avis／Comes Spring／Dave's Chant／Orientale／Medina／Ungano），**第 7–11 軌是《Spiral》的五軌**（Ruth／The Wedding March／Poor People's March／Spiral／Visions）——**缺〈Jasper〉，也就是 1965 年那一軌不在裡面**。**而《Medina》是 c-145 b 組的卡，b 組第 851 條已把同一個 collectionId 記成《Medina》的命中。**",
+    "src": "https://itunes.apple.com/lookup?id=716626996&entity=song&limit=20&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "六軌裡有一軌是 1965 年錄的、五軌是 1968 年錄的，中間隔著三年半和一整組換過的樂手——唯一兩場都在的是鼓手 Joe Chambers",
+   "1965 年那場的六個 take，五個當年就成了《Dialogue》，剩下的〈Jasper〉獨自在庫房裡等了十四年才跟另一場的五首湊成一張"
+  ],
+  "sound": "6 軌，顫音琴領班的 post-bop。兩場的質地差很多：1968 年那五軌是 Harold Land 的次中音與 Hutcherson 的顫音琴兩條線在 Stanley Cowell 的鋼琴上互相纏繞，〈Poor People's March〉與〈The Wedding March〉都是進行曲拍子的變形；〈Jasper〉那一軌回到 1965 年的六重奏，多了 Freddie Hubbard 的小號、Sam Rivers 的多種管樂與 Andrew Hill 的鋼琴，密度明顯高一階。全盤沒有人聲，馬林巴只在 1965 那場出現。",
+  "keyTracks": [
+   "Spiral",
+   "Poor People's March",
+   "Jasper"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1979 成立。** MB frd 1979（原盤 f2896cfd＝US LT-996）＝jazzdisco LT 頁 1979＝維基 1979＝Discogs 美國原壓兩筆＋卡帶 4LT 996＋南非壓一筆皆 1979。**紙本四則、兩刊獨立**：Cash Box 1979-09-15 p41 與 11-10 p15 的十張名單、**Cash Box 1980-02-16 p36 的 JAZZ ALBUM PICKS 評介**（本層新找到，**是本盤唯一一則有內文的評論**）、Billboard 1980-03-08 p34 的整版廣告。**上市取 1979 年 10 月第一週。**⚠ **錄音年有兩個（1965-04-03 與 1968-11-25），與首次商業發行年 1979 都要分開寫。**⚠ **不得照抄 Cash Box 的「1965 recording」**——**那則評介把整張說成 1965 年，實際只有一軌是。**⚠ 維基的錄音日 November 11 亦錯，**取 jazzdisco 的 November 25。**",
+  "notes": "**覆核策展層：rgMbid 3cca0093／原盤 f2896cfd／LT-996／6 軌／掛名 `Bobby Hutcherson`／年份 1979 全部成立，本張未擋下。** 策展層第 816 條說 1965 那場「六個 take 中五個在《Dialogue》、只有 tk.11 留給本張」——**成立，但本層再查出一層：tk.11〈Jasper〉的去向欄同時列了 CDP 7 46537 2，那是 seed《Dialogue》的 1987 年 CD**。→ **〈Jasper〉不是本張獨有，它也在《Dialogue》的 CD 上。**｜⚠ **寫作層的三條硬約束**：(1) **1965 那一場不得寫成本張獨有**——五軌是 seed《Dialogue》，第六軌也在《Dialogue》的 CD 上。(2) **〈Spiral〉與〈Ruth〉不得寫成本張獨有**——兩軌在 **b 組《Medina》的 1998 年 CD（7243 4 97508 2 1）** 上，**a、b 兩卡的 risk 已互指**。(3) **兩場不得寫成同一團**：1965 是 Hubbard／Rivers／**Andrew Hill**／Richard Davis／Chambers 的六重奏（**Andrew Hill 是 b 組《Dance With Death》的領班**），1968 是 **Harold Land**（**本組《Take Aim》的領班**）／Cowell／Reggie Johnson／Chambers 的五重奏，**只有 Joe Chambers 兩場都在**。｜**製作人分兩層**：**錄音當時 Alfred Lion／Francis Wolff／Duke Pearson**（Cash Box 1980-02-16 評介欄印出三人）、**1979 年發行的監製 Michael Cuscuna**（維基）——**不得寫成同一批人。** **封面設計者查無。**｜⚠ **店面：本張判「查無」，collectionId 讓給 b 組。** 唯一命中的 **716626996「Medina & Spiral」**是 1998 年兩張碟的合體 CD，**b 組第 851 條已把它記成《Medina》的命中**；**依第 646 條「兩張卡不得共用同一個 collectionId」，本層裁定：716626996 歸《Medina》（該碟 6/6 軌齊全、且排在合體盤前半），本張《Spiral》明寫查無**（本張在該合體盤上只有 5/6 軌，缺〈Jasper〉）。**這個裁定必須往下傳給上架層，不得讓兩張卡各自去撈同一個 id。**｜**CAA 有圖、來源是美國原壓。**｜非選輯：兩場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|In Memory Of",
+  "artist": "Stanley Turrentine",
+  "album": "In Memory Of",
+  "facts": [
+   {
+    "f": "release-group 7e77ea62 的欄位：title「In Memory Of」、artist-credit「Stanley Turrentine」（Person）、**first-release-date 1979**、primary-type Album、secondary-types 空。轄下三筆：**原盤 d3f3dfc0 是 1979 US Blue Note LT-1037、12 吋 6 軌**（無 barcode，**年份欄就是被推翻的那一個**）；2021-10-20 JP CD 7504739e（LT 1037＋TOCJ-50285＋UCCU 8144）；2025-10-03 XW 黑膠 2898dc9c（602455716088）。原盤六軌：〈Fried Pies〉〈In Memory Of〉〈Niger Mambo〉〈Make Someone Happy〉〈Jodi's Cha Cha〉〈Sunday In New York〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7e77ea62-43dd-4a88-b648-67eb4b1dd443&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**年份改判的第一手證據：Billboard 1980 年 4 月 26 日（OCR 檔第 13 頁）的 Liberty／UA 整版新片廣告**，逐字印「**STANLEY TURRENTINE / In Memory Of LT -1037 8LT -1037 4LT -1037**」（三種載體的號一起登），同版還有 **LARRY YOUNG / Mother Ship LT -1038**（b 組的卡）、BILL MEDLEY / Sweet Thunder LT -1024、GERRY RAFFERTY LOO -1039、THE BLACK STALLION 原聲帶 LOO -1040。**廠牌自己的檔期廣告把本盤放在 1980 年 4 月**——依第 612 條階序這條最硬。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-04-26.pdf"
+   },
+   {
+    "f": "**Discogs `catno=LT-1037` 反查六筆**：**1980 美國 LP 兩筆（2836229／646451）＋1980 美國卡帶 4LT 1037 一筆**、2012 日本 TOCJ-50285、2025 全球再壓、以及一筆與本盤無關的日本 mini-album。**美國原壓群三筆全部標 1980，沒有一筆標 1979。**",
+    "src": "https://api.discogs.com/database/search?catno=LT-1037"
+   },
+   {
+    "f": "jazzdisco 的 LT 系列頁：**LT-1037 年份欄記 1979（錯）**，但編制與母帶號可信：錄於 **Van Gelder Studio, Englewood Cliffs, NJ，1964 年 6 月 3 日**，七重奏 Blue Mitchell（小號）、Curtis Fuller（長號）、Stanley Turrentine（次中音）、**Herbie Hancock（鋼琴）**、Bob Cranshaw（貝斯）、Otis Finch（鼓）、Mickey Roker（康加，只在前兩軌）。六個母帶號 1361 tk.2〈Fried Pies〉／1362 tk.5〈In Memory Of〉／1363 tk.13〈Sunday In New York〉／1365 tk.30〈Make Someone Happy〉／1364 tk.35〈Jodie's Cha Cha〉／1366 tk.38〈Niger Mambo〉。⚠ **jazzdisco 的曲名作〈Jodie's Cha Cha〉、MB 作〈Jodi's Cha Cha〉。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/"
+   },
+   {
+    "f": "⚠ **逐軌母帶比對（本層自跑）**：1964-06-03 那一場 session 頁顯示 **tk.2〈Fried Pies〉與 tk.30〈Make Someone Happy〉的去向是「Blue Note BLP 4234, LT-1037」**——**BLP 4234 在 jazzdisco 上標「Stanley Turrentine … not released」**，是當年配了號卻沒發的那張。**其餘四軌只指向 LT-1037，池中零軌重複。** ⚠ **關鍵交叉**：**同一個 BLP 4234 也吃掉了 1964-09-04 那場（＝本組《Mr. Natural》LT-1075）的 tk.1〈Shirley〉與 tk.14〈Tacos〉**——**兩場曾經被排進同一張沒發出去的專輯，十六年後才拆成 LT-1037 與 LT-1075 兩張。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1963-1964/"
+   },
+   {
+    "f": "維基 infobox 站在**被推翻的那一邊**：released **1979**、recorded June 3, 1964、label Blue Note、**producer Alfred Lion**、chronology 前一張《Blue Flames》(1964)、**後一張《Mr. Natural》(1964)**（＝本組另一張卡）。⚠ **本盤的維基條目直查會落到消歧義頁**，正確條目名是 `In Memory Of (Stanley Turrentine album)`（第 754／787 條）。",
+    "src": "https://en.wikipedia.org/wiki/In_Memory_Of_(Stanley_Turrentine_album)"
+   }
+  ],
+  "hookCandidates": [
+   "1964 年 6 月與 9 月的兩場本來要合成同一張 BLP 4234，那張從沒出過；十六年後廠牌把它拆成兩張 LT 分開賣",
+   "四個資料庫一致寫 1979，廠牌自己 1980 年 4 月的整版新片廣告卻把它跟 Larry Young 印在同一頁上——那是它真正上市的月份"
+  ],
+  "sound": "6 軌七重奏。小號、長號、次中音三管的前線，Herbie Hancock 在 1964 年的鋼琴已經很會留白。〈Fried Pies〉與〈Niger Mambo〉是拉丁拍子的中快板，Mickey Roker 的康加只出現在前兩軌；〈In Memory Of〉是領班的慢板主題；〈Sunday In New York〉與〈Make Someone Happy〉是兩首百老匯／流行標準曲。Turrentine 的次中音仍是那種偏厚、帶藍調口音的音色，還沒走到後來 CTI 時期的滑順。",
+  "keyTracks": [
+   "In Memory Of",
+   "Fried Pies",
+   "Niger Mambo"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1979→1980 改判：成立，本層再加一層。** **說 1979 的有四個**：MB frd 1979（原盤 d3f3dfc0 也登 1979）、jazzdisco LT 頁 1979、**維基 infobox 1979**、Apple `releaseDate` 1979-01-01。**說 1980 的兩個階序高**：(1) **Billboard 1980-04-26 的 Liberty／UA 整版檔期廣告**（逐字印「In Memory Of LT-1037 8LT-1037 4LT-1037」，第 612 條「廠牌檔期廣告最硬」）；(2) **Discogs 美國原壓群三筆（LP×2＋卡帶）全部 1980，零筆 1979**。→ **取 1980，上市取 1980 年 4 月。**⚠ **成因可還原**：LT-1037 的號夾在 1980 年 2–3 月出的 LT-1028／1030／1031／1032 與同一則廣告上的 LT-1038 中間，**四個資料庫卻因為它被算進 1979 年「Back to Blue Note」的宣傳語境而一致記錯**。⚠ **本層另在 1980–81 兩刊 206 期命中頁裡搜過 `LT\\s*-?\\s*1037`：只有 1980-04-26 一則，沒有評論欄、沒有價目表、沒有榜位**——**庫存盤不進榜**（第 853 條在本組成立）。⚠ **錄音年 1964-06-03 與首次商業發行年 1980 相隔近十六年，正文必須分開寫。**",
+  "notes": "**覆核策展層：rgMbid 7e77ea62／原盤 d3f3dfc0／LT-1037／6 軌／掛名 `Stanley Turrentine`／年份改判 1980 全部成立，本張未擋下。** 本層複驗了 Billboard 1980-04-26 廣告的原文與 Discogs 三筆美國原壓，並確認 **1980–81 兩刊裡本盤只有這一則命中**。｜⚠ **撞陳列：無，但有一條比撞陳列更值得寫的線**——**1964-06-03 的 tk.2〈Fried Pies〉與 tk.30〈Make Someone Happy〉當年被排進 BLP 4234，而 BLP 4234 同時也收了 1964-09-04（＝本組《Mr. Natural》LT-1075）的 tk.1〈Shirley〉與 tk.14〈Tacos〉**。**那張 BLP 4234 從未發行**，十六年後拆成 LT-1037 與 LT-1075 兩張。→ **兩卡的正文可以互指，但不得寫成「同一場」**（兩場相隔三個月、編制完全不同：本盤是 Blue Mitchell／Curtis Fuller／Herbie Hancock／Otis Finch，《Mr. Natural》是 Lee Morgan／McCoy Tyner／Elvin Jones）。｜**製作人 Alfred Lion**（維基，指 1964 年那一場）；**1980 年發行的監製沒有紙本點名本盤**，但同一波的 LT-1028／LT-1052 的 Cash Box 評介都印 Michael Cuscuna——**正文若要寫 1980 年那層的監製，請寫成「同一波的整理者」而不要直接掛在本盤上。** **封面設計者查無。**｜⚠ **跨卡**：**Stanley Turrentine 在本組出現四次**（本盤與《Mr. Natural》是領班盤、他是《Freedom》1964-10-22 那場的次中音，**與《Mr. Natural》那場只差七週**）；**Bob Cranshaw 在本組出現四次**。｜**店面**：Apple us 命中，⚠ **`releaseDate` 印 1979-01-01——正好等於被推翻的那個錯年，不得當年份來源**（第 484 條）。**CAA 有圖但來源是 2021 年日本 CD，不是原壓。**｜非選輯：單一場次的七重奏原創專輯。"
+ },
+ {
+  "key": "desc2:Sonny Clark|Blues in the Night",
+  "artist": "Sonny Clark",
+  "album": "Blues in the Night",
+  "facts": [
+   {
+    "f": "release-group 10ae1cca 的欄位：title「Blues in the Night」、artist-credit「Sonny Clark」（Person）、first-release-date 1979、primary-type Album、secondary-types 空。轄下四筆：**原盤 224c7983 是 1979 JP、但 MB 把 format 與 catno 都留空、只登 7 軌**；1998-11-26 JP CD b436d807（TOCJ-1618，7 軌）；2017-12-06 JP 的 b305e010 與 e5c95a67 **是同一張 UCCQ-9310 被建成兩筆**（後者 14 軌）。⚠ **MB 的 7 軌是漏軌**：jazzdisco 與 Discogs 日本原壓都是 **8 軌**，少掉的是 1958-11-16 那場的 tk.6〈Gee Baby, Ain't I Good To You (alternate take)〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=10ae1cca-e9f8-4b58-a331-e209c9daac73&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Toshiba／King 目錄頁：**GXF-3051，1979**，**兩場、兩個貝斯手，都在 Van Gelder Studio, Hackensack, NJ**。**1958 年 11 月 16 日**：Sonny Clark（鋼琴）、**Jymie Merritt（貝斯）**、Wesley Landers（鼓）——本盤只取 tk.6〈Gee Baby, Ain't I Good To You (alternate take)〉一軌。**1958 年 12 月 7 日**：**貝斯換成 Paul Chambers**、鼓仍是 Landers——tk.3〈Can't We Be Friends〉tk.4〈I Cover The Waterfront〉tk.8〈Somebody Loves Me〉tk.9〈Blues In The Night〉tk.10〈Blues In The Night (alternate take)〉tk.12〈All Of You〉tk.14〈Dancing In The Dark〉七軌。頁末標「** also released on Blue Note (J) GXK-8156 in 1980」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-toshiba-king-series/"
+   },
+   {
+    "f": "⚠ **逐軌母帶比對（本層自跑）＋本組最需要注意的一處**：**1958-11-16 那一場七個 take，除了本盤取走的 tk.6 之外，其餘五個（tk.3 Black Velvet／tk.4 I'm Just A Lucky So And So／tk.5 Gee Baby／tk.8 Ain't No Use／tk.9 The Breeze And I）全部去了 (J) GXF-3069《Sonny Clark - The Art Of The Trio》（1980）**，而且**當年就以 Blue Note 45-1729／45-1730／45-1731 三張單曲發行過**。**GXF-3069 目前不在池中**（第 822 條列為 GXF 段的缺口之一）。**1958-12-07 那一場七個 take 全部歸 GXF-3051（另同時登 (J) BNJ-61018《Sonny Clark Trio Vol. 3》，1985）。** → **池中零軌重複，本張不撞陳列。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1957-1958/"
+   },
+   {
+    "f": "Discogs `catno=GXF 3051` 反查三筆，**全部是 1979 年日本原壓**（兩筆一般版＋一筆白標宣傳盤 29395174），format 皆標 Limited Edition、Ⓟ1979。**沒有任何一筆標 1980 或美國壓片**——本盤與《Oleo》《Street Singer》一樣屬第 822 條「只有日本盤」的那一類。",
+    "src": "https://api.discogs.com/database/search?catno=GXF%203051"
+   },
+   {
+    "f": "維基 infobox：released 1979、**recorded「December 7, 1958 (#1–7); November 16, 1958 (#8–14)」**、Van Gelder Studio, Hackensack、**producer Alfred Lion**、length「37:39 (original LP) / 61:22 (2014 CD)」、label Blue Note GXF 3051；chronology 前一張《The Art of The Trio》、後一張《My Conception》。⚠ **維基的 #1–14 是 2014 年 CD 的軌序，不是 1979 年八軌 LP 的軌序**——**正文不得照抄「#8–14 是 11 月 16 日錄的」，原盤只從那一場取了一軌。**",
+    "src": "https://en.wikipedia.org/wiki/Blues_in_the_Night_(Sonny_Clark_album)"
+   },
+   {
+    "f": "**同期美國紙本查無，屬預期**：本層在 `billboard-bn-1977-1979-ocr.txt` 與 `cashbox-bn-1977-1979-ocr.txt`（1977-01→1979-12，兩刊共 310 期命中頁，`blue note` 為通配關鍵字）裡用 `GXF\\s*-?\\s*3051` 與盤名檢索**全部零命中**。**1979 年 Blue Note 在美國紙本的動靜集中在 LT 系列那十張**（Billboard 1979-09-22 p8 的名單裡沒有本盤），**日本 King 的 GXF 系列不進美國商業刊**（第 822 條第 2 點）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1979/Billboard%201979-09-22.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "八軌裡有七軌是 1958 年 12 月 7 日那天 Paul Chambers 坐鎮的三重奏，只有開頭那一軌來自三週前另一個貝斯手的場子",
+   "〈Blues in the Night〉在盤上出現兩次——正式版與替代版並排收進同一張，那是庫存盤才做得出來的排法"
+  ],
+  "sound": "8 軌鋼琴三重奏，沒有管樂。Sonny Clark 1958 年的觸鍵乾淨、節奏偏後靠，慢板時左手幾乎只點和弦。〈Blues in the Night〉收了正式與替代兩個版本並排，〈I Cover the Waterfront〉與〈Dancing in the Dark〉是慢板標準曲，〈Somebody Loves Me〉與〈All of You〉是中快板。開場的〈Gee Baby, Ain't I Good to You〉替代版來自另一場、貝斯是 Jymie Merritt，音色與其餘七軌的 Paul Chambers 明顯不同。",
+  "keyTracks": [
+   "Blues in the Night",
+   "I Cover the Waterfront",
+   "All of You"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1979 成立，四邊同邊。** MB frd 1979＝jazzdisco Toshiba／King 頁 1979＝維基 1979＝Discogs 日本原壓三筆（含白標宣傳盤）皆 1979、Ⓟ1979。**這個 1979 是日本首發年**，GXK-8156（1980）是換號再壓、不取（第 822 條第 1 點）。⚠ **美國紙本零命中是預期不是漏查**（1977–79 兩刊 310 期命中頁，`GXF 3051` 與盤名皆無）。⚠ **錄音年 1958-11-16／1958-12-07 與首次商業發行年 1979 相隔二十一年，正文必須分開寫。**⚠ **軌數以 8 為準**（jazzdisco 八軌、Discogs 原壓八軌），**MB 的 7 軌是漏軌**（第 818 條），**正文不得寫「七軌」。**",
+  "notes": "**覆核策展層：rgMbid 10ae1cca／原盤 224c7983／GXF 3051／掛名 `Sonny Clark`／年份 1979 全部成立，本張未擋下；策展層記的「MB 只登 7 軌、實際 8 軌」本層複驗成立**（少的是 1958-11-16 的 tk.6）。｜⚠ **撞陳列：無。** 但本層查出一條給後批的線：**1958-11-16 那一場的另外五個 take 全部去了 GXF-3069《The Art of the Trio》（1980），而且 1959 年就以 45-1729／1730／1731 三張單曲發行過**——**GXF-3069 目前不在池中（第 822 條的缺口），日後收進來時兩卡必須互指。**｜⚠ **兩場不得寫成同一團**：11-16 的貝斯是 **Jymie Merritt**、12-07 是 **Paul Chambers**，鼓都是 Wesley Landers。**本盤八軌裡只有一軌來自前一場。**｜⚠ **維基的軌號 #1–7／#8–14 是 2014 年 CD 的排法**，**不得拿來描述 1979 年的八軌 LP。**｜**製作人 Alfred Lion**（維基，指 1958 年那兩場）。**封面設計者查無**；維基另掛一張「日本版」alternative cover。｜⚠ **跨卡**：**Sonny Clark 在本組出現四次**——**本盤是他自己的三重奏領班盤**，《Tippin' the Scales》（1962）《Nigeria》（1962-01-13）《Oleo》（1962-01-31）三張他是側人鋼琴，**四卡正文不得互抄**（1958 年的三重奏與 1962 年當側人是兩個階段）。**他也是《Poppin'》（1957-10-20）與《Landslide》1962-06-25 那場的鋼琴**——**實際上本組二十三張裡他出現在六張上。**｜**店面**：Apple us 命中，**14 軌＝2017 年 UCCQ-9310 的 CD 形，原盤是 8 軌**；`releaseDate` 印 **1958-10-16**，**既不是錄音日也不是發行日，成因不明**（第 819 條）。**CAA 有圖、來源是日本原壓。**｜非選輯：兩場次的三重奏原創專輯。"
+ }
+]

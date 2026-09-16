@@ -1,0 +1,662 @@
+[
+ {
+  "key": "desc2:Marlena Shaw|Just a Matter of Time",
+  "artist": "Marlena Shaw",
+  "album": "Just a Matter of Time",
+  "facts": [
+   {
+    "f": "release-group 8f2ad4aa 的欄位：title「Just a Matter of Time」、artist-credit 單一 Person `Marlena Shaw`（f94db5b3）、first-release-date 1976、primary-type Album、secondary-types 空，轄下兩筆。**原盤 7371e7d5 是 1976 US Official Blue Note BN-LA606-G、12 吋 10 軌，軌長全數有填**：〈It's Better Than Walkin' Out〉260 秒、〈Brass Band〉220、〈This Time I'll Be Sweeter〉297、〈Think About Me〉270、〈You and Me〉237、〈Love Has Gone Away〉293、〈Sing to Me〉240、〈Take My Body〉293、〈Be for Real〉299、〈No Hiding Place〉133——**合計約 41 分 9 秒**。另一筆是 2013-08-26 GB SoulMusic Records SMCR 5103（c44297de，CD 11 軌，barcode 5013929080331，多一軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8f2ad4aa-b297-4f6d-af06-56721d246780&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note BN-LA 系列目錄在 **BN-LA606-G** 條下把本盤拆成三個檔期，全在 **Mediasound, NYC**：**1976 年 2 月 11 日**（母帶 17058〈Love Has Gone Away〉、17060〈Be For Real〉、17061〈This Time I'll Be Sweeter〉、17063〈Think About Me〉）、**2 月 17 日**（17059〈You And Me〉、17062〈Brass Band〉）、**2 月 23 日**（17057〈It's Better Than Walkin' Out〉），另有一組 1976 年 2 月未標日的（17064〈Sing To Me〉、17065〈Take My Body〉、17090〈No Hiding Place〉，**最後一首 Shaw 自己彈鋼琴**）。班底三場完全相同：George Butcher 與 Ricky Williams 鍵盤、Bert DeCoteaux 鍵盤兼編曲、Jerry Friedman／Hugh McCracken／Jeff Mironov／Lance Quinn 四把吉他、Bob Babbitt 電貝斯、Jimmy Young 鼓、Carlos Martin 康加、Dave Carey 與 Ted Sommer 打擊。⚠ **本層實測 jazzdisco 這一頁的 HTML 結構會讓人讀錯一格**：目錄號印在每一段的**開頭**，若照「號碼結尾」切塊會整頁位移一位（會把本盤讀成 BN-LA615-G）——**切塊要以號碼為起點、不是終點**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 587743（1976 US BN-LA606-G，4 圖）與同號的 12035582（0 圖）名單一致：**Bert DeCoteaux＝Producer 兼 Arranged By/Conductor 兼 Keyboards、Tony Silvester＝Producer、George Butler＝Executive-Producer**（⚠ **Butler 在 1976 年這一段已經是「執行製作」不是製作**，與本組 19 張同形）、**Bob Clearmountain＝Recorded By 兼 Mixed By**（⚠ **他日後的名字，此時還是 Mediasound 的錄音師**）、Ron St. Germain＝助理錄音、José Rodriguez＝Mastered By。美術欄：**Ria Lewerke＝Art Direction 兼 Album Design、Doug Metzler＝Photography、Cabalka Studio＝手寫字體**——⚠ **Ria Lewerke 是本組 1976–77 段最常出現的美術總監（本組另有《Waiting》《Can't Hide Love》《In a Special Way》《Fever》《Robby Krieger & Friends》《Tomorrow Is Here》《The View From the Inside》《Knucklebean》掛她），第 710 條的 Mike Salisbury／Lloyd Ziff 班底到 1976 年已換成 Lewerke。** notes 欄印「Recorded, mixed and mastered at Mediasound Studios, New York, N.Y., February, 1976」，與 jazzdisco 相符。",
+    "src": "https://api.discogs.com/releases/587743"
+   },
+   {
+    "f": "**同期紙本五條，把上市釘在 1976 年 6 月**：Cash Box 1976-04-24 p42 的照片說明拍到 **George Butler（Blue Note 副總裁）、Marlena、Bert deCoteaux** 三人，文案寫 deCoteaux「along with Tony Sylvester produced Marlena's single and **soon-to-be-released LP**」（⚠ **該則把盤名誤印成「It's Just A Matter Of Time」，多一個 It's**）；Billboard 1976-06-12 p90 的評介欄「MARLENA SHAW - Just A Matter Of Time, Blue Note BN-LA-606-G (United Artists). As always with this artist, a good quality mix of pop, blues and soul, with even a touch of gospel added this time」；Cash Box 1976-06-12 p16 評首支單曲〈It's Better Than Walking Out〉（**BN-XW790-Y**）「The first single from her new *Just A Matter of Time* LP」；**Billboard 1976-06-26 p105 的 Best Selling Jazz LPs 第 25 名新進榜**，同期 p125 的爵士價目表印「SHAW, MARLENA Just A Matter Of Time LP Blue Note BNLA606G $6.98」；Cash Box 1976-07-17 p42 寫經紀人 Linda Rogoff 簽下 Shaw、「whose new album *Just A Matter Of Time* **has just been released** on Blue Note Records」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-06-12.pdf"
+   },
+   {
+    "f": "**廠牌檔期廣告（第 612 條最上位證據）**：Billboard 1976-07-24 p105 是 Blue Note 的整版企劃廣告「**BLUE NOTE HITS A NEW NOTE… we, at Blue Note Records announce July as Blue Note Month**」，文案點名 Donald Byrd、Ronnie Laws、Bobbi Humphrey、**Gene Harris**、**Marlena Shaw**、John Coltrane、The Jazz Crusaders、**Carmen McCrea**（原文誤拼）等人，版面右下把當月主打的目錄號排成一列——**`BN-LA628-G`（Ronnie Laws《Fever》）、`BN-LA645-G`、`BN-LA634-G`（Gene Harris《In a Special Way》）、`BN-LA636-G`（Eddie Henderson《Heritage》）、`BN-LA581-G`、`BN-LA606-G`（本張）**。⚠ **本張比這一波早一個月上市（6 月評介＋6 月進榜），這則廣告是把它收進 7 月的「Blue Note Month」總目錄，不是首發公告**——**同一則廣告對《Fever》《In a Special Way》《Heritage》三張的證據力不一樣，正文不得一概寫成「同月發行」。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-07-24.pdf"
+   },
+   {
+    "f": "英文維基 `Just a Matter of Time (Marlena Shaw album)` infobox：released 1976、recorded「February 1976」、studio Mediasound New York City、genre Jazz、label Blue Note BN-LA606-G、**producer 欄只寫 Bert DeCoteaux, Tony Silvester**（沒有 Butler）；chronology prev《Who Is This Bitch, Anyway?》(1974) → next《Sweet Beginnings》(1977，**Columbia，已離開 Blue Note**)。**AllMusic 由 Andrew Hamilton 評 2.5 星**，原文「This is her most commercial Blue Note offering」。店面（第 254 條）：Apple us `search` 命中 **1443106499**「Marlena Shaw／Just a Matter of Time」，**10 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤相符（262／220／297／271／238／292／242／292／299／134 秒），releaseDate 1976-01-01（年頭佔位，第 484 條）→ **串流採信 1443106499**。CAA：RG 層 HTTP 200 ✓。",
+    "src": "https://en.wikipedia.org/wiki/Just_a_Matter_of_Time_(Marlena_Shaw_album)"
+   }
+  ],
+  "hookCandidates": [
+   "她在蒙特勒唱完爵士的兩年後，被送進紐約 Mediasound：製作換成 The Main Ingredient 的 Bert DeCoteaux 與 Tony Silvester，樂手換成 Bob Babbitt 的電貝斯加四把錄音室吉他——這是 Blue Note 替她做的最後一張，也是最像費城靈魂的一張",
+   "十首裡她只署名一首：壓軸〈No Hiding Place〉只有兩分十三秒，她自己彈鋼琴自己改編，前面九首全是別人的歌——O'Jays 的、Bobby Womack 的、Gwen Guthrie 寫的兩首"
+  ],
+  "sound": "10 軌、約 41 分鐘，1976 年 2 月 11／17／23 三天在紐約 Mediasound 錄完。班底三場不變：Bert DeCoteaux 鍵盤兼編曲兼指揮、George Butcher 與 Ricky Williams 另兩台鍵盤、Jerry Friedman／Hugh McCracken／Jeff Mironov／Lance Quinn 四把吉他、Bob Babbitt 電貝斯、Jimmy Young 鼓、Carlos Martin 康加、Dave Carey 與 Teddy Sommer 打擊。曲目是 1970 年代中期的靈魂選粹：The O'Jays 的〈This Time I'll Be Sweeter〉（Gwen Guthrie／Patrick Grant 作）、Bobby Womack 陣營的〈Be for Real〉（Frederick Knight 作）、Bettye Crutcher 的〈Take My Body〉。最長的是〈Be for Real〉（4 分 59 秒）與〈This Time I'll Be Sweeter〉（4 分 57 秒），最短的是壓軸〈No Hiding Place〉（2 分 13 秒，Shaw 自己編曲兼彈琴）。錄音與混音都是 Bob Clearmountain，母帶 José Rodriguez，George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "It's Better Than Walkin' Out",
+   "This Time I'll Be Sweeter",
+   "No Hiding Place"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA606-G＝1976、Discogs 美國原壓五筆與加拿大／祕魯／澳洲壓全 1976、維基 infobox 1976）一致，**紙本再獨立坐實五條**：Cash Box 1976-04-24 p42 的「soon-to-be-released LP」（上市下限）、Billboard 1976-06-12 p90 評介欄、Cash Box 1976-06-12 p16 的單曲評（BN-XW790-Y，明寫「from her new LP」）、**Billboard 1976-06-26 p105 的爵士榜第 25 名新進榜**與同期 p125 價目表、Cash Box 1976-07-17 p42 的「has just been released」。**定 1976 年 6 月。**⚠ **錄音年與發行年同年但不同月**（1976 年 2 月錄、6 月發），正文寫「1976 年 2 月錄、同年 6 月上市」是安全的。⚠ **Billboard 自己的爵士榜從 1976-07-10 起把盤名印成「IT'S JUST A MATTER OF TIME」，07-24 續錯**（Cash Box 1976-04-24 也先錯過一次）——第 509c 條，**正文與卡單一律用《Just a Matter of Time》**。",
+  "notes": "**vault 盤？否**——1976 年 2 月錄、同年 6 月發。｜**製作是 Bert DeCoteaux 與 Tony Silvester（The Main Ingredient 的班底），George Butler 只掛執行製作**——⚠ **1976 年起 Butler 在 Blue Note 的掛名全面從 Producer 退成 Executive-Producer，本組 1976–77 的十六張幾乎都是這個形狀**，正文不得寫成「Butler 製作」。｜**錄音／混音是 Bob Clearmountain**（此時還在 Mediasound 當駐場錄音師），母帶 José Rodriguez。｜**封面美術是 Ria Lewerke（Art Direction＋Album Design）、攝影 Doug Metzler、手寫字體 Cabalka Studio**——⚠ **第 710 條的 Mike Salisbury／Lloyd Ziff 到 1976 年已經換人，本段的視覺負責人是 Ria Lewerke**（本組另有八張掛她），**正文不要沿用前批的 Salisbury／Ziff／Norman Seeff。**｜**跨卡互指（第 585 條）**：池中已有《The Spice of Life》(1969)、《Who Is This Bitch, Anyway?》(1975)，c-143 b 另有《Marlena》《From the Depths of My Soul》《Live at Montreux》——**本張是她 Blue Note 目錄的最後一張，班底與前面幾張無一相同**（《Live at Montreux》是 1973 年蒙特勒現場，本張是兩年半後的紐約錄音室盤），正文不得互抄。｜⚠ **盤名誤植兩處**：Cash Box 1976-04-24 與 Billboard 1976-07-10／07-24 都印成「It's Just A Matter Of Time」（第 509c 條）。｜⚠ **jazzdisco BN-LA 頁的切塊陷阱**：目錄號在每段開頭，照結尾切會整頁位移一位——本層踩過並已修正。｜⚠ **紙本檔名形狀（本層實測）**：**Billboard 1976 是 `Billboard%20YYYY-MM-DD.pdf`（`BB-` 全 404）**、**Cash Box 1976 是 `Cash-Box-YYYY-MM-DD.pdf`（`CB-` 全 404），而 Cash Box 1977–79 反過來只有 `CB-`**——第 705 條家族，**1976／1977 之間 Cash Box 換過一次形狀。**｜串流：Apple 1443106499，10 軌＝原盤形，逐軌相符（**串流採信 1443106499**）。｜CAA 封面 RG 層 200 ✓，來源是 1976 美國原壓 7371e7d5。"
+ },
+ {
+  "key": "desc2:Bobby Hutcherson|Waiting",
+  "artist": "Bobby Hutcherson",
+  "album": "Waiting",
+  "facts": [
+   {
+    "f": "release-group 130183e9 的欄位：title「Waiting」、artist-credit 單一 Person `Bobby Hutcherson`（edbe5d7f）、first-release-date 1976、primary-type Album、secondary-types 空，轄下兩筆。**原盤 0e9e420f 是 1976 US Official Blue Note BN-LA615-G、12 吋 6 軌，軌長全數有填**：〈Waiting〉425 秒、〈Prime Thought〉430、〈Roses Poses〉390、〈Don't Be Afraid (To Fall in Love Again)〉437、〈Searchin' the Trane〉578、〈Hangin' Out (With You)〉268——**合計約 42 分 8 秒，六軌全部超過四分鐘、平均七分鐘，是本組軌數最少、單軌最長的一張**。另一筆是 2013-03-20 JP Blue Note TOCJ-50578（58208e53，CD 7 軌，barcode 4988006552340，**多一軌**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=130183e9-f0b8-4900-84f5-1d665f82bc03&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA615-G** 條下把本盤拆成三天，全在 **Different Fur Studios, San Francisco**：**1976 年 2 月 24 日**（母帶 17092，曲名登「**Convergence**」）、**2 月 25 日**（17093〈Don't Be Afraid (To Fall In Love Again)〉、17094〈Searchin' The Trane〉、17095〈Hangin' Out (With You)〉）、**2 月 26 日**（17096〈Prime Thought〉、17097〈Waiting〉、17098〈Roses Poses〉，這一場多加 **Hadley Caliman 與 Mguanda Dave Johnson 兩支長笛**在〈Waiting〉上）。核心五重奏：Emanuel Boyd（次中音／高音薩克斯風、長笛）、Bobby Hutcherson（顫音琴、馬林巴）、George Cables（鋼琴／電鋼琴）、James Leary III（貝斯）、Eddie Marshall（鼓）、Kenneth Nash（康加與打擊）。⚠ **母帶 17092 的〈Convergence〉沒有出現在盤上的六軌裡**——**是未發行軌或改名，正文不要把它當成盤上曲目。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 1064046（1976 US BN-LA615-G，4 圖）名單：**Dale Oehler＝Producer、George Butler＝Executive-Producer、Neil Schwartz＝Recording Engineer、Hank Cicalo＝Mixed By**；美術是 **Ria Lewerke＝Art Direction 兼 Album Design、Moshe Brakha＝Photography**。作曲欄推翻一個直覺：**六軌裡有四軌是貝斯手 James Leary 寫的**（〈Waiting〉〈Prime Thought〉〈Don't Be Afraid〉〈Hangin' Out〉），**Hutcherson 自己只寫兩軌**（〈Roses Poses〉〈Searchin' the Trane〉）——⚠ **維基把整張標成「All compositions by Bobby Hutcherson except as indicated」再逐軌標 Leary，等於同一件事說反了一半，正文照 Discogs／逐軌欄寫「四首 Leary、兩首 Hutcherson」。**",
+    "src": "https://api.discogs.com/releases/1064046"
+   },
+   {
+    "f": "**同期紙本四條，落在 1976 年 7 月底到 9 月**：Billboard 1976-07-24 p110 的 Recommended LPs 評介欄寫「**BOBBY HUTCHERSON - Waitin', Blue Note BN-LA615-G**. This LP is so simply arranged each instrument is identifiable…」（⚠ **該欄把盤名印成「Waitin'」少一個 g**，第 509c 條）；Billboard 1976-08-21 p62 的爵士價目表同樣印成「HUTCHERSON, BOBBY **Wai ti n'** LP Blue Note BNLA615G」；**Billboard 1976-08-28 p30 的 Best Selling Jazz LPs 新進榜**，1976-09-11 p32 升到第 32 名、1976-09-25 p55 第 35 名；Billboard 1976-11-27 p92 另有一則較長的回顧式評介「Hutcherson is a vibraharp virtuoso who remains faithful to his own vision of mainstream jazz… Best cuts: 'Waiting,' 'Prime Thought,' 'Don't Be Afraid'」。1976-12-11 p71 的年末價目表仍列本張。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-07-24.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的三榜查法）**：本張**只進 Billboard 的 Best Selling Jazz LPs**（1976-08-28 新進 → 09-11 第 32 → 09-25 第 35，約五週），**Soul LPs 與 Top LP's & Tape 兩榜全查無**——⚠ **這與同組《Fever》《Phantazia》《Finger Paintings》完全相反，第 791 條「1977 年起主戰場是 R&B 榜」的翻轉要到 1977 年才發生，1976 年的 Hutcherson 這種純爵士盤仍然只在爵士榜上**；**正文不得把本張寫成跨界暢銷盤。**另：本張的六軌完整版本在 2007 年《Mosaic Select: Bobby Hutcherson》以 CD 重發（維基），2013 年才有日本單張 CD。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-09-11.pdf"
+   },
+   {
+    "f": "英文維基 `Waiting (Bobby Hutcherson album)` infobox：released「1976; 2013 (CD in Japan)」、recorded「February 24–26, 1976」、label Blue Note BN LA 615／TOCJ-50578、**producer Dale Oehler**；錄音地寫 **Different Fur Studios, San Francisco**（與 jazzdisco 相符，⚠ **Discogs 那一筆沒寫錄音室，別去抄同組《The View From the Inside》的 Wally Heider**）；chronology prev《Montara》(1975) → next《The View from the Inside》(1976)。**AllMusic 3.5 星。**店面（第 254 條）：Apple us 命中 **1444210702**，**6 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤相符（428／435／389／435／576／265 秒），releaseDate 1976-01-01（年頭佔位）→ **串流採信 1444210702**。CAA：RG 層 HTTP 200 ✓，來源是原盤 0e9e420f。",
+    "src": "https://en.wikipedia.org/wiki/Waiting_(Bobby_Hutcherson_album)"
+   }
+  ],
+  "hookCandidates": [
+   "六首歌、四十二分鐘，沒有一首短於四分鐘——而且其中四首是貝斯手 James Leary 寫的，Hutcherson 自己只交了兩首，其中一首叫〈Searchin' the Trane〉，九分半鐘",
+   "1976 年二月，舊金山 Different Fur 的三個下午：他帶著 George Cables 的鋼琴與 Eddie Marshall 的鼓進去，最後一天才把兩支長笛加進標題曲——這是他舊金山五重奏最鬆、也最長的一次錄音"
+  ],
+  "sound": "6 軌、約 42 分鐘，1976 年 2 月 24／25／26 三天在舊金山 Different Fur Studios 錄。固定五重奏加一：Bobby Hutcherson 顫音琴與馬林巴、Emanuel Boyd 次中音與高音薩克斯風兼長笛、George Cables 鋼琴與電鋼琴、James Leary III 貝斯、Eddie Marshall 鼓、Kenneth Nash 康加與打擊；最後一天的標題曲另加 Hadley Caliman 與 Mguanda Dave Johnson 兩支長笛。六首全部是團內原創——四首出自貝斯手 Leary（〈Waiting〉〈Prime Thought〉〈Don't Be Afraid (To Fall in Love Again)〉〈Hangin' Out (With You)〉），Hutcherson 自己寫〈Roses Poses〉與〈Searchin' the Trane〉。最長的是〈Searchin' the Trane〉（9 分 38 秒），最短的是收尾的〈Hangin' Out (With You)〉（4 分 28 秒）。Dale Oehler 製作、Neil Schwartz 錄音、Hank Cicalo 混音，George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Waiting",
+   "Searchin' the Trane",
+   "Prime Thought"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA615-G＝1976、Discogs 美國原壓六筆全 1976、維基 infobox 1976）一致，**紙本再獨立坐實四條**：Billboard 1976-07-24 p110 評介欄、1976-08-21 p62 爵士價目表、**1976-08-28 p30 的爵士榜新進榜**（→09-11 第 32 名、09-25 第 35 名）、1976-11-27 p92 的第二則評介，另 1976-12-11 p71 年末價目表仍列。**定 1976 年 7 月底至 8 月上市**（評介週 07-24、進榜週 08-28）。⚠ **本張沒有出現在 Billboard 1976-07-24 p105 的「Blue Note Month」整版廣告目錄號列裡**（那一列是 LA628／645／634／636／581／606）——**同批同月的其他張有廠牌檔期文件、本張只有評論欄與榜位，證據層級低一級（第 612 條的排序），但方向一致，不影響 1976。**⚠ **錄音年與發行年同年**（1976 年 2 月錄、同年夏發）。",
+  "notes": "**vault 盤？否**——1976 年 2 月錄、同年 7／8 月發。｜**製作是 Dale Oehler、George Butler 只掛執行製作**——⚠ **Oehler 在本組共製作三張**（本張、《Can't Hide Love》、《The View From the Inside》，另 c-144 a 的《I Am Music》也是他），**四張的樂團毫無重疊，正文不得互抄編制。**｜**封面美術是 Ria Lewerke（Art Direction＋Album Design）、攝影 Moshe Brakha**（Brakha 在本組另掛《In a Special Way》）。｜⚠ **作曲歸屬容易寫反**：**四首是貝斯手 James Leary 的、兩首才是 Hutcherson 的**；維基的「All compositions by Bobby Hutcherson except as indicated」是誤導寫法，**以逐軌欄為準。**｜⚠ **jazzdisco 的 17092〈Convergence〉沒進盤**（2 月 24 日那場唯一的一軌），**正文不要當成第七首。**｜⚠ **盤名兩度被印成「Waitin'」**（Billboard 1976-07-24 p110 評介欄與 1976-08-21 p62 價目表），第 509c 條，**卡單與正文用《Waiting》。**｜**跨卡互指（第 585 條）**：池中已有《Montara》(1975)，c-144 a 有《Cirrus》(1974)《Linger Lane》(1975)，c-143 b 有《Live at Montreux》，本組另有《The View From the Inside》(1977)《Knucklebean》(1977)——**七張裡，本張與《The View From the Inside》《Knucklebean》共用 James Leary／Eddie Marshall 這條舊金山節奏組，但三張的管樂與鍵盤各不相同**（本張 George Cables＋Emanuel Boyd／《View》Larry Nash＋Boyd／《Knucklebean》Cables＋Boyd＋Hadley Caliman＋Freddie Hubbard），**正文要寫得出差別、不得互抄。**｜**榜位（第 791 條）**：**只進爵士榜，Soul LPs 與主榜皆查無**——1976 年的純爵士盤仍是這個形狀，第 791 條的翻轉要到 1977 年。｜串流：Apple 1444210702，6 軌＝原盤形，逐軌相符（**串流採信 1444210702**）。｜CAA 封面 RG 層 200 ✓。"
+ },
+ {
+  "key": "desc2:Gene Harris|In a Special Way",
+  "artist": "Gene Harris",
+  "album": "In a Special Way",
+  "facts": [
+   {
+    "f": "release-group cecb9e80 的欄位：title「In a Special Way」、artist-credit 單一 Person `Gene Harris`（1dbdc230）、first-release-date 1976、primary-type Album、secondary-types 空，**轄下只有一筆 release**：1580dd98（1976 US Official Blue Note BN-LA634-G、12 吋 9 軌，無 barcode）。**九軌軌長全數有填**：〈Theme for Relana〉395 秒、〈Rebop〉239、〈Zulu〉300、〈Always in My Mind〉272、〈Love for Sale〉289、〈It's Your Love〉182、〈Soft Cycles〉150、〈Five Four〉225、〈Naima〉381——**合計約 40 分 33 秒，與維基 infobox 的 40:28 對得起來**。⚠ **MB 沒有任何 CD／再發條目**，是本組資料最薄的一張。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cecb9e80-9813-4db8-8d45-e5a7d888900b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA634-G** 條下拆成四個檔期，全在 **Total Experience Studios, Los Angeles**：**1976 年 3 月 29 日**（母帶 17232〈Zulu〉、17233「Theme **From** Relana」——⚠ **jazzdisco 這裡是 From，盤面與維基都是 For**）、**4 月 1 日**（17234〈Naima〉、17235〈Always In My Mind〉）、**4 月 2 日**（17236〈Love For Sale〉、17237〈It's Your Love〉）、**4 月 7 日**（17446〈Rebop〉、17447〈Soft Cycles〉、17448〈Five/Four〉）。⚠ **母帶序分成 172xx 與 174xx 兩段，中間隔了兩百多號**，**不能拿號連不連當同場的證據**（第 663 條家族）。班底是洛杉磯錄音室大隊：George Bohanon 長號、Sidney Muldrow 與 Marnie Robinson 法國號、**Azar Lawrence 次中音薩克斯風**、Charlotte Politte 電鋼琴與合成器、**Jerry Peters 電鋼琴／合成器／弦樂合成器／編曲／人聲**、Gene Harris 鍵盤、**Lee Ritenour 與 Al McKay 吉他**、John Rowin 吉他兼編曲、**Chuck Rainey 與 Verdine White 電貝斯**、James Gadson 鼓、Harvey Mason 鼓兼打擊、Mayuto Correa 打擊、**Phillip Bailey 打擊兼人聲**，人聲另有 **Merry Clayton、D.J. Rogers、Sigidi、Stephanie Spruill、Deniece Williams**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 1092467（1976 US BN-LA634-G，4 圖）補上製作與美術：**Jerry Peters＝Producer 兼 Electric Piano／Synthesizer／Arranged By／Conductor、George Butler＝Executive-Producer**、F. Byron Clark／Jerry Hudgins／Richard Tilles＝Engineer、**F. Byron Clark 與 Jerry Peters＝Remixed By**、Rick Collins＝Mastering、Tim Kramer＝Lacquer Cut；美術是 **Ria Lewerke＝Art Direction 兼 Album Design、Moshe Brakha＝Photography**。⚠ **Discogs 這一筆把 Gene Harris 的鋼琴標成「Piano [Uncredited]」**——**盤面原本沒有把主角的樂器印出來**，正文寫「他的琴」沒問題，但不要說盤面有列。notes 欄另印「Recorded at The Total Experience Recording Studios, Hollywood Sound Recorders and Devonshire Sound Recorders… during March, April and May 1976」（⚠ **三間錄音室、到 5 月，比 jazzdisco 的單一間、到 4 月 7 日多**）與「Also available on Blue Note Stereo-Tape Cartridge **BN-EA634-H** and Cassette **BN-CA634-H**」。",
+    "src": "https://api.discogs.com/releases/1092467"
+   },
+   {
+    "f": "**同期紙本三條，把上市釘在 1976 年 7 月**：**Billboard 1976-07-24 p105 的整版廠牌檔期廣告（第 612 條最上位證據）**——「**we, at Blue Note Records announce July as Blue Note Month**」，文案點名 **Gene Harris**，版面的目錄號列裡有 **`BN-LA634-G`**（同列另有 LA628-G《Fever》、LA636-G《Heritage》、LA645-G、LA581-G、LA606-G）；**同一期 p110 的評介欄**「GENE HARRIS - In A Special Way, Blue Note BN-LA634-G. Voices enhance this LP which are displayed on 'Theme For Relana.' 'Love For Sale' splits the spotlight between the vocals and Harris' piano… Best cuts: 'Theme For Relana,' 'Zulu,' 'Naima'」；Billboard 1976-08-21 p62 的爵士價目表印「HARRIS, GENE In A Special Way LP Blue Note BNLA634G $6.98」。另 Billboard 1976-11-27 p92 有第二則評介「Fine piano dominated collection by Harris with some good [dance] tinged vocals… Harris demonstrates extraordinary versatility」。**廣告與評介同一期同一份刊物，是本組年份最硬的一組證據。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-07-24.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的三榜查法）**：本層把 repo 內 Billboard／Cash Box 1975Q4–1976 共 128 期的命中頁對 `LA\\s*-?\\s*634` 與「In A Special Way」兩組關鍵字重查，**三榜（Best Selling Jazz LPs／Soul LPs／Top LP's & Tape）全部零命中**——**本張有廠牌廣告、有兩則評介、有價目表，但沒有進過任何一張榜**。⚠ **這正好是第 791 條的反例邊界**：1976 年的 Blue Note 不是每一張都上榜，**《Fever》《Just a Matter of Time》《Heritage》《Waiting》都進了爵士榜，本張沒有**——正文可以寫它被同期廠牌力推，**但不得寫成暢銷或上榜。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-08-21.pdf"
+   },
+   {
+    "f": "英文維基 `In a Special Way (Gene Harris album)` infobox：released 1976、recorded「March 29 and April 1, 2 & 7, 1976」、**studio Total Experience Studios, Los Angeles**、length 40:28、label Blue Note、**producer Jerry Peters**；chronology prev《Nexus》(1975) → next《Tone Tantrum》(1977)——**兩張都在本線上（《Nexus》在 c-144 a、《Tone Tantrum》在本組）**。**AllMusic 由 Stephen Thomas Erlewine 評 4 星**，原文「Harris crafted a record that revels in contemporary soul trends from the mid-'70s – lite funk in the vein of EWF, disco, Philly soul, and vapid fusion. The production is heavy-handed and glossy, filled with drippy strings, thumping beats, wordless backing vocals, and silly synthesized effects. **Through it all, Harris plays exactly like he always does, as if he were oblivious to his surroundings**」——⚠ **這段評語是褒中帶貶，正文要引就引完整的意思（製作很油、但他彈得跟以前一樣），不要只截前半。**店面（第 254 條）：Apple us 命中 **1461527372**，**9 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤完全相符（395／239／300／272／289／182／150／225／381 秒）→ **串流採信 1461527372**。",
+    "src": "https://en.wikipedia.org/wiki/In_a_Special_Way_(Gene_Harris_album)"
+   }
+  ],
+  "hookCandidates": [
+   "Earth, Wind & Fire 的 Philip Bailey 在唱和聲、Al McKay 在彈吉他、Verdine White 在彈貝斯，弦樂與合成器層層蓋上去——中間那台鋼琴還是 Three Sounds 時代的 Gene Harris，一個音都沒改",
+   "九首裡他塞了兩首不該在這裡的曲子：Cole Porter 的〈Love for Sale〉，和 Coltrane 的〈Naima〉——六分二十秒，是全盤最長的一首，也是這張迪斯可年代的專輯唯一一次把門開回爵士"
+  ],
+  "sound": "9 軌、約 40 分半，1976 年 3 月 29 日與 4 月 1／2／7 日四個檔期在洛杉磯 Total Experience Studios 錄（Discogs 的盤面說明另提 Hollywood Sound 與 Devonshire Sound 兩間，並把期程寫到 5 月）。製作與編曲是 Jerry Peters，他自己也彈電鋼琴、合成器與弦樂合成器；樂隊是當年洛杉磯的靈魂錄音室大隊——Lee Ritenour 與 Earth, Wind & Fire 的 Al McKay 分吉他、John Rowin 吉他兼編曲、Chuck Rainey 與 Verdine White 分電貝斯、James Gadson 與 Harvey Mason 分鼓、Mayuto Correa 打擊、Azar Lawrence 次中音薩克斯風、George Bohanon 長號、Sidney Muldrow 與 Marnie Robinson 法國號；人聲有 Philip Bailey、Merry Clayton、Deniece Williams、D.J. Rogers、Sigidi 與 Stephanie Spruill。最長的兩首是開場的〈Theme for Relana〉（6 分 35 秒，Skip Scarborough 作）與壓軸的〈Naima〉（6 分 21 秒，Coltrane 作），最短的是〈Soft Cycles〉（2 分 30 秒）。Gene Harris 的鋼琴在盤面上沒有掛名。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Theme for Relana",
+   "Naima",
+   "Love for Sale"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA634-G＝1976、Discogs 美國原壓兩筆與加拿大壓全 1976、維基 infobox 1976）一致，**紙本再獨立坐實三條，其中一條是廠牌檔期文件**：**Billboard 1976-07-24 p105 的整版「July as Blue Note Month」廣告把 `BN-LA634-G` 列進當月主打**（第 612 條最上位證據）、**同一期 p110 的評介欄**、Billboard 1976-08-21 p62 的爵士價目表，另 1976-11-27 p92 有第二則評介。依第 612 條（廠牌檔期廣告 ＞ 榜位 ＞ 評論欄 ＞ Discogs 原壓群 ＞ jazzdisco／MB），**定 1976 年 7 月**。⚠ **錄音期程兩說**：jazzdisco 記 1976 年 3 月 29 日到 4 月 7 日四場單一錄音室，**Discogs 盤面說明卻寫「March, April and May 1976」、三間錄音室**——**正文寫「1976 年春天在洛杉磯錄」最安全，不要寫死日期或錄音室數目。**⚠ **本張三榜全零**（見 facts 第 5 條），**年份靠廣告與評介、不靠榜位。**",
+  "notes": "**vault 盤？否**——1976 年春錄、同年 7 月發。｜**製作是 Jerry Peters（他同時編曲、指揮、彈電鋼琴與合成器、還唱和聲），George Butler 只掛執行製作**——⚠ **Peters 在本組製作兩張**（本張與《Tone Tantrum》，都是 Gene Harris），**兩張的樂團有重疊（Al McKay、John Rowin、Harvey Mason）但不相同**，正文不得互抄。｜**封面美術是 Ria Lewerke（Art Direction＋Album Design）、攝影 Moshe Brakha**（與本組《Waiting》同一位攝影）。｜⚠ **本張是「缺封面五張」之一：CAA RG 層 HTTP 404、零圖（本層 `redirect: follow` 重試確認）。替代圖來源建議取 Discogs 美國原壓 1092467 的 `images[0].uri`**（4 圖，1976 US BN-LA634-G 正版式）：`https://i.discogs.com/A43ixT5AfebFqz_1eZ1FMRkTj4ewgXnXIMfDbehu4T0/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTI0/NjctMTYzNTk3NzMz/NS04MTU5LmpwZWc.jpeg`；**本張沒有日本再發盤（MB 轄下只有一筆 release），不要指望日版圖。**｜⚠ **曲名兩說**：jazzdisco 記「Theme **From** Relana」，MB／Discogs／維基／Apple 都是「Theme **For** Relana」——**照 For。**｜⚠ **AllMusic 4 星但評語是褒中帶貶**（Erlewine 說製作「heavy-handed and glossy… drippy strings… silly synthesized effects」，只稱讚 Harris 本人「plays exactly like he always does」），**正文不得只截前半當好評。**｜**跨卡互指（第 585 條）**：池中已有《Astral Signal》(1974)，c-143 b 有《Gene Harris of the Three Sounds》《Yesterday, Today & Tomorrow》，c-144 a 有《Nexus》(1975)，本組另有《Tone Tantrum》(1977)——**維基 chronology 直接把《Nexus》→本張→《Tone Tantrum》排成三連，三張都在本線上，正文可以寫這條線但不得互抄編制。**另 **Donald Byrd 以小號手身分出現在《Tone Tantrum》而不是本張**，不要寫錯。｜**榜位（第 791 條）**：**爵士榜／Soul LPs／Top LP's & Tape 三榜全部零命中**——1976 年的 Blue Note 不是每張都上榜，**本張是同組唯一有整版廠牌廣告卻一榜未進的。**｜串流：Apple 1461527372，9 軌＝原盤形，逐軌相符（**串流採信 1461527372**）。"
+ },
+ {
+  "key": "desc2:Carmen McRae|Can't Hide Love",
+  "artist": "Carmen McRae",
+  "album": "Can't Hide Love",
+  "facts": [
+   {
+    "f": "release-group cafc04db 的欄位：title「Can't Hide Love」、artist-credit 單一 Person `Carmen McRae`（29b0a6c7）、first-release-date 1976、primary-type Album、secondary-types 空，轄下三筆。**原盤 886fdcd4 是 1976 US Official Blue Note BN-LA635-G、12 吋 10 軌，軌長全數有填**：〈Can't Hide Love〉234 秒、〈The Man I Love〉256、〈Only Women Bleed〉297、〈I Wish You Well〉197、〈All by Myself〉363、〈Music〉212、〈Lost Up in Loving You〉278、〈You're Everything〉171、〈Would You Believe〉249、〈A Child Is Born〉205——**合計約 40 分 42 秒，與維基 infobox 的 40:46 對得起來**。另兩筆都是日本 CD：2012 年 2a7133d5（barcode 4988006899759，**MB 沒填 catno**，Discogs 對應 TOCJ-50516）與 2018-07-25 UCCQ-3024（54bc7f55）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cafc04db-4dad-496d-8c96-433e0c6884b7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA635-G** 條下把本盤拆成**四場、四個完全不同的伴奏團**，全在 **A&M Studios, Los Angeles**：**1976 年 5 月 3 日**（大樂隊＋弦樂，Thad Jones 與 Johnny Mandel 編曲；母帶 17369〈The Man I Love〉、17370〈Would You Believe〉、17371〈A Child Is Born〉）、**5 月 4 日**（Joe Sample 與 Marshall Otwell 雙鍵盤、Larry Carlton 與 Dennis Budimir 雙吉他、Wilton Felder 電貝斯、Victor Feldman 打擊，Dale Oehler 編曲；17372〈All By Myself〉、17373〈Music〉）、**5 月 10 日**（Dave Grusin 編曲兼鍵盤、Ian Underwood 合成器、Larry Carlton 兼編曲；17374〈Lost Up In Loving You〉、17375〈Only Women Bleed〉）、**5 月 12 日**（八管銅管加五支木管的大編制，Thad Jones 與 **Gerald Wilson** 編曲；17399〈Can't Hide Love〉、17400〈I Wish You Well〉、17401〈You're Everything〉）。**四場的鼓都是 Harvey Mason，其餘幾乎全換。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 16483368（1976 US BN-LA635-G，14 圖）的名單與逐軌編曲欄是本張最有用的一份：**Dale Oehler＝Producer、George Butler＝Executive-Producer、Hank Cicalo＝Engineer 兼 Recorded By 兼 Mixed By、Bernie Grundman＝Mastered By**；美術是 **Ria Lewerke＝Art Direction、Leonard Spencer＝Design、Norman Seeff＝Photography By**（⚠ **Seeff 在本組只剩這一張掛名，第 710 條那條線到 1976 年幾乎只剩攝影師身分**）。逐軌編曲：〈Can't Hide Love〉**Gerald Wilson**、〈The Man I Love〉與〈Would You Believe〉**Johnny Mandel**、〈Only Women Bleed〉**Larry Carlton**（他自己也彈鋼琴，Dave Grusin 鍵盤、Ian Underwood 合成器）、〈I Wish You Well〉〈You're Everything〉〈A Child Is Born〉**Thad Jones**、〈All by Myself〉〈Music〉**Dale Oehler**、〈Lost Up in Loving You〉**Dave Grusin**——**十首用了六位編曲**。notes 欄印「Recorded live on May 3, 4, 10 and 12, 1976 at A&M Recording Studios」（⚠ **這裡的 live 是「錄音室實錄」不是現場演出，正文絕不能寫成 live album**）與「℗ © **1975** United Artists」（⚠ **盤面版權年比實際錄音年還早一年，第 550／570 條的典型**）。",
+    "src": "https://api.discogs.com/releases/16483368"
+   },
+   {
+    "f": "**同期紙本四條，落在 1976 年 7 月底到 10 月**：Billboard 1976-07-24 p110 的 Recommended LPs「**CARMEN McRAE - Can't Hide Love, Blue Note BN-LA635-G**. There is a combination of the old and the new, but mostly the new. Carmen puts her special touch to 'Can't Hide Love' for a contemporary tune with jazz overtones then slides back into a…」；Billboard 1976-08-21 p62 的爵士價目表印「McRAE, CARMEN Can't Hide Love LP Blue Note BNLA635G $6.98」；**Cash Box 1976-08-14 p45 的爵士評介欄**「**CAN'T HIDE LOVE - Carmen McRae - Blue Note LA 635G - Producer: Dale Oehler - List: 6.98**. Carmen is one of the hardy perennials. She sounds so good on Eric Carmen's 'All By Myself' and Thad Jones's 'A Child Is Born' that one could get the im[pression]…」；Billboard 1976-10-30 p75 有第二則較長的評介「**Taped last May in Los Angeles**, longtime jazz singer McRae offers 10 well produced tracks (by Dale Oehler) with four different accompanying groups in which Dennis Budimir's guitar and the…」——⚠ **這一則同時把錄音月份（去年五月）與「四個不同伴奏團」都寫進去，是本張最好用的一條同期文獻。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-07-24.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的三榜查法）**：本層對 repo 內兩刊 1975Q4–1976 的命中頁查 `LA\\s*-?\\s*635` 與「Can't Hide Love」，**Billboard 的 Best Selling Jazz LPs／Soul LPs／Top LP's & Tape 三榜全部零命中**，Cash Box 的爵士榜與 R&B 榜同樣零命中——**本張只有兩則評介欄與一則價目表，一榜未進**。⚠ **這與同期 Blue Note 的 Hutcherson（進爵士榜）、Klugh（爵士＋主榜）、Laws（爵士＋Soul＋主榜）形成對照**：**1976 年的人聲爵士盤在榜上完全打不動**，正文可以寫這是她 Blue Note 三張裡的最後一張、賣相冷，**但不得寫成暢銷。**另：本張的曲目與同批 c-144 a 的《I Am Music》(BN-LA462-G，1975) 同樣是 Dale Oehler 製作的「爵士歌手唱當紅流行曲」路線，**兩張是同一條企劃線的前後兩集。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1976/Cash-Box-1976-08-14.pdf"
+   },
+   {
+    "f": "英文維基 `Can't Hide Love (album)` infobox：released 1976、recorded「May 3–12, 1976」、genre Vocal jazz、length 40:46、label Blue Note、**producer Dale Oehler**，內文寫明「**this was her third and last album to be released on Blue Note Records**」；chronology prev《November Girl》(1975) → next《At the Great American Music Hall》(1977，**該張的 BN-LA710-G 在 jazzdisco 上正是本組《The View From the Inside》BN-LA710-G 的前一號 BN-LA709-J2，兩張別搞混**)。**AllMusic 由 Scott Yanow 只給 2 星**，原文「**...the type of session that killed Blue Note the first time around**」，並說 McRae「gamely tries to interpret unsuitable and inferior pop tunes（'The Man I Love' 與 'A Child Is Born' 是僅有的例外）and is backed by an all-star but faceless orchestra that is given nothing to do. The trumpet section...is not given a single solo」——⚠ **這是本組評價最低的一張（2／5），正文不得吹捧，但可以寫它在 Blue Note 崩解前夕的位置。**店面（第 254 條）：Apple us 命中 **1443606127**，**10 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤完全相符 → **串流採信 1443606127**。CAA：RG 層 HTTP 200，但**來源是 2012 日本 CD 2a7133d5、不是美國原盤**——封面層要留意日版與美版版式差異。",
+    "src": "https://en.wikipedia.org/wiki/Can%27t_Hide_Love_(album)"
+   }
+  ],
+  "hookCandidates": [
+   "1976 年五月，A&M 錄音室的四個下午，四個完全不同的樂團輪流進場：一天是 Thad Jones 的大樂隊，一天是 Crusaders 的節奏組，一天是 Dave Grusin 的合成器——McRae 站在中間，唱 Alice Cooper 與 Eric Carmen",
+   "Scott Yanow 說這是「第一次把 Blue Note 弄垮的那種錄音」；但十首裡有六位編曲，Gerald Wilson、Johnny Mandel、Thad Jones、Dave Grusin、Larry Carlton、Dale Oehler 各寫各的——這張賣不動的專輯，是她在這個廠牌的最後一張"
+  ],
+  "sound": "10 軌、約 40 分半，1976 年 5 月 3／4／10／12 四天在洛杉磯 A&M Studios 錄，四天四組完全不同的伴奏。5 月 3 日與 12 日是大編制：八人銅管、五支木管加弦樂，Thad Jones、Johnny Mandel 與 Gerald Wilson 分頭編曲，Blue Mitchell、Snooky Young、Oscar Brashear、George Bohanon、Jerome Richardson、Ernie Watts、Pete Christlieb、Jack Nimitz 在管樂席上；5 月 4 日換成 Crusaders 的班底（Joe Sample 鍵盤、Wilton Felder 電貝斯、Larry Carlton 與 Dennis Budimir 吉他、Victor Feldman 打擊）；5 月 10 日是 Dave Grusin 的鍵盤加 Ian Underwood 的合成器。四場唯一不換的是 Harvey Mason 的鼓。曲目一半是當年的流行曲——Alice Cooper／Dick Wagner 的〈Only Women Bleed〉、Eric Carmen 的〈All by Myself〉、James Taylor 的〈Music〉、Bill Withers 的〈I Wish You Well〉、Skip Scarborough 的標題曲，另一半才是標準曲（〈The Man I Love〉〈A Child Is Born〉〈You're Everything〉）。最長的是〈All by Myself〉（6 分），最短的是〈You're Everything〉（2 分 51 秒）。Dale Oehler 製作、Hank Cicalo 錄音與混音、Bernie Grundman 母帶。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Can't Hide Love",
+   "A Child Is Born",
+   "All by Myself"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA635-G＝1976、Discogs 美國原壓四筆與加拿大壓全 1976、維基 infobox 1976）一致，**紙本再獨立坐實四條**：Billboard 1976-07-24 p110 評介欄、1976-08-21 p62 爵士價目表、**Cash Box 1976-08-14 p45 的爵士評介欄**（連製作人與定價都印出來）、Billboard 1976-10-30 p75 的第二則評介（明寫「**Taped last May in Los Angeles**」）。**定 1976 年 7 月底至 8 月上市。**⚠ **本張沒進任何榜**（三榜零命中，見 facts 第 5 條），年份靠評論欄與價目表，**沒有廠牌檔期廣告**（Billboard 1976-07-24 p105 的「Blue Note Month」目錄號列裡沒有 LA635）——**第 612 條的證據層級比同組《In a Special Way》《Heritage》《Fever》低一級，但方向一致。**⚠ **Discogs 原壓的盤面印「℗© 1975 United Artists」，比錄音年（1976 年 5 月）還早一年**——**第 550／570 條的典型，盤面版權年不可用來定年。**",
+  "notes": "**vault 盤？否**——1976 年 5 月錄、同年夏發。｜**製作是 Dale Oehler、George Butler 只掛執行製作**；錄音與混音 Hank Cicalo、母帶 Bernie Grundman。｜**封面美術是 Ria Lewerke（Art Direction）＋Leonard Spencer（Design）＋Norman Seeff（Photography）**——⚠ **Seeff 在 c-143 b 那一段是封面攝影的班底，到本組只剩這一張掛名**，其餘全換成 Moshe Brakha、Gary Regester、Doug Metzler、Gregory Heisler 等人；**正文不要把 Seeff 寫成本段的視覺代表。**｜⚠ **「Recorded live」不是現場專輯**：Discogs 原壓 notes 的 live 指的是錄音室實錄（樂團同時演奏），**四場都在 A&M Studios，不是演出現場**，正文絕不能寫成 live album。｜⚠ **十首六位編曲**（Gerald Wilson／Johnny Mandel／Thad Jones／Dave Grusin／Larry Carlton／Dale Oehler），正文若要寫「一個樂團」是錯的。｜⚠ **AllMusic 只給 2／5**（Yanow：「the type of session that killed Blue Note the first time around」），**是本組最低分的兩張之一**（另一張沒有更低的），正文要寫得住位置但不得吹。｜**跨卡互指（第 585 條）**：池中已有《The Great American Songbook》(1972)《After Glow》《Book of Ballads》《Carmen Sings Monk》，**c-144 a 的《I Am Music》（BN-LA462-G，1975）是同一位製作人 Dale Oehler 的前一集**，本組的《Waiting》《The View From the Inside》也是 Oehler 製作——**四張班底毫無重疊，正文不得互抄。**另 **McRae 的下一張《At the Great American Music Hall》(BN-LA709-J2) 與本組《The View From the Inside》(BN-LA710-G) 是連號**，別搞混。｜**榜位（第 791 條）**：**三榜全部零命中**，Cash Box 的爵士榜與 R&B 榜同樣零。｜串流：Apple 1443606127，10 軌＝原盤形，逐軌相符（**串流採信 1443606127**）。｜CAA 封面 RG 層 200，但**來源是 2012 日本 CD（2a7133d5）不是美國原盤**，封面層要比對版式。"
+ },
+ {
+  "key": "desc2:John Lee & Gerry Brown|Still Can't Say Enough",
+  "artist": "John Lee & Gerry Brown",
+  "album": "Still Can't Say Enough",
+  "facts": [
+   {
+    "f": "release-group 7f478bb0 的欄位：**title「Still Can’t Say Enough」（撇號是 U+2019 不是 ASCII）**、artist-credit 是兩個 Person 並列「John Lee（e128630e，disambiguation「jazz bassist」）+ Gerry Brown（b6526fb3，disambiguation「drummer」）」、first-release-date 1976、primary-type Album、secondary-types 空，轄下兩筆。**原盤 a9b8d970 是 1976 US Official Blue Note BN-LA701-G、12 吋 9 軌，軌長全數有填**：〈Freeze It Up〉292 秒、〈Love the Way You Make Me Feel〉309、〈Rise On〉376、〈Funky Row〉226、〈Talkin’ ’Bout the Right One〉312、〈Strut ’n’ Get Up〉282、〈Breakin’〉267、〈Down the Way〉325、〈Out the Box〉88——**合計約 41 分 5 秒，最後一軌只有 1 分 28 秒、明顯是收尾小品**。另一筆是 2013-01-23 JP Blue Note TOCJ-50546（30a661b6，CD 9 軌，barcode 4988006873964）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7f478bb0-6e23-4c1a-b018-cb0f001148c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA701-G** 條下只記**一個檔期**：**Electric Lady Studios, NYC, circa early August, 1976**，母帶 17957–17965 連號九軌，順序與盤面完全一致。編制是本組最大的一支紐約棚內銅管隊：**Jon Faddis 小號、Randy Brecker 小號兼富魯格號、Barry Rodgers 長號、Gary Bartz 與 David Sanborn 中音薩克斯風、Michael Brecker 與 Ernie Watts 次中音、Ronnie Cuber 上低音**，鍵盤是 **Hubert Eaves（鋼琴／風琴／Clavinet）** 與 Harold Ivory Williams IV，合成器是 **Ian Underwood** 與 **Rob Franken**，吉他 **Ray Gomez 與 Reggie Lucas**，**John Lee 電貝斯、Gerry Brown 鼓與打擊與定音鼓**，**Mtume 康加／打擊／人聲**，人聲另有 **Tawatha Agee**、C.P. Alexander、Donald Smith。⚠ **母帶號連號不代表一天錄完**，jazzdisco 自己也只寫 circa early August。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 2231313（1976 US BN-LA701-G，6 圖）補上製作、錄音地與「借將」條款：**Skip Drinkwater＝Producer**（⚠ **他也是前作《Mango Sunrise》的製作，第二次合作**）、**George Butler 與 Jerry Schoenbaum＝Executive-Producer**（**兩位執行製作，本組僅此張與《Heritage》如此**）、Ron Johnsen＝Electric Lady 錄音、Don Murray＝Sound Labs 錄音兼 Remixed By、Bernie Grundman＝Mastered By；美術是 **Bruce Steinberg 與 Ellie Oberzil＝Album Design、Bruce Steinberg＝Photography**（⚠ **Steinberg 同時是本組《Heritage》的設計兼攝影**）。notes 欄的借將聲明把陣容的出處寫死：「**Randy Brecker / Michael Brecker appear through the courtesy of Arista Records**、**Ernie Watts… A&M**、**David Sanborn… Warner Bros.**」，錄音地是「**Electric Lady Studios, New York City ＋ The Sound Labs, Hollywood, California；Remixed at The Sound Labs；Mastered at A&M Studios**」——⚠ **東西兩岸各一間，jazzdisco 只寫 Electric Lady，正文寫「紐約 Electric Lady 錄、洛杉磯 Sound Labs 混」比較準。**",
+    "src": "https://api.discogs.com/releases/2231313"
+   },
+   {
+    "f": "**同期紙本把上市月份釘死在 1976 年 10 月，兩刊各一條廠牌檔期新聞（第 612 條）**：**Cash Box 1976-10-16 p12 的標題就是「Blue Note Sets LP For October Release」**，內文「LOS ANGELES — Blue Note, a subsidiary of United Artists Records, **will release John Lee and Gerry Brown's second album titled 'Still Can't Say Enough' in October**」；**Billboard 1976-10-30 p57**「**John Lee and Gerry Brown will release their second LP on Blue Note Records titled 'Still Can't Say Enough' this month.** The pair have worked with such musicians as Max Roach, Joe Henderson, Pharoah Sanders, Lonnie Liston Smith and Norman Connors」；Cash Box 1976-10-30 p36 的專欄再提一次「John Lee and Gerry Brown's next Blue Note LP will be entitled 'Still Can't Say Enough'」。**三則都是 1976 年 10 月，與 MB／jazzdisco／Discogs 的 1976 完全一致。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1976/Cash-Box-1976-10-16.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的三榜查法）**：上市在 1976 年 10 月，但**進榜落在 1977 年 2 月**——Billboard 1977-02-12 p72 的 Best Selling Jazz LPs 出現「**STILL CAN'T SAY ENOUGH, John Lee & Gerry Brown, Blue Note BN-LA701-G (United Artists)**」，1977-02-26 p34 續在榜上（⚠ **兩期的 OCR 都把 CAN'T 讀成 CANT、SAY 讀成 SAT**，檢索要放寬）。**Soul LPs 與 Top LP's & Tape 兩榜、以及 Cash Box 的爵士榜與 R&B 榜，1976Q4→1979 全段零命中。**⚠ **「上市 1976 年 10 月、進榜 1977 年 2 月」這個四個月的落差，是本張最容易讓後層把年份改成 1977 的地方——不要改：兩則廠牌檔期新聞（CB 1976-10-16、BB 1976-10-30）都是 1976 年的，第 612 條的廣告／檔期文件壓過榜位。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-02-12.pdf"
+   },
+   {
+    "f": "**維基與店面都查無，本張是本組資料最薄的一張**：英文維基 **沒有 `Still Can't Say Enough` 條目**（`action=query` 回 missing），兩位主角也沒有各自的專輯條目可引。店面（第 254 條，三種查法全跑）：(1) `search「john lee gerry brown」` 回 10 筆，**全部不是本張**——最接近的是 373823508《Fancy Glance》（Stu Goldberg, John Lee & Gerry Brown，1979）與 291569894／1547604508《Bamboo Madness》（1978）；(2) `search「still cant say enough」` 回 60 筆，**一筆都不相關**（Selena Gomez、Mary J. Blige、Morgan Wallen……典型的字串假陽性，第 528 條）；(3) **藝人目錄 `lookup?id=2685816&entity=album` 共 33 筆逐筆看過，只有《Bamboo Madness》一張在 Blue Note／1970 年代，沒有本張**。→ **Apple us 查無，串流查無。**CAA：RG 層 HTTP 200，但**來源是 2013 日本 CD 30a661b6 不是美國原盤**。",
+    "src": "https://itunes.apple.com/lookup?id=2685816&entity=album&country=us&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Larry Coryell 的 Eleventh House 節奏組自己出來做第二張：貝斯與鼓掛頭銜，前面站著 Brecker 兄弟、David Sanborn、Gary Bartz、Ronnie Cuber、Jon Faddis——七支管樂全部是別家廠牌借來的",
+   "九首歌四十一分鐘，最後一首叫〈Out the Box〉，只有一分二十八秒；前面八首從紐約 Electric Lady 錄到洛杉磯 Sound Labs 混音，1976 年十月上市，等到隔年二月才爬上爵士榜"
+  ],
+  "sound": "9 軌、約 41 分鐘，1976 年 8 月初在紐約 Electric Lady Studios 錄（另一部分與混音在洛杉磯 The Sound Labs），母帶序 17957–17965 連號。掛頭銜的是節奏組本身——John Lee 電貝斯、Gerry Brown 鼓兼打擊兼定音鼓，兩人當時是 Larry Coryell 第十一號公寓的節奏組。前排是一整支紐約棚內管樂隊：Jon Faddis 與 Randy Brecker 小號、Barry Rogers 長號、David Sanborn 與 Gary Bartz 中音薩克斯風、Michael Brecker 與 Ernie Watts 次中音、Ronnie Cuber 上低音；鍵盤是 Hubert Eaves III 與 Harold「Ivory」Williams，合成器 Ian Underwood 與 Rob Franken，吉他 Ray Gomez 與 Reggie Lucas，Mtume 打擊兼人聲，和聲有 Tawatha Agee。九首全是 Lee 與 Brown 自己寫的放克與融合曲，最長的是〈Rise On〉（6 分 16 秒，Brecker 與 Gomez 各有獨奏），最短的是收尾小品〈Out the Box〉（1 分 28 秒）。Skip Drinkwater 製作，George Butler 與 Jerry Schoenbaum 掛執行製作。串流側查無。",
+  "keyTracks": [
+   "Freeze It Up",
+   "Rise On",
+   "Talkin' 'Bout the Right One"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA701-G＝1976、Discogs 美國原壓四筆與加拿大壓全 1976、列舉檔 1976）一致，**紙本再獨立坐實三條，其中兩條是廠牌檔期新聞（第 612 條）**：**Cash Box 1976-10-16 p12「Blue Note Sets LP For October Release」**（標題與內文都明寫 in October）、**Billboard 1976-10-30 p57「will release their second LP… this month」**、Cash Box 1976-10-30 p36 的專欄再提。**定 1976 年 10 月。**⚠ **最大的陷阱是進榜時間**：本張要到 **Billboard 1977-02-12 p72** 才出現在 Best Selling Jazz LPs（1977-02-26 p34 續在榜上），**上市與進榜差四個月**——**後層若只看榜位會把年份改成 1977，不要改**，第 612 條的檔期文件壓過榜位。⚠ **維基查無條目、Apple 三種查法全空**，本張沒有第五、第六路獨立證據，**但四邊資料庫＋三則紙本已經足夠。**",
+  "notes": "**vault 盤？否**——1976 年 8 月錄、同年 10 月發。｜**製作是 Skip Drinkwater（前作《Mango Sunrise》也是他），George Butler 與 Jerry Schoenbaum 兩位執行製作**——⚠ **本組只有本張與《Heritage》掛兩位執行製作，兩張都是 Drinkwater 製作的**，正文可以寫這條線。｜**封面美術是 Bruce Steinberg 與 Ellie Oberzil（Album Design）、攝影 Bruce Steinberg**——**Steinberg 同時包辦本組《Heritage》的設計與攝影。**｜⚠ **錄音地兩邊**：jazzdisco 只寫 Electric Lady（紐約），Discogs 盤面另寫 The Sound Labs（好萊塢）錄音兼混音、A&M Studios 母帶——**正文寫「紐約錄、洛杉磯混」較準。**｜⚠ **七位管樂全部是借將**（Brecker 兄弟與 Bartz＝Arista、Ernie Watts＝A&M、Sanborn＝Warner Bros.），盤面有正式的 courtesy 聲明——**這是 1976 年紐約棚內盤的常態，正文可以寫但不要寫成「Blue Note 的樂隊」。**｜⚠ **MB 的 RG title 用 U+2019 撇號（`Still Can’t Say Enough`）**，卡單與 Discogs 用 ASCII——**寫作層照卡單，不改 MB。**｜**本張是「缺試聽五張」之一：Apple us 三種查法（`search` 兩式＋藝人目錄 33 筆逐筆）全部查無，明寫查無。**⚠ 第 528／707 條的陷阱在此明顯：`search「still cant say enough」` 的 60 筆全是同字串的流行歌，**`apple-candidates.md` 若給了任何候選都不可採信。**｜**跨卡互指（第 585 條）**：**c-144 a 的《Mango Sunrise》（BN-LA541-G，1975）是同一組合的第一張**、同一位製作人，**兩張班底不同**（Cash Box 1975-12-27 p18 與 1976-01-17 p28 有《Mango Sunrise》的發行新聞與評介可對照）；兩人另以「Blue Note All-Stars」身分出現在 1976-06-28 洛杉磯 Roxy 的「Blue Note Day」演出（Billboard 1976-06-26 p126、Cash Box 1976-06-26 p18），該場錄成《Blue Note Live at the Roxy》——**那是另一張盤，不在本批，正文不得混寫。**｜CAA 封面 RG 層 200，但來源是 2013 日本 CD（30a661b6）不是美國原盤。"
+ },
+ {
+  "key": "desc2:Earl Klugh|Earl Klugh",
+  "artist": "Earl Klugh",
+  "album": "Earl Klugh",
+  "facts": [
+   {
+    "f": "release-group 49613e18 的欄位：title「Earl Klugh」（**同名專輯**）、artist-credit 單一 Person `Earl Klugh`（5c44b1b8）、first-release-date 1976、primary-type Album、secondary-types 空，轄下兩筆。**原盤 8034fe8f 是 1976 US Official Blue Note BN-LA596-G、12 吋 8 軌，軌長全數有填**：〈Las manos de fuego (Hands of Fire)〉331 秒、〈Could It Be I'm Falling in Love〉240、〈Angelina〉291、〈Slippin' in the Back Door〉257、〈Vonetta〉361、〈Laughter in the Rain〉271、〈Waltz for Debby〉297、〈Wind and the Sea〉287——**合計約 38 分 36 秒**。另一筆是 2005-06-20 XE Blue Note 7243 4 77543 2 6（f747b93b，**CD 11 軌，多三軌**，barcode 724347754326）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=49613e18-0437-448d-b5c0-c321e8a71d83&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA596-G** 條下記兩天，**Kendun Recorders, Burbank**：**1976 年 1 月 12 日**（母帶 16841〈Angelina〉、16842〈Vonetta〉…）與 **1 月 14 日**（16844〈Laughter In The Rain〉、16845〈Could It Be I'm Falling In Love〉…），**加錄的管樂與弦樂在 The Record Plant, Los Angeles 疊上**。基本班底六人：**Dave Grusin（鋼琴／電鋼琴／合成器／打擊）、Earl Klugh（木吉他與電吉他）、Lee Ritenour（吉他）、Charles Meeks（電貝斯）、Harvey Mason（鼓與打擊）、Laudir De Oliveira（打擊）**；管樂疊加是 Oscar Brashear 與 Chuck Findley 小號／富魯格號、Garnett Brown 長號、Jerome Richardson 長笛與上低音薩克斯風、Ray Pizzi 高音薩克斯風、Pete Christlieb 次中音與長笛；弦樂十四人。⚠ **Discogs 原壓 1536347 的 notes 把期程寫成「January and February 1976」、混音再加 Westlake Audio 與 Record Plant 兩間**，比 jazzdisco 多。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 1536347（1976 US BN-LA596-G，4 圖）：notes 開頭直接寫「**Earl Klugh's debut album**」；名單是 **Dave Grusin 與 Larry Rosen＝Producer**（⚠ **本組四張 Grusin／Rosen 製作的其中第一張，另有《Living Inside Your Love》《Phantazia》《Finger Paintings》**）、Phil Schier＝Recorded By 兼 Mixed By、John Golden＝Mastered By；美術只有 **Leonard Spencer＝Design、Paul Ruscha＝Photography**（**沒有 Art Direction 欄，本組少數沒有 Ria Lewerke 的一張**）。作曲欄：〈Las Manos De Fuego〉與〈Slippin' In The Back Door〉是 **Dave Grusin**（後者與 Harvey Mason、Louis Johnson 合寫），〈Angelina〉〈Vonetta〉〈Wind And The Sea〉是 Klugh 自己，另三首是翻唱——The Stylistics 的〈Could It Be I'm Falling in Love〉、**Neil Sedaka 的〈Laughter in the Rain〉**、**Bill Evans 的〈Waltz for Debby〉**。⚠ **貝斯有兩位（Charles Meeks 與 Louis Johnson）**，jazzdisco 只寫 Meeks。",
+    "src": "https://api.discogs.com/releases/1536347"
+   },
+   {
+    "f": "**同期紙本把上市釘在 1976 年 5 月，並留下本張三個榜的完整軌跡**：Billboard 1976-05-08 p122 的評介欄「**EARL KLUGH - Blue Note BN-LA596-G (United Artists). Soft, relaxed debut for guitarist who plays in the George Benson-Johnny Smith mold. Plenty of commercial disco and soul-funk rhythms from the studio players**」；Billboard 1976-05-29 p88 的爵士價目表印「KLUGH, EARL Earl Klugh LP Blue Note BNLA596G $6.98」；**Billboard 1976-06-12 p42 的 Best Selling Jazz LPs 第 25 名新進榜 → 06-26 p105 第 19 名 → 07-10 p50 第 19 名 → 08-14 p27 第 16 名**（在榜十週以上）；**主榜 Top LP's & Tape 1976-07-17 p64 第 143 名 → 07-31 p68 第 124 名 → 08-14 p160 第 188 名**。同期 p105 的「Blue Note Month」整版廣告目錄號列裡**沒有** LA596（那一列是 LA628／645／634／636／581／606），**本張比那一波早兩個月。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-05-08.pdf"
+   },
+   {
+    "f": "**1976 年 6 月 28 日的「Blue Note Day」是本張與本組多張的共同背景**：Billboard 1976-06-26 p126 與 Cash Box 1976-06-26 p18 都預告洛杉磯 Roxy 的「Blue Note At The Roxy」私人演出，出場的是 Donald Byrd & the Blackbyrds、Ronnie Laws、Alphonse Mouzon、Carmen McRae，加上一支「**Blue Note All-Stars**」——**Gerry Brown 鼓、Gene Harris 鋼琴、Bobbi Humphrey 長笛、Bobby Hutcherson 顫音琴、Earl Klugh 吉他、John Lee 電貝斯**；洛杉磯市長 Tom Bradley 把當天定為「Blue Note Day」，全場錄音發成《Blue Note Live at the Roxy》（Cash Box 1976-10-16 p47 的評介）。⚠ **這一場的 Klugh 獨奏組曲〈Like a Lover／A Felicidade／Manhã de Carnaval／Samba de Orfeu〉後來被當成《Living Inside Your Love》2005 年 CD 的加值軌**（Apple 715548856 第 8 軌，12 分 51 秒）——**那不是《Living Inside Your Love》原盤的曲子，正文不得寫進那張的曲目。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-06-26.pdf"
+   },
+   {
+    "f": "英文維基 `Earl Klugh (album)` infobox：released 1976、recorded「January – February 1976」、label Blue Note、producer Dave Grusin／Larry Rosen；這是他 22 歲的首張個人專輯（此前他在 George Benson 的《White Rabbit》與 Chick Corea 的 Return to Forever 短暫待過）。店面（第 254 條）：Apple us 命中 **716200862**「Earl Klugh／Earl Klugh」，**11 軌＝2005 年 CD 形、不是原盤的 8 軌**——**前 8 軌軌名與軌序與 MB 原盤完全一致**（333／242／291／256／367／273／299／289 秒），第 9–11 軌是加值的〈Cabo Frio〉〈The Shadow of Your Smile〉與第二個〈Angelina〉（**都出自 1977 年 8 月 13 日 Hollywood Bowl 的《Blue Note Meets the L.A. Philharmonic》，見 jazzdisco BN-LA882-J2 的前一號**）。⚠ **第 1 軌軌名在 Apple 被打成「Las Manos de **Duego**」（正確是 Fuego）**。依第 472／532／554 條，**合訂／加值版可用 → 串流採信 716200862**，**但那三軌加值曲不得寫進正文的曲目。**CAA：RG 層 HTTP 200，來源是 1976 美國原壓 8034fe8f ✓。",
+    "src": "https://itunes.apple.com/lookup?id=716200862&entity=song&country=us&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "22 歲的底特律吉他手，第一張自己的唱片：不插電、不撥片，指頭直接按在尼龍弦上——Dave Grusin 替他寫了開場曲，然後把 Neil Sedaka 的〈Laughter in the Rain〉與 Bill Evans 的〈Waltz for Debby〉排在同一面",
+   "1976 年五月上市，六月進爵士榜第 25 名，八月爬到第 16 名，同時擠進 Billboard 主榜第 124 名——一張木吉他專輯，賣得比那一年 Blue Note 的多數爵士盤都好"
+  ],
+  "sound": "8 軌、約 38 分半，1976 年 1 月 12 日與 14 日在柏班克 Kendun Recorders 錄，管樂與弦樂在洛杉磯 The Record Plant 疊上。核心六人：Earl Klugh 的木吉他與電吉他、Dave Grusin 的鋼琴／電鋼琴／合成器、Lee Ritenour 的吉他、Charles Meeks 與 Louis Johnson 的電貝斯、Harvey Mason 的鼓、Laudir de Oliveira 的打擊；疊加層是 Oscar Brashear 與 Chuck Findley 的小號、Garnett Brown 的長號、Jerome Richardson 的長笛與上低音、Ray Pizzi 的高音薩克斯風、Pete Christlieb 的次中音，外加十四人弦樂組。八首裡三首是 Klugh 自己的（〈Angelina〉〈Vonetta〉〈Wind and the Sea〉）、兩首是 Grusin 的（開場〈Las manos de fuego〉與〈Slippin' in the Back Door〉），另三首是翻唱：The Stylistics 的〈Could It Be I'm Falling in Love〉、Neil Sedaka 的〈Laughter in the Rain〉、Bill Evans 的〈Waltz for Debby〉。最長的是〈Vonetta〉（6 分 1 秒），最短的是〈Could It Be I'm Falling in Love〉（4 分）。Dave Grusin 與 Larry Rosen 製作，Phil Schier 錄音與混音，John Golden 母帶。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Vonetta",
+   "Angelina",
+   "Waltz for Debby"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA596-G＝1976、Discogs 美國原壓五筆與菲律賓／新馬港／加拿大壓全 1976、維基 infobox 1976）一致，**紙本再獨立坐實四路**：Billboard 1976-05-08 p122 評介欄、1976-05-29 p88 爵士價目表、**1976-06-12 p42 的爵士榜第 25 名新進榜**（→06-26 第 19、07-10 第 19、08-14 第 16）、**主榜 Top LP's & Tape 1976-07-17 p64 第 143 名**（→07-31 第 124、08-14 第 188）。**定 1976 年 5 月。**⚠ **本張不在 Billboard 1976-07-24 p105 的「Blue Note Month」目錄號列裡**（那一列是 LA628／645／634／636／581／606），因為它比那一波早兩個月上市——**同一則廣告不能拿來替本張定年。**⚠ **錄音期程兩說**：jazzdisco 記 1976 年 1 月 12／14 兩天，Discogs 盤面寫「January and February 1976」——**正文寫「1976 年年初」最安全。**",
+  "notes": "**vault 盤？否**——1976 年 1 月錄、同年 5 月發。｜**這是 Klugh 的首張個人專輯**（Discogs 原壓 notes 直接寫 debut album），**製作是 Dave Grusin 與 Larry Rosen**——⚠ **Grusin／Rosen 在本組共製作四張**（本張、《Living Inside Your Love》、《Phantazia》、《Finger Paintings》），**四張的班底高度重疊（Grusin 自己、Steve Gadd／Harvey Mason、Ralph MacDonald、Lee Ritenour、弦樂組），正文要寫得出差別、絕不能互抄曲目與錄音日期。**｜**美術只有 Leonard Spencer（Design）與 Paul Ruscha（Photography），沒有 Art Direction 欄**——**本組少數沒有 Ria Lewerke 的一張。**｜⚠ **Apple 的 716200862 是 2005 年 CD 形（11 軌），比原盤多三軌**：第 9–11 軌〈Cabo Frio〉〈The Shadow of Your Smile〉與第二個〈Angelina〉**全部出自 1977-08-13 Hollywood Bowl 的《Blue Note Meets the L.A. Philharmonic》**（jazzdisco 該條在 BN-LA882-J2 之前），**前 8 軌與原盤逐軌相符 → 串流採信 716200862，但正文的曲目只能寫原盤那 8 軌。**⚠ Apple 把第 1 軌拼成「Las Manos de **Duego**」（正確 Fuego）。｜**跨卡互指（第 585 條）**：本組另有 Klugh 的《Living Inside Your Love》(1976) 與《Finger Paintings》(1977)，**三張都是 Grusin／Rosen 製作、依序上市**；Klugh 另以吉他手身分出現在本組 **Noel Pointer《Phantazia》** 的三軌上（〈Night Song〉〈Living for the City〉〈Mirabella〉）——**那是他當客席，不是他的盤，正文別寫反。**｜**1976-06-28 的「Blue Note Day」**（洛杉磯 Roxy，市長 Tom Bradley 頒布）把本組多位主角湊在同一晚：Klugh、Gene Harris、Bobby Hutcherson、John Lee、Gerry Brown、Bobbi Humphrey 組成「Blue Note All-Stars」——**那一場錄成《Blue Note Live at the Roxy》，不在本批，正文不得混寫成本張的內容。**｜**榜位（第 791 條）**：**爵士榜（最高 16）＋主榜 Top LP's & Tape（最高 124）兩榜都上，Soul LPs 零命中**——1976 年的 crossover 已經開始，但還沒到 1977 年那種三榜齊上的規模。｜CAA 封面 RG 層 200 ✓，來源是原盤 8034fe8f。"
+ },
+ {
+  "key": "desc2:Earl Klugh|Living Inside Your Love",
+  "artist": "Earl Klugh",
+  "album": "Living Inside Your Love",
+  "facts": [
+   {
+    "f": "release-group 4e19ad7f 的欄位：title「Living Inside Your Love」、artist-credit 單一 Person `Earl Klugh`（5c44b1b8）、first-release-date 1976、primary-type Album、secondary-types 空，轄下三筆。**原盤 36068d13 是 1976 US Official Blue Note BN-LA667-G、12 吋 7 軌，軌長全數有填**：〈Captain Caribė〉323 秒、〈I Heard It Through the Grapevine〉448、〈Felicia〉324、〈Living Inside Your Love〉342、〈Another Time, Another Place〉402、〈The April Fools〉225、〈Kiko〉168——**合計約 37 分 12 秒，與維基 infobox 的 37:13 對得起來**。另兩筆是 2005 XE Blue Note 7243 4 7754524（b9c93735，**CD 8 軌，多一軌**）與無日期的 US EMI Manhattan CDP 7 48385 2（b4e85e1d，7 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4e19ad7f-b3bc-350d-9ea1-e69b07e33400&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA667-G** 條下記三個地點：**Electric Lady Studios, NYC, 1976 年 7 月 26 日**（母帶 17887〈Captain Caribe〉、17888〈I Heard It Through The Grapevine〉、17889〈Felicia〉、17890〈Living Inside Your Love〉，**弦樂與豎琴的疊加 8 月 5 日在 Columbia 30th Street Studio 錄**）、**Electric Lady, 7 月 27 日**（17891〈Another Time, Another Place〉是 Grusin／Klugh／**Eddie Gomez 貝斯**／Steve Gadd 的四人版；17892〈April Fools〉**是 Klugh 一把木吉他獨奏**）、**Kendun Recorders, Burbank, 7 月或 8 月**（17893〈Kiko〉，Louis Johnson 電貝斯、Harvey Mason 鼓）。紐約班底：**Eddie Daniels（次中音／高音薩克斯風／長笛）、Dave Grusin（電鋼琴／合成器）、Klugh（木吉他與 12 弦）、Jeff Mironov 電吉他、Will Lee 與 Francisco Centeno 電貝斯、Steve Gadd 鼓、Ralph MacDonald 打擊**，和聲是 **Patti Austin、Vivian Cherry、Lani Groves**；弦樂組裡有 **Noel Pointer 拉小提琴**（⚠ **本組《Phantazia》的主角在這裡是弦樂編制的一員**）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 3908879（1976 US BN-LA667-G，3 圖，「Pressing variation with white logo. LP housed with inner credit sleeve」）名單：**Dave Grusin＝Arranged By 兼 Conductor 兼 Producer、Larry Rosen＝Producer、George Butler＝Executive-Producer**。作曲欄：〈Captain Caribe〉與〈Another Time, Another Place〉是 **Dave Grusin** 的、標題曲是 **Grusin 與 Klugh 合寫**、〈Felicia〉與〈Kiko〉是 Klugh 的，另兩首是翻唱——Motown 的〈I Heard It Through the Grapevine〉（Whitfield／Strong）與 **Bacharach／David 的〈The April Fools〉**。⚠ **Discogs 把〈Captain Caribė〉印成無重音的 Captain Caribe**、MB 有重音符號——**照卡單與 MB 的 `Captain Caribė`，不要自作主張改。**⚠ **這一筆沒有 Art Direction／Design／Photography 欄**（3 圖），**封面美術掛名要另外找，不要照抄本組其他張的 Ria Lewerke。**",
+    "src": "https://api.discogs.com/releases/3908879"
+   },
+   {
+    "f": "**廠牌檔期廣告（第 612 條）＋三榜軌跡，全部落在 1976 年 10 月底到 11 月**：**Billboard 1976-11-06 p20 是 United Artists／Blue Note 的整版新片廣告**，把本張與同期新片排成一列——「WAR 『Platinum Jazz』BNLA690G、**EARL KLUGH 『Living Inside Your Love』BNLA667-G**、BOBBI HUMPHREY 『Bobbi Humphrey's Best』BNLA699-G、AL KOOPER 『Act Like Nothing's Wrong』UALA702-G……」；**Cash Box 1976-10-30 p36 的爵士榜新進榜**（「LIVING INSIDE YOUR LOVE EARL KLUGH (Blue Note/UA BNLA 667G) — 1」，**在榜第一週**）→ 11-06 p26 → **11-13 p40 第 15 名**→ 11-20 p30 第 13 名 → 11-27 p143 第 13 名；**Cash Box 主榜 Top 200**：1976-11-06 p62 第 188 名 → 11-13 p90 第 182 → 11-20 p64 第 189；**Cash Box 的 R&B LP 榜**：1976-11-13 p50 亦見。Billboard 側：1976-11-20 p29 的 Bubbling Under 第 205 名、1976-12-11 p62 的爵士榜第 8 名。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-11-06.pdf"
+   },
+   {
+    "f": "⚠ **盤名在 Billboard 側被連錯兩期（第 509c 條）**：**Billboard 1976-12-04 p17 的 Bubbling Under 印成「EARL KLUGH, Living Inside Your **World**, Blue Note BN LA667 G」**，**1976-12-11 p62 的爵士榜第 8 名同樣印成「LIVING INSIDE YOUR **WORLD**」**——**兩期連錯，Cash Box 側則從頭到尾都印 LOVE**。另 1976-11-20 p29 那一則把目錄號印成「BN.**LA667S**」（正確是 -G）。→ **檢索這張一定要同時帶 `LA\\s*-?\\s*667` 與 Love／World 兩種盤名，只查盤名會漏掉 Billboard 的爵士榜最高名次。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-12-11.pdf"
+   },
+   {
+    "f": "英文維基 `Living inside Your Love` infobox：released 1976、**recorded「28 June–5 August 1976」**、length 37:13、label Blue Note／Liberty、producer **Dave Grusin 與 Larry Rosen（兩人另掛 packaging concept）**、**George Butler – executive producer**；分類掛「Albums recorded at CBS 30th Street Studio」與「Albums recorded at Electric Lady Studios」。⚠ **維基那個「6 月 28 日」起算點對不上 jazzdisco 的 7 月 26 日**——**1976-06-28 是洛杉磯 Roxy 的「Blue Note Day」演出日**，Klugh 在那場的獨奏組曲後來成為本張 2005 年 CD 的加值軌，**維基多半是把加值軌的日期併進了錄音期程；正文寫「1976 年 7 月底在紐約錄」最安全。****AllMusic 3 星。**店面（第 254 條）：Apple us 命中 **715548856**，**8 軌＝2005 年 CD 形、不是原盤的 7 軌**——**前 7 軌軌名軌序與 MB 原盤完全一致**（323／448／324／342／402／225／168 秒），**第 8 軌正是那首 12 分 51 秒的 Roxy 組曲〈Like a Lover／A Felicidade／Manha de Carnaval／Samba de Orfeu〉**。依第 472／532／554 條，**加值版可用 → 串流採信 715548856，但第 8 軌不得寫進正文曲目。**CAA：RG 層 HTTP 200，來源就是 1976 美國原壓 36068d13 ✓。",
+    "src": "https://en.wikipedia.org/wiki/Living_inside_Your_Love"
+   }
+  ],
+  "hookCandidates": [
+   "第一張才上市五個月，第二張就進了棚：這次全在紐約，Steve Gadd 打鼓、Will Lee 彈貝斯、Ralph MacDonald 敲打擊，弦樂組裡坐著一位還沒出自己唱片的小提琴手，叫 Noel Pointer",
+   "七首裡有一首完全沒有樂團——〈The April Fools〉三分四十五秒，Bacharach 的曲子，只有他一把木吉他；隔壁那首〈I Heard It Through the Grapevine〉卻鋪滿了弦樂與豎琴，七分二十八秒"
+  ],
+  "sound": "7 軌、約 37 分鐘，主場是 1976 年 7 月 26／27 兩天的紐約 Electric Lady Studios，弦樂與豎琴 8 月 5 日在 Columbia 30th Street Studio 疊上，收尾的〈Kiko〉另在柏班克 Kendun 錄。紐約班底：Earl Klugh 的木吉他與 12 弦、Dave Grusin 的電鋼琴與合成器（他同時編曲與指揮）、Eddie Daniels 的次中音／高音薩克斯風與長笛、Jeff Mironov 電吉他、Will Lee 與 Francisco Centeno 電貝斯、Steve Gadd 鼓、Ralph MacDonald 打擊，和聲是 Patti Austin、Vivian Cherry 與 Lani Groves；弦樂組十二把小提琴裡有一位 Noel Pointer。〈Another Time, Another Place〉縮成四人（Grusin、Klugh、Eddie Gomez 的低音提琴、Gadd 的鼓），〈The April Fools〉則是 Klugh 一把木吉他獨奏。最長的是〈I Heard It Through the Grapevine〉（7 分 28 秒），最短的是〈Kiko〉（2 分 48 秒）。Dave Grusin 與 Larry Rosen 製作，George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Captain Caribė",
+   "Living Inside Your Love",
+   "The April Fools"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA667-G＝1976、Discogs 美國原壓十一筆與英國 UAG 20009、南非、日本宣傳盤全 1976，**只有澳洲／紐西蘭的 L 36582 標 1978**、維基 infobox 1976）一致，**紙本再獨立坐實兩路，其中一條是廠牌檔期廣告（第 612 條最上位證據）**：**Billboard 1976-11-06 p20 的 United Artists／Blue Note 整版新片廣告把 `BNLA667-G` 與 War《Platinum Jazz》、Bobbi Humphrey《Best》排在同一波**；**Cash Box 1976-10-30 p36 的爵士榜新進榜**（在榜第一週）→ 11-13 第 15 → 11-20 第 13 → 11-27 第 13，**Cash Box 主榜 1976-11-06 p62 第 188 名**，**Billboard 爵士榜 1976-12-11 p62 第 8 名**。**定 1976 年 10 月底。**⚠ **錄音期程兩說**：jazzdisco 記 1976 年 7 月 26／27 日（＋8 月 5 日弦樂疊加），**維基寫「28 June–5 August 1976」——那個 6 月 28 日是 Roxy「Blue Note Day」的演出日，多半是把 2005 年 CD 加值軌的日期併進來了，不要採信。**⚠ **澳／紐壓的 1978 是後製盤，不影響首發年。**",
+  "notes": "**vault 盤？否**——1976 年 7 月錄、同年 10 月底發。｜**製作是 Dave Grusin 與 Larry Rosen（兩人另掛 packaging concept），George Butler 只掛執行製作**——**本組四張 Grusin／Rosen 盤的第二張。**｜⚠ **Discogs 美國原壓 3908879 沒有任何美術掛名欄**（3 圖，無 Art Direction／Design／Photography），**封面美術查無掛名，封面層不要照抄本組其他張的 Ria Lewerke。**｜⚠ **盤名在 Billboard 側連錯兩期**：1976-12-04 p17 與 1976-12-11 p62 都印成「Living Inside Your **World**」（第 509c 條），**1976-11-20 p29 另把目錄號印成 `BN.LA667S`**——**後層檢索本張一定要同時帶 Love／World 兩種盤名，否則會漏掉 Billboard 爵士榜第 8 名。**｜⚠ **Apple 715548856 是 8 軌的 2005 CD 形**，**第 8 軌是 1976-06-28 洛杉磯 Roxy「Blue Note Day」現場的 Klugh 獨奏組曲〈Like a Lover／A Felicidade／Manha de Carnaval／Samba de Orfeu〉（12 分 51 秒）**，出自《Blue Note Live at the Roxy》——**前 7 軌與原盤逐軌相符 → 串流採信 715548856，但那一軌絕不能寫進正文曲目。**（同一場的三軌也被塞進 Apple 版《Earl Klugh》的第 9–11 軌，**兩張卡的加值軌來源相同但曲目不同，別寫混。**）｜⚠ **曲名重音**：MB 與卡單是〈**Captain Caribė**〉，Discogs／Apple 都作 Caribe——**照卡單。**｜**跨卡互指（第 585 條）**：本組另有《Earl Klugh》(1976) 與《Finger Paintings》(1977)，維基 chronology 三張連成一線；**Klugh 本人以客席吉他手身分出現在本組 Noel Pointer《Phantazia》的三軌，而 Pointer 則以小提琴手身分出現在本張的弦樂組裡——兩張互為對方的客席，正文可以寫這個交叉，但不得把兩張的編制寫成同一個。**｜**榜位（第 791 條）**：**Cash Box 爵士榜（最高 13）＋Cash Box 主榜 Top 200（最高 182）＋Cash Box R&B LP 榜都上，Billboard 側爵士榜最高 8、主榜只到 Bubbling Under 205**——**1976 年底已經開始三榜齊上，是第 791 條那個翻轉的前兆。**｜CAA 封面 RG 層 200 ✓，來源就是美國原壓 36068d13。"
+ },
+ {
+  "key": "desc2:Eddie Henderson|Heritage",
+  "artist": "Eddie Henderson",
+  "album": "Heritage",
+  "facts": [
+   {
+    "f": "release-group 1c31cf20 的欄位：title「Heritage」、artist-credit 單一 Person `Eddie Henderson`（b07d5aa9）、first-release-date 1976、primary-type Album、secondary-types 空，轄下四筆。**原盤 9765ceb3 是 1976 US Official Blue Note BN-LA636-G、12 吋 7 軌，軌長全數有填**：〈Inside You〉289 秒、〈Acuphuncture〉222、〈Time and Space〉316、〈Nostalgia〉250、〈Kudu〉367、〈Dr. Mganga〉449、〈Dark Shadow〉414——**合計約 38 分 47 秒，與維基 infobox 的 38:42 對得起來**。另三筆是 2008-08-19 XW 數位（d2cba1ce）、2008-09-02 US CD 50999 5 22380 2 4（f57ed448）、2013-03-20 JP Blue Note TOCJ-50579（836d0d6a，**label-info 同時掛 LA636-G 與 TOCJ-50579**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1c31cf20-5a33-39c6-92c8-0898823bf966&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA636-G** 條下只記**一天**：**Wally Heider Recording, San Francisco, 1976 年 4 月 2 日**，母帶 17392–17398 連號七軌，順序與盤面一致。編制是 Herbie Hancock 那條舊金山線的班底：**Eddie Henderson 小號與富魯格號、Julian Priester 長號與低音長號、Hadley Caliman 高音薩克斯風／低音單簧管／長笛、Patrice Rushen 電鋼琴／Clavinet／合成器、Paul Jackson 電貝斯、Mtume 康加與打擊**，鼓分成三人：**Mike Clark 打第 1–5 軌、Sonship（Woody Theus）打第 6–7 軌、Billy Hart 也在第 7 軌**。⚠ **jazzdisco 把第 2 軌寫成〈Acupuncture〉、第 6 軌寫成〈Dr. Manga〉**，盤面與 MB 是〈**Acuphuncture**〉與〈**Dr. Mganga**〉——**照盤面。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 823311（1976 US BN-LA636-G，6 圖）名單：**Skip Drinkwater＝Producer、George Butler 與 Jerry Schoenbaum＝Executive-Producer**（**兩位執行製作，本組只有本張與《Still Can't Say Enough》如此，兩張都是 Drinkwater 製作的**）、Fred Catero＝Recording Engineer 兼 Mixed By、**Doug Sax＝Mastered By（Mastering Lab, Hollywood）**；美術是 **Bruce Steinberg＝Album Design 兼 Color Photography**（**同樣與《Still Can't Say Enough》同一人**）。⚠ **作曲欄推翻「領班盤＝領班寫曲」的直覺**：七軌裡 Henderson 自己只寫兩首（〈Time and Space〉〈Dark Shadow〉），〈Inside You〉是 **Mtume** 的、〈Acuphuncture〉是 **Julian Priester** 的、〈Kudu〉是 **Patrice Rushen** 的、〈Nostalgia〉是 **Patrick O'Hearn** 的、〈Dr. Mganga〉是 Brent Rampone 的。notes 另寫「Recorded and mixed at **Wally Heider Recording Studios, San Francisco**；Mastered at the Mastering Labs, Hollywood」。",
+    "src": "https://api.discogs.com/releases/823311"
+   },
+   {
+    "f": "**同期紙本四條，其中一條是廠牌檔期廣告（第 612 條最上位證據）**：**Billboard 1976-07-24 p105 的整版「July as Blue Note Month」廣告**，目錄號列裡有 **`BN-LA636-G`**（同列還有 LA628-G《Fever》、LA634-G《In a Special Way》、LA645-G、LA581-G、LA606-G）；**同一期 p110 的評介欄**「**EDDIE HENDERSON - Heritage, Blue Note BN-LA636-G**. A compilation of jazz and contemporary jazz tunes, carried out in a mellow vein. Trumpet solos offer the listener a chance to appreciate Henderson's full musical range… Best cuts: 『Inside You,』『Time And Space,』『Dark Shadow』」；Billboard 1976-08-21 p62 的爵士價目表印「HENDERSON, EDDIE Heritage LP Blue Note BNLA636G $6.98」；Billboard 1976-11-27 p92 的第二則評介「With his haunted echo ballad style, Henderson's flugelhorn and trumpet work can't help but conjure up memories of **Miles Davis before he went free-form**」。**廣告與評介同一期，證據最硬的一組之一。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-07-24.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的三榜查法）**：**Billboard 的 Best Selling Jazz LPs**——1976-09-11 p32 **新進榜第 33 名** → 09-25 p55 第 34 名，在榜約三至四週；**Soul LPs 與 Top LP's & Tape 兩榜、以及 Cash Box 的爵士榜與 R&B 榜全部零命中**。⚠ **本張與同組《Waiting》幾乎是同一條軌跡**（同一期新進榜、名次相鄰、只在爵士榜出現），**1976 年的純爵士／爵士放克盤還進不了 R&B 榜與主榜**——**第 791 條那個「1977 年起主戰場翻到 R&B 榜」的翻轉，1976 年還沒發生**，正文不得把本張寫成跨界暢銷。另 1976-12-11 p71 的年末爵士價目表仍列本張。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-09-11.pdf"
+   },
+   {
+    "f": "英文維基 `Heritage (Eddie Henderson album)` infobox：released 1976、**recorded「April 2, 1976」（單日，與 jazzdisco 一致）**、length 38:42、label Blue Note、**producer Skip Drinkwater**；分類掛「Albums recorded at Wally Heider Studios」；chronology prev《Sunburst》(1975，**已在池中**) → next《Comin' Through》(1977，Capitol)。**AllMusic 由 Thom Jurek 評 3.5 星**，原文「*Heritage* is a wonderful set, and should be revisited by anyone who either missed or was put off by it initially. For the new generation of jazz and funk heads, this one is right up your alley — **these are some dark, freaky, and delicious grooves that bear further investigation**」；《Rolling Stone Jazz Record Guide》另給 3 星。店面（第 254 條）：Apple us 命中 **715513671**，**7 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤相符（292／223／319／251／366／452／415 秒）→ **串流採信 715513671**。CAA：RG 層 HTTP 200，來源就是 1976 美國原壓 9765ceb3 ✓。",
+    "src": "https://en.wikipedia.org/wiki/Heritage_(Eddie_Henderson_album)"
+   }
+  ],
+  "hookCandidates": [
+   "一天錄完七首：1976 年四月二日，舊金山 Wally Heider，Herbie Hancock Mwandishi 樂團拆散後的那群人又湊齊了——Julian Priester 的長號、Mtume 的康加、Paul Jackson 的電貝斯，鍵盤換成 21 歲的 Patrice Rushen",
+   "掛名的是小號手，七首裡他只寫了兩首：〈Inside You〉是 Mtume 的、〈Acuphuncture〉是長號手 Priester 的、〈Kudu〉是 Patrice Rushen 的——領班把作曲欄讓給了整個樂團"
+  ],
+  "sound": "7 軌、約 38 分 45 秒，1976 年 4 月 2 日一天在舊金山 Wally Heider Recording 錄完，母帶 17392–17398 連號。編制是 Herbie Hancock Mwandishi 那條舊金山線的延伸：Eddie Henderson 小號與富魯格號、Julian Priester 長號與低音長號、Hadley Caliman 高音薩克斯風／低音單簧管／長笛、Patrice Rushen 電鋼琴／Clavinet／合成器、Paul Jackson 電貝斯、Mtume 康加與打擊；鼓換三人——Mike Clark 打前五軌、Sonship（Woody Theus）打最後兩軌、Billy Hart 加進收尾的〈Dark Shadow〉。七首裡 Henderson 自己只寫兩首（〈Time and Space〉〈Dark Shadow〉），其餘分給 Mtume（〈Inside You〉）、Julian Priester（〈Acuphuncture〉）、Patrice Rushen（〈Kudu〉）、Patrick O'Hearn（〈Nostalgia〉）與 Brent Rampone（〈Dr. Mganga〉）。最長的是〈Dr. Mganga〉（7 分 29 秒），最短的是〈Acuphuncture〉（3 分 42 秒）。Skip Drinkwater 製作、Fred Catero 錄音與混音、Doug Sax 母帶。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Inside You",
+   "Dr. Mganga",
+   "Dark Shadow"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（MB frd 1976、jazzdisco BN-LA636-G＝1976、Discogs 美國原壓五筆與加拿大壓全 1976、維基 infobox 1976）一致，**紙本再獨立坐實四條，其中一條是廠牌檔期文件**：**Billboard 1976-07-24 p105 的整版「July as Blue Note Month」廣告把 `BN-LA636-G` 列進當月主打**（第 612 條最上位證據）、**同一期 p110 的評介欄**、Billboard 1976-08-21 p62 的爵士價目表、**1976-09-11 p32 的爵士榜第 33 名新進榜**（→09-25 第 34），另 1976-11-27 p92 第二則評介與 12-11 p71 年末價目表。依第 612 條，**定 1976 年 7 月。**⚠ **錄音年與發行年同年**（1976 年 4 月 2 日一天錄完、同年 7 月發），**間隔只有三個月，正文寫「當年錄當年發」沒問題。**⚠ **維基與 jazzdisco 對錄音日期一致（單日 4 月 2 日），Discogs 沒寫日期**——**這是本組少數三方不打架的錄音日期。**",
+  "notes": "**vault 盤？否**——1976 年 4 月 2 日錄、同年 7 月發，一天錄完。｜**製作是 Skip Drinkwater，George Butler 與 Jerry Schoenbaum 兩位執行製作**——⚠ **本組只有本張與《Still Can't Say Enough》掛兩位執行製作，兩張都是 Drinkwater 製作、也都是 Bruce Steinberg 做封面**（本張 Steinberg 兼 Album Design 與 Color Photography），**這兩張是同一個製作小組，正文可以寫這條線但不得互抄編制。**｜⚠ **曲名兩處被 jazzdisco 寫錯**：〈Acupuncture〉應為〈**Acuphuncture**〉、〈Dr. Manga〉應為〈**Dr. Mganga**〉——**照盤面與 MB。**｜⚠ **七軌三位鼓手**（Mike Clark／Sonship Woody Theus／Billy Hart），**正文不得寫成「一個鼓手」。**｜⚠ **作曲欄只有兩首是 Henderson 的**，**不得寫成「他自己寫的七首」。**｜**跨卡互指（第 585 條）**：池中已有 Henderson 的《Realization》(1973)《Sunburst》(1975)，**維基 chronology 直接把《Sunburst》→本張排成兩連**；**Patrice Rushen 在池中另有自己的《Patrice》(1978)**，**Mtume 同時出現在本組《Still Can't Say Enough》（那裡他打康加兼唱）**——**同一個人、兩張盤、兩種角色，正文別寫混。**｜**榜位（第 791 條）**：**只進 Billboard 爵士榜（最高 33），Soul LPs／主榜／Cash Box 兩榜全零**——與同組《Waiting》同一條軌跡，**1976 年的爵士放克盤還沒翻到 R&B 榜。**｜**AllMusic 3.5（Thom Jurek，評語正面：「dark, freaky, and delicious grooves」），《Rolling Stone Jazz Record Guide》3 星**——**本組評價偏高的一張，但不是代表作級。**｜串流：Apple 715513671，7 軌＝原盤形，逐軌相符（**串流採信 715513671**）。｜CAA 封面 RG 層 200 ✓，來源就是美國原壓 9765ceb3。"
+ },
+ {
+  "key": "desc2:Ronnie Laws|Fever",
+  "artist": "Ronnie Laws",
+  "album": "Fever",
+  "facts": [
+   {
+    "f": "release-group 14e572bb 的欄位：title「Fever」、artist-credit 單一 Person `Ronnie Laws`（e26aa662）、**first-release-date 1976-05（本組唯一一張 MB 連月份都填了的）**、primary-type Album、secondary-types 空，轄下三筆。**原盤 cb3e7162 是 1976-05 US Official Blue Note BN-LA628-G、12 吋 9 軌，軌長全數有填**：〈Let's Keep It Together〉271 秒、〈Fever〉209、〈All the Time〉243、〈Stay Still (And Let Me Love You)〉443、〈Strugglin'〉247、〈Captain Midnite〉179、〈Karmen〉224、〈Night Breeze〉389、〈From Ronnie With Love〉330——**合計約 41 分 5 秒，與維基 infobox 的 41:02 對得起來**。另兩筆是 1993-07-17 US CD Blue Note 89541（3191dbff）與無日期 XW 數位（dcf3b7e1）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=14e572bb-13f9-437a-bda4-ebd8af34f3bf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列把本盤登在 **`BN-LA628-H`** 條下（⚠ **尾碼是 -H，但盤面、MB、Discogs 十一筆原壓與兩刊紙本全部是 `BN-LA628-G`；`catno=BN-LA628-H` 反查 Discogs 回 0 筆——jazzdisco 這個尾碼是錯的，第 509c 條**），**全部在 Total Experience Studios, Los Angeles**，四個檔期：**1975 年 12 月 18 日**（母帶 16763〈Fever〉、16764〈Stay Still〉、16765〈Karmen〉、17241〈Let's Keep It Together〉，**弦樂與和聲的疊加在 1976 年 2–3 月補**）、**1975 年 12 月 26 日**（17245〈From Ronnie With Love〉）、**1975 年 12 月 29 日**（16770〈Captain Midnight〉）、**1976 年 1 月 26 日**（17242〈All The Time〉、17243〈Strugglin'〉、17244〈Night Breeze〉，**這一場的鍵盤換成 Bobby Lyle、貝斯換成 Wilton Felder、鼓換成 Steve Guttierez、加 Tony Ben 康加**）。⚠ **母帶序 167xx 與 172xx 交錯，不能拿號連不連當同場證據**（第 663 條家族）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 744169（1976 US BN-LA628-G，4 圖）補上一件維基寫錯的事：**Wayne Henderson＝Producer（不是 George Butler）、George Butler＝Executive-Producer**，另 **F. Byron Clark＝Recording Engineer**、**Wayne Henderson／F. Byron Clark／Rik Pekkonen＝Remix**、Malcolm Cecil＝Lacquer Cut、Dale Frank＝String Arrangements；美術是 **Ria Lewerke＝Art Direction、Bob Cato＝Design、Doug Metzler＝Photography**（⚠ **Bob Cato 同時是本組《Hipnosis》美國 2LP 的封套設計者**）。借將聲明寫「Augie Johnson、Marlon The Magician、Nathaniel Phillips、Bruce Carter、Donald Hepburn、Michael Hepburn、Bruce Smith appear courtesy of **Fantasy Records**；**Wilton Felder appears courtesy of ABC/Blue Thumb**」。notes 的期程是「Recorded at The Total Experience Recording Studio **during January, February and March, 1976**；Mastered at Kendun Recorders」——⚠ **與 jazzdisco 的 1975 年 12 月起算差了一個多月，兩說並存，正文寫「1975 年底到 1976 年初」最安全。**",
+    "src": "https://api.discogs.com/releases/744169"
+   },
+   {
+    "f": "**同期紙本：評介在 1976 年 5 月底，三榜同時開跑**——Billboard 1976-05-29 p82 的評介欄「**RONNIE LAWS - Fever, Blue Note BN-LA628-G (United Artists). Disco/soul from tenor and alto saxist and flautist, with some jazz influences as well. Cooking sax and melodic, easy sax work well together as Laws uses a disco approach**」；**Billboard 1976-06-12 p42 的 Best Selling Jazz LPs 新進榜第 22 名**（同一張榜上第 24 名是他自己的前作《Pressure Sensitive》BN-LA452-G，**在榜已 41 週**）；同期 p96 與 06-19 p110 的 Top LP's & Tape 新進；06-19 p90／06-26 p99 的 Soul LPs。另 Billboard 1976-07-24 p105 的整版「**July as Blue Note Month**」廣告把 **`BN-LA628-G` 排在目錄號列的第一個**（第 612 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-05-29.pdf"
+   },
+   {
+    "f": "⚠ **本層推翻第 791 條對本張的舉例**。第 791 條寫「《Fever》同時進 Soul LPs 與主榜、**爵士榜沒進**」——**這是錯的，本張的爵士榜名次是本組最高的**：Billboard 的 Best Selling Jazz LPs **1976-06-12 p42 新進第 22 名 → 06-26 p105 第 5 名 → 07-10 p50 第 4 名 → 08-14 p27 第 6 名 → 09-11 p32 第 3 名**（在榜十四週以上）。三榜的完整形狀是：**爵士榜最高第 3**、**Soul LPs 最高第 13**（Billboard 1976-07-17 p41；維基引 Billboard 的歷史榜單同樣寫 No. 13）、**Top LP's & Tape 最高約第 46**（1976-07-17 p62 → 07-31 p66 第 50 → 08-14 p158 第 49 → 08-28 p80 第 66）。→ **第 791 條「1977 年起主戰場是 R&B 榜、查榜一律 Soul 先」的查法本身仍然對，但它拿《Fever》當「爵士榜沒進」的實例是誤記，後層引用時要改掉。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-09-11.pdf"
+   },
+   {
+    "f": "英文維基 `Fever (Ronnie Laws album)` infobox：released「1976；1992 (re-release)」、**recorded「December 26 & 29, 1975, January 16, 1976 and February–March, 1976」**、studio Total Experience Recording Studios (Hollywood)、length 41:02、label Blue Note、⚠ **producer 欄寫 George Butler——與 Discogs 原壓盤面的 Wayne Henderson＝Producer／Butler＝Executive-Producer 打架，以盤面為準**；內文寫「The album reached **No. 13** on the *Billboard* Top Soul LPs chart」；chronology prev《Pressure Sensitive》(1975，**已在池中**) → next《Friends & Strangers》(1977，**也在池中**)。**AllMusic 由 Alex Henderson 評 4 星**（「Because Laws has recorded so many throwaways, one has to approach his catalog with caution; but rest assured that *Fever* puts his talent to work instead of wasting it」），《Rolling Stone Jazz Record Guide》只給 2 星——**兩邊差很大，正文要引就兩邊都提或都不提。**店面（第 254 條）：Apple us 命中 **723366990**，**9 軌＝原盤形**，逐軌相符（272／210／244／444／248／179／224／390／330 秒）→ **串流採信 723366990**。CAA：RG 層 200，來源就是原盤 cb3e7162 ✓。",
+    "src": "https://en.wikipedia.org/wiki/Fever_(Ronnie_Laws_album)"
+   }
+  ],
+  "hookCandidates": [
+   "Crusaders 的長號手 Wayne Henderson 替他製作，Total Experience 的錄音室從 1975 年耶誕節前一路錄到隔年春天——出來的是一張把迪斯可節拍架在次中音薩克斯風底下的唱片，同時爬上爵士榜第 3、靈魂榜第 13、主榜第 46",
+   "九首裡有一首叫〈From Ronnie With Love〉，五分半，放在最後；前面的〈Fever〉不是 Peggy Lee 那首的翻版而是同名的三分半跳舞曲——1976 年，Blue Note 賣得最好的那張唱片，封面上的人二十五歲"
+  ],
+  "sound": "9 軌、約 41 分鐘，全部在洛杉磯 Total Experience Recording Studios 錄。jazzdisco 記四個檔期：1975 年 12 月 18／26／29 日與 1976 年 1 月 26 日，弦樂與和聲的疊加在 1976 年 2–3 月補（Discogs 的盤面說明則把整段期程寫成 1976 年 1–3 月）。主班底是 Ronnie Laws 的次中音／高音薩克斯風與長笛，配 Donald 與 Michael Hepburn 兩兄弟的電鋼琴、Clavinet 與 ARP 合成器、Marlon McClain 吉他、Nathaniel Phillips 電貝斯、Bruce Carter 鼓、Bruce Smith 打擊、Tony Ben 康加；1976 年 1 月那一場整組換人——Bobby Lyle 的電鋼琴與弦樂合成器、Wilton Felder 的貝斯、Steve Gutierrez 的鼓。疊加層是十二把小提琴、四把大提琴與 Augie Johnson 的和聲，Dale Frank 編弦樂。曲目多半是自家的（〈Let's Keep It Together〉〈Captain Midnite〉〈Karmen〉〈From Ronnie With Love〉是 Laws 寫的，〈Night Breeze〉是 Bobby Lyle 的），另翻了 Little Willie John 的〈Fever〉與 Margie Joseph／Arif Mardin 的〈Stay Still (And Let Me Love You)〉。最長的是〈Stay Still〉（7 分 24 秒），最短的是〈Captain Midnite〉（2 分 58 秒）。Wayne Henderson 製作、F. Byron Clark 錄音、George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Fever",
+   "Night Breeze",
+   "Let's Keep It Together"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1976。** 資料庫四邊（**MB frd 1976-05，本組唯一填到月份的一筆**、jazzdisco 1976、Discogs 美國原壓十一筆與加拿大／新加坡壓全 1976、維基 infobox 1976）一致，**紙本再獨立坐實四路**：Billboard 1976-05-29 p82 的評介欄、**1976-06-12 p42 的爵士榜新進第 22 名**（→06-26 第 5、07-10 第 4、09-11 **第 3**）、同期的 Soul LPs 與 Top LP's & Tape 新進、**1976-07-24 p105 的整版「July as Blue Note Month」廣告把 `BN-LA628-G` 排在目錄號列第一個**（第 612 條）。**定 1976 年 5 月，與 MB 的 1976-05 完全吻合。**⚠ **錄音年跨年**：jazzdisco 記 **1975 年 12 月 18／26／29 日**起算、1976 年 1 月 26 日收尾、2–3 月疊加；**維基寫 1975 年 12 月 26／29 日、1976 年 1 月 16 日與 2–3 月**；**Discogs 盤面只寫「1976 年 1、2、3 月」**——**三說並存，正文寫「1975 年底到 1976 年初」最安全，不得寫死單一日期。**⚠ **jazzdisco 把目錄號印成 `BN-LA628-H`（正確 -G），`catno=BN-LA628-H` 反查 Discogs 回 0 筆**（第 509c 條）。",
+  "notes": "**vault 盤？否**——1975 年底至 1976 年初錄、1976 年 5 月發。｜⚠ **製作人維基寫錯**：維基 infobox 的 producer 欄寫 George Butler，**Discogs 美國原壓盤面是 Wayne Henderson＝Producer、George Butler＝Executive-Producer**——**以盤面為準，正文寫 Wayne Henderson（The Crusaders 的長號手）製作。**｜**封面美術是 Ria Lewerke（Art Direction）＋Bob Cato（Design）＋Doug Metzler（Photography）**——⚠ **Bob Cato 同時是本組《Hipnosis》美國 2LP（BN-LA483-J2）的封套設計者**，Metzler 另做本組《Just a Matter of Time》。｜⚠ **本層推翻第 791 條對本張的舉例**：第 791 條寫「《Fever》…爵士榜沒進」，**實測是爵士榜最高第 3 名、在榜十四週以上，是本組爵士榜名次最高的一張**；正確的三榜形狀是 **爵士 3／Soul LPs 13／Top LP's & Tape 約 46**。**第 791 條「1977 年起查榜一律 Soul 先、Jazz 次、主榜也要看」的查法本身仍然成立，只是那個實例要換掉。**｜⚠ **借將**：Hepburn 兄弟等七人是 Fantasy 的人、Wilton Felder 是 ABC／Blue Thumb 的人，盤面有正式 courtesy 聲明。｜⚠ **標題曲不是 Peggy Lee 的名曲改編而已**：作曲欄掛 Eddie Cooley／John Davenport（即 Otis Blackwell），**是 Little Willie John 1956 年那首〈Fever〉的原曲**，正文要寫清楚是翻唱。｜**跨卡互指（第 585 條）**：**池中已有他的《Pressure Sensitive》(1975) 與《Friends and Strangers》(1977)，本張正好夾在中間、維基 chronology 三張連成一線**；⚠ **《Friends and Strangers》的目錄號 BN-LA730-H 與本組《Phantazia》BN-LA736-H、《Finger Paintings》BN-LA737-H 只差幾號、1977 年同時在榜**（Cash Box 1977-08-13 p23 三張同頁），**正文可以寫這個同期關係但不得互抄。**Laws 另在 1976-06-28 的 Roxy「Blue Note Day」演出（該場錄成《Blue Note Live at the Roxy》，不在本批）。｜⚠ **常見誤植**：Laws 最有名的〈Always There〉出自前作《Pressure Sensitive》(1975)，**不在本盤**——正文與代表曲都不得寫進去。｜串流：Apple 723366990，9 軌＝原盤形，逐軌相符（**串流採信 723366990**）。｜CAA 封面 RG 層 200 ✓。"
+ },
+ {
+  "key": "desc2:Robby Krieger|Robby Krieger & Friends",
+  "artist": "Robby Krieger",
+  "album": "Robby Krieger & Friends",
+  "facts": [
+   {
+    "f": "release-group 59cc3373 的欄位：title「Robby Krieger & Friends」、artist-credit 單一 Person `Robby Krieger`（b553f0ad，**disambiguation 就寫「American guitarist, member of The Doors」**）、first-release-date 1977、primary-type Album、secondary-types 空，轄下兩筆。**原盤 6fd992b7 是 1977 US Official Blue Note BN-LA664-H、12 吋 8 軌，軌長全數有填**：〈Gumpopper〉217 秒、〈Uptown〉234、〈Every Day〉304、〈Marilyn Monroe〉295、〈The Ally〉388、〈Low Bottomy〉178、〈Spare Change〉218、〈Big Oak Basin〉295——**合計約 35 分 25 秒，是本組最短的一張**。另一筆是 1991-05-07 Capitol Records CD（aede5100，8 軌，無國別無 catno）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=59cc3373-7a0b-4a6d-939f-c71de071805c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA664-H** 條下把本盤拆成**五天、每天換一組人**，全在 **Devonshire Sound Studios, North Hollywood**，而且**全部錄在 1976 年 7 月 26–30 日**（⚠ **錄音在 1976、發行在 1977，跨年**）：**7 月 26 日**（17700〈Spare Changes〉、17701〈The Ally〉——Gary Barone 與 Sal Marquez 小號、Jack Ellis 長號、Joel Peskin 薩克斯風、**Stu Goldberg 風琴與合成器**、Kenny Wild 貝斯、Bruce Gary 鼓、Perico 康加、Eddie Talamante 定音鼓）、**7 月 27 日**（17702〈Uptown〉，加 Sharon Robinson 與 Afreeka Trees 人聲）、**7 月 28 日**（17704〈Every Day〉，Reggie McBride 貝斯、Ed Greene 鼓）、**同日的 17705〈Low Bottomy (Lobotomy)〉**（純合成器編制）、**7 月 29 日**（17706〈Gum-Popper〉與 **17707〈Marilyn Monroe〉——這一軌 Jimmy Smith 彈風琴、John Densmore 打拉丁打擊**）、**7 月 30 日**（17708〈Big Oak Basin〉）。⚠ **jazzdisco 把藝名拼成 `Robbie Krieger`、曲名寫成〈Spare Changes〉與〈Gum-Popper〉**，盤面是 **Robby Krieger** 與〈Spare Change〉〈Gumpopper〉——**照盤面與卡單。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 8598841（1977 US BN-LA664-H，4 圖，**artists_sort 是 Robby Krieger、盤面印 Robbie Krieger**）名單：**製作欄只有 Robby Krieger 自己**（Cash Box 的評介欄也寫「Producer: Robby Krieger」，**本組唯一一張沒有外聘製作人、也沒有 George Butler 掛執行製作的**）；美術是 **Ria Lewerke＝Art Direction、Bill Burks＝Design、Jim Evans＝Illustration**——⚠ **維基內文寫「He also designed the album cover art」（Krieger 自己畫封面），與 Discogs 的三人美術欄打架，正文不要寫死。**樂手欄證實 jazzdisco 的五天編制，並補上 **Jimmy Smith＝Organ**（只在〈Marilyn Monroe〉）與 **John Densmore＝Drums [Reggae Drum]**（同一軌）——⚠ **Densmore 是 The Doors 的鼓手，兩位前 Doors 成員在這一軌重聚，是本張最好寫的一個點，但只有這一軌。**notes 的錄音地是「Devonshire Sound Studios, North Hollywood, CA **and Studio 55, Los Angeles, CA**」（**兩間，jazzdisco 只寫一間**）。",
+    "src": "https://api.discogs.com/releases/8598841"
+   },
+   {
+    "f": "**同期紙本落在 1977 年 6 月，Cash Box 側的軌跡完整**：**Cash Box 1977-06-04 p23 的評介欄**「**ROBBY KRIEGER & FRIENDS - Robby Krieger - Blue Note/UA BN-LA664-H - Producer: Robby Krieger - List: 7.98. The same Robby Krieger that played such a stellar guitar for the Doors is in the forefront of a very hot little jazz/rock combo which makes up for t[he]…**」；**Cash Box 的 Top 40 Jazz Albums**：1977-07-30 p20 **新進榜第 35 名** → 08-06 p21 第 33 → 08-13 p23 第 29 → **08-20 p27 第 25** → 08-27 p26 第 23 → 09-03 p21 第 22 → **09-10 p22 第 20（最高）** → 09-17 p16 第 20 → 10-01 p20 第 25 → 10-08 p42 第 32，**在榜十一週以上**。⚠ **Cash Box 從 1977-09-03 起把名字印成「BOBBY KRIEGER」**（09-10、09-17、10-01、10-08 續錯），**而目錄號在整段裡一直被 OCR 成「BNLA 66414」（＝BN-LA664-H 的 -H 被讀成 4）**——第 509c 條，**檢索要放寬。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1977/CB-1977-06-04.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的三榜查法）與 Billboard 側的空白**：本層對 repo 內兩刊 1977–79 共 310 期命中頁查 `LA\\s*-?\\s*664`（含 OCR 變體 66414）與「Krieger」兩組字串——**Cash Box 的爵士榜有完整十一週軌跡（最高第 20），但 Billboard 側的 Best Selling Jazz LPs、Soul LPs 與 Top LP's & Tape 三榜全部零命中，Cash Box 的 R&B LP 榜也零**。⚠ **這是本組唯一一張「只在 Cash Box 上榜、Billboard 完全沒有」的**——**兩刊的爵士榜取樣店家不同，第 58x 條的榜位證據要註明是哪一刊，不能只寫「上過爵士榜」。**另 Billboard 1977-12-24 p63 的 United Artists／Blue Note 年度祝賀整版廣告列了 Donald Byrd、Bobbi Humphrey、Earl Klugh、Ronnie Laws、Noel Pointer 等人，**沒有 Krieger**——**他在廠牌內部的位置就是這樣。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1977/CB-1977-09-10.pdf"
+   },
+   {
+    "f": "英文維基 `Robbie Krieger & Friends` infobox：released 1977、**studio「Devonshire Sound Studios, North Hollywood; Studio 55, Los Angeles」**、genre **Jazz rock**、label Blue Note、**producer Robby Krieger**；內文寫「the **first solo studio album** by Robby Krieger, former guitarist for The Doors」，引 Hartford Courant 1977-06-05 的報導；chronology **prev 欄空白（這是第一張）** → next《Versions》(1982)。維基的逐軌樂手表把 Jimmy Smith 的風琴與 John Densmore 的鼓都標在第 4 軌〈Marilyn Monroe〉，與 Discogs 一致。店面（第 254 條，三種查法全跑）：(1) `search「robby krieger friends」` 回 2 筆，**都不是本張**；(2) `search「robbie krieger」` 回 36 筆，**沒有本張**——⚠ **其中 1712779430《Robby Krieger & the Soul Savages》的 releaseDate 被 Apple 標成 `1977-01-01`，那是 2024 年的新專輯、與本張無關，第 484／528 條的典型陷阱，絕不可採**；(3) **藝人目錄 `lookup?id=3846780&entity=album` 共 30 筆逐筆看過，沒有本張**。→ **Apple us 查無，串流查無。**CAA：RG 層 HTTP 200，來源就是 1977 美國原壓 6fd992b7 ✓。",
+    "src": "https://en.wikipedia.org/wiki/Robbie_Krieger_%26_Friends"
+   }
+  ],
+  "hookCandidates": [
+   "The Doors 解散六年後，吉他手自己跑去 Blue Note 開了一張唱片：八首器樂放克與爵士搖滾，自己製作、自己畫封面，其中一首〈Marilyn Monroe〉找來 Jimmy Smith 彈漢蒙風琴、John Densmore 打拍子——那是兩位 Doors 成員在唱片上的重聚",
+   "1976 年七月的五個下午，北好萊塢 Devonshire：每天換一組人，第一天是銅管加合成器，第二天加和聲，第三天全部拆掉只剩合成器。1977 年六月上市，只在 Cash Box 的爵士榜待了十一週，Billboard 三張榜一次都沒進"
+  ],
+  "sound": "8 軌、約 35 分半，是本組最短的一張。全部錄於 1976 年 7 月 26–30 日的北好萊塢 Devonshire Sound Studios（Discogs 另記洛杉磯 Studio 55），五天五組編制。固定的只有 Robby Krieger 的吉他；銅管是 Gary Barone 與 Sal Marquez 的小號、Jock Ellis 的長號、Joel Peskin 的薩克斯風與短笛，鍵盤輪流是 Stu Goldberg、Greg Mathieson、Ron Stockert 與 Sal Marquez 的合成器，貝斯輪流是 Kenny Wild、Reggie McBride 與 Bob Glaub，鼓輪流是 Bruce Gary 與 Ed Greene，打擊是 Perico 與 Eddie Talamantes。〈Marilyn Monroe〉一軌另外請來 Jimmy Smith 的漢蒙風琴與 The Doors 舊同事 John Densmore 的雷鬼鼓點；〈Low Bottomy〉則整軌只有合成器。人聲三軌（Sharon Robinson、Afreeka Trees、Krieger 自己）。最長的是〈The Ally〉（6 分 28 秒），最短的是〈Low Bottomy〉（2 分 58 秒）。Krieger 自己製作——本組唯一一張沒有外聘製作人、也沒有 George Butler 掛執行製作的。串流側查無。",
+  "keyTracks": [
+   "Marilyn Monroe",
+   "The Ally",
+   "Gumpopper"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1977。** 資料庫四邊（MB frd 1977、jazzdisco BN-LA664-H＝1977、Discogs 美國原壓三筆全 1977、維基 infobox 1977）一致，**紙本再獨立坐實兩路**：**Cash Box 1977-06-04 p23 的評介欄**（連製作人與定價都印出來）與 **Cash Box Top 40 Jazz Albums 1977-07-30 p20 的新進榜第 35 名**（→08-20 第 25、**09-10 第 20 最高**、10-08 第 32，在榜十一週以上）。**定 1977 年 6 月。**⚠ **錄音年與發行年不同年**：**全部錄在 1976 年 7 月 26–30 日，1977 年 6 月才上市，隔了將近一年**——**正文寫「1976 年夏天錄、1977 年才發」是必要的，不得寫成「1977 年錄」。**⚠ **Billboard 側三榜零命中**（見 facts 第 5 條），**年份與榜位證據全部來自 Cash Box 一刊，第 58x 條的榜位敘述要註明刊別。**⚠ **OCR 把目錄號讀成「BNLA 66414」（-H→4）、從 1977-09-03 起把名字印成「BOBBY KRIEGER」**（第 509c 條），檢索要放寬。",
+  "notes": "**vault 盤？否，但錄發隔了將近一年**——1976 年 7 月錄、1977 年 6 月發。｜**Krieger 自己製作，本組唯一沒有 George Butler 掛執行製作的一張**——**這張在 Blue Note 目錄裡是外來品：Billboard 1977-12-24 p63 的 UA／Blue Note 年度整版廣告列了 Byrd、Humphrey、Klugh、Laws、Pointer 等人，沒有他。**｜⚠ **封面作者兩說**：維基內文寫「He also designed the album cover art」（Krieger 自己畫），**Discogs 美國原壓卻掛 Ria Lewerke＝Art Direction、Bill Burks＝Design、Jim Evans＝Illustration**——**正文不得寫死是誰畫的。**｜⚠ **掛名拼法三種**：MB 與卡單是 `Robby Krieger`，**Discogs 盤面與 jazzdisco 都印 `Robbie Krieger`**，**Cash Box 從 1977-09-03 起印成 `Bobby Krieger`**——**卡單與正文一律用 Robby Krieger（與 MB Person b553f0ad 一致）。**｜⚠ **曲名兩處**：jazzdisco 作〈Spare Changes〉〈Gum-Popper〉，盤面是〈Spare Change〉〈Gumpopper〉——**照盤面。**｜⚠ **Doors 重聚只有一軌**：Jimmy Smith 的風琴與 John Densmore 的鼓**都只在〈Marilyn Monroe〉**，**正文不得寫成整張都有。**｜**本張是「缺試聽五張」之一：Apple us 三種查法（`search` 兩式＋藝人目錄 30 筆逐筆）全部查無，明寫查無。**⚠ **第 528／707／709 條的陷阱在此最明顯**：`search「robbie krieger」` 回的 36 筆裡，**1712779430《Robby Krieger & the Soul Savages》被 Apple 標成 releaseDate 1977-01-01**（實際是 2024 年的新專輯），**任何候選檔若把它當成本張都是錯的，絕不可採。**｜**跨卡互指（第 585 條）**：池中有 The Doors 七張（《The Doors》《Strange Days》《Waiting for the Sun》《Morrison Hotel》《L.A. Woman》《Other Voices》《The Celebration of the Lizard》），**《Other Voices》(1971) 是 Morrison 死後 Krieger 與 Densmore、Manzarek 三人繼續做的那張**——**本張與那張的關係是「同一位吉他手、六年後、換成器樂爵士放克」，可以互指但編制毫無重疊。**｜**榜位（第 791 條）**：**只上 Cash Box 爵士榜（最高 20），Billboard 三榜與 Cash Box R&B 榜全零。**｜CAA 封面 RG 層 200 ✓，來源就是美國原壓 6fd992b7。"
+ },
+ {
+  "key": "desc2:Bobby Hutcherson|The View From the Inside",
+  "artist": "Bobby Hutcherson",
+  "album": "The View From the Inside",
+  "facts": [
+   {
+    "f": "release-group 1b458e2b 的欄位：title「The View From the Inside」、artist-credit 單一 Person `Bobby Hutcherson`（edbe5d7f）、first-release-date 1977、primary-type Album、secondary-types 空，轄下兩筆。**原盤 7a638d9b 是 1977 US Official Blue Note BN-LA710-G、12 吋 7 軌，軌長全數有填**：〈Later, Even〉228 秒、〈Houston St., Thursday Afternoon〉383、〈Same Shame〉617、〈Love Can Be Many Things〉287、〈Song for Annie〉385、〈Laugh, Laugh Again〉255、〈For Heaven's Sake〉392——**合計約 42 分 27 秒，與維基 infobox 的 42:52 相近**。另一筆是 2021-10-20 JP Blue Note TOCJ-50580／UCCU-8135（d9364380，CD 7 軌，barcode 4988031450499）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1b458e2b-0910-4f52-a2dc-3a57b5ad03a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA710-G** 條下（⚠ **標題印成「The View From Inside」，少一個 the**）記三天，全在 **Wally Heider Recording, San Francisco**，而且**全部在 1976 年 8 月**：**8 月 4 日**（母帶 17769〈For Heaven's Sake〉）、**8 月 5 日**（17766〈Love Can Be Many Things〉、17767〈Same Shame〉、17768〈Later, Even〉）、**8 月 6 日**（17770〈Laugh, Laugh Again〉、17771〈Song For Annie〉、17772〈Houston St. Thursday Afternoon〉）。編制五人、三天不變：**Emanuel Boyd（次中音／高音薩克斯風）、Bobby Hutcherson（顫音琴，⚠ 本張沒有馬林巴）、Larry Nash（鋼琴與電鋼琴）、James Leary III（貝斯）、Eddie Marshall（鼓）**——⚠ **與半年前的《Waiting》相比，鍵盤從 George Cables 換成 Larry Nash、打擊手 Kenneth Nash 整個拿掉**，**兩張不是同一個團，正文不得互抄。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 369215（1977 US BN-LA710-G，5 圖）名單：**Dale Oehler＝Producer、George Butler＝Executive-Producer、Norm Kinney＝Recorded By、Hank Cicalo＝Mixed By、Bernie Grundman＝Mastered By、Todd Barkan＝Management**（⚠ **Barkan 是舊金山 Keystone Korner 的老闆，Hutcherson 這條舊金山線的推手**）；美術是 **Ria Lewerke＝Art Direction、Charley Brown＝Illustration、Albert Watson＝Photography**。notes 的錄音日期「**Recorded at Wally Heider Studios, San Francisco, California on August 4, 5 and 6, 1976**」與 jazzdisco、維基三方完全一致。編曲欄是本張的重點：**Bobby Hutcherson、James Leary 與 Manny Boyd 三人分頭編曲**；作曲欄——Hutcherson 自己寫三首（〈Later, Even〉〈Houston St., Thursday Afternoon〉〈Same Shame〉）、**James Leary 寫兩首**（〈Love Can Be Many Things〉〈Laugh, Laugh Again〉）、**Manny Boyd 寫一首**（〈Song for Annie〉），只有壓軸的〈For Heaven's Sake〉是標準曲（Meyer／Bretton／Edwards）。",
+    "src": "https://api.discogs.com/releases/369215"
+   },
+   {
+    "f": "⚠ **紙本完全查無，且這次不是正則太緊（第 704 條家族）**：repo 內 `billboard-bn-1977-1979-ocr.txt`（153 期）與 `cashbox-bn-1977-1979-ocr.txt`（157 期）的關鍵字集**本來就包含 `BN-LA710` 這個目錄號與「The View From The Inside」這個盤名**（見 `batch-progress/enum/SOURCES-billboard-cashbox.md` 的 c-144 b 掃檔說明），本層再用 `LA\\s*-?\\s*710`、`View From (The )?Inside`、`Hutcherson` 三組寬鬆正則各查一遍——**目錄號回 1 筆（1979-07-07 p78 的音樂出版商名錄，`Springhill La 71075` 的假陽性）、盤名回 0 筆、Hutcherson 的 45 筆命中裡只有《Knucklebean》**。→ **本張在 1977–79 的兩刊裡零評介、零廣告、零榜位、零價目表。**⚠ **第 702 條的形狀要守住：這是「沒有紙本」，不是「紙本推翻了資料庫」**——四邊資料庫（MB／jazzdisco／Discogs／維基）本來就一致。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-09-24.pdf"
+   },
+   {
+    "f": "**同期的相對定位（沒有紙本時的替代坐標）**：同一位主角、同一組節奏組的《Knucklebean》（BN-LA789-H）**在 Billboard 1977-09-24 p92 有評介、1977-10-15 p152 有爵士價目表**，而本張（BN-LA710-G，號在前 79 號）**兩刊全無**——⚠ **BN-LA 號序不代表發行序（第 663／753 條），但「號在前、紙本卻只有後者」這個組合仍然值得寫進 notes：本張多半是 1977 年上半年低調上市的貨，而《Knucklebean》才是當年秋天被推的那一張。**另 Carmen McRae 的《At the Great American Music Hall》是 **BN-LA709-J2**、正好是本張的前一號（jazzdisco 該條在 BN-LA710-G 之前），**兩張連號、內容毫無關係，檢索時別混。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-10-15.pdf"
+   },
+   {
+    "f": "英文維基 `The View from the Inside` infobox：released「1977；2013 (CD in Japan)」、**recorded「August 4–6, 1976」**、length 42:52、label Blue Note BN LA 710／TOCJ-50580、**producer Dale Oehler**；內文寫「The session has been released on CD in 2007 as part of ***Mosaic Select: Bobby Hutcherson***」（**與《Waiting》同一套 Mosaic Select**）；chronology prev《Waiting》(1976) → next《Knucklebean》(1977)——**三張都在本組。AllMusic 由 Scott Yanow 評 3 星**，原文「**Some of the vibist's later Blue Note albums are forgettable but this LP... has some excellent hard bop music. The material is generally melodic but has some fine solos**」，《Rolling Stone Jazz Record Guide》同樣 3 星。店面（第 254 條）：Apple us 命中 **1444219538**，**7 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤相符（231／387／623／289／389／259／396 秒），**releaseDate 1977-11-01（本組少數不是年頭佔位的一筆）**→ **串流採信 1444219538**。CAA：RG 層 HTTP 200，來源就是 1977 美國原壓 7a638d9b ✓。",
+    "src": "https://en.wikipedia.org/wiki/The_View_from_the_Inside"
+   }
+  ],
+  "hookCandidates": [
+   "同一組舊金山節奏組，半年前錄過《Waiting》：這次鍵盤換成 Larry Nash、打擊手整個拿掉，只剩五個人——中間那首〈Same Shame〉十分二十二秒，是他 Blue Note 後期最長的一次獨奏",
+   "三個人分頭編曲：Hutcherson 自己三首、貝斯手 James Leary 兩首、薩克斯風手 Manny Boyd 一首，最後留一首老歌〈For Heaven's Sake〉收尾。Scott Yanow 說他後期的 Blue Note 多半可以忘掉，但這張不行"
+  ],
+  "sound": "7 軌、約 42 分半，1976 年 8 月 4／5／6 三天在舊金山 Wally Heider Recording 錄完。五重奏三天不變：Bobby Hutcherson 的顫音琴（本張沒有馬林巴）、Emanuel「Manny」Boyd 的次中音與高音薩克斯風、Larry Nash 的鋼琴與電鋼琴、James Leary III 的貝斯、Eddie Marshall 的鼓。編曲由三人分攤——Hutcherson、Leary 與 Boyd 各編各的；作曲也一樣：Hutcherson 三首（〈Later, Even〉〈Houston St., Thursday Afternoon〉〈Same Shame〉）、Leary 兩首（〈Love Can Be Many Things〉〈Laugh, Laugh Again〉）、Boyd 一首（〈Song for Annie〉），壓軸的〈For Heaven's Sake〉是 1946 年的標準曲。最長的是〈Same Shame〉（10 分 22 秒，全盤唯一一首超過十分鐘的），最短的是開場的〈Later, Even〉（3 分 51 秒）。Dale Oehler 製作、Norm Kinney 錄音、Hank Cicalo 混音、Bernie Grundman 母帶，經紀是 Keystone Korner 的 Todd Barkan，George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Same Shame",
+   "Houston St., Thursday Afternoon",
+   "For Heaven's Sake"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1977。** 資料庫四邊（MB frd 1977、jazzdisco BN-LA710-G＝1977、Discogs 美國原壓三筆全 1977、維基 infobox 1977）一致，**但本張沒有任何同期紙本**。⚠ **第 702 條的形狀要守住**：本層用 `LA\\s*-?\\s*710`、`View From (The )?Inside`、`Hutcherson` 三組寬鬆正則把 repo 內 1977–79 共 310 期的命中頁各查一遍，**評介欄、廠牌廣告、榜位、價目表全部零命中**（唯一的目錄號命中是 1979-07-07 p78 的出版商名錄假陽性）；**而那份 OCR 檔的關鍵字集本來就含 `BN-LA710` 與本盤盤名**（見 SOURCES 檔的 c-144 b 說明），**所以這是「紙本沒有」不是「正則太緊」，也不是「紙本推翻了資料庫」。**⚠ **錄音年與發行年不同年**：**全部錄在 1976 年 8 月 4–6 日，1977 年才上市**——**正文必須寫兩個年份，不得寫成「1977 年錄」。**⚠ **Apple 的 releaseDate 標 1977-11-01**（本組少數不是年頭佔位的），**但沒有紙本可以佐證這個月份，不得當成上市月份寫進正文**（第 484 條）。",
+  "notes": "**vault 盤？否，但錄發跨年**——1976 年 8 月錄、1977 年發。｜**製作是 Dale Oehler、George Butler 只掛執行製作**；錄音 Norm Kinney、混音 Hank Cicalo、母帶 Bernie Grundman；**經紀掛 Todd Barkan（舊金山 Keystone Korner 的老闆）**——**Hutcherson 這條舊金山線的推手，可以寫進正文的背景。**｜**封面美術是 Ria Lewerke（Art Direction）＋Charley Brown（Illustration）＋Albert Watson（Photography）**——**本組唯一一張掛 Illustration 與 Albert Watson 的。**｜⚠ **盤名兩種**：jazzdisco 印「The View From **Inside**」（少一個 the），MB／Discogs／維基／卡單都是「The View From **the** Inside」——**照卡單。**｜⚠ **與《Waiting》不是同一個團**：兩張共用 Emanuel Boyd／James Leary／Eddie Marshall，**但鍵盤從 George Cables 換成 Larry Nash、Kenneth Nash 的打擊整個拿掉、本張 Hutcherson 也沒碰馬林巴**——**正文不得互抄編制。**｜⚠ **號序陷阱（第 663／753 條）**：本張是 BN-LA710-G、《Knucklebean》是 BN-LA789-H，**號在前的本張兩刊全無紙本，號在後的《Knucklebean》卻有 1977-09-24 的評介與 10-15 的價目表**——**以檔期定年、不以號段定年；但本張連檔期文件都沒有，年份只能靠四邊資料庫的一致。**另 **Carmen McRae《At the Great American Music Hall》是連號的 BN-LA709-J2**，別混。｜**跨卡互指（第 585 條）**：池中已有《Montara》(1975)，c-144 a 有《Cirrus》《Linger Lane》，c-143 b 有《Live at Montreux》，本組另有《Waiting》(1976)《Knucklebean》(1977)——**維基 chronology 把《Waiting》→本張→《Knucklebean》排成三連，三張都在本組，寫作層要寫得出差別。**本張與《Waiting》的錄音同樣在 2007 年一起收進《Mosaic Select: Bobby Hutcherson》。｜**榜位（第 791 條）**：**兩刊四榜全部零命中。**｜串流：Apple 1444219538，7 軌＝原盤形，逐軌相符（**串流採信 1444219538**）。｜CAA 封面 RG 層 200 ✓，來源就是美國原壓 7a638d9b。"
+ },
+ {
+  "key": "desc2:Willie Bobo|Tomorrow Is Here",
+  "artist": "Willie Bobo",
+  "album": "Tomorrow Is Here",
+  "facts": [
+   {
+    "f": "release-group 0ae57848 的欄位：title「Tomorrow Is Here」、artist-credit 單一 Person `Willie Bobo`（dadec058）、first-release-date 1977、primary-type Album、secondary-types 空，轄下兩筆。**原盤 870f8eda 是 1977 US Official Blue Note BN-LA711-G、12 吋 9 軌，軌長全數有填**：〈Suitcase Full of Dreams〉228 秒、〈Funk de Mambo〉197、〈Keep on Walking〉268、〈Dreamin'〉308、〈Wacky Tobacky (The Race)〉178、〈Can't Stay Down Too Long〉209、〈Time After Time〉196、〈Kojak-Theme〉213、〈A Little Tear〉293——**合計約 34 分 52 秒，與維基 infobox 的 34:50 對得起來；九軌沒有一首超過五分半，是本組單軌最短的一張**。另一筆是 2012-11-21 JP Blue Note TOCJ-50518（23c4ae0f，CD 9 軌，**label-info 同時掛 BN-LA711-G 與 TOCJ-50518**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0ae57848-52d3-4798-a49e-c9568a0e6cac&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA711-G** 條下把整張登成**一個連續檔期**：**Ocean Way Recording, Los Angeles, 1976 年 10 月 – 1977 年 1 月**，母帶 18166–18174 連號九軌（⚠ **母帶順序與盤面曲序不同**：18166〈Can't Stay Down Too Long〉在最前、18171〈Suitcase Full Of Dreams〉才是盤面的第一軌）。編制是洛杉磯棚內大隊：**Gary Grant／Ron King／Nolan Smith 小號、George Bohanon 與 Thurman Green 長號、Ray Pizzi 與 Ernie Watts 薩克斯風、Gary Herbig 木管、Reggie Andrews／Larry Farrow／David Garfield 鍵盤、Dennis Budimir／John Cadrecha／Craig McMullen／Sidney Muldrow／Curtis Robertson Jr. 五把吉他、Dean Cortez／Jim Hughart／David Troncoso 貝斯、Gary Denton／James Gadson／Jeff Porcaro／Carlos Vega 四位鼓手、Victor Pantoja 打擊、Sandi Erwin 與 Benard Ighner 人聲、Willie Bobo 自己唱與打**。⚠ **jazzdisco 把〈Keep On Walking〉打成〈Keep On Waling〉、〈Wacky Tobacky〉打成〈Wicky Tobacky〉**——**照盤面。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 1252272（1977 US BN-LA711-G，6 圖）名單：**Willie Bobo 與 Stan Silverberg＝Producer、George Butler＝Executive-Producer**（⚠ **Bobo 自己掛共同製作，本組少數由主角自製的一張**）、**Larry Farrow／Reggie Andrews／Willie Bobo＝Arranged By**（Bobo 另掛 Special Rhythm Arrangements）、Allen Sides＝Engineer（基本音軌／弦樂／管樂）兼 Mixed By、**Hank Sanicola＝Engineer [Latin Percussion & Vocal O.D.]**（**拉丁打擊與人聲疊錄另請一位錄音師**）、Stan Silverberg 與 Willie Bobo＝Liner Notes；美術是 **Ria Lewerke＝Art Direction、Bill Burks＝Design、Gary Regester＝Photography**。作曲欄證實九軌全是外來曲或團員寫的：**〈Keep On Walking〉是 Gino Vannelli 的、〈Dreamin'〉是 Bernard Ighner 的、〈Wacky Tobacky (The Race)〉掛 Bill Cosby／Larry Farrow／Stu Gardner、〈Time After Time〉是 Jule Styne 與 Sammy Cahn 的老歌、〈Kojak-Theme〉是 Billy Goldenberg 的電視主題曲、〈A Little Tear〉是 Eumir Deodato 與 Ray Gilbert 的**——**Bobo 自己一首都沒寫。**",
+    "src": "https://api.discogs.com/releases/1252272"
+   },
+   {
+    "f": "**同期紙本只有一條，但年份釘得住**：**Billboard 1977-03-12 p118 的評介欄**「**WILLIE BOBO - Tomorrow Is Here, Blue Note BNLA711G (UA). The Latin percussionist [has] some nice soft notes on his vocal endeavors which are a main feature of this debut LP for Blue Note. But the key commercial cut is the ersatz funky 『Funk [de Mambo]』…**」——⚠ **該則寫「debut LP for Blue Note」是對的（Bobo 此前在 Roulette、Verve、Sussex、Columbia），但 Bobo 本人 1977 年已經出過十幾張唱片，正文不得寫成「出道作」。**本層另用 `LA\\s*-?\\s*711`、「Tomorrow Is Here」、「Willie Bobo」三組正則把 1977–79 共 310 期的命中頁查完——**除了這一則評介，其餘命中全是假陽性**（1978-04-08 p92 的 Crystal Gayle《We Must Believe In Magic》是 **United Artists UALA711-G**、與本盤同號不同前綴，1979-01-27 p144 同一張；1978-03-04／1979-07-07／07-28 是 `Shreveport, LA 71101` 這類地址）。⚠ **`UA-LA711-G` 與 `BN-LA711-G` 同號不同廠牌，是本段最典型的目錄號撞號，檢索一定要連前綴比對。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-03-12.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的三榜查法）**：**Billboard 的 Best Selling Jazz LPs／Soul LPs／Top LP's & Tape 三榜、與 Cash Box 的爵士榜與 R&B LP 榜，全部零命中**——**本張只有一則評介欄，一榜未進、也沒有任何廠牌檔期廣告。**⚠ **這是第 791 條的另一個邊界**：1977 年的 Blue Note 確實把主戰場搬到 R&B 榜（《Fever》《Phantazia》《Finger Paintings》《Tone Tantrum》都在那裡），**但本張這種拉丁放克盤連 R&B 榜都沒進去**——**正文不得寫成暢銷，可以寫它是 Bobo 在 Blue Note 唯一的一張、也是他把拉丁節奏交給洛杉磯錄音室 R&B 編制的一次嘗試。**另 Billboard 1977-12-24 p63 的 UA／Blue Note 年度整版祝賀廣告列了 Byrd、Humphrey、Klugh、Laws、Pointer 等人，**沒有 Bobo。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-12-24.pdf"
+   },
+   {
+    "f": "英文維基 `Tomorrow Is Here` infobox：released 1977、**recorded「October 1976–January 1977」（與 jazzdisco 完全一致）**、length 34:50、label Blue Note、**producer 欄空白**（⚠ **維基沒填製作人，以 Discogs 盤面的 Willie Bobo＋Stan Silverberg 為準**）。**AllMusic 由 Richard S. Ginell 評**，原文「***Tomorrow Is Here* has a pronounced '70s R&B/funk feel, with synthesizers, envelope followers, electric pianos, guitars and occasional strings interwoven with Bobo's steady Latin congas, timbales and self-effacing vocals. But there are a few gems to be found here**」——**評語中性偏保留，正文不得寫成傑作。**店面（第 254 條）：Apple us 命中 **1444378678**，**9 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤相符（232／199／270／312／181／212／198／216／294 秒），**releaseDate 1977-10-06（比紙本的 1977 年 3 月評介晚半年，第 484 條，不得當上市日）**→ **串流採信 1444378678**。",
+    "src": "https://en.wikipedia.org/wiki/Tomorrow_Is_Here"
+   }
+  ],
+  "hookCandidates": [
+   "他在 Blue Note 只錄過這一張：1976 年十月到 1977 年一月，洛杉磯 Ocean Way，四位鼓手、五把吉他、三台鍵盤輪番上陣，把他的康加與定音鼓塞進一支 R&B 編制裡",
+   "九首歌三十五分鐘，沒有一首超過五分半——而且九首全是別人寫的：Gino Vannelli 的、Deodato 的、Jule Styne 的老歌，還有一首直接叫〈Kojak-Theme〉"
+  ],
+  "sound": "9 軌、約 34 分 50 秒，1976 年 10 月到 1977 年 1 月在洛杉磯 Ocean Way Recording 陸續錄完，母帶 18166–18174 連號。編制是洛杉磯棚內大隊而不是拉丁樂團：Gary Grant／Ron King／Nolan Smith 的小號、George Bohanon 與 Thurman Green 的長號、Ray Pizzi 與 Ernie Watts 的薩克斯風、Gary Herbig 的木管、Reggie Andrews／Larry Farrow／David Garfield 的鍵盤、Dennis Budimir 等五把吉他、三位貝斯手、四位鼓手（其中有 Jeff Porcaro 與 James Gadson）、Victor Pantoja 的打擊，Willie Bobo 自己唱歌兼打康加與定音鼓，Sandi Erwin 與 Benard Ighner 唱和聲。編曲是 Larry Farrow 與 Reggie Andrews，Bobo 只負責節奏編排。九首全是外來曲——Gino Vannelli 的〈Keep on Walking〉、Bernard Ighner 的〈Dreamin'〉、Jule Styne 與 Sammy Cahn 的〈Time After Time〉、Billy Goldenberg 的〈Kojak-Theme〉、Eumir Deodato 與 Ray Gilbert 的〈A Little Tear〉，還有一首掛 Bill Cosby 名字的〈Wacky Tobacky (The Race)〉。最長的是〈Dreamin'〉（5 分 8 秒），最短的是〈Wacky Tobacky〉（2 分 58 秒）。Willie Bobo 與 Stan Silverberg 製作、Allen Sides 錄音與混音、Hank Sanicola 另錄拉丁打擊與人聲疊軌，George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Funk de Mambo",
+   "Dreamin'",
+   "Kojak-Theme"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1977。** 資料庫四邊（MB frd 1977、jazzdisco BN-LA711-G＝1977、Discogs 美國原壓三筆全 1977、維基 infobox 1977）一致，**紙本再獨立坐實一條**：**Billboard 1977-03-12 p118 的評介欄**（明列目錄號 BNLA711G，並點出主打是〈Funk de Mambo〉）。**定 1977 年 3 月前後。**⚠ **錄音跨年**：**1976 年 10 月起錄、1977 年 1 月收尾、同年 3 月評介**（jazzdisco 與維基兩方一致寫 October 1976–January 1977），**正文寫「1976 年秋錄到 1977 年初」是必要的。**⚠ **三榜全部零命中**（Billboard 三榜＋Cash Box 兩榜），**年份只靠一則評介欄＋四邊資料庫，沒有廠牌檔期廣告**——**第 612 條的證據層級是本組最低的幾張之一，但方向一致、沒有反證。**⚠ **目錄號撞號**：Crystal Gayle 的《We Must Believe In Magic》是 **United Artists `UA-LA711-G`**，與本盤的 `BN-LA711-G` 同號不同前綴，**1978-04-08 p92 與 1979-01-27 p144 的命中都是她不是本張**——**檢索一定要連前綴比對（第 509c 條家族）。**",
+  "notes": "**vault 盤？否**——1976 年 10 月至 1977 年 1 月錄、同年 3 月前後發。｜**製作是 Willie Bobo 自己與 Stan Silverberg，George Butler 只掛執行製作**——⚠ **維基的 producer 欄空白，以 Discogs 盤面為準。**｜**封面美術是 Ria Lewerke（Art Direction）＋Bill Burks（Design）＋Gary Regester（Photography）**——**Burks 與 Regester 在本組另做《Knucklebean》《Silver 'n Percussion》《Chant》。**｜⚠ **本張是「缺封面五張」之一：CAA RG 層 HTTP 404、零圖（`redirect: follow` 重試三次確認）。替代圖來源建議取 Discogs 美國原壓 1252272 的 `images[0].uri`**（6 圖，1977 US BN-LA711-G）：`https://i.discogs.com/vX7HZHWffEWcwC3bvS9236MYzNOdzx740cSmdwH0VrM/rs:fit/g:sm/q:90/h:338/w:336/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTIy/NzItMTIwMzg5NjEy/Ni5qcGVn.jpeg`（⚠ **這一張只有 336×338，解析度偏低**；同號另有 20097199、963700 等美國壓與 2012 日本 CD TOCJ-50518 可換）。｜⚠ **九軌全是外來曲，Bobo 一首都沒寫**——**正文不得寫成「他寫的曲子」。**｜⚠ **「debut LP」只對一半**：Billboard 1977-03-12 的評介寫 debut LP，**指的是他在 Blue Note 的第一張**（他此前在 Roulette／Verve／Sussex／Columbia 已出過十幾張），**正文不得寫成出道作。**｜⚠ **曲名兩處被 jazzdisco 打錯**：〈Keep On **Waling**〉、〈**Wicky** Tobacky〉——照盤面。｜**跨卡互指（第 585 條）**：**Bobo 不在池中、本組也只有這一張**，沒有同藝人互指的問題；**但編制上與同組《In a Special Way》《Tone Tantrum》共用同一批洛杉磯錄音室樂手（George Bohanon、Harvey Mason 一系），三張的製作班底完全不同，正文不得互抄。**｜**榜位（第 791 條）**：**五榜全零**，也不在 Billboard 1977-12-24 p63 的 UA／Blue Note 年度廣告名單裡。｜串流：Apple 1444378678，9 軌＝原盤形，逐軌相符（**串流採信 1444378678**）；⚠ 其 releaseDate 1977-10-06 比紙本評介晚半年，**不得當上市日（第 484 條）。**"
+ },
+ {
+  "key": "desc2:Noel Pointer|Phantazia",
+  "artist": "Noel Pointer",
+  "album": "Phantazia",
+  "facts": [
+   {
+    "f": "release-group 77bb2e72 的欄位：title「Phantazia」、artist-credit 單一 Person `Noel Pointer`（7cf8a532）、first-release-date 1977、primary-type Album、secondary-types 空，**轄下只有一筆 release**：a45c1aa1（1977 US Official Blue Note BN-LA736-H、12 吋 7 軌，無 barcode）。**七軌軌長全數有填**：〈Phantazia〉358 秒、〈Night Song〉410、〈Living for the City〉396、〈Rainstorm〉408、〈Wayfaring Stranger〉418、〈Mirabella〉310、〈Fiddler on the Roof〉249——**合計約 42 分 31 秒，七軌有五首超過六分鐘**。⚠ **MB 沒有任何 CD／再發條目**（Discogs 另有 2012 年日本 TOCJ-50519），是本組資料最薄的兩張之一。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=77bb2e72-4868-3335-b628-e9a8cbaf13e1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA736-H** 條下把本盤拆成**兩天的基本音軌＋一整層疊加**：**Camp Colomby Studio, New City, NY, 1977 年 1 月 10 日**（母帶 18315〈Night Song〉、18316〈Living For The City〉、18318〈Wayfaring Stranger〉、18319〈Mirabelle〉）與 **1 月 11 日**（18317〈Rainstorm〉、18320〈Fiddler On The Roof〉、以及標題曲），**木管與弦樂的疊加 1977 年 2 月在 Kendun Recorders, Burbank 錄**。基本班底是紐約的一線棚內樂手：**Noel Pointer（電小提琴與原音小提琴）、Dave Grusin（電鋼琴／合成器／編曲）、Earl Klugh（木吉他）、Francisco Centeno 與 Will Lee（電貝斯）、Steve Gadd（鼓）、Ralph MacDonald（打擊）**，另有 Dave Valentin 的長笛（〈Rainstorm〉）、John Tropea 與 Lee Ritenour 的電吉他（〈Fiddler on the Roof〉）、**Ian Underwood 的 Oberheim 合成器編程**；疊加層是 Tom Scott／Bud Shank／Gene Cipriano／Justin Gordon／John Lowe 的木管與十四人弦樂組。⚠ **jazzdisco 把〈Mirabella〉打成〈Mirabelle〉**——照盤面。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 1574387（1977 US BN-LA736-H，6 圖）名單：**Dave Grusin 與 Larry Rosen＝Producer**（**本組四張 Grusin／Rosen 盤的第三張**）、Grusin 另掛 Arranged By 兼 Conductor、**Larry Rosen＝Recorded By 兼 Mixed By**、John Golden＝Mastered By；notes 的地點「**Recorded at Camp Columby Studio, New City, N.Y. Strings, horns, and synthesizers recorded at Kendun Recorders, Burbank, CA. Mixed and mastered at Kendun Recorders**」（⚠ **Discogs 拼 Columby、jazzdisco 拼 Colomby，兩者都指 Bobby Colomby 在紐約 New City 的錄音室，正文寫「紐約近郊的 Camp Colomby」即可**）。⚠ **這一筆沒有 Art Direction／Design／Photography 任何美術欄**——**封面美術查無掛名，封面層不要照抄本組其他張的 Ria Lewerke。**逐軌樂手欄很細，可直接用：標題曲與〈Fiddler on the Roof〉是 Will Lee 的貝斯＋John Tropea 的電吉他，〈Night Song〉〈Living for the City〉〈Mirabella〉是 Francisco Centeno 的貝斯＋**Earl Klugh 的木吉他**，〈Wayfaring Stranger〉**只有 Pointer 的原音小提琴與 Grusin 的 Fender Rhodes 兩個人**。",
+    "src": "https://api.discogs.com/releases/1574387"
+   },
+   {
+    "f": "**同期紙本把上市釘在 1977 年 5 月，並留下三榜齊上的完整軌跡（第 791 條的最佳實例）**：**Billboard 1977-05-07 p128 的評介欄**「**NOEL POINTER - Phantazia, Blue Note BNLA736H (UA). This [Blue] Note's discovery is produced by Dave Grusin and Larry Rosen, who also cut guitarist Earl Klugh for the label. Klugh and classically-trained Pointer team for some snazzy duets…**」；Billboard 1977-06-04 p63 的爵士價目表印「POINTER, NOEL Phantazia LP Blue Note BNLA736H $6.98」；**爵士榜**：1977-06-11 p88 **新進第 36 名** → 07-09 p66 第 12 → **09-24 p80 第 18（前一週第 9，本張最高）** → 11-26 p124 第 26 → 12-24 p46 第 28，**在榜二十九週以上**；**Soul LPs**：1977-06-25 p41 第 21 名 → 07-02 p37 續在榜；**Top LP's & Tape（主榜）**：1977-07-02 p88 **新進第 175 名** → 07-09 p101 第 165 → **07-23 p60 第 144** → 07-30 p76 續在榜。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-05-07.pdf"
+   },
+   {
+    "f": "**Cash Box 側同樣有完整軌跡，但盤名被印錯**：Cash Box 的 Top 40 Jazz Albums **1977-09-03 p21 第 20 名印成「FANTAZIA / NOEL POINTER (Blue Note/UA BNLA 736-H)」**，**1977-09-10 p22 第 21 名續印「FANTAZIA」**——⚠ **Cash Box 把 Ph- 打成 F-，第 509c 條**；同期 Billboard 側一直印 PHANTAZIA，**但 Billboard 1977-06-11 p88 那一週把目錄號印成 `BN-LA736-G`（正確是 -H）**，**兩刊各錯一處，檢索要同時放寬盤名與尾碼。**另 **Billboard 1977-12-24 p63 的 United Artists／Blue Note 年度整版祝賀廣告點名了 Noel Pointer**（同列有 Brass Construction、Donald Byrd、Bill Conti、ELO、Enchantment、Crystal Gayle、Bobbi Humphrey、Earl Klugh、Ronnie Laws、Kenny Rogers），**本組只有《Phantazia》《Finger Paintings》《Fever》的主角進了那份名單。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1977/CB-1977-09-03.pdf"
+   },
+   {
+    "f": "⚠ **英文維基沒有 `Phantazia (album)` 條目**（`action=query` 回 missing，同名條目是 Marvel 漫畫角色），**能引的是藝人條目 `Noel Pointer`**：「From 1977 to 1981, Pointer recorded seven solo albums, **four of which reached the top five jazz albums listed on the *Billboard* jazz chart**. **His debut album, *Phantazia*, went platinum** and won the **No.1 New Male Jazz Act award in *Record World* magazine**」，discography 欄列「*Phantazia* (Blue Note, 1977)」為第一張。⚠ **「went platinum」只有訃聞單一來源、沒有 RIAA 認證紀錄，本層查不到第二路佐證——正文不得寫「白金唱片」，可以寫「賣得很好、拿下 Record World 年度新人獎」。**店面（第 254 條）：Apple us 命中 **723905977**，**7 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤完全相符（358／410／396／408／418／310／250 秒），releaseDate 1977-01-01（年頭佔位）→ **串流採信 723905977**。",
+    "src": "https://en.wikipedia.org/wiki/Noel_Pointer"
+   }
+  ],
+  "hookCandidates": [
+   "23 歲的布魯克林小提琴手，第一張自己的唱片：Dave Grusin 編曲、Steve Gadd 打鼓、Ralph MacDonald 敲打擊，Earl Klugh 抱著木吉他坐在旁邊——同一年 Klugh 也在替他自己的《Finger Paintings》錄音，兩張唱片的目錄號只差一號",
+   "七首裡有一首完全沒有樂團：〈Wayfaring Stranger〉六分五十八秒，只有他的原音小提琴與 Grusin 的 Fender Rhodes。這張唱片同時爬上爵士榜、靈魂榜與 Billboard 主榜——1977 年的 Blue Note，就是靠這種盤活著"
+  ],
+  "sound": "7 軌、約 42 分半，基本音軌錄於 1977 年 1 月 10／11 兩天的紐約 New City 的 Camp Colomby Studio，木管、弦樂與合成器 2 月在柏班克 Kendun Recorders 疊上。核心是 Noel Pointer 的電小提琴與原音小提琴、Dave Grusin 的 Fender Rhodes 與合成器（他同時編曲指揮）、Steve Gadd 的鼓、Ralph MacDonald 的打擊，貝斯在 Francisco Centeno 與 Will Lee 之間換手，Earl Klugh 的木吉他出現在〈Night Song〉〈Living for the City〉〈Mirabella〉三軌，John Tropea 與 Lee Ritenour 的電吉他出現在標題曲與〈Fiddler on the Roof〉，Dave Valentin 的長笛只在〈Rainstorm〉，Ian Underwood 負責 Oberheim 合成器編程。疊加層是 Tom Scott 與 Bud Shank 等五人木管、十四人弦樂組。曲目一半是改編：Stevie Wonder 的〈Living for the City〉、美國民謠〈Wayfaring Stranger〉、音樂劇的〈Fiddler on the Roof〉。〈Wayfaring Stranger〉整軌只有小提琴與電鋼琴兩件樂器。最長的是〈Wayfaring Stranger〉（6 分 58 秒），最短的是〈Fiddler on the Roof〉（4 分 10 秒）。Dave Grusin 與 Larry Rosen 製作，Rosen 自己錄音與混音，John Golden 母帶。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Phantazia",
+   "Living for the City",
+   "Wayfaring Stranger"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1977。** 資料庫四邊（MB frd 1977、jazzdisco BN-LA736-H＝1977、Discogs 美國原壓五筆與加拿大壓全 1977、維基藝人條目的 discography 1977）一致，**紙本再獨立坐實四路，是本組證據最密的一張之一**：**Billboard 1977-05-07 p128 的評介欄**、1977-06-04 p63 的爵士價目表、**爵士榜 1977-06-11 p88 新進第 36 名**（→07-09 第 12、09-24 **最高第 9**、12-24 第 28，在榜二十九週以上）、**Soul LPs 1977-06-25 p41 第 21 名**、**Top LP's & Tape 1977-07-02 p88 新進第 175 名**（→07-23 **最高第 144**）；Cash Box 側爵士榜 1977-09-03 第 20 名。**定 1977 年 5 月。**⚠ **錄音年與發行年同年**（1977 年 1 月錄、2 月疊加、5 月發）。⚠ **兩刊各錯一處（第 509c 條）**：**Cash Box 1977-09-03／09-10 把盤名印成「FANTAZIA」**，**Billboard 1977-06-11 p88 把目錄號印成 `BN-LA736-G`（正確 -H）**——**檢索要同時放寬盤名與尾碼。**⚠ **維基沒有本盤條目**（同名條目是 Marvel 角色），**年份靠藝人條目的 discography 與紙本。**",
+  "notes": "**vault 盤？否**——1977 年 1 月錄、同年 5 月發。｜**這是 Pointer 的首張個人專輯**（藝人條目寫 debut album），**製作是 Dave Grusin 與 Larry Rosen**——**本組四張 Grusin／Rosen 盤的第三張**（另有《Earl Klugh》《Living Inside Your Love》《Finger Paintings》），**四張班底高度重疊（Grusin、Gadd、MacDonald、Klugh、Ritenour、Kendun 的弦樂組），正文要寫得出差別、絕不能互抄。**｜⚠ **本張是「缺封面五張」之一：CAA RG 層 HTTP 404、零圖（重試三次確認），而且 Discogs 美國原壓 1574387 也沒有任何美術掛名欄**。**替代圖來源建議取該筆的 `images[0].uri`**（6 圖，1977 US BN-LA736-H）：`https://i.discogs.com/KrCcXJKNq8hJwB1ZkXyOfo85wMuXuEFlc6LI7wt5kU4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NzQz/ODctMTc0MTYzMTA4/My0xODU0LmpwZWc.jpeg`（600×600）；另 **2012 年日本 CD TOCJ-50519（Discogs 7646178）可當第二來源**。｜⚠ **「白金唱片」只有訃聞單一來源**（維基 `Noel Pointer` 引自 obituary），**查不到 RIAA 認證，正文不得寫白金**；**可以寫的是 Record World 的「No.1 New Male Jazz Act」獎與 Billboard 三榜齊上。**｜⚠ **曲名**：jazzdisco 作〈Mirabelle〉，盤面與 MB 是〈**Mirabella**〉。｜**跨卡互指（第 585 條）**：**Earl Klugh 以客席木吉他手身分在本張的三軌上，而 Pointer 則以小提琴手身分出現在 Klugh《Living Inside Your Love》的弦樂組裡**——**兩人互為對方的客席，本組同時收了三張 Klugh 與這一張，正文可以寫這個交叉，但四張的編制與錄音日期完全不同、不得互抄。**本張（BN-LA736-H）與《Finger Paintings》（BN-LA737-H）**是連號、同一組製作、1977 年夏天同時在三張榜上**（Billboard 1977-07-23 p33、08-20 p29、09-10 p31 三張榜單上兩張相鄰）。｜**榜位（第 791 條的最佳實例）**：**爵士榜最高 9／Soul LPs 最高 21／Top LP's & Tape 最高 144，三榜齊上**——**1977 年起 Blue Note 的主戰場確實搬到了 R&B 與主榜，本張與《Finger Paintings》是這條規則最乾淨的兩個證據。**｜串流：Apple 723905977，7 軌＝原盤形，逐軌相符（**串流採信 723905977**）。"
+ },
+ {
+  "key": "desc2:Earl Klugh|Finger Paintings",
+  "artist": "Earl Klugh",
+  "album": "Finger Paintings",
+  "facts": [
+   {
+    "f": "release-group 49521985 的欄位：title「Finger Paintings」、artist-credit 單一 Person `Earl Klugh`（5c44b1b8）、first-release-date 1977、primary-type Album、secondary-types 空，**轄下五筆，是本組再壓最多的一張**。**原盤 ad13226b 是 1977 US Official Blue Note BN-LA737-H、12 吋 9 軌，軌長全數有填**：〈Dr. Macumba〉265 秒、〈Long Ago and Far Away〉334、〈Cabo Frio〉210、〈Keep Your Eye on the Sparrow (Baretta's Theme)〉275、〈Catherine〉250、〈Dance With Me〉205、〈Jolanta〉180、〈Summer Song〉245、〈This Time〉220——**合計約 36 分 4 秒，與維基 infobox 的 36:14 對得起來**。⚠ **其餘四筆全是發燒片重製**：**1980-03 US Mobile Fidelity Sound Lab MFSL 1-025**（abec9a79）、**1981-05 US MFQR 1-025**（3f4aaedc，label-info 同時掛 Blue Note 與 MFSL）、1988 US EMI Manhattan CDP 7 48386 2（7e53c6e9）、1991 US MFSL UDCD 549（912c2e4a）——**Mobile Fidelity 前後做了三個版本，本組唯一一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=49521985-ccbd-3d8f-97d2-c8ed5d467d4c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA737-H** 條下記兩天的基本音軌，**Kendun Recorders, Burbank**：**1977 年 2 月 15 日**（母帶 18500〈Keep Your Eyes On The Sparrow (Baretta's Theme)〉、18502〈Dance With Me〉、18503〈Jolanta〉——這一天是 **Dave Grusin 的 Fender Rhodes 與 Clavinet、Klugh 木吉他、Louis Johnson 電貝斯、Steve Gadd 鼓、Steve Forman 與 Ralph MacDonald 打擊**）與 **1977 年 2 月 17 日**（18497〈Dr. Macumba〉、18498〈Long Ago And Far Away〉、18501〈Catherine〉、18505〈This Time〉——**鼓換成 Harvey Mason、貝斯換成 Anthony Jackson、加 Lee Ritenour 的吉他**），管樂、弦樂與和聲的疊加在同地 1977 年內補。⚠ **jazzdisco 把〈Keep Your Eye on the Sparrow〉打成 Eye**s**、盤面是單數 Eye**；⚠ **Discogs 原壓 1486622 的 notes 另寫〈Summer Song〉是在紐約 Electric Lady Studios 錄的、弦樂在紐約 Columbia 30th Street Studio 錄**——**jazzdisco 完全沒提這兩間，正文寫「主場在柏班克 Kendun、一首在紐約」比較準。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 1486622（1977 US BN-LA737-H，6 圖，「Issued with credit inner sleeve」）名單：**Dave Grusin 與 Larry Rosen＝Producer、Grusin 另掛 Arranged By／Conductor／Fender Rhodes／Synthesizer／Percussion／String Arranger、George Butler＝Executive-Producer**、**Larry Rosen＝Recorded By 兼 Mixed By**、Phil Schier＝Recorded By [Strings & Horns]、John Golden＝Mastered By；美術是 **Bill Burks＝Design、Gregory Heisler＝Photography**（⚠ **沒有 Art Direction 欄，本組少數沒有 Ria Lewerke 的一張**）。逐軌欄補上兩件 jazzdisco 沒寫的：**〈Keep Your Eye on the Sparrow〉有三位女聲（Alexandra Brown、Lisa Roberts、Stephanie Spruill）、Tom Scott 編銅管**；**〈Summer Song〉的電貝斯是 Francisco Centeno 不是 Louis Johnson**；**〈This Time〉的 12 弦吉他是 Lee Ritenour**。作曲欄：**Klugh 自己寫五首**（〈Dr. Macumba〉〈Cabo Frio〉〈Catherine〉〈Jolanta〉〈Summer Song〉〈This Time〉其實是六首），另三首是翻唱——James Taylor 的〈Long Ago and Far Away〉、**Dave Grusin 與 Morgan Ames 寫的《霹靂警探》（Baretta）電視主題曲**、John 與 Johanna Hall 的〈Dance With Me〉。",
+    "src": "https://api.discogs.com/releases/1486622"
+   },
+   {
+    "f": "**同期紙本把上市釘在 1977 年 7 月初，三榜軌跡完整（第 791 條的第二個最佳實例）**：**Billboard 1977-07-09 p93 的評介欄**「**EARL KLUGH - Finger Paintings, Blue Note BNLA737H (United Artists). The second LP by this acoustic guitar whiz protege of arranger Dave Grusin stays to the pretty, crossover format of Blue Note and features a majority of Klugh's bossa no[va]…**」（⚠ **該則寫 second LP 是錯的，這是第三張**；⚠ **標題被排成「Fnger Paintings」**）；**爵士榜**：Billboard 1977-07-09 p66 **新進第 21 名** → 08-20 p29 與 09-10 p31 都排在前五名區、**Cash Box 1977-08-13 p23 第 9 名**；**Soul LPs**：Billboard 1977-07-16 p37 → **07-23 p43 第 39 名新進** → 08-20 p31 → 08-27 p40 → 09-03 p79 第 51；**Top LP's & Tape（主榜）**：1977-07-16 p84 **新進第 182 名** → 07-23 p58 → 07-30 p74 → **08-27 p98 第 171**。另 Billboard 1977-08-06 p148 與 1977-10-15 的爵士價目表都列本張。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-07-09.pdf"
+   },
+   {
+    "f": "**Cash Box 1977-08-13 p23 把本組 1977 年的三張排在同一頁**：「**FRIENDS AND STRANGERS / RONNIE LAWS (Blue Note/UA BNLA 730H)**」「**ROBBY KRIEGER & FRIENDS (Blue Note/UA BNLA 66414)**」「**FINGER PAINTINGS / EARL KLUGH (Blue Note/UA BN-LA 737-H)**」——⚠ **Ronnie Laws 的《Friends and Strangers》(BN-LA730-H) 已在池中、本組沒收，而 BN-LA730／736／737 三個號在 1977 年夏天同時在榜**，**這是「號一次配一批、同批同時上市」的正例（第 663／753 條的另一面）**；**但同組的《The View From the Inside》BN-LA710-G 號在更前面、卻連一次命中都沒有**——**號序仍然不能當發行序用。**另 **Billboard 1977-12-24 p63 的 UA／Blue Note 年度整版祝賀廣告點名 Earl Klugh**（同列有 Donald Byrd、Bobbi Humphrey、Ronnie Laws、Noel Pointer）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1977/CB-1977-08-13.pdf"
+   },
+   {
+    "f": "英文維基 `Finger Paintings` infobox：released 1977（引 Daily News (Bowling Green) 1977-08-17 的報導）、**recorded「February 1977」**、length 36:14、label Blue Note、**producer Dave Grusin 與 Larry Rosen、George Butler – executive producer**；內文寫「**the third studio album by Earl Klugh**」（**維基是對的，Billboard 那則評介寫 second LP 是錯的**）；chronology prev《Living inside Your Love》(1976) → next《Magic in Your Eyes》(1978，**已離開 Blue Note、掛 United Artists**)；AllMusic 評由 **Scott Yanow** 執筆。店面（第 254 條）：Apple us 命中 **724790075**，**9 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤相符（267／337／213／278／252／206／184／247／225 秒），releaseDate 1977-01-01（年頭佔位）→ **串流採信 724790075**。CAA：RG 層 HTTP 200，來源就是 1977 美國原壓 ad13226b ✓。",
+    "src": "https://en.wikipedia.org/wiki/Finger_Paintings"
+   }
+  ],
+  "hookCandidates": [
+   "第三張、也是他在 Blue Note 的最後一張：1977 年二月，柏班克 Kendun 的兩個下午，Steve Gadd 與 Harvey Mason 各打一天，Dave Grusin 把管樂、弦樂與三位女聲一層層疊上去——其中一首是電視影集《霹靂警探》的主題曲",
+   "九首、三十六分鐘，沒有一首超過五分半，卻同時擠上爵士榜前五、靈魂榜與 Billboard 主榜；三年後 Mobile Fidelity 把它拿去做成發燒片，前後出了三個版本"
+  ],
+  "sound": "9 軌、約 36 分鐘，基本音軌錄於 1977 年 2 月 15 日與 17 日的柏班克 Kendun Recorders，〈Summer Song〉另在紐約 Electric Lady Studios 錄、弦樂在紐約 Columbia 30th Street Studio 錄。兩天兩組節奏：2 月 15 日是 Steve Gadd 的鼓配 Louis Johnson 的電貝斯，2 月 17 日換成 Harvey Mason 的鼓、Anthony Jackson 的電貝斯，並加進 Lee Ritenour 的吉他；不變的是 Earl Klugh 的木吉他、Dave Grusin 的 Fender Rhodes 與合成器（他同時編曲、指揮、編弦樂）、Steve Forman 與 Ralph MacDonald 的打擊。疊加層是 Chuck Findley 的小號、Dick「Slyde」Hyde 的長號、Jack Nimitz 的上低音、Jerome Richardson 與 Lawrence Williams 的木管（Tom Scott 編銅管）、十三人弦樂組與 Ann Stockton 的豎琴，〈Keep Your Eye on the Sparrow〉另有三位女聲。九首裡六首是 Klugh 自己寫的，另三首是翻唱：James Taylor 的〈Long Ago and Far Away〉、Grusin 與 Morgan Ames 寫的《霹靂警探》主題曲〈Keep Your Eye on the Sparrow〉、John 與 Johanna Hall 的〈Dance With Me〉。最長的是〈Long Ago and Far Away〉（5 分 34 秒），最短的是〈Jolanta〉（3 分）。Dave Grusin 與 Larry Rosen 製作，Rosen 自己錄音與混音，John Golden 母帶，George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Dr. Macumba",
+   "Cabo Frio",
+   "Keep Your Eye on the Sparrow (Baretta's Theme)"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1977。** 資料庫四邊（MB frd 1977、jazzdisco BN-LA737-H＝1977、Discogs 美國原壓七筆與加拿大／菲律賓 UA-BNLA 737-H／新加坡壓全 1977、維基 infobox 1977）一致，**紙本再獨立坐實四路**：**Billboard 1977-07-09 p93 的評介欄**、**爵士榜 1977-07-09 p66 新進第 21 名**（→08-20／09-10 進前五、Cash Box 1977-08-13 第 9）、**Soul LPs 1977-07-23 p43 新進第 39 名**、**Top LP's & Tape 1977-07-16 p84 新進第 182 名**（→08-27 **最高 171**），另 1977-08-06 p148 與 10-15 的爵士價目表。**定 1977 年 7 月初。**⚠ **錄音年與發行年同年**（1977 年 2 月錄、7 月發）。⚠ **Billboard 那則評介把本張寫成「the second LP」是錯的，這是第三張**（維基與 Discogs／MB 都對）——**正文不得照抄那句。**⚠ **1980-03 與 1981-05 的 Mobile Fidelity（MFSL 1-025／MFQR 1-025）與 1991 的 UDCD 549 都是發燒片重製，不是首發**，MB 把它們列在同一個 RG 裡，**年份不受影響。**",
+  "notes": "**vault 盤？否**——1977 年 2 月錄、同年 7 月發。｜**製作是 Dave Grusin 與 Larry Rosen，George Butler 只掛執行製作**——**本組四張 Grusin／Rosen 盤的第四張、也是 Klugh 在 Blue Note 的最後一張**（下一張《Magic in Your Eyes》1978 掛 United Artists）。｜**封面美術是 Bill Burks（Design）＋Gregory Heisler（Photography），沒有 Art Direction 欄**——**本組少數沒有 Ria Lewerke 的一張。**｜⚠ **錄音地三處**：jazzdisco 只寫 Kendun，**Discogs 盤面另寫〈Summer Song〉在紐約 Electric Lady、弦樂在紐約 Columbia 30th Street**——**正文寫「主場柏班克、一首在紐約」較準。**｜⚠ **曲名**：jazzdisco 作〈Keep Your Eye**s** On The Sparrow〉，盤面是單數 Eye。｜⚠ **「second LP」的誤植**見上。｜⚠ **本組唯一被 Mobile Fidelity 做成發燒片的一張**（1980 MFSL 1-025、1981 MFQR 1-025、1991 UDCD 549 三個版本），**可以寫進正文當作它在當年賣相的旁證。**｜**跨卡互指（第 585 條）**：本組另有《Earl Klugh》(1976)《Living Inside Your Love》(1976)，三張都是 Grusin／Rosen 製作、依序上市；**Klugh 另以客席木吉他手身分出現在本組 Noel Pointer《Phantazia》的三軌上**，**本張（BN-LA737-H）與《Phantazia》（BN-LA736-H）是連號、1977 年夏天同時在三張榜上**（Billboard 1977-07-23 p33、08-20 p29、09-10 p31 兩張相鄰）。⚠ **Cash Box 1977-08-13 p23 把本張、《Robby Krieger & Friends》與池中已有的 Ronnie Laws《Friends and Strangers》(BN-LA730-H) 排在同一頁**——**BN-LA730／736／737 三個號同批同時上市，是「號一次配一批」的正例；但同組《The View From the Inside》BN-LA710-G 號在更前面卻毫無紙本，號序仍不能當發行序（第 663／753 條）。**｜**榜位（第 791 條的第二個最佳實例）**：**爵士榜最高前五（Cash Box 第 9）／Soul LPs 最高 39／Top LP's & Tape 最高 171，三榜齊上。**｜串流：Apple 724790075，9 軌＝原盤形，逐軌相符（**串流採信 724790075**）。｜CAA 封面 RG 層 200 ✓，來源就是美國原壓 ad13226b。"
+ },
+ {
+  "key": "desc2:Gene Harris|Tone Tantrum",
+  "artist": "Gene Harris",
+  "album": "Tone Tantrum",
+  "facts": [
+   {
+    "f": "release-group ec5de6da 的欄位：title「Tone Tantrum」、artist-credit 單一 Person `Gene Harris`（1dbdc230）、**first-release-date 1977-05（本組第二張 MB 填到月份的）**、primary-type Album、secondary-types 空，轄下兩筆。**原盤 15907c5d 是 1977-05 US Official Blue Note BN-LA760-H、12 吋 7 軌，軌長全數有填**：〈As〉458 秒、〈If You Can't Find Love Let Love Find You〉374、〈A Minor〉443、〈Stranger in Paradise〉316、〈Peace of Mind〉273、〈Cristo Redentor, Part 1〉296、〈Cristo Redentor, Part 2〉292——**合計約 40 分 52 秒，與維基 infobox 的 40:50 對得起來**。另一筆是 2013-01-23 JP Blue Note TOCJ-50550（70caf52e，CD 7 軌，無 barcode）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ec5de6da-96be-4d95-83a8-cedc96639300&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA760-H** 條下（⚠ **標題印成複數的「Tone Tantrum**s**」，盤面是單數**）把整張登成一個連續檔期：**Total Experience Studios, Los Angeles, 1977 年 3–5 月**，母帶 18762–18768。編制是 Jerry Peters 的洛杉磯班底，**逐軌換節奏組**：〈As〉是 Verdine White 電貝斯＋Harvey Mason 鼓；〈If You Can't Find Love Let Love Find You〉換成 Chuck Rainey 電貝斯＋Alvin Taylor 鼓；**〈A Minor〉再換成 Leon「Ndugu」Chancler 打鼓，並加進 Donald Byrd 的小號與富魯格號、Harvey Mason 的木琴**。不變的是 **Gene Harris（原音鋼琴／Fender Rhodes／Yamaha）、Jerry Peters（Fender Rhodes／Yamaha／編曲／人聲）、Al McKay 與 John Rowin 的電吉他、Jerry Steinholtz 的打擊**，加上 **Dorothy Ashby 的豎琴**、十六人弦樂組、七人銅管（**Donald Byrd 在內**），和聲是 **Deniece Williams、Venetta Fields、Julia／Maxine／Oren Waters 三兄妹、AnnEsther Davis、Gary Gairet**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "Discogs 美國原壓 7342933（1977 US BN-LA760-H，4 圖，notes 寫「**Recorded March-May, 1977**」）名單：**Jerry Peters＝Producer 兼 Arranged By 兼 Fender Rhodes／Yamaha／人聲、George Butler＝Executive Producer**、F. Byron Clark＝Recording Engineer 兼 Remix Engineer（Jerry Peters 共同 Remix）、**Charles Veal Jr.＝String Conductor**、Carolyn Hervey＝Musical Contractor 兼 Production Coordinator、John Golden 與 Rick Collins＝Lacquer Cut、John Golden＝Mastered By；美術是 **Ria Lewerke＝Art Direction、Bill Burks＝Design、James「Jack Rabbit」Martin＝Illustration**。⚠ **四位電貝斯手（Verdine White、Chuck Rainey、Anthony Jackson、Robert Popwell）、三位鼓手（Harvey Mason、Alvin Taylor、Leon Ndugu Chancler）**，**Discogs 比 jazzdisco 多列了 Anthony Jackson 與 Robert Popwell**。作曲欄：**七軌裡 Gene Harris 一首都沒寫**——〈As〉是 **Stevie Wonder** 的、〈If You Can't Find Love〉與〈A Minor〉是 **Jerry Peters** 的、〈Stranger in Paradise〉是音樂劇《Kismet》的老歌、〈Peace of Mind〉是 **Al McKay**（Earth, Wind & Fire）的、**〈Cristo Redentor〉兩部分是 Duke Pearson 寫的**。",
+    "src": "https://api.discogs.com/releases/7342933"
+   },
+   {
+    "f": "**同期紙本把上市釘在 1977 年 8 月底，並留下第 791 條最乾淨的一個實例**：**Billboard 1977-08-27 p90 的評介欄**「**GENE HARRIS - Tone Tantrum, Blue Note BNLA760H (U.A.). Harris and his jazz friends come up with some tastily arranged productions fronted by the distinct Harris piano and organ. Lavishly arranged and produced horn and string sec[tions]…**」；**Cash Box 1977-08-27 p26 的評介欄**「**TONE TANTRUM - Gene Harris - Blue Note LA760 - Producer: Jerry Peters - List: 7.98. Harris is a veteran keyboard specialist who has eschewed his customary trio setting for a large orchestra with strings, horns and vocals**」；Billboard 1977-10-15 p152 的爵士價目表印「HARRIS, GENE Tone Tantrum LP Blue Note BNLA760[H] $7.98」。**定 1977 年 8 月底。**⚠ **MB 的 frd 標 1977-05，比評介週早了三個多月，本層不採那個月份**（第 612 條：評論欄壓過資料庫欄位）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-08-27.pdf"
+   },
+   {
+    "f": "**榜位（第 791 條的實例三，也是最極端的一個）**：**本張只進 Cash Box 的 R&B LP 榜，兩刊的爵士榜與主榜全部零命中**——**Cash Box R&B Albums 1977-09-17 p63 第 55 名新進榜**（⚠ **該週的 OCR 把整列讀成「TONE BRUMGENE Notelue LA 760」，盤名、藝人名與廠牌全糊成一團，第 636 條的硬斷行＋第 509c 條的誤植疊在一起**）→ **09-24 p38 第 48 名** → **10-01 p44 第 47 名（最高）** → 10-08 p46 第 47 → 10-15 p114 第 47，**在榜五週**。⚠ **這正是第 791 條要講的事**：1977 年的 Blue Note 盤**可能連爵士榜都不進、只在 R&B 榜上出現**，**查榜若只查爵士榜會得到「完全沒上榜」的錯誤結論。**另 Billboard 1977-12-24 p63 的 UA／Blue Note 年度整版祝賀廣告**沒有 Gene Harris**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1977/CB-1977-10-01.pdf"
+   },
+   {
+    "f": "英文維基 `Tone Tantrum` infobox：released 1977、**recorded「March–May 1977」（與 jazzdisco、Discogs 三方一致）**、length 40:50、label Blue Note、**producer Jerry Peters**；分類掛「Albums recorded at Total Experience Recording Studios」；chronology prev《In a Special Way》(1976，**本組同批**) → **next《Nature's Way》(1980)——中間隔了三年，因為 1979 年後 Blue Note 進入休眠期，Harris 也暫時退出錄音**。**AllMusic 由 Jason Ankeny 評 3.5 星**，原文「**Gene Harris never veered closer to mainstream jazz-funk than *Tone Tantrum* – a slick, propulsive record... Still, while the sound is radio-friendly, the quality and complexity of the performances serve as a potent reminder that *Tone Tantrum* is first and foremost a jaz[z record]**」。店面（第 254 條）：Apple us 命中 **1443086799**，**7 軌＝原盤形**，逐軌軌名與軌長與 MB 原盤相符（458／374／444／315／273／295／288 秒），**releaseDate 1977-12-13**（比 MB 的 1977-05 與紙本的 8 月評介都晚，第 484 條，不得當上市日）→ **串流採信 1443086799**。",
+    "src": "https://en.wikipedia.org/wiki/Tone_Tantrum"
+   }
+  ],
+  "hookCandidates": [
+   "Three Sounds 的鋼琴手，被放進一支十六人弦樂、七支銅管、八位和聲的大編制裡——四位貝斯手、三位鼓手輪流進場，Donald Byrd 跑來吹小號，Dorothy Ashby 彈豎琴。七首歌他一首都沒寫",
+   "壓軸是 Duke Pearson 的〈Cristo Redentor〉，切成上下兩部分放在唱片背面最後——那是 1963 年 Donald Byrd《A New Perspective》的曲子，十四年後由 Byrd 本人在銅管席上再吹一次"
+  ],
+  "sound": "7 軌、約 40 分 50 秒，1977 年 3 月到 5 月在洛杉磯 Total Experience Studios 錄。Jerry Peters 製作、編曲、彈 Fender Rhodes 與 Yamaha 兼唱和聲，Gene Harris 負責原音鋼琴與兩台電鋼琴。節奏組逐軌換人：貝斯在 Verdine White、Chuck Rainey、Anthony Jackson 與 Robert Popwell 之間輪，鼓在 Harvey Mason、Alvin Taylor 與 Leon「Ndugu」Chancler 之間輪；吉他是 Earth, Wind & Fire 的 Al McKay 與 John Rowin，打擊是 Jerry Steinholtz。上層是 Dorothy Ashby 的豎琴、Charles Veal Jr. 指揮的十六人弦樂組、七人銅管（Donald Byrd 的小號與富魯格號、George Bohanon 的長號在內），和聲是 Deniece Williams、Venetta Fields 與 Waters 三兄妹等八人。七首全是外來曲——Stevie Wonder 的〈As〉、Jerry Peters 自己的兩首、音樂劇《Kismet》的〈Stranger in Paradise〉、Al McKay 的〈Peace of Mind〉，以及切成上下兩部分的 Duke Pearson 名曲〈Cristo Redentor〉。最長的是開場的〈As〉（7 分 38 秒），最短的是〈Cristo Redentor, Part 2〉（4 分 52 秒）。George Butler 掛執行製作。串流側歸「Jazz」。",
+  "keyTracks": [
+   "As",
+   "Cristo Redentor, Part 1",
+   "A Minor"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1977。** 資料庫四邊（MB frd 1977-05、jazzdisco BN-LA760-H＝1977、Discogs 美國原壓三筆全 1977、維基 infobox 1977）一致，**紙本再獨立坐實三路**：**Billboard 1977-08-27 p90 的評介欄**、**Cash Box 1977-08-27 p26 的評介欄**（連製作人與定價都印出來）、Billboard 1977-10-15 p152 的爵士價目表，另 **Cash Box R&B Albums 1977-09-17 p63 第 55 名新進榜**（→10-01 **最高第 47**，在榜五週）。**定 1977 年 8 月底。**⚠ **MB 的 first-release-date 標 `1977-05`，比兩刊的評介週早三個多月，本層不採那個月份**——**依第 612 條（評論欄 ＞ 資料庫欄位），年取 1977、月取 8 月。**⚠ **錄音年與發行年同年**（1977 年 3–5 月錄、8 月底發），三方（jazzdisco／Discogs／維基）對錄音期程完全一致。⚠ **Apple 的 releaseDate 1977-12-13 更晚**，**同樣不得當上市日（第 484 條）。**",
+  "notes": "**vault 盤？否**——1977 年 3–5 月錄、同年 8 月底發。｜**製作、編曲、鍵盤與人聲都是 Jerry Peters；George Butler 只掛執行製作**——**本組兩張 Peters 製作的 Gene Harris 盤的第二張**（前一張是《In a Special Way》1976），**兩張的樂團有重疊（Al McKay、John Rowin、Harvey Mason、Verdine White、Deniece Williams）但不相同，正文不得互抄。**｜**封面美術是 Ria Lewerke（Art Direction）＋Bill Burks（Design）＋James「Jack Rabbit」Martin（Illustration）。**｜⚠ **盤名**：jazzdisco 印複數的「Tone Tantrum**s**」，盤面／MB／維基／卡單都是單數——**照卡單。**｜⚠ **七軌裡 Gene Harris 一首都沒寫**，**正文不得寫成「他的創作」。**｜⚠ **Donald Byrd 在本張是客席銅管（並在〈A Minor〉獨奏），不是領班**——**他自己的《Chant》也在本組，別寫混。**｜⚠ **〈Cristo Redentor〉是 Duke Pearson 寫給 1963 年 Donald Byrd《A New Perspective》的曲子（該盤已在池中）**，**本張把它切成上下兩部分當壓軸，而原曲的小號手本人就在本張的銅管席上**——**這是本張最好寫的一個交叉，但要寫清楚是翻奏不是重錄。**｜**榜位（第 791 條的最極端實例）**：**只進 Cash Box 的 R&B LP 榜（最高第 47，在榜五週），兩刊的爵士榜與主榜全部零命中**——⚠ **1977-09-17 p63 那一週的 OCR 把整列糊成「TONE BRUMGENE Notelue LA 760」**（第 636＋509c 條疊加），**檢索要放寬到目錄號。**｜**跨卡互指（第 585 條）**：池中已有《Astral Signal》(1974)，c-143 b 有《Gene Harris of the Three Sounds》《Yesterday, Today & Tomorrow》，c-144 a 有《Nexus》(1975)，本組另有《In a Special Way》(1976)；**維基 chronology 在本張之後跳到 1980 年的《Nature's Way》——中間空了三年，正是 1979 年後 Blue Note 休眠期的縮影，正文可以寫這個斷點。**｜串流：Apple 1443086799，7 軌＝原盤形，逐軌相符（**串流採信 1443086799**）。｜CAA 封面 RG 層 200，但**來源是 2013 日本 CD（70caf52e）不是美國原盤**，封面層要比對版式。"
+ }
+]
