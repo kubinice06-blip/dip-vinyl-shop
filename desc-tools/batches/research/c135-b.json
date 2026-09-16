@@ -1,0 +1,542 @@
+[
+ {
+  "key": "desc2:Erroll Garner|Overture to Dawn, Volume 5",
+  "artist": "Erroll Garner",
+  "album": "Overture to Dawn, Volume 5",
+  "facts": [
+   {
+    "f": "release-group e618993f 的欄位：title「Overture to Dawn, Volume 5」、artist-credit「Erroll Garner」（Person 75bd5186，US）、first-release-date 1953、primary-type Album、secondary-types 空、轄下只有 1 筆 release。release 981c5c28：1953 US Official、10 吋黑膠 4 軌、廠牌 Blue Note、目錄號 BLP 5016；四軌依序 All the Things You Are／Gas Light／Opus／The Clock Stood Still，MB 未填軌長與錄音層關係。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e618993f-37dc-4f73-b451-f689cab6e2b4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5016 記為「Erroll Garner - Overture To Dawn Volume 5」1953，四首出自三場，全部在 Timme Rosenkrantz 的紐約公寓、全部是 Garner 一個人的鋼琴獨奏：1944 年 11 月 16 日出 The Clock Stood Still；12 月 14 日出母帶編號 EG-185A／EG-185B 的 All The Things You Are 第一部與第二部；12 月 20 日出 Opus I 與 Gaslight。同一頁的 BLP 5007／5008／5014／5015 是同一套的前四冊，1952–53 年間分批出。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "這一整套是丹麥男爵、爵士文字工作者 Timme Rosenkrantz（1911–1969）1944 年在自己紐約公寓錄的私人醋酸盤，英文維基的 Rosenkrantz 條目直接寫「他 1944 年的 Erroll Garner 私人醋酸盤後來由 Blue Note 等廠發行，是這位鋼琴家的第一批錄音」。Rosenkrantz 另辦過巡演、替 Victor 製作過錄音，回憶錄《Harlem Jazz Adventures》涵蓋 1934–1969 年。",
+    "src": "https://en.wikipedia.org/wiki/Timme_Rosenkrantz"
+   },
+   {
+    "f": "Garner（1921-06-15 匹茲堡出生，1977-01-02 洛杉磯辭世）自學出身、終生不識譜，是所謂的「耳朵派」；1956 年匹茲堡音樂工會給了他榮譽會員資格。他 1944 年搬到紐約，短暫與貝斯手 Slam Stewart 合作，1947 年參加 Charlie Parker 的〈Cool Blues〉那場。英文維基寫明「Garner 的第一批錄音是 1944 年末在 Timme Rosenkrantz 的公寓錄的，後來以五冊《Overture to Dawn》在 Blue Note 發行」。",
+    "src": "https://en.wikipedia.org/wiki/Erroll_Garner"
+   },
+   {
+    "f": "Discogs release 6791279 是 US、released 欄 1953、10 吋黑膠，封面印 LP 5016、標籤印 BLP 5016，題《Overture To Dawn (Volume 5)》，有 2 張圖。",
+    "src": "https://www.discogs.com/release/6791279"
+   },
+   {
+    "f": "串流側：四軌全部在店面，但拆在公版廠 Complete Jazz Series 的兩張整編裡。gb 店面 305742218《Complete Jazz Series 1944 Vol. 1》（11 軌，℗ 2009 Complete Jazz Series）第 1 軌 The Clock Stood Still (11-16-44) 515 秒、第 11 軌 All the Things You Are (Parts 1 & 2) (12-14-44) 387 秒；同廠 304957904《Complete Jazz Series 1944 Vol. 2》（18 軌）第 16 軌 Opus 1 (12-20-44) 243 秒、第 17 軌 Gaslight (12-20-44) 251 秒。四軌的括號日期與 jazzdisco 的三場錄音日逐一相符，每軌都有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=305742218&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Garner 一輩子沒學會看譜。他留下來最早的錄音也不是在錄音室錄的——1944 年冬天，一位丹麥男爵在自己紐約公寓裡架了刻片機",
+   "五冊《Overture to Dawn》的最後一冊只有四首：三場都在同一間公寓，從 11 月 16 日錄到 12 月 20 日"
+  ],
+  "sound": "四軌 10 吋、單面兩曲，1944 年 11–12 月紐約公寓私人醋酸盤的獨奏鋼琴。沒有貝斯與鼓，左手自己走律動、右手大量分解和弦與滑音；〈All the Things You Are〉拆成第一、第二部分兩面。錄音是家用器材的醋酸盤，底噪與空間感都與錄音室盤不同。串流側歸「Jazz」。",
+  "keyTracks": [
+   "All the Things You Are",
+   "Gaslight",
+   "The Clock Stood Still"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1953（卡單值成立）。MB first-release-date 1953、Discogs release 6791279 released 欄 1953、jazzdisco 的 5000 系列年份欄 1953，三筆相符；jazzdisco 的 5000 系列年份欄依第 467 條可信（與同期紙本相符，與它 7000 系列那個系統性晚 1–2 年的欄位不同）。錄音 1944-11-16／1944-12-14／1944-12-20，全在 Timme Rosenkrantz 的紐約公寓。同期紙本：1953–55 年 156 期 Billboard 全文掃過，BLP 5016 沒有 Advance Record Releases 或評論條目（Blue Note 的 10 吋在 Billboard 只有部分上榜評論，這套 Garner 五冊一冊都沒有），所以年份靠資料庫兩筆＋jazzdisco，無紙本佐證，但也無紙本反證。",
+  "notes": "**覆核策展層：MBID／RG／單一 release／BLP 5016／10 吋 4 軌／年份 1953／掛名 Erroll Garner 全部成立，未擋下。**｜⚠ **人名邊界（派工信特注 5 的正面執行）**：本冊 jazzdisco 列的編制從頭到尾只有「Erroll Garner, piano」一個人，**沒有任何 possibly 標記**——會出現「possibly John Simmons, bass; overdubbed in at a later date, poss. 1953」的是同套的 **BLP 5015 Vol. 4 的〈Duke For Dinner〉**，不是本冊。**本卡正文只能寫獨奏，不得出現任何伴奏樂手名。**｜**性質**：不是錄音室專輯，是 1944 年私人醋酸盤九年後的商業發行；依研究層通則屬「把散落錄音首度彙整」，且是 Garner 生涯最早的錄音，**有歷史定位、不列建議移除**。正文可寫 1944 年錄音，但不得寫成 1944 年出版。｜**串流：三種查法跑完，判定有來源、但沒有任何一個 collectionId 同時含四軌。** (1) `search` us／gb／jp 三站以盤名＋掛名零命中（只回 Michael Bridge《Overture》假陽性）；(2) 藝人目錄 `lookup` 無本盤；(3) 直查候選 collectionId——**串流採信 305742218**（gb，Complete Jazz Series 1944 Vol. 1，含 The Clock Stood Still 與 All the Things You Are 兩軌），**另兩軌 Opus 1／Gaslight 在 304957904**（gb，同廠 Vol. 2 第 16／17 軌）。兩張都是**公版廠**（Complete Jazz Series），依第 359／489 條**逐軌相符可採、發行資訊不引店面**；括號裡的錄音日與 jazzdisco 逐一相符是同一批錄音的鐵證。**寫作層不得寫成「這張碟在店面上架」**，也不得用「前 N 軌」的說法。**有固定試聽來源。**｜⚠ **排除誤採**：gb 另有 533953973《Solo in New York》（℗ 1997 Copyright Group，24 軌）也有一首 Gaslight，但長度 153 秒、與本盤的 251 秒不同，是 1945 年另一次錄音，**不可採**。｜**封面**：CAA 有圖，策展層路徑覆核通過（另 Discogs release 6791279 有 2 張圖可備）。｜**拆盤**：a 組 Vol. 1–4 四個 RG 與本冊是五張不同的碟，正文不得寫成同一張的再版。"
+ },
+ {
+  "key": "desc2:Dizzy Gillespie|Horn of Plenty",
+  "artist": "Dizzy Gillespie",
+  "album": "Horn of Plenty",
+  "facts": [
+   {
+    "f": "release-group ea3fb3b4 的欄位：title「Horn of Plenty」、artist-credit「Dizzy Gillespie」（Person e9ba8ccb，US，1917–1993）、first-release-date 1953、primary-type Album、secondary-types 空、轄下 2 筆 release。release 6c0bc00a：1953 US Official、10 吋黑膠 8 軌、廠牌 Blue Note、目錄號同時登記 BLP 5017 與 LP 5017；八軌依序 Sweet Lorraine／Lady Bird／Hurry Home／Afro Paris／Wrap Your Troubles in Dreams／She's Funny That Way／Somebody Loves Me／Everything Happens to Me。另一筆 5f943549 是 2018 年 Reborn Recordings 的 11 軌 CD（公共領域再發）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ea3fb3b4-a1e3-4a93-a320-a5efce4eff33&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5017 記為 1953，八軌來自兩場巴黎錄音：1952 年 3 月 27 日 Studio Jouvenet（Gillespie 小號與人聲、Don Byas 男高音薩克斯風、Arnold Ross 鋼琴、Joe Benjamin 貝斯、Bill Clark 鼓、Umberto Canto 康加）出 Hurry Home（母帶 52V4210-1／BN2003）與 Afro-Paris（52V4211-3／BN2004）；1952 年 4 月 11 日 Schola Cantorum（Gillespie、Bill Tamper 長號、Hubert Fol 中音薩克斯風、Don Byas、Raymond Fol 鋼琴、Pierre Michelot 貝斯、Pierre Lemarchand 鼓）出其餘六軌，其中 Lady Bird 的原標題是 Dizzy Song。母帶號的 52V 前綴是 Vogue 的編號、BN 是 Blue Note 另給的。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 33041916 是 BLP 5017 的 1953 年首壓（封面印 LP 5017、中標印 BLP 5017，背面廣告只登到 BLP 5020，標籤地址 767 Lexington Ave NYC），4 張圖。notes 明寫「**US version with two different tracks: Lady Bird, Somebody Loves Me**」與錄音地「Studio Jouvenet, Paris, France, March 27, 1952」。credits 逐項列出 Don Byas（男高音薩克斯風）、Hubert Fol（中音）、Bill Tamper（長號）、Arnold Ross／Raymond Fol（鋼琴）、Joe Benjamin／Pierre Michelot（貝斯）、Bill Clark／Pierre Lemarchand（鼓）、Humberto Canto（康加），封面 Paul Bacon。同一 master 3742038 之下另有一筆 1954 年的同號重壓。",
+    "src": "https://www.discogs.com/release/33041916"
+   },
+   {
+    "f": "串流側：八軌全部在店面。us 店面 418323034《RTL: Dizzy Gillespie》（40 軌，版權欄「℗ 1952 - 1953 Disques Vogue SA」，即錄音權屬那一方的授權整編）第二片含 Afro Paris 183 秒、Hurry Home 177 秒、Somebody Loves Me 212 秒、Wrap Your Troubles In Dreams 169 秒、Sweet Lorraine 153 秒、Everything Happens to Me 170 秒，每軌都有試聽，並另收 Afro Paris 與 Hurry Home 的 alternate take。其餘兩軌 Lady Bird 與 She's Funny That Way 在公版廠 gb 店面 305744310《Complete Jazz Series 1952 - 1953》第 5 軌 Dizzy Song (Lady Bird) (04-11-52) 224 秒、第 7 軌 She's Funny That Way (04-11-52) 222 秒。",
+    "src": "https://itunes.apple.com/lookup?id=418323034&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Billboard 1954 年 2 月 13 日第 53 頁的專輯評論欄同時評了 Blue Note 剛推的 45 轉 EP 系列，其中「HORN OF PLENTY (1-EP) — Dizzy Gillespie, Trumpet. Blue Note 202」得 70 分，同欄還有 Blue Note 201（The Swinging Swedes《New Sounds From the Old World》）、204（Miles Davis, Trumpet）、401、403。這代表 BLP 5017 的內容在 1954 年初又以 45 轉 EP 形態出了一次，10 吋 LP 本身早於此。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1954/Billboard%201954-02-13.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "八軌裡有兩軌是 1952 年 3 月 27 日在 Studio Jouvenet 錄的，其餘六軌是兩週後在 Schola Cantorum——巴黎的兩間棚，兩組完全不同的伴奏班底",
+   "《Horn of Plenty》這個八軌編法是 Blue Note 自己排的：法國 Vogue 的同期 10 吋只與它共用六軌，〈Lady Bird〉與〈Somebody Loves Me〉是美國版獨有"
+  ],
+  "sound": "八軌 10 吋，1952 年春天兩場巴黎錄音。3 月 27 日那兩軌是小號＋男高音薩克斯風加康加的拉丁味小編制（Afro Paris、Hurry Home）；4 月 11 日那六軌加進長號與中音薩克斯風，走標準曲與抒情路線，Gillespie 幾軌親自唱。每軌兩分半到三分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Afro Paris",
+   "Sweet Lorraine",
+   "Lady Bird"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1953（卡單值成立）。MB first-release-date 1953、**Discogs release 33041916 是 1953 年首壓**（背面廣告只登到 BLP 5020，這是同期實物的內證）、jazzdisco 的 5000 系列年份欄 1953，三筆相符。同一 Discogs master 3742038 之下另有 1954 年的同號重壓（release 5879415），那是重壓不是首發。錄音 1952-03-27（Studio Jouvenet, Paris）與 1952-04-11（Schola Cantorum, Paris）。同期紙本：1953–55 年 156 期 Billboard 全文掃過，BLP 5017 本身沒有評論條目，找到的是 **1954-02-13 第 53 頁對 45 轉 EP「Blue Note 202」的評論**——那是同內容的 EP 版、不是 LP 首發，不足以改判，也不與 1953 衝突。",
+  "notes": "**覆核策展層：MBID／RG／BLP 5017／10 吋 8 軌／年份 1953／掛名 Dizzy Gillespie 全部成立。**｜⚠ **原盤他廠覆核（派工信第 1 點，用 a 組 James Moody 那把「同配置才算原盤」的尺）——第 461 條的判定成立、維持 Blue Note 為主。** 實查 Discogs：本盤 8 軌的**這個配置在 Vogue 側不存在**，Vogue 的法國 10 吋 LD 077《Plays in Paris》只與它共用 6 軌（另收 I Don't Know Why、I Cover the Waterfront，且沒有 Lady Bird 與 Somebody Loves Me），**Discogs release 33041916 的 notes 就寫「US version with two different tracks」**。錄音權屬 Vogue、法國先發是 78 轉，但**「原盤」指同一配置的專輯**，所以 label 以 Blue Note 為主、Vogue 註為錄音來源，`year` 不改。**與 James Moody BLP 5005 的差別正在這裡**（那張是同八首、同 10 吋、同 master，所以判 Vogue 原盤）。｜**串流：三種查法跑完，八軌全部有來源。串流採信 418323034**（us，40 軌，版權欄 ℗ Disques Vogue SA，含本盤六軌），**另兩軌 Lady Bird（該站題 Dizzy Song）與 She's Funny That Way 在 305744310**（gb，公版廠 Complete Jazz Series 1952-1953 第 5／7 軌）。**沒有任何一個 collectionId 同時含八軌**，寫作層不得寫成「這張碟在店面上架」、也不得用「前 N 軌」。⚠ 策展層猜的《Dizzy Digs Paris》（1617148538，41 軌）**實查零重疊**，那張是 1953 年 Pleyel 現場與別場的合集，**不可採**。**有固定試聽來源。**｜**人名邊界**：Don Byas、Arnold Ross、Joe Benjamin、Bill Clark、Umberto／Humberto Canto、Bill Tamper、Hubert Fol、Raymond Fol、Pierre Michelot、Pierre Lemarchand 有 jazzdisco ＋ Discogs credits 雙重背書，可寫；封面設計 Paul Bacon 只在 Discogs credits，可提可不提。｜**曲名**：Lady Bird 的巴黎原標題是 Dizzy Song（jazzdisco 與店面都這樣記），正文若提要說明是同一軌。｜**封面**：CAA 有圖。｜**性質**：不是 Blue Note 自錄，是 Vogue 巴黎錄音的美國授權編輯盤，正文必須寫清楚。"
+ },
+ {
+  "key": "desc2:Gil Mellé|New Faces - New Sounds",
+  "artist": "Gil Mellé",
+  "album": "New Faces - New Sounds",
+  "facts": [
+   {
+    "f": "release-group 3038c333 的欄位：title「New Faces – New Sounds」（en dash）、artist-credit「Gill Mellé」（實體 8353ae26，無 type／area）、first-release-date 1953、primary-type Album、secondary-types 空、轄下 2 筆 release。release c8e6eb90：1953 US Official、10 吋黑膠 8 軌、Blue Note BLP 5020；八軌依序 October／Cyclotron／Venus／Under Capricorn／The Gears／Mars／Four Moons／Sunset Concerto。另一筆 761403f9 是 2015 年 Blue Note 的 8 軌數位版。MB 另有 Person 實體「Gil Mellé」（6cde5a82，US，1931-12-31–2004-10-28），與 credit 那個實體疑為重複。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3038c333-71e1-490b-83e2-85da5eb82609&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs release 8216978（BLP 5020，US 1953，4 張圖）的 notes 明寫錄音日：**A1–A4 錄於 1953 年 1 月 31 日、B1–B4 錄於 1952 年 3 月 2 日**。credits 分成兩組人：1952 年那場是 Eddie Bert（長號）、Mellé（男高音薩克斯風）、Joe Manning（顫音琴）、George Wallington（鋼琴）、Red Mitchell（貝斯）、Max Roach（鼓）、Monica Dell（人聲）；1953 年那場是化名「X. Kentonite」的 Eddie Bert、Mellé、Tal Farlow（吉他）、Clyde Lombardi（貝斯）、Joe Morello（鼓）。**封面設計掛 Gil Mellé 自己**，內頁文字 Barry Ulanov。",
+    "src": "https://www.discogs.com/release/8216978"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5020 記為「Gil Melle Quintet/Sextet - New Faces-New Sounds」1953，兩場都標在 Van Gelder Studio, Hackensack, NJ：1952 年 3 月 2 日（母帶 BN461–BN464）出 Four Moons／The Gears／Mars／Sunset Concerto，1953 年 1 月 31 日（BN465–BN468）出 Cyclotron／October／Under Capricorn／Venus。同頁 BLP 5033、5054 是他之後的 Vol. 2 與 Vol. 3。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "英文維基的 Rudy Van Gelder 條目寫：「Van Gelder 的朋友、男中音薩克斯風手 Gil Mellé 在 1953 年把他引介給 Blue Note 的製作人 Alfred Lion。」Van Gelder 自 1946 年起就在父母位於 Hackensack 的家中錄音，1959 年才搬到 Englewood Cliffs 的專用棚。",
+    "src": "https://en.wikipedia.org/wiki/Rudy_Van_Gelder"
+   },
+   {
+    "f": "英文維基的 Gil Mellé 條目：1931-12-31 紐約出生、2004-10-28 於加州 Malibu 辭世；1952 至 1957 年間在 Blue Note 與 Prestige 領銜錄了數場；「1950 年代他替 Miles Davis、Thelonious Monk、Sonny Rollins 的唱片畫過封面」；後來成為最早自製電子樂器的作曲家之一，1968–1993 年替影視配樂。",
+    "src": "https://en.wikipedia.org/wiki/Gil_Mell%C3%A9"
+   },
+   {
+    "f": "Billboard 1953 年 10 月 3 日第 34 頁的爵士專輯評論欄同時列出三張 Blue Note 10 吋並給分：「NEW FACES - NEW SOUNDS: GIL MELLE (1-10\") - Blue Note 5020」68 分、「NEW FACES-NEW SOUNDS: KENNY DREW TRIO (1-10\") Blue Note 5023」65 分、「NEW FACES-NEW SOUNDS: LOU DONALDSON (1-10\") Blue Note 5021」62 分。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-10-03.pdf"
+   },
+   {
+    "f": "串流側：us 店面 1443170546《New Faces - New Sounds》（掛 Gil Melle，8 軌）與原盤**逐軌同序**：October 223 秒、Cyclotron 195、Venus 222、Under Capricorn 182、The Gears 187、Mars 169、Four Moons 144、Sunset Concerto 127，每軌都有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1443170546&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Blue Note 在 Hackensack 那間民宅錄音的起點，是 Mellé 把自己的朋友 Rudy Van Gelder 介紹給 Alfred Lion",
+   "八軌的曲名幾乎全是天文：Cyclotron、Venus、Mars、Under Capricorn、Sunset Concerto——封面也是 Mellé 自己畫的"
+  ],
+  "sound": "八軌 10 吋，兩場相隔近一年的錄音拼成。1952 年那四軌是長號＋男高音薩克斯風＋顫音琴的六重奏，還有一軌帶人聲；1953 年那四軌換成吉他五重奏，線條更乾、更冷。作曲全部出自 Mellé，標題多取自天文與物理。每軌兩分到三分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Cyclotron",
+   "Four Moons",
+   "October"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1953（卡單值成立）。MB first-release-date 1953、Discogs release 8216978 released 欄 1953、jazzdisco 1953，三筆相符，且**同期紙本 Billboard 1953-10-03 第 34 頁已經給 Blue Note 5020 打了 68 分**——這是第 431 條要的獨立來源（紙本），年份釘死 1953。錄音 1952-03-02 與 1953-01-31。",
+  "notes": "⚠ **擋下策展層一處（錄音日期）**：策展層 why 寫「1952-12／1953-01 兩場錄音」、risk 寫「錄音年 1952-12-15／1953-01-31 兩場」——**1952 那場的正確日期是 1952 年 3 月 2 日，不是 12 月**。兩個獨立來源一致：**Discogs release 8216978 的 notes**「A1-A4: Recorded January 31, 1953. B1-B4: Recorded March 2, 1952.」與 **jazzdisco 的 BN461–BN464 那一段**。**正文引錄音日一律用 1952-03-02／1953-01-31。**｜✅ **策展層的 Van Gelder 宣稱站得住、但要改寫年份**：英文維基 Rudy Van Gelder 條目明寫是 **1953 年** Mellé 把 Van Gelder 引介給 Alfred Lion。**但 jazzdisco 把本盤 1952-03-02 那場也標在 Van Gelder Studio**——若屬實，Blue Note 第一次在 Hackensack 錄音就早於維基說的引介年。**兩邊對不上，標 uncertain**：正文可寫「Mellé 是把 Van Gelder 引介給 Alfred Lion 的人」（有維基背書），**但不得寫「本盤某場是 Blue Note 第一次在 Van Gelder 家錄音」這種序數宣稱**（第 253 條）。｜**掛名**：MB credit 的「Gill Mellé」是早期封面拼法，卡單用通行的「Gil Mellé」成立（12 吋 BLP 1517 與所有再發、Apple 皆此）；c-136 a 組同字串，不分裂。｜**串流：第一種查法就命中原配置。串流採信 1443170546**（us，8 軌逐軌同序，每軌有試聽）。**有固定試聽來源。**｜**人名邊界**：Eddie Bert、Joe Manning、George Wallington、Red Mitchell、Max Roach、Monica Dell、Tal Farlow、Clyde Lombardi、Joe Morello 有 jazzdisco ＋ Discogs credits 雙重背書，可寫。⚠ **「X. Kentonite」是 Eddie Bert 在 1953 年那場用的化名**（兩邊都這樣記，因為他當時在 Stan Kenton 樂團合約下），是可寫的冷知識。｜**跨卡串連**：Tal Farlow 在本盤 1953 年那場是側人，同批另有他的領銜盤 BLP 5042；Mellé 替本批 Wynton Kelly BLP 5025 畫了封面（Discogs credits）——同一批裡的兩條實線。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯（兩場），不列建議移除。"
+ },
+ {
+  "key": "desc2:Kenny Drew|New Faces - New Sounds, Introducing the Kenny Drew Trio",
+  "artist": "Kenny Drew",
+  "album": "New Faces - New Sounds, Introducing the Kenny Drew Trio",
+  "facts": [
+   {
+    "f": "release-group 3ac4d8fb 的欄位：title「New Faces – New Sounds, Introducing the Kenny Drew Trio」、artist-credit 是群組實體「Kenny Drew Trio」（47c87f1d，Group，US）、first-release-date 1953、primary-type Album、secondary-types 空、轄下 2 筆 release。release 3d566e01：1953 US Official、10 吋黑膠 8 軌、Blue Note BLP 5023；八軌依序 Yesterdays／Stella by Starlight／Gloria／Be My Love／Lover Come Back to Me／Everything Happens to Me／It Might as Well Be Spring／Drew's Blues。另一筆 c3f5dfbd 是 1989 年日版 CD（Blue Note CJ28-5124，10 軌，改題《Introducing the Kenny Drew Trio》）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3ac4d8fb-83bf-4448-9b64-3eab1f19c5b3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5023 記為「Kenny Drew - New Faces-New Sounds」1953：Kenny Drew 鋼琴、Curly Russell 貝斯、Art Blakey 鼓，一場錄完，Van Gelder Studio, Hackensack, NJ，1953 年 4 月 16 日，母帶 BN469 到 BN476 共八個。同頁註明 1983 年日本以 BNJ-71002 再發為《Introducing The Kenny Drew Trio》、1998 年併進 Blue Note 7243 4 95747 2 4《Howard McGhee / Introducing The Kenny Drew Trio》。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 7142441（BLP 5023，US 1953，4 張圖）的 notes 寫「Recorded in New York City on April 16, 1953」，標籤兩面都印「Blue Note Records 767 Lexington Ave NYC」、蠟紋區兩面都有 Plastylite 的「Ear」壓印。credits：Curly Russell（貝斯）、Art Blakey（鼓）、Kenny Drew（鋼琴）、**Leonard Feather 寫內頁文字**。",
+    "src": "https://www.discogs.com/release/7142441"
+   },
+   {
+    "f": "Billboard 1953 年 10 月 3 日第 34 頁的爵士專輯評論欄給「NEW FACES-NEW SOUNDS: KENNY DREW TRIO (1-10\") Blue Note 5023」65 分，同欄另有 Blue Note 5020（Gil Melle，68 分）與 5021（Lou Donaldson，62 分）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-10-03.pdf"
+   },
+   {
+    "f": "串流側：us 店面 1455162555《New Faces - New Sounds, Introducing the Kenny Drew Trio》（掛 Kenny Drew Trio，8 軌）與原盤**逐軌同序**：Yesterdays 321 秒、Stella By Starlight 148、Gloria 203、Be My Love 164、Lover Come Back To Me! 212、Everything Happens To Me 282、It Might As Well Be Spring 169、Drew's Blues 145，每軌都有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1455162555&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1953 年 4 月 16 日一個下午，八首錄完：Kenny Drew 二十五歲的第一張領銜盤，節奏組是 Curly Russell 與 Art Blakey",
+   "Billboard 那一週一口氣評了三張 Blue Note 10 吋——Gil Mellé 68 分、這張 65 分、Lou Donaldson 62 分"
+  ],
+  "sound": "八軌 10 吋，1953 年 4 月 16 日在 Hackensack 一場錄完的鋼琴三重奏。六首標準曲（Yesterdays、Stella by Starlight、It Might as Well Be Spring……）加一首自作藍調，Drew 的觸鍵偏 bop、右手線條長；Blakey 的鼓在這張是推進而非獨當一面。每軌兩分半到五分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Yesterdays",
+   "Drew's Blues",
+   "Lover Come Back to Me"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1953（卡單值成立）。MB first-release-date 1953、Discogs release 7142441 released 欄 1953、jazzdisco 1953，再加**同期紙本 Billboard 1953-10-03 第 34 頁的 65 分評論**——紙本是第 431 條要的獨立來源，年份釘死 1953。錄音 1953-04-16，Van Gelder Studio, Hackensack, NJ。",
+  "notes": "**覆核策展層：MBID／RG／BLP 5023／10 吋 8 軌／年份 1953／錄音日 1953-04-16／掛名收攏到 Kenny Drew 全部成立，未擋下。**｜⚠ **曲名一處要注意**：jazzdisco 把母帶 BN472-1 記成〈Spring Will Be A Little Late〉，但 **MB 與店面（Apple 1455162555）都作〈It Might as Well Be Spring〉**，兩票對一票，**正文用〈It Might as Well Be Spring〉**；jazzdisco 這一欄可能串到別場的曲目。｜**串流：第一種查法就命中原配置。串流採信 1455162555**（us，8 軌逐軌同序，每軌有試聽）。**有固定試聽來源。**｜**人名邊界**：Curly Russell、Art Blakey 有 jazzdisco ＋ Discogs credits 雙重背書，可寫；**Leonard Feather 寫內頁文字只在 Discogs credits，可提**——同批 BLP 5034、5042、5044、5056 的內頁文字也都是他，那是 Blue Note 10 吋末期的固定班底。｜**掛名**：MB credit 是群組「Kenny Drew Trio」，卡單收攏到本人成立（池中先例《Kenny Drew — Kenny Drew Trio》1956 就是把 Trio 盤掛在本人名下）。⚠ **正文絕不得與池中那張 1956 年 Riverside《Kenny Drew Trio》混寫**（Paul Chambers、Philly Joe Jones，另一張碟）。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯（一場錄完），不列建議移除。"
+ },
+ {
+  "key": "desc2:Howard McGhee|Howard McGhee Volume 2",
+  "artist": "Howard McGhee",
+  "album": "Howard McGhee Volume 2",
+  "facts": [
+   {
+    "f": "release-group 65d03a1e 的欄位：title「Howard McGhee Volume 2」、artist-credit「Howard McGhee」（Person 22b66dc2，US，1918-03-06–1987-07-17）、first-release-date 1953、primary-type Album、secondary-types 空、轄下 2 筆 release。release 760d9acb：1953 US Official、10 吋黑膠 6 軌、Blue Note BLP 5024；六軌依序 Jarm／Goodbye／Futurity／Shabozz／Tranquillity／Ittapnna。另一筆 8a10f2e7 是 2011-07-04 德國 Sinetone AMR 的 6 軌數位版。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65d03a1e-3ae8-438d-ba02-025067280aa5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5024 記為 1953，一場錄完：Howard McGhee 小號、Gigi Gryce 中音薩克斯風與長笛（第 1–5 軌）、Horace Silver 鋼琴、Tal Farlow 吉他、Percy Heath 貝斯、Walter Bolden 鼓，**WOR Studios, NYC，1953 年 5 月 20 日**，母帶 BN483 到 BN488。1998 年併進 Blue Note 7243 4 95748 2 3《Howard McGhee Vol. 2 / Tal Farlow Quartet》。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 7698397（BLP 5024，US 1953）的 notes 寫「Recorded at WOR Studios, NYC, **May 20, 1953**」、「10\" deep groove label - Lexington address - issued in 1953」。credits：Gigi Gryce（中音薩克斯風、長笛）、Percy Heath（貝斯）、Walter Bolden（鼓）、Tal Farlow（吉他）、Horace Silver（鋼琴）、Howard McGhee（小號），封面 John Hermansader。",
+    "src": "https://www.discogs.com/release/7698397"
+   },
+   {
+    "f": "Billboard 1953 年 10 月 10 日第 40 頁的爵士專輯評論欄給「HOWARD McGHEE, VOL. 2 (1-10\") Blue Note 5024」66 分，同欄另有 Pacific Jazz PJLP-4（Harry Edison Quartet《Sweets at the Haig》，65 分）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-10-10.pdf"
+   },
+   {
+    "f": "串流側：us 店面 1511079369《Howard McGhee (Vol. 2) - EP》（6 軌）與原盤**逐軌同序**：Jarm 275 秒、Goodbye 250、Futurity 245、Shabozz 239、Tranquillity 250、Ittapnna 229，每軌都有試聽。Apple 把這類 6 軌以下的 10 吋盤一律標成「- EP」。",
+    "src": "https://itunes.apple.com/lookup?id=1511079369&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六軌裡有五軌是 Gigi Gryce 吹中音薩克斯風與長笛——長笛在 1953 年的 bop 六重奏還是稀客",
+   "同一組人隔幾個月就散進 Blue Note 目錄的別處：Tal Farlow 有自己的 BLP 5042、Gryce 有巴黎的 BLP 5048、Silver 有 BLP 5034"
+  ],
+  "sound": "六軌 10 吋，1953 年 5 月 20 日在 WOR Studios 一場錄完的六重奏。小號＋中音薩克斯風（部分軌換長笛）的雙管前線，加上吉他，四分鐘上下的中速 bop 與一首抒情標準曲〈Goodbye〉。Silver 的鋼琴已經有後來 hard bop 的重音。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Shabozz",
+   "Jarm",
+   "Goodbye"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1953（卡單值成立）。MB first-release-date 1953、Discogs release 7698397 released 欄 1953（notes 另寫「issued in 1953」）、jazzdisco 1953，再加**同期紙本 Billboard 1953-10-10 第 40 頁的 66 分評論**，年份釘死 1953。",
+  "notes": "⚠ **擋下策展層一處（錄音日期）**：策展層 why 與 risk 都寫「1953-10-20 六重奏」，**正確是 1953 年 5 月 20 日**。兩個獨立來源一致：**Discogs release 7698397 的 notes**「Recorded at WOR Studios, NYC, May 20, 1953」與 **jazzdisco 的 BN483–BN488 那一段**。**而且 10-20 不可能**——Billboard 1953-10-10 就已經刊出這張的評論了，錄音日不會晚於評論日。**正文引錄音日一律用 1953-05-20，地點 WOR Studios（不是 Van Gelder）。**｜**其餘覆核**：MBID／RG／BLP 5024／10 吋 6 軌／年份 1953／掛名 Howard McGhee 成立。｜**串流：第一種查法就命中原配置。串流採信 1511079369**（us，6 軌逐軌同序，每軌有試聽）。**Apple 標的「- EP」是店面對 10 吋盤的標法**，不改 releaseType（第 464 條）。**有固定試聽來源。**｜**人名邊界**：Gigi Gryce、Horace Silver、Tal Farlow、Percy Heath、Walter Bolden 有 jazzdisco ＋ Discogs credits 雙重背書，可寫；封面 John Hermansader 只在 Discogs credits，可提可不提。｜**跨卡串連**：這一組人與同批三張碟直接相連（Tal Farlow BLP 5042、Gigi Gryce BLP 5048、Horace Silver BLP 5034），可寫但不得與 a 組 BLP 5012《Howard McGhee All Stars》混為同一場。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯，不列建議移除。"
+ },
+ {
+  "key": "desc2:Wynton Kelly|New Faces - New Sounds",
+  "artist": "Wynton Kelly",
+  "album": "New Faces - New Sounds",
+  "facts": [
+   {
+    "f": "release-group 9f08f731 的欄位：title「New Faces - New Sounds」（此 RG 已是 ASCII 連字號）、artist-credit「Wynton Kelly」（Person d3f9352c，US，1931–1971）、first-release-date 1953、primary-type Album、secondary-types 空、轄下 3 筆 release。release 1f741180：1953 US Official、10 吋黑膠 8 軌、Blue Note BLP 5025；八軌依序 Cherokee／Crazy He Calls Me／Blue Moon／Born to Be Blue／Moonlight in Vermont／There'll Never Be Another You／I've Found a New Baby／Good-Bye。另兩筆是一筆無日期的 8 軌黑膠與 1991 年的 19 軌 CD《Piano Interpretations》（Blue Note CDP 7 84456 2）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9f08f731-586f-4cf0-98b8-2debc52220e4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs release 3998628（BLP 5025，US 1953，4 張圖）的 notes 寫「Recorded at WOR Studios, New York City on **July 25** (A1,A3,A4,B3) and **August 1** (A2,B1,B2,B4), **1951**」。credits：Wynton Kelly（鋼琴）、Franklin Skeete 與 Oscar Pettiford（貝斯）、Lee Abrams（鼓）、Leonard Feather（內頁文字）、**封面設計 Gil Mellé**。",
+    "src": "https://www.discogs.com/release/3998628"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5025 記為「Wynton Kelly - New Faces-New Sounds」1953，兩場都在 WOR Studios, NYC：1951 年 7 月 25 日（Kelly 鋼琴、Oscar Pettiford 貝斯於第 1／4 軌、Franklin Skeete 貝斯於第 2／3 軌、Lee Abrams 鼓）出 Blue Moon／I've Found A New Baby／Cherokee／Born To Be Blue；1951 年 8 月 1 日（Kelly 第 3 軌改彈鋼片琴、Skeete 貝斯、Lee Abrams 改打康加）出 Goodbye／There Will Never Be Another You／Moonlight In Vermont／Crazy, He Calls Me。1983 年日本以 BNJ-71001 再發為《Piano Interpretations By Wynton Kelly》、1991 年 CD 題《Piano Interpretations》。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Billboard 1953 年 10 月 31 日第 34 頁的爵士專輯評論欄給「NEW FACES. NEW SOUNDS: WYNTON KELLY (1-10\") - Blue Note 5025」63 分，同欄另有「MILES DAVIS: VOL. 2 (1-10\") -Blue Note 5022」70 分。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-10-31.pdf"
+   },
+   {
+    "f": "串流側：us 店面 1455262618《New Faces - New Sounds, Wynton Kelly Piano Interpretations》（8 軌）與原盤逐軌同序：Cherokee 189 秒、Crazy He Calls Me 196、Blue Moon 191、Born To Be Blue (Instrumental/Remastered) 204、Moonlight In Vermont 203、There'll Never Be Another You 181、I've Found A New Baby 172、Goodbye (2nd Take) 165，每軌都有試聽。該條目的 releaseDate 欄填 1951-07-28、℗ 1951。",
+    "src": "https://itunes.apple.com/lookup?id=1455262618&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "錄的時候他十九歲，出版時他二十一歲——1951 年夏天那兩場一直擱到 1953 年才成為一張 10 吋",
+   "第二場裡有一軌 Kelly 沒彈鋼琴、改彈鋼片琴，鼓手也放下鼓棒改打康加"
+  ],
+  "sound": "八軌 10 吋，1951 年 7 月 25 日與 8 月 1 日兩場 WOR Studios 的鋼琴三重奏，全是標準曲。Kelly 這時的觸鍵已經是後來 Miles Davis 五重奏那種帶彈性的分句，左手節制；第二場有一軌換鋼片琴、鼓改康加，聲響明顯不同。每軌不到三分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Cherokee",
+   "Moonlight in Vermont",
+   "Blue Moon"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1953（卡單值成立）。MB first-release-date 1953、Discogs release 3998628 released 欄 1953、jazzdisco 1953，再加**同期紙本 Billboard 1953-10-31 第 34 頁的 63 分評論**，年份釘死 1953。⚠ **錄音年是 1951**（1951-07-25 與 1951-08-01，WOR Studios, NYC），比發行早兩年；**店面 1455262618 的 releaseDate 1951-07-28 是把錄音期當發行日**，第 364 條的形狀，不採——而且連錄音日都填錯了（真正的兩場是 07-25 與 08-01，沒有 07-28）。",
+  "notes": "**覆核策展層：MBID／RG／BLP 5025／10 吋 8 軌／年份 1953／錄音 1951 兩場／掛名 Wynton Kelly 全部成立，未擋下。**｜**補一處策展層沒查到的**：店面那個 1951-07-28 不只是「錄音日被當成發行日」，**它連日期本身都不對**——Discogs 與 jazzdisco 兩邊都記 07-25 與 08-01 兩場，沒有 07-28。正文若要寫錄音日，用這兩個。｜**串流：第一種查法就命中原配置。串流採信 1455262618**（us，8 軌逐軌同序）。⚠ 第 8 軌店面題「Goodbye (2nd Take)」、第 4 軌題「Born To Be Blue (Instrumental/Remastered)」——曲目對得上，是店面的標註習慣。**有固定試聽來源。**｜**人名邊界**：Oscar Pettiford、Franklin Skeete、Lee Abrams 有 jazzdisco ＋ Discogs credits 雙重背書，可寫。**封面設計是 Gil Mellé**（Discogs credits）——同批 BLP 5020 就是他自己的領銜盤，兩張可互指，是這一批少見的實線。｜**盤名**：兩名並存（《New Faces – New Sounds》與再發的《Piano Interpretations》），卡單照 MB RG title 成立，正文可並列。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯（兩場），不列建議移除。"
+ },
+ {
+  "key": "desc2:Edmond Hall|Memorable Sessions in Jazz",
+  "artist": "Edmond Hall",
+  "album": "Memorable Sessions in Jazz",
+  "facts": [
+   {
+    "f": "release-group 99c53a01 的欄位：title「Memorable Sessions in Jazz」、artist-credit 是五人並列「Edmond Hall / Charlie Christian / Meade Lux Lewis / Red Norvo / Teddy Wilson」（五個 Person 實體 d0025855／98607588／abb415f3／54badd18／2e89725a）、first-release-date 1953、primary-type Album、secondary-types 空、轄下只有 1 筆 release。release 139d622f：1953 US、10 吋黑膠 6 軌、Blue Note BLP 5026；六軌依序 Profoundly Blue／Jammin' In Four／Edmond Hall Blues／Celestial Express／Blue Interval／Seein' Red。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=99c53a01-4bc4-4c86-a693-84ae85cba8a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5026 記為 1953，兩場錄音：**Reeves Sound Studios, NYC，1941 年 2 月 5 日**——Edmond Hall 單簧管、Meade「Lux」Lewis 鋼片琴、**Charlie Christian 原聲吉他**、Israel Crosby 貝斯（母帶 R3459A／R3460／R3461-2／R3462A-2，出 Jammin' In Four／Edmond Hall Blues／Profoundly Blue No. 2／Celestial Express）；**WOR Studios, NYC，1944 年 1 月 25 日**——Hall 單簧管、Red Norvo 顫音琴、Teddy Wilson 鋼琴、Carl Kress 吉他、Johnny Williams 貝斯（BN909／BN911，出 Blue Interval／Seein' Red）。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 9024549 是 BLP 5026 的 1953 年 US 10 吋（4 張圖，master 1056443 的 main release），曲序 A1 Profoundly Blue／A2 Jammin' In Four／A3 Edmond Hall Blues／B1 Celestial Express／B2 Blue Interval／B3 Seein' Red。credits 逐項列出 Israel Crosby 與 Johnny Williams（貝斯）、Meade「Lux」Lewis（鋼片琴）、Edmond Hall（單簧管）、Carl Kress 與 Charlie Christian（吉他）、Teddy Wilson（鋼琴）、Red Norvo（顫音琴），**封面掛 Gil Mellé**。",
+    "src": "https://www.discogs.com/release/9024549"
+   },
+   {
+    "f": "英文維基的 Edmond Hall 條目：1901-05-15 生於路易斯安那州 Reserve（紐奧良西方約 40 英里的密西西比河畔），1967-02-11 於波士頓辭世；出身音樂家庭，**他 1941 年 2 月第一次以領班身分錄音**，「可能最為人知的是 1941 年那首室內樂式的爵士〈Profoundly Blue〉」。他試過 Boehm 系統的單簧管但很快放棄，一輩子用 Albert 系統。",
+    "src": "https://en.wikipedia.org/wiki/Edmond_Hall"
+   },
+   {
+    "f": "1941 年 2 月 5 日那場 Charlie Christian 彈的是**原聲吉他**，不是他平常那把電吉他；印第安納公共媒體的爵士節目 Night Lights 描述這場是「唱片買家難得聽到 Christian 彈原聲吉他的一次」，並引評論家 Martin Williams 對〈Profoundly Blue〉的說法：開頭三段 Christian 的即興，Crosby 的貝斯在底下走真正的對位旋律，Lewis 的鋼片琴偶爾插話。Christian 生於 1916-07-29、卒於 1942-03-02，這場之後一年多就辭世。",
+    "src": "https://www.ipm.org/show/nightlights/2019-09-11/electrifying-charlie-christian"
+   },
+   {
+    "f": "串流側：六軌全部在店面同一張官方整編裡。us 店面 1877197493《Profoundly Blue: Memorable Sessions With Edmond Hall》（17 軌，版權欄「A Blue Note Records Release; This Compilation ℗ 1998 Capitol Records, LLC」）第 1 軌 Jammin' In Four 263 秒、第 2 軌 Edmond Hall Blues 259 秒、第 3 軌 Profoundly Blue 250 秒、第 5 軌 Celestial Express 236 秒、第 8 軌 Blue Interval 257 秒、第 11 軌 Seein' Red 256 秒，每軌都有試聽；另 14 軌是同兩場與 1944 年 5 月 5 日那場的其餘面與 alternate take。同內容的日版 CD（Discogs release 14371670）在 notes 裡直接寫明「與 1953 年那張（release 9024549）共用六軌：第 1、2、3、5、8、11 軌」。",
+    "src": "https://itunes.apple.com/lookup?id=1877197493&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1941 年 2 月 5 日的四人編制是單簧管、鋼片琴、原聲吉他、貝斯——沒有鼓；Charlie Christian 那天把電吉他放在一邊",
+   "封面是 Gil Mellé 畫的。他自己的第一張領銜盤 BLP 5020 也在同一批目錄裡"
+  ],
+  "sound": "六軌 10 吋，兩場相隔三年的 78 轉錄音。1941 年那四軌是無鼓的四人室內編制：單簧管在鋼片琴的細碎音色上吹長句，原聲吉他與貝斯撐底，慢速、克制；1944 年那兩軌換成顫音琴與鋼琴的五重奏，擺盪感更接近 swing。每面三分多鐘。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Profoundly Blue",
+   "Celestial Express",
+   "Blue Interval"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1953（卡單值成立）。MB first-release-date 1953、Discogs release 9024549 released 欄 1953、jazzdisco 的 5000 系列 1953，三筆相符。錄音 1941-02-05（Reeves Sound Studios, NYC）與 1944-01-25（WOR Studios, NYC）。同期紙本：1953–55 年 156 期 Billboard 全文掃過，BLP 5026 沒有 Advance Record Releases 或評論條目，無紙本佐證亦無反證。",
+  "notes": "⚠ **擋下策展層一處（樂器）**：策展層 why 寫「Charlie Christian **電吉他**」——**兩個獨立來源都說是原聲吉他**：jazzdisco 的編制欄明寫「Charlie Christian, acoustic guitar」，Night Lights 的節目文字說這場是「難得聽到 Christian 彈原聲吉他的一次」。**正文必須寫原聲吉他**，那正是這場之所以被反覆提起的原因。⚠ 但**「他唯一一次原聲吉他錄音」這句話不得寫**——Night Lights 只說「rare chance」、沒說唯一，依第 253 條退成「難得／罕見」。｜⚠ **補一處策展層漏的樂手**：1941 年那場的貝斯是 **Israel Crosby**、1944 年那場是 **Carl Kress（吉他）與 Johnny Williams（貝斯）**，jazzdisco 與 Discogs credits 兩邊都有，可寫；策展層只提了 MB credit 的五個人。｜⚠ **jazzdisco 把 BLP 5026 記成「Various Artists - Memorable Sessions」**，但它列出的兩場編制**都由 Edmond Hall 領銜**（1941 Celeste Quartet、1944 Quintet），且維基明寫 Hall「1941 年 2 月第一次以領班身分錄音」——**第 462 條例外 2 的判定成立，掛 Edmond Hall 沒問題**，jazzdisco 那個 VA 標註不足以推翻。｜**串流：三種查法跑完，六軌全部在同一個 collectionId 裡。串流採信 1877197493**（us，17 軌官方 Blue Note 整編，本盤六軌在第 1／2／3／5／8／11 軌，每軌有試聽）。**這個對應關係有第二個來源背書**：日版 CD 的 Discogs 條目（release 14371670）notes 直接寫「與 release 9024549 共用六軌：1, 2, 3, 5, 8, 11」，與逐軌曲名比對完全一致。**不是連續的「前 N 軌」，寫作層要按曲名指，不得用前 N 軌的說法。有固定試聽來源。**｜**封面：CAA 404，逐張覆核可走的路＝Discogs。** master 1056443 的 main release 9024549 **有 4 張圖**（1953 年 US 原壓），策展層說的「Discogs 條目補齊」這條路成立；另 1998 年日版 14371670 的封面是同一幅畫的上色版。⚠ 4 張圖在 Discogs 都標 secondary（沒有 primary），取圖時要自己挑正面那張。｜**曲名一處**：jazzdisco 把 1941 年那面記成〈Profoundly Blue No. 2〉（母帶 R3461-2），MB／Discogs／店面都作〈Profoundly Blue〉；店面那張整編同時收〈Profoundly Blue〉與〈Profoundly Blue No. 2〉兩軌，**本盤收的是第 3 軌〈Profoundly Blue〉**。｜**性質**：不是錄音室專輯，是 1941／1944 年 78 轉的首次 LP 化（同池中 Monk《Genius of Modern Music》那個形狀）；**有歷史定位、不列建議移除**。正文可寫 1941 年錄音，不得寫成 1941 年出版。"
+ },
+ {
+  "key": "desc2:Horace Silver|Horace Silver Trio, Vol. 2",
+  "artist": "Horace Silver",
+  "album": "Horace Silver Trio, Vol. 2",
+  "facts": [
+   {
+    "f": "release-group 65b3cbe6 的欄位：title 只有「Vol. 2」、artist-credit「Horace Silver Trio And Art Blakey」（群組實體 e8c90011「The Horace Silver Trio」＋ Person 601e7466「Art Blakey」）、first-release-date 1954、primary-type Album、secondary-types 空、轄下只有 1 筆 release。release acfe7a99：1954 US Official、10 吋黑膠 8 軌、Blue Note BLP 5034；八軌依序 How About You／I Remember You／Silverware／Message From Kenya／Opus De Funk／Nothing But The Soul／Buhaina／Day In Day Out。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65b3cbe6-2cd8-44b4-9d9c-019201d31193&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5034 記為「Horace Silver Trio Vol. 2／Art Blakey-Sabu - Spotlight On Drums」1954，**八軌全部出自 1953 年 11 月 23 日 WOR Studios 的同一場**：Horace Silver 鋼琴與 Percy Heath 貝斯只在第 2、3、5–8 軌，Art Blakey 全場打鼓，「Sabu」Martinez 的邦哥與康加**只在第 1 軌〈Message From Kenya〉**；第 4 軌〈Nothing But The Soul〉沒有鋼琴與貝斯。母帶 BN533 到 BN540。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 8541590（BLP 5034，US 1954，4 張圖）的 notes 寫「Recording Date: November 23, 1953, NYC, WOR Studios」並註明蠟紋區有 Plastylite 的「P（ear）」壓印、**沒有 RVG 刻印**。credits 只列 Percy Heath（貝斯）、Art Blakey（鼓）、Horace Silver（鋼琴），封面設計 Jerome Kühl、攝影 Francis Wolff、內頁文字 Leonard Feather。",
+    "src": "https://www.discogs.com/release/8541590"
+   },
+   {
+    "f": "Billboard 1954 年 6 月 26 日第 39 頁的爵士專輯評論給「HORACE SILVER TRIO, VOL. 2 (1-10\") Blue Note 5034」**78 分**，評論寫：這張新盤「必定讓不少現代爵士樂迷吃驚」，內含六段 Silver 的鋼琴獨奏、由 Percy Heath 的貝斯與 Art Blakey 的鼓明亮地襯底，曲目是三首標準曲加三首 Silver 自作曲，其中最好的幾首（有些先前已單曲發行過）包括〈Opus De Funk〉〈Silverware〉〈How About You〉；「除了三重奏那幾面，鼓手 Art Blakey 還與康加鼓手 Sabu 聯手做了一面精彩的〈Message From Kenya〉」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1954/Billboard%201954-06-26.pdf"
+   },
+   {
+    "f": "串流側：八軌全部在店面同一張官方整編裡。us 店面 724469019《Horace Silver Trio》（16 軌，版權欄「℗ 1989 Blue Note Records」，即 1956 年重組的 12 吋 BLP 1520 那個配置）**第 9 到第 16 軌就是本盤的八軌**：I Remember You 236 秒、Opus de Funk 209、Day In, Day Out 181、Silverware 159、How About You 225、Buhaina 188、Mesage From Kenya 276（店面拼字漏一個 s）、Nothing But the Soul 249，每軌都有試聽；**第 1 到第 8 軌是 BLP 5018**（同批 a 組那張）。",
+    "src": "https://itunes.apple.com/lookup?id=724469019&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "〈Opus de Funk〉第一次被錄下來就在這張——Silver 後來 hard bop 的那套語彙，起點是 1953 年 11 月的一個下午",
+   "八軌裡有兩軌沒有鋼琴：Blue Note 把 B 面尾段讓給了鼓，一軌是 Blakey 與 Sabu 的對打，一軌是 Blakey 一個人"
+  ],
+  "sound": "八軌 10 吋，1953 年 11 月 23 日 WOR Studios 一場錄完。六軌是鋼琴三重奏——三首標準曲加三首 Silver 自作曲，觸鍵帶重音、藍調味濃，〈Opus de Funk〉是後來 hard bop 那種律動的雛形；另外兩軌抽掉鋼琴與貝斯，一軌是 Blakey 與 Sabu Martinez 的鼓與康加對打，一軌是 Blakey 獨奏。每軌兩分半到四分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Opus de Funk",
+   "Message from Kenya",
+   "Silverware"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1954（卡單值成立）。MB first-release-date 1954、Discogs release 8541590 released 欄 1954、jazzdisco 1954，再加**同期紙本 Billboard 1954-06-26 第 39 頁的 78 分評論**——紙本是第 431 條要的獨立來源，年份釘死 1954。錄音 1953-11-23，WOR Studios, NYC。",
+  "notes": "⚠ **擋下策展層一處（誰在哪一軌）**：策展層 why 寫「B 面尾段是 Blakey 與 Sabu Martinez 的鼓對話〈Message From Kenya〉〈Nothing But the Soul〉」——**Sabu 只在〈Message From Kenya〉那一軌**。三個來源一致：jazzdisco 的編制欄標「Sabu Martinez, bongo, conga **#1**」（第 1 軌即 Message From Kenya），**Billboard 1954-06-26 的評論**寫「Blakey 與康加鼓手 Sabu 聯手做了**一面**〈Message From Kenya〉，然後（另一面）交出技術銳利的獨奏」，Discogs credits 也根本沒列 Sabu。**正文：〈Message From Kenya〉是 Blakey＋Sabu，〈Nothing But the Soul〉是 Blakey 一個人。**｜**補一處**：Billboard 那則評論說其中幾首「先前已單曲發行過」（issued singly），可寫。｜**其餘覆核**：MBID／RG／BLP 5034／10 吋 8 軌／年份 1954／錄音 1953-11-23／掛名收攏到 Horace Silver 全部成立。｜**串流：三種查法跑完，八軌全部在同一個 collectionId 裡。串流採信 724469019**（us，官方 Blue Note 16 軌，**本盤八軌＝第 9–16 軌**，每軌有試聽）。**那 16 軌就是 1956 年重組的 12 吋 BLP 1520 配置：前 8 軌是 a 組的 BLP 5018、後 8 軌是本盤**——這正好是 c-136 a 組已收的那張 12 吋，**回指關係在店面上是一條可驗證的證據**。寫作層要按曲名或「後八軌」指，不得寫成「這張 10 吋在店面上架」。**有固定試聽來源。**｜⚠ **10 吋↔12 吋回指（派工信第 2 點）**：本盤 ＋ a 組 BLP 5018 = 12 吋 BLP 1520《Horace Silver Trio》（RG bafa443c，**c-136 a 組已收**）。三張是同兩場錄音的三張碟，**正文不得寫成三張不同錄音**；c-136 那張的正文也要回指本張與 5018。｜**人名邊界**：Percy Heath、Art Blakey 有三重背書（jazzdisco／Discogs／Billboard），可寫；**Sabu Martinez 有 jazzdisco ＋ Billboard 兩重背書，可寫**（Discogs credits 沒列，但紙本有）。封面 Jerome Kühl、攝影 Francis Wolff、內頁 Leonard Feather 只在 Discogs credits，可提可不提。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯（一場），不列建議移除。"
+ },
+ {
+  "key": "desc2:Sal Salvador|Sal Salvador Quintet",
+  "artist": "Sal Salvador",
+  "album": "Sal Salvador Quintet",
+  "facts": [
+   {
+    "f": "release-group 0aef3e3b 的欄位：title「Sal Salvador Quintet」、artist-credit 是群組實體「Sal Salvador Quintet」（7fafc121，Group）、first-release-date 1954、primary-type Album、secondary-types 空、轄下只有 1 筆 release。release 237fb92c：1954 US Official、10 吋黑膠 6 軌、Blue Note BLP 5035；六軌依序 Gone With the Wind／Get Happy／My Old Flame／This Can't Be Love／Too Marvelous for Words／After You've Gone。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0aef3e3b-024f-4dee-89f1-0d12face4603&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs release 7658867（2015 年 Blue Note 復刻，沿用 BLP 5035）的 notes 引權威目錄為證：「According to **The Blue Note Label by Michael Cuscuna and Michel Ruppli**: Recorded on **December 24, 1953** at Van Gelder Studio」；credits 另列 Rudy Van Gelder（錄音）、Bill Coss（內頁文字）、Jerome Kühl（封面設計）、Francis Wolff（攝影）。原壓 Discogs release 4825943（BLP 5035，US 1954，4 張圖）的 notes 則解釋盤名：**封面與標籤印「Sal Salvador Quintet」、背面卻寫「Sal Salvador Quintet/Quartet」，因為 Frank Socolow 不是每一軌都吹**。",
+    "src": "https://www.discogs.com/release/7658867"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5035 記為 1954，一場錄完：Frank Socolow 男高音薩克斯風（第 1–4 軌）、Johnny Williams 鋼琴、Sal Salvador 吉他、Kenny O'Brien 貝斯、Jimmy Campbell 鼓，**Van Gelder Studio, Hackensack, NJ，1953 年 12 月 24 日**，母帶 BN536 到 BN541。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "英文維基的 Sal Salvador 條目：1925-11-21 生、1999-09-22 因癌症辭世，享年 73。他被歸為「Kenton Protege」，1953 年與 Stan Kenton 樂團一起錄了《Popular Favorites by Stan Kenton》《Sketches on Standards》《This Modern World》《Portraits on Standards》等 Capitol 盤；他的第一張重要錄音就是 Blue Note 的《Sal Salvador Quintet》（1953），編制為 Frank Socolow、Johnny Williams、Kenny O'Brien、Jimmy Campbell。晚年在 University of Bridgeport 與 Western Connecticut State University 教吉他，寫過多本從初階到進階的教本。",
+    "src": "https://en.wikipedia.org/wiki/Sal_Salvador"
+   },
+   {
+    "f": "串流側：us 店面 1443269236《Sal Salvador Quintet - EP》（掛 Sal Salvador Quintet，6 軌）與原盤**逐軌同序**：Gone With the Wind 311 秒、Get Happy 202、My Old Flame 203、This Can't Be Love 175、Too Marvelous For Words 315、After You've Gone 203，每軌都有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1443269236&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "封面與唱片標籤印「Quintet」，背面卻印「Quintet/Quartet」——因為薩克斯風手只吹了六軌裡的四軌",
+   "錄音日是 1953 年的平安夜，地點是 Hackensack 那間民宅改的錄音室"
+  ],
+  "sound": "六軌 10 吋，1953 年平安夜在 Hackensack 一場錄完。四軌是男高音薩克斯風＋吉他的五重奏、兩軌抽掉薩克斯風變四重奏，全是標準曲。Salvador 的撥弦乾淨、分句方整，帶著 Kenton 樂團出身的整齊感；兩首慢曲各超過五分鐘。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Gone With the Wind",
+   "Too Marvelous for Words",
+   "Get Happy"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1954（卡單值成立）。MB first-release-date 1954、Discogs release 4825943 released 欄 1954、jazzdisco 1954，三筆相符。**錄音是 1953-12-24**（見 notes）。同期紙本：1953–55 年 156 期 Billboard 全文掃過，BLP 5035 沒有評論或 Advance Record Releases 條目，無紙本佐證亦無反證。",
+  "notes": "⚠ **擋下策展層一處（錄音日期）**：策展層 why 寫「1954-01-22 五重奏」——**正確是 1953 年 12 月 24 日**。兩個獨立來源一致，而且其中一個是權威紙本目錄：**Discogs release 7658867 的 notes 直接引 Michael Cuscuna 與 Michel Ruppli 的《The Blue Note Label》**「Recorded on December 24, 1953 at Van Gelder Studio」，jazzdisco 的 BN536–BN541 那一段同日。**正文引錄音日一律用 1953-12-24。**｜⚠ **補一處策展層沒查到的盤名內情**：Discogs 原壓條目的 notes 說明**封面／標籤是「Quintet」、背面是「Quintet/Quartet」，原因是 Frank Socolow 只吹了六軌裡的四軌**（jazzdisco 標 #1–4）——這是卡單 selfTitled 那一欄背後的實情，也是可寫的冷知識。｜**其餘覆核**：MBID／RG／單一 release／BLP 5035／10 吋 6 軌／年份 1954／掛名收攏到 Sal Salvador 全部成立。｜**串流：第一種查法就命中原配置。串流採信 1443269236**（us，6 軌逐軌同序，每軌有試聽）。Apple 標的「- EP」是店面對 10 吋盤的標法，不改 releaseType。**有固定試聽來源。**｜**人名邊界**：Frank Socolow、Johnny Williams、Kenny O'Brien、Jimmy Campbell 有 jazzdisco ＋ Discogs credits ＋ 維基三重背書，可寫；Rudy Van Gelder（錄音）、Bill Coss（內頁）、Jerome Kühl（封面）、Francis Wolff（攝影）在 Discogs credits，可提可不提。⚠ Discogs 原壓條目把薩克斯風手拼成「Frank Sokolov」，**正確拼法是 Frank Socolow**（jazzdisco、維基、2015 復刻條目皆此）。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯，不列建議移除。"
+ },
+ {
+  "key": "desc2:Miles Davis|Miles Davis, Vol. 3",
+  "artist": "Miles Davis",
+  "album": "Miles Davis, Vol. 3",
+  "facts": [
+   {
+    "f": "release-group 7aaa93b0 的欄位：title 只有「Vol. 3」、artist-credit「Miles Davis」（Person 561d854a）、first-release-date 1954、primary-type Album、secondary-types 空、轄下 4 筆 release。release 16ed7b47：1954 US Official、10 吋黑膠 6 軌、Blue Note BLP 5040；六軌依序 Take Off／It Never Entered My Mind／Well You Needn't／Lazy Susan／Weirdo／The Leap。另三筆是 2002-03 的美版 10 吋復刻（同號 BLP 5040）與 2005 法國、2014 美國兩筆數位版。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7aaa93b0-c370-4dae-98e3-d5be559a7167&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5040 記為 1954，一場錄完：Miles Davis 小號、Horace Silver 鋼琴、Percy Heath 貝斯、Art Blakey 鼓，**Van Gelder Studio, Hackensack, NJ，1954 年 3 月 6 日**，母帶 BN548 到 BN553。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 4462638（BLP 5040，US 1954，9 張圖）的 notes 註明這是初版：767 Lexington 標籤、deep groove、蠟紋區有 Plastylite 的「P（ear）」與 9M，背面廣告登到 BLP 5045；「Recorded on March 6, 1954」。credits：Percy Heath（貝斯）、Art Blakey（鼓）、Horace Silver（鋼琴）、Miles Davis（小號與作曲）。同 master 之下另有 1955 年的同號重壓（release 25799878）。",
+    "src": "https://www.discogs.com/release/4462638"
+   },
+   {
+    "f": "英文維基的《Miles Davis Volume 3》條目：1954 年 3 月 6 日錄於 Rudy Van Gelder 在紐澤西 Hackensack 的錄音室，四重奏是 Davis、Horace Silver、Percy Heath、Art Blakey；六軌含三首 Davis 自作曲與標準曲〈It Never Entered My Mind〉、Thelonious Monk 的〈Well, You Needn't〉，全長 26 分 13 秒。**這是他替 Blue Note 錄的第三張也是最後一張 10 吋**；依 Davis 自傳，這幾場是他成功戒除海洛因之後的第一批錄音。10 吋停產後，這六軌全部併進 12 吋《Miles Davis Volume 2》（BLP 1502）。",
+    "src": "https://en.wikipedia.org/wiki/Miles_Davis_Volume_3"
+   },
+   {
+    "f": "串流側：us 店面 1443804725《Modern Jazz Series, Vol. 3》（掛 Miles Davis，6 軌，releaseDate 1954-03-01）與原盤**逐軌同序**：Take-Off 219 秒、It Never Entered My Mind 242、Well You Needn't 323、Lazy Susan 242、Weirdo 284、The Leap 274，每軌都有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1443804725&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "依 Davis 自己的說法，1954 年 3 月那幾場是他戒掉海洛因之後錄的第一批唱片",
+   "這是他替 Blue Note 錄的第三張、也是最後一張 10 吋；兩年後那六軌全部被搬進 12 吋的《Volume 2》"
+  ],
+  "sound": "六軌 10 吋，1954 年 3 月 6 日在 Hackensack 一場錄完的四重奏。沒有第二管，小號一路在前面；Silver 的鋼琴帶重音、Blakey 的鼓推得緊，三首 Davis 自作曲偏中快板，〈It Never Entered My Mind〉是弱音器下的慢板。全長二十六分多。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Take Off",
+   "It Never Entered My Mind",
+   "Well You Needn't"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1954（卡單值成立）。MB first-release-date 1954、Discogs release 4462638 released 欄 1954（notes 註明是初版：背面廣告只登到 BLP 5045，這是同期實物的內證）、jazzdisco 1954、英文維基條目 1954，四筆相符；同 master 下的 1955 年同號盤是重壓。錄音 1954-03-06，Van Gelder Studio, Hackensack, NJ。同期紙本：1953–55 年 156 期 Billboard 全文掃過，**BLP 5040 沒有評論條目**（同期 Billboard 評了 BLP 5022、5034 等好幾張 Blue Note 10 吋，獨漏這張），無紙本佐證亦無反證。",
+  "notes": "**覆核策展層：MBID／RG／BLP 5040／10 吋 6 軌／年份 1954／錄音 1954-03-06／掛名 Miles Davis 全部成立，未擋下。**｜⚠ **10 吋↔12 吋回指（派工信第 2 點）**：維基條目把關係寫得很明確——本盤六軌在 10 吋停產後**全部併進 12 吋 BLP 1502《Miles Davis Volume 2》**，而 **MB 把那張 12 吋併在 a 組的 RG 29393845 底下**（第 463 條已記）。**本卡與 a 組《Miles Davis, Vol. 2》互指、正文不得寫成兩張不同錄音**；a 組那張若要引軌數，必須用 10 吋 BLP 5022 的 6 軌、不是 CD 的 11 軌。｜**可寫的背景**：維基引 Davis 自傳說這是他戒掉海洛因之後的第一批錄音，**是自傳說法、有出處，可寫但要標明「依他自傳」**；「第三張也是最後一張 Blue Note 10 吋」有維基明文，可寫（BLP 5013／5022／5040 三張，與 a 組兩張對得上）。｜**串流：第一種查法就命中原配置。串流採信 1443804725**（us，6 軌逐軌同序，每軌有試聽）。⚠ **店面把它題成《Modern Jazz Series, Vol. 3》**——那是 Blue Note 10 吋盤背面的系列名，不是另一張碟，正文用卡單盤名。**有固定試聽來源。**｜**人名邊界**：Horace Silver、Percy Heath、Art Blakey 有 jazzdisco ＋ Discogs credits ＋ 維基三重背書，可寫。｜**跨卡串連**：同一組節奏班底在同批的 BLP 5034（Silver 領銜）與 BLP 5044（Elmo Hope 領銜、Heath＋Blakey）反覆出現，1955 年就成了 Jazz Messengers。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯，不列建議移除。"
+ },
+ {
+  "key": "desc2:Tal Farlow|Tal Farlow Quartet",
+  "artist": "Tal Farlow",
+  "album": "Tal Farlow Quartet",
+  "facts": [
+   {
+    "f": "release-group 34976792 的欄位：title「Tal Farlow Quartet」、artist-credit「Tal Farlow」（Person 177e3c4c，US，1921–1998）、first-release-date 1954、primary-type Album、secondary-types 空、轄下 2 筆 release。release 8e613ed7：1954 US Official、10 吋黑膠 6 軌、Blue Note BLP 5042；六軌依序 Lover／Flamingo／Splash／Rock 'n' Rye／All Through the Night／Tina。另一筆 6081b780 是 2000-09-27 日版 CD（Blue Note TOCJ-9225／BNLP-5042，6 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=34976792-cef9-4d51-a2e9-f80c871dc4ad&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5042 記為 1954，一場錄完：**Don Arnone 與 Tal Farlow 兩把吉他**、Clyde Lombardi 貝斯、Joe Morello 鼓，Van Gelder Studio, Hackensack, NJ，1954 年 4 月 11 日，母帶 BN554 到 BN559。1998 年併進 Blue Note 7243 4 95748 2 3《Howard McGhee Vol. 2 / Tal Farlow Quartet》。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 5741158（BLP 5042，US 1954，4 張圖）的 notes：原始 deep groove 壓片、Lexington Ave 地址標籤、蠟紋區有 Plastylite 的草寫 P（「Ear」），「Recorded April 11, 1954」。credits：Clyde Lombardi（貝斯）、Joe Morello（鼓）、**Don Arnone 與 Tal Farlow（吉他）**、Rudy Van Gelder（錄音師）、Leonard Feather（內頁文字）、Francis Wolff（攝影）、Bill Hughes（設計）。",
+    "src": "https://www.discogs.com/release/5741158"
+   },
+   {
+    "f": "英文維基的 Tal Farlow 條目：Talmage Holt Farlow 1921-06-07 生於北卡羅來納州 Greensboro，1998-07-25 於紐約因食道癌辭世。他**二十二歲才開始學吉他**、自學出身，唯一受過的正規訓練是招牌畫學徒；一雙又大又快的手讓他得了「Octopus」的綽號。1949 年他在 Red Norvo 與 Charles Mingus 的三重奏裡受到注目。1954 年除了 Blue Note 這張，同年還有三張 Norgran。1958 年結婚後半退休，搬到紐澤西 Sea Bright **重操招牌畫的舊業**，只偶爾在當地俱樂部演出。",
+    "src": "https://en.wikipedia.org/wiki/Tal_Farlow"
+   },
+   {
+    "f": "串流側：us 店面 1455679648《Tal Farlow Quartet - EP》（6 軌）與原盤**逐軌同序**：Lover 246 秒、Flamingo 273、Splash 217、Rock 'N' Rye 242、All Through The Night 247、Tina 238，每軌都有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1455679648&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "他二十二歲才碰吉他，正職是畫招牌；1958 年結婚後又回去畫招牌，只偶爾上台",
+   "四重奏裡有兩把吉他——Don Arnone 與 Farlow，沒有鋼琴"
+  ],
+  "sound": "六軌 10 吋，1954 年 4 月 11 日在 Hackensack 一場錄完。編制是兩把吉他加貝斯與鼓、沒有鋼琴，和聲全靠第二吉他撐。Farlow 的單音線條又長又快，帶人工泛音與敲擊音色；四首標準曲加兩首原創，每軌三分半到四分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Lover",
+   "Splash",
+   "Flamingo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1954（卡單值成立）。MB first-release-date 1954、Discogs release 5741158 released 欄 1954（notes 註明是原始 deep groove／Lexington 地址壓片）、jazzdisco 1954、英文維基「1954 年替 Blue Note 錄了《Tal Farlow Quartet》」，四筆相符。錄音 1954-04-11，Van Gelder Studio, Hackensack, NJ。同期紙本：1953–55 年 156 期 Billboard 全文掃過，BLP 5042 沒有評論條目，無紙本佐證亦無反證。",
+  "notes": "**覆核策展層：MBID／RG／BLP 5042／10 吋 6 軌／年份 1954／錄音 1954-04-11／掛名 Tal Farlow 全部成立，未擋下。**｜**補一處策展層只提一半的編制**：這是**雙吉他**四重奏——Don Arnone 是第二吉他、沒有鋼琴，jazzdisco 與 Discogs credits 兩邊都列。策展層 why 寫「Don Arnone 第二吉他」是對的，正文要把「沒有鋼琴」這件事講出來，那是這張聲音的關鍵。｜**串流：第一種查法就命中原配置。串流採信 1455679648**（us，6 軌逐軌同序，每軌有試聽）。Apple 標的「- EP」是店面對 10 吋盤的標法，不改 releaseType。**有固定試聽來源。**｜**人名邊界**：Don Arnone、Clyde Lombardi、Joe Morello 有 jazzdisco ＋ Discogs credits 雙重背書，可寫；Rudy Van Gelder（錄音）、Leonard Feather（內頁）、Francis Wolff（攝影）在 Discogs credits，可提可不提。｜**跨卡串連**：Farlow 是同批 BLP 5024（Howard McGhee Vol. 2）的側人吉他，兩張 1998 年還被併成同一張 CD；Clyde Lombardi 與 Joe Morello 則是同批 BLP 5020（Gil Mellé）1953 年那場的班底——三張碟共用人。｜**生平的反向禁令歸類**：維基那段「1958 年結婚後半退休、回去畫招牌」是發行之後的後續生平，**與本作無直接綁定**，依研究層通則屬「不寫」那一類；**但「他二十二歲才學吉他、本職是招牌畫學徒」是發行之前的事實，可寫**。hookCandidates 第一條已按這個界線寫（前半可用、後半僅供主線判斷，寫作層若用只能用前半）。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯，不列建議移除。"
+ },
+ {
+  "key": "desc2:Elmo Hope|Elmo Hope Quintet, Volume 2",
+  "artist": "Elmo Hope",
+  "album": "Elmo Hope Quintet, Volume 2",
+  "facts": [
+   {
+    "f": "release-group 94112a2c 的欄位：title「Elmo Hope Quintet」、artist-credit 是群組實體「Elmo Hope Quintet」（9f73af1e，Group，US）、first-release-date 1954、primary-type Album、secondary-types 空、轄下只有 1 筆 release。release d480d66e：1954 US Official、10 吋黑膠 6 軌、Blue Note BLP 5044；六軌依序 Crazy／Abdullah／Chips／Later for You／Low Tide／Maybe So。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=94112a2c-303b-4187-80d2-b645ae570fe1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5044 記為「Elmo Hope Quintet Vol. 2 - New Faces-New Sounds」1954，一場錄完：Freeman Lee 小號、Frank Foster 男高音薩克斯風、Elmo Hope 鋼琴、Percy Heath 貝斯、Art Blakey 鼓，Van Gelder Studio, Hackensack, NJ，1954 年 5 月 9 日，母帶 BN566 到 BN571。同頁註明它也在英國以 Vogue LDE 139、法國以 Jazz Selection JSLP 50038 發行，1991 年併進 Blue Note CDP 7 84438 2《Elmo Hope Trio And Quintet》。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs release 5627682（BLP 5044，US 1954，4 張圖）的 notes 寫「Back of jacket reads \"Volume 2\"」、標籤地址 767 Lexington Ave NYC。credits：Percy Heath（貝斯）、Art Blakey（鼓）、Elmo Hope（鋼琴）、Frank Foster（男高音薩克斯風）、Freeman Lee（小號）、Leonard Feather（內頁文字）、Francis Wolff（攝影）。",
+    "src": "https://www.discogs.com/release/5627682"
+   },
+   {
+    "f": "英文維基的 Elmo Hope 條目：St. Elmo Sylvester Hope 1923-06-27 生於紐約，1967-05-19 因心臟衰竭辭世，得年 43。他七歲開始彈鋼琴、受古典訓練；**Bud Powell 是他的兒時玩伴**，兩人一起彈、一起聽爵士與古典，1942 年兩人認識了 Thelonious Monk，三個年輕人常膩在一起。他 1953 年首度以領班錄音（《Elmo Hope Trio》，Percy Heath 貝斯、Philly Joe Jones 鼓），**十一個月後就是《Elmo Hope Quintet, Volume 2》**，編制 Charles Freeman Lee（小號）、Frank Foster（男高音薩克斯風）、Heath、Art Blakey。1956 年前後因毒品與前科被紐約市撤銷 Cabaret Card、不能再在市內俱樂部演出，1957 年遷往洛杉磯。",
+    "src": "https://en.wikipedia.org/wiki/Elmo_Hope"
+   },
+   {
+    "f": "串流側：us 店面 1442856742《Elmo Hope Quintet, Vol. 2 - EP》（掛 Elmo Hope Quintet，6 軌）與原盤**逐軌同序**：Crazy 255 秒、Abdullah 226、Chips 216、Later For You 240、Low Tide 249、Maybe So 264，每軌都有試聽。",
+    "src": "https://itunes.apple.com/lookup?id=1442856742&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Bud Powell 是他兒時玩伴，1942 年兩人一起認識了 Monk——三個人後來各自成了不同的鋼琴傳統",
+   "1953 年的三重奏之後隔了十一個月，這次多了小號與男高音薩克斯風，六首全是他自己寫的"
+  ],
+  "sound": "六軌 10 吋，1954 年 5 月 9 日在 Hackensack 一場錄完的五重奏。小號＋男高音薩克斯風的雙管前線，Heath 與 Blakey 撐節奏；Hope 的作曲線條曲折、和聲換得急，跟 Powell 那一路的直線 bop 不同。每軌三分半到四分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Abdullah",
+   "Crazy",
+   "Later for You"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1954（卡單值成立）。MB first-release-date 1954、Discogs release 5627682 released 欄 1954、jazzdisco 1954，三筆相符；英文維基另從側面佐證（1953 年三重奏之後「十一個月」＝1954 年 5 月）。錄音 1954-05-09，Van Gelder Studio, Hackensack, NJ。同期紙本：1953–55 年 156 期 Billboard 全文掃過，BLP 5044 沒有評論條目，無紙本佐證亦無反證。",
+  "notes": "**覆核策展層：MBID／RG／單一 release／BLP 5044／10 吋 6 軌／年份 1954／錄音 1954-05-09／掛名收攏到 Elmo Hope／盤名補「Volume 2」全部成立，未擋下。** Discogs 原壓條目的 notes「Back of jacket reads \"Volume 2\"」正是第 463 條補主體名那個判斷的實物依據。｜**補一處人名全稱**：小號手維基作 **Charles Freeman Lee**，jazzdisco 與 Discogs 作 Freeman Lee，同一人。｜**串流：第一種查法就命中原配置。串流採信 1442856742**（us，6 軌逐軌同序，每軌有試聽）。Apple 標的「- EP」是店面對 10 吋盤的標法。**有固定試聽來源。**｜**人名邊界**：Freeman Lee、Frank Foster、Percy Heath、Art Blakey 有 jazzdisco ＋ Discogs credits ＋ 維基三重背書，可寫；Bud Powell 與 Thelonious Monk 的兒時交往有維基明文，可寫。｜⚠ **反向禁令**：維基那段「1956 年前後被撤銷 Cabaret Card、1957 年遷往洛杉磯、1967 年心臟衰竭辭世」全部晚於本作且**與本作沒有直接綁定**，依研究層通則屬「不寫」那一類，**正文不得觸及**。｜**跨卡串連**：Frank Foster 同年還在同批 BLP 5053（Julius Watkins）吹；Heath＋Blakey 是同批 BLP 5034、5040、5055 的共同節奏組。｜**封面**：CAA 有圖。｜**性質**：原創錄音室專輯，不列建議移除。"
+ },
+ {
+  "key": "desc2:Clifford Brown|Clifford Brown Quartet",
+  "artist": "Clifford Brown",
+  "album": "Clifford Brown Quartet",
+  "facts": [
+   {
+    "f": "release-group faf3df72 的欄位：title「Clifford Brown Quartet」、artist-credit 是群組實體「Clifford Brown Quartet」（3fa31375，Group）、first-release-date 1954、primary-type Album、secondary-types 空、轄下 2 筆 release。release 405eca7f：1954 US Official、10 吋黑膠 6 軌、Blue Note BLP 5047；六軌依序 Come Rain or Come Shine／I Can Dream, Can't I／Blue and Brown／The Song Is You／You're a Lucky Guy／It Might as Well Be Spring。另一筆 ec4ac270 是 1989 年 Prestige／OJC 的 12 軌 CD《The Clifford Brown Quartet In Paris》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=faf3df72-4e4e-4700-ae10-0f990b12cdae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5047 記為 1954，一場錄完：Clifford Brown 小號、**Henri Renaud 鋼琴、Pierre Michelot 貝斯、Benny Bennett 鼓**，巴黎，1953 年 10 月 15 日，母帶 53V4718 到 53V4723（53V 是 Vogue 的編號）；〈The Song Is You〉在盤上又題〈Brownie's Mood〉。同頁註明「originally released on Clifford \"Brownie\" Brown Quartet, Vogue (E) LDE 042 in 1954」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+   },
+   {
+    "f": "Discogs master 1133775 之下有三筆 1954 年的 10 吋：法國 **Vogue Productions L.D. 179《\"Jazz Time Paris\" Vol. 13》**（release 9504133，4 張圖，main release）、英國 **Vogue Records L.D.E. 042《Clifford \"Brownie\" Brown Quartet》**（release 7239837）、美國 **Blue Note BLP 5047《Clifford Brown Quartet》**（release 4399704）。三者**六軌完全相同**（只有一軌在英版題〈Brownie's Mood〉、法版與美版題〈The Song Is You〉），曲序也相同。",
+    "src": "https://www.discogs.com/master/1133775"
+   },
+   {
+    "f": "英文維基的 Gigi Gryce 條目記下這批巴黎錄音的背景：Gryce 1953 年夏天加入 Lionel Hampton 樂團並隨團訪歐，11 月才回紐約；團裡年輕的 bop 派與包括 Hampton 本人在內的 swing 派本來就有張力，**「Hampton 聽說自己的樂手在外面私下錄音時反應不佳」**；歐洲人急著錄下巡演中的美國樂手，斯德哥爾摩與巴黎都是錄音地點。Clifford Brown 1930-10-30 生、1956-06-26 車禍辭世，得年 25。",
+    "src": "https://en.wikipedia.org/wiki/Gigi_Gryce"
+   },
+   {
+    "f": "鋼琴手 Henri Renaud（1925-04-20 生於法國 Villedieu-sur-Indre，2002-10-16 卒於巴黎）1946 年到巴黎，1950 年代初以「替路過的美國樂手組班錄音」聞名，1953 年替 Clifford Brown 錄了《Clifford Brown Big Band in Paris》《Clifford Brown Quartet》與 Gigi Gryce 的合奏盤，全在 Vogue；他也錄過 Milt Jackson、J. J. Johnson、Oscar Pettiford、Max Roach、Frank Foster 等人。1964 年起轉任 CBS 法國分公司爵士部門主管。",
+    "src": "https://en.wikipedia.org/wiki/Henri_Renaud"
+   },
+   {
+    "f": "串流側：六軌全部在店面。us 店面 1154299500《Gigi Gryce - Clifford Brown Sextet (Jazz Connoisseur)》（11 軌）**第 6 到第 11 軌就是本盤六軌**：It Might as Well Be Spring (Master Take 1) 297 秒、You're a Lucky Guy (Master Take 1) 164、The Song Is You (Master Take 1) 170、Come Rain or Come Shine (Master Take 1) 249、I Can Dream, Can't I? (Master Take 1) 178、Blue and Brown 190，每軌都有試聽；**第 1／2／4／5 軌是同批 BLP 5048 的四軌**，第 3 軌是 Vogue 版多出來的〈No Start, No End〉。",
+    "src": "https://itunes.apple.com/lookup?id=1154299500&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1953 年 10 月的巴黎：Hampton 樂團白天演出，年輕樂手晚上溜進錄音室——團長知道以後很不高興",
+   "同一張 10 吋在三個國家有三個名字：法國叫《Jazz Time Paris 第 13 輯》、英國叫《Clifford \"Brownie\" Brown Quartet》、美國叫《Clifford Brown Quartet》"
+  ],
+  "sound": "六軌 10 吋，1953 年 10 月 15 日巴黎一場錄完的四重奏。沒有第二管，小號在鋼琴三重奏上獨當一面，五首是抒情標準曲、一首是藍調原創；Brown 這時二十二歲，音色圓、換氣長、快速樂句乾淨。每軌不到四分半。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Blue and Brown",
+   "It Might as Well Be Spring",
+   "Come Rain or Come Shine"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1954（卡單值成立）。Discogs master 1133775 之下的三筆 10 吋（法 Vogue L.D. 179、英 Vogue L.D.E. 042、美 Blue Note BLP 5047）**全部是 1954 年**，MB first-release-date 1954、jazzdisco 1954，全部相符。錄音 1953-10-15，巴黎。同期紙本：1953–55 年 156 期 Billboard 全文掃過，BLP 5047 沒有評論條目，無紙本佐證亦無反證。",
+  "notes": "⚠ **原盤他廠覆核（派工信第 1 點，用 a 組 James Moody 那把「同配置才算原盤」的尺）——第 461 條的判定成立、維持 Vogue 為原盤。** 實查 Discogs master 1133775：法國 Vogue L.D. 179《\"Jazz Time Paris\" Vol. 13》與美國 Blue Note BLP 5047 **六軌完全相同、曲序也相同**，這正是 Moody《With Strings》那個形狀（同曲、同 10 吋、同 master），所以 `label` 寫 Vogue 為原盤、Blue Note 為授權版成立；三張都是 1954 年，`year` 不動。｜⚠ **但補一個策展層沒提到的第三筆**：**英國 Vogue Records L.D.E. 042《Clifford \"Brownie\" Brown Quartet》也是 1954 年、同六軌**（Discogs release 7239837），而且 **jazzdisco 把它記成「originally released on」的那一張**。三張同年，Discogs 把法國 L.D. 179 設為 master 的 main release。**誰先出無法從現有來源判定，正文只寫「原盤是 Vogue（巴黎）」即可，不得寫成某一國先出。**｜**串流：三種查法跑完，六軌全部在同一個 collectionId 裡。串流採信 1154299500**（us，11 軌，**本盤六軌＝第 6–11 軌**，每軌有試聽）。**這一筆同時服務本卡與同批 BLP 5048 那張卡**（那張是第 1／2／4／5 軌）。⚠ 策展層猜的《The Complete Paris Sessions, Vol.1》（402368098）**不必用**，1154299500 的覆蓋更乾淨。寫作層不得寫成「這張碟在店面上架」、也不得用「前 N 軌」。**有固定試聽來源。**｜⚠ **擋下策展層一處無出處的宣稱**：why 寫「六首標準曲是他生前**唯一**一組純四重奏錄音室錄音」——**查無來源支持這個「唯一」**（維基、jazzdisco、Discogs 都沒有這句），依第 253 條**不得寫**；退成可查證的版本：「這是他 1953 年巴黎那批錄音裡的四重奏一場」。｜**人名邊界**：Henri Renaud、Pierre Michelot、Benny Bennett 有 jazzdisco ＋ Discogs 雙重背書，可寫；Renaud 的生平有維基專條，可寫。｜**Hampton 那段背景有出處**（維基 Gigi Gryce 條目：「Hampton 聽說自己的樂手在外面私下錄音時反應不佳」），**可寫但不得寫成「Hampton 開除了誰」**——維基明說沒有這個細節。｜**曲名**：〈The Song Is You〉在英版題〈Brownie's Mood〉，正文若提要說明是同一軌。｜**封面**：CAA 有圖。｜**性質**：不是 Blue Note 自錄，是 Vogue 巴黎錄音的美國授權版，正文必須寫清楚。"
+ }
+]
