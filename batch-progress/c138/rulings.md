@@ -319,3 +319,55 @@ URL 形狀 `.../Cash-Box/60s/<年>/CB-<YYYY-MM-DD>.pdf`（**週六**）。
 - **第 509c 條（紙本誤植目錄號）本組中了三次**：Horace-Scope 印成 4052、Capuchin Swing 印成 4030、Booker Little 印成 UAS 5534
   ——全靠編制／軌數／曲目交叉定位救回。**這條已經是常態，不是例外。**
 - 原盤他廠 9 張全部成立；**《Bags' Opus》的 UAL 4022／UAS 5022 用 Billboard 1959-03-30 p48 獨立確認**（不再只靠 Discogs）。
+
+## 第 531 條（主線 2026-09-16，研究層 b 組交件後）：**年份再動兩張——「Discogs 上同一目錄號的美國原壓全部標同一年」是這條線最硬的一種舉證**
+
+b 組 20 筆全 `full`、QA 清。**兩張年份改判，全部採信：**
+- **Donald Byrd《At the Half Note Cafe, Volume 2》1961 → 1963**：jazzdisco BLP 4061＝1963（同頁 4060 Vol. 1 分開寫 1961）、
+  **Discogs 的 4061／84061 美國原壓五筆全部 1963、無任何 1961–62 壓片**、Apple 店面年份也是 1963。
+  原本的 1961 只有維基一句「the following year」，維基沒為 Vol. 2 單獨舉證。
+- **Stanley Turrentine《Up at Minton's, Volume 2》1961 → 1962**：jazzdisco BLP 4070＝1962、
+  **Discogs 的 4070／84070 美國壓片六筆全部 1962、無 1961 壓片**。MB 那個 1961 是 RG 底下唯一一筆 release、無法交叉；
+  Apple 的 1961-04-19 與 Vol. 1 條目**逐日相同**（第 431 條同源，不算獨立來源）。
+
+⚠ **兩張拆卷盤的正文都不得再寫「與 Vol. 1 同年發行」**——Vol. 1／Vol. 2 現在差一到兩年，這正是第 526 條
+「4000 系列目錄號不等於發行順序」的同一個形狀：**Volume 2 晚於 Volume 1 的時間差，比想像中大。**
+
+另三張與 jazzdisco 對立但**維持卡單**（已寫進 `yearVerified`）：Sunny Side Up（jazzdisco 1960，維持 1961）、
+The Golden Eight（jazzdisco 1962，維持 1961）、Royal Flush（Discogs 兩筆標 1961，維持 1962）。
+
+**方法論收穫**：`api.discogs.com/database/search?catno=...` **不需 token**，
+「同一目錄號的美國原壓全部標同一年、且完全沒有更早年份的壓片」是可重複驗證的實體盤面證據，
+比單一資料庫的 `first-release-date` 欄位強得多。**後批判年份一律加跑這一條。**
+
+## 第 532 條（同日）：**c-138 試聽補滿 43/43——Blakey Vol. 1 用合訂盤補，是可逆的裁定**
+
+b 組六張缺試聽的補了五張：Half Note Vol. 2 `1443125518`、Doin' the Thing `715516295`（前 4 軌對原盤、
+第 5–6 軌 bonus，c-130 先例）、Minton's Vol. 1 `1436091771`、Minton's Vol. 2 `1436190027`、Grant's First Stand `715929361`。
+
+**第六張 Art Blakey《Meet You at the Jazz Corner of the World, Volume 1》**：三種查法跑完，
+店面只有 2002 年 **Vol. 1＋2 合併的 13 軌 `723618161`**（第一片第 2/3/4/6/7 軌確實對得上 BLP 4054，
+差值正好是被拆出去的 66 秒與 21 秒報幕）。研究層依第 524 條不寫採信。
+**主線裁定：收，取第 2 軌〈The Opener〉當 `previewUrl`。**
+理由是 c-135 第 472 條已經立好的先例——**合訂版可用，但 `previewUrl` 必須指到本盤的那一軌**
+（Edmond Hall 17 軌合訂、Fats Sadi 23 軌回顧展、Horace Silver 16 軌 12 吋重組盤都是這樣收的）。
+第 524 條講的是「**這張碟算不算同一張**」（不算，所以 `rgMbid` 不改、正文不得寫成同一張），
+第 472 條講的是「**試聽來源可不可以用合訂版**」（可以）——**兩條不衝突，管的是不同的東西。**
+可逆性：改的是 `previews.json` 一個欄位，不是卡池結構。
+**c-138 試聽因此 43/43，無來源 0 張。**
+
+**缺封面仍 2 張**：a 組《Soundin' Off》（CAA 兩個端點都 404）、b 組《Up at Minton's, Volume 2》
+（可用來源：Discogs BLP 4070 原壓，或 2019 日本盤 UCCQ-9530——但該盤掛在第 524 條要退的重複 RG 26026a87 底下，**取圖不取 RG**）。
+
+## 第 533 條（同日）：⚠ **`enum/` 的紙本掃描檔「檔名不等於涵蓋範圍」——已補一張對照表，開工前看表不看檔名**
+
+b 組以為 `billboard-bn-1959-61-ocr.txt` 含 1961，**實際只有 1959 全年＋1960 年 11–12 月**，白跑了一輪才發現。
+**已寫 `batch-progress/enum/SOURCES-billboard-cashbox.md`**：六份掃描檔的實際涵蓋範圍、抓取端的坑
+（1961 沒文字層、1961 年 1–3 月缺期、1962 起改週六日期、Cash Box 的 URL 形狀）、
+以及「一份來源按欄位評價」的 jazzdisco 欄位可信度表。**後批派工信一律指向這張表。**
+
+「失敗與正常長得一樣」家族又一例：**檔名裡的年份區間，與檔案裡真的有的年份，長得一模一樣。**
+
+另一個容器層面的坑：**scratchpad 裡有九月三／六／八日其他批次留下的同名中間檔**
+（`mb/NN-rg.json`、`entries/NN.json`、`wiki/`），會讓「檔案已存在就跳過」的腳本**吃到別批的資料**——
+b 組踩過兩次。**派工信要求代理一律用批次專屬目錄**（`mb138b/`、`e138b/`、`wiki138b/` 這種）。
