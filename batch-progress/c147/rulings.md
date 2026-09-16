@@ -330,3 +330,81 @@ MB 把 MMBST-84401 的這幾軌建成**與正盤不同的 recording 實體**（�
 - 退表 **2 筆**（第 730／731／732 條）。
 - **8 ＋ 6 ＋ 2 ＝ 16**，與 `slice.json` 對齊（第 315 條）。
 - `node batch-progress/c147/chk-prop.mjs a b` → **合計 14 張、12 位｜標記 0**。
+
+## 第 736 條（主線 2026-09-16，研究層交件後）：**《Early Circle》退——vault 前提實查是 10/10 已發行過，不是 1/10**
+
+研究層逐軌以**母帶號**比對後發現：Chick Corea《Early Circle》(CDP 7 84465 2, 1992) **十軌全部已發行過**
+——前九軌在 **1975 年《Circling In》(BN-LA472-H2)** 上、逐軌長度差 ≤8 秒（同母帶），
+第十軌〈Percussion Piece〉在 **1978 年《Circulus》** 上。**策展層第 729 條記的「1/10 軌」是錯的。**
+
+**主線裁定：退卡。** 形狀與第 731 條退掉的 Kenny Burrell《Vol. 3》完全相同，
+**第 597 條自己立的 vault 判準（收「錄音首度問世」、不收「同一張碟的另一個 take 集」）在這裡直接適用。**
+⚠ 而且《Circling In》在 `blue-note-comp.json`、《Circulus》在 `blue-note.json`，**兩張都還沒派卡**
+——**三張都上架的話，池中會有三張碟裝同一批 1970-08 的 Circle 錄音。**
+
+**c-147 因此從 14 張變 13 張**（a 組 8、b 組 5）。已從 `prop-b.json`、`c147-cards.json`、
+`desc-tools/batches/research/c147-b.json` 移除；`chk-prop a b` 重跑 13 張 11 位標記 0、
+`qa-batch research c147` 重跑全部通過。
+
+**通則（第 611 條家族再一種）**：**列舉層／策展層寫的「首發」「未發表」，在軌目層級查過之前都只是待證的宣稱。**
+本批三張 vault 盤有兩張的首發前提不成立（Kenny Burrell Vol. 3、Early Circle），
+**只有 Jimmy Smith《Cherokee》實查成立**（jazzdisco 顯示七軌的發行欄全部只標 TOCJ-1612）。
+
+## 第 737 條（同日）：**B 6503 的軌數照 MB 的 10 軌；兩處編制訂正**
+
+**B 6503 的軌數 MB 與 jazzdisco 差一軌**（jazzdisco 把 BN572-3〈Summertime〉也算進去＝11 軌，MB 只有 10 軌）
+——**研究層裁定照 MB 寫、不點名〈Summertime〉，主線追認。**
+
+⚠ **B-6504 的 A 面那場鋼琴是 James P. Johnson 不是 Art Hodes**（掛名照 MB 的 credit 不動，但正文要寫對）。
+⚠ **Bechet BLP 7020 的六軌是 1951-11-05 同一場，不是「十二年的精選」**——卡單與策展層的敘述要改。
+⚠ **Dexter Gordon《The Other Side of Round Midnight》九軌裡 Gordon 只出現在四軌**
+（〈Call Sheet Blues〉是 Wayne Shorter，最後兩軌是 1986-02 Herbie Hancock＋Bobby McFerrin，**完全沒有 Gordon**）。
+
+## 第 738 條（同日）：**與池中重疊的逐張結論——這批最重要的產出**
+
+研究層**全部以母帶號（不是曲名）比對**，修正策展層第 729 條多處：
+
+| 碟 | 重疊 |
+|---|---|
+| Bechet BLP 7020 | **對 1958 年 BLP 1207 原盤 LP 是 5/6**（BN421-1〈Changes Made〉不在），對 MB 所建的 2001 CD 才是 6/6 |
+| Bechet BLP 7022 | **零重疊**；**不得寫成 Bechet 的領班盤**（1939 那場團名是 Port of Harlem Jazzmen） |
+| Brown BLP 5032 | 5/6 與 seed《Memorial Album》(BLP 1526) 同母帶。**訂正：c-135 的《Clifford Brown Quartet》是 BLP 5047 不是 1526** |
+| **Miles BLP 1501** | **12/12 曲名全在池中**（策展層寫 11）——**沒有一軌可寫成獨有** |
+| Milt Jackson BLP 1509 | 前 8 軌＝c-135 BLP 5011 全部；**只有〈Evidence〉(BN328-0) 是池中沒有的** |
+| George Lewis BLP 1206 | 零重疊；**掛名絕不可簡化成 `George Lewis`**；**不得寫成「與 Volume 1 成對」**（BLP 1205 MB 沒建） |
+| **Miles BLP 1502** | **11/11 曲名全在池中**（策展層寫 9）。⚠ **盤名與 c-135 的《Miles Davis, Vol. 2》幾乎相同，店面上要靠年份與軌數區分** |
+| Navarro BLP 1532 | **只有〈Jahbero〉〈Symphonette〉各正替共 4 軌是獨有**。⚠〈Bouncing with Bud〉池中加本張共三個 take 分裝三張碟 |
+| Turrentine BST 84286 | 零重疊。⚠ 編曲：〈Blues for Stan〉〈Smile〉是 Thad Jones，其餘八軌是 Duke Pearson |
+| B 6503 | **A 面六軌與 c-135 BLP 5006 完全同母帶**；B 面 Wallington 四軌（1954-05-12，Quincy Jones 編曲）才是獨有 |
+| B-6504 | **A 面 5 軌中 4 軌與 c-135 BLP 7007 同母帶**，只有 BN901-2〈High Society (alt take 2)〉是新的 |
+| Jimmy Smith《Cherokee》 | vault 前提成立。⚠ 前瞻：〈Somebody Loves Me〉(tk.10) 與**後批的 BLP 1563《Plays Pretty Just for You》同一天同一場**（1957-05-08），派那張時要回頭比 |
+
+**寫作層的硬約束**：**上表標「全在池中」「同母帶」的軌目，一律不得寫成本張的獨有內容，
+也不得寫成本張樂手的領班錄音。**
+
+## 第 739 條（同日）：**年份與紙本——1952–54 的第三腳實查不存在**
+
+策展層兩張改判**覆核全部成立**：Milt Jackson BLP 1509 **1956**
+（**Billboard 1956-05-12 評介自己寫明「re-mastering of BLP 5011，加一首未發表的〈Evidence〉與三首替代 take」
+——與逐軌比對的結果一字不差**）；Navarro BLP 1532 **1957**。
+
+**唯一有疑議的是 Miles BLP 1501**：卡單 1955，但**唯一的同期紙本是 Billboard 1956-02-04 的評論欄**。
+**仍取 1955**（MB 給的是帶月份的 1955-11、Discogs 原壓群＋jazzdisco 都 1955；
+**同一爵士欄 1956-03 才評到 BLP 1201／1503，該欄在 1500 系列這段普遍延遲 2–3 個月**）。已標可逆。
+
+⚠ **第 704 條要的「直接抓原始 PDF」已做**：研究層抓了 Billboard 1952-08→1953-03 與 1953-08→1954-04
+**共 66 期原始 PDF 逐頁掃過**，**BLP 7020／7022／5032 零命中**——**1952–54 的紙本第三腳實查不存在**，不是沒去找。
+
+## 第 740 條（同日）：**串流採信 6 張、查無 8 張；兩個候選逐軌核不過**
+
+**採信**：Brown BLP 5032 `1443004119`／Miles V1 `1443224843`／Miles V2 `1443091489`／
+Navarro BLP 1532 `1444089312`／Turrentine `1435548295`／Dexter `723722495`／Jimmy Smith `1374684887`。
+**查無 8 張**（走固定無來源狀態）：Bechet 7020／7022、George Lewis 1206、Milt Jackson 1509、B 6503、B-6504
+（＋已退的 Early Circle），**以及 Turrentine 的重複條目 `1577475407`——內容與 `1435548295` 完全相同，記為不得被別卡採用**。
+
+**兩個候選逐軌核不過**（第 528／707 條的活樣本）：
+Milt Jackson `1469463699` 是 1989 年 CD 的 17 軌（缺 BLP 1509 的 4 軌、多 9 軌，**且與池中 BLP 5011 撞陳列**）；
+George Lewis `1052131645`（11 軌）是 1994 年按完整 Climax 場次重排的版本，**BLP 1206 的三軌反而在它的 Vol. 1 裡**。
+
+**缺封面 4 張的替代圖全部查實可用**（Discogs 美國原壓）：Bechet 7022 → `release/4107676`（4 圖）；
+George Lewis 1206 → `release/2504129`（4 圖）；B 6503 → `release/2040078`（6 圖）；B-6504 → `release/3599683`（7 圖）。

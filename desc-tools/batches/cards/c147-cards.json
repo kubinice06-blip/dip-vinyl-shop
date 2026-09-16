@@ -369,37 +369,6 @@
   "cover": null
  },
  {
-  "key": "desc2:Chick Corea|Early Circle",
-  "artist": "Chick Corea",
-  "album": "Early Circle",
-  "year": 1992,
-  "genre": "jazz",
-  "genres": [
-   "jazz"
-  ],
-  "label": "Blue Note CDP 7 84465 2（US 1992 CD 10 軌；MB release 95ba3c12，無 barcode；Discogs 美國原壓 275259 與歐版 14950941 皆標 1992，master 599397；1997 西班牙再壓 4687039）",
-  "rgMbid": "01dfab1e-05ca-32d1-8f07-bdbe3c082b83",
-  "identitySource": "pinned",
-  "curatorWhy": "Circle 是 Chick Corea 1970 年離開 Miles Davis 之後、走進 Return to Forever 之前的那一段——與 Dave Holland、Barry Altschul、Anthony Braxton 一起做自由即興，是他整條生涯裡最不妥協的兩年。Blue Note 當年只發了《The Song of Singing》(BST 84353) 與後來的《Circulus》，其餘母帶躺了二十年。《Early Circle》1992 年把剩下的十軌放出來：Starp、73° - A Kelvin、Ballad、兩首 Duet for Bass and Piano、兩首 Danse for Clarinet and Piano、Chimes I／II（合計超過十七分鐘）與 Percussion Piece，是這個編制留下的最後一批未發表錄音。實掃池中 Chick Corea：漢字 0／羅馬字 `Chick Corea` 6 張（seed 5：《Now He Sings, Now He Sobs》1968、《Piano Improvisations, Volume 1》1971、《Return to Forever》1972、《Hymn of the Seventh Galaxy》1973、《Light as a Feather》1973；c143 1 張《The Song of Singing》1971＝BST 84353，**卡單已建但未進 seed_cards.json**）／`Chick Corea, Dave Holland, Barry Altschul` 1 張（seed《A.R.C.》1971，ECM）／`Gary Burton & Chick Corea` 3 張（seed）／英文字串其他寫法 0。本張缺。",
-  "curatorRisk": "⚠ **MB 標 Compilation，本線判為正規發行**：`secondary-types: [\"Compilation\"]`；本線歸 vault 類（第 597 條：vault 盤收「錄音首度問世」）。第 397 條：`releaseType` 照 MB 原值寫 `Compilation`。⚠ **重疊（一軌）**：〈Percussion Piece〉在本張是 5:52（352 秒），與 1978 年 BN-LA882-J2《Circulus》的同軌（MB release 9bd1683f，352 秒）**長度相同、是同一個錄音**——十軌裡有一軌不是首度問世。《Circulus》目前**不在池中**，但它在 `blue-note.json` 裡排在後面的批次（1978，BN-LA882-J2／UCCU-3210），**派那張時要回頭比本張**。⚠ **與 c143 待上架卡的關係**：c143 已定稿《The Song of Singing》(BST 84353, 1971)，那是同一個 Circle 編制 1970 年 4 月的另一批錄音（Toy Room／Ballad I／Rhymes／Flesh／Ballad III／Nefertiti）——**曲名相近但無一相同**（本張的〈Ballad〉與該張的〈Ballad I〉／〈Ballad III〉是不同軌）。兩張卡上架後會相鄰，正文必須寫清楚。池中 seed《A.R.C.》(ECM, 1971) 是同三人組的 ECM 盤，曲目亦零重疊。⚠ 「首度問世」的驗算：本張十軌逐軌比對過 `blue-note.json` 的 Corea 條目（The Song of Singing 1971／1987 兩個 RG、Circulus 1978、Play 1992、Jazz for a Sunday Afternoon 1993）與池中 6 張，除〈Percussion Piece〉外皆無更早的發行。同批的 Kenny Burrell Vol. 3 與 Hank Mobley Quintet 就是在這一關被推翻（見 rulings 第 731／732 條），本張通過。⚠ 掛名：MB artist-credit `Chick Corea`（Person），與池中一致；**不得改掛 `Circle`**（池中無此字串，MB 這個 RG 也不是掛 Circle）。⚠ 曲名含度數符號（`73° - A Kelvin`）與井字號（`Duet for Bass and Piano #1`），寫進正文時照原樣、不要改成中文標點。⚠ 年份：MB 1992；Discogs 美國原壓 275259 與歐版 14950941 皆 1992（master 599397 底下只有 1997 西班牙一筆較晚）。錄音年 1970 寫正文、不進 `year`。⚠ 店面（第 254 條，只寫觀察）：Apple us／tw `search` 各 12 筆，**無一筆是本盤**；藝人目錄 `lookup?id=117338&entity=album`（137 筆）**無命中**。兩種查法都落空——只寫觀察，第三種查法留給研究層。CAA：RG 層 1 圖，來源 95ba3c12（1992 原盤本身）。",
-  "mbNote": "釘 release-group 01dfab1e-05ca-32d1-8f07-bdbe3c082b83。回問 release-group 端點（inc=artist-credits+releases）：title「Early Circle」、artist-credit「Chick Corea」（Person）、first-release-date 1992、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：95ba3c12（1992 US Official CD 10 軌，Blue Note CDP 7 84465 2，無 barcode）。曲目（release/95ba3c12?inc=recordings）：Starp [5:25]／73° - A Kelvin [9:17]／Ballad [6:47]／Duet for Bass and Piano #1 [3:32]／Duet for Bass and Piano #2 [1:45]／Danse for Clarinet and Piano #1 [2:17]／Danse for Clarinet and Piano #2 [2:39]／Chimes I [10:25]／Chimes II [6:40]／Percussion Piece [5:52]。對照組：《Circulus》BN-LA882-J2（MB RG ca0d00b1，release 9bd1683f 1978，5 軌：Drone [22:25]／Quartet Piece No. 1 [16:13]／No. 2 [17:33]／No. 3 [12:25]／**Percussion Piece [5:52]**）與《The Song of Singing》BST 84353（MB RG 847dcc5e，6 軌）已逐軌比對。",
-  "releaseType": "Compilation",
-  "exceptionReason": "CDP 7 84465 2 是 1992 年首度發行的 1970 年 Circle 未發表錄音：十軌裡有九軌在 1992 年之前沒有任何形態問世（唯一的例外是〈Percussion Piece〉，1978 年已收在 BN-LA882-J2《Circulus》）。Blue Note 用 4000 系列的延伸號 84465 發它，是廠牌自己把庫存母帶轉成商品，不是第三方精選；MB 標 Compilation 是因為素材跨了不同的編制與場次。",
-  "exceptionEvidenceUrls": [
-   "https://musicbrainz.org/release-group/01dfab1e-05ca-32d1-8f07-bdbe3c082b83",
-   "https://www.discogs.com/release/275259"
-  ],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "b",
-  "lineType": "深掘",
-  "scene": "Blue Note 目錄補齊（§5.6 合輯正典）",
-  "queryAlias": "Early Circle (CDP 7 84465 2)；Chick Corea — Early Circle；Circle（1970 年四重奏）",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Jimmy Smith|Cherokee",
   "artist": "Jimmy Smith",
   "album": "Cherokee",
