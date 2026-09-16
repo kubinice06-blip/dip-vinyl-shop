@@ -369,3 +369,56 @@ scratchpad 抓到的是**英國樂團領班 Jack Wilson（1907–2006）**，本
 ⚠ 這兩份存的是**關鍵字命中頁**（關鍵字是 c-141 a 的目錄號與盤名），**查別的碟要重抓或放寬關鍵字**。
 抓取端兩個坑已寫進 SOURCES 表：**Billboard 1968-08 起、整個 1969 年改成 `BB-YYYY-MM-DD.pdf`**；
 Cash Box 每期約 12 MB，`pymupdf` 直接讀文字層即可。
+
+## 第 593 條（主線 2026-09-16，研究層 b 組交件後）：**年份改兩張——「目錄號↔評介週對照表 ＋ 年度唱片目錄」的夾擠推定，兩張都採**
+
+b 組 19 筆全 `full`、QA 清（先前三條 repo 路徑的 `src` 已改成 worldradiohistory 的 PDF 網址）。
+
+1. **Andrew Hill《Grass Roots》（BST 84303）1968 → 1969，把握度高，採。**
+   b 組補掃 Cash Box 1968-09→1969-12 共 69 期，做出**目錄號↔評介週對照**：
+   84299＝1969-03-08、84300＝1969-04-12、**84302＝1969-05-31**、84313＝1969-07-19；
+   且 **1968-12-07 的 Cash Box 年度唱片目錄把 Blue Note 在架盤列到 BST 84292 為止**，84303 不在其中。
+   英文維基 infobox 亦寫 1969。反方只有 jazzdisco 與 Discogs 美國原壓群（第 570 條「整群抄 ℗© 年」形）。
+2. **The Three Sounds《Elegant Soul》（BST 84301）1968 → 1969，把握度中等，採。**
+   同一條鄰號夾擠（84300＝1969-04-12、84302＝1969-05-31）＋不在 1968-12-07 年度目錄；
+   維基的「September 21, 1968」只比錄音結束晚一天，幾乎確定是把錄音日誤填。
+   ⚠ **唯一指向 1968 的紙本是 Cash Box 1968-12-21 評的單曲 Blue Note 1924，不是專輯**
+   ——**單曲先行、專輯後出是這一段的常態，單曲評論不能當專輯上市證據。**
+   **這張是夾擠推定，可逆**：`yearVerified` 已標明。
+
+**維持 1968 的邊界張**：Duke Pearson《The Phantom》（84293）落在年底邊界
+（1968-12-07 年度目錄列到 84292、鄰號 84292＝1968-12-28／84294–95＝1969-01-25），五家都標 1968，維持並註記。
+
+⚠ **新方法（已寫進 SOURCES 表）：目錄號↔評介週對照表 ＋ Cash Box 每年 12 月的年度唱片目錄**，
+可以把一張沒有自己評介的碟夾進一個區間，**比任何資料庫的年份欄硬**。
+但它是**夾擠推定不是直接證據**——結論要在 `yearVerified` 標明可逆。
+
+## 第 594 條（同日）：**c-141 試聽補滿 39/39；缺封面兩張的替代圖來源**
+
+**串流採信三張**（都是 6 軌單片、非合訂，逐軌差 1–19 秒）：Hank Mobley《Reach Out!》`781561645`、
+Horace Silver《Serenade to a Soul Sister》`724490548`、Duke Pearson《The Phantom》`1445883152`。
+主線已補進 `previews.json`。**c-141 試聽 39/39、無來源 0 張。**
+
+**缺封面兩張（本機上傳時用）**：
+Jimmy Smith《Open House》→ Discogs 原壓 `r13057784`（4 圖，**Reid Miles 設計＋Francis Wolff 攝影**），
+或 1991 日本 BN 4269（`r5967344`）。⚠ **本張是本組唯一店面掛零、疑似從未上串流的碟。**
+Duke Pearson《Introducing Duke Pearson's Big Band》→ Discogs 原壓 `r22807073`（7 圖，gatefold），
+或 Apple `1443550883` 的封面圖。
+
+## 第 595 條（同日，給寫作層）：**這一批的時代實線——Liberty 期的封面與監製換人，有名有姓**
+
+- **封面設計者**：**Reid Miles 只剩兩張**（《Andrew!!!》《Open House》，**都是 Lion 時代的庫存錄音**）；
+  **Forlenza Venosa Associates 接手 9 張**；另有 Fred Marcellino（《Time for Tyner》）、
+  Gabor Halmos（《Lighthouse '68》）、Frank Gauna 美術指導（《Common Touch》）。《!Caramba!》查不到封面 credit。
+- **監製**：Alfred Lion 2（**皆 vault 盤**）／Francis Wolff 8／Duke Pearson 3／Richard Bock 1（Pacific Jazz）／
+  Monk Higgins＋Dee Ervin 1（外製）／不明 2（《Heads Up!》維基自己寫「Duke Pearson or Francis Wolff」、
+  《'Bout Soul》Discogs 無 producer 欄）——**不明的那兩張正文不得指名監製。**
+- Cash Box **1968-11-09**：Duke Pearson 當選 NARAS 紐約分會理事、接替 Bob Thiele。
+  **1969-09-27** 的 Blue Note 三十週年報導列出當時編制（Francis Wolff A&R、Duke Pearson arranger and artist），
+  並提到 Pearson 的十六人樂團在 Village Vanguard 替 Thad Jones／Mel Lewis 代班駐演。
+- Cash Box **1969-03-22** 找到《Plain Talk》（BST 84296）的評介，**班底與《Open House》一字不差**
+  → 坐實**同一場錄音拆兩張、晚三個月上市**。**84296 排在 c-142，兩卡 risk 要互指。**
+- Cash Box **1968-09-21** 的 World Pacific 整版廣告已列 Lighthouse '68 ST-20131，
+  版面下角印「A PRODUCT OF liberty records」——坐實第 582 條判準表 (b) 的事實基礎。
+- 《Introducing Kenny Cox》Discogs 盤面正面印 **© MCMLXIX（＝1969）**，與 Discogs 自己填的 1968 年份欄互相矛盾
+  ——**又一個「盤面 ℗© 年與資料庫年份欄不一致」的實例**；維基 producer 欄寫 Michael Cuscuna 是錯的（原盤是 Duke Pearson）。
