@@ -1,0 +1,178 @@
+[
+ {
+  "key": "desc2:Kenny Burrell|Swingin'",
+  "artist": "Kenny Burrell",
+  "album": "Swingin'",
+  "facts": [
+   {
+    "f": "release-group 79c2a92e 的欄位：title「Swingin'」、artist-credit 單一 Person `Kenny Burrell`（a85b66d2）、first-release-date **1980**、primary-type Album、**secondary-types 空**（MB 沒有把它標成 Compilation，與維基正文的「1980 compilation album」相反）。release 端點（第 642 條）只回**一筆** release fd0e65a9＝1980 JP Official 12 吋黑膠 5 軌、Blue Note／**GXF 3070**、無 barcode，**軌長全數有填**：A1〈I Never Knew〉12 分 37 秒、A2〈My Heart Stood Still〉5 分 15 秒、B1〈Beef Blues Stew〉4 分 36 秒、B2〈If You Could See Me Now〉5 分 29 秒、B3〈Swingin'〉9 分 56 秒，合計約 37 分 53 秒。**MB 沒有建 GXK-8155、也沒有任何美國或歐洲壓片**——這張碟從頭到尾只在日本發行過。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=79c2a92e-89b9-487f-b7cf-06ccdd62d85b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Toshiba／King 頁把 GXF-3070 拆成**五個不同的場次、五種不同的編制**，母帶 take 號逐軌可查：**1956 年 3 月 12 日 Audio-Video Studios, NYC**（Frank Foster 次中音、Tommy Flanagan 鋼琴、Burrell 吉他、Oscar Pettiford 貝斯、Shadow Wilson 鼓）＝tk.42〈My Heart Stood Still〉；**1958 年 5 月 14 日 Manhattan Towers, NYC**（Louis Smith 小號、Tina Brooks 與 Junior Cook 兩把次中音、Duke Jordan 鋼琴、Sam Jones 貝斯、Art Blakey 鼓）＝tk.1〈I Never Knew〉；**1959 年 8 月 25 日 Five Spot Cafe 的第一、二、三場**＝tk.3〈If You Could See Me Now〉（Roland Hanna 彈琴）、tk.8〈Swingin'〉（Tina Brooks 加入、Bobby Timmons 彈琴）、tk.14〈Beef Stew Blues〉（Hanna 回來），三場的貝斯都是 Ben Tucker、鼓都是 Blakey。**同頁註明「also released on Blue Note (J) GXK-8155 in 1980」——GXK 是同一年的換號再發，不是首發。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-toshiba-king-series/"
+   },
+   {
+    "f": "**逐軌比對池中四張同場正盤，用 take 號不是曲名（第 845 條的覆核，結論相同：零重複）**。1956-03-12 那場：本盤 tk.42，池中 c-136 `Kenny Burrell —《Kenny Burrell》`（jazzdisco 作 BLP 1543「Kenny Burrell (Vol. 2)」）取的是 tk.10／13／27／43／64——**本盤的 tk.42 與正盤的 tk.43 是同一天緊鄰的兩個 take，但不是同一個**。1958-05-14 那場：本盤 tk.1，《Blue Lights, Volume 1》（BLP 1596）取 tk.2／8／11／14、《Volume 2》（BLP 1597）取 tk.4／9／10／12，**本盤拿的是編號最小的那一個**。1959-08-25 Five Spot：本盤 tk.3／8／14＝第 1／2／3 場，《On View at the Five Spot Cafe》（BLP 4021）取 tk.10／11（第 2 場）、tk.15（第 3 場）、tk.19（第 4 場）、tk.22（第 5 場）——**同一晚同一批客人、五場裡本盤只拿前三場各一首**。⚠ **三組全部通過第 855 條的三重核對（同錄音室＋同班底＋take 號互補）**，不是靠日期反查得來的。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+   },
+   {
+    "f": "Discogs 日本原壓 6021071（1980 JP、GXF 3070、7 圖）的 notes 逐軌標出處，**與 jazzdisco 完全相符但曲序歸屬不同**：「A1 recorded at Manhattan Towers, NYC, on May 14, 1958. A2 recorded at Audio-Video Studios, NYC, on March 12, 1956. B1 To B3 recorded at the Five Spot Cafe, NYC, on August 25, 1959.」**日期是 25 日不是維基寫的 26 日。** 名單欄印出五場所有樂手（Pettiford／Sam Jones／Ben Tucker 三位貝斯手、Shadow Wilson 與 Blakey 兩位鼓手、Flanagan／Jordan／Timmons／Hanna 四位鋼琴手），並列出 **Producer [Original Session]＝Alfred Lion、Producer [Produced For Release]＝Michael Cuscuna、Engineer [Recording]＝Rudy Van Gelder**，內頁文案是 **Bob Porter 與油井正一（Teruo Isono）兩篇**、封面攝影 **阿部克自（Katsuji Abe）**。同號另有宣傳盤 29096581，兩筆年份都是 1980。",
+    "src": "https://api.discogs.com/releases/6021071"
+   },
+   {
+    "f": "**年份的紙本側：1980–81 兩刊 206 期對 `GXF`／`GXK` 與本盤盤名全部零命中，這是正常的**（第 822／853 條）——King 的「ブルーノート世界初登場1800シリーズ」只在日本上市，美國貿易刊不會登。**但同一批檔案裡有一條可用的旁證**：Billboard 1980-04-12 p57 的日本市場報導寫「**King Records' Yoichi Nakao, who handles the Blue Note and Pacific Jazz labels**」——**1980 年 Blue Note 母帶在日本的發行確實是 King Record 在管**，與盤面的「Mfd by King Record Co. Ltd. Japan」對得起來。**因此本盤的 1980 由 MB frd＋jazzdisco＋Discogs 兩筆日本原壓三邊支撐，紙本只提供廠牌線索、不提供上市週。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1980/BB-1980-04-12.pdf"
+   },
+   {
+    "f": "店面（第 254 條，只寫觀察）：**Apple us 三種查法全部零命中**——(1) `search term=Kenny Burrell Swingin'` 回 0 筆；(2) 藝人目錄 `term=Kenny Burrell&limit=200` 取回 76 張掛他名的專輯，**沒有一張叫《Swingin'》**；(3) 盤名單查會撞到池中九張同型盤名（Jackie McLean《Swing, Swang, Swingin'》、Dexter Gordon《A Swingin' Affair》等），**沒有本盤**。→ **串流查無。** CAA：RG 層 5 圖，來源是日本原壓 fd0e65a9 ✓（首發盤，不是換號再發）。",
+    "src": "https://itunes.apple.com/search?term=Kenny%20Burrell&entity=album&country=us&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "五首曲子來自五個不同的晚上、五組不同的人：1956 年的錄音室、1958 年的大禮堂、1959 年 Five Spot 同一夜的第一、二、三場——唯一從頭到尾在場的只有 Burrell 的吉他",
+   "1959 年 8 月 25 日那晚 Blue Note 錄了五場，正式出版的《On View》拿走第二到第五場的五首；二十一年後這張日本盤才把前三場各一首拿出來"
+  ],
+  "sound": "5 軌、約 37 分 53 秒，1980 年只在日本壓過的庫存首發盤。A 面兩軌是錄音室：〈I Never Knew〉（12 分 37 秒，全盤最長）出自 1958 年 5 月 14 日 Manhattan Towers 的七人編制——Louis Smith 小號、Tina Brooks 與 Junior Cook 兩把次中音、Duke Jordan 鋼琴、Sam Jones 貝斯、Art Blakey 鼓；〈My Heart Stood Still〉（5 分 15 秒）出自 1956 年 3 月 12 日 Audio-Video Studios 的五重奏，Frank Foster 吹次中音、Tommy Flanagan 彈琴、Oscar Pettiford 貝斯、Shadow Wilson 鼓。B 面三軌全是 1959 年 8 月 25 日 Five Spot Cafe 同一晚的現場，前三場各取一首：〈Beef Blues Stew〉（4 分 36 秒，Roland Hanna）、〈If You Could See Me Now〉（5 分 29 秒，Hanna）、〈Swingin'〉（9 分 56 秒，Tina Brooks 加入、Bobby Timmons 彈琴），貝斯 Ben Tucker、鼓 Art Blakey。Rudy Van Gelder 收音，Alfred Lion 錄的原場，Michael Cuscuna 負責整理發行。串流側歸「Jazz」。",
+  "keyTracks": [
+   "I Never Knew",
+   "Swingin'",
+   "My Heart Stood Still"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1980。** 三邊同向：MB `first-release-date` 1980（RG 底下只有 GXF 3070 一筆 release）、jazzdisco Toshiba／King 頁「GXF-3070 … 1980」、Discogs 兩筆日本原壓（正盤 6021071 與宣傳盤 29096581）皆 1980。⚠ **`GXK-8155` 是同年的換號再發，不是首發**——依第 822 條判準 1，`year` 取 GXF 不取 GXK（本盤兩者同年，所以不影響結論，但寫法要一致）。⚠ **美國紙本零命中是常態不是疑點**（第 822／853 條）：這是 King 的日本獨佔企劃，1980–81 兩刊 206 期對 `GXF`／`GXK` 與盤名全部沒有命中；同批可用的旁證是 Billboard 1980-04-12 p57「King Records' Yoichi Nakao, who handles the Blue Note and Pacific Jazz labels」。⚠ **錄音年（1956／1958／1959）與首次商業發行年（1980）相差二十一到二十四年**，正文必須把兩者分開講，不得寫成「1980 年錄」。",
+  "notes": "**庫存首發（vault 盤），不是合輯**——五軌全是先前未曾成盤發行的 take，`secondary-types` 空、Discogs format 欄沒有 Compilation。⚠ **維基正文把它寫成「a 1980 compilation album」，不要照抄**（第 782 條：讀內容不讀標籤）。｜**撞陳列四張，逐軌零重複**（第 845 條覆核通過）：1956-03-12＝c-136 池中卡《Kenny Burrell》（BLP 1543，本盤 tk.42／正盤 tk.10・13・27・43・64）、1958-05-14＝c-137 兩張《Blue Lights, Volume 1／2》（BLP 1596／1597，本盤 tk.1／正盤 tk.2・8・11・14 與 tk.4・9・10・12）、1959-08-25＝c-138《On View at the Five Spot Cafe》（BLP 4021，本盤 tk.3・8・14 是第 1／2／3 場，正盤 tk.10・11・15・19・22 是第 2／3／4／5 場）。**寫作層的硬約束：這五軌不得寫成「未發表的新場次」，也不得與《On View》寫成同一張現場盤；可以寫的是「同一批母帶裡沒發過的那幾條」。** ⚠ **第 855 條反查覆核**：三個日期在 jazzdisco 五個系列頁的反查另外只命中 BNJ-61008/10《The Other Side Of Blue Note 1500 Series》（1984 日本三片合輯，不在池中），無假陽性。｜**曲名兩種寫法**：MB 與 Discogs 盤面作〈Beef Blues Stew〉、jazzdisco 作〈Beef Stew Blues〉——卡與正文照盤面。｜**維基錯兩處**：Five Spot 那晚記 August 26（jazzdisco 與 Discogs 皆 25）、正文寫 compilation。｜**跨卡互指（第 585 條）**：Burrell 在本批出現兩次，另一次是 b 組《On the Sunny Side》裡**四場全部由他彈吉他**（但那是 Jimmy Smith 的名義）；a 組另有他的《K.B. Blues》《Freedom》兩張日本盤。｜店面：**Apple us 三種查法全部查無**，明寫查無。｜CAA 5 圖，來源是日本原壓 fd0e65a9 ✓。"
+ },
+ {
+  "key": "desc2:Bobby Hutcherson|Inner Glow",
+  "artist": "Bobby Hutcherson",
+  "album": "Inner Glow",
+  "facts": [
+   {
+    "f": "release-group 174c47ab：title「Inner Glow」、artist-credit `Bobby Hutcherson`（edbe5d7f Person）、first-release-date **1980**、primary-type Album、secondary-types 空。release 端點**只回一筆**：b4139de0＝1980 JP Official 12 吋黑膠 5 軌、Blue Note／**GXF 3073**、無 barcode，軌長全填：A1〈Boodaa〉10 分 6 秒、A2〈Cowboy Bob〉9 分 31 秒、B1〈Searchin' the Trane〉8 分 4 秒、B2〈Inner Glow〉7 分 59 秒、B3〈Roses Poses〉7 分 19 秒——**合計約 42 分 59 秒，五軌沒有一首短於七分鐘**。**MB 一張美國盤都沒建**，這碟的首發與唯一原壓都是日本盤。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=174c47ab-0d58-40de-b773-32efac2bc7a1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco Toshiba／King 頁 GXF-3073 條：**兩天、兩種編制、全在 United Artists Studio, Los Angeles**——1975 年 3 月 24 日七人（Oscar Brashear 小號、Thurman Green 長號、Harold Land 次中音**只在頭兩軌**、Hutcherson 顫音琴、Dwight Dickenson 鋼琴、Kent Brinkley 貝斯、Larry Hancock 鼓）＝(tk.7)〈Boodaa〉、(tk.4)〈Roses Poses〉、(tk.2)〈Searchin' The Trane〉；1975 年 3 月 25 日同一批人（管樂不再標註限定軌）＝(tk.3)〈Inner Glow〉、(tk.2)〈Cowboy Bob〉。⚠ **jazzdisco 這一條是 take 序不是盤面序**（第 850 條：本組四張中的一張），**曲序一律以 MB＋Discogs 的盤面序為準**。⚠ **本盤是本批唯一一張不在 Van Gelder 錄的錄音室盤**——1975 年的 Blue Note 已經搬到洛杉磯的 United Artists 自家棚。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-toshiba-king-series/"
+   },
+   {
+    "f": "Discogs 日本原壓 1370684（1980 JP、GXF 3073、6 圖、¥1,800）notes：「Recorded on March 24 and 25, 1975 at United Artists Recording Studio, Los Angeles.」名單欄補了 jazzdisco 沒有的三件事：**錄音師是 Bert D'Angelo（不是 Van Gelder）**、**Hutcherson 自己掛 Producer 並兼打馬林巴（Vibes, Marimba, Producer）**、**Michael Cuscuna 掛 Produced For Release**；內頁是 Michael Rozek 與悠雅彦（Masahiko Yuh）兩篇文案、封面攝影阿部克自。⚠ **鋼琴手的名字兩邊不同**：jazzdisco 作 **Dwight Dickenson**、Discogs 作 **Dwight Dickerson**——洛杉磯這位鋼琴家的通行拼法是 Dickerson，**正文若要寫名字請用 Dickerson**。",
+    "src": "https://api.discogs.com/releases/1370684"
+   },
+   {
+    "f": "**第 855 條的假陽性覆核（本盤是立條的兩個樣本之一）**：拿 1975 年 3 月 24 日與 25 日回 jazzdisco 五個系列頁反查，兩天都另外命中 **Ronnie Foster《Cheshire Cat》BN-LA425-G** ——但那兩場在 **A&R Studios, NYC**，班底是 Foster、George Benson、Joe Beck、Mtume，**與本盤零交集**。**同一天、兩個城市、兩組人，不是同場。** 本盤在池中因此**沒有任何同場的正盤**：`Bobby Hutcherson` 在池中與未上架批次裡的其他卡（seed《Dialogue》《Components》等、c-143《Live at Montreux》、c-144《Waiting》《The View From the Inside》《Knucklebean》、a 組《Spiral》、b 組《Patterns》《Medina》）**沒有一張的錄音日落在 1975-03-24／25**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+   },
+   {
+    "f": "**年份**：MB frd 1980、jazzdisco「GXF-3073 … 1980」、Discogs 唯一一筆原壓 1370684＝1980，三邊同向，**且 GXF 3073 沒有對應的 GXK 換號版**（第 846 條那種「RG 只釘再發盤」的陷阱在本張沒有中）。紙本側：1980–81 兩刊 206 期對盤名與 `GXF` 零命中，**符合第 822／853 條「日本獨佔的庫存盤美國紙本查無是常態」**。⚠ **錄音年 1975 與發行年 1980 相差五年**，正文必須分開講。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-toshiba-king-series/"
+   },
+   {
+    "f": "店面（第 254 條，只寫觀察）：**Apple us 三種查法全部零命中**——(1) `search term=Bobby Hutcherson Inner Glow` 回 0 筆；(2) 藝人目錄 `term=Bobby Hutcherson&limit=200` 取回 37 張掛他名的專輯，**沒有《Inner Glow》**；(3) `term=Inner Glow Hutcherson` 回 0 筆。→ **串流查無。** ⚠ **第 528／707／709 條提醒的 `apple-candidates.md` 誤配在本張要特別小心**：Hutcherson 在 Apple 上有大量 1970 年代的洛杉磯期作品（《Montara》《Waiting》《Knucklebean》等），**盤名不同、班底部分重疊，很容易被當成同一張**。CAA：RG 層 6 圖，來源是日本原壓 b4139de0 ✓。",
+    "src": "https://itunes.apple.com/search?term=Bobby%20Hutcherson&entity=album&country=us&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1975 年他已經搬到洛杉磯，錄音室不再是 Van Gelder 的紐澤西，是 United Artists 在西岸的棚；五首曲子沒有一首短於七分鐘，兩天錄完，然後躺了五年才在日本出版",
+   "掛名製作人的是他自己——這張碟上 Bobby Hutcherson 除了顫音琴與馬林巴，還第一次把製作欄寫上自己的名字"
+  ],
+  "sound": "5 軌、約 42 分 59 秒，1980 年只在日本壓過的庫存首發盤。兩天錄完：1975 年 3 月 24 日的〈Boodaa〉（10 分 6 秒，全盤最長）、〈Roses Poses〉（7 分 19 秒）、〈Searchin' the Trane〉（8 分 4 秒），3 月 25 日的〈Inner Glow〉（7 分 59 秒）與〈Cowboy Bob〉（9 分 31 秒）。編制是七人的洛杉磯班底：Oscar Brashear 小號、Thurman Green 長號、Harold Land 次中音、Hutcherson 顫音琴與馬林巴、Dwight Dickerson 鋼琴、Kent Brinkley 貝斯、Larry Hancock 鼓；Land 的次中音在 3 月 24 日那場只進頭兩軌。錄音地點是 United Artists Studio, Los Angeles、錄音師 Bert D'Angelo——**不是 Van Gelder，這是本批唯一一張在西岸錄的錄音室盤**。Hutcherson 自己掛製作，Michael Cuscuna 負責整理發行。串流側查無。",
+  "keyTracks": [
+   "Boodaa",
+   "Inner Glow",
+   "Cowboy Bob"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1980。** 三邊同向且沒有相反證據：MB `first-release-date` 1980（RG 底下只有 GXF 3073 一筆 release）、jazzdisco Toshiba／King 頁「GXF-3073 … 1980」、Discogs 唯一一筆原壓 1370684＝1980（日本盤、¥1,800）。⚠ **本張沒有 GXK 換號版**，所以第 846 條那種「MB 只建再發、frd 晚一到兩年」的陷阱在這裡沒有中。紙本側 1980–81 兩刊 206 期對盤名與 `GXF` 全部零命中，**依第 822／853 條這是日本獨佔庫存盤的常態，不構成年份疑點**。⚠ **錄音年 1975 與首次商業發行年 1980 相差五年**，正文必須把「1975 年錄、1980 年（在日本）首度發行」寫清楚，不得寫成「1975 年發行」或「1980 年錄」。",
+  "notes": "**庫存首發（vault 盤）**：1975 年 3 月錄、1980 年才在日本首度商業發行，中間五年。｜**撞陳列 0**——這是本組六張撞陳列以外的一張，池中沒有任何一張碟出自 1975-03-24／25。⚠ **但它是第 855 條的立條樣本**：用錄音日反查 jazzdisco，兩天都另外命中 **Ronnie Foster《Cheshire Cat》BN-LA425-G**，那兩場在 **A&R Studios, NYC**、班底完全不同——**同一天不等於同一場，必須連錄音室與編制一起核。** ｜**人名有兩種拼法**：鋼琴手 jazzdisco 作 Dwight Dickenson、Discogs 作 **Dwight Dickerson**（通行拼法），正文用 Dickerson。｜⚠ **jazzdisco 的曲序是 take 序不是盤面序**（第 850 條），排序一律以 MB＋Discogs 為準。｜**錄音室不是 Van Gelder**：本批二十一張裡只有這一張（與同期的洛杉磯線）錄在 United Artists Studio, Los Angeles，錄音師 Bert D'Angelo；**正文不得把 Van Gelder 的說法套過來。** ｜**跨卡互指**：Hutcherson 三張在本組（《Patterns》1968、《Medina》1969、《Inner Glow》1975）是**三個年代、三組人**，Harold Land 串起《Medina》與本張，但沒有一位貫穿三張（第 856 條）；往前接 c-144《Waiting》《The View From the Inside》《Knucklebean》。｜店面：**Apple us 三種查法全部查無**，明寫查無；⚠ 候選清單很容易配到他 1970 年代的洛杉磯期他盤。｜CAA 6 圖，來源是日本原壓 b4139de0 ✓。"
+ },
+ {
+  "key": "desc2:Andrew Hill|Dance With Death",
+  "artist": "Andrew Hill",
+  "album": "Dance With Death",
+  "facts": [
+   {
+    "f": "release-group 0c21d196：title「Dance With Death」、artist-credit `Andrew Hill`（ede80a9f Person）、first-release-date **1980**、primary-type Album、secondary-types 空。release 端點回**六筆**，最早的是 a2c8b3e4＝1980 US Official 12 吋黑膠 6 軌、Blue Note／**LT-1030**：A1〈Yellow Violet〉5 分 29 秒、A2〈Partitions〉5 分 49 秒、A3〈Fish 'n Rice〉7 分 29 秒、B1〈Dance With Death〉6 分 35 秒、B2〈Love Nocturne〉6 分 42 秒、B3〈Black Sabbath〉6 分 23 秒（合計約 38 分 27 秒，維基 infobox 的 length 38:43 對得起來）。後續五筆全是 CD／數位／再壓（2004 US 7 軌、2012 JP TOCJ-50282 7 軌、2023 XW 黑膠 6 軌、2024 JP UCCQ-9646 6 軌、無日期數位 7 軌）——**七軌版多的那一軌是 1995 年起加的〈Dance With Death (Alternate Take)〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0c21d196-5235-33be-8395-08d6ebebe852&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco LT 系列頁 LT-1030 條：**一天錄完，母帶號 4029–4034 連號、take 號從 4 到 29**——Charles Tolliver 小號、Joe Farrell 次中音與高音薩克斯風、Andrew Hill 鋼琴、Victor Sproles 貝斯、Billy Higgins 鼓，**1968 年 10 月 11 日 Van Gelder Studio, Englewood Cliffs**：4029 tk.4〈Yellow Violet〉／4030 tk.8〈Partitions〉／4031 tk.14〈Dance With Death〉／4032 tk.22〈Fish 'N Rice〉／4033 tk.27〈Love Nocturne〉／4034 tk.29〈Black Sabbath〉。**六軌就是這一場的全部產出，沒有第二場。** ⚠ **盤面曲序與 take 序不同**：take 序是 Yellow Violet→Partitions→Dance With Death→Fish 'N Rice→Love Nocturne→Black Sabbath，盤面把〈Dance With Death〉挪到 B 面第一軌當 B 面開場。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/"
+   },
+   {
+    "f": "**廠牌檔期文件兩則，把上市釘在 1980 年上半**（第 612／812 條）：**Billboard 1980-02-23 p13** 的 Liberty／UA 整版新片廣告逐字印「**ANDREW HILL / Dance With Death LT-1030 8LT-1030 4LT-1030**」，同版還有 LT-1020 Korona、LT-1025 Dayton、**LT-1028 Lou Donaldson《Midnight Sun》（a 組）**；**Billboard 1980-03-08 p34** 是整版「**fourteen unreleased masters**」廣告，十二個可辨識的盤名裡本張列在第二位（「ANDREW HILL Dance With Death bBlue Note CLASSIC」），同版另有 a 組的 Consequence／Solid／Midnight Sun／Nigeria／A Slice Of The Top／Confirmation／Taru／Spiral。**兩則廣告都印出了目錄號與三種載體號（LP／8 軌／卡帶），是第 612 條講的最上位證據。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1980/BB-1980-02-23.pdf"
+   },
+   {
+    "f": "Discogs 美國原壓 1251688（1980 US、LT-1030、4 圖）notes 把**盤面三處版權年不一致**逐處記下來：「On labels (rim): © ℗ **1979** Liberty/United Records, Inc. | On labels (bottom center): ℗ **1980** | On back cover: © ℗ **1980**」——**同一張盤上 1979 與 1980 兩個年份並存**，這正是第 550 條「Discogs 年份欄會整群抄盤面 ℗© 年」的成因現場；**但這一次 Discogs 抄對了（全群 1980），而且有 02-23 的廣告可以獨立驗證。** 同筆 notes 另寫「This material is previously unreleased.」名單欄：**Producer [Original Session]＝Francis Wolff、Produced For Release＝Michael Cuscuna、Engineer＝Rudy Van Gelder、Engineer [Re-mix]＝Tony Sestanovich、內頁文案＝Nat Hentoff、美術＝Bill Burks、攝影＝Jane O'Neal**。",
+    "src": "https://api.discogs.com/releases/1251688"
+   },
+   {
+    "f": "英文維基 `Dance with Death (album)` infobox：released 1980、recorded October 11, 1968、studio Van Gelder Studio, Englewood Cliffs, NJ、length 38:43、label Blue Note LT 1030、**producer 只寫 Francis Wolff**（沒寫 Cuscuna）；chronology 為 prev《Grass Roots》(1968) → next《Lift Every Voice》(1970)。⚠ **維基把盤名寫成小寫的 `Dance with Death`**，**卡與正文照盤面與 MB 的大寫 `Dance With Death`**（第 858 條：池中句中的 with／With 是 90 比 99、沒有多數，回到盤面）。",
+    "src": "https://en.wikipedia.org/wiki/Dance_with_Death_(album)"
+   },
+   {
+    "f": "店面（第 254 條，只寫觀察）：Apple us `search` 命中 **collectionId 724721105「Andrew Hill／Dance With Death」7 軌**，逐軌核過——**前六軌與 1980 年原盤逐軌相符且順序相同**（Yellow Violet 332 秒／Partitions 352／Fish 'N Rice 451／Dance With Death 400／Love Nocturne 404／Black Sabbath 384），**第 7 軌是原盤沒有的〈Dance With Death (Alternate Take)〉432 秒**，八首全部有 preview。`releaseDate` 印 **1968-10-11＝錄音日不是發行日**（第 484 條）。⚠ 同一個查詢另外回了七張別人的碟（電音的 Anoza Andrew Hill、Loud Luxury 等），**掛名同字串不同人，第 611 條盲區**。",
+    "src": "https://itunes.apple.com/lookup?id=724721105&entity=song&country=us&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1968 年 10 月 11 日，Van Gelder 錄了六個 take 就收工；母帶編號 4029 到 4034 連號躺了十二年，直到 Blue Note 幾乎停止新錄音的那一年才被拿出來壓片",
+   "〈Black Sabbath〉錄在 1968 年 10 月——比那支同名英國樂團的第一張唱片還早一年半"
+  ],
+  "sound": "6 軌、約 38 分 27 秒，1968 年 10 月 11 日在 Van Gelder Studio（Englewood Cliffs）一天錄完的五重奏：Charles Tolliver 小號、Joe Farrell 次中音與高音薩克斯風、Andrew Hill 鋼琴、Victor Sproles 貝斯、Billy Higgins 鼓。六軌全是 Hill 自己的曲子，母帶號 4029–4034 連號、take 號 4／8／14／22／27／29。盤面把〈Dance With Death〉（6 分 35 秒）挪去 B 面開場，A 面則從最短的〈Yellow Violet〉（5 分 29 秒）起手、以最長的〈Fish 'n Rice〉（7 分 29 秒）收；壓軸〈Black Sabbath〉6 分 23 秒。Rudy Van Gelder 收音、Francis Wolff 製作原場、Tony Sestanovich 重混、Michael Cuscuna 整理發行，內頁文案 Nat Hentoff、美術 Bill Burks。1995 年起的 CD 與串流版多一軌〈Dance With Death (Alternate Take)〉。串流側歸「Jazz」。",
+  "keyTracks": [
+   "Dance With Death",
+   "Black Sabbath",
+   "Fish 'n Rice"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1980，並由兩則廠牌檔期廣告獨立釘住上市季（1980 年 2–3 月）。** 第一序位證據：**Billboard 1980-02-23 p13** Liberty／UA 整版新片廣告逐字印出「ANDREW HILL / Dance With Death LT-1030 8LT-1030 4LT-1030」，**Billboard 1980-03-08 p34** 的整版「fourteen unreleased masters」廣告再列一次。次序位：MB frd 1980、jazzdisco LT 頁 1980、Discogs 美國原壓群 1980、維基 infobox 1980。⚠ **盤面自己有兩個年份**：Discogs 1251688 的 notes 記「labels (rim) © ℗ 1979 / labels (bottom center) ℗ 1980 / back cover © ℗ 1980」——**如果只看 rim 那一行會得到 1979**，這是第 550 條的成因現場；**廣告在 1980 年 2 月，1979 那一行是排版殘留，取 1980。** ⚠ **錄音年 1968 與首次商業發行年 1980 相差十二年**，正文必須分開講。",
+  "notes": "**庫存首發（vault 盤）**：1968 年 10 月錄、1980 年 2–3 月首度商業發行，中間十二年。Discogs 原壓 notes 寫「This material is previously unreleased.」｜⚠ **第 844 條的現場**：**Cash Box 1980-05-31 p47** 的 Liberty／United 整版廣告用的標題是「**THE BLUE NOTE RE ISSUE SERIES**」，但同一波的內容全部是未發行母帶——**標題與內容相反，一律讀逐張文案不讀標題**（第 782 條）。｜**撞陳列 0**：1968-10-11 這個日期在 jazzdisco 五個系列頁反查只命中本盤一條，池中沒有同場的碟。｜**盤名大小寫**：維基作小寫 `Dance with Death`，**卡與正文照盤面／MB／Discogs 的 `Dance With Death`**（第 858 條，池中 with／With 90 比 99 沒有多數；維基寫法已進 queryAlias）。｜⚠ **jazzdisco 的排序是 take 序不是盤面序**，曲序以 MB＋Discogs 為準。｜**跨卡互指（第 856 條）**：Billy Higgins 在本組出現兩次（本張 1968／《Infinity》1965），**兩張的班底其餘全不同，不得因為鼓手同名就寫成同一組人**。｜店面：**Apple 724721105，7 軌＝原盤 6 軌＋1 軌 alternate take，逐軌相符**，`releaseDate` 印的是錄音日 1968-10-11（第 484 條）。⚠ **串流版比黑膠多一軌，正文若寫「六首」要指明是原盤。** ｜CAA 2 圖，來源是美國原壓 a2c8b3e4 ✓。"
+ },
+ {
+  "key": "desc2:Bobby Hutcherson|Patterns",
+  "artist": "Bobby Hutcherson",
+  "album": "Patterns",
+  "facts": [
+   {
+    "f": "release-group abe945a4：title「Patterns」、artist-credit `Bobby Hutcherson`（edbe5d7f Person）、first-release-date **1980**、primary-type Album、secondary-types 空。release 端點回**五筆**，最早的是 874a3fb4＝1980 US Official 12 吋黑膠 6 軌、Blue Note／**LT-1044**：A1〈Patterns〉5 分 54 秒、A2〈A Time to Go〉5 分 45 秒、A3〈Ankara〉6 分 24 秒、B1〈Effi〉7 分 7 秒、B2〈Irina〉7 分 20 秒、B3〈Nocturnal〉4 分 12 秒（合計約 36 分 42 秒）。其餘四筆是 1995 US CD（7 軌）、2012 JP TOCJ-50287（7 軌，label-info 同時掛「Blue Note Classic／LT-1044」）、2019 數位（7 軌）、2021 JP UCCU-8146（7 軌）——**七軌版多的是〈Patterns (Alternate Take)〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=abe945a4-9b7d-3e0b-8830-1a91cb8cdc4a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco LT-1044 條：**一天錄完，母帶 2069–2074 連號**——James Spaulding 中音薩克斯風與長笛、Bobby Hutcherson 顫音琴、Stanley Cowell 鋼琴、Reggie Workman 貝斯、Joe Chambers 鼓，**1968 年 3 月 14 日 Van Gelder Studio, Englewood Cliffs**：2069 tk.3〈Patterns〉／2070 tk.8〈Effi〉／2071 tk.10〈Nocturnal〉／2072 tk.14〈Irina〉／2073 tk.25〈Ankara（盤面作 Ankana）〉／2074 tk.29〈A Time To Go〉。⚠ **jazzdisco 這一條是 take 序不是盤面序**（第 850 條）。同條另註「also released on Blue Note B1-33583 in 1995」與「part of Classic Bobby Hutcherson Blue Note Sessions 1963-1970, **Mosaic MD7-278 in 2024**」。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/"
+   },
+   {
+    "f": "**曲子的來歷（維基逐首交代，是本張最硬的一條內容事實）**：〈A Time to Go〉**是 James Spaulding 寫給馬丁・路德・金恩的追思曲，而這場錄音在 1968 年 3 月 14 日——距離金恩 4 月 4 日遇刺整整三週之前**；〈Effi〉是 Stanley Cowell 寫給妻子的；**其餘四首（Patterns／Ankara／Irina／Nocturnal）全部出自鼓手 Joe Chambers 的筆**。維基 infobox：released「1980；1995 (CD)」、recorded March 14, 1968、studio Van Gelder、genre Post-bop、length 36:39、label Blue Note LT 1044／CDP 7243 8 33583、**producer Duke Pearson 與 Francis Wolff 兩人**；chronology prev《Conception: The Gift of Love》(1979) → next《Medina》(1980)——**維基自己把《Medina》排在本張之後，兩張都是 1980 年的庫存盤。**",
+    "src": "https://en.wikipedia.org/wiki/Patterns_(Bobby_Hutcherson_album)"
+   },
+   {
+    "f": "**廠牌檔期文件兩則**（第 612／812 條，**其中一則是 a 組第 812 條那張表上沒有的第六則廣告**）：**Billboard 1980-05-17 p77** 的 Liberty／UA 整版新片廣告逐字印「**BOBBY HUTCHERSON / Patterns LT-1044 8LT-1044 4LT-1044**」，同版另有「**HANK MOBLEY / Thinking Of Home LT-1045**」（同組另一張）；**Cash Box 1980-05-31 p47** 的 Liberty／United 整版廣告在「Something To Enhance Your Play list …」一行印出「**Bobby Hutcherson／Hank Mobley／Jazz Crusaders LT-1045**」並冠上標題「**THE BLUE NOTE RE ISSUE SERIES**」。→ **本張的上市檔期是 1980 年 5 月**，比 a 組 2–3 月那一波晚一季。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1980/BB-1980-05-17.pdf"
+   },
+   {
+    "f": "Discogs 美國原壓 1233817（1980 US、LT-1044、6 圖）notes：「Recorded on March 14, 1968 at the Van Gelder Studio, Englewood Cliffs, New Jersey. **This material is released here for the first time.**」**盤面的第三軌印作〈Ankana〉、MB 與後來的 CD 作〈Ankara〉**（兩種寫法都要進查詢別名）。名單欄：**Producer [Original Session]＝Duke Pearson ＋ Francis Wolff、Produced For Release／內頁文案＝Michael Cuscuna、Engineer [Recording]＝Rudy Van Gelder、Engineer [Re-recording]＝Tony Sestanovich、美術＝Bill Burks、攝影＝Mark Lipson**。",
+    "src": "https://api.discogs.com/releases/1233817"
+   },
+   {
+    "f": "店面（第 254 條，只寫觀察）：Apple us `search` 命中 **collectionId 1460622181「Bobby Hutcherson／Patterns」7 軌**，逐軌核過——**前六軌與 1980 年原盤逐軌相符且順序相同**（Patterns 356 秒／A Time To Go 347／**Ankara 386（串流用 Ankara，不是盤面的 Ankana）**／Effi 430／Irina 440／Nocturnal 253），**第 7 軌是〈Patterns (Alternate Take/Remastered)〉356 秒**，七首全有 preview，曲名全部加了「(Remastered)」字樣。`releaseDate` 印 1980-01-01（年頭佔位，第 484 條）。⚠ **第 854 條第 3 點**：池中另有 Gil Mellé《Patterns in Jazz》（c-136）、Lightnin' Hopkins《Free Form Patterns》、Death《Individual Thought Patterns》，**子字串會撞、完整鍵不撞**。",
+    "src": "https://itunes.apple.com/lookup?id=1460622181&entity=song&country=us&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "〈A Time to Go〉是 James Spaulding 寫給金恩博士的——但這場錄音是 1968 年 3 月 14 日，金恩遇刺還要三個星期才發生",
+   "六首曲子裡有四首是鼓手 Joe Chambers 寫的：這張掛 Hutcherson 名字的碟，作曲權大半在鼓組後面那個人手上"
+  ],
+  "sound": "6 軌、約 36 分 42 秒，1968 年 3 月 14 日在 Van Gelder Studio（Englewood Cliffs）一天錄完的五重奏：James Spaulding 中音薩克斯風與長笛、Bobby Hutcherson 顫音琴、Stanley Cowell 鋼琴、Reggie Workman 貝斯、Joe Chambers 鼓。母帶 2069–2074 連號、take 號 3／8／10／14／25／29。作曲權分布是這張碟的重點：四首（〈Patterns〉〈Ankara〉〈Irina〉〈Nocturnal〉）是鼓手 Joe Chambers 寫的、〈Effi〉是 Stanley Cowell 寫給妻子的、〈A Time to Go〉是 James Spaulding 追思馬丁・路德・金恩的曲子。最長的是〈Irina〉（7 分 20 秒）與〈Effi〉（7 分 7 秒），最短的是收尾的〈Nocturnal〉（4 分 12 秒）。Rudy Van Gelder 收音，Duke Pearson 與 Francis Wolff 製作原場，Tony Sestanovich 重混，Michael Cuscuna 整理發行並寫內頁。串流側歸「Jazz」，是加了一軌 alternate take 的七軌形。",
+  "keyTracks": [
+   "Patterns",
+   "A Time to Go",
+   "Effi"
+  ],
+  "status": "full",
+  "yearVerified": "**與卡單一致，維持 1980；並把上市檔期釘到 1980 年 5 月。** 第一序位：**Billboard 1980-05-17 p77** 的 Liberty／UA 整版新片廣告逐字印「BOBBY HUTCHERSON / Patterns LT-1044 8LT-1044 4LT-1044」；**Cash Box 1980-05-31 p47** 的整版廣告同時點到 Hutcherson 與 Mobley。⚠ **這則 05-17 廣告是 a 組第 812 條那張表上沒有的第六則**（該表列 02-23／03-08／03-29／04-26／11-01 五則）——**1980 年 LT 系列至少分六波出貨，`year` 用哪一波定要看目錄號。** 次序位：MB frd 1980、jazzdisco LT 頁 1980、Discogs 三筆美國原壓全 1980、維基 infobox「1980；1995 (CD)」。⚠ **錄音年 1968 與首次商業發行年 1980 相差十二年**，正文必須分開講；**〈A Time to Go〉的追思對象在錄音當下還活著**，這一點正文寫錯會非常明顯。",
+  "notes": "**庫存首發（vault 盤）**：1968 年 3 月錄、1980 年 5 月首度商業發行，中間十二年；Discogs 原壓 notes 寫「This material is released here for the first time.」｜⚠ **時序陷阱（本張最容易寫錯的一處）**：〈A Time to Go〉是 Spaulding 給金恩博士的追思曲，**但錄音日 1968-03-14 早於金恩遇刺的 1968-04-04 整整三週**——**正文不得寫成「在金恩遇刺之後錄的」或「為紀念而作的即興」**；維基的說法是「recorded just three weeks before his assassination」。｜**撞陳列 0，但踩到第 855 條的假陽性**：1968-03-14 反查 jazzdisco 另外命中 **Chick Corea《Circling In》BN-LA472-H2 與 BN-LA395-H2**（同一場 A&R Studios, NYC 的 Corea／Vitous／Roy Haynes 三重奏）——**兩個城市、兩組人，不是同場**；a 組第 855 條只點名 LA472，**實際上同一場被配了兩個 BN-LA 號**。｜**曲名兩種寫法**：盤面與 Discogs 作〈**Ankana**〉、MB 與 CD／串流作〈**Ankara**〉，兩種都要進 queryAlias。｜⚠ **jazzdisco 曲序是 take 序不是盤面序**（第 850 條）。｜**跨卡互指（第 856 條）**：Hutcherson 三張是三個年代、三組人，Stanley Cowell 與 Joe Chambers 串起本張與《Medina》，Harold Land 串起《Medina》與《Inner Glow》，**沒有一位貫穿三張**。｜店面：**Apple 1460622181，7 軌＝原盤 6 軌＋〈Patterns (Alternate Take)〉，逐軌相符**；**串流比黑膠多一軌，正文寫「六首」要指明是原盤**。｜CAA 6 圖，來源是美國原壓 874a3fb4 ✓。"
+ }
+]
