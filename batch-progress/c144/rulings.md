@@ -691,3 +691,51 @@ Carnival of the Spirits `904801`／Spoonful `607906`／The Prime Element `139841
 **Lloyd Ziff 只出現在 1975 年那四張**（Linger Lane／Waters／Silver 'n Brass／Mind Transplant），
 設計常是 **John Kehe 或 Ria Lewerke**。
 **通則：美術班底要按「批次實查的 credit」寫，不要把前一批的結論當成整個時期的通則。**
+
+## 第 801 條（主線 2026-09-16，研究層 b 組交件後）：**b 組 22 筆年份退 0 改判 0，但六張的疑議是用紙本壓下來的**
+
+b 組 22 筆全 `full`、QA 清、31 個 worldradiohistory PDF 逐一驗過全 200。**年份維持卡單，但六張有疑議、全部以紙本定案**：
+- 《Silver 'n Percussion》**維基與 Apple 標 1977 是錯年**（Discogs 原壓 ©℗1978＋Cash Box 1978-03-11 評介 → **1978**）。
+- 《Still Can't Say Enough》**1976-10 上市卻 1977-02 才進榜**（CB 1976-10-16 的標題就是「Blue Note Sets LP For October Release」）
+  ——**進榜月不等於上市月**，這一段尤其明顯。
+- 《Tone Tantrum》MB frd 1977-05 vs 兩刊 1977-08-27 評介（**年不變、月取 8 月**）。
+- 《The Jackie McLean Quintet》jazzdisco 日本頁 1976 vs MB＋Discogs 三筆＋列舉檔 1977 → 取 1977。
+- 《The View From the Inside》**兩刊 310 期零紙本**（⚠ **不是正則太緊——那份 OCR 的關鍵字集本來就含 BN-LA710 與盤名**，
+  第 702／704 條形狀）。
+- 《Hipnosis》GXF 3022 實測 **1978**。
+
+**撞陳列 0 張**（無同錄音重複）。兩處「同曲不同錄音」已逐軌比對寫進 notes：
+《Live Messengers》第四面 vs 池中《A Night at Birdland, Vol. 1》——**Vol. 1 六軌與本張零重疊**，
+同名的〈Wee Dot〉在 Vol. 2 上而 **Vol. 2 不在池中**；《Knucklebean》的〈Little B's Poem〉是池中《Components》(1965) 那首的**十二年後重錄**。
+
+## 第 802 條（同日）：⚠ **第 791 條的舉例是錯的，規則本身成立——換一個乾淨的例子**
+
+**《Fever》不是「只進 Soul 榜」的例子**：實測 Billboard Best Selling Jazz LPs
+**1976-06-12 新進第 22 → 09-11 第 3 名、在榜 14 週以上**；三榜形狀是爵士 3／Soul LPs 13／主榜約 46。
+**查法（Soul 先、Jazz 次、主榜也看）仍成立**，但舉例要換成
+**《Tone Tantrum》——只進 Cash Box R&B 榜（最高 47），兩刊爵士榜與主榜全零**。
+（與第 798 條合看：**「1977 年起主戰場是 R&B 榜」是趨勢不是規律，每一張都要自己查三榜。**）
+
+## 第 803 條（同日）：**抓取端與索引的三個新坑**
+
+1. ⚠ **紙本檔名在 1976／1977 之間換過一次邊**：**Cash Box 1976 是 `Cash-Box-YYYY-MM-DD.pdf`（`CB-` 全 404），
+   1977–79 反過來只有 `CB-`**；Billboard 1976–79 一律 `Billboard%20`。（第 705／797 條家族）
+2. ⚠ **jazzdisco 的 BN-LA 頁有切塊陷阱**：**目錄號印在每段開頭**，照「號碼結尾」切會**整頁位移一格**
+   （會把 Marlena Shaw 讀成 BN-LA615-G）。另 jazzdisco 把《Fever》的號印成 `BN-LA628-H`（**正確是 -G**，反查 Discogs 0 筆）。
+3. ⚠ **OCR 裡的目錄號會被拆開**：**`LT-991` 在 OCR 裡是 `LT -991`／`LT991`**，直查回 0 筆
+   ——要改查「Back to Blue Note」「Cuscuna」才撈得到 Cash Box 1979-09-15 p41 的十張名單。
+   **（第 704 條家族：查無可能只是關鍵字的形狀不對。）**
+4. **第 822 條的 GXF-30xx 起點要往前修到 1978**（原記載 1979–80）：《Hipnosis》的 King GXF 3022 實測 1978。
+
+## 第 804 條（同日）：**b 組試聽採信 17 張、查無 5 張；c-144 試聽 36/43**
+
+**兩張是合訂／加值版**：Earl Klugh `716200862`、Living Inside Your Love `715548856`
+——**加值軌都來自 1976-06-28 Roxy 那場，已註明不得寫進曲目**。
+**查無 5 張**（正是缺試聽那五張，三種查法逐一跑完明寫查無）。
+**缺封面 5 張已在 notes 給替代圖 URL**（Discogs 原壓 `images[0].uri`）；
+⚠ 其中**《Tomorrow Is Here》只有 336×338、《Hipnosis》只有 500×499**，各附備援條目。
+
+**四張庫存首發**（Live Messengers／Circulus／Hipnosis／The Jackie McLean Quintet）的正文都寫死
+「錄音年 vs 首次商業發行年」兩個年份，各自附上第 782 條原文。
+⚠ **兩張 Jackie McLean 在 1978 年被美國併成同一張 2LP BN-LA483-J2**
+（**Discogs 把該張 format 標成 Compilation 是錯的**，研究層引它自己的 notes 反證）。
