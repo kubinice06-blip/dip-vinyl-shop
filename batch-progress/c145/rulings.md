@@ -634,3 +634,67 @@ c-144 b 第 783 條寫「**LT 系列（1979 起）＝Back to Blue Note 企劃，
 **US 17 張**（LT-1030／1038／1044／1045／1054／1076／1085／1086／1088／1089／1091／1092／1096／1102 ＋ Liberty LT-1079／LT-51113 ＋ United Artists LT-1001）。
 → **本組沒有出現第 817 條那種「MB 建出不存在的原盤」**；但**列舉檔的 `country`／`format`／`catno` 在三張上抄的是後來的 CD**（Late Night Guitar 抄 1999 US CD、Every Generation 抄 2005 GB CD、Crazy for You 抄 1995 NL CD，第 849 條），
 **形狀不同但後果一樣——`country` 欄一律以「反查得到的首發號」為準，不以列舉檔為準。**
+
+## 第 859 條（主線 2026-09-16，研究層 a 組交件後）：⚠ **撞陳列要看到 CD 那一層——jazzdisco 的去向欄同時列了 1987 年 CD 的目錄號**
+
+a 組 23 筆全 `full`、**年份疑議 0**（策展層三個判斷全部覆核成立）。
+**但撞陳列比策展層查到的嚴重**——關鍵是**策展層只讀了原盤 LP 那一層**：
+
+| 卡 | 策展層 | 研究層覆核 |
+|---|---|---|
+| **《Street Singer》** | 6 軌中 4 軌 | **6/6**——LP 層 3/6 在 c-131《Jackie's Bag》，但**六個 take 全部帶 `CDP 7 46142 2`＝《Jackie's Bag》1987 CD**；tk.12 另在 seed《Back to the Tracks》 |
+| **《Spiral》** | 兩處 | **3/6**——〈Jasper〉除 LT-996 外也在 `CDP 7 46537 2`＝seed《Dialogue》的 CD |
+| **《Confirmation》** | 逐軌零重複 | **3/3**——**LP 層零重複成立，但三軌全在池中兩張 seed 卡的 CD 上** |
+| 《Landslide》 | 1/7 | **1/7 成立**，並補〈Landslide〉也在 `CDP 7 46544 2`＝seed《Dexter Calling…》的 CD |
+
+**通則（第 738 條的延伸）**：**比對重疊時，jazzdisco 的去向欄要連 CD 目錄號一起看**
+——**只看原盤 LP 會低估重疊程度**。另 19 張逐 take 比對**池中零軌重複**；
+《Take Aim》《Lonely Town》兩張 jazzdisco 沒有 take 號、退回曲名比對（亦零重複），**已在卡上標明強度較低**。
+
+## 第 860 條（同日）：⚠ **「庫存盤＝全部首度公開」不成立——本組三例都有 45 轉單曲先出過**
+
+**《K.B. Blues》兩軌 1957 年已出 45-1674**（Discogs 有實體）、
+**《With a Song in My Heart》兩軌 1962 年已出 45-1840**（Discogs 封套 notes 自己寫）、
+**《Freedom》兩軌已出 45-1884**。
+**正文一律不得寫「全部首度公開」**——這與 c-147 第 736 條（「首發」在軌目層級查過前只是待證的宣稱）是同一件事，
+**只是這次的反例來自 45 轉單曲，不是別張 LP。**
+
+## 第 861 條（同日）：⚠ **第 855 條要收緊——「錄音室＋至少一位共同樂手」的後半項會誤判**
+
+**1957-08-25 同一天 Blue Note 有兩場**：Lee Morgan 在 **Van Gelder Hackensack**（→BLP 1575，池中 c-136 已有）、
+Jimmy Smith 在 **Manhattan Towers**（→LT-992），**而且兩場有三個共同樂手**。
+**現行判準的「共同樂手」那一半會誤判通過，只有錄音室分得開。**
+**收緊後的判準：用錄音日反查母帶時，錄音室是必要條件，共同樂手只能當旁證。**
+
+## 第 862 條（同日）：**第 646 條的一則具體裁定；LT 系列的策劃者有紙本答案**
+
+⚠ **Apple `716626996`「Medina & Spiral」是 a 組《Spiral》與 b 組《Medina》唯一的命中**
+——**兩卡不得共用**（第 646 條）。**研究層判給《Medina》**（6/6 軌齊全），**《Spiral》明寫查無**。
+**上架層不要讓兩張卡各自去撈同一個 id。**
+
+**串流採信 1 張**：《With a Song in My Heart》→ **`1840773267`**
+（Apple《The Complete Blue Note 45 Sessions (Remastered 2025)》，**第 18–26 軌正好是本盤九軌、順序與盤面一致**；
+已實掃全 repo 確認沒有別張卡用過這個 id）。**《Freedom》《Take Aim》明寫查無**
+（含 Kenny Burrell 98 張／Harold Land 21 張藝人目錄逐張核；**`apple-candidates.md` 的 `1435504062` 確認給錯碟**）。
+**c-145 試聽 35/44。**
+
+**LT 系列是誰策劃的有紙本答案了**：Cash Box **1980-04-12（LT-1028）與 1980-08-16（LT-1052）的 Producer 欄
+直接印 Michael Cuscuna**；Discogs 原壓 2746049 的封套把兩層分開列
+（**原始場次 Alfred Lion／為發行而製作 Michael Cuscuna**）——**這是這一段所有庫存盤的共同寫法。**
+
+**缺封面 3 張的替代圖**（Discogs 原壓 `images[0].uri`）：Confirmation 用 **3808231**
+（⚠ **不要用 13146418 那筆 Misprint 錯體**）；Lonely Town 用 **4293365**；With a Song in My Heart 用 **2746049**。
+
+## 第 863 條（同日）：**訂正第 812 條的五則頁碼；新找到四則紙本**
+
+⚠ **第 812 條的五則廣告／價目表頁碼與 OCR 檔的 page marker 對不上**，研究層逐則複驗後訂正：
+**1980-11-01 是 p13（不是 p35）、11-15 是 p42、05-03 是 p91、07-26 是 p57、09-20 是 p48**
+——已寫進《Mr. Natural》的 `yearVerified`，**後批引用請用訂正後的數字**。
+
+**新找到四則策展層沒收的**：Cash Box 1980-02-02（Sonic Boom 評介，Producer: Alfred Lion）、
+1980-02-16（Spiral 評介，⚠ **內文把整張說成「1965 recording」是錯的**）、1980-02-02 p44（十張名單再列）、
+**Cash Box 1979-04-28（Heart String 評介 ＋ Capitol-EMI 副總裁講 Blue Note／Pacific Jazz 是「gold mine catalogs」
+——這是唯一一條解釋為什麼一批庫存盤裡會夾一張 UA 新片的紙本）**。
+
+第 817 條《Poppin'》的「1980 US BLP 1620」不存在**兩路獨立複驗**
+（Discogs `catno=BLP 1620` 在 Blue Note 名下 0 筆 ＋ 1980–81 兩刊 206 期零命中）。
