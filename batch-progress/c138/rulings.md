@@ -250,3 +250,72 @@ RG d556e4a0 轄下 10 筆 release：1959 United Artists 原盤 mono 題《Hard D
 - **CAA：22/23 有 front**；**《Soundin' Off》RG 與 release 端點都 404**（Discogs master 259242 有原盤圖）。
   ⚠ 有圖但**來源不是原盤**的 6 張：Stretching Out（2016 數位版）、Mosaic（數位 RVG 版）、Flight to Jordan（數位版）、Jazz Immortal（1988 IT 宣傳 CD）、Connection（1994 黑膠再發）、Bags' Opus（GB London 版）——研究層看版式，Discogs master 各有原盤圖。
 - 同一位在店面的掛名不一（第 434 條）：Five Spot 掛「Kenny Burrell & Art Blakey」、Booker Little 只掛 Booker Little、Ivory Hunters 只掛 Bob Brookmeyer——店面掛名不影響本卡掛名。
+
+## 第 526 條（主線 2026-09-16，研究層 a 組交件後）：**年份再動四張——`BLP 4021–4049` 這一段的目錄號完全不等於發行順序**
+
+a 組 23 張 full 22／partial 1（《Good Friday Blues》維基無條目、紙本零命中，只有 Pacific Jazz 1960 年新號段的結構佐證）。
+
+**策展層 6 張改判：5 張成立、1 張被推翻。**
+- ✅ Mosaic **1962**（Billboard 1962-01-20 p34 四星評論原文＋Cash Box 1962-01-27 新片表＋02-10 Pick）
+  ——⚠ **jazzdisco 記 1961，本層以同期紙本推翻它**，是 4000 系列年份欄在本組唯一一次出錯。
+- ✅ Here We Come **1962**、Flight to Jordan **1961**、Five Spot **1960**、Star Bright **1960**。
+- ❌ **《Moods》推翻，改回 1960**：Cash Box 1960-11-05 預告、11-12 新片表「4044(M)」、12-03 評論、
+  **12-31 Blue Note 自家整版廣告「BLUE NOTE LP 4044／Stereo 84044」**。策展層靠維基（轉引 RYM）＋Apple ℗1961，不成立。
+
+**另三張卡單年份異議（策展層沒動到），全部採信：**
+- **Booker Little 4 & Max Roach 1959 → 1960**（Billboard 1960-01-18 p24「UA Jan. Plan」＋同期 p56 評論；
+  1959 年三份 UA 爵士目錄段 03-30／08-31／10-05 列了 4014/4022/4023/4025/4029/4032/4040/4042/4046/4050，**獨缺 4034**）
+- **Byrd in Flight 1960 → 1961**（jazzdisco 1961＋Cash Box 1961-02-25 p32 評論；1960 全年 Billboard 與 1960-11～1961-02 Cash Box 零命中）
+- **Tender Feelin's 1960 → 1961**（jazzdisco 1961＋Billboard 1961-03-20 p30 評論「the second LP under his own name」＋Cash Box 1961-03-18 新片表＋04-01 評論）
+
+已改 `desc-tools/batches/cards/c138-cards.json` 與 `batch-progress/c138/prop-a.json` 四筆 `year`。
+
+⚠ **這條線到目前為止最重要的一條結構發現**：**BLP 號在 4021–4049 這一段完全不等於發行順序**
+（Cash Box 新片表：4042→1960-11、4043／4044→1960-12、4048→1961-02、4035→1961-03、4045→1961-04、
+**4034 Lee Morgan《Lee-Way》遲至 1961-04-29**）。
+**c-139／c-140／c-141 排 1961–62 段時，不得用目錄號回推年份**——策展層與研究層派工信都要帶這條。
+（對照第 466／467 條：10 吋 5000 系列的目錄號與年份是同步的，12 吋 4000 系列前段不是。）
+
+## 第 527 條（同日）：**擋下策展層三處、無出處的「最／第一／唯一」句三句**
+
+1. 《Moods》年份（第 526 條）。
+2. **Witherspoon 的 `curatorWhy` 把「Rip Records 1956 原錄」當既定事實**——只有維基轉引 Deffaa 一個來源，
+   1957–59 全段紙本零條目 → 正文退成「據 Deffaa 的記載」。
+3. 《The Ivory Hunters》`label` 欄引的「Billboard 1959-09-21」**複驗不到**，改引本層掃到的 **1959-10-05 p46 目錄段**（已改卡單與 prop）。
+
+擋下的「最／第一／唯一」句：維基說 Brookmeyer「唯一一張純鋼琴專輯」（**全擋**）、
+《Five Spot》的 Andy Summers 名言（**要寫必須具名**）、
+《Horace-Scope》**不得把 Billboard 的「one of the better jazz sellers」升級成「Blue Note 最暢銷」**。
+
+## 第 528 條（同日）：**《Jazz Immortal》的試聽：`apple-candidates.md` 給的候選是錯的碟，正解回到策展層原本找到的那個**
+
+`apple-candidates.md` 對《Jazz Immortal》給的 `581641767`《West Coast Suite》是**另一張碟**（12 軌、`lookup` 回不出單曲）；
+正解是策展層原本就找到的 **`724184986`（RVG 9 軌，九軌全有試聽）**，主線已補進 `previews.json`。
+**a 組試聽因此是 23/23，不是 22/23。**
+兩張要註記給寫作層：**《Jazz Immortal》**（店面缺 MB 原盤第 7 軌〈Bones for Zoot〉、多兩首 alt、軌序全不同）與
+**《Hard Driving Jazz》**（店面只有《Coltrane Time》4 軌、同曲不同序）——**正文按曲名配，不得寫「前 N 軌對應原盤」**。
+**《Soundin' Off》CAA 兩個端點都 404 確認**，是 a 組 23 張裡唯一無封面的。
+另：策展層給的其餘 22 個 Apple id 逐張軌數／軌序比對**全部正確**。
+
+## 第 529 條（同日）：**1961 年的年份舉證改用 Cash Box——Billboard 1961 沒有文字層，而 Cash Box 每期都有廠牌新片列表**
+
+第 509g 條說 1961 年的 Billboard PDF 幾乎沒有文字層（52 期只有 03-20 與 09-18 兩期）；a 組把替代來源找齊了：
+**Cash Box 1960-11-05→1962-04-28 全 78 期都有文字層**，而且**每期都有 Blue Note／Pacific Jazz 的每月新片列表**，定年份比 Billboard 好用。
+URL 形狀 `.../Cash-Box/60s/<年>/CB-<YYYY-MM-DD>.pdf`（**週六**）。
+⚠ 另一個坑：**1962 年起 Billboard 改成週六日期**，沿用週一一律 404。
+
+**兩份掃描已收進 repo 共用**（後批直接 grep，不要重抓）：
+- `batch-progress/enum/billboard-bn-1960-62-ocr.txt`（1.9 MB，Billboard 103 期的命中頁）
+- `batch-progress/enum/cashbox-bn-1960-62-ocr.txt`（2.7 MB，Cash Box 78 期）
+
+## 第 530 條（同日）：**其餘覆核追認**
+
+- 第 515 條（Hard Driving Jazz ＝ Stereo Drive ＝ Coltrane Time，掛 Cecil Taylor）**成立並補一手佐證**：
+  Billboard 1959-03-30 p49 就把 UAL 4014 與 UAS 5014 的兩個題名並列。
+- **同碟重複 RG 三個全部確認存在**（Moods 日本掛名版 10ec1745、Good Friday Blues 2011 版 18dc45ff、
+  Hard Driving Jazz 兩個 Compilation 582ffbe9／c709d413）→ **後批撞到一律退**。
+  10 吋 PJLP-19（2f434e45《Clifford Brown Ensemble Featuring Zoot Sims》1955）確認存在，互指成立。
+- 第 516 條 Howard McGhee 的同劇配樂拿到一手佐證：**Billboard 1960-11-28 p31 評《Music from the Connection》／Felsted FL 7512**。
+- **第 509c 條（紙本誤植目錄號）本組中了三次**：Horace-Scope 印成 4052、Capuchin Swing 印成 4030、Booker Little 印成 UAS 5534
+  ——全靠編制／軌數／曲目交叉定位救回。**這條已經是常態，不是例外。**
+- 原盤他廠 9 張全部成立；**《Bags' Opus》的 UAL 4022／UAS 5022 用 Billboard 1959-03-30 p48 獨立確認**（不再只靠 Discogs）。
