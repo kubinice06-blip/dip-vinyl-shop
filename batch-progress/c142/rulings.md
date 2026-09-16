@@ -241,3 +241,222 @@ a 組入庫 `billboard-bn-1968h2-1970-ocr.txt`（112 期）與 `cashbox-bn-1968h
 **Billboard 1969 年的檔名有三種形狀（`BB-`、`Billboard%20`、`Billboard-`），1970 年只有 `Billboard%20`**
 ——**只試一種會誤判成「這期抓不到」**。
 （又一個「失敗與正常長得一樣」：**檔案不存在，與檔名猜錯，在 404 上長得一模一樣。**）
+
+# b 組（Blue Note 1969–70，Liberty／UA 期：BST 84308–84364 ＋ Solid State 原盤 2 張 ＋ Verve 原盤 1 張 ＋ 重複 RG 1 筆，22 筆覆核）
+
+策展層 b 組，2026-09-16。交件 `batch-progress/c142/prop-b.json`（`g: "b"`），
+`node batch-progress/c142/chk-prop.mjs b` **標記 0**（19 張 17 位）；與同批 a 組併跑 `chk-prop a b` 亦 **標記 0**（合計 39 張 29 位，三筆舊帳是 c49b／cseab 的）。
+b 組 19 個 rgMbid 與同批 a 組 slice、以及 `batch-progress/c1xx/prop-*.json` **1,750 張卡**程式交叉：**重疊 0**。號段 **630–642**（a 組用 600–629）。
+
+## 第 630 條（2026-09-16，c-142 b 組）：**22 筆覆核結果——實收 19、退 3；rgMbid 全部照 enum，無一釘錯；年份改判 3；CAA 15/19；店面掛零 4**
+
+22 筆全部回問 `release-group`（inc=artist-credits+releases）與 `release?release-group=…&inc=media+labels+artist-credits`，
+再對 19 張收件的原盤 release 打 `release/<id>?inc=recordings+media+labels` 取原 LP 軌序（另加退件的兩筆對照）；MB 守 1 req/s、UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+年份另核 **jazzdisco 4300 系列目錄頁**（沿用 c-141 b 抓的 `scratchpad/c141b/web/jd-catalog-4300-series.html`，本層轉成純文字 `scratchpad/c142b/jd-4300.txt`，84301–84400 逐號逐年）、
+維基 infobox（30 個條目，含兩輪補抓）、Discogs `database/search?catno=`（18 個 BN 目錄號）＋ 9 個 master ＋ 4 個 release 端點（不帶 token，每 3.2 秒一次），
+以及**本層自抓的 200 期同期紙本**（Cash Box 與 Billboard 各 100 期，1969-05-03 → 1971-03-27；詳見第 635／636 條與 `SOURCES-billboard-cashbox.md`）。
+**enum 的 rgMbid 沒有一筆釘錯**（22/22 盤名＋掛名與 MB RG 逐字相符）。
+
+實掃卡池：`seed_cards.json` ＋ `desc-tools/batches/cards/c1*.json` ＋ `batch-progress/c12x–c14x/prop-*.json`，**合計 19,064 列**；
+掛名 31 個關鍵字子字串雙向、盤名 26 個關鍵字（卷號統一、撇號摺 ASCII、`&`→`and`），另以 rgMbid 直比各批 prop。
+**撞池 1 筆**（enum `inPool: false` 有一筆是假陰性，見退表 #2）。盤名層其餘命中全是他人假陽性（Fugees《The Score》與七張《… Original Motion Picture Score》、NELL《Healing Process》、Andra Day〈Lift Every Voice and Sing〉）。
+
+**退掉 3 張（逐筆）**：
+
+| # | slice | rgMbid | 理由分類 | 說明 |
+|---|---|---|---|---|
+| 1 | Kenny Burrell《Asphalt Canyon Suite》1969 | 7a8e5f5d-b144-4929-92f4-57f3e728171f | **第 313 條判準表 (c)：他廠（Verve／MGM）原盤，1985 前無 BN 目錄號，且出版當時原廠與 Blue Note 不同集團** | 原盤 **Verve V6-8773**（US，MGM／Metro-Goldwyn-Mayer 體系，Discogs master 525970；維基 recorded October 8, 10 & 16, 1969, New York City，Kenny Burrell 與 Johnny Pate 共同製作）。**同期紙本坐實**：Billboard **1970-02-14** 爵士評介「KENNY BURRELL- Asphalt Canyon Suite. Verve V6-8773 (S)」、Billboard **1970-03-07**「New Album Releases」、Billboard 1970-04-11 的 MGM／Verve 整版廣告把 V6-8773 與 V6-8784／8793／8794 並列——**連 1969 這個年份都是錯的，實際上市在 1970 年初**。MB RG 轄下兩筆：b20ea2bb（1969 US 12" Vinyl 10 軌，**Verve V6-8773**，status 空）與 **57ccb66f（無日期、無國別的 Digital Media，Blue Note 無 catno，barcode 602448383020）**——Blue Note 的關聯只存在於這筆晚近數位再發。1970 年 MGM／Verve 與 Liberty/UA 是兩家公司，**套不上第 582／589a 條判準表 (b)**。⚠ 池中 `Kenny Burrell` 已有 16 列（seed 3＋c-136～c-138 五張＋聯名兩組），Verve 時期零張——若日後開 Verve 線，rgMbid 已釘。 |
+| 2 | Thad Jones/Mel Lewis Orchestra《Consummation》1970 | b013db65-8d8e-33af-a4e7-528fabefbf00 | **撞池（enum `inPool: false` 是假陰性）** | 池中 `seed_cards.json` 已有 **`Thad Jones & Mel Lewis` —《Consummation》**（obscurity 3）。**enum 的子字串比對比不到，是因為掛名字串不同**（enum／MB 是 `Thad Jones/Mel Lewis Orchestra`，池中是 `Thad Jones & Mel Lewis`）；`chk-prop` 的鍵把 `&` 摺成 `and` 但**不會把 `/` 摺成 `and`**，所以連程式也抓不到——**本層是靠盤名層關鍵字 `consummation` 掃到的**。同一張碟（Blue Note BST 84346，US 1970，8 軌，Discogs 多筆原壓 1970；Billboard 1970-10-24 評介、1971-02-06 與 03-13 報導它入圍並拿下 Grammy「Best Jazz Performance – Large Group」）。**c-141 b 第 589 條第 4 點預告「Thad Jones/Mel Lewis 的 Blue Note 自家號 BST 84346《Consummation》照收」，本層實掃推翻——那張早就在池中，rgMbid 已釘。** |
+| 3 | The Horace Silver Quintet《The United States of Mind, Phase 1: That Healin' Feelin'》1970 | cbd38639-6f79-42e7-a9f6-865f1fb13386 | **重複 RG（MB 同一張碟建了兩個 release-group，簡報第二節坑 1「漏折的重複 RG」）** | 與本批收件的 **d6e44a8b「That Healin' Feelin'」** 是同一張實體：兩個 RG 的 credit 同為群組 e9ac5139、frd 同為 1970，轄下各只有一筆 release（a0d32fd4 與 976e3e8d），**同樣是 1970 US 12" Vinyl、同樣 Blue Note BST 84352、同樣 9 軌、曲名與曲序逐字相同**（軌長差 3–12 秒）。Discogs `catno:"BST 84352"` 回的十筆全部是同一張碟（條目名「That Healin' Feelin' (The United States Of Mind / Phase 1)」）。**留流通名那一個（第 45 條），退長題那一個**；⚠ **CAA 的封面偏偏掛在被退的 cbd38639 上**（front 1，來源 a0d32fd4），研究層要從那裡取圖或走 Discogs `r1350544`。兩個 id 都已寫進收件卡的 `mbNote`，主線若要改掛長題 RG 直接對調即可。**本層不改 MB。** |
+
+**`prop 19 ＋ 退表 3 ＝ 22`，第 315 條符合。** 沒有 bootleg、沒有合輯、沒有 `live: true`。
+
+## 第 631 條（同批）：**年份改判 3 張——兩張是 MB 把「跨年出版」四捨五入到錄音年，一張是 MB 整整早了一年；另有 2 張的「兩說」照多數擋下**
+
+| 盤 | catno | 錄音 | MB frd | jazzdisco | Discogs | 維基 | 改 | 決定性證據 |
+|---|---|---|---|---|---|---|---|---|
+| Elvin Jones《Poly-Currents》 | BST 84331 | 1969-09-26 | **1969** | 1970 | 原壓多筆 1970 | 1970-06 | **1970** | Cash Box **1970-05-02** 評介 ＋ Billboard **1970-05-02** 評介（**兩刊同週但文字完全不同，是兩則獨立稿，不是第 509c／431 條的同一則**）＋ Billboard 1970-06-06 新片欄 |
+| The Contemporary Jazz Quintet《Multidirection》 | BST 84339 | 1969-11-26 | **1969** | 1970 | 美德原壓與 master 613500 全 1970 | 1969（無引註） | **1970** | Billboard **1970-07-04** 新片欄；**加上錄音日**——1969-11-26 錄、五週內出版不可能（c-141 b 第 581 條方法論 1） |
+| Jeremy Steig《Wayfaring Stranger》 | BST 84354 | 1970-02-11 | **1970** | **1971** | 美德原壓與 master 362699 全 **1971** | **1971** | **1971** | Cash Box **1971-02-13**「The just-issued sets which are encompassed in the new Blue Note program are …『Wayfaring Stranger』by Jeremy Steig…」＋ Billboard **1971-03-13** 新片價目表 |
+
+另一張改判（**與 a 組同一版廣告**）見第 632 條：**Duke Pearson《How Insensitive》BST 84344，1969 → 1970**。
+
+**「兩說」照多數、少數說寫進 risk 的 2 張**：
+1. **Randy Brecker《Score》**：MB frd 1970＋Discogs master 421459 與原壓 1970 vs **維基 infobox 1969（無引註）**；錄音 1969-01-24／02-03。本層自抓的 200 期紙本**查無本張的評介或新片欄**（三次 `Randy Brecker` 命中全是別的報導：Cash Box 1969-05-24／05-31 講他在 Horace Silver 團、Billboard 1970-08-29／11-07 講 Dreams）——**無紙本可判，照多數取 1970**。
+2. **Jimmy McGriff《Something To Listen To》**：MB／jazzdisco／Discogs master 1060178／維基全 1970，**但同期紙本最早是 Billboard 1971-03-27 的爵士評介**，1970 年 100 期裡查無新片欄或廣告。**照多數維持 1970**；⚠ 若研究層補到 1971 年初的 Liberty/UA 檔期廣告，依 第 612 條（a 組立、主線追認）應改 1971——**與同批《Wayfaring Stranger》完全同形**。
+
+**其餘 14 張 MB＝jazzdisco＝Discogs＝紙本**：Now Hear This 1969（BB 08-16 四星＋09-06 新片欄＋CB 09-27「has just released」）、Charisma 1969（BB 05-24 評介）、Black Rhythm Happening 1969（BB 10-25 四星＋11-01 新片欄）、Merry Ole Soul 1969（BB 11-22 聖誕欄＋12-06 新片欄＋CB 12-20 評介）、Bantu Village 1969（BB 12-06 評介＋新片欄）、Thousand Finger Man 1970（BB 05-02 四星＋06-06 新片欄）、Roots & Herbs 1970（BB 10-24 四星）、Lift Every Voice 1970（BB 05-02 四星＋06-06 新片欄）、Electric Byrd 1970（BB 10-24 四星）、Another Story 1970-05（BB 05-30 評介；MB 罕見帶月）、To Seek a New Home 1970（BB 08-15 Liberty/UA 整版廣告＋12-12 新片欄）、That Healin' Feelin' 1970（CB 10-24 評介）、Worth Waiting For... 1970（CB 10-24＋BB 10-31 評介＋BB 12-05 新片欄）、Consummation 1970（退件，BB 10-24 評介）。
+
+⚠ **給 1971–84 段的方法論**：
+1. **84300 號段的 MB 錯誤形狀延續到 1970 年**——「1969 下半年錄、1970 出」仍被四捨五入到錄音年（Poly-Currents、Multidirection），**判準仍是看錄音月**（c-141 b 第 581 條）。
+2. **但到 84354 換了一種錯**：MB 把 **1971 年上市的碟登成 1970**，而 jazzdisco／Discogs／維基三家都對——**1971 年起 MB 的 frd 可信度下降，jazzdisco 4300 頁反而變準**。
+3. **第 526 條在本批自己打臉一次**：BST 84355《Worth Waiting For...》1970-10 就評介了，號碼更大；BST 84354《Wayfaring Stranger》要到 1971-02 才「just-issued」——**目錄號不等於發行順序，同一號段內差半年以上的例子就在本批**。
+
+## 第 632 條（同批）：**《How Insensitive》1969 → 1970——直接套用 a 組同批第 612 條（廠牌檔期廣告最上位），並補上「缺席即證據」與一則 1970-11 的側證**
+
+Duke Pearson《How Insensitive》BST 84344，**1969 說有四家**：MB frd 1969、jazzdisco 4300 頁 1969、
+**Discogs 美國原壓 1350583 標 1969 而同號 8599636 自標 Repress／1970**（壓片層級的區分，不是單純抄年份）、維基 infobox 1969（無引註）。
+**改 1970 的三條依據**：
+
+1. **Billboard／Cash Box 1970-07-18 的 Liberty/UA「Jazz Is A Four Letter Word」七八月檔期整版廣告把 BST-84344 連封面逐號印出**
+   （同版還有 LST-11005／11006、BST-84335、BST-84341、BST-84342、BST-84343）。
+   ****第 612 條**正是用同一版把《The Sixth Sense》BST 84335 與《Soul Symphony》BST 84341 從「MB＝Discogs＝jazzdisco 一致的 1969」改成 1970**（主線已追認為**第 612 條**）——
+   **同一版上的 84344 照同一條判準必須一起改**，否則兩組會對同一份證據給出兩種結論。
+   ⚠ 該廣告同週登兩刊，依 **第 509c 條只算一個來源**。
+2. **缺席即證據**：本層自抓的 Cash Box／Billboard **1969-05-03 → 1971-03-27 共 200 期**（關鍵字含 `84344`／`4344`／`how insensitive`／`duke pearson`／`blue note`）裡，
+   **1969 年完全查無本張的評介、新片欄或廣告**；而**同一位藝人同一年的另外兩張都查得到**——《Now Hear This》1969-08-16／09-06／09-27、《Merry Ole Soul》1969-11-22／12-06／12-20。
+   在這個覆蓋密度下，缺席不是抽樣誤差。
+3. **Billboard 1970-11-28「Studio Track」**：Jack Manno「arranged the Duke Pearson LP『How insensitive,』which was **recently released** on Blue Note Records」——
+   **Manno 正是本盤的合唱指揮（維基 Personnel: Jack Manno – conductor），指涉無誤**。
+
+**判準三條都過**：有先例（第 612 條（a 組立、主線追認），同一批同一版廣告）、可逆（改的是卡單 `year` 欄）、卡住整條線（不定就沒辦法交件）。
+**可逆點寫在卡上**：研究層若在 1969 年的 Schwann 目錄或 Blue Note 自家目錄頁查到 84344，可改回。
+
+## 第 633 條（同批）：**「原盤他廠」3 張逐張判——Solid State 2 張依判準表 (b) 收、Verve 1 張依 (c) 退；enum 漏標 0，但 enum 的 `inPool` 出現本線第一個假陰性**
+
+| 盤 | enum note | 判定 | 處置 |
+|---|---|---|---|
+| Randy Brecker《Score》 | BN 首發 1993，原盤 1970 可能他廠 | 成立：**Solid State Records SS 18051**（US 1970，Duke Pearson 製作；原壓標籤欄同時印 Liberty/UA, Inc. 與 United Artists Records, Inc.） | **收**，`label` 寫 Solid State、`year` 1970；Blue Note 只有 1993 英國 CD（3874a735） |
+| Candido《Thousand Finger Man》 | BN 首發 1999，原盤 1970 可能他廠 | 成立：**Solid State Records SS 18066**（US 1970，Duke Pearson 製作、Joe Cain 編曲，A&R Studio 1969-09-04／09 錄音） | **收**，`label` 寫 Solid State、`year` 1970；Blue Note 只有 1999 US CD（729d0db2） |
+| Kenny Burrell《Asphalt Canyon Suite》 | （**enum 沒標**——因為 MB 那筆 Blue Note release 沒有日期，「晚 3 年」規則沒觸發） | 成立：**Verve V6-8773**（US，實際上市 1970-02，MGM 體系） | **退**（第 630 條退表 #1） |
+
+**第 313 條三格判準表在本組的判法（第 582／589a 條）**：
+- **(b) 這一格在 1970 年終於站穩**：c-141 b 退掉《Presenting Joe Williams and Thad Jones/Mel Lewis》（Solid State SS 18008）的理由是「**1966 年** UA 與 Liberty 還是兩家公司」；
+  到 **1969–70 年 Transamerica 已把兩家併成 Liberty/UA, Inc.**，本批兩張 Solid State 原盤的**盤標上就印著 Liberty/UA, Inc.／United Artists Records, Inc.**——**這不是推論，是實體盤面**。
+  旁證：同批《Wayfaring Stranger》BST 84354 的原壓盤標印「**Solid State Series**」、《Consummation》BST 84346 的 1973／1975／1978 再壓也印「Solid State Series」
+  ——**Liberty/UA 1970 年起把 Solid State 目錄整批併進 Blue Note 號段，這條線在盤面上看得見**。
+- **(c) 這一格本批新增一個實例**：**Verve／MGM** ——與 Capitol、1968 前的 Solid State、EMI Columbia 同格，退。
+- ⚠ **可逆**：主線若把 (b) 收緊到「該張本身 1985 前有沒有 BN 號」，本批《Score》《Thousand Finger Man》要與 c-141 的三張 Pacific Jazz 一起退，rgMbid 都已釘。
+- ⚠ **給後批**：Candido 另有一張**真正的 Blue Note 自家號**《Beautiful》BST 84357（1971，jazzdisco；Cash Box 1971-02-13 列為二月檔期新片），**池中零張、本批 slice 也沒有——後批看到要收**，屆時兩卡 risk 互指。
+
+⚠ **enum `inPool` 的假陰性（本線第一個）**：《Consummation》池中明明有，enum 標 `false`——
+**因為 enum 與 `chk-prop` 都用「掛名＋盤名」的正規化鍵，而 `/` 不會被摺成 `and`**（`Thad Jones/Mel Lewis Orchestra` vs 池中 `Thad Jones & Mel Lewis`）。
+**→ 後批實掃時，盤名層的關鍵字掃描不能省**；只靠 rgMbid 直比與掛名子字串會漏掉這一型。
+
+## 第 634 條（同批）：**掛名裁定——群組收攏 2 張、既有分裂取多數 1 張、印刷體標點摺 ASCII 1 張、往群組收攏 1 張；新掛名 3，第 307 條預警 2**
+
+| MB artist-credit | 卡上掛名 | 依據 |
+|---|---|---|
+| `The Horace Silver Quintet`（群組 e9ac5139）《That Healin' Feelin'》 | **`Horace Silver`** | 第 482／503／525／543／573／583 條；池中 `Horace Silver` seed 8＋未上傳批次 10＋王牌 1（`Horace Silver And The Jazz Messengers`）。Discogs 盤面「Horace Silver Quintet With Vocals」進 queryAlias。**同批 a 組《You Gotta Take a Little Love》交件也是 `Horace Silver`，兩組一致** |
+| `Art Blakey & The Jazz Messengers`（群組 209ddf15）《Roots & Herbs》 | **`Art Blakey and the Jazz Messengers`** | 第 470／525／553／573 條**取池中多數**：`and the` seed 6＋批次 11＝17 ＞ `& The` seed 5；另有 `Art Blakey` 單名 seed 1＋批次 5（Orgy in Rhythm 一系）。⚠ `chk-prop` 的鍵把 `&` 摺成 `and`，兩種寫法在程式眼中同鍵；德國壓 041bf00a 與 1977 美壓 d6e571f2 的 credit 寫「Art Blakey And The Jazz Messengers」 |
+| `Kenny Cox & The Contemporary Jazz Quintet`（Person fd303f18 ＋ Group 16d697f2）《Multidirection》 | **`The Contemporary Jazz Quintet`** | **往群組收攏**，照 c-141 b 第 583 條先例：池中既有字串是群組 `The Contemporary Jazz Quintet`（seed《Location》1973 ＋ c-141 b《Introducing Kenny Cox…》），`Kenny Cox` 池中 **0 張**。改的是卡單值、可逆；主線若改以領班立卡，三張要一起改 |
+| `“Brother” Jack McDuff`（Person e0cd33e5，**含 U+201C／U+201D**）《To Seek a New Home》 | **`Brother Jack McDuff`** | 第 473／506／566 條把印刷體雙引號摺掉 ＋ 第 307 條照池中 5 張既有寫法（Moon Rappin'／The Honeydripper／Screamin'／Brother Jack McDuff Live!／Down Home Style）。MB 原字串進 queryAlias；群組 `The Brother Jack McDuff Quartet`／`Quintet` 不收攏 |
+| `Randy Brecker`《Score》 | **`Randy Brecker`**（新掛名） | MB 4244b5b1 Person，US，1945-11-27–；**MB 同字串只有這一個 Person**（另有群組 `Randy Brecker Session` 64949764，不收攏）；池中 `Randy Brecker`／`Brecker` **0 列**，無消歧問題 |
+| `Candido`《Thousand Finger Man》 | **`Candido`**（新掛名） | MB 1f92d1d9 Person「Cuban conga and bongo player」，1921-04-22–2020-11-07；照 MB RG credit 與原盤盤面，**不加重音符**。⚠ MB country 標 US（1946 年後定居紐約），**正文要寫古巴哈瓦那出身** |
+| `Jeremy Steig`《Wayfaring Stranger》 | **`Jeremy Steig`**（新掛名） | MB 89222a96 Person，US，1942-09-23–2016-04-13；**MB 同字串只有這一個實體**，無消歧問題 |
+| `Duke Pearson` ×3／`Lee Morgan`／`Eddie Gale`／`Blue Mitchell`／`Elvin Jones`／`Andrew Hill`／`Donald Byrd`／`Stanley Turrentine`／`Jimmy McGriff`／`Joe Williams` | 照 MB＝照池中 | 同字串 |
+
+**第 307 條預警 2 筆（寫給後批與本機）**：
+1. **`Joe Williams`（本批最需要帶消歧的字串）**：本卡是 MB de09faf8「US jazz vocalist」1918-12-12–1999-03-29＝池中《Count Basie Swings, Joe Williams Sings》同人；
+   **MB 同字串另有九個 Person**——`Big Joe Williams` bf295ac0（三角洲藍調，**池中《Piney Woods Blues》就是他**）、製作音樂作曲家 c6b9b8a4、1920 年代長號手 9891f35a、早期爵士班鳩 02b4a120、爵士貝斯 adfc84f4、R&B 貝斯 fb714b27、前衛搖滾主唱 d5e1700d、基督教音樂 3cb826c1、英國 soul/disco 9a30fec1。
+   **池中已經同時存在兩個不同的 Williams，日後任何 `Joe Williams` 進池必須先帶消歧。**
+2. **`Candido`**：MB 同字串撞擊多——`Cándido`（2eef718c，阿根廷 EBM）、`Candy Candido`（b46f4fab，US 1913–1999）、`Maria Candido`（FR）、`Cándido Fabré`（CU）、`Cândido Botelho`（BR）、`Mondo candido`（IT 團）。池中目前零張，**本卡進池後這個字串就有主了，後續要帶消歧**。
+沿用 c-141 b 的預警：**`The Contemporary Jazz Quintet`**（MB 另有 DK e6be0d2e）與 **`Kenny Cox`**（三個 Person）。
+
+## 第 635 條（同批）：**盤名、Live、vault 盤、同場拆盤**
+
+- **盤名全部照 MB RG title 逐字，19 張裡沒有一張需要摺印刷體標點**（本批 22 個 RG title 只有 McDuff 的 **credit** 帶 U+201C／U+201D，title 全是純 ASCII）。要注意的四處：
+  `Poly-Currents`（ASCII U+002D，Cash Box／Discogs 寫成「Poly -Currents」「Poly Currents」）、
+  `Worth Waiting For...`（**結尾三個 ASCII 句點**，維基與部分目錄無點）、
+  `Something To Listen To`（**To 與 Listen 皆大寫**，維基與 Discogs 作 “Something to Listen To”）、
+  `That Healin' Feelin'`（兩個撇號本來就是 ASCII U+0027；副題 (The United States Of Mind / Phase 1) **不進盤名、只進 queryAlias**）。
+- **Live 0 張**：19 張的 `secondary-types` 全空，盤面與維基亦無現場跡象——錄音地是 Van Gelder 12 張、A&R Studios 3 張（Score／Thousand Finger Man／Wayfaring Stranger）、洛杉磯 1 張（Bantu Village）、GM Studios 底特律 1 張（Multidirection）、**倫敦 1 張（To Seek a New Home）**、不明 1 張（Something To Listen To）。**沒有第 397 條「MB 沒標的現場」。**
+- **vault 盤 1 張，但是本線目前最長的**：**《Roots & Herbs》1961-02／05 錄、1970-10 出，九年**（c-141 b《Open House》的八年紀錄被打破）。`year` 取首次商業發行年、錄音年進正文與 risk（第 575／584 條）。
+  次長的是 **《Charisma》1966-09-29 錄、1969-05 出，兩年半**——不到 vault 盤的長度，但正文一樣不得把 1969 寫成錄音年。
+- **「一張碟兩場」5 張**（正文都不得寫成一場）：《Merry Ole Soul》（1969-02-25／08-19，Airto 只在三軌）、《How Insensitive》（1969-04-11／04-14／05-05，**三場**，Flora Purim 只唱後者）、《That Healin' Feelin'》（1970-04-08／06-18，**兩場班底完全不同**）、《Thousand Finger Man》（1969-09-04／09）、《Lift Every Voice》（原盤 1969-05-16 一場，**CD bonus 才是 1970-03-06／13 的另一場**）。
+- **「原盤 vs 擴充版」要分清的 4 張**：《Lift Every Voice》原盤 5 軌／CD 與串流 11 軌（bonus 六軌是 Lee Morgan／Bennie Maupin／Ron Carter／Ben Riley 的另一場，**不得寫進原盤陣容**）、《Roots & Herbs》原盤 6 軌／1999 CD 9 軌／1999 數位 8 軌、《Merry Ole Soul》原盤 9 軌／2003 日本 CD 10 軌、《How Insensitive》原盤 10 軌／2004 日本 CD 11 軌。**比對一律只認原盤軌數**（c-130 Perfect 先例可採前 N 軌）。
+- **同批跨卡互指（正文不得互抄陣容）——本組 8 組**：
+  1. **Duke Pearson 五處**：《Now Hear This》《Merry Ole Soul》《How Insensitive》三張領班盤（三種編制），**另製作《Score》《Thousand Finger Man》《Another Story》《Electric Byrd》四張、並在《Electric Byrd》彈電鋼琴**——本批 19 張裡有 7 張和他有關。
+  2. **Randy Brecker 三處**：《Score》領班（1969-01／02）↔《Now Hear This》小號（1968-12-03）↔《That Healin' Feelin'》小號與翼號（1970-04-08）。
+  3. **Elvin Jones 兩處**：《Poly-Currents》領班（1969-09-26）↔《Black Rhythm Happening》鼓（1969-05-02）。
+  4. **Candido Camero 兩處**：《Thousand Finger Man》領班（1969-09-04／09）↔《Poly-Currents》康加（1969-09-26）——**兩場只差三週，正文不得寫成同一批 session**。
+  5. **Lee Morgan 兩處**：《Charisma》領班（1966-09-29）↔《Roots & Herbs》小號（1961）↔《Lift Every Voice》**CD bonus** 小號（1970）。
+  6. **Eddie Gómez 兩處**：《Score》↔《Wayfaring Stranger》。
+  7. **Mickey Roker 六處**：Now Hear This／Merry Ole Soul／How Insensitive／Score／Electric Byrd／Another Story／That Healin' Feelin'；**Jerry Dodgion 三處**（Now Hear This／Score／Electric Byrd）；**Pepper Adams 三處**（Now Hear This／Poly-Currents／Electric Byrd）；**Frank Foster 兩處**（Now Hear This／Electric Byrd，c-141 b 第 583 條新立的掛名）；**Bob Cranshaw 三處**；**Airto Moreira 三處**（Merry Ole Soul／How Insensitive／Electric Byrd）——**寫節奏組與管樂組時務必分場**。
+  8. **Thad Jones 兩處**：《Another Story》翼號（1969-03-03）↔ 退件的《Consummation》（池中 seed）——**正文提 Thad Jones 時不要連到 Consummation 那張卡**。
+- **跨批互指**：《Roots & Herbs》↔ 池中 seed《The Freedom Rider》↔ c-141 a《The Witch Doctor》（**同一批 1961 年母帶拆成三張，c-141 a 第 576 條第 3 點已預告**，c-141 a 第 579 條把號碼誤記成 84303、第 589a 條第 5 點訂正為 **84347**，本層核實無誤）。
+
+## 第 636 條（同批）：**紙本——本層自抓 200 期（第一次跨進 1971），並記兩個抓取端的坑**
+
+repo 既有的三份檔案（`cashbox-bn-1968-69-ocr.txt`／`cashbox-bn-1969h2-ocr.txt`／`billboard-bn-1967-69-ocr.txt`）
+**對本批 18 個目錄號的命中率是 0/18**——如派工信所料，那些是用 c-141 的關鍵字存下的命中頁。本層重抓：
+
+- `batch-progress/enum/cashbox-bn-1969h2-1971q1-ocr.txt`（3.6 MB，**1969-05-03 → 1971-03-27，100 期中 99 期**，404 一期：1970-10-17）
+- `batch-progress/enum/billboard-bn-1969h2-1971q1-ocr.txt`（6.9 MB，同期間 100 期中 94 期，抓不到六期：1969-05-10／06-28／07-26、1970-04-18／05-09／12-26）
+
+涵蓋表已更新到 `SOURCES-billboard-cashbox.md`。**兩個坑**：
+
+1. **Cash Box 1971 年改檔名**：`.../Cash-Box/70s/1971/CB-1971-MM-DD.pdf` **整年 404**，1971 年起是
+   `.../Cash-Box/70s/1971/**Cash-Box**-1971-MM-DD.pdf`。1970 年仍是 `CB-`。
+   → **c-141 a 記的「Cash Box 是單一形狀」到 1971 年就不成立，兩種都要試。**
+   （Billboard 方面本層實測與 c-142 a 的第 609／614 條訂正一致：1970 年只有 `Billboard%20YYYY-MM-DD.pdf` 可用，`BB-` 全 404。）
+2. **⚠ 1970 年的 Billboard 文字層是逐字硬斷行的，跨行片語 `grep` 會全部落空。**
+   `BB-1970-10-24` 第 68 頁的爵士四星欄**同時評了本批的《Electric Byrd》與《Roots & Herbs》**，
+   但文字層存成 `DONALD BYRD- Electric \nByrd.`／`Roots I \nHerbe.` 這種逐字換行——`grep "Electric Byrd"` **零命中**，
+   本層第一輪因此一度誤判「這兩張查無紙本」。
+   **→ 比對前一定要先把換行摺成空白（`' '.join(text.split())`）再跑正則**；目錄號也要同時試 OCR 變體。
+
+⚠ **第 509c 條（紙本誤植）在本批中了四次**：Billboard 1970-10-24 把《Electric Byrd》的 84349 印成 **84249**、把 Blakey 印成 **BLANEY**、把《Roots & Herbs》印成 **Roots I Herbe / BST 04347**；
+Billboard 1970-12-05 把《Worth Waiting For...》印成 **BTS 84355**；Billboard 1971-03-27 把《Something To Listen To》印成 **Blue Note Eli 54304**；
+Cash Box 1970-10-24 把《That Healin' Feelin'》的副題印成 **The United Phases Of Mind Phase 1**。
+**四次全靠掛名＋盤名交叉定位，沒有一次能只信印出來的號碼。**
+
+⚠ **本層實掃順帶查到、與主線第 611／613 條互相印證的兩筆**（a 組交件時都已自行處理，記在這裡只為留痕與加證）：
+(a) a 組退掉的《The Worm》（`Jimmy McGriff Organ and Blues Band` vs 池中 `Jimmy McGriff`，第 611／613 條）——**本層從紙本補到硬證據**：Billboard 爵士專輯榜上「THE WORM, Jimmy McGriff, Solid State SS 18045」**從 1969-01-04 到 1969-07-12 連續在榜，榜列自印的週數一路走到「29」**（第 58x 條「榜位最硬」）。**這同時證明本批第 630 條退表 #2 的《Consummation》是同一型的漏網**：`chk-prop` 折不到的不只「群組 vs 個人」，還有 **`/` 與 `&`**（`Thad Jones/Mel Lewis Orchestra` vs `Thad Jones & Mel Lewis`）。
+(b) a 組 slice 的《King Kong》掛名 `Jean‐Luc Ponty` 帶 **U+2010 非 ASCII 連字號**（會被 `chk-prop` 擋），a 組交件已改成 ASCII。
+
+## 第 637 條（同批）：**店面觀察（第 254 條，只寫觀察）——Apple us `search` 15/19 命中、4 張三種以上查法全落空；CAA 15/19，4 張 404、4 張的圖來源是再發不是原盤**
+
+- **命中且軌數＝原盤**（12 張）：Now Hear This `1371781859`（9 軌）、Charisma `724266106`（6）、Black Rhythm Happening `723469508`（8）、Merry Ole Soul `1443872276`（9）、Bantu Village `1436246997`（7）、Poly-Currents `1444204534`（5）、How Insensitive `1442916912`（10）、Score `1506114621`（8）、Thousand Finger Man `725856394`（6）、Electric Byrd `724057792`（4）、Another Story `1435548171`（5）、That Healin' Feelin' `1460195030`（9）、Wayfaring Stranger `1492507001`（6）。
+- **命中但只有擴充形**：**Lift Every Voice** `1443798231`（**Lift Every Voice (Bonus Track Version)、11 軌**，沒有純 5 軌原盤形——前五軌對應原盤，c-130 Perfect 先例可採）。
+- **命中兩個版本**：**Roots & Herbs** `738332002`（9 軌＝1999 CD 形，releaseDate **1961-01-01＝錄音年**）與 `1444212001`（**6 軌＝原盤形**，releaseDate 2013-01-01）。
+- **⚠ 三種以上查法全落空 4 張**（本批最多的一次）：**《Multidirection》**（三種查法都只回**姊妹盤**《Introducing Kenny Cox…》`716068112`，12 軌＝2007 Connoisseur 形——與 c-141 b《Open House》完全同形）、**《To Seek a New Home》**（四種查法零回應）、**《Worth Waiting For...》**（三種查法都只回同名不同人的 `1133478709` See Siang Wong《Cinema Classics》）、**《Something To Listen To》**（三種查法零回應）。**這四張疑似未上串流。**
+- **releaseDate 一如第 484 條**：19 次查詢裡 **11 次是 01-01 placeholder**、**3 次是錄音日／錄音年**（Charisma 1966-09-29、Another Story 1969-03-03、Roots & Herbs 1961-01-01）、**1 次是維基那個沒有引註的日期**（Bantu Village 1969-09-16，**與維基同源機率高，不得當第二個獨立來源**，第 431 條）、**1 次沿用了 MB 的錯年**（Wayfaring Stranger 1970-01-01，卡上是 1971）。
+- **本批 Apple 沒有出現空 body**（c-140 b 第 568 條那種），但**同名盤混入兩次**（Lift Every Voice → Andra Day 2024 單曲；Worth Waiting For → See Siang Wong）。
+- **店面掛名與本卡不同**：Horace Silver Quintet、Kenny Cox、Mel Lewis & Thad Jones（退件）——上架比對要用店面寫法。
+- **CAA：19 張裡 15 張有 front**。**來源是原盤 release 的 11 張**（Now Hear This 3c1c4790、Charisma c9fb7830、Merry Ole Soul a5416080、Poly-Currents 119ff6ee、Multidirection 05bf72c6、How Insensitive 034021f7、Score 2ee35b6e、Thousand Finger Man 2eefd0e5 德壓、Electric Byrd ebe780c0、To Seek a New Home 899531b9、Wayfaring Stranger 043de537）；
+  **非原盤圖 4 張**（Bantu Village＝2011 英國 Soul Brother CD、Roots & Herbs＝1970-10-01 的 XW 數位、Lift Every Voice＝2001 美國 CD 的 bonus track 版封面、Another Story＝2014 日本 CD）——研究層看版式，各卡 risk 已列 Discogs 原壓條目 id。
+- **CAA 404 四張**：**《Black Rhythm Happening》《That Healin' Feelin'》《Worth Waiting For...》《Something To Listen To》**。
+  ⚠ **四張都以 `redirect: 'follow'` ＋ `status >= 500` 重試三次重抓過一輪、狀態碼確為 404**（第 589a 條第 2 點：代理臨時抓取要自己防，本層照做）。
+  **《That Healin' Feelin'》的封面其實存在——掛在被退的重複 RG cbd38639 上（front 1，來源 a0d32fd4＝同一張 1970 US 原盤）**，研究層可直接取；其餘三張的替代圖：Discogs `r1018259`／`r15836411`（Black Rhythm Happening）、`r1188467`（Worth Waiting For...，Ron Wolin 美術指導、Herb Kravitz 封面攝影）、`r17230279`（Something To Listen To，Ron Wolin 美術指導、John Uomoto 霓虹字設計、Joel Franklin 攝影）。
+
+## 第 638 條（同批）：**MB 資料層面的坑 7 個（本層不改 MB）**
+
+1. **重複 RG 1 對**：d6e44a8b 與 cbd38639 是同一張 BST 84352（第 630 條退表 #3）——**簡報第二節坑 1「漏折的重複 RG」在本線的第一個實例**，`chk-prop` 的 rgMbid 掃描抓不到（兩個 id 不同）、掛名＋盤名鍵也抓不到（盤名不同）。**只有人工比對轄下 release 的 catno＋軌數＋曲名才看得出來。**
+2. **frd＝錄音年**：Poly-Currents（1969，實為 1970）、Multidirection（1969，實為 1970）——**原盤 release 的 date 也一起錯**。
+3. **frd 早一整年**：Wayfaring Stranger（1970，實為 1971），原盤 release 同錯。
+4. **RG 轄下只有 1 筆、連一張 CD 都沒建 6 張**：Now Hear This、Multidirection、To Seek a New Home、That Healin' Feelin'、Wayfaring Stranger、Worth Waiting For...、Something To Listen To（**七張**，研究層一律以 Discogs master 補）；另 Bantu Village／Another Story 各 2 筆、1970–2010 之間空白。
+5. **載體登錯**：Poly-Currents 1988 年那筆 6e92748a 登成 **CD-R**（應為 CD）——第 567 條「載體與年份／實體不相容」的同族。
+6. **catno 掉字元／無前綴**：Another Story 的 2014 日本 CD da0b789d 登成 **BST-4336**（少一個 3）；Merry Ole Soul 的 2021 黑膠 aee14a30 同時登「84323」與「BST 84323」且**無國別**。
+7. **同 barcode 重複建檔**：Electric Byrd 的 195aea85（US）與 748681df（XE）共用 724383619528。
+   另：**status 空／無日期**——How Insensitive 的 a08f0d12（2004，無國別）、Asphalt Canyon Suite 的 b20ea2bb 與 57ccb66f（退件）、Lift Every Voice 的 6cc9254a（無日期）。
+   **19 張原盤 release 沒有一筆填軌長以外的細節，但軌長本批 19 張全有**（與 c-141 b 相反，寫作層可引軌長）。
+
+## 第 639 條（同批）：**時代背景實線（給寫作層）——1969→70 的 Blue Note 換了製作人，也換了廠牌母體**
+
+- **製作人**：**Duke Pearson 7 張**（三張自己的領班盤＋Score／Thousand Finger Man／Another Story／Electric Byrd）、**Francis Wolff 3 張**（Multidirection、Lift Every Voice、That Healin' Feelin'〔與 George Butler 共同〕）、**Alfred Lion 1 張**（Roots & Herbs，**1961 年的錄音**）、**Sonny Lester 2 張**（Wayfaring Stranger、Something To Listen To——Lester 正是 Solid State 的創辦人）、**George Butler 1 張**（Worth Waiting For...）、**Monk Higgins 1 張**（Bantu Village，外製兼編曲兼指揮）、**Kenny Burrell／Johnny Pate**（退件的 Asphalt Canyon Suite）。
+  ⚠ **不明 4 張**（Black Rhythm Happening、Merry Ole Soul、Charisma、Poly-Currents 之外的缺項以維基為準）——**維基 producer 欄留空的，正文不得指名監製**（c-141 第 595 條同型）。
+  ⚠ **George Butler 的出現是分水嶺**：Francis Wolff 1971-03 過世前，Butler 已經以共同製作人身分進來（That Healin' Feelin'，1970-04／06）並獨立製作了 Worth Waiting For...（1970）——**這是 Blue Note 交棒的實線，有名有姓、有日期。**
+- **廠牌母體**：本批所有原壓的盤標都印 **Liberty/UA, Inc.**（部分印 Transamerica Corporation 或 United Artists Records, Inc.），到 1971 年的再壓就變成 **United Artists Records, Inc.**——**1970 年是 Liberty 這個名字在 Blue Note 盤標上的最後一年。**
+- **封套美術**：**Ron Wolin** 2 張（Worth Waiting For...、Something To Listen To）、**Frank Gauna** 1 張（Thousand Finger Man，**正是 c-141 第 595 條點名的《Common Touch》美術指導**）、Chuck Stewart 攝影 1 張、Herb Kravitz 攝影 1 張、John Uomoto 霓虹字設計 1 張。**Reid Miles 在本批 0 張**（c-141 b 時還剩兩張，都是 Lion 時代的庫存錄音）。
+- **Cash Box 1971-02-13** 的 Blue Note 二月檔期報導列出當時主打的五張（Elvin Jones《Coalition》、Ornette Coleman《Love Call》、**Jeremy Steig《Wayfaring Stranger》**、Candido《Beautiful》、Chick Corea《The Song Of Singing》），
+  並回顧「artists who have dominated the jazz polls for many years」的名單（Ornette Coleman、Jack Wilson、Horace Silver、Freddie Hubbard、Don Cherry、Wayne Henderson、Jackie McLean、Wayne Shorter、Herbie Hancock、McCoy Tyner、John Patton、Bobby Hutcherson、Art Blakey、J.J. Johnson、Kenny Burrell、Donald Byrd）——**這份名單本身就是 1971 年初 Blue Note 的自我定位。**
+- **Billboard 1970-08-15** 的 Liberty/UA「FAST TURNOVER!」整版廣告把《To Seek a New Home》與《Electric Funk》連同 **8 軌卡匣（9078／9080）與卡帶（C-1078／C1080）編號**一起列出——**1970 年 Blue Note 已經三種載體同步發行**。
+- **Billboard 1970-04-25**：SCLC 與 Kim Weston 正在全美推廣〈Lift Every Voice and Sing〉作為「black national anthem」——**Andrew Hill 同年那張《Lift Every Voice》的標題就落在這個語境裡**（Hill 沒有錄那首歌，寫作層不得寫成翻唱）。
+- **Grammy**：退件的《Consummation》（池中 seed）**1971 年拿下 Best Jazz Performance – Large Group**（Billboard 1971-02-06 入圍名單、1971-03-13 得獎名單）——池中那張卡的簡介可以用。
+
+## 第 640 條（同批）：**交件數字、實掃順帶、中間檔、給後批**
+
+- **交件 19 張、17 位；退 3**（第 630 條：第 313 條他廠 1＝Verve；撞池 1；重複 RG 1）；
+  **年份改判 4**（Poly-Currents 1969→1970、Multidirection 1969→1970、Wayfaring Stranger 1970→1971、How Insensitive 1969→1970）；
+  `label` 改他廠 2（Solid State，第 633 條）；掛名群組收攏 2、既有分裂取多數 1、印刷體標點摺 ASCII 1、往群組收攏 1、**新掛名 3**、第 307 條預警 2（第 634 條）；
+  現場 0、vault 1（九年，第 635 條）；Apple 命中 15/19、**掛零 4**；CAA 15/19、**404 4**（第 637 條）。
+- `chk-prop b`：**標記 0**（19 張 17 位）；`chk-prop a b`：**標記 0**（39 張 29 位）；與 c-135～c-141 各批 prop **1,750 張**的 rgMbid 交叉 **0**、與同批 a 組 slice 交叉 **0**。
+- 掛名層實掃（**皆英文字串，無漢字／羅馬字變體；括號內為 seed／未上傳批次**）：Duke Pearson 1／6・Lee Morgan 12／9・Eddie Gale 0／1・Blue Mitchell 4／3・Elvin Jones 2（＋聯名 1）／0・The Contemporary Jazz Quintet 1／1、Kenny Cox **0／0**・Kenny Burrell 3（＋聯名 2）／5・Randy Brecker **0／0**・Art Blakey 系 12／16・Candido **0／0**・Thad Jones & Mel Lewis 2／0、Thad Jones 1／2・Andrew Hill 9（＋Trio 1）／2・Donald Byrd 14／10・Stanley Turrentine 5／10・Brother Jack McDuff 5／0・Horace Silver 8／10（＋王牌 1）・Jeremy Steig **0／0**・Joe Williams 1／0（＋Big Joe Williams 1，**不同人**）・Jimmy McGriff 3／0。
+- 中間檔 `scratchpad/c142b/`：`c142b-mbfetch.mjs`＋`mb/`（22 個 RG 的 rg／rel／caa 回傳 ＋ 8 個 MB artist 搜尋 ＋ 5 筆 CAA 重抓）、`c142b-mbsum.mjs`／`.txt`（逐張摘要）、`c142b-tracks.mjs`＋`tracks/`（20 張 release 的原 LP 軌序）、`c142b-poolscan.mjs`／`.txt`（實掃全文，19,064 列）、`c142b-wiki.mjs`／`c142b-wiki2.mjs`＋`wiki/`（30 個維基條目）、`c142b-discogs.mjs`／`c142b-dg2.mjs`＋`discogs/`（18 個 catno 反查＋9 個 master＋4 個 release）、`c142b-apple.mjs`／`.json`＋`c142b-apple2.mjs`／`.json`（店面 19＋10 次查詢）、`harvest.py`＋`cbtext/`／`bbtext/`（200 期紙本）、`ctx.py`／`ctx2.py`＋`ctx-*.txt`（紙本上下文；**`ctx2.py` 是摺換行後的版本，第 636 條**）、`jd-4300.txt`、`build1–4.py`（卡單產生）。
+- **給後批（1971–84 段）**：
+  1. **本批收掉的 19 個 rgMbid 見 `prop-b.json`**；1971 段的 slice 若再排到《Wayfaring Stranger》（32441658）一律退——**它的 MB frd 是 1970，很可能被 enum 分進 1970 段**。
+  2. **Candido《Beautiful》BST 84357（1971）**、**Elvin Jones《Coalition》BST 84361（1971）**、**Ornette Coleman《Love Call》BST 84356（1971）**、**Chick Corea《The Song of Singing》BST 84353（1971）**——Cash Box 1971-02-13 同一則報導列出的五張，本批收了其中一張，**其餘四張池中狀態未掃，後批要查**。
+  3. **jazzdisco 4300 頁記為 `not released` 的四個號**：84314（Booker Ervin，c-141 b 第 589 條第 3 點已記）、84316（Frank Foster）、84366（John Patton《Memphis To New York Spirit》）、84367（Hank Mobley《Thinking Of Home》）——**84366／84367 後來都在 1970 年代末以 LT 系列出土，屬 vault 盤，後批看到 `year` 取首次商業發行年。**
+  4. **1971 年起 MB 的 `first-release-date` 可信度下降、jazzdisco 4300 頁反而變準**（第 631 條方法論 2）。
+  5. **Thad Jones/Mel Lewis 的 Solid State 目錄**：c-141 b 第 589 條第 4 點說「BST 84346《Consummation》照收」——**已在池中，不要再收**（第 630 條退表 #2）。

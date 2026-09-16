@@ -129,7 +129,7 @@ c-141 a 記「Billboard 1968-08 起、整個 1969 年改成 `BB-YYYY-MM-DD.pdf`�
 **1970 年全部是第 2 種**（`.../Billboard/70s/1970/Billboard%20YYYY-MM-DD.pdf`），`BB-` 一律 404。
 → **三種形狀都要試**，不要只試一種就記成「該期抓不到」。Cash Box 仍是單一形狀 `CB-YYYY-MM-DD.pdf`。
 
-### c-142 a 立的一條（第 60x 條）：**廠牌自家的「檔期廣告」比評論欄、比 Discogs 原壓群都硬**
+### c-142 a 立的一條（第 612 條，主線已追認）：**廠牌自家的「檔期廣告」比評論欄、比 Discogs 原壓群都硬**
 
 Billboard 1970-07-18 有一整版 **「Liberty/UA, Inc. presents a solid Jazz program for July & August」**，
 把當期要推的盤逐號印出來（BST-84335、BST-84341、BST-84342／3／4、LST-11004／5／6）。
