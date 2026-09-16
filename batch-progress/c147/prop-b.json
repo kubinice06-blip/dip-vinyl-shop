@@ -1,0 +1,131 @@
+[
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "BST 84286 是 Stanley Turrentine 1968 年的正規錄音室專輯，不是精選：Cash Box 1968-08-03 的新片評介寫明「這是他第一次用弦樂編制，與一支強力班底一起處理十首曲子」，Billboard 1968-07-27 把它列進當週新片並給四星爵士評介，之後從 1968-09-07 起連續十週進 Billboard 的爵士暢銷 LP 榜。MB 的 Compilation 標記是純粹的建檔錯誤（第 613 條反例）。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/7b3b6443-4e46-4735-ae28-25866f93eed4",
+   "https://worldradiohistory.com/Archive-All-Music/Archive-Cashbox/60s/1968/CB-1968-08-03.pdf"
+  ],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Look of Love (BST 84286)；Stanley Turrentine — The Look Of Love；Look of Love（Billboard 榜列寫法）",
+  "artist": "Stanley Turrentine",
+  "album": "The Look of Love",
+  "year": 1968,
+  "label": "Blue Note BST 84286（US 1968 12\" Vinyl 10 軌，Liberty 期立體聲單號；MB release 79bf6222，無 barcode；Discogs 美國原壓 9046344 標 1968、德國原壓 20476348 亦 1968，master 283413；1973 US 再壓 13557253／23448080）；JP SHM-CD Blue Note TYCJ-81059（2014-01-22 6e97baa4，10 軌）",
+  "why": "1968 年的 Turrentine 正在從 hard bop 往流行曲目轉——這張是他第一張加弦樂的 Blue Note 盤，十軌裡有〈The Look of Love〉〈This Guy's in Love With You〉〈MacArthur Park〉〈Here, There and Everywhere〉這些當年的暢銷曲，也留了〈Blues for Stan〉這種六分鐘的自家藍調。它是他 Blue Note 目錄裡賣得最好的一張（連續十週進 Billboard 爵士榜，最高第 12 名一帶），也是廠牌 Liberty 時期「把爵士往電台推」那條路線的代表。實掃池中 Stanley Turrentine：漢字 0／羅馬字 `Stanley Turrentine` 17 張（seed 5：Look Out! 1960、Blue Hour 1961、Hustlin' 1965、Sugar 1971、Salt Song 1971；c138 3、c139 2、c140 4、c141 2、c142 2，**這 12 張的卡單已建但未進 seed_cards.json**）／`Horace Silver` 名下另有《Serenade to a Soul Sister》(c141) 由 Turrentine 主奏但掛 Silver／英文字串其他寫法 0。1968 年這一格池中只有《Easy Walker》(c141)，本張缺。",
+  "risk": "⚠ **MB 標 Compilation，本線判為正規發行**：`secondary-types: [\"Compilation\"]`，但這是**純粹的建檔錯誤**——BST 84286 是 1968 年的全新錄音室專輯，十軌在此之前都沒發行過，Cash Box 1968-08-03 的評介與 Billboard 1968-07-27 的四星爵士評介都以新片處理（第 613 條反例）。依第 397 條與派工指示，`releaseType` **仍照 MB 原值寫 `Compilation`**、不自行改成 Album，判斷寫在這裡與 `exceptionReason`。⚠ 重疊：**十軌與池中 17 張 Turrentine 卡逐張比對，零重疊**；本張是本批唯一一張內容完全不與池子相交的碟。⚠ 但 1968 前後池中已有《Easy Walker》(c141, 1968)、《Common Touch》(c141, 1969)、《Always Something There》(c142, 1969)，正文要能與這三張區別（本張是加弦樂的那一張）。⚠ 年份：MB 1968；Billboard 1968-07-27 當週新片列表印「STANLEY TURRENTINE -The Look of Love; BST 84286」並同期給四星評介；Cash Box 1968-08-03 新片評介；Billboard 爵士榜 1968-09-07 記「LOOK OF LOVE 2」（在榜第 2 週）→ 1968-11-16 仍在榜（第 58x 條：榜列的在榜週數比評論欄更硬，一張碟不可能上市隔年才以第 1 週進榜）。Discogs 美國與德國原壓皆 1968。**四個獨立來源一致，1968 不動。**⚠ 紙本 OCR 把目錄號打成 BST 84268 三次（1968-08-10、1968-10-26、1968-11-02 的榜列），84268 是 Jimmy Smith《Open House》的號段附近——第 509c 條的又一例，靠盤名與榜位連續性定位，不要只信印出來的號碼。⚠ 掛名：MB artist-credit `Stanley Turrentine`（Person），與池中 17 張一致。⚠ 店面（第 254 條，只寫觀察）：Apple us `search` 3 筆，兩筆同名同碟（1435548295 releaseDate 1968-05-06、1577475407 releaseDate 1968-07-12，**皆 10 軌、與原盤軌數相同，但兩個日期互相打架**）；tw `search` 11 筆，同兩筆（掛名顯示「斯坦利·特倫坦」）。**兩個 Apple 日期哪一個對應上市、哪一個對應錄音，留給研究層第三種查法核**（第 484 條）。CAA：RG 層 4 圖，來源 79bf6222（1968 原盤）。",
+  "mbNote": "釘 release-group 7b3b6443-4e46-4735-ae28-25866f93eed4。回問 release-group 端點（inc=artist-credits+releases）：title「The Look of Love」、artist-credit「Stanley Turrentine」（Person）、first-release-date 1968、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：79bf6222（1968 US Official 12\" Vinyl 10 軌 BST 84286，無 barcode）、6e97baa4（2014-01-22 JP Official SHM-CD 10 軌 TYCJ-81059，barcode 4988005803221）。原盤曲目（release/79bf6222?inc=recordings）：The Look of Love [4:27]／Here, There, and Everywhere [3:27]／A Beautiful Friendship [3:23]／Blues for Stan [6:03]／This Guy's in Love With You [2:34]／MacArthur Park [4:39]／I'm Always Drunk in San Francisco [2:26]／Emily [3:14]／Cabin in the Sky [3:45]／Smile [4:07]。紙本：Billboard 1968-07-27 新片列表＋四星爵士評介；Cash Box 1968-08-03 新片評介（「Utilizing a string background for the first time... tackles 10 strong tunes」）；Billboard 爵士暢銷 LP 榜 1968-09-07 至 1968-11-16 連續在榜。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "B-6503 是 Blue Note 1969 年 Jazz Classics 6500 系列的正式發行，不是第三方精選：Billboard 1969-04-05 有一則廠牌自述的企劃報導，把這一整批新編的盤逐張列出（DeParis Dixie、Original Blue Note Jazz Vol. 1、The Funky Piano of Art Hodes、The Beginning and End of Bop、Celestial Express），同期並以四星爵士評介處理本張、又列進當週新片。MB 因它由 78 轉／10 吋素材重編而標 Compilation，但這個目錄號本身是廠牌自己排的正規系列。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/27ecfe6e-6b41-4799-b0a2-efdd6c33d8c8",
+   "https://worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-04-05.pdf"
+  ],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Beginning and End of Bop (B-6503)；James Moody / George Wallington — The Beginning and End of Bop；Blue Note Jazz Classics 6500 系列",
+  "artist": "James Moody / George Wallington",
+  "album": "The Beginning and End of Bop",
+  "year": 1969,
+  "label": "Blue Note B 6503／B-6503（US 1969 12\" Vinyl 10 軌，mono，**Jazz Classics 6500 系列**；MB release 8c874a13，無 barcode，MB 轄下只有這一筆；Discogs 美國原壓 2040078 標 1969、德國同期 B 6503 K 3434784 亦 1969，master 413735）",
+  "why": "1969 年的 Blue Note 已經在 Liberty 手上，公司決定把 1940 年代的母帶重新編成一條「Jazz Classics」的 6500 系列——B-6503 是其中最有企圖的一張，它用一個標題把 bebop 的頭尾兜起來：A 面是 James Moody 1948 年的 Modernists 六軌（Oh Henry／Tropicana／The Fuller Bop Man／Cu-Ba／Moodamorphosis／Moody's All Frantic），B 面是 George Wallington 樂團的四軌（Festival／Bumpkins／Frankie and Johnnie／Baby Grand）。Wallington 是 52 街最早的 bebop 鋼琴手之一，卻在 1960 年就離開音樂圈去做家族生意，池中一張都沒有——這張是他進池的唯一路徑。實掃池中：漢字 0／羅馬字 `James Moody` 3 張（seed 1：《Last Train from Overbrook》1958；c135 2：《James Moody With Strings》1951＝Vogue L.D. 018／BLP 5005、《James Moody and His Modernists》1952＝BLP 5006，卡單已建未進 seed_cards.json）／`George Wallington` **0 張**／`James Moody / George Wallington` 0 張／英文字串其他寫法 0。",
+  "risk": "⚠ **MB 標 Compilation，本線判為正規發行**：`secondary-types: [\"Compilation\"]`；本線歸「1969 年 Jazz Classics 6500 系列（78 轉重組的官方再編）」類——Billboard 1969-04-05 同一期裡有三種處理（廠牌企劃報導、當週新片列表、四星爵士評介），可確認它是 1969 年的正規商品。第 397 條：`releaseType` 照 MB 原值寫 `Compilation`。⚠ **重疊（本批第二重）**：A 面六軌 **全部出自池中 c135《James Moody and His Modernists》(BLP 5006, 1952)** 的八軌（該盤另有 Workshop 與 Tin Tin Deo 沒收進本張）——**本張十軌裡有六軌已在池中一張卡上**。真正新的是 B 面 Wallington 四軌。依簡報第二節第 3 點各算一張、risk 互指；正文重點要放在 Wallington 那一面與「把 bop 的開頭與結尾並排」這個編排意圖，不得把 Moody 那六軌寫成首度問世。⚠ **雙掛名**：MB artist-credit 是 `James Moody`（cb8c8b87 Person, US, disambiguation「jazz saxophonist」）＋joinphrase「 / 」＋`George Wallington`（25d69cb5 Person, US），照抄成 `James Moody / George Wallington`。**池中同藝人的其他卡都掛單人 `James Moody`**（seed 1、c135 2），所以上架後會同時存在 `James Moody` 與 `James Moody / George Wallington` 兩個字串——這是**分裂不是合併**（第 307 條：分裂看得見、可事後合，合併不能拆），且 MB 就是這樣建的，照 MB 走。`George Wallington` 池中無同字串、無同名他人（MB 只有這一個 Person 實體）。⚠ 逐軌的 artist-credit 在 release 層是 `James Moody and His Modernists`（1–6）與 `George Wallington And His Band`（7–10），**那是軌層 credit 不是掛名**，不得拿來當卡面掛名。⚠ 同系列：B 6501《DeParis Dixie》、B 6502《The Funky Piano of Art Hodes》、B 6505《Edmond Hall — Celestial Express》、B 6506《Original Blue Note Jazz Vol. 2》、B 6509《Classics Vol. 1》都在 `blue-note.json` 排在後面的批次，本批只收 6503 與 6504；派後面那幾張時要回頭比曲目。⚠ 年份：MB 1969；Billboard 1969-04-05 三處；Discogs 美國原壓 2040078 與德國 3434784 皆 1969。三個來源一致，1969 不動。⚠ 紙本誤植：同期 Billboard 新片列表把盤名印成「The Beginning and End of Pop」（Bop→Pop），第 509c 條。⚠ 店面（第 254 條，只寫觀察）：Apple us／tw `search`（盤名＋掛名）**皆 0 筆**；藝人目錄 `lookup?id=57053&entity=album`（James Moody，46 筆）**無命中**。兩種查法都落空——只寫觀察，不得升級成「未上架」或「無來源狀態」（第 254 條），第三種查法留給研究層。CAA：RG 層 **404**（無封面），Discogs 原壓條目 2040078。",
+  "mbNote": "釘 release-group 27ecfe6e-6b41-4799-b0a2-efdd6c33d8c8。回問 release-group 端點（inc=artist-credits+releases）：title「The Beginning and End of Bop」、**artist-credit「James Moody」(cb8c8b87, Person, US, 「jazz saxophonist」) ＋ joinphrase「 / 」＋「George Wallington」(25d69cb5, Person, US)**、first-release-date 1969、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：8c874a13（1969 US Official 12\" Vinyl 10 軌，Blue Note B 6503，無 barcode）。曲目（release/8c874a13?inc=recordings，軌層 credit 已標）：Oh Henry [2:30]／Tropicana [3:03]／The Fuller Bop Man [2:57]／Cu-Ba [2:38]／Moodamorphosis [3:00]／Moody's All Frantic [2:35]（以上 credit `James Moody and His Modernists`）／Festival [4:02]／Bumpkins [3:52]／Frankie and Johnnie [4:08]／Baby Grand [4:04]（以上 credit `George Wallington And His Band`）。對照組：c135 的 BLP 5006（MB 056ef42f，8 軌：Workshop／Tin Tin Deo／Oh Henry／Mood's All Frantic／Tropicana／The Fuller Bop Man／Cu-Ba／Moodamorphosis）已逐軌比對。紙本：Billboard 1969-04-05（企劃報導＋新片列表＋四星爵士評介）。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "B-6504 是 Blue Note 1969 年 Jazz Classics 6500 系列的正式發行：Billboard 1969-04-05 的廠牌企劃報導把它與同批五張逐張列名，同期並列進當週新片、給四星爵士評介（「EDMOND HALL/ART HODES- Original Blue Note Jazz, Vol. 1, Blue Note B 6504 (M)」）。MB 因它由 1940 年代 78 轉素材重編而標 Compilation，但這個目錄號是廠牌自己排的正規系列，不是第三方精選。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/852fa255-ec45-44e3-98ce-10b35dfc98e0",
+   "https://worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-04-05.pdf"
+  ],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Original Blue Note Jazz, Volume 1 (B-6504)；Edmond Hall / Art Hodes — Original Blue Note Jazz Vol. 1；Blue Note Jazz Classics 6500 系列",
+  "artist": "Edmond Hall / Art Hodes",
+  "album": "Original Blue Note Jazz, Volume 1",
+  "year": 1969,
+  "label": "Blue Note B-6504（US 1969 12\" Vinyl 10 軌，mono，**Jazz Classics 6500 系列**；MB release 43dbb996，無 barcode，MB 轄下只有這一筆；Discogs 美國原壓 3599683 標 1969、德國同期 B-6504 K 兩筆 15317164／8652949 亦 1969，master 1017645）",
+  "why": "Blue Note 1943–45 年在 Alfred Lion 手上錄的那批「Blue Note Jazzmen」小樂團是這家公司的史前史——Edmond Hall 的單簧管與 Art Hodes 的鋼琴是兩條主線。B-6504 把兩人各自的 Jazzmen 場次併成一張：A 面 Hall（High Society 兩個版本／Blues at Blue Note／Night Shift Blues／Royal Garden Blues），B 面 Hodes（Sweet Georgia Brown／Squeeze Me／Sugar Foot Stomp／Bugle Call Rag 兩個版本），是 1969 年這條再編線的第一號「Original Blue Note Jazz」。實掃池中：漢字 0／羅馬字 `Edmond Hall` 1 張（c135《Memorable Sessions in Jazz》BLP 5026 1953）／`Edmond Hall & Sidney De Paris` 1 張（c135《Jamming in Jazz》BLP 7007 1951）／`Art Hodes` 1 張（c135《Dixieland Clambake》LP 7015 1951）／`Edmond Hall / Art Hodes` 0 張／seed 0 張——**三張卡單都已建但未進 seed_cards.json**。英文字串其他寫法 0。",
+  "risk": "⚠ **MB 標 Compilation，本線判為正規發行**：`secondary-types: [\"Compilation\"]`；本線歸「1969 年 Jazz Classics 6500 系列」類，Billboard 1969-04-05 同期三處佐證。第 397 條：`releaseType` 照 MB 原值寫 `Compilation`。⚠ **重疊**：A 面五軌中 High Society／Blues at Blue Note／Night Shift Blues／Royal Garden Blues **四種曲目都在池中 c135《Jamming in Jazz》(BLP 7007, 掛 `Edmond Hall & Sidney De Paris`) 的六軌裡**（該盤另有 Ballin' the Jack 與 Who's Sorry Now）；本張的 High Society 收了兩個版本，其中一個應是替代版（MB 兩軌長度同為 4:00，研究層要核是不是同一個 take 被建了兩筆）。B 面 Hodes 四種曲目與池中《Dixieland Clambake》(LP 7015) 的八軌**零重疊**，與《Memorable Sessions in Jazz》(BLP 5026) 亦零重疊。所以本張大約一半內容已在池中一張卡上——依簡報第二節第 3 點各算一張、risk 互指，正文重點放在 Hodes 那一面與 1969 年這條再編線。⚠ **雙掛名（本批最麻煩的一個）**：MB 的 artist-credit 有**四個實體**——`Edmond Hall`(d0025855 Person) ＋「 / 」＋`Art Hodes`(913e5c9f Person) ＋「, 」＋`Edmond Hall's Blue Note Jazzmen`(79debc6c Group，名字含 U+2019) ＋「 / 」＋`Art Hodes's Blue Note Jazzmen`(65ed2531，type null)，串起來是「Edmond Hall / Art Hodes, Edmond Hall's Blue Note Jazzmen / Art Hodes's Blue Note Jazzmen」。**後兩個實體是前兩位的樂團名重複掛一次**，不是第三、第四位樂手；Billboard 1969-04-05 與 Discogs 美國原壓的掛名都印「Edmond Hall / Art Hodes」。本層取 **`Edmond Hall / Art Hodes`**（MB credit 的前兩個實體、joinphrase 照 MB 的「 / 」），把四實體全串寫進 mbNote 與本欄；理由與 `James Moody / George Wallington` 同形。⚠ 池中同藝人的掛法：`Edmond Hall`（單人，c135）、`Edmond Hall & Sidney De Paris`（c135）、`Art Hodes`（單人，c135）——上架後會多一個 `Edmond Hall / Art Hodes` 字串，屬**分裂不是合併**（第 307 條），且 `Art Hodes` 與 `Edmond Hall` 在 MB 都只有一個 Person 實體、池中無同字串他人。⚠ 掛名含 U+2019（MB 的 `Edmond Hall's Blue Note Jazzmen`），本卡採用的字串不含任何非 ASCII 字元。⚠ 同系列 B 6501／6502／6505／6506／6509 都在 `blue-note.json` 排在後面的批次（特別是 B 6505《Celestial Express》掛 `Edmond Hall`、B 6509《Classics Vol. 1》掛 `Baby Dodds/Art Hodes/Edmond Hall`），**派那幾張時一定要回頭比本張曲目**。⚠ 年份：MB 1969；Billboard 1969-04-05 三處；Discogs 美國原壓 3599683 與德國兩筆皆 1969。三個來源一致。⚠ 店面（第 254 條，只寫觀察）：Apple us `search` **0 筆**；tw `search` 2 筆但都是《The Blue Note Hot Jazz Collecton》Vol. One／Three 這類 2011 年的合輯（18 軌），不是本盤；藝人目錄 `lookup?id=1581510`（Edmond Hall，14 筆）與 `lookup?id=1579550`（Art Hodes，43 筆）**皆無命中**。兩種查法都落空——只寫觀察，不升級成結論。CAA：RG 層 **404**（無封面），Discogs 原壓條目 3599683。",
+  "mbNote": "釘 release-group 852fa255-ec45-44e3-98ce-10b35dfc98e0。回問 release-group 端點（inc=artist-credits+releases）：title「Original Blue Note Jazz, Volume 1」、**artist-credit 四實體：`Edmond Hall`(d0025855 Person US「American jazz clarinetist, bandleader」) + 「 / 」+ `Art Hodes`(913e5c9f Person US) + 「, 」+ `Edmond Hall's Blue Note Jazzmen`(79debc6c Group, 名字用 U+2019) + 「 / 」+ `Art Hodes's Blue Note Jazzmen`(65ed2531, type null)**、first-release-date 1969、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：43dbb996（1969 US Official 12\" Vinyl 10 軌，Blue Note B-6504，無 barcode）。曲目（release/43dbb996?inc=recordings）：High Society [4:00]／High Society [4:00]／Blues at Blue Note [4:12]／Night Shift Blues [4:10]／Royal Garden Blues [4:08]（軌層 credit `Edmond Hall's Blue Note Jazzmen`）／Sweet Georgia Brown [4:05]／Squeeze Me [3:52]／Sugar Foot Stomp [4:10]／Bugle Call Rag [3:26]／Bugle Call Rag [3:26]（軌層 credit `Art Hodes's Blue Note Jazzmen`）。對照組：c135 的 BLP 7007（MB d45acc68，6 軌：High Society／Blues at Blue Note／Ballin' the Jack／Royal Garden Blues／Night Shift Blues／Who's Sorry Now）、LP 7015（MB f65ca4cc，8 軌）、BLP 5026（MB 99c53a01，6 軌）皆已逐軌比對。紙本：Billboard 1969-04-05（企劃報導＋新片列表＋四星爵士評介）。"
+ },
+ {
+  "releaseType": "Soundtrack",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Other Side of Round Midnight (BT 85135)；Other Side of Round Midnight（Apple）；Dexter Gordon — The Other Side of 'Round Midnight",
+  "artist": "Dexter Gordon",
+  "album": "The Other Side of Round Midnight",
+  "year": 1986,
+  "label": "Blue Note BT 85135（US 1986 12\" Vinyl 9 軌，barcode 077778513513；MB release 02016f5d）；CD 同年 Blue Note CDP 7 46397 2（1987-04-01 US 7437d8af，9 軌，barcode 077774639729）；卡帶 4BT-85135；Discogs master 168328，1986 年美國、荷蘭、法國、加拿大、阿根廷原壓共八筆皆標 1986",
+  "why": "1986 年 Bertrand Tavernier 的《午夜旋律》讓 Dexter Gordon 拿到奧斯卡男主角提名——電影的原聲帶由 Herbie Hancock 掛名在 Columbia 發行，而 Blue Note 這張 BT 85135 收的是同一批 1985 年巴黎場次裡**沒有進電影原聲帶的演奏**，1986 年首次問世。九軌包含兩個〈Round Midnight〉（6:28 與 7:46）、〈Berangere's Nightmare #2〉、〈Society Red〉、〈As Time Goes By〉、七分四十三秒的〈It's Only a Paper Moon〉，是 Gordon 生前最後一批錄音室錄音（他 1990 年去世）。實掃池中 Dexter Gordon：漢字 0／羅馬字 `Dexter Gordon` 15 張（seed 14，1955–1985；c131 1 張《Clubhouse》1979，卡單已建未進 seed_cards.json）／`Dexter Gordon Quartet` 1 張（seed《The Shadow of Your Smile》1985）／`Jackie McLean & Dexter Gordon` 1 張（seed《Montmartre Summit 1973》1991）／英文字串其他寫法 0。池中最晚的 Gordon 卡是 1985 年，本張缺。",
+  "risk": "⚠ **MB 標 Soundtrack（不是 Compilation），本線判為正規發行**：`secondary-types: [\"Soundtrack\"]`，因為這批演奏來自電影《Round Midnight》的錄音期；但本張**不是電影原聲帶**——原聲帶是 Columbia 的《Round Midnight (Original Motion Picture Soundtrack)》（Herbie Hancock 掛名，MB 另有 RG），BT 85135 收的是同場次未收錄進電影的演奏，1986 年首次發行，屬本批的 vault 類（第 597 條：vault 盤收「錄音首度問世」）。依第 397 條與派工指示，`releaseType` **照 MB 原值寫 `Soundtrack`**，不改成 Album；**Soundtrack 不觸發 §5.6 的合輯例外閘**，故 `exceptionReason` 與 `exceptionEvidenceUrls` 留空。⚠ 重疊：池中無 Columbia 原聲帶卡（實掃 `Herbie Hancock` 18 張、`Dexter Gordon` 17 張、`Round Midnight` 字串 3 筆皆無關），**九軌與池中零重疊**。⚠ 但曲名會撞：〈Berangere's Nightmare #2〉的「#2」表示電影原聲帶收的是另一個版本，正文不得寫成原聲帶曲目；兩個〈Round Midnight〉長度不同（388 秒與 466 秒），是兩次不同的演奏，不得寫成一軌。⚠ vault 類的共同風險：**「首度問世」這個前提要逐張驗**——本張的九軌在 1986 年之前沒有任何 Blue Note／Columbia 發行收過（已比對池中卡與 `blue-note.json` 的 Gordon 條目：Landslide LT-1051 1980、Nights at the Keystone Vol. 1–3 1990、The Squirrel 1997 皆不同場次）。同批的 Kenny Burrell Vol. 3 與 Hank Mobley Quintet 就是在這一關被推翻而退掉的（見 rulings 第 731／732 條）。⚠ 掛名：MB artist-credit `Dexter Gordon`（Person），與池中 15 張一致；不要用池中另有的 `Dexter Gordon Quartet`。⚠ 年份：MB 1986；Discogs master 168328 底下 1986 年的美／荷／法／加／阿原壓共八筆全部標 1986，**同一目錄號的原壓整群同年**（第 531 條）；`cashbox-bn-1984-85-ocr.txt` 只涵蓋到 1985-06，**不涵蓋本張**，不是「查無紙本」而是本檔沒有這一段（1986 年的紙本這條線還沒有人抓）。錄音年 1985（巴黎）寫在正文，不進 `year`。⚠ 店面（第 254 條，只寫觀察）：Apple us `search` 5 筆，命中 723722495《Other Side of Round Midnight》9 軌、releaseDate **1985-01-01**（軌數與原盤相同，但日期是錄音年不是發行年，第 484 條）；tw `search` 10 筆，同一筆外另有 322988131／201272808 兩筆 Columbia 原聲帶（12 軌，**不是本盤**）。CAA：RG 層 1 圖，來源 02016f5d（1986 原盤）。",
+  "mbNote": "釘 release-group 01b21355-f35f-3325-96d0-ae6f4030d682。回問 release-group 端點（inc=artist-credits+releases）：title「The Other Side of Round Midnight」、artist-credit「Dexter Gordon」（Person）、first-release-date 1986、primary-type Album、**secondary-types [\"Soundtrack\"]**、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：02016f5d（1986 US Official 12\" Vinyl 9 軌，Blue Note BT 85135，barcode 077778513513）、7437d8af（1987-04-01 US Official CD 9 軌，Blue Note CDP 7 46397 2，barcode 077774639729）。原盤曲目（release/02016f5d?inc=recordings）：Round Midnight [6:28]／Berangere's Nightmare #2 [4:35]／Call Sheet Blues [6:05]／What Is This Thing Called Love [3:35]／Tivoli [4:10]／Society Red [5:30]／As Time Goes By [4:15]／It's Only a Paper Moon [7:43]／Round Midnight [7:46]。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "CDP 7 84465 2 是 1992 年首度發行的 1970 年 Circle 未發表錄音：十軌裡有九軌在 1992 年之前沒有任何形態問世（唯一的例外是〈Percussion Piece〉，1978 年已收在 BN-LA882-J2《Circulus》）。Blue Note 用 4000 系列的延伸號 84465 發它，是廠牌自己把庫存母帶轉成商品，不是第三方精選；MB 標 Compilation 是因為素材跨了不同的編制與場次。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/01dfab1e-05ca-32d1-8f07-bdbe3c082b83",
+   "https://www.discogs.com/release/275259"
+  ],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Early Circle (CDP 7 84465 2)；Chick Corea — Early Circle；Circle（1970 年四重奏）",
+  "artist": "Chick Corea",
+  "album": "Early Circle",
+  "year": 1992,
+  "label": "Blue Note CDP 7 84465 2（US 1992 CD 10 軌；MB release 95ba3c12，無 barcode；Discogs 美國原壓 275259 與歐版 14950941 皆標 1992，master 599397；1997 西班牙再壓 4687039）",
+  "why": "Circle 是 Chick Corea 1970 年離開 Miles Davis 之後、走進 Return to Forever 之前的那一段——與 Dave Holland、Barry Altschul、Anthony Braxton 一起做自由即興，是他整條生涯裡最不妥協的兩年。Blue Note 當年只發了《The Song of Singing》(BST 84353) 與後來的《Circulus》，其餘母帶躺了二十年。《Early Circle》1992 年把剩下的十軌放出來：Starp、73° - A Kelvin、Ballad、兩首 Duet for Bass and Piano、兩首 Danse for Clarinet and Piano、Chimes I／II（合計超過十七分鐘）與 Percussion Piece，是這個編制留下的最後一批未發表錄音。實掃池中 Chick Corea：漢字 0／羅馬字 `Chick Corea` 6 張（seed 5：《Now He Sings, Now He Sobs》1968、《Piano Improvisations, Volume 1》1971、《Return to Forever》1972、《Hymn of the Seventh Galaxy》1973、《Light as a Feather》1973；c143 1 張《The Song of Singing》1971＝BST 84353，**卡單已建但未進 seed_cards.json**）／`Chick Corea, Dave Holland, Barry Altschul` 1 張（seed《A.R.C.》1971，ECM）／`Gary Burton & Chick Corea` 3 張（seed）／英文字串其他寫法 0。本張缺。",
+  "risk": "⚠ **MB 標 Compilation，本線判為正規發行**：`secondary-types: [\"Compilation\"]`；本線歸 vault 類（第 597 條：vault 盤收「錄音首度問世」）。第 397 條：`releaseType` 照 MB 原值寫 `Compilation`。⚠ **重疊（一軌）**：〈Percussion Piece〉在本張是 5:52（352 秒），與 1978 年 BN-LA882-J2《Circulus》的同軌（MB release 9bd1683f，352 秒）**長度相同、是同一個錄音**——十軌裡有一軌不是首度問世。《Circulus》目前**不在池中**，但它在 `blue-note.json` 裡排在後面的批次（1978，BN-LA882-J2／UCCU-3210），**派那張時要回頭比本張**。⚠ **與 c143 待上架卡的關係**：c143 已定稿《The Song of Singing》(BST 84353, 1971)，那是同一個 Circle 編制 1970 年 4 月的另一批錄音（Toy Room／Ballad I／Rhymes／Flesh／Ballad III／Nefertiti）——**曲名相近但無一相同**（本張的〈Ballad〉與該張的〈Ballad I〉／〈Ballad III〉是不同軌）。兩張卡上架後會相鄰，正文必須寫清楚。池中 seed《A.R.C.》(ECM, 1971) 是同三人組的 ECM 盤，曲目亦零重疊。⚠ 「首度問世」的驗算：本張十軌逐軌比對過 `blue-note.json` 的 Corea 條目（The Song of Singing 1971／1987 兩個 RG、Circulus 1978、Play 1992、Jazz for a Sunday Afternoon 1993）與池中 6 張，除〈Percussion Piece〉外皆無更早的發行。同批的 Kenny Burrell Vol. 3 與 Hank Mobley Quintet 就是在這一關被推翻（見 rulings 第 731／732 條），本張通過。⚠ 掛名：MB artist-credit `Chick Corea`（Person），與池中一致；**不得改掛 `Circle`**（池中無此字串，MB 這個 RG 也不是掛 Circle）。⚠ 曲名含度數符號（`73° - A Kelvin`）與井字號（`Duet for Bass and Piano #1`），寫進正文時照原樣、不要改成中文標點。⚠ 年份：MB 1992；Discogs 美國原壓 275259 與歐版 14950941 皆 1992（master 599397 底下只有 1997 西班牙一筆較晚）。錄音年 1970 寫正文、不進 `year`。⚠ 店面（第 254 條，只寫觀察）：Apple us／tw `search` 各 12 筆，**無一筆是本盤**；藝人目錄 `lookup?id=117338&entity=album`（137 筆）**無命中**。兩種查法都落空——只寫觀察，第三種查法留給研究層。CAA：RG 層 1 圖，來源 95ba3c12（1992 原盤本身）。",
+  "mbNote": "釘 release-group 01dfab1e-05ca-32d1-8f07-bdbe3c082b83。回問 release-group 端點（inc=artist-credits+releases）：title「Early Circle」、artist-credit「Chick Corea」（Person）、first-release-date 1992、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：95ba3c12（1992 US Official CD 10 軌，Blue Note CDP 7 84465 2，無 barcode）。曲目（release/95ba3c12?inc=recordings）：Starp [5:25]／73° - A Kelvin [9:17]／Ballad [6:47]／Duet for Bass and Piano #1 [3:32]／Duet for Bass and Piano #2 [1:45]／Danse for Clarinet and Piano #1 [2:17]／Danse for Clarinet and Piano #2 [2:39]／Chimes I [10:25]／Chimes II [6:40]／Percussion Piece [5:52]。對照組：《Circulus》BN-LA882-J2（MB RG ca0d00b1，release 9bd1683f 1978，5 軌：Drone [22:25]／Quartet Piece No. 1 [16:13]／No. 2 [17:33]／No. 3 [12:25]／**Percussion Piece [5:52]**）與《The Song of Singing》BST 84353（MB RG 847dcc5e，6 軌）已逐軌比對。"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "TOCJ-1612 是 1996 年東芝 EMI「1500 系列保留號」企劃的一張：Blue Note 當年替 Jimmy Smith 1957–58 年的未發表場次留了 1612 這個號卻沒發，1996 年才首度以這個號問世。七軌中有四軌（I'm in the Mood for Love／Things Ain't What They Used to Be／Laura／Somebody Loves Me）在此之前沒有任何發行，另三軌是與 1979／1981 年 LT 系列同曲但不同演奏。MB 標 Compilation 是因為素材跨場次，但這是廠牌自己排號的首發盤。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/515f87c1-26de-4d79-ba11-c907baa01be4",
+   "https://www.discogs.com/release/10794765"
+  ],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Cherokee (TOCJ-1612)；Jimmy Smith — Cherokee；1500 系列保留號 1612",
+  "artist": "Jimmy Smith",
+  "album": "Cherokee",
+  "year": 1996,
+  "label": "Blue Note TOCJ-1612（JP 1996-11-27 CD 7 軌，barcode 4988006723276；MB release dee0ec63；**只有日本盤，沒有美國發行**）；Discogs 兩筆 22635980／10794765 皆 1996 Japan，master 2565470；目錄號用的是 1500 系列未啟用的保留號 1612",
+  "why": "Jimmy Smith 1956–58 年在 Blue Note 錄得極多、發得更多，但仍有整場沒發完——1996 年東芝 EMI 用當年沒用掉的 1500 系列保留號（1609–1615 一段）把這些母帶排成一批日本盤，TOCJ-1612《Cherokee》是其中的 Smith 卷。七軌都是五到七分鐘的三重奏標準曲（What Is This Thing Called Love?／I'm in the Mood for Love／Things Ain't What They Used to Be／On the Sunny Side of the Street／Laura／Cherokee／Somebody Loves Me），跟池中那批 1956–58 年的《at the Organ》系列是同一段時期、同一種編制。實掃池中 Jimmy Smith：漢字 0／羅馬字 `Jimmy Smith` 28 張（seed 11：House Party 1958、The Sermon! 1959、Back at the Chicken Shack 1960、Crazy! Baby 1960、Midnight Special 1961、Home Cookin' 1961、Bashin' 1962、Prayer Meetin' 1964、The Cat 1964、Organ Grinder Swing 1965、Root Down 1972；c136 10、c137 1、c139 1、c140 2、c141 2、c142 1，**這 17 張的卡單已建但未進 seed_cards.json**）／`The Incredible Jimmy Smith` 0 張（池中一律掛 `Jimmy Smith`）／英文字串其他寫法 0。本張缺。",
+  "risk": "⚠ **MB 標 Compilation，本線判為正規發行**：`secondary-types: [\"Compilation\"]`；本線歸 vault 類（第 597 條：vault 盤收「錄音首度問世」）。第 397 條：`releaseType` 照 MB 原值寫 `Compilation`。⚠ **「首度問世」只成立四軌，三軌不成立**（本層實掃的結果，列舉檔沒查）：〈What Is This Thing Called Love?〉(7:04) 與〈Cherokee〉(5:00) 的**曲名**在 1979 年的 LT-992《Confirmation》已出現，〈On the Sunny Side of the Street〉(5:13) 的曲名在 1981 年的 LT-1092《On the Sunny Side》已出現——但**長度完全對不上**（LT-992 的同曲是 15:13 與 20:20，LT-1092 的是 5:45），是**不同的演奏**，所以七軌全部仍算首度問世的錄音，只是曲目與那兩張重複。LT-992 與 LT-1092 都在 `blue-note.json` 排在後面的批次，**派那兩張時要回頭比本張**。⚠ 重疊：與池中 28 張 Jimmy Smith 卡逐盤比對曲目，**零重疊**（《Jimmy Smith at the Organ》Vol. 1／2、《A Date With》Vol. 1／2、《Plays Pretty Just for You》、《The Sounds of》皆無同曲）。⚠ **只有日本盤**：MB 轄下唯一一筆 release 是 JP，沒有美國發行；`country` 寫 JP，正文不得寫成美國盤。⚠ 掛名：MB artist-credit `Jimmy Smith`（Person），與池中 28 張一致；池中同名他人的檢查——MB 的 `Jimmy Smith` 另有數個同名實體（英國貝斯手等），本 RG 釘的是爵士管風琴手那一個，不看 score 看 type／area（第 179／250／324 條）。⚠ 年份：MB **1996-11-27**、Discogs 兩筆日本原壓皆 1996（master 2565470），沒有更早的形態；1996 年的紙本這條線沒有涵蓋（`SOURCES-billboard-cashbox.md` 最晚到 1985-06），**不是查無而是本檔沒有這一段**。錄音年 1957–58 寫正文、不進 `year`。⚠ 同企劃的鄰號：TOCJ-1609（Kenny Burrell Vol. 3，本批已退，見 rulings 第 731 條）、TOCJ-1610（Jimmy Smith Trio + LD）、TOCJ-1611（Hank Mobley《Curtain Call》）、TOCJ-1615（Jimmy Smith《Lonesome Road》）都在 `blue-note.json` 排在後面的批次——**TOCJ-1610 與 TOCJ-1615 同為 Jimmy Smith，派那兩張時要回頭比本張曲目**（已先比過：《Lonesome Road》八軌與本張零重疊）。⚠ 店面（第 254 條，只寫觀察）：Apple us `search` 1 筆，命中 1374684887《Cherokee》**7 軌、releaseDate 1996-11-27**（軌數與日期都與 MB 的原盤完全相同）；tw `search` 9 筆，同一筆在第一位。CAA：RG 層 2 圖，來源 dee0ec63（1996 原盤本身）。",
+  "mbNote": "釘 release-group 515f87c1-26de-4d79-ba11-c907baa01be4。回問 release-group 端點（inc=artist-credits+releases）：title「Cherokee」、artist-credit「Jimmy Smith」（Person）、**first-release-date 1996-11-27**、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：dee0ec63（1996-11-27 JP Official CD 7 軌，Blue Note TOCJ-1612，barcode 4988006723276）。曲目（release/dee0ec63?inc=recordings）：What Is This Thing Called Love? [7:04]／I'm in the Mood for Love [6:25]／Thing's Ain't What They Used to Be [5:50]／On the Sunny Side of the Street [5:13]／Laura [5:41]／Cherokee [5:00]／Somebody Loves Me [5:43]。對照組（本層實掃）：LT-992《Confirmation》(MB 901ff61d, release 1ac06a11 1979：What Is This Thing Called Love [15:13]／Confirmation [10:31]／Cherokee [20:20])、LT-1092《On the Sunny Side》(MB 7e8d1e5a, release 188761c0 1981：On the Sunny Side of the Street [5:45] 等 8 軌)、TOCJ-1615《Lonesome Road》(MB 39e4113b, 8 軌) 皆已逐軌比對。"
+ }
+]
