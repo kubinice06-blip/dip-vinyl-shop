@@ -299,3 +299,47 @@ Riverside 原盤、Blue Note 關聯始於 1985 後——與 a 組的《Cannonbal
 四張「1963 錄、1964 出」改判；Marcos Valle《Samba "demais"》轉巴西線候補（rgMbid 已釘）。
 **既有卡問題留本機**：`Jimmy Smith — Back at the Chicken Shack` 年份 1960 應為 1963（jazzdisco BLP 4117）；`John Patton`／`Big John Patton` 分裂。
 **給 c-140 的提醒**：4125–4161 段是「1963 錄、1964 出」密集區，4160–4199 的「1966+」要先疑年份。
+
+## 第 550 條（主線 2026-09-16，研究層 b 組交件後）：**第 541 條的五張改判全部由同期紙本追認；Elder Don 定案 1963**
+
+b 組 19 筆全 `full`、QA 清。本層自行抓了 **1963 全年 52 期 ＋ 1964 年 1–9 月共 91 期《Cash Box》**
+（worldradiohistory PDF 有文字層，不必 OCR），**19 張裡 16 張拿到同期紙本**（專輯評論或 Blue Note 月度廣告），
+另跑了 19 張的 Discogs catno 檢索（第 531 條）。
+
+**第 541 條五張改判全部追認**：
+Good Gracious!（CB 1964-07-18 評論）、Am I Blue（CB 1964-08-08）、
+Good Move!（CB 1964-07-11，內文自稱「third LP on Blue Note」）、
+Soul Stream（CB 1964-06-27，自稱「his second Blue Note offering」、鼓手 Hugh Walker 對得上）、
+Blue John（**1986**；91 期 Cash Box 對「Blue John／4143」零命中，**反證當年未上市**）。
+⚠ **Soul Stream 是本組唯一 Discogs 站錯邊的一張**——它的 1963 是錄音年回填（第 431 條同源）。
+**「Discogs 原壓群」這條舉證不是萬能的：它也會整群繼承同一個錯誤的回填年。**
+
+**策展層「維持兩說」的 Elder Don 定案 1963**：CB 1963-04-06 專輯評論 ＋ 維基引的《DownBeat》1963-05-23
+兩份紙本，**維基 infobox 的 1962 是錄音年**。
+
+**有疑議 1 張，維持卡單**：Ken McIntyre《'Way, 'Way Out》——盤面五筆（美／加、mono＋stereo）與 MB、維基全是 1963，
+但 CB 1964-01-11 的 UA 業務會議報導把它列進「New UA albums」名單。**判仍取 1963**
+（實體盤面一致；年初業務會議常推上一季的貨），已寫進 `yearVerified` 標明可逆。
+
+## 第 551 條（同日）：**b 組缺試聽兩張都補上；缺封面兩張的替代圖來源已標**
+
+**串流採信**：Jimmy Smith《Rockin' the Boat》**`716175252`**（7 軌全為原盤、無 bonus）；
+Stanley Turrentine《Never Let Me Go》**`716038904`**（8 軌，本盤第一軌〈Trouble〉＝該條目第 1 軌，
+前 7 軌為原盤軌序，第 8 軌是 CD bonus）。兩張都第一種查法即中並逐軌核過，主線已補進 `previews.json`。
+**c-139 試聽 32/36**（缺的 4 張在 a 組，研究層仍在跑）。
+
+**缺封面兩張的替代圖來源**（本機上傳時用）：
+《It Just Got to Be》→ Discogs release 2885076 或 Apple `1362892401`；
+《Two Souls in One》→ Discogs release 1061137 或 Apple `1438777060`。
+
+## 第 552 條（同日，跨組與跨批）：**兩件從 b 組掃到的、不屬於 b 組的事**
+
+1. **a 組《Year of the Iron Sheep》（UAJ 14015）的 1962 要再核**：Cash Box **1963-03-09** 有它的專輯評論
+   （誤植成「United Artists 15015」，第 509c 條同形），而同系列號碼更小的《The Peaceful Side》UAJ 14010
+   遲至 **1963-02-09** 才被評論。**已轉給仍在跑的 a 組代理，結論寫進 `yearVerified`。**
+2. **池中既有卡 `Jimmy Smith — Back at the Chicken Shack` 年份 1960 應為 1963**（第 549 條已列），
+   b 組以 CB 1963-03-09／04-13 廣告再證一次。**雲端不能改 `seed_cards.json`，列進本機待辦。**
+
+**b 組掃到的 91 期 Cash Box 命中頁全文留在 scratchpad `c139b/research/cbtext/`**——
+⚠ **scratchpad 不隨容器存活**，c-140 起若還要 1963–64 的紙本，要嘛趁容器還在時複用，要嘛比照
+`batch-progress/enum/cashbox-bn-1960-62-ocr.txt` 收進 repo。
