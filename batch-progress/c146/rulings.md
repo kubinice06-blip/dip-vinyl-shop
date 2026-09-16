@@ -217,3 +217,51 @@
      `Les McCann Ltd. —《Plays The Shout》` ↔ 未收的《Les McCann Ltd. Plays the Truth》(PJ-2, 1960) 與 `McCann in San Francisco` (PJ-16)、`Pretty Lady` (PJ-25)
      （**四張同在 Cash Box 1961-08-19 p26 那則目錄廣告上**）↔ 池中 seed《Swiss Movement》。
   7. **退掉四張的原盤清單見第 871 條**——**其中《More From the Vanguard》(BN-LA475-H2, 1975) 在 MB 上根本沒有 RG，列舉檔永遠不會提供它，要收只能走 §1 人工。**
+
+## 第 881 條（主線 2026-09-16，研究層交件後）：**四張全部覆核成立；兩張的證據往前推、一處榜位訂正**
+
+研究層 4 筆全 `full`、QA 清、`src` 全 https。**策展層四張全部覆核成立，一張都沒擋下**，並補了 5 則新紙本、訂正 2 處。
+
+- **《Plays The Shout》1960 成立，證據往前推兩個月**：新找到 **Billboard 1960-09-05 p26 四星專輯評介**
+  （盤名逐字「LES McCANN LTD. PLAYS THE SHOUT／Pacific Jazz PJ 7」，並寫明這是他繼《The Truth》後的第二張 LP）
+  ＋ **Billboard 1960-09-19 p20 的 Pacific Jazz 整版經銷商廣告**（逐號印 PJ-7／STEREO-7）。
+  **上市改取 1960 年 8 月底／9 月初。**
+- **《Plays Fats Waller》1962 成立，紙本由 5 則增至 8 則**：新增 Billboard 1962-08-11 p30 **SPOTLIGHT 專輯評介**、
+  同期 p31 單曲評介、**Cash Box 1962-08-25 p15 ＋ Billboard 1962-08-25 p25 的整版專輯廣告**。上市 1962 年 8 月。
+- **《A Night in Copenhagen》1985 成立**，四則紙本全部自原始 PDF 複驗（第 704 條）；
+  **jazzdisco 的 1984 是 85100 段唯一孤例、Apple 的 ℗ 1984 與三個資料庫同源**（第 431 條）。
+- **《100 Hearts》維持 1984**。⚠ **訂正策展層的榜位**：Billboard 爵士榜**第 1 週是 1984-07-28 不是 06-02**
+  （09-08 印「第 7 週」、09-22 印「49 46 9」回推；**06-02 那期的命中只是一則 NPR 廣播預告**）。
+  在榜至少 9 週，最好名次是 1984-09-01 的 **#29**。
+  **（「命中」不等於「榜位」——命中頁裡的廣播預告與榜表長得一樣。）**
+
+## 第 882 條（同日）：**撞陳列——本批全部只撞曲名，不撞母帶；但策展層有一處寫錯**
+
+- **《Plays Fats Waller》↔ seed《Crazy! Baby》**：同三重奏、同一間 Van Gelder，**相隔兩年零十九天、七對七零重複**
+  （逐 take 核過，**第 855／861 條的三重核完成**）。另與 **seed《Fats Waller —〈The Joint Is Jumpin'〉》**
+  有子字串盲區關係，**兩卡可互指**。
+- ⚠ **《A Night in Copenhagen》↔ seed《Dream Weaver》策展層寫錯，本層訂正**：
+  **《Dream Weaver》(1966) 五軌根本沒有〈Sweet Georgia Bright〉**（那首出自 Lloyd 首作《Discovery!》Columbia 1964）
+  ——**兩張零曲名重疊**，只是同一位領班相隔十七年。
+  **真正的同曲關係在《Of Course, of Course》(Columbia, 1965)**：本盤原盤第 4 軌〈Third Floor Richard〉
+  與 CD bonus〈Of Course, Of Course〉都出自那張，**兩者池中皆無，日後收要互指**。
+- 《Plays The Shout》與《100 Hearts》：**全部是曲名撞不是母帶撞**，四種鍵不撞。
+
+## 第 883 條（同日）：**試聽 4/4；三處紙本誤植；封面建議改取 Discogs 原壓**
+
+**缺的 2 張全部採信**：Les McCann `1443154053`（9 軌＝2018 數位形，原盤 8 軌全在內）、
+Charles Lloyd `1454405968`（7 軌＝1993 CD 形，**前 5 軌＝原盤**）。
+兩張都跑完三種查法、**三法同一 id**，毫秒數與 MB 逐軌相符；兩個 id 不同，**不觸第 646 條**。**c-146 試聽 4/4、封面 4/4。**
+
+**三處紙本誤植**（第 509c 條家族）：Billboard 1962-08-11 把 Smith 的編制寫成「bass and drums」（**實際無貝斯手**）；
+Cash Box 1984-04-28 把《100 Hearts》製作人印成 George Wein（**應為 Gabreal Franklin**）；
+Billboard **連四期**印「PETRUCCIANNI」。
+**MB 的 `BL 85104` 經 Discogs `catno=` 反查回 0 筆**，訂正為 **BT 85104** 成立（第 817 條）。
+
+**給寫作層的兩條**：
+- **本組四位主角有三位在 1985 年 2 月那批重啟貨上同框**——BT 85105《Straight Ahead》第一場鋼琴是 **Les McCann**、
+  第二場風琴是 **Jimmy Smith**（Billboard 1985-02-23 廣告原文亦然）——**但沒有一組共用母帶。**
+- ⚠ **《The Shout》是 McCann 的第二張 LP、第一張現場盤**（PJ-2《Plays the Truth》是 1960-02-04 United Recording 的棚錄）
+  ——**策展層的「現場第二張」寫法會錯。**
+
+**CAA 四張的來源都不是原壓**，本機上傳時建議封面改取 Discogs **12723685／12921521、2454632、2665609、4267514**。
