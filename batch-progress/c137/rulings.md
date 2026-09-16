@@ -298,3 +298,43 @@ Bone & Bari 1958（紙本 1958-01-27 評論）、The Cooker 1958（同期）、J
 **OCR 與目錄文字檔已進 repo 給後續批次共用**：
 `batch-progress/enum/billboard-bn-1957-59-ocr.txt`、`billboard-bn-1959-61-ocr.txt`、
 `jazzdisco-bn-1500.txt`、`jazzdisco-bn-4000.txt`。⚠ **worldradiohistory 缺 1961 年 1–3 月各期。**
+
+## 第 509e 條（主線 2026-09-16，研究層 b 組交件後）：**《Light Foot》改流通名《Light-Foot》——盤面勝過 MB RG title**
+
+第 483 條把盤名定為「照 MB RG title 逐字、變體進 queryAlias，留研究層／主線一次決定」。
+b 組覆核後回報：**原盤盤面、Discogs master 361255、Apple（`appleTitle` 就是「Light-Foot」）、維基條目、
+MB 自己的 2014 數位 release（barcode 602537957811）五邊都有連字號**，只有 MB 的 RG title 沒有。
+這條線的舉證階序（同期紙本／實體盤面 ＞ 廠牌目錄頁 ＞ 資料庫欄位）下，**盤面勝**。
+
+**裁定**：卡片盤名改「Light-Foot」，`queryAlias` 改放「Light Foot」，rgMbid 不動（第 483 條：改流通名不影響 MBID）。
+同步改的檔：`batch-progress/c137/prop-b.json`、`desc-tools/batches/cards/c137-cards.json`、
+`desc-tools/batches/research/c137-b.json`（含 key）、`batch-progress/c137/caa.json`、
+`batch-progress/probe/previews.json`（鍵 `Lou Donaldson|Light Foot` → `Lou Donaldson|Light-Foot`）。
+**為什麼現在改**：上架後盤名進 `seed_cards.json`，雲端沒有權限改——盤名要在上架前定。
+
+## 第 509f 條（同日）：**研究層擋下／修正策展層七處，逐條處置**
+
+1. 《Further Explorations》《Here Comes Louis Smith》**店面實測只有 6 軌可播、就是原盤 6 軌完整對應**
+   （第 508 條寫的「RVG 7 軌、前 6 軌對應」不成立，宣告的第 7 軌沒上架）→ 採信研究層，previews 不動（本來就採這版）。
+2. 《Love for Sale》**第 508 條「Apple 未命中」不成立**：us 回空但 **gb／jp 有 `724725669`（℗1998、6 軌、前 5 軌對原盤逐軌 ≤2 秒）**。
+   探測層其實已經以 `front: "gb"` 收下這筆——**兩邊獨立得到同一個 id，追認**。
+3. 《Jazz Alive!》**Phil Woods 必須寫進正文**（MB 17 筆 release 有 14 筆、Discogs 原壓、Billboard 評論與新片表、Apple 全三人並列；只在後兩軌）。
+4. 《Bottoms Up!》是**三場錄音**（1958-09-16／09-28／1959-02-11），MB 與策展層只有最後一場——正文照三場寫。
+5. 盤名《Light-Foot》→ 第 509e 條。
+6. 《Davis Cup》**年份 1960 是 8 張改判裡唯一沒有同期紙本的一張**（Billboard 1958–60 逐期掃過查無評論；
+   Discogs 原壓與 MB 站 1959，本層依 jazzdisco ＋《Schwann Stereo Record Guide》1966 站 1960）。
+   **裁定：維持 1960**——目錄型來源兩份、且與 BLP 4000 系列相鄰目錄號的出版序一致；異說已進 `yearVerified`，正文不寫確定月份。
+7. 《Here Comes Louis Smith》**錄音年兩說**（jazzdisco 1957-02-04／09 vs 維基 1958）→ 正文避開錄音年，發行年 1958 不受影響。
+
+另追認研究層推翻的外部來源四則：維基說《At the Jazz Corner of the World》兩卷都 1959 發行是錯的
+（Vol. 2／BLP 4016 的 Billboard 評論遲至 **1960-11-14**，卡單取 Vol. 1 的 1959 正確）；
+維基《Blues in Trinity》技術表把 Van Gelder 列錄音師與同條目「錄於倫敦 Decca Studios」自相矛盾，正文不寫；
+Billboard 1959-09-21 說《Great Jazz Standards》用「西岸樂手」與實際編制不符；
+Billboard 1959-03-30 說《Off to the Races》是 Byrd「第一張領銜作」應改寫成「他在 Blue Note 的第一張」。
+
+## 第 509g 條（同日，給後批）：**worldradiohistory 的 Billboard 1961 年 PDF 幾乎沒有文字層**
+
+52 期只有 1961-03-20 與 09-18 兩期可全文搜；1958／59／60 三年正常。
+**1961 之後的年份舉證要走 DownBeat／Cash Box／Discogs 原壓，不要再派代理去掃 1961 的 Billboard PDF。**
+（1958–60 的 205 期文字檔已由 b 組快取在 scratchpad，但 scratchpad 不隨容器存活——
+repo 內的 `batch-progress/enum/billboard-bn-*.txt` 才是可長期重用的那份。）
