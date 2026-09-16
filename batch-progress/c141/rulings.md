@@ -439,3 +439,40 @@ Duke Pearson《Introducing Duke Pearson's Big Band》→ Discogs 原壓 `r228070
 鉤子層 39 筆 QA 全清（hook 加權 22–37、note 307–350），**發行年逐筆比對 39/39 相符**
 （1967×7、1968×24、1969×5、1980×1、1998×1）；夾擠推定三張（Grass Roots 1969、Elegant Soul 1969、
 Ghetto Music 1968）的 note 都寫了「上市月略過」。
+
+## 第 597 條（主線 2026-09-16，§5.6 列舉交件後）：**第 312 條的擔憂大半不成立——真正被濾掉的正典只有 17 張，切成一批 c-147**
+
+列舉層把被濾網擋掉的 **687 個 album release-group** 全部撈回逐筆分 tier
+（`batch-progress/enum/blue-note-comp.json`＋`.md`；MB 全目錄重拉 7,092 release → 2,819 RG，**與 `blue-note.md` 的數字完全相符**）。
+
+**結果比預期小，而且原因是好消息**：第 312 條擔心的「10 吋重組成 12 吋的 Volume 1／2」
+**大部分 MB 根本沒標 Compilation**，早就在 1,812 張純專輯那條線裡了
+（Monk《Genius of Modern Music》Vol. 1／2、Bud Powell《The Amazing Bud Powell》Vol. 2、Cafe Bohemia Vol. 1／2 都在）。
+**分 tier**：`canon` 17／`vault` 7／`realcomp` 396／`va` 264／`unknown` 3。
+
+**主線裁定（依裁定權下放自行決定）**：
+1. **`canon` 17 張全收**——其中 6 張人工確認池中已有（Powell BLP 1503、Brown BLP 1526、
+   Miles《Birth of the Cool》、MJQ《Odds Against Tomorrow》、Grant Green《The Final Comedown》、War《Platinum Jazz》），
+   **實收 11 張**。含第 312 條點名的 Miles《Volume 1》BLP 1501、《Volume 2》BLP 1502、Navarro《Vol. 2》BLP 1532，
+   以及**純粹標錯的 Stanley Turrentine《The Look of Love》BST 84286**（正規錄音室專輯，第 613 條反例）。
+2. **`vault` 7 張收 5、退 2**。**退的是兩張《Alternate Takes》**（Clifford Brown BST 84428、Bud Powell BST 84430）
+   ——**內容是同場次未發表的 take，與池中已有的正盤同場同曲，上架會變成同一張碟的兩張卡**。
+   **收的 5 張是「首發一整場未發表錄音」**：Dexter Gordon《The Other Side of Round Midnight》、
+   Chick Corea《Early Circle》、Kenny Burrell Vol. 3（用 1500 系列保留號 1609）、
+   Jimmy Smith《Cherokee》（保留號 1612）、Hank Mobley Quintet《The Feelin's Good》。
+   **判準：vault 盤收「錄音首度問世」，不收「同一張碟的另一個 take 集」。可逆。**
+3. **`unknown` 3 張全退**：Lenny Bruce《The Carnegie Hall Concert》是口語喜劇、不歸此線；
+   Chico Hamilton 那張 MB 無目錄號、查不出是原始 LP 還是事後合輯（**查不清楚就不收**）；
+   Miles Davis《All Stars Vol. 1》(TYCJ-81008) **與 BLP 1501 是重複 RG，併入 1501 不另收**。
+4. **`realcomp` 396 ＋ `va` 264 不收**（最大的兩群是 1970 年代 BN-LA twofer 28 張與 1990 年後的 CD 企劃系列 365 張）。
+   ⚠ 但 `va` 裡的 **1951《Mellow the Mood》BLP 5001** 形狀其實是原始 10 吋發行、只是掛 VA
+   ——**列在這裡備查，這輪不收。**
+
+**→ §5.6 子批切成 `c-147`，16 張**（a 組 8、b 組 8，依年份＋目錄號排序），
+`slice.json`／`chk-prop.mjs` 已建，`label-lines.mjs` 與 `probe/probe-previews.mjs` 已註冊
+（`scene: Blue Note 目錄補齊（§5.6 合輯正典）`）。
+
+⚠ **第 611 條在這一批又中兩種新形狀**：`inPool` 機器算 22 張，人工逐張核對後
+**3 張是誤判、實際仍缺**（Bechet BLP 7020 對到 BLP 1207、Miles BLP 1502 對到 10 吋 BLP 5022、
+Kenny Burrell Vol. 3 對到 BLP 1543）——**「同名但不同盤的 Volume 碟」是子字串比對的第二種盲區**
+（第一種是群組掛名 vs 個人掛名）。**`realcomp`／`va` 的 inPool 沒逐張核，不可當涵蓋量。**

@@ -127,6 +127,7 @@ export const LINES = {
   c144: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
   c145: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
   c146: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
+  c147: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（§5.6 合輯正典）', b: 'Blue Note 目錄補齊（§5.6 合輯正典）' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
