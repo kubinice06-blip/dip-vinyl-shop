@@ -215,3 +215,10 @@ c-131 第 359 條「灰色再發廠但曲目逐軌相符可採、發行資訊不
 Billboard 評語無觀眾字樣）——**hook 層不得寫成現場**；卡單 `releaseType` 照 MB 不動（第 397 條）。
 擋下策展層 9 處（Thad Jones Vol.3 陣容沒有 Burrell、Burrell 1543 是四個來源含現場一軌、Chambers' Music 原 LP 沒有 Pepper Adams、
 Kenny Drew 原 LP 9 軌非 8 軌……）與無出處「唯一／第一」4 句，全在 notes。
+
+## 第 489a 條（主線 2026-09-16，hook 層交件後）：**Jimmy Smith 兩張年份再改**
+
+《The Sounds of Jimmy Smith》1957→**1959**（同期紙本評論＋目錄＋官方再發註記三個獨立來源）、
+《Jimmy Smith at the Organ, Volume 1》1957→**1958**（1958 年 2 月）。**兩張的 1957 都是錄音年。**
+**卡單已改**，hook 與 note 本來就兩種年都寫清楚了。
+與第 471／489 條同一形狀——**這批 43 張裡年份被資料庫填成錄音年的累計 11 張。**
