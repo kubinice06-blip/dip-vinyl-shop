@@ -240,3 +240,44 @@ c-143 a 逐張查過：**1970–72 段的 Blue Note（本組 21 張）沒有任�
 兩刊 1970 年代 PDF 都有文字層，`pymupdf` 直接讀；八路並行跑 418 期約 5 分鐘。
 
 **紙本至此的覆蓋：Billboard 1955–1975-09、Cash Box 1960-11–1975-09 ＋ 1984-09–1985-06。1975-10 之後還沒有人掃。**
+
+## 2026-09-16 八度追加（c-144 a 掃的，**命中頁不是全文；1975 Q4 到 1976 年底**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1975q4-1976-ocr.txt`（9.0 MB） | Billboard | **1975-10-04 → 1976-12-25，65 期中 64 期的命中頁** | c-144 a 掃；缺 **1976-07-03**（三種檔名形狀各試兩輪皆 404） |
+| `cashbox-bn-1975q4-1976-ocr.txt`（5.1 MB） | Cash Box | **1975-10-04 → 1976-12-25，65 期中 64 期的命中頁** | c-144 a 掃；缺 **1976-07-03**（兩種形狀各試兩輪皆 404） |
+
+⚠ 關鍵字＝c-144 a 的 **21 個目錄號**（BN-LA250／252／257／260／369／370／398／406／425／457／459／460／462／463／506／519／520／534／541／581／584，
+含 `BN-LA`／`BNLA`／`BN LA` 三種前綴通配與 8 軌帶號 `BN-EA`）＋**21 個盤名**＋**17 個人名**＋廠牌詞 `blue note`。
+**「blue note」是通配關鍵字，1975-10→1976-12 任何提到 Blue Note 的頁都在裡面**——c-144 b 的 1976 年份直接可用，
+**查 1977 以後或非 Blue Note 的碟仍須重抓。**
+每期以 `######## BB-YYYY-MM-DD pages=N`／`######## CB-YYYY-MM-DD pages=N` 分隔，頁內以 `===== PAGE n =====` 分隔，
+**頁內文字已先把換行摺成空白**（第 636 條），可直接跑跨行片語的正則。
+
+### ⚠ 檔名形狀（c-144 a 逐期實測，**第 701 條的亂象到此結束**）
+
+| 年 | Billboard | Cash Box |
+|---|---|---|
+| **1975 Q4** | `Billboard%20YYYY-MM-DD.pdf`（單一形狀） | `CB-YYYY-MM-DD.pdf`（單一形狀） |
+| **1976 全年** | `Billboard%20YYYY-MM-DD.pdf`（單一形狀） | `CB-YYYY-MM-DD.pdf`（單一形狀） |
+
+抓取器仍然對 Billboard 試三種（`Billboard%20`／`BB-`／`Billboard-`）、對 Cash Box 試兩種（`CB-`／`Cash-Box-`），
+**實測 130 期沒有一期落到備援形狀上**——第 701 條「同一年裡會換形狀」的情況**只發生在 1971–75**。
+**1976-07-03 兩刊同時、所有形狀皆 404，重試過**，判為**該週兩刊都沒有出刊**（美國建國兩百週年的國慶週末），不是檔名問題。
+四路並行跑 130 期約 20 分鐘（每期 10–15 MB）。
+
+### c-144 a 立的兩條（第 752／753 條）
+
+1. **「Blue Note Re-Issue Series」（1975-02 起的 `-H2` 雙唱片）有兩種完全不同的內容物**：
+   **同一波九套裡，一部分是「從未發行的庫存首發」（Jacknife／One for One／Involution），一部分才是「舊盤重編」（Aladdin Sessions／In Transition／Pacific Standard Time）。**
+   → **`-H2` 一律回查當期廠牌廣告文案：看到「previously unreleased」是庫存首發（`releaseType` 維持 Album、`year` 取首發年）；
+   看到「brought together」「complete … in one package」「long unavailable」才照第 312 條退進 §5.6。不看目錄號尾碼、不看系列名、不看軌數。**
+   四份可用的廠牌檔期文件：**Billboard 1975-02-22**（第一波九套，2 月 15 日）、**Billboard 1975-05-31**（第二波九套，**6 月 15 日**，點名 Andrew Hill、Jackie McLean）、
+   **Cash Box 1975-06-07**（同一波的逐張說明）、**Billboard 1976-05-22**（「**July has been declared Blue Note Month**」，點名 Elvin Jones、Monk、Art Pepper、McCoy Tyner）。
+2. **BN-LA 的號是一次配一批、上市卻可能分兩年**：**BN-LA460-H2《Cosmos》（McCoy Tyner）jazzdisco 記 1975，實際 1976-07**
+   （Discogs 五筆原壓全 1976、維基引 Billboard、**Billboard 1976-07-24 p14「Pianists Monk And Tyner Pace Blue Note Reissues」評介**）——
+   同批的 LA451／453／456／457／458／459／461 都在 1975-06-15 出，**只有 LA460 掉隊十三個月**。
+   → **以「哪一波檔期」定年，不要以「哪一段號」定年**（第 663 條在 1975–76 段的新形狀：這次不是年份整群偏移，是同一次配號的一批貨分兩年出）。
+
+**紙本至此的覆蓋：Billboard 1955–1976-12、Cash Box 1960-11–1976-12 ＋ 1984-09–1985-06。1977-01 之後還沒有人掃。**
