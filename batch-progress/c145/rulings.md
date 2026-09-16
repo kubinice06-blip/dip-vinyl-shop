@@ -331,3 +331,306 @@ c-144 b 第 783 條把 1979 年「Back to Blue Note」十張釘死（Cash Box 19
   7. **b 組已預約的互指**：`Bobby Hutcherson —《Medina》`↔a 組《Spiral》；`Jimmy Smith —《On the Sunny Side》`↔a 組《Confirmation》；
      `Grant Green —《Remembering》《Gooden's Corner》`↔a 組《Nigeria》《Oleo》；`Andrew Hill —《Dance With Death》`↔a 組《Spiral》（Hill 是 1965 那場的鋼琴）；
      `Leo Parker —《Rollin' With Leo》`↔a 組《Mr. Natural》（同一則 1980-11-01 廣告）；`Larry Young —《Mother Ship》`↔a 組《In Memory Of》（同一則 1980-04-26 廣告）。
+
+## 第 840 條（c-145 b 組交件）：**22 筆 → 收 21、退 1；年份改判 2 張、維持 enum 值但有相反證據 2 張；撞陳列 6 張；紙本沿用 a 組已掃的 1980–81**
+
+- **收 21 張、16 位**（Bobby Hutcherson 3、Earl Klugh 2、Jimmy Smith 2、Grant Green 2，其餘 12 位各 1）。
+- **退 1**（Art Pepper《Omega Alpha》，第 841 條）。**第 315 條：prop 21 ＋ 退表 1 ＝ 22 ✓。**
+- **年份改判 2 張**（第 846 條）：**Grant Green《Remembering》1981 → 1980**、**Grant Green《Gooden's Corner》1981 → 1979**
+  ——兩張列舉檔釘的都是 **1981 年的 GXK 換號再發**，首發是 King 的 GXF 號（**執行 a 組第 822 條判準 1**）。
+- **年份維持 enum 值但有相反紙本 2 張**（第 847 條）：《Vertigo》《Medina》（Cash Box 的 1981 年第一季發片表把兩張都排在一月）。
+- **`releaseType`**：**21 張全是 Album，合輯 0**；**現場 2 張**（Jimmy Smith《Cool Blues》、Jean-Luc Ponty《Live at Donte's》，兩張 MB 的 `secondary-types` 都有 Live ✓）；
+  **庫存／延遲首發 17 張**、**同期新作 4 張**（Klugh 2、Ronnie Laws 1、以及沒有一張走 §5.6）。
+- **`label` 改他廠 3 張**（第 849 條）：Earl Klugh 兩張（Liberty）、Ronnie Laws 一張（United Artists）。
+- **掛名**：**新掛名 0 位**（16 位全部沿用池中既有字串）、**群組字串收攏 1 張**（Africaine，第 848 條）、**自行合併 0、新造分裂 0**。
+- **CAA 20/22 有圖**（退掉的那張不計則 19/21），**2 張 RG 層 404 零圖**（Congo Lament、The Creeper）；**店面命中 14/21**（第 851 條）。
+- **紙本**：**沒有自抓**——a 組已把 1980-01-05→1981-12-26 兩刊掃完並歸檔，**本層覆核過關鍵字確實涵蓋 b 組 22 筆的全部盤名、人名與目錄號**（第 852 條）。
+- `why` 均長 **547**／`risk` **980**／`mbNote` **996** 字元（`c141/prop-b` 為 556／933／784）。
+
+## 第 841 條（同批）：**退表 1 筆——Art Pepper《Omega Alpha》(LT-1064, 1981)：LT 系列裡真正的舊料重編**
+
+| 盤 | rgMbid | 退的理由 | 證據 |
+|---|---|---|---|
+| **Art Pepper —《Omega Alpha》** | 756a7f13-63cb-4457-b635-b312a270c716 | **舊料重編（第 312 條），不是庫存首發** | **Discogs 4021846 的 notes 逐軌交代出處：「Track B1 previously issued on [m843544]; all others previously issued on [m583714]」**——`m583714`＝**Art Pepper Quartet《The Art of Pepper》（Omega Records, 1957）**、`m843544`＝**《The Art of Pepper Vol. II》（同廠同年）**。七軌全部先前已發行。 |
+
+**查證過程（不是只看一條 notes）**：
+1. **jazzdisco LT-1064 條**：全部七軌出自 **1957-04-01 Audio Arts Studio, Hollywood** 同一場，matrix 欄是 **雙號 `AA2872-1 | IM-3980`** 形——`IM-` 是 **Intro／Aladdin 的母帶號**，**母帶號被配出去就代表當年排過發行**。
+2. **該頁七軌沒有一軌標 `(alternate take)`**——jazzdisco 在 1500／4000／LT 各系列都會標，**這裡沒標，等於不是未發行的另一 take**。
+3. **Discogs 兩個 master 的曲目與本盤逐首對上**（Too Close for Comfort／Webb City／Surfride／Body and Soul／Begin the Beguine 在 Vol.1；Fascinatin' Rhythm 在 Vol.II）。
+4. **池中已有同一位領班的 Aladdin 期兩張**（seed《Modern Art》＝Intro ILP-606，1956-12-28／1957-01-14 兩場；c-137《The Return of Art Pepper》）——**本盤那一場（4 月 1 日）與這兩張不同場，但它本身就是 1957 年 Omega 那兩張的重編**。
+
+→ **不走 §5.6**：§5.6 要的是「歷史重要性 ＋ 可追溯證據」，**一張 1981 年把 1957 年兩張 Omega LP 重新排一遍、換個新名字的盤不符合**；
+要收的是 **《The Art of Pepper》（Omega, 1957）本身**，那不在本批清單上。**可逆：日後若決定收 Omega 原盤，本卡的查證直接可用。**
+
+## 第 842 條（同批，**收窄第 783 條**）：**LT 系列不是整段 previously-unreleased——至少三個號是舊料重編，判定一律回到逐張文案**
+
+c-144 b 第 783 條寫「**LT 系列（1979 起）＝Back to Blue Note 企劃，整段是庫存首發**」。**本層在同一份 jazzdisco LT 全頁上找到三個反例**：
+
+| 號 | 盤 | jazzdisco／Discogs 原文 |
+|---|---|---|
+| **LT-1064** | Art Pepper《Omega Alpha》 | Discogs：七軌全部 previously issued（Omega《The Art of Pepper》Vol.1／II，1957） |
+| **LT-1100** | Bob Brookmeyer & Bill Evans《As Time Goes By》 | **jazzdisco 直接寫「originally released on *The Ivory Hunters*, United Artists UAL 3044 in 1959」** |
+| **LT-1101** | Gerry Mulligan《Freeway》 | 1952 年 Pacific Jazz 母帶（PJ-206／209／218–223），**那批是 Mulligan 四重奏最著名的已發行單曲群** |
+
+→ **第 783 條要改成**：「**1979–81 年的 LT 系列以庫存首發為主，但混有舊料重編；`releaseType` 與 `year` 一律逐張讀文案（Discogs release notes 的 previously unissued／previously issued 一行、jazzdisco 的 `originally released on…` 一行），不可依系列名整段推定。**」
+⚠ **這與第 782 條是同一條判準的兩個方向**：782 擋的是「標題寫 reissue、內容是首發」，**本條擋的是「系列被認定是首發、內容卻是 reissue」**。**兩個方向都只靠逐張文案。**
+⚠ **本組 21 張收的碟逐張查過這一行**：Discogs release notes 明寫 previously unissued／released here for the first time 的有 **9 張**（Vertigo／Medina／Patterns／Thinking of Home／Mother Ship／Cool Blues／Infinity／The Creeper／Africaine／Congo Lament／Live at Donte's，計 11 張），
+**《On the Sunny Side》是唯一的中間狀態**：「**A2 previously issued on Blue Note 45-1769；all other tunes previously unissued**」——**八軌裡一軌先出過單曲，仍判 Album**（單曲先發不改變「首度成盤」的性質），但寫進該卡 `risk`。
+
+## 第 843 條（同批，新立）：**`LT-1000` 號段是 Liberty／UA 集團 1980 年起的共用號段，不是 Blue Note 專屬——光看 `LT-` 判不出廠牌**
+
+本層在 1980–81 兩刊的廣告與榜列裡逐號查過，同一條號段上交錯著四家廠牌：
+
+| 號 | 盤 | 廠牌 | 出處 |
+|---|---|---|---|
+| LT-1001 | Ronnie Laws《Every Generation》 | **United Artists** | BB 1980-01-26 廣告、BB／CB 榜列 |
+| LT-1019／1025／1036／1042 | Gallagher／Dayton／Richard Leigh／The Dirt Band | **United Artists／Liberty** | BB 1980-02-23、05-17 廣告；CB 1980-09-27 榜 |
+| LT-1030／1038／1044／1045／1054／1076／1081／1082／1085／1086／1088／1089／1091／1092／1096／1102 | Blue Note Classic 的庫存盤 | **Blue Note** | 本批與 a 批 |
+| LT-1063／1074／1079／1090／1093／1097／1104／1105／1107／1110 | Eloise Laws／Billie Jo Spears／Earl Klugh／The Vapors／Cristy Lane／Bill Medley／Classix Nouveaux／Powder Blues／Robbie Patton／Freddie Hubbard | **Liberty／EMI-America** | BB 1980-11-01、1981-04-18、08-15 廣告 |
+
+→ **判準**：**`LT-` 前綴只代表 Liberty/United 集團 1980 年起的統一編號，不代表 Blue Note**；
+**Blue Note 的那些在盤面與廣告上另標「Blue Note CLASSIC」**——**要靠這個副標或廠牌欄分，不要靠號**。
+⚠ **另一段**：**Liberty 1981 年另開 `LT-51xxx` 段**（本組 Earl Klugh《Crazy for You》＝LT-51113），**與 LT-1000 段無關**。
+⚠ **Discogs `catno=LT-1001` 反查回 45 筆，其中十一筆是 Bowmar／Peerless／La Trebor 等完全無關的廠牌同號盤**——**查目錄號一律連廠牌帶盤名**（第 509c 條的延伸）。
+
+## 第 844 條（同批，**第 782 條在 1980 年這一波的續證**）：**廠牌自己的廣告同時用了「unreleased masters」與「RE ISSUE SERIES」兩個相反的字**
+
+本層取得 1980 年那一波的兩份廠牌文件，**兩份出自同一家公司、相隔十二週，用詞完全相反**：
+
+1. **Billboard 1980-03-08 p34，EMI-America／United Artists 全版廣告**：十二張逐張列名＋「**ourteen unreleased masters**」（OCR 掉了字首 F，原文為 Fourteen unreleased masters）——
+   **JACKIE McLEAN Consequence／ANDREW HILL Dance With Death／GRANT GREEN Solid／LOU DONALDSON Midnight Sun／WAYNE SHORTER The Soothsayer／STANLEY TURRENTINE New Time Shuffle／GRANT GREEN Nigeria／HANK MOBLEY A Slice Of The Top／JIMMY SMITH Confirmation／LEE MORGAN Taru／BOBBY HUTCHERSON Spiral／DEXTER GORDON Clubhouse**，每一張下面都印「**b Blue Note CLASSIC**」。
+2. **Cash Box 1980-05-31 p47，Blue Note 半版廣告**：抬頭卻是「**THE BLUE NOTE RE ISSUE SERIES**」，推的是 **Bobby Hutcherson／Hank Mobley／Jazz Crusaders LT-1045／LT-1046** ——
+   **但那三張的內容物全是首發**（Discogs：Patterns／Thinking of Home 皆「released here for the first time」）。
+
+→ **第 782 條在 1980 年這一波再中一次，而且這次連廠牌自己的兩份文件都互相打架。**
+**判準不變：讀逐張文案（哪幾軌、什麼時候錄的、有沒有發過），不讀廣告抬頭、不讀系列名。**
+⚠ **附帶用途**：那則 3 月廣告的十二張名單**把 1979 年「Back to Blue Note」十張（第 783 條）與 1980 年的新一波接了起來**——
+**《Dance With Death》《Nigeria》《Taru》《Midnight Sun》是 1980 年這一波的新增**，其餘八張是 1979 年那十張的延續廣告。**這一則廣告只能算一份來源，不是十二份**（第 509c／614 條）。
+
+## 第 845 條（同批，**本批最重要的一條**）：**六張卡的母帶與池中既有正盤同場——撞的是陳列不是碟，逐軌 take 比對全部零重複**
+
+派工信預警的形狀（c-147 第 738 條）在本組出現 **六次**。**方法：以 jazzdisco 的錄音日 ＋ take 號，逐軌比對本盤與池中正盤。**
+
+| 本批的卡 | 同場的池中正盤 | 錄音日 | 逐軌比對結果 |
+|---|---|---|---|
+| **Kenny Burrell《Swingin'》** | **`Kenny Burrell`（BLP 1543，c-136）** | 1956-03-12 Audio-Video | 本盤 tk.42；正盤 tk.10／13／27／43／64 — **零重複** |
+| 同上 | **《Blue Lights, Volume 1／2》（BLP 1596／1597，c-137 兩卡）** | 1958-05-14 Manhattan Towers | 本盤 tk.1；正盤 tk.2／8／11／14／4／9／10／12 — **零重複** |
+| 同上 | **《On View at the Five Spot Cafe》（BLP 4021，c-138）** | 1959-08-25 Five Spot（同一晚） | 本盤 tk.3／8／14（第 1／2／3 場）；正盤 tk.10／11／15／19／22（第 2／3／4／5 場）— **零重複，但同一晚同一批客人** |
+| **Jackie McLean《Vertigo》** | **《New Soil》（BLP 4013，seed）** | 1959-05-02 | 本盤只有〈Formidable〉tk.5；**且該軌 1988 年被放進《New Soil》CD 當 bonus track** — **同一軌在兩張碟上，是本批唯一的真重複** |
+| 同上 | **c-144《The Jackie McLean Quintet》／《Hipnosis》** | 1962-06-14（BLP 4116） | **只在 2000 年 Connoisseur CD（11 軌）上重疊，1980 年原盤 6 軌不含** |
+| **Jimmy Smith《On the Sunny Side》** | **《House Party》（BLP 4002）／《The Sermon!》（BLP 4011）**（皆 seed）＋**a 組《Confirmation》(LT-992)** | 1957-08-25 | 本盤 tk.6 — **零重複** |
+| 同上 | **《Home Cookin'》（BLP 4050，seed）** | 1958-07-15／1959-06-16 | 本盤 tk.2／3／7／10／14／18 — **零重複** |
+| 同上 | **《Midnight Special》（BLP 4078）＋《Back at the Chicken Shack》（BLP 4117）**（皆 seed，同一天） | 1960-04-25 | 本盤 tk.10 — **零重複** |
+| **Bobby Hutcherson《Medina》** | **a 組《Spiral》(LT-996)** | 1969-08-11 vs 1965／1968 | 錄音無關；**但 1998 年的 CD（11 軌）把兩張併成一張《Medina & Spiral》，Apple 上就是這個形** |
+| **Art Blakey and the Jazz Messengers《Africaine》** | **《The Big Beat》（BLP 4029，seed）** | 1959-11-10 vs 1960-03-06 | **不同場，但〈Lester Left Town〉是同一首曲子的兩次錄音** — **撞的是曲目不是母帶** |
+| **Ike Quebec《Congo Lament》** | （池中無，但）**《Easy Living》BST 84103（1987）** | 1962-01-20 | **1987 年那張是同一天的全集，本盤五軌全在裡面** — **日後收 Easy Living 必須互指** |
+
+→ **三條給寫作層的硬規則**：
+1. **正文一律寫明是哪一天、哪一場、哪一個 take 群**，不得寫成「未發表的新錄音」。
+2. **《Vertigo》的〈Formidable〉是唯一真的在兩張碟上的一軌**——那一軌的正文必須寫清楚它後來去了《New Soil》的 CD。
+3. **《Swingin'》與《On the Sunny Side》是「一張卡撞三到五張池中卡」的極端例**，上架後的相似推薦會互相打架，**兩卡的 `risk` 都已列全名單**。
+
+## 第 846 條（同批）：**年份改判 2 張：GXK 是換號再發，GXF 才是首發——並訂正 a 組第 824 條對《Remembering》的兩處記述**
+
+| 盤 | enum 年 | 改判 | 依據 |
+|---|---|---|---|
+| **Grant Green《Remembering》** | 1981（GXK 8167） | **1980**（GXF 3071） | Discogs 3936998 notes「**Renumbered issue of [r6021116] (GXF 3071)**」＋format 標 Reissue；Discogs 6021116＝1980；jazzdisco GXF-3071＝1980「also released on GXK-8167 in 1981」；**維基 infobox 亦作 1980／GXF 3071** |
+| **Grant Green《Gooden's Corner》** | 1981（GXK 8168） | **1979**（GXF 3058） | Discogs 4414343 notes「**Renumbered issue of [r4411224] (GXF 3058)**」＋format 標 Reissue、℗ 1981；Discogs 4411224＝1979、**盤面 ℗ 1979 Jasrac**；jazzdisco GXF-3058＝1979 |
+
+**兩張都是執行 a 組第 822 條判準 1（`year` 取 GXF／GP 的年、不取 GXK 的年）**，本層只是把它套到 b 組清單上。
+⚠ **rgMbid 都不動**：MB 這兩個 RG 底下**只建了 1981 年的 GXK 再發、沒建 GXF 首發**，
+所以 **MB 的 `first-release-date` 在這兩張上系統性晚一到兩年**——**後批凡是遇到 `GXK-81xx` 釘在 RG 上的，一律先回 jazzdisco／Discogs 查對應的 GXF 號。**
+⚠ **維基在《Gooden's Corner》上錯一次**：條目寫 1980，**但它自己引的 jazzdisco 條寫 1979**（單一來源抄錯年，第 470／550 條形狀）。
+⚠ **訂正 a 組第 824 條第 1 點兩處**：
+1. **《Remembering》的錄音日是 1961-08-29，不是該條寫的 1961-11-26**（jazzdisco GXF-3071、Discogs 6021116 notes、維基 infobox 三邊一致）。
+2. **《Remembering》不屬於「Grant Green ＋ Sonny Clark 四重奏」那條線**——**本盤是 Green／Wilbur Ware／Al Harewood 的三重奏，Sonny Clark 不在場**。
+   那條線是《Gooden's Corner》（1961-12-23）／《Nigeria》（1962-01-13）／《Oleo》（1962-01-31）＋ 池中 seed《Solid》以外的幾場，**四場之說要扣掉 Remembering**。
+
+## 第 847 條（同批）：**《Vertigo》《Medina》維持 1980——「發片表是計畫、不是出貨」，但相反證據寫進卡**
+
+**Cash Box 1980-12-27 p17 的 1981 年第一季發片表**（EMIA/Liberty 欄）把 **「Jackie McLeon (Blue Note)」與「Hutcherson (Blue Note)」排在一月**；
+**但同一份刊物 1980-09-27 p11 的 1980 年第四季表已經把「Bobby Hutcherson (Blue Note)」排在十一月**——**同一張盤被排了兩次。**
+
+| 支持 1980 | 支持 1981-01 |
+|---|---|
+| MB frd 1980（Vertigo 甚至是 1980-01-01）、Discogs 美國原壓與卡帶皆 1980、jazzdisco 1980、維基 1980、**Vertigo 盤面 ℗ 1980 Liberty Records** | Cash Box 1980-12-27 的第一季表；**LT 號序**（LT-1081／1082＝1980-11，LT-1088／1089＝1981-02，1085／1086 夾在中間） |
+
+→ **判：維持 1980**（enum 值），**一月上市說寫進兩張卡的 `risk`**。理由三條：
+1. **發片表是廠牌給貿易刊的計畫清單，同一張盤在兩期裡被排了兩次，本身就證明它會滑動**；第 612 條講的「檔期廣告最硬」指的是**已經印出目錄號與售價的上市廣告**，不是季度預告表。
+2. **℗ 年與五個資料來源同向**。
+3. **可逆**（改的是卡單值），且**兩張的相反證據已完整寫在卡上**，日後要翻不必重查。
+⚠ **給後批**：**LT-1083～1087 那一段（1980 年底／1981 年初）是這條線上年份最鬆的一格**，收到那幾號時請直接引本條。
+
+## 第 848 條（同批）：**掛名——新掛名 0 位；群組字串收攏 1 張；Ponty 的 U+2010 連字號**
+
+| MB artist-credit | 卡上掛名 | 依據 |
+|---|---|---|
+| **`Art Blakey & The Jazz Messengers`**（209ddf15 **Group** US 1954） | **`Art Blakey and the Jazz Messengers`**（**收攏成池中多數**） | 池中 **`and the` 30 列**（seed 6 ＋ c-136～c-142 二十四）vs **`& The` 5 列**（全在 seed）——第 307 條取多數，且與 c-136～c-142 七批一致。**兩個字串在 `chk-prop` 摺成同一個鍵（`&`→`and`），不影響撞卡偵測。不合併池中既有的另一個字串** |
+| **`Jean‐Luc Ponty`（U+2010 連字號）**（44cd4e2e Person FR） | **`Jean-Luc Ponty`（ASCII `-`）** | 池中 c-142《King Kong》既有字串；**`chk-prop` 會擋非 ASCII 連字號**（c-110 CCCP 先例） |
+| 其餘 19 張 | **全部沿用池中既有字串** | Kenny Burrell／Bobby Hutcherson／Andrew Hill／Earl Klugh／Hank Mobley／Jackie McLean／Jimmy Smith／Larry Young／Ronnie Laws／Leo Parker／Lee Morgan／Donald Byrd／Grant Green |
+
+⚠ **`Earl Klugh` 是 c-144 第 784 條新立的字串，池中 6 列全在尚未上傳的 c-144 批次**——本組兩張沿用，**不是新掛名，但上線順序要排在 c-144 之後**。
+⚠ **同名撞擊核過的兩位**：`Jimmy Smith`（MB 有多個同名，本人＝4f8a0d9b Person US）、`Larry Young`（81971abd Person US）——**核 type／area／life-span，不看 score**。
+⚠ **`Art Blakey` 的第三個字串**（池中 13 列的純 `Art Blakey`，c-144《Live Messengers》用的就是它）**本卡不用**：本盤 MB credit 是 Group 實體，**不是 c-144 那種「Person 上掛 credited-as」的情形**（第 611 條第一種盲區在這裡沒有中）。
+
+## 第 849 條（同批）：**`label` 改他廠 3 張——「Blue Note 目錄裡的非 Blue Note 盤」在 1980–81 佔了七分之一**
+
+| 卡 | 列舉檔的 note | 覆核結果 | 原廠與原號 |
+|---|---|---|---|
+| Earl Klugh《Late Night Guitar》 | 「BN 首發 1999，原盤 1980 可能他廠」 | **屬實** | **Liberty LT-1079**（BB 1980-11-15 目錄頁「LP Liberty LT1079 $7.98」）；Blue Note 版＝1999 US CD |
+| Earl Klugh《Crazy for You》 | 「BN 首發 1995，原盤 1981 可能他廠」 | **屬實** | **Liberty LT-51113**（BB 1981-11-07 評介、11-14／21 榜列）；Blue Note 版＝1995 NL CD |
+| Ronnie Laws《Every Generation》 | 「BN 首發 2005，原盤 1980 可能他廠」 | **屬實** | **United Artists LT-1001**（BB 1980-01-26 廣告＋兩刊全年榜列）；Blue Note 版＝2005 CD |
+
+→ **三張的 `year` 都取原廠首發年、`label` 寫原廠、Blue Note 版年份註在 `label` 欄尾與 `risk`**（簡報 §1.3）。
+⚠ **維基在《Late Night Guitar》上把 label 欄寫成 Blue Note**——那是 1999 年 CD 的廠牌，**infobox 的 label 欄在再發盤上不可信**。
+⚠ **這三張都不是「Blue Note 誤收」**：1980 年的 Blue Note 與 Liberty／UA 同屬 EMI 旗下同一個發行公司，**列舉檔把它們掃進來是因為 MB 的 Blue Note 再發 release**，**卡上要呈現的是原盤。**
+
+## 第 850 條（同批）：**資料庫與紙本的錯誤清單（22 筆裡查出 24 處）**
+
+**MB**：
+- **漏建首發盤 2 張**（本批最嚴重）：**GXF 3071《Remembering》與 GXF 3058《Gooden's Corner》的首發 release 一個都沒建**，RG 底下只有 1981 年的 GXK 再發 → **frd 直接晚一到兩年**（第 846 條）。
+- **發行日抄成錄音日 1 處**：**《Remembering》release 1735379e 的 date ＝ 1981-08-29**，**月日與錄音日 1961-08-29 完全相同**（新錯誤型）。
+- **欄位缺漏 5 處**：《Crazy for You》3f3982c7 **date 空**；《Live at Donte's》6608d9a5 **label-info 整個空**；《Medina》4ecd7df0 **catno 登成「[none]」**；《Live at Donte's》原盤四軌 **length 全空**；《Vertigo》6b9108cc **把 11 軌的數位版掛 1980-01-01**。
+- **漏建同年他國壓片與載體 13 張以上**：Klugh 兩張（加／菲／新馬港／馬來西亞／墨／巴拿馬／印尼／西班牙《Loco Por Ti》）、Ronnie Laws（加／菲）、Thinking of Home（2009 再壓＋TOCJ-50288）、Infinity（TOCJ-1627）、The Creeper（2017 再壓）、Africaine（TOCJ-50299＋2009 再壓）、Congo Lament（4LT-1089 卡帶）、On the Sunny Side（4LT-1092＋TOCJ-50301）。
+- **catno 寫法不一致 1 處**：《Remembering》MB 作無空格 `GXK8167`，《Gooden's Corner》作有空格 `GXK 8168`。
+
+**jazzdisco**（第 470 條：年份欄在這一段很準，其他欄照樣錯）：
+- **人名錯 1 處**：**《Mother Ship》的次中音印成「Herbert Mogan」，正確是 Herbert Morgan**。
+- **曲名錯 2 處**：《Remembering》〈**If Had You**〉（漏 I）；《Congo Lament》〈Que's **Pill**〉（盤面是複數 Pills）。
+- **曲序用 take 序而非盤面序 4 處**：《Mother Ship》《Gooden's Corner》《Africaine》《Inner Glow》——**四張都要以 MB＋Discogs 的盤面序為準**。
+- **年份欄 0 錯**：本組 21 張逐張對過，**jazzdisco 的 LT 與 Toshiba／King 兩頁一張都沒錯**（含被維基推翻的《Gooden's Corner》1979）。
+
+**維基**：
+- **年份錯 1 處**：《Gooden's Corner》記 1980（實際 1979，第 846 條）。
+- **infobox 與正文自打架 1 處**：**《Live at Donte's》infobox 的 released＝1969、label＝Pacific Jazz，正文卻寫「original release was on vinyl by Blue Note…released in vinyl in 1981」**。
+- **把庫存首發寫成 compilation 1 處**：《Swingin'》正文「is a 1980 compilation album」（第 845 條已覆核為未發行 take 的首發）。
+- **錄音日錯 1 處**：《Swingin'》infobox 的 Five Spot 那晚記 August 26（jazzdisco 與 Discogs 皆 25）。
+- **label 欄抄再發廠 1 處**：《Late Night Guitar》寫 Blue Note（原廠 Liberty）。
+- **條目不存在 3 處**：`Mother Ship (Larry Young album)`、`On the Sunny Side (Jimmy Smith album)`、`Omega Alpha` **全部沒有條目**；`On the Sunny Side (album)` 與 `Live at Donte's` 是**消歧義頁**，`Congo Lament` **轉址到《Easy Living》**——**寫作層引用前一定要看轉到哪裡**（c-144 第 787 條 `Phantazia` 陷阱的第三、四例）。
+
+**Discogs**：
+- **年份群體偏移 1 處**：《Late Night Guitar》有三筆美國壓標 1981（Masterdisk 刻版），**其餘同號原壓全 1980**。
+- **format 欄 0 錯**（本組 21 張逐張看過，**沒有一張被誤標 Compilation**——與 c-144《Hipnosis》那次相反）。
+
+**紙本**（第 509c 條）：
+- **Billboard 1981-02-21 把 LT 1088 印成「Blue Note L? 1088」、$7.98 印成「57 98」**（同一頁的 LT1089 也印成「57.98」）。
+- **Billboard 1980-11-01 的 Liberty 廣告把 LT-1079 那格的廠牌字樣印成「L?AJ LMERTY」**；**1980-12-13 把 KLUGH 印成「KLLGH」**。
+- **Billboard 1980-02-16／03-08／03-29 三期把 United Artists 印成「United Mists」**（連續三週同一錯）。
+- **Cash Box 1980-12-27 把 Jackie McLean 印成「Jackie McLeon」**。
+
+## 第 851 條（同批）：**店面與封面觀察（第 254 條，只寫觀察不寫結論）**
+
+- **CAA 20/22 有圖**（退掉的《Omega Alpha》RG 層 1 圖也計入），**2 張 RG 層 HTTP 404、零圖**：**Ike Quebec《Congo Lament》、Donald Byrd《The Creeper》**（皆 `redirect: 'follow'` ＋重試三次確認）——**兩張都建議取 Discogs 美國原壓條目（3357862／1211006）**。
+- **20 張有圖的裡面，15 張的來源是美國原壓、3 張是日本原壓**（Swingin' GXF 3070／Inner Glow GXF 3073 是首發；**Remembering GXK8167／Gooden's Corner GXK 8168 是 1981 年的換號再發，封面與腰帶可能與 GXF 首發不同**），
+  **2 張不是原壓**：**《Infinity》→1998 年美國 CD**、**《Vertigo》→XW 數位版**。
+- **Apple us `search` 一種查法 21 張命中 14 張。零命中 7 張**：**Kenny Burrell《Swingin'》／Bobby Hutcherson《Inner Glow》／Ike Quebec《Congo Lament》／Jean-Luc Ponty《Live at Donte's》／Grant Green《Remembering》／Jimmy Smith《On the Sunny Side》（只回一首 2012 年的同名單曲）／Art Pepper《Omega Alpha》（已退）**
+  ——**零命中的七張裡有四張是日本盤或只發過一版的庫存盤**，與 a 組第 819 條的分布一致。
+- **命中的 14 張裡，8 張軌數等於原盤**（Late Night Guitar 13／Thinking of Home 5／Mother Ship 5／Every Generation 8／Rollin' With Leo 8／Crazy for You 8／Infinity 5／The Creeper 7／Gooden's Corner 6／Africaine 6），
+  **4 張回的是加了 bonus 的 CD 形**（Dance With Death 7／Patterns 7／Vertigo 11／Cool Blues 8），**1 張回的是兩張碟的合併版**（**《Medina》→「Medina & Spiral」11 軌**）。
+- ⚠ **`releaseDate` 只有 2 張與紙本對得上**（第 484 條在本組再中一次）：**《Crazy for You》1981-12-01**（評介 1981-11-07，差一個月）與 **《Late Night Guitar》1980-01-01**（年頭佔位但年份對）。
+  **其餘印的多半是錄音日**：Dance With Death 1968-10-11、Thinking of Home 1970-07-31、The Creeper 1967-10-05、Gooden's Corner 1961-12-23、Rollin' With Leo 1961-01-01、Cool Blues 1958-01-01、Vertigo 1963-01-01。
+  **一張印錯年**：**《Africaine》1979-01-01**（實際 1981），**而且掛名印成 `Art Blakey` 不是團名**。
+- **`genres` 分派**：**`['jazz']` 18 張**、**`['jazz','soul']` 3 張**（Earl Klugh 兩張、Ronnie Laws 一張）、**`['jazz','rock']` 0 張**
+  ——**與 a 組第 823 條同一條界線**（錄音年代在 1968 年以前的庫存盤一律 `['jazz']`；1980–81 的 crossover 新作才加 `soul`；第 790 條的兩個破例條件本組一張都不符合）。
+
+## 第 852 條（同批，**紙本沒有自抓**）：**a 組已掃的 1980–81 兩刊涵蓋 b 組全部 22 筆，本層逐項覆核後直接使用**
+
+| 檔案 | 來源 | 實際涵蓋 | 誰掃的 |
+|---|---|---|---|
+| `batch-progress/enum/billboard-bn-1980-1981-ocr.txt`（19.7 MB） | Billboard | **1980-01-05 → 1981-12-26，103 期的命中頁** | **c-145 a** |
+| `batch-progress/enum/cashbox-bn-1980-1981-ocr.txt`（11.4 MB） | Cash Box | **1980-01-05 → 1981-12-26，103 期的命中頁**（含補抓的 `CB-1980-09-05`） | **c-145 a** |
+
+- **本層開工時先查 `SOURCES-billboard-cashbox.md`（當時尚無 1980 之後的列），再直接看 a 組 scratchpad 的 `np.py` 關鍵字表**——
+  **實測 a 組的 `TITLES`／`NAMES` 兩張表已經把 b 組 22 筆的盤名（Swingin'／Inner Glow／Dance With Death／Patterns／Late Night Guitar／Thinking of Home／Vertigo／Cool Blues／Mother Ship／Every Generation／Rollin' With Leo／Medina／Crazy for You／Omega Alpha／Congo Lament／Infinity／On the Sunny Side／The Creeper／Live at Donte's／Remembering／Gooden's Corner／Africaine）與 16 位藝人全部列進去了**，
+  **目錄號也有 `\bLT[\s\-\.]*(9\d\d|10\d\d|11\d\d)\b`／`GXF`／`GXK`／`GP` 四種通配**。
+  → **`blue note` 也是通配關鍵字**，1980–81 兩刊任何提到 Blue Note 的頁都在檔內。**因此本層沒有重抓，省下 208 期的下載與 OCR。**
+- **本層在歸檔後的兩個檔案上逐條複驗過所有引用**（`fourteen unreleased masters`、`THE BLUE NOTE RE ISSUE SERIES`、`QUEBEC, IKE Congo Lament LP Blue Note LT1089` 等）——**全部命中，與 scratchpad 版一致。**
+- ⚠ **`SOURCES-billboard-cashbox.md` 的表在本層收工時仍寫「1980-01 之後還沒有人掃」**——**檔案已經在 `enum/` 裡了，表還沒更新**（a 組應會補）。**本層在表尾 append 了一段覆核說明，沒有動別人寫的段落。**
+- ⚠ **給後批**：**1982-01 之後仍然沒有人掃**；1982 年起 Blue Note 幾乎停止新發（要到 1985 年重啟），**`cashbox-bn-1984-85-ocr.txt`（1984-09→1985-06，c-140 b 掃）接得上重啟那一段**，**中間 1982-01→1984-08 是空的。**
+
+## 第 853 條（同批，**第 791 條在 1980–81 的續測**）：**庫存盤完全不進榜，進榜的全是同期新作——查榜順序仍是 Soul 先、Jazz 次、主榜也看**
+
+| 盤 | Billboard Soul LPs | 爵士榜（BB／CB） | 主榜 Top LPs |
+|---|---|---|---|
+| **Ronnie Laws《Every Generation》(1980)** | **✓ 1980-02-16 進榜 → 最高 #3–4 區間（03-08 榜上第 3 格）** | **✓ Cash Box 爵士榜 1980-03-08 第 1 名**、BB 爵士榜前五 | **✓ 最高 #73（1980-04-19）** |
+| **Earl Klugh《Late Night Guitar》(1980–81)** | **✓ SLP 40（1981-01-31）** | **✓ BB 爵士榜 #4–6（1981-01-31→02-14）**、CB 同步 | **✓ 最高 #122（1980-12-27）**，在榜到 1981-09 |
+| **Earl Klugh《Crazy for You》(1981)** | **✓ SLP 22（1981-11-21）** | **✓ BB 爵士榜 #23→更高（1981-11-14）** | **✓ 最高 #98（1981-11-21）** |
+| **其餘 18 張庫存盤** | — | — | — |
+
+→ **判準（本條）**：**第 791 條「Soul 先、Jazz 次、主榜也看」在 1980–81 完全成立，三張同期新作全部三榜齊上**；
+**但 Blue Note Classic 的庫存盤一張都沒進任何榜、也幾乎沒有評介**——
+**1980 年那波還有廣告與評介（Dance With Death／Patterns／Thinking of Home／Mother Ship／Rollin' With Leo 五張），1981 年那波只剩 Billboard 的新片目錄頁（Africaine／Congo Lament 兩張），LT-1091 之後連目錄頁都沒有。**
+→ **給後批：1981 年下半以後的 Blue Note 庫存盤，紙本查無是常態，不要因此懷疑年份**（第 704 條的反面用法）。
+
+## 第 854 條（同批）：**`chk-prop` 抓不到的五組同名／同碟關係——第 611 條盲區在本批的樣本**
+
+1. **《Infinity》↔ 池中 8 張同名盤**（Journey 1978、Fall Out Boy《Infinity on High》、Swans、King Gizzard《Nonagon Infinity》、Souls of Mischief《93 'til Infinity》、The Dillinger Escape Plan、Big Thief《Double Infinity》、落日飛車《Infinity Sunset》）——**掛名各異，跨批與線上池全部回 0。**
+2. **《Swingin'》↔ 池中 9 張同型盤名**（Jackie McLean《Swing, Swang, Swingin'》、Dexter Gordon《A Swingin' Affair》、Sinatra 兩張、Sarah Vaughan、Dean Martin……）——同上。
+3. **《Patterns》↔ Gil Mellé《Patterns in Jazz》（c-136）／Lightnin' Hopkins《Free Form Patterns》／Death《Individual Thought Patterns》**；**《The Creeper》↔ Lou Donaldson《Midnight Creeper》**；**《Vertigo》↔ Groove Armada 與 Bernard Herrmann 兩張**——**子字串關係，`chk-prop` 用的是完整鍵，不亮燈。**
+4. **《Remembering》↔ 1998 年美國 CD 改名《Standards》**，而**池中 c-141 已有 `Lee Morgan —《Standards》(1998)`**——**日後若收 Grant Green 那張 CD，兩張會同名不同掛名**，**收的時候必須加消歧**（c-144 第 792 條第 2 點的同型預約）。
+5. **《Live at Donte's》↔ Joe Pass 的同名現場盤**（維基該頁是消歧義頁；**jazzdisco 的 LT-1103 正是 Joe Pass《Joy Spring》，同一批 Pacific Jazz 舊母帶**）——**收 Pass 那張時盤名要加消歧。**
+→ **五組都已寫進各卡 risk。**
+
+## 第 855 條（同批，新立）：**「同一天」不等於「同一場」——用錄音日反查母帶的方法會出假陽性，必須連錄音室與編制一起核**
+
+本層用 jazzdisco 的錄音日對全部五個系列頁做反查（1500／4000／BN-LA／LT／Toshiba-King），**22 個日期裡有兩個是假陽性**：
+
+| 日期 | 本批的碟 | 反查也命中的碟 | 判定 |
+|---|---|---|---|
+| 1968-03-14 | Bobby Hutcherson《Patterns》（**Van Gelder, Englewood Cliffs**） | Chick Corea《Circling In》BN-LA472-H2（**A&R Studios, NYC**） | **假陽性**：同一天、兩個城市、兩組人 |
+| 1975-03-24／25 | Bobby Hutcherson《Inner Glow》（**United Artists Studio, Los Angeles**） | Ronnie Foster《Cheshire Cat》BN-LA425-G（**A&R Studios, NYC**） | **假陽性**：同上 |
+
+→ **判準**：**反查命中之後，一定要再核「錄音室 ＋ 至少一位共同樂手」**；
+**只有日期相同就當同場，會把兩個城市的兩場寫成一場**——**這種錯寫進正文是最難事後發現的一種**（比年份錯難查）。
+⚠ **反過來，真的同場的六組（第 845 條）每一組都通過了「同錄音室＋同班底＋take 號互補」三重核對。**
+
+## 第 856 條（同批）：**三條交叉線——寫作層的互指清單**
+
+1. **Bobby Hutcherson 三張是三個年代、三組人**：**《Patterns》（1968-03-14，Spaulding／Cowell／Workman／Chambers）／《Medina》（1969-08-11，Harold Land／Cowell／Reggie Johnson／Chambers）／《Inner Glow》（1975-03-24–25，Brashear／Thurman Green／Land／Dwight Dickenson／Kent Brinkley／Larry Hancock）**——
+   **Stanley Cowell 與 Joe Chambers 串起前兩張、Harold Land 串起後兩張，但沒有一位貫穿三張。** 往前接 c-144 的《Waiting》《The View From the Inside》《Knucklebean》（第 794 條）與 c-143 的《Live at Montreux》。
+2. **Billy Higgins 在本批出現三次**（《Dance With Death》1968／《Infinity》1965／——以及 a 組多張），**Lee Morgan 出現兩次**（《Infinity》領班／《Mother Ship》側手，相隔三年半），**Jackie McLean 出現兩次**（《Vertigo》領班／《Infinity》側手，相隔兩年九個月）——**三組都不得因為名字重複就寫成同一個班底。**
+3. **Kenny Burrell 在本批出現兩次**（《Swingin'》領班／**《On the Sunny Side》四場全部是他彈吉他**）——**兩張卡的 1957–60 段幾乎是同一批棚內日子**，正文互指時要寫清楚哪一張是誰的名義。
+**另外兩組跨組的**：**《Medina》↔ a 組《Spiral》**（1998 年 CD 合併，第 845 條）、**《Gooden's Corner》↔ a 組《Nigeria》《Oleo》**（Green／Clark 四重奏連錄三場，第 846 條已訂正 a 組把《Remembering》算進去的記述）。
+
+## 第 857 條（同批）：**交件數字、中間檔、給後批**
+
+- **交件 21 張、16 位；退 1**（第 841 條）；**年份改判 2**（第 846 條）、**維持 enum 值但附相反證據 2**（第 847 條）；`label` 改他廠 3（第 849 條）；
+  **新掛名 0、群組收攏 1**（第 848 條）；**合輯 0、現場 2、庫存／延遲首發 17、同期新作 4**；**撞陳列 6 張**（第 845 條）；CAA 20/22、店面 14/21。
+- `chk-prop b`：**21 張 16 位、標記 0**；跨批 109 批 4,492 張撞卡 0、同 rgMbid 不同掛名 0。
+- `why` 均長 **547**／`risk` **980**／`mbNote` **996** 字元。
+- 中間檔 `scratchpad/c145b/`：`mb-fetch.mjs`＋`mb.json`（22 個 RG 的 rg／rel／caa 回傳）、`mbsum.mjs`／`mbsum.txt`、
+  `poolscan.mjs`／`poolscan.txt`／`poolrows.json`（實掃 **26,176 列**＝seed 16,450 ＋ 183 個卡單檔 ＋ 191 個 prop 檔）、
+  `web/catalog-lt-series.txt`／`catalog-toshiba-king-series.txt`／`catalog-1500-series.txt`／`catalog-4000-series.txt`／`catalog-bn-la-series.txt`（**jazzdisco 五個系列全頁，第 845／855 條的逐軌比對就靠這五份**）、
+  `dg.mjs`＋`discogs.json`（25 個 catno 反查）／`dgrel.mjs`＋`discogs-rel.json`（**21 個 release 的 notes 全文，第 841／842 條的判定來源**）、
+  `wiki.mjs`＋`wiki.json`（43 查 35 中）、`apple.mjs`＋`apple.json`、`srch.py`／`s3.py`（**指向 a 組 1980–81 掃描檔的檢索工具**）、
+  `b1.mjs`～`b5.mjs`（卡單產生，**每 5／5／5／3／3 張寫回磁碟一次**）。
+- **給後批（1982 年以後與 King／BNJ 那一段）**：
+  1. **第 842 條**：LT 系列**不是**整段 previously-unreleased，**逐張讀 Discogs release notes 與 jazzdisco 的 `originally released on…` 一行**。
+  2. **第 843 條**：`LT-` 前綴不代表 Blue Note，**要看盤面有沒有「Blue Note CLASSIC」副標**。
+  3. **第 846 條**：**`GXK-81xx` 釘在 RG 上的，一律先回查對應的 `GXF-30xx` 首發年**；MB 在這一段的 frd 系統性晚一到兩年。
+  4. **第 845／855 條**：**庫存盤一律用錄音日＋take 號反查池中正盤，但要連錄音室與編制一起核**；撞到的寫進 `risk`，**不是退卡的理由**。
+  5. **第 853 條**：1981 年下半以後的庫存盤**紙本查無是常態**。
+  6. **紙本 1980–81 已入庫**（第 852 條，a 組掃），**1982-01→1984-08 仍是空的**。
+  7. **本組已預約的互指**：`Grant Green —《Remembering》`↔`《Gooden's Corner》`↔ a 組《Nigeria》《Oleo》；
+     `Bobby Hutcherson` 三張互指並往前接 c-144 三張；`Jimmy Smith —《On the Sunny Side》`↔ 池中 seed 五張（House Party／The Sermon!／Home Cookin'／Midnight Special／Back at the Chicken Shack）↔ a 組《Confirmation》；
+     `Kenny Burrell —《Swingin'》`↔ 池中 c-136《Kenny Burrell》／c-137 兩張《Blue Lights》／c-138《On View at the Five Spot Cafe》；
+     `Jackie McLean —《Vertigo》`↔ 池中 seed《New Soil》↔ c-144《The Jackie McLean Quintet》《Hipnosis》；
+     `Bobby Hutcherson —《Medina》`↔ a 組《Spiral》；`Ike Quebec —《Congo Lament》`↔ 未收的《Easy Living》(BST 84103, 1987)；
+     `Art Blakey and the Jazz Messengers —《Africaine》`↔ 池中 seed《The Big Beat》（〈Lester Left Town〉同曲不同錄音）；
+     `Jean-Luc Ponty —《Live at Donte's》`↔ 未收的 Joe Pass《Live at Donte's》與 LT-1103《Joy Spring》。
+
+## 第 858 條（同批，**回應 a 組第 814／817 條**）：**盤名大小寫兩則維持盤面式（池中 90:99 沒有多數）；`country` 逐張用 Discogs `catno=` 反查，本組 0 筆造假**
+
+**一、盤名大小寫（執行第 814 條第 1 點、但第 3 點不套用）**
+- **撇號已全部照第 814 條第 1 點改成 ASCII**：`Swingin'`／`Rollin' With Leo`／`Live at Donte's`／`Gooden's Corner` 四張，**MB 原題帶 U+2019 的兩張（Rollin’／Gooden’s）已改**。`chk-prop b` 標記 0。
+- **但第 814 條第 3 點（介系詞小寫）不往這兩張套**：`Dance With Death`／`Rollin' With Leo` **維持大寫 With**。依據：
+  **實測池中句中的 `with` 小寫 90 列、`With` 大寫 99 列——沒有多數**（`Cookin' with the Miles Davis Quintet`／`Thelonious Monk with John Coltrane` vs `Born to Be With You`／`A Date With…` 兩派並存）；
+  第 814 條第 3 點成立是因為**池中已有 `With a Song in My Heart` 的同名卡**（第 666 條「同一個詞在同一張卡不能兩種寫法」），**本組這兩張池中沒有對應卡，就回到盤面與 MB**（MB／Discogs／盤面三邊都是大寫 With）。
+  **維基的小寫寫法（`Dance with Death`／`Rollin' with Leo`）已進兩卡的 `queryAlias` 與 `risk`。可逆。**
+
+**二、`country` 覆核（第 817 條的 b 組結果：0 筆造假）**
+本組 21 張**逐張用 Discogs `catno=` 反查過首發號**，**每一個號都真的存在、國別也對得上**：
+**JP 4 張**（GXF 3070／GXF 3073／GXF 3071／GXF 3058，四個號 Discogs 都回日本原壓，**且 GXF 3071／3058 的 1981 年 GXK 版另有獨立條目**）、
+**US 17 張**（LT-1030／1038／1044／1045／1054／1076／1085／1086／1088／1089／1091／1092／1096／1102 ＋ Liberty LT-1079／LT-51113 ＋ United Artists LT-1001）。
+→ **本組沒有出現第 817 條那種「MB 建出不存在的原盤」**；但**列舉檔的 `country`／`format`／`catno` 在三張上抄的是後來的 CD**（Late Night Guitar 抄 1999 US CD、Every Generation 抄 2005 GB CD、Crazy for You 抄 1995 NL CD，第 849 條），
+**形狀不同但後果一樣——`country` 欄一律以「反查得到的首發號」為準，不以列舉檔為準。**

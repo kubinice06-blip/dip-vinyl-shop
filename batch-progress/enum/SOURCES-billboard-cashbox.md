@@ -386,3 +386,17 @@ c-143 a 逐張查過：**1970–72 段的 Blue Note（本組 21 張）沒有任�
    **`year` 取 GXF／GP，不取 GXK。這些碟多半只有日本盤，美國紙本查無是正常的。**
 
 **紙本至此的覆蓋：Billboard 1955–1981-12、Cash Box 1960-11–1981-12 ＋ 1984-09–1985-06。1982-01 之後還沒有人掃。**
+
+### c-145 b 的覆核（**沒有重抓，只確認涵蓋範圍**）
+
+上面 c-145 a 掃的兩個 1980–81 檔案，**關鍵字表同時涵蓋 c-145 b 組的 22 筆**——本層逐項核過 a 組抓取器的 `TITLES`／`NAMES`／`CATS` 三張表：
+b 組的 22 個盤名（Swingin'／Inner Glow／Dance With Death／Patterns／Late Night Guitar／Thinking of Home／Vertigo／Cool Blues／Mother Ship／
+Every Generation／Rollin' With Leo／Medina／Crazy for You／Omega Alpha／Congo Lament／Infinity／On the Sunny Side／The Creeper／
+Live at Donte's／Remembering／Gooden's Corner／Africaine）、**16 位藝人**、以及 `LT`／`GXF`／`GXK`／`GP` 四種目錄號通配**全部在表內**，
+`blue note` 亦為通配字。**因此這兩個檔案對 1980–81 的 Blue Note 查詢是「a＋b 兩組合計 45 筆」的涵蓋範圍，不只 a 組那 23 筆。**
+
+本層在**歸檔後的檔案**上複驗過所有引用（`fourteen unreleased masters`／`THE BLUE NOTE RE ISSUE SERIES`／
+`QUEBEC, IKE Congo Lament LP Blue Note LT1089` 等），與 scratchpad 版一致。
+
+⚠ **1982-01 → 1984-08 仍是空的**：1982 年起 Blue Note 幾乎停止新發，
+要到 `cashbox-bn-1984-85-ocr.txt`（1984-09→1985-06，c-140 b 掃）才接得上重啟那一段——**中間那三十二個月沒有人掃。**
