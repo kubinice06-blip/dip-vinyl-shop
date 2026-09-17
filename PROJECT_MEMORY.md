@@ -1,5 +1,69 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-17｜dip-vinyl-shop｜Pages 部署根治：改用 build command，產線目錄不再進部署
+
+同日第二筆。c-126～c-147 那 798 張的資料早就寫進 Firestore 與 KV，
+卡住的只有靜態檔上線——**連續三次 build 失敗**，原因到今天才查出來。
+
+## 一、根因：Pages 有單檔 25 MiB 上限，而 repo 裡有一份 33.2 MiB 的 OCR
+
+```
+Error: Pages only supports files up to 25 MiB in size
+batch-progress/enum/billboard-bn-1977-1979-ocr.txt is 33.2 MiB in size
+```
+
+雲端做 Blue Note 線時把 Billboard 與 Cashbox 的 OCR 全文提交進 repo 當證據檔。
+**這個 repo 同時是產線倉庫與網站部署來源**，於是產線的證據檔撞上了網站的部署限制。
+09-16（雲端分支）與 09-17（兩次）三次部署都是同一個原因，先前沒人去看建置日誌。
+
+**查法**：Cloudflare Pages 有 API 可以直接調部署狀態與建置日誌，不必開後台——
+`/accounts/<acc>/pages/projects/<name>/deployments` 與 `.../deployments/<id>/history/logs`，
+用既有的 `CLOUDFLARE_API_TOKEN` 就能讀。以後部署沒動靜先查這裡。
+
+## 二、`.assetsignore` 沒有用（實測，別再試）
+
+加了 `.assetsignore` 之後 build **以完全相同的理由再失敗一次**。
+那道 25 MiB 檢查發生在「驗證輸出目錄」階段、在讀清單之前；
+`.assetsignore` 是 Workers Assets 的機制，**Pages 的 git 專案不吃**。
+檔案留著改寫成路標，指向真正生效的 `scripts/pages-build.sh`。
+
+## 三、先止血：兩份 OCR 改存 `.gz`
+
+`billboard-bn-1977-1979-ocr.txt` 33.2→15.2 MiB、`cashbox-bn-1977-1979-ocr.txt`
+24.4→10.2 MiB（後者已經貼著上限，一起壓掉）。內容逐字相同，用 `zgrep`／`zless` 讀。
+第四次部署過關，798 張上線。
+
+## 四、根治：Pages 改用 build command，輸出目錄指到 `dist/`
+
+新增 `scripts/pages-build.sh`，用 **排除法**（預設全收，只拿掉產線與備份）把網站檔案
+組進 `dist/`；Pages 專案設定改成 `build_command: bash scripts/pages-build.sh`、
+`destination_dir: dist`（走 API PATCH，不必開後台）。
+
+腳本內建兩道守門：
+1. `dist` 裡出現超過 25 MiB 的檔就中止並**指名是哪個檔**——不要再讓 wrangler 丟一行看不懂的錯；
+2. 網站必要檔案（七個 html、`seed_cards.json`、`card-preview-status.js`、`dip-player.js`、
+   runtime 試聽地圖）少一個也中止——防止排除清單寫太寬。
+
+**部署結果：256 個檔、40 MB**（先前整個 repo 約 620 MB 全部上 CDN）。
+線上 19 個關鍵路徑逐一驗過全部 200，卡池 17,248、試聽地圖 13,068 筆。
+產線路徑改回 SPA fallback（回 index.html 而不是檔案本身），確認沒進部署。
+
+⚠ **驗「檔案是否已排除」不能只看 HTTP 200**：Pages 對不存在的路徑會回 200 ＋ index.html。
+要看 `content-type` 或 body 開頭才分得出來——第一次驗證就被這個騙過去。
+
+## 五、雲端那邊還不知道這條線
+
+`REMOTE_RUNBOOK` 沒有寫「不要在 repo 裡留超過 25 MiB 的單檔」。
+下次做 OCR 還是會寫成 `.txt`。現在有 build script 的守門會**當場擋下並指名檔案**，
+不會再變成一個要查日誌才知道的謎，但仍建議在 runbook 補一條。
+
+## 主要檔案
+
+`scripts/pages-build.sh`（新）、`.assetsignore`（改寫成路標）、`.gitignore`（加 `dist/`）、
+`batch-progress/enum/*-1977-1979-ocr.txt.gz`（兩份，原 `.txt` 移除）、
+`batch-progress/enum/SOURCES-billboard-cashbox.md`（記下改存 `.gz` 與讀法）。
+Pages 專案設定的 `build_config` 走 API 改，不在 repo 裡。
+
 ### 2026-09-17｜dip-vinyl-shop｜c-126 至 c-147 二十一批上架 798 張，含 Blue Note 全線 455 張
 
 雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（291 筆提交）快轉合併。
