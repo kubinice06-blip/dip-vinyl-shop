@@ -441,3 +441,23 @@ Billboard 全部 `BB-YYYY-MM-DD.pdf`、Cash Box 全部 `CB-YYYY-MM-DD.pdf`，
    《Boogie Woogie Classics》12/12、《Village Vanguard Vol.2／3》4/4 與 6/6 → 全退。）
 4. **第 879 條：本層的三份檔案是命中頁不是全文**——需要完整上下文時，
    1984-09 以後請優先用 `cashbox-bn-1984-85-ocr.txt`（c-140 b 掃，存的是整期全文）。
+
+---
+
+## ⚠ 1977–1979 兩份 OCR 改存 `.txt.gz`（2026-09-17）
+
+`billboard-bn-1977-1979-ocr.txt`（33.2 MiB）與 `cashbox-bn-1977-1979-ocr.txt`（24.4 MiB）
+已改成 gzip 保存，原 `.txt` 移除。
+
+**原因**：這個 repo 就是 Cloudflare Pages 的部署來源，Pages **單檔上限 25 MiB**。
+33.2 MiB 那份讓 2026-09-16 與 09-17 兩次部署直接 build 失敗
+（`Error: Pages only supports files up to 25 MiB in size`），
+c-126～c-147 那 798 張卡因此卡在線上更新不了。cashbox 那份 24.4 MiB 已經貼著上限，
+一起壓起來，免得下次 OCR 補幾頁就再炸一次。
+
+**怎麼讀**：`gzip -dc batch-progress/enum/billboard-bn-1977-1979-ocr.txt.gz | grep -n "…"`
+（grep／less 都可以直接吃 `zgrep`／`zless`）。內容與原檔逐字相同，只是壓縮。
+
+**日後做 OCR 時請直接寫成 `.gz`**，不要在這個 repo 裡留下任何超過 25 MiB 的單檔——
+`.assetsignore` 對 Pages 的 git 整合**沒有用**（2026-09-17 實測：加了之後
+同一個 25 MiB 檢查照樣擋下來，那個檢查發生在上傳之前）。
