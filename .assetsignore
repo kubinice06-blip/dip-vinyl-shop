@@ -1,24 +1,6 @@
-# ⚠ 2026-09-17 實測：這個檔案對 Cloudflare Pages 的 **git 整合部署沒有作用**。
+# ⚠ 這個檔案對 Cloudflare Pages 的 git 整合部署**沒有作用**（2026-09-17 實測）。
+# 那道 25 MiB 單檔檢查發生在讀這份清單之前；`.assetsignore` 是 Workers Assets 的機制。
 #
-# 加了它之後 build 仍然以同樣的理由失敗：
-#   Error: Pages only supports files up to 25 MiB in size
-#   batch-progress/enum/billboard-bn-1977-1979-ocr.txt is 33.2 MiB
-# 那道 25 MiB 檢查發生在「驗證輸出目錄」階段，在讀這份清單之前。
-# `.assetsignore` 是 Workers Assets 的機制，Pages 的 git 專案不吃。
-#
-# 留著這個檔只是為了記下這件事，免得下次有人再試一次同一條路。
-# **真正能防的做法是：不要在這個 repo 裡留下任何超過 25 MiB 的單檔**
-# （1977–1979 那兩份 OCR 已改存 .gz，見 batch-progress/enum/SOURCES-billboard-cashbox.md）。
-#
-# 要根治的話得改 Pages 專案設定：加一個 build command 把網站檔案組進 dist/、
-# 再把 build output directory 指到 dist/，產線目錄就永遠不會進部署。
-# 那是專案設定層的改動，沒有店主點頭不動。
-
-batch-progress/
-desc-tools/
-audits/
-publish-stage/
-onboarding/
-.wrangler/
-onboarding-manifest-*.json
-*.backup-*.json
+# 真正生效的是 `scripts/pages-build.sh`（Pages 專案的 build command，輸出目錄 dist/）。
+# 要改哪些東西不上傳，請改那支腳本的排除清單，不是這裡。
+# 這個檔留著只是路標，免得下次有人再走一次同一條死路。
