@@ -1,0 +1,29 @@
+# Cloudflare Pages 不要上傳的路徑。
+#
+# 2026-09-17：c-126～c-147 那次部署 build 失敗——
+#   Error: Pages only supports files up to 25 MiB in size
+#   batch-progress/enum/billboard-bn-1977-1979-ocr.txt is 33.2 MiB
+# 那是 Blue Note 線的 Billboard OCR 證據檔，只給策展與研究層引用，網站從來不讀它。
+#
+# 順手把整個產線目錄一起排除：batch-progress 271MB ＋ desc-tools 75MB ＋
+# 根目錄那堆 onboarding-manifest（約 100MB）每次部署都被推上 CDN，網站一個都用不到。
+# 前端實際會抓的是 seed_cards.json、card-preview-status.js、data/、art/ 與各 html／js，
+# 這些都不在下面的清單裡。
+#
+# 語法與 .gitignore 相同。新增產線目錄時記得補進來，否則遲早又會有人放進一個超過 25 MiB 的檔。
+
+batch-progress/
+desc-tools/
+audits/
+publish-stage/
+onboarding/
+.wrangler/
+
+# 根目錄的批次 manifest 與各種備份
+onboarding-manifest-*.json
+*.backup-*.json
+seed_cards.backup*.json
+apex_pool.backup*.json
+firestore-backup-*.json
+kv-backup-*.json
+questions.backup*.json
