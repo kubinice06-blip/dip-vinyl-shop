@@ -369,7 +369,6 @@ function openStory(id){ T.id=id; T.beat=0; T.pos={}; if(ST.mode==='story'){ rend
 function tScene(){ const st = curStory(); return st && DB.scenes[st.scene] || null; }
 function tActors(){ const scn = tScene(); const m = {}; if(scn) for(const it of scn.items) if(it.role) m[it.role] = it; return m; }
 // 第 i 句的目標狀態：每個演員最後要站哪、藏不藏；路線（xPath）拆成多段依序走；門板照 door 換格
-const DOOR_NAME = '門';
 function tTargets(i){
   const st = curStory(), scn = tScene(); if(!st || !scn) return {};
   const stage = P.stageAt(st, i), acts = tActors(), out = {}, paths = {};
@@ -381,7 +380,7 @@ function tTargets(i){
     out[it.iid] = { x:pos.x, y:pos.y, hidden };
     if(Array.isArray(s[role+'Path']) && s[role+'Path'].length) paths[it.iid] = s[role+'Path'].map(n => anchorPos(it, role, n)).filter(Boolean);
   }
-  const door = scn.items.find(it => (it.name||'') === DOOR_NAME);
+  const door = P.findDoor(scn);
   if(door){ out[door.iid] = Object.assign(out[door.iid]||{ x:door.x, y:door.y }, { frame: P.DOOR_FRAME[stage.door] ?? 0 }); }
   for(const it of scn.items){ const name = it.name || (DB.objects[it.obj]||{}).name; const ss = stage.set[name]; if(ss){ out[it.iid] = Object.assign(out[it.iid]||{x:it.x,y:it.y}, ss); } }
   return { targets: out, stage, paths, doorSwing: s.door === 'swing' ? door : null };

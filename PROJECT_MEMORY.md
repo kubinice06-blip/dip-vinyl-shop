@@ -1,5 +1,51 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-17｜dip-vinyl-shop｜roguelike 序章舞台改成直接讀 art/pixel/
+
+分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。
+繪圖器五批做完之後的收尾：把遊戲端接上工坊的資料，店主改完推上去就生效，不用再請 Claude 貼一次。
+
+**`roguelike.html` 現在照資料畫**：站位（`scenes/shop2.json` 的 anchors）、對白
+（`stories/prologue.json` 的 beats）、舞台尺寸與背景、前景層與門與**店主自己擺的任何道具**
+（場景的 items，位置縮放翻轉隱藏都照著走）、遮擋關係（items 的 `depth`／`layer`）、
+門開關的格（門物件的 frames）、老闆的圖（`objects/owner.json`）。
+
+**三件事故意不吃資料**：玩家的圖（他自己捏的角色）、對手的圖（每場不同）、
+`ui:` 面板（遊戲邏輯的掛點，劇本只標「這一句開哪個面板」）。
+
+**深度改成連續對應**：舊版是寫死的三段 `rpgZ`（<402 → z2、<458 → z7+、其餘 z21+）＋ 前景 z6／z20。
+現在靜態物件與小人共用 `rpgZOf(foot, layer)`＝`2 + round(foot/場景高 × 900)`，
+所以店主在工坊多擺一個箱子，遊戲裡的遮擋自動就對。實測兩種算法在 shop2 的所有門檻上結果相同。
+
+**覆寫順序**：內建 ← `art/pixel` ← 後台「序章劇本」（Firestore `gameConfig`）。
+後台最大，因為那是不用推 repo 就能救火的路徑；用 `RPG_BEATS_SRC` 這個旗標擋住先後順序的競態。
+
+**讀不到就退回內建**：離線、檔案被刪、JSON 壞、物件缺檔，console 印一行警告
+（`RPG_ART.warn` 寫是哪裡壞的），然後用寫死的站位對白與 PNG 把序章演完。
+序章是新玩家的第一個畫面，寧可少一次改稿也不能變空白。
+
+**順手做的兩件事**：
+- `dip-pixel.js` 加 `findDoor(scene)`（`role==='door'` 優先，退回名字叫「門」）——
+  工坊原本自己寫一次字串比對，現在兩邊共用同一條規則。
+- `scripts/pixel-index.mjs` 加三項檢查：劇本用到 p／o／f 就要有對應 role 的物件、
+  用到 `door` 就要找得到門、圖檔物件指到的 PNG 要真的存在。
+  **這些錯在遊戲裡不會報錯，只會安靜地把人放錯位置**，所以一定要在這裡擋下來。
+
+**踩到的坑**：改名 `P` → `PX` 時只用 `\bP\.` 的正規式取代，漏掉了 `if(!P)` 這種不帶點的用法，
+整個 `rpgLoadArt` 在 `if(!P)` 就丟 ReferenceError；而且它在 `try` 外面，所以 `RPG_ART.warn` 是空字串、
+只看得到 `on:false`，完全看不出原因。教訓：這種防呆要寫 `typeof X === 'undefined'`，
+而且守衛要放進 `try` 裡面。
+
+- 主要檔案：`roguelike.html`（舞台載入與生成、rpgZOf、rpgPc、rpgDoor、rpgApplySet、bootstrap）、
+  `dip-pixel.js`（findDoor）、`pixel-studio.html`（改用 findDoor）、
+  `scripts/pixel-index.mjs`（三項新檢查）、`PIXEL_STUDIO.md`（§6 重寫）
+- **`art/pixel/` 的資料一個字都沒動**（這次是遊戲端去就資料，不是資料去就遊戲）。
+- 驗證：Playwright 48 項全過、console 零錯誤——真檔案讀進來、改一份場景 JSON（搬站位、加道具、
+  改對白）遊戲跟著變、index.json 掛掉退回內建、場景缺演員缺站位不會垮；
+  最後一項是**資料版與內建版逐像素比對，174,324 個像素零差異**，證明改版沒有動到畫面。
+  繪圖器那邊的 Playwright 193 項與五組 node 測試（font 39／import 43／palette 49／aseprite 45／gif 35）全過；
+  `node scripts/pixel-index.mjs` 通過。
+
 ### 2026-09-13｜dip-vinyl-shop｜繪圖器第 5 批（收尾）：.aseprite 匯入、GIF 匯出、雪碧圖切格、動畫標籤
 
 分支 `claude/online-pixel-art-editor-jmpyxb`（PR #13 草稿，**未合併 main**）。五批規劃到此跑完。

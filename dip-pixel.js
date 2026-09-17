@@ -223,6 +223,15 @@
   // 門板格數：關 0／半開 1／全開 2；swing 是開→停→關的序列（時間單位 ms，跟 roguelike 的 rpgDoor 一樣）
   const DOOR_FRAME = { shut:0, open:2 };
   const DOOR_SWING = [[1,0],[2,190],[1,900],[0,1090]];
+  // 門是唯一「靠名字認」的物件：劇本的 door:open／swing／shut 要換它的格。
+  // 優先看 role==='door'，找不到才退回名字叫「門」——工坊與 roguelike 共用這一條規則，
+  // 免得兩邊各自寫一次字串比對、改了一邊忘了另一邊。
+  const DOOR_ROLE = 'door', DOOR_NAME = '門';
+  function findDoor(scene){
+    const items = (scene && scene.items) || [];
+    return items.find(it => it.role === DOOR_ROLE)
+        || items.find(it => (it.name || '') === DOOR_NAME) || null;
+  }
   function findAnchor(scene, group, name){
     return (scene.anchors||[]).find(a => a.name === name && (a.group||'') === (group||''))
         || (scene.anchors||[]).find(a => a.name === name) || null;
@@ -248,5 +257,6 @@
 
   global.DipPixel = { DEFAULT_PALETTE, TRANSPARENT, isClear, paletteOf, framesOf, frameOf, sizeOf, anchorOf,
     flattenLayers, toSVG, rasterize, loadImage, itemRect, itemFoot, itemZ, sortedItems, placeAt, footPoint, toPercent,
+    findDoor, DOOR_ROLE, DOOR_NAME,
     drawScene, stageAt, findAnchor, DOOR_FRAME, DOOR_SWING, slug, emptyRows, newPixelObject, newImageObject, newScene, newStory, emptyDB };
 })(typeof window !== 'undefined' ? window : globalThis);

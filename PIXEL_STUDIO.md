@@ -234,19 +234,43 @@ art/pixel/stories/<id>.json
 4. `updatedAt` 改成當下的毫秒時間戳，編輯器合併時「較新者勝」靠它。
 5. 圖檔物件指到的圖不存在 → `pixel-index.mjs` 會擋。
 
-## 6. 接進遊戲（現況與下一步）
+## 6. 接進遊戲
 
-- `dip-pixel.js` 是前台與編輯器共用的繪製庫：`toSVG(obj)`（跟 `pixArtHTML` 同形）、`drawScene(ctx, scene, db)`、
-  `stageAt(story, i)`（累積 stage 的規則跟 `rpgApplyStage` 一樣）、`placeAt`／`findAnchor`。
-- 2026-09-08 起 `roguelike.html` 的序章舞台已經是描圖版（`shop2-bg.jpg` ＋ 門板 ＋ 兩層前景），
-  站位 `RPG_POS`、對白 `RPG_BEATS`、`rpgZ`／`rpgWalk`／`rpgDoor` 都在程式裡寫死。
-  `art/pixel/scenes/shop2.json` 的站位與 `stories/prologue.json` 的對白跟它們**一字不差**——
-  所以現在的協作方式是：工坊裡改好 → 「複製 POS」／「複製 beats」→ Claude 貼進 `roguelike.html`（或後台序章劇本存 Firestore）。
-- **還沒做、下一步**：讓 `roguelike.html` 直接 `fetch('art/pixel/scenes/shop2.json')`＋`stories/prologue.json`，
-  `RPG_POS` 從場景的 anchors 生、`RPG_BEATS` 從劇本的 beats 生、門與小人的物件從 objects 生（`toSVG`），
-  `rpgZ` 改用 `itemZ`。這樣店主在工坊搬一張桌子、加一句對白，推上去就生效，不用再經過 Claude 貼一次。
-- 之後 `DUNGEON_DESIGN.md` 的聆聽室、各間唱片行地牢、敵人造型，全都是「一個場景 JSON ＋ 幾個物件 JSON」，
-  店主畫、Claude 排。
+**`roguelike.html` 的序章舞台已經直接讀 `art/pixel/`**（2026-09-17 起）。
+在工坊搬一張桌子、改一句對白、在繪圖器重畫門板，推上 repo 就生效，不用再請 Claude 貼一次。
+
+讀進去之後，這些東西全部是資料說了算：
+
+| 遊戲裡的東西 | 來自 |
+|---|---|
+| 站位（誰站哪） | `scenes/shop2.json` 的 `anchors`，照 `group`（p／o／f）分組 |
+| 對白與每一段的站位變化 | `stories/prologue.json` 的 `beats` |
+| 舞台尺寸、背景圖／底色 | 場景的 `w`／`h`／`bg`／`bgColor` |
+| 前景層、門、以及**你自己擺上去的任何道具** | 場景的 `items`（位置、縮放、翻轉、隱藏都照著走） |
+| 誰擋住誰 | 每個 item 的 `depth`／`layer`，小人依腳底 y 用同一把尺夾進去 |
+| 門開關的格 | 名字叫「門」（或 `role:"door"`）那個物件的 `frames` |
+| 老闆的樣子 | `objects/owner.json` |
+
+**三件事仍然寫在程式裡，不吃資料**：
+- **玩家的圖**——那是玩家自己捏的角色，執行時才知道。
+- **對手的圖**——每一場的對手不一樣，由 `SPR[fSpr]` 決定。
+- **`ui:` 面板**（挑王牌、收四張、選對決）——那是遊戲邏輯的掛點，劇本只標「這一句要開哪個面板」。
+
+**讀不到就退回內建的舞台**：離線、檔案被刪、JSON 壞掉、物件缺檔，都會在 console 印一行警告，
+然後用 `roguelike.html` 裡寫死的那一份站位、對白與 PNG 把序章演完。
+序章是新玩家看到的第一個畫面，寧可少一次改稿，也不能變成空白。
+（想確認現在是哪一邊：開 console 打 `RPG_ART.on`，`false` 的話 `RPG_ART.warn` 會說是哪裡壞了。）
+
+**覆寫順序**：內建 ← `art/pixel/stories/prologue.json` ← 後台「序章劇本」分頁（Firestore `gameConfig`）。
+後台改的稿子最大，因為那是不用推 repo 就能救火的路徑。
+
+**改完一定要跑** `node scripts/pixel-index.mjs`：它會重建 `index.json`（遊戲靠它找檔案），
+並且檢查劇本用到的站位在場景裡都有、場景有 role=p／o／f 的演員、用到 `door` 就要有門、
+圖檔物件指到的 PNG 真的存在。這些錯在遊戲裡不會報錯，只會安靜地把人放錯位置。
+
+**下一步**：`DUNGEON_DESIGN.md` 的聆聽室、各間唱片行地牢、敵人造型，
+全都是「一個場景 JSON ＋ 幾個物件 JSON ＋ 一個劇本 JSON」，店主畫、Claude 排，
+遊戲端只要照這一套多開幾個 `RPG_ART_SCENE`／`RPG_ART_STORY` 就好。
 
 ## 7. 已知限制
 
@@ -264,5 +288,8 @@ art/pixel/stories/<id>.json
 - 像素格偵測有個前提：**原圖相鄰的欄或列不能整排重複**，否則圖的真實週期會是格寬的倍數，
   偵測到的格子會比實際大一倍（這是資訊上的極限，不是 bug）。偵測不準就手動改格寬與偏移。
 - 切件用的是連通區域；線條相連的兩個物體會被算成同一件，得自己框選再分。
+- 遊戲端只有**序章**（`shop2` ＋ `prologue`）接上 `art/pixel/`，戰鬥畫面與其他場景還是寫死的。
+- 遊戲讀的是 repo 裡的檔案，不是工坊的 IndexedDB——**在工坊改完要推上去才會生效**
+  （🔁 交接分頁可以直接推 GitHub Contents API）。
 - 資料在本機 IndexedDB（舊的 localStorage 草稿第一次開會自動搬過去），沒有走 Firestore；跨裝置靠 repo。
 - GitHub token 存在瀏覽器 localStorage，用 fine-grained、只給這個 repo 的 Contents 權限，到期就換。

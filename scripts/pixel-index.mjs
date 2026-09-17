@@ -70,6 +70,14 @@ for(const { rel, o } of scenes){
   const names = new Set();
   for(const a of o.anchors || []){ const k = (a.group || '') + ':' + a.name; if(names.has(k)) err(rel, `站位重複：${k}`); names.add(k); if(!(isFinite(a.x) && isFinite(a.y))) err(rel, `站位 ${k} 的 x、y 不是數字`); }
 }
+// 圖檔物件的 frames 是 PNG 路徑：roguelike.html 現在直接照著它上 <img src>，檔案不在就是破圖
+for(const { rel, o } of objects){
+  if(o.kind !== 'image') continue;
+  for(const src of o.frames || []){
+    if(typeof src !== 'string'){ err(rel, 'image 物件的 frames 要是圖檔路徑字串'); continue; }
+    if(!/^(https?:|data:)/.test(src) && !fs.existsSync(path.join(ROOT, src))) err(rel, `圖檔找不到：${src}`);
+  }
+}
 for(const { rel, o } of stories){
   if(!sceneIds.has(o.scene)) err(rel, `指到不存在的場景 ${o.scene}`);
   const scn = scenes.find(s => s.o.id === o.scene);
@@ -85,6 +93,17 @@ for(const { rel, o } of stories){
     if(s.door && !['open', 'swing', 'shut'].includes(s.door)) err(rel, `第 ${i + 1} 句的 door 只能是 open／swing／shut`);
     if(s.set && scn) for(const n of Object.keys(s.set)) if(!(scn.o.items || []).some(it => (it.name || '') === n)) err(rel, `第 ${i + 1} 句 set 指到場景裡沒有的物件名「${n}」`);
   });
+  // 遊戲端（roguelike.html）照 role 找演員、照 P.findDoor 找門。劇本用到了、場景裡卻沒有，
+  // 遊戲不會報錯，只會安靜地把人放在原地——所以在這裡擋下來。
+  if(!scn) continue;
+  const items = scn.o.items || [];
+  const used = new Set();
+  for(const b of o.beats || []){ const s2 = b.stage || {};
+    for(const g of ['p', 'o', 'f']) if(s2[g] || s2[g + 'Path']) used.add(g); }
+  for(const g of used) if(!items.some(it => it.role === g))
+    err(rel, `劇本用到 ${g} 的站位，但場景「${scn.o.id}」裡沒有 role=${g} 的物件`);
+  if((o.beats || []).some(b => (b.stage || {}).door) && !DP.findDoor(scn.o))
+    err(rel, `劇本用到 door，但場景「${scn.o.id}」裡找不到門（role=door 或名字叫「門」的物件）`);
 }
 
 const ent = (kind, list) => list.map(({ o }) => ({ id: o.id, name: o.name, kind: o.kind, file: `art/pixel/${kind}/${o.id}.json`, updatedAt: o.updatedAt || 0 }));
