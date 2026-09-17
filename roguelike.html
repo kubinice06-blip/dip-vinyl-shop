@@ -141,6 +141,11 @@
   .rpg-stage{position:relative;width:100%;aspect-ratio:448/492;overflow:hidden;
     background:#3a2a18 url('art/shop2-bg.jpg') center center / 100% 100% no-repeat;}
   .rpg-fg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
+  /* 由 art/pixel/scenes/*.json 生出來的舞台物件（前景層、門、店主自己在工坊擺的道具）。
+     位置與 z-index 都寫在 style 裡，因為它們是資料算出來的，不是版型決定的。 */
+  .rpg-item{position:absolute;pointer-events:none;line-height:0;}
+  .rpg-item img,.rpg-item svg{display:block;width:100%;height:auto;}
+  .rpg-item.hide{display:none;}
   .rpg-fg.back{z-index:6;}          /* 櫃檯＋器材＋牆邊唱片櫃：下緣 y≤400 */
   .rpg-fg.front{z-index:20;}        /* 折疊長桌＋桌上木箱＋桌下黑籃：下緣 y≥402 */
   .rpg-door{position:absolute;z-index:2;pointer-events:none;left:2.68%;top:31.50%;width:17.14%;}
@@ -709,6 +714,7 @@
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=40"></script>
 <script src="dip-character.js?v=2"></script>
+<script src="dip-pixel.js?v=4"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -2150,8 +2156,133 @@ function shopCheckout(){
 // 站位（邏輯座標 [中心 x, 腳底 y]，場景 448×492）。座標契約見 scripts/trace-shop-art.py：
 // 牆／地板交界 y=325；櫃檯 x 102–307、檯面上緣 y=299、檯身下緣 400；
 // 折疊長桌 x 247–460、桌面 y 371、桌腳落地 467；前方 x 0–245 / y 400–492 淨空。
-const RPG_LW=448, RPG_LH=492, RPG_SVG=78, RPG_FOOT=5;
-const RPG_POS = {
+
+// ═══════════════════════════════════════════════════════════════════════
+//  🎨 舞台資料來源：art/pixel/（像素工坊與繪圖器存的同一份 JSON）
+//  店主在工坊搬一張桌子、改一句對白、重畫門板，推上來就生效，不用再請 Claude 貼一次。
+//  讀不到（離線、檔案被刪、格式壞掉）就退回下面寫死的常數與 PNG，遊戲照跑——
+//  序章是新玩家的第一個畫面，寧可少一次改稿，也不能變成空白。
+// ═══════════════════════════════════════════════════════════════════════
+const PX = window.DipPixel || null;   // 共用的像素格式／幾何庫（dip-pixel.js）
+const RPG_ART_BASE = 'art/pixel/', RPG_ART_SCENE = 'shop2', RPG_ART_STORY = 'prologue';
+const RPG_ART = { on:false, scene:null, story:null, objs:{}, actors:{}, statics:[], door:null, warn:'' };
+let RPG_BEATS_SRC = 'builtin';        // builtin ← art ← cfg（後台改的稿子最大）
+let _rpgArtP = null;
+function rpgLoadArt(){
+  if(_rpgArtP) return _rpgArtP;
+  _rpgArtP = (async () => {
+    if(!PX){ RPG_ART.warn = '沒有載到 dip-pixel.js'; return RPG_ART; }
+    try{
+      const j = async u => { const r = await fetch(u, { cache:'no-cache' });
+        if(!r.ok) throw new Error(u + ' → HTTP ' + r.status); return r.json(); };
+      const idx = await j(RPG_ART_BASE + 'index.json');
+      const sf = (idx.scenes || []).find(x => x.id === RPG_ART_SCENE);
+      if(!sf) throw new Error('index.json 裡沒有場景 ' + RPG_ART_SCENE);
+      const tf = (idx.stories || []).find(x => x.id === RPG_ART_STORY);
+      const files = {}; for(const o of idx.objects || []) files[o.id] = o.file;
+      const scene = await j(sf.file);
+      const story = tf ? await j(tf.file).catch(() => null) : null;
+      const need = Array.from(new Set((scene.items || []).map(it => it.obj)));
+      const objs = {};
+      await Promise.all(need.map(async id => {
+        if(!files[id]) return;
+        try{ const o = await j(files[id]); if(o.layers) PX.flattenLayers(o); objs[id] = o; }catch(e){}
+      }));
+      const missing = need.filter(id => !objs[id]);
+      if(missing.length) throw new Error('缺物件：' + missing.join('、'));
+      RPG_ART.scene = scene; RPG_ART.story = story; RPG_ART.objs = objs; RPG_ART.on = true;
+      rpgAdoptArt();
+    }catch(e){
+      RPG_ART.on = false; RPG_ART.warn = e.message;
+      console.warn('[rpg] art/pixel 讀不到，改用內建舞台：', e.message);
+    }
+    return RPG_ART;
+  })();
+  return _rpgArtP;
+}
+// 把場景與劇本換算成這支檔案原本用的那幾個變數
+function rpgAdoptArt(){
+  const sc = RPG_ART.scene;
+  if(sc.w > 0 && sc.h > 0){ RPG_LW = sc.w; RPG_LH = sc.h; }
+  const pos = {};
+  for(const a of sc.anchors || []){ const g = a.group || 'p'; (pos[g] || (pos[g] = {}))[a.name] = [a.x, a.y]; }
+  if(Object.keys(pos).length) RPG_POS = pos;
+  RPG_ART.actors = {}; RPG_ART.statics = [];
+  RPG_ART.door = PX.findDoor(sc);
+  for(const it of sc.items || []){
+    if(it.role === 'p' || it.role === 'o' || it.role === 'f') RPG_ART.actors[it.role] = it;
+    else RPG_ART.statics.push(it);
+  }
+  if(RPG_ART.story && RPG_BEATS_SRC !== 'cfg'){
+    const bs = RPG_ART.story.beats;
+    if(Array.isArray(bs) && bs.length && bs.every(b => b && typeof b.text === 'string' && b.text.trim())){
+      RPG_BEATS = bs; RPG_BEATS_SRC = 'art';
+    }
+  }
+}
+// 舞台 HTML：有場景資料就照 items 生，沒有就用寫死的那一組
+function rpgStageHTML(pl, fSpr){
+  const notes = '<div class="rpg-notes" id="rpgNotes"><span>♪</span><span>♫</span><span>♪</span></div>';
+  const spr = {
+    o: html => `<div class="rpg-spr o" id="rpgO"${html.w}>${html.body}</div>`,
+    p: html => `<div class="rpg-spr p" id="rpgP"${html.w}>${html.body}<div class="rpg-anger" id="rpgAnger">💢</div></div>`,
+    f: html => `<div class="rpg-spr f hide" id="rpgF"${html.w}>${html.body}</div>`,
+  };
+  if(!RPG_ART.on){
+    return `<div class="rpg-stage" id="rpgStage">
+        <img class="rpg-door" id="rpgDoor" src="art/shop2-door-0.png" alt="">
+        ${notes}
+        ${spr.o({ w:'', body: pixArtHTML(SPR.owner, 96) })}
+        ${spr.p({ w:'', body: pixArtHTML(pl, 96) })}
+        ${spr.f({ w:'', body: pixArtHTML(SPR[fSpr] || SPR.e0, 96) })}
+        <img class="rpg-fg back" src="art/shop2-fg-back.png" alt="">
+        <img class="rpg-fg front" src="art/shop2-fg-front.png" alt="">
+      </div>`;
+  }
+  const sc = RPG_ART.scene;
+  const bg = [];
+  if(sc.bgColor) bg.push('background-color:' + sc.bgColor);
+  bg.push((sc.bg && sc.bg.src) ? `background-image:url('${sc.bg.src}')` : 'background-image:none');
+  let body = '';
+  for(const it of RPG_ART.statics) body += rpgItemHTML(it);
+  body += notes;
+  // 演員的圖不從 art/pixel 拿：玩家是他自己捏的角色、對手每一場不一樣，都是執行時才知道的。
+  // 只有老闆是固定的，所以老闆用工坊裡那一張（店主重畫就會換）。
+  const w = role => { const it = RPG_ART.actors[role], obj = it && RPG_ART.objs[it.obj];
+    return (it && obj) ? ` style="width:${PX.toPercent(sc, it, obj).width}"` : ''; };
+  const ownerObj = RPG_ART.actors.o && RPG_ART.objs[RPG_ART.actors.o.obj];
+  body += spr.o({ w:w('o'), body: (ownerObj && ownerObj.kind === 'pixel') ? PX.toSVG(ownerObj, RPG_ART.actors.o.frame || 0) : pixArtHTML(SPR.owner, 96) });
+  body += spr.p({ w:w('p'), body: pixArtHTML(pl, 96) });
+  body += spr.f({ w:w('f'), body: pixArtHTML(SPR[fSpr] || SPR.e0, 96) });
+  return `<div class="rpg-stage" id="rpgStage" style="${bg.join(';')}">${body}</div>`;
+}
+function rpgItemHTML(it){
+  const sc = RPG_ART.scene, obj = RPG_ART.objs[it.obj];
+  if(!obj) return '';
+  const pc = PX.toPercent(sc, it, obj);
+  const z = rpgZOf(PX.itemFoot(it, obj), it.layer);
+  const isDoor = RPG_ART.door && it.iid === RPG_ART.door.iid;
+  const st = `left:${pc.left};bottom:${pc.bottom};width:${pc.width};z-index:${z}${it.flip ? ';transform:scaleX(-1)' : ''}`;
+  const id = isDoor ? 'rpgDoor' : 'rpgItem-' + it.iid;
+  const cls = 'rpg-item' + (it.hidden ? ' hide' : '');
+  const fr = it.frame || 0;
+  if(obj.kind === 'image'){
+    const src = PX.framesOf(obj)[Math.min(fr, PX.framesOf(obj).length - 1)] || '';
+    return `<img class="${cls}" id="${id}" src="${src}" style="${st}" alt="">`;
+  }
+  return `<div class="${cls}" id="${id}" style="${st}">${PX.toSVG(obj, fr)}</div>`;
+}
+// 換某個舞台物件的格（門就是靠這個開關的）
+function rpgItemFrame(it, frame){
+  const el = document.getElementById(RPG_ART.door && it.iid === RPG_ART.door.iid ? 'rpgDoor' : 'rpgItem-' + it.iid);
+  const obj = RPG_ART.objs[it.obj]; if(!el || !obj) return;
+  const frames = PX.framesOf(obj), f = Math.max(0, Math.min(frames.length - 1, frame | 0));
+  if(obj.kind === 'image') el.src = frames[f] || '';
+  else el.innerHTML = PX.toSVG(obj, f);
+}
+
+let RPG_LW=448, RPG_LH=492; const RPG_SVG=78, RPG_FOOT=5;
+let RPG_POS = {
   p:{ door:[48,408],      // 剛推門進來，站在門口
       browse:[136,458],   // 自己逛（離櫃檯與長桌都夠遠）
       pay:[168,430],      // 結帳：站在櫃檯前
@@ -2165,11 +2296,32 @@ const RPG_POS = {
   f:{ out:[42,336], door:[42,344], in:[42,396] },
 };
 // 前景分兩層（back z6、front z20），小人依腳底 y 夾進去；同一層裡再照深度互相排序。
-const rpgZ = y => y < 402 ? 2
+// 沒讀到 art/pixel 時用的舊分層（前景後層固定 z6、前景前層 z20，小人依腳底 y 夾進去）
+const rpgZLegacy = y => y < 402 ? 2
                : y < 458 ? 7  + Math.round((y - 402) / 8)
                          : 21 + Math.round((y - 458) / 8);
-const rpgPc = q => ({ left:((q[0]-RPG_SVG/2)/RPG_LW*100).toFixed(2)+'%',
-                      bottom:((RPG_LH-(q[1]+RPG_FOOT))/RPG_LH*100).toFixed(2)+'%' });
+// 讀到場景 JSON 之後改用連續對應：腳底 y 直接換算成 z-index，
+// 靜態物件與小人用同一把尺，所以店主在工坊多擺一個箱子，遊戲裡的遮擋關係自動就對。
+function rpgZOf(foot, layer){
+  if(layer === 'back') return 1;
+  if(layer === 'front') return 999;
+  const t = Math.max(0, Math.min(1, (+foot || 0) / (RPG_LH || 492)));
+  return 2 + Math.round(t * 900);
+}
+const rpgZ = y => RPG_ART.on ? rpgZOf(y, 'auto') : rpgZLegacy(y);
+// 站位 → left%／bottom%。讀到場景 JSON 時照物件自己的腳點與縮放算（跟工坊完全同一條公式），
+// 沒讀到就用寫死的 78px 寬、腳底留 5px——兩者在 shop2 的差距是 0.03%，看不出來。
+function rpgPc(q, role){
+  const it = RPG_ART.on && role && RPG_ART.actors[role];
+  const obj = it && RPG_ART.objs[it.obj];
+  if(it && obj){
+    const at = PX.placeAt(it, obj, q[0], q[1]);
+    const pc = PX.toPercent(RPG_ART.scene, Object.assign({}, it, at), obj);
+    return { left: pc.left, bottom: pc.bottom };
+  }
+  return { left:((q[0]-RPG_SVG/2)/RPG_LW*100).toFixed(2)+'%',
+           bottom:((RPG_LH-(q[1]+RPG_FOOT))/RPG_LH*100).toFixed(2)+'%' };
+}
 let RPG_BEATS = [   // ✏️ 後台「序章劇本」可整份覆寫（gameConfig/roguelike.script.beats）
   { who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage:{p:'door',o:'counter',f:'out',door:'swing'} },
   { who:'', text:'櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
@@ -2204,15 +2356,7 @@ function rpgStart(beats, stage, beat){
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='pvp.html'">← 回品味生死鬥</button><span class="pill" style="margin-left:auto">🏪 巷子裡的唱片行</span></div>
     <div class="rpg" id="rpg">
-      <div class="rpg-stage" id="rpgStage">
-        <img class="rpg-door" id="rpgDoor" src="art/shop2-door-0.png" alt="">
-        <div class="rpg-notes" id="rpgNotes"><span>♪</span><span>♫</span><span>♪</span></div>
-        <div class="rpg-spr o" id="rpgO">${pixArtHTML(SPR.owner, 96)}</div>
-        <div class="rpg-spr p" id="rpgP">${pixArtHTML(pl, 96)}<div class="rpg-anger" id="rpgAnger">💢</div></div>
-        <div class="rpg-spr f hide" id="rpgF">${pixArtHTML(SPR[_rpg.stage.fSpr]||SPR.e0, 96)}</div>
-        <img class="rpg-fg back" src="art/shop2-fg-back.png" alt="">
-        <img class="rpg-fg front" src="art/shop2-fg-front.png" alt="">
-      </div>
+      ${rpgStageHTML(pl, _rpg.stage.fSpr)}
       <div id="rpgPanelWrap"></div>
       <div class="rpg-win" id="rpgWin" onclick="rpgTap()">
         <div class="rpg-name" id="rpgName"></div>
@@ -2222,15 +2366,33 @@ function rpgStart(beats, stage, beat){
         <div class="rpg-next" id="rpgNext">▼</div>
       </div>
     </div>`;
+  rpgFixNotesZ();
   rpgApplyStage({});
   rpgShow(_rpg.beat);
 }
 // 序章（推門 → 三選一 → 四張 → 男子嗆聲 → 對決）
-function renderShopScene(beat){ shopState(); rpgStart(RPG_BEATS, {p:'door',o:'counter',f:'out'}, beat||0); }
+// 音符固定掛在櫃檯上方：舊分層是 z5（前景後層 z6 的下面一格），
+// 換成連續 z 之後要照場景裡最靠後的那個前景物件算，不然音符會蓋在櫃檯前面。
+function rpgFixNotesZ(){
+  const n = document.getElementById('rpgNotes'); if(!n) return;
+  if(!RPG_ART.on){ n.style.zIndex = ''; return; }
+  let z = 900;
+  for(const it of RPG_ART.statics){
+    const obj = RPG_ART.objs[it.obj]; if(!obj || it.layer === 'back') continue;
+    z = Math.min(z, rpgZOf(PX.itemFoot(it, obj), it.layer));
+  }
+  n.style.zIndex = Math.max(2, z - 1);
+}
+async function renderShopScene(beat){
+  shopState();
+  // 等 art/pixel，但最多等 1.5 秒：序章是新玩家看到的第一個畫面，寧可用內建舞台也不能卡在載入中
+  try{ await Promise.race([rpgLoadArt(), new Promise(r => setTimeout(r, 1500))]); }catch(e){}
+  rpgStart(RPG_BEATS, {p:'door',o:'counter',f:'out'}, beat||0);
+}
 function rpgPut(id, key, pos){
   const el=document.getElementById(id), q=RPG_POS[key] && RPG_POS[key][pos];
   if(!el || !q) return;
-  const c=rpgPc(q); el.style.left=c.left; el.style.bottom=c.bottom; el.style.zIndex=rpgZ(q[1]);
+  const c=rpgPc(q, key); el.style.left=c.left; el.style.bottom=c.bottom; el.style.zIndex=rpgZ(q[1]);
 }
 // 走一段路線：斜線跨越 z 門檻（腳底 402）會在起步瞬間就切到錯的層、人直接穿進家具裡，
 // 所以繞路一律拆成幾段，每段的 z 值在整段裡都成立。
@@ -2246,11 +2408,15 @@ function rpgWalk(id, key, path){
 function rpgDoor(mode){
   const el=document.getElementById('rpgDoor'); if(!el) return;
   if(_rpg.doorT) _rpg.doorT.forEach(clearTimeout); _rpg.doorT=[];
-  const set=f=>{ el.src='art/shop2-door-'+f+'.png'; };
-  if(mode==='open'){ [1,2].forEach((f,k)=>_rpg.doorT.push(setTimeout(()=>set(f), k*190))); }
+  // 有場景資料就換那個物件的格（門是圖檔物件還是像素物件都行），沒有就照舊換 PNG 路徑
+  const door = RPG_ART.on ? RPG_ART.door : null;
+  const set = door ? (f => rpgItemFrame(door, f)) : (f => { el.src='art/shop2-door-'+f+'.png'; });
+  const FRAME = (PX && PX.DOOR_FRAME) || { shut:0, open:2 };
+  const SWING = (PX && PX.DOOR_SWING) || [[1,0],[2,190],[1,900],[0,1090]];
+  if(mode==='open'){ [1, FRAME.open].forEach((f,k)=>_rpg.doorT.push(setTimeout(()=>set(f), k*190))); }
   else if(mode==='swing'){        // 開→停一下→關（有人推門進來）
-    [[1,0],[2,190],[1,900],[0,1090]].forEach(([f,d])=>_rpg.doorT.push(setTimeout(()=>set(f), d)));
-  } else set(0);
+    SWING.forEach(([f,d])=>_rpg.doorT.push(setTimeout(()=>set(f), d)));
+  } else set(FRAME.shut);
 }
 function rpgApplyStage(st){
   Object.assign(_rpg.stage, st||{});
@@ -2262,9 +2428,27 @@ function rpgApplyStage(st){
   if(o){ o.classList.toggle('busy', !!S.oBusy); o.classList.toggle('dig', !!S.oDig); }
   const f=document.getElementById('rpgF');
   if(f){ f.classList.toggle('hide', S.f==='out'); if(st && st.fSpr) f.innerHTML=pixArtHTML(SPR[st.fSpr]||SPR.e0, 96); }
+  rpgApplySet(st);
   const n=document.getElementById('rpgNotes'); if(n) n.classList.toggle('on', !!S.notes);
   const a=document.getElementById('rpgAnger'); if(a) a.classList.toggle('on', !!S.anger);
   const p=document.getElementById('rpgP'); if(p){ p.classList.toggle('shake', !!S.anger); }
+}
+// 工坊的延伸語彙：stage.set{物件名:{frame,hidden}} 換舞台道具的格或顯隱、stage.hide{role:bool} 藏演員。
+// 遊戲端本來沒有這兩個，但格式裡有了，接上去店主就能用劇本控道具。
+function rpgApplySet(st){
+  if(!RPG_ART.on || !st) return;
+  if(st.hide) for(const role in st.hide){
+    const el = document.getElementById({ p:'rpgP', o:'rpgO', f:'rpgF' }[role]);
+    if(el) el.classList.toggle('hide', !!st.hide[role]);
+  }
+  if(!st.set) return;
+  for(const it of RPG_ART.statics){
+    const name = it.name || (RPG_ART.objs[it.obj] || {}).name;
+    const ss = st.set[name]; if(!ss) continue;
+    if('frame' in ss) rpgItemFrame(it, ss.frame);
+    if('hidden' in ss){ const el = document.getElementById((RPG_ART.door && it.iid === RPG_ART.door.iid) ? 'rpgDoor' : 'rpgItem-' + it.iid);
+      if(el) el.classList.toggle('hide', !!ss.hidden); }
+  }
 }
 function rpgShow(i){
   const b=_rpg.beats[i]; if(!b){ return; }
@@ -2378,8 +2562,9 @@ let TUT_EPILOGUE_BEATS = [   // ✏️ 同上（…script.epilogue）；stage／
   { who:'', text:'無止盡的品味試煉，開始了。', ui:'go' },
 ];
 function tutEpilogueBeats(){ return TUT_EPILOGUE_BEATS; }
-function renderTutEpilogue(){
+async function renderTutEpilogue(){
   saveRun('epilogue');
+  try{ await Promise.race([rpgLoadArt(), new Promise(r => setTimeout(r, 1500))]); }catch(e){}
   rpgStart(tutEpilogueBeats(), {p:'atdoor',o:'between',f:'in',fSpr:'e0'}, 0);
 }
 // 老闆的木箱：固定這三件（守／攻／續三個方向，都是 tier 1）——序章走完就是新手，
@@ -5080,7 +5265,7 @@ function applyConfig(cfg){
       const KEEP=['who','text','stage','ui','prompt'];
       const normBeat = b => { const o={}; KEEP.forEach(k=>{ if(b[k]!==undefined) o[k]=b[k]; }); if(typeof o.who!=='string') o.who=''; return o; };
       const okBeats = a => Array.isArray(a) && a.length>0 && a.every(b=>b && typeof b==='object' && typeof b.text==='string' && b.text.trim());
-      if(okBeats(cfg.script.beats)) RPG_BEATS = cfg.script.beats.map(normBeat);
+      if(okBeats(cfg.script.beats)){ RPG_BEATS = cfg.script.beats.map(normBeat); RPG_BEATS_SRC = 'cfg'; }
       if(okBeats(cfg.script.epilogue)) TUT_EPILOGUE_BEATS = cfg.script.epilogue.map(normBeat);
       if(cfg.script.acePick && typeof cfg.script.acePick==='object')
         ATTRS.forEach(a=>{ const v=cfg.script.acePick[a]; if(typeof v==='string' && v.trim() && SHOP_ACE_INFO[a]) SHOP_ACE_INFO[a].pick=v; });
@@ -5098,6 +5283,7 @@ function applyConfig(cfg){
 // 啟動：先等後台設定（最多等一下），再開遊戲
 async function bootstrap(){
   $app.innerHTML = '<div class="center muted" style="padding:40px">載入設定中…</div>';
+  rpgLoadArt();            // 舞台資料（art/pixel）跟後台設定並行抓，序章開場就不用等
   initRoguePlayer();
   let cfg=null;
   // __rogueCfg 由 module 晚一步掛上 → 先輪詢等它出現再 race，否則後台設定永遠讀不到

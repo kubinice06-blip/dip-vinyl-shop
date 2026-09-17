@@ -1,0 +1,22 @@
+{
+ "id": "shop2-door",
+ "name": "門",
+ "kind": "image",
+ "w": 192,
+ "h": 426,
+ "frames": [
+  "art/shop2-door-0.png",
+  "art/shop2-door-1.png",
+  "art/shop2-door-2.png"
+ ],
+ "anchor": {
+  "x": 96,
+  "y": 426
+ },
+ "tags": [
+  "圖檔",
+  "門"
+ ],
+ "notes": "三格＝關／半開／全開。門洞在場景邏輯座標 x 12–86、y 156–325，放場景時 scale 0.4。",
+ "updatedAt": 1788881710620
+}
