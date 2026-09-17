@@ -1,0 +1,288 @@
+{
+ "schemaVersion": 1,
+ "batch": "c146-20260917",
+ "albums": [
+  {
+   "artist": "Les McCann Ltd.",
+   "album": "Les McCann Ltd. Plays The Shout",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 058f6a2a-3d95-4ab9-8ede-19549bf26b3c。回問 release-group 端點（inc=artist-credits+releases）：title「Les McCann Ltd. Plays The Shout」、artist-credit「Les McCann Ltd.」（d7d2310a **Group**，無 country、life-span 全空）、first-release-date **1981**、primary-type Album、**secondary-types [\"Live\"]**、轄下 3 個 release。release 端點（inc=media+labels+recordings+artist-credits）：abe3a0cb（**1981 US Official 12\" Vinyl 8 軌，Pacific Jazz LN-10083**，無 barcode）、dd42876a（2011 ES CD 13 軌，Fresh Sound FSR-CD 656，8427328606561）、f328897a（2018-01-12 GB Digital Media 9 軌，Blue Note，catno `[none]`，0602567286837，title 作「The Shout」，每軌後綴「live at The Bit, Hollywood, CA / 1960」）。**MB 沒有建 1960 年的 Pacific Jazz PJ-7／Stereo-7 首發**（第 787／846 條形狀，本批第二嚴重的漏建）；catno 由 Discogs 原壓 12723685／12921521 與 Cash Box 1961-08-19 p26 廣告補齊。原盤八軌（release/abe3a0cb?inc=recordings）：But Not For Me／A Foggy Day／The Shout／Set Call (Sonar)／C Jam Blues／Jubilation／Night In Tunisia／Cute。編制與製作（Discogs 12723685 credits）：Les McCann 鋼琴、Leroy Vinnegar 貝斯、Ron Jefferson 鼓；Richard Bock 製作兼錄音；封面設計 Woody Woodward、封面攝影 Ivan Nagy、內頁文字 Vahan K. Gregory。CAA release-group 層 8 圖，來源 release ＝ dd42876a。",
+    "rgMbid": "058f6a2a-3d95-4ab9-8ede-19549bf26b3c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/058f6a2a-3d95-4ab9-8ede-19549bf26b3c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 63,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=63，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "好萊塢的 The Bit 連錄兩晚，八首進了碟，另外四首落到別處。1960 年 7 月 16、17 日兩晚，McCann 的鋼琴、Leroy Vinnegar 的貝斯、Ron Jefferson 的鼓。八軌裡除了〈A Foggy Day〉這類標準曲，還有他自己寫的〈The Shout〉；同場另錄的四首當年落在別的盤上。這是他的第二張 LP、第一張現場盤。1960 年 8 月底上市，Richard Bock 製作兼錄音，Pacific Jazz PJ-7。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=058f6a2a-3d95-4ab9-8ede-19549bf26b3c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/pacific-jazz-records/discography-1959-1960/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-09-05.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-09-19.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-10-31.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1961/CB-1961-08-19.pdf",
+     "https://api.discogs.com/database/search?catno=PJ-7",
+     "https://itunes.apple.com/lookup?id=1443154053&country=us&entity=song&limit=50",
+     "https://en.wikipedia.org/wiki/Les_McCann_Ltd._Plays_the_Shout",
+     "https://musicbrainz.org/release-group/058f6a2a-3d95-4ab9-8ede-19549bf26b3c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/55/b3/bb/55b3bb96-35ef-e031-b35b-34af54a0b99a/mzaf_4658565917369476940.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443154053",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jimmy Smith",
+   "album": "Plays Fats Waller",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a3118df2-ff62-4721-a164-8391e8d8b544。回問 release-group 端點（inc=artist-credits+releases）：title「Plays Fats Waller」、artist-credit「Jimmy Smith」（**4f8a0d9b Person US**，與池中 32 列同一實體；第 179 條同名撞擊已核 type／area）、first-release-date **1982**、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點（inc=media+labels+recordings+artist-credits）：48df2bce（**1982 US Official 12\" Vinyl 7 軌，Applause Records APBL-2318**，無 barcode）、7aee85ec（2008 US CD 7 軌，Blue Note 50999 2 15369 2 2，5099921536922）、8b75f50b（2008-09-05 DE CD 7 軌，同號＋EMI catno 空）、a761e049（2008 US CD 7 軌，同號＋BMG Direct Marketing D173929，barcode 空）。**MB 沒有建 1962 年的 BLP 4100／BST 84100**；catno 由 jazzdisco 4000 系列頁與 Discogs master 374543 補齊。原盤七軌盤面序（Discogs 2454632）：A 面 Everybody Loves My Baby／Squeeze Me／Ain't She Sweet／Ain't Misbehavin'，B 面 Lulu's Back in Town／Honeysuckle Rose／I've Found a New Baby；**jazzdisco 該頁以 take 號排（tk.1／2／4／8／11／14／16），與盤面序不同**（第 850 條第 4 點的同形，以盤面序為準）。⚠ **MB 德國那筆 8b75f50b 的四個曲名用 U+2019 彎撇號**（Ain’t She Sweet／Ain’t Misbehavin’／Lulu’s／I’ve），其餘三筆用 ASCII。錄音 1962-01-23 Van Gelder Studio, Englewood Cliffs；Jimmy Smith 風琴、Quentin Warren 吉他、Donald Bailey 鼓；Alfred Lion 製作（維基 infobox）。CAA release-group 層 11 圖，來源 release ＝ 8b75f50b。",
+    "rgMbid": "a3118df2-ff62-4721-a164-8391e8d8b544",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a3118df2-ff62-4721-a164-8391e8d8b544/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 669,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=669，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三個人一天錄完七首 Fats Waller，低音全靠風琴腳踏板。1962 年 1 月 23 日在 Van Gelder 一場錄完，Hammond 風琴、Quentin Warren 的吉他、Donald Bailey 的鼓。七首都出自 Fats Waller 的圈子，〈Honeysuckle Rose〉近七分鐘最長。這支三重奏兩年前錄過《Crazy! Baby》，兩張曲目零重複。1962 年 8 月上市，Alfred Lion 製作，Blue Note BLP 4100。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a3118df2-ff62-4721-a164-8391e8d8b544&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1962/Billboard%201962-08-11.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1962/CB-1962-08-11.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1962/CB-1962-08-25.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1963/Billboard%201963-01-05.pdf",
+     "https://api.discogs.com/releases/2454632",
+     "https://en.wikipedia.org/wiki/Plays_Fats_Waller",
+     "https://musicbrainz.org/release-group/a3118df2-ff62-4721-a164-8391e8d8b544"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/23/ef/11/23ef1185-9db9-ec8f-cde0-ea08ca416261/mzaf_6242285229029232856.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "608598522",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Michel Petrucciani",
+   "album": "100 Hearts",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8388a46d-cbde-3ecd-81ef-4bdd654bf3f7。回問 release-group 端點（inc=artist-credits+releases）：title「100 Hearts」、artist-credit「Michel Petrucciani」（2b75141c Person FR）、first-release-date **1984**、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels+recordings+artist-credits）：b61684a5（**1984 US Official CD 6 軌，Concord Jazz CCD-43001**，013431300120）、d5143ec9（1999 XE CD 6 軌，Blue Note 7243 5 38329 2 6，724353832926）。**MB 沒有建 1984 年的 The George Wein Collection GW-3001 黑膠首發**（第 787／846 條形狀，本批第三處漏建），catno 與廠牌由 Discogs 4267514／13494847 與 Cash Box 1984-04-28 評介補齊。六軌（release/b61684a5?inc=recordings）：Turn Around／Three Forgotten Magic Words／Silence／St. Thomas／Pot Pouri: Someday My Prince Will Come · All the Things You Are · A Child Is Born · Very Early／100 Hearts；⚠ **MB 把串燒那軌拼成「Pot Pouri」，Discogs 原壓作「Pot Pourri (A Medley)」**（MB 少一個 r）。錄音 1983 年夏（維基作 June 1983）RCA Studio A, New York；獨奏鋼琴；Gabreal Franklin 製作。CAA release-group 層 1 圖，來源 release ＝ b61684a5。",
+    "rgMbid": "8388a46d-cbde-3ecd-81ef-4bdd654bf3f7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8388a46d-cbde-3ecd-81ef-4bdd654bf3f7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4289,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十一歲那年第一次為美國廠牌錄音，六首獨奏鋼琴裡只有兩首是自己的。1983 年夏天在紐約 RCA Studio A 錄成，全盤只有他一個人的鋼琴。借來的曲子出自 Ornette Coleman、Charlie Haden 與 Sonny Rollins，另有一段十四分鐘的四曲串燒。它是 George Wein 新開廠牌的第一號，1984 年 4 月上市，Gabreal Franklin 製作。同年 7 月 28 日它進 Billboard 爵士榜，最好名次第 29 名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8388a46d-cbde-3ecd-81ef-4bdd654bf3f7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/4267514",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1984/CB-1984-03-10.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1984/BB-1984-04-28.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1984/CB-1984-04-28.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1984/BB-1984-09-22.pdf",
+     "https://en.wikipedia.org/wiki/100_Hearts",
+     "https://itunes.apple.com/lookup?id=724838710&country=us",
+     "https://musicbrainz.org/release-group/8388a46d-cbde-3ecd-81ef-4bdd654bf3f7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/31/c4/6b31c4dc-fa42-663c-6513-a6919492d305/mzaf_7483043854554805682.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724838710",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charles Lloyd",
+   "album": "A Night in Copenhagen",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fac862b6-1206-4e0c-b0d4-59fc65aa51c0。回問 release-group 端點（inc=artist-credits+releases）：title「A Night in Copenhagen」、artist-credit「The Charles Lloyd Quartet」（dbbc9be6 **Group** US，life-span 空）、first-release-date **1984**、primary-type Album、**secondary-types 空（實際是現場盤，第 397 條漏標）**、轄下 2 個 release。release 端點（inc=media+labels+recordings+artist-credits）：cc6a2917（**1984 US Official 12\" Vinyl 5 軌，Blue Note catno 登成「BL 85104」**，無 barcode）、1dfafef3（1993-02-09 US CD 7 軌，Blue Note CDP 0777 7 85104 2 0，077778510420）。**MB 漏建的有**：1985 法國壓（Discogs 4941586）、1984／85 加拿大壓（5448543）、兩款卡帶（4BT 85104 6207440／4BTC-85104 21847969）、希臘壓（9681650）。原盤五軌（release/cc6a2917?inc=recordings）：Lotus Land (To Thakur and Trane)／Lady Day／El Encanto／Third Floor Richard／Night Blooming Jasmine；CD 版另加 Of Course, Of Course／Sweet Georgia Bright。錄音 1983-07-11 Copenhagen Jazz Festival，丹麥廣播電台（Danmarks Radio）錄音；Charles Lloyd 次中音／長笛／嗩吶、Michel Petrucciani 鋼琴、Palle Danielsson 貝斯、Son Ship（Woody）Theus 鼓、Bobby McFerrin 人聲（第 4 軌）；製作 Charles Lloyd／Gabreal Franklin／Dorothy Darr（Billboard 1985-03-16 評介欄的 PRODUCERS 欄與維基 infobox 一致）。CAA release-group 層 3 圖，來源 release ＝ 1dfafef3。",
+    "rgMbid": "fac862b6-1206-4e0c-b0d4-59fc65aa51c0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fac862b6-1206-4e0c-b0d4-59fc65aa51c0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 153,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=153，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "哥本哈根那一晚錄於 1983 年，上市時 Blue Note 剛重新開張。1983 年 7 月 11 日丹麥廣播電台在哥本哈根爵士節錄下：Lloyd 吹次中音薩克斯風、長笛與嗩吶，Michel Petrucciani 彈鋼琴，〈Third Floor Richard〉有 Bobby McFerrin 人聲。五軌全是他自己的曲子，〈Night Blooming Jasmine〉十四分鐘最長。1985 年 2 月隨重啟第一批新片上市，Blue Note BT 85104。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=fac862b6-1206-4e0c-b0d4-59fc65aa51c0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/database/search?catno=BT%2085104",
+     "https://api.discogs.com/releases/2665609",
+     "https://www.jazzdisco.org/blue-note-records/catalog-85100-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1985/BB-1985-02-16.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1985/BB-1985-02-23.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1985/BB-1985-03-16.pdf",
+     "https://itunes.apple.com/lookup?id=1454405968&country=us&entity=song&limit=50",
+     "https://en.wikipedia.org/wiki/A_Night_in_Copenhagen",
+     "https://musicbrainz.org/release-group/fac862b6-1206-4e0c-b0d4-59fc65aa51c0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c5/ed/b1/c5edb1b6-16ca-e769-67f4-d27c62aa4fd6/mzaf_2087574065906647910.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1454405968",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

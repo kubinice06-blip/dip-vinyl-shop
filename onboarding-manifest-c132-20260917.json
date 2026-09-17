@@ -1,0 +1,2622 @@
+{
+ "schemaVersion": 1,
+ "batch": "c132-20260917",
+ "albums": [
+  {
+   "artist": "渡辺貞夫",
+   "album": "My Romance: Sadao Plays Ballads",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6ecf258a-98da-4e67-b995-ed300df0610c。回問 release-group/<id>?inc=artist-credits 與 release?release-group=<id>&inc=labels+media+artist-credits 確認：title「My Romance: Sadao Plays Ballads」、artist-credit「Sadao Watanabe」（實體 378278bf-9cdd-4b4a-b319-38eddab9f1b1）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1967 Takt JAZZ-5 12 吋 13 軌／XW 2018-10-19 Savoy Records 數位 13 軌，題《Sadao Watanabe Plays Ballads》）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 廠牌是用 release 端點回問來的（第 259 條：release-group 端點不回 label-info）。刻意不釘：1041020f-39ab-431a-a2a4-b7a6b26cc150《Jazz & Bossa》1967（Takt JAZZ-1，CAA 404）、54892085-37cf-4716-a965-1df1979af185《Iberian Waltz》1967（Takt JAZZ-7，credit 是 Sadao + Charlie〈Mariano〉合掛）、7d1f1419-d15d-4541-b4fb-0efa7d719302《Sadao Watanabe Plays》1966-04-05（Polydor SLJM-1262，CAA 404）。",
+    "rgMbid": "6ecf258a-98da-4e67-b995-ed300df0610c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6ecf258a-98da-4e67-b995-ed300df0610c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十三首全是美國歌本裡的老歌，回國第二年的他，一首自己的曲子都沒放。1965 年返日後他在日本コロムビア的 Takt 爵士線落腳，這張抒情盤的品番 JAZZ-5 排在該序列的頭幾號。錄音分 1967 年 4 月 25 日與 5 月 9 日兩天完成，十三首全是美國標準曲，沒有一首自作曲。編制是中音薩克斯風兼長笛、鋼琴、貝斯與鼓的四重奏，整張收在慢板與中板；5:14 的〈Sometimes I Feel Like a Motherless Child〉是十三首裡唯一的靈歌素材。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6ecf258a-98da-4e67-b995-ed300df0610c&fmt=json&inc=media+labels+artist-credits",
+     "https://musicbrainz.org/ws/2/release/b6023508-ea9c-474a-8e4b-d85fc6e5b0f2?fmt=json&inc=recordings",
+     "https://tower.jp/item/485595",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB",
+     "https://columbia.jp/artist-info/watanabesadao/info/59291.html",
+     "https://musicbrainz.org/release-group/6ecf258a-98da-4e67-b995-ed300df0610c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/3d/25/063d25cd-8e47-1694-7321-8fac63971221/mzaf_6561367903704219196.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1868591013",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺貞夫",
+   "album": "Sadao Meets Brazilian Friends",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 63578158-c7d1-39b5-9fce-17052b739bf6。回問 release-group 與 release 兩個端點確認：title「Sadao Meets Brazilian Friends」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1968-11、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1968-11 Columbia XMS-10003-CT 12 吋 12 軌，release 的 credit 寫 Sadao Watanabe／JP 1989 DENON DC-8557 CD 12 軌，credit 寫 渡辺貞夫）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 ⚠ 同 RG 在 jp-columbia.json 與 jp-denon.json 兩份列舉檔各出現一次（同一個 rgMbid，只是被兩個廠牌實體各撈到一次），不是兩張碟。 刻意不釘：4cefbabc-7a38-4e9d-8467-37545134edf4《Sadao Plays Bacharach and Beatles》1969（Columbia XMS-10010-CT，CAA 200，額度未收）、e2c1d3f0-ac7b-4a6b-885d-a45a4ca60bb9《Music Break》1969（Columbia XMS-10017-CT，CAA 200，Apple 標 Live 1967，額度未收）。",
+    "rgMbid": "63578158-c7d1-39b5-9fce-17052b739bf6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/63578158-c7d1-39b5-9fce-17052b739bf6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 25,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1968 年 7 月的聖保羅，台上除了他，八個人全是巴西當地的樂手。他在 Berklee 留學期間經由 Gary McFarland 接觸 bossa nova，三年後把這套節奏錄成一整張。1968 年 7 月 15 日，他在聖保羅一天錄完十二首，伴奏的八位全是當地樂手，管風琴、顫音琴與吉他都由他們擔任。同年 11 月，日本コロムビア的 Takt 線以 XMS 序列發行了這張碟。十二首多在兩到三分半之間，兩首同名的〈Ritmo〉分置兩面，是全碟最短的兩首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=63578158-c7d1-39b5-9fce-17052b739bf6&fmt=json&inc=media+labels+artist-credits",
+     "https://www.sadao.com/en/discography/015-sadao-meets-brazilian-friends-sadao-brazilian8-2/",
+     "https://musicbrainz.org/ws/2/release/825eabbd-fe20-4770-aa50-3a35bdb420b4?fmt=json&inc=recordings",
+     "https://musicbrainz.org/ws/2/release/825eabbd-fe20-4770-aa50-3a35bdb420b4?fmt=json&inc=artist-rels+recordings",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB",
+     "https://musicbrainz.org/release-group/63578158-c7d1-39b5-9fce-17052b739bf6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/fc/89/c0fc8902-50b8-4089-9536-00f681173776/mzaf_3665912007718855046.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1868591489",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺貞夫",
+   "album": "Dedicated to Charlie Parker",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a2abeea8-054e-45aa-8568-b720fa786c9b。兩個端點回問確認：title「Dedicated to Charlie Parker」、artist-credit「Sadao Watanabe」（實體 378278bf）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1969 Columbia XMS-10018-CT 12 吋 6 軌／JP 1985-12-21 DENON 32C38-7689 CD 6 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 同一個 rgMbid 在 jp-columbia.json 與 jp-denon.json 各出現一次（廠牌實體重覆撈取，不是兩張碟）。刻意不釘：ea469f1a《Swing Journal Jazz Workshop 2 - Sadao Watanabe / Dedicated to Charlie Parker》1974（同曲目的 Swing Journal 企畫盤，另立 RG）。",
+    "rgMbid": "a2abeea8-054e-45aa-8568-b720fa786c9b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a2abeea8-054e-45aa-8568-b720fa786c9b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 17,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場就是〈Parker's Mood〉，八分四十三秒——銀座那場追悼音樂會的實況。1969 年 3 月 15 日，那場音樂會在銀座ヤマハホール舉行，整張是當晚的實況錄音，也是他 1960 年代末在 Takt 線留下的最後一批錄音之一。六首、全長約四十分鐘，開場那首與 10:10 的〈Au Privave〉是兩根長柱，中間夾著兩首四分多鐘的抒情曲。台上是他的中音薩克斯風四重奏，小號手日野皓正以來賓身分加入；唱片在同年 9 月發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a2abeea8-054e-45aa-8568-b720fa786c9b&fmt=json&inc=media+labels+artist-credits",
+     "https://columbia.jp/artist-info/watanabesadao/discography/COCB-54259.html",
+     "https://musicbrainz.org/ws/2/release/50b9a603-6404-44f5-acb5-1bb490cd067f?fmt=json&inc=recordings",
+     "https://music.apple.com/jp/album/dedicated-to-charlie-parker-live-1969/1868592310",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB",
+     "https://musicbrainz.org/release-group/a2abeea8-054e-45aa-8568-b720fa786c9b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/32/5b/aa325b9c-7728-fe72-6a30-66ed6036dfe2/mzaf_10922828478458111038.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1868592310",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺貞夫",
+   "album": "Pastoral",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a4d3707b-67e9-4633-a8b8-6e23d57adc0d。兩個端點回問確認：title「Pastoral」、artist-credit「Sadao Watanabe」（實體 378278bf）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1969 CBS/Sony SONP 50130-J 12 吋 8 軌 Official，無 barcode）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 刻意不釘（同屬 CBS/Sony 線、CAA 200、額度未收）：df94c614-4280-4156-a86c-71b73a9bfc98《Live at the Junk》1970（SONP 50221-J，Album/Live）、a11be8fb-83e6-4dd7-80e6-206c857ec94f《Mbali Africa》1974（SOPW 27~28）、aebeb18b-4971-4a18-9431-e861f5ae080f《At Pit Inn》1975（SOPN 113，Album/Live）。刻意不釘（合掛，第 258／321 條）：dd031e02-40bd-40e0-acb2-2b58d3c046d1《Round Trip》1970（credit 是 Sadao Watanabe + Chick Corea + Miroslav Vitouš + Jack DeJohnette 四人平列）、8e14690a-edba-4fc2-b6e7-a6eff182d1eb《Kenya Ya Africa》1973（+ Inter-African Theatre Group）。",
+    "rgMbid": "a4d3707b-67e9-4633-a8b8-6e23d57adc0d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a4d3707b-67e9-4633-a8b8-6e23d57adc0d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 34,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八首都出自他自己的筆，電鋼琴與電貝斯把 bossa 的節奏推去了插電那一邊。離開 Takt 線之後，這是他在 CBS/Sony 的第一批作品，1969 年 10 月 21 日發行、品番 SONP 50130-J，也是他頭一次整張都用自作曲，八首的作曲與編曲都由他一個人包辦。編制擴到八人：薩克斯風與長笛、吉他、電貝斯、鼓、電鋼琴、顫音琴，再加兩支 flugelhorn。三首十分鐘以上的長篇與四首兩分鐘以內的短曲交錯排列，〈Bridge〉只有 52 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a4d3707b-67e9-4633-a8b8-6e23d57adc0d&fmt=json&inc=media+labels+artist-credits",
+     "https://www.sadao.com/en/discography/018-pastoral-sadao-watanabe-2/",
+     "https://endlessplanets.blogspot.com/2014/04/sadao-watanabe-pastoral-1969.html",
+     "https://musicbrainz.org/ws/2/release/4d7d03bf-6152-4a95-ab28-e7759070b6dd?fmt=json&inc=recordings",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB",
+     "https://musicbrainz.org/release-group/a4d3707b-67e9-4633-a8b8-6e23d57adc0d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺貞夫",
+   "album": "Paysages",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0a767962-36de-4f2e-9c6f-a0f619c46d2e。兩個端點回問確認：title「Paysages」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 4 個 release 全數 Official（JP 1971 CBS/Sony SOPC 57135-J 12 吋 5 軌／JP 1997-09-21 Sony Records SRCS 9329 CD 5 軌／JP 2007-06-20 Sony Records International SICP 10040 Hybrid SACD 5 軌／JP 2009-06-20 Sony Records International SICP 20152 Blu-spec CD 5 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，disambiguation「Japanese jazz saxophonist」，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG，《Minton Blues》無日期，與 本田竹曠 合掛）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。本批五張全部掛個人實體、credit 亦為本人，不涉編制掛名。 廠牌與載體全部出自 release 端點（第 259 條）。",
+    "rgMbid": "0a767962-36de-4f2e-9c6f-a0f619c46d2e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0a767962-36de-4f2e-9c6f-a0f619c46d2e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五個人裡有兩個鼓手，貝斯是當時住在日本的 Gary Peacock。兩年前的《Pastoral》還走在電氣化的 bossa 上，1971 年 6 月 22 日錄下的這張則整個轉向自由即興。五重奏的配置是中音與高音薩克斯風兼長笛、鋼琴兼電鋼琴、低音提琴，以及富樫雅彦與村上寛同時在場的兩套鼓，節拍被拆成兩層。五首裡三首超過十分鐘，〈Space Is Not a Place〉13:00 最長。唱片於同年 9 月 21 日發行，品番 SOPC 57135-J。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=0a767962-36de-4f2e-9c6f-a0f619c46d2e&fmt=json&inc=media+labels+artist-credits",
+     "https://www.sadao.com/en/discography/024-paysages-sadao-watanabe-2/",
+     "https://musicbrainz.org/ws/2/release/c5ce6b10-8e4e-4966-ab29-d3dac6f20a90?fmt=json&inc=recordings+artist-rels",
+     "https://ticro.com/products/s00011073",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://musicbrainz.org/release-group/0a767962-36de-4f2e-9c6f-a0f619c46d2e"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺貞夫",
+   "album": "Open Road",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e868426b-bc3d-42cd-8215-3789ea419f1f。兩個端點回問確認：title「Open Road」、artist-credit「渡辺貞夫」（實體 378278bf）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1973 CBS/Sony SOPJ-43~44 12 吋×2，8＋5 軌／JP 2000-03-23 SME Records SRCS 9592 ＋ SRCS 9593 CD×2，8＋5 軌）。藝人實體：個人 渡辺貞夫 378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person／JP，名下 88 個 RG）；渡辺貞夫カルテット d68a14bd-5bd4-4c16-a2a2-c9026c3e75c5（1 個 RG）；Sadao Watanabe Quintet 233f37a1-e9e2-4327-8625-7c5a6d9d9db6（4 個 RG）。 廠牌與載體出自 release 端點（第 259 條）。刻意不釘（CAA 404，列入未收）：1041020f《Jazz & Bossa》1967（Takt JAZZ-1）、7d1f1419《Sadao Watanabe Plays》1966-04-05（Polydor SLJM-1262）。",
+    "rgMbid": "e868426b-bc3d-42cd-8215-3789ea419f1f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e868426b-bc3d-42cd-8215-3789ea419f1f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 22,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1973 年 5 月 2 日的日比谷，一個晚上十三首全新曲，錄成兩張黑膠。那一夜留下的是實況錄音，集結了他當時能召集到的最大陣容：小號、長號與次中音薩克斯風的三管前線，加上鋼琴三重奏與打擊，外掛一組弦樂，次中音的峰厚介與鋼琴的本田竹広都在台上。十三首全是原創曲，全長近兩小時；兩張黑膠的分佈截然不同——第一張八首多落在三到七分鐘，壓軸的〈Tanza Frills〉14:13 是全碟最長的一首，第二張五首卻有四首超過十分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e868426b-bc3d-42cd-8215-3789ea419f1f&fmt=json&inc=media+labels+artist-credits",
+     "https://www.sadao.com/en/discography/026-open-road-sadao-watanabe-2/",
+     "https://musicbrainz.org/ws/2/release/51e523f8-42b6-4130-aa66-7ca4cb9ac904?fmt=json&inc=recordings",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB",
+     "https://musicbrainz.org/release-group/e868426b-bc3d-42cd-8215-3789ea419f1f"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日野皓正",
+   "album": "Feelin' Good",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 47bcf2b5-d88f-4116-85b7-966cfa29f320。兩個端點回問確認：title「Feelin’ Good」（U+2019）、artist-credit「日野皓正」（實體 60d3fa1e）、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1968 12 吋 6 軌，**label-info 空**／JP 2018-10-24 Columbia COCB-54267 CD 7 軌）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 刻意不釘：0a9b5163-2bc2-471a-81d9-3a9d7f2a45c1《Swing Journal Jazz Workshop 1: Terumasa Hino Concert》1969（Album/Live，1969 那筆 release 同樣沒掛廠牌，CAA 200，額度未收）、8ac416e9-8572-4ca0-8341-aa777e00f0cb《Alone Together》1970（CAA 200，1970 那筆亦無廠牌，額度未收；⚠ 盤名與池中既有的《Alone, Alone and Alone》只差幾個字，是兩張不同的碟，日後收要在 risk 互指）。",
+    "rgMbid": "47bcf2b5-d88f-4116-85b7-966cfa29f320",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/47bcf2b5-d88f-4116-85b7-966cfa29f320/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首裡收了一首〈Lucy in the Sky With Diamonds〉——1968 年的東京。1964 年他加入白木秀雄的五重奏當團員，1967 年推出領銜首作，這張 1968 年 6 月錄下的碟是接續的第二張，屬日本コロムビア的 Takt 系列。原盤六首裡有兩首翻唱，另一首是音樂劇歌曲〈Feeling Good〉，兩首都夾在原創曲之間。曲長落差不小：〈And Satisfy〉8:55 是最長的一首，〈Mississippi Dip〉3:27 最短。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=47bcf2b5-d88f-4116-85b7-966cfa29f320&fmt=json&inc=media+labels+artist-credits",
+     "https://columbia.jp/artist-info/hinoterumasa/discography/COCB-54267.html",
+     "https://musicbrainz.org/ws/2/release/fd3a3102-a584-4826-b1ba-f6f8992a9ea4?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://columbia.jp/artist-info/hinoterumasa/info/93441.html",
+     "https://musicbrainz.org/release-group/47bcf2b5-d88f-4116-85b7-966cfa29f320"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/f8/c4/81f8c46f-2fa3-cfa1-b2c5-8a36db3b8871/mzaf_7773303050107537922.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1894176613",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日野皓正クインテット",
+   "album": "Into the Heaven",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7fa61991-e892-4ba0-aa51-eb31ac066e58。兩個端點回問確認：title「INTO THE HEAVEN」、artist-credit「日野皓正クインテット」（實體 65c54d15-1514-4459-81dc-a7ff3e217a92）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1970 Columbia XMS-10025-CT 12 吋 3 軌／JP 1997-02-21 Takt COCY-80506 CD 3 軌）。**重複 RG：313f4d8a-aabb-48dd-bbd4-47e33910442c 是同一張碟的英文 credit 版本，CAA 404，刻意不釘。**藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 五重奏實體名下另有 10636df5-08b2-4bed-b777-a57ae075072a《Peace And Love》1971-01（CANYON CAJ-1004，CAA 200）與 4e4bd0e9-a113-4264-87b4-b0732b70c93b《ラブ・ネイチャー》1971（CANYON J-1006／Love Records，CAA 200，MB first-release-date 記 1971 但轄下有 1979 Overseas ULS-1854-V 等九筆）、ea803869-dbcd-4062-9d57-a3d41e655bae《Live!》1973（**池中已有**）、a75fccaf《Counter Current》2007——CANYON 那兩張 CAA 200、額度未收。",
+    "rgMbid": "7fa61991-e892-4ba0-aa51-eb31ac066e58",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7fa61991-e892-4ba0-aa51-eb31ac066e58/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三首而已，同名曲一口氣二十分零六秒，A 面整面就這一首。1970 年的這張碟是他追新音色的過渡期作品：電鋼琴與八拍的節奏把五重奏推離了 1960 年代的硬式咆勃。原盤三首，B 面放的是〈Love More Train〉12:50 與〈Feeling Blue As You Are Feel〉3:04，長短懸殊。五個人的編制是小號、次中音薩克斯風、電鋼琴、貝斯與鼓——原聲鋼琴整張缺席，和聲的顏色全交給電鋼琴。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7fa61991-e892-4ba0-aa51-eb31ac066e58&fmt=json&inc=media+labels+artist-credits",
+     "https://artist.cdjournal.com/d/into-the-heaven--1/3200060816",
+     "https://music.apple.com/jp/album/into-the-heaven/1894177768",
+     "https://musicbrainz.org/ws/2/release/a7d9ce2c-fbff-4d4d-a47e-3e115b6ade4b?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://musicbrainz.org/release-group/7fa61991-e892-4ba0-aa51-eb31ac066e58"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a9/6e/64a96ebe-5f1f-1eb5-dffa-34d89ba57038/mzaf_2127908961795942596.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1894177768",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日野皓正クインテット",
+   "album": "Hino at Berlin Jazz Festival '71",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0443bd0a-2085-484e-9b7d-c824b66c620e。兩個端點回問確認：title「Hino at Berlin Jazz Festival ’71」、artist-credit「Terumasa Hino Quintet」（實體 65c54d15，MB 主名 日野皓正クインテット）、first-release-date 1971、primary-type Album、secondary-types **空**（見 risk）、轄下 3 個 release 全數 Official（JP 1971 VICTOR WORLD GROUP SMJX-10128 12 吋 4 軌／JP 1990 CD 4 軌，label-info 空，credit 日野皓正／JP 1990-09-21 Victor VICJ-23004 CD 4 軌，題多一個 the）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 列舉檔 jp-victor.json 把這一筆歸在 Victor／JVC 名下，與 release 端點回問到的 VICTOR WORLD GROUP 相符。",
+    "rgMbid": "0443bd0a-2085-484e-9b7d-c824b66c620e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0443bd0a-2085-484e-9b7d-c824b66c620e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1964 年他是隨別人的團去柏林的小號手；七年後他帶自己的五重奏回去。這張是 1971 年柏林爵士節的實況錄音，台上的編制沒有鋼琴——小號、次中音薩克斯風、吉他、貝斯與鼓，和聲的位置由吉他頂著。四首、全長近五十七分鐘，其中三首超過十二分鐘，長篇即興的空間被拉得很開。收尾的〈Alone, Alone and Alone〉7:33 是四首裡最短的一首，也正是他 1967 年出道盤的同名曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=0443bd0a-2085-484e-9b7d-c824b66c620e&fmt=json&inc=media+labels+artist-credits",
+     "https://ticro.com/products/t00004141",
+     "https://musicbrainz.org/ws/2/release/1d69244a-f46a-43b4-ab05-65a9b9215a4e?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://musicbrainz.org/release-group/0443bd0a-2085-484e-9b7d-c824b66c620e"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日野皓正",
+   "album": "Journey Into My Mind",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 883b18bf-d5d4-42ef-a5ab-7faf480a0e34。兩個端點回問確認：title「Journey Into My Mind」、artist-credit「日野皓正」（實體 60d3fa1e）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1973 CBS/Sony SOPL 240 12 吋 6 軌／JP 1977 CBS/Sony 23AP 654 12 吋 6 軌）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，名下 46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，**MB 主名本來就是漢字＋片假名，與池中既有的「日野皓正クインテット」字串一致，不必轉寫**）；日野皓正オーケストラ da32a56a-c224-4cff-aac1-43ab80fe47b8（Orchestra，0 個 RG）；Terumasa Hino Quartet 59158072-8f96-4f0e-a7ac-106808ae9ccf（2 個 RG，含池中已有的《Alone, Alone and Alone》）。⚠ 第 309 條的實例：`artist:\"Terumasa Hino\"` 只回 Quartet 一個實體、回不到本人，要用漢字或 artist id 才找得到——同一位的實體分散在兩種文字系統。 刻意不釘（合掛，第 258／321 條）：78c2c5af-d0fe-4505-8a5f-6aba93f4f0c5《Vibrations》1971（enja 2010，credit 是 日野皓正 + Heinz Sauer + Peter Warren + Pierre Favre 四人平列）、6d7fc79a-0006-4c1a-b552-9db09570a2bc《A Part》1971（+ Reggie Workman）、6f6e0dc7《Hartman Meets Hino》1973（+ Johnny Hartman）、d62a9c4a《Reminicent Suite》1973（Mal Waldron and Terumasa Hino）。刻意不釘（CAA 200、額度未收）：8d3e2fc7-71d5-4901-96e5-e47f28e8b12e《Speak to Loneliness》1975（EAST WIND EW-7008）、b3fda7f7-090a-41ae-b31b-726b0e16d752《Hogiuta》1976（EAST WIND EW-8041）、76bc1fce《LA CHANSON D’ORPHÉE》1975（RCA RGP-1156，⚠ 1975 那筆 release 題《Mas Que Nada》、2006 CD 才題 LA CHANSON D’ORPHÉE，盤名兩式要先判）。",
+    "rgMbid": "883b18bf-d5d4-42ef-a5ab-7faf480a0e34",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/883b18bf-d5d4-42ef-a5ab-7faf480a0e34/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 33,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "轉到 CBS/Sony 的第一張，六首裡只留了一首標準曲。1973 年的這張碟錄於他換了東家之後，編制也跟著擴到八人：小號、長號、三支薩克斯風與長笛，再配上鋼琴、貝斯與鼓。前一年那支五重奏連鋼琴都不放，這裡的密度是另一回事——鋼琴與整排管樂聲部都回到了編制中央。唯一的標準曲〈My Funny Valentine〉排在第二首，最長的一首是 8:04 的〈Reve Provencale〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=883b18bf-d5d4-42ef-a5ab-7faf480a0e34&fmt=json&inc=media+labels+artist-credits",
+     "https://artist.cdjournal.com/d/journey-into-my-mind/1197090065",
+     "https://musicbrainz.org/ws/2/release/109ae473-30de-4737-a7ad-15c474cdada7?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://musicbrainz.org/release-group/883b18bf-d5d4-42ef-a5ab-7faf480a0e34"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日野皓正",
+   "album": "Into Eternity",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 31e8ea7c-0384-499f-834a-fa3fe960ceef。兩個端點回問確認：title「Into Eternity」、artist-credit「日野皓正」（實體 60d3fa1e）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1974 CBS/Sony SOPI 14-15 12 吋×2，4＋5 軌／JP 2000-04-19 SME Records SRCS-9598 ＋ SRCS-9599 CD×2，4＋5 軌）。藝人實體：個人 日野皓正 60d3fa1e-05eb-457c-ae11-9eee4bcf51b8（Person／JP，46 個 RG）；日野皓正クインテット 65c54d15-1514-4459-81dc-a7ff3e217a92（Group，8 個 RG，MB 主名即漢字＋片假名）；日野皓正オーケストラ da32a56a（0 個 RG）；Terumasa Hino Quartet 59158072（2 個 RG）。 個人實體名下 CBS/Sony 1979–85 那批（3a00953a《Horizon》1979、648da3ab《Double Rainbow》1981、fbb07c85《Pyramid》1982、2d89c78e《New York Times》1983、2ccaa318《Trans-Blue》1985）本批未動，留給後續批。原聲帶不收：de2270ad《オリジナル・サウンドトラック 夏服のイヴ》1984（secondary-types Soundtrack）。",
+    "rgMbid": "31e8ea7c-0384-499f-834a-fa3fe960ceef",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/31e8ea7c-0384-499f-834a-fa3fe960ceef/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1974 年春天分五天錄成，兩張黑膠九首——隔年他就搬去了紐約。這是他赴美之前在日本留下的最後一批大編制錄音之一，七人的編制擺開小號、高音與次中音薩克斯風、鋼琴、貝斯、鼓與康加鼓。第一張塞進兩首超長曲，〈Mr. Happiness〉15:25 與錄音室加長版的〈Ode to Workman〉20:25，中間再夾兩首短曲；第二張五首有三首落在十一到十四分鐘之間，開頭是 13:10 的〈Horizon〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=31e8ea7c-0384-499f-834a-fa3fe960ceef&fmt=json&inc=media+labels+artist-credits",
+     "https://ticro.com/products/t00003619",
+     "https://musicbrainz.org/ws/2/release/cd376299-a877-4fc2-bd5f-ed1e728b3aba?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://musicbrainz.org/release-group/31e8ea7c-0384-499f-834a-fa3fe960ceef"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "菊地雅章セクステット",
+   "album": "Matrix",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6810ebea-ec5a-4254-8445-0129a17959e1。兩個端點回問確認：title「Matrix」、artist-credit「Masabumi Kikuchi Sextet」（實體 3936dadc-696a-4aac-a9cf-1a2c70701202）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1969 VICTOR WORLD GROUP SMJX-10078 12 吋 6 軌 Official）。藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 Sextet 實體名下另有 63bb5e83《Collaboration》1970（與 Sadao Watanabe Quintet 共掛）、3b19f983《Masabumi Kikuchi in Concert》1971（Philips FX-8515，⚠ 1971 那筆 release 的 status 是空的、只有 2015 CD 是 Official，CAA 200，額度未收）、f8230428《Hairpin Circus》1972（secondary-types Soundtrack，**原聲帶不收**）。",
+    "rgMbid": "6810ebea-ec5a-4254-8445-0129a17959e1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6810ebea-ec5a-4254-8445-0129a17959e1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他自己的第一張唱片，之後四十八年沒有出過 CD。1969 年的這張碟是他的出道作，當年盤面上印的團名是ビクター・モダン・ジャズ・セクステット。六重奏擺開鋼琴，加上小號、中音與次中音薩克斯風的三管前線，再配貝斯與鼓，兩首標準曲與四首他自己的作品交錯排列。其中〈Little Aby〉是日後被他反覆重錄的曲子，這裡是它第一次出現的地方。要到 2017 年 10 月 25 日，這張碟才首度 CD 化。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6810ebea-ec5a-4254-8445-0129a17959e1&fmt=json&inc=media+labels+artist-credits",
+     "https://tower.jp/article/feature_item/2017/09/29/0108",
+     "https://musicbrainz.org/ws/2/release/f5ba1973-afe5-4991-894a-8781f80b2c3d?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://music.apple.com/jp/album/matrix/1294929214",
+     "https://musicbrainz.org/release-group/6810ebea-ec5a-4254-8445-0129a17959e1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/98/4f/bf984f46-a464-5318-984d-d733905420ef/mzaf_4775285636163992440.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1294929214",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "菊地雅章セクステット",
+   "album": "Re-confirmation",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c61e49b9-5d45-4211-ad85-0ce455b3be9c。兩個端點回問確認：title「Re-confirmation」、artist-credit「Masabumi Kikuchi Sextet」（實體 3936dadc）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1970 Philips FX-8501 12 吋 6 軌，release credit「Masabumi Kikuchi Trio」／JP 2015-10-07 Universal Music UCCJ-9203 CD 6 軌，credit「Masabumi Kikuchi Sextet」）。**重複 RG：95336d82《再確認そして発展》2009-05-27（UCCJ-4068，CAA 404），刻意不釘。**藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 個人實體名下的 2009-05-27 那組日文題 RG（2a3e3fca《エンド・フォー・ザ・ビギニング》、3f0c2dca《ダンシング・ミスト〜菊地雅章イン・コンサート》、8f21fbb8《POO-SUN》、95336d82《再確認そして発展》）**全部是 2009 年 SHM-CD 復刻各自另立的 RG、CAA 全 404**——其中《POO-SUN》（プーさん，1970 Philips，Apple jp 1443746181 記 ℗ 1970 Universal、6 軌）與《ダンシング・ミスト》（1971 Philips）是他 Philips 時期的正典，**MB 只有 2009 年那個殼、沒有原盤 release，CAA 又 404，本批不收，已列進 rulings 的未收清單**。",
+    "rgMbid": "c61e49b9-5d45-4211-ad85-0ce455b3be9c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c61e49b9-5d45-4211-ad85-0ce455b3be9c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原聲鋼琴與電鋼琴並置，鼓手有兩位——1970 年 3 月 16 日一天錄完。這是他 Philips 時期的作品，六重奏的編制比出道作又大一圈：電鋼琴由另一位同姓的樂手菊地雅洋擔任，兩人在這張碟上同台；中音薩克斯風是峰厚介，貝斯手兼彈電貝斯，兩套鼓疊在一起。六首的長度落差極大，開場的〈Tenacious Prayer Forever〉18:28 幾乎佔掉三分之一，第五首〈Piece to Peace〉只有 30 秒，收尾的〈Young Blood〉11:43。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c61e49b9-5d45-4211-ad85-0ce455b3be9c&fmt=json&inc=media+labels+artist-credits",
+     "https://www.universal-music.co.jp/masabumi-kikuchi/products/uccj-9203/",
+     "https://musicbrainz.org/ws/2/release/b37e01e9-68d3-4a2c-8418-5078199977f2?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://musicbrainz.org/release-group/c61e49b9-5d45-4211-ad85-0ce455b3be9c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/21/95/ca/2195ca2a-8c2a-4e84-31ea-a314f2ab1d38/mzaf_8567300069488989392.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443745916",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "菊地雅章",
+   "album": "East Wind",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d5c93a08-6a86-43dd-b7ad-a79ce9796bf9。兩個端點回問確認：title「East Wind」、artist-credit「菊地雅章」（實體 5216d6d4）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 5 個 release 全數 Official（JP 1974 EAST WIND EW-7001 12 吋 2 軌／JP 1998-12-09 Mercury Records PHCE-2035 CD／JP 2002-09-25 EAST WIND UCCJ-9002 CD／JP 2009-05-27 EAST WIND UCCJ-4078 SHM-CD／JP 2015-02-04 EAST WIND UCCJ-9131 CD，全部 2 軌）。藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 刻意不釘（合掛，第 258／321 條）：4c41c943《Poesy: The Man Who Keeps Washing His Hands》1971（Philips FX-8518，credit 菊地雅章＋富樫雅彦＋Gary Peacock 三人平列，CAA 200）、aedc4cef《Hollow Out》1977（Philips FS-6508，Elvin Jones + Masabumi Kikuchi）、b8c042e3《Joe Henderson and Kikuchi/Hino in Concert》1974、bfd82909《Masabumi Kikuchi + Gil Evans》1972、18a5c6c1《コンチェルト》1991（富樫雅彦+菊地雅章）。刻意不釘（CAA 404）：e4fbb764《But Not For Me》1978（Flying Disk VIJ-6016）、8f21fbb8《POO-SUN》、3f0c2dca《ダンシング・ミスト》、95336d82《再確認そして発展》、2a3e3fca《エンド・フォー・ザ・ビギニング》。刻意不釘（池中已有，且池中重複兩次）：041fd338《End For The Beginning》1973（Philips FX-8527）。",
+    "rgMbid": "d5c93a08-6a86-43dd-b7ad-a79ce9796bf9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d5c93a08-6a86-43dd-b7ad-a79ce9796bf9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 23,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌叫 East Wind，1974 年開張的第一回作品，盤名也叫《East Wind》。這家廠牌 1974 年在東京成立，目錄的最前面擺的就是這張碟、品番 EW-7001。錄音在同年 7 月 3 日，四重奏由他的鋼琴、日野皓正的小號，加上 Juni Booth 的貝斯與 Eric Gravatt 的鼓組成。整張只有兩首、一面一首：同名曲 19:59，另一面的〈Green Dance〉24:54，曲子長到讓四個人各自走完一整段獨奏。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d5c93a08-6a86-43dd-b7ad-a79ce9796bf9&fmt=json&inc=media+labels+artist-credits",
+     "https://www.universal-music.co.jp/masabumi-kikuchi/products/uccj-9131/",
+     "https://en.wikipedia.org/wiki/East_Wind_Records",
+     "https://musicbrainz.org/ws/2/release/351b8339-9624-4fd1-b7d1-dc928e352aa0?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://musicbrainz.org/release-group/d5c93a08-6a86-43dd-b7ad-a79ce9796bf9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/28/44/c92844b7-2399-bb4b-64d9-814d81b1d8a2/mzaf_12644458268386913976.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1467968990",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "菊地雅章",
+   "album": "Wishes/Kochi",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1e2d9cd2-5dc8-4607-a527-93a052fe4c7a。兩個端點回問確認：title「Wishes/Kochi」、artist-credit「菊地雅章」（實體 5216d6d4）、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1976 EAST WIND EW 8043 12 吋 6 軌／JP 2015-02-04 EAST WIND UCCJ-9173 CD 6 軌）。藝人實體：個人 菊地雅章 5216d6d4-144f-481b-a38a-364d7e72e4e5（Person／JP，disambiguation「Japanese jazz pianist」，39 個 RG）；Masabumi Kikuchi Sextet 3936dadc-696a-4aac-a9cf-1a2c70701202（Group／JP，5 個 RG）；Masabumi Kikuchi Quintet 223c364f-6f23-4d3f-b3da-953ea2923857（1 個 RG，即池中英文字串那張）；Masabumi Kikuchi Trio 46787d8d-ad19-4586-8b4e-d0d6b11b2299（2 個 RG）；菊地雅章 The Slash Trio 1b9f1184（1 個 RG）。⚠ `artist:\"佐藤允彦\"`／`artist:\"菊地雅章\"` 用漢字查得到本人，但 `artist:\"Masabumi Kikuchi\"` 只回三個英文編制實體、回不到個人——第 309 條「一種查法一定漏」在本組第二次應驗。 個人實體名下 1988-07-25 那組單字題 RG（1e1813d3《空》、21001d06《風》、285e6204《水》、6eab26a9《識》、89793724《地》、b73571f2《火》）是同一套六張的企畫，本批未查 CAA、未動。2015-12-09 的 dac35ff0《Tethered Moon》與 fc9076cc《Feel You》是 King／Paddle Wheel 的後期作，亦未動。",
+    "rgMbid": "1e2d9cd2-5dc8-4607-a527-93a052fe4c7a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1e2d9cd2-5dc8-4607-a527-93a052fe4c7a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "樂團叫東風，只存在這一張唱片，原盤盤名只有《Wishes》兩個字。1976 年發行時，唱片掛的是這支一次性企劃團的名字，而不是他個人。這是他在 East Wind 的第二張，班底整個換成紐約的人：他的鋼琴、Rhodes 與合成器之外，配上小號、兩支薩克斯風與長笛、電吉他、電貝斯、鼓與康加鼓，Dave Liebman 吹高音薩克斯風，Al Foster 打鼓。六首裡三首超過十一分鐘，收尾的〈Alone〉只有 2:43。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1e2d9cd2-5dc8-4607-a527-93a052fe4c7a&fmt=json&inc=media+labels+artist-credits",
+     "https://sessiondays.com/2023/02/17/1976-kochi-wishes/",
+     "https://musicbrainz.org/ws/2/release/6b8d00fc-08d8-44ca-b186-47e4a8803d22?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://music.apple.com/jp/album/wishes/1468445908",
+     "https://musicbrainz.org/release-group/1e2d9cd2-5dc8-4607-a527-93a052fe4c7a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/8b/ba/f98bbaf0-7057-d4b8-9108-a1a66866a5e3/mzaf_9894796338419731843.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1468445908",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦トリオ",
+   "album": "Palladium",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c1be243a-52ac-49a3-9181-6a64d494973f。兩個端點回問確認：title「Palladium」、artist-credit「Masahiko Sato Trio」（實體 2d492012-408a-4a85-8894-4faa43613bc5）、first-release-date **2005-02-23**（⚠ 復刻日，見 risk）、primary-type Album、secondary-types 空、轄下 1 個 release（JP 2005-02-23 EXPRESS／Bridge Inc. BRIDGE-043 CD 6 軌 Official）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 年份取 1969 ＝ Apple jp 官方條目的 ℗ 年與發行日（第 352 條）。廠牌出自 release 端點（第 259 條）。",
+    "rgMbid": "c1be243a-52ac-49a3-9181-6a64d494973f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c1be243a-52ac-49a3-9181-6a64d494973f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場 29 秒、收尾 24 秒，中間〈Michelle〉一首就彈了十四分五十九秒。1969 年 3 月 17 日在東京錄成的這張碟是他的出道盤，鋼琴三重奏由荒川康男的貝斯與富樫雅彦的鼓撐著。六首的排法像兩道門夾住中間四段，披頭四的旋律在他手上被拆成長篇，其中兩首是他 1965 年報考 Berklee 時交出去的作品。本作獲スイングジャーナル主辦的第 3 回ジャズ・ディスク大賞日本ジャズ賞。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c1be243a-52ac-49a3-9181-6a64d494973f&fmt=json&inc=media+labels+artist-credits",
+     "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%82%B8%E3%82%A6%E3%83%A0_(%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://musicbrainz.org/ws/2/release/bd724ae5-60b8-4696-ae91-ff304bbda1e2?fmt=json&inc=recordings+artist-rels",
+     "https://music.apple.com/jp/album/palladium/720359088",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://musicbrainz.org/release-group/c1be243a-52ac-49a3-9181-6a64d494973f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/1a/9a/d1/1a9ad10e-6f8d-48f8-f146-8f9370832927/mzaf_9039251721561604402.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720359088",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦",
+   "album": "Holography",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 482d1c70-30c3-41e8-8c20-7362f714078e。兩個端點回問確認：title「Holography」、artist-credit「Masahiko Sato」（**個人實體** 04bbec22-7716-4371-b86e-d016bd3bf715）、first-release-date **2006-01-20**（⚠ 復刻日，見 risk）、primary-type Album、secondary-types 空、轄下 1 個 release（JP 2006-01-20 Bridge Inc. BRIDGE-42 CD 2 軌 Official）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 年份取 1970 ＝ Apple jp 官方條目的 ℗ 年與發行日（第 352 條）。",
+    "rgMbid": "482d1c70-30c3-41e8-8c20-7362f714078e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/482d1c70-30c3-41e8-8c20-7362f714078e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 12,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1970 年 6 月的一場音樂會，一個人一台鋼琴，兩段各二十分鐘的即興。地點在銀座，台上沒有貝斯、沒有鼓，他彈的也不是事先寫好的曲子，而是從頭到尾的完全即興。兩段音樂原本沒有名字，做成唱片時才被分別題為〈Phase 1〉與〈Phase 2〉，一段 20:56、一段 18:02，各佔一面。前一年的《Palladium》還有三重奏撐著，這張 1970 年的作品把編制削到只剩他一個人。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=482d1c70-30c3-41e8-8c20-7362f714078e&fmt=json&inc=media+labels+artist-credits",
+     "https://diskunion.net/jazz/ct/detail/1008760247",
+     "https://music.apple.com/jp/album/holography/1716850549",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://musicbrainz.org/ws/2/release/28f4b305-75c8-41cc-bd64-d417e5edec01?fmt=json&inc=recordings+artist-rels",
+     "https://musicbrainz.org/release-group/482d1c70-30c3-41e8-8c20-7362f714078e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7b/29/ca/7b29cacc-d539-a09e-cfb6-3a8afe35ffb2/mzaf_7119987569478595636.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1716850549",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦トリオ",
+   "album": "Transformation '69/'71",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8295c5bc-ae34-46aa-ad95-ac5d1a87d653。兩個端點回問確認：title「Transformation ’69/’71」、artist-credit「Masahiko Sato Trio」（實體 2d492012）、first-release-date **1991-10-19**（⚠ 復刻日，見 risk）、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1991-10-19 EXPRESS DTHK-002／Think! Records DTHK-002 CD 4 軌 Official，同一筆掛兩個廠牌實體）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 年份取 1971 ＝ Apple jp 官方條目（第 352 條）。三重奏實體名下另兩張：8e7757a5《Deformation》2006（Bridge Inc. BRIDGE-044，CAA 200，額度未收）、f7fb9307《標準伎楽 = Hyōjun Gigaku》2016（BAJ Records BJSP-0011，**CAA 404**）。",
+    "rgMbid": "8295c5bc-ae34-46aa-ad95-ac5d1a87d653",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8295c5bc-ae34-46aa-ad95-ac5d1a87d653/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名裡的兩個年份就是錄音年，1969 那半錄於他出道盤的同一批 session。三場錄音分別落在 1969 年 3 月 17 日、3 月 20 日與 1971 年 3 月 2 日，第一場正是《Palladium》的錄音日；同一個鋼琴三重奏——他、荒川康男與富樫雅彦——隔了兩年才把四首湊成一張，1971 年 10 月 5 日發行。全碟的主體是〈Transformation〉，分成 15:13 與 3:41 兩段、由三人共同署名，也是這張最接近集體即興的部分。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8295c5bc-ae34-46aa-ad95-ac5d1a87d653&fmt=json&inc=media+labels+artist-credits",
+     "https://ototoy.jp/_/default/p/264676",
+     "https://musicbrainz.org/ws/2/release/3860bdef-a5ff-40cd-a856-f28b0f05ce78?fmt=json&inc=recordings+artist-rels",
+     "https://music.apple.com/jp/album/transformation69-71/720401905",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://musicbrainz.org/release-group/8295c5bc-ae34-46aa-ad95-ac5d1a87d653"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bf/71/11/bf711187-c8e1-88a0-ecb7-5f9d3d2da3bc/mzaf_6533025294771037748.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720401905",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦",
+   "album": "マグノリアの木",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f38487cf-e953-4548-8b40-da645cf9c91d。兩個端點回問確認：title「マグノリアの木」、artist-credit「佐藤允彦」（個人實體 04bbec22）、first-release-date 1977-11、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1977-11 DENON JAZZ YX-7571-ND 12 吋 9 軌 Official）。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 刻意不釘（CAA 404）：c620fa2d《Pavane Lachrymae》1978-10（DENON YX-7536-ND，同一條 Denon 線的次一張）、cc5397e0《A Path Through Haze》1972（MPS，且是 Attila Zoller 合掛）、79d0b90d《Wonderful Moog Sound》1972（JVC CD4B-5015E，且是 1864 Cotton Field Rock Band 合掛）、f7fb9307《標準伎楽》2016。",
+    "rgMbid": "f38487cf-e953-4548-8b40-da645cf9c91d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f38487cf-e953-4548-8b40-da645cf9c91d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九首曲名全是日文短句，還帶著舊假名——編制裡連貝斯和鼓都不放。這是他在日本コロムビア的 DENON 爵士線留下的作品，1977 年 8 月 25 日與 27 日錄音、同年 11 月 25 日發行，起點是宮沢賢治的著作給他的啟發。台上只有他的鋼琴與大鍵琴，配三支低音長笛與低音塤、兩支小號、三支長號，再加馬林巴與古鈸。九首裡七首落在兩到四分鐘之間，只有〈夢でなけぁ霧だ〉與〈これが今日のおしまひだろう〉各將近七分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f38487cf-e953-4548-8b40-da645cf9c91d&fmt=json&inc=media+labels+artist-credits",
+     "https://columbia.jp/artist-info/satomasahiko/discography/COCB-54073.html",
+     "https://musicbrainz.org/ws/2/release/2660c8c4-b078-432b-bf4e-f890e2d4db1c?fmt=json&inc=recordings+artist-rels",
+     "https://music.apple.com/jp/album/magnolia-no-ki/1709903884",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://musicbrainz.org/release-group/f38487cf-e953-4548-8b40-da645cf9c91d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/25/39/10/253910eb-5c07-2fd3-71f1-f71891017beb/mzaf_11705192502303795136.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1709903884",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦",
+   "album": "All-in All-out",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d6cb2113-8a92-4888-b250-db8b302920d5。兩個端點回問確認：title「All‐in All‐out」（**兩個 U+2010**）、artist-credit「佐藤允彦」（個人實體 04bbec22）、first-release-date 1979、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1979 OPENSKYE 25AP 1010 12 吋 6 軌／JP 1991-07-25 Sony Records SRCL-1978 CD 6 軌）。卡面盤名改 ASCII 連字號。藝人實體：個人 佐藤允彦 04bbec22-7716-4371-b86e-d016bd3bf715（Person／JP／male，sort-name「Satoh, Masahiko」，42 個 RG）；**Masahiko Sato Trio 2d492012-408a-4a85-8894-4faa43613bc5（4 個 RG：Palladium、Transformation ’69/’71、Deformation、標準伎楽）**。⚠ 第 309 條在本卡第三次應驗：`artist:\"Masahiko Satoh\"`／`artist:\"Masahiko Sato\"` 全域回 0 筆，**要用漢字 `artist:\"佐藤允彦\"` 才回得到個人實體**；三重奏實體則只能用英文查到。 刻意不釘（合掛，第 258／321 條）：d86aa6bd《Metempsychosis》1971（ツトム・ヤマシタ & 佐藤允彦）、ed5b55e2《Pianology》1971（and Wolfgang Dauner）、6e05fed3《Bridge Over Troubled Water》1971-07-25（與 稲垣次郎 合掛，c-131 第 356 條已列）、02fd9983《Yamataifu》1972（EXPRESS ETJ-65019，credit 是 Toshiyuki Miyama and His New Herd + M. Sato——**這是 宮間利之とニューハード 的碟，歸 c-133**）、7668525c《天秤座の詩》1970（同上，New Herd 合掛）、cae06b2f《Astrorama》1970（Liberty LPC-8039，與 Jean-Luc Ponty 合掛）、3914de7d《三昧》1972（EXPRESS ETJ-9003，與 Gary Peacock 合掛）、03ed1046《デマ Rumour》1973、c2ec1ec4《ふたりのひとりごと》1973（中山千夏＋）、82fb84a8《With Silence》1974（Karl Berger 四人平列）、69f572ef《MSB》1980（+ Medical Sugar Bank）、d4d82b7b《MSB Two》1981、336d6cb7《双晶》1973（**池中已有，掛 富樫雅彦**）。原聲帶不收：a842b6d5《Belladonna》1975、5c1ad16b《夜叉》1985、4434894c／1efc9660《ファイナルファンタジー》1994、69296888／85fb446b《パンダコパンダ》2008。",
+    "rgMbid": "d6cb2113-8a92-4888-b250-db8b302920d5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d6cb2113-8a92-4888-b250-db8b302920d5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 19,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張在紐約 Power Station 錄的，鼓是 Harvey Mason，薩克斯風是 Dave Liebman。1979 年的他已經在日本、歐洲與美國三地錄音，這張是其中的紐約一站，班底照當地的融合樂配置擺開：他的鋼琴、川崎燎的電吉他，再加電貝斯、打擊與一支客席小號。六首每首四到八分鐘，長度相當平均；1970 年那張獨奏鋼琴、1977 年那張沒有節奏組的管樂編制，與這張是三種完全不同的東西。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d6cb2113-8a92-4888-b250-db8b302920d5&fmt=json&inc=media+labels+artist-credits",
+     "https://organicmusic.jp/products/masahiko-satoh-all-in-all-out",
+     "https://musicbrainz.org/ws/2/release/dbe0dde3-3a4b-4c6d-a8bd-4a4fff99b0d3?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://musicbrainz.org/release-group/d6cb2113-8a92-4888-b250-db8b302920d5"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "峰厚介",
+   "album": "Out Of Chaos",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4b3a6049-eee8-443b-bc4f-b5bc527a4573。兩個端點回問確認：title「Out Of Chaos」、artist-credit「Kohsuke Mine」（**個人實體** e15df4d0-9c8a-4c5d-b3e3-33297e118604，主名 峰厚介）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 個 release（JP 1974 EAST WIND EW-7003 黑膠 3 軌 Official）。藝人實體：個人 峰厚介 e15df4d0-9c8a-4c5d-b3e3-33297e118604（Person／JP，disambiguation「Japanese hard bop musician」，5 個 RG）；Kosuke Mine Quintet b7d5f881-d58b-47a0-aeac-e157937d6103（Group／JP，5 個 RG，池中 `峰厚介クインテット` 兩張即出自此）；Kosuke Mine Quartet cd767b70-a2a7-4499-abc6-d5bafa4e1880（2 個 RG）。⚠ `artist:\"峰厚介\"` 用 `artist:` 前綴查回 0 筆、**去掉前綴直接查關鍵字才回得到**（count 1098，本人 score 100 排第一）——第 309 條的又一種形狀：不是文字系統的問題，是 Lucene 欄位查詢對這個短漢字名失效。 刻意不釘（池中已有）：df8e1dcd《First》1970（Philips FX-8508）、04dfc616《Mine》1970（three blind mice TBM-1）、28ad566f《Daguri》1973、a701e11c《2nd Album》。刻意不釘（Three Blind Mice ＋ 合掛雙重理由）：27679254-437e-456d-8c38-cffee610acfe《Yellow Carcass in the Blue》1971（**TBM-8**，credit 是 笠井紀美子 + Kosuke Mine Quartet 兩人平列，CAA 200；⚠ 笠井紀美子 是 c-134 b 組的掛名，若那批要收，應由那邊處理）。刻意不釘（CAA 404）：94001ced《Plays Standard》（無日期、無廠牌）、ac01bece《In a Maze》1995（Verve POCJ-1280）。",
+    "rgMbid": "4b3a6049-eee8-443b-bc4f-b5bc527a4573",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4b3a6049-eee8-443b-bc4f-b5bc527a4573/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 21,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三首、四十分鐘，收尾的〈Cross Wind〉一首就十七分四十八秒。他 1971 年才從中音改吹次中音，1974 年夏天錄下的這張碟就是改吹之後的四重奏聲音，品番 EW-7003。開場的〈Recollection〉12:05 與居中的〈Little Abi〉9:34 同樣寬裕，三首都長到讓四個人輪流走完一整段獨奏。〈Little Abi〉是鋼琴手菊地雅章的曲子，這回作曲者本人就坐在鋼琴前，把它重錄了一次。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4b3a6049-eee8-443b-bc4f-b5bc527a4573&fmt=json&inc=media+labels+artist-credits",
+     "https://tower.jp/item/3764346",
+     "https://musicbrainz.org/ws/2/release/963c2f62-c470-46c1-8a81-de8538f4186b?fmt=json&inc=recordings+artist-rels",
+     "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A6%E3%83%88-%E3%82%AA%E3%83%96-%E3%82%B1%E3%82%A4%E3%82%AA%E3%82%B9/1467950125",
+     "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%8E%9A%E4%BB%8B",
+     "https://musicbrainz.org/release-group/4b3a6049-eee8-443b-bc4f-b5bc527a4573"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/75/2d/1c/752d1c72-b262-5e3f-1be0-079a44de312a/mzaf_9140683689920486750.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1467950125",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "峰厚介",
+   "album": "Sunshower",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 49501583-e2c1-489b-b92a-04ec46a330ec。兩個端點回問確認：title「Sunshower」、artist-credit「峰厚介」（個人實體 e15df4d0）、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release 全數 Official（JP 1976 EAST WIND EW-8038 12 吋 4 軌／JP 2002-10-23 EAST WIND UCCJ-9027 CD 4 軌）。藝人實體：個人 峰厚介 e15df4d0-9c8a-4c5d-b3e3-33297e118604（Person／JP，disambiguation「Japanese hard bop musician」，5 個 RG）；Kosuke Mine Quintet b7d5f881-d58b-47a0-aeac-e157937d6103（Group／JP，5 個 RG，池中 `峰厚介クインテット` 兩張即出自此）；Kosuke Mine Quartet cd767b70-a2a7-4499-abc6-d5bafa4e1880（2 個 RG）。⚠ `artist:\"峰厚介\"` 用 `artist:` 前綴查回 0 筆、**去掉前綴直接查關鍵字才回得到**（count 1098，本人 score 100 排第一）——第 309 條的又一種形狀：不是文字系統的問題，是 Lucene 欄位查詢對這個短漢字名失效。 ⚠ **Apple jp 的藝人目錄裡另有「峰 厚介《ソリッド》4 軌 ℗ 1976 Universal Classics & Jazz」**（同一批 East Wind 復刻），而 MB 把《Solid》建成 182e7c8c-90be-4e8e-af67-b34402130f7b、掛 Kosuke Mine Quartet、first-release-date **2015-02-04**（EAST WIND UCCJ-9161）、secondary-types Live——**MB 的年份是復刻年、Apple 的 ℗ 指向 1976**，這張形狀與第 352 條相同但原盤資訊尚未核實，本批不收，已列進 rulings 的未收清單。",
+    "rgMbid": "49501583-e2c1-489b-b92a-04ec46a330ec",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/49501583-e2c1-489b-b92a-04ec46a330ec/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 16,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四首，每首都剛好十分鐘出頭，長度整齊得像量過。1976 年 2 月 9 日與 10 日兩天錄成的這張碟走的是電氣化的 rock 與 funk，與前一張的原聲四重奏是兩種東西。六人的編制擺開次中音與高音薩克斯風、鍵盤、電吉他、電貝斯、鼓與打擊，整張沒有原聲鋼琴：他的薩克斯風掛上 wah-wah 效果器，益田幹夫的鍵盤走迷幻的音色。四首從 10:06 到 10:15，最長與最短只差 9 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=49501583-e2c1-489b-b92a-04ec46a330ec&fmt=json&inc=media+labels+artist-credits",
+     "https://www.universal-music.co.jp/p/uccj-9168/",
+     "https://musicbrainz.org/ws/2/release/a8491159-8b70-4410-b93b-694cfe72cd33?fmt=json&inc=recordings+artist-rels",
+     "https://music.apple.com/jp/album/%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AF%E3%83%BC/1467957054",
+     "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%8E%9A%E4%BB%8B",
+     "https://musicbrainz.org/release-group/49501583-e2c1-489b-b92a-04ec46a330ec"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/7a/50/67/7a5067fd-4ee3-101f-b892-d0454da00678/mzaf_837023907150560793.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1467957054",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "峰厚介",
+   "album": "Bamboo Grove",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4882a997-97de-45c5-bd88-0a32aec5501e。兩個端點回問確認：title「Bamboo Grove」、artist-credit「Kosuke Mine」（個人實體 e15df4d0，主名 峰厚介）、first-release-date 2019-01-23、primary-type Album、secondary-types 空、轄下 1 個 release（XW 2019-01-23 Days of Delight 數位 7 軌 Official，**label-info 有廠牌但沒有 catalog-number**，用 release 端點回問確認，不是第 259 條那種問錯端點）。藝人實體：個人 峰厚介 e15df4d0-9c8a-4c5d-b3e3-33297e118604（Person／JP，disambiguation「Japanese hard bop musician」，5 個 RG）；Kosuke Mine Quintet b7d5f881-d58b-47a0-aeac-e157937d6103（Group／JP，5 個 RG，池中 `峰厚介クインテット` 兩張即出自此）；Kosuke Mine Quartet cd767b70-a2a7-4499-abc6-d5bafa4e1880（2 個 RG）。⚠ `artist:\"峰厚介\"` 用 `artist:` 前綴查回 0 筆、**去掉前綴直接查關鍵字才回得到**（count 1098，本人 score 100 排第一）——第 309 條的又一種形狀：不是文字系統的問題，是 Lucene 欄位查詢對這個短漢字名失效。 個人實體名下 5 個 RG 的處置：df8e1dcd《First》1970（池中已有）、4b3a6049《Out Of Chaos》1974（本批收）、49501583《Sunshower》1976（本批收）、94001ced《Plays Standard》（無日期、無廠牌、CAA 404，未收）、本張。",
+    "rgMbid": "4882a997-97de-45c5-bd88-0a32aec5501e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4882a997-97de-45c5-bd88-0a32aec5501e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 914,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌的宗旨是重做 1970 年代初期日本爵士的聲音，而他本人就是那個年代的人。這張是 Days of Delight 的第二號作品，2019 年 1 月 23 日發行，也是他相隔約八年才交出的新作，錄音在 2018 年 8 月的兩天內完成。編制回到原聲的鋼琴四重奏：次中音與高音薩克斯風、鋼琴、貝斯與鼓，七首每首六到十分鐘、長度平均。曲名多是英文，只有〈凍星〉與〈水蒸気〉兩首日文短題夾在其間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4882a997-97de-45c5-bd88-0a32aec5501e&fmt=json&inc=media+labels+artist-credits",
+     "https://tower.jp/item/4841076",
+     "https://musicbrainz.org/ws/2/release/d1f850c1-d2d6-45cc-bf7a-9e3917776919?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%8E%9A%E4%BB%8B",
+     "https://music.apple.com/jp/album/bamboo-grove/1578429139",
+     "https://musicbrainz.org/release-group/4882a997-97de-45c5-bd88-0a32aec5501e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/10/70/7f10705b-f296-b8b1-5a46-cf67b1691b58/mzaf_10595863370261229722.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1578429139",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "本田竹広",
+   "album": "Jōdo",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6d937ed0-f0b7-461a-8c5e-a1f42e550e2f。回問 release-group 端點（inc=artist-credits+releases）：title「Jōdo」、artist-credit「本田竹広」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條：廠牌只有這個端點問得到）：0b9110d5（JP 1970 Official Vinyl 4 軌，Trio RSP-9018）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。",
+    "rgMbid": "6d937ed0-f0b7-461a-8c5e-a1f42e550e2f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6d937ed0-f0b7-461a-8c5e-a1f42e550e2f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三重奏的貝斯是 Reggie Workman，坐在一張以佛教的淨土為名的日本唱片裡。這是本田竹広在 Trio Records 時期的第三張領銜作，也是他頭一次把整張的四首全部放成長篇。1970 年錄下的這組三重奏，鼓手是日野元彦，鋼琴走的是調式而不是和弦進行，讓貝斯與鼓在長段落裡一路推著跑。原盤四首，每首各佔一面的一半，全長約三十五分鐘——這是長篇即興的規格，不是一張曲集。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6d937ed0-f0b7-461a-8c5e-a1f42e550e2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/6920517",
+     "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83",
+     "https://musicbrainz.org/release-group/6d937ed0-f0b7-461a-8c5e-a1f42e550e2f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/27/3f/80/273f80c3-6d11-9a07-f7d9-94db220d12d3/mzaf_6911655000396228404.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1327644024",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "本田竹広",
+   "album": "The Trio",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ece8ab7a-a39a-45ac-abe0-5b0697050319。回問 release-group 端點：title「The Trio」、artist-credit「本田竹広」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：9c56bf91（JP 1970 Official Vinyl 5 軌，Trio RSP-9008）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。",
+    "rgMbid": "ece8ab7a-a39a-45ac-abe0-5b0697050319",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ece8ab7a-a39a-45ac-abe0-5b0697050319/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片公司是音響廠商，鋼琴家姓本田，盤名就叫《The Trio》。Trio Records 是トリオ株式会社的唱片部門，這張的腰帶上印著「トリオジャズシリーズ 第 2 回発売」。1970 年 3 月 10 日錄音，三重奏是本田竹広的鋼琴、鈴木良雄的貝斯與渡辺文男的鼓，後兩位不是伴奏，是對話的對象。原盤五首，開場是 Burt Bacharach 的〈This Guy's In Love With You〉，4:43，全碟最短；自作曲〈破壊と叙情〉7:31 把這張的兩極擺明了。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=ece8ab7a-a39a-45ac-abe0-5b0697050319&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/3762672",
+     "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83",
+     "https://musicbrainz.org/release-group/ece8ab7a-a39a-45ac-abe0-5b0697050319"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4f/1a/69/4f1a6952-4c8b-255b-fb7c-cdb6424aa2bd/mzaf_13076797423459643197.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1329348273",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "本田竹広",
+   "album": "I Love You",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2b50e607-63f2-4e3b-8f97-a2ad5cab09a8。回問 release-group 端點：title「I Love You」、artist-credit「本田竹曠」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：19c8fe0e（JP 1971 Official Vinyl 5 軌，label-info：Trio、catalog-number 空）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。",
+    "rgMbid": "2b50e607-63f2-4e3b-8f97-a2ad5cab09a8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2b50e607-63f2-4e3b-8f97-a2ad5cab09a8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五首全是標準曲，第二首〈Here's That Rainy Day〉一個人彈掉十二分四十四秒。前一年的《Jōdo》整張走長篇調式，這張反過來，五首全交給標準曲。錄音在 1971 年 4 月 30 日一天完成，三重奏是本田竹広的鋼琴、鈴木良雄的貝斯與村上寛的鼓，由 Trio Records 以 RSP-9021 發行。〈Here's That Rainy Day〉幾乎佔滿一整面，〈Sunny〉5:17 最短；這組節奏組走的是留白多、拍子鬆的路子。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=2b50e607-63f2-4e3b-8f97-a2ad5cab09a8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/3671510",
+     "https://www.discogs.com/release/3030306",
+     "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83",
+     "https://musicbrainz.org/release-group/2b50e607-63f2-4e3b-8f97-a2ad5cab09a8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e5/0e/7e/e50e7ee8-3821-d605-0f22-ec958be2ed10/mzaf_10363491189698496488.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1329373434",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "本田竹広",
+   "album": "What's Going On",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e6c15d9f-a5e3-4587-a907-5ec9405e5a14。回問 release-group 端點：title「What’s Going On」（U+2019）、artist-credit「T. Honda」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：4278086f（JP 1973 Official 12\" Vinyl 7 軌，Trio RSP-9026）、ac999dda（JP 2012-02-22 Official CD 7 軌，SOLID RECORDS CDSOL-1482）、08a4446c（XW 2012-02-22 Official Digital Media 7 軌，SOLID RECORDS，無 catno）。藝人實體 b90d79a5-7d8f-4a97-a589-32bb3b7b0d15（本田竹広／Person／JP，alias：Takehiro Honda、本田竹曠、本田竹広；名下 16 個 RG）；另有群組實體 19d0f709-8cce-4113-989b-38ebdc490b5f（本田竹曠トリオ，2 個 RG：`1823a1c4`《This Is Honda》1972＝池中既有那張、`fd7e2ddc`《Live 1974》2020）。合計 18 個 RG。本組刻意不釘（本田竹広名下、額度外或不合規）：`60c713e2`《Flying To The Sky》1971（credit「T. Honda & G. Dudek」，兩人平列合掛，依第 321 條不進池）、`3ed3cde5`《In a Sentimental Mood》1985（Takehiro Honda, Nobuyoshi Ino, Takeo Moriyama 三人平列）、`6ec9f856`《Aguncha》1987（本田竹広 And NATIVE SON）、`edccbdd5`《Minton Blues》（本田竹曠 & 渡辺貞夫カルテット，MB 只有串流版、無日期）、`e5a739b8`《Scenery of Japanese Jazz》2020（Compilation、九人合輯）、`17c89156`《Earthian Air》1991、`e7484f71`《Boogie-Boga-Boo》1995、`d237a28f`《My Funny Valentine》2006、`00e9121a`《破壊と叙情》2022、`fd7e2ddc`《Live 1974》2020（本田竹曠トリオ）。",
+    "rgMbid": "e6c15d9f-a5e3-4587-a907-5ec9405e5a14",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e6c15d9f-a5e3-4587-a907-5ec9405e5a14/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "掛名從三重奏換成 T. Honda & His Orchestra——十一個人，兩支小號，一把 Hammond 風琴。這是本田竹広在 Trio Records 的最後一張領銜盤，1973 年發行的大編制靈魂爵士。管樂另有長號與兩把薩克斯風，峰厚介與武田和命都在裡面，底下墊著康加鼓與兩位鼓手；他自己兼彈鋼琴與電鋼琴，編曲也一手包下。七首裡只有第四首出自 Marvin Gaye，其餘六首都從別人的曲庫搬來，節奏的重心落在 backbeat 而不是 swing。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e6c15d9f-a5e3-4587-a907-5ec9405e5a14&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/4111837",
+     "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83",
+     "https://musicbrainz.org/release-group/e6c15d9f-a5e3-4587-a907-5ec9405e5a14"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1a/9c/b5/1a9cb556-7c0e-2148-7716-97f257054b6d/mzaf_10901369347489621596.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1327630697",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "松本英彦",
+   "album": "Four Wings",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d19cb142-4e3a-4193-9375-6520204be405。回問 release-group 端點：title「Four Wings」、artist-credit「松本英彦」、first-release-date **2023-06-07**（⚠ 只建了再發）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：815ced5f（JP 2023-06-07 Official CD 6 軌，Octave Lab. OTLCD-2590／Trio OTLCD-2590）、ac2ebd80（XW Official Digital Media 6 軌，Trio，無日期無 catno）——**1994 年 Trio 原盤 MB 未建檔**。列舉檔命中：`batch-progress/enum/jp-trio.json`（labelYear 2023）。藝人實體 d4027a8f-6a56-43d9-81cc-c80084d22b58（松本英彦／Person／JP，disambiguation「Japanese jazz saxophonist & bandleader; “Sleepy”」，alias「Hidehiko Matsumoto」；名下 11 個 RG）。同名／相關實體實測（第 250／324 條，只看 type／area／disambiguation，不看 score）：`53f0f608` Hidehiko Matsumoto Quintet（Group／JP，disambiguation 松本英彦クインテット，**名下 0 個 RG**）、`e16e946c` Hidehiko Matsumoto Quartet（Group，**0 個 RG**）、`ad02820f` 松本英彦とスリーピーラテン楽団（Group，**0 個 RG**）、`c03c3b61` Sleepy Matsumoto（Person，名下只有 `0ce25a4f`《Jazz in Japan Recorded in Tokyo》1965 的合掛）——**同一位被 MB 拆成五個實體，其中四個是空殼**。擋掉的同名他人：松本晃彦（Summer Wars 配樂）、榎本英彦、松本英子、松本英二、松本英一、松本大英、松本英人。本組刻意不釘：`1d2ed313`《Operation Sam Taylor》1967（KING 45SDS-1，credit「Hidehiko Matsumoto, Akira Miyazawa」兩人平列，CAA 200——**兩位都是本組的掛名，收成合掛會同時給兩人製造分裂，依第 321 條不收**，已列入 rulings 未收清單）、`4350666f`《Fascinating Tenor-Sax》1966-10（JVC SJV-227，三人平列：松浦ヤスノブ／松本英彦／宮沢昭）、`7fed7a8e`《Let’s Swing Now》1976（Victor SJV-869，五人平列的全明星 session）、`0e997400`《Jam In Yokota》1973-06-25（エレックレコード ELW-3004，Live，七人平列的 jam）、`d2119a73`《The Session / Sleepy Meets the Great Jazz Trio》1980（NEXT WAVE 25PJ-1004，與 The Great Jazz Trio 合掛，池中已有 GJT 卡，第 258 條）、`422ff78e`《演歌の祭典》1969（演歌伴奏）、`1a907384`《Special Pink Mood Deluxe Vol.2》1969（Compilation）、`ca9d9f91`《歌のない流行歌150》2014（Compilation）。",
+    "rgMbid": "d19cb142-4e3a-4193-9375-6520204be405",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d19cb142-4e3a-4193-9375-6520204be405/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個人四對翅膀：次中音、鋼琴、貝斯、鼓各出一位當家。盤名講的就是這件事——四方各據一角，誰也不當誰的伴奏。錄音在 1979 年 10 月 23 日，唱片 1980 年由 Trio Records 的 Full House 線以 PAP-9197 發行；除了松本英彦，另外三位是菅野邦彦、鈴木勲與ジョージ大塚。這是他三張個人領銜盤裡編制最傳統的一張，沒有半件電聲樂器。六首裡五首是標準曲，只有與盤名同名的那首原創曲 9:10 壓軸，〈Laura〉3:41 最短。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d19cb142-4e3a-4193-9375-6520204be405&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/6854259",
+     "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6",
+     "https://www.discogs.com/release/27634338",
+     "https://musicbrainz.org/release-group/d19cb142-4e3a-4193-9375-6520204be405"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/11/bb/ac11bb64-53ce-6e62-a88e-cb8530bc2145/mzaf_8714502212905017945.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1329372640",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮沢昭",
+   "album": "山女魚",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 63cd7c36-f5bc-4712-8551-9f857f5efddd。回問 release-group 端點（inc=artist-credits+releases）：title「山女魚」、artist-credit「Akira Miyazawa」（實體 59e0a0d4）、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：3d50d949（JP 1962 Official 12\" Vinyl 7 軌，KING SKJ 1001）、e6fffdeb（JP 2012-12-05 Official CD 7 軌，KING KICJ 2278，barcode 4988003423032）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Akira Miyazawa，entities「KING」，why「rg-tag」）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。",
+    "rgMbid": "63cd7c36-f5bc-4712-8551-9f857f5efddd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/3c/40/643c40af-5c75-7f13-28fe-660cfbfcf3b9/NOPA-6540.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777008409",
+    "note": "試聽探測釘定的 collectionId 1777008409（jp）：宮沢 昭 — YAMAME"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 142,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他愛釣魚，第一張唱片就以溪流魚為名，第三首叫〈Fly Casting〉。這張錄於 1962 年 5 月 7 日與 14 日；初發時盤面印的題名其實是《AKIRA MIYAZAWA》，《山女魚》是後來才定著下來的叫法。一張碟裡擺了兩種編制：前四首是四人小組，後三首加進六支管樂變成九人，客座的中音薩克斯風與長笛由渡辺貞夫擔任，鋼琴是佐藤允彦。第二首〈Memories Through Thick Glasses〉不寫釣魚，是寫給 1955 年去世的鋼琴家守安祥太郎的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=63cd7c36-f5bc-4712-8551-9f857f5efddd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%A5%B3%E9%AD%9A_%28%E5%AE%AE%E6%B2%A2%E6%98%AD%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%29",
+     "https://musicbrainz.org/release-group/63cd7c36-f5bc-4712-8551-9f857f5efddd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/55/ca/cc55ca54-548b-4a42-b181-148811e5f455/mzaf_12736714989399582807.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777008409",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮沢昭",
+   "album": "Four Units",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9e764a87-1b61-482e-88e8-15d560124462。回問 release-group 端點：title「Four Units」、artist-credit「宮沢昭」（漢字，實體 59e0a0d4）、first-release-date 1969-04-25、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：a87b2c29（JP 1969-04-25，status **null**，媒體欄「12\" Shellac」×5 軌，**label-info 空陣列、無 catno、無 barcode**）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。",
+    "rgMbid": "9e764a87-1b61-482e-88e8-15d560124462",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ab/bf/5c/abbf5c8a-79e7-0aa7-d964-403e5e46eb75/Cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1540555407",
+    "note": "試聽探測釘定的 collectionId 1540555407（us）：Akira Miyazawa, Masahiko Satoh, Masahiko Togashi & Yasuo Arakawa — Four Units - Japanese Jazz Men Series Vol. 3"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 13,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五首裡兩首以魚為名，最短的〈Rainbow Trout〉只有三分二十一秒。錄音在 1969 年 4 月的兩天完成，由テイチク系的 Union Records 以 UPS-2008-J 發行。四重奏是宮沢昭的次中音薩克斯風兼長笛、佐藤允彦的鋼琴、貝斯與富樫雅彦的鼓——盤名的意思就在這裡：四個人各自是一個單位，除了和聲樂器之外沒有任何鋪墊。〈Four Units〉10:50 開場、〈Black Bass〉8:02 收尾，五首裡的翻唱只有一首〈Scarborough Fair〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9e764a87-1b61-482e-88e8-15d560124462&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/7438580",
+     "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD",
+     "https://music.apple.com/us/album/1540555407",
+     "https://musicbrainz.org/release-group/9e764a87-1b61-482e-88e8-15d560124462"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/ca/e5/48/cae548aa-d2ad-a009-6212-cb3d6ee17e67/mzaf_11741765071248136142.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1540555407",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮沢昭",
+   "album": "Love For Sale",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 63193b6e-c359-4a45-94fb-a9f0787f14cb。回問 release-group 端點（inc=artist-credits+releases）：title「Love For Sale」、artist-credit「Akira Miyazawa」（實體 59e0a0d4）、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：4a6003cf（JP 1978 Official 12\" Vinyl 10 軌，RCA RVL-5523）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）",
+    "rgMbid": "63193b6e-c359-4a45-94fb-a9f0787f14cb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/63193b6e-c359-4a45-94fb-a9f0787f14cb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首全是標準曲，最短的〈Yesterday〉不到三分鐘——一張把次中音當歌喉用的唱片。錄音分成兩天：1966 年 10 月 7 日與 1967 年 1 月 13 日，原盤 1967 年由 Takt 發行，品番 JAZZ-3，在宮沢昭的目錄上屬於 1960 年代後期的那一段。兩個錄音日各用一組節奏組，鋼琴一次是市川秀男、一次是世良譲，部分曲目還加了電吉他，所以整張的聲底並不統一。開場的〈Love for Sale〉5:56 最長，十首每首都在三到六分鐘之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=63193b6e-c359-4a45-94fb-a9f0787f14cb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/4921518",
+     "https://www.discogs.com/release/11636775",
+     "https://musicbrainz.org/release-group/63193b6e-c359-4a45-94fb-a9f0787f14cb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮沢昭",
+   "album": "My Piccolo: Live at Nagoya Yamaha Jazz Club",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5431fc8c-06e9-4ead-9b62-540681b21caf。回問 release-group 端點：title「My Piccolo: Live at Nagoya Yamaha Jazz Club」、artist-credit「Akira Miyazawa」、first-release-date 1981、primary-type Album、**secondary-types [\"Live\"]**、轄下 1 個 release。release 端點（inc=media+labels）：5007e01d（JP 1981 Official 12\" Vinyl 7 軌，NEXT WAVE 28PJ-1003）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）",
+    "rgMbid": "5431fc8c-06e9-4ead-9b62-540681b21caf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5431fc8c-06e9-4ead-9b62-540681b21caf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七首全是他自己寫的，壓軸那首整整十分鐘，叫〈Dandy Fisherman〉。這是 1981 年 3 月 21 日在名古屋錄下的現場，同年由 NEXT WAVE 以 28PJ-1003 發行。台上除了宮沢昭的次中音薩克斯風，有佐藤允彦的鋼琴、兩位貝斯手，鼓是日野元彦。整張沒有一首標準曲，這在他的目錄裡少見；七首之中有三首直接以魚或釣客為題，壓軸那首把篇幅放開了一倍。現場的空氣與掌聲都留在盤上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5431fc8c-06e9-4ead-9b62-540681b21caf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/4663852",
+     "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD",
+     "https://musicbrainz.org/release-group/5431fc8c-06e9-4ead-9b62-540681b21caf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮沢昭",
+   "album": "On Green Dolphin Street",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 66f06f89-29e7-4e87-8a75-e94999c395b6。回問 release-group 端點：title「On Green Dolphin Street」、artist-credit「Akira Miyazawa」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：e9d2daa1（JP 1982 Official 12\" Vinyl 6 軌，Union Jazz ULP-7002）。列舉檔命中：`batch-progress/enum/jp-union.json`（labelYear 1982，entity 3e1c0dbe-0b4f-43d8-b61e-ffdd9dd0e97c）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）",
+    "rgMbid": "66f06f89-29e7-4e87-8a75-e94999c395b6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/66f06f89-29e7-4e87-8a75-e94999c395b6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首全是標準曲，其中兩首出自 Miles Davis 與 Charlie Parker 的手筆。錄音是 1982 年 10 月 17 日一天錄完的四重奏，宮沢昭在這張同時吹次中音與高音薩克斯風，雙管並用在他的目錄裡少見；鋼琴是佐藤允彦，鼓是日野元彦。這也是他隔了十三年再回到同一家廠牌系統的錄音室盤——發行的 Union Jazz，與他 1969 年那張所在的 Union Records 同屬テイチク系。六首收在標準曲的邊界內，沒有一首自作曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=66f06f89-29e7-4e87-8a75-e94999c395b6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/3900426",
+     "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD",
+     "https://musicbrainz.org/release-group/66f06f89-29e7-4e87-8a75-e94999c395b6"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮沢昭",
+   "album": "'Round Midnight - Amazing Jazz Ballad",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8e076914-562b-4c43-bf36-d422286417a1。回問 release-group 端點：title「'Round Midnight - Amazing Jazz Ballad」、artist-credit「Akira Miyazawa」、first-release-date 1985-07-21、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：889dc034（JP 1985-07-21 Official 12\" Vinyl 8 軌，Paddle Wheel K28P-6358）。列舉檔命中：`batch-progress/enum/jp-king.json`（entities「Paddle Wheel」）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。（同卡池「刻意不釘」清單見本組《山女魚》一卡）",
+    "rgMbid": "8e076914-562b-4c43-bf36-d422286417a1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8e076914-562b-4c43-bf36-d422286417a1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八首全是抒情曲，後面還鋪了一組弦樂，整張沒有一首快板。錄音在 1985 年 2 月 6 日與 7 日兩天完成，同年 7 月 21 日發行。編制是宮沢昭的次中音薩克斯風加一組鋼琴三重奏，弦樂另外鋪一層，譜由八木正生寫——他也是二十三年前那張首作裡那首法文題名曲子的作者；宮沢昭在同一家廠牌的第一張與這一張，剛好也隔了同樣的年數。八首之中〈'Round Midnight〉7:48 最長，〈Prelude to a Kiss〉3:38 最短。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8e076914-562b-4c43-bf36-d422286417a1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/12430898",
+     "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD",
+     "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%A5%B3%E9%AD%9A_%28%E5%AE%AE%E6%B2%A2%E6%98%AD%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%29",
+     "https://musicbrainz.org/release-group/8e076914-562b-4c43-bf36-d422286417a1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/f2/66/d2f266f0-b808-d781-9743-e6b0ee4f578e/mzaf_16372945623452929258.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777008777",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "白木秀雄",
+   "album": "白木秀雄",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group da7146b8-38e8-478b-8f29-5204a1e15bbd。回問 release-group 端點（inc=artist-credits+releases）：title「白木秀雄」、artist-credit「白木秀雄」（漢字，實體 40d40a8c）、first-release-date 1958、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：0dd4abf6（JP 1958，status null，12\" Vinyl 9 軌，KING KC-8，release 題「Hideo Shiraki」）、9c55dea7（JP 2012-07-11 Official CD 9 軌，[no label] KICJ-2241，barcode 4988003422660）、bd76cb5c（JP 2007-11-23，status null，CD 9 軌，Think! Records THCD-064）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist「白木秀雄」，year 1958，entities「KING」，why「rg-tag」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+    "selfTitledVerified": true,
+    "rgMbid": "da7146b8-38e8-478b-8f29-5204a1e15bbd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/32/07/71/32077176-e71d-f901-f779-93188119beeb/NOPA-6533.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777020927",
+    "note": "試聽探測釘定的 collectionId 1777020927（jp）：白木秀雄 — HIDEO SHIRAKI"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 42,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "藝名是把本姓柏倉的柏字拆成兩半來的，木字邊留給了自己。1951 年他考進東京藝術大學打擊樂科，那一屆全科只收兩位新生，另一位是日後的指揮家岩城宏之。這張是他的首張領銜專輯：1958 年 11 月錄音、1959 年發行，單聲道，六人編制裡的次中音薩克斯風是宮沢昭。九首裡前八首都在兩分十二秒到五分二十三秒之間，像一張曲集；要到壓軸的〈A Night In Tunisia〉7:16，鼓手的篇幅才真正放開。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=da7146b8-38e8-478b-8f29-5204a1e15bbd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84",
+     "https://www.discogs.com/release/8927524",
+     "https://musicbrainz.org/release-group/da7146b8-38e8-478b-8f29-5204a1e15bbd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/3c/0f/393c0fb6-7222-7da3-601c-4fcd170df43d/mzaf_10786436751344404155.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777020927",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "白木秀雄",
+   "album": "白木秀雄リサイタル",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f59e3eb2-a598-42c5-b263-70636a3318a9。回問 release-group 端點（inc=artist-credits+releases）：title「白木秀雄リサイタル」、artist-credit「白木秀雄」（漢字，實體 40d40a8c）、first-release-date 1959、primary-type Album、**secondary-types [\"Live\"]**、轄下 3 個 release。release 端點（inc=media+labels）：c9dafe3b（JP 1959，status null，10\" Vinyl 6 軌，KING LKF 1051，release 題「Recital At Sankei Hall, Tokyo」）、5473d3d3（JP 2007-11-23 Official CD 6 軌，Think! Records THCD-067）、b9659ff6（JP 2012-07-11 Official CD 6 軌，KING KICJ 2242／[no label] KICJ-2242）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Hideo Shiraki，live true，entities「KING」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+    "rgMbid": "f59e3eb2-a598-42c5-b263-70636a3318a9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f59e3eb2-a598-42c5-b263-70636a3318a9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 13,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場的主題曲只有 43 秒，曲名〈Theme (White Wood)〉就是他姓氏的英譯。這是 1959 年 6 月 28 日在東京產經會館錄下的單聲道實況，同年以 10 吋盤發行。台上是他的五重奏：松本英彦的次中音薩克斯風兼長笛、長號、世良譲的鋼琴與貝斯，外加一位打 conga 與 bongo 的樂手，另邀原信夫とシャープス・アンド・フラッツ擔任特別來賓。第三首是文部省唱歌〈Yukiya Kon Kon〉，壓軸的〈Skin Deep〉7:38 則整首留給鼓。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f59e3eb2-a598-42c5-b263-70636a3318a9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84",
+     "https://www.discogs.com/release/9865025",
+     "https://musicbrainz.org/release-group/f59e3eb2-a598-42c5-b263-70636a3318a9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/87/40/7f8740a1-e546-752c-ace0-039f64f5044d/mzaf_11467627065906517622.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777021265",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "白木秀雄",
+   "album": "プレイズ・ボッサ・ノバ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c。回問 release-group 端點：title「プレイズ・ボッサ・ノバ」、artist-credit「白木秀雄」（漢字，實體 40d40a8c）、first-release-date **1962**（⚠ 只有年份，本卡改取 1963，理由見 risk）、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：b22363b1（JP 1962，status null，12\" Vinyl 7 軌，KING SKJ 1007，release 題「Plays Bossa Nova」）、bb990139（JP 2007-11-23 Official CD 7 軌，Think! Records THCD-065）、d3702f6b（JP 2012-07-11，status null，CD 7 軌，KING KICJ 2244）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Hideo Shiraki，year 1962，entities「KING」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+    "rgMbid": "5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1962 年 12 月錄，1963 年 1 月發——bossa nova 傳到日本的速度，可以用這兩個日期量出來。確切地說是 12 月 7 日與 8 日進錄音室，1 月 20 日上市。白木秀雄的五重奏裡沒有吉他：鼓、松本英彦的次中音薩克斯風兼長笛、小號、世良譲的鋼琴與貝斯——等於拿硬式咆勃的編制去打巴西的節奏。七首裡真正來自拉丁美洲的只有三首，其餘四首是把那套節奏搬過來，套在別的素材上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/11158727",
+     "https://music.apple.com/jp/album/1777007454",
+     "https://www.discogs.com/release/9979602",
+     "https://musicbrainz.org/release-group/5ed483fe-ea3d-41a8-ba6b-472ad3d26d7c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/9b/b2/879bb237-0a51-bdf4-382d-2d6ae7b84b96/mzaf_18022805931730556050.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777007454",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "白木秀雄クインテット",
+   "album": "Plays Horace Silver",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7ce34993-378f-4c85-9146-8e101c12090c。回問 release-group 端點（inc=artist-credits+releases）：title「Plays Horace Silver」、artist-credit「Hideo Shiraki Quintet」（群組實體 ee00ecfa-2be6-4aea-9316-17c3d61270fe，主名「白木秀雄クインテット」，名下 4 個 RG：`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998、`4b426f75`《HIDEO SHIRAKI RECITAL》、`7ce34993` 本張、`809303fb`《Modern Ameriachi For You》1966）、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels）：cc8c8b0a（JP 1962，status null，12\" Vinyl 7 軌，KING SKJ 1006）、07e9e0b9（JP 2012-07-11，status null，CD 7 軌，KING KICJ 2243，barcode 4988003422684）。列舉檔命中：`batch-progress/enum/jp-king.json`（artist 欄寫 Hideo Shiraki Quintet，entities「KING」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+    "rgMbid": "7ce34993-378f-4c85-9146-8e101c12090c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f7/ed/5d/f7ed5d94-e83b-aede-6344-8a121a051245/NOPA-6535.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777007028",
+    "note": "試聽探測釘定的 collectionId 1777007028（jp）：白木秀雄 — HIDEO SHIRAKI plays HORACE SILVER"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張只彈一個人的曲子：Horace Silver 的七首，1962 年 9 月在東京錄了兩天。確切日期是 9 月 3 日與 4 日，掛名的是白木秀雄クインテット——鼓手領銜的唱片，樂譜卻全由次中音薩克斯風手松本英彦寫，編曲權整個交在管樂手上。五重奏之外另加一支活塞長號，〈Sister Sadie〉〈Blowin' the Blues Away〉〈The Preacher〉這幾首照原樣搬過來。七首的長度整齊地落在四分二十秒到六分三十五秒之間，沒有哪一首被特別放大。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7ce34993-378f-4c85-9146-8e101c12090c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/9979602",
+     "https://music.apple.com/jp/album/1777007028",
+     "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84",
+     "https://musicbrainz.org/release-group/7ce34993-378f-4c85-9146-8e101c12090c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/8d/00/f08d0060-a922-960b-1cf0-e2d4640049fa/mzaf_14749655190394040224.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777007028",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "白木秀雄",
+   "album": "祭りの幻想",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b545a154-6a96-4bcb-90bb-ed3e0d692f43。回問 release-group 端點（inc=artist-credits+releases）：title「Hideo Shiraki in Fiesta」、artist-credit「Hideo Shiraki」（個人實體 40d40a8c）、first-release-date **2005-11-25**（⚠ 只建了再發，本卡改取 1961，理由見 risk）、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：6a2a5771（JP 2005-11-25 Official CD 7 軌，[no label] THCD-006，題《祭りの幻想》，barcode 4988044610033）、c2f5745b（JP 2009-09-25 Official SHM-CD 9 軌，[no label] THCD-100，題《祭りの幻想》，barcode 4988044613805）、4f1b0920（XW 2017-06-15 Official Digital Media 7 軌，Trunk Records，barcode 5056163063241）——**三筆的 label-info 都沒有 Teichiku，1961 原盤未建檔**（第 259 條：已用 release 端點回問過，不是問錯端點）。jp-1.md 的 §1 候選清單把本張列在「MB 有 release-group 但沒掛廠牌／只掛再發」那九筆裡（「白木秀雄《In Fiesta》（只掛 Trunk 再發）」）。藝人實體 40d40a8c-b7a7-4af0-9483-7b32c849ac1a（白木秀雄／Person／JP，1933-01-01～1972-08-22，名下 12 個 RG）。相關群組實體：`ee00ecfa` 白木秀雄クインテット（Group／JP，alias「Hideo Shiraki Quintet」，4 個 RG）、`b9b4aac2` 白木秀雄クインテット＆スリー琴ガールズ（Group／JP，1 個 RG＝c-131 已收的《Sakura Sakura》）。⚠ **同一位被 MB 拆成三個實體，而且同一張碟常在兩個實體下各有一個 RG**（見各卡的「刻意不釘」）。擋掉的同名他人（第 250／324 條，只看 type／area／disambiguation）：白木（CN，Whitewood）、白木（JP，vocalist）、白木みのる、白木しろ、白木治信、白木優子、スウィーティー白木、荒木秀雄、小林秀雄（composer）、島津秀雄。本組刻意不釘（重複 RG 與非本人的碟）：`8c4f6561`《白木秀雄》2007-11-23（Think! Records THCD-064，**與 `da7146b8` 是同一張碟的第二個 RG**，CAA 200）、`2e1f5df4`《プレイズ・ホレス・シルヴァー》2007-11-23（THCD-066，**與 `7ce34993` 同碟**，CAA 200）、`aaa30ffc`《白木秀雄プレイズ・ボッサ・ノバ》2007-11-23（Album/Compilation，與 `5ed483fe` 同源）、`4b426f75`《HIDEO SHIRAKI RECITAL》（無日期、只有數位，與 `f59e3eb2` 同碟）、`3a9a8c2c`《白木秀雄クインテット／祭りの幻想》1998-06-24（Teichiku TECW-20735，**與 `b545a154` 同碟**，CAA 404）、`809303fb`《Modern Ameriachi For You》1966（KING SKK 227，credit「Hideo Shiraki Quintet + All Stars, Takeshi Inomata & His West Liners + All Stars」，兩團合掛，第 321 條）、`bfe82fd9`《コンプリート 加山雄三の世界》2005（加山雄三 的碟）、`709db011`《モダンでツイスト》2007-05-25（THCD-048，CAA 404）、`fda383fa`《ラテン・ドラミング》2007-05-25（THCD-049，CAA 404）。",
+    "rgMbid": "b545a154-6a96-4bcb-90bb-ed3e0d692f43",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b545a154-6a96-4bcb-90bb-ed3e0d692f43/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 37,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1961 年的五重奏裡多了一把箏，日本的祭典旋律就這樣進了 hard bop。錄音分 1961 年 6 月 23 日、29 日與 7 月 4 日三天完成，由テイチク以 SL-3002 發行，原盤封面上的日文題寫作《祭の幻想》。客座的箏不是拿來點綴音色的，它把旋律直接放進和聲裡——這個做法後來成了他 1965 年把日本樂器帶出國那套想法的原型。台上另有松本英彦的次中音薩克斯風與世良譲的鋼琴。七首都在四分十五秒到七分三秒之間，〈Cherokee〉5:32 是傳統的炫技曲目。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b545a154-6a96-4bcb-90bb-ed3e0d692f43&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/13563937",
+     "https://www.discogs.com/release/3153245",
+     "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9C%A8%E7%A7%80%E9%9B%84",
+     "https://musicbrainz.org/release-group/b545a154-6a96-4bcb-90bb-ed3e0d692f43"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/13/62/bb/1362bba1-7407-f8be-d290-0e0b64952618/mzaf_15323038485154350101.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1255618794",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮沢昭カルテット",
+   "album": "Sea Horse",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 13f2967d-66a0-4ab0-bfc8-cb7e092223da。回問 release-group 端點（inc=artist-credits+releases）：title「Sea Horse」、artist-credit **name「Akira Miyazawa Quartet」／artist 實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（主名「宮沢昭」）**、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels）：b9549c2e（date 1989，**country null**，status Official，CD 9 軌，**label-info 空陣列、無 catno、無 barcode**）。藝人實體 59e0a0d4-e321-4f12-aa84-40f1b48ad346（宮沢昭／Person／JP，名下 13 個 RG）。相關群組實體：`312ca341` 宮沢昭とオールスターズ（**0 個 RG**）、`18f7eb99` 宮沢昭トリオ（1 個，只有 Compilation `1a907384`）、`50e59345` Akira Miyazawa & His Midnight Partners（1 個，`f6cf21cb`《Fascinating Midnight Sounds》無日期）、`281b012b` Miyazawa Akira Quartet（1 個，`7c04151d`《Kiso》）。⚠ 同一位的 RG 在 MB 上有四種 credit 寫法：宮沢昭／Akira Miyazawa／Miyazawa Akira／Akira Miyazawa Quartet——依第 355 條一律取實體主名「宮沢昭」。擋掉的同名他人：宮沢りえ、宮沢和史、宮本文昭、伊福部昭、小沢昭一、宮川昭夫（第 250／324 條，只看 type／area／disambiguation）。本組刻意不釘：`0242edee`《Jazz Flute Method》1972-07-25（教材盤，沿用 c-131 第 356 條 F 對 猪俣猛《ドラム・メソード》的處置；MB 只有數位 release、無廠牌，CAA 404）、`346f1404`《ミュージカル・プレイ・イン・ジャズ》1969（Union，credit 宮沢昭／前田憲男／原田政長／富樫雅彦 四人平列，第 321 條）、`1d2ed313`《Operation Sam Taylor》1967 與 `4350666f`《Fascinating Tenor-Sax》1966（與 松本英彦 的合掛，同上）、`34769f6e`《Noyuri》1992-08-26（EASTWORLD TOCT-6631，CAA 404，status null）、`7c04151d`《Kiso》2006-10-19（Think! Records THCD-031，CAA 404，是 1970 年錄音的復刻，Apple jp 記 1970-01-01）、`f6cf21cb`《Fascinating Midnight Sounds》（無日期）。⚠ 本卡即 c-132 第 390 條列為「額度外、可直接進下一批」的宮沢昭三張之一，主線 2026-09-15 裁定改為本批補收（第 391 條）；另兩張（`34769f6e`《Noyuri》1992、`7c04151d`《Kiso》2006）仍留在候補。",
+    "rgMbid": "13f2967d-66a0-4ab0-bfc8-cb7e092223da",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/13f2967d-66a0-4ab0-bfc8-cb7e092223da/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1989 年 12 月的浜松，飯店裡錄下的那一晚，唱片要等十三年才發出來。那一晚是 12 月 21 日，宮沢昭カルテット在浜松一家飯店演出，錄音收下之後就擱著；首度發行要等到 2002 年 6 月 19 日，由 M & I 以 MYCJ-30145 推出。台上除了次中音薩克斯風，鋼琴是竹内春美、鼓是小津昌彦。九首、約七十分鐘：八首標準曲加一首自作的〈Baby Sea Horse〉，收尾的〈If Ever I Would Leave You〉10:15 最長。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=13f2967d-66a0-4ab0-bfc8-cb7e092223da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/28726573",
+     "https://www.discogs.com/release/28825399",
+     "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B2%A2%E6%98%AD",
+     "https://musicbrainz.org/release-group/13f2967d-66a0-4ab0-bfc8-cb7e092223da"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/08/2b/42/082b42c2-4771-9a9e-906c-27eb094a42ca/mzaf_6347977586150870057.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1712606396",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

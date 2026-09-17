@@ -1,0 +1,2855 @@
+{
+ "schemaVersion": 1,
+ "batch": "c129-20260917",
+ "albums": [
+  {
+   "artist": "Various Artists",
+   "album": "Princess Nicotine: Folk and Pop Music of Myanmar (Burma), Vol. 1",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6120ee5f-355a-3c14-9914-b31046331ba3，identitySource pinned。回問 release-group?fmt=json&inc=artist-credits+releases 確認 title『Princess Nicotine: Folk and pop music of Myanmar (Burma), Volume 1』、artist-credit『Various Artists』（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377）、primary-type Album、secondary-types [Compilation]、first-release-date 1994；再打 release?release-group=<id>&inc=media+labels 取得轄下 4 筆 release：45d583b1-08e0-4cf4-bac9-e59cc9d7be91（1994 US Official，Majora，12\" Vinyl×9，無目錄號）、873ccd0f-40e3-4b6a-b4ff-6d786c980875（2004-05-03 US Official，Sublime Frequencies SF006，CD×12，barcode 626776737027）、3bc9e2fd-d497-4812-a93e-3571ff8bf77d（2011 US Official，SF006LP，12\" Vinyl×9）、96143290-1908-49ad-998e-77cf543f8cc7（2023-03-31 XW Official，數位×12）。刻意不釘：ad868ee4-e6ac-3a50-81c6-a6d9754bedaf《Guitars of the Golden Triangle》（同系列第二輯，本批另收一張）、3f666aca-b662-47d1-8d3b-1a41a1e7242e《Music of Nat Pwe》（同系列第三輯，本批另收一張）。",
+    "rgMbid": "6120ee5f-355a-3c14-9914-b31046331ba3",
+    "exceptionReason": "Majora 於 1994 年以 12 吋黑膠 9 軌首次把仰光市面上的緬甸卡帶與電台錄音整編成一張可流通的盤，2004-05-03 由 Sublime Frequencies 以 SF006 重發成 CD 並增為 12 軌（barcode 626776737027），2011 年再出 SF006LP 黑膠 9 軌、2023-03-31 出數位 12 軌；這批曲目的原始形態是緬甸國內的卡帶與廣播母帶，沒有任何一位掛名藝人有對應的個人原盤，合輯是唯一的成盤形態。第一個網址是本輯的 MusicBrainz release-group（記標題、artist-credit、first-release-date 1994、primary-type Album、secondary-types Compilation 與轄下四筆 release），第二個是 2004 年 SF006 那一筆 release（記廠牌 Sublime Frequencies、目錄號 SF006、US、Official、CD、12 軌、barcode），exceptionReason 引的每一格都在這兩頁上，兩頁皆以 ws/2 API 逐格讀過。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/6120ee5f-355a-3c14-9914-b31046331ba3",
+     "https://musicbrainz.org/release/873ccd0f-40e3-4b6a-b4ff-6d786c980875"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6120ee5f-355a-3c14-9914-b31046331ba3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1994 年的 Majora 黑膠收了九軌，十年後重發的 CD 版多出三軌。2004 年 5 月 3 日由 Sublime Frequencies 以 SF006 出的那版擴成十二軌、十一個掛名，曲序也與原盤不同；最早那批黑膠裝在紙套裡，連目錄號都沒有印。收的是橫跨約五十年的錄音，來源卡帶與廣播母帶在資料庫端沒有對應的原盤，整張因此以合輯建檔。2011 年黑膠再版、2023 年補上數位版，編選由 Alan Bishop 負責。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6120ee5f-355a-3c14-9914-b31046331ba3?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=6120ee5f-355a-3c14-9914-b31046331ba3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://sublime-frequencies.bandcamp.com/album/princess-nicotine-folk-and-pop-music-from-myanmar-vol-1",
+     "https://musicbrainz.org/ws/2/release-group/ad868ee4-e6ac-3a50-81c6-a6d9754bedaf?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/release-group/6120ee5f-355a-3c14-9914-b31046331ba3",
+     "https://musicbrainz.org/release/873ccd0f-40e3-4b6a-b4ff-6d786c980875"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Guitars of the Golden Triangle: Folk and Pop Music of Myanmar, Volume 2",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ad868ee4-e6ac-3a50-81c6-a6d9754bedaf，identitySource pinned。回問確認 title『Guitars of the Golden Triangle: Folk and Pop Music of Myanmar, Volume 2』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2005-09-27；轄下 release 1 筆：3bc33734-1029-44c1-ab8c-809253a34b43（2005-09-27 US Official，Sublime Frequencies SF024，CD×21，barcode 751937275121）。刻意不釘：6120ee5f-355a-3c14-9914-b31046331ba3《Princess Nicotine》（同系列第一輯，本批另收一張）、cf1165ce-59a9-432f-9eee-890d5f5e0ceb《The Crying Princess》（同廠牌緬甸 78 轉輯，本批另收一張）。",
+    "rgMbid": "ad868ee4-e6ac-3a50-81c6-a6d9754bedaf",
+    "exceptionReason": "Sublime Frequencies 緬甸系列第二輯，2005-09-27 以 SF024 在美國發行 CD、21 軌（barcode 751937275121），MB 上這個 release-group 底下只有這一筆 release，沒有黑膠也沒有數位版；曲目取自緬甸國內流通的卡帶與電台錄音，逐軌的原始載體沒有對應的個人專輯，合輯是唯一的成盤形態。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2005-09-27、primary-type Album、secondary-types Compilation），第二個是 SF024 那一筆 release（記廠牌、目錄號、US、Official、CD、21 軌、barcode），兩頁皆以 ws/2 API 逐格讀過。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/ad868ee4-e6ac-3a50-81c6-a6d9754bedaf",
+     "https://musicbrainz.org/release/3bc33734-1029-44c1-ab8c-809253a34b43"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ad868ee4-e6ac-3a50-81c6-a6d9754bedaf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 54,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "撣邦的舊卡帶轉錄成二十一軌，其中五軌連曲名都留白。2005 年 9 月 27 日由 Sublime Frequencies 出成 CD，曲目直接從 1970 年代初撣邦各地的舊卡帶轉錄，部分段落還留著斷訊。二十一軌分給八個掛名，Saing Saing Maw 一人佔七軌、Lashio Thein Aung 四軌；來源卡帶在資料庫端沒有可對應的原盤。當年的樂評形容這批電吉他沒有 power chord、延音很少，偶爾才聽得到 wah-wah 與 fuzz。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ad868ee4-e6ac-3a50-81c6-a6d9754bedaf?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=ad868ee4-e6ac-3a50-81c6-a6d9754bedaf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://sublime-frequencies.bandcamp.com/album/guitars-of-the-golden-triangle-folk-and-pop-music-of-myanmar-burma-vol-2",
+     "https://www.villagevoice.com/2006/03/07/burma-rave/",
+     "https://musicbrainz.org/release-group/ad868ee4-e6ac-3a50-81c6-a6d9754bedaf",
+     "https://musicbrainz.org/release/3bc33734-1029-44c1-ab8c-809253a34b43"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Folk and Pop Music of Myanmar (Burma) Vol. 3: Music of Nat Pwe",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3f666aca-b662-47d1-8d3b-1a41a1e7242e，identitySource pinned。回問確認 title『Folk and Pop Music of Myanmar (Burma) Vol. 3: Music of Nat Pwe』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2007-09-11；轄下 release 1 筆：c31cb958-9cfa-419b-85e9-9e8d0cc311b5（2007-09-11 US Official，Sublime Frequencies SF035，CD×16，barcode 欄空）。刻意不釘：04c1f881-1f36-4d4a-a89f-c4413f7000da《Radio Myanmar (Burma)》（同廠牌 SF044，本批另收一張，且 MB 未標 Compilation）。",
+    "rgMbid": "3f666aca-b662-47d1-8d3b-1a41a1e7242e",
+    "exceptionReason": "Sublime Frequencies 緬甸系列第三輯，2007-09-11 以 SF035 在美國發行 CD、16 軌，收的是緬甸 nat pwe 儀式場合的現場演奏，錄音來源是儀式現場而非唱片公司錄音室，MB 上這個 release-group 底下只有這一筆 release；這批錄音沒有任何一位掛名藝人的個人原盤，合輯是唯一的成盤形態。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2007-09-11、primary-type Album、secondary-types Compilation），第二個是 SF035 那一筆 release（記廠牌、目錄號、US、Official、CD、16 軌），兩頁皆以 ws/2 API 逐格讀過。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/3f666aca-b662-47d1-8d3b-1a41a1e7242e",
+     "https://musicbrainz.org/release/c31cb958-9cfa-419b-85e9-9e8d0cc311b5"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3f666aca-b662-47d1-8d3b-1a41a1e7242e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 18,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "節慶現場的自製卡帶錄成十六軌，沒有一軌來自錄音室。2007 年 9 月 11 日由 Sublime Frequencies 出成 CD，曲目全部來自緬甸各地節慶上錄下的自製卡帶。九個掛名裡 Sein Moota 唱了五軌最多，另兩位各佔四軌與三軌，有兩軌的曲名都寫著節慶地名 Taungbyone。廠牌頁把 pwe 解釋成安撫 nat 的儀式，由稱作 kadaw 的司儀兼歌者召請。錄下來的人聲裹著 reverb 與 echo，打擊部分是鐘、鈸與調音金屬條。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/3f666aca-b662-47d1-8d3b-1a41a1e7242e?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=3f666aca-b662-47d1-8d3b-1a41a1e7242e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://sublime-frequencies.bandcamp.com/album/folk-and-pop-music-of-myanmar-burma-vol-3-music-of-nat-pwe",
+     "https://musicbrainz.org/release-group/3f666aca-b662-47d1-8d3b-1a41a1e7242e",
+     "https://musicbrainz.org/release/c31cb958-9cfa-419b-85e9-9e8d0cc311b5"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Radio Myanmar (Burma)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 04c1f881-1f36-4d4a-a89f-c4413f7000da，identitySource pinned。回問 release-group?fmt=json&inc=artist-credits+releases 確認 title『Radio Myanmar (Burma)』、artist-credit『Various Artists』、primary-type Album、secondary-types **[]（空）**、first-release-date 2008-05-13；再打 release?release-group=<id>&inc=media+labels 取得轄下 release 1 筆：48758d2b-1464-4f50-aaf0-eb3703b218c3（2008-05-13 US Official，Sublime Frequencies SF044，CD×44，barcode 751837331728）。刻意不釘：3f666aca-b662-47d1-8d3b-1a41a1e7242e《Music of Nat Pwe》（同廠牌緬甸系列第三輯，本批另收一張）。",
+    "rgMbid": "04c1f881-1f36-4d4a-a89f-c4413f7000da",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/04c1f881-1f36-4d4a-a89f-c4413f7000da/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四十四段廣播裡最短的一段只有 5 秒，是一句電台台呼。2008 年 5 月 13 日由 Sublime Frequencies 出成 CD，主體是 Geoff Hawryluk 在 2007 年 3 月到 4 月於仰光收錄的訊號，另補進 Alan Bishop 在 1994 到 2002 年間錄下的片段。內容在新聞、天氣、廣告、電台 ID 與流行、古典、民謠曲段之間切換，演出者欄整張留白，曲名只是各段內容的描述。最長一段 4 分 13 秒，合計約七十分鐘。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/04c1f881-1f36-4d4a-a89f-c4413f7000da?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=04c1f881-1f36-4d4a-a89f-c4413f7000da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://sublime-frequencies.bandcamp.com/album/radio-myanmar-burma",
+     "https://musicbrainz.org/release-group/04c1f881-1f36-4d4a-a89f-c4413f7000da"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "The Crying Princess: 78rpm Records From Burma",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cf1165ce-59a9-432f-9eee-890d5f5e0ceb，identitySource pinned。回問確認 title『The Crying Princess: 78rpm Records From Burma』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2013；轄下 release 1 筆：a6dd2e86-395a-4360-85e9-13dd748b2aa8（2013 US Official，Sublime Frequencies SF078 ; Sublime Frequencies SF078LP，12\" Vinyl×14，barcode 欄空）。刻意不釘：6120ee5f-355a-3c14-9914-b31046331ba3《Princess Nicotine》（同廠牌緬甸系列第一輯，盤名前綴近似、不是同一張，本批另收一張）。",
+    "rgMbid": "cf1165ce-59a9-432f-9eee-890d5f5e0ceb",
+    "exceptionReason": "2013 年 Sublime Frequencies 以 SF078／SF078LP 發行的 12 吋黑膠、14 軌，曲目來源是緬甸 78 轉蟲膠唱片時代的錄音——那批原盤是單面數分鐘的 78 轉碟，本來就沒有專輯形態，要成盤只能靠後世整編；MB 上這個 release-group 底下只有這一筆 release。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2013、primary-type Album、secondary-types Compilation），第二個是 SF078 那一筆 release（記廠牌、兩個目錄號 SF078 與 SF078LP、US、Official、12\" Vinyl、14 軌），兩頁皆以 ws/2 API 逐格讀過。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/cf1165ce-59a9-432f-9eee-890d5f5e0ceb",
+     "https://musicbrainz.org/release/a6dd2e86-395a-4360-85e9-13dd748b2aa8"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cf1165ce-59a9-432f-9eee-890d5f5e0ceb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 45,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A 面七軌錄於 1909 與 1911 年，比 B 面最晚那兩軌早了半個世紀。2013 年由 Sublime Frequencies 壓成 12 吋，十四軌全部轉錄自 78 轉唱片，逐軌錄音年都列在解說裡：B 面從 1929 年一路排到 1950、1955 與 1960 年。四組曲目各拆成 Part 1 與 Part 2，一段佔一面，盤名取自 A 面那首三人合唱。原盤與照片出自 Robert Millis 與 Alan Bishop 兩人的收藏。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/cf1165ce-59a9-432f-9eee-890d5f5e0ceb?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=cf1165ce-59a9-432f-9eee-890d5f5e0ceb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://sublime-frequencies.bandcamp.com/album/the-crying-princess-78-rpm-records-from-burma",
+     "https://spidey.kfjc.org/12690/crying-princess78-rpm-records-from-burma-the-coll-sublime-frequencies/",
+     "https://musicbrainz.org/release-group/cf1165ce-59a9-432f-9eee-890d5f5e0ceb",
+     "https://musicbrainz.org/release/a6dd2e86-395a-4360-85e9-13dd748b2aa8"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "အင်းလေး မြင့်မောင်",
+   "album": "Mahagitá: Harp and Vocal Music of Burma",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9a622bf4-5919-4283-8d61-abf9d77e6b2d，identitySource pinned。回問確認 title『Mahagitá: Harp and Vocal Music of Burma』、artist-credit『Inle Myint Maung and Yi Yi Thant』（兩個藝人實體：1d3ecbe4-f953-4b6c-abbb-0c418cb608cf『အင်းလေး မြင့်မောင်』與 3048962f-e331-4603-b741-5b4a8f561996『ရီရီသန့်』）、primary-type Album、secondary-types []、first-release-date 2003-01-21；轄下 release 1 筆：b3065c24-3fba-4cd4-948a-576917cbb243（2003-01-21 US Official，Smithsonian Folkways SFW CD 40492，CD×9，barcode 093074049228）。刻意不釘：109db4f7-e866-4611-a99a-7ea2c6c848b1《Music of the Saung • Burmese Harp》（同一位 1978 年那張，本批另收一張、不是同一碟）、b88d23e3-9702-4327-a790-f34a77e83037《Mahagita Songs: Thachinkan》（1982 卡帶，無廠牌無國別）。",
+    "rgMbid": "9a622bf4-5919-4283-8d61-abf9d77e6b2d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9a622bf4-5919-4283-8d61-abf9d77e6b2d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "2000 年 1 月在仰光錄音，三年後由華府的 Smithsonian Folkways 發行。2003 年 1 月 21 日出的這張 CD 收九軌、約七十六分鐘，台上只有兩個人：Inle Myint Maung 的弓形豎琴，配 Yi Yi Thant 的人聲，歌者同時掌鈴 sái 與竹拍板 wáa。曲目屬緬甸古典歌樂 mahagita，開場一軌十二分零二秒最長，連最短的也有五分四十九秒。隨片附上二十五頁英文解說，由 Ward Keeler 撰寫。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/9a622bf4-5919-4283-8d61-abf9d77e6b2d?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=262217002&country=us&entity=song&limit=200",
+     "https://search.library.wisc.edu/catalog/9914303682902121",
+     "https://musicbrainz.org/release-group/9a622bf4-5919-4283-8d61-abf9d77e6b2d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/ea/ec/83/eaec8302-5c62-13c2-7010-2cfe61735b45/mzaf_9092010611331652171.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "262217002",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ဇော်ဝင်းထွဋ်",
+   "album": "မာကျူရီည",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8865219c-a04b-4c1f-9f23-21668222b90a，identitySource pinned。回問確認 title『မာကျူရီည』、artist-credit『ဇော်ဝင်းထွဋ်』（藝人實體 ff0d72c4-4783-4ef3-98af-12608b108acf，Person／MM／1964-01-21）、primary-type Album、secondary-types []、first-release-date 1984；再打 release 端點取得轄下 2 筆：5618cfee-5bb7-4575-b6b2-6ed87a11beaf（1984 MM Official，Cassette×15，label-info 實測為空）、e7fe57b8-9d83-4e0c-af7d-a63245cade9c（2020-06-27 XW Official，Legacy Music Network，Digital Media×15）。藝人名下共 9 個 release-group。刻意不釘：6ec2690d-ea71-44ea-a260-572c216afcdf《ဆေးဆိုးပန်းရိုက်မျက်နှာ》(1995)、a5bbdd0b-0ddc-4dec-b84f-25a17c88a548《နေရာသစ်ရှာဖွေကြသူများ》(1995，secondary-types [Live])、e92af2d2-95c0-46d9-9e96-eaa689ff05a5《နှစ် ၂၀ ရှင်သန်ခြင်း》(2003，[Live])、00d1f7c0-6d67-4666-a3da-ee9b7a13e788《အဆုံးမရှိများ》(2019，primary-type EP，本批不收 EP)。",
+    "rgMbid": "8865219c-a04b-4c1f-9f23-21668222b90a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8865219c-a04b-4c1f-9f23-21668222b90a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 2,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "首張專輯當年沒賣起來，三十六年後十五軌原樣上了串流。Zaw Win Htut 在 1980 年與擔任主奏吉他的兄長組成 Emperor 樂團，這張 1980 年代初問世的十五軌卡帶是他名下第一筆，市場反應平平；其後三張同樣沒有起色，要到 1989 年的一張精選輯才把他推上搖滾明星的位置。曲長落在 2 分 58 秒到 5 分 16 秒之間，第 5 軌就是同名曲。2020 年 6 月 27 日，同一份十五軌原封不動上了數位版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/8865219c-a04b-4c1f-9f23-21668222b90a?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=6785464016&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Zaw_Win_Htut",
+     "https://my.wikipedia.org/wiki/ဇော်ဝင်းထွဋ်",
+     "https://musicbrainz.org/release-group/8865219c-a04b-4c1f-9f23-21668222b90a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/af/b8/3eafb84f-0bce-8e98-7e20-1d2a00b771a9/mzaf_3632453751229967580.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "6785464016",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "လေးဖြူ",
+   "album": "ပင်လယ်အော်သံ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cf3b7c32-2625-49e0-bee2-fea8f2d5a436，identitySource pinned。回問確認 title『ပင်လယ်အော်သံ』、artist-credit『လေးဖြူ』（藝人實體 355705f3-aaf3-488a-8d50-fd6f62e6b513，Person／MM／1969-05-19，disambiguation『Rock အဆိုတော်』）、primary-type Album、secondary-types []、first-release-date 1994；轄下 release 2 筆：f6df3bea-2952-4dca-8d60-01f4179753bf（1994 MM Official，Cassette×13，label-info 空）、7feba631-8d5c-49ce-9102-d29f7f58893f（2003 MM Official，CD×13，label-info 空）。藝人名下共 7 個 release-group。刻意不釘：2c86bc7c-67b9-4f21-b249-b37be6927b3f《ရာစုသစ်》（**無 first-release-date**，與 Iron Cross 名下 b9d46996 同名，本批收 Iron Cross 那一個）、854f07d0-fd61-41ac-ac8c-e681a39e648b《ကန္တာရပင်လယ် လမင်းအော်သံ》(1994-09-14，secondary-types [Live]，盤名與本張近似、不是同一碟)、1f882606-4701-42f0-aa6d-520e14c56025《လိပ်ပြာ》(2003)。",
+    "rgMbid": "cf3b7c32-2625-49e0-bee2-fea8f2d5a436",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cf3b7c32-2625-49e0-bee2-fea8f2d5a436/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 8,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第 12 軌的曲名，把 heavy rock 兩個字音譯成緬文寫在卡帶上。這是 Lay Phyu 名下最早的一筆：1994 年的緬甸卡帶收十三軌，2003 年再出 CD，兩版逐軌相同。曲長從 2 分 50 秒排到 6 分 16 秒，第 6 軌最長、第 3 軌次之。錄這張時他的身分是搖滾樂團 Iron Cross 的主唱。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/cf3b7c32-2625-49e0-bee2-fea8f2d5a436?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=cf3b7c32-2625-49e0-bee2-fea8f2d5a436&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://en.wikipedia.org/wiki/Lay_Phyu",
+     "https://musicbrainz.org/ws/2/release-group?artist=355705f3-aaf3-488a-8d50-fd6f62e6b513&fmt=json&limit=100",
+     "https://musicbrainz.org/release-group/cf3b7c32-2625-49e0-bee2-fea8f2d5a436"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "လေးဖြူ",
+   "album": "ပါဝါ ၅၄",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e9cd8682-6e89-46cd-b704-b18f3125033b，identitySource pinned。回問確認 title『ပါဝါ ၅၄』、artist-credit『လေးဖြူ』（藝人實體 355705f3-aaf3-488a-8d50-fd6f62e6b513）、primary-type Album、secondary-types []、first-release-date 1996；轄下 release 1 筆：38cc97a8-2e16-4e1f-a032-a8703da06ead（1996 MM Official，CD×12，label-info 實測為空）。刻意不釘：cf3b7c32-2625-49e0-bee2-fea8f2d5a436《ပင်လယ်အော်သံ》(1994，本批另收一張、不是同一碟)、a53c0ea3-fa23-4f9a-b143-b9d885eff5cf《ခဏလေးများ》(2007-03-15)、b5785940-2c64-4e33-a2ac-da8ce94c2484《ဘင်္ဂလားပင်လယ်အော် (Bay Of Bengal)》(2008-07-01)。",
+    "rgMbid": "e9cd8682-6e89-46cd-b704-b18f3125033b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e9cd8682-6e89-46cd-b704-b18f3125033b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名上的數字在上市後被拿掉，只剩 Power 一個字。這張《ပါဝါ ၅၄》（Power 54）是 Lay Phyu 1990 年代中期的第二張個人盤，與名下最早那張隔了兩年；資料庫端只登記 1996 年的緬甸 CD 一筆，沒有任何再版。十二軌曲長從 3 分 07 秒到 5 分 23 秒，沒有一軌與盤名同名。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e9cd8682-6e89-46cd-b704-b18f3125033b?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=e9cd8682-6e89-46cd-b704-b18f3125033b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.200worldalbums.com/post/myanmar-khana-lay-miaa-lay-phyu",
+     "https://en.wikipedia.org/wiki/Lay_Phyu",
+     "https://musicbrainz.org/release-group/e9cd8682-6e89-46cd-b704-b18f3125033b"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Iron Cross",
+   "album": "ရာစုသစ်",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b9d46996-28fc-49ca-a7c0-f263ada8c4ca，identitySource pinned。回問確認 title『ရာစုသစ်』、artist-credit『Iron Cross』（藝人實體 31e48b17-0501-4f1b-aca7-cd6032a114f8，Group／MM／1989／『Burmese rock band』）、primary-type Album、secondary-types []、first-release-date 2001；轄下 release 1 筆：f3d83563-2109-4399-8e51-c585c387d607（2001 MM Official，label-info『Iron Cross』無目錄號，CD×12）。藝人名下只有這 1 個 release-group。刻意不釘：2c86bc7c-67b9-4f21-b249-b37be6927b3f《ရာစုသစ်》（掛在 လေးဖြူ 名下的同名 RG，無 first-release-date，不是本張）。",
+    "rgMbid": "b9d46996-28fc-49ca-a7c0-f263ada8c4ca",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b9d46996-28fc-49ca-a7c0-f263ada8c4ca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌欄上印的名字就是團名，十二軌分給三位主唱輪流。2001 年這張緬甸 CD 約五十二分鐘，發行方登記的名字與團名同字，形態上是自營發行。四軌由 Myo Gyi、Ah Nge 與 Lay Phyu 三人合唱，兩軌是其中兩位對唱，其餘六軌三人各自分掉；開場同名曲 4 分 58 秒，最長一軌 5 分 07 秒，最短 3 分 15 秒。團的核心編制是主奏吉他、貝斯、鍵盤與鼓四位，三位主唱各有個人發展，仍留在團內。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b9d46996-28fc-49ca-a7c0-f263ada8c4ca?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=1838865685&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Iron_Cross_(Burmese_band)",
+     "https://musicbrainz.org/ws/2/release-group?artist=31e48b17-0501-4f1b-aca7-cd6032a114f8&fmt=json&limit=100",
+     "https://musicbrainz.org/release-group/b9d46996-28fc-49ca-a7c0-f263ada8c4ca"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/72/3a/e3723aae-c409-aef2-ff33-cf181af7e8e3/mzaf_9572620219941793014.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1838865685",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ထူးအိမ်သင်",
+   "album": "မှော်ဆရာအိပ်မက်",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0750d7d4-b6a0-4648-bbe2-b2df44511093，identitySource pinned。回問確認 title『မှော်ဆရာအိပ်မက်』、artist-credit『ထူးအိမ်သင်』（藝人實體 fbfb87b4-d0fb-496d-a188-6a1590da039c，Person／MM／1963-07-01）、primary-type Album、secondary-types []、first-release-date 1988-02；轄下 release 2 筆：598eba7f-839d-4b57-b0a4-02e67baeaa29（1988-02 MM Official，media format 欄空、16 軌，label-info 空）、6b82a36f-56d8-434a-ab23-23eb1ba881a2（date 欄空，XW Official，Legacy Music Network，Digital Media×16）。藝人名下共 21 個 release-group。刻意不釘：7e85864d-4c44-45fc-86e7-1d5931f759a3《နာရီပေါ်မှမျက်ရည်စက်များ》(1987-01-01，名下最早的一筆，本批名額不足)、642fce82-98db-4efa-b399-0a4b04afcd13《Unplugged Live》(1996-02-23，secondary-types [Live])、ea37e7fc-64dc-4576-92fa-9430c63a3449《မြို့ပြလရောင်တမ်းချင်း》(1996-10，primary-type **EP**，本批不收 EP)。",
+    "rgMbid": "0750d7d4-b6a0-4648-bbe2-b2df44511093",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0750d7d4-b6a0-4648-bbe2-b2df44511093/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 1,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 2,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1988 年 2 月出版的第二張，原盤連載體都沒有留下記錄。Htoo Eain Thin 的第一張在 1987 年經 Oasis 錄音室出版，這張隔年二月接上，十六軌，資料庫端只留下軌數與曲目，載體欄是空的。曲長從 2 分 35 秒到 5 分 18 秒，首尾兩軌最長，中段多在三到四分鐘；第 10 軌的曲名是 virus 的緬文音譯。他以原創詞曲聞名，也替別的歌手寫過暢銷曲，把一種新式 pop rock 帶進 1980 年代中期的緬甸樂壇。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/0750d7d4-b6a0-4648-bbe2-b2df44511093?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=1592671765&country=us&entity=song&limit=200",
+     "https://my.wikipedia.org/wiki/ထူးအိမ်သင်",
+     "https://en.wikipedia.org/wiki/Htoo_Eain_Thin",
+     "https://musicbrainz.org/release-group/0750d7d4-b6a0-4648-bbe2-b2df44511093"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/28/4a/2b/284a2b7b-a9f9-3d52-e205-23f1f4333300/mzaf_8348901440089506144.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1592671765",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "စိုင်းထီးဆိုင်",
+   "album": "ပျောက်ဆုံးသော နိဗ္ဗာန်ဘုံ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 30b38c9a-36f1-4d93-84da-c1e8b8af83b1，identitySource pinned。回問確認 title『ပျောက်ဆုံးသော နိဗ္ဗာန်ဘုံ』、artist-credit『စိုင်းထီးဆိုင်』（藝人實體 fa61446c-0a1c-4e1d-8842-1d416a69b346，Person／MM／life-span.begin 1950-09-23）、primary-type Album、secondary-types []、first-release-date 1975；轄下 release 1 筆：901f6bd1-8667-4dc1-be20-25b12b596ea9（1975 MM Official，media format 欄空、14 軌，label-info 空）。藝人名下 release-group 逾 40 筆（以 release-group?artist=<id>&limit=100 分頁取得，第 116 條）。刻意不釘：59b12cd5-5b08-4867-a175-8fe716bab2f9《နွေရာသီ》(1974，名下最早的一筆，本批名額不足)、0f551c04-1eb5-4622-9be8-fe575b3d6da2《အိပ်စက်အနားယူပြီ》(1978)、1fab65f0-83e6-47ca-9089-912c5d7ab3ed《အကောင်းတကာ့အကောင်းဆုံးတေး》(1996，secondary-types [Compilation])、4bf277fb-1b9f-4ef0-9610-279ad63d1b23《Unplugged Live》(2006)。",
+    "rgMbid": "30b38c9a-36f1-4d93-84da-c1e8b8af83b1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/30b38c9a-36f1-4d93-84da-c1e8b8af83b1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 1,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十四軌裡有三軌記在另一位歌者名下，第 7 軌曲名還夾了一個英文字。這是 Sai Htee Saing 1970 年代中期的一張緬語盤，1975 年在緬甸問世，載體欄沒有登記，只留得下軌數與曲目。第 12 軌的曲名後來被拿去當成另一張專輯的名字；第 8 軌 8 分 38 秒最長，比次長的那軌多出三分鐘。他是撣族出身，1973 年起與樂團 The Wild Ones 同行，長期的作曲搭檔是 Sai Kham Leik。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/30b38c9a-36f1-4d93-84da-c1e8b8af83b1?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=1790149278&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Sai_Htee_Saing",
+     "https://my.wikipedia.org/wiki/စိုင်းထီးဆိုင်",
+     "https://musicbrainz.org/release-group/30b38c9a-36f1-4d93-84da-c1e8b8af83b1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/c8/89/9dc889c0-d060-1db7-f51a-095cf12660f9/mzaf_17091991045023241631.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1790149278",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ခင်မောင်တိုး",
+   "album": "LIVE 94",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 23e1416e-111b-491e-bcd7-47aa7364c11a，identitySource pinned。回問確認 title『LIVE 94』、artist-credit『ခင်မောင်တိုး』（藝人實體 73b2c5a1-c8be-47ea-946e-a53fbfafe55b，Person／MM／1950-04-02）、primary-type Album、**secondary-types [Live]**、first-release-date 1994；轄下 release 1 筆：f62f85c6-8044-4d24-b03a-c01a716329ff（1994 MM Official，media format 欄空、27 軌，label-info 空）。藝人名下共 34 個 release-group。刻意不釘：9358e107-162f-4e1a-b564-fdfc26dd5373《စောင်းကြိုးရှိုက်သံ နှင့် ၁၀နှစ်တာသီချင်းများ》(1982；盤名本身就寫著『十年的歌』，形態上近似生涯選輯但 MB 未標 Compilation，形態判不準故不收)、1cd1a6af-c68b-4298-82b4-f7c1a5c82918《မဇ္ဈိမသံစဥ်လှိုင်းဂယက်များ》(2008，另一張 [Live])、484134bb-4d6f-4571-b2ac-01104976b97f《မျက်သွယ်》(1986)、57552a4c-f360-4617-bf99-bada2c917cc7《လွယ်လွယ်နဲ့မဖြစ်ဘူး လေးညှို့ရှင်》(1991，**同一個 RG 同時出現在 စိုင်းထီးဆိုင် 與 ခင်မောင်တိုး 兩位的目錄裡**，是合作盤，形態待查故不收)。",
+    "rgMbid": "23e1416e-111b-491e-bcd7-47aa7364c11a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/23e1416e-111b-491e-bcd7-47aa7364c11a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一場演出錄了二十七軌，兩張成名作的同名曲都排進了曲單。Khin Maung Toe 這場 1994 年的演出沒有留下地點與日期記錄，曲單卻橫跨他 1970 到 1990 年代的個人與樂團作品：第 24 軌與第 26 軌分別是 1981 年與 1984 年兩張專輯的同名曲，後面那首正是讓他家喻戶曉的一首。他與 Medium Wave 樂團的做法，是以西洋樂器與編曲翻新緬甸傳統曲調。串流側把整場拆成兩集，能試聽的只有前半十五軌，曲序與原盤相同。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/23e1416e-111b-491e-bcd7-47aa7364c11a?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=23e1416e-111b-491e-bcd7-47aa7364c11a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1706401603&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Khin_Maung_Toe",
+     "https://musicbrainz.org/release-group/23e1416e-111b-491e-bcd7-47aa7364c11a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4c/3b/5d/4c3b5dfa-ff85-cd3c-46b0-19314c97da52/mzaf_7447722726020390690.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1706401603",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "လွှမ်းမိုး",
+   "album": "ရန်ကုန်သားလေးကျနော်ပါ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 45fa0cc9-ef7b-492f-ac98-fd3b670c5551，identitySource pinned。回問確認 title『ရန်ကုန်သားလေးကျနော်ပါ』、artist-credit『လွှမ်းမိုး』（藝人實體 a409e9a9-fe04-442e-b0b6-a8f6ac19e95e，Person／MM／1954-06-27）、primary-type Album、secondary-types []、first-release-date 1975；轄下 release 1 筆：f1e7a847-ac51-4dad-acf1-47078a196e6e（1975 MM Official，media format 欄空、15 軌，label-info 空）。藝人名下 release-group 逾 30 筆。刻意不釘：46e70b85-4c15-4661-bd2c-493a560038d5《မအေးကိုချစ်လို့ပါ》(1977)、14bccc10-25f8-4330-8176-cd0c239f0023《ကားပြိုင်ပွဲ》(1980)、479f8fb5-f12e-4d47-ba61-0cc7ec0b55f0《ကျွန်တော်နှင့်လွှမ်းမိုး》(1982)、16d1f145-7d3f-4d4b-9010-31d2baf88b92《မူရင်း အကောင်းဆုံးတေးများ》(2016，生涯選輯形態)。",
+    "rgMbid": "45fa0cc9-ef7b-492f-ac98-fd3b670c5551",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/45fa0cc9-ef7b-492f-ac98-fd3b670c5551/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 1,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "出道盤的資金來自一位在澳洲大使館上班的人，十萬緬元。Hlwan Moe 這張 1975 年的十五軌並不是全由他一人唱：三軌整軌記在另外兩位歌者名下，一軌是對唱，他自己獨唱十一軌。第 6 軌是同名曲，盤名直譯是「我是仰光小子」。此前他在 The King 樂團擔任主奏吉他手與音樂總監，之後才轉個人發展。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/45fa0cc9-ef7b-492f-ac98-fd3b670c5551?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=45fa0cc9-ef7b-492f-ac98-fd3b670c5551&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://my.wikipedia.org/wiki/လွှမ်းမိုး",
+     "https://en.wikipedia.org/wiki/Hlwan_Moe",
+     "https://musicbrainz.org/release-group/45fa0cc9-ef7b-492f-ac98-fd3b670c5551"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Big Bag",
+   "album": "AD 3000",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group eb971df7-3de4-4c6b-b21a-ce1e5dcc86c9，identitySource pinned。回問確認 title『AD 3000』、artist-credit『Big Bag』（藝人實體 03f325d4-cc51-45e1-a757-ebe6783f2588，Group／MM／2001／『Burmese punk band』）、primary-type Album、secondary-types []、first-release-date 2007；轄下 release 1 筆：56b49a9e-fe10-4eb2-9fac-105199093e23（2007 MM Official，label-info『ချိုကြည်သာ』無目錄號，CD×16）。藝人名下共 7 個 release-group（5 Album ＋ 2 Single）。刻意不釘：d259e354-efb3-4c5e-9811-b8674b59fc2c《နာမည်ကြီး》(2004，artist-credit 是合掛名『Big Bag & Chit Thu Wai』，依裁定 258 不收合掛名)、5446dcf6-d6ec-42cf-9732-a3c8987efa94《အိပ်ယာဝင်တေးများ》(2007，與本張同年)、668b04bf-a2da-4b20-bcd0-55d5c12ff73d《တယ်လီပန့်(ခ်)》(2009)、6fac68ee-6298-4f47-9add-2ae395529896《One Eleven》(2011-05-20)、b80c7adb-ef74-4e92-8f2b-f8f73a518e7f《Choke》與 d1167d61-6a93-47e2-893c-af69c625f27a《สัตว์ร้าย》(皆 primary-type Single)。",
+    "rgMbid": "eb971df7-3de4-4c6b-b21a-ce1e5dcc86c9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eb971df7-3de4-4c6b-b21a-ce1e5dcc86c9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 207,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "末軌只有 1 分 02 秒，第 15 軌則是第 2 軌的 Rough Take 2。這張 2007 年的緬甸 CD 收十六軌，廠牌欄登記的是緬文廠牌名 ချိုကြည်သာ，錄它的是一支 2001 年夏天成軍的四人龐克團。曲長從 1 分 02 秒排到 4 分 21 秒，開場同名曲最長，第 11 軌只有 1 分 28 秒，末軌是一首 D 小調的小品。第 7 軌則在十三年後長出一首續集單曲，曲名直接接著原曲往下編號。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/eb971df7-3de4-4c6b-b21a-ce1e5dcc86c9?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=1585607378&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Kyar_Pauk",
+     "https://itunes.apple.com/lookup?id=1022215749&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/eb971df7-3de4-4c6b-b21a-ce1e5dcc86c9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1a/eb/a7/1aeba778-6ae3-eef1-b6b3-22076f5af33a/mzaf_5167583550310100728.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1585607378",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Laos: Lam Saravane / Musique pour le khène",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2a406a64-1796-4f54-bfc9-01ef7be03f4a，identitySource pinned。回問 release-group?fmt=json&inc=artist-credits+releases 確認 title『Laos: Lam Saravane / Musique pour le khène』、artist-credit『Various Artists』（89ad4ac3-39f7-470e-963a-56509c546377）、primary-type Album、secondary-types []、first-release-date 1989-01；再打 release?release-group=<id>&inc=media+labels 取得轄下 release 1 筆：6ecc5fb4-a8c8-4772-8914-803f619447d8（1989-01 FR Official，Ocora C 559 058，CD×6，barcode 3149025037589）。刻意不釘：380493d0-45bc-4284-a710-fb71f2ba9f2f《Laos - L'art Du Khène》（1972 Galloway 黑膠，本批另收一張、不是同一碟）、1ad4842e-00ac-4946-814e-e4eac2042b7a《Musiques et Chants du Laos》(2005，secondary-types [Compilation]，本批名額不足)、c01a1956-d44b-44ee-a95d-494bf4381337《Laos : Molams & Mokhènes》(2009，同上)。",
+    "rgMbid": "2a406a64-1796-4f54-bfc9-01ef7be03f4a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一首〈Lam Saravane〉唱了 45 分 22 秒，佔去整張 CD 的三分之二。這份錄音 1978 年先以雙 LP 由法國國家電台出版，本卡是 1989 年的 Ocora CD 版，六軌約七十分鐘。開頭那首長篇由兩位歌者對唱，配上 Nouthong Phimvilayphone 的 khène（笙）；其後五軌全是同一位的 khène 獨奏，每首四到六分鐘。整批錄音由 Jacques Brunet 擔任科學編輯，2002 年還再發過一次。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=466420729&country=gb&entity=song&limit=200",
+     "https://catalogue.bnf.fr/ark:/12148/cb381700065",
+     "https://www.radiofrance.com/les-editions/musique/laos-lam-saravane-musique-pour-le-khene",
+     "https://musicbrainz.org/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/45/dc/fa/mzm.prkcgvam.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "466420729",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Laos - L'art Du Khène",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 380493d0-45bc-4284-a710-fb71f2ba9f2f，identitySource pinned。回問確認 title『Laos - L'art Du Khène』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 1972；轄下 release 1 筆：608d5a7f-9d04-49cc-9f8a-96d47fb9d03a（1972 FR Official，Galloway Records GB 600 545 B，Vinyl×8，barcode 欄空）。刻意不釘：2a406a64-1796-4f54-bfc9-01ef7be03f4a《Laos: Lam Saravane / Musique pour le khène》（1989 Ocora，本批另收一張）、f53f5d9e-ab95-4a22-a98d-f6db740840f5《Laos - Musique du nord》（1972，同年同區但 **primary-type 欄是空的**，不是 Album，故不收）。",
+    "rgMbid": "380493d0-45bc-4284-a710-fb71f2ba9f2f",
+    "exceptionReason": "1972 年法國 Galloway Records 以 GB 600 545 B 發行的黑膠、8 軌，是 MB 上寮國這一區**年代最早的一筆建檔**，內容是寮國 khène（笙）演奏的錄音集。這一批錄音的原始形態是田野與電台母帶，MB 端沒有任何一位演出者名下有對應的個人原盤，成盤形態只有這一種合輯。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 1972、primary-type Album、secondary-types Compilation），第二個是那筆 1972 黑膠的 release（記廠牌 Galloway Records、目錄號 GB 600 545 B、FR、Official、Vinyl、8 軌），exceptionReason 引的每一格都在這兩頁上，兩頁皆以 ws/2 API 逐格讀過。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f",
+     "https://musicbrainz.org/release/608d5a7f-9d04-49cc-9f8a-96d47fb9d03a"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三位演奏者三種尺寸的笙：長管低音、中管中音、短管高音。1972 年由法國的 Galloway 壓成黑膠，收八軌，屬該廠牌世界音樂系列的第 26 號；錄音由音樂學者 Jacques Brunet 在同一年完成。A 面四軌是長管與中管兩位的曲目，其中一軌二重奏、一軌即興；B 面四軌全交給吹短管高音的那位。最長一軌八分二十二秒，最短的正是那段二重奏，只有兩分十三秒。資料庫端以 Laos 為題的盤裡，這張建檔年代最早。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=380493d0-45bc-4284-a710-fb71f2ba9f2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://music-republic-world-traditional.blogspot.com/2022/04/laos-lart-du-khene-collection-musique.html",
+     "https://musicbrainz.org/ws/2/artist?query=artist%3A%22Phet%20Sananikhone%22&fmt=json&limit=5",
+     "https://musicbrainz.org/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f",
+     "https://musicbrainz.org/release/608d5a7f-9d04-49cc-9f8a-96d47fb9d03a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Molam Lao",
+   "album": "Music from Southern Laos",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fc12c43f-e204-474a-a212-b4fe2f61215f，identitySource pinned。回問確認 title『Music from Southern Laos』、artist-credit『Molam Lao』（藝人實體 99bae4c6-0eb8-4f52-beed-b1aabc539850，Group／LA）、primary-type Album、secondary-types []、first-release-date 1994-01-01；轄下 release 2 筆：d82b1d34-a01a-4e7a-82c6-129d4354ac88（1994 GB Official，Nimbus Records NI 5401，CD×11，barcode 083603540128）、deb0d797-8ec8-4b9d-9ec2-c8e7e333fb8d（1994-01-01 XW Official，Nimbus Records，Digital Media×11，barcode 190374078368）。藝人名下只有這 1 個 release-group。",
+    "rgMbid": "fc12c43f-e204-474a-a212-b4fe2f61215f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fc12c43f-e204-474a-a212-b4fe2f61215f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 2385,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "歌唱六軌與器樂五軌交替，末軌〈Lam Khone〉一首就唱了 9 分 41 秒。1994 年由英國的 Nimbus 出成 CD，同年另有數位版；十一軌裡六軌是 lam、五軌是 pheng，一首接一首錯開。lam 依地名分支，Saravane、Phuthay 與 Mahaxay 各佔一軌。這張以樂團名義掛牌，在寮國盤裡是少見的形態。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fc12c43f-e204-474a-a212-b4fe2f61215f?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=1086413188&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release?release-group=fc12c43f-e204-474a-a212-b4fe2f61215f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/release-group/fc12c43f-e204-474a-a212-b4fe2f61215f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/23/be/3e23be05-8044-0429-c8ed-34a26a259bfb/mzaf_1886035685642139373.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1086413188",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nouthong Phimvilayphone",
+   "album": "Visions of the Orient: Music from Laos",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fd323fc6-a5d6-40ca-b64d-2b49fec81022，identitySource pinned。回問確認 title『Visions of the Orient: Music from Laos』、artist-credit『Nouthong Phimvilayphone』（藝人實體 1006498b-bc8b-4192-b79f-bbed61cf079e，Person／LA）、primary-type Album、secondary-types []、first-release-date 1995；轄下 release 1 筆：a8dd3640-931e-42a5-98d4-489bce8c622d（1995 XW Official，Amiata Records，Digital Media×12，barcode 3661585079170）。藝人名下只有這 1 個 release-group。",
+    "rgMbid": "fd323fc6-a5d6-40ca-b64d-2b49fec81022",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fd323fc6-a5d6-40ca-b64d-2b49fec81022/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 990,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "在 Ocora 那張替人伴奏的笙手，這回十二軌全掛他自己的名字。1995 年由 Amiata 出版，約五十八分鐘，實體版的目錄號是 ARNR 0195。內容在 khène 獨奏、器樂曲與 lam 對唱伴奏之間輪替，第 5 軌換上 kachapi 這件撥弦樂器；〈Lam Khan〉這個曲名出現兩次，第 11 軌那一版 7 分 38 秒最長。距他在 Ocora 那張上伴奏已隔六年，Nouthong Phimvilayphone 名下也只有這一張以個人掛名的碟。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fd323fc6-a5d6-40ca-b64d-2b49fec81022?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=156724493&country=us&entity=song&limit=200",
+     "https://amiatarecords.com/nouthong-phimvilayphone",
+     "https://musicbrainz.org/ws/2/release-group/2a406a64-1796-4f54-bfc9-01ef7be03f4a?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/release-group/fd323fc6-a5d6-40ca-b64d-2b49fec81022"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cd/78/f2/cd78f2a6-fc96-1fc4-780a-4c69c62e833d/mzaf_17860429003677247006.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "156724493",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Boua Xou Mua",
+   "album": "The Music of the Hmong People of Laos",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 222fbd16-f812-425f-aa94-6db4dd5acb63，identitySource pinned。回問確認 title『The Music of the Hmong People of Laos』、artist-credit『Boua Xou Mua』（藝人實體 83fffd77-105f-4fa3-bf98-071a2c80ea59）、primary-type Album、secondary-types []、first-release-date 1995；轄下 release 1 筆：75b22ef2-f14f-4451-82a3-ea7163bc55d7（1995 US Official，Arhoolie CD 446，CD×12，barcode 096297044622）。藝人名下只有這 1 個 release-group。",
+    "rgMbid": "222fbd16-f812-425f-aa94-6db4dd5acb63",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/222fbd16-f812-425f-aa94-6db4dd5acb63/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 301,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1991 年在達拉斯的民俗節上錄音，四年後才由 Arhoolie 出成 CD。1995 年這張十二軌是 Boua Xou Mua 名下唯一一張，曲目分得很清楚：三軌 qeej 笙曲各五到十分鐘撐起主體，兩軌長篇歌唱，兩軌婚禮宣告，其餘五軌是一到三分鐘的樹葉、口簧琴與笛子小品。最長的〈Lug Txaj Sib Dleev〉9 分 48 秒，末軌只有 1 分 38 秒。他 1978 年移居美國，1985 年獲頒 National Heritage Fellowship。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/222fbd16-f812-425f-aa94-6db4dd5acb63?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=1508954924&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Bua_Xou_Mua",
+     "https://musicbrainz.org/release-group/222fbd16-f812-425f-aa94-6db4dd5acb63"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/79/09/04/790904b2-884e-0f0d-3730-1922c070d70e/mzaf_299649028884256883.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508954924",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Ethnic Minority Music of Southern Laos",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 400d78ab-35fb-45e4-ab10-a1a4d6e151b5，identitySource pinned。回問確認 title『Ethnic Minority Music of Southern Laos』、artist-credit『Various Artists』、primary-type Album、secondary-types [Compilation]、first-release-date 2007；轄下 release 1 筆：90614205-d902-4f85-82e2-8f2a4db0be9e（2007 US Official，Sublime Frequencies SF036，CD×17，barcode 751937314523）。刻意不釘（同廠牌、國別不在本批範圍或已被別批收走）：de3bd80e-a8d1-4c10-8719-129705b23991 對應的《Ethnic Minority Music of Northeast Cambodia》SF027（柬埔寨，c-64 範圍）、b254e8f4-88e6-4f7a-9c80-68be1d545a58 對應的《Ethnic Minority Music of North Vietnam》SF037（越南，c-64 範圍）——兩者記的是 release MBID，非 release-group，供下游辨識用。另 f17cbe2b-cf0d-44bb-b97b-7102521a18ff《Mien (Yao) Canon Singing in China, Vietnam, Laos》（Kink Gong，2021，跨三國、非純寮國）亦不釘。",
+    "rgMbid": "400d78ab-35fb-45e4-ab10-a1a4d6e151b5",
+    "exceptionReason": "2007 年 Sublime Frequencies 以 SF036 在美國發行的 CD、17 軌（barcode 751937314523），內容是寮國南部各族群的田野錄音；每一軌的演出者在 MB 上不是沒有藝人實體，就是名下 0 個 release-group（本批實查寮國掛名時掃到的 LA 藝人實體大多如此），因此這批錄音的成盤形態只有這一種合輯。第一個網址是本輯的 MusicBrainz release-group（記標題、Various Artists、first-release-date 2007、primary-type Album、secondary-types Compilation），第二個是 SF036 那一筆 release（記廠牌 Sublime Frequencies、目錄號 SF036、US、Official、CD、17 軌、barcode），exceptionReason 引的每一格都在這兩頁上，兩頁皆以 ws/2 API 逐格讀過。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/400d78ab-35fb-45e4-ab10-a1a4d6e151b5",
+     "https://musicbrainz.org/release/90614205-d902-4f85-82e2-8f2a4db0be9e"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/400d78ab-35fb-45e4-ab10-a1a4d6e151b5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 47,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "最短的一軌只有 24 秒，第 4 軌與第 15 軌同名又同長。2007 年由 Sublime Frequencies 出成 CD，十七軌全部出自 Laurent Jeanneau 的錄音與解說，收的是寮國南部 Xekong、Champasak 與 Attapeu 三省 Harak 與各 Brao 族群的音樂。長度落差極大，四軌不到一分鐘，四軌超過六分鐘，最長一軌 7 分 45 秒，曲目端的演出者欄一律留白。他另以 Kink Gong 之名發表過多批田野錄音。這張沒有試聽來源。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/400d78ab-35fb-45e4-ab10-a1a4d6e151b5?fmt=json&inc=artist-credits+genres",
+     "https://musicbrainz.org/ws/2/release?release-group=400d78ab-35fb-45e4-ab10-a1a4d6e151b5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://sublime-frequencies.bandcamp.com/album/ethnic-minority-music-of-southern-laos",
+     "https://musicbrainz.org/ws/2/label/6fed5076-6bad-4b8d-8cca-fee530455666?fmt=json",
+     "https://musicbrainz.org/release-group/400d78ab-35fb-45e4-ab10-a1a4d6e151b5",
+     "https://musicbrainz.org/release/90614205-d902-4f85-82e2-8f2a4db0be9e"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tiao Phün Muang",
+   "album": "Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0cb411e3-b4e7-45a3-b840-64fa691a86a2，identitySource pinned。回問確認 title『Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)』、artist-credit『Tiao Phün Muang』（藝人實體 c8e975c8-4c64-4a9d-9394-a5601f125759，LA）、primary-type Album、secondary-types []、first-release-date 2008；轄下 release 1 筆：ce274e8d-ede2-4521-8f3e-e7a2a44c1d2a（2008 XW Official，VDE-GALLO，Digital Media×10，barcode 887845148582）。藝人名下只有這 1 個 release-group。刻意不釘：9e78f73c-0a4d-417e-86f2-4719fbb94f9d《Music of Laos: The Buddhist Tradition》(2003，宗教曲目，本批行文界線避開宗教評價故不收)、d1ce5840-b8f4-416d-848f-2e2d53688a14《Laos: Traditional Music of the South (Musique traditionnelle du sud)》(1992，artist-credit 是錄音者 Jacques Brunet 而非演出者，掛名形態不宜進池)。",
+    "rgMbid": "0cb411e3-b4e7-45a3-b840-64fa691a86a2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b7/27/1d/b7271da2-1bb6-c66e-4b48-516296426413/887845148582.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "591505662",
+    "note": "試聽探測釘定的 collectionId 591505662（us）：Tiao Phün Muang — Laos: Musique de l'ancienne cour de Luang Prabang (Music of the Ancient Royal Court of Luang Prabang)"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 122,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十軌五十四分鐘，第 7 軌一首就佔去 13 分 09 秒。錄音與解說都由 Jean-Marie Knapp 在 2007 年完成，隔年由 VDE-GALLO 出版，歸入日內瓦民族音樂檔案的 AIMP 系列第 81 號，實體 CD 的編號是 VDE CD-1213。第 7 軌與 9 分 29 秒的第 8 軌兩首長篇撐起後半，第 9 軌只有 2 分 14 秒，曲名一律法英並列。隨片附二十七頁法英雙語解說、兩張彩色與五張黑白照片。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/0cb411e3-b4e7-45a3-b840-64fa691a86a2?fmt=json&inc=artist-credits+genres",
+     "https://itunes.apple.com/lookup?id=591505662&country=us&entity=song&limit=200",
+     "https://vdegallo.com/en/produit/laos-musique-de-lancienne-cour-de-luang-prabang-music-of-the-ancient-royal-court-of-luang-prabang-2/",
+     "https://www.cambridge.org/core/journals/yearbook-for-traditional-music/article/abs/laos-tiao-phun-muang-musique-de-lancienne-cour-de-luang-prabangmusic-of-the-ancient-royal-court-of-luang-prabang-2008-archives-internationales-de-musique-populaire-aimp-81-disques-vdegallo-vde-cd1213-recorded-and-annotated-by-jeanmarie-knapp-27-pp-of-notes-in-french-and-english-english-translation-by-isabelle-schultetenckhoff-2-colour-5-bw-photographs-1-compact-disc-10-tracks-5409/CC8EB5CC919CF619DB23CA7E41D8654A",
+     "https://musicbrainz.org/release-group/0cb411e3-b4e7-45a3-b840-64fa691a86a2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f5/d2/fa/f5d2fa88-25c6-154a-5254-8e3049f17242/mzaf_11994992327294445198.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "591505662",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Titiek Puspa",
+   "album": "Sok Teu",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f2b0a715-25ed-43ca-952d-1b6143f6afcc，identitySource pinned。回問確認 title「Sok Teu」、primary-type Album、secondary-types 空、first-release-date 1970、artist-credit「Titiek Puspa」（實體 a1ad0276-aa91-4749-9fa5-2ba2952c4ee9，Person、area Indonesia、begin 1937-11-01，名下 8 個 RG）。轄下 release 1 筆：1970 ID Official、10\" Vinyl×8、J&B Records／JBL. 28837。刻意不釘：616d0869-33b2-48d7-acd3-fa9fa44cdb34《Doa Ibu》(1964，**池中已有，c-SEA 2026-09-10 manifest**)、21eff489-5898-437e-b0c6-db83b8433363《Senyum》(1969，**primary-type EP，本批不收**)、ac366f73-ef88-48cb-adfc-64f7ee9ee3c4《Tinggal Bilang Yang》(1986，記入未收清單餘量)、a128af7d-3d40-4715-b05c-3537d26d4cfd《Virus Cinta》(1997)、46099384-607b-415e-9b1a-cf81518b7b53《Duta Cinta》(2015)、b3f12154-4365-4ee2-89f3-b189b8f0ee68《The Very Best Of》(2005，Compilation)、dc833bc1-124d-4584-9753-df8b0d3338c7《Otobiografi…》(無年份，Compilation)。",
+    "rgMbid": "f2b0a715-25ed-43ca-952d-1b6143f6afcc"
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f2b0a715-25ed-43ca-952d-1b6143f6afcc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八軌 20 分 22 秒，1970 年之後她在資料庫端空白了十六年。這張由印尼 J&B Records 以 JBL. 28837 壓成 10 吋黑膠，開場的同名曲 1 分 52 秒是最短的一軌，第 5 軌的曲名裡直接寫進了合唱的 Robby Amin，伴奏則是她自己的樂團 Puspa Sari。J&B 是她那幾年裡少見的小廠牌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f2b0a715-25ed-43ca-952d-1b6143f6afcc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/a1ad0276-aa91-4749-9fa5-2ba2952c4ee9?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://id.wikipedia.org/wiki/Titiek_Puspa",
+     "https://www.musictime.nl/indonesia/titiek_puspa",
+     "https://musicbrainz.org/release-group/f2b0a715-25ed-43ca-952d-1b6143f6afcc"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "AKA",
+   "album": "Reflection",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 04f56d24-7b7d-4521-9538-288a99bfc1fb，identitySource pinned。回問確認 title「Reflection」、primary-type Album、secondary-types 空、first-release-date 1971、artist-credit「AKA」（實體 d991e1c6-2d93-4652-953d-568e0d85c08c，Group、area Indonesia、disambiguation「Indonesian funk band」，名下 4 個 RG）。轄下 release 2 筆：1971 ID Official 12\" Vinyl×9 Indra／AKL - 029；2014-11-25 XW Official Digital Media×9 Granadilla Music。刻意不釘：5739f79b-01fd-4edc-9597-87559399ea3a《Do What You Like》(1970，**池中已有，c-SEA 2026-09-01 manifest**)、7fc685d9-6364-442e-a33e-d74ab8aa859e《Crazy Joe》(1972，**本組另收一卡**)、1594f054-6b3d-4e32-b8e2-224e0a80dc4e《Hard Beat》(2011-06-24，超出蘇哈托時期窗口、且是後世整編)。",
+    "rgMbid": "04f56d24-7b7d-4521-9538-288a99bfc1fb"
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/04f56d24-7b7d-4521-9538-288a99bfc1fb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 45,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "團名是一間藥局的縮寫，那間藥局也是他們的排練場。店名 Kaliasin，開店的是這支泗水四人團主唱兼鍵盤手 Ucok Harahap 的父母。1971 年印尼 Indra 以 AKL - 029 壓成 12 吋黑膠，九軌 34 分 38 秒，曲名兩首英文、七首印尼文；同名曲 4 分 26 秒開場，第 6 軌〈Only One Man〉一軌就 8 分 22 秒，佔去全碟近四分之一。這是他們 1970 年代三張連續出版裡的第二張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://id.wikipedia.org/wiki/AKA_(grup_musik)",
+     "https://shardianto.wordpress.com/2020/07/05/aka/",
+     "https://musicbrainz.org/release-group/04f56d24-7b7d-4521-9538-288a99bfc1fb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "AKA",
+   "album": "Crazy Joe",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7fc685d9-6364-442e-a33e-d74ab8aa859e，identitySource pinned。回問確認 title「Crazy Joe」、primary-type Album、secondary-types 空、first-release-date 1972、artist-credit「AKA」（實體 d991e1c6-2d93-4652-953d-568e0d85c08c，Group、area Indonesia、disambiguation「Indonesian funk band」）。轄下 release 2 筆：1972 ID **status 空** 12\" Vinyl×9 Indra／AKL-047；2015-04-10 XE Official CD×9 Granadilla Music／GM 208C3、barcode 5291103811180。刻意不釘：5739f79b-01fd-4edc-9597-87559399ea3a《Do What You Like》(1970，**池中已有**)、04f56d24-7b7d-4521-9538-288a99bfc1fb《Reflection》(1971，**本組另收一卡**)、1594f054-…《Hard Beat》(2011)。",
+    "rgMbid": "7fc685d9-6364-442e-a33e-d74ab8aa859e"
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7fc685d9-6364-442e-a33e-d74ab8aa859e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 34,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1973 年雅加達的演出裡，主唱被吊起來、再放進一具棺材。在那之前他先跳上牆、再爬上屋瓦；特技配在哪一首歌上，來源只有一處說法。碟本身是 1972 年印尼 Indra 以 AKL-047 壓的 12 吋黑膠，編號緊接在前一張的 AKL - 029 之後，也是他們 1970 年代三張連續出版的最後一張。九軌裡兩個英文曲名、七個印尼文曲名，〈Crazy Joe〉開場、〈Bidadari〉收尾。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7fc685d9-6364-442e-a33e-d74ab8aa859e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://id.wikipedia.org/wiki/AKA_(grup_musik)",
+     "https://shardianto.wordpress.com/2020/07/05/aka/",
+     "https://musicbrainz.org/release-group/7fc685d9-6364-442e-a33e-d74ab8aa859e"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Mercy's",
+   "album": "The Mercy's",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d345af59-558e-49d6-8a1c-f957fa4d7671，identitySource pinned。回問確認 title「The Mercy's」、primary-type Album、secondary-types 空、first-release-date 1973、artist-credit「The Mercy's」（實體 72ae23d8-aba2-490a-b764-74bf5f50a4dc，Group、area Indonesia、disambiguation「1970s Indonesian rock band」，名下 3 個 RG）。轄下 release 1 筆：1973 ID Official、Vinyl×11、Purnama Records／PLL-1002、無 barcode。刻意不釘：6c22f8a4-9b7d-4f96-9ff6-69709529fc1e《Volume 2》(1973，Purnama PLL 1005、Vinyl×11，依裁定 260 同掛名同組只取一張，記入未收清單餘量)、65ae3cb6-f46a-451c-ad1a-ca6ab235485a《Melayu Pop Vol.1》(1974，同上)。",
+    "selfTitledVerified": true,
+    "rgMbid": "d345af59-558e-49d6-8a1c-f957fa4d7671"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d345af59-558e-49d6-8a1c-f957fa4d7671/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 14,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第 4 軌與第 8 軌的曲名只差一個字母，一首〈Untukmu〉一首〈Untukku〉。樂團 1965 年在棉蘭成立，1960 年代末在馬來西亞與新加坡駐唱，遷到雅加達之後才在 1970 年代初推出首作：印尼 Purnama Records 以 PLL-1002 出黑膠，十一軌 33 分 50 秒。多數曲目由鍵盤手 Charles Hutagalung 寫，貝斯手與鼓手各寫一首，五人編制裡還有 Albert Sumlang 的薩克斯風。這張首作出乎意料地大賣。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d345af59-558e-49d6-8a1c-f957fa4d7671&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=d345af59-558e-49d6-8a1c-f957fa4d7671&fmt=json&inc=media+recordings&limit=100",
+     "https://id.wikipedia.org/wiki/Volume_1_(album_The_Mercy's)",
+     "https://id.wikipedia.org/wiki/The_Mercy's",
+     "https://ms.wikipedia.org/wiki/The_Mercys",
+     "https://musicbrainz.org/release-group/d345af59-558e-49d6-8a1c-f957fa4d7671"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Koes Plus",
+   "album": "Volume 8",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fb0e8f04-aaa1-402a-8fd5-b9982fcf880d，identitySource pinned。回問確認 title「Volume 8」、primary-type Album、secondary-types 空、first-release-date 1973、artist-credit「Koes Plus」（實體 a1ba8a6b-101f-46eb-98f0-f96132ff7353，Group、area Indonesia、begin 1969，名下 14 個 RG）。轄下 release 1 筆：1973 ID Official、12\" Vinyl×12、Remaco／RLL-187。刻意不釘：fcd43869-8e27-46c6-95f9-8d6075a0f22b《Dheg Dheg Plas》(1969，**池中已有**)、efed68be-063e-40e7-ab9c-f8a9fc9b4fa7《Volume 2》(1970，**池中已有**)、5b071a05-63a5-4028-81e7-d8a5a7630c8a《Vol. 10》(1974，**本組另收一卡**)、598e997d-ed2e-48f4-982a-72a53b44f3ed《Vol. 9》(1973，Remaco RLL-208，記入未收清單餘量)、86155657-8a56-4174-9c8f-8e24d6304baf《Vol. 11》(1974，Remaco RLL-301，同上)、acf0774e-6a92-43fe-9a24-72bfbc93dec0《Dheg Dheg Plas & Volume Two》(2010-06-22，**兩張池中已有的碟的併輯**)、8ff12061-…《Nostalgia Koes Plus》(Compilation)、c3816c8d-…《Pop Keroncong Abadi》(1999)，以及 9535dcfd／95e4cad8／c1ccefe8／e5629f1a／eead1f5f 五個**無 first-release-date** 的 RG。",
+    "rgMbid": "fb0e8f04-aaa1-402a-8fd5-b9982fcf880d"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/32/a4/af32a473-edc0-b247-b2af-f5d354ccfffd/artwork.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777356356",
+    "note": "試聽探測釘定的 collectionId 1777356356（th）：Koes Plus — Volume 8"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 85,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二軌沒有一軌超過三分鐘，收尾那首 2 分 21 秒。收尾的是〈Kolam Susu〉，開場的〈Diana〉2 分 08 秒，中段〈Buat Apa Susah〉是當年的流行單曲。錄音在 1973 年上半年，同年 7 月 1 日由 Remaco 以 RLL-187 壓成 12 吋黑膠，全碟 30 分 22 秒；條目把它記為 Koeswoyo 三兄弟加 Murry 這個編制在 Remaco 的第一張。這也是他們產量最高那兩年的起點，光 1974 年就出了二十三張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=fb0e8f04-aaa1-402a-8fd5-b9982fcf880d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1777356356&country=id&entity=song&limit=200",
+     "https://id.wikipedia.org/wiki/Volume_8_(album_Koes_Plus)",
+     "https://id.wikipedia.org/wiki/Koes_Plus",
+     "https://en.wikipedia.org/wiki/Koes_Plus",
+     "https://musicbrainz.org/release-group/fb0e8f04-aaa1-402a-8fd5-b9982fcf880d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/4e/b7/3e4eb70a-e393-3dcb-c764-f138e364d59d/mzaf_8771265950768235784.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777356356",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Koes Plus",
+   "album": "Vol. 10",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5b071a05-63a5-4028-81e7-d8a5a7630c8a，identitySource pinned。回問確認 title「Vol. 10」、primary-type Album、secondary-types 空、first-release-date 1974、artist-credit「Koes Plus」（實體 a1ba8a6b-101f-46eb-98f0-f96132ff7353）。轄下 release 1 筆：1974 ID Official、12\" Vinyl×12、Remaco Records／RLL-209。刻意不釘：fb0e8f04-aaa1-402a-8fd5-b9982fcf880d《Volume 8》(1973，**本組另收一卡**)、598e997d-ed2e-48f4-982a-72a53b44f3ed《Vol. 9》(1973，RLL-208)、86155657-8a56-4174-9c8f-8e24d6304baf《Vol. 11》(1974，RLL-301)、fcd43869-…《Dheg Dheg Plas》(1969，**池中已有**)、efed68be-…《Volume 2》(1970，**池中已有**)。",
+    "rgMbid": "5b071a05-63a5-4028-81e7-d8a5a7630c8a"
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0a/7b/79/0a7b7933-7a8c-3498-ca4e-42ae2726b4cc/artwork.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777379905",
+    "note": "試聽探測釘定的 collectionId 1777379905（id）：Koes Plus — Volume 10"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 18,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鼓手寫的〈Bujangan〉，二十幾年後先變成兒童版、再變成機車廣告曲。寫它的是 Murry：1996 年由童星改成兒童版歌詞重唱，2007 年進了一支機車廣告。碟由 Remaco 以 RLL-209 壓成 12 吋黑膠，十二軌約 32 分鐘，發行時間落在 1973 年底到 1974 年之間。最長的〈Kroncong Cincin〉3 分 44 秒走 keroncong 曲式，和中段的〈Kapan-Kapan〉同樣出自 Tonny Koeswoyo。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5b071a05-63a5-4028-81e7-d8a5a7630c8a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1777379905&country=id&entity=song&limit=200",
+     "https://id.wikipedia.org/wiki/Volume_10_(album_Koes_Plus)",
+     "https://musicbrainz.org/ws/2/artist/a1ba8a6b-101f-46eb-98f0-f96132ff7353?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/5b071a05-63a5-4028-81e7-d8a5a7630c8a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/c2/f9/89c2f9c4-b9ae-5006-c273-7800bf409492/mzaf_983832440774894911.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777379905",
+    "storefront": "ID"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Black Brothers",
+   "album": "Terima Kaseh",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 68defec7-3b23-4e35-973f-c285d32d2721，identitySource pinned。回問確認 title「Terima Kaseh」、primary-type Album、secondary-types 空、first-release-date 1978、artist-credit「Black Brothers」（實體 e7c5cc2c-bef9-43e6-84ed-9da3baea3e53，Group、area Jayapura、disambiguation「Indonesian pop group」，**名下只有這 1 個 RG**）。轄下 release 1 筆：1978 **MY**、**status 空**、12\" Vinyl×12、EMI／MMFP30010、無 barcode。刻意不釘：無同掛名的其他 RG 可比（MB 上這支團只有 1 個 release-group）；被駁回的同名實體 MBID 見 risk 欄的掛名回問一節（be4d3ef7 巴基斯坦、cc26d1d7 牙買加、4df5fe81 美國、9b96f5f6／e84fcca7 兩筆無欄位者）。",
+    "rgMbid": "68defec7-3b23-4e35-973f-c285d32d2721"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/I1a71dAUo5vBrxNVNOz0Djq0D5aN26bjxHFWOsKjmo4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYw/MzEwLTE1MzQxMzky/OTktNTYxMC5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "11860310"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名拼成馬來語的 Kaseh，第 7 軌的曲名卻仍拼 Kasih。這支樂團出自查亞普拉，1975 年遷到雅加達。資料庫端登記在案的只有一筆：1978 年馬來西亞 EMI 的壓片、編號 MMFP30010，12 吋黑膠十二軌 42 分 28 秒，印尼原盤沒有建檔。六人編制帶小號與薩克斯風，〈Apuse〉與〈Jayapura Diwaktu Malam〉兩個曲名直接指向他們的城市。1976 到 1979 年間他們在 Irama Tara 名下出了八張、共六十六首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=68defec7-3b23-4e35-973f-c285d32d2721&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=68defec7-3b23-4e35-973f-c285d32d2721&fmt=json&inc=media+recordings&limit=100",
+     "https://id.wikipedia.org/wiki/Black_Brothers",
+     "https://istanafm.com/black-brothers-menggebrak-dari-tanah-papua-hingga-mancanegara/",
+     "https://musicbrainz.org/release-group/68defec7-3b23-4e35-973f-c285d32d2721"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chrisye",
+   "album": "Puspa Indah",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9abce6ad-0b2d-41a8-8cbd-bd8b1130608b，identitySource pinned。回問 `release-group/9abce6ad-…?fmt=json&inc=artist-credits+releases` 確認 title「Puspa Indah」、primary-type Album、secondary-types 空、first-release-date 1980、artist-credit「Chrisye」（實體 adfff063-402d-4e97-a34d-c1cb6adaa7a1，Person、area Indonesia、begin 1949-09-16，名下 35 個 RG）。轄下 release 1 筆：1980 ID、**status 空**、Cassette×10、Musica Studios／MSC 7123。刻意不釘：5ff8136b-d7ca-39e0-96a5-abc6347b6061《Badai Pasti Berlalu》(1977，**池中已有**，且 secondary-types 含 Soundtrack)、75229d9e-2053-4841-84bc-2eb06a358317《Sabda Alam》(1978-10-05，**池中已有**)、201835cc-847d-4afc-b4c9-177652a0d0e3《Pantulan Cita》(1981，記入未收清單餘量)、4f2ab278-dce2-4a48-9f20-b7d9b2730762《Resesi》(1983，Musica Studios、Cassette×10，同上)、3bf24093-3f00-4f89-b809-b3b98701b6c4《Nona》(1984)、68d84843-175e-4e09-b715-5aa70cc21633《Sendiri》(1984)、2cb9e5ea-b9fb-4e70-a3cc-17e68231da26《Nona Lisa》(1986)、4f454e4a-7580-427a-8cd4-10e939640454《Jumpa Pertama》(1988)、8187791a-d9b7-40dc-956e-4e38ed7ec0a1《Pergilah Kasih》(1989)，以及 8e7f16b3／99a60628／a1e3844e／c3ec136f／c50c8b24／5ccec16c／97d9856e 等 Compilation 與 1f65becb／914abe9a／3df58c92／42efedc4 等 Single。",
+    "rgMbid": "9abce6ad-0b2d-41a8-8cbd-bd8b1130608b"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9abce6ad-0b2d-41a8-8cbd-bd8b1130608b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 3782,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "詞曲幾乎全出自 Guruh Soekarnoputra，他自己在錄音室裡彈的是貝斯與吉他。製作掛三個名字：Guruh、他本人，以及在這張裡彈鍵盤與口琴的 Jockie Soerjoprajogo。1980 年由 Musica Studios 以 MSC 7123 出卡帶，十軌 41 分 42 秒，是他的第四張錄音室專輯，標題曲 5 分 20 秒是最長的一軌。其中兩首單曲 1979 年先用在一部電影裡，這張賣得好，也讓他日後把專輯與其他媒體綁在一起做。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9abce6ad-0b2d-41a8-8cbd-bd8b1130608b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1775214005&country=id&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Puspa_Indah",
+     "https://musicbrainz.org/ws/2/artist/adfff063-402d-4e97-a34d-c1cb6adaa7a1?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/9abce6ad-0b2d-41a8-8cbd-bd8b1130608b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/7d/a6/5c7da67c-f17e-bcab-ea76-e4ae0cc035bd/mzaf_5420828454530101476.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1775214005",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chaseiro",
+   "album": "Bila",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0da28595-f100-4186-836c-393a4ae929ea，identitySource pinned。回問確認 title「Bila」、primary-type Album、secondary-types 空、first-release-date 1980、artist-credit「Chaseiro」（實體 9fbea414-8c9b-46cc-8e9e-48cd059e059d，Group、area Indonesia、begin 1970，名下 5 個 RG）。轄下 release 2 筆：1980 ID Official Cassette×12 Musica Studios／MSC7114；2018 ID Official CD×12 Musica／MSD0781CT、barcode 8992880105308。刻意不釘：d36e71c0-2308-4c56-97c8-dd717f03054e《Ceria》(1982，Musica Studios MSC7364、Cassette×11，記入未收清單餘量)、1ebffc0e-ab28-4a7b-9948-23bf936014e3《Pemuda》(**MB 的 first-release-date 是 2018，不是 1979 的原盤年**，取來會把再發年當原盤年)、075bcee0-4df6-4d4d-b602-f0aff69852cf《3》(2018，同上)、680f09f2-a798-4c55-8c8f-6c5b79cabab4《Persembahan》(2001)。",
+    "rgMbid": "0da28595-f100-4186-836c-393a4ae929ea"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0da28595-f100-4186-836c-393a4ae929ea/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 690,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七個成員的姓名首字母拼成團名，七個人同出一所大學。他們是印尼大學醫學、經濟與社會科學三個學院的學生。1980 年由 Musica Studios 以 MSC7114 出卡帶，十二軌約 43 分鐘，是五張作品裡的第二張：〈Tumpuan〉4 分 28 秒最長，〈Sampai Jumpa Lagi〉收尾。聲音是爵士與 bossa nova 底子的流行曲，Candra Darusman 的鍵盤加 Edwin Hudioro 的長笛。2018 年由同一家廠牌出了 CD。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=0da28595-f100-4186-836c-393a4ae929ea&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1753303191&country=id&entity=song&limit=200",
+     "https://id.wikipedia.org/wiki/Chaseiro",
+     "https://en.wikipedia.org/wiki/Candra_Darusman",
+     "https://musicbrainz.org/release-group/0da28595-f100-4186-836c-393a4ae929ea"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/6d/e7/0f6de7da-9454-12b5-7869-c477f785c914/mzaf_2196133466861553615.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1753303191",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Iwan Fals",
+   "album": "Opini",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0e7d996c-5c93-4c01-a8fa-021f5778d4db，identitySource pinned。回問確認 title「Opini」、primary-type Album、secondary-types 空、first-release-date 1982、artist-credit「Iwan Fals」（實體 326894c5-953a-45ac-9774-bc348a51214d，Person、area Indonesia、begin 1961-09-03，名下 **41 個 RG**）。轄下 release 1 筆：1982 ID Official、Cassette×9、Musica Studios／MSC7681、barcode 8992880768113。刻意不釘：10da8a75-0f3a-433b-978b-d7175aa78641《Sarjana Muda》(1981，**池中已有**)、cd9ff35d-2660-412d-8740-e793958f70e8《Sumbang》(1983，該 release 的 media 是 Digital Media、非原盤形態，記入未收清單餘量)、8421d5f1-80a1-402e-9a13-3ae39377029b《Sugali》(1984)、616cc676-fb1e-420e-8a41-b48eb00e6f16《Sore Tugu Pancoran》(1985，Musica Studios、Cassette×10、無 barcode，另有 2008 數位 8 軌版，**同 RG 兩版軌數不同——裁定 251**)、e1e8932f-8dd6-4de6-b255-75830f361dad《Lancar》(1987)、4edd06e8-c51b-4647-ac26-bc6a37e09b24《Wakil Rakyat》(1987)、28c7f4d2-1784-4062-8050-7a00c63e91e9《Mata Dewa》(1989)、8681b52d-d0e9-4e5e-89bb-bdf78181e500《Cikal》(1991)、f51954c3-7382-4617-a06d-6c4dd84b112a《Hijau》(1992)、db16eb41-c212-42b3-9f77-9f6017f89d1c《Belum Ada Judul》(1992)；4cc43493-c596-418c-bb4d-ada4a6fb8686《Canda Dalam Nada》(1981) 與 132dcd53／67cc329c／683d93cb／eadc665f／5c6c90cc 等是 Compilation；18a7236b／bd9f4902／a9c5fbe5 是 Single；9bc7881d 與 c88d7254 **無 first-release-date**。",
+    "rgMbid": "0e7d996c-5c93-4c01-a8fa-021f5778d4db"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0e7d996c-5c93-4c01-a8fa-021f5778d4db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 5809,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場曲的歌名就是他兒子的名字，孩子在 1982 年元旦出生。那首〈Galang Rambu Anarki〉3 分 52 秒，唱的是油價帶動物價上漲那陣子當父母的心情。九首歌全由他自己寫，製作與編曲是 Willy Soemantri，Luluk Purwanto 的小提琴穿插其間。1982 年由 Musica Studios 以 MSC7681 出卡帶，九軌 42 分 26 秒，是他在這家廠牌的第二張，收尾那一軌 7 分 23 秒是全碟最長。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=0e7d996c-5c93-4c01-a8fa-021f5778d4db&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1753721153&country=id&entity=song&limit=200",
+     "https://id.wikipedia.org/wiki/Opini_(album)",
+     "https://id.wikipedia.org/wiki/Galang_Rambu_Anarki",
+     "https://musicbrainz.org/ws/2/artist/326894c5-953a-45ac-9774-bc348a51214d?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/0e7d996c-5c93-4c01-a8fa-021f5778d4db"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/91/f0/cc91f06f-4c5e-5d87-2f0f-d207e3a0fc9a/mzaf_10514730460520420734.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1753721153",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Slank",
+   "album": "Kampungan",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group eb5a2531-d508-4e63-99db-06011c70aade，identitySource pinned。回問確認 title「Kampungan」、primary-type Album、secondary-types 空、first-release-date 1991、artist-credit「Slank」（實體 620e474b-241c-412a-ab43-207b86d6230b，Group、area Indonesia、begin 1983-12-26，名下 30 個 RG）。轄下 release 1 筆：1991 ID、**status 空**、**media.format 空**×12、**label-info 空**、無 barcode。刻意不釘：4c04063a-9be2-45e7-85ec-6154607522dc《Suit... Suit... He... He... (Gadis Sexy)》(1990-11-30，記入未收清單餘量)、478329aa-2c4f-421d-b18f-b3f1adefad95《Piss!》(1993，同上)、e0f29efe-a0de-3db3-a715-a67ff073f8ce《Generasi Biru》(1994)、82597e02-a67d-4315-bfa3-4d4ef277a0f2《Minoritas》(1996)、1f7d92c7-0dcb-4b94-9b52-0058fb8b73a7《Lagi Sedih》(1997-02-05)、a0ae5926-031f-46d7-accc-8575ab7a1142《Tujuh》(1998-01-20)、e11ac7d6-b92c-476c-aa36-ef7af3ae9898《Mata Hati Reformasi》(1998-07)；23237e1f／42ef0816／52500735／6830c3d7 是 Soundtrack（**本批不收**）、6576966b《Virus RoadShow》是 Live、1d97e60b《Slank Party》是 DJ-mix、69c507d8《Bajakan》是 Compilation；b5caaa79 與 0d548f88 兩個《Slankissme》以及 7bcbf00a《Virus》、88128306《The Big Hip》、5cae3f1d《i love you》、fca43591《Satu-Satu》、2f41a75f《Road To Peace》**皆無 first-release-date**。",
+    "rgMbid": "eb5a2531-d508-4e63-99db-06011c70aade"
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a2/1a/bd/a21abd34-7dbc-1fd4-6122-f617945dd32b/190295109325.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1550371580",
+    "note": "試聽探測釘定的 collectionId 1550371580（th）：Slank — Kampungan"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 10066,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一串符號當曲名排在第 10 軌，那首歌被審查後就這樣留在盤面上。這是他們的第二張錄音室專輯，1991 年 12 月 26 日發行，與成團那天同月同日、相隔八年，官網記的廠牌是 Proyek Q。十二軌 45 分 10 秒裡，〈Terlalu Manis〉做了隨興與銷售兩個版本，一頭一尾各放一個，紅的是隨興那版；〈Nina Bobo〉只有 34 秒，裡面收了辦公人員的打呼聲。封面用布料做、可以拿熨斗燙，卡帶並拿到 BASF 那年的暢銷表彰。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=eb5a2531-d508-4e63-99db-06011c70aade&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://slank.com/discography/kampungan/",
+     "https://en.wikipedia.org/wiki/Kampungan",
+     "https://itunes.apple.com/lookup?id=1550371580&country=id&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/artist/620e474b-241c-412a-ab43-207b86d6230b?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/eb5a2531-d508-4e63-99db-06011c70aade"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/a4/7e/83a47e28-f075-17fc-4a01-2dcd997e454d/mzaf_14247209313063681461.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1550371580",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "พุ่มพวง ดวงจันทร์",
+   "album": "ตะวันลับฟ้า",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 15f1f96d-d5b0-4cb5-a082-5b3365c7a16c，identitySource pinned。回問確認 title「ตะวันลับฟ้า」、primary-type Album、secondary-types 空、first-release-date 1978、artist-credit「พุ่มพวง ดวงจันทร์」（實體 6b3c73bc-813c-4164-893f-abb477e15ef2，Person、area Thailand、begin 1961-08-04，名下 6 個 RG）。轄下 release 2 筆：1978 TH Official 12\" Vinyl×10 เอื้ออารีย์เจ้าเก่า／[none]；2017-01-01 XW Official Digital Media×10 Baichasong。刻意不釘：430d1db9-ea90-469e-9f6b-41a02d5761f5《ลำเพลิน พุ่มพวง ดวงจันทร์》(**池中已有**，MB first-release-date 2017-07-26)、6a10cb46-ec7c-4623-95cd-46b3b1b58dcd《บ้านนอกในกรุง》(1980，**池中已有**)、7421f70f-df89-42c4-9058-9fbf0872ab86《พุ่มพวงหลาย พ.ศ.》(Compilation、無年份)、557b3f2d-92ed-465b-9f38-d5fe7bf731f1《วัยน่ารัก》(**無 first-release-date、primary-type 亦空**)、b96c1f41-8695-436f-a48d-63f42a0eb9dd《ห้วยหน่อย-ถอยนิด》(同上，**且盤名含 U+2010 連字號**)。",
+    "rgMbid": "15f1f96d-d5b0-4cb5-a082-5b3365c7a16c"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/15f1f96d-d5b0-4cb5-a082-5b3365c7a16c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "頭兩首曲名一前一後：太陽落山，與太陽落山之前。這是 Pumpuang Duangjan 1970 年代末的泰國原盤，12 吋黑膠十軌，目錄編號欄登記成空值；2017 年的數位版才補上軌長，合計 37 分 38 秒，曲序也與原盤不同。〈นักร้องบ้านนอก〉是後來最常被翻唱的一首。她八歲起登台，1975 年拜師之後才改用現在這個藝名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=15f1f96d-d5b0-4cb5-a082-5b3365c7a16c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=15f1f96d-d5b0-4cb5-a082-5b3365c7a16c&fmt=json&inc=media+recordings&limit=100",
+     "https://th.wikipedia.org/wiki/พุ่มพวง_ดวงจันทร์",
+     "https://musicbrainz.org/ws/2/artist/6b3c73bc-813c-4164-893f-abb477e15ef2?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/15f1f96d-d5b0-4cb5-a082-5b3365c7a16c"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "อังคนางค์ คุณไชย",
+   "album": "แฟนจ๋าอย่าลืม",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b2ef8b6e-0325-43af-b213-3e3d232c73e3，identitySource pinned。回問確認 title「แฟนจ๋าอย่าลืม」、primary-type Album、secondary-types 空、first-release-date 1979、artist-credit「อังคนางค์ คุณไชย」（實體 2189aa25-0786-49f6-9919-aea9bdb9c86b，Person、area Thailand、begin 1956-02-06，名下 3 個 RG）。轄下 release 4 筆：1979 TH Official 12\" Vinyl×12 ตราพินแคน／HLP 269；2016 JP Official CD×10 EM Records／EM1157CD（title `Never Forget Me`）；2018-03-24 XW Official Digital Media×10 EM Records（同英譯名）；另一筆 **Pseudo-Release**（title `Faen cha ya luem`，date／country／format 皆空，12 軌）。刻意不釘：a2cf6586-73bb-46f6-a2c1-470fd75359c2《อิสานลำเพลิน》(2014-05-27，**即池中 `Angkanang Kunchai With Ubon-Pattana Band《Isan Lam Plearn》` 那張的 EM Records 再發線，池中已有**)、c19e05b3-37ab-4a5e-b9c9-36e8471fd032《ลำเพลิน กับอังคนางค์ คุณไชย》(**無 first-release-date**)。",
+    "rgMbid": "b2ef8b6e-0325-43af-b213-3e3d232c73e3"
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b2ef8b6e-0325-43af-b213-3e3d232c73e3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 15,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "自己出錢、自己的樂團伴奏，原盤十二軌到日本再版只剩十軌。錄音在 1977 到 1979 年間，1979 年的泰國原盤是 12 吋黑膠十二軌、42 分 15 秒。唱的是伊善的 lam phloen 與 luk thung 混合，四軌以 ลำเพลิน 開頭的曲名串成中後段，最長的一軌 5 分 05 秒，標題曲反而只有 2 分 40 秒。2016 年日本 EM Records 以《Never Forget Me》再版，拿掉的兩軌不是她唱的；伴奏樂團其後因財務壓力解散。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b2ef8b6e-0325-43af-b213-3e3d232c73e3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=b2ef8b6e-0325-43af-b213-3e3d232c73e3&fmt=json&inc=media+recordings&limit=100",
+     "https://emrecords.bandcamp.com/album/never-forget-me",
+     "https://emrecords.ocnk.net/product/141",
+     "https://musicbrainz.org/ws/2/artist/2189aa25-0786-49f6-9919-aea9bdb9c86b?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/b2ef8b6e-0325-43af-b213-3e3d232c73e3"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "คาราวาน",
+   "album": "อเมริกันอันตราย",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 347d78e9-23e6-487f-a59e-ba207612a145，identitySource pinned。回問確認 title「อเมริกันอันตราย」、primary-type Album、secondary-types 空、first-release-date 1976、artist-credit「คาราวาน」（實體 f77ee6f1-9b57-499e-a926-5decd2661f67，Group、area Thailand、begin 1973、disambiguation「Thai folk-rock band」，名下 11 個 RG）。轄下 release 1 筆：1976 TH Official、media.format `CD`×10、**label-info 空**、無 barcode。刻意不釘：ec550864-ef68-4207-a807-e20c7e14cd2e《คนกับควาย》(1975，**池中已有，掛名寫成拉丁形 `Caravan`**)、5aadb1a0-2e9f-4f5b-a834-2eb25df1c007《บ้านนาสะเทือน》(1983，**本組另收一卡**)、d5bd376a-78ac-4939-8164-cc56ce0fd15f《คนตีเหล็ก》(1984，**本組另收一卡**)、458ac1a9-3ae4-4443-8f94-24f437da6ab2《1985》(1985，**盤名是純數字，撞卡字串去重上極危險**，記入未收清單餘量)、20e38b39-1b41-4313-8a27-cb3c4e003381《คนไกลบ้าน》(1986，同上餘量，**店端兩種查法皆未命中**)、7d92c928-77aa-4118-89c9-e1378324f253《US J. PAN》(1987)、d7334d4f-b4e5-478a-b71d-a82553a39d5d《อานนท์》(1988)、cae8fa7d-3336-4963-a09c-9a5b63684c36《American Antarai》(2013-08-12，**本張曲目的拉丁名另組建檔**)、a43f5b76-d735-43b0-9b38-95242471dc65《เส้นเสียงเปล่า》與 c75f4db6-5f8f-4348-a970-a0c33703ea8b《คาราวาน》(**兩者皆無 first-release-date，後者 primary-type 亦空**)。",
+    "rgMbid": "347d78e9-23e6-487f-a59e-ba207612a145"
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/347d78e9-23e6-487f-a59e-ba207612a145/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 120,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "《The Ugly American》的泰文譯名，先是書名與片名，後來成了這張的盤名。那是 1958 年的小說與 1963 年的同名電影，Caravan 借了它在泰國的譯法。碟是 1976 年 1 月的第二張，距首張一年多，泰國原盤十軌 38 分 25 秒；標題曲由團裡兩位吉他手合寫，音樂上受泰南 rong ngeng 舞曲影響，小提琴的拉奏貫穿全碟，另有兩首以伊善曲式寫成的歌。此後作品表空了七年，下一張要到 1983 年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=347d78e9-23e6-487f-a59e-ba207612a145&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1871711638&country=th&entity=song&limit=200",
+     "https://th.wikipedia.org/wiki/คาราวาน_(วงดนตรี)",
+     "https://mgronline.com/entertainment/detail/9570000060304",
+     "https://th.wikipedia.org/wiki/อเมริกันอันตราย",
+     "https://musicbrainz.org/release-group/347d78e9-23e6-487f-a59e-ba207612a145"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/e1/8f/77e18fbd-8b6f-f16a-e5e5-897f6605d0aa/mzaf_12008442238581357248.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1871711638",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "คาราวาน",
+   "album": "บ้านนาสะเทือน",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5aadb1a0-2e9f-4f5b-a834-2eb25df1c007，identitySource pinned。回問確認 title「บ้านนาสะเทือน」、primary-type Album、secondary-types 空、first-release-date 1983、artist-credit「คาราวาน」（實體 f77ee6f1-9b57-499e-a926-5decd2661f67，Group、area Thailand、begin 1973、disambiguation「Thai folk-rock band」）。轄下 release 1 筆：1983 TH Official、media.format `CD`×10、**label-info 空**、無 barcode。刻意不釘：ec550864-ef68-4207-a807-e20c7e14cd2e《คนกับควาย》(1975，**池中已有**)、347d78e9-23e6-487f-a59e-ba207612a145《อเมริกันอันตราย》(1976，**本組另收一卡**)、d5bd376a-78ac-4939-8164-cc56ce0fd15f《คนตีเหล็ก》(1984，**本組另收一卡**)、458ac1a9-…《1985》、20e38b39-…《คนไกลบ้าน》(1986)、7d92c928-…《US J. PAN》(1987)、d7334d4f-…《อานนท์》(1988)、cae8fa7d-…《American Antarai》(2013-08-12)。",
+    "rgMbid": "5aadb1a0-2e9f-4f5b-a834-2eb25df1c007"
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5aadb1a0-2e9f-4f5b-a834-2eb25df1c007/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 26,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七年沒出片之後，1983 年 6 月回來的這一張，第 9 軌與團名同名。那一軌 10 分 30 秒，佔去泰國原盤十軌、46 分 50 秒的近四分之一。第 4 軌〈คิดถึงบ้าน〉是那首歌的首次錄音，詞曲出自 อัศนี พลจันทร；隔年 คาราบาว 重錄一次，改題為〈เดือนเพ็ญ〉並調換了段落順序，後來流傳最廣的是改題後那一版。同年 8 月他們又出了下一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5aadb1a0-2e9f-4f5b-a834-2eb25df1c007&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1871712806&country=th&entity=song&limit=200",
+     "https://th.wikipedia.org/wiki/คาราวาน_(วงดนตรี)",
+     "https://th.wikipedia.org/wiki/เดือนเพ็ญ_(เพลง)",
+     "https://musicbrainz.org/release-group/5aadb1a0-2e9f-4f5b-a834-2eb25df1c007"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/fc/17/5cfc17e0-07e1-915e-f3c4-93efe6ea480f/mzaf_2864392812394437427.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1871712806",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "คาราวาน",
+   "album": "คนตีเหล็ก",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d5bd376a-78ac-4939-8164-cc56ce0fd15f，identitySource pinned。回問 `release-group/d5bd376a-…?fmt=json&inc=artist-credits+releases` 確認 title「คนตีเหล็ก」、primary-type Album、secondary-types 空、first-release-date 1984、artist-credit「คาราวาน」（實體 f77ee6f1-9b57-499e-a926-5decd2661f67，Group、area Thailand、begin 1973，名下 11 個 RG）。轄下 release 1 筆（`release?release-group=…&inc=media+labels` 實測）：1984、**country 空**、Official、media.format `CD`×11、**label-info 空**、無 barcode。刻意不釘：ec550864-ef68-4207-a807-e20c7e14cd2e《คนกับควาย》(1975，**池中已有**)、347d78e9-…《อเมริกันอันตราย》(1976，**本組另收**)、5aadb1a0-…《บ้านนาสะเทือน》(1983，**本組另收**)、458ac1a9-3ae4-4443-8f94-24f437da6ab2《1985》(1985)、20e38b39-1b41-4313-8a27-cb3c4e003381《คนไกลบ้าน》(1986)、7d92c928-…《US J. PAN》(1987)、d7334d4f-…《อานนท์》(1988)、cae8fa7d-…《American Antarai》(2013-08-12)、a43f5b76-… 與 c75f4db6-…（**皆無 first-release-date**）。",
+    "rgMbid": "d5bd376a-78ac-4939-8164-cc56ce0fd15f"
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d5bd376a-78ac-4939-8164-cc56ce0fd15f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 67,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一張碟三種曲序：卡帶 A、B 面各五首，資料庫端那版多了一個演奏版。多出來的末軌是〈หนุ่มพเนจร〉的演奏版，這首 3 分半也是全碟最常被翻唱的一首。卡帶實物把發行記在 1983 年 8 月，資料庫端則登 1984 年，出版時間落在這兩者之間，緊接在同年 6 月那張之後；製作方是 สหกวงเฮง，錄音在 ไพบูลย์สตูดิโอ。標題曲 4 分 37 秒，〈ข้าวลาลาน〉5 分 45 秒最長，演出的仍是原班四人。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d5bd376a-78ac-4939-8164-cc56ce0fd15f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1814102585&country=th&entity=song&limit=200",
+     "https://musicandsign.blogspot.com/2013/09/2526-2527_30.html",
+     "https://th.wikipedia.org/wiki/คาราวาน_(วงดนตรี)",
+     "https://musicbrainz.org/release-group/d5bd376a-78ac-4939-8164-cc56ce0fd15f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/3a/9b/293a9b8c-0620-02a0-5d6f-adced46830cd/mzaf_9351149952610726308.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1814102585",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "พงษ์เทพ กระโดนชำนาญ",
+   "album": "เดี่ยว",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9fa0b619-9aa9-44fc-92b8-577bc78d1fcb，identitySource pinned。回問確認 title「เดี่ยว」、primary-type Album、secondary-types 空、first-release-date 1985、**artist-credit 字串是拉丁轉寫「Pongtep Kradonchamnan」**（實體 e5a171f5-270c-4ddc-9b9c-6e56e373aba6，MB 主名為泰文「พงษ์เทพ กระโดนชำนาญ」，Person、area Thailand，名下 2 個 RG）。轄下 release 1 筆：1985 TH Official、12\" Vinyl×10、GMM Grammy／STEREO PO-280513、無 barcode。刻意不釘：dc2cad26-df93-48b2-ac2c-19ad7af2c8b8《ไอแอมอีสาน》(**無 first-release-date、primary-type 亦為空**，不符 primary-type=Album 門檻)。",
+    "rgMbid": "9fa0b619-9aa9-44fc-92b8-577bc78d1fcb"
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/mxwugqnmfl8pB7Kxa1qjVj_XmKtIJUmTk07X_0I_erI/rs:fit/g:sm/q:90/h:454/w:470/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2MDM0/NTEtMTQyMjkwMjkw/NS0zNDM3LmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "6603451"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一個字的盤名，意思是獨自——คาราวาน 的打擊樂手這回站到自己名下。出道前他在那支樂團裡兼打擊樂與長笛，1983 年先出過一張個人專輯，這張則是 1985 年 5 月由 Grammy 出的 12 吋黑膠、十軌。曲風延續 reggae 節奏與伊善元素，開場的〈ตายหยังเขียด〉寫於難府山區、比出版早了好幾年，〈คนกับหมา〉是另一首代表作，收尾的〈เพลงเพื่อชีวิต〉直譯是「為生活的歌」。他綽號 หมู，有「田間詩人」的稱號，這張賣了約四十萬套。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9fa0b619-9aa9-44fc-92b8-577bc78d1fcb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://th.wikipedia.org/wiki/พงษ์เทพ_กระโดนชำนาญ",
+     "https://musicbrainz.org/ws/2/artist/e5a171f5-270c-4ddc-9b9c-6e56e373aba6?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/9fa0b619-9aa9-44fc-92b8-577bc78d1fcb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Thai Beat a Go-Go, Volume 1",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7a9148bd-9496-31b6-8224-9f663cbcce01，identitySource pinned。回問確認 title「Thai Beat a Go-Go, Volume 1」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2004、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：3405e0c6-d177-4109-8b4f-048fab6c66b3（2004 SE Official CD×20、Subliminal Sounds／SUBCD11、barcode 7393210134119）與 4a2f5832-4a55-4e41-b05b-13938af5e386（2009 SE Official 12\" Vinyl×13、Subliminal Sounds／SUBLP-35、無 barcode）——**兩筆皆已逐筆打 `release/<id>?inc=media+labels+artist-credits` 讀過**。刻意不釘：7a9148bd 的同系列 272227fe-6659-3953-a104-d34740e70698《Thai Beat a Go-Go, Volume 2》(2004) 與 4406c4cd-23ec-4be0-ba73-28e94f65c94b《Thai Beat a Go-Go, Volume 3》(2005)（**依裁定 255／c-123 第五節「同一批錄音的多種合輯只挑最權威的一種」，系列只取第一集**，Vol. 2／3 記入未收清單餘量）、7c57cbac-5f6d-4f47-9de4-87fc1c327ef0《Thai? Dai!》(2011，**池中已有**)。",
+    "rgMbid": "7a9148bd-9496-31b6-8224-9f663cbcce01",
+    "exceptionReason": "1960 年代中到 1970 年代初的泰國 shadow／string combo 樂隊錄音在原生市場以 7 吋與合輯卡帶為主要載體，這一批曲目沒有任何一張以單一樂隊為單位的原盤 LP 存在於資料庫端，**合輯是它們唯一取得長篇形態的方式**。本輯 2004 年由瑞典 Subliminal Sounds 發行、編號 SUBCD11、20 軌、barcode 7393210134119，2009 年再壓成 12 吋黑膠 SUBLP-35（13 軌）。**`year` 取 2004，即資料庫端登記的合輯出版年**——依裁定 261：本輯的錄音年代橫跨 1960 年代中到 1970 年代初、沒有一個年份涵蓋整套的多數，所以取 release-group 的 first-release-date，而不是任一錄音年。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2004、artist-credit Various Artists」；release 網址支持「Subliminal Sounds SUBCD11、2004、SE、Official、CD、20 軌、barcode 7393210134119」。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/7a9148bd-9496-31b6-8224-9f663cbcce01?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/3405e0c6-d177-4109-8b4f-048fab6c66b3?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7a9148bd-9496-31b6-8224-9f663cbcce01/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 198,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十軌裡有五首是英美熱門曲的泰國版，〈Day Tripper〉也在其中。其餘是 1960 年代到 1970 年代初曼谷的 7 吋單曲，由 Stefan Kéry 選輯，2004 年瑞典的 Subliminal Sounds 以 SUBCD11 出成 CD，全碟 55 分 13 秒。〈Bangsaen '66〉是衝浪吉他，〈James Bond Theme〉那一軌改用泰國樂器奏，參與的樂隊在資料庫端只有軌級登記。2009 年的黑膠版只收十三軌，選曲也換過。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7a9148bd-9496-31b6-8224-9f663cbcce01&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/3405e0c6-d177-4109-8b4f-048fab6c66b3?fmt=json&inc=media+labels+artist-credits+recordings",
+     "https://itunes.apple.com/lookup?id=1532624882&country=us&entity=song&limit=200",
+     "https://sunkit.com/thai-beat-a-go-go-1/",
+     "https://musicbrainz.org/release-group/7a9148bd-9496-31b6-8224-9f663cbcce01",
+     "https://musicbrainz.org/ws/2/release-group/7a9148bd-9496-31b6-8224-9f663cbcce01?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/3405e0c6-d177-4109-8b4f-048fab6c66b3?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/f7/58/7ff758a1-6a2e-5831-fe1b-08c27ec03520/mzaf_4200431775773905827.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1532624882",
+    "storefront": "ID"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Shadow Music of Thailand",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e4b087bb-a70f-4dac-9c49-87edc8bfe0c7，identitySource pinned。回問確認 title「Shadow Music of Thailand」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2008、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：197f5ace-fdee-4a86-b9b2-3b9faacbb4fb（2008 US Official 12\" Vinyl×17、Sublime Frequencies／SF042、無 barcode）與 b658a4bb-0e9e-4869-b433-3c7fb42eabce（2009 US Official CD×17、同編號 SF042、無 barcode）——**兩筆皆已逐筆打 `release/<id>` 讀過**。刻意不釘：8154caeb-1f44-4a39-9c42-d7e0357d0b30《Radio Thailand: Transmissions From the Tropical Kingdom》(2006-05-20，同廠牌，**但 artist-credit 是 `[unknown]`、不是 Various Artists，掛名無法成卡**，記入未收清單並註明原因)、c0d07953-c3d5-44a4-baaa-b9add1b8771c《Music of Thailand》(1962，Compilation，題材是傳統器樂、不在本批的體制線射程內)。",
+    "rgMbid": "e4b087bb-a70f-4dac-9c49-87edc8bfe0c7",
+    "exceptionReason": "本輯收的是 1960 年代泰國 shadow music 樂隊的錄音，該路線在原生市場以 7 吋與電台母帶流通，資料庫端查不到任何一支參與樂隊的原盤 LP release-group，**合輯是這批錄音唯一的長篇形態**。2008 年由美國 Sublime Frequencies 發行、編號 SF042、12 吋黑膠 17 軌，2009 年以**同一個編號 SF042** 壓成 CD、同樣 17 軌。**`year` 取 2008，即資料庫端登記的 first-release-date**——依裁定 261，本輯錄音年代橫跨整個 1960 年代、沒有單一年份涵蓋多數，故取合輯出版年而非錄音年。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2008、artist-credit Various Artists」；release 網址支持「Sublime Frequencies SF042、2008、US、Official、12\" Vinyl、17 軌」。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e4b087bb-a70f-4dac-9c49-87edc8bfe0c7?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/197f5ace-fdee-4a86-b9b2-3b9faacbb4fb?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e4b087bb-a70f-4dac-9c49-87edc8bfe0c7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 428,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲風的名字借自英國樂團 The Shadows，十七軌只有四個掛名。The Son of P.M. 占八軌，其餘三組分走九軌，參與的樂隊在資料庫端只有軌級登記。錄音全在 1960 年代中的曼谷，選輯與設計出自 Mark Gergis，2008 年 Sublime Frequencies 以 SF042 出 12 吋黑膠、44 分 57 秒，隔年同編號出 CD。聲響是電吉他與電風琴奏泰國傳統旋律，墊著衝浪與拉丁節奏，當年唱片上標「Thai Modernized Music」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e4b087bb-a70f-4dac-9c49-87edc8bfe0c7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/197f5ace-fdee-4a86-b9b2-3b9faacbb4fb?fmt=json&inc=media+labels+artist-credits+recordings",
+     "https://sublime-frequencies.bandcamp.com/album/shadow-music-of-thailand",
+     "https://www.sublimefrequencies.com/products/576883-shadow-music-of-thailand",
+     "https://musicbrainz.org/release-group/e4b087bb-a70f-4dac-9c49-87edc8bfe0c7",
+     "https://musicbrainz.org/ws/2/release-group/e4b087bb-a70f-4dac-9c49-87edc8bfe0c7?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/197f5ace-fdee-4a86-b9b2-3b9faacbb4fb?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Luk Thung: Classic & Obscure 78s from the Thai Countryside",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f81d4541-d82d-4101-b1d2-213da07b3329，identitySource pinned。回問確認 title「Luk Thung: Classic & Obscure 78s from the Thai Countryside」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2010、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：798efab1-91bb-4be1-80de-4fd662b74d21（2010 US Official 12\" Vinyl×14、Parlortone／PT-2002、無 barcode）與 8cfe8345-70bf-4641-b091-9df0b2639eaf（2013 US Official CD×14、`Dust‐to‐Digital`／DTD-29、barcode 880226002923）——**兩筆皆已逐筆打 `release/<id>` 讀過**。刻意不釘：9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41《Luk Thung! The Roots of Thai Funk》(2010，**本組另收一卡**；兩輯同年、同題材關鍵詞，但廠牌、國別、軌數、取樣完全不同——ZudRangMa TH 18 軌對 Parlortone US 14 軌)、a2ced472-a8d3-4c74-9068-17344509d2bf《Classic Productions by Surin Phaksiri: Luk Thung Gems from the 1960s‐80s》(2019-08-23，EM Records，**盤名含 U+2010 連字號，`chk-prop` 會判「專輯名含非 ASCII 連字號」，本批不收**)、4bf7e8a1-21c8-4946-931d-0231cdf4940a《Suphanburi Soul: Kwanjit Sriprajan – The First Lady of Lae Music》(2019-04-17，ZudRangMa，**盤名含 en dash U+2013，同上理由不收**)。",
+    "rgMbid": "f81d4541-d82d-4101-b1d2-213da07b3329",
+    "exceptionReason": "本輯的來源是泰國鄉間 78 轉蟲膠盤，**那個載體上根本不存在「專輯」這種形態**——單面一曲、沒有 LP、也沒有任何一位演唱者留下原盤長篇，合輯是這批錄音唯一可能的形態。2010 年由美國 Parlortone 發行、編號 PT-2002、12 吋黑膠 14 軌；2013 年由 Dust-to-Digital 以編號 DTD-29 壓成 CD、barcode 880226002923、同 14 軌。**`year` 取 2010，即資料庫端登記的 first-release-date**——依裁定 261，78 轉來源的錄音年代橫跨數十年且端上一格都沒登記，取合輯出版年是唯一站得住的取法。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2010、artist-credit Various Artists」；release 網址支持「Dust-to-Digital DTD-29、2013、US、Official、CD、14 軌、barcode 880226002923」。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f81d4541-d82d-4101-b1d2-213da07b3329?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/8cfe8345-70bf-4641-b091-9df0b2639eaf?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f81d4541-d82d-4101-b1d2-213da07b3329/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1322,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十四首 78 轉蟲膠盤上的歌，在這之前沒有一首在泰國以外出過。來源是收藏家 David Murray 的 1960 年代初泰國鄉間收藏，修復後成輯，黑膠由 Parlortone 以 PT-2002 出在 2010 到 2011 年之交，2013 年再由 Dust-to-Digital 以 DTD-29 出 CD。手風琴與拉丁式管樂混著泰國手鼓與指鈸，男聲為主，Waiphot Phetsuphan 一人就占三軌。每一軌的曲名後面都附了英譯，黑膠另附六頁全彩內頁。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f81d4541-d82d-4101-b1d2-213da07b3329&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/8cfe8345-70bf-4641-b091-9df0b2639eaf?fmt=json&inc=media+labels+artist-credits+recordings",
+     "https://itunes.apple.com/lookup?id=1348481287&country=us&entity=song&limit=200",
+     "https://monrakplengthai.blogspot.com/2011/02/luk-thung-classic-obscure-78s-from-thai.html",
+     "https://dusttodigital.bandcamp.com/album/luk-thung-classic-obscure-78s-from-the-thai-countryside",
+     "https://musicbrainz.org/release-group/f81d4541-d82d-4101-b1d2-213da07b3329",
+     "https://musicbrainz.org/ws/2/release-group/f81d4541-d82d-4101-b1d2-213da07b3329?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/8cfe8345-70bf-4641-b091-9df0b2639eaf?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/09/24/12/09241253-b2b7-101a-c0cd-5453c9f7277f/mzaf_4385247213564926294.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1348481287",
+    "storefront": "TH"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Luk Thung! The Roots of Thai Funk",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41，identitySource pinned。回問確認 title「Luk Thung! The Roots of Thai Funk」、primary-type Album、**secondary-types 含 Compilation**、first-release-date 2010、artist-credit「Various Artists」（實體 89ad4ac3-39f7-470e-963a-56509c546377）。轄下 release 2 筆：106c2c24-d381-449d-b5da-a08f2340ef1f（2010 TH Official CD×18、ZudRangMa／ZRMCD003、無 barcode）與 23ca079c-cd1e-4f7e-9895-1cf6462bc81c（2015 TH Official **CD-R**×18、ZudRangMa／`[none]`、無 barcode）——**兩筆皆已逐筆打 `release/<id>` 讀過**。刻意不釘：f81d4541-d82d-4101-b1d2-213da07b3329《Luk Thung: Classic & Obscure 78s from the Thai Countryside》(2010，**本組另收一卡**)、7c57cbac-5f6d-4f47-9de4-87fc1c327ef0《Thai? Dai!》(2011，**池中已有，c-52**)、f895eb4d-2e30-4d3f-aea1-680353294d13《The Sound of Siam》(2010-09-09，**池中已有**)、377ce876-2232-4300-bd4a-02cf1496cccb《The Sound of Siam, Volume 2》(2014-05-26，**池中已有**)、60487c44-c58a-467c-b55b-1ea344586594《Theppabutr Productions》(2012，**池中已有**)。",
+    "rgMbid": "9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41",
+    "exceptionReason": "本輯收的是 1970 年代泰國 luk thung 錄音裡走 funk 編制的那一批，這些曲目當年以 7 吋單曲與合輯卡帶流通，資料庫端查不到任何一位參與演唱者的同批原盤 LP，**合輯是它們唯一的長篇形態**。2010 年由曼谷的 ZudRangMa 發行、編號 ZRMCD003、CD 18 軌，2015 年以同廠牌再壓成 CD-R、18 軌（該筆的 catalog-number 欄明寫 `[none]`）。**`year` 取 2010，即資料庫端登記的 first-release-date**——依裁定 261，本輯的錄音年代橫跨 1970 年代、端上未逐軌登記年份，取合輯出版年。兩個舉證網址支持的句子分別是：release-group 網址支持「primary-type Album、secondary-types Compilation、first-release-date 2010、artist-credit Various Artists」；release 網址支持「ZudRangMa ZRMCD003、2010、TH、Official、CD、18 軌」。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/106c2c24-d381-449d-b5da-a08f2340ef1f?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 32,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封套是用 Phanat Nikhom 古城編的竹片做的口袋，CD 與海報一起塞進去。整份再裝進釘了標頭卡的塑膠袋。2010 年由曼谷 ZudRangMa 以 ZRMCD003 出 CD，十八軌 51 分 9 秒，是該廠牌 Thai Funk 系列第三集，由 Maft Sai 選輯並混音。收的是 1970 年代伊善與泰國中部走 funk 編制的 luk thung，管樂、電風琴與電貝斯的切分，開場那軌 34 秒，最長的 4 分 04 秒。這批錄音當年只有 7 吋與合輯卡帶。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/106c2c24-d381-449d-b5da-a08f2340ef1f?fmt=json&inc=media+labels+artist-credits+recordings",
+     "https://soundsoftheuniverse.com/product/luk-thung-the-roots-of-thai-funk-compiled-by-maft-sai",
+     "https://ticro.com/products/v10003503",
+     "https://musicbrainz.org/release-group/9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41",
+     "https://musicbrainz.org/ws/2/release-group/9cbceeb8-bbe7-4d42-a4c3-ede9d647fd41?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release/106c2c24-d381-449d-b5da-a08f2340ef1f?fmt=json&inc=media+labels+artist-credits"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

@@ -1,5 +1,75 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-17｜dip-vinyl-shop｜c-126 至 c-147 二十一批上架 798 張，含 Blue Note 全線 455 張
+
+雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（291 筆提交）快轉合併。
+**候選 815 張、上架 798 張、留置 16 張（全部是缺封面）、頂點 0 張。**
+卡池 16,450 → **17,248**，無年份 0、無曲風 0。
+card_catalog 798/798；**KV 1,026 個鍵 bulk get 逐字回讀一致**；
+21 道 prepare gate ＋ 21 道 published gate 全部 0 error。
+
+| 區段 | 批 | 張 |
+|---|---|---:|
+| 華語台灣獨立（2010 後）與第二批 | c-126、c-127 | 90 |
+| 東南亞軍政府時期 | c-129 | 45 |
+| 波蘭人民共和國時期 | c-130 | 45 |
+| 爵士深掘第一批 | c-131 | 45 |
+| 日本爵士第一世代（モダンジャズ／ビッグバンド／戰後鋼琴三重奏） | c-132～c-134 | 135 |
+| **Blue Note 全線**（10 吋 5000／7000 → BLP 1500 → 4000 → Liberty → BN-LA → LT 系列 → 1981–84 休眠期 ＋ §5.6 合輯回撈） | c-135～c-147 | 438 |
+
+（c-128 不存在，雲端跳號。）
+
+## 一、封面 98%，Discogs 這層只再補 16 張
+
+雲端交來 714/815（88%）。四層補救：**Apple collectionId 直查 +68**、Spotify／Bandcamp 0、
+iTunes 0、**Discogs +16**，最終 **799/815（98%）**，只剩 16 張缺。
+來源分佈：CAA 714、`apple-verified-collection` 68、`discogs` 16、manual 1。
+
+Apple 那層這次獨挑大樑（+68）——Blue Note 與日本爵士在 Apple 上的目錄完整，
+`probe-previews` 釘到的 collectionId 直接 lookup 就能取到官方封面。
+**撞圖檢查 0 組**（全池 4,536 張封面）。
+
+## 二、冷門軸：Blue Note 全線**刻意不套 §0.8**
+
+這次只有 8 批套錨點（c-131～c-134 depth、c-126／c-127／c-129／c-130 regional），
+**Blue Note 十三批 438 張一律保留機器值**。
+
+理由是 §0.8 的兩個失真機制對 Blue Note 都不成立：
+(1)「考古再發會製造聽眾」——Blue Note 從來沒有被埋過；
+(2)「Last.fm 偏英語圈」——這是英語圈自己的廠牌，而且 93% 的卡有 Apple 試聽、全在串流上。
+listeners 中位數 288～4,230，落在機器分級有效的區間，**沒有塌成常數**。
+硬套 depth 會把 438 張全部壓成 4，反而抹掉 BLP 1500 正典與 LT 庫存盤之間真實的冷門度差距。
+這是 §0.8「適用範圍要用 listeners 中位數判、不要只看 lineType 標籤」的正面應用。
+
+**錨點 5 分提案六張，逐張複核後全部退回**——5 分的第一個要件是「原盤私壓或極小廠」，
+這六張沒有一家符合：SEVEN SEAS（King Records 世界音樂系列）、Polskie Nagrania „Muza"
+（波蘭國營）、CBS/Sony（日本最大唱片公司）、Audio Lab OVXA 高解析系列（兩張）、
+法國 New Wave Records（另有 1991 卡帶與 2001 CD 兩次再發）。
+
+## 三、prepare gate 抓到一個 releaseType 誤填
+
+**Dexter Gordon《The Other Side of Round Midnight》記成 `releaseType: "Soundtrack"`。**
+實查 release-group `01b21355` 確認：**primary-type 是 Album，`Soundtrack` 是 secondary-type**。
+策展層把 secondary 寫進了 releaseType 欄。照實改回 Album（§5.6 管的是 Compilation，
+這張是 1986 年的原發專輯不是選輯）。全 21 批掃過，非標準 releaseType 只有這一張。
+
+**修的時候策展檔與卡單要一起改**：`prop-b.json`、`desc-tools/batches/cards/c147-cards.json`、
+`batch-progress/c147/cand-all.json` 三處——`build-manifest` 讀策展檔優先，只改卡單不生效。
+（與 09-10 的 Life's Blood `releaseType: "Other"` 是同一種形狀，第二次遇到。）
+
+## 主要檔案
+
+`seed_cards.json`（17,248 列）、`card-preview-status.js`、`data/apple-audio-map-v1.json`、
+`data/apple-audio-runtime-v1.json`、`data/discogs-cover-registry.json`、
+21 份 `onboarding-manifest-c1*-20260917.json`、
+21 批的 `batch-progress/c1*/{cand-all,covers,previews.local,ratings,obscurity-anchor,held}.json`。
+
+## 尚未處理
+
+- **留置 16 張全部是缺封面**，加上先前累積的 130 張，全專案未上架合計 **146 張**，
+  名單見 `audits/MISSING-COVERS.md`。
+- 池中十四組同一藝人兩種寫法、四組重複卡（兩組是普卡撞王牌），仍待處理。
+
 ### 2026-09-10｜dip-vinyl-shop｜c-77 至 c-125 四十八批上架 1,962 張，卡池破一萬六
 
 同日第二筆（第一筆記 §4 Discogs 來源與舊批解除留置）。雲端分支
