@@ -768,3 +768,5 @@ curl -sSL https://www.worldradiohistory.com/Archive-All-Music/Cash-Box-Magazine.
 **OCR 形變 `Jazz → Jall／JAll` 到 1996 年仍然普遍**，關鍵字表已一併收。
 
 **到此合計覆蓋：Billboard 1955→1996 全年，Cash Box 1960-11→1996-11（停刊）。**
+
+- ⚠ 2026-09-18（c-150 研究 a 組實測）：**`billboard-bn-1991-1992q1-ocr.txt.gz` 只寫了一個 `########` 標頭**，後面 64 期的頁全部串在一起、**無法逐期定位**。**要逐期引用請改用 `billboard-bn-1991-1992-ocr.txt.gz`（103 個標頭，格式正確）**；q1 那份仍可當第二套關鍵字表用（第 704 條）。

@@ -813,3 +813,49 @@ Tommy Smith 的《Standards》vs Lagrène 三人的《Standards》（**同盤名
 `batch-progress/enum/billboard-bn-1991-1992-ocr.txt.gz`（新建）、`batch-progress/enum/cashbox-bn-1991-1992-ocr.txt.gz`（新建）、
 `batch-progress/enum/SOURCES-billboard-cashbox.md`（append 一節）。
 **沒有碰 git、沒有碰 `PROJECT_MEMORY.md`／`seed_cards.json`／`apex_pool.json`／KV／Firestore，也沒有碰 `prop-a.json` 與 a 組寫的 rulings 段落。**
+
+## 第 1063 條（主線，研究 a 組查出）：**兩張改判 1991→1990，並推翻一張的首發地**
+
+研究層在 Somethin' Else 的 TOCJ 號段上找到日本原盤，三件合起來讓號段自洽：
+`5517(1990)→5519(1990-04-18)→5521(1990)→5524→5526(1990-10-24)→5527(1990-12-05)`。
+
+1. **Geri Allen《The Nurturer》1991 → 1990**。第 1029 條表格記「無獨立日本號」是錯的——
+   日本原盤是 **Somethin' Else `TOCJ-5526`，Discogs `released` 欄 `1990-10-24`（完整日期）**，
+   jazzdisco 的 Geri Allen 目錄與維基本盤條目各自獨立記同一個號、同一年。
+   **`year` 與 `label` 已改，可逆（只動兩個卡單欄位）。**
+2. **Ralph Peterson《Presents The Fo'tet》1991 → 1990**。同一件事的第二例，**證據弱一級**
+   （只有年、沒有完整日期、無紙本）：日本原盤 **`TOCJ-5521`**，Discogs 兩筆都標 1990，
+   jazzdisco 獨立記「TOCJ-5521 1990」、且自己對美版年份打了問號。**可逆。**
+3. **Stanley Jordan《Stolen Moments》年份不變（1991），但第 1029 條的「首發地美國」推翻**：
+   日本 **`TOCJ-5531`《Stairway To The Rainbow》，released 1991-04-26**，軌目／長度／班底／執行製作
+   與美版逐項相同，**比美版新片欄（BB 1991-11-30）早七個月**。
+   ⚠ **這是本批第一個「同碟兩個盤名」案例，`chk-prop` 與跨批去重都抓不到**
+   ——**《Stairway To The Rainbow》已加進 `queryAlias`。**
+
+## 第 1064 條（主線）：**「新片欄沒印 LP」不能反推沒有黑膠**
+
+派工信要求逐張查清載體。結果：**1990–91 仍有黑膠原壓的至少 5 張**
+（Time on My Hands `B1-92894`、Renee Rosnes `B1-93561`、My Backyard `B1-93840`、
+It's Supposed to Be Fun `B1-93841`、Acoustic Moments 歐洲 `7952631`，另 Dream Keeper 日本 `DIW 8045`、
+Straight to My Heart 希臘 LP），其餘為 CD（＋卡帶）首發。
+
+⚠ **反過來的教訓**：**Billboard 新片欄的載體欄不完整**——**Time on My Hands 只印 CD／CA，卻確實有黑膠**。
+**後批不可用「新片欄沒印 LP」反推沒有黑膠。**
+
+## 第 1065 條（主線）：**兩處軌數／軌目訂正，與撞陳列的數字修正**
+
+- **《The Nurturer》是 9 軌，不是第 1034 條寫的 10 軌**：Discogs 美日兩地原壓都是 9 軌，
+  **MB 的第 10 個軌名是多出來的**（`track-count` 9 才對）。
+- **《Eliane Elias Plays Jobim》以 11 軌為準**：日本原盤本身就把〈Don't Ever Go Away〉排了兩次
+  （第 4 軌 8:26 長版、第 11 軌 2:59 短版），MB 的 12 軌是又拆了一次。
+- **《Nights at the Keystone, Volume 3》：第 1027 條的「四軌與池中 19 張零重疊」在軌名層面不成立**
+  ——〈You've Changed〉↔ seed《Doin' Allright》、〈Body and Soul〉↔ seed《The Panther!》與《Homecoming》、
+  〈As Time Goes By〉↔ seed《The Other Side of Round Midnight》。
+  **四處全是同名不同錄音，內容零重疊、並存成立，但四卡 risk 要互指**
+  ——**寫作層絕不得把本盤的〈Body and Soul〉與《Homecoming》那個現場混為一談。**
+- **《At Montreux》vs 池中 Montreux 群的數字修正**：第 1027 條說「五張 1974 年《Live at Montreux》」，
+  實掃 seed 是**六張帶 Montreux 的卡、其中只有四張是 1974 年的**（另兩張是 Bill Evans 1968 與 Keith Jarrett 2007）。
+  本盤七軌與其中五張零軌名重疊（Ronnie Foster 那張 MB 查不到軌目，只能以藝人／年份／廠牌排除）。
+- **《Stolen Moments》vs 池中兩張同名盤**：與 Oliver Nelson 1975、Mark Murphy 1978 的交集只有
+  〈Stolen Moments〉一個曲名（三張都是 Nelson 的作品，長度 8:17／7:52／5:47，錄音完全不同）。
+  **內容零重疊、三卡並存、risk 互指；正文不得把盤名由來寫成翻唱 Nelson 那張專輯。**
