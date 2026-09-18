@@ -1096,3 +1096,146 @@ Joona Toivanen，義大利的 Boltro、High Five Quintet、Musica Nuda），**�
 **機器掃完一定要逐筆人工比對盤名、年份與 `copyright` 欄**，否則救回的比查無更糟。
 
 **c158 串流最終：ready 32／37，未 ready 5**（Golden Striker／40°／NY-1／A Little Moonlight／Rosnes 同名盤）。
+
+## 第 1560-D 條（主線）：**c158 研究 a 組交件——19 張全 full、`yearVerified` 改判 0、src 非 https 0、QA 零警告**
+
+**五層證據命中**：MusicBrainz 16／**Discogs 原壓群 18（地基）**／紙本 Billboard 14／
+網路來源（維基・評論站・官方）18／Apple 當 `src` 只 1（Apple 的資料寫進 `yearVerified` 與 `notes`，不當正文素材）。
+
+⚠ **「紙本零命中 5 張」這次是真的零**（Toutakoosticks／Viva Caruso／Kaanaanmaa／Cinematique／40°）。
+研究層照第 1134／1245／1490 條換拼法重查一輪，**排除了三個假陽性**：
+`uchard`→Ric Louchard 與 Bouchard 兄弟、`erko`→Steve Berkowitz、`oltro`→**OCR 把 `Arbitron` 拆成 `ArOltron`**；
+另用目錄號裸數字 `34595`／`35986`／`90832`／`80609` 反查三年皆 0。
+**→ 這是本線第一次「紙本零命中」經過完整反查後仍然成立。記下來，免得後批重跑。**
+
+## 第 1560-E 條（主線，**裁定；收窄第 1511 條**）：**Paul Jackson, Jr. 的禁令範圍改寫**
+
+第 1511 條原文是「他是 Michael Jackson、Whitney Houston 的錄音室吉他手，但那與本張無關，正文不得借用」。
+**研究層主張該禁的是「把那些人寫成這張碟的班底」，不是「不能寫他的生平」。**
+
+**裁定：採納，第 1511 條收窄如下。**
+- **禁**：把 Michael Jackson／Whitney Houston（或任何他當過錄音室樂手的對象）**寫成本碟的班底、客座或關聯**，
+  以及任何「他替某某彈過吉他所以這張怎樣怎樣」的推論。
+- **准**：他本人**有來源的傳記事實**——童星出身（影集《Good Times》裡的 Tank）、洛杉磯錄音室資歷。
+- 理由：**(甲) 可逆**（是卡單值不是卡池結構）；**(乙) 原禁令的目的是擋借名，不是擋人物本身**；
+  **(丙) 本碟的編制欄本來就薄**（Discogs／MB／Apple 三處全空），把生平也禁掉等於讓這張沒東西可寫。
+
+⚠ **同時撤下第 1391／1511 條的「第五個完全查不到樣本」**：
+**JazzTimes 的評介點名了兩位並指明軌次**——〈Back at One〉人聲是**他女兒 Lindsay**、
+〈Changed〉由 **Jackson 本人唱主唱、Billy Preston 彈 B3 管風琴與 Wurlitzer**。
+**這是第 1367 條家族的新成員：三個資料庫全空，但樂評文章裡有逐軌編制。**
+
+## 第 1560-F 條（主線，**裁定；收窄第 1507 條**）：**Studio 26 只認「同名」，不斷言城市**
+
+第 1507 條把 Huchard 與 Boltro 兩張的 `Studio 26` 直接當成同一間。
+**實際上 Huchard 那筆 Discogs 只寫 `Studio 26`、沒有城市；Boltro 那筆才逐字 `Studio 26 in Antibes`。**
+
+**裁定：正文可寫「同一間錄音室」，但不得斷言城市。** 理由：**(甲) 可逆**；
+**(乙) 兩張同年同廠牌同一批法國製作班底，同名同一間的機率高，但「機率高」不是來源。**
+
+## 第 1560-G 條（主線，**補進第 1560-C 條；對後批很有用**）：**芬蘭線的碟在非芬蘭市場是以英文盤名發行的**
+
+**Perko《Kaanaanmaa》2003 年在歐洲的發行名是《Land of Canaan – Northern Hymns》**
+（Discogs 9524223，**目錄號從 `557422` 換成 `594552`，九軌曲名全譯英文**）。
+
+**→ 這才是「八市場全 0 命中」的真正原因**——**非芬蘭市場根本沒有 `Kaanaanmaa` 這個字串**，
+不只是店面清單缺 fi 而已。**第 1560-C 條的診斷只對了一半。**
+
+**→ 後批通則：北歐（尤其芬蘭）掛名的碟，店面與紙本都要多試一組英文盤名。**
+本線還有 Trio Töykeät、U-Street All Stars、Joona Toivanen、Emma Salokoski 等多張，**c169／c170 也有。**
+
+## 第 1560-H 條（主線）：**封面——5 張替代來源全找到，另抓到兩張「有圖但圖是錯版」**
+
+| 卡 | 來源 | 狀態 |
+| --- | --- | --- |
+| Huchard《Toutakoosticks》 | Discogs 6088055 primary（600×593） | ✓ 目視核過 |
+| Moran《Modernistic》 | ⚠ 策展層指定的 **2562105 `images` 是空的**；改走 master 381095 → **歐版 15654256**（同目錄號） | ✓ |
+| Doky《Cinematique》 | Discogs 9529788 primary（500×500） | ✓ |
+| **Boltro《40°》** | 兩個候選都不乾淨 | **主線裁定：取法國宣傳盤 8203794 的第一張 secondary 並裁切**（零售 3473415 是 CD 盒斜拍且貼著義大利雜誌 `CD DEL MESE` 黃貼紙，**貼紙不可去**；宣傳盤那張只是拍在桌面上，裁切即可） |
+| Paul Jackson, Jr.《Still Small Voice》 | Discogs 10588366 primary（600×598） | ✓ |
+
+**另外兩張原本「有圖」的也核了版式**：
+- ⚠ **Ron Carter《The Golden Striker》的 CAA 圖不能用**——目視確認是**俄版 Gala Records 壓片**
+  （左下角紅底西里爾字母的俄語發行區域貼紙、右下角 `Copy Controlled` 標記、色調被調白）。
+  **改用 Discogs 美版 2106943 的 primary（596×600，乾淨）。**
+  **這是第 1514 條「研究層要核版式」第一次真的抓到問題。**
+- ✅ **Chucho《Fantasía cubana》的 CAA 可用**，策展層的疑慮不成立（圖雖掛在空殼 release `fa8bef32`，
+  但目視就是零售盤封面：黃底棕櫚樹、底部 `VARIATIONS ON CLASSICAL THEMES`、Blue Note 標）。
+
+## 第 1560-I 條（主線）：**串流——兩張實查、零張救回，查法已跑到盡頭**
+
+- **Ron Carter《The Golden Striker》維持 `unavailable`**：`lookup?upc=` 三個 barcode
+  （美 `724359083223`／歐 `724359083124`／日 `4988006807754`）× **30 個店面 ＝ 90 次查詢，`resultCount` 全部 0**；
+  `search` × 30 店面只回三筆 **IN+OUT 廠牌**的碟（2017／2017／2012，軌數 10／8／5 對不上本碟 9 軌），**全退**。
+- **Flavio Boltro《40°》維持 `unavailable`**：`lookup?upc=` 兩個 barcode × 30 店面 ＝ 60 次全 0；
+  `search` × 30 店面全零命中；**藝人目錄 10 個店面各回 21–27 筆逐筆讀完，沒有任何 2003 年 Blue Note 盤**。
+- **c158 串流維持 ready 32／37。**
+
+## 第 1560-J 條（主線，**硬錯誤三處，下游會直接抄錯**）
+
+1. **⚠⚠ MMW《Uninvisible》的 mbNote 軌目整個錯**，而且**兩個曲名是錯的**：
+   第 9 軌是〈**Reprise**〉不是〈Ten Dollar High (Reprise)〉、第 12 軌是〈**First Time Long Time**〉不是〈First Light〉。
+   研究層回問 MB release `933fe97b`，**Discogs 252785 與英文維基三邊一致**。正確序已寫進 facts。
+2. **Paul Jackson, Jr.《Still Small Voice》的「編制完全查不到」不成立**（見第 1560-E 條）。
+3. **Huchard 第 8 軌是〈Bop chez Bob〉**（Bop，不是 Bob），策展層 mbNote 寫成〈Bob Chez Bob〉。
+
+## 第 1560-K 條（主線）：**編制漏人三張、日期鏈修正四處、獎項三張全部分不清入圍與得獎**
+
+**編制漏人（都是有名字的人）**
+- **Lovano《Viva Caruso》漏了 Judi Silvano**（第 5・8 軌唱、第 11 軌唱並吹長笛）＋約十人
+  （Billy Drewes／Herb Robertson／Gary Valente／Dick Oatts／Helen Campo…）——**策展層只抄了 Discogs credit 欄**，
+  英文維基的 Personnel 節多得多。⚠ **兩份名單的軌號分配有出入，正文不指定軌號。**
+- **MMW《Uninvisible》漏了 Antibalas 五人管樂群**（只在 1・10 兩軌）以及 Danny Blume、Brad Roberts、Eddie Bobé。
+- **Norby《First Conversation》漏了 Per Jørgensen**（挪威小號兼和聲，第 5・8 軌）
+  ——**而他正是 Billboard 那段報導裡被點名的四個人之一**；另漏錄音師 **Jan Erik Kongshaug**（Rainbow Studio／ECM），
+  **這解釋了本碟為什麼帶 ECM 味**。⚠ 但「整張在 Rainbow Studio 錄」查不到來源，**已擋掉**。
+
+**日期鏈**
+- **Terrasson《Smile》**：策展層說「2003-03-08 才上榜」，**實查 `BB-2003-01-25` 就在 Top Jazz Albums 上**
+  （另 02-08、03-08）；大寫 `TERRASSON` 反查 2002 年 0 次、2003 年 5 次。**落差是三個月不是五個月。年份仍 2002。**
+- **⚠ Ron Carter《The Golden Striker》的首發市場是日本**：英文維基逐字
+  「originally released on the Japanese Somethin' Else label」；**Discogs 日版 11768554 `released` 是 `2003-01-16`、
+  美版是 `2003-08-19`，差七個月**。依第 1487 條要用首發市場的——**策展層的「月份三說」其實是四說**
+  （日版 1 月／廣告 OUT NOW 5 月／MB＋美版 8 月／日版 notes 的日期碼 `04-1-15`）。**年份仍 2003，正文只寫年份。**
+- **Bill Charlap《Stardust》**：`35985` 反查 2002 年命中 **05-25 與 06-08 兩期**（Top Jazz Albums），
+  **2002 年在榜確立，Discogs 那四筆 2003 全錯。**
+- **Cassandra Wilson《Belly of the Sun》的兩個街頭日屬於兩個市場**：歐版 2002-02-26（**首發市場，取這個**）／
+  美版 2002-03-26。另驗到它在榜橫跨 2002-03-30 → **2003-03-22**（該期 Top Jazz Albums 第 24 名），
+  Billboard 200 最高 155 名屬實。
+
+**獎項（研究層共用規則第一節點名的最高頻錯誤，策展層三處都沒分清）**
+- **Stefon Harris《The Grand Unification Theory》**：第 46 屆葛萊美 Best Jazz Instrumental Album
+  **入圍未得獎**，得獎是 **Wayne Shorter《Alegría》**。
+  ⚠ 英文維基說本碟拿下林肯中心 **Martin E. Segal 獎**，**但該獎制度上頒給藝術家不是單張唱片、找不到第二來源**
+  ——**標 uncertain，正文改寫成「這段時期他拿下」。**
+- **Chucho《New Conceptions》**：同屆 Best Latin Jazz Album **入圍未得獎**，得獎是 **Michel Camilo《Live at the Blue Note》**。
+- **Chucho《Fantasía cubana》**：**是兩個不同的獎、兩次都入圍未得獎**——
+  (a) **第四屆拉丁葛萊美**最佳拉丁爵士專輯（得獎 Paquito D'Rivera《Brazilian Dreams》）、
+  (b) **Billboard 拉丁音樂獎**年度拉丁爵士專輯。
+  ⚠⚠ **這兩張碟的四筆獎項絕對不能合併成「他那兩年拿了幾座」。**
+
+## 第 1560-L 條（主線）：**載體、口徑與四件給寫作層的提醒**
+
+- **載體逐張查完：19 張裡只有 2 張有同期黑膠。**
+  ✅ **Soulive《Soulive》(2003)＝`Blue Note BTE 42805`，本組唯一一張同年 Blue Note 黑膠**；
+  ✅ **MMW《Uninvisible》(2002)＝`Ropeadope Records 0 7567 835761 9`，⚠ 不是 Blue Note 發的，
+  正文提黑膠必須寫明廠牌**。**《Belly of the Sun》的黑膠是 2013 Pure Pleasure 與 2018 韓版圖畫盤，都不算原盤。**
+  另：**Bill Charlap《Stardust》有同年混合式 SACD**（美版 `7243 5 41746 2 9`、日版促銷盤 `TOGJ13003`）。
+- **《Uninvisible》的「第幾張」兩說**：Billboard 逐字「the trio's 10th album」、英文維基逐字「seventh studio album」
+  ——**不衝突，但正文只能挑一個並寫明口徑**。錄音地點是 **Shacklyn／Bearsville／The Magic Shop，不是 Woodstock**
+  （那是同批《Next》的）。
+- **《Still Small Voice》的榜位口徑要分清**：英文維基說「No. 29 on the Billboard Jazz Albums chart」，
+  **紙本讀到的是 Top Contemporary Jazz Albums 第 17 名（2003-06-28，前一週 19）**——**兩個不同的榜，不要混用數字。**
+- **《Cinematique》的封面本身就是一條可寫的事實**：客座名單只印六個人，
+  **沒有 Toots Thielemans 與 Biréli Lagrène**——而這兩位才是最大的名字、各只一軌。**剛好能擋掉第 1181 條的寫錯法。**
+- **《Next》的製作人是 Jeff Krasno**（策展層沒寫）；封面上是四個人，第四位是隨團薩克斯風手 Sam Kininger，
+  **但他不是本碟班底，已在 notes 擋掉。**
+- ⚠ **`BB-2003-05-31` p75 的「ON THE HORIZON」欄位不可靠，本組是第三個樣本**：
+  **《Smile》被列在該欄，但它 2002 年 10 月就上市、2003 年 1 月就上榜**（前兩個樣本是 Harris 與 Ron Carter）。
+
+## 第 1560-M 條（主線，**安全邊界，不是策展裁定**）：**Jacky Terrasson 的 2026 年指控一律不寫**
+
+英文維基有一節 2026 年的性侵指控（案件進行中）。**依研究層反向禁令，這是「與作品無關的後續生平事件」
+——不寫、不暗示、不從任何來源撿。**
+研究層**沒有寫進 `facts`／`sound`，只在 `notes` 標出來提醒下游**（主線已驗證：facts 與 sound 零命中）。**處置正確。**
+⚠ **鉤子層與寫作層都會讀到那條 notes，派工詞要再提醒一次。**
