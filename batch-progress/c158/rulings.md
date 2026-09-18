@@ -1025,3 +1025,28 @@ TOCJ-66222（Wilson）／TOCJ-66225（Miles）／TOCJ-66236（Töykeät）／TOC
 4. ⚠ ⚠ **「同一張碟兩個美版目錄號」在 2003–04 是常態（本組 7 次），而且紙本引的常是 MB 沒建的那一個**——**`label` 欄兩個號都要寫**（第 1544 條）。
 5. ⚠ ⚠ **開工先看 `release` 的 `status`**：本組退掉的 Norah Jones 是 `Bootleg`（第 1533 條），另有 6 筆 `Promotion`。**這一段混進非官方發行的機會比前面十三批高。**
 6. ⚠ ⚠ **同一份 slice 裡放同碟兩個 RG，`chk-prop` 事後永遠抓不到**（退掉一筆就只剩一筆，燈不會亮）——**寫 prop 之前先用軌目＋目錄號比對整份 slice**（第 1535 條）。
+
+## 第 1556 條（主線）：**c158 探測鏈跑完——CAA 29／37、串流 29／37，未 ready 的 8 張有 5 張在藝人目錄裡找到候選**
+
+- `fix-rgmbid`：**原本就對 37、修正 0、無 RG 0**（策展層兩組的 rgMbid 一次到位）。
+- **CAA 有圖 29／37、探測錯誤 0**；**8 張真 404**，全部要研究層找替代來源：
+  a 組 5 張（Huchard《Toutakoosticks》／Moran《Modernistic》／Chris Minh Doky《Cinematique》／
+  Boltro《40°》／Paul Jackson, Jr.《Still Small Voice》）、
+  b 組 3 張（Osby《St. Louis Shoes》／Trio Töykeät《High Standards》／Osby《Public》）。
+  ⚠ **Moran《Modernistic》是本批少數有評論存量的盤卻沒有 CAA 圖**——第 1250 條那條「知名度與資料完備度不相關」再現。
+- **串流 ready 29／37**；**未 ready 8 張**，形狀分成三種：
+  - **八市場全 0 命中**（查無專輯頁）：Ferrell《Live in Montreux 91-97》／Perko《Kaanaanmaa》／
+    Carter《The Golden Striker》／Boltro《40°》／Reeves《A Little Moonlight》。
+  - **八市場各 1 命中但 0 軌有 preview**（**第 1371 條的形狀**：專輯頁在、軌是空的）：
+    Solal《NY-1》／Elling《Man in the Air》。
+  - **八市場各 6–12 命中卻 0 軌有 preview**（同第 1371 條，但命中數高得多）：
+    Rosnes & Danish Radio Big Band 同名盤。
+- **`recover-unavailable` 在藝人目錄裡替 5 張找到候選** → `batch-progress/c158/apple-candidates.md`。
+  其中**兩筆是「盤名＋年份」雙中**，研究層優先覆核：
+  **Elling《Man in the Air》`724527810`（2003／12 軌）** 與
+  **Reeves《A Little Moonlight》`716525814`（2003／10 軌）**。
+  ⚠ 但 `Man in the Air` 那一張探測層原本就「有頁無軌」，**候選 id 與探測到的頁可能是同一個**——
+  研究層要**逐軌確認真的拿得到 `previewUrl` 才准採信**（第 1067／1433 條）。
+  ⚠ **Ron Carter《The Golden Striker》的 7 筆候選全是「只憑年份」**，**盤名一個都對不上**，
+  按第 174／175 條一律不得直接採信。
+- **Perko《Kaanaanmaa》／Boltro《40°》／Rosnes 同名盤在藝人目錄裡連候選都沒有**——這三張的串流大概率真的查無。

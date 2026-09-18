@@ -1154,3 +1154,47 @@ TERENCE BLANCHARD／PAT MARTINO／**CHUCHO VALDÉS**／**PAUL JACKSON, JR. *Stil
   **Hits of the World 義大利榜，且廠牌欄寫 `EMI` 不是 Blue Note**（Billboard 國際榜一律寫當地公司，**不可拿來推翻零售盤廠牌欄**）。
 
 **到此合計覆蓋：Billboard 1955→2004 全年（2003 由 c-158 a 抓、2004 由 c-158 b 抓，已無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-159 **a 組**策展層自抓：**Billboard 2005 年全年**）
+
+**c-159 a 組 23 筆裡有 10 筆的年份落在 2005**（Stan Kenton《Viva Kenton!》、Rudy van Gelder 精選、Ayşe Tütüncü Trio《Panayır》、
+Booker Ervin《Tex Book Tenor》、Thelonious Monk Quartet with John Coltrane《At Carnegie Hall》、Gianluca Petrella《Indigo 4》、
+Erik Truffaz《Saloua》、Tania Maria《Intimidade》、Trio Töykeät《Wake》＋**年份改判成 2005 的 Jason Moran《Same Mother》**），
+**而 c-158 b 入庫 2004 之後的缺口正好是 2005**——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2005-ocr.txt.gz` | **2.1 MiB 壓縮 / 4.9 MiB 原文** | **2005-01-08 → 2005-12-24，共 50 期，零 FETCH-FAIL、零 PARSE-FAIL** | **524** | **`2005-01-01`（404，與 1999／2001／2003／2004 同形：年初第一期不在站上）、`2005-12-31`（404）、⚠ `2005-03-26`（404，本棒另試 `Billboard-2005-03-26.pdf` 也 404，前後兩期 03-19／04-02 都在——**這是一期真的缺檔，不是命名問題**）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **依第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR**：**2004 年起的 Billboard PDF 自帶文字層**，全年 50 期下載＋抽字**不到一分鐘**。
+- 目錄是 `Billboard/00s/2005/`、檔名一律 `BB-YYYY-MM-DD.pdf`（**週六**；2005 年的週六是 01-01、01-08…12-31）。
+  ⚠ **索引頁仍 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」第四次生效**（前三次是 1999／2001／2003，c-158 b 的 2004 是第四次，本棒是第五次）。
+
+⚠ **關鍵字集是為 c-159 a 的 23 筆配的**（約 90 個詞 ＋ 目錄號片段 `71780`／`71781`／`76852`／`77102`／`78213`／`78215`／`78602`／
+`81832`／`91717`／`91950`／`95633`／`97353`／`97354`／`5788252`／`597756`／`5977562`／`875248`／`39698`／`079921`／`11439`／`11440`／
+`35173`／`35174`／`39277`／`46446`／`51935`／`335939`／`67365`／`84314`，另含通用詞 `blue note` 的六種 OCR 形變、
+`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／
+`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／`rudy van gelder`／`van gelder`／`tone poet`）
+——**查別的 2005 年碟前先確認關鍵字夠不夠**。
+
+⚠ ⚠ **2005 年最有用的三處**：
+**`BB-2005-10-01` p64 的爵士評介**逐字給出 Monk／Coltrane 卡內基廳盤的
+「Producers: T.S. Monk, Michael Cuscuna Blue Note/Thelonious Records **Release Date: Sept. 27** ... **Discovered only recently, this 1957 concert**」；
+**`BB-2005-08-27` p11 的 BET Jazz 全版廣告**逐字「**In January of this year, a landmark Jazz discovery was made when tapes of the seminal
+Carnegie Hall performance were found in the Library of Congress**」（**判 (甲) 未發行的決定性一句**）；
+**`BB-2005-02-05` p31 的爵士評介**逐字「JASON MORAN Same Mother PRODUCER: Jason Moran Blue Note 7243 5 71780 **RELEASE DATE: Feb. 1**」，
+同年 `BB-2005-01-08` p17 的前瞻與 `BB-2005-02-19` p10 的專訪各再給一次（**把 MB／Discogs 的 2004 改判成 2005**）。
+
+⚠ ⚠ **本棒在 2004 那一份上抓到一個掃描層面的坑，寫在這裡給所有後批**：
+**`BB-2004-05-22.pdf` 的頁數是 136（一般一期約 72–100 頁），實際是兩期合訂**——
+**約第 73 頁起是 2004 年 10 月 23 日那一期**（p81 與 p124 的榜頭逐字印 `OCTOBER 2004 ... 23`，內容是 9 月新發行的唱片）。
+**`BB-2004-10-23.pdf` 另有獨立檔（80 頁）**。**→ 引用 `BB-2004-05-22` 的高頁碼時，日期要改寫成 2004-10-23，否則會把 9 月發行的碟寫成 5 月就上榜。**
+
+⚠ **2005 年 Billboard 的爵士欄仍分兩張榜**（`Top Jazz Albums` 與 `Top Contemporary Jazz Albums`），`Jazz → Jall／Jail` 的 OCR 形變仍在。
+⚠ **本棒實測的查詢坑**：查 `carnegie hall` 大量命中 Jussi Björling 的 1955 獨奏會復刻與波蘭榜的 `Adam Makowicz & Leszek Możdżer Live at Carnegie Hall`；
+查 `coltrane` 常命中 **Ravi Coltrane**；查 `wake` 命中 Bright Eyes《I'm Wide Awake》；查 `paseo` 命中哥倫比亞 vallenato 的次類型名與巴塞隆納的街名。
+⚠ **查無也要記**：`toykeat`／`tania maria`／`intimidade`／`tutuncu`／`panayir`／`perko`／`booker ervin`／`tex book`／`viva kenton`／`central park north`
+**在 2004／2005 兩年皆 0 命中**；`rubalcaba` 兩年只有兩則側手報導、`petrella` 只有一則音樂節現場報導——**這幾張的正文不得引用任何榜位或評介。**
+
+**到此合計覆蓋：Billboard 1955→2005 全年（2003 由 c-158 a、2004 由 c-158 b、2005 由 c-159 a 抓，仍無斷點；⚠ 2005-03-26 一期站上缺檔），Cash Box 1960-11→1996-11（停刊）。**
