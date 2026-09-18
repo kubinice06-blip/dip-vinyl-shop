@@ -714,3 +714,53 @@ Lonesome Road／Beneath the Stars／Unveiled 的評介與榜位部分）——**
   4. **1997 年的紙本已入庫**（`billboard-bn-1997-ocr.txt.gz`，51 期，第 1242 條）——**直接 `zgrep`，不要重抓；
      但關鍵字集是為 c-153 b 配的，查別的碟要重抓。1998 年起仍然沒人掃。**
   5. **`reissueSeries` 欄在 1996 年之後等於沒有**（第 1241 條，本組 22/22 全空）——**一律自己去 Discogs 讀廠牌欄第二／三格。**
+
+## 第 1244 條（主線，研究 a 組查出）：**擋下策展層四處編制錯，其中一組是「兩張卡的錯對調了」**
+
+| 卡 | 策展層寫的 | 實際 |
+|---|---|---|
+| **Mr. Bow-Tie** | Benny Golson 次中音、Steve Turre 長號、Herbie Hancock 鋼琴 | **三人全部不在這張碟上**（Golson 只是〈Stablemates〉的作曲者）；實際是 Gonzalo Rubalcaba（只六軌）／Javon Jackson／Edwin Russel／Steve Kroon／Lewis Nash。**連帶 risk 裡「與《Solos and Duets》兩卡互指」整段作廢。** |
+| **Groove Elation!** | Eddie Harris 次中音 | **是 Billy Drewes**；Eddie Harris 在的是 1993 年的《Hand Jive》。**而 Steve Turre 其實在這張** |
+| **Snide Remarks** | Larry Goldings 管風琴 | **Bill Carrothers 鋼琴＋Larry Grenadier 貝斯**（Billboard 評介自己寫 "trio set" 與 "featured players"） |
+| **The Grand Encounter** | 九位全明星是一支樂隊 | **Bobby Watson 只有〈Cherokee〉、Toots Thielemans 只有〈Besame Mucho〉**（Billboard 專欄逐字 "lending a hand for particular tracks"） |
+
+⚠ **前兩張的錯是「對調」的**——**Steve Turre 與 Eddie Harris 各自被放到對方的碟上**。
+**這是第 1069／1189／1195 條之外的新形狀：策展層不只會多寫人，還會把兩張卡的班底互換。**
+
+另**補回兩處漏人**：《Live at Club Mozambique》漏了 Gary Jones（congas）與 Clifford Mack（tambourine）；
+**《Ancestors》的鼓手 Al Foster 被 Discogs 兩筆條目同時漏掉**
+——**這是「盤面來源反而漏人」的第一例。**
+
+## 第 1245 條（主線）：**第 1134／1188 條第五次——「零命中」是查法問題，不是紙本問題**
+
+**Denise Jannah《I Was Born in Love With You》**：策展層**只查目錄號 `33390`**，判兩刊零命中。
+**改查人名就有 Billboard 1995-01-21 p8＋p74 的整篇簽約報導**——
+Lundvall 1995-01-04 在荷蘭簽下、三張合約、**「late February in New York」開錄**、
+**「Benelux release … May or June」、「August or September … U.S. and Canada」**
+——**廠牌檔期一條就把年份與「荷蘭先、美國後」一起釘死。**
+
+另一例同形狀：**Scofield 那張漏查的原因是 OCR 把目錄號打成 `28012`**
+（補到 Billboard 1995-11-18 p53 爵士榜 NEW 第 21）。
+
+⚠ **通則定死：查紙本一律「目錄號 ＋ 人名 ＋ 盤名」三種字串都掃，任何一種零命中都不算數。**
+本組其餘三張「零命中」以 7／3／3 個字串重掃後**確認為真零命中**（`hino` 的命中全是 `Rhino`，已剔除）。
+
+## 第 1246 條（主線）：**兩個店面的坑與一個 MB 新毛病**
+
+- **店面市場**：**Cæcilie Norby `695534278` 在 us 回 0 首、零預覽，要用 dk／de 才有 12 首**
+  ——**「us 查無」不等於「店面沒有」**（第 254 條三種查法要連市場一起換）。
+- **版式不符**：**《Reach》的 Apple 條目是歐版 9 軌形，卡上是美版 8 軌**——採信前要核版式。
+- **MB 新毛病**：**《Acoustic Boogie》的 `release.date 1995-05-02` 填的是錄音日**
+  （盤面「Recorded on May 2 & 3, 1995」），**真發行日是日版 Discogs 的 1995-07-19**。
+  ——**第 905 條「MB frd 其實是錄音日」的又一例，這次錯在 release 層而不是 RG 層。**
+
+## 第 1247 條（主線）：**載體：本段「CD 為主」在本組有三個例外**
+
+- **《Live at Club Mozambique》同期就有雙片黑膠**（Billboard 1995-04-08 p67 廣告逐字 `(TWO LPs)`）。
+- **《New Moon Daughter》的黑膠是 Blue Note 外包給發燒廠 Classic Records**（BB 1996-03-30 p67）。
+- **《Memphis To New York Spirit》是 CD 8 軌／黑膠 5 軌，而且來自兩場不同 session**
+  （1970-10-02 與 1969-06-09，編制不同、**兩場都沒有貝斯手**）。
+
+另：**《Acoustic Boogie》TOCJ-5574 與《Mr. Bow-Tie》TOCJ-5575 是連號、同日 1995-07-19 發行、
+同錄音室同班製作**（risk 互指，但錄音是兩次 session）。
+⚠ **Petrucciani 那張的盤名在池中有四張一字不差的同名卡**（`chk-prop` 折鍵不報）——**上架必須帶掛名。**
