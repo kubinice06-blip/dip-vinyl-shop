@@ -1363,3 +1363,42 @@ MB 8、Apple 店面 5（另 3 次負面實查）、CAA 3 次（全 404）。
   Moulin **比利時 Ultratop 2004-10-09 法蘭德斯第 10、瓦隆第 14**，國際發行日紙本寫 Sept 27；
   **Reeves《A Little Moonlight》與 Wilson 分居 2003 年終 Top Jazz Albums 第 24／25 名**；
   Reeves Xmas **2004-12-25 爵士榜第 9 名**；Truffaz 前作《Bending New Corners》**法國金唱片十萬張**。
+
+## 第 1560-Y 條（主線，**第 1499 條升級：殘留這次出現在 `facts` 欄本身**）：**鉤子 a 組抓到四處，其中兩處在 `facts` 裡**
+
+前兩批（c-157）抓到的殘留都在 `sound`／`keyTracks`／`hookCandidates`——**那三欄下游會讀，但至少不是「權威欄」。**
+**這一批有兩處直接殘留在 `facts`，而且都帶著合法的 `src`**：
+
+| # | 卡 | 欄位 | 殘留 | 處置 |
+| ---: | --- | --- | --- | --- |
+| 1 | `Stefon Harris\|The Grand Unification Theory` | **`facts[5]`** | 末句逐字「**本碟替他拿下**林肯中心 Martin E. Segal 獎」 | **改寫成「他在這段時期拿下」＋就地標 `⚠ uncertain：單一來源，且該獎制度上頒給藝術家不是單張唱片`** |
+| 2 | `Paul Jackson, Jr.\|Still Small Voice` | **`facts[4]`** | 整條帶著 Michael Jackson／Whitney Houston／Elton John 等錄音室資歷名單 | **就地加註第 1560-E 條的邊界**（名單只供本機查核；正文可寫童星出身與「洛杉磯最忙的錄音室吉他手之一」，不得把那些人寫成本碟關聯） |
+| 3 | `Joe Lovano\|Viva Caruso` | `facts[2]` vs `sound` | facts 把 Judi Silvano 只掛第 11 軌、維基名單是 5・8・11；`sound` 又寫「盤上是逐軌標的」 | **加 `_mainlineNote`：正文軌次留白**（鉤子層已照辦） |
+| 4 | `Jason Moran\|Modernistic` | `hookCandidates[1]` | 「十三歲以前他只聽嘻哈」**比 `facts[2]`（「一度只愛嘻哈」）說得更滿且無 src** | **改回 facts 的說法** |
+
+⚠⚠ **第 1 項是最危險的一種**：**一條帶 `src` 的 `facts` 裡，前半是真的、末句是錯的。**
+下游代理照規矩「只寫 facts 裡有 src 的東西」，**照樣會寫出錯的獎項。**
+**`src` 保證的是「這句話有出處」，不保證「這句話的每個子句都成立」，更不保證出處本身沒錯。**
+
+**→ 主線自律（第 1499 條升級）**：
+**下「某事實要降級或改寫」的裁定時，除了 `note`／`sound`／`keyTracks`／`hookCandidates`，
+`facts` 欄本身也要就地改寫或加註**——**不能只寫進 `rulings.md` 就以為擋住了。**
+**處置方式優先「就地標註」而非刪除**：`facts` 是本機查核的底本，刪掉會連帶失去有來源的資訊。
+
+## 第 1560-Z 條（主線）：**鉤子 a 組交件數字與四條 src 落空**
+
+**19 張、key 逐字對齊、hook 加權 19–35（上限 50）、note 原始 314–348（上限 350）、校對痕跡 0、
+兩張無串流卡（Golden Striker／40°）的 note 零串流指示、三張獎項全部寫成入圍並點名得主。**
+`qa-batch hooks c158` a 組零警告；`chk-hook-crossgroup c158` **a 組 19 張零命中**。
+
+**主線派工詞有四條在 `facts` 裡查不到 src（全部未寫，處置正確）**：
+1. Lovano「漏了約十人」裡的 **Helen Campo／Dick Oatts／Charles Russo／Kim Lackowski／Michael Rabinowitz／
+   Tom Christianson／John Clark 只在 `notes`**；facts 只有 Billy Drewes／Herb Robertson／Gary Valente／Judi Silvano。
+2. MMW 的 **Danny Blume（吉他）與 Eddie Bobé（打擊）只在 `notes`**；facts 只有 Antibalas 五人與 Brad Roberts。
+3. Terrasson 的 **`BB-2003-01-25` 上榜期只在 `yearVerified`**，facts[4] 只給 8 月 24 日的檔期預告
+   ——**代理採月份級寫法「2003 年 1 月上 Top Jazz Albums」。主線裁定：維持**（`yearVerified` 是研究層自己查證的欄位，
+   月份級的寫法不會超出它能支撐的精度）。
+4. Norby 的「整張在 Rainbow Studio 錄」——**主線已擋，facts 確實沒有**，note 只指派「錄音師之一是 Kongshaug」。
+
+**→ 這四條再次印證第 1494(乙)：研究層把東西放進 `notes`，下游就用不上。**
+**本批 a 組的 `notes` 埋了至少九個有名字的樂手，全部作廢。**
