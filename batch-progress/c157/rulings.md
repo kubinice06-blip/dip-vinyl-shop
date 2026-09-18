@@ -442,3 +442,468 @@ Henri Salvador《Chambre avec vue》**法國榜連續命中**（廠牌欄逐字 
 **第一種全空、第二種（藝人目錄）才中 1**（**Prysm——而且店面把盤名登成「Live」不是「On Tour」**）；**三種查法全落空 1**（Ron Carter）。
 ⚠ **第 1246 條「市場也要換」命中 1 次**（Stefano di Battista：us 市場只回 `feat.` 單曲，jp／fr 才回本張）。
 **CAA：18 張裡 9 張有圖、9 張 0 圖**；**有圖的 9 張裡 2 張的圖來源不是首發壓片**（Written in the Stars 來自日版、Flirting With Twilight 來自德版）。
+
+---
+
+# c-157 b 組裁定（編號 1470–1499）
+
+本段為 **c-157 b 組**（22 筆，**2001 年 18 張、2002 年 4 張**）策展層的裁定，編號 **1470–1487**
+（派工信給的區間是 1470–1499，**1488–1499 未用**）。**a 組的第 1440–1456 條一字未改**，
+**a 組留白的 1457–1469 也未動。** 判準沿用 a 組第 1445 條（廠牌自家紙本）與第 1450 條（聯名順序），
+以及 c-156 的第 1384／1395／1412／1415／1419 條。
+
+---
+
+## 第 1470 條（c-157 b 交件）：**22 筆 → 收 22、退 0；退貨率 0%，是 1985 後十九組裡第一組零退件。原因寫在這裡，它不是「判寬了」**
+
+**本組 22 筆的組成：2001 年的 Blue Note 新錄音 16 張、2002 年的新錄音 3 張、庫存母帶首發 1 張、他廠原盤的 Blue Note 再發 2 張。**
+
+退貨率 0% 的結構性原因有三，都與 a 組 21.7% 的那一組正好相反：
+
+1. **本組幾乎沒有復刻線。** a 組退掉的五張裡有三張出自 `TOCJ-92xx` 紙盒復刻與 Roulette／Capitol 轉來的號段（第 1442／1443 條）；
+   **b 組的 22 筆依目錄號排序落在 `7243 5 27548`～`7243 5 36034` 這一段，那是 2001 年當年的新片號段**，復刻盤根本不在這個區間。
+2. **唯一一張庫存母帶（Grant Green《First Session》）是乾淨的 (甲)**，Discogs notes 逐字「All selections are previously unissued」，不必走 (乙)／(丁) 的灰帶。
+3. **兩張他廠原盤（Stan Getz《Poetry》、Aga Zaryan《My Lullaby》）都是乾淨的 (丙)**——母體分別在 Elektra/Musician 與 Not Two Records，**兩家都是真正的他廠，不是 Blue Note／Liberty／UA／Solid State 的號段**，依判準收、改年份即可，不必退。
+
+⚠ **本組唯一一次真的考慮過退件的是 Dr. John《Creole Moon》（疑似非爵士），判了收，理由見第 1480 條。**
+
+⚠ **第 315 條：22（prop）＋ 0（退表）＝ 22（slice 的 `g: "b"` 筆數）✓。**
+
+---
+
+## 第 1471 條（同批）：**退表 0 筆**
+
+**本組沒有任何一筆被退。** 逐筆確認過的四種退件理由都不成立：
+
+| 退件理由 | 本組的狀況 |
+|---|---|
+| **(乙) 母體號段屬 Blue Note／Liberty／UA／Solid State** | **0 筆**。唯一的庫存盤《First Session》兩場錄音的全部曲目，jazzdisco 只掛在 `7243 5 27548 2 3` 一個號上，**沒有任何一軌曾以 BLP／BST／LT 號發行過** |
+| **(戊) 前置閘（Pacific Jazz／Capitol Jazz／West Coast Classics／Roulette Jazz 復刻線）** | **0 筆**。22 筆的零售盤廠牌欄查完，**沒有一張落在那四條線上**；三張廠牌欄不乾淨的（Dr. John 歐版 Parlophone、Truffaz 的 Kameleon ℗、Moulin 的 Nettwerk）**都用 a 組第 1445 條的第二層證據過閘**，見第 1481 條 |
+| **撞池／撞批次** | **0 筆**。`chk-prop` 四道全過；本棒另用 `catno` 與 `rgMbid` 兩種鍵自己反查過一次，命中的八處全是第 1250 條的裸數字假陽性，見第 1478 條 |
+| **非爵士** | **0 筆退**。**Dr. John《Creole Moon》判收但改曲風**（第 1480 條）；其餘 21 筆的曲風判定沒有爭議 |
+
+---
+
+## 第 1472 條（同批，**重要；(丙) 在 1985 後這一段的頭兩個樣本**）：**《Poetry》與《My Lullaby》——同樣是「他廠原盤、Blue Note 再發」，但一張要改年份、一張不用**
+
+**簡報的收退判準 (丙) 在前十八組都只在 1967–84 那一段用過（Pacific Jazz／Roulette 轉來的原盤）。本組是它在 1985 後這一段第一次生效，而且一次來兩張、形狀相反。**
+
+| | **Stan Getz & Albert Dailey《Poetry》** | **Aga Zaryan《My Lullaby》** |
+|---|---|---|
+| **他廠母體** | **Elektra/Musician 60370-1-E（US 1984 LP）** | **Not Two Records（PL 2002 CD）** |
+| **Blue Note 那一版** | **2001-04-03 US CD，7243 5 28671 2 7**（Discogs format 欄逐字 `Reissue`） | **2010 PL CD，50999 0 94942 2 0**（Blue Note 波蘭分部） |
+| **`slice.json` 原本的 `year`** | **2001** | **2002** |
+| **判後的 `year`** | ⚠ **1984（改判）** | **2002（不變）** |
+| **為什麼一張改一張不改** | **列舉檔把 Blue Note 那一版的年份當首發年了** | **列舉檔的 `note` 欄已先標「BN 首發 2010，原盤 2002 可能他廠（再發）」，年份本來就寫的是原盤年** |
+| **軌數** | **兩版都是 7 軌，完整重發** | **三版都是 10 軌，完整重發** |
+| **`reissuedBy` 欄** | Blue Note（2001 US CD） | Blue Note Poland（2010 PL CD） |
+
+⚠ **兩張都是「完整重發」，所以走 (丙) 不走 (丁)**——(丁) 要的是「部分／不同形狀」，本組沒有那種。
+
+⚠ ⚠ **《Poetry》另外示範了「錄音年不是發行年」**：錄音 1983-01-12（Discogs 2598084 notes），維基與 AllMusic 都寫「recorded in 1983 and released in 1984」，
+**Discogs 六筆 1984 年的原壓／宣傳／俱樂部／歐德版條目一致**——**若誤取 1983，就是本段最常見的「演出日／錄音日汙染」**。
+旁證：**Billboard 1984-07-14 p57 的 Lifelines 訃聞逐字「Albert Dailey, 46, of a respiratory infection June 26 in Denver... had performed and recorded with... Stan Getz」**——Dailey 1984 年 6 月過世，本張是他生前最後的錄音之一。
+
+⚠ **《My Lullaby》的證據層級要特別記**：**紙本零命中**（美國紙本不收波蘭本土盤）、**Discogs 上連 2002 年那一筆 Not Two 條目都沒有**
+（最早只到 2007 年的 Cosmopolis 再發，**但那一筆的 format 欄標著 `Reissue, Remastered`，反證更早有原盤**）。
+**本張因此是本組唯一一張只能靠「MB first-release-date ＋ Discogs 的 Reissue 反證 ＋ 藝人傳記」三層拼起來的碟**——
+三層互相支持但**沒有一層是實體盤面**，`risk` 已寫明，研究層要再核波蘭本地來源。
+
+---
+
+## 第 1473 條（同批）：**(甲) 一筆——《First Session》是本段目前最乾淨的「從未發行」樣本**
+
+**Grant Green《First Session》（Blue Note 7243 5 27548 2 3，2001-02-13，Connoisseur Series 限量）。**
+
+**(甲) 的四種認法裡，本張命中第一種、而且是逐字的**：
+**Discogs 9476134 的 notes 印著「All selections are previously unissued」**（與 c-156 a 第 1385 條那張的認法完全同形）。
+
+**第二層證據（本棒實查，不只看 notes）**：**jazzdisco 的 Grant Green 目錄逐場列出——**
+- **1960-11-16**（Wynton Kelly p／Grant Green g／Paul Chambers b／Philly Joe Jones d）：Just Friends、Sonnymoon For Two、He's A Real Gone Guy、Seepin'、Grant's First Stand，**另有 A Night In Tunisia 與 Jordu 被標 rejected**；
+- **1961-10-27**（Sonny Clark p／Green g／Butch Warren b／Billy Higgins d）：Woody'n You take 4 與 take 7，**另有 Lady Bird 標 incomplete, rejected**。
+**兩場的全部已發行曲目都只掛在 `7243 5 27548 2 3` 一個目錄號上——沒有任何一軌曾以 BLP／BST／LT 號出過。**
+
+⚠ **這場是 Green 在 Blue Note 的第一次錄音，卻被 Alfred Lion 擱置**，兩個月後另錄的管風琴組合盤《Grant's First Stand》（BLP 4064，池中已有，c-138 b）先成了他的出道作。
+**→ `year` 取首次商業發行年 2001，錄音 1960／1961 只寫正文。**
+
+⚠ **(戊) 前置閘**：`Connoisseur Series` 只是系列名，**依 c-156 a 第 1384 條不構成退件理由**；零售盤廠牌欄是 Blue Note 本體（MB label `713c4a95`），過閘。
+
+---
+
+## 第 1474 條（同批，**重要**）：**年份——改判 3 張、覆核成立 19 張；三張改判各走不同的一條判準**
+
+| 卡 | slice | 判後 | 走哪一條 | 決定性證據 |
+|---|---:|---:|---|---|
+| **Stan Getz & Albert Dailey《Poetry》** | 2001 | **1984** | **收退判準 (丙)** | Discogs 六筆 1984 Elektra/Musician 原壓；2001 Blue Note CD 的 format 欄逐字 `Reissue` |
+| **Mose Allison《The Mose Chronicles - Live In London, Volume 2》** | 2001 | **2002** | **簡報 §二「同期紙本 ＞ Discogs 原壓群」（第 1415 條先例）** | Billboard 2002-01-26 p77；Apple 三市場 ℗ 2002；**而上集的紙本評介在 2001-04-14 p30** |
+| **Denise Jannah《The Madness Of Our Love》** | 2002 | **2000** | **三來源三年份，取「宣傳盤年 ＋ 店面真日期 ＋ 評介本文」那一組** | Discogs 11547560 是 **`Advance` 宣傳盤、標 2000**；Apple fr `2000-05-23`；All About Jazz 逐字「In 2000, Jannah became the first Dutch solo artist to release an album on Blue Note」 |
+
+**覆核成立 19 張**，其中 **11 張有紙本街頭日或評介可比對**（見第 1485 條），**8 張只能靠 Discogs 原壓群＋店面＋MB 三層**。
+
+⚠ **本組一次「演出日／錄音日汙染」都沒有真的發生**，但**四張的錄音年與發行年差一年以上**，正文都不得寫混：
+《First Session》（1960／1961 → 2001）、《Poetry》（1983 → 1984）、《Mose Chronicles Vol. 2》（2000-01-21／22 → 2002）、《My Lullaby》（2001-09 → 2002）。
+**另有三張的錄音在前一年**：《Doin' Something》（2000-10）、《Flights of Fancy》（2000-06）、《The Madness Of Our Love》（1999-06）。
+
+---
+
+## 第 1475 條（同批，**重要**）：**《The Mose Chronicles》兩卷分在同一批的 a／b 兩組，年份卻差一年——而 `slice.json` 把兩卷都寫成 2001**
+
+**本批 a 組的清單上是 Volume 1，b 組的清單上是 Volume 2**（`slice.json` 依年份→目錄號排序，兩卷的 `year` 欄都是 2001，目錄號 `7243 5 29747 2 6` 與 `7243 5 29748 2 5` 連號）。
+**實查後兩卷的年份不同：**
+
+| | **Volume 1（a 組）** | **Volume 2（b 組）** |
+|---|---|---|
+| **目錄號** | 7243 5 29747 2 6 | 7243 5 29748 2 5 |
+| **軌數** | **22** | **17** |
+| **Billboard** | ⚠ **2001-04-14 p30 紙本評介**（逐字「PRODUCER: Ben Sidran Blue Note 7243 5 29747 2 6」） | ⚠ **2002-01-26 p77**（逐字「visit Billboard.com for CD reviews of... The Mose Chronicles - Live in London Vol. 2 (Blue Note)」） |
+| **Apple** | 724031388，**℗ 2001**，releaseDate 2001 | 724779664，**℗ 2002**，releaseDate 2002 |
+| **Discogs** | 2001 | **2001**（⚠ 與 Vol. 1 同值，是整群抄盤面 ℗ 的典型） |
+| **MB frd** | 2001 | **2001** |
+| **判** | **2001** | ⚠ **2002（改判）** |
+
+**→ 兩卷出自同一組演出（2000-01-21／22 倫敦 Pizza Express），但出版隔了九個月；軌目零重疊，各算一張，`risk` 互指。**
+⚠ **`chk-prop` 對這兩卷會報「同掛名盤名詞元包含」——那是 Volume 拆盤的預期內偽陽性，不是撞卡**（同批 a 組已先標明）。
+⚠ **這一條也是給後批的通則：`slice.json` 把連號的 Volume 兩卷寫成同年時，不要相信；兩卷要各自找紙本。**
+
+---
+
+## 第 1476 條（同批，**重要**）：**《The Madness Of Our Love》——MB 說 2002、Discogs 說 1999、店面說 2000，三個來源三個年份**
+
+**這是本段目前唯一一張「三來源三年份」的碟，判法記在這裡。**
+
+| 來源 | 值 | 本棒的處置 |
+|---|---|---|
+| **MB frd（唯一一筆 release，GB）** | **2002-11-04** | ⚠ **判為錯**。理由是**號段**：catno `7243 5 22642 2 3` 在 Blue Note 的 `7243 5 2xxxx` 段裡遠早於本批 2001 年的碟（Grant Green `527548`、Lovano `527618`、Dianne Reeves `527694` 都是 2001 年 2–4 月）——**號段本身就否定 2002** |
+| **Discogs 443865（荷蘭）與 12097991（美國）** | **1999** | ⚠ **只算一個資料點**：**兩筆的 catno 與 barcode 完全相同，是同一個壓片被建成兩筆**；而錄音正是 1999-06-01／02（Avatar Studios），**這是第 550／570／708／1191 條「整群抄盤面 ℗／錄音年」的標準形狀** |
+| **Discogs 11547560（美國）** | **2000** | ✓ **format 欄逐字 `CD, Advance, Album, Promo`、catno `CD 7243 5 22642 2 3V`**——**`Advance` 宣傳盤只會早於或同於零售盤，不可能晚兩年** |
+| **Apple fr 724069512** | **2000-05-23** | ✓ **是具體日期不是年頭回填**（copyright 已轉成「℗ 2003 Universal Music B.V.」，是後年版權轉手，第 1426 條的同形） |
+| **All About Jazz 評介本文** | **2000** | ✓ 逐字「In 2000, Jannah became the first Dutch solo artist to release an album on Blue Note with The Madness of Our Love」 |
+
+**→ 取 2000。** 三個指向 2000 的來源（宣傳盤年、店面真日期、評介本文）**彼此獨立**；指向 1999 的只有一個壓片、指向 2002 的只有 MB。
+⚠ **紙本完全幫不上忙**：`billboard-bn-1998/1999/2000-ocr.txt.gz` 查 `Jannah` 全部 0 頁（荷蘭盤不上美國榜）。
+⚠ **`year` 是卡單值、可逆**；若研究層查到荷蘭本地來源證明 1999 年底已上市，改回 1999 的成本極低。
+⚠ **本條給後批一句**：**`Advance` 宣傳盤的年份是很好的年份下界——它不會晚於零售盤**；遇到 Discogs 年份打架時先找有沒有宣傳盤條目。
+
+---
+
+## 第 1477 條（同批，**重要；第 1415 條的鏡像，而且這次判相反**）：**《Life on Earth》——紙本評介在 2002，仍取 2001**
+
+**c-156 b 的第 1415 條立了一個判例：「Discogs 有三筆 1999 年的原壓條目，仍取 2000，因為同期紙本壓過 Discogs 原壓群」。本張的形狀一模一樣但判相反，差別只有一個。**
+
+| | **《Live in Chicago》（c-156 b，第 1415 條）** | **《Life on Earth》（本組）** |
+|---|---|---|
+| **Discogs 原壓群** | 三筆 1999 | **四筆 2001**（加拿大 3419971、美國 11725011、歐版 5079451、宣傳 CDr 7847412） |
+| **MB frd** | 1999 | **2001** |
+| **紙本** | ⚠ **Billboard 2000-01-08 p32 逐字「due Jan. 11」——明確街頭日** | ⚠ **Billboard 2002-01-19 p26 只有一篇評介，沒有街頭日** |
+| **店面 ℗** | 2000 | **2002 EMI Music Canada** |
+| **另有旁證** | 無 | ✓ **Billboard 2001-06-09 p53 的 Blue Note 整頁廣告逐字把她列進「LOOK FOR NEW ALBUMS LATER IN 2001 FROM: ... RENEE ROSNES」** |
+| **判** | **翻成 2000** | **不翻，取 2001** |
+
+**→ 差別就是那一句：紙本要壓過 Discogs 原壓群，得給出街頭日或發行公告，不能只有一篇評介。**
+**評介的日期是「編輯部什麼時候寫完」，不是「唱片什麼時候上市」；而廠牌自己的整頁廣告是發行公告，份量高於評介。**
+
+⚠ **首發地是加拿大**：Billboard 2001-06-09 p40 逐字「The staunchest major-label supporter of domestic jazz is EMI Canada, which directly signed pianist Rosnes... released under the EMI/Blue Note banner in Canada」
+——**加拿大先出、美國隔年跟進**，與「Discogs 四筆全 2001、Apple ℗ 2002」這個組合完全吻合。
+⚠ **`year` 可逆**；2002 說的四項證據（紙本評介 2002-01-19、Apple ℗ 2002 EMI Music Canada、AllMusic 2002、MB 數位筆 2002-01-01）已全寫進 `risk`。
+
+---
+
+## 第 1478 條（同批，**重要**）：**第 1250／1422 條「`catno` 欄不能直接拿去反查」在本組應驗四次，而且四次各是不同的壞法**
+
+| # | 卡 | 列舉檔／MB 的 `catno` 欄 | 它其實是什麼 | 真正的零售目錄號 |
+|---|---|---|---|---|
+| 1 | **Joe Lovano《Flights of Fancy》** | **`D 138769`** | ⚠ **BMG Direct 俱樂部版的編號** | **Blue Note 7243 5 27618 2 1** |
+| 2 | **Bob Belden《Black Dahlia》** | **`23883`** ＋ **`724354174520`** | ⚠ **前者是被壓過的裸數字（MB 只建了宣傳盤）；後者是 2010 年 SACD 的 barcode 被當成 catno** | **Blue Note 7243 5 23883 2 5** |
+| 3 | **Erik Truffaz《Mantis》** | **`724353671129`** | ⚠ **barcode 直接抄進 catno 欄**（MB release b2276751） | **Blue Note 7243 5 35101 2 1** |
+| 4 | **Marc Moulin《Top Secret》** | **四個值，前導 0 與空白位置全不一致**（`07243 534129 2 0`／`07243 536034 2 7`／`07243 540385 0 1`／`7243 5 36034 2 7`） | ⚠ **同一張碟的三個版本 ＋ 一個 2002 年雙碟版，混在同一欄** | **Blue Note 7243 5 36034 2 7**（barcode 724353603427） |
+
+⚠ ⚠ **本棒另外用 `catno` 的裸數字對整個卡池（`seed_cards.json` ＋ `desc-tools/batches/cards/` ＋ 所有 `batch-progress/c1*/prop-*.json`）反查過一次，命中八處、逐筆核完真的同碟 0 筆**：
+`27694` 撞 c-155 a 的 Kurt Elling 條目內文（另一個再壓編號 `27694215`）、`31586` 撞 c-114 a 的 Apple artist id `193315862`、
+`36034` 撞 c-101 a 的 MBID `46236034-…` 與 c-117 a 的 MBID `1de39052-…`、`27618` 撞 c-151 a 的 Discogs release id `7027618`、
+其餘四處在 `desc-tools/batches/cards/` 的長數字裡。
+**→ 第 1250 條再補一句：裸數字反查的假陽性不只來自別的目錄號，更多來自 MBID／Discogs id／Apple id 這些長數字的子字串。判同一張碟只有「目錄號＋廠牌」有效。**
+
+⚠ **本棒也用 `rgMbid` 對所有 `prop-*.json` 反查過一次：命中 0，無重複 RG。**
+
+---
+
+## 第 1479 條（同批）：**掛名——沿用 16、新字串 4、聯名新造 2、新造分裂 0**
+
+**(A) 沿用池中／批次既有字串 16 張／15 個字串**（`Greg Osby` 兩張）：
+`Grant Green`（seed 25 列）、`Dianne Reeves`（c-148～c-156 七張）、`Mose Allison`（**a 組本批剛立，b 組沿用**）、`Ronny Jordan`（seed ＋ c-156 b）、
+`Gonzalo Rubalcaba`（九張）、`Greg Osby`（八張，本組兩張）、`Jason Moran`（c-155 a ＋ c-156 b）、`Charlie Hunter Quartet`（c-153 b ＋ c-154 a）、
+`Dr. John`（seed 六張含王牌卡 ＋ c-156 a）、`Erik Truffaz`（c-154／c-155 三張）、`Marc Moulin`（seed）、`Renee Rosnes`（六張）、
+`Joe Lovano`（八張）、`Denise Jannah`（c-153 a 兩張）、`Bobby McFerrin`（c-148 a ＋ c-152 b）。
+
+**(B) 新字串 4**：`Soulive`（MB 8b1bdf8a Group）、`Karl Denson`（e841dc87 Person）、`Bob Belden`（938b624b Person）、`Aga Zaryan`（c5e9284b Person）。
+**四個在 MB 反查都只有單一同字串實體，無消歧問題。**
+
+**(C) 聯名新造 2**：`Stan Getz & Albert Dailey`、`Antti Sarpila & Severi Pyysalo`——**兩個都直接照 MB RG 的 artist-credit（兩個 Person 串 `&`），沒有三邊不一致的問題，用不到 a 組第 1450 條的新判準。**
+
+**(D) 新造分裂 0。** 本組有四處「個人／團／聯名並存」，依第 1131 條全部各自保留、不合併也不收攏：
+
+| 池中既有 | 本組新卡 | 處置 |
+|---|---|---|
+| `Charlie Hunter`（c-156 b，個人同名盤） | **`Charlie Hunter Quartet`**（本卡，MB RG credit 就是 Group 60c02ac7） | **兩個字串各自成立** |
+| `The Bob Belden Ensemble`（c-150 a／c-151 a）、`Tim Hagans & Bob Belden`（c-155 b） | **`Bob Belden`**（本卡，個人領班盤） | **三個字串各自成立** |
+| `Bobby McFerrin & Chick Corea`（c-151 a《Play》） | **`Bobby McFerrin`**（本卡，Corea 是側人、盤面掛名只有 McFerrin） | **不得改成聯名** |
+| `Stan Getz`（seed 九張 ＋ c-131 b 兩張，全是個人盤） | **`Stan Getz & Albert Dailey`**（本卡） | **不得收攏到 `Stan Getz`** |
+
+**(E) 收攏 3（第 543／553 條）**：
+**《Supernova》**——Discogs 美歐兩筆原壓的盤面掛名是「Gonzalo Rubalcaba **Trio**」，收攏到池中的 `Gonzalo Rubalcaba`；
+**《Mantis》**——Discogs 三筆原壓的盤面掛名是長形「Erik Truffaz With Manu Codjia, Michel Benita, Philippe Garcia」，收攏到 `Erik Truffaz`；
+**《My Lullaby》**——Discogs 盤面是「Aga Zaryan Featuring Darek Oleszkiewicz, Tomasz Szukalski, Michał Tokaj, Łukasz Żyta」，收攏到領班字串 `Aga Zaryan`。
+**三處的長形／Trio 形都進了 `queryAlias`。**
+
+**(F) ⚠ 店面把掛名寫壞三次，一次都不許回頭改 `artist`（第 528／707／709／865 條）**：
+- **《Inner Circle》**：Apple 的 artistName 是「Greg Osby, Eric Harland, **Jason Morgan**, Stefon Harris & Tarus Mateen」——**`Jason Morgan` 是 `Jason Moran` 拼錯**，jp 市場的「タルス・マーティン」把 Tarus Mateen 也寫錯；
+- **《Black Dahlia》**：Apple **jp 市場**的掛名是「ボブ・ベルデン / ティム・ヘイゲンス」，**把 Tim Hagans 也掛上去**（美法市場只有 Bob Belden）；
+- **《Creole Moon》**：Apple **us 市場**的掛名字串是「**Dr John**」，**少一個句點**（jp／fr 市場都有）。
+
+**(G) 紙本把人名拼錯兩次（第 1424 條的續筆）**：
+**Billboard 2001-06-09 p40 把 `Erik Truffaz` 印成「Eric Truffaz」**（同期 06-02 p90 也是）、**同一頁把 `Renee Rosnes` 印成「Rene Rosnes」**。
+
+---
+
+## 第 1480 條（同批，**重要**）：**曲風——21 張 `['jazz']`、1 張 `['blues','jazz']`；那一張是 Dr. John《Creole Moon》，而且它差一點被退**
+
+**派工信與簡報第一節第 4 點寫「撞到疑似非爵士的，退並寫進 rulings」。本組撞到一張，判了收。逐條寫下來。**
+
+**疑似非爵士的訊號有三個，全部成立**：
+1. **MB release-group 層 `genres` 只有 `blues`、`tags` 是 `blues`／`soul and reggae`——完全沒有 jazz**；
+2. **Billboard 2001-10-27 p31 的評介印在 `BLUES` 欄，不在 `JAZZ` 欄**；
+3. **兩張 Billboard 爵士榜（Top Jazz／Top Contemporary Jazz）2001 年全年零命中。**
+
+**但判收，理由三項**：
+1. **它不在那份 `non-jazz` 排除名單上。** `batch-progress/enum/blue-note-unknown-genre.json` 的 18 筆 `non-jazz` 全是 Dao Dezi、Slawek、Raining Pleasure、Gad Elmaleh 這種冷門歐洲流行盤；
+   **Dr. John 是池中已有七張卡（含一張 `apex: hall` 的《Dr. John's Gumbo》）的既有藝人、而且是 Blue Note 美國本體的正式盤。**
+2. **走同批 a 組第 1452 條的判準 1（同掛名的池中先例壓過一切）**：池中 `Dr. John` 七張的曲風是 rock／jazz+soul／hiphop／jazz+blues／blues+jazz／rock+soul／jazz，
+   **從來就沒有「Dr. John 必須是 jazz」這回事**；**與本張最同形的兩張紐奧良曲目盤（王牌卡《Dr. John's Gumbo》＝`['blues','jazz']`、《Goin' Back to New Orleans》＝`['jazz','blues']`）都是雙曲風**。
+3. **退掉會在 Blue Note 目錄線上留一個無謂的洞**——而 `genres` 是卡單值、**改起來的成本比退件低得多**。
+
+**→ 判：收，`genres` 取 `['blues','jazz']`（與 apex 王牌卡完全同值），blues 在前。**
+
+⚠ **與 a 組退掉的 Henri Salvador《Chambre avec vue》對照，差別在哪裡**：
+**Salvador 那張的 (戊) 前置閘沒過**（廠牌欄 `Source`、℗ 欄 Warner Music France、榜欄 SOURCE/VIRGIN、店面 label 欄 Label Source **四邊一致地都不是 Blue Note**），
+**曲風只是第二個獨立理由**；**Creole Moon 的 (戊) 前置閘過得很乾淨**（美版零售盤廠牌欄是 Blue Note 本體，**而且 Blue Note 自己的秋季新片預告把它列為自家發行**，第 1445 條），
+**只剩曲風一個訊號——一個訊號不足以退件。**
+
+⚠ **其餘三張曲風邊緣的都照第 1419／1268 條收 `['jazz']`、不加第二曲風**：
+**Ronny Jordan《Off the Record》**（MB genres acid jazz／electronic／hip hop／jazz／jazz-funk，Billboard 上的是 `Top Contemporary Jazz`）、
+**Karl Denson《Dance Lesson #2》**（jazz／jazz-funk）、**Soulive《Doin' Something》**（funk／jazz／jazz-funk）。
+
+⚠ ⚠ **一張特別的**：**Marc Moulin《Top Secret》的 MB `genres` 只有 `acid house` 與 `nu jazz`，兩個都不在卡池允許的十種曲風裡，而且完全沒有 `jazz`**
+——**這是本組唯一一張「MB 層沒有 jazz 標籤卻仍判 jazz」的卡**；依據是 **Billboard 2002-06-08 p24 把它歸在 electro-jazz 並與池中已有的 St. Germain《Tourist》並列**（判準 3），
+且 `nu jazz` 折回 `jazz` 是既有作法。**不加 `electronic`。**
+
+⚠ **兩張 MB `genres` 與 `tags` 兩欄全空的**（第 1425 條表第 8 種毛病）：**Antti Sarpila & Severi Pyysalo《New Moods - New Sounds》** 與 **Aga Zaryan《My Lullaby》**
+——`['jazz']` 是依廠牌、編制與曲目（〈Skylark〉〈How Deep Is the Ocean〉／〈Waltz for Debby〉〈Polka Dots and Moonbeams〉）判的，**不是抄 MB**；**Bob Belden《Black Dahlia》** 的兩欄也全空。
+
+---
+
+## 第 1481 條（同批）：**(戊) 前置閘在本組判了 22 次過閘、0 次退；三張訊號不乾淨的都靠 a 組第 1445 條的第二層證據過閘**
+
+**22 筆裡有 19 張的零售盤廠牌欄是乾淨的 `Blue Note` 本體（MB label `713c4a95`）。另外三張的訊號與處置：**
+
+| 卡 | 不乾淨的訊號 | 第 1445 條的第二層證據（廠牌自家紙本） | 判 |
+|---|---|---|---|
+| **Dr. John《Creole Moon》** | **歐版廠牌欄是 `Parlophone`（df7d1c7f）**；Apple copyright 逐字「℗ 2001 Parlophone Records Ltd, a Warner Music Group Company」 | ✓ **Billboard 2001-09-22 p72 逐字「Blue Note offers Songs From the Analog Playground by Charlie Hunter on Sept. 25, along with Dr. John's Creole Moon (Oct. 9)」** | **過閘** |
+| **Erik Truffaz《Mantis》** | **Discogs notes 逐字「(P) & (C) 2001 Kameleon Music」**；Apple copyright「℗ 2001 Foufino Productions」 | ✓ **Billboard 2001-06-09 p40 逐字「Blue Note's first nu touch artist was Swiss composer/trumpet player Eric Truffaz; he is due to follow up... with a new set in the fall」** | **過閘** |
+| **Marc Moulin《Top Secret》** | **北美由 Nettwerk 代理**；Apple copyright「℗ 2003 ... Parlophone Music」 | ✓ **Billboard 2002-06-08 p24 逐字「its September 2001 release on Blue Note worldwide and Nettwerk Productions」** | **過閘** |
+
+⚠ **另有三張的 ℗ 欄不是 Blue Note，但廠牌欄是，依第 1295 條末句一律過閘**：
+**《Beyond Words》歐版**（label-info 同時掛 `Angel Records` d65671f6 與 Blue Note——Angel 是 EMI 的古典部門，與本張的跨界定位有關，**但不得寫成發行廠牌**）、
+**《Life on Earth》數位筆**（廠牌欄是 `EMI Music Canada` 095b5fc8）、**《New Moods - New Sounds》**（Blue Note ＋ EMI 並列）。
+
+⚠ **兩張他廠原盤（《Poetry》的 Elektra/Musician、《My Lullaby》的 Not Two Records）不走 (戊) 前置閘**——
+**前置閘擋的是「Blue Note 家族外的復刻線」，這兩張走的是 (丙)「母體在真正的他廠」，是兩件事。**
+
+⚠ **`Blue Note Compagnie`（`BNS-`）與 `Blue Note Digital`（label `0293ae5c`、barcode 810211 段）在本組零命中。**
+
+---
+
+## 第 1482 條（同批，**重要**）：**撞陳列 14 組 ＋ 軌名撞卡名 28 處（其中一處撞到 apex 王牌）；`chk-prop` 四道全過、一個燈都沒亮**
+
+**(A) 撞陳列 14 組**（第 738／859 條，**逐組都用軌目比對、而且看到 CD 那一層**）：
+
+| # | 本組的卡 | 撞到的 | 軌目比對結果 |
+|---|---|---|---|
+| 1 | **Grant Green《First Session》** | 池中 `Grant Green`《Grant's First Stand》（seed ＋ c-138 b） | ⚠ **第 4 軌曲名就叫〈Grant's First Stand〉**，但那是 1961-01-28 Baby Face Willette 管風琴那場的碟，**內容零重疊** |
+| 2 | **Charlie Hunter Quartet《Songs From the Analog Playground》** | 池中 `Kurt Elling`《Close Your Eyes》（c-152 b） | ⚠ **第 9 軌〈Close Your Eyes〉正是 Kurt Elling 唱的同一首標準曲**——**同曲、不同錄音、不同碟** |
+| 3 | **同上** | 池中 `Charlie Hunter`《Charlie Hunter》（c-156 b） | **兩個掛名字串、兩張不同的碟**（第 1131 條） |
+| 4 | **Mose Allison《Vol. 2》** | **本批 a 組《Vol. 1》** | **同一組演出、軌目零重疊**（22 軌 vs 17 軌） |
+| 5 | **Joe Lovano《Flights of Fancy: Edition Two》** | 池中 `Joe Lovano`《Trio Fascination, Edition One》（c-155 b） | **系列前後集，軌目零重疊；Apple 同一次查詢同時回兩張** |
+| 6 | **Greg Osby《Symbols of Light》** | **本組《Inner Circle》** | **同掛名、前後作，班底不同（四重奏＋弦樂 vs 五重奏加顫音琴）** |
+| 7 | **Jason Moran《Black Stars》** | **本組 Osby 兩張** | **Moran 是 Osby 兩張的鋼琴手、Osby 是本張的製作人——人員交錯、場次全不同** |
+| 8 | **Bob Belden《Black Dahlia》** | 池中 `Tim Hagans & Bob Belden`《Re-Animation Live!》（c-155 b）與 `The Bob Belden Ensemble` 兩張（c-150 a／c-151 a） | **四張分屬三個掛名字串、內容全不同** |
+| 9 | **同上** | **本組 Joe Lovano《Flights of Fancy》** | **Lovano 在本張是逐軌獨奏者，不是領班** |
+| 10 | **Denise Jannah《The Madness Of Our Love》** | **本組 Bob Belden《Black Dahlia》** | ⚠ **Belden 是本張的製作人、Ira Coleman 兩張都彈貝斯——不同場、不同身分** |
+| 11 | **Bobby McFerrin《Beyond Words》** | 池中 `Bobby McFerrin & Chick Corea`《Play》（c-151 a） | **Corea 在本張是側人；兩張軌目零重疊** |
+| 12 | **Ronny Jordan《Off the Record》** | 池中 `Ronny Jordan`《A Brighter Day》（c-156 b） | **前後作，本張刻意背離前作的 smooth jazz 路線** |
+| 13 | **Dr. John《Creole Moon》** | 池中 `Dr. John`《Duke Elegant》（c-156 a） | **同為 Blue Note 期、內容全不同（一張翻 Ellington、一張全原創）** |
+| 14 | **Karl Denson《Dance Lesson #2》** | 池中 `Medeski Martin & Wood` 各卡（c-155／c-156） | **Chris Wood 是 MMW 的貝斯手，在本張是客座** |
+
+⚠ **`chk-prop` 只報了三行「同掛名盤名詞元包含」（Mose 兩卷互報兩行、Lovano Edition One／Two 一行），三行都是上表 #4／#5 的預期內偽陽性，不是撞卡。**
+⚠ **`Gonzalo Rubalcaba《Supernova》` 與池中 `Wayne Shorter《Super Nova》` 在 `chk-prop` 的正規化下盤名同鍵，只因掛名不同才沒亮燈**（第 611 條第五種盲區）。
+
+**(B) 軌名撞卡名 28 處，分布在 22 張裡的 15 張**（第 1181／1192 條第六種盲區）：
+
+| 本組的卡 | 處數 | 撞到的池中卡名 |
+|---|---:|---|
+| **Dianne Reeves《The Calling》** | 4 | Speak Low（`山本剛トリオ`／`南佳孝` 兩張）、Obsession（`EXO`）、If You Could See Me Now（`Kenny Drew Trio`）、Embraceable You（`Chet Baker`，c-152 a） |
+| **Stan Getz & Albert Dailey《Poetry》** | 4 | Confirmation（`Tommy Flanagan`／`Jimmy Smith`）、Tune Up（`Sonny Stitt`）、A Night in Tunisia（`Art Blakey and the Jazz Messengers`）、'Round Midnight（`Alan Broadbent`） |
+| **Bob Belden《Black Dahlia》** | 2 | ⚠ **Genesis 一首就撞了六張同名卡**（`Busta Rhymes`／`Larry Heard`／`The Soul Children`／`Wendy & Bonnie`／`Charles Sullivan`／`Elvin Jones`）、City of Angels（`The Miracles`） |
+| **Grant Green《First Session》** | 2 | Just Friends（`笠井紀美子`）、Grant's First Stand（`Grant Green` 自己） |
+| **Soulive《Doin' Something》** | 2 | Evidence（`Steve Lacy`）、Romantic（`The Human League`《Romantic?》） |
+| **Charlie Hunter Quartet** | 2 | Spoonful（`Jimmy Witherspoon`）、Close Your Eyes（`Kurt Elling`） |
+| **Erik Truffaz《Mantis》** | 2 | The Point（`Harry Nilsson`《The Point!》）、No Fear（`John Stevens / Trevor Watts / Barry Guy`） |
+| ⚠ **Aga Zaryan《My Lullaby》** | 2 | Waltz for Debby（`Bill Evans`）、**I Put a Spell on You（`Nina Simone`，seed，`apex: hall`）** |
+| **Denise Jannah** | 2 | Round Midnight（`Alan Broadbent`）、My Favorite Things（`John Coltrane`） |
+| 其餘 6 張各 1 處 | 6 | Supernova（`Wayne Shorter`）／Wild Is the Wind（`Nina Simone`）／Who Are You?（`The Who`）／Out Front（`Booker Little`）／In My Room（`Jacob Collier`）／Infant Eyes（`Doug Carn`） |
+
+⚠ ⚠ **本組撞到 apex 王牌一次**：**Aga Zaryan 第 6 軌〈I Put a Spell on You〉撞 `Nina Simone`《I Put a Spell on You》（`apex: hall`）**——
+同名曲撞盤名、不是同碟，**但上架比對與試聽必須連掛名帶目錄號**（c-156 兩組合計撞到兩處 apex，本組一處）。
+⚠ **另一張 apex 卡 `Dr. John's Gumbo` 與本組的《Creole Moon》同掛名，但沒有任何軌名相撞。**
+
+⚠ **第 1275 條（翻唱整張專輯的碟要查池中有沒有原盤）在本組不成立**：**《The Calling》是 Sarah Vaughan 致敬盤不是翻唱某一張專輯**，池中也查無對應原盤需要互指；其餘 21 張都不是整張翻唱。
+
+---
+
+## 第 1483 條（同批，**重要**）：**編制欄——22 張裡 1 張「完全查不到」、13 張必須寫「逐軌變動」、8 張可以寫固定編制**
+
+| 類別 | 張數 | 逐筆與來源 |
+|---|---:|---|
+| ⚠ **完全查不到** | **1** | **Ronny Jordan《Off the Record》**：**Discogs 5242162／364745 兩筆的 credit 欄一個樂手都沒有**（只有 A&R、美術、工程、母帶、經紀、造型），**MB 兩個端點也沒有 relationship**——**正文一律不得列班底**。這是第 1391 條「完全查不到」的第三個樣本（前兩個是 c-156 b 的四張與 c-157 a 的《Flirting With Twilight》） |
+| ⚠ **必須寫「逐軌變動」** | **13** | **Flights of Fancy**（⚠ **四組三重奏＋兩軌雙三重奏，而 Discogs credit 欄只列製作／錄音／母帶三個人，十位樂手全靠維基與 AllMusic 的逐軌註**）／**Songs From the Analog Playground**（⚠ **四位歌手逐軌分配：Mos Def 第 1・11 軌、Theryl de'Clouet 第 3・8 軌、Norah Jones 第 5・13 軌、Kurt Elling 第 6・9 軌；Discogs credit 欄完全沒有他們**）／**Life on Earth**（**十四人，其中兩位貝斯手、三位鼓手不可能同時在場**）／**Black Dahlia**（**「Featuring, Soloist」那一組是逐軌獨奏者、不是樂團編制**）／**The Calling**（**核心六人外的弦樂與銅管**）／**Symbols of Light**（**弦樂四人未標軌次**）／**Doin' Something**（**管樂客座 Fred Wesley／Sam Kininger／Jacques Schwarz-Bart**）／**Dance Lesson #2**（**兩位管風琴手顯然分軌**）／**Black Stars**（**Sam Rivers 是逐軌客座**）／**Creole Moon**（**管樂組、和聲組、Michael Doucet 的 fiddle 都未標軌次**）／**Top Secret**（⚠ **實際演奏的只有 Moulin 一人；Philip Catherine 只見於 notes 的出借聲明、沒有軌次**）／**Beyond Words**（**錄音分兩地兩批，各軌的人不一定相同**）／**New Moods - New Sounds**（**弦樂四人未標軌次**） |
+| **可寫固定編制** | **8** | **Poetry**（**二重奏，Discogs credit 欄記到樂器型號**）／**Mose Chronicles Vol. 2**（四人）／**Supernova**（三人）／**Mantis**（四人）／**Inner Circle**（五人，credit 欄無其他樂手）／**My Lullaby**（五人）／**The Madness Of Our Love**（四人）／**First Session**（⚠ **兩場各自固定的四重奏，但兩場班底完全不同，正文不得寫成一場**） |
+
+⚠ ⚠ **本組要特別擋的三處（研究層累計已擋下 126 處的同形）**：
+1. **《Flights of Fancy》**——**「Trio Fascination」這個標題與「四組三重奏」的事實會誘人寫成一個固定三重奏**；**實際是十位樂手分四組，第 4 與第 13 軌還是雙三重奏六人。**
+2. **《Songs From the Analog Playground》**——**Norah Jones／Mos Def／Kurt Elling 三個是封面貼紙級的大名字，但每人只有兩軌，而且盤面掛名完全沒有他們**（第 1181 條的標準形狀）。
+3. **《Top Secret》**——**Philip Catherine 是 notes 裡的一句「courtesy of Dreyfus Jazz」出借聲明，不是 credit 欄的樂手**；**Billboard 的本文也只說「aided by」**。
+
+⚠ **《The Madness Of Our Love》有一個小缺口**：**shaker 手 Khalil Bell 只出現在 All About Jazz 的評介、不在 Discogs credit 欄**——研究層引用時要把那一層寫清楚（與 a 組《Soul Manifesto》同形）。
+
+---
+
+## 第 1484 條（同批）：**MB 這一批的毛病**（第 1183／1209／1237／1269／1331／1364／1393／1425／1454 條那張表的續筆）
+
+| # | 毛病 | 本組的樣本 |
+|---|---|---|
+| 1 | ⚠ **只建了宣傳盤、沒建零售盤（新形狀）** | **《Black Dahlia》**：RG 底下只有 535f9e8e（2001-02-27 US，status **Promotion**，catno 裸數字 `23883`，**format 為 null、無 barcode**）與 2010 年的 SACD；**零售盤 7243 5 23883 2 5 只在 Discogs 上（13453999，notes 逐字「Retail version」）** |
+| 2 | **完全沒建他廠原盤** | **《Poetry》**：RG 底下只有 2001 年的 Blue Note CD，**1984 年的 Elektra/Musician 60370 一筆都沒有**——**依第 1395 條實查確認是 MB 的資料庫缺口，不是管線折錯** |
+| 3 | **空殼 release** | **《Doin' Something》的 533fd726（2001-03-21 US，media format 為 null、無廠牌、無 barcode）與 8da6e966（JP，同樣無 format 無廠牌）**；**《Black Dahlia》的 535f9e8e** |
+| 4 | **同一張碟兩個 release 共用同一個 barcode** | **《The Calling》的 3162d20f（US）與 d763d0fa（XE）同 `724352769421`**；**《Creole Moon》的 46f95d8a（US）與 5d42f6c9（XE）同 `724353459123`**；**《Beyond Words》的 d23d2add（US）與 e476d0a4（XE）同 `724353420123`** |
+| 5 | **同一張碟建成兩筆美版、其中一筆無 catno 無 barcode** | **《Creole Moon》的 46f95d8a 與 90c68739** |
+| 6 | **`catno` 欄不是目錄號** | **四次**，逐筆見第 1478 條 |
+| 7 | **first-release-date 整個錯** | **《The Madness Of Our Love》標 2002-11-04**（第 1476 條）；**《Mose Chronicles Vol. 2》標 2001**（第 1475 條） |
+| 8 | ⚠ **`tags` 欄被塞進 barcode（新形狀）** | **《The Madness Of Our Love》的 tags 是 `['72435226422', 'jazz']`** |
+| 9 | **`secondary-types` 漏標 Live** | **《Mose Chronicles Vol. 2》**（盤名與 Discogs notes 都寫明是 Pizza Express 現場，MB 的 secondary-types 是空的）——**第 397 條** |
+| 10 | **`genres` 與 `tags` 兩欄全空** | **3 張**（《Black Dahlia》《My Lullaby》《New Moods - New Sounds》）——比 c-156 b 的 6／21 好，但仍在 |
+| 11 | **軌名與盤面不一致** | **《First Session》第 5 軌 MB 作「Sonymoon for Two」（盤面 Sonnymoon）**；**《New Moods》第 7 軌 MB 作「Going Back to Nonsense」（盤面 Back To The Nonsense）**；**《My Lullaby》第 7／8 軌 MB 漏了副標（盤面「Never Said (Chan's Song)/Trust Me」「Still We Dream (Ugly Beauty)」）**；**《The Madness Of Our Love》第 8 軌 MB 用破折號、盤面用斜線（而且盤面自己把 Too 印成 To）** |
+| 12 | **無 barcode、軌長未填** | **《Flights of Fancy》**（唯一一筆 release 兩者皆缺，`lookup?upc=` 因此無從查起）；**《The Madness Of Our Love》** 也無 barcode |
+| 13 | **建了盜版盤** | **《Songs From the Analog Playground》的 11531886（RU，status Bootleg，no label／PN-322）**——MB 這次有標 Bootleg，但仍會被列舉腳本算進 `nReleases` |
+
+---
+
+## 第 1485 條（同批）：**紙本——2001 全年用同批 a 組剛入庫的檔、2002 用既有檔，本棒零新抓；`SOURCES-billboard-cashbox.md` 未動**
+
+**開工先跑 `ls batch-progress/enum/ | grep 2001`，`billboard-bn-2001-ocr.txt.gz` 已在（a 組抓的，51 期、1 期 MISSING＝`BB-2001-01-06`）；2002 年的 `billboard-bn-2002-ocr.txt.gz` 是既有的。**
+**→ 依第 1280 條不重抓，本棒對 `batch-progress/enum/` 一個位元組都沒有動、`SOURCES-billboard-cashbox.md` 也沒有 append。**
+
+⚠ ⚠ **一個要給後批的觀察：a 組那份 2001 年的檔是「為 a 組的關鍵字集」抓的，但 b 組照樣夠用。**
+命中頁的 `hits=` 標記統計顯示，關鍵字集裡的人名全是 a 組的（`elling`／`ron carter`／`allison`／`martino`／`salvador`／`chucho vald`／`patricia barber`／`don byron`／`terrasson`／`plaxico`／`charlap`……），
+**b 組 22 位藝人裡只有 `mose allison` 一個在裡面**。**但 A 級關鍵字 `blue note` 一條就吃下 204 頁、兩張爵士榜的欄名吃下 190 餘頁**——
+**b 組 22 張裡有 14 張因此拿到了紙本證據**（見下表）。**→ 通則：只要關鍵字集裡有 `blue note` ＋ 兩張爵士榜的欄名與 OCR 形變，同年別批的 Blue Note 盤多半查得到；不必為了換一組藝人重抓一年。**
+
+**本棒靠這兩份檔拿到的關鍵證據（14 張）**：
+
+| 卡 | 紙本 | 拿到什麼 |
+|---|---|---|
+| **The Calling** | BB-2001-02-17 p20 | **SPOTLIGHT 評介，逐字「PRODUCER: George Duke Blue Note 27694」**；另 03-03～05-12 六期 Top Jazz Albums 逐期名次 |
+| **Doin' Something** | BB-2001-03-24 p6／p36 | **Jazz/Blue Notes 整篇專欄，逐字街頭日「(March 13)」＋三人編制＋Fred Wesley 管樂編曲＋製作人 Bob Brockman** |
+| **Black Dahlia** | BB-2001-03-10 p4／p50 | **專文「Black Dahlia Case Inspires Blue Note Set」，逐字 James Ellroy 小說的緣起** |
+| **Dance Lesson #2** | BB-2001-05-19 p51 ／05-26 p39 | **逐字街頭日「(Blue Note, May 8)」＋ Denson 的 Greyboy All-Stars／Lenny Kravitz 來歷；Top Contemporary Jazz 以 NEW 進榜** |
+| **Symbols of Light** | BB-2001-07-28 p6／p43 | **逐字街頭日「(Blue Note, July 31)」＋ 四重奏三人的全名＋Osby 自己解釋盤名** |
+| **Supernova** | BB-2001-08-04 p94／08-11 p31 | **評介逐字「Blue Note 7243 5 3117221」＋ Top Contemporary Jazz NEW 進榜** |
+| **Songs From the Analog Playground** | BB-2001-08-18 p21／09-22 p72／10-13 p84／10-27 p86／11-17 p20 | ⚠ **五處**，其中 08-18 是 **Norah Jones 簽約報導**（逐字「She'll debut as a featured vocalist on two tracks from guitarist Charlie Hunter's Sept. 25 release」） |
+| **Black Stars** | BB-2001-09-29 p34 | **逐字「both released Sept. 11」＋ 三重奏＋Sam Rivers 客座** |
+| **Off the Record** | BB-2001-10-13 p23／p48 ＋三期榜 | **評介＋專訪，逐字「meant to sound \"darker\" than its smooth-jazz predecessor, 1999's A Brighter Day」** |
+| **Creole Moon** | BB-2001-09-22 p72／10-27 p31 | **秋季預告逐字「(Oct. 9)」＋ BLUES 欄評介（曲風判定的關鍵，第 1480 條）** |
+| **Mantis** | BB-2001-06-02 p90／p100、06-09 p40 | **「Blue Note's first nu touch artist」＋ 秋季新盤預告（第 1445 條的第二層證據）** |
+| **Mose Chronicles Vol. 2** | BB-2002-01-26 p77（＋ Vol. 1 的 2001-04-14 p30） | **年份改判的決定性證據（第 1475 條）** |
+| **Life on Earth** | BB-2001-06-09 p40／p53、2002-01-19 p26 | **EMI Canada 直簽報導 ＋ Blue Note 整頁廣告 ＋ 評介（第 1477 條）** |
+| **Beyond Words** | BB-2002-03-02 p17、03-23 p25 | **整頁廣告（引 Chick Corea，逐字「his new album in nearly five years」）＋ JAZZ 欄評介** |
+
+**紙本零命中 6 張**：**《First Session》**（`grant green` 在 2001 年命中五處，全是別人在談他的影響力，**沒有一處是本碟的新片欄**）、
+**《Poetry》**（`billboard-bn-1982-1984-ocr.txt` 是為 Blue Note 關鍵字集抓的，Elektra 的新片欄不在其中）、
+**《New Moods - New Sounds》**（查 `Sarpila`／`Pyysalo` 皆 0 頁）、**《My Lullaby》**（查 `Zaryan` 0 頁）、
+**《The Madness Of Our Love》**（1998／1999／2000 三年查 `Jannah` 皆 0 頁）、**《Inner Circle》**（2002 年查 `Inner Circle` 的命中頁全是無關條目；06-08 p24 那段只是 Osby 的受訪引語，非評介、無街頭日）。
+
+⚠ **紙本誤讀本組擋下五次**（第 1301／1424 條的續筆）：
+**`Off the Record` 的目錄號被印歪三次**（`3026F`／`30287`／`26381`）；**同一張的街頭日在 09-22 p72 被寫成「Nov. 6」、與實際 10-09 不符**；
+**`Erik Truffaz` 被印成「Eric Truffaz」兩次**；**`Renee Rosnes` 被印成「Rene Rosnes」**；
+**查 `Supernova` 在 2001-07-21 p88 命中的是一段拿超新星當比喻的 new age 樂評**。
+
+---
+
+## 第 1486 條（同批）：**店面——三種查法在本組的分布；「三種查法全空」兩次，`lookup?upc=` 救回兩張、反而失效兩張**
+
+| 卡 | `search` us | `search` jp／fr | `lookup?upc=` |
+|---|---|---|---|
+| ⚠ **Stan Getz & Albert Dailey《Poetry》** | **零命中** | **jp／fr 都零命中** | ⚠ **零命中——三種查法全空** |
+| ⚠ **Antti Sarpila & Severi Pyysalo《New Moods》** | **零命中** | **jp／fr 都零命中** | ⚠ **零命中——三種查法全空** |
+| ⚠ **Dianne Reeves《The Calling》** | **零命中** | **三市場全零** | ✓ **`724352769421` 救回 724775039**（條目名縮成「The Calling」） |
+| ⚠ **Soulive《Doin' Something》** | **零命中** | **三市場全零** | ✓ **`724352793624` 救回 738336081** |
+| ⚠ **Marc Moulin《Top Secret》** | **零命中** | ✓ **jp／fr 命中 689318556** | 同一條 |
+| ⚠ **Denise Jannah《The Madness Of Our Love》** | **零命中** | ✓ **只有 fr 命中 724069512**（jp 也零） | **無 barcode 可查** |
+| ⚠ **Gonzalo Rubalcaba《Supernova》** | 三市場命中 724451132 | — | ⚠ **`724353117221` 反而零命中** |
+| ⚠ **Bob Belden《Black Dahlia》** | 三市場命中 724862227 | — | ⚠ **`724354174520` 零命中**（那是 2010 SACD 的 barcode，零售 CD 的 barcode 不在 MB 上） |
+| ⚠ **Joe Lovano《Flights of Fancy》** | 三市場命中 724794844 | — | **無 barcode 可查**（MB 那筆 release 沒有 barcode） |
+| ⚠ **Aga Zaryan《My Lullaby》** | **零命中** | ✓ **jp／fr 命中 690955450**，**但那是 2010／2011 的再發版（releaseDate 2011-01-11、℗ 2010 Central A）不是 2002 原盤** | **無 barcode 可查** |
+| 其餘 12 張 | **三市場都命中** | — | 同一條 |
+
+⚠ **第 1246／1365 條「us 查無不等於店面沒有」在本組應驗 4 次**（Top Secret／The Madness Of Our Love／My Lullaby ＋ 靠 UPC 救回的兩張）；
+**「三種查法全空」2 次**（c-156 b 是 1 次）；**「`lookup?upc=` 救回」2 次、「反而失效」2 次、「無 barcode 可查」3 次。**
+
+⚠ **Apple 的歪法本組的分布**：**年頭回填（`YYYY-01-01`）13 張**、**真日期 5 張**（Creole Moon `2001-10-09`、Black Stars `2001-08-31`、Mantis `2001-11-14`、Top Secret `2001-09-17`、Beyond Words `2002-03-12`、The Madness Of Our Love `2000-05-23`）、
+**copyright 寫後來的重發年 3 張**（Top Secret 的 ℗ 2003、My Lullaby 的 ℗ 2010、The Madness Of Our Love 的 ℗ 2003）、
+**軌數與原碟不符 2 張**（Supernova 回 8 軌、Mantis 回 12 軌，原碟各是 9 與 11）、**掛名寫壞 3 張**（見第 1479 條 (F)）、
+**盤名改寫 2 張**（Dance Lesson #2 → 「Dance Lesson, No. 2」、The Calling 全名被縮短）、
+**同頁混進無關條目 5 張**（First Session 的 jp／fr、Off the Record、Black Stars、Beyond Words、Creole Moon）。
+
+⚠ **CAA**：**22 張裡 4 張 RG 層 0 圖**（**Dance Lesson #2／My Lullaby／Inner Circle／The Madness Of Our Love**，**全部三次探測確認真 404**，封面要走 manual-scan 或 Discogs）；
+**最多的是《Creole Moon》14 圖**，其次《First Session》與《The Calling》各 8 圖。
+⚠ ⚠ **有圖的 18 張裡 6 張的圖來源不是首發壓片**，研究層要核封面版式：
+**《Poetry》**（來自 2001 Blue Note CD，不是 1984 Elektra 原盤）、**《Doin' Something》**（來自 XW 數位筆）、**《Creole Moon》**（來自 XE Parlophone 版）、
+**《Mantis》**（來自 b2276751 那一筆法版）、**《Life on Earth》**（來自 XW 數位筆）、**《Black Dahlia》**（來自 2010 SACD）。
+
+---
+
+## 第 1487 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案**
+
+- **`batch-progress/c157/prop-b.json`：22 張、21 位**（**`Greg Osby` 兩張**）。**第 315 條：22 ＋ 退表 0 ＝ 22 ✓。**
+- **`node batch-progress/c157/chk-prop.mjs b` → 標記 0**（120 批、4,876 卡、跨批撞卡 0、同 rgMbid 不同掛名 0、共用目錄號 0；「同掛名盤名詞元包含」3 行是 Volume 拆盤與 Edition One／Two 的預期內偽陽性）。
+- **年份改判 3 張**（Poetry 2001→1984、Mose Vol. 2 2001→2002、The Madness Of Our Love 2002→2000）、**覆核成立 19 張**。
+- **中間檔**（scratchpad `c157b/`，第 533 條，**不在 repo 內**）：
+  `mbfetch.py`＋`mb/`（**22 筆 × 2 端點 ＝ 44 個 JSON，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s、零 FETCH-FAIL**）、
+  `summ.py`（MB 摘要）、`dg.py`＋`dgrun.py`＋`dgcache/`（Discogs `q=` 搜尋 ＋ release／master 明細，**未授權端點、2.6 s/req**）、
+  `store.py`＋`strun.py`＋`stcache/`（Apple `search` × us／jp／fr ＋ `lookup?upc=` ＋ CAA RG 層探測）、
+  `poolscan.mjs`（掃 `seed_cards.json` ＋ `desc-tools/batches/cards/` ＋ 所有 `batch-progress/c1*/prop-*.json`，**合計 27,750 列**）、
+  `trkscan.mjs`＋`tracks.json`（**把本批 250 餘個軌名逐一比對池中卡名**）、
+  `ctx.py`＋`bb2001.txt`／`bb2002.txt`／`bb8284.txt`（**解壓既有的 OCR 檔查上下文，未新抓**）、
+  `build/lib.py`＋`build/b1.py`～`b5.py`（**分五次寫 prop，每 2–5 筆落一次磁碟，符合續跑要求**）。
+- **本棒改動的檔案（兩個）**：
+  1. **`batch-progress/c157/prop-b.json`（22 張，新建）**；
+  2. **`batch-progress/c157/rulings.md`（append 第 1470–1487 條；a 組的第 1440–1456 條一字未改，1457–1469 的留白也未動）**。
+  **沒有動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`batch-progress/enum/`（含 `blue-note.json` 與 `SOURCES-billboard-cashbox.md`）／
+  `batch-progress/c157/slice.json`／`batch-progress/c157/chk-prop.mjs`／**`batch-progress/c157/prop-a.json`**／git。
+- ⚠ **號段**：b 組用 **1470–1487**，**1488–1499 留白**（連同 a 組留白的 1457–1469）。
+
+**給 c-158 起的批次的六句話**：
+1. **Billboard 1955→2002 全年已無缺口**（2001 是 c-157 a 抓的、2002 早就有）——**直接 `zgrep`，不要重抓任何一年（第 1280 條）。**
+2. ⚠ **別批抓的年份照樣夠用**：只要那一年的關鍵字集裡有 `blue note` 與兩張爵士榜的欄名，**同年別批的 Blue Note 盤多半查得到**（本組 22 張中 14 張靠它拿到證據）。
+3. ⚠ ⚠ **紙本要壓過 Discogs 原壓群，必須給出街頭日或發行公告**——**只有一篇評介不夠**（第 1477 條；與 c-156 b 第 1415 條合起來看才完整）。
+4. ⚠ **`Advance` 宣傳盤的年份是很好的年份下界**，Discogs 年份打架時先找有沒有宣傳盤條目（第 1476 條）。
+5. ⚠ **`slice.json` 把連號的 Volume 兩卷寫成同年時不要相信**，兩卷各自找紙本（第 1475 條）。
+6. ⚠ **2001 年前後 MB 開始出現「只建宣傳盤、不建零售盤」**（第 1484 條第 1 項）——**`label` 與目錄號一定要去 Discogs 拿零售盤那一筆，MB 的裸數字 catno 不能用。**
