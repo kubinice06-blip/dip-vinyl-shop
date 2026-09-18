@@ -969,3 +969,63 @@ Greg Osby／Marcus Printup／Jacky Terrasson／Chucho Valdés……）、**p99 �
 **查 `norby` 命中的是經紀人 Norby Walters。**
 
 **到此合計覆蓋：Billboard 1955→1999 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。2000–2001 年兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-156 **b 組**策展層自抓：**Billboard 2000 年全年**）
+
+**c-156 b 組 22 筆裡有 21 筆的年份落在 2000**（Dianne Reeves《In the Moment》、Kurt Elling《Live in Chicago》、
+Medeski Martin & Wood《The Dropper》與《Tonic》、Brian Blade Fellowship《Perceptual》、Jason Moran《Facing Left》、
+Joe Lovano《52nd Street Themes》、Greg Osby《The Invisible Hand》、Charlie Hunter 同名盤、Ronny Jordan《A Brighter Day》、
+Chucho Valdés《Live at the Village Vanguard》、Everette Harp《For the Love》等），
+**而此前 repo 的覆蓋是「Billboard 1955→1999 全年 ＋ 2002 全年」——2000 與 2001 兩年都沒有人掃**（c-155 b 第 1362 條末段已點名），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2000-ocr.txt.gz` | **2.1 MiB 壓縮 / 4.9 MiB 原文** | **2000-01-08 → 2000-12-30，共 52 期，零 FETCH-FAIL、零 PARSE-FAIL** | **500** | **2000-01-01（探測回 404，2000 年第一期就是 01-08）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- **文字層是 PDF 內嵌文字，用 `pypdf`（容器內已有 6.16.2）逐頁 `extract_text()`；4 shard 並行，全年含下載約十分鐘。**
+
+⚠ **2000 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/00s/2000/`（與 2002 年同形，不是 `90s/`）**，
+**全年 52 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**。
+**抓法沿用 c-155 b（第 1362 條）的「枚舉當年所有週六 ＋ `Range: bytes=0-64` 探測」**——
+**索引頁仍然回 403，本棒沒有再試**；**枚舉 2000 年全部 53 個週六，52 個回 `206`、只有 `2000-01-01` 回 404**，
+**並先用已知的 `BB-1999-01-16` 驗證過檔名形狀才跑目標年。**
+⚠ **2000 年是 52 期（1999 年是 51 期、1997 是 51、1998 是 51）——每年都要自己數。**
+
+⚠ ⚠ **關鍵字集要分兩級，這是本棒踩到並修掉的坑**：
+**第一版把 `elling`／`tonic`／`moran`／`shim`／`for the love` 這類短字串與通用詞平等對待，命中頁一口氣衝到 2,030 頁、原文 20 MB**
+（`elling` 命中 `selling`／`telling`，`tonic` 命中大量無關字）。
+**改成兩級之後降到 500 頁**：
+- **A 級（直接收）**：`blue note` 與五種 OCR 形變（`blue nole`／`slue note`／`bine note`／`blue nate`／`bkie note`）、
+  `top jazz`／`top jall`／`top jail`／`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／`traditional jazz`、
+  `lundvall`／`cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`metro blue`／`somethin' else`、
+  **人名全名**（`boltro`／`dorough`／`dianne reeves`／`everette harp`／`mark shim`／`three sounds`／`jackie mclean`／`joe lovano`／`lovano`／
+  `greg osby`／`\bosby\b`／`ronny jordan`／`chucho`／`vald[eé]s`／`eliane elias`／`kurt elling`／`medeski`／`stefon harris`／`jason moran`／
+  `frishberg`／`brian blade`／`gene harris`／`charlie hunter`）、
+  **盤名中較獨特的那些**（`village vanguard`／`turbulent flow`／`invisible hand`／`52nd street themes`／`too much coffee`／`brighter day`／
+  `facing left`／`the dropper`／`it club`／`live in chicago`）、
+  **目錄號片段**（`96667`／`20134`／`20208`／`20730`／`20827`／`22211`／`22841`／`22978`／`23403`／`23571`／`23884`／`23997`／
+  `25271`／`25450`／`25494`／`5232732`／`65391`／`525271`／`523342`／`33422`）。
+- **B 級（同頁另有 `blue note` 或爵士榜名才收）**：`road runner`／`for the love`／`in the moment`／`nature boy`／`new directions`／
+  `perceptual`／`who's on first`／`everything i love`／`out takes`／`tonic`／`lighthouse`。
+**→ 給後批：抓完先看命中頁的量級。1999 年 338 頁、2000 年 500 頁；若出現四位數，就是關鍵字太鬆。**
+
+⚠ **2000 年的 Billboard 仍然分兩張爵士榜**（第 879／1068 條到 2000 年仍成立）：`Top Jazz Albums` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+**`Jazz → Jall／Jail` 的 OCR 形變到 2000 年還在。**
+
+⚠ **本棒靠這份檔拿到的關鍵證據**：
+**BB-2000-01-08 p32 的 `BLUE NOTES` 專欄（Kurt Elling《Live in Chicago》逐字 `due Jan. 11`，並列出 Von Freeman／Ed Petersen／Kahil El'Zabar／Jon Hendricks 等客座）**、
+**BB-2000-02-05 p40 的 Jackie McLean《Nature Boy》評介（逐字 `PRODUCERS: Hitoshi Namekata, Jackie McLean Blue Note 23273`）**、
+**BB-2000-04-08 p38 的 Brian Blade 整篇專欄（逐字 `\"Perceptual\" (Blue Note, April 11)` ＋七人團員名單＋Lanois 與 Joni Mitchell 參與；⚠ 同期 p4 的目錄把盤名印成 `Perpetual`）**、
+**BB-2000-06-10 p16 的 Dianne Reeves 專文與 07-29 p22 的 SPOTLIGHT 評介**、
+**BB-2000-07-01 p16 的 Jason Moran《Facing Left》街頭日（逐字 `due Tuesday (27)`）**、
+**BB-2000-09-16 p92 的 ALBUM FORECAST（同一段逐字給了《Who's on First?》與《The Dropper》的 `Oct. 24` 與 Everette Harp 的第四季檔期）**、
+**BB-2000-11-04 p26 的 MMW《The Dropper》評介（`Blue Note 22841`）**，
+**以及七張碟在 `Top Jazz`／`TOP CONTEMPORARY JAZZ`／Heatseekers／Top Independent 四張榜上的逐期名次。**
+
+⚠ **本棒實測的紙本誤讀**（第 1301 條的續筆）：**查 `dorough` 在 2000 年命中的絕大多數是 Backstreet Boys 的 Howie Dorough**；
+**查 `everything i love` 命中的是 George Strait 單曲的出版商欄（同名的音樂出版公司）**；
+**`Stefon Harris` 在 2000-04-22 p12 被印成 `Stefan Harris`。**
+
+**到此合計覆蓋：Billboard 1955→2000 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
+⚠ **2001 年**：本棒收工時（2026-09-18 18:47）工作區已出現 `billboard-bn-2001-ocr.txt.gz`（**8.4 MiB，另一個並行工作階段正在抓**）——**本棒沒有動它，那一份的期數、命中頁與關鍵字集由抓它的那一棒自己 append。**

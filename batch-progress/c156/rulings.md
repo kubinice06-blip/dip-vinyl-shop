@@ -405,3 +405,446 @@ a 組退掉《Groovin' at Smalls' Paradise》(`7243 4 99777 2 3`, 1999) 時交�
 ⚠ **交本機端**：要補就是**直接建卡＋走 §1 人工身分**（`Jimmy Smith —《Groovin' at Smalls' Paradise》
 BLP 1585／1586，1957-11-15 現場、1958 發行），或**先去 MB 建 RG 再回頭走正常流程**。
 **這與第 1114／1201 條交出的缺口是同一類**（BLP 4020／4081、Solid State SS 19000、BNJ 61006、BABB-85112）。
+
+---
+
+# c-156 b 組裁定（編號 1410–1439）
+
+本段為 **c-156 b 組**（22 筆，**1999 年 1 張、2000 年 21 張**）策展層的裁定，編號 **1410–1427**
+（派工信給的區間是 1410–1439，**1428–1439 未用**）。**以 append 寫入，a 組的第 1380–1395 條一字未改。**
+判準沿用 **c-153 第 1202＋1233 條的四句版**、**c-154 b 第 1295 條的 (戊) 前置閘**、**第 1294 條「兩個 RG 先比 barcode」**、
+**第 1296 條的曲風三層判準**、**第 1297 條的 `Promotion` 檢查**、**第 1303 條「盤面／榜欄／店面三邊一致壓過 MB」**、
+**c-155 b 第 1354 條（(甲) 的硬證據）與第 1362 條（紙本自抓法）**，以及 **同批 a 組第 1384／1386 條**。
+
+---
+
+## 第 1410 條（c-156 b 交件）：**22 筆 → 收 21、退 1；退貨率 4.5%，與 c-155 b 並列 1985 後最低。原因單純：本組 22 筆裡有 20 筆是 1999–2000 年的新錄音，只有 2 筆是庫存母帶，而退掉的那一筆正好是「庫存」與「再發」的分界**
+
+| | 數 |
+|---|---:|
+| slice `g: "b"` | **22** |
+| **收** | **21**（**19 位**，`chk-prop` 標記 0） |
+| **退** | **1** |
+| 年份改判 | **1**（Jackie McLean《Nature Boy》2000→**1999**） |
+| 年份覆核成立 | **20**（其中 **2 張是「推翻了另一層來源之後才維持原值」**，見第 1413／1415 條） |
+| 現場盤（`live: true` 或 `secondary-types ["Live"]`） | **6**（In the Moment／Live at the Village Vanguard／Live in Chicago／Who's on First?／It Club Volume 2／Tonic；**另 Out Takes 五軌是現場但 MB 沒標**） |
+| 撞陳列（要逐軌核） | **13 組**（其中 **3 組是同批兩張互撞**） |
+| 軌名＝池中卡名 | **21 處／12 張卡**，另 **同批內 2 處** |
+| 新掛名字串 | **3**（Flavio Boltro／Brian Blade Fellowship／**裸名 `Charlie Hunter`**）＋ **聯名新造 2**＋**收攏 1**；**新造分裂 0** |
+| 編制欄 | 固定 **11**／逐軌變動 **6**／**完全查不到 4** |
+| 紙本 | **本棒自抓 Billboard 2000 全年 52 期並入庫**（第 1423 條）；21 張裡 **14 張拿到可用證據、7 張空白（33%）** |
+
+**收下的 21 張**：Flavio Boltro《Road Runner》1999、Bob Dorough《Too Much Coffee Man》2000、
+Dianne Reeves《In the Moment》2000、Everette Harp《For the Love》2000、Mark Shim《Turbulent Flow》2000、
+**Jackie McLean《Nature Boy》1999（改判）**、Joe Lovano《52nd Street Themes》2000、
+Greg Osby《The Invisible Hand》2000、Ronny Jordan《A Brighter Day》2000、
+Chucho Valdés《Live at the Village Vanguard》2000、Eliane Elias《Everything I Love》2000、
+Kurt Elling《Live in Chicago》2000、Medeski Martin & Wood《The Dropper》2000、
+Stefon Harris / Jason Moran / Greg Osby / Mark Shim《New Directions》2000、
+Bob Dorough & Dave Frishberg《Who's on First?》2000、Brian Blade Fellowship《Perceptual》2000、
+Jason Moran《Facing Left》2000、The Three Sounds《Live at the "It Club", Volume 2》2000、
+Medeski Martin & Wood《Tonic》2000、Charlie Hunter《Charlie Hunter》2000、
+Kurt Elling《Live in Chicago - Out Takes》2000。
+
+**第 315 條：21 ＋ 退表 1 ＝ 22 ✓。**
+
+⚠ **本組與同批 a 組（1999 年、退 2）的差別，逐筆對過只有一句**：
+**a 組的 23 筆裡有八張是 Connoisseur／Lost Sessions 的庫存首發（要逐張判母體），本組只有兩張（Lighthouse 與 It Club Vol. 2），
+而這兩張正好一退一收**——**2000 年的 Blue Note 已經從「整理 Lion 時代母帶」轉回「賣現役藝人的新錄音」。**
+
+---
+
+## 第 1411 條（同批）：**退表 1 筆，逐筆與理由分類**
+
+| # | 盤 | rgMbid | 目錄號／年 | 退的分類 | 逐筆理由 |
+|---|---|---|---|---|---|
+| 1 | **The Three Sounds —《Live at the Lighthouse》** | `ba90bb04-97f6-30bc-863f-b8f63065fb9d` | Blue Note `7243 5 23995 2 9`／2000-03-28 | **(乙) 發行過、母體號段屬 Blue Note（1967 年的 `BLP 4265`／`BST 84265`）** | **見第 1412 條。母體寫進缺口表。** |
+
+**唯一這一筆也不是 `chk-prop` 抓出來的**——**是 Discogs master 362344 的版本表（1967 美版單聲道與立體聲各一、1970 Liberty/UA 再壓、1978 南非兩版）＋2000 年那筆歐版 notes 逐字的 `Tracks 10 to 17 previously unissued bonus tracks` 兩層一起看出來的。**
+
+---
+
+## 第 1412 條（同批，**重要**）：**《Live at the Lighthouse》——「2000 年的碟只有八軌是新的、前九軌是 1967 年的 LP」，這是 (乙) 最乾淨的一個樣本；母體 `BST 84265` 同時是池中的缺口**
+
+**本筆在列舉檔裡的樣子與同組其他 2000 年新錄音一模一樣**：`year: 2000`、`live: true`、`nReleases: 1`、`reissueSeries: []`、`inPool: false`——
+**MB 這個 RG 轄下只有一筆 release（22db6f81，2000-03-28 US CD 17 軌），完全看不出它是再發。**
+
+**判退的三層證據**：
+
+| 層 | 逐字內容 |
+|---|---|
+| **Discogs master 362344 的版本表** | **`1967/US/BLP 4265/Blue Note/LP, Album, Mono`、`1967/US/BST 84265/Blue Note/LP, Album, Stereo`（兩筆）、`1970/US/BST 84265/…Reissue`、`1978/South Africa/BST 84265`、`1978/South Africa/BNTJ(M) 84265`**——**1967 年的原盤是 Blue Note 自己的 4200／84200 號段** |
+| **2000 年歐版 13782170 的 notes** | 逐字「**Tracks 10 to 17 previously unissued bonus tracks.** Recorded live at The Lighthouse, Hermosa Beach, California on June 9 & 10, 1967. Remixed at 24-bit resolution from the original four-track masters.」＋「Credited to \"Gene Harris & The Three Sounds\" on the traycard spines.」＋「This reissue is dedicated to the memory of **Gene Harris who passed away on January 16, 2000**.」——**Discogs 的 `format` 欄也直接寫 `CD, Album, Reissue`** |
+| **店面** | **Apple us／fr 命中 738332007，releaseDate 逐字 `1967-07-01`、copyright `℗ 2004 Blue Note Records`、17 軌**——**店面自己把這張碟的年份掛在 1967** |
+
+**→ 收退判準 (乙) 成立：發行過、母體號段屬 Blue Note。退。**
+⚠ **與同組收下的《It Club Volume 2》的分界**（第 1417 條）：**那張九軌裡八軌未發行、唯一發行過的一軌是出現在主題合輯上；本張十七軌裡有九軌就是 1967 年那張 LP 的全部內容**。
+⚠ **與 c-155 b 第 1354 條《Standards》的分界**：那張的美版 notes 逐字 `All selections previously unissued`，**本張的 notes 逐字只說「第 10–17 軌」未發行**——**同一個句型，數量不同，判準就相反。**
+
+### ⚠ 缺口表（交主線）：**`The Three Sounds —《Live at the Lighthouse》`（Blue Note BLP 4265／BST 84265，1967-06-09／10 現場，1967 發行）池中沒有，而且 MB 沒有為 1967 年那張 LP 建 release**
+
+- **池中實掃**：`The Three Sounds` 47 列（seed 15 ＋ c-137～c-143、c-153 b、c-155 b 各批）＋`Gene Harris` 6 列，**`Live at the Lighthouse` 這個盤名在 The Three Sounds 名下零列**（池中同名的三張是 `Grant Green`／`Lee Morgan`／`Elvin Jones` 的另外三張碟）。
+- **為什麼前面十三批沒收到**：**MB 的 RG `ba90bb04` 的 first-release-date 是 2000-03-28（唯一那筆 release 就是 2000 年的 CD）**——**列舉檔依 frd 分期，因此這張 1967 年的碟被分到「1985 後」這一段，而不是 1967–84 那一段。**
+- **⚠ 這是一種新的缺口形狀，與第 1114／1201／1395 條那幾筆不同**：那幾筆是 **MB 沒有建 RG**；**本筆 MB 有 RG，但 RG 底下只建了再發版，所以整張碟被分錯年代。**
+  **→ 給主線：`blue-note.json` 若還要再跑一次，`1985+` 這一段裡 `live: true` 且 `nReleases: 1` 的，值得用 Discogs master 反查一次原壓年。**
+- **補的時候**：`year` 取 **1967**、`label` 寫 `Blue Note BLP 4265／BST 84265`、班底 Gene Harris p・org、Andrew Simpkins b、Donald Bailey d，製作 Richard Bock、錄音 Dino Lappas、封面 Reid Miles；**2000 年的 17 軌 CD 只能寫進 risk，不能當 `year`。**
+
+---
+
+## 第 1413 條（同批，**重要**）：**年份——改判 1 張、覆核成立 20 張；改判的那一張是「日版比美版早一整年」，不是早幾個月**
+
+| 盤 | 列舉檔／MB 的說法 | 本層取 | 依據（照簡報 §二的階序） |
+|---|---|---|---|
+| **`Jackie McLean —《Nature Boy》`** | MB frd **`2000-02-01`**（美版）；列舉檔照抄 2000 | **1999** | **實體首發是日本的 `Somethin' Else TOCJ-68045`**：**Discogs master 1340374 的版本表把兩筆日版（零售 12133379、宣傳 26273702）都列成 1999、五筆美歐版全列 2000**；**Apple `lookup?upc=724352327324` 回 738336042，releaseDate 逐字 `1999-09-22`、copyright 逐字 `℗ 1999 EMI Music Japan Inc.`**。**製作人也對得上：Billboard 2000-02-05 p40 的美版評介逐字寫 `PRODUCERS: Hitoshi Namekata, Jackie McLean`——Namekata 是東芝 EMI 的監製。**⚠ **1999 那一版是零售盤不是宣傳盤**（宣傳盤另有一筆，`format` 欄帶 `Promo`，第 1297 條的分辨做過）。**第 1063／1066／1133／1252 條在本組成立，而且是跨年的那一種。** |
+
+⚠ ⚠ **兩張「維持原值、但推翻了其中一層來源」的，單獨記**（**這是本組與 a 組零改判最大的差別：不是沒有衝突，是衝突被壓下去了**）：
+
+| 盤 | 哪一層說別的 | 為什麼仍取原值 |
+|---|---|---|
+| **`Kurt Elling —《Live in Chicago》`** | **Discogs 英版 3736099／歐版 8332171／澳版 10538492 三筆的 `year` 欄都是 1999**，**Apple fr `1999-01-01` ＋ `℗ 1999 Blue Note`** | **見第 1415 條（紙本壓過 Discogs 原壓群的樣本）** |
+| **`Harris / Moran / Osby / Shim —《New Directions》`** | **日版 `Somethin' Else TOCJ-68044` 的 `released` 逐字 `1999-11-17`**，**Apple UPC 回 `1999-11-06` ＋ `℗ 1999 Somethin' Else`** | **見第 1414 條（日版是不同形狀的碟，走第 1233 條 (丁)）** |
+
+**覆核成立、不改的 20 張**（列出來省得下一批重查）：
+《Road Runner》1999（**MB frd ＋ Discogs `(p) & (c) 1999 EMI Music France` ＋ Apple jp ℗ 1999；紙本三種字串全空**）、
+《Too Much Coffee Man》2000（**Discogs 零售盤 `released` 逐字 `2000-04-11`**）、
+《In the Moment》2000（**MB frd `2000-07-18` ＋ Billboard 2000-07-29 p22 SPOTLIGHT（廠牌欄逐字 `Blue Note Records 7243 5 25141`）＋ 08-05 起 Top Jazz 連七期**）、
+《For the Love》2000（**Billboard 2000-09-16 p92 ALBUM FORECAST ＋ 11-11 起 TOP CONTEMPORARY JAZZ 連五期，榜欄逐字 `EVERETTE HARP BLUE NOTE 21320 /CAPITOL`**）、
+《Turbulent Flow》2000（**MB frd `2000-03-28` ＋ 日版 `2000-03-23` ＋ Billboard 2000-03-25 p85／04-01 p109 兩期的 billboard.com 評介欄**）、
+《52nd Street Themes》2000（**MB 美版 `2000-04-25`、英版 `2000-05-01` ＋ Billboard 05-13 p39 第 20（NEW）與 06-10 p60 第 23**）、
+《The Invisible Hand》2000（**Discogs 五筆 ＋ ℗©2000 ＋ Apple 三市場 ℗ 2000；紙本三種字串全空**）、
+《A Brighter Day》2000（**日版 `2000-02-16`、美版 `2000-03-14` ＋ Billboard 04-01 起連十期在榜**；⚠ **Apple 整整標歪一年**）、
+《Live at the Village Vanguard》2000（**Billboard 04-29 p113 第 19（NEW）連五期 ＋ Discogs 七筆全 2000**；演出 1999-04-09／10）、
+《Everything I Love》2000（**Discogs 五筆零售 ＋ `℗ & © 2000` ＋ Apple ℗ 2000**；⚠ **先行宣傳盤標 1999，第 1297 條**）、
+《The Dropper》2000（**Billboard 2000-09-16 p92 逐字街頭日 `Oct. 24` ＋ MB 美版 frd 逐日相符 ＋ 11-04 p26 評介**）、
+《Who's on First?》2000（**同一頁 ALBUM FORECAST 逐字 `Oct. 24` ＋ MB frd 逐日相符**）、
+《Perceptual》2000（**Billboard 2000-04-08 p38 專欄逐字 `(Blue Note, April 11)` ＋ MB frd `2000-04-11` 逐日相符 ＋ 07-08 p22 評介**）、
+《Facing Left》2000（**Billboard 2000-07-01 p16 逐字 `due Tuesday (27)` ＝ 2000-06-27 ＋ Discogs notes 的錄音／混音／母帶三個日期都在 2000 年 1 月**）、
+《It Club Volume 2》2000（**MB frd ＋ Discogs 三筆；紙本零命中**）、
+《Tonic》2000（**MB 兩筆 release 的 frd 都是 `2000-04-25` ＋ Discogs 美加三筆 `released` 同日 ＋ Billboard 05-13 兩張榜同時 NEW**）、
+《Charlie Hunter》2000（**Discogs 五筆 ＋ notes 的錄音日 2000 年 1 月 ＋ Billboard 06-24 起連七期在榜**）、
+《Live in Chicago - Out Takes》2000（**MB frd ＋ Discogs ＋ 自營再版 notes 逐字 `original release for Blue Note Records in 2000`**）、
+以及上表兩張（《Live in Chicago》《New Directions》）。
+
+⚠ **本組「MB frd 與紙本街頭日逐日相符」的有 5 張**（Live in Chicago／The Dropper／Who's on First?／Perceptual／Tonic）
+——**2000 年的 MB 建檔品質比 1998–99 年那兩批明顯好，簡報 §二「1985 後失效方式不一樣」在這一年已經往「不太失效」那邊移。**
+
+---
+
+## 第 1414 條（同批，**本組最重要的一條**）：**同一條日本 Somethin' Else 線、連號的兩張碟（`TOCJ-68044`／`TOCJ-68045`），年份判法卻相反——分界是「日版是不是同一張碟」**
+
+| | **`TOCJ-68045` Jackie McLean《Nature Boy》** | **`TOCJ-68044` New Directions《Blue Note New Directions》** |
+|---|---|---|
+| 日版年份 | **1999**（Apple `1999-09-22`） | **1999-11-17**（Discogs 17897152 的 `released`） |
+| 日版盤名 | **`Nature Boy`（與美版同名）** | ⚠ **`Blue Note New Directions`（美版叫 `New Directions`）** |
+| 日版掛名 | **`Jackie McLean`（與美版同）** | ⚠ **群組 `New Directions`（美版改掛四個人名）** |
+| 軌數 | **8 軌＝美版 8 軌** | ⚠ **9 軌，美版是 13 軌（多四軌）** |
+| 封面 | 同 | ⚠ **換過** |
+| 監製 | Hitoshi Namekata | Hitoshi Namekata（同一人） |
+| **本層取的 `year`** | **1999（日版＝首發）** | **2000（美歐版＝完整形）** |
+
+**判準**：**簡報 §二「`year` 取實體首發年」是預設；但當更早那一次「只是部分／不同形狀」時，走 c-153 第 1233 條 (丁)，取本次完整發行年。**
+**《Nature Boy》的日版是同一張碟，(丁) 不成立；《New Directions》的日版少四軌、換名、換掛名、換封面，(丁) 成立。**
+
+⚠ **Discogs 17897152 的 notes 自己把這件事寫完了**，逐字：
+「This album was later issued with **four additional tracks and new artwork** on Blue Note in the US and Europe,
+with bassist Tarus Mateen and drummer Nasheet Waits **downgraded to supporting musicians and not pictured on the cover**.」
+——**連掛名為什麼會變都寫了。**
+
+⚠ ⚠ **給後批的兩句**：
+1. **2000 年前後的 Blue Note 有一條「日本 Somethin' Else 先出、隔年美歐版跟進」的線**（監製 Hitoshi Namekata、A&R Yoshiko Tsuge），
+   **`TOCJ-680xx` 這個號段是它的標記**；**遇到 2000 年的 Blue Note 碟而 Apple 的 copyright 寫 `Somethin' Else Records, a division of EMI Music Japan`，一律回頭查日版年份。**
+2. **查到日版更早時，先比「盤名／掛名／軌數／封面」四項**——**四項全同＝首發年（取日版年）；任一項不同＝(丁)（取完整形那一年），並把日版寫進 `label` 與 `risk`。**
+
+---
+
+## 第 1415 條（同批，**重要**）：**《Live in Chicago》——Discogs 有三筆 1999 年的原壓條目，仍取 2000；這是簡報 §二階序裡「同期紙本 ＞ Discogs 原壓群」第一次真的被用來壓過三筆條目**
+
+**衝突的形狀**：
+
+| 指向 1999 | 指向 2000 |
+|---|---|
+| Discogs 英版 3736099（catno `522 2112`）`year` 1999 | **Billboard 2000-01-08 p32 `BLUE NOTES` 專欄逐字「\"Live In Chicago,\" his fourth Blue Note release, **due Jan. 11**」**，且文體是預告（「Blue Note **is planning** two direct-mail campaigns」） |
+| Discogs 歐版 8332171 `year` 1999 | **MB frd `2000-01-11`** |
+| Discogs 澳版 10538492 `year` 1999 | **Discogs 美版 4121220 的 `released` 逐字 `2000-01-11`（三筆 1999 的都只有 `year`、沒有 `released`）** |
+| Apple fr `1999-01-01` ＋ `℗ 1999 Blue Note Records` | **Billboard `Top Jazz Albums` 2000-02-05 p58／02-19 p37／03-04 p53 連三期在榜** |
+| 先行宣傳盤 16150326 標 1999 | — |
+
+**→ 取 2000。三筆 1999 是第 550／570／708 條「Discogs 年份欄整群抄盤面 ℗ 年」**（**盤面 ℗ 是 1999，因為錄音在 1999 年 7 月 14–16 日**），
+**宣傳盤的 1999 只能當下界（第 1297 條）。**
+
+⚠ **這一條與第 1414 條不衝突**：**那邊是「更早的實體真的存在且真的賣過」，這邊是「更早的年份只寫在 Discogs 的 `year` 欄、沒有任何 `released` 日期或紙本對應」。**
+**→ 給後批：Discogs 原壓群指向更早的年份時，先看那幾筆有沒有 `released` 日期；只有 `year` 的那種，多半是抄 ℗。**
+
+---
+
+## 第 1416 條（同批，**重要；新立**）：**《Live in Chicago - Out Takes》——只在澳洲發行的「續篇碟」要收，判它之前先排除三種東西**
+
+**本筆最容易被當成不該收的三種東西，逐一排除**：
+
+| 疑慮 | 檢查 | 結論 |
+|---|---|---|
+| **是宣傳盤嗎** | Discogs 11942922 的 `format` 欄是乾淨的 `CD, Album`（**無 `Promo`／`Advance`／`Sampler`**），有自己的 barcode `724352549429` | **不是**（第 1297 條的檢查做過） |
+| **是正盤的贈碟嗎** | **有自己的目錄號 `7243 5 25494 2 9`、自己的 Discogs master 1477660（正盤是 502751）、自己的 MB RG** | **不是**——**是一張獨立商品** |
+| **是合輯嗎** | MB `secondary-types` 空、Discogs `format` 無 `Compilation`；內容是**單一場次（1999 年 7 月 Green Mill 三晚）的未發行母帶＋一軌錄音室 bonus** | **不是** |
+
+**→ 收退判準 (甲) 成立（六軌全部未發行），收，`year` 2000。**
+⚠ **卡上必須寫明它是地區限定**：**MB 與 Discogs 都只有澳洲一個國別的零售條目**（EMI Music Group Australasia 製造經銷），
+**後來 Elling 自己再發了一次無廠牌版（Discogs 9645159，notes 逐字 `Reissue of original release for Blue Note Records in 2000`）**——**上架與試聽會比正盤難找：Apple 三市場 `search` 回的全是正盤、`lookup?upc=724352549429` 零命中（三種查法全空）。**
+⚠ **與正盤的關係要互指**：**六軌與正盤十四軌逐軌比對零重疊**，兩卡 risk 已互指、上架比對帶 catno 與軌數。
+⚠ **Discogs 的錄音日期與正盤打架**：本張 notes 逐字 `July 4 and 16, 1999`、正盤三筆一致 `July 14, 15 & 16, 1999`——**`July 4` 幾乎確定是掉了一個 `1`，正文以正盤為準。**
+⚠ **第 397 條的樣本**：**正盤 MB 標了 `secondary-types ["Live"]`、本張沒標**，而本張六軌裡五軌是現場——**同一位藝人、同一批母帶，MB 只標對一半。**
+
+---
+
+## 第 1417 條（同批）：**(甲) 的又一個新子形——「九軌裡有一軌先前收在主題合輯上」仍算 (甲)**
+
+**《Live at the "It Club", Volume 2》的美版 notes 逐字**：
+「Recorded on March 6, 1970 at the It Club, Hollywood, California. **Track #8 previously issued on Blue Beat (Blue Note 94861). All other titles previously unissued.**」
+
+**判收的理由，逐條對 c-155 a 第 1323 條退掉 Jimmy Smith《Standards》的那三個**：
+1. **「多 session 組裝盤」：本張不中**——**單一場次（1970-03-06 一晚）。**
+2. **「有軌與池中既有卡逐軌相同、收了就是上架兩次」：本張不中**——**第 8 軌〈Get Back〉先前出現的地方是 Blue Note 的主題合輯 `Blue Beat`（94861），不是池中任何一張卡；與池中十七張 The Three Sounds／Gene Harris 卡逐軌零重疊。**
+3. **「Cuscuna／Belden 掛 `Reissue Producer`／`Produced For Release`」：本張中**——**但第 1146／1188／1240／1354 條已經定死：頭銜不是判準。**
+
+**→ 收。這是 a 組第 1385 條「單曲已發、專輯未發仍算 (甲)」的姊妹形：發行過的那一小塊是在合輯上，不是以本碟的形式。**
+⚠ **與第 1412 條退掉的《Live at the Lighthouse》的分界就是比例與形式**：**那張是「1967 年整張 LP ＋ 八軌 bonus」，本張是「一整晚未發行 ＋ 一軌曾在合輯」。**
+
+---
+
+## 第 1418 條（同批）：**掛名——沿用 14、新字串 3、聯名新造 2、收攏 1、統一 1；新造分裂 0**
+
+### （一）沿用池中既有字串 14（共 17 張卡）
+`Bob Dorough`（1）／`Dianne Reeves`（5）／`Everette Harp`（3）／`Mark Shim`（1）／`Jackie McLean`（34）／`Joe Lovano`（7）／
+`Greg Osby`（7）／`Ronny Jordan`（1）／`Chucho Valdés`（3）／`Eliane Elias`（7）／`Kurt Elling`（3，**本組兩張卡共用**）／
+`Medeski Martin & Wood`（1，**本組兩張卡共用**）／`Jason Moran`（1）／`The Three Sounds`（16）。
+
+### （二）新字串 3（池中皆 0 列，三形都掃過）
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Flavio Boltro`** | fb7dacde Person／**IT**／1961-05-05 | ⚠ **同字串另有四個群組**：`Flavio Boltro Quartet`（a7c0f41b）／`Flavio Boltro 5et`（3634e41b）／`Flavio Boltro BBB Trio`（79722647）／`Fabrizio Bosso & Flavio Boltro Quintet`（7bbf1445）——**日後那幾個進池要與裸人名分清楚** |
+| **`Brian Blade Fellowship`** | ad45a94c Group／US | 同字串單一實體；⚠ **Apple 與 2014 年黑膠一律用 `Brian Blade & The Fellowship Band`（2008 年後才改的團名）——那一形只進 `queryAlias`**；⚠ **`Brian Blade` 裸名池中亦 0 列** |
+| **`Charlie Hunter`（裸名）** | a89487ab Person／US／1967-05-23 | ⚠ ⚠ **池中已有他的三個群組字串**（`Charlie Hunter Trio` 87c0023c／`Charlie Hunter Quartet` 60c02ac7／`Charlie Hunter & Pound For Pound` 4a38384b）——**第 1131 條：同名盤改掛本人名不是分裂，三個群組字串一個都不動**；MB 反查另有 `Quintet`／`Duo`／`& Scott Amendola`／`& Lucy Woodward` 四個群組 |
+
+### （三）聯名新造 2
+| 聯名 | 形狀 | 為什麼不是新造分裂 |
+|---|---|---|
+| **`Bob Dorough & Dave Frishberg`** | MB 兩個 Person 以 ` & ` 接（de81eacd＋83a0c20a） | **盤面／Apple 三市場／MB 三邊一致（第 1303 條）**；**池中 `Bob Dorough` 不動，同批他的個人盤仍掛裸名**；⚠ **`Dave Frishberg` 是新的人名，MB 反查另有 `Dave Frishberg-Kilgore`（97a9bfb5，type 空）要帶消歧** |
+| **`Stefon Harris / Jason Moran / Greg Osby / Mark Shim`** | **MB RG 的 credit 就是四個 Person 以 ` / ` 串起，四個 id 與池中四張卡用的完全相同** | **池中四個人的既有字串一個都不動**；⚠ **Apple 把掛名登成群組 `New Directions`、Discogs 多數條目縮寫成 `Harris* / Moran* / Osby* / Shim*`——第 1303 條以 MB＋盤面全名為準，其餘進 `queryAlias`** |
+
+### （四）收攏 1
+**`Gene Harris & The Three Sounds`（MB 群組 9b58e361）→ 池中的 `The Three Sounds`（cf2115e9）**——
+**照 c-141 b 第 563 條與 c-153 b 的先例（同一個 9b58e361、同一條理由）。**
+⚠ **`chk-prop` 在這裡有盲區（第 1181 條）：店面／Discogs／MB 都掛聯名、本卡掛裸團名，第一道折鍵不會報。**
+
+### （五）統一 1
+**列舉檔把同一個 MB 群組 6eed1ed9 寫成兩形——`Medeski Martin and Wood`（The Dropper）與 `Medeski Martin & Wood`（Tonic）**，
+**本層一律用池中 c-155 a 的 `Medeski Martin & Wood`**；⚠ **歐版 Discogs notes 自己就說明了混亂來源**：逐字「The artist name is **Medeski Martin And Wood** on the front cover and **Medeski Martin & Wood** on the back cover and disc face」。
+⚠ **`chk-prop` 的折鍵把 `&` 正規化成 `and`，兩形會摺成同一個鍵——本組兩張碟名不同，不會誤報跨組重複。**
+
+### （六）新造分裂 0。
+
+---
+
+## 第 1419 條（同批）：**曲風——21 張全部 `['jazz']`；四張邊緣的都不加第二曲風**
+
+照第 1296 條的三層判準：
+
+| 盤 | 為什麼邊緣 | 判 |
+|---|---|---|
+| **Ronny Jordan《A Brighter Day》** | **MB genres 給四個：`acid jazz`／`electronic`／`jazz`／`jazz-funk`**；內容是嘻哈節奏上的電吉他，另有 Mos Def 客串的 Rawkus remix 12 吋 | **`['jazz']`**——**第一層：seed 的《The Antidote》是 `['jazz']`**；**第三層也支持（行為體是爵士吉他手），與 c-155 b 給 Tim Hagans 的判法一致** |
+| **Medeski Martin & Wood《The Dropper》** | **MB genres 給 `electronic`／`experimental`／`jazz-funk`——沒有 `jazz`** | **`['jazz']`**——**第一層：c-155 a 的《Combustication》是 `['jazz']`**，同批《Tonic》亦同 |
+| **Everette Harp《For the Love》** | smooth jazz／R&B 形，進的是 `TOP CONTEMPORARY JAZZ` 不是 `Top Jazz` | **`['jazz']`**——**第一層：池中三張 `Everette Harp` 全部 `['jazz']`** |
+| **Chucho Valdés《Live at the Village Vanguard》** | MB genres 給 `afro-cuban jazz`／`jazz`／`latin`／`latin jazz` | **`['jazz']`**——**第一層：c-151 b《Solo Piano》與 c-155 b《Briyumba Palo Congo》都是 `['jazz']`**（⚠ seed 的《Bele Bele en La Habana》是 `['jazz','world']`，那是更早的判法） |
+
+⚠ **另一張要記的是 Greg Osby**：**池中七張裡有兩張是 `['jazz','hiphop']`（1993 年的《3-D Lifestyles》《Black Book》）**——
+**本組的《The Invisible Hand》是原音六重奏（Jim Hall／Andrew Hill），走第三層給 `['jazz']`，與其餘五張一致。**
+**兩組合計（a 組 21 ＋ b 組 21 ＝ 42 張）全部 `['jazz']`。**
+
+---
+
+## 第 1420 條（同批，**重要**）：**編制欄——21 張裡 4 張「完全查不到」、6 張必須寫「逐軌變動」、11 張可以寫固定編制**
+
+### （一）**完全查不到，寫作層一個側人都不得寫（4 張）**
+| 盤 | 狀況 |
+|---|---|
+| **Everette Harp《For the Love》** | **Discogs 五筆的 credits 只有 `Everette Harp:Saxophone` 與 `Kevin Turner:Programmed By [Additional]`**，**沒有任何鍵盤、貝斯、鼓** |
+| **Chucho Valdés《Live at the Village Vanguard》** | **七筆條目的 credits 全部沒有樂手欄**；MB 無關係資料 |
+| **Bob Dorough & Dave Frishberg《Who's on First?》** | **三筆條目的 credits 沒有樂手欄**（notes 只寫場館與日期） |
+| **Charlie Hunter《Charlie Hunter》** | **五筆條目的 credits 只有 `Leon Parker:Arranged By [Percussion]` 與製作／美術欄——連 Hunter 自己的吉他都沒掛** |
+
+### （二）**必須寫「逐軌變動」（6 張）**
+| 盤 | 為什麼 |
+|---|---|
+| **Ronny Jordan《A Brighter Day》** | **加拿大版 notes 本身就是逐軌逐棚的清單**（`Tracks 3 to 5, 7, 10 & 11 were programmed @ Skyelab…`／`Tracks 1 to 3, 5 to 7, and 10 to 13 were mixed @ BMG…`），credits 另有兩位貝斯（含 Jordan 自己） |
+| **Flavio Boltro《Road Runner》** | **兩位貝斯（Pippo Matino／Marcello Giuliani）＋兩位鼓（Stéphane Huchard／Paco Sery），零逐軌標記** |
+| **Bob Dorough《Too Much Coffee Man》** | **三位貝斯、兩位鼓、兩位吉他、三件銅管，零逐軌標記**；Phil Woods 是客座 |
+| **Eliane Elias《Everything I Love》** | **兩位貝斯（Marc Johnson／Christian McBride）＋兩位鼓（Carl Allen／Jack DeJohnette），零逐軌標記** |
+| **Kurt Elling《Live in Chicago》** | **美版 credits 把 Von Freeman／Ed Petersen／Eddie Johnson／Kahil El'Zabar／Jon Hendricks 五人全標成 `Guest [Featured Guest Artist]`**；⚠ **英歐版沒有 `Guest` 標記、把他們與常態三人並列——兩版打架，以美版為準** |
+| **Brian Blade Fellowship《Perceptual》** | 七人團可寫，**但兩位客座沒有逐軌標記**：**Daniel Lanois 掛 `Guitar`＋`Pedal Steel Guitar`**、**Joni Mitchell 只出現在 Billboard 2000-04-08 p38 的專欄裡、Discogs 五筆一個字都沒有她** |
+
+### （三）**可以寫固定編制（11 張）**：In the Moment（五人巡演班底，**George Duke 掛 `Keyboards [Additionnal]` 是客座**）／Turbulent Flow（四人核心，**Stefon Harris 的顫音琴無逐軌標記，不得寫死五重奏全程**）／Nature Boy（四人，美歐版 credits 一致）／52nd Street Themes（**盤名說 Nonet 九人、credits 卻列十位樂手——照 credits 寫人，不要寫「九重奏」**）／The Invisible Hand（六人，美歐版一致）／The Dropper（三人，**Marc Ribot 是唯一客座、無逐軌標記**）／New Directions（六人，**但 notes 已標明〈Beatrice〉是二重奏、〈Commentary on Electrical Switches〉是三重奏**）／Facing Left（三人，零客座）／It Club Volume 2（三人）／Tonic（三人，零客座）／Live in Chicago - Out Takes（四人＋一位客座，**第六軌是錄音室、班底不必然相同**）。
+
+⚠ **本組要單獨點出來的「不得寫進編制」的人名／欄位**：
+**Judi Silvano（《52nd Street Themes》掛 `Producer [Assistant]`——第 1358 條在《Trio Fascination》已記過一次，本組是第二次）**、
+**Freddie-Hubbard 式的作曲者欄（《Facing Left》的 `Written-By` 列了 Björk／Sjón／Ellington／Jaki Byard／Carmine Coppola／佐藤勝——全是作曲者）**、
+**Hitoshi Namekata 與 Yoshiko Tsuge（《New Directions》《Nature Boy》的日方監製與 A&R）**、
+**Bob Belden 與 Bob Norberg（《It Club Volume 2》的 2000 年整理與 24-bit 轉錄）**、
+**Lois Brownsey 與 Pat Flaherty (4)（《Too Much Coffee Man》掛 `Vocals`＝和聲）**。
+
+---
+
+## 第 1421 條（同批，**重要**）：**撞陳列 13 組 ＋ 軌名撞卡名 21 處（另同批內 2 處）；`chk-prop` 四道全過、一個燈都沒亮**
+
+### （一）**撞陳列 13 組**
+| # | 組 | 關係 | 逐軌比對 | 判 |
+|---|---|---|---|---|
+| 1 | ⚠ **《In the Moment》× 同批 a 組《Bridges》** | **本張第 5 軌就叫〈Bridges〉、而 a 組那張卡的盤名就是 `Bridges`，同一位藝人前後兩張** | 十一軌與那張零重疊 | **兩卡 risk 互指，上架帶 catno `25141`** |
+| 2 | ⚠ **《The Invisible Hand》× 同批《Nature Boy》** | **本張第 7 軌〈Nature Boy〉＝那張卡的盤名** | 零重疊 | **兩卡 risk 互指** |
+| 3 | ⚠ **《Live in Chicago》×《Live in Chicago - Out Takes》** | **同三晚的兩批母帶** | **十四軌 vs 六軌，零重疊** | **兩張照收、risk 互指，帶 catno 與軌數** |
+| 4 | ⚠ **《It Club Volume 2》× 池中 c-153 b《Live at the “It Club”》** | **同一晚（1970-03-06）的兩批母帶** | **九軌 vs 八軌，零重疊** | **兩卡互指；c-153 b 那張卡的 risk 早就預告了本張** |
+| 5 | **《The Dropper》×《Tonic》**（同批） | 同團同年，一電子錄音室、一原音現場 | 十三軌 vs 八軌零重疊 | 互指，帶 catno |
+| 6 | **《Turbulent Flow》×《New Directions》**（同批） | **兩張都收〈Recorda Me〉，Shim 與 Stefon Harris 兩人都在** | 其餘八軌零重疊、編制不同 | **第 1049 條照收，互指** |
+| 7 | **《Facing Left》×《New Directions》× 池中 c-155 a《Soundtrack to Human Motion》** | 同一個 Bandwagon 節奏組、Osby 製作 | 三張軌目零重疊 | 三卡互指 |
+| 8 | ⚠ ⚠ **《New Directions》× 池中六張 Blue Note 原盤** | **整張是重做廠牌自己的目錄**：〈The Sidewinder〉＝`Lee Morgan`（seed）、〈No Room for Squares〉＝`Hank Mobley`（seed）、〈Song for My Father〉＝`Horace Silver`（seed）與 `Claude Williamson Trio`，另 Hancock《Blow-Up》／Shorter《Schizophrenia》／Henderson《Page One》都在池中 | 全部同名不同錄音 | **第 1049／1355 條照收；翻做盤的原盤在池中，risk 逐一指出** |
+| 9 | **《Too Much Coffee Man》×《Who's on First?》× 池中 c-153 b《Right On My Way Home》** | **同一位歌手同年兩張、同一條 Bill Goodwin／Phil Woods 班底** | 三張軌目零重疊 | 三卡互指，帶 catno |
+| 10 | **《52nd Street Themes》× 池中 c-155 b 的 Tim Hagans 四張** | **Hagans 在本張是側人小號** | 軌目零重疊 | **只寫觀察＋互指，正文不得寫成共同領班** |
+| 11 | **《Everything I Love》× 池中《Eliane Elias Sings Jobim》(c-155 b)／《Eliane Elias Plays Jobim》(c-150 a)** | 同掛名、三種形狀 | 零重疊 | 三卡互指 |
+| 12 | **《Live at the Village Vanguard》× 池中 Chucho Valdés 三張 ＋ Irakere 兩張** | 同一位鋼琴家的五張碟 | 軌目零重疊 | 五卡互指 |
+| 13 | ⚠ **《Charlie Hunter》（同名盤）× 池中他的四張群組卡 ＋ Discogs 上 1993 年的 `Charlie Hunter Trio —《Charlie Hunter Trio》`（Mammoth MR0066）** | **同名盤的兩種撞法：掛名變了、盤名又與 1993 年那張近似** | 五張軌目零重疊 | **互指；上架比對一律帶 catno `25450` 與年份 2000** |
+
+### （二）**軌名＝池中卡名 21 處／12 張卡**（第 1181／1192 條第六種盲區）
+**最密的三張**：**《It Club Volume 2》三處**（I'm in Love＝Evelyn King／Down Home＝Z.Z. Hill／Get Back＝Little Brother）、
+**《New Directions》三處**（見上表第 8 組）、**《In the Moment》兩處**（Afro Blue＝The Lonnie Smith = John Abercrombie Trio 與 Dee Dee Bridgewater／Love for Sale＝Boney M.、宮沢昭、Cecil Taylor）。
+**其餘**：《Nature Boy》一（What Is This Thing Called Love＝Richie Beirach Trio）、《52nd Street Themes》二（If You Could See Me Now＝Kenny Drew Trio／Embraceable You＝Chet Baker）、
+**《A Brighter Day》二（⚠ Aftermath＝`The Rolling Stones`（seed，**apex `hall`**）／Mystic Voyage＝Roy Ayers Ubiquity）**、
+《Live at the Village Vanguard》一（My Funny Valentine＝Miles Davis）、《Everything I Love》二（**Everything I Love＝`Kenny Drew` 的盤名**／I Love You＝本田竹広）、
+《Live in Chicago》二（Downtown＝EPO 與 Petula Clark／Oh My God＝Doug E. Fresh 與 花生隊長）、《The Dropper》一（Big Time＝Angel Olsen）、
+《Who's on First?》一（You Are There＝MONO）、《Facing Left》一（Another One＝Mac DeMarco）。
+**全部同名不同錄音，第 1049 條照收，正文不得互指。**
+⚠ **其中一處撞到池中的王牌卡**（《A Brighter Day》的〈Aftermath〉＝Rolling Stones，apex `hall`）——**第 1355 條的形狀第二次出現：上架比對、封面與試聽一律帶 catno，不得共用王牌卡的任何資產。**
+
+⚠ ⚠ **`chk-prop` 四道全過、標記 0**（119 批、4,836 卡、跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0）——**十三組撞陳列與 23 處軌名撞卡名一個都不會報**，做法與第 1359 條相同：**逐字寫進 `risk`。**
+
+---
+
+## 第 1422 條（同批，**重要**）：**第 1250 條在本組應驗五次，而且多出一種全新的形狀——「列舉檔的 `catno` 欄根本不是目錄號，是壓片廠的模壓代碼」**
+
+| # | 反查的字串 | 回來的是什麼 | 形狀 |
+|---|---|---|---|
+| 1 | ⚠ ⚠ **`F: PM 808`（列舉檔給 Flavio Boltro《Road Runner》的 `catno`）** | **同一組字串 `F: PM 520` 出現在同批 Bob Dorough《Too Much Coffee Man》歐版與 Jackie McLean《Nature Boy》歐版的模壓環上，`PM 516` 出現在《New Directions》歐版與《Live at the Lighthouse》歐版上** | **全新形狀：那是 EMI 法國／歐洲壓片廠的代碼，不是目錄號**；**本張真正的目錄號是 `523342 2`** |
+| 2 | `7243 5 20134 2 5`（Greg Osby《The Invisible Hand》） | **Janet Jackson《Damita Jo》2004 墨西哥版**（模壓環 `03CDCA020134` 含 `20134`） | 子字串巧合 |
+| 3 | `22841`（MMW《The Dropper》） | **Randy Travis 1989 單曲 `9 22841-4`／`9 22841-7`、Toetag `22841-2`、荷蘭 Pink Elephant `22.841`、Los Rodriguez `3984 22841 4`（五筆）** | 子字串巧合 |
+| 4 | `7243 5 20827 2 8`（Eliane Elias《Everything I Love》） | **Collectables 2002 年合輯 `COL-CD-2837`**（模壓環含 `72 4353720827D1`） | 子字串巧合 |
+| 5 | `Tonic`（MMW《Tonic》） | **Discogs 把 `Tonic`（俱樂部）列在每一筆的廠牌欄**，盤名反查另撞美國搖滾團 Tonic 與 2001 年的《Electric Tonic》 | **盤名／場館名／廠牌欄三重混淆** |
+
+**→ 給後批（在第 1250 條之上再加一句）：列舉檔的 `catno` 欄若帶 `F:`／`PM`／`UK:` 這類前綴，或是純兩三位數字，先假設它是模壓環字串或價格代碼，去 Discogs 讀廠牌欄拿真正的目錄號再反查。**
+⚠ **MB 的 `catno` 欄在本組另有三種毛病**：**緊縮形**（`5232732`＝`7243 5 23273 2 4`、`7243 5 2527120`＝`…25271 2 0`）、**整欄空**（Dorough／Reeves／Harp／Shim／Perceptual 美版五筆）、**抄成模壓字串**（Boltro）。
+
+---
+
+## 第 1423 條（同批，**重要**）：**本棒自抓 Billboard 2000 全年（52 期）並入庫，`SOURCES-billboard-cashbox.md` 已 append**
+
+- **為什麼要抓**：**本組 22 筆裡 21 筆落在 2000 年**，**而 repo 的覆蓋此前是「Billboard 1955→1999 全年 ＋ 2002 全年」——2000 與 2001 兩年沒有人掃**（c-155 b 第 1362 條末段已經點名）。
+- **檔**：`batch-progress/enum/billboard-bn-2000-ocr.txt.gz`，**2.1 MiB 壓縮 / 4.9 MiB 原文**，
+  **2000-01-08 → 2000-12-30 共 52 期，零 FETCH-FAIL、零 PARSE-FAIL，命中頁 500**。
+- ⚠ **2000 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/00s/2000/`**（**與 2002 年同形，不是 90s 那個目錄**），**全年 52 期都是 `BB-YYYY-MM-DD.pdf`（週六）**。
+  **抓法照 c-155 b 第 1362 條的「枚舉當年週六＋`Range: bytes=0-64` 探測」**：**枚舉 2000 年全部 53 個週六，52 個回 `206`、只有 `2000-01-01` 回 404**；**先用 1999-01-16 驗證過檔名形狀才跑目標年**。
+  ⚠ **2000 年第一期是 01-08，全年 52 期**（與 1999 的 51 期不同）。
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白，**存的是命中頁不是全文**。
+- ⚠ ⚠ **本棒踩到並修掉的一個坑，值得記**：**第一版關鍵字集裡放了 `elling`／`tonic`／`moran`／`shim`／`for the love` 這類短字串，命中頁一口氣衝到 2,030 頁（全年 20 MB）**——
+  **`elling` 會命中 `selling`／`telling`，`tonic` 會命中一堆非本碟的字**。**改成「A 級關鍵字（全名／盤名／目錄號／榜名）直接收；通用短語只在同頁另有 `blue note`／爵士榜名時才收」之後，降到 500 頁**。
+  **→ 給後批：抓 OCR 時先跑一年、看命中頁數量級；1999 年是 338 頁、2000 年是 500 頁，若出現四位數就是關鍵字太鬆。**
+- ⚠ **本棒靠這份紙本定下來的關鍵證據**：
+  **Kurt Elling 的街頭日（01-08 p32 `BLUE NOTES` 專欄逐字 `due Jan. 11`）**、
+  **Jackie McLean 的美版評介（02-05 p40 逐字 `PRODUCERS: Hitoshi Namekata, Jackie McLean Blue Note 23273`）**、
+  **Brian Blade 的整篇專欄與街頭日（04-08 p38 逐字 `(Blue Note, April 11)`，含七人團員名單與 Lanois／Mitchell 參與）**、
+  **Dianne Reeves 的專文（06-10 p16）與 SPOTLIGHT 評介（07-29 p22）**、
+  **Jason Moran 的街頭日（07-01 p16 逐字 `due Tuesday (27)`）**、
+  **《The Dropper》與《Who's on First?》同一段的街頭日（09-16 p92 逐字 `Oct. 24 on Blue Note` 兩次）**、
+  **Everette Harp 的第四季發行預告（09-16 p92）與評介（11-04 p26 的 MMW 評介同頁）**、
+  **以及七張碟的榜位（Top Jazz／TOP CONTEMPORARY JAZZ／Heatseekers／Top Independent）**。
+- ⚠ **2000 年的 Billboard 仍然分兩張爵士榜**（第 879／1068 條到 2000 年仍成立）：`Top Jazz Albums` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，**`Jazz → Jall／Jail` 的 OCR 形變到 2000 年還在**（本棒的關鍵字集已含三種變體）。
+- **到此合計覆蓋：Billboard 1955→2000 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**⚠ **2001 年在本棒收工時（18:47）已由另一個並行工作階段開始抓（工作區出現 `billboard-bn-2001-ocr.txt.gz`），本棒沒有動它。**
+
+---
+
+## 第 1424 條（同批）：**紙本誤讀——本組擋下六次，其中兩次是同姓不同人、一次是同名的出版公司、一次是紙本自己印錯盤名**
+
+| # | 命中 | 實際指的是什麼 | 會造成什麼錯 |
+|---|---|---|---|
+| 1 | ⚠ ⚠ **Billboard 2000 全年的 `dorough`**（01-29 p14、06-17 p107、08-05 p57、09-16 p18……） | **Backstreet Boys 的 Howie Dorough**（網路直播、Lupus 慈善演出、Track Record 側記） | **把男團成員的新聞當成 Bob Dorough 的動態**；**本年他出現的頻率遠高於爵士的那一位** |
+| 2 | **`everything i love`（2000-01-15 p24／05-06 p34）** | **George Strait 單曲的出版商欄逐字 `Everything I Love Music/Acuff-Rose Music, BMI`** | **把一家音樂出版公司當成 Eliane Elias 的碟**（**第 1360 條那張表的新形狀：同名的不是人也不是碟，是公司**） |
+| 3 | ⚠ **2000-04-08 p4 的目錄把盤名印成 `\"Perpetual\"`** | **同一期 p38 的內頁是正確的 `Perceptual`** | **同一期自己前後矛盾**；**日後查這張碟的紙本，`Perpetual` 這個拼法也要掃** |
+| 4 | **2000-01-15 p68 的第 42 屆葛萊美提名名單裡的 `Chucho Valdés, Blue Note`** | **是 c-155 b 已收的《Briyumba Palo Congo》，不是本組的《Live at the Village Vanguard》** | 把獎項掛到錯的碟（**第 1360 條「同一位藝人同年兩張碟」的第七次**） |
+| 5 | **2000-01-22 p46／06-24 p115 的 `Greg Osby`** | **前者是 Uri Caine 的 Goldberg 計畫（Osby 是客座）、後者是爵士研討會上 Tom Evered 談 Blue Note 如何培養他** | 把側人提及與產業報導當成《The Invisible Hand》的評介 |
+| 6 | **2000-04-22 p12 的 `vibist Stefan Harris`** | **是 Stefon Harris**（同場還有 Patricia Barber 與 Charlie Hunter 的 Blue Note/EMI 新人場） | **紙本把人名拼錯**——**查 `Stefon` 查不到、查 `Stefan` 才有** |
+
+⚠ **第 1／6 兩筆合起來是第 1301 條的續筆**：**短字串是別人的子字串（`dorough`）、正確拼法在紙本裡是錯的（`Stefan`）——兩個方向都要防。**
+
+---
+
+## 第 1425 條（同批）：**MB 這一批的毛病**（第 1183／1209／1237／1269／1331／1364／1393 條那張表的續筆）
+
+| # | 毛病 | 本組樣本 |
+|---|---|---|
+| 1 | **`catno` 欄整欄空** | **Dorough／Reeves／Harp／Shim／Perceptual 美版五筆**——**五張碟的目錄號全部要從 Discogs 補** |
+| 2 | **`catno` 抄成模壓字串或緊縮形** | **Boltro 的 `F: PM 808`**、**McLean 的 `5232732`**、**Tonic 美版的 `7243 5 2527120`** |
+| 3 | **`track-count` 與軌目列表不一致** | **Valdés《Live at the Village Vanguard》登 9 軌、軌目列 10 個標題**；**Elias《Everything I Love》登 13 軌、軌目列 16 個（MB 把三個 `Introduction #n/曲名` 拆成兩軌）** |
+| 4 | **同一張碟兩個 release 共用同一個 barcode** | **《Perceptual》的 a1f99704（XE 無日期）與 b4cdbacb（US 2000-04-11）同 `724352357123`**；**《Charlie Hunter》的 3cbada4c（US）與 de978230（XE）同 `724352545025`** |
+| 5 | **空殼 release** | **《It Club Volume 2》的 c29cb3a6（GB，media format 為 null、無廠牌、無 barcode）**；**《Charlie Hunter》的 e5a569da（2006-10-27，無 catno、無 barcode）** |
+| 6 | **只建了部分版本** | **完全沒建日版的有五張**（Nature Boy 的 `TOCJ-68045`、New Directions 的 `TOCJ-68044`、Valdés 的 `TOCJ-66085`、Charlie Hunter 的 `TOCJ-66086`、Perceptual 的 `TOCJ-66096`、Tonic 的 `TOCP-65445`）——**而其中兩張的日版正是年份判斷的關鍵（第 1414 條）** |
+| 7 | **RG 的 credit 與 release 的 credit 不同** | **《52nd Street Themes》RG 掛 `Joe Lovano`、兩筆 release 都掛 `Joe Lovano Nonet`** |
+| 8 | ⚠ **（本組新增）`genres` 與 `tags` 全空的比例仍高** | **21 張裡 6 張兩欄皆空**（Too Much Coffee Man／In the Moment／Turbulent Flow／The Invisible Hand／Facing Left 的 tags 部分／Out Takes）——**呼應簡報附錄「列舉腳本拿 artist 層判曲風」那個根因：release-group 層也不是每張都有** |
+
+---
+
+## 第 1426 條（同批）：**店面——三種查法在本組各救回不同的碟；`lookup?upc=` 這一次救回四張，但也有三張反而失效**
+
+| 卡 | `search` us | `search` jp／fr | `lookup?upc=` |
+|---|---|---|---|
+| **Flavio Boltro《Road Runner》** | **零命中** | **jp 命中 695992109**（fr 零命中） | — |
+| **Dianne Reeves《In the Moment》** | **三市場全零** | — | ⚠ **`724352514120` 命中 738332243** |
+| **Jackie McLean《Nature Boy》** | **三市場全零**（回的是 Glee Cast／Luther Vandross／Al Green 等同名曲的碟） | — | ⚠ ⚠ **`724352327324` 命中 738336042——而且正是它給出 1999-09-22 與 ℗ 1999 EMI Music Japan，本組唯一那張改判就靠這一步** |
+| **New Directions** | **三市場全零**（四人聯名字串查不到） | — | ⚠ **`724352297825` 命中 716409560（掛名登成 `New Directions`）** |
+| **Charlie Hunter《Charlie Hunter》** | 零命中 | **fr 命中 724776917** | 同一條 |
+| **Kurt Elling《Live in Chicago》** | 零命中 | **fr 命中 723467420** | 同一條 |
+| **Eliane Elias《Everything I Love》**／**Jason Moran《Facing Left》** | 零命中 | **jp／fr 命中** | 同一條 |
+| ⚠ **Bob Dorough & Dave Frishberg《Who's on First?》** | **三市場都命中 723535815** | — | ⚠ **`724352340323` 零命中**（**UPC 查法反而失效**） |
+| ⚠ **Ronny Jordan《A Brighter Day》** | 零命中 | jp／fr 命中 725789804 | ⚠ **兩個 barcode 都零命中** |
+| ⚠ **Kurt Elling《Live in Chicago - Out Takes》** | **三種查法全空** | 三種查法全空 | **三種查法全空**（澳洲限定盤） |
+
+⚠ **第 1246／1365 條「us 查無不等於店面沒有」在本組成立八次**，**「`lookup?upc=` 救回」四次**，**「三種查法全空」一次**。
+⚠ **Apple 的歪法本組全中**：**年頭回填 12 張**、**整整標歪一年 1 張（A Brighter Day 標 1999、℗ 卻是 2000）**、
+**copyright 寫後來的重發年 3 張（The Dropper 的 ℗ 2013、Perceptual 兩筆的 ℗ 2013／2014）**、
+**同一張碟回兩個條目 2 張（The Dropper／Perceptual）**、**releaseDate 填成演出日 1 張（It Club 第一批的 `1970-03-06`，同頁混進來的）**。
+⚠ **CAA**：**21 張裡 4 張 RG 層 0 圖**（Road Runner／For the Love／Tonic ＋ 已退的 Live at the Lighthouse，**全部三次探測確認真 404**）；
+**最多的是《Everything I Love》8 圖**；⚠ **3 張的來源不是美版原壓**（Nature Boy 來自 2000 美版而非 1999 日版首發、Perceptual 來自無日期的 XE 筆、New Directions 來自 XE 筆）——**研究層要核封面版式。**
+
+---
+
+## 第 1427 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案**
+
+- **`batch-progress/c156/prop-b.json`：21 張、19 位**（**兩張卡共用 `Kurt Elling`、兩張共用 `Medeski Martin & Wood`**）。**第 315 條：21 ＋ 退表 1 ＝ 22 ✓。**
+- **`node batch-progress/c156/chk-prop.mjs b` → 標記 0**（119 批、4,836 卡、跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0）。
+- **中間檔**（scratchpad `c156b/`，第 533 條，**不在 repo 內**）：
+  `mbfetch.py`＋`mb/`（**22 筆 × 2 端點 ＝ 44 個 JSON，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s、零 FETCH-FAIL**；⚠ **artist 反查時中過一次 503，退避重試後補齊**）、
+  `summ.py`＋`mbsumm.txt`、`dg.py`＋`dgrun.py`＋`dgcache/`（Discogs `barcode=`／`artist`+`release_title`／`q=`／`catno=` 四種查法 ＋ release／master／versions 明細）、
+  `store.py`＋`stcache/`（Apple `search`／`lookup?upc=` × us／jp／fr ＋ CAA RG 層探測）、
+  `poolscan.mjs`＋`trkscan.mjs`（**掃 `seed_cards.json` ＋ `desc-tools/batches/cards/`（193 檔）＋ 所有 `batch-progress/c1*/prop-*.json`（107 檔），合計 27,666 列；另把本批 250 餘個軌名逐一比對池中卡名**）、
+  `harvest.py`＋`bbtext/`（**2000 年 52 期，4 shard 並行**）＋`bb2000.txt`＋`ctx.py`、
+  `build/lib.py`＋`build/b1.py`～`b4.py`（**分四次寫 prop，每 5–6 筆落一次磁碟，符合續跑要求**）。
+- **本棒改動的檔案（三個）**：
+  1. **`batch-progress/c156/prop-b.json`（21 張）**；
+  2. **`batch-progress/c156/rulings.md`（append 第 1410–1427 條；a 組的第 1380–1395 條一字未改）**；
+  3. **`batch-progress/enum/billboard-bn-2000-ocr.txt.gz`（新建）＋ `batch-progress/enum/SOURCES-billboard-cashbox.md`（末尾 append 一段）**。
+  **沒有動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`batch-progress/enum/blue-note.json`／
+  `batch-progress/c156/slice.json`／`batch-progress/c156/chk-prop.mjs`／**`batch-progress/c156/prop-a.json`**／git。
+- ⚠ **號段**：b 組用 **1410–1427**，**1428–1439 留白**。
+
+**給 c-157 起的批次的六句話**：
+1. **Billboard 2000 全年已入庫**（`billboard-bn-2000-ocr.txt.gz`，52 期，第 1423 條）——**直接 `zgrep`；2001 年在本棒收工時已由另一支並行工作階段開始抓，2002 年早就有。**
+2. ⚠ ⚠ **抓 OCR 時關鍵字要分兩級**（第 1423 條）：**短字串（`elling`／`tonic`／`shim`）當通用詞用會讓命中頁爆到四位數**；**A 級（全名／盤名／目錄號／榜名）直收、通用短語要同頁有 `blue note` 或爵士榜名才收。**
+3. ⚠ ⚠ **2000 年前後有一條「日本 Somethin' Else 先出、隔年美歐跟進」的線**（第 1414 條）——**Apple 的 copyright 寫 `Somethin' Else Records, a division of EMI Music Japan` 就是訊號；查到日版更早時，先比盤名／掛名／軌數／封面四項再決定取哪一年。**
+4. **Discogs 原壓群指向更早年份時，先看那幾筆有沒有 `released` 日期**（第 1415 條）——**只有 `year` 的那種多半是抄盤面 ℗。**
+5. **列舉檔的 `catno` 欄帶 `F:`／`PM`／`UK:` 前綴的，是模壓環代碼不是目錄號**（第 1422 條）——**去 Discogs 廠牌欄拿真的目錄號再反查。**
+6. **`live: true` 且 `nReleases: 1` 的 2000 年碟，要用 Discogs master 反查一次原壓年**（第 1412 條）——**本組就是這樣抓到一張 1967 年的 LP 被分到 1985 後那一段。**
