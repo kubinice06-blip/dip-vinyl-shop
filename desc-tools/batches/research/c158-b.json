@@ -1,0 +1,264 @@
+[
+ {
+  "key": "desc2:Greg Osby|St. Louis Shoes",
+  "artist": "Greg Osby",
+  "album": "St. Louis Shoes",
+  "facts": [
+   {
+    "f": "release-group `fc66b96a-3064-33bf-a979-d8c11491f726`：title「St. Louis Shoes」、artist-credit `Greg Osby`（`bbef05c0` Person，disambiguation「American jazz saxophonist」）、first-release-date 2003、primary-type Album、secondary-types 空、genres 與 tags 皆 `jazz`；**轄下只有一筆 release `c9f6a171`**（2003 XE Official CD **9 軌**，Blue Note `713c4a95` 目錄號 `7243 5 81699 2 8`，barcode 724358169928）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/fc66b96a-3064-33bf-a979-d8c11491f726?fmt=json&inc=artist-credits+releases+genres+tags"
+   },
+   {
+    "f": "**錄音日、混音日與五人編制逐字在盤面上**：Discogs 歐版 `2652327` 的 notes 逐字「**Recorded at Systems Two, N.Y. 1/22/03 & 1/23/03. Mixed at Systems Two, N.Y. 1/31/03 & 2/1/03.**」；credit 十五筆為 **Greg Osby（alto saxophone，另掛 `Arranged By [All Arrangements By]` 與 `Producer [Produced By]`）、Nicholas Payton（trumpet, flugelhorn）、Harold O'Neal（piano）、Robert Hurst（bass）、Rodney Green（drums）**，製作群為 Joe Marciano（錄音與混音）、Kurt Lundvall（母帶）、Ted Panken（內頁文案）、Kay Vaughn（associate producer）、Burton Yount（美術）。**五人編制全碟固定、沒有逐軌客座。**",
+    "src": "https://api.discogs.com/releases/2652327"
+   },
+   {
+    "f": "⚠ **九軌沒有一首是 Osby 自己的曲子**——Discogs 美版 `7911690` 與歐版 `2652327` 的逐軌 `Written-By` 欄逐字一致：〈East St. Louis Toodle-Oo〉與〈The Single Petal of a Rose〉是 Duke Ellington、〈Shaw Nuff〉是 Charlie Parker 與 Dizzy Gillespie、〈Light Blue〉是 Thelonious Monk、〈Summertime〉是 George Gershwin／Ira Gershwin／DuBose Heyward、〈Milton on Ebony〉是 Jack DeJohnette、〈Bernie's Tune〉是 Bernie Miller 與 Jerry Leiber／Mike Stoller、〈St. Louis Blues〉是 W. C. Handy、〈Whirlwind Soldier〉是 Cassandra Wilson。**盤名指向的是壓軸那首 Handy 1914 年的〈St. Louis Blues〉。**",
+    "src": "https://api.discogs.com/releases/7911690"
+   },
+   {
+    "f": "**與 Nicholas Payton 是生平第一次同進錄音室**：Billboard 2004-01-24 第 15 頁 Jazz Notes 逐字「**For the first time, Osby recorded with trumpeter Nicholas Payton on the former's \"St. Louis Shoes\" CD**」；同一頁引 Osby 自述 2003 年的計畫是「**I decided to dedicate myself to collaborating, performing and recording with a host of people I've had respect for from afar but end up only relating to in passing at airports**」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2004/BB-2004-01-24.pdf"
+   },
+   {
+    "f": "**廠牌自家紙本的發行公告**：Billboard 2003-05-31 第 75 頁是 Blue Note 的全版廣告，下半「AND ON THE HORIZON, NEW ALBUMS FROM...」欄逐字列出 `GREG OSBY ST LOUIS SHOES`；同一頁廣告文案逐字寫該廠牌當年「**received nine GRAMMYs, won both the Down Beat and JazzTimes Critics Poll for LABEL OF THE YEAR and was named Billboard's TOP CONTEMPORARY JAZZ LABEL of the year**」，並宣告簽下 Van Morrison 與 Terence Blanchard。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-05-31.pdf"
+   },
+   {
+    "f": "店面：Apple us `724762428`（Greg Osby《St. Louis Shoes》，**9 軌、9 軌全部回得到 `previewUrl`**，copyright 欄逐字「℗ 2003 Blue Note Records」）。",
+    "src": "https://itunes.apple.com/lookup?id=724762428&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "一張叫《聖路易的鞋》的碟，九首曲子沒有一首是他寫的：Ellington 兩首、Monk 一首、Parker 與 Gillespie 一首，壓軸是 W. C. Handy 1914 年的〈St. Louis Blues〉",
+   "他 2003 年替自己許的願是去找那些「只在機場擦身而過」的人合作，成果就是這張——與 Nicholas Payton 生平第一次同進錄音室"
+  ],
+  "sound": "九軌的五重奏錄音室盤，2003 年 1 月 22 與 23 日錄於紐約布魯克林的 Systems Two，同年 1 月 31 日與 2 月 1 日在同一間混音。編制全碟固定：Greg Osby 的中音薩克斯風、Nicholas Payton 的小號與短號、Harold O'Neal 的鋼琴、Robert Hurst 的貝斯、Rodney Green 的鼓；Osby 自己製作、也包辦全部編曲。曲目全是別人的東西，從 Ellington 1926 年的〈East St. Louis Toodle-Oo〉一路排到 W. C. Handy 的〈St. Louis Blues〉，中間插進 Monk、Parker 與 Gillespie、Gershwin、Jack DeJohnette 與 Cassandra Wilson。",
+  "keyTracks": [
+   "East St. Louis Toodle-Oo",
+   "St. Louis Blues",
+   "Whirlwind Soldier",
+   "Shaw Nuff"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2003 成立，本層未改判。** (1) **MB first-release-date 2003**（只到年，唯一一筆 release 的 date 欄同值）。 (2) **Discogs 原壓群**：歐版 `2652327` 與美版 `7911690` 的 `year` 欄都是 2003，兩筆都沒有完整街頭日。 (3) **紙本**：Billboard 2003-05-31 第 75 頁的 Blue Note 全版廣告把本碟列在「ON THE HORIZON」欄，**確認 2003 年發行與廠牌歸屬，但依第 1487 條廣告不是街頭日、不能拿來定月日**。 (4) **店面**：Apple `724762428` 的 ℗ 欄是 2003。 ⚠ **錄音年與發行年同為 2003**（1 月錄、年內發），沒有演出日汙染的空間。**月日本層同樣查不到，`year` 取 2003。**",
+  "notes": "⚠ ⚠ **推翻策展層一點（本張最重要的一筆）**：卡單 `curatorWhy` 寫「跟他自己的〈Light Blue〉／〈Whirlwind Soldier〉／〈Milton on Ebony〉並置」——**三首都不是 Osby 寫的**。Discogs 美版 `7911690` 與歐版 `2652327` 的逐軌 `Written-By` 欄兩筆一致：〈Light Blue〉是 Thelonious Monk、〈Milton on Ebony〉是 Jack DeJohnette、〈Whirlwind Soldier〉是 **Cassandra Wilson**。**→ 全碟九軌零原創，正文絕不可寫「他自己的曲子」。**｜⚠ ⚠ **同批交叉**：〈Whirlwind Soldier〉的作者 Cassandra Wilson 就是本組第 7 張卡《Glamoured》的主人，兩人同屬 1980 年代的 M-Base 圈子——**兩卡 risk 可互指**。｜⚠ **與同組《Public》的關係**：兩張重疊三軌（〈Summertime〉〈Shaw Nuff〉〈Bernie's Tune〉），Billboard 2004-02-21 第 22 頁逐字說 Osby 是帶著「his St. Louis Shoes Ensemble」去 Jazz Standard 錄現場的——**關係緊密但不是同一張碟，正文要寫清楚**。｜⚠ **編制**：release-level 十五筆完整、逐軌欄只有作者，**屬第 1547 條的「release-level 完整」形狀，直接照抄即可**。｜⚠ ⚠ **封面**：**CAA release-group 層本層實測回 404（已確認）**。替代來源用 **Discogs 歐版 `2652327` 的 `images[0]`（primary，600×595）**，次選 Apple `724762428` 的 artwork（檔名 `00724358169959.jpg`）。**美版 `7911690` 只有一張 355×353 的 secondary，不堪用。**｜⚠ **本組另一張 Osby 卡《Public》的封面是另一張圖（Apple 檔名 `00724359768359.jpg`、Discogs `2659012`），兩張不可互套。**｜**載體**：MB 一筆與 Discogs 原壓群全是 CD，**本層查不到 2003 年的同期黑膠**。｜**(戊) 前置閘**：歐版零售盤廠牌欄第一格 Blue Note、companies 欄有「EMI Marketed By／Distributed By」與「Blue Note Records Phonographic Copyright (p)」，**過閘成立**。｜**軌數**：MB 與 Discogs 兩版皆 9 軌，**無日版、無軌數分歧**。"
+ },
+ {
+  "key": "desc2:Martial Solal|NY-1, Live At The Village Vanguard",
+  "artist": "Martial Solal",
+  "album": "NY-1, Live At The Village Vanguard",
+  "facts": [
+   {
+    "f": "release-group `68f6b5ac-fc16-480d-aa4f-5821abd9f370`：title「NY-1, Live At The Village Vanguard」、artist-credit `Martial Solal`（`13b00208` Person）、first-release-date 2003、primary-type Album、**secondary-types 空（MB 沒有替這張現場盤標 Live）**、genres 與 tags 皆 `jazz`；轄下只有一筆 release `23924ebb`（2003 US Official CD **7 軌**，Blue Note `713c4a95` 目錄號 `7243 5 84391 2 0`，barcode 724358439120）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=68f6b5ac-fc16-480d-aa4f-5821abd9f370&fmt=json&inc=media+labels+recordings"
+   },
+   {
+    "f": "**這是 2001 年 9 月 21 至 23 日在紐約 Village Vanguard 的三重奏現場**：Discogs 美版 `12910544` 的 notes 逐字「**Recorded 21-23 Sep, 2001 in NYC**」，companies 欄逐字掛 `Village Vanguard — Recorded At`；credit 六筆為 **Martial Solal（piano）、François Moutin（bass）、Bill Stewart（drums）**，製作人是 Dan Doyle 與 Nicolas Pflug、錄音是 Mantis Evar。**錄音到發行隔了兩年。**",
+    "src": "https://api.discogs.com/releases/12910544"
+   },
+   {
+    "f": "**七軌裡三首是標準曲、四首是團內自己的曲目**：Discogs 美版 `12910544` 的逐軌作者欄——〈What Is This Thing Called Love〉是 Cole Porter、〈Body & Soul〉是 Johnny Green 與 Edward Heyman／Robert Sour／Frank Eyton、〈Softly as in a Morning Sunrise〉掛 Oscar Hammerstein II；〈NY-1〉〈Suspect Rhythm〉〈Zag Zig〉〈Lombardy〉四首掛 Solal 這個姓。**兩首標準曲的長度是全碟重心——〈What Is This Thing Called Love〉14 分 08 秒、〈Softly as in a Morning Sunrise〉13 分整。**",
+    "src": "https://api.discogs.com/releases/12910544"
+   },
+   {
+    "f": "歐版是另一個目錄號且加了防拷：Discogs `4901573`（Europe 2003，Blue Note `7243 5 84232 2 8`，format 欄逐字帶 `Copy Protected`），軌目與美版完全相同、逐軌作者欄空白。**同一張碟在美歐各壓一次、目錄號不同。**",
+    "src": "https://api.discogs.com/releases/4901573"
+   },
+   {
+    "f": "**廠牌自家紙本的發行公告**：Billboard 2003-05-31 第 75 頁 Blue Note 全版廣告的「AND ON THE HORIZON, NEW ALBUMS FROM...」欄逐字列出 `MARTIAL SOLAL` 與盤名 `NY-1`，與 STEFON HARRIS、GREG OSBY、JOE LOVANO、NORAH JONES、CASSANDRA WILSON、VAN MORRISON、TERENCE BLANCHARD、PAT MARTINO 同列。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-05-31.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "1927 年生的他，七十四歲那年才第一次以領班身分在 Village Vanguard 留下錄音——而且一上台就把〈What Is This Thing Called Love〉拆了十四分鐘",
+   "錄的是 2001 年 9 月 21 到 23 日的紐約，離世貿雙塔倒下只有十天；碟名就叫《NY-1》"
+  ],
+  "sound": "七軌的鋼琴三重奏現場，2001 年 9 月 21 至 23 日錄於紐約 Village Vanguard：Martial Solal 的鋼琴、François Moutin 的貝斯、Bill Stewart 的鼓。曲目一半是團內自己的〈NY-1〉〈Suspect Rhythm〉〈Zag Zig〉〈Lombardy〉，另一半是被拆解到認不太出來的標準曲——〈What Is This Thing Called Love〉拉到十四分鐘、〈Softly as in a Morning Sunrise〉十三分鐘、〈Body & Soul〉八分鐘。錄音由 Mantis Evar 負責，Dan Doyle 與 Nicolas Pflug 製作。",
+  "keyTracks": [
+   "NY-1",
+   "What Is This Thing Called Love",
+   "Softly as in a Morning Sunrise",
+   "Lombardy"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2003 成立，本層未改判。** (1) **MB first-release-date 2003**（只到年）。 (2) **Discogs 原壓群**：美版 `12910544` 與歐版 `4901573` 的 `year` 欄都是 2003，**兩筆都沒有 `released` 完整日期**。 (3) **紙本**：Billboard 2003-05-31 第 75 頁的廠牌廣告把本碟列在「ON THE HORIZON」欄，**確認 2003 年，但依第 1487 條廣告不是街頭日**；本層另掃 2003 與 2004 兩年全年的 `solal`，**除這一頁外的命中全是 Gotan Project 的 Philippe Cohen Solal，與本碟無關**。 ⚠ ⚠ **(4) 錄音年 2001 與發行年 2003 差兩年，絕不可把 2001 當 `year`**（第 1550 條的演出日汙染，本層覆核成立：沒有任何來源把 2001 當發行年）。**`year` 取 2003，月日查無。**",
+  "notes": "⚠ ⚠ **串流救援失敗，維持 `unavailable`（逐項實查如下）**：(a) **UPC `724358439120` 在 us／gb／fr／de／it／jp／ca／nl／se／fi／dk／no／es／pl／ch／be／at 十七個市場 `lookup?upc=` 全部 0 命中**；(b) **`search` 以「Martial Solal NY-1」在 fr／it／de／ch／be／at 六個市場全部 0 命中**；(c) **`search` 以「NY-1 Village Vanguard」在 fr／us／jp／de／it／se／fi／dk／no／nl／be／ch／at／es／pl／br／mx／au／ca／gb／tw 二十一個市場，回來的結果沒有一筆是 Solal**；(d) **fr 店面的 `Martial Solal` 全目錄逐筆看過（25 筆），唯一一張凡加德現場是 `292795072`《Live At the Village Vanguard》11 軌、`℗ 2008 Cam Jazz`——主線第 1560-B 條已排除，本層覆核成立，不是同一張碟。** **→ 這張碟在 Apple 全球店面確實不存在，不是查法問題。**｜⚠ **作者欄有疑義、正文不要指名**：Discogs 美版把〈NY-1〉掛 `Claudia Solal` 與 `Martial Solal` 兩人，〈Suspect Rhythm〉〈Zag Zig〉〈Lombardy〉三首**只掛 `Claudia Solal`**（Martial 的女兒、歌手）。**這很可能是 Discogs 把姓氏連錯實體**；MB 這一筆沒有 work 關係可以交叉驗證，歐版逐軌欄又是空的。**→ 標 uncertain，正文寫「團內自己的曲目」即可，不要寫成某人作曲。**｜⚠ **〈Softly as in a Morning Sunrise〉的作者欄只掛 Oscar Hammerstein II（作詞），漏了作曲的 Sigmund Romberg**——Discogs 這一格不完整，正文不要照抄。｜⚠ ⚠ **`slice.json` 把本張標成 `live: false` 是錯的**（第 1550 條）：盤名裡有 `Live`、Discogs notes 寫明錄音日與地點、companies 欄掛 `Village Vanguard — Recorded At`，**而 MB 的 secondary-types 也漏標**——兩邊同時漏。**正文必須寫成現場盤。**｜⚠ **撞陳列**：池中有七個不同藝人的 Village Vanguard 現場盤（第 1545 條），**本組內就有 Joe Lovano Nonet《On This Day...At The Vanguard》同店不同年**；**上架比對一律帶 catno `84391`。**｜**載體**：MB 一筆與 Discogs 兩筆全是 CD，**查不到同期黑膠**。｜**封面不缺**：CAA release-group 層有圖；備援可用 Discogs 美版 `12910544` 的 primary（500×478，偏小）。｜**(戊) 前置閘**：美版零售盤廠牌欄第一格 Blue Note、第二格 Village Vanguard，**過閘成立**。"
+ },
+ {
+  "key": "desc2:Van Morrison|What's Wrong With This Picture?",
+  "artist": "Van Morrison",
+  "album": "What's Wrong With This Picture?",
+  "facts": [
+   {
+    "f": "**這是他在 Blue Note 的第一張**，發行日在紙本上有逐字證據：Billboard 2003-09-20 第 96 頁的 Bruce Lundvall 專訪逐字「**Among Lundvall's most recent signings are veteran vocalists Van Morrison and Al Green. Morrison's first Blue Note CD, the blues- and jazz-infused \"What's Wrong With This Picture?,\" will be released Oct. 21**」；同一段接著寫 Al Green 的廠牌首作《I Can't Stop》11 月 18 日跟進。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-09-20.pdf"
+   },
+   {
+    "f": "**商業成績**：本碟 2003-11-08 那期以第 32 名進 The Billboard 200，**32 也是它的最高名次**（此後 11-22、11-29、12-06、12-13、12-27 與 2004-01-10 各期的 peak 欄都維持 32）。**銷量**：Billboard 2004-02-28 第 73 頁逐字「**Morrison's \"What's Wrong With This Picture?\" has sold 232,000 copies, according to Nielsen SoundScan, while Green's \"I Can't Stop\" has moved 204,000 units**」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-11-08.pdf"
+   },
+   {
+    "f": "⚠ **獎項要分清楚**：本碟入圍 **2005 年第 47 屆葛萊美的最佳當代藍調專輯（Best Contemporary Blues Album）**（Billboard 2004-12-18 第 57 頁的入圍名單逐字列出），**但沒有得獎**——該屆該獎由 Keb' Mo'《Keep It Simple》拿下（Billboard 2005-02-26 第 58 頁的得獎名單）。**同屆同獎的另一位入圍者是同廠牌的 Dr. John《N'awlinz Dis Dat or D'udda》。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2005/BB-2005-02-26.pdf"
+   },
+   {
+    "f": "**錄音地與逐軌編制**：Discogs 美版 `2631761` 的 notes 逐字「**All tracks recorded at The Wool Hall, Kilmurray House and Westland Studios. Strings recorded at Windmill Lane. All tracks mixed at The Wool Hall and Windmill Lane. Mastered at Metropolis.**」；**release-level 十四筆 credit 裡一個樂手都沒有，樂手全部掛在逐軌欄、共 104 筆**，班底逐軌變動——最常出現的是 David Hayes（bass）、Bobby Irwin 與 Liam Bradley（drums）、Ned Edwards 與 Foggy Lyttle（electric guitar）、Richard Dunn（Hammond organ）、Martin Winning（tenor saxophone・clarinet）、Matt Holland（trumpet・flugelhorn・管樂編曲）、Lee Goodall（alto／baritone saxophone）；弦樂由 Irish Film Orchestra 演奏、Fiachra Trench 編曲、Alan Smale 領奏。錄音與混音由 Mick Glossop 負責大半軌，Brian Masterson 負責第 1、4、12 軌。",
+    "src": "https://api.discogs.com/releases/2631761"
+   },
+   {
+    "f": "⚠ **曲目歸屬與廠牌廣告的「11 首新作」完全對得上**：Discogs 美版逐軌 `Written-By` 顯示十三軌中十首由 Van Morrison 獨力創作、〈Somerset〉是他作詞而 Acker Bilk 與 David Collett 作曲（Acker Bilk 本人也在該軌吹單簧管）、〈Stop Drinking〉是 Lightnin' Hopkins 的曲子加他的補寫歌詞、〈Saint James Infirmary〉標 Traditional。**Billboard 2003-10-25 第 4 頁的 Blue Note／EMI 全版廣告逐字寫「His Blue Note debut features 11 NEW Van originals which, like his career, deftly incorporate blues, jazz and soul around the philosopher-poet musings of a master songwriter.」——十首獨力加一首合寫剛好十一首。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-10-25.pdf"
+   },
+   {
+    "f": "⚠ ⚠ **第 13 軌是〈Get On With The Show〉，不是〈Little Village (reprise)〉**：Discogs 美版 `2631761` 與英版 `3862829` 兩筆原壓的軌目逐字一致，第 11 軌〈Little Village〉、第 12 軌〈Fame〉、**第 13 軌〈Get On With The Show〉（5 分 38 秒，Van Morrison 作）**。英版 `3862829` 的 `released` 欄是 **2003-10-20**，比美版早一天。",
+    "src": "https://api.discogs.com/releases/3862829"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌廣告說這張碟有「十一首全新的 Van 原創」——逐軌對下去剛好：十首他獨力寫的，加上〈Somerset〉那首他作詞、Acker Bilk 作曲，而 Acker Bilk 本人就在那一軌吹單簧管",
+   "五十八歲才第一次簽進 Blue Note，理由寫在廠牌老闆嘴裡：他要的是「blues- and jazz-infused」的那個 Van Morrison"
+  ],
+  "sound": "十三軌的錄音室盤，2003 年 10 月 20 日英國、10 月 21 日美國發行，是他在 Blue Note 的第一張。錄音散在英格蘭的 The Wool Hall、愛爾蘭的 Kilmurray House 與都柏林的 Westland Studios，弦樂另在 Windmill Lane 錄、由 Irish Film Orchestra 演奏，母帶在 Metropolis。樂手逐軌變動，核心是 David Hayes 的貝斯、Bobby Irwin 與 Liam Bradley 的鼓、Ned Edwards 與 Foggy Lyttle 的吉他、Richard Dunn 的 Hammond 風琴，再加上 Martin Winning、Matt Holland、Lee Goodall 組成的管樂組。曲目十首是他自己的新作，另有 Lightnin' Hopkins 的〈Stop Drinking〉、傳統曲〈Saint James Infirmary〉，以及與 Acker Bilk 合寫的〈Somerset〉。",
+  "keyTracks": [
+   "What's Wrong With This Picture?",
+   "Saint James Infirmary",
+   "Somerset",
+   "Meaning of Loneliness"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2003 成立，本層未改判；但首發日要改寫成「英版早一天」。** (1) **紙本街頭日（最高效力）**：Billboard 2003-09-20 第 96 頁逐字「will be released Oct. 21」，指的是美國。 (2) **Discogs 原壓群**：**英版 `3862829` 的 `released` 欄是 2003-10-20**、美版 `2631761` 只有年份；MB 的兩筆（`d7aa46d5` US、`f91d3266` GB）都記 2003-10-21。 ⚠ **(3) 首發市場的判斷**：本碟的 ℗© 是 Van Morrison 自己的 **Exile Productions Ltd**「under exclusive license to EMI Records Limited」、錄音全在英國與愛爾蘭、英版另有 `UK: 590 1672` 這個本地號，**首發市場應視為英國／愛爾蘭，街頭日 2003-10-20（週一，英國當年的慣例）**；美版隔天 10-21（週二）。**兩者同年，`year` 一律 2003，不影響卡面。** (4) **店面**：Apple 的 releaseDate 欄是 `2003-10-21`（本組少數給真日期的一張）。",
+  "notes": "⚠ ⚠ **推翻卡單 `mbNote` 一點**：`mbNote` 抄 MB 的軌目把第 13 軌寫成〈Little Village (reprise)〉，**但 Discogs 美版 `2631761` 與英版 `3862829` 兩筆原壓的第 13 軌都是〈Get On With The Show〉**（5 分 38 秒，Van Morrison 作，樂手欄與其餘軌一樣完整）。**兩筆獨立盤面對上，MB 該欄有誤——正文與 keyTracks 一律照盤面。**｜⚠ **獎項的入圍／得獎已逐項分開查**：第 47 屆葛萊美最佳當代藍調專輯**入圍未得**，得獎的是 Keb' Mo'《Keep It Simple》（Billboard 2005-02-26 p57-58 的得獎名單）。**絕不可寫成「拿下葛萊美」。**｜⚠ **反向禁令歸類**：葛萊美入圍（2004 年 12 月公布、2005 年 2 月頒獎）晚於發行，但**與作品直接綁定**，屬可寫的一類，須標明時序。｜⚠ ⚠ **(戊) 前置閘的訊號不乾淨但過閘**：℗© 欄是 **Exile Productions Ltd**（藝人自己的公司）「under exclusive license to EMI Records Limited」，**Blue Note 只出現在 `Manufactured By`**；第二層證據是 Discogs notes 逐字「Manufactured by Blue Note Records」＋Billboard 2003-05-31 p75 的廠牌全版廣告列名＋2003-10-25 p4 的 Blue Note／EMI 廣告整頁在賣它。**第 1540 條覆核成立。**｜⚠ **編制是第 1367 條的原形**（第 1547 條）：**release-level 一個樂手都沒有、逐軌欄 104 筆**——**策展層若只看 release-level 會以為查不到編制**，本層已把逐軌撈完。｜⚠ **曲風 `['jazz','blues']` 成立**：MB 掛九個曲風、爵士只佔兩個，但紙本（Billboard 2003-09-20 p96）逐字「blues- and jazz-infused」，**池中先例與紙本兩者都有，第 1552 條的判準通過**。｜**載體**：Discogs 原壓群與 MB 六筆 release 全是 CD（含 Copy Control 版與卡帶），**查不到 2003 年的同期黑膠**。｜**封面不缺**：CAA 有 10 圖；備援 Discogs 美版 `2631761` 的 primary（592×600，19 圖裡最大的一組）。｜⚠ **宣傳盤不可當來源**：MB 的 `27c3a0ce`（US Promotion，只有 3 軌、無 catno）與 `f32f9da8`（XE Promotion）**兩筆都不採**（第 1505 條）。"
+ },
+ {
+  "key": "desc2:Kurt Elling|Man in the Air",
+  "artist": "Kurt Elling",
+  "album": "Man in the Air",
+  "facts": [
+   {
+    "f": "**街頭日與目錄號逐字在紙本上**：Billboard 2003-08-09 第 65 頁的樂評逐字「**KURT ELLING / Man in the Air / PRODUCERS: Kurt Elling, Laurence Hobgood, Bill Traut / Blue Note 7243 5 80834 / RELEASE DATE: July 22**」。⚠ **紙本引的 `80834` 是 MB 沒有建的那個美版號**（MB 只建 `7243 5 90948 2 2`）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-08-09.pdf"
+   },
+   {
+    "f": "**這張碟的主題是 vocalese，也就是替既有的器樂獨奏填詞**：Billboard 2003-08-09 第 16 頁的 Jazz Notes 整篇在談這件事，逐字「**Vocalese—the delicate art of setting lyrics to previously recorded solos—is one of the most difficult and mystical practices in jazz.**」與「**Eight of the 12 tracks on Elling's Blue Note album \"Man in the Air,\" released July 22, find the Chicago-based singer/composer melding lyrics to jazz pieces both familiar and obscure.**」，被他填詞的原作者包括 Pat Metheny、Grover Washington、Bobby Watson、Herbie Hancock 與 Joe Zawinul。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-08-09.pdf"
+   },
+   {
+    "f": "**編制與錄音地**：Discogs 美版 `5719614` 的 credit 二十三筆——**Kurt Elling（vocals，兼編曲與 co-producer）、Laurence Hobgood（piano・electric piano，兼編曲與 co-producer）、Rob Amster（bass）、Frank Parker（drums, percussion）、Stefon Harris（vibraphone）、Jim Gailloreto（soprano saxophone）**，第 1 軌另有 **Paul Wertico（drums）與 Brad Wheeler（soprano saxophone）**；Bill Traut 是第三位 co-producer。錄音在 Chicago Recording Company、混音在 Capitol Studios 由 **Al Schmitt** 操刀、母帶在 DB Plus。`released` 欄逐字 2003-07-22。",
+    "src": "https://api.discogs.com/releases/5719614"
+   },
+   {
+    "f": "⚠ **獎項要分清楚**：本碟入圍 **2004 年第 46 屆葛萊美的最佳爵士人聲專輯（Best Jazz Vocal Album）**，同屆同獎的其他入圍者是 Shirley Horn《May the Music Never End》、Aaron Neville《Nature Boy: The Standards Album》、Dianne Reeves《A Little Moonlight》與 Luciana Souza《North and South》（Billboard 2003-12-13 第 73 頁的入圍名單）。**沒有得獎**——該屆該獎由 Dianne Reeves《A Little Moonlight》拿下（Billboard 2004-02-21 第 66 頁的得獎名單逐字「Best jazz vocal album: \"A Little Moonlight,\" Dianne Reeves (Blue Note Records)」）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2004/BB-2004-02-21.pdf"
+   },
+   {
+    "f": "**商業成績**：本碟以 `BLUE NOTE 80834` 的目錄號進 Billboard 的 Top Jazz Albums 榜，2003-08-09 第 86 頁首見，2003-08-23 第 70 頁、09-06 第 60 頁與 10-04 第 76 頁各期續在榜上。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-08-23.pdf"
+   },
+   {
+    "f": "店面：Apple us `724527810`（《Man In the Air (feat. Laurence Hobgood & Stefon Harris)》，12 軌、2003 年），**主線已逐軌實查 12／12 都回得到 `previewUrl`**，且卡池裡沒有第二張卡用這個 id。",
+    "src": "https://itunes.apple.com/lookup?id=724527810&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "十二首裡有八首是 vocalese——把別人錄過的器樂獨奏一個音一個音填上詞，被他填的包括 Pat Metheny、Herbie Hancock 與 Joe Zawinul",
+   "第 46 屆葛萊美最佳爵士人聲專輯，他跟 Dianne Reeves 同時入圍、同一家廠牌，最後獎是她的"
+  ],
+  "sound": "十二軌的人聲爵士盤，2003 年 7 月 22 日發行。錄音在芝加哥的 Chicago Recording Company，混音由 Al Schmitt 在 Capitol Studios 完成。核心是他跟鋼琴手 Laurence Hobgood 的長期搭檔關係——兩人一起編曲、一起掛製作——再加上 Rob Amster 的貝斯、Frank Parker 的鼓、Jim Gailloreto 的高音薩克斯風，以及客座的 Stefon Harris 顫音琴；開場的〈Minuano (Vocal Version)〉另請 Paul Wertico 打鼓、Brad Wheeler 吹高音薩克斯風。全碟十二首有八首走 vocalese 路線，替 Pat Metheny、Grover Washington、Bobby Watson、Herbie Hancock、Joe Zawinul 錄過的器樂段落填上新詞。",
+  "keyTracks": [
+   "Minuano (Vocal Version)",
+   "Man in the Air",
+   "Resolution",
+   "In the Winelight"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2003 成立，本層未改判，而且街頭日在紙本與盤面上雙重確認。** (1) ⚠ **紙本街頭日（最高效力）**：Billboard 2003-08-09 第 65 頁的樂評欄逐字「RELEASE DATE: July 22」，同期第 16 頁的專文也逐字寫「released July 22」。 (2) **Discogs 原壓群**：美版 `5719614` 的 `released` 欄逐字 2003-07-22，與紙本相符。 (3) **MB** first-release-date 只有 2003（無月日），**精度低於前兩者**。 (4) **店面**：Apple `724527810` 的年份欄 2003。**→ `year` 取 2003、街頭日 2003-07-22（美國首發市場）。**",
+  "notes": "⚠ **掛名**：Discogs 美版的藝人欄逐字是 `Kurt Elling Featuring Stefon Harris & Laurence Hobgood`，**`Featuring` 是客座標記不是聯名**（第 1537 條），沿用池中六張的 `Kurt Elling`——本層覆核成立。⚠ **但 Apple 的 collectionName 也帶 `(feat. Laurence Hobgood & Stefon Harris)`，寫作層不要把它當專輯名。**｜⚠ **紙本兩處數字不同、不可混寫**：第 16 頁說「**Eight** of the 12 tracks」是 **vocalese**（替既有獨奏填詞），第 65 頁的樂評說「**Ten** of the 12 songs feature lyrics written by Elling」是**他寫的歌詞**——**兩個是不同的統計口徑，正文要挑一個並說清楚指的是什麼**。｜⚠ **獎項的入圍／得獎已逐項分開查**：第 46 屆葛萊美最佳爵士人聲專輯**入圍未得**；⚠ ⚠ **打敗他的就是本組第 5 張卡 Dianne Reeves《A Little Moonlight》**——**兩卡 risk 必須互指，這是本組最乾淨的一組對照**。⚠ **OCR 把他的姓拼成 `Kurt Elting`（入圍名單與樂評的製作人欄各一次），不是另一個人。**｜⚠ **編制是第 1547 條的「release-level 有、逐軌欄 0 筆」形狀**（23／0）——**逐軌欄空不代表資料缺**，樂手與軌號的對應寫在 credit 的 `tracks` 欄裡（Paul Wertico 與 Brad Wheeler 都標 `1`）。｜⚠ **曲名**：MB 第 11 軌作〈Never My Love〉、**盤面是〈Never, My Love〉（有逗號）**；第 1 軌 MB 作〈Minuano (Vocal version)〉、盤面是〈Minuano (Vocal Version)〉。**寫作層照盤面。**｜**載體**：MB 一筆與 Discogs 美英歐各版全是 CD，**查不到 2003 年的同期黑膠**。｜**封面不缺**：CAA 有圖；備援 Discogs 美版 `5719614`。｜**兩個美版目錄號**（第 1544 條）：MB 釘 `7243 5 90948 2 2`、**紙本引的是 `7243 5 80834`**，兩者同碟不同壓片。"
+ },
+ {
+  "key": "desc2:Dianne Reeves|A Little Moonlight",
+  "artist": "Dianne Reeves",
+  "album": "A Little Moonlight",
+  "facts": [
+   {
+    "f": "**街頭日、製作人與樂團逐字在紙本上**：Billboard 2003-08-30 第 34 頁的 ESSENTIAL 級樂評逐字「**DIANNE REEVES / A Little Moonlight / PRODUCER: Arif Mardin / Blue Note 7243 5 80252 / RELEASE DATE: Aug. 19**」，內文逐字「**After releasing an ambitious big band album—\"The Calling: Celebrating Sarah Vaughan\" in 2001—Reeves revels in a more intimate setting with \"A Little Moonlight.\" Working with her touring trio—Reuben Rogers (bass), Greg Hutchinson (drums) and Peter Martin (piano)—Reeves delivers a quiet, unabashedly romantic jazz album.**」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-08-30.pdf"
+   },
+   {
+    "f": "⚠ **這張碟得了葛萊美，不是入圍而已**：**2004 年第 46 屆葛萊美最佳爵士人聲專輯（Best Jazz Vocal Album）得獎作**——Billboard 2004-02-21 第 66 頁的得獎名單逐字「**Best jazz vocal album: \"A Little Moonlight,\" Dianne Reeves (Blue Note Records).**」，同屆入圍的另四張是 Kurt Elling《Man in the Air》、Shirley Horn《May the Music Never End》、Aaron Neville《Nature Boy: The Standards Album》與 Luciana Souza《North and South》。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2004/BB-2004-02-21.pdf"
+   },
+   {
+    "f": "**商業成績**：以 `BLUE NOTE 80252` 的目錄號在 Billboard 的 Top Jazz Albums 榜上待了一整個秋天（2003-09-06 第 60 頁起，09-20、10-04、11-01、11-15、11-29、12-13 各期在榜），**並進入 2003 年的年終 Top Jazz Albums 排第 24 名**（Billboard 2003-12-27 第 116 頁；同榜第 25 名是同廠牌的 Cassandra Wilson《Glamoured》）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-12-27.pdf"
+   },
+   {
+    "f": "**編制與錄音地**：Discogs 美版 `6399556`（`released` 欄逐字 2003-08-19）的 credit 十二筆——**Dianne Reeves（vocals）、Peter Martin（piano）、Reuben Rogers（bass）、Gregory Hutchinson（drums）** 是固定四人，**客座兩位且都標了軌號：Romero Lubambo（guitar，第 2、6、8 軌）與 Nicholas Payton（trumpet，第 9 軌）**；Arif Mardin 製作、Michael O'Reilly 錄音、Ted Jensen 在 Sterling Sound 做母帶，錄音地是 Right Track Recording。",
+    "src": "https://api.discogs.com/releases/6399556"
+   },
+   {
+    "f": "**十首全是別人的歌，編曲分給三個人**：Discogs 美版的逐軌欄顯示 Peter Martin 編了第 1、3、4、5、9、10 軌，Romero Lubambo 編了第 2、6、8 軌，**Billy Childs 編了第 7 軌〈I'm All Smiles〉**；曲目作者包括 Richard Rodgers（〈Loads of Love〉）、Cole Porter（〈I Concentrate on You〉）、Thelonious Monk 與 Jon Hendricks（〈Reflections〉）、Hoagy Carmichael 與 Johnny Mercer（〈Skylark〉）、Jimmy Van Heusen（〈Darn That Dream〉）、Harry Warren 與 Al Dubin（〈Lullaby of Broadway〉）。",
+    "src": "https://api.discogs.com/releases/6399556"
+   },
+   {
+    "f": "**廠牌自家紙本的發行公告**：Billboard 2003-05-31 第 75 頁 Blue Note 全版廣告的上半「OUT NOW...」欄逐字列出 `DIANNE REEVES A LITTLE MOONLIGHT`，與 SCOLOHOFO、SOULIVE、RON CARTER、ERIK TRUFFAZ、KURT ELLING 同列。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-05-31.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "前一張是向 Sarah Vaughan 致敬的大樂團企劃，這一張把場子縮到她自己的巡演三重奏——然後拿下第 46 屆葛萊美最佳爵士人聲專輯",
+   "十首歌沒有一首是她寫的，連編曲都分給三個人：鋼琴手編六首、吉他手編三首、Billy Childs 編了〈I'm All Smiles〉那一首"
+  ],
+  "sound": "十軌的人聲爵士盤，2003 年 8 月 19 日發行，錄於紐約 Right Track Recording、Arif Mardin 製作、Ted Jensen 在 Sterling Sound 做母帶。主體是她自己的巡演三重奏：Peter Martin 的鋼琴、Reuben Rogers 的貝斯、Gregory Hutchinson 的鼓；客座只有兩位而且都標了軌號，Romero Lubambo 的吉他在第 2、6、8 軌，Nicholas Payton 的小號在第 9 軌〈You Go to My Head〉。曲目全是老歌，從 Richard Rodgers、Cole Porter 到 Monk 與 Hoagy Carmichael，編曲由 Peter Martin、Romero Lubambo 與 Billy Childs 分工。",
+  "keyTracks": [
+   "What a Little Moonlight Can Do",
+   "Skylark",
+   "You Go to My Head",
+   "Reflections"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2003 成立，本層未改判，街頭日三重確認。** (1) ⚠ **紙本街頭日（最高效力）**：Billboard 2003-08-30 第 34 頁的樂評欄逐字「RELEASE DATE: Aug. 19」。 (2) **Discogs 原壓群**：美版 `6399556` 的 `released` 欄逐字 2003-08-19，與紙本相符。 (3) **MB** first-release-date 2003-08-19，三者同日。 (4) **日版 `TOCJ-66214` 也是 2003-08-19**（第 1551 條的「同日」那一筆），**不改首發地**。 ⚠ **(5) 日版多一軌〈Make Sure You're Sure〉共 11 軌，但本卡的主體是 10 軌的美版**（MB 把日版建成另一個 RG，策展層已退）。**`year` 取 2003。**",
+  "notes": "⚠ ⚠ **串流救援失敗，維持 `unavailable`；主線第 1560-B 條的結論本層再度覆核成立、而且擴大了實查範圍**：(a) **`lookup?upc=` 用兩個 UPC（`724358025224` 對應 `80252` 這個美版號、`724359094922` 對應 `90949`）各掃二十個市場，兩者回的都是同一個 `716525814`**——**沒有第二個 collection id 存在**；(b) **本層另對 `716525814` 在 se／fi／dk／no／pl／br／mx／es／ch／at／tw／jp／us 十三個市場逐一跑 `lookup?id=…&entity=song`，全部「有頁、0 軌、0 preview」**，連同主線已查的九個市場合計 **二十二個市場形狀一致**；(c) **`search` 以「Dianne Reeves Moonlight」掃 us／jp／fr／de／gb／it／se／fi 八個市場，回來的只有 Dean Martin《The Reprise Years》這個無關條目（主線第 1560-B 條已排除）**。**→ 第 1371 條的空頁確認成立，這張碟救不回來，除非 Apple 端重新上架。**｜⚠ ⚠ **Discogs 有一處作者欄是錯的、絕不可照抄**：第 5 軌〈What a Little Moonlight Can Do〉的 `Written-By` 掛成 `David Kent` 與 `Jimmy Stewart`——**這首是 Harry M. Woods 1934 年的作品**（Billie Holiday 1935 年的名唱），**Discogs 這一格連錯了實體**。**正文若要提這首的作者，請另尋來源或不寫。**｜⚠ ⚠ **同批交叉兩處**：(1) **第 46 屆葛萊美同獎的手下敗將就是本組第 4 張卡 Kurt Elling《Man in the Air》**，兩卡 risk 必須互指；(2) **Nicholas Payton 在本組出現三次**——本張第 9 軌客座、Greg Osby《St. Louis Shoes》的固定小號、Greg Osby《Public》的客座。｜⚠ **編制是本組最乾淨的一種**：固定四人＋兩位**標了軌號**的客座，**不是「逐軌變動」也不是「無軌號客座」**，正文可以寫死。｜⚠ **本組有兩張 Dianne Reeves 卡**（本張與《Christmas Time Is Here》），**製作人不同（Arif Mardin vs Reeves 與 Peter Martin 自製）、班底部分重疊（Peter Martin 兩張都在）**，正文不要混寫。｜**載體**：MB 一筆、Discogs 美歐加巴阿各版與印尼卡帶，**全部不是黑膠，查不到 2003 年的同期黑膠**。｜**封面不缺**：CAA 有圖。｜**兩個美版目錄號**：MB 釘 `7243 5 90949 2 2`、**紙本與榜單引的都是 `80252`**（第 1544 條）。"
+ },
+ {
+  "key": "desc2:Joe Lovano Nonet|On This Day...At The Vanguard",
+  "artist": "Joe Lovano Nonet",
+  "album": "On This Day...At The Vanguard",
+  "facts": [
+   {
+    "f": "**錄音日、錄音師與封面來歷逐字在盤面上**：Discogs 美版 `22847813`（`released` 欄逐字 2003-07-08）的 notes 逐字「**Recorded September 29, 2002 at The Village Vanguard by Kurt Lundvall.**」；companies 欄掛 `Village Vanguard — Recorded At`，混音與母帶都在 `Lundvall Audiophile Recording and Mastering, NYC`。**封面逐字掛 `David Ellis — Cover [Mural \"Vanguard 3\" 1996]`**，內頁另有 `Elise Wood — Artwork [Lovano Sketch by]`，美術指導是 Burton Yount。",
+    "src": "https://api.discogs.com/releases/22847813"
+   },
+   {
+    "f": "**大編制的全員名單**：同一筆 credit 二十二筆——**Joe Lovano（tenor saxophone，兼製作與第 1、6 軌的管弦配置）、Steve Slagle（alto saxophone，兼第 3 軌配置）、Ralph Lalama（tenor saxophone）、George Garzone（tenor saxophone）、Scott Robinson（baritone saxophone）、Barry Ries（trumpet）、Larry Farrell（trombone）、John Hicks（piano）、Dennis Irwin（bass）、Lewis Nash（drums）**；**Willie Smith 負責第 2、4、5 軌的管弦配置**。A&R 是 Eli Wolf。",
+    "src": "https://api.discogs.com/releases/22847813"
+   },
+   {
+    "f": "**七軌裡兩首是 Lovano 自己的、五首是別人的**：Discogs 逐軌作者欄——〈At the Vanguard〉與〈On This Day (Just Like Any Other)〉由 Lovano 作曲兼編曲，〈Focus〉與〈Good Bait〉是 **Tadd Dameron**、〈After the Rain〉是 **John Coltrane**、〈Laura〉是 **David Raksin**、〈My Little Brown Book〉是 **Billy Strayhorn**。**長度全壓在自己那兩首與 Dameron 的〈Good Bait〉上：〈On This Day (Just Like Any Other)〉15 分 22 秒、〈Good Bait〉14 分 09 秒、〈At the Vanguard〉9 分 30 秒。**",
+    "src": "https://api.discogs.com/releases/22847813"
+   },
+   {
+    "f": "MB 這一筆把樂團建成獨立實體：release-group `6f60a544-ef3c-34d0-a863-d40528a623ef`，artist-credit 是 `Joe Lovano Nonet`（`829493d1`，**Group**，與 Person `Joe Lovano` 是不同 MBID）、first-release-date 2003-07-08、**secondary-types `['Live']`**、genres 與 tags 皆 `jazz`；轄下一筆 release `c02ca646`（2003-07-08 US Official CD 7 軌，Blue Note `7243 5 90950 2 8`，barcode 724359095028）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6f60a544-ef3c-34d0-a863-d40528a623ef?fmt=json&inc=artist-credits+releases+genres+tags"
+   },
+   {
+    "f": "**廠牌自家紙本的發行公告與當時的處境**：Billboard 2003-05-31 第 75 頁 Blue Note 全版廣告的「ON THE HORIZON」欄逐字列出 `JOE LOVANO ON THIS DAY`；同年 2003-09-20 第 96 頁的廠牌專訪裡，Bruce Lundvall 逐字說 Norah Jones 的銷量讓廠牌「**We've seen more black ink than red**」，而這對 Lovano、Greg Osby、Pat Martino、Jason Moran 這些器樂樂手是好消息——「**We don't have to worry about dropping people from the label. Blue Note is very serious about instrumental music.**」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-09-20.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "封面不是照片，是畫家 David Ellis 1996 年的壁畫〈Vanguard 3〉——一支九重奏擠進那家地下室，配的是牆上的畫",
+   "七首裡兩首是他自己的，其餘交給 Tadd Dameron、Coltrane、Billy Strayhorn 與電影配樂家 David Raksin；最長的〈On This Day (Just Like Any Other)〉一口氣十五分二十二秒"
+  ],
+  "sound": "七軌的大編制現場盤，2002 年 9 月 29 日錄於紐約 Village Vanguard、由 Kurt Lundvall 收音並包辦混音與母帶，2003 年 7 月 8 日發行。管樂陣容是四支薩克斯風（Joe Lovano、Steve Slagle、Ralph Lalama、George Garzone）加上 Scott Robinson 的上低音薩克斯風、Barry Ries 的小號與 Larry Farrell 的長號，節奏組是 John Hicks 的鋼琴、Dennis Irwin 的貝斯與 Lewis Nash 的鼓。管弦配置分給三個人：Lovano 寫第 1、6 軌，Steve Slagle 寫第 3 軌，Willie Smith 寫第 2、4、5 軌。封面用的是 David Ellis 1996 年的壁畫〈Vanguard 3〉。",
+  "keyTracks": [
+   "On This Day (Just Like Any Other)",
+   "At the Vanguard",
+   "Good Bait",
+   "After the Rain"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2003 成立，本層未改判。** (1) **Discogs 原壓群**：美版 `22847813` 的 `released` 欄逐字 2003-07-08。 (2) **MB** first-release-date 2003-07-08，與盤面同日。 (3) **紙本**：Billboard 2003-05-31 第 75 頁的廠牌廣告把本碟列在「ON THE HORIZON」欄，**確認 2003 年與廠牌歸屬，但不是街頭日（第 1487 條）**；本層另掃 2003 與 2004 全年的 `Lovano`，**沒有任何一處給本碟的街頭日或樂評**。 ⚠ **(4) 錄音年 2002 與發行年 2003 差十個月**，2002 只寫正文、不當 `year`。**`year` 取 2003、街頭日 2003-07-08（美國）。**",
+  "notes": "⚠ ⚠ **一個要講清楚的算術**：**團名叫 Nonet（九重奏），但盤面 credit 列了十位樂手**（Lovano、Slagle、Lalama、Garzone、Robinson、Ries、Farrell、Hicks、Irwin、Nash）。**Discogs 沒有給這十人的軌號**，所以本層無法判定是哪一位只在部分軌、或是「九重奏」是個名目而非人數。**標 uncertain——正文請寫「四支薩克斯風加銅管與節奏組」這種可查證的版本，不要去湊九這個數字。**｜⚠ **掛名**：MB 把 `Joe Lovano Nonet` 建成獨立 Group（`829493d1`），Discogs 五筆原壓的藝人欄也逐字是 `Joe Lovano Nonet`——**第 1538 條覆核成立，取團名不取光桿名。**｜⚠ **現場盤標記這次沒漏**：MB 的 secondary-types 有 `Live`，**與同組 Martial Solal《NY-1》兩邊都漏標的情形相反**。｜⚠ **撞陳列**：池中有 `Joe Lovano`《Quartets: Live at the Village Vanguard》（c-152，1995 四重奏雙碟）——**同一家店、同一位領班、不同年不同編制、軌目零重疊**；本組內另有 Martial Solal《NY-1》也是同店現場。**三張卡的 risk 應互指，上架比對帶 catno `43277`。**｜⚠ **封面的著作訊息要保留**：`David Ellis — Cover [Mural \"Vanguard 3\" 1996]`——**這是壁畫翻拍不是攝影**，正文寫封面時不要說成現場照。｜⚠ **Apple 的 copyright 欄寫的是 `℗ 2013`（後來重發年）**，**不可拿來當發行年**（第 1548 條記的兩張之一）。｜**載體**：MB 一筆與 Discogs 美歐巴加各版全是 CD，**查不到 2003 年的同期黑膠**。｜**封面不缺**：CAA 有圖。｜**兩個美版目錄號**：MB 釘 `7243 5 90950 2 8`、Discogs 零售盤另有 `7243 5 43277 2 8`（第 1544 條），**廠牌欄第二格是 Village Vanguard**。"
+ }
+]

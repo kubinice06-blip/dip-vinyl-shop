@@ -1,0 +1,497 @@
+[
+ {
+  "key": "desc2:Stéphane Huchard|Toutakoosticks",
+  "artist": "Stéphane Huchard",
+  "album": "Toutakoosticks",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 65602570 底下只有一筆 release（a24eb552）：Official、CD、10 軌、廠牌欄「Blue Note 7243 5 34595 2 9」、barcode 724353459529，**日期欄只有「2002」而且國別欄是 null**。十軌逐軌長度：〈Zarbi Street〉490 秒、〈Jakawa Jungle Spoon〉304 秒、〈Doux Maloya〉511 秒、〈Sacrés lascars〉621 秒、〈Mr Smile〉411 秒、〈Yin Before〉282 秒、〈Yang After〉369 秒、〈Bop chez Bob〉424 秒、〈La Pierre magique〉544 秒、〈Mrs Cartoon〉298 秒，合計約 70 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65602570-7885-35b0-babc-aaa228c6b351&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 唯一的零售條目 6088055 是 Europe CD，`year` 與 `released` 兩欄都逐字是 2001，廠牌欄依序列出 Blue Note、EMI Music France、Pygmalion Records、Studio 26、La Source Mastering；notes 欄逐字寫「Recorded on February 13, 14, 15, 2001」與「Mixed on April 3, 4, 5, 2001」。",
+    "src": "https://api.discogs.com/releases/6088055"
+   },
+   {
+    "f": "五重奏班底是 Nicolas Folmer（小號、柯奈號）、Stéphane Guillaume（薩克斯風、長笛、單簧管）、Pierre de Bethmann（鋼琴）、Rémi Vignolo（低音提琴），Huchard 打鼓並包辦十軌全部的作曲與編曲；製作掛 Huchard 自己（for Pygmalion Records）與 Nicolas Pflug，錄音與混音是 Frédéric Bétin。",
+    "src": "https://api.discogs.com/releases/6088055"
+   },
+   {
+    "f": "這是 Huchard 掛名領班的第二張專輯：MusicBrainz 他名下的 release-group 依首發年排序是《Tribal Traquenard》（1999）、《Toutakoosticks》、《Bouchabouches》（2005）、《Panamerican》（2013）、《Off off Broadway》（2019）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=919b0df1-6162-4626-acab-57cfaf2b5a13&fmt=json&limit=100"
+   },
+   {
+    "f": "Apple Music 法國與日本店面的條目 696885099 的 copyright 欄逐字是「℗ 2001 Pygmalion licence exclusive de Parlophone Music France」，10 軌；美國店面另有一筆後年重掛的 1762873529，℗ 欄寫 Sous La Ville。",
+    "src": "https://itunes.apple.com/lookup?id=696885099&country=fr&entity=song&limit=20"
+   },
+   {
+    "f": "錄音室 Studio 26 在法國昂蒂布（Antibes），同一間錄音室與同一位錄音師 Frédéric Bétin、同一位製作人 Nicolas Pflug、同一位貝斯手 Rémi Vignolo，隔年八月也錄了 Flavio Boltro 的 Blue Note 盤《40°》——兩張是 Blue Note France 同一條產線上的不同錄音。",
+    "src": "https://api.discogs.com/releases/3473415"
+   }
+  ],
+  "hookCandidates": [
+   "十軌全是鼓手自己寫的曲子、自己編的譜，三天錄完、隔兩個月混完，掛的是 Blue Note",
+   "同一間錄音室、同一位錄音師、同一位貝斯手，隔年又錄出 Flavio Boltro 的《40°》——Blue Note 法國分部那幾年就靠這一組人"
+  ],
+  "sound": "十軌約 70 分鐘，最長的〈Sacrés lascars〉621 秒、最短的〈Yin Before〉282 秒，多數落在 5 到 9 分鐘之間，是留給五個人輪流獨奏的長度。編制是小號／柯奈號、薩克斯風兼長笛與單簧管、鋼琴、低音提琴加鼓的五重奏，整場沒有客座、沒有逐軌進出，Discogs 的 credit 欄也沒有任何軌號——這是一張固定編制、一口氣錄完的碟。曲名一半是法語俚語（Sacrés lascars、Bop chez Bob、La Pierre magique），〈Doux Maloya〉指的是留尼旺島的 maloya 節奏，〈Yin Before〉與〈Yang After〉是成對的兩軌。",
+  "keyTracks": [
+   "Sacrés lascars",
+   "Jakawa Jungle Spoon",
+   "Doux Maloya"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層獨立覆核通過，與策展層第 1506 條同結論但證據鏈不同。** (1) **首發市場街頭日**：查不到——本張是法國盤，沒有任何一層給得出日期。 (2) **同期紙本：本層再驗一次仍為零命中，而且是排除過假陽性的零。** `billboard-bn-2001/2002/2003-ocr.txt.gz` 三份檔查 `uchard`（去掉字首以吃下 OCR 斷字）在 2001 年有 2 頁命中，**逐頁讀完都是別人**——Ric Louchard（兒童古典鋼琴）與 Albert／Joe Bouchard（Blue Öyster Cult）；查 `outakoo` 三年皆 0 頁；**以目錄號裸數字 `34595` 反查三年得 4 頁，全部是 John Tesh 的 `GARDEN CITY 34595/WORD-CURB`**。法國本土爵士盤不進美國榜，本張正文不得寫任何榜位、評介或銷量。 (3) **Discogs 原壓群**：唯一零售條目 6088055 的 `year`／`released` 兩欄都是 2001，notes 的錄音（2001-02-13～15）與混音（2001-04-03～05）日期支持當年內發行；**Discogs 上本張沒有 master，只有這一筆**。 (4) **MB first-release-date 是 `2002`，但那筆 release 連 `country` 都是 null**——依簡報「Discogs 原壓群 ＞ MB frd」退讓。 (5) **店面**：Apple fr／jp 條目 696885099 的 ℗ 欄逐字 `℗ 2001`。⚠ **Apple 的 releaseDate 是 `2001-01-01` 年初佔位日，只能證明年份、不能證明月份。** **結論：2001，不改判。**",
+  "notes": "**封面替代來源（CAA RG 層真 404，本層已找到）**：Discogs 零售條目 6088055 有一張 primary 圖，直連 `https://i.discogs.com/5CtK4pbVjVlg7ws3tGmp8e97hdGrf8V8AEk9Wcw9X2A/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwODgw/NTUtMTY1NzQ3ODg5/My0xNDI1LmpwZWc.jpeg`（600×593），頁面 `https://www.discogs.com/release/6088055-Stéphane-Huchard-Toutakoosticks`。**它就是 2001 年歐版首發壓片的封面**，版式正確。\n**載體**：**沒有同期黑膠。** Discogs 上本張連 master 都沒有，只有這一筆 CD；MB 也只有一筆 CD。正文不得寫黑膠。\n**編制**：策展層說「可寫固定五人」正確，本層覆核 Discogs 的 credit 欄與 `tracklist[].extraartists` 兩處都沒有任何軌號、沒有客座。\n**軌名拼法**：MB 作〈Mr Smile〉〈Bop chez Bob〉〈Sacrés lascars〉，策展層 mbNote 轉寫成〈Mr. Smile〉〈Bob Chez Bob〉〈Sacrés Lascars〉——**〈Bop chez Bob〉被寫成〈Bob Chez Bob〉是錯的，第一個字是 Bop 不是 Bob**（MB release 端點逐字，Discogs 同）。寫作層請照〈Bop chez Bob〉。\n**串流**：本張 ready，不需處理。⚠ **Apple fr／jp 把本張的 primaryGenreName 標成 `Blues`**（MB 與 Discogs 都是 jazz／hard bop），正文不得跟著寫藍調。\n**可以寫、但要寫準的人員交叉**：Rémi Vignolo 同時是本批 Boltro《40°》與 Terrasson《Smile》的貝斯手，Nicolas Pflug 製作了本張與《40°》，Frédéric Bétin 錄了本張與《40°》，Studio 26 錄了本張與《40°》——**三張是三位不同領班的三場錄音，不得寫成同一團或同一場**。"
+ },
+ {
+  "key": "desc2:Cassandra Wilson|Belly of the Sun",
+  "artist": "Cassandra Wilson",
+  "album": "Belly of the Sun",
+  "facts": [
+   {
+    "f": "主錄音是在密西西比州 Clarksdale 一座火車站裡完成的，補錄在紐約州的 Allaire Studios；Cassandra Wilson 自己掛製作，Bruce Lundvall 與 Michael Simanga 掛執行製作。",
+    "src": "https://en.wikipedia.org/wiki/Belly_of_the_Sun"
+   },
+   {
+    "f": "盤名出自第 6 軌 James Taylor〈Only a Dream in Rio〉的一句歌詞——Wilson 把那句話譯成約魯巴語「只是想聽聽它唸起來是什麼樣子」，得到的說法就是「在太陽的肚子裡」。",
+    "src": "https://en.wikipedia.org/wiki/Belly_of_the_Sun"
+   },
+   {
+    "f": "十三軌把她自己寫的〈Justice〉〈Just Another Parade〉〈Drunk as Cooter Brown〉〈Show Me a Love〉，與 The Band〈The Weight〉、Bob Dylan〈Shelter From the Storm〉、Jimmy Webb〈Wichita Lineman〉、Robert Johnson〈Hot Tamales〉、Mississippi Fred McDowell〈You Gotta Move〉、Jobim〈Waters of March〉排在同一張選曲單上；日版另加 Jobim〈Corcovado〉一軌成 14 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c78eba81-721a-3ebc-b1e8-a3fbd682403a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Billboard 2002-03-02 那一期第 17 頁的 Blue Note 全版廣告逐字寫「Cassandra Wilson BELLY OF THE SUN in Stores March 26」；2002-03-30 第 18 頁的 SPOTLIGHT 評介把它形容成「equal parts blues, roots, soul, and jazz with dollops of Brazilian rhythms」，製作人欄逐字「PRODUCER: Cassandra Wilson」、廠牌欄「Blue Note 7243 5 35072」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-03-02.pdf"
+   },
+   {
+    "f": "2002-04-27 那一期的 Billboard 200 上它排第 156 名、最高名次欄記 155；同期它也在爵士榜上，整張碟從 2002-03-30 一路掛到 2003-03-22，橫跨近一年。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-04-27.pdf"
+   },
+   {
+    "f": "Discogs 歐版原壓 1881545 的 `released` 欄逐字 2002-02-26，與 MusicBrainz 的 first-release-date 相同；日版 TOCJ-66137 是 2002-03-27、法版雙碟是 2002-06-07。",
+    "src": "https://api.discogs.com/releases/1881545"
+   }
+  ],
+  "hookCandidates": [
+   "碟名是一句約魯巴語：她把〈Only a Dream in Rio〉的一句詞翻成約魯巴語，翻回來變成「在太陽的肚子裡」",
+   "主錄音不在錄音室——是在密西西比 Clarksdale 的一座火車站裡錄的"
+  ],
+  "sound": "十三軌約 60 分鐘，最長的〈The Weight〉與〈Just Another Parade〉各 365／366 秒，最短的〈Hot Tamales〉只有 103 秒。聲音的底是吉他群而不是鋼琴：Kevin Breit 的各式吉他、曼陀林與班鳩，Marvin Sewell 的吉他，Mark Peterson 的貝斯，Cyro Baptista 與 Jeff Haynes 的打擊——鼓（Xavyon Jamison）只進六軌。⚠ **客座全部只有一軌或兩軌**：India.Arie 只在第 7 軌〈Just Another Parade〉、Richard Johnston 只在第 5 軌、「Boogaloo」Ames 的鋼琴只在第 3 軌、Olu Dara 的小號只在第 12 軌、Rhonda Richmond 在第 7 與第 12 軌。",
+  "keyTracks": [
+   "The Weight",
+   "Just Another Parade",
+   "Waters of March",
+   "Hot Tamales"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過。** (1) **首發市場街頭日有兩個、而且屬於兩個市場**：**歐版 2002-02-26**（MB frd 與 Discogs 1881545 兩邊逐字相同），**美版 2002-03-26**（Billboard 2002-03-02 p17 Blue Note 全版廣告逐字「in Stores March 26」）。⚠ **依第 1487 條，街頭日要用「首發市場」的——本張首發市場是歐洲，取 2002-02-26；美版的 3 月 26 日是第二市場，正文寫月份時一定要指明是哪一版。** (2) **同期紙本**：本層以目錄號 `35072` 反查 2002／2003 兩份 OCR，命中 30 期（2002-03-30 → 2003-03-22），2002-04-27 那一期可讀出 Billboard 200 第 156 名、最高名次 155。 (3) **Discogs 原壓群**：master 167162 底下 26 筆，`released` facet 是 2002 佔 16、2003 佔 1、2013／2018／2022 各 1（後三筆是再版），原壓群一致 2002。 (4) **MB frd 2002-02-26。** (5) **Apple 723520884 的 ℗ 欄是 2002，releaseDate `2002-01-01` 是年初佔位日不可引用。** **結論：2002，不改判。**",
+  "notes": "**載體：沒有同期黑膠。** Discogs master 167162 的 format facet 裡 Vinyl 只有 2 筆，逐筆核完都是後年再發——**2013 年 Pure Pleasure Analogue 的 `PPAN BST35072`（LP, Limited Edition, Reissue, Remastered）與 2018 年南韓的 `Blue Note D07521`（Picture Disc）**。2002 年本身只有 CD 與卡帶（Cassette 2 筆）。**正文不得寫黑膠，也不得把 2013 那筆當原盤。**\n**編制**：策展層「逐軌變動」的判斷正確，而且它指出的 Discogs 陷阱（credit 主欄一個樂手都沒有、全在 `tracklist[].extraartists` 裡）本層覆核屬實。**India.Arie 只唱第 7 軌這件事最容易被寫錯**，封面文案級的名字。\n**曲風**：Billboard 評介逐字「equal parts blues, roots, soul, and jazz」、Apple 把 primaryGenre 標成 `Rock`、Discogs style 欄是 `Avant-garde Jazz, Post Bop`——策展層照同掛名先例判 `['jazz']`，本層無異議；**但正文可以引用那句評介**（它是紙本逐字，不是曲風欄位）。\n**宣傳盤多兩軌**：英文維基記下發行前的宣傳盤多了 B.B. King〈Rock Me Baby〉與另一首，**成品未收**——正文不得把這兩首寫進曲目。\n**封面**：CAA RG 層 12 圖、來源是歐版首發壓片 fd4769b7，可用，本層不另找。\n**撞陳列**：本張的〈Wichita Lineman〉撞池中 Glen Campbell 的同名卡（1968），同曲不同碟，策展層已互指。"
+ },
+ {
+  "key": "desc2:Soulive|Next",
+  "artist": "Soulive",
+  "album": "Next",
+  "facts": [
+   {
+    "f": "《Next》是 Soulive 在 Blue Note 的第二張錄音室盤，2002 年 3 月 12 日發行，製作人是 Jeff Krasno；這也是樂團第一次以四人編制巡演的起點——薩克斯風手 Sam Kininger 從 2000 到 2003 年跟著三人組跑。",
+    "src": "https://en.wikipedia.org/wiki/Next_(Soulive_album)"
+   },
+   {
+    "f": "十三軌由客座逐軌切開：Dave Matthews 唱第 4 軌〈Joyful Girl〉（Ani DiFranco 的曲子），The Roots 的 Black Thought 唸第 6 軌〈Clap!〉，Amel Larrieux 唱第 9 軌〈I Don't Know〉，Talib Kweli 出現在第 13 軌的〈Bridge to 'Bama (Hi Tek Remix)〉。三人組本身是 Eric Krasno 吉他、Neal Evans 管風琴兼左手貝斯、Alan Evans 鼓。",
+    "src": "https://en.wikipedia.org/wiki/Next_(Soulive_album)"
+   },
+   {
+    "f": "Discogs 零售條目 2210529 的 notes 記錄音在 2001 年 10 月於 Woodstock 的 Applehead Studios，10 月與 12 月在 Chung King 加錄與混音；第 1 軌引用 Kurt Rosenwinkel〈Grant〉的動機、第 2 軌引用 Earth, Wind & Fire〈Can't Hide Love〉。",
+    "src": "https://api.discogs.com/releases/2210529"
+   },
+   {
+    "f": "三兄弟一組的來歷：Alan 與 Neal Evans 是 1990 年代東北部 jam band Moon Boot Lover 的節奏組，1999 年 3 月 2 日找高中同學 Eric Krasno 到 Woodstock 的家庭錄音室錄了一批東西，那次 jam 就是首張《Get Down!》；同年夏天替 Velour Recordings 錄的《Turn It Out》獨立賣出 6.5 萬張，2000 年秋天他們簽進 Blue Note。",
+    "src": "https://en.wikipedia.org/wiki/Soulive"
+   },
+   {
+    "f": "Billboard 的 Top Contemporary Jazz Albums 2002-03-30 那一期以 NEW 進榜（廠牌欄逐字 `BLUE NOTE 35869`），本層以目錄號反查 2002 全年 OCR 共命中六期（3 月 30 日到 6 月 22 日）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-03-30.pdf"
+   },
+   {
+    "f": "MusicBrainz release-group ca400df9 底下兩筆：美版實體 82b954f7 是 2002-03-12（CD、13 軌、`Blue Note 7243 5 35869 2 8`），數位版 d6c9a65f 早兩週、2002-02-28。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ca400df9-04f9-306f-8d8a-7629f5cef9de&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "第 13 軌是自家舊曲的混音版：〈Bridge to 'Bama〉原版在前一張《Doin' Something》上，這裡換 Hi Tek 重做、加上 Talib Kweli",
+   "簽進 Blue Note 之前，他們自己那張《Turn It Out》已經獨立賣掉六萬五千張"
+  ],
+  "sound": "十三軌約 73 分鐘，除了 72 秒的〈Interlude〉之外全部在 4 分半到 8 分之間，最長的〈Ne-Ne〉487 秒、〈Tuesday Night's Squad〉443 秒。這是把 1960 年代管風琴三重奏的骨架接到嘻哈與 neo-soul 上的一張：Neal Evans 用左手在管風琴上彈貝斯線、右手走和聲，Krasno 的吉他負責切分，Alan Evans 的鼓點刻意壓成 boom-bap 的位置。四位客座各自只出現在自己那一軌，出版資訊欄還逐軌標明各人所屬唱片公司的禮讓條款。",
+  "keyTracks": [
+   "Tuesday Night's Squad",
+   "Clap!",
+   "Joyful Girl",
+   "Bridge to 'Bama (Hi Tek Remix)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過。** (1) **首發市場街頭日**：**美版實體 2002-03-12**（MB release 82b954f7 逐字、Discogs 零售 2210529 同），**數位版 2002-02-28**（MB d6c9a65f，XW）；英文維基的〈Next (Soulive album)〉第一句也逐字寫 March 12, 2002。 (2) **同期紙本**：本層以目錄號 `35869` 反查 2002 全年 OCR，命中六期，最早的一期是 **2002-03-30 的 Top Contemporary Jazz Albums 以 NEW 進榜**，與 3 月 12 日街頭日吻合。 (3) **Discogs 原壓群**：master 237294 底下 6 筆，`released` facet 是 2001 佔 1、2002 佔 5——**那筆 2001 是發行前的 Advance 宣傳盤，依第 1476 條只當年份下界，不推翻 2002**。 (4) **MB frd 2002-02-28。** (5) **Apple 724931758 的 ℗ 是 2002。** **結論：2002，不改判。**",
+  "notes": "**載體：沒有同期黑膠。** Discogs master 237294 的 format facet 只有 CD（6 筆），沒有 Vinyl／LP——**與同掛名的 2003 年現場盤《Soulive》不同，那張有 2003 年的 Blue Note 黑膠**。正文不得替本張寫黑膠。\n**⚠ 補一條策展層沒寫的編制事實**：英文維基逐字寫《Next》是樂團「第一次以四人編制巡演」的起點，薩克斯風手 **Sam Kininger 2000–2003 年隨團**。**但他不是本碟的班底**——碟上是三人組加四位逐軌客座，**正文不得把 Kininger 寫進錄音名單**，要寫只能寫成「這張之後他們開始帶薩克斯風上路」。\n**製作人**：策展層沒有寫製作人，英文維基逐字記是 **Jeff Krasno**（吉他手 Eric Krasno 的兄弟輩親屬、Velour Recordings 創辦人）——本層只採「製作人是 Jeff Krasno」這一句，親屬關係查不到可靠來源，不寫。\n**撞陳列**：第 13 軌〈Bridge to 'Bama (Hi Tek Remix)〉的原曲在池中 c-157 b《Doin' Something》（2001）的軌目上，策展層已互指；**正文要寫明這是同一首的混音版，不得寫成新曲**。\n**封面**：CAA RG 層只有 1 圖而且掛在 XW 數位筆 d6c9a65f 上、不是實體首發壓片。**本層把 CAA 的圖與 Discogs 美版零售 2210529 的圖下載後逐一目視比對，是同一張封面**（黃綠天空＋藍調橋樑，四個人站成一排，右上角 Blue Note 標），版式無誤、可用。⚠ **封面上是四個人，但錄音班底是三人組**——第四位是當時隨團的薩克斯風手 Sam Kininger，**正文不得因為封面而把他寫成團員或錄音參與者**。\n**串流**：ready（724931758），不需處理；⚠ releaseDate `2002-01-01` 是年初佔位日。"
+ },
+ {
+  "key": "desc2:Medeski Martin & Wood|Uninvisible",
+  "artist": "Medeski Martin & Wood",
+  "album": "Uninvisible",
+  "facts": [
+   {
+    "f": "Billboard 2002-03-23 那一期第 18 頁的整篇專訪逐字寫「the title of the trio's 10th album, Uninvisible (Blue Note, April 9)」，並記下製作人是第三度與他們合作的 Scotty Hard（Wu-Tang Clan、Prince Paul 的班底）；2002-04-27 第 32 頁的評介把它定位成「funk-soul-rock-hip-hop fusion」裡他們近年最好入口的一張。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-03-23.pdf"
+   },
+   {
+    "f": "Discogs 美版零售 252785 的 notes 逐字列出三處錄音地點——布魯克林的 Shacklyn Studios、Bearsville 的 The Barn at Bearsville Studios、紐約的 The Magic Shop——混音在後兩處，母帶在 Masterdisk，另在紐澤西 Englewood 的 Turtle Tone Studios 做「assembled, edited and tweaked」。",
+    "src": "https://api.discogs.com/releases/252785"
+   },
+   {
+    "f": "三人核心是 John Medeski（原聲鋼琴、Fender Rhodes、Wurlitzer、clavinet、Hammond A100、口風琴、Mellotron、ARP String Ensemble、Minimoog 等一整排鍵盤）、Chris Wood（原聲與電貝斯）、Billy Martin（鼓、talking drum、batá、鈴、Burundi 鼓）；客座全部帶軌號——Michael Herbst、Stuart D. Bogie、Aaron Johnson、Jordan McLean、Todd Simon 組成的 Antibalas 管樂群只在第 1 與第 10 軌，DJ Olive 在 3・14 軌、DJ P Love 在 4・6・7・13 軌，Col. Bruce Hampton 在第 3 軌唸白，Brad Roberts 唱第 8 軌。",
+    "src": "https://en.wikipedia.org/wiki/Uninvisible"
+   },
+   {
+    "f": "十四軌的實際排序（MusicBrainz 美版 release 933fe97b 與 Discogs 252785 兩邊逐字相同）是：Uninvisible／I Wanna Ride You／Your Name Is Snake Anthony／Pappy Check／Take Me Nowhere／Retirement Song／Ten Dollar High／Where Have You Been?／Reprise／Nocturnal Transmission／Smoke／First Time Long Time／The Edge of Night／Off the Table。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=735ac057-0af5-32d5-ad3f-2f5e7c91ade0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "同年另有兩種不是 Blue Note 發行的載體：DTS Entertainment 的 DVD-Audio 多聲道版（`69286-01105-9-5`），以及 Ropeadope Records 發行的雙張黑膠（`0 7567 835761 9`，A 到 D 四面、十四軌重新排序）。",
+    "src": "https://api.discogs.com/releases/605327"
+   },
+   {
+    "f": "本層以目錄號 `35870` 反查 2002 年 Billboard OCR，命中十一期（2002-04-27 到 2002-08-31），與 4 月 9 日的街頭日吻合。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-04-27.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "第 9 軌〈Reprise〉只有 35 秒；整張碟最長的〈Nocturnal Transmission〉快七分鐘——十四軌像被剪接過的一卷帶子",
+   "同一張碟三種載體各有各的廠牌：CD 是 Blue Note、DVD-Audio 掛 DTS、黑膠掛 Ropeadope"
+  ],
+  "sound": "十四軌約 50 分鐘，短碟——十四軌裡有九軌不到四分鐘，最短的〈Reprise〉35 秒，最長的〈Nocturnal Transmission〉397 秒。聲音的重心不在即興長度而在質地：Medeski 一人堆了將近十種鍵盤（Hammond A100、Rhodes、Wurlitzer、clavinet、Mellotron、ARP、Minimoog），製作人 Scotty Hard 把嘻哈那一套取樣式的剪接與 EQ 帶進來，唱盤（DJ Olive、DJ P Love）與 Antibalas 的 afrobeat 管樂群逐軌進出，Col. Bruce Hampton 在第 3 軌只是唸白而不是唱。",
+  "keyTracks": [
+   "Uninvisible",
+   "Your Name Is Snake Anthony",
+   "Nocturnal Transmission",
+   "Off the Table"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過，而且拿到逐字街頭日。** (1) **首發市場街頭日**：**Billboard 2002-03-23 p18 的專訪逐字「Uninvisible (Blue Note, April 9)」——這是發行公告等級的紙本，符合第 1487 條的門檻**；MB release 933fe97b 與 Discogs 零售 252785 兩邊的日期欄都逐字 2002-04-09。 (2) **同期紙本**：目錄號 `35870` 反查 2002 全年得十一期，最早 2002-04-27。 (3) **Discogs 原壓群**：master 127976 底下 17 筆，`released` facet 是 2002 佔 12、2005 佔 1、2021 佔 1，原壓群一致。 (4) **MB frd 2002-04-09。** (5) **Apple 724621488 的 ℗ 是 2002。** **結論：2002，不改判。**",
+  "notes": "⚠ ⚠ **推翻策展層一處（mbNote 的軌目抄錯）**：策展層 mbNote 把美版 release 933fe97b 的十四軌記成「Uninvisible／Nocturnal Transmission／Ten Dollar High／Smoke／I Wanna Ride You／Take Me Nowhere／Your Name Is Snake Anthony／Pappy Check／**Ten Dollar High (Reprise)**／Off the Table／Retirement Song／Where Have You Been?／**First Light**／The Edge of Night」——**順序整個錯、而且有兩個軌名是錯的**。本層直接回問 MB release 端點，正確順序見 facts 第 4 條，**第 9 軌叫〈Reprise〉（不是〈Ten Dollar High (Reprise)〉）、第 12 軌叫〈First Time Long Time〉（不是〈First Light〉）**；Discogs 252785 與英文維基的曲目表三邊一致。**寫作層若引用曲名，請用本層這一份。**\n⚠ **載體：有同期黑膠，但不是 Blue Note 發行的。** Discogs master 127976 的 Vinyl 有 2 筆：**2002 年美版 `Ropeadope Records 0 7567 835761 9`（LP, Album, Stereo，四面十四軌，廠牌欄同時列 Ropeadope 與 Blue Note）**，以及 2021 年的 `Blue Note ST-RO-83576` 俱樂部限量再發。**同期黑膠成立，但正文若提黑膠必須寫成「由 Ropeadope 發行」，不得寫成 Blue Note 黑膠。**\n⚠ **「第十張」與「第七張」兩說**：**Billboard 2002-03-23 逐字說是「the trio's 10th album」，英文維基逐字說是「seventh studio album」**——兩者不衝突（前者含現場盤與 EP），**但正文只能挑一個並寫明口徑**；建議照紙本寫「第十張」並加「錄音室盤則是第七張」。\n**錄音地點**：策展層沒有記，本層自 Discogs notes 補上三處（Shacklyn／Bearsville／The Magic Shop）——**不是 Woodstock**（那是同批 Soulive《Next》的錄音地）。\n**編制**：策展層「三人固定＋逐軌客座」正確，但它漏了 **Antibalas 的五人管樂群（只在 1・10 兩軌）、Danny Blume 的吉他、Brad Roberts 的人聲、Eddie Bobé 的打擊**——本層自英文維基的 Performers 節與黑膠條目 notes 補齊。**Antibalas 是這張碟上最容易被漏寫也最有故事的一組人。**\n**曲風**：MB genres 掛 `electronic`／`experimental`，策展層照先例判 `['jazz']`，本層無異議。\n**封面**：CAA RG 層 2 圖、來源是美版首發壓片，可用。**串流** ready（724621488），⚠ releaseDate `2002-01-01` 年初佔位日。"
+ },
+ {
+  "key": "desc2:Bill Charlap|Stardust",
+  "artist": "Bill Charlap",
+  "album": "Stardust",
+  "facts": [
+   {
+    "f": "整張碟只演 Hoagy Carmichael 一個人的曲子：盤面全名逐字是「Stardust — The Bill Charlap Trio Plays the Music of Hoagy Carmichael」，2001 年 9 月 6 到 8 日在紐約 The Hit Factory 錄音，Joel Moss 製作，樂評家 Stanley Crouch 寫內頁。",
+    "src": "https://api.discogs.com/releases/9336665"
+   },
+   {
+    "f": "三重奏是 Charlap 的鋼琴加上兩位不同姓同姓的 Washington——Peter Washington（低音提琴）與 Kenny Washington（鼓），這個組合從 1997 年首度錄音起一路走到 2020 年代。",
+    "src": "https://en.wikipedia.org/wiki/Bill_Charlap"
+   },
+   {
+    "f": "四位客座在 Discogs 的 credit 欄一律只標 `Guest`、沒有任何軌號：Frank Wess、Jim Hall、Shirley Horn、Tony Bennett。",
+    "src": "https://api.discogs.com/releases/9336665"
+   },
+   {
+    "f": "Charlap 是百老匯作曲家 Moose Charlap 與歌手 Sandy Stewart 的兒子，三歲開始彈琴，古典與爵士同時學；1989 年起在 Gerry Mulligan 的樂團裡錄音，1995 年加入 Phil Woods 五重奏。",
+    "src": "https://en.wikipedia.org/wiki/Bill_Charlap"
+   },
+   {
+    "f": "Billboard 的 Top Jazz Albums 從 2002-05-25 那一期起可查到它在榜，廠牌欄逐字 `BLUE NOTE 35985/CAPITOL`。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-05-25.pdf"
+   },
+   {
+    "f": "同年 Blue Note 另發過一張混合式 SACD（`7243 5 41746 2 9`，Hybrid／Multichannel／Stereo，十一軌與 CD 相同），日本另有促銷用的 SACD `TOGJ13003`。",
+    "src": "https://api.discogs.com/releases/7483079"
+   }
+  ],
+  "hookCandidates": [
+   "三重奏的另外兩個人都姓 Washington，而且沒有親戚關係——Peter 彈貝斯、Kenny 打鼓",
+   "十一軌全是同一個人寫的曲子：〈Georgia on My Mind〉〈Skylark〉〈The Nearness of You〉〈Stardust〉都出自 Hoagy Carmichael"
+  ],
+  "sound": "十一軌約 61 分鐘。開場的〈Jubilee〉只有 191 秒、收尾的〈Skylark〉237 秒，中間幾首反而長：同名曲〈Stardust〉568 秒、〈The Nearness of You〉449 秒、〈Rockin' Chair〉442 秒——編排上是兩頭短、中段慢曲拉開。底是不加修飾的鋼琴三重奏，Charlap 的觸鍵走的是輕、乾、不踩重踏板的路線，Kenny Washington 多用刷。四位客座（Frank Wess 的長笛與次中音、Jim Hall 的吉他、Shirley Horn 與 Tony Bennett 的人聲）在盤上只標「Guest」，沒有標在哪一軌。",
+  "keyTracks": [
+   "Stardust",
+   "Georgia on My Mind",
+   "Skylark",
+   "Rockin' Chair"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過——而且這是本組最需要刻意不採信 Discogs 的一張。** (1) **首發市場街頭日**：**2002-04-09**（MB release 4fca1f18 逐字；Apple ℗ 2002 Capitol Records, LLC）。 (2) **同期紙本（決定性）**：本層以目錄號 `35985` 反查 2002 全年 OCR 命中兩期（**2002-05-25 與 2002-06-08**，Top Jazz Albums，廠牌欄逐字 `BLUE NOTE 35985/CAPITOL`）——**2002 年就在榜，2003 說不成立**。 (3) ⚠ ⚠ **Discogs 原壓群在本張整群錯、而且錯在零售盤上**：master 1052581 底下 8 筆的 `released` facet 是 **2002 佔 1、2003 佔 7**，那唯一一筆 2002 正是發行前的 **Advance 宣傳盤 37619094（`…2 5V`）**；美版零售 9336665、UK&Europe 12742643、日版 TOCJ-66163、SACD 7483079 全部標 2003。**依第 1476 條，Advance 宣傳盤是年份下界，配合紙本 5 月在榜，取 2002。** (4) **MB frd 2002-04-09。** **結論：2002，不改判；但 `label` 欄若抄 Discogs 的年份會錯一年，要特別提醒下游。**",
+  "notes": "**載體：沒有同期黑膠。** Discogs master 1052581 的 format facet 只有 CD／SACD／Hybrid，沒有 Vinyl。**倒是有同年的混合式 SACD（美版 `7243 5 41746 2 9` 與日版促銷盤 `TOGJ13003`），是本組唯一一張有 SACD 的碟**——正文若要寫載體，寫 SACD 比寫黑膠安全。\n**編制**：策展層「三人核心＋四位客座未標軌次」正確，本層覆核 Discogs 9336665 的 credit 欄逐字確實只寫 `Guest`。**Tony Bennett 與 Shirley Horn 不得寫成全片參與。**\n⚠ **盤名的完整形**：MB release title 逐字是「Stardust — The Bill Charlap Trio Plays the Music of Hoagy Carmichael」，**卡片掛名判的是 `Bill Charlap`（不是 `Bill Charlap Trio`）**——策展層第 1509 條的裁定本層同意（MB／Discogs／Apple／Billboard 四邊的掛名欄都是 `Bill Charlap`，`The Bill Charlap Trio` 只出現在盤背副標）。\n⚠ **同名碟的陷阱要往下游傳**：**Billboard 2002-07-13 p29 有一篇評介逐字寫 `RON CARTER Stardust ... Blue Note 7243 5 37813`——同年、同廠牌、另一張叫《Stardust》的碟，與本張完全無關**；本批另有 Ron Carter《The Golden Striker》一張卡，兩者不可混。池中另有 Willie Nelson《Stardust》、山本剛《Star Dust》、The Sea Urchins《Stardust》三張同名卡。\n**曲目來源**：十一軌全是 Hoagy Carmichael 的作品，**正文不得把〈Body and Soul〉之類的通用標準曲混進來**。\n**封面**：CAA RG 層 3 圖、來源美版首發壓片 4fca1f18，可用。**串流** ready（724840353），⚠ releaseDate `2002-01-01` 年初佔位日；jp／fr 同頁混進 Nat King Cole 與 Natalie Cole 的無關條目。"
+ },
+ {
+  "key": "desc2:Joe Lovano|Viva Caruso",
+  "artist": "Joe Lovano",
+  "album": "Viva Caruso",
+  "facts": [
+   {
+    "f": "整張碟是替男高音 Enrico Caruso 的曲目做的爵士改編，2001 年 10 月 13 與 15 日兩天在紐約 Avatar Studios 錄音，Lovano 自己掛製作並負責 Street Band 那一半的編曲與配器。",
+    "src": "https://api.discogs.com/releases/3944127"
+   },
+   {
+    "f": "十二軌由兩組完全不同的人馬逐軌交替：奇數位置（第 1・3・6・7・9・11 軌）交給「Joe Lovano Street Band」，偶數位置（第 2・4・5・8・10・12 軌）交給 Byron Olson 編曲並指揮的「Opera House Ensemble」——後者是長笛、雙簧管兼英國管、單簧管、低音單簧管、兩把巴松、法國號的木管群。",
+    "src": "https://en.wikipedia.org/wiki/Viva_Caruso"
+   },
+   {
+    "f": "Street Band 那一側的常規班底是 Ed Schuller 與 Scott Lee 兩把貝斯、Carmen Castaldi 與 Bob Meyer 兩套鼓、Gil Goldstein 的手風琴、Joey Baron 的鼓；第 11 軌〈Il Carnivale di Pulcinella〉另外加進 Michael Bocian 的原聲吉他、Jamey Haddad 的框鼓、Billy Drewes 的單簧管、Herb Robertson 的小號、Gary Valente 的長號與 Judi Silvano 的人聲與長笛。",
+    "src": "https://en.wikipedia.org/wiki/Viva_Caruso"
+   },
+   {
+    "f": "曲目從 Leoncavallo《丑角》裡的〈Vesti la giubba〉、〈O sole mio〉、〈Santa Lucia〉這些 Caruso 唱紅的拿坡里歌曲與詠嘆調，一路排到 Lovano 自己寫的〈The Streets of Naples〉〈Viva Caruso〉〈Il Carnivale di Pulcinella〉三首原創。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eddd473a-e992-3820-9a4b-71579e8b7a0f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "《紐約時報》的 Ben Ratliff 寫這套曲目的現場：「Against the throbbing, susurrating group sound, Mr. Lovano just flowed, playing with a strong, aerated tone; he delivered fresh, forthright melodic material and played all around it. Everything about the set was original, from idea to execution.」",
+    "src": "https://en.wikipedia.org/wiki/Viva_Caruso"
+   },
+   {
+    "f": "MusicBrainz 只建了一筆 release（de6271a0，2002-04-22、XE、CD 12 軌、`Blue Note 7243 5 35986 2 4`），而且 barcode 欄逐字是 14 位的 `0072435359862`；美版壓片要靠 Discogs 12148263 才補得上。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eddd473a-e992-3820-9a4b-71579e8b7a0f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "一張碟兩個樂團輪流上場：單數軌是街頭樂隊，雙數軌是歌劇院木管群，逐軌換人",
+   "1902 年錄下史上第一批暢銷唱片的男高音，一百年後被一把次中音薩克斯風接了下來"
+  ],
+  "sound": "十二軌約 71 分鐘，最長的〈Pecchè?〉459 秒、〈Campane a sera〉423 秒，最短的開場〈Vesti la giubba〉228 秒。整張碟的聲音是兩種完全不同的空氣輪流出現：Street Band 那一半用兩把貝斯、兩套鼓加手風琴堆出拿坡里街頭的鬆散節拍；Opera House Ensemble 那一半只有木管群與法國號，把詠嘆調的和聲寫成室內樂的厚度，Lovano 的次中音在上面拉長音。他自己除了次中音還吹了多種管樂，但每一軌用哪一支，盤上是逐軌標的。",
+  "keyTracks": [
+   "Vesti la giubba",
+   "O sole mio",
+   "Viva Caruso",
+   "Il Carnivale di Pulcinella"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過，但證據只有三層。** (1) **首發市場街頭日**：查不到日期以外的佐證——MB release de6271a0 逐字 `2002-04-22`（國別 XE），Discogs 兩筆原壓（歐版 3944127、美版 12148263）只有年份 2002。 (2) **同期紙本：本層再驗一次仍為零命中，而且是排除過假陽性的零。** 2002 年 OCR 查 `iva carus` 0 頁；查 `ovano` 得 4 頁，**逐頁讀完只有 2002-12-28 p21 一則電視節目介紹提到他的名字（Jazz Pads 節目來賓），與本碟無關**；**以目錄號 `35986` 反查 2001／2002/2003 三年，0 頁**。**正文不得寫任何榜位、評介或銷量**（《紐約時報》那段引言講的是現場演出，可以寫，但要寫明是現場、不是唱片評）。 (3) **Discogs 原壓群**：master 1312711 底下只有 3 筆、`released` facet 全部 2002。 (4) **Apple 723559258 的 ℗ 是 2002。** **結論：2002，不改判。**",
+  "notes": "⚠ **補一位策展層完全漏掉、而且不能漏的人：Judi Silvano。** 英文維基的 Personnel 節逐字列她在第 5・8 軌唱、第 11 軌唱並吹長笛——**她是 Lovano 的妻子與長期合作者**，策展層的編制清單（抄自 Discogs credit 欄）沒有她。同時漏掉的還有 **Billy Drewes（單簧管）、Herb Robertson（小號）、Gary Valente（長號）、Helen Campo 與 Dick Oatts（長笛）、Charles Russo（低音單簧管）、Kim Lackowski 與 Michael Rabinowitz（巴松）、Tom Christianson（雙簧管兼英國管）、John Clark（法國號）**。⚠ **兩份名單的軌號分配也有出入**（維基說 Joey Baron 在 3・7・9・11 軌、Gil Goldstein 的手風琴在 3・7 與 5・10・12 軌），**Discogs 與維基對不上的地方請以「逐軌變動、不得寫成固定樂團」處理，不要在正文指定某人在第幾軌**，除非兩邊一致。\n**載體：沒有同期黑膠。** Discogs master 1312711 只有 3 筆、全部 CD。\n**軌名**：MB 有兩處拼錯——第 1 軌作〈Vesti La Guibba〉（正確 Giubba）、第 10 軌作〈Soltanto a Tte〉（正確 Soltanto a Te）。**寫作層照 Discogs／盤面拼法。**\n**「Caruso 是第一位百萬唱片歌手」這類宣稱本層查不到可直接引用的來源，不要寫**；可以寫的是他錄過的那些曲子本身。\n**封面**：CAA RG 層 5 圖、來源歐版首發壓片 de6271a0，可用。**串流** ready（723559258），⚠ releaseDate `2002-01-01` 年初佔位日。\n**撞陳列**：池中九張 Joe Lovano 卡與本張逐軌零重疊（策展層已核），本層無新增。"
+ },
+ {
+  "key": "desc2:Rachelle Ferrell|Live in Montreux 91-97",
+  "artist": "Rachelle Ferrell",
+  "album": "Live in Montreux 91-97",
+  "facts": [
+   {
+    "f": "十二軌出自蒙特勒爵士節的三場演出：第 1 到 9 軌是 1991 年 7 月 15 日（Eddie Green 鋼琴、Tyrone Brown 貝斯、Doug Nally 鼓的三重奏），第 10 軌是 1997 年 7 月 13 日，第 11、12 軌是 1997 年 7 月 12 日的 Charles Aznavour 致敬場——那一場由科隆 WDR 大樂團的成員加入，她唱的是〈Me voilà seul〉與〈On se réveillera〉兩首法語曲。",
+    "src": "https://api.discogs.com/releases/5327762"
+   },
+   {
+    "f": "開場第 1 軌不是歌，是蒙特勒爵士節創辦人 Claude Nobs 的介紹詞，70 秒。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9aaf056a-581c-3108-9989-79cc04e99b18&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "George Duke 負責轉錄、混音與 1997 兩軌的編曲指揮；Ferrell 自己掛執行製作，並與 Blue Note 社長 Bruce Lundvall 共同寫內頁。",
+    "src": "https://api.discogs.com/releases/5327762"
+   },
+   {
+    "f": "Ferrell 與 George Duke 的關係不是一次合作：她 1995 到 1997 年是 George Duke Band 的一員，那個團 1997 年在蒙特勒的演出還出過一部叫《Live at Montreux》的演唱會影片。她六歲開始唱歌，十三歲以小提琴手身分登台，之後才轉鋼琴與人聲，1975 到 1990 年間替 Lou Rawls、Patti LaBelle、Vanessa Williams、Phyllis Hyman 唱和聲。",
+    "src": "https://en.wikipedia.org/wiki/Rachelle_Ferrell"
+   },
+   {
+    "f": "Billboard 的 Top Jazz Albums 從 2002-05-11 那一期起可查到它在榜，廠牌欄逐字 `BLUE NOTE 38564/CAPITOL`；本層以目錄號反查 2002 全年 OCR 共命中五期（5 月 11 日到 7 月 6 日）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-05-11.pdf"
+   },
+   {
+    "f": "MusicBrainz 把本碟的 secondary-type 正確標成 `Live`，first-release-date 是 2002-04-09（發行日，不是 1991 或 1997 的演出日）；轄下只有一筆 release，label-info 逐字把目錄號記成少一個空格的 `Blue Note 7243 5 38564 27`。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9aaf056a-581c-3108-9989-79cc04e99b18&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌不是歌，是蒙特勒創辦人 Claude Nobs 上台介紹她的七十秒",
+   "兩場演出隔了六年：1991 年她帶三重奏第一次去，1997 年她已經站在致敬 Charles Aznavour 的台上、用法語唱"
+  ],
+  "sound": "十二軌約 73 分鐘，最長的兩軌都在 1997 年那一側——〈On se réveillera〉593 秒、〈With Every Breath I Take〉521 秒，1991 年那一側最長的是〈My Funny Valentine〉511 秒。1991 場是鋼琴三重奏伴一把嗓子，空間乾、掌聲近；1997 場換成大編制與電聲（Brian Simpson 的鍵盤、Larry Kimpel 的貝斯、Little John Roberts 的鼓，第 12 軌另有 Jonathan Butler 的吉他），兩側的音響差別在碟上聽得出來。她的招牌是跨四個八度的音域與直接切進哨音域的能力，現場版比錄音室版更常用到。",
+  "keyTracks": [
+   "My Funny Valentine",
+   "With Every Breath I Take",
+   "On se réveillera",
+   "Bye Bye Blackbird"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過。** (1) **首發市場街頭日**：**2002-04-09**（MB release a60d8e6d 逐字；美版是首發市場）。 (2) **同期紙本**：目錄號 `38564` 反查 2002 全年 OCR 命中五期（2002-05-11 → 07-06），Top Jazz Albums，廠牌欄逐字 `BLUE NOTE 38564/CAPITOL`——與 4 月街頭日吻合。 (3) **Discogs 原壓群**：master 1341325 底下 5 筆，`released` facet 2002 佔 4（另一筆是無年份的宣傳盤），美版 11807622／歐版 5327762／日版 TOCJ-66171 都是 2002；歐版 notes 逐字 `℗ 2002 Capitol Records Inc.`。 (4) **MB frd 2002-04-09、secondary-type `Live` 標對，沒有被演出日汙染。** (5) **Apple 723521059 的 ℗ 是 2002。** ⚠ **要擋的是另一種日期汙染：1991 與 1997 是演出年，盤名裡的 `91-97` 也是演出年區間——正文不得把它們寫成發行年。** **結論：2002，不改判。**",
+  "notes": "**串流：本張已 ready（`723521059`，us 店面，12 軌全有 preview），主線第 1560-B／C 條已回寫，本層不重複處理。** ⚠ 但要記一筆給後批：**這一筆是三種查法裡只有 `lookup?upc=724353856427` 與藝人目錄救得回來的**，`search` 用盤名在三市場全空，因為**店面把條目名改寫成「Live In Montreux (1991-97)」**。\n**載體：沒有同期黑膠。** Discogs master 1341325 的 format facet 只有 CD／CDr。\n⚠ ⚠ **撞陳列是本組最重的一處，本層覆核成立**：十二軌裡有七軌是池中 c-152 b《First Instrument》（1990 錄音）同曲目的現場版——〈You Send Me〉〈You Don't Know What Love Is〉〈Don't Waste Your Time〉〈My Funny Valentine〉〈Bye Bye Blackbird〉〈Prayer Dance〉〈With Every Breath I Take〉。**正文必須寫明這是現場重唱、不是新曲目。** 另兩軌〈I Can Explain〉〈I'm Special〉出自她 1992 年 Capitol 的同名流行盤（池中無卡）。\n⚠ **補一條時序**：英文維基記《First Instrument》**1990 年只在日本發行、1995 年才在美國發行**——也就是說 1991 年她在蒙特勒唱這些曲子時，美國聽眾還買不到那張錄音室版。這是本張最好用的一層背景，策展層沒有寫。\n**編制**：策展層「逐軌變動、兩組完全不同的樂手」正確；本層補上 George Duke 的角色不只是混音——**1995–97 年她本人就是 George Duke Band 的團員**，1997 那兩場是在那個脈絡下發生的。\n**同批內部撞軌**：〈You Don't Know What Love Is〉也在本組 Chucho Valdés《New Conceptions》的軌目上，兩卡互指、**不得寫成合作**。\n**封面**：CAA RG 層 1 圖、來源美版首發壓片 a60d8e6d，可用。⚠ **MB 的 genres 與 tags 兩欄全空**，曲風不是抄來的。"
+ },
+ {
+  "key": "desc2:Jason Moran|Modernistic",
+  "artist": "Jason Moran",
+  "album": "Modernistic",
+  "facts": [
+   {
+    "f": "這是 Jason Moran 在 Blue Note 的第四張、也是他第一張獨奏鋼琴盤：Discogs 零售條目的 credit 欄逐字只有一行「Jason Moran - Piano, Piano [Mini], Producer」，內頁由 Alicia Hall Moran 執筆、署名逐字「NYC June 2002」。",
+    "src": "https://api.discogs.com/releases/2562105"
+   },
+   {
+    "f": "曲目本身就是一條時間線：從 James P. Johnson 1930 年的 stride 名曲〈You've Got to Be Modernistic〉起手，中段放進 Afrika Bambaataa〈Planet Rock〉的改編與一段 2 分鐘的後記、Muhal Richard Abrams〈Time Into Space Into Time〉、舒曼《聯篇歌曲》裡的〈Auf einer Burg〉，再接他自己的 Gangsterism 系列兩首與〈Gentle Shifts South〉。",
+    "src": "https://en.wikipedia.org/wiki/Modernistic_(album)"
+   },
+   {
+    "f": "Moran 在休士頓長大，六歲學古典鋼琴，一度只愛嘻哈，十三歲在家裡第一次聽到 Thelonious Monk 的〈'Round Midnight〉才轉向爵士——他說 Monk 那些帶大量空白的童謠式旋律相對好彈、節奏又讓他想起嘻哈。他後來進曼哈頓音樂學院，師事鋼琴家 Jaki Byard。",
+    "src": "https://en.wikipedia.org/wiki/Jason_Moran_(musician)"
+   },
+   {
+    "f": "Billboard 2002-08-24 那一期第 98 頁逐字預告「Jason Moran's Modernistic ... will be released by Blue Note on Sept. 17」，同一句話還一併給出本批另一張碟（Jacky Terrasson）的檔期。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-08-24.pdf"
+   },
+   {
+    "f": "AllMusic 的 David R. Adler 寫它「attempts to reconcile a staggeringly diverse set of influences into a cohesive artistic vision ... Moran burns the rule book and presents something so thoroughly individual as to be practically without precedent」。",
+    "src": "https://en.wikipedia.org/wiki/Modernistic_(album)"
+   },
+   {
+    "f": "MusicBrainz 只建了一筆 release（1a6aa4a7，`2002`、US、CD 11 軌、`Blue Note 7243 5 39838 2 6`），歐版 15654256、宣傳盤與 BMG 俱樂部版都只在 Discogs 上。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e8e3836e-c49d-3d2d-963f-22c683467175&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "一張獨奏鋼琴碟把 1930 年的 stride、1982 年的〈Planet Rock〉和舒曼的藝術歌曲排在同一條軌道上",
+   "十三歲以前他只聽嘻哈，直到在家裡聽見 Monk 的〈'Round Midnight〉"
+  ],
+  "sound": "十一軌約 47 分鐘，全部是一個人一台鋼琴（另加一台 mini piano）。最長的開場〈You've Got to Be Modernistic〉348 秒、〈Planet Rock〉347 秒，最短的〈Planet Rock Postscript〉121 秒與〈Gangsterism on a Lunchtable〉167 秒——短曲多，整張碟像一串接連不斷的小品。Gangsterism 系列的寫法是把一個短動機反覆推進、左手維持一條固定的低音，與 stride 的跳躍左手正好是兩種相反的力學，他在同一張碟上把兩者並排。",
+  "keyTracks": [
+   "You've Got to Be Modernistic",
+   "Planet Rock",
+   "Gangsterism on Irons",
+   "Auf einer Burg"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過，而且拿到逐字街頭日。** (1) **首發市場街頭日**：**Billboard 2002-08-24 p98 逐字「will be released by Blue Note on Sept. 17」——發行公告等級，符合第 1487 條的門檻。** (2) **同期紙本**：目錄號 `39838` 反查 2002 全年 OCR 命中 1 期（**2002-10-12 的 Top Jazz Albums，廠牌欄逐字 `BLUE NOTE 39838/CAPITOL`**），與 9 月 17 日街頭日吻合。 (3) **Discogs 原壓群**：master 381095 底下 5 筆，`released` facet 全部 2002。 (4) **MB frd 只有年份 `2002`。** (5) **Apple 725816131 的 ℗ 是 2002。** **結論：2002，不改判。**",
+  "notes": "**封面替代來源（CAA RG 層真 404，本層已找到）**：⚠ **策展層指定的 Discogs 零售條目 2562105 的 `images` 欄是空的**，本層改走 master 381095 的版本清單，**歐版 15654256（Blue Note `7243 5 39838 2 6`，Europe 2002，同目錄號同軌目）有一張 primary 圖**，直連 `https://i.discogs.com/uIOCOTkYW7Yn-ewYVPprAPoIZ2FAwuUf6V9JN-oN-HU/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjU0/MjU2LTE3MDk3MDgz/OTktMTAwOC5qcGVn.jpeg`（600×592），頁面 `https://www.discogs.com/release/15654256-Jason-Moran-Modernistic`。**同目錄號的歐版首壓，版式與美版相同。**\n**載體：沒有同期黑膠。** Discogs master 381095 的 format facet 只有 CD（5 筆）。\n**編制＝一人**，策展層正確；**本組另一張獨奏盤是 Chucho Valdés《Fantasía cubana》，兩張不得互相混寫。**\n**撞陳列**：池中 c-157 b《Black Stars》（2001）有〈Gangsterism on a River〉，本張有〈Gangsterism on Irons〉與〈Gangsterism on a Lunchtable〉——**同系列不同曲，正文不得寫成重錄**。\n⚠ **軌名切分**：MB 把第 10 軌的德英雙題拆成兩行，Discogs 寫成〈Auf Einer Burg/ In A Fortress〉，英文維基寫成〈Auf Einer Burg/In a Fortress〉——**實際是同一軌**，寫作層引用時寫〈Auf einer Burg〉即可。\n**串流** ready（725816131），⚠ releaseDate `2002-01-01` 年初佔位日。"
+ },
+ {
+  "key": "desc2:Cæcilie Norby|First Conversation",
+  "artist": "Cæcilie Norby",
+  "album": "First Conversation",
+  "facts": [
+   {
+    "f": "Billboard 2002-10-05 那一期第 61 頁逐字報導：「Danish vocalist Caecelie Norby's First Conversation (EMI/Blue Note) landed in the No. 2 slot on the Official Danish Hitlist following its release at the start of this month.」同一段引 Norby 自己的說法，這套曲目是從她與瑞典籍丈夫兼貝斯手 Lars Danielsson、丹麥鋼琴家 Carsten Dahl 的現場演出長出來的，再加上挪威小號手 Per Jørgensen 與鼓手 Jon Christensen，整組人拿「北歐極簡」當出發點。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-10-05.pdf"
+   },
+   {
+    "f": "十二軌以丹麥廣播娛樂管弦樂團（DR RadioUnderholdningsOrkestret）為底：Lars Danielsson 編寫並配器其中九軌（1–5、7–11），Per Ekdahl 編第 6 與第 12 軌，Carsten Dahl 編第 9 軌〈Midnight Sun〉；指揮有三位，David Firman、Frans Rasmussen 與 Paul Bateman。",
+    "src": "https://api.discogs.com/releases/11642529"
+   },
+   {
+    "f": "錄音師名單裡有 Jan Erik Kongshaug——奧斯陸 Rainbow Studio 的工程師、ECM 那套聲音的塑造者之一；同案另有 Frank Anker、Lars C. Bruun 與 Lars Nilsson，混音與母帶都由 Lars Nilsson 完成。",
+    "src": "https://api.discogs.com/releases/11642529"
+   },
+   {
+    "f": "曲目把〈For Heaven's Sake〉〈Never Let Me Go〉〈Here's to Life〉〈You Must Believe in Spring〉這些美國標準曲，與 Leonard Cohen〈Hallelujah〉、John Hartford〈Gentle on My Mind〉、The Police〈Tea in the Sahara〉，以及她自己寫的〈Leaving Town for the Weekend〉〈First Conversation〉〈Kyrie〉並置。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6edf5025-e5b0-3395-a0f8-95ac16ab9568&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Norby 是先唱搖滾才轉爵士的：1982 年起是 Street Beat 的創團成員，接著待過爵士搖滾團 Frontline，1985 到 1993 年與 Nina Forsberg 在搖滾團 One-Two；1995 年她簽進 Blue Note，首張同名專輯由 Niels Lan Doky 共同製作。",
+    "src": "https://en.wikipedia.org/wiki/C%C3%A6cilie_Norby"
+   },
+   {
+    "f": "同一期 Billboard 另記下發行當時丹麥市場的形狀：9 月 14 日那一期的丹麥官方榜前十名裡有七張是 EMI 系的，前五名依序是 Coldplay、Cæcilie Norby、Olsen Brothers、Kandis、Helmut Lotti。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-10-05.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "一張爵士唱片衝上丹麥官方排行榜第二名，前五名裡另外四張是 Coldplay 和幾組本地流行團",
+   "把 Leonard Cohen〈Hallelujah〉和 The Police〈Tea in the Sahara〉放進管弦樂團的譜裡，收尾的是她自己寫的〈Kyrie〉"
+  ],
+  "sound": "十二軌約 65 分鐘。最長的〈Tea in the Sahara〉400 秒、〈Midnight Sun〉370 秒，最短的〈You Must Believe in Spring〉只有 140 秒、〈Only the Young〉153 秒——短的那幾軌幾乎只是一段獨白。整張碟的底色是管弦樂團加北歐極簡：兩位鼓手（Anders Kjellberg 在 1・2・4・7 軌，Jon Christensen 在 3・5・6・8–12 軌）、兩位鋼琴手（Jesper Nordenström 在 1・4・7 軌，Carsten Dahl 在其餘）、兩位吉他手（Ulf Wakenius 在 2・7 軌，Jacob Fischer 在 4・6・10・12 軌）逐軌輪替，Tore Brunborg 的薩克斯風只在 3・4・5・8 軌，Per Jørgensen 的小號與和聲只在 5・8 軌，Danielsson 自己在第 11 軌放了一段大提琴 loop。",
+  "keyTracks": [
+   "First Conversation",
+   "Hallelujah",
+   "Tea in the Sahara",
+   "Kyrie"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過；日期在 9 月初與 10 月初之間有一個月歧異，正文只寫年份。** (1) **首發市場街頭日**：首發市場是丹麥。**Apple 693078550 的 releaseDate 逐字 `2002-09-03`（本組僅三筆真日期之一、不是年初佔位）**，**Billboard 2002-10-05 逐字說「following its release at the start of this month」（＝10 月初）**——兩者差一個月，**無法調和，正文只寫 2002**。 (2) **同期紙本**：2002-10-05 p61 的報導與同頁丹麥榜表格（逐字 `CAECILIE NORBY FIRST CONVERSATION CAPITOL`）。⚠ **紙本把名字拼成 `Caecelie`、把 Jon Christensen 寫成 `Jan Christensen`，兩處都是紙本自己的錯。** (3) **Discogs 原壓群**：master 1323437 底下 3 筆，`released` facet 2002 佔 2，丹麥原壓 804120 與歐版 11642529 都是 2002。 (4) ⚠ **MB first-release-date 逐字 `2002-12-11`，那是東芝EMI 日版 d922e0ef 的日期，不是原版**——第 1063／1252 條的日版檢查在本張成立：**日版比丹麥原版晚三個月，而且多一軌〈Theme from \"Hotel\"〉（13 軌）**。 (5) **Apple ℗ 2002。** **結論：2002，不改判；軌數以丹麥原版 12 軌為主體。**",
+  "notes": "⚠ **補一位策展層漏掉的樂手：Per Jørgensen（挪威小號手，第 5・8 軌吹小號並唱和聲）。** 策展層的編制清單列了兩位鼓手、兩位鋼琴手、兩位吉他手與 Tore Brunborg、Xavier Desandre Navarre，**獨漏 Jørgensen**——而他正是 Billboard 那段報導裡被點名的四個人之一（另三位是 Danielsson、Carsten Dahl、Jon Christensen）。\n⚠ **補一位更有份量的：錄音師 Jan Erik Kongshaug。** Discogs 歐版 11642529 的 credit 欄逐字把他列在 `Recorded By`——**他是奧斯陸 Rainbow Studio 的工程師、ECM 聲音的長期塑造者**。這解釋了本碟為什麼帶 ECM 味，也與 Jon Christensen（ECM 的常備鼓手）同時在場對得上。⚠ **但「整張在 Rainbow Studio 錄」這句話本層查不到可引用的來源**（Discogs 的 credit 只列人不列棚，共四位錄音師），**正文只能寫「錄音師之一是 Kongshaug」，不得寫成「在 Rainbow Studio 錄音」**。\n**載體：沒有同期黑膠。** Discogs master 1323437 只有 3 筆、全部 CD。\n**編制**：策展層「逐軌變動」正確，本層另把編曲的軌號分配補齊（Danielsson 1–5、7–11；Per Ekdahl 6、12；Carsten Dahl 9）。\n**「銷量逾 4 萬張」這個數字只見於藝人官網自述（`caecilienorby.com/bio.php`，本層實查時回 503 取不到全文），無第二來源，不寫。**\n**封面**：CAA RG 層 1 圖、來源丹麥首發壓片 a6393b30，可用。**串流** ready（693078550）；⚠ ℗ 欄逐字 `Parlophone Music Denmark`＝後年版權轉手，不推翻廠牌欄。\n**撞陳列**：軌名撞卡名 4 處（〈Never Let Me Go〉〈Here's to Life〉〈Midnight Sun〉〈You Must Believe in Spring〉），全是同名不同碟。"
+ },
+ {
+  "key": "desc2:Jacky Terrasson|Smile",
+  "artist": "Jacky Terrasson",
+  "album": "Smile",
+  "facts": [
+   {
+    "f": "盤名取自卓別林替《摩登時代》寫的〈Smile〉，Terrasson 替它做了一段大篇幅的變奏；十軌裡九首是爵士與流行標準曲、只有〈59〉一首是他自己的原創。",
+    "src": "https://en.wikipedia.org/wiki/Smile_(Jacky_Terrasson_album)"
+   },
+   {
+    "f": "錄音在法國的 Studio Recall，Philippe Gaillot 負責錄音與混音，製作是 Terrasson 自己與經紀人 Christophe Deghelt；三重奏是 Sean Smith 的低音提琴與 Eric Harland 的鼓，Rémi Vignolo 只在第 2、4、5 軌改彈電貝斯。",
+    "src": "https://api.discogs.com/releases/10603800"
+   },
+   {
+    "f": "曲單把 Bud Powell〈Parisian Thoroughfare〉、Bill Lee〈Mo' Better Blues〉、〈Sous le ciel de Paris〉、Stevie Wonder〈Isn't She Lovely〉、Luiz Eça〈The Dolphin〉、Miles Davis〈Nardis〉、〈Autumn Leaves〉與〈My Funny Valentine〉串成一條跨法美的線。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3974a0a7-6f70-4483-8222-9e4118b7d439&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "《華盛頓郵報》的 Geoffrey Himes 寫：「As on the previous disc, Terrasson again records in France and again includes tunes with some connection to the town he grew up in, Paris, whether it be 'Autumn Leaves' or 'Parisian Thoroughfare.' Not surprisingly, he sounds more like himself on his own turf.」",
+    "src": "https://en.wikipedia.org/wiki/Smile_(Jacky_Terrasson_album)"
+   },
+   {
+    "f": "Billboard 2002-08-24 那一期第 98 頁的同一句話一次給出兩張本批碟的檔期：Jason Moran《Modernistic》9 月 17 日、Terrasson 的新企畫 10 月 22 日。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-08-24.pdf"
+   },
+   {
+    "f": "Terrasson 的母親是美國喬治亞州出身的非裔美國人、父親是法國人，他在巴黎長大，因為母親的 Miles Davis 與 Billie Holiday 唱片轉向爵士；1993 年拿下 Thelonious Monk 國際爵士鋼琴大賽首獎後才簽進 Blue Note。",
+    "src": "https://en.wikipedia.org/wiki/Jacky_Terrasson"
+   }
+  ],
+  "hookCandidates": [
+   "碟名那首〈Smile〉是卓別林替《摩登時代》寫的，他把它拆成一段四百多秒的變奏放在第三軌",
+   "十軌裡只有一首是他自己寫的，曲名就叫〈59〉"
+  ],
+  "sound": "美版十軌約 47 分鐘。最長的三軌是同名曲〈Smile〉415 秒、原創〈59〉402 秒與〈The Dolphin〉366 秒，最短的〈Mo' Better Blues〉只有 159 秒、〈Isn't She Lovely〉184 秒——長短落差很大，整張碟的編排像一場現場演出的選曲。底是三重奏，但 Rémi Vignolo 的電貝斯只進第 2、4、5 軌，那三軌的低音是電的、其餘是木的，這個切換在碟上聽得出來。",
+  "keyTracks": [
+   "Smile",
+   "Parisian Thoroughfare",
+   "Sous le ciel de Paris",
+   "59"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2002 成立，本層覆核通過；但本層對「上榜時間」推翻策展層一處。** (1) **首發市場街頭日**：**Billboard 2002-08-24 p98 逐字預告 10 月 22 日**，**Discogs 美版零售 10603800 的 `released` 欄逐字 `2002-10-21`**——差一天，發行公告與原壓群互相支持。 (2) ⚠ ⚠ **同期紙本的上榜時間**：**策展層寫「美國榜要到 2003-03-08 p70 才出現」，本層實查推翻**——以目錄號 `40668` 反查 2002／2003 兩份 OCR：**2002 年 0 期、2003 年 3 期，最早的一期是 `BB-2003-01-25`**（Top Jazz Albums，廠牌欄逐字 `JACKY TERRASSON Smile BLUE NOTE 40668`），另兩期是 02-08 與 03-08。**進榜時間是 2003 年 1 月下旬，不是 3 月。** 另以大寫 `TERRASSON` 反查：**2002 年 0 次、2003 年 5 次**——2002 年的三處提及全是小寫的內文（Grammy 名單、Stefon Harris 專訪、8 月 24 日的檔期預告），**沒有任何一次是榜位**。 (3) **Discogs 原壓群**：master 881539 底下 5 筆，`released` facet 2002 佔 4、2003 佔 1。 (4) ⚠ **MB frd 是 `2002-01-01` 年初佔位日，不能當日期用。** (5) **Apple ℗ 2002。** **結論：2002，不改判；但「上榜晚於發行」的落差是三個月（2002-10 發行、2003-01 上榜），不是策展層說的五個月。**",
+  "notes": "⚠ ⚠ **本層另抓到一處紙本自相矛盾，要寫進下游備忘**：**`BB-2003-05-31` p75 的 Blue Note 全版廣告把《Smile》列在「ON THE HORIZON, NEW ALBUMS FROM…」（即將發行）那一欄**——但它 2002 年 10 月就已上市、2003 年 1 月就已上榜。**這是第 1506 條「廣告欄位名不可靠」的第三個樣本**（前兩個是 Stefon Harris 與 Ron Carter），而且本張的方向與 Harris 相同（已發行卻被列在「即將」）。**正文不得引用那則廣告來推發行時間。**\n⚠ ⚠ **後續生平事件：不寫。** 英文維基的 Jacky Terrasson 條目有一節「Allegation of sexual abuse」（2026 年的指控，案件進行中）。**依研究層共用規則的反向禁令，這屬於「與作品無關的後續生平事件」，一律不寫、不暗示、不迂迴提及**，本層也未寫進 facts。此處只是把它標出來，提醒寫作層與審稿別從別的來源撿到。\n**軌數兩說**：**美版 10 軌（Discogs 10603800、Apple 724931027）／13 軌版（MB 幽靈 release 0bf1e554 與 Apple 723550282，多〈Le jardin d'hiver〉〈L'éducation sentimentale〉〈L'air de rien〉三首法語曲）**。**本層以美版 10 軌為主體**，與策展層一致。\n**載體：沒有同期黑膠。** Discogs master 881539 的 format facet 只有 CD（含一筆 Copy Protected）。\n**編制**：策展層「三人核心＋Vignolo 電貝斯只在 2・4・5 軌」正確，英文維基的 Personnel 節逐字相同。\n**人員交叉**：Rémi Vignolo 同時在本批 Huchard《Toutakoosticks》與 Boltro《40°》上，**三張是三位領班的三場錄音**。\n**封面**：CAA RG 層 1 圖、來源美版首發壓片 c4f853a8，可用。**串流** ready（724931027）。"
+ },
+ {
+  "key": "desc2:Soulive|Soulive",
+  "artist": "Soulive",
+  "album": "Soulive",
+  "facts": [
+   {
+    "f": "Billboard 2003-04-19 那一期第 30 頁的評介逐字給出發行資訊：「SOULIVE Soulive PRODUCERS: Soulive Blue Note 7243 5 42805 0 4 RELEASE DATE: April 8」；同一期第 13 頁逐字稱它是「Soulive's self-titled third release for Blue Note (April 8)」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2003/BB-2003-04-19.pdf"
+   },
+   {
+    "f": "這是他們第一張現場錄音，九軌全部在巡演途中錄下——Discogs 零售條目的廠牌欄逐字列出五個場館：紐奧良與芝加哥的 House of Blues、紐約 Irving Plaza、亞特蘭大 Variety Playhouse、北卡 Boone 的 Legends；錄音由 Alan Evans 與 Wally Wenzel 完成，Kirk Yano 在 Planet 2 Planet Studios 混音。",
+    "src": "https://api.discogs.com/releases/2650782"
+   },
+   {
+    "f": "整張碟沒有任何客座，三個人（Eric Krasno 吉他、Neal Evans 管風琴兼鍵盤貝斯與 clavinet、Alan Evans 鼓）純靠即興撐完九軌；曲目除了自己的〈Aladdin〉〈El Ron〉〈First Street〉〈Dig〉，還翻了 Stevie Ray Vaughan 的〈Lenny〉。",
+    "src": "https://en.wikipedia.org/wiki/Soulive_(album)"
+   },
+   {
+    "f": "收尾的〈Turn It Out〉長達 772 秒，曲名正是他們 1999 年替 Velour Recordings 錄的那張獨立盤的盤名——那張碟賣掉 6.5 萬張，才讓他們在 2000 年秋天簽進 Blue Note。",
+    "src": "https://en.wikipedia.org/wiki/Soulive"
+   },
+   {
+    "f": "專輯在 Billboard 的爵士榜最高到第 10 名；本層以目錄號 `42805` 反查 2003 全年 OCR，命中三期（2003-04-19、05-03、05-17）。",
+    "src": "https://en.wikipedia.org/wiki/Soulive_(album)"
+   },
+   {
+    "f": "同年另發過美版黑膠 `Blue Note BTE 42805`（LP, Album），九軌分成 A 到 D 四面，A 面三軌、D 面兩軌。",
+    "src": "https://api.discogs.com/releases/2650782"
+   }
+  ],
+  "hookCanditesPlaceholder": null,
+  "hookCandidates": [
+   "收尾那首〈Turn It Out〉拉到十二分半，曲名就是他們四年前那張獨立盤的名字",
+   "五個場館錄下來的一張碟，盤上只列場館、一個日期都沒有"
+  ],
+  "sound": "九軌約 66 分鐘，是三張 Soulive 裡曲子最長的一張：〈Turn It Out〉772 秒、〈One in Seven〉571 秒、〈Dig〉478 秒，最短的開場〈Aladdin〉也有 351 秒。沒有客座、沒有人聲、沒有管樂，只剩管風琴三重奏的原型——Neal Evans 左手在鍵盤上走貝斯線、右手按和聲，Krasno 的吉他與 Alan Evans 的鼓在上面推。因為是巡演途中在五個場館錄的，各軌的廳堂殘響與觀眾聲並不一致。",
+  "keyTracks": [
+   "Turn It Out",
+   "One in Seven",
+   "Lenny",
+   "Aladdin"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2003 成立（策展層已自 2002 改判為 2003），本層獨立覆核同意改判。** (1) **首發市場街頭日（決定性）**：**Billboard 2003-04-19 p30 的評介逐字「RELEASE DATE: April 8」，同期 p13 逐字「(April 8)」**——發行公告等級、且出現兩次。 (2) **同期紙本**：目錄號 `42805` 反查 2003 全年得三期（04-19、05-03、05-17），2002 年 0 期；**另以 `90084`（美版第二目錄號）反查兩年，0 期**。 (3) **Discogs 原壓群（決定性）**：master 350117 底下 8 筆，`released` facet **`{\"2003\":8}`——沒有任何一筆是 2002**，含美版零售／宣傳／俱樂部／黑膠、歐版、日版。 (4) ⚠ ⚠ **MB 整個 RG 的年份早了一年**：first-release-date 逐字 `2002-04-22`，連美版 release 48dfa7e3 的日期欄也記成 `2002-04-22`。**MB 在本張完全不可用。** (5) **Apple us 715835363 的 releaseDate 逐字 `2003-04-08`（真日期，不是年初佔位）。** **結論：2003，維持策展層的改判。**",
+  "notes": "⚠ **載體：有同期黑膠，而且是 Blue Note 自己發的。** Discogs master 350117 的 Vinyl facet 有 1 筆——**2003 年美版 `Blue Note BTE 42805`（LP, Album，Discogs 2650782）**，九軌分四面。**這是本組十九張裡唯一一張有同年 Blue Note 黑膠的碟**（另一張有同期黑膠的 Uninvisible 是 Ropeadope 發的）。正文可以寫黑膠。\n**錄音資訊**：黑膠條目 2650782 的 notes 比 CD 條目完整，逐字給出錄音者（Alan Evans 與 Wally Wenzel）、混音（Kirk Yano，Planet 2 Planet Studios）與母帶（Chris Athens, Sterling Sound）。⚠ **五個場館沒有任何一場有日期，正文不得編造演出日。**\n**撞陳列**：與池中 c-157 b《Doin' Something》（2001）有三軌重疊（〈Solid〉〈Shaheed〉〈One in Seven〉的現場版），與同批《Next》（2002）零軌重疊。三卡互指，**正文要寫明這是現場重錄**。\n⚠ **〈Turn It Out〉的雙重身分**：既是本碟第 9 軌，也是他們 1999 年 Velour 盤的盤名——**池中與批次目前零命中，但 Velour 線一接就會撞**，請下游記一筆。\n**封面**：CAA RG 層 1 圖、來源美版首發壓片 48dfa7e3，可用。\n**串流**：ready，但**同一張碟在店面有兩個條目**——**us 的 `search` 回的是被改名的「Soulive (Live)」（715835363，℗ 欄逐字 `This Compilation ℗ 2011 Blue Note Records`＝後年重掛），jp／fr 回的才是原條目 715558078（℗ 2003）**，而且 jp／fr 把曲風標成 `Rock`。下游若要挑 id，**建議用 715558078**。\n`selfTitled: true`，策展層已標。"
+ }
+]
