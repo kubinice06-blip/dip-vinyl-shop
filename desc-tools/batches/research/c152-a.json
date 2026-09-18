@@ -1,0 +1,466 @@
+[
+ {
+  "key": "desc2:Stan Tracey|Live at the QEH",
+  "artist": "Stan Tracey",
+  "album": "Live at the QEH",
+  "facts": [
+   {
+    "f": "release-group 62473eb7 的欄位：title「Live at the QEH」、artist-credit「Stan Tracey」、first-release-date **1994**、primary-type Album、**secondary-types ['Live'] ✓**。**轄下只有一筆 release**：6dbafc24（**1994 GB** Official **CD 9 軌**，Blue Note International `8 31139 2`，barcode 724383113927）。**MB 沒有美版、沒有黑膠、沒有卡帶——這是一張只在英國發行的 CD。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=62473eb7-f507-4029-b553-d812fdd4de1f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層擋下策展層最大的一處正文風險：這不是一張「十七人大樂團」的碟，而是一場編制逐軌變動的音樂會。** Discogs 英國原壓 1786358 的 credits **每一筆都帶軌號**，逐軌還原後是：**1〈Triple Celebration〉四重奏**（Tracey p／Art Themen ts／Dave Green b／Clark Tracey d）、**2〈Come Sunday〉四重奏**（Peter King as 換上）、**3〈Some Other Blues〉與 4〈Easy Living〉只有 Gerard Presencer 小號＋Tracey 鋼琴的二重奏**（貝斯與鼓的軌號欄都是「1, 2, 5 to 8」，沒有 3、4）、**5〈Devil's Acre〉六重奏**、**6〈Mary Rose〉五重奏**、**7〈The Cuban Connection〉八重奏**、**8〈The Sixth Day〉才是十七人全編制**（五支小號／三支長號／五支薩克斯全部只掛第 8 軌）、**9〈Sophisticated Lady〉是 Tracey 的獨奏鋼琴**（該軌沒有任何其他樂手）。**正文不得寫成「十七人大樂團現場」。**",
+    "src": "https://api.discogs.com/releases/1786358"
+   },
+   {
+    "f": "同一筆 Discogs 條目的盤上註記逐字：「Recorded at The Q.E.H. 30th November 1993 by The BBC／Mixed at Abbey Road Studios using the Neve Capricorn Digital Desk／℗ 1994 The copyright in this sound recording is owned by BBC Enterprise under exclusive license to EMI Records Ltd.／© 1994 EMI Records Ltd.」**錄音 1993-11-30 一晚、發行 1994**。製作人 **Clark Tracey**（Tracey 的兒子，同時打鼓、並與 Alex Marcou／Chris Craker 共同混音與母帶）、內頁 **Ronnie Scott**、美術 **Graham Marsh**、攝影 David Sinclair、統籌 Jackie Tracey。**盤面沒有 Michael Cuscuna，也沒有任何美國製作端。**",
+    "src": "https://api.discogs.com/releases/1786358"
+   },
+   {
+    "f": "⚠ **Discogs 的目錄號欄逐字是 `7243 8 31139 2 7`、MB 的 label-info 是 `8 31139 2`**——同一張碟的長短兩形，`label` 欄兩形並列即可。Discogs 這筆的 `format` 欄是乾淨的 `CD, Album`（**沒有 Reissue／Compilation**），`country` ＝ UK，廠牌欄逐字 `Blue Note International`。",
+    "src": "https://api.discogs.com/releases/1786358"
+   },
+   {
+    "f": "⚠ **紙本零命中本層覆驗成立，而且連假陽性都查清楚了。** 本層在 `billboard-bn-1994-1995q1`／`billboard-bn-1995q2-q4`／`billboard-bn-1996`／`cashbox-bn-1994`／`cashbox-bn-1995`／`cashbox-bn-1996` 六份掃描檔逐期查 `31139`／`STAN TRACEY`／`QEH`：**`31139` 在 Billboard 1995 命中 4 次、1996 命中 2 次，但六則全部是 Ichiban Records 廣告裡的亞特蘭大郵遞區號「P.O. Box 724677, Atlanta, GA 31139-1677」**，與本盤無關；`Stan Tracey` 與 `QEH` 兩個字串在六份檔案裡零命中。**策展層「兩刊零命中」的結論成立，但理由要改寫成「有六則假陽性、逐則剔除後為零」。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-08-05.pdf"
+   },
+   {
+    "f": "⚠ **店面：本層跑滿第 254 條三種查法，全部 0 筆，判查無。** 第一種 `Stan Tracey Live at the QEH`（us）0 筆；第二種換盤名／換市場（`Stan Tracey QEH` gb、`Stan Tracey Live at the Q.E.H.` gb、`Live at the QEH` gb）0 筆相關；第三種拉藝人目錄（`Stan Tracey` us／gb／jp、`Stan Tracey Big Band` gb、`Stan Tracey Portraits Plus` gb）回的是《Under Milk Wood》《Showcase》《Little Klunk》《Solo:Trio》《Comme d'habitude》《Alice in Jazz Land》《Portraits Plus》等二十餘張，**沒有一張是本盤**；再以 song 實體查 `Triple Celebration Tracey` 只回 2009 年 Stan Tracey Quartet《Senior Moment》裡的同名曲（collectionId 1648364514），**不是本盤的 1993 年現場版**。**本卡走固定無來源狀態。**",
+    "src": "https://itunes.apple.com/search?term=Stan+Tracey&country=gb&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "節目單上寫的是大樂團，但十七個人只在第八首〈The Sixth Day〉同時站上台；第三、四首縮到小號與鋼琴兩個人，最後一首〈Sophisticated Lady〉台上只剩 Tracey 一架琴",
+   "BBC 錄的音、Abbey Road 用 Neve Capricorn 數位台混的，掛的是 Blue Note——但這張英國盤在美國的 Billboard 與 Cash Box 三年六份紙本裡一次都沒出現過"
+  ],
+  "sound": "1993 年 11 月 30 日倫敦 Queen Elizabeth Hall 的一晚，九軌，編制逐軌變動：四重奏開場（〈Triple Celebration〉〈Come Sunday〉），第三、四首縮成 Gerard Presencer 的小號與 Tracey 鋼琴二重奏，中段〈Devil's Acre〉〈Mary Rose〉〈The Cuban Connection〉在五到八人之間擴張，第八首〈The Sixth Day〉才把五支小號、三支長號、五支薩克斯全部放上去，最後〈Sophisticated Lady〉是無伴奏的獨奏鋼琴。長曲居多——〈Devil's Acre〉11:44、〈Mary Rose〉11:10、〈The Cuban Connection〉10:03。Tracey 自己的五首寫作與 Ellington 兩首、Coltrane〈Some Other Blues〉、〈Easy Living〉交錯。只有 CD，沒有同期黑膠。",
+  "keyTracks": [
+   "The Sixth Day",
+   "Devil's Acre",
+   "Sophisticated Lady"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判，依據也不變。** MB frd 1994（只有年）＝ MB 唯一 release 6dbafc24 的 date 1994／country GB ＝ Discogs 英國原壓 1786358 的 `year` 欄 1994 ＝ 盤面 **℗ 1994 BBC Enterprises 授權 EMI Records Ltd／© 1994 EMI Records Ltd** 四邊同向。⚠ **紙本無法提供任何一層**：本層在兩刊六份掃描檔（Billboard 1994／1995／1996、Cash Box 1994／1995／1996）逐期查 `31139`／`STAN TRACEY`／`QEH`，**唯一的六則 `31139` 命中全部是 Ichiban Records 廣告的亞特蘭大郵遞區號，已逐則剔除**——**這是第 1123 條「Blue Note International 的英國盤在美國紙本上接近不存在」在本段第三次成立**（前兩次是 c-151 b 的 Andy Sheppard《Delivery Suite》與 Orphy Robinson《The Vibes Describes》）。⚠ **錄音 1993-11-30 一晚，正文不得寫成 1994 年的演出。** ⚠ **首發地英國，而且是唯一發行地**（MB／Discogs 都沒有美版、日版），**正文不得寫成「Blue Note 在美國發行」。**",
+  "notes": "**覆核策展層：rgMbid 62473eb7／原盤 6dbafc24／`7243 8 31139 2 7`／掛名 `Stan Tracey`／年份 1994／live 旗標 全部成立。**｜⚠⚠ **本層擋下策展層一處重大正文錯（第 1049／609 條那一類的編制錯，形狀＝「把逐軌變動的編制寫成常設大樂團」）**：策展層 `why` 寫「編制是十七人大樂團」並把十四位管樂手全部列成常設團員，**但 Discogs 1786358 的 credits 每一筆都帶軌號，逐軌還原後只有第 8 軌〈The Sixth Day〉是十七人全編制**；**第 3、4 軌是 Presencer 小號＋Tracey 鋼琴的二重奏（該兩軌沒有貝斯也沒有鼓）**、**第 9 軌〈Sophisticated Lady〉是無伴奏獨奏鋼琴**、其餘在四到八人之間。**正文必須寫成「編制逐軌變動的一晚」，不得寫成大樂團專輯。**（⚠ 這正是派工信警告的「把獨奏盤寫成合奏」的反向形狀。）｜**製作人**：**Clark Tracey（Stan 的兒子）一人兼鼓手與製作人**，並與 Alex Marcou、Chris Craker 共同掛 Mixed By／Mastered By；**盤面沒有 Michael Cuscuna**。內頁 Ronnie Scott、美術 Graham Marsh、攝影 David Sinclair、統籌 Jackie Tracey。｜**載體**：**只有 CD**（MB 唯一 release、Discogs 唯一條目皆 CD）——**⚠ 正文不得預設有黑膠原壓，但也不得寫成「當年只發 CD」以外的推論**（第 1064 條）。｜**撞陳列**：〈Come Sunday〉〈Sophisticated Lady〉是 Ellington 曲，池中 `Duke Ellington` 相關 17 張（含 seed《Black, Brown and Beige》），〈Some Other Blues〉是 Coltrane 曲——**全部是同曲不同錄音，逐軌比過與池中任何一張零母帶重疊**；池中三張 Stan Tracey 相關卡（`Stan Tracey Quartet —《Captain Adventure》`／`Stan Tracey & Keith Tippett —《TNT》`／`Mike Osborne / Stan Tracey —《Original》`）**曲目與本盤九軌零重疊**。｜⚠ **封面：CAA RG 層與 release 層本層各重試三次（`-L` 跟隨轉址），六次全部 404、沒有一次 5xx**（第 589a 條）。**替代來源：Discogs 英國原壓 `1786358` 的 `images[0].uri`，type=primary，**599×600**，該條目共 **3 圖**（另兩張 600×513 與 598×600 是封底與內頁）。**本層不下載任何圖。**｜⚠ **試聽：三種查法全空，明寫查無**（詳見 facts 第 6 條），**本卡走固定無來源狀態，不得硬塞任何 Stan Tracey 的其他條目。**｜非選輯：單一藝人、單一場次的現場專輯，`releaseType` Album ＋ live。"
+ },
+ {
+  "key": "desc2:Steve Masakowski|What It Was",
+  "artist": "Steve Masakowski",
+  "album": "What It Was",
+  "facts": [
+   {
+    "f": "release-group 9a93fe8d 的欄位：title「What It Was」、artist-credit「Steve Masakowski」、first-release-date **1994**、primary-type Album、secondary-types 空。轄下兩筆 release：**af8948bc（1994 CD 12 軌，Blue Note `CDP 0777 7 80591 2 7`，barcode 077778059127，country 欄空白）**，另一筆 **46b669a1 是殘件**（無日期、無國別、無廠牌、媒體欄 `None`×12，第 1126 條那種），**不引用**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9a93fe8d-5ec3-3f6d-b7dd-85e901adf5de&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美國原壓 5567340（US 1994，`CD, Album`，Blue Note `CDP 0777 7 80591 2 7`）的盤上註記逐字只有一句：「**Recorded Apr. 1993**」。公司欄逐字：**Recorded At — New Orleans Recording Company ＋ Studio 13, New Orleans**、**Mixed At — Skyline Studios**（紐約）、Manufactured By — Capitol Records, Inc.、Record Company — Capitol-EMI Music, Inc.。**錄音在紐奧良、混音在紐約。**",
+    "src": "https://api.discogs.com/releases/5567340"
+   },
+   {
+    "f": "同一筆的完整 credits（**策展層沒有列，本層補齊**）：**Steve Masakowski — 七弦電吉他、作曲**；**Dave Torkanowsky — 鍵盤兼製作人**；**Bruce Lundvall — Executive-Producer**；**Rick Margitza — 次中音薩克斯**；Michael Pellera — 鋼琴／鍵盤；**貝斯兩人分工：Bill Huntington（原音）與 James Genus（電）**；**鼓兩人：Johnny Vidacovich 與 Ricky Sebastian**；打擊 Don Alias、Hector Gallardo（bongos／timbales）。錄音 Paul Brown 與 Robinson Mills，混音 James Farber；內頁 **Danny Barker**（紐奧良的班鳩／吉他老前輩），美術 Patrick Roques、設計 Julie Belcher、攝影 Michael Terranova。⚠ **credits 欄沒有標軌號，無法逐軌還原誰在哪一首**——正文只能寫「兩位貝斯手、兩位鼓手分攤」，不得寫成固定編制。",
+    "src": "https://api.discogs.com/releases/5567340"
+   },
+   {
+    "f": "十二軌與時長：〈Tino's Blues〉4:17〈What It Was〉5:57〈The Big Easy〉6:10〈Hector's Lecture〉4:38〈Budapest〉8:00〈Stepping Stone〉5:18〈Southern Blue〉5:58〈Joao〉2:56〈Starling〉4:29〈Quiet Now〉4:32（Denny Zeitlin 曲）〈Alexandra〉3:40〈Jesus' Last Ballad〉2:52（Gianni Bedori 曲）。**十二軌裡十首是 Masakowski 自己的曲，外來曲兩首不是一首**——**策展層寫「十一首是他自己寫的、只有〈Quiet Now〉是外來曲」，漏掉了〈Jesus' Last Ballad〉的作曲者 Gianni Bedori**（Discogs 逐軌 `Composed By` 欄）。",
+    "src": "https://api.discogs.com/releases/5567340"
+   },
+   {
+    "f": "⚠ **載體：CD 與卡帶兩種，沒有黑膠。** Discogs master 1542980 底下只有兩個版本：**5567340（US 1994 CD）** 與 **13575957（US 促銷卡帶 `B4-80591`，`major_formats: ['Cassette']`）**。**1994 年這一格沒有任何黑膠壓片**（第 1064 條：逐張查清楚，本張查實）。",
+    "src": "https://api.discogs.com/masters/1542980/versions?per_page=100"
+   },
+   {
+    "f": "⚠ **紙本零命中本層覆驗成立。** 在 `billboard-bn-1994-1995q1`／`billboard-bn-1995q2-q4`／`billboard-bn-1996`／`cashbox-bn-1994`／`cashbox-bn-1995`／`cashbox-bn-1996` 六份掃描檔逐期查 `80591` 與 `MASAKOWSKI`：**六份全部 0 命中，連假陽性都沒有**。⚠ **對照組**：同一批 Blue Note 新人裡，Kevin Hays 有 Billboard 1994-07-09 評介、Tim Hagans 有 1994-07-02 整版廣告，**Masakowski 兩者皆無**——**本張是本組唯一一張連廠牌廣告都沒有進過的碟。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-07-02.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `1477236998` 本層逐軌核過，是同一張碟。** `lookup` 帶 `entity=song` 回 12 軌，軌名與軌序與原盤 12 軌完全一致（〈Tino's Blues〉…〈Quiet Now〉第 10、〈Alexandra〉第 11、〈Jesus' Last Ballad〉第 12），**12 軌 previewUrl 全有**，copyright 欄逐字「A Blue Note Records Release; ℗ 1994 Capitol Records, LLC」。⚠ **`releaseDate` 是 1994-01-01 的年頭回填值**（第 484 條），不得當年份旁證。**可寫 `串流採信 1477236998`。**",
+    "src": "https://itunes.apple.com/lookup?id=1477236998&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "紐奧良大學的爵士教授、七弦吉他，錄音在紐奧良、混音在紐約 Skyline——內頁請來的是本地班鳩老前輩 Danny Barker",
+   "Blue Note 1994 年那批新人首發裡，Hays 有評介、Hagans 進了整版廣告，只有這張在 Billboard 與 Cash Box 三年六份紙本裡一個字都沒有"
+  ],
+  "sound": "十二軌，十首是 Masakowski 自己寫的，只有 Denny Zeitlin 的〈Quiet Now〉與 Gianni Bedori 的〈Jesus' Last Ballad〉是外來曲。主奏是他的七弦電吉他，節奏組刻意分成兩組——原音貝斯 Bill Huntington 與電貝斯 James Genus、鼓手 Johnny Vidacovich 與 Ricky Sebastian 分攤，外加 Don Alias 與 Hector Gallardo 的 bongos／timbales，所以同一張碟上會聽到兩種完全不同的律動底。Rick Margitza 的次中音與 Michael Pellera 的鋼琴／鍵盤是主要的對位聲部。長度落差大：〈Budapest〉八分鐘，〈Joao〉與〈Jesus' Last Ballad〉不到三分鐘。只有 CD 與卡帶，沒有黑膠。",
+  "keyTracks": [
+   "What It Was",
+   "The Big Easy",
+   "Budapest"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判，依據不變。** MB frd 1994 ＝ MB release af8948bc 的 date 1994 ＝ Discogs master 1542980 與美國原壓 5567340 的 `year` 欄 1994 ＝ Apple 1477236998 的 copyright 逐字「℗ 1994 Capitol Records, LLC」四邊同向。⚠ **紙本完全提供不了任何一層**：兩刊六份掃描檔（Billboard 1994／1995／1996、Cash Box 1994／1995／1996）逐期查 `80591` 與 `MASAKOWSKI`，**六份全部 0 命中、零假陽性**——**本張沒有評介週、沒有榜位、也沒有進過任何一則 Blue Note 廣告**（本層另核：1994-07-02 p45 與 1994-09-10 p39 兩則整版廣告都沒有他）。⚠ **錄音 1993 年 4 月**（Discogs notes 逐字「Recorded Apr. 1993」），**正文不得寫成 1994 年錄音**。⚠ **Apple 的 `releaseDate` 1994-01-01 是年頭回填值**（第 484 條），不得引用。⚠ **本張的年份只有資料庫層與串流版權欄支撐，沒有紙本背書**——這一點要留給後批：**若日後有人在 1994 下半年的 Billboard 新片欄找到 80591，本張的上市月份才有辦法定。**",
+  "notes": "**覆核策展層：rgMbid 9a93fe8d／原盤 af8948bc／`CDP 0777 7 80591 2 7`／掛名 `Steve Masakowski`／年份 1994 全部成立。**｜⚠ **本層擋下策展層一處事實錯**：策展層 `why` 寫「十二軌裡十一首是他自己寫的……只有 Denny Zeitlin 的〈Quiet Now〉是外來曲」，**但 Discogs 逐軌 `Composed By` 欄顯示〈Jesus' Last Ballad〉的作曲者是 Gianni Bedori**——**外來曲是兩首不是一首，自作曲是十首不是十一首。**｜⚠ **編制欄策展層整個沒寫，本層補齊並標出風險**：**兩位貝斯手（Bill Huntington 原音／James Genus 電）、兩位鼓手（Johnny Vidacovich／Ricky Sebastian）**，**Discogs credits 沒有標軌號，無法還原誰在哪一首**——**正文只能寫「分攤」，不得寫成固定六人編制。**｜**製作人**：**Dave Torkanowsky（同時彈鍵盤）製作、Bruce Lundvall 掛 Executive-Producer**——**兩個角色不得互換**（第 609 條同形）。混音 James Farber，錄音 Paul Brown／Robinson Mills。｜**Rick Margitza 在本盤吹次中音**——⚠ **他也是 c-149 b《Neohippus》那張「只列在 CD 版 credits 上」的同一人，兩卡可互指，但正文不得把兩張寫成同一條線。**｜**內頁是 Danny Barker**（紐奧良班鳩／吉他前輩），**美術 Patrick Roques**——⚠ **Roques 同時是本組 `Kevin Eubanks —《Live at Bradley's》` 的封面作者**，**兩張只是共用美術，不得寫成同一企劃。**｜**載體**：**CD ＋ 促銷卡帶 `B4-80591`（Discogs 13575957），沒有黑膠**（master 1542980 只有這兩個版本）。｜⚠ **封面：CAA RG 層與兩筆 release 層本層各重試三次（`-L`），全部 404、沒有一次 5xx**（第 589a 條）。**替代來源：Discogs 美國原壓 `5567340` 的 `images[0].uri`，type=primary，**只有 500×490**，該條目共 **4 圖**（另三張 600×466／600×599／600×600 是封底與內頁）。⚠⚠ **primary 圖低於 600px，是本組最弱的一張封面來源**（c-150 踩過同一個坑）；**促銷卡帶 13575957 的 primary 是 394×600 的直式 J-card，版式不同，不可替代**。**本層不下載任何圖。**｜**試聽已可用**：**`串流採信 1477236998`**（us，12 軌逐軌核過、軌序一致、previewUrl 全有）。｜非選輯：單一藝人、1993 年 4 月同一段錄音的原創專輯。"
+ },
+ {
+  "key": "desc2:Fareed Haque|Sacred Addiction",
+  "artist": "Fareed Haque",
+  "album": "Sacred Addiction",
+  "facts": [
+   {
+    "f": "release-group d9656b13 的欄位：title「Sacred Addiction」、artist-credit「Fareed Haque」、first-release-date **1994**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：1c2d543c（1994 Official **CD 11 軌**，Blue Note `CDP 0777 7 89662 2 7`，barcode 077778966227，**country 欄空白**）。**MB 沒建黑膠、沒建卡帶、也沒建任何非美國版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d9656b13-3a72-48ca-a4d6-5428a39b4a2a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **Discogs 美國原壓 4663202 是本組資料最薄的一筆**：`notes` 空、`companies` 空、**`extraartists`（credits）整個是空陣列**、`images` 只有 1 張且只有 160×160。`format` 欄是 `CD`（**沒有 Reissue／Compilation 描述詞**），廠牌欄 Blue Note，目錄號 `CDP 0777 7 89662 2 7`。十一軌與時長：〈Another Day In Paradise〉3:46〈Sacred Addiction〉4:41〈Mass〉4:49〈Raga〉5:59〈Blue People〉5:28〈Too Much To Tell〉4:59〈I'll Be Around〉4:10〈The Captain's Refrain〉5:37〈El Colibri (\"the Hummingbird\")〉1:06〈No Mystery〉5:08〈Of A Simple Mind〉3:02。",
+    "src": "https://api.discogs.com/releases/4663202"
+   },
+   {
+    "f": "⚠ **編制與製作人只有 Cash Box 一個來源，本層逐字抄回並標明**：**Cash Box 1994-04-23 p17 Jazz Reviews（M.R. Martinez）**逐字寫「**FAREED HAQUE: Sacred Addiction (Blue Note CDP 0777 7 89662 2 7). Producers: Bill Preskill & F. Haque.**」，並點名「**guitarist Buzzy Feiten, bassist Charles Fambrough, drummer Tom Brechtlein**」與一位鍵盤手，評語逐字「The axiom goes that, in order to be truly accepted, newcomers in jazz and progressive musics must be able to perform in the spirit of predecessors with as much facility as they do their original work. Acoustic guitarist Haque demonstrates he can indeed do that」，並點名〈Sacred Addiction〉〈Too Much To Tell〉〈Raga〉三軌。**這則評介在 Cash Box 1994-05-07 p15 逐字重登一次。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1994/CB-1994-04-23.pdf"
+   },
+   {
+    "f": "⚠ **載體：CD 與卡帶，沒有黑膠。** Discogs master 1307280 底下五個版本：**4663202（US 1994 CD）**、**25664719（US 1994 卡帶 `b4 0777 7 89662 4 1`）**、**12123350（US 促銷卡帶 `B4-89662`，⚠ 廠牌欄印 `Manhattan Records`、`year` 欄 1993）**、**11498342（印尼 1994 卡帶 `TC-789662-4`）**、**26205764（日本 1994 促銷 CD `TOCJ-5894 (7 89662 2)`）**。**沒有任何黑膠。** ⚠ **促銷卡帶那筆的 1993 與 Manhattan Records 是孤證**（其餘四筆全部 1994／Blue Note），**不得用來推前年份**。",
+    "src": "https://api.discogs.com/masters/1307280/versions?per_page=100"
+   },
+   {
+    "f": "⚠ **Billboard 側零命中、Cash Box 側兩則（同一篇）。** 本層在六份掃描檔逐期查 `89662`／`FAREED`／`HAQUE`／`SACRED ADDICTION`：**Billboard 1994／1995／1996 三份對本盤 0 命中**（唯一的 `Fareed` 命中是 1994-11-05 p86 Najee《Share My World》的製作人欄「PRODUCERS: Fareed, Najee, Christian」，**不是本盤**）；**Cash Box 只有 1994-04-23 p17 與 1994-05-07 p15 同一則評介**；另 Cash Box 1995-03-25 p15 提到他以客座吉他手身分出現在別人的碟上，**與本盤無關**。**本張沒有上過 Billboard 的任何一張爵士榜**（第 879 條的兩張榜本層都查過）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1995/CB-1995-03-25.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `1710826991` 本層逐軌核過，是同一張碟。** `lookup` 帶 `entity=song` 回 11 軌，軌名與軌序與原盤一致（第 9 軌 Apple 拼成「El Clibri (\"The Humming Bird\")」，是 OCR 式的拼寫差異，位置與時長對得上），**11 軌 previewUrl 全有**，copyright 逐字「A Blue Note Records Release; ℗ 1994 Capitol Records, LLC」。⚠ **`releaseDate` 1994-02-02 比 Cash Box 評介週早兩個半月，是串流回填日**（第 484 條）。**可寫 `串流採信 1710826991`。**",
+    "src": "https://itunes.apple.com/lookup?id=1710826991&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟上同時放著 Phil Collins 的〈Another Day In Paradise〉、Chick Corea 的〈No Mystery〉與一分零六秒的巴拉圭吉他小品〈El Colibrí〉",
+   "Discogs 那一頁連一個樂手名字都沒有——這張碟的班底是靠 1994 年 4 月一則 Cash Box 評介才留下來的"
+  ],
+  "sound": "十一軌的吉他專輯，古典吉他科班出身的 Haque 把翻奏與自作曲並列：開場是 Phil Collins 的〈Another Day In Paradise〉，中段有 Chick Corea 的〈No Mystery〉與標準曲〈I'll Be Around〉，自己的〈Sacred Addiction〉〈Mass〉〈Raga〉〈Blue People〉〈Too Much To Tell〉〈The Captain's Refrain〉〈Of A Simple Mind〉撐起主體，另插一首只有一分零六秒的獨奏小品〈El Colibrí〉。曲長普遍在三到六分鐘之間，沒有長篇即興。班底（只見於 Cash Box 評介）是 Buzzy Feiten 吉他、Charles Fambrough 貝斯、Tom Brechtlein 鼓與一位鍵盤手。只有 CD 與卡帶，沒有黑膠。",
+  "keyTracks": [
+   "Sacred Addiction",
+   "Raga",
+   "Too Much To Tell"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判，依據不變且是本組少數有紙本背書的。** **Cash Box 1994-04-23 p17 的 Jazz Reviews 新片評介**（同一則 1994-05-07 p15 重登）＝ 階序最上層的同期紙本 ＞ MB frd 1994 ＝ Discogs master 1307280 與美國原壓 4663202 的 `year` 欄 1994 ＝ Apple copyright「℗ 1994」。⚠ **只有一份刊物**：Billboard 1994／1995／1996 三份掃描檔對 `89662`／`HAQUE`／`SACRED ADDICTION` **零命中**（唯一的 `Fareed` 命中是 1994-11-05 p86 Najee 碟的製作人欄，已剔除），**本張沒有上過 Billboard 兩張爵士榜的任何一張**——**因此拿不到第 431 條要的「兩份不同刊物」，上市月份只能由 Cash Box 的評介週（4 月下旬）往回推到 1994 年春。** ⚠ **Discogs 促銷卡帶 12123350 的 `year` 欄是 1993、廠牌欄印 `Manhattan Records`**——**五個版本裡的孤證，其餘四筆全部 1994／Blue Note，本層不採信，也提醒後批不要拿它推前一年。** ⚠ **Apple `releaseDate` 1994-02-02 是串流回填日**（第 484 條），不得當依據。",
+  "notes": "**覆核策展層：rgMbid d9656b13／原盤 1c2d543c／`CDP 0777 7 89662 2 7`／掛名 `Fareed Haque`／年份 1994 全部成立，本張未擋下任何一處。**｜⚠⚠ **編制與製作人是本組唯一一張「盤面 credits 完全查無」的碟**：**Discogs 4663202 的 `extraartists` 是空陣列、`notes` 空、`companies` 空**，**MB 也沒有 relationship**。**班底（Buzzy Feiten 吉他／Charles Fambrough 貝斯／Tom Brechtlein 鼓／一位鍵盤手）與製作人（Bill Preskill ＋ Haque）只有 Cash Box 1994-04-23 p17 一個來源**——**寫作層引用時必須標明來源是評介行文、不是盤面 credits**（第 470 條：一份來源要按欄位評價）。⚠ **策展層把鍵盤手寫成 Patrice Rushen，但本層在 Cash Box 該則評介的可讀文字裡只確認到「keyboardist」一詞，沒有讀到人名**——**正文不得把 Patrice Rushen 寫死。**｜⚠ **錄音日期與錄音室本層查無**：Discogs 的兩個一級欄位（notes／companies）都是空的，兩刊評介也沒寫，**正文不得憑空給錄音年月。**｜**載體**：**CD ＋ 三種卡帶（美版、美國促銷、印尼）＋ 日本促銷 CD `TOCJ-5894`，沒有黑膠**（master 1307280 五個版本逐筆核過）。⚠ **`TOCJ-5894` 是促銷盤、`year` 欄 1994**，**與第 1063／1066 條說的「日本盤早半年到一年」不同形**——**本張的日本盤不早於美版，首發地是美國。**｜**撞陳列**（逐軌比過）：〈No Mystery〉是 Chick Corea／Return to Forever 1975 年的曲、〈Another Day In Paradise〉是 Phil Collins 1989 年的歌、〈I'll Be Around〉是 Alec Wilder 的標準曲、〈El Colibrí〉是 Julio Sagreras 的古典吉他小品——**四件都是翻奏，與池中任何一張零母帶重疊，正文不得寫成合作。**｜**封面已有**：CAA RG 層 4 圖，來源是唯一的 1994 原盤 1c2d543c ✓。⚠ **Discogs 那一筆只有 1 張 160×160 的圖，不可當備援**。｜**試聽已可用**：**`串流採信 1710826991`**（us，11 軌逐軌核過、軌序一致、previewUrl 全有；⚠ 第 9 軌 Apple 拼成「El Clibri」，是拼寫差異不是別的碟）。｜非選輯：單一藝人的原創／翻奏混合專輯，`releaseType` Album。"
+ },
+ {
+  "key": "desc2:Kevin Hays|Seventh Sense",
+  "artist": "Kevin Hays",
+  "album": "Seventh Sense",
+  "facts": [
+   {
+    "f": "release-group 66ed67c7 的欄位：title「Seventh Sense」、artist-credit「Kevin Hays」、first-release-date **1994**、primary-type Album、secondary-types 空。轄下兩筆 release：**71ae8939（1994 US Official CD 10 軌，Blue Note `CDP 0777 7 89679 2 7`，barcode 077778967927）** 與 **a42e1f43（2019-09-20 XW 數位 10 軌，barcode 602508305832，⚠ 題名寫作「7th Sense」）**。**MB 沒建黑膠、沒建卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=66ed67c7-9c9e-463d-9aa2-a0a2304ccfdf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美國原壓 10908286（US 1994，`CD, Album`）的盤上註記逐字：「**Produced by John Scofield**／**Title \"Seventh Sense\" on the spine, \"7th Sense\" on the covers and CD.**／Released in standard jewel case with white insert.／No SID codes」。公司欄逐字：**Recorded At — Systems Two**（布魯克林）、**Mastered At — Foothill Digital**、Glass Mastered At — EMI Jax、Manufactured By — Capitol Records, Inc.；**Matrix 欄帶日期 `89679 02# 03-01-94 SP 2-1-1 EMI JAX`**（母盤日期 1994-03-01）。",
+    "src": "https://api.discogs.com/releases/10908286"
+   },
+   {
+    "f": "**完整編制（Discogs credits，五人，沒有軌號差異）**：**Kevin Hays 鋼琴、Seamus Blake 次中音薩克斯、Steve Nelson 顫音琴、Doug Weiss 貝斯、Brian Blade 鼓**。⚠ **John Scofield 只掛 Producer，credits 裡沒有任何樂器欄**——**正文不得把他寫成演奏者。** 十軌與作曲者：〈Take the D Flat Train〉5:48（Hays）〈Seventh Sense〉6:55（Hays）〈Three Pillars〉7:12（Hays）〈My Man's Gone Now〉8:23（Gershwin）〈Interlude〉5:47（**Paul Hindemith**）〈Space Acres〉7:07（**Bill Stewart**）〈Little B's Poem〉5:05（Bobby Hutcherson）〈East of the Sun〉7:55（Brooks Bowman）〈Makyo〉4:33（Hays）〈Black Narcissus〉4:56（Joe Henderson）。",
+    "src": "https://api.discogs.com/releases/10908286"
+   },
+   {
+    "f": "**Billboard 1994-07-09 p68（PDF 頁）的 JAZZ 評介，帶 ★（CRITIC'S CHOICE）**，逐字：「**KEVIN HAYS Seventh Sense PRODUCER: John Scofield Blue Note 89679 — A sharp, tasteful, John Scofield-produced debut from a pianist/composer whose spare harmonic structures provide a fine framework for his improvisations (and those of saxophonist Seamus Blake and vibist Steve Nelson). Best of a solid set are the smart, airy changes of \"Take The D Flat Train\" and the Afro-modal feel of the title track, plus Hays' rhapsodic soloing on Bobby Hutcherson's \"Little B's Poem\"…**」。⚠ **評介標題印的是 `Seventh Sense`（不是 7th Sense）**——**這是斷盤名兩形的同期紙本依據。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-07-09-N.pdf"
+   },
+   {
+    "f": "**Billboard 1994-07-02 p45 的 Blue Note 整版廣告**逐字列出「**KEVIN HAYS 89679**」，同版另列 LENA HORNE 28974、JAVON JACKSON 89678、GONZALO RUBALCABA 28264、EVERETTE HARP 89297、JOE LOVANO、JUNKO ONISHI 28447、JOHN SCOFIELD & PAT METHENY 27765、CASSANDRA WILSON 81357、**TIM HAGANS 8968o**（OCR 把末位 0 讀成 o），末段寫「**COMING THIS FALL: BENNY GREEN \"The Place To Be\"…**」。**這一版廣告同時證了本組三張（Hays 89679、Hagans 89680、Benny Green 預告）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-07-02.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `1479608322` 本層逐軌核過，是同一張碟。** collectionName 是「7th Sense」（封面形），但 `lookup` 帶 `entity=song` 回的 10 軌軌名、軌序、時長與原盤逐軌對得上（1 Take The D Flat Train 5:50／2 Seventh Sense 6:57／…／10 Black Narcissus 4:57），**10 軌 previewUrl 全有**，copyright「A Blue Note Records Release; ℗ 1994 Capitol Records, LLC」。⚠ **第一種查法（`Kevin Hays Seventh Sense`）不穩定，要改用 `Kevin Hays 7th Sense` 才命中**（第二種查法）。**可寫 `串流採信 1479608322`。**",
+    "src": "https://itunes.apple.com/lookup?id=1479608322&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "盤脊上印 Seventh Sense、封面與碟面印 7th Sense——同一張碟自己對自己的名字都沒講定，Billboard 的評介選了盤脊那一邊",
+   "第五軌〈Interlude〉的作曲者是 Paul Hindemith，第六軌〈Space Acres〉是鼓手 Bill Stewart 寫的——但 Stewart 本人不在這張碟上"
+  ],
+  "sound": "五人編制的首張領班盤：鋼琴、次中音、顫音琴三件主奏加貝斯與鼓，沒有小號也沒有吉他，所以聲響偏乾淨、和聲留白多。十軌裡四首是 Hays 自己的曲，其餘是 Gershwin〈My Man's Gone Now〉、Hindemith 的〈Interlude〉、鼓手 Bill Stewart 寫的〈Space Acres〉、Bobby Hutcherson〈Little B's Poem〉、標準曲〈East of the Sun〉與 Joe Henderson〈Black Narcissus〉。中段曲長多在七分鐘上下（〈Three Pillars〉7:12、〈Space Acres〉7:07、〈East of the Sun〉7:55），最長的是八分二十三秒的〈My Man's Gone Now〉。錄於布魯克林 Systems Two，John Scofield 製作但不演奏。只有 CD，沒有同期黑膠。",
+  "keyTracks": [
+   "Take the D Flat Train",
+   "Seventh Sense",
+   "Little B's Poem"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判，依據覆核後加厚一層。** **Billboard 1994-07-09 p68 的 ★ 評介**（階序最上層）＋ **Billboard 1994-07-02 p45 的 Blue Note 整版廣告逐字「KEVIN HAYS 89679」**（同一刊、兩則不同性質）＋ MB frd 1994 ＝ Discogs 美國原壓 10908286 的 `year` 欄 1994 ＋ Apple copyright「℗ 1994」。**上市取 1994 年夏（廣告 7 月初、評介 7 月中）。** ⚠ **本張沒有上過 Billboard 的任何一張爵士榜**（第 879 條的 `TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS` 兩張本層都逐期查過 `89679` 與 `KEVIN HAYS`，零命中）；**Cash Box 1994／1995／1996 三份對本盤也零命中**——**紙本只有 Billboard 一刊，但兩則性質不同（廣告＋評介），足以定年與定季。** ⚠ **Discogs 的 Matrix 欄帶母盤日期 `03-01-94`**，與 7 月上市相隔四個月，**是壓片日不是發行日，正文不得引用。** ⚠ **Apple `releaseDate` 1994-01-01 是年頭回填值**（第 484 條）。",
+  "notes": "**覆核策展層：rgMbid 66ed67c7／原盤 71ae8939／`CDP 0777 7 89679 2 7`／掛名 `Kevin Hays`／年份 1994／盤名取 `Seventh Sense` 全部成立，本張未擋下任何一處。**｜**盤名兩形本層再證一次**：Discogs 10908286 的 notes 逐字「Title \"Seventh Sense\" on the spine, \"7th Sense\" on the covers and CD」，**MB RG title ＝ Seventh Sense、MB 2019 數位版 a42e1f43 title ＝ 7th Sense、Apple collectionName ＝ 7th Sense、Billboard 1994-07-09 評介標題 ＝ Seventh Sense**。**取 `Seventh Sense`，`7th Sense` 進 queryAlias。**｜**編制本層查實五人且沒有軌號差異**：Hays 鋼琴／**Seamus Blake 次中音**／**Steve Nelson 顫音琴**／**Doug Weiss 貝斯**／**Brian Blade 鼓**——**策展層只寫了 Blake 與 Nelson，漏了 Weiss 與 Blade 兩位，本層補齊。** ⚠⚠ **John Scofield 在 Discogs credits 裡只有 notes 的一句「Produced by John Scofield」，沒有任何樂器欄**——**正文絕不得把他寫成演奏者**（本組另有 `John Scofield & Pat Metheny —《I Can See Your House From Here》`，**兩張 risk 互指但性質完全不同**）。｜**錄音室 Systems Two（布魯克林）、母帶 Foothill Digital**；⚠ **Discogs 沒有給錄音日期，兩刊評介也沒有，正文不得憑空給錄音年月。** ⚠ **Systems Two 同時是本組 `Greg Osby —《Black Book》`（1995）的錄音室**，**兩張只是共用場地，不得寫成同一批錄音。**｜**撞陳列**（逐軌比過）：〈Little B's Poem〉是 Bobby Hutcherson《Components》（1965，seed 在池）的曲、〈Black Narcissus〉是 Joe Henderson 的曲、〈My Man's Gone Now〉是《Porgy and Bess》的曲（**本組 `McCoy Tyner & Bobby Hutcherson —《Manhattan Moods》` 第 4 軌是同一齣的〈(I Loves You) Porgy〉，是不同曲不是同曲**）——**全部同曲不同錄音，零母帶重疊。** ⚠ **本組另有 Bobby Hutcherson 掛頭的《Manhattan Moods》，兩卡 risk 互指。**｜**載體**：**只有 CD**（MB 兩筆 ＝ 1994 CD ＋ 2019 數位；Discogs 該筆無 master、`format` 欄 `CD, Album`），**沒有同期黑膠也沒有查到卡帶。**｜**封面已有**：CAA RG 層 5 圖，來源是 1994 美國原盤 71ae8939 ✓（Discogs 10908286 另有 6 圖，primary 600×594，可當備援）。｜**試聽已可用**：**`串流採信 1479608322`**（us，10 軌逐軌核過、軌序與時長一致、previewUrl 全有；**條目名是封面形「7th Sense」，不是別的碟**）。｜非選輯：單一藝人的首張領班盤，`releaseType` Album。"
+ },
+ {
+  "key": "desc2:Tim Hagans|No Words",
+  "artist": "Tim Hagans",
+  "album": "No Words",
+  "facts": [
+   {
+    "f": "release-group b024747d 的欄位：title「No Words」、artist-credit「Tim Hagans」、first-release-date **1994**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：6869f3ed（**1994 US** Official **CD 9 軌**，Blue Note `CDP 0777 7 89680 2 3`，barcode 077778968023）。**MB 沒建黑膠、沒建卡帶、沒建任何非美國版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b024747d-1ca7-4123-beef-9afe650f1371&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美國原壓 1802370（US 1994，`CD, Album`，廠牌欄目錄號印短形 `0777 7 89680 2 3`）的盤上註記把日期寫死到天：「**Recorded on December 3, 1993 at Power Station, NYC**／**Mixed on January 7, 1994 at Foothill Digital, NYC**」。公司欄另列 Capitol Records, Inc.（℗／©／製造）、EMI Jax（壓片）、Dancing Duncan Music（出版）；Rights Society ＝ BMI。**錄音是一天、不是一段期間。**",
+    "src": "https://api.discogs.com/releases/1802370"
+   },
+   {
+    "f": "**完整編制（Discogs credits，六人）**：**Tim Hagans 小號、作曲（九軌全部）**；**Joe Lovano 次中音與高音薩克斯，同時掛 Producer 與 Liner Notes**；**Marc Copland 鋼琴與 Fender Rhodes**；**John Abercrombie 吉他**；**Scott Lee 貝斯**；**Bill Stewart 鼓**。**製作人兩位：Tim Hagans 與 Joe Lovano**；錄音 James Farber、混音 A.T. Michael MacDonald；美術與設計 Mark Larson、攝影 Jeffrey Scales、側錄 Cheung Ching Ming。",
+    "src": "https://api.discogs.com/releases/1802370"
+   },
+   {
+    "f": "九軌與時長：〈No Words〉5:40〈Nog Rhythms〉8:29〈Waking Iris〉7:36〈Noogaloo〉6:44〈Immediate Left〉8:06〈Passing Giants〉5:03〈For The Music〉8:51〈Housewife From New Jersey〉8:00〈Lost In My Suitcase〉7:56。**九軌全部是 Hagans 自己的曲，一首外來曲都沒有。**平均每軌七分鐘以上，是本組曲長最均勻、最偏長篇即興的一張。",
+    "src": "https://api.discogs.com/releases/1802370"
+   },
+   {
+    "f": "**Billboard 1994-07-02 p45 的 Blue Note 整版廣告**逐字列出「**TIM HAGANS 8968o**」（OCR 把末位 0 讀成 o），同版另列 KEVIN HAYS 89679、JAVON JACKSON 89678、LENA HORNE 28974、JOHN SCOFIELD & PAT METHENY 27765、JUNKO ONISHI 28447 等。⚠ **本層另核**：`89680`／`TIM HAGANS`／`NO WORDS` 在 Billboard 1994／1995／1996 與 Cash Box 1994／1995／1996 六份掃描檔裡，**除了這一則廣告與 1995-07-01 p47 那則列他下一張《Audible Architecture》31808 的廣告之外，沒有任何評介、也沒有任何榜位**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-07-02.pdf"
+   },
+   {
+    "f": "**Billboard 1994-04-02 p68 的 Bruce Lundvall 專訪**逐字：「**fiscally conservative signings of Jackson, Hayes, and Hagans**」、「**If there are artists you want to develop, you sign them… You have to sign artists based on your faith in their future**」。⚠ **同句把 Kevin Hays 的姓拼成「Hayes」（多一個 e）**，與 1994-07-09 評介標題的「KEVIN HAYS」不一致——**寫作層引用這句時要註明拼法**（第 1118 條：紙本行文會錯、實體盤面不會）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-04-02.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `1444196707` 本層逐軌核過，是同一張碟。** `lookup` 帶 `entity=song` 回 9 軌，軌名與軌序與原盤一致（〈No Words〉…〈Lost In My Suitcase〉），**9 軌 previewUrl 全有**。⚠ **copyright 欄逐字是「℗ 2014 Blue Note Records」**——**那是數位重新發行的版權年，不是 1994 原盤年，不得當年份旁證**（第 484 條的同形變體）。⚠ **第二種查法（只打藝人名拉目錄）回的五筆有四筆是他當側人的碟**（Anke Helfrich、Conrad Herwig、Michael Feinberg 等），**第 528／707 條那種「候選會給錯碟」**。**可寫 `串流採信 1444196707`。**",
+    "src": "https://itunes.apple.com/lookup?id=1444196707&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "九首全部自己寫、沒有一首標準曲，平均每首七分鐘——四十歲才拿到第一份美國大廠合約的人，把整張碟都用來放自己的東西",
+   "掛製作人、吹兩把薩克斯、還寫內頁的是 Joe Lovano；同一年他自己那張《Tenor Legacy》正在 Billboard 爵士榜上"
+  ],
+  "sound": "1993 年 12 月 3 日一天錄完的六人編制：小號在前，Joe Lovano 的次中音與高音在旁，Marc Copland 的鋼琴與 Fender Rhodes、John Abercrombie 的吉他各佔一層和聲，Scott Lee 貝斯、Bill Stewart 鼓。九軌全部是 Hagans 自己的曲，沒有任何標準曲；曲長從五分到八分五十一秒，中位數七分半以上，主體是連續的長篇對吹與交織。〈Nog Rhythms〉〈Immediate Left〉〈For The Music〉〈Housewife From New Jersey〉四首都在八分鐘上下。只有 CD，沒有同期黑膠。",
+  "keyTracks": [
+   "No Words",
+   "Nog Rhythms",
+   "For The Music"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判，依據不變。** MB frd 1994 ＝ MB 唯一 release 6869f3ed 的 date 1994／country US ＝ Discogs 美國原壓 1802370 與 master 1172198 的 `year` 欄 1994 ＝ **Billboard 1994-07-02 p45 的 Blue Note 整版廣告逐字「TIM HAGANS 8968o」**（同期紙本，階序最上層）。**上市取 1994 年年中（廣告 7 月初）。** ⚠ **紙本只有廠牌廣告、沒有評介也沒有榜位**：本層在六份掃描檔逐期查 `89680`／`TIM HAGANS`／`NO WORDS`，**除 1994-07-02 那則廣告與 1995-07-01 p47 列他下一張《Audible Architecture》31808 的廣告外，Billboard 兩張爵士榜零命中、Cash Box 三年零命中**。⚠ **錄音 1993-12-03、混音 1994-01-07**（Discogs notes 逐字寫到天），**正文不得寫成 1994 年錄音**。⚠ **Apple 1444196707 的 copyright 是「℗ 2014 Blue Note Records」、`releaseDate` 是 1994-01-01 的年頭回填值**——**兩個欄位都不得當年份依據。** ⚠ **目錄號短形／長形**：MB 記 `CDP 0777 7 89680 2 3`、Discogs 兩筆美國條目都印 `0777 7 89680 2 3`（無 CDP 前綴）、促銷卡帶 `B4-89680`，**三形同一張碟。**",
+  "notes": "**覆核策展層：rgMbid b024747d／原盤 6869f3ed／目錄號兩形／掛名 `Tim Hagans`／年份 1994 全部成立，本張未擋下任何一處。**｜**編制本層查實六人**：Hagans tp／**Joe Lovano ts＋ss**／**Marc Copland p＋Fender Rhodes**／**John Abercrombie g**／**Scott Lee b**／**Bill Stewart d**——**策展層 `why` 完全沒有寫編制，本層補齊。** ⚠ **Discogs credits 沒有標軌號，六人是全程編制還是逐軌變動無法判定，正文寫「六人編制」即可，不得逐軌指派。**｜**製作人兩位：Tim Hagans 與 Joe Lovano**（⚠ **Lovano 同時是演奏者與內頁作者，三個角色都在盤面上，不得只寫其中一個**）。錄音 James Farber、混音 A.T. Michael MacDonald。｜⚠ **跨卡（本組內）**：**Joe Lovano 的《Tenor Legacy》（本組）錄音是 1993-06-18、本張是 1993-12-03，兩場完全不同、班底也不同（《Tenor Legacy》是 Miller／McBride／Nash／Alias，本張是 Copland／Abercrombie／Lee／Stewart）**——**兩卡 risk 互指，正文不得互抄。** **James Farber 同時是兩張的錄音師**，⚠ **但《Tenor Legacy》錄於 Skyline、本張錄於 Power Station，不是同一場。** **Bill Stewart 同時在本張與本組《I Can See Your House From Here》打鼓，也在《Seventh Sense》掛作曲（〈Space Acres〉）但不演奏**——**三張互指，不得寫成同一批錄音。** **John Abercrombie 也在 c-149 b 的 Jack Walrath《Neohippus》上彈吉他。**｜**美術 Mark Larson** ⚠ **同時是本組《Tenor Legacy》與《The Place to Be》的美術**——**三張共用美術不代表同一企劃。**｜**載體**：**CD ＋ 促銷卡帶 `B4-89680`（Discogs 9621617），沒有黑膠**（master 1172198 只有這兩個版本）。｜**封面已有**：CAA RG 層 2 圖，來源是唯一的 1994 美國原盤 6869f3ed ✓（Discogs 1802370 另有 8 圖，primary 600×589，可當備援）。｜**試聽已可用**：**`串流採信 1444196707`**（us，9 軌逐軌核過、軌序一致、previewUrl 全有）。｜非選輯：單一藝人、一天錄完的全原創專輯，`releaseType` Album。"
+ },
+ {
+  "key": "desc2:John Scofield & Pat Metheny|I Can See Your House From Here",
+  "artist": "John Scofield & Pat Metheny",
+  "album": "I Can See Your House From Here",
+  "facts": [
+   {
+    "f": "release-group a3939436 的欄位：title「I Can See Your House From Here」、artist-credit「John Scofield & Pat Metheny」（joinphrase「 & 」）、first-release-date **1994-04-05**、primary-type Album、secondary-types 空。**轄下九筆 release**，含 **31494bab（1994-04-05 US CD 11 軌，`CDP 7243 8 27765 2 9`，barcode 724382776529）**、03e66dfe（1994 US CD，另掛俱樂部號 `D 102744`）、16172cc1（1994 US CD `CDP 527765`）、65c2f22a（1994 XE CD）、0da32a95（1997 ES CD）、7d1948c5（**1998-03-28 JP 東芝EMI `TOCP-3408`**）、9dda920f（2013-07-10 數位）、**22cb8036（2014 KR 12\" Vinyl 6＋5 軌）**、**844702a0（2021-01-29 Blue Note Tone Poet 2LP `B0032260-01`，6＋5 軌）**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a3939436-f330-3975-9ac9-32ab52bc542b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層擋下策展層一處逐軌歸屬錯：Scofield 與 Metheny 的作曲分配整個寫反了一半。** Discogs 美國原壓 1052214 的逐軌 `Composed By` 欄逐字是——**Scofield 六首：1〈I Can See Your House From Here〉、3〈No Matter What〉、4〈Everybody's Party〉、6〈No Way Jose〉、10〈One Way To Be〉、11〈You Speak My Language〉**；**Metheny 五首：2〈The Red One〉、5〈Message To My Friend〉、7〈Say The Brother's Name〉、8〈S.C.O.〉、9〈Quiet Rising〉**。**策展層把〈The Red One〉〈S.C.O.〉算給 Scofield、把標題曲〈I Can See Your House From Here〉與〈No Way Jose〉〈You Speak My Language〉算給 Metheny，五處歸屬相反，而且漏列了第 7 軌〈Say The Brother's Name〉；也不是「各寫一半」，是六比五。**",
+    "src": "https://api.discogs.com/releases/1052214"
+   },
+   {
+    "f": "**Billboard 1994-05-14 p68 的 JAZZ 評介獨立證了上一條**，逐字：「**JOHN SCOFIELD & PAT METHENY I Can See Your House From Here PRODUCER: Lee Townsend Blue Note 27765 — The leading lights of jazz guitar turn up the wattage for a high-intensity fret-fête backed by the seamless rhythm section of bassist Steve Swallow and drummer Bill Stewart. The intersection of the leaders' respective guitar and composing styles yields splendid results, especially on **Metheny-penned** highlights like the lyrical, bossa nova-inflected \"Say The Brother's Name\" and rocking cookoff \"The Red One,\" as well as such **Scofield tunes** as the woozily funky **title cut**, the tense \"Everybody's Party,\" the Ornette-styled **\"No Way Jose,\"** and the propulsively swinging \"One Way To Be.\"**」——**Billboard 與 Discogs 逐軌對得上，策展層的歸屬是錯的。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-05-14.pdf"
+   },
+   {
+    "f": "Discogs 1052214 的 credits（四人）：**John Scofield — 吉他、鋼弦原音吉他**；**Pat Metheny — 吉他、吉他合成器、尼龍弦原音吉他**；**Steve Swallow — 電貝斯與原音貝斯**；**Bill Stewart — 鼓**。**製作人 Lee Townsend**，**Executive-Producer 是 Susan Scofield**。`format` 欄逐字 `CD, Album`＋text「EMI Jax Pressing」，Matrix 三個變體都帶 `27765-2 MO S4118F Y ... EMI JAX`。⚠ **盤上沒有錄音日期與錄音室的註記**（notes 空、companies 只有壓片與版權方）。",
+    "src": "https://api.discogs.com/releases/1052214"
+   },
+   {
+    "f": "**Billboard 1994-02-26 p14（Jeff Levenson 專題）把發行日講死**：「**They share billing on the March 22 release**」，並記 Blue Note 行銷副總 Tom Evered 的估算（Scofield 的碟頂多三萬張、Metheny 通常十倍、預期本張把 Scofield 平常的銷量變三倍）與 Metheny 管理團隊 David Sholomson 的回應。**榜位本層逐期抄回**：`TOP JAZZ ALBUMS` **1994-04-23 p38 以 NEW 空降第 1（榜上逐字「1 week at No. 1」，藝人欄縮寫成 `J. SCOFIELD/P. METHENY BLUE NOTE 27765/CAPITOL`）**，其後 05-21 第 2、06-04 第 3、06-18 第 4、07-02 第 7、07-16 第 10、07-30 第 12、08-13 第 12、08-27 第 13、09-10 第 14、09-24 第 15、**10-08 第 23（在榜第 24 週）**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-04-23-N.pdf"
+   },
+   {
+    "f": "⚠ **The Billboard 200 那一筆本層重讀過，數字要小心**：**Billboard 1994-04-30 p106** 的列是「**191 181 - 2 JOHN SCOFIELD & PAT METHENY I CAN SEE YOUR HOUSE FROM HERE BLUE NOTE 27765/CAPITOL (9.98/15.98) 181**」——依該榜欄位（本週／上週／兩週前／在榜週數 … 最高名次）**本週第 191、上週第 181、在榜第 2 週，最高名次 181**。**策展層寫「進 The Billboard 200 第 181 名」在「最高名次」的意義上成立，但那一期印的本週名次是 191**——**正文若要寫名次，只能寫「最高到第 181 名」。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-04-30.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `724936873` 本層逐軌核過，是同一張碟。** `lookup` 帶 `entity=song` 回 11 軌，軌名與軌序與原盤 11 軌一致，**11 軌 previewUrl 全有**，copyright「℗ 1994 Blue Note Records」。⚠ **`releaseDate` 是 1994-04-05，與 MB frd 同源**（第 484 條的第四種錯法），**不是紙本講死的 3 月 22 日，不得當發行日依據**。",
+    "src": "https://itunes.apple.com/lookup?id=724936873&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Blue Note 行銷副總在發片前對 Billboard 算得很白：Scofield 的碟頂多賣三萬張、Metheny 通常是十倍——結果這張 NEW 直接空降爵士榜第一，還在榜上待了二十四週",
+   "標題曲是 Scofield 寫的，〈The Red One〉是 Metheny 寫的——兩個人各自的筆跡在同一張碟上排成六比五，不是一人一半"
+  ],
+  "sound": "兩把吉他對頭的四人編制：Scofield 的電吉他與鋼弦原音吉他、Metheny 的電吉他、吉他合成器與尼龍弦原音吉他，底下是 Steve Swallow 的電／原音貝斯與 Bill Stewart 的鼓，沒有鋼琴也沒有管樂。十一軌的作曲是六比五——Scofield 六首（標題曲、〈No Matter What〉〈Everybody's Party〉〈No Way Jose〉〈One Way To Be〉〈You Speak My Language〉），Metheny 五首（〈The Red One〉〈Message To My Friend〉〈Say The Brother's Name〉〈S.C.O.〉〈Quiet Rising〉）。曲長多在六到七分半，最長是七分四十三秒的標題曲，最短是四分十七秒的〈The Red One〉。1994 年只出 CD 與卡帶，黑膠要等到 2014 年的韓國壓與 2021 年的 Tone Poet 雙片裝。",
+  "keyTracks": [
+   "I Can See Your House From Here",
+   "The Red One",
+   "Say The Brother's Name"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，年份數字不變；本層覆核策展層「依據整個換掉」那一筆，結論維持並補強。** **Billboard 1994-02-26 p14 的專題逐字「They share billing on the March 22 release」**（廠牌線的同期紙本，階序最上層）＋ **1994-04-23 p38 `TOP JAZZ ALBUMS` 以 NEW 空降第 1（「1 week at No. 1」）**＋ **1994-05-14 p68 評介** ＋ **1994-04-30 p106 The Billboard 200 在榜第 2 週、最高名次 181**。**實體首發 1994-03-22；MB frd 的 1994-04-05 是轄下 31494bab 那一批壓片的日期，不是上市日。** ⚠ **正文若寫月份只能寫 3 月，不得寫 4 月 5 日。** ⚠ **Apple 的 `releaseDate` 也是 1994-04-05，與 MB frd 同源**（第 484 條），**是同一個錯的兩個出口，不算兩個獨立來源。** ⚠ **榜位本層逐期抄回並補完策展層沒寫的後段**：04-23 第 1 → 05-21 第 2 → 06-04 第 3 → 06-18 第 4 → 07-02 第 7 → 07-16 第 10 → 07-30 第 12 → 08-13 第 12 → 08-27 第 13 → 09-10 第 14 → 09-24 第 15 → **10-08 第 23（在榜第 24 週）**。⚠ **策展層寫「The Billboard 200 第 181 名」要改寫成「最高名次 181」**（1994-04-30 那一期印的本週名次是 191，見 facts 第 6 條）。",
+  "notes": "**覆核策展層：rgMbid a3939436／原盤 31494bab／`CDP 7243 8 27765 2 9`／聯名字串 `John Scofield & Pat Metheny`／年份 1994／首發日 1994-03-22 全部成立。**｜⚠⚠ **本層擋下策展層一處逐軌歸屬錯（本組最嚴重的一處事實錯）**：**Scofield 與 Metheny 的作曲分配有五處相反、漏列一軌、而且不是「各寫一半」而是六比五**（逐軌對照見 facts 第 2 條）。**Discogs 逐軌 `Composed By` 欄與 Billboard 1994-05-14 評介行文兩個獨立來源互證。正文必須照更正後的分配寫。**｜**編制四人**：Scofield（電吉他＋鋼弦原音吉他）／Metheny（電吉他＋**吉他合成器**＋尼龍弦原音吉他）／**Steve Swallow 電＋原音貝斯**／**Bill Stewart 鼓**。**製作人 Lee Townsend**，⚠ **Executive-Producer 是 Susan Scofield（Scofield 的妻子與經紀）——兩個角色不得互換。**｜⚠ **錄音日期與錄音室本層查無**：Discogs 1052214 的 notes 空、companies 只有壓片與版權方，MB 也沒有；**正文不得憑空給錄音年月。**｜**載體**：**1994 年只有 CD 與卡帶**（Discogs master 230902 的 1994 年版本共 17 筆，CD 與 Cassette 兩種，**沒有一筆黑膠**）；**黑膠是後來的 2014 韓國 `LP43020` 與 2021 Tone Poet 2LP `B0032260-01`，都是 6＋5 分面的同序再發，沒有加曲**。⚠ **正文不得寫成「當年有黑膠」，也不得因為 Tone Poet 而把黑膠寫成原壓。** ⚠ **MB 沒建 1994 年的日本版，Discogs 有兩筆 `TOCJ-5883`（JP 1994 CD）**——第 1161 條之 1 的同形。｜**撞陳列**（逐軌比過）：**本張 11 軌與池中 `John Scofield` 5 張＋`John Scofield Quartet` 2 張、`Pat Metheny` 5 張＋`Pat Metheny Group`／`Pat Metheny & Lyle Mays`／`Charlie Haden & Pat Metheny` 各 1 的曲目零重疊**；2014／2021 兩張黑膠是同序再發、**零加曲、零母帶重疊**。⚠ **本組 `Kevin Hays —《Seventh Sense》` 的製作人是 John Scofield（只掛製作、不演奏）**、**Bill Stewart 同時在本張打鼓、在《Seventh Sense》掛作曲**——**三張 risk 互指。** ⚠ **不得把本卡寫成 `John Scofield Quartet`**（池中另一個既建字串，指 Lovano／Irwin／Stewart 四重奏）。｜**封面已有**：CAA RG 層 2 圖，來源是 1994 美國原盤 31494bab ✓（Discogs 1052214 另有 9 圖，primary 600×592，可當備援）。｜**試聽已可用**：**`串流採信 724936873`**（us，11 軌逐軌核過、軌序一致、previewUrl 全有）。⚠ **同一個盤名在 Apple 上另有 Camel 1979 年的同名專輯與其他同名碟**（第 528／707／709 條），**724936873 是本層逐軌核過的那一筆。**｜非選輯：兩位藝人的聯名原創專輯，`releaseType` Album。"
+ },
+ {
+  "key": "desc2:Joe Lovano|Tenor Legacy",
+  "artist": "Joe Lovano",
+  "album": "Tenor Legacy",
+  "facts": [
+   {
+    "f": "release-group c3493354 的欄位：title「Tenor Legacy」、artist-credit「Joe Lovano」、first-release-date **1994-02-21**、primary-type Album、secondary-types 空。⚠ **轄下只有一筆 release，而且是歐版**：6a4f4bae（**1994-02-21 country XE** Official CD 10 軌，Blue Note `CDP 7243 8 27014 2 2`，barcode 724382701422）。**美版 MB 整個沒建**（第 1085／1161 條之 1 的同形）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c3493354-69af-3fd3-b4d6-36120efe731f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**美版確實存在**：Discogs 美國原壓 8341661（US 1994，`CD, Album`，Blue Note `CDP 7243 8 27014 2 2`），盤上註記逐字「**Released with 12-pages booklet.／Recorded on June 18, 1993 at Skyline Studio／℗© 1994 Capitol Records, Inc.**」。**錄音是一天。** Discogs master 403700 底下十個版本：美版 8341661／14040753／15895536（`CDP 527014`）、加拿大 8118956、歐版 2439779／15920187、**1997 歐版再壓 3363966**、印度卡帶 `STCS 890590`、**美國促銷卡帶 `B4-27014`（15522446，⚠ `year` 欄 1993 是孤證）**、**日本 `TOCJ-5884`（26287718，1994）**。**沒有任何黑膠。**",
+    "src": "https://api.discogs.com/releases/8341661"
+   },
+   {
+    "f": "**完整編制（Discogs 8341661 credits，六人）**：**Joe Lovano — 次中音薩克斯、編曲、製作人、內頁**；**Joshua Redman — 次中音薩克斯**；**Mulgrew Miller — 鋼琴**；**Christian McBride — 貝斯**；**Lewis Nash — 鼓**；**Don Alias — 打擊**。另有 **Judi Silvano 掛 Producer [Associate]**、**Michael Cuscuna 掛 Liner Notes（不是製作人）**、錄音 James Farber、美術與設計 Mark Larson、攝影 Guy Aroch、側錄 Cheung Ching Ming。⚠ **Cuscuna 在本張只寫內頁，與 Lovano 的製作人身分不得互換。**",
+    "src": "https://api.discogs.com/releases/8341661"
+   },
+   {
+    "f": "十軌、作曲者與時長：〈Miss Etna〉6:30（Lovano）〈Love Is A Many Splendored Thing〉6:44（Fain／Webster）〈Blackwell's Message〉5:26（Lovano）〈Laura〉4:31（**David Raksin**）〈Introspection〉9:05（**Thelonious Monk**）〈In The Land Of Ephesus〉6:58（Lovano）〈To Her Ladyship〉9:03（**Billy Frazier**）〈Web Of Fire〉5:51（Lovano）〈Rounder's Mood〉8:20（**Booker Little**）〈Bread And Wine〉3:31（Lovano）。⚠ **本層擋下策展層一處作曲者錯：〈Rounder's Mood〉的 Discogs `Written-By` 欄逐字是 Booker Little，不是策展層寫的 Tadd Dameron。** ⚠ **Lovano 自作曲是五首不是六首**：`Written-By Joe Lovano` 的軌號欄逐字「1, 3, 6, 8, 10」，**〈To Her Ladyship〉的作曲者是 Billy Frazier (2)，不是 Lovano**。",
+    "src": "https://api.discogs.com/releases/8341661"
+   },
+   {
+    "f": "**Billboard 1994-03-12 p37 的 `TOP JAZZ ALBUMS` 以 NEW 進榜第 8**，榜列逐字「**JOE LOVANO BLUE NOTE 27014/CAPITOL TENOR LEGACY**」；**同期 p56 的 JAZZ 評介**逐字「**JOE LOVANO Tenor Legacy PRODUCER: Joe Lovano Blue Note 27014 — Tenor master Lovano blows with customary power and invention in a sextet that includes…**」。榜位本層逐期抄回：03-12 第 8（NEW）→ 03-26 第 12 → 04-09 第 19 → **04-23 第 22（在榜第 7 週）**。⚠ **評介行文逐字寫 `sextet`（六重奏），與盤面 credits 的六人完全吻合。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-03-12-N.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `730281639` 本層逐軌核過，是同一張碟。** `lookup` 帶 `entity=song` 回 10 軌，軌名與軌序與原盤一致（1 Miss Etna／…／10 Bread and Wine），**10 軌 previewUrl 全有**。⚠ **`releaseDate` 是 1993-06-18 ＝ 錄音日，不是發行日**（第 484 條）；⚠ **copyright 欄是「℗ 2005 Blue Note Records」＝ 數位重發年**——**兩個欄位都不得當年份依據**。**可寫 `串流採信 730281639`。**",
+    "src": "https://itunes.apple.com/lookup?id=730281639&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "兩支次中音對吹，一支是四十一歲的 Lovano，一支是二十四歲的 Joshua Redman——Billboard 隔年一月登出的數字是：這張碟 1994 年賣了九千張",
+   "MB 只建了歐洲那一版，美版整個不存在；要證明美版存在，得翻 1994 年 3 月 12 日 Billboard 爵士榜上那行「BLUE NOTE 27014/CAPITOL」"
+  ],
+  "sound": "1993 年 6 月 18 日一天錄於紐約 Skyline Studio 的六重奏：兩支次中音（Lovano 與二十四歲的 Joshua Redman）在前，Mulgrew Miller 鋼琴、Christian McBride 貝斯、Lewis Nash 鼓，加 Don Alias 的打擊。十軌裡五首是 Lovano 自己的曲，其餘是〈Love Is A Many Splendored Thing〉、David Raksin 的〈Laura〉、Monk 的〈Introspection〉、Billy Frazier 的〈To Her Ladyship〉與 Booker Little 的〈Rounder's Mood〉。長曲集中在中後段——〈Introspection〉9:05、〈To Her Ladyship〉9:03、〈Rounder's Mood〉8:20；收尾的〈Bread And Wine〉只有三分半。只有 CD 與卡帶，沒有黑膠。",
+  "keyTracks": [
+   "Miss Etna",
+   "Introspection",
+   "Rounder's Mood"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，年份數字不變；本層覆核策展層「依據整個換掉」那一筆，結論維持並補強。** MB frd 1994-02-21 **只能證歐版**（MB 轄下唯一一筆是 country XE）；**美版的證據在紙本**：**Billboard 1994-03-12 p37 `TOP JAZZ ALBUMS` 以 NEW 進榜第 8，榜列逐字「BLUE NOTE 27014/CAPITOL」**＋**同期 p56 的評介**。**首發地歐洲（1994-02-21），美版 1994 年 3 月上旬**——**正文不得把 MB 的歐版日期當美國上市日。** ⚠ **榜位本層逐期抄回**：03-12 第 8（NEW）→ 03-26 第 12 → 04-09 第 19 → 04-23 第 22，**在榜至少 7 週**（策展層只寫「連續到 1994-04-23」，本層補上名次）。⚠ **錄音 1993-06-18**（Discogs 8341661 notes 逐字），**Apple 的 `releaseDate` 正好是同一天 ＝ 錄音日不是發行日**（第 484 條），**Apple 的 copyright 又是「℗ 2005」＝ 數位重發年**——**兩個欄位都不得引用。** ⚠ **Discogs 促銷卡帶 15522446 的 `year` 欄是 1993**——**十個版本裡的孤證，其餘全部 1994、盤面 ℗© 也是 1994，不採信。** ⚠ **Discogs 的年份欄與它自己的 notes 沒有打架**（第 550／570／708 條在本張沒中）。",
+  "notes": "**覆核策展層：rgMbid c3493354／歐版 6a4f4bae／美版 Discogs 8341661／`CDP 7243 8 27014 2 2`／掛名 `Joe Lovano`／年份 1994／首發地歐洲 全部成立。**｜⚠⚠ **本層擋下策展層兩處事實錯**：(1) **〈Rounder's Mood〉的作曲者是 Booker Little，不是 Tadd Dameron**（Discogs 8341661 的逐軌 `Written-By` 欄逐字）；(2) **Lovano 的自作曲是五首不是六首**——`Written-By Joe Lovano` 的軌號欄逐字「1, 3, 6, 8, 10」（〈Miss Etna〉〈Blackwell's Message〉〈In The Land Of Ephesus〉〈Web Of Fire〉〈Bread And Wine〉），**策展層多算進去的〈To Her Ladyship〉，其 `Written-By` 欄逐字是 Billy Frazier (2)，不是 Lovano**。**正文以軌號欄為準。**｜**編制六人本層查實，而且有紙本互證**：**Billboard 1994-03-12 p56 的評介行文逐字寫 `sextet`**，與 Discogs credits 的六人（Lovano ts／**Joshua Redman ts**／Mulgrew Miller p／Christian McBride b／Lewis Nash d／**Don Alias perc**）完全吻合。⚠ **credits 沒有標軌號，無法判定 Alias 是否全程，正文寫「六重奏」即可。**｜**製作人 Joe Lovano 本人**，**Judi Silvano 掛 Producer [Associate]**，⚠⚠ **Michael Cuscuna 在本張只掛 Liner Notes、不是製作人**——**兩個角色不得互換**（第 609 條同形；本組《Manhattan Moods》與《Live at Bradley's》的 Cuscuna 才是 Producer）。｜**載體**：**CD ＋ 卡帶（美國促銷 `B4-27014`、印度 `STCS 890590`），沒有黑膠**（master 403700 十個版本逐筆核過）。⚠ **另有日本 `TOCJ-5884`（1994）MB 沒建。**｜**撞陳列**（逐軌比過）：〈Introspection〉是 Monk 的曲，**池中 `Thelonious Monk` 22 列**、**本組 `Sonny Fortune —《Four in One》` 整張都是 Monk 曲（十軌裡沒有〈Introspection〉）**——**同曲不同錄音，零母帶重疊。** ⚠⚠ **本層新增一組策展層沒報的同批撞曲**：**〈Laura〉（本張第 4 軌，David Raksin 曲）↔ 本組 `Jimmy Smith —《The Master II》` 第 2 軌〈Laura〉**——**一首是 1993-06-18 紐約錄音室的次中音六重奏版（4:31），一首是 1993-12-24／25 大阪現場的管風琴三重奏版（7:00），同曲不同錄音，兩卡 risk 要互指。** **Christian McBride 同時在本張與本組《The Place to Be》，但兩場相隔九個月（1993-06 vs 1994-03／05），正文不得互抄。**｜**Mark Larson 的美術同時見於本張、本組《No Words》與《The Place to Be》**——**共用美術不是同一企劃。**｜⚠ **封面：CAA RG 層 9 圖（本組並列最多），但來源是 MB 唯一的歐版 6a4f4bae、不是美版**——**版式要與 Discogs 美國原壓 8341661 對照**（⚠ **8341661 只有 2 圖、primary 只有 300×297，本身不適合當主來源**）。｜**試聽已可用**：**`串流採信 730281639`**（us，10 軌逐軌核過、軌序一致、previewUrl 全有）。｜非選輯：單一藝人、一天錄完的專輯，`releaseType` Album。"
+ },
+ {
+  "key": "desc2:Richard Elliot|After Dark",
+  "artist": "Richard Elliot",
+  "album": "After Dark",
+  "facts": [
+   {
+    "f": "release-group 0df600fb 的欄位：title「After Dark」、artist-credit「Richard Elliot」、first-release-date **1994**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：8b6516e5（1994 US Official **CD 14 軌**，barcode 724382783824，目錄號 `CDP 7243 8 27838 2 4`）。⚠ **MB 的 label-info 掛的是 `Blue Note`，但實體盤面是子廠牌 `Blue Note Contemporary`**（第 1154／1161 條之 3）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0df600fb-bd6e-3f8c-bf7b-8a6aa08432d5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美國原壓 6177199（US 1994，`CD, Album`）的**廠牌欄逐字是 `Blue Note Contemporary`**，盤上註記逐字「**Blue Note Contemporary is a registered trademark of Capitol Records, Inc.／© ℗ 1994 Capitol Records, Inc. Manufactured by Capitol Records, Inc., Hollywood and Vine Streets, Hollywood, California.**」。**Discogs master 743682 底下九個版本的廠牌欄全部逐字 `Blue Note Contemporary`**（含歐版 15661263、兩筆俱樂部版、三種卡帶、1996 日本促銷 `TOCP 8453`）。",
+    "src": "https://api.discogs.com/releases/6177199"
+   },
+   {
+    "f": "⚠⚠ **本層擋下策展層的編制寫法：這不是一張同一支樂團錄完的碟，而是四組人馬、四組製作人拼起來的。** Discogs 6177199 的 credits 每一筆都帶軌號，逐軌還原後：**主編制（1, 3–7, 9, 11, 12 共九軌）＝ Richard Elliot 薩克斯／Richard Smith 吉他／Ron Reinhardt 鍵盤／Naoki Yanai 貝斯／Dave Reinhardt 鼓與打擊，製作人 Richard Elliot，混音 Mark Mason**；**第 2、10 軌＝ Cliff Downs 一人包辦（`Instruments [All Other]`）並製作與編曲**；**第 8 軌〈If Tomorrow Never Comes〉＝ Steve Barri 與 Tony Peluso 製作、John Andrew Schreiner 編曲與演奏、**Jeffrey Osborne 主唱**；**第 13、14 軌＝ Todd Terry 作曲兼製作兼混音**。另有 Luis Conte 打擊（只在第 5、7 軌）、Tower Of Power Horn Section（只在第 11 軌）。**正文不得寫成「一組班底」。**",
+    "src": "https://api.discogs.com/releases/6177199"
+   },
+   {
+    "f": "十四軌與時長：〈Street Beat〉4:36〈Song For Her〉3:06〈As I Sleep〉4:58〈After Dark〉4:22〈El Anio〉5:12〈Tonight〉4:04〈On The Run〉5:27〈If Tomorrow Never Comes〉4:21〈Hold Me Tight〉4:34〈Bridge Over Troubled Water〉5:14（**Paul Simon**）〈The Boys From The Bay〉5:01（feat. Tower Of Power Horn Section）〈Candlelight〉4:37〈So Special〉3:55〈Slow It Down〉4:49。**十四軌裡十三首掛 Richard Elliot 或 Cliff Downs／Todd Terry 的作曲，唯一的外來曲是 Paul Simon 的〈Bridge Over Troubled Water〉。**",
+    "src": "https://api.discogs.com/releases/6177199"
+   },
+   {
+    "f": "**榜位本層逐期抄回。Billboard `TOP CONTEMPORARY JAZZ ALBUMS`**：**1994-11-05 p41 以 NEW 進榜第 11**（榜列逐字「RICHARD ELLIOT BLUE NOTE 27838/CAPITOL AFTER DARK」）→ 11-19 第 8 → 12-03 第 10 → 12-17 第 12 → 1995-01-14 第 11 → 01-28 第 15 → 04-08 第 19 → **04-22 第 22（在榜第 24 週）**。**Cash Box 的混合 `TOP 40 JAZZ ALBUMS` 同期也在榜**：1994-11-19 p16 第 23 前後、12-03 p14、12-17 p15 第 18、12-31 p24 第 18、1995-01-28 p16 第 17、02-11 p11 第 16、02-25 p18 第 20。⚠ **兩刊的榜列都只印簡稱「Blue Note/Capitol 27838」，沒有一處印 `Blue Note Contemporary`**——**第 1154 條的子廠牌只出現在實體盤面上。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-11-05.pdf"
+   },
+   {
+    "f": "**Cash Box 1994-12-03 p14 的 Jazz Reviews（M.R. Martinez）**逐字：「**RICHARD ELLIOT: After Dark (Blue Note 27838). Producers: R. Elliot & others.** Richard Elliot continues to carve out a strong identity in the consciousness of contemporary jazz fans. The New Adult Contemporary radio genre has embraced his music as well as some of the Quiet Storm radio formats that have made Grover Washington, Jr., George Howard, Kenny G and others of this ilk important staples to their airwave mix. Elliot works some of the same frequencies on this latest offering, but he also establishes some flavorful individual textural and rhythmic approach, especially on **\"Son For Her,\" \"As I Sleep\" and \"Tonight.\"**」⚠ **評介把〈Song For Her〉印成「Son For Her」**（紙本誤植）；⚠ **製作人欄逐字「R. Elliot & others」本身就承認不只一位**，與盤面的四組製作人吻合。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1994/CB-1994-12-03.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `724575477` 本層逐軌核過，是同一張碟。** collectionName 多了尾巴「After Dark: Richard Elliot」，但 `lookup` 帶 `entity=song` 回的 14 軌軌名、軌序、時長與原盤逐軌對得上（1 Streetbeat 4:37／…／14 Slow It Down 4:49；⚠ 第 1 軌 Apple 併寫成「Streetbeat」、第 10 軌寫成「Bridge Over Troubled Waters」多一個 s），**14 軌 previewUrl 全有**，copyright「℗ 1994 Blue Note Records」。**可寫 `串流採信 724575477`。**",
+    "src": "https://itunes.apple.com/lookup?id=724575477&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌拆成四組人馬：九軌是他自己的樂團，兩軌是 Cliff Downs 一個人全包，一軌請 Jeffrey Osborne 來唱，最後兩軌交給浩室製作人 Todd Terry",
+   "盤面上印的是 Blue Note Contemporary，1994 年才新設的子廠牌；但 Billboard 與 Cash Box 的榜列從頭到尾只印「Blue Note/Capitol 27838」"
+  ],
+  "sound": "十四軌的當代爵士／R&B 跨界碟，結構是拼盤式的：九軌由他自己的五人樂團錄成（薩克斯、吉他、鍵盤、貝斯、鼓，Luis Conte 的打擊只在兩軌），兩軌〈Song For Her〉〈Bridge Over Troubled Water〉由 Cliff Downs 一人包辦所有樂器並製作，〈If Tomorrow Never Comes〉是請 Jeffrey Osborne 主唱的人聲曲，收尾兩軌〈So Special〉〈Slow It Down〉交給浩室製作人 Todd Terry 作曲兼製作。〈The Boys From The Bay〉另外請來 Tower Of Power 的管樂組。曲長整齊落在三到五分半，沒有長篇即興。只有 CD 與卡帶，沒有黑膠。",
+  "keyTracks": [
+   "Street Beat",
+   "After Dark",
+   "Bridge Over Troubled Water"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判，依據覆核後加厚兩層。** 盤面 **© ℗ 1994 Capitol Records, Inc.**（Discogs 6177199 notes 逐字）＋ MB frd 1994 ＋ Discogs master 743682 九個版本的 `year` 欄全 1994 ＋ **Billboard `TOP CONTEMPORARY JAZZ ALBUMS` 1994-11-05 p41 以 NEW 進榜第 11** ＋ **Cash Box 1994-12-03 p14 評介**。**上市取 1994 年 10 月**——**本層另查到廠牌自己的預告**：**Billboard 1994-09-10 p39 的 Blue Note 整版廣告逐字寫「COMING IN OCTOBER: Richard Elliot AFTER DARK／Jimmy Smith THE MASTER」**（第 1175 條說的「下一季發行名單」，階序最上層），**與 11 月初的 NEW 進榜相隔約四到五週，吻合。** ⚠ **榜位本層逐期抄回並補完**（策展層只寫「11-05 榜 NEW」）：Billboard 1994-11-05 第 11（NEW）→ 11-19 第 8 → 12-03 第 10 → 12-17 第 12 → 1995-01-14 第 11 → 01-28 第 15 → 04-08 第 19 → 04-22 第 22；**Cash Box 的混合榜同期並行**（第 879／1068 條：Cash Box 只有一張榜，不必分）。⚠ **第 1154 條的榜位規律在本張再證**：**本盤只上 `TOP CONTEMPORARY JAZZ ALBUMS`，`TOP JAZZ ALBUMS` 逐期查過零命中。**",
+  "notes": "**覆核策展層：rgMbid 0df600fb／原盤 8b6516e5／`CDP 7243 8 27838 2 4`／廠牌 `Blue Note Contemporary`／掛名 `Richard Elliot`／年份 1994 全部成立。**｜⚠⚠ **本層擋下策展層一處正文風險（形狀＝把拼盤式製作寫成一支樂團）**：**Discogs 6177199 的 credits 每一筆都帶軌號，逐軌還原後是四組人馬、四組製作人**（逐軌對照見 facts 第 3 條）——**主樂團只涵蓋 9/14 軌**；**第 2、10 軌是 Cliff Downs 一人全包**；**第 8 軌是 Jeffrey Osborne 主唱的人聲曲、Steve Barri 與 Tony Peluso 製作**；**第 13、14 軌是 Todd Terry 的手筆**。**正文不得寫成「Richard Elliot 與他的樂團錄了十四首」。** ⚠ **Luis Conte 只在第 5、7 軌、Tower Of Power Horn Section 只在第 11 軌**——**兩者都是單軌客座，不得寫成常設團員**（這正是派工信警告的 c-150 b 那種形狀）。｜**製作人欄**：**盤面四組（Elliot 自己 9 軌／Cliff Downs 2 軌／Steve Barri ＋ Tony Peluso 1 軌／Todd Terry 2 軌）**，**Cash Box 的評介欄自己寫成「R. Elliot & others」**——**兩者一致，正文寫「Elliot 自製為主、另三組客座製作」最安全。**｜⚠ **廠牌**：**實體盤面與 Discogs 九個版本的廠牌欄全部逐字 `Blue Note Contemporary`**；**MB 的 label-info 誤掛 `Blue Note`**；**Billboard 與 Cash Box 的榜列只印簡稱「Blue Note/Capitol 27838」**——**`label` 欄寫子廠牌全名，正文可提「1994 年新設的 Blue Note Contemporary」，但不得寫成他廠**（第 1118／1154 條）。｜⚠ **錄音日期與錄音室本層查無**（notes 只有商標與版權宣告，companies 只有製造方），**正文不得憑空給錄音年月。**｜**載體**：**CD ＋ 四種卡帶（美國兩筆、印尼、科威特非官方），沒有黑膠**（master 743682 九個版本逐筆核過）。｜**撞陳列**（逐軌比過）：〈Bridge Over Troubled Water〉是 Paul Simon 的歌，**與池中任何一張零母帶重疊**；盤名撞字串的池中 `Clark Terry —《Clark After Dark》`／`George Coleman —《Amsterdam After Dark》`（皆 seed）**曲目與本盤十四軌零重疊**。⚠ **Everette Harp 同時出現在本盤前後的 Blue Note Contemporary 線上（c-151 b《Common Ground》）與本組 `Dianne Reeves —《Quiet After the Storm》` 的 credits 裡**，**三張可互指，但不是同一批錄音。**｜**封面已有**：CAA RG 層 2 圖，來源是唯一的 1994 美國原盤 8b6516e5 ✓（Discogs 6177199 另有 7 圖，primary 600×597，可當備援）。｜**試聽已可用**：**`串流採信 724575477`**（us，14 軌逐軌核過、軌序與時長一致、previewUrl 全有；**條目名多了「: Richard Elliot」尾巴，是平台加的，不是別的碟**）。｜非選輯：單一藝人掛頭的原創專輯，`releaseType` Album。"
+ },
+ {
+  "key": "desc2:Sonny Fortune|Four in One",
+  "artist": "Sonny Fortune",
+  "album": "Four in One",
+  "facts": [
+   {
+    "f": "release-group 3163ec43 的欄位：title「Four in One」、artist-credit「Sonny Fortune」、first-release-date **1994**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：9955aeff（**1994 US** Official **CD 10 軌**，Blue Note `CDP 7243 8 28243 2 9`，barcode 724382824329）。**MB 沒建歐版、沒建俱樂部版，也沒建黑膠或卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3163ec43-dcd3-450e-b202-2323433a5af5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美國原壓 12249884（US 1994，`CD, Album`）的盤上註記逐字：「**Recorded and mixed at the Van Gelder Studio, Englewood Cliffs, New Jersey on January 17, 18 and 27, 1994.／℗ © 1994 Capitol Records Inc.／Printed in Canada**」。**錄音是三天（1 月 17、18、27 日），不是一天、也不是一段泛指的「1994 年初」。** 公司欄另列 Van Gelder Studio（Recorded At）、Thelonious Music Corporation（Published By）、EMI（行銷／發行）、EMI Jax（壓片）。",
+    "src": "https://api.discogs.com/releases/12249884"
+   },
+   {
+    "f": "⚠⚠ **本層擋下策展層的編制寫法：這不是一支固定五重奏。** Discogs 12249884 的 credits 每一筆都帶軌號，逐軌還原後——**Sonny Fortune 中音薩克斯（全程；第 8 軌改吹長笛）**、**Kirk Lightsey 鋼琴只在「1 to 7, 9」**、**Buster Williams 貝斯只在「1, 2, 4 to 7, 9」**、**Billy Hart 鼓只在「1, 2, 4 to 7, 9」**、**Santi Debriano 貝斯只在「8, 10」**、**Ronnie Burrage 鼓只在「10」**。也就是：**第 3 軌〈Reflections〉是中音＋鋼琴的二重奏（無貝斯無鼓）**、**第 8 軌〈Pannonica〉是長笛＋Debriano 貝斯的二重奏（無鋼琴無鼓）**、**第 10 軌〈Ask Me Now〉是中音＋Debriano＋Burrage 的三重奏（無鋼琴）**，**其餘七軌才是四重奏**。**正文不得寫成「一支五人樂團錄完十首 Monk」。**",
+    "src": "https://api.discogs.com/releases/12249884"
+   },
+   {
+    "f": "十軌與時長，**全部是 Thelonious Monk 的曲**：〈Four In One〉6:02〈Criss Cross〉5:03〈Reflections〉6:44〈Monk's Dream〉8:19〈Hornin' In〉7:00〈Coming On The Hudson〉4:38〈Trinkle Tinkle〉5:36〈Pannonica〉4:12〈Hackensack〉7:17〈Ask Me Now〉7:27。**製作人兩位：Sonny Fortune 與 Marty Khan**；**錄音師 Rudy Van Gelder 本人**；**封面畫是 Romare Bearden 的作品**（credits 欄 `Cover [Art]`），美術 Darcy Cloutier-Fernald、設計 Eric Baker、內頁 Bret Primack、攝影 Jeff Glancz。",
+    "src": "https://api.discogs.com/releases/12249884"
+   },
+   {
+    "f": "**廠牌與紙本的時序本層查實到四則。** **Cash Box 1994-02-26 p20（Jazz Notes）**：Blue Note 在紐約 Down Beat Club 辦簽約慶祝會，逐字「**Scheduled for release later this year, the album will feature Billy Hart, Kirk Lightsey and Buster Williams**」，合影者逐字列「**Steve Schenfeid, director of A&R Blue Note; Fortune; Bruce [Lundvall]**」。**Billboard 1994-09-10 p39 的 Blue Note 整版廣告**逐字「**Sonny Fortune makes his triumphant return to the scene, recording his first album as a leader in over 10 years. On FOUR IN ONE, Fortune undertakes a daring exploration of the music of Thelonious Monk. 28243**」。**Cash Box 1994-11-12 p4（TELLING FORTUNE）**逐字「**Jazz stalwart Sonny Fortune, commercially quiet for a while now, is in top form with the release of his new Blue Note Records album Four In One. Fortune and Blue Note celebrated the release with a cocktail party on opening night of his stint at Sweet Basil in N.Y.'s Greenwich Village on October 25th.**」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1994/CB-1994-11-12.pdf"
+   },
+   {
+    "f": "⚠ **載體：只有 CD，本組唯一一張連卡帶都查不到的碟。** Discogs master 1438849 底下只有三個版本，**全部是 CD**：12249884（US 原壓）、7177338（歐版）、19997221（US 俱樂部版 `D 106760`）。**沒有黑膠，也沒有卡帶。**",
+    "src": "https://api.discogs.com/masters/1438849/versions?per_page=100"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `1445793107` 本層逐軌核過，是同一張碟。** `lookup` 帶 `entity=song` 回 10 軌，軌名與軌序與原盤一致（1 Four In One／…／10 Ask Me Now），**10 軌 previewUrl 全有**，copyright「A Blue Note Records Release; ℗ 1994 Capitol Records, LLC」。⚠ **`releaseDate` 1994-09-06 早於 Cash Box 記的 10 月 25 日發片會，是串流回填日**（第 484 條）。**可寫 `串流採信 1445793107`。**",
+    "src": "https://itunes.apple.com/lookup?id=1445793107&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十首全是 Monk，但編制一首一首在換：〈Reflections〉只剩中音與鋼琴、〈Pannonica〉換成長笛配貝斯、〈Ask Me Now〉又換掉一組貝斯與鼓",
+   "封面掛的是 Romare Bearden 的畫，錄音室是 Rudy Van Gelder 本人操刀——十年沒發領班盤的人，回來時 Blue Note 給了這兩樣東西"
+  ],
+  "sound": "全 Monk 曲目的十軌，錄於 1994 年 1 月 17、18、27 三天的 Van Gelder 錄音室。編制逐軌變動：七軌是 Fortune 中音＋Kirk Lightsey 鋼琴＋Buster Williams 貝斯＋Billy Hart 鼓的四重奏，〈Reflections〉縮成中音與鋼琴的二重奏，〈Pannonica〉是 Fortune 改吹長笛配 Santi Debriano 的貝斯，〈Ask Me Now〉換成中音／Debriano／Ronnie Burrage 的無鋼琴三重奏。長曲在〈Monk's Dream〉8:19、〈Ask Me Now〉7:27、〈Hackensack〉7:17；最短的〈Pannonica〉4:12 正好是那首長笛二重奏。只有 CD，沒有黑膠也沒有卡帶。",
+  "keyTracks": [
+   "Four In One",
+   "Monk's Dream",
+   "Pannonica"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判；本組紙本最厚的一張，依據覆核後全部成立。** 盤面 **℗ © 1994 Capitol Records Inc.**（Discogs 12249884 notes 逐字）＋ MB frd 1994 ＋ Discogs master 1438849 三個版本的 `year` 欄全 1994 ＋ **四則同期紙本**：**Cash Box 1994-02-26 p20 簽約慶祝會「Scheduled for release later this year」**（廠牌線，階序最上層）→ **Billboard 1994-07-02 p45 廣告的 `COMING THIS FALL` 欄**（本層另核，本盤在該欄）→ **Billboard 1994-09-10 p39 整版廣告已經是現貨文案「On FOUR IN ONE, Fortune undertakes a daring exploration…28243」** → **Cash Box 1994-11-12 p4 記發片酒會在 1994-10-25 紐約 Sweet Basil 開演當晚**。**上市取 1994 年秋（9 月現貨、10 月下旬辦酒會）。** ⚠ **錄音 1994-01-17／18／27 三天**（Discogs notes 逐字），**正文不得寫成一天錄完、也不得寫成 1993 年。** ⚠ **本張沒有上過 Billboard 兩張爵士榜的任何一張**（第 879 條兩張榜本層逐期查 `28243` 與 `SONNY FORTUNE`，零榜位）；**紙本厚在新聞與廣告，不在榜位。** ⚠ **Apple `releaseDate` 1994-09-06 是回填日**（第 484 條）。",
+  "notes": "**覆核策展層：rgMbid 3163ec43／原盤 9955aeff／`CDP 7243 8 28243 2 9`／掛名 `Sonny Fortune`／年份 1994 全部成立。**｜⚠⚠ **本層擋下策展層一處編制錯（形狀＝把逐軌變動的編制寫成固定樂團，而且漏列兩位樂手）**：**Discogs 12249884 的 credits 每一筆都帶軌號**，逐軌還原後**只有七軌是四重奏**，**第 3 軌〈Reflections〉是二重奏、第 8 軌〈Pannonica〉是長笛＋貝斯二重奏、第 10 軌〈Ask Me Now〉是無鋼琴三重奏**；**策展層只寫了 Lightsey／Williams／Hart 三人，漏了第二組節奏組 Santi Debriano（貝斯，第 8、10 軌）與 Ronnie Burrage（鼓，只有第 10 軌）**。⚠ **Burrage 只打一軌，絕不得寫成常設團員**（這正是派工信警告的 c-150 b 那種形狀）。⚠ **Fortune 在第 8 軌改吹長笛**（credits 逐軌欄 `Flute=Sonny Fortune`），**正文不得寫成整張都是中音。**｜**製作人兩位：Sonny Fortune 與 Marty Khan**；**錄音師是 Rudy Van Gelder 本人**（`Engineer` 欄）——**兩者不得混寫。** **內頁 Bret Primack。**｜⚠ **封面畫是 Romare Bearden 的作品**（credits 欄 `Cover [Art] — Romare Bearden`），美術指導 Darcy Cloutier-Fernald、設計 Eric Baker。⚠ **Cloutier-Fernald 同時是本組 `Chet Baker —《Embraceable You》` 與 `Dianne Reeves —《Quiet After the Storm》` 的美術指導**——**三張共用美術不代表同一企劃。**｜**載體**：**只有 CD（三個版本全是 CD），沒有黑膠也沒有卡帶**——**本組唯一一張連卡帶都查不到的碟。**｜**撞陳列**（逐軌比過）：**十軌全部是 Monk 曲，池中 `Thelonious Monk` 22 列**、**本組 `Joe Lovano —《Tenor Legacy》` 第 5 軌〈Introspection〉與 `McCoy Tyner & Bobby Hutcherson —《Manhattan Moods》` 第 2 軌〈Blue Monk〉也是 Monk 曲**——⚠ **本層逐軌核過：本張十軌裡沒有〈Introspection〉也沒有〈Blue Monk〉，三張之間零曲目重疊，更零母帶重疊。** **Billy Hart 與 Buster Williams 在池中多張 seed 卡上也出現，但那是不同年代的錄音。**｜⚠ **封面已有但只有 1 圖**：CAA RG 層 1 圖（本組最少），來源是唯一的 1994 美國原盤 9955aeff ✓。**備援：Discogs 12249884 有 5 圖，`images[0].uri` type=primary、600×596**——**Bearden 畫作的版式建議本機端上傳前比對一次。**｜**試聽已可用**：**`串流採信 1445793107`**（us，10 軌逐軌核過、軌序一致、previewUrl 全有）。｜非選輯：單一藝人、三天同一組場次的致敬專輯（全部翻奏同一位作曲者，**但不是合輯**——單一藝人、單一企劃、非既有錄音集結）。"
+ },
+ {
+  "key": "desc2:McCoy Tyner & Bobby Hutcherson|Manhattan Moods",
+  "artist": "McCoy Tyner & Bobby Hutcherson",
+  "album": "Manhattan Moods",
+  "facts": [
+   {
+    "f": "release-group e7bbeb8a 的欄位：title「Manhattan Moods」、artist-credit「McCoy Tyner & Bobby Hutcherson」（joinphrase「 & 」）、first-release-date **1994**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：617b7c3d（**1994 US** Official **CD 9 軌**，Blue Note `CDP 7243 8 28423 2 3`，barcode 724382842323）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e7bbeb8a-8c04-3e0d-bc7f-18a377d4e1c2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美國原壓 10133079（US 1994，`CD, Album`）的盤上註記逐字：「**Recorded 3-4 Dec, 1993 in NYC／This album was recorded analog using Dolby SR, transferred to 20-Bit digital and mastered with Super Bit Mapping.／℗ & © 1994 Blue Note Records, a division of Capitol Records, Inc.／Released in a Jewel Case with white CD Tray and 4 page booklet.**」**錄音兩天（1993-12-03／04），紐約。**",
+    "src": "https://api.discogs.com/releases/10133079"
+   },
+   {
+    "f": "⚠ **編制只有兩個人，而且 credits 沒有任何第三位樂手**：**McCoy Tyner — 鋼琴**、**Bobby Hutcherson — 顫音琴與馬林巴**。沒有貝斯、沒有鼓。**製作人 Michael Cuscuna**、錄音 David Baker、母帶 Larry Walsh、**美術指導與攝影 Carol Friedman**、設計 Tina Anderson、內頁攝影 Cheung Ching Ming。**Billboard 1994-10-15 p72 的評介獨立證了這一點**，逐字「**McCOY TYNER & BOBBY HUTCHERSON Manhattan Moods PRODUCER: Michael Cuscuna Blue Note 28423 — The teaming of formidable '60s veterans Tyner and Hutcherson proves inspired, with delightful duets…**」。",
+    "src": "https://api.discogs.com/releases/10133079"
+   },
+   {
+    "f": "九軌、作曲者與時長：〈Manhattan Moods〉8:38（McCoy Tyner）〈Blue Monk〉7:56（Thelonious Monk）〈Dearly Beloved〉6:47（**Jerome Kern／Johnny Mercer**）〈(I Loves You) Porgy〉3:47（Gershwin 兄弟／DuBose Heyward）〈Isn't This My Sound Around Me?〉6:52（Bobby Hutcherson）〈Soul Eyes〉5:58（**Mal Waldron**）〈Travelin' Blues〉4:47（McCoy Tyner）〈Rosie〉5:51（Bobby Hutcherson）〈For Heaven's Sake〉6:41（Meyer／Bretton／Edwards）。**兩位各寫兩首，其餘五首是別人的曲。**",
+    "src": "https://api.discogs.com/releases/10133079"
+   },
+   {
+    "f": "⚠ **載體：CD 與卡帶，沒有黑膠。** Discogs master 845953 底下九個版本：美版 10133079、兩筆美國俱樂部版（7081222／11296701，皆帶 `D 106002`）、兩筆美國促銷（21453283 CD／**13599773 `B2-28423`，`major_formats` 欄是 Cassette**）、歐版 4903513、**日本 `TOCJ-5930` 兩筆（14837354 正式版／26579024 促銷版，皆 1994）**、1996 年 Jazz Heritage 再壓 20548126（`514268W`）。**沒有任何黑膠。**",
+    "src": "https://api.discogs.com/masters/845953/versions?per_page=100"
+   },
+   {
+    "f": "**廠牌廣告與評介兩則。Billboard 1994-09-10 p39 的 Blue Note 整版廣告**逐字寫「**…[vibrap]honist Hutcherson engage in a stunning duo recital, complementing and highlighting each other's remarkable talents. 28423**」——**廠牌自己的文案就寫「duo recital」**。**Billboard 1994-10-15 p72 的 ★ 評介**（見上）。⚠ **本層另核**：`28423`／`MANHATTAN MOODS` 在 Billboard 1994／1995／1996 與 Cash Box 1994／1995／1996 六份掃描檔裡**沒有任何榜位**（第 879 條兩張爵士榜都查過）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-10-15-P.pdf"
+   },
+   {
+    "f": "⚠ **店面：Apple us 條目 `1442935100` 本層逐軌核過，是同一張碟。** `lookup` 帶 `entity=song` 回 9 軌，軌名與軌序與原盤一致（第 4 軌 Apple 寫成「I Love You Porgy」，少了括號與 s，位置與時長對得上），**9 軌 previewUrl 全有**，copyright「℗ 2015 Blue Note Records」＝數位重發年。⚠ **`releaseDate` 標 1993-01-01，錯一年**（第 484 條的第三種錯法），**不得當年份依據。** **可寫 `串流採信 1442935100`。**",
+    "src": "https://itunes.apple.com/lookup?id=1442935100&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "台上只有兩個人：一架鋼琴、一組顫音琴與馬林巴，沒有貝斯也沒有鼓——廠牌自己的廣告文案就直接寫成「duo recital」",
+   "1993 年 12 月那兩天是用類比帶加 Dolby SR 錄的，再轉成 20-bit 數位、用 Super Bit Mapping 做母帶——1994 年的 Blue Note 把這道工序印在盤面上"
+  ],
+  "sound": "兩個人的二重奏：McCoy Tyner 的鋼琴與 Bobby Hutcherson 的顫音琴／馬林巴，沒有貝斯、沒有鼓，九軌從頭到尾都是兩件樂器的對話。1993 年 12 月 3、4 兩天錄於紐約，類比帶加 Dolby SR 錄音、轉 20-bit 數位、Super Bit Mapping 母帶。曲目是兩位各寫兩首（Tyner 的標題曲與〈Travelin' Blues〉、Hutcherson 的〈Isn't This My Sound Around Me?〉與〈Rosie〉），其餘五首是 Monk〈Blue Monk〉、Kern／Mercer〈Dearly Beloved〉、Gershwin〈(I Loves You) Porgy〉、Mal Waldron〈Soul Eyes〉與〈For Heaven's Sake〉。開場的標題曲最長（8:38），〈(I Loves You) Porgy〉最短（3:47）。只有 CD 與卡帶，沒有黑膠。",
+  "keyTracks": [
+   "Manhattan Moods",
+   "Blue Monk",
+   "Soul Eyes"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1994 成立，本層未改判，依據覆核後加厚一層。** 盤面 **℗ & © 1994 Blue Note Records, a division of Capitol Records, Inc.**（Discogs 10133079 notes 逐字）＋ MB frd 1994 ＋ Discogs master 845953 九個版本的 `year` 欄全 1994（1996 年 Jazz Heritage 再壓那筆除外）＋ **Billboard 1994-09-10 p39 的 Blue Note 整版廣告（現貨文案，帶目錄號 28423）**＋ **Billboard 1994-10-15 p72 的 ★ 評介**。**上市取 1994 年秋。** ⚠ **錄音 1993-12-03／04 兩天**（Discogs notes 逐字「Recorded 3-4 Dec, 1993 in NYC」），**正文不得寫成 1994 年錄音。** ⚠ **本張沒有上過 Billboard 兩張爵士榜的任何一張**（第 879 條兩張榜本層逐期查 `28423`／`MANHATTAN MOODS`，零榜位）；**Cash Box 1994／1995／1996 對本盤也零命中**——**紙本只有 Billboard 一刊的廣告＋評介兩則。** ⚠ **Apple 1442935100 的 `releaseDate` 標 1993-01-01（錯一年）、copyright 標「℗ 2015」（數位重發年）**——**兩個欄位都不得引用。**",
+  "notes": "**覆核策展層：rgMbid e7bbeb8a／原盤 617b7c3d／`CDP 7243 8 28423 2 3`／聯名字串 `McCoy Tyner & Bobby Hutcherson`／年份 1994 全部成立，本張未擋下任何一處。**｜**編制本層查實：只有兩個人，credits 沒有第三位樂手**——**Tyner 鋼琴、Hutcherson 顫音琴與馬林巴，沒有貝斯也沒有鼓**。**三個獨立來源同向**：Discogs credits、**Billboard 1994-09-10 廣告文案逐字「duo recital」**、**Billboard 1994-10-15 評介逐字「delightful duets」**。**正文必須寫成二重奏，絕不得寫成四重奏或加上節奏組。**｜**製作人 Michael Cuscuna**（本組三張 Cuscuna 製作的其中之一，另兩張是《Live at Bradley's》與《Embraceable You》的 reissue producer——⚠ **三者的角色不同，不得混寫**）；錄音 David Baker、母帶 Larry Walsh。｜⚠ **美術指導與攝影是 Carol Friedman**——**她也是 c-149 b 六張的共同美術指導**，**正文不得因此把幾張寫成同一個企劃**（第 1049 條同形）。｜**載體**：**CD ＋ 卡帶（美國促銷 `B2-28423`），沒有黑膠**（master 845953 九個版本逐筆核過）。⚠ **日本 `TOCJ-5930` 兩筆都是 1994**，**不早於美版，與第 1063／1066 條的形狀不同**——**首發地是美國。**｜**撞陳列**（逐軌比過）：〈Blue Monk〉是 Monk 曲，**池中 `Thelonious Monk` 22 列、本組《Four in One》整張 Monk（十軌裡沒有〈Blue Monk〉）、《Tenor Legacy》第 5 軌〈Introspection〉**——**三張之間零曲目重疊。** 〈Dearly Beloved〉是 Jerome Kern／Johnny Mercer 的歌，**與 c-151 b 退掉的 Turrentine 同名盤是同一首歌、毫無母帶關係**。〈(I Loves You) Porgy〉與本組 `Kevin Hays —《Seventh Sense》` 第 4 軌〈My Man's Gone Now〉**同出《Porgy and Bess》但不是同一首**。⚠ **Bobby Hutcherson 在本組另有一處**：**《Seventh Sense》第 7 軌〈Little B's Poem〉是他寫的曲，但他不在那張碟上**——**兩卡 risk 互指，正文不得寫成他參與了那張。**｜**封面已有**：CAA RG 層 5 圖，來源是唯一的 1994 美國原盤 617b7c3d ✓（Discogs 10133079 另有 3 圖，primary 600×592，可當備援）。｜**試聽已可用**：**`串流採信 1442935100`**（us，9 軌逐軌核過、軌序一致、previewUrl 全有）。｜非選輯：兩位藝人的聯名二重奏專輯，`releaseType` Album。"
+ }
+]

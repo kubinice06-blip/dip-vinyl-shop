@@ -1,0 +1,306 @@
+[
+ {
+  "key": "desc2:Prysm|Prysm",
+  "artist": "Prysm",
+  "album": "Prysm",
+  "facts": [
+   {
+    "f": "release-group b066bcda 的欄位：title「Prysm」、artist-credit「Prysm」（**Group**、94afe824）、first-release-date **1995**、primary-type Album、secondary-types 空。**轄下兩筆 release，曲序與時長逐軌相同**：1f54b492（**1995 FR Official CD 12 軌，Artalent `ART 953`，barcode 3448965395323**）與 581518ef（**1998-06-15 FR CD 12 軌，Blue Note，label-info 無 catalog-number**，barcode 724349558823）。十二軌：〈Reflection〉4:21〈Double face〉4:23〈Obsession〉6:06〈Masque arabe〉5:24〈Trait neuf〉4:42〈L'Apothéose d'Homer〉4:05〈Le Pas suspendu〉4:42〈Body and Soul〉4:32〈Un des sens〉4:10〈La Voie du silence〉4:22〈D'ici demain〉2:50〈Patience〉3:04。**MB 只建了兩張 CD，沒有黑膠也沒有卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b066bcda-26b2-4bdb-b9a0-b53c32ef9ec6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**1995 年原盤 Artalent `ART 953`（Discogs 10659238，France 1995 CD 12 軌）的 companies 欄把錄音地點寫死**：**`Recorded At: Studios La Buissonne`／`Mixed At: Studios La Buissonne`**，錄音與混音工程師同為 **Gérard De Haro**；`Distributed By: Night & Day`、`Made By: MPO`。⚠ **credits 欄只有五筆，一位樂手都沒列**——**掛名的三個人是以「Producer」身分出現**：**Pierre de Bethmann、Christophe Wallemme、Benjamin Henocq 三人同列 Producer**（另有 Fabienne Dumonet 設計概念、Denis Oberkampf 攝影）。**本盤的編制必須從 MB 的樂團關係取，不能從 Discogs credits 取。**",
+    "src": "https://api.discogs.com/releases/10659238"
+   },
+   {
+    "f": "⚠ **1998 年 Blue Note 版（Discogs 6485443）的 `format` 欄逐字 `CD, Album, Reissue`**，年份欄 1998、國別 France——**與 1995 年 Artalent 版是同一個 Discogs master 1760013**。**兩版曲序與軌數完全相同（12 軌）**，**Blue Note 沒有加軌也沒有重新混音**。**本卡的 `year` 1995 取 Artalent 原盤，1998 那次只是 Blue Note 法國分部接手重發。**",
+    "src": "https://api.discogs.com/releases/6485443"
+   },
+   {
+    "f": "⚠ **第三筆 Discogs 條目 6970711 是陷阱**：France 1995，`format` 欄逐字 `CD, Mini-Album, Limited Edition, Reissue, **Unofficial Release**`，catno `none`，**notes 逐字「Premier disque de prysm, enregistré le 8 septembre 1994 au Studio Sysmo Records, Paris」**（prysm 的第一張唱片，1994 年 9 月 8 日錄於巴黎 Studio Sysmo Records）。**這是另一份錄音、另一個錄音室、另一個日期，不是 `ART 953`**——`ART 953` 的盤面寫的是 Studios La Buissonne。**正文不得把 1994-09-08 Sysmo 那場當成本盤的錄音日。**",
+    "src": "https://api.discogs.com/releases/6970711"
+   },
+   {
+    "f": "**Discogs 的消歧義編號是 `Prysm (2)`**（三筆條目的 title 欄都印 `Prysm (2) - Prysm`）——**Discogs 上另有同名的其他 Prysm**。**這個 `(2)` 不進盤名也不進掛名，只適合放 `queryAlias`。**",
+    "src": "https://api.discogs.com/database/search?artist=Prysm&release_title=Prysm&type=release"
+   },
+   {
+    "f": "**店面：Apple `1366316419`（gb 市場）12 軌，軌名與時長逐軌對得上 MB 兩版**（Reflection 261s／Double face 263s／Obsession 366s／Masque arabe 324s／Trait neuf 282s／L'apothéose d'Homer 245s／Le pas suspendu 282s／Body and Soul 272s／Un des sens 250s／La voie du silence 262s／D'ici demain 170s／Patience 184s，**十二軌全部有預覽**）。⚠ **Apple 的 `releaseDate` 是 `1998-06-15` ＝ Blue Note 再發日，不是 1995 年的 Artalent 原盤日**（第 1182 條已記）——**不得拿它當年份依據。**",
+    "src": "https://itunes.apple.com/lookup?id=1366316419&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "**紙本：1994／1995／1996 三年六份 Billboard 與 Cash Box 逐期掃 `Prysm`、`Artalent`、`Bethmann`、`Wallemme`、`Henocq` 五個字串，零命中。**法國獨立廠 1995 年的原盤在美國兩刊上完全不存在，**1998 年 Blue Note 法國分部接手那次也沒有進美國兩刊**（1996 年之後 Cash Box 已停刊，Billboard 1997 年的掃描檔本層未查）。**本張是本組唯一紙本全空的一張。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-07-01.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "十二首裡有十一首是三個人自己寫的，唯一的外來曲是〈Body and Soul〉——一張法國三重奏的首作，用一首所有人都會的標準曲當唯一的參照點",
+   "1995 年由法國獨立小廠 Artalent 發行，三年後 Blue Note 原封不動重發：同樣十二軌、同樣曲序、一軌未加——Blue Note 買的不是母帶的加工權，是這張碟本身"
+  ],
+  "sound": "十二軌的鋼琴三重奏，鋼琴、低音提琴、鼓，沒有管樂也沒有人聲。全盤在普羅旺斯的 Studios La Buissonne 錄音兼混音。曲子多半在四到五分半之間，最長的〈Obsession〉六分鐘、最短的〈D'ici demain〉不到三分鐘，收尾的〈Patience〉三分出頭。十一首原創曲名多為法文（〈Masque arabe〉〈Trait neuf〉〈Le Pas suspendu〉〈La Voie du silence〉），唯一的標準曲〈Body and Soul〉擺在第八軌、四分半。三個人同列製作人，沒有外請製作人。",
+  "keyTracks": [
+   "Obsession",
+   "Body and Soul",
+   "Masque arabe"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 成立，本層未改判，但證據層級是本組最薄的一張。** MB frd 1995＝MB release 1f54b492 的 1995 FR ＝ Discogs 10659238（France 1995，Artalent `ART 953`）。⚠ **紙本零命中**：1994／1995／1996 三年六份 Billboard 與 Cash Box 逐期掃五個字串（Prysm／Artalent／Bethmann／Wallemme／Henocq）全部沒有——**法國獨立廠的碟不進美國兩刊，預期之內**，但也代表**本張沒有第 431 條要的兩份獨立同期紙本**。⚠ **Apple `1366316419` 的 releaseDate `1998-06-15` 是 Blue Note 再發日，不是原盤日**，**不得採用**（第 1182 條）。⚠ **Discogs 6970711 那筆 notes 寫的 1994-09-08（Studio Sysmo Records, Paris）是另一份錄音的日期**，**與 `ART 953` 的 Studios La Buissonne 不是同一場**，**不得拿來當本盤錄音日、更不能拿來把年份推到 1994**。**依簡報 §二「`year` 取實體首發年」，取 1995（Artalent 原盤）。**",
+  "notes": "**覆核策展層：rgMbid b066bcda／原盤 1f54b492（Artalent ART 953）／1998 再發 581518ef／掛名 `Prysm`／年份 1995 全部成立，本張未擋下。**｜⚠ **載體**：**MB 與 Discogs 合計四筆條目全部是 CD，沒有任何黑膠或卡帶**（1995 Artalent CD、1998 Blue Note CD、1995 mini-album CD、無官方黑膠）——**正文不得寫「黑膠原壓」，但也不必反寫「只有 CD」以外的話**（第 1064 條）。｜⚠ **編制要從 MB 取，不要從 Discogs 取**：**Discogs 10659238 的 credits 一位樂手都沒列**，三個人是掛在 Producer 欄；**MB artist 94afe824（Prysm，Group／FR）的三筆 member of band 關係才是編制來源**：**Pierre de Bethmann 鋼琴、Christophe Wallemme 貝斯、Benjamin Henocq 鼓**。**正文寫「三重奏」安全，寫個別樂器時要知道來源是 MB 的關係欄而不是盤面 credits。**｜⚠⚠ **本層擋下一處正文風險**：**Discogs 6970711（`Unofficial Release` 的 mini-album）的 notes 寫「1994 年 9 月 8 日錄於巴黎 Studio Sysmo Records」**，**而 `ART 953` 的盤面寫的是 Studios La Buissonne**——**兩者不是同一場錄音**。**正文若要提錄音地點，只能寫 Studios La Buissonne；不得提 1994-09-08 那個日期，也不得把兩者合併敘述。**｜**錄音／混音工程師 Gérard De Haro**（La Buissonne 的主理人），**發行端 Night & Day 經銷、MPO 壓片**。｜**盤名**：MB RG 形 `Prysm` 為準；⚠ **Discogs 三筆的 title 欄都印 `Prysm (2)`**，**那個 (2) 是 Discogs 的消歧義編號，不是盤名的一部分**（第 1184 條已定），**只進 `queryAlias`**。｜**跨卡**：**實掃池中（seed 17,248 ＋ 批次卡 5,254，共 22,502 列）`Prysm` 零列**，法國鋼琴三重奏這一路池中亦無同名團；**本盤十二軌中只有〈Body and Soul〉是標準曲，與池中多張同名曲碟屬同曲不同錄音**（第 1049 條），risk 互指即可。｜**封面已有**：CAA RG 層有圖（策展層記 1 圖），**來源是原盤 release**。**試聽已 ready**（Apple 1366316419／gb，**本層抽核 12 軌全中、時長逐軌吻合、無錯碟**），**但 releaseDate 是 1998 再發日**，本層未動 previews。｜非選輯：單一樂團、同一場次的原創專輯。"
+ },
+ {
+  "key": "desc2:Charlie Hunter Trio|Bing, Bing, Bing!",
+  "artist": "Charlie Hunter Trio",
+  "album": "Bing, Bing, Bing!",
+  "facts": [
+   {
+    "f": "release-group 0e8cc254 的欄位：title「Bing, Bing, Bing!」、artist-credit「Charlie Hunter Trio」（**Group**、87c0023c）、first-release-date **1995-06-20**、primary-type Album、secondary-types 空。**轄下三筆 release**：40f239f7（**1995-06-20 US Official CD 10 軌，Blue Note `CDP 7243 8 31809 2 9`**，barcode 724383180929）、bdbe6102（1995 XE CD 10 軌，同 catno 同 barcode）、**1a03955a（2022-11-11 XW，`12\" Vinyl` ×2，6＋4 軌，Blue Note／UMe `4535305`）**。十軌：〈Greasy Granny〉4:56〈Wornell's Yorkies〉4:00〈Fistful of Haggis〉6:46〈Come as You Are〉6:10〈Scrabbling for Purchase〉4:49〈Bullethead〉5:33〈Bing, Bing, Bing, Bing〉7:57〈Squiddlesticks〉4:06〈Lazy Susan (With a Client Now)〉6:15〈Elbo Room〉5:58。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e8cc254-cb5a-3f3a-8935-7372dfb7a6fc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **1995 年的原盤只有 CD 與卡帶，黑膠是 2022 年才有的**：Discogs 以 `artist=Charlie Hunter`＋`release_title=Bing, Bing, Bing!` 掃出十筆，**1995 年的實體全部是 CD 或卡帶**（US CD 1218873／12755808、US 卡帶 12218554 `B4 7243 8 31809 4 3`、US 促銷卡帶 6861161 `B4-31809`、Europe CD 9869098、Canada 俱樂部版 CD 18912064、Japan CD 13614467 `TOCP-8642`、Australia CD 14671809），**唯一的黑膠是 24977047（Worldwide 2022，`Vinyl, LP, Album, Reissue, Stereo`，catno 4535305）**。**正文不得預設 1995 年有黑膠原壓。**",
+    "src": "https://api.discogs.com/database/search?artist=Charlie+Hunter&release_title=Bing%2C+Bing%2C+Bing%21&type=release"
+   },
+   {
+    "f": "**美國原盤 CD（Discogs 1218873，US 1995，`CDP 7243 8 31809 2 9`）的盤面註記**：**「Recorded at Möbius Music, San Francisco, CA.／Mixed at Different Fur Recording, San Francisco, CA.／Mastered at Masterdisk, NYC.／(P)(C)1995 Capitol Records, Inc.」**。**製作人 Lee Townsend**；錄音 Oliver DiCicco 與 Christian Jones、混音 Judy Clapp、助理 Mark Slagle、母帶 **Greg Calbi**（Masterdisk）；美術指導與設計 Patrick Roques、攝影 George Westcot。",
+    "src": "https://api.discogs.com/releases/1218873"
+   },
+   {
+    "f": "⚠⚠ **三重奏是三個人，客座是逐軌的**（Discogs 1218873 的 `extraartists` 分兩層）：**常設三人＝Charlie Hunter（`Guitar [8-string]`）、Dave Ellis（Tenor Saxophone）、Jay Lane（Drums）**；**客座四人全部掛在個別軌上**：**Scott Roberts 打擊（僅第 2、3 軌）／David Phillips 踏板鋼棒吉他（僅第 3、7 軌）／Ben Goldberg 單簧管（僅第 5、9 軌）／Jeff Cressman 長號（僅第 5、9 軌）**。**四位客座沒有一位出現在半數以上的軌上，正文不得把任何一位寫成常設團員。**",
+    "src": "https://api.discogs.com/releases/1218873"
+   },
+   {
+    "f": "**Billboard 1995-07-29 的 JAZZ 評介逐字**：「*CHARLIE HUNTER TRIO — Bing, Bing, Bing! PRODUCER: Lee Townsend — Blue Note 31809 — Somehow reminiscent of **Jimmy Giuffre's convention-defying ensembles**, guitarist/composer Charlie Hunter's trio is filled out by **tenor sax and drums — with the occasional guest**. On this swinging label debut, Hunter's sophisticated, bluesy/jazzy riffing stakes out cool, funky themes like 'Greasy Granny' and 'Bullethead'…」——⚠ **評論自己寫的是「with the occasional guest」**，與盤面 credits 的逐軌歸屬同向。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-07-29.pdf"
+   },
+   {
+    "f": "⚠ **八弦與七弦是兩張碟的差別**：**Billboard 1994-01-22 評的是他在 Prawn Song／Mammoth 的同名首作**（「CHARLIE HUNTER TRIO — PRODUCERS: Charlie Hunter Trio & **Les Claypool** — Mammoth/Prawn Song 66 … Guitarist Hunter spins some interesting lines on his **seven-string** axe, ably abetted by tenorist Dave Ell[is]…」）；**本盤的 Discogs credit 逐字是 `Guitar [8-string]`**，**Billboard 1995-12-23 的年度評論人榜也逐字寫「even if he didn't play eight-string guitar」**。**正文寫八弦是對的，但不得把 1993–94 年那張 Prawn Song 首作也寫成八弦。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-01-22.pdf"
+   },
+   {
+    "f": "**榜位**：Billboard `TOP CONTEMPORARY JAZZ ALBUMS` — **1995-07-15 第 24 名（在榜第 2 週）**、1995-08-26 第 24 名（第 5 週）、1995-09-09 第 24 名（第 7 週），欄位逐字 `CHARLIE HUNTER TRIO BLUE NOTE 31809/CAPITOL BING BING BING!`。**回推首次進榜約在 1995-07-08 那期。**另 **Billboard 1995-12-23 的評論人年度榜把本盤列第 4**（「The tunes and fresh'n'borrowed approach would be terrific even if he didn't play eight-string guitar」）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-07-15.pdf"
+   },
+   {
+    "f": "**簽約背景（Billboard 1994-09-17）**：本團當時還沒定案要放 Blue Note 還是子廠牌 Metro Blue，Blue Note 總裁 Bruce Lundvall 逐字：「Because their market is a young alternative market … probably they would be better served on the new label.」**最後仍走 Blue Note 本體（catno 31809）**；**Billboard 1995-07-01 的目錄專題另記 Lundvall 把 Hunter 列為當年少數給巡演補助的新簽藝人**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-09-17-N.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "一把八弦吉他同時彈貝斯線和和弦，所以這個三重奏只要一個吉他、一支次中音、一套鼓——Billboard 的評論把它比成 Jimmy Giuffre 那種偏不照編制走的小團",
+   "第四軌是 Nirvana 的〈Come As You Are〉，六分十秒，擺在一張 1995 年的 Blue Note 爵士碟正中間"
+  ],
+  "sound": "十軌的三重奏：Charlie Hunter 的八弦吉他一個人同時走貝斯線與和聲，Dave Ellis 的次中音薩克斯風，Jay Lane 的鼓。八首是 Hunter 自己的曲，〈Squiddlesticks〉是 Ellis 寫的，〈Come as You Are〉是 Kurt Cobain 的歌。曲長多在四到六分之間，最長的同名曲〈Bing, Bing, Bing, Bing〉近八分鐘。四位客座只上特定幾軌：打擊在第二、三軌，踏板鋼棒吉他在第三、七軌，單簧管與長號同時上第五、九軌——其餘六軌是乾淨的三人編制。全盤在舊金山的 Möbius Music 錄，Different Fur 混音。",
+  "keyTracks": [
+   "Greasy Granny",
+   "Come as You Are",
+   "Bing, Bing, Bing, Bing"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 成立，四層同邊，本層未改判。** MB frd **1995-06-20**（release 40f239f7 US 帶到日）＝Discogs 1995 年九筆實體全部標 1995（US CD／US 卡帶／Europe CD／Canada／Japan `TOCP-8642`／Australia）＝盤面 `(P)(C)1995 Capitol Records, Inc.`。**同期紙本兩則獨立**（第 431 條）：**Billboard 1995-07-01 的 Blue Note 整版廣告已把 `charlie hunter trio ... bing, bing, bing` 與 catno `31809` 列在現貨欄**、**Billboard 1995-07-29 的 JAZZ 評介**；另有 **Billboard 1995-07-15 的 TOP CONTEMPORARY JAZZ ALBUMS 第 24 名（在榜第 2 週，回推首次進榜約 1995-07-08）**。**上市取 1995 年 6 月底至 7 月初**（MB 的 06-20 與榜位回推吻合）。⚠ **Apple `724760886` 的 releaseDate `1995-01-01` 是年頭回填**（第 1182 條），**只能確認年、不能確認月**。⚠ **2022-11-11 的雙片黑膠（MB 1a03955a／Discogs 24977047）是再發，不進年份判斷。**",
+  "notes": "**覆核策展層：rgMbid 0e8cc254／原盤 40f239f7／`CDP 7243 8 31809 2 9`／掛名 `Charlie Hunter Trio`／年份 1995 全部成立，本張未擋下。**｜⚠⚠ **本層擋下一處正文風險（第 1067 條、c-150 b「只吹一軌的客座被寫成常設團員」同形）**：**本盤是嚴格的三人團＋四位逐軌客座**。**常設：Hunter 八弦吉他／Dave Ellis 次中音／Jay Lane 鼓**。**客座：Scott Roberts 打擊（第 2、3 軌）、David Phillips 踏板鋼棒吉他（第 3、7 軌）、Ben Goldberg 單簧管（第 5、9 軌）、Jeff Cressman 長號（第 5、9 軌）**——**四位都不得寫成團員**；Billboard 評介自己也只寫「with the occasional guest」。｜⚠ **載體（第 1064 條）**：**1995 年的實體只有 CD 與卡帶，沒有黑膠**（Discogs 十筆實掃：1995 年九筆全是 CD／卡帶，唯一黑膠是 2022 年的 24977047 雙片再發）。**正文不得預設有黑膠原壓；MB 那筆 `12\" Vinyl` 是 2022 年的，不是原盤。**｜⚠ **八弦 vs 七弦**：**本盤是八弦**（Discogs credit 逐字 `Guitar [8-string]`），**但 1993–94 年 Prawn Song／Mammoth 的同名首作 Billboard 評介寫的是「seven-string axe」**——**兩張碟的琴不一樣，正文不得混寫**。｜**錄音**：**Möbius Music, San Francisco 錄音**、**Different Fur Recording 混音**、**Masterdisk（Greg Calbi）母帶**；**製作人 Lee Townsend**（同期也製作 Bill Frisell、John Scofield）。⚠ **盤面沒有印錄音日期**，**正文不得寫具體錄音日**。｜**撞陳列**：**〈Come As You Are〉（Kurt Cobain 作）←→ 池中 `Nirvana —《Nevermind》`**——**同曲不同錄音、不同曲風脈絡**（第 1049 條），**risk 互指，正文不得寫成翻唱合輯**。實掃池中 22,502 列，`Charlie Hunter` 掛名僅本卡一張，無撞卡。｜**跨卡**：**Dave Ellis 後來也吹本團第二張 Blue Note《Ready... Set... Shango!》**（Billboard 1996-09-14 逐字記他是「a founding member of the popular Charlie Hunter Trio」）——**那張不在本批，正文不得預告。**｜**封面已有**：CAA RG 層 1 圖，來源是原盤 release。**試聽已 ready**（Apple 724760886／us，**本層抽核 10 軌全中、時長逐軌吻合、無錯碟**），本層未動。｜非選輯：單一樂團、同一組場次的原創專輯（八首原創＋一首團員曲＋一首搖滾翻唱）。"
+ },
+ {
+  "key": "desc2:Big John Patton|Boogaloo",
+  "artist": "Big John Patton",
+  "album": "Boogaloo",
+  "facts": [
+   {
+    "f": "release-group a4be20fc 的欄位：title「Boogaloo」、**artist-credit 是裸名「John Patton」（Person、b76182c3）——不是卡上的 `Big John Patton`**、first-release-date **1995**、primary-type Album、secondary-types 空。**轄下兩筆 release，同為 1995 US Official、同為 6 軌**：**1278f39e（`12\" Vinyl`，Blue Note `7243 8 31878 1 2`，無 barcode）**與 abaf7313（CD，Blue Note `CDP 7243 8 31878 2 9`，barcode 724383187829）。六軌：〈Boogaloo Boogie〉5:25〈Milk & Honey〉8:20〈Barefootin'〉7:07〈Shoutin' But No Poutin'〉7:43〈Spirit〉5:52〈B & J (Two Sisters)〉7:12。**黑膠與 CD 軌數相同，沒有 CD 加軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a4be20fc-0b47-396e-be44-6f7d05b8d2bd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音年是 1968，不是 1995**：**美國原盤黑膠（Discogs 1802486，US 1995，`B1 7243 8 31878 1 2`）與美國 CD（Discogs 3159646，US 1995，`CDP 7243 8 31878 2 9`）兩筆的 notes 逐字相同**——**「Recorded on **August 9, 1968** at the Van Gelder Studio, Englewood Cliffs, New Jersey.」**。**兩筆的 `format` 欄都是乾淨的 `Vinyl, LP, Album`／`CD, Album`，沒有 `Reissue`。** 黑膠是 A1–A3／B1–B3 六軌，**與 CD 六軌完全相同**。",
+    "src": "https://api.discogs.com/releases/1802486"
+   },
+   {
+    "f": "**1968 年的原始編制（Discogs 兩筆 credits 一致，皆無分軌歸屬，代表六軌同一組人）**：**John Patton 管風琴／Vincent McEwan 小號／Harold Alexander 長笛與次中音薩克斯風／Richard Landrum 康加鼓／George Brown 鼓**——**五人，沒有貝斯手**（管風琴左手走低音是 soul jazz 的常規）。**原始製作人與封面攝影同為 Francis Wolff**、**錄音 Rudy Van Gelder**。**1995 年這次發行的內頁文字是 John Zorn 寫的**（Discogs credit 逐字 `John Zorn — Liner Notes`）。",
+    "src": "https://api.discogs.com/releases/3159646"
+   },
+   {
+    "f": "⚠ **1995 年那批人只掛在「為發行而製作」的位置**：**Discogs 1802486／3159646 的 credits 逐字 `Bob Belden — Producer [Produced For Release]`、`Michael Cuscuna — Producer [Blue Note Rare Groove Series]`、`Tom Evered — Producer [Blue Note Rare Groove Series]`**——**與 1968 年的原始製作人 Francis Wolff 是兩個不同的角色，不得互換，也不得把 Belden／Cuscuna／Evered 寫成錄音現場的製作人。**",
+    "src": "https://api.discogs.com/releases/1802486"
+   },
+   {
+    "f": "⚠⚠ **1995 年首次商業發行的一手證據：Billboard 1995-04-08 的 Blue Note 整版廣告**，逐字（OCR 有訛字，原文可辨）：**「blue note has gone deep in the vaults to unearth these **unreleased sessions** from the late [6]0s」**，上欄四張列 **Lonnie Smith《Live at Club Mozambique》31880 (TWO LPs)／John Patton《Boogaloo》31878／Donald Byrd《Kofi》31875／Lou Donaldson《The Scorpion》31876**；下欄另起一行 **「other slammin' titles **reissued** for the first time」**，列 Lou Donaldson《Everything I Play Is Funky》／Grant Green《Carryin' On》／Ronnie Foster《Two Headed Freap》／John Patton《Understanding》／V.A.《The Lost Grooves》(TWO LPs)。**本盤在上欄（庫存首發），不在下欄（再發）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-04-08.pdf"
+   },
+   {
+    "f": "**系列脈絡（Billboard 1995-07-01 的 Blue Note 目錄部門專題）**：行銷副總 **Tom Evered** 逐字——「Over the last year, Blue Note has brought some of its finest material back into print via two newly created lines: the **Connoisseur Series** … and **Rare Groove**, which reinstated tasty soul jazz by such artists as **Big John Patton**, Lonnie Smith, Grant Green and Lou Donaldson.」；並逐字：「The Rare Groove stuff has given a lot of young people exposure to these great jazz groups that were slighted at the time. These guys were castigated [during the '60s] by the straight-ahead jazz press, and they're finally getting the credit they deserve.」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-07-01.pdf"
+   },
+   {
+    "f": "**店面：Apple `723480023`（us）6 軌，軌名與時長逐軌對得上 MB 與 Discogs**（Boogaloo Boogie 325s／Mink & Honey 500s／Barefootin' 427s／Shoutin' but No Puotin' 463s／Spirit 352s／B&J (Two Sisters) 432s，**六軌全部有預覽**）。⚠ **Apple 把兩個軌名打錯**：**`Mink & Honey`（盤面是 Milk & Honey）**、**`Shoutin' but No Puotin'`（盤面是 Poutin'）**——**正文與 `keyTracks` 一律用盤面形。** ⚠ **Apple 的 `artistName` 是「Big John Patton」（與本卡同），但 MB 的 artist-credit 是裸名「John Patton」、Discogs 的 title 欄也印 `John Patton`。**",
+    "src": "https://itunes.apple.com/lookup?id=723480023&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "1968 年 8 月 9 日在 Van Gelder 錄完，帶子在庫房躺了二十七年——1995 年才第一次以商品形式出門，而且黑膠和 CD 同一天上市",
+   "五個人，沒有貝斯手：管風琴的左手就是低音部。1995 年寫內頁文字的是 John Zorn"
+  ],
+  "sound": "六軌的 soul jazz，1968 年一天錄完。編制五人：管風琴、小號、長笛兼次中音薩克斯風、康加鼓、鼓——沒有貝斯，低音由管風琴左手負責。曲長從五分半到八分二十秒，〈Milk & Honey〉最長。〈Barefootin'〉是 Robert Parker 的靈魂樂暢銷曲，其餘五首是團內原創。黑膠 A 面三軌、B 面三軌，CD 同樣六軌，兩種載體內容一致。錄音是 Rudy Van Gelder，現場製作與封面照片都是 Francis Wolff。",
+  "keyTracks": [
+   "Boogaloo Boogie",
+   "Milk & Honey",
+   "B & J (Two Sisters)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 成立（＝首次商業發行年），本層未改判；⚠ 但必須與錄音年 1968 分開講。** **錄音年 1968-08-09**（黑膠 Discogs 1802486 與 CD 3159646 的盤面註記逐字，Van Gelder Studio, Englewood Cliffs）；**首次商業發行年 1995**。依據：**Billboard 1995-04-08 的 Blue Note 整版廣告把本盤列在「unreleased sessions from the late '60s」那一欄**（第 612 條要的廠牌新聞稿／檔期廣告層級，階序最高）＋**Discogs 兩筆 1995 實體的 `format` 欄都沒有 `Reissue`**＋**MB frd 1995**＋**Billboard 1995-07-01 Tom Evered 專訪把 Big John Patton 點名為 Rare Groove 系列的代表藝人**。⚠ **第 1172 條：`Blue Note Rare Groove Series` 是混裝系列**——同一批出貨的下欄是再發（含池中已有的 `John Patton —《Understanding》`，c-142 a／seed，1969），**本盤在上欄，判庫存首發**。⚠ **Apple `723480023` 的 releaseDate `1995-01-01` 是年頭回填**，不得當作上市日。",
+  "notes": "**覆核策展層：rgMbid a4be20fc／`7243 8 31878 1 2`（黑膠）與 `CDP 7243 8 31878 2 9`（CD）／庫存首發／年份 1995 全部成立，本張未擋下。**｜⚠⚠ **正文第一要求（第 1172 條）**：**錄音年 1968-08-09 與首次商業發行年 1995 必須分開講**，**絕不得寫成「1995 年的新錄音」**。要寫成「1968 年 8 月 9 日在 Van Gelder 錄下、1995 年 4 月才首度以商品形式發行」這類形狀。｜⚠ **載體（第 1064 條）——本張是反例，要注意**：**1995 年這次發行 CD 與黑膠都有**（MB 1278f39e＝`12\" Vinyl` `B1 7243 8 31878 1 2`；Discogs 美版黑膠 1802486、英版黑膠 16376145 皆 1995），**而且黑膠與 CD 都是六軌、內容相同、沒有 CD 加軌**（與同批《Kofi》《The Scorpion》相反，那兩張黑膠少軌——見各自卡）。**正文可以提黑膠，但那是 1995 年的黑膠，不是 1968 年的原壓。**｜⚠ **編制與製作人回核（第 609／972 條）**：**五人、無貝斯**——**John Patton 管風琴／Vincent McEwan 小號／Harold Alexander 長笛＋次中音／Richard Landrum 康加／George Brown 鼓**；**Discogs credits 沒有任何分軌歸屬，代表六軌同一組人**。**製作人兩層不得互換**：**1968 年現場＝Francis Wolff（兼封面攝影）**；**1995 年為發行而製作＝Bob Belden（`Produced For Release`）、Michael Cuscuna 與 Tom Evered（系列製作）**。**錄音 Rudy Van Gelder。內頁文字 John Zorn（1995 年寫的，不是 1968 年的）。**｜⚠ **掛名三形並存**：**卡上 `Big John Patton`**；**MB artist-credit 是裸名 `John Patton`**；**Discogs title 欄印 `John Patton`**；**Apple artistName 是 `Big John Patton`**。**池中 c-142 a／seed 的《Understanding》用的是 `Big John Patton`**，**本卡沿用，正確**；**MB 與 Discogs 的裸名形進 `queryAlias`。**｜**撞陳列**：**池中 `Big John Patton —《Understanding》`（1969，seed ＋ c-142 a）**——**那張正是 1995-04-08 同一則廣告「下欄」的再發盤**，**兩卡 risk 互指**，**正文不得把兩張寫成同一批出貨的同類品**（一張是庫存首發、一張是再發）。**〈Barefootin'〉←→ 池中任何 Robert Parker 相關卡屬同曲不同錄音**（第 1049 條）。實掃池中 22,502 列，`Big John Patton` 掛名兩張（《Understanding》與本卡），無撞卡。｜**封面已有**：CAA RG 層 1 圖。**替代來源備查**（本張不缺，僅記尺寸）：**Discogs 美版 CD 3159646 1 圖 primary 600×599**；**美版黑膠 1802486 5 圖，primary 只有 500×500、次圖 600×598**。**試聽已 ready**（Apple 723480023／us，**本層抽核 6 軌全中、時長逐軌吻合、無錯碟**），本層未動。⚠ **Apple 的軌名有兩個打錯**（`Mink & Honey`／`Shoutin' but No Puotin'`），**正文與 keyTracks 用盤面形。**｜非選輯：單一領班、同一天同一場次的錄音。"
+ },
+ {
+  "key": "desc2:Doky Brothers|Doky Brothers",
+  "artist": "Doky Brothers",
+  "album": "Doky Brothers",
+  "facts": [
+   {
+    "f": "release-group 0e000805 的欄位：title「Doky Brothers」、artist-credit「Doky Brothers」（**Group**、efd090d4）、first-release-date **1995**、primary-type Album、secondary-types 空。**轄下兩筆 release**：**c2966a0c（1995 DK Official CD 10 軌，label-info 三格並列 `Blue Note`／`EMI`／`Medley Records`，catno 皆 `8369092`，barcode 724383690923）**與**殘件 38d06062（題名寫成「Doky Brothers **1**」、無日期、無國別、無 label-info、媒體欄 format 為 None、10 軌）**。⚠ **MB 完全沒有建美版 `CDP 7243 8 36909 2 3`，也沒有建日版 `TOCJ-6033`。** 十軌：〈While We Wait〉5:53〈Summertime〉6:32〈My One and Only Love〉5:34〈Children's Song〉6:00〈Teen Town〉4:00〈Hope〉6:19〈Fearless Dreamer〉6:58〈You Never Know〉3:43〈I Feel Pretty〉4:11〈Natural Woman〉6:05。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0e000805-6772-4663-97a3-6fd3d43d6587&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **首發是丹麥、不是美國，而且盤面自己寫死**：**丹麥版（Discogs 5019420／16791705，Denmark 1995，`8369092`）的 notes 逐字「℗ & © **1995 EMI-Medley, Denmark**／Marketed and Distributed by EMI／Printed in Holland」**，companies 欄 `Phonographic Copyright (p): EMI-Medley`、`Copyright (c): EMI-Medley`、壓片與玻璃母模皆 `EMI Uden`。**Blue Note 在這張丹麥盤上只是 label-info 的其中一格，℗ 主體是 EMI-Medley。**",
+    "src": "https://api.discogs.com/releases/5019420"
+   },
+   {
+    "f": "⚠⚠ **美版是 1996 年，Discogs 的「1995-08」日期欄靠不住——紙本把它推翻**：**Discogs 3097729（US，`CDP 7243 8 36909 2 3`）的 `released` 欄寫 `1995-08-00`**，但 **Billboard 1996-08-24 的新片購物清單在 `BLUE NOTE` 欄底下逐字列出 `THE DOKY BROTHERS`**（同欄另有 Grant Green《Best Of》、Jackie McLean《Hat Trick》、Lou Donaldson《Best Of》、Marcus Printup《Unveiled》），**而 Billboard 1996-09-07 才登評介**：「\\* **DOKY BROTHERS** — PRODUCER: Niels Lan Doky — **Blue Note 36909** — This is the first jointly led date from Vietnamese/Danish jazzmen Niels Lan Doky (on piano) and Christian Minh Doky (on bass), although both have recorded solo…」。**美版的實際上市是 1996 年 8–9 月。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-09-07.pdf"
+   },
+   {
+    "f": "**日版也是 1996**：Discogs 17872465（Japan，`TOCJ-6033`）的 `released` 欄 **`1996-03-20`**，notes 仍逐字沿用丹麥盤的「℗ & © 1995 EMI-Medley, Denmark」。**三地順序因此是：丹麥 1995 → 日本 1996-03-20 → 美國 1996 年 8–9 月。**",
+    "src": "https://api.discogs.com/releases/17872465"
+   },
+   {
+    "f": "⚠⚠ **四個鼓手，代表這不是一天、也不是一組人錄完的**：丹麥盤 credits 逐字列 **Alex Riel、Anders Mogensen、Klaus Suonsaari、Terri Lyne Carrington 四位 Drums**，**但一個分軌歸屬都沒有**。固定的兩人是 **Niels Lan Doky（`Grand Piano [Acoustic Grand Piano]`、Keyboards、Producer）**與 **Chris Minh Doky（Acoustic Bass、`Producer [Associate Producer]`）**；另有 **Ulf Wakenius 吉他、Frank Stangerup `Keyboards [Additional Keyboards]`、Michael Brecker 次中音薩克斯風、Randy Brecker 小號**。**混音是 Jan Erik Kongshaug**、執行製作 Nick Foss。",
+    "src": "https://api.discogs.com/releases/5019420"
+   },
+   {
+    "f": "⚠ **兩位歌手是逐軌客座，不是團員**：Discogs 的 tracklist `extraartists` 只在兩軌掛人聲——**第 3 軌〈My One And Only Love〉＝Curtis Stigers[Vocals]**、**第 9 軌〈I Feel Pretty〉＝Deborah Brown[Vocals]**。**其餘八軌是純器樂。** 另有同期單曲條目佐證：Discogs 13605640（Denmark 1995 促銷單曲 `DOKYPROM 114`）的 title 欄逐字 `Doky Brothers Featuring **Curtis Stigers** - My One And Only Love`。",
+    "src": "https://api.discogs.com/releases/3097729"
+   },
+   {
+    "f": "**Blue Note 1996 年仍把本團列在現役名單上**：Billboard 1996-07-27 的 Blue Note 整版廣告逐字列名（OCR 可辨）：「CASSANDRA WILSON / … / CHARLIE HUNTER / … / PIECES OF A DREAM / JAVON JACKSON / GREG OSBY / MARCUS PRINTUP / SONNY FORTUNE / JACKIE McLEAN / **THE DOKY BROTHERS** / MICHELE ROSEWOMAN / CAECILIE NORBY / …」。**同批的 Charlie Hunter、Pieces of a Dream、Javon Jackson、Marcus Printup 也在同一則廣告裡。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-07-27.pdf"
+   },
+   {
+    "f": "**店面：Apple `695502985`（gb）10 軌，軌名與時長逐軌對得上丹麥盤**（While We Wait 355s／Summertime 395s／My One and Only Love 337s／Children's Song 361s／Teen Town 243s／Hope 382s／Fearless Dreamer 420s／You Never Know 224s／I Feel Pretty 254s／Natural Woman 366s，**十軌全部有預覽**）。⚠ **Apple 的 `releaseDate` 是 `1995-01-01`（年頭回填）**；⚠ **us 市場三種查法全空**（第 1182 條記的「三種查法全空 2 張」之一），**gb 市場才撈得到。**",
+    "src": "https://itunes.apple.com/lookup?id=695502985&entity=song&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "兄弟倆的第一張聯名碟：哥哥彈鋼琴、弟弟拉貝斯，客座是 Brecker 兄弟——一對兄弟檔請了另一對兄弟檔",
+   "1995 年先在丹麥出，隔年三月到日本，到美國 Blue Note 上架已經是 1996 年八月——同一張碟走了一年多才繞回總公司"
+  ],
+  "sound": "十軌，鋼琴與原音貝斯的兄弟檔領銜：Niels Lan Doky 鋼琴兼鍵盤，Chris Minh Doky 原音貝斯。四位鼓手輪替，Ulf Wakenius 彈吉他，Michael Brecker 吹次中音、Randy Brecker 吹小號。四首是 Niels 寫的、一首是 Chris 寫的，其餘是〈Summertime〉〈My One and Only Love〉〈I Feel Pretty〉〈Natural Woman〉這些外來曲，外加 Jaco Pastorius 的〈Teen Town〉。兩軌有人聲客座：第三軌 Curtis Stigers、第九軌 Deborah Brown，其餘八軌純器樂。曲長多在四到七分之間。混音是 ECM 的 Jan Erik Kongshaug。",
+  "keyTracks": [
+   "While We Wait",
+   "Teen Town",
+   "Summertime"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 成立（＝丹麥首發年），本層未改判；⚠ 但策展層「美版 1996」這句是對的，而 Discogs 的美版日期欄是錯的，本層把它推翻。** **首發＝丹麥 1995**：Discogs 5019420／16791705 的盤面 `℗ & © 1995 EMI-Medley, Denmark`＋MB release c2966a0c（1995 DK）＋MB frd 1995。**日版＝1996-03-20**（Discogs 17872465 `released` 欄）。**美版＝1996 年 8–9 月，不是 Discogs 3097729 寫的 `1995-08-00`**——推翻依據兩則，層級都在 Discogs 年份欄之上：**(甲) Billboard 1996-08-24 的新片購物清單，`BLUE NOTE` 欄逐字列 `THE DOKY BROTHERS`**（第 612 條的檔期名單）；**(乙) Billboard 1996-09-07 的 JAZZ 評介，逐字寫 `Blue Note 36909` 且稱之為「the first jointly led date」**。⚠ **第 550／570／708 條在本張中一次：Discogs 的美版 `released` 欄與紙本正面衝突，取紙本。** ⚠ **1994／1995 兩年的六份 Billboard 與 Cash Box 逐期掃 `Doky`／`36909`／`8369092`，美國紙本零命中**——**與「美版要到 1996 才上市」完全同向，不是漏掃。** ⚠ **Apple `695502985` 的 `1995-01-01` 是年頭回填，不能定月。**",
+  "notes": "**覆核策展層：rgMbid 0e000805／丹麥原盤 c2966a0c（`8369092`）／掛名 `Doky Brothers`／年份 1995 全部成立；策展層「美版 1996、MB 沒建」這句本層查實為真**（第 1171 條交主線的資料庫缺口第 4 筆成立）。｜⚠⚠ **本層擋下一處年份風險**：**Discogs 3097729（美版）的 `released` 欄寫 `1995-08-00`，是錯的**——**Billboard 1996-08-24 的新片清單與 1996-09-07 的評介把美版釘在 1996 年 8–9 月**。**正文不得寫「1995 年在美國發行」。**｜⚠ **載體（第 1064 條）**：**Discogs 十二筆條目實掃，1995–1999 年全部是 CD（丹麥／美國／日本／促銷單曲），沒有任何黑膠或卡帶**。**正文不得預設有黑膠原壓。**｜⚠⚠ **編制回核（第 972 條）——本張最容易寫錯的地方**：**丹麥盤 credits 列四位鼓手（Alex Riel／Anders Mogensen／Klaus Suonsaari／Terri Lyne Carrington）而且一個分軌歸屬都沒有**。**正文不得寫「某某打鼓」也不得寫「四重奏／五重奏」**——**只能寫「鼓手由四人輪替」或乾脆不提鼓手**。**固定的只有兄弟倆**：Niels Lan Doky 鋼琴兼鍵盤兼製作人、Chris Minh Doky 原音貝斯兼副製作人。**Michael Brecker 與 Randy Brecker 同樣沒有分軌歸屬，正文不得把他們寫成全盤在場。**｜⚠ **兩位歌手是逐軌客座**：**Curtis Stigers 只唱第 3 軌〈My One And Only Love〉、Deborah Brown 只唱第 9 軌〈I Feel Pretty〉**（tracklist 層的 extraartists 寫死），**其餘八軌純器樂**——**不得寫成「有人聲的專輯」**。｜**盤名**：**取 MB RG 形 `Doky Brothers`**；⚠ **MB 殘件 release 38d06062 的題名寫成 `Doky Brothers 1`**，**那個「1」是 MB 自己加的序號**（兄弟倆 1997 年另有《Doky Brothers 2》，Discogs 4614607／772777），**不進盤名，只進 `queryAlias`**（第 1184 條已定）。｜**撞陳列**：**〈Summertime〉←→ c-152 a 的《The Master II》第 1 軌與《Extra Special Edition》第 11 軌**（同批三卡互指）**與池中多張同名曲碟**；**〈Teen Town〉（Jaco Pastorius 作）←→ 池中 Weather Report 相關卡**；**〈My One and Only Love〉〈I Feel Pretty〉〈Natural Woman〉←→ 池中多張**——**全部同曲不同錄音**（第 1049 條），risk 互指。實掃池中 22,502 列，`Doky Brothers` 掛名僅本卡一張，無撞卡。｜**跨卡（紙本）**：**Billboard 1996-07-27 的 Blue Note 整版廣告同時列出本團與同批的 Charlie Hunter、Pieces of a Dream、Javon Jackson、Marcus Printup**——**可當「1996 年 Blue Note 現役名單」的共同旁證，但正文不得因此把幾張寫成同一個企劃。**｜**封面已有**：CAA RG 層有圖（策展層記有圖）。**試聽已 ready**（Apple 695502985／**gb 市場**，**本層抽核 10 軌全中、時長逐軌吻合、無錯碟**），本層未動；⚠ **us 市場三種查法全空，只有 gb 撈得到。**｜非選輯：單一樂團領銜的原創＋標準曲混合專輯，非合輯。"
+ },
+ {
+  "key": "desc2:T.S. Monk|The Charm",
+  "artist": "T.S. Monk",
+  "album": "The Charm",
+  "facts": [
+   {
+    "f": "release-group 049ceea7 的欄位：title「The Charm」、**artist-credit 是「T.S. Monk III」（Person、2682818f）——不是卡上的 `T.S. Monk`**、first-release-date **1995**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：89b16661（1995 US Official CD 9 軌，Blue Note **`CDP 0777 7 89575 3 2`**，barcode 077778957522）。⚠ **MB 的 catno 鍵入錯**：**寫成 `… 3 2`，Discogs 四筆實體皆 `CDP 0777 7 89575 **2 2**`**（第 1183 條之 4 已記）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=049ceea7-622e-32e5-9e1d-5aa66d736fcd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**美國原盤 CD（Discogs 10307733，US 1995，`CDP 0777 7 89575 2 2`）的盤面註記逐字**：**「Recorded at **Ambient Recording Co[mpany], Sta[m]ford, Connecticut** and **River Sound, New York City**／Mixed at **Sony Music Studios**, New York City／Mastered at **Masterdisk**, New York City」**——**兩個錄音室，不是一個**（Discogs 把 Company 誤打成 Copay、Stamford 誤打成 Stanford）。⚠ **盤面沒有印錄音日期。**",
+    "src": "https://api.discogs.com/releases/10307733"
+   },
+   {
+    "f": "**六重奏，全員固定（Discogs credits 無任何分軌歸屬）**：**T.S. Monk 鼓（兼 `Co-producer`、攝影、編曲）／Don Sickler 小號（兼 `Co-producer`、編曲）／Bobby Porcelli 中音薩克斯風＋長笛（兼編曲）／Willie Williams 次中音＋高音薩克斯風＋長笛／Ronnie Mathews 鋼琴（兼編曲）／Scott Colley 貝斯**。**製作是 T.S. Monk 與 Don Sickler 兩人共同掛 Co-producer，沒有單一主製作人。** 工程 Tom Bender 與 Joe Ferla，混音 Joe Ferla 與 Danny Kadar，母帶 **Greg Calbi**（Masterdisk）。",
+    "src": "https://api.discogs.com/releases/10307733"
+   },
+   {
+    "f": "⚠⚠ **九軌只有一首是他父親的曲子，其餘八首全部出自別人之手**：〈Budini〉**Buddy Montgomery**／〈The Dealer Takes Four〉**Rodgers Grant**／〈Jean Marie〉**Ronnie Mathews**（本盤鋼琴手自己的曲）／〈Marvelous Marvin〉**Marty Sheller**／**〈Bolivar Blues〉Thelonious Monk**／〈The Highest Mountain〉**Clifford Jordan**／〈Rejuvenate〉**Bobby Porcelli**（本盤中音手自己的曲）／〈Just Waiting〉**Melba Liston**／〈Gypsy Folktales〉**Walter Davis Jr.**。**正文不得把本盤寫成「Monk 曲目專輯」。**",
+    "src": "https://api.discogs.com/releases/10307733"
+   },
+   {
+    "f": "⚠ **第 5 軌的曲名有兩形**：**MB 寫 `Ba-lue Bolivar Ba-lues-are`（8:56）**，**Discogs 與 Apple 都寫 `Bolivar Blues`（8:53／536s）**——**同一首 Thelonious Monk 作品的兩個通行盤名**。**本層取盤面／店面通行的 `Bolivar Blues`，MB 的長形進 `queryAlias`。**",
+    "src": "https://itunes.apple.com/lookup?id=1444022325&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "**Blue Note 1995 年 7 月的現貨廣告已列本盤**：Billboard 1995-07-01 的 Blue Note 整版廣告以封面網格排列當期目錄，**`T.S.Monk` 與 catno `89575` 在列**（同網格另有 Dianne Reeves 29511、Javon Jackson 30244、Rachelle Ferrell 27820、Kurt Elling、Charlie Hunter Trio 31809、Marcus Printup 30790、Don Pullen 30271、Joe Lovano 與 Gunther Schuller 29269、Pieces of a Dream 28532、Richard Elliot——**本組九張同時在這一頁上**）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-07-01.pdf"
+   },
+   {
+    "f": "**本盤的曲目在他日後的現場保留節目裡**：Cash Box 1996 年 Playboy Jazz Festival 報導逐字——「Drummer **T.S. Monk** led a group that paused in memory by dedicating **Clifford Jordan's 'The Highest Mountain'** to [Ella] Fitzgerald.」——**〈The Highest Mountain〉正是本盤第 6 軌**（8:00）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1996/CB-1996-09-07.pdf"
+   },
+   {
+    "f": "**店面：Apple `1444022325`（us）9 軌，軌名與時長逐軌對得上 MB 與 Discogs**（Budini 414s／The Dealer Takes Four 280s／Jean Marie 393s／Marvelous Marvin 278s／**Bolivar Blues 536s**／The Highest Mountain 483s／Rejuvenate 310s／Just Waiting 350s／Gypsy Folktales 345s，**九軌全部有預覽**）。⚠ **Apple 的 `artistName` 是 `T.S. Monk`（與本卡同），但 MB 的 artist-credit 是 `T.S. Monk III`、Discogs 的 title 欄印 `T.S. Monk III*`。** ⚠ **`releaseDate` `1995-01-01` 是年頭回填。**",
+    "src": "https://itunes.apple.com/lookup?id=1444022325&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "九首曲子裡只有一首是 Thelonious Monk 寫的——打鼓的是他兒子，選曲卻幾乎都交給 Buddy Montgomery、Clifford Jordan、Melba Liston 這些人",
+   "六個人裡有三個人的曲子在盤上：鋼琴手 Ronnie Mathews、中音手 Bobby Porcelli，加上領班的父親"
+  ],
+  "sound": "九軌的六重奏硬咆勃：小號、中音薩克斯風兼長笛、次中音兼高音薩克斯風兼長笛、鋼琴、貝斯、鼓。T.S. Monk 自己打鼓，不寫曲；九首全是別人的作品，其中兩首出自本團的鋼琴手與中音手，一首是他父親的〈Bolivar Blues〉。曲長從四分半到近九分，〈Bolivar Blues〉與〈The Highest Mountain〉是兩首長的。編曲分給四個人做：領班、小號手 Don Sickler、中音手 Bobby Porcelli、鋼琴手 Ronnie Mathews。錄音分在康乃狄克州 Stamford 的 Ambient Recording 與紐約的 River Sound 兩處，Sony Music Studios 混音。",
+  "keyTracks": [
+   "Budini",
+   "Bolivar Blues",
+   "The Highest Mountain"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 成立，四層同邊，本層未改判。** MB frd 1995＝MB release 89b16661（1995 US）＝**Discogs 四筆實體全部 1995**（US CD 10307733／US 促銷 CD 11317640／US 卡帶 15720774 `B4 0777 7 89575 4 6`／US 促銷卡帶 33754500 `B4-89575`）。**同期紙本**：**Billboard 1995-07-01 的 Blue Note 整版廣告已把 `T.S.Monk` 與 catno `89575` 列在現貨網格裡**（第 612 條的檔期／現貨廣告層級）。⚠ **1994／1995／1996 三年六份紙本逐期掃 `89575` 與 `The Charm`，除這則廣告外沒有評介欄命中**——**本張因此只有一則同期紙本，不足第 431 條的「兩份不同刊物」**，**但廠牌現貨廣告的層級本身就壓過 MB frd 與 Discogs 年份欄**（第 1175 條的對照表），**且四層無一相左**，**本層判成立**。⚠ **Apple `1444022325` 的 `1995-01-01` 是年頭回填，不能定月。** ⚠ **MB 的 catno 鍵入錯（`… 3 2`），Discogs 四筆皆 `… 2 2`**——**這是鍵入錯不是版本差異，不影響年份。**",
+  "notes": "**覆核策展層：rgMbid 049ceea7／原盤 89b16661／掛名 `T.S. Monk`／年份 1995 成立，本張未擋下；⚠ 但第 1177 條的掛名分類要改一格**——**`T.S. Monk` 不是新字串，是沿用**：**實掃池中 22,502 列，c-151 已有兩張 `T.S. Monk`（《Take One》1992、《Changing of the Guard》1993）**，**本卡是第三張**。**掛名字串正確，沿用即可，不得新造分裂。**｜⚠ **MB 的 artist-credit 是 `T.S. Monk III`、Discogs 的 title 欄印 `T.S. Monk III*`、Apple 的 artistName 是 `T.S. Monk`**——**三形並存**，**卡上與池中一律用 `T.S. Monk`**，**`T.S. Monk III` 進 `queryAlias`**。｜⚠ **載體（第 1064 條）**：**Discogs 四筆實體是兩張 CD 與兩捲卡帶，沒有黑膠**；MB 也只建了 CD。**正文不得預設有黑膠原壓。**｜⚠⚠ **本層擋下一處正文風險（曲目歸屬）**：**九軌只有第 5 軌〈Bolivar Blues〉是 Thelonious Monk 的作品**，**其餘八首分別出自 Buddy Montgomery／Rodgers Grant／Ronnie Mathews／Marty Sheller／Clifford Jordan／Bobby Porcelli／Melba Liston／Walter Davis Jr.**。**正文不得寫成「兒子彈父親的曲目」或「Monk 曲集」**——**恰恰相反，這張刻意只放一首父親的曲子。** 另**〈Jean Marie〉是本盤鋼琴手 Ronnie Mathews 自己寫的、〈Rejuvenate〉是本盤中音手 Bobby Porcelli 自己寫的**，寫進正文比寫「Monk 之子」更貼盤。｜⚠ **曲名兩形**：**第 5 軌 MB 作 `Ba-lue Bolivar Ba-lues-are`、Discogs 與 Apple 作 `Bolivar Blues`**——**同一首曲的兩個通行名**。**`keyTracks` 與正文取 `Bolivar Blues`（盤面／店面形），MB 長形進 `queryAlias`。**｜⚠ **錄音（第 609 條）**：**兩個錄音室（Ambient Recording Company, Stamford, CT ＋ River Sound, NYC）**，**正文不得寫成「一個錄音室一天錄完」**；⚠ **盤面沒有印錄音日期，正文不得寫具體日期。**｜**製作人**：**T.S. Monk 與 Don Sickler 兩人同掛 `Co-producer`，沒有單一主製作人**——**不得把任一人單獨寫成製作人。** 母帶 Greg Calbi（Masterdisk），與同批《Bing, Bing, Bing!》同一位母帶師（**旁證而已，兩張碟無關**）。｜**撞陳列**：**〈Bolivar Blues〉←→ 池中 `Thelonious Monk` 22 列**（第 1180 條(三)已記），**並與同批《Quartets》〈Reflections〉、《Rush Hour》〈Crepuscule With Nellie〉、c-152 a《Four in One》《Tenor Legacy》同一串**——**全部同曲不同錄音**（第 1049 條），risk 互指。**〈The Highest Mountain〉←→ 池中 Clifford Jordan 相關卡同理。** 實掃池中 `T.S. Monk` 三張、`Thelonious Monk` 多張，**無撞卡**（盤名《The Charm》池中零列）。｜**封面已有**：CAA RG 層有圖。**試聽已 ready**（Apple 1444022325／us，**本層抽核 9 軌全中、時長逐軌吻合、無錯碟**），本層未動。｜非選輯：單一領班、同一組場次、固定六人編制的專輯。"
+ },
+ {
+  "key": "desc2:Marcus Printup|Song for the Beautiful Woman",
+  "artist": "Marcus Printup",
+  "album": "Song for the Beautiful Woman",
+  "facts": [
+   {
+    "f": "release-group 38bdd901 的欄位：title「Song for the Beautiful Woman」、artist-credit「Marcus Printup」（Person、1dc4b2f8）、first-release-date **1995**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：58ee7945（1995 US Official CD 9 軌，Blue Note `CDP 7243 7 30790 2 5`，barcode 724383079025）。九軌：〈The Inquiry〉6:42〈I Remember April〉7:15〈Song for the Beautiful Woman〉6:37〈Trauma〉6:23〈Presentation〉6:17〈Lonely Heart〉6:12〈Minor Ordeal〉6:50〈Speak Low〉6:47〈Dahomey Dance〉6:35。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=38bdd901-e2aa-4692-af31-ec9e723a5e87&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音是 1994 年 12 月的兩天，不是 1995 年**：**美國原盤 CD（Discogs 9903630，US 1995，`CDP 7243 8 30790 2 5`）的盤面註記逐字「Recorded in New York City on **De[ce]mber 6 & 7, 1994**.」**（Discogs 把 December 打成 Dember），companies 欄 `Recorded At: **Power Station**`、`Mastered At: **Foothill Digital**`。**兩天，不是一天；錄音年 1994、發行年 1995。**",
+    "src": "https://api.discogs.com/releases/9903630"
+   },
+   {
+    "f": "**五重奏，全員固定（Discogs credits 無任何分軌歸屬）**：**Marcus Printup 小號（兼 Producer）／Walter Blanding 次中音薩克斯風／Eric Reed 鋼琴／Reuben Rogers 貝斯／Brian Blade 鼓**。**執行製作是 Blue Note 總裁 Bruce Lundvall 本人**；錄音 Jim Anderson、母帶 Allan Tucker（Foothill Digital）；內頁文字 **Tom Moon**；黑白攝影 Jimmy Katz、彩色攝影 Hugh Hales-Tooke；美術指導 Darcy Cloutier-Fernald、設計 Brigid Pearson。",
+    "src": "https://api.discogs.com/releases/9903630"
+   },
+   {
+    "f": "**簽約與進錄音室的時間，紙本兩則對得起來**：**Billboard 1994-11-19 的爵士欄逐字**「IN THE STUDIO: **Marcus Printup**, the trumpeter who gets my vote for Young Dude With A Bright New Sound Who Must Be Heard (Soon) While He's Still A Young Dude, **is going into the studio to record his first for Blue Note**.」——**與盤面的 1994-12-06／07 完全吻合。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1994/BB-1994-11-19-N.pdf"
+   },
+   {
+    "f": "⚠ **同期紙本自己前後矛盾，要小心引用**：**Billboard 1995-01-21 的照片說明逐字**「Trumpeter **Marcus Printup**, left, and Blue Note president **Bruce Lundvall** joke around after signing an exclusive worldwide recording agreement. Printup, **a recent touring member of the Lincoln Center Jazz Orchestra**, **will start work on his album later this year**.」——**但盤面寫的錄音日是 1994-12-06／07，碟早就錄完了**。**「will start work on his album later this year」是新聞稿的滯後用語，不得採信為錄音時程。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-01-21.pdf"
+   },
+   {
+    "f": "**Billboard 1995-07-01 的 JAZZ 評介逐字**：「○ **MARCUS PRINTUP** — Song For The Beautiful Woman — PRODUCER: Marcus Printup — **Blue Note 30790** — **Solo debut** for hot young traditional jazz trumpeter Marcus Printup is a solid set of Printup originals and select covers that **features pianist Eric Reed and tenor saxophonist Walter Blanding**. Standout tracks include the boppish blues of '**The Inquiry**,' the graceful, elongated melody lines of the **title track**, the muted tristesse of the downtempo '**Lonely Heart**,' the wild, funky harmonies of '**Minor Ordeal**,' and the majestic modal bl[ues]…」——**同期並有 Blue Note 整版廣告把 `arcus … rintu` 與 catno `30790` 列在現貨網格裡。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1995/BB-1995-07-01.pdf"
+   },
+   {
+    "f": "**店面：Apple `716326053`（us）9 軌，軌名與時長逐軌對得上 MB 與 Discogs**（The Inquiry 402s／I Remember April 435s／Song for the Beautiful Woman 397s／Trauma 383s／Presentation 377s／Lonely Heart 372s／Minor Ordeal 410s／Speak Low 407s／Dahomey Dance 394s，**九軌全部有預覽**）。⚠ **Apple 的 `releaseDate` 是 `1994-01-01`**——**年份標成 1994、日期是年頭回填**（第 1182 條記的「錯一年」那一類），**剛好與錄音年同值，純屬巧合，不得拿它當「1994 年發行」的旁證。**",
+    "src": "https://itunes.apple.com/lookup?id=716326053&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "⚠ **Apple 的候選頁曾混進別人的碟**（第 1182 條記的兩次之一）：以 `artist=Marcus Printup` 掃 Discogs 三十一筆，**同頁混有 `Riza Printup, Marcus Printup — Gentle Rain`（Denmark 2020）與 `Tim Hagans & Marcus Printup — Hubsongs`（1998）**，**兩者都不是本盤**。**本盤在 Discogs 上只有三筆：9903630（US）、37430727（US 促銷）、16247972（Europe），全部 1995、全部 CD。**",
+    "src": "https://api.discogs.com/database/search?artist=Marcus+Printup&type=release"
+   }
+  ],
+  "hookCandidates": [
+   "1994 年 12 月 6 日與 7 日兩天錄完，執行製作那一欄簽的是 Blue Note 總裁本人——一張首作能讓 Bruce Lundvall 親自掛名的並不多",
+   "九首裡六首是自己寫的，剩下三首挑了〈I Remember April〉〈Speak Low〉和 Coltrane 的〈Dahomey Dance〉——最後那首把整張碟從標準曲拉回硬咆勃"
+  ],
+  "sound": "九軌的五重奏：小號、次中音薩克斯風、鋼琴、貝斯、鼓。六首是 Printup 自己的曲，三首是外來曲——〈I Remember April〉、Kurt Weill 的〈Speak Low〉、Coltrane 的〈Dahomey Dance〉。九軌的長度幾乎一致，全部落在六分十二秒到七分十五秒之間，整張碟的節奏很平。1994 年 12 月 6 日與 7 日兩天在紐約 Power Station 錄。領班自己製作，執行製作是廠牌總裁。",
+  "keyTracks": [
+   "The Inquiry",
+   "Song for the Beautiful Woman",
+   "Dahomey Dance"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 成立，本層未改判，證據鏈完整。** MB frd 1995＝MB release 58ee7945（1995 US）＝**Discogs 三筆實體全部 1995**（US 9903630／US 促銷 37430727／Europe 16247972）。**同期紙本兩則獨立**（第 431 條）：**Billboard 1995-07-01 的 JAZZ 評介（逐字寫 `Blue Note 30790`、稱之為 solo debut）** ＋ **同期同刊的 Blue Note 整版現貨廣告（catno 30790 在網格裡）**；另有 **Billboard 1994-11-19「is going into the studio to record his first for Blue Note」** 與盤面的 **1994-12-06／07** 兩個時點互相扣住。**上市取 1995 年年中（評介週 7 月初回推）。** ⚠ **錄音 1994-12-06／07 只寫正文，正文不得寫成「1994 年的專輯」。** ⚠⚠ **Apple `716326053` 的 releaseDate `1994-01-01` 標錯一年**（第 1182 條），**它剛好等於錄音年，特別容易被當成佐證，不得採用。** ⚠ **Billboard 1995-01-21 照片說明的「will start work on his album later this year」與盤面錄音日衝突**——**那是新聞稿滯後用語，不採信。**",
+  "notes": "**覆核策展層：rgMbid 38bdd901／原盤 58ee7945／`CDP 7243 7 30790 2 5`／掛名 `Marcus Printup`／年份 1995 全部成立，本張未擋下。**｜⚠ **載體（第 1064 條）**：**Discogs 三筆與 MB 一筆全部是 CD，沒有黑膠也沒有卡帶**。**正文不得預設有黑膠原壓。**｜⚠ **錄音日期（第 609 條）**：**1994 年 12 月 6 日與 7 日，兩天**，紐約 **Power Station**；母帶 **Foothill Digital**（Allan Tucker）。**正文不得寫成一天錄完，也不得把錄音年寫成 1995。**｜**編制五人、全員固定、無分軌歸屬**：**Printup 小號／Walter Blanding 次中音／Eric Reed 鋼琴／Reuben Rogers 貝斯／Brian Blade 鼓**——**Billboard 評介只點名 Eric Reed 與 Walter Blanding 兩位**，**Rogers 與 Blade 要從盤面 credits 取**。**製作人＝Printup 本人；執行製作＝Bruce Lundvall（Blue Note 總裁）**，**兩個角色不得互換**。⚠ **本盤與 Wynton Marsalis 沒有任何 credit 關係**——**Printup 當時是 Lincoln Center Jazz Orchestra 的巡演團員**（Billboard 1995-01-21 說明逐字），**但那是履歷不是本盤的編制，正文不得把 Marsalis 寫進來。**｜⚠ **Apple 的候選頁給過錯碟**（第 528／707／709 條）：**同名家族的 `Riza Printup` 2020 年碟與 1998 年的《Hubsongs》會混進同一頁**——**本層以九軌時長逐軌核過，`716326053` 確為本盤。**｜**撞陳列**：**〈Dahomey Dance〉（Coltrane 作）←→ 池中多張 Coltrane 卡**，**並與同批《Quartets》的〈Lonnie's Lament〉〈26-2〉同一串**；**〈I Remember April〉〈Speak Low〉←→ 池中多張標準曲碟**——**全部同曲不同錄音**（第 1049 條），risk 互指。實掃池中 22,502 列，`Marcus Printup` 掛名僅本卡一張，盤名零撞。｜**跨卡**：**Printup 的第二張 Blue Note《Unveiled》（37302，1996-08-06）不在本批**（Billboard 1996-05-25 與 1996-08-24 有預告與評介），**正文不得預告續作。**｜**封面已有**：CAA RG 層有圖。**試聽已 ready**（Apple 716326053／us，**本層抽核 9 軌全中、時長逐軌吻合、無錯碟**），本層未動。｜非選輯：單一領班、兩天同一組場次的專輯。"
+ }
+]
