@@ -1353,3 +1353,38 @@ Carnegie Hall performance were found in the Library of Congress**」（**判 (�
   **`nascimento` 的 2 次命中是別人翻唱他的〈Ponta de Areia〉**（三者皆第 1250 條的人名／盤名假陽性）。
 
 **到此合計覆蓋：Billboard 1955→2008 全年（2005 由 c-159 a、2006 由 c-159 b、2007 由 c-160 a、2008 由 c-161 a 抓；2005 缺 3 期、2006／2007／2008 各缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+---
+
+## 2026-09-18 再追加（c-161 **b 組**策展層自抓：**Billboard 2009 年全年**）
+
+- **檔案**：`batch-progress/enum/billboard-bn-2009-ocr.txt.gz`（**1.2 MiB 壓縮／2.7 MiB 原文**，**50 期**、**309 命中頁**、**零 PARSE-FAIL**）。
+- **格式、目錄與檔名與 2003–2008 那幾份完全相同**：`Billboard/00s/2009/`、`BB-YYYY-MM-DD.pdf`（週六）。
+- **缺 2 期**：`BB-2009-01-03`（404，**元旦那週的第一期在 worldradiohistory 上普遍不存在**，與 2001／2003／2004 同形）與 `BB-2009-12-26`（404）。
+- **抽字法**：照第 1542 條用 `pymupdf` 抽文字層，**沒有跑 OCR**；「枚舉當年週六 ＋ `Range: bytes=0-64` 探測」在本線是**第九次**生效。全年 50 期下載＋抽字約**三分半鐘**。
+- ⚠ ⚠ **本棒同時推翻了策展簡報第二節的一句話**：簡報逐字寫「**Billboard 的 worldradiohistory 檔案到 2000 年代初就不完整**」、c-161 的派工信逐字寫「2008 以後沒人抓過……主線判斷不值得為這一組抓」。
+  **實測四次 `Range: bytes=0-64` 探測，`BB-2008-08-16`／`BB-2009-03-28`／`BB-2009-09-05`／`BB-2010-01-16` 全部回 `206`**
+  ——**2008／2009／2010 的 PDF 都還在，URL 形狀與 2003–07 完全相同。**⚠ **2008 已由 c-161 a 入庫（見上一節）；2010 年以後還沒有人抓。**
+- **關鍵字集（約 90 個）**：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／`traditional jazz`／
+  `lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`emi music japan`／`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／
+  `blue note label group`／`/blg`／`blg`／`emi jazz`）＋ c-161 b 的 22 個藝人名與盤名
+  ＋ 目錄號片段（`10331`／`67197`／`84802`／`87102`／`91528`／`28103`／`36957`／`09878`／`93125`／`83362`／`65180`／`93875`／`49170`／`98911`／
+  `26657`／`26916`／`09172`／`49378`／`08278`／`72500`／`27906`／`46199`）。
+  ⚠ **查別的 2009 年碟要重抓或放寬關鍵字**（與 2003–08 那幾份相同的限制）。
+- ⚠ ⚠ **2009 年對本線的產出比 2007 年好得多，但差別不在年份而在國別**：**c-161 b 收下的 18 張裡 7 張有命中（5 個街頭日、4 組榜位、3 篇專文／預告／新聞），
+  而 5 張美國盤是 100% 命中、13 張歐陸／日本盤只有 1 張有命中（而且講的是別的碟）。**第 1664 條「先數清單裡有幾張美國盤，再決定要不要花時間」在本組第三次成立。**
+- ⚠ **2009 年最有用的五處**：
+  **`BB-2009-06-20` p36 的 Reviews 欄逐字「FREDDIE HUBBARD｜Without a Song: Live in Europe 1969｜Producers: Sonny Lester, Michael Cuscuna｜Blue Note｜Release Date: June 2」
+  ＋ 同頁正文逐字「the **previously unreleased** "Without a Song: Live in Europe 1969" ... **Resurrected last year from the Blue Note vaults**」**（**c-161 b 唯一一筆 (甲) 的第一層證據，rulings 第 1731 條**）；
+  **`BB-2009-03-28` p29 逐字「WYNTON MARSALIS｜He and She｜Producer: Jeff Jones｜Blue Note｜Release Date: March 24」**（另有 Top Jazz Albums 三期，廠牌欄逐字 `HE AND SHE BLUE NOTE 10331 /BLG`）；
+  **`BB-2009-06-13` p34 逐字「JOE LOVANO US FIVE｜Folk Art｜Producer: Joe Lovano｜Blue Note｜Release Date: May 19」＋「his 21st Blue Note CD」**（另有 `06-06` p61 的榜位逐字 `FOLK ART BLUE NOTE 91528 /BLG`）；
+  **`BB-2009-08-22` p32 逐字「WILLIE NELSON｜American Classic｜Producer: Tommy LiPuma｜Blue Note Records｜Release Date: Aug. 25」**
+  （另有 `BB-2009-05-23` p33 的發行預告逐字 `AUG. 25`、`BB-2009-08-29` p49 的整段分析、**Billboard 200 最高第 43 名**、Top Country Albums 四期，廠牌欄逐字 `SHANGRI-LA/BLUE NOTE 67197/BLG (17.98)`）；
+  **`BB-2009-01-17` p33 逐字「ELIANE ELIAS｜Bossa Nova Stories｜Producers: Eliane Elias, Steve Rodby｜Blue Note｜Release Date: Jan. 13」**
+  （另有 Top Jazz Albums 七期，逐字 `BOSSA NOVA STORIES BLUE NOTE 28103 /BLG`，其中 `02-28` p45 逐字 `RE-ENTRY`；⚠ **那是美版街頭日，該碟的真正首發是 2008-05-28 的日版 TOCJ-68081，見 rulings 第 1696 條**）。
+- ⚠ **查無也要記（2009 全年 0 命中）**：`onishi`／`musical moments`／`china moses`／`oosterhuis`／`traincha`／`never can say goodbye`（命中的全是 Gloria Gaynor 與 Jackson 5 的舊條目）／
+  `alsmann`／`engel oder teufel`／`fresu`／`uri caine`／`avishai`／`quasimode`／`mode of blue`／`daybreak`／`hindi zahra`／`handmade`／`this is the season`／`plays live`／`bags & suitcases`；
+  **`starke` 唯一 1 次命中是 `BB-2009-04-04` p12 的荷蘭 Edison 獎新聞逐字「EMI/Blue Note R&B singer/songwriter Sabrina Starke was best new artist」——講的是她 2009 年的前一張碟，不是 2010 年的《Bags & Suitcases》**；
+  **`chano` 唯一 1 次命中是 `BB-2009-07-04` p39 的 JVC 爵士節節目表逐字「JUNE 30: Stevie Wonder, Wynton Marsalis and the Jazz at Lincoln Center Orchestra with pianist Chano Dominguez」——講的是一場演出，不是那張 2010 年的碟**（第 1250 條「查得到人、查不到碟」）；
+  **`36957`（Freddie Hubbard 的目錄號）全年 0 命中——那張碟有評介、沒有榜位。**
+- **到此合計覆蓋：Billboard 1955→2009 全年**（2005 缺 3 期、2006／2007／2008 各缺 1 期、**2009 缺 2 期**，其餘無斷點）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2010 以後尚未抓。**
