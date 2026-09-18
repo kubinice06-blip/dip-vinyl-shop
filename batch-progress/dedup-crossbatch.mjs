@@ -113,6 +113,58 @@ for (const [, v] of seen) {
 for (const d of dupMbid)
   console.log(`⚠ 同 rgMbid 不同掛名：${d.b} ${d.c.artist}《${d.c.album}》 ←→ ${d.prev.b} ${d.prev.c.artist}《${d.prev.c.album}》（${d.id}）`);
 
+// 2026-09-18（c-148 b 組第 936 條）：**上面兩道都是「鍵相等」或「rgMbid 相等」，
+// 對「同一張碟被寫成兩個不同盤名字串」完全無感**。c-148 b 那批 `chk-prop` 標記 0，
+// 實際卻有四筆撞到已在池中或已進卡單的碟——
+// 《State of the Tenor Vol. 1》對上 seed 裡寫法不同的同一張、
+// 《Cafe Bohemia Vol. I》對上 seed 的 BLP 1524、
+// 《The Song of Singing》對上 c-143 卡單（MB 為同一張碟建了兩個 RG，rgMbid 也不同）。
+// 這裡補第三道：**同一個掛名底下，兩個盤名的實詞互相包含就報**。
+// 只報不擋，而且**只看還在策展中的批次（prop 來源）那一側**——
+// 已定稿的卡單彼此比對會把 Vol. 1／Vol. 2 這類正常系列整批印出來，淹掉真的。
+// 第一版用「盤名互為子字串」，對真正的案例無效：
+// seed 是《'Round About Midnight at the Cafe Bohemia》、提案是《Cafe Bohemia Vol. I》，
+// 剝完標點後 `cafebohemiavoli` 不是前者的子字串（卡在 `voli` 那個尾巴）。
+// 改成**詞元包含**：短的那個盤名的「實詞」若全都出現在長的那個裡面就報。
+// 實詞＝長度 ≥4 的詞，**扣掉卷次詞與序數**（vol／volume／part／one…、純數字與羅馬數字）
+// ——正是這些尾巴讓字串比對失效的。至少要有兩個實詞才報，否則同掛名同主題的碟會整片亮。
+const STOP = new Set(['vol', 'volume', 'part', 'pt', 'live', 'the', 'and', 'with', 'complete',
+  'one', 'two', 'three', 'four', 'five', 'first', 'second', 'third', 'sessions', 'session']);
+const ROMAN = /^[ivxlcdm]+$/;
+const tokens = s => String(s || '')
+  .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase().split(/[^\p{L}\p{N}]+/u)
+  .filter(w => w && !STOP.has(w) && !/^\d+$/.test(w) && !ROMAN.test(w) && Array.from(w).length >= 4);
+const liveRows = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'))
+    .map(r => ({ artist: r[0], album: r[1], b: '線上池' })); } catch { return []; }
+})();
+const propSide = [...seen.values()].filter(v => propBatches.includes(v.b) && !cardBatches.includes(v.b))
+  .map(v => ({ artist: v.c.artist, album: v.c.album, b: v.b }));
+const otherSide = [...[...seen.values()].map(v => ({ artist: v.c.artist, album: v.c.album, b: v.b })), ...liveRows];
+const byArtist = new Map();
+for (const r of otherSide) {
+  const a = strip(r.artist);
+  if (!a) continue;
+  if (!byArtist.has(a)) byArtist.set(a, []);
+  byArtist.get(a).push(r);
+}
+const subHits = [];
+for (const r of propSide) {
+  const a = strip(r.artist), t = strip(r.album), tt = tokens(r.album);
+  if (tt.length < 2) continue;
+  for (const o of byArtist.get(a) || []) {
+    const u = strip(o.album);
+    if (!u || u === t) continue;                 // 完全相等的那道上面已經報過
+    const ut = tokens(o.album);
+    if (ut.length < 2) continue;
+    const [short, long] = tt.length <= ut.length ? [tt, ut] : [ut, tt];
+    if (short.every(w => long.includes(w)))
+      subHits.push(`⚠ 同掛名盤名詞元包含（只報不擋）：${r.b} ${r.artist}《${r.album}》 ←→ ${o.b} ${o.artist}《${o.album}》`);
+  }
+}
+for (const line of [...new Set(subHits)]) console.log(line);
+
 for (const d of dupKnown)
   console.log(`（已知，本機已擋：${d.b} ${d.c.artist}《${d.c.album}》 ←→ ${d.prev.b}；待本機標記後從 dedup-known.json 移除）`);
 for (const d of dup)
@@ -123,5 +175,5 @@ if (skipped.length) {
   console.log(`  若該批正在被策展代理覆寫，這是併行寫入的半成品，重跑一次即可；`);
   console.log(`  若沒有代理在跑，那就是 prop 檔真的壞了，要去看。`);
 }
-console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}｜同 rgMbid 不同掛名 ${dupMbid.length}（只報不擋）`);
+console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}｜同 rgMbid 不同掛名 ${dupMbid.length}｜同掛名盤名詞元包含 ${new Set(subHits).size}（後兩項只報不擋）`);
 process.exit(dup.length ? 1 : 0);
