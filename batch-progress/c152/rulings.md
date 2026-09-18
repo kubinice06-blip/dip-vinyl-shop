@@ -1010,3 +1010,67 @@ c-151 b 第 1118 條立的事實：**Blue Note 1994 年新設 `Contemporary Reco
 **且大西順子那張 4LP 只收 4 軌，不可當原盤。**
 另新查到一則廠牌前瞻名單（第 1175 條）：**Billboard 1994-07-02 p45 的 `COMING THIS FALL` 欄
 同時列出本組三張**（Four in One／Manhattan Moods／The Place to Be）。
+
+## 第 1191 條（主線，研究 b 組查出）：**四處事實訂正，其中兩處推翻本批自己先前寫的**
+
+1. ⚠ **第 1180 條(三)要改**：**Javon Jackson〈Etcetera〉的作曲者是 Caetano Veloso，不是 Wayne Shorter**
+   （Discogs 美／荷兩筆 tracklist 一致）——**與池中 `Wayne Shorter —《Etcetera》` 只是同名字串、連同一首曲都不是。**
+   **真正該互指的是本盤第 3 軌〈Angola〉。**
+2. ⚠ **第 1174 條的引用不成立**：「Billboard 1994-07-02 p45 廣告已列 MOSE ALLISON 27640」複查為假
+   （該頁列的是 Lena Horne 28974／Javon Jackson 89678／Rubalcaba 28264／Everette Harp 89297／Kevin Hays 89679）。
+   **不影響結論**，已在卡上註明不採用。
+3. ⚠ **Discogs 的 `released` 欄再錯一次**：Doky Brothers 美版寫 `1995-08-00` 是錯的
+   ——Billboard 1996-08-24 新片清單與 1996-09-07 評介把美版釘在 1996 年 8–9 月。
+   **卡單 1995 ＝丹麥 EMI-Medley 首發，不動。**
+4. ⚠ **《Bang! Zoom》定案 1995**（第 1176 條要的那條找到了）：
+   **Billboard 1995-08-26 `SHOPPING LIST` 的 `BLUE NOTE` 格逐字列 `BOBBY McFERRIN, Bang Zoom`**，
+   加上**日版 TOCJ-5945 硬日期 1995-12-06**——**可從「維持但留反向證據」升格為定案。**
+
+⚠ **另外兩則年份的硬證據形狀值得記**：
+**Mose Allison 1994** ——Billboard 1994-03-19 **錄音室欄**記 Ben Sidran 已在 DB Plus 做完母帶，
+與盤面 `Mastered At: DB Plus` 交叉吻合，**1995 在物理上講不通**；
+**Ferrell 1990** ——日版 TOCJ-5520 **盤面壓片碼 `X-90.6.19 C.6.20`**。
+**「錄音室欄」與「壓片碼」是這一段新開出來的兩種證據，階序上等同同期紙本。**
+
+## 第 1192 條（主線）：**撞陳列四件，其中兩件是新形狀**
+
+1. **Pullen〈Kele Mou Bana〉撞的不是一軌，是三軌**：與池中 c-150 b《Kele Mou Bana》比——
+   〈Kele Mou Bana〉864s vs 693s、〈Capoeira〉798s vs 425s、〈Yebino Spring〉997s vs 533s。
+   **現場版全部顯著長於錄音室版，同曲不同錄音、無母帶重疊，兩卡並存、risk 互指。**
+2. **Donaldson〈Alligator Boogaloo〉**：本盤 1970-11-07 現場 13:15，**五個位置只有領班與池中 1967 原盤同一人**。
+   ⚠ **Apple 把本盤軌名拼成 `Alligator Bogaloo`（一個 o），與池中卡的盤名一模一樣**
+   ——**上架比對務必帶 catno 31876。**
+3. **新形狀（第 1181 條第六種盲區）**：**Pieces of a Dream 第 3 軌軌名〈After Dark〉＝同批 a 組的卡名
+   `Richard Elliot —《After Dark》`**。兩者同為 Blue Note Contemporary 線、只差一年
+   ——**逐軌核過為同名不同曲**，risk 互指。
+4. **Rubalcaba〈Mima〉是池中第三版**：本盤 **172s**（1994-06-24 Wadsworth Hall）vs《The Blessing》**187s**
+   vs《Images》——**三卡互指。**
+
+## 第 1193 條（主線）：**交出一筆資料庫缺口：Lena Horne《We'll Be Together Again》**
+
+**Lena Horne 本盤第 14 軌〈We'll Be Together Again〉＝她自己前一張 Blue Note 專輯的盤名**
+（**Blue Note 28974，1994**，Top Jazz 在榜 28 週以上）
+——**實掃池中 22,502 列，那張零列、也不在本線任何清單上。**
+**建議補建卡，`year` 取 1994。**
+
+## 第 1194 條（主線）：**載體與軌目**
+
+- **15 張完全沒有黑膠**（CD／卡帶）；**3 張 1995 年黑膠 CD 都有**（Boogaloo／Kofi／The Scorpion，皆 Rare Groove）；
+  **2 張只有後世再發黑膠**（Bing, Bing, Bing! 2022；**Quartets 2014／2015，而且把雙 CD 拆成
+  `Volume 1`／`Volume 2` 兩張分開發——已加進 `queryAlias`**）。
+- **第 609 條**：**Kofi 黑膠 4 軌／CD 5 軌**（〈The Loud Minority〉CD 專屬，2024 Classic Vinyl 再發同樣 4 軌印證）；
+  **The Scorpion 黑膠 4 軌／CD 6 軌**（〈Peepin'〉〈Foot Pattin' Time〉CD 專屬）；Boogaloo 黑膠 CD 同為 6 軌。
+
+## 第 1195 條（主線）：**編制回核擋下 44 處，19 張卡上有 ⚠⚠**
+
+主要形狀仍是**第 1069／1189 條那個**：「只上一兩軌的客座被當常設團員」
+（Elling 的 Von Freeman 只吹第 4 軌、McFerrin 的 Scott Wendholt 只在〈Selim〉、
+**Lena Horne 的 Count Basie Orchestra 只上 16 軌中的 5 軌**）。
+**這一批另開出五種新形狀**：
+- **樂器寫錯**：Mose Allison 的 Joe Lovano 吹的是**中音**不是次中音（次中音另有 Bob Malach）。
+- **整組班底不同的租借母帶**：Ferrell〈Autumn Leaves〉是**向 Blue Note 租來的現場母帶**。
+- **領班兼任別的樂器**：Rush Hour 的 Lovano **自己在三軌打鼓**。
+- **一張碟其實是兩個沒有交集的團**：**Quartets 兩張碟是兩個四重奏**
+  （⚠ **而 Billboard 1996-03-09 的評介把兩碟寫反了**）。
+- **封套貼紙與盤面 credits 打架**：Lena Horne 封套燙金貼紙寫的
+  `featuring DONALD HARRISON on tenor saxophone`，**盤面 credits 查無**。
