@@ -837,3 +837,40 @@ Don Grolnick《Complete Blue Note Recordings》、Jimmy McGriff《Tribute to Bas
 **「只存命中頁」的策略會漏掉「關鍵字在標題圖上、內文沒出現」的第一頁**——**引用專文時要記得去翻續頁指向的那一頁。**
 
 **到此合計覆蓋：Billboard 1955→1997 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。1998 年起兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-154 **b 組**策展層自抓：**Billboard 1998 年全年**）
+
+**本棒 22 筆裡有 12 筆的年份落在 1998**（Greg Osby《Banned in New York》與《Zero》、Jacky Terrasson《Alive》、
+Lena Horne《Being Myself》、Mark Shim《Mind Over Matter》、Prysm《Second Rhythm》、Sherman Irby《Big Mama's Biscuits》、
+José Luis Cortés《Veneno》、Stan Kenton《Standards in Silhouette》、The Dave Pell Octet《I Had the Craziest Dream》、
+Johnny Mandel & Bill Holman《Theme Music From "The James Dean Story"》等），
+**而此前 repo 的覆蓋是「Billboard 1955→1997 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」——1998 年沒有人掃過**
+（c-153 b 第 1243 條末句點名的那一格），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1998-ocr.txt.gz` | **2.2 MiB 壓縮 / 5.0 MiB 原文** | **1998-01-10 → 1998-12-26，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **517** | **1998-01-03（索引頁上沒有這一期，1998 年第一期就是 01-10）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。**
+- **原文 5.0 MiB 雖低於 8 MiB 的壓縮門檻，仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致。
+
+⚠ ⚠ **1998 年的路徑與檔名（本棒實測，照第 1091／1127 條先抓索引頁 grep，沒有按日期硬拼）**：
+**目錄是 `Billboard/90s/1998/`**；**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`**
+——**與 1997 年（50 期 `Billboard-` ＋ 只有 04-12 一期 `BB-`）相反，回到 1996 年的形狀。**
+⚠ **同目錄下另有 `BB1998.pdf` 與 `Billboard-Buyer´s-Guide-1998.pdf` 兩個非週刊檔**
+（**後者的檔名帶一個非 ASCII 的 `´`**），**抓的時候要排掉。**
+
+⚠ **關鍵字集是為 c-154 b 的 22 筆量身配的**（70 個詞 ＋ 目錄號片段 `49686`／`96860`／`93760`／`57302`／`57184`／
+`56586`／`55817`／`56680`／`57150`／`54876`／`55330`／`53068`／`95445`／`94503`／`98164`／`23545` 等，
+另含 `blue note`／`blue nole`／`slue note`／`bine note`／`capitol jazz`／`top jazz`／`top jall`／`jall albums`／
+`jazz albums`／`contemporary jazz`／`traditional jazz`／`michael cuscuna`／`bruce lundvall`／`toshiba emi`／`tocj` 等通用詞）
+——**查別的 1998 年碟一定要重抓或放寬關鍵字。**
+
+⚠ **1998 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 1998 仍成立）：`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+**`Jazz → Jall／JAll／Jail` 的 OCR 形變到 1998 年還在**（本棒實見 `Top Jail Albums`）。
+
+⚠ ⚠ **本棒實測的一個新查詢坑**：**查 `osby` 會得到 218 則命中，其中絕大多數是 `Crosby`／`Cosby`（Bing Crosby、David Crosby、Bill Cosby）**
+——**短姓氏是別人的子字串時，一定要用全名查**（`greg osby`）。
+
+**到此合計覆蓋：Billboard 1955→1998 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。1999 年起兩刊都還沒有人掃。**

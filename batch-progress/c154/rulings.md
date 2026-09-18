@@ -362,3 +362,315 @@
 `BST 84103` ↔《Congo Lament》／《Easy Living》那一組）。
 
 **驗證**：用合成 prop 重現本組那一筆，**三個目錄號全中**（`CDP724385546624`／`TOCJ5571`／barcode）。
+
+---
+
+# c-154 b 組裁定（編號 1290–1319）
+
+本段為 **c-154 b 組**（22 筆，1997–98 年的 Blue Note）策展層的裁定，編號 **1290–1303**
+（派工信給的區間是 1290–1319，**1304–1319 未用**）。
+**a 組寫的第 1260–1274 條一字未改**，本段只在檔尾 append。
+判準沿用 **c-153 第 1202＋1233 條的四句版**、**第 1232 條的 `TOCJ-` 兩欄判法**、
+**同批 a 組第 1267 條（翻唱整張專輯不是合輯）與第 1268 條（曲風不隨便加第二個）**。
+
+---
+
+## 第 1290 條（c-154 b 交件）：**22 筆 → 收 16、退 6；退件全部集中在「1957–58 年母體的 CD 化」與「MB 同碟兩個 RG」兩種形狀，`chk-prop` 一個燈都沒亮**
+
+- **收 16 張、15 位**（`Greg Osby` 兩張）：Everette Harp《What's Going On》1997、Pete La Roca《SwingTime》1997、
+  Ronnie Laws《Tribute to the Legendary Eddie Harris》1997、Kevin Hays《Andalucia》1997、
+  Javon Jackson《Good People》1997、Lee Konitz《Alone Together》1997（現場）、
+  Dexter Gordon《The Squirrel》1997（現場、庫存首發）、
+  Jacky Terrasson & Cassandra Wilson《Rendezvous》1997、Greg Osby《Banned in New York》1998（現場）、
+  Greg Osby《Zero》1998、Jacky Terrasson《Alive》1998（現場）、**José Luis Cortés《Veneno》1997（年份改判，見第 1292 條）**、
+  Lena Horne《Being Myself》1998、Mark Shim《Mind Over Matter》1998、Prysm《Second Rhythm》1998、
+  Sherman Irby《Big Mama's Biscuits》1998。
+- **退 6**（第 1291 條）：Art Blakey《Orgy in Rhythm, Volumes One & Two》、Kenny Burrell《Blue Lights, Volumes 1 & 2》、
+  Greg Osby《Banned in New York (Live at Sweet Basil) (1998)》、
+  Johnny Mandel & Bill Holman《Theme Music From "The James Dean Story"…》、
+  Stan Kenton《Standards in Silhouette》、The Dave Pell Octet《I Had the Craziest Dream》。
+  **退貨率 27%。**
+- **第 315 條：16 ＋ 退表 6 ＝ 22 ✓。** `node batch-progress/c154/chk-prop.mjs b` → **標記 0**
+  （117 批、4,758 卡、跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、**共用目錄號 0**——
+  a 組第 1274 條新補的第四道也乾淨）。
+- **現場盤 4 張**（Alone Together／The Squirrel／Banned in New York／Alive），**其中 1 張是 MB 與列舉檔都沒標、本層自己判的**（第 1294 條）。
+- **年份改判 1 張**（第 1292 條）：`Veneno` **1998 → 1997**。**覆核成立、不改的 15 張**也在第 1292 條列出。
+- **掛名**：沿用 9、收攏 4、新字串 2、聯名新造 1（**順序與 MB 相反**）、**新造分裂 0**（第 1293 條）。
+- **`genres`：13 張 `['jazz']`、2 張 `['jazz','soul']`、1 張 `['jazz','world']`**（第 1296 條）。
+- **紙本**：**1997 年直接用 c-153 b 已入庫的 51 期**（第 1271 條說的「為別批配的關鍵字集覆蓋率比預期高」在本組再次成立）；
+  **1998 年沒有人掃過，本棒自抓全年 51 期並入庫**（第 1301 條）。
+
+---
+
+## 第 1291 條（同批）：**退表 6 筆，逐筆與理由分類**
+
+| # | 盤 | rgMbid | 目錄號／日期 | 理由分類 | 證據 |
+|---|---|---|---|---|---|
+| 1 | **Art Blakey —《Orgy in Rhythm, Volumes One & Two》** | `40bb780a-ede4-4eb9-9345-22a9fd33fb1a` | **CDP 7243 8 56586 2 4**／1997-06-17 | **CD 化再發 ＋ 撞池 ＋ ⚠ 與 c-153 b 已退的是同一張碟（MB 兩個 RG）** | ⚠ ⚠ **這一筆 c-153 b 已經退過一次**：**第 1231 條第 4 筆退的 `c66ab03d-32e0-46ea-8ab9-d942091b56b8` 與本筆 `40bb780a` 是同一張碟**——**同目錄號 `CDP 7243 8 56586 2 4`、同 barcode `724385658624`、同八軌**（Buhaina Chant／Ya Ya／Toffi／Split Skins／Amuck／Elephant Walk／Come Out and Meet Me Tonight／Abdallah's Delight）。**列舉檔把兩個 RG 都當成獨立的碟，分別切進 c-153 b 與 c-154 b 兩批**（第 1294 條）。理由完全照 c-153 b：**母體是 1957／1959 年的 `BLP 1554`＋`BLP 1555`**（Discogs 1069780 notes 逐字「Originally issued on BLP 1554 & 1555 as Volumes One and Two.」、`format` 欄逐字 `CD, Compilation, Limited Edition, Stereo, Mono`），**池中已有《Orgy in Rhythm, Volume One》（seed＋c-137 a）與《Volume Two》（seed＋c-136 b）兩張**，**第 1202 條 (乙)**。**Apple 723693662 的 releaseDate `1957-01-01`、℗ 1997；CAA RG 層 3 圖；`upc 724385658624` 查法零命中。** |
+| 2 | **Kenny Burrell —《Blue Lights, Volumes 1 & 2》** | `ba2b65ad-c9f6-4fe9-9696-d06c59c1ce22` | **CDP 7243 8 57184 2 7**／1997-07-15 | **CD 化再發（母體是 1958 年的 `BLP 1596`／`BLP 1597`）＋ 撞池** | **雙碟 5＋4 軌**（碟一 Phinupi／Yes Baby／Scotch Blues／The Man I Love／I Never Knew；碟二 Caravan／Chuckin'／Rock Salt／Autumn in New York）——**正好就是 1958 年兩張 12 吋 LP 的內容**。⚠ ⚠ **Discogs 兩筆條目（美 3630060／歐 4029178）的 `format` 欄逐字都是 `CD, Compilation, Stereo`／`CD, Compilation`**——**與第 1 筆同形**。⚠ ⚠ **而且撞池**：**池中已有 `Kenny Burrell —《Blue Lights, Volume 1》(1958, seed＋c-137 a)` 與 `《Blue Lights, Volume 2》(1961, seed＋c-137 a)` 兩張**。⚠ **`chk-prop` 沒亮燈**：池中兩張的盤名帶 `, Volume 1/2` 後綴、本筆是 `, Volumes 1 & 2`，**折鍵不同**（第 611 條那五種盲區裡的「合卷碟撞不到分卷碟」，**與第 1 筆同一種，本組一批中兩次**）。⚠ **Apple 724548201 的 releaseDate `1958-05-14`（＝第一場錄音日）、copyright `℗ 1989 Blue Note`**——**店面自己把它標回 1958，而且 ℗ 年是 1989 年那次 CD 化的**。**CAA RG 層 11 圖（本組最多）。** |
+| 3 | **Greg Osby —《Banned in New York (Live at Sweet Basil) (1998)》** | `9d2ae2ee-dbd6-47b1-8f20-deb480b0d9ee` | 無目錄號／1998 XW | ⚠ **重複 RG（與本組第 11 筆是同一張碟）** | **release `fd7cd1b3` 與本組收下的 `8c8c6fbd` 同 barcode `724349686021`、同六軌逐軌同名**（13th Floor／Pent Up House／I Didn't Know About You／Big Foot／Big Foot (excerpt)／52nd Street Theme），**只有第 6 軌長度差 426 毫秒**。**Apple 用同一個 UPC 只回一個 724905061。****本層收 `241408f6`（列舉檔另一筆釘的 rgMbid，有國別 US、有完整發行日 1998-12-01），退本筆。**⚠ **但本筆有一個欄位比較對**：**它的 `secondary-types` 是 `["Live"]`，收下的那個 RG 是空的**——**現場的事實從這一筆拿走，寫進收下那張卡的 risk**（第 1294 條）。**CAA RG 層 0 圖（收下的那個 RG 有 4 圖）。** |
+| 4 | **Johnny Mandel & Bill Holman —《Theme Music From "The James Dean Story" featuring Chet Baker & Bud Shank》** | `32681521-9f41-3bf7-8f54-293755918d4b` | **TOCJ-6242**／1998-03-06 JP | **CD 化再發 ＋ ⚠ 1998 那一層根本不是 Blue Note 發行** | **母體是 1957 年的 `World Pacific P-2005`**（Discogs 3115198，US 1957 `Vinyl, LP, Album`），掛名逐字 `Chet Baker & Bud Shank`，Leith Stevens 的電影配樂由 Johnny Mandel 與 Bill Holman 改編。**1998 年那一筆是東芝 EMI 的日本復刻**：**Discogs 8088973 的廠牌欄逐字 `Pacific Jazz` ＋系列名 `ジャズ名盤物語`、`format` 欄 `CD, Album, Mono`**——**廠牌是 Pacific Jazz，不是 Blue Note**（派工信：**Capitol／Manhattan／Pacific Jazz 不算**）。**MB 把它拉進本線的唯一理由是數位那一筆 `285b0e92` 的 label-info 寫了 `Blue Note`**（2000 年 Pacific Jazz CD `0777 7 95251 2 6` 的數位層）。⚠ **沒有走第 1202 條 (丙)**：**(丙) 的前提是「這一次是本線的 Blue Note 發行、母體在他廠」**；**本筆這一次也不是 Blue Note 發行**，**兩頭都不在本線上**（第 1295 條）。⚠ **掛名也全錯**：**MB 掛兩位編曲者 `Johnny Mandel & Bill Holman`，Discogs 與 Apple 都掛 `Chet Baker & Bud Shank`**——**池中 `Chet Baker` 26 列、`Bud Shank`／`Johnny Mandel`／`Bill Holman` 皆 0 列**；**這張 1957 年的碟若要進池，該走 Chet Baker 的線、不是 Blue Note 1985 後這條線。****Apple 724677622 releaseDate `1957-01-01`、℗ 2000 Capitol；CAA RG 層 2 圖。** |
+| 5 | **Stan Kenton —《Standards in Silhouette》** | `4130a7c6-17ab-3b4e-8fdf-1538fed86248` | **CDP 7243 4 94503 2 5**／1998 | **CD 化再發 ＋ 1998 那一層是 Capitol Jazz 不是 Blue Note** | **母體是 1959 年錄、1960 年發的 `Capitol T 1394`／`ST 1394`**（Discogs 4544463／5046130／8031091／6672913／12717220／13173018 六筆原壓，九軌 Willow Weep for Me／The Thrill Is Gone／The Meaning of the Blues／When Sunny Gets Blue／Ill Wind／Django／I Get Along Without You Very Well／Lonely Woman／Lazy Afternoon 與本筆逐軌一字不差）。**1998 年那一筆 Discogs 7049174／5339827 的廠牌欄逐字 `Capitol Jazz`、`format` 欄逐字 `CD, Album, Reissue, Remastered, Stereo`**。⚠ **MB 的 `642b03a4`（1998 US，label-info 寫 `Blue Note`、無目錄號）是把它拉進本線的那一筆**——**同 RG 的另一筆 `8d9ba4c9` 自己就寫著 `Capitol Jazz / CDP 7243 4 94503 2 2 5`**（第 1302 條）。**Apple 723508447 releaseDate `1959-01-01`、℗ 1998 Blue Note（店面把 ℗ 掛成 Blue Note，是唯一支持它的來源，不足以推翻實體盤的廠牌欄）。**⚠ **Billboard 1998 全年（本棒自抓 51 期）查 `kenton`（10 則）、`silhouette`、`94503` 三種查法都沒有本碟的再發報導**——**中價再發不進紙本是預期的**。**CAA RG 層 6 圖。** |
+| 6 | **The Dave Pell Octet —《I Had the Craziest Dream》** | `b2716ec3-9671-3585-9b0d-83df46e47952` | **CDP 7243 4 95445 2 9**／1998-09-08 | **CD 化再發 ＋ 1998 那一層是 Capitol Jazz 不是 Blue Note** | **母體是 1958 年的 `Capitol T925`**（Discogs 3171444 US 1958、19090123 UK、21333223 AU、33604851 CA 四筆原壓）。**1998 年那一筆 Discogs 6826927（US `CDP 7243 4 95445 2 9`）／6686062（UK & Europe `7243 4 95445 2 9`）的廠牌欄逐字都是 `Capitol Jazz`、`format` 欄 `CD, Album, Reissue`**。**MB 那筆 71dbdbd1 登 17 軌**——**原 LP 是十二軌，多出的五軌是同期別場的 bonus**（Discogs 上 2014 年 Salt-n-Pepper 的 `Full Album Plus Bonus Tracks 1957` 是同一批材料），**即使走 (丁) 也要先過「這一次是 Blue Note 發行」那一關，它過不了。**⚠ **Apple 三種查法都沒有 1998 Capitol Jazz 版**，只有 2013 AVID／2014 Salt-n-Pepper／Record Vault 等第三方復刻（releaseDate 1957／1958）——**店面自己把母體標回 1950 年代**。⚠ **Billboard 1998 查 `dave pell`／`craziest`／`95445` 三種查法零命中。****CAA RG 層 0 圖。** |
+
+**⚠ 六張沒有一張被 `chk-prop` 標記**（第 611／1089／1157／1170／1201／1230 條，**1985 後第八組連續成立**）。**抓出來的方法**：
+**第 1／2 筆是「盤名帶 `Volumes … & …`」＋Discogs `format` 欄的 `Compilation`**；
+**第 3 筆是「同 barcode、同軌目」**（第 1294 條）；
+**第 4／5／6 筆是「去 Discogs 讀 1998 年那一層的廠牌欄，發現它不是 Blue Note」**（第 1295 條）。
+
+**交主線的資料庫缺口**（第 1114 條(甲)／第 1141／1171／1201／1231 條的續筆）：
+
+| 母體 | 原盤年 | 現況 |
+|---|---|---|
+| `BLP 1554`／`BLP 1555`（Orgy in Rhythm Vol. 1／2） | 1957／1959 | **池中已有兩張分卷卡**；1997 年的合卷 CD **有兩個 MB RG**，兩個都已退（c-153 b 一個、本組一個）。 |
+| `BLP 1596`／`BLP 1597`（Blue Lights Vol. 1／2） | 1958 | **池中已有兩張分卷卡**；1997 年的合卷雙碟 CD 已退。 |
+| `World Pacific P-2005`（Theme Music From "The James Dean Story"） | **1957** | **池中沒有**，**掛名應為 `Chet Baker & Bud Shank`（池中 `Chet Baker` 26 列）**——**要收要走 Chet Baker 的線，不是本線。** |
+| `Capitol T 1394 / ST 1394`（Standards in Silhouette） | **1959 錄／1960 發** | **池中 `Stan Kenton` 只有 seed 兩張**（New Concepts of Artistry in Rhythm／Cuban Fire!）——**要收要走 Capitol 的線。** |
+| `Capitol T925`（I Had the Craziest Dream） | **1958** | **池中 `Dave Pell` 零列**——同上。 |
+
+---
+
+## 第 1292 條（同批）：**年份——改判 1 張、覆核成立 15 張**
+
+| 盤 | 列舉檔／MB 的說法 | 本層取 | 依據 |
+|---|---|---|---|
+| **`José Luis Cortés —《Veneno》`** | MB frd **1998-09-08**；唯一一筆 release 也是 1998 | **1997** | **第 1202 條 (丙)**：**母體是 1997 年古巴的 `El Inspector De La Salsa／Caribe Productions CD-9497`**（Discogs 12789383，**master 1452534 的 main release、master year 1997**，十一軌），**1998 年的歐版 13101771 companies 欄逐字 `Caribe Productions Inc. – Licensed From`／`EMI-Odeon, S.A. – Licensed To`**、美版 10548990 掛 **Metro Blue**（Blue Note 的世界音樂副廠）。**同一張碟、同一個形狀（1998 年只多一軌同曲的 radio edit）→ 取他廠首發年 1997、`label` 寫原廠。**⚠ **反向證據留著**：1997 那筆的 `format` 欄帶 `Remastered`、notes 逐字「Masterizado Digital」——**有可能更早還有一版，但 Discogs 上查無**。 |
+
+**覆核成立、不改的 15 張**（列出來省得下一批重查）：
+《What's Going On》1997（**Billboard 1997-01-18 p35 逐字「set to issue its first three titles March 11」**＋02-22 p79 單曲評介＋**04-19 起連續在 TOP CONTEMPORARY JAZZ ALBUMS，最高第 6**）、
+《SwingTime》1997（MB frd＋Discogs 四筆＋**Apple releaseDate `1997-07-31` 帶完整月日**；**紙本只有 01-25 p42 的簽約消息**）、
+《Tribute to the Legendary Eddie Harris》1997（**Billboard 1997-06-28 p32 逐字「the early April release」**＋同期 p33 全版廣告列目錄號 55330）、
+《Andalucia》1997（**1997-05-10 p39 專欄預告（含 Belden 引言）**＋06-28 p33 廣告「#55817」＋Discogs 兩筆）、
+《Good People》1997（**MB frd `1997-06-02` 帶月日**＋Discogs 三筆＋Apple ℗ 1997；**紙本無評介無榜位**）、
+《Alone Together》1997（**MB frd `1997-11-04`**＋**Apple `1997-10-23` 帶月日**＋Discogs 四筆＋日版 TOCJ-6154 登 1997-11-27）、
+《The Squirrel》1997（**MB frd 與 Discogs `released` 都是 `1997-08-12`**；**紙本零命中，丹麥授權盤不進美國紙本是預期的**）、
+《Rendezvous》1997（**Billboard 1997-10-04 p185 評介**＋**TOP JAZZ ALBUMS 11-01～12-27 連續在榜、最高第 4**＋08-30 p72 業務會議報導）、
+《Banned in New York》1998（**MB frd `1998-12-01`**＋**Billboard 1998-11-14 p87 Lundvall 專文逐字「will follow in December and January」**＋**11-28 p101 已有評介**）、
+《Zero》1998（MB frd＋Discogs 四筆＋盤面 ℗ 1998；**紙本只有 12-12 p70 的年度名單**；**發行月無來源，不得寫死**）、
+《Alive》1998（**MB frd `1998-05-19` 帶月日**＋**1998-06-27 p43 Blue Note 全版廣告逐字「JACKY TERRASSON Alive!」**；錄音 1997-06-14）、
+《Being Myself》1998（**MB frd `1998-06-02`**＋**1998-06-20 p36 整篇專文**＋**TOP JAZZ ALBUMS 06-27 第 8 名起連續四期**）、
+《Mind Over Matter》1998（**MB frd `1998-01-27` 與 Billboard 1998-01-31 p61 逐字「hits the stores Tuesday (27)」完全對上**——**本組證據最硬的一筆**）、
+《Second Rhythm》1998（**MB frd `1998-02-09` FR**＋Discogs 法版 1998；**美版要到 1999 才上市**，`year` 取實體首發年 1998）、
+《Big Mama's Biscuits》1998（**MB frd `1998-08-11`**＋**1998-08-22 p96 線上評介**＋06-27 p43 廣告；Discogs 與 Apple 的 `1998-09-18` 是第二個日期，同年不影響）。
+
+⚠ **本組沒有任何一張是「日本先出」**——**第 1063／1066／1133 條的固定動作（先查 TOCJ 再下首發地結論）本組做了四次**
+（`TOCJ-6138` SwingTime／`TOCJ-6150` Good People／`TOCJ-6154` Alone Together／`TOCJ-6198` Alive／`TOCJ-6096` Rendezvous），
+**五筆全部晚於或等於美版**；**其中 `TOCJ-6096` 還是 `Promotion`（宣傳盤，13 軌）**——**宣傳盤的日期不能拿來推首發地**（新立，見第 1297 條）。
+
+---
+
+## 第 1293 條（同批）：**掛名——沿用 9、收攏 4、新字串 2、聯名新造 1（順序與 MB 相反）、新造分裂 0**
+
+### （一）沿用池中既有字串 9（共 10 張卡）
+
+`Everette Harp`（c-151 b 1 張）、`Ronnie Laws`（seed 4＋c-144 b／c-145 b 2 張）、`Kevin Hays`（c-152 a／c-153 a 2 張）、
+`Javon Jackson`（c-151 b／c-152 b／c-153 b 3 張）、`Dexter Gordon`（seed 19＋c-131／c-145／c-147／c-150 四張）、
+`Greg Osby`（c-150 a／c-151 a／c-152 a／c-153 b ＋**同批 a 組《Further Ado》**，**本組兩張**）、
+`Lena Horne`（c-152 b 1 張）、`Prysm`（c-152 b 1 張，**Discogs 的 `Prysm (2)` 是消歧義編號、不進掛名**——照 c-152 b 先例）、
+`Sherman Irby`（**同批 a 組《Full Circle》**——**兩張卡必須同字串**）。
+
+### （二）收攏 4
+
+| MB／盤面 credit | 卡上掛名 | 收攏的理由 |
+|---|---|---|
+| **`Pete (LaRoca) Sims`（列舉檔／盤面）／`Pete La Roca, SwingTime (2)`（Discogs）／`Pete (Laroca) Sims`（Apple）** | **`Pete La Roca`** | **四個來源四種寫法**，**MB RG credit 本身就是 `Pete La Roca`（da386a16）**，**池中 seed＋c-140 a《Basra》同字串**——第 307 條。⚠ **`SwingTime` 在這張上既是盤名也是 Discogs 的第二位掛名**，**不得當成既存樂團。** |
+| **`Lee Konitz, Brad Mehldau & Charlie Haden`**（MB 三個 Person 並列，Discogs／Apple 同） | **`Lee Konitz`** | ⚠ **本批最需要說明的一筆**：**同批 a 組的《Another Shade of Blue》（1999，同三人、同 Jazz Bakery、同封面畫家）MB 只掛 `Lee Konitz`，a 組已照池中 5 列既有字串立卡**。**若本張用三人聯名，池中就會為同一個三重奏的兩張碟留下兩個字串**——**依第 307／543／553 條收攏。**三人並列形進 queryAlias。**⚠ 若主線要改用三人聯名，本張與 a 組那張必須一起改**（＝c-153 a 處理 Kenny Cox 的同一句話）。 |
+| **`The Jacky Terrasson Trio`**（Discogs 美歐日四筆） | **`Jacky Terrasson`** | MB RG credit 就是 `Jacky Terrasson`（be3142ae），池中 2 列同字串——**與第 1208 條把 `The Michel Petrucciani Trio` 收攏成 `Michel Petrucciani` 同一條先例。** |
+| **`José Luis Cortés Y NG La Banda`**（Discogs 兩筆） | **`José Luis Cortés`** | MB 只掛 Cortés（64606371），**池中零列、無先例可沿用**，依第 543／553 條收攏到領班字串；`Y NG La Banda` 形進 queryAlias。 |
+
+### （三）新字串 2（池中皆 0 列，漢字／羅馬字／片假名三形都掃過）
+
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Mark Shim`** | 26dfe5ce Person | **MB 同字串沒有第二個實體。**⚠ **但紙本層有干擾**：**Billboard 1998 查 `mark shim` 的十則命中有四則是 LaFace Records 總裁 `Mark Shimmel`**——**日後查證要擋掉 `Shimmel`**（第 1235 條 `Bob Dorough` vs `Howie Dorough` 同形，**本線第二次**）。 |
+| **`José Luis Cortés`** | 64606371 Person／CU | 同字串單一實體。⚠ **變音符是上架風險**（第 1235 條(三) 的 `æ`／`Ö` 之後本線第三種）：**`José`／`Jose` × `Cortés`／`Cortes` 四形都要掃**；曲名裡另有 `Cucalambé`／`Pregón`。 |
+
+### （四）聯名新造 1
+
+**`Jacky Terrasson & Cassandra Wilson`**（be3142ae Person ＋ join ` & ` ＋ eb6595d3 Person）——**不是新造分裂**：
+兩個字串都是池中既有的多數寫法（`Jacky Terrasson` 2 列、`Cassandra Wilson` 2 列），本層只是照盤面用 `&` 接起來
+（＝第 1235 條(四) `Charlie Parker & Dizzy Gillespie` 的同一種處理）。
+⚠ ⚠ **但順序與 MB 相反，這是本層的改判**：**MB RG credit 是「Cassandra Wilson & Jacky Terrasson」、列舉檔照抄**；
+**Discogs 美版 artists_sort 逐字 `Jacky Terrasson And Cassandra Wilson`、Apple jp 印〈ジャッキー・テラソン & カサンドラ・ウィルソン〉、
+Billboard 的評介標題（1997-10-04 p185）與 TOP JAZZ ALBUMS 榜欄連續六期逐字都印 `JACKY TERRASSON & CASSANDRA WILSON`**
+——**三個獨立來源（盤面／店面／同期紙本）一致，只有 MB 相反**，**階序上紙本 ＞ MB**。**改的是卡單值、可逆。**
+⚠ **`chk-prop` 的折鍵不會把兩種順序折成同鍵**，上架時兩形都要掃。
+
+### （五）新造分裂 0。
+
+---
+
+## 第 1294 條（同批，**重要；把第 936／1130 條的「MB 同碟兩個 RG」做成可操作的檢查**）：**本組一批中兩次，而且兩次都是列舉檔把兩個 RG 當成兩張碟切進清單**
+
+| | **Art Blakey《Orgy in Rhythm》** | **Greg Osby《Banned in New York》** |
+|---|---|---|
+| 兩個 RG | `c66ab03d`（**c-153 b 的清單**）與 `40bb780a`（**c-154 b 的清單**） | `241408f6` 與 `9d2ae2ee`（**同一批、同一組的清單裡連著兩筆**） |
+| 盤名 | 「Orgy In Rhythm」 vs 「Orgy in Rhythm, Volumes One & Two」 | 「Banned in New York」 vs 「Banned in New York (Live at Sweet Basil) (1998)」 |
+| **barcode** | **724385658624 ＝ 724385658624** | **724349686021 ＝ 724349686021** |
+| **軌目** | **八軌逐軌同名** | **六軌逐軌同名（第 6 軌長度差 426 毫秒）** |
+| 欄位差異 | 一個有日期一個沒有 | **一個有國別與完整日期、`secondary-types` 空；另一個沒國別、`secondary-types=["Live"]`** |
+| 處理 | 兩批各退一次（本組第 1291 條第 1 筆） | **收有國別那個、退另一個，但把 `Live` 的事實搬到收下那張卡的 risk** |
+
+**→ 三句給後批：**
+1. ⚠ **`chk-prop` 抓不到這種**（它比 rgMbid 與「掛名＋盤名」字串，**兩個 RG 的 rgMbid 不同、盤名一長一短**）
+   ——**唯一可靠的鍵是 barcode ＋ 軌目**。**建議主線把 barcode 加進 `dedup-crossbatch` 的第五道**（a 組第 1274 條剛加了目錄號那一道，**barcode 是它的自然延伸；本組的兩筆 MB 都沒有目錄號、只有 barcode，目錄號那一道抓不到**）。
+2. ⚠ **兩個 RG 的欄位是互補的，不是一個對一個錯**——**退掉的那個可能帶著唯一正確的 `secondary-types`**。
+   **退之前要先把它的欄位讀完**（本組的 Osby 就是這樣才判出現場盤）。
+3. ⚠ **列舉檔沒有折這種重複**（它折的是十個再發系列）——**同一批清單裡出現「盤名互為前綴」的兩筆，先比 barcode。**
+
+---
+
+## 第 1295 條（同批，**重要；新立**）：**1997–98 年出現一種新的退件形狀——「Capitol Jazz／Pacific Jazz 的中價再發」，它連第 1202 條的門都進不去**
+
+**第 1202 條的四句問的是「母體在哪」**；**本組的第 4／5／6 筆要先問前一個問題：「這一次是不是本線的 Blue Note 發行？」**
+
+| 筆 | 1998 年那一層的廠牌欄（Discogs 實體盤） | MB 怎麼說 | 判 |
+|---|---|---|---|
+| 《Theme Music From "The James Dean Story"》 | **`Pacific Jazz` ＋系列名 `ジャズ名盤物語`**（TOCJ-6242） | 數位那筆 label-info 寫 `Blue Note` | **退** |
+| 《Standards in Silhouette》 | **`Capitol Jazz`**（CDP 7243 4 94503 2 5） | 另一筆 label-info 寫 `Blue Note`、無目錄號 | **退** |
+| 《I Had the Craziest Dream》 | **`Capitol Jazz`**（CDP 7243 4 95445 2 9） | label-info 只有 `Blue Note` | **退** |
+
+**判準寫成一句**：**派工信的「子廠牌算 Blue Note（Blue Note Contemporary、Somethin' Else、EAU）；Capitol／Manhattan／Pacific Jazz 不算」
+是一道前置閘，不是第 1202 條的一部分**——**先看這一次的實體盤廠牌欄，再談母體。**
+⚠ **反例也要記**：**本組收下的《Veneno》美版掛 `Metro Blue`**——**那是 Blue Note 1994 年開的世界音樂副廠，算 Blue Note**
+（與 Somethin' Else／Blue Note Contemporary 同理）。**分界不是「EMI 體系內」，是「掛不掛 Blue Note 這個名字」。**
+⚠ **為什麼這三張會進清單**：**MB 的 label-info 在 1996 年之後普遍只寫廠牌名、不寫目錄號**（第 1237 條(3)／第 1241 條），
+**而數位再發那一層的權利廠牌常常被登成 `Blue Note`**——**列舉檔忠實抄了 MB**（第 1302 條）。
+**→ 給後批：1997 年之後的清單，凡是 `catno` 欄空的，先去 Discogs 讀那一版的廠牌欄。**
+
+---
+
+## 第 1296 條（同批）：**曲風——13 張 `['jazz']`、2 張 `['jazz','soul']`、1 張 `['jazz','world']`；判準是「同掛名的池中先例」優先於「這張聽起來像什麼」**
+
+| 盤 | 判 | 理由 |
+|---|---|---|
+| **Everette Harp《What's Going On》** | **`['jazz']`** | ⚠ **本層一度寫成 `['jazz','soul']`（整張翻 Marvin Gaye 的靈魂樂名盤），改回 `['jazz']`**：**池中同掛名的 c-151 b《Common Ground》是 `['jazz']`**，**而且同批 a 組第 1268 條剛立「邊緣的都收、都不加第二曲風」**（同系列的 Charlie Hunter《Natty Dread》翻 Bob Marley、Fareed Haque《Deja Vu》翻 CSNY，**a 組兩張都給 `['jazz']`**）——**同一個系列的三張碟不能有兩種曲風寫法。** |
+| **Ronnie Laws《Tribute to the Legendary Eddie Harris》** | **`['jazz','soul']`** | **池中同掛名兩張（c-144 b《Fever》、c-145 b《Every Generation》）都是 `['jazz','soul']`**——**照同掛名先例，不動。** |
+| **José Luis Cortés《Veneno》** | **`['jazz','world']`** | **這不是爵士盤，是古巴 timba 舞曲**；**給第二曲風的理由與第 1207 條的 Us3 同形：行為體本身就屬於另一個曲風**（NG La Banda 是 timba 開派團），**不是 a 組第 1268 條那種「爵士圈的人做了邊緣的東西」**。**保留 `jazz` 的理由是 Cortés 的 Irakere 出身與全張的銅管寫法。**若主線要改成純 `['world']`，可逆。 |
+
+**→ 判準順序（本條新立）：1. 同掛名的池中先例 ＞ 2. 同系列／同批的姊妹卡 ＞ 3. 行為體本身的曲風歸屬 ＞ 4. 這張聽起來像什麼。**
+
+---
+
+## 第 1297 條（同批，**新立**）：**`Promotion` 盤的日期不能拿來推首發地**
+
+**《Rendezvous》的 MB frd 是 `1997-08-20`，那是日本盤 `TOCJ-6096` 的日期，比美版的 `1997-09` 早**
+——**照第 1063／1066／1133 條的慣例，這正是「日本先出」的形狀**。**但 MB 把那一筆的 status 標成 `Promotion`（宣傳盤，13 軌，比零售的 11 軌多兩軌）。**
+**宣傳盤是發行前的媒體用盤，早於零售是常態，不構成「首發地是日本」。**
+**本層因此把首發地判在美國、`year` 取 1997（同年，不影響）。**
+**→ 給後批：查 TOCJ 的固定動作要多一步——`status` 是不是 `Official`。`Promotion` 的日期只能當「不晚於」的下界。**
+
+---
+
+## 第 1298 條（同批）：**撞陳列——7 組要逐軌核，其中 1 組是「同日錄音但完全不相干」**
+
+| 組 | 關係 | 逐軌比對結果 |
+|---|---|---|
+| ⚠ **Kevin Hays《Andalucia》 ×《Alone Together》** | **錄音日逐日相同：1996 年 12 月 21 與 22 日** | **一個是紐約錄音室三重奏（Carter／DeJohnette）、一個是洛杉磯 Jazz Bakery 現場（Mehldau／Haden）**，**班底與曲目零重疊**——**第 431 條：逐日相符不等於同一個來源。兩卡 risk 互指。** |
+| **《Alone Together》× a 組《Another Shade of Blue》** | 同三人、同場地、同錄音師、同封面畫家 | **不同年的兩個檔期（1996-12 vs 1997-12），六軌 vs 五軌零重疊**，兩卡 risk 互指。**另要擋 ECM 2011《Live at Birdland》（同三人＋Motian）。** |
+| **Osby《Zero》×《Banned in New York》** | 同年、共用 Jason Moran 與 Rodney Green | 一張錄音室原創、一張現場 bebop 曲目，**逐軌零重疊**，兩卡 risk 互指。 |
+| **Terrasson《Alive》×《Rendezvous》× c-152 b 同名首作** | 同人、同製作人 Bob Belden、同 Clinton Recording Studio（前兩張） | 三張的曲目逐軌比對零重疊；**首作與《Alive》是同一個三重奏（Terrasson／Okegwo／Parker）**，**班底同、曲目不同**。 |
+| **Prysm《Second Rhythm》× c-152 b《Prysm》** | 同團 | **曲目零重疊**；⚠ **真正的陷阱是首作的 Blue Note 再發（1998-06-15 `4955882 3`）與本張同年同廠**——**上架只用「Prysm＋Blue Note＋1998」會把兩張混在一起，必須帶 catno。** |
+| **Lena Horne《Being Myself》× c-152 b《An Evening With…》** | 同人、同一批標準曲庫 | **Discogs 兩張軌名逐字比對零重疊**（1995 那張以百老匯與 Ellington 曲為主）。 |
+| **Dexter Gordon《The Squirrel》× Black Lion／SteepleChase 的 Montmartre 1967 一脈** | 同場地、同年 | **本張是 1967-06-29 的丹麥廣播帶（Kenny Drew／Bo Stief／Art Taylor）**，**Black Lion 那一批是 1967-07-20**——**不同日、不同帶子、四首曲目不重疊。** |
+
+⚠ **另有三張的同名曲在池中數十張碟上都有**（〈Take the "A" Train〉／〈Autumn in New York〉／〈Willow Weep for Me〉／〈Body and Soul〉）
+——**第 1049 條：同名不同錄音，比對以掛名＋catno 為準，比完照收。**
+
+---
+
+## 第 1299 條（同批，**重要**）：**編制欄——16 張裡有 6 張必須寫成「逐軌變動」，其中 1 張 Discogs 已經幫我們標好了**
+
+**第 1069／1189 條說策展層最常見的錯是「把只在某幾軌出現的編制寫成整張的固定編制」。本組的分布：**
+
+| 盤 | 為什麼要寫「逐軌變動」 |
+|---|---|
+| **Sherman Irby《Big Mama's Biscuits》** | ⚠ ⚠ **Discogs 2166020 的逐軌 credits 寫得一清二楚**：**James Hurt 只在第 3／6／11 軌掛吉他、第 4 軌掛鋼琴；Dana Murray 只在第 4／10 軌；Roy Hargrove 只在第 4 軌**——**全張的只有 Irby／Cannon／Barbaro 三人**。**這是本組唯一一張「來源已經幫你標好」的，其餘五張是推論。** |
+| **Mark Shim《Mind Over Matter》** | **Billboard 1998-01-31 逐字 `alternating drummers Eric Harland and Ralph Peterson`**——**輪替不是同時**；Peterson 在〈Dumplin'〉還多掛一把小號。 |
+| **Ronnie Laws《Tribute…》** | **兩個鼓手、兩把貝斯、兩把小號並列，Patrice Rushen 只掛 `Piano [Solo]`**，Discogs 無逐軌標示。 |
+| **Everette Harp《What's Going On》** | **八名合聲＋整組管樂＋四個錄音室**，不可能每軌都在。 |
+| **Greg Osby《Zero》** | **兩個貝斯手並列（Burno／Plaxico）、Moran 掛三種鍵盤。** |
+| **Jacky Terrasson & Cassandra Wilson《Rendezvous》** | **Discogs 把 Kenny Davis 的貝斯掛在〈Chan's Song〉那一軌下**，**Plaxico／Cinelu 幾乎確定不是全張都在**——**主體是人聲＋鋼琴。** |
+
+**可以寫成固定編制的只有 3 張**：**Kevin Hays《Andalucia》**（credits 只有四人）、**Prysm《Second Rhythm》**（三人、無客座）、
+**Jacky Terrasson《Alive》**（現場雙軌直錄、三人、無客座）。
+⚠ **Lena Horne《Being Myself》是第四種情況：Discogs 的 credits 與 notes 整個是空的**
+——**除了 Billboard 點名的 Rodney Jones 與「Ruth Brown 樂隊的幾位成員」之外查不到任何人名**，**寫作層不得自行補。**
+
+---
+
+## 第 1300 條（同批）：**Apple 在 1997–98 年這一段的四種歪法，本組各中多次**
+
+| 歪法 | 本組實例 |
+|---|---|
+| **1. releaseDate 回填成年頭 `YYYY-01-01`** | 《What's Going On》（實際 03-11）、《Good People》（實際 06-02）、《Banned in New York》（**實際 12-01，差十一個月**）、《Zero》、《Being Myself》（實際 06-02）——**五張。** |
+| **2. releaseDate 整整標歪一年** | **《Tribute to the Legendary Eddie Harris》與《Andalucia》都標 `1996-01-01`，copyright 卻都是 `℗ 1997`**——**第 1234 條末段那個「第五種歪法」在本組兩次，而且是同一年同一廠的連號碟。** |
+| **3. copyright 寫的是後來的重發年** | **《The Squirrel》兩筆都寫 `℗ 2001 Parlophone Music Denmark`**（1997 Blue Note 首發）；**《Blue Lights Vols 1&2》寫 `℗ 1989`**（1997 CD）。 |
+| **4. releaseDate 抓的是錄音日或母體年** | **《Orgy in Rhythm》`1957-01-01`、《Blue Lights》`1958-05-14`、《James Dean Story》`1957-01-01`、《Standards in Silhouette》`1959-01-01`**——**四張退件裡店面自己把年份標回母體，反而成了退的旁證**（第 1141 條第四種抓法，本組第四次命中）。 |
+| ⚠ **5.（本組新增）日期莫名其妙** | **《Mind Over Matter》標 `1998-06-27`，實際是 1998-01-27（Billboard 逐字）**——**看起來像把 `01-27` 與同年六月某個日期混了。** |
+
+**→ 給後批：這一段 Apple 唯一可用的欄位是 `copyright` 的年，而且只有當它與 MB frd 或盤面同年時才有證據力（第 1234 條末段）。**
+
+---
+
+## 第 1301 條（同批）：**本棒自抓 Billboard 1998 全年（51 期），並 append 進 `SOURCES-billboard-cashbox.md`**
+
+- **為什麼要抓**：**本組 22 筆裡有 12 筆的年份落在 1998**，**而此前 repo 的覆蓋是「Billboard 1955→1997 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」**——**1998 年沒有人掃過**（c-153 b 第 1243 條末句點名的那一格）。
+- **檔**：`batch-progress/enum/billboard-bn-1998-ocr.txt.gz`，**2.2 MiB 壓縮 / 5.0 MiB 原文**，
+  **1998-01-10 → 1998-12-26 共 51 期，零 FETCH-FAIL、零 PARSE-FAIL，命中頁 517**。
+  **原文低於 8 MiB 的壓縮門檻，仍存成 `.txt.gz`**（與 `enum/` 裡其他 1990 年代的檔一致；repo 是 Cloudflare Pages 部署來源）。
+- ⚠ **1998 年的路徑與檔名（本棒實測，照第 1091／1127 條先抓索引頁 grep，沒有按日期硬拼）**：
+  **目錄是 `Billboard/90s/1998/`**，**全年 51 期毫無例外地都是 `BB-YYYY-MM-DD.pdf`**
+  ——**與 1997 年（50 期 `Billboard-` ＋ 1 期 `BB-`）相反，回到 1996 年的形狀**。
+  ⚠ **1998 年的第一期是 01-10 不是 01-03**（索引頁上沒有更早的），**全年 51 期不是 52 期**——**與 1997（首期 01-11）、2002（首期 01-12）同形**。
+  ⚠ **同目錄下另有 `BB1998.pdf` 與 `Billboard-Buyer´s-Guide-1998.pdf` 兩個非週刊檔**（**後者的檔名帶一個非 ASCII 的 `´`**），**抓的時候要排掉。**
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **關鍵字集是為本組 22 筆量身配的**（70 個詞 ＋ 目錄號片段 `49686`／`96860`／`93760`／`57302`／`57184`／`56586`／`55817`／`56680`／`57150`／`54876`／`55330`／`53068`／`95445`／`94503` 等）——**查別的 1998 年碟一定要重抓或放寬關鍵字。**
+- ⚠ **1998 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 1998 仍成立）：`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+  **`Jazz → Jall／JAll` 的 OCR 形變到 1998 年還在**（`Top Jail Albums` 也出現過）。
+- ⚠ ⚠ **本棒實測的一個新 OCR 坑**：**`Crosby` 會整串吃掉 `osby` 的查詢**——**查 `osby` 得到 218 則命中，其中絕大多數是 Bing Crosby／David Crosby／Bill Cosby**。**查 Greg Osby 一定要用全名。**（第 1235 條「同姓不同人」的變形：**這次不是同姓，是子字串。**）
+- ⚠ **本組靠 1998 這份紙本定下來的關鍵證據**：**Mark Shim「hits the stores Tuesday (27)」（01-31 p61）**、
+  **Lena Horne 整篇專文（06-20 p36）**、**Blue Note 全版廣告的當年新片名單（06-27 p43）**、
+  **Blue Note 六十週年專文的十二月發行預告（11-14 p87）**、**Osby 與 Irby 的線上評介清單（11-28 p101／08-22 p96）**。
+- **已在 `SOURCES-billboard-cashbox.md` 末尾 append 一段**（**append，沒有改任何人寫過的段落**）。
+- **到此合計覆蓋：Billboard 1955→1998 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
+
+---
+
+## 第 1302 條（同批）：**列舉檔這一組的三種空欄與一種錯欄，全部是忠實抄了 MB**
+
+| 欄 | 本組的狀況 | 後果 |
+|---|---|---|
+| **`catno`** | **22 筆裡有 12 筆是空的** | **因為 MB 的 label-info 在 1996 年之後普遍只有廠牌名**（第 1237 條(3)）——**目錄號全部是本層從 Discogs 反查的**。⚠ **而 `catno` 空正是「這一版可能不是 Blue Note」的訊號**（第 1295 條）。 |
+| **`country`／`format`** | Veneno、Mind Over Matter、Alive、Big Mama's Biscuits 四筆的 `country` 空；Veneno、Being Myself 的 `format` 是 `?`／空 | **MB 的 release 沒有國別、`media` 的 format 欄是 null。** |
+| **`live`** | **《Banned in New York》標 `false`，但它是現場盤** | **因為列舉檔抄的是「空的那個 RG」**——**標成 Live 的是被退掉的重複 RG**（第 1294 條）。 |
+| ⚠ **`reissueSeries`** | **22 筆全部是 `[]`** | **`The Blue Note Cover Series`（Harp）、`Connoisseur`、`ジャズ名盤物語`（TOCJ-6242）、Capitol Jazz 的中價線一個都沒抓到**——**c-153 b 第 1241 條末段的結論（1996 年之後這一欄等於沒有）在本組完全成立，22/22。** |
+
+⚠ **本組沒有出現 c-153 b 那種「列舉檔自己猜錯方向」的 `note`**——**22 筆的 `note` 欄除了兩筆寫 `live` 之外全空。**
+
+---
+
+## 第 1303 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案**
+
+- **`batch-progress/c154/prop-b.json`：16 張、15 位**（`Greg Osby` 兩張）。**第 315 條：16 ＋ 退表 6 ＝ 22 ✓。**
+- **`node batch-progress/c154/chk-prop.mjs b` → 標記 0**（117 批、4,758 卡、跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0）。
+- **中間檔**（scratchpad `c154b/`，第 533 條，**不在 repo 內**）：
+  `mb/rg-*.json`＋`mb/rel-*.json`（22 筆 × 2 端點，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s、**零 503**）、
+  `dg.py`＋`dgcache/`（Discogs 搜尋／release／master／versions）、`store.py`＋`stcache/`（Apple 三種查法 × us／jp ＋ CAA RG 層探測）、
+  `poolscan.mjs`（掃 seed ＋ `desc-tools/batches/cards/c1*.json` ＋ 所有 `batch-progress/c1*/prop-*.json`，**合計 26,992 列**）、
+  `harvest.py`＋`bbtext/`（1998 年 51 期，4 shard 並行）＋`bb1998.txt`＋`bbidx.html`、`ctx.py`（OCR 取脈絡）、
+  `summ.py`（MB 摘要與軌目）、`build/b1.py`～`b6.py`（**分六次寫 prop，每 2–5 筆落一次磁碟**）。
+- **本棒改動的檔案**（三個，全部是 append 或新建）：
+  1. **`batch-progress/c154/prop-b.json`（新建，16 張）**；
+  2. **`batch-progress/c154/rulings.md`（append 第 1290–1303 條；a 組的第 1260–1274 條一字未改）**；
+  3. **`batch-progress/enum/billboard-bn-1998-ocr.txt.gz`（新建）＋ `batch-progress/enum/SOURCES-billboard-cashbox.md`（末尾 append 一段）**。
+  **沒有動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`batch-progress/enum/blue-note.json`／
+  `batch-progress/c154/slice.json`／`batch-progress/c154/prop-a.json`／git。
+- ⚠ **號段**：b 組用 **1290–1303**，**1304–1319 留白**。
+- **給 c-155 的六句話**：
+  1. **1998 年的紙本已入庫**（`billboard-bn-1998-ocr.txt.gz`，51 期，第 1301 條）——**直接 `zgrep`；關鍵字集是為 c-154 b 配的，查別的碟要重抓。1999 年起仍然沒人掃。**
+  2. **第 1202 條之前還有一道前置閘**（第 1295 條）：**先看這一次的實體盤廠牌欄是不是 Blue Note（含子廠牌 Metro Blue／Somethin' Else／Blue Note Contemporary）**，**Capitol Jazz／Pacific Jazz 的中價再發直接退**。**`catno` 欄空就是訊號。**
+  3. **「盤名互為前綴」的兩筆先比 barcode ＋ 軌目**（第 1294 條）——**MB 同碟兩個 RG 在本組一批中兩次，`chk-prop` 兩次都沒亮燈。**
+  4. **查 TOCJ 的固定動作要多看 `status`**（第 1297 條）——**`Promotion` 的日期不能拿來推首發地。**
+  5. **曲風照「同掛名的池中先例 ＞ 同系列姊妹卡 ＞ 行為體本身的曲風」三層判**（第 1296 條）——**本層一度給錯一次，靠 a 組第 1268 條改回來。**
+  6. **查 Greg Osby 要用全名**（第 1301 條）——**`osby` 會被 `Crosby`／`Cosby` 整串吃掉。**
