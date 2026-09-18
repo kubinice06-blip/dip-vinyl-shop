@@ -218,3 +218,103 @@ b 組那份也因此多寫了 Monk 與 Tania Maria。**a 組五張全查了，b 
 5. ⚠⚠ **Discogs 的「同碟不同條目，credit 有的空有的滿」本組中了兩次**（Intimidade、Same Mother 的歐版才有逐軌作者欄）
    ——**判「編制完全查不到」之前，一定要把該 master 轄下的每個條目都開過一遍，尤其是美版。**
    **這是第 1367／1489／1560-E 條那一族的第 N 次應驗，已經可以當成鐵則。**
+
+## 第 1620-C 條（主線）：**c-159 研究 b 組交件——16 張全 full、年份改判 0、facts 126 條 src 全過、QA 零警告**
+
+**六層證據**：**Discogs 16/16（地基）**、紙本 Billboard **11/16**、**維基 8/16（前十三批都是 0–1，本組躍升）**、
+MB 2/16、**樂手工會／藝人官網 1/16**；**廠牌官網 0、AllMusic 0**（Wingspan 的 AllMusic 頁存在但回 403）。
+
+⚠ **主線自糾（第二次）**：派工詞把未 ready 與 CAA 404 的名單按組拆錯——
+**Monk《At Carnegie Hall》與 Tania Maria《Intimidade》都是 a 組**，b 組只有 Al Green 與 Jane Bunnett；
+CAA 404 b 組也只有 1 張。**兩組的派工詞我都拆錯了同一份名單。**
+
+**欄位紀律自檢（b 組做得最徹底的一次）**：`facts[].src` 126 條全是完整 https；
+`sound`／`keyTracks`／`hookCandidates` 的每一句都在 facts 裡有對應來源；
+**facts 裡每一個數字都與同條清單程式逐條復核，抓到並修掉 3 處**
+（Blanchard「其餘六軌」語意不清、Wood Brothers「十首」實為十一首、Don Byron「八首」改成「六首」並補第二條列完）。
+**→ 第 1560-AB 的通則第一次在交件前就被執行完，不是事後被下游抓到。**
+
+## 第 1620-D 條（主線）：**串流兩張救不回，但「版權缺口」這個形狀再添兩個樣本，而且證據更硬**
+
+- **Al Green《Everything's OK》**：三個 barcode × **46 個市場全 0**。
+  **藝人目錄 `99603` 在七個市場各 43–60 張，Hi Records／Fat Possum 舊目錄幾乎全在，
+  但 Blue Note 時期的兩張專輯（2003《I Can't Stop》、2005 本張）一張都不在**，只剩 2008 年的單曲〈Take Your Time〉。
+  **→ 是版權缺口，不是盤名被改寫**（若只是改寫，藝人目錄仍會撈到）。
+- **Jane Bunnett《Radio Guantánamo》**：兩個 barcode × 46 市場全 0。
+  **藝人目錄 us 27 張／ca 30 張、涵蓋 1988–2024，2004《Red Dragonfly》與 2008《Embracing Voices》都在，
+  唯獨夾在中間的本張不在**；⚠ **那兩張的 ℗ 是她自己的 Bunnett-Cramer，本張是 Blue Note／EMI 直屬。**
+
+⚠⚠ **兩張合起來把第 1614 條的形狀講清楚了**：
+**「藝人目錄完整、前後作都在、唯獨這一張缺」而且缺的那些正好是廠牌直屬的那幾張**
+——**這是廠牌層級的版權缺口，不是單張下架，掃再多市場也沒有用。**
+**判到這個形狀就可以停手，把「前後作都在、缺的都是同一家廠牌」寫進 notes。**
+
+**c-159 串流最終 ready 28／34。**
+
+## 第 1620-E 條（主線）：**第 1603 條的「完全查不到」三張全部不成立——而且三張各靠不同一招**
+
+| 卡 | 策展層說 | 實際 | 靠哪一招 |
+| --- | --- | --- | --- |
+| **Al Green** | 編制完全查不到 | **Billboard 2005-03-19 p19 點名和聲三人、貝斯 Leroy Hodges、八人編制 New Memphis Strings** | **紙本**（資料庫全空，無軌號） |
+| **Dr. John《N'Awlinz》** | 編制完全查不到 | **日版 TOCP-67975（Discogs `19446958`）有完整名單而且帶軌號**：三人全程 1–13 軌，另六人逐軌客座 | ⚠⚠ **日版——本線第一次靠日版救回編制** |
+| **Rubalcaba《Solo》** | 只有 3 筆、正文不得列出任何其他樂手 | **歐版 `9767703` 有 22 筆**：逐軌作者欄、錄音/混音/母帶三個日期、**Bösendorfer Model 280 與調音師 Elian Degen**、封面畫作者 | **換版本**（第 1281 條） |
+
+**→ 第 1281／1367／1429／1560-E 那一族本組共救回三張**（策展層自己抓到 Blanchard 一張，研究層再加兩張）。
+**「換一個條目再看一遍」現在有三種來源可換：歐版、日版、紙本。**
+
+## 第 1620-F 條（主線，**獎項：策展層 16 張一張都沒查；另有一處入圍／得獎沒分清**）
+
+- ⚠ **第 1597 條把 Juno 的入圍與得獎混了**：**Jane Bunnett 是 2006 年 Juno「Contemporary Jazz Album of the Year」的得獎者**
+  （維基 Juno 條目的得獎欄就是本張，同屆另四張列入圍）；**2005 年的 Urban Music Award 才是入圍。**
+  **年份 2005 的結論不變、反而更被坐實。**
+- ⚠⚠ **Blanchard《Flow》與 Marsalis《Live at the House of Tribes》同時入圍第 48 屆葛萊美 Best Jazz Instrumental Album，
+  兩張都入圍未得，都輸給 Wayne Shorter《Beyond the Sound Barrier》**
+  ——**同批兩張卡共用一組獎項事實，risk 必須互指，正文不得各自宣稱「唯一入圍的 Blue Note 作品」。**
+- **Lovano《Streams of Expression》以 The Joe Lovano Ensemble 之名入圍第 49 屆 Best Large Jazz Ensemble Album，未得**
+  （輸給 Randy Brecker《Some Skunk Funk》）。
+- **明確排除、已寫進 notes 擋下游順手加獎**：Al Green 本張在第 48 屆 **無提名**（他上次入圍是第 47 屆、作品是前一張碟）；
+  Cassandra Wilson 不在第 49 屆 Best Jazz Vocal Album；Rubalcaba 不在第 49 屆 Best Latin Jazz Album；
+  Harris／Byron 不在第 48／49 屆 Best Contemporary Jazz Album。
+
+## 第 1620-G 條（主線）：**載體、軌數、軌名、街頭日**
+
+- **載體（黑膠店的卡）**：⚠ **16 張裡只有 1 張有同期黑膠**——
+  **Al Green《Everything's OK》美版 LP `Blue Note 7243 8 74584 1 3`，released 2005-03-15、與 CD 同日**（A 面 6 軌／B 面 6 軌）。
+  其餘 15 張最早的黑膠分別是 **Barber 2010 MFSL、Blanchard 2014 UMe、Wood Brothers 2026**，
+  **全部已在 notes 註明「提黑膠必須寫明是後來的再壓」。**
+- **卡單軌數錯 1 筆、MB 軌數誤導 1 筆**：
+  **Wood Brothers 加版不是「CD 14 軌」，MB `cdd2f89e` 展開是 12 首歌＋2 條 data track**；
+  **Stefon Harris MB `87ebb74e` 的「8＋9 軌兩碟層」兩層曲目完全相同、第二層第 9 軌是 [untitled] 資料軌，主體 8 軌。**
+- **軌名照盤面三處**：Don Byron 第 12 軌是〈**(I'm A) Roadrunner**〉一個字（第 1604 條寫成〈(I'm a) Road Runner〉）；
+  Marsalis 第 6 軌是〈**2nd Line**〉（維基作 Second Line）；
+  Stefon Harris 第 2 軌盤面印〈Portrait Of **Wellman Braid**〉但 Ellington 原曲是 **Braud**（已標 uncertain）。
+  另 Marsalis〈Donna Lee〉作者欄**盤面掛 Charlie Parker、維基掛 Miles Davis**，已標 uncertain。
+- **街頭日新增 5 筆、日版日期訂正 2 筆**（全部出自 `Reviews` 欄的 `Release Date:` 行或 Jazz Notes 專欄）。
+  ⚠ **Al Green 的首發其實是國際版 2005-03-14、比美版早一天**（BB 2005-03-19 p19 逐字，與英文維基一致）。
+  **第 1607 條的兩筆「無日」補上了**：Al Green 日版 `2005-03-16`、Dr. John 日版 `2006-05-24`（**都晚於美版，不推翻第 1252 條**）。
+
+## 第 1620-H 條（主線）：**策展層漏掉的三件好料，與兩處不得寫**
+
+**好料**：
+1. ⚠⚠ **Stefon Harris 的第三套組曲策展層完全沒提**（BB 2006-10-21 p87 專訪）：
+   第 6–8 軌是他自己的**《The Gardner Suite》**三個樂章、五段式、**密西根州立大學 Wharton Center 委託**、
+   靈感來自波士頓 **Isabella Stewart Gardner Museum** 駐館；第 4、5 軌出自《The Queen's Suite》。
+   **3＋2＋3＝8，與盤面軌數對得上。** 另：他與九重奏 2006-10-18 在 **Zankel Hall 為卡內基 2006–07 爵士系列揭幕。**
+2. **George Robert 不是「只剩 Discogs 一層」**：Local 802 AFM 的追思文是第二層
+   （1960-09-15 生於日內瓦 Chambésy、2016-03-14 歿、師承 Luc Hoffmann→Joe Viola→**Bob Mintzer**、
+   Phil Woods 接班關係、1995 年任伯恩瑞士爵士學校校長、2006 年創辦洛桑 HEMU 爵士系），藝人官網是第三層。
+   ⚠⚠ **而《Wingspan》的內頁文字正是他的老師 Bob Mintzer 寫的——這是這張最值得寫的一面。**
+   （**紙本仍然是真的 0**，三種拼法 × 三年重查，命中全是同名人。）
+3. **Don Byron 與 Wood Brothers 的紙本 0 命中覆核成立**（五種拼法重查）。
+
+**不得寫**：
+1. ⚠ **第 1603 條「Cassandra Wilson 三位鼓手互不重疊」是錯的**——
+   Keltner(1,2,3,6,7,10)／Maxwell(3,6,7,9)／Bellerose(4,6,9) 在第 3、6、7、9 軌重疊，**第 6 軌〈Poet〉三人全在**。
+   **正文不得寫「互不重疊」或「輪流上陣」。**
+2. ⚠⚠ **Dr. John 不能寫卡崔娜**：**沒有任何一層來源給出本作的錄音日期**（盤面只寫錄音室）
+   ——正文只能寫「錄於紐奧良 Piety Street Studios」。
+3. **Lovano《Streams》的 Schuller 角色兩層說法不同**（Billboard 稱 arranger、維基稱 conducted），
+   **第 1604 條的「重新配器」是策展層的推論用詞**；facts 兩說都寫、分開標來源。
+   但「**Schuller 本人就是原九重奏的法國號手**」覆核成立。
+4. **Apple ℗ 欄不可引的兩張**已逐張寫進 `yearVerified.note`（Blanchard `℗ 2013`、Dr. John `℗ 2006 Parlophone/Warner`）；
+   **Cassandra Wilson 的 Apple `℗ 2005`／`releaseDate 2005-01-01` 比實際早一年，四層打一層取 2006。**

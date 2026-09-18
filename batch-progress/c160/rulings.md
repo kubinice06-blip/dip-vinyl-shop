@@ -1156,3 +1156,20 @@ Apple 十四市場逐字 `Charles Tolliver Big Band —《With Love》`；`BB-20
 6. ⚠ **同一串字會在不同來源落在不同欄**（第 1658 條，本組新立）——
    **`Plays the music of…`／`Big Band`／`With Strings` 這類字串，MB 可能放掛名欄、Discogs 可能放盤名欄。
    寫 prop 前把三個來源的「掛名欄＋盤名欄」並排看一次，再決定卡名與掛名各取什麼。**
+
+## 第 1669 條（主線）：**c-160 探測鏈——CAA 32／38、串流 33／38，主線依第 1614 條再救回 1 張 → 34／38**
+
+- `fix-rgmbid`：原本就對 38、修正 0、無 RG 0。**CAA 有圖 32／38、探測錯誤 0**（6 張真 404，交研究層找替代來源）。
+- **串流探測 33／38**——⚠ **這是本線第一次未 ready 只有個位數**，
+  因為 `termsFor()` 的 `queryAlias` 散文 bug 已在 c-159 修掉（第 1610 條）。
+- **主線跑「UPC × 27 店面」的固定步驟（第 1614 條新立），救回 1 張**：
+  ✅ **Wynton Marsalis《From the Plantation to the Penitentiary》→ `1700274220`**
+  （`lookup?upc=094637367520` 在 us 命中，盤名逐字相同、2007 年、**7 軌全有 previewUrl**，
+  **MB 兩筆 release 也都是 7 軌**，第 1067 條錯碟關已過；卡池無第二張卡用此 id）。
+- **仍未 ready 4 張**，交研究層：
+  **Norah Jones《Live in 2007》**（⚠ `catno` 欄沒有 11–14 位數字，**跑不出 UPC**）、
+  **Charles Mingus Sextet with Eric Dolphy《Cornell 1964》**（UPC `094639221028` × 27 店面全 0）、
+  **Ron Carter《Dear Miles,》**（⚠ 同樣**沒有可用的 UPC**；日版 Somethin' Else 首發，要找日版 barcode）、
+  **Stefano Di Battista《Trouble Shootin'》**（UPC `5099950291120` × 27 店面全 0）。
+- ⚠ **新增一條給研究層**：**`catno` 欄跑不出 UPC 的卡，要先去 Discogs 抓 barcode 再跑 UPC 掃描**
+  ——**兩張都是這個情形，而它們正好是本批最可能有串流的兩張（Norah Jones 與 Ron Carter）。**
