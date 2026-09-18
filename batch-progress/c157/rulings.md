@@ -907,3 +907,72 @@ Henri Salvador《Chambre avec vue》**法國榜連續命中**（廠牌欄逐字 
 4. ⚠ **`Advance` 宣傳盤的年份是很好的年份下界**，Discogs 年份打架時先找有沒有宣傳盤條目（第 1476 條）。
 5. ⚠ **`slice.json` 把連號的 Volume 兩卷寫成同年時不要相信**，兩卷各自找紙本（第 1475 條）。
 6. ⚠ **2001 年前後 MB 開始出現「只建宣傳盤、不建零售盤」**（第 1484 條第 1 項）——**`label` 與目錄號一定要去 Discogs 拿零售盤那一筆，MB 的裸數字 catno 不能用。**
+
+## 第 1488 條（主線，研究層查出）：**撞陳列改判一處、撤銷一處假陽性、新增一處跨組與三處 apex**
+
+- ⚠ **改判**：第 1448(A)#6「Chucho ↔ Bebo ↔ Bele Bele 三張互撞〈Tres lindas cubanas〉」
+  ——**《El arte del sabor》17 軌裡沒有這一首**，**那條鏈只剩兩張。**
+- ⚠ **撤銷假陽性**：〈Lorelei〉在 25,215 列卡池命中 **0**，**第 1448(B) 條那一處不成立。**
+- ⚠ **新增跨組一處**：**Chucho《Solo Live in New York》第 5 軌 ＝ Rubalcaba《Supernova》第 5 軌〈El Manicero〉**
+  （a↔b 跨組，**兩組都沒記**）。
+- ⚠ **新增撞 apex 王牌三處**：**Rodney Jones〈Soul Makossa〉＝ seed `Manu Dibango`（tier `hall`）**、
+  **Aga Zaryan〈Waltz for Debby〉＝ Bill Evans（apex 5）**、
+  **Denise Jannah〈My Favorite Things〉＝ Coltrane（apex 5）**；
+  另 **〈I Was Born In Love With You〉＝她自己在 c-153 的卡名。**
+  派工信點名的 **Aga Zaryan〈I Put a Spell on You〉vs Nina Simone 覆核成立。**
+
+## 第 1489 條（主線）：**第 1367 條在本批再中四次，而且兩次推翻的是「完全查不到」**
+
+**《Off the Record》與《Top Secret》從「完全查不到」改成「逐軌變動」**
+（前者有 4 位製作人＋4 組人聲、後者有 8 位樂手，**含 Sparks 的 Ron Mael 唱第 2 軌、
+Russell Mael 掛額外錄音**）；
+**《Soul Manifesto》的六人編制 Discogs 上就有軌號**（**策展層只核了 9 軌那一筆**）；
+**《Flights of Fancy》的四組三重奏 Discogs 歐版逐軌欄全有**——**不必引維基／AllMusic**，
+**而且實際是 9 人不是 10 人、第 7 軌 Lovano 打鼓。**
+另修正 Stefano di Battista／Supernova／Mantis／New Moods 的「固定編制」漏掉客座、
+**《Kindred》純二重奏是 5 軌不是 6 軌。**
+
+## 第 1490 條（主線）：**推翻兩處「查不到」，兩次都是 OCR 斷字或沒查對地方**
+
+- ⚠ **第 1485 條「《New Moods》紙本零命中」不成立**：**Billboard 2001-04-14 p51 有發行公告**
+  （「album is due in June」）——**漏掉的原因是 OCR 把 `Sarpila` 斷成 `Sarpi- la`。**
+- ⚠ **第 1449 條「Mose Vol.1 場館查不到」不成立**：**Billboard 2001-04-14 p30 逐字
+  「London's Pizza Express」**＋製作人 Ben Sidran ＋「50th anniversary as a performer」。
+
+**這是第 1134／1245 條在本段的第七、第八次成立。**
+
+## 第 1491 條（主線）：**三處時序與母體訂正**
+
+- ⚠⚠ **《Inner Circle》的錄音是 1999-04-22／23**（Discogs 歐版逐字），**比發行早近三年**
+  ——**兩組 rulings 都沒記，而且推翻「Symbols of Light 是前作」的時序。**
+- ⚠ **《The Washington Concerts》的母體補到目錄號**：Discogs 逐字
+  「Tracks #1 to 8 & 15 originally issued as **Elektra Musician 60019**」
+  ——**第 1444 條的「六軌新、七軌舊」應更正為「六軌新、九軌舊（含訪談）」。**
+- ⚠ **建議把第 1487 條補一句**：**街頭日必須是「首發市場」的才有壓過效力**
+  ——《À Paris》查到美國街頭日 2001-02-27 逐字，**但那是第二個市場，`year` 仍取 2000。**
+
+## 第 1492 條（主線）：**載體、首發地與企劃線**
+
+- **載體逐張查：4 張有黑膠**——Poetry（**1984 Elektra 原盤就是 LP**）、Mantis（2001 2LP，13 軌）、
+  Top Secret（2001 2LP）、Off the Record（宣傳 12"）；
+  ⚠ **Creole Moon 的黑膠盤面逐字「First Time On Vinyl」(2016)、Beyond Words 只有 2014 南韓 2LP**
+  ——**兩張都不得當原盤寫。**
+- **首發地改寫 2 張為日本**：Dance Lesson #2（日版早美版 20 天）、Written in the Stars（`TOCJ-68048`）。
+- ⚠ **東芝 EMI「Club 2001」日本企劃串起本批 3 張**（Dance Lesson／Doin' Something／Live at Yoshi's，
+  BB-2001-06-09 p36）。
+- **本批 6 張碟拿 7 項第 44 屆葛萊美提名**（BB-2002-01-19 p94/p95）。
+
+## 第 1493 條（主線）：**串流與封面，以及「已 ready 也要抽核」的五處實績**
+
+**串流採信 10/13、查無 3**；**27 張已 ready 全部抽核**，抓到五處版式不符：
+**Supernova 少第 7 軌〈Otra Mirada〉、Mantis 多一軌〈Snachy Baby〉、Elling 是 11／12／13 三種軌數、
+Nightclub 的 MFSL SACD 13 軌、The Calling 的 2003 SACD 多〈Misty〉。**
+**撈回的十張各靠不同一招**：**Prysm 的店面把盤名改成「Live」，只有直接 `lookup?id=` 有效**；
+**El arte del sabor 要縮短聯名字串**；**The Calling 與 Doin' Something 靠 UPC 救回。**
+⚠ **《You Are #6》研究稿寫法未帶「採信」二字**，主線回寫時實查 `724931465`
+（`You Are #6 - More Music For Six Musicians`，12 軌全有 preview）後補上。
+
+**封面 12 張全部真 404，替代來源 12/12 查實**；**4 張走 Apple `600x600bb`**
+（⚠ **Melange 的 600px 那筆是白色宣傳紙套**、Mose Vol.1、**On Tour 只有 225px**、Power of the String）。
+⚠ **My Lullaby 特別注意：2002 Not Two 原盤的封面在 Discogs／CAA／Apple 三層全查不到，
+只有 2007／2011 再發版藝術。**
