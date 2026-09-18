@@ -124,6 +124,13 @@ const FRA = ['fr', 'be', 'ch', 'ca', 'us', 'gb', 'de', 'nl'];
 const DEIT = ['de', 'it', 'at', 'gb', 'ch', 'us', 'fr', 'nl'];
 // 新譜（c-111／c-112）：發行權全球同步，用最寬的一組；tw／kr 補在後面接華語與韓語那半。
 const NEW = ['us', 'gb', 'jp', 'de', 'fr', 'tw', 'kr', 'ca', 'au'];
+
+// BN2K：Blue Note 1985 年後線（c159 起）。2026-09-18 裁定第 1560-C 條——
+// 原本的八市場（us/gb/jp/de/fr/nl/ca/tw）漏掉北歐與南歐：
+// Jukka Perko《Kaanaanmaa》八市場全 0 命中，只有 fi 店面有軌（9/9 都回得到 preview）。
+// 本線大量是 Blue Note 歐洲／北歐分部發的碟（芬蘭、丹麥、義大利、法國），因此補上 fi/se/no/dk/it/es/pl。
+const BN2K = ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw', 'fi', 'se', 'no', 'dk', 'it', 'es', 'pl'];
+
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
   c87: JPN, c88: OST,
@@ -177,15 +184,18 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   c156: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
   c157: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
   c158: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c159: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c160: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c161: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c162: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c163: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c164: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c165: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c166: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c167: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'] };
+  c159: BN2K,
+  c160: BN2K,
+  c161: BN2K,
+  c162: BN2K,
+  c163: BN2K,
+  c164: BN2K,
+  c165: BN2K,
+  c166: BN2K,
+  c167: BN2K,
+  c168: BN2K,
+  c169: BN2K,
+  c170: BN2K };
 
 const cards = [];
 for (const b of BATCHES)
