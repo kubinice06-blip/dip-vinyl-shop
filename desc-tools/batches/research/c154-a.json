@@ -1,0 +1,150 @@
+[
+ {
+  "artist": "Erik Truffaz",
+  "album": "Out of a Dream",
+  "facts": [
+   {
+    "f": "release-group e32573fb 的欄位：title「Out of a Dream」、artist-credit **`Erik Truffaz`**（aecd2d93 Person、country FR）、first-release-date **1997-02-17**（帶完整月日）、primary-type Album、**secondary-types 空**。轄下 **3 筆 release**：**7003d165（1997-02-17 **FR** Official CD **11 軌**，Blue Note `5099994886429`，barcode 同號）**、100704e3（1997 IT Official CD 11 軌，Blue Note `855855 2`，bc 724385585524）、997aa36c（1997 US Official，11 軌，**無 format、無廠牌欄、無 barcode ＝ 空殼**）。**MB 沒有黑膠、沒有卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e32573fb-c705-3267-a972-b789cbc3ee24&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **載體逐張查清楚（第 1064 條）：這張只有 CD，沒有同期黑膠也沒有卡帶。** Discogs 以 `artist=Erik Truffaz&release_title=Out of a Dream` 查回 **7 筆，全部掛 master 339158**：法國原壓 **1619114**（`7243 8 55855 2 4`，CD Album）、義大利壓 8344509（`855855 2`）、歐版 4459831、波蘭版 2902250、以及 2010 年代的兩筆再發（EMI CD 3245577 `5099994886429`、Parlophone FLAC 檔案版 17667970）——**七筆的 format 欄沒有一個是 Vinyl 或 Cassette**。",
+    "src": "https://api.discogs.com/database/search?artist=Erik%20Truffaz&release_title=Out%20of%20a%20Dream&per_page=100"
+   },
+   {
+    "f": "Discogs 法國原壓 1619114 的盤面註記逐字：「**(P) 1997 Truffaz Music／Distribution EMI／Made in Italy／Released as a Digipak**」。**credits 全欄沒有帶軌號，是一個團從頭錄到尾的五人常設編制**：**Erik Truffaz**（小號、翼號、作曲、製作）、**Patrick Muller**（鋼琴）、**Marcello Giuliani**（貝斯）、**Marc Erbetta**（鼓）、**Cyril Bugnon**（中音薩克斯，credits 欄逐字寫成 `Alto Saxophone, Tenor Vocals`）。製作另有 **Habib Achour**；**Guy Simon 一人兼 Mixed By 與 Recorded By**。美術 Bernard Amiard、封面攝影 Christophe Cufos、內頁攝影 Lorenzo Valmontone 與 Thorsten Roth。⚠ **盤面沒有 Michael Cuscuna，也沒有任何 Capitol／美國製作端。**",
+    "src": "https://api.discogs.com/releases/1619114"
+   },
+   {
+    "f": "⚠ **軌目逐張確認（第 609／1135 條）：本張沒有版本差。** 法國原壓 1619114 的十一軌與 MB 三筆 release、Apple 1841701313 **完全同名同序**：1 Down Town 1:58／2 Out Of A Dream 7:32／3 Beaute Bleue 5:58／4 Wet In Paris 6:23／5 Porta Camollia 5:20／6 Indigo 5:47／7 Saisir 3:54／8 Elegie 3:22／9 Samara 5:22／10 Up Town 2:08／11 Betty 1:41。**十一軌全部沒有掛別的作曲者——Truffaz 的 credits 欄逐字是 `Composed By, Flugelhorn, Trumpet`，全碟自作。**",
+    "src": "https://api.discogs.com/releases/1619114"
+   },
+   {
+    "f": "⚠ **試聽抽核（第 1067／1158 條：探測層判 ready 只保證找到有預覽的條目）**：Apple `lookup id=1841701313` 回 **11 軌、每軌都有 previewUrl**，**軌名與時長與法國原壓逐軌對得上**（Down Town 122s／Out of a Dream 456s／Beauté bleue 359s／Wet in Paris 384s／Porta Camollia 321s／Indigo 349s／Saisir 235s／Elegie 203s／Samara 324s／Up Town 132s／Betty 103s），releaseDate **1997-02-17**、copyright **℗ 1997 Foufino Productions**。**us／jp／fr／gb／de／dk／no／it／au／ca／se 十一個市場回的都是同一個 id，沒有第二種版式。**",
+    "src": "https://itunes.apple.com/lookup?id=1841701313&entity=song&limit=60&country=fr"
+   },
+   {
+    "f": "⚠ **紙本三種字串全掃、全部零命中（第 1245 條）**：在 `billboard-bn-1996-ocr.txt.gz`（52 期）、`billboard-bn-1997-ocr.txt.gz`（51 期）、`billboard-bn-1998-ocr.txt.gz`（51 期）、`cashbox-bn-1996-ocr.txt.gz`（39 期）四份檔內逐期查 **`truffaz`（人名）／`5585[50]`（目錄號，同時涵蓋 OCR 把 `55855` 打成 `55850` 的形變）／`out of a dream`（盤名）** 三種字串，**四份檔全部零命中**。⚠ **另在本棒自抓的 `billboard-bn-1999-ocr.txt.gz` 裡查 `truffaz` 只有一則**：**1999-11-27 p90 的法國業界人物側寫，逐字「promoting releases and concerts by artists like jazzman Erik Truffaz (Blue Note/EMI)」——講的是他這個人，不是這張碟。** **法國在地發行、當年沒有美盤，紙本空白是預期的（第 1203／1234 條同形）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-06-28.pdf"
+   },
+   {
+    "f": "**撞陳列逐軌覆核（含第 1181／1192 條第六種盲區，本層自己補掃）**：把十一軌軌名逐一丟進池中 **27,618 列**（`seed_cards.json` 17,248 ＋ `desc-tools/batches/cards/*.json` ＋ `batch-progress/c*/prop-*.json`）比對**卡名**，命中兩處：**〈Down Town〉↔ 池中 `EPO —《Down Town》`（1980）與 `Petula Clark —《Downtown》`（1965）**、**〈Betty〉↔ 池中 `小泉今日子 —《Betty》`（1984）**。**三者都是完全不相干的曲子、不同語言不同年代，純軌名／卡名字串撞。**⚠ **盤名層：池中 `Out of a Dream` 只有本張一筆。**⚠ **目錄號交叉（第 1274 條）：`7243 8 55855 2 4`／`855855 2`／barcode `724385585524` 三種字串丟回池中零命中。**",
+    "src": "https://api.discogs.com/releases/1619114"
+   }
+  ],
+  "hookCandidates": [
+   "十一首全是 Truffaz 自己寫的，盤面卻印著 `(P) 1997 Truffaz Music`——Blue Note 只是發行端，母帶版權掛在他自己的公司名下",
+   "1997 年的 Blue Note 在美國一個字都沒提過這張：Billboard 與 Cash Box 四份掃描檔、三種查法全零；唯一一次出現 Truffaz 的名字要等到 1999 年一篇談法國業界的側寫"
+  ],
+  "sound": "1997 年 2 月 17 日法國發行的 Digipak CD，十一軌全部出自 Truffaz 自己的筆。一個固定五人編制從頭錄到尾：Truffaz 的小號與翼號、Patrick Muller 的鋼琴、Marcello Giuliani 的貝斯、Marc Erbetta 的鼓，加上 Cyril Bugnon 的中音薩克斯。Guy Simon 一人包辦錄音與混音，Truffaz 與 Habib Achour 共同製作。曲長落差很大——開場〈Down Town〉1:58、收尾〈Betty〉1:41，中間〈Out of a Dream〉7:32、〈Wet in Paris〉6:23、〈Indigo〉5:47 才是主體，短曲像是長曲之間的門。冷調的小號音色配上 Erbetta 幾乎是節拍程式化的鼓法，這是 Blue Note 法國分部的歐陸電氣爵士路線。只有 CD，沒有同期黑膠也沒有卡帶。",
+  "keyTracks": [
+   "Out of a Dream",
+   "Wet in Paris",
+   "Indigo"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 成立，本層未改判。** 四層同向：**MB frd `1997-02-17`（帶完整月日，不是年頭回填）** ＝ **MB 的 FR release 7003d165 date `1997-02-17`／country FR** ＝ **Apple 十一個市場（us／jp／fr／gb／de／dk／no／it／au／ca／se）回的同一個 id 1841701313，releaseDate 一律 `1997-02-17`、copyright `℗ 1997 Foufino Productions`** ＝ **Discogs 法／義／歐／波四筆原壓群 `year` 欄全 1997**。⚠ **紙本無法提供任何一層**：Billboard 1996／1997／1998 與 Cash Box 1996 四份檔、`truffaz`／`5585[50]`／`out of a dream` 三種字串全零（第 1245 條的三形都掃過）。⚠ **首發地 FR**：MB 唯一帶完整日期的 release 是法國那筆，美國那筆 997aa36c **無 format、無廠牌欄、無 barcode，是第 817 條說的空殼**，不得拿來當「美國同步發行」。⚠ **盤面 ℗ 是 `Truffaz Music` 不是 Blue Note**（Discogs 1619114 notes 逐字），**正文不得寫成 Capitol 自製**。",
+  "notes": "**覆核策展層：rgMbid `e32573fb-c705-3267-a972-b789cbc3ee24`／原盤 7003d165／`7243 8 55855 2 4`／掛名 `Erik Truffaz`／年份 1997／`live: false`／`releaseType: Album` 全部成立。**｜⚠ **編制欄本層核過：策展層寫的五人編制是對的，而且這一張**沒有**「只上一兩軌的客座」問題**——Discogs 1619114 的 credits 一筆都沒有帶軌號，五個人從頭到尾都在。**唯一要修的是拼法**：策展層（照 Discogs 藝人欄）寫 `Cyrille Bugnon`，**盤面 credits 欄逐字是 `Cyril Bugnon`（一個 l）**，正文取盤面形。｜⚠ **載體（第 1064 條，逐張查）：只有 CD。** MB 三筆 release 與 Discogs 七筆條目**沒有任何一筆是 Vinyl 或 Cassette**——**正文不得預設有黑膠原壓；但也不得反推成「Blue Note 法國從不出黑膠」，本線同段的 Charlie Hunter《Natty Dread》就有英國黑膠 LP。**｜⚠ **軌目（第 609／1135 條）：本張無版本差**，MB 三筆、Discogs 原壓、Apple 三邊十一軌同名同序。｜⚠ **`TOCJ-` 先查（第 1063／1066／1133 條）：Discogs 與 MB 都查不到日版**——這一張沒有東芝 EMI 線，**首發地就是法國**。｜**試聽：已 ready，本層抽核過軌數與版式**（Apple 1841701313，11 軌、11 個市場同一個 id、與原壓逐軌對上），**串流採信 1841701313**。｜**封面：CAA RG 層有圖**（caa.json 的 `art.url` 指向 `release-group/e32573fb.../front`），**本層未再探測**。｜**撞陳列**：〈Down Town〉撞池中 `EPO —《Down Town》`(1980)／`Petula Clark —《Downtream》`(1965)，〈Betty〉撞 `小泉今日子 —《Betty》`(1984)——**三筆都是純字串撞、零母帶關係**，**上架比對要連掛名帶 catno 55855**。｜**非選輯**：單一藝人、單一編制、十一軌全新錄音，`releaseType` Album、`secondary-types` 空、Discogs format 欄七筆全乾淨。",
+  "key": "desc2:Erik Truffaz|Out of a Dream"
+ },
+ {
+  "artist": "Pieces of a Dream",
+  "album": "Pieces",
+  "facts": [
+   {
+    "f": "release-group d4db9178 的欄位：title「Pieces」、artist-credit `Pieces of a Dream`、first-release-date **1997**（**只有年，沒有月日**）、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：2b6aec22（1997 **US** Official CD **12 軌**，廠牌欄 **`Blue Note / 54052`**，**barcode 欄空**）。**MB 沒有建歐版、沒有日版、沒有卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d4db9178-f538-38cf-8a80-a85806ae1a31&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **載體逐張查（第 1064 條）：本張有同期卡帶、沒有黑膠。** Discogs 以盤名查回的 master 1359087 底下共 **7 筆**：美國原壓 CD **4052326**（`CDP 7243 8 54052 2 8`，barcode 724385405228）、**美國卡帶 12385190（`7243 8 54052 4 2`）**、歐版 CD 13286081（`CDP 8540522`，荷蘭壓）、**日版 CD 11835133（`TOCJ-6160`，東芝 EMI）**、美國俱樂部版 21003499（BMG Direct）、美國宣傳版 26664545（`CDP 7243 8 54052 2 8 V`，紙套 Advance CD）、後來的再發 24648911（`CDP 554052`）。**七筆裡沒有一筆是 Vinyl。**",
+    "src": "https://api.discogs.com/database/search?artist=Pieces%20of%20a%20Dream&release_title=Pieces&per_page=100"
+   },
+   {
+    "f": "⚠ **廠牌欄不是 `Blue Note` 而是 `Blue Note Contemporary`**：Discogs 七筆條目的 label 欄**一律**逐字印 `Blue Note Contemporary`，**Billboard 的榜面也一樣**——1997-11-01 p52 起的 `TOP CONTEMPORARY JAZZ ALBUMS` 逐字「**PIECES OF A DREAM BLUE NOTE CONTEMPORARY 54052/CAPITOL PIECES**」。**這是 Blue Note 1997 年開的都會爵士子廠牌，不是主線。**",
+    "src": "https://api.discogs.com/releases/4052326"
+   },
+   {
+    "f": "⚠ ⚠ **本層找到的榜期比策展層記的多一倍以上。** 策展層寫「1997-11-01 p52 起連續四期」；本層把 **1997 與 1998 兩份檔一起掃**，`TOP CONTEMPORARY JAZZ ALBUMS`（OCR 常寫成 `TOP CONTEMPORARY JAll ALBUMS`）逐期還原後是 **九期、橫跨兩個年份**：**1997-11-01 p52 第 15（第 2 週）→ 11-15 p36 第 14（第 4 週）→ 11-29 p45 第 11（第 6 週）→ 12-13 p36 第 20（第 8 週）→ 1998-01-24 p43 **第 9（第 10 週，本張最高名次）** → 02-07 p38（第 12 週）→ 02-21 p46 第 15（第 14 週）→ 03-07 p32 第 18（第 16 週）→ 03-21 p48 第 16（第 18 週）**。**在榜至少十八週、最高第 9，都在同一張榜（`TOP JAZZ ALBUMS` 那張零命中，第 879／1068 條兩張都查過）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-01-24.pdf"
+   },
+   {
+    "f": "⚠ **編制欄是本張最大的缺口，而且缺口在盤面那一側**：**Discogs 七筆條目裡沒有任何一筆帶 credits**（美國原壓 4052326、俱樂部版 21003499、歐版 13286081、宣傳版 26664545 的 `extraartists` 全部是空陣列），**MB 的 release 也只有軌目沒有樂手**。**本層能查實的只有 Billboard 1996-05-04 p33 的照片說明**，逐字列出當時的團員：「**drummer Curtis Harmon, bassist Cedric Napoleon, Lee, and keyboardist James Lloyd**」（那一則講的是前一張選輯《The Best of Pieces of a Dream》，不是本張）。**→ 正文不得寫出任何一個本張的樂手名，除非另有盤面來源。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-05-04.pdf"
+   },
+   {
+    "f": "⚠ **試聽抽核**：Apple `lookup id=723468171` 回 **12 軌、每軌有預覽**，**軌名與美國原壓 4052326 逐軌對上**（Pieces 310s／...And a Bag of Chips 286s／1257 302s／D'Vora 339s／Sittin' Up in My Room 337s／Voices of Wisdom 363s／Anyway You Want It 277s／Knikki's Smile 344s／The Very First Time 367s／Epiphany 387s／Cut to the Chase 244s／Signed, Sealed & Delivered (I'm Yours) 211s），releaseDate `1997-01-01`（**年頭回填**）、copyright `℗ 1997 Blue Note Records`，**十一個市場同一個 id**。⚠ **同一次 Apple 查詢另外回了 `Pieces of a Dream —《Pieces of a Dream》`（id 296736037，8 軌，℗ 1981 Elektra）與《The Best of Pieces of a Dream》（id 725824911，14 軌，℗ 1992）——兩張都不是本碟，探測層若只比藝人名會抓錯。**",
+    "src": "https://itunes.apple.com/lookup?id=723468171&entity=song&limit=60&country=us"
+   },
+   {
+    "f": "**撞陳列逐軌覆核（第 1181／1192 條第六種盲區）**：十二軌對池中 27,618 列的卡名，命中一處——**〈Signed, Sealed & Delivered (I'm Yours)〉↔ 池中 `Stevie Wonder —《Signed, Sealed & Delivered》`（1970）**：**本張是翻唱，與原盤零母帶關係**。⚠ **盤名層另有一筆策展層已記的陷阱**：**本團 1981 年 Elektra 的同名首作《Pieces of a Dream》不在池中**（實掃 `piecesofadream` 正規化後零命中），**但 Apple 上有（296736037），上架比對一定要帶 catno 54052 或年份 1997。**⚠ **目錄號交叉（第 1274 條）**：`54052`／`7243 8 54052 2 8`／barcode `724385405228` 丟回池中零命中。",
+    "src": "https://api.discogs.com/releases/4052326"
+   }
+  ],
+  "hookCandidates": [
+   "上榜的那一格廠牌欄不是 Blue Note，是 `Blue Note Contemporary`——1997 年新開的都會爵士子廠牌，榜也不是主爵士榜而是 Contemporary 那張",
+   "在榜十八週、跨過 1997 與 1998 兩個年份，最高名次落在 1998 年 1 月——比它發行的那一年還晚"
+  ],
+  "sound": "1997 年美國發行的十二軌 CD，廠牌欄印的是 Blue Note 的都會爵士子廠 `Blue Note Contemporary`。曲長整齊落在四到六分半之間——〈Pieces〉5:09、〈D'Vora〉5:39、〈Voices of Wisdom〉6:03、〈The Very First Time〉6:07、〈Epiphany〉6:27 是最長的一軌。十二軌裡有三首是別人的歌：第 5 軌〈Sittin' Up in My Room〉、第 7 軌〈Anyway You Want It〉、收尾第 12 軌翻 Stevie Wonder 的〈Signed, Sealed & Delivered (I'm Yours)〉，其餘九軌是團內作品。同期另有美國卡帶與日版 TOCJ-6160，沒有黑膠。",
+  "keyTracks": [
+   "Pieces",
+   "Epiphany",
+   "Signed, Sealed & Delivered (I'm Yours)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 成立，本層未改判，而且本層把依據補厚了。** **同期紙本（階序最高那一層）**：Billboard `TOP CONTEMPORARY JAZZ ALBUMS` 自 **1997-11-01 p52** 起在榜，廠牌欄逐字 `BLUE NOTE CONTEMPORARY 54052/CAPITOL`；**1997-11-01 那一期的「在榜週數」欄是 2**，往前推一週即 1997 年 10 月下旬上榜，**與 1997 年發行完全相容**。**本層另把 1998 年的檔一起掃過**，同一張榜續到 **1998-03-21 p48（第 18 週）**，**最高名次第 9 出現在 1998-01-24 p43**。**其餘三層同向**：MB frd 1997（只有年）＝ MB 唯一 release 2b6aec22（1997 US）＝ Discogs 七筆條目 `year` 欄全 1997 ＝ Apple `℗ 1997 Blue Note Records`（releaseDate `1997-01-01` 是年頭回填，**不採為日期證據，只採 ℗ 年**）。⚠ **第 879／1068 條：兩張爵士榜都查過**——`TOP JAZZ ALBUMS` 零命中，本張只上 Contemporary 那張。⚠ **首發地 US**，MB 與 Discogs 的最早條目都是美版；日版 `TOCJ-6160` 與歐版是後續鋪貨，**這一張不是「日版先發」的形狀**（第 1063 條的固定動作已做）。",
+  "notes": "**覆核策展層：rgMbid `d4db9178-f538-38cf-8a80-a85806ae1a31`／原盤 2b6aec22／`CDP 7243 8 54052 2 8`／掛名 `Pieces of a Dream`／年份 1997／`live: false`／`releaseType: Album` 全部成立。**｜⚠ ⚠ **本層擋下一個「無來源就寫編制」的風險**：**Discogs 七筆條目全部沒有 credits、MB 也只有軌目**——**本張的樂手名在盤面層是查無的**。唯一查實的旁證是 **Billboard 1996-05-04 p33 的照片說明**（列 Curtis Harmon 鼓、Cedric Napoleon 貝斯、James Lloyd 鍵盤），**但那一則講的是 1996 年的選輯不是本張**。**→ 正文不得列任何本張的樂手名。**｜⚠ **廠牌欄要寫 `Blue Note Contemporary`**，Discogs 七筆與 Billboard 榜面四處一致；**正文不得簡化成「Blue Note」**（第 1268 條已為此把曲風定在單一 `jazz`）。｜⚠ **紙本：策展層記 4 期，實際 9 期、18 週、最高第 9（1998-01-24）。** 榜期橫跨 1997／1998 兩份檔——**只掃發行年那一份會少記一半**。｜⚠ **載體（第 1064 條）：CD 為主，另有同期美國卡帶 `7243 8 54052 4 2`（Discogs 12385190）**；**七筆條目零 Vinyl，正文不得預設有黑膠。**｜**試聽：已 ready，本層抽核過**（Apple 723468171，12 軌逐軌對上美國原壓，11 個市場同一個 id），**串流採信 723468171**；⚠ **同次查詢會回本團 1981 年 Elektra 首作（296736037，8 軌）與 1992 年選輯（725824911，14 軌），上架比對必須帶年份或 catno。**｜**封面：CAA RG 層有圖，本層未再探測。**｜**撞陳列**：〈Signed, Sealed & Delivered (I'm Yours)〉↔ 池中 `Stevie Wonder —《Signed, Sealed & Delivered》`(1970)，**翻唱、零母帶關係**；**本團 1981 年同名首作不在池中（實掃零命中），但在 Apple 上有——上架比對要帶 catno 54052。**｜**非選輯**：十二軌新錄音，MB `secondary-types` 空、Discogs 七筆 format 欄零個 `Compilation`／`Reissue`（第 1233 條兩個守門條件都過）。",
+  "key": "desc2:Pieces of a Dream|Pieces"
+ },
+ {
+  "artist": "Renee Rosnes",
+  "album": "As We Are Now",
+  "facts": [
+   {
+    "f": "release-group 4af238d2 的欄位：title「As We Are Now」、artist-credit `Renee Rosnes`、first-release-date **1997**（只有年）、primary-type Album、**secondary-types 空**。**轄下只有 1 筆 release**：eff8cc4f（1997 **US** Official CD **9 軌**，廠牌欄 `Blue Note / 56810`，**barcode 空**）。**MB 沒有建加拿大版、荷蘭版、日版——那三個版本 Discogs 上都有。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4af238d2-2ba2-49be-84b5-696fd1780a8c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **載體逐張查（第 1064 條）：只有 CD，四個國別、零黑膠零卡帶。** Discogs 查回 5 筆，全部掛 master 679301：**美版 5579687**（`72438 56810 2 8`）、**加拿大版 12165479**（廠牌欄 `EMI Music Canada`）、**荷蘭版 5621349**（廠牌欄第三格印 **`Van Gelder Studio, Englewood Cliffs, New Jersey`**）、**日版 16011283（`TOCJ-6140`，released `1997-08-27`）**。**五筆的 format 欄全是 CD。**",
+    "src": "https://api.discogs.com/database/search?artist=Renee%20Rosnes&release_title=As%20We%20Are%20Now&per_page=100"
+   },
+   {
+    "f": "**錄音是一天錄完的，而且盤面把日期寫死了**：Discogs 美版 5579687、加版 12165479、日版 16011283 三筆的 notes 逐字都是「**Recorded March 12, 1997**」。**地點由荷蘭版 5621349 的廠牌欄補上——第三格逐字印 `Van Gelder Studio, Englewood Cliffs, New Jersey`**，與 credits 裡 **Rudy Van Gelder 一人兼 Engineer／Mixed By／Mastered By** 互相印證。**製作是 Renee Rosnes 與 Don Sickler 兩人**（Rosnes 的 credits 欄逐字 `Piano, Producer`），助理錄音 Maureen Sickler，製作統籌 Warren Stewart，內頁 Gene Seymour，攝影 Alice Arnold，設計 Antoine Moonen。",
+    "src": "https://api.discogs.com/releases/5579687"
+   },
+   {
+    "f": "⚠ **編制欄本層逐筆回核：這是一個四人常設編制，credits 一筆都沒有帶軌號，沒有「只上一兩軌的客座」。** 四人是 **Renee Rosnes 鋼琴**、**Chris Potter 次中音＋高音薩克斯**（credits 欄逐字 `Tenor Saxophone, Soprano Saxophone`，**一個人兩支管，不是兩個人**）、**Christian McBride 貝斯**、**Jack DeJohnette 鼓**。**美版、加版、日版三筆 credits 完全相同，交叉核過。**",
+    "src": "https://api.discogs.com/releases/16011283"
+   },
+   {
+    "f": "**九軌與作曲歸屬（美版盤面逐軌）**：1 Black Holes 6:35（Rosnes）／2 The Land of Five Rivers 6:11（Rosnes）／3 Abstraction Blue (For Georgia O'Keeffe) 6:30（Rosnes）／4 Mizmahta 6:06（Rosnes）／5 **Non-Fiction 6:17（Walt Weiskopf，不是 Rosnes）**／6 Bulldog's Chicken Run 8:27（Rosnes）／7 As We Are Now 7:56（Rosnes）／8 **Absinthe 6:09（Chris Potter）**／9 **Pee Wee 5:27（Anthony Williams ＝ Tony Williams）**。**九軌裡 Rosnes 自己寫六軌，另外三軌分別是 Weiskopf、Potter 與 Tony Williams 的曲——正文不得寫成「全碟自作」。**",
+    "src": "https://api.discogs.com/releases/5579687"
+   },
+   {
+    "f": "⚠ **試聽抽核**：Apple `lookup id=724628754` 回 **9 軌、每軌有預覽**，軌名與美國原壓逐軌對上（Black Holes 406s／The Land of Five Rivers 373s／Abstraction Blue 392s／Mizmahta 369s／Non-Fiction 378s／Bulldog's Chicken Run 512s／As We Are Now 481s／Absinthe 371s／Pee Wee 326s），**十一個市場同一個 id**，releaseDate `1997-01-01`（年頭回填）、**copyright `℗ 1997 EMI Music Canada`（不是 Blue Note Records——與 Discogs 加拿大版 12165479 的廠牌欄吻合）**。",
+    "src": "https://itunes.apple.com/lookup?id=724628754&entity=song&limit=60&country=us"
+   },
+   {
+    "f": "⚠ **紙本三種字串全掃：本張零命中，而且四則 `rosnes` 命中全部是別張碟（第 1234 條那種誤讀，本層逐則剔除）**。1996／1997／1998 三份 Billboard 檔加 1996 年 Cash Box 檔查 **`rosnes`／`56810`／`as we are now`**：**`as we are now` 零命中**；**`56810` 的十四則全部是 Elton John 的 `ROCKET 568108/A&M`**（`Something About The Way You Look Tonight`／`Candle In The Wind 1997`）**與古典選輯的 `5 68104 2`，沒有一則是本張**；**`rosnes` 九則分別是**：1996-01-13 p51 加拿大唱片行的店內播放單、1996-05-04 p33 與 1997-03-08 p25 的音樂節名單、**1996-05-04 p33 與 1997-03-22 p60 講的是前一張《Ancestors》**（後者是加拿大 Juno 獎 `Best mainstream jazz album`）、1996-07-27 p37 的 Blue Note 全版廣告藝人列、1997-07-19 p83 是 **Niels-Henning Ørsted Pedersen 的碟、她在那張是側人**、1997-03-08 p47 是同名的 `Mort Drosnes`、CB-1996-09-14 p14 是一張她客串的選輯。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-03-22.pdf"
+   },
+   {
+    "f": "**撞陳列逐軌覆核**：九軌對池中 27,618 列的卡名**零命中**（第 1181／1192 條第六種盲區本張沒中）。**盤名層：池中 `As We Are Now` 只有本張一筆。** ⚠ **第 9 軌〈Pee Wee〉的作曲者是 Anthony（Tony）Williams**——**池中 Tony Williams 相關卡都要視為「同曲不同錄音」，不是母帶重疊**。⚠ **目錄號交叉（第 1274 條）**：`56810`／`72438 56810 2 8`／`TOCJ-6140` 丟回池中零命中。",
+    "src": "https://api.discogs.com/releases/12165479"
+   }
+  ],
+  "hookCandidates": [
+   "1997 年 3 月 12 日一天錄完，Van Gelder 一個人從錄音、混音做到母帶——九軌裡 Rosnes 自己只寫了六首，收尾那首〈Pee Wee〉是 Tony Williams 的曲",
+   "同一年 Billboard 提到她九次，沒有一次是這張：Juno 獎講的是前一張《Ancestors》，七月那則她是別人碟上的側人"
+  ],
+  "sound": "1997 年 3 月 12 日一天在 Englewood Cliffs 的 Van Gelder Studio 錄完的九軌，Rudy Van Gelder 一人包辦錄音、混音與母帶。固定四人編制：Rosnes 鋼琴、Chris Potter 一人吹次中音與高音兩支薩克斯、Christian McBride 貝斯、Jack DeJohnette 鼓——credits 一筆都沒帶軌號，四個人從頭到尾都在。曲長集中在六到八分半：〈Bulldog's Chicken Run〉8:27 最長，標題曲 7:56 次之。九軌裡 Rosnes 自己寫六首，另外三首是 Walt Weiskopf 的〈Non-Fiction〉、Potter 自己的〈Absinthe〉與 Tony Williams 的〈Pee Wee〉。美、加、荷、日四個國別，全部是 CD。",
+  "keyTracks": [
+   "Bulldog's Chicken Run",
+   "As We Are Now",
+   "Pee Wee"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 成立，本層未改判。** **四層同向**：MB frd 1997（只有年）＝ MB 唯一 release eff8cc4f（1997 US）＝ **Discogs 五筆條目（美 5579687／加 12165479／荷 5621349／日 16011283 `TOCJ-6140` released `1997-08-27`／master 679301）`year` 欄全 1997** ＝ **Apple 十一個市場同一個 id 724628754、copyright `℗ 1997 EMI Music Canada`**。**盤面自己也把錄音日寫死在 1997**（三筆 notes 逐字「Recorded March 12, 1997」）——**錄音年與發行年同年，物理上沒有別的可能。**⚠ **紙本零命中，而且是查實的零**：三種字串（`rosnes` 人名／`56810` 目錄號／`as we are now` 盤名）在 1996／1997／1998 Billboard 與 1996 Cash Box 四份檔全掃過，**九則 `rosnes` 命中逐則核過全部是別張碟或側人**（第 1234 條），**十四則 `56810` 全部是 Elton John 的 `568108`**（**這正是第 1245 條說的 OCR 目錄號陷阱：只查數字段會被別張碟的號碼吃掉**）。⚠ **第 879／1068 條：兩張爵士榜都查過，都零命中。**⚠ **日版 `TOCJ-6140` 比美版晚（`1997-08-27`），這一張不是「日版先發」的形狀。**",
+  "notes": "**覆核策展層：rgMbid `4af238d2-2ba2-49be-84b5-696fd1780a8c`／原盤 eff8cc4f／`72438 56810 2 8`／掛名 `Renee Rosnes`（池中已有 4 張）／年份 1997／`live: false`／`releaseType: Album` 全部成立。**｜⚠ **編制欄核過、**沒有**第 1069／1189／1195／1244 條那種客座問題**：Discogs 美／加／日三筆 credits 逐筆比對完全一致，**四個人都沒有帶軌號**。**唯一要提醒寫作層的是 Chris Potter 一個人吹兩支管**（credits 欄逐字 `Tenor Saxophone, Soprano Saxophone`），**不得寫成兩位薩克斯手**。｜⚠ **作曲歸屬（第 1180 條那一類）**：**九軌裡有三軌不是 Rosnes 寫的**——〈Non-Fiction〉Walt Weiskopf、〈Absinthe〉Chris Potter、〈Pee Wee〉Anthony（Tony）Williams。**正文不得寫成全碟自作。**｜⚠ **錄音地點的來源要記一筆**：**盤面 notes 只寫日期不寫地點**，`Van Gelder Studio, Englewood Cliffs, New Jersey` 是從 **Discogs 荷蘭版 5621349 的廠牌欄第三格**讀出來的（**與第 1265 條「廠牌欄裡混進非廠牌專有名詞」同一種讀法，只是這次混進來的是錄音室不是場館**），並與 credits 的 Rudy Van Gelder 交叉吻合。｜⚠ **載體（第 1064 條）：只有 CD**，MB 一筆、Discogs 五筆零 Vinyl 零 Cassette。｜**試聽：已 ready，本層抽核過**（Apple 724628754，9 軌逐軌對上，11 市場同一個 id），**串流採信 724628754**；⚠ **Apple 的 copyright 是 `EMI Music Canada` 不是 Blue Note Records，正文不得據此改廠牌歸屬**（MB／Discogs 廠牌欄都是 Blue Note）。｜**封面：CAA RG 層有圖，本層未再探測。**｜**撞陳列：九軌對池中 27,618 列零命中，盤名層也零命中。**｜**非選輯**：單一場次、單一編制的新錄音，`secondary-types` 空、Discogs 五筆 format 欄全乾淨。",
+  "key": "desc2:Renee Rosnes|As We Are Now"
+ }
+]
