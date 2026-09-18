@@ -608,12 +608,12 @@ Three Blind Mice, Volume 2 1990（兩刊全年零命中，目錄 CD 不進新片
   ⚠ **Lou Rawls《At Last》第一次打回 HTTP 500、第二次才拿到 2 圖**——**第 589a 條再證：5xx 不等於 404，不重試就會誤記成缺封面。**
   ⚠ **Stanley Jordan《Cornucopia》的 CAA 來源 release 是歐版（XE「MADE IN UK」）不是美國原壓**，研究層看版式要注意。
 
-## 第 997 條（同批）：**掛名 13 個新字串、1 個收攏、0 新造分裂；兩個「MB credit name 與底層實體不同名」的案例**
+## 第 997 條（同批）：**掛名 7 個沿用、7 個新字串、1 個收攏、0 新造分裂；兩個「MB credit name 與底層實體不同名」的案例**
 
-- **沿用池中既有字串 2**：`Andrew Hill`（14 張）、`McCoy Tyner`（12 張）、`Michel Petrucciani`（2 張）、`Lou Rawls`（3 張）、`Tony Williams`（2 張）、`Gil Mellé`（2 張，皆待上架）、`日野皓正`（6 張）——**七個**。
+- **沿用池中既有字串 7**：`Andrew Hill`（14 張）、`McCoy Tyner`（12 張）、`Michel Petrucciani`（2 張）、`Lou Rawls`（3 張）、`Tony Williams`（2 張）、`Gil Mellé`（2 張，皆待上架）、`日野皓正`（6 張）——**七個**。
 - **收攏 1**：`Art Blakey & The Jazz Messengers`（MB 群組 209ddf15）→ **`Art Blakey and the Jazz Messengers`**（池中 19 張，且與 c-139 a 的 Vol. 1 卡同字串）；
   `audits/pool-artist-name-splits.md` 第 409 行已記這組 `&`／`and` 分裂，**本卡不新增第三種寫法**。
-- **新字串 6**：`Jack Walrath`、`Rick Margitza`、`Eliane Elias`、`Tommy Smith`、`Rita Reys`、`Stanley Jordan`、`Bobby Watson & Horizon`（**七個，池中皆 0 張**）。
+- **新字串 7**：`Jack Walrath`、`Rick Margitza`、`Eliane Elias`、`Tommy Smith`、`Rita Reys`、`Stanley Jordan`、`Bobby Watson & Horizon`（**池中皆 0 張**）。**7 沿用 ＋ 7 新 ＋ 1 收攏 = 15 張。**
 - ⚠ **兩個 MB 的 artist-credit `name` 與底層實體主名不同的案例**：
   - **`Bobby Watson & Horizon`**：credit name 是團名，底層實體是 72973c64 **`Bobby Watson`**（Person）。
     **Discogs 藝人欄、Billboard／Cash Box 的榜單、Apple 的 artistName 四處都寫「Bobby Watson & Horizon」**，故照 credit 寫；
