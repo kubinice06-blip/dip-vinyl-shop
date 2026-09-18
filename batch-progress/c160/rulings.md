@@ -833,7 +833,7 @@ frd `2007-11-29`、primary-type `Album`、**secondary-types 空**、genres 逐�
 
 | 用哪一層定年 | 張 | 說明 |
 |---|---:|---|
-| **紙本的 `Release Date:` 行** | **5** | Blanchard（Aug. 14）、Mingus（July 17，**兩篇互相對上**）、Marsalis（March 6，**三篇對上**）、Floratone（Aug. 14，**評介＋專文**）、Stacey Kent（Oct. 2）、Tolliver（Jan. 16）——⚠ **實際是 6 張，其中 Ron Carter 那張的紙本街頭日被第 1654 條判為「只對美國市場有效」，不計入。** |
+| **紙本的 `Release Date:` 行** | **6** | Blanchard（Aug. 14）、Mingus（July 17，**兩篇互相對上**）、Marsalis（March 6，**三篇對上**）、Floratone（Aug. 14，**評介＋專文**）、Stacey Kent（Oct. 2）、Tolliver（Jan. 16）——⚠ **Ron Carter 那張的紙本街頭日（June 19）被第 1654 條判為「只對美國市場有效」，不計入本列。** |
 | **Discogs 零售條目的完整街頭日** | **4** | Moulin（2007-01-08，**Apple 逐日相符**）、Fresu Devil Quartet（2007-11-12，**MB 逐日相符**）、Truffaz（2007-03-12）、Mingus（2007-07-17） |
 | **MB 實體 release 的日期** | **5** | Trio Töykeät（2007-03-28 FI）、Trijntje（2007-11-28 NL）、Kenny Werner（2007-03-06 US）、Stacey Kent 的 GB／XW 兩筆、Charlap（⚠ 國別存疑，見下） |
 | **只有年份、四層一致** | **4** | Bosso、Fresu Quintet、Petrella、Gino Paoli |
@@ -954,3 +954,205 @@ Apple 十四市場逐字 `Charles Tolliver Big Band —《With Love》`；`BB-20
 | **Kenny Werner《Lawn Chair Society》** | **genres 欄空、tags 只有 `jazz and blues`** | **第三層（行為體）：爵士鋼琴三重奏 ＋ Top Jazz Albums 上榜 ＋ Blue Note** |
 
 ⚠ **「MB genres 兩欄全空」本組 4 張**（Bosso、Moulin、Di Battista、Tolliver）——**第 1594 條：空 genres 只是訊號不是判準，四張都用軌目＋目錄號比對過全 slice 45 筆，沒有重複 RG。**
+
+---
+
+## 第 1661 條（同批，**重要**）：**撞陳列 30 處／14 張；⚠ 直接撞 apex 卡名 0 處，但曲目／藝人層貼到 apex 的有 4 組、涉及 apex 卡 9 張；`chk-prop` 四道全過、一個燈都沒亮**
+
+**掃法（第 1370 條的形狀檢查先做）**：先印出 `seed_cards.json` 前兩列確認是「陣列的陣列」（index 0 藝人／1 盤名／5 曲風／6 年份／**8 apex tier**）再掃；
+掃 `seed_cards.json` 17,248 列 ＋ `desc-tools/batches/cards/` 197 檔 ＋ 所有 `batch-progress/c*/prop-*.json` 219 檔（含同批 a 組的 `prop-a.json`），**合計 27,990 列**，
+**把本批 248 個軌名逐一比對池中卡名。**
+
+### （一）軌名＝池中卡名 30 處／14 張（收下的 20 張；全 22 筆含退件是 33 處）
+
+| 卡 | 處 | 撞到 |
+|---|---:|---|
+| **Ron Carter《Dear Miles,》** | **5** | 〈Seven Steps to Heaven〉〈My Funny Valentine〉〈Bag's Groove〉〈Someday My Prince Will Come〉→ **`Miles Davis` 的四張同名 seed 卡**；〈Someday…〉另撞 `Wynton Kelly`；〈Bye Bye Blackbird〉→ `Keith Jarrett, Gary Peacock, Jack DeJohnette` |
+| **Floratone《Floratone》** | **4** | 〈The Wanderer〉→`Donna Summer`／〈The Passenger〉→`Mieczysław Weinberg`（歌劇）／〈The Future〉→`Leonard Cohen`＋`Guy`／〈Frontiers〉→`Journey` |
+| **Charles Mingus《Cornell 1964》** | **3** | 〈Sophisticated Lady〉→`北村英治`／〈Take the “A” Train〉→`宮間利之とニューハード`／〈Meditations〉→`John Coltrane`＋`Cory Wong`＋`Carl Craig` |
+| **Stacey Kent《Breakfast…》** | **3** | 〈Landslide〉→`Dexter Gordon`／〈Never Let Me Go〉→`Placebo`＋**`Stanley Turrentine`**／〈What a Wonderful World〉→`山本剛トリオ` |
+| **Charles Tolliver《With Love》** | **3** | 〈With Love〉→`Zomby`＋`Fatback`／〈'Round Midnight〉→`Alan Broadbent`／〈Right Now〉→**`Jackie McLean —《Right Now!》`**＋`Wizz Jones` |
+| **Fabrizio Bosso《You've Changed》** | **2** | 〈The Nearness of You〉→`Helen Merrill`＋`Dianne Reeves`／〈Nuovo cinema Paradiso〉→`Ennio Morricone` |
+| **Trijntje《Who’ll Speak for Love》** | **2** | 〈Any Day Now〉→`Chuck Jackson`／〈What the World Needs Now〉→`Public Image Ltd`＋`Professor Alex Bradford` |
+| **Di Battista《Trouble Shootin'》** | **2** | 〈Midnight Blue〉→**`Kenny Burrell`**／〈The Jody Grind〉→**`Horace Silver`**（**兩張母體都在池中**） |
+| 其餘 6 張各 1 處 | **6** | Blanchard〈Mantra〉→`Shelter`／Moulin〈Welcome to the Club〉→`Nat King Cole`／Gino Paoli〈Stardust〉→ 池中五張同名卡／Töykeät〈Voyage〉→`ABBA`／Van Hunt〈Feelings〉→ 池中四張同名卡／Petrella〈Evidence〉→`Steve Lacy` |
+
+⚠ **30 處全部是「曲名對盤名」，沒有一處是同碟**（第 738／859 條的軌目比對做完）。
+
+### （二）⚠ 貼到 apex 的 4 組（**直接撞 apex 卡名 0 處**，但下游鉤子層必須迴避）
+
+| 本組的卡 | 貼到哪張 apex | 形狀 |
+|---|---|---|
+| **Mingus《Cornell 1964》** | **`Charles Mingus —《Mingus Ah Um》`（hall）、`Charles Mingus Presents Charles Mingus》`（hall）、`Eric Dolphy —《Out to Lunch!》`（heresy）** | **〈Fables of Faubus〉是前兩張 apex 的招牌曲（第二張叫〈Original Faubus Fables〉）；Dolphy 是本盤的共同掛名者** |
+| **Ron Carter《Dear Miles,》** | **`Miles Davis` 的四張 apex（《Kind of Blue》《Bitches Brew》《Birth of the Cool》《Ascenseur pour l'échafaud》，全部 hall）** | **整張是 Miles 致敬盤，十軌有六軌是 Miles 的曲單** |
+| **Wynton Marsalis《From the Plantation…》** | **`Wynton Marsalis —《Black Codes (From the Underground)》`（hall）** | **同掛名，同一位藝人的社會批判主題** |
+| **Charles Tolliver《With Love》** | **`Thelonious Monk —《Brilliant Corners》`（hall）、《Genius of Modern Music, Volume 1》（hall）** | **〈'Round Midnight〉的大樂團版** |
+
+⚠ ⚠ **這四組是本組交給下游的最重要一件事**：**九張 apex 卡的敘事已經寫過，本組這四張的簡介必須另闢說法**，不得重複王牌卡的論述。
+
+### （三）`chk-prop` 四道全過
+**`node batch-progress/c160/chk-prop.mjs b` → 標記 0**（123 批、4,985 卡；跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0）。
+⚠ **第 611 條的五種盲區本組逐一手掃**：群組掛名 vs 個人掛名（Fresu 三個編制、Charlap 兩形、Tolliver 的 Big Band 形）、Volume 碟（無）、
+**MB 同碟兩個 RG（全 slice 45 筆用「軌目＋目錄號」比對，0 筆）**、斜線掛名（Petrella）、同名不同盤（Charlap 的《Live at the Village Vanguard》**與池中的 Bill Evans 系列同名不同碟**）。
+
+---
+
+## 第 1662 條（同批）：**店面與 CAA——⚠ 「四種查法全空」2 次；`lookup?upc=` 救回 1 張；CAA 有圖 16／20**
+
+**三種店面查法（第 254 條，只寫觀察不寫結論）逐張跑完，市場涵蓋 14 個**
+（us／gb／jp／de／nl／fr／it／**fi／se／no／dk／es／pl**／ca，**2026-09-18 附錄要求的 `fi/se/no/dk/it/es/pl` 全部涵蓋**）：
+
+| 覆蓋 | 張 | 名單 |
+|---|---:|---|
+| **14 市場全中** | **9** | Blanchard、Truffaz、Fresu Quintet、Floratone、Stacey Kent、Charlap、Kenny Werner、Tolliver、Moulin（⚠ **Moulin 的 it 市場只回 11 軌版與單曲、沒有 10 軌原盤**） |
+| 12–13 市場 | **7** | Bosso（13，**us 空**）、Mingus（13，**ca 空**）、Gino Paoli（12，**us／jp 空**）、Töykeät（12，**us／ca 空**）、Trijntje（12，**jp／ca 空**）、Fresu Devil（12，**jp／ca 空**）、Petrella（13，**ca 空**） |
+| **`search` 全空、`lookup?upc=` 救回** | **1** | **Wynton Marsalis**（見下） |
+| **只有 3 市場** | **1** | **Van Hunt（us／gb／ca，歐陸與日本十一市場全空）** |
+| ⚠ **四種查法全空** | **2** | **Ron Carter《Dear Miles,》**（14 市場 `search` ×2 種字串 ＋ `lookup?upc=094639254729` 九市場，全 0）、**Stefano Di Battista《Trouble Shootin'》**（同樣四種全空） |
+
+⚠ **`lookup?upc=` 救回 1 張**：**Wynton Marsalis《From the Plantation to the Penitentiary》的 `search` 端點十四市場全部 0 命中**，
+**`lookup?upc=094637367520` 才回 id=1700274220（`releaseDate 2007-03-06`，與紙本街頭日逐日相符）**——**第 1605 條的救援在本組成立一次、失敗兩次。**
+⚠ ⚠ **同一張碟換查詢字串結果天差地別**：**Charles Tolliver 打 `Charles Tolliver` 十四市場全 0、打 `Charles Tolliver With Love` 十四市場全中**
+——**第 254 條「三種查法」不是形式，是必要條件。**
+⚠ **店面的軌數與實體不符 5 張**（Mingus 11 vs 10、Trijntje 16 vs 15、Kenny Werner 12 vs 10、Truffaz 15 vs 10、Stacey Kent 13 vs 12）——**第 528／707 條：下游取固定試聽必須逐軌核。**
+⚠ **℗ 欄逐字寫的是製作公司而不是廠牌 3 張**（Truffaz `Foufino Productions`、Stacey Kent `Token Productions`、Trijntje `Universal Music B.V.`）——**第 1601 條連續成立。**
+
+**CAA（release-group 層）**：**有圖 16／20**；**404 四張**：**Fabrizio Bosso、Gianluca Petrella、Kenny Werner、Charles Tolliver**
+（⚠ **退掉的兩張反而都有圖**）。**圖最多的是 Erik Truffaz（12 張）與 Paolo Fresu Quintet（10 張）。**
+
+---
+
+## 第 1663 條（同批）：**(戊) 前置閘判了 20 次過閘、0 次退；⚠ a 組第 1633 條的 `Blue Note Label Group` 部門名在本組 0 次**
+
+- **22 筆的 MB `label-info` 逐字都是 `Blue Note [713c4a95]`（正規 imprint）**，**沒有一筆掛 `Blue Note Label Group [2eb19785]`**
+  ——**a 組交接第 2 句在本組一次都沒有用上**（⚠ **但那是因為本組幾乎全是 2007 年的新錄音；不代表那句話失效**）。
+- **`Pacific Jazz`／`Capitol Jazz`／`West Coast Classics`／`Roulette Jazz` 四條復刻線本組 0 次。**
+- **唯一一次需要細看廠牌欄第二格的是 Charles Tolliver（`Mosaic Records`）**——**查出來是共同發行掛名不是母體，過閘**（第 1659 條）。
+- **`Blue Note Connoisseur Series` 出現 1 次（Turrentine），判 (乙) 退**（第 1652 條）。
+- ⚠ **歐洲分支全是正規發行**：**本組 13 張歐陸盤（義 5、法 3、荷 2、芬 1、比 1、其中 Bosso 與 Petrella 的發行公司逐字是 `EMI Music Italy`、Truffaz 是 `EMI Music France`、Töykeät 是 `OY EMI Finland AB`、Moulin 是 `EMI Music Belgium`、Trijntje 是 `EMI Music Netherlands BV`）
+  沒有一張因為「是歐洲分支」被排除**（簡報附錄那句話在本組第 13 次成立）。
+
+---
+
+## 第 1664 條（同批）：**紙本——2007 全年用 a 組剛入庫的檔，本棒沒有重抓；命中 9／20，但九張全部是美國盤**
+
+⚠ **開工先檢查，沒有重演 c-159 b 的覆寫事故**（第 1598 條）：**`batch-progress/enum/billboard-bn-2007-ocr.txt.gz`（a 組 21:33 入庫，1.8 MiB）直接 `gzip -dc` 解到 scratchpad 讀，repo 內的檔一字未動。**
+
+| 命中形態 | 張 | 逐筆 |
+|---|---:|---|
+| **`Reviews` 欄的 `Release Date:` 行** | **6** | Blanchard（Aug. 14）／Mingus（July 17）／Marsalis（March 6）／Floratone（Aug. 14）／Ron Carter（June 19，**美版**）／Stacey Kent（Oct. 2）／Tolliver（Jan. 16）＝**7 行**（Ron Carter 那行不採為 `year`，見第 1654 條） |
+| **榜位（Top Jazz Albums）** | **5** | **Mingus 空降第 1**（`BB-2007-08-04` p41 逐字「Charles Mingus earns his highest-charting album on Top Jazz Albums」）／**Marsalis 第 2**（`BB-2007-03-31`）／Charlap（`BB-2007-06-09`）／Kenny Werner（`BB-2007-03-31`）／Floratone（`BB-2007-09-01`） |
+| **專文／發行預告** | **3** | Mingus（`BB-2007-07-07` p65 的專文，**「previously unreleased tapes」這句是 (甲) 的關鍵證據**）／Floratone（`BB-2007-08-18` p42–43 的 Frisell 專訪）／Marsalis（`BB-2007-01-06` p28 的發行預告） |
+| **0 命中** | **11** | **Bosso／Fresu ×2／Petrella／Di Battista／Gino Paoli／Trijntje／Gare du Nord／Töykeät／Moulin／Truffaz／Van Hunt／Turrentine** |
+
+⚠ ⚠ **「歐陸掛名在美國紙本零命中」在本組 100% 成立**：**13 張歐陸盤 0 命中，9 張美國盤 9 張全中**——
+**a 組交接第 1 句（「不要為歐陸盤耗時，證據重心放 Discogs」）在本組完全正確，本棒依此把查詢預算轉去 Discogs 與店面。**
+⚠ **OCR 斷字在本組出現 2 次**（`Wynton Marsa /ls`、`BLUE NOTE 74896/**8LG**`）——**換片段查一輪就出來，「紙本零命中」沒有被推翻的案例。**
+⚠ **`Cash Box` 本組 0 次使用**（1996 停刊，本段無檔）。
+
+---
+
+## 第 1665 條（同批）：**編制欄——第 1367 條的四種形狀本組全中；⚠ 「完全查不到」的兩張，一張是宣傳盤沒印 credits、一張是 Discogs 只列掛名不列樂器**
+
+| 形狀 | 張 | 名單 |
+|---|---:|---|
+| **固定編制（全張同一組人）** | **9** | Blanchard（五重奏＋Northwest Sinfonia）／Mingus（六重奏）／Truffaz（四重奏）／Marsalis（四重奏＋Jennifer Sanon）／Ron Carter（四人）／Töykeät（三人）／Stacey Kent（五人）／Fresu Devil Quartet（四人）／Charlap Trio（三人） |
+| **固定核心＋有軌號客座** | **8** | Bosso（Marcozzi 7、8 軌）／Moulin（Duvall 詞 1,2,4–6,8；Moulin 詞 10）／Fresu Quintet（Cipelli 人聲第 2 軌）／Floratone（Viktor Krauss 掛 `Guest`）／Trijntje（Bacharach 掛 `Featuring`，鋼琴 5,8,10 軌另錄）／Petrella（Papadia 3,6–8,12,13；Padovani 3,4）／Kenny Werner（Pickett 第 8 軌木笛）／Tolliver（**鋼琴逐軌分工：Cowell 2–4、Glasper 1,5–7；Ched Tolliver 第 6 軌**） |
+| **逐軌變動** | **1** | **Di Battista**（Malone 1,5–7,11／Bosso 2,4,5,8–10／Stilo 3,6／Legnini 11——**四位客座各有各的軌號**） |
+| ⚠ **完全查不到** | **2** | **Van Hunt《Popular》**（**Discogs 只有宣傳盤條目，credits 欄逐字只有「Producer: Van Hunt」一行**）／**Gino Paoli《Milestones》**（**Discogs 的 credits 欄只有製作與錄音人員，七位樂手只出現在掛名欄、沒有任何樂器分工**） |
+
+⚠ **本組沒有「獨奏盤」**（c-159 b 有 1 張）。
+
+---
+
+## 第 1666 條（同批）：**MB 這一批的毛病**（第 1183／…／1512／1574／1638 條那張表的續筆）
+
+| # | 毛病 | 本組實例 |
+|---:|---|---|
+| 1 | **frd 挑錯 release**（取了限量版／晚版的日期） | Marc Moulin（frd `2007-01-12` ＝ GB 限量版，真正首發 `2007-01-08`） |
+| 2 | **frd 把兩個市場的日期拼在一起** | **Ron Carter（`2007-07-19` ＝ 日版的 `7-19` ＋ 美版的 `2007`）** |
+| 3 | **國別登記錯（美版被記成歐洲盤）** | Floratone（`DE`，實體 notes 逐字「Made in USA」）／Bill Charlap Trio（`GB`，且日期比美國上榜還晚兩天） |
+| 4 | **把 barcode 當目錄號填進 catno 欄** | Wynton Marsalis 巴西版（`094637367520`）／Floratone（`094639387922`）／Gino Paoli（`094639436224`） |
+| 5 | **catno 欄是裸數字，不可反查**（第 1250 條） | Ron Carter（`3925472`）／Kenny Werner（`74896`）／Marsalis 美版（`73675`）／Töykeät 加版（`3930582`） |
+| 6 | **同一個 RG 裡兩筆 release 的 artist-credit 不同形** | **Mingus（實體 `…Sextet with Eric Dolphy`／數位 `…Sextet & Eric Dolphy`）**／**Trijntje（RG 層聯名、兩筆 release 裸名）** |
+| 7 | **把宣傳盤登記成 `Official`** | **Van Hunt（Discogs format 逐字 `CD, Advance, Album, Promo`，MB 登 Official，直接害 frd 錯十年）** |
+| 8 | **media / format 欄空或 `None`** | Di Battista（`None`，slice 的 `format` 欄因此是 `?`）／Truffaz 兩筆 label-info 空 |
+| 9 | **合輯的逐軌掛名一半對一半錯** | **Gare du Nord（三筆 release：一筆逐軌正確、兩筆整張掛給選曲人）** |
+| 10 | **title 欄夾帶掛名的一部分** | **Charles Tolliver（`Big Band With Love`）**／**Paolo Fresu Quintet（相反方向：artist-credit 夾帶盤名的一部分）** |
+| 11 | **缺日版與再發**（第 1512 條第 3 種，本組 15 張都中） | 日版 TOCJ／TOCP 缺 8 張、唱片俱樂部版缺 5 張、宣傳盤缺 9 張 |
+
+---
+
+## 第 1667 條（同批）：**a 組交接的六句話逐一回報**
+
+| a 組的話（第 1640 條結尾） | 本組實況 |
+|---|---|
+| 1. **Billboard 已覆蓋 1955→2007，直接 `zgrep` 不要重抓；但 2007 那一格產出很差** | ⚠ **照辦，沒有重抓**（解壓到 scratchpad 唯讀使用）。**產出比 a 組好得多：本組 20 張命中 9 張（a 組 18 張只中 3 張）**——**差別不在年份而在國別：本組的 9 張美國盤全中、13 張歐陸盤全 0。給後批的修正是「先數清單裡有幾張美國盤，再決定要不要花時間」。** |
+| 2. **`Blue Note Label Group [2eb19785]` 是部門名不是 imprint** | **本組 0 次**：22 筆的 label-info 逐字都是 `Blue Note [713c4a95]`（第 1663 條）。**那句話沒有被推翻，只是本組沒有樣本。** |
+| 3. **`Connoisseur Series` 同時出 (乙) 與 (甲)，判生死看 Discogs `format` 與 notes 前兩行** | ⚠ ⚠ **本組唯一一次 `Connoisseur Series` 就用這一句判掉**：**Turrentine《A Bluish Bag》的 `format` 逐字含 `Compilation`、notes 前兩行逐字寫出兩個母體目錄號 → (乙) 退**（第 1652 條）。**a 組那句話成立。** |
+| 4. **(丙) 的偵測訊號有三種，`slice.json` 的 `note` 欄只是其中一種** | **本組 (丙) 0 筆**；但三種訊號逐張查過：**「MB 轄下 release 的廠牌欄不只一家」本組 3 次（Fresu Quintet ＋EMI、Di Battista ＋EMI、Truffaz ＋Foufino Productions），三次都是共同發行不是母體**；**「轄下 release 軌數不一致」本組 4 次（Moulin 10/13、Truffaz 10/12/15、Stacey Kent 12/13/22、Trijntje 15/16），四次都是版本差異不是他廠。** |
+| 5. **列舉檔有第二種漏建（`label` 欄 null 的 release 看不見）** | **本組沒有新樣本**（22 筆的 label 欄都有值）。⚠ **但本組發現另一種「列舉檔看得見卻判不準」的形狀**：**Van Hunt《Popular》的 MB frd 是 2007，實際首發是 2017——列舉檔依 frd 排序與分期，這種碟會被排進錯的批次**（第 1655 條）。 |
+| 6. **`slice.json` 的 RG title 會夾帶 U+2010，寫 prop 前先過一次非 ASCII 連字號檢查** | ⚠ **照辦**：22 筆的 `artist`／`album` 兩欄逐一過檢，**U+2010 0 筆**；**有 2 筆帶 U+2019 右單引號（Blanchard《A Tale of God’s Will》、Trijntje《Who’ll Speak for Love》）——`chk-prop` 不擋（與 c-159 b 的 `Al Green —《Everything’s OK》` 同形），保留原題。** |
+
+---
+
+## 第 1668 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案，以及「這一段實際用的是哪幾層證據」**
+
+- **`batch-progress/c160/prop-b.json`：20 張、20 位**（**`Paolo Fresu` 兩張，掛名是兩個不同編制**）。**第 315 條：20 ＋ 退表 2 ＝ 22 ✓。**
+- **`node batch-progress/c160/chk-prop.mjs b` → 標記 0**（123 批、4,985 卡）。
+- **年份改判 2 張、覆核成立 18 張。**
+- **中間檔**（scratchpad `c160b/`，第 533 條，**不在 repo 內**）：
+  `mbfetch.py`＋`mb/`（**22 筆 × 2 端點 ＝ 44 個 JSON，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s、零 FETCH-FAIL**）、
+  `summ.py`（MB 摘要）、`dg.py`＋`dgsearch.py`＋`dgrel.py`＋`dg/`（Discogs `api.discogs.com` 的 `database/search`（含 `catno=` 查法）與 `releases/<id>`，**未授權端點可用、2.6 s/req**）、
+  `store.py`＋`strun.py`＋`st/`（Apple `search` × **十四市場** us／gb／jp／de／nl／fr／it／**fi／se／no／dk／es／pl**／ca ＋ `lookup?upc=` × 九市場）、
+  `poolscan.mjs`＋`pool.json`（掃 `seed_cards.json` 17,248 列 ＋ `desc-tools/batches/cards/` 197 檔 ＋ 所有 `batch-progress/c*/prop-*.json` 219 檔，**合計 27,990 列**；**第 1370 條的形狀檢查先做**）、
+  `tracks.json`＋軌名掃描（**248 個軌名逐一比對池中卡名，抓出 33 處**）、`bbg.py`＋`bb2007.txt`（**a 組那份 gz 的唯讀解壓副本，repo 內的檔一字未動**）、
+  CAA release-group 層探測（20／22 有圖）、`build/lib.py`＋`b1.py`～`b4.py`（**分四次寫 prop、每 5 筆落一次磁碟，符合續跑要求**）。
+- **本棒改動的檔案（兩個）**：
+  1. **`batch-progress/c160/prop-b.json`（20 張，新建）**；
+  2. **`batch-progress/c160/rulings.md`（**只在檔尾 append 第 1650–1668 條；a 組的第 1620–1640 條與留白的 1641–1649 一字未改，append 前另存了一份備份到 scratchpad**）**。
+  **沒有動** `seed_cards.json`（唯讀掃描）／`apex_pool.json`（**repo 根目錄不存在，apex 資訊全部從 `seed_cards.json` 第 9 欄取，池中 917 張 apex 卡**）／`PROJECT_MEMORY.md`／KV／Firestore／
+  `batch-progress/enum/blue-note.json`／**`batch-progress/enum/billboard-bn-2007-ocr.txt.gz`（a 組的檔，一字未改，也沒有重抓）**／`batch-progress/enum/SOURCES-billboard-cashbox.md`／
+  `batch-progress/c160/slice.json`／`batch-progress/c160/chk-prop.mjs`／**`batch-progress/c160/prop-a.json`（a 組的檔）**／git。
+- ⚠ **號段**：b 組用 **1650–1668**，**1669–1679 留白；1680–1689 留給下一批。**
+
+**這一段實際用的是哪幾層證據**（與第 1543／1578／1609／1640 條那張表對齊）：
+
+| 層 | 用上幾張 | 說明 |
+|---|---:|---|
+| **① 同期紙本（Billboard）** | **9／20** | **比 a 組（3/18）好三倍，但全部集中在 9 張美國盤上**：6 張拿到街頭日、5 張有榜位、3 張有專文；⚠ **13 張歐陸盤 0 命中**（第 1664 條）。 |
+| **② Discogs 原壓群** | **20／20** | **地基層，本組回到滿分**（a 組因 Norah Jones 一張缺條目破功）。獨有的資訊：**兩筆退件的判準 2/2（(乙) 的母體目錄號、合輯的逐軌來源）**、**年份改判 2 張的關鍵證據 2/2（日版零售條目＋宣傳盤 notes＋目錄號序列；2017 年數位條目）**、**完整街頭日 4 張**、**notes 裡的錄音日 13 張**、**逐軌編制 9 張**、**第二／第三個目錄號 6 張**。 |
+| **③ 廠牌官網／新聞稿** | **0** | ⚠ **連續第七組 0。** |
+| **④ 店面 ℗ 欄與 releaseDate** | **18／20** | **只當第三順位**；⚠ **15 張的 `releaseDate` 是年初佔位日、3 張的 ℗ 欄寫的是製作公司而非廠牌、5 張的軌數與實體不符**；**四種查法全空 2 張**（第 1662 條）。 |
+| **⑤ AllMusic** | **0** | ⚠ **本線連續第七組零 AllMusic。** |
+| **⑥ 維基百科** | **2** | ⚠ **連續第三組派上用場，兩次都是決定性的**：**Van Hunt 條目逐字「2008 album, Popular, was shelved and was not released until 2017」（直接定了改判十年）**、**`Cornell 1964` 條目逐字「thought to be lost… released for the first time in 2007」（(甲) 的第二層證據）**。 |
+
+⚠ **「只剩 Discogs 一層」的碟要點名（寫作層與研究層要知道證據有多薄）**：**6 張**——
+**Fabrizio Bosso《You've Changed》**（紙本 0 ＋ CAA 404 ＋ Discogs 只有一個零售條目）、
+**Gianluca Petrella《Kaleido》**（紙本 0 ＋ CAA 404）、
+**Stefano Di Battista《Trouble Shootin'》**（⚠ **最薄：紙本 0 ＋ Apple 四種查法全空 ＋ 盤面 ℗ 年與發行年打架**）、
+**Paolo Fresu Devil Quartet《Stanley Music!》**（紙本 0 ＋ Discogs 條目一個 ＋ credits 只有四行）、
+**Paolo Fresu Quintet《Rosso, verde, giallo e blu》**（紙本 0 ＋ Discogs 條目一個）、
+**Marc Moulin《I Am You》**（紙本 0，僅 Discogs 與店面）。
+**→ 這六張的正文不得引用任何榜位或評介，也不得寫「廣受好評」一類無來源的話。**
+⚠ **反過來，證據最厚的三張是 Mingus《Cornell 1964》（紙本三篇＋榜首＋維基＋Discogs）、Floratone（紙本評介＋專訪＋榜位）、Marsalis（紙本三篇＋榜位第 2）**
+——**這三張的正文可以放心引用榜位與評介原句。**
+
+**給 c-161 起的批次的六句話**：
+1. ⚠ ⚠ **紙本值不值得查，看的是「清單裡有幾張美國盤」，不是年份**（第 1664 條）——**本組 9 張美國盤全中、13 張歐陸盤全 0；
+   a 組同一批只中 3 張，因為他們那半邊歐陸盤更多。開工先數國別，再決定查詢預算。**
+2. ⚠ ⚠ **日版早於歐美版的碟，用「目錄號序列」定年**（第 1654 條，本組新立）——
+   **抓它前後各兩個目錄號的 Discogs `released` 排一次序，單調遞增就是真的。Ron Carter《Dear Miles,》靠這一招把年份從 2007 拉回 2006；
+   MB 的 frd 在這種碟上會把日方的月日配上美方的年份。**
+3. ⚠ ⚠ **`format` 欄逐字是 `Promo`／`Advance` 的碟，MB 會把它登成 `Official` 並拿它當 frd**（第 1655 條，本組新立）——
+   **Van Hunt《Popular》2007 年壓的全是宣傳盤、2017 年才商業發行，差了十年。
+   看到 Discogs 全庫的同年條目沒有一個是零售盤，就要往後找真正的首發，不要退件。**
+4. ⚠ ⚠ **合輯的第二種抓法：打 `release?release-group=<id>&inc=recordings+artist-credits` 看逐軌掛名**（第 1653 條，本組新立）——
+   **RG 端點的 `secondary-types` 與 genres 在 Gare du Nord 那張上完全乾淨，逐軌掛名一看就是十一位不同藝人的 Blue Note 原錄音。
+   盤名帶 `<系列名> With <團名>` 結構的一律這樣查。**
+5. ⚠ ⚠ **「三邊用團名形就建新字串」是必要條件不是充分條件**（第 1657 條（四），本組新立）——
+   **池中已有同一位藝人、同一套作品（同系列／同編制／同企劃）的既有字串時，第 307 條壓過它。
+   本組 Gino Paoli 走聯名新造、Trijntje 走沿用裸名，分界就在這裡。**
+6. ⚠ **同一串字會在不同來源落在不同欄**（第 1658 條，本組新立）——
+   **`Plays the music of…`／`Big Band`／`With Strings` 這類字串，MB 可能放掛名欄、Discogs 可能放盤名欄。
+   寫 prop 前把三個來源的「掛名欄＋盤名欄」並排看一次，再決定卡名與掛名各取什麼。**
