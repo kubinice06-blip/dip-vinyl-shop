@@ -1,0 +1,246 @@
+[
+ {
+  "key": "desc2:Michel Petrucciani|Promenade With Duke",
+  "artist": "Michel Petrucciani",
+  "album": "Promenade With Duke",
+  "facts": [
+   {
+    "f": "release-group 2a4e21e7 的欄位（本層重查，與策展層一致）：title「Promenade With Duke」、artist-credit「Michel Petrucciani」（Person **2b75141c**，FR、disambiguation「FR | jazz」）、first-release-date **1993**（只有年）、primary-type Album、secondary-types **空**、tags [jazz, swing]、轄下 3 個 release。release 端點三筆：**51109f48**（1993 **XE** Official CD 9 軌，Blue Note `0777 7 80590 28`，barcode 077778059028）、**e0dd6281**（1993 US Official CD 9 軌，Blue Note `CDP 0777 7 80590 28`，同 barcode）、**896b7777**（1993 US Official，**media 的 format 欄是 null、無廠牌無 catno 無 barcode**——第 991 條錯登指紋，本層同樣不採用）。MB 的九軌與時長：Caravan 7:49／Lush Life 3:45／Take the \"A\" Train 2:58／African Flower 4:37／In a Sentimental Mood 5:59／Hidden Joy 8:00／One Night in the Hotel 5:36／Satin Doll 7:09／\"C\" Jam Blues 1:52。⚠ **MB 沒有建日本盤**（見下一條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2a4e21e7-41dd-36e2-bc16-0c3970aa032c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**美國原壓 CD `CDP 0777 7 80590 2 8`（Discogs 11548677，US，`released` 欄完整日期 1993-02-08）的 credits 是本張最完整的一份**：**Michel Petrucciani＝Piano, Soloist／Producer／Mixed By**、**Gilles Avinzac＝Producer**、**Eric Kressmann＝Executive Producer**（EKM Music Enterprises 經紀）、**Roger Roche＝Engineer [Sound] ＋ Mixed By**、Chris Albert＝助理錄音、**José Rodriguez＝Engineer [Mastering]**、美術指導 Cynthia Cochrane 與 Felix Cromey、設計 Patrick Roques、攝影 William Richards 與 Ken Nahoum。⚠ **盤上註記逐字只有一句**：「**Solo piano session, no composer credits listed anywhere.**」——**盤面完全沒有作曲者署名，也沒有錄音日期**。九軌與時長：Caravan 7:53／Lush Life 3:50／Take The A Train 2:50／African Flower 4:30／In A Sentimental Mood 5:54／Hidden Joy 7:56／One Night In The Hotel 5:53／Satin Doll 7:06／C-Jam Blues 1:53。**本張只有 CD 與卡帶兩種載體，Discogs master 837046 的十六筆版本裡一張黑膠都沒有**（歐洲卡帶 `B4 0777 7 80590 4 2`／12743124、美國宣傳卡帶 `B4-80590`／10541784）。",
+    "src": "https://api.discogs.com/releases/11548677"
+   },
+   {
+    "f": "⚠ **錄音地點在歐版盤面上才有，本層新查到**：**歐洲壓片三筆條目（1256283／13487647／6526031）的盤面註記一致逐字印「Recorded at Power Station, NYC／Mastered at Sterling Sound, NYC／ⒸⓅ 1993 Capitol Records, Inc.／Made in Holland」**——**美版 11548677 與日本盤 14360192 的條目都沒有抄這一段**。**三筆歐洲壓片互相獨立、文字一致，可採信為盤面文字**；⚠ **但四層來源沒有任何一個給出錄音日期**，**正文只能寫錄音室與城市，不得寫錄音月份或年份**。（母帶工程師 José Rodriguez 確實是 Sterling Sound／Masterdisk 一系的人，與這段註記互洽。）",
+    "src": "https://api.discogs.com/releases/1256283"
+   },
+   {
+    "f": "⚠ **日本盤 Blue Note `TOCJ-5745`（Discogs 14360192，`released` 欄完整日期 **1993-03-24**）——策展層完全沒有記到這一筆，MB 也沒有建**。盤面附 obi 與十二頁日文內頁（內頁文字 **藤本史昭／Fumiaki Fujimoto**），credits 與美版一致，唯一差別是本筆把 Petrucciani 的樂器欄寫成「**Piano [Solo Piano], Soloist**」。**號段：`TOCJ-5745` 與同批 `John Scofield Quartet —《What We Do》` 的 `TOCJ-5749`（1993-03-17）、`Ron Carter —《Friends》` 的 `TOCJ-5748`（1993-03-17）是同一批出貨**——**東芝 EMI 1993 年 3 月一次把三張美國 Blue Note 新碟同時引進日本。** ⚠ **本張的美版 1993-02-08 早於日本盤 1993-03-24，是本批少數「美先日後」的一張**（與第 1063／1084 條的多數方向相反）。",
+    "src": "https://api.discogs.com/releases/14360192"
+   },
+   {
+    "f": "**Billboard 1993 年 5 月 22 日 p121 的評介全文開頭**：「J A Z Z　MICHEL PETRUCCIANI　Promenade With Duke　**PRODUCERS: Gilles Avinzac, Michel Petrucciani**　Blue Note 80590　Each of Petrucciani's five successive albums on Blue Note have increased in sales, and this fluent and evocative outing should be similarly welcomed by his fans, lovers of Duke's music, and late-night jazz programmers. The French pianist purposely steered clear of slavish imitation and presession over-arrangement…」——⚠ **評介欄印的製作人正是 Discogs credits 的那兩位，兩層互證**。**同一期 p69 的 TOP JAZZ ALBUMS 榜**：「24 **NEW** MICHEL PETRUCCIANI BLUE NOTE **80590**/CAPITOL PROMENADE WITH DUKE」——**以 NEW 在第 24 名進榜**（同一格第 21 名是本組的 TONY WILLIAMS BLUE NOTE 99031/CAPITOL 「LIVE IN TOKYO」）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-05-22.pdf"
+   },
+   {
+    "f": "**Cash Box 1993 年 5 月 1 日 p16 的 REVIEWS（By M.R. Martinez）逐字**：「**MICHEL PETRUCIANNI**: Promenade With Duke (Blue Note **CDP 077 7 8059028**). Producers: M. Petrucianni & Gilles Avinzac. His fast fingers fly through a collection of blues, standards, grooves and the best of popular jazz. **All in solo homage of Ellington.** This giant talent beckons us with personal revelations. Incredibly personal, in fact, yet accessible…」⚠ **人名被植字成「PETRUCIANNI」兩次、目錄號少了一個 7（077 7 而非 0777 7）**——第 509c 條同形，**不得拿這兩個誤植形去查 MB／Discogs**。**本則比 Billboard 評介早三週，是本張最早的一則同期紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1993/CB-1993-05-01.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "盤面上一個作曲者名字都沒印——Discogs 的條目只好逐字寫下「solo piano session, no composer credits listed anywhere」：九首艾靈頓與史崔洪的曲子加他自己的兩首，全靠聽的人自己認",
+   "Cash Box 的排字工把他的名字打成「PETRUCIANNI」，目錄號也少打一個 7；三週後 Billboard 才寫對——同一張碟在美國兩份業界週刊上，連名字都還沒統一"
+  ],
+  "sound": "9 軌，一人一琴的鋼琴獨奏。七首是艾靈頓與史崔洪的曲目——〈Caravan〉開場七分五十秒最長，〈Take The A Train〉兩分五十秒最短，〈Lush Life〉〈In A Sentimental Mood〉〈Satin Doll〉〈African Flower〉夾在中間，收尾的〈C-Jam Blues〉只有一分五十三秒；另兩軌〈Hidden Joy〉近八分鐘與〈One Night In The Hotel〉是他自己寫的。全程沒有貝斯也沒有鼓，速度與力度的變化全部由左右手自己分配。錄於紐約 Power Station、Sterling Sound 母帶，製作是他自己與 Gilles Avinzac。CD 與卡帶是僅有的載體，沒有黑膠。",
+  "keyTracks": [
+   "Caravan",
+   "Hidden Joy",
+   "African Flower"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1993 成立，本層未改判；策展層「依據整個換掉」的三張之一，本層覆核其改動成立但要補一層。** MB frd **1993**（只有年）＝Discogs **美國原壓 11548677 的 `released` 欄完整日期 1993-02-08**＝歐版盤面 ℗© 1993＝**日本盤 TOCJ-5745 的 `released` 欄 1993-03-24（本層新查到，策展層沒有）**。**紙本兩則獨立**：**Cash Box 1993-05-01 p16 的評介**（最早一則）與 **Billboard 1993-05-22 p121 的評介**（第 431 條要的兩份不同刊物、不同週）；**榜位**：Billboard **TOP JAZZ ALBUMS** 1993-05-22 以 NEW 在第 24 名進榜。⚠ **策展層寫的「歐先美後」本層無法證實、也不必寫進正文**：**Discogs 歐版三筆條目的 `released` 欄全是空的（year=0）**，唯一有完整日期的兩筆是**美版 1993-02-08 與日本盤 1993-03-24**——**能說死的只有「美版 2 月上市、日本盤 3 月下旬跟上，美國兩刊的評介與榜位落在 5 月」**。**上市取 1993 年，正文不得把發行月講死**（第 1115 條的結論本層維持，但理由改成「歐版沒有日期可查」而不是「歐洲先出」）。⚠ **第 879 條**：本張上的是 **TOP JAZZ ALBUMS 不是 Contemporary Jazz 榜**，兩張榜都查過。⚠ **錄音年查無**：四層來源沒有一個給錄音日期，**正文不得寫錄音年**。",
+  "notes": "**覆核策展層：rgMbid 2a4e21e7／原盤 e0dd6281（美版）／`CDP 0777 7 80590 2 8`／9 軌／掛名 `Michel Petrucciani`／年份 1993 全部成立，本張未擋下。**｜⚠ **軌數無兩形、也沒有黑膠**：**Discogs master 837046 的十六筆版本裡一張黑膠都沒有**（只有 CD、歐洲卡帶 `B4 0777 7 80590 4 2`／12743124 與美國宣傳卡帶 `B4-80590`／10541784）——**本段不是黑膠時代，本張逐筆確認過，正文不得寫「黑膠原壓」，也不得寫 CD 加軌**（第 609／972 條兩個方向都不成立）。｜⚠⚠ **本層新查到兩件策展層沒有的事**：(1) **錄音地點**——**歐洲壓片三筆（1256283／13487647／6526031）盤面一致印「Recorded at Power Station, NYC／Mastered at Sterling Sound, NYC」**，美版與日版條目沒抄這段；**四層來源都沒有錄音日期，正文只能寫錄音室與城市**。(2) **日本盤 `TOCJ-5745`（Discogs 14360192，released 1993-03-24）**——**MB 沒建、策展層沒記**；**本張是美先日後，與本批多數相反**。**建議 `queryAlias` 補「日本 TOCJ-5745」一形**（第 1063 條的防呆）。｜**製作人本層核實**：**Michel Petrucciani 與 Gilles Avinzac 兩人共同製作**（Discogs credits ＋ **Billboard 1993-05-22 評介欄逐字印「PRODUCERS: Gilles Avinzac, Michel Petrucciani」** ＋ Cash Box 1993-05-01 評介欄，三層一致）；**Eric Kressmann 是 Executive Producer、不是製作人**（EKM Music Enterprises 是他的經紀公司）——**兩個角色不得互換**（第 609 條的形狀，c-149 b《Neohippus》同款）。錄音工程 Roger Roche、母帶 José Rodriguez。｜⚠ **作曲歸屬**：**盤面逐字寫「no composer credits listed anywhere」**——**正文要講哪一首是誰寫的，只能靠曲目常識（七首艾靈頓／史崔洪、〈Hidden Joy〉與〈One Night In The Hotel〉是他自己的），不得聲稱盤面有署名**。｜**撞陳列（逐軌比到 CD 那一層，本層覆核策展層第 1121 條末的那一組）**：**九軌全部是 Petrucciani 一個人的獨奏新錄音，與池中零母帶重疊**；**曲名層四處**：〈Caravan〉〈Satin Doll〉〈In A Sentimental Mood〉〈Take The A Train〉同時出現在 c-150 b 的 `Duke Ellington —《1969 All-Star White House Tribute》`，〈African Flower〉對上池中 `James Newton —《The African Flower》`（1985，c-148）；⚠ **另有本層新找到的一處**：〈In A Sentimental Mood〉也是池中 `Michel Petrucciani —《Power of Three》`（1986 蒙特勒現場，c-148 b）第 4 軌的曲名——**同一位藝人、同一個曲名、兩次不同的演奏（1986 三人現場 vs 1993 獨奏錄音室）**，**兩卡 risk 應互指**，**正文絕不得把這一軌寫成 1986 年那次**。**其餘與池中零重疊。**｜**封面已有**（CAA RG 層 2 圖）、**試聽已 ready**（Apple 724469482），本層未動。｜非選輯：單一藝人的原創／翻奏獨奏專輯，MB secondary-types 空、Discogs format 欄 `CD, Album` 無 Compilation 無 Reissue。"
+ },
+ {
+  "key": "desc2:Chucho Valdés|Solo Piano",
+  "artist": "Chucho Valdés",
+  "album": "Solo Piano",
+  "facts": [
+   {
+    "f": "release-group 2dbac1b5 的欄位（本層重查）：title「Solo Piano」、artist-credit「Chucho Valdés」、first-release-date **1993-04-23**（帶完整日期）、primary-type Album、**secondary-types 空**、tags **空**、轄下 **1** 個 release。release 端點：**81b75517**（**1993-04-23 US** Official **CD 10 軌**，Blue Note `CDP 0777 7 80597 2 1`，**barcode 欄是空字串**）。十軌與時長：Isanusi 6:09／Felia 4:42／Nandy 5:01／Noliu 5:51／Togo 7:49／Blue Yes 4:32／My Foolish Heart 6:31／Bill (Evans) 6:54／When I Fall in Love 9:08／Blues (Untitled) 6:36。⚠ **MB 的 secondary-types 空——這是一張現場盤卻沒標，第 397 條的「該標 Live 沒標」方向**（第 1119 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2dbac1b5-7c30-421b-aced-43bbf9bafb3b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **美國原壓 `CDP 0777 7 80597 2 1`（Discogs 7168550）的盤面註記把「這是現場盤」講死了**：「**Recorded by Ronnie Scott's recording facility at Ronnie Scott Club, London in september 1991.**／Mastered at the Exchange, London.／**\\* tracks 9 and 10 specified as played by TRIO.**／**Typo on spine: \"CHUCHO VALZES\"**」。⚠⚠ **但 credits 欄列的伴奏是四個人不是兩個**：**Dave Green＝Bass、Enrique Plá＝Drums、Miguel「Angá」Díaz＝Percussion**，加 Chucho Valdés＝Piano——**盤面只說第 9、10 軌是「TRIO」，credits 卻列了三位伴奏**；**製作是 Chris Lewis 與 Pete King 兩人**（Pete King 是 Ronnie Scott's 的共同創辦人兼經理），**母帶 Ray Staff（The Exchange, London）**。**作曲欄**：1–6 與第 10 軌 Chucho Valdés 自己寫並編曲，第 7 軌〈My Foolish Heart〉是 Victor Young／Ned Washington，第 9 軌〈When I Fall In Love〉是 Victor Young／Edward Heyman，**第 8 軌〈Bill (Evans)〉作曲欄空白**。",
+    "src": "https://api.discogs.com/releases/7168550"
+   },
+   {
+    "f": "**日本盤 Blue Note `TOCJ-5833`（Discogs 11496812，promo，`released` 欄完整日期 **1993-07-21**）**——**比美版晚三個月**，盤面註記與美版一字不差，**但把編制表整段印進了 notes**：「Chucho Valdes - Piano／**Dave Green - Bass／Enrique Pla - Drums／Miguel \"Angar\" Diaz - Percussion**／\\* tracks 9 and 10 specified as played by TRIO.」——**日版把四人編制印在盤面上，是編制最硬的一層**。⚠ **Discogs master 1307165 底下只有這兩筆（美版 ＋ 日本 promo），沒有歐版、沒有黑膠、沒有卡帶**——**第 1060 條在本張補全後仍然只有兩筆，`release-count == 1` 這次接近實情。**",
+    "src": "https://api.discogs.com/releases/11496812"
+   },
+   {
+    "f": "⚠ **本層自查兩刊，覆核策展層的「零命中」成立**：`billboard-bn-1992-1993-ocr.txt.gz`（104 期）與 `cashbox-bn-1992-1993-ocr.txt.gz`（102 期）逐期查過 `80597`（**全庫 0 次命中**）與 `CHUCHO`／`VALD[EÉ]S`／`VALZES` 三種寫法——命中的只有 **Billboard 1992-08-01 p20 的 Messidor 廠牌報導**（把他與 Arturo Sandoval、Irakere、Paquito D'Rivera 並列，並提到 Messidor 是最早把 Gonzalo Rubalcaba 推向國際的廠牌）、**Billboard 1993-07-24 p38 的爵士節側記**（把他印成「Chucho Valdez」）、**Billboard 1994-09-03 p61 的 Banff iAfroCubanismo! 音樂節預告**（印成「Chucho Valadés」）、**Billboard 1994-11-26 p59 的哈瓦那研習營預告**，**四則都與本碟無關**（第 738 條的假陽性）。**另查 1994 兩刊（Billboard 63 期／Cash Box 49 期）同樣零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-08-01.pdf"
+   },
+   {
+    "f": "店面（第 254 條）：Apple us `search` 一種查法即命中 **724550249**（artistName `Chucho Valdés`、collectionName `Solo Piano`、**10 軌＝原盤軌數**、**releaseDate 1991-09-01 等於錄音月不是發行日**，第 484 條第二型）。⚠ **這個 releaseDate 反過來是「本碟是現場錄音」的旁證**（第 1119 條）。CAA：RG 層 **1 圖**（單圖），來源 release 尾號 78c2f7b65798＝唯一那筆 81b75517。**封面與試聽本層皆未動。**",
+    "src": "https://itunes.apple.com/lookup?id=724550249&country=us&entity=song&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "盤脊上把他的名字印成「CHUCHO VALZES」——這張碟連封面都出錯，內容卻是 1991 年九月倫敦 Ronnie Scott's 裡一場沒人標成現場的獨奏",
+   "MB 沒標、Discogs 的格式欄也沒標，只有盤面那一行小字說了實話：這十軌是在倫敦的俱樂部裡錄的，最後兩首還多了貝斯、鼓與打擊"
+  ],
+  "sound": "10 軌，1991 年 9 月錄於倫敦 Ronnie Scott's 俱樂部的鋼琴獨奏。前八軌是完全獨奏——〈Isanusi〉〈Felia〉〈Nandy〉〈Noliu〉〈Togo〉〈Blue Yes〉六首是他自己寫的非洲—古巴題材原創，〈Togo〉七分四十九秒最長；〈My Foolish Heart〉是美國標準曲，〈Bill (Evans)〉是寫給比爾．艾文斯的。第 9、10 兩軌盤面註明由樂隊演奏，也是全碟最長的兩首（〈When I Fall In Love〉九分八秒、〈Blues (Untitled)〉六分三十六秒）——盤面 credits 另列了 Dave Green 的貝斯、Enrique Plá 的鼓與 Miguel「Angá」Díaz 的打擊。左手的古巴節奏底與右手的爵士線條是全碟的主軸。",
+  "keyTracks": [
+   "Isanusi",
+   "Togo",
+   "Bill (Evans)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1993 成立，本層未改判。** MB frd **1993-04-23（帶完整日期）**＝Discogs 美國原壓 7168550（1993）＝**日本 promo TOCJ-5833 的 `released` 欄 1993-07-21（本層新查到的完整日期，比美版晚三個月）**。⚠ **紙本層整層缺席，本層自查覆核成立**：兩刊 1992–93（Billboard 104 期／Cash Box 102 期）與 1994（Billboard 63 期／Cash Box 49 期）逐期查過 `80597` 與 `CHUCHO`／`VALDES`／`VALDÉS`／`VALZES`，**`80597` 全庫零命中**，人名命中的四則全部是別的事（Messidor 廠牌報導、爵士節側記、Banff 與哈瓦那研習營預告），**沒有一則是本碟的評介、新片欄或榜位**——**第 1053 條的紙本層在本張完全不存在**，**年份只能靠 MB frd 的完整日期 ＋ Discogs 美日兩筆兩層**，**但沒有競爭年份，1993 不受挑戰**。⚠⚠ **錄音年 1991 年 9 月與發行年 1993 差一年半，正文絕不得把 1991 寫成發行年**；⚠ **Apple 的 releaseDate `1991-09-01` 正是錄音月，不得採用為發行日**（第 484 條第二型）。⚠ **第 879 條**：兩張爵士榜 1993 全年都查過，本張都沒上。",
+  "notes": "**覆核策展層：rgMbid 2dbac1b5／原盤 81b75517／`CDP 0777 7 80597 2 1`／10 軌／掛名 `Chucho Valdés`（帶 é）／年份 1993 全部成立，本張未擋下。**｜⚠⚠ **本層擋下策展層一處正文風險（第 609／972 條那一類的編制形狀）**：**策展層寫「第 9、10 兩軌盤面註明是三重奏」——盤面確實寫 TRIO，但同一份 credits 列的伴奏是三個人不是兩個**（**Dave Green 貝斯、Enrique Plá 鼓、Miguel「Angá」Díaz 打擊**，加 Valdés 自己是四人）。**日本盤 TOCJ-5833 把這四個名字整段印進盤面，兩筆條目一致**。**正文最安全的寫法是「最後兩軌另有貝斯、鼓與打擊加入」，不要寫「三重奏」，也不要把四個人講成三個人。**｜⚠ **現場盤但兩邊都沒標**（第 1119 條，本層覆核成立）：MB secondary-types **空**、Discogs format 欄只有 `CD, Album`，**只有 Discogs 的 `notes` 欄救得回來**——「Recorded by Ronnie Scott's recording facility at Ronnie Scott Club, London in september 1991」。**`releaseType` 仍照 MB 原值 `Album`，但正文必須寫成現場錄音。**｜**製作人本層核實**：**Chris Lewis 與 Pete King 兩人**（Pete King 是 Ronnie Scott's 的共同創辦人兼經理——**這解釋了為什麼整張碟是俱樂部自己的錄音設備錄的**）；母帶 **Ray Staff（The Exchange, London）**。**策展層沒有製作人資料，這是本層新增的。**｜⚠ **軌數無兩形、沒有黑膠**：Discogs master 1307165 補全後只有美版與日本 promo 兩筆，**format 欄皆 `CD, Album`，沒有黑膠也沒有卡帶**——**正文不得寫黑膠原壓，也不得寫 CD 加軌。**｜⚠ **盤脊誤印 `CHUCHO VALZES`（Discogs notes 逐字）**——**那是印刷錯誤，不是第三種掛名寫法，不得拿去建字串。**｜**撞陳列（逐軌比到 CD 那一層）**：**十軌與池中零內容重疊、零曲名重疊**（池中 `Chucho Valdés` 只有 seed《Bele Bele en La Habana》2000，逐軌比過）；⚠ **`Bebo Valdés & Diego el Cigala —《Lágrimas Negras》` 是他父親的卡，兩人是兩個實體，正文不得互指。**｜⚠ **同場地互指（本層覆核成立）**：本組 `Andy Sheppard —《Delivery Suite》` **也錄在 Ronnie Scott's（1993-06-12）**，**兩張不同年、不同人、不同場、不同編制（本張是獨奏、那張是十人大編制），risk 互指但正文不得寫成同一批錄音或同一個企劃。** ⚠ **另有池中 `Kenny Burrell —《On View at the Five Spot Cafe》`（seed）與本組 Monk 的 Five Spot 那張是另一個俱樂部，兩組不得混。**｜**封面已有**（CAA RG 層 1 圖，單圖，**版式只有一張可核，本機上傳時要看清楚**）、**試聽已 ready**（Apple 724550249，10 軌＝原盤形），本層未動。｜非選輯：單一藝人、單一場次的現場錄音，MB secondary-types 空、Discogs format 欄無 Compilation 無 Reissue。"
+ },
+ {
+  "key": "desc2:The Benny Green Trio|That's Right!",
+  "artist": "The Benny Green Trio",
+  "album": "That's Right!",
+  "facts": [
+   {
+    "f": "release-group 192b4927 的欄位（本層重查，覆核策展層的盤名改判）：**RG title 是「That's Right」（無驚嘆號）**、artist-credit「The Benny Green Trio」、first-release-date **1993-09-07**、primary-type Album、secondary-types **空**、tags **空**、轄下 **1** 個 release。release 端點：**85ac1a36**（1993-09-07 US Official CD **10 軌**，Blue Note `CDP 0777 7 84467 2 9`，barcode 077778446729，**title 是「That's Right!」帶驚嘆號**）。⚠ **RG title 與轄下 release title 在標點上不一致，本層覆核策展層取 release／盤面形的判斷成立。** 十軌與時長：Wiggin' 5:09／Ain't She Sweet 3:59／That's Right 5:59／Something I Dreamed Last Night 4:45／Celia 4:43／Hoagie Meat 5:43／Cupcake 5:12／Just a Tadd 4:54／Glad to Be Unhappy 5:10／Me and My Baby 6:41。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=192b4927-7b17-346f-be4d-9d67a304ca20&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**美國原壓 `CDP 0777 7 84467 2 9`（Discogs 8123011，US 1993，**11 圖**）的 credits 與作曲欄**：**Benny Green＝Piano、Christian McBride＝Bass、Carl Allen＝Drums、Jim Anderson＝Engineer、Michael Cuscuna＝Producer、Leonard Feather＝Liner Notes**。⚠ **盤面 notes 欄是空的——沒有錄音日期、沒有錄音室。** **作曲欄逐軌**：〈Wiggin'〉〈That's Right〉〈Cupcake〉〈Just A Tadd〉四首 Benny Green 自己寫；〈Ain't She Sweet〉Milton Ager／Jack Yellen；〈Something I Dreamed Last Night〉Sammy Fain／Herbert Magidson／Jack Yellen；**〈Celia〉Bud Powell**；**〈Hoagie Meat〉Christian McBride**；〈Glad To Be Unhappy〉Rodgers & Hart；**〈Me And My Baby〉Horace Silver**。⚠ **策展層把〈Just A Tadd〉沒歸屬，本層查實是 Green 自己寫的**（曲名向 Tadd Dameron 致意）。",
+    "src": "https://api.discogs.com/releases/8123011"
+   },
+   {
+    "f": "**Billboard 1993 年 9 月 18 日 p70 的評介全文**：「J A Z Z . **THE BENNY GREEN TRIO** That's Right!　**PRODUCER: Michael Cuscuna**　Blue Note **84467**　Hot young pianist's newest date is in the classic trio setting, accompanied by bassist Christian McBride and drummer Carl Allen. Green's traditionally based, straightforward style swings sassily on the bluesy title cut and maintains a soulful edge on McBride's 'Hoagie Meat.' Standards are well represented, with an elfin version of 'Ain't She Sweet,' a rambunctiously snappy take on Bud Powell's 'Celia,' and **solo piano versions of 'Something I Dreamed Last Night' and 'Glad To Be Unhappy.'**」——⚠ **評介欄逐字寫明有兩軌是無伴奏鋼琴獨奏**，**這是「十軌不全是三重奏」唯一的一手來源**（盤面 credits 沒有分軌）。**評介標題印「THE BENNY GREEN TRIO」帶 The。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-09-18.pdf"
+   },
+   {
+    "f": "**Billboard TOP JAZZ ALBUMS 的逐期榜位（本層自查全庫 `84467`，比策展層多抓到三週與一次再進榜）**：**1993-09-25 以 NEW 在第 22 名進榜**（「THE BENNY GREEN TRIO BLUE NOTE 84467/CAPITOL THAT'S RIGHT」）→ **10-09 第 7 名**（前一週 22，在榜 3 週）→ **10-23 第 4 名** → **11-06 第 4 名** → **11-20 第 4 名（在榜 9 週）** → ⚠ **1994-01-29 以 RE-ENTRY 回到第 25 名**。**最高名次第 4。** ⚠ **榜單逐期印的盤名是「THAT'S RIGHT」（無驚嘆號），評介標題才帶**——**兩形在 `chk-prop` 的折鍵上剝標點後同鍵，不影響去重。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-09-25-N.pdf"
+   },
+   {
+    "f": "⚠ **店面：本層以第 254 條第三種查法逐軌核過，判串流採信。** Apple `lookup` **715867587**（artistName **`Benny Green`**、collectionName **`That's Right`** 無驚嘆號、**℗ 1993 Blue Note Records**、releaseDate 1993-01-01 placeholder）**十軌與原盤逐軌逐秒對上**：Wiggin' 309s（5:09）／Ain't She Sweet 240s／That's Right 360s／Something I Dreamed Last Night 285s／Celia 283s／Hoagie Meat 343s／Cupcake 313s／Just a Tadd 295s／Glad to Be Unhappy 311s／Me and My Baby 402s（6:42）——**軌序、軌名、時長全部一致，十軌 previewUrl 全部有**。⚠ **同一次藝人目錄拉取也再現了 c-151 a 第 1093 條記的殘缺條目 724079802「Testifyin'! - Benny Green TrioLive at the Village Vanguard」**——**那是別張碟，不得採用**（第 528／707 條）。**Discogs 8123011 有 11 圖（首圖 597x600）**，若本機端要換封面來源可用。",
+    "src": "https://itunes.apple.com/lookup?id=715867587&country=us&entity=song&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 的樂評寫出了盤面沒印的事：十軌裡有兩軌〈Something I Dreamed Last Night〉與〈Glad To Be Unhappy〉是一個人彈完的——買碟的人看封面只會以為這是一張純三重奏",
+   "二十一歲的 Christian McBride 在這張碟上不只彈貝斯，還交了一首自己寫的〈Hoagie Meat〉——那是 Benny Green 這個三重奏當年最被點名的一軌"
+  ],
+  "sound": "10 軌鋼琴三重奏，班底是 Christian McBride 的貝斯與 Carl Allen 的鼓。曲目一半是原創：〈Wiggin'〉開場、標題曲〈That's Right〉、〈Cupcake〉與向 Tadd Dameron 致意的〈Just A Tadd〉都是 Green 寫的，〈Hoagie Meat〉是 McBride 寫的。其餘是標準曲與爵士名曲——〈Ain't She Sweet〉三分五十九秒最短最輕快、〈Celia〉是 Bud Powell 的曲子、〈Me And My Baby〉是 Horace Silver 的、六分四十一秒收尾最長。⚠ 同期 Billboard 的評介寫明〈Something I Dreamed Last Night〉與〈Glad To Be Unhappy〉兩軌是無伴奏鋼琴獨奏，不是三重奏。製作 Michael Cuscuna、錄音 Jim Anderson、內頁文字 Leonard Feather。",
+  "keyTracks": [
+   "That's Right",
+   "Hoagie Meat",
+   "Wiggin'"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1993 成立，本層未改判；本批紙本層最厚的幾張之一。** MB frd **1993-09-07（帶完整日期）**＝Discogs 美／荷／日四筆原壓全 1993＝Apple ℗ 1993 Blue Note Records。**紙本兩則獨立且不同刊別的層級**：**Billboard 1993-09-18 p70 的評介**（第 431 條的評介層）＋ **Billboard TOP JAZZ ALBUMS 1993-09-25 以 NEW 進榜**（榜位層）。**本層自查全庫 `84467` 比策展層多抓到三週榜位與一次再進榜**：09-25 NEW #22 → 10-09 #7 → 10-23 #4 → 11-06 #4 → 11-20 #4（在榜 9 週）→ **1994-01-29 RE-ENTRY #25**，**最高名次第 4**。⚠ **本張沒有新片欄那一層**（兩刊 1992–93 逐期查過 `84467` 與「BENNY GREEN」），**但 MB frd 帶完整日期、Discogs 四筆同年、評介與榜位同月，第 1053 條的門檻在這裡不構成爭議**。⚠ **第 879 條**：上的是 **TOP JAZZ ALBUMS 不是 Contemporary Jazz 榜**，兩張榜都查過。⚠ **錄音日期查無**：**Discogs 8123011 的 notes 欄是空的、MB 無錄音關係、日荷兩筆也沒有**——**正文不得寫錄音年月或錄音室。**",
+  "notes": "**覆核策展層：rgMbid 192b4927／原盤 85ac1a36／`CDP 0777 7 84467 2 9`／10 軌／掛名 `The Benny Green Trio`／年份 1993／盤名改判帶驚嘆號，全部成立，本張未擋下。**｜⚠⚠ **本層擋下一處正文風險（第 609 條的形狀，但這次是編制不是軌數）**：**十軌不全是三重奏**——**Billboard 1993-09-18 p70 的評介逐字寫「solo piano versions of 'Something I Dreamed Last Night' and 'Glad To Be Unhappy'」**，**而盤面 credits 完全沒有分軌標記**（Discogs 8123011 的 credits 只列三個人、notes 欄空白）。**正文可以寫「十軌裡有兩軌是無伴奏獨奏」，但必須知道這一條的唯一來源是評介欄不是盤面。**｜⚠ **軌數無兩形、沒有黑膠**：Discogs master 1209581 的七筆版本全是 CD 或卡帶（美國宣傳卡帶 `B4-84467` 兩筆、荷蘭盤 11682760、俱樂部版 7364073、日本 `TOCJ-5796` 與其 promo），**一張黑膠都沒有**——**正文不得寫黑膠原壓，也不得寫 CD 加軌。**｜⚠ **錄音資料整層查無**（見 yearVerified）——**策展層也沒有，本層查過 Discogs 四筆、MB 與維基（無專頁）皆無**，**正文不得編錄音日期。**｜**製作人本層核實**：**Michael Cuscuna**（Discogs credits ＋ **Billboard 評介欄逐字印「PRODUCER: Michael Cuscuna」**，兩層一致）；錄音 **Jim Anderson**（⚠ **同一位工程師也錄了本組的 `Javon Jackson —《When the Time Is Right》`、以及日本盤 credits 裡 `Ron Carter —《Friends》` 的錄音與混音**——**三張 risk 可互指，但正文不得因此把三張寫成同一個企劃**）；內頁文字 **Leonard Feather**。｜**撞陳列（逐軌比到 CD 那一層）**：**與 c-151 a 的 `The Benny Green Trio —《Testifyin'!: Live at the Village Vanguard》`（1992 現場）十軌逐一比過、零曲名重疊**；**與池中 `Benny Green —《Lineage》`（1990，c-150）亦零重疊**；⚠ **〈Celia〉是 Bud Powell 的曲、〈Me And My Baby〉是 Horace Silver 的曲**——**池中 Bud Powell 與 Horace Silver（26 張 seed）都有卡，那是曲名不是碟名，正文不得互指。**｜⚠ **掛名懸案照 c-151 a 不改口**：**Apple 的 artistName 仍然只有「Benny Green」**（第 1116 條(五)懸案 2），**池中 `Benny Green` 與 `The Benny Green Trio` 兩形並存已是事實，本層不動。**｜⚠⚠ **試聽：本層撈回來了。串流採信 715867587。** 探測層判 unavailable、策展層要第三種查法才命中的這一張，**本層以 `lookup` 逐軌核過：十軌軌序、軌名、時長（309/240/360/285/283/343/313/295/311/402 秒）與原盤逐一對上，℗ 1993 Blue Note Records，十軌 previewUrl 全部有**——**同一張碟，採信**（第 472／528／707 條的逐軌核已做）。⚠ **不得採用 724079802**（那是《Testifyin'!》的殘缺條目，c-151 a 已記）。｜**封面已有**（CAA RG 層 1 圖，單圖）；**若本機端嫌單圖不夠，Discogs 美國原壓 8123011 有 11 圖、首圖 597x600 可備選。**｜非選輯：單一團體的原創／標準曲錄音室專輯。"
+ },
+ {
+  "key": "desc2:T.S. Monk|Changing of the Guard",
+  "artist": "T.S. Monk",
+  "album": "Changing of the Guard",
+  "facts": [
+   {
+    "f": "release-group e716c463 的欄位（本層重查）：title「Changing of the Guard」、artist-credit「T.S. Monk」、first-release-date **1993-09-21**、primary-type Album、secondary-types **空**、tags [jazz]、轄下 2 個 release。release 端點：**bd045cd4**（1993-09-21 **US** Official CD **11 軌**，Blue Note `CDP 0777 7 89050 2 8`，barcode 077778905028）、**fa36628b**（1993 **JP** Official CD 11 軌，Blue Note `TOCJ-5847`，**barcode null**）。十一軌與時長：Kelo 6:07／Changing of the Guard 5:03／Appointment in Milano 5:43／Monk's Dream 6:07／Dark Before Dawn 5:00／Doublemint 5:18／Una Mas 5:03／New York 6:13／Crepuscule With Nellie 5:14／K.D. 5:57／Middle of the Block 4:13。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e716c463-b9ca-3722-8011-c80dbabc3bc0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音日期與逐軌編制只有日本盤 `TOCJ-5847`（Discogs 6927045，`released` 欄完整日期 **1993-09-29**）的條目有，美版 9721617 的 notes 欄是空的**：盤面註記逐字「**Recorded on February 8, 9, 10 & 13, 1993 at The Power Station, 441 West 53rd Street, NYC.**」——**四天、不是一天**。**逐軌 credits**：**Don Sickler＝Trumpet[1,2,4,6–11]、Flugelhorn[3,5]、Arranged By[1–4,6–9]、Co-producer**；**Bobby Porcelli＝Alto Saxophone[1,2,4,6,8,10,11]、Baritone Saxophone[9]、Flute[3,5]、Arranged By[10]**；**Willie Williams＝Tenor Saxophone[1,2,4,6–8,10,11]、Soprano Saxophone[3,5]**；**Ronnie Mathews＝Piano、Arranged By[5]**；**Scott Colley＝Bass**；**Thelonious Monk Jr.＝Drums、Co-producer、Executive-Producer**。錄音與混音 **Joe Ferla**、助理 Chris Albert、混音助理 Mark Glass、**母帶 Greg Calbi**。",
+    "src": "https://api.discogs.com/releases/6927045"
+   },
+   {
+    "f": "⚠⚠ **十一軌沒有一首是 T.S. Monk 自己寫的——這是一支典型的曲庫重奏團（repertory band）**（維基專頁的曲目表逐軌列出作曲者，與 Discogs 的作曲欄一致）：〈Kelo〉**J. J. Johnson**／〈Changing of the Guard〉**James Williams**／〈Appointment in Milano〉**Bobby Watson**／〈Monk's Dream〉**Thelonious Monk**／〈Dark Before Dawn〉**Artie Matthews**／〈Doublemint〉**Idrees Sulieman**／〈Una Mas〉**Kenny Dorham**／〈New York〉**Donald Brown**／〈Crepuscule with Nellie〉**Thelonious Monk**／〈K.D.〉**Bobby Porcelli**／〈Middle of the Block〉**Clifford Jordan**。**維基另記混音在 Electric Lady Studios**、**大部分編曲出自 Don Sickler**、**「Monk included two songs written by his father, Thelonious」**。AllMusic 的 Scott Yanow：「Drummer T.S. Monk's sextet has quickly become one of the top repertory bands of hard bop … there is no weak link to this excellent sextet. **The band adds to rather than merely copies the tradition.**」",
+    "src": "https://en.wikipedia.org/wiki/Changing_of_the_Guard_(T._S._Monk_album)"
+   },
+   {
+    "f": "**Cash Box 1993 年 10 月 16 日 p7 的 REVIEWS 逐字**：「**T.S. MONK**: Changing of the Guard (Blue Note **CDP 0777 7 89050 2 8**). **Producers: T. Monk & D. Slicker.** Drummer-led jazz ensembles are often slaves to the rhythm. And throughout much of this album T.S. Monk and company spent much of t[he time]…」⚠ **製作人第二位被植字成「D. Slicker」，正確是 Don Sickler**（第 509c 條同形；Discogs 日本盤 credits 與維基皆作 Sickler）。**本則是本張唯一的評介層紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1993/CB-1993-10-16.pdf"
+   },
+   {
+    "f": "**Billboard TOP JAZZ ALBUMS 的逐期榜位（本層自查全庫 `89050`）**：**1993-10-23 以 NEW 在第 16 名進榜**（「T.S. MONK BLUE NOTE 89050/CAPITOL CHANGING OF THE GUARD」）→ **11-06 第 9 名**（前一週 16、在榜 3 週）→ **11-20 第 6 名**（在榜 5 週）。**最高名次第 6。** **同一格 11-20 的第 4 名是本組的 THE BENNY GREEN TRIO BLUE NOTE 84467/CAPITOL**——**兩張 1993 年秋的 Blue Note 碟同時在榜。** ⚠ **兩刊 1992–93 逐期查過 `89050` 與「T.S. MONK」，沒有新片欄那一層。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-11-20.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "十一首曲子，沒有一首是打鼓的人自己寫的——J.J. Johnson、Kenny Dorham、Clifford Jordan、James Williams，以及兩首他父親的：這支六重奏做的是把硬咆勃的曲庫重新演一遍",
+   "Blue Note 那捲 1957 年 Five Spot 的母帶，是這張碟的鼓手本人交給製作人 Cuscuna 的——同一年，兩張碟，同一個姓"
+  ],
+  "sound": "11 軌六重奏，1993 年 2 月 8、9、10、13 四天錄於紐約 Power Station。前排是 Don Sickler 的小號（第 3、5 軌改吹柔音號）、Bobby Porcelli 的中音薩克斯風（第 9 軌改上低音、第 3、5 軌吹長笛）與 Willie Williams 的次中音（第 3、5 軌改高音），後面是 Ronnie Mathews 的鋼琴、Scott Colley 的貝斯與 T.S. Monk 自己的鼓。十一軌全部是別人寫的曲子——J.J. Johnson 的〈Kelo〉開場、James Williams 的標題曲、Kenny Dorham 的〈Una Mas〉、Clifford Jordan 的〈Middle Of The Block〉收尾，另有兩首父親的曲子〈Monk's Dream〉與〈Crepuscule With Nellie〉。大部分編曲出自 Don Sickler。每軌都在四到六分鐘之間，速度變化不大、合奏密度高。",
+  "keyTracks": [
+   "Kelo",
+   "Changing of the Guard",
+   "Crepuscule With Nellie"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1993 成立，本層未改判。** MB frd **1993-09-21（美版，帶完整日期）**＝Discogs 美國原壓 9721617（1993）＝**日本盤 TOCJ-5847 的 `released` 欄 1993-09-29（本層新查到的完整日期）**——**美版早日本盤八天，兩地幾乎同時**，⚠ **策展層寫「日本盤只記到年、不得寫誰先」的顧慮本層已解除：Discogs 6927045 有完整日期，可以寫「美日幾乎同步、美版早八天」**。**紙本兩層**：**Cash Box 1993-10-16 p7 的評介**（唯一評介）＋ **Billboard TOP JAZZ ALBUMS 1993-10-23 NEW #16 → 11-06 #9 → 11-20 #6**（本層自查全庫，最高第 6）。⚠ **沒有新片欄那一層**（兩刊 1992–93 逐期查過 `89050` 與「T.S. MONK」／「TS MONK」），**但 MB frd 與 Discogs 美日兩筆都帶完整日期、評介與榜位同月，第 1053 條的門檻在這裡不構成爭議**。⚠ **第 879 條**：上的是 **TOP JAZZ ALBUMS**，Contemporary Jazz 榜也查過、沒有。⚠⚠ **錄音年 1993 年 2 月與發行 1993 年 9 月同年但差七個月，正文要分開講。**",
+  "notes": "**覆核策展層：rgMbid e716c463／原盤 bd045cd4／`CDP 0777 7 89050 2 8`／11 軌／掛名 `T.S. Monk`／年份 1993 全部成立，本張未擋下。**｜⚠⚠ **本層擋下策展層一處正文風險**：**策展層只說「十一軌的六重奏盤」，沒有講清楚十一軌沒有一首是 T.S. Monk 自己寫的**——**維基曲目表與 Discogs 作曲欄一致**（J.J. Johnson／James Williams／Bobby Watson／Thelonious Monk×2／Artie Matthews／Idrees Sulieman／Kenny Dorham／Donald Brown／Bobby Porcelli／Clifford Jordan）。**正文必須寫成曲庫重奏團（repertory band），不得寫成「他自己寫的碟」。** ⚠ **其中〈Appointment in Milano〉是 Bobby Watson 的曲，而 `Bobby Watson —《The Inventor》` 在 c-149 b 已收；〈Changing of the Guard〉是 James Williams 的曲，而 James Williams 是 c-149 b `Jack Walrath —《Neohippus》` 的鋼琴手**——**兩處都是人名層的關聯，不是內容重疊，正文不得互指。**｜⚠ **錄音日期與逐軌編制本層查實，策展層完全沒有**：**1993 年 2 月 8、9、10、13 日，紐約 Power Station（441 West 53rd Street）**，**四天不是一天**（日本盤 TOCJ-5847 盤面註記；**美版 9721617 的 notes 欄是空的，只查美版會以為沒有錄音資料**——第 642 條的形狀）；**混音在 Electric Lady Studios**（維基）。**逐軌吹奏樂器有換**：第 3、5 軌 Sickler 改柔音號、Porcelli 改長笛、Williams 改高音薩克斯風；第 9 軌 Porcelli 改上低音薩克斯風——**正文寫「六重奏」成立，但不得把六個人的樂器寫死成六樣。**｜**製作人本層核實**：**T.S. Monk 與 Don Sickler 共同製作（Co-producer 兩人），T.S. Monk 另掛 Executive-Producer**；⚠ **Cash Box 1993-10-16 把 Sickler 植字成「D. Slicker」，不得採用**。錄音與混音 Joe Ferla、母帶 Greg Calbi（⚠ **Greg Calbi 也是本組 `John Scofield —《Hand Jive》` 的母帶工程師**）。｜⚠ **軌數無兩形、沒有黑膠**：Discogs master 1100389 的五筆全是 CD（美版／日本盤與其 promo／美國俱樂部版 6687977／1998 西班牙壓片 6091988），**一張黑膠都沒有**——**正文不得寫黑膠原壓，也不得寫 CD 加軌。**｜**撞陳列（逐軌比到 CD 那一層，本層覆核策展層第 1121 條第 4 件成立並補一處）**：**十一軌與池中零母帶重疊**；曲名層三組——(a) 第 4 軌〈Monk's Dream〉↔ 池中 `Thelonious Monk —《Monk's Dream》`（seed，1963 Columbia），**父親的碟名對上兒子 1993 年的翻奏，絕不得互指**；(b) 第 9 軌〈Crepuscule With Nellie〉↔ **本組 `Thelonious Monk —《Live at the Five Spot Discovery!》` 第 5 軌**（1957 現場 2:58 vs 本張 5:14，**時長差近一倍，是兩次不同的演奏**），**兩張 risk 互指**；⚠ **(c) 本層新找到**：〈Crepuscule With Nellie〉**也是池中 `Thelonious Monk —《Monk's Music》`（seed，1957 Riverside 七重奏）的曲目**（該盤 CD 層兩個 take，4:36 與 4:45），**同曲三處不同錄音**；第 7 軌〈Una Mas〉是 Kenny Dorham 1963 年 Blue Note 盤的同名曲。**史實關聯可寫**：**Billboard 1993-04-10 p14 記明 Blue Note 是在 T.S. Monk 簽約之後由他本人把 Five Spot 母帶交給 Michael Cuscuna 的**，**而本張的 Discogs credits 也把他列為該碟的 Executive-Producer**——**兩張碟的關聯有盤面與紙本兩層證據，正文可以寫，但不得把兩張的錄音混為一談。**｜**封面已有**（CAA RG 層 6 圖）、**試聽已 ready**（Apple 1767692866，11 軌＝原盤形），本層未動。｜非選輯：單一團體、四天同一場次的錄音室專輯。"
+ },
+ {
+  "key": "desc2:Ron Carter|Friends",
+  "artist": "Ron Carter",
+  "album": "Friends",
+  "facts": [
+   {
+    "f": "release-group 22824c46 的欄位（本層重查）：title「Friends」、artist-credit「Ron Carter」、first-release-date **1993-08-10**、primary-type Album、secondary-types **空**、tags [hard bop, jazz, post-bop]、`release-count` **1**。release 端點：**256bdedc**（1993-08-10 US Official CD **9 軌**，Blue Note `CDP 0777 7 89548 2 8`，barcode 077778954828）。九軌與時長：Minuet in Central Park (Liebesleid) 4:19／Minor Mood (Vocalise) 7:53／Friends 4:48／D'Jango 7:25／Freefall (Gymnopedie) 5:07／The Beginning (Prelude #4 in E minor) 4:50／Ack,Vermeland Du Sköna 6:25／Opus One Point Five 5:29／Vagabond Vision (Après un Rêve-After a Dream) 4:04。⚠ **MB 只建了美版一筆，沒建日本盤**（見下）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=22824c46-6bd4-3b5b-be10-c69defe386ff&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層新查到的首發盤：日本 EAU Records `TOCJ-5748`／`EAU-5748`（Discogs 9428976，`released` 欄完整日期 **1993-03-17**）——比美版 1993-08-10 早近五個月，策展層與 MB 都沒有這一筆。** 盤面 Ⓟ© 1993 **EAU Records, A Division of Toshiba-EMI Ltd.**，附 obi 與十六頁中英日內頁（**內頁文字由大提琴手 Kermit Moore 自己寫**，和田政幸翻譯）。**credits 是本張唯一完整的一份（美版 5881241 的 credits 與 notes 兩欄全空）**：**Ron Carter＝Piccolo Bass ＋ Big Bass ＋ Producer**、**Leon Maleson＝Bass**、**Kenny Barron／Steve Scott／Alison Deane（另兼大鍵琴）三位鋼琴**、**Hubert Laws＝Flute**、**Lewis Nash＝Drums**、**Steve Kroon＝Percussion**、**大提琴四把：Kermit Moore／Carol Buck／Caryl Paisner／Marisol Espada**。錄音與混音 **James Anderson**、母帶 Yoshio Okazaki、**封面與內頁攝影 William Claxton**、美術指導 Kaoru Taku、製作助理 Yoshiko Tsuge。",
+    "src": "https://api.discogs.com/releases/9428976"
+   },
+   {
+    "f": "⚠ **作曲欄逐軌（日本盤條目，本層據此更正策展層一處）**：1〈Minuet In Central Park (Liebesleid)〉**Fritz Kreisler**／2〈Minor Mood (Vocalise)〉**Sergei Rachmaninoff**／3〈Friends〉**Ron Carter**／4〈D'Jango〉**John Lewis**／5〈Freefall (Gymnopedie)〉**Erik Satie**／6〈The Beginning (Prelude No.4 In E Minor)〉**Frédéric Chopin**／7〈Ack, Vermeland Du Sköna〉**Traditional**（瑞典民謠）／8〈Opus One Point Five〉**Ron Carter**／9〈Vagabond Vision (Après Un Rêve)〉**Gabriel Fauré**。⚠⚠ **九軌裡沒有德弗札克**——**策展層的 `why` 寫「拉赫曼尼諾夫、蕭邦、佛瑞、薩提與德弗札克一系」，第 1 軌〈Liebesleid〉其實是 Fritz Kreisler 的曲子，不是德弗札克**（第 609 條的形狀）。**正文列作曲者時一律照這九筆。**",
+    "src": "https://api.discogs.com/releases/9428976"
+   },
+   {
+    "f": "**Cash Box 1993 年 8 月 21 日 p18 的 REVIEWS 逐字**：「**RON CARTER**: Friends (Blue Note **CDP 0777 7 89548 28**). **Producer Ron Carter.** Classical music and jazz often become different hues on a sound spectrum. While jazz allows for a more democratic interpretation of a composition… Unless you're Ron Carter, and you decide to take pieces by Rachmaninoff, Chopin and Fauré and put fresh stank on them. **Joined by the venerable Kenny Barron (piano), Hubert Laws (flute) and a host of other sidemen**…」⚠ **Cash Box 把目錄號印成「CDP 0777 7 89548 28」（少一個空格）**，以 Discogs／MB 形為準；⚠ **評介欄印的製作人「Producer Ron Carter」與日本盤 credits 一致，兩層互證**。**本則是本張唯一的同期紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1993/CB-1993-08-21.pdf"
+   },
+   {
+    "f": "⚠ **店面：第 254 條三種查法本層全部重跑一次，確認查無。** (a) us `search`「Ron Carter Friends Blue Note」→ 回的全是 1970 年代 Epic／CTI 的舊碟與 2020 年代的單曲，**沒有本張**；(b) 拉 `Ron Carter` 的 us 藝人目錄（artistId **44773**，152 筆）→ **全庫唯一含「Friends」的是 `Houston Person & Ron Carter —《Just Between Friends》`（1438340116，2008，HighNote）＝錯碟**（第 528／707 條）；(c) 同一個 artistId 的 **jp** 目錄（176 筆）→ 同樣只有那張錯碟。**三種查法全空，判查無，走固定無來源狀態。** **CAA 本層依第 589a 條重驗**：`release-group/22824c46` 與唯一那筆 release `256bdedc-f99a-4755-acc4-d467cdb001bf` **兩個端點各重試三次，六次全部 HTTP 404（不是 5xx）**——**真 404 確認。**",
+    "src": "https://itunes.apple.com/lookup?id=44773&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Kreisler、拉赫曼尼諾夫、薩提、蕭邦、佛瑞，加一首瑞典民謠——Ron Carter 把它們全部改寫成爵士編制，自己彈短笛貝斯，另外請了一個人來彈正常的貝斯",
+   "美國人 1993 年 8 月才買得到這張碟，日本人三月就有了：首發其實是東芝 EMI 的 EAU Records，內頁還請了盤上的大提琴手 Kermit Moore 自己寫"
+  ],
+  "sound": "9 軌，把古典小品改寫成爵士編制。每一軌的副題直接把原曲括在後面——〈Minuet In Central Park〉是 Kreisler 的〈Liebesleid〉、〈Minor Mood〉是拉赫曼尼諾夫的〈Vocalise〉、〈Freefall〉是薩提的〈Gymnopédie〉、〈The Beginning〉是蕭邦的 E 小調前奏曲、〈Vagabond Vision〉是佛瑞的〈Après un rêve〉；另有 John Lewis 的〈D'Jango〉、瑞典民謠〈Ack, Vermeland Du Sköna〉，以及 Carter 自己寫的〈Friends〉與〈Opus One Point Five〉。編制比一般爵士組大得多：Carter 自己彈短笛貝斯與低音貝斯、Leon Maleson 另彈一把貝斯，Kenny Barron、Steve Scott、Alison Deane 三位鋼琴手分軌（Deane 另彈大鍵琴），Hubert Laws 的長笛、Lewis Nash 的鼓、Steve Kroon 的打擊，再加四把大提琴。〈Minor Mood〉七分五十三秒與〈D'Jango〉七分二十五秒是最長的兩首。",
+  "keyTracks": [
+   "Minor Mood (Vocalise)",
+   "D'Jango",
+   "Friends"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1993 成立，本層未改判；但依據本層補上一整層——首發是日本盤不是美版。** **本層新查到日本 EAU Records `TOCJ-5748`／`EAU-5748`（Discogs 9428976）的 `released` 欄是完整日期 **1993-03-17**，比美版 MB frd 1993-08-10 早近五個月**——**策展層與 MB 都沒有這一筆（MB `release-count == 1`，第 1060 條的又一例）**。**年份不變（兩地同年），但首發地要改寫成日本。** 依據疊起來是：**日本盤 1993-03-17（完整日期）＋ 美版 MB frd 1993-08-10（完整日期）＋ Discogs 美版與俱樂部版 1993 ＋ Cash Box 1993-08-21 p18 的評介（唯一的同期紙本，緊跟美版上市）**。⚠ **第 879 條本層覆核成立**：**Billboard 與 Cash Box 兩張爵士榜 1993–94 全年逐期查過 `89548` 與「RON CARTER」，本張都沒上榜**；`89548` 的其他命中是 **Cash Box 1993-05-15 p20 爵士榜上的 `Manhattan/Capitol 99548` LOU RAWLES《Portrait Of The Blues》**（號相近的假陽性，第 738 條）。⚠ **也沒有新片欄那一層**——**紙本只有 Cash Box 一則評介，第 1053 條的門檻沒過，但本張沒有競爭年份，1993 不受挑戰。** ⚠ **錄音日期四層來源全部查無**（日本盤與美版 notes 皆無、MB 無錄音關係、無維基專頁）——**正文不得寫錄音年月。**",
+  "notes": "**覆核策展層：rgMbid 22824c46／原盤 256bdedc／`CDP 0777 7 89548 2 8`／9 軌／掛名 `Ron Carter`（c-150 b 第 1057 條的第一次沿用）／年份 1993 全部成立，本張未擋下。**｜⚠⚠ **本層擋下策展層一處正文錯**：**策展層的 `why` 把第 1 軌〈Minuet In Central Park (Liebesleid)〉算進「德弗札克一系」——〈Liebesleid〉是 Fritz Kreisler 的曲子，九軌裡沒有任何一首是德弗札克**（日本盤 9428976 的逐軌作曲欄：Kreisler／Rachmaninoff／Carter／John Lewis／Satie／Chopin／Traditional／Carter／Fauré）。**正文列作曲者必須照這九筆。**｜⚠⚠ **本層新查到首發是日本盤**（見 yearVerified）：**EAU Records `TOCJ-5748`／`EAU-5748`，1993-03-17，比美版早近五個月**。**EAU Records 是東芝 EMI 的另一個子廠牌（不是 Somethin' Else）**——**第 1128 條結論 5「看到 Somethin' Else 就先查日本盤」在本張要擴大成「東芝 EMI 系的子廠牌都要查」**。**建議 `queryAlias` 補「日本 EAU Records TOCJ-5748／EAU-5748（1993-03-17）」一形**（第 1063 條的防呆；本張沒有同碟兩盤名的問題，盤名兩地一致）。｜⚠⚠ **編制與製作人整層是本層新增的（美版 Discogs 5881241 的 credits 與 notes 兩欄全空，只查美版會以為查無——第 642 條）**：**Ron Carter 自己製作**（日本盤 credits ＋ **Cash Box 1993-08-21 評介欄逐字印「Producer Ron Carter」**，兩層一致）；**他自己彈的是短笛貝斯（piccolo bass）與低音貝斯（big bass），另有 Leon Maleson 彈貝斯**——**正文不得把他寫成唯一的貝斯手**；**三位鋼琴手分軌（Kenny Barron／Steve Scott／Alison Deane，Deane 另彈大鍵琴）**——**Cash Box 只點名 Kenny Barron，正文若只寫 Barron 會漏掉另外兩位**；另有 Hubert Laws 長笛、Lewis Nash 鼓、Steve Kroon 打擊、**四把大提琴（Kermit Moore／Carol Buck／Caryl Paisner／Marisol Espada）**。錄音與混音 **James Anderson**（⚠ **＝本組 `The Benny Green Trio —《That's Right!》` 與 `Javon Jackson —《When the Time Is Right》` 的同一位工程師，三張 risk 可互指但不得寫成同一企劃**）。**封面與內頁攝影 William Claxton。**｜⚠ **軌數無兩形、沒有黑膠**：Discogs master 1104655 補全後四筆（美版／日本盤與其 promo／美國俱樂部版 13878931）**全是 CD**——**正文不得寫黑膠原壓，也不得寫 CD 加軌。**｜**撞陳列（逐軌比到 CD 那一層，本層覆核策展層成立）**：**與池中 `Ron Carter —《Ron Carter Meets Bach》`（1992，c-150 b）九軌對十一軌逐一比過、零曲名重疊**（那張走巴哈，本張走 Kreisler／拉赫曼尼諾夫／薩提／蕭邦／佛瑞），**兩張 risk 互指，正文不得寫成同一個企劃**；⚠ **第 4 軌〈D'Jango〉是 John Lewis 為 Django Reinhardt 寫的曲、也是 MJQ 同名盤的盤名**——**曲名不是碟名，不得互指**；⚠ **本層另核**：**Ron Carter 本人是本組 `Geri Allen —《Twenty One》` 的貝斯手、也是 c-148 a `Tony Williams —《Foreign Intrigue》` 的貝斯手**——**人名層關聯，三張 risk 可互指，正文不得寫成同一批錄音。**｜⚠⚠ **封面：CAA 真 404（本層依第 589a 條重驗，RG 層與唯一那筆 release 各重試三次、六次全 404 不是 5xx）。替代來源本層指定**：**首選日本原壓 EAU `TOCJ-5748`＝Discogs release **9428976**，`images[0].uri`，**600×531，type=primary，共 4 圖**（⚠ **日本盤可能帶 obi 帶，本機端上傳前要看一眼有沒有腰帶入鏡**）；**次選美國原壓 Discogs **5881241**，`images[0].uri`，**500×495，type=primary，僅 1 圖**（**尺寸小但確定是美版盤面**）；**第三選美國俱樂部版 Discogs **13878931**，`images[0].uri`，**597×600，共 11 圖，但全部 type=secondary、沒有 primary**。**本層不下載任何圖。**｜⚠⚠ **試聽：第 254 條三種查法本層全部重跑，確認查無**（us `search` 回 `Houston Person & Ron Carter —《Just Between Friends》`＝錯碟；us 藝人目錄 152 筆、jp 藝人目錄 176 筆皆無本張）——**明寫查無，走固定無來源狀態。**｜非選輯：單一藝人的改編／原創錄音室專輯，MB secondary-types 空、Discogs format 欄 `CD, Album` 無 Compilation 無 Reissue。"
+ },
+ {
+  "key": "desc2:Tony Williams|Tokyo Live",
+  "artist": "Tony Williams",
+  "album": "Tokyo Live",
+  "facts": [
+   {
+    "f": "release-group 5722597f 的欄位（本層重查）：title「Tokyo Live」、artist-credit「Tony Williams」、first-release-date **1993-05-26**、primary-type Album、**secondary-types ['Live'] ✓**、tags [jazz]、轄下 2 個 release。release 端點：**06cc9ce8**（**1993-05-26 JP** Official，**CD 6 軌 ＋ CD 7 軌**，Blue Note `TOCJ-5773·74`，barcode 4988006683723）、**8255b31c**（**1993 CA** Official，同樣 6+7 軌，Blue Note `CDP 0777 7 99031 2 2`，barcode 077779903122）。⚠ **MB 沒有建美國盤**——Discogs 1381031 的 country 欄是「USA & Canada」，**同一筆發行**。十三軌與時長：CD1 Geo Rose 11:33／Blackbird 6:06／Ancient Eyes 11:29／Citadel 18:06／Warriors 15:23／Angel Street 11:09；CD2 Sister Cheryl 14:40／The Slump 9:51／Mutants on the Beach 14:46／Civilization 12:11／Crystal Palace 10:21／Life of the Party 2:30／The Announcements 3:41。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5722597f-0f4c-4d39-bb70-ed270d08e192&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**美加原壓 `CDP 0777 7 99031 2 2`（Discogs 1381031）的盤面註記與 credits**：「**Recorded live to 2-track in Tokyo, Japan on March 2-8, 1992.**／**Mastered at Sterling Sound, NYC on October 15, 1992.**／(C)(P) 1993 Capitol Records, Inc.」。credits：**Anthony Williams＝Drums、Producer、Liner Notes、Composed By[1-1, 1-3 to 2-7]**；**Wallace Roney＝Trumpet**；**Billy Pierce＝Tenor Saxophone, Soprano Saxophone**；**Mulgrew Miller＝Piano**；**Ira Coleman＝Bass**；⚠⚠ **`Lennon-McCartney＝Composed By[1-2]`——第 2 軌〈Blackbird〉是披頭四的曲子，不是 Williams 寫的**；**Ted Jensen＝Mastered By**、**Bassy Bob Brockmann＝Recorded By, Mixed By**、製作助理 Carol Neu、經紀 Bill Traut 與 Carol Neu、設計 Scott W. Miller、攝影構成 Michele Clement。⚠ **識別欄另記兩個內部號 `CDP 0777 7 99032 2 1`（碟一）與 `CDP 0777 7 99033 2 0`（碟二）**，**盤面的總號才是 99031**。",
+    "src": "https://api.discogs.com/releases/1381031"
+   },
+   {
+    "f": "**Cash Box 1993 年 5 月 15 日 p20 的 REVIEWS（By M.R. Martinez）全文**：「**TONY WILLIAMS: Tokyo Live (Blue Note CDP 0777 7 99031 2 2). Producer Tony Williams.** Drummer/percussionist Tony Williams is a power player with the ability to bring forth discreet flourishes of the traditional jazz approach with fresh interpretations of the music—all without having to resort to cocktail fusion triteness. He's been playing in the tradition for awhile since shedding his Lifetime Band trappings, and the music on this attests to his comfort as a major player who is creating his own image in the pantheon of jazz greatness. **On this live double album of compositions culled from five previous recordings**, Williams is joined by his regular working band of Wallace Roney (trumpet). Bill Pierce (saxophones), Ira Coleman (bass) and Mulgrew Miller (piano), all of whom offer articulate turns as sidemen and soloists. Too much good music to talk about here.」**同一頁的 Cash Box 爵士榜上另有本組的《What We Do》（Blue Note 99586, JOHN SCOFIELD QUARTET）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1993/CB-1993-05-15.pdf"
+   },
+   {
+    "f": "⚠⚠ **本層逐軌覆核 Cash Box 那句「culled from five previous recordings」，結果是「四張不是五張，而且有兩軌不屬於任何一張」**——拿十三軌的曲名去比池中五張 Tony Williams 錄音室盤的原盤軌目：**《Civilization》(1987, c-148 b) 供 6 軌**（〈Geo Rose〉〈Ancient Eyes〉〈The Slump〉〈Mutants on the Beach〉〈Citadel〉〈Civilization〉；⚠ **該盤第 2 軌是單數的〈Warrior〉、本張是複數的〈Warriors〉**）；**《Foreign Intrigue》(1985, c-148 a) 供 2 軌**（〈Life of the Party〉A3、〈Sister Cheryl〉B3）；**《Angel Street》(1988, c-149 a) 供 1 軌**（標題曲）；**《Native Heart》(1990, c-149 b) 供 1 軌**（〈Crystal Palace〉）；⚠⚠ **《The Story of Neptune》(1992, c-151 a) 供 0 軌**——**該盤七軌（Neptune: Overture／Fear Not／Creatures of Conscience／Poinciana／Crime Scene／Birdlike 等）與本張零重疊，而且它 1992-06-24 才發行、本張 1992 年 3 月就錄完了，錄音當下它還沒上市**。**另兩軌不屬於任何一張**：第 2 軌〈Blackbird〉是披頭四的曲子、末軌〈The Announcements〉三分四十一秒是現場報幕。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=240d7441-b731-3372-b401-8692bb2ef6f7&fmt=json&inc=media+recordings&limit=100"
+   },
+   {
+    "f": "**Billboard TOP JAZZ ALBUMS 的逐期榜位（本層自查全庫 `99031`）**：**1993-05-08 以 NEW 在第 25 名進榜**（「TONY WILLIAMS BLUE NOTE **99031**\\*/CAPITOL **LIVE IN TOKYO**」）→ **05-22 第 21 名（在榜 3 週）**。⚠⚠ **兩期榜單印的盤名都是「LIVE IN TOKYO」不是「Tokyo Live」**（第 1125 條已記，本層覆核成立）。⚠ **紙本假陽性覆核成立**：`99031` 在 **Billboard 1993-09-25／10-02／11-27／12-25 與 1994-01-08／01-22／02-05／02-19 的家庭錄影帶榜**上命中的是 **The Lyons Group《Barney Rhymes With Mother Goose》的商品號 99031**，**與本碟無關**（第 738 條，八期全部逐則排除）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-05-08.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "1992 年三月，東京，直接錄成兩軌母帶：十三軌裡有九軌是他過去七年在 Blue Note 錄過的曲子——同一支固定樂團把自己的舊碟重演了一遍，長度全部拉到十分鐘以上",
+   "十三軌裡唯一不是他寫的，是第二軌的〈Blackbird〉——披頭四的曲子，夾在〈Geo Rose〉與〈Ancient Eyes〉中間"
+  ],
+  "sound": "雙 CD 十三軌（6＋7），1992 年 3 月 2 到 8 日在東京錄成，直接錄到兩軌母帶。五重奏是他當時的固定樂團——Wallace Roney 的小號、Billy Pierce 的次中音與高音薩克斯風、Mulgrew Miller 的鋼琴、Ira Coleman 的貝斯，Williams 自己打鼓並製作。曲子普遍很長：〈Citadel〉十八分六秒最長，〈Warriors〉十五分二十三秒、〈Mutants On The Beach〉十四分四十六秒、〈Sister Cheryl〉十四分四十秒，十三軌裡只有收尾的〈Life Of The Party〉兩分半與報幕的〈The Announcements〉不到四分鐘。絕大多數是他 1985 年以來 Blue Note 錄音室盤上的曲子在現場重演一次；第 2 軌〈Blackbird〉是披頭四的曲子，全碟唯一不是他寫的。",
+  "keyTracks": [
+   "Citadel",
+   "Geo Rose",
+   "Sister Cheryl"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1993 成立，本層未改判；策展層「依據整個換掉」的三張之一，本層覆核其改動成立。** ⚠ **MB frd `1993-05-26` 是日本盤 `TOCJ-5773·74` 的日期，不是美加版的**（MB 那筆美加 release 8255b31c 只有年份）——**美加版明顯更早**：**Billboard TOP JAZZ ALBUMS 1993-05-08 就以 NEW 進榜（第 25 名）**、**Cash Box 1993-05-15 p20 的評介**也在日本盤日期之前，**街頭日約在 1993 年 4 月下旬**（第 994(b)／1083(二) 條同形）。**正文不得把發行寫在 5 月 26 日。** 依據疊起來：**Billboard 榜 NEW 1993-05-08（榜位層）＋ Cash Box 1993-05-15 評介（評介層，兩刊不同週、彼此獨立）＋ Discogs 美加原壓 1381031 盤面 (C)(P) 1993 Capitol Records＋MB 日本盤 1993-05-26**。⚠ **第 879 條**：上的是 **TOP JAZZ ALBUMS**，Contemporary Jazz 榜也查過、沒有。⚠⚠ **錄音 1992-03-02～08、母帶 1992-10-15，與發行年 1993 差一年，正文絕不得把 1992 寫成發行年。** ⚠ **紙本假陽性八期已逐則排除**（Barney 錄影帶商品號 99031，見 facts）。",
+  "notes": "**覆核策展層：rgMbid 5722597f／原盤 8255b31c（美加）／`CDP 0777 7 99031 2 2`／6+7 軌／掛名 `Tony Williams`／年份 1993 全部成立，本張未擋下。**｜⚠⚠⚠ **本層擋下策展層兩處正文風險（本批最重的一件撞陳列，第 1121 條第 1 件）**：**(1) 「五張」要改成「四張」。** Cash Box 1993-05-15 寫的「compositions culled from **five** previous recordings」是評介欄的概稱；**本層拿十三軌曲名逐一比對池中五張 Tony Williams 錄音室盤的原盤軌目，實際只中四張**——**《Civilization》(1987) 供 6 軌、《Foreign Intrigue》(1985) 供 2 軌、《Angel Street》(1988) 供 1 軌、《Native Heart》(1990) 供 1 軌**，**《The Story of Neptune》(1992, c-151 a) 供 0 軌**（該盤七軌與本張零重疊，且 1992-06-24 才發行、本張 1992 年 3 月就錄完，**錄音當下它根本還沒上市**）。**正文若要引 Cash Box 那句話，必須寫成「同期樂評的說法」，不得當成事實陳述。** **(2) 十三軌不是「幾乎全是他寫的」**：**第 2 軌〈Blackbird〉的作曲欄是 `Lennon-McCartney`**（Discogs 1381031 逐軌作曲欄），**是披頭四的曲子**；**末軌〈The Announcements〉是現場報幕不是曲子**。｜⚠ **另一處易錯**：**《Civilization》的第 2 軌是單數的〈Warrior〉，本張是複數的〈Warriors〉**——**兩個曲名差一個 s，正文與 keyTracks 都要照本張盤面。**｜**判並存（第 1049 條）**：**1992 年東京現場 vs 1985–90 各次錄音室，班底也不同**（《Foreign Intrigue》是六人含 Bobby Hutcherson 與 Ron Carter、《Civilization》是 Charnett Moffett 的貝斯、本張是 Ira Coleman），**零母帶重疊**；**四張 risk 互指**（另加《The Story of Neptune》做零重疊的註記共五張）；**正文絕不得把任一軌寫成那幾張碟的錄音，也不得說這是精選**（**MB secondary-types 是 ['Live'] 不是 ['Compilation']，Discogs format 欄 `CD, Album` 無 Compilation**，兩邊都查過）。｜⚠ **軌數無兩形、沒有黑膠**：Discogs master 2069560 只有三筆（美加版、日本盤與其 promo），**全是 2CD**——**正文不得寫黑膠原壓，也不得寫 CD 加軌。**｜**錄音與製作本層核實**：**1992 年 3 月 2–8 日東京，直接錄成 2-track**（盤面註記）；**製作人是 Tony Williams 自己**（盤面 credits ＋ **Cash Box 評介欄逐字印「Producer Tony Williams」**，兩層一致）；**錄音與混音 Bassy Bob Brockmann**、**母帶 Ted Jensen（Sterling Sound, NYC，1992-10-15）**——**策展層只寫到「Sterling Sound」，工程師名字是本層新增的**；**內頁文字是 Williams 自己寫的**。｜⚠ **Discogs 的藝人欄是「Anthony Williams」**（Discogs 正規化，盤面 credits 亦用 Anthony Williams）——**那不是第三種掛名寫法，掛名沿用池中 `Tony Williams`。**｜⚠ **盤名兩形**：**Billboard 爵士榜 1993-05-08 與 05-22 兩期都印「LIVE IN TOKYO」**（第 1125 條），**本層覆核成立，取 MB／盤面形，榜單形已在 queryAlias。**｜⚠ **本層另核一處人名關聯**：**Ira Coleman 也是 c-151 a `Tony Williams —《The Story of Neptune》` 的貝斯手、Mulgrew Miller 與 Wallace Roney 是那五張的共同班底**——**人名層關聯，正文不得寫成同一批錄音。**｜**封面已有**（CAA RG 層 9 圖，本批最多）、**試聽已 ready**（Apple 1443289505，13 軌＝6+7 合併），本層未動。｜非選輯：單一團體、單一檔期（1992-03-02～08）的現場錄音。"
+ }
+]
