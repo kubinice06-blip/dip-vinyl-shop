@@ -764,3 +764,56 @@ Lundvall 1995-01-04 在荷蘭簽下、三張合約、**「late February in New Y
 另：**《Acoustic Boogie》TOCJ-5574 與《Mr. Bow-Tie》TOCJ-5575 是連號、同日 1995-07-19 發行、
 同錄音室同班製作**（risk 互指，但錄音是兩次 session）。
 ⚠ **Petrucciani 那張的盤名在池中有四張一字不差的同名卡**（`chk-prop` 折鍵不報）——**上架必須帶掛名。**
+
+## 第 1248 條（主線，研究 b 組查出）：**第 1234 條要修——Geri Allen《Eyes... in the Back of Your Head》改判 1996 → 1997**
+
+第 1234 條把它列在「覆核成立不改的 13 張」，**是錯的**。五層獨立證據：
+- **Billboard 1997-07-12 p33** 逐字「scheduled for an **Aug. 12** release」；
+- **Billboard 1997-09-20 p79** 評介欄（抬頭印 `Blue Note 38297`）；
+- **Discogs 五筆全 1997、零筆 1996**（含日版 `Somethin' Else TOCJ-5589`）；
+- 歐版 notes 逐字「**Mastered … Feb. 11, 1997**」——**物理上排除 1996**；
+- 盤面 ℗© 1997 Somethin' Else／Toshiba-EMI。
+
+**反向只有 MB frd 1996 一項。`year` 與 `label` 已改，並補 `queryAlias`。**
+
+⚠ **第 1234 條說它「紙本完全空白」的真正原因是查錯年份——1997 年有兩則。**
+**這是第 1134／1188／1245 條在本段的第六次成立。**
+
+## 第 1249 條（主線）：**「同一場錄音被拆成兩張」在本組中了一次**
+
+**《Live at the 'It Club' Volume 2》（2000，Blue Note 7243 5 23997 2 7）是同一晚（1970-03-06）的另外九軌**，
+與本卡的 8 軌 **0 重疊**。**主線日後若收 Vol. 2，兩卡必須互指。**
+
+另兩處軌數訂正（**兩張都是「CD 才完整」，第 609／1135 條**）：
+**Duke Pearson 黑膠 6 軌**（策展層寫 7；CD 內頁那句「Tracks 8-11 only」自己漏了〈Horn In〉）；
+**It Club 黑膠 5 軌**（CD 內頁逐字「Tracks 3, 7 and 8 appear on CD only」，2024 年再壓也是同 5 軌）。
+⚠ **策展層寫《Elegant Soul》「八軌」也是錯的，Apple 716251274 實際 9 軌。**
+
+## 第 1250 條（主線）：**查目錄號一定要連廠牌看**
+
+第 1274 條的 catno 交叉在本組跑出兩個雜訊：
+- **Geri Allen 的 `…38297 2 9` 會撈進一群 Pink Floyd 的 `…29752 2 9`**（數字形近誤配）；
+- **Billboard 1997 查 `57729` 全是 Nat King Cole 的 Capitol 57729。**
+
+⚠ **通則：目錄號查詢一律連廠牌一起比對，數字本身不具唯一性。**
+
+## 第 1251 條（主線）：**研究層擋下策展層 13 處正文錯，最重的五處**
+
+| 卡 | 策展層寫的 | 實際 |
+|---|---|---|
+| **Max Roach** | Roach 的作品 | **〈Festival Journey〉作曲是 Frederick Tillis、指揮是 David Epstein，Roach 只是獨奏者**；**兩軌差近兩年、兩地** |
+| **Marcus Printup** | 沒有評介、〈Amazing Grace〉是無伴奏 | **Billboard 1996-08-24 p108 有整則**，且逐字說那軌是 **trumpet/piano 二重奏** |
+| **Greg Osby** | 九軌全是他與團員的曲子 | **7 首 Osby 一人、團員 0 首、另 2 首是 Ellington 與 Billie Holiday**；**是九人原音編制**（策展層一個樂手都沒寫） |
+| **Charlie Hunter Quartet** | — | **沒有貝斯手**（八弦吉他兼低音） |
+| **Geri Allen** | — | **沒有貝斯也沒有鼓**；Ornette Coleman 只在 2 軌；〈Little Waltz〉是 Ron Carter 的曲子 |
+
+## 第 1252 條（主線）：**首發地固定動作跑滿 15 張，本組只真命中一次**
+
+⚠ **Greg Osby 的日版 `TOCJ-6061` 是 1996-07-31 的正式零售盤，比美版街頭日
+（Billboard 逐字 due Aug. 6）早六天**——**本組唯一一次真命中。**
+反例值得記：**Javon Jackson 的 `TOCJ-6062` 早六天但那是宣傳盤**（不改結論）；
+Charlie Hunter 的 `TOCJ-6057` 晚三週；Paul Jackson 的日版 format 帶 `Reissue`。
+另：**Norby 的首發地是丹麥／歐洲**（Apple dk 1996-06-28，日版 1996-09-04）；
+**Jimmy Smith《Lonesome Road》只有日版、沒有美歐版。**
+
+⚠ **連帶解掉第 1237 條(5) 的未決項**：**Norby 的 MB「13 軌殘件」就是日版 TOCP-8968**（第 13 軌是日本限定加軌）。

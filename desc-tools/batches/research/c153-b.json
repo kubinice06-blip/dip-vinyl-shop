@@ -33,7 +33,7 @@
     "src": "https://itunes.apple.com/lookup?id=716392895&entity=song&limit=200&country=us"
    },
    {
-    "f": "**跨卡**：實掃卡池（`seed_cards.json` 17,248 列 ＋ `desc-tools/batches/cards/c1*.json` ＋ `batch-progress/c1*/prop-*.json`，合計 **27,546 列**）`Max Roach` 命中 **9 列**：seed 的《We Insist!》1960／《Deeds, Not Words》1958／《Percussion Bitter Sweet》1961／《Drums Unlimited》1966／《Birth and Rebirth》1978（與 Anthony Braxton 聯名）、Clifford Brown 聯名 3 張（《Clifford Brown & Max Roach》1954／《Study in Brown》1955／《At Basin Street》1956）、《Booker Little 4 & Max Roach》1960（c-138 a 補）。**1985 年後的 Roach 池中 0 張、管弦樂編制 0 張、本張 0 張。**⚠ **逐軌比對：本張只有兩軌，池中九張 Roach 沒有任何一軌叫〈Festival Journey〉或〈Ghost Dance〉，0 重疊。**⚠ **第 1181／1192 條第六種盲區（本張的軌名等於另一張的卡名）本層自掃，兩軌皆零命中。**⚠ **第 1274 條 catno 交叉：`CDP 7243 8 34813 2 3` 在 Discogs 只回四筆，全部是同一張碟的不同壓片，沒有掛名字串不同的重複 RG。**",
+    "f": "**跨卡**：實掃卡池（`seed_cards.json` 17248 列 ＋ `desc-tools/batches/cards/c1*.json` ＋ `batch-progress/c1*/prop-*.json`，合計 **27546 列**）`Max Roach` 命中 **9 列**：seed 的《We Insist!》1960／《Deeds, Not Words》1958／《Percussion Bitter Sweet》1961／《Drums Unlimited》1966／《Birth and Rebirth》1978（與 Anthony Braxton 聯名）、Clifford Brown 聯名 3 張（《Clifford Brown & Max Roach》1954／《Study in Brown》1955／《At Basin Street》1956）、《Booker Little 4 & Max Roach》1960（c-138 a 補）。**1985 年後的 Roach 池中 0 張、管弦樂編制 0 張、本張 0 張。**⚠ **逐軌比對：本張只有兩軌，池中九張 Roach 沒有任何一軌叫〈Festival Journey〉或〈Ghost Dance〉，0 重疊。**⚠ **第 1181／1192 條第六種盲區（本張的軌名等於另一張的卡名）本層自掃，兩軌皆零命中。**⚠ **第 1274 條 catno 交叉：`CDP 7243 8 34813 2 3` 在 Discogs 只回四筆，全部是同一張碟的不同壓片，沒有掛名字串不同的重複 RG。**",
     "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+34813+2+3&type=release"
    }
   ],
@@ -84,7 +84,7 @@
     "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-04-20.pdf"
    },
    {
-    "f": "**跨卡**：實掃卡池 27,546 列，`Duke Pearson` 命中 **11 張不同的碟**（seed 11 列：《Profile》1960／《Tender Feelin's》1961／《Wahoo!》1965／《The Right Touch》1967／《Sweet Honey Bee》1967／《The Phantom》1968／《Introducing Duke Pearson's Big Band》1968／《Now Hear This》1969／《Merry Ole Soul》1969／《How Insensitive》1970／《It Could Only Happen With You》1974，c-137～c-143 已逐張補齊），**本張是第 12 張、池中 0 列**。⚠ **同場不同曲的三角關係（第 1236 條第 1 點）**：**1970-02-13 那一場同時餵了池中 c-143 b 的《It Could Only Happen With You》**、**1969-05-05 那一場同時餵了 c-142 b 的《How Insensitive》**——**三張的軌目逐一比對，0 重疊，但三張 `risk` 要互指。**⚠ **本張十一軌的軌名拿去掃全卡池卡名，唯一命中的是它自己的同名主打軌（自身），其餘 0**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 35220 2 6` 反查只回美歐兩筆 CD，`B1 7243 8 35220 1 9` 只回美歐兩筆 LP，沒有掛名字串不同的重複 RG**（第 1274 條）。",
+    "f": "**跨卡**：實掃卡池 27546 列，`Duke Pearson` 命中 **11 張不同的碟**（seed 11 列：《Profile》1960／《Tender Feelin's》1961／《Wahoo!》1965／《The Right Touch》1967／《Sweet Honey Bee》1967／《The Phantom》1968／《Introducing Duke Pearson's Big Band》1968／《Now Hear This》1969／《Merry Ole Soul》1969／《How Insensitive》1970／《It Could Only Happen With You》1974，c-137～c-143 已逐張補齊），**本張是第 12 張、池中 0 列**。⚠ **同場不同曲的三角關係（第 1236 條第 1 點）**：**1970-02-13 那一場同時餵了池中 c-143 b 的《It Could Only Happen With You》**、**1969-05-05 那一場同時餵了 c-142 b 的《How Insensitive》**——**三張的軌目逐一比對，0 重疊，但三張 `risk` 要互指。**⚠ **本張十一軌的軌名拿去掃全卡池卡名，唯一命中的是它自己的同名主打軌（自身），其餘 0**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 35220 2 6` 反查只回美歐兩筆 CD，`B1 7243 8 35220 1 9` 只回美歐兩筆 LP，沒有掛名字串不同的重複 RG**（第 1274 條）。",
     "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+35220+2+6&type=release"
    }
   ],
@@ -136,7 +136,7 @@
     "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-08-24.pdf"
    },
    {
-    "f": "**跨卡**：實掃卡池 27,546 列，`Three Sounds` 命中 **16 張不同的碟**（seed 15 張：《Introducing the Three Sounds》1958／《Bottoms Up!》1959／《Moods》1960／《Feelin' Good》1961／《Here We Come》1962／《Hey There!》1962／《It Just Got to Be》1963／《Black Orchid》1964／《Out of This World》1966／《Vibrations》1967／《Coldwater Flat》1968／《Elegant Soul》1969／《Soul Symphony》1970／《The 3 Sounds》1971／《Babe's Blues》1986，另有 `Gene Harris —《Gene Harris of the Three Sounds》`1972），**本張池中 0 列**。⚠⚠ **撞陳列一格（第 1049／1236 條）**：**〈Sittin' Duck〉與池中 `The Three Sounds —《Elegant Soul》`（c-141 b，卡單 year **1969**、錄音 1968-09-19／20）同名**——**本層逐軌覆核：Apple `716251274`（Elegant Soul，**9 軌**）的〈Sittin' Duck〉長 **556 秒**，本卡的〈Sittin' Duck〉長 **454 秒**，差 102 秒；《Elegant Soul》另八軌（Elegant Soul／Do It Right Now／Harper Valley P.T.A./Sugar Hill／African Sweets／Black Gold／Book of Slim／Walls of Respect）與本卡八軌 0 重疊。**→ **同名不同錄音，照收，兩張 risk 互指。**",
+    "f": "**跨卡**：實掃卡池 27546 列，`Three Sounds` 命中 **16 張不同的碟**（seed 15 張：《Introducing the Three Sounds》1958／《Bottoms Up!》1959／《Moods》1960／《Feelin' Good》1961／《Here We Come》1962／《Hey There!》1962／《It Just Got to Be》1963／《Black Orchid》1964／《Out of This World》1966／《Vibrations》1967／《Coldwater Flat》1968／《Elegant Soul》1969／《Soul Symphony》1970／《The 3 Sounds》1971／《Babe's Blues》1986，另有 `Gene Harris —《Gene Harris of the Three Sounds》`1972），**本張池中 0 列**。⚠⚠ **撞陳列一格（第 1049／1236 條）**：**〈Sittin' Duck〉與池中 `The Three Sounds —《Elegant Soul》`（c-141 b，卡單 year **1969**、錄音 1968-09-19／20）同名**——**本層逐軌覆核：Apple `716251274`（Elegant Soul，**9 軌**）的〈Sittin' Duck〉長 **556 秒**，本卡的〈Sittin' Duck〉長 **454 秒**，差 102 秒；《Elegant Soul》另八軌（Elegant Soul／Do It Right Now／Harper Valley P.T.A./Sugar Hill／African Sweets／Black Gold／Book of Slim／Walls of Respect）與本卡八軌 0 重疊。**→ **同名不同錄音，照收，兩張 risk 互指。**",
     "src": "https://itunes.apple.com/lookup?id=716251274&entity=song&limit=200&country=us"
    }
   ],
@@ -184,7 +184,7 @@
     "src": "https://itunes.apple.com/lookup?id=716436757&entity=song&limit=200&country=us"
    },
    {
-    "f": "**跨卡**：實掃卡池 27,546 列，`Javon Jackson` 命中 **4 張**：c-151 b 的《When the Time Is Right》1994、c-152 b 的《For One Who Knows》1995、**本張 1996**、c-154 b 的《Good People》1997——**四張是連續四年的 Blue Note 領班盤，池中沒有本張**。⚠ **逐軌比對**：四張之間軌名 0 重疊。⚠ **本張九軌的軌名掃全卡池卡名，0 命中**（第 1181／1192 條第六種盲區）。⚠ **catno 交叉（第 1274 條）**：`CDP 7243 8 36490 2 0` 只回三筆（美正式／美宣傳／荷蘭），`TOCJ-6062` 只回日版宣傳一筆，**沒有掛名字串不同的重複 RG**。⚠ **同碟上的 Lonnie Smith 與 Cassandra Wilson 在池中各自有卡**（Lonnie Smith 池中 8 列、含 c-153 a 的《Live at Club Mozambique》），**但那是側人關係不是撞卡**（第 855／861 條：錄音室是必要條件，共同樂手只能當旁證）。",
+    "f": "**跨卡**：實掃卡池 27546 列，`Javon Jackson` 命中 **4 張**：c-151 b 的《When the Time Is Right》1994、c-152 b 的《For One Who Knows》1995、**本張 1996**、c-154 b 的《Good People》1997——**四張是連續四年的 Blue Note 領班盤，池中沒有本張**。⚠ **逐軌比對**：四張之間軌名 0 重疊。⚠ **本張九軌的軌名掃全卡池卡名，0 命中**（第 1181／1192 條第六種盲區）。⚠ **catno 交叉（第 1274 條）**：`CDP 7243 8 36490 2 0` 只回三筆（美正式／美宣傳／荷蘭），`TOCJ-6062` 只回日版宣傳一筆，**沒有掛名字串不同的重複 RG**。⚠ **同碟上的 Lonnie Smith 與 Cassandra Wilson 在池中各自有卡**（Lonnie Smith 池中 8 列、含 c-153 a 的《Live at Club Mozambique》），**但那是側人關係不是撞卡**（第 855／861 條：錄音室是必要條件，共同樂手只能當旁證）。",
     "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+36490+2+0&type=release"
    },
    {
@@ -236,7 +236,7 @@
     "src": "https://itunes.apple.com/lookup?id=724010230&entity=song&limit=200&country=us"
    },
    {
-    "f": "**跨卡**：實掃卡池 27,546 列，`Charlie Hunter` 命中 **3 張**：c-152 b 的 **`Charlie Hunter Trio —《Bing, Bing, Bing!》`1995**、**本張 1996**、c-154 a 的 **`Charlie Hunter Quartet —《Natty Dread》`1997**。⚠ **掛名是兩個不同實體、不是分裂**（第 307／1235 條）：**MB 的 `Charlie Hunter Trio` 與 `Charlie Hunter Quartet` 是兩個 Group MBID，Billboard 榜上逐字印 `CHARLIE HUNTER QUARTET`，編制也真的從三人變四人**——**`Charlie Hunter Trio` 與裸名 `Charlie Hunter` 進 `queryAlias`，不自行合併。**⚠ **逐軌比對：本張九軌與《Bing, Bing, Bing!》、《Natty Dread》皆 0 重疊**（《Natty Dread》是把 Bob Marley 整張專輯重錄，曲名全是 Marley 的曲）。⚠ **本張九軌的軌名掃全卡池卡名，0 命中。**⚠ **catno 交叉（第 1274 條）**：`CDP 7243 8 37101 2 6` 回美正式／美宣傳／歐三筆、`TOCJ-6057` 回日版一筆，**沒有掛名字串不同的重複 RG**。",
+    "f": "**跨卡**：實掃卡池 27546 列，`Charlie Hunter` 命中 **3 張**：c-152 b 的 **`Charlie Hunter Trio —《Bing, Bing, Bing!》`1995**、**本張 1996**、c-154 a 的 **`Charlie Hunter Quartet —《Natty Dread》`1997**。⚠ **掛名是兩個不同實體、不是分裂**（第 307／1235 條）：**MB 的 `Charlie Hunter Trio` 與 `Charlie Hunter Quartet` 是兩個 Group MBID，Billboard 榜上逐字印 `CHARLIE HUNTER QUARTET`，編制也真的從三人變四人**——**`Charlie Hunter Trio` 與裸名 `Charlie Hunter` 進 `queryAlias`，不自行合併。**⚠ **逐軌比對：本張九軌與《Bing, Bing, Bing!》、《Natty Dread》皆 0 重疊**（《Natty Dread》是把 Bob Marley 整張專輯重錄，曲名全是 Marley 的曲）。⚠ **本張九軌的軌名掃全卡池卡名，0 命中。**⚠ **catno 交叉（第 1274 條）**：`CDP 7243 8 37101 2 6` 回美正式／美宣傳／歐三筆、`TOCJ-6057` 回日版一筆，**沒有掛名字串不同的重複 RG**。",
     "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+37101+2+6&type=release"
    },
    {
@@ -292,7 +292,7 @@
     "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+37302+2+3&type=release"
    },
    {
-    "f": "**店面 ＋ 跨卡**：Apple `us` **724282931**（`Marcus Printup — Unveiled`，**11 軌**，releaseDate `1996-01-01` 年頭回填，copyright 欄逐字 `℗ 1996 Blue Note Records`）。**本層抽核軌數 11 與 MB 一致、無錯碟，串流採信 724282931。** **跨卡**：實掃卡池 27,546 列，`Marcus Printup` 命中 **2 張**——c-152 b 的《Song for the Beautiful Woman》1995（首作）與**本張**；**池中 0 列**。⚠ **逐軌比對：兩張 0 重疊。**⚠ **本張十一軌的軌名掃全卡池卡名**：〈Eclipse〉撞高柳昌行《Eclipse/侵蝕》1975（c-121 a）、〈Amazing Grace〉撞 Aretha Franklin《Amazing Grace》1972（seed）——**兩筆都是「曲名＝別張碟的卡名」，不是內容重複**（第 1181／1192 條第六種盲區，逐一確認）。⚠ **catno `CDP 7243 8 37302 2 3` 反查只回三筆同碟壓片，無重複 RG**（第 1274 條）。",
+    "f": "**店面 ＋ 跨卡**：Apple `us` **724282931**（`Marcus Printup — Unveiled`，**11 軌**，releaseDate `1996-01-01` 年頭回填，copyright 欄逐字 `℗ 1996 Blue Note Records`）。**本層抽核軌數 11 與 MB 一致、無錯碟，串流採信 724282931。** **跨卡**：實掃卡池 27546 列，`Marcus Printup` 命中 **2 張**——c-152 b 的《Song for the Beautiful Woman》1995（首作）與**本張**；**池中 0 列**。⚠ **逐軌比對：兩張 0 重疊。**⚠ **本張十一軌的軌名掃全卡池卡名**：〈Eclipse〉撞高柳昌行《Eclipse/侵蝕》1975（c-121 a）、〈Amazing Grace〉撞 Aretha Franklin《Amazing Grace》1972（seed）——**兩筆都是「曲名＝別張碟的卡名」，不是內容重複**（第 1181／1192 條第六種盲區，逐一確認）。⚠ **catno `CDP 7243 8 37302 2 3` 反查只回三筆同碟壓片，無重複 RG**（第 1274 條）。",
     "src": "https://api.discogs.com/database/search?q=Marcus+Printup+Unveiled&type=release"
    }
   ],
@@ -328,7 +328,7 @@
     "src": "https://api.discogs.com/releases/11256549"
    },
    {
-    "f": "⚠ **日版比美版早六天——而且它不是宣傳盤，是正式零售盤。** **Discogs 35149723：`TOCJ-6061`，Japan，`format` 逐字 `CD, Album`（無 Promo、無 Reissue），`released` 欄逐字 `1996-07-31`**，barcode `4988006720176`、`Price Code: ¥2,500`、`Manufactured By: Toshiba EMI Ltd`、℗© Capitol Records, Inc.。**而美版的街頭日是 Billboard 逐字的「due Aug. 6」＝1996-08-06。**→ ⚠ **本張的實體首發地是日本（1996-07-31），美版晚六天**（第 1063／1066／1133 條的固定動作命中：**「先查 TOCJ 再下首發地結論」在本組中了一次**）。**年份不變（都是 1996）**，但 **`TOCJ-6061` 必須進 `queryAlias`**（第 1132 條）。",
+    "f": "⚠ **日版比美版早六天——而且它不是宣傳盤，是正式零售盤。** **Discogs 35149723：`TOCJ-6061`，Japan，`format` 逐字 `CD, Album`（無 Promo、無 Reissue），`released` 欄逐字 `1996-07-31`**，barcode `4988006720176`、`Price Code: ¥2500`、`Manufactured By: Toshiba EMI Ltd`、℗© Capitol Records, Inc.。**而美版的街頭日是 Billboard 逐字的「due Aug. 6」＝1996-08-06。**→ ⚠ **本張的實體首發地是日本（1996-07-31），美版晚六天**（第 1063／1066／1133 條的固定動作命中：**「先查 TOCJ 再下首發地結論」在本組中了一次**）。**年份不變（都是 1996）**，但 **`TOCJ-6061` 必須進 `queryAlias`**（第 1132 條）。",
     "src": "https://api.discogs.com/releases/35149723"
    },
    {
@@ -344,7 +344,7 @@
     "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+37319+2+3&type=release"
    },
    {
-    "f": "**店面 ＋ 跨卡**：Apple `us` **724008152**（`Greg Osby — Art Forum`，**9 軌**，逐軌時長 271/372/468/116/430/338/498/501/455 秒，**與 MB 逐軌吻合（末軌差 1 秒）**，全部有 preview，copyright 欄逐字 `℗ 1996 Blue Note Records`，`releaseDate` `1996-01-01` 年頭回填）。**本層抽核全中、無錯碟，串流採信 724008152。** **跨卡**：實掃卡池 27,546 列，`Greg Osby` 命中 **6 張**：c-150 a《Man-Talk For Moderns Vol. X》1991、c-151 a《3-D Lifestyles》1993、c-152 a《Black Book》1995、**本張 1996**、c-154 a《Further Ado》1997、c-154 b《Banned in New York》1998 與《Zero》1998——**池中沒有本張**。⚠ **逐軌比對：與前後五張 0 重疊。**⚠ **本張九軌的軌名掃全卡池卡名，一筆命中**：〈Don't Explain〉↔ Beth Hart & Joe Bonamassa《Don't Explain》2011（seed）——**曲名＝別張碟的卡名，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 37319 2 3` 與 `TOCJ-6061` 反查皆只回同碟壓片，無重複 RG**（第 1274 條）。",
+    "f": "**店面 ＋ 跨卡**：Apple `us` **724008152**（`Greg Osby — Art Forum`，**9 軌**，逐軌時長 271/372/468/116/430/338/498/501/455 秒，**與 MB 逐軌吻合（末軌差 1 秒）**，全部有 preview，copyright 欄逐字 `℗ 1996 Blue Note Records`，`releaseDate` `1996-01-01` 年頭回填）。**本層抽核全中、無錯碟，串流採信 724008152。** **跨卡**：實掃卡池 27546 列，`Greg Osby` 命中 **6 張**：c-150 a《Man-Talk For Moderns Vol. X》1991、c-151 a《3-D Lifestyles》1993、c-152 a《Black Book》1995、**本張 1996**、c-154 a《Further Ado》1997、c-154 b《Banned in New York》1998 與《Zero》1998——**池中沒有本張**。⚠ **逐軌比對：與前後五張 0 重疊。**⚠ **本張九軌的軌名掃全卡池卡名，一筆命中**：〈Don't Explain〉↔ Beth Hart & Joe Bonamassa《Don't Explain》2011（seed）——**曲名＝別張碟的卡名，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 37319 2 3` 與 `TOCJ-6061` 反查皆只回同碟壓片，無重複 RG**（第 1274 條）。",
     "src": "https://itunes.apple.com/lookup?id=724008152&entity=song&limit=200&country=us"
    }
   ],
@@ -396,7 +396,7 @@
     "src": "https://api.discogs.com/releases/17897173"
    },
    {
-    "f": "**店面（第 254 條三種查法跑完，結論查無）＋ 跨卡**：**(1) `search` term＝盤名／藝人＋盤名，`us`／`gb`／`jp` 三市場皆 `resultCount: 0`。** **(2) 藝人目錄 `lookup`（artistId `7583067`，`entity=album`，`limit=200`，`us`）回 26 張，含 Blue Note 的《The Power of the String》(724521843, 2001) 與《Still Small Voice》(723551810, 2003)，**但沒有《Never Alone - Duets》**。** **(3) 以 catno／barcode 反查亦無。**→ ⚠ **Apple 店面查無，走固定無來源狀態**（策展層與 `apple-candidates.md` 都記「目錄裡找不到」，本層以三種查法復核，結論相同）。 **跨卡**：實掃卡池 27,546 列，`Paul Jackson` 只命中本張自己一列——**池中 0 張 Paul Jackson, Jr.**。⚠ **十軌的軌名掃全卡池卡名一筆命中**：〈People Get Ready〉↔ The Impressions《People Get Ready》1965（seed）——**曲名＝別張碟的卡名，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 37630 2 3` 反查只回一筆（美版），`PCCY-00867` 只回日版兩筆，無重複 RG**（第 1274 條）。⚠ **同碟客座 Earl Klugh 與 Joe Sample 在池中有卡，但依第 855／861 條只是旁證。**",
+    "f": "**店面（第 254 條三種查法跑完，結論查無）＋ 跨卡**：**(1) `search` term＝盤名／藝人＋盤名，`us`／`gb`／`jp` 三市場皆 `resultCount: 0`。** **(2) 藝人目錄 `lookup`（artistId `7583067`，`entity=album`，`limit=200`，`us`）回 26 張，含 Blue Note 的《The Power of the String》(724521843, 2001) 與《Still Small Voice》(723551810, 2003)，**但沒有《Never Alone - Duets》**。** **(3) 以 catno／barcode 反查亦無。**→ ⚠ **Apple 店面查無，走固定無來源狀態**（策展層與 `apple-candidates.md` 都記「目錄裡找不到」，本層以三種查法復核，結論相同）。 **跨卡**：實掃卡池 27546 列，`Paul Jackson` 只命中本張自己一列——**池中 0 張 Paul Jackson, Jr.**。⚠ **十軌的軌名掃全卡池卡名一筆命中**：〈People Get Ready〉↔ The Impressions《People Get Ready》1965（seed）——**曲名＝別張碟的卡名，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 37630 2 3` 反查只回一筆（美版），`PCCY-00867` 只回日版兩筆，無重複 RG**（第 1274 條）。⚠ **同碟客座 Earl Klugh 與 Joe Sample 在池中有卡，但依第 855／861 條只是旁證。**",
     "src": "https://itunes.apple.com/lookup?id=7583067&entity=album&limit=200&country=us"
    }
   ],
@@ -413,5 +413,369 @@
   "status": "full",
   "yearVerified": "**卡單 1996 成立，本層未改判。** (1) **榜位（第二層）**：**Billboard `TOP CONTEMPORARY JAZZ ALBUMS` 1996-06-01 p34 以 `NEW` 進榜第 23**，廠牌欄逐字 `BLUE NOTE 37630 /CAPITOL`。 (2) **評介**：**Billboard 1996-07-27 p81 的 JAZZ 評介欄逐字印「Blue Note 37630」。** (3) **MB first-release-date `1996-05-14`（帶完整月日）**，與 release 9a28a460 的 `date` 一致。 (4) **Discogs 美國原壓 3780032 的 `released` 欄逐字 `1996-05-14`——與 MB 逐日吻合，這是本組少見的「兩個獨立資料庫給出同一個完整日期」。** (5) **盤面 ℗© 1996**（notes 逐字「℗ © 1996 Pony Canyon Inc., Sweet Basil Inc. under exclusive license to Blue Note Records」）。**無反向證據。**⚠ **日版 `PCCY-00867`（Sweeca）的 `released` 是 `1997-11-16`、`format` 欄逐字帶 `Reissue`**——**比美版晚一年半且自稱再發，首發地確定是美國**（第 1063／1066／1133 條的固定動作已跑）。⚠ **Cash Box 1996 查 `37630`／`Paul Jackson` 零命中。**",
   "notes": "**覆核策展層：rgMbid 5da53e6c／唯一 release 9a28a460／掛名 `Paul Jackson, Jr.`（帶逗號與 Jr.）／年份 1996／`['jazz']` 不加 soul／rnb（第 1239 條），全部成立。**｜⚠⚠ **本層補上策展層沒寫、卻是本張身分核心的一件事：著作權人是日本的 Pony Canyon 與 Sweet Basil，Blue Note 只是獨家授權的發行方**（盤面 notes 逐字「under exclusive license to Blue Note Records」）。**正文不得寫成「Blue Note 製作的專輯」。**｜⚠⚠ **編制不是樂團而是逐軌換人的二重奏企劃**（第 1069／1189／1195 條那一類的反面：**這裡沒有常設團員可寫，寫任何一位客座時都必須說明他只在哪一軌**）。**十組客座、七個錄音室、十二家公司的「Courtesy of」聲明**，**連製作人與鼓手都逐軌不同**——**Billboard 評介抬頭逐字就是 `PRODUCERS various`。**｜⚠ **軌名一處不一致**：**MB 第 3 軌寫〈Wind Beneath My Strings〉，Discogs 盤面打成〈Wild Beneath My Strings〉**——**以 MB／Billboard 的 `Wind` 為準**（Discogs 是錯字）。⚠ **盤名三形**：MB `Never Alone - Duets`（連字號）／盤面 `Never Alone: Duets`（冒號）／Billboard 榜 `NEVER ALONE/DUETS`（斜線）——**三形都要進 `queryAlias`。**｜⚠ **載體**：**MB 一筆、Discogs 四筆（美 1996／日 1997 正式＋宣傳／日 2008），全部是 CD——沒有黑膠、沒有卡帶**（第 1064 條）。｜⚠⚠ **缺封面（CAA RG 層本層三試 `redirect: follow` 皆真 404，非 5xx，第 589a 條已滿足）。替代來源建議兩段寫**：**(甲) 美國原壓 `3780032`（US 1996 `CD, Album`），共 2 圖，`images[0]` 是 `primary`，但只有 300×300**——**與 c-151《The Master》那一格同形，偏小。** **(乙) 若要 600 級：日本 1997 Sweeca `PCCY-00867`（Discogs `17897173`），共 3 圖，`images[0]` 是 `primary`、600×540**（封面藝術與美版同一張）。**主線自行取捨，本層建議優先 (乙)。**｜**試聽查無（第 254 條三種查法跑完）**：`search`（`us`／`gb`／`jp`）`resultCount: 0`；**藝人目錄 `lookup`（artistId 7583067，26 張）沒有本張**，只有他後來的兩張 Blue Note 盤《The Power of the String》(724521843, 2001)、《Still Small Voice》(723551810, 2003)——**依第 646 條不得共用 collectionId**；catno／barcode 反查亦無。**→ 明寫查無，走固定無來源狀態。**｜**撞陳列**：**池中 `Paul Jackson, Jr.` 0 列**；**十軌軌名掃全卡池卡名一筆命中（〈People Get Ready〉↔ The Impressions 1965 同名碟），同名不同物**（第 1181／1192 條）；**catno 反查無重複 RG**（第 1274 條）。⚠ **客座裡的 Earl Klugh、Joe Sample、George Duke、Harvey Mason 在池中都有卡**——**依第 855／861 條（錄音室是必要條件、共同樂手只是旁證），不構成撞陳列。**⚠ **與 c-153 b 退表第 1 筆的 Earl Klugh《Love Songs》同年同廠牌，但那是合輯、本張是新錄音，兩者不相干。**｜**曲風**：`['jazz']`（第 1239 條）——**碟進的是 Billboard 的 TOP CONTEMPORARY JAZZ ALBUMS、評介登在 JAZZ 欄**，**〈Soulful Strut〉〈People Get Ready〉〈Where Is the Love〉三首靈魂樂曲目是選曲不是曲風。**｜非選輯：十軌皆為本次新錄音（分散在七個錄音室、1996 年同一製作週期），`secondary-types` 空、Discogs 美版 `format` 乾淨。"
+ },
+ {
+  "key": "desc2:Sonny Fortune|From Now On",
+  "artist": "Sonny Fortune",
+  "album": "From Now On",
+  "facts": [
+   {
+    "f": "release-group f31edc09 的欄位：title「From Now On」、artist-credit「Sonny Fortune」（**ea543f6c Person／US**、裸名）、first-release-date **1996**、primary-type Album、secondary-types 空。**轄下只有一筆 release：9d82f655（1996 US Official CD 8 軌，Blue Note `CDP 7243 8 38098 2 0`）**——⚠ **`barcode` 欄是 `null`（整個空）**（第 1237 條(2)，本組兩例之一，另一例是同批的《Art Forum》）。八軌與時長：〈Glue Fingers〉595s〈This Side of Infinity〉390s〈From Now On〉446s〈Come In out of the Rain〉621s〈Suspension〉428s〈On Second and Fifth〉326s〈Gift of Love〉325s〈Thoughts〉**1018s（十七分鐘，全碟最長）**。**八軌合計約 68 分鐘，是本組單碟時長最長的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f31edc09-2fd7-3fac-8259-8c5a9b522a17&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **核心是四重奏，三位客座各只上兩到三軌。** **Discogs 美國原壓 8571885 的 credits 逐字**：**`Sonny Fortune — Alto Saxophone, Producer`、`John Hicks — Piano`、`Santi Debriano — Bass`、`Jeff \"Tain\" Watts — Drums`**（四人上滿全碟）；**客座三位**：⚠ **`Joe Lovano — Tenor Saxophone [1, 6, 8]`（三軌）**、⚠ **`Eddie Henderson — Trumpet [1, 3, 8]`（三軌）**、⚠ **`Steve Berrios — Percussion [3, 8]`（兩軌）**。**製作端**：`Marty Khan — Producer`（與 Fortune 並列）、**`Rudy Van Gelder — Engineer`**、`Maureen Sickler — Engineer [Assistant]`、`Bret Primack — Liner Notes`、`Jimmy Katz — Photography`、`Marty Khan — Photography [Front Cover]`、`Patrick Roques — Design`。⚠ **companies 欄把錄音日期寫死**：逐字 **`Recorded At: Van Gelder Studio, Englewood Cliffs, New Jersey March 11 and 12, 1996`**——**兩天，一個錄音室，Rudy Van Gelder 親自錄。**",
+    "src": "https://api.discogs.com/releases/8571885"
+   },
+   {
+    "f": "⚠ **作曲：八軌裡 Fortune 自己只寫了三首半，四首是別人的。** Discogs 8571885 逐軌 `Written-By`：**〈Glue Fingers〉`Marcus Belgrave`**、**〈This Side Of Infinity〉`Larry Willis` ＋ `Sonny Fortune`（合寫）**、〈From Now On〉`Sonny Fortune`、**〈Come In Out Of The Rain〉`Larry Willis`**、〈Suspension〉`Sonny Fortune`、〈On Second And Fifth〉`Sonny Fortune`、**〈Gift Of Love〉`Rodgers Grant`**、〈Thoughts〉`Sonny Fortune`。⚠ **策展層沒有寫作曲歸屬，正文若要提「全原創」會出錯——Larry Willis 一人就佔兩軌（含一首合寫）。**⚠ **Fortune 在本盤的樂器 credit 只有 `Alto Saxophone`**（他生涯也吹長笛與高音薩克斯，**但這張盤面只列中音**）——**正文不得寫成多管齊下。**",
+    "src": "https://api.discogs.com/releases/8571885"
+   },
+   {
+    "f": "**紙本：檔期 ＋ 廠牌整版廣告 ＋ 秋季發行表三則，評介與榜位零。** **(1) Billboard 1996-08-10 p34（Jim Macnie「Blue Notes」欄）逐字**：「Included in the lineup are dates by four sax virtuosos: Greg Osby's \"Art Forum\" (due Aug. 6), Jackie McLean's \"Hat Trick\" (Aug. 20), Javon Jackson's \"A Look Within,\" and **Sonny Fortune's \"From Now On\" (both due Sept. 3)** will augment the horn's history.」＝**1996-09-03 美國街頭日**。 **(2) Billboard 1996-07-27 p37 的 Blue Note 整版廣告**逐字把本張列在當年新片名單上：「BLUE NOTE — CASSANDRA WILSON / NEW GROOVES / RENEE ROSNES / THE BLUE NOTE ALL-STARS / BOB BELDEN - SHADES OF BLUE / CARNEGIE HALL JAZZ BAND / CHARLIE HUNTER / PAUL JACKSON JR / RICHARD ELLIOT / RAY BARRETTO / PIECES OF A DREAM / JAVON JACKSON / GREG OSBY / MARCUS PRINTUP / **SONNY FORTUNE** / JACKIE McLEAN / THE DOKY BROTHERS / MICHELE ROSEWOMAN / CAECILIE NORBY / …」——⚠ **這一則廣告同時涵蓋本組六張卡（Charlie Hunter／Paul Jackson Jr／Javon Jackson／Greg Osby／Marcus Printup／Sonny Fortune ＋ Cæcilie Norby），是本組最有用的一張同期紙本。** **(3) Billboard 1996-08-24 p91 的秋季發行表逐字「BLUE NOTE — JAVON JACKSON, A Look Within／MICHELE ROSEWOMAN, Spirit／SONNY FORTUNE, From Now On」。**⚠ **Billboard 1996 兩張爵士榜（第 879／1068 條）查 `38098`／`Sonny Fortune`／盤名皆零命中；全刊無評介欄；Cash Box 1996 零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-07-27.pdf"
+   },
+   {
+    "f": "**Discogs 同號三筆全部 1996、`format` 欄全部乾淨**：美 CD **8571885**（`CD, Album`，廠牌欄第二格逐字印 `Van Gelder Studio, Englewood Cliffs, New Jersey`）、美宣傳 **18253360**（`CD, Album, Promo`）、歐 CD **7177367**（`CD, Album`）。⚠ **Discogs 查無任何日版**（`TOCJ-`／`TOCP-` 皆無，country=Japan 篩選 0 筆）——**第 1063／1066／1133 條的固定動作已跑，本張沒有日本首發的問題。**⚠ **三筆全是 CD，沒有黑膠也沒有卡帶**（第 1064 條）。",
+    "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+38098+2+0&type=release"
+   },
+   {
+    "f": "**店面**：Apple `us` **1439395685**（`Sonny Fortune — From Now On`，**8 軌**，逐軌時長 595/390/446/621/428/326/325/1018 秒，**與 MB 逐秒完全相同（八軌零誤差）**，全部有 preview，genre Jazz，copyright 欄逐字 `A Blue Note Records Release; ℗ 1996 Capitol Records LLC`，`releaseDate` `1996-01-01` 年頭回填）。**本層抽核軌數與逐軌時長全中、無錯碟，串流採信 1439395685。**",
+    "src": "https://itunes.apple.com/lookup?id=1439395685&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "**跨卡**：實掃卡池 27546 列，`Sonny Fortune` 命中 **3 張**：seed／c-86 的《Long Before Our Mothers Cried》1974（Strata-East）、c-152 b 的《Four in One》1994（Blue Note）、**本張 1996**——**池中沒有本張**。⚠ **逐軌比對：三張 0 重疊。**⚠ **本張八軌的軌名掃全卡池卡名一筆命中**：〈Thoughts〉↔ Bill Dixon《Thoughts》1987（seed）——**曲名＝別張碟的卡名，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 38098 2 0` 反查只回三筆同碟壓片，無掛名字串不同的重複 RG**（第 1274 條）。⚠ **同碟客座 Joe Lovano 在池中有多張卡（含 c-152 b《Rush Hour》1995）、Eddie Henderson 亦有卡——依第 855／861 條，共同樂手只是旁證，錄音室與場次都不同，不構成撞陳列。**",
+    "src": "https://api.discogs.com/database/search?q=Sonny+Fortune+From+Now+On&type=release"
+   },
+   {
+    "f": "**時長結構（正文可用）**：八軌裡有三軌超過十分鐘或接近（〈Come In out of the Rain〉10:21、〈Glue Fingers〉9:55、〈Thoughts〉**16:58**），另五軌在五到七分半之間。⚠ **收尾的〈Thoughts〉將近十七分鐘，是全碟的三分之一**——**這是本張最容易寫進正文的結構事實**，而且它與〈Glue Fingers〉都是七人全員（Lovano ＋ Henderson ＋ Berrios 都在）的軌。",
+    "src": "https://itunes.apple.com/lookup?id=1439395685&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "收尾的〈Thoughts〉將近十七分鐘，佔掉全碟四分之一——而它也是唯一一軌七個人全到齊的：四重奏加上 Joe Lovano 的次中音、Eddie Henderson 的小號、Steve Berrios 的打擊",
+   "一九九六年三月的兩天，Rudy Van Gelder 親自在自己的錄音室按下錄音鍵——七十歲的工程師錄一位五十七歲的中音薩克斯手"
+  ],
+  "sound": "八軌，核心是 Sonny Fortune 的中音薩克斯、John Hicks 的鋼琴、Santi Debriano 的低音提琴、Jeff \"Tain\" Watts 的鼓。三位客座上得很省：Joe Lovano 的次中音只在第 1、6、8 軌，Eddie Henderson 的小號在第 1、3、8 軌，Steve Berrios 的打擊只在第 3、8 軌——頭尾兩軌才是七人全員。曲長落差大：三軌接近或超過十分鐘（〈Glue Fingers〉九分五十五秒、〈Come In out of the Rain〉十分二十一秒、收尾的〈Thoughts〉十六分五十八秒），其餘五軌五到七分半。曲目 Fortune 自己寫四首，另四首來自 Marcus Belgrave、Larry Willis（兩首，其中一首與 Fortune 合寫）與 Rodgers Grant。1996 年 3 月 11、12 兩天錄於 Englewood Cliffs 的 Van Gelder Studio，Rudy Van Gelder 親自錄音。",
+  "keyTracks": [
+   "Thoughts",
+   "Glue Fingers",
+   "From Now On"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1996 成立，本層未改判。** (1) **廠牌檔期**：**Billboard 1996-08-10 p34 逐字「Sonny Fortune's \"From Now On\" (both due Sept. 3)」＝1996-09-03 美國街頭日**（第 612／1175 條）。 (2) **廠牌整版廣告**：**Billboard 1996-07-27 p37 的 Blue Note 全版廣告在當年新片名單上逐字印 `SONNY FORTUNE`**（與同組另外六張卡同一則）。 (3) **秋季發行表**：Billboard 1996-08-24 p91 逐字再列一次。 (4) **MB first-release-date 1996**（RG 與唯一一筆 release 9d82f655 一致）。 (5) **Discogs 三筆（8571885／18253360／7177367）`year` 全部 1996、`format` 全乾淨。** (6) **錄音日 1996-03-11／12 與發行同年**（Discogs companies 欄逐字）。 (7) **盤面 ℗ 1996**（Apple copyright 欄逐字 `℗ 1996 Capitol Records LLC`）。**無反向證據。**⚠ **榜位與評介皆零**：Billboard 1996 兩張爵士榜（第 879／1068 條）查 `38098`／`Sonny Fortune`／盤名零命中，全刊無評介欄；Cash Box 1996 零命中。**有廣告無評介，是本段的常態（第 1234 條）。**⚠ **MB 那筆 release 的 `barcode` 欄空**（第 1237 條(2)），**目錄號靠 Discogs 與 Billboard 的 `38098` 交叉。**",
+  "notes": "**覆核策展層：rgMbid f31edc09／唯一 release 9d82f655／掛名 `Sonny Fortune`（裸名，沿用池中既有字串）／年份 1996，全部成立。**｜⚠⚠ **編制要寫成「四重奏 ＋ 三位分軌客座」，不能寫成七重奏**（第 1069／1189／1195 條最常見的形狀）：**上滿全碟的只有四個人（Fortune 中音／John Hicks 鋼琴／Santi Debriano 低音提琴／Jeff \"Tain\" Watts 鼓）**；**Joe Lovano 只在 1、6、8 軌，Eddie Henderson 只在 1、3、8 軌，Steve Berrios 只在 3、8 軌**——**頭尾兩軌（〈Glue Fingers〉與〈Thoughts〉）才是七人全到。**⚠ **Fortune 在本盤盤面只列 `Alto Saxophone` 一種樂器。**｜⚠ **作曲歸屬（策展層未寫）**：**八軌裡 Fortune 獨力寫四首、與 Larry Willis 合寫一首，另三首分別是 Marcus Belgrave〈Glue Fingers〉、Larry Willis〈Come In Out Of The Rain〉、Rodgers Grant〈Gift Of Love〉**——**正文不得寫成「全原創」。**｜⚠ **製作人是 `Marty Khan` ＋ Fortune 兩人，錄音是 Rudy Van Gelder 本人**（companies 欄逐字 `Recorded At: Van Gelder Studio, Englewood Cliffs, New Jersey March 11 and 12, 1996`；Discogs 美版的廠牌欄第二格甚至直接把錄音室印成廠牌）。｜⚠ **載體**：**MB 一筆、Discogs 三筆，全部是 CD——無黑膠、無卡帶、無日版**（`TOCJ-`／`TOCP-` 與 country=Japan 皆查無，第 1063／1066／1133 條的固定動作已跑）。｜**封面已有**：CAA RG 層有圖（策展層記 front=true、來源 1996 原盤），本層未動。**備援**：Discogs 美國原壓 **8571885** 只有 **1 圖**，`images[0]` 是 `primary`、**500×500**（尺寸偏小但確實是正面封面）。｜**試聽已 ready，本層抽核通過**：Apple `us` **1439395685**，8 軌、**逐軌時長與 MB 八軌零誤差**——**串流採信 1439395685。**｜**撞陳列**：**池中 `Sonny Fortune` 兩張（seed／c-86 的《Long Before Our Mothers Cried》1974、c-152 b 的《Four in One》1994）與本張逐軌 0 重疊**，三張 risk 可互指。**本張軌名掃全卡池卡名一筆命中（〈Thoughts〉↔ Bill Dixon《Thoughts》1987），同名不同物**（第 1181／1192 條）。**catno 反查無重複 RG**（第 1274 條）。⚠ **客座 Joe Lovano 池中有多張卡（含 c-152 b《Rush Hour》1995）、Eddie Henderson 亦有——依第 855／861 條只是旁證。**⚠ **同批的 Javon Jackson、Greg Osby、Marcus Printup 與本張同在 Billboard 1996-07-27 p37 的整版廣告與 1996-08-10 p34 的發行名單上，四張 risk 可互指為「同一份名單上的鄰居」。**｜非選輯：單一藝人、1996-03-11／12 同一錄音室兩天的新錄音，`secondary-types` 空、Discogs `format` 三筆全乾淨。"
+ },
+ {
+  "key": "desc2:Geri Allen|Eyes... in the Back of Your Head",
+  "artist": "Geri Allen",
+  "album": "Eyes... in the Back of Your Head",
+  "facts": [
+   {
+    "f": "release-group 88ac3a69 的欄位：title「Eyes... in the Back of Your Head」、artist-credit「Geri Allen」（**4d688d75 Person／US**、裸名）、**first-release-date `1996`**、primary-type Album、secondary-types 空。**MB 轄下只有一筆 release：7625c73d（1996 US Official CD 10 軌，Blue Note `CDP 7243 8 38297 2 9`，barcode 724383829729）**。十軌與時長：〈Mother Wit〉186s〈New Eyes Opening〉338s〈Vertical Flowing〉327s〈M.O.P.E.〉372s〈FMFMF (For My Family, for My Friends)〉334s〈Dark Eyes〉261s〈Little Waltz〉372s〈In the Back of Your Head〉352s〈Windows to the Soul〉312s〈The Eyes Have It〉444s。⚠ **MB 的 frd 1996 與所有其他來源衝突——見 `yearVerified`。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=88ac3a69-c8b1-307e-a6b4-b21c2288ac25&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **這張碟沒有貝斯手、也沒有鼓手——是鋼琴加分軌客座的編制。** **Discogs 美國版 9369455 的 credits 逐字，演奏者只有四位**：**`Geri Allen — Piano`（全碟）**、**`Wallace Roney — Trumpet [4, 6, 8, 9]`（四軌）**、**`Ornette Coleman — Alto Saxophone [3, 10]`（只有兩軌）**、**`Cyro Baptista — Percussion [1, 4, 6]`（三軌）**——**`Bass` 與 `Drums` 兩欄完全不存在**。製作端：**`Teo Macero — Producer [1, 2, 4 to 9]`**、**`Herb Jordan — Producer [3, 10]`**、`Geri Allen — Producer`、`Glen Kolotkin — Engineer [Recording]`、`Jules Allen — Photography [Cover Photographer]`；日方 A&R **`Yoshiko Tuge`**、執行製作 **`Hitoshi Namekata`**、美術 `Kaoru Taku`／設計 `Mayumi Ono`。**notes 逐字「Recorded on December 14-15, 1995 and March 1, 1996.」**，companies 欄 `Recorded At: Clinton Recording Studio`、`Mixed At: BMG Recording Studios`、`Mastered At: BMG Recording Studios`。",
+    "src": "https://api.discogs.com/releases/9369455"
+   },
+   {
+    "f": "⚠⚠ **決定性的製作時程：歐版條目把混音與母帶日期寫出來，母帶做完已經是 1997 年 2 月。** **Discogs 歐版 806089（Blue Note `7243 8 38297 2 9`）的 notes 逐字三行**：「Recorded at **Clinton Studios** in New York City on **Dec. 14 & 15, 1995 and Mar. 1, 1996.**」「Mixed at **BMG Studios** in New York City on **Dec. 16, 1996**」「Mastered at BMG Studios in New York City **Feb. 11, 1997**」——**母帶 1997-02-11 才完成，1996 年不可能發行。** companies 欄 ℗© **`Somethin' Else Records (2)`**。",
+    "src": "https://api.discogs.com/releases/806089"
+   },
+   {
+    "f": "⚠⚠ **Billboard 把街頭日寫死在 1997 年 8 月。** **Billboard 1997-07-12 p33（Ornette Coleman 專訪）逐字**：「Another current piano partner is **Geri Allen, whose Blue Note date \"Eyes ... In the Back Of Your Head,\" scheduled for an Aug. 12 release, features two duets with Coleman.** Allen was part of the saxist's \"Sound Museum\" project during the summer of '96.」——**1997-08-12 美國街頭日**（第 612／1175 條那一層）。Coleman 在同篇逐字談合作：「Playing a sequence/chordal thing is something that I have shown Geri, and with her abilities, once you reveal something that's possible, she goes for it. What you're hearing is her transforming that information.」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-07-12.pdf"
+   },
+   {
+    "f": "⚠ **評介也在 1997 年，而且逐字把編制講清楚。** **Billboard 1997-09-20 p79 的 JAZZ 評介欄逐字**：「**GERI ALLEN／Eyes... In The Back Of Your Head／PRODUCERS: Teo Macero & Geri Allen／Blue Note 38297**／Newest from celebrated pianist Geri Allen finds her accompanied by the **sparse backing crew of trumpeter (and husband) Wallace Roney and percussionist Cyro Baptista, plus two duets with guest star Ornette Coleman.** Co-produced by the venerable Teo Macero, this album sug[gests]…」——**「sparse backing crew」與 Discogs 的四人 credit 一字不差；「(and husband)」另外補上 Roney 與 Allen 的關係。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-09-20.pdf"
+   },
+   {
+    "f": "⚠ **Discogs 五筆條目全部 1997，沒有一筆是 1996，而且日本版是 `Somethin' Else`。** **美 CD 9369455（`CDP 7243 8 38297 2 9`，`CD, Album`，1997）／美宣傳 18711772（`CD, Album, Promo`，1997，廠牌欄第二三格逐字 `Toshiba EMI Ltd`）／歐 CD 806089（`7243 8 38297 2 9`，`CD, Album`，1997）／日 CD 806093（**`Somethin' Else`／`TOCJ-5589`**，`CD, Album, Stereo`，1997，barcode 4988006731318，notes 逐字「**(c)(p) 1997 Somethin' Else Records, a division of Toshiba-EMI Ltd.**」，TT 54:57）／日宣傳 11515668（同號，1997）**——**五筆的 `year` 與 `released` 全部 1997，`format` 欄全部乾淨（無 `Reissue`、無 `Compilation`）。**⚠ **美版的 ℗© 也是 `Toshiba EMI Ltd`、companies 欄逐字 `Licensed To: Blue Note Records`**——**這是一張日本 Somethin' Else 出資製作、授權給 Blue Note 在美歐發行的碟。**",
+    "src": "https://api.discogs.com/database/search?q=Geri+Allen+Eyes+In+The+Back+Of+Your+Head&type=release"
+   },
+   {
+    "f": "**作曲歸屬**：Discogs 9369455 逐軌 `Composed By`——Allen 獨力六首（Mother Wit／New Eyes Opening／M.O.P.E./FMFMF／Windows To The Soul ＋ 與人合寫四首中的部分），**與 Ornette Coleman 合寫兩首（〈Vertical Flowing〉〈The Eyes Have It〉，正是 Coleman 吹奏的那兩軌）**，**與 Wallace Roney 合寫兩首（〈Dark Eyes〉〈In The Back Of Your Head〉）**，⚠ **唯一的外來曲是〈Little Waltz〉，作曲者逐字是 `Ron Carter`**（notes 的版權欄也把第 7 軌單獨列為 `Re Track Productions`）。**正文不得寫成「十軌全原創」。**",
+    "src": "https://api.discogs.com/releases/9369455"
+   },
+   {
+    "f": "**店面（第 254 條三種查法跑完，結論查無）＋ 跨卡**：**(1) `search`（`us`／`jp`／`gb`／`de` 四市場）以盤名、藝人＋盤名查，全部 `resultCount: 0`。** **(2) 藝人目錄 `lookup`（artistId `57395`，`entity=album`，`limit=200`，`us`）回四十餘張 Geri Allen 條目，含 1997 年的《The Geri Allen Trio》(282470229)、《The Montréal Tapes》(1442266468)、《Some Aspect of Water》(1496645434) 與 1998 年的《The Gathering》(1443769972)，**沒有本張**——`apple-candidates.md` 列的三個候選（282470229／1442266468／1496645434）**經本層逐筆覆核，軌數 6／6／6 與本張的 10 軌不合，全部是錯碟**（第 528／707／709 條）。** **(3) catno／barcode 反查亦無。**→ ⚠ **Apple 店面查無，走固定無來源狀態。** **跨卡**：實掃卡池 27546 列，`Geri Allen` 命中 **4 張**（c-149 a 的《Triangular》1989 是 `Ralph Peterson Trio featuring Geri Allen`、c-150 a 的《The Nurturer》1990、c-151 a 的《Maroons》1992、c-151 b 的《Twenty One》1994），**池中沒有本張**。⚠ **逐軌 0 重疊。**⚠ **本張十軌的軌名掃全卡池卡名一筆命中**：〈Mother Wit〉↔ Betty Wright《Mother Wit》1987（seed）——**曲名＝別張碟的卡名**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 38297 2 9` 反查有雜訊**（Discogs 把 Pink Floyd 的 `7243 8 29752 2 9` 一群誤配進來）**但剔除後只剩本張的五筆壓片，無掛名字串不同的重複 RG**（第 1274 條）。",
+    "src": "https://itunes.apple.com/lookup?id=57395&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "一張沒有貝斯也沒有鼓的鋼琴盤：Geri Allen 的鋼琴從頭到尾，小號手 Wallace Roney 上四軌、打擊樂手 Cyro Baptista 上三軌，Ornette Coleman 只在兩軌出現——而那兩軌正好是兩人合寫的",
+   "錄音在 1995 年底與 1996 年初，混音拖到 1996 年底，母帶做完已經是 1997 年 2 月 11 日；Billboard 把它的上市日寫在 1997 年 8 月 12 日"
+  ],
+  "sound": "十軌，編制極稀疏：Geri Allen 的鋼琴貫穿全碟，沒有貝斯手也沒有鼓手。Wallace Roney 的小號只在四軌，Cyro Baptista 的打擊只在三軌，Ornette Coleman 的中音薩克斯只在兩軌，而且是兩人二重奏。曲子短，多半在五到六分之間，最短的開場〈Mother Wit〉三分零六秒、最長的收尾〈The Eyes Have It〉七分二十三秒，全碟約五十五分鐘。曲目六首是 Allen 自己的，兩首與 Coleman 合寫、兩首與 Roney 合寫，唯一的外來曲是 Ron Carter 的〈Little Waltz〉。1995 年 12 月 14、15 日與 1996 年 3 月 1 日錄於紐約 Clinton Recording Studio，Teo Macero 製作大部分軌。",
+  "keyTracks": [
+   "Vertical Flowing",
+   "The Eyes Have It",
+   "Little Waltz"
+  ],
+  "status": "full",
+  "yearVerified": "⚠⚠ **本層改判：卡單 1996 → `1997`。策展層第 1234 條把本張列在「覆核成立、不改的 13 張」裡，依據只有 MB frd ＋ Discogs ＋ 盤面 ℗，並註記「紙本完全空白」——但紙本空白的原因就是它根本不是 1996 年的碟，該查的年份是 1997。** **正方四層，彼此獨立：** **(1) 廠牌檔期（階序最上層，第 612／1175 條）**：**Billboard 1997-07-12 p33 逐字「Geri Allen, whose Blue Note date \"Eyes ... In the Back Of Your Head,\" **scheduled for an Aug. 12 release**」＝1997-08-12 美國街頭日。** **(2) 同期評介（第 1053 條那一層）**：**Billboard 1997-09-20 p79 的 JAZZ 評介欄，抬頭逐字印 `Blue Note 38297`、製作人 `Teo Macero & Geri Allen`——發行後五週的評介。** **(3) Discogs 原壓群五筆全部 1997、零筆 1996**（美 9369455／美宣傳 18711772／歐 806089／日 `TOCJ-5589` 806093／日宣傳 11515668），**`format` 欄全部乾淨。** **(4) 製作時程從物理上排除 1996**：**歐版 806089 的 notes 逐字「Mixed at BMG Studios in New York City on **Dec. 16, 1996**」「Mastered at BMG Studios in New York City **Feb. 11, 1997**」——1996 年 12 月才混音、1997 年 2 月才做母帶。** **(5) 盤面 ℗©**：**日版 notes 逐字「(c)(p) **1997** Somethin' Else Records, a division of Toshiba-EMI Ltd.」**，美版 companies 欄 ℗© `Toshiba EMI Ltd`。 **反向證據只有一項：MB 的 first-release-date `1996`（RG 與它唯一一筆 release 7625c73d 都填 1996）。** **依簡報 §二的階序「廠牌新聞稿／同期紙本 ＞ 榜位 ＞ Discogs 原壓群 ＞ MB first-release-date」，MB 是最弱的一層，且五個獨立來源全部指向 1997——改判成立。**（形狀同於第 1237 條(1)：**MB 的 frd 抄錯了一層**；本次抄的可能是錄音期或日方登記年。）⚠ **`label` 欄也要一併修**：**MB 那筆 release 的 `date` 1996 不可信，應以美版 Blue Note `CDP 7243 8 38297 2 9`（1997）為準，並註明日本原盤是 `Somethin' Else TOCJ-5589`（1997，barcode 4988006731318）。**⚠ **紙本**：**Billboard 1996 全年查 `38297`／`Geri Allen`／盤名——本盤零命中（命中的都是她當側人的報導）；Billboard 1997 全年查同一組字串——命中兩則（7-12 檔期、9-20 評介）。兩張爵士榜（第 879／1068 條）1996、1997 皆未見本盤進榜。Cash Box 1996-11-16 停刊、1997 無此刊。**",
+  "notes": "⚠⚠ **本層是本組唯一一張改判年份的碟：1996 → 1997**（依據見 `yearVerified`：Billboard 1997-07-12 的「Aug. 12 release」＋ 1997-09-20 的評介 ＋ Discogs 五筆全 1997 ＋ 母帶日 1997-02-11 ＋ 盤面 ℗© 1997，對上 MB frd 1996 一項）。**主線上架時 `year` 應取 1997，`label` 應寫美版 Blue Note `CDP 7243 8 38297 2 9`（1997），並在 risk 註明日本原盤是 `Somethin' Else TOCJ-5589`。**⚠ **這也連帶修正第 1234 條的一句話**：該條把本張的「紙本完全空白」列為「預期之內」，**實際原因是查錯了年份**——**1997 年的 Billboard 有兩則。**（第 1134／1188 條在本組的第二次命中，本段累計第六次。）｜⚠⚠ **編制：沒有貝斯、沒有鼓。** **Discogs 9369455 的 credits 只有四位演奏者**（Allen 鋼琴全碟／Wallace Roney 小號 4、6、8、9／Ornette Coleman 中音薩克斯 **只有 3、10 兩軌**／Cyro Baptista 打擊 1、4、6），**Billboard 1997-09-20 的評介逐字也說是 `sparse backing crew`**——**兩邊互證。正文絕不可把 Ornette Coleman 寫成本盤的常設樂手，也不可寫成「四重奏」。**⚠ **Roney 是 Allen 的丈夫**（Billboard 逐字 `(and husband)`）。｜⚠ **製作人有三位、分軌**：`Teo Macero [1, 2, 4 to 9]`、`Herb Jordan [3, 10]`、Allen 自己；**Coleman 吹的那兩軌（3、10）由 Herb Jordan 製作，不是 Macero。**｜⚠ **作曲**：**唯一的外來曲是 Ron Carter 的〈Little Waltz〉**，兩首與 Coleman 合寫、兩首與 Roney 合寫——**不得寫成「十軌全原創」。**｜⚠ **錄音不是一次**：**1995-12-14、15 ＋ 1996-03-01 三天，Clinton Recording Studio；混音 1996-12-16、母帶 1997-02-11，都在 BMG Studios。**｜⚠ **出資方是日本 Somethin' Else（東芝 EMI），Blue Note 是被授權方**（美版 companies 欄逐字 `Licensed To: Blue Note Records`、℗© `Toshiba EMI Ltd`；日方 A&R `Yoshiko Tuge`、執行製作 `Hitoshi Namekata`）——**與同批 Paul Jackson, Jr. 的 Pony Canyon 授權是同一種形狀。**⚠ **`TOCJ-5589` 與 `Somethin' Else` 建議進 `queryAlias`。**｜⚠ **載體**：**Discogs 五筆全部是 CD——沒有黑膠、沒有卡帶**（第 1064 條）。｜⚠⚠ **缺封面（CAA RG 層本層三試 `redirect: follow` 皆真 404，非 5xx，第 589a 條已滿足）。替代來源建議**：**Discogs 美版 `9369455`（US 1997 `CD, Album`），共 3 圖，`images[0]` 是 `primary`、600×600。**（次選：歐版 `806089`，11 圖，`images[0]` 是 `primary` 但 500×500。）⚠ **不要用日版 806093**：它只有 1 張圖、而且是 `secondary`（359×349），**沒有正面封面**。｜**試聽查無（第 254 條三種查法跑完）**：`search`（`us`／`jp`／`gb`／`de`）全部 0 筆；**藝人目錄 `lookup`（artistId 57395）沒有本張**；catno／barcode 反查亦無。⚠ **`apple-candidates.md` 給的三個候選（282470229《The Geri Allen Trio》／1442266468《The Montréal Tapes》／1496645434《Some Aspect of Water》）全部是 6 軌的別張碟，與本張 10 軌不合——逐筆覆核後排除**（第 528／707／709 條）。**→ 明寫查無，走固定無來源狀態。**｜**撞陳列**：**池中 Geri Allen 四張（c-149 a《Triangular》1989 掛名 `Ralph Peterson Trio featuring Geri Allen`、c-150 a《The Nurturer》1990、c-151 a《Maroons》1992、c-151 b《Twenty One》1994）與本張逐軌 0 重疊。**⚠ **改判成 1997 後，本張與 c-154 的 1997 年碟會變成同年鄰居，主線排序要注意。**⚠ **本張軌名掃全卡池卡名一筆命中（〈Mother Wit〉↔ Betty Wright《Mother Wit》1987），同名不同物**（第 1181／1192 條）。⚠ **catno 交叉（第 1274 條）**：`CDP 7243 8 38297 2 9` 的 Discogs 查詢會混進一群 Pink Floyd 的 `7243 8 29752 2 9`（**數字形近的誤配，不是重複 RG**），剔除後只剩本張五筆壓片。｜非選輯：單一藝人、1995-12～1996-03 同一製作期的新錄音，`secondary-types` 空、Discogs 五筆 `format` 全乾淨。"
+ },
+ {
+  "key": "desc2:Cæcilie Norby|My Corner of the Sky",
+  "artist": "Cæcilie Norby",
+  "album": "My Corner of the Sky",
+  "facts": [
+   {
+    "f": "release-group 879bb34f 的欄位：title「My Corner of the Sky」、artist-credit「Cæcilie Norby」（**75b54a14 Person／DK**）、first-release-date **1996**、primary-type Album、secondary-types 空。**轄下三筆 release**：**1c9776f2（1996 US Official CD 12 軌，Blue Note `CDP 7243 8 53422 2 6`，barcode 724385342226）**、**a7610ef4（1996 DK Official CD 12 軌，Blue Note `8534222`，同 barcode）**、⚠ **39e64592（無日期、無國別、媒體欄 `?`、**13 軌**，barcode null）**。**十二軌**：〈The Look of Love〉182s〈The Right to Love〉180s〈Set Them Free〉268s〈Suppertime〉229s〈African Fairytale〉346s〈Life on Mars〉220s〈Spinning Wheel〉308s〈What Do You See in Her〉191s〈Just One of Those Things〉237s〈Snow〉324s〈A Song for You〉234s〈Calling You〉325s。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=879bb34f-c40f-37ee-8bcb-b6a4d42f33a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **MB 那筆 13 軌的「殘件 release」39e64592 其實是日本版，第 13 軌是日本限定的加軌。** **Discogs 6195317：`TOCP-8968`，Japan，`CD, Album, Stereo`，`released` 欄逐字 `1996-09-04`**（identifiers 欄另有日式日期印記 `96･9･4` 與定價 `2500円`／`2427円`），**notes 逐字「Track 13 is a bonus track for Japan only.」**——**而 MB 那筆 13 軌殘件的第 13 軌正是〈Guess Who I Saw Today〉（216s）**。→ **第 1237 條(5)「殘件 release、而且軌數與正式盤不同」在本張的解答：它不是異版殘件，是日本盤。****正文不得把 13 軌當成本卡的軌數；`TOCP-8968` 建議進 `queryAlias`。**",
+    "src": "https://api.discogs.com/releases/6195317"
+   },
+   {
+    "f": "⚠⚠ **編制要從歐洲原壓取，不能從美版取。** **美版 Discogs 15001195 的 credits 只有四行**（`Nick Foss — Executive-Producer`／`James Farber — Mixed By`／`Cæcilie Norby — Producer`／`Niels Lan Doky — Producer`），**一位樂手都沒列**；**歐版 2568098（Blue Note／EMI-Medley `8534222`）才有完整名單**：**`Cæcilie Norby — Vocals, Arranged By, Producer`**、**`Niels Lan Doky — Arranged By [1, 2, 5 to 8, 10 to 12], Producer`**；**鋼琴三位分軌**——`David Kikoski — Piano [1, 2, 5, 10, 11]`、`Joey Calderazzo — Piano [7, 9, 12]`、`Lars Jansson — Piano [3, 4, 8]`；**貝斯兩位**——`Lars Danielsson — Bass [1, 2, 5 to 12]`、`Lennart Ginman — Bass, Arranged By [3, 4]`；**鼓三位**——`Terri Lyne Carrington — Drums [1, 2, 5 to 7, 9 to 12]`、`Alex Riel — Drums [3, 4]`、`Jeff Boudreaux — Drums [8]`；**Hammond 管風琴** `David Kikoski [7]`／`Lars Jansson [3]`；`Jacob Andersen — Percussion [3]`、`Terri Lyne Carrington — Percussion [7]`、`Louise Norby — Backing Vocals [7]`。⚠ **三位吹奏客座各只上一軌**：**`Michael Brecker — Tenor Saxophone [10]`**、**`Randy Brecker — Flugelhorn [6]`**、**`Scott Robinson — Flute [1]`**。",
+    "src": "https://api.discogs.com/releases/2568098"
+   },
+   {
+    "f": "**錄音與後製橫跨哥本哈根與紐約**：歐版 2568098 的 credits 逐字 `Hans Nielsen — Recorded By [Copenhagen]`、`Malcolm Pollack — Recorded By [New York]`、`Dave Amlen — Recorded By [New York Overdubs]`、`Devin Emke／Jason Standard／John Reigart — Engineer [New York Assistant]`、`James Farber — Mixed By`、`Jan Eliasson — Mastered By [Copenhagen]`、`Mark Klein — Technician [Piano Copenhagen]`、`Ed Wedberg — Technician [Piano New York]`；製作端 `Nick Foss — Executive-Producer`。**美版 15001195 的 notes 逐字「Copyright EMI-Medley, Denmark under exclusive license to Blue Note Records, a division of Capitol Records, Inc.」**——**與同批 Geri Allen（Toshiba EMI）、Paul Jackson, Jr.（Pony Canyon）同形：非美國分部出資、Blue Note 授權發行。**",
+    "src": "https://api.discogs.com/releases/2568098"
+   },
+   {
+    "f": "⚠ **十二軌全部是翻唱，沒有一首是 Norby 獨力作曲的原創曲——來源橫跨爵士、搖滾、靈魂與電影。** 歐版 2568098 逐軌歸屬：〈The Look of Love〉**Burt Bacharach／Hal David**、〈The Right to Love〉**Lalo Schifrin／Gene Lees**、〈Set Them Free〉**Sting**、〈Suppertime〉**Irving Berlin**、〈African Fairytale〉**音樂 Wayne Shorter、詞 Cæcilie Norby**、〈Life on Mars〉**David Bowie**、〈Spinning Wheel〉**David Clayton-Thomas**（Blood, Sweat & Tears）、〈What Do You See in Her〉**Hal David／Frank Weldon**、〈Just One of Those Things〉**Cole Porter**、〈Snow〉**音樂 Frans Bak、詞 Cæcilie Norby**、〈A Song for You〉**Leon Russell**、〈Calling You〉**Bob Telson**（《巴格達咖啡館》）。**Norby 只在兩軌（5、10）掛作詞。**",
+    "src": "https://api.discogs.com/releases/2568098"
+   },
+   {
+    "f": "**紙本**：**Billboard 1996-07-27 p37 的 Blue Note 整版廣告**在當年新片名單上逐字印 **`CAECILIE NORBY`**（同一則名單還有本組的 Charlie Hunter／Paul Jackson Jr／Javon Jackson／Greg Osby／Marcus Printup／Sonny Fortune）。⚠ **必須擋掉的誤讀**：**Billboard 1996-01-20 p47 的 Global Music Pulse 丹麥專題**逐字寫「…release an album in her own right on EMI's prestigious Blue Note label, Caecilie Norby is reaching international ears…」「The album **\"Caecilie Norby,\"** which was produced by and features Vietnamese/Danish pianist **Niels Lan Doky**, was recorded in Copenhagen and New York.」「A classically trained singer, the **32-year-old** Norby has been a strong presence on the music scene here since the mid-'80s. She made her name as the vocalist and co-composer in jazz-rock group **Frontline**」——⚠ **那篇講的是 1995 年的同名首作（c-153 a 的卡），不是本張**（第 1234 條已立過這條警語，本層逐字覆核後確認）。**不過末兩句（古典聲樂訓練、Frontline 出身）是講藝人生平，本卡的正文可以引用。**⚠ **Billboard 1996 兩張爵士榜查 `53422`／`Norby` 皆零命中——未進榜；Cash Box 1996 零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-01-20.pdf"
+   },
+   {
+    "f": "**Discogs 五筆條目全部 1996、`format` 欄全部乾淨**：**歐（丹麥原壓）2568098（`8534222`，Blue Note／EMI-Medley，`CD, Album`）**、美 **15001195**（`CDP 7243 8 53422 2 6`，`CD, Album, Stereo`）、美俱樂部版 **12214902**（`CD, Album, Club Edition, Stereo`）、日 **6195317**（`TOCP-8968`，`CD, Album, Stereo`，13 軌）、日宣傳 **32136264**（同號）。**五筆全部是 CD——沒有黑膠、沒有卡帶**（第 1064 條）。⚠ **首發序（第 1063／1066／1133 條的固定動作已跑）**：**Apple `dk`／`de` 的 `releaseDate` 是 `1996-06-28`（帶完整月日）**、**日版 `TOCP-8968` 的 `released` 是 `1996-09-04`**——**歐洲（丹麥）先、日本晚兩個多月，首發地是丹麥／歐洲不是美國也不是日本。**",
+    "src": "https://api.discogs.com/database/search?catno=8534222&type=release"
+   },
+   {
+    "f": "**店面**：Apple `dk`／`de` **696523909**（`Cæcilie Norby — My Corner of the Sky`，**12 軌**，逐軌時長 182/180/268/229/346/220/308/191/237/324/234/325 秒，**與 MB 美版 1c9776f2 逐秒完全相同**，全部有 preview，`releaseDate` `1996-06-28`，copyright 欄逐字 `℗ 1996 The copyright in this sound recording is owned by Parlophone Music Denmark A/S`）。⚠ **Apple 的 `primaryGenreName` 是 `Pop` 不是 `Jazz`**——**店面分類，不是分類事實，不影響第 1239 條判的 `['jazz']`。**⚠ **美國店面查無**（`us` 市場 `search` 0 筆）——**本張只在歐洲市場上架。** **本層抽核軌數與逐軌時長全中、無錯碟，串流採信 696523909。**",
+    "src": "https://itunes.apple.com/lookup?id=696523909&entity=song&limit=200&country=dk"
+   }
+  ],
+  "hookCandidates": [
+   "十二首全是別人的歌：Bacharach、Cole Porter、Irving Berlin 擺在一起，David Bowie 的〈Life on Mars〉、Sting 的〈Set Them Free〉、Blood, Sweat & Tears 的〈Spinning Wheel〉也擺在一起——她只在其中兩首掛了作詞",
+   "鋼琴三位、貝斯兩位、鼓三位，逐軌輪替；Michael Brecker、Randy Brecker、Scott Robinson 三位客座則是一人一軌，錄音在哥本哈根與紐約兩地來回"
+  ],
+  "sound": "十二軌的人聲專輯，班底逐軌換。鋼琴有三位（David Kikoski、Joey Calderazzo、Lars Jansson），貝斯兩位（Lars Danielsson 撐大半、Lennart Ginman 兩軌），鼓三位（Terri Lyne Carrington 撐大半、Alex Riel 兩軌、Jeff Boudreaux 一軌）。吹奏客座三位、各只上一軌：Michael Brecker 的次中音在〈Snow〉、Randy Brecker 的粗管短號在〈Life on Mars〉、Scott Robinson 的長笛在開場的〈The Look of Love〉。曲子短，九首在三到五分半之間，最短的〈The Right to Love〉三分整。十二首全是翻唱，橫跨 Bacharach、Cole Porter、Irving Berlin、Wayne Shorter、David Bowie、Sting、Leon Russell 與《巴格達咖啡館》的〈Calling You〉。錄音在哥本哈根與紐約兩地，Niels Lan Doky 與 Norby 共同製作。",
+  "keyTracks": [
+   "Life on Mars",
+   "Calling You",
+   "African Fairytale"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1996 成立，本層未改判——策展層第 1234 條的三層依據本層逐一覆核，全部成立。** (1) **Apple `dk`／`de` 的 `releaseDate` `1996-06-28`（帶完整月日、非年頭回填、非錄音日）**，collectionId 696523909。 (2) **廠牌廣告**：**Billboard 1996-07-27 p37 的 Blue Note 整版廣告在當年新片名單上逐字印 `CAECILIE NORBY`**（不是回顧、不是再發廣告）。 (3) **Discogs 五筆（歐 2568098／美 15001195／美俱樂部 12214902／日 6195317／日宣傳 32136264）`year` 全部 1996、`format` 全部乾淨。** (4) **MB first-release-date 1996**，美版與丹麥版兩筆 release 的 `date` 都是 1996。 (5) **日版 `TOCP-8968` 的 `released` 欄逐字 `1996-09-04`**，identifiers 欄另有日式印記 `96･9･4`——**同年、只是晚兩個多月。** **無反向證據。**⚠ **必須擋掉的誤讀（第 1234 條已立、本層逐字覆核）**：**Billboard 1996-01-20 p47 的 Global Music Pulse 丹麥專題講的是 1995 年的同名首作《Cæcilie Norby》（逐字寫 The album \"Caecilie Norby\"、produced by Niels Lan Doky），不是本張**——**那張是 c-153 a 的卡，本批不得把同一篇當成本張的證據。**⚠ **首發地是丹麥／歐洲**（歐版 `8534222` 由 EMI-Medley Denmark 持有版權、授權 Blue Note；Apple dk 1996-06-28），**不是美國、也不是日本**（第 1063／1066／1133 條的固定動作已跑）。⚠ **榜位零**：Billboard 1996 兩張爵士榜（第 879／1068 條）查 `53422`／`Norby` 零命中；Cash Box 1996 零命中。",
+  "notes": "**覆核策展層：rgMbid 879bb34f／美版 1c9776f2／掛名 `Cæcilie Norby`（帶 `æ`）／年份 1996，全部成立。**｜⚠⚠ **本層解掉了第 1237 條(5) 的一個未決項**：**MB 那筆「無日期、無國別、媒體欄 `?`、13 軌」的殘件 release 39e64592 就是日本版 `TOCP-8968`**——**Discogs 6195317 的 notes 逐字「Track 13 is a bonus track for Japan only.」，第 13 軌是〈Guess Who I Saw Today〉（216s）。** **本卡軌數取 12，日版加軌只寫進 risk；`TOCP-8968` 建議進 `queryAlias`。**｜⚠⚠ **編制必須從歐洲原壓取，不能從美版取**（同 c-152《Prysm》那一格的形狀）：**美版 Discogs 15001195 的 credits 只有四行、一位樂手都沒有**；**歐版 2568098 才有完整的逐軌名單**。**正文寫樂手時要知道來源是歐版盤面。**⚠ **三位最有名的客座各只上一軌**（`Michael Brecker — Tenor Saxophone [10]`／`Randy Brecker — Flugelhorn [6]`／`Scott Robinson — Flute [1]`）——**第 1069／1189／1195 條那個「只上一軌的客座被寫成常設團員」的形狀，正文務必標明軌次。**⚠ **鋼琴／貝斯／鼓全部是分軌輪替**（鋼琴三位、貝斯兩位、鼓三位），**不得寫成固定三重奏。**⚠ **`Louise Norby — Backing Vocals [7]` 是和聲，不是主唱。**｜⚠ **十二軌全部是翻唱**：**Norby 只在〈African Fairytale〉（曲 Wayne Shorter）與〈Snow〉（曲 Frans Bak）兩軌掛作詞，沒有一首是她獨力作曲的**——**正文不得寫成「她的創作集」。**｜⚠ **出資方是 EMI-Medley Denmark，Blue Note 是授權方**（美版 notes 逐字 `under exclusive license to Blue Note Records`；Apple 的 ℗ 欄現在掛 Parlophone Music Denmark）——**與同批 Geri Allen（Toshiba EMI）、Paul Jackson, Jr.（Pony Canyon）同形。**｜⚠ **載體**：**Discogs 五筆全部是 CD——無黑膠、無卡帶**（第 1064 條）。｜⚠⚠ **缺封面（CAA RG 層本層三試 `redirect: follow` 皆真 404，非 5xx，第 589a 條已滿足）。替代來源建議**：**Discogs 歐洲／丹麥原壓 `2568098`（Blue Note／EMI-Medley `8534222`，1996），共 11 圖，`images[0]` 是 `primary`、507×500。**⚠ **不要用美版 15001195**：它的 `images[0]` 雖是 `primary`、**只有 350×347**。**若主線要更大的檔：日版 `6195317`（`TOCP-8968`）共 25 圖，`images[0]` 是 `primary`、600×529，但那是帶腰帶的日本盤掃描，封面構圖可能與歐美版不同，取用前要看過。**｜**試聽已 ready，本層抽核通過**：**Apple `dk`／`de` **696523909**，12 軌、逐軌時長與 MB 美版逐秒相同、全部有 preview——**串流採信 696523909**。⚠ **美國店面查無**（`us` 0 筆），⚠ **Apple 把 genre 標成 `Pop`，那是店面分類不是分類事實。**｜**撞陳列**：⚠ **同批 a 組有 `Cæcilie Norby —《Cæcilie Norby》`（1995，c-153 a）——同一位藝人、相鄰兩年、同一個廠牌，主線上架時最容易混**（第 1236 條第 3 點）；**兩張逐軌 0 重疊，risk 必須互指。**⚠ **本張十二軌的軌名掃全卡池卡名命中五筆**（〈The Look of Love〉↔ Diana Krall 2001／Stanley Turrentine 1968（c-147 b）；〈Life on Mars〉↔ Dexter Wansel 1976；〈Just One of Those Things〉↔ Nat King Cole 1957；〈A Song for You〉↔ Carpenters 1972／The Temptations 1975）——**全部是「曲名＝別張碟的卡名」，不是內容重複**（第 1181／1192 條第六種盲區，逐一確認）。**catno `8534222` 與 `CDP 7243 8 53422 2 6` 反查只回同碟壓片，無重複 RG**（第 1274 條）。｜**曲風**：`['jazz']`（第 1239 條），本層同意——**碟由 Blue Note 發行、進的是 Blue Note 的爵士新片名單，Apple 的 `Pop` 是店面分類。**｜非選輯：**十二軌雖然全是翻唱，但都是本次新錄音（哥本哈根／紐約，1996 同一製作期），不是把舊錄音重編**；`secondary-types` 空、Discogs 五筆 `format` 全乾淨。"
+ },
+ {
+  "key": "desc2:Jimmy Smith|Lonesome Road",
+  "artist": "Jimmy Smith",
+  "album": "Lonesome Road",
+  "facts": [
+   {
+    "f": "release-group 39e4113b 的欄位：title「Lonesome Road」、artist-credit「Jimmy Smith」（**4f8a0d9b Person／US**、裸名）、**first-release-date `1996-11-27`（帶完整月日）**、primary-type Album、secondary-types 空。**轄下只有一筆 release：c58940f3（**1996-11-27 JP** Official CD 8 軌，**Blue Note `TOCJ-1615`**，barcode 4988006723306）**——⚠ **這是本組唯一一張只有日本盤、沒有任何美歐版的碟。** 八軌與時長：〈Margie〉353s〈Lonesome Road〉289s〈I Want a Little Girl〉316s〈Diane〉387s〈Blue Lou〉233s〈Our Love Is Here to Stay〉343s〈Danny Boy〉447s〈Taking a Chance on Love〉280s。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=39e4113b-3e2c-39b7-a347-56e19b8d7bf0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **這是第 1232 條的「收」那一格：`format` 欄乾淨、`notes` 裡沒有母體、腰帶自稱世界初登場。** **Discogs 8860234（`TOCJ-1615`，Japan，1996）的 `format` 欄逐字 `CD, Album, **Stereo**`（無 `Reissue`、無 `Remastered`）**，廠牌欄 `Blue Note [TOCJ-1615]` ＋ `Blue Note [LP-1615]`（**後者是東芝 EMI 併印的原始 1500 系列虛擬號，不是先前發行過的證據**），系列名 **`The BN Works 1500 Unissued`**。**notes 逐字三句**：「Recorded on **November 20, 1957 at Manhattan Towers, New York City.**」「**Obi states this is the world debut release (世界初登場).**」「NB: The first ten titles in this series have \"1500 Unissue\" [sic] as the series name. This was corrected for the next and final ten.」⚠ **Michael Cuscuna 的 Producer's Notes 逐字**：「Jimmy Smith was so popular and prolific that 13 of the 100 albums [sic] in the 1500 series were by him. What's even more amazing is that there was also a large supply of excellent unissued masters by this pioneering organist in the vault. **This previously unissued session of standards by his trio is just one example.**」——**「previously unissued」是庫存首發最直接的一句。**",
+    "src": "https://api.discogs.com/releases/8860234"
+   },
+   {
+    "f": "⚠ **錄音地點不是 Van Gelder 的錄音室，是曼哈頓的一座大廳。** Discogs 8860234 的 companies 欄逐字 **`Recorded At: Manhattan Towers`**，credits 逐字 **`Rudy Van Gelder — Engineer [Recording]`**——**Van Gelder 是錄音師，但這一場是在 Manhattan Towers 錄的，不是 Englewood Cliffs／Hackensack。正文不得寫成「在 Van Gelder 的錄音室錄的」。** 編制：**`Jimmy Smith — Organ`、`Eddie McFadden — Guitar`、`Donald Bailey — Drums`**（**三重奏，沒有第四個人**）；製作 **`Alfred Lion — Producer`**，封面攝影 **`Francis Wolff`**，1996 年的整理者 `Michael Cuscuna — Reissue Producer, Liner Notes`，另有 `Takao Ogawa — Liner Notes`（日文內頁）。**notes 另記：紙盒與白色托盤＋腰帶、12 頁小冊（英文 Producer's Notes ＋ 日文解說）、`HSE2088 (20bit 88.2kHz Mastering)`。**",
+    "src": "https://api.discogs.com/releases/8860234"
+   },
+   {
+    "f": "**八軌全部是標準曲與老歌，沒有一首是 Jimmy Smith 寫的。** Discogs 8860234 逐軌 `Written-By`：〈Margie〉**Con Conrad／J. Russel Robinson／Benny Davis**（1920）、〈Lonesome Road〉**Nathaniel Shilkret／Gene Austin**（1927）、〈I Want A Little Girl〉**Murray Mencher／Billy Moll**、〈Diane〉**Erno Rapee／Lew Pollack**（1927 默片主題曲）、〈Blue Lou〉**Edgar Sampson**、〈Our Love Is Here To Stay〉**George ＋ Ira Gershwin**、〈Danny Boy〉**Fred E. Weatherly**、〈Takin' A Chance On Love〉**Vernon Duke／John Latouche／Ted Fetter**。⚠ **軌名一處不一致**：**MB 第 8 軌寫〈Taking a Chance on Love〉，盤面逐字是〈Takin' A Chance On Love〉**——**兩形都該進 `queryAlias`。**",
+    "src": "https://api.discogs.com/releases/8860234"
+   },
+   {
+    "f": "**Discogs 只有兩筆條目，都是 1996 年的日本盤、`format` 全乾淨**：正式盤 **8860234**（`CD, Album, Stereo`，`released` 逐字 `1996-11-27`——**與 MB 的 frd 逐日吻合**）與宣傳盤 **22779782**（`CD, Album, Promo, Stereo`，同號同系列）。⚠ **沒有美版、沒有歐版、沒有黑膠、沒有卡帶、沒有數位**（第 1064 條：正文不得寫黑膠原壓）。⚠ **對照組（第 1232 條的表）**：同批退掉的 **Jimmy Smith《Groovin' at Small's Paradise, Volume 2》`TOCJ-1586`** 的系列名是 `The BN Works 1500 **Series**`、`format` 帶 `Reissue, Remastered, Mono`、label-info 併印母體號 `BN-1586`；**本張的系列名是 `1500 **Unissued**`、`format` 乾淨、沒有母體**——**兩張的差別就在這兩欄。**",
+    "src": "https://api.discogs.com/database/search?catno=TOCJ-1615&type=release"
+   },
+   {
+    "f": "**店面**：Apple `us` **1376816448**（`Jimmy Smith — Lonesome Road`，**8 軌**，逐軌時長 353/289/316/387/233/343/447/281 秒，**與 MB 逐秒相同（末軌差 1 秒）**，全部有 preview，genre Jazz，copyright 欄逐字 `A Blue Note Records Release; ℗ 1996 Capitol Records, LLC`）。⚠ **`releaseDate` 是 `1957-01-01`——那是錄音年，不是發行年**（同形於同批 Duke Pearson 的 `1970-01-01` 與《Live at the “It Club”》的 `1970-03-06`；**Apple 在本組把錄音年回填成發行日共三次**）。⚠ **但它的 `copyright` 欄 `℗ 1996` 與盤面一致，兩相對照就知道 `releaseDate` 是錯的那一欄。** **本層抽核軌數與逐軌時長全中、無錯碟，串流採信 1376816448。**",
+    "src": "https://itunes.apple.com/lookup?id=1376816448&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "**紙本零命中，本層已復掃。** **Billboard 1996 全年（52 期）與 Cash Box 1996（39 期，該刊 1996-11-16 停刊——**本張 11-27 發行時 Cash Box 已經沒了**）**查 `Lonesome Road`／`TOCJ-1615`／`1615`／`Manhattan Towers`／`1500 Unissued`，**全部零命中**；**Billboard 1996 兩張爵士榜（第 879／1068 條）亦零。** **只在日本發行的碟不會進美國兩刊，是預期之內**（第 1234 條已記本組 6/15 紙本空白）。⚠ **本層依第 1134／1188 條以 OCR 變體（`L0nesome`／`T0CJ`／`l615`）復掃，仍零，屬真零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-12-28.pdf"
+   },
+   {
+    "f": "**跨卡**：實掃卡池 27546 列，`Jimmy Smith` 命中 **20 餘張**（seed 大宗：《A New Sound, a New Star》Vol.1–3 1956／《A Date With Jimmy Smith》Vol.1–2 1957／《Jimmy Smith at the Organ》Vol.1–2 1958／《Plays Pretty Just for You》1957／《At Club \"Baby Grand\"》Vol.1–2 1957／《House Party》1958／《The Sermon!》1959／《The Sounds of Jimmy Smith》1959／《Crazy! Baby》1960／《Back at the Chicken Shack》1960／《Home Cookin'》1961／《Midnight Special》1961／《Bashin'》1962／《Prayer Meetin'》1964／《The Cat》1964／《Organ Grinder Swing》1965／《The Dynamic Duo》1966／《Root Down》1972 等），**池中沒有本張**。⚠ **1957 年同期盤的逐軌抽核**：**《Plays Pretty Just For You》（Apple 1374704665，8 軌：The Nearness of You／The Jitterbug Waltz／East of the Sun／Autumn in New York／Penthouse Serenade／The Very Thought of You／I Can't Get Started／Old Devil Moon）**與 **《A Date With Jimmy Smith》Vol.1（1442994316，3 軌）與 Vol.2（1442895568，3 軌）**——**與本張八軌逐軌 0 重疊。**⚠ **本張八軌的軌名掃全卡池卡名兩筆命中**：〈Diane〉↔ Chet Baker & Paul Bley《Diane》1985（seed）、〈Taking a Chance on Love〉↔ Simone《Taking A Chance On Love》2007（seed）——**曲名＝別張碟的卡名**（第 1181／1192 條第六種盲區）。⚠ **catno `TOCJ-1615` 反查只回兩筆（正式＋宣傳），無重複 RG**（第 1274 條）。",
+    "src": "https://itunes.apple.com/lookup?id=1374704665&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "一九五七年十一月二十日，曼哈頓一座大廳裡的一個下午：管風琴、吉他、鼓，八首老歌。母帶在架上躺了三十九年，一九九六年只在日本發行，腰帶上印著「世界初登場」",
+   "八首全是別人的歌，最老的〈Margie〉出自一九二〇年——一張沒有一首原創曲的管風琴三重奏盤"
+  ],
+  "sound": "八軌的管風琴三重奏：Jimmy Smith 的 Hammond、Eddie McFadden 的吉他、Donald Bailey 的鼓，沒有第四個人。曲子短，六首在四到六分之間，最短的〈Blue Lou〉不到四分鐘、最長的〈Danny Boy〉七分半。八首全是二十世紀上半的老歌與標準曲——一九二〇年的〈Margie〉、一九二七年的〈Lonesome Road〉與默片主題曲〈Diane〉、蓋希文兄弟的〈Our Love Is Here to Stay〉、愛爾蘭民謠〈Danny Boy〉——沒有一首是 Smith 自己寫的。一九五七年十一月二十日在紐約 Manhattan Towers 一次錄完，Alfred Lion 製作、Rudy Van Gelder 錄音、Francis Wolff 拍封面。",
+  "keyTracks": [
+   "Lonesome Road",
+   "Danny Boy",
+   "Margie"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1996 成立，本層未改判。** 判準是第 1202 條 (甲)（庫存首發 → `year` ＝首次商業發行年），**而本張是第 1232 條那張表裡「收」的那一格**。證據層：(1) **MB first-release-date `1996-11-27`（帶完整月日）**，與唯一一筆 release c58940f3 的 `date` 一致。 (2) **Discogs 正式盤 8860234 的 `released` 欄逐字 `1996-11-27`——與 MB 逐日吻合**；宣傳盤 22779782 同。 (3) **盤面自述**：**腰帶逐字「世界初登場」**、**Cuscuna 的 Producer's Notes 逐字「This previously unissued session of standards by his trio is just one example.」**——**兩句都說它先前沒發行過。** (4) **`format` 欄乾淨**（`CD, Album, Stereo`，無 `Reissue`、無 `Remastered`）、**notes 沒有寫出任何母體**（對照同批被退的 `TOCJ-1617`《The 45 Sessions》notes 逐字寫「Originally issued in Japan, 1980 as …」）。 (5) **Apple copyright 欄逐字 `℗ 1996 Capitol Records, LLC`。**⚠ **反向證據一項、不採信**：**Apple 的 `releaseDate` `1957-01-01` 是錄音年回填。**⚠ **紙本零命中且無法補**：**Cash Box 1996-11-16 已停刊，本張 11-27 才發行——該刊物理上不可能報導它**；Billboard 1996 全年查 `Lonesome Road`／`TOCJ-1615`／`1615` 零命中（僅日本發行，不進美國刊）。⚠ **錄音年 1957 與發行年 1996 差三十九年，正文必須把兩個年份分開講。**",
+  "notes": "**覆核策展層：rgMbid 39e4113b／唯一 release c58940f3／掛名 `Jimmy Smith`（裸名）／年份 1996／庫存首發不是再發／僅日本盤，全部成立。**｜⚠⚠ **本層擋下一處錄音地點的正文風險**：**Discogs companies 欄逐字 `Recorded At: **Manhattan Towers**`**，**Rudy Van Gelder 只是 `Engineer [Recording]`**——**1957 年這一場不在 Van Gelder 的家庭錄音室（Hackensack）也不在 Englewood Cliffs，正文不得寫成「Van Gelder 錄音室」。**（Blue Note 1950 年代確實有幾場在 Manhattan Towers 錄的管風琴盤。）｜⚠ **編制只有三個人**：Jimmy Smith 管風琴、Eddie McFadden 吉他、Donald Bailey 鼓——**盤面 credits 沒有第四位演奏者，正文不得加人。** 製作是 **Alfred Lion**（1957 年那一場），**Michael Cuscuna 掛的是 `Reissue Producer`**——⚠ **這個頭銜在 Blue Note 1990 年代的庫存首發上是常態，不是「先前發行過」的證據**（第 1240 條，六個樣本中三張掛此頭銜、三張都是首發）。｜⚠ **八軌全部是老歌與標準曲，沒有一首 Smith 原創**——**正文不得寫成「他的創作」。**⚠ **軌名一處不一致**：**MB 寫〈Taking a Chance on Love〉、盤面寫〈Takin' A Chance On Love〉**，建議兩形都進 `queryAlias`。｜⚠ **第 1232 條的兩欄判準，本張逐欄覆核成立**：**系列名 `The BN Works 1500 **Unissued**`（不是 `1500 Series`）＋ `format` 欄乾淨 ＋ notes 無母體**——**與同批被退的 `TOCJ-1586`《Groovin' at Small's Paradise, Vol. 2》（`1500 Series`／`Reissue, Remastered, Mono`／label-info 併印 `BN-1586`）、`TOCJ-1617`《The 45 Sessions》（同為 `1500 Unissued` 但 notes 逐字寫出母體 `GXF 3069`）形成三向對照。**⚠ **本張 label-info 第二格的 `LP-1615` 是東芝 EMI 併印的 1500 系列虛擬號，不是先前發行過的證據**（對照 `TOCJ-1586` 併印的 `BN-1586` 是真的母體號）。｜⚠ **載體與首發地**：**Discogs 只有兩筆、都是 1996 年的日本 CD——沒有美版、沒有歐版、沒有黑膠、沒有卡帶**（第 1064 條）。**首發地是日本，而且沒有第二個地方**（第 1063／1066／1133 條的固定動作已跑，結論是「只有日版」）。｜⚠⚠ **缺封面（CAA RG 層本層三試 `redirect: follow` 皆真 404，非 5xx，第 589a 條已滿足）。替代來源建議**：**Discogs 日本原盤 `8860234`（`TOCJ-1615`，1996），共 **9 圖**，`images[0]` 是 `primary`、600×524。**⚠ **這是日本盤掃描，`images[0]` 可能帶腰帶；若主線要無腰帶的正面，第 3、4 張 secondary 是 600×600，取用前要看過。**｜**試聽已 ready，本層抽核通過**：Apple `us` **1376816448**，8 軌、逐軌時長與 MB 吻合——**串流採信 1376816448**；⚠ **它的 `releaseDate` `1957-01-01` 不可當年份旁證。**｜**撞陳列**：**池中 Jimmy Smith 逾二十張，本層針對 1957 年同期的三張做了逐軌抽核**——**《Plays Pretty Just For You》（Apple 1374704665，8 軌）、《A Date With Jimmy Smith》Vol.1（1442994316）與 Vol.2（1442895568）**——**與本張八軌 0 重疊**（第 855／861 條：同藝人同年不等於同場次，本張是一場完全未發行過的獨立 session）。⚠ **本張軌名掃全卡池卡名兩筆命中**（〈Diane〉↔ Chet Baker & Paul Bley《Diane》1985；〈Taking a Chance on Love〉↔ Simone 2007 同名碟），**同名不同物**（第 1181／1192 條）。⚠ **catno `TOCJ-1615` 反查只回正式與宣傳兩筆，無重複 RG**（第 1274 條）。⚠ **同批退表第 2 筆就是 Jimmy Smith《Groovin' at Small's Paradise, Volume 2》（`TOCJ-1586`）——兩張同藝人、同一個東芝 EMI 復刻家族、相隔一個月發行，主線若看到它要知道那張被退了。**｜非選輯：單一場次（1957-11-20）的完整未發行 session 首度商業發行，`secondary-types` 空、Discogs 兩筆 `format` 全乾淨。"
+ },
+ {
+  "key": "desc2:Bob Dorough|Right On My Way Home",
+  "artist": "Bob Dorough",
+  "album": "Right On My Way Home",
+  "facts": [
+   {
+    "f": "release-group 1039c4b3 的欄位：title「Right On My Way Home」、artist-credit「Bob Dorough」（**de81eacd Person／US**）、first-release-date **`1997-01-01`**、primary-type Album、secondary-types 空。**轄下兩筆 release**：⚠ **0c09ace4（1997 US，`status` 欄逐字是 `?`、label-info 整個空、barcode null，CD 10 軌）**與 **f7d048dc（1997-01-01 XW Official Digital Media 10 軌，Blue Note，barcode 00724385772955）**——⚠ **MB 沒有任何一筆帶目錄號**（第 1237 條(3)，本組三例之一）。十軌與時長（數位層）：〈Moon River〉335s〈Whatever Happened to Love Songs?〉366s〈Right on My Way Home〉201s〈Walk On〉391s〈I Get the Neck of the Chicken〉271s〈Zacherly〉294s〈Something for Sidney〉284s〈Hodges〉357s〈Up Jumped a Bird〉335s〈Spring Can Really Hang You Up the Most〉359s。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1039c4b3-b72a-4316-bdcc-9a1c21131ab2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **這張碟是兩場、兩組節奏組拼成的，而且 Discogs 只有俱樂部版那一筆有完整 credits。** **Discogs 13010253（US 1997 `CD, Album, Club Edition`，BMG Music Service，Blue Note `CDP 7243 8 57729 2 4`）的 credits 逐字**：**`Bob Dorough — Vocals, Piano`**（全碟）；**第一組（第 1、3、4、5、7 軌）**：**`Christian McBride — Bass [1. 3. 4. 5. 7]`、`Billy Hart — Drums [1. 3. 4. 5. 7]`、`Jim Anderson — Engineer [1. 3. 4. 5. 7]`**；**第二組（第 2、6、8、9、10 軌）**：**`Bill Takas — Bass [2, 6, 8, 9, 10]`、`Grady Tate — Drums [2, 6, 8, 9, 10]`、`Kent Heckman — Engineer [2, 6, 8, 9, 10]`**；**客座**：⚠ **`Joe Lovano — Tenor Saxophone, Soprano Saxophone [3, 5, 7]`（只有三軌）**；製作 **`Bill Goodwin — Producer`**、母帶 `Allan Tucker`。⚠ **正式盤條目（3220759／20975407／日版 `TOCJ-6151` 37798341）的 credits 欄全部是空的**——**編制只能從俱樂部版取，取用時要標來源。**",
+    "src": "https://api.discogs.com/releases/13010253"
+   },
+   {
+    "f": "⚠ **紙本：Billboard 給了這張碟一篇跨頁專文，而且第一頁是「命中頁」策略抓不到的那一頁。** **Billboard 1997-09-27，標題逐字「JAZZ VETERAN BOB DOROUGH MAKES BLUE NOTE DEBUT」，第一頁 p11 沒有被任何關鍵字命中、續頁 p17 頁首逐字「(Continued from prige il)」（＝`page 11` 的 OCR 形變）**（第 1242 條已記這個 OCR 坑）。**續頁的內容**：Dorough 回憶 1962 年 Miles Davis 找他寫聖誕歌，逐字「Well, **Miles called me up out of the clear blue sky—it's June or something-1962**. He said [in a Miles-like croak], 'Bob.' 'Hey Miles.' '**Write me a Christmas song.**' 'What!?' 'I want you to write a Christmas song, and you're going to sing it with me.'」——**那首是〈Blue Xmas〉，收在 Columbia 的《Jingle Bell Jazz》**；同場另錄了他的〈Nothing Like You〉與〈Devil May Care〉，**三首都收進 1996 年的《Miles Davis & Gil Evans: The Complete Columbia Studio Recordings》盒裝**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-09-27.pdf"
+   },
+   {
+    "f": "同一篇 Billboard 1997-09-27 p17 把 Dorough 的三條身世線寫清楚：**(1) 早年兩張碟**逐字「his two early albums, which have recently returned to print: the **1957 Bethlehem release \"Devil May Care\"** and the **1966 Focus album \"Just About Everything,\"** which was reissued by Evidence Music.」 **(2) 製作人身分**逐字「Dorough and his sometime partner **Stuart Scharf** produced '60s hitmakers **Spanky And Our Gang**」。 **(3)〈School House Rock〉**逐字「Dorough became known to a new generation through his role in **ABC-TV's educational, interstitial program \"School House Rock\"** (SHR), for which he **wrote, played, sang, arranged, conducted, and served as musical director.** His first SHR song was the easygoing, sweetly funky groove of **\"Three Is A Magic Number.\"**」；**廠牌行銷口徑**（Tom Evered）逐字「We're trying to let everybody know that everybody that has appreciated Bob Dorough in the past can now step up … **From 'School House Rock' to the people that loved the Miles tunes.**」；**結尾 Dorough 自嘲**逐字「Oh, yeah, **just when I was ready to retire.**」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-09-27.pdf"
+   },
+   {
+    "f": "**Discogs 五筆條目全部 1997、`format` 欄全部乾淨**：美 CD **3220759**（`CDP 7243 8 57729 2 4`，`CD, Album`）、美俱樂部版 **13010253**（`CD, Album, Club Edition`）、美 advance 宣傳 **14867629**（`CD, Advance, Album, Promo`，catno 逐字 `CDP 7243 8 57729 2 4 V`）、荷蘭 **20975407**（`7243 8 57729 2 4`，`CD, Album`）、⚠ **日版宣傳 37798341（`TOCJ-6151`，Japan，`CD, Album, Promo`，1997）**。**五筆全部是 CD——沒有黑膠、沒有卡帶**（第 1064 條）。⚠ **`TOCJ-6151` 建議進 `queryAlias`**（第 1132 條；該筆是宣傳盤，不改首發地結論）。",
+    "src": "https://api.discogs.com/database/search?q=Bob+Dorough+Right+On+My+Way+Home&type=release"
+   },
+   {
+    "f": "**店面**：Apple `us` **724382003**（`Bob Dorough — Right On My Way Home`，**10 軌**，逐軌時長 335/366/201/391/271/294/284/357/335/359 秒，**與 MB 數位層 f7d048dc 逐秒完全相同**，全部有 preview，genre Jazz，copyright 欄逐字 `℗ 1997 Blue Note Records`，`releaseDate` `1997-01-01` 年頭回填）。⚠ **軌名有一處兩形**：**MB 的 CD 層 0c09ace4 與 Discogs 盤面寫〈Something For Sydney〉，MB 的數位層與 Apple 寫〈Something for Sidney〉**——**兩形都該進 `queryAlias`。** **本層抽核軌數與逐軌時長全中、無錯碟，串流採信 724382003。**",
+    "src": "https://itunes.apple.com/lookup?id=724382003&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "**跨卡**：實掃卡池 27546 列，`Bob Dorough` 只命中本張自己一列——**池中 0 張 Bob Dorough**（他 1957 年的《Devil May Care》與 1966 年的《Just About Everything》都不在池中，因為那不是 Blue Note 的碟）。⚠ **本張十軌的軌名掃全卡池卡名，0 命中**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 57729 2 4`／`TOCJ-6151` 反查只回同碟五筆壓片，無掛名字串不同的重複 RG**（第 1274 條）。⚠ **Billboard 1997 全年查 `57729` 的命中全部是 Nat King Cole 的 Capitol `57729`《The Christmas Song》（Top Pop Catalog Albums），與本盤無關——目錄號在不同廠牌撞號，查證時要連廠牌一起看**（第 509c／1141 條那一類）。⚠ **Billboard 1997 兩張爵士榜（第 879／1068 條）未見本盤進榜。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-12-20.pdf"
+   },
+   {
+    "f": "⚠ **同碟客座 Joe Lovano 的跨卡關係（旁證，不是撞陳列）**：**Lovano 在同一批的 `Sonny Fortune —《From Now On》`（1996，本組第 9 筆）也是分軌客座（1、6、8 軌）**，池中另有他自己的領班盤（含 c-152 b 的《Rush Hour》1995）。⚠ **依第 855／861 條：錄音室是必要條件，共同樂手只能當旁證**——**本張是 1997 年在紐約與賓州 Poconos 附近兩地錄的，與《From Now On》的 Van Gelder Studio 1996-03 完全無關，不構成撞陳列，只在 risk 互指即可。**",
+    "src": "https://api.discogs.com/releases/13010253"
+   }
+  ],
+  "hookCandidates": [
+   "一九九七年，七十三歲的 Bob Dorough 第一次以領班身分進 Blue Note——Billboard 專訪的最後一句是他自己說的：「喔對，正好在我準備退休的時候。」",
+   "十軌分成兩組人馬：五軌在紐約，Christian McBride 的貝斯配 Billy Hart 的鼓；另外五軌在他自家附近的錄音室，找回他第一張唱片的貝斯手 Bill Takas，配 Grady Tate"
+  ],
+  "sound": "十軌，Bob Dorough 自彈自唱的鋼琴與人聲貫穿全碟，底下是兩組完全不同的節奏組：第 1、3、4、5、7 軌是 Christian McBride 的低音提琴加 Billy Hart 的鼓，第 2、6、8、9、10 軌是 Bill Takas 的低音提琴加 Grady Tate 的鼓。Joe Lovano 的次中音與高音薩克斯只在三軌（3、5、7）。曲長平均，九軌在三分半到六分半之間，最短的同名曲三分二十一秒。曲目把〈Moon River〉與〈Spring Can Really Hang You Up the Most〉這類標準曲，和他自己那幾首帶著雜耍腔的原創曲（〈Whatever Happened to Love Songs?〉〈I Get the Neck of the Chicken〉〈Zacherly〉〈Hodges〉）放在一起。Bill Goodwin 製作。",
+  "keyTracks": [
+   "Right On My Way Home",
+   "Moon River",
+   "Spring Can Really Hang You Up the Most"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 成立，本層未改判。** (1) **專文（階序最上層，第 612／1175 條）**：**Billboard 1997-09-27 的跨頁專文，標題逐字「JAZZ VETERAN BOB DOROUGH MAKES BLUE NOTE DEBUT」（p11 起、p17 續）**——**內文由 Blue Note 行銷副總 Tom Evered 談本張的宣傳策略，是發片期的廠牌口徑報導。** (2) **MB first-release-date `1997-01-01`**，兩筆 release 的 `date` 都是 1997。 (3) **Discogs 五筆（美 3220759／美俱樂部 13010253／美 advance 宣傳 14867629／荷 20975407／日宣傳 `TOCJ-6151` 37798341）`year` 全部 1997、`format` 欄全部乾淨。** (4) **盤面 ℗ 1997**（Apple copyright 欄逐字 `℗ 1997 Blue Note Records`）。**無反向證據。**⚠ **榜位零**：**Billboard 1997 全年查 `57729` 的命中全部是 Nat King Cole 的 Capitol `57729`（Top Pop Catalog Albums 第 48 名，1997-12-20 p78）——不同廠牌同號，與本盤無關**；兩張爵士榜（第 879／1068 條）未見本盤。⚠ **Cash Box 1996-11-16 已停刊，1997 年沒有第二份刊物可交叉**（第 1242 條）。⚠ **MB 的 CD 層 release 0c09ace4 `status` 欄是 `?`、label-info 整個空、barcode null**（第 1237 條(3)）——**目錄號 `CDP 7243 8 57729 2 4` 是從 Discogs 五筆交叉來的，不是 MB 給的。**",
+  "notes": "**覆核策展層：rgMbid 1039c4b3／年份 1997／掛名 `Bob Dorough`（裸名、池中新字串）／Billboard 專文，全部成立。**｜⚠⚠ **編制是本張最容易寫錯的地方：十軌是兩組節奏組拼成的，不是一支固定樂團。** **第 1、3、4、5、7 軌＝Christian McBride（貝斯）＋ Billy Hart（鼓），錄音師 Jim Anderson；第 2、6、8、9、10 軌＝Bill Takas（貝斯）＋ Grady Tate（鼓），錄音師 Kent Heckman**——**連錄音師都分兩組，證明是兩場。**⚠ **`Joe Lovano — Tenor Saxophone, Soprano Saxophone [3, 5, 7]` 只有三軌**，**不是常設團員**（第 1069／1189／1195 條那個最常見的形狀）。⚠ **製作人是 `Bill Goodwin`，不是 Dorough 自己。**｜⚠⚠ **credits 的來源要標清楚**：**Discogs 的正式盤（3220759）、荷蘭版（20975407）與日版（37798341）credits 欄全是空的，只有美國俱樂部版 13010253（BMG Music Service）列了完整名單**——**引用編制時來源是俱樂部版那一筆。**｜⚠ **軌名兩形**：**〈Something For Sydney〉（MB CD 層與 Discogs 盤面）vs〈Something for Sidney〉（MB 數位層與 Apple）**——**建議兩形都進 `queryAlias`。**⚠ **`TOCJ-6151`（日版宣傳盤）也建議進 `queryAlias`**（第 1132 條）。｜⚠ **載體**：**Discogs 五筆全部是 CD——沒有黑膠、沒有卡帶**（第 1064 條）。⚠ **首發地**：**日版只有宣傳盤、且是 1997 年**（第 1063／1066／1133 條的固定動作已跑），**首發地寫美國 1997。**｜⚠ **紙本的 OCR 坑（第 1242 條已記，本層踩到同一個）**：**Billboard 1997-09-27 的 Dorough 專文第一頁 p11 沒有被任何關鍵字命中**（標題在圖上），**只抓得到 p17 的續頁，頁首逐字「(Continued from prige il)」＝`page 11`**——**引用時要標「p11 起、p17 續」，不能只寫 p17。**｜⚠ **紙本的目錄號撞號**：**Billboard 1997 查 `57729` 全部命中 Nat King Cole 的 **Capitol** `57729`**——**查目錄號一定要連廠牌一起看**（第 509c／1141 條那一類；本組第一次踩到）。｜**封面已有**：CAA RG 層有圖（策展層記 front=true），本層未動。**備援**：Discogs 美國原壓 **3220759** 共 3 圖，`images[0]` 是 `primary`、516×518。｜**試聽已 ready，本層抽核通過**：Apple `us` **724382003**，10 軌、逐軌時長與 MB 數位層逐秒相同——**串流採信 724382003。**｜**撞陳列**：**池中 `Bob Dorough` 0 列**（他的 1957 Bethlehem《Devil May Care》與 1966 Focus《Just About Everything》都不是 Blue Note 的碟，不在本線清單內）。**本張十軌的軌名掃全卡池卡名 0 命中**（第 1181／1192 條）；**catno 反查無重複 RG**（第 1274 條）。⚠ **客座 Joe Lovano 與同批第 9 筆《From Now On》（1996）、池中 c-152 b《Rush Hour》（1995）有共同樂手關係——依第 855／861 條只是旁證（錄音室與場次都不同），risk 互指即可，不得寫成同一批人。**⚠ **Billboard 1997-08-23 p9 另記 Dorough 參與了 Weill 致敬輯《September Songs》的〈Alabama Song〉，那是另一張碟。**｜非選輯：兩場新錄音（1997 年，紐約 ＋ Poconos 附近）的單一專輯，`secondary-types` 空、Discogs 五筆 `format` 全乾淨。"
+ },
+ {
+  "key": "desc2:Charlie Parker & Dizzy Gillespie|Diz ’n Bird at Carnegie Hall",
+  "artist": "Charlie Parker & Dizzy Gillespie",
+  "album": "Diz ’n Bird at Carnegie Hall",
+  "facts": [
+   {
+    "f": "release-group f10999d2 的欄位：title「Diz ’n Bird at Carnegie Hall」、artist-credit **「Charlie Parker」（c7356af9 Person）＋ join phrase ` & ` ＋「Dizzy Gillespie」（e9ba8ccb Person）**、**first-release-date `1997-06-17`（帶完整月日）**、primary-type Album、**secondary-types `[\"Live\"]`**。**轄下四筆 release，全部 15 軌**：**6838ce2f（1997-06-17 US Official CD，**Roost** `CDP 7243 8 57061 2 7`，barcode 724385706127）**、**36955030（1997 US Official CD，Roost 同號 ＋ `BMG Direct Marketing, Inc. / D118967`，barcode null）**、**b759f70a（1997 US Official CD，`Roost / CDP 557061`，barcode 020831212823）**、⚠ **ba2ac308（無日期 XW Official Digital Media，**label 是 `Blue Note` 不是 Roost**，barcode 724385706158）**——**第 1237 條(4)：同一個 RG 混了兩個廠牌名，而列舉檔正是因為數位那一筆掛 Blue Note 才把它掃進本線**（第 1238 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f10999d2-3340-3464-886e-d2518bd1c700&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **這張碟其實是兩個沒有交集的團：Parker 只在前五軌，後十軌他不在場。** **Discogs 美國原壓 621800 的 notes 逐字「Recorded live at Carnegie Hall on **September 29, 1947**.」「**Tracks 1-5 were performed by a quintet; tracks 6-15 were performed by a big band.**」**；credits 逐軌對上：**五重奏（1–5）＝`Charlie Parker — Alto Saxophone [1 to 5]`、`Dizzy Gillespie — Trumpet`、`John Lewis (2) — Piano`、`Al McKibbon — Bass`、`Joe Harris (3) — Drums`**；**大樂團（6–15）＝Gillespie 的管弦樂團**，**Parker 不在**：`Howard Johnson (6) — Alto Saxophone [6 to 15]`、`John Brown (3) — Alto Saxophone [6 to 15]`、`James Moody — Tenor Saxophone [6 to 15]`、`Joe Gayles — Tenor Saxophone [6 to 15]`、`Cecil Payne — Baritone Saxophone [6 to 15]`、`Dave Burns／Elmon Wright／Matthew McKay／Raymond Orr — Trumpet [6 to 15]`、`Taswell Baird／William Shepherd — Trombone [6 to 15]`、`Milt Jackson — Vibraphone [6 to 15]`、**`Chano Pozo — Congas [6 to 15]`**、`Lorenzo Salan — Bongos [6 to 15]`，節奏組 John Lewis／Al McKibbon／Joe Harris 兩邊都在。⚠ **這正是第 1069／1189／1195 條點名的「一張碟其實是兩個沒有交集的團」——正文不得把 Parker 寫進大樂團那十軌。**",
+    "src": "https://api.discogs.com/releases/621800"
+   },
+   {
+    "f": "⚠ **內頁自己說明為什麼有些曲目沒收——這是第 1233 條 (丁)「本次完整發行」的關鍵證據。** Discogs 621800 的 notes 逐字：「The booklet notes that **6 selections by Ella Fitzgerald, accompanied by Dizzy and his orchestra, performed between the quintet and the big band sets**, and **2 selections from the big band set — \"Yesterdays\", a feature for Milt Jackson's vibes, and \"I Didn't Know What Time It Was\" with vocals by Kenny Hagood — are not included in this album for reasons of technical deficiencies (mostly sung off mike).**」——**1997 年這次是把同一晚技術上可發行的部分完整收在一起，並逐一交代漏收的原因。** 製作端：**`Teddy Reig — Producer [Original Recording]`**、**`Michael Cuscuna — Producer [Produced For Release]`**、**音源修復分兩組：`Jack Towers ＋ Phil Schaap — Restoration [1 to 4]`、`Malcolm Addey — Restoration [5 to 15]`**；內頁 `Ira Gitler`、封面插畫 `Alan Nahigian`、包裝設計 `Brigid Pearson`；companies 欄 `Recorded At: Carnegie Hall`、**℗© 逐字 `1997 Capitol Records, Inc.`**。",
+    "src": "https://api.discogs.com/releases/621800"
+   },
+   {
+    "f": "⚠⚠ **母體覆核（第 1233 條 (丁) 的依據，本層逐欄核過）**：**Roost／Royal Roost `LP 2234`《Diz 'N' Bird In Concert》（Discogs 3832674，US 1959）的 `format` 欄逐字 `Vinyl, LP, Album, **Compilation**, Mono`**——**母體自己就是合輯**；**notes 逐字「The first side recorded at the **Carnegie Hall [29/09/47]** with John Lewis Al McKibbon & Joe Harris.」「The second side recorded in **Paris Salle Pleyel [09/02/53]** with Dizzy playing alongside Bill Graham Wadde Legge Lou Hackney Al Jones & Joe Carroll.」**——**A 面是本場的五重奏段（而且切成〈A Night In Tunesia (Part I/II)〉〈Groovin' High (Part I/II)〉這種分軌），B 面是六年後巴黎的另一場。** notes 另逐字列出大樂團那一段散落的去處：「**Black Deuce unnumbered; Birdland BLP 425; Savoy SJL 1177; Roost RLP 2234, RLP 2257; Vogue (E) LAE 12252, (F) DP 08; Charlie Parker PLP 512; Natural Organic 7000.**」→ **1947 這一晚在 1997 年之前從未以「一張完整的碟」發行過，`year` 取 1997 成立。**",
+    "src": "https://api.discogs.com/releases/3832674"
+   },
+   {
+    "f": "**1997 年那一批條目全部乾淨、全部 1997**：美 **621800**（`CD, Album`，Roost `CDP 7243 8 57061 2 7`，系列名 `The Performance Series`，`Manufactured By: Capitol Records, Inc.`）、美俱樂部版 **2088875**（`CD, Album, Club Edition`，BMG Direct）、荷蘭 **6283367**（`CD, Album`）、另有一筆無年份的再壓 **28266808**（`CD, Album, Reissue`）。⚠ **四筆 1997 條目的 `format` 欄沒有一個帶 `Compilation`**——**與母體 LP 2234 的 `Compilation` 形成對照，這是第 1233 條 (丁) 的門檻條件（本碟本身不是合輯）。**⚠ **1997 這一批沒有黑膠、沒有卡帶，全部是 CD**（第 1064 條）。",
+    "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+57061+2+7&type=release"
+   },
+   {
+    "f": "**作曲與編曲（Discogs 621800 逐軌）**：〈A Night In Tunisia〉Gillespie／Frank Paparelli、〈Dizzy Atmosphere〉Gillespie、〈Groovin' High〉Gillespie、〈Confirmation〉**Charlie Parker**、〈Koko〉**Charlie Parker**、〈Cool Breeze〉Billy Eckstine／Gillespie／**Tadd Dameron（編曲）**、〈Relaxin' At Camarillo〉Parker／**George Russell（編曲）**、〈One Bass Hit〉Gillespie／Ray Brown／**Gil Fuller（編曲）**、〈Nearness〉**Tadd Dameron（作曲兼編曲）**、〈Salt Peanuts〉Gillespie／Kenny Clarke（**Gillespie 兼人聲**）、〈Cubano-Be, Cubano-Bop〉Gillespie／**George Russell（作曲兼編曲）**、〈Hot House〉**Tadd Dameron**、〈Toccata For Trumpet〉**John Lewis（作曲兼編曲）**、〈Oop-Pop-A-Da〉**Babs Gonzales**（**Gillespie ＋ Kenny Hagood 人聲**）、〈Things To Come〉**Gil Fuller**。⚠ **〈Cubano-Be, Cubano-Bop〉是 Chano Pozo 在場的那一軌，也是這場音樂會最常被引用的一段。**",
+    "src": "https://api.discogs.com/releases/621800"
+   },
+   {
+    "f": "**店面（第 254 條三種查法跑完，結論查無）**：**(1) `search` 以 `Diz n Bird at Carnegie Hall`／`Diz'n Bird`／`Bird and Diz Carnegie Hall`／`Charlie Parker Carnegie Hall 1947` 在 `us`／`gb`／`jp`／`de`／`fr`／`ca`／`it` 七個市場查，本盤 `resultCount: 0`**（撈到的是 1952 年 Verve 的《Bird and Diz》1435957132／1664598920／1494245479、《Jazz At Massey Hall》1422672706 等別張碟）。 **(2) 藝人目錄 `lookup` 亦無。** **(3) catno／barcode 反查無。**→ ⚠ **Apple 店面查無，走固定無來源狀態。**⚠ **`apple-candidates.md` 給的七個候選（258589721《Greatest Hits》／1425184067《Talkin' Verve》／1447439422《Ultimate Dizzy Gillespie》／298510475《Dizzier & Dizzier》／1683191202《Bird Songs》／1625914671《Triple Play》／1449052838《Things To Come》／1447418024《The Complete Live Performances On Savoy》）**經本層覆核，軌數 17／13／12／17／6／18／10／61 沒有一個等於 15，全部是錯碟**（第 528／707／709 條）。⚠ **其中 1449052838《Things To Come》與本盤末軌同名、1447418024《The Complete Live Performances On Savoy》可能含母體那一段的部分材料——但都不是本碟，不得共用 collectionId**（第 646 條）。",
+    "src": "https://itunes.apple.com/search?term=Diz%20n%20Bird%20at%20Carnegie%20Hall&entity=album&country=us&limit=25"
+   },
+   {
+    "f": "**跨卡**：實掃卡池 27546 列，`Charlie Parker` 命中 **6 張**（seed 的《Charlie Parker with Strings》1949／《South of the Border》1952／《Now's the Time》1957／《Plays Cole Porter》1957／《Jazz at Massey Hall》、c-149 a 的《Charlie Parker at Storyville》），`Dizzy Gillespie` 命中 **10 張**（seed 的《Bird and Diz》1952／《Horn of Plenty》1953／**《Pleyel 53》1953**／《The Fabulous Dizzy Gillespie Pleyel Jazz Concert 1948》／《Afro》1954／《Roy & Diz》1955／《Dizzy Gillespie at Newport》1957／《Sonny Side Up》1959／《Swing Low, Sweet Cadillac》1967 等），**池中沒有本張**。⚠⚠ **必須逐張分辨的四場現場**：**本張＝1947-09-29 紐約卡內基**；**池中《Pleyel 53》＝1953-02-09 巴黎 Salle Pleyel**（**正是母體 LP 2234 的 B 面**，第 1233 條表格裡的那一塊）；**池中《The Fabulous Dizzy Gillespie Pleyel Jazz Concert 1948》＝1948 年巴黎的另一場**；**seed《Jazz at Massey Hall》＝1953-05-15 多倫多**；**c-149 a《Charlie Parker at Storyville》＝1953 年波士頓**。**五張沒有一張是同一場，逐軌亦無同錄音重複。**⚠⚠ **盤名撞名風險最高的一格**：**seed 有 `Dizzy Gillespie —《Bird and Diz》1952`（Verve 的棚內盤）**——**與本張《Diz 'n Bird at Carnegie Hall》只差詞序，主線上架比對必須帶完整盤名。**⚠ **本張十五軌的軌名掃全卡池卡名四筆命中**：〈A Night in Tunisia〉↔ Art Blakey and the Jazz Messengers《A Night in Tunisia》1961（seed）、〈Dizzy Atmosphere〉↔ Lee Morgan《Dizzy Atmosphere》1957（seed）、〈Groovin' High〉↔ Fumio Watanabe Quintet《Groovin' High》1982（c-87 b）、〈Confirmation〉↔ Tommy Flanagan《Confirmation》1982 與 Jimmy Smith《Confirmation》1979（c-145 a）——**全部是「曲名＝別張碟的卡名」，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno 交叉（第 1274 條）**：`CDP 7243 8 57061 2 7` 回四筆、`LP 2234` 回七筆（全是母體 1959／1966／1969 的壓片與再發）——**母體與本碟是兩個不同的 RG、兩份不同的軌目，不是重複建檔。**",
+    "src": "https://api.discogs.com/database/search?catno=LP+2234&type=release"
+   }
+  ],
+  "hookCandidates": [
+   "一九四七年九月二十九日的卡內基音樂廳，Parker 只在前五首：五重奏打完就下台，後面十首是 Gillespie 的大樂團，Chano Pozo 的康加鼓在〈Cubano-Be, Cubano-Bop〉裡第一次進了卡內基",
+   "這一晚的錄音先前只以碎片形式散在七八家廠牌上——一九五九年那張 Roost LP 的 A 面是這場、B 面卻是六年後的巴黎；一九九七年才第一次把同一晚能發的部分收成一張碟，內頁還逐條交代哪幾首因為收音不良沒收"
+  ],
+  "sound": "十五軌的現場錄音，一個晚上，但分成兩段完全不同的編制。前五軌是五重奏：Charlie Parker 的中音、Dizzy Gillespie 的小號、John Lewis 的鋼琴、Al McKibbon 的貝斯、Joe Harris 的鼓，曲子都在四到六分之間。第六軌起換成 Gillespie 的大樂團——四把小號、兩支長號、五支薩克斯、Milt Jackson 的鐵琴、Chano Pozo 的康加鼓與 Lorenzo Salan 的邦哥鼓，Parker 不在場。編曲出自 Tadd Dameron、Gil Fuller、George Russell 與 John Lewis 之手。最長的〈Cubano-Be, Cubano-Bop〉七分十五秒，最短的〈Relaxin' at Camarillo〉兩分四十秒。單聲道，1997 年由 Jack Towers、Phil Schaap 與 Malcolm Addey 分兩組做音源修復。",
+  "keyTracks": [
+   "Cubano-Be, Cubano-Bop",
+   "Koko",
+   "Oop-Pop-A-Da"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 成立，本層未改判——依第 1233 條 (丁)：母體在真正的他廠、但先前那次發行只是部分或拼進了別場別年的材料，`year` 取本次完整發行年。** **正方四層：** (1) **MB first-release-date `1997-06-17`（帶完整月日）**，與美版 release 6838ce2f 的 `date` 一致。 (2) **Discogs 1997 年那一批四筆（美 621800／美俱樂部 2088875／荷 6283367／無年份再壓 28266808）`year` 全部 1997。** (3) **盤面 ℗©**：**Discogs 621800 的 companies 欄逐字 `Phonographic Copyright (p): Capitol Records, Inc.`、`Copyright (c): Capitol Records, Inc.`，notes 逐字 `℗ & © 1997 Capitol Records, Inc.`。** (4) **內頁自述它是本次才把同一晚完整收齊**（逐條交代 Ella Fitzgerald 的六首與大樂團兩首因收音問題未收）。 **(丁) 的三個門檻條件本層逐一覆核成立：** **(甲) 母體在真正的他廠**——**Roost／Royal Roost `LP 2234`（1959，Discogs 3832674），Roost 是 Teddy Reig 的獨立廠牌、目錄經 Roulette 於 1989 年隨 EMI 併購進來，依簡報不算 Blue Note 子廠**（第 1238 條）。 **(乙) 母體只是部分、且拼了別場別年**——**LP 2234 的 notes 逐字：A 面 `Carnegie Hall [29/09/47]`、B 面 `Paris Salle Pleyel [09/02/53]`**，**大樂團那一段散在 Black Deuce／Birdland BLP 425／Savoy SJL 1177／Roost RLP 2257／Vogue LAE 12252／Charlie Parker PLP 512／Natural Organic 7000 七八家廠牌上。** **(丙) 本碟本身不是合輯**——**母體 LP 2234 的 `format` 欄逐字帶 `Compilation`，1997 年那四筆一個 `Compilation` 都沒有。**⚠ **紙本零命中**：**Billboard 1997 全年（51 期，本線自抓，關鍵字集原本就含 `57061` 與 `roost`）查 `57061`／`Diz`／`Carnegie Hall`＋Parker／`Roost`，本盤零命中**（`Carnegie Hall` 的命中都是 Carnegie Hall Jazz Band 與別的活動，`roost` 的命中都是 `ruled the roost` 這類片語）；**兩張爵士榜（第 879／1068 條）未見本盤。Cash Box 1996-11-16 已停刊。**⚠ **依第 704 條，「命中頁零命中」不等於整本沒有，但本組的關鍵字集本來就為 1997 年這七筆量身配過，屬真零命中。**",
+  "notes": "**覆核策展層：rgMbid f10999d2／`year` 1997（第 1233 條 (丁)）／掛名 `Charlie Parker & Dizzy Gillespie`（聯名新造）／`releaseType` 帶 `Live`／廠牌欄寫 `Roost` 不寫 Blue Note（第 1238 條），全部成立。**｜⚠⚠ **正文必須把三層年份都講清楚（派工信點名）**：**(1) 錄音年 1947——1947-09-29 紐約卡內基音樂廳；(2) 1959 年那次部分發行——Roost／Royal Roost `LP 2234`《Diz 'N' Bird In Concert》，A 面才是這場的五重奏段（而且切成 Part I/II），B 面是 1953-02-09 巴黎 Salle Pleyel 的另一場，大樂團那十軌散在七八家別的廠牌上；(3) 1997 年這次完整發行——Roost `CDP 7243 8 57061 2 7`，15 軌，內頁逐條交代哪幾首因技術問題沒收。**｜⚠⚠ **編制：這張碟是兩個沒有交集的團（第 1069／1189／1195 條點名的形狀之一，本組唯一一次）。** **Parker 只在第 1–5 軌的五重奏（credit 逐字 `Charlie Parker — Alto Saxophone [1 to 5]`）**；**第 6–15 軌是 Gillespie 的大樂團，Parker 不在場**，中音換成 Howard Johnson 與 John Brown。**只有節奏組（John Lewis 鋼琴／Al McKibbon 貝斯／Joe Harris 鼓）兩段都在。****正文絕不可寫成「Parker 與 Gillespie 合演了十五軌」。**⚠ **Chano Pozo 的康加鼓只在大樂團那十軌**；**Milt Jackson 的鐵琴也是**。｜⚠ **廠牌欄**：**1997 年那三筆 CD 的廠牌印的是 `Roost`，系列名 `The Performance Series`，製造商才是 Capitol**；**只有 MB 的數位層 ba2ac308 掛 `Blue Note`——列舉檔就是因為這一筆才把它掃進本線**（第 1237 條(4)／第 1238 條）。**`label` 欄要寫 Roost，不要寫成 Blue Note 的自家發行。**｜⚠ **MB 那筆 36955030 的 label-info 有 BMG Direct 的俱樂部號 `D118967`，但同一筆也帶了正規號，不算第 1209 條(2) 的形狀**（第 1237 條末段已記，本層確認）。｜⚠ **載體**：**1997 年這一批全部是 CD——沒有黑膠、沒有卡帶**（黑膠都在母體那一層：1959／1966 美版、1969 義大利 Roulette、1973 與 1978 兩張日本 Royal Roost 再壓）（第 1064 條）。｜**封面已有**：CAA RG 層有圖（策展層記 front=true），本層未動。**備援**：Discogs 美國原壓 **621800** 共 9 圖，`images[0]` 是 `primary`、600×598。｜**試聽查無（第 254 條三種查法跑完）**：`search` 在 `us`／`gb`／`jp`／`de`／`fr`／`ca`／`it` 七個市場、四組字串，全部 0 筆；藝人目錄與 catno 反查亦無。⚠ **`apple-candidates.md` 的七個候選（17／13／12／17／6／18／10／61 軌）沒有一個是 15 軌，全部是錯碟，逐筆排除**（第 528／707／709 條）；⚠ **其中《Things To Come》(1449052838) 與本盤末軌同名、《The Complete Live Performances On Savoy》(1447418024) 可能含母體散裝那一段——依第 646 條不得共用 collectionId。** **→ 明寫查無，走固定無來源狀態。**｜**撞陳列（逐張覆核完成）**：**四場現場全部不同場**——**本張 1947-09-29 卡內基**／**池中 `Dizzy Gillespie —《Pleyel 53》`1953-02-09 巴黎（＝母體 LP 2234 的 B 面，內容上與本張的母體相鄰）**／**池中《The Fabulous Dizzy Gillespie Pleyel Jazz Concert 1948》1948 巴黎**／**seed `Charlie Parker —《Jazz at Massey Hall》`1953-05-15 多倫多**／**c-149 a《Charlie Parker at Storyville》1953 波士頓**——**五張逐軌無同錄音重複，risk 互指。**⚠⚠ **盤名撞名**：**seed 有 `Dizzy Gillespie —《Bird and Diz》`（1952，Verve 棚內盤），與本張只差詞序**——**主線上架字串比對必須帶完整盤名。**⚠ **本張軌名掃全卡池卡名四筆命中**（〈A Night in Tunisia〉↔ Art Blakey 1961；〈Dizzy Atmosphere〉↔ Lee Morgan 1957；〈Groovin' High〉↔ Fumio Watanabe Quintet 1982（c-87 b）；〈Confirmation〉↔ Tommy Flanagan 1982 與 Jimmy Smith 1979（c-145 a））——**全部同名不同物**（第 1181／1192 條）。⚠ **catno 交叉（第 1274 條）**：`LP 2234` 反查回七筆母體壓片（1959／1966／1969 ＋ 日本 1973／1978 再壓）——**母體與本碟是兩份不同的軌目、兩個 RG，不是 MB 建了兩次的重複。**｜非選輯：**單一場次（1947-09-29）技術上可發行部分的完整呈現**，`secondary-types` 只有 `Live`、1997 年四筆 Discogs 條目的 `format` 欄一個 `Compilation` 都沒有（**對照母體 LP 2234 的 `format` 逐字帶 `Compilation`**）。"
+ },
+ {
+  "key": "desc2:Önder Focan|Beneath the Stars / Yıldızların Altında",
+  "artist": "Önder Focan",
+  "album": "Beneath the Stars / Yıldızların Altında",
+  "facts": [
+   {
+    "f": "release-group 65eb3cf6 的欄位：title「Beneath the Stars / Yıldızların Altında」、artist-credit「Önder Focan」（**fe0da387 Person／TR**、裸名）、**first-release-date `1997`**、primary-type Album、secondary-types 空。**轄下兩筆 release**（⚠ **策展層寫「只有一筆」是錯的**）：**28e01fef（1997 TR Official CD 10 軌，Blue Note `100301 2`，barcode 8691284030122）**與 ⚠ **60b6c48b（`2001-01-05`，無國別，Official CD，label 只有 `EMI`、無目錄號、barcode null，**只有 9 軌——缺〈Nardis〉**，軌名全部無時長）**。**1997/98 原盤十軌與時長**：〈Denizli〉309s〈Smoke Gets in Your Eyes〉463s〈O.K Bob〉471s〈Beneath the Stars (Yıldızların Altında)〉408s〈Grey Haired Waltzer (Kır Saçlı Valsçi)〉**580s（全碟最長）**〈Can't Cure (Olmaz İlaç Sine-i Sad Pareme)〉494s〈Sunburst Cat〉434s〈Ballad for Two Guitarists〉368s〈Peshrev 2nd Part (Peşrev 2. Hane)〉**166s（全碟最短）**〈Nardis〉353s。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65eb3cf6-8818-4041-a9aa-172e42a06e75&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **編制是四重奏不是三重奏——策展層與英文維基都漏了一個人。** **Discogs 17551810 的 credits 逐字只有四行**：**`Önder Focan — Guitar`、`Sam Yahel — Organ`、`Bill Stewart — Drum`、`John Nugent — Tenor Saxophone`**——**`John Nugent`（次中音薩克斯）在三筆土耳其條目的 `artists` 欄裡都與 Focan 並列掛名**（Discogs 的掛名字串逐字是 `Önder Focan, Sam Yahel, Bill Stewart, John Nugent`）。⚠ **英文維基的正文只寫「with Bill Stewart and the organist Sam Yahel」，沒有提 Nugent**——**兩個來源打架時以盤面 credits 為準（第 1069 條）。**⚠ **沒有貝斯手**：**Sam Yahel 的 Hammond 管風琴負責低音線**，這是管風琴四重奏的標準作法。",
+    "src": "https://api.discogs.com/releases/17551810"
+   },
+   {
+    "f": "⚠ **土耳其在地的三筆實體條目全部標 1998，而且載體有三種。** **Discogs**：**CD 17551810（Turkey 1998，`CD, Album`，廠牌 Blue Note，`catno` 欄逐字 `none`，identifiers／companies 全空，1 圖且是 `secondary`）**、**CDr 28155196（Turkey 1998，`CDr, Album`，廠牌欄三格 `Blue Note / EMI / EMI-Kent Elektronik San. Ve Tic. A.Ş.`，catno `100301 2`——**與 MB 那筆 28e01fef 的目錄號一致**）**、**卡帶 36221833（Turkey 1998，`Cassette, Album`，廠牌欄 `EMI / Blue Note / EMI-Kent Elektronik San. Ve Tic. A.Ş.`，catno `301`）**。**三筆的 `year` 與 `released` 欄全部 1998、`format` 欄全部乾淨**。⚠ **沒有黑膠**（第 1064 條）；⚠ **有卡帶，這是本組十五張唯一一張有卡帶的碟**——**1990 年代末的土耳其市場卡帶仍是主要載體之一，正文可以寫。**",
+    "src": "https://api.discogs.com/database/search?q=Onder+Focan+Beneath+the+Stars&type=release"
+   },
+   {
+    "f": "⚠⚠ **土耳其文的在地樂評把「1997 年底壓片、1998 年初鋪貨」這個假說坐實了。** **TurkJazz（土耳其爵士專門部落格）的本盤條目逐字**：「**1998'in ilk günlerinde piyasaya çıkan**」（＝**在 1998 年的最初幾天上市**）；同頁逐字稱他是「**\"Blue Note\" firmasından albümü çıkan ilk Türk sanatçısı**」（＝**第一位由 Blue Note 發片的土耳其藝人**），並記 **Bill Stewart 當時被 Down Beat 選為「yılın gözde davulcusu」（年度最受歡迎鼓手）**、**Sam Yahel 是「New York'lu」（紐約人）、彈 Hammond B3**。→ **這一句直接解釋了 Apple `tr`／`de` 的 `releaseDate` `1997-12-25`：唱片在 1997 年底壓好，1998 年頭幾天才上架。**",
+    "src": "https://turkjazz.blogspot.com/2009/07/onder-focan-beneath-stars-1998.html"
+   },
+   {
+    "f": "**英文維基的 `Önder Focan` 條目**：正文逐字「**In 1998 he was the first Turkish musician to record an album for Blue Note Records, _Beneath the Stars_ with Bill Stewart and the organist Sam Yahel.**」，Discography 欄逐字「**_Beneath the Stars_ (Blue Note, 1998)**」。⚠ **這是策展層第 1234 條引的三個 1998 來源之一，本層逐字覆核成立；但它漏了第四位樂手 John Nugent，編制一律以 Discogs 的盤面 credits 為準。**",
+    "src": "https://en.wikipedia.org/wiki/%C3%96nder_Focan"
+   },
+   {
+    "f": "⚠⚠ **店面找回來了，而且是逐軌逐秒對得上的同一張碟。** **Apple `tr`（土耳其市場）**：**`1457957148`（`Önder Focan — Beneath The Stars`，**10 軌**，逐軌時長 **309/463/471/408/580/494/434/368/166/353 秒**——**與 MB 的 28e01fef 十軌逐秒完全相同，零誤差**，**十軌全部有 preview**，genre Jazz）。⚠ **`releaseDate` 是 `1997-12-25`、copyright 欄逐字 `℗ 1997 Universal Music Türkiye`**——**數位版權現在在 Universal 手上，不是 EMI／Blue Note；這也是 `releaseDate` 停在 1997-12-25 的原因（壓片日／登記日）。**⚠ **`us` 市場同樣查得到 `1457957148`（同一個 collectionId）。** **本層抽核軌數與逐軌時長全中、無錯碟——串流採信 1457957148。**（`apple-candidates.md` 給的正是這一個候選，本層逐軌覆核後確認可用，第 528／707／709 條的錯配在本張沒有發生。）",
+    "src": "https://itunes.apple.com/lookup?id=1457957148&entity=song&limit=200&country=tr"
+   },
+   {
+    "f": "**曲目結構**：十軌裡**四首帶土耳其文副題**（〈Beneath the Stars (Yıldızların Altında)〉〈Grey Haired Waltzer (Kır Saçlı Valsçi)〉〈Can't Cure (Olmaz İlaç Sine-i Sad Pareme)〉〈Peshrev 2nd Part (Peşrev 2. Hane)〉），**其中〈Peşrev 2. Hane〉直接取自鄂圖曼古典音樂的「peşrev」（器樂前奏曲）形式**，而且是全碟最短的一軌（2:46）；**開場的〈Denizli〉是土耳其西部城市名**。**兩首標準曲**：〈Smoke Gets in Your Eyes〉（Jerome Kern）與收尾的**〈Nardis〉（Miles Davis 寫給 Bill Evans 的曲子）**。⚠ **2001 年那筆 MB release 60b6c48b 只有 9 軌，缺的正是收尾的〈Nardis〉**——**軌名也改成英文單一形（〈Gray Haired Waltzer〉〈Peshrev #2〉），正文不得用它的軌數。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65eb3cf6-8818-4041-a9aa-172e42a06e75&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**跨卡**：實掃卡池 27546 列，`Focan`／`Önder`／`Onder` 皆只命中本張自己一列——**池中 0 張土耳其爵士**。⚠ **本張十軌的軌名掃全卡池卡名，0 命中**（第 1181／1192 條第六種盲區；〈Nardis〉與〈Smoke Gets in Your Eyes〉雖是常見標準曲，但池中沒有以它們為卡名的碟）。⚠ **catno 交叉（第 1274 條）**：`100301 2` 只回 CDr 那一筆、`301` 只回卡帶那一筆，**Discogs 上整個 master 3226495 只有三筆實體條目，沒有掛名字串不同的重複 RG。**⚠⚠ **人名撞卡（第 1236 條第 5 點，本層覆核成立）**：**本盤的鼓手 `Bill Stewart` 正是 c-153 a《Snide Remarks》(1995) 的領班**，**一張是他的領班盤、一張是他當側人的碟，兩張 risk 互指**；⚠ **第 1208 條(三) 已立過消歧義警語：MB 同字串有四個 Person，另一位是 1924 年生的爵士薩克斯手，上架時不可混。**⚠ **依第 855／861 條，共同樂手只是旁證，錄音室／場次／年份都不同，不構成撞陳列。**",
+    "src": "https://api.discogs.com/database/search?catno=100301+2&type=release"
+   }
+  ],
+  "hookCandidates": [
+   "一九九八年頭幾天在伊斯坦堡上市：土耳其第一張由 Blue Note 發行的專輯，吉他手找來三位美國人——Hammond 管風琴的 Sam Yahel、剛被 Down Beat 選為年度鼓手的 Bill Stewart，還有次中音薩克斯手 John Nugent",
+   "十首裡有四首帶土耳其文副題，其中〈Peşrev 2. Hane〉直接借鄂圖曼古典音樂的器樂前奏曲形式——只有兩分四十六秒，是全碟最短的一軌；收尾卻是 Miles Davis 的〈Nardis〉"
+  ],
+  "sound": "十軌的管風琴四重奏：Önder Focan 的吉他、Sam Yahel 的 Hammond 管風琴（兼管低音線，所以團裡沒有貝斯手）、Bill Stewart 的鼓、John Nugent 的次中音薩克斯。曲長落差大，最長的〈Grey Haired Waltzer (Kır Saçlı Valsçi)〉九分四十秒，最短的〈Peshrev 2nd Part (Peşrev 2. Hane)〉只有兩分四十六秒，其餘多在五到八分之間。曲目以 Focan 的原創為主，四首掛土耳其文副題，開場的〈Denizli〉是土耳其西部城市名，〈Peşrev 2. Hane〉借的是鄂圖曼古典音樂的器樂前奏曲形式。兩首外來曲擺在頭尾附近：Jerome Kern 的〈Smoke Gets in Your Eyes〉與收尾的〈Nardis〉。實體發行有 CD、CDr 與卡帶三種。",
+  "keyTracks": [
+   "Beneath the Stars (Yıldızların Altında)",
+   "Peshrev 2nd Part (Peşrev 2. Hane)",
+   "Nardis"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1998 成立（策展層第 1234 條把 MB frd 的 1997 改判成 1998），本層覆核並再補一層在地來源，維持 1998。** **正方四層：** (1) ⚠ **新增的一層（本層自己找的，土耳其文在地樂評）**：**TurkJazz 的本盤條目逐字「1998'in ilk günlerinde piyasaya çıkan」＝「在 1998 年的最初幾天上市」**——**這一句直接說出上市時點，而且正好解釋反向證據。** (2) **Discogs 三筆土耳其實體條目（CD 17551810／CDr 28155196／卡帶 36221833）的 `year` 與 `released` 欄全部 1998、`format` 欄全部乾淨**（策展層只找到一筆，本層找到三筆）。 (3) **英文維基 `Önder Focan` 正文逐字「In 1998 he was the first Turkish musician to record an album for Blue Note Records」，Discography 欄逐字「_Beneath the Stars_ (Blue Note, 1998)」。** (4) **土耳其在地爵士資料庫 Cazkolik 的條目逐字「Blue Note Records (EMI Müzik) | 1998」**（策展層引，本層未能重新取得該頁，保留為策展層的來源）。 **反向證據兩項，兩項都已經被解釋掉：** ⚠ **(a) MB first-release-date `1997`，而且它唯一一筆帶目錄號的 release 28e01fef 也填 1997 TR**——**第 1237 條(1) 的形狀：MB 抄的是壓片／登記年而不是鋪貨年。** ⚠ **(b) Apple `tr`／`de` 的 `releaseDate` `1997-12-25`（帶完整月日、非年頭回填）、copyright 欄逐字 `℗ 1997 Universal Music Türkiye`**——**1997-12-25 是耶誕節、不可能是土耳其的零售街頭日，配上 TurkJazz 的「1998 年頭幾天上市」，最合理的實況就是「1997 年底壓好、1998 年初鋪貨」，與策展層的推測一致。** **依簡報 §二的階序（在地同期評論 ＞ Discogs 原壓群 ＞ MB frd），1998 成立。**⚠ **紙本**：**Billboard 1997 全年（51 期）查 `Focan`／`100301`／`Beneath the Stars` 零命中**（該年 Billboard 確實有一篇 TURKISH MUSIC MARKET 專題，但沒有提到本盤）；**1998 年兩刊 repo 內都沒有人掃，本層未自抓**——**這一張的紙本層明寫查無，不是證據不足。**",
+  "notes": "**覆核策展層：rgMbid 65eb3cf6／掛名 `Önder Focan`（裸名、池中新字串）／年份 1998（改判成立）／`['jazz']`，全部成立。**｜⚠⚠ **本層擋下策展層的一處事實錯**：**策展層 `mbNote` 寫「唯一一筆 release 28e01fef」——MB 其實有兩筆**，另一筆是 **60b6c48b（`2001-01-05`，無國別，label 只有 `EMI`、無目錄號、barcode null，**只有 9 軌、缺收尾的〈Nardis〉**，軌名改成英文單一形〈Gray Haired Waltzer〉〈Peshrev #2〉）**——**那是後來的再發層，本卡的軌數必須取 10，不得取 9。**（第 609／1135 條：逐張確認原盤軌目，**本張的方向是「再發改軌數」**，與 c-152 那批同形。）｜⚠⚠ **編制是四重奏不是三重奏**：**Discogs 三筆土耳其條目的掛名字串逐字是 `Önder Focan, Sam Yahel, Bill Stewart, John Nugent`，credits 逐字四行（吉他／管風琴／鼓／次中音薩克斯）**——**英文維基只提 Stewart 與 Yahel、漏了 John Nugent，策展層沿用了維基的說法。正文必須寫四個人。**⚠ **沒有貝斯手，低音線由 Sam Yahel 的 Hammond 負責。**｜⚠ **載體三種**：**CD ＋ CDr ＋ 卡帶，沒有黑膠**（第 1064 條）——**卡帶（EMI-Kent `301`）是本組十五張裡唯一一張有卡帶的碟。**｜⚠ **目錄號兩形**：**MB 與 Discogs 的 CDr 條目寫 `100301 2`，卡帶寫 `301`，Discogs 的 CD 條目 `catno` 欄逐字是 `none`**——**`queryAlias` 建議兩形都寫。**⚠ **字串風險（第 1235 條(三) 已立）**：**`Ö` 與土耳其文無點 `ı`（U+0131）的大小寫轉換行為與 ASCII `i` 不同**——**`Önder`／`Onder` × `Yıldızların`／`Yildizlarin` 四種組合都要掃**；**盤名分隔號在 Discogs 上是 ` - `（`Beneath The Stars - Yıldızların Altında`），MB 用 ` / `，兩形都要進 `queryAlias`。**｜**封面已有**：CAA RG 層有圖（策展層記 front=true），本層未動。⚠ **若主線需要備援，要注意**：**Discogs 唯一有圖的土耳其條目 17551810 只有 1 張圖、而且是 `secondary`（500×500），不是 `primary`——依慣例不算正面封面**（c-152 實測過的那種形狀）；**CDr 28155196 與卡帶 36221833 都沒有圖。本張沒有合格的 Discogs 替代來源，備援只能靠 CAA。**｜⚠⚠ **試聽：策展層／探測層判 unavailable，本層撈回來了。** **Apple `tr` 市場 `1457957148`，10 軌、逐軌時長與 MB 十軌逐秒零誤差、十軌全部有 preview**——**串流採信 1457957148**（`us` 市場同一個 id 也查得到）。⚠ **它的 copyright 欄是 `℗ 1997 Universal Music Türkiye`——數位版權已不在 EMI／Blue Note 手上，`releaseDate` `1997-12-25` 是壓片／登記日不是上市日，兩欄都不可當年份證據。**｜**撞陳列**：**池中 0 張土耳其爵士、0 列 Focan**；**本張十軌的軌名掃全卡池卡名 0 命中**（第 1181／1192 條）；**catno 反查無重複 RG**（第 1274 條）。⚠ **人名關係（第 1236 條第 5 點，本層覆核成立）**：**鼓手 `Bill Stewart` 是 c-153 a《Snide Remarks》(1995) 的領班，兩張 risk 互指**；⚠ **第 1208 條(三) 的消歧義警語仍然成立：MB 同字串四個 Person，另一位是 1924 年生的薩克斯手。**⚠ **依第 855／861 條，共同樂手只是旁證，不構成撞陳列。**｜非選輯：單一四重奏的原創專輯，`secondary-types` 空、Discogs 三筆土耳其條目的 `format` 全乾淨。"
  }
 ]
