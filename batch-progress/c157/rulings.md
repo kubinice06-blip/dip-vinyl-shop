@@ -1066,3 +1066,60 @@ Chucho 改指 A mi madre／Muñequita linda／Rumba guajira／Bésame mucho／So
 避免寫作層把第一卷的提名安到第二卷頭上。**這一手主線沒想到，做得好。**
 
 **`merge-writer-input c157` 已跑：40 張 → writer-1(a) 18／writer-2(b) 22。**
+
+## 第 1499 條（主線，**寫作層 a 組查出；已修檔**）：**研究稿的 `sound` 與 `keyTracks` 欄會留下「已經被裁定不能寫」的東西——note 清了，它們沒清**
+
+寫作層 a 組回報兩處，**兩處都成立，主線已改 `desc-tools/batches/research/c157-a.json`**：
+
+1. **`Charlie Parker|The Washington Concerts` 的 `sound` 欄逐字寫「其中第 1 到 8 軌與訪談在 1983 年以
+   Elektra Musician 60019 出過」**——**但 `facts` 的 Discogs 逐字只給目錄號、沒有年**（第 1494 條第 6 項）。
+   **派工詞（不寫年）與輸入檔（sound 有年）互相矛盾**，寫作層照派工詞不寫，正確。
+   **→ 已把 `sound` 欄的年份拔掉、母體只留目錄號，並在該筆加 `_mainlineNote` 記明原因。**
+2. **`Chucho Valdés|Solo Live in New York` 的 `keyTracks` 仍是
+   `['A Mi Madre','Besame Mucho','El Manicero','Tres Lindas Cubanas']`**
+   ——**兩個撞陳列的軌名都還在**（〈El Manicero〉撞 b 組《Supernova》第 5 軌）。
+   **note 已正面指派避開，但 `keyTracks` 沒同步清。**
+   **→ 已清成 `['A Mi Madre','Besame Mucho']`，並加 `_mainlineNote`。**
+
+⚠ **這是本線「失敗與正常長得一樣」的又一種，而且是最陰的一種**：
+**主線的裁定只寫進 `rulings.md`、鉤子層只清 `note`，`sound`／`keyTracks`／`hookCandidates` 三個欄位沒有人負責清。**
+**下游若有任何工具直接吃這三欄（本機組 manifest 時很可能會），裁定就等於沒下過，而且沒有任何檢查會亮燈。**
+
+**→ 主線自律（新立）**：**每次下「某軌名／某年份不得寫」的裁定，一律同步清該筆的
+`sound`／`keyTracks`／`hookCandidates`，不能只清 `note`。**
+**→ 建議本機加一道檢查**：把 rulings 裡所有「不得寫」的字串與研究稿四個文字欄位對撞。
+
+## 第 1500 條（主線）：**上浮幅度表再度校準——本線實測 +35（中位）／+80（最大），比第 1437 條的 +30～+60 還高**
+
+寫作層 a 組**事前已按派工詞把預算表上浮約 +25，仍然 9／18 撞破 240**（最高 292），**無一張掉下限**。
+**初稿平均 246.8，動筆目標是 210 → 實測低估中位約 +35、最大 +80。**
+超標張的溢出量依序：**+1／+3／+7／+19／+24／+28／+31／+43／+52。**
+
+⚠ **低估最嚴重的形狀已經找到了**：**「一張要點名兩間以上錄音室＋一組客座」的卡**
+（`The Power of the String` 七間錄音室那張最爆，+52）。
+
+**→ 建議本機把 writer-base 的上浮幅度表改成「本線（2000 年前後爵士）+40～+80」，
+並加一句「點名兩間以上錄音室的卡再 +20」。** 第 1437 條的 +30～+60 偏低。
+
+**終稿 18 張：210–239，平均 230.3，兩端都沒撞到。** 壓字全部整格捨去，無逐字削。
+
+## 第 1501 條（主線）：**`qa-batch out` 在雲端段跑不起來——與第 1498 條同性質的缺口**
+
+`qa-batch out c157` 要 `batches/{wave2|cards|recut}/c157-cards.json` 這個路徑形狀，
+**雲端切片的卡單放在 `batches/cards/c157-cards.json`，腳本找不到。**
+⚠ **但 `qa-batch out c156` 是跑得起來的**——**差別在那批先前已被另一條路徑寫入過**，
+不是 c157 有什麼特別。**這是雲端段的已知缺口，不是交件失敗。**
+寫作層改用自寫檢查全覆蓋（首句 hook 逐字、禁語、半形逗號貼中文、非拉丁文字、中英夾縫空格、
+串流試聽字樣、禁寫軌名），**主線另跑 `fix-spacing` 與逐張字數實測，兩路都清。**
+
+## 第 1502 條（主線，裁定權下放範圍內）：**寫作層 a 組的八處壓字取捨全部維持**
+
+`A Fine Line` 捨浦契尼與蕭邦（留舒曼、伯恩斯坦、桑坦）／`When Skies Are Grey` 把三個人名改寫成
+「鋼琴、鼓與打擊各一位」（固定四人、零客座仍寫足）／`Stefano di Battista` 捨 Rosario Bonaccorso／
+`Mose Vol.1` 捨 Willie Dixon〈Seventh Son〉／`The Power of the String` 捨整個曲目格以保住七間錄音室與榜位／
+`Live at Yoshi's` 捨整個曲目格以保住編制與兩項葛萊美提名／`El arte del sabor` 捨〈Route 66〉／
+`Chucho` 六首取四首。
+
+**全部是整格捨去、全部可逆、全部保住了該張最具體的那一格。維持，不回頭補。**
+⚠ **其中一處判斷要記下來**：**note 寫「只寫上列這幾首」，寫作層判為「上限而非義務」，取四首。正確**
+——正面指派句是**允許清單**，不是**必寫清單**。
