@@ -188,5 +188,177 @@
   "why": "丹麥歌手 Cæcilie Norby 的 Blue Note 首作，也是 **Blue Note 簽下的第一位丹麥爵士藝人**：越／丹鋼琴家 Niels Lan Doky 製作並參與演出，錄音分在哥本哈根與紐約兩地，十二軌從〈Wild Is the Wind〉〈Summertime〉〈By the Time I Get to Phoenix〉這類歌本與流行曲，走到她自己寫的〈A Brand New Life〉〈Night Road〉〈So It Is〉。Billboard 1996-01-20 p47 的 Global Music Pulse（丹麥）整段寫她——逐字「As the first Danish jazz artist to release an album in her own right on EMI's prestigious Blue Note label, Caecilie Norby is reaching international ears」，並提到她在日本被《Swing Journal》讀者票選為年度女聲第一、專輯「offers a beguiling mixture of self-penned songs and jazz standards」。Norby 1980 年代中期是丹麥爵士搖滾團 Frontline 的主唱、也是搖滾團 One Two 的創團成員，這張是她轉回爵士的起點。實掃池中 `Cæcilie Norby`／`Caecilie Norby`／`Norby` **三形全部零列**。",
   "risk": "⚠ **新掛名 `Cæcilie Norby`（池中 0 列）**，MB 75b54a14 Person／**DK**／disambiguation「Danish jazz and rock singer」／1964-09-09 生。**第 307 條反查：MB 同字串只有這一個實體**。⚠ ⚠ **`æ` 這個字元是本卡最大的上架風險**：**Discogs 的條目標題用 `Cæcilie`，但它自己的搜尋索引與 Apple 的部分市場用 `Caecilie`**；**盤名與掛名同字串（同名專輯，`selfTitled: true`）**，所以**兩個欄位都帶 `æ`**——**上架字串比對一定要同時掃 `æ` 與 `ae` 兩形**，queryAlias 已把 `Caecilie Norby` 寫進去。⚠ **`æ` 是合法的拉丁字母、不是第 50 條那種非 ASCII 連字號**，`chk-prop` 不會擋。⚠ 年份：MB frd **1995-11-01**（GB release b9ad6f2f）、**Discogs 歐／日／美四筆 `year` 欄全 1995**——取 1995。**反向證據要記**：**Apple 丹麥市場的條目 695534278 把 releaseDate 標成 `1994-01-01`**（年頭回填，第 484 條），**Billboard 那篇是 1996-01-20**——**但那是國際推廣的專題行文、不是新片欄（第 1053 條），且它自己說「the current album」而不是「new release」**，不足以推翻 1995。⚠ **首發地**：MB 一筆 XE、一筆 GB，Discogs 歐版 EMI 8322222 與日版 TOCP-8639 同年——**這是歐洲首發的碟，美版 CDP 7243 8 32222 2 3 才是後到的**，`country` 取 XE。⚠ **同名專輯（第 179／324 條）**：`Cæcilie Norby —《Cæcilie Norby》` 與她 1996《My Corner of the Sky》、1999《Queen of Bad Excuses》、2002《First Conversation》同屬 Blue Note／EMI-Medley 一線，**後批若撞到那三張，掛名字串沿用本卡**。⚠ **2026 年有一張 `My Blue Note Days - Selected Blue Note Recordings 1995-2002`（Loud Lady Music LLM003，Discogs 37781865／Apple 6777183458）是精選盤**，**盤名帶 Selected／Years，第 397／613／782 條的形狀，後批遇到要退**。⚠ 店面（第 254 條，只寫觀察）：**Apple us `search` 一種查法回的全是她 2002 年之後的 ACT／Copenhagen 碟、沒有這張首作**；**第三種查法（換市場 dk）才命中 695534278（12 軌＝原盤形）**。CAA：RG 層 1 圖，**來源是歐版原盤 15122298** ✓。",
   "mbNote": "釘 release-group 707f5cfa-ed68-3fae-a207-91728d6d49a7。回問 release-group 端點：title「Cæcilie Norby」、artist-credit「Cæcilie Norby」（75b54a14 Person，DK，disambiguation「Danish jazz and rock singer」，1964-09-09）、first-release-date **1995-11-01**、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：15122298（1995 **XE** Official CD 12 軌，Blue Note／`EMI 8322222`，barcode 724383222223）、b9ad6f2f（1995-11-01 **GB** Official CD 12 軌，Blue Note，無目錄號無 barcode）。十二軌：Wild Is the Wind／A Brand New Life／Girl Talk／I've Been to Town／Summertime／By the Time I Get to Phoenix／All You Could Ever Want／Gentle Is My Love／A Feather in the Wind／Night Road／Man's Got Soul／So It Is。MB 同字串 artist 反查：僅 75b54a14 一筆。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Denise Jannah — Different Colours - One Rainbow（1997 版題名）；Different Colors（美式拼法）",
+  "artist": "Denise Jannah",
+  "album": "Different Colours",
+  "year": 1996,
+  "label": "Blue Note 7243 8 54729 2 3（**NL** 1996 CD 11 軌；Discogs 荷蘭原壓 2150285，barcode 7 24385 47292 3，format 欄乾淨的 `CD, Album`）；MB e2ab1d48（1996 NL CD 11 軌，**label-info 整個空、只有 barcode 724385472923**）＋ ccaf2608（2002 無國別 CD 11 軌，Blue Note）；另有 1997 版《Different Colours - One Rainbow》（Discogs 4811324）",
+  "why": "Denise Jannah 的 Blue Note 第二張，1996 年 10 月在荷蘭發行：十一軌從〈You Go to My Head〉〈You Must Believe in Spring〉〈All Blues〉這類爵士歌本，一路拉到 Crowded House 的〈Don't Dream It's Over〉與 John Hiatt 的〈Have a Little Faith in Me〉，中間放進蘇利南語的〈Mi Gron〉（「我的土地」）——**盤名的「不同顏色」講的就是這條從蘇利南到阿姆斯特丹再到美國歌本的路線**。比起 1995 年首作幾乎全是美國標準曲，這張是她第一次把自己的出身寫進選曲。實掃池中 `Denise Jannah` 零列，本組她一次進兩張（1995《I Was Born in Love With You》與本張）。",
+  "risk": "⚠ ⚠ **列舉檔的 `note` 在本張是錯的**：slice 的 note 逐字寫「BN 首發 2002，原盤 1996 可能他廠（再發）」，**理由是 MB 的 1996 NL release（e2ab1d48）`label-info` 整個空、只有 2002 那一筆掛了 Blue Note**——**但 Discogs 2150285 的廠牌欄逐字就是 `Blue Note 7243 8 54729 2 3`、國別荷蘭、年份 1996、format 欄乾淨的 `CD, Album`（無 `Reissue`）**。**本張不是再發、原盤也不是他廠，1996 年就是 Blue Note 首發**，`year` 取 1996、`country` 取 NL。**這是第 642 條的反面：MB 缺欄位時不能直接推論成「不是那個廠牌」。**⚠ **2002 年那一筆（ccaf2608）軌目與 1996 年逐軌完全相同**，是同一張的再壓，不另立卡。⚠ **另有一個 1997 年的版本題名《Different Colours - One Rainbow》（Discogs 4811324）**——**盤名多了副標，上架字串比對要帶**，已寫進 queryAlias；**兩者是否同軌目本層未核到 CD 那一層（Discogs 該條目沒開軌目），研究層要補**。⚠ 年份的紙本層：**Billboard／Cash Box 1996 兩刊查 `54729`／`Different Colours` 零命中**（本組紙本全空的兩張之一）——**這是 EMI 荷蘭在地發行、沒進美國榜的碟，紙本空白是預期的，不是證據不足**。⚠ 掛名沿用本組同批新立的 `Denise Jannah`（MB 523b9c07 Person，NL），**兩張卡的掛名字串必須一字不差**。⚠ **盤名的英式拼法 `Colours`**：美式 `Colors` 寫進 queryAlias。⚠ 店面（第 254 條，只寫觀察）：**Apple us／jp 兩種查法全空，第三種查法（換市場 fr／nl）命中 723929956（11 軌＝原盤形，releaseDate `1996-01-01` 年頭回填）**。**CAA：RG 層真 404，三次重試全 404**（第 589a 條）——封面走 Discogs 2150285。",
+  "mbNote": "釘 release-group b4cdac8e-c596-48b0-b8d0-9d2272bad0cf。回問 release-group 端點：title「Different Colours」、artist-credit「Denise Jannah」（523b9c07 Person，NL）、first-release-date **1996**、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：e2ab1d48（1996 **NL** Official CD 11 軌，**label-info 空**，barcode 724385472923）、ccaf2608（2002 無國別 Official CD 11 軌，Blue Note，無目錄號無 barcode）。十一軌：You Go to My Head／Never Meant to Be／You Always Make Me Smile／Mi Gron／Don't Dream It's Over／I'll Always Be Here／Have a Little Faith in Me／You Must Believe in Spring／High Wire／All Blues／Your Eyes。Discogs 2150285 補的廠牌／目錄號：Blue Note `7243 8 54729 2 3`，NL 1996，`CD, Album`。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Dianne Reeves — The Grand Encounter (Blue Note CDP 7243 8 38268 2 7)；The Grand Encounter (TOCJ-6064)",
+  "artist": "Dianne Reeves",
+  "album": "The Grand Encounter",
+  "year": 1996,
+  "label": "Blue Note CDP 7243 8 38268 2 7（US **1996-10-29** CD 10 軌；MB 3ef54595，barcode 724383826827；Discogs 美國原壓 7139935／宣傳版 17253463／卡帶 B4 7243 8 38268 4 1／俱樂部版 8713608／6451014，歐版 11493623／3221909，日本 TOCJ-6064／15216365）",
+  "why": "Dianne Reeves 1996 年的「大會師」：Clark Terry、Harry「Sweets」Edison 小號、Al Grey 長號、Phil Woods 與 Bobby Watson 中音、James Moody 次中音、Toots Thielemans 口琴、Kenny Barron 鋼琴，還有 Joe Williams 對唱——十軌全是 1930–50 年代的歌本與藍調（Old Country／Cherokee／Besame Mucho／Let Me Love You／Tenderly／After Hours／Ha!／Some Other Spring／Side by Side／I'm Okay），製作人 David Torkanowsky。Billboard 1996-11-02 的封面廣告把整份名單逐字印出來、同期 p33 的 BLUE NOTES 專欄寫「unites her with a who's who of polished improvisers … It's sure to be a strong radio disc」並註明「'The Grand Encounter' streets on Tuesday (29)」。實掃池中 `Dianne Reeves` 6 列（c-148《Dianne Reeves》1987、c-149《The Nearness of You》1988、c-152 a《Quiet After the Storm》1995），**1996 年這張缺**。",
+  "risk": "⚠ 年份 1996 **四層互證**：MB frd **1996-10-29**、Discogs 美／歐／日十一筆 `year` 欄全 1996、**Billboard 1996-07-27 p37 的 Blue Note 整版廣告「Coming this fall: … DIANNE REEVES - THE GRAND ENCOUNTER with James Moody, Clark Terry, Toots Thielemans and others」**、**1996-11-02 p1 全版廣告＋p33 專欄「streets on Tuesday (29)」**、**1996-11-16 p48 TOP JAZZ ALBUMS 以 NEW 進榜第 7、11-30 第 12、12-14 第 21、12-28 第 23**。**廠牌預告＋現貨廣告＋榜位齊備，本組年份證據最厚的一張。**⚠ **但 Apple 的 releaseDate 是 `1996-10-17`，比 MB 與廣告說的 10-29 早十二天**——**店面日期與廠牌自己講的街頭日不一致，兩個都記，卡上 `year` 只取到年**。⚠ **第 1147 條的教訓在本張不適用**（同一位藝人在 c-152 a 被 Discogs 整群抄錯年），**本張 Discogs 十一筆與紙本一致**——**同一位藝人相鄰兩張、Discogs 一張錯一張對，兩邊都不能當預設**。⚠ **MB 有一筆殘件 release（05b8de90）**：無日期、無國別、無廠牌、媒體格式是 `?`，**而且曲序與正式盤不同**（Let Me Love You 排第 1、Old Country 排第 4）——**曲序以 3ef54595 為準**。⚠ **掛名沿用 `Dianne Reeves`**（池中 6 列，MB 069c1f30 Person）；**Joe Williams 是對唱來賓不是聯名**，正文要寫出他但掛名不動。⚠ **撞陳列（第 738／859 條）**：**本組退掉的《The Palo Alto Sessions 1981-1985》是同一位藝人、同一年、同一個 Blue Note 目錄段（36545 vs 38268）的合輯**——**兩張完全不同：那張是 1981–85 年 Palo Alto 時期舊錄音的合輯（本層退，見 rulings 第 1204 條），本張是 1996 年的新錄音**，**正文絕對不得互抄**。⚠ **盤名帶 `Encounter`** 但**不是精選盤**：十軌全是新錄音，第 397／613／782 條的細看程序已走過（Discogs 十一筆 format 欄全是乾淨的 `CD, Album`，**沒有一筆帶 `Compilation`**）。⚠ 店面（第 254 條）：Apple us `search` 一種查法命中 723531425（10 軌＝原盤形）。CAA：RG 層 1 圖，**來源是原盤 3ef54595** ✓。",
+  "mbNote": "釘 release-group ab3ba941-855e-3951-af03-9125a4d8d020。回問 release-group 端點：title「The Grand Encounter」、artist-credit「Dianne Reeves」（069c1f30 Person）、first-release-date **1996-10-29**、primary-type Album、**secondary-types 空（不是合輯）**，轄下 2 個 release。release 端點：3ef54595（1996-10-29 US Official CD 10 軌，Blue Note，**label-info 有廠牌無目錄號**，barcode 724383826827）、05b8de90（**殘件**：無日期無國別無廠牌，媒體 `?`×10 軌，曲序與正式盤不同）。正式盤十軌：Old Country／Cherokee／Besame Mucho／Let Me Love You／Tenderly／After Hours／Ha!／Some Other Spring／Side by Side／I'm Okay。Discogs 7139935 補的目錄號：`CDP 7243 8 38268 2 7`。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Michel Petrucciani Trio — Live at the Village Vanguard；Live At The Village Vanguard (Concord Jazz / The George Wein Collection GW-3006)；Live At The Village Vanguard (Blue Note 7243 5 40382 2 8)",
+  "artist": "Michel Petrucciani",
+  "album": "Live at the Village Vanguard",
+  "year": 1985,
+  "label": "**原盤：Concord Jazz／The George Wein Collection `GW-3006`（1985 雙 LP 8 軌）**——US 3839547、德國 1491837（Bellaphon 代理）、加拿大 7123502、卡帶 3837010／19654939；同年 CD 版 Concord `CCD 43006`（歐 2560831）與日本 King `K32Y 6045`（3699178）、日本雙 LP `K20P-6378/6379`（10816724）。**再發**：1989 日本 King 240E 6833（32417616）／1994 Columbia COL4743832（14290177）／**1996 德國 Bellaphon 660.50.013（Discogs 7118081，`CD, Album, Reissue`；MB 77bf8b3b 把廠牌登成 `Jazzmen`）**／**2002 Blue Note 7243 5 40382 2 8（MB 3613fecf；Discogs 11367326 美版 `CD, Album, Reissue, Remastered`、15395964 歐版）**／2019 義大利 Blue Note《Michel In Blue》20206513",
+  "why": "Michel Petrucciani 二十一歲那年（1984 年 3 月 16 日）在紐約 Village Vanguard 的整場：Palle Danielsson 貝斯、Eliot Zigmund 鼓，八軌把 Miles〈Nardis〉、Rollins〈Oleo〉、Monk〈'Round About Midnight〉與他自己的〈Le Bricoleur de Big Sur〉〈To Erlinda〉〈Say It Again and Again〉〈Trouble〉〈Three Forgotten Magic Words〉排成雙 LP。這是他簽進 Blue Note 之前、由 George Wein 的廠牌發行的現場盤，Penguin Guide 稱它「a typically rumbustious concert set」，AllMusic 的 Scott Yanow 說三人的互動「consistently impressive」——**也是他後來整條 Blue Note 目錄的前史**。實掃池中 `Michel Petrucciani` 共 16 列（seed《Pianism》《100 Hearts》＋ c-146～c-151 的 100 Hearts／Power of Three／Michel Plays Petrucciani／Music／Playground／Promenade With Duke／Michel Petrucciani (Live)），**1984 年這場 Village Vanguard 現場一張都沒有**。",
+  "risk": "⚠ ⚠ **年份改判 1996 → 1985（本組三張改判之一，也是幅度最大的一張）**：列舉檔釘的 1996 是 **MB frd**，而 MB frd 抄的是 **1996 年德國 Bellaphon 660.50.013 那張再發 CD**；**真正的原盤是 1985 年 Concord Jazz／The George Wein Collection `GW-3006` 雙 LP**（Discogs 美 3839547／德 1491837／加 7123502 三筆原壓 `year` 欄全 1985、format 欄乾淨的 `Vinyl, LP, Album`，**德版 1491837 的 notes 逐字「Recorded live March 16, 1984 with The Fedco Truck」、唱片面是 A/B/C/D 四面＝雙 LP**；同年另有 Concord CD `CCD 43006` 與日本 King `K32Y 6045`）。**維基 infobox 亦逐字 Released 1985／Label Concord Jazz。**`year` 取 **1985**。⚠ ⚠ **收退的理由（第 1173 條(乙)，本層在 rulings 第 1206 條把它操作化）**：這批錄音**先前發行過**（1985 Concord），但**那次發行的目錄號 `GW-3006` 在 Concord 自己的號段裡、不在本線列舉的 Blue Note 目錄內、池中也沒有**——**退掉等於整張碟從管線消失**，因此**收，`year` 取原廠首發年 1985、`label` 欄寫原廠 Concord Jazz**（簡報 §三-3「原盤若是他廠，`year` 取他廠首發年、`label` 寫原廠、`risk` 註明 Blue Note 版年份」）。**Blue Note 版是 2002 年的 `7243 5 40382 2 8`。**⚠ **與本組退掉的《70th Birthday Concert》《Curtain Call》的界線**：那兩張的母體（Solid State `SS 19000`／Blue Note Japan `BNJ 61006`）**都在 Blue Note／Liberty-UA 自己的號段裡**，所以是「庫存盤的 CD 化」要退；**本張的母體在 Concord，不在本線任何清單上**，所以收。⚠ **掛名收攏（第 307／543 條）**：MB RG credit 是 **`The Michel Petrucciani Trio`（740b1ced，Group，disambiguation「jazz trio」）**，Discogs 與 Apple 也用這個字串；**池中 16 列全部是 `Michel Petrucciani`（Person）、Trio 字串 0 列**——**取池中多數寫法 `Michel Petrucciani`，Trio 版寫進 queryAlias**，**不新造分裂**。⚠ ⚠ **撞陳列（第 738／859／1049 條，本層已逐軌比過）**：**(甲) 池中 c-151 b 的 `Michel Petrucciani —《Michel Petrucciani (Live)》`（1994）是 1991 年 11 月在法國 Metz 的 Arsenal 錄的八軌（Black Magic／Miles Davis Licks／Contradictions／Bite／Rachid／Looking Up／Thank You Note／Estate，Discogs 2426976 notes 逐字）——與本張八軌 0 重疊、班底也不同**，兩張現場盤並存、risk 互指；**(乙) 池中另有三張盤名一字不差的 `Live at the Village Vanguard`（seed 的 Elvin Jones、Thad Jones & Mel Lewis，c-152 a 的 大西順子）與四張含該詞組的碟（Sonny Rollins／Dexter Gordon／Bill Evans Trio／John Coltrane／The Great Jazz Trio／Joe Henderson／The Benny Green Trio／Joe Lovano）**——**全部是不同藝人、不同錄音**，`chk-prop` 折鍵是「掛名｜盤名」所以不會亮燈，**上架比對必須帶掛名**。⚠ **`releaseType`**：MB secondary-types `['Live']` ✓，`live: true`。⚠ 店面（第 254 條，只寫觀察）：Apple us `search` 一種查法命中 723629189（`The Michel Petrucciani Trio`，8 軌＝原盤形，**releaseDate `1984-03-16`＝錄音日**，第 484 條）。CAA：RG 層 6 圖，**來源是 1996 年德國再發 77bf8b3b、不是 1985 原盤**——研究層看版式時要知道封面可能是再發版。",
+  "mbNote": "釘 release-group 3ce1f2d8-e439-3312-8194-fcd644d5efc0。回問 release-group 端點：title「Live at the Village Vanguard」、artist-credit「The Michel Petrucciani Trio」（740b1ced **Group**，disambiguation「jazz trio」）、first-release-date **1996**（本層改判 1985，見 risk）、primary-type Album、**secondary-types ['Live'] ✓**，轄下 2 個 release。release 端點：77bf8b3b（1996 XE Official CD 8 軌，**廠牌登成 `Jazzmen`／660.50.013**，barcode 4003099776524）、3613fecf（2002 XE Official CD 8 軌，Blue Note `7243 5 40382 2 8`，barcode 724354038228）。⚠ **MB 整個沒建 1985 年的 Concord／George Wein 原盤**（Discogs 3839547／1491837／7123502／2560831／3699178 都有）。八軌（兩筆 release 逐軌相同）：Nardis／Oleo／Le Bricoleur de Big Sur／To Erlinda／Say It Again and Again／Trouble／Three Forgotten Magic Words／'round About Midnight。原盤雙 LP 面別（Discogs 1491837）：A1 Nardis／A2 Oleo／B1 Le Bricoleur De Big Sur／B2 To Erlinda／C1 Say It Again And Again／C2 Trouble／D1 Three Forgotten Magic Words／D2 Round About Midnight。錄音 1984-03-16 Village Vanguard, New York；班底 Petrucciani p、Palle Danielsson b、Eliot Zigmund d。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "hiphop"
+  ],
+  "queryAlias": "Us3 — Broadway & 52nd（MB／店面寫法）；Us 3 — Broadway & 52nd（Discogs 部分條目）；ブロードウェイ＆52nd (TOCP-50040)",
+  "artist": "US3",
+  "album": "Broadway & 52nd",
+  "year": 1996,
+  "label": "**Blue Note TOCP-50040（JP 1996-11-27 CD 14 軌，東芝 EMI；Discogs 1103781，℗&© 1996 Capitol Records, Inc.）＝實體首發**；MB 另把日版登成 `TOCP-50042`（3de1e7a1）。**美／歐版 Blue Note `CDP 7243 8 30027 2 6` 是 1997**（US CD 743769／黑膠 682901、歐 87498、英 12753136／黑膠 1989086、加 7243 8 56773 2 8／2409963、法 7243 8 57153 2 7、義 10897438、澳 14199079、俱樂部版 CDP 530027／115875；MB US release 1833f73e 標 1997-04-08、NL release 231119ad 標 1996）；2009 數位 7ca94d55",
+  "why": "Us3 的第二張：1993 年《Hand on the Torch》靠〈Cantaloop (Flip Fantasia)〉把 Blue Note 母帶採樣帶上流行榜之後，Geoff Wilkinson 換掉整組 MC（改用 Kobie Powell、Shabaam Sahdeeq、Michelle Valentine），十四軌從〈Intro（Welcome to the Jazz Corner of the World）〉開場，用〈Come On Everybody (Get Down)〉〈Caught Up in a Struggle〉〈Grand Groove〉〈Sheep〉把 Blue Note 的 groove 目錄再採一輪。Billboard 1996-12-07 p20 的 HIP-HOP JAZZ 專欄逐字寫「Blue Note act US3 makes its return to the music scene March 11 with 'Broadway & 52nd.' The set is the act's follow-up to 'Hand On The Torch,' which featured 'Cantaloop'」——**盤名指的就是 Blue Note 母公司 Capitol 在曼哈頓的地址、也是 Birdland 舊址那一帶**。實掃池中 `US3` 1 列（seed 的《Hand on the Torch》1993，`genres: ['jazz','soul']`），**這張第二作缺**。",
+  "risk": "⚠ ⚠ **首發地與年份要自己排（簡報 §二 ＋ 第 1063 條）**：**Discogs 上所有美／英／歐／加／法／義／澳／波蘭／巴西條目的 `year` 欄全部是 1997**，**唯一標 1996 的是日本 TOCP-50040（Discogs 1103781，`released` 欄逐字 `1996-11-27`、notes 逐字 `℗&© 1996 Capitol Records, Inc.`）**；**Billboard 1996-12-07 p20 講的「March 11」是 1997 年的美國街頭日**（MB 的 US release 1833f73e 標 `1997-04-08`）。**`year` 取實體首發年 ＝ 1996（日本）**，**美／歐 1997 寫進 risk**。⚠ **MB 的 NL release 231119ad 標 1996 但目錄號是 `7243 8 30027 2 6`——Discogs 把同目錄號的歐版全部標 1997**：**MB 這一筆的年份可疑，不要拿它當 1996 的證據**，1996 的證據是日版。⚠ **MB 與 Discogs 的日版目錄號不一致**：MB 登 `TOCP-50042`、Discogs 登 `TOCP-50040`（另有 `Us3-2` 的內號）——**兩個都寫進 label 欄**，上架比對兩形都帶。⚠ **掛名收攏（第 307 條）**：MB RG credit 是 `Us3`（b370defd Group），**Discogs 部分條目印 `Us 3`（帶空格）**；**池中 seed 的既有字串是全大寫 `US3`**——**取池中寫法 `US3`，`Us3`／`Us 3` 進 queryAlias**。⚠ ⚠ **曲風本層判 `['jazz','hiphop']`**：**Billboard 1996-12-07 那則的欄名逐字就是「HIP-HOP JAZZ」**、十四軌全部是 MC 主唱的嘻哈曲式配 Blue Note 採樣——**與 c-152 a 的 `Greg Osby —《Black Book》` 同一個處理（第 1140 條末段）**；⚠ **但池中 seed 的《Hand on the Torch》用的是 `['jazz','soul']`**——**同一組藝人兩張卡曲風不一致，本層知道並刻意如此**（首作的 soul 標法是 seed 期的舊判，本層不回頭改別人的卡，第 858 條可逆）。⚠ **非爵士疑慮已排除**：簡報 §一-4 說撞到疑似非爵士要退，**但本張與《Hand on the Torch》一樣是 Blue Note 自家的爵士採樣企劃、由 Blue Note 直接簽約發行**，池中首作已在，收。⚠ 店面（第 254 條）：Apple us `search` 一種查法第一筆命中 715858235（14 軌＝原盤形，**releaseDate `1997-01-01`＝店面標的是美版年**），**同頁第二筆起混進 La La Land／Sing 等完全無關的原聲帶**（第 528／707 條）。CAA：RG 層 **11 圖**（本組最多），**來源是 NL release 231119ad**。",
+  "mbNote": "釘 release-group 389e4651-ecff-3d07-8205-2a7dbafeb363。回問 release-group 端點：title「Broadway & 52nd」、artist-credit「Us3」（b370defd **Group**）、first-release-date **1996-11-27**、primary-type Album、secondary-types 空，轄下 4 個 release。release 端點：3de1e7a1（**1996-11-27 JP** Official CD 14 軌，Blue Note `TOCP-50042`，barcode 4988006724020）、231119ad（1996 NL Official CD 14 軌，Blue Note `7243 8 30027 2 6`，barcode 724383002726）、1833f73e（**1997-04-08 US** Official CD 14 軌，Blue Note 無目錄號，barcode 724383002726）、7ca94d55（2009-02-02 XW Official Digital Media 14 軌，barcode 05099969420351）。十四軌：Intro／Come On Everybody (Get Down)／Caught Up in a Struggle／True to the Game／Snakes／I'm Thinking About Your Body／Grand Groove／Nowadays／Sheep／Doin' a Crime／Recognise and Realise／Time and Space／Soul Brother／Hymn for Her。Discogs 1103781（日版）：`TOCP-50040`／`Us3-2`，released 1996-11-27。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Renee Rosnes — Ancestors (Blue Note 72438-34634-2-8)；Renée Rosnes（帶重音）",
+  "artist": "Renee Rosnes",
+  "album": "Ancestors",
+  "year": 1996,
+  "label": "Blue Note `72438-34634-2-8`／`CDP 7243 8 34634 2 8`（**CA** 1996-02-20 CD 8 軌；MB 31f480dc，barcode 724383463428；Discogs 加拿大原壓 11827561、美版 11720614、歐版 9039852、BMG 俱樂部版 3169659，廠牌欄印 EMI Music Canada）",
+  "why": "Renee Rosnes 在 Blue Note 的第四張：Nicholas Payton 小號、Chris Potter 薩克斯、Peter Washington 貝斯、Billy Drummond 鼓，八軌裡六首自己寫（The Sounds Around the House／Intuition／The Ache of the Absence／Ancestors／Lifewish／Chasing Spirits／The Gift），開場的〈Upa Negiunho〉是 Edu Lobo 的巴西曲——**盤名講的是她從溫哥華的成長背景回望自己的養父母與生母兩條血緣線**。Billboard 1996-05-04 p33 的 BLUE NOTES 專欄把它與 Jane Ira Bloom《The Nearness》、Shirley Horn《The Main Ingredient》並列為「all fairly new in the racks」；同年 1996-01-13 p51 的加拿大唱片行專題也把她點名為店內常放的本地藝人。實掃池中 `Renee Rosnes` 6 列（c-150 a 的同名首作《Renee Rosnes》1990 與《For the Moment》1990、c-151 a《Without Words》1992），**1996 年這張缺**。",
+  "risk": "⚠ **首發國是 CA 不是 US**：MB 唯一一筆 release 標 **1996-02-20 CA**，Discogs 的加拿大條目 11827561 用的是加拿大式目錄號 `72438-34634-2-8`、廠牌欄印 EMI Music Canada——**Rosnes 是溫哥華人，這張由 EMI 加拿大主導**，`country` 取 CA。⚠ 年份：MB frd 1996-02-20、Discogs 四筆 `year` 欄全 1996、**Billboard 1996-05-04 p33「fairly new in the racks」**——三邊一致，不改；**兩刊查 `34634` 零命中、也沒有評介與榜位**，紙本層只有那一句行文。⚠ ⚠ **Apple 的 releaseDate 是 `1995-01-01`，比首發早一年**（1463456847）——**這是第 1141 條那種「店面自己把年份標歪」的第五種形狀：不是標回錄音年、也不是年頭回填到正確的年，而是整整早一年**。**本層不採信**（MB 帶完整日期 ＋ Discogs 四筆 ＋ 紙本三邊都說 1996）。⚠ **掛名沿用 `Renee Rosnes`**（池中 6 列，MB bff6007a Person）；**她本名的法語重音形 `Renée Rosnes` 在部分資料庫出現**，進 queryAlias。⚠ **撞陳列**：池中 c-150 a 的《Renee Rosnes》是 1990 年的同名首作（`selfTitled`），**與本張不同碟**，上架字串比對要注意「掛名＝盤名」的那張會在子字串比對上撞進來。⚠ **曲名 `Upa Negiunho` 的拼法**：Edu Lobo 原曲通常寫成〈Upa, Neguinho〉，**MB 原盤登 `Upa Negiunho`**——**卡上與寫作層照 MB，正確拼法寫進 risk**。⚠ 店面（第 254 條）：Apple us `search` 一種查法命中 1463456847（8 軌＝原盤形）。CAA：RG 層 1 圖，**來源是原盤 31f480dc** ✓。",
+  "mbNote": "釘 release-group ae755728-a632-3b46-8375-bcaacfecd61a。回問 release-group 端點：title「Ancestors」、artist-credit「Renee Rosnes」（bff6007a Person）、first-release-date **1996-02-20**、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：31f480dc（1996-02-20 **CA** Official CD 8 軌，Blue Note `72438-34634-2-8`，barcode 724383463428）。八軌：Upa Negiunho／The Sounds Around the House／Intuition／The Ache of the Absence／Ancestors／Lifewish／The Gift／Chasing Spirits。MB 同字串 artist 反查：bff6007a 一筆（另有 2003 年的 `Renee Rosnes, Danish Radio Big Band` 聯名發行，非 artist 實體）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "John Patton — Memphis To New York Spirit（MB／盤面裸名）；Memphis to New York Spirit（黑膠小寫 to）；Memphis To New York Spirit (UCCQ-5010)",
+  "artist": "Big John Patton",
+  "album": "Memphis To New York Spirit",
+  "year": 1996,
+  "label": "Blue Note CDP 7243 8 35221 2 5（US **1996-03-05** CD **8 軌**，Blue Note Rare Groove Series；MB 6389dcba，barcode 724383522125；Discogs 美國 4403527／歐版 4398668）；同期黑膠 `B1 7243 8 35221 1 8`／`35221`（US **5 軌**，MB ec708174，barcode 724383522118；Discogs 2177823／英版 14012664）；2014 日本 The Blue Note Masterworks `UCCQ-5010`（7700931／宣傳 38255127）",
+  "why": "**這是庫存首發，不是再發**：Big John Patton 1969–70 年在 Van Gelder 錄的兩場（黑膠版 notes 記 1970-10-02），Blue Note 當年沒發，二十六年後才隨 `Blue Note Rare Groove Series` 首度上市。Billboard 1996-03-30 p117 的評介逐字寫「Hammond B-3 organist John Patton recorded these sessions in 1969-70, but they have **never seen complete release until now**. Patton brewed a soulful stew of blues, jazz, and funk with a band that featured the offbeat lyricism of guitarist James 'Blood' Ulmer, the howling, Shepp-like reedwork of Marvin Cabell」。八軌（Memphis／Footprints／The Mandingo／Bloodyun／Steno／Man From Tanganyika／Cissy Strut／Dragon Slayer）裡有 Wayne Shorter〈Footprints〉與 The Meters〈Cissy Strut〉，**是 Patton 從 soul-jazz 走向自由化的轉折**。實掃池中 `Big John Patton` 10 列（seed 7 張＋c-139《Blue John》／c-140《The Way I Feel》／c-141《That Certain Feeling》／c-142《Understanding》《Accent on the Blues》／c-152 b《Boogaloo》）＋ `John Patton` 1 列（seed《Along Came John》），**這張缺**。",
+  "risk": "⚠ **掛名收攏（第 583／1116 條，既有分裂取多數）**：MB RG credit 是裸名 `John Patton`（b76182c3 Person）、盤面與 Discogs 也印裸名；**但池中 `Big John Patton` 10 列 ＞ `John Patton` 1 列（seed《Along Came John》）**，**且 Apple 的 artistName 逐字就是 `Big John Patton`（1439527823）**——**取 `Big John Patton`，裸名進 queryAlias**。**這是這組分裂吃到的第十張卡**（c-139／c-140／c-141／c-142／c-152 b 都用同一條理由，見第 1177 條（二））。⚠ ⚠ **第 1172 條的反向證據在本張最明顯**：**Billboard 那則評介的製作人欄逐字印「REISSUE PRODUCER: Bob Belden」**——**措辭像再發，同一段正文卻說「never seen complete release until now」**；**Discogs 兩筆的 format 欄是乾淨的 `Vinyl, LP, Album`／`CD, Album`，一個 `Reissue` 都沒有**。**判庫存首發，`year` 取 1996。**⚠ **軌數有兩形**：**CD 8 軌、同期黑膠只有 5 軌**（A1 Memphis／A2 Footprints／A3 The Mandingo／B1 Bloodyun／B2 Steno）——**正文以 8 軌 CD 為準，黑膠少的三軌（Man From Tanganyika／Cissy Strut／Dragon Slayer）要寫進 risk**；**這正是第 738／859 條要求「看到 CD 那一層」的原因**。⚠ **錄音日期兩說**：Billboard 說「1969-70」、Discogs 黑膠 2177823 的 notes 只寫「Recorded on October 2, 1970」——**很可能是兩場併成一張**，**正文不得寫死成單一場次**，研究層要補 jazzdisco 的 session 頁。⚠ **MB 的 disambiguation 欄裡藏著另一個版本**：6389dcba 的 disambiguation 逐字「UCCQ-5010 Japan 1996; CDP 7243 8 35221 2 5 Europe 1996 different bar code and release date」——**MB 把本該建成獨立 release 的資訊塞進 disambiguation**（第 642 條的變體）；**實際上 UCCQ-5010 是 2014 年的日本再壓，不是 1996**（Discogs 7700931），**MB 這一欄錯**。⚠ **撞陳列**：c-152 b 的《Boogaloo》（1995）是同一個系列、同一位製作人（Bob Belden）、同一批庫存出貨，**但錄音場次不同、八軌零重疊**，兩卡 risk 互指；池中《Understanding》（1969，c-142 a）是**下欄那批真再發**裡的碟、已以原盤年建卡，**正文不得把兩者混為一談**。⚠ 店面（第 254 條）：Apple us `search` 一種查法命中 1439527823（artistName `Big John Patton`，8 軌＝CD 形，**releaseDate `1970-01-01`＝店面標回錄音年**，第 1141 條）。CAA：RG 層 2 圖，**來源是 CD 原盤 6389dcba** ✓。",
+  "mbNote": "釘 release-group f7ac4be6-7c35-373d-8875-3721b96fc0cf。回問 release-group 端點：title「Memphis To New York Spirit」、artist-credit「John Patton」（b76182c3 Person）、first-release-date **1996-03-05**、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：6389dcba（1996-03-05 US Official CD **8 軌**，Blue Note CDP 7243 8 35221 2 5，barcode 724383522125，disambiguation 欄塞了日版與歐版資訊）、ec708174（1996 US Official 12\" Vinyl **5 軌**，Blue Note `B1 7243 8 35221 1 8`＋`35221`，barcode 724383522118，title 用小寫 `Memphis to New York Spirit`）。CD 八軌：Memphis／Footprints／The Mandingo／Bloodyun／Steno／Man From Tanganyika／Cissy Strut／Dragon Slayer。Discogs 2177823（黑膠）：series `Blue Note Rare Groove Series`、℗© Capitol Records, Inc.、notes「Recorded on October 2, 1970 at the Van Gelder Studio, Englewood Cliffs, New Jersey.」"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Cassandra Wilson — New Moon Daughter (TOCJ-5996，13 軌含〈Moon River〉)；New Moon Daughter (歐版 CDP 7243 8 37183 2 0，13 軌含〈32-20〉)",
+  "artist": "Cassandra Wilson",
+  "album": "New Moon Daughter",
+  "year": 1996,
+  "label": "**Blue Note 東芝 EMI `TOCJ-5996`（JP 1996-01-24 CD 13 軌，末軌〈Moon River〉；MB 8b5dc04c）**＝MB 的 first-release-date 來源；美版 `CDP 7243 8 32861 2 6`（1996-03-05 CD 12 軌，MB a609240d，barcode 724383286126；Discogs 12784288、俱樂部版 2018736／407193＝CDP 532861、加拿大 11000077）；歐版 `CDP 7243 8 37183 2 0`（1996-03-04 CD **13 軌，末軌〈32-20〉**，MB b704479d；Discogs 418359、義 11474381、歐版黑膠 7243 8 37183 1 3／2460554）；2013／2021 數位五筆；2013 Pure Pleasure 黑膠 PPAN BST32861；2015 Blue Note 75 週年黑膠 B0022590-01／00602547173300",
+  "why": "Cassandra Wilson 在 Blue Note 的第二張，也是她 1997 年葛萊美最佳爵士人聲專輯獎的那一張：製作人 Craig Street 延續《Blue Light 'til Dawn》的做法，把 Billie Holiday〈Strange Fruit〉、Son House〈Death Letter〉、Hank Williams〈I'm So Lonesome I Could Cry〉、The Monkees〈Last Train to Clarksville〉、Neil Young〈Harvest Moon〉、U2〈Love Is Blindness〉與 Hoagy Carmichael〈Skylark〉放進同一張裡，中間夾她自己的〈Solomon Sang〉〈Find Him〉〈A Little Warm Death〉〈Until〉〈Memphis〉——**用木吉他、班鳩與極簡打擊把爵士歌手的曲目邊界整個拆開**。這張在 Billboard TOP JAZZ ALBUMS 上停了近一年（1996-11-30 那一期已是第 37 週）。實掃池中 `Cassandra Wilson` **1 列**（seed 的《Blue Light 'til Dawn》1993），**這張第二作缺**。",
+  "risk": "⚠ **軌數有三形（本組最複雜的一張）**：**美版 12 軌**、**日版 TOCJ-5996 13 軌（末軌〈Moon River〉）**、**歐版 CDP 7243 8 37183 2 0 也是 13 軌但末軌是〈32-20〉**——**三版前十二軌逐軌相同、第十三軌兩地各不同**。**正文以美版十二軌為準，兩種 bonus 寫進 risk**；上架試聽若命中 13 軌形要先確認是哪一地的版本。⚠ **年份 1996，但首發地是日本**：MB frd **1996-01-24（JP）**，歐版 1996-03-04、美版 1996-03-05——**第 1063 條那種「日版早半年到一年」在本張只早了六週**，`year` 三地都落在 1996，**不影響 `year`，但 `country` 應取 JP 或註明三地同年**。Discogs 十餘筆 `year` 欄全 1996；**Billboard 1996-11-30 p33 的 TOP JAZZ ALBUMS 顯示本張已在榜 37 週**（回推到 1996 年 3 月中進榜），與美版 03-05 相符。⚠ **Apple 的 releaseDate 是 `1995-01-01`**（1443111209）——**又是第 1141 條那種店面標歪一年的形狀（與本組 Renee Rosnes《Ancestors》同形）**，不採信。⚠ **掛名沿用 `Cassandra Wilson`**（池中 1 列，MB eb6595d3 Person）。⚠ **MB 的 release credit 與廠牌欄有雜訊**：日版 8b5dc04c 的 label-info 同時掛 `東芝EMI 株式会社`／`Blue Note`／`Capitol Records`，美版 84d15d7b 是 Columbia House 俱樂部版（barcode `0208311512241` 看起來是掃描碼不是 UPC）。⚠ **MB 有一個非 ASCII 連字號的地雷但不在本卡欄位上**：數位版 e903eb81 的第 13 軌登成 `32‐20`（U+2010），**卡上的 `artist`／`album` 兩欄都乾淨**，`chk-prop` 不會擋，**但研究層引用軌名時要換回 ASCII `-`**。⚠ **撞陳列**：池中 seed 的《Blue Light 'til Dawn》（1993）是前一張、同一位製作人，**十二軌零重疊**，兩張 risk 互指；**〈Memphis〉這一軌與本組 Big John Patton《Memphis To New York Spirit》的開場軌同名、完全無關**。⚠ 店面（第 254 條）：Apple us `search` 一種查法命中 1443111209（12 軌＝美版形）。CAA：RG 層 6 圖，**來源是日版 8b5dc04c、不是美版**。",
+  "mbNote": "釘 release-group 661b2434-1bc9-38e6-a660-1b63879eeb0a。回問 release-group 端點：title「New Moon Daughter」、artist-credit「Cassandra Wilson」（eb6595d3 Person）、first-release-date **1996-01-24**、primary-type Album、secondary-types 空，轄下 **9 個** release（本組最多）。release 端點重點：8b5dc04c（**1996-01-24 JP** Official CD **13 軌**，東芝EMI／Blue Note／Capitol，`TOCJ-5996`，無 barcode）、b704479d（1996-03-04 XE Official CD **13 軌**，`CDP 7243 8 37183 2 0`，barcode 724383718320）、a609240d（1996-03-05 US Official CD **12 軌**，`CDP 7243 8 32861 2 6`，barcode 724383286126）、84d15d7b（1996 US CD 12 軌，`CDP 532861`，disambiguation「Columbia House」）、b810ee75／5dafe52b／2641c7e5／e903eb81／1b9ed602（2013／2021 數位，12 或 13 軌）。美版十二軌：Strange Fruit／Love Is Blindness／Solomon Sang／Death Letter／Skylark／Find Him／I'm So Lonesome I Could Cry／Last Train to Clarksville／Until／A Little Warm Death／Memphis／Harvest Moon；日版第 13 軌 Moon River、歐版第 13 軌 32-20。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Richard Elliot — City Speak (Blue Note Contemporary CDP 7243 8 32620 2 1)",
+  "artist": "Richard Elliot",
+  "album": "City Speak",
+  "year": 1996,
+  "label": "**Blue Note Contemporary** CDP 7243 8 32620 2 1（US 1996 CD 11 軌；**MB 2b7b4a73 把廠牌登成 `Blue Note`**，barcode 724383262021；Discogs 美國原壓 3177893、荷蘭 11074701、卡帶 B4 7243 8 32620 4 5／8933179、宣傳卡帶 B4-32620／26378009、**俱樂部版 6177225 與宣傳版 15331721 的廠牌欄逐字印 `Blue Note Contemporary`**，廠牌欄第三格一律是錄音室 `Suncoast Recording`）",
+  "why": "次中音薩克斯手 Richard Elliot 在 Blue Note Contemporary 的第二張：自製自編的十一軌當代爵士（City Speak／Walk the Walk／Unspoken Words／Amazon／I'll Make Love to You／Scotland／Sweet Surrender／Down Hill Run／When the Lights Go Out／All I Need／That's All She Wrote），其中〈I'll Make Love to You〉是 Boyz II Men 那首的器樂版。Billboard 1996-04-27 p73 的評介逐字說這張「infinitely airplayable album is a perfect showcase for his hearty tenor tone」，點名〈Walk The Walk〉的放克／靈魂和聲與〈Unspoken Words〉的抒情；它在 TOP CONTEMPORARY JAZZ ALBUMS 上從 1996-04-20 以 NEW 進榜一路待到七月底（04-20 第 11、05-04 第 12、05-18 第 12、06-01 第 12、06-15 第 14、06-29 第 17、07-13 第 15、07-27 第 18）。實掃池中 `Richard Elliot` 1 列（c-152 a 的《After Dark》1994），**這張缺**。",
+  "risk": "⚠ **廠牌是 `Blue Note Contemporary` 不是 `Blue Note`（第 1154 條，本段第二次）**：**MB 2b7b4a73 的 label-info 登成 Blue Note**，**但 Billboard 1996-04-27 的評介署名逐字「Blue Note Contemporary 32620」、Discogs 的俱樂部版 6177225 與宣傳版 15331721 的廠牌欄也逐字印 `Blue Note Contemporary`**——**`label` 欄以 Blue Note Contemporary 為準**，**依簡報 §一-4「子廠牌算 Blue Note」收**。**與 c-152 a《After Dark》完全同形（那張 MB 也把廠牌登錯），兩卡 risk 互指。**⚠ 年份：MB frd 1996、Discogs 七筆 `year` 欄全 1996、**Billboard 1996-04-20 p57 以 NEW 進榜 ＋ 1996-04-27 p73 評介 ＋ 連續八期在榜**——三邊一致，不改。⚠ **曲風**：當代／smooth jazz，**照 c-152 a《After Dark》的先例寫 `['jazz']`、不加 `soul`**（第 1170 條末段同樣的處理；要不要加留給寫作層，本層不加，理由寫在卡上）。⚠ **這是本組唯一一張「Blue Note 的當代爵士線」**，簡報 §一-4 提醒撞到疑似非爵士要退——**本張由 Blue Note 自家的當代爵士子廠牌發行、榜也上 Billboard 的 TOP CONTEMPORARY JAZZ ALBUMS，池中前作已在，收**。⚠ **掛名沿用 `Richard Elliot`**（池中 1 列，MB a64ccd0f Person，disambiguation「saxophonist」）；⚠ **他與英國演員／音樂人同名者眾**，**日後任何 `Richard Elliot`／`Richard Elliott` 進池要先帶消歧**。⚠ **搜尋噪音**：Discogs 用「Richard Elliot City Speak」查時前排會混進 `Richard Davis —《As One》`（Muse MR 5093，1976）等完全無關的碟——**上架比對要帶 catno 32620**。⚠ 店面（第 254 條）：Apple us `search` 一種查法命中 724330468（11 軌＝原盤形，releaseDate `1996-01-01` 年頭回填）。CAA：RG 層 2 圖，**來源是原盤 2b7b4a73** ✓。",
+  "mbNote": "釘 release-group e3ce974c-ee5a-3267-b724-26044b331ee4。回問 release-group 端點：title「City Speak」、artist-credit「Richard Elliot」（a64ccd0f Person，disambiguation「saxophonist」）、first-release-date **1996**、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：2b7b4a73（1996 US Official CD 11 軌，**label-info 登 `Blue Note`／CDP 7243 8 32620 2 1**，barcode 724383262021）。十一軌：City Speak／Walk the Walk／Unspoken Words／Amazon／I'll Make Love to You／Scotland／Sweet Surrender／Down Hill Run／When the Lights Go Out／All I Need／That's All She Wrote。Discogs 6177225／15331721 的廠牌欄：`Blue Note Contemporary`；三筆條目的第三格廠牌欄一律是錄音室 `Suncoast Recording`。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Don Pullen — Sacred Common Ground（聖なる旅立ち／ドン・プーレン・ラスト・アルバム，TOCJ-5999）；Don Pullen & The Chief Cliff Singers — Sacred Common Ground",
+  "artist": "Don Pullen",
+  "album": "Sacred Common Ground",
+  "year": 1995,
+  "label": "Blue Note CDP 7243 8 32800 2 5（US **1995** CD 7 軌；MB e38b6d5c 標 1996，barcode 724383280025；**Discogs 美國原壓 4825343、歐版 5351188、美國宣傳版 33628557 三筆 `year` 欄全 1995**，℗© Capitol Records、歐版 notes 另記錄音室 Power Station 與壓片廠 EMI Uden）；日本 `TOCJ-5999`《聖なる旅立ち／ドン・プーレン・ラスト・アルバム》（1996，Discogs 18585052／宣傳 11505701）",
+  "why": "Don Pullen 的最後一張錄音：1995 年 3 月 8–9 日在紐約錄完、四十四天後（4 月 22 日）他就因淋巴癌過世。七軌把他的 African-Brazilian Connection（Carlos Ward 中音、Nilson Matta 貝斯、Guilherme Franco 與 Mor Thiam 打擊）與蒙大拿州 Kootenai／Salish 族的 **Chief Cliff Singers**（Mike Kenmille 領唱）放在同一個編制裡——〈The Eagle Staff Is First〉〈River Song〉〈Reservation Blues〉〈Message in Smoke〉〈Resting on the Road〉最後收在〈Reprise: Still Here〉。Billboard 1996-01-20 p77 的評介逐字寫「When pianist/composer Don Pullen recorded these tracks just weeks before his untimely death last year, the common ground he was seeking bridged Native American music and his own globally informed style of progressive jazz」；Cash Box 1996-02-03 p14 也整段評（「Pianist/composer Don Pullen has always come from a place of ethnomusicality」）。實掃池中 `Don Pullen` 15 列（seed 3 張＋c-148《Breakthrough》／c-149《Song Everlasting》《New Beginnings》／c-150《Random Thoughts》《Kele Mou Bana》／c-152 b《Live...Again (Live at Montreux)》），**這張遺作缺**。",
+  "risk": "⚠ ⚠ **年份改判 1996 → 1995（本組三張改判之一）**：列舉檔與 **MB frd 都是 1996**，**但 Discogs 的美國原壓 4825343、歐版 5351188、美國宣傳版 33628557 三筆 `year` 欄全部是 1995**，**盤面 ℗© 逐字 Capitol Records, Inc. 1995**，**而且 1995 年就已經有宣傳版在流通**。反方只有 **Billboard 1996-01-20 p77 與 Cash Box 1996-02-03 p14 兩則評介**——**依第 1053／1176 條：只有評介、沒有新片欄也沒有廠牌預告，不足以推翻盤面 ℗ 年**（與《Bang! Zoom》同形，只是方向相反：那張是 MB 說 1995 而評介在 1996，本張是 MB 說 1996 而盤面說 1995）。**階序上 Discogs 原壓群 ＞ MB frd，取 1995。**⚠ **第 1176 條的提醒在本張正中**：「1995 年底至 1996 年初上市的碟，Billboard 的評介與榜位可能整整落後三到四個月」——**本張兩刊都沒有榜位，只有落後的評介**。⚠ **可逆**（第 858 條）：改的是 manifest 欄位；後批若找到 1995 年下半的 Blue Note 廣告列出 `32800`，或找到 1996 年 1 月的新片欄，兩個方向的改回成本都很低。⚠ **目錄號的鄰居可以當第二意見（但只是第二意見，第 1112 條）**：`32799` 是 Sonny Fortune《A Better Understanding》、`32801` 是本組 John Scofield《Groove Elation!》（1995-10-24）——**Billboard 1995-07-01 p47 的「COMING SOON」欄已經列了 32799，32800／32801 是同一段號**。⚠ **Apple 的 releaseDate 是 `1994-01-01`**（1464080097）——**比盤面還早一年、也早於錄音（1995-03），店面這個值完全不能用**。⚠ **曲名**：MB 第 1 軌登 `The Eagle Is First`，**Discogs 兩筆與盤面都是 `The Eagle Staff Is First`**——**寫作層照 Discogs，MB 拼法不改**。⚠ **掛名沿用 `Don Pullen`**（池中 15 列，MB 7a31f6c3 Person，disambiguation「pianist」）；⚠ **池中另有 `Don Pullen & The African-Brazilian Connection`（c-150 b《Kele Mou Bana》、c-152 b《Live...Again》）與 `The Don Pullen-George Adams Quartet`（c-148／c-149）兩個既有分裂**——**本張 MB credit 是裸名，照 MB 取裸名，不動既有分裂**；**但本張的班底就是 African-Brazilian Connection ＋ Chief Cliff Singers**，正文必須寫出來，**日版把它印成聯名（`Don Pullen & The Chief Cliff Singers`）進 queryAlias**。⚠ **撞陳列**：c-152 b 的《Live...Again (Live at Montreux)》是 1995 年發行的現場盤、同一個 African-Brazilian Connection 班底，**但那是現場、本張是錄音室，七軌零重疊**，兩卡 risk 互指。⚠ 店面（第 254 條）：Apple us `search` 一種查法命中 1464080097（7 軌＝原盤形）。CAA：RG 層 4 圖，**來源是原盤 e38b6d5c** ✓。",
+  "mbNote": "釘 release-group 12e96f12-95cc-35c1-b41b-65a98ab67bdb。回問 release-group 端點：title「Sacred Common Ground」、artist-credit「Don Pullen」（7a31f6c3 Person，disambiguation「pianist」）、first-release-date **1996**（本層改判 1995，見 risk）、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：e38b6d5c（**1996** US Official CD 7 軌，Blue Note CDP 7243 8 32800 2 5，barcode 724383280025）。七軌（MB 拼法）：The Eagle Is First／Common Ground／River Song／Reservation Blues／Message in Smoke／Resting on the Road／Reprise: Still Here。Discogs 4825343／5351188：`year` 1995、℗© Capitol Records, Inc.、notes「Recorded 8-9 March, 1995 in NYC」、第 1 軌 `The Eagle Staff Is First`、歐版 notes 列出 Chief Cliff Singers 七位成員（Mike Kenmille lead／Clifford Burke／Arleen Adams／Gina Big Beaver／Clayton Burke／Kenny Lozeau／Francis Auld）。⚠ **MB 沒建日版 TOCJ-5999**（Discogs 18585052／11505701 有）。"
  }
 ]
