@@ -165,7 +165,27 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   c144: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
   c145: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
   c146: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c147: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'] };
+  c147: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c148: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c149: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c150: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c151: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c152: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c153: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c154: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c155: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c156: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c157: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c158: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c159: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c160: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c161: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c162: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c163: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c164: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c165: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c166: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c167: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'] };
 
 const cards = [];
 for (const b of BATCHES)
