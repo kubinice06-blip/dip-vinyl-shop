@@ -473,7 +473,7 @@ Billboard 全部 `BB-YYYY-MM-DD.pdf`、Cash Box 全部 `CB-YYYY-MM-DD.pdf`，
 
 | 檔案 | 刊 | 涵蓋 | 期數 | 缺期 |
 |---|---|---|---|---|
-| `batch-progress/enum/billboard-bn-1985h2-1987-ocr.txt`（9.9 MB） | Billboard | **1985-07-06 → 1987-12-26 的命中頁** | **127** | 1986-01-04／1986-04-26／1987-01-03 |
+| `batch-progress/enum/billboard-bn-1985h2-1987-ocr.txt.gz`（9.9 MB） | Billboard | **1985-07-06 → 1987-12-26 的命中頁** | **127** | 1986-01-04／1986-04-26／1987-01-03 |
 | `batch-progress/enum/cashbox-bn-1985h2-1987-ocr.txt`（5.2 MB） | Cash Box | **1985-07-06 → 1987-12-26 的命中頁** | **124** | 1986-01-04／1986-03-29／1986-07-05／1986-07-19／1987-01-03／1987-01-10 |
 
 - 格式同第 879 條：每期 `######## BB-YYYY-MM-DD pages=N hits=M`／`######## CB-…`，頁內 `===== PAGE n ===== [命中的關鍵字]`，
@@ -552,3 +552,5 @@ c-126～c-147 那 798 張卡因此卡在線上更新不了。cashbox 那份 24.4
 4. 派工信引用紙本檔時，**檔名要帶 `.gz`**（已壓的那幾份）。
 
 **目前 repo 內最大的單檔是 15.2 MiB**（`billboard-bn-1977-1979-ocr.txt.gz`），離上限還有餘裕。
+
+- 2026-09-18 收尾：`billboard-bn-1985h2-1987-ocr.txt`（10.4 MiB）已壓成 `.txt.gz`（1.6 MiB），本檔內所有引用一併改名。讀法 `zgrep`／`gzip -dc … | grep`。
