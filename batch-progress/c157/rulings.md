@@ -976,3 +976,45 @@ Nightclub 的 MFSL SACD 13 軌、The Calling 的 2003 SACD 多〈Misty〉。**
 （⚠ **Melange 的 600px 那筆是白色宣傳紙套**、Mose Vol.1、**On Tour 只有 225px**、Power of the String）。
 ⚠ **My Lullaby 特別注意：2002 Not Two 原盤的封面在 Discogs／CAA／Apple 三層全查不到，
 只有 2007／2011 再發版藝術。**
+
+## 第 1494 條（主線，**重要；鉤子 a 組查出，新立通則**）：**主線派工詞指定的軸，有七條在 `facts` 裡查不到 src——而且其中四條是主線從研究稿自己的 `notes` 抄出來的**
+
+鉤子 a 組逐條回報主線腦補，**七條全部核實成立**：
+
+| # | 主線指定的軸 | 實際在哪 |
+| ---: | --- | --- |
+| 1 | 東芝 EMI「Club 2001」企劃線（指給《Live at Yoshi's》） | **`c157-a.json` 全檔 grep `Club 2001` 命中 0**；Martino 那張 6 條 facts 與 notes 都沒有 |
+| 2 | 「Mose Allison 與 Blue Note 的長期關係」 | facts 只有目錄號、製作人、場館、登台五十年、翻唱名單 |
+| 3 | 「Bebo 是 Chucho 的父親／古巴鋼琴兩代」 | **只在研究稿 `notes` 的分析欄，且該句無 src** |
+| 4 | Mose Vol.1 的第 44 屆葛萊美提名 | **只在 `notes`**（引 BB-2002-01-19 p94） |
+| 5 | Prysm《On Tour》「九首裡八首取自前兩張」 | **只在 `sound` 與 `hookCandidates`** |
+| 6 | 《The Washington Concerts》母體的「1983 年」 | Discogs 逐字只給 `Elektra Musician 60019`、**沒有年**；1983 只在 hookCandidate 與 yearVerified |
+| 7 | Stefano di Battista 的「Elvin Jones ＝柯川四重奏鼓手／七十二歲」 | **只在 `hookCandidates`** |
+
+**七條全部未寫，代理逐張改用 facts 裡有 src 的東西承載同一個位置。處置完全正確**
+（hook-base.md：「不要為了配合派工詞去寫沒有來源的事——那是編造，比軸線不夠漂亮嚴重得多」）。
+
+### 這條的通則（兩個方向，都要記）
+
+**(甲) 主線自律**：**派工詞指定某條軸之前，先 grep 該組研究稿的 `facts` 欄確認它在裡面、而且有 `src`。**
+第 1、4 兩條是主線讀了**主線自己寫的驗收裁定**（第 1492 條的「Club 2001 串起三張」、
+「6 張碟拿 7 項葛萊美提名」）就派下去——**但那兩條當初是從研究稿的 `notes` 讀來的，主線沒有回頭要求補進 `facts`。**
+**主線的驗收裁定不等於 `facts`。**
+
+**(乙) 研究層自律（已寫進 c158 b 組派工詞）**：**下游的鉤子層只准用 `facts`。
+只寫在 `notes` 或 `hookCandidates` 裡的東西，等於沒寫。**
+本批七條裡**有五條是真的查到了、只是放錯欄位**——**這是純粹的格式損失，不是查證不足。**
+
+⚠ **這是「失敗與正常長得一樣」的又一種**：**研究稿看起來資料很足（notes 寫得滿滿的），
+下游卻一條都用不上**，而 `qa-batch research` 不會亮燈——**它檢查 `facts` 的格式，不檢查 `notes` 裡有沒有埋著該進 facts 的東西。**
+
+## 第 1495 條（主線）：**鉤子 a 組交件數字**
+
+**18 張、key 逐字對齊、標記 0。hook 加權 21.5–34.5（上限 50）、note 原始 315–350（上限 350）。**
+`chk-hook-crossgroup c157` 在 a 組單獨跑時通過；**兩組齊全後要重跑一次。**
+撞陳列三處全部迴避，做法是**正面指派替代軌名**（Rodney Jones 改指〈Ain't No Sunshine〉與〈Soul Eyes〉；
+Chucho 改指 A mi madre／Muñequita linda／Rumba guajira／Bésame mucho／Somewhere over the Rainbow／La negra Tomasa，
+並加一句「曲目段落只寫上列這幾首」）——**比寫「不得寫某某軌」乾淨，且不會踩校對痕跡禁語。列為後批做法。**
+
+兩條指定的反同構軸（「與 Blue Note 的長期關係」給 Mose Vol.1、「古巴鋼琴兩代」給 Bebo）
+**因為缺 src 而全組無人使用**——**配額是上限不是義務**，處置正確（同第 1437 條末段的先例）。
