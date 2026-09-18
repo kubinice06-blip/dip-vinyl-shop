@@ -561,3 +561,414 @@ c-151 b 第 1118 條立的事實：**Blue Note 1994 年新設 `Contemporary Reco
   ——**本棒沒有碰，主線提交時請逐一 `git add`，不要 `git add -A`。**
 - ⚠ **號段**：本批 a 組用 **1140–1164**，**1165–1169 留白給 b 組之外的追記**
   （c-148 用 900–941、c-149 用 960–979＋990–998、c-150 用 1020–1062、c-151 用 1080–1096＋1110–1130），**未撞號。**
+
+---
+---
+
+# c-152 b 組裁定（編號 1170–1187）
+
+本段為 **c-152 b 組**（22 筆）策展層的裁定，編號 **1170–1187**（派工信給的區間是 1170–1199，**1188–1199 未用**）。
+**a 組寫的 1140–1164 一字未動**（本段只在檔尾 append）。
+
+---
+
+## 第 1170 條（c-152 b 交件）：**22 筆 → 收 20、退 2；退掉的兩張都是 1950／1970 年代原盤的復刻，`chk-prop` 一個燈都沒亮**
+
+- **收 20 張、19 位**（`Joe Lovano` 吃兩張，其餘一位一張）：
+  `Prysm —《Prysm》(1995)`、`Charlie Hunter Trio —《Bing, Bing, Bing!》(1995)`、
+  `Big John Patton —《Boogaloo》(1995)`、`Doky Brothers —《Doky Brothers》(1995)`、
+  `T.S. Monk —《The Charm》(1995)`、`Marcus Printup —《Song for the Beautiful Woman》(1995)`、
+  `Mose Allison —《The Earth Wants You》(**1994**)`、`Rachelle Ferrell —《First Instrument》(**1990**)`、
+  `Pieces of a Dream —《Goodbye Manhattan》(1995)`、`Joe Lovano —《Quartets: Live at the Village Vanguard》(**1996**, live)`、
+  `Joe Lovano —《Rush Hour》(1995)`、`Jacky Terrasson —《Jacky Terrasson》(1995, 同名)`、
+  `Javon Jackson —《For One Who Knows》(1995)`、`Don Pullen & The African-Brazilian Connection —《Live...Again (Live at Montreux)》(1995, live)`、
+  `Gonzalo Rubalcaba —《Imagine - Gonzalo Rubalcaba in the USA》(**1996**, 以現場為主)`、`Kurt Elling —《Close Your Eyes》(1995)`、
+  `Bobby McFerrin —《Bang! Zoom》(1995)`、`Donald Byrd —《Kofi》(1995, 庫存首發)`、
+  `Lou Donaldson —《The Scorpion: Live at the Cadillac Club》(1995, live, 庫存首發)`、
+  `Lena Horne —《An Evening With Lena Horne Live at the Supper Club》(1995, live)`。
+- **退 2**（第 1171 條）：Urbie Green《New Faces - New Sounds》、Earl Klugh《Finger Paintings》。
+  **第 315 條：prop 20 ＋ 退表 2 ＝ 22 ✓。**
+- **退貨率 9%**（1985 後各批：c-148 a 9%／c-148 b 18%／c-149 a 4%／c-149 b 32%／c-150 a 13%／c-150 b 18%／
+  c-151 a 13%／c-151 b 18%／c-152 a 17%／**本組 9%**）——**連續五批落在 9–18%，本組是其中最低的一批**，
+  原因是**本組的「1985 前錄音」有四張，三張是庫存首發（收）、只有一張是復刻（退）**（第 1172 條）。
+- **庫存首發 3 張**（Boogaloo／Kofi／The Scorpion，**全部是 1995 年 4 月同一批 Blue Note Rare Groove**）。
+- **現場盤 5 張**（Quartets／Live...Again／The Scorpion／An Evening With Lena Horne，**加上以現場為主的 Imagine**），
+  **MB 標對 3 張**（第 1178 條）。
+- **`releaseType`：20 張全是 Album、合輯 0、走 §5.6 的 0、`exceptionReason` 0。**
+- **`genres`：20 張全部 `['jazz']`**（本段第一次整組單一曲風；`Pieces of a Dream` 與 `Bang! Zoom` 兩張當代爵士的加 `soul` 與否留給寫作層，本層不加，理由寫在卡上）。
+- **CAA**：RG 層**有圖 18 張**、**真 404 2 張**（The Earth Wants You／For One Who Knows，
+  **皆 `redirect: follow` 重試三次確認，三次都是 404 不是 5xx**，第 589a 條）。**圖數最多的是《Quartets》15 圖**（本段至今最多），最少的有七張各 1 圖。
+- **Apple**：`search` us 一種查法命中 **16 張**、**第三種查法（換市場）命中 2 張**（Prysm→fr、Imagine→es）、
+  **三種查法全空 2 張**（Doky Brothers／First Instrument）；**第二種查法（換盤名字串）本組一張都沒用到**。
+- **本層沒有新抓任何 OCR**：本批用的六份紙本（`billboard-bn-1994-1995q1`／`1995q2-q4`／`1996`＋`cashbox-bn-1994`／`1995`／`1996`）
+  **全部是 c-152 a 已入庫的**，**因此沒有動 `SOURCES-billboard-cashbox.md`**。
+- **`node batch-progress/c152/chk-prop.mjs b` 標記 0**（跨批 115 批、4,687 卡、撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0）。
+
+---
+
+## 第 1171 條（同批）：**退表 2 筆，逐筆與理由分類**
+
+| # | 盤 | rgMbid | 目錄號／年 | 退的分類 | 逐張文案（第 782／842 條要求的那一行） |
+|---|---|---|---|---|---|
+| 1 | **Urbie Green —《New Faces - New Sounds》** | `f80d5ae1-d618-477c-9bdd-60df467b45be` | **BN 5036**／1995-11-29 JP **黑膠** | **黑膠復刻再發（東芝 EMI「Blue Note LP Original 5000 Series Again!」，10 吋原盤的 12 吋復刻）** | **原盤是 1954 年的 Blue Note 10 吋 `BLP 5036`**。**Discogs 6451356 的 `format` 欄逐字 `Vinyl, LP, Album, Limited Edition, Reissue, Mono`**、**廠牌欄第二格直接印系列名 `Blue Note LP Original 5000 Series Again!`**、**notes 逐字「The "Blue Note LP Original 5000 Series Collection Again!" series is a follow-up to 1991's "Original 5000 Collection". The series is reissues of 10-inch LPs (BLP 5000 series) in 12-inch LP format. Limited Edition.」**——**與第 1142 條的 `The BN Works 4100 Series` 同一種「廠牌欄印系列名」的形狀，只是換成 5000 系列**。⚠ **掛名也對不上**：MB credit 是裸名 `Urbie Green`，**Discogs 印的是 `The Urbie Green Septet`**。⚠ **池中已有六張同系列同盤名的碟**（`Horace Silver —《New Faces New Sounds》`、`Gil Mellé`、`Kenny Drew`、`Wynton Kelly`、`Julius Watkins`、`Jutta Hipp —《New Faces - New Sounds From Germany》`，全部是 seed ＋ c-135），**但沒有 Urbie Green**——**`chk-prop` 第一道不報，因為折鍵是「掛名｜盤名」、掛名不同**（第 1181 條）。**CAA RG 層 2 圖，來源就是這張 1995 復刻黑膠。Apple 三種查法全空。** |
+| 2 | **Earl Klugh —《Finger Paintings》** | `14eee762-18a5-4075-973c-b65e2d1c8db6` | **CDP 0777 7 48386 2 7**／1995 | **CD 化再發 ＋ 撞池（池中已有同一張）** | **原盤是 1977 年的 Blue Note `BN-LA737-H`**。**Discogs 26466311 與 7457870 的 `format` 欄逐字 `CD, Album, Reissue`**，notes 只寫 1977 年的錄音地點（Kendun Recorders, Burbank；〈Summer Song〉在 Electric Lady；弦樂在 Columbia 30th Street）。⚠ ⚠ **池中已經有 `Earl Klugh —《Finger Paintings》`（seed ＋ c-144 b）**——**這是本段第一張「第一道折鍵就會報」的退件**（本層在進 prop 之前就剔掉，所以 `chk-prop b` 實跑是 0）。**Apple 的 releaseDate 直接寫 `1977-01-01`——店面自己把它標回原盤年**（第 1141 條的第四種抓法在本批再中一次）。**CAA RG 層真 404（三試）。** |
+
+**⚠ 兩張都不是靠盤名看出來的**：**(a) Discogs 的 `format` 欄兩張全中 `Reissue`**；**(b) Discogs 的廠牌欄／notes 寫出母體系列或母體年份**；**(c) Apple 的 `releaseDate` 標回原盤年（Klugh）**。
+
+**交主線的資料庫缺口**（第 1114 條(甲)／第 1141 條的續筆）：
+1. **Blue Note `BLP 5036` — The Urbie Green Septet《New Faces - New Sounds》(1954)**：**池中零張**，**c-135 收了同系列六張、就漏這一張**；若要補，`year` 取 **1954**、`label` 寫 10 吋原盤號，**不要用 1995 年的日本復刻**。
+2. **Blue Note `31880` — Lonnie Smith《Live at Club Mozambique》(1970 錄音／1995 首發，兩張 LP)**：**與本批三張庫存首發同一則廣告、同一批出貨**，**不在 c-152 的清單上**——後批若遇到，**照第 1172 條當庫存首發收、`year` 取 1995**。
+3. **Somethin' Else `TOCJ-5520` — Rachelle Ferrell《Rachelle Ferrell》(1990 日本首發，1995 美版改題《First Instrument》)**：**本批已用第 1173 條收進 prop（`year` 1990）**，但**MB 整個沒建 1990 那一筆**，主線上架時要知道封面與題名有兩版。
+4. **Blue Note `36909` — Doky Brothers《Doky Brothers》的美版（1996）**：**MB 沒建**，只有丹麥版與一筆殘件。
+
+---
+
+## 第 1172 條（同批，**重要；新立**）：**`Blue Note Rare Groove Series`（1995）同時裝著「庫存首發」與「再發」——系列名在這一格不能當快篩，而且紙本自己把兩者分欄印**
+
+第 1142／1163 條立的快篩是：**看到 `The BN Works 4100 Series`（東芝 EMI）直接當再發**。
+**本批出現一個形狀相同、結論相反的系列**：
+
+> **Billboard 1995-04-08 p67 的 Blue Note 整版廣告**逐字分成兩欄：
+> 上欄 **「blue note has gone deep in the vaults to unearth these **unreleased sessions** from the late 60s」**
+> ——**Lonnie Smith《Live at Club Mozambique》31880（TWO LPs）／John Patton《Boogaloo》31878／Donald Byrd《Kofi》31875／Lou Donaldson《The Scorpion》31876**；
+> 下欄 **「other slammin' titles **reissued** for the first time」**
+> ——**Lou Donaldson《Everything I Play Is Funky》／Grant Green《Carryin' On》／Ronnie Foster《Two Headed Freap》／John Patton《Understanding》／Various Artists《The Lost Grooves》（TWO LPs）**。
+
+**也就是說：同一個系列、同一批出貨、同一組製作人（Bob Belden 製作、Michael Cuscuna 與 Tom Evered 掛系列製作），上欄四張是庫存首發、下欄五張是再發。**
+
+- **本批三張庫存首發全部在上欄**（Boogaloo／Kofi／The Scorpion），**三張的 Discogs `format` 欄都是乾淨的 `CD, Album`（無 `Reissue`）**，
+  **《Kofi》的 notes 甚至逐字寫「First issue of these sessions.」**。
+- **下欄的《Understanding》（84306，1968）池中已經有卡**（c-142 a，`year` 1969）——**如果本層把系列名當再發快篩，會把三張首發一起退掉；如果當首發快篩，會把《Understanding》重複建一次。**
+- ⚠ **反向證據要記**：**Discogs 把 1995 年發行的製作人角色標成 `Reissue Producer [Produced For Release]`（《The Scorpion》）／`Producer [Blue Note Rare Groove Series Produced By]`（《Kofi》）**
+  ——**措辭像再發，但同一頁的 notes 與紙本廣告都說是首度發行**；**與第 1146 條那個「Billboard 把 Chet Baker 排在 VITAL REISSUES 欄、正文卻寫 previously unreleased」完全同形**。
+
+**→ 結論（給 c-153 之後）**：
+1. **`The BN Works 4100 Series`／`Blue Note LP Original 5000 Series Again!`＝東芝 EMI 的復刻系列，看到就當再發**（第 1142 條 ＋ 本批第 1171 條第 1 筆）。
+2. **`Blue Note Rare Groove Series`（1995，美國）＝混裝**，**必須逐張讀 Discogs 的 `notes`（有沒有「First issue」）與 1995-04-08 那則廣告的欄位歸屬**。
+3. **判準仍然是第 1146 條那一句**：**「這批錄音先前有沒有以商品形式發行過？」**——**系列名只決定要不要細看，不決定收退。**
+
+---
+
+## 第 1173 條（同批，**重要；新立**）：**第 1146 條的邊界補丁——「先前發行過」但那次發行不在本線任何清單上時，收，`year` 取首發年**
+
+`Rachelle Ferrell —《First Instrument》`：
+
+| | 內容 |
+|---|---|
+| **1990 日本首發** | **Somethin' Else／東芝 EMI `TOCJ-5520`**，題名《Rachelle Ferrell＝ラッシェル・フェレル》，11 軌（Discogs 1916899） |
+| **1995 美版** | Blue Note `CDP 7243 8 27820 2 5`，**改題《First Instrument》**，**曲序逐軌相同**（Discogs 3046920） |
+| **Discogs 美版 notes** | **逐字「Originally released in 1990 on Somethin' Else Records, a division of Toshiba-EMI.」** |
+| **第 1146 條的字面** | 「先前已發行 → 退」 |
+| **本層判定** | **收，`year` 取 1990** |
+
+**理由（三條，缺一不可）**：
+1. **第 1146 條退掉的三張，原盤在管線裡另有身分**：《Step Lightly》＝LT-1082（1980 美國首發）、《Up at "Minton's"》＝池中已有 Volume 1／2、《Togo Brava Suite》＝1971 UA 雙 LP。
+   **本張的 1990 年日本首發盤既不在池中，也不在本線任何一批的清單上**（列舉檔只掃 Blue Note 目錄，Somethin' Else 的自家號不在內）——**退掉等於整張碟從管線消失。**
+2. **Somethin' Else 不是他廠**（第 906／1118／1155 條已定），**所以不能走「原盤他廠 → 收他廠年」那條**，但**也不該因為「1995 年這一版是再版」就把整張碟判掉**。
+3. **簡報 §二「`year` 取實體首發年」在本張沒有任何歧義**：1990 年的實體存在、有完整目錄號、有逐軌相同的曲序。
+
+**→ 判準改寫成兩句（覆蓋第 1146 條的單句版）**：
+> **(甲)「這批錄音先前有沒有以商品形式發行過？」沒有 → 收，`year` ＝ 首次商業發行年。**
+> **(乙) 有 → 再問一句：「先前那次發行在本線的任何清單／池中另有身分嗎？」有 → 退（重複）；沒有 → 收，`year` ＝ 那次首發的年。**
+
+⚠ **本條同時是第 1155 條的第五張**：**Discogs credits 的執行製作 `Hitoshi Namekata` ＋ 母帶 `Yoshio Okazaki` 兩個指紋同時出現**，
+**「先查日本盤日期」這個操作在本張直接把年份推早了五年**——**第 1155 條的操作化在本批得到最強的一次驗證。**
+
+---
+
+## 第 1174 條（同批）：**年份——改判 4 張、維持但留反向證據 1 張、覆核成立 15 張**
+
+| 盤 | 列舉檔／MB 的說法 | 本層取 | 依據 |
+|---|---|---|---|
+| **`Mose Allison —《The Earth Wants You》`** | **MB frd 1995** | **1994** | **Discogs master 1165487 與美／歐兩筆原壓 `year` 欄全 1994** ＋ **Billboard 1994-07-02 p45 Blue Note 整版廣告已列 `MOSE ALLISON 27640`** ＋ **1994-08-20 p74 完整評介** ＋ **1994-03-19 p72 Studio Action 欄「Ben Sidran recently mastered…」**——**母帶、廣告、評介三個時點全在 1994，1995 是 MB 孤證** |
+| **`Rachelle Ferrell —《First Instrument》`** | MB frd 1995-04-04 | **1990** | 第 1173 條（日本 Somethin' Else TOCJ-5520，1990；Discogs 美版 notes 逐字） |
+| **`Joe Lovano —《Quartets: Live at the Village Vanguard》`** | MB frd 1995（唯一 release 標 GB 1995）；Discogs 美歐三筆 1995 | **1996** | **Billboard 1995-12-16 p114（EMI 的 Gary Gersh）逐字「set to arrive in the first quarter of 1996」** ＋ **1996-01-13 p28「The Blue Note release is due Feb. 6.」** ＋ **1996-02-24 p34「celebrating Lovano's new two-CD set」** ＋ **1996-03-09 p75 評介＋同期榜 NEW** ＋ **1995 年兩刊零命中** |
+| **`Gonzalo Rubalcaba —《Imagine - Gonzalo Rubalcaba in the USA》`** | MB frd 1995；Discogs 唯一條目 1995 | **1996** | **同一則 1995-12-16 p114 名單（用暫名「Imagine: Live In America」）** ＋ **1996-02-17 p47 評介** ＋ **1995 年兩刊零命中** |
+| ⚠ **`Bobby McFerrin —《Bang! Zoom》`** | MB frd 1995；Discogs 四筆 1995；Apple `1995-09-18` | **1995（不改）** | **反向證據很重，但只有評介與榜位——依第 1053 條不足以推翻盤面 ℗ 年**（第 1176 條） |
+
+**覆核成立、不改的 15 張**（列出來省得下一批重查）：
+《Prysm》1995（Artalent 原盤；**兩刊零命中**）、《Bing, Bing, Bing!》1995（MB frd 1995-06-20＋盤面 ℗©＋Billboard 廣告 07-01＋榜位 07-15 起）、
+《Boogaloo》1995（**Billboard 1995-04-08 p67 庫存首發廣告**）、《Doky Brothers》1995（丹麥盤面 ℗© 1995 EMI-Medley；美版 1996）、
+《The Charm》1995（MB＋Discogs 四筆＋Billboard 1995-07-01 廣告）、《Song for the Beautiful Woman》1995（**Billboard 1995-07-01 p90 評介＋同期廣告**）、
+《Goodbye Manhattan》1995（**兩刊榜位 1995-03-25／04-08 起＋Cash Box 1995-03-25 評介**）、《Rush Hour》1995（**Billboard 1995-02-25 p82 評介＋同期榜 NEW**）、
+《Jacky Terrasson》1995（**Billboard 1995-02-04 p90 評介＋02-11 起在榜五週**）、《For One Who Knows》1995（**只有 1995-07-01 廣告**）、
+《Live...Again》1995（**Billboard 1995-06-03 p72 評介＋Apple releaseDate 1995-04-12**）、《Close Your Eyes》1995（**1995-03-11 p38「slated for issue any minute now」＋盤面 ℗©＋葛萊美入圍**）、
+《Kofi》1995（**同一則 1995-04-08 廣告**）、《The Scorpion》1995（**同上＋盤面 ©℗ 1995**）、《An Evening With Lena Horne》1995（**Billboard 1995-04-08 榜 NEW＋1996-03-09 葛萊美得獎**）。
+
+⚠ **紙本層完全空白的只有 1 張**（`Prysm`，法國獨立廠原盤）——**比 c-152 a 的五張少很多**，因為本組全部是美國主線新碟。
+⚠ **本組出現第 1147 條的反例**：**《Quiet After the Storm》是 Discogs 整群錯、MB 對；《The Earth Wants You》反過來是 Discogs 對、MB 錯**——**兩張同批相鄰，兩邊都不能當預設。**
+
+---
+
+## 第 1175 條（同批，**重要；新立**）：**廠牌高層在紙本上的「下一季發行名單」是可以推翻盤面 ℗ 年的新片欄——第 1053 條的正面例子**
+
+**Billboard 1995-12-16 p114**（EMI 的 Gary Gersh 專訪）逐字：
+
+> **「Among albums set to arrive in the first quarter of 1996 from Blue Note are tenor saxophonist Joe Lovano's "Live At The Village Vanguard"; Cuban pianist Gonzalo Rubalcaba's "Imagine: Live In America"; acclaimed pianist Jacky Terrasson's second release, "Reach"; and Reeves' "Palo Alto Sessions."」**
+
+**這一句一次定了本組兩張碟的年份（第 1174 條）**，而且**它自己可以被校驗**：
+- **同句提到的 `Jacky Terrasson —《Reach》` 的 Apple releaseDate 是 `1996-02-20`**、**Billboard 1996-03-09 p41 以 NEW 進榜**；
+- **同句提到的 Dianne Reeves《Palo Alto Sessions》確實是 1996 年的碟**。
+→ **這份名單本身對得上，所以它不是「預告會跳票」的那種文案。**
+
+**與第 1053 條的界線寫死**：
+| 紙本材料 | 能不能推翻盤面 ℗ 年／MB frd |
+|---|---|
+| **只有評介週** | **不能**（第 1053 條） |
+| **只有榜位** | **不能**（第 1053 條） |
+| **評介＋榜位** | **不能**（第 1152 條判《Live at Bradley's》時已用過） |
+| **廠牌／高層講死發行季或發行日**（本條） | **能** |
+| **現貨廣告（已上市的目錄）** | **能**（第 1144 條《I Can See Your House From Here》、本批《The Earth Wants You》） |
+
+---
+
+## 第 1176 條（同批）：**`Bobby McFerrin —《Bang! Zoom》` 維持 1995，但這是本組最接近翻盤的一張**
+
+| 方向 | 證據 |
+|---|---|
+| **支持 1995（本層採用）** | MB frd 1995；MB 兩筆 release 標 1995（US 1f771f8b／XE b5095093）；**Discogs 四筆 `year` 欄全 1995**；**Apple releaseDate `1995-09-18`（不是年頭回填、也不是錄音日）** |
+| **反對 1995** | **(a) 1995 年全年兩刊六份逐期查 `31677`／`McFerrin`＋`Bang` 零命中**（1995 年的 McFerrin 命中全部是他的 Sony Classical 指揮碟，如 1995-07-29 p30 的中央公園專題）；**(b) 評介 Billboard 1996-01-20 p77（SPOTLIGHT）**；**(c) 榜位 Billboard 1996-01-27 以 NEW 進榜、Cash Box 1996-02-03 進榜**；**(d) MB 另有一筆 US release 日期 `1996-01-09`** |
+
+**判 1995。理由**：
+1. **第 1053 條**：反對方只有評介與榜位、**沒有新片欄也沒有廠牌預告**——**與同組《Quartets》《Imagine》的決定性差別就在這裡**（第 1175 條）；
+2. **Apple 的 `1995-09-18` 是本組唯一一個「看起來是真發行日」的 Apple 值**，與 Discogs 四筆一致；
+3. **可逆**（第 858／1049 條）：改的是 manifest 欄位，**後批若在 1995 年 9–12 月的 Blue Note 廣告裡找到 31677，或找到 1996 年 1 月的新片欄，兩個方向的改回成本都很低。**
+
+⚠ **給 c-153 之後**：**1995 年底至 1996 年初上市的碟，Billboard 的評介與榜位可能整整落後三到四個月**（本張與《Quartets》都是），
+**判年份時要主動去翻「前一年 12 月的展望文」**，那一篇往往比評介準。
+
+---
+
+## 第 1177 條（同批）：**掛名——沿用 8、收攏 2、新字串 9、聯名新造 0、新造分裂 0**
+
+### （一）沿用池中既有字串 8（共 9 張卡）
+
+`Mose Allison`（c-149 a＋c-150 a 共 2 張）、**`Joe Lovano`（c-150 b＋c-151 a×2＋c-152 a 共 4 張，本組吃兩張）**、
+`Javon Jackson`（c-151 b 1 張）、`Don Pullen & The African-Brazilian Connection`（c-150 b 1 張）、
+`Gonzalo Rubalcaba`（c-150／c-151／c-152 a 共 6 張）、`Bobby McFerrin`（c-148 a 1 張，另有 `Bobby McFerrin & Chick Corea` 並存）、
+`Donald Byrd`（seed＋c-137～c-145 共 21 張）、`Lou Donaldson`（seed＋c-136～c-145 共 22 張以上）。
+
+### （二）收攏 2——**兩次都是把 MB 的變體收回池中的既有字串，方向相反**
+
+| MB artist-credit | 卡上掛名 | 收攏的理由 |
+|---|---|---|
+| **`John Patton`（裸名）** | **`Big John Patton`** | **既有分裂取多數**（第 583／1116 條）：池中 `Big John Patton` **8 列** ＞ `John Patton` 1 列（seed《Along Came John》）；**Apple 的 artistName 逐字也是「Big John Patton」**。**這是這組分裂吃到的第九張卡**，c-139／c-140／c-141／c-142 四批都用同一條理由。 |
+| **`T.S. Monk III`**（release 層寫 `TS Monk III` 無點；**Discogs 掛 `Thelonious Monk Jr.`**） | **`T.S. Monk`** | 第 307 條：池中 c-151 a／b 兩張同字串；**MB artist 實體本來就是 `T.S. Monk`（2682818f，disambiguation「drummer, son of Thelonious Monk」）**；**Apple 也用 `T.S. Monk`**。⚠ **Discogs 的 `Thelonious Monk Jr.` 會在字串比對上直接撞上池中父親的 22 列**，上架比對必須帶 catno 89575。 |
+
+### （三）新字串 9（池中皆 0 列，漢字／羅馬字／片假名三形都掃過）
+
+`Prysm`（MB 94afe824 Group FR）、`Charlie Hunter Trio`（87c0023c Group）、`Doky Brothers`（efd090d4 Group）、
+`Marcus Printup`（1dc4b2f8）、`Rachelle Ferrell`（58ef4b35；**片假名 `ラッシェル・フェレル` 也掃過**）、
+`Pieces of a Dream`（e958e595 Group US）、`Jacky Terrasson`（be3142ae）、`Kurt Elling`（4d39b9be）、`Lena Horne`（0031bc7a）
+——**九位在 MB 同名頁都只回一個實體，沒有同名異人**（`Prysm` 的同名是 2020 年代的流行單曲藝人、不在 MB 上）。
+
+### （四）**聯名新造 0、新造分裂 0**；**三個要留給後批的字串懸案**
+
+1. **`Charlie Hunter Trio` vs `Charlie Hunter` vs `Charlie Hunter Quartet`**：**本張四層一致用 Trio**（MB／Discogs／Apple／Billboard 榜列），
+   **但他後來的碟用另外兩形**——**後批遇到不要回頭把本張改成裸名**（第 1117 條兩形並存）。
+2. **`Doky Brothers` vs `The Doky Brothers`**：**Billboard 1996-07-27 廣告印帶冠詞形、其餘全部無冠詞**——**取無冠詞形**。
+3. **`Pieces of a Dream` 的 `of` 大小寫**：**Discogs 與兩刊榜列印 `Of`、MB 與 Apple 印 `of`**——**取 MB 形**。
+
+⚠ **本組沒有出現 c-152 a 第 1149 條那種「漢字 vs 羅馬字」的問題**（本組沒有日本藝人的領班碟）。
+
+---
+
+## 第 1178 條（同批）：**現場盤 5 張，MB 標對 3——漏標的兩張裡有一張盤名就寫著 Live**
+
+| 盤 | MB secondary-types | 列舉檔 `live` | 判定依據 | 本層判定 |
+|---|---|---|---|---|
+| `Joe Lovano —《Quartets: Live at the Village Vanguard》` | **['Live'] ✓** | **true ✓** | Billboard 1996-01-13 p28 逐字記兩場的時間與班底 | live |
+| `Lou Donaldson —《The Scorpion: Live at the Cadillac Club》` | **['Live'] ✓** | **true ✓** | Discogs notes「Recorded live at The Cadillac Club, Newark, New Jersey on November 7, 1970.」 | live |
+| `Lena Horne —《An Evening With Lena Horne Live at the Supper Club》` | **['Live'] ✓** | **true ✓** | Discogs notes「Recorded live at The Supper Club, New York City on September 19, 1994.」 | live |
+| **`Don Pullen & The ABC —《Live...Again (Live at Montreux)》`** | **空 ✗** | **false ✗** | **Discogs notes「Recorded live at the Montreux Jazz Festival… on July 13, 1993.」＋Apple collectionName「Live...Again (Live At Montreux Jazz Festival / 1993)」＋盤名本身帶兩次 Live** | **live** |
+| **`Gonzalo Rubalcaba —《Imagine…》`** | **空 ✗** | **false ✗** | **Billboard 1996-02-17 p47「His first American performances in 1993-94 resulted in these solo, trio, and quartet tracks」＋Discogs companies `Recorded At: Alice Tully Hall／Wadsworth Hall`** | **以現場為主、混有 Capitol Studios 素材——`live` 不寫死** |
+
+⚠ **第 1151 條的結論在本批再證**：**盤名有 Live 而 MB 沒標時，一定是 MB 錯**（Pullen 那張盤名裡有兩個 Live）。
+⚠ **本批新增一種形狀**：**《Imagine》是「現場素材為主、但錄音室素材混在同一張裡」**——**這種碟不要硬標 live／非 live，寫進 risk 讓寫作層處理**。
+⚠ **Apple 的 collectionName 把現場資訊寫進標題**（第 1151 條在 jp 市場發現的那條）**本批在 us 市場出現兩次**（Pullen 帶「/ 1993」、The Scorpion 帶「/1970」）——**這條第二意見不限 jp 市場。**
+
+---
+
+## 第 1179 條（同批）：**`Blue Note Contemporary` 吃第三、第四張；第 1154 條的榜位規律四度成立**
+
+| 卡 | 批 | Discogs 廠牌欄 | MB label-info | 上哪張榜 |
+|---|---|---|---|---|
+| Everette Harp《Common Ground》 | c-151 b | `Blue Note Contemporary` | — | 只上 CONTEMPORARY |
+| Richard Elliot《After Dark》 | c-152 a | `Blue Note Contemporary` | **誤掛 Blue Note** | 只上 CONTEMPORARY |
+| **Pieces of a Dream《Goodbye Manhattan》** | **c-152 b** | **`Blue Note Contemporary`（四筆全中）** | **誤掛 Blue Note** | **只上 CONTEMPORARY（Billboard 1995-03-25 NEW 8）／Cash Box TOP 25 JAZZ（1995-04-08 DEBUT 7）** |
+| **Bobby McFerrin《Bang! Zoom》** | **c-152 b** | **`Blue Note Contemporary`（美版與俱樂部版）** | **US 那筆自己標對了、XE 那筆誤掛 Blue Note** | **只上 CONTEMPORARY（1996-01-27 NEW）／Cash Box（1996-02-03）** |
+
+→ **四張 4/4 成立**（第 879／1154 條）：**`Blue Note Contemporary` 的碟只會出現在當代爵士榜上，不會上 TOP JAZZ ALBUMS。**
+⚠ **本批新發現**：**同一張碟的廠牌欄在 MB 內部就會不一致**（《Bang! Zoom》的 US release 標子廠牌、XE release 標 Blue Note）
+——**第 1161 條之 3 要補一句：不是「MB 一律誤掛」，是「MB 逐 release 各標各的」。**
+
+---
+
+## 第 1180 條（同批）：**撞陳列——同曲同名 2 件（都要逐軌核）、側人線 3 條、同曲不同錄音 14 組、母帶重疊 0**
+
+### （一）**同曲名撞池中卡名 2 件——這是本批最需要逐軌核的兩張**
+
+1. **`Don Pullen & The ABC —《Live...Again》` 第 4 軌〈Kele Mou Bana〉←→ 池中 `Don Pullen & The ABC —《Kele Mou Bana》`（c-150 b，1991 錄音室專輯）**
+   ——**同掛名、軌名＝池中卡的盤名**。**逐軌比過**：本張五軌（Yebino Spring／Ah George, We Hardly Knew Ya／Capoeira／Kele Mou Bana／Aseeko!）是 **1993-07-13 蒙特勒現場**，
+   c-150 b 那張是 1991 年紐約錄音室——**同曲不同錄音（第 1049 條），兩卡各算一張、risk 互指。**
+2. **`Lou Donaldson —《The Scorpion》` 第 3 軌〈Alligator Boogaloo〉←→ 池中 `Lou Donaldson —《Alligator Bogaloo》`（seed，1967-04-07 錄音室原盤）**
+   ——**同掛名、軌名≈池中卡的盤名（差一個 o）**。**逐軌比過**：本張是 1970-11-07 現場、班底完全不同（原盤是 Melvin Lastie／Lonnie Smith／George Benson／Leo Morris）——**收，兩卡 risk 互指。**
+
+### （二）**側人線 3 條**（本批的密度比 c-152 a 高）
+
+| 側人 | 在本批哪張當側人 | 池中／同批的領班卡 |
+|---|---|---|
+| **Joe Lovano ＋ John Scofield** | **`Mose Allison —《The Earth Wants You》`**（Billboard 1994-08-20 評介逐字列名） | Lovano：本組《Quartets》《Rush Hour》＋c-150 b／c-151 a／c-152 a 共 4 張；Scofield：**c-152 a《I Can See Your House From Here》** |
+| **Jacky Terrasson ＋ Fareed Haque** | **`Javon Jackson —《For One Who Knows》`**（Discogs 5337489 credits） | Terrasson：**本組同批領班卡**；Haque：**c-152 a《Sacred Addiction》** |
+| **Frank Foster** | **`Donald Byrd —《Kofi》`**（吹次中音；第 5 軌曲名〈The Loud Minority〉就是他自己樂團的名字） | **c-141 b《Manhattan Fever》**（Frank Foster 唯一的 Blue Note 領班盤） |
+
+→ **三條線共七張卡的 risk 互指，正文一律不得把側人身分寫成聯名。**
+
+### （三）**同曲不同錄音 14 組**（第 1049 條，全部逐軌核過，**收，risk 互指**）
+
+〈Summertime〉（`Doky Brothers` 第 2 軌 ←→ **c-152 a《The Master II》第 1 軌與《Extra Special Edition》第 11 軌**，三卡互指）、
+〈My Funny Valentine〉〈Bye Bye Blackbird〉（`First Instrument` ←→ `Jacky Terrasson`，**同批兩張互指**，另 ←→ 池中 Chet Baker 多張）、
+〈Reflections〉〈Crepuscule With Nellie〉〈Bolivar Blues〉（`Quartets`／`Rush Hour`／`The Charm` ←→ 池中 `Thelonious Monk` 22 列，**並與 c-152 a《Four in One》《Tenor Legacy》同一串**）、
+〈Prelude To A Kiss〉〈Chelsea Bridge〉〈Mood Indigo〉〈Something To Live For〉〈Do Nothing 'Til You Hear From Me〉（`Rush Hour`／`An Evening With Lena Horne` ←→ 池中 `Duke Ellington` 17 張）、
+〈Peggy's Blue Skylight〉（`Rush Hour` ←→ 池中 Mingus 多張）、〈Lonnie's Lament〉〈26-2〉〈Dahomey Dance〉（`Quartets`／`Song for the Beautiful Woman` ←→ 池中 Coltrane 多張）、
+〈Woody'n You〉（`Imagine` ←→ 池中 Gillespie／Bud Powell 相關卡，**並與 c-152 a《Diz》同源不同場**）、〈Imagine〉（`Imagine` ←→ 池中 `John Lennon —《Imagine》`）、
+〈Come As You Are〉（`Bing, Bing, Bing!` ←→ 池中 `Nirvana —《Nevermind》`）、〈Selim〉（`Bang! Zoom` ←→ 池中 Miles Davis 多張）、
+〈Etcetera〉（`For One Who Knows` ←→ **池中 `Wayne Shorter —《Etcetera》`：同名曲撞同名專輯**）、〈Teen Town〉（`Doky Brothers` ←→ 池中 Weather Report）、
+〈The Lady Is A Tramp〉〈Just One Of Those Things〉（`An Evening With Lena Horne` ←→ 池中 Sinatra／Ella 多張）、
+〈Close Your Eyes〉〈Never Never Land〉〈Wait Till You See Her〉（`Close Your Eyes` ←→ 池中多張標準曲碟）。
+
+### （四）**盤名撞字串但不是同一張碟 4 組**（逐軌核過後並存）
+
+- `Joe Lovano —《Quartets: Live at the Village Vanguard》` ←→ **池中十張以上的「Village Vanguard」現場盤**（Rollins／Bill Evans／Coltrane／Elvin Jones／Thad Jones & Mel Lewis／Dexter Gordon／The Great Jazz Trio／Joe Henderson c-148 b／The Benny Green Trio c-151 a／**大西順子 c-152 a**）——**同場地不同錄音。**
+- `Don Pullen —《Live...Again (Live at Montreux)》` ←→ 池中五張「Live at Montreux」（Bobby Hutcherson／Marlena Shaw／Ronnie Foster／Bobbi Humphrey／Keith Jarrett 三重奏）＋**c-150 a `Gonzalo Rubalcaba —《At Montreux》`**——**同音樂節不同年。**
+- `Pieces of a Dream —《Goodbye Manhattan》` ←→ 池中 `McCoy Tyner & Bobby Hutcherson —《Manhattan Moods》`（c-152 a）／`Frank Foster —《Manhattan Fever》`（c-141 b）——**盤名共用一個地名，毫無關係。**
+- `Lena Horne —《An Evening With…》`（**Discogs 六筆只印 `An Evening With`**）←→ 池中任何「An Evening With …」——**上架比對要帶 catno 31877。**
+
+---
+
+## 第 1181 條（同批）：**`chk-prop` 的盲區——第六種形狀：「清單上的碟的軌名 ＝ 池中卡的盤名」**
+
+- **第一道（線上池 artist|album 折鍵）**：**兩張退卡都不報**。**《Finger Paintings》其實會報**（池中 seed 有同掛名同盤名），
+  **但它在進 prop 前就被本層剔掉**——**與第 1157 條記的情形相同：退掉的碟不在 prop 裡，四道檢查都掃不到它。**
+  **《New Faces - New Sounds》則是真的不報**：池中六張同盤名的碟**掛名全部不同**（Horace Silver／Gil Mellé／Kenny Drew／Wynton Kelly／Julius Watkins／Jutta Hipp）。
+- **第四道（同掛名盤名詞元包含，第 936／1130 條）**：**本批報 0 筆**，**但本層人工抓到兩件它抓不到的**（第 1180 條(一)）：
+  **《Live...Again》的軌名〈Kele Mou Bana〉＝池中卡的盤名**、**《The Scorpion》的軌名〈Alligator Boogaloo〉≈池中卡的盤名《Alligator Bogaloo》**。
+  → **這是第 611／1089／1143 條之後的第六種盲區：「軌名撞盤名」**——**第四道只比盤名對盤名，比不到軌目。**
+- **處置（給 c-153 之後）**：**遇到同掛名的碟，除了比盤名，還要把清單上那張的軌目拿去比一次池中同掛名卡的盤名**
+  ——**本批兩件都是這樣抓出來的，而且兩件都是「同一位藝人把自己的舊曲在現場再錄一次」**（1990 年代中期這種盤特別多，派工信已提示）。
+- **本批 `chk-prop b` 的實際輸出**：`20 張、19 位｜標記 0`；跨批 115 批、4,687 卡、**撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0**。
+
+---
+
+## 第 1182 條（同批）：**店面與封面——Apple 一種查法就中 16 張（本段最高），CAA 2 缺**
+
+**Apple（第 254 條，只寫觀察不寫結論）**：
+- **第一種查法（`artist + album`，us）命中 16 張**：Bing, Bing, Bing!／Boogaloo／The Charm／Song for the Beautiful Woman／The Earth Wants You／Goodbye Manhattan／Quartets／Rush Hour／Jacky Terrasson／For One Who Knows／Live...Again／Close Your Eyes／Bang!Zoom／Kofi／The Scorpion／An Evening With Lena Horne。
+- **第二種查法（換盤名字串，us）本組零次用到。**
+- **第三種查法（換市場）命中 2 張**：**`Prysm jazz` fr → 1366316419（12 軌，releaseDate `1998-06-15` ＝ Blue Note 再發日，不是 1995 原盤）**、
+  **`Gonzalo Rubalcaba Imagine` es → 724006642（7 軌＝原盤形，releaseDate `1994-01-01`）**。
+- **三種查法全空 2 張**：**`Doky Brothers`**（us 0 筆；`Niels Lan Doky` dk 回的全是他的個人碟）、**`First Instrument`**（us 回的是 2002 年的《Live In Montreux (1991-97)》）。
+- ⚠ **`releaseDate` 的錯法本批四種全出現**：**＝錄音日**（An Evening With Lena Horne `1994-09-19`）、
+  **＝年頭回填**（Bing, Bing, Bing!／Boogaloo／The Charm／Quartets／Rush Hour／Close Your Eyes 等多張 `-01-01`）、
+  **＝錯一年或錯幾年**（Song for the Beautiful Woman 標 1994、Goodbye Manhattan 標 1994、Jacky Terrasson 標 1994、Imagine 標 1994、**Kofi 標 `1971-01-01` ＝ 錄音年代**）、
+  **＝再發日**（Prysm `1998-06-15`）。
+- ⚠ **候選給錯碟本批兩次**：**Marcus Printup**（同頁混入 `Riza Printup` 的 2016 單曲與 1998 年的《Hub Songs》）、**Prysm**（us 全是 2020 年代的同名流行單曲）。
+- ⚠ **artistName 與卡上掛名不同的 3 張**：**Boogaloo ＝「Big John Patton」（與本卡同 ✓）**、**The Charm ＝「T.S. Monk」（與本卡同 ✓）**、
+  **Live...Again ＝「Don Pullen」（樂團名被塞進 collectionName）**。
+
+**CAA**：
+- **RG 層有圖 18 張**，**其中 15 張的來源是原盤 release** ✓；**3 張不是首發盤**：
+  **《Bang! Zoom》來自 XE 歐版 b5095093**、**《Quartets》來自 MB 唯一那筆（標 GB）**、**《First Instrument》來自 1995 美版 23856e41（而首發是 1990 日本盤）**——**三張的封面版式都要另核。**
+- **真 404 2 張**：`The Earth Wants You`／`For One Who Knows`，**皆 `redirect: follow` 重試三次、三次都是 404**（第 589a 條）；**退件《Finger Paintings》同樣是真 404。**
+- **圖數**：最多 **《Quartets》15 圖**（本段至今最多）與《First Instrument》7 圖、《Close Your Eyes》《Bang! Zoom》各 6 圖；**最少 1 圖有七張**（Prysm／Bing, Bing, Bing!／Boogaloo／Goodbye Manhattan／Imagine／The Scorpion／An Evening With Lena Horne）。
+
+---
+
+## 第 1183 條（同批）：**MB 在 1995 這一格的資料品質——第 1161 條記的七種本批中了五種，另加一種新的**
+
+| # | 問題 | 本批實例 |
+|---|---|---|
+| 1 | **只建一個國別的 release、其他地區整個沒建** | **《For One Who Knows》只有荷蘭版（美版存在，Discogs 11286463）**；**《Quartets》只有 GB 版（美版 Discogs 8272715）**；**《First Instrument》只有 1995 美版（1990 日本首發沒建）**；**《Doky Brothers》只有丹麥版（美版 Blue Note 36909 沒建）**。**四張。** |
+| 2 | **label-info 缺目錄號** | **《Jacky Terrasson》的 XE 版 33e6c863、《Prysm》的 1998 Blue Note 版 581518ef、《An Evening With Lena Horne》的 93e3d1bc 三筆都只有廠牌名、沒有 catalog-number。** |
+| 3 | **label-info 掛錯廠牌** | **《Bang! Zoom》的 XE 版 b5095093 掛 Blue Note，實際是 `Blue Note Contemporary`**（**但同一個 RG 的 US 版 1f771f8b 標對了**，第 1179 條）。 |
+| 4 | **catno 鍵入錯** | **《Close Your Eyes》寫成 `CDP 7243 8 30645 26`（末兩位黏在一起，Discogs 五筆皆 `… 2 6`）**；**《The Charm》寫成 `CDP 0777 7 89575 3 2`（Discogs 四筆皆 `… 2 2`）**。**兩張。** |
+| 5 | **殘件 release（無日期／無國別／無廠牌／媒體欄是 None×N）** | **《Doky Brothers》的 38d06062（`Nonex10`，而且題名多一個「1」）**、**《Kofi》的 02a27e50（`Nonex5`）**、**《An Evening With Lena Horne》的 37f20b29（無日期、status 空）**。**三張。** |
+| 6 | **現場盤漏標 `secondary-types: ['Live']`，列舉檔的 `live` 旗標跟著錯** | **《Live...Again》與《Imagine》兩張**（第 1178 條）。 |
+| 7 | **（新）同一個 RG 底下 release 的題名不一致** | **《An Evening With Lena Horne…》**：d131a735 用 RG 題名、**93e3d1bc 題名寫成「Live At The Supper Club 1994」**、37f20b29 寫「Live at the Supper Club」——**三筆三個題名**；**《Doky Brothers》**：c2966a0c 用 RG 題名、**38d06062 寫「Doky Brothers 1」**。**這與第 1161 條之 4（credit 不一致）是同一類問題的另一個欄位。** |
+
+⚠ **本批沒有出現的**：第 936 條「同一張碟建成兩個 RG」、第 817 條「建出不存在的版本」、第 1161 條之 6「同一 RG 混兩個廠牌」。
+⚠ **本批 MB 唯一一次比 Discogs 準**：**《Quiet After the Storm》那種情形沒有重演**；**反而是《The Earth Wants You》MB 錯、Discogs 對**（第 1174 條）。
+
+---
+
+## 第 1184 條（同批）：**盤名——改判 0、兩形以上並列 6**
+
+| 盤 | 兩形 | 取哪一形、為什麼 |
+|---|---|---|
+| `Don Pullen —《Live...Again (Live at Montreux)》` | `Live...Again`（MB）vs `Live ... Again`（Discogs 六筆）vs `Live...Again (Live At  Montreux Jazz Festival / 1993)`（Apple） | **取 MB RG 形**（第 1162 條）。 |
+| `Lou Donaldson —《The Scorpion: Live at the Cadillac Club》` | 冒號形（MB RG）vs 括號形（MB release 層／Discogs）vs `…(Live At the Cadillac Club/1970)`（Apple） | **取 MB RG 形。** |
+| `Lena Horne —《An Evening With Lena Horne Live at the Supper Club》` | RG 形 vs **`An Evening With`（Discogs 六筆，封面只有這三個字）** vs `Live At The Supper Club 1994`（MB 另一筆 release）vs Apple 的破折號形 | **取 MB RG 形**；**Discogs 的短形會撞任何「An Evening With …」。** |
+| `Bobby McFerrin —《Bang! Zoom》` | `Bang! Zoom`（MB）vs `Bang!Zoom`（Discogs 四筆／Apple／盤面） | **取 MB 形**（**⚠ 本張是四層裡 MB 少數派**，但依第 1162 條一律以 MB RG 為準，無空格形進 queryAlias）。 |
+| `Doky Brothers —《Doky Brothers》` | `Doky Brothers`（RG／Discogs）vs **`Doky Brothers 1`（MB 殘件 release）** | **取 RG 形**；**那個「1」是 MB 自己加的序號**（兄弟倆 1997 年另有《Doky Brothers 2》）。 |
+| `Marcus Printup —《Song for the Beautiful Woman》` | MB／Apple 小寫 vs Discogs 全大寫 | **取 MB 形。** |
+
+**本批沒有任何一張盤名被改判**；**`Prysm` 的 Discogs 消歧義編號 `Prysm (2)` 不進盤名也不進掛名。**
+
+---
+
+## 第 1185 條（同批）：**兩刊在本批挖到的一手材料（寫作層用）——共九則**
+
+1. **Billboard 1995-04-08 p67**（Blue Note Rare Groove 整版廣告）：**「blue note has gone deep in the vaults to unearth these unreleased sessions from the late 60s」**
+   ——上欄 Lonnie Smith《Live at Club Mozambique》31880（TWO LPs）／John Patton《Boogaloo》31878／Donald Byrd《Kofi》31875／Lou Donaldson《The Scorpion》31876；
+   下欄「other slammin' titles reissued for the first time」列 Lou Donaldson《Everything I Play Is Funky》／Grant Green《Carryin' On》／Ronnie Foster《Two Headed Freap》／John Patton《Understanding》／V.A.《The Lost Grooves》。
+2. **Billboard 1995-07-01 p52**（Blue Note 目錄部門專題，行銷副總 **Tom Evered**）：**「Over the last year, Blue Note has brought some of its finest material back into print via two newly created lines: the Connoisseur Series, which skews heavily toward classic hard bop, and Rare Groove, which reinstated tasty soul jazz by such artists as Big John Patton, Lonnie Smith, Grant Green and Lou Donaldson.」**
+   Evered 逐字：**「The Rare Groove stuff has given a lot of young people exposure to these great jazz groups that were slighted at the time. These guys were castigated [during the '60s] by the straight-ahead jazz press, and they're finally getting the credit they deserve.」**
+   同頁並預告 1995 年 7 月第三批 Connoisseur（Hubbard／Donaldson／Wayne Shorter／Dizzy Reece／Andrew Hill／Walter Davis Jr.）、10 月第四批、**11 月另一批 Rare Groove**。
+3. **Billboard 1995-12-16 p114**（EMI 的 **Gary Gersh** 專訪）：**「Rachelle is going to be a massive artist」**；Cassandra Wilson《Blue Light 'Til Dawn》**在榜 71 週**；
+   把 Holly Cole（Metro Blue）與 **Charlie Hunter** 點名為「roster members with large commercial potential」；**1996 年第一季名單**（第 1175 條）；
+   並提到一個企劃：**「taking some of the classic Blue Note tracks, 10 or 11 of them, and giving them to some of the premier remixers in hip-hop. We're calling it 'The Next Step.'」**
+4. **Billboard 1996-01-13 p28**（Jazz Blue Notes 欄）：Down Beat 票選 Lovano 為 **1995 年度爵士藝人**、《Rush Hour》為 **年度專輯**；
+   **「The Blue Note release is due Feb. 6.」**；並逐字記《Quartets》兩場的時間與班底（1994 年 3 月 Tom Harrell 四重奏、**「almost a year later」**的 Mulgrew Miller／Christian McBride／Lewis Nash）。
+5. **Billboard 1996-01-13 p71／1996-03-09 p97**（葛萊美）：**Best Jazz Vocal Performance 入圍五張**——Dee Dee Bridgewater《Love And Peace》、**Kurt Elling《Close Your Eyes》（本組）**、
+   **Lena Horne《An Evening With Lena Horne》（本組）**、Abbey Lincoln《A Turtle's Dream》、**Dianne Reeves《Quiet After The Storm》（c-152 a）**；
+   **得獎的是 Lena Horne**。**同屆 Best Large Jazz Ensemble 入圍的有 Lovano《Rush Hour》（本組），得獎的是 GRP All-Star Big Band。**
+6. **Billboard 1995-02-25 p82**（《Rush Hour》評介）：**「much-anticipated date with composer/conductor/arranger Gunther Schuller, who is a veteran of many 'serious-music-meets-jazz' collaborations」**。
+7. **Billboard 1995-05-06 p89**（Don Pullen 訃聞整頁，1995-04-22 過世）：記他與 George Adams 的樂團、**〈Ah, George, We Hardly Knew Ya〉是寫給 Adams 的「bittersweet tribute」**、
+   他自創指法的說法（**「It was the only method by which I could play what I was hearing.」**）、以及 David Murray 1989 年《Shakill's Warrior》裡他的管風琴。
+8. **Cash Box 1995-03-25 p15**（《Goodbye Manhattan》評介）：點名 James Lloyd／Curtis Harmon／Ron Kerber，**標題曲的人聲是 Eva Cassidy**。
+9. **Billboard 1995-03-11 p38**（Kurt Elling）：**「local singer favorite Kurt Elling, one of the toasts of this year's JazzTimes convention and a newly recorded Blue Note artist. His 'Close Your Eyes' is slated for issue any minute now.」**
+   ＋ **1995-01-21 p8**：Blue Note 的「artist roster of young vocalists」逐字列 Cassandra Wilson、Bobby McFerrin、Holly Cole、**Lena Horne**、**新簽的 Kurt Elling**。
+
+---
+
+## 第 1186 條（同批）：**給 c-153 之後的八條操作結論**
+
+1. **收退的判準改成兩句（第 1173 條覆蓋第 1146 條的單句版）**：**沒發行過 → 收，`year` ＝ 首發年；發行過 → 再問「先前那次在本線另有身分嗎」，有 → 退，沒有 → 收、`year` 取那次的年。**
+2. **`Blue Note Rare Groove Series`（1995）是混裝系列**，**不能當快篩**；**東芝 EMI 的 `BN Works 4100`／`Original 5000 Series Again!` 才是「看到就退」的系列**（第 1172 條）。
+3. **紙本的「下一季發行名單」可以推翻盤面 ℗ 年，評介＋榜位不行**（第 1175／1176 條）——**1995 年底至 1996 年初的碟，先去翻前一年 12 月的展望文。**
+4. **`chk-prop` 的第六種盲區：清單上那張的軌名 ＝ 池中卡的盤名**（第 1181 條）——**同掛名的碟要拿軌目比一次池中盤名。**
+5. **`Blue Note Contemporary` 的廠牌欄在 MB 是逐 release 各標各的**，**不是一律誤掛**（第 1179 條）；**榜位規律 4/4 成立。**
+6. **Somethin' Else 的指紋（`Hitoshi Namekata`／`Yoshio Okazaki`）出現時，日本盤日期可能比美版早好幾年、不只幾個月**（第 1173 條：本批早五年）。
+7. **Apple 的 `releaseDate` 在庫存首發盤上會標回錄音年代**（《Kofi》標 1971）——**這個錯法在這一段會越來越常見，不要拿它當年份依據。**
+8. **MB 同一個 RG 底下的 release 題名也會不一致**（第 1183 條之 7）——**盤名一律以 RG title 為準，release 層的題名只進 queryAlias。**
+
+---
+
+## 第 1187 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案**
+
+- **交件**：`batch-progress/c152/prop-b.json`，**20 張 19 位**（`Joe Lovano` 吃兩張），
+  `node batch-progress/c152/chk-prop.mjs b` **標記 0**（跨批 115 批、4,687 卡、撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0）。
+  **MBID 已逐筆核對：每一筆 `mbNote` 裡的第一個 UUID 都等於 slice 的 `rgMbid`，20 個互不重複、全部落在 slice 的 `g: "b"` 集合裡**（程式比對過）。
+  **列舉檔的 rgMbid 沒有一筆釘錯。**
+  **欄位與 `batch-progress/c141/prop-b.json` 逐欄一致**（15 欄，含 `g`），程式比對過，無缺欄無多欄。
+- **第 315 條**：**prop 20 ＋ rulings 退表 2 ＝ 22 ＝ slice 的 `g: "b"` 筆數 ✓。**
+- **中間檔**：scratchpad 的 `c152b/`（`mb.json` 22 筆 MB 原始回應、`mbsum.txt`、`poolrows.json` 24,511 列、`dg.json` Discogs 快取、
+  `store.json` CAA／Apple、`ap2.mjs` 第二輪 Apple、`caa2.mjs` 404 覆驗、`mb.py`／`sum.py`／`pool.py`／`look.py`／`dg.py`／`run_dg.py`／`rel.py`／`s2.py`／`s3.py`／`g.py`／`w.py`／`store.mjs`、`p1.py`–`p4.py` 交件分段）。
+  **紙本 OCR 直接讀 c-152 a 的 `bb.txt`／`bb95.txt`／`bb96.txt`／`cb.txt`／`cb95.txt`／`cb96.txt`，本層沒有重抓。**
+  **沒有放 repo 根目錄**（第 533 條）。
+- **本棒改動的檔案**：`batch-progress/c152/prop-b.json`（新建，20 張）、**`batch-progress/c152/rulings.md`（append 第 1170–1187 條，a 組寫的 1140–1164 一字未動）**。
+  **`batch-progress/enum/` 底下一個檔都沒有動**（沒有新抓 OCR，因此也沒有 append `SOURCES-billboard-cashbox.md`）。
+- **沒有碰 git、沒有碰 `PROJECT_MEMORY.md`／`seed_cards.json`／`apex_pool.json`／KV／Firestore，也沒有碰 `prop-a.json` 與 c-151 的任何檔案。**
+- ⚠ **收工前重掃 `git status --short`**：另有**別的工作階段未提交的變更**（`desc-tools/batches/hooks/c148-hooks-a.json`、`desc-tools/batches/research/c150-a.json` 等）
+  ——**本棒沒有碰，主線提交時請逐一 `git add`，不要 `git add -A`。**
+- ⚠ **號段**：本批 b 組用 **1170–1187**，**1188–1199 留白**（a 組 1140–1164、1165–1169 亦未用），**未撞號。**
