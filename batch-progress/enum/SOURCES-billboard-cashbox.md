@@ -627,3 +627,53 @@ c-150 b 用的是它自己那 23 個目錄號 ＋ 57 個詞；**本節這兩份�
    同一張碟在 1990-11-24 p92 讀對——**單期 OCR 掉字元，不是紙本誤植**（第 998 條三種形變之外的第四種）。
 
 - 2026-09-18 主線裁定：1991–92 有**兩套獨立掃檔**（c-150 b 的 `*-bn-1991-1992-ocr.txt.gz` 與 c-150 a 的 `*-bn-1991-1992q1-ocr.txt.gz`，關鍵字表不同、期別互有增減）。**兩套都留**，查不到先換另一套再說「紙本沒有」（第 704 條）。a 組那兩份原為未壓縮 .txt，已一併 `gzip -9`。
+
+---
+
+## 2026-09-18：**c-151 a 補上 1992–1993 兩刊（Billboard 103 期、Cash Box 101 期）**
+
+| 檔 | 刊 | 覆蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1992-1993-ocr.txt.gz`（4.3 MiB 壓縮／9.6 MiB 原文） | **Billboard** | **1992-01-04 → 1993-12-25，103 期的命中頁（1,019 頁）** | c-151 a 掃；**1992 年 52 期全有**，**1993 年缺 `BB-1993-01-02`**（年初合刊週） |
+| `cashbox-bn-1992-1993-ocr.txt.gz`（1.9 MiB） | **Cash Box** | **1992-01-18 → 1993-12-31，101 期的命中頁（300 頁）** | c-151 a 掃；缺 `CB-1992-01-04／01-11／1993-01-02／01-09`（**四則全是年初合刊週**），另**多一期 `CB-1993-12-31`（週五不是週六）** |
+
+**格式**：每期以 `######## <basename> pages=N` 分隔（basename 即 PDF 檔名去副檔名，例如 `Billboard-1992-05-02`／`BB-1993-06-05`／`CB-1993-07-24`），
+頁內以 `===== PAGE n ===== hits=[…]` 分隔（`hits` 是該頁命中的關鍵詞清單，**grep 命中詞即可定位到頁**），
+換行已摺成空白（第 636 條），末尾一行 `######## MISSING <日期清單>`。**存的是命中頁不是全文**（第 879 條）。
+**關鍵字集**＝c-151 a 組的 23 個目錄號 ＋ 53 個盤名／人名／欄名詞（含 `blue note`／`top jazz albums`／`contemporary jazz`／`bruce lundvall`）
+——**查別的碟要重抓或放寬關鍵字。**
+
+**讀法**：`gzip -dc batch-progress/enum/billboard-bn-1992-1993-ocr.txt.gz | grep -n "…"`，或 `zgrep`／`zless`；Cash Box 那份是純文字可直接 grep。
+**依 2026-09-18 定下的規則，Billboard 那份（9.6 MiB > 8 MiB）直接寫成 `.txt.gz`，沒有留過 `.txt`；Cash Box 那份 1.9 MiB 保留 `.txt`。**
+
+### ⚠ c-151 a 的四點實測（**其中第 1 點推翻了前四批「備援沒用上」的結論**）
+
+1. ⚠⚠ **檔名形在 1992 與 1993 之間換了一次，而且同一年之內沒有混用**：
+   - **1992 全年 52 期都是 `Billboard-YYYY-MM-DD.pdf`**（`BB-1992-01-04.pdf` 直接回 **404**）；
+   - **1993 全年 51 期都是 `BB-YYYY-MM-DD.pdf`**（`Billboard-1993-01-09.pdf` 回 **404**；
+     1993 目錄裡唯一的 `Billboard-` 檔是年鑑 `Billboard-1993-International-Recording-Directory.pdf`，不是週刊）；
+   - **Cash Box 兩年都是 `CB-YYYY-MM-DD.pdf`**。
+   → **第 705／797／821 條的檔名備援不能省。**c-148 a／c-149 a（1985–89）與 c-150 b（1991–92）都結論「備援沒用上」，
+   **那個結論到 1992–93 就失效了**——**1992 與 1993 各用一種形。**
+2. ⚠ **最可靠的抓法（建議後批一律照辦）**：
+   **先 `curl -sSL "https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm"`
+   （與 `.../Cash-Box-Magazine.htm`）把索引頁抓下來，直接從 HTML 裡 grep 出當年的 `.pdf` 相對路徑清單，不要自己按週六日期拼檔名。**
+   ⚠ **目錄列表（`.../Billboard/90s/1992/`）回 403**；⚠ **`Billboard-Magazine.htm` 不加 `-L` 會回 301**（舊路徑 `/Billboard-Magazine.htm` 轉到 `/Archive-All-Music/…`）。
+   路徑：Billboard `Billboard/90s/<年>/`、Cash Box `Cash-Box/90s/<年>/`。
+3. ⚠ **第 879 條在 1992–93 續成立**：兩刊各有 **TOP JAZZ ALBUMS** 與 **TOP CONTEMPORARY JAZZ ALBUMS** 兩張榜。
+   **c-151 a 的二十張收件裡上榜的十張全部上 Jazz 榜、沒有一張上 Contemporary Jazz 榜**
+   （1992–93 的 Contemporary 榜被 Fourplay／Miles Davis《Doo-Bop》／Al Jarreau／Spyro Gyra／Najee 這類佔滿）。**查不到不要只查一張榜。**
+4. ⚠ **OCR 形變：第 998 條的三種全中，另加第四種**。
+   (a) **字母數字互讀**：`98170` 讀成 `96170`／`9817O`；(b) **空格被吃掉**：`98636 2` 讀成 `986362`；
+   (c) **紙本自己誤植**；**(d) 新增——`Jazz` 被讀成 `Jall`／`JAll`（本段最普遍，`grep "TOP JAZZ ALBUMS"` 會漏掉一半的榜頁，
+   要一併 grep `TOP JAll ALBUMS`），`Blue Note` 被讀成 `SLUE NOTE`／`Blue Nolo`。**
+   ⚠ **五位數目錄號在 1990 年代撞「單曲號」的機率比撞郵遞區號還高**（第 968 條的 1990 年代版）：
+   c-151 a 的四處假陽性——`80902`＝Quantum Leap 錄影帶商品號、`98636`＝Simply Red〈Stars〉的 `4-98636`、
+   `98635`＝College Boyz 的 Virgin 單曲號、`80054`＝Todd Rundgren 錄影帶的 `72333-80054-3`。**命中後一定要看上下文是不是爵士榜／新片欄。**
+
+⚠ **1992 年有兩份重疊**：本節的 `*-bn-1992-1993-*` 與 c-150 b 的 `*-bn-1991-1992-*`
+——**關鍵字集不同、命中頁也不同**，**合併時先比對命中頁清單再決定留哪一份，不要直接刪掉其中一份**（同第 910 條對 1987 那一年的處理）。
+
+**到此合計覆蓋：Billboard 1955→1993，Cash Box 1960-11→1993。**
+
+- 2026-09-18 收尾：`cashbox-bn-1992-1993-ocr.txt` 亦已 `gzip -9`（0.8 MiB），本檔引用同步改名。**1992 全年是 `Billboard-YYYY-MM-DD.pdf`、1993 全年是 `BB-YYYY-MM-DD.pdf`，兩年換一次形**（c-151 a 實測，推翻前四批「1987 年起一律 Billboard- 形」的結論）。
