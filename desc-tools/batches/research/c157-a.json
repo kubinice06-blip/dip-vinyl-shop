@@ -542,5 +542,275 @@
   "status": "full",
   "yearVerified": "**卡單 2001 成立，本層未改判；街頭日有一天的出入，要寫清楚。** (1) **同期紙本（發行公告）**：**Billboard 2001-09-01 p42 逐字「Soul Manifesto (Blue Note, **Aug. 28**)」**。 (2) **MB first-release-date `2001-08-27`（到日）**，唯一一筆 release 的 `date` 欄同值。 (3) **店面**：**Apple `724454921` 的 releaseDate 逐字 `2001-08-27`＝真日期（不是年初佔位日）**，℗ 欄逐字「A Blue Note Records Release; ℗ 2001 UMG Recordings, Inc.」。 ⚠ ⚠ **(1) 與 (2)(3) 差一天**：**紙本寫 8 月 28 日（星期二，美國唱片業的標準上架日）、MB 與 Apple 寫 8 月 27 日（星期一）**——**兩說並陳，正文寫「2001 年 8 月下旬」最安全；若要寫日，寫紙本的 8 月 28 日並註明另有 8 月 27 日一說。** (4) **Discogs 原壓群**：**歐版 `3076778`／美版宣傳 `12689136`／BMG 俱樂部版 `14798062`／美版零售 `16222277` 四筆的 `year` 欄全是 2001**，**三筆的 notes 逐字把錄音寫成 2001 年 1 月**——**錄音與發行同年。** (5) **更早的旁證**：**Billboard 2001-05-12 p20 的錄音室照片說明把本碟寫成「an upcoming disc」**——**五月時還沒出，與 8 月底的街頭日一致。**",
   "notes": "**覆核策展層：rgMbid `2743228b`／只建一筆 release／掛名 `Rodney Jones`／年份 2001／9 軌 全部成立。**｜⚠ ⚠ **本棒推翻第 1453 條對本張的描述**：**策展層寫「編制要靠兩個來源拼起來——Discogs `16222277` 只有三個人，Maceo Parker／Arthur Blythe／Lonnie Plaxico 出自 Billboard 本文」。****實際上 Discogs 歐版 `3076778`、美版宣傳 `12689136`、BMG 版 `14798062` 三筆的 credit 欄就有完整六人、而且帶軌號**——**策展層只核了 9 軌那一筆（`16222277`），那一筆確實只有三個人。****這是第 1281 條（credit 空白只代表那一版的條目空白，換版再查）在本線的第 N 次應驗。****寫作層可以直接寫六人、可以寫軌號，紙本只是第二層旁證。**｜⚠ ⚠ **軌數兩種切分**：**12 軌版（歐版與兩張俱樂部／宣傳版，三段 Interlude 各算一軌）vs 9 軌版（美版零售、MB、Apple，過場併進主軌）**——**卡單取 9 軌成立**，**但正文若提到「三段過場曲」要知道它們在歐版上是獨立軌。**｜⚠ ⚠ **軌名撞卡名，本棒新查到一處撞 apex 王牌（策展層沒記）**：**第 2 軌〈Soul Makossa〉＝ seed `Manu Dibango —《Soul Makossa》`(1973)**，**該卡的欄位逐字帶 `hall`——是王牌卡**（另撞 seed `Lafayette Afro Rock Band —《Soul Makossa》`(1973)）。**本張這一軌就是在翻 Dibango 那首，同曲不同碟。****上架比對、封面選擇與試聽一律帶掛名 `Rodney Jones` 與 catno `30499`，不得共用 Dibango 那張的任何資產。**⚠ **另兩處**：**第 5 軌〈Roll Call (Interlude)〉＝ seed `Hank Mobley —《Roll Call》`(1960)**；**第 10 軌〈Soul Eyes〉＝ `Kandace Springs —《Soul Eyes》`**——⚠ **那張還在 `blue-note-unknown-genre.json` 的 `jazz-missing` 名單裡、沒有接進任何批次，一旦接線就會撞**（策展層第 1448(B) 條已記，本棒覆核成立）。｜⚠ ⚠ **同批人員交叉**：**`Lonnie Plaxico` 是同組《Melange》的領班**（兩卡 risk 互指）；**`Idris Muhammad` 同時在同組《Kindred》（第 1、8 軌）與 b 組《Flights of Fancy》（第一組三重奏）**——**本批三張碟共用他。**｜⚠ **載體**：**MB 一筆與 Discogs 四筆全是 CD**——**本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 重探 RG 層與 release 層都是真 404。替代來源：Discogs 美版宣傳 `12689136`，共 4 圖，`images[0]` 是 `primary`、600×597**（次選 BMG 俱樂部版 `14798062` primary 600×564、美版零售 `16222277` primary 600×513；**歐版 `3076778` 的 primary 只有 477×462，不用**）。⚠ **不要自己下載，只登記來源。**｜⚠ **店面誤配**：**同一次 `search` 回的 `1438361343` 是 2003 年 Savant 的《Soul Manifesto: Live!》**，**不是本碟**——**上架比對要帶年份與廠牌。**"
+ },
+ {
+  "key": "desc2:Kurt Elling|Flirting With Twilight",
+  "artist": "Kurt Elling",
+  "album": "Flirting With Twilight",
+  "facts": [
+   {
+    "f": "release-group `5ca1ffd2-5199-3fce-be32-68f214788683`：title「Flirting With Twilight」、artist-credit `Kurt Elling`（`4d39b9be` Person，disambiguation「jazz singer」）、**first-release-date 2001-09-06（到日）**、Album、secondary-types 空，genres／tags `jazz`＋`vocal jazz`。**轄下兩筆 release，同一個 barcode、不同軌數**：**`66450b10`（2001 US，CD **11 軌**，Blue Note，label-info 無目錄號，barcode 724353111328）**與 **`f1ae3c21`（2001-09-06 **DE**，CD **13 軌**，Blue Note，⚠ catno 是裸數字 `31113`，同一個 barcode 724353111328）**——**第 1454 條的「同 barcode、不同軌數」在本張成立。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5ca1ffd2-5199-3fce-be32-68f214788683&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ ⚠ **實際上是三種內容物，而且 MB 的美版 11 軌是少算的**：**Discogs 美版零售 `16983741` 的 tracklist 列到第 12 軌〈While You Are Mine〉（3:53），其中第 8、9 軌被併成一個 `Medley`**；**歐版 `4406102` 是 13 軌，notes 逐字「Track 13 is a bonus track not on the LP version.」——第 13 軌是〈Je Tire Ma Reverence〉**；**Apple 的條目是 12 軌（美版 11 軌 ＋〈While You Are Mine〉，沒有〈Je Tire Ma Reverence〉）。**→ **11／12／13 三種算法都存在，卡單取 11 軌是 MB 美版那一筆的值。**",
+    "src": "https://api.discogs.com/releases/16983741"
+   },
+   {
+    "f": "⚠ ⚠ **歐版 notes 的那句話本身是一條載體線索**：**「Track 13 is a bonus track **not on the LP version**」**——**盤面自己提到有 LP 版**；⚠ **但本棒在 Discogs 與 MB 上都沒有查到這張碟的黑膠條目**（MB 兩筆都是 CD，Discogs 三筆 `4406102`／`16983741`／`34802981` 也都是 CD）——**線索與實體條目對不上，正文不得寫黑膠，只能記下這句 notes。**",
+    "src": "https://api.discogs.com/releases/4406102"
+   },
+   {
+    "f": "⚠ ⚠ **編制：第 1453 條「完全查不到」的第二個樣本，本棒覆核成立**：**Discogs 三筆（歐版 `4406102`／美版零售 `16983741`／美版再壓 `34802981`）的 `extraartists` 欄與 `tracklist[].extraartists` 欄**（第 1367 條要求先讀逐軌欄）**全部是空的**；**MB 兩個端點也沒有任何 relationship**；**Apple 只有曲目。**→ **正文一律不得列班底**（他的固定鋼琴手 Laurence Hobgood 的參與在任何一層都沒有可引用的來源）。",
+    "src": "https://api.discogs.com/releases/16983741"
+   },
+   {
+    "f": "**紙本兩層**：**(1) 榜位**——**Billboard 2001-09-15 p90 的 `Top Jazz Albums` 命中，廠牌欄逐字「KURT ELLING [Due Note 31113/Capitol」（⚠ `Due Note` 是 OCR 把 `Blue Note` 吃掉）、盤名欄逐字「Flirting With Twilight」**；**2001-09-29 p90 同一張榜再度命中（hits 標記含 `31113`）。** **(2) 獎項**——**Billboard 2002-01-19 p94 的 44 屆葛萊美提名，最佳爵士人聲專輯逐字列出「Flirting With Twilight, Kurt Elling (Blue Note Records)」**；**2002-02-02 p57 又逐字把 Elling 列進「best instrumental arrangement accompanying vocalist」的提名者。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-09-15.pdf"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `1532088878`（Kurt Elling《Flirting With Twilight》，**12 軌、12 軌全有 previewUrl**，℗ 欄逐字「A Blue Note Records Release; ℗ 2001 Capitol Records, LLC」，releaseDate `2001-01-01` 是年初佔位日）。**`lookup?id=1532088878&entity=song` 的 12 首＝美版 11 首 ＋〈While You Are Mine〉**——⚠ **比 MB 的美版多一軌、比歐版少一軌〈Je Tire Ma Reverence〉，第三種軌數。****CAA release-group 層重探回 200**，封面不缺。",
+    "src": "https://itunes.apple.com/lookup?id=1532088878&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "這是本批三張同時入圍第四十四屆葛萊美最佳爵士人聲專輯的碟之一——另外兩張是 Mose Allison 的倫敦現場上集與 Dianne Reeves 的《The Calling》，三張都掛 Blue Note",
+   "同一張碟有三種軌數：美版十一軌、歐版十三軌、串流上是十二軌；歐版內頁還寫著第十三軌是黑膠版沒有的追加曲"
+  ],
+  "sound": "十一軌（歐版十三軌、串流版十二軌），2001 年 9 月上市的人聲爵士盤，曲目是一整套黃昏與夜色主題的美國歌本：Glenn Miller 的〈Moonlight Serenade〉開場，接〈Detour Ahead〉〈You Don't Know What Love Is〉〈Not While I'm Around〉〈Easy Living〉、Count Basie 樂團的〈Lil' Darlin'〉、〈I Get Along Without You Very Well〉〈Blame It on My Youth〉〈I'm Thru with Love〉，收在〈Say It〉；歐版另加〈While You Are Mine〉與法語的〈Je tire ma révérence〉。⚠ 編制無法寫：Discogs 三筆壓片的 credit 欄與逐軌欄全空、MB 兩個端點沒有任何 relationship、Apple 只有曲目，任何一層都查不到伴奏的名字。本張入圍第四十四屆葛萊美最佳爵士人聲專輯。",
+  "keyTracks": [
+   "Moonlight Serenade",
+   "Lil' Darlin'",
+   "Easy Living",
+   "Blame It on My Youth"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判。** (1) **MB first-release-date `2001-09-06`（到日）**——**日期來自德版 `f1ae3c21`，美版 `66450b10` 只有年。** (2) **同期紙本（榜位）**：**Billboard 2001-09-15 p90 的 `Top Jazz Albums` 已見本碟（廠牌欄逐字 `31113/Capitol`）**，**2001-09-29 p90 再度命中**——**回推首度上榜週在 9 月上旬，與 9 月 6 日的日期吻合。** (3) **Discogs 原壓群**：**歐版 `4406102` 與美版零售 `16983741` 的 `year` 欄都是 2001**（⚠ **第三筆 `34802981` 是 `CD, Album, Repress`、`year` 欄是 0、無日期——再壓片，不採**）。 (4) **店面**：**Apple `1532088878` 的 ℗ 欄逐字「A Blue Note Records Release; ℗ 2001 Capitol Records, LLC」**（⚠ releaseDate `2001-01-01` 是年初佔位日，不採；⚠ ℗ 主體是 Capitol 不是 Blue Note，第 1451 條）。 (5) **獎項旁證**：**2002 年 1 月的 44 屆葛萊美提名把本碟歸在 2001 年度**。",
+  "notes": "**覆核策展層：rgMbid `5ca1ffd2`／兩筆 release 同 barcode 不同軌數／掛名 `Kurt Elling`／年份 2001／「編制完全查不到」 全部成立。**｜⚠ ⚠ **軌數本棒改寫成「三種算法」**：**MB 美版 11 軌／MB 德版 13 軌／Discogs 美版零售 `16983741` 列到第 12 軌（第 8、9 軌併成 `Medley`）／Apple 12 軌（美版 11 ＋〈While You Are Mine〉）／Discogs 歐版 13 軌（多〈Je Tire Ma Reverence〉）**——**卡單取 11 軌是 MB 美版的值，成立**，**但正文與上架比對要知道有 12 與 13 軌兩種版本。**｜⚠ ⚠ **編制「完全查不到」本棒依第 1367 條重查過**：**不只 `extraartists` 欄空，`tracklist[].extraartists` 欄也是空的**（**這是本線第一次把「逐軌欄也空」寫實**）——**判定成立，正文一律不得列班底，包括 Laurence Hobgood。**｜⚠ **載體的一條懸案**：**歐版 notes 逐字「not on the LP version」暗示有黑膠版，但 MB 兩筆與 Discogs 三筆全是 CD**——**線索與條目對不上，正文不得寫黑膠。**｜⚠ **軌名撞卡名（本棒重掃）**：**第 1 軌〈Moonlight Serenade〉＝ seed `Simone —《Moonlight Serenade》`(2004)**；**第 6 軌〈Easy Living〉＝ c-148 的 `Ike Quebec —《Easy Living》`(1987)**——**兩處都是同名不同碟。****上架比對帶掛名與 catno `31113`。**｜⚠ ⚠ **同批交叉**：**(a) b 組 `Charlie Hunter Quartet —《Songs From the Analog Playground》`：Elling 是那張第 6、9 軌的客座歌手，而且第 6 軌〈Desert Way〉的作曲欄有他的名字**——**本批兩張碟、同一個人，兩卡 risk 必須互指。** **(b) 那張的第 9 軌〈Close Your Eyes〉正是池中 `Kurt Elling —《Close Your Eyes》`(c-152 b) 的卡名**（第 1482(B) 條已記）。 **(c) 44 屆葛萊美最佳爵士人聲專輯的五個提名裡有三個是本批的碟**（本張、a 組 Mose Vol. 1、b 組 The Calling）——**三卡 risk 可互指。**｜⚠ **(戊) 前置閘**：**MB 兩筆的 label 都是 Blue Note 本體、Discogs 三筆的廠牌欄第一格也是 Blue Note**，**只有 Apple 的 ℗ 主體是 Capitol**——**過閘。**｜**封面不缺**：CAA RG 層重探 200；⚠ **備援用 Discogs 美版零售 `16983741`（9 圖，`images[0]` 是 primary 600×593）**；**歐版 `4406102` 的 primary 只有 500×500、`34802981` 的 `images[0]` 是 secondary，兩者都不用。**"
+ },
+ {
+  "key": "desc2:Don Byron|You Are #6",
+  "artist": "Don Byron",
+  "album": "You Are #6",
+  "facts": [
+   {
+    "f": "release-group `223c608e-a58e-3290-a09b-22a7bae07ae3`：title「You Are #6」、artist-credit `Don Byron`（`7478f0d5` Person，**與同組《A Fine Line》同一個實體**）、first-release-date **2001**（只有年）、Album、secondary-types 空，genres／tags `contemporary jazz`＋`jazz`。**轄下兩筆 release**：**`63cec088`（2001 US，CD **12 軌**，Blue Note，⚠ catno 是裸數字 `32231`，barcode 724353223120）**與 ⚠ **`da3da53e`（幽靈 release：無日期、無國別、無廠牌、media format 為 `null`，12 軌）**——第 1454 條的「幽靈 release」，**不要拿它推任何欄位。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=223c608e-a58e-3290-a09b-22a7bae07ae3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**完整目錄號、街頭日與錄音室只有 Discogs 有**：**美版零售 `1227037` 的 catno 逐字 `Blue Note 7243 5 32231 2 0`、barcode 逐字「7 243-5-32231-2 0」、`released` 欄逐字 `2001-10-23`**，notes 逐字「**Recorded at Allaire Studios, Shokan, NY and Sear Sound, NYC.**」——**兩間錄音室，一間在紐約上州的 Shokan、一間在曼哈頓。**盤名全稱逐字是「You Are #6 : More Music For Six Musicians」。",
+    "src": "https://api.discogs.com/releases/1227037"
+   },
+   {
+    "f": "⚠ ⚠ **「標題裡的人數」不是編制**（第 1181 條，策展層第 1453 條點名要擋的第三處，本棒覆核成立並補齊細節）：**副標逐字寫 `More Music For Six Musicians`，但 `1227037` 的 credit 欄有十四個掛名**——**沒有軌號限制的只有六個：Don Byron（單簧管／低音單簧管／製作）、Edsel Gomez（鋼琴）、James Zollar（小號／富魯格號）、Leo Traversa（貝斯兼人聲）、Milton Cardona（康加／打擊／人聲）、Ben Wittman（鼓／打擊）**；**其餘八個全帶軌號**：Bob DeBellis（中音／次中音／長笛 3、4、6、8）、David Gilmore（吉他 3、7、8、12）、Ralph Alessi（小號 3、7、8、12）、Curtis Fowlkes（長號 4、8）、Joshua Roseman（長號 3、12）、Johnny Almendra（打擊 1、4、6、8）、Mauro Refosco（打擊 3、7、12）、Julie Patton（人聲 4、6、12）。",
+    "src": "https://api.discogs.com/releases/1227037"
+   },
+   {
+    "f": "⚠ ⚠ **三位只出現在 `tracklist[].extraartists` 的人**（第 1367 條）：**第 3 軌〈Klang〉掛 `J.D. Parran — Flute, Alto Flute` 與 `Hector Martignon — Keyboards`**；**第 6 軌〈Dub-Ya〉掛 `Gwen Snyder — Vocals`**；⚠ ⚠ **第 8 軌〈Shake 'Em Up〉掛 `Don Byron, Sr. — Bass`——那是 Byron 的父親**；**第 12 軌〈Belmondo's Lip (DJ Spooky Mix)〉掛 `DJ Spooky — Remix`。****這五筆在 `extraartists` 主欄裡一個都沒有。**",
+    "src": "https://api.discogs.com/releases/1227037"
+   },
+   {
+    "f": "⚠ **紙本零命中**：**`billboard-bn-2001-ocr.txt.gz` 查 `You Are #6` 與 `Six Musicians` 都回 0 頁**——**本張沒有紙本層**（與同組《A Fine Line》相反：那張有 2000 年的逐字街頭日）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-10-27.pdf"
+   },
+   {
+    "f": "⚠ ⚠ **試聽本棒查到，軌數與版式逐軌核過**：**Apple `search` us／gb 各回兩筆，其中 `724931465` 的條目名逐字是全稱「You Are #6 - More Music For Six Musicians」，12 軌，℗ 逐字「℗ 2001 Blue Note Records」，releaseDate `2001-01-01` 是年初佔位日**；**`lookup?id=724931465&entity=song` 回 12 首、12 首全有 previewUrl，軌名與 Discogs 零售盤逐軌相符**（含末軌的 DJ Spooky 混音版）。⚠ **jp 市場的掛名顯示為片假名「ドン・バイロン」**，**那是店面在地化不是另一個掛名。**⚠ **同一次查詢還回了 `1799270999`《You Are Here》(NOJO feat. Don Byron, 1998)**——**不是本碟。**",
+    "src": "https://itunes.apple.com/lookup?id=724931465&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "第八軌〈Shake 'Em Up〉的貝斯手叫 Don Byron, Sr.——是他父親，整張碟只出現在這一首的逐軌欄裡",
+   "副標寫著「More Music for Six Musicians」，實際掛名卻有十四個人：只有六個沒有軌號限制，其餘八個各自只上三到四軌"
+  ],
+  "sound": "十二軌，在紐約上州 Shokan 的 Allaire Studios 與曼哈頓的 Sear Sound 兩間錄音室完成，2001 年 10 月 23 日上架。副標叫「More Music for Six Musicians」，但實際掛名有十四人：不帶軌號的六人是 Don Byron 的單簧管與低音單簧管、Edsel Gomez 的鋼琴、James Zollar 的小號與富魯格號、Leo Traversa 的貝斯、Milton Cardona 的康加與打擊、Ben Wittman 的鼓；其餘八人逐軌進出——Bob DeBellis 的木管、David Gilmore 的吉他、Ralph Alessi 的小號、Curtis Fowlkes 與 Joshua Roseman 的長號、Johnny Almendra 與 Mauro Refosco 的打擊、Julie Patton 的人聲。逐軌欄裡另有三位只上一軌的人：第 3 軌的 J.D. Parran 與 Hector Martignon、第 6 軌的 Gwen Snyder，以及第 8 軌貝斯手 Don Byron, Sr.。曲目從 Henry Mancini 的〈Theme from Hatari〉開場，中間穿插兩段不到兩分半的同名小品，末軌是 DJ Spooky 替〈Belmondo's Lip〉做的混音。",
+  "keyTracks": [
+   "Theme From Hatari",
+   "Shake 'Em Up",
+   "Dark Room",
+   "Belmondo's Lip"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判——但本張沒有紙本層，年份靠三層。** (1) **Discogs 原壓群（第 531 條，本張的主層）**：**美版零售 `1227037` 的 `released` 欄逐字 `2001-10-23`**（**完整目錄號 `7243 5 32231 2 0` 也只有這一筆有**）；**歐版 `11934177` 的 `year` 欄 2001。** (2) **MB first-release-date 2001**（實體 release `63cec088` 只有年；幽靈 release `da3da53e` 無日期、不採）。 (3) **店面**：**Apple `724931465` 的 ℗ 欄逐字「℗ 2001 Blue Note Records」**（⚠ releaseDate `2001-01-01` 是年初佔位日，不採）。 ⚠ **(4) 紙本零命中**：**`billboard-bn-2001-ocr.txt.gz` 查 `You Are #6`／`Six Musicians` 皆 0 頁**——**與同組《A Fine Line》形成對照：同一位藝人、同一家廠牌，2000 年那張有逐字街頭日，2001 年這張連一行都沒有。** ⚠ **錄音年未見於任何一層**（Discogs 只寫錄音室、沒寫日期）——**正文不得推測錄音年。**",
+  "notes": "**覆核策展層：rgMbid `223c608e`／兩筆 release（其中 `da3da53e` 是幽靈 release）／掛名 `Don Byron`（與同組《A Fine Line》同一字串，不新造分裂）／年份 2001／12 軌 全部成立。**｜⚠ ⚠ **編制：第 1453 條要擋的第三處，本棒覆核成立並補齊**——**副標的「六人」是標題不是編制**；**十四個掛名裡只有六個不帶軌號**；⚠ ⚠ **而且還有三筆只在 `tracklist[].extraartists` 裡（第 1367 條）：J.D. Parran 與 Hector Martignon（第 3 軌）、Gwen Snyder（第 6 軌）、Don Byron, Sr.（第 8 軌貝斯）、DJ Spooky（第 12 軌混音）**——**策展層的「八個人帶軌號」漏了這一層。**｜⚠ **盤名兩形**：**MB RG 短形 `You Are #6`／Discogs 與 Apple 全稱 `You Are #6 : More Music For Six Musicians`（歐版寫成括號形 `You Are #6 (More Music For Six Musicians)`）**——**照 MB RG 立卡，全稱進 `queryAlias`；上架比對要帶全稱，因為短形的 `#6` 很容易在店面撞字串。**｜⚠ **軌名撞卡名（本棒重掃）**：**12 軌對 25215 列卡池真命中 0**（〈Theme From Hatari〉〈Klang〉〈Dark Room〉〈Belmondo's Lip〉掃池皆 0）。｜⚠ ⚠ **同批交叉**：**(a) 同組 `Don Byron —《A Fine Line》`(2000)：同一位藝人、同一家廠牌、相隔一年的兩張碟，逐軌比完零重疊**（那張的〈Basquiat〉撞的是 c-156 a 的《Romance with the Unseen》，不是本張）——**兩卡 risk 互指，正文不得互抄班底：那張是「單簧管＋鋼琴＋人聲」的室內編制，本張是十四人的拉丁大編制。** **(b) `David Gilmore` 同時是 b 組 `Renee Rosnes —《Life on Earth》` 第 1 軌的原聲吉他手**——**兩卡 risk 可互指。**｜⚠ **載體**：**MB 兩筆（其一 format 為 null）與 Discogs 兩筆都是 CD**——**本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 依第 1283 條重探：RG 層 404、兩筆 release（`63cec088`／`da3da53e`）的 `/front` 也全是 404——真 404。替代來源：Discogs 美版零售 `1227037`，共 2 圖，`images[0]` 是 `primary`、600×600**（**歐版 `11934177` 的 primary 只有 300×300，不用**）。⚠ **不要自己下載，只登記來源。**｜⚠ **店面誤配**：**同一次 `search` 回的 `1799270999`《You Are Here》(NOJO feat. Don Byron, 1998) 不是本碟**；**jp 市場的片假名掛名是在地化，不得回頭改 `artist`。**"
+ },
+ {
+  "key": "desc2:Bebo Valdés Trio con Cachao y Patato|El arte del sabor",
+  "artist": "Bebo Valdés Trio con Cachao y Patato",
+  "album": "El arte del sabor",
+  "facts": [
+   {
+    "f": "release-group `cfb73cd9-2228-303f-be53-999a8ab1260e`：title「El arte del sabor」、⚠ **artist-credit 是三個實體串接：`Bebo Valdés Trio`（`85e261e8` **Group**）＋ `Cachao`（`d6060786` Person）＋ `Patato`（`8292b39d` Person）**、first-release-date **2001**（只有年）、Album、secondary-types 空，genres／tags `jazz`＋`latin`。**轄下只有一筆 release `bbab0b6c`**（2001 US，CD **17 軌**，**label-info 兩格：`Blue Note`（catno 裸數字 `5351932`）＋ `Lola Records`（catno 欄空）**，barcode 724353519322）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cfb73cd9-2228-303f-be53-999a8ab1260e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**場次與地點逐字，兩筆條目一致**：**Discogs 美版 `11353790`（Lola Records (3) `7243 5 35193 2 2`）與歐版 `5076442`（`Lola Records (3)` ＋ `Blue Note` 兩格、同目錄號）的 notes 都逐字寫「**Recorded and mixed at Current Sounds studios in New York, March 13-16, 2000**」**——**2000 年 3 月的四天，在紐約錄音與混音；發行則在 2001 年 10 月，差一年七個月。**歐版 notes 另逐字寫「Issued in standard jewel case, transparent tray, with a 16-page booklet.」",
+    "src": "https://api.discogs.com/releases/11353790"
+   },
+   {
+    "f": "⚠ **編制是三人 ＋ 一位全程客座，不是「三人＋客座」而已**：**兩筆條目的 credit 欄逐字四個演奏者——`Bebo Valdés — Piano`／`Israel \"Cachao\" López — Arco Bass`（⚠ **是拉弓的低音提琴，不是撥弦**）／`Carlos \"Patato\" Valdes — Congas, Percussion`／**`Paquito D'Rivera — Clarinet, Saxophone`****——四個人都沒有軌號限制。**製作 Nat Chediak，執行製作 Julio Marti，錄音 Katherine Miller，母帶 Todd Gerard。",
+    "src": "https://api.discogs.com/releases/5076442"
+   },
+   {
+    "f": "⚠ ⚠ **本棒推翻策展層第 1448(A)#6 條的一半：《El arte del sabor》的十七軌裡沒有〈Tres lindas cubanas〉**。**逐軌核過的曲目是**：Lamento Cubano／Son de la Loma／El Marañón／Bolero Potpurrí／Priquitín Pin Pon／Negro de Sociedad／Buche y Pluma \"Na Má\"／El Reloj de Pastora／Conga Potpourrí／Agguere（Apple 作 Ogguere）／Pare Cochero／Cumbachero（Apple 作 Cumbanchero）／Si Llegó a Besarte／Guaracha Popurri／Romance en la Habana／Route 66／Adiós Panamá / Para Vigo Me Voy。**→ 那一軌只在 `Chucho Valdés —《Solo Live in New York》` 第 10 軌與池中 seed 的 `Chucho Valdés —《Bele Bele en La Habana》` 上，本張不在這條鏈裡。**⚠ **唯一的保留**：**〈Conga Potpourrí〉與〈Guaracha Popurri〉是沒有拆開曲名的組曲，本棒無法排除它被收在裡面**——**但軌名層零重疊，正文不得寫成三張碟互撞。**",
+    "src": "https://api.discogs.com/releases/5076442"
+   },
+   {
+    "f": "**(戊) 前置閘的第二層證據（第 1445 條）逐字在紙本上**：**Billboard 2001-09-22 p72 的秋季新片預告逐字「Blue Note offers … Bebo Valdés' El Arte Del Sabor (Oct. 23)」**；**2001-10-20 p37 逐字「set for release Oct. 23 in the U.S. on Blue Note records」**——**廠牌自己的紙本把它算成自家發行，而且給了街頭日。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-09-22.pdf"
+   },
+   {
+    "f": "⚠ ⚠ **試聽本棒救回來了**（策展層記「目錄裡找不到」）：**`search` 五市場查「Bebo Valdés Trio con Cachao y Patato El arte del sabor」全部零命中、`lookup?upc=724353519322` 也零命中**；**改用縮短掛名的字串「Bebo Valdes El Arte del Sabor」才命中 `1613991745`（artistName 逐字 `Bebo Valdes Trio`，17 軌，**releaseDate 逐字 `2001-10-23`＝與紙本街頭日逐日相符**，⚠ **℗ 欄逐字「℗ 2022 Calle 54 Records I Producciones Anónimas」——是 2022 年再發的版權主體，不是原發**）。**`lookup?id=1613991745&entity=song` 回 17 首、17 首全有 previewUrl，軌名與 Discogs 逐軌相符。**",
+    "src": "https://itunes.apple.com/lookup?id=1613991745&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "Cachao 在這張碟上是拉弓的——credit 欄逐字寫 arco bass，不是撥弦；三個人加起來的年齡在錄音時超過兩百三十歲",
+   "錄音是 2000 年 3 月 13 到 16 日在紐約做完的，碟子要等到 2001 年 10 月 23 日才在美國上架，中間隔了一年七個月"
+  ],
+  "sound": "十七軌，2000 年 3 月 13 至 16 日在紐約 Current Sounds 錄音並混音，2001 年 10 月 23 日在美國上架。四個人、沒有軌號限制：Bebo Valdés 的鋼琴、Cachao 拉弓的低音提琴、Patato 的康加與打擊，加上全程參與的 Paquito D'Rivera 的單簧管與薩克斯風。曲目是古巴的 son、danzón、bolero 與 guaracha 老歌——〈Lamento Cubano〉〈Son de la Loma〉〈Priquitín Pin Pon〉〈Buche y Pluma Na Má〉〈Pare Cochero〉〈Romance en la Habana〉，中間夾三段沒有拆開曲名的組曲（bolero、conga、guaracha 各一），末尾兩軌轉向外國歌本：〈Route 66〉與〈Adiós Panamá / Para Vigo Me Voy〉。製作 Nat Chediak，執行製作 Julio Marti，母帶 Todd Gerard。",
+  "keyTracks": [
+   "Lamento Cubano",
+   "Son de la Loma",
+   "Pare Cochero",
+   "Route 66"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判，而且是本組紙本最硬的幾張之一：街頭日與店面 releaseDate 逐日相符。** (1) **同期紙本（發行公告，階序最上層）**：**Billboard 2001-09-22 p72 的秋季新片預告逐字「(Oct. 23)」、2001-10-20 p37 逐字「set for release Oct. 23 in the U.S. on Blue Note records」**——**兩期都給了同一個街頭日。** (2) **店面**：**Apple `1613991745` 的 releaseDate 逐字 `2001-10-23`＝與紙本逐日相符**（⚠ **本組只有五張是「真日期」，本張是其中之一**）；⚠ **它的 ℗ 欄是「℗ 2022 Calle 54 Records」——後年版權轉手（第 1426 條的同形），不採。** (3) **Discogs 原壓群**：**美版 `11353790` 與歐版 `5076442` 的 `year` 欄都是 2001**，**兩筆的 notes 又逐字把錄音寫成 2000-03-13～16**——**錄音年與發行年差一年七個月、沒有被任何一層抄進 `year` 欄。** (4) **MB first-release-date 2001**（唯一一筆 release 也只有年）。 ⚠ **錄音年 2000 與發行年 2001 差一年**（策展層第 1447 條列的三張之一）——**`year` 取發行年 2001、錄音年寫進 risk 與正文，本棒覆核成立。**",
+  "notes": "**覆核策展層：rgMbid `cfb73cd9`／只建一筆 release／三段式聯名掛名 `Bebo Valdés Trio con Cachao y Patato`／年份 2001／17 軌／曲風 `['jazz','world']`（第 1452 條的判準 3） 全部成立。**｜⚠ ⚠ **撞陳列本棒改判一處**：**策展層第 1448(A)#6 條寫「Chucho《Solo Live in New York》←→ 本張 ←→ seed Chucho《Bele Bele en La Habana》三張互撞，重疊一軌〈Tres lindas cubanas〉」**——**本棒逐軌核完 Discogs 兩筆與 Apple 的 17 軌，本張沒有這一軌。****那條鏈只剩「Chucho《Solo Live in New York》第 10 軌 ←→ seed《Bele Bele en La Habana》」兩張，本張不在內。**⚠ **唯一的保留**：**〈Conga Potpourrí〉與〈Guaracha Popurri〉兩段組曲沒有拆開曲名**，**無法排除它被收在其中**——**但在軌名層零重疊，寫作層不得把三張寫成互撞。**｜⚠ **父子關係要寫對**：**Bebo Valdés 是 Chucho Valdés 的父親，兩張碟同在本批 a 組、同為 2001 年的 Blue Note 發行**——**兩卡 risk 仍應互指（理由是父子與同批，不是軌目重疊）。**｜⚠ **編制本棒補一個人**：**策展層第 1453 條寫「三人＋客座」——Discogs 的 credit 欄實際是四個演奏者，Paquito D'Rivera 沒有軌號限制**，**正文寫「四個人」比「三人＋客座」準確。**⚠ **Cachao 的樂器欄逐字是 `Arco Bass`**（拉弓），**不是一般的 `Bass`。**｜⚠ **(戊) 前置閘**：**零售盤廠牌欄第一格是 `Lola Records (3)`、Blue Note 排第二格（美版 `11353790` 整筆只有 Lola Records）**——**依第 1445 條靠「廠牌自家紙本」過閘，兩期 Billboard 逐字把它算成 Blue Note 的發行（見 facts）。****本棒覆核成立。**｜⚠ **軌名撞卡名（本棒重掃）**：**17 軌對 25215 列卡池真命中 0**（〈Route 66〉〈Son de la Loma〉〈Lamento Cubano〉掃池皆 0）。｜⚠ **軌名拼法兩層不一致**：**Discogs 作 `Agguere`／`Cumbachero`／`Adios Panamá / Para Vigo Me Voy`，Apple 作 `Ogguere`／`Cumbanchero`／`Adiós Panamá - para Vigo Me Voy`**——**寫作層照 Discogs 的盤面拼法。**｜⚠ **載體**：**MB 一筆與 Discogs 兩筆全是 CD**——**本棒未查到黑膠。**｜**封面不缺**：CAA RG 層重探 200；⚠ **備援用 Discogs 美版 `11353790`（2 圖，`images[0]` 是 primary 600×595）**；**歐版 `5076442` 只有 1 圖、而且是 secondary 400×400，不要用。**｜⚠ ⚠ **試聽本棒救回，採信**：**串流採信 1613991745**（17 軌、17 軌全有 previewUrl；⚠ **三種查法裡只有「縮短掛名的 `search` 字串」有效——全長聯名與 `lookup?upc=` 都零命中**，**這是第 1246／1284 條「字串要換」的又一個樣本**）。"
+ },
+ {
+  "key": "desc2:Chucho Valdés|Solo Live in New York",
+  "artist": "Chucho Valdés",
+  "album": "Solo Live in New York",
+  "facts": [
+   {
+    "f": "release-group `000ea514-20c8-33b4-99ca-33a9b5314d00`：title「Solo Live in New York」、artist-credit `Chucho Valdés`（`6999d571` Person，disambiguation「Cuban pianist and composer」）、**first-release-date 2001-02-22（到日）**、primary-type Album、⚠ **secondary-types 是空的——漏標了 `Live`**（第 397 條，`slice.json` 的 `live` 欄因此也跟著標成 false），genres／tags `contemporary jazz`／`jazz`／`latin jazz`。**轄下只有一筆 release `1e798025`**（**2001-02-22 DE**，CD **11 軌**，Blue Note `7243 4 93456 2 1`，barcode 724349345621）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=000ea514-20c8-33b4-99ca-33a9b5314d00&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **盤名本身就帶 `Live`，四筆 Discogs 條目的標題也都帶**：**`5076662`（Europe）作「Solo (Live In New York)」／`11756569`（Canada）作「Solo - Live In New York」／`13158271`（US，BMG 俱樂部版 barcode `D 138435`）與 `37432218`（US 宣傳盤）作「Solo • Live In New York」**——**四種標點、四筆條目，MB 的 secondary-types 卻是空的。**⚠ **場館與日期在任何一層都查不到**：**四筆 Discogs 條目的 notes 只寫包裝與產地**（`5076662` 逐字「Issued in standard jewel case, transparent tray, with a 8-page booklet.」），**盤名只給「New York」三個字。**",
+    "src": "https://api.discogs.com/releases/5076662"
+   },
+   {
+    "f": "⚠ **編制＝一個人，本組唯一**：**四筆條目的 credit 欄裡掛樂器的只有 `Chucho Valdés — Piano`**；其餘全是製作與工程——**René López 製作兼 Sequencer、Bruce Lundvall 執行製作、Edward Haber 與 Michael De Mark 錄音、Jon Fausty Sequencer、Leon Zervos 與 Absolute Audio 母帶**（美版 `13158271` 的 credit 欄最完整）。**第 1367 條的逐軌欄本棒也讀過：四筆的 `tracklist[].extraartists` 全空。**",
+    "src": "https://api.discogs.com/releases/13158271"
+   },
+   {
+    "f": "**紙本一篇評介，逐字給了製作人與目錄號**：**Billboard 2001-01-20 p22 的 JAZZ 欄逐字「CHUCHO VALDES　Solo -Live in New York　PRODUCER: Rene Lopez　Blue Note 7243 4 93456」**，正文逐字「Cuban pianist Jesús \"Chucho\" Valdés has been a major player in Cuban music for decades, but his determination to remain in Cuba left him on the wrong side of the U.S. government's Cuban embargo until the 1990s.」⚠ **這篇在 2001 年 1 月 20 日，比 MB 的 2001-02-22 還早一個月**——**評介日期不等於街頭日（第 1477 條）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-01-20.pdf"
+   },
+   {
+    "f": "⚠ **同期另一張同掛名的碟在得獎名單上，不要搞混**：**Billboard 2001-01-13 p84 的 43 屆葛萊美提名，最佳拉丁爵士專輯逐字列出「Live At The Village Vanguard, Chucho Valdés (Blue Note)」**——**那是 c-156 b 的卡，不是本張。****查 `Chucho Vald` 的命中頁要核盤名。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-01-13.pdf"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `724266801`（Chucho Valdés《Solo - Live in New York》，**11 軌、11 軌全有 previewUrl**，⚠ **℗ 欄逐字「℗ 2001 EMI Music Canada」——不是 Blue Note**，releaseDate `2001-01-01` 是年初佔位日）。**`lookup?id=724266801&entity=song` 的 11 首與 Discogs 逐軌相符。**⚠ **同一次查詢還回了 `724550249`《Solo Piano》(1991)**——**那是 c-151 的卡，不是本張。****CAA release-group 層重探回 200。**",
+    "src": "https://itunes.apple.com/lookup?id=724266801&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟從頭到尾只有一架鋼琴：四筆壓片的 credit 欄裡掛樂器的就他一個人，連逐軌欄都是空的",
+   "Billboard 的評介用一句話交代他為什麼到九〇年代才在美國被聽見——他堅持留在古巴，於是一直待在美國禁運令的另一邊"
+  ],
+  "sound": "十一軌的鋼琴獨奏現場盤，錄於紐約，場館與日期在任何一層都查不到。編制就是一個人：四筆壓片的 credit 欄裡掛樂器的只有 Chucho Valdés 的鋼琴，連逐軌欄都是空的。曲目在古巴傳統與美國歌本之間來回——〈A mi madre〉開場、〈Muñequita linda〉、〈Rumba guajira〉、〈Bésame mucho〉、Moisés Simons 的〈El manicero〉、〈Somewhere over the Rainbow〉、〈Son〉、〈Novia mía〉、〈Delirio〉、〈Tres lindas cubanas〉，收在〈La negra Tomasa〉。製作 René López，執行製作 Bruce Lundvall，錄音 Edward Haber 與 Michael De Mark。",
+  "keyTracks": [
+   "A Mi Madre",
+   "Besame Mucho",
+   "El Manicero",
+   "Tres Lindas Cubanas"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判。** (1) **MB first-release-date `2001-02-22`（到日）**，唯一一筆 release（DE）的 `date` 欄同值。 (2) **Discogs 原壓群**：**歐版 `5076662`／加拿大版 `11756569`／美版 BMG 俱樂部版 `13158271`／美版宣傳盤 `37432218` 四筆的 `year` 欄全是 2001。** (3) **同期紙本**：**Billboard 2001-01-20 p22 的 JAZZ 評介逐字給了製作人與目錄號 `Blue Note 7243 4 93456`**；⚠ **依第 1477／1487 條，單一評介不足以壓過 Discogs 原壓群，而且這一篇的日期（1 月 20 日）比 MB 的 2001-02-22 還早一個月**——**評介日期是「編輯部什麼時候寫完」，不是上市日，本棒不拿它動年份或月份。** (4) **店面**：**Apple `724266801`**，⚠ **℗ 欄逐字「℗ 2001 EMI Music Canada」——℗ 年是 2001 ✓ 但主體不是 Blue Note**（第 1451 條）；⚠ **releaseDate `2001-01-01` 是年初佔位日，不採。** ⚠ **演出年未知**：**四層都查不到演出日期**——**沒有第 1449 條說的「演出日汙染」可言，但正文也不得推測演出年。**",
+  "notes": "**覆核策展層：rgMbid `000ea514`／只建一筆 release（DE）／掛名 `Chucho Valdés`（沿用池中八張的字串）／年份 2001／11 軌／曲風 `['jazz']`（第 1452 條判準 1）／獨奏編制 全部成立。**｜⚠ **MB 漏標 `Live`（第 397 條）**：**盤名逐字帶 `Live`、四筆 Discogs 條目的標題也都帶，MB 的 `secondary-types` 卻是空的，`slice.json` 的 `live` 欄跟著錯**——**本卡應標為現場盤。**｜⚠ ⚠ **撞陳列（第 738／859 條，本棒逐軌核過並新增一處）**：**(a) 第 4 軌〈Besame Mucho〉＝同組 `Ron Carter —《When Skies Are Grey》` 第 2 軌**（策展層第 1448(A)#7 已記）——**一張是鋼琴獨奏 7:03、一張是四人組 7:05，同批兩張互撞，risk 互指。** **(b) ⚠ ⚠ 本棒新查到：第 5 軌〈El Manicero〉＝ b 組 `Gonzalo Rubalcaba —《Supernova》` 第 5 軌〈El Manicero (The Peanut Vendor)〉**——**同一首 Moisés Simons 的古巴老曲、同一批、a 組與 b 組各錄一次，策展層兩組都沒有記。****兩卡 risk 必須互指。** **(c) 第 10 軌〈Tres Lindas Cubanas〉＝池中 seed `Chucho Valdés —《Bele Bele en La Habana》`(1998) 的曲目**（策展層第 1448(A)#6 記成三張互撞，**本棒核完同組 `Bebo Valdés —《El arte del sabor》` 的 17 軌並無此曲，那條鏈只剩兩張**）。 **(d) 父子關係**：**Bebo Valdés 是他父親，兩張同在本批 a 組**——**risk 仍應互指。**｜⚠ **軌名撞卡名（本棒重掃）**：**11 軌對 25215 列卡池真命中 0**（〈Besame Mucho〉〈El Manicero〉〈Tres Lindas Cubanas〉〈Delirio〉掃池皆 0）。｜⚠ **盤名四種標點**（`Solo (Live In New York)`／`Solo - Live In New York`／`Solo • Live In New York`／MB 的 `Solo Live in New York`）——**照 MB RG 立卡，其餘三形進 `queryAlias`。**｜⚠ **店面誤配兩處**：**同一次 `search` 回的 `724550249`《Solo Piano》(1991) 是 c-151 的卡**；**紙本查 `Chucho Vald` 命中的 2001-01-13 p84 是 43 屆葛萊美提名名單、講的是 c-156 b 的《Live at the Village Vanguard》**——**兩處都不是本碟。**｜⚠ **載體**：**MB 一筆與 Discogs 四筆全是 CD**——**本棒未查到黑膠。**｜**封面不缺**：CAA RG 層重探 200；⚠ **備援用 Discogs 歐版 `5076662`（3 圖，`images[0]` 是 primary 600×599）或美版宣傳 `37432218`（primary 600×597）；`13158271` 有 15 圖、primary 600×587 也可用。**"
+ },
+ {
+  "key": "desc2:Pat Martino|Live at Yoshi's",
+  "artist": "Pat Martino",
+  "album": "Live at Yoshi's",
+  "facts": [
+   {
+    "f": "release-group `cf1f2929-9a8b-33eb-a459-c7f66de721e6`：title「Live at Yoshi's」、artist-credit `Pat Martino`（`8b8b7c42` Person，disambiguation「American jazz guitarist」）、first-release-date **2001**（只有年）、primary-type Album、**secondary-types `[\"Live\"]` ✓ 標對了**，genres／tags `jazz`。**轄下只有一筆 release `6c25b45f`**（2001 US，CD **8 軌**，Blue Note `7243 4 99749 2 0`，barcode 724349974920）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cf1f2929-9a8b-33eb-a459-c7f66de721e6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **演出、混音、母帶三段日期逐字，而且全部只有 Discogs 有**：**歐版 `6564323` 與美版 `8183073` 的 notes 逐字「**Recorded December 15-17, 2000 at Yoshi's, Oakland, CA. Mastered February 5, 2001 at Sterling Sound, New York, NY. Mixed at Planet 2 Planet, New York, NY, February 1-2, 2001 using the Otari Radar 2.**」**——**三晚的演出、兩天的混音、一天的母帶，正文不得寫成一次。**",
+    "src": "https://api.discogs.com/releases/6564323"
+   },
+   {
+    "f": "**編制是乾淨的固定三人**：**Pat Martino 吉他兼製作、Joey DeFrancesco Hammond B-3 管風琴、Billy Hart 鼓**（兩筆條目的 credit 欄一致，無軌號、無客座）。**製作 Joe Donofrio 與 Martino，共同製作兼混音 Kirk Yano，現場錄音 Phil Edwards，助理四人。**",
+    "src": "https://api.discogs.com/releases/8183073"
+   },
+   {
+    "f": "⚠ **Discogs 的作曲欄有一處錯**：**`6564323` 把第 7 軌〈Blue In Green〉的 `Written-By` 掛成 `Pat Martino`**——**那首是 Bill Evans／Miles Davis 的曲**；同一筆把第 6 軌〈Recollection〉掛 `Miles Davis`。⚠ **美版 `8183073` 的 notes 用出版商欄旁證了正確的歸屬**：**逐字「[Track # 1 published by:] Prestige Music」（〈Oleo〉）、「[Tracks # 2, 6 published by:] Jazz Horn Music Corp.」（Miles Davis 的出版社，含〈All Blues〉與〈Recollection〉）、「Track # 3, 4, 5, 7, 8 published by:]」另一家**——**第 7 軌歸在 Martino 那一組，兩邊說法一致但與史實不符，寫作層不要引用作曲欄。**",
+    "src": "https://api.discogs.com/releases/8183073"
+   },
+   {
+    "f": "⚠ ⚠ **本張入圍 44 屆葛萊美兩項**：**Billboard 2002-01-19 p94 逐字——最佳爵士器樂獨奏「\"All Blues,\" Pat Martino (Blue Note Records)」**（**＝本張第 2 軌，12:00**）**與最佳爵士器樂專輯（個人或團體）「Live at Yoshi's, Pat Martino (Blue Note Records)」**。⚠ **同一格還有同組的《Kindred》。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-01-19.pdf"
+   },
+   {
+    "f": "⚠ **盤名撞一張同名的別人的碟**：**Billboard 2001-01-13 p84 的 43 屆葛萊美提名，最佳爵士人聲專輯逐字列出「\"Live At Yoshi's,\" Dee Dee Bridgewater (Verve)」**——**同名、不同藝人、不同廠牌、早一年**。**池中與所有批次查 `Yoshi` 命中 0（只有本卡自己）**，**但上架比對與試聽一律要帶掛名 `Pat Martino` 與 catno `99749`。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-01-13.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟拿了兩項第四十四屆葛萊美提名：第二軌那首十二分鐘的〈All Blues〉入圍最佳爵士器樂獨奏，整張入圍最佳爵士器樂專輯",
+   "三晚的演出在 2000 年 12 月 15 到 17 日，混音要等到 2001 年 2 月 1 到 2 日、母帶 2 月 5 日——內頁連混音用的機器（Otari Radar 2）都印上去了"
+  ],
+  "sound": "八軌的現場盤，2000 年 12 月 15 至 17 日錄自加州奧克蘭的 Yoshi's，2001 年 2 月 1 至 2 日在紐約 Planet 2 Planet 混音（內頁註明用 Otari Radar 2）、2 月 5 日在 Sterling Sound 做母帶。三個人：Pat Martino 的吉他、Joey DeFrancesco 的 Hammond B-3 管風琴、Billy Hart 的鼓，沒有客座。曲目一半是標準曲——Sonny Rollins 的〈Oleo〉、Miles Davis 的〈All Blues〉（十二分鐘，全碟最長之一）與〈Blue in Green〉——一半是 Martino 自己的曲：〈Mac Tough〉〈Welcome to a Prayer〉〈El Hombre〉〈Recollection〉〈Catch〉（十一分鐘）。八軌裡有五軌超過九分鐘。",
+  "keyTracks": [
+   "All Blues",
+   "Mac Tough",
+   "El Hombre",
+   "Catch"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判。** (1) **Discogs 原壓群（第 531 條，本張的主層）**：**歐版 `6564323`／美版 `8183073`／美版宣傳 `37432035` 三筆的 `year` 欄全是 2001**，**兩筆的 notes 逐字把母帶日寫成 2001-02-05**——**母帶在 2001 年 2 月，發行只可能在那之後。** (2) **MB first-release-date 2001**（唯一一筆 release 也只有年）。 (3) **店面**：**Apple `724314992` 的 ℗ 欄逐字「℗ 2001 Blue Note Records」**（⚠ releaseDate `2001-01-01` 是年初佔位日，不採）。 (4) **獎項旁證**：**2002 年 1 月的 44 屆葛萊美提名把本碟歸在 2001 年度。** ⚠ ⚠ **(5) 演出年是 2000 年 12 月，比發行早一年**（策展層第 1447 條列的三張之一）——**但沒有任何一層把演出日填進 `date` 或 `year` 欄**，**第 1449 條說的「演出日汙染」在本張沒有發生，`year` 取發行年 2001、演出年寫進 risk 與正文。** ⚠ **紙本**：**`billboard-bn-2001-ocr.txt.gz` 本棒未取得本碟的街頭日或新片欄**（查 `Yoshi's` 的 2001 年命中是 Billy Higgins 義演與 Dee Dee Bridgewater 的同名碟）——**年份靠 Discogs ＋ MB ＋ 店面 ＋ 獎項四層。**",
+  "notes": "**覆核策展層：rgMbid `cf1f2929`／只建一筆 release／掛名 `Pat Martino`／年份 2001／8 軌／`Live` 標對／固定三人編制 全部成立，而且本張是本組唯一一張演出資訊完整的現場盤。**｜⚠ ⚠ **撞陳列（第 738／859 條，逐軌核過）**：**與 c-155 的 `Pat Martino —《Stone Blue》`(1998) 撞一軌——〈Mac Tough〉**（策展層第 1448(A)#3 已記，本棒覆核成立）；**兩張其餘七／N 軌零重疊**——**兩卡 risk 互指，正文不得把現場版與錄音室版寫成同一次。**｜⚠ ⚠ **盤名撞一張不在池中的同名碟**：**Dee Dee Bridgewater《Live at Yoshi's》(Verve, 2000)，43 屆葛萊美最佳爵士人聲專輯提名**——**池中與所有批次查 `Yoshi` 命中 0**，**但上架比對、封面選擇與試聽必須帶掛名 `Pat Martino` 與 catno `99749`**（**這是「盤名撞不在池中的名盤」的形狀，`chk-prop` 永遠不會亮燈**）。｜⚠ **軌名撞卡名（本棒重掃，兩處）**：**第 1 軌〈Oleo〉＝ seed 與 c-145 的 `Grant Green —《Oleo》`(1980)**（⚠ **策展層第 1448(B) 條沒有列這一處，本棒補上**——**而且 Grant Green 在同批 b 組另有《First Session》一卡，三張之間要留意**）；**第 5 軌〈El Hombre〉＝他 1967 年 Prestige 首張領班盤的盤名，池中與批次零命中，但 Prestige 線一接就會撞**（策展層已記）。｜⚠ **Discogs 作曲欄有錯**：**〈Blue In Green〉被掛成 Pat Martino 作**——**寫作層不要引用作曲欄；出版商欄（美版 `8183073` 的 notes）也把它歸在 Martino 那一組。**｜⚠ **載體**：**MB 一筆與 Discogs 三筆全是 CD**——**本棒未查到黑膠。**｜**封面不缺**：CAA RG 層重探 200；⚠ **備援用 Discogs 歐版 `6564323`（16 圖，`images[0]` 是 primary 600×595）或美版 `8183073`（8 圖，primary 600×598）；`37432035` 的 `images[0]` 是 secondary，不用。**｜⚠ **同批葛萊美**：**本張一張拿兩項提名（器樂獨奏〈All Blues〉＋器樂專輯）**，**是本批六張入圍碟裡唯一拿到兩項的**——**正文可以寫。**"
+ },
+ {
+  "key": "desc2:Charlie Parker|The Washington Concerts",
+  "artist": "Charlie Parker",
+  "album": "The Washington Concerts",
+  "facts": [
+   {
+    "f": "release-group `828a939f-7d70-3424-b678-ad2439c58f8a`：title「The Washington Concerts」、artist-credit `Charlie Parker`（`c7356af9` Person，disambiguation 逐字「aka “Bird”, jazz alto saxophonist」）、first-release-date **2001**（只有年）、primary-type Album、**secondary-types `[\"Live\"]` ✓**，genres／tags `big band`＋`jazz`。**轄下只有一筆 release `77accf38`**（2001 US，CD **15 軌**，Blue Note `7243 5 22626 2 5`，barcode 724352262625）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=828a939f-7d70-3424-b678-ad2439c58f8a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ ⚠ **母體的目錄號本棒查到了，逐字在 Discogs 上**（策展層第 1444 條只從 Apple 推到「Elektra」）：**歐版 `37515798` 的 notes 逐字「**Tracks # 1 to 8 & 15 originally issued as Elektra Musician 60019. Tracks # 9 to 14 are previously unissued.**」**——**母體是 `Elektra Musician 60019`，而且連第 15 軌的 Red Rodney 訪談都是母體上就有的**；**本次新出的是第 9 到 14 軌，六軌。**",
+    "src": "https://api.discogs.com/releases/37515798"
+   },
+   {
+    "f": "**三場演出、三種編制，日期逐字**（Discogs `1316340`／`11252282`／`37515798` 三筆一致）：**「#1 to 8 recorded at Club Kavakos, Washington, D.C. on February 22, 1953」／「#9 to 12 recorded at the Howard Theater, Washington, D.C. on March 8, 1953」／「#13 & 14 recorded at the Howard Theater, Washington, D.C. on October 18, 1952」／「#15 Interview with Red Rodney conducted in 1982」**——⚠ **時間順序與軌序相反：最早的一場（1952-10-18）排在第 13、14 軌。**",
+    "src": "https://api.discogs.com/releases/1316340"
+   },
+   {
+    "f": "**三種編制的名單逐字**（Discogs `1316340` 的 credit 欄帶軌號）：**第 1–8 軌是 Bill Potts 的十七人大樂團**——Parker（as）／Charlie Walp、Marky Markowitz、Ed Leddy、Bob Carey（tp）／Earl Swope、Rob Swope、Dan Spiker（tb）／Jim Riley（as）／Angelo Tompros、Ben Lary、Jim Parker（ts）／Jack Nimitz（bs）／Jack Holliday（p）／Mert Oliver（b）／Joe Timer（d）；**第 9–12 軌是四重奏**——Parker ＋ Jack Holliday（p）／Franklin Skeete（b）／**Max Roach（d）**；**第 13、14 軌是七人組**——Parker ＋ **Zoot Sims（ts）**／Charlie Walp（tp）／**Charlie Byrd（g）**／Bill Shanahan（p）／Mert Oliver（b）／**Don Lamond（d）** ＋ 未具名的康加手，**第 14 軌另加 `Kai Winding — Trombone` 與 `Earl Swope`**。**錄音者 Bill Potts，轉錄 Jack Towers，重製母帶 Kurt Lundvall，2001 年的製作人 Bruce Lundvall。**",
+    "src": "https://api.discogs.com/releases/1316340"
+   },
+   {
+    "f": "⚠ ⚠ **紙本逐字給了 2001 年的街頭日**：**Billboard 2001-02-10 p81 逐字「Forthcoming from Blue Note are Charlie Parker's \"Washington Concerts\" (**April 10**) and Django Reinhardt's \"All Star Sessions\" (June 5), as well as Count Basie's \"Breakfast Dance And Barbecue\" and Vaughan's \"Sweet & Sassy\" (July 3).」**——**發行公告，符合第 1487 條的門檻。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-02-10.pdf"
+   },
+   {
+    "f": "⚠ ⚠ **試聽本棒查到，而且店面把演出年寫進盤名**（第 484 條第四種形）：**Apple `search` us／jp／gb／fr／dk 五市場都命中 `723380917`，條目名逐字「The Washington Concerts (**1953**)」**，15 軌，**releaseDate 逐字 `2001-04-03`**，℗ 逐字「℗ 2001 Blue Note Records」；**`lookup?id=723380917&entity=song` 回 15 首、15 首全有 previewUrl，軌名與 Discogs 逐軌相符**（第 7 軌「Something To Remember You By/Blue Room」與第 14 軌「Medley: Out of Nowhere/Now's the Time」都是併成一軌的形）。⚠ **同一次查詢在 jp 市場回了 `272500568`《One Night In Washington (1953)》9 軌、copyright 逐字「℗ 1982 Elektra Entertainment, manufactured and marketed by Rhino Entertainment Company」**——**那是母體，不是本碟。**",
+    "src": "https://itunes.apple.com/lookup?id=723380917&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌裡有六軌是頭一次發行：一到八軌與訪談在 1983 年就以 Elektra Musician 60019 出過，九到十四軌在盤面上逐字寫著 previously unissued",
+   "同一張碟上有三種編制：十七人的大樂團、有 Max Roach 打鼓的四重奏，以及一個帶 Zoot Sims 與吉他手 Charlie Byrd 的七人組——最早的那一場其實排在第十三、十四軌"
+  ],
+  "sound": "十五軌的庫存現場盤，內容來自 1952 到 1953 年華府的三場演出：第 1 到 8 軌是 1953 年 2 月 22 日在 Club Kavakos，Parker 與 Bill Potts 的十七人大樂團同台；第 9 到 12 軌是同年 3 月 8 日在 Howard Theater，四重奏，鼓是 Max Roach；第 13、14 軌其實最早，1952 年 10 月 18 日同樣在 Howard Theater，七人組裡有 Zoot Sims 的次中音、Charlie Byrd 的吉他與 Don Lamond 的鼓，第 14 軌的十二分半組曲另加 Kai Winding 的長號。第 15 軌是 1982 年對小號手 Red Rodney 做的訪談。其中第 1 到 8 軌與訪談在 1983 年以 Elektra Musician 60019 出過，第 9 到 14 軌六軌是這次才首度發行。錄音是 Bill Potts 當年做的，Jack Towers 轉錄、Kurt Lundvall 重製母帶，2001 年 4 月由 Blue Note 發行。",
+  "keyTracks": [
+   "Ornithology",
+   "Cool Blues",
+   "Scrapple From the Apple",
+   "Anthropology"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立（走 (丁)），本層未改判，而且紙本給了逐字街頭日。** (1) **同期紙本（發行公告，階序最上層）**：**Billboard 2001-02-10 p81 逐字「Forthcoming from Blue Note are Charlie Parker's \"Washington Concerts\" (April 10)」。** (2) **店面**：**Apple `723380917` 的 releaseDate 逐字 `2001-04-03`**——⚠ **與紙本的 4 月 10 日差一週，兩說並陳**；**℗ 欄逐字「℗ 2001 Blue Note Records」。** (3) **Discogs 原壓群**：**美版 `1316340`（format 欄逐字 `CD, Album, Reissue, Remastered, Mono`）與歐版 `11252282` 的 `year` 欄都是 2001**（第三筆 `37515798` 的 `year` 欄是 0）。 (4) **MB first-release-date 2001**。 ⚠ ⚠ **(5) 錄音年與首次商業發行年必須分開講**（派工信第 4 點）：**錄音是 1952-10-18／1953-02-22／1953-03-08 三場**；**母體 `Elektra Musician 60019` 在 1983 年出過第 1–8 軌與訪談**（**Apple 上的母體條目 `272500568` copyright 逐字 `℗ 1982 Elektra Entertainment`**）；**本次是第 9–14 軌六軌的首度發行 ＋ 完整重編**——**依第 1444 條走 (丁)，`year` 取本次完整發行年 2001。** ⚠ **(6) 店面把演出年寫進盤名**：**Apple 的條目名逐字 `The Washington Concerts (1953)`**——**括號裡是演出年不是發行年**（第 484 條第四種形），**正文不得把 1953 寫成發行年。**",
+  "notes": "**覆核策展層：rgMbid `828a939f`／只建一筆 release／掛名 `Charlie Parker`（沿用池中字串）／年份 2001／15 軌／`Live` 標對／(丁) 判定 全部成立。**｜⚠ ⚠ **本棒把母體的目錄號補上了**：**策展層第 1444 條只從 Apple 推到「Elektra，1983 年的《One Night in Washington》」**；**Discogs 歐版 `37515798` 的 notes 逐字寫出 `Elektra Musician 60019`，而且明確說第 15 軌的訪談也是母體上就有的**——**本次真正新的是第 9 到 14 軌六軌，不是「六軌新的、七軌舊的」而是「六軌新的、九軌舊的」。****第 1444 條那一列的「本張六軌新的、七軌舊的」要更正為「六軌新、九軌舊（含訪談）」。**｜⚠ **軌目切分兩邊不同**（第 1454 條）：**MB 把〈Something to Remember You By〉與〈Blue Room〉拆成兩軌、Discogs 與 Apple 併成一軌**——**兩邊都是「15 軌」但對應方式不同，逐軌比對要用曲名不要用軌號。**｜⚠ **編制「逐軌變動」成立，而且是本組最複雜的一張**：**三場三種編制、十七人大樂團／四重奏／七人組**（見 facts）；⚠ **第 13、14 軌的康加手在 Discogs 上逐字掛 `Unknown Artist`**，**正文不得補名字。**｜⚠ ⚠ **撞陳列（第 738／859 條，逐軌核過）**：**與池中 seed `Charlie Parker —《Now's the Time》`(1957) 撞兩軌**——**第 9 軌〈Ornithology〉與第 14 軌組曲裡的〈Now's the Time〉**（策展層第 1448(A)#4 已記，本棒覆核成立）；⚠ ⚠ **第 14 軌的〈Now's the Time〉同時是「軌名＝他自己在池中的卡名」**（第 1181／1192 條第六種盲區裡最硬的一種）。**兩卡 risk 必須互指，上架比對一律帶 catno `22626`。**｜⚠ **軌名撞卡名（本棒重掃）**：**第 11 軌〈Cool Blues〉＝ seed 與 c-145 的 `Jimmy Smith —《Cool Blues》`(1980)**；**其餘十四軌真命中 0。**｜⚠ **載體**：**MB 一筆與 Discogs 三筆全是 CD**（format 欄逐字含 `Reissue, Remastered, Mono`）——**本棒未查到 2001 年的黑膠。**｜**封面不缺**：CAA RG 層重探 200。⚠ ⚠ **但 Discogs 沒有可用的替代圖**：**三筆條目的 `images[0]` 全是 `secondary`**（`1316340` 300×300／`11252282` 500×497／`37515798` 600×592）——**本線第八次遇到「所有圖都是 secondary」，記錄備查。**｜⚠ **盤名兩形**：**`1316340` 的 notes 逐字「The title on the booklet cover is Washington Concerts, but it is The Washington Concerts on the tray card, spines and CD.」**——**內頁封面少一個 `The`，照 MB RG 的 `The Washington Concerts` 立卡。**｜⚠ ⚠ **試聽本棒查到，採信**：**串流採信 723380917**（15 軌、15 軌全有 previewUrl，五市場一致；⚠ **條目名帶 `(1953)`，那是演出年不是發行年**；⚠ **不得與母體條目 `272500568`《One Night In Washington (1953)》混用**）。"
  }
 ]
