@@ -1402,3 +1402,52 @@ MB 8、Apple 店面 5（另 3 次負面實查）、CAA 3 次（全 404）。
 
 **→ 這四條再次印證第 1494(乙)：研究層把東西放進 `notes`，下游就用不上。**
 **本批 a 組的 `notes` 埋了至少九個有名字的樂手，全部作廢。**
+
+## 第 1560-AA 條（主線）：**鉤子 b 組交件——18 張、兩組 37 張跨組檢查全過**
+
+**hook 加權 19–35（上限 50）、note 原始 314–350（上限 350，零張超標）、校對痕跡 0、
+組內開頭前四字 18/18 互異、三張無串流卡（Solal／A Little Moonlight／Rosnes）的 note 零串流指示。**
+`qa-batch hooks c158` 全過；`chk-hook-crossgroup c158` **兩組 37 張一起驗、✓ 全部通過**
+（跨組開頭無相撞、無同構骨架命中、無校對痕跡、無分數星等、無禁語、無否定句）。
+**`merge-writer-input c158` 已跑：37 張 → writer-1(a) 19／writer-2(b) 18。**
+
+**五處同批交叉全部互寫排除**：Payton 首度同錄→StL；同團不同場合→Public；美術（Burton Yount）→Lovano；
+〈Some Other Time〉→Charlap；〈Whirlwind Soldier〉→StL；Lovano 領班身分→他自己那張；
+**獎項→《A Little Moonlight》，而《Christmas Time Is Here》的 note 明寫獎項歸那張，防止寫作層順手加獎。**
+
+## 第 1560-AB 條（主線，**第 1560-Y 條的 b 組續發，六處；其中兩處是研究稿「自己跟自己矛盾」**）
+
+| # | 卡 | 欄位 | 殘留／問題 |
+| ---: | --- | --- | --- |
+| 1 | Solal | `hookCandidates` | 兩條全不可用：**出生年、七十四歲、「首度以領班身分在凡加德錄音」、「離世貿雙塔倒下只有十天」四件在 facts 裡都沒有** |
+| 2 | **Rosnes** | **`facts[1]` 自己前後矛盾** | 標題寫「八軌裡**六首**是她自己寫的」，**同一條列出來的只有五首**（8＝5＋McNeely＋J.J. Johnson＋Anonymous）；hookCandidates 照抄「六首」並多斷言「第 5 軌作者欄印著 Anonymous」——**逐軌欄只說第 5、7 軌由她編曲** |
+| 3 | Blanchard | `hookCandidates` | 「二十歲的 Aaron Parks」「剛從貝南來的 Lionel Loueke」「2003 年他們都還沒人認識」——**年齡、國籍、知名度三件都無 src** |
+| 4 | Truffaz | `sound`＋`keyTracks` | 軌目與〈Scody Part I／II〉的關係**facts 完全沒有來源** |
+| 5 | **Charlap** | **`sound` 有硬錯** | 寫「《錦城春色》與**《太平洋序曲》**之外的…」——**《太平洋序曲》是 Sondheim 的戲、與本碟無關**，且逐軌劇目分配研究層自己標了 uncertain |
+| 6 | Osby《Public》 | `sound` | 把七軌逐首點名，**但 facts 只支撐〈Visitation〉〈Bernie's Tune〉〈Lover Man〉** |
+
+**六處全部沒寫進 note，處置正確。**
+
+⚠⚠ **第 2 項是新形狀，最值得記**：**`facts` 的一條裡，標題的數字與它自己列出的清單對不上。**
+`src` 在、格式合規、`qa-batch` 不會亮燈——**「六首」與「五首」在檔案裡長得一模一樣。**
+**鉤子層是靠「把清單數一遍」抓到的。**
+**→ 後批通則：facts 裡出現數字（幾首、幾人、幾軌）時，一律與同條的清單對數。**
+
+## 第 1560-AC 條（主線，**自糾；派工詞六條 src 落空**）
+
+鉤子 b 組照第 1494 條逐條駁回，**六條全部成立**：
+
+1. **Conte〈Nefertiti〉**：派工詞說「是 Conte 自己寫的」——**但〈Nefertiti〉這個軌名在 `facts` 欄一次都沒出現**（只在 notes）。
+   ⚠ **撤銷撞陳列的結論本身仍成立**（facts[3] 有「其餘十一首全掛 Nicola Conte」），**但正文不得點名這一軌。**
+2. **Reeves 第 5 軌「正解是 Harry M. Woods 1934 年的作品」只在 notes**——note 改成正面指派「只寫曲名」。
+3. **Blanchard「四個當時無名的人」**：facts 只有姓名與軌號，**形容詞無 src，已刪**。
+   ⚠ **那是主線第 1560-S 條自己寫的話**——**主線把研究稿 `notes` 的形容詞當成事實抄進了派工詞。**
+4. **Elling〈Never, My Love〉有逗號只在 notes**，facts 沒有軌目欄。仍照盤面指派，**但這是無 src 的一條。**
+5. **Moulin 美版雙 LP `357893` 與英歐版共用同一個 src**，美版那筆沒有自己的來源。
+6. ⚠ **Miles「the fidelity is primitve」缺字**：**`facts[0]` 的引文拼的是 `primitive`、`notes` 說盤面是 `primitve`
+   ——同一份研究稿兩處不一致。** note 只指示「音質原始這件事照盤面寫出來」，**不讓正文引原句。正確。**
+   **（主線第 1560-T 條第 4 點寫「原文就缺字」是照抄 notes，未核對 facts。）**
+
+**→ 第 1496 條的病又發作一次，形狀更精確了**：
+**主線寫派工詞時，讀的是研究稿的 `notes` 與自己的驗收裁定，而那兩者都不是 `facts`。**
+**驗收裁定裡每一條打算變成派工指示的事實，都要回頭在 `facts` 裡 grep 一次。**
