@@ -1306,3 +1306,50 @@ Carnegie Hall performance were found in the Library of Congress**」（**判 (�
   （`MANHATTAN 09539 /BLG`、`NARADA JAll 37331 /BLG`）——**它是通路碼，不是 imprint，看到它不代表那張碟是 Blue Note**（c-160 rulings 第 1631／1633 條）。
 
 **到此合計覆蓋：Billboard 1955→2007 全年（2005 由 c-159 a、2006 由 c-159 b、2007 由 c-160 a 抓；2005 缺 3 期、2006 缺 1 期、2007 缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-161 **a 組**策展層自抓：**Billboard 2008 年全年**）
+
+**c-161 a 組 23 筆裡有 22 筆的年份落在 2008**，而 c-160 a 入庫 2007 之後的缺口正好是 2008——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2008-ocr.txt.gz` | **1.8 MiB 壓縮 / 4.1 MiB 原文** | **2008-01-05 → 2008-12-20，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **505** | **只有 `2008-12-27`（404）——與 2003 缺 01-04、2004 缺 01-03、2005 缺 3 期、2006 缺 12-30、2007 缺 12-29 同形** |
+
+- **格式、目錄與檔名與前幾份完全相同**：`BB-YYYY-MM-DD.pdf`（週六）；每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、
+  頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁的全文**（任何印了 `BLUE NOTE` 的榜單或評介頁都整頁收進去）。
+- ⚠ **URL 路徑在 2008 這一段改過**：`https://worldradiohistory.com/Archive-Billboard/00s/2008/BB-…` 會回 **301**，
+  **實際位置是 `https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2008/BB-YYYY-MM-DD.pdf`**——**用 `curl -L` 或跟著 redirect 抓即可，不要因為 301 就判缺期。**
+- ⚠ 照第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR（**這台機器沒有 `pdftotext`**）；「枚舉當年週六＋`Range: bytes=0-64` 探測」**在本線是第八次生效**。全年 51 期下載＋抽字約四分鐘。
+- **⚠ 2007 沒有重抓**（第 1280 條）：c-160 a 已入庫 `billboard-bn-2007-ocr.txt.gz`，本棒只 `zgrep` 既有檔（查 Kenny Burrell 與目錄號 `74906`，**0 命中**），**既有檔一字未動**。
+- **關鍵字集**（約 100 個）：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／
+  `traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／
+  `manhattan records`／`emi music canada`／`blue note label group`／`/blg`／`emi jazz`）＋ c-161 a 的 23 個藝人名與盤名
+  ＋ 目錄號片段 `74906`／`87848`／`89658`／`96365`／`98070`／`84185`／`07699`／`264287`／`15363`／`26225`／`28104`／`35066`／
+  `214817`／`01468`／`02465`／`04454`／`11795`／`17462`／`17465`／`2911223`／`4372626`／`09011`／`380928`。
+  ⚠ **查別的 2008 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **2008 年對本線的產出遠好於 2007，而且原因是國別不是年份**（第 1664 條的驗證）：**c-161 a 收下的 19 張命中 10 張，
+  十張全部是美國盤；六張歐陸盤（Buscemi、Bosso & Girotto、Alsmann、Trijntje、Truffaz、Ron Carter 日本企劃）全部 0 命中。**
+  **`Reviews` 欄的 `Release Date:` 行在 2008 年回來了**：本批就撈到四個街頭日
+  （Rubalcaba `Feb. 5`、Cassandra Wilson `June 10`、Eliane Elias `Jan. 15`、Willie Nelson & Wynton Marsalis `June 8`⚠誤植）
+  ＋ 一個發行預告（Lionel Loueke `due March 25`）。
+- ⚠ ⚠ **2008 年最有用的五處**：
+  **`BB-2008-02-23` p55 的 Chart Beat 逐字「Fifty years after it was recorded, Horace Silver's "Live at Newport Jazz '58" debuts on
+  Top Jazz Albums at No. 9, the first top 10 title for the 79-year-old jazz pioneer since 1993. The album is on Blue Note,
+  Silver's label home from 1952 to 1980.」**（**本批 (甲) 判定的第三層證據**）；
+  **`BB-2008-02-16` p65 的 JAZZ 評介逐字「GONZALO RUBALCABA Avatar｜Producer: Gonzalo Rubalcaba｜Blue Note｜Release Date: Feb. 5」**
+  （**壓過 Discogs 美版標的 `2008-05-02`**）；
+  **`BB-2008-01-12` p39 逐字「ELIANE ELIAS Something for You… Blue Note Release Date: Jan. 15」**（**美版街頭日；日版早三個月，本批據此改判年份 2008→2007**）；
+  **`BB-2008-07-26` p60 逐字「Debuting at No. 20 on the Billboard 200, "Two Men With the Blues" (Blue Note) represents Nelson's
+  highest-charting album of the Nielsen SoundScan era and Marsalis' best-charting album of his career」**；
+  **`BB-2008-02-09` p64 的 Lionel Loueke 專文逐字「Maiden Voyage: Loueke Meets His Idols On Blue Note Debut … Blue Note debut, "Karibu," due March 25」。**
+- ⚠ **榜單廠牌欄的 `/BLG` 在 2008 年仍是常態**（`BLUE NOTE 87848/BLG`、`BLUE NOTE 89658/BLG`、`BLUE NOTE 07699/BLG`、
+  `BLUE NOTE 96365 /BLG`、`BLUE NOTE 01468 /BLG`、`BLUE NOTE 98070/BLG`、`BLUE NOTE 84185 BLG`、`BLUE NOTE 11795/BLG`）
+  ——**通路碼，不是 imprint**（第 1631／1633 條）。⚠ **同一批的 Smooth Jazz 電台榜另有 `BLUE NOTE/CAPITOL` 的寫法**（Eric Darius），**同樣是通路寫法。**
+- ⚠ **查無也要記（2008 全年 0 命中）**：`burrell`（連 2007 一起查，兩年皆 0）／`buscemi`／`bisceglia`／`jazz works`／`fabrizio bosso`／`girotto`／
+  `alsmann`／`geheimnis`／`trijntje`／`oosterhuis`／`amuedo`／`ken je mij`／`truffaz`／`sly johnson`／`turrentine`／`art farmer`／`brass shout`／
+  `aztec suite`／`invisible cinema`／`jazz & bossa`；
+  **`symphonica` 的命中全部是 Hits of the World 荷蘭榜的 `PAUL DE LEEUW SYMPHONICA IN ROSSO 2007 UNIVERSAL`**；
+  **`aaron parks` 的 2 次命中是別張碟的評介句「Pianist Aaron Parks and guitarist Matthew Stevens deliver lovingly phrased solos」**；
+  **`nascimento` 的 2 次命中是別人翻唱他的〈Ponta de Areia〉**（三者皆第 1250 條的人名／盤名假陽性）。
+
+**到此合計覆蓋：Billboard 1955→2008 全年（2005 由 c-159 a、2006 由 c-159 b、2007 由 c-160 a、2008 由 c-161 a 抓；2005 缺 3 期、2006／2007／2008 各缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
