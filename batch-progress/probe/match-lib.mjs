@@ -142,14 +142,34 @@ export const looseArtistOk = (want, got) => {
 // 而正解 collectionId 1443093435 在 gb 上好端端地擺著。
 // **`queryAlias` 的語意本來就是「外部服務認得的字串」（第 25 條），沒有規定是掛名還是盤名。**
 // 所以兩種都試：當掛名用、也當盤名用。多一兩個查詢字串的成本遠低於漏掉一張。
+// 2026-09-18（c-159 探測層 12/34 unavailable 查出，裁定第 1610 條）：
+// Blue Note 1985 年後線的策展層把 `queryAlias` 寫成**散文**——多個別名用「；」隔開、
+// 每個別名後面還跟著括號說明，例如：
+//   `Wynton Marsalis《The Magic Hour》（Apple 與 Billboard 榜欄形）；The Magic Hour（2004 Blue Note CD，8 軌）；ウィントン・マルサリス`
+// 整串被當成一個查詢字串送進 Apple `search`，四個 term 裡有三個是垃圾，
+// 只有第一個 `${artist} ${album}` 是乾淨的。掛名帶了「Quartet」之類的擴充形時那一個也會落空，
+// 於是整張判成 unavailable——**而 `tried` 記的是乾淨的 `us:0→0`，與「真的沒有」長得一模一樣。**
+// → 先把 alias 拆成一個個乾淨的候選字串再組 term。
+export function aliasParts(alias) {
+  if (!alias) return [];
+  return String(alias)
+    .split(/[；;]/)                                   // 多個別名
+    .map(x => x
+      .replace(/（[^（）]*）/g, ' ')                   // 全形括號說明
+      .replace(/\([^()]*\)/g, ' ')                    // 半形括號說明
+      .replace(/[《》「」『』]/g, ' ')                  // 書名號
+      .replace(/\s*[—–-]\s*/g, ' ')                   // 破折號連接的掛名＋盤名
+      .replace(/\s+/g, ' ').trim())
+    .filter(x => x && Array.from(x).length >= 2);
+}
 export function termsFor(c) {
   const list = [`${c.artist} ${c.album}`];
-  if (c.queryAlias) {
-    list.push(`${c.queryAlias} ${c.album}`);   // alias 當掛名
-    list.push(`${c.artist} ${c.queryAlias}`);  // alias 當盤名
-    list.push(`${c.queryAlias}`);              // alias 本身就是完整查詢字串的情形
+  for (const a of aliasParts(c.queryAlias)) {
+    list.push(`${a} ${c.album}`);   // alias 當掛名
+    list.push(`${c.artist} ${a}`);  // alias 當盤名
+    list.push(a);                   // alias 本身就是完整查詢字串的情形
   }
   if (hasNonLatin(c.artist) || hasNonLatin(c.album))
-    list.push(`${c.queryAlias || translit(c.artist)} ${translit(c.album)}`);
+    list.push(`${aliasParts(c.queryAlias)[0] || translit(c.artist)} ${translit(c.album)}`);
   return [...new Set(list.map(x => x.trim()).filter(Boolean))];
 }

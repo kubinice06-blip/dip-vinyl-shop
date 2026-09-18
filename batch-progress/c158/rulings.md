@@ -1239,3 +1239,127 @@ Joona Toivanen，義大利的 Boltro、High Five Quintet、Musica Nuda），**�
 ——不寫、不暗示、不從任何來源撿。**
 研究層**沒有寫進 `facts`／`sound`，只在 `notes` 標出來提醒下游**（主線已驗證：facts 與 sound 零命中）。**處置正確。**
 ⚠ **鉤子層與寫作層都會讀到那條 notes，派工詞要再提醒一次。**
+
+## 第 1560-N 條（主線）：**c158 研究 b 組交件——18 張全 full、年份改判 0、QA 全過；但 `yearVerified` 底下的月日／首發市場改了 4 張**
+
+**證據層命中**：**Discogs 原壓群 18／18（地基）**、**紙本 Billboard 17／18**（街頭日逐字 7 張）、
+MB 8、Apple 店面 5（另 3 次負面實查）、CAA 3 次（全 404）。
+
+**街頭日／首發市場改寫 4 張（年份不變）**：
+- **Van Morrison**：英版 `3862829` `released` **2003-10-20**，比美版早一天；℗© 是 Exile Productions
+  「under exclusive license to EMI Records Limited」、錄音全在英愛——**首發市場視為英國／愛爾蘭。**
+- **Cassandra Wilson**：**MB frd `2003-09-29` 取的是日版**；美版街頭日紙本三處一致 **Oct 7**。
+- **Renee Rosnes**：**美版 `10076578` `released` 2003-07-22，比 MB 的德版 09-05 早六週**，首發市場是美國。
+- **Reeves《Christmas Time Is Here》**：Discogs 2004-09-28 vs MB 2004-10-05，**依證據序取盤面**。
+
+## 第 1560-O 條（主線，**訂正本檔自己的三處；研究 b 實查**）
+
+1. ⚠ **第 1541／1547 條寫「Osby《Public》的 Billboard 樂評在 `BB-2004-06-05` p29」是錯的**
+   ——**正解 `BB-2004-06-12` p33**（2004-06-05 p29 那頁是 Auf der Maur 與 Tiësto）。
+   **第 754 行那張街頭日表裡的「2004-06-05 p29『RELEASE DATE: June 1』」同樣要改。**
+2. ⚠ **第 1553 條寫「Miles《Birdland 1951》的 VITAL REISSUES 評介在 `BB-2004-01-17` p29」是錯的**
+   ——**正解 `BB-2004-01-31` p32**；**2004 全年只有 01-10 p19 與 01-31 p32 兩處命中本碟**。
+   （第 970 行的引文內容本身沒錯，錯的是頁碼。）
+3. ⚠ **第 1547 條把 Osby《Public》列在「兩邊都薄，要寫逐軌變動」，那一格改成「release-level 帶軌號」**
+   ——**Discogs `22033726` 的 credit 本來就帶軌號**（`Nicholas Payton — 2, 4, 6, 7`、`Joan Osborne — 7`）。
+   ⚠ **但 `2659012` 那筆漏了鋼琴手 Megumi Yonezawa，引編制一律用 `22033726`。**
+
+## 第 1560-P 條（主線，**事實錯誤三處，全部推翻策展層**）
+
+1. ⚠⚠ **Osby《St. Louis Shoes》九軌零原創。** `curatorWhy` 寫的「他自己的〈Light Blue〉／〈Whirlwind Soldier〉／
+   〈Milton on Ebony〉」**三首都不是他的**：**Monk／Cassandra Wilson／Jack DeJohnette**。
+   三來源一致（Discogs 美版 `7911690` ＋歐版 `2652327` 逐軌欄 ＋ MB work 端點 `Whirlwind Soldier` writer＝Cassandra Wilson）。
+   ⚠ **而 Cassandra Wilson 就是本組第 7 張卡，兩卡 risk 可互指。**
+2. ⚠ **Van Morrison 第 13 軌是〈Get On With The Show〉，不是 MB／`mbNote` 寫的〈Little Village (reprise)〉**
+   （美版 `2631761` 與英版 `3862829` 兩筆原壓一致）。
+3. ⚠⚠ **Nicola Conte〈Nefertiti〉是 Conte 自己寫的，不是 Wayne Shorter**
+   （義版 `15125164` 與歐版 `357714` 兩筆逐軌欄都掛 `Nicola Conte`）。
+   **→ 第 1546／1275 條「翻 Shorter、池中有 seed《Nefertiti》」整條不成立，撞陳列那一處撤銷。**
+
+## 第 1560-Q 條（主線）：**獎項——策展層完全沒查，研究 b 逐項分清入圍與得獎**
+
+- ✅ **Dianne Reeves《A Little Moonlight》＝第 46 屆葛萊美最佳爵士人聲專輯「得獎作」**（BB 2004-02-21 p66）。
+- ❌ **Kurt Elling《Man in the Air》同屆同獎「入圍未得」——打敗他的就是同組的 Reeves**
+  （BB 2003-12-13 p73 入圍、2004-02-21 p66 得獎）。**這是本批最乾淨的一組對照，鉤子層可以用。**
+- ❌ **Pat Martino 第 46 屆入圍兩項**（《Think Tank》最佳爵士器樂專輯；〈Africa〉最佳爵士器樂獨奏），
+  **兩項皆未得**（輸給 Wayne Shorter《Alegría》與 Chick Corea〈Matrix〉）。
+- ❌ **Van Morrison 第 47 屆最佳當代藍調專輯入圍未得**（輸給 Keb' Mo'，BB 2005-02-26 p58）。
+- ❌ **Bill Charlap Trio《Somewhere》第 47 屆最佳爵士器樂專輯入圍未得**（輸給 McCoy Tyner《Illuminations》）。
+- ⚠ **Reeves《Christmas Time Is Here》沒有入圍也沒得獎**（第 47 屆該獎五席名單核過）——**已寫進 notes 防止寫作層順手加獎。**
+
+## 第 1560-R 條（主線，**黑膠店的卡，這條最重要**）：**策展層漏了四筆同期黑膠**
+
+- ✅ **Cassandra Wilson《Glamoured》有 2003 年歐版雙 LP**（Discogs `1669490`，`7243 5 81860 1 7`）
+  ——**第 1549 條只提了 2019 Tone Poet，原盤黑膠其實存在。**
+- ✅ **Erik Truffaz 有 2003 年歐版雙 LP**（`219894`，`583144 1`）。
+- ✅ **Marc Moulin 有 2004 年英歐版（`3527879`）與美版（`357893`）雙 LP 各一。**
+- ✅ Nicola Conte 另有 2004-11-01 的 **Schema 雙 LP `SCLP 386`**（**不同廠牌，正文要寫明**）。
+- **其餘 14 張逐張查過，確實只有 CD。**
+
+## 第 1560-S 條（主線）：**編制修正四張，其中一張是「本張最值得寫的一面」**
+
+- ⚠⚠ **Terence Blanchard《Bounce》的班底是 Aaron Parks／Robert Glasper／Lionel Loueke／Eric Harland
+  四個當時無名的人，逐軌欄還標了軌號**——**`curatorWhy` 完全沒提。**
+  ⚠ **第 9 軌盤面只印 `Medley`（7:06）**，MB 才寫〈Bounce - Let's Go Off〉——**照盤面。**
+- **Nicola Conte 自己只在第 13 軌彈吉他**，其餘十二軌只掛製作。
+- **Lovano Nonet 團名是九重奏、盤面卻列十位樂手**，Discogs 無軌號可判——**標 uncertain，正文不要去湊「九」。**
+  （同第 1420 條《52nd Street Themes》的形狀。）
+- **Osby《Public》見第 1560-O 條第 3 點。**
+
+## 第 1560-T 條（主線）：**來源本身有錯的五處，全部標 uncertain 並寫進 notes 擋下游**
+
+1. **Reeves《A Little Moonlight》第 5 軌〈What a Little Moonlight Can Do〉Discogs 作者欄掛成 `David Kent`／`Jimmy Stewart`**
+   ——**正解是 Harry M. Woods 1934 年的作品。不得照抄。**
+2. **Conte〈All Gone〉義版印 `Helma Pinter`、歐版印 `Harold Pinter`**——**正解是 Harold Pinter**（替 John Dankworth 寫詞的劇作家），已改用歐版。
+3. **Solal 四首原創的作者欄被 Discogs 掛到 `Claudia Solal`（他女兒）**，MB 無 work 關係可驗
+   ——**標 uncertain，正文只寫「團內自己的曲目」。** 另〈Softly as in a Morning Sunrise〉漏了作曲的 Sigmund Romberg。
+4. **Miles 第 6 軌盤面兩筆都印〈Tempus Flight〉、MB 作〈Tempus Fugit〉**（Bud Powell 原曲名）——標 uncertain。
+   ⚠ **盤面還有一句策展層沒引的**：「**the fidelity is primitve**」（**原文就缺字**）——**對要上架的卡很重要。**
+5. **軌名一律照盤面**：Martino 第 8 軌〈Earthings〉（MB 作 Earthlings）、Elling 第 11 軌〈Never, My Love〉（有逗號）、
+   Conte 第 13 軌〈Le Départ〉（有變音）。
+
+## 第 1560-U 條（主線）：**同批交叉五處，risk 應互指**
+
+1. **〈Some Other Time〉同時在 Trio Töykeät《High Standards》第 10 軌與 Bill Charlap Trio《Somewhere》第 6 軌**
+   ——**同一批兩張卡收同一首伯恩斯坦。**
+2. **Nicholas Payton 在本組出現三次**：Osby《St. Louis Shoes》固定小號、Reeves《A Little Moonlight》第 9 軌客座、
+   Osby《Public》第 2/4/6/7 軌客座。**且 BB 2004-01-24 p15 逐字說《St. Louis Shoes》是他與 Osby 生平第一次同進錄音室。**
+3. **Osby《Public》的節奏組（Robert Hurst／Rodney Green）與《St. Louis Shoes》同一組人**，只換鋼琴。
+4. **Joe Lovano 既是第 6 張卡的領班，也是 Martino《Think Tank》的側人。**
+5. **Burton Yount 一人做了本組四張的美術**（Osby StL、Lovano Nonet、Charlap、Miles）。
+
+## 第 1560-V 條（主線）：**封面替代 3／3，兩張 Osby 不可互套**
+
+| 卡 | 首選 | 次選 |
+| --- | --- | --- |
+| Osby《St. Louis Shoes》 | Discogs 歐版 `2652327` primary **600×595** | Apple `724762428` artwork |
+| Trio Töykeät《High Standards》 | Discogs 芬蘭版 `25776352` primary **600×600**（12 圖） | 歐版 `412931` primary／Apple fr `713292593` |
+| Osby《Public》 | Discogs 美版 **`2659012`** primary **598×600** | Apple `716770983` artwork |
+
+⚠ **兩張 Osby 是完全不同的圖，不可互套。** ⚠ **《Public》不要用 `22033726` 的圖，primary 只有 500×493**
+（但**編制要用 `22033726`**，見第 1560-O 條——**同一張碟，圖用一筆、編制用另一筆**）。
+
+## 第 1560-W 條（主線）：**未 ready 三張全部是「逐市場實查後的確定結論」，不是查不到**
+
+- **Solal《NY-1》**：UPC `724358439120` × 17 市場全 0；`search`「Martial Solal NY-1」× 6 市場全 0；
+  「NY-1 Village Vanguard」× 21 市場無一筆是 Solal；**fr 店面 Solal 全目錄 25 筆逐筆看過**，
+  唯一凡加德現場是已排除的 `292795072`（℗ 2008 Cam Jazz）。
+- **Reeves《A Little Moonlight》**：兩個 UPC × 20 市場**回的都是同一個 `716525814`，不存在第二個 id**；
+  再對該 id 在 **13 個市場**逐一 `entity=song`，全部「有頁、0 軌、0 preview」
+  ——**連同主線已查的九市場共 22 個市場形狀一致。第 1371 條確認。**
+- **Rosnes 同名盤**：兩個 UPC × 21 市場全 0；兩種團名寫法 × 6／7 市場全 0；
+  **dk/us/se 三市場 Rosnes 全目錄逐筆看過，與 2003 年大樂團盤相關 0 筆。**
+
+**c158 串流最終 ready 32／37。**
+
+## 第 1560-X 條（主線）：**紙本擴查與合訂陷阱第二次踩到**
+
+- **Trio Töykeät 紙本零命中**：範圍從 2003–04 擴到 2005，`töyke`／`toyke`／`high standards`／`rantala` 等拼法全試過，
+  **仍 0。第 1541 條覆核成立。**
+- **Rosnes 紙本對本碟零命中**（五處命中全是 SFJAZZ Collective 與她客座別人的唱片）。
+- ⚠ **`BB-2004-05-22.pdf` 的合訂陷阱研究 b 親自踩到**：Moulin 那篇 Global Pulse 在該檔 p115／p117 掃得到，
+  **實際是 2004-10-23 那一期的 p57／p59**，已全部改寫。**這是第 1577 條的第二個實例。**
+- **新拿到的商業數字**：Van Morrison **Billboard 200 最高 32 名、Nielsen SoundScan 23.2 萬張**（BB 2004-02-28 p73）；
+  Moulin **比利時 Ultratop 2004-10-09 法蘭德斯第 10、瓦隆第 14**，國際發行日紙本寫 Sept 27；
+  **Reeves《A Little Moonlight》與 Wilson 分居 2003 年終 Top Jazz Albums 第 24／25 名**；
+  Reeves Xmas **2004-12-25 爵士榜第 9 名**；Truffaz 前作《Bending New Corners》**法國金唱片十萬張**。
