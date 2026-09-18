@@ -1198,3 +1198,58 @@ Carnegie Hall performance were found in the Library of Congress**」（**判 (�
 **在 2004／2005 兩年皆 0 命中**；`rubalcaba` 兩年只有兩則側手報導、`petrella` 只有一則音樂節現場報導——**這幾張的正文不得引用任何榜位或評介。**
 
 **到此合計覆蓋：Billboard 1955→2005 全年（2003 由 c-158 a、2004 由 c-158 b、2005 由 c-159 a 抓，仍無斷點；⚠ 2005-03-26 一期站上缺檔），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-159 **b 組**策展層自抓：**Billboard 2006 年全年**）
+
+**c-159 b 組 22 筆裡有 15 筆的年份落在 2006**，而 a 組入庫 2005 之後的缺口正好是 2006——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2006-ocr.txt.gz` | **1.1 MiB 壓縮 / 2.6 MiB 原文** | **2006-01-07 → 2006-12-23，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **303** | **只有 `2006-12-30`（404）——與 2003 缺 01-04、2004 缺 01-03、2005 缺 01-01／12-31 同形** |
+
+- **格式、目錄與檔名與前幾份完全相同**：`Billboard/00s/2006/`、`BB-YYYY-MM-DD.pdf`（週六）；
+  每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **照第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR**（**這台機器沒有 `pdftotext`，不要白試**）；
+  **索引頁仍 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」在本棒是第六次生效**（1999／2001／2003／2004／2005／2006）。
+  **全年 51 期下載＋抽字不到一分鐘。**
+- **⚠ 本棒也獨立跑了一次 2005 全年**，探測結果與 a 組完全相同（**50 期 206、`2005-01-01`／`2005-03-26`／`2005-12-31` 三期 404**；
+  另試過 `BB-2005-03-26-OCR.pdf`／`Billboard-2005-03-26.pdf`／`BB-2005-03-26a.pdf` 三種檔名變體皆 404，**確認是站上真的缺檔**）。
+  **本棒用到的 2005 年八處證據逐一在 a 組的 `billboard-bn-2005-ocr.txt.gz` 裡 `zgrep` 得到**
+  （`Release Date: May 10`／`Release Date: Aug. 2`／`FLOW BLUE NOTE`／`HOUSE OF TRIBES`／`Everything's OK` 皆命中）
+  ——**故本棒沒有另存第二份 2005 檔，既有檔一字未動。**
+- **關鍵字集**（約 110 個）：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／
+  `contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`somethin' else`／`capitol jazz`／
+  `metro blue`／`connoisseur`／`manhattan records`／`emi music canada`）
+  ＋ c-159 b 的 22 個藝人名與盤名
+  ＋ **目錄號片段 `46808`／`52340`／`78274`／`78273`／`63405`／`63406`／`74584`／`74585`／`60671`／`60672`／`77132`／`77133`／
+  `11226`／`55885`／`31260`／`55534`／`41090`／`41092`／`41094`／`43120`／`55535`／`54541`／`55643`／`63398`／`55876`／
+  `58290`／`58291`／`58296`／`58297`／`59564`／`356688`／`668932`／`52995`／`56311`／`50251`／`50254`／`67606`／`66266`／
+  `66279`／`66298`／`67885`／`67904`／`67975`**。
+  ⚠ **查別的 2006 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **2006 年最有用的五處，全部在 Reviews 欄的 `Release Date:` 行**——**這一段的街頭日幾乎只出在這裡**：
+  **`BB-2006-04-15` p59**（Cassandra Wilson《Thunderbird》，`Producer: T Bone Burnett｜Blue Note｜Release Date: April 4`）、
+  **`BB-2006-05-27` p50**（Dr. John《Mercernary: The Songs of Johnny Mercer》，`Blue Note｜Release Date: May23`
+  ——⚠ **這一篇印在 `POP` 欄不是 `JAZZ` 欄**）、
+  **`BB-2006-07-22` p47**（Jane Bunnett《Radio Guantanamo》，`Producer: Larry Cramer｜Blue Note /EMI｜Release Date: July 18`
+  ——⚠ **那是美版街頭日，加版早一年，見 c-159 rulings 第 1596 條**）、
+  **`BB-2006-08-05` p50**（Joe Lovano《Streams of Expression》，`Release Date: Aug. 1`）、
+  **`BB-2006-08-26` p35 的 Jazz Notes 整篇專欄**（Patricia Barber《Mythologies》，逐字「It was released as "Mythologies" **Aug. 15** on Blue Note」
+  ＋古根漢獎助的來龍去脈；⚠ **同一篇在 `BB-2006-12-16` p99 原樣重刊，不是第二個來源**）。
+  另 **`BB-2006-10-21` p87 的 Jazz Notes** 逐字給出 Stefon Harris《African Tarantella》的「released **Oct. 3** on Blue Note」與副標、三套組曲來源與卡內基廳 Zankel Hall 開季日；
+  **`BB-2005-12-17` p55** 是 2006 年葛萊美爵士類入圍名單（Blanchard《Flow》與 Marsalis《House of Tribes》同時列名）。
+- ⚠ ⚠ **這兩年 Blue Note 沒有全版廣告**：2005＋2006 兩年 724 頁命中頁裡，`www.bluenote.com` 只出現 1 次、
+  `BLUE NOTE RECORDS` 的整頁廠牌廣告 **0 次**——**c-158 b 交接的第 3 句（「每年先去找 Blue Note 的全版廣告」）在這一段失效**，
+  **2001／2003 那種一頁解掉十張的廣告頁不再出現，街頭日改到 Reviews 欄去找**（2005–06 兩年合計撈到 **7 個街頭日**）。
+- ⚠ **數字形變要注意**：`Thunderbird BLUE NOTE 63398` 在 `BB-2006-11-11` p95 被讀成 **`63390`**（8→0）；
+  `Jazz → Jall／Jail` 在 2006 年仍偶有。
+- ⚠ **查無也要記（2005＋2006 兩年皆 0 命中）**：`wood brothers`／`ways not to lose`／`george robert`／
+  `holiday for skins`／`manhattan project`／`do the boomerang`／`junior walker`／`radio guantanamo`（2005 年 0、2006 年 1）；
+  **`wingspan` 在 2005 年的 4 次命中全部是 Paul McCartney 的《Wingspan (Hits and History)》**（盤名假陽性，第 1250 條）；
+  **`rubalcaba` 兩年只有 2 頁、且都是 Ignacio Berroa《Codes》的評介（他在那裡是製作人）**；
+  **`marc moulin` 唯一 1 頁（`BB-2006-03-11` p47）寫的是 Telex 的《How Do You Dance?》，不是《Placebo Years 1971-1974》**；
+  **`boomerang` 唯一 1 次命中是 `BB-2006-08-05` p49 Gainsbourg 致敬盤裡的〈Boomerang 2005〉。**
+- ⚠ **2006 年 Billboard 的榜單廠牌欄開始統一加通路碼 `/BLG`**（The Blue Note Label Group），
+  例如 `MYTHOLOGIES BLUE NOTE 59564 /BLG`、`MERCERNARY BLUE NOTE 54541 /BLG`、`AFRICAN TARANTELLA BLUE NOTE 41090/BLG`
+  ——**那是通路代碼，不是第 1540 條說的「國際榜當地公司欄」，不影響 (戊) 前置閘。**
+
+**到此合計覆蓋：Billboard 1955→2006 全年（2005 由 c-159 a 抓、2006 由 c-159 b 抓；2005 缺 3 期、2006 缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**

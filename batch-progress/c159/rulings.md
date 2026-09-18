@@ -527,3 +527,550 @@ Gianluca Petrella《Indigo 4》2005、Erik Truffaz《Saloua》2005、Tania Maria
 4. ⚠ **「疑似非爵士」的第二個獨立理由是「池中同掛名先例也沒有爵士」＋「沒進爵士榜、紙本掛的是別家廠牌」（第 1566 條）**——**只有曲風欄一個維度不退。**
 5. ⚠ **掛名：三邊以上用團名形才建新字串，只有 Discogs 一邊時照第 307 條走池中（第 1570 條）**；**`slice.json` 照抄 MB 的 `+`／`and`／逗號形 `chk-prop` 一個都不會亮燈。**
 6. ⚠ **Billboard 2005 已入庫**（`billboard-bn-2005-ocr.txt.gz`，50 期，**缺 2005-03-26 一期**）——**直接 `zgrep`，不要重抓（第 1280 條）**；**2006 以後仍然沒人掃**；⚠ **`BB-2004-05-22.pdf` 是兩期合訂，高頁碼其實是 2004-10-23（第 1577 條 C）。**
+
+---
+---
+
+# c-159 b 組裁定（編號 1590–1619）
+
+本段為 **c-159 b 組**（22 筆，**2005 年 7 張、2006 年 15 張**）策展層的裁定，編號 **1590–1609**
+（派工信給的區間是 1590–1619，**1610–1619 未用，留給後批**）。
+**本段只在檔尾 append，a 組的第 1560–1578 條與留白的 1579–1589 一字未動。**
+判準沿用 **c-158 a 第 1500–1516 條**（尤其第 1504 條的 (己) 影音載體、第 1505 條的 (戊) 宣傳盤陷阱）、
+**c-158 b 第 1530–1555 條**（尤其**第 1535 條「同一份 slice 放了同碟兩個 RG，`chk-prop` 事後永遠抓不到」**、
+**第 1536 條「曲風單獨不足以退，前置閘單獨足以退」**、**第 1540 條「零售盤以美版為準」**、
+**第 1542 條的 `pymupdf` 抽字法**、**第 1544 條「同一張碟兩個美版目錄號」**）
+與**同批 a 組第 1560–1578 條**（尤其第 1564 條的 (戊) 第七種形狀、第 1570 條的掛名分界、第 1577 條的紙本繞道法）。
+**a 組與 c-158 的條文一字未改。**
+
+---
+
+## 第 1590 條（c-159 b 交件）：**22 筆 → 收 16、退 6；退貨率 27.3%，是 1985 後這十四批最高的一組。本組的形狀是「六筆退件裡有五筆是『這張根本不是 2005–06 年的新錄音』」**
+
+| | 數 |
+|---|---:|
+| slice `g: "b"` | **22** |
+| **收** | **16**（**15 位**：`Joe Lovano` 兩張，其餘一人一張） |
+| **退** | **6**（**(乙) 2 筆、(戊) 1 筆、(己)＋(乙) 1 筆、重複 RG 1 筆、合輯 1 筆**） |
+| 年份改判 | **0**（**22 筆的 `slice.json` 年份覆核後全部成立**；⚠ 但 Jane Bunnett 那一張差點被紙本翻掉，見第 1596 條） |
+| 年份覆核成立 | **16**（收下的全部） |
+| 現場盤 | **1**（Wynton Marsalis《Live at the House of Tribes》，MB `secondary-types` 逐字 `["Live"]`，**第 397 條本組零漏標**） |
+| 獨奏盤 | **1**（Gonzalo Rubalcaba《Solo》） |
+| 撞陳列（需逐軌核） | **5 組**，其中 **1 組撞到 apex 王牌**（Lovano《Streams of Expression》↔ `Miles Davis —《Birth of the Cool》`，seed apex `hall`） |
+| 軌名＝池中卡名（第六種盲區） | **25 處**（收下的 16 張；全 22 筆含退件是 32 處）；⚠ **同藝人自撞 0 處** |
+| 新掛名字串 | **3**（`Jane Bunnett`、`George Robert`、`The Wood Brothers`）；**沿用 13**；**新造分裂 0** |
+| 曲風非 `['jazz']` | **4 張**（`['soul']` 1、`['folk','blues']` 1、`['jazz','world']` 1、`['jazz','soul']` 1） |
+| 編制欄「完全查不到」 | **2 張**（Al Green、Dr. John）；**「逐軌變動」5 張**；固定編制 **5 張**；**獨奏 1 張**；**「固定核心＋有軌號客座」3 張** |
+| `chk-prop` 標記 | **0**（122 批、4,947 卡；跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0） |
+| 紙本 | ⚠ **2005 用 a 組剛入庫的檔（第 1577 條，沒有重抓入庫）；2006 全年由本棒新抓並入庫**（第 1595 條） |
+
+**收下的 16 張**：Jane Bunnett《Radio Guantánamo: Guantánamo Blues Project, Volume 1》2005、Terence Blanchard《Flow》2005、
+Joe Lovano《Joyous Encounter》2005、Al Green《Everything’s OK》2005、Greg Osby《Channel Three》2005、
+**Wynton Marsalis《Live at the House of Tribes》2005（現場）**、George Robert《Wingspan》2006、
+Pat Martino《Remember: A Tribute to Wes Montgomery》2006、**Gonzalo Rubalcaba《Solo》2006（獨奏）**、
+Stefon Harris《African Tarantella: Dances With Duke》2006、Joe Lovano《Streams of Expression》2006、
+Don Byron《Do the Boomerang》2006、The Wood Brothers《Ways Not to Lose》2006、Dr. John《Mercernary》2006、
+Cassandra Wilson《Thunderbird》2006、Patricia Barber《Mythologies》2006。
+
+⚠ **第 315 條：16 ＋ 退表 6 ＝ 22 ✓。**
+
+⚠ ⚠ **給後批的一句總結**：**a 組第 1560 條說「2004–05 的清單裡復刻盤又回來了」，本組把話講得更硬——
+2006 年這一格的 Blue Note 同時在跑三條線：當年新錄音、`Connoisseur Series` 的 1950–60 年代復刻、以及 `Pacific Jazz` 的西岸復刻，
+三條線在 MB 上長得一模一樣（都是 `primary-type: Album`、廠牌欄都掛得到 Blue Note、frd 都是 2006）。
+唯一能分開它們的是 Discogs 零售條目的 `format` 欄與 `notes` 欄前兩行。**
+
+---
+
+## 第 1591 條（同批）：**退表 6 筆，逐筆與理由分類**
+
+| # | 卡 | rgMbid | 母體／實況 | 理由分類 | 詳 |
+|---|---|---|---|---|---|
+| 1 | **The Jazz Crusaders —《The Jazz Crusaders at The Lighthouse》** | `b3314971-95f7-3634-bddf-0697c76a2814` | 2006-05-15／16 的 CD 與數位；**Discogs 美版零售 2646882 的廠牌欄只有一格、逐字 `Pacific Jazz`**，notes 逐字「Tracks 1 to 7 **originally issued on Pacific Jazz ST-57**」（1962-08-05 現場） | **(戊) 前置閘：`Pacific Jazz` 復刻線** | 第 1592 條 |
+| 2 | **Stanley Clarke, Wayne Shorter, Michel Petrucciani & Lenny White —《The Manhattan Project》** | `8b4f60a5-065b-4eaf-b95f-f81d71a60181` | MB 轄下唯一 release `8580aed1` 的 media 逐字 `DVD`（7 軌）；**母體是 1990 年的 Blue Note `CDP 7 94204 2`（CD／LP／卡帶／雷射影碟全套）** | **(己) 形態：只有影音載體（第 1504 條）＋ (乙) 母體號段屬 Blue Note（雙重理由）** | 第 1593 條 |
+| 3 | **Don Byron —《Do the Boomerang: The Music of Junior Walker》** | `6c4493c1-57db-4bd4-87bf-25d1d59e2a56` | 轄下只有 `a09493c7`（2006 XE CD 12 軌，Blue Note `0946 3 41094 2 0`，bc 094634109420）；**與同批第 15 筆 `396b7ea7` 同目錄號、同 12 軌、同 artist-credit、同 frd** | **重複 RG（第 611 條第三種盲區／第 1535 條）：MB 把同一張碟建成兩個 RG，同批已收美版** | 第 1594 條 |
+| 4 | **Art Blakey —《Holiday for Skins》** | `38228ebb-1e24-479c-ba29-413e37d57181` | 2006-06-06 `Blue Note Connoisseur Series` 單片 CD；**Discogs 4993716 的 format 逐字 `CD, Compilation`，notes 逐字「Tracks 1-4 originally issued as Volume One (**Blue Note BST 84004**)／Tracks 5-8 originally issued as Volume Two (**Blue Note BST 84005**)」**；錄音 1958-11-09 | **(乙) 發行過、母體號段屬 Blue Note；⚠ 母體兩張都已在池中** | 第 1595 條 |
+| 5 | **Andrew Hill —《Pax》** | `c4a0aecc-59fd-30e8-9374-e167339b9432` | 2006-06-06 `Blue Note Connoisseur Series` CD 7 軌；**Discogs 11745086 notes 逐字「Tracks 1-5 originally issued in 1975 on **Blue Note BNLA 459**／Tracks 6 & 7 originally issued on **Mosaic MD7-161**」**；錄音 1965-02-10 | **(乙) 發行過、母體號段屬 Blue Note；⚠ 母體有兩層（Mosaic box ＋ Blue Note LP），Blue Note 那一層已在池中** | 第 1595 條 |
+| 6 | **Marc Moulin —《Placebo Years 1971-1974》** | `0298a068-9dac-3a1a-9463-2a48f8705753` | 2006 XE CD 9 軌；**Discogs 1075471 的 format 逐字 `CD, Compilation, Copy Protected`，notes 逐字「Compilation of tracks by Marc Moulin\'s early 70\'s jazzrock outfit Placebo／Tracks 2, 5 & 7 are from LP \"Ball of Eyes\"／Tracks 1, 4 & 9 are from LP \"1973\"／Tracks 3, 6 & 8 are from LP \"Placebo\"」** | **合輯（簡報第一節第 2 點）；⚠ 三張母體 LP 有兩張已在池中** | 第 1596 條 |
+
+⚠ ⚠ **六筆沒有一筆被 `chk-prop` 標記**（第 611／…／1501／1531／1561 條，**1985 後第十四組連續成立**）。**抓出來的方法各不相同**：
+**第 1 筆是「`slice.json` 的 `catno` 欄空、`live: true`、盤名帶 Lighthouse」→ 依第 1564 條去 Discogs 看零售條目第一格**；
+**第 2 筆是「`slice.json` 的 `format` 欄逐字 `DVD`」→ 第 1504 條的固定動作，一眼**；
+**第 3 筆是「同一份 slice 的第 15 與第 16 筆盤名前半相同」→ 第 1535 條要求的「寫 prop 之前先用軌目＋目錄號比對整份 slice」**；
+**第 4、5 筆是「錄音年在 1985 前」→ 依 (乙) 第一句去 Discogs 讀 notes 前兩行**；
+**第 6 筆是「盤名帶年份區間」→ 簡報第一節第 2 點的細看清單（Best of／Collection／Anthology 之外要再加一種：`<團名> Years <年>-<年>`）。**
+
+---
+
+## 第 1592 條（同批）：**《The Jazz Crusaders at The Lighthouse》退——(戊) 前置閘，`Pacific Jazz` 復刻線在 2006 年的形狀**
+
+**這一筆在 MB 上完全看不出問題**：RG `b3314971` 的 frd 是 `2006-05-15`、primary-type `Album`、secondary-types `["Live"]`、
+genres `["jazz"]`，**轄下兩筆 release 的 label-info 都只有 `Blue Note [713c4a95]`（正規 imprint）**，
+**而且 `slice.json` 的 `catno` 欄是空的**——**照 MB 判會直接收。**
+
+**去 Discogs 看零售條目，答案在第一行**：
+
+| 來源 | 廠牌欄第一格 | 目錄號 | 年 | format |
+|---|---|---|---|---|
+| **Discogs `2646882`（US **零售**）** | ⚠ **逐字 `Pacific Jazz`（唯一一格）** | `0946 3 52995 2 6` | **2006** | `CD, Album, **Reissue, Remastered**, Stereo` |
+| **Discogs `5064816`（Europe 零售）** | ⚠ **逐字 `Pacific Jazz`（第一格）** | `0946 3 56311 2 8` | 2006 | `CD, Album, Reissue, Remastered` |
+| **Discogs `3738505`／`11532378`（US 原盤）** | `Pacific Jazz` | **`PJ-57`／`ST-57`** | **1962** | `Vinyl, LP, Album` |
+
+**美版零售條目的 notes 逐字**：「Recorded live on **August 5, 1962** at the Lighthouse, Hermosa Beach, CA／
+**Tracks 1 to 7 originally issued on Pacific Jazz ST-57**／Tracks 8 & 9 are bonus tracks, previously unissued／
+Includes an 8-page insert with the original album liner notes and updated reissue notes.／**℗ & © 2006 Blue Note Records**」。
+
+**→ 判：退。理由分類寫「(戊) 前置閘：`Pacific Jazz` 復刻線」**（簡報 (戊) 那一句逐字列的四條復刻線之一）。
+⚠ **`℗ & © 2006 Blue Note Records` 不能拿來翻案**——**那是 2006 年持有 Pacific Jazz 目錄的公司名，不是盤面 imprint**；
+**第 1445 條問的是「零售盤實體上印的第一格是什麼」，答案是 `Pacific Jazz`。**
+⚠ **兩首 bonus 軌「previously unissued」也不能拿來套 (甲)**——**(甲) 問的是整張碟有沒有發行過，本張七軌 1962 年就發了。**
+⚠ **母體不交缺口**：`Pacific Jazz ST-57`（1962）是 Pacific Jazz 的原盤，**不在 Blue Note／Liberty／UA／Solid State 號段**，
+**(戊) 前置閘本來就把整條 Pacific Jazz 線排除在這條線之外**；⚠ **池中另有 `The Jazz Crusaders —《Lighthouse '68》`（seed ＋ c-141 b）
+與四張別人的 Lighthouse 現場盤，本張若收下會與它們同名撞陳列**。⚠ **本裁定可逆。**
+
+---
+
+## 第 1593 條（同批，**重要；(己) 與 (乙) 在同一張上同時成立**）：**《The Manhattan Project》——一張 1990 年的 Blue Note 唱片，2005 年只再版了它的演唱會影片**
+
+**第 1504 條的固定動作在本張兩秒內生效**：`slice.json` 的 `format` 欄逐字 `DVD`、`formats` 欄逐字 `["DVD"]`，
+回問 MB 後**轄下唯一一筆 release `8580aed1` 的 media 逐字是 `DVD`（7 軌）**，label-info `Blue Note` ＋ `EMI`、catno `724354430190`。
+**Discogs 只有兩筆 2005 年條目，format 欄逐字都是 `DVD, DVD-Video`（`12588157` PAL `724354430190`、`19583350` NTSC `7243 5 99859 9 2`），
+另有 2005 年日版促銷 DVD `11472208`（`TOBW-3212`，`The Blue Note Collection`）。**
+
+⚠ ⚠ **但本張比 c-158 a 退掉的 Norah Jones《Live in New Orleans》多一層**：**它有母體，而且母體是唱片。**
+Discogs 搜尋 `Manhattan Project Stanley Clarke Wayne Shorter` 的前十筆裡有**五筆 1990 年的唱片**：
+**`3306937`／`13058844`／`15610012`（US CD，`CDP 7 94204 2` 與 `CDP 79 4204 2`，廠牌欄 `Blue Note`）**、
+`2533086`（Europe LP，`064-79 4204 1`）、`12807556`（US 卡帶，`B4-94204`）、`13773860`（日版 CD，`TOCJ-5219`）。
+**→ 2005 年這一筆是 1990 年 Blue Note 專輯的演唱會影片版，(己) 與 (乙) 同時成立。**
+
+**→ 判：退。理由分類寫「(己) 形態：只有影音載體（第 1504 條）＋ (乙) 母體號段屬 Blue Note」。**
+
+⚠ ⚠ **依第 1395 條實查過 MB 才決定要不要交缺口，結論是不必交**：
+**MB `release-group?query=artist:"The Manhattan Project" AND release:"The Manhattan Project"` 回傳
+`646bf172-4236-4eff-97c4-f0b6b6c60826`（1990，primary-type `Album`，artist-credit `The Manhattan Project` **Group**）**——
+**這一筆已經在 `batch-progress/c168/slice.json` 裡（`g: "a"`，DE、`CDP 79 4204 2`、`note: "待人工判曲風"`）**，
+也就是簡報附錄那 75 張 `jazz-missing` 的其中一張，**管線已經接上，缺口表不必再記一筆。**
+⚠ ⚠ **但要提醒 c-168 的策展層兩件事**：**(a) 掛名是團名 `The Manhattan Project`，不是本批 slice 抄 MB 抄出來的
+`Stanley Clarke, Wayne Shorter, Michel Petrucciani & Lenny White` 四人串接形**（第 1570 條的分界：MB 的 RG credit 兩邊不同，**以 1990 原盤那一邊為準**）；
+**(b) 那張碟的曲風在 MB RG `8b4f60a5` 上逐字是 `["jazz"]`、tags `["jazz"]`，`待人工判曲風` 可以直接判掉。**
+⚠ **池中 `Michel Petrucciani` 已有 9 張、`Stanley Clarke` 1 張、`Wayne Shorter` 多張、`Lenny White` 0 張。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1594 條（同批，**重要；第 1535 條第二次應驗，而且這次兩個 RG 的盤名不同**）：**Don Byron 的同碟兩個 RG——留短名 RG、退長名 RG**
+
+`slice.json` 的 `g: "b"` 22 筆裡，**第 15 筆與第 16 筆是同一張碟**：
+
+| | **留（第 15 筆）** | **退（第 16 筆）** |
+|---|---|---|
+| rgMbid | `396b7ea7-5692-35f2-be05-a2c13685a90c` | `6c4493c1-57db-4bd4-87bf-25d1d59e2a56` |
+| MB title | **`Do the Boomerang`（短名）** | **`Do the Boomerang: The Music of Junior Walker`（長名）** |
+| frd | `2006` | `2006`（同） |
+| artist-credit | `Don Byron`（7478f0d5） | **同一個 Person** |
+| genres / tags | **`["funk","jazz","soul jazz"]`** | ⚠ **兩欄全空** |
+| release | `e95c741f` **US** CD **12 軌** `0946 3 41094 2 0`，**無 barcode** | `a09493c7` **XE** CD **12 軌** 同號，bc `094634109420` |
+
+**逐一核軌目：十二軌字字相同**（Cleo\'s Mood／Ain\'t That the Truth／Do the Boomerang／Mark Anthony Speaks／Shotgun／There It Is／
+Satan\'s Blues／Hewbie Steps Out／Pucker Up, Buttercup／Tally-Ho／What Does It Take (To Win Your Love)／(I\'m a) Road Runner），
+**連 bonus 軌都沒有差**（與 c-158 b 第 1535 條的 Dianne Reeves 日版多一軌不同，本組是**完全相同**）。
+**依第 1250 條「判同一張碟只有目錄號＋廠牌有效」：兩筆的目錄號都是 `0946 3 41094 2 0`、廠牌欄都是 Blue Note ＝ 同碟。**
+
+**→ 留美版 RG `396b7ea7`（國際首發、genres 完整），退 `6c4493c1`**，
+**歐版號與 barcode 寫進留者的 `label` 與 `mbNote`。**
+⚠ **辨認特徵與第 1535 條完全一致**：**同 frd、同 artist-credit、同軌目，其中一個 RG 的 `genres`／`tags` 全空——空的那個是後建的重複 RG。**
+⚠ **本組另有一張 `genres`／`tags` 全空但沒有重複 RG 的碟**（Greg Osby《Channel Three》，與 c-158 b 的 Greg Osby《Public》同形）
+——**再次確認：空 genres 只是訊號不是判準，必須配軌目＋目錄號才能判同碟。**
+
+⚠ ⚠ **本條比第 1535 條多一個坑：兩個 RG 的盤名不同，而且退掉的那個盤名才是對的。**
+**Discogs 全部零售條目（美 `1227076`、歐 `5475619`、宣傳 `21275953`／`36985596`、唱片俱樂部 `9486761`）的盤名逐字都是
+「Do The Boomerang : The Music Of Junior Walker」，Apple 條目 `715758776` 也是長名。**
+**→ 卡名仍取短名，理由是第 307 條的池中先例**：**c-157 a 收的 `Don Byron —《A Fine Line》` 盤面全名是
+《A Fine Line: Arias and Lieder》，池中卡就是砍掉副標的短名**——**同一位藝人、同一種副標形狀，照先例走；長名進 `queryAlias`。**
+⚠ **若後批遇到「留下來的 RG 盤名比零售盤短」而**池中沒有同藝人先例**，建議改取零售盤全名並在 rulings 寫明——**本條不是通則，是 Don Byron 的個案先例。**
+⚠ **本裁定可逆（改的是卡單值與一筆收退）。**
+
+---
+
+## 第 1595 條（同批，**重要**）：**(乙) 的兩筆都是 `Blue Note Connoisseur Series`，而且母體全部已經在池中——本線第一次「退件不產生任何缺口」**
+
+**兩筆的形狀一模一樣**：2006 年 6 月 6 日同一天發行、同一個 `Connoisseur Series` 限量線、目錄號相鄰（`58290`／`58291` 與 `58296`／`58297`）、
+**Discogs 零售條目的 notes 前兩行就把母體逐字寫出來。**
+
+| | **Art Blakey《Holiday for Skins》** | **Andrew Hill《Pax》** |
+|---|---|---|
+| rgMbid | `38228ebb` | `c4a0aecc` |
+| 錄音 | **1958-11-09，Manhattan Towers, NYC** | **1965-02-10，Van Gelder Studio** |
+| Discogs 零售 | `4993716`（US `0946 3 58290 2 0`）／`3795828`（XE `…58291 2 9`） | `11745086`（US `0946 3 58297 2 3`）／`2826107`／`4993365`（XE `…58296 2 4`／`…58297 2 3`） |
+| **format 欄逐字** | ⚠ **`CD, Compilation, Stereo`** | `CD, Album, Limited Edition, **Reissue**, Remastered` |
+| **notes 逐字** | **「Tracks 1-4 originally issued as Volume One (**Blue Note BST 84004**)／Tracks 5-8 originally issued as Volume Two (**Blue Note BST 84005**)」** | **「Tracks 1 -5 originally issued in 1975 on **Blue Note BNLA 459**／Tracks 6 & 7 originally issued on **Mosaic MD7-161**」** |
+| 母體在不在池中 | ⚠ **在**：`Art Blakey —《Holiday for Skins, Volume 1》`（seed ＋ c-137 a，1959）與《Volume 2》（seed ＋ c-137 a，1959） | ⚠ **在**：`Andrew Hill —《One for One》`（seed ＋ c-144 a，1975，`BN-LA459-H2`） |
+
+**→ 兩筆都判退，理由分類寫「(乙) 發行過、母體號段屬 Blue Note」。缺口表 0 筆。**
+
+⚠ ⚠ **《Pax》是第 1502 條「母體有兩層」的乾淨續例，而且兩層都不產生缺口**：
+**第一層是 1975 年的 `Blue Note BN-LA459-H2`（雙片 twofer《One for One》，Blue Note 號段 → (乙)，已在池中）**；
+**第二層是 1995 年的 `Mosaic MD7-161`（`The Complete Blue Note Andrew Hill Sessions (1963-66)` 七片 box，Discogs `6429162`）**——
+**Mosaic 是他廠，但 box set 是合輯形狀、不是本線的卡候選**，故不交缺口。
+⚠ ⚠ **這一筆正好把 a 組第 1563 條的警告走了一遍**：「某個目錄號 not released ≠ 那場錄音 not released」——
+**《Pax》從來沒有自己的 1960 年代 BST 號，看起來像 (甲)，但那場 1965 年錄音的前五軌 1975 年就以 twofer 出清過了。**
+**判 (甲) 前一定要用錄音日期去 Discogs 反查，本條第二次證明。**
+
+⚠ **《Holiday for Skins》的 `format` 欄逐字有 `Compilation`**，**但退的理由是 (乙) 不是合輯**——
+**它是兩張 1958 年原盤合成一片 CD，母體明確，走 (乙) 比走合輯乾淨**（與 c-158 a 第 1502 條的《Meet You at the Jazz Corner of the World》同形）。
+⚠ **Discogs `0180fabb`／`2641877`／`30358883`／`30358355` 等後來的 RevOla／Heavenly Sweetness／Rat Pack 版本
+（含兩筆 `Unofficial Release`）都不影響判斷。**
+⚠ **兩筆裁定都可逆。**
+
+---
+
+## 第 1596 條（同批）：**《Placebo Years 1971-1974》退——合輯；⚠ 而且三張母體 LP 有兩張已經在池中，只是掛在另一個掛名底下**
+
+**MB 的兩個型別欄位兩個方向都沒漏**（第 397／782 條這次沒中）：RG `0298a068` 的 primary-type `Album`、**secondary-types 空**，
+genres `["electronic","jazz","jazz rock"]`——**照 MB 判會收。**
+
+**Discogs 把答案寫死了**（`1075471`，Europe，`Blue Note 00946 356688 2 7`）：
+- **format 欄逐字 `CD, Compilation, Copy Protected`**；
+- **notes 逐字**：「**Compilation of tracks by Marc Moulin\'s early 70\'s jazzrock outfit Placebo.**／
+  Tracks 2, 5 & 7 are from LP \"**Ball of Eyes**\" (recorded in august 1971)／
+  Tracks 1, 4 & 9 are from LP \"**1973**\" (recorded in April 1973 at Start Studio)／
+  Tracks 3, 6 & 8 are from LP \"**Placebo**\" (recorded in February 1974 at Studio Madeleine)」。
+
+**→ 判：退。理由分類寫「合輯」**（簡報第一節第 2 點；與 c-158 b 第 1534 條的 Sarah Vaughan《RTL JAZZ》同一類）。
+
+⚠ ⚠ **實掃池中發現三張母體 LP 有兩張已經有卡，但掛名是 `Placebo` 不是 `Marc Moulin`**：
+**`Placebo —《Ball of Eyes》(1971，`['jazz','rock']`)` 與 `Placebo —《1973》(1973，`['rock']`)` 都在 seed**；
+**第三張《Placebo》(1974，CBS) 不在池中**——⚠ **seed 裡的 `Placebo —《Placebo》(1996，`['rock']`)` 是英國那個同名樂團的首張，不是比利時的這一張**（第 1250 條的掛名假陽性）。
+**→ 本張收下會與 seed 的兩張直接重疊六軌（9 軌裡的 2/5/7 與 1/4/9），這是第二個獨立的退件理由。**
+⚠ **缺口不交**：**三張母體 LP 的發行方是比利時 CBS，不在 Blue Note／Liberty／UA／Solid State 號段，也不在本線範圍。**
+⚠ **`Marc Moulin` 本人在本線另有卡**（c-158 b 收的《Entertainment》2004，第 1540 條），**與本張不是同一件事，正文不得互抄。**
+⚠ **紙本查過**：`marc moulin` 在 2005＋2006 兩年只有 1 頁（`BB-2006-03-11` p47），**寫的是他的電子三人組 Telex 的《How Do You Dance?》，不是這張**。
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1597 條（同批，**重要；本組最需要小心的一張，也是本組唯一一次紙本與資料庫差了一整年**）：**Jane Bunnett《Radio Guantánamo》——紙本給的街頭日是美版，比加版晚一年；`year` 維持 2005**
+
+| 層 | 說的是什麼 |
+|---|---|
+| **MB frd** | `2005`（**只有年份**） |
+| **Discogs 原壓群** | **三筆全標 `2005`**：加版 `8872190`（`Blue Note 09463-46808-2-0`）、歐版 `4799814`、美版 `5495048`（`Blue Note 0946 3 52340 2 2`） |
+| ⚠ ⚠ **紙本** | **`BB-2006-07-22` p47 的 JAZZ 評介逐字「JANE BUNNETT｜Radio Guantanamo: Guantanamo Blues Project Vol.1｜Producer: Larry Cramer｜**Blue Note /EMI**｜**Release Date: July 18**」** |
+| **Apple** | **us／ca／jp 三市場 ＋ `lookup?upc=094634680820` 四種查法全零命中** |
+| **錄音** | Discogs notes 逐字「Santiago de Cuba & Guantánamo de Cuba, **December 2003 & September 2005**／Toronto Recording: Wellesley Sound Studio, **October 2005**」 |
+
+**第 1487 條說「紙本要壓過 Discogs 原壓群，得給街頭日或發行公告」——本張的紙本給了街頭日，照字面該改判 2006。
+本條裁定不改，理由有二：**
+
+1. ⚠ ⚠ **那個街頭日是美版的，不是首發版的。** 廠牌欄逐字 `Blue Note /EMI`、目錄號對應的是美版 `0946 3 52340 2 2`；
+   **加版（`09463-46808-2-0`，EMI Music Canada／Blue Note Canada）是另一個 release，Discogs 與 MB 都標 2005。**
+   **與 c-158 a 第 1506 條的 Cassandra Wilson《Belly of the Sun》（「歐美版差一個月，紙本說的是美版」）同形，只是差距從一個月變成一年。**
+2. ⚠ ⚠ **加拿大的獎項把 2005 年鎖死了**：**維基 `Jane Bunnett` 條目的獎項表逐字有
+   「**2005**｜Urban Music Award (nomination)｜Best Jazz Recording of the Year｜*Radio Guantanamo Blues Project - Vol. I*」
+   與「**2006**｜Juno Award｜Contemporary Jazz Album of the Year｜同一張」**——
+   **2005 年就已經被加拿大獎項提名，實體首發必在 2005 年內完成；2006 年的 Juno 涵蓋的也是 2005 年底到 2006 年初的發行。**
+
+**→ `year` 取 2005（加版實體首發），美版街頭日 `2006-07-18` 寫進 `risk` 與正文可用的細節。**
+
+⚠ ⚠ **這一條要給後批一個可推廣的句子（本線新立）**：
+**「紙本給的街頭日只對它報導的那個市場有效。當 Discogs 原壓群裡有一個更早市場的零售條目時，
+紙本壓不過它——除非紙本自己說那是全球首發。」**
+**第 1487 條的原句（「紙本要壓過 Discogs 原壓群，得給街頭日或發行公告」）不變，但要加這一句限定。**
+⚠ **反過來的檢查也做了**：**Billboard 2005 全年（a 組入庫的 50 期）查 `radio guantanamo`／`jane bunnett` 只有 1 頁，
+是 `BB-2005-04-02` p45 的多倫多名人牆廣告名單，與唱片無關**——**美國市場 2005 年確實沒有這張，這與「加版先發、美版晚一年」一致。**
+⚠ **錄音期（2003-12／2005-09／2005-10）跨三段，正文不得寫成一次錄音，也不得把錄音年當發行年。**
+⚠ **本裁定可逆（改的是卡單的 `year`）。若研究層找到加版實體上的 2006 年印記，應改判 2006 並回寫本條。**
+
+---
+
+## 第 1598 條（同批，**本棒最大的一件事**）：**紙本——2006 全年由本棒新抓並入庫，Billboard 現已覆蓋 1955→2006；⚠ 但「找廠牌全版廣告」這個做法在這一段失效了**
+
+1. **2005 年沒有重抓**（第 1280 條）：a 組當天已入庫 `billboard-bn-2005-ocr.txt.gz`（50 期、524 命中頁，第 1577 條）。
+   ⚠ **本棒一開始確實另跑了一次 2005（自己的關鍵字集、421 命中頁），發現 a 組已經入庫後，
+   逐一 `zgrep` 驗證本棒用到的八處證據在 a 組那份裡全部命中，遂把自己那份丟棄、既有檔一字未動**（第 1280 條的正確收場）。
+   ⚠ **兩次獨立探測的缺期結果完全相同**：`2005-01-01`／**`2005-03-26`**／`2005-12-31` 三期 404，
+   **本棒另試 `BB-2005-03-26-OCR.pdf`／`Billboard-2005-03-26.pdf`／`BB-2005-03-26a.pdf` 三種檔名變體皆 404**——
+   **確認 `2005-03-26` 是站上真的缺檔，不是命名問題**（與 a 組的結論互相印證）。
+2. **2006 年由本棒新抓入庫**：`billboard-bn-2006-ocr.txt.gz`，**51 期、303 命中頁、缺 `2006-12-30` 一期**，
+   **`pymupdf` 抽文字層、不到一分鐘**（第 1542 條第三次生效），**`SOURCES-billboard-cashbox.md` 末尾已 append 一節。**
+
+**→ 本組 16 筆裡 11 筆從紙本拿到證據**，分布如下：
+
+| 證據強度（第 1487 條） | 張數 | 卡 |
+|---|---:|---|
+| ⚠ ⚠ **街頭日（足以壓過 Discogs）** | **7** | **Joe Lovano《Joyous Encounter》**（`BB-2005-05-14` p46「Release Date: May 10」）、**Greg Osby《Channel Three》**（`BB-2005-08-06` p39「Release Date: Aug. 2」）、**Cassandra Wilson《Thunderbird》**（`BB-2006-04-15` p59「Release Date: April 4」）、**Dr. John《Mercernary》**（`BB-2006-05-27` p50「Release Date: May23」）、**Joe Lovano《Streams of Expression》**（`BB-2006-08-05` p50「Release Date: Aug. 1」）、**Patricia Barber《Mythologies》**（`BB-2006-08-26` p35「released as \"Mythologies\" **Aug. 15** on Blue Note」）、**Stefon Harris《African Tarantella》**（`BB-2006-10-21` p87「released **Oct. 3** on Blue Note」）；另 **Jane Bunnett** 的美版街頭日（`BB-2006-07-22` p47）因第 1597 條不計入 |
+| **只有榜位／獎項提名** | **4** | Terence Blanchard《Flow》（Top Jazz Albums 六期 ＋ `BB-2005-12-17` p55 葛萊美入圍）、Wynton Marsalis《Live at the House of Tribes》（六期 ＋ 同一份葛萊美名單）、Al Green《Everything’s OK》（The Billboard 200 六期）、Pat Martino《Remember》（兩期） |
+| **紙本 0 命中（查過、確實沒有）** | **5** | **George Robert《Wingspan》**（`wingspan` 的 4 次命中全是 Paul McCartney）、**The Wood Brothers《Ways Not to Lose》**、**Don Byron《Do the Boomerang》**、**Gonzalo Rubalcaba《Solo》**（`rubalcaba` 兩年只有 2 頁、都是 Berroa 的評介）、**Jane Bunnett** 的 2005 年市場 |
+
+⚠ ⚠ **c-158 b 交接的第 3 句在這一段失效，要明講**：那一句是「廠牌全版廣告是這一段最值錢的一頁，每年先去找 Blue Note 的全版廣告」。
+**2005＋2006 兩年 724 頁命中頁裡，`www.bluenote.com` 只出現 1 次、`BLUE NOTE RECORDS` 的整頁廠牌廣告 0 次**
+——**2001 年 `BB-2001-06-09` p53 與 2003 年 `BB-2003-05-31` p75 那種一頁解掉十張的廣告頁，到 2005 年已經不再出現。**
+**→ 這一段的街頭日全部改到 `Reviews` 欄的 `Release Date:` 行去找，兩年合計撈到 7 個。**
+
+⚠ ⚠ **`Reviews` 欄的曲風分欄不可靠**：**Dr. John《Mercernary》的評介印在 `POP` 欄不是 `JAZZ` 欄**
+（同一期同一頁的上下文是 Jacynthe 的流行盤），**但廠牌欄逐字寫 `Blue Note`、同年 09-02 p79 又在 Top Jazz Albums 上**
+——**欄名不能拿來判曲風，只能拿來找街頭日**（與 c-158 a 第 1506 條「廣告的欄位名 OUT NOW／ON THE HORIZON 本身不可靠」同一種教訓）。
+
+⚠ **本組因此年份改判 0 張**——**七個街頭日全部與 MB frd 同日或同年，一次都沒有翻盤。**
+
+---
+
+## 第 1599 條（同批）：**「同一張碟兩個以上目錄號」本組 4 次；⚠ 另有 1 次是 MB 的 catno 欄本身壞掉**
+
+| 卡 | MB 釘的號 | 零售盤的第二（第三）個號 | **紙本引的是** |
+|---|---|---|---|
+| **Terence Blanchard《Flow》** | `7243 5 78274 2 3` | **`7243 5 78273 2 4`**（Discogs `19200304`、宣傳 `4465201`） | ⚠ **`BLUE NOTE 78273`（榜，六期都是）——MB 沒建的那一個** |
+| **Wynton Marsalis《Live at the House of Tribes》** | **兩個都建了**：`77132`／`77133`（**都只寫裸數字**） | 零售全名 `7243 4 77132 2 4` ＋ `BN-77132`／`7243 4 77133 2 3` | **`BLUE NOTE 77132`（榜）** |
+| **Pat Martino《Remember》** | `0946 3 11226 2 0`（US）／`0946 3 55885 2 1`（XE） | ⚠ **第三個：美版 CD-ROM 宣傳盤 `0946 3 11227 2 9V`**（Discogs `11042136`） | **`BLUE NOTE 11226`（榜，與 MB 同）** |
+| **Gonzalo Rubalcaba《Solo》** | `0946 3 31260 2 2` | **`0946 3 55534 2 0`**（Discogs `9767703`／`668561`／`28390021`） | — |
+| **Cassandra Wilson《Thunderbird》** | 三個都建了：`7243 8 63398 2 9`／`0946 3 55876 2 3`／`0724 3 863398 2 9`＋`863 3982` | — | ⚠ **`BLUE NOTE 63390`——OCR 把 `63398` 的 8 讀成 0** |
+
+⚠ **判準不變（第 1544 條）**：**兩個號的廠牌欄都是 Blue Note ＋ 軌目相同 ＋ 同年 ＝ 同碟的兩次壓片**（第 1250 條）；
+**`label` 欄一律把所有號並列**，否則研究層拿紙本的號去反查會查不到。
+
+⚠ ⚠ **本組新增一種毛病：MB 的 `catno` 欄本身被壓壞**——
+**Greg Osby《Channel Three》的 release `80ff7c2f` 的 label-info 逐字是 `7423860671-2-8`**
+（空格被吃掉、分段位置錯開），**真正的零售盤目錄號是 `7243 8 60671 2 8`（Discogs `1033021`）。**
+**這與簡報附錄第 1250 條說的「列舉檔的 `catno` 欄不能直接拿去反查」是同一個病，但發生在 MB 本體而不是列舉檔上。**
+**→ 給後批：`slice.json` 的 `catno` 欄長得像裸串或分段怪異時，一律以 Discogs 零售條目為準，不要照抄進 `label`。**
+
+⚠ **目錄號反查的假陽性本組 3 次，全部逐一核完是假陽性**（第 1250／1545 條第八到第十次應驗）：
+`52340` 撞 c-142《Turning Point》（MBID 片段）與 c-156《Who\'s on First?》（barcode `724352340323` 片段）、
+`78274` 撞 c-148《Generation》（**MB release id `78274eae` 片段**）、
+`74585` 撞 c-138《Hard Driving Jazz》（**Discogs master `274585` 片段**）。**真的同碟 0 筆。**
+
+---
+
+## 第 1600 條（同批）：**掛名——沿用 13、新字串 3、新造分裂 0；⚠ 「盤面／Discogs 比 MB 長」本組出現三次，三次都讓位給第 307 條**
+
+**沿用池中的 13 張**：`Terence Blanchard`、`Joe Lovano`（兩張）、`Al Green`、`Greg Osby`、`Wynton Marsalis`、`Pat Martino`、
+`Gonzalo Rubalcaba`、`Stefon Harris`、`Don Byron`、`Dr. John`、`Cassandra Wilson`、`Patricia Barber`。
+**新字串 3**：`Jane Bunnett`（MB a990342a Person，池中 0 張）、`George Robert`（5421a640 Person，池中 0 張）、
+**`The Wood Brothers`（2cdd6de7 **Group**，池中 0 張；⚠ 定冠詞照 MB 保留）**。
+
+⚠ ⚠ **三次「盤面／Discogs 比 MB 長」，判準與 a 組第 1570 條一致（三邊以上用團名形才建新字串）**：
+
+| 卡 | 長的那一邊寫的是 | 幾邊用長形 | 判 |
+|---|---|---:|---|
+| **Al Green《Everything’s OK》** | **Discogs 美版 CD／美歐黑膠／唱片俱樂部版藝人欄逐字 `The Reverend Al Green*`；Billboard 的 The Billboard 200 也逐字 `THE REVEREND AL GREEN`** | **2 邊**（MB 與 Apple 是短形） | **沿用 `Al Green`**（池中 16 張 seed 同字串），長形進 queryAlias |
+| **Joe Lovano《Streams of Expression》** | **Discogs 四筆零售條目的藝人欄全部逐字 `Joe Lovano Ensemble`** | **1 邊**（MB、Apple、Billboard 都是 `Joe Lovano`） | **沿用 `Joe Lovano`**，`Joe Lovano Ensemble` 進 queryAlias |
+| **Wynton Marsalis《Live at the House of Tribes》** | **英版宣傳盤盤名逐字「Amongst The People - Live At The House Of Tribes - New York City 15th December 2002」**（第 1505 條的反向變形：**長的是盤名不是掛名**） | 1 邊 | **盤名取零售盤短名**，長名進 queryAlias（**但長出來的那一段是本張唯一的錄音日來源，見第 1601 條**） |
+
+⚠ ⚠ **`Joe Lovano Ensemble` 那一筆要與 c-158 b 第 1538 條並讀，因為結果相反**：
+**那張（《On This Day…At The Vanguard》）建了 `Joe Lovano Nonet` 新字串，本張沒有。**
+**分界不是「盤面有沒有團名」，是「MB 的 RG artist-credit 有沒有團名」**——
+**那張的 MB credit 本身就是 `Joe Lovano Nonet`（兩邊一致），本張的 MB credit 是光桿 `Joe Lovano`（只有 Discogs 一邊）。**
+**→ 兩張並存不是分裂（第 1131 條：個人盤與團的盤各自掛名），但正文不得把兩張的編制互抄（一個九人、一個十二人）。**
+
+⚠ **新造分裂 0**：三個新字串在池中都是 0 張，`chk-prop` 的「同 rgMbid 不同掛名 0」「同掛名盤名詞元包含 0」兩道也全過。
+⚠ **本組另有三個「不得新造」的誘惑，都擋掉了**：`Greg Osby Trio`（盤面沒有）、`Stefon Harris & Blackout`（盤面沒有）、
+`Mac Rebennack`／`Dr John`（Discogs 與 Apple 的變體）。
+
+---
+
+## 第 1601 條（同批）：**年份——改判 0 張、覆核成立 16 張；⚠ 但本組有四個新的日期陷阱要記**
+
+| 陷阱 | 樣本 | 說明 |
+|---|---|---|
+| ⚠ ⚠ **Apple 的 ℗ 欄寫的是「現在的權利人」，不是發行年的廠牌** | **Terence Blanchard《Flow》：`℗ 2013 Blue Note Records`**（碟是 2005 年的）；**Dr. John《Mercernary》：`℗ 2006 Parlophone Records Ltd, a Warner Music Group Company`**（2013 年 EMI 拆分後 Parlophone 目錄才轉入華納） | **兩筆都不得引用**，年份與廠牌都要改用 Discogs 零售盤與紙本 |
+| ⚠ ⚠ **Apple 的 ℗ 年比實際發行年早一年** | **Cassandra Wilson《Thunderbird》：Apple `℗ 2005`、releaseDate `2005-01-01`；MB frd／Discogs 美版 `released`／Billboard 街頭日全部是 `2006-04-04`** | **四層打一層，取 2006**；Apple 的 2005 是版權年 |
+| **宣傳盤比零售盤早一年（第 1476 條）** | **Al Green《Everything’s OK》的 2004 年 Advance 盤 `7087 6 18870 2 0`；Gonzalo Rubalcaba《Solo》的 2005 年宣傳盤 `…2 2V`** | **只是年份下界，不得拿去改 `year`**（本組兩次，方向都一樣） |
+| ⚠ **錄音年與發行年差一年以上** | **Wynton Marsalis：錄 2002-12-15／發 2005-08-30（差兩年八個月，本組最大）**；另 Al Green（錄 2004 夏／發 2005-03）、Pat Martino（錄 2005-08／發 2006-04）、Don Byron（錄 2005-12／發 2006）、Joe Lovano《Streams》（錄 2005-12／發 2006-08）、George Robert（錄 2005-10／發 2006-07）、Lovano《Joyous》（錄 2004-09／發 2005-05）、Rubalcaba（錄 2005-06／發 2006-03）、Stefon Harris、Jane Bunnett | **九張，正文一律不得把錄音年寫成發行年**（第 1550 條的演出日汙染在本組 0 次中，但錄音日汙染的機會有九次） |
+
+⚠ **`YYYY-01-01` 年初佔位日本組 9 次**（Lovano ×2、Osby、Martino、Stefon Harris、Wood Brothers、Byron、Barber、Wilson、George Robert）
+——**只能證明年份、不得引用月日**（第 1447 條）。
+⚠ **真日期只有 3 筆**：**Blanchard `2005-06-07`、Marsalis `2005-08-30`、Rubalcaba `2006-03-07`**（三筆都與 MB frd 同日）。
+⚠ **Discogs 給出完整街頭日的有 4 張**（Al Green `2005-03-15`、Wood Brothers `2006-03-07`、Cassandra Wilson `2006-04-04`、George Robert `2006-07-15`）
+——**其中 Wood Brothers 與 George Robert 兩張是「只有 Discogs 給得出」**（第 1543 條，本組續例）。
+
+---
+
+## 第 1602 條（同批，**重要**）：**曲風——12 張 `['jazz']`、4 張不是；三張「非爵士訊號滿的」全部判收，因為前置閘乾淨**
+
+| 卡 | `genres` | 訊號 | 判準 |
+|---|---|---|---|
+| **Al Green《Everything’s OK》** | **`['soul']`** | **MB genres `["soul"]`、tags `["soul","soul and reggae"]`（零爵士詞）；Discogs `Funk / Soul`／`Soul`；Billboard 只進 The Billboard 200 與 R&B／福音榜、爵士榜 0 次；池中 16 張 Al Green seed 卡零 jazz** | **四個訊號，但前置閘乾淨（美／歐／英／日零售第一格全是 Blue Note）→ 收**（第 1536 條 Van Morrison 先例） |
+| **The Wood Brothers《Ways Not to Lose》** | **`['folk','blues']`** | **MB genres `["blues","folk"]`（零爵士詞）；Discogs `Jazz, Rock, Funk / Soul, Blues`／style 只有 `Folk Rock`；兩年紙本 0 命中、爵士榜 0 次** | **三個訊號，但前置閘乾淨（美／加／歐／日零售第一格全是 Blue Note、製作人是自家藝人 John Medeski）→ 收** |
+| **Jane Bunnett《Radio Guantánamo》** | **`['jazz','world']`** | **MB RG 的 genres／tags 兩欄全空；Discogs `Jazz`／`Contemporary Jazz, Latin Jazz, Post Bop`；內容主體是古巴 changüí 田野錄音** | **一個非爵士訊號（曲目來源）→ 加第二個值，不退**（Dr. John 先例） |
+| **Don Byron《Do the Boomerang》** | **`['jazz','soul']`** | **MB genres `["funk","jazz","soul jazz"]`；Discogs `Jazz, Funk / Soul`／`Soul-Jazz, Funk`；十二軌是 Motown 曲目** | **一個非爵士訊號 → 加第二個值，不退** |
+
+⚠ ⚠ **本組最需要寫下來的一筆是 Dr. John《Mercernary》判 `['jazz']`，因為池中同一位藝人有兩套先例**：
+**歌本盤走 `['jazz']`（c-156 a 的《Duke Elegant》，Ellington 歌本）；自作紐奧良盤走 `['blues','jazz']`（c-157 b 的《Creole Moon》、c-159 a 的《N\'Awlinz》）。**
+**《Mercernary》是 Johnny Mercer 歌本，照《Duke Elegant》走。**
+⚠ **`Billboard` 把它的評介印在 `POP` 欄**——**那是第三個訊號，但第 1598 條已說明欄名不能拿來判曲風。**
+⚠ **MB 的 genres 本身有 `smooth jazz` 這種在本線一律不跟的細分詞**（與 a 組第 1572 條一致：**本組 6 張 MB／Discogs 掛了非爵士細分詞，一張都沒有跟**）。
+
+⚠ **本組有兩張的 `genres` 完全不含 `jazz`（Al Green 與 Wood Brothers）**——
+**這是本線 1985 後十四批裡第一次在同一組出現兩張，上架時的曲風標記要與 Blue Note 爵士線分開。**
+
+---
+
+## 第 1603 條（同批）：**編制欄——第 1367 條的四種形狀本組全中，而且「credits 看起來空」在本組真的救回一張**
+
+| 分類 | 張數 | 卡 |
+|---|---:|---|
+| **「完全查不到演奏者」** | **2** | **Al Green《Everything’s OK》**（Discogs 美／歐／日三版的 credits 都只有 `Al Green｜Producer, Arranged By` 與 `Willie Mitchell｜Producer, Arranged By` 兩筆，track-level 0 筆——**Hi Rhythm 與 Memphis Horns 的名單三個版本都沒有**）、**Dr. John《Mercernary》**（release-level 12 筆全是製作／混音／母帶／`Written-By`，track-level 9 筆也全是 `Written-By`，**一個演奏欄都沒有**） |
+| **「逐軌變動」（必須附軌號）** | **5** | **Joe Lovano《Streams of Expression》**（19 筆裡 9 筆帶軌號，**兩位鋼琴手 John Hicks `1, 2, 8 to 10` 與 James Weidman `3 to 5, 7` 分工**）、**Cassandra Wilson《Thunderbird》**（10 筆裡 8 筆帶軌號，**三位鼓手互不重疊**）、**Jane Bunnett**（release-level 13 ＋ **track-level 36 筆**）、**Don Byron**（14 筆裡 6 筆帶軌號）、**Terence Blanchard《Flow》** |
+| **固定編制** | **5** | Joe Lovano《Joyous Encounter》（四重奏）、Greg Osby《Channel Three》（三重奏，三人都掛人聲）、George Robert《Wingspan》（四重奏）、Pat Martino《Remember》（四重奏＋打擊）、Stefon Harris《African Tarantella》（九重奏） |
+| **獨奏** | **1** | Gonzalo Rubalcaba《Solo》（**Discogs release-level 只有 3 筆，正文不得列出任何其他樂手**） |
+| **「固定核心＋有軌號客座」** | **3** | Wynton Marsalis（五重奏＋Orlando Rodríguez perc `1, 2, 5, 6`＋Robert Rucker tambourine `6`）、The Wood Brothers（二人團＋Kenny Wollesen d `3, 4, 7 to 9`）、Patricia Barber（四重奏＋Choral Thunder `10, 11`、Grażyna Auguścik `11`、**Paul Falk `07`——兩位數軌號寫法**） |
+
+⚠ ⚠ **第 1281／1367／1429 條在本組救回一張**：**Terence Blanchard《Flow》的第一個 Discogs 美版條目 `833859` 的 credits 只有 2 筆
+（`Bruce Lundvall｜Executive-Producer`、`Herbie Hancock｜Producer`），看起來就是「Discogs 沒標編制」**——
+**換版本再查，第二個美版條目 `19200304` 有 17 筆、歐版 `4729035` 有 13 筆，而且帶軌號
+（Aaron Parks p `2, 3, 5, 8, 9, 11`、Hancock p `4, 7`、Gretchen Parlato vo `8, 9`、Howard Drossin 合成器程式 `11`）。**
+**→ 「credits 空白也可能只是那一版的條目空白」第十二次被推翻。**
+⚠ **`tracklist[].extraartists` 本組逐張展開過**：**六張的 track-level 真的是 0 筆（George Robert、Rubalcaba、Stefon Harris、Wood Brothers、Barber、Lovano《Streams》），但那是查過之後的結論不是預設。**
+⚠ **兩張「完全查不到」的正文只能寫製作人、錄音地與曲目來源，不得列樂手。**
+
+---
+
+## 第 1604 條（同批，**重要**）：**撞陳列 5 組（1 組撞 apex）＋ 軌名撞池中卡名 25 處；`chk-prop` 四道全過、一個燈都沒亮**
+
+**逐軌比對用的是 MB 的 `release?…&inc=recordings` 端點 ＋ Discogs 的 tracklist ＋ 鄰卡的軌目（第 738／859 條要求看到 CD 層）。**
+
+| # | 本組的碟 | 撞到池中的 | 實情 |
+|---|---|---|---|
+| 1 | ⚠ ⚠ **Joe Lovano《Streams of Expression》** | **`Miles Davis —《Birth of the Cool》`（seed，**apex `hall` 王牌**）** | **3–5 軌逐字是〈The Birth of the Cool Suite - Prelude, Moon Dreams〉〈…Interlude No.1, Move, Interlude No.2〉〈…Boplicity, Postlude〉**，由**當年原九重奏的法國號手 Gunther Schuller 本人重新配器**、2005-12 新錄——**不是 1949–50 年的原錄音**；⚠ **軌名太長，字串比對抓不到，這一組是靠內容比對抓出來的**（第 611 條第五種盲區） |
+| 2 | ⚠ **Pat Martino《Remember: A Tribute to Wes Montgomery》** | **`Wes Montgomery` 的 10 張 seed ＋ 1 張 c-138 卡**，其中**《Full House》與《Road Song》兩張卡名直接是本張的軌名** | **十軌裡五軌是 Montgomery 寫的曲、全是 Martino 的翻奏**；**上架陳列要避開 Montgomery 區塊** |
+| 3 | **Don Byron《Do the Boomerang》** | **`Jr. Walker & the All Stars —《Shotgun》`（seed，1965）與《Road Runner》（seed，1966）** | **軌 5〈Shotgun〉與軌 12〈(I\'m a) Road Runner〉是翻奏**；另軌 6〈There It Is〉撞 `James Brown —《There It Is》`（1972），同樣是翻奏 |
+| 4 | **Stefon Harris《African Tarantella: Dances With Duke》** | **`Duke Ellington —《New Orleans Suite》`（seed，1970）** | **前三軌是該組曲的節選、Harris 重編**；**《The Queen\'s Suite》池中 0 張，不撞** |
+| 5 | **Gonzalo Rubalcaba《Solo》** | ⚠ **`Gonzalo Rubalcaba —《Paseo》`（c-159 **a 組**，2004）** | **本張有四軌軌名以「Paseo」開頭**（〈Paseo Iluminado〉〈Paseo en Media Luz〉〈Paseo Azul〉〈Paseo Morado〉）——**同藝人、同批、不同碟；目錄號、軌數、編制全不同，正文不得互抄，也不得寫成續集** |
+
+⚠ **軌名＝池中卡名 25 處（收下的 16 張）**，其中 **20 處是純字串假陽性**（〈The Source〉撞 Ayreon／Ted Hearne／Ali Farka Touré、
+〈Alone Together〉撞三張、〈Test Pattern〉撞 Ryoji Ikeda、〈Nightfall〉撞 Candlemass、〈Pygmalion〉撞 Slowdive、
+〈Atlas〉撞 Real Estate、〈Spirit〉撞 Earth, Wind & Fire、〈Together〉／〈Free Spirit〉／〈The Mountain〉／〈New Life〉撞四組、
+〈[untitled]〉撞 Nas 與 KOHH……），**5 處是上表的實質重疊。**
+⚠ ⚠ **同藝人自撞 0 處**（c-158 b 第 1546 條那種「撞到他自己前一批的同名盤」本組沒有重演）；
+⚠ ⚠ **但撞到 apex 王牌 1 處**（上表第 1 組），**是 c-158 b 零 apex 之後的第二次**（a 組本批是 2 處）。
+⚠ **`chk-prop` 四道全過**：122 批、4,947 卡；**跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0**，**標記 0。**
+⚠ **第 611 條再次成立**：**上面 5 組實質重疊、6 筆退件，`chk-prop` 一個都沒抓到。**
+
+---
+
+## 第 1605 條（同批）：**店面與 CAA——「四種查法全空」1 次、`lookup?upc=` 零命中 4 次；CAA 有 1 張整個 RG 層 404**
+
+| 查法 | 本組命中 | 說明 |
+|---|---:|---|
+| **Apple `search` us** | **15／16** | 只有 **Jane Bunnett** 零命中；⚠ **Al Green 那一筆的 us 命中十筆全是舊盤與 Radiohead／Miley Cyrus 之類的雜訊、本張不在內**，實質也是空 |
+| **Apple `search` ca** | 14／16 | George Robert 與 Jane Bunnett 零命中（**第 1246 條的市場替換做過了**） |
+| **Apple `search` jp** | 13／16 | George Robert、Jane Bunnett、Al Green 零命中；⚠ **Pat Martino 與 Wood Brothers 的 jp 各撈回 10 筆，其中只有 1 筆是本張**（第 528／707 條） |
+| **`lookup?upc=`** | **12／16** | **零命中 4 次**：Jane Bunnett、Al Green、Pat Martino、Stefon Harris、Joe Lovano《Streams》（**5 次**，其中 Lovano 那次三市場 search 有命中） |
+| **CAA release-group 層** | **15／16 有圖** | ⚠ **Jane Bunnett 整個 RG 層回 `HTTP 404`、0 圖**（本組唯一一張，封面要走 Discogs `5495048` 或加版實體）；圖最多的是 Patricia Barber（9 圖）與 Cassandra Wilson（7 圖） |
+
+⚠ **CAA 的圖源不是原盤的有 3 張**（研究層要看版式）：**George Robert**（來源是 US 數位 `3310db82` 不是 CH 實體）、
+**Gonzalo Rubalcaba**（來源是 XW 數位 `4d0f1587` 不是美版實體）、**Cassandra Wilson**（來源是歐版 `5e4299ab` 不是美版）。
+⚠ **「四種查法全空」1 次**（Jane Bunnett，**而且 CAA 也是 0 圖，是本組證據最薄的一張**）；
+**Al Green 實質上也是四種全空，只是 `search` 撈回了同藝人的舊盤。**
+⚠ **所有店面查詢的時間都是 2026-09-18**（第 1432 條：「零命中」要註明查詢時間）。
+⚠ **Apple 一個條目混多張碟的情形本組 0 次**（第 865 條），**但「候選給錯碟」1 次**：
+**查 `Gonzalo Rubalcaba Solo` 會同時撈到 `Jon Secada & Gonzalo Rubalcaba —《Solos》`（差一個字母）**。
+
+---
+
+## 第 1606 條（同批）：**(戊) 前置閘判了 15 次過閘、1 次退；⚠ 「零售盤以美版為準」在本組救了一張、「Connoisseur Series」在本組不是前置閘問題**
+
+**退的 1 次是 The Jazz Crusaders（第 1592 條，`Pacific Jazz`）。**
+**`Capitol Jazz`／`West Coast Classics`／`Roulette Jazz` 三條線本組 0 筆；`Blue Note Compagnie`（`BNS-`）與 `Blue Note Digital`（label `0293ae5c`）本組 0 筆。**
+
+| 卡 | 不乾淨的訊號 | 第 1445 條的第二層證據 | 判 |
+|---|---|---|---|
+| ⚠ ⚠ **Dr. John《Mercernary》** | **歐／英／日四筆零售條目的廠牌欄第一格全部逐字 `Parlophone`（EMI 的英國本體），Blue Note 一次都沒排第一格**；Apple ℗ 欄也是 Parlophone | **美版兩筆零售 `11125202`／`27224232` 的第一格逐字就是 `Blue Note`**；**`BB-2006-05-27` p50 評介的廠牌欄逐字 `Blue Note`、`BB-2006-09-02` p79 的榜逐字 `BLUE NOTE 54541 /BLG`** | **過**（第 1540 條「零售盤以美版為準」，與 Renee Rosnes 同形） |
+| **George Robert《Wingspan》** | **Apple ℗ 逐字 `℗ 2006 EMI Music Switzerland AG`；MB label-info 是 `Blue Note` ＋ `EMI` 兩格** | **Discogs 全庫唯一零售條目 `13099801` 的第一格逐字 `Blue Note`、第二格才是 `EMI`** | **過**（與第 1540 條 Marc Moulin《Entertainment》同形；另依簡報附錄「2000 年後的歐洲分支查到的全是正規發行」） |
+| **Jane Bunnett《Radio Guantánamo》** | **MB 的加版 release `56f68868` 的 label-info 逐字只有 `EMI Music Canada [095b5fc8]`，沒有 Blue Note**；紙本的廠牌欄寫 `Blue Note /EMI` | **Discogs 加／歐／美三筆零售條目的第一格全部逐字 `Blue Note`**；MB 另一筆加版 `6f31df79`（同 barcode）掛的是正規 imprint `713c4a95` | **過** |
+| **Greg Osby《Channel Three》** | companies 欄有 `Oztone Productions`（Osby 自己的公司） | 美／歐零售第一格都是 Blue Note | **過**（與第 1540 條 Erik Truffaz 的 `Foufino Productions` 同形） |
+| **Patricia Barber《Mythologies》** | **2010 年的 Mobile Fidelity 黑膠 `MFSL 2-318` 第一格是 `Mobile Fidelity Sound Lab`、Blue Note 排第三格** | **2006 年美／加／歐三版零售第一格都是 Blue Note** | **過**（四年後的授權再壓不是零售首發，依第 1295／1445 條不得拿來推翻） |
+
+⚠ ⚠ **本組新增一句**：**`Blue Note Connoisseur Series` 不是 (戊) 的問題，是 (乙) 的問題。**
+**它印在盤面第二格、確實是 Blue Note 自家的系列名（不像 c-158 b 第 1534 條的 `RTL Jazz La Collection` 那種電台聯名），前置閘過得去；
+但它從定義上就是「Blue Note 舊目錄的限量復刻線」，看到它就要直接去讀 Discogs notes 的前兩行找母體。**
+**本組兩筆 (乙) 退件（第 1595 條）都帶這個系列名，而且兩筆的母體都在 notes 的第一、二行。**
+⚠ **`/BLG`（The Blue Note Label Group）是 2006 年起 Billboard 榜單廠牌欄的通路碼**，
+**不是第 1540 條說的「國際榜當地公司欄」，不影響前置閘。**
+
+---
+
+## 第 1607 條（同批）：**日版檢查逐張跑完——6 張有日版，日版早的 0 張，最接近的只差 1 天**
+
+**第 1063／1252 條是固定動作，本組 16 張逐一在 Discogs 上查過日版**：
+
+| 卡 | 日版 | 日版日期 | 與首發比 |
+|---|---|---|---|
+| **Wynton Marsalis《Live at the House of Tribes》** | `Blue Note／東芝EMI TOCJ-66266`（Discogs `11079174`） | **`released 2005-08-31`** | ⚠ **比美版 2005-08-30 晚 1 天**（本組最接近的一次） |
+| Al Green《Everything’s OK》 | `Blue Note／東芝EMI TOCP-67606`（`10577199`） | 2005（無日） | 不早 |
+| Pat Martino《Remember》 | `TOCJ-66279`（`11640154`） | 2006（無日） | 不早 |
+| Gonzalo Rubalcaba《Solo》 | `TOCJ-66298`（`9457843`） | 2006（無日） | 不早 |
+| The Wood Brothers《Ways Not to Lose》 | `TOCP-67904`（`11899453`） | 2006（無日） | 不早 |
+| Cassandra Wilson《Thunderbird》 | `TOCP-67885`（`3609255`） | 2006（無日） | 不早 |
+| Dr. John《Mercernary》 | `TOCP-67975`（`19446958`，⚠ **廠牌欄第一格是 `Parlophone`**） | 2006（無日） | 不早 |
+
+⚠ **其餘 9 張查無日版**（Jane Bunnett、Terence Blanchard、Joe Lovano ×2、Greg Osby、George Robert、Stefon Harris、Don Byron、Patricia Barber）。
+⚠ **「不要預設日版一定早」第十四批連續成立**（第 1252 條）：**1985 後這十四批到現在為止，日版真的比首發早的只有 c-158 b 的 1 張、而且只早 8 天。**
+
+---
+
+## 第 1608 條（同批）：**a 組交接的六句話逐一回報**
+
+| a 組的話（第 1578 條結尾） | 本組實況 |
+|---|---|
+| 1. **「2002 年後復刻盤已經很少」那句失效了；2004–05 的清單裡錄音年在 1985 前的有 4/23** | ⚠ ⚠ **本組更高：22 筆裡錄音年在 1985 前的有 4 筆（Jazz Crusaders 1962、Manhattan Project 1989、Art Blakey 1958、Andrew Hill 1965），加上合輯 1 筆與重複 RG 1 筆，「不是 2005–06 新錄音」的共 6 筆 ＝ 全部退件。** **2006 年這一格的 `Connoisseur Series` 是主要來源（見第 1606 條）。** |
+| 2. **「某個目錄號 not released」≠「那場錄音 not released」（第 1563 條）** | ⚠ **在 Andrew Hill《Pax》上第二次應驗**：**它沒有自己的 1960 年代 BST 號，看起來像 (甲)，但 1965 年那場的前五軌 1975 年就以 `BN-LA459-H2` twofer 出清了**（第 1595 條）。 |
+| 3. **`catno` 欄空、或 MB 有 Blue Note 卻沒有目錄號時，一定要去 Discogs 看零售條目第一格（第 1564 條）** | ⚠ ⚠ **本組靠這一句抓到唯一的 (戊) 退件**：**Jazz Crusaders 的 `slice.json` `catno` 欄是空的、MB 兩筆 release 的 label-info 都只有正規 imprint `Blue Note`，Discogs 零售條目第一格卻是 `Pacific Jazz`**（第 1592 條）。 |
+| 4. **「疑似非爵士」的第二個獨立理由是「池中同掛名先例也沒有爵士」＋「沒進爵士榜、紙本掛的是別家廠牌」** | **本組四張非爵士訊號的碟全部判收**（第 1602 條）：**Al Green 中了「池中先例零 jazz」與「沒進爵士榜」兩項，但沒有中「紙本掛別家廠牌」——Billboard 的廠牌欄逐字 `BLUE NOTE 74584`**。**→ 分界在第三項，a 組那句成立。** |
+| 5. **掛名：三邊以上用團名形才建新字串，只有 Discogs 一邊時照第 307 條走池中** | **本組三次「長形」全部照這一句判**（第 1600 條）：Al Green 兩邊、Lovano Ensemble 一邊、Marsalis 宣傳盤盤名一邊，**三次都沿用短形，新造分裂 0**。 |
+| 6. **Billboard 2005 已入庫，不要重抓；2006 以後仍然沒人掃** | ⚠ **本棒一開始重抓了 2005（並行工作階段的時間差），發現 a 組已入庫後逐一驗證證據可在既有檔中 `zgrep` 到，遂丟棄自己那份、既有檔一字未動**（第 1598 條）。**2006 全年本棒新抓入庫，`SOURCES` 已 append。** ⚠ **`BB-2004-05-22` 兩期合訂那個坑本組沒用到 2004 年的檔，未重演。** |
+
+---
+
+## 第 1609 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案，以及「這一段實際用的是哪幾層證據」**
+
+- **`batch-progress/c159/prop-b.json`：16 張、15 位**（**`Joe Lovano` 兩張**）。**第 315 條：16 ＋ 退表 6 ＝ 22 ✓。**
+- **`node batch-progress/c159/chk-prop.mjs b` → 標記 0**（122 批、4,947 卡）。
+- **年份改判 0 張、覆核成立 16 張。**
+- **中間檔**（scratchpad `c159b/`，第 533 條，**不在 repo 內**）：
+  `mbfetch.py`＋`mb/`（**22 筆 × 2 端點 ＝ 44 個 JSON，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s、零 FETCH-FAIL**）、
+  `summ.py`（MB 摘要）、`dg.py`＋`dgrun.py`＋`cred.py`＋`dgcache/`（Discogs `q=` 搜尋 ＋ release 明細，未授權端點、2.6 s/req）、
+  `store.py`＋`strun.py`＋`stcache/`（Apple `search` × us／ca／jp ＋ `lookup?upc=` ＋ CAA RG 層探測）、
+  `poolscan.mjs`＋`pool.json`（掃 `seed_cards.json` 17,248 列 ＋ `desc-tools/batches/cards/` 196 檔 ＋ 所有 `batch-progress/c*/prop-*.json` 217 檔，**合計 27,909 列**）、
+  `trk.py`／`tracks.json`＋`trkscan.mjs`（**把本批 271 個軌名逐一比對池中卡名，抓出 32 處**）、`catscan.mjs`（目錄號反查）、
+  **`bb.py`＋`bb2005-ocr.txt`（**已丟棄，見第 1598 條**）＋`bb2006-ocr.txt`（本棒新抓的 Billboard 2006 全年）**、
+  `build/lib.py`＋`build/b1.py`～`b4.py`（**分四次寫 prop、每 3–5 筆落一次磁碟，符合續跑要求**）。
+- **本棒改動的檔案（三個）**：
+  1. **`batch-progress/c159/prop-b.json`（16 張，新建）**；
+  2. **`batch-progress/c159/rulings.md`（**只在檔尾 append 第 1590–1609 條；a 組的第 1560–1578 條與留白的 1579–1589 一字未改**）**；
+  3. ⚠ **`batch-progress/enum/billboard-bn-2006-ocr.txt.gz`（新建，1.1 MiB）＋ `batch-progress/enum/SOURCES-billboard-cashbox.md`（末尾 append 一節）**——**派工信明文要求「抓完在 SOURCES 末尾 append 一列」**。
+  **沒有動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`batch-progress/enum/blue-note.json`／
+  **`batch-progress/enum/billboard-bn-2005-ocr.txt.gz`（a 組的檔，本棒一度覆寫、已 `git checkout` 還原並驗證雜湊回到 a 組版本）**／
+  `batch-progress/c159/slice.json`／`batch-progress/c159/chk-prop.mjs`／**`batch-progress/c159/prop-a.json`**／git。
+- ⚠ **號段**：b 組用 **1590–1609**，**1610–1619 留白。**
+
+**這一段實際用的是哪幾層證據**（與第 1543／1578 條那張表對齊）：
+
+| 層 | 用上幾張 | 說明 |
+|---|---:|---|
+| **① 同期紙本（Billboard）** | **11／16** | **7 張拿到街頭日（全部出自 `Reviews` 欄的 `Release Date:` 行）**、4 張只有榜位或獎項；⚠ **廠牌全版廣告這一段 0 次，c-158 b 交接的第 3 句失效**（第 1598 條）。 |
+| **② Discogs 原壓群** | **16／16** | **地基層，連續第四組滿分**。獨有的資訊：**(戊) 前置閘的唯一有效證據 16/16**（**6 筆退件裡有 3 筆只有 Discogs 看得出來**）、**第二／第三個目錄號 4 張**、**完整街頭日 4 張**（其中 2 張只有它給得出）、**notes 裡的錄音日與母體 12 張**（**兩筆 (乙) 與一筆合輯的判準全部出自 notes 的前兩行**）、**逐軌編制 5 張**。 |
+| **③ 廠牌官網／新聞稿** | **0** | ⚠ **連續第四組 0**。 |
+| **④ 店面 ℗ 欄與 releaseDate** | **12／16** | **只當第三順位**；⚠ **9 張的 releaseDate 是年初佔位日、3 張的 ℗ 欄寫的是後來的權利人**（第 1601 條）。 |
+| **⑤ AllMusic** | **0** | ⚠ **本線連續第五組零 AllMusic。** |
+| **⑥ 維基百科** | **1** | ⚠ **本組第一次派上用場，而且是決定性的**：**Jane Bunnett 的獎項表把 2005 年鎖死**（第 1597 條）。**這一格前面十三批都是 0。** |
+
+⚠ **「只剩 Discogs 一層」的碟要點名**（寫作層與研究層要知道證據有多薄）：
+**Jane Bunnett《Radio Guantánamo》**（**Apple 四種查法全空 ＋ CAA 404 ＋ 美國紙本 2005 年 0 命中**，全組最薄）、
+**George Robert《Wingspan》**（**紙本兩年 0 ＋ Apple 只有 us 一個市場 ＋ Discogs 全庫只有一個零售條目 ＋ CAA 的圖不是實體盤**）、
+**The Wood Brothers《Ways Not to Lose》**（**紙本兩年 0，連爵士榜都沒進過**）、
+**Don Byron《Do the Boomerang》**（**紙本兩年 0 ＋ MB frd 只有年份沒有月日**）。
+**→ 這四張的正文不得引用任何榜位或評介，也不得寫「廣受好評」一類無來源的話。**
+
+**給 c-160 起的批次的六句話**：
+1. ⚠ ⚠ **Billboard 現已覆蓋 1955→2006 全年**（2005 由 c-159 a、2006 由 c-159 b 抓）——**直接 `zgrep`，不要重抓（第 1280 條）**；
+   **2007 以後仍沒人掃，但成本極低（第 1542 條，`pymupdf` 不要用 OCR，這台機器沒有 `pdftotext`）。**
+2. ⚠ ⚠ **廠牌全版廣告在 2005 年之後消失了（第 1598 條）**——**不要再花時間找「一頁解掉十張」的廣告頁；
+   街頭日改去 `Reviews` 欄找 `Release Date:` 行，2005–06 兩年就撈到 7 個。⚠ 評介印在哪個曲風欄（`JAZZ`／`POP`）不可靠。**
+3. ⚠ ⚠ **2006 年起 `Blue Note Connoisseur Series` 是 (乙) 的主要來源（第 1606 條）**——**看到這個系列名就直接去讀 Discogs notes 的前兩行找母體，
+   本組兩筆退件的母體都寫在第一、二行。** **它不是 (戊) 的問題，前置閘過得去。**
+4. ⚠ ⚠ **紙本給的街頭日只對它報導的市場有效（第 1597 條，本組新立）**——
+   **Discogs 原壓群裡有更早市場的零售條目時，紙本壓不過它，除非紙本自己說那是全球首發。**
+5. ⚠ ⚠ **同一份 slice 放同碟兩個 RG 第二次出現（第 1594 條）**，**而且這次兩個 RG 的盤名不同、退掉的那個盤名才是零售盤的全名**
+   ——**寫 prop 之前務必先用「軌目＋目錄號」比對整份 slice，`chk-prop` 事後永遠抓不到。**
+6. ⚠ **Apple 的 ℗ 欄在 2005 年後開始大量寫「現在的權利人」而不是發行年的廠牌**（第 1601 條：Blanchard 的 `℗ 2013`、Dr. John 的 `℗ 2006 Parlophone/Warner`）
+   ——**℗ 欄從這一段起只能當年份的弱證據，絕不可拿來判廠牌。**
