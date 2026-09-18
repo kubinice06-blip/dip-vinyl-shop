@@ -163,6 +163,46 @@ for (const r of propSide) {
       subHits.push(`⚠ 同掛名盤名詞元包含（只報不擋）：${r.b} ${r.artist}《${r.album}》 ←→ ${o.b} ${o.artist}《${o.album}》`);
   }
 }
+
+// 2026-09-18（c-154 a 抓到，主線補第四道）：**前三道都抓不到「同一張碟、掛名字串不同、MB 又建了兩個 RG」**。
+// 實例：c-154 a 的 `Jimmy Smith Trio featuring Kenny Burrell《The Master II》` 與 c-152 的
+// `Jimmy Smith《The Master II》`——**六軌逐字相同、同 catno `7243 8 55466 2`**，
+// 但掛名字串不同（鍵比對過）、rgMbid 不同（第二道過）、盤名相同所以詞元包含那道也只會報一筆偽陽性。
+// **策展層是用 Discogs catno 反查才抓到的。** 這裡把它變成機器檢查：**從 `label` 抽目錄號，共用就報**。
+// 只報不擋，一樣只看還在策展中的批次那一側。
+const COUNTRYDATE = /^[A-Z]{0,5}(19|20)\d{2}(\d{2}(\d{2})?)?$/;   // 國別碼＋日期，不是目錄號
+const NOTCAT = /^(MB|BC|RG|ISBN|UPC|EAN)/;
+const catnos = s => {
+  const out = new Set();
+  const txt = String(s || '');
+  // 字母前綴型：CDP 7 84353 2、BLP 1595、TOCJ-5526、B1-92894、BNJ-61013、LT-1089
+  for (const m of txt.matchAll(/\b([A-Z]{1,5})[\s-]?(\d[\d\s-]{2,14}\d)\b/g)) {
+    const tok = (m[1] + m[2]).replace(/[^A-Z0-9]/gi, '').toUpperCase();
+    if (tok.length >= 6 && !NOTCAT.test(tok) && !COUNTRYDATE.test(tok)) out.add(tok);
+  }
+  // EMI／Capitol 數字型：7243 8 55466 2、0946 3 …、00602 …
+  for (const m of txt.matchAll(/\b(7243|72435|0946|00602)\s+\d[\d\s]{4,14}\d\b/g))
+    out.add(m[0].replace(/\s+/g, ''));
+  return [...out];
+};
+const labelOf = c => c.label || c.mbNote || '';
+const catIndex = new Map();
+for (const v of seen.values())
+  for (const c of catnos(labelOf(v.c))) {
+    if (!catIndex.has(c)) catIndex.set(c, []);
+    catIndex.get(c).push(v);
+  }
+const catHits = [];
+for (const [cat, list] of catIndex) {
+  const uniq = [...new Map(list.map(x => [strip(x.c.artist) + '|' + strip(x.c.album), x])).values()];
+  if (uniq.length < 2) continue;
+  // 只在其中一側還在策展中時才報（已定稿的卡單彼此共用目錄號多半是 Volume 1／2 的雙片 CD，是正常的）
+  if (!uniq.some(x => propBatches.includes(x.b) && !cardBatches.includes(x.b))) continue;
+  catHits.push(`⚠ 共用目錄號 ${cat}（只報不擋）：` +
+    uniq.map(x => `${x.b} ${x.c.artist}《${x.c.album}》`).join('  ←→  '));
+}
+for (const line of [...new Set(catHits)]) console.log(line);
+
 for (const line of [...new Set(subHits)]) console.log(line);
 
 for (const d of dupKnown)
@@ -175,5 +215,5 @@ if (skipped.length) {
   console.log(`  若該批正在被策展代理覆寫，這是併行寫入的半成品，重跑一次即可；`);
   console.log(`  若沒有代理在跑，那就是 prop 檔真的壞了，要去看。`);
 }
-console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}｜同 rgMbid 不同掛名 ${dupMbid.length}｜同掛名盤名詞元包含 ${new Set(subHits).size}（後兩項只報不擋）`);
+console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}｜同 rgMbid 不同掛名 ${dupMbid.length}｜同掛名盤名詞元包含 ${new Set(subHits).size}｜共用目錄號 ${new Set(catHits).size}（後三項只報不擋）`);
 process.exit(dup.length ? 1 : 0);
