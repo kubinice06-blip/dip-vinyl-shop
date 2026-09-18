@@ -859,3 +859,53 @@ Straight to My Heart 希臘 LP），其餘為 CD（＋卡帶）首發。
 - **《Stolen Moments》vs 池中兩張同名盤**：與 Oliver Nelson 1975、Mark Murphy 1978 的交集只有
   〈Stolen Moments〉一個曲名（三張都是 Nelson 的作品，長度 8:17／7:52／5:47，錄音完全不同）。
   **內容零重疊、三卡並存、risk 互指；正文不得把盤名由來寫成翻唱 Nelson 那張專輯。**
+
+## 第 1066 條（主線，研究 b 組查出）：**第 1058／1060 條要修——本組 18 張裡 15 張有 TOCJ 平行版，5 張首發其實在日本**
+
+策展層說「Standard Gonz／Here And Now／Old Feeling 的 Discogs 也只有一筆」**不成立**。
+研究層逐張查出 **15 張有 TOCJ 平行版**，其中**五張的首發在日本、早於美版**（**年份全部不變，首發地要改**）：
+
+| 卡 | 日本原盤 | 日期 | 比美版早 |
+|---|---|---|---|
+| Standard Gonz | TOCJ-5529 | 1991-01-23 | 約三個月 |
+| Landmarks | TOCJ-5530 | 1991-02-22 | 約三個半月 |
+| Here And Now | TOCJ-5532 | 1991-04-26 | — |
+| The Blessing | TOCJ-5535 | 1991-07-19 | 約三個多月（**策展層寫「首發仍是美國版」，推翻**） |
+| Fantasia | TOCJ-5542 | 1992-05-27 | ＝Apple 那個一直對不上的日期 |
+
+**連同第 1063 條的三筆，本批已有八張的首發地要改成日本。**
+⚠ **通則：1990 年代前半的 Blue Note，日本 Somethin' Else 的 `TOCJ-5xxx` 常比美版早半年到一年**
+——**後批一律先查 TOCJ 再下「首發地」的結論。**
+
+## 第 1067 條（主線）：**Apple 的 `releaseDate` 會是批次 placeholder，不能當年份旁證**
+
+第 1058 條拿「Apple `1534171592` 的 releaseDate 1991-04-29 與 Discogs 逐日相符」當旁證——**這一句撤掉**。
+**那是批次 placeholder**：同一組人的另一張《Straight Gonz》(`1550902652`) 日期一模一樣。
+**而且那一筆根本是錯碟**（℗2021、7 軌、曲目零重疊）。
+
+⚠ **連帶處理**：**兩張探測層判 `ready` 的其實是錯碟／查無，已在 `previews.json` 退回 `unavailable`**
+——**Jerry Bergonzi《Standard Gonz》(1534171592)** 與
+**Biréli Lagrène, André Ceccarelli & Niels-Henning Ørsted Pedersen《Standards》(695667330)**（三種查法只回 Dreyfus 時期的碟）。
+⚠ **這是「失敗與正常長得一樣」的又一種**：**探測層的 `ready` 只保證「找到一個有預覽的條目」，不保證是同一張碟。**
+**研究層對「已 ready」的也要抽核軌數**——本組另外七張 ready 的逐筆核過軌數全部相符。
+
+## 第 1068 條（主線）：**第 879 條要修一半，並補兩筆檔名形狀**
+
+- **Billboard 1991–2002 確實分兩張爵士榜**（`TOP JAZZ ALBUMS`／`TOP CONTEMPORARY JAZZ ALBUMS`），
+  **但 Cash Box 1991–92 只有一張混合的 `TOP 40 JAZZ ALBUMS`**（同榜同時有 Fourplay 與 Sonny Rollins）
+  ——**查 Cash Box 不必分兩張。**
+- **1992 年 Billboard 的檔名是 `Billboard-YYYY-MM-DD.pdf` 不是 `BB-`**（第 1061 條那句寫反了）。
+- **2002 年的目錄是 `Billboard/00s/2002/`、檔名全年單純 `BB-`**（研究 b 組自抓 51 期入庫）。
+
+## 第 1069 條（主線）：**研究層擋下策展層 11 處編制錯，並新查到兩張軌數兩形**
+
+11 處都回到盤面 credits 核過，其中形狀值得記住的：
+**「只吹一軌的客座」被寫成常設團員**（Keezer《Here And Now》的 Donald Harrison 只吹第 10 軌、
+Petrucciani 的 Aldo Romano 只打第 5 軌、Lagrène 的 Di Piazza 電貝斯只在第 12 軌），
+**漏列**（Andrew Hill 漏 Robin Eubanks、Ellington 漏兩位歌手），
+**把獨奏盤寫成合奏**（Ron Carter Meets Bach 是 Carter 一人 bass＋piccolo bass），
+**樂器寫錯**（日野吹的是**短號**不是小號）。
+
+新查到的軌數兩形 2 張（策展層都沒有）：
+**Tommy Smith《Standards》英國黑膠 BLT 1003 只有 12 軌**（〈Dream Scapes (Part 1)〉〈Silent But Deadly〉是 CD 加軌）；
+**George Adams《Old Feeling》日本 TOCJ-5537 是 6 軌刪節版**（東芝拿掉〈Better Git Hit In Yo' Soul〉與〈Teamwork〉）。
