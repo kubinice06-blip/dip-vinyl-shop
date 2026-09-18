@@ -664,3 +664,293 @@ Anoushka Shankar 與 Karsh Kale 在池中皆 0 張，但他們的碟屬世界音
    建議主線用目錄號前綴反查一次。**
 6. ⚠ **`slice.json` 的 RG title 會夾帶 U+2010**（第 1638 條第 8 列）——**`Kids: Live at Dizzy's Club Coca‐Cola` 照抄會被 `chk-prop` 直接擋下。
    寫 prop 前把 `album` 與 `artist` 兩欄都過一次非 ASCII 連字號檢查，不要等 `chk-prop` 報。**
+
+---
+
+## 第 1650 條（c-160 b 交件）：**22 筆 → 收 20、退 2；退貨率 9.1%，是 1985 後這十六批最低的一組。本組的形狀是「2007 年這一格的清單幾乎全是當年的新錄音，而且有一半不是美國盤」**
+
+| | 數 |
+|---|---:|
+| slice `g: "b"` | **22**（**22 筆全部是 2007 年**） |
+| **收** | **20**（**20 位，一人一張；`Paolo Fresu` 兩張但掛名是兩個不同編制**） |
+| **退** | **2**（**(乙) 1 筆、合輯＋(乙) 1 筆**） |
+| 年份改判 | **2**（**Ron Carter《Dear Miles,》2007→2006（日本首發）、Van Hunt《Popular》2007→2017（擱置十年）**） |
+| 年份覆核成立 | **18** |
+| 現場盤 | **4**（Mingus《Cornell 1964》、Gino Paoli 等《Milestones》、Trio Töykeät《One Night in Tampere》、Bill Charlap Trio《Live at the Village Vanguard》，**MB `secondary-types` 四筆逐字都有 `Live`，第 397 條本組零漏標**） |
+| 自我同名 | **1**（Floratone《Floratone》，`selfTitled: true`） |
+| 撞陳列（軌名＝池中卡名） | **30 處／14 張**（全 22 筆含退件是 33 處）；⚠ **直接撞 apex 卡名 0 處，但曲目／藝人層貼到 apex 的有 4 組、涉及 apex 卡 9 張**（第 1661 條） |
+| 新掛名字串 | **6**；**聯名新造 2**；**沿用 12**；**新造分裂 0** |
+| 曲風非 `['jazz']` | **2 張**（`['jazz','pop']` 1、`['soul','rock']` 1） |
+| `chk-prop` 標記 | **0**（123 批、4,985 卡；跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0） |
+| 紙本 | ⚠ **2007 全年用 a 組剛入庫的檔（第 1632 條），本棒沒有重抓、一字未改**；**命中 9／20** |
+
+**收下的 20 張**：Fabrizio Bosso《You've Changed》2007、Terence Blanchard《A Tale of God’s Will (A Requiem for Katrina)》2007、
+**Charles Mingus Sextet with Eric Dolphy《Cornell 1964》2007（現場、(甲)）**、Marc Moulin《I Am You》2007、Erik Truffaz《Arkhangelsk》2007、
+Paolo Fresu Quintet《Rosso, verde, giallo e blu》2007、Wynton Marsalis《From the Plantation to the Penitentiary》2007、
+Floratone《Floratone》2007（同名）、**Gino Paoli, Enrico Rava, Flavio Boltro, Danilo Rea, Rosario Bonaccorso & Roberto Gatto《Milestones: Un incontro in jazz》2007（現場）**、
+**Ron Carter《Dear Miles,》2006（改判）**、Trio Töykeät《One Night in Tampere》2007（現場）、**Van Hunt《Popular》2017（改判）**、
+Stacey Kent《Breakfast on the Morning Tram》2007、Trijntje Oosterhuis《Who’ll Speak for Love: Burt Bacharach Songbook II》2007、
+Paolo Fresu Devil Quartet《Stanley Music!》2007、Gianluca Petrella《Kaleido》2007、Stefano Di Battista《Trouble Shootin'》2007、
+Bill Charlap Trio《Live at the Village Vanguard》2007（現場）、Kenny Werner《Lawn Chair Society》2007、Charles Tolliver《With Love》2007。
+
+⚠ **第 315 條：20 ＋ 退表 2 ＝ 22 ✓。**
+
+⚠ ⚠ **給後批的一句總結**：**a 組第 1620 條說「2006–07 的清單裡復刻盤還在」，b 組這半邊幾乎沒有——22 筆裡錄音年在 1985 前的只有 2 筆，兩筆都退掉了。
+換來的是另一個問題：22 筆裡有 13 筆是歐陸盤（義 5、法 3、荷 2、芬 1、比 1、其中兩張只有義大利與芬蘭市場買得到），
+它們在美國紙本與 Apple 美國店面同時零命中，證據重心整個壓在 Discogs 一層上。
+「退貨率低」不等於「好查」——本組退件最少，但「只剩 Discogs 一層」的碟有 6 張，與 a 組的 10 張加起來是整批 38 張裡的 16 張。**
+
+---
+
+## 第 1651 條（同批）：**退表 2 筆，逐筆與理由分類**
+
+| # | 卡 | rgMbid | 母體／實況 | 理由分類 | 詳 |
+|---|---|---|---|---|---|
+| 1 | **Stanley Turrentine —《A Bluish Bag》** | `90958bfa-2650-35b9-bda3-10cf10719fea` | 2007-06-05 `Blue Note Connoisseur Series` 限量 CD 12 軌；**Discogs 9683159（US 零售）的 format 逐字 `CD, Compilation, Limited Edition`**，notes 前三行逐字「Recorded on **February 17, 1967** (tracks 1-7) and **June 9, 1967** (tracks 8-12) at the Van Gelder Studio／Tracks 1, 2, 4 & 5 originally issued on **(LT-993) in 1979**／Tracks 3, 6 & 7 originally issued on **(BN-LA 394-2) in 1975**／All other tracks previously unissued」 | **(乙) 發行過、母體號段屬 Blue Note（`LT` 庫藏系列與 `BN-LA` 二合一系列）；同時是合輯** | 第 1652 條 |
+| 2 | **Gare du Nord —《Jazz in the City: A Beautiful Day in the Big Apple With Gare Du Nord》** | `ff170c6d-384f-3272-9d41-fa6be1dd3033` | 2007-11-29 NL CD 13 軌；**MB release `1e7379ba` 的逐軌 artist-credit 是 Duke Pearson／Pieces of a Dream／Bobbi Humphrey（兩軌）／“Brother” Jack McDuff／Donald Byrd（兩軌）／Gene Harris／Bobby Hutcherson／Ronnie Foster／Andrew Hill——十一軌是 1960–70 年代 Blue Note 原錄音，只有兩軌是 Gare du Nord 自己的 remix** | **合輯（簡報第一節第 2 點）＋ (乙) 母體號段全屬 Blue Note** | 第 1653 條 |
+
+⚠ ⚠ **兩筆都沒有被 `chk-prop` 標記**（第 611／…／1591／1621 條，**1985 後第十七組連續成立**）。**抓出來的方法**：
+**第 1 筆是「錄音年在 1985 前」→ 依 (乙) 第一句 ＋ a 組交接第 3 句去 Discogs 讀 `format` 欄與 notes 前兩行**；
+**第 2 筆是「盤名帶 `Jazz in the City` 這種系列名、而且掛了一個與盤名無關的團名」→ 去 MB 的 `release` 端點看逐軌 artist-credit**
+——⚠ **這是本組新增的一種抓法：`release-group` 端點看不出合輯，`release?…&inc=recordings+artist-credits` 的逐軌掛名一眼就看得出。**
+
+---
+
+## 第 1652 條（同批）：**《A Bluish Bag》退——a 組交接第 3 句的第一次驗證：`Connoisseur Series` 這次是 (乙)，分界就在 `format` 欄**
+
+a 組第 1636 條剛立下「`Blue Note Connoisseur Series` 同時在出 (乙) 與 (甲) 兩種碟，判生死的是 Discogs 的 `format` 欄與 notes 前兩行」。**本張是那句話的反面樣本**：
+
+| 欄位 | 本張（退） | a 組《Straight Life》（收） |
+|---|---|---|
+| Discogs `format` | ⚠ **逐字 `CD, Compilation, Limited Edition`** | `CD, Album, Limited Edition`（無 `Compilation`／`Reissue`） |
+| Discogs notes 前兩行 | ⚠ **逐字寫出兩個母體目錄號（`LT-993` 1979、`BN-LA 394-2` 1975）** | 逐字說明沒有母體 |
+| 判 | **(乙)** | **(甲)** |
+
+**三個 Discogs 條目（歐版 3864934、美版 9683159、BMG Direct 唱片俱樂部版 16105105）的 `format` 欄全部含 `Compilation`**，
+廠牌欄第二格逐字都是 `Blue Note Connoisseur Series`，錄音室欄逐字 `Van Gelder Studio, Englewood Cliffs, New Jersey`。
+
+⚠ **「其餘五軌 previously unissued」不能拿來套 (甲)**——**第 1592 條已經立過：(甲) 問的是整張碟有沒有發行過，本張十二軌有七軌 1975／1979 年就發了。**
+⚠ **母體不交缺口**：**`LT-993`（1979，Blue Note 的 LT 庫藏系列）與 `BN-LA 394-2`（1975，Blue Note／United Artists 的二合一）兩個號段都在 (乙) 的射程內**，
+**依簡報 (乙) 的定義本來就不收**；⚠ **池中 `Stanley Turrentine` 已有 62 張**（seed 全部），**其中《The Spoiler》《A Chip off the Old Block》《Joyride》就是 1966–67 年同一批 Van Gelder 錄音的正規盤**。
+⚠ **前置閘乾淨**：MB 轄下兩筆 release 的 label-info 逐字都是 `Blue Note [713c4a95]`（不是 a 組第 1633 條那個 `Blue Note Label Group [2eb19785]` 部門名），**退件理由是 (乙) 不是 (戊)**。
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1653 條（同批，**重要；本線第一次「MB 的三筆 release 對同一張合輯給了兩種相反的掛名」**）：**《Jazz in the City》退——逐軌掛名才看得出它是合輯**
+
+**這一張在 `release-group` 端點上完全看不出問題**：title 是《Jazz in the City: A Beautiful Day in the Big Apple With Gare Du Nord》、
+frd `2007-11-29`、primary-type `Album`、**secondary-types 空**、genres 逐字 `jazz`／`lounge`、artist-credit 逐字 `Gare du Nord`（單一 Group 實體）。
+**照 RG 端點判會直接收。**
+
+**去 `release?release-group=…&inc=media+labels+recordings+artist-credits` 看逐軌掛名，三筆 release 分成兩派**：
+
+| release | 日期／國別 | 廠牌 | 軌數 | **逐軌 artist-credit** |
+|---|---|---|---|---|
+| **`1e7379ba`** | 2007 NL | Blue Note `50999 5152402 9` | 13 | ⚠ ⚠ **release 層 artist-credit 逐字 `Various Artists`；逐軌是 Duke Pearson／Pieces of a Dream／Bobbi Humphrey／Gare du Nord／“Brother” Jack McDuff／Donald Byrd／Donald Byrd／Gare du Nord／Gene Harris／Bobby Hutcherson／Bobbi Humphrey／Ronnie Foster／Andrew Hill** |
+| `75a22b71` | 2007-11-29 NL | Blue Note（無 catno） | 13 | **十三軌全部逐字 `Gare du Nord`** |
+| `518ac5da` | 2007-11 NL | **label-info 空** | 12 | **十二軌全部逐字 `Gare du Nord`** |
+
+**→ 同一張碟、同一個條碼（5099951524029），MB 一筆建對、兩筆把整張掛給了選曲人。**
+**判：退。理由分類寫「合輯（簡報第一節第 2 點）＋ (乙) 母體號段全屬 Blue Note」。**
+
+⚠ **Discogs 1480525 的旁證**：**credits 欄整個是空的（一個演出者都沒有）**，逐軌只有 `Written-By`（Duke Pearson、Larry Mizell、Dexter Wansel、Gene Harris、Bobby Hutcherson、Ronnie Foster、Andrew Hill……），
+**公司欄逐字 `Phonographic Copyright (p): EMI Music Netherlands BV`**——**是 EMI 荷蘭做的 Blue Note 目錄選輯，不是 Gare du Nord 的專輯。**
+⚠ **§5.6「重要合輯」不適用**：**它不是該樂種的正典入口，也不是唯一可得的錄音形態**（十一軌的母體都是仍在流通的 Blue Note 正規盤），**是典型的「廠牌促銷拼盤」**。
+⚠ **母體不交缺口，而且有兩張已經在池中**：**`Duke Pearson —《The Phantom》`（seed ＋ c-152）與 `Bobby Hutcherson —《Montara》`（seed）**——**本張若收下會與那兩張同名撞陳列**。
+⚠ ⚠ **給後批的新動作（本條新立）**：**盤名帶 `Jazz in the City`／`<系列名> With <團名>` 這種「系列名＋掛名」結構的，
+一律先打 `release?…&inc=recordings+artist-credits` 看逐軌掛名——RG 端點與 `secondary-types` 在這種碟上兩個方向都會漏（第 397 條）。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1654 條（同批，**最重要；本組第一筆年份改判，而且 MB 與紙本同時錯**）：**Ron Carter《Dear Miles,》改判 2007 → 2006——日本首發、美國晚十一個月**
+
+| 層 | 說的是什麼 |
+|---|---|
+| **MB frd** | ⚠ **`2007-07-19`**——轄下唯一一筆 release `63f0be4f`（US，Blue Note `3925472`，barcode 094639254729） |
+| **紙本** | **`BB-2007-06-23` p72 的 JAZZ 評介逐字「RON CARTER Dear Miles｜Producer: Ron Carter｜Blue Note｜**Release Date: June 19**」** |
+| **Discogs 美版** | `6619620` **`released 2007-06-19`**（與紙本逐日相符） |
+| ⚠ ⚠ **Discogs 日版** | **`22236871`（Somethin' Else・東芝EMI **TOCJ-68073**）`released 2006-07-19`、notes 逐字 `06-7-19`（日本盤的發賣日寫法）** |
+| ⚠ ⚠ **美版宣傳盤的 notes** | **`14457186` 逐字「Recorded & mixed on **February 18, 2006** at Avatar Studios, New York City／**℗ 2006** © 2007 **Somethin' Else Record, a division of Toshiba-EMI Ltd. under exclusive license to The Blue Note Label Group**」** |
+| ⚠ **美版 CD 的 matrix** | **逐字 `A 7301 **4988006843905** F70326-06`——`4988006` 是東芝EMI 的條碼前綴，壓片母源來自日方** |
+
+**→ 判：`year` 取 2006。四層證據互相獨立，而且指向同一件事：這是東芝EMI 的 `Somethin' Else` 企劃，2006 年在日本發行，2007 年才授權給 Blue Note 在美國發。**
+
+⚠ ⚠ **第四層是本條最有力的一層，也是新立的一種查法——目錄號序列自證**：
+
+| 目錄號 | 碟 | Discogs `released` |
+|---|---|---|
+| TOCJ-68071 | 松永貴志 Trio《Inorganic Orange》 | **2006-01-12** |
+| TOCJ-68072 | 寺井尚子《Night Flight》 | **2006-02-22** |
+| **TOCJ-68073** | **Ron Carter《Dear Miles,》** | **2006-07-19** |
+| TOCJ-68074 | 寺井尚子《Jealousy》 | **2007-03-21** |
+
+**單調遞增、無矛盾——`2006-07-19` 落在它該落的位置上。**
+⚠ ⚠ **這條查法可推廣**：**當一張碟的日版年份與歐美版打架時，抓它前後各兩個目錄號的日期排一次序**——
+**目錄號序列是廠牌自己的流水帳，比任何一個單筆條目都難造假；本線前十六批沒有人用過。**
+
+⚠ **第 1597 條在本張第二次應驗，而且方向相反**：**c-159 b 那次是「紙本給的是美版街頭日、加版更早」，本次是「紙本給的是美版街頭日、日版更早」**
+——**同一條規則：紙本給的街頭日只對它報導的市場有效，Discogs 原壓群裡有更早市場的零售條目時，紙本壓不過它。**
+⚠ **MB 的 `2007-07-19` 是兩個市場的日期被拼在一起**（日方的 `7-19` ＋ 美方的 `2007`），**本張不可採 MB frd**。
+⚠ **反證也做了**：**另有一筆日本宣傳盤 `11768514` 標 `2007-01-18`（notes `07-1-18`）但掛的是美版 barcode `094639254729`**——
+**條目自相矛盾（日本宣傳盤不會用美版條碼），以零售條目與目錄號序列為準；此筆記錄在案。**
+⚠ **本裁定可逆（改的是卡單的 `year`）。若研究層找到日版實體上的 2007 年印記，應改判並回寫本條。**
+
+---
+
+## 第 1655 條（同批，**重要；本線第一次出現「發行年比清單年晚十年」**）：**Van Hunt《Popular》改判 2007 → 2017——2007 年壓的全部是宣傳盤，商業發行在 2017 年**
+
+**Discogs 全庫的 2007 年條目，`format` 欄逐字沒有一個是零售盤**：
+
+| Discogs | 國別 | 目錄號 | `format` 逐字 |
+|---|---|---|---|
+| `6339214` | US | 50999 5 01574 2 6 | **`CD, Advance, Album, Promo`**（notes：「Issued in a standard jewel case with a rear inlay only」） |
+| `1189876` | Europe | 50999 5 03451 2 0 | **`CD, Album, Promo`** |
+| `1388052`／`6339129` | US | 50999 5 03307 2 0／…3308 2 9 | **`CD, Sampler, Promo`**（《Selections From The Album: Popular》） |
+| `2177354` | US | 50999 5 03309 11 | **`Vinyl, 12\", Promo`** |
+| **`10688283`／`10688268`** | — | — | **`File, MP3/AAC, Album`，`released 2017-08-11`，廠牌逐字 `Blue Note, UMG Recordings, Inc.`** |
+
+**維基 `Van Hunt` 條目逐字**：「He transitioned to Blue Note Records where his **2008 album, Popular, was shelved and was not released until 2017**」。
+**Apple（us／gb／ca 三市場）id=1442968330 逐字 `releaseDate 2017-08-11`、`Blue Note Records; ℗ 2017 Capitol Records, LLC`。**
+**MB release `12ddad67` 逐字 `2017-08-11` Digital Media 14 軌。**
+
+**→ 判：收，`year` 取 2017。**依簡報第二節「**數位發行的年份與實體首發常常不同——`year` 取實體首發年；若只有數位發行，取數位那次並在 risk 寫明**」，
+**本張的實體從來沒有零售過，唯一的商業發行就是 2017 年那次數位發行。**
+
+⚠ ⚠ **這不是退件理由，是收件理由**：**整張碟在 2017 年之前從未商業發行，2017 年那次就是它的首發**——**與第 1553 條 (甲) 同形，差別只在「母體是廠牌自己的庫存，不是 bootleg」。**
+⚠ **MB 的 RG frd 是 `2007`（它把宣傳盤當首發），而且把宣傳盤的 `status` 登成 `Official`**——**第 1638 條 MB 毛病表的續筆：MB 的 `Official` 不等於零售。**
+⚠ **曲風照實給 `['soul','rock']`**：**MB genres 逐字 `contemporary r&b`／`funk`／`neo soul`／`rock`，一個 jazz 都沒有**；
+**依派工信「曲風不是退件理由」與第 1602 條（非爵士訊號滿的照收，前置閘乾淨即可）**，**本張是本組唯一一張完全沒有爵士標籤的碟**。
+⚠ **給本機的一句**：**池中 seed 已有 `Van Hunt —《Van Hunt》`（2004，Capitol），上架時兩張卡的曲風欄要一併對齊。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1656 條（同批）：**年份——改判 2 張、覆核成立 18 張；⚠ 本組有五個新的日期陷阱，而且三個出在 MB 自己身上**
+
+**改判兩張見第 1654／1655 條。覆核成立的 18 張，證據層如下**：
+
+| 用哪一層定年 | 張 | 說明 |
+|---|---:|---|
+| **紙本的 `Release Date:` 行** | **5** | Blanchard（Aug. 14）、Mingus（July 17，**兩篇互相對上**）、Marsalis（March 6，**三篇對上**）、Floratone（Aug. 14，**評介＋專文**）、Stacey Kent（Oct. 2）、Tolliver（Jan. 16）——⚠ **實際是 6 張，其中 Ron Carter 那張的紙本街頭日被第 1654 條判為「只對美國市場有效」，不計入。** |
+| **Discogs 零售條目的完整街頭日** | **4** | Moulin（2007-01-08，**Apple 逐日相符**）、Fresu Devil Quartet（2007-11-12，**MB 逐日相符**）、Truffaz（2007-03-12）、Mingus（2007-07-17） |
+| **MB 實體 release 的日期** | **5** | Trio Töykeät（2007-03-28 FI）、Trijntje（2007-11-28 NL）、Kenny Werner（2007-03-06 US）、Stacey Kent 的 GB／XW 兩筆、Charlap（⚠ 國別存疑，見下） |
+| **只有年份、四層一致** | **4** | Bosso、Fresu Quintet、Petrella、Gino Paoli |
+
+### 五個日期陷阱（第 1601 條那張表的續筆）
+
+1. ⚠ **MB 把國別登記錯，而且錯的方向一致（歐洲化）**：**Floratone 的實體 release 登記成 `DE`，Discogs 1325965 的 notes 逐字「Printed in USA. Made in USA.」**；
+   **Bill Charlap Trio 的唯一一筆 release 登記成 `GB 2007-06-11`，但它在 `BB-2007-06-09` 的 Top Jazz Albums 已經上榜了**——**上榜日比 MB 的發行日還早兩天**。
+   **兩張都是美版首發被 MB 記成歐洲盤。**
+2. ⚠ **MB 的 frd 會比真正的首發日晚**：**Marc Moulin《I Am You》的 frd 取了 GB 限量版的 `2007-01-12`，比 Discogs 與 Apple 的 `2007-01-08` 晚四天**
+   ——**第 550／708 條一直講「Discogs 抄 ℗ 年」，這是反過來的形狀：MB 在同一個 RG 的多筆 release 裡挑錯了那一筆當 frd。**
+3. ⚠ **盤面的 ℗ 年比發行年晚（跨年壓片）**：**Stefano Di Battista《Trouble Shootin'》的法版零售條目 notes 逐字「Recorded on April 12th and 13th, 2007…**℗ & © 2008**」，Discogs 年份欄卻寫 2007**
+   ——**本線一向假設「Discogs 抄 ℗ 年」，本張是唯一一次 Discogs 沒有抄、而 ℗ 年自己是晚的**；判 2007 的依據是日版 `released 2007-10-01` ＋ MB frd ＋ 錄音／混音時程（**可逆**）。
+4. ⚠ **Discogs 的年份欄抄錄音年／壓片年**：**Charles Tolliver《With Love》兩個零售條目都標 `2006`，但 notes 逐字「Recorded…June 2-3, **2006**」、matrix 逐字 `F61214-02`（2006 年 12 月壓片），
+   而 `BB-2007-01-13` 的評介逐字給了 `Release Date: **Jan. 16**`**——**第 1487 條的「紙本要壓過 Discogs 原壓群，得給街頭日」在本組唯一一次成立，而且成立得很乾淨。**
+5. ⚠ **同一張碟兩個市場兩個街頭日（同年，不影響 `year`，但正文不可混用）**：**Stacey Kent 法／英 2007-09-07／09-10、美 2007-10-02**；
+   **Trio Töykeät 芬蘭 2007-03-28、加拿大 2007-05-28**；**Trijntje 荷蘭 2007-11-28、國際版 2008（而且掛名改成 Traincha）**。
+
+⚠ **「演出日汙染」（把現場錄音日當發行年）本組 0 次**——**四張現場盤的錄音日分別是 1964-03-18、2003-09、2005-11-19、2007-03-07/08，四張都沒有被任何一層寫成發行年**（**連續第五組 0**）。
+
+---
+
+## 第 1657 條（同批，**重要**）：**掛名——沿用 12、新字串 6、聯名新造 2、新造分裂 0；⚠ 本組出現一次「第 307 條與 a 組交接第 5 句正面衝突」，分界是「池中有沒有同系列先例」**
+
+### （一）沿用池中既有字串 12
+`Terence Blanchard`（2，c-158／c-159）／`Marc Moulin`（3，seed 1＋c-157／c-158）／`Erik Truffaz`（6，c-154～c-159）／
+`Wynton Marsalis`（7，seed 5 含 apex `hall` 1＋c-159）／`Ron Carter`（7，c-150～c-158）／`Trio Töykeät`（2，c-158／c-159）／
+`Van Hunt`（1，seed）／`Trijntje Oosterhuis`（1，**同批 a 組**）／`Gianluca Petrella`（1，c-159 a）／`Stefano Di Battista`（1，c-157 a）／
+`Bill Charlap Trio`（3，seed 1＋c-157／c-158）／`Charles Tolliver`（1，seed）。
+
+### （二）新字串 6（池中皆 0 列，三形都掃過）
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Fabrizio Bosso`** | Person／IT | ⚠ **同字串另有群組 `Fabrizio Bosso & Flavio Boltro Quintet`（7bbf1445，第 1418 條已記）與日版用的 `Fabrizio Bosso With Strings`——兩形都只進 queryAlias** |
+| **`Paolo Fresu Quintet`** | MB 的 artist-credit 逐字是 **`Paolo Fresu Quintet Plays the music of Paolo Fresu`**（單一實體） | 見第 1658 條：**Discogs 用 `Paolo Fresu 5et`、Apple 用裸名 `Paolo Fresu`**；**池中零裸名**，同批 a 組有 `Paolo Fresu & Uri Caine` |
+| **`Paolo Fresu Devil Quartet`** | Group／IT | **與上一列並存不是分裂**（第 1131 條：不同編制、不同 MB 實體、軌目零重疊） |
+| **`Floratone`** | Group（Bill Frisell／Matt Chamberlain／Tucker Martine／Lee Townsend 的計畫） | ⚠ ⚠ **`Bill Frisell` 裸名池中 0 列、`Matt Chamberlain` 0 列、`Viktor Krauss` 0 列——這支的四個人池中一張都沒有** |
+| **`Stacey Kent`** | Person／US | 同字串單一實體；`Jim Tomlinson`（丈夫、製作人）池中亦 0 列 |
+| **`Kenny Werner`** | Person／US | 同字串單一實體；同盤的 `Chris Potter`／`Scott Colley` 池中 0 列，`Dave Douglas`（seed《Five》）與 `Brian Blade Fellowship`（c-156）各 1 |
+
+### （三）聯名新造 2
+| 聯名 | 形狀 | 為什麼不是新造分裂 |
+|---|---|---|
+| **`Charles Mingus Sextet with Eric Dolphy`** | MB RG credit 逐字如此 | ⚠ **四邊一致**：**MB、Discogs 全部零售條目、`BB-2007-07-21` 的評介標題、`BB-2007-08-04` 的 Top Jazz 榜單逐字都用這一串**（Apple 把它拆成掛名 `Charles Mingus Sextet` ＋ 盤名 `(with Eric Dolphy)`）；**池中 `Charles Mingus` 25 張與 `Eric Dolphy` 14 張一張都不動**（第 1131 條） |
+| **`Gino Paoli, Enrico Rava, Flavio Boltro, Danilo Rea, Rosario Bonaccorso & Roberto Gatto`** | MB RG credit 的六實體串接 | ⚠ **三邊給三個長度**：**MB 六人、Discogs 七人（多 Renato Sellani）、Apple 五人（漏 Flavio Boltro）**；**取 MB 形（交集＋盤面主掛名）**，**池中 `Enrico Rava` 5 張、`Flavio Boltro` 2 張不動** |
+
+### （四）⚠ ⚠ 一次正面衝突與它的分界（**本條最重要的一段**）
+**`Trijntje Oosterhuis, Metropole Orkest`（MB）／`& Metropole Orkest`（Apple）／`, Metropole Orchestra`（Discogs）——三邊都給聯名形，
+照 a 組交接的第 5 句（＝第 1608 條第 5 句）「三邊以上用團名形才建新字串」本該新造。本裁定不新造，沿用裸名 `Trijntje Oosterhuis`。**
+
+**理由：第 307 條的池中先例更強、更近，而且是同一套作品**——
+**同批 a 組剛把這套雙聯作的第一張（《The Look of Love: Burt Bacharach Songbook》2006，同一個 Metropole Orkest、同一位指揮 Vince Mendoza、同一個系列）收成裸名。
+同系列的 Vol.1 與 Vol.2 分成兩個掛名字串，正是第 307 條要防的那種分裂。**
+⚠ **旁證在 MB 自己身上**：**RG 層是聯名，但轄下三筆 release 有兩筆的 artist-credit 逐字只有 `Trijntje Oosterhuis`**——**聯名只存在於 RG 層。**
+⚠ ⚠ **分界寫成一句給後批**：**「三邊用團名形」是建新字串的必要條件，不是充分條件；**
+**當池中已有同一位藝人、同一套作品（同系列／同編制／同一次企劃）的既有字串時，第 307 條壓過它。**
+**本組兩個方向各有一例：Gino Paoli 那張池中零先例 → 聯名新造；Trijntje 這張池中有同系列先例 → 沿用裸名。**
+
+### （五）新造分裂 0。
+⚠ **另記一筆**：**`Gianluca Petrella / Indigo 4` 的斜線掛名（第 1418 條的斜線盲區）在 `chk-prop` 的折鍵下會與裸名折成同一個鍵、不會報**
+——**c-159 a 收《Indigo 4》時已在該卡 queryAlias 逐字寫下「Gianluca Petrella & Indigo 4（2007 年後團名形，Apple 用在續作《Kaleido》）」，那句話指的就是本張，照先例走。**
+
+---
+
+## 第 1658 條（同批，**重要；新立**）：**同一串字，MB 放在掛名欄、Discogs 放在盤名欄——`Paolo Fresu 5et Plays the music of Paolo Fresu》Rosso, verde, giallo e blu》`**
+
+| 來源 | 掛名欄 | 盤名欄 |
+|---|---|---|
+| **MB** | ⚠ **`Paolo Fresu Quintet Plays the music of Paolo Fresu`** | `Rosso, verde, giallo e blu` |
+| **Discogs `9252601`** | `Paolo Fresu 5et` | ⚠ **`Plays The Music Of Paolo Fresu - Rosso, Verde, Giallo E Blu`** |
+| **Apple（14 市場，`lookup?upc=094639125227` 亦同）** | **`Paolo Fresu`** | **`Rosso, verde, giallo e blu`** |
+| **`slice.json`（抄 MB）** | `Paolo Fresu 5et Plays the music of Paolo Fresu` | `Rosso, verde, giallo e blu` |
+
+**判：掛名 `Paolo Fresu Quintet`、盤名 `Rosso, verde, giallo e blu`（＝兩邊各取「去掉那串字」的形）。**
+**理由**：(1) **`Plays the music of…` 是封面上的演出形式說明，不是盤名本體也不是團名的一部分**；
+(2) **Apple 十四市場兩欄都給短形，是唯一一個兩欄都乾淨的來源**；
+(3) **第 1594 條的「池中沒有同藝人先例時改取零售盤全名」在此不適用——池中有先例（同批 a 組的 `Paolo Fresu & Uri Caine —《Things》`）。**
+⚠ **`5et` 是義大利文的 quintet 寫法**（Discogs 對義大利爵士盤常見），**池中無先例，統一寫 `Quintet`。**
+⚠ ⚠ **給後批的一句（新立）**：**遇到「掛名欄或盤名欄夾著一串 `Plays the music of…`／`Sings…`／`With Strings` 的碟，先確認那串字在三個來源各被放進哪一欄」**
+——**本線前十六批處理過「盤名長短不一」（第 1594 條）與「掛名長短不一」（第 1600 條），但沒處理過「同一串字在不同來源落在不同欄」。**
+⚠ **同形第二例在本組：Charles Tolliver（見第 1659 條），MB 把團名的後半併進了盤名。**
+⚠ **本裁定可逆（改的是卡單值）。**
+
+---
+
+## 第 1659 條（同批）：**Charles Tolliver——MB 的盤名是「團名的一半＋真盤名」；而且紙本在本組唯一一次壓過 Discogs 的年份欄**
+
+**MB 的 title 逐字 `Big Band With Love`、artist-credit 逐字 `Charles Tolliver`。**
+**實際是 `Charles Tolliver Big Band —《With Love》`**：**Discogs 全部零售條目（US `6634322`、Europe `7188339`、日版宣傳 `26148119`、US 宣傳 `31781516`）的掛名逐字都是 `Charles Tolliver Big Band`、盤名逐字都是 `With Love`；
+Apple 十四市場逐字 `Charles Tolliver Big Band —《With Love》`；`BB-2007-01-13` p36 的評介標題逐字 `CHARLES TOLLIVER｜With Love`。**
+
+**判：盤名取 `With Love`（三邊一致），掛名沿用池中 `Charles Tolliver`（seed《The Ringer》）。**
+**掛名不新造的理由**：**紙本與 MB 用裸名、Discogs 與 Apple 用團名形 ＝ 二比二，未達 a 組交接第 5 句的「三邊以上」門檻**，**照第 307 條走池中。**
+
+⚠ **年份**：**Discogs 兩個零售條目都標 `2006`**（notes 逐字「Recorded by Malcolm Addey on **June 2-3, 2006**」、matrix `F61214-02` ＝ 2006-12 壓片），
+**但 `BB-2007-01-13` p36 逐字「Blue Note｜**Release Date: Jan. 16**」，MB 實體 release 逐字 `2007-01-16 US`**——**兩層逐日相符，判 2007。**
+⚠ **這是第 1487 條（「紙本要壓過 Discogs 原壓群，得給街頭日或發行公告」）在本組唯一一次成立的地方**，也是本線少見的「Discogs 年份欄整群偏早一年」。
+⚠ **紙本另外給了兩件正文可用的事實**：**「\"With Love\" is his first for the label as a leader, and he debuts in big-band fashion」與「Tolliver also revisits his song \"Right Now,\" which Jackie McLean cut in 1965」**
+——**後者與池中 seed 的 `Jackie McLean —《Right Now!》` 直接互指（第 1661 條的撞陳列表）。**
+⚠ **廠牌欄第二格逐字 `Mosaic Records`（Michael Cuscuna 的廠牌）**——**不是 (乙)／(戊) 的訊號，是共同發行掛名；本碟是 2006 年的全新錄音。**
+
+---
+
+## 第 1660 條（同批）：**曲風——18 張 `['jazz']`、2 張不是；⚠ 兩張「不是」的理由完全不同，一張是收攏、一張是照實**
+
+| 盤 | MB genres 逐字 | 判 | 依據 |
+|---|---|---|---|
+| **Gino Paoli 等《Milestones》** | `jazz`／`pop`／`vocal jazz`（tags 另有 `italian`） | **`['jazz','pop']`** | **第 1419 條第三層（行為體）在本張指向兩邊**：主唱是義大利流行歌謠的代表人物、伴奏是義大利爵士第一梯隊，盤名自己寫「un incontro in jazz」；⚠ **池中 `Enrico Rava` 五張全部 `['jazz']`，本張是本組唯一加第二曲風的碟** |
+| **Van Hunt《Popular》** | `contemporary r&b`／`funk`／`neo soul`／`rock`（**無 jazz**） | **`['soul','rock']`** | **照實給**；派工信「曲風不是退件理由」＋第 1602 條（非爵士訊號滿的照收，前置閘乾淨即可） |
+
+**其餘 18 張判 `['jazz']`，其中四張的 MB 標籤本來更雜，逐一說明**：
+
+| 盤 | MB 給的 | 為什麼仍是 `['jazz']` |
+|---|---|---|
+| **Erik Truffaz《Arkhangelsk》** | **七個**：`acid jazz`／`contemporary jazz`／`downtempo`／`electronic`／`experimental`／`jazz`／`smooth jazz` | **第一層：池中六張 `Erik Truffaz` 全部 `['jazz']`**（c-154～c-159 一路判下來） |
+| **Floratone《Floratone》** | `jazz`（tags 另有 `jazz and blues`） | **聲響在 roots／post-rock 一側，但 Billboard 把它評在 `JAZZ` 欄、進 Top Jazz Albums、廠牌 Blue Note——第三層與第一層同向** |
+| **Trijntje《Who’ll Speak for Love》** | `jazz`／`pop` | **第一層：同批 a 組的 Vol.1 已判 `['jazz']`，同系列照既有判法**（⚠ **若 a 組最終給的是別的曲風，本張應一併對齊**） |
+| **Kenny Werner《Lawn Chair Society》** | **genres 欄空、tags 只有 `jazz and blues`** | **第三層（行為體）：爵士鋼琴三重奏 ＋ Top Jazz Albums 上榜 ＋ Blue Note** |
+
+⚠ **「MB genres 兩欄全空」本組 4 張**（Bosso、Moulin、Di Battista、Tolliver）——**第 1594 條：空 genres 只是訊號不是判準，四張都用軌目＋目錄號比對過全 slice 45 筆，沒有重複 RG。**
