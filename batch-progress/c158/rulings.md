@@ -1065,3 +1065,34 @@ TOCJ-66222（Wilson）／TOCJ-66225（Miles）／TOCJ-66236（Töykeät）／TOC
   但**九個市場（us/gb/jp/de/fr/nl/ca/tw/au/it）逐一查，全部「有頁、0 軌、0 preview」**
   ——**第 1371 條的形狀確認成立**，不是查法問題。**維持 `unavailable`**，研究層若要救只能另找 collection id。
 - **c158 串流因此變成 ready 30／37、未 ready 7。**
+
+## 第 1560-C 條（主線，**重要；新立，所有後批都適用**）：**探測層的八市場清單漏了北歐——`fi` 店面救回兩張，其中一張是全世界唯一有軌的店面**
+
+`probe-previews.mjs` 只試 **us / gb / jp / de / fr / nl / ca / tw** 八個店面。
+本批把未 ready 的 7 張改到 **fi / se / no / dk / it / es / pl / at / ch / be / br / mx** 重掃，結果：
+
+- ✅ **Jukka Perko & Virtuosi di Kuhmo《Kaanaanmaa》採信 `724235112`（fi 店面，9 軌全有 preview）。**
+  探測層八市場**全部 0 命中**，`recover-unavailable` 在藝人目錄裡**連候選都沒有**——
+  **只因為清單裡沒有 fi。** 同一筆另由 **UPC `724355742223` 在 fi 獨立驗證一次**，兩條路同一個 id。
+- ✅ **Rachelle Ferrell《Live in Montreux 91-97》採信 `723521059`**（us，12 軌全有 preview，
+  盤名寫法差在括號、年份 2002 雙中）——這一筆是藝人目錄候選救回的，不靠新店面。
+
+⚠ **這是「失敗與正常長得一樣」在探測層店面清單上的應驗**：
+**「八市場全 0」與「這張碟只在第九個市場上架」回報的是同一個 `unavailable`。**
+本線是 Blue Note 的歐洲／北歐分部大量發片的年代（芬蘭的 Perko、Trio Töykeät、U-Street All Stars、
+Joona Toivanen，義大利的 Boltro、High Five Quintet、Musica Nuda），**清單缺 fi／se／no／dk／it 影響的不只這一張。**
+**→ 建議本機把 `probe-previews.mjs` 的店面清單補上 fi／se／no／dk／it／es／pl，並回頭重掃本線各批的 `unavailable`。**
+
+### 同一輪掃描裡被擋下的四筆「像是找到了其實不是」（第 1067／1158／174-175 條）
+
+| 卡 | 掃到的 | 為什麼退 |
+| --- | --- | --- |
+| Ron Carter《The Golden Striker》(2003) | `1566573121`《Golden Striker (Deluxe Edition)》**2017** | 差 14 年，是 Golden Striker Trio 後來的碟——**第 1158 條的形狀** |
+| Martial Solal《NY-1, Live At The Village Vanguard》(2003) | `292795072`《Live At the Village Vanguard》**2008**，`℗ 2008 Cam Jazz` | **不同廠牌、不同場次**的凡加德現場，不是 Blue Note 這一張 |
+| Dianne Reeves《A Little Moonlight》(2003) | `740360289`《The Reprise Years》2013，**40 軌** | 盒裝合輯 |
+| Renee Rosnes & Danish Radio Big Band (2003) | `686955462`《Just Play!》2013 | 不同專輯 |
+
+**掃描腳本「取第一張有 preview 的碟」這個做法本身就會製造第 1067 條**——
+**機器掃完一定要逐筆人工比對盤名、年份與 `copyright` 欄**，否則救回的比查無更糟。
+
+**c158 串流最終：ready 32／37，未 ready 5**（Golden Striker／40°／NY-1／A Little Moonlight／Rosnes 同名盤）。
