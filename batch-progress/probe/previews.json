@@ -50640,7 +50640,16 @@
    "ca:1→0",
    "tw:1→0"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "us",
+  "collectionId": 724527810,
+  "appleTitle": "Man In the Air (feat. Laurence Hobgood & Stefon Harris)",
+  "appleArtist": "Kurt Elling",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/00/85/f5/0085f53c-4772-819c-c920-52624351e61e/mzaf_10693312896456897988.plus.aac.p.m4a",
+  "note": "2026-09-18 主線實查：recover-unavailable 的候選 724527810 逐軌回得到 preview（12/12），盤名與年份雙中，且卡池無第二張卡用此 id（裁定 646／1067 皆過）。探測層原本的「有頁無軌」是 search 端的空頁，不是這一筆。"
  },
  "Dianne Reeves|A Little Moonlight": {
   "batch": "c158",
