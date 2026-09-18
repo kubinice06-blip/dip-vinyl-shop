@@ -305,3 +305,412 @@
   1. **收退判準已經是三句（第 1202 條）**：**沒發行過 → 收；發行過且母體號段屬 Blue Note／Liberty／UA／Solid State → 退＋寫缺口；發行過但母體在真正的他廠 → 收、取他廠年。**
   2. **1996 年的 `TOCJ-` 碟要先去 Discogs 讀系列名**：`The BN Works 1500 Series`／`1500 Unissued`／`4100 Series` 都是東芝 EMI 的復刻家族，**列舉檔的 `reissueSeries` 欄抓不到**（第 1210 條）。
   3. **日版比美版早的情形在這一段越來越常見**（本批 Us3 早四個月、New Moon Daughter 早六週）——**`year` 取實體首發年，但 `country` 要寫對。**
+
+---
+---
+
+# c-153 b 組裁定（編號 1230–1259）
+
+本段為 **c-153 b 組**（22 筆）策展層的裁定，編號 **1230–1243**（派工信給的區間是 1230–1259，**1244–1259 未用**）。
+**a 組寫的第 1200–1212 條一字未改**，本段只在檔尾 append。
+判準沿用 **a 組第 1202 條的三句版**，並在第 1233 條為它補上第四句（(丁)）。
+
+---
+
+## 第 1230 條（c-153 b 交件）：**22 筆 → 收 15、退 7；退貨率 32%，是 1985 後十二組裡最高的一組，七張退件全部是「1957／1966／1970／1975-81 年母體的 CD 化或合輯化」**
+
+- **收 15 張、15 位**（一位一張，零重複掛名）：
+  `Max Roach —《Max Roach With the New Orchestra of Boston and the So What Brass Quintet》(1996)`、
+  `Duke Pearson —《I Don't Care Who Knows It》(1996, 庫存首發)`、
+  `The Three Sounds —《Live at the “It Club”》(1996, live, 庫存首發)`、
+  `Javon Jackson —《A Look Within》(1996)`、`Charlie Hunter Quartet —《Ready...Set...Shango!》(1996)`、
+  `Marcus Printup —《Unveiled》(1996)`、`Greg Osby —《Art Forum》(1996)`、
+  `Paul Jackson, Jr. —《Never Alone - Duets》(1996)`、`Sonny Fortune —《From Now On》(1996)`、
+  `Geri Allen —《Eyes... in the Back of Your Head》(1996)`、`Cæcilie Norby —《My Corner of the Sky》(1996)`、
+  `Jimmy Smith —《Lonesome Road》(1996, 庫存首發, 僅 JP)`、`Bob Dorough —《Right On My Way Home》(1997)`、
+  `Charlie Parker & Dizzy Gillespie —《Diz ’n Bird at Carnegie Hall》(1997, live)`、
+  `Önder Focan —《Beneath the Stars / Yıldızların Altında》(**1998**)`。
+- **退 7**（第 1231 條）：Earl Klugh《Love Songs》、Jimmy Smith《Groovin' at Small's Paradise, Volume 2》、
+  Sonny Clark Trio《The 45 Sessions》、Art Blakey《Orgy In Rhythm》、Chet Baker《Jazz Profile》、
+  Don Grolnick《Complete Blue Note Recordings》、Jimmy McGriff《Tribute to Basie》。
+  **第 315 條：prop 15 ＋ 退表 7 ＝ 22 ✓。**
+- **退貨率 32%**（1985 後各組：c-148 a 9%／c-148 b 18%／c-149 a 4%／**c-149 b 32%**／c-150 a 13%／c-150 b 18%／
+  c-151 a 13%／c-151 b 18%／c-152 a 17%／c-152 b 9%／c-153 a 17%／**本組 32%**）——**與 c-149 b 並列最高**。
+  原因很集中：**本組跨到 1996 年底與 1997 年，正好撞上 Blue Note 那兩年三條同時開跑的目錄化工程**
+  ——東芝 EMI 的「The BN Works 1500 Series／1500 Unissued」（**四張 TOCJ 碟，兩收兩退**）、
+  Connoisseur CD Series（Orgy In Rhythm）、**1997 年才開張的 Jazz Profile 中價合輯系列**（Chet Baker），
+  再加上兩張「把藝人在本廠的全部作品收成一盒」的碟（Grolnick、Klugh）。
+  **七張退件沒有一張是 1996–97 年的新錄音。**
+- **年份改判 1 張**（第 1234 條）：`Beneath the Stars / Yıldızların Altında` **1997 → 1998**。
+  **覆核成立、不改的 14 張**也在第 1234 條列出。
+- **庫存首發 3 張**（I Don't Care Who Knows It／Live at the “It Club”／Lonesome Road）——
+  **前兩張都在 `Blue Note Rare Groove Series`**（第 1172 條那個混裝系列，與 a 組的兩張庫存首發同系列），
+  **第三張在東芝 EMI 的 `The BN Works 1500 Unissued`**（第 1232 條）。
+- **現場盤 2 張**（Live at the “It Club”／Diz ’n Bird at Carnegie Hall），**MB `secondary-types: ["Live"]` 兩張都標對 ✓**
+  ——**第 1178 條「MB 在老現場盤上標得比 1990 年代新現場盤準」在本組第三次成立**（兩張的錄音都在 1970 年以前）。
+- **`releaseType`：15 張全是 Album**（**兩張現場盤照 a 組先例仍寫 Album，live 只寫進 risk 與 mbNote**）、
+  **合輯 0、走 §5.6 的 0、`exceptionReason` 0、`selfTitled` 0**。
+- **`genres`：15 張全部 `['jazz']`**——**本組沒有第二曲風**。
+  ⚠ 兩張看似邊緣的（`Paul Jackson, Jr.` 的 smooth jazz 二重奏盤、`Max Roach` 的管弦樂盤）**都判純 jazz**：
+  前者照第 1207 條末段 Richard Elliot／c-152 a《After Dark》的先例（進 Billboard TOP CONTEMPORARY JAZZ ALBUMS、Blue Note 本體發行），
+  後者的當代古典成分是 Billboard 自己在報導裡點出的賣點，**但碟由 Blue Note 以爵士品項發行、Roach 是爵士人**，不加 `classical`。
+  **簡報 §一-4 的「撞到疑似非爵士的退」在本組沒有觸發。**
+- **CAA**：RG 層**有圖 7 張**、**真 404 8 張**（Max Roach／Duke Pearson／Paul Jackson, Jr.／Geri Allen／Cæcilie Norby／
+  Groovin' at Smalls' Paradise／Lonesome Road／Don Grolnick，**全部 `redirect: follow` 重試三次確認，三次都是 404 不是 5xx**，第 589a 條）。
+  **圖數最多的是退件的《The 45 Sessions》16 圖與《Tribute to Basie》15 圖**（**兩張都是退件，封面資源反而最多**），
+  收件裡最多的是《Beneath the Stars》10 圖。
+  ⚠ **有圖的收件裡，來源不是 1996／97 原盤的有 1 張**（Live at the “It Club” 用 XW 數位 14e0bfef）。
+- **Apple**：`search` us 一種查法命中 **11 張**、**第三種查法（換市場）命中 2 張**
+  （My Corner of the Sky→dk/de、Beneath the Stars→tr/de）、
+  **三種查法全空 2 張**（`Paul Jackson, Jr. —《Never Alone - Duets》`、`Geri Allen —《Eyes... in the Back of Your Head》`）。
+  **第二種查法（換盤名字串）本組同樣一張都沒用到**（a 組也是 0，**連續兩組**）。
+- **本層新抓了一年的 OCR**：**`batch-progress/enum/billboard-bn-1997-ocr.txt.gz`（51 期，零 FETCH-FAIL、零 PARSE-FAIL）**
+  ——**repo 裡先前沒有任何 1997 年紙本**，**而本組有 7 筆的年份落在 1997**。已 append 進 `SOURCES-billboard-cashbox.md` 末尾（第 1242 條）。
+- **`node batch-progress/c153/chk-prop.mjs b` 標記 0**（跨批 116 批、4,721 卡、撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0）。
+
+---
+
+## 第 1231 條（同批）：**退表 7 筆，逐筆與理由分類**
+
+| # | 盤 | rgMbid | 目錄號／年 | 退的分類 | 逐張文案（第 782／842 條要求的那一行） |
+|---|---|---|---|---|---|
+| 1 | **Earl Klugh —《Love Songs》** | `23bdafd5-d28a-3eb3-8ac9-d3ddc41d7741` | **CDP 7243 8 53354 2 6**／1996-11-26 | **合輯（母體是他 1976–81 年的 Blue Note／Capitol 目錄）** | **十二軌全部是舊錄音**：Heart Strings／Laughter In The Rain／Summer Song／Catherine／Balladina／Alicia／Sweet Rum & Starlight／Mirabella／Like A Lover／I'm Ready For Your Love／Julie／Night Song，出自《Heart String》(1979)、《Late Night Guitar》(1980)、《Crazy for You》(1981)、《Finger Paintings》(1977) 一脈，**池中 c-144／c-145 已經把這六張原盤逐張收完**。⚠ ⚠ **Discogs 四筆條目的 `format` 欄全部帶 `Compilation`**（美 4147739 `CD, Compilation`、歐 27053772、加拿大俱樂部版 30933306 `CD, Compilation, Club Edition`、印尼卡帶 27341013 `Cassette, Compilation`），**credit 欄逐字只有一個人：`Steven Schenfeld: Compilation Producer`**——**沒有任何演奏者 credit，因為它不是一次錄音**。⚠ ⚠ **MB 的 `secondary-types` 是空的**——**這是第 1204 條（「該標 Compilation 沒標」）在本批的第二次同形，列舉檔也因此沒濾掉**。⚠ **紙本從反面坐實**：**Billboard 1996 全年的 TOP CONTEMPORARY JAZZ ALBUMS 上 Earl Klugh 那一格逐字都是 `EARL KLUGH WARNER BROS. 45884 SUDDEN BURST OF ENERGY`**（連續多期，最高第 12 名）——**1996 年他的新作在 Warner Bros.，Blue Note 這張是 Capitol 在他離巢之後整理的舊目錄**。**Apple 724262175（12 軌，releaseDate 1996-01-01，℗ 1996 Blue Note）；CAA RG 層真 404（三試）。** |
+| 2 | **Jimmy Smith —《Groovin' at Small's Paradise, Volume 2》** | `cb91a9d0-3175-3861-b465-39e3745f12e0` | **TOCJ-1586**／1996-12-21 JP | **CD 化再發（母體是 1958 年的 Blue Note `BLP 1586`）** | **錄音 1957-11-14 與 11-18 於哈林的 Smalls' Paradise**，Jimmy Smith org、Eddie McFadden g、Donald Bailey d，Rudy Van Gelder 錄音、Alfred Lion 製作、Reid Miles 封面、Leonard Feather 寫原始內頁。**五軌 Imagination／Just Friends／Lover Man／Body And Soul／Indiana，就是 1500 系列 `BLP 1586` 的原曲序**。**1996 年的 TOCJ-1586（Discogs 10788965，另有宣傳版 23372900）`format` 欄逐字 `CD, Album, Reissue, Remastered, Mono`、廠牌欄第二格印系列名 `The BN Works 1500 Series`、label-info 第二格併印 `BN-1586`**，notes 逐字說內附「A fold out insert replicates the original LP jacket back cover」——**它自己把 1958 年那張 LP 稱為 original**。⚠ **這是第 1202 條 (乙) 的教科書形狀**：母體號段 `BLP 1586` 就在本線期一的範圍裡。⚠ **與同批收下的《Lonesome Road》（TOCJ-1615）差別只在廠牌欄第二／三格的系列名**：`1500 Series`（已發行的復刻）vs `1500 Unissued`（未發行的庫存）——**第 1232 條把這一刀寫成可操作的。**⚠ **Apple 1476591394 的 releaseDate 直接寫 `1957-01-01`、copyright 欄逐字 `℗ 1957 Capitol Records LLC`**，**同頁還有 Vol. 1（1476588148，4 軌，也標 1957）**——**店面自己把兩卷都標回 1957。** CAA RG 層真 404（三試）。 |
+| 3 | **Sonny Clark Trio —《The 45 Sessions》** | `b024857e-7f68-452e-b0e8-0153dda81dbd` | **TOCJ-1617**／1996-11-27 JP | **CD 化再發（母體是 1980 年的 Blue Note Japan `GXF 3069`《The Art Of The Trio》）** | **錄音 1957-09-13（Discogs 1980 年那筆寫 10-13）與 1958-11-16 於 Van Gelder Studio**，前三軌是 Sonny Clark／Paul Chambers／Philly Joe Jones 三重奏盤的 alternate master，後段是 Jymie Merritt 貝斯、Wes Landers 鼓的標準曲場。⚠ ⚠ **Discogs 3689222 的 notes 逐字寫死：「Originally issued in Japan, 1980 as [r5462880].」**——**那一筆 r5462880 就是 `Blue Note GXF 3069`《The Art Of The Trio》（1980 JP，Ⓟ 1980，Michael Cuscuna「Produced For Release」，九軌與本張前九軌逐字相同）**，1996 年的 TOCJ-1617 只多收一軌〈Gee Baby, Ain't I Good To You (Alternate Master)〉。⚠ **format 欄也直說**：`CD, Album, **Reissue, Remastered**`（對照同系列的《Lonesome Road》是乾淨的 `CD, Album, Stereo`）。⚠ **Cuscuna 自己的 Producer's Notes 還補了第二條退的理由**：逐字「The second session was issued at the time on 45 singles, but not LP.」——**1958 年那場當年就以 Blue Note 45 轉單曲商業發行過**，**依第 1202 條 (乙) 兩條路都通向退**（母體 `GXF 3069` 與 Blue Note 45s 都在本線的號段家族裡）。⚠ **系列名 `The BN Works 1500 Unissued` 在這一張上是錯的**（Discogs notes 自己說前十張的系列名還印成 `1500 Unissue` [sic]）——**第 1232 條：系列名只能當第二意見，真正的判準是 notes 裡的母體。**⚠ **`chk-prop` 一個燈都沒亮**：池中的 `Sonny Clark —《Sonny Clark Trio》`（seed，BLP 1579）與 c-145 a 的《Blues in the Night》（1979）都是別的碟，**本筆的掛名是 `Sonny Clark Trio`、池中是 `Sonny Clark`**——**第 1181 條那個盲區在本批第二次中**。**Apple 三種查法都沒撈到本碟**（撈到 RVG Edition 的《Sonny Clark Trio》與 Time 廠的 1960 年三重奏盤，**第 528／707 條那種錯配**）。**CAA RG 層 16 圖（本組最多）。** |
+| 4 | **Art Blakey —《Orgy In Rhythm》** | `c66ab03d-32e0-46ea-8ab9-d942091b56b8` | **CDP 7243 8 56586 2 4（＋ST-56586）**／1997-06-05 | **CD 化再發 ＋ 撞池（母體是 1957／1959 年的 `BLP 1554` 與 `BLP 1555`）** | **錄音 1957-03-07 Manhattan Towers**，Blakey ＋ Art Taylor／Jo Jones／Specs Wright 四套鼓、Sabu Martinez／Carlos "Patato" Valdes／Jose Valiente／Ubaldo Nieto／Evilio Quintero 五名打擊、Herbie Mann 長笛、Ray Bryant 鋼琴、Wendell Marshall 貝斯。⚠ ⚠ **Discogs 1069780 的 notes 逐字：「Originally issued on BLP 1554 & 1555 as Volumes One and Two.」**，**format 欄逐字 `CD, Compilation, Limited Edition, Stereo, Mono`**，notes 還說帶紙與內盤把它標成 `Connoisseur CD Series`。⚠ ⚠ **紙本一槍斃命**：**Billboard 1997 的評介欄逐字「ART BLAKEY Orgy In Rhythm Volumes One & Two **REISSUE PRODUCER: Michael Cuscuna** Blue Note 56586 ... this 1957 set」**，同年另一篇鼓手專題又逐字寫「Blue Note's **just-reissued** 'Orgy In Rhythm Volumes One & Two'」——**這是本棒自抓的 1997 年 OCR 立刻派上用場的兩則**。⚠ ⚠ **而且撞池**：**池中已有 `Art Blakey —《Orgy in Rhythm, Volume One》(1957, seed ＋ c-137 a)` 與 `《Orgy in Rhythm, Volume Two》(1957, seed ＋ c-136 b)` 兩張**——**1997 年這張把兩卷合成一片，八軌正好是兩卷的全部**。⚠ **`chk-prop` 仍然沒亮燈**：池中兩張的盤名都帶 `, Volume One/Two` 後綴、本筆沒有，**折鍵不同**（第 611 條那五種盲區裡的「同名但不同盤的 Volume 碟」，**這次是反方向：合卷碟撞不到分卷碟**）。**Apple 723693662 的 collectionName 逐字 `Orgy In Rhythm, Vols. 1 & 2`、releaseDate `1957-01-01`、℗ 1997——店面同時把年份標回 1957 又把 ℗ 寫 1997。CAA RG 層 1 圖。** |
+| 5 | **Chet Baker —《Jazz Profile》** | `7af2b87a-70a1-3146-810c-3a11b67ac55c` | **CDP 7243 8 54902 2 4**／1997-04-01 | **合輯（Blue Note 1997 年開張的 `Jazz Profile` 中價選輯系列第一批十張之一）** | ⚠ ⚠ **紙本把這個系列的性質寫死**：**Billboard 1997 的整版廣告逐字「Introducing the Jazz Profile Series — A PERFECT INTRODUCTION TO AMERICA'S FINEST ARTFORM! BLUE NOTE, **TEN CDS OF ESSENTIAL MUSIC DRAWN FROM THE EXTENSIVE RESOURCES OF THE BLUE NOTE LABELS.** CHET BAKER **54902** / DINAH WASHINGTON / DUKE ELLINGTON / ART BLAKEY And The Jazz Messengers ...」**；同年另一篇零售專題又逐字寫「Hancock was just featured in Blue Note's midpriced **'Jazz Profile' anthology series**」。⚠ **Discogs 兩筆條目的 `format` 欄都是 `CD, Compilation`**（美 13162347 `CDP 7243 8 54902 2 4`、歐 13529447 `7234 823 972 2`），**廠牌欄第二格印系列名 `Jazz Profile`**；同系列另有 Art Pepper 11470620 與宣傳採樣盤 7116538／9905824，**全部標 Compilation**。⚠ **MB 的 `secondary-types` 又是空的**——**第 1204 條在本批的第三次同形**（Klugh、Grolnick、本張三張全是這個方向）。⚠ **第 874 條過半門檻：11/11 已發行 → 純合輯**，母體是 Baker 1950 年代的 Pacific Jazz／Blue Note 目錄，**池中 26 列 Chet Baker 已含 seed 18 張 ＋ c-131／c-136／c-152 的四張**。⚠ **列舉檔的 `catno` 欄是空的**（MB 那筆 b12de027 label-info 只有 `Blue Note`、無目錄號、無 barcode）——**目錄號 `54902` 是從 Billboard 的廣告與 Discogs 反查來的**。**Apple 三種查法都沒撈到本碟。CAA RG 層 1 圖。** |
+| 6 | **Don Grolnick —《Complete Blue Note Recordings》** | `ab666f7c-4cf5-4538-844d-0e4257647307` | **CDP 7243 8 57197 2 1**／1997-07-15 | **合輯／再發雙碟 ＋ 撞池（母體是他 1990 與 1992 年的兩張 Blue Note 原盤）** | **雙碟 8＋8 軌，正好就是池中已有的兩張**：`Don Grolnick —《Weaver of Dreams》(1990, c-149 a)` 與 `《Nighttown》(1992, c-151 a)`。⚠ ⚠ **Discogs 三筆條目（歐 4849715／美 25198870／美宣傳版 12691860）的 `format` 欄逐字同時帶 `CD, Album, **Reissue**` ×2 ＋ `All Media, **Compilation**`**——**兩個標籤同時掛上，是「把自己在本廠的全部作品收成一盒」最典型的形狀**。⚠ **盤名逐字就是 `Complete ... Recordings`**——**簡報 §一-2 與派工信點名要細看的形狀（Collection／Anthology 那一組的近親），本批中一次**。⚠ **MB 的 `secondary-types` 空、primary-type `Album`**（第 1204 條第三次同形）；**MB 的 label-info 也整個空**（第 1209 條(3)），目錄號只在 Discogs 上。⚠ **Grolnick 1996-06-01 已過世**，這張是遺作整理，**同年他在 Warner Bros. 的《Medianoche》才是新作**（Billboard 1997 的葛萊美前瞻逐字提到「deceased keyboardist/composer/producer luminary Don Grolnick and his fine Warner Bros. album 'Medianoche'」）——**不要把兩張混為一談**。⚠ **`chk-prop` 沒亮燈**：折鍵是「掛名｜盤名」，**池中兩張的盤名與本筆完全不同**。**Apple 三種查法全空。CAA RG 層真 404（三試）。** |
+| 7 | **Jimmy McGriff —《Tribute to Basie》** | `55213d07-ef56-33bc-9762-6d70dfd48ed9` | **0946 3 64644 2 8（2006 BN 版）／1997 GB LRC**／MB frd 1997 | **CD 化再發（母體是 1966 年的 `Solid State SS 18001`《The Big Band》）** | ⚠ ⚠ **這一張是本組最需要挖的一筆，而且列舉檔的 `note` 猜錯了方向**（見第 1241 條）。**列舉檔寫「BN 首發 2006，原盤 1997 可能他廠（再發）」**，若照字面就會走第 1202 條 (丙)（他廠 → 收）。**實際上母體是 `Solid State Records SS 18001`《The Big Band》(1966, US)**——**Discogs 11483062 的十軌 Hob Nail Boogie／Cherry Point／Swinging The Blues／Cute／Every Day／Blues Go Away／Avenue C／Lil Darlin'／Splanky／Slow But Sure，與 1991 年 LRC `CDC-9027`《Tribute To Basie》、2006 年 Blue Note `0946 3 64644 2 8`《The Big Band: A Tribute To Basie》逐軌一字不差**，班底也一字不差（Jimmy McGriff org、Manny Albam 編曲指揮、J.J. Johnson／Tom McIntosh／Eddie Bert tb、Frank Wess／Frank Foster／Budd Johnson／Jerome Richardson／Seldon Powell／Billy Mitchell sax、Kenny Burrell／Barry Galbraith g、Richard Davis b、Grady Tate／Mel Lewis d、Phil Ramone 錄音、Sonny Lester 製作）。**Solid State 是 United Artists 的爵士子廠、1966–70 年與 Blue Note 同一個母公司——正是第 1202 條 (乙) 點名要記的那一家**（a 組退《70th Birthday Concert》用的也是同一條）。⚠ **MB 那筆 b5c6dfc8「1997 GB LRC Ltd.」在 Discogs 上查無對應的英國條目**：Discogs 上 LRC 一脈只有 1991 美版 `CDC-9027`、1991 卡帶 `MC-9027`、1992 的《Tribute To Basie - Funkiest Little Band In The Land》`CDC-9070`（**format 欄帶 `Compilation`**）與 1996 LaserLight `17 094`《Tribute To Count Basie》——**MB 的 1997 這一筆年份與國別都可疑，不要拿它當首發**。⚠ ⚠ **Apple 把三層全標出來了**：**716268992「Jimmy McGriff - The Big Band - A Tribute to Basie」releaseDate `1966-01-01` ℗ 2006 Blue Note**、**816169362「Jimmy Mcgriff Big Band Tribute to Basie」releaseDate `1966-01-01` ℗ 1991 LRC Ltd.**、**276112148 releaseDate `1974-01-01` ℗ 1985 1990 2008 LRC Ltd.**——**店面自己把母體標回 1966**（第 1141 條第四種抓法在本組第二次命中）。⚠ **Billboard 1997 全年查 `mcgriff`、`64644`、`tribute to basie` 零命中**（本棒自抓的 51 期）。**CAA RG 層 15 圖。** |
+
+**⚠ 七張沒有一張被 `chk-prop` 標記**（第 611／1089／1157／1170／1201 條，**1985 後第七組連續成立**）。**抓出來的方法**：
+(a) **Discogs 的 `format` 欄**（七張全中：`Compilation` 四張〔Klugh／Orgy／Jazz Profile／Grolnick〕、`Reissue` 三張〔TOCJ-1586／TOCJ-1617／Grolnick 同時兩種〕）；
+(b) **Discogs 的廠牌欄／`notes` 寫出母體系列名或母體目錄號**（`The BN Works 1500 Series`／`Jazz Profile`／
+  `Originally issued on BLP 1554 & 1555`／`Originally issued in Japan, 1980 as [r5462880]`）；
+(c) **Apple 的 `releaseDate` 標回母體年**（五張中：1957／1957／1957／1966／1996 年那張 Klugh 則是 ℗ 欄自打架）；
+(d) **紙本的評介／廣告逐字說它是再發或系列選輯**（**本組第一次由 1997 年的 Billboard 直接斃掉兩張**：Orgy In Rhythm 的
+  「REISSUE PRODUCER」＋「just-reissued」、Jazz Profile 的「TEN CDS ... DRAWN FROM THE EXTENSIVE RESOURCES」）；
+(e) **逐軌比對撞到池中既有卡**（兩張中：Orgy In Rhythm ←→ 池中兩卷、Complete Blue Note Recordings ←→ 池中兩張原盤）。
+
+**交主線的資料庫缺口**（第 1114 條(甲)／第 1141／1171／1201 條的續筆）：
+1. **Blue Note `BLP 1585`／`BLP 1586` — Jimmy Smith《Groovin' at Smalls' Paradise, Volume 1／Volume 2》(1958，1957-11-14／18 哈林現場)**：
+   **池中 `Jimmy Smith` 已有 34 列，這兩卷一卷都沒有**（**本組實掃時才發現這個洞**）。**若要補，`year` 取 1958、`label` 寫 BLP 1585／1586，兩卷各一張、risk 互指**；
+   **Apple 上兩卷都在（1476588148 Vol.1 4 軌／1476591394 Vol.2 5 軌）**。
+2. **Blue Note Japan `GXF 3069` — Sonny Clark《The Art Of The Trio》(1980 日本庫存首發，1957-09／1958-11 錄音)**：
+   **池中 `Sonny Clark` 已有 8 列、這一張沒有**。**若要補，`year` 取 1980、`label` 寫 GXF 3069**，
+   **並且務必與池中 BLP 1579 的《Sonny Clark Trio》區分**（同一批人、不同碟）。
+3. **Solid State `SS 18001` — Jimmy McGriff《The Big Band》(1966，Manny Albam 編曲的 Basie 致敬大樂團盤)**：
+   **池中 `Jimmy McGriff` 已有 5 列（I've Got a Woman／The Worm／Electric Funk／Something To Listen To／Black Pearl），1966 年這張沒有**。
+   **若要補，`year` 取 1966、`label` 寫 Solid State SS 18001，不要用 1991 年的 LRC CD、也不要用 2006 年的 Blue Note 版。**
+   ⚠ **這是本線第二次撞到 Solid State 母體**（第一次是 a 組的《70th Birthday Concert》），**建議主線把 Solid State 目錄整段列一次**。
+4. **Blue Note `7243 5 23997 2 7` — Gene Harris And The Three Sounds《Live at the 'It Club' Volume 2》(2000)**：
+   **是本組收下的《Live at the “It Club”》那兩晚的另一半**，**不在本批清單上、池中 0 張**。**若要補，`year` 取 2000。**
+5. **Bethlehem《Devil May Care》(1956／57) 與 Focus《Just About Everything》(1966) — Bob Dorough**：
+   **池中 `Bob Dorough` 0 列**，本組收的是他 1997 年的 Blue Note 首作；**這兩張是他的代表作但都在他廠、不在本線範圍**
+   （Billboard 1997-09-27 逐字說兩張當年都剛復刻回市面）。
+
+---
+
+## 第 1232 條（同批，**重要；把第 1210 條末段那句警語做成可操作的一刀**）：**1990 年代的 `TOCJ-` 碟，收退看廠牌欄第二／三格的系列名，但系列名只能當第二意見，最終判準是 Discogs `notes` 裡有沒有寫出母體**
+
+**本組有四張 1996 年的東芝 EMI `TOCJ-` 碟，兩收兩退，四張的判都落在這一條上：**
+
+| 盤 | 目錄號 | 廠牌欄的系列名 | `format` 欄 | `notes` 裡的母體 | 判 |
+|---|---|---|---|---|---|
+| **Jimmy Smith —《Lonesome Road》** | TOCJ-1615 | **`The BN Works 1500 Unissued`** | **`CD, Album, Stereo`（乾淨）** | **無母體；帶紙逐字「世界初登場」、Cuscuna 逐字「This previously unissued session」** | **收**（第 1202 條 (甲)） |
+| **Sonny Clark Trio —《The 45 Sessions》** | TOCJ-1617 | **`The BN Works 1500 Unissued`（同一個系列！）** | `CD, Album, **Reissue, Remastered**` | **逐字「Originally issued in Japan, 1980 as [r5462880]」＝`GXF 3069`；Cuscuna 另說後半場「issued at the time on 45 singles」** | **退**（第 1202 條 (乙)） |
+| **Jimmy Smith —《Groovin' at Small's Paradise, Vol. 2》** | TOCJ-1586 | `The BN Works 1500 **Series**` | `CD, Album, **Reissue, Remastered**, Mono` | label-info 第二格併印母體號 `BN-1586`；notes 說內附複刻原 LP 封底 | **退**（第 1202 條 (乙)） |
+| （a 組）**Hank Mobley —《Curtain Call》** | TOCJ-1611 | `The BN Works 1500 **Unissued**` | `CD, Album, **Reissue, Remastered**, Stereo` | 逐字「A reissue of [m681662] with a new title and cover art.」＝`BNJ 61006` | **退**（第 1201 條第 3 筆） |
+
+**→ 結論三句：**
+1. **`1500 Series` ＝ 一定是再發**（母體是已發行的 1500 系列 LP）——**這一半可以當快篩。**
+2. ⚠ **`1500 Unissued` 不等於庫存首發**：**本組與 a 組四張裡有三張掛 `Unissued`，其中兩張是再發**
+   （《The 45 Sessions》母體 1980 GXF、《Curtain Call》母體 1984 BNJ）——**系列名只是說「這個號在 1500 系列裡沒發過」，不是說「這批錄音沒發過」**。
+   **這正是第 1112 條「目錄號段快篩只能當第二意見」在系列名上的翻版。**
+3. **真正能判的是兩欄**：**`format` 欄有沒有 `Reissue`／`Remastered`**，**與 `notes` 裡有沒有寫出母體**（「Originally issued …」／「A reissue of [m…]」）。
+   **兩欄都乾淨、而且帶紙或 Producer's Notes 正面寫「previously unissued／世界初登場」的，才是庫存首發。**
+⚠ **Discogs 自己還記了一個系列內部的坑**：逐字「The first ten titles in this series have **'1500 Unissue' [sic]** as the series name. This was corrected for the next and final ten.」
+——**`1500 Unissue`／`1500 Unissued` 兩形都要掃。**
+⚠ **列舉檔的 `reissueSeries` 欄抓不到東芝 EMI 的 `The BN Works …` 家族**（第 1210 條已記）——**本組四張的 `reissueSeries` 欄全是 `[]`。**
+
+---
+
+## 第 1233 條（同批，**重要；為第 1202 條補上第四句 (丁)**）：**母體在他廠、但先前那次發行只是「部分」或「不同形狀」的，`year` 取本次完整發行的年，不取他廠首發年**
+
+第 1202 條 (丙) 寫的是：**發行過、但母體在真正的他廠 → 收，`year` 取他廠首發年。**
+**它的原型是 a 組的 Petrucciani《Live at the Village Vanguard》——那張是「同一張碟、同樣的八軌、1985 年就在 Concord 出過完整的雙 LP」**，
+**所以取 1985 沒有任何歧義。本組撞到的《Diz ’n Bird at Carnegie Hall》不是那個形狀：**
+
+| | **(丙) 的原型：Petrucciani** | **本組：Diz ’n Bird** |
+|---|---|---|
+| 母體 | **Concord／The George Wein Collection `GW-3006`（1985 雙 LP）** | **Roost／Royal Roost `LP 2234`《Diz 'n' Bird In Concert》（1959）** ＋ Birdland BLP 425／Savoy SJL 1177／Black Deuce 等散裝 |
+| 母體與本碟的關係 | **同一張碟、八軌全同** | ⚠ **母體 A 面只有五重奏段、B 面是 1953 年巴黎 Salle Pleyel 的另一場**；**大樂團那十軌散在別的廠牌上** |
+| 母體自己的 `format` 欄 | **乾淨的 `Vinyl, LP, Album`** | ⚠ **`Vinyl, LP, Album, Compilation, Mono`——母體自己才是合輯** |
+| 本碟的 `format` 欄 | `CD, Album, Reissue`（1996 德國那層） | **五筆 1997 年條目全是乾淨的 `CD, Album`** |
+| 本碟是什麼 | 1996 年的再發 | **第一次把同一晚同一場音樂會技術上可發行的部分完整收在一起**（內頁逐字說明哪幾首因收音問題不收） |
+| `year` | **1985**（他廠首發年） | **1997**（本次完整發行年） |
+
+**→ 第 1202 條改寫成四句：**
+> **(甲) 這批錄音先前沒有以商品形式發行過 → 收，`year` ＝ 首次商業發行年。**
+> **(乙) 發行過，而且那次發行的目錄號屬於 Blue Note／Liberty／United Artists／Solid State 家族 → 退；母體以原盤年寫進資料庫缺口。**
+> **(丙) 發行過，那次發行在真正的他廠，而且是同一張碟的同一個形狀 → 收，`year` 取他廠首發年、`label` 寫原廠。**
+> **(丁) 發行過，那次發行在真正的他廠，但只是部分、或拼進了別場別年的材料 → 收，`year` 取本次完整發行年、`label` 寫本次的廠，母體逐筆寫進 `risk`。**
+
+⚠ **(丁) 的門檻要守住，不能變成收合輯的後門**：**用得上 (丁) 的前提是「本碟本身不是合輯」**
+——**必須是單一場次／單一錄音期的完整呈現**，而且 **MB 的 `secondary-types` 與 Discogs 的 `format` 欄兩邊都沒有 `Compilation`**。
+**本組的《Chet Baker — Jazz Profile》《Earl Klugh — Love Songs》《Don Grolnick — Complete Blue Note Recordings》三張都不符合這個前提，所以走的是退表不是 (丁)。**
+⚠ **另一個守門條件**：**(丁) 的母體如果在 Blue Note 家族裡，仍然走 (乙) 退**——(丁) 只改 (丙) 的 year 規則，不動 (乙)。
+
+---
+
+## 第 1234 條（同批）：**年份——改判 1 張、維持但留反向證據 1 張、覆核成立 13 張**
+
+| 盤 | 列舉檔／MB 的說法 | 本層取 | 依據 |
+|---|---|---|---|
+| **`Önder Focan —《Beneath the Stars / Yıldızların Altında》`** | MB frd **1997**；唯一一筆 release 28e01fef 也是 1997 TR | **1998** | **三個獨立來源對 1998**：(a) **Discogs 17551810（唯一一筆土耳其實體條目）`year` 與 `released` 都是 1998**；(b) **英文維基 `Önder Focan` 的 Discography 逐字「_Beneath the Stars_ (Blue Note, 1998)」、正文逐字「In 1998 he was the first Turkish musician to record an album for Blue Note Records」**；(c) **土耳其在地爵士資料庫 Cazkolik 的條目逐字「Blue Note Records (EMI Müzik) \| 1998」**。**階序上 Discogs 原壓群 ＞ MB frd**（簡報 §二）。⚠ **反向證據留著**：**Apple `tr`／`de` 的 releaseDate 是 `1997-12-25`（帶完整月日、非年頭回填、非錄音日）**，**而且 MB 那筆帶了目錄號 `100301 2` 與 barcode `8691284030122`（有人拿過實體盤），Discogs 那筆反而 `catno` 是 `none`、`identifiers`／`companies` 全空**——**最可能的實況是 1997 年底壓好、1998 年鋪貨**。**本張是本組年份最不穩的一筆**，若研究層找得到 EMI Türkiye 新聞稿或土耳其同期樂評（階序最上層），可以推翻本判。 |
+| ⚠ **`Cæcilie Norby —《My Corner of the Sky》`** | MB frd 1996；Discogs 1996 | **1996（不改）** | **正方三層**：**Apple `dk`／`de` releaseDate `1996-06-28`（帶完整月日）** ＋ **Billboard 1996-07-27 p37 Blue Note 全版廣告名單逐字列 `CAECILIE NORBY`（當年新片名單，不是回顧）** ＋ Discogs 兩筆 1996。**唯一需要擋掉的誤讀是 Billboard 1996-01-20 p47 的 Global Music Pulse 丹麥專題**——**那篇講的是 1995 年的同名首作（逐字「the current album」），第 1203 條已為那張判過**，**本批不得把同一篇當成本張的證據**。 |
+
+**覆核成立、不改的 13 張**（列出來省得下一批重查）：
+《Max Roach With the New Orchestra of Boston …》1996（**Billboard 1996-04-20 p1＋p60 頭版專文逐字「slated for worldwide release through EMI on Tuesday (16)」＝1996-04-16**，本組證據最厚）、
+《I Don't Care Who Knows It》1996（MB frd＋Discogs 四筆原壓群＋盤面 ℗ 1996；**兩刊零命中**）、
+《Live at the “It Club”》1996（**Discogs 1955176 notes 逐字 `©℗ 1996 Capitol Records, Inc.`**＋四筆 1996 原壓群；**兩刊零命中**）、
+《A Look Within》1996（**Billboard 1996 Blue Note 夏季名單逐字「due Sept. 3」**＋同年新片表）、
+《Ready...Set...Shango!》1996（**MB frd 1996-05-28 帶月日**＋**Billboard 1996 兩張爵士榜連續多期在榜**＋Discogs 美歐兩筆）、
+《Unveiled》1996（**同一則夏季名單逐字「due Aug. 6」**；無評介無榜位）、
+《Art Forum》1996（**同一則名單逐字「due Aug. 6」**＋**Billboard 1996 年終爵士評家個人榜第 3**）、
+《Never Alone - Duets》1996（**MB frd 1996-05-14 帶月日**＋**TOP CONTEMPORARY JAZZ ALBUMS 以 NEW 進榜第 23**＋同年評介）、
+《From Now On》1996（**同一則名單逐字「due Sept. 3」**＋同年新片表逐字列名）、
+《Eyes... in the Back of Your Head》1996（MB frd＋Discogs＋盤面 ℗；**紙本完全空白，見下**）、
+《Lonesome Road》1996（**MB frd 1996-11-27 帶月日**＋Discogs 正式盤與宣傳盤兩筆＋Apple ℗ 1996；**僅日本盤，兩刊零命中**）、
+《Right On My Way Home》1997（**Billboard 1997-09-27 p11→p17 專文「JAZZ VETERAN BOB DOROUGH MAKES BLUE NOTE DEBUT」**＋Discogs 五筆 1997＋Apple ℗ 1997）、
+《Diz ’n Bird at Carnegie Hall》1997（**MB frd 1997-06-17 帶月日**＋Discogs 五筆 1997＋**盤面逐字 `℗ & © 1997 Capitol Records, Inc.`**；見第 1233 條）。
+
+⚠ **紙本層完全空白的有 6 張**（I Don't Care Who Knows It／Live at the “It Club”／Eyes... in the Back of Your Head／
+Lonesome Road／Beneath the Stars／Unveiled 的評介與榜位部分）——**兩張是 Rare Groove Series 的庫存盤、一張是日本限定、
+一張是土耳其在地盤、一張是不進榜的個人作品、一張是只有廣告沒有評介的新人第二作**，**紙本空白是預期的，不是證據不足**
+（第 1203 條末段同形，**本組比例更高：6/15 ＝ 40%**）。
+⚠ **本組出現一次「Apple 的 releaseDate 整整標歪一年」**（`Max Roach …` 標 1995，實際 1996）
+——**第 1203 條末段那個「第五種歪法」在本組第三次中**。
+⚠ **本組另出現一種新的 Apple 歪法**：**`Javon Jackson —《A Look Within》` 的 copyright 欄逐字是 `℗ 2009 Blue Note Records`**
+——**那是數位重發的 ℗ 年，不是首發年**。**給後批：Apple 的 `copyright` 欄在 1990 年代的碟上可能寫的是 2000 年代的數位重發年，
+只有當它與 releaseDate／盤面同年時才有證據力。**
+
+---
+
+## 第 1235 條（同批）：**掛名——沿用 10、收攏 2、新字串 3、聯名新造 1、新造分裂 0**
+
+### （一）沿用池中既有字串 10（共 10 張卡）
+
+`Max Roach`（seed 11 列，含 Clifford Brown／Booker Little／Anthony Braxton 三組既有聯名並存，**本層不動**）、
+`Duke Pearson`（seed 11＋c-137～c-143 共 11 張）、`Javon Jackson`（c-151 b／c-152 b 共 2 張）、
+`Marcus Printup`（c-152 b 1 張）、`Greg Osby`（c-150 a／c-151 a／c-152 a 共 3 張）、
+`Sonny Fortune`（seed 1＋c-152 a 1 張）、`Geri Allen`（c-150 a／c-151 a／c-151 b 共 3 張，
+另有 `Ralph Peterson Trio featuring Geri Allen` 一個既有聯名並存，**本層不動**）、
+`Cæcilie Norby`（c-153 a 同批 1 張）、`Jimmy Smith`（seed 34 列）、
+`The Three Sounds`（seed 15＋c-137～c-143 共 15 張，見下）。
+
+### （二）收攏 2
+
+| MB artist-credit | 卡上掛名 | 收攏的理由 |
+|---|---|---|
+| **`Gene Harris & The Three Sounds`**（群組 **9b58e361**） | **`The Three Sounds`** | ⚠ **完全照 c-141 b 的先例**：**c-141 b 處理《Elegant Soul》時就撞過同一個群組 9b58e361，並已認定它與池中 21 張用的 `The Three Sounds`（cf2115e9）是 MB 上的兩個群組、依第 307／363 條第二型與 c-140 b 第 563 條先例（The 3 Sounds → The Three Sounds）收攏到池中多數字串**。**本張同一個 id、同一條理由，照收攏。**⚠ **2024 年黑膠 354ad0bb 的 credit 又寫成 `Gene Harris And The Three Sounds`（`And` 不是 `&`）**——**同一個 RG 裡兩種 join phrase**，`&`／`And` 兩形都進 queryAlias。 |
+| **`Önder Focan, Sam Yahel, Bill Stewart, John Nugent`**（Discogs 的四人並列） | **`Önder Focan`** | **MB 與 Apple 都只掛 Focan 一人**（fe0da387 Person／TR），**依第 543／553 條收攏到領班字串**；四人並列形進 queryAlias。 |
+
+### （三）新字串 3（池中皆 0 列，漢字／羅馬字／片假名三形都掃過）
+
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Charlie Hunter Quartet`** | 60c02ac7 **Group** | ⚠ ⚠ **池中已有 `Charlie Hunter Trio`（c-152 b《Bing, Bing, Bing!》1995）**——**本層依第 1131 條（主線剛裁）判「這不是分裂」**：**MB 是兩個不同的 Group 實體**、**Billboard 1996 的爵士榜連續多期逐字印 `CHARLIE HUNTER QUARTET`**、**編制真的從三人變四人**。**兩個字串都留，各卡照自己的 credit。**⚠ **裸名 `Charlie Hunter` 池中也是 0 列**——日後若有他的個人盤進池，會是第三個字串，**那時再依第 1131 條判一次，不要回頭合併**。 |
+| **`Paul Jackson, Jr.`** | 035610f3 Person | ⚠ **MB 同字串另有貝斯手 `Paul Jackson`（Headhunters／Herbie Hancock 一脈）是不同的人**——**第 935 條 `Bill Evans (saxophonist)` 那個形狀**，**日後任何 `Paul Jackson` 進池一定要先帶消歧義（吉他手 Jr. vs 貝斯手）**。⚠ **Billboard 榜上印 `PAUL JACKSON, JR.`（有逗號）、評介標題印 `PAUL JACKSON JR.`（無逗號）**，兩形進 queryAlias。 |
+| **`Önder Focan`** | fe0da387 Person／TR | **同字串只有這一個實體、零衝突**。⚠ **變音符 `Ö` 與土耳其文無點 `ı` 是最大的上架風險**：**`Önder`／`Onder` ×`Yıldızların`／`Yildizlarin` 四種組合都要掃**；**`ı`（U+0131）與 ASCII `i` 的大小寫轉換行為不同**——**這是第 1208 條(三) 的 `æ` 之後，本線第二種「合法拉丁字母但會壞掉字串比對」的字**。 |
+| **`Bob Dorough`** | de81eacd Person | **同字串只有這一個實體**。⚠ **但 Billboard 1997 全年查 `dorough` 會大量撈到 Backstreet Boys 的 Howie Dorough**（1997-12-13 p76、12-27 p47 兩則圖說）——**同姓不同人在紙本層的干擾**，**查證必須連 `Bob` 或 `Blue Note` 一起查**。 |
+
+（**新字串實為 4 個**，表頭的「3」是指非 Person-only 的計法；**以字串計是 4：`Charlie Hunter Quartet`／`Paul Jackson, Jr.`／`Önder Focan`／`Bob Dorough`**。）
+
+### （四）聯名新造 1
+
+**`Charlie Parker & Dizzy Gillespie`**（c7356af9 Person ＋ join ` & ` ＋ e9ba8ccb Person）——**不是新造分裂**：
+**兩個字串都是池中既有的多數寫法**（`Charlie Parker` 5 列、`Dizzy Gillespie` 9 列），**本層只是照 MB 的 RG credit 用 `&` 接起來**，
+**先例是 seed 的 `Duke Ellington & John Coltrane`、`Jim Hall & Ron Carter` 與池中既有的 `Roy Eldridge & Dizzy Gillespie`**
+（＝與第 1208 條(四) 的 `日野皓正 & 菊地雅章` 同一種處理）。
+⚠ **Discogs 把順序反過來寫成 `Dizzy Gillespie & Charlie Parker`**（1959 年母體與 1978 年日版都是這個順序）——**兩種順序都進 queryAlias**，
+**`chk-prop` 的折鍵不會把兩種順序折成同鍵。**
+
+### （五）新造分裂 0。
+
+---
+
+## 第 1236 條（同批）：**撞陳列——本組唯一一次真正的「同名不同錄音」在《Live at the “It Club”》的〈Sittin' Duck〉**
+
+**逐軌比對（第 738／859／1049 條）跑完 15 張，只有一格中：**
+
+| | 池中既有 | 本組收件 |
+|---|---|---|
+| 曲 | **〈Sittin' Duck〉** | **〈Sittin' Duck〉** |
+| 碟 | `The Three Sounds —《Elegant Soul》`（**BST 84301，1968，c-141 b**） | `The Three Sounds —《Live at the “It Club”》`（**1996 首發，c-153 b**） |
+| 錄音 | **1968-09-19／20，RPM International Studios, Los Angeles**，棚內，Monk Higgins 編曲指揮，**加弦樂組、長笛、鐵琴、第二鼓手** | **1970-03-06，It Club, Hollywood**，**現場三重奏**（Gene Harris p／Henry Franklin b／Carl Burnett d） |
+| 其餘軌 | 八軌 | 七軌 |
+| 重疊 | **1/8 vs 1/8，其餘 0** | 同 |
+
+**→ 第 1049 條：同名不同錄音，逐軌比完照收，兩張 risk 互指。**
+**正文不得把 1968 年那張的弦樂與管樂編制寫進本張的三重奏，也不得把兩次演奏寫成同一次。**
+
+**其餘 14 張逐軌 0 重疊**，但有五組需要在 risk 互指的「同藝人相鄰作品」：
+1. **`Duke Pearson —《I Don't Care Who Knows It》` ←→ 池中兩張同場的碟**（**本組最細的一格**）：
+   **1970-02-13 那場同時餵了 c-143 b 的《It Could Only Happen With You》（Discogs 1465075 notes 逐字「on February 13, 1970 (track B3)」）**；
+   **1969-05-05 那場同時餵了 c-142 b 的《How Insensitive》（Discogs 1350583 notes 逐字「on May 5, 1969 (tracks B2, B4, B5)」）**。
+   **同場不同曲、逐軌 0 重疊，三張 risk 互指。**
+2. **`Charlie Hunter Quartet —《Ready...Set...Shango!》` ←→ `Charlie Hunter Trio —《Bing, Bing, Bing!》`（c-152 b）**：不同編制、不同年。
+3. **`Cæcilie Norby —《My Corner of the Sky》` ←→ `Cæcilie Norby —《Cæcilie Norby》`（c-153 a 同批）**：
+   **同一位藝人、相鄰兩年、同一個廠牌，主線上架時最容易混。**
+4. **`Charlie Parker & Dizzy Gillespie —《Diz ’n Bird at Carnegie Hall》`（1947-09-29 卡內基）←→ seed 的
+   `Charlie Parker —《Jazz at Massey Hall》`（1953-05-15 多倫多）、`Dizzy Gillespie —《Pleyel 53》`（1953-02-09 巴黎）、
+   c-149 a 的《Charlie Parker at Storyville》（1953 波士頓）**：四張都是 Parker／Gillespie 的現場、**沒有一張是同一場**。
+   ⚠ **`Pleyel 53` 那一張特別要記**：**它就是 1959 年 Roost LP 2234 的 B 面那場**（第 1233 條表格裡的母體），
+   **所以「Diz ’n Bird 的母體」與「池中既有的 Pleyel 53」在內容上是相鄰的兩塊，主線上架時要能分辨。**
+5. **`Önder Focan —《Beneath the Stars》` 的鼓手是 `Bill Stewart`** ——**正是 c-153 a《Snide Remarks》的領班**
+   （第 1208 條(三) 已為他立過消歧義警語：MB 同字串四個 Person，另一位是 1924 年生的爵士薩克斯手）。
+   **一張是他的領班盤、一張是他當側人的碟，兩張 risk 互指。**
+
+⚠ **本組沒有出現的**：**同一場錄音被拆成兩張各自成卡的形狀**（第 1049 條的另一半）、
+**「續集盤」與「把自己舊作現場重錄」的盤**（派工信點名 1990 年代中期特別多的那兩種）——**本組一張都沒撞到。**
+
+---
+
+## 第 1237 條（同批）：**MB 這一批的六種毛病**（第 1183／1209 條那張表的續筆）
+
+| # | 毛病 | 本組實例 |
+|---|---|---|
+| 1 | **`first-release-date` 抄了錯的那一層** | **《Beneath the Stars》**：frd 1997，**但三個獨立來源都說 1998**（第 1234 條）。**與第 1209 條(1) 的方向不同：那次是抄了再發層，這次是抄了「壓片年」而不是鋪貨年。** |
+| 2 | **`barcode` 欄整個空** | **《Art Forum》dd55cfc2** 與 **《From Now On》9d82f655** 兩筆都沒有 barcode（**本組兩例**），目錄號只能靠 Discogs 與 Billboard 的號碼交叉。 |
+| 3 | **label-info 整個空** | **《Right On My Way Home》0c09ace4**（1997 US CD）label-info 空、**`status` 欄還是 `?`**；**《Jazz Profile》b12de027** label-info 只有 `Blue Note`、無目錄號無 barcode（**列舉檔的 `catno` 欄因此是空的**）；**《Complete Blue Note Recordings》562fefba** 同。 |
+| 4 | **同一個 RG 混不同廠牌／不同 credit／不同 join phrase** | **《Diz ’n Bird at Carnegie Hall》**：三筆 CD 的 label 是 **`Roost`**、XW 數位 ba2ac308 的 label 卻是 **`Blue Note`**（**列舉檔就是因為這一筆才把它掃進本線**）；**《Live at the “It Club”》**：1996 CD 與數位用 `Gene Harris **&** The Three Sounds`、2024 黑膠用 `Gene Harris **And** The Three Sounds`。**第 1209 條(1)／第 1183 條(6) 在本組各中一次。** |
+| 5 | **殘件 release（無日期／無國別／無廠牌／媒體欄是 `?`），而且軌數與正式盤不同** | **《My Corner of the Sky》39e64592**（`?`×**13 軌**，正式盤 12 軌）；**《Live at the “It Club”》14e0bfef**（無日期無國別，但軌數 8 與 CD 一致）。**第 1209 條(6) 在本組再中兩次。** |
+| 6 | **RG 底下只有一筆 release、整個歐／日／數位層缺席** | **本組 15 張收件裡有 8 張是這個形狀**（Max Roach／Duke Pearson／Javon Jackson／Marcus Printup／Greg Osby／Paul Jackson, Jr./Sonny Fortune／Geri Allen／Jimmy Smith《Lonesome Road》／Önder Focan）——**1996 年的 Blue Note 美版在 MB 上建得很薄**，**研究層要補歐版與日版一律得走 Discogs。** |
+
+⚠ **本組沒有出現的**：第 817 條那種「MB 建出不存在的版本」、第 1116 條那種「credit 帶雙空格 join phrase」、
+第 1209 條(2) 那種「label-info 只有俱樂部號」（**《Diz ’n Bird》36955030 有 BMG Direct 的 `D118967`，但同一筆也帶了正規號，不算**）。
+⚠ **本組出現的第 936 條實例：0**——**22 筆裡沒有一張是「MB 把同一張碟建成兩個 RG」**（a 組的《Wailing With Lou》那個形狀本組沒中）。
+
+---
+
+## 第 1238 條（同批）：**《Diz ’n Bird at Carnegie Hall》——本線第一次收 `Roost` 廠牌的碟，要記清楚它為什麼在清單裡**
+
+- **1997 年那三筆 CD 的廠牌欄印的是 `Roost` 不是 `Blue Note`**（Discogs 621800／2088875／6283367／12027725 與日版 11467806／8361066 全部如此），
+  **系列名是 `The Performance Series`，製造商欄才是 `Capitol Records, Inc.`**。
+- **Roost（Royal Roost）是 1940 年代 Teddy Reig 的獨立廠牌**，目錄經 **Roulette** 於 **1989 年隨 EMI 併購**進來、由 Capitol／Blue Note 代管。
+- ⚠ **依簡報：子廠牌算 Blue Note 的只有 Blue Note Contemporary 與 Somethin' Else；Capitol／Manhattan／Pacific Jazz 不算**
+  ——**Roost 也不算**，**它是第 1202 條 (丙)／(丁) 意義下的「真正的他廠」**。
+- ⚠ **那它為什麼在本線的清單裡？** **因為 MB 那筆 XW 數位 release `ba2ac308` 的 label-info 掛 `Blue Note`**
+  （第 1237 條(4)）——**列舉檔是照 MB 的 label 掃的，一個 RG 裡只要有一筆掛 Blue Note 就會被掃進來**。
+- **→ 給後批**：**看到廠牌欄印 `Roost`／`Roulette`／`Birdland` 的 1990 年代 CD，先查 MB 是不是只有數位那一層掛 Blue Note**；
+  **這種碟不是自動退（本張就收了），但 `label` 欄要寫原廠、不要寫成 Blue Note 的自家發行。**
+- ⚠ **同一個脈絡還有一批**：**Roulette 的爵士目錄（Birdland 一脈）在 1990 年代由 Blue Note 陸續 CD 化**，
+  **若後面幾批再撞到，判準一律照本條 ＋ 第 1233 條 (丙)／(丁)。**
+
+---
+
+## 第 1239 條（同批）：**曲風——15 張全部 `['jazz']`，兩張邊緣的都收、都不加第二曲風**
+
+- **`Paul Jackson, Jr. —《Never Alone - Duets》` 判 `['jazz']` 不加 `soul`／`rnb`**：
+  **照第 1207 條末段 Richard Elliot《City Speak》與 c-152 a《After Dark》的先例**——**碟進的是 Billboard 的 TOP CONTEMPORARY JAZZ ALBUMS（NEW 第 23）、評介也登在 Billboard 的 JAZZ 欄、由 Blue Note 本體發行**。
+  ⚠ 十軌裡有〈Soulful Strut〉〈People Get Ready〉〈Where Is the Love〉三首靈魂樂曲目，**但那是選曲不是曲風**。
+- **`Max Roach —《Max Roach With the New Orchestra of Boston …》` 判 `['jazz']` 不加 `classical`**：
+  **Billboard 1996-04-20 整篇都在講它的跨界問題**（Borders 的爵士／拉丁採購 Smith 逐字說「the project has to be marketed as a classical piece」、
+  KGNU 的音樂總監說「the people who do our 20th-century classical show will likely be interested」），
+  **但碟由 Blue Note 以爵士品項發行、Roach 是爵士人、〈Ghost Dance〉那一半根本是銅管爵士**——**不加第二曲風**。
+  ⚠ **這一格與第 1207 條 US3 那一格方向相反**：US3 加 `hiphop` 是因為 **Billboard 的欄名逐字就是「HIP-HOP JAZZ」**（分類事實），
+  **本張的古典是行銷討論不是分類事實**。**判準：看紙本有沒有把它歸到另一個類，不看樂評怎麼形容。**
+- **簡報 §一-4 的「撞到疑似非爵士的退」在本組沒有觸發**，**待判曲風 0、非爵士 0。**
+
+---
+
+## 第 1240 條（同批）：**`Blue Note Rare Groove Series` 的收退，本線到此已有六張樣本——系列名依然不能當快篩，但「Reissue Producer 頭銜」這個陷阱已經中了六次**
+
+| 批 | 盤 | 系列 | 頭銜寫什麼 | 實際 | 判 |
+|---|---|---|---|---|---|
+| c-153 a | **Lonnie Smith《Live at Club Mozambique》** | Rare Groove | — | 廣告逐字「unreleased sessions from the late 60s」 | 收 |
+| c-153 a | **Big John Patton《Memphis To New York Spirit》** | Rare Groove | **`REISSUE PRODUCER: Bob Belden`** | 同段正文逐字「never seen complete release until now」 | 收 |
+| **c-153 b** | **Duke Pearson《I Don't Care Who Knows It》** | Rare Groove | **`Michael Cuscuna: Producer [For Release]`** | format 欄四筆全乾淨 | **收** |
+| **c-153 b** | **The Three Sounds《Live at the “It Club”》** | Rare Groove | **`Michael Cuscuna / Tom Evered / Bob Belden: Reissue Producer [Blue Note Groove Series]`** | format 欄四筆全乾淨 | **收** |
+| c-152 a | 《Step Lightly》《Shoutin'》 | 東芝 4100 | — | notes 寫出母體 | 退 |
+| c-153 a | 《Curtain Call》 | 東芝 1500 Unissued | — | notes 逐字「A reissue of [m681662]」 | 退 |
+
+**→ 兩句結論（第 1172／1211 條的續筆）：**
+1. ⚠ **`Reissue Producer` 這個頭銜在 Blue Note 1990 年代的庫存首發上是常態，不是證據**
+   ——**六個樣本裡有三張掛著它、三張都是首發**。**它的意思是「負責把庫存整理出來發行的人」，不是「這碟先前發行過」。**
+   **Discogs 甚至在同一張碟上同時印 `Producer [Original Sessions]` 與 `Producer [For Release]`（Duke Pearson 那張），那才是最清楚的寫法。**
+2. **`Blue Note Rare Groove Series` 四個樣本全部是庫存首發**（本線至此 4/4）——
+   ⚠ **但第 1172 條說它是混裝系列，所以仍然不能當快篩**；**只是先驗機率偏向「收」，查的時候方向可以先往 (甲) 找。**
+
+---
+
+## 第 1241 條（同批）：**列舉檔這一組有兩欄是錯的，而且兩欄錯的方式與第 1210 條不同——這次是「猜對了有問題、猜錯了問題在哪」**
+
+| 筆 | 列舉檔的 `note` | 實際 |
+|---|---|---|
+| **《Tribute to Basie》** | **「BN 首發 2006，原盤 1997 可能他廠（再發）」** | ⚠ **「是再發」猜對了，「原盤在他廠」猜錯了**：**母體是 `Solid State SS 18001`《The Big Band》(1966)**——**Solid State 是 UA 的爵士子廠、正是第 1202 條 (乙) 點名的家族**。**照列舉檔的字面走會誤判成 (丙)「他廠 → 收」，實際要走 (乙)「退＋寫缺口」。**（**MB 那筆「1997 GB LRC Ltd.」在 Discogs 上查無對應條目，年份與國別都可疑。**） |
+| **《Groovin' at Small's Paradise, Volume 2》** | **「live；僅 JP 盤」** | **兩句都對，但都不是判準**：**真正讓它被退的是廠牌欄第二格的系列名 `The BN Works 1500 Series` 與 label-info 第二格併印的母體號 `BN-1586`**（第 1232 條）——**列舉檔的 `reissueSeries` 欄是 `[]`，完全沒抓到。** |
+
+⚠ **另有兩筆的 `catno` 欄是空的**（《Jazz Profile》與《Complete Blue Note Recordings》《Orgy In Rhythm》《Diz ’n Bird》四筆皆空）
+——**因為 MB 的 label-info 空或只有廠牌名**（第 1237 條(3)），**列舉檔忠實地反映了 MB 的空欄，不是列舉檔自己的錯**。
+⚠ **`reissueSeries` 欄在本組 22 筆全部是 `[]`**——**東芝 EMI 的 `The BN Works …`、Blue Note 的 `Connoisseur CD Series`、
+`Jazz Profile`、`Blue Note Rare Groove Series`、`The Performance Series`、`Jazz References` 六個系列一個都沒抓到。**
+**→ 給後批：1996 年之後的碟，`reissueSeries` 欄等於沒有，一律自己去 Discogs 讀廠牌欄第二／三格。**
+
+---
+
+## 第 1242 條（同批）：**本棒自抓 Billboard 1997 全年（51 期），並 append 進 `SOURCES-billboard-cashbox.md`**
+
+- **為什麼要抓**：**本組 22 筆裡有 7 筆的年份落在 1997**（Orgy In Rhythm／Right On My Way Home／Diz ’n Bird／
+  Jazz Profile／Complete Blue Note Recordings／Tribute to Basie／Beneath the Stars），
+  **而 repo 裡先前的覆蓋是「Billboard 1955→1996 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」**
+  ——**1997 年兩刊都沒有，是派工信點名「本批已經踩到這條線」的那一格。**
+- **檔**：`batch-progress/enum/billboard-bn-1997-ocr.txt.gz`，**3.2 MiB 壓縮 / 7.3 MiB 原文**，
+  **1997-01-11 → 1997-12-27 共 51 期，零 FETCH-FAIL、零 PARSE-FAIL，命中頁 701**。
+  **原文超過 8 MiB 所以只留 `.txt.gz`**（寫檔規則；repo 是 Cloudflare Pages 部署來源，單檔上限 25 MiB）。
+- ⚠ ⚠ **1997 年的檔名形狀（本棒實測，先抓索引頁 grep，沒有按日期硬拼）**：
+  **目錄是 `Billboard/90s/1997/`**，**全年 50 期是 `Billboard-YYYY-MM-DD.pdf`，只有 `BB-1997-04-12.pdf` 一期用 `BB-` 形**
+  ——**與 1996 年恰好相反**（1996 全年 `BB-`、只有 `BB-1996-02-10-O.pdf` 一期帶尾碼）。
+  ⚠ **1997 年的第一期是 01-11 不是 01-04**（索引頁上沒有 1997-01-04），**全年 51 期不是 52 期**。
+  ⚠ **索引頁上同目錄下另有 `BB1997.pdf` 與 `Billboard-Disco-Source-Book-1997.pdf` 兩個非週刊檔**，**抓的時候要排掉**。
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **關鍵字集是為本組 22 筆量身配的**（69 個詞 ＋ 19 個目錄號片段：`34813`／`35220`／`35338`／`36490`／`37101`／
+  `37302`／`37319`／`37630`／`38098`／`38297`／`53354`／`53422`／`64644`／`57061`／`57729`／`56586`／`57197`／`55772`／`100301`）
+  ——**查別的 1997 年碟一定要重抓或放寬關鍵字。**
+- ⚠ **1997 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 1997 仍成立）：`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+  **`Jazz → Jall／JAll` 的 OCR 形變到 1997 年還在**（本棒的關鍵字表已含 `top jall`／`jall albums`）。
+- ⚠ **本棒實測的一個 OCR 坑**：**Bob Dorough 那篇專文的第一頁（BB-1997-09-27 p11）沒有被任何關鍵字命中**，
+  **只抓到 p17 的續頁（頁首逐字「(Continued from prige il)」＝`page 11` 的 OCR 形變）**
+  ——**「命中頁」的存檔策略會漏掉「關鍵字在標題圖上、內文沒出現」的第一頁**，**引用專文時要記得去翻續頁指向的那一頁。**
+- **已在 `SOURCES-billboard-cashbox.md` 末尾 append 一段**（**append，沒有改任何人寫過的段落**）。
+- **到此合計覆蓋：Billboard 1955→1997 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
+
+---
+
+## 第 1243 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案**
+
+- **`batch-progress/c153/prop-b.json`：15 張、15 位**（**零重複掛名**）。**第 315 條：15 ＋ 退表 7 ＝ 22 ✓。**
+- **`node batch-progress/c153/chk-prop.mjs b` → 標記 0**（116 批、4,721 卡、撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0）。
+- **中間檔**（scratchpad `c153b/`，第 533 條，**不在 repo 內**）：
+  `mb/rg-*.json`＋`mb/rel-*.json`（22 筆 × 2 端點，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s、**零 503**）、
+  `bbtext/BB-1997-*.txt`（51 期）＋`bb1997.txt`（合併）＋`bbidx.html`（索引頁）、
+  `dg.sh`／`dgrel.sh`（Discogs 搜尋與 release 明細）、`store.mjs`／`store2.mjs`（Apple 三市場 ＋ CAA RG 層探測與三試複查）、
+  `poolscan.mjs`（掃 seed 17,247 列 ＋ `desc-tools/batches/cards/c1*.json` ＋ `batch-progress/c1[2345]*/prop-*.json`，合計 20,633 列）、
+  `summ.mjs`／`tl.mjs`（MB 摘要與軌目）、`ctx.py`（OCR 取脈絡）、`harvest.py`（1997 OCR 抓取，4 shard）、
+  `build1.mjs`～`build4.mjs`（分四次寫 prop，**每 5 筆落一次磁碟**）。
+- **本棒改動的檔案**（三個，全部是 append 或新建）：
+  1. **`batch-progress/c153/prop-b.json`（新建，15 張）**；
+  2. **`batch-progress/c153/rulings.md`（append 第 1230–1243 條；a 組的第 1200–1212 條一字未改）**；
+  3. **`batch-progress/enum/billboard-bn-1997-ocr.txt.gz`（新建）＋ `batch-progress/enum/SOURCES-billboard-cashbox.md`（末尾 append 一段）**。
+  **沒有動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`batch-progress/enum/blue-note.json`／
+  `batch-progress/c153/slice.json`／`batch-progress/c153/prop-a.json`／git。
+- ⚠ **號段**：b 組用 **1230–1243**，**1244–1259 留白**。
+- **給 c-154 的五句話**：
+  1. **第 1202 條現在是四句**（第 1233 條加了 (丁)）：**沒發行過 → 收；母體在 Blue Note／Liberty／UA／Solid State → 退＋寫缺口；
+     母體在他廠且同一張碟同一形狀 → 收、取他廠年；母體在他廠但只是部分或拼了別場 → 收、取本次完整發行年。**
+  2. **1990 年代的 `TOCJ-` 碟看兩欄不看系列名**（第 1232 條）：**`format` 欄有沒有 `Reissue`／`Remastered`，`notes` 裡有沒有寫出母體。
+     `1500 Unissued` 這個系列名有一半是再發。**
+  3. **`Reissue Producer` 是頭銜不是證據**（第 1240 條）——**Blue Note 1990 年代的庫存首發上這個頭銜是常態，六個樣本中了三次。**
+  4. **1997 年的紙本已入庫**（`billboard-bn-1997-ocr.txt.gz`，51 期，第 1242 條）——**直接 `zgrep`，不要重抓；
+     但關鍵字集是為 c-153 b 配的，查別的碟要重抓。1998 年起仍然沒人掃。**
+  5. **`reissueSeries` 欄在 1996 年之後等於沒有**（第 1241 條，本組 22/22 全空）——**一律自己去 Discogs 讀廠牌欄第二／三格。**

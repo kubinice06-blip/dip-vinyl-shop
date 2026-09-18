@@ -800,3 +800,40 @@ Blue Note `7243 5 35249 2 0`），**repo 裡 2002 年兩刊都沒有**（Cash Bo
 **判在不在榜可以，判第幾名要人工數列。**
 
 **到此合計覆蓋：Billboard 1955→1996 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-153 **b 組**策展層自抓：**Billboard 1997 年全年**）
+
+**本棒 22 筆裡有 7 筆的年份落在 1997**（Art Blakey《Orgy In Rhythm》、Bob Dorough《Right On My Way Home》、
+Charlie Parker & Dizzy Gillespie《Diz 'n Bird at Carnegie Hall》、Chet Baker《Jazz Profile》、
+Don Grolnick《Complete Blue Note Recordings》、Jimmy McGriff《Tribute to Basie》、Önder Focan《Beneath the Stars》），
+**而此前 repo 的覆蓋是「Billboard 1955→1996 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」——1997 兩刊都沒有**，因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1997-ocr.txt.gz` | **3.2 MiB 壓縮 / 7.3 MiB 原文** | **1997-01-11 → 1997-12-27，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **701** | **1997-01-04（索引頁上沒有這一期，1997 年第一期就是 01-11）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。**
+- **原文 7.3 MiB 雖低於 8 MiB 的壓縮門檻，仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致。
+
+⚠ ⚠ **1997 年的路徑與檔名（本棒實測，照第 1091／1127 條先抓索引頁 grep，沒有按日期硬拼）**：
+**目錄是 `Billboard/90s/1997/`**；**全年 50 期是 `Billboard-YYYY-MM-DD.pdf`，只有 `BB-1997-04-12.pdf` 一期用 `BB-` 形**
+——**與 1996 年恰好相反**（1996 全年 `BB-`、只有 `BB-1996-02-10-O.pdf` 一期帶尾碼）。
+**→ 1997 年是繼 1994 之後第二個「同一年內混用」的年份，而且主形換成了 `Billboard-`。**
+⚠ **同目錄下另有 `BB1997.pdf` 與 `Billboard-Disco-Source-Book-1997.pdf` 兩個非週刊檔**，**抓的時候要排掉。**
+
+⚠ **關鍵字集是為 c-153 b 的 22 筆量身配的**（69 個詞 ＋ 19 個目錄號片段：`34813`／`35220`／`35338`／`36490`／
+`37101`／`37302`／`37319`／`37630`／`38098`／`38297`／`53354`／`53422`／`64644`／`57061`／`57729`／`56586`／
+`57197`／`55772`／`100301`，另含 `blue note`／`blue nole`／`slue note`／`capitol jazz`／`jazz albums`／`top jazz`／
+`top jall`／`jall albums`／`contemporary jazz`／`rare groove`／`toshiba emi`／`roost` 等通用詞）
+——**查別的 1997 年碟一定要重抓或放寬關鍵字。**
+
+⚠ **1997 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 1997 仍成立）：`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+**`Jazz → Jall／JAll` 的 OCR 形變到 1997 年還在**（關鍵字表已含 `top jall`／`jall albums`）。
+
+⚠ **本棒實測的一個 OCR 坑**：**專文的第一頁可能一個關鍵字都不中**——
+**Billboard 1997-09-27 的 Bob Dorough 專文（標題「JAZZ VETERAN BOB DOROUGH MAKES BLUE NOTE DEBUT」）第一頁是 p11，沒有被命中；
+只抓到 p17 的續頁，頁首逐字「(Continued from prige il)」＝`page 11` 的 OCR 形變。**
+**「只存命中頁」的策略會漏掉「關鍵字在標題圖上、內文沒出現」的第一頁**——**引用專文時要記得去翻續頁指向的那一頁。**
+
+**到此合計覆蓋：Billboard 1955→1997 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。1998 年起兩刊都還沒有人掃。**
