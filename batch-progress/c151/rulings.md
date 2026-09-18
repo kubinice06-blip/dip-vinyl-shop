@@ -423,3 +423,416 @@
   ——**1992 年因此有兩份重疊**（本層的 `*-1992-1993-*` 與 c-150 b 的 `*-1991-1992-*`），**關鍵字集不同、命中頁也不同**，
   **合併時先比對命中頁清單再決定留哪一份，不要直接刪掉其中一份**（同第 910 條對 1987 那一年的處理）。
   **交件前請再看一次 `SOURCES-billboard-cashbox.md`——並行的另一組可能在你做到一半時補上紙本。**
+
+---
+
+# c-151 b 組裁定（1110–1139）｜Blue Note 1993–94，22 張
+
+**結果：收 18、退 4。年份改判 0 張、依據整個換掉 3 張；盤名改判 1 張、維持 MB 原形 2 張；
+`label` 自行補號 2 張、改子廠牌 1 張；掛名沿用 12、收攏 3、新字串 3、新造分裂 0；撞陳列 5 件。
+新掃紙本兩份：Billboard 1994＋1995Q1、Cash Box 1994（皆 `.txt.gz`）。**
+
+`node batch-progress/c151/chk-prop.mjs b` → **標記 0**（欄位 0、線上池撞卡 0、跨組 0、
+跨批 114 批 4,648 張撞卡 0、同 rgMbid 不同掛名 0；第三道「同掛名盤名詞元包含」報 1 筆，是假陽性，見第 1122 條）。
+
+## 第 1110 條（c-151 b 交件）：**22 筆 → 收 18、退 4；退掉的四張全部是「錄音年 ≤1967 的 CD 化再發／重編」，`chk-prop` 一個燈都沒亮**
+
+- **收 18 張、17 位**（`Michel Petrucciani` 一位吃兩張）：
+  `Michel Petrucciani —《Promenade With Duke》(1993)`、`Chucho Valdés —《Solo Piano》(1993)`、
+  `The Benny Green Trio —《That's Right!》(1993)`、`T.S. Monk —《Changing of the Guard》(1993)`、
+  `Ron Carter —《Friends》(1993)`、`Tony Williams —《Tokyo Live》(1993, live)`、
+  `John Scofield Quartet —《What We Do》(1993)`、`Thelonious Monk —《Live at the Five Spot Discovery!》(1993, live)`、
+  `Gonzalo Rubalcaba —《Rapsodia》(1993)`、`Javon Jackson —《When the Time Is Right》(1994)`、
+  `日野皓正 —《Spark》(1994)`、`Geri Allen —《Twenty One》(1994)`、`Michel Petrucciani —《Michel Petrucciani (Live)》(1994, live)`、
+  `Everette Harp —《Common Ground》(1994)`、`John Scofield —《Hand Jive》(1994)`、
+  `Andy Sheppard —《Delivery Suite》(1994, live)`、`Orphy Robinson —《The Vibes Describes》(1994)`、
+  `Jimmy Smith —《The Master》(1994, live)`。
+- **退 4**（第 1111 條）：The Three Sounds《Good Deal》、Stanley Turrentine《Dearly Beloved》、
+  Charlie Parker《Bird at the Hi-Hat》、Chick Corea 等六人《Jazz for a Sunday Afternoon》。
+  **第 315 條：prop 18 ＋ 退表 4 ＝ 22 ✓。**
+- **退貨率 18%**（1985 後五批：c-148 a 9%／c-148 b 18%／c-149 a 4%／c-149 b 32%／c-150 a 13%／c-150 b 18%／c-151 a 13%／**本組 18%**）。
+- **現場盤 5 張**（Tokyo Live／Five Spot Discovery／Michel Petrucciani (Live)／Delivery Suite／The Master），
+  **MB secondary-types 五張全部正確標了 ['Live']**——**第 397 條在本組一次都沒中**，與 c-151 a（中一次）相反。
+  ⚠ **但反方向中了一次**：`Chucho Valdés —《Solo Piano》` **實際是 1991 年倫敦 Ronnie Scott's 的現場錄音，MB 與 Discogs 兩邊都沒標**（第 1119 條）。
+- **`releaseType`：18 張全是 Album、合輯 0、走 §5.6 的 0、`exceptionReason` 0。**
+- **CAA**：RG 層**有圖 12 張**、**真 404 6 張**（Friends／When the Time Is Right／Spark／Common Ground／Delivery Suite／The Master，
+  **皆已 `redirect: follow` 重試三次確認，三次都是 404 不是 5xx**，第 589a 條）。**圖數最多的是《Tokyo Live》9 圖。**
+- **Apple**：`search` us 一種查法命中 **9 張**、**要第三種查法（拉藝人目錄）才命中 3 張**、**三種查法全空 6 張**（第 1123 條）。
+
+---
+
+## 第 1111 條（同批）：**退表 4 筆，逐筆與理由分類——四張的「露出點」各不相同，沒有一張是靠盤名看出來的**
+
+| # | 盤 | rgMbid | 目錄號／年 | 退的分類 | 逐張文案（第 782／842 條要求的那一行） |
+|---|---|---|---|---|---|
+| 1 | **The Three Sounds —《Good Deal》** | `99132b29-80a5-4045-9c7c-3e303602f2b3` | **BNST-84020／TOCJ-4020**／1993-05-26 | **CD 化再發（東芝 EMI 復刻系列）** | **錄音 1959-05-20**。**Discogs 7185191 的 format 欄逐字是 `CD, Album, Reissue, Stereo`**，notes 寫「In jewel case with white tray and **obi**… Twelve page booklet includes **original and new liner notes in Japanese**. **A fold out insert replicates the original LP jacket back cover, backed by an illustrated list of other titles in the series**」——**整句都在說它是復刻系列的一張**。原盤是 **Blue Note BLP 4020（1960, US mono, Discogs 1248469／11801582）／BST 84020（立體聲，10478298）**，另有 1979 日本 GXK 8122、1992 日本 BN 4020 黑膠、1999 TOCJ-9167、2005 TOCJ-6602、2010 TOCJ-8712、2024 UCCQ-9759 等七個再發世代。⚠ **`BNST-84020` 這個前綴就是「BLP/BST 84020 的東芝復刻」的意思**，不是 1990 年代的新號。 |
+| 2 | **Stanley Turrentine —《Dearly Beloved》** | `6c2c6164-ec3e-4948-a24b-ca04bbbdaa03` | **BNST-84081／TOCJ-4081**／1993-12-22 | **CD 化再發（同一個系列）** | **錄音 1961-06-08**。**Discogs 10290900 的 format 欄 `CD, Album, Reissue, Stereo`**，notes 與上一筆**逐字同模板**（obi／日文新舊解說／復刻原 LP 封底）。原盤 **Blue Note BLP 4081（1961 mono, 3996933／25965118）／BST 84081（1961 stereo, 5106321）**，另有 1967 Liberty 壓、1970 Liberty/UA 壓、1992 日本 BN 4081 黑膠、2008 RVG Edition `50999 2 15363 2 8`、2015 UCCQ-5090。⚠ **列舉檔裡另有一筆 2008 年的同名 RG（`575d621f`，RVG Edition）**——**MB 為同一張 1961 年的碟建了兩個 CD 期 RG，卻沒有原盤 LP 的 RG**（第 936 條的變體，見第 1112 條）。 |
+| 3 | **Charlie Parker —《Bird at the Hi-Hat》** | `12f990cf-c2ae-31cb-b984-4513791194d9` | **CDP 0777 7 99787 2 4**／1993-04-06 | **合輯＋先前已發行（13/13，第 874 條）** | **錄音 1953-12-18／20 與 1954-01-24，波士頓 Hi-Hat 俱樂部的廣播錄音**。**Discogs 5808078 的 format 欄是 `CD, Compilation`**，notes 逐字寫「Recorded live at The Hi-Hat, Boston… **Previously issued on Phoenix Jazz LP 10 and LP 12**」——**十三軌全部先前已成盤發行，遠超第 874 條的過半門檻**。⚠ **同期紙本自己也講死了**：**Billboard 1993-04-10 p48《Live At The Five Spot》評介末尾的括號逐字寫「(Blue Note also is issuing a Charlie Parker broadcast date, **originally released on the Phoenix label**.)」**——**這是本批最乾淨的一則退件證據，而且與被收的那一張出自同一段文字**。另有 1991 年 Fresh Sound `FSCD-1006/1007`《Bird In Boston: Live At The Hi-Hat 1953-54 Vol. 1/2》與 2016 `FSRCD 911`、2020 Bird's Nest《Complete Live At The Hi-Hat》。⚠ **MB `secondary-types` 是 ['Live'] 但沒有 Compilation**（第 397／613 條「該標沒標」那個方向）。 |
+| 4 | **Chick Corea, Joe Farrell, Elvin Jones, Richard Davis, Garnett Brown, Marvin Stamm —《Jazz for a Sunday Afternoon》** | `59b281c4-a2bd-4e42-ba44-9d18699c363b` | **CDP 07777 89280 27**／1993 | **再發（2/3 先前已發行，第 874 條）＋ 實為 Various Artists** | **錄音 1967-10-01，紐約 Village Vanguard**。**Discogs 2922467 的 format 欄是 `CD, Album, Reissue`**、**藝人欄是 `Various`**，notes 逐字寫「Recorded live at The Village Vanguard on October 1, 1967. **Tracks 1 and 2 were previously released in edited form on Solid State SS-18052**. Track 3 is previously unissued」——**三軌裡兩軌先前已發行，過半**（與第 993 條 Art Pepper Vol. 3、第 1050 條 Village Vanguard 同向）。母體是 **Solid State 的《Jazz For A Sunday Afternoon》Vol. 1–4（SS-18027／18028／18052，1968–69）**，另有英 USS 7002／7009、德 SS 18052 K、日 SR-3044／LAX-3154~3157 多國原壓。⚠ **列舉檔給的六人並列掛名是 MB 把 Discogs 的 `Various` 拆開列的結果**（與 c-151 a 第 1088 條《New York Stories》的成因相同、方向相反：**那一張是新錄音該收，這一張是再發該退**）。 |
+
+**⚠ 這四張沒有一張被 `chk-prop` 標記**（第 611／1089 條再證）。**抓出來的方法**：
+(a) **Discogs 的 `format` 欄**（四張全中：兩張 `Reissue`、一張 `Compilation`、一張 `Album, Reissue`）；
+(b) **Discogs 的 `notes` 欄逐字寫出母體目錄號**（Phoenix LP 10/12、Solid State SS-18052）；
+(c) **同期 Billboard 的括號注**（Charlie Parker 那一張）；
+(d) **目錄號前綴 `BNST-`／`TOCJ-4xxx`**（前兩張）。
+
+---
+
+## 第 1112 條（同批，**新立；補第 1082 條的兩個反例，那條的快篩在 1993–94 開始失靈**）：**目錄號段快篩在 1993–94 兩頭都出錯，必須降級成「第二意見」**
+
+c-151 a 第 1082 條立的快篩是：**1992–93 的美國盤，`84xxx`／`BST`／`BLP`／`BN-LA`／`LT-` 先假設是再發；`9xxxx` 或 `0777 7 8xxxx` 先假設是新碟**，並宣稱「本批 23 筆一次分對 23 筆，沒有例外」。**本組兩個方向各出一次錯**：
+
+| 方向 | 本組實例 | 事實 |
+|---|---|---|
+| **偽陽性（`84xxx` 卻是新碟）** | **`The Benny Green Trio —《That's Right!》`，`CDP 0777 7 **84467** 2 9`** | **1993 年 9 月的全新錄音**（Billboard 1993-09-18 評介、09-25 榜 NEW、Discogs 四筆 format 皆 `CD, Album`）。**Blue Note 1993 年把 84xxx 段接著往上用了**——**84463 是 1992 年的 King Pleasure 重編（c-151 a 退）、84467 是本張新碟，兩者只差四號、性質相反。** |
+| **偽陰性（不是 `84xxx` 卻是再發）** | **`Charlie Parker —《Bird at the Hi-Hat》`，`CDP 0777 7 **99787** 2 4`**；**`Jazz for a Sunday Afternoon`，`CDP 07777 **89280** 27`** | **兩張都落在第 1082 條判定為「新碟」的 `9xxxx`／`0777 7 8xxxx` 號段，卻都是 1953–67 年錄音的 CD 化**。⚠ **99786（Five Spot，該收）與 99787（Hi-Hat，該退）是連號**——**同一批出貨裡一張是庫存首發、一張是再發。** |
+
+**本條的處置（給 c-152 之後）**：
+1. **第 1082 條的號段快篩降級**：**只能用來排序查證的先後，不能用來下結論**。
+2. **真正穩定的一級篩子只有兩個**：**(a) Discogs 的 `format` 欄有沒有 `Reissue`／`Compilation`；(b) Discogs 的 `notes` 有沒有寫出母體目錄號。** 本組四張退件在這兩欄上 4/4 全中。
+3. **`BNST-`／`TOCJ-4xxx`／`TOCJ-9xxx`／`UCCQ-` 這幾個日本前綴本身就是再發標記**（第 1113 條）。
+
+---
+
+## 第 1113 條（同批，**新立**）：**`BNST-84xxx` ＋ `TOCJ-4xxx` 這一對前綴＝東芝 EMI 的 1993 年復刻系列，見到就先假設是再發**
+
+本組退掉的前兩張（《Good Deal》1993-05-26、《Dearly Beloved》1993-12-22）**在 MB 上長得完全一樣**：
+唯一（或幾乎唯一）的 release 是日本 CD，**catalog-number 同時掛 `BNST-84xxx` 與 `TOCJ-4xxx` 兩個號**，
+**Discogs 的 notes 是逐字同一份模板**（obi／十二頁解說含原版與新寫的日文解說／折頁復刻原 LP 封底／系列其他碟的插畫目錄）。
+
+**規律**：**`TOCJ-4xxx` 的四位數就是原盤 `BLP 4xxx` 的號，`BNST-84xxx` 就是原盤 `BST 84xxx` 的號。**
+→ **看到 `BNST-`／`TOCJ-4xxx`，先把號碼後四位拿去查 1955–66 年的 Blue Note 原盤，不要先查 1993。**
+⚠ **對照組**：**本組被收的日本盤用的是 `TOCJ-5xxx`／`TOCJ-55xx`／`TOCJ-58xx`／`TOCJ-59xx` 這一段**
+（TOCJ-5552 Rapsodia、TOCJ-5563 Spark、TOCJ-5751 Five Spot、TOCJ-5796 That's Right!、TOCJ-5847 Changing of the Guard、TOCJ-5833 Solo Piano、TOCJ-5923 Common Ground、TOCJ-5924 When the Time Is Right、TOCJ-5773·74 Tokyo Live）
+——**`TOCJ-5xxx` 以上是當代新碟的日本版，`TOCJ-4xxx` 是 1500/4000 系列的復刻。這條界線在本組 22 筆上 22/22 成立。**
+
+---
+
+## 第 1114 條（同批）：**「列舉檔裡查不到原盤」這次有兩種成因，兩種的處置不同**
+
+c-150 a 第 1021 條記過「**列舉檔裡查不到母體 ≠ 沒有母體**」（Keystone 的母體 BABB-85112 在 MB 上 count=0）。**本組把這件事推進一步：查不到原盤有兩種成因**：
+
+| 成因 | 本組實例 | 處置 |
+|---|---|---|
+| **(甲) 原盤在 MB 上根本沒建 RG** | **《Good Deal》**（BLP 4020／BST 84020）、**《Dearly Beloved》**（BLP 4081／BST 84081） | **退本張**，**並把原盤的目錄號交主線**（見下）。**不得因為「池中沒有這張」就收 CD 化身。** |
+| **(乙) 原盤有 RG，只是不在本批清單上** | 本組無（c-151 a 的 Jimmy Smith《Open House / Plain Talk》屬此型，兩張原盤都已在池） | 退本張，rulings 指向池中既有卡。 |
+
+**交主線的兩筆缺漏**（不是裁定，是資料庫缺口）：
+1. **Blue Note `BLP 4020`／`BST 84020` — The Three Sounds《Good Deal》(1960)**：Discogs 有美國 mono 原壓 1248469／11801582、立體聲 10478298。**池中 `The Three Sounds` 已有 15 張盤名，就是沒有《Good Deal》。**
+2. **Blue Note `BLP 4081`／`BST 84081` — Stanley Turrentine《Dearly Beloved》(1961)**：Discogs 有 3996933／25965118（mono）、5106321（stereo）。**池中 `Stanley Turrentine` 已有 26 張盤名，就是沒有《Dearly Beloved》。**
+→ **兩張都是 1950–60 年代 Blue Note 正規目錄的碟，若主線要補齊，應直接以 BLP 4020／BLP 4081 建卡，不要走 1993 年的 CD。**
+
+---
+
+## 第 1115 條（同批）：**年份——改判 0 張、依據整個換掉 3 張、覆核成立 15 張**
+
+**本組沒有一張年份被改判**（1985 後八批裡第一次）。**但有三張的年份依據整個換掉**：
+
+| 盤 | 列舉檔／MB 的說法 | 本層改用的依據 | 為什麼 |
+|---|---|---|---|
+| **`Gonzalo Rubalcaba —《Rapsodia》`** | 1993（MB 轄下唯一一筆是**美版**） | **日本 Somethin' Else `TOCJ-5552` ＝ 1993-05-26**（Discogs 12234706 的 `released` 欄是完整日期） | **美版其實是 1994 年年中才上市**：**兩刊 1992–93 兩份 OCR 逐期查過 `28264` 與「RUBALCABA」，1993 全年零命中**；**Billboard 的評介（1994-07-02 p77）、Blue Note 整版廣告（同期 p45）、葛萊美入圍（1995-01-14 p64）全部落在 1994**。**Discogs 美版的 1993 是抄盤面 ℗（第 550／570／708 條）。與第 1083 條《Suite 4 y 20》完全同形，而且是同一位藝人、同一條出資線。** |
+| **`Tony Williams —《Tokyo Live》`** | MB frd **1993-05-26**（＝日本 `TOCJ-5773·74`） | **Billboard 1993-05-08 以 NEW 進 TOP JAZZ ALBUMS**（BLUE NOTE 99031/CAPITOL） | **美加版先出、日本盤晚**（第 994(b)／1083(二) 條的同形，本段第三次）。`year` 不變，**但正文不得把發行寫在 5 月 26 日。** |
+| **`Michel Petrucciani —《Promenade With Duke》`** | MB frd **1993**（只有年） | **Discogs 美國原壓 11548677 的 `released` 欄 1993-02-08** ＋ **Billboard 榜 NEW 1993-05-22、評介同期 p121、Cash Box 評介 1993-05-01** | **歐／法先出、美國晚一季**——**本段第一次出現「歐先美後」而不是「日先美後」**。年份仍是 1993，**但正文不得把發行月講死**。 |
+
+**覆核成立、不改的 15 張**（列出來省得下一批重查）：
+《Solo Piano》1993（MB frd 帶完整日期 1993-04-23＋Discogs 美國原壓；**兩刊零命中**）、
+《That's Right!》1993（MB frd 1993-09-07＋BB 評介 09-18＋榜 NEW 09-25）、
+《Changing of the Guard》1993（MB frd 1993-09-21＋CB 評介 1993-10-16＋BB 榜 NEW 10-23）、
+《Friends》1993（MB frd 1993-08-10＋CB 評介 1993-08-21；**兩張爵士榜都沒上**）、
+《What We Do》1993（MB frd 1993-02-09＋BB 評介 03-06＋榜 NEW 03-13＋CB 榜 DEBUT 04-17）、
+《Live at the Five Spot Discovery!》1993（**BB 1992-12-05 預告「Expect it in March」**＋MB frd 1993-03-23＋BB 專題與評介 1993-04-10＋榜 NEW 04-24，**本批紙本最完整的一張**）、
+《When the Time Is Right》1994（CB 評介 1994-06-18＋BB 廣告 1994-07-02＋Apple 1994-05-03＋Discogs 美日兩筆）、
+《Spark》1994（**日本 TOCJ-5563 完整日期 1994-07-22**＋Discogs 美日兩筆；**兩刊零命中**）、
+《Twenty One》1994（BB 榜 NEW 1994-12-03＋BB 評介 12-17＋CB 評介 12-17＋Discogs）、
+《Michel Petrucciani (Live)》1994（MB frd 1994-10-17＋Discogs 完整日期 1994-10-20＋盤面 ℗©1994；**兩刊零命中**）、
+《Common Ground》1994（**BB 專題 1994-06-04**＋三張榜同週進榜 1994-07-30＋Discogs 四筆）、
+《Hand Jive》1994（**BB 廣告 1994-07-02 列 COMING THIS FALL**＋BB SPOTLIGHT 評介 08-13＋榜 NEW 08-27＋MB frd 1994-08-09，**本批紙本最厚的一張**）、
+《Delivery Suite》1994（Discogs 英國原壓＋Apple gb；**兩刊零命中**）、
+《The Vibes Describes》1994（**Discogs 完整日期 1994-05-16**＋盤面 ℗©1994 EMI Records Ltd.；**兩刊零命中**）、
+《The Master》1994（MB frd 1994-10-04＋**BB 廣告 1994-09-10「COMING IN OCTOBER」**＋CB 評介 1994-10-22）。
+
+⚠ **紙本層完全空白的有五張**：Solo Piano／Spark／Michel Petrucciani (Live)／Delivery Suite／The Vibes Describes
+——**五張全部確認過不是「該期沒掃到」**（1994 兩刊缺期五則已逐則查明，皆為年終／年初合刊週）。
+⚠ **五張裡有三張是英國盤或日本首發盤**（Delivery Suite／The Vibes Describes 是 Blue Note International；Spark 是 Somethin' Else）
+——**與第 1123 條的店面結論同向：這一段的非美國首發盤在美國紙本與美國店面上都接近不存在。**
+
+---
+
+## 第 1116 條（同批）：**掛名——沿用 12、收攏 3、新字串 3、新造分裂 0；三次收攏各有不同的理由**
+
+### （一）沿用池中既有字串 12
+
+`Michel Petrucciani`（2 張共用，池中 seed 2 ＋ 已上傳卡單 5）、`Chucho Valdés`（seed 1，**帶 é 的正字不動**，第 1057 條）、
+`The Benny Green Trio`（c-151 a 第 1086 條立）、`T.S. Monk`（c-151 a 立）、`Ron Carter`（c-150 b 第 1057 條立，**本張是該條預告的「日後領班盤一律沿用」的第一次**）、
+`Tony Williams`（seed 2 ＋ 卡單 4 ＋ prop 1）、`John Scofield Quartet`（c-150 b《Meant to Be》已上傳）、`John Scofield`（seed 1 ＋ 卡單 1 ＋ prop 1）、
+`Gonzalo Rubalcaba`（卡單 3 ＋ prop 1）、`日野皓正`（**漢字，seed 6 ＋ 卡單 5**，第 1057 條）、`Andy Sheppard`（c-151 a 立）、`Geri Allen`（卡單 1 ＋ prop 1，見下）。
+
+### （二）收攏 3——**三次的理由不同，不可互相套用**
+
+| MB artist-credit | 卡上掛名 | 收攏的理由 |
+|---|---|---|
+| `Thelonious Monk Quartet feat.  + John Coltrane`（**join phrase 帶雙空格**） | **`Thelonious Monk`**（池中 22 列：seed 21 ＋ 卡單 1） | **四種寫法各說各話**：MB 帶 feat.、Discogs「The Thelonious Monk Quartet Featuring John Coltrane」、**Billboard 榜單印全稱但同刊評介標題只印「THELONIOUS MONK WITH JOHN COLTRANE」**、Apple「Thelonious Monk Quartet」。**沒有一個是多數**，且 **MB 的 credit 自己帶登打殘骸**→ 回第 307 條取池中最大的既有字串。 |
+| `Geri Allen Trio With  + Ron Carter,  + Tony Williams` | **`Geri Allen`**（池中 2 張） | **同一個 RG 底下兩筆 release 掛名就不一致**（7c62ceaa 只寫「Geri Allen Trio」、8daf4d06 寫全稱）；**Billboard 榜單與 Cash Box 評介標題都只印「GERI ALLEN」**；**「Trio With …」描述的是這一張的編制**（比照 c-151 a 第 1086 條處理 `Renee Rosnes Trio`）。 |
+| `Jimmy Smith Trio featuring  + Kenny Burrell` | **`Jimmy Smith`**（池中 34 張以上，seed 33 ＋ 卡單多張） | **池中這一組是整條 Blue Note 線最大的藝人組之一**，造第二個 Smith 形的代價最大（第 876 條）；Discogs 與 Cash Box 都只印「Jimmy Smith Trio」，**沒有任何來源把 Burrell 放進掛名的主位**。⚠ **與第 935 條的 `Kenny Burrell & The Jazz Guitar Band` 要分清楚：那是 Burrell 自己掛頭的團名。** |
+
+### （三）新字串 3（池中皆 0 列）
+
+`Javon Jackson`（MB／Cash Box／Billboard／Discogs／Apple 五邊逐字一致，MB 同名頁無同名異人）、
+`Everette Harp`（**與 c-150 b 退掉的同名藝人同一人，不是同名異人**，第 1118 條）、
+`Orphy Robinson`（MB 同名頁只回一個實體）。
+
+### （四）**新造分裂 0**；**四個「MB credit 帶雙空格 join phrase」的案例**
+
+`Thelonious Monk Quartet feat.  + John Coltrane`、`Geri Allen Trio With  + Ron Carter,  + Tony Williams`、
+`Jimmy Smith Trio featuring  + Kenny Burrell`、`Chick Corea,  + Joe Farrell,  + …`（退件）
+——**四筆全部是 MB 的登打殘骸**。**本組三筆被收攏、一筆隨退件消失，所以沒有一個雙空格字串進池**；
+⚠ **但後批若遇到不能收攏的同形，`chk-prop` 的折鍵會把空白剝掉、不會亮燈**——**要自己看 credit 原字串。**
+
+### （五）給後批的兩個字串懸案（**本批沒動，只寫進 risk**）
+
+1. **`John Scofield` vs `John Scofield Quartet`**：**本批兩張同時出現**（《What We Do》用 Quartet、《Hand Jive》不用），
+   **兩形在四層來源上各自自洽**（見第 1117 條）——**c-150 b 第 1025／1039 條立的「兩形並存」規則到此已經吃到第四張卡，維持不改口。**
+2. **`The Benny Green Trio` vs `Benny Green`**：**Apple 的 artistName 仍然只有「Benny Green」**（c-151 a 第 1086 條懸案 2 的再現），
+   **而池中已經有 `Benny Green —《Lineage》`（c-150）與 `The Benny Green Trio —《Testifyin'!》`（c-151 a）兩個字串並存**。
+   **本批照 c-151 a 不改口，但這已經是池中確定存在的一組分裂，建議主線在 `audits/pool-artist-name-splits.md` 補記。**
+
+---
+
+## 第 1117 條（同批）：**`John Scofield` 的兩個字串，本批第一次「同一批裡兩形並列」——四層來源逐項比對**
+
+| | 《What We Do》(1993) | 《Hand Jive》(1994) |
+|---|---|---|
+| **MB RG artist-credit** | **John Scofield Quartet** | **John Scofield** |
+| **MB release 層** | 美版 2b483c0f＝Quartet、**德版 eaef7dac＝只有 John Scofield** | 兩筆都只有 John Scofield |
+| **Billboard 評介標題** | **只印「JOHN SCOFIELD」**（1993-03-06） | 只印「JOHN SCOFIELD」（1994-08-13） |
+| **Billboard／Cash Box 榜單** | **逐期印「JOHN SCOFIELD QUARTET」**（1993-03-13 起／CB 1993-04-17 起） | **逐期印「JOHN SCOFIELD」**（1994-08-27 起） |
+| **Discogs 藝人欄** | John Scofield Quartet | John Scofield |
+| **Apple artistName** | **The John Scofield Quartet**（多一個 The） | John Scofield |
+| **班底** | Joe Lovano／Dennis Irwin／Bill Stewart | **Eddie Harris（客席）／Larry Goldings／Dennis Irwin／Bill Stewart／Don Alias** |
+
+**本層的處置：照 MB credit，兩形並存，兩張 risk 互指。**
+**理由**：**兩形不是同一張碟的兩種寫法，而是兩張碟各自的署名**，而且 **`John Scofield Quartet` 在池中已由 c-150 b《Meant to Be》建立**，
+**用它不是新造分裂，是沿用**。**若主線日後決定一律收攏到 `John Scofield`，只動兩張卡的 `artist` 欄，可逆（第 858／1049 條）。**
+
+---
+
+## 第 1118 條（同批，**重要**）：**`Everette Harp` 本組收、c-150 b 退——兩張的證據方向完全相反，而且 Billboard 自己講錯過一次**
+
+| | **《Everette Harp》(1992)** — c-150 b 第 1050 條**退** | **《Common Ground》(1994)** — 本組**收** |
+|---|---|---|
+| Discogs 廠牌欄 | **七筆全部 `Manhattan Records`**（`CDP 7 96242 2`／`B4-96242`／德國黑膠） | **四筆全部 `Blue Note Contemporary`**（`7 89297 2`／`CDP 0777 7 89297 2 7`） |
+| MB label-info | Blue Note `B2-96242`（**MB 誤掛**） | **`Blue Note Contemporary`**（MB 自己就寫對了） |
+| Billboard 榜列 | **1992-07-04 起六週一律印「MANHATTAN 96242*/CAPITOL」** | **1994-07-30 起 Heatseekers／Top R&B／Contemporary Jazz 三張榜一律印「BLUE NOTE 89297/CAPITOL」** |
+
+⚠ ⚠ **必須記下來的反向證據**：**Billboard 1994-06-04 p25 的專題行文逐字寫「The album, **his second for Blue Note**, has the distinction of being the initial release from the label's new Contemporary Records imprint」**
+——**它把 1992 年那張 Manhattan 盤也算成了 Blue Note**。
+**本層判定這不推翻 c-150 b**：第 431 條的階序是「**真正的獨立來源是實體盤面／廠牌目錄頁**」，
+**1992 那張的實體盤面（七筆）與六週榜列（廠牌欄）都指 Manhattan，行文裡的一句概稱壓不過它**；
+**而且 c-151 a 第 1085 條處理 Lou Rawls 時已經立過同一條判準**（紙本行文寫 Blue Note、實體盤面寫 Manhattan → 取盤面）。
+**但兩說都要寫進本卡的 risk，正文不得跟著把 1992 那張講成 Blue Note。**
+
+**附帶的新事實**（本批紙本挖到，給後批對缺用）：**Blue Note 1994 年新設了 `Contemporary Records` 子廠牌，創廠第一張就是本卡**。
+→ **後批若在 1994 後的清單上遇到 `Blue Note Contemporary` 的碟，那是 Blue Note 線內的碟，不是他廠（第 906 條的同集團鄰居招牌），不得照第 313 條退。**
+
+---
+
+## 第 1119 條（同批，**新立**）：**第 397 條的「該標 Live 沒標」方向——《Solo Piano》是本段第一張「MB 與 Discogs 兩邊都漏標」的現場盤**
+
+`Chucho Valdés —《Solo Piano》`（Blue Note `CDP 0777 7 80597 2 1`，1993-04-23）：
+**MB `secondary-types` 空、列舉檔 `live` 旗標 false、Discogs 7168550 的 format 欄只有 `CD, Album`**，
+**但 Discogs 的 notes 逐字寫「Recorded by Ronnie Scott's recording facility at Ronnie Scott Club, London in september 1991」**
+——**它是 1991 年 9 月在倫敦 Ronnie Scott's 錄的現場獨奏（第 9、10 軌盤面另註明是三重奏）。**
+
+**處置**：`releaseType` 仍照 MB 原值填 `Album`（簡報第三節第 3 點），**但 risk 與正文都必須寫成現場錄音**。
+**判準（給後批）**：**第 397 條的兩個方向在本段都要查，而且「Live 漏標」這個方向 format 欄救不了你——只有 `notes` 欄救得了**。
+⚠ **Apple 的 releaseDate 在這一張上剛好是錄音月（1991-09-01）**——**第 484 條第二型反過來可以當「這是現場盤」的旁證。**
+⚠ **本組另一張《Delivery Suite》是相反的樣本**：**MB 標了 ['Live']、Discogs format 欄沒標、notes 寫了**（第 1120 條）。
+→ **兩張同錄於 Ronnie Scott's（1991-09 與 1993-06-12），risk 已互指。**
+
+---
+
+## 第 1120 條（同批）：**現場盤 5 張，`live` 的來源逐張不同——本組是 1985 後八批裡 MB 標得最準的一批**
+
+| 盤 | MB secondary-types | Discogs format 欄 | 靠什麼確認 |
+|---|---|---|---|
+| Tokyo Live | **['Live'] ✓** | `CD, Album`（無 Live） | Discogs notes「Recorded live to 2-track in Tokyo, Japan on **March 2-8, 1992**」 |
+| Live at the Five Spot Discovery! | **['Live'] ✓** | `CD, Album` | Discogs notes「Recorded live at The Five Spot, New York City, **late summer 1957**」＋Billboard 兩則專題 |
+| Michel Petrucciani (Live) | **['Live'] ✓** | `CD, Album` | Discogs notes「Recorded in **November of 1991** at The Arsenal in Metz, France」 |
+| Delivery Suite | **['Live'] ✓** | `CD, Album` | Discogs notes「Recorded live at **Ronnie Scott's Club (London), 12 June 1993**」 |
+| The Master | **['Live'] ✓** | `CD, Album` | Discogs notes「Recorded live at **KIRIN PLAZA OSAKA on December 24 & 25, 1993**」 |
+| **（漏標）Solo Piano** | **空 ✗** | `CD, Album` | Discogs notes（第 1119 條） |
+
+**結論**：**Discogs 的 format 欄在本組 6/6 都沒有 Live 描述——這一欄在「是不是現場」這個問題上完全沒用**；
+**MB 的 secondary-types 5/6 準；唯一能一致救回來的是 Discogs 的 `notes` 欄。**
+→ **給 c-152 之後：判現場與否一律直接讀 Discogs 的 `notes`，不要讀 format 欄。**
+
+---
+
+## 第 1121 條（同批）：**撞陳列 5 件——全部是「同曲不同錄音」或「曲名對上碟名」，0 件母帶重疊**
+
+| # | 件 | 形狀 | 處置 |
+|---|---|---|---|
+| 1 | **`Tony Williams —《Tokyo Live》` vs 池中他自己的五張錄音室盤** | **最嚴重的一件**。Cash Box 1993-05-15 的評介逐字寫「a live double album of compositions **culled from five previous recordings**」——**十三軌幾乎全是 Foreign Intrigue（1985）／Civilization（1987）／Angel Street（1988）／Native Heart（1990）／The Story of Neptune（1992）的曲目現場重錄**，其中〈Angel Street〉〈Civilization〉**兩個曲名直接等於池中兩張卡的盤名**。 | **1992 年東京現場 vs 1985–92 各次錄音室，班底也不同 → 並存**（第 1049 條）。**五張 risk 互指；正文絕不得把任一軌寫成那五張的錄音，也不得說這是精選。** |
+| 2 | **`Jimmy Smith —《The Master》` vs 池中四張 Jimmy Smith 卡** | 九軌裡四個曲名等於池中盤名：〈The Organ Grinder's Swing〉↔《Organ Grinder Swing》、〈Back At The Chicken Shack〉↔《Back at the Chicken Shack》、〈The Cat〉↔《The Cat》；另〈The Preacher〉**與《The Sermon!》不是同一首，容易誤寫**。 | 1993-12 大阪現場 vs 1960 年代 Van Gelder 錄音室 → **並存**，四張 risk 互指。 |
+| 3 | **`Thelonious Monk —《Live at the Five Spot Discovery!》` vs 池中《Thelonious Monk with John Coltrane》** | **同一段 1957 年夏天的合作，一個現場一個錄音室**。**Billboard 1993-04-10 自己就把兩者對照過**（「Monk's then-producer Orrin Keepnews did record Monk and Coltrane in the studio during the summer of '57」）。**〈Trinkle Tinkle〉與〈Epistrophy〉兩個曲名重疊**，班底不同（那張是 Wilbur Ware／Shadow Wilson）。 | **並存**，risk 互指；**正文絕不得把任一軌指向 Riverside 那次。** |
+| 4 | **`T.S. Monk —《Changing of the Guard》` vs 池中《Monk's Dream》＋本組 Five Spot** | 第 4 軌〈Monk's Dream〉＝父親 1963 年 Columbia 碟的盤名；第 9 軌〈Crepuscule With Nellie〉＝本組 Five Spot 第 5 軌的同曲。 | **並存**；**而且本組這兩張碟有史實關聯——是 T.S. Monk 本人把 Five Spot 那卷帶子交給 Blue Note 的**（Billboard 1993-04-10），**正文可以寫這條關聯，但不得把兩張的錄音混為一談。** |
+| 5 | **`Michel Petrucciani —《Michel Petrucciani (Live)》` vs 池中《Michel Plays Petrucciani》** | 〈Looking Up〉同名：1988 錄音室 vs 1991 Metz 現場。 | **並存**，risk 互指。⚠ **這一組同時是 `chk-prop` 第三道檢查唯一報出來的一筆**（第 1122 條）。 |
+
+**另記三組「曲名 vs 碟名」的撞法**（不是內容重疊，但正文極容易寫錯）：
+`日野皓正 —《Spark》` 第 1 軌〈Song for My Father〉↔ 池中 `Horace Silver —《Song for My Father》` 與 `Claude Williamson Trio —《Song for My Father》` 兩張 seed；
+`Michel Petrucciani —《Promenade With Duke》` 的 Caravan／Satin Doll／In A Sentimental Mood／Take The A Train ↔ c-150 b 的《1969 All-Star White House Tribute》（第 1056 條第 2 例同形），〈African Flower〉↔ 池中 `James Newton —《The African Flower》`；
+`Orphy Robinson —《The Vibes Describes》` 第 2 軌〈The Loneliest Monk〉↔ 池中 22 張 Monk 卡。
+
+**其餘各張與池中既有卡零軌目重疊**（已逐張比對曲名表）。
+
+---
+
+## 第 1122 條（同批）：**`chk-prop` 第三道檢查（同掛名盤名詞元包含）本批報 1 筆，是假陽性——但這道檢查本身有用**
+
+**報的是**：`c151 Michel Petrucciani《Michel Petrucciani (Live)》 ←→ c149 Michel Petrucciani《Michel Plays Petrucciani》`。
+**成因**：**兩個盤名的詞元集合互相包含（michel／petrucciani／live vs michel／plays／petrucciani）**——**是掛名被寫進盤名造成的**。
+**兩張是不同的碟**（1994 現場 vs 1988 錄音室），**判並存**（第 1121 條第 5 件已逐軌比過）。
+
+⚠ **但這道檢查抓到的東西正好是本批最該看的一組**：**它們之間確實有一軌同名（〈Looking Up〉）**。
+→ **給後批：第三道檢查報出來的不一定是撞卡，但一定要去逐軌比一次。本批 1/1 都值得比。**
+⚠ **反過來，本批有五件撞陳列，`chk-prop` 只報了一件**——**第 611／1089 條的盲區照舊**：
+**「曲名對上碟名」與「同一位藝人現場重錄自己的舊曲目」這兩種，四道檢查一種都抓不到。**
+
+---
+
+## 第 1123 條（同批）：**店面與封面——Apple 三種查法逐級救回，CAA 6 缺；「非美國首發」在店面上的缺席率遠高於平均**
+
+- **Apple `search` us 一種查法命中 9 張**：Promenade With Duke／Solo Piano／Changing of the Guard／Tokyo Live／What We Do／Five Spot Discovery／When the Time Is Right／Common Ground／Hand Jive。
+- **要第三種查法（拉藝人目錄）才命中 3 張**：
+  - **`The Benny Green Trio —《That's Right!》`**：us 與 gb 的 `search` 兩種寫法皆 0 筆，**拉 `Benny Green` 目錄才命中 715867587**（artistName `Benny Green`、collectionName **`That's Right`** 無驚嘆號、10 軌）。
+  - **`Andy Sheppard —《Delivery Suite》`**：us 0 筆、**gb `search` 也 0 筆**，**拉 `Andy Sheppard` 的 gb 目錄才命中 690495110**（5 軌）——**與 c-151 a 第 1093 條《Rhythm Method》同形但更深一層**。
+  - **`Michel Petrucciani —《Michel Petrucciani (Live)》`**：us／fr 的 `search` 皆 0 筆，**拉 `Michel Petrucciani` 目錄才命中 724665950**。
+- **三種查法全空 6 張**：Friends（us `search` 回 `Houston Person & Ron Carter —《Just Between Friends》`＝**錯碟**）、Rapsodia、Spark（us／jp、漢字／羅馬字四種寫法）、Twenty One（三種掛名寫法）、The Vibes Describes、The Master（**拉 `Jimmy Smith` 目錄 25 筆全是 RVG Edition 的 1950–60 年代再發**）。
+- ⚠ **`releaseDate` 的四種形狀本組全中**：(a) placeholder `YYYY-01-01` **7 張**；(b) **等於錄音月 1 張**（Solo Piano 1991-09-01）；
+  (c) **看起來是真發行日 1 張**（When the Time Is Right 1994-05-03）；(d) **純錯值 2 張**——**What We Do 的 `1992-01-01` 比發行早一年（是錄音年）**、
+  **《Michel Petrucciani (Live)》的 `1981-01-01` 比發行早十三年、比錄音早十年**（**本段目前最離譜的一筆，比 c-151 a 第 1093 條《To Know One》早一年的那筆嚴重得多**）。
+- ⚠ **Apple 的 collectionName 與盤面不一致 2 張**：《Promenade with Duke》（小寫 with）、**《Discovery! Live at the Five Spot (feat. John Coltrane)》（把題名前後對調）**。
+- **CAA**：RG 層**有圖 12 張**（front 全有），**真 404 6 張**（Friends／When the Time Is Right／Spark／Common Ground／Delivery Suite／The Master，**皆重試三次確認**，第 589a 條）。
+  **圖數**：Tokyo Live 9、Changing of the Guard 6、What We Do 4、Twenty One 4、Michel Petrucciani (Live) 3、Promenade With Duke 2、Five Spot 2、The Vibes Describes 2、**Solo Piano 1、Hand Jive 1、That's Right! 1**。
+- ⚠ **CAA 來源 release 要注意 1 張**：**《Twenty One》的 RG 底下有 2022 年的 Blue Note Classic Vinyl 雙黑膠（c614cb79）**，**研究層看版式要確認取的是 1994 CD 還是 2022 黑膠**。
+- ⚠ **封面要另尋來源的 6 張**，Discogs 原壓條目編號已逐張寫進各卡的 risk。
+
+⚠ **本段簡報「店面命中率應該很高」再次不成立**：**18 張裡一種查法就命中的只有一半（9/18）**，
+**且全空的 6 張裡有 5 張是日本首發或英國盤**（Rapsodia／Spark／The Vibes Describes／The Master／Twenty One 皆 Somethin' Else 或 Blue Note International 線）。
+
+---
+
+## 第 1124 條（同批）：**`label` 動了 3 張——2 張自行補號、1 張改子廠牌**
+
+| 盤 | MB／列舉檔 | 本層 | 依據 |
+|---|---|---|---|
+| **`Javon Jackson —《When the Time Is Right》`** | **catno 欄空**（MB 唯一一筆 release da3bbc79 是「**無國別 ＋ 無 catalog-number ＋ 無 barcode**」的三無錯登，第 991 條） | **Blue Note `CDP 0777 7 89678 2 8`** | **Cash Box 1994-06-18 p11 評介逐字印全號** ＋ **Billboard 1994-07-02 p45 的 Blue Note 廣告印「JAVON JACKSON 89678」** ＋ Discogs 10217375 與 promo 卡帶 `B4-89678`。**號段旁證**：同一則廣告上「KEVIN HAYS 89679」只差一號。 |
+| **`日野皓正 —《Spark》`** | **catalog-number `None`、barcode 724383045020**（有 barcode 沒有 catno，**第 1092 條之 1 的反向形**） | **Blue Note `CDP 7243 8 30450 2 0`** | Discogs 美版 12095922（**號與 barcode 對得上**）＋ 日本 Somethin' Else `TOCJ-5563`（9484516）。**號段旁證**：本組《The Master》是 `7243 8 30451 2 9`，**只差一號、同一批出貨**。 |
+| **`Everette Harp —《Common Ground》`** | 列舉檔 catno `7 89297 2`、廠牌籠統寫 Blue Note | **`Blue Note Contemporary` `7 89297 2`／`CDP 0777 7 89297 2 7`** | **MB 自己的 label-info 就是「Blue Note Contemporary」**＋Discogs 四筆一致＋**Billboard 1994-06-04 專題講明那是新設 imprint 的創廠第一張**（第 1118 條）。 |
+
+⚠ **本批沒有出現 c-151 a 第 1092 條之 1 那種「把 barcode 抄進 catalog-number」的案例**，
+**但出現了它的反面（有 barcode、catno 是 null）兩次**（Spark、Hand Jive 的 b0980ad3）——**`0777 7 8xxxx`／`7243 8 xxxxx` 兩段的 MB 建檔品質都一樣差，一律去 Discogs 補號。**
+
+---
+
+## 第 1125 條（同批）：**盤名——改判 1 張、維持 MB 原形 2 張、榜單另有一形 1 張**
+
+| 盤 | MB RG title | 本層 | 依據 |
+|---|---|---|---|
+| **That's Right** → **`That's Right!`** | `That's Right`（**無驚嘆號**） | **改判，加驚嘆號** | **MB 自己轄下那一筆 release 的 title 就是「That's Right!」**；**Discogs 美／荷／日四筆一致帶驚嘆號**；**Billboard 1993-09-18 評介標題帶**。四邊一致 → 判 RG title 掉了標點。⚠ **`chk-prop` 的折鍵剝標點，兩形折同一個鍵，改動不影響去重。** |
+| **Michel Petrucciani (Live)** | `Michel Petrucciani (Live)` | **維持 MB 原形** | **1994 年實體盤與 Discogs 三筆的題名都只是「Live」**（MB 歐版 release 的 title 也是「Live」），**但 MB RG 與 Apple 的 collectionName 一致作「Michel Petrucciani (Live)」**——**這不是第 1087 條那種黏了掛名的登打殘骸，是數位時代的消歧義題名，而且單獨叫《Live》的卡在池中辨識度太低**。「Live」進 queryAlias。 |
+| **Live at the Five Spot Discovery!** | `Live at the Five Spot Discovery!` | **維持 MB 原形** | **四種寫法**：MB／Discogs 盤面形帶「Discovery!」在後、**Apple 作「Discovery! Live at the Five Spot (feat. John Coltrane)」把前後對調**、**Billboard 評介與榜單都只印「LIVE AT THE FIVE SPOT」**。**取 MB／盤面形**，其餘三形進 queryAlias。 |
+| **Tokyo Live** | `Tokyo Live` | **維持 MB 原形** | **Billboard 爵士榜 1993-05-08 與 05-22 兩期都印「LIVE IN TOKYO」**，Cash Box 評介與 Discogs 作「Tokyo Live」。⚠ **兩形在 `chk-prop` 上折出兩個鍵**（第 1059 條同形）——**日後若有人拿「Live in Tokyo」另建一筆，會是同碟兩卡而工具不會亮燈。** |
+
+---
+
+## 第 1126 條（同批）：**MB 在 1993–94 這一格的資料品質——c-151 a 第 1092 條那四種本批中了三種，另加兩種新的**
+
+1. **無廠牌／無 catno／format null／無國別的錯登 release——3 張**：《When the Time Is Right》da3bbc79（**無國別**）、《Hand Jive》b0980ad3（**無廠牌無 catno 無 barcode，但日期與紙本對得上，本層採用其日期**）、《Promenade With Duke》896b7777（**format 欄是 `None`**）。
+   ⚠ **第 991 條的三連特徵在 1993–94 仍然是最好用的錯登指紋，但「錯登 ≠ 日期一定錯」**——**Hand Jive 那一筆的 1994-08-09 與 Billboard 的評介、榜位完全對得上**。
+2. **只建了美版、沒建首發的日本盤——2 張**：《Rapsodia》（首發 TOCJ-5552）、《Spark》（首發 TOCJ-5563）。**第 974／1092 條之 3 的續例。**
+3. **catalog-number 是 null——2 張**：《Spark》f7347d20、《Hand Jive》b0980ad3。
+4. **（新）同一個 RG 底下兩筆 release 的 artist-credit 不一致——3 張**：
+   《What We Do》（美版 Quartet／德版無 Quartet）、《Live at the Five Spot Discovery!》（07e4bc47 有 Quartet／3e0755b6 無）、**《Twenty One》（7c62ceaa 只寫「Geri Allen Trio」／8daf4d06 寫全稱）**。
+   → **拿 RG 的 credit 當掛名依據之前，要先看轄下每一筆 release 的 credit 是不是一致。**
+5. **（新）同號同 barcode 的兩筆 release——1 張**：《Twenty One》的 7c62ceaa 與 8daf4d06（**`CDP 7243 8 30028 2 5`／724383002825 完全相同**）——**MB 把同一張碟建了兩筆 release**（第 936 條在 release 層的形狀）。
+6. **catno 少空格 1 張**：《Promenade With Duke》的 `…80590 28`（Discogs 作 `…80590 2 8`）。
+7. **`tags` 全空的 RG——4 張**：Solo Piano／That's Right!／When the Time Is Right／Spark／The Vibes Describes（**五張**，本批近三分之一）——**曲風不能靠 MB tags 判。**
+8. **`release-count == 1` 的有 9 張**（Solo Piano／That's Right!／Friends／Rapsodia／When the Time Is Right／Spark／Common Ground／Delivery Suite／The Vibes Describes），**逐筆去 Discogs 補全後，2 張的年份依據因此換掉、2 張的 catno 因此補上**；**只有《Delivery Suite》確認 Discogs 也真的只有一筆**（第 1060 條）。
+
+---
+
+## 第 1127 條（同批，**紙本入庫**）：**1994 是本層自抓的第一個年份；Billboard 的檔名在 1994 年開始「同一年內混用」，按日期拼檔名會漏掉近一半**
+
+- **本層新增兩份**（詳見 `batch-progress/enum/SOURCES-billboard-cashbox.md` 末節，**append，沒有改別人寫的段落**）：
+  - **`billboard-bn-1994-1995q1-ocr.txt.gz`**（**4.0 MiB 壓縮 / 9.1 MiB 原文**，1994-01-08 → 1995-03-25 共 **63 期**〔1994 年 51 期＋1995 Q1 12 期〕、**889 個命中頁**；缺 **BB-1994-01-01／BB-1994-12-31**）；
+  - **`cashbox-bn-1994-ocr.txt.gz`**（**0.8 MiB 壓縮 / 1.8 MiB 原文**，1994-01-22 → 1994-12-31 共 **49 期**、**297 個命中頁**；缺 **CB-1994-01-01／01-08／01-15**）。
+  - ⚠ **五則缺期全部落在年終／年初合刊週**（第 704／789／821 條的判準到 1994 仍成立）。
+- ⚠ ⚠ **檔名規律再度改變，而且這次是「同一年內混用」**：
+  - **1992 全年 `Billboard-`、1993 全年 `BB-`**（c-151 a 第 1091 條實測）；
+  - **1994：`BB-YYYY-MM-DD.pdf` 與 `BB-YYYY-MM-DD-**N**.pdf` 交替出現**，另有 **`BB-1994-05-07-**R**.pdf`** 與 **`BB-1994-10-15-**P**.pdf`** 兩個單獨尾碼；
+  - **1995 第一季回到 `BB-YYYY-MM-DD.pdf`**；**Cash Box 1994 全年都是 `CB-YYYY-MM-DD.pdf`**。
+  → **`-N`／`-R`／`-P` 尾碼無法預測**，**按週六日期拼檔名在 1994 年會漏掉 24/51 期**。
+  **本層照 c-151 a 第 1091 條的建議先抓兩份索引頁再 grep 出 `.pdf` 相對路徑，112 期一次全中、零 FETCH-FAIL。**
+  **這條建議到 1994 年已經不是「比較可靠」，而是「非這樣做不可」。**
+- **關鍵字集＝本組 25 個目錄號 ＋ 62 個盤名／人名／欄名詞**（含 `blue note`／`slue note`／`blue nolo`／`top jazz albums`／`top jall albums`／`contemporary jazz`／`contemporary jall`／`somethin' else`／`cuscuna`／`bruce lundvall`）。
+- ⚠ **第 879 條在 1994 續成立，但本組的分布與 c-151 a 相反**：
+  **上 TOP JAZZ ALBUMS 的**——Hand Jive、Twenty One、（1993 那一格的）Five Spot Discovery／What We Do／Promenade With Duke／That's Right!／Changing of the Guard／Tokyo Live；
+  **上 TOP CONTEMPORARY JAZZ ALBUMS 的只有 1 張**——**Everette Harp《Common Ground》**（同週還進了 Heatseekers 第 20 與 Top R&B Albums 第 63）。
+- ⚠ **OCR 形變**：**`Jazz` → `Jall`／`JAll` 在 1994 仍然普遍**（`TOP JAll ALBUMS`、`TOP CONTEMPORARY JAll ALBUMS`，關鍵字表已一併收）；**目錄號植字錯 1 處**（Cash Box 1994-12-17 把 `30028` 印成 **`300028`**，第 998 條 (b)）。
+- ⚠ **紙本假陽性本批四處**（第 1091 條同形）：`99031` 在 Billboard 1993-09-25／10-02／11-27／12-25 的家庭錄影帶榜命中的是 **The Lyons Group《Barney Rhymes With Mother Goose》的商品號**；
+  `hino` 在 1994 全年大量命中 **Rhino Records**；`SHEPPARD` 命中 **T.G. Sheppard**（鄉村）與 **Chris Sheppard**（DJ）；
+  `PETRUCCIANI` 1994–95 命中的全是他轉會 Dreyfus 的報導與法國 Victoires 名單，**沒有一則是《Michel Petrucciani (Live)》**。
+- **四則可直接引用的一手材料**（寫作層用）：
+  1. **Billboard 1992-12-05 p38** Jazz Blue Notes 專欄首度披露 Naima 的 Five Spot 母帶（「Expect it in March」）；
+  2. **Billboard 1993-04-10 p14** 的專題：**Blue Note 是在 T.S. Monk 簽進廠牌之後由他本人把母帶交給 Cuscuna 的**，並有 Cuscuna 論母帶狀況的原話；
+  3. **Billboard 1994-06-04 p25**：**Blue Note 新設 Contemporary Records 子廠牌，創廠盤是 Everette Harp《Common Ground》**；含 Harp 1993 年 1 月與柯林頓總統同台吹薩克斯風、以及柯林頓把他錯認成 Joe Henderson 的細節；
+  4. **Billboard 1995-01-21 p38**：**1994 年幾張爵士碟的真實銷量**——Charlie Haden Quartet West《Always Say Goodbye》16,000、Joe Lovano《Tenor Legacy》9,000、**Gonzalo Rubalcaba《Rapsodia》2,500**。**這是整條 1990 年代 Blue Note 線最罕見的一組一手銷量數字。**
+
+---
+
+## 第 1128 條（同批）：**給 c-152 之後的九條操作結論**
+
+1. **第 1082 條的目錄號段快篩要降級**（第 1112 條）：**它在 1993–94 兩個方向各錯一次**（84467 是新碟、99787／89280 是再發）。
+   **一級篩子改成：Discogs 的 `format` 欄 ＋ `notes` 欄**——本組四張退件在這兩欄上 4/4 全中。
+2. **看到 `BNST-` 或 `TOCJ-4xxx` 就先把後四位當成 `BLP 4xxx`／`BST 84xxx` 去查 1955–66**（第 1113 條）；
+   **`TOCJ-5xxx` 以上才是當代新碟的日本版。本組 22/22 成立。**
+3. **判現場與否一律讀 Discogs 的 `notes`，不要讀 format 欄**（第 1120 條：format 欄 6/6 全沒標）。
+4. **拿 MB 的 RG artist-credit 當掛名依據前，先看轄下每一筆 release 的 credit 一不一致**（第 1126 條之 4，本批中三次）。
+5. **看到 `Somethin' Else` 就先查日本盤日期**（第 1095 條結論 2，本組四張中此形：Rapsodia／Spark／Twenty One／The Master）。
+6. **`Blue Note Contemporary`（1994 起）是 Blue Note 線內的子廠牌，不得照第 313 條當他廠退**（第 1118 條）。
+7. **抓 1994 年的 Billboard 一定要先抓索引頁 grep 檔名**（第 1127 條）：**`-N`／`-R`／`-P` 尾碼無法預測，按日期拼會漏掉 24/51 期。**
+8. **第 1083 條(三)那句「1992–93 起 Blue Note 美國本土已經不發黑膠了」到 1994 失效**：**《Hand Jive》有同期美國黑膠 `B1 7243 8 27327 1 6`。**
+9. **「同一位藝人現場重錄自己的舊曲目」是 `chk-prop` 四道檢查全部抓不到的一種撞陳列**（第 1121 條第 1、2 件）——
+   **遇到 1990 年代的現場盤，一律把曲名表拿去比池中同一位藝人的所有盤名。**
+
+---
+
+## 第 1129 條（同批，**收尾**）：**交件數字、中間檔、本棒改動的檔案**
+
+- **交件**：`batch-progress/c151/prop-b.json`，**18 張 17 位**（`Michel Petrucciani` 一位吃兩張），
+  `node batch-progress/c151/chk-prop.mjs b` **標記 0**（跨批 114 批、4,648 卡、撞卡 0）。
+  **MBID 已逐筆核對：每一筆 `mbNote` 裡的第一個 UUID 都等於 slice 的 `rgMbid`，18 個互不重複、全部落在 slice 的 `g: "b"` 集合裡**（程式比對過）。
+  **列舉檔的 rgMbid 沒有一筆釘錯。**
+- **第 315 條**：**prop 18 ＋ rulings 退表 4 ＝ 22 ＝ slice 的 `g: "b"` 筆數 ✓。**
+- **中間檔**：scratchpad 的 `c151b/`（`mb.json` 22 筆 MB 原始回應、`mbsum.txt`、`poolrows.json` 27,318 列、`store.json` CAA／Apple、
+  `txt/` 112 期逐期 OCR、`bb94.merged.txt`／`cb94.merged.txt`、`harvest.py`／`g.py`／`g93.py`／`g.sh`／`dg.mjs`／`dgr.mjs`／`store.mjs`／`ap2.mjs`／`ap3.mjs`／`look.mjs`／`pool.mjs`、`p1.py`–`p8.py` 交件分段）。**沒有放 repo 根目錄**（第 533 條）。
+- **本棒改動的檔案**：`batch-progress/c151/prop-b.json`（寫入 18 張）、`batch-progress/c151/rulings.md`（**append 第 1110–1129 條**）、
+  `batch-progress/enum/billboard-bn-1994-1995q1-ocr.txt.gz`（新建，4.0 MiB）、`batch-progress/enum/cashbox-bn-1994-ocr.txt.gz`（新建，0.8 MiB）、
+  `batch-progress/enum/SOURCES-billboard-cashbox.md`（**append 一節**）。
+- **沒有碰 git、沒有碰 `PROJECT_MEMORY.md`／`seed_cards.json`／`apex_pool.json`／KV／Firestore，也沒有碰 `prop-a.json`、a 組寫的 rulings 段落（第 1080–1096 條）與 c-150 的任何檔案。**
+- ⚠ **收工前重掃**：`batch-progress/enum/` 除本棒新增的兩份外，與開工時一致（1990／1991-1992／1991-1992q1／1992-1993 四組八份）；
+  `git status --short` 另有 `desc-tools/batches/research/c148-a.json` 與 `c149-b.json` 兩筆**別的工作階段未提交的變更**——**本棒沒有碰，主線提交時請逐一 `git add`，不要 `git add -A`。**
+- ⚠ **號段**：本批 b 組用 **1110–1129**，**1130–1139 未用**（c-148 用 900–941、c-149 用 960–979＋990–998、c-150 用 1020–1062、c-151 a 用 1080–1096），**未撞號。**
+
+## 第 1130 條（主線）：**新的「同掛名盤名詞元包含」檢查在本批出第一筆，是偽陽性，但它該報**
+
+主線依第 936 條在 `dedup-crossbatch.mjs` 補了第三道檢查（短盤名的實詞若全出現在長盤名裡就報，只報不擋）。
+本批報出一筆：**`Michel Petrucciani《Michel Petrucciani (Live)》(1994, 本批) ←→ c-149《Michel Plays Petrucciani》(1988)`**
+——實詞都是 `michel`＋`petrucciani`，因此中。
+
+**逐軌核過：兩張不是同一張碟**（1994 現場 vs 1988 錄音室），**兩張都收**。
+
+⚠ **記這一條是為了立偽陽性的處理方式**：這一道**只報不擋**，
+**報出來就要逐軌核一次再寫「並存」**，不要因為看起來像藝人同名就直接略過——
+第 936 條那四筆真的撞卡，長得跟這筆一模一樣。
