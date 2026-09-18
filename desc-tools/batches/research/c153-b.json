@@ -309,5 +309,109 @@
   "status": "full",
   "yearVerified": "**卡單 1996 成立，本層未改判，而且證據比策展層以為的多一層。** (1) **廠牌檔期**：**Billboard 1996-08-10 p34 的 Blue Note 夏季名單逐字「Trumpeter Marcus Printup's \"Unveiled\" is due Aug. 6 as well.」＝1996-08-06 美國街頭日**（第 612／1175 條）。 (2) ⚠ **評介（策展層漏掉的一層）**：**Billboard 1996-08-24 p108 的 JAZZ 評介欄逐字印「Blue Note 37302」與製作人名單**——**發行後兩週的同期評介，第 1053 條要的那一層本張其實是有的。** (3) **MB first-release-date 1996**（RG 與唯一一筆 release c86e7900 一致）。 (4) **Discogs 三筆（14604789／11429513／34414351）`year` 全部 1996、`format` 全乾淨。** (5) **錄音日 1996-02-18／19 與發行同年**（Discogs notes 逐字）。 (6) **盤面 ℗ 1996**（Apple copyright 欄逐字）。⚠ **反向證據**：只有 Apple 的 `releaseDate` `1996-01-01`，年份對、日期是年頭回填，不影響。⚠ **榜位零**：Billboard 1996 兩張爵士榜（第 879／1068 條）查 `37302` 與盤名零命中，Cash Box 1996 零命中——**有廣告、有評介、無榜位。**",
   "notes": "**覆核策展層：rgMbid 1fee7dc0／唯一 release c86e7900／掛名 `Marcus Printup`（裸名）／年份 1996，全部成立。**｜⚠⚠ **本層推翻策展層兩句話。** **(1)「沒有評介」是錯的**：**Billboard 1996-08-24 p108 有整則 JAZZ 評介欄**（第 1134／1188 條：「紙本零命中」一律當待證的宣稱——**本段第五次被推翻**）。**(2)「無伴奏的〈Amazing Grace〉」是錯的**：**同一則評介逐字寫它是「another trumpet/piano duet」——小號與 Marcus Roberts 鋼琴的二重奏，不是無伴奏。**｜⚠⚠ **編制（策展層完全沒寫，正文必須要有）**：**五重奏 ＝ Printup 小號／Marcus Roberts 鋼琴／Stephen Riley 次中音薩克斯／Reuben Rogers 低音提琴／Jason Marsalis 鼓**（Discogs credits 與 Billboard 評介兩邊一字不差）。**製作人是 Bob Belden ＋ Printup 兩人。**｜⚠ **軌名兩形**：**MB 第 8 軌寫〈Soulful〉，盤面與 Billboard 都寫〈Soulful J〉**——**建議進 `queryAlias`。**⚠ **Discogs 把〈Soulful J〉的作曲者拼成 `Printer`，那是 Printup 的錯字，不是別人。**⚠ **〈Amazing Grace〉盤面標 `Traditional`，Discogs notes 自己註明實際作者是 John Newton。**｜⚠ **錄音方式值得寫進正文**：**Discogs notes 逐字「Recorded live to a 2 track analog master on February 18 & 19, 1996」——直接錄兩軌、不多軌混音**，這是本張最有辨識度的製作事實。｜⚠ **載體**：**MB 一筆、Discogs 三筆，全部是 CD——無黑膠、無卡帶、無日版**（`TOCJ-`／`TOCP-` 查無，第 1063／1066／1133 條的固定動作已跑；Japan 篩選只撈到 1998 年《Hubsongs》`TOCJ-6167`，是另一張碟）。｜**封面已有**：CAA RG 層 2 圖、front=true、來源 1996 原盤 c86e7900，本層未動。**備援**：Discogs 美國原壓 **14604789** 共 3 圖，`images[0]` 是 `primary`、600×595。｜**試聽已 ready，本層抽核通過**：Apple `us` **724282931**，11 軌與 MB 一致——**串流採信 724282931。**｜**撞陳列**：**池中 `Marcus Printup —《Song for the Beautiful Woman》`（c-152 b，1995 首作）與本張逐軌 0 重疊，兩卡 risk 互指為「首作與第二作」。**⚠ **本張軌名掃全卡池卡名兩筆命中**：〈Eclipse〉↔ 高柳昌行《Eclipse/侵蝕》1975（c-121 a）、〈Amazing Grace〉↔ Aretha Franklin《Amazing Grace》1972（seed）——**都是同名不同物（曲名 vs 卡名），不是內容重複**（第 1181／1192 條第六種盲區）。**catno 反查無重複 RG**（第 1274 條）。⚠ **同批的 Javon Jackson／Greg Osby／Sonny Fortune 與本張在同一份 Blue Note 1996 夏季發行名單上（Billboard 1996-08-10 p34），四張互不相干但可在 risk 互指為「同一份名單上的鄰居」。**｜非選輯：單一藝人、1996-02-18／19 同一錄音室的新錄音，`secondary-types` 空、Discogs `format` 三筆全乾淨。"
+ },
+ {
+  "key": "desc2:Greg Osby|Art Forum",
+  "artist": "Greg Osby",
+  "album": "Art Forum",
+  "facts": [
+   {
+    "f": "release-group a61d398d 的欄位：title「Art Forum」、artist-credit「Greg Osby」（**bbef05c0 Person／US**、裸名）、first-release-date **1996**、primary-type Album、secondary-types 空。**轄下只有一筆 release：dd55cfc2（1996 US Official CD 9 軌，Blue Note `CDP 7243 8 37319 2 3`）**——⚠ **`barcode` 欄是 `null`（整個空）**（第 1237 條(2)，本組兩例之一）。九軌與時長：〈Miss D'Meena〉271s〈Mood for Thought〉372s〈I Didn't Know About You〉468s〈2nd Born to Freedom〉**116s（不到兩分鐘）**〈Dialectical Interchange〉430s〈Art Forum〉338s〈Don't Explain〉498s〈Half Moon Step〉501s〈Perpetuity〉454s。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a61d398d-1620-3e3b-811d-971b00dd82ae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **編制是一支九人的原音大團，不是四重奏——策展層一個人也沒寫。** **Discogs 美國原壓 11256549 的 credits 逐字**：**`Greg Osby — Alto Saxophone, Soprano Saxophone, Producer`**、**`Cleave Guyton — Flute, Alto Flute, Tenor Saxophone`**、**`Alex Harden — Bass Clarinet`**、**`Robin Eubanks — Trombone`**、**`Bryan Carrott — Vibraphone`**、**`James Williams (2) — Piano`**、**`Darrell Grant (2) — Piano [Additional]`**、**`Marvin Sewell — Acoustic Guitar`**、**`Lonnie Plaxico — Bass`**、**`Jeff \"Tain\" Watts — Drums`**；混音 `Greg Osby` ＋ `Joe Marciano`，錄音 `Joe Marciano` ＋ `Ed Reed (2)`，母帶 `Allan Tucker`。⚠ **`Recording date: February 10-14, 1996`（Discogs notes 逐字，來源標注 jazzdiscography.com）——五天的錄音期，不是一天。**⚠ **日版條目（Discogs 35149723，`TOCJ-6061`）的 companies 欄另外把錄音室寫出來：`Recorded At: Systems Two`（布魯克林）——美版條目沒有這一欄。**",
+    "src": "https://api.discogs.com/releases/11256549"
+   },
+   {
+    "f": "⚠ **作曲：九軌裡七軌是 Osby 一個人寫的，兩軌是標準曲——不是「他自己與團員的曲子」。** **Discogs 11256549 逐字 `Greg Osby — Composed By [1, 2, 4 to 6, 8, 9]`（七軌）**；另外兩軌：**〈I Didn't Know About You〉`Duke Ellington` ＋ `Bob Russell`**、**〈Don't Explain〉`Billie Holiday` ＋ `Arthur Herzog, Jr.`**。**團員沒有任何一位有作曲 credit。**",
+    "src": "https://api.discogs.com/releases/11256549"
+   },
+   {
+    "f": "⚠ **日版比美版早六天——而且它不是宣傳盤，是正式零售盤。** **Discogs 35149723：`TOCJ-6061`，Japan，`format` 逐字 `CD, Album`（無 Promo、無 Reissue），`released` 欄逐字 `1996-07-31`**，barcode `4988006720176`、`Price Code: ¥2,500`、`Manufactured By: Toshiba EMI Ltd`、℗© Capitol Records, Inc.。**而美版的街頭日是 Billboard 逐字的「due Aug. 6」＝1996-08-06。**→ ⚠ **本張的實體首發地是日本（1996-07-31），美版晚六天**（第 1063／1066／1133 條的固定動作命中：**「先查 TOCJ 再下首發地結論」在本組中了一次**）。**年份不變（都是 1996）**，但 **`TOCJ-6061` 必須進 `queryAlias`**（第 1132 條）。",
+    "src": "https://api.discogs.com/releases/35149723"
+   },
+   {
+    "f": "**檔期 ＋ 廠牌口徑**：**Billboard 1996-08-10 p34（Jim Macnie「Blue Notes」欄）逐字**：「Included in the lineup are dates by four sax virtuosos: **Greg Osby's \"Art Forum\" (due Aug. 6)**, Jackie McLean's \"Hat Trick\" (Aug. 20), Javon Jackson's \"A Look Within,\" and Sonny Fortune's \"From Now On\" (both due Sept. 3) will augment the horn's history. **The Osby disc is made with acoustic instruments, as opposed to his hip-hop outings of late.**」——**最後那一句是本張定位最有力的同期紙本句子：廠牌自己把它說成「回到原音編制」，對照的是他前兩張的嘻哈路線。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-08-10.pdf"
+   },
+   {
+    "f": "**年終評選**：**Billboard 1996-12-28 p44（Jim Macnie 的年度個人榜）逐字**：「My personal favorites: 1. Danilo Perez, \"Panamonk\" (Impulse!). 2. Steve Wilson, \"Four For Time\" (Criss Cross). **3. Greg Osby, \"Art Forum\" (Blue Note).** 4. Branford Marsalis, \"The Dark Keys\" (Columbia). 5. Matt Wilson, \"As Wave Follows Wave\" (Palmetto). …」——**1996 年 Billboard 爵士評家個人榜第 3 名**（策展層已記，本層逐字覆核成立）。⚠ **Billboard 1996 兩張爵士榜（第 879／1068 條）查 `37319`／盤名皆零命中——未進銷售榜；Cash Box 1996 零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-12-28.pdf"
+   },
+   {
+    "f": "**Discogs 同號四筆全部 1996、`format` 欄全部乾淨**：美 CD **11256549**（`CD, Album`）、美宣傳 **17181364**（`CD, Album, Promo`）、歐 CD **15553548** 與 **3248795**（皆 `CD, Album`）；**加上日版 `TOCJ-6061`（35149723）共五筆，全部是 CD——沒有黑膠、沒有卡帶**（第 1064 條）。⚠ **MB 那筆 dd55cfc2 的 barcode 欄空，目錄號只能靠 Discogs 與 Billboard 的 `37319` 交叉**（第 1237 條(2)）。",
+    "src": "https://api.discogs.com/database/search?catno=CDP+7243+8+37319+2+3&type=release"
+   },
+   {
+    "f": "**店面 ＋ 跨卡**：Apple `us` **724008152**（`Greg Osby — Art Forum`，**9 軌**，逐軌時長 271/372/468/116/430/338/498/501/455 秒，**與 MB 逐軌吻合（末軌差 1 秒）**，全部有 preview，copyright 欄逐字 `℗ 1996 Blue Note Records`，`releaseDate` `1996-01-01` 年頭回填）。**本層抽核全中、無錯碟，串流採信 724008152。** **跨卡**：實掃卡池 27,546 列，`Greg Osby` 命中 **6 張**：c-150 a《Man-Talk For Moderns Vol. X》1991、c-151 a《3-D Lifestyles》1993、c-152 a《Black Book》1995、**本張 1996**、c-154 a《Further Ado》1997、c-154 b《Banned in New York》1998 與《Zero》1998——**池中沒有本張**。⚠ **逐軌比對：與前後五張 0 重疊。**⚠ **本張九軌的軌名掃全卡池卡名，一筆命中**：〈Don't Explain〉↔ Beth Hart & Joe Bonamassa《Don't Explain》2011（seed）——**曲名＝別張碟的卡名，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 37319 2 3` 與 `TOCJ-6061` 反查皆只回同碟壓片，無重複 RG**（第 1274 條）。",
+    "src": "https://itunes.apple.com/lookup?id=724008152&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "Blue Note 自己在 1996 年的發行通報上逐字寫著：這張是用原音樂器做的，和他最近那幾張嘻哈路線相反——九個人、原音編制、一把長號、一組鐵琴、兩位鋼琴手",
+   "九軌裡七軌是 Osby 一個人寫的，剩下兩軌是艾靈頓的〈I Didn't Know About You〉與 Billie Holiday 的〈Don't Explain〉——兩首標準曲擺在那裡，像是他刻意留下的對照組"
+  ],
+  "sound": "九軌，一支九人的原音編制：Greg Osby 的中音與高音薩克斯，Cleave Guyton 的長笛、中音長笛與次中音薩克斯，Alex Harden 的低音單簧管，Robin Eubanks 的長號，Bryan Carrott 的鐵琴，James Williams 的鋼琴（Darrell Grant 另補鋼琴），Marvin Sewell 的原聲吉他，Lonnie Plaxico 的低音提琴，Jeff \"Tain\" Watts 的鼓。沒有電子樂器、沒有節拍取樣。曲長差距大：最長的〈Half Moon Step〉八分二十一秒，最短的〈2nd Born to Freedom〉不到兩分鐘。1996 年 2 月 10 至 14 日錄於布魯克林的 Systems Two，Osby 自己製作、也參與混音。",
+  "keyTracks": [
+   "Art Forum",
+   "Half Moon Step",
+   "I Didn't Know About You"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1996 成立，本層未改判。** (1) **廠牌檔期**：**Billboard 1996-08-10 p34 逐字「Greg Osby's \"Art Forum\" (due Aug. 6)」＝1996-08-06 美國街頭日**（第 612／1175 條）。 (2) ⚠ **日版更早**：**Discogs 35149723（`TOCJ-6061`，Japan，`CD, Album`，非宣傳盤）的 `released` 欄逐字 `1996-07-31`**——**比美版早六天，實體首發地是日本，但年份仍是 1996。** (3) **MB first-release-date 1996。** (4) **Discogs 五筆（美 11256549／美宣傳 17181364／歐 15553548／歐 3248795／日 35149723）`year` 全部 1996、`format` 全部乾淨。** (5) **年終評選**：**Billboard 1996-12-28 p44 的爵士評家個人榜第 3 名逐字「3. Greg Osby, \"Art Forum\" (Blue Note).」——1996 年內的評論層。** (6) **錄音期 1996-02-10～14 與發行同年。** (7) **盤面 ℗ 1996**（Apple copyright 欄逐字）。**無反向證據。**⚠ **榜位零**：Billboard 1996 兩張爵士榜（第 879／1068 條）查 `37319`／盤名零命中；Cash Box 1996 零命中。⚠ **MB 那筆 release 的 `barcode` 欄空**（第 1237 條(2)），**目錄號靠 Discogs 與 Billboard 的 `37319` 交叉。**",
+  "notes": "**覆核策展層：rgMbid a61d398d／唯一 release dd55cfc2／掛名 `Greg Osby`（裸名、沿用池中五張的既有字串）／年份 1996／年終評家榜第 3，全部成立。**｜⚠⚠ **本層擋下一處作曲歸屬的正文錯**：**策展層 `why` 寫「九軌全是他自己與團員的曲子」——實際是 `Greg Osby — Composed By [1, 2, 4 to 6, 8, 9]` 七軌全為 Osby 一人所作，團員零首**，另外兩軌是標準曲（**〈I Didn't Know About You〉Ellington／Bob Russell、〈Don't Explain〉Billie Holiday／Arthur Herzog, Jr.**）。**「他自己與團員的曲子」這句話兩邊都錯。**｜⚠⚠ **編制（策展層完全沒寫，而這是本張最重要的事實）**：**九人原音編制 ＝ Osby（alto/soprano）／Cleave Guyton（長笛・中音長笛・次中音薩克斯）／Alex Harden（低音單簧管）／Robin Eubanks（長號）／Bryan Carrott（鐵琴）／James Williams（鋼琴）＋ Darrell Grant（additional piano）／Marvin Sewell（原聲吉他）／Lonnie Plaxico（低音提琴）／Jeff \"Tain\" Watts（鼓）。**⚠ **`Darrell Grant` 的 credit 逐字是 `Piano [Additional]`，不是常設鋼琴手**（第 1069／1189／1195 條那一類，正文要分清楚）。⚠ **錄音是 1996-02-10～14 五天，不得寫成一天。**｜⚠⚠ **首發地在日本（1996-07-31，`TOCJ-6061`），比美版（1996-08-06）早六天**——**這是第 1063／1066／1133 條在本組唯一一次真正命中**（同批 Javon Jackson 的日版是宣傳盤、Charlie Hunter 的日版晚三週，都不算）。**`TOCJ-6061` 必須進 `queryAlias`。**⚠ **錄音室 `Systems Two` 只出現在日版條目的 companies 欄，美版沒有——引用時要標來源是日版。**｜⚠ **載體**：**MB 一筆、Discogs 五筆，全部是 CD——無黑膠、無卡帶**（第 1064 條）。｜**封面已有**：CAA RG 層有圖（策展層記 front=true、來源 1996 原盤），本層未動。**備援**：Discogs 美國原壓 **11256549** 共 3 圖，`images[0]` 是 `primary`、600×600。⚠ **不要用日版 35149723**：它的 2 張圖**全是 `secondary`**，沒有正面封面（c-152 實測過的那種形狀）。｜**試聽已 ready，本層抽核通過**：Apple `us` **724008152**，9 軌、逐軌時長與 MB 吻合——**串流採信 724008152。**｜**撞陳列**：**池中 Greg Osby 五張（c-150 a／c-151 a／c-152 a／c-154 a／c-154 b 兩張）與本張逐軌 0 重疊**；**本張軌名掃全卡池卡名一筆命中（〈Don't Explain〉↔ Beth Hart & Joe Bonamassa 2011 同名碟），是同名不同物**（第 1181／1192 條）；**catno 反查無重複 RG**（第 1274 條）。⚠ **同批的 Javon Jackson／Marcus Printup／Sonny Fortune 與本張在同一份 Billboard 1996-08-10 的 Blue Note 發行名單上，四張 risk 可互指。**⚠ **Billboard 1996-04-13 p35 另記 Osby 與 Tim Hagans、Javon Jackson、Kevin Hays、Bill Stewart 組過一個團**（後三位都在 c-153 的清單裡）——**側人關係，依第 855／861 條不構成撞陳列。**｜**曲風**：`['jazz']`，第 1239 條已判、本層同意——**Billboard 自己把它歸在 JAZZ 欄、並逐字說它「用原音樂器做、和他最近的嘻哈路線相反」，沒有分類事實支持加 `hiphop`**（對照第 1207 條 US3 那一格：那張是 Billboard 欄名逐字寫「HIP-HOP JAZZ」）。｜非選輯：單一藝人、1996-02-10～14 同一錄音期的新錄音，`secondary-types` 空、Discogs `format` 五筆全乾淨。"
+ },
+ {
+  "key": "desc2:Paul Jackson, Jr.|Never Alone - Duets",
+  "artist": "Paul Jackson, Jr.",
+  "album": "Never Alone - Duets",
+  "facts": [
+   {
+    "f": "release-group 5da53e6c 的欄位：title「Never Alone - Duets」、artist-credit「Paul Jackson, Jr.」（**035610f3 Person／US**）、**first-release-date `1996-05-14`（帶完整月日）**、primary-type Album、secondary-types 空。**轄下只有一筆 release：9a28a460（1996-05-14 US Official CD 10 軌，Blue Note `CDP 7243 8 37630 2 3`，barcode 724383763023）**。十軌與時長：〈Da Boardwalk〉338s〈Reunited〉347s〈Wind Beneath My Strings〉292s〈Soulful Strut〉301s〈People Get Ready〉275s〈Knighttime〉344s〈Where Is the Love〉251s〈Let's Start Again〉339s〈End to a Perfect Day〉287s〈Short and Suite〉234s。**MB 沒有歐版、沒有日版、沒有黑膠。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5da53e6c-5547-3de1-a24d-4a18dbc4c030&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **這張碟的著作權人不是 Blue Note，是兩家日本公司。** **Discogs 美國原壓 3780032 的 companies 欄逐字**：**`Phonographic Copyright (p): Pony Canyon Inc.`、`Phonographic Copyright (p): Sweet Basil Inc.`、`Copyright (c): Pony Canyon Inc.`、`Copyright (c): Sweet Basil Inc.`、`Licensed To: Blue Note Records`**、`Manufactured By: Capitol Records, Inc.`、`Mastered At: Bernie Grundman Mastering`；**notes 逐字「℗ © 1996 Pony Canyon Inc., Sweet Basil Inc. under exclusive license to Blue Note Records, a division of Capitol Records, Inc.」**。⚠ **`released` 欄逐字 `1996-05-14`，與 MB 的 frd 完全一致。**⚠ **盤面盤名用冒號 `Never Alone: Duets`，MB 與 Billboard 榜上用連字號／斜線（`NEVER ALONE/DUETS`）**——**三形都該進 `queryAlias`。**",
+    "src": "https://api.discogs.com/releases/3780032"
+   },
+   {
+    "f": "⚠ **「Duets」是逐軌換人的企劃盤，十軌十組不同的客座——不是一支樂團。** **Discogs 3780032 的逐軌 `Featuring` credit**：**1〈Da Boardwalk〉Harvey Mason（vibraphone）**；**2〈Reunited〉Earl Klugh（acoustic guitar）**；**3〈Wind Beneath My Strings〉Tom Scott（alto sax／bass clarinet）＋ Najee（soprano sax）＋ Gerald Albright（tenor sax）**；**4〈Soulful Strut〉Ray Parker Jr.（guitar）＋ Kirk Whalum（tenor sax）**；**5〈People Get Ready〉Ali-Ollie Woodson（lead vocals）＋ The Katinas（backing vocals）**；**6〈Knighttime〉Joe Sample（keyboards）＋ Wilton Felder（tenor sax）＋ George Bohanon（trombone）**；**7〈Where Is the Love〉Howard Hewett ＋ Jasmin（lead vocals）**；**8〈Let's Start Again〉Tim Owens ＋ Sharlotte Gibson（lead vocals）**；**9〈End to a Perfect Day〉Najee（flute）**；**10〈Short and Suite〉George Duke（clavinet）＋ Alphonse Mouzon（drums）＋ Sheila E.（percussion）＋ Kevin Toney（piano/organ）＋ Jeff Lorber（mini moog）**。**製作人逐軌不同**（Cornelius Mims 1/6/8、Ollie Brown 2/4/5/7 並掛 Executive-Producer、Fortune Reed 3、Cedric ＋ Victor Caldwell 5、James Allen 8、Paul Jackson Jr. 3/6/8-10）。**鼓手也逐軌不同**（Ollie Brown 2/4/7、Jim Blair 5、Harvey Mason 6、Michael White 9、Alphonse Mouzon 10，另有 1、8 是程式鼓）。",
+    "src": "https://api.discogs.com/releases/3780032"
+   },
+   {
+    "f": "⚠ **十軌不是一個錄音室錄的，notes 逐軌把錄音地點列出來**：逐字「All Tracks Recorded at **Mankind Recording Studios**／Track 2 Recorded at **Studio A, Detroit**／Track 5 Recorded at **Father's Image, Brentwood, TN**／Track 6 Recorded at **Trax Recording, Studio Cats**／Track 8 Recorded at **C-Note Music Studios**／Track 9 Recorded at **Fat Planet Studios**／Track 10 Recorded at **Trax Recording Studio**／All tracks mixed at **Devonshire Recording Studio**」。**另有一整段「Courtesy of」聲明，逐字列出十二家外借客座的唱片公司**（Arista／Atlantic／Caliber／Columbia／EMI／GRP／Ichiban／Motown／Sweet Basil-Pony Canyon／Tenacious／Verve／Warner Brothers）——**客座橫跨十二家公司，是「企劃盤」最直接的證據。**",
+    "src": "https://api.discogs.com/releases/3780032"
+   },
+   {
+    "f": "⚠ **作曲：十軌裡只有四首是 Jackson 自己寫的，其餘是靈魂樂與流行的老歌。** Discogs 逐軌 `Written-By`：Jackson 自己四首（〈Da Boardwalk〉〈Knighttime〉〈End To A Perfect Day〉〈Short And Suite〉）＋ 合寫一首（〈Wind Beneath My Strings〉，與 Fortune Reed、Todd Burns）；外來曲：**〈Reunited〉Dino Fekaris／Freddie Perren**（Peaches & Herb 1979 冠軍曲）、**〈Soulful Strut〉Eugene Record／Sonny Sanders**（Young-Holt Unlimited 1968）、**〈People Get Ready〉Curtis Mayfield**、**〈Where Is The Love〉Ralph MacDonald／William Salter**（Roberta Flack & Donny Hathaway 1972）、**〈Let's Start Again〉Cornelius Mims／Michael Norfleet／Terri McFaddin**。",
+    "src": "https://api.discogs.com/releases/3780032"
+   },
+   {
+    "f": "**紙本：榜位 ＋ 評介 ＋ 現場快訊三則都有。** **(1) 榜位**：**Billboard `TOP CONTEMPORARY JAZZ ALBUMS` 1996-06-01 p34 以 `NEW` 進榜第 23 名**（逐字「23 NEW **PAUL JACKSON, JR. BLUE NOTE 37630 /CAPITOL NEVER ALONE/DUETS**」，同榜第 22 是 David Sanborn《The Best Of David Sanborn》）。**(2) 評介**：**Billboard 1996-07-27 p81 的 JAZZ 評介欄逐字「PAUL JACKSON JR./Never Alone—Duets／PRODUCERS various／Blue Note 37630／Veteran L.A. session guitarist Paul Jackson Jr. swims in diverse waters on a set that features instrumental and vocal collaborations with such jazz favorites as Tom Scott, Earl Klugh, Joe …」**——**「PRODUCERS various」逐字印在評介抬頭上，與 Discogs 的逐軌製作人名單吻合。** **(3) 現場**：同年另一頁的圖說逐字「**Guitars All Around.** Paul Jackson Jr. stands with fellow guitarists after his recent performance at **B.B. King's Blues Club in Los Angeles.** The gig served as the launch point for \"Never Alone/D[uets]\"」——**發片現場在洛杉磯的 B.B. King's Blues Club。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-06-01.pdf"
+   },
+   {
+    "f": "⚠ **日版是 1997 年的「Reissue」，比美版晚一年半（第 1063／1066／1133 條的固定動作已跑）。** **Discogs 17897173：`PCCY-00867`，廠牌 `Sweeca`（Pony Canyon 旗下），Japan，`format` 逐字 `CD, Album, **Reissue**`，`released` 欄 `1997-11-16`**，℗© 同樣是 Pony Canyon ＋ Sweet Basil。**另有日版宣傳盤 31913164（同號、同日）與 2008 年的 `PCCY-50053`（12779188，`CD, Album, Reissue, Remastered`）。**→ **雖然著作權人是日本公司，實體首發仍然是美國 1996-05-14 的 Blue Note 版，日本自己的盤要到一年半後才出、而且標明是再發。**",
+    "src": "https://api.discogs.com/releases/17897173"
+   },
+   {
+    "f": "**店面（第 254 條三種查法跑完，結論查無）＋ 跨卡**：**(1) `search` term＝盤名／藝人＋盤名，`us`／`gb`／`jp` 三市場皆 `resultCount: 0`。** **(2) 藝人目錄 `lookup`（artistId `7583067`，`entity=album`，`limit=200`，`us`）回 26 張，含 Blue Note 的《The Power of the String》(724521843, 2001) 與《Still Small Voice》(723551810, 2003)，**但沒有《Never Alone - Duets》**。** **(3) 以 catno／barcode 反查亦無。**→ ⚠ **Apple 店面查無，走固定無來源狀態**（策展層與 `apple-candidates.md` 都記「目錄裡找不到」，本層以三種查法復核，結論相同）。 **跨卡**：實掃卡池 27,546 列，`Paul Jackson` 只命中本張自己一列——**池中 0 張 Paul Jackson, Jr.**。⚠ **十軌的軌名掃全卡池卡名一筆命中**：〈People Get Ready〉↔ The Impressions《People Get Ready》1965（seed）——**曲名＝別張碟的卡名，不是內容重複**（第 1181／1192 條第六種盲區）。⚠ **catno `CDP 7243 8 37630 2 3` 反查只回一筆（美版），`PCCY-00867` 只回日版兩筆，無重複 RG**（第 1274 條）。⚠ **同碟客座 Earl Klugh 與 Joe Sample 在池中有卡，但依第 855／861 條只是旁證。**",
+    "src": "https://itunes.apple.com/lookup?id=7583067&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十軌、十組客座、七個錄音室、十二家唱片公司出借樂手——Billboard 的評介抬頭直接印「PRODUCERS: various」，因為這張碟的製作人也是逐軌換的",
+   "洛杉磯最忙的錄音室吉他手第一次以自己的名字進 Blue Note，作法是把每一軌都變成一組二重奏：Harvey Mason、Earl Klugh、Joe Sample、George Duke、Sheila E. 輪番上陣"
+  ],
+  "sound": "十軌的二重奏企劃盤，Paul Jackson, Jr. 的電吉他是唯一貫穿全碟的聲音，其餘每一軌都換人。編制隨客座變：第一軌是 Harvey Mason 的鐵琴，第二軌是 Earl Klugh 的原聲吉他，第三軌一次來三支薩克斯（Tom Scott、Najee、Gerald Albright），第六軌是 Joe Sample 的鍵盤加 Wilton Felder 的次中音，末軌〈Short and Suite〉擠進五位客座（George Duke 的 clavinet、Alphonse Mouzon 的鼓、Sheila E. 的打擊、Kevin Toney 的鋼琴與管風琴、Jeff Lorber 的 mini moog）。三軌有主唱。曲長都在四到六分之間，沒有長曲。四首是 Jackson 自己寫的，其餘是〈Reunited〉〈Soulful Strut〉〈People Get Ready〉〈Where Is the Love〉這類靈魂樂老歌的重編。十軌散在七個錄音室錄，最後在 Devonshire 統一混音。",
+  "keyTracks": [
+   "Soulful Strut",
+   "Short and Suite",
+   "People Get Ready"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1996 成立，本層未改判。** (1) **榜位（第二層）**：**Billboard `TOP CONTEMPORARY JAZZ ALBUMS` 1996-06-01 p34 以 `NEW` 進榜第 23**，廠牌欄逐字 `BLUE NOTE 37630 /CAPITOL`。 (2) **評介**：**Billboard 1996-07-27 p81 的 JAZZ 評介欄逐字印「Blue Note 37630」。** (3) **MB first-release-date `1996-05-14`（帶完整月日）**，與 release 9a28a460 的 `date` 一致。 (4) **Discogs 美國原壓 3780032 的 `released` 欄逐字 `1996-05-14`——與 MB 逐日吻合，這是本組少見的「兩個獨立資料庫給出同一個完整日期」。** (5) **盤面 ℗© 1996**（notes 逐字「℗ © 1996 Pony Canyon Inc., Sweet Basil Inc. under exclusive license to Blue Note Records」）。**無反向證據。**⚠ **日版 `PCCY-00867`（Sweeca）的 `released` 是 `1997-11-16`、`format` 欄逐字帶 `Reissue`**——**比美版晚一年半且自稱再發，首發地確定是美國**（第 1063／1066／1133 條的固定動作已跑）。⚠ **Cash Box 1996 查 `37630`／`Paul Jackson` 零命中。**",
+  "notes": "**覆核策展層：rgMbid 5da53e6c／唯一 release 9a28a460／掛名 `Paul Jackson, Jr.`（帶逗號與 Jr.）／年份 1996／`['jazz']` 不加 soul／rnb（第 1239 條），全部成立。**｜⚠⚠ **本層補上策展層沒寫、卻是本張身分核心的一件事：著作權人是日本的 Pony Canyon 與 Sweet Basil，Blue Note 只是獨家授權的發行方**（盤面 notes 逐字「under exclusive license to Blue Note Records」）。**正文不得寫成「Blue Note 製作的專輯」。**｜⚠⚠ **編制不是樂團而是逐軌換人的二重奏企劃**（第 1069／1189／1195 條那一類的反面：**這裡沒有常設團員可寫，寫任何一位客座時都必須說明他只在哪一軌**）。**十組客座、七個錄音室、十二家公司的「Courtesy of」聲明**，**連製作人與鼓手都逐軌不同**——**Billboard 評介抬頭逐字就是 `PRODUCERS various`。**｜⚠ **軌名一處不一致**：**MB 第 3 軌寫〈Wind Beneath My Strings〉，Discogs 盤面打成〈Wild Beneath My Strings〉**——**以 MB／Billboard 的 `Wind` 為準**（Discogs 是錯字）。⚠ **盤名三形**：MB `Never Alone - Duets`（連字號）／盤面 `Never Alone: Duets`（冒號）／Billboard 榜 `NEVER ALONE/DUETS`（斜線）——**三形都要進 `queryAlias`。**｜⚠ **載體**：**MB 一筆、Discogs 四筆（美 1996／日 1997 正式＋宣傳／日 2008），全部是 CD——沒有黑膠、沒有卡帶**（第 1064 條）。｜⚠⚠ **缺封面（CAA RG 層本層三試 `redirect: follow` 皆真 404，非 5xx，第 589a 條已滿足）。替代來源建議兩段寫**：**(甲) 美國原壓 `3780032`（US 1996 `CD, Album`），共 2 圖，`images[0]` 是 `primary`，但只有 300×300**——**與 c-151《The Master》那一格同形，偏小。** **(乙) 若要 600 級：日本 1997 Sweeca `PCCY-00867`（Discogs `17897173`），共 3 圖，`images[0]` 是 `primary`、600×540**（封面藝術與美版同一張）。**主線自行取捨，本層建議優先 (乙)。**｜**試聽查無（第 254 條三種查法跑完）**：`search`（`us`／`gb`／`jp`）`resultCount: 0`；**藝人目錄 `lookup`（artistId 7583067，26 張）沒有本張**，只有他後來的兩張 Blue Note 盤《The Power of the String》(724521843, 2001)、《Still Small Voice》(723551810, 2003)——**依第 646 條不得共用 collectionId**；catno／barcode 反查亦無。**→ 明寫查無，走固定無來源狀態。**｜**撞陳列**：**池中 `Paul Jackson, Jr.` 0 列**；**十軌軌名掃全卡池卡名一筆命中（〈People Get Ready〉↔ The Impressions 1965 同名碟），同名不同物**（第 1181／1192 條）；**catno 反查無重複 RG**（第 1274 條）。⚠ **客座裡的 Earl Klugh、Joe Sample、George Duke、Harvey Mason 在池中都有卡**——**依第 855／861 條（錄音室是必要條件、共同樂手只是旁證），不構成撞陳列。**⚠ **與 c-153 b 退表第 1 筆的 Earl Klugh《Love Songs》同年同廠牌，但那是合輯、本張是新錄音，兩者不相干。**｜**曲風**：`['jazz']`（第 1239 條）——**碟進的是 Billboard 的 TOP CONTEMPORARY JAZZ ALBUMS、評介登在 JAZZ 欄**，**〈Soulful Strut〉〈People Get Ready〉〈Where Is the Love〉三首靈魂樂曲目是選曲不是曲風。**｜非選輯：十軌皆為本次新錄音（分散在七個錄音室、1996 年同一製作週期），`secondary-types` 空、Discogs 美版 `format` 乾淨。"
  }
 ]
