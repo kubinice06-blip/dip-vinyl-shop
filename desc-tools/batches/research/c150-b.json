@@ -1,0 +1,190 @@
+[
+ {
+  "key": "desc2:Michel Petrucciani|Playground",
+  "artist": "Michel Petrucciani",
+  "album": "Playground",
+  "facts": [
+   {
+    "f": "release-group 54e064d5 回問（inc=artist-credits）：title「Playground」、artist-credit「Michel Petrucciani」（Person 2b75141c，country FR，disambiguation「FR | jazz」）、first-release-date **1991**、primary-type Album、**secondary-types 空**。release 端點轄下 **2 筆**：**74a899be（1991 US Official CD 11 軌，Blue Note CDP 7 95480 2，barcode 077779548026）＝原盤**；396b0c83（**BR Official CD 11 軌，同目錄號，date 欄整個空白**）。⚠ **第 817 條核過：那筆巴西版不是首發**——Discogs 的巴西條目 13487456 年份欄也是空的，MB 這一筆沒有任何日期可以拿來當首發日。MB 十一軌與時長：September Second 4:44／Home 5:29／P’tit Louis 4:34／Miles Davis’ Licks 4:28／Rachid 3:26／Brazilian Suite #3 2:34／Play School 3:05／Contradictions 3:00／Laws of Physics 4:47／Piango, Pay the Man 1:54／Like That 1:41。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=54e064d5-70e7-3786-b142-a3d60c0fea14&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **美國原壓 Discogs 11548709（CDP 7 95480 2，released 1991-06-06）的逐軌 credits 推翻策展層兩處**：(1) **鼓不是「Omar Hakim 與 Aldo Romano 分擔」**——盤面寫 **Omar Hakim 打第 1–4、6–9、11 軌，Aldo Romano 只打第 5 軌〈Rachid〉一首**；(2) **十一軌不是「全部 Petrucciani 自己的曲」**——**第 9 軌〈Laws of Physics〉的 Written-By 是 Adam Holzman**，Petrucciani 寫的是第 1–8、10、11 軌。其餘 credits：Anthony Jackson bass、Steve Thornton percussion、Petrucciani「Piano (Steinway), Synthesizer」＋編曲＋製作、**Adam Holzman「Synthesizer, Programmed By [Synthesizer]」＋ Co-arranger**、製作 Michel Petrucciani ＋ Eric Kressmann、錄音 Tom Swift、母帶 José Rodriguez。**錄音與 overdub 在 Clinton Recording Studios（紐約），混音在 Master Sound Studios（Astoria, NY），母帶 Sterling Sound——三個不同的場所，不是一間**。盤上題獻：「This record is dedicated to my father Tony Petrucciani who taught me everything I know.」美術指導 Carol Friedman、封面攝影 John Fenton、設計 Patrick Roques。",
+    "src": "https://api.discogs.com/releases/11548709"
+   },
+   {
+    "f": "**Billboard 1991-07-20 p94 New Releases（發行事實那一層）**：「JAZZ/NEW AGE …… **MICHAEL PETRUCCIANI Playground CD Bluenote 95480 CA 95480** …… CECIL TAYLOR Jazz Advance CD Bluenote/Capitol 84462」——⚠ **紙本把 Michel 誤植成 Michael（第 509c 條），Cash Box 同一個錯**；**只列 CD 與卡帶（CA），沒有黑膠欄**，與這一段「CD 是主要載體」一致。同期 p31 有 Blue Note 整版廣告（目錄號被 OCR 成「B2'54 -95480」）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-20.pdf"
+   },
+   {
+    "f": "**Billboard 1991-07-27 p96 爵士評介原文**：「MICHEL PETRUCCIANI Playground PRODUCERS: Michel Petrucciani & Eric Kressmann Blue Note 95480 — French-born pianist cuts a fairly effective row between traditional stylings and contemporary flavors on **fourth Blue Note album**. **Quintet session** features a significant amount of synthesizer work, but, to Petrucciani's credit, **machinery never dilutes his lyrical touch**. \"September Second,\" \"Home,\" and \"Miles Davis' Licks\" wouldn't sound out of place in any jazz radio format.」⚠ **Billboard 說這是他在 Blue Note 的第四張，策展層 `why` 寫「第五張」——兩說並陳，正文不要寫序數**；⚠ **Billboard 也說是「quintet session」（五人）**，與盤面 credits（Petrucciani／Jackson／Hakim／Thornton／Holzman 五人常設＋Romano 一軌客座）相符。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-27.pdf"
+   },
+   {
+    "f": "**榜位在兩刊都查到，而且都是當代爵士榜（第 879 條）**：Billboard **TOP CONTEMPORARY JAZZ ALBUMS** 1991-08-03 以 NEW 進榜 → 08-17 第 12；**Cash Box 的當代爵士榜本層另外查到兩週**——**1991-08-03 p8 第 28 名**、**1991-08-17 p13 第 17 名**（印「PLAYGROUND (Bluenote 95480) MICHAEL PETRUCCIANI」，同樣誤植 Michael）。**本張不在任何一張 TOP JAZZ ALBUMS 上。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1991/CB-1991-08-17.pdf"
+   },
+   {
+    "f": "**Billboard 1992-02-15 p40 報導法國 Victoires de la Musique 獎項名單，最佳爵士專輯是本張**：「…… jazz album, `Playground\" by Michel Petrucciani (**Dreyfus**) ……」——⚠ **括號裡的廠牌是 Dreyfus 不是 Blue Note**，那是 Petrucciani 在法國的授權發行方；**正文若要提這個獎，不得寫成「Blue Note 得獎」。** 這是本組唯一一筆獎項證據。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-02-15.pdf"
+   },
+   {
+    "f": "**日本盤晚於美版**：Discogs 26817293 是 Blue Note（東芝 EMI）**TOCJ-5609，released 1991-08-23，Promo**，十一軌與美版相同——**比美版 1991-06-06 晚兩個半月**。⚠ **這與本組其他幾張（Standard Gonz／Landmarks／The Blessing／Here And Now）日本先發的方向相反，逐張核過才寫**（第 817 條）。另有 1999 年 TOCJ-6312、2013 年 TOCJ-95038 兩次日本再發與 1998 年歐洲 box set 7243 4 97604 2 4，皆非首發。",
+    "src": "https://api.discogs.com/releases/26817293"
+   },
+   {
+    "f": "**店面（第 254 條三種查法，逐軌核過）**：Apple us `search`「Michel Petrucciani Playground」命中 **724707690**，`lookup` 回 **11 軌，曲名與時長逐軌與 MB／Discogs 原盤相符**（September Second 4:44／Home 5:29／P'tit Louis 4:34／Miles Davis' Licks 4:28／Rachid 3:26／Brazilian Suite #3 2:34／Play School 3:05／Contradictions 3:00／Laws of Physics 4:47／Piango, Pay the Man 1:54／Like That 1:41），**十一軌全部有 previewUrl**；`collectionName`「Playground (with Adam Holzman)」帶副標、與盤面不同；`releaseDate` 1991-01-01 是 placeholder（第 484 條）；℗ 1991 Blue Note Records；artwork 檔名帶 barcode `00077779548057`。**探測層判 unavailable，本層以 `search`＋`lookup` 兩種查法撈回。**",
+    "src": "https://itunes.apple.com/lookup?id=724707690&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 一九九一年七月的評語只有一句話要緊：「機器從來沒有稀釋掉他的抒情觸鍵」——那一年 Petrucciani 把 Miles Davis 的鍵盤手找來全程彈合成器，自己也坐到合成器前面",
+   "十一首裡只有十首是他寫的：第九軌〈Laws of Physics〉的作者欄印的是合成器手 Adam Holzman——而鼓手 Aldo Romano 整張只打了第五軌〈Rachid〉一首"
+  ],
+  "sound": "十一軌的電聲鋼琴專輯，不是鋼琴三重奏。Anthony Jackson 的電貝斯與 Omar Hakim 的鼓（第 1–4、6–9、11 軌）把底鋪成穩定的律動，Steve Thornton 的打擊在上面補色，Adam Holzman 全程彈合成器並掛共同編曲；Aldo Romano 只在第 5 軌〈Rachid〉換上來打一首。Petrucciani 自己也同時彈 Steinway 與合成器。開場〈September Second〉四分三刻、〈Home〉五分半是全碟最長的兩首，後半的〈Piango, Pay the Man〉與〈Like That〉都不到兩分鐘，像是收尾的小品。〈Miles Davis' Licks〉的標題與 Holzman 的來歷互相呼應。錄音與疊錄在紐約 Clinton Recording Studios，混音在 Astoria 的 Master Sound，母帶在 Sterling Sound。",
+  "keyTracks": [
+   "September Second",
+   "Home",
+   "Miles Davis' Licks"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1991 成立，本層未改判，而且比策展層多站一層。** 依本段階序：(1) **發行事實**——**Billboard 1991-07-20 p94 New Releases「MICHAEL PETRUCCIANI Playground CD Bluenote 95480 CA 95480」**（release notice，第 612 條那一層）；(2) **榜位兩刊各自獨立**——Billboard TOP CONTEMPORARY JAZZ ALBUMS 1991-08-03 NEW→08-17 第 12，**Cash Box 當代爵士榜 1991-08-03 p8 第 28→08-17 p13 第 17（本層新查到的第二刊榜位）**；(3) **Discogs 美國原壓 11548709 的 `released` 是完整日期 1991-06-06**；(4) MB frd 1991。⚠ **第 879 條再證：本張只上當代爵士榜，TOP JAZZ ALBUMS 上完全沒有它。** ⚠ **日本 TOCJ-5609 是 1991-08-23，比美版晚**，首發地＝美國，`year` 不受影響。⚠ **Apple 的 1991-01-01 是 placeholder，不得當日期用**（第 484 條）。⚠ **1992-02-15 的法國獎項報導只說明它在法國由 Dreyfus 發行，不影響 1991 的首發年。**",
+  "notes": "**覆核策展層**：rgMbid 54e064d5／原盤 74a899be／目錄號 CDP 7 95480 2／掛名 `Michel Petrucciani`／年份 1991 **全部成立**。｜⚠⚠ **本層擋下正文風險兩處（第 609／972 條與本段派工信第 3 點的形狀）**：(1) **鼓手分工**——盤面寫死 **Omar Hakim 第 1–4、6–9、11 軌，Aldo Romano 只有第 5 軌〈Rachid〉**，**策展層的「分擔鼓」會被寫成兩人平分，錯**；(2) **作曲歸屬**——**第 9 軌〈Laws of Physics〉是 Adam Holzman 寫的**，策展層寫的「十一軌全是 Petrucciani 自己的曲」不成立。｜⚠ **編制人數**：Billboard 評介寫 **quintet**，盤面常設五人（Petrucciani／Jackson／Hakim／Thornton／Holzman），**正文寫「五人編制」可，寫「四重奏」或「三重奏」都錯**；**Holzman 是合成器與共同編曲，不是側人鋼琴。**｜⚠ **序數有兩說**：Billboard 1991-07-27 寫「fourth Blue Note album」，策展層寫「第五張」——**正文不要寫序數**。｜⚠ **獎項的廠牌欄**：法國 Victoires 的名單印的是 **Dreyfus**（法國授權方），不是 Blue Note。｜**錄音場次**：本層查到的只有「Clinton Recording Studios（基本軌與 overdub）／Master Sound Astoria（混音）／Sterling Sound（母帶）」三個場所，**盤面沒有印錄音日期**，**正文不得編造錄音日、也不得寫成「一天錄完」**。｜**跨卡**：本組 Rubalcaba 兩張、Lovano 一張同屬 1991 年 Blue Note 線，各自不同場，正文不得互抄；⚠ **Petrucciani 1993 年的《Promenade With Duke》（Blue Note 80590，見 Billboard 1993-05-22 p69 爵士榜）不是本張**（第 738 條）。｜**封面已有**：CAA RG 層 3 圖、front 有、來源 release 是原盤 74a899be ✓，本層未動。｜**試聽**：**本層撈回，`串流採信 724707690`**（11 軌逐軌相符、全部有 preview）。｜非選輯：單一藝人的原創錄音室盤，MB secondary-types 空、Discogs format 欄 `CD, Album`。"
+ },
+ {
+  "key": "desc2:Andrew Hill|But Not Farewell",
+  "artist": "Andrew Hill",
+  "album": "But Not Farewell",
+  "facts": [
+   {
+    "f": "release-group 6883812d 回問：title「But Not Farewell」、artist-credit「Andrew Hill」（Person ede80a9f）、first-release-date **1991**、primary-type Album、secondary-types 空，轄下 **2 筆** release：**356b51c4（1991 US Official CD 7 軌，Blue Note，MB 的 catalog-number 欄登 `CDP 7 95971 2`，barcode 077779497126）**、2d4686b5（**XW** Official **Digital Media** 7 軌，Capitol Records，barcode 0602577127236，**無日期**，2019 數位重發）。MB 七軌與時長：Westbury 7:20／But Not Farewell 7:12／Nicodemus 8:28／Georgia Ham **17:19**／Friends 5:44／Sunnyside 3:44／Gone 13:32。⚠ **MB 自己的 barcode 077779497126 對應的是 94971 不是 95971**——MB 欄位自相矛盾（第 570 條同型）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6883812d-9af1-31d3-93ef-6369e90acdd0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **美國原壓 Discogs 5647938（Blue Note **CDP 7 94971 2**）的逐軌 credits 揭出策展層漏掉的整個編制結構**：**Greg Osby「Alto Saxophone, Soprano Saxophone」只在第 1–5 軌**、**Robin Eubanks「Trombone」只在第 1–4 軌**、**Lonnie Plaxico「Bass」只在第 1–4 軌**、**Cecil Brooks III「Drums」只在第 1–4 軌**、Andrew Hill 鋼琴與全部作曲。**換算下來：第 1–4 軌是五重奏（Hill／Osby／Eubanks／Plaxico／Brooks）、第 5 軌〈Friends〉是 Hill 與 Osby 的二重奏、第 6–7 軌〈Sunnyside〉〈Gone〉是鋼琴獨奏。** ⚠ **策展層的「五重奏／四重奏盤」沒有提 Robin Eubanks，也沒有提獨奏段落。** 錄音：**Clinton Recording Studio, NYC，1990-07-12（第 1–4 軌）、1990-07-13（第 5 軌）、1990-09-16（第 6、7 軌）——三天、分三批，不是一次錄完**；錄音師 **Jim Anderson（第 1–5 軌）與 Gene Curtis（第 6、7 軌）分工**；製作 Michael Cuscuna。",
+    "src": "https://api.discogs.com/releases/5647938"
+   },
+   {
+    "f": "**Billboard 1991-05-11 p86 爵士評介原文（本張紙本層唯一的一則，本層逐字核過）**：「ANDREW HILL But Not Farewell PRODUCER: Michael Cuscuna **Blue Note 94971** — **Quintet date** from this unique, uncompromising pianist/composer (**assisted by saxophonist Greg Osby and trombonist Robin Eubanks**) is reinforced by sturdy themes and Hill's atypical, seemingly disjointed solo style that continues to surprise after repeated listenings. Best of a solid set include the sweet, lilting waltz \"Westbury\"; the melancholy, nearly arhythmic \"Friends\"; **the gospel-flavored piano solo \"Sunnyside\"**; and elaborate, idiosyncratic pieces \"Nicodemus\" and \"Georgia Ham.\"」——⚠ **紙本印的目錄號是 94971，與盤面一致、與 MB 的 95971 不一致**；⚠ **評介也點名 Robin Eubanks**（策展層漏掉的那一位）；⚠ **「the gospel-flavored piano solo」直接印證〈Sunnyside〉是鋼琴獨奏**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-05-11.pdf"
+   },
+   {
+    "f": "**日本盤有完整日期，本層新查到**：Discogs 13597110 是 Blue Note（東芝 EMI）**TOCJ-5292，released 1991-05-24，Promo**，七軌與美版相同，盤上的錄音日期註記與美版逐字相同（1990-07-12／07-13／09-16）；內頁「twelve page booklet includes two sets of liner notes, one in English and one in Japanese」。**1991-05-24 的日本盤 ＋ 1991-05-11 的美國評介，兩邊互相夾住 1991 年 5 月上下的上市**。",
+    "src": "https://api.discogs.com/releases/13597110"
+   },
+   {
+    "f": "**Cash Box 1992-03-14 p16 的爵士專欄裡有一則 Blue Note 老闆 Bruce Lundvall 的親筆便條，直接點名本張的作者**：專欄作者先前寫過美國大廠對前衛爵士「gun-shy」，「**Blue Note boss Bruce Lundvall took umbrage to this and sent me the following note: \"Lee: Blue Note is not just mainstream and we're not gun-shy! eg: Don Pullen, Geri Allen, Jack De Johnette, Greg Osby, Andrew Hill, Joe Lovano, Kevin Eubanks, Ralph Peterson, etc. Best, Bruce.\"**」——⚠ **這一則同時點名本組四張卡的主角（Andrew Hill／Don Pullen／Jack DeJohnette／Joe Lovano）**，是這一段最有用的一手廠牌材料；**Billboard 1991-07-06 p54 另有一份完整的 Blue Note 在籍名單**（Bireli Lagrene／Stanley Jordan／John Scofield／Dianne Reeves／Charnett Moffett／Eliane Elias／Michel Petrucciani／Joe Lovano／**Gonzalo Rubalcaba**／Greg Osby／Geri Allen／Benny Green／**Andrew Hill**／Charlie Haden／McCoy Tyner／Don Pullen／Bobby Watson／Kevin Eubanks／**George Adams**／Stanley Turrentine），**本組七張的主角都在上面。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1992/CB-1992-03-14.pdf"
+   },
+   {
+    "f": "**店面（第 254 條，本層覆核，未改動）**：Apple us `lookup` 1438593414 回 **7 軌＝原盤軌數**，`collectionName`「But Not Farewell」、artistName「Andrew Hill」，releaseDate 1991-01-01 是 placeholder（第 484 條），copyright「A Blue Note Records Release; ℗ 1991 Capitol Records, LLC」，**artwork 檔名帶 barcode `00602577127236`——那是 MB 第二筆（2019 數位重發 2d4686b5）的 barcode，不是 1991 年 CD 的**；⚠ **軌數相同、曲目相同，是同一張碟的數位版，可用**。",
+    "src": "https://itunes.apple.com/lookup?id=1438593414&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "七軌是三種編制：前四軌五個人、第五軌只剩鋼琴與薩克斯風兩個人、最後兩軌 Hill 一個人坐在琴前——Billboard 的評語把〈Sunnyside〉直接叫作「帶福音味的鋼琴獨奏」",
+   "同一張碟錄了三次：一九九〇年七月十二日、七月十三日、九月十六日，連錄音師都換了人——盤名叫《But Not Farewell》，是對「告別」的否定"
+  ],
+  "sound": "七軌、三種編制的鋼琴主導盤。第 1–4 軌是五重奏：Greg Osby 的中音與高音薩克斯風、Robin Eubanks 的長號、Lonnie Plaxico 的貝斯、Cecil Brooks III 的鼓，Hill 那種錯位、像是要脫節卻總能扣回來的獨奏語法把主題拉開——〈Georgia Ham〉超過十七分鐘，是全碟最長的一首；〈Nicodemus〉八分半。第 5 軌〈Friends〉只剩 Hill 與 Osby 兩個人，慢、幾乎沒有固定節拍。第 6–7 軌〈Sunnyside〉與〈Gone〉是鋼琴獨奏，前者三分三刻、帶福音味，後者十三分半。七軌全部是 Hill 自己寫的曲。錄音在紐約 Clinton Recording Studio，分 1990 年 7 月 12、13 日與 9 月 16 日三天。",
+  "keyTracks": [
+   "Westbury",
+   "Georgia Ham",
+   "Sunnyside"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1991 成立，本層未改判。** (1) **同期紙本**：**Billboard 1991-05-11 p86 爵士評介，印「Blue Note 94971」**；(2) **實體盤面**：Discogs 美國原壓 5647938（1991）、卡帶 B4-94971、**日本 TOCJ-5292 的 `released` 是完整日期 1991-05-24**（本層新查到的一層）；(3) MB frd 1991。**三層一致。** ⚠ **錄音 1990-07-12／07-13／09-16 只寫正文，正文不得把它寫成「1990 年的專輯」。** ⚠ **紙本層薄**：1991–92 兩刊**兩張爵士榜全年都沒有本張**（第 879 條兩張都查過），發行事實那一層（新片欄／廠牌廣告）也沒查到——**本張站 1991 靠的是「評介週＋原壓群」，依第 1053 條的判準這只夠維持既有年份、不足以推翻任何東西，但本張也沒有任何相反的年份主張**。⚠ **Apple 的 1991-01-01 是 placeholder，artwork 的 barcode 是 2019 年數位版的**，兩者都不能當日期證據。",
+  "notes": "**覆核策展層**：rgMbid 6883812d／原盤 356b51c4／掛名 `Andrew Hill`（沿用池中 15 列）／年份 1991 成立；**目錄號改判 `CDP 7 95971 2` → `CDP 7 94971 2` 本層獨立證實三次**（Discogs 5647938 盤面、日本 TOCJ-5292 的同碟註記、**Billboard 1991-05-11 p86 評介印的「Blue Note 94971」**），**MB 自己的 barcode 077779497126 也對應 94971**——**MB 的 95971 是錯的，採 94971。**｜⚠⚠ **本層擋下策展層一處編制漏列（第 609 條的形狀）**：**策展層的編制只寫了 Osby／Plaxico／Brooks 三個人，漏掉 Robin Eubanks 的長號**——**Discogs 盤面 credits 與 Billboard 評介兩處都有他**，**正文不得把本張寫成「Osby 與 Hill 的四重奏」。**｜⚠⚠ **編制不是全碟一致，這是本張最容易寫錯的地方**：**第 1–4 軌五重奏、第 5 軌〈Friends〉是 Hill＋Osby 二重奏、第 6–7 軌〈Sunnyside〉〈Gone〉是鋼琴獨奏**（Discogs 的 tracks 欄寫死，Billboard 評介也把〈Sunnyside〉叫作 piano solo）。**正文若要提編制，必須說明它是分段的。**｜**錄音場次查實**：**Clinton Recording Studio, NYC，1990-07-12（1–4 軌）、07-13（5 軌）、09-16（6、7 軌）三天**，錄音師 Jim Anderson（1–5）與 Gene Curtis（6、7）；**製作 Michael Cuscuna**（唯一 Producer credit，策展層寫的沒錯）。｜**撞陳列**：七軌曲名與池中 15 列 Andrew Hill 卡、與 c-149 b 的《Eternal Spirit》（1989，Hutcherson／Reid／Riley）**零重疊**，班底也全不同，兩卡 risk 互指成立。⚠ **Greg Osby 同時出現在本組《Earth Walk》（1991-06 錄）**，**不同場、不同團，正文不得互扯。**｜**封面已有**：CAA RG 層 8 圖、front 有、來源 release 是原盤 356b51c4 ✓。｜**試聽已 ready**：Apple 1438593414，**本層逐軌核過 7 軌＝原盤軌數，未動。**｜非選輯：單一藝人、七軌全為 Hill 原創，MB secondary-types 空、Discogs format 欄 `CD, Album`。"
+ },
+ {
+  "key": "desc2:The Ellis Marsalis Trio|Ellis Marsalis Trio",
+  "artist": "The Ellis Marsalis Trio",
+  "album": "Ellis Marsalis Trio",
+  "facts": [
+   {
+    "f": "release-group 1a04ac38 回問：title「Ellis Marsalis Trio」、artist-credit「The Ellis Marsalis Trio」（**Group** 0e2f8683）、first-release-date **1991-04**、primary-type Album、secondary-types 空，**轄下只有 1 筆** release：d5db4779（**1991-04，country XW**，Official CD 11 軌，Blue Note CDP 7 96107 2，barcode 077779610723）。MB 十一軌與時長：Syndrome 5:03／Emily 5:51／Just Squeeze Me 5:57／Little Niles 6:35／Limehouse Blues 4:13／A Moment Alone 4:33／Lil' Boy Man 4:44／Jitterbug Waltz 7:53／The Garden 5:30／Chapter One 5:22／I Thought About You 2:21。⚠ **country=XW（全球）不是實際首發地**，依第 994 條回 Discogs 補全世界視野（見下）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1a04ac38-ea71-3357-95e4-f23cca68c186&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本張的編制與錄音日期策展層完全沒有，本層從日本盤 Discogs 11858648（Somethin' Else **TOCJ-5523**，released **1991-07-24**）的 credits 查到**：**Ellis Marsalis 鋼琴、Robert Hurst 貝斯、Jeff \"Tain\" Watts 鼓**——**不是紐奧良本地班底，是當時 Branford／Wynton Marsalis 樂團的節奏組**。盤上註記：「**Recorded direct to Sony PCM 1630 on March 18, 1990 at RCA Studios, NYC**」——**一天錄完、1990 年 3 月 18 日、直接錄到 Sony PCM 1630 數位母帶**；母帶 **CBS Studios, New York**（Tim Geelan），錄音 Patrick Smith，製作 **Delfeayo Marsalis**、製作統籌 Dave Torkanowsky、executive producer Hitoshi Namekata、內頁文 **Lolis Eric Elie**、封面攝影 Rick Olivier、美術指導 Kaoru Taku。⚠ **美國原壓 Discogs 11208764 的 credits 欄只有製作人與 executive producer，一個樂手都沒有列**——只看美版會以為查不到編制。",
+    "src": "https://api.discogs.com/releases/11858648"
+   },
+   {
+    "f": "**美國原壓 Discogs 11208764（Blue Note CDP 7 96107 2，US 1991）**：format 欄 `CD, Album`（**不是 Reissue 也不是 Compilation**，第 1051 條第一步查法通過），廠牌欄同時掛 **Somethin' Else Records 的 ℗ 與 ©**。逐軌作曲：Syndrome／A Moment Alone／The Garden／Chapter One 是 **Ellis Marsalis 自己的四首**；Just Squeeze Me 與 Jitterbug Waltz 是 **Fats Waller**；Little Niles 是 **Randy Weston**（詞 Jon Hendricks）；Lil' Boy Man 是紐奧良鼓手 **James Black**；Emily 是 Johnny Mandel／Mercer；Limehouse Blues 是 Philip Braham／Douglas Furber；I Thought About You 是 Van Heusen／Mercer。",
+    "src": "https://api.discogs.com/releases/11208764"
+   },
+   {
+    "f": "**Billboard TOP JAZZ ALBUMS 的進榜與在榜，本層逐期核過**：**1991-06-22 p58 以 NEW 進榜第 20 名**（榜上印「ELLIS MARSALIS TRIO BLUE NOTE 96107 ELLIS MARSALIS TRIO」，同一格的第 21 名是 **GONZALO RUBALCABA BLUE NOTE 95478/CAPITOL DISCOVERY: LIVE AT MONTREUX**——本批 a 組那張）→ **1991-07-20 p31 第 13 名** → 之後續在榜到 **1992 年 5 月**（1992-03-14／03-21／04-04／04-11／04-18／04-25／05-02 各期的爵士榜都還有它，Cash Box 1992-05-02 p22 亦然）。**在榜將近一年，是本組榜齡最長的一張。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-06-22.pdf"
+   },
+   {
+    "f": "⚠ **同名盤與同名團的兩個陷阱，本層都踩過並排除**：(a) **Billboard 1992-02-15 p43 另有一則評介「ELLIS MARSALIS Heart Of Gold PRODUCER: Delfeayo Marsalis Columbia 47509」**——**同一個製作人、同一位鋼琴家，但那是 1992 年的 Columbia 碟，不是本張**（第 738 條）；(b) **Billboard 1991-03-09 p100 另有「DAVID \"FATHEAD\" NEWMAN; ELLIS MARSALIS; CORNELL DUPREE Return To The Wide Open Spaces PRODUCER: Jim Yanaway Amazing 1021」**——那是 1990 年的 Amazing Records 合作盤，**Apple 的候選清單 `1794344069` 回的就是它**。**兩者都不得拿來寫本張。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-06-20.pdf"
+   },
+   {
+    "f": "**店面（第 254 條三種查法跑滿，結論查無）**：(1) Apple us `search`「Ellis Marsalis Trio」→ 回 **170916305《Twelve's It》1998 Sony 12 軌** 與 155663759《Joe Cool's Blues》1994——**兩張都不是本盤**；(2) `search`「Ellis Marsalis Syndrome」（用本盤第 1 軌曲名）→ **0 筆**；(3) 換國別 **jp 與 gb 兩個店面各查一次**→ 回的仍是《Twelve's It》（jp 另有同碟的第二個 id 211412470）與《Joe Cool's Blues》。**三種查法都沒有 Blue Note 那一版，判查無。** ⚠ **第 528／707／709 條在本張最危險**：**盤名與掛名幾乎同字，`Ellis Marsalis Trio` 就是《Twelve's It》的 artistName**——**研究層與上架都不可拿 12 軌的《Twelve's It》冒充本張的 11 軌。**",
+    "src": "https://itunes.apple.com/search?term=Ellis%20Marsalis%20Trio&country=us&media=music&entity=album&limit=12"
+   }
+  ],
+  "hookCandidates": [
+   "紐奧良鋼琴教父的 Blue Note 首張領班盤，節奏組卻是從兒子的樂團借來的：Robert Hurst 的貝斯、Jeff「Tain」Watts 的鼓，製作人是另一個兒子 Delfeayo",
+   "一九九〇年三月十八日，紐約 RCA Studios，一天錄完、直接錄進 Sony PCM 1630 的數位母帶——碟卻等到隔年春天才上市，然後在 Billboard 爵士榜上待了將近一年"
+  ],
+  "sound": "十一軌的鋼琴三重奏，一天錄完。Ellis Marsalis 的觸鍵乾淨、句法克制，Robert Hurst 的貝斯與 Jeff「Tain」Watts 的鼓（當時 Branford／Wynton 樂團的節奏組）把速度推得比一般紐奧良鋼琴盤更靠近現代咆勃。四首自己的曲（Syndrome／A Moment Alone／The Garden／Chapter One）與 Fats Waller 的兩首（Just Squeeze Me、Jitterbug Waltz）、Randy Weston 的〈Little Niles〉、紐奧良鼓手 James Black 的〈Lil' Boy Man〉交錯。〈Jitterbug Waltz〉七分五十三秒是全碟最長的一首，〈Little Niles〉六分半，收在只有兩分二十一秒的〈I Thought About You〉。錄音直接進 Sony PCM 1630 數位母帶。",
+  "keyTracks": [
+   "Syndrome",
+   "Jitterbug Waltz",
+   "Lil' Boy Man"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1991 成立，本層未改判；但要注意 MB 的 `1991-04` 不是錄音月。** (1) **Discogs 美國原壓 11208764 標 1991**；(2) **Billboard TOP JAZZ ALBUMS 1991-06-22 p58 以 NEW 進榜第 20**（獨立的一層）；(3) MB frd **1991-04**（帶月，但 MB 那筆 country 是 XW）；(4) **日本 Somethin' Else TOCJ-5523 的 `released` 是完整日期 1991-07-24**——**比美版晚三個月，首發地＝美國**（本層新查到的一層；策展層說「未查到日本盤」，其實有，只是在後面）。⚠⚠ **錄音年是 1990 不是 1991**：**盤面寫死「on March 18, 1990 at RCA Studios, NYC」**，**MB 的 1991-04 與錄音日無關（不是第 484 條那一型），但正文絕不可把 1990-03-18 寫成發行日、也不可把 1991 寫成錄音年。** ⚠ **兩刊 1991–92 沒有本張的新片欄或評介**（逐期查過 96107 與「ELLIS MARSALIS」，命中的評介都是 1990 年 Amazing 的《Return To The Wide Open Spaces》與 1992 年 Columbia 的《Heart Of Gold》，**都不是本張**）——**發行事實那一層缺，年份靠榜位＋原壓群＋日本盤日期。**",
+  "notes": "**覆核策展層**：rgMbid 1a04ac38／原盤 d5db4779／目錄號 CDP 7 96107 2／掛名 `The Ellis Marsalis Trio`（MB credit，Group 0e2f8683；池中 0 列，新字串）／年份 1991 **全部成立**。｜⚠⚠ **本層補上策展層完全空白的編制與錄音場次**：**Ellis Marsalis p／Robert Hurst b／Jeff \"Tain\" Watts d**，**1990-03-18 一天錄完，RCA Studios, NYC，直接錄到 Sony PCM 1630**，母帶 CBS Studios NY（Tim Geelan）、錄音 Patrick Smith、製作 **Delfeayo Marsalis**、製作統籌 Dave Torkanowsky、executive producer Hitoshi Namekata、內頁文 Lolis Eric Elie、封面攝影 Rick Olivier。**來源是日本盤 Discogs 11858648 的 credits——美國原壓 11208764 的 credits 欄裡一個樂手都沒有，只看美版會以為查不到。**｜⚠ **「不是紐奧良本地班底」是本張最值得寫的一件事**：Hurst 與 Watts 當時是 Branford／Wynton Marsalis 的節奏組，**正文不得寫成「與紐奧良老搭檔錄的」。**｜⚠ **策展層說「未查到早於 1991-04 的日本盤」——本層查到了，但方向相反**：TOCJ-5523 是 **1991-07-24**，**晚於美版**。**第 1060 條「Discogs 也只有一筆」的說法在本張不成立。**｜⚠⚠ **店面查無，而且是本組最危險的一張**（第 528／707／709 條）：**Apple 三種查法回的是同一個團 1998 年 Sony 的《Twelve's It》（12 軌）**，**盤名與掛名幾乎同字**——**上架時絕不可採信，走固定無來源狀態。**｜⚠ **封面已有**：CAA RG 層 3 圖、front 有、來源 release 是原盤 d5db4779 ✓。｜**撞陳列**：十一軌與池中 5 張 Wynton Marsalis seed **零重疊**；⚠ **〈Just Squeeze Me〉與本組 Duke Ellington《1969 All-Star White House Tribute》第 6 軌同曲名**（Ellington 作品），**兩場完全不相干**（1990 紐約錄音室三重奏 vs 1969 白宮現場全明星），**正文不得互指**；〈Jitterbug Waltz〉〈Limehouse Blues〉與池中各卡亦僅同曲名。｜**同批關聯**：本組 Lovano《Landmarks》、Keezer《Here And Now》、Bergonzi《Standard Gonz》、DeJohnette《Earth Walk》、Adams《Old Feeling》、Rubalcaba《The Blessing》、Elias《Fantasia》的 executive producer 都是 **Hitoshi Namekata**（Somethin' Else 線的指紋，第 1029 條），**是同一條出資線、不是同一批錄音，正文不得寫成系列作。**｜非選輯：format 欄 `CD, Album`、MB secondary-types 空、十一軌是同一場次的新錄音。"
+ },
+ {
+  "key": "desc2:Joe Lovano|Landmarks",
+  "artist": "Joe Lovano",
+  "album": "Landmarks",
+  "facts": [
+   {
+    "f": "release-group 4346dfb7 回問：title「Landmarks」、artist-credit「Joe Lovano」（Person f3f7cd82）、first-release-date **1991-06-04**、primary-type Album、secondary-types 空，轄下 2 筆：**886c20de（1991-06-04 US Official CD 10 軌，Blue Note CDP 7 96108 2，barcode 077779610822）＝美版原壓**、38d5b552（2002 GB Official CD 10 軌，Blue Note，**無目錄號**，barcode 0077779610822，2002 英國再發）。MB 十軌與時長：The Owl and the Fox 3:06／Primal Dance 6:18／Emperor Jones 5:14／Landmarks Along the Way 5:44／Street Talk 2:32／**Here And Now 5:42**／I Love Music 5:19／Where Hawks Fly 6:13／Thanksgiving 6:35／Dig This 8:29。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4346dfb7-b9b1-3b93-a7ed-710389825ee1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**美國原壓 Discogs 15685673（CDP 7 96108 2）盤面註記與 credits**：「**Recorded on August 13 & 14, 1990 and mixed on September 25 & 26, 1990 at Sorcerer Sound Studios, NYC**」「© ℗ 1991 Somethin'Else Records, a Division of Toshiba EMI Ltd.」（授權給 Blue Note Records）。編制：**Joe Lovano 次中音薩克斯風、John Abercrombie 吉他、Kenny Werner 鋼琴、Marc Johnson 貝斯、Bill Stewart 鼓——五個人**；**製作是 Joe Lovano 與 John Scofield 兩人掛名，Scofield 不在樂手欄裡（他不彈這張）**；executive producer Hitoshi Namekata、錄音 Joe Ferla、助理 Judy Kirschner、母帶 Yoshio Okazaki、內頁文 Bob Blumenthal、封面／封底攝影 Shigeru Uchiyama、美術指導 Kaoru Taku、glass mastering Sanyo U.S.A.。⚠ **作曲欄**：九軌是 Lovano 自己的，**第 7 軌〈I Love Music〉是 Hale Smith 與 Emil Boyd 兩人合寫**（策展層只寫了 Hale Smith）。⚠ **末軌〈Dig This〉盤面標 8:41、MB 標 8:29**，兩邊差十二秒。",
+    "src": "https://api.discogs.com/releases/15685673"
+   },
+   {
+    "f": "⚠⚠ **首發其實在日本，比美版早三個半月——策展層與 MB 都只有美版**：Discogs 14580052 是 Somethin' Else **TOCJ-5530，released 1991-02-22（完整日期）**，十軌與美版相同，盤面的錄音註記逐字相同。**美版 886c20de 是 1991-06-04。** ⚠ **第 1060 條「MB `release-count` 是 1／2 不等於世界上只有這幾版」在本張再證一次**；`year` 兩邊同為 1991，不受影響，**但首發地是日本、不是美國。** 另有歐版 3575833（1991，`0777 7961082 2`）、美版再壓 4458736、美國卡帶 B4-96108（14582279，Promo）。",
+    "src": "https://api.discogs.com/releases/14580052"
+   },
+   {
+    "f": "**Billboard 1991-06-29 p80 爵士評介原文**：「JOE LOVANO Landmarks **PRODUCERS: John Scofield & Joe Lovano** Blue Note 96108 — Tenorist Lovano, who has put in notable appearances on recent albums by guitarist Scofield and Charlie Haden's Liberation Music Orchestra, **gets a welcome shot at leadership**. Showing off a style bearing the unmistakable influence of **Coltrane and Rollins**, Lovano spearheads a **quintet including guitarist John Abercrombie, pianist Ken Werner, and rhythm aces Marc Johnson and Bill Stewart** that features free blowing with plenty of bite. A fine stanza by one of today's most able sax men.」——**評介把「製作人是 Scofield、吉他是 Abercrombie」兩件事並列印出來，與盤面一致。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-06-29.pdf"
+   },
+   {
+    "f": "**Billboard TOP JAZZ ALBUMS 的在榜，本層逐期核過**：**1991-07-06 以 NEW 進榜** → **1991-07-20 p31 第 22 名**（榜上印「JOE LOVANO BLUE NOTE 96108/CAPITOL LANDMARKS」）→ 08-03／08-17／08-31／09-14／09-21 各期續在榜。**是 TOP JAZZ ALBUMS 不是 CONTEMPORARY**（第 879 條）。⚠ **同一段時間 Lovano 的名字也出現在別的碟上**：Charlie Haden《Dream Keeper》的評介把他列為大編制樂手之一（本批 a 組那張）——**第 738 條，不得混用。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-20.pdf"
+   },
+   {
+    "f": "**Billboard 1991-07-06 p54 的 Blue Note 陣容報導**把本張的主角放進廠牌名單：「Artists now on the Blue Note roster include Bireli Lagrene, Stanley Jordan, John Scofield, Dianne Reeves, Charnett Moffett, Eliane Elias, Michel Petrucciani, **Joe Lovano**, Gonzalo Rubalcaba, Greg Osby, Geri Allen, Benny Green, Andrew Hill, Charlie Haden, McCoy Tyner (only as a solo pianist), Don Pullen, Bobby Watson, Kevin Eubanks, George Adams, and Stanley Turrentine.」——**本組七張碟的主角都在這一份名單上**（Petrucciani／Lovano／Rubalcaba／Hill／Pullen／Adams／Elias）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-06.pdf"
+   },
+   {
+    "f": "**店面（第 254 條，本層覆核，未改動）**：Apple us `lookup` 743844629 回 **10 軌＝原盤軌數**，`releaseDate` **1991-06-04 與 MB frd 逐日相符**（⚠ 第 431 條：兩者很可能同源於同一份數位母帶登錄，不算兩個獨立來源），℗ 欄是 **2007 Blue Note Records**（再發權利年，不是首發年），artwork 檔名帶 barcode `00077779610853`。",
+    "src": "https://itunes.apple.com/lookup?id=743844629&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "製作人欄印著 John Scofield，樂手欄裡卻沒有他——吉他是 John Abercrombie。Scofield 那幾年把 Lovano 從自己的樂團裡推出來當領班，這張就是那一推的結果",
+   "碟在日本先上市：一九九一年二月二十二日的 Somethin' Else TOCJ-5530，美國的 Blue Note 版要等到六月四日"
+  ],
+  "sound": "十軌的五重奏，次中音在前。Lovano 的音色粗、氣聲多，樂評當時直接說聽得出 Coltrane 與 Rollins；John Abercrombie 的吉他不鋪和弦，多半與薩克斯風平行走線，Kenny Werner 的鋼琴留白，Marc Johnson 與 Bill Stewart 把節奏放得鬆。開場〈The Owl and the Fox〉只有三分零六秒，末軌〈Dig This〉超過八分半，中間〈Primal Dance〉〈Where Hawks Fly〉〈Thanksgiving〉都在六分上下，是全碟吹得最開的幾首。十軌裡九軌是 Lovano 自己寫的，只有〈I Love Music〉出自 Hale Smith 與 Emil Boyd。錄音 1990 年 8 月 13、14 日，混音 9 月 25、26 日，都在紐約 Sorcerer Sound Studios。",
+  "keyTracks": [
+   "Primal Dance",
+   "Where Hawks Fly",
+   "Dig This"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1991 成立，本層未改判，但首發地要改寫成日本。** (1) **同期紙本**：**Billboard 1991-06-29 p80 爵士評介（印 Blue Note 96108）**＋**1991-07-06 TOP JAZZ ALBUMS 以 NEW 進榜、07-20 p31 第 22**；(2) **實體盤面**：**日本 Somethin' Else TOCJ-5530 的 `released` 是完整日期 1991-02-22**、美版 Discogs 15685673 與 MB 皆 **1991-06-04**、歐版 3575833 亦 1991；(3) MB frd 1991-06-04。**三層一致，`year` 1991 穩。** ⚠⚠ **首發地更正**：**日本 1991-02-22 早於美國 1991-06-04 三個半月**，策展層與 MB 都只看到美版。**`year` 不變（同年），但正文不得寫成「一九九一年六月在美國首發」式的單一敘述。** ⚠ **錄音 1990-08-13／14、混音 1990-09-25／26 只寫正文，不得寫成 1990 年的專輯。** ⚠ **Apple 的 releaseDate 1991-06-04 與 MB 同日，第 431 條，不算第二個獨立來源；Apple 的 ℗2007 是再發權利年。**",
+  "notes": "**覆核策展層**：rgMbid 4346dfb7／原盤 886c20de／目錄號 CDP 7 96108 2／年份 1991／**掛名 `Joe Lovano`（不動 seed 的 `Joe Lovano Quartet`、不合併）全部成立**。｜⚠ **本層擋下策展層一處作曲歸屬**：**第 7 軌〈I Love Music〉是 Hale Smith 與 Emil Boyd 兩人合寫**，不是 Hale Smith 一人。｜⚠⚠ **首發地要改**：**日本 TOCJ-5530（1991-02-22）早於美版 CDP 7 96108 2（1991-06-04）三個半月**（本層新查到，第 1060 條的補全動作策展層在本張沒做完）。｜⚠ **製作人與吉他手不是同一人，這是本張最容易寫錯的一處**：**John Scofield 掛製作、不彈吉他；吉他是 John Abercrombie**——**Billboard 1991-06-29 的評介與盤面 credits 兩邊都寫死了。**｜**錄音場次查實**：**1990-08-13／14 錄、1990-09-25／26 混音，全在紐約 Sorcerer Sound Studios**，錄音師 Joe Ferla、母帶 Yoshio Okazaki、內頁文 Bob Blumenthal。｜⚠ **軌長兩形（小）**：末軌〈Dig This〉盤面 8:41、MB 8:29。｜⚠⚠ **撞陳列（曲名 vs 盤名）**：**第 6 軌〈Here And Now〉與本組 Geoffrey Keezer 的專輯《Here And Now》同名不同物**，兩卡 risk 互指，**正文不得互扯**。**十軌與池中 seed 的 `Joe Lovano Quartet —— Tones Shapes & Colors` 零軌目重疊**（已逐軌比對曲名表）。⚠ **Lovano 後來在 Blue Note 的《From The Soul》（98636）與《Universal Language》（99830，Billboard 1993-06-05 p44 爵士榜 NEW）都不是本張**（第 738 條）。｜**廠牌背景（寫作層可直接引用）**：**Billboard 1991-07-06 p54 的 Blue Note 在籍名單**與 **Cash Box 1992-03-14 p16 Bruce Lundvall 的親筆便條**（「Blue Note is not just mainstream and we're not gun-shy! eg: Don Pullen, Geri Allen, Jack De Johnette, Greg Osby, Andrew Hill, **Joe Lovano**, Kevin Eubanks, Ralph Peterson」）兩則都點名 Lovano。｜**封面已有**：CAA RG 層 4 圖、front 有、來源 release 是原盤 886c20de ✓。｜**試聽已 ready**：Apple 743844629，本層核過 10 軌＝原盤軌數，未動。｜非選輯：單一藝人、同一場次的新錄音，MB secondary-types 空、Discogs format 欄 `CD, Album`。"
+ }
+]

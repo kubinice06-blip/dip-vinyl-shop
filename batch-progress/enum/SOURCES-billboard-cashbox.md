@@ -770,3 +770,33 @@ curl -sSL https://www.worldradiohistory.com/Archive-All-Music/Cash-Box-Magazine.
 **到此合計覆蓋：Billboard 1955→1996 全年，Cash Box 1960-11→1996-11（停刊）。**
 
 - ⚠ 2026-09-18（c-150 研究 a 組實測）：**`billboard-bn-1991-1992q1-ocr.txt.gz` 只寫了一個 `########` 標頭**，後面 64 期的頁全部串在一起、**無法逐期定位**。**要逐期引用請改用 `billboard-bn-1991-1992-ocr.txt.gz`（103 個標頭，格式正確）**；q1 那份仍可當第二套關鍵字表用（第 704 條）。
+
+## 2026-09-18 再追加（c-150 **b 組**研究層自抓：**Billboard 2002 年全年**）
+
+**本棒有一張碟的年份被策展層從 1992 改判到 2002**（Duke Ellington《1969 All-Star White House Tribute》，
+Blue Note `7243 5 35249 2 0`），**repo 裡 2002 年兩刊都沒有**（Cash Box 1996-11 停刊，Billboard 只掃到 1996），
+因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2002-ocr.txt.gz` | **1.7 MiB 壓縮 / 3.8 MiB 原文** | **2002-01-12 → 2002-12-28，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **397** | **BB-2002-01-05（索引頁沒有這一期，2002 年第一期就是 01-12）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。** 末行有 `######## MISSING …`。
+- **檔案雖然只有 3.8 MiB（低於 8 MiB 的壓縮門檻），仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致。
+- **關鍵字集只有 16 個詞**（`blue note`／`35249`／`white house tribute`／`all-star white house`／`duke ellington`／
+  `ellington`／`top jazz albums`／`top jall albums`／`traditional jazz`／`contemporary jazz`／`bill kirchner`／
+  `clark terry`／`michael cuscuna`／`blue nole`／`slue note`／`jazz albums`）
+  ——**是為了一張碟抓的，查別的 2002 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **2002 年的路徑與檔名（本棒實測）**：
+**目錄是 `Billboard/00s/2002/`（不是 `2000s/`）**，檔名**全年單純 `BB-YYYY-MM-DD.pdf`，51 期零例外**，
+`Billboard-`／`BB-…-N` 兩種備援一次都沒命中。**索引頁仍照第 1091／1127 條先抓**
+（`https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm`，**要加 `-L`**）。
+
+⚠ **2002 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 2002 仍成立）：`TOP JAZZ ALBUMS` 與
+`TOP CONTEMPORARY JAZZ ALBUMS`，**`Jazz → Jall` 的 OCR 形變到 2002 年還在**（`TOP JAll ALBUMS`），
+且 **2002 年的榜是 Nielsen SoundScan 銷售榜、名次欄的數字 OCR 幾乎讀不出來**——
+**判在不在榜可以，判第幾名要人工數列。**
+
+**到此合計覆蓋：Billboard 1955→1996 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
