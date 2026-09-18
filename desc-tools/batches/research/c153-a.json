@@ -394,5 +394,181 @@
   "status": "full",
   "yearVerified": "**卡單 1995 成立，本層未改判。** MB frd 1995 ＝ Discogs 美／歐／加／日七筆 `year` 欄全 1995 ＝ **Billboard 1995-07-01 p47 Blue Note 廣告 `COMING SOON` 欄逐字列號 `32073`** 三層同向；**本層再補一層時間下界：Billboard 1996-01-13 p72 的葛萊美入圍名單已把本張列為當屆作品**（入圍資格期在 1995 年內），**1996-01-27 p19 的廣告同向**。⚠ **Apple 的 `releaseDate 1994-01-01` 是回填到錄音年的年頭，不是發行日**（第 484／1141 條）；⚠ **錄音 1994-11／12 只寫正文，不得寫成 1994 年的碟。**⚠ **紙本的盤名字串幾乎查不到**：廣告只印 `ELAINE ELIAS 32073`（**錯拼＋無盤名**），**用盤名查會整則漏掉**（第 1134／1188 條）。",
   "notes": "**覆核策展層：rgMbid e88961d9／catno 正規號 `CDP 7243 8 32073 2 9`（MB 只登俱樂部號 `D 104094`）／掛名收攏成裸名 `Eliane Elias`／年份 1995／第 5 軌是併軌 全部成立。**｜⚠ **一處要刪**：策展層 `why` 的「**全程沒有疊錄**」**盤面沒有這句話、本層查無出處**——**寫作層不要用**；盤面真正寫的是聲道配置（左 Elias／右 Hancock）與兩地兩次錄音。｜⚠ **一處要補**：**獨奏部分彈的是 Vladimir Horowitz 的 Steinway**（盤面逐字），**策展層漏了**。｜⚠ **二重奏與獨奏的軌號要寫對**：**二重奏 3、6、8、9、10、11（六軌，與策展層說的「六首二重奏」數目相符）**、**獨奏 1、2、4、5、7（五軌）**。｜**掛名**：MB RG 是裸名、Discogs／Apple 商品名多印 `Eliane Elias & Herbie Hancock`——**沿用池中既有的 `Eliane Elias`**，雙掛名進 queryAlias；⚠ **另有一個紙本變體 `Elaine Elias`（Billboard 與 Cash Box 至少四處），也要進上架比對的變體清單**。｜**撞陳列逐張結論**：(1) 11 軌的曲名與全池 21,972 列逐條比過，**零卡名撞擊**；(2) **Herbie Hancock 池中另有多張卡**，**本張不是他的領班盤，但也不是純側人（是對等的雙鋼琴）**——**正文必須寫出他、掛名不動**；⚠ **策展層說「與本組《Mr. Bow-Tie》的 Hancock 是相反形狀、兩卡 risk 互指」——那句作廢：Hancock 根本不在《Mr. Bow-Tie》上**（見該卡 notes）；(3) 池中 `Eliane Elias` 另有 c-148《Illusions》／c-149《So Far So Close》／c-150《Eliane Elias Plays Jobim》《Fantasia》，**與本張曲目零重疊**；**〈Asa Branca〉與《Plays Jobim》是不同企劃、不同作曲者（Luiz Gonzaga vs Jobim），正文不得互抄**。｜**封面**：CAA RG 層 3 圖（來源＝美國原盤 a8c177cc）✓，**不在缺封面四張之列**；⚠ **備用的 Discogs 832752 偏弱：7 圖但 `images[0]` 的 primary 只有 300×293**。"
+ },
+ {
+  "key": "desc2:Cæcilie Norby|Cæcilie Norby",
+  "artist": "Cæcilie Norby",
+  "album": "Cæcilie Norby",
+  "facts": [
+   {
+    "f": "release-group 707f5cfa 覆核：title「Cæcilie Norby」、artist-credit「Cæcilie Norby」（75b54a14 Person／DK／「Danish jazz and rock singer」／1964-09-09）、first-release-date **1995-11-01**、primary-type Album、secondary-types 空。轄下有 **XE 1995**（15122298，`EMI 8322222`，barcode 724383222223）與 **GB 1995-11-01**（b9ad6f2f）等；**美版 `CDP 7243 8 32222 2 3` 是後到的**。**同名專輯，`selfTitled` 成立。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=707f5cfa-ed68-3fae-a207-91728d6d49a7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **策展層只寫「錄音分在哥本哈根與紐約兩地」，本層補到確切日期與逐軌編制**：Discogs 歐版原壓 1593740 的插頁逐字「Recorded (..) at **Focus Recording in Copenhagen on September 17th and 19th 1994**. **New York overdubs recorded at Sound on Sound Recording, Inc, on October 2nd 1994.**」；盤上另印「℗ & © 1995 by **EMI - Medley, DK**／Printed in Holland」。**製作人 Niels Lan Doky、共同製作 Norby 本人、混音 James Farber、執行製作 Nick Foss。**",
+    "src": "https://api.discogs.com/releases/1593740"
+   },
+   {
+    "f": "逐軌編制（Discogs 的 credits 掛在每一軌上）：常設是 **Lennart Ginman 低音提琴**（除第 12 軌外全在）與 **Billy Hart 鼓**（第 5、12 軌不在）；鋼琴三人分軌——**Niels Lan Doky（2、5、6、8、10 軌）、Lars Jansson（4、7、9、12 軌）、Ben Besiakov（11 軌，兼 Hammond M100）**；客座**只上一到兩軌**：**Randy Brecker 小號只在第 2、5 軌**、**Scott Robinson 次中音只在第 4、11 軌**、**Rick Margitza 高音薩克斯只在第 12 軌**、**Jacob Fischer 吉他在 1、6、9 軌**、**Jacob Andersen 打擊只在第 5 軌**；**第 3 軌〈Girl Talk〉有一組「Talking Girls」（六人，含 Norby 自己）**；**第 12 軌〈So It Is〉只有人聲＋Lars Jansson 鋼琴＋Margitza 高音薩克斯**。",
+    "src": "https://api.discogs.com/releases/1593740"
+   },
+   {
+    "f": "**Billboard 1996-01-20 p47「Global Music Pulse」（丹麥，Nicholas George）**逐字：「As the first Danish jazz artist to release an album in her own right on EMI's prestigious Blue Note label, Caecilie Norby is reaching international ears…in Japan she was voted **top female jazz vocalist in the influential Swing Journal**. The album 'Caecilie Norby,' which was **produced by and features Vietnamese/Danish pianist Niels Lan Doky**, was **recorded in Copenhagen and New York**…A classically trained singer, the 32-year-old Norby…made her name as the vocalist and co-composer in jazz-rock group **Frontline** before becoming a founding member of rock group **One Two**. Her unusual breadth of experience is complemented on the current album by such international jazz stars as **Randy Brecker (trumpet), Billy Hart (drums), and Rick Margitza (soprano saxophone)**.」⚠ **紙本用的是無連字的 `Caecilie`。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-01-20.pdf"
+   },
+   {
+    "f": "⚠ **年份的反向證據本層逐條查過，沒有一條站得住**：(a) **Apple 的 `releaseDate 1994-01-01`**——**1994 是錄音年（1994-09／10），這是回填到錄音年的年頭**（第 484／1141 條）；(b) **Discogs 全目錄反查（`q=Cæcilie Norby`，25 筆）沒有任何 1994 年的實體條目**，她名下最早的四筆全是 1995（歐 1593740／日 TOCP-8639 8112033／美 12519250／歐再壓 15796170），**下一張《My Corner of the Sky》是 1996 歐／1997 美**（Billboard 1997-05-31 p83 有評介，`Blue Note 53422`）。",
+    "src": "https://api.discogs.com/releases/1593740"
+   },
+   {
+    "f": "店面：⚠ **`ready` 不等於可用——本層抽核抓到市場差異。** `lookup?id=695534278`（**us**）回的 collection 有 `trackCount 12` 但 **songs 陣列 0 筆、零 previewUrl**；**改成 `country=dk` 或 `country=de` 才回 12 首、12 首全部有 previewUrl**，曲序與原盤一字不差（Wild Is the Wind／A Brand New Life／Girl Talk／I've Been to Town／Summertime／By the Time I Get to Phoenix／All You Could Ever Want／Gentle Is My Love／A Feather in the Wind／Night Road／Man's Got Soul／So It Is）。**串流採信 695534278，但下游抓預覽時必須用歐洲市場（dk／de），用 us 會抓到空陣列。**",
+    "src": "https://itunes.apple.com/lookup?id=695534278&entity=song&limit=60&country=dk"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡客人都只來一兩首：Randy Brecker 兩軌、Scott Robinson 兩軌、Rick Margitza 只有最後那一首——最後一首台上也只剩三個人",
+   "丹麥第一個簽進 Blue Note 的爵士歌手，來路卻是爵士搖滾團 Frontline 與搖滾團 One Two 的主唱"
+  ],
+  "sound": "1994 年 9 月 17、19 兩天在哥本哈根 Focus Recording 錄底，10 月 2 日在紐約 Sound on Sound 補錄，隔年由 EMI-Medley 丹麥出、掛 Blue Note。十二軌從〈Wild Is the Wind〉〈Summertime〉〈By the Time I Get to Phoenix〉這類歌本與流行曲，走到她自己填詞的〈A Brand New Life〉（曲是 Randy Brecker）、〈All You Could Ever Want〉（曲是 Chick Corea）、〈Night Road〉（曲是 Niels Lan Doky）與收尾的〈So It Is〉（曲是 Don Grolnick）。Lennart Ginman 的低音提琴與 Billy Hart 的鼓是底，鋼琴由 Doky、Lars Jansson、Ben Besiakov 三人分軌，客座只上一兩首——Randy Brecker 的小號兩軌、Scott Robinson 的次中音兩軌、Rick Margitza 的高音薩克斯只在最後一軌。曲子都短，最長的〈I've Been to Town〉5:21。只有 CD。",
+  "keyTracks": [
+   "Wild Is the Wind",
+   "Girl Talk",
+   "So It Is"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 成立，本層未改判，並把反向證據逐條打掉。** MB frd **1995-11-01** ＝ Discogs 歐／日／美四筆 `year` 全 1995 ＝ 盤面 **℗ & © 1995 by EMI - Medley, DK** ＝ **Billboard 1996-01-20 p47 的丹麥專題**（行文是「the current album」、回顧語氣，**不是新片欄，依第 1053 條不能當發行日，但可以當「1995 年已在市面」的下界**）。⚠ **反向證據兩條都查過**：(a) **Apple dk／de 的 `releaseDate 1994-01-01` 是回填到錄音年（1994-09／10 錄音）**；(b) **Discogs 全目錄 25 筆反查沒有任何 1994 年的條目**。⚠ **首發地 XE／歐洲**（EMI-Medley 丹麥製作、Printed in Holland），**美版後到**——**正文不得寫成美國發行的碟**。",
+  "notes": "**覆核策展層：rgMbid 707f5cfa／catno `EMI 8322222`／新掛名 `Cæcilie Norby`（MB 同字串僅一個實體）／年份 1995／country XE／`selfTitled` 全部成立。**｜⚠ **本層補齊策展層沒寫的錄音日期與逐軌編制**：**哥本哈根 1994-09-17／19 ＋ 紐約補錄 1994-10-02**；**客座全部只上一到兩軌**（Brecker 2 軌、Robinson 2 軌、Margitza 1 軌、Andersen 1 軌）——**這正是第 1069／1189／1195 條「把只上一兩軌的客座寫成常設團員」的高風險形狀，本卡先把軌號寫死**。⚠ **末軌〈So It Is〉只有三個人**（人聲＋鋼琴＋高音薩克斯），**正文不得寫成全編制收尾**。｜⚠ **`æ` 的上架風險**（策展層已記，本層覆核並補一條）：**Billboard 印的是 `Caecilie`**、Apple 部分市場亦然——**`æ`／`ae` 兩形都要掃，而且掛名與盤名是同一個字串（同名專輯），兩個欄位都要**。｜**撞陳列逐張結論**：(1) **第 1 軌〈Wild Is The Wind〉＝池中 seed `Nina Simone —《Wild Is the Wind》`(1966) 的卡名**、**第 5 軌〈Summertime〉＝池中 seed `MFSB —《Summertime》`(1976) 的卡名**、**第 6 軌〈By The Time I Get To Phoenix〉＝池中 seed `Injury Reserve —《By the Time I Get to Phoenix》`(2021) 的卡名**——**三處都是第 1181／1192 條第六種盲區，逐張比過全是同曲名不同錄音（第三處連曲子都不是同一首），零重疊**；(2) **Randy Brecker、Billy Hart 都只是客座／側人**，池中另有相關卡，**正文不得寫成他們的碟**；⚠ **Billy Hart 同時是同組 Kevin Hays《Go Round》的鼓手**，**兩卡 risk 可互指**；(3) 池中 `Norby`／`Caecilie` 三形**零列**，本卡是第一張。｜**封面**：CAA RG 層有圖 ✓，**不在缺封面四張之列**；備用 Discogs 1593740 有 **17 圖、`images[0]` 是 600×591 的 primary**（本組備用來源最好的一筆）。"
+ },
+ {
+  "key": "desc2:Denise Jannah|Different Colours",
+  "artist": "Denise Jannah",
+  "album": "Different Colours",
+  "facts": [
+   {
+    "f": "release-group b4cdac8e 覆核：title「Different Colours」、artist-credit「Denise Jannah」、first-release-date **1996**、primary-type Album、secondary-types 空。轄下 2 筆：**e2ab1d48（1996 NL Official CD 11 軌，⚠ `label-info` 整個空、只有 barcode 724385472923）**、ccaf2608（2002 無國別 CD 11 軌，Blue Note，**軌目與 1996 逐軌相同、是同一張的再壓**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b4cdac8e-c596-48b0-b8d0-9d2272bad0cf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **列舉檔的 `note`「BN 首發 2002，原盤 1996 可能他廠（再發）」是錯的，本層覆核策展層的更正成立**：**Discogs 荷蘭原壓 2150285 的廠牌欄逐字就是 `Blue Note 7243 8 54729 2 3`**，country Netherlands、year 1996、**format 欄乾淨的 `CD, Album`（無 `Reissue`、無 `Compilation`）**、barcode 7 24385 47292 3。**1996 年就是 Blue Note 荷蘭首發**；**MB 那筆 label-info 空白不等於「不是 Blue Note」**（第 642 條的反面）。",
+    "src": "https://api.discogs.com/releases/2150285"
+   },
+   {
+    "f": "⚠⚠ **Discogs 這一筆的 credits 欄整個是空的（`extraartists` 0 筆），策展層與本層的第一輪都卡在這裡；編制是本層從荷蘭的音樂資料庫補到的**：**Muziekweb（荷蘭國家音樂圖書館）的條目**列出班底——**Bert van den Brink（鋼琴、管風琴）、Peter Tiehuis（吉他）、Marc van Wageningen（貝斯）、Bart Fermie（打擊）、Martin Verdonk（打擊）**，另有**Leonardo Amuedo（吉他）與 Hans Dulfer（次中音薩克斯）**兩位客座。**同一個條目把發行月記成 1996 年 10 月。**⚠ **這批是荷蘭本地的一線樂手，不是她 1995 年首作的紐約班底——兩張碟的班底完全不同，正文不得互抄。**",
+    "src": "https://www.muziekweb.nl/en/Link/JFX1770/Different-colours"
+   },
+   {
+    "f": "⚠ **策展層留給研究層的那一題（1997 年的《Different Colours - One Rainbow》是不是同一張）本層核完了：不是。** Discogs 4811324 的 format 欄是 **`CD, Single`**、只有 **3 軌**（1.〈Different Colours - One Rainbow〉4:12／2.〈Have A Little Faith In Me〉4:15／3.〈You Always Make Me Smile〉4:39），廠牌是 **`Emi 7243 8 72185 2 9`（不是 Blue Note）**，盤上註記逐字「**1997 Europees jaar tegen racisme**」（1997 歐洲反種族主義年）。**＝ 那是為活動做的單曲，主打曲不在專輯裡；後兩軌才是從專輯取的。不另立卡、也不可當專輯的別名。**",
+    "src": "https://api.discogs.com/releases/4811324"
+   },
+   {
+    "f": "⚠ **紙本：本層重掃一次，確認零命中（第 1134／1188 條）。** 字串用 `54729`／`different colours`／`jannah` 掃 Billboard 1996／1997 與 Cash Box 1996：**`jannah` 在 1996 年只有一則命中（1996-07-27 p34 的 Blue Note 國際專題，講的是她 1995 年的首作）**、`54729` 與 `different colours` 零命中。**這是 EMI 荷蘭在地發行、沒進美國榜的碟，紙本空白是預期的。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-07-27.pdf"
+   },
+   {
+    "f": "店面：⚠ **美國市場查不到，法／荷市場才有**——`lookup?id=723929956&country=fr`（與 `country=nl` 同）回 11 軌、**逐軌核過與原盤同序**（You Go To My Head／Never Meant To Be／You Always Make Me Smile／Mi Gron／Don't Dream It's Over／I'll Always Be Here／Have a Little Faith in Me／You Must Believe In Spring／High Wire／All Blues／Your Eyes），11 軌皆有 previewUrl；releaseDate `1996-01-01` 是年頭回填。⚠ **與同組《I Was Born in Love With You》的 collectionId 不同（723929956 vs 724236945），不違反第 646 條。串流採信 723929956。**",
+    "src": "https://itunes.apple.com/lookup?id=723929956&entity=song&limit=60&country=fr"
+   }
+  ],
+  "hookCandidates": [
+   "蘇利南語的〈Mi Gron〉（我的土地）夾在 Crowded House 與 John Hiatt 中間，最後用〈All Blues〉收——荷蘭本地的班底，一個紐約人都沒有",
+   "隔年那張同名的〈Different Colours - One Rainbow〉是為「1997 歐洲反種族主義年」錄的單曲，主打曲其實不在這張專輯裡"
+  ],
+  "sound": "1996 年 10 月在荷蘭發行的第二張 Blue Note，十一軌，班底全換成荷蘭本地一線：Bert van den Brink 的鋼琴與管風琴、Peter Tiehuis 的吉他、Marc van Wageningen 的貝斯，Bart Fermie 與 Martin Verdonk 兩位打擊，Leonardo Amuedo 的吉他與 Hans Dulfer 的次中音各客串一軌。曲目從爵士歌本（〈You Go to My Head〉7:27、Michel Legrand 的〈You Must Believe in Spring〉7:16、Miles 的〈All Blues〉6:33）拉到流行曲的爵士改編（Crowded House〈Don't Dream It's Over〉、John Hiatt〈Have a Little Faith in Me〉），中間放進 Ronald Snijders 寫的蘇利南語〈Mi Gron〉。只有 CD。",
+  "keyTracks": [
+   "Mi Gron",
+   "You Go To My Head",
+   "All Blues"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1996 成立，本層未改判。** MB frd 1996 ＝ MB 的 NL release e2ab1d48（1996）＝ **Discogs 荷蘭原壓 2150285**（year 1996、country Netherlands、format 欄乾淨的 `CD, Album`）＝ **Muziekweb 的條目把發行月記成 1996 年 10 月**，四層同向。⚠ **列舉檔說的「BN 首發 2002、原盤可能他廠」是把 MB 的 label-info 空白誤讀成廠牌資訊**（第 642 條的反面），**2002 那一筆只是同軌目的再壓**。⚠ **紙本兩刊 1996／1997 查 `54729`／`different colours` 零命中，`jannah` 的唯一命中（1996-07-27 p34）講的是前一張**——**在地發行的碟紙本空白是預期的，不是證據不足**。⚠ **`country` 取 NL。**",
+  "notes": "**覆核策展層：rgMbid b4cdac8e／原盤是 Discogs 2150285／catno `7243 8 54729 2 3`／掛名與同批另一張一字不差的 `Denise Jannah`／年份 1996／country NL 全部成立；列舉檔那一欄確實是錯的。**｜⚠ **策展層留的那一題本層結案**：**1997 年的《Different Colours - One Rainbow》（Discogs 4811324）是 3 軌 CD 單曲、廠牌是 EMI 不是 Blue Note、為「1997 歐洲反種族主義年」而做**，**主打曲不在專輯裡**——**不是專輯的別名，queryAlias 保留即可但要註明是單曲**。｜⚠ **編制的來源是荷蘭的 Muziekweb，不是盤面**：**Discogs 2150285 的 credits 欄整個空**，MB 也沒有 relationship——**寫作層若要寫班底，只能寫到 Muziekweb 這一層的粒度（樂手與樂器），不要寫軌號歸屬**（**Leonardo Amuedo 與 Hans Dulfer 的客串軌別另有二手說法指向〈Have A Little Faith In Me〉與〈All Blues〉，本層未能在盤面層確認，寫作層不要當定論**）。｜**撞陳列逐張結論**：(1) **第 8 軌〈You Must Believe In Spring〉＝池中 seed `Bill Evans —《You Must Believe in Spring》`(1981) 的卡名**——第 1181／1192 條第六種盲區，**同曲名不同錄音（同一首 Legrand 作品的兩個版本），零母帶重疊**；(2) **第 10 軌〈All Blues〉是 Miles Davis 的曲**，池中 `Miles Davis —《Kind of Blue》` 等卡有同曲，**不同錄音**；(3) 與同組《I Was Born in Love With You》（1995，15 軌）**曲目零重疊、班底完全不同**（那張是紐約班底＋Bob Belden 大編制，本張是荷蘭本地班底），**兩卡 risk 互指**；(4) 本組其餘 18 張的卡名與本張 11 軌逐條比過，**零撞擊**。｜⚠ **封面：本張是缺封面四張之一。** CAA **RG 層三次、release 層（e2ab1d48 與 2002 的 ccaf2608）各兩次，合計七次全部 404、沒有 5xx**（第 589a 條）。**替代來源：Discogs `2150285` 的 `images[0].uri`，type=`primary`、**600×583**，該條目共 **10 圖**（其餘九張 574×600～600×599 都是 `secondary`）。**本層不下載任何圖。**"
+ },
+ {
+  "key": "desc2:Dianne Reeves|The Grand Encounter",
+  "artist": "Dianne Reeves",
+  "album": "The Grand Encounter",
+  "facts": [
+   {
+    "f": "release-group ab3ba941 覆核：title「The Grand Encounter」、artist-credit「Dianne Reeves」、first-release-date **1996-10-29**、primary-type Album、secondary-types 空。正式盤 3ef54595（1996-10-29 US Official CD 10 軌，`CDP 7243 8 38268 2 7`，barcode 724383826827）。⚠ **另有一筆殘件 release 05b8de90**：無日期、無國別、無廠牌、媒體格式欄是 `?`，**而且曲序與正式盤不同**（〈Let Me Love You〉排第 1）——**曲序一律以 3ef54595 為準**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ab3ba941-855e-3951-af03-9125a4d8d020&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層把策展層列成「一支全明星樂隊」的名單改成逐軌歸屬（第 1069／1189／1195 條那一類，形狀＝把只上一兩軌的客座寫成常設團員）**：Discogs 美國原壓 7139935 的 credits 每一筆都帶軌號——**常設只有三個人：Kenny Barron 鋼琴、Rodney Whitaker 貝斯、Herlin Riley 鼓**；客座是 **Clark Terry（vocals, trumpet）1、4、5、7 軌**、**Harry Edison（trumpet）1、4、5、7、8 軌**、**Phil Woods（alto）1、4、5、7 軌**、**Al Grey（trombone）1、4、5、7 軌**、**James Moody（vocals, tenor）1、4、5、6、7 軌**、**⚠ Bobby Watson（alto）只有第 2 軌〈Cherokee〉**、**⚠ Toots Thielemans（harmonica）只有第 3 軌〈Besame Mucho〉**、**Joe Williams（vocals）4、5 軌**、**Germaine Bazzle（vocals）7、9 軌**。**正文不得把九位客座寫成同一支樂隊。**",
+    "src": "https://api.discogs.com/releases/7139935"
+   },
+   {
+    "f": "⚠ **紙本自己也這樣講**：**Billboard 1996-11-02 p33 的「BLUE NOTES」專欄（Jim Macnie）**逐字「Dianne Reeves' new Blue Note disc, 'The Grand Encounter,' unites her with a who's who of polished improvisers, with **James Moody, Clark Terry, Phil Woods, Toots Thielemans, and Joe Williams lending a hand for particular tracks**. It's sure to be a strong radio disc.」同段另記前一張《Quiet After The Storm》**SoundScan 賣了 39,000 張**、並逐字「**'The Grand Encounter' streets on Tuesday (29)**」（＝1996-10-29）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-11-02.pdf"
+   },
+   {
+    "f": "盤上註記逐字：「**Recorded April 4-6, 1996 at Clinton Studios, NYC and April 8-9, 1996 at Presence Studios, Westport**」「Kenny Barron appears courtesy of Verve Records／Toots Thielemans appears courtesy of Private Music／James Moody appears courtesy of Warner Bros. Records, Inc.」「©℗ 1996 Capitol Records, Inc.」**製作人 Dave Torkanowsky**（⚠ **同期廣告印的是 `David Torkanowsky`，兩形都要帶**）、**執行製作 Bruce Lundvall**、錄音 Elliot Scheiner、混音 James Farber／Danny Kadar（Sony Music Studios）。**＝ 五天、兩間錄音室，不是一天錄完。**",
+    "src": "https://api.discogs.com/releases/7139935"
+   },
+   {
+    "f": "**Billboard 1996-11-02 p1 的封面廣告**逐字：「The Grand Encounter **38268** — Dianne Reeves works her vocal magic in this new session of standards featuring an all-star lineup: Clark Terry, Harry 'Sweets' Edison, Al Grey, Phil Woods, James Moody, Bobby Watson, Toots Thielemann, Kenny Barron, Joe Williams. **Produced by David Torkanowsky.**」⚠ **廣告把 Thielemans 印成 `Thielemann`**（少一個 s），**也是把所有客座並列成一支樂隊的寫法——不可當編制來源。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-11-02.pdf"
+   },
+   {
+    "f": "榜位與店面：**Billboard 1996-11-16 p48 TOP JAZZ ALBUMS 以 `NEW` 進榜第 7**，其後 11-30 第 12、12-14 第 21、12-28 第 23、**1997-01-11 第 24、01-25 第 15、02-08 第 17、02-22 第 16**（**本層把榜期補到 1997 年，策展層只查到 1996 年底**）。店面：Apple us `723531425` 逐軌核過＝十軌同序，十軌皆有 previewUrl，**releaseDate `1996-10-17`**（⚠ **比廠牌自己講的 10-29 早十二天，兩個都記，卡上只取到年**）。**串流採信 723531425。**",
+    "src": "https://itunes.apple.com/lookup?id=723531425&entity=song&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "封面廣告把九個名字並排印成一支全明星樂隊——但 Toots Thielemans 的口琴只吹了〈Besame Mucho〉一軌，Bobby Watson 的中音只上〈Cherokee〉",
+   "五天、兩間錄音室，客人輪班進來：Clark Terry 與 Joe Williams 一起唱的那兩首，是整張的中心"
+  ],
+  "sound": "1996 年 4 月 4–6 日在紐約 Clinton Studios、4 月 8–9 日在 Westport 的 Presence Studios 錄的十軌，Dave Torkanowsky 製作、Bruce Lundvall 執行製作。常設的是 Kenny Barron 的鋼琴、Rodney Whitaker 的貝斯、Herlin Riley 的鼓；客人依軌輪班——Clark Terry、Harry「Sweets」Edison、Phil Woods、Al Grey、James Moody 集中在〈Old Country〉〈Let Me Love You〉〈Tenderly〉〈Ha!〉這四軌，Joe Williams 在兩軌與她對唱，Toots Thielemans 的口琴只在〈Besame Mucho〉（8:11，全場最長），Bobby Watson 的中音只在〈Cherokee〉（3:22，全場最快）。曲目是 1930–50 年代的歌本與藍調，收在 Eduardo Del Barrio 寫的〈I'm Okay〉。只有 CD 與卡帶。",
+  "keyTracks": [
+   "Besame Mucho",
+   "Cherokee",
+   "Old Country"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1996 成立，本層未改判；這是本組年份證據最厚的一張，本層再補一層（1997 年的榜期）。** MB frd **1996-10-29** ＝ Discogs 美／歐／日十一筆 `year` 全 1996 ＝ 盤面 **©℗ 1996** ＝ **Billboard 1996-07-27 p37 廣告「Coming this fall」** ＝ **1996-11-02 p1 全版廣告＋同期 p33 專欄逐字「streets on Tuesday (29)」** ＝ **1996-11-16 p48 TOP JAZZ ALBUMS 以 NEW 進榜第 7，連續在榜到 1997-02-22（第 16）**。⚠ **Apple 的 `releaseDate 1996-10-17` 比廠牌自己講的街頭日早十二天**——**店面日期與廠牌檔期不一致，兩個都記，`year` 只取到年**。⚠ **TOP CONTEMPORARY JAZZ ALBUMS 那一張榜（第 879／1068 條）本層也查過，本張沒有進。**",
+  "notes": "**覆核策展層：rgMbid ab3ba941／原盤 3ef54595／catno `CDP 7243 8 38268 2 7`／掛名沿用 `Dianne Reeves`／年份 1996／殘件 release 05b8de90 的曲序不可用 全部成立。**｜⚠⚠ **本層把策展層的編制改成逐軌歸屬**：`why` 把九位客座並列成一支樂隊（**與封面廣告的寫法相同**），**但 Discogs credits 的軌號顯示 Bobby Watson 只有第 2 軌、Toots Thielemans 只有第 3 軌、Joe Williams 只有第 4、5 軌、Germaine Bazzle 只有第 7、9 軌**；**Billboard 自己的專欄也用「lending a hand for particular tracks」**。**這是本棒第三處「只上一兩軌的客座被寫成常設團員」，也是本組最容易照廣告抄錯的一張。**｜⚠ **錄音是五天兩地**（Clinton 4/4–4/6＋Presence 4/8–4/9），**正文不得寫成一次 session**。｜**製作人兩形**：盤面 `Dave Torkanowsky`／廣告 `David Torkanowsky`；**Thielemans 在廣告上被印成 `Thielemann`**——**兩處都寫進上架比對的變體清單**。｜**撞陳列逐張結論**：(1) **第 2 軌〈Cherokee〉＝池中 `Jimmy Smith —《Cherokee》`(1996，seed 與 c-147 各一列) 的卡名**——⚠ **同年、同廠牌、同曲名，是本組最危險的一處第 1181／1192 條盲區**：**逐軌比過，那是 Jimmy Smith 的管風琴盤，本張是 3:22 的人聲版，零母帶重疊**；(2) **第 5 軌〈Tenderly〉＝池中 seed `Don Byas —《Tenderly》`(1951)**、**第 6 軌〈After Hours〉＝池中四列同名卡（`The Weeknd` 2020／`Sarah Vaughan` 1961／`Richard \"Groove\" Holmes` 1962 兩列）**、**第 9 軌〈Side By Side〉＝池中 `八城一夫 —《Side By Side》`(1974，seed 與 c-134 各一列)**——**三處逐張比過全是同曲名不同錄音，零重疊**；(3) **本組退掉的《The Palo Alto Sessions 1981-1985》是同一位藝人、同一年、同一號段的合輯**（rulings 第 1204 條），**正文絕對不得互抄**；(4) 池中 `Dianne Reeves` 另有 c-148／c-149／c-152 a 三張，**與本張十軌零重疊**；(5) **Kenny Barron、Clark Terry、Phil Woods、James Moody、Toots Thielemans 池中都另有卡**，**正文不得把本張寫成他們任何一人的碟**。｜**封面**：CAA RG 層有圖 ✓，**不在缺封面四張之列**；⚠ **備用的 Discogs 7139935 偏弱：14 圖但 `images[0]` 的 primary 只有 500×500**。"
+ },
+ {
+  "key": "desc2:Michel Petrucciani|Live at the Village Vanguard",
+  "artist": "Michel Petrucciani",
+  "album": "Live at the Village Vanguard",
+  "facts": [
+   {
+    "f": "⚠ **MB 的 first-release-date 抄的是再發那一層，原盤整個沒建**：release-group 3ce1f2d8 的 frd 是 **1996**，轄下是 1996 年德國 Bellaphon 的再發 CD 與 2002 年 Blue Note 的 `7243 5 40382 2 8`；**1985 年的 Concord Jazz／The George Wein Collection `GW-3006` 雙 LP 在 MB 上不存在**。**卡上的 1985 不是從 MB 來的，是從盤面與同期紙本來的**（第 1202 條(丙)／第 1206 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3ce1f2d8-e439-3312-8194-fcd644d5efc0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層把策展層的年份改判從「Discogs 原壓群」升級到「同期紙本」——Billboard 1985-04-20 p76 有整則評介**：逐字「**MICHEL PETRUCCIANI TRIO Live At The Village Vanguard PRODUCER: Gabreal Franklin George Wein Collection/Concord Jazz GW-3006.** Teamed with **Palle Danielsson (bass) and Eliot Zigmund (drums)**, the diminutive keyboard whirlwind shines in this **double set, digitally recorded**; rich originals and material from **Monk, Miles and Sonny Rollins**, too.」**＝ 1985 年 4 月、美國樂界刊物當期的新片評介，把廠牌、目錄號、製作人、編制、雙片裝與數位錄音全部印出來。這一層比 Discogs 原壓群高兩階（第 612／1175 條）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1985/BB-1985-04-20.pdf"
+   },
+   {
+    "f": "盤上註記（Discogs 美國原壓 3839547，雙 LP）逐字：「**Recorded live March 16, 1984 with The Fedco Truck using the Mitsubishi X80 Digital System**」「**Ⓟ 1985 THE GEORGE WEIN COLLECTION**」。credits：**Michel Petrucciani（piano、並自己寫內頁、掛 co-producer）、Palle Danielsson bass、Eliot Zigmund drums**；**製作與錄音 Gabreal Franklin**、工程 Tom Arrison、剪輯與組裝 Franklin／Petrucciani／Phil Edwards、母帶 George Horn、封面設計與攝影 Jerry Takigawa。**唱片面 A/B/C/D 八軌，format 欄乾淨的 `Vinyl, LP, Album`。**",
+    "src": "https://api.discogs.com/releases/3839547"
+   },
+   {
+    "f": "**三層年份要在正文分清楚**：**錄音 1984-03-16（Village Vanguard）／他廠首發 1985（Concord Jazz 旗下 The George Wein Collection `GW-3006`，同年另有 Concord CD `CCD 43006` 與日本 King `K32Y 6045`）／Blue Note 這次發行是 2002 年的 `7243 5 40382 2 8`**。⚠ **中間還有一層最會騙人的**：**1996 年德國 Bellaphon `660.50.013` 的再發 CD（Discogs 7118081，format 欄 `CD, Album, Reissue`）就是 MB frd 1996 的來源**。德版原壓 1491837 的註記也逐字寫「Recorded live March 16, 1984 with The Fedco Truck.」",
+    "src": "https://api.discogs.com/releases/1491837"
+   },
+   {
+    "f": "曲目與作曲歸屬（⚠ **策展層沒有查作曲，本層補**）：**八軌只有四首是 Petrucciani 自己寫的**（〈Le Bricoleur De Big Sur〉3:15／〈To Erlinda〉11:25／〈Say It Again And Again〉9:40／〈Three Forgotten Magic Words〉8:46）；其餘是 **〈Nardis〉（Miles Davis／Bill Evans，11:05）、〈Oleo〉（Sonny Rollins，6:35）、〈'Round About Midnight〉（Monk，8:30）**，⚠ **以及第 6 軌〈Trouble〉9:27——那是瑞典歌手兼作曲家 Olle Adolphson 的曲子，不是 Petrucciani 的原創**（Discogs 兩筆原壓的作曲欄一致）。",
+    "src": "https://api.discogs.com/releases/3839547"
+   },
+   {
+    "f": "店面：Apple us `723629189`（artistName `The Michel Petrucciani Trio`）逐軌核過＝八軌同序、全部帶 `(Live)` 尾註，八軌皆有 previewUrl。⚠ **Apple 的 `releaseDate` 是 `1984-03-16`＝錄音日**（第 484／1141 條的又一例，**而且這次精確到日**）；⚠ **Apple 第 8 軌印 `'Round Midnight`、盤面印 `Round About Midnight`**，兩形都要帶。**串流採信 723629189。**",
+    "src": "https://itunes.apple.com/lookup?id=723629189&entity=song&limit=60"
+   }
+  ],
+  "hookCandidates": [
+   "1984 年 3 月 16 日一晚，用 Fedco 錄音車與三菱 X80 數位系統錄下來，隔年以雙片黑膠出——掛的是 George Wein 的名字，Blue Note 要到 2002 年才接手",
+   "八軌裡只有四首是他自己寫的；那首叫〈Trouble〉的，作者其實是瑞典人 Olle Adolphson"
+  ],
+  "sound": "1984 年 3 月 16 日在紐約 Village Vanguard 的一晚，三重奏——Petrucciani 的鋼琴、Palle Danielsson 的貝斯、Eliot Zigmund 的鼓。八軌、四面黑膠，曲子放得很開：〈To Erlinda〉11:25、〈Nardis〉11:05、〈Say It Again and Again〉9:40、〈Trouble〉9:27，最短的〈Le Bricoleur de Big Sur〉只有 3:15。四首自己的作品之外是 Miles／Bill Evans 的〈Nardis〉、Rollins 的〈Oleo〉、Monk 的〈'Round About Midnight〉與 Olle Adolphson 的〈Trouble〉。Gabreal Franklin 製作，用 Fedco 錄音車與三菱 X80 數位系統錄，Petrucciani 自己寫內頁。1985 年以 The George Wein Collection／Concord Jazz 的雙片黑膠首發，Blue Note 版是 2002 年才有的。",
+  "keyTracks": [
+   "Nardis",
+   "To Erlinda",
+   "'Round About Midnight"
+  ],
+  "status": "full",
+  "yearVerified": "**策展層改判 1996 → 1985，本層覆核成立，而且把依據從 Discogs 升到同期紙本。** (1) ⚠ **最硬的一層是本層新查到的：Billboard 1985-04-20 p76 的評介**，逐字印出「George Wein Collection/Concord Jazz **GW-3006**」「PRODUCER: **Gabreal Franklin**」「**double set, digitally recorded**」與三重奏編制——**1985 年 4 月當期的新片評介，第 612／1175 條階序上遠高於 Discogs 原壓群**；(2) 盤面 **Ⓟ 1985 THE GEORGE WEIN COLLECTION**；(3) Discogs 美 3839547／德 1491837／加 7123502 三筆原壓 `year` 全 1985、format 欄乾淨的 `Vinyl, LP, Album`。⚠ **MB frd 1996 抄的是 1996 年德國 Bellaphon 的再發 CD**（第 1209 條毛病 1）。⚠ **Apple 的 `releaseDate 1984-03-16` 是錄音日，不是發行日。**⚠ **依第 1202 條(丙)：母體在真正的他廠（Concord Jazz／The George Wein Collection），`year` 取他廠首發年 1985**——**正文必須把三層講清楚：錄音 1984-03-16／他廠首發 1985／Blue Note 這次是 2002 年的 `7243 5 40382 2 8`**（中間另有 1996 德國 Bellaphon 再發 CD 那一層）。",
+  "notes": "**覆核策展層：rgMbid 3ce1f2d8／原盤是 Concord `GW-3006`／掛名收攏成 `Michel Petrucciani`（池中 16 列全是裸名）／年份改判 1985／第 1202 條(丙) 全部成立。**｜⚠ **本層補一處作曲歸屬**：**第 6 軌〈Trouble〉不是 Petrucciani 的原創，是瑞典的 Olle Adolphson 寫的**——**八軌裡他自己的只有四首**（派工信點名的「作曲歸屬相反」那一類，本張先把它釘死）。｜**製作人是 Gabreal Franklin、Petrucciani 掛 co-producer 並自己寫內頁**（**盤面沒有 Michael Cuscuna、也沒有任何 Blue Note 製作端——2002 年才進 Blue Note**）。｜**載體**：**1985 年的原盤是雙片黑膠**（Billboard 評介逐字「double set」、Discogs format 欄 `Vinyl, LP, Album`、唱片面 A/B/C/D），**同年另有 Concord 的 CD `CCD 43006` 與日本 King 的 `K32Y 6045`**——**這是本組第二張「當年就有黑膠」的碟（另一張是《Live at Club Mozambique》），而且它本來就是黑膠時代的產品。**｜**撞陳列逐張結論**：(1) ⚠ **盤名撞擊是本組最密的一處**：池中另有**三張盤名一字不差的《Live at the Village Vanguard》**（seed 的 `Elvin Jones`(1974)、`Thad Jones & Mel Lewis`(1967)、`John Coltrane`(1962)）**與 c-152 a 的 `大西順子`(1994)**，**`chk-prop` 的折鍵是「掛名｜盤名」所以四張都不會報**——**上架比對必須帶掛名**；(2) **第 2 軌〈Oleo〉＝池中 `Grant Green —《Oleo》`(1980，seed 與 c-145 各一列) 的卡名**、**第 6 軌〈Trouble〉＝池中 `Ray LaMontagne —《Trouble》`(2004) 與 `Silas Hogan —《Trouble》`(1971) 的卡名**、**第 8 軌〈Round About Midnight〉＝池中 seed `Miles Davis —《Round About Midnight》`(1957) 的卡名**——**三處都是第 1181／1192 條第六種盲區，逐張比過全是同曲名不同錄音（〈Trouble〉連曲子都不同），零重疊**；(3) 池中 c-151 b 的 `Michel Petrucciani —《Michel Petrucciani (Live)》`(1994 發行、1991-11 Metz 錄音) **與本張八軌零重疊、不同年、不同班底、不同場地**，**兩張現場盤並存、risk 互指**（第 1049 條）。｜**封面**：CAA RG 層有圖 ✓，**不在缺封面四張之列**；備用 Discogs 3839547 有 **21 圖、`images[0]` 是 592×600 的 primary**。"
  }
 ]
