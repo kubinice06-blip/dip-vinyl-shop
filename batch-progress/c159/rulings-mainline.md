@@ -372,3 +372,55 @@ CAA 404 b 組也只有 1 張。**兩組的派工詞我都拆錯了同一份名�
 ⚠ **主線自律（第 1620-C 條的教訓）**：**代理的「我已自檢全部通過」不能直接寫進裁定。**
 b 組確實比前兩批乾淨很多（126 條 src 全過、數字對清單三處自己修掉），**但「每一句都有來源」這個強度它沒做到。**
 **寫裁定時要把代理的自檢結論降級成「代理自述」，實核由下一層做。**
+
+## 第 1620-L 條（主線）：**c-159 鉤子 a 組交件——18 張、兩組 34 張跨組全過、0 項待判**
+
+**hook 加權 20–34（上限 50）、note 原始 286–350（零張超標）、校對痕跡 0、四張無串流卡的 note 零串流指示
+（實際上全 18 張都沒有任何串流或試聽指示）。**
+
+**三條反同構條款全部照指定落點**；**獎項一律寫成「入圍＋該獎得主是誰」的正面句**
+（Byron→Herbie Hancock、Anita Baker 兩項→Prince／Alicia Keys、Dr. John→Ray Charles 與 Gladys Knight），
+**Truffaz 是本組唯一得獎**；**Wynton／Stefon／Petrella／Monk 四張的 note 一律不出現任何獎項**
+（因為那四張的獎都是第 1616 條點名「不得併計」的那些）。
+
+**四筆同期黑膠全部寫進 note**，**Monk 那張寫明 Mosaic Records MQ1-231**；
+**三處「翻的是曲不是那張唱片」都用正面句指派**（〈I'll Play the Blues for You〉作者 Jerry Beach／
+〈In a Silent Way〉作者寫 Joe Zawinul 與 Miles Davis 兩人／〈Montara〉翻 Bobby Hutcherson 1975 年那首曲）；
+**兩處 apex 撞名拆乾淨**（〈Call Me〉寫成 Irving Fields 的拉丁小品、〈Curtis〉寫成寫給 Curtis Mayfield 的曲）。
+
+⚠ **踩到的坑值得記**：**note 初稿 18 張裡有 14 張超過 350（最長 481）**，
+代理**逐張定點縮寫而非重寫**，**縮寫時優先保留主線的九處事實更正與獎項歸屬，犧牲的是錄音室名、次要製作人與部分軌名。
+判斷正確**——事實更正比裝飾性細節值錢。
+
+**`merge-writer-input c159` 已跑：34 張 → writer-1(a) 18／writer-2(b) 16。**
+
+## 第 1620-M 條（主線，**自糾；鉤子 a 組駁回兩條**）
+
+1. ⚠⚠ **「Burton Yount 這條指定給 `Jason Moran|Same Mother`」是錯的**——
+   **《Same Mother》的 9 條 facts 裡完全沒有 Burton Yount。**
+   **他有 src 的是三張：`Patricia Barber|Live: A Fortnight in France` facts[2]、
+   `Wynton Marsalis Quartet|The Magic Hour` facts[3]、
+   `Thelonious Monk Quartet with John Coltrane|At Carnegie Hall` facts[5]**（主線已 grep 覆核）。
+   **a 組因此沒有任何一張寫這條，好料整個落空。**
+   **→ 主線裁定：這條改指派給 `Patricia Barber|Live: A Fortnight in France`，寫在寫作層的派工詞裡。**
+   （⚠ 不指給《At Carnegie Hall》，那張已經獨佔「歷史錄音重見天日」的骨架；也不指給《The Magic Hour》，
+   那張的 note 已經被獎項排除句佔掉一格。）
+2. **「Trio Töykeät 的 PlayRoom 是 `Edited At`」落空**——**那句只在研究稿 `notes`，facts[0][1] 沒有。**
+   note 只寫「錄音在 Järvenpää 的 Kallio-Kuninkala、母帶在 Chartmakers」，**剪輯一項留白。正確。**
+
+**→ 第 1494(甲) 的「派工前先 grep 該組 facts」這一步，我這一批又漏做了兩次。**
+**本批連同第 1620-I 條的 Dr. John，主線一共寫錯三處。**
+
+## 第 1620-N 條（主線）：**鉤子 a 組的 11 處欄位殘留，其中兩處是新形狀**
+
+11 處全部未寫進 hook／note。兩處值得單記：
+
+1. ⚠⚠ **`Don Byron` 的 `sound` 寫「三個人、沒有低音提琴」，但 facts[1] 明寫 Lonnie Plaxico 的貝斯在第 6–9、11 軌**
+   ——**`sound` 與 `facts` 字面打架。**
+   代理的處置很漂亮：**note 照 facts 逐軌寫，而「沒有低音提琴」這句只用在 hook 裡描述 Lester Young 1946 年那組三重奏**
+   （那是 facts[2] 的原文）。**→ `sound` 的錯不是憑空來的，是把「本碟致敬的那組編制」寫成了「本碟的編制」。**
+2. **`Gianluca Petrella`「長號手的第一張領班盤」與 `Ayşe Tütüncü`「土耳其分部唯一一張 Blue Note」**
+   ——**都是「序數／唯一」這種宣稱，facts 都沒有 src。**
+   **與第 1620-A 條的 Rubalcaba「他在 Blue Note 的最後一張領班盤」是同一族。**
+   **→ 後批通則：「第一張／最後一張／唯一一張」這類序數宣稱，一律要有 src 才准寫，沒有就改寫成具體事實。**
+   這一族在本批出現三次，**已經可以當成固定檢查項。**
