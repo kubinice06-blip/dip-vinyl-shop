@@ -1,0 +1,158 @@
+[
+ {
+  "key": "desc2:Joe Lovano & Greg Osby|Friendly Fire",
+  "artist": "Joe Lovano & Greg Osby",
+  "album": "Friendly Fire",
+  "facts": [
+   {
+    "f": "release-group bb0368cd 的欄位：title「Friendly Fire」、artist-credit「Joe Lovano & Greg Osby」（f3f7cd82 Person／US ＋ bbef05c0 Person／US，join phrase 逐字 ` & `）、first-release-date **1999-06-08**、primary-type Album、**secondary-types 空**、**genres 與 tags 兩欄皆空**。**轄下兩筆 release，軌目一字不差、barcode 也一樣**：af266d91（**1999-06-08 US** Official CD 九軌，Blue Note `7243 4 99125 2 6`，bc 724349912526）與 a7e6fb72（**1999-06-14 XE** Official CD 九軌，同目錄號同 barcode）。⚠ **MB 沒有日版、沒有黑膠、沒有卡帶、沒有數位——本盤在 MB 這一側只有 CD 一種載體。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bb0368cd-5388-3fcd-9923-1f3c81256cf4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 零售條目 2390483（`UK, Europe & US`，`CD, Album`，Blue Note `7243 4 99125 2 6`）的 notes **全文只有一句**，逐字「Recorded December 15 & 16, 1998」；credit 欄逐項是 `Joe Lovano — Tenor Saxophone, Soprano Saxophone, Flute`、`Greg Osby — Alto Saxophone, Soprano Saxophone`、`Jason Moran — Piano`、`Cameron Brown — Bass`、`Idris Muhammad — Drums`、`Joe Lovano — Producer`、`Greg Osby — Producer`、`James Farber — Engineer`、`Greg Calbi — Mastered By`。**五個人、零客座、credit 欄沒有任何一處標軌號**——**固定五重奏成立**。⚠ **但 Lovano 一人掛三種樂器、Osby 掛兩種，正文寫樂器要照 credit 欄，不得簡化成「兩把薩克斯」。**",
+    "src": "https://api.discogs.com/releases/2390483"
+   },
+   {
+    "f": "⚠⚠ **本層擋下策展層一處作曲歸屬的正文錯：〈Serene〉不是兩位領班的曲，作曲者是 Eric Dolphy。** 策展層 `why` 逐字寫「九軌裡有 Ornette Coleman 的〈Broad Way Blues〉與 Monk 的〈Monk's Mood〉，**其餘七軌是兩人自己的曲**」。**回 MB 的 work 層逐軌反查：本盤只有三軌掛到 work**，第 3 軌〈Serene〉→ work 76627a89（composer **Eric Dolphy**）、第 4 軌〈Broad Way Blues〉→ work 5ad10267（composer Ornette Coleman）、第 5 軌〈Monk's Mood〉→ work 26e6980c（composer Thelonious Monk）。**→ 翻的是三個人不是兩個人，自作最多六軌**；⚠ **而且 Eric Dolphy 正是同組第 6 張卡的掛名**（見 `notes` 的撞陳列）。",
+    "src": "https://musicbrainz.org/ws/2/work/76627a89-2bbd-3165-9e40-64314511a19b?inc=artist-rels&fmt=json"
+   },
+   {
+    "f": "⚠ **作曲欄在盤面那一層是空的，正文不得逐軌指名誰寫了哪一首。** Discogs 三筆條目（零售 2390483、宣傳 21857965、宣傳 7439767）**的 tracklist 全部沒有 `Written-By` 欄、全碟 credit 也沒有任何作曲掛名**；**宣傳盤 21857965 的 notes 比零售盤多一句，逐字「Imprinted promotional on CD during manufacturing.」**（第 1297 條的宣傳盤辨識），**另一筆 7439767 的 notes 逐字「Stickered white card sleeve.」且連製作與工程人員都沒列**。**→ 逐軌作曲只有 MB work 層那三軌查得到，其餘六軌本層不寫。**",
+    "src": "https://api.discogs.com/releases/21857965"
+   },
+   {
+    "f": "⚠ **`7439767` 這一筆把第 4 軌的曲名印成 `Broadway Blues`（連寫）**，零售盤與 MB 都是 `Broad Way Blues`（分寫）——**同一張碟的同一軌在兩個條目上兩種拼法**；**MB 的 work 名也是連寫的 `Broadway Blues`**。**上架與撞卡比對用這個曲名時兩形都要試。**",
+    "src": "https://api.discogs.com/releases/7439767"
+   },
+   {
+    "f": "**紙本（1999 年 51 期，`billboard-bn-1999-ocr.txt.gz`）：本盤在 Billboard 1999 全年只有兩處，而且都不是發行證據。** (1) **`BB-1999-10-09` p25 的 Blue Note 秋季全版廣告**逐字「Joe Lovano and Greg Osby **Friendly Fire** Two giants of the saxophone go head to head in a thrilling disc of hard swinging jazz.」——**同一頁還一次列了本組另外六張**（Traveling Miles／Romance With The Unseen／Inner Voyage／Ahead To The Past／Chill Factor／Pleasant Valley／Companion／Orfeu／The Illinois Concert），**頁腳逐字 `® 1999 Blue Note Records`**。(2) **`BB-1999-11-20` p119** 是葛萊美提名名單的作曲登記欄，逐字「\"Friendly Fire,\" Greg Osby, Daigoro Music」——**那是出版社欄不是掛名**。⚠ **兩張爵士榜（`Top Jazz Albums`／`Top Contemporary Jazz Albums`）全年零命中**；**目錄號 `99125` 與人名兩種字串也各自掃過**（第 1245 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf"
+   },
+   {
+    "f": "**店面（第 254 條，只寫觀察）**：Apple `search` 的 us／jp／fr 三市場與 `lookup?upc=724349912526` 四種查法**全部只回 724535511 一筆**，欄位逐字 `Joe Lovano & Greg Osby — Friendly Fire`、`releaseDate 1999-01-01`（**第 484 條的年初佔位日，不是街頭日**）、`trackCount 9`、`℗ 1999 Blue Note Records`；**Apple jp 的掛名逐字〈ジョー・ロヴァーノ & グレッグ・オズビー〉，同形同序。** **九軌與 MB／Discogs 逐軌同名同序，是原盤形。**",
+    "src": "https://itunes.apple.com/lookup?upc=724349912526&country=us"
+   },
+   {
+    "f": "**封面（CAA）**：release-group 層 1 圖，**來源是 XE 版 a7e6fb72、不是美版 af266d91**；⚠ **兩版同 barcode、同九軌、同目錄號，封面版式沒有差別**，**Discogs 零售條目 2390483 的 `images[0]` 也是 `primary` 但只有 300×300**——**CAA 那一張可用，不必找替代。**",
+    "src": "https://coverartarchive.org/release-group/bb0368cd-5388-3fcd-9923-1f3c81256cf4"
+   }
+  ],
+  "hookCandidates": [
+   "兩個人一進棚就互相掛製作人：Lovano 與 Osby 在 1998 年 12 月 15、16 兩天錄完九軌，盤面上製作欄並列兩個名字，沒有第三個人",
+   "翻的曲子出自三個吹管人之手——Ornette Coleman、Thelonious Monk，還有 Eric Dolphy 的〈Serene〉，而 Dolphy 的現場母帶正是同一年 Blue Note 從庫房挖出來的那張"
+  ],
+  "sound": "兩把薩克斯從頭對到尾，但不是同一種音域的對決：Lovano 掛的是次中音、高音與長笛三件，Osby 掛中音與高音，九軌裡兩人不斷換配置。節奏組是當時二十三歲的 Jason Moran 鋼琴、Cameron Brown 貝斯、Idris Muhammad 鼓，五個人從頭錄到尾、盤面沒有任何客座。曲子一半是翻的：Ornette Coleman 的〈Broad Way Blues〉、Monk 的〈Monk's Mood〉，還有 Eric Dolphy 寫的〈Serene〉。最長的兩軌〈Idris〉與〈Alexander the Great〉各將近十二分鐘，篇幅留給兩人輪流拆解主題。錄音是 1998 年 12 月 15、16 兩天，工程 James Farber、母帶 Greg Calbi，製作掛的是兩位領班自己。",
+  "keyTracks": [
+   "Broad Way Blues",
+   "Serene",
+   "Alexander the Great"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判。** (1) **MB first-release-date `1999-06-08`**＝美版 release af266d91 的日期，XE 版 a7e6fb72 是 `1999-06-14`，**兩筆同年同月、相差六天**。(2) **Discogs 原壓群三筆（零售 2390483、宣傳 21857965、宣傳 7439767）`year` 全部 1999**，**零售那一筆的 `released` 欄也是 `1999`**（第 1415 條：只有 `year` 沒有 `released` 的那種才要懷疑是抄 ℗，本筆不是那種）。(3) **盤面 ℗**：Apple 724535511 逐字 `℗ 1999 Blue Note Records`，us／jp／fr 三市場一致。(4) **紙本不構成發行證據但方向一致**：`BB-1999-10-09` p25 的廠牌秋季廣告把它列為當季在售品（第 1053／1175 條），**兩張爵士榜全年零命中，所以拿不到榜位下界**。**四層裡三層獨立且互相吻合，取 1999。** ⚠ **錄音是 1998-12-15／16（Discogs 2390483 notes 逐字），只寫正文，不得寫成發行年。** ⚠ **本盤沒有日版**（第 1063／1066／1133／1252 條的固定動作做過：Discogs 三筆條目裡沒有任何 `TOCJ`／`Somethin' Else` 形，MB 也沒有建），**所以不存在「日版比美版早」的風險。**",
+  "notes": "**覆核策展層：rgMbid bb0368cd／兩筆 release／掛名 `Joe Lovano & Greg Osby`（第 1303 條：MB／Apple／Discogs 三邊同序）／年份 1999／九軌 全部成立。**｜⚠⚠ **本層擋下策展層一處作曲歸屬**：`why` 逐字寫「其餘七軌是兩人自己的曲」，**但第 3 軌〈Serene〉的 MB work（76627a89）composer 是 Eric Dolphy**——**翻的是三個人不是兩個人，正文不得寫「七軌是兩人自己的曲」。**｜⚠ **另兩處要收斂**：(一) **逐軌作曲在盤面那一層根本沒有**（Discogs 三筆條目的 tracklist 全無 `Written-By`），**正文除了 MB work 查到的那三軌以外一律不指名作曲者**；(二) **Lovano 掛 ts／ss／fl 三件、Osby 掛 as／ss 兩件**，**不得寫成「兩把次中音」。**｜**編制：固定五重奏**（Lovano／Osby／Moran／Brown／Muhammad），Discogs credit 欄零軌號標記、零客座——**與策展層「可寫固定編制」一致。**｜⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) ⚠⚠ **新發現一組策展層沒記的**：**本張第 3 軌〈Serene〉的作曲者 Eric Dolphy＝同組第 6 張卡的掛名**，**而〈Serene〉原出於 Dolphy 1960 年的《Outward Bound》（Prestige／New Jazz），不在同組《The Illinois Concert》的七軌裡**（那七軌是 Softly as in a Morning Sunrise／Something Sweet, Something Tender／God Bless the Child／South Street Exit／Iron Man／Red Planet／G.W.）——**同名零命中、內容零重疊，兩卡只需在 risk 互指作曲關係，正文不得互抄。** (2) **Jason Moran 在本張是側人**，他的領班卡《Soundtrack to Human Motion》(c-155 a) 與同批 b 組《Facing Left》都是另外的碟，**三張軌目逐一比對零重疊**。(3) **軌名撞池中卡名：九軌逐一比對，零命中**（策展層的結論覆核成立）。｜**紙本：`BB-1999-10-09` p25 的廠牌秋季廣告是本張唯一的內容描述，逐字「Two giants of the saxophone go head to head」**；**兩張爵士榜全年零命中，目錄號 `99125` 三種字串全掃過。**｜**封面 CAA 有（來源是 XE 版，與美版同版式）；試聽 Apple 724535511 九軌對得上，串流採信 724535511。**"
+ },
+ {
+  "key": "desc2:Charlie Hunter / Leon Parker|Duo",
+  "artist": "Charlie Hunter / Leon Parker",
+  "album": "Duo",
+  "facts": [
+   {
+    "f": "release-group 702e7944 的欄位：title「Duo」、artist-credit「Charlie Hunter / Leon Parker」（a89487ab Person／US ＋ faa7b136 Person／US，**join phrase 逐字是斜線 ` / `**）、first-release-date **`1999`（只有年、沒有月日）**、primary-type Album、secondary-types 空、**genres 與 tags 皆空**。轄下兩筆 release，軌目一字不差：32e5b6b5（1999 **US** Official CD 十軌，**label-info 有 Blue Note 但 `catalog-number` 欄是空的**，bc 724349918726）、3903ae51（1999 **XE** Official CD 十軌，Blue Note `7243 4 99187 2 6`，同 barcode）。⚠ **MB 沒有建日版**（Discogs 有兩筆 `TOCJ-66061`），**也沒有任何黑膠或卡帶。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=702e7944-a706-3a7d-a69c-01ebbdd4181a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美版零售 2389507（`US`，`CD, Album`，Blue Note `7243 4 99187 2 6`）的 notes 逐字「**Recorded live with the exception of the percussion overdubs on \"Mean Streak.\"** Blue Note® is a registred trademark of Capitol records Inc. Train photos by Stash. Package Design by Project Dragon...Bleu.」；**credit 欄全碟只有兩位樂手**：`Charlie Hunter — Guitar [8-String], Producer` 與 `Leon Parker — Drums, Percussion`，其餘是 `Joe Ferla — Producer, Engineer, Mixed By`、兩位助理工程、`Greg Calbi — Mastered By`、`Gordon H Jee — Art Direction`、`Jimmy Katz — Photography By`、`Tom Vasatka — Production Manager`。**沒有貝斯手——八弦吉他一個人兼低音線與和聲。**",
+    "src": "https://api.discogs.com/releases/2389507"
+   },
+   {
+    "f": "⚠⚠ **本層擋下策展層兩處作曲歸屬的正文錯，兩處都在翻唱曲上。** **Discogs 2389507 的 tracklist 逐軌作曲欄**：第 2 軌〈Belief〉`Leon Parker — Written-By`、第 3 軌〈Do That Then〉`Charlie Hunter`＋`Scott Jensen (2)`、第 4 軌〈You Don't Know What Love Is〉`Don Raye`＋`Gene DePaul`、**第 6 軌〈Don't Talk (Put Your Head On My Shoulder)〉`Brian Wilson`＋`Tom Asher`**，全碟 credit 另有 `Charlie Hunter — Written-By [1, 5, 7 to 10]`。**→ (一) 第 6 軌不是 Paul Anka 的〈Put Your Head on My Shoulder〉，是 The Beach Boys《Pet Sounds》裡 Brian Wilson 與作詞者 Tony Asher 的〈Don't Talk (Put Your Head on My Shoulder)〉**（條目把 Tony 印成 `Tom`）；**(二) 第 7 軌〈The Last Time〉在 `Written-By [1, 5, 7 to 10]` 這一組裡，作曲是 Charlie Hunter 自己，不是 Jagger／Richards。** **策展層 `why` 兩處都寫錯，正文不得沿用。**",
+    "src": "https://api.discogs.com/releases/2389507"
+   },
+   {
+    "f": "⚠ **同一張碟的版權登記欄把翻唱那一軌單獨切出來**：Discogs 2389507 的 identifiers 逐字 `Rights Society — ASCAP — Tracks 1-5 & 7-10` 與 `Rights Society — BMI — Track 6`——**第 6 軌自成一組，正好與上一條的作曲欄對得上**（Brian Wilson 的曲屬 BMI 體系）。**這是「用版權欄反證作曲欄」的一個可用手法。**",
+    "src": "https://api.discogs.com/releases/2389507"
+   },
+   {
+    "f": "**歐版 9785512（`Europe`，Blue Note `7243 4 99187 2 6` ＋第二個目錄號 `499 1872`）的 notes 換成另一句，逐字「Issued in a jewel case with a four-panel leaflet」**；**identifiers 逐字有 `Price Code — PM 520 — F`**。⚠ **這一格印證並修正第 1422 條：`F: PM 520` 不是壓片廠模壓代碼，Discogs 把它歸在 `Price Code` 欄（EMI 歐洲的價格代碼）**——**同批 Bob Dorough 歐版與 Jackie McLean 歐版出現同一個字串，Flavio Boltro 那筆列舉檔抄走的 `F: PM 808` 也是同一種東西。** **另日版 29532052（`TOCJ-66061`，`released` 逐字 `1999-08-18`，bc `4 988006 773653`）十軌與美版一字不差**——**日版晚於美版，首發地是美國。**",
+    "src": "https://api.discogs.com/releases/9785512"
+   },
+   {
+    "f": "**紙本把街頭日的下界釘得比任何一層都死：`Top Jazz Albums` 連五期在榜，榜欄逐字 `CHARLIE HUNTER/LEON PARKER BLUE NOTE 99187 /CAPITOL DUO`**——**`BB-1999-04-17` p45 第 10 名（在榜第 2 週）、`05-01` p36 第 19、`05-15` p42 第 19、`05-29` p35 第 21、`06-12` p30 `RE-ENTRY` 第 24。** **04-17 那一期的「在榜週數」欄是 `2`，往回推首度上榜是 1999-04-10 那一期，故零售上架不晚於 1999 年 3 月底。** ⚠ **另一張榜 `Top Contemporary Jazz Albums` 全年零命中**（第 879／1068 條：兩張榜都要查）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-04-17.pdf"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us 命中 738353763（`Charlie Hunter & Leon Parker — Duo`，10 軌，releaseDate `1999-01-01` 佔位日），`lookup?upc=724349918726` 同一筆；⚠ **jp／fr 兩市場的 `search` 各回十餘筆、本張排在第一筆，其餘是 Silk Sonic 與 Tony Bennett 的 `Duo(ets)` 同詞干雜訊**——**盤名只有三個字母，店面比對一定要連掛名。** **Apple 三市場的掛名一律是 `&` 形，MB／Discogs／Billboard 榜欄三邊都是斜線形**（第 1303 條，策展層已把 `&` 形收進 `queryAlias`，本層覆核成立）。",
+    "src": "https://itunes.apple.com/lookup?upc=724349918726&country=us"
+   },
+   {
+    "f": "**封面（CAA）**：release-group 層 3 圖，**來源是美版 32e5b6b5** ✓。**Discogs 美版 2389507 的 `images[0]` 是 `primary` 但只有 319×316**，**歐版 9785512 的 `images[0]` 是 `primary` 600×521**——**CAA 已有，不需替代來源，此處只作備案紀錄。** ⚠ **載體覆核（本段通則第 1 條）：Discogs master 1059557 的版本表六筆全部是 CD**（美版零售／美版宣傳／美版 BMG 俱樂部版／歐版／日版零售／日版宣傳），**沒有任何黑膠、卡帶或數位**——**本張是純 CD 發行，正文不得預設有黑膠原壓。**",
+    "src": "https://api.discogs.com/masters/1059557/versions"
+   }
+  ],
+  "hookCandidates": [
+   "封底自己寫明整張幾乎是一次過彈完的：十軌裡只有〈Mean Streak〉補錄了打擊，其餘都是兩個人面對面的實況",
+   "一把八弦吉他同時走低音線與和聲，一套被拆到剩幾件的鼓——1999 年 Blue Note 目錄裡編制最少的一張，credit 欄從頭到尾只有兩個名字"
+  ],
+  "sound": "兩個人、十軌、沒有貝斯手。Charlie Hunter 用八弦吉他同時彈低音線與和聲，Leon Parker 把鼓組拆到只剩幾件，兩人幾乎整張一次過錄完，封底註明只有〈Mean Streak〉補錄了打擊。曲目一半是 Hunter 自己寫的（第 1、5、7 到 10 軌），Parker 寫了〈Belief〉，〈Do That Then〉是 Hunter 與 Scott Jensen 合寫；翻的兩首是 Don Raye 與 Gene DePaul 的〈You Don't Know What Love Is〉，以及 Brian Wilson 與 Tony Asher 給 The Beach Boys 寫的〈Don't Talk (Put Your Head on My Shoulder)〉。製作是 Hunter 與 Joe Ferla，Ferla 同時兼工程與混音，母帶 Greg Calbi。十軌最長的〈The Spin Seekers〉六分半，最短的〈Don't Talk〉三分鐘出頭。",
+  "keyTracks": [
+   "Mean Streak",
+   "Don't Talk (Put Your Head on My Shoulder)",
+   "The Spin Seekers"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判，而且紙本把下界釘得比 MB 更死。** (1) **紙本（階序最上層）**：`Top Jazz Albums` **1999-04-17 p45 已在榜第 10 名、在榜週數欄 `2`**，往回推首度上榜是 04-10 那一期，**故零售上架不晚於 1999 年 3 月底**；其後 05-01／05-15／05-29／06-12 連續四期仍在榜，榜欄逐字 `BLUE NOTE 99187 /CAPITOL`。(2) **MB first-release-date `1999`**（只有年），兩筆 release 都只有年。(3) **Discogs 原壓群六筆 `year` 全 1999**（美版零售 2389507／美版宣傳 13193949／美版俱樂部版 9059260／歐版 9785512／日版零售 29532052／日版宣傳 13614432）。(4) **盤面 ℗**：Apple 738353763 逐字 `℗ 1999 Blue Note Records`。⚠ **日版覆核（第 1063／1066／1133／1252 條的固定動作）**：**`TOCJ-66061` 的 `released` 逐字 `1999-08-18`，比美版的榜位下界晚四個多月，且十軌與美版一字不差**——**首發地是美國，不是日本。** **四層一致，取 1999。**",
+  "notes": "**覆核策展層：rgMbid 702e7944／兩筆 release／斜線掛名／年份 1999／十軌 全部成立。**｜⚠⚠ **本層擋下策展層兩處作曲歸屬的正文錯，而且兩處都是「把翻唱掛給錯的人」**：(一) **第 6 軌〈Don't Talk (Put Your Head on My Shoulder)〉的 Discogs 作曲欄逐字 `Brian Wilson`＋`Tom Asher`**——**那是 The Beach Boys《Pet Sounds》裡的曲（作詞者 Tony Asher，條目印成 `Tom`），不是策展層寫的 Paul Anka**；(二) **第 7 軌〈The Last Time〉落在 `Charlie Hunter — Written-By [1, 5, 7 to 10]` 這一組裡，是 Hunter 自己的曲，不是 Jagger／Richards。** **兩處正文一律不得沿用策展層的寫法。**｜**編制：兩人，零客座**（第 1391 條「本組最乾淨的編制欄」覆核成立）；⚠ **沒有貝斯手這件事要寫進正文**，八弦吉他兼低音線是本張的整個設計。｜⚠ **`live` 欄**：MB `secondary-types` 空，**但盤面 notes 逐字說整張是 live 彈的、只有一軌補錄打擊**——**本層同意照 MB 寫 `Album`、不標現場**（沒有場館與日期，那是錄音方式不是現場專輯），**但正文必須把「幾乎整張一次過錄」寫出來。**｜⚠ **撞陳列**：(1) **軌名撞池中卡名一處：〈Belief〉＝ seed 的 `Nitzer Ebb —《Belief》`**——**逐字比對後確認是常見詞的同名、不是同碟**（Nitzer Ebb 那張是 1989 年 Mute 的 EBM 盤）。(2) **同批 b 組有 `Charlie Hunter —《Charlie Hunter》`（2000，裸名掛名）**，**十軌與那張逐軌零重疊**，兩卡 risk 互指、上架比對帶目錄號。(3) **Leon Parker 只以聯名的一半進池，沒有獨立卡**；⚠ **他在同批 b 組《Charlie Hunter》的 credit 欄裡掛 `Arranged By [Percussion]`**——**那是編曲掛名，不是本張的對等聯名，兩張不得互抄。**｜**紙本：五期榜位＋`BB-1999-10-09` p25 的廠牌秋季廣告（本張未列名，該頁列的是同組另外八張）；目錄號 `99187`、人名、盤名三種字串都掃過。**｜**封面 CAA 有（美版來源）；試聽 Apple 738353763 十軌對得上，串流採信 738353763。**"
+ },
+ {
+  "key": "desc2:Gonzalo Rubalcaba|Inner Voyage",
+  "artist": "Gonzalo Rubalcaba",
+  "album": "Inner Voyage",
+  "facts": [
+   {
+    "f": "release-group c2b98cbb 的欄位：title「Inner Voyage」、artist-credit「Gonzalo Rubalcaba」（70053535 Person／**CU**）、first-release-date **1999-08-24**、primary-type Album、secondary-types 空、genres 與 tags 皆空。轄下三筆 release：d751a09f（**1999-08-24 US** Official CD 九軌，Blue Note **`7243 499241 2 3`——目錄號中間少一個空格**，bc 724349924123）、9cef2a54（1999 XE Official CD 九軌，`7243 4 99241 2 3`，同 barcode）、a6b309eb（**無日期**的 XW `Digital Media` 九軌，bc `00724349924154`，**13 位、非標準 UPC，不能拿去做 `lookup?upc=`**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c2b98cbb-54b1-3330-aeb4-653a00c9200c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「Michael Brecker 不標軌號」那一句：盤面就標了軌號。** **Discogs 美版零售 1341115 的 credit 欄逐字 `Michael Brecker — Saxophone [3, 8]`**——**方括號裡是第 3 軌〈The Hard One〉與第 8 軌〈Blues Lundvall〉兩軌，不是整張。** 其餘 credit 是 `Gonzalo Rubalcaba — Piano, Producer`、`Jeff Chambers (3) — Double Bass`、`Ignacio Berroa — Drums`、`Jim Anderson — Engineer`、`Juan Carlos Quesada — Executive-Producer`。**→ 編制欄可以寫死：三重奏九軌全程，Brecker 只在第 3、8 兩軌客座**；**正文不得寫成「四重奏」，也不必再寫「逐軌變動、無從指定」。**",
+    "src": "https://api.discogs.com/releases/1341115"
+   },
+   {
+    "f": "**Discogs 1341115 的 notes 全文只有一句，逐字「Recorded at Avatar Studios, New York City on November 23-25, 1998」**——**錄音是 1998 年 11 月 23 到 25 日、連錄三天，不是一天錄完。** 九軌與 MB 一字不差：Yolanda Anas／Promenade／The Hard One／Sandyken／Here's That Rainy Day／Caravan／Joan／Blues Lundvall／Joao；**最長的〈Joan〉11 分 33 秒、〈Caravan〉10 分 59 秒。**",
+    "src": "https://api.discogs.com/releases/1341115"
+   },
+   {
+    "f": "⚠ **Discogs 歐版再壓 5970410 的 `year` 欄是 `0`（空）、`released` 是 `null`、`format` 標 `Reissue`**——**第 550／570／708／1191 條：這一筆不能拿來當年份來源**；**俄國版 15471509 的 `format` 帶 `Unofficial Release`，同樣排除。** **真正可用的原壓群是五筆**：美版零售 1341115、美版宣傳 25000657、歐版 20436652、`…2 3 V` 宣傳 14582647、日版宣傳 11531158（`TOCJ-66058`，**標題印成 `Inner Voyage = 憧憬`**）。",
+    "src": "https://api.discogs.com/masters/719516/versions"
+   },
+   {
+    "f": "**紙本：Billboard 1999 年只有一處，是廠牌自己的秋季全版廣告。** **`BB-1999-10-09` p25 逐字「Gonzalo Rubalcaba **Inner Voyage** Without a doubt he is one of the great geniuses of modern music, blending traditional and modern Cuban feeling into piano masterpieces.」**——**第 1053／1175 條的「廠牌下一季發行名單」，可當旁證不可當首發日。** ⚠ **兩張爵士榜全年零命中，評介欄零命中**；**目錄號 `99241`、人名 `Rubalcaba`、盤名 `Inner Voyage` 三種字串都掃過**（第 1245 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724349924123` 四種查法**全部只回 723510523 一筆**，欄位 `Gonzalo Rubalcaba — Inner Voyage`、`trackCount 9`、`releaseDate 1999-01-01`（年初佔位日）、`℗ 1999 Blue Note Records`。**九軌與盤面逐軌同名同序，是原盤形。**",
+    "src": "https://itunes.apple.com/lookup?upc=724349924123&country=us"
+   },
+   {
+    "f": "**封面（CAA）**：release-group 層 2 圖，**來源是美版 d751a09f** ✓。⚠ **Discogs 美版零售 1341115 只有一張圖而且是 `secondary` 240×240**——**若日後要替代來源，美版這一筆不可用**（本張 CAA 已有，暫不需要）。",
+    "src": "https://coverartarchive.org/release-group/c2b98cbb-54b1-3330-aeb4-653a00c9200c"
+   },
+   {
+    "f": "⚠ **載體覆核（本段通則第 1 條，逐張查）：master 719516 的版本表七筆全部是 CD**（美版零售／美版兩筆宣傳／歐版兩筆／日版宣傳／俄國非官方），**加上 MB 那一筆無日期的數位版，合計八種形狀裡沒有一張黑膠、沒有卡帶**——**本張是純 CD 發行。** ⚠ **日版覆核**：**Discogs 只有 `TOCJ-66058` 的宣傳盤 11531158（1999）、沒有日版零售條目**，**MB 也沒有建日版**；**沒有任何一層指向「日版比美版早」**，首發地是美國。",
+    "src": "https://api.discogs.com/releases/11531158"
+   }
+  ],
+  "hookCandidates": [
+   "九軌裡有一首〈Blues Lundvall〉——直接用簽下他的 Blue Note 總裁 Bruce Lundvall 命名，而 Michael Brecker 的薩克斯就只出現在這一軌和第三軌",
+   "1998 年 11 月連錄三天的三重奏盤，是他 Blue Note 時期最靠近正統鋼琴三重奏的一張"
+  ],
+  "sound": "鋼琴三重奏九軌，Jeff Chambers 低音提琴、Ignacio Berroa 鼓，1998 年 11 月 23 到 25 日在紐約 Avatar Studios 連錄三天。Michael Brecker 只在第 3 軌〈The Hard One〉與第 8 軌〈Blues Lundvall〉加薩克斯，盤面 credit 把軌號寫得很清楚，其餘七軌是純三重奏。曲目以 Rubalcaba 自己的曲為主，翻的兩首是 Jimmy Van Heusen 的〈Here's That Rainy Day〉與 Ellington／Tizol 的〈Caravan〉，兩首都拉到十分鐘上下。〈Blues Lundvall〉的曲名來自簽下他的 Blue Note 總裁 Bruce Lundvall。製作是 Rubalcaba 自己，工程 Jim Anderson。",
+  "keyTracks": [
+   "The Hard One",
+   "Caravan",
+   "Blues Lundvall"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判。** (1) **MB first-release-date `1999-08-24`**＝美版 d751a09f 的日期。(2) **Discogs 原壓群五筆 `year` 全 1999**（美版零售 1341115、美版宣傳 25000657、歐版 20436652、`…2 3 V` 宣傳 14582647、日版宣傳 11531158）；⚠ **另兩筆排除：歐版再壓 5970410 的 `year` 是空的且 `format` 標 `Reissue`（第 550／570／708 條）、俄國版 15471509 標 `Unofficial Release`。** (3) **盤面 ℗**：Apple 723510523 逐字 `℗ 1999 Blue Note Records`，三市場一致。(4) **紙本只有 `BB-1999-10-09` p25 的廠牌秋季廣告**（第 1053／1175 條的旁證），**兩張爵士榜與評介欄全年零命中**——**這一張拿不到榜位或街頭日，但也沒有任何一層指向別的年份。** ⚠ **日版覆核（固定動作）**：**`TOCJ-66058` 在 Discogs 上只有宣傳盤一筆、`year` 也是 1999，沒有零售條目**，**MB 沒建日版**——**不存在「日版早一年」的形狀。** ⚠ **錄音 1998-11-23～25 只寫正文。** **三層獨立證據一致，取 1999。**",
+  "notes": "**覆核策展層：rgMbid c2b98cbb／三筆 release／掛名 `Gonzalo Rubalcaba`（池中 9 張同字串，第 307 條）／年份 1999／九軌 全部成立。**｜⚠⚠ **本層推翻策展層一句話（方向是「盤面比策展層說的更清楚」）**：`risk` 逐字寫「Michael Brecker … Discogs credit 欄把他單列為 `Saxophone`、**沒有標軌號**」「本層不擅自指定軌號，編制欄寫『三重奏＋客座，逐軌變動』」——**實際上 Discogs 1341115 的 credit 欄逐字就是 `Michael Brecker — Saxophone [3, 8]`，軌號印在盤面上。** **→ 編制欄改寫成「三重奏九軌全程（Rubalcaba p／Jeff Chambers b／Ignacio Berroa d），Michael Brecker 只在第 3、8 兩軌客座」**，**正文可以寫明是哪兩軌，但仍不得寫成「四重奏」或「Brecker 全程參與」。**｜⚠ **錄音不是一天**：notes 逐字 `November 23-25, 1998`，連錄三天。｜⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) **第 6 軌〈Caravan〉撞池中兩張卡名——seed 的 `Caravan —《Caravan》`（英國前衛搖滾團，同名團名）與 seed 的 `Art Blakey and the Jazz Messengers —《Caravan》`（1962 Riverside）**；**逐軌比完只有曲名相同，不是同碟。** (2) ⚠ **同批第 16 張 Dr. John《Duke Elegant》也有一軌〈Caravan〉**——**兩張是完全不同的錄音（一張是鋼琴三重奏、一張是紐奧良編制翻 Ellington），兩卡 risk 互指、封面與試聽資產不得共用。** (3) **其餘八軌逐一比對池中，零命中。** (4) **Jeff Chambers 在 Discogs 上是 `Jeff Chambers (3)`（消歧義編號），上架比對不要只用裸名。**｜**載體：master 719516 七筆全 CD ＋ MB 一筆數位，零黑膠。**｜**紙本：只有廠牌廣告一處，三種字串都掃過。**｜**封面 CAA 有（美版來源）；試聽 Apple 723510523 九軌對得上，串流採信 723510523。**"
+ }
+]
