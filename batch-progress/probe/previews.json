@@ -47708,20 +47708,23 @@
   "status": "ready"
  },
  "Greg Osby|Further Ado": {
-  "batch": "c154",
+  "batch": "c154a",
   "tried": [
-   "us:1→1"
+   "us:1→1",
+   "research:724582287",
+   "lookup:724582287"
   ],
-  "front": "us",
-  "collectionId": 1458054446,
-  "appleTitle": "Further Ado",
+  "status": "ready",
+  "front": "gb",
+  "collectionId": 724582287,
   "appleArtist": "Greg Osby",
+  "appleTitle": "Further Ado",
   "appleYear": "1997",
-  "explicitness": "notExplicit",
   "trackCount": 10,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/fe/97/0b/fe970b78-2eb8-a837-314d-33494309146a/mzaf_5391119782272713010.plus.aac.p.m4a",
+  "explicitness": "notExplicit",
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview62/v4/6b/7e/db/6b7edbb2-c86a-5e39-5e83-1815febaf018/mzaf_2553990293961314444.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "note": "研究層逐軌核過後採信（第 254 條三種查法）；探測層原判 ready"
  },
  "Ron Carter|The Bass and I": {
   "batch": "c154",
@@ -47738,7 +47741,7 @@
   "status": "unavailable"
  },
  "Doky Brothers|2": {
-  "batch": "c154",
+  "batch": "c154a",
   "tried": [
    "us:12→0",
    "gb:12→0",
@@ -47747,9 +47750,21 @@
    "fr:12→0",
    "nl:12→0",
    "ca:12→0",
-   "tw:12→0"
+   "tw:12→0",
+   "research:696245384",
+   "lookup:696245384"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "gb",
+  "collectionId": 696245384,
+  "appleArtist": "Doky Brothers",
+  "appleTitle": "Doky Brothers 2",
+  "appleYear": "1995",
+  "trackCount": 12,
+  "explicitness": "notExplicit",
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/44/50/59445050-7935-3202-1b07-e1f657e021fc/mzaf_16885326969807437778.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "note": "研究層逐軌核過後採信（第 254 條三種查法）；探測層原判 unavailable"
  },
  "Dianne Reeves|New Morning": {
   "batch": "c154",
