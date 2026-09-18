@@ -848,3 +848,74 @@ with bassist Tarus Mateen and drummer Nasheet Waits **downgraded to supporting m
 4. **Discogs 原壓群指向更早年份時，先看那幾筆有沒有 `released` 日期**（第 1415 條）——**只有 `year` 的那種多半是抄盤面 ℗。**
 5. **列舉檔的 `catno` 欄帶 `F:`／`PM`／`UK:` 前綴的，是模壓環代碼不是目錄號**（第 1422 條）——**去 Discogs 廠牌欄拿真的目錄號再反查。**
 6. **`live: true` 且 `nReleases: 1` 的 2000 年碟，要用 Discogs master 反查一次原壓年**（第 1412 條）——**本組就是這樣抓到一張 1967 年的 LP 被分到 1985 後那一段。**
+
+## 第 1428 條（主線，研究層查出）：**首發地改判 7 張，其中一張策展層整個漏了**
+
+**年份不變，首發地要改**：Illinois Concert、A Man With a Horn、Drums Around the Corner、Bridges、
+These Are Soulful Days、Turbulent Flow → **日版早 5 天到 6 週**；
+⚠ **最大的一張是 Ron Carter《Orfeu》：日版 `Somethin' Else TOCJ-68042` 1999-06-16
+比美版 11-02 早四個半月**，**與第 1414 條同號段、同監製，策展層漏了。**
+
+**策展層唯一那筆年份改判（《Nature Boy》2000→1999）背書成立**
+——日版 `TOCJ-68045` 1999-09-22 **是零售盤不是宣傳盤**（已依第 1281 條回 Discogs 看實體描述確認）。
+
+## 第 1429 條（主線）：**第 1367 條在本批再中五次，而且多出一種「不標軌號」的誤判**
+
+⚠ **策展層列的 4 張「編制完全查不到」全部推翻**（For the Love／Live at the Village Vanguard／
+Who's on First?／Charlie Hunter）——**失效方式相同：只看全碟層 credit 欄、沒展開 tracklist 的逐軌欄。**
+**同一原因也推翻《Traveling Miles》的「樂手一個都沒列」**（實際有 Pat Metheny、Angélique Kidjo、
+Dave Holland、Stefon Harris…）。
+
+⚠ **新形狀：「Discogs 不標軌號」被推翻 11 處**
+——《Inner Voyage》的 Brecker 就寫著 `[3, 8]`、《Six Views》兩位鼓手 `[1-3]`／`[4-6]`、
+《Bridges》十九人全標，另有 A Man With a Horn／Drums Around the Corner／Comin' On／Chill Factor／
+Too Much Coffee Man／Everything I Love／The Dropper／Turbulent Flow／Perceptual 的 Lanois。
+⚠ **「Discogs 沒標軌號」在這一段是待證的宣稱，不是事實。**
+
+其餘擋下的：**《The Kicker》Grant Green 只在第 4–6 軌**（策展層寫六人固定）；
+**《Illinois Concert》第 6、7 軌各多一整個學生樂團**；
+**Joni Mitchell 在《Perceptual》盤面就掛了**（credit 欄與第 8 軌逐軌欄），不是只有紙本；
+**《Duo》兩處作曲錯**（〈Don't Talk〉是 Brian Wilson／Tony Asher 不是 Paul Anka；
+〈The Last Time〉是 Charlie Hunter 自己的曲不是 Jagger／Richards）。
+
+## 第 1430 條（主線）：**撞陳列 22 組全部零內容重疊，但三處要修正策展層**
+
+1. ⚠ **A Man With a Horn ↔ Blues For Lou 同為 1963-06-07，但班底不是同一批**
+   ——前者那 4 軌是**五人**（含**策展層漏掉的 Irv Stokes 小號**），後者只有 Green／Patton／Dixon **三人**。
+   **正文不得寫「同一組人同一天」。**
+2. **Bridges ↔ Art & Soul ↔ In the Moment**：Reeves 在 Art & Soul **只有第 4、7 軌客座**；
+   **In the Moment 有 4 軌與 Bridges 同名但時長全不同**（現場 vs 錄音室）。
+3. **Elling 正盤 ↔ Out Takes**：14 軌 vs 6 軌零重疊；⚠ **Out Takes 的 `July 4` 是 `July 14` 掉字。**
+
+⚠ **撞王牌卡那一處是假警報**：**〈Aftermath〉的作曲欄逐字是 Ronny Jordan 自己**，與 Rolling Stones 無關。
+⚠ **Javon Jackson《Pleasant Valley》末軌〈For One Who Knows〉＝他自己 c-152 的卡名**
+——同曲、不同編制與日期（1999-01-04 Sear Sound 四重奏），**必須帶目錄號上架。**
+
+**新發現三組策展層沒記的**：
+(a) **《Friendly Fire》#3〈Serene〉的作曲者是 Eric Dolphy**（同組第 6 張卡的掛名，
+也推翻「其餘七軌是兩人自己的曲」）；
+(b) **《For the Love》與 a 組《Chill Factor》共用九個洛杉磯班底人名＋同一位製作人 Steve Dubin**；
+(c) **《A Brighter Day》#5〈Mystic Voyage〉是 Roy Ayers 的曲、而且他本人在那一軌彈顫音琴。**
+
+## 第 1431 條（主線）：**載體、軌數與兩處資料欄訂正**
+
+- **載體逐張查：39 張純 CD，3 張有同期黑膠**——Companion（Premonition `90747`，6 軌）、
+  Traveling Miles（`7243 8 54123 1 8`，**雙片 13 軌**）、A Brighter Day（UK `7243 5 20208 1 2`）；
+  **另 The Kicker 與 Perceptual 的黑膠是 2020／2014 再發且軌數或曲序不同。**
+- **軌數分歧 8 張**（日版多／少軌、黑膠少軌），各卡已寫明以哪一形為主體。
+- **第 1425 條兩處成因查到了**：Valdés 的「9 軌 vs 10 標題」是 tracklist 多一列 `Encore`；
+  Elias 的「13 vs 16」是 `Introduction #n/曲名` 被 MB 拆成兩軌。
+- ⚠ **第 1422 條修正**：`F: PM 520`／`PM 516`／`PM 262`／`UK: 520 2082` 在 Discogs 是
+  **`Price Code` 欄（EMI 歐洲價格代碼）**，**不是壓片廠模壓代碼。**
+
+## 第 1432 條（主線）：**試聽與封面**
+
+- **串流採信 40/42**（本層撈回 4 張）；**查無 2 張**：
+  **Ron Carter《Orfeu》**（五市場×五字串＋UPC＋藝人目錄 150 張全無）、
+  **Jackie McLean《Nature Boy》**（**專輯頁存在但四市場都回 0 軌、無 preview**——第 1371 條那個形狀再現）。
+- ⚠ **策展層第 1426 條「`search` us 零命中」有 5 處本層重跑時命中**——**店面查詢有時點差，
+  「零命中」要註明查詢時間。**
+- ⚠ **《Orfeu》的紙本不是空白**：`BB-1999-11-13` p33 整篇專欄**逐字給了街頭日「released Nov 2」與六位樂手全名**。
+- **封面 42 張逐張重探 CAA：38 張有圖、4 張真 404**，替代來源全部找到；
+  ⚠ **《Road Runner》Discogs 全站唯一條目只有 1 張 secondary 300×300，不可用 → 改用
+  Apple `695992109` 的 `600x600bb`**（原圖 1404×1404 300dpi）。
