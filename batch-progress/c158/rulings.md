@@ -1501,3 +1501,49 @@ MMW 的 Antibalas 只寫 1・10 軌、Danny Blume 與 Eddie Bobé 未寫；
 寫作 a 組回報的「跑不起來」是因為**用了 `npx qa-batch out c158`**（npm error），
 **正確寫法是 `node qa-batch.mjs out c158`。**
 `fix-spacing` 兩檔各跑一次，**待補 0**。
+
+## 第 1560-AJ 條（主線）：**c158 寫作 b 組交件——18 張 211–238，零張出界；初稿 13／18 撞破 240**
+
+| 項目 | 數字 |
+| --- | --- |
+| 成品 | **211–238，平均 227.9，兩端都沒撞到** |
+| 初稿 | **13／18 撞破 240**（最高 321 Charlap、次高 303 Töykeät），**零張掉下限** |
+
+⚠ **低估最嚴重的形狀又一次被指認出來**（同第 1500 條的「兩間以上錄音室」）：
+**Charlap 與 Töykeät 兩張低估 80 以上，都是「拉丁專名一次要點五、六個」的卡**
+（三組作詞者＋伯恩斯坦五部劇目／三位芬蘭團員＋Zen Master＋EMI 芬蘭＋Blue Note）。
+**→ 這個形狀比「爵士批次」這種分類更可靠**：**看的是單張卡要點名幾個拉丁專名，不是批次屬什麼曲風。**
+（但仍不構成可繼承的偏差方向——第 1504-B 條。）
+
+**硬約束全數落實**（主線逐項覆核）：三張無串流卡正文零串流字樣；**Töykeät 與 Rosnes 零榜位、零評介、
+零「廣受好評」**；四張黑膠全部寫進正文並寫明 Conte 的 Schema 是不同廠牌，其餘 14 張未提載體；
+**〈Nefertiti〉零點名**；Reeves 只寫曲名不寫作者；Blanchard 只寫姓名樂器軌號、第 9 軌寫「七分鐘的組曲」；
+Lovano 未湊「九」；Rosnes 寫「以她自己的作品為主」無數字無軌號；
+**《Christmas Time Is Here》零獎項、零 Nat King Cole。**
+
+`qa-batch out c158` → **37 張與卡單相符、全部通過**；`fix-spacing` 兩檔各跑一次，**待補 0**。
+
+## 第 1560-AK 條（主線，**補進第 1560-AB：「標題數字與自身清單對不上」第二例**）
+
+**`Terence Blanchard|Bounce` 的 `facts[2]`**：標題寫「曲目有**四首**出自團員之手」，
+**同一條只列出三首**（Parks〈On the Verge〉、Harland〈Transform〉、Owens〈Innocence〉），
+Blanchard 自己另寫三首。**寫作層照 note 寫「三首」，正確。**
+
+**→ 連同 Rosnes 那筆（「八軌裡六首」實際列五首），本批兩例。**
+**第 1560-AB 的通則確認有效：`facts` 裡出現數字（幾首、幾人、幾軌）時，一律與同條的清單對數。**
+⚠ **兩例都在 b 組、都是同一位研究代理寫的**——**不是隨機錯誤，是那一棒的習慣**。
+建議本機審稿時對 `c158-b.json` 的所有數字再掃一遍。
+
+## 第 1560-AL 條（主線，**第 1560-AC 的續筆：兩處 notes／researchNotes 埋了無 src 的指示**）
+
+1. **派工詞第 (5) 點的「Elling 第 11 軌〈Never, My Love〉有逗號」在 b 組 `facts` 裡查不到**
+   （只在 `researchNotes`，且 facts 本身沒有軌目欄）——**寫作層沒有點名這一軌，無事實損失。正確。**
+   與第 1560-AC 第 4 點是同一條，**兩層各自獨立抓到，可見這條規則在兩層都生效。**
+2. ⚠ **`Dianne Reeves|Christmas Time Is Here` 的 `researchNotes` 要求「提〈The Christmas Song〉時要提原唱 Nat King Cole」，
+   但 Nat King Cole 在 `facts` 一次都沒出現**（facts 只給作者 Mel Tormé 與 Robert Wells）。
+   **寫作層改寫作者而非原唱，避開無 src 的斷言。正確。**
+   **→ 這是 `researchNotes` 直接下指令、而該指令的內容無 src 的第一個例子。**
+   **後批通則：`researchNotes` 的「要提某某」不具強制力，一律先在 `facts` 裡 grep 過再照辦。**
+3. `Greg Osby|Public` 的「〈Visitation〉近十四分鐘」只在 `note` 與 `sound`、不在 `facts`
+   （facts 只證明當年樂評點名了這首）。**主線裁定：維持寫作層照 note 寫的版本**——
+   軌長是盤面可驗的物理事實、風險極低，且 note 是鉤子層依研究稿整理的，**不必為此砍掉一格。**
