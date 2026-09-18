@@ -51319,7 +51319,16 @@
    "es:2→0",
    "pl:2→0"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "gb",
+  "collectionId": 724203490,
+  "appleTitle": "Kuunnelmia",
+  "appleArtist": "Jukka Perko",
+  "appleYear": "2004",
+  "explicitness": "explicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bd/d0/59/bdd059ad-bbcf-4b60-e965-029418ec94a9/mzaf_15767298532286569406.plus.aac.p.m4a",
+  "note": "2026-09-18 研究 a 組查出、主線覆核：lookup?upc=724387524828 在 gb/de/fr/nl/it/es/au/se/no/dk/fi/br/mx/tr/ru/pl/kr/tw/hk/ie/be/ch/at 共 23 個店面都回得到，唯獨 us/jp/ca 沒有——探測層只掃八市場（後來十五市場也沒涵蓋到位）因此判成 unavailable。逐軌驗證 13/13 都有 previewUrl。"
  },
  "Thelonious Monk Quartet with John Coltrane|At Carnegie Hall": {
   "batch": "c159",
@@ -51515,5 +51524,647 @@
   "trackCount": 12,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a0/a7/87/a0a787ea-466c-2056-cb2e-27447a8b7524/mzaf_10723768801307934772.plus.aac.p.m4a",
   "note": "2026-09-18 主線實查：Apple 盤名「Do the Boomerang: The Music of Junior Walker」（多了副標），12 軌全有 preview，2006 年，第 3 軌就是〈Do the Boomerang〉；卡池無第二張卡用此 id。探測層 titleOk 擋掉的原因是長度差 23 > 8。"
+ },
+ "Jason Moran|Artist in Residence": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715845434,
+  "appleTitle": "Artist In Residence",
+  "appleArtist": "Jason Moran",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ca/c1/5f/cac15f22-b927-aab0-33cf-9c9b4b9f6f0c/mzaf_16236363866382941603.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Grant Green|Live at Club Mozambique": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 781565948,
+  "appleTitle": "Live at Club Mozambique",
+  "appleArtist": "Grant Green",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7a/5c/77/7a5c775d-29f9-fd56-b8e0-b550510f753f/mzaf_10113773230156652542.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Chris Minh Doky|The Nomad Diaries": {
+  "batch": "c160",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 690481659,
+  "appleTitle": "The Nomad Diaries",
+  "appleArtist": "Chris Minh Doky",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/63/e2/48/63e248bc-ec95-7f22-0984-4935d946349e/mzaf_10454481839596871137.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Norah Jones|Not Too Late": {
+  "batch": "c160",
+  "tried": [
+   "us:3→2"
+  ],
+  "front": "us",
+  "collectionId": 1471082561,
+  "appleTitle": "Not Too Late",
+  "appleArtist": "Norah Jones",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/aa/80/c8aa80fe-9474-26b5-4a20-49a05236d592/mzaf_16024301618855264494.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Trijntje Oosterhuis|The Look of Love: Burt Bacharach Songbook": {
+  "batch": "c160",
+  "tried": [
+   "us:3→1"
+  ],
+  "front": "us",
+  "collectionId": 713208188,
+  "appleTitle": "The Look of Love - Burt Bacharach Songbook",
+  "appleArtist": "Trijntje Oosterhuis & Metropole Orkest",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cc/c0/4c/ccc04c6d-5b61-7472-a271-54517f3d1abe/mzaf_3338545992106389096.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Paolo Fresu & Uri Caine|Things": {
+  "batch": "c160",
+  "tried": [
+   "us:0→0",
+   "gb:4→1"
+  ],
+  "front": "gb",
+  "collectionId": 713985561,
+  "appleTitle": "Things",
+  "appleArtist": "Paolo Fresu & Uri Caine",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 18,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/79/6f/93796fe3-d0cf-b35c-b977-2f55d2487a05/mzaf_13118089126417072422.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Erik Truffaz|Face à face": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1841895971,
+  "appleTitle": "Face à face (Live)",
+  "appleArtist": "Erik Truffaz",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 26,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/e5/38/78e53882-1765-52be-ed84-f76e88fd8626/mzaf_3601694195061173284.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Andrew Hill|Time Lines": {
+  "batch": "c160",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 724500458,
+  "appleTitle": "Time Lines",
+  "appleArtist": "Andrew Hill",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/58/2c/42/582c428f-187a-6918-2a0e-0f63f2525ce0/mzaf_11847623308797793454.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Aga Zaryan|Picking Up the Pieces": {
+  "batch": "c160",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 692537396,
+  "appleTitle": "Picking Up the Pieces",
+  "appleArtist": "Aga Zaryan",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2b/6a/88/2b6a880f-d776-581b-47a0-5754071365c2/mzaf_8829893528336332050.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Gwyneth Herbert|Between Me and the Wardrobe": {
+  "batch": "c160",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 693130543,
+  "appleTitle": "Between Me and the Wardrobe",
+  "appleArtist": "Gwyneth Herbert",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ed/97/d0/ed97d004-1c03-6408-1cd1-b73f086f3341/mzaf_14069142851550984491.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Norah Jones|Live in 2007": {
+  "batch": "c160",
+  "tried": [
+   "us:2→0",
+   "gb:2→0",
+   "jp:12→0",
+   "de:2→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:2→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:12→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Steve Kuhn Trio|Live at Birdland": {
+  "batch": "c160",
+  "tried": [
+   "us:0→0",
+   "gb:2→1"
+  ],
+  "front": "gb",
+  "collectionId": 715598719,
+  "appleTitle": "Live At Birdland (Bonus Edition)",
+  "appleArtist": "Steve Kuhn Trio",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/ea/6f/90/ea6f9009-aa01-b412-e2f1-b445e2ae0dc4/mzaf_4284199671301083276.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Dave Koz|Memories of a Winter's Night": {
+  "batch": "c160",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 727377934,
+  "appleTitle": "Memories of a Winter's Night",
+  "appleArtist": "Dave Koz",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5f/b2/9e/5fb29eae-e550-75cd-7b93-aaf6d75cc11d/mzaf_7284805258437811780.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Götz Alsmann|Mein Geheimnis": {
+  "batch": "c160",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 1620453262,
+  "appleTitle": "Mein Geheimnis",
+  "appleArtist": "Götz Alsmann",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/e9/35/af/e935af3e-bb41-c273-a9d3-a4028bc55d4b/mzaf_11290875144502327081.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jeff Lorber|He Had a Hat": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 723651032,
+  "appleTitle": "He Had a Hat",
+  "appleArtist": "Jeff Lorber",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1a/2a/31/1a2a3128-c95f-c73f-4dae-09ab74724e52/mzaf_17248573436737244100.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jacky Terrasson|Mirror": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 716132840,
+  "appleTitle": "Mirror",
+  "appleArtist": "Jacky Terrasson",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/99/00/0f/99000f3b-6ae6-1901-c5b7-f2dba2f814cd/mzaf_1203706438981573283.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Joe Lovano & Hank Jones|Kids: Live at Dizzy's Club Coca-Cola": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715806389,
+  "appleTitle": "Kids: Live at Dizzy's Club",
+  "appleArtist": "Joe Lovano & Hank Jones",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a8/17/13/a81713ac-b3a2-9bf2-1810-743fdcb82005/mzaf_2297708690982700504.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jimmy Smith|Straight Life": {
+  "batch": "c160",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 715697446,
+  "appleTitle": "Straight Life",
+  "appleArtist": "Jimmy Smith",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/05/9f/a3/059fa368-eb24-a9ea-97b5-0dceeed9c099/mzaf_4205360745729055906.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Fabrizio Bosso|You've Changed": {
+  "batch": "c160",
+  "tried": [
+   "us:12→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 712305613,
+  "appleTitle": "You've Changed",
+  "appleArtist": "Fabrizio Bosso",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5b/0e/c3/5b0ec3fd-78d0-7d29-8578-05f6b0dc8df1/mzaf_6140230299977036175.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Terence Blanchard|A Tale of God’s Will (A Requiem for Katrina)": {
+  "batch": "c160",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 715983898,
+  "appleTitle": "A Tale of God's Will (A Requiem for Katrina)",
+  "appleArtist": "Terence Blanchard",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/27/e9/2e/27e92ec6-76e9-2d29-d76e-06a91018aecd/mzaf_7014907816159941764.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Charles Mingus Sextet with Eric Dolphy|Cornell 1964": {
+  "batch": "c160",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:12→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:12→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Marc Moulin|I Am You": {
+  "batch": "c160",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 691322802,
+  "appleTitle": "I Am You",
+  "appleArtist": "Marc Moulin",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/56/92/1e569256-78fc-dd5f-ce11-f975e70f32ae/mzaf_6357603747026553691.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Erik Truffaz|Arkhangelsk": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1841955603,
+  "appleTitle": "Arkhangelsk",
+  "appleArtist": "Erik Truffaz",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 15,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/9f/fb/1c9ffb4f-717c-81ba-b587-e740b22d721c/mzaf_5338939731417595988.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Paolo Fresu Quintet|Rosso, verde, giallo e blu": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 714224934,
+  "appleTitle": "Rosso, verde, giallo e blu",
+  "appleArtist": "Paolo Fresu",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0e/2c/39/0e2c39a5-58f1-3388-bd33-e50acfe80009/mzaf_380718895904561458.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Wynton Marsalis|From the Plantation to the Penitentiary": {
+  "batch": "c160",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:12→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:12→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Floratone|Floratone": {
+  "batch": "c160",
+  "tried": [
+   "us:3→1"
+  ],
+  "front": "us",
+  "collectionId": 716621402,
+  "appleTitle": "Floratone",
+  "appleArtist": "Floratone",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b5/2e/8a/b52e8a25-6ae3-f3ec-6aa0-050325b98654/mzaf_8217578325202812532.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Gino Paoli, Enrico Rava, Flavio Boltro, Danilo Rea, Rosario Bonaccorso & Roberto Gatto|Milestones: Un incontro in jazz": {
+  "batch": "c160",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 714249802,
+  "appleTitle": "Milestones - Un incontro in Jazz",
+  "appleArtist": "Gino Paoli, Enrico Rava, Danilo Rea, Rosario Bonaccorso & Roberto Gatto",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a9/bb/c7/a9bbc77e-a0f2-04ad-b219-7f8957efee6b/mzaf_7194224401778997144.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Ron Carter|Dear Miles,": {
+  "batch": "c160",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:12→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:12→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Trio Töykeät|One Night in Tampere": {
+  "batch": "c160",
+  "tried": [
+   "us:2→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 713573450,
+  "appleTitle": "One Night In Tampere",
+  "appleArtist": "Trio Toykeat",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c5/73/59/c57359e1-c2d0-2d31-f629-7a379f68ab95/mzaf_14248898768284868921.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Van Hunt|Popular": {
+  "batch": "c160",
+  "tried": [
+   "us:7→1"
+  ],
+  "explicitTwinRecovered": 1442968330,
+  "front": "us",
+  "collectionId": 1443903095,
+  "appleTitle": "Popular",
+  "appleArtist": "Van Hunt",
+  "appleYear": "2017",
+  "explicitness": "explicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/3e/7c/d63e7c30-a37e-2051-f8c4-334c3c411ac9/mzaf_13055282591591888088.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Stacey Kent|Breakfast on the Morning Tram": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1532375619,
+  "appleTitle": "Breakfast on the Morning Tram (Bonus Edition)",
+  "appleArtist": "Stacey Kent",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/c6/cb/ecc6cbf2-5be5-a7e5-1ab3-d1192200cd52/mzaf_9357143586704565744.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Trijntje Oosterhuis|Who’ll Speak for Love: Burt Bacharach Songbook II": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715788332,
+  "appleTitle": "Who'll Speak for Love: Burt Bacharach Songbook II",
+  "appleArtist": "Trijntje Oosterhuis & Metropole Orkest",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9b/d2/f9/9bd2f9c3-bef8-bf77-fa13-0f02a3b7fee0/mzaf_14026890694770877970.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Paolo Fresu Devil Quartet|Stanley Music!": {
+  "batch": "c160",
+  "tried": [
+   "us:3→1"
+  ],
+  "front": "us",
+  "collectionId": 713822453,
+  "appleTitle": "Stanley Music!",
+  "appleArtist": "Paolo Fresu Devil Quartet",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/5e/ce/3e5ece1d-4f02-adb1-dfff-277c30724211/mzaf_2202995691615060528.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Gianluca Petrella|Kaleido": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 712823149,
+  "appleTitle": "Kaleido",
+  "appleArtist": "Gianluca Petrella & Indigo 4",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 15,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5b/f7/43/5bf74398-7944-8eb4-ea67-5fbeefb9f9af/mzaf_380895560499484448.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Stefano Di Battista|Trouble Shootin'": {
+  "batch": "c160",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:12→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:4→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:4→0"
+  ],
+  "status": "unavailable"
+ },
+ "Bill Charlap Trio|Live at the Village Vanguard": {
+  "batch": "c160",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 716540646,
+  "appleTitle": "Live At the Village Vanguard",
+  "appleArtist": "Bill Charlap Trio",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/07/fe/b107fe88-3f1a-8a6e-3bb1-518c1075d6ef/mzaf_9596123273437462434.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Kenny Werner|Lawn Chair Society": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715743074,
+  "appleTitle": "Lawn Chair Society",
+  "appleArtist": "Kenny Werner",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/27/e7/66/27e766db-c01b-8974-4e12-794ec9b6dd6a/mzaf_2086255841958633784.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Charles Tolliver|With Love": {
+  "batch": "c160",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 716103423,
+  "appleTitle": "With Love",
+  "appleArtist": "Charles Tolliver Big Band",
+  "appleYear": "2007",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4f/d4/d8/4fd4d8f3-23bd-cc65-5286-0b6c0da42b52/mzaf_4957649747355356374.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
  }
 }
