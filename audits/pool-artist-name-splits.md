@@ -489,3 +489,15 @@ KV（`desc2`／`rating4`）、Firestore `card_catalog`。
 
 **卡片一律用原文形**（裁定 187）。`ちあきなおみ` 另適用裁定 189：
 沒有官方羅馬字藝名，純拼音轉寫不算，**保留假名不羅馬化**。
+
+## 2026-09-18（c-151 a 回報，主線第 1131 條裁定）：`Benny Green` ／ `The Benny Green Trio`
+
+| 字串 | MB 實體 | 用在哪幾張 |
+|---|---|---|
+| `Benny Green` | **28b5fcc9 Person**（「jazz pianist」） | c-150 a《Lineage》、c-152 a《The Place to Be》 |
+| `The Benny Green Trio` | **4afdbd4a Group** | c-151 a《Testifyin'!》、c-151 b《That's Right!》 |
+
+**兩個都留，各卡照自己的 artist-credit。** 池中原本 0 張、無先例可照；
+MB 是兩個不同實體，兩刊榜單對後兩張逐字印 THE BENNY GREEN TRIO。
+**同形狀先例**：`Bobby Watson & Horizon`（第 997 條）、`Art Blakey and the Jazz Messengers`（池中 19 張）。
+**這不是分裂**——要防的是「同一個 credit 被寫成兩種字串」（`&` vs `and`、有無 `The`）。

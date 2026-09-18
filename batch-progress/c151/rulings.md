@@ -836,3 +836,29 @@ c-150 a 第 1021 條記過「**列舉檔裡查不到母體 ≠ 沒有母體**」
 ⚠ **記這一條是為了立偽陽性的處理方式**：這一道**只報不擋**，
 **報出來就要逐軌核一次再寫「並存」**，不要因為看起來像藝人同名就直接略過——
 第 936 條那四筆真的撞卡，長得跟這筆一模一樣。
+
+## 第 1131 條（主線裁定）：**`Benny Green` 與 `The Benny Green Trio` 兩個字串都留，這不是第 307 條的「新造分裂」**
+
+c-151 a 回報四張卡分成兩種寫法，要主線裁定。**查證與裁定如下。**
+
+- **池中 `Benny Green` 0 張**——**沒有先例可照**，第 307 條的「照池中先例」在這裡是空的。
+- **MB 是兩個不同的實體**，不是同一個實體的兩種寫法：
+  `Benny Green` ＝ **28b5fcc9 Person**（disambiguation「jazz pianist」），
+  `The Benny Green Trio` ＝ **4afdbd4a Group**。
+- **四張卡各自的 artist-credit 與 MB 一致**：
+  c-150 a《Lineage》與 c-152 a《The Place to Be》credit 是 `Benny Green`；
+  c-151 a《Testifyin'!》與 c-151 b《That's Right!》credit 是 `The Benny Green Trio`，
+  **而且兩刊榜單逐字印 THE BENNY GREEN TRIO**。
+
+**裁定：兩個字串都留，各卡照自己的 credit。**
+**理由是同形狀的先例已經有兩個**：第 997 條的 `Bobby Watson & Horizon`（credit 是團名、底層實體是 Person，
+四處來源都寫團名，照 credit 寫）；池中 19 張 `Art Blakey and the Jazz Messengers` 與人名卡並存。
+**「同一位樂手的個人盤與他領的團的盤各自掛名」不是分裂，是兩個被 credit 的演出單位。**
+
+⚠ **真正要防的分裂是「同一個 credit 被寫成兩種字串」**（`&` vs `and`、有無 `The`）——
+**這四張不是那個形狀**。已在 `audits/pool-artist-name-splits.md` 記一筆備查。
+
+## 第 1132 條（主線）：**《Play》加 `queryAlias`**
+
+第 1063 條「同碟兩個盤名」在本批中一張：**《Play》日本 TOCJ-5690 ＝《Play - スペイン》**
+（腰帶把〈Spain〉掛成副標，錄音註記與六軌曲目與美版一字不差）。**已加進 `queryAlias`。**
