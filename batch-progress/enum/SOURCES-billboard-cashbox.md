@@ -1076,3 +1076,53 @@ Count Basie《Breakfast Dance And Barbecue》與 Sarah Vaughan《Sweet & Sassy�
 查 `elling` 大量命中 `selling`；查 `don byron` 命中鄉村製作人 `Byron Gallimore`。
 
 **到此合計覆蓋：Billboard 1955→2002 全年（2000 與 2001 補齊後已無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-158 **a 組**策展層自抓：**Billboard 2003 年全年**）
+
+**c-158 a 組 23 筆裡有 8 筆的年份落在 2003**（Norah Jones《Live in New Orleans》、Ron Carter《The Golden Striker》、
+Stefon Harris《The Grand Unification Theory》、Flavio Boltro《40°》、Chucho Valdés《New Conceptions》、
+Paul Jackson, Jr.《Still Small Voice》、Emmanuel Pahud & Jacky Terrasson《Into the Blue》、
+＋年份改判成 2003 的 Soulive 同名現場盤），**而派工信逐字寫「紙本在 repo 裡覆蓋 Billboard 1955→2002 全年無缺口（2003 沒人掃）」**
+——2003 年由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2003-ocr.txt.gz` | **3.2 MiB 壓縮 / 7.3 MiB 原文** | **2003-01-11 → 2003-12-27，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **763** | **2003-01-04（探測回 404，2003 年第一期就是 01-11——與 1999／2001 同形）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- 原文 7.3 MiB 未達 8 MiB 門檻，**仍依既有慣例存成 `.txt.gz`**（壓後 3.2 MiB）。
+
+⚠ **2003 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/00s/2003/`**，**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**
+——**與 2001／2002 完全同形，派工信說的「2003 要自己抓時可比照試」成立。**
+⚠ ⚠ **索引頁仍然 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」第三次生效**（前兩次是 1999、2001）：
+**枚舉 2003 年全部 52 個週六逐一探測，51 個回 `206`、只有 `2003-01-04` 回 404，總量 644.7 MiB。成本 52 次請求、數秒。**
+**→ 這個方法現在有三個成功樣本，維持標準做法。**
+
+⚠ **關鍵字集是為 c-158 a 的 23 筆配的**（約 75 個詞 ＋ 目錄號片段
+`90832`／`32498`／`41820`／`40496`／`92602`／`57257`／`42805`／`90084`／`311340`／`80609`／`5806092`／`90431`／
+`35985`／`39838`／`40668`／`57189`／`38564`／`35072`／`35869`／`35870`／`35986`／`34595`／`40622`／`40537`／`35565`／
+`5425782`／`557422`，另含通用詞 `blue note`／`blue nole`／`slue note`／`bine note`／`blue nate`／`bhre note`／
+`top jazz`／`top jall`／`top jail`／`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／
+`traditional jazz`／`bruce lundvall`／`lundvall`／`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／
+`metro blue`／`somethin' else`／`connoisseur`）——**查別的 2003 年碟前先確認關鍵字夠不夠；通用詞 `blue note` 一條就吃下大半命中頁。**
+
+⚠ ⚠ **2003 年最有用的兩期**：
+**`BB-2003-05-31` p75 是 Blue Note 的全版廣告**（社史口吻的整頁文案），逐字分成兩欄——
+「OUT NOW... SCOLOHOFO／SOULIVE／DIANNE REEVES *A Little Moonlight*／**RON CARTER *Golden Striker***／
+ERIK TRUFFAZ *The Walk of the Giant Turtle*／KURT ELLING *Man in the Air*」與
+「AND ON THE HORIZON, NEW ALBUMS FROM... **STEFON HARRIS *The Grand Unification Theory***／GREG OSBY *St. Louis Shoes*／
+**JACKY TERRASSON *Smile***／MARTIAL SOLAL／JOE LOVANO *On This Day*／NORAH JONES／CASSANDRA WILSON／VAN MORRISON／
+TERENCE BLANCHARD／PAT MARTINO／**CHUCHO VALDÉS**／**PAUL JACKSON, JR. *Still Small Voice***／JASON MORAN／MADLIB *Shades of Blue*」，
+同頁逐字寫該年「received nine GRAMMYs」與 Down Beat／JazzTimes 的 LABEL OF THE YEAR；
+**`BB-2003-04-19` p30 是爵士評介頁**，逐字給出 Soulive 同名盤的 `Blue Note 7243 5 42805 0 4 RELEASE DATE: April 8`。
+**另 `BB-2003-04-26` p17 是 EMI 集團（Angel／Manhattan／Blue Note 三家合打）的整頁藝人名單廣告**——
+⚠ **那一頁只列藝人不列專輯、而且混了 Perlman／Domingo 等古典藝人，不能拿來當「Blue Note 把某張碟當自家發行」的證據**（第1445條）。
+
+⚠ **2003 年 Billboard 的爵士欄仍分兩張榜**（`Top Jazz Albums` 與 `Top Contemporary Jazz Albums`），
+**`Jazz → Jall／Jail` 的 OCR 形變到 2003 年還在**；**另有 `Top Music Videos` 榜**（本棒靠它判掉 Norah Jones 的純影音 DVD，見 c-158 rulings 第1504條）。
+
+⚠ **本棒實測的查詢坑**：查 `doky` 在 2003-04-05 p50 命中的是 **Niels Lan Doky**（Chris Minh Doky 的兄長）與 Gino Vannelli 的合作報導；
+查 `ron carter` 大量命中 **Aaron Carter**（`aaron carter` 內含 `ron carter`）；查 `ferrell` 命中的多半是作曲人欄的 `E. Ferrell`；
+查 `boltro`／`perko`／`huchard`／`pahud`（本碟）皆 0 頁。
+
+**到此合計覆蓋：Billboard 1955→2003 全年（2003 補齊後仍無斷點），Cash Box 1960-11→1996-11（停刊）。**
