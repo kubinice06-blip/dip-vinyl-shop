@@ -1,0 +1,2930 @@
+{
+ "schemaVersion": 1,
+ "batch": "c138-20260917",
+ "albums": [
+  {
+   "artist": "Jimmy Witherspoon",
+   "album": "Singin' The Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 105acfda-57ca-4058-a358-20a1e1c37cc8。回問 release-group 端點（inc=artist-credits+releases）：title「Singin' The Blues」、artist-credit「Jimmy Witherspoon」（artist 1eaf1688-4f52-49e8-98bc-743828fe3e7e，Person）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels）：43201e7b（1959 US Official 12\" Vinyl 11 軌，World Pacific WP-1267）、3eafbb08（1960 US 12\" Vinyl 11 軌，World Pacific WP-1402，題《There's Good Rockin' Tonight!》）、1963faf7（1998 XE CD 12 軌，Blue Note CDP 7243 4 94108 2 4／Pacific Jazz CDP 94108）。原 LP 軌序（43201e7b）：S.K. Blues／When I've Been Drinkin'／Then The Lights Go Out／All That's Good／Spoon's Blues／It Ain't What You're Thinkin'／Ain't Nobody's Business／Wee Baby Blues／Times Are Changing／Sweet's Blues／There's Good Rockin' Tonight。刻意不釘：d69e3128-cb3f-4cda-bb85-502d65ee3a1f《Singin' The Blues》2009（Jazz Beat 回顧輯，同題不同碟）。",
+    "rgMbid": "105acfda-57ca-4058-a358-20a1e1c37cc8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/105acfda-57ca-4058-a358-20a1e1c37cc8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6989,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱藍調的站在最前面，後面整排是西岸爵士：Harry Edison、Hampton Hawes、Teddy Edwards。小號另有 Gerald Wilson。十一軌以〈S.K. Blues〉開場，慢的是〈Ain't Nobody's Business〉，收尾的〈There's Good Rockin' Tonight〉轉快板。據 Deffaa 的記載，這批錄音 1956 年錄於 Rip Records，1959 年由 World Pacific 以 WP-1267 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=105acfda-57ca-4058-a358-20a1e1c37cc8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-08-31.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-12-21.pdf",
+     "https://en.wikipedia.org/wiki/Singin%27_the_Blues_(Jimmy_Witherspoon_album)",
+     "https://en.wikipedia.org/wiki/Pacific_Jazz_Records",
+     "https://itunes.apple.com/lookup?id=1443849556&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/105acfda-57ca-4058-a358-20a1e1c37cc8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0b/2c/0d/0b2c0d6d-19e2-c2b3-65a1-80d3b9a7e4dc/mzaf_15922506716805001011.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443849556",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dizzy Reece",
+   "album": "Star Bright",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 93600297-32db-4fda-a14f-e84c8243d8e9。回問 release-group 端點：title「Star Bright」、artist-credit「Dizzy Reece」（artist cbde4132-ce04-4368-b859-22c440f23961，Person，Jamaica）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 12 個 release。release 端點：8bd7a626（1959 US Official 12\" Vinyl 6 軌，Blue Note BLP 4023）、54f5cfa3（1972 US 12\" BLP 4023）、e35d549b（1989-11-08 JP 12\" BN 4023／BST 84023）、c38e4513（1993-06-30 JP CD TOCJ-4023）、fc769c37（1999-03-25 JP CD TOCJ-9092）、f0f49f24（2003 US 12\" Classic Records BN 4023-MONO-200G）、9789057c（2008 JP CD TOCJ-7156）、717894dd（2010 JP CD TOCJ-8698）、c0add75b（2013 US 2×12\" 45 轉 Music Matters MMBST-84023）、97622d50（2019 JP CD UCCQ-9500）、5ccf9aaa（2023-04-21 XW 12\" Blue Note 5504143／ST-84023）、4b168f86（2024-05-22 JP HQCD UCCQ-9669）。原 LP 軌序：The Rake／I'll Close My Eyes／Groovesville／The Rebound／I Wished on the Moon／A Variation on Monk。刻意不釘：無同名 RG。",
+    "rgMbid": "93600297-32db-4fda-a14f-e84c8243d8e9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/93600297-32db-4fda-a14f-e84c8243d8e9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5025,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈The Rebound〉切成 45 轉單曲，Billboard 的評語直接寫給唱片行：拿它推那張 LP。六首 1959 年 11 月 19 日一場錄完，五重奏是 Hank Mobley 的次中音加 Wynton Kelly、Paul Chambers、Art Taylor 的節奏組，班底換成全美國樂手。〈Groovesville〉等四首是他自己寫的。他剛從倫敦搬到紐約，年底才在哈林區的 Well's Club 首演，1960 年以 BLP 4023 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=93600297-32db-4fda-a14f-e84c8243d8e9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-02-01.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-12-14.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-06-15.pdf",
+     "https://en.wikipedia.org/wiki/Star_Bright_(Dizzy_Reece_album)",
+     "https://itunes.apple.com/lookup?id=1356219543&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/93600297-32db-4fda-a14f-e84c8243d8e9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a7/f2/9d/a7f29d10-0402-f390-868a-571f8fa4480c/mzaf_16376238347604928834.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1356219543",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Booker Little & Max Roach",
+   "album": "Booker Little 4 & Max Roach",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b49876cf-6f3b-31dc-8a39-aba2d1575c06。回問 release-group 端點：title「Booker Little 4 & Max Roach」、artist-credit「Booker Little 4 & Max Roach」（artist 1b9ae554-0883-4cf6-86b3-cc274f278dbb Booker Little 4, Group ＋ 0b6aea55-d855-4a33-ae08-b0280dd28684 Max Roach, Person）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 8 個 release。release 端點：bb1ce7d7（1959 US Official 12\" Vinyl 6 軌，United Artists UAL 4034）、f829f341（1959 US Promotion 12\" UAL 4034）、4216e953（1959 US 12\" UAS 5034）、89697841（1976 JP 12\" GXC-3137）、ee16e3a8（1991-06-18 US CD 8 軌，Blue Note 844572）、a49e4d5e（2023-03-25 XW Digital 6 軌，credit 只掛 Booker Little）、4f2cec2d（2024-10-04 XW 12\" Tone Poet 602448819482）、a3082050（2024-12-18 JP HQCD UCCQ-9786）。原 LP 軌序：Milestones／Sweet and Lovely／Rounders Mood／Dungeon Waltz／Jewel's Tempo／Moonlight Becomes You。刻意不釘：無同名 RG（MB 搜尋 Defiant／Booker Little and Max Roach 只回本 RG）。",
+    "rgMbid": "b49876cf-6f3b-31dc-8a39-aba2d1575c06",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b49876cf-6f3b-31dc-8a39-aba2d1575c06/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 6,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻）；obscurity=5、listeners=6，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他是 Clifford Brown 走後頂上那個位子的人；這張換 Max Roach 坐進他的鼓椅。1958 年 10 月錄於紐約 Nola Penthouse Studios，五人是他的小號、George Coleman 的次中音，加 Tommy Flanagan 與 Art Davis。六軌裡三首是他寫的，編曲也全部出自他之手。他因學業讓出位子，畢業才回鍋，這是他掛頭牌的頭一張。United Artists 排進 1960 年 1 月的新片計畫，編號 UAL 4034。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b49876cf-6f3b-31dc-8a39-aba2d1575c06&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-01-18.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-08-31.pdf",
+     "https://en.wikipedia.org/wiki/Booker_Little_4_and_Max_Roach",
+     "https://en.wikipedia.org/wiki/Booker_Little",
+     "https://itunes.apple.com/lookup?id=1465204843&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/b49876cf-6f3b-31dc-8a39-aba2d1575c06"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/1f/d7/7d1fd79a-3a93-e130-50da-f8c33f41dd0c/mzaf_15117962096382401959.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1465204843",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kenny Burrell",
+   "album": "On View at the Five Spot Cafe",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4421b83f-472f-3417-bcab-263ed31100b6。回問 release-group 端點：title「On View at the Five Spot Cafe」、artist-credit「Kenny Burrell with Art Blakey」（artist a85b66d2-34df-4d5a-8c0d-d585b8a14ce1 Kenny Burrell, Person ＋ 601e7466-eaf5-4a91-9909-ffd770b7e04a Art Blakey, Person）、first-release-date 1959、primary-type Album、secondary-types [Live]、轄下 10 個 release。release 端點：c0d3a651（1959 US Official 12\" Vinyl 5 軌，Blue Note BLP 4021，credit 只掛 Kenny Burrell，title「At The Five Spot Cafe」）、3d437162（1987 US CD 8 軌，CDP 7 46538 2）、036b864c（2010 US 2×12\" 45 轉 Analogue Productions AP-84021）、7d9932f5（2011 US Hybrid SACD 8 軌，CBNJ 84021 SA／BST-84021）、76ca9cfc（2015-06-03 JP CD UCCQ-9103，題「At the Five Spot Cafe」）、1e6d4f7f（2021 XW Digital 5 軌 HDTT）、90f5f1b7（2025-04-25 XW 3×12\" 14 軌 Tone Poet 602475022817，題《…The Complete Masters》）、111f5f2f／6a2dfa70（2025 2CD 14 軌 602475958116）、b53d58b3（2025-04-25 XW Digital 14 軌）。原 LP 軌序：Birks' Works／Hallelujah／Lady Be Good／Lover Man／36-23-36（1959-08-25 Five Spot Café 現場）。刻意不釘：無同名 RG。",
+    "rgMbid": "4421b83f-472f-3417-bcab-263ed31100b6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4421b83f-472f-3417-bcab-263ed31100b6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1276,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1276，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤面印著 Gershwin 的〈Lady Be Good〉，響起來卻是 Monk 的〈Hackensack〉。1959 年 8 月 25 日在 Five Spot Cafe 的現場，Bobby Timmons 與 Roland Hanna 各彈兩個 set，Tina Brooks 的次中音只上兩首，底下是 Art Blakey 的鼓。Andy Summers 說他〈Lover Man〉的獨奏是錄過最好的爵士吉他獨奏之一。1960 年以 BLP 4021 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4421b83f-472f-3417-bcab-263ed31100b6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://en.wikipedia.org/wiki/On_View_at_the_Five_Spot_Cafe",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-12-14.pdf",
+     "https://itunes.apple.com/lookup?id=1795844961&country=us&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1806529271&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/4421b83f-472f-3417-bcab-263ed31100b6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/6a/60/a36a60dd-c348-d091-1ad2-16044a3eecc0/mzaf_15528872283430552622.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1806529271",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bob Brookmeyer & Bill Evans",
+   "album": "The Ivory Hunters",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e5684eee-e595-3a4e-bc1b-a0b7423015a8。回問 release-group 端點：title「The Ivory Hunters」、artist-credit「Bob Brookmeyer & Bill Evans」（artist 9d1b5faa-96b9-4061-b1e9-1fb9cd74ab66 Bob Brookmeyer, Person ＋ 8247a3f2-3a8e-4256-b322-6c57b03a4e36 Bill Evans, Person）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 7 個 release。release 端點：08f86393（1959 US Official 12\" Vinyl 6 軌，United Artists UAL-3044）、5e7c2fe7（1959 US 12\" UAL-3044／UAS-6044）、4eb66af8（1994 US CD 6 軌，Blue Note CDP 7243 8 27324 2 6）、084d3693（1994 US 載體 null，724349543720）、a876ce7e（2003-02-26 JP CD TOCJ-9486）、260e098a（2009 XE CD 13 軌 Lone Hill Jazz LHJ10371，公共領域擴充盤）、91115eb2（2023-09-20 JP SHM-CD UCCU-6337）。原 LP 軌序：Honeysuckle Rose／As Time Goes By／The Way You Look Tonight／It Could Happen to You／The Man I Love／I Got Rhythm。刻意不釘：無同名 RG。",
+    "rgMbid": "e5684eee-e595-3a4e-bc1b-a0b7423015a8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e5684eee-e595-3a4e-bc1b-a0b7423015a8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 575,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=575，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩台鋼琴分軌對彈：右聲道 Bill Evans，左聲道是平常吹閥式長號的 Bob Brookmeyer。副題叫 Double Barrelled Piano，1959 年 3 月 12 日錄於紐約，另有 Percy Heath 的貝斯與 Connie Kay 的鼓。六首全是三○、四○年代的標準曲，〈I Got Rhythm〉在內。Billboard 1959 年 10 月的目錄段已列出 United Artists 的 UAL 3044 與 UAS 6044。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e5684eee-e595-3a4e-bc1b-a0b7423015a8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-10-05.pdf",
+     "https://en.wikipedia.org/wiki/The_Ivory_Hunters",
+     "https://musicbrainz.org/ws/2/release?release-group=fa4ae08a-5924-3669-a8fe-d60990b7f2a3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=715574326&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/e5684eee-e595-3a4e-bc1b-a0b7423015a8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/09/28/63/09286335-252c-ccd5-3a09-a0f309c6d88b/mzaf_13467478385706052563.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715574326",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Milt Jackson",
+   "album": "Bags' Opus",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fa4ae08a-5924-3669-a8fe-d60990b7f2a3。回問 release-group 端點：title「Bags' Opus」、artist-credit「Milt Jackson」（artist 2e38e1de-2890-4620-8467-5b0bb4641cb9，Person）、first-release-date 1959-11、primary-type Album、secondary-types 空、轄下 5 個 release。release 端點：a3056ba8（1959-11 GB Official 12\" Vinyl 6 軌，London Records SAH-T 6049，title「Bags’ Opus」）、febe5b17（無日期無國別 12\" Vinyl 6 軌，無廠牌）、f7657377（1991 US Official CD 6 軌，Blue Note CDP 7 84458 2）、a9bb4ef3（1991 US CD 6 軌，CDP 7 84458 2／BMG Direct D 116231）、6733fcfa（XW Digital 6 軌，Blue Note，barcode 00602577533013）。**美國原盤 United Artists UAL 4022／UAS 5022（1959）MB 未建**，見 Discogs master 240958。原 LP 軌序（London 版）：Ill Wind／Blues for Diahann／Afternoon in Paris／I Remember Clifford／Thinking of You／Whisper Not。刻意不釘：c5041a96-…《Bean Bags plus Bags' Opus》2011（合輯）、921878ec-…《Opus de Jazz》1955（不同碟）。",
+    "rgMbid": "fa4ae08a-5924-3669-a8fe-d60990b7f2a3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa4ae08a-5924-3669-a8fe-d60990b7f2a3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1152,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1152，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈I Remember Clifford〉是 Benny Golson 寫的輓歌，這張碟上吹它的就是他本人。1958 年 12 月 28、29 日錄於紐約，六重奏由 Jackson 的顫音琴領銜，Connie Kay 打鼓。輓歌 1957 年寫給 Clifford Brown；六軌裡只有〈Blues for Diahann〉是他自己的曲子。Kay 也在 Modern Jazz Quartet，1959 年由 United Artists 以 UAL 4022 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=fa4ae08a-5924-3669-a8fe-d60990b7f2a3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-03-30.pdf",
+     "https://en.wikipedia.org/wiki/Bags%27_Opus",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-05-02.pdf",
+     "https://en.wikipedia.org/wiki/Milt_Jackson",
+     "https://itunes.apple.com/lookup?id=1455679371&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/fa4ae08a-5924-3669-a8fe-d60990b7f2a3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ac/38/fc/ac38fcfc-2e1f-e246-d58e-5575ad50349b/mzaf_244806787110487930.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1455679371",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cecil Taylor",
+   "album": "Hard Driving Jazz",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d556e4a0-74a4-3995-8e85-2f3761489757。回問 release-group 端點：title「Hard Driving Jazz」、artist-credit「The Cecil Taylor Quintet」（artist c718232d-5c58-474f-b770-a581977fb5c8 Cecil Taylor Quintet, Group）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 10 個 release。release 端點：380dead2（1959 US Official 12\" Vinyl 4 軌，United Artists UAL 4014，題 Hard Driving Jazz）、46298ca4（1959 US 12\" UAS 5014，題「Stereo Drive」）、b04e9892（1963 US 12\" United Artists Jazz UAJ 14001，題「Coltrane Time」，credit John Coltrane）、c31688ea（1968 US 12\" Solid State SS 18025，Coltrane Time）、0d9192d1（1986 JP CD Liberty CP32-5189，Coltrane Time）、e644c135（1991 US CD 4 軌，Blue Note CDP 7 84461 2，題 Coltrane Time，credit John Coltrane）、054dea4a（2000-12-20 JP CD TOCJ-9255／UAJS-15001）、08167e6f（2010-09-22 JP CD TOCJ-50024）、c3fb8677（2017-11-26 Digital Resurfaced Records）、0872689e（2023-07-07 Digital Grand Avenue）。原 LP 軌序：Double Clutching／Like Someone in Love／Shifting Down／Just Friends（1958-10-13 紐約）。刻意不釘：582ffbe9-…《Hard Driving Jazz》2005-09（Cecil Taylor with John Coltrane，Album+Compilation）、c709d413-…《Hard Driving Jazz》2012（The Cecil Taylor Quintet，Album+Compilation）——同題再發／擴充盤。",
+    "rgMbid": "d556e4a0-74a4-3995-8e85-2f3761489757",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d556e4a0-74a4-3995-8e85-2f3761489757/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 3292,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鋼琴手想找 Ted Curson 吹小號，公司給了 Kenny Dorham——錄音現場兩人談不攏。1958 年 10 月 13 日一場錄完，五重奏另有 John Coltrane 的次中音、Chuck Israels 的貝斯與 Louis Hayes 的鼓。四軌裡〈Shifting Down〉出自 Dorham。同一張碟的立體聲版另題《Stereo Drive》，Billboard 1959 年 3 月的目錄段把兩個題名並排印著，United Artists 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d556e4a0-74a4-3995-8e85-2f3761489757&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-03-30.pdf",
+     "https://en.wikipedia.org/wiki/Stereo_Drive",
+     "https://en.wikipedia.org/wiki/Cecil_Taylor",
+     "https://itunes.apple.com/lookup?id=724624098&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/d556e4a0-74a4-3995-8e85-2f3761489757"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/a8/9f/e7a89f33-ffba-efbf-790c-2a26b09576cb/mzaf_7262818158626433996.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "339185445",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoot Sims & Bob Brookmeyer",
+   "album": "Stretching Out",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b72945f3-8abe-41a6-bc5b-c95b833a43bf。回問 release-group 端點：title「Stretching Out」、artist-credit「Zoot Sims - Bob Brookmeyer Octet」（artist 3e9368ee-c7dd-4f5a-a46f-68e388e77789 The Zoot Sims - Bob Brookmeyer Octet, Group）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 7 個 release。release 端點：e8ad2525（1959 US Official 12\" Vinyl 6 軌，United Artists UAL 4023）、7dd4d8d2（1959 US 12\" UAS 5023）、c09e4cac（1984 ES 12\" United Artists 054-2602761）、67695c21（1993-02-24 JP CD Liberty TOCJ-5441）、73399e6e（2011-09-21 JP CD TOCJ-50178）、8d6ed7a8（2016-10-07 XW Digital 6 軌，Blue Note，00602508666230）、450c7ebf（2021-11-24 JP CD UCCU-8245）。原 LP 軌序：Stretching Out／Now Will You Be Good／Pennies From Heaven／King Porter／Ain't Misbehavin'／Bee Kay。刻意不釘：bb5de5de-…《Stretching Out / Kansas City Revisited》2007（二合一合輯）、bd22fa63-…《Four Classic Albums》2012。",
+    "rgMbid": "b72945f3-8abe-41a6-bc5b-c95b833a43bf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1959,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b72945f3-8abe-41a6-bc5b-c95b833a43bf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 17,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=17，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "編曲幾乎全出自 Brookmeyer 之手，Al Cohn 只分到一首，Bill Potts 也只有一首。八重奏 1958 年錄成，隔年由 United Artists 發行：兩支主管是 Zoot Sims 的次中音與 Brookmeyer 的閥式長號。八人裡三個來自 Count Basie 的體系：Harry Edison、Freddie Green 與 Eddie Jones。Cohn 寫〈Pennies from Heaven〉，Potts 寫〈Bee Kay〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b72945f3-8abe-41a6-bc5b-c95b833a43bf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-03-30.pdf",
+     "https://en.wikipedia.org/wiki/Stretching_Out_(Zoot_Sims_and_Bob_Brookmeyer_album)",
+     "https://en.wikipedia.org/wiki/Zoot_Sims",
+     "https://itunes.apple.com/lookup?id=1494035662&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/b72945f3-8abe-41a6-bc5b-c95b833a43bf"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c1/ca/52/c1ca52e5-d553-5978-9dea-8a7124f2014e/mzaf_6234418702038031585.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1494035662",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Donald Byrd",
+   "album": "Byrd in Flight",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 256746d5-b408-3cf0-8d2a-73d7bda1d993。回問 release-group 端點：title「Byrd in Flight」、artist-credit「Donald Byrd」（artist 69f95e5c-4b34-4c8b-b8fe-c59f9296195a，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 21 個 release。release 端點（節錄）：7ed73703（1960 US Official 12\" Vinyl 6 軌，Blue Note BLP 4048）、07ab0065（1960 US 12\" BST 84048）、60daccf6（1966 US BLP 4048）、560cbecf／94c1f3d0（1973／1975 US BST 84048）、b160136b（1977 NL 5C 038-98573S）、7906a76a（1979 JP GXK 8125）、3b931b28（1990 JP BN 4048）、98c10e97（1993 JP CD TOCJ-4048）、11b49f56（1996 US CD 9 軌，CDP 7243 8 52435 2 3）、d3a949b6（1999 JP CD TOCJ-9149）、370bfe8f（2005 JP CD TOCJ-6531）、06b3e9b2（2008 US Classic Records BN 4048-MONO-200G）、ec09fa18（2009 JP CD TOCJ-8556）、5dbe8aa0（2012 Digital Capitol）、06769590／1969c448（2015 Digital）、3ee5cfbc（2015 JP CD UCCQ-9105）、02df406a（2021-01-08 XW 12\" Tone Poet B0032113-01）、974383e1（2021 JP CD UCCU-8102）、7f3f3e22（2024-09-25 JP HQCD UCCQ-9714）。原 LP 軌序：Ghana／Little Boy Blue／Gate City／Lex／\"Bo\"／My Girl Shirl。刻意不釘：無同名 RG。",
+    "rgMbid": "256746d5-b408-3cf0-8d2a-73d7bda1d993",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/256746d5-b408-3cf0-8d2a-73d7bda1d993/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13776,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三場錄音隔了半年，前線也換了人：一月是 Hank Mobley，七月是 Jackie McLean。三場都在 Van Gelder 的錄音室：1960 年 1 月 17、25 日與 7 月 10 日，底下是 Duke Pearson 的鋼琴與 Lex Humphries 的鼓。六軌以〈Ghana〉開場，〈Gate City〉等三首出自 Pearson。盤面的〈Little Boy Blue〉其實是〈Little Girl Blue〉。1961 年以 BLP 4048 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=256746d5-b408-3cf0-8d2a-73d7bda1d993&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1961/CB-1961-02-25.pdf",
+     "https://en.wikipedia.org/wiki/Byrd_in_Flight",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1961/Billboard%201961-03-20.pdf",
+     "https://itunes.apple.com/lookup?id=1443142596&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/256746d5-b408-3cf0-8d2a-73d7bda1d993"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/8c/f6/158cf691-e682-0f55-1c66-8af5a2c0f7bf/mzaf_11519769436213421703.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443142596",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Art Blakey and the Jazz Messengers",
+   "album": "Mosaic",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group aac05e6c-4c7e-31da-ba7e-e5b70d288ef3。回問 release-group 端點：title「Mosaic」、artist-credit「Art Blakey & The Jazz Messengers」（artist 209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee，Group）、first-release-date 1960-12-01（⚠ 數位版占位日，早於錄音日）、primary-type Album、secondary-types 空、轄下 9 個 release。release 端點：960b525e（記 1961-10-02＝錄音日，US Official Vinyl 5 軌，Blue Note BST 84090）、843428c3（無日期 US CD 5 軌，CDP 7 46523 2）、f0a3cc02（2006-02-21 US CD RVG 0946 3 37769 2 0）、d6c994a9（2006 XE CD 0946 3 55497 2 0）、2a393658（記 1960-12-01，XW Digital 5 軌，題《Mosaic (The Rudy Van Gelder Edition)》，barcode 094633776951）、395592e0（2013 US 2×12\" 45 轉 Music Matters MMBST-84090）、de3f2dd3（2015 US Digital）、0326ab6e（2023-10-20 XW 12\" Classic Vinyl 5524253／BST 84090）、f954ecd4（2024-01-24 JP HQCD UCCQ-9628）。原 LP 軌序：Mosaic／Down Under／Children of the Night／Arabia／Crisis（1961-10-02 Van Gelder Studio）。刻意不釘：2d42a629-…《Jazz Messengers!!!!! + Mosaic》2013-10-14（二合一）。",
+    "rgMbid": "aac05e6c-4c7e-31da-ba7e-e5b70d288ef3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/aac05e6c-4c7e-31da-ba7e-e5b70d288ef3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9697,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五首曲子由五個團員各寫一首，標題曲出自剛進團的鋼琴手 Cedar Walton。1961 年 10 月 2 日一場錄完，三管前線是 Freddie Hubbard 的小號、Curtis Fuller 的長號與 Wayne Shorter 的次中音。Hubbard 與 Walton 接替的是 Lee Morgan 與 Bobby Timmons。Billboard 1962 年 1 月把〈Down Under〉挑成電台首選，編號 BLP 4090。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=aac05e6c-4c7e-31da-ba7e-e5b70d288ef3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1962/Billboard%201962-01-20.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1962/CB-1962-01-27.pdf",
+     "https://en.wikipedia.org/wiki/Mosaic_(Art_Blakey_album)",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1960/CB-1960-11-05.pdf",
+     "https://itunes.apple.com/lookup?id=1443824649&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/aac05e6c-4c7e-31da-ba7e-e5b70d288ef3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/cb/41/93cb4197-433e-3efc-f70c-52d7fdf11de1/mzaf_6044686290183835713.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443824649",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Duke Jordan",
+   "album": "Flight to Jordan",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9fd708dd-ac97-30fe-a2e8-41e02fcfec94。回問 release-group 端點：title「Flight to Jordan」、artist-credit「Duke Jordan」（artist 18288a13-0259-4a44-a9dc-558229fbfdd2，Person）、first-release-date 1960-08-04（⚠ 數位版占位日＝錄音日）、primary-type Album、secondary-types 空、轄下 8 個 release。release 端點：d7f4d415（**1961-05** US Official 12\" Vinyl 6 軌，Blue Note BLP 4046）、39408316（1972 US 12\" BST 84046）、a1ea192f（2007 US CD 8 軌，0946 3 92759 2 2）、bcb1b7d2（2007 US Digital 8 軌，92759）、367badab（記 1960-08-04，XW Digital 8 軌，題「Flight To Jordan」，barcode 00094639275854）、33abedd1（2008-06-11 JP Vinyl 6 軌，TOJJ-6515）、80c0d805（2011 US Hybrid SACD 8 軌，Analogue Productions CBNJ 84046 SA）、e730fdbd（無日期載體 null 8 軌）。原 LP 軌序：Flight to Jordan／Starbrite／Squawkin'／Deacon Joe／Split Quick／Si-Joya（1960-08-04 Van Gelder Studio）。刻意不釘：無同名 RG。",
+    "rgMbid": "9fd708dd-ac97-30fe-a2e8-41e02fcfec94",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9fd708dd-ac97-30fe-a2e8-41e02fcfec94/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9257,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "壓軸的〈Si-Joya〉副題寫著「No Problem」，後來被法國電影的配樂用了出去。六首 1960 年 8 月 4 日在 Van Gelder 的錄音室一場錄完，前排是 Dizzy Reece 的小號與 Stanley Turrentine 的次中音，底下是 Jordan 的鋼琴、Reginald Workman 的貝斯與 Art Taylor 的鼓。六首全是 Jordan 的原創，標題曲快板、〈Starbrite〉慢板抒情。1961 年以 BLP 4046 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9fd708dd-ac97-30fe-a2e8-41e02fcfec94&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1961/CB-1961-05-20.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1961/CB-1961-06-24.pdf",
+     "https://en.wikipedia.org/wiki/Flight_to_Jordan",
+     "https://itunes.apple.com/lookup?id=715854469&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/9fd708dd-ac97-30fe-a2e8-41e02fcfec94"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/81/c1/0d/81c10d2d-34ec-e626-52ea-ca0e0965459e/mzaf_14105410238738747279.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "535001217",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Horace Silver",
+   "album": "Horace-Scope",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 338faf04-14f4-341a-b363-7bbd2b0817db。回問 release-group 端點：title「Horace-Scope」、artist-credit「The Horace Silver Quintet」（artist e9ac5139-2da0-4f00-9ac2-c713e3813ff4，Group）、first-release-date 1960-09、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點：68613223（1960-09 US Official 12\" Vinyl 7 軌，Blue Note BLP 4042）、c2e864ff（2006 US CD 7 軌，0946 3 37775 2 1）、1e154eb5（2006 XE CD 0946 3 55207 2 9）、3d6d3fd8（無日期 IT CD 7243 4 93474 2 7）。原 LP 軌序：Strollin'／Where You At?／Without You／Horace-Scope／Yeah!／Me and My Baby／Nica's Dream（1960-07-08／09 Van Gelder Studio）。刻意不釘：無同名 RG。",
+    "rgMbid": "338faf04-14f4-341a-b363-7bbd2b0817db",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/338faf04-14f4-341a-b363-7bbd2b0817db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7059,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一期 Billboard 給了它兩件事：爵士專輯評論，和那一週的封面獎。七軌 1960 年 7 月 8 與 9 日兩場錄於 Van Gelder 的錄音室，五重奏是 Blue Mitchell 的小號、Junior Cook 的次中音配 Silver 的鋼琴。除〈Without You〉外全是他的原創，〈Nica's Dream〉寫給 Pannonica de Koenigswarter 男爵夫人。那期是 1960 年 11 月，編號 BLP 4042。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=338faf04-14f4-341a-b363-7bbd2b0817db&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-11-28.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1960/CB-1960-11-12.pdf",
+     "https://en.wikipedia.org/wiki/Horace-Scope",
+     "https://itunes.apple.com/lookup?id=723366394&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/338faf04-14f4-341a-b363-7bbd2b0817db"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/75/2a/3e/752a3e9e-2e70-08a1-1dc8-83c1283cabc4/mzaf_8675593859786700992.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723366394",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Horace Parlan",
+   "album": "Movin' & Groovin'",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 72f41808-2776-40e4-a94d-cc066ce36c76。回問 release-group 端點：title「Movin' & Groovin'」、artist-credit「Horace Parlan」（artist 72ebac7b-e29d-4cd6-8ce4-36465b907ce9，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：21c0fa72（1960 US Official 12\" Vinyl 8 軌，Blue Note BLP 4028）、fe5ebff3（2011-04-21 US Hybrid SACD 8 軌，Analogue Productions CBNJ 84028 SA／Blue Note ST-84028）、559f6d47（2023-09-20 JP CD 8 軌，UCCU-6351）。原 LP 軌序：C Jam Blues／On Green Dolphin Street／Up in Cynthia's Room／Lady Bird／Bag's Groove／Stella by Starlight／There Is No Greater Love／It Could Happen to You（1960-02-29 Van Gelder Studio）。刻意不釘：無同名 RG。",
+    "rgMbid": "72f41808-2776-40e4-a94d-cc066ce36c76",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/72f41808-2776-40e4-a94d-cc066ce36c76/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6118,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "右手因小兒麻痺受限，他把重量全放到左手的和弦上——八首裡只有一首是他寫的。1960 年 2 月 29 日一場錄完，三重奏是 Sam Jones 的貝斯與 Al Harewood 的鼓。他自己那首是〈Up in Cynthia's Room〉，其餘來自 Ellington 的〈C Jam Blues〉與〈Bag's Groove〉。Blue Note 從碟裡抽了兩支 45 轉單曲丟進點唱機。這是他掛自己名字的頭一張，1960 年以 BLP 4028 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=72f41808-2776-40e4-a94d-cc066ce36c76&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-05-09.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-05-16.pdf",
+     "https://en.wikipedia.org/wiki/Movin%27_%26_Groovin%27",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-12-19.pdf",
+     "https://itunes.apple.com/lookup?id=1361880703&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/72f41808-2776-40e4-a94d-cc066ce36c76"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/12/b1/af/12b1af26-a948-7aee-ef19-0a0e25f3cb54/mzaf_10309464443085272403.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1361880703",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sonny Red",
+   "album": "Out of the Blue",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 10a7fc47-8276-3355-92bd-0ebfc152c92d。回問 release-group 端點：title「Out of the Blue」、artist-credit「Sonny Red」（artist 465406f7-c9cb-4812-a67a-793fa1742458，Person）、first-release-date 1960-07、primary-type Album、secondary-types 空、轄下 13 個 release。release 端點：2acaded6（1960-07 US Official 12\" Vinyl 8 軌，Blue Note BLP 4032）、d4c866ff（1983 FR 12\" 4032）、30286160（1983 JP 12\" K18P-9243）、aace7525（1989-11-08 JP 12\" BN 4032／BST 84032）、9fcf09fa（1996-09-17 US CD 13 軌，CDP 7243 8 52440 2 5）、bc24e3cb（1996 US 載體 null 8 軌）、adec81fc（1999 JP CD TOCJ-9093）、5229a3e2／e390aa4c（2002／2005 US 12\" Classic Records BN 4032-MONO-200G）、71b61129（2005 JP CD TOCJ-6547）、5039e2bd（2012 JP 12\" DBLP-029）、fac8ad74（2022-04-01 XW 12\" Tone Poet B0033154-01）、6f170ffe（2024-09-25 JP HQCD UCCQ-9721）。原 LP 軌序：Bluesville／Stay as Sweet as You Are／I've Never Been in Love Before／Nadia／Blues in the Pocket／Alone Too Long／The Lope／Stairway to the Stars。刻意不釘：無同名 RG（Sonny Red 名下）。",
+    "rgMbid": "10a7fc47-8276-3355-92bd-0ebfc152c92d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/10a7fc47-8276-3355-92bd-0ebfc152c92d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6182,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二場的貝斯與鼓借來 Miles Davis 手下那一組：Paul Chambers 與 Jimmy Cobb。兩場都在 Van Gelder 的錄音室：1959 年 12 月 5 日那場是 Sam Jones 與 Roy Brooks，隔年 1 月 23 日換人。Wynton Kelly 的鋼琴兩場都在，他的中音承 Charlie Parker 一路。八軌以〈Bluesville〉開場，〈Nadia〉是中板原創。45 轉單曲 1960 年春天見報，編號 BLP 4032。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=10a7fc47-8276-3355-92bd-0ebfc152c92d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-02-01.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-03-21.pdf",
+     "https://en.wikipedia.org/wiki/Out_of_the_Blue_(Sonny_Red_album)",
+     "https://itunes.apple.com/lookup?id=716039604&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/10a7fc47-8276-3355-92bd-0ebfc152c92d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/99/7a/fd/997afdda-4b8b-fa8e-6144-3a0ebd66250e/mzaf_15983317443966909502.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "716039604",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Duke Pearson",
+   "album": "Tender Feelin's",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group aa50c7b6-eade-4627-9721-fae69954590d。回問 release-group 端點：title「Tender Feelin’s」、artist-credit「Duke Pearson」（artist ea39ae7d-5498-4f26-992b-7cf3390253ed，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點：98c596bd（1960 US Official Vinyl 7 軌，Blue Note BLP 4035）、ecabddd2（2003-11-04 JP CD 7 軌，TOCJ-9037，title「Tender Feelin's」）、8cc2d06f（2007-08-22 JP CD TOCJ-7027）、dacca310（2018-04-27 XW Digital 7 軌，barcode 602567554080）。原 LP 軌序：Bluebird of Happiness／I'm a Fool to Want You／I Love You／When Sunny Gets Blue（MB 打成 Sonny）／The Golden Striker／On Green Dolphin Street／3 A.M.（1959-12-16／19 Van Gelder Studio）。刻意不釘：無同名 RG。",
+    "rgMbid": "aa50c7b6-eade-4627-9721-fae69954590d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/aa50c7b6-eade-4627-9721-fae69954590d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3330,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "燈都關了、大家在收東西，他戴著帽子又彈起藍調——〈3 A.M.〉就是這麼來的。這段出自製作人 Alfred Lion 的內頁文案：貝斯手抓琴、鼓手就位。1959 年 12 月 16 與 19 日錄於 Van Gelder 的錄音室，三重奏是 Gene Taylor 的貝斯與 Lex Humphries 的鼓。七軌多是抒情標準曲，另有 John Lewis 的〈The Golden Striker〉。錄音是 1959 年底的事，唱片拖到 1961 年春天才上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=aa50c7b6-eade-4627-9721-fae69954590d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1961/Billboard%201961-03-20.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1961/CB-1961-04-01.pdf",
+     "https://en.wikipedia.org/wiki/Tender_Feelin%27s",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-03-28.pdf",
+     "https://itunes.apple.com/lookup?id=1371803184&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/aa50c7b6-eade-4627-9721-fae69954590d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/15/c2/2e/15c22eaf-98e7-8ec5-1f16-5c2faa899b2e/mzaf_6574477754694012238.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1371803184",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Three Sounds",
+   "album": "Moods",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5b088bf0-a505-47c6-8a23-7e81c84dd82f。回問 release-group 端點：title「Moods」、artist-credit「The Three Sounds」（artist cf2115e9-fa60-4561-8b6e-f72d34ad800e，Group）、first-release-date 1960-06-28（⚠ ＝錄音日）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：0df88847（記 1960-06-28，US Official 12\" Vinyl 8 軌，Blue Note BLP 4044）、135df6b4（2005-02-23 JP CD 8 軌，TOCJ-6482）。原 LP 軌序：Love for Sale／Things Ain't What They Used to Be／On Green Dolphin Street／Loose Walk／Li'l Darlin'／I'm Beginning to See the Light／Tammy's Breeze／Sandu（1960-06-28 Van Gelder Studio）。刻意不釘：10ec1745-e4b8-30b8-a825-72e50f875b45《Moods》（Gene Harris & The Three Sounds，同碟日本再發另建的 RG）。",
+    "rgMbid": "5b088bf0-a505-47c6-8a23-7e81c84dd82f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5b088bf0-a505-47c6-8a23-7e81c84dd82f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2056,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2056，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Blue Note 的整版廣告只有一句標題「IT'S A HIT」，底下印著 LP 4044。八首 1960 年 6 月 28 日在 Van Gelder 的錄音室一場錄完，三人組是 Gene Harris 的鋼琴、Andrew Simpkins 的貝斯與 Bill Dowdy 的鼓，走福音與藍調的手法。曲目有 Cole Porter 的〈Love for Sale〉與 Harris 自己的〈Tammy's Breeze〉。那則廣告登在 Cash Box，1960 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5b088bf0-a505-47c6-8a23-7e81c84dd82f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1960/CB-1960-11-05.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1960/CB-1960-12-03.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1960/CB-1960-12-31.pdf",
+     "https://en.wikipedia.org/wiki/Moods_(The_Three_Sounds_album)",
+     "https://itunes.apple.com/lookup?id=1362388518&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/5b088bf0-a505-47c6-8a23-7e81c84dd82f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/30/d7/15/30d71575-2642-0184-7fd8-db5cf81eff72/mzaf_13188664963780997605.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1362388518",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Clifford Brown",
+   "album": "Jazz Immortal",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 817dcd91-4f7e-3f21-bddd-ebc6fbcb2aa7。回問 release-group 端點：title「Jazz Immortal」、artist-credit「Clifford Brown featuring Zoot Sims」（artist 2a291f34-73cb-40c5-b721-eab1269c7ba8 Clifford Brown, Person ＋ d17b505f-a6e3-44e7-afcc-415d407c414f Zoot Sims, Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 7 個 release。release 端點：0f3c5863（1960 US Official 12\" Vinyl 8 軌，Pacific Jazz PJ-3，credit 只掛 Clifford Brown）、d4724771（1988 IT Promotion CD 8 軌，Blue Note 7243 4 95249 2 7／Pacific Jazz）、1d2fb836（2001 US CD 9 軌，Pacific Jazz 7243 5 32142 2 7B）、6d956acd（2001 XE CD 9 軌）、b87e1fc8（2019-05-19 XW 12\" 10 軌 MatchBall 29016，公共領域盤）、35bc847e（Bootleg Digital 7 軌）、f43d7619（XW Digital 9 軌，Blue Note，題《Jazz Immortal (Remastered / Rudy Van Gelder Edition)》）。原 LP 軌序：Tiny Capers／Gone With the Wind／Finders Keepers／Blueberry Hill／Joy Spring／Bones for Jones／Bones for Zoot／Dahoud（1954-07／08 洛杉磯）。刻意不釘：2f434e45-a0c4-4fc3-ae3e-0e3116319a3b《Clifford Brown Ensemble Featuring Zoot Sims》1955（10 吋 PJLP 19，同錄音的 10 吋原盤 RG，本卡 risk 互指）。",
+    "rgMbid": "817dcd91-4f7e-3f21-bddd-ebc6fbcb2aa7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/817dcd91-4f7e-3f21-bddd-ebc6fbcb2aa7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 25009,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1954 年在加州錄的，十二吋版壓到 1960 年才出，中間隔著他 1956 年的那場車禍。西岸編制是 Brown 的小號、Zoot Sims 的次中音、Bob Gordon 的上低音，加 Shelly Manne 的鼓。〈Joy Spring〉〈Daahoud〉〈Tiny Capers〉是他自己的曲子。Pacific Jazz 1960 年重啟 PJ 字頭目錄號，這張是新號的第三號。Billboard 同年 5 月評它時已點明這是他最後幾批灌片。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=817dcd91-4f7e-3f21-bddd-ebc6fbcb2aa7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-05-02.pdf",
+     "https://en.wikipedia.org/wiki/Pacific_Jazz_Records",
+     "https://en.wikipedia.org/wiki/Clifford_Brown",
+     "https://itunes.apple.com/lookup?id=724184986&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/817dcd91-4f7e-3f21-bddd-ebc6fbcb2aa7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/bf/79/a6bf79dd-d3ca-39d8-4a66-9411bd488b02/mzaf_8465864918082800803.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724184986",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Freddie Redd",
+   "album": "The Music From The Connection",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fb26da0f-86c8-3ecd-85c5-1a07114c800b。回問 release-group 端點：title「The Music From The Connection」、artist-credit「Freddie Redd Quartet」（artist 28f9c774-f492-4fce-8a0c-92358f6c5173，Group）、first-release-date 1960-05、primary-type Album、secondary-types 空、轄下 6 個 release。release 端點：85f45e8c（1960-05 US Official 12\" Vinyl 7 軌，Blue Note BST 84027）、072ce1eb（1994 US 12\" Vinyl 7 軌，B1-89392）、5ba348f5（1994 US CD 7 軌，CDP 0777 7 89392 2 1）、6dc2844d（1999-01-27 JP CD TOCJ-9075）、e94e2474（2005-07-19 US CD 7243 5 63836 2 3）、3ddc4b4c（2019 XE 12\" 8 軌 Jazz Images 37119，credit「Jackie McLean & Freddie Redd」，題《The Connection》）。原 LP 軌序：Who Killed Cock Robin／Wigglin'／Music Forever／Time to Smile／Theme for Sister Salvation／Jim Dunn's Dilemma／O.D.（1960-02-15 Van Gelder Studio）。刻意不釘：無同名 RG。",
+    "rgMbid": "fb26da0f-86c8-3ecd-85c5-1a07114c800b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fb26da0f-86c8-3ecd-85c5-1a07114c800b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 24,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=24，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "劇作家本想讓台上的樂手即興，Redd 說服他改用自己寫的曲子，還親自上台演戲。七首 1960 年 2 月 15 日在 Van Gelder 的錄音室一場錄完，四重奏的前排是 Jackie McLean 的中音。全是他為 Jack Gelber 的外百老匯舞台劇《The Connection》寫的曲子，曲名來自劇中人事，〈Theme for Sister Salvation〉與〈O.D.〉都在內。Redd 演第一樂手、McLean 演第二樂手，編號 BLP 4027。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=fb26da0f-86c8-3ecd-85c5-1a07114c800b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-04-18.pdf",
+     "https://en.wikipedia.org/wiki/The_Connection_(play)",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-11-28.pdf",
+     "https://itunes.apple.com/lookup?id=715680164&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/fb26da0f-86c8-3ecd-85c5-1a07114c800b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/eb/39/28/eb392842-6db6-8315-cb40-65b70c2360f4/mzaf_7209295360016572454.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "644615584",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jackie McLean",
+   "album": "Capuchin Swing",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b0053a56-1819-3408-999a-37810078ed1b。回問 release-group 端點：title「Capuchin Swing」、artist-credit「Jackie McLean」（artist 5b6993ef-14af-4374-aa91-d42622b133d1，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 4 個 release。release 端點：77522ae6（1960 US Official 12\" Vinyl 6 軌，Blue Note BLP 4038）、b3be6ea1（2002-08-27 US CD 6 軌，7243 5 40033 2 5）、301643ae（2002 XE CD 同號）、98b492f0（2008 US Hybrid SACD 6 軌，Analogue Productions CBNJ 84038 SA／Blue Note 84038／ST-84038）。原 LP 軌序：Francisco／Just for Now／Don't Blame Me／Condition Blue／Capuchin Swing／On the Lion（1960-04-17 Van Gelder Studio）。刻意不釘：無同名 RG。",
+    "rgMbid": "b0053a56-1819-3408-999a-37810078ed1b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b0053a56-1819-3408-999a-37810078ed1b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8089,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首裡有一首連領銜的中音都沒吹：〈Don't Blame Me〉整首讓給鋼琴三重奏。1960 年 4 月 17 日在 Van Gelder 的錄音室一場錄完，五重奏是 McLean 的中音、Blue Mitchell 的小號、Walter Bishop Jr. 的鋼琴與 Art Taylor 的鼓。〈Francisco〉是九分半的長軌、〈Condition Blue〉是慢速藍調。Billboard 1960 年 12 月的評論拿的正是這個對比，編號 BLP 4038。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b0053a56-1819-3408-999a-37810078ed1b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-12-19.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1960/CB-1960-12-31.pdf",
+     "https://en.wikipedia.org/wiki/Capuchin_Swing",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-05-09.pdf",
+     "https://itunes.apple.com/lookup?id=1443801894&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/b0053a56-1819-3408-999a-37810078ed1b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5b/68/ce/5b68ce89-722f-27e7-3d3b-1dc14d8cc970/mzaf_118545464403500179.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443801894",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Modest Jazz Trio",
+   "album": "Good Friday Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 52ddf695-8624-45ee-9bc8-a73343551401。回問 release-group 端點：title「Good Friday Blues」、artist-credit「The Modest Jazz Trio」（artist a2a4232a-f50e-48bb-aad9-1a142826287f，Group，US，1960）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：ac3b2e96（1960 US Official 12\" Vinyl 6 軌，Pacific Jazz PJ 10）、91513fce（2011-04-20 JP CD 6 軌，Pacific Jazz TOCJ-50139）、2eeb04ad（2024-09-06 XW 12\" Vinyl 6 軌，Pacific Jazz 602448650498／Blue Note ST-10 A3085 / 83085）。原 LP 軌序：Good Friday Blues／Willow Weep for Me／I Remember You／Bill Not Phil／When I Have You／I Was Doing All Right。刻意不釘：18dc45ff-…《Good Friday Blues》2011（Jim Hall And His Modest Jazz Trio，同碟再發另建 RG）、32eefcf7-…《Rejoice! + Good Friday Blues + Jazz Guitar》2016（Red Mitchell & Jim Hall，三合一合輯）。",
+    "rgMbid": "52ddf695-8624-45ee-9bc8-a73343551401",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/52ddf695-8624-45ee-9bc8-a73343551401/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 485,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=485，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "團名只用過這一次，三個人對等：Jim Hall 的吉他，加兩把低音，沒有鼓。兩位低音手 Red Mitchell 與 Red Kelly 都叫 Red。Hall 1956 年搬到洛杉磯，待過 Chico Hamilton 與 Jimmy Giuffre 的團。六軌以〈Good Friday Blues〉開場，1960 年由 Pacific Jazz 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=52ddf695-8624-45ee-9bc8-a73343551401&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://en.wikipedia.org/wiki/Jim_Hall_(musician)",
+     "https://en.wikipedia.org/wiki/Pacific_Jazz_Records",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-10-31.pdf",
+     "https://itunes.apple.com/lookup?id=1398487718&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/52ddf695-8624-45ee-9bc8-a73343551401"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/30/4a/23/304a2324-dc47-d949-3711-63fddee0c4f4/mzaf_5195283099754064393.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1398487718",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Teddy Edwards",
+   "album": "Sunset Eyes",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 181e1f64-02e4-4b0d-aea2-cce5900c094f。回問 release-group 端點：title「Sunset Eyes」、artist-credit「Teddy Edwards」（artist 8fc3c813-c71e-4e33-9ce8-4e07c7cfe099，Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：bee4a376（1960 US Official 12\" Vinyl 7 軌，Pacific Jazz PJ-14）、dff8664a（1998 US CD 10 軌，Pacific Jazz CDP 7243 4 94848 2 5）、33e19f72（2025-04-04 US 12\" Vinyl 7 軌，Blue Note 602455600684／Pacific Jazz PJ-14）。原 LP 軌序：Tempo de Blues／Vintage '57／I Hear a Rhapsody／Up in Teddy's New Flat／Sunset Eyes／Teddy's Tune／Takin' Off（1960-03-21／23、08-16 洛杉磯）。刻意不釘：c36d5fb4-…《Sunset Eyes 2000》1999（Saskia Laroo meets Teddy Edwards，不同碟）。",
+    "rgMbid": "181e1f64-02e4-4b0d-aea2-cce5900c094f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/181e1f64-02e4-4b0d-aea2-cce5900c094f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2164,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2164，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1947 年他與 Dexter Gordon 錄過一張《The Duel》，打擂台的吹法後來一直帶著。三次錄音都在洛杉磯，1959 年 8 月一場、1960 年兩場，鋼琴因此換過 Ronnie Ball、Amos Trice 與 Joe Castro。七軌除 Leroy Vinnegar 的〈Vintage '57〉外多是他自己寫的。Billboard 1960 年 10 月記他剛與 Contemporary 簽長約，同年 Pacific Jazz 以 PJ-14 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=181e1f64-02e4-4b0d-aea2-cce5900c094f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://en.wikipedia.org/wiki/Sunset_Eyes",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-10-31.pdf",
+     "https://en.wikipedia.org/wiki/Pacific_Jazz_Records",
+     "https://en.wikipedia.org/wiki/Teddy_Edwards",
+     "https://itunes.apple.com/lookup?id=716739958&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/181e1f64-02e4-4b0d-aea2-cce5900c094f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/a9/ae/8ea9ae88-7705-f76f-8db3-fe34d3d32efe/mzaf_12622265305195482590.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "716739958",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dizzy Reece",
+   "album": "Soundin' Off",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 64c82df7-e50a-4d51-b52e-b0622e06de18。回問 release-group 端點：title「Soundin' Off」、artist-credit「Dizzy Reece」（artist cbde4132-ce04-4368-b859-22c440f23961，Person）、first-release-date 1960-05-12（⚠ ＝錄音日）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：ba154e72（記 1960-05-12，US Official 12\" Vinyl 6 軌，Blue Note ST-84033）、7ad8f2a8（2011-07-12 US Hybrid SACD 6 軌，Analogue Productions CBNJ 84033 SA）。原 LP 軌序：A Ghost of a Chance／Once in a While／Eb Pob／Yesterdays／Our Love Is Here to Stay／Blue Streak（1960-05-12 Van Gelder Studio）。CAA：release-group 與 release 端點都 404。刻意不釘：無同名 RG。",
+    "rgMbid": "64c82df7-e50a-4d51-b52e-b0622e06de18",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/32/c2/d7/32c2d72d-c4f5-ad73-9e35-afec859e4624/00602567487319.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1356726197",
+    "note": "試聽探測釘定的 collectionId 1356726197（us）：Dizzy Reece — Soundin' Off"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1033,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1033，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲名〈Eb Pob〉是把 bop 倒過來拼再加一個降 E，曲子出自 Fats Navarro。六首 1960 年 5 月 12 日在 Van Gelder 的錄音室一場錄完，四重奏只有 Reece 的小號一支管，後面是 Walter Bishop Jr. 的鋼琴與 Art Taylor 的鼓。六首裡只有〈Blue Streak〉是他自己的，其餘是老標準曲。碟裡抽的 45 轉單曲 11 月被 Billboard 評過，唱片 1960 年以 BLP 4033 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=64c82df7-e50a-4d51-b52e-b0622e06de18&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-10-10.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1960/Billboard%201960-11-14.pdf",
+     "https://en.wikipedia.org/wiki/Soundin%27_Off",
+     "https://itunes.apple.com/lookup?id=1356726197&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/64c82df7-e50a-4d51-b52e-b0622e06de18"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/77/cd/e477cda7-5a86-2efd-5198-9da6fd58e808/mzaf_11811235270609825278.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1356726197",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Three Sounds",
+   "album": "Here We Come",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 336ce7ef-127a-475e-b45f-862c94143889。回問 release-group 端點：title「Here We Come」、artist-credit「The Three Sounds」（artist cf2115e9-fa60-4561-8b6e-f72d34ad800e，Group）、first-release-date 1960（⚠ ＝錄音年）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：7809c288（記 1960，US Official 12\" Vinyl 8 軌，Blue Note BST 84088）、e98b4458（2015-03-25 JP CD 10 軌，BST-84088／UCCQ-5091）。原 LP 軌序：Now's the Time／Summertime／Here We Come／Just Squeeze Me (But Don't Tease Me)／Broadway／Our Love Is Here to Stay／Poinciana／Sonnymoon for Two（1960-12-13／14 Van Gelder Studio）。刻意不釘：無同名 RG。",
+    "rgMbid": "336ce7ef-127a-475e-b45f-862c94143889",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/336ce7ef-127a-475e-b45f-862c94143889/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 357,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=357，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Billboard 那一週把它和 Ornette Coleman 的《Ornette!》擺在同一欄，路子剛好相反。1960 年 12 月 13、14 日錄於 Van Gelder 的錄音室，唱片壓到 1962 年才出。三人組仍是 Gene Harris、Andrew Simpkins 與 Bill Dowdy。八軌以 Charlie Parker 的〈Now's the Time〉開場。那一週是 1962 年 2 月，它被選進銷售潛力最強的一批，編號 BLP 4088。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=336ce7ef-127a-475e-b45f-862c94143889&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1962/Billboard%201962-02-24.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1962/CB-1962-03-31.pdf",
+     "https://en.wikipedia.org/wiki/Here_We_Come_(The_Three_Sounds_album)",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1962/CB-1962-01-27.pdf",
+     "https://itunes.apple.com/lookup?id=1380369583&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/336ce7ef-127a-475e-b45f-862c94143889"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/ca/5b/39/ca5b39fd-f949-693c-e1a7-c9e8ccf732f2/mzaf_2478681811673890218.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1380369583",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Donald Byrd",
+   "album": "At the Half Note Cafe, Volume 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 16540bf3-2655-47db-95b1-09379c1551d7。回問 release-group 端點（inc=artist-credits+releases）：title「At the Half Note Cafe, Volume 2」、artist-credit「Donald Byrd with Pepper Adams, Duke Pearson, Laymon Jackson & Lex Humphries」（Donald Byrd 69f95e5c-… Person；Pepper Adams 98fb6594、Duke Pearson ea39ae7d、Laymon Jackson 82109edc、Lex Humphries 9a9d6c18 皆 Person）、first-release-date 1960-11-11（⚠＝演出日）、primary-type Album、secondary-types [Live]（現場：Half Note Cafe, New York，1960-11-11），轄下 3 個 release。release 端點（inc=media+labels）：4bdc08a7（1960-11-11 US Official 12\" Vinyl 4 軌，Blue Note catno「11」⚠ 應為 BLP 4061）、bd40c553（2002 US CD 6 軌，Blue Note 90881，credit 只寫 Donald Byrd）、4edf54c7（2015 XW Digital 4 軌，Capitol，bc 602547251213，title「At the Half Note Cafe, Vol. 2 (live at the Half Note Cafe, NY/1960)」）。原 LP 四軌：Jeannine／Pure D. Funk／Kimyas／When Sunny Gets Blue。對照組（不釘）：4b997be7-…《At the Half Note Cafe, Volume 1》（BLP 4060，池中已有）；236ad61d-…《Volumes 1 & 2》（1997 合併 CD，後批應退）。",
+    "rgMbid": "16540bf3-2655-47db-95b1-09379c1551d7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/16540bf3-2655-47db-95b1-09379c1551d7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 80,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=80，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一晚的四個 set 剪成兩張，Vol. 1 在 1961 年上架，這一張等到 1963 年。1960 年 11 月 11 日的曼哈頓 Half Note 現場，五重奏是 Donald Byrd 的小號、Pepper Adams 的上低音，加 Duke Pearson 的鋼琴三重奏。四軌取自那晚的三個 set，〈Jeannine〉與〈Kimyas〉各十二分鐘上下，〈When Sunny Gets Blue〉是唯一的慢板。兩卷之間隔了約兩年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=16540bf3-2655-47db-95b1-09379c1551d7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BST+84061&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/At_the_Half_Note_Cafe",
+     "https://itunes.apple.com/lookup?id=1443125518&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/16540bf3-2655-47db-95b1-09379c1551d7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/04/5e/35/045e358a-03e4-2343-dd55-cff00891fc68/mzaf_5911702949442811075.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443125518",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wes Montgomery",
+   "album": "Montgomeryland",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4b3e888f-60de-4d11-99cf-dc2e0b5814bd。回問 release-group 端點：title「Montgomeryland」、artist-credit 七人並列（Monk Montgomery 89124c60、Wes Montgomery 663f8232、Buddy Montgomery 383e1902、Harold Land 8f5c28d7、Pony Poindexter 51543bc3、Louis Hayes 1e15c55f、Tony Bazley 549d8331，皆 Person）、first-release-date 1960、primary-type Album、secondary-types 空、轄下 6 個 release。release 端點：6fb6fcee（1960 US Official 12\" Vinyl 8 軌，Pacific Jazz PJ-5）、2dce060b（1990 US CD 11 軌，Pacific Jazz CDP 7 94475 2，title「Far Wes」，credit Wes Montgomery）、6a53c645（1990 US Vinyl 11 軌《Far Wes》）、c056d37c（2016 XE Poll Winners CD 17 軌）、39405cb5（2018-10-17 JP CD 11 軌 UCCQ-9398）、0d2bb057（2020-02-21 XW Digital 11 軌，Blue Note，bc 602508783982，Reissue）。原 LP 八軌：Montgomeryland Funk／Far Wes／Old Folks／Wes' Tune／Hymn for Carl／Renie／Falling in Love With Love／Leila。錄音：1958-04-18 洛杉磯（Land 場）、1959-10-01 洛杉磯（Poindexter 場）。刻意不釘：The Montgomery Brothers 群組 90459508 名下各 RG（不同編制、不同廠）。",
+    "rgMbid": "4b3e888f-60de-4d11-99cf-dc2e0b5814bd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1960,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4b3e888f-60de-4d11-99cf-dc2e0b5814bd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5519,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Monk Montgomery 手上那把 Fender 電貝斯，在 1958 年的爵士錄音裡還是新東西。八軌拼自相隔一年半的兩場：1958 年 4 月 18 日那場出〈Far Wes〉，管樂是 Harold Land 的次中音；1959 年 10 月 1 日那場出〈Monk's Shop〉，換成 Pony Poindexter，鼓是 Louis Hayes。兩場都有 Wes 的吉他與 Buddy Montgomery。盤面並排印著七個名字，PJ-5 是 1960 年的號。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4b3e888f-60de-4d11-99cf-dc2e0b5814bd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/pacific-jazz-records/discography-1957-1958/",
+     "https://www.jazzdisco.org/pacific-jazz-records/discography-1959-1960/",
+     "https://api.discogs.com/database/search?catno=PJ-5&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Far_Wes",
+     "https://itunes.apple.com/lookup?id=1498968787&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/4b3e888f-60de-4d11-99cf-dc2e0b5814bd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/64/38/0164386a-d3d4-cadd-c594-0d4e1e9370d5/mzaf_16588219199421447642.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1498968787",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Carmell Jones",
+   "album": "The Remarkable Carmell Jones",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2c511b44-bb45-46ba-9a5b-1d0029ee0dc1。回問 release-group 端點：title「The Remarkable Carmell Jones」、artist-credit「Carmell Jones also featuring Harold Land」（Carmell Jones 7c2b9eb2-0142-435d-8c5f-9d016dfa035f Person；Harold Land 8f5c28d7 Person）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：7a115999（1961 US Official 12\" Vinyl 6 軌，Pacific Jazz STEREO-29，stereo）、cc0c1c40（1984 GB 12\" Vinyl 6 軌，Affinity 132，credit Carmell Jones）、e352215a（2023-03 XW 12\" Vinyl 6 軌，Blue Note B0034579-01／Pacific Jazz ST-29，Tone Poet，bc 602438798421）。原 LP 六軌：I'm Gonna Go Fishin'／Night Tide／Come Rain or Come Shine／Sad March／Full Moon and Empty Arms／Stellisa。錄音 1961-06-13 洛杉磯。",
+    "rgMbid": "2c511b44-bb45-46ba-9a5b-1d0029ee0dc1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2c511b44-bb45-46ba-9a5b-1d0029ee0dc1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 17356,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "貝斯是 Gary Peacock——十年後他會是 Keith Jarrett 三重奏的一半。六軌 1961 年 6 月在洛杉磯的 Pacific Jazz 錄音室分三次錄成，13 日、14 日與 30 日，五重奏始終同一組：Carmell Jones 的小號、Harold Land 的次中音，加 Frank Strazzeri 與 Leon Petties。〈Night Tide〉與〈Stellisa〉出自 Jones。他那年剛搬到加州，這是他以領班身分出的頭一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=2c511b44-bb45-46ba-9a5b-1d0029ee0dc1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/pacific-jazz-records/discography-1961-1962/",
+     "https://api.discogs.com/database/search?catno=PJ-29&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Carmell_Jones",
+     "https://itunes.apple.com/lookup?id=1450312743&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/2c511b44-bb45-46ba-9a5b-1d0029ee0dc1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/a5/f7/9fa5f792-ac42-99f0-8990-05a439af8320/mzaf_4806339886096489026.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1450312743",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Donald Byrd",
+   "album": "Royal Flush",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 65fea999-31df-3a3b-a9a5-d6c88aebc8e8。回問 release-group 端點：title「Royal Flush」、artist-credit「Donald Byrd」（69f95e5c-… Person）、first-release-date 1961-09-21（⚠＝錄音日）、primary-type Album、secondary-types 空、轄下 7 個 release。release 端點：eae40598（1961-09-21 US Official 12\" Vinyl 6 軌，Blue Note BST 84101）、00607f2a（1999-11-26 JP CD 6 軌，TOCJ-9157／ST-84101）、b90953d8／cc478d37（2006 XE／US CD 6 軌，0946 3 62632 2 9，RVG）、bfcdc20a（2013 US 12\" Vinyl 3+3 軌，Music Matters MMBST 84101）、e0f537b5（2021-06-22 Digital 6 軌）、b4b90feb（2024-10-18 12\" Vinyl 6 軌，bc 602465007657）。原 LP 六軌：Hush／I'm a Fool to Want You／Jorgie's／Shangri-La／6 M's／Requiem。錄音 1961-09-21 Englewood Cliffs。",
+    "rgMbid": "65fea999-31df-3a3b-a9a5-d6c88aebc8e8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/65fea999-31df-3a3b-a9a5-d6c88aebc8e8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 69462,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Herbie Hancock 在 Blue Note 最早問世的聲音，比他自己的《Takin' Off》還早。六首 1961 年 9 月 21 日在 Van Gelder Studio 一場錄完，唱片隔年 9 月才出。五重奏是 Donald Byrd 的小號與 Pepper Adams 的上低音，加 Hancock、Butch Warren 與 Billy Higgins。四首原創出自 Byrd，另有 Hancock 的〈Requiem〉與一首慢板標準曲，那一首只有小號。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=65fea999-31df-3a3b-a9a5-d6c88aebc8e8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/",
+     "https://en.wikipedia.org/wiki/Royal_Flush_(album)",
+     "https://api.discogs.com/database/search?catno=BLP+4101&type=release&per_page=100",
+     "https://itunes.apple.com/lookup?id=715588020&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/65fea999-31df-3a3b-a9a5-d6c88aebc8e8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ee/ef/48/eeef489b-2626-0e05-d9b7-8119aa1d593a/mzaf_4056504815893752361.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715588020",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Leo Parker",
+   "album": "Let Me Tell You 'Bout It",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 43b79a38-3c8c-3e83-8881-4cbc1352f966。回問 release-group 端點：title「Let Me Tell You ’Bout It」、artist-credit「Leo Parker」（1b7f8a79-51f3-401c-b162-6b6eea218290 Person, US, 1925-04-18）、first-release-date 1961-12、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：c7435dd1（1961-12 US Official 12\" Vinyl 7 軌，Blue Note 4087，mono）、4de946a2（2005 XE CD 9 軌，0946 3 11491 2 2，RVG）、c5ac6c83（2005-09-13 US CD 9 軌，0946 3 11490 2 3，stereo）。原 LP 七軌：Glad Lad／Blue Leo／Let Me Tell You 'Bout It／Vi／Parker's Pals／Low Brown／TCTB。錄音 1961-09-09 Englewood Cliffs。",
+    "rgMbid": "43b79a38-3c8c-3e83-8881-4cbc1352f966",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/43b79a38-3c8c-3e83-8881-4cbc1352f966/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2040,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2040，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1957 年之後他幾乎從唱片上消失，四年後帶著一組沒人聽過的樂手回來。七首 1961 年 9 月 9 日在 Van Gelder Studio 一場錄完，六重奏由 Leo Parker 的上低音薩克斯風領銜，John Burks 的小號與 Bill Swindell 的次中音在前六首加進來，底下是 Yusef Salim、Stan Conover 與 Purnell Rice。多是中快板的搖擺與藍調，〈Blue Leo〉是他與 Ike Quebec 合寫的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=43b79a38-3c8c-3e83-8881-4cbc1352f966&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4087&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Let_Me_Tell_You_%27bout_It",
+     "https://itunes.apple.com/lookup?id=715978965&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/43b79a38-3c8c-3e83-8881-4cbc1352f966"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/25/d3/40/25d34038-f0e9-b690-b8df-c05b8ee7e3fd/mzaf_8590478506143241663.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1694443354",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Horace Silver",
+   "album": "Doin' the Thing: Live at the Village Gate",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 391a0968-ce85-3cce-bb13-52d5194b5eb1。回問 release-group 端點：title「Doin' the Thing: Live at the Village Gate」、artist-credit「The Horace Silver Quintet」（e9ac5139-… Group）、first-release-date 1961-08、primary-type Album、secondary-types [Live]（現場：Village Gate, New York，1961-05-19／20）、轄下 6 個 release。release 端點：a06b5e48（1961-08 US Official 12\" Vinyl 5 軌，Blue Note BLP 4076，title「Doin' the Thing - At the Village Gate」）、9cf7f9a8（1961 US 12\" Vinyl 4 軌，BST 84076）、be6924d6（1988 US CD 7 軌，CDP 7 84076 2）、9f44cced／86ff98fe／ea9c2ec3（2006 US／US／XE CD 6 軌，0946 3 62682 2 4，RVG）。原 LP 四軌：Filthy McNasty／Doin' the Thing／Kiss Me Right／The Gringo–Cool Eyes (The Theme)。個人實體 Horace Silver（池中字串）。",
+    "rgMbid": "391a0968-ce85-3cce-bb13-52d5194b5eb1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/391a0968-ce85-3cce-bb13-52d5194b5eb1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 11,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=11，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "跟了他好幾年的那組五重奏，只在格林威治村的 Village Gate 留下這一張現場。1961 年 5 月 19 與 20 日連兩晚錄於店裡，Blue Mitchell 的小號與 Junior Cook 的次中音配 Silver 的鋼琴，底下是 Gene Taylor 與 Roy Brooks。原 LP 四軌全是 Silver 自己的曲子，每首九到十一分半，收場接〈Cool Eyes〉的主題。錄音 Rudy Van Gelder，攝影換成 Jim Marshall。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=391a0968-ce85-3cce-bb13-52d5194b5eb1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4076&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Doin%27_the_Thing",
+     "https://itunes.apple.com/lookup?id=715516295&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/391a0968-ce85-3cce-bb13-52d5194b5eb1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ac/4e/c1/ac4ec1e9-6ccb-45a0-4fa2-1c9cac46aeaf/mzaf_10379836801838842773.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715516295",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Art Blakey and the Jazz Messengers",
+   "album": "Meet You at the Jazz Corner of the World, Volume 1",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 47bfc480-a569-3a59-8a86-2ef842a68cba。回問 release-group 端點：title「Meet You at the Jazz Corner of the World, Volume 1」、artist-credit「Art Blakey & The Jazz Messengers」（209ddf15-… Group）、first-release-date 1961、primary-type Album、secondary-types 空（⚠ 實為現場：Birdland, New York，1960-09-14，MB 漏標）、轄下 4 個 release。release 端點：585e08b2（1961 US Official Vinyl 5 軌，Blue Note 4054，title「…(Volume 1)」）、cdc283aa（2005 JP CD 5 軌，BST-84054／TOCJ-6587）、2b3f9aba（2019-11-15 XW 12\" Vinyl 5 軌，BST 84054／ST-84054，bc 602508073861）、4c870249（2024-11-13 JP SHM-CD 7 軌，UCCQ-9764）。原 LP 五軌：The Opener／What Know／The Theme／Round About Midnight／The Summit。對照組（不釘）：76752ee1-…《…(Volume 2)》（BLP 4055，1962，下一批）；d9c8c46a-…（2002 合併 CD）；d5f8521c-…《At the Jazz Corner of the World》（1959，c-137 b 組，不同場）。",
+    "rgMbid": "47bfc480-a569-3a59-8a86-2ef842a68cba",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/47bfc480-a569-3a59-8a86-2ef842a68cba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻）；obscurity=5、listeners=12，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名就是 Birdland 的招牌語，那一晚的第三、四個 set 被錄了下來。1960 年 9 月 14 日的俱樂部現場，那家店自稱世界的爵士角落。五重奏是 Lee Morgan 的小號、Wayne Shorter 的次中音、Bobby Timmons 的鋼琴，加 Jymie Merritt 與 Art Blakey。四首各九到十分半，末尾接一分四十秒的〈The Theme〉。曲單以標準曲為主，另有三首出自前一任團員 Hank Mobley，他不在台上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=47bfc480-a569-3a59-8a86-2ef842a68cba&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4054&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Meet_You_at_the_Jazz_Corner_of_the_World",
+     "https://itunes.apple.com/lookup?id=723618161&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/47bfc480-a569-3a59-8a86-2ef842a68cba"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a3/ef/2b/a3ef2b46-dc59-e280-afa7-429f3b1d423a/mzaf_15800309736013572008.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723618161",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Freddie Hubbard",
+   "album": "Goin' Up",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 05c9ae05-5a1e-3a32-a453-5df84cf76c38。回問 release-group 端點：title「Goin’ Up」、artist-credit「Freddie Hubbard」（59ae7a1a-… Person）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 8 個 release。release 端點：a04e1fa8（1961 US Official 12\" Vinyl 6 軌，Blue Note BLP 4056，mono）、ac0ed5c8（1967 US 12\" Vinyl 6 軌，BNST 84056／BST 84056，stereo）、13114fe3（1993-09-22 JP CD，TOCJ-4056）、d695d7ef（1997 US CD，CDP 7243 8 59380 2 3）、00f165a7（1999-11-26 JP CD，TOCJ-9148）、efdb9dbe（2013-10-05 Digital）、283b8686（2015-07-01 JP CD，UCCQ-9169）、fccd42e0（2018-04-04 JP SHM-CD，UCCQ-3011），全部 6 軌。原 LP 六軌：Asiatic Raes／The Changing Scene／Karioka／A Peck a Sec／I Wished I Knew／Blues for Brenda。錄音 1960-11-06 Englewood Cliffs。",
+    "rgMbid": "05c9ae05-5a1e-3a32-a453-5df84cf76c38",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/05c9ae05-5a1e-3a32-a453-5df84cf76c38/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13147,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩首出自 Kenny Dorham、兩首出自台上的 Hank Mobley，他自己只交出一首。六軌 1960 年 11 月 6 日在 Van Gelder Studio 一場錄完，五重奏配 McCoy Tyner 的鋼琴、Paul Chambers 的貝斯與 Philly Joe Jones 的鼓。中快板為主，〈I Wished I Knew〉是唯一的慢板。《Billboard》1961 年 5 月記它是他在 Blue Note 的第二張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=05c9ae05-5a1e-3a32-a453-5df84cf76c38&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1961/Billboard%201961-05-15.pdf",
+     "https://api.discogs.com/database/search?catno=BLP+4056&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Goin%27_Up",
+     "https://itunes.apple.com/lookup?id=723410188&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/05c9ae05-5a1e-3a32-a453-5df84cf76c38"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8b/42/81/8b4281a9-a891-944f-feb0-bd04704b367e/mzaf_3796457330282197276.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723410188",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stanley Turrentine",
+   "album": "Up at Minton's, Volume 1",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 024541d9-f86e-3098-bf98-1601ce19b2cc。回問 release-group 端點：title「Up at \"Minton's\", Vol. 1」、artist-credit「Stanley Turrentine」（51e0df97-… Person）、first-release-date 1961、primary-type Album、secondary-types [Live]（現場：Minton's Playhouse, New York，1961-02-23）、轄下 3 個 release。release 端點：99d61c8c（1961 US Official 12\" Vinyl 4 軌，Blue Note BLP 4069，title「Up at Minton's, Volume 1」）、4d8fb430（2011 US Hybrid SACD 4 軌，Analogue Productions CBNJ 84069 SA／ST-84069）、d108d6b4（2019-07-17 JP CD 4 軌，UCCQ-9529）。原 LP 四軌：But Not for Me／Stanley's Time／Broadway／Yesterdays。對照組（不釘）：d3af3051-…《Up at Minton's, Volume 2》（本組另一筆）；96ddfbe9-…（1994 合併 CD）；26026a87-…（2019 JP Vol. 2 重複 RG）。",
+    "rgMbid": "024541d9-f86e-3098-bf98-1601ce19b2cc",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/024541d9-f86e-3098-bf98-1601ce19b2cc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 48,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=48，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音機架進哈林區的 Minton's Playhouse——咆勃當年就是在這間店裡長出來的。1961 年 2 月 23 日的俱樂部現場，五重奏是 Stanley Turrentine 的次中音、Grant Green 的吉他與 Horace Parlan 的鋼琴，兩件和聲樂器並置。四軌取自那晚的第二與第三個 set，三首標準曲加他自己的〈Stanley's Time〉，每首都拉到十分半以上。這一卷 1961 年就以 BLP 4069 上架。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=024541d9-f86e-3098-bf98-1601ce19b2cc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4069&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Up_at_%22Minton%27s%22",
+     "https://itunes.apple.com/lookup?id=1436091771&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/024541d9-f86e-3098-bf98-1601ce19b2cc"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cc/2c/0f/cc2c0fdf-5a58-d957-5032-4fda0fe4ccba/mzaf_18370812594524630372.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1436091771",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stanley Turrentine",
+   "album": "Up at Minton's, Volume 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d3af3051-97c6-358c-ba98-997085e09d5d。回問 release-group 端點：title「Up at Minton's, Volume 2」、artist-credit「Stanley Turrentine」（51e0df97-… Person）、first-release-date 1961、primary-type Album、secondary-types [Live]（現場：Minton's Playhouse, New York，1961-02-23）、轄下 1 個 release。release 端點：5da9d52d（1961 US Official 12\" Vinyl 4 軌，Blue Note BLP 4070）。原 LP 四軌：Love for Sale／Summertime／Later at Minton's／Come Rain or Come Shine。CAA 404。對照組（不釘）：024541d9-…《Vol. 1》（本組另一筆）；26026a87-…（2019 JP UCCQ-9530，同碟重複 RG，後批應退）；96ddfbe9-…（1994 合併 CD）。",
+    "rgMbid": "d3af3051-97c6-358c-ba98-997085e09d5d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/0a/da/2a/0ada2a8d-e81c-9d21-1b6d-24557c274eb3/00602567989721.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1436190027",
+    "note": "試聽探測釘定的 collectionId 1436190027（us）：Stanley Turrentine — Up At \"Minton's\" (Vol. 2/Live From Minton's Playhouse/1961)"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 28,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=28，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一首〈Love for Sale〉跑了十五分鐘，四軌就把這張碟填滿，全是延伸獨奏。錄音與第一卷同一晚：1961 年 2 月 23 日在 Minton's Playhouse 的現場，編制也一樣，Grant Green 的吉他與 Horace Parlan 的鋼琴都在。四軌取自那晚的第二、三、四個 set，〈Later at Minton's〉近十四分鐘。第一卷 1961 年就上架，剩下的四首等到 1962 年才印成這一張，兩卷相隔一年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d3af3051-97c6-358c-ba98-997085e09d5d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4070&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Up_at_%22Minton%27s%22",
+     "https://itunes.apple.com/lookup?id=1436190027&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/d3af3051-97c6-358c-ba98-997085e09d5d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5d/63/c4/5d63c49e-b66a-c41a-1e3b-c7feeb5c9f64/mzaf_3818956640544926176.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1436190027",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Three Sounds",
+   "album": "Feelin' Good",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 82cdc7f5-7879-4d47-b4a8-e98e6b2a7835。回問 release-group 端點：title「Feelin' Good」、artist-credit「The Three Sounds」（cf2115e9-… Group, US, begin 1956）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：64110a00（1961 US Official 12\" Vinyl 8 軌，Blue Note BLP 4072）、2be08815（2004-03-24 JP CD 8 軌，TOCJ-9593，credit The 3 Sounds，bc 4988006812246）。原 LP 八軌：When I Fall in Love／Parker's Pad／Blues After Dark／I Got It Bad／Straight, No Chaser／I Let a Song Go Out of My Heart／It Could Happen to You／Two Bass Hit。錄音 1960-06-28 Englewood Cliffs。",
+    "rgMbid": "82cdc7f5-7879-4d47-b4a8-e98e6b2a7835",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/82cdc7f5-7879-4d47-b4a8-e98e6b2a7835/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 528,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=528，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "美國一直沒發過 CD，這張碟的唯一一個 CD 版本是 2004 年的日本盤。八首 1960 年 6 月 28 日在 Van Gelder Studio 一場錄完，三人組是 Gene Harris 的鋼琴、Andrew Simpkins 的貝斯與 Bill Dowdy 的鼓，編制註記寫著 Harris 同場也彈鋼片琴。八軌多在三到五分鐘，只有 Monk 的〈Straight No Chaser〉拉得長。唱片 1961 年 9 月才上架。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=82cdc7f5-7879-4d47-b4a8-e98e6b2a7835&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1961/Billboard%201961-09-18.pdf",
+     "https://api.discogs.com/database/search?catno=BLP+4072&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Feelin%27_Good_(The_Three_Sounds_album)",
+     "https://itunes.apple.com/lookup?id=1361824678&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/82cdc7f5-7879-4d47-b4a8-e98e6b2a7835"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/7c/c2/937cc2aa-23b4-54b1-4e57-d5c7c37e3dba/mzaf_10908759736440409122.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1361824678",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Horace Parlan",
+   "album": "On the Spur of the Moment",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d27ff9bd-0105-40b4-adef-0e73ced6e4ba。回問 release-group 端點：title「On the Spur of the Moment」、artist-credit「Horace Parlan Quintet」（cfb32858-… Group）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：f47c9a92（1961 US Official 12\" Vinyl 6 軌，Blue Note BLP 4074）、4e1ef43f（1998 US CD 8 軌，CDP 7243 8 21735 2 6，Connoisseur，credit Horace Parlan）、58c55745（2011 CD 8 軌，Audio Wave AWMXR-0013）。原 LP 六軌：On the Spur of the Moment／Skoo Chee／And That I Am So in Love／Al's Tune／Ray C.／Pyramid。錄音 1961-03-18 Englewood Cliffs。",
+    "rgMbid": "d27ff9bd-0105-40b4-adef-0e73ced6e4ba",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d27ff9bd-0105-40b4-adef-0e73ced6e4ba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1459,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1459，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "前線站著 Turrentine 兄弟：Tommy 吹小號，Stanley 吹次中音，兩人同時在場。1961 年 3 月 18 日在 Van Gelder Studio 一場錄完，底下是 Horace Parlan 的鋼琴、George Tucker 與 Al Harewood。六首都是原創、沒有標準曲，〈Skoo Chee〉拉到近十一分鐘，它與〈Al's Tune〉出自 Booker Ervin。《Billboard》1961 年 11 月點名標題曲與〈Skoo Chee〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d27ff9bd-0105-40b4-adef-0e73ced6e4ba&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://archive.org/download/bub_gb_ziAEAAAAMBAJ/bub_gb_ziAEAAAAMBAJ_djvu.txt",
+     "https://api.discogs.com/database/search?catno=BLP+4074&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/On_the_Spur_of_the_Moment_(Horace_Parlan_album)",
+     "https://itunes.apple.com/search?term=Horace+Parlan+On+the+Spur+of+the+Moment&entity=album&country=us&limit=25",
+     "https://musicbrainz.org/release-group/d27ff9bd-0105-40b4-adef-0e73ced6e4ba"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/5b/e3/be5be324-2c72-0496-8f66-3e302dbf785c/mzaf_18400232351609108601.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1361702361",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Freddie Redd",
+   "album": "Shades of Redd",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 655f6061-776b-4712-b2f2-9499e36bb3fb。回問 release-group 端點：title「Shades of Redd」、artist-credit「Freddie Redd Quintet」（b2c51717-f8f8-49f4-aac2-7b84f5899618 Group）、first-release-date 1961-05、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：4621076b（1961-05 US Official 12\" Vinyl 7 軌，Blue Note BLP 4045，mono）、95a611e8（2008 US CD 9 軌，50999 5 14375 2 7）、978d0218（2009 US 12\" Vinyl 3+4 軌，Music Matters MMBST-84045）。原 LP 七軌：The Thespian／Blues, Blues, Blues／Shadows／Melanie／Swift／Just a Ballad for My Baby／Olé。錄音 1960-08-13 Englewood Cliffs。個人實體 Freddie Redd f30eb5d7-5513-495c-9ad6-9e81cac7bb1f（Person, US, 1928-05-29）。",
+    "rgMbid": "655f6061-776b-4712-b2f2-9499e36bb3fb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/655f6061-776b-4712-b2f2-9499e36bb3fb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1380,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1380，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩把薩克斯風是 Jackie McLean 與 Tina Brooks——一個成了招牌，一個很快就消失。七首 1960 年 8 月 13 日在 Van Gelder Studio 一場錄完，Freddie Redd 的鋼琴、Paul Chambers 的貝斯與 Louis Hayes 的鼓在後。七首全是 Redd 自己寫的，最短的〈Swift〉不到四分鐘。《Billboard》1961 年 5 月點名〈Thespian〉〈Blues-Blues-Blues〉與〈Swift〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=655f6061-776b-4712-b2f2-9499e36bb3fb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1961/Billboard%201961-05-15.pdf",
+     "https://api.discogs.com/database/search?catno=BLP+4045&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Shades_of_Redd",
+     "https://itunes.apple.com/search?term=Freddie+Redd+Shades+of+Redd&entity=album&country=us&limit=25",
+     "https://musicbrainz.org/release-group/655f6061-776b-4712-b2f2-9499e36bb3fb"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/4f/be/8d/4fbe8d32-bc07-2a9f-66a9-3d92d510c801/mzaf_5899984369327227991.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "610855469",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Grant Green",
+   "album": "Grant's First Stand",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c01fb67f-0bc5-378c-9a5d-d4b099aa8f29。回問 release-group 端點：title「Grant’s First Stand」、artist-credit「Grant Green」（1a88b270-… Person, US, 1935-06-06）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 6 個 release。release 端點：13f4dc08（1961 US Official 12\" Vinyl 6 軌，Blue Note BLP 4064，title「Grant's First Stand」）、a4e5c6a2（1993-10-27 JP CD，BNST-84064／TOCJ-4064）、12a4d179（1999 XE CD，7243 5 21959 2 3）、8020f684／a2ecd192（2009 XE／US CD，50999 2 65151 2 0，RVG）、4f822aff（2019-06-14 US 12\" Vinyl，BST 84064，bc 602577450617），全部 6 軌。原 LP 六軌：Miss Ann's Tempo／Lullaby of the Leaves／Blues for Willarene／Baby's Minor Lope／'Tain't Nobody's Bizness If I Do／A Wee Bit O'Green。錄音 1961-01-28 Englewood Cliffs。",
+    "rgMbid": "c01fb67f-0bc5-378c-9a5d-d4b099aa8f29",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c01fb67f-0bc5-378c-9a5d-d4b099aa8f29/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7681,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "吉他當管樂器彈——Billboard 的評語一句說完他的手法，底下只有管風琴與鼓。六首 1961 年 1 月 28 日在 Van Gelder Studio 一場錄完，台上只有三個人：Grant Green 的吉他、Baby Face Willette 的漢蒙管風琴與 Ben Dixon 的鼓，沒有貝斯。五首落在七分鐘上下，三首出自 Green。那則評語還說這是年輕吉他手的好開場。把 Green 從東聖路易推薦給 Blue Note 的是 Lou Donaldson。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c01fb67f-0bc5-378c-9a5d-d4b099aa8f29&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1961/Billboard%201961-05-15.pdf",
+     "https://api.discogs.com/database/search?catno=BLP+4064&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Grant%27s_First_Stand",
+     "https://itunes.apple.com/lookup?id=715929361&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/c01fb67f-0bc5-378c-9a5d-d4b099aa8f29"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f0/f9/26/f0f92677-7a08-b926-252f-083e4efa2938/mzaf_15644643432467590299.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715929361",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lou Donaldson",
+   "album": "Here 'Tis",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 60c473d5-1ebf-3d93-87d6-949ac099c80b。回問 release-group 端點：title「Here ’Tis」、artist-credit「Lou Donaldson」（db147d97-… Person）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 5 個 release。release 端點：cf7d7004（1961 US Official 12\" Vinyl 5 軌，Blue Note BLP 4066，title「Here 'Tis」）、7251a7fd（2008-03-25 US CD 5 軌，50999 5 14371 2 1）、056175ea（2009 US 12\" Vinyl 3+2 軌，Analogue Productions ABNJ 84066）、44a1893c（2009-11-10 US Hybrid SACD 5 軌，CBNJ 84066 SA）、67e46898（2010 US SACD 5 軌）。原 LP 五軌：A Foggy Day／Here 'Tis／Cool Blues／Watusi Jump／Walk Wid Me。錄音 1961-01-23 Englewood Cliffs。",
+    "rgMbid": "60c473d5-1ebf-3d93-87d6-949ac099c80b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/60c473d5-1ebf-3d93-87d6-949ac099c80b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1363,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1363，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "把 Grant Green 從東聖路易拉到紐約的正是這張碟的領班，五天後 Green 錄了自己的碟。五首 1961 年 1 月 23 日在 Van Gelder Studio 一場錄完，四重奏是 Lou Donaldson 的中音、Baby Face Willette 的漢蒙管風琴、Green 的吉他與 Dave Bailey 的鼓，編制裡沒有貝斯手。五軌都拉得長，標題曲九分半。另有 Gershwin 的〈A Foggy Day〉與 Parker 的〈Cool Blues〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=60c473d5-1ebf-3d93-87d6-949ac099c80b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4066&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Here_%27Tis",
+     "https://itunes.apple.com/lookup?id=721286185&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/60c473d5-1ebf-3d93-87d6-949ac099c80b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e4/40/48/e4404835-1f20-dabc-cd83-e9e223707ed8/mzaf_11602937030177452913.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "721286185",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lou Donaldson",
+   "album": "Sunny Side Up",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 523cfb2d-6087-4f6b-a50d-66c53553b7ff。回問 release-group 端點：title「Sunny Side Up」、artist-credit「Lou Donaldson」（db147d97-… Person）、first-release-date 1961-01、primary-type Album、secondary-types 空、轄下 8 個 release。release 端點：f4cf1676（1961-01 US Official 12\" Vinyl 7 軌，Blue Note BLP 4036）、20ce506e（1969 US 12\" Vinyl 7 軌，BST 84036）、75d771b1（1995-07-18 US CD 8 軌，CDP 7243 8 32095 2 1）、73ae98f6（1999 JP CD 7 軌，TOCJ-9089，RVG）、b756b327（2009-09-16 JP CD，TOCJ-8562）、5e7149a5（2010 US 12\" Vinyl 4+3 軌，Analogue Productions ABNJ 84036）、a603ef7e（2011 US Hybrid SACD 8 軌，CBNJ 84036 SA）、e4e365ae（2014-08-12 XW Digital 7 軌，bc 602537952687）。原 LP 七軌：Blues for J.P.／The Man I Love／Politely／It's You or No One／The Truth／Goose Grease／Softly, As in a Morning Sunrise。錄音 1960-02-05／02-28 Englewood Cliffs。",
+    "rgMbid": "523cfb2d-6087-4f6b-a50d-66c53553b7ff",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/523cfb2d-6087-4f6b-a50d-66c53553b7ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2020,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2020，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一張碟上有兩個貝斯手：Sam Jones 與 Laymon Jackson，分軌輪替。兩次進棚都在 Van Gelder Studio，1960 年 2 月 5 日與 2 月 28 日，貝斯手也是這樣換的。其餘四人固定：Lou Donaldson 的中音、Bill Hardman 的小號、Horace Parlan 的鋼琴與 Al Harewood 的鼓，Hardman 並非每一軌都在。七軌以中速為主，〈Politely〉出自 Hardman。唱片 1961 年 1 月上架。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=523cfb2d-6087-4f6b-a50d-66c53553b7ff&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4036&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Sunny_Side_Up_(Lou_Donaldson_album)",
+     "https://itunes.apple.com/lookup?id=1442821674&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/523cfb2d-6087-4f6b-a50d-66c53553b7ff"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/92/3d/da/923dda9b-4039-0c3d-189a-77f6c380d25b/mzaf_13858168566213571900.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442821674",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Curtis Amy & Frank Butler",
+   "album": "Groovin' Blue",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 42404afe-8ccc-4e8b-9a66-8993fe83d414。回問 release-group 端點：title「Groovin' Blue」、artist-credit「Curtis Amy & Frank Butler」（Curtis Amy c9683280-… Person, US, 1929-10-11；Frank Butler ed0b2949-… Person）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：a5a1d502（1961 US Official 12\" Vinyl 6 軌，Pacific Jazz PJ-19）、b2191b5a（2025 XW Digital 6 軌，Blue Note，2025 Tone Poet Remaster）、a9bc7281（2025-03-07 XW 12\" Vinyl 6 軌，Blue Note／Pacific Jazz 602455421456／PJ-19）。原 LP 六軌：Gone Into It／Annsome／Bobblin'／Groovin' Blue／Beautiful You／Very Frank。錄音 1960-12-10、1961-01-10 Hollywood。",
+    "rgMbid": "42404afe-8ccc-4e8b-9a66-8993fe83d414",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/42404afe-8ccc-4e8b-9a66-8993fe83d414/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 496,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=496，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "震音琴手是十九歲的 Bobby Hutcherson——這是他最早留下的錄音之一。兩次進棚都在洛杉磯的 Pacific Jazz 錄音室：1960 年 12 月 10 日只錄成標題曲，其餘五首等到 1961 年 1 月 10 日補完。六人是 Curtis Amy 的次中音、Carmell Jones 的小號、Frank Strazzeri 的鋼琴，加 Jimmy Bond 與 Frank Butler。六首全是 Amy 寫的，收尾的〈Very Frank〉只有一分四十五秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=42404afe-8ccc-4e8b-9a66-8993fe83d414&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/pacific-jazz-records/discography-1961-1962/",
+     "https://api.discogs.com/database/search?catno=PJ-19&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Groovin%27_Blue_(Curtis_Amy_%26_Frank_Butler_album)",
+     "https://itunes.apple.com/lookup?id=1799309174&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/42404afe-8ccc-4e8b-9a66-8993fe83d414"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/d5/da/f0d5da90-dd26-5488-74b3-fa79fb44232e/mzaf_12865362356752450718.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1799309174",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kenny Clarke & Francy Boland",
+   "album": "The Golden Eight",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 604ec6e1-ed1c-34ac-8b9a-dedf60b342d5。回問 release-group 端點：title「The Golden Eight」、artist-credit「Kenny Clarke with Francy Boland and Company」（Kenny Clarke 48eaf8a1-… Person, US, 1914-01-09；Francy Boland ad4043b2-… Person, BE, 1929-11-06）、first-release-date 1961、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：ddc913ba（1961 US Official，format 空，10 軌，label-info 空 ⚠，credit「Kenny Clarke」）、8c3970a3（2015-12-02 US Official 12\" Vinyl 10 軌，Music Matters Ltd. MMBST-84092）。原 LP 十軌：La Campimania／Softly, As in a Morning Sunrise／You'd Be So Nice to Come Home To／High Notes／Poor Butterfly／The Golden Eight／Dorian 0437／Strange Meeting／Gloria／Mister Nice Guy（曲序留研究層核）。錄音 1961-05-18／19 Köln。刻意不釘：The Kenny Clarke - Francy Boland Big Band df282891（群組實體，1963 後）。",
+    "rgMbid": "604ec6e1-ed1c-34ac-8b9a-dedf60b342d5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/604ec6e1-ed1c-34ac-8b9a-dedf60b342d5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=10，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八個人擠進科隆一間冰淇淋店錄音，店主 Gigi Campi 掛的是製作人。1961 年 5 月 18 與 19 日錄於西德科隆，這是一次錄音工作。管樂有 Dusko Gojkovic 的小號、Raymond Droz 的中音號、Derek Humble 的中音與 Karl Drevo 的次中音，節奏組是 Francy Boland 的鋼琴、Jimmy Woode 與 Kenny Clarke。十軌編曲密、曲子短，七首不到五分鐘，六首出自 Boland。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=604ec6e1-ed1c-34ac-8b9a-dedf60b342d5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4092&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/The_Golden_8",
+     "https://itunes.apple.com/search?term=Kenny+Clarke+The+Golden+Eight&entity=album&country=us&limit=25",
+     "https://musicbrainz.org/release-group/604ec6e1-ed1c-34ac-8b9a-dedf60b342d5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/2b/94/602b9447-2fe8-f4e5-b456-4afa102df05b/mzaf_6700338595531764015.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "374474611",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Three Sounds",
+   "album": "Hey There!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a537f7d7-fca1-48e3-88b2-31ed4538fdf8。回問 release-group 端點：title「Hey There!」、artist-credit「The Three Sounds」（cf2115e9-… Group）、first-release-date 1961-08-13（⚠＝錄音日）、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點：4edf2277（1961-08-13 US Official 12\" Vinyl 9 軌，Blue Note BST 84102）、704499a8（1994-06-16 JP CD 9 軌，TOCJ-4102）、b2a41209（2015-03-25 JP CD 19 軌，UCCQ-5096）。錄音 1961-08-13 Englewood Cliffs。對照組（不釘）：24a301d0-…《Babe's Blues》（同日錄音的另一批曲，本組另一筆）。",
+    "rgMbid": "a537f7d7-fca1-48e3-88b2-31ed4538fdf8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1962,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a537f7d7-fca1-48e3-88b2-31ed4538fdf8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 77,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=77，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九首裡七首是別人的歌，從 Cannonball Adderley 的〈Sermonette〉到〈You Are My Sunshine〉。這批錄音 1961 年 8 月 13 日在 Van Gelder Studio 一天錄成，三人組是 Gene Harris 的鋼琴、Andrew Simpkins 的貝斯與 Bill Dowdy 的鼓。九軌短小俐落，六首不到四分半，最長的〈Little Girl Blue〉五分十八秒。那天的母帶不只這九條，唱片 1962 年 8 月上架。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a537f7d7-fca1-48e3-88b2-31ed4538fdf8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4102&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Hey_There_(album)",
+     "https://itunes.apple.com/lookup?id=1379052334&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/a537f7d7-fca1-48e3-88b2-31ed4538fdf8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/fc/3b/14fc3be2-a934-bc78-e137-1761a5fbdc71/mzaf_13850401079280045443.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1379052334",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Three Sounds",
+   "album": "Babe's Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 24a301d0-6dc6-42a8-9319-ae0318339aec。回問 release-group 端點：title「Babe's Blues」、artist-credit「The Three Sounds」（cf2115e9-… Group）、first-release-date 1961-01-01（⚠ placeholder，實際首發 1986）、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點：0d07f0b5（date 1961-01-01 US Official 12\" Vinyl 10 軌，Blue Note BST 84434 ⚠ 實為 1986 壓）、f563149c（1988 US CD 10 軌，CDP 7 84434 2，bc 077778443421）。錄音 1961-08-13（第 2–10 軌）、1962-03-08（第 1 軌）Englewood Cliffs。對照組（不釘）：a537f7d7-…《Hey There!》（同日錄音先發行的那批，本組另一筆）。",
+    "rgMbid": "24a301d0-6dc6-42a8-9319-ae0318339aec",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/24a301d0-6dc6-42a8-9319-ae0318339aec/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 321,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=321，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1961 年錄的九首在倉庫裡放了二十五年，1986 年才第一次壓成唱片。十軌裡九首錄於 1961 年 8 月 13 日的 Van Gelder Studio，標題曲另錄於 1962 年 3 月 8 日。三人組是 Gene Harris、Andrew Simpkins 與 Bill Dowdy。曲目裡有 Ernest Tubb 的鄉村老歌〈Walking the Floor Over You〉。盤面的 BST 84434 已是 Capitol 時期的號段。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=24a301d0-6dc6-42a8-9319-ae0318339aec&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4400-series/",
+     "https://api.discogs.com/database/search?catno=BST+84434&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Babe%27s_Blues",
+     "https://itunes.apple.com/lookup?id=1455685290&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/24a301d0-6dc6-42a8-9319-ae0318339aec"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/8b/11/408b11fa-553f-0b6f-1cd2-05eb603802d3/mzaf_4092975174222090467.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1455685290",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

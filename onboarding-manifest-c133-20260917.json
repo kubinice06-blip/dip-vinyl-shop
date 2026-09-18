@@ -1,0 +1,2780 @@
+{
+ "schemaVersion": 1,
+ "batch": "c133-20260917",
+ "albums": [
+  {
+   "artist": "原信夫とシャープス・アンド・フラッツ",
+   "album": "Operation Glenn Miller",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3cc0ac9f-3968-4490-b27d-58a3f90be064。回問 `release-group/<id>?inc=artist-credits+releases` 確認：title「Operation Glenn Miller」、artist-credit「Nobuo Hara And His Sharps & Flats」（單一 credit 元素，實體 e18d9179-29d9-4ddc-bd98-56ce5cd15e31）、first-release-date 1963、primary-type Album、secondary-types 空、轄下 1 個 release。再用 `release/<id>?inc=labels+media+artist-credits` 回問該 release（第 259 條：廠牌與 catno 只有 release 端點回得到）：JP 1963、**status 空**、KING SDS 6、12\" Vinyl 12 軌。藝人實體：原信夫とシャープス・アンド・フラッツ e18d9179-29d9-4ddc-bd98-56ce5cd15e31（Group／JP／1951 起，名下 25 個 RG）；另有個人實體 原信夫 e4207dc5-84d6-49d7-aea0-18569a5ebfc5（Person／JP／1926-11-19，**名下 0 個 RG**——`release-group?artist=` 分頁拉完，確實是空殼）。刻意不釘：38e2e165《Giant Steps》1978（三實體合掛 Elvin Jones／Frank Foster，第 321／385 條）、8e8bcc0d《3-2-1-0》2008（credit「Oliver Nelson / The Sharps & Flats」聯名）、8234b18b《Beautiful Bamboo‐Flute》1971（credit「Hozan Yamamoto With Sharps & Flats」兩實體合掛）、1d584e34《New Jazz In Japan》2009（＆山本邦山）、b1093704《YAMATO SOUND ALMANAC》2013（三實體）、6f1b266c《Big Band Dynamics》2008（見第 401 條，原盤年查不到）、e0bedb46《Sharps & Flats '67》2009、6c0eb992《LAST FOREVER》2008、6bad9042《NICE TO MEET YOU!》2026（＆江利チエミ），以及 10 個 Single。",
+    "rgMbid": "3cc0ac9f-3968-4490-b27d-58a3f90be064",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/af/ce/d2/afced26b-531c-58f5-47b5-bae362ad6019/KICJ-851.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1581401373",
+    "note": "試聽探測釘定的 collectionId 1581401373（jp）：原 信夫とシャープス・アンド・フラッツ — グレン・ミラー作戦～あの名演が蘇る!〈1962年録音〉"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1962 年錄好的十二首 Glenn Miller，隔年才裝進 King 新開的立體聲編號裡。樂團 1950 年在橫濱的舞廳起家，移到品川的美軍俱樂部駐演之後才改了團名。King 在 1960 年代替他們開了 SDS 這段立體聲企劃編號，本張排在第 6 號。十二首全部取自 Glenn Miller 樂團的定番，約 38 分鐘，聽的是四支小號、四支長號、五支薩克斯風疊起來的合奏與立體聲動態。錄音在 1962 年完成，原盤要到 1963 年才出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=3cc0ac9f-3968-4490-b27d-58a3f90be064&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://music.apple.com/jp/album/1581401373",
+     "https://ja.wikipedia.org/wiki/%E5%8E%9F%E4%BF%A1%E5%A4%AB",
+     "https://music.apple.com/jp/artist/351331901",
+     "https://musicbrainz.org/release-group/3cc0ac9f-3968-4490-b27d-58a3f90be064"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/45/47/b5/4547b5fa-c931-9b50-6b92-a9c1c24cce30/mzaf_941811486810176683.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1581401373",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "原信夫とシャープス・アンド・フラッツ",
+   "album": "Western Dynamics",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5ba9d38f-c723-4e7f-a7f6-cb30a8731f8d。回問 release-group 端點確認：title「Western Dynamics」、artist-credit「原信夫とシャープス・アンド・フラッツ」（單一 credit，實體 e18d9179）、first-release-date 1964、primary-type Album、secondary-types 空、轄下 2 個 release。逐筆回問 release 端點：① JP 1964、**status 空**、KING SKJ 7015、12\" Vinyl 12 軌；② JP 1970、**Official**、KING KR 7023、12\" Vinyl 10 軌。藝人實體同《Operation Glenn Miller》卡（e18d9179，25 個 RG；個人實體 e4207dc5 名下 0 個 RG）。刻意不釘同前卡。",
+    "rgMbid": "5ba9d38f-c723-4e7f-a7f6-cb30a8731f8d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/56/5a/05565a51-a163-cca9-9690-1dcf238d1052/NOPA-4204.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1725117671",
+    "note": "試聽探測釘定的 collectionId 1725117671（jp）：原 信夫とシャープス・アンド・フラッツ & ゲスト・スターズ — Western Dynamics<Themes from The Western Movies>"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "西部片的主題曲被搬進四管大樂團，原盤十二首，1970 年再壓時少了兩首。SKJ 是 King 接在 SDS 之後的下一段編號，本張是 SKJ 7015，1964 年 10 月 20 日發行，原盤副標就寫著 Themes from The Western Movies。曲目全是西部片的主題曲，〈The Big Country〉與〈Stagecoach〉這類擺在一起，銅管走寬闊的長音，節奏組打的是進行曲式的馬蹄節拍。這是企劃盤的規格：曲子都是別人的，聽的是編曲與合奏。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5ba9d38f-c723-4e7f-a7f6-cb30a8731f8d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://music.apple.com/jp/album/1725117671",
+     "https://music.apple.com/jp/artist/351331901",
+     "https://musicbrainz.org/release-group/5ba9d38f-c723-4e7f-a7f6-cb30a8731f8d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/2b/18/81/2b1881fb-b677-d5b2-0568-61dafd4819e6/mzaf_8594576464697556896.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1725117671",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "原信夫とシャープス・アンド・フラッツ",
+   "album": "LITTLE GIANT",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1e261c1e-ce4e-4c66-9c1a-968d5acc557f。回問 release-group 端點確認：title「LITTLE GIANT」、artist-credit「原信夫とシャープス・アンド・フラッツ」（單一 credit，實體 e18d9179）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：country 空、date 1969、**status Official**、label-info 只有「Victor」而**沒有 catalog-number**、media 為 Digital Media 8 軌。來源交叉：`batch-progress/enum/jp-victor.json` 同一筆 rgMbid，entities 記「Victor(JP imprint)」。藝人實體同前卡。",
+    "rgMbid": "1e261c1e-ce4e-4c66-9c1a-968d5acc557f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6d/9d/35/6d9d3595-95ad-4c4f-d8ff-c6a0132b991e/VEATP-43281.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1773905462",
+    "note": "試聽探測釘定的 collectionId 1773905462（jp）：原 信夫とシャープス・アンド・フラッツ — Little Giant"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 43,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原創曲八首，這是他們少數不在 King 與日本コロムビア 的一張碟。本張屬於ビクター 的「日本のジャズ」系列，那套企劃在 1969 至 1970 年間集中發行，同系列也收了 山下洋輔トリオ 的盤。八軌全部是原創曲，約 40 分鐘，長度分佈很寬，〈ELEGY FOR A DUCK〉7 分 26 秒最長，〈LITTLE GIANT〉6 分 02 秒留足了獨奏的篇幅。寫法比同期那些翻唱企劃盤更靠近 1960 年代末的現代爵士。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1e261c1e-ce4e-4c66-9c1a-968d5acc557f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jvcmusic.co.jp/-/Discography/A015774/VEATP-43281.html",
+     "https://music.apple.com/jp/album/1773905462",
+     "https://www.hmv.co.jp/news/article/240829165/",
+     "https://musicbrainz.org/release-group/1e261c1e-ce4e-4c66-9c1a-968d5acc557f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/9b/07/e09b0718-9dea-5463-44a5-bbc1b3b521be/mzaf_5427365268036274041.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1773905462",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "原信夫とシャープス・アンド・フラッツ",
+   "album": "エレクトロニクス！",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3b3d4658-4def-47fe-82d1-1f0c306cc85c。回問 release-group 端點確認：title「エレクトロニクス！」、artist-credit「原信夫とシャープス＆フラッツ＋1」（**artist-credit 陣列長度 1**，實體 e18d9179）、first-release-date 1970-06-25、primary-type Album、secondary-types 空、轄下 2 個 release。逐筆回問 release 端點：① JP 1970-06-25 Official、Columbia JDX-36、12\" Vinyl 10 軌；② JP 2012-09-05 Official、Columbia COCB-54009、CD 10 軌。來源交叉：`enum/jp-columbia.json` 同一筆 rgMbid，artist 欄寫「原信夫とシャープス＆フラッツ＋1」。藝人實體同前卡。",
+    "rgMbid": "3b3d4658-4def-47fe-82d1-1f0c306cc85c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/28/59/97/2859979d-3153-fcf6-6645-95832e98c9b0/COKM-43327.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1579014905",
+    "note": "試聽探測釘定的 collectionId 1579014905（jp）：原 信夫とシャープス・アンド・フラッツ + 1 — Electronics!"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "掛名結尾那個「＋1」，是當時 22 歲、負責電鋼琴與風琴的 本田竹彦。廠牌自己把這張定位成樂團的異色作，與他們在 King 留下的那些搖擺樂企劃盤是兩條路線。十軌取的是 1970 年當下的搖滾曲目，〈COME TOGETHER〉出自 The Beatles，〈BOUREE〉出自 Jethro Tull，編曲則交給四個人分工。樂團這邊出的是薩克斯風三人、小號四人、長號四人，再加鋼琴、貝斯、鼓與吉他。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=3b3d4658-4def-47fe-82d1-1f0c306cc85c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://columbia.jp/artist-info/haranobuo/discography/COCB-54009.html",
+     "https://musicbrainz.org/release-group/3b3d4658-4def-47fe-82d1-1f0c306cc85c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/0b/40/fa0b40d0-413a-013b-f359-6d9679e9a99c/mzaf_6993164467352652855.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1579014905",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "原信夫とシャープス・アンド・フラッツ",
+   "album": "Oliver Nelson In Tokyo",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c9353f6e-0529-4a3f-9573-18b0eab29e93。回問 release-group 端點確認：title「Oliver Nelson In Tokyo」、artist-credit「Nobuo Hara & His Sharps & Flats」（**artist-credit 陣列長度 1**，實體 e18d9179）、first-release-date 2013-11-20、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：JP 2013-11-20 Official、Columbia COCB-54079、CD 10 軌。**1970 年的原盤在 MB 上沒有 release**——這是年份改判的原因（見 risk）。⚠ 與 8e8bcc0d《3-2-1-0》（2008-10-29 RG，credit「Oliver Nelson / The Sharps & Flats」，Apple jp `351371878` ℗ 1969）**是兩張不同的碟**，那張因聯名 credit 依第 321／385 條不收。藝人實體同前卡。",
+    "rgMbid": "c9353f6e-0529-4a3f-9573-18b0eab29e93",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c9353f6e-0529-4a3f-9573-18b0eab29e93/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Oliver Nelson 在東京的錄音室裡，替十七人的日本大樂團重配十首標準曲。演奏主體是 原信夫とシャープス・アンド・フラッツ，Oliver Nelson 的位置是受邀編曲、指揮並吹次中音與高音薩克斯風的客座。這是兩邊的第二次合作，前一次是 1969 年的《3-2-1-0》。錄音在 1970 年 9 月 4 日與 7 日進行，同年 12 月 25 日以 NCB-7002 發行。十軌全是標準曲與流行曲，6 分 26 秒的〈Sermonette〉最長。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c9353f6e-0529-4a3f-9573-18b0eab29e93&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://columbia.jp/artist-info/haranobuo/discography/COCB-54079.html",
+     "https://musicbrainz.org/release-group/c9353f6e-0529-4a3f-9573-18b0eab29e93"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c1/3b/86/c13b86e2-d0c6-4c7a-9aa5-c2f2e5ccc900/mzaf_13966906036171280038.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1579015484",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高橋達也と東京ユニオン",
+   "album": "The Rock Seasons",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e8a53d83-7d8a-49ee-a4a2-24562acbdf80。回問 `release-group/<id>?inc=artist-credits+releases` 確認：title「The Rock Seasons」、artist-credit「高橋達也と東京ユニオン」（單一 credit 元素，實體 aa55bb8c）、first-release-date 1973-03-05、primary-type Album、secondary-types 空、轄下 1 個 release。回問 `release/<id>?inc=labels+media+artist-credits`：JP 1973-03-05 **Official**、EXPRESS ETP-92004Z、12\" Vinyl 16 軌。來源交叉：`enum/jp-toshiba.json` 同一筆 rgMbid，entities 記「EXPRESS」。藝人實體：高橋達也と東京ユニオン aa55bb8c-a2db-4183-bfb0-fee6f1f07a72（Group／JP，名下 24 個 RG）；個人實體 高橋達也 81a4e935-972d-4c2f-9267-6450a26933b5（Person／JP／1931-12-27，disambiguation「tenor saxophonist, jazz producer」，**`release-group?artist=` 分頁拉完是 0 個 RG**）。刻意不釘：9ebff2c0《Scandinavian Suite》1977（credit「Bingo Miki, Tatsuya Takahashi & The Tokyo Union」兩實體合掛，且唯一 release 是 three blind mice TBM 1005 的 Promotion）、29f9c4b9《September Steps》1978（Sho Kubota 合掛，RCA RVL-8504 Promotion）、30ce1628《Funpico》1978（上田力 合掛）、ca55ce40《Keeping Count》1986（David Matthews 合掛）、cb3b1d7a《Montreux The Best '78》2023（**中本マリ 合掛——中本マリ 是 c-134 b 組的掛名，見第 405 條**）、836e41b8《Maiden Voyage》1977（TBM-3001，唯一 release 是 Promotion，c-131 第 356 條 F 已擋）、4654860c《ゴールデン・ヒット・パレード》1968（credit「高橋達也と東京ユニオン・プラス・アルファ」的歌謡曲企劃盤）、1e54f045／4faf121c《Stardust》、310bd06a《Swing On Swing》、71ff5738《Beauties》、11c4da77《Chasin' The Duke》（**primary-type 是 null，不過 Album 門檻**）、410c8510《プレイズ・マイルス&ギル》2004、ecb865f4《NHKきらめくリズム》1979；原聲帶依固定規格不收：93cad328《大都会 Part III》、764f6728／3f037e82《西部警察》兩張、4bf70005《Jam Trip The かぼちゃワイン》1983。",
+    "rgMbid": "e8a53d83-7d8a-49ee-a4a2-24562acbdf80",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e8a53d83-7d8a-49ee-a4a2-24562acbdf80/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十六軌切成兩半：前十二首沒有一首滿兩分半，後四首才回到一般長度。樂團 1964 年由一位中音薩克斯風手組起，1966 年 高橋達也 接任第四代團長，此後才以他的名義活動，本張是他接手後最早留在唱片上的長篇作品之一。EXPRESS 是東芝旗下的爵士企劃廠標，本張編號 ETP-92004Z，1973 年 3 月發行，做成對開封套。前十二軌都是單字標題的短樂章，56 秒到 2 分 25 秒，合計約 19 分鐘。電貝斯與電鋼琴進來了，銅管仍是主體。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e8a53d83-7d8a-49ee-a4a2-24562acbdf80&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.hmv.co.jp/artist_%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F_000000000015340/item_%E3%80%90%E4%B8%AD%E5%8F%A4-%E7%9B%A4%E8%B3%AAAB%E3%80%91-%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3_9066901",
+     "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F",
+     "https://en.wikipedia.org/wiki/Tokyo_Union",
+     "https://musicbrainz.org/release-group/e8a53d83-7d8a-49ee-a4a2-24562acbdf80"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高橋達也と東京ユニオン",
+   "album": "You're So Vain - Perfect Sound In Jazz Rock",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7b1e4e37-c11c-4b98-ba72-749439fb498f。回問 release-group 端點確認：title「You're So Vain - Perfect Sound In Jazz Rock」、artist-credit「高橋達也と東京ユニオン」（單一 credit，實體 aa55bb8c）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：JP 1973、**status 空**、EXPRESS ETP-92015V、12\" Vinyl 9 軌。來源交叉：`enum/jp-toshiba.json` 同一筆 rgMbid。藝人實體：高橋達也と東京ユニオン aa55bb8c-a2db-4183-bfb0-fee6f1f07a72（Group／JP，名下 24 個 RG）；個人實體 高橋達也 81a4e935-972d-4c2f-9267-6450a26933b5（Person／JP／1931-12-27，disambiguation「tenor saxophonist, jazz producer」，**`release-group?artist=` 分頁拉完是 0 個 RG**）。刻意不釘：9ebff2c0《Scandinavian Suite》1977（credit「Bingo Miki, Tatsuya Takahashi & The Tokyo Union」兩實體合掛，且唯一 release 是 three blind mice TBM 1005 的 Promotion）、29f9c4b9《September Steps》1978（Sho Kubota 合掛，RCA RVL-8504 Promotion）、30ce1628《Funpico》1978（上田力 合掛）、ca55ce40《Keeping Count》1986（David Matthews 合掛）、cb3b1d7a《Montreux The Best '78》2023（**中本マリ 合掛——中本マリ 是 c-134 b 組的掛名，見第 405 條**）、836e41b8《Maiden Voyage》1977（TBM-3001，唯一 release 是 Promotion，c-131 第 356 條 F 已擋）、4654860c《ゴールデン・ヒット・パレード》1968（credit「高橋達也と東京ユニオン・プラス・アルファ」的歌謡曲企劃盤）、1e54f045／4faf121c《Stardust》、310bd06a《Swing On Swing》、71ff5738《Beauties》、11c4da77《Chasin' The Duke》（**primary-type 是 null，不過 Album 門檻**）、410c8510《プレイズ・マイルス&ギル》2004、ecb865f4《NHKきらめくリズム》1979；原聲帶依固定規格不收：93cad328《大都会 Part III》、764f6728／3f037e82《西部警察》兩張、4bf70005《Jam Trip The かぼちゃワイン》1983。",
+    "rgMbid": "7b1e4e37-c11c-4b98-ba72-749439fb498f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7b1e4e37-c11c-4b98-ba72-749439fb498f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "從 Carly Simon 到 The Beatles，九首流行曲被同一支大樂團重編成銅管的塊狀和聲。本張與同團 1973 年 3 月的《The Rock Seasons》同屬東芝的 EXPRESS 廠標，編號 ETP-92015V，兩張只隔了十一號。原盤副標直接寫著 Perfect Sound In Jazz Rock，九軌沒有一首是自作，〈Theme From Shaft〉出自 Isaac Hayes。聽的是編曲怎麼把三分鐘長的流行曲撐成大編制的段落。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7b1e4e37-c11c-4b98-ba72-749439fb498f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F",
+     "https://en.wikipedia.org/wiki/Tokyo_Union",
+     "https://musicbrainz.org/release-group/7b1e4e37-c11c-4b98-ba72-749439fb498f"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高橋達也と東京ユニオン",
+   "album": "Soul Porter",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9f39f6d9-01bd-456b-b5d1-b2b6bb449278。回問 release-group 端點確認：title「Soul Porter」、artist-credit「高橋達也と東京ユニオン」（單一 credit，實體 aa55bb8c）、first-release-date 1978-11、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：JP 1978-11、**status 空**、Warner Bros. Records M-8002W、12\" Vinyl 8 軌。藝人實體：高橋達也と東京ユニオン aa55bb8c-a2db-4183-bfb0-fee6f1f07a72（Group／JP，名下 24 個 RG）；個人實體 高橋達也 81a4e935-972d-4c2f-9267-6450a26933b5（Person／JP／1931-12-27，disambiguation「tenor saxophonist, jazz producer」，**`release-group?artist=` 分頁拉完是 0 個 RG**）。刻意不釘：9ebff2c0《Scandinavian Suite》1977（credit「Bingo Miki, Tatsuya Takahashi & The Tokyo Union」兩實體合掛，且唯一 release 是 three blind mice TBM 1005 的 Promotion）、29f9c4b9《September Steps》1978（Sho Kubota 合掛，RCA RVL-8504 Promotion）、30ce1628《Funpico》1978（上田力 合掛）、ca55ce40《Keeping Count》1986（David Matthews 合掛）、cb3b1d7a《Montreux The Best '78》2023（**中本マリ 合掛——中本マリ 是 c-134 b 組的掛名，見第 405 條**）、836e41b8《Maiden Voyage》1977（TBM-3001，唯一 release 是 Promotion，c-131 第 356 條 F 已擋）、4654860c《ゴールデン・ヒット・パレード》1968（credit「高橋達也と東京ユニオン・プラス・アルファ」的歌謡曲企劃盤）、1e54f045／4faf121c《Stardust》、310bd06a《Swing On Swing》、71ff5738《Beauties》、11c4da77《Chasin' The Duke》（**primary-type 是 null，不過 Album 門檻**）、410c8510《プレイズ・マイルス&ギル》2004、ecb865f4《NHKきらめくリズム》1979；原聲帶依固定規格不收：93cad328《大都会 Part III》、764f6728／3f037e82《西部警察》兩張、4bf70005《Jam Trip The かぼちゃワイン》1983。",
+    "rgMbid": "9f39f6d9-01bd-456b-b5d1-b2b6bb449278",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9f39f6d9-01bd-456b-b5d1-b2b6bb449278/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名把 soul 與 Porter 併成一個字，八首裡有六首真的是 Cole Porter。1978 年樂團首度登上 Montreux Jazz Festival，本張就發行在那一年的年底，由 Warner Bros. Records 以 M-8002W 在 11 月推出。八軌約 43 分鐘，〈Night And Day〉這類 1930 年代的歌被放進 1970 年代後半的節奏組裡，靈魂樂的律動直接接在原曲的和聲上。剩下兩首是樂團自己的曲子，也是全張最長的兩軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9f39f6d9-01bd-456b-b5d1-b2b6bb449278&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://music.apple.com/jp/album/1804566435",
+     "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F",
+     "https://musicbrainz.org/release-group/9f39f6d9-01bd-456b-b5d1-b2b6bb449278"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/f9/15/ddf9159a-ce45-17bc-51bd-c96964e3cbad/mzaf_7928274653125964135.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1804566435",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高橋達也と東京ユニオン",
+   "album": "Black Pearl",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 736ea34e-723c-47e7-8256-d8fe4a51406a。回問 release-group 端點確認：title「Black Pearl」、artist-credit「高橋達也と東京ユニオン」（單一 credit，實體 aa55bb8c）、first-release-date 1980、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：JP 1980 **Official**、Zen ZEN-5001、12\" Vinyl 6 軌。藝人實體：高橋達也と東京ユニオン aa55bb8c-a2db-4183-bfb0-fee6f1f07a72（Group／JP，名下 24 個 RG）；個人實體 高橋達也 81a4e935-972d-4c2f-9267-6450a26933b5（Person／JP／1931-12-27，disambiguation「tenor saxophonist, jazz producer」，**`release-group?artist=` 分頁拉完是 0 個 RG**）。刻意不釘：9ebff2c0《Scandinavian Suite》1977（credit「Bingo Miki, Tatsuya Takahashi & The Tokyo Union」兩實體合掛，且唯一 release 是 three blind mice TBM 1005 的 Promotion）、29f9c4b9《September Steps》1978（Sho Kubota 合掛，RCA RVL-8504 Promotion）、30ce1628《Funpico》1978（上田力 合掛）、ca55ce40《Keeping Count》1986（David Matthews 合掛）、cb3b1d7a《Montreux The Best '78》2023（**中本マリ 合掛——中本マリ 是 c-134 b 組的掛名，見第 405 條**）、836e41b8《Maiden Voyage》1977（TBM-3001，唯一 release 是 Promotion，c-131 第 356 條 F 已擋）、4654860c《ゴールデン・ヒット・パレード》1968（credit「高橋達也と東京ユニオン・プラス・アルファ」的歌謡曲企劃盤）、1e54f045／4faf121c《Stardust》、310bd06a《Swing On Swing》、71ff5738《Beauties》、11c4da77《Chasin' The Duke》（**primary-type 是 null，不過 Album 門檻**）、410c8510《プレイズ・マイルス&ギル》2004、ecb865f4《NHKきらめくリズム》1979；原聲帶依固定規格不收：93cad328《大都会 Part III》、764f6728／3f037e82《西部警察》兩張、4bf70005《Jam Trip The かぼちゃワイン》1983。",
+    "rgMbid": "736ea34e-723c-47e7-8256-d8fe4a51406a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/736ea34e-723c-47e7-8256-d8fe4a51406a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Zen 這家廠標的第一號作品，是這支日本大樂團在美國錄下的六首。1980 年樂團赴加州演出，一路與 Herbie Hancock 等美國樂手同台，隨後接上當地一場爵士音樂節的檔期，同年也第二次登上 Montreux Jazz Festival。錄音就在那一趟的美國完成，Zen 當時是在日本發爵士盤的獨立廠標，ZEN-5001 是它掛出的第一號。六軌約 40 分鐘，其中兩首 Herbie Hancock 的曲子佔掉近四成，銅管在長段落裡堆和聲，節奏組走的是爵士放克的律動。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=736ea34e-723c-47e7-8256-d8fe4a51406a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/master/703136-Tatsuya-Takahashi-Tokyo-Union-Black-Pearl",
+     "https://en.wikipedia.org/wiki/Tokyo_Union",
+     "https://musicbrainz.org/release-group/736ea34e-723c-47e7-8256-d8fe4a51406a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高橋達也と東京ユニオン",
+   "album": "Up In The Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 794d6b64-e387-4330-ac9c-0bd2e73ed8c0。回問 release-group 端點確認：title「Up In The Blues」、artist-credit「高橋達也と東京ユニオン」（單一 credit，實體 aa55bb8c）、first-release-date 1981、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：JP 1981、**status 空**、Polydor 28MX 2014、12\" Vinyl 9 軌。藝人實體：高橋達也と東京ユニオン aa55bb8c-a2db-4183-bfb0-fee6f1f07a72（Group／JP，名下 24 個 RG）；個人實體 高橋達也 81a4e935-972d-4c2f-9267-6450a26933b5（Person／JP／1931-12-27，disambiguation「tenor saxophonist, jazz producer」，**`release-group?artist=` 分頁拉完是 0 個 RG**）。刻意不釘：9ebff2c0《Scandinavian Suite》1977（credit「Bingo Miki, Tatsuya Takahashi & The Tokyo Union」兩實體合掛，且唯一 release 是 three blind mice TBM 1005 的 Promotion）、29f9c4b9《September Steps》1978（Sho Kubota 合掛，RCA RVL-8504 Promotion）、30ce1628《Funpico》1978（上田力 合掛）、ca55ce40《Keeping Count》1986（David Matthews 合掛）、cb3b1d7a《Montreux The Best '78》2023（**中本マリ 合掛——中本マリ 是 c-134 b 組的掛名，見第 405 條**）、836e41b8《Maiden Voyage》1977（TBM-3001，唯一 release 是 Promotion，c-131 第 356 條 F 已擋）、4654860c《ゴールデン・ヒット・パレード》1968（credit「高橋達也と東京ユニオン・プラス・アルファ」的歌謡曲企劃盤）、1e54f045／4faf121c《Stardust》、310bd06a《Swing On Swing》、71ff5738《Beauties》、11c4da77《Chasin' The Duke》（**primary-type 是 null，不過 Album 門檻**）、410c8510《プレイズ・マイルス&ギル》2004、ecb865f4《NHKきらめくリズム》1979；原聲帶依固定規格不收：93cad328《大都会 Part III》、764f6728／3f037e82《西部警察》兩張、4bf70005《Jam Trip The かぼちゃワイン》1983。",
+    "rgMbid": "794d6b64-e387-4330-ac9c-0bd2e73ed8c0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/794d6b64-e387-4330-ac9c-0bd2e73ed8c0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音跨了一個年頭，聲音卻從爵士搖滾退回搖擺樂的分句。兩段錄音分別在 1980 年 12 月與 1981 年 2 月，發行在 1981 年，Polydor 給的編號是 28MX 2014。九軌不再走前幾張的爵士搖滾或放克，〈Satin Doll〉這類美國歌本的定番佔了多數，另有兩首是樂團自己的曲子。四管配置這回不做塊狀的衝擊，鋼琴 前田憲男 與吉他 杉本喜代志 的獨奏穿在合奏段落之間。在樂團留下的這幾張裡，它是最晚的一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=794d6b64-e387-4330-ac9c-0bd2e73ed8c0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/11047488-Tatsuya-Takahashi-Tokyo-Union-Up-In-The-Blues",
+     "https://www.waxpend.com/items/14901",
+     "https://en.wikipedia.org/wiki/Tokyo_Union",
+     "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E9%81%94%E4%B9%9F",
+     "https://musicbrainz.org/release-group/794d6b64-e387-4330-ac9c-0bd2e73ed8c0"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮間利之とニューハード",
+   "album": "Perspective",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8ead5c1a-a80f-44e7-9736-0d4bbb4b585f。回問 `release-group/<id>?inc=artist-credits+releases` 確認：title「Perspective」、artist-credit「New Herd」（單一 credit 元素，實體 11c13132）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release。逐筆回問 release 端點：① JP 1969 **Official**、Columbia JPS-5178、12\" Vinyl 6 軌；② XW 無日期 **Official**、Nippon Columbia Co., Ltd./NIPPONOPHONE（**label-info 有廠牌、沒有 catalog-number**）、Digital Media 6 軌。藝人實體：宮間利之とニューハード 11c13132-89ec-4bb4-99a8-21dd45d749e1（Group／JP，名下 21 個 RG）；個人實體 宮間利之 ad9e42ee-6b2e-414d-86c0-8842c90e0946（Person／JP／1921-10-31，名下 4 個 RG，其中 3 個是 2026 年江利チエミ 的單曲、1 個是 fa043e77《Straight Ahead》1974）。刻意不釘（全部是兩個以上實體平列的合掛，依第 321／385 條）：7668525c《天秤座の詩》1970（＋佐藤允彦／M. Sato，**佐藤允彦 是 c-132 a 組的掛名**）、bc6cfc57《牡牛座の詩》1971（credit「ニューハード＋富樫雅彦」，**池中已有 富樫雅彦 八張卡**）、02fd9983《Yamataifu》1972（＋M. Sato）、f28008b6《St. Louis Blues》1976（＋南里文雄）、363cbc0b《Call Me》1979（＋Ayako Hosokawa，TBM 5013）、8e032d24《Oriental Bossa Sounds》1968（山本邦山／横山勝也／沢井忠夫 三人＋樂團，四實體）、fa043e77《Straight Ahead》1974（掛個人實體，Apple 條目 `1474204854` 的 credit 是「佐藤允彦 & 宮間利之とニュー・ハード」）。另外不釘：e4d8c3c9《ビッグ・バンドによる軍歌》2017（secondary-type **Compilation**，未走 §5.6）、dd3262e9《Live! New Herd 76/45》（**沒有日期、primary-type 是 null**，不過 Album 門檻）、a158c5e8《Shuko Mizuno's \"Jazz Orchestra '75\"》2002、bab92674／298286a4／c9f548f1（2026 年江利チエミ 合掛）。**額度外、單一 credit、CAA 200、可直接進下一批的兩張見第 403 條。**",
+    "rgMbid": "8ead5c1a-a80f-44e7-9736-0d4bbb4b585f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8ead5c1a-a80f-44e7-9736-0d4bbb4b585f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Beatles 與 Charles Mingus 的曲子排在同一面，四位編曲者各寫各的。宮間利之 1950 年組團在美軍俱樂部演奏，1958 年起改用現在這個團名，取的是「小羊的群」的意思。錄音在 1969 年 3 月 6 日與 13 日兩天進行，由他親自指揮，日本コロムビア 以 JPS-5178 發行。六軌約 36 分鐘，搖滾、現代爵士與樂團自己的日本題材〈ふりそでは泣く〉擺在同一組銅管上比較。這一年，這張在樂團年表上記下的是ジャズディスク大賞的特別企画賞。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8ead5c1a-a80f-44e7-9736-0d4bbb4b585f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://jazzshiryokan.net/jazzDB/musician_detail.php?recordID=M3519",
+     "https://newherd.jp/about/",
+     "https://musicbrainz.org/release-group/8ead5c1a-a80f-44e7-9736-0d4bbb4b585f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/41/22/7d41222f-59d0-d47b-bf48-d133d50b389c/mzaf_3060319450400565800.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1474202362",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮間利之とニューハード",
+   "album": "Four Jazz Compositions -Based On Japanese Classical Themes-",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 72d3f3e5-af85-470d-b914-f07c3dc4cc54。回問 release-group 端點確認：title「Four Jazz Compositions -Based On Japanese Classical Themes-」、artist-credit「Toshiyuki Miyama & His New Herd Orchestra」（單一 credit 元素，實體 11c13132）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release。逐筆回問 release 端點：① JP 1970 **Official**、Toshiba Records TP-9010、12\" Vinyl 4 軌；② JP 2016-12-14 **Official**、USM JAPAN UPCY-9546、CD 4 軌。來源交叉：`enum/jp-toshiba.json` 同一筆 rgMbid，entities 記「Toshiba Records」。藝人實體：宮間利之とニューハード 11c13132-89ec-4bb4-99a8-21dd45d749e1（Group／JP，名下 21 個 RG）；個人實體 宮間利之 ad9e42ee-6b2e-414d-86c0-8842c90e0946（Person／JP／1921-10-31，名下 4 個 RG，其中 3 個是 2026 年江利チエミ 的單曲、1 個是 fa043e77《Straight Ahead》1974）。刻意不釘（全部是兩個以上實體平列的合掛，依第 321／385 條）：7668525c《天秤座の詩》1970（＋佐藤允彦／M. Sato，**佐藤允彦 是 c-132 a 組的掛名**）、bc6cfc57《牡牛座の詩》1971（credit「ニューハード＋富樫雅彦」，**池中已有 富樫雅彦 八張卡**）、02fd9983《Yamataifu》1972（＋M. Sato）、f28008b6《St. Louis Blues》1976（＋南里文雄）、363cbc0b《Call Me》1979（＋Ayako Hosokawa，TBM 5013）、8e032d24《Oriental Bossa Sounds》1968（山本邦山／横山勝也／沢井忠夫 三人＋樂團，四實體）、fa043e77《Straight Ahead》1974（掛個人實體，Apple 條目 `1474204854` 的 credit 是「佐藤允彦 & 宮間利之とニュー・ハード」）。另外不釘：e4d8c3c9《ビッグ・バンドによる軍歌》2017（secondary-type **Compilation**，未走 §5.6）、dd3262e9《Live! New Herd 76/45》（**沒有日期、primary-type 是 null**，不過 Album 門檻）、a158c5e8《Shuko Mizuno's \"Jazz Orchestra '75\"》2002、bab92674／298286a4／c9f548f1（2026 年江利チエミ 合掛）。**額度外、單一 credit、CAA 200、可直接進下一批的兩張見第 403 條。**",
+    "rgMbid": "72d3f3e5-af85-470d-b914-f07c3dc4cc54",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/72d3f3e5-af85-470d-b914-f07c3dc4cc54/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四位作曲家各拿一個日本古典題材寫一首，最短的也接近十分鐘。整張只有四軌，長度從 9 分 57 秒到 13 分 38 秒，一面各放兩首，1970 年由東芝以 TP-9010 發行。四個人都是受委託替這張寫曲，各自訂了題目：無常、平安時代の遊女、霊魂與相撲，銅管的塊狀和聲與自由爵士的段落在曲中交錯。最長也擺在最後的〈千秋楽〉13 分 38 秒，曲名取自相撲場所的最終日。這一年，這張拿下文化廳藝術祭的優秀賞。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=72d3f3e5-af85-470d-b914-f07c3dc4cc54&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.billboard-japan.com/goods/detail/538324",
+     "https://newherd.jp/about/",
+     "https://musicbrainz.org/release-group/72d3f3e5-af85-470d-b914-f07c3dc4cc54"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c2/99/44/c29944c6-9639-2b0f-5e95-1a4ed272c370/mzaf_9617807313141107077.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1691823195",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮間利之とニューハード",
+   "album": "Nio & Pigeon",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1fd522dc-d181-4ceb-af8d-1e429e049b7b。回問 release-group 端點確認：title「Nio & Pigeon」、artist-credit「Toshiyuki Miyama & The New Herd」（單一 credit 元素，實體 11c13132）、first-release-date 1972、primary-type Album、secondary-types 空、轄下 6 個 release。逐筆回問 release 端點：① JP 1972 Official、Columbia NCB-7018、12\" Vinyl 8 軌；② JP 1976 Official、Columbia SW-7054、12\" Vinyl 8 軌；③ JP 2012-12-05 Official、Columbia COCB-54032、CD 8 軌（題《仁王と鳩》）；④ JP 2016-08-25 Official、Columbia CORR-11161、CD-R 8 軌；⑤ JP 2019-08-07 Official、Columbia CORR-11161、Digital Media 8 軌（題《仁王と鳩》）；⑥ 無日期無國別 **Pseudo-Release**、無廠牌、8 軌。來源交叉：`enum/jp-columbia.json` 同一筆 rgMbid，format 欄記「12\" Vinyl/CD/CD-R/Digital Media」。藝人實體：宮間利之とニューハード 11c13132-89ec-4bb4-99a8-21dd45d749e1（Group／JP，名下 21 個 RG）；個人實體 宮間利之 ad9e42ee-6b2e-414d-86c0-8842c90e0946（Person／JP／1921-10-31，名下 4 個 RG，其中 3 個是 2026 年江利チエミ 的單曲、1 個是 fa043e77《Straight Ahead》1974）。刻意不釘（全部是兩個以上實體平列的合掛，依第 321／385 條）：7668525c《天秤座の詩》1970（＋佐藤允彦／M. Sato，**佐藤允彦 是 c-132 a 組的掛名**）、bc6cfc57《牡牛座の詩》1971（credit「ニューハード＋富樫雅彦」，**池中已有 富樫雅彦 八張卡**）、02fd9983《Yamataifu》1972（＋M. Sato）、f28008b6《St. Louis Blues》1976（＋南里文雄）、363cbc0b《Call Me》1979（＋Ayako Hosokawa，TBM 5013）、8e032d24《Oriental Bossa Sounds》1968（山本邦山／横山勝也／沢井忠夫 三人＋樂團，四實體）、fa043e77《Straight Ahead》1974（掛個人實體，Apple 條目 `1474204854` 的 credit 是「佐藤允彦 & 宮間利之とニュー・ハード」）。另外不釘：e4d8c3c9《ビッグ・バンドによる軍歌》2017（secondary-type **Compilation**，未走 §5.6）、dd3262e9《Live! New Herd 76/45》（**沒有日期、primary-type 是 null**，不過 Album 門檻）、a158c5e8《Shuko Mizuno's \"Jazz Orchestra '75\"》2002、bab92674／298286a4／c9f548f1（2026 年江利チエミ 合掛）。**額度外、單一 credit、CAA 200、可直接進下一批的兩張見第 403 條。**",
+    "rgMbid": "1fd522dc-d181-4ceb-af8d-1e429e049b7b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1fd522dc-d181-4ceb-af8d-1e429e049b7b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八首曲子從作曲到編曲都出自樂團吉他手一個人，最後一首佔掉全張四分之一。那個人是 山木幸三郎，這在這支樂團的目錄裡只有這麼一次。廠牌官方目錄記的原盤是 1972 年 9 月 25 日、編號 NCB-7018。曲名全取日本的場景與風俗，〈狐の嫁入り行進曲〉用進行曲寫狐狸出嫁，盤名也出自其中一首。前七首落在 2 分 34 秒到 5 分 24 秒之間，收尾的〈成人式〉9 分 27 秒。演奏的是指揮底下的十七人編制：小號四、長號四、木管五，再加吉他、鋼琴、貝斯與鼓。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1fd522dc-d181-4ceb-af8d-1e429e049b7b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://columbia.jp/artist-info/newherd/discography/COCB-54032.html",
+     "https://musicbrainz.org/release-group/1fd522dc-d181-4ceb-af8d-1e429e049b7b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/55/96/eb/5596ebe7-72d3-057e-ea88-fae26aa84cc0/mzaf_9153876199590028334.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1474202750",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮間利之とニューハード",
+   "album": "土の音 ～日本伝説の中の詩情～",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4fd1e350-0025-4c98-8ad8-187e85602c1d。回問 release-group 端點確認：title「土の音 ～日本伝説の中の詩情～」、artist-credit「Toshiyuki Miyama & The New Herd」（單一 credit 元素，實體 11c13132）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：JP 1973 **Official**、Columbia NCB-7023、Vinyl 7 軌。來源交叉：`enum/jp-columbia.json` 同一筆 rgMbid。藝人實體：宮間利之とニューハード 11c13132-89ec-4bb4-99a8-21dd45d749e1（Group／JP，名下 21 個 RG）；個人實體 宮間利之 ad9e42ee-6b2e-414d-86c0-8842c90e0946（Person／JP／1921-10-31，名下 4 個 RG，其中 3 個是 2026 年江利チエミ 的單曲、1 個是 fa043e77《Straight Ahead》1974）。刻意不釘（全部是兩個以上實體平列的合掛，依第 321／385 條）：7668525c《天秤座の詩》1970（＋佐藤允彦／M. Sato，**佐藤允彦 是 c-132 a 組的掛名**）、bc6cfc57《牡牛座の詩》1971（credit「ニューハード＋富樫雅彦」，**池中已有 富樫雅彦 八張卡**）、02fd9983《Yamataifu》1972（＋M. Sato）、f28008b6《St. Louis Blues》1976（＋南里文雄）、363cbc0b《Call Me》1979（＋Ayako Hosokawa，TBM 5013）、8e032d24《Oriental Bossa Sounds》1968（山本邦山／横山勝也／沢井忠夫 三人＋樂團，四實體）、fa043e77《Straight Ahead》1974（掛個人實體，Apple 條目 `1474204854` 的 credit 是「佐藤允彦 & 宮間利之とニュー・ハード」）。另外不釘：e4d8c3c9《ビッグ・バンドによる軍歌》2017（secondary-type **Compilation**，未走 §5.6）、dd3262e9《Live! New Herd 76/45》（**沒有日期、primary-type 是 null**，不過 Album 門檻）、a158c5e8《Shuko Mizuno's \"Jazz Orchestra '75\"》2002、bab92674／298286a4／c9f548f1（2026 年江利チエミ 合掛）。**額度外、單一 credit、CAA 200、可直接進下一批的兩張見第 403 條。**",
+    "rgMbid": "4fd1e350-0025-4c98-8ad8-187e85602c1d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4fd1e350-0025-4c98-8ad8-187e85602c1d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "日本傳說寫了一整張，氣味全靠常規大樂團的配器做出來。廠牌官方目錄記的原盤是 1973 年 11 月 25 日、編號 NCB-7023，錄音在同年 7 月 10 日至 12 日。七軌其實是一組曲加一首長篇：前六軌是組曲《妖怪河童今日何処棲也》的六段，第七軌〈黒塚〉獨佔一整面，長度特別長，段落寫法接近自由爵士。作編曲也分了工，第一曲出自 山木幸三郎，第二曲出自 小山恭弘。題材全取自日本傳說，樂團卻只用十七人的常規編制。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4fd1e350-0025-4c98-8ad8-187e85602c1d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://columbia.jp/artist-info/newherd/discography/COCB-54033.html",
+     "https://music.apple.com/jp/album/1474203004",
+     "https://newherd.jp/about/",
+     "https://musicbrainz.org/release-group/4fd1e350-0025-4c98-8ad8-187e85602c1d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/2a/28/53/2a285397-68e6-b8cc-f211-958826c599f5/mzaf_10261622108733685116.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1474203004",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "猪俣猛とサウンド・リミテッド",
+   "album": "Innocent Canon",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 751d2e0a-4687-4055-8f31-a0798c06bc70。回問 `release-group/<id>?inc=artist-credits+releases` 確認：title「Innocent Canon」、artist-credit「Takesi Inomata and Sound Limited」（單一 credit 元素，實體 397912f7）、first-release-date 1971-02-27、primary-type Album、secondary-types 空、轄下 4 個 release。逐筆回問 release 端點：① JP 1971-02-27 **Official**、KING SKK 3011、12\" Vinyl 7 軌；② JP 2007-03-07 Official、**[no label] KICS-2534**、CD 7 軌（題《イノセント・カノン》）；③ JP 2007-03-07 Official、KING KICS-2534、CD 7 軌；④ JP 2012-12-05 Official、[no label] KICJ-2292、CD 7 軌（題《イノセント・カノン》）。⚠ ②③ 是**同一張 CD 的重複建檔，一筆掛廠牌一筆沒有**（第 262 條講的 `[no label]` 形狀）。來源交叉：`enum/jp-king.json` 同一筆 rgMbid，artist 欄「Takesi Inomata and Sound Limited」。藝人實體：個人 猪俣猛 aff0a177-2140-46a5-a9cf-99382fe32089（Person／JP／1936-02-06，名下 11 個 RG）；群組 猪俣猛とサウンド・リミテッド 397912f7-e29d-405e-90bd-309c57f4aefe（Group，無國別，名下 7 個 RG）；另有 Takeshi Inomata & Westliners 2666607c-ec56-49a6-a75c-8155b959897a（1 個 RG）、Takeshi Inomata & His Friends 6fd1111f-f91d-4ff2-bfc7-d3cf1f5dc495（1 個）、Takeshi Inomata Quintet + 5 Brass 1914c40d-76b0-47d3-88fd-8829943a16df（**0 個 RG，空殼**）。⚠ **`artist?query=artist:\"猪俣猛\"` 只回個人與サウンド・リミテッド 兩個實體，另外三個要用 `artist:\"Takeshi Inomata\"` 才查得到**——與 c-131 第 358 條記的 ジョージ大塚 同形：同一位的實體分散在兩種文字系統，一種查法一定漏。刻意不釘：dc858c5c《Jazz Rock 琴／日本の民謡》1973（**五實體平列**：沢井忠夫・沢井一恵・猪俣猛・前田憲男・山本邦山，第 321／385 條；⚠ **前田憲男 是 c-134 a 組的掛名**）、809303fb《Modern Ameriachi For You》1966（Westliners ＋ Hideo Shiraki Quintet 兩團合掛，**白木秀雄 是 c-132 b 組的掛名，該批第 385 條已擋同一張**）、48cbb9fa《Get Happy》1987（掛 & His Friends 實體、Live）、6a40ab83《Drum Method》1972 與 7afb4f3c《ドラム・メソード》1972（**教材盤**，c-131 第 356 條 F 已擋）、6f0bfdd6《This Is Rhythm》1975（**56 軌**節奏示範集）、41b2dbbc《Rhythm Is Fun》1995（39 軌）與 8ff5a693《Rhythm Is Fun 2》1996（32 軌）、09715321《WE3＋THREE》1996（secondary-type **Compilation**，未走 §5.6）、e9aa0884《Cover Jazz》2017、7b7ae972《New Rock In Europe: Sound Ltd. 2》2016（**primary-type 是 null，不過 Album 門檻**，見第 404 條）；原聲帶依固定規格不收：1941588a／a3b3b067／88fcdfde《うる星やつら》三張。",
+    "rgMbid": "751d2e0a-4687-4055-8f31-a0798c06bc70",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/751d2e0a-4687-4055-8f31-a0798c06bc70/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七首曲名各一個漢字，第二首的英文副題寫的是 The Death of Janis。Janis Joplin 在 1970 年 10 月 4 日過世，這張的錄音落在四個多月之後的 1971 年 2 月 21 日，同月由 KING 以 SKK 3011 發行。七軌都是單一漢字配英文副題，演奏是十人編制的爵士搖滾：兩支小號、長號、四種薩克斯風與長笛，再加電吉他、西塔琴、電鋼琴與風琴。攝影家 加納典明 擔任旁白，獨白段落夾在曲子之間，〈叛〉與〈寥〉各留了七分多鐘給集體即興。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=751d2e0a-4687-4055-8f31-a0798c06bc70&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://diskunion.net/jazz/ct/detail/1006838418",
+     "https://en.wikipedia.org/wiki/Janis_Joplin",
+     "https://musicbrainz.org/release-group/751d2e0a-4687-4055-8f31-a0798c06bc70"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/af/1a/4caf1a57-a881-4a4d-6f14-1d8738d43e9e/mzaf_13508131717790515420.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777010047",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "猪俣猛",
+   "album": "Drum Shot",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bc2e8b03-30b7-4eec-b330-5dea72f69187。回問 release-group 端點確認：title「Drum Shot」、artist-credit「猪俣猛」（單一 credit 元素，實體 aff0a177）、first-release-date 1971-07-10、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：**country 空**、date 1971-07-10、**status Official**、label-info 為「Nippon Columbia Co., Ltd./NIPPONOPHONE」**且無 catalog-number**、media 為 Digital Media 9 軌。Apple 曲目（`lookup?id=1752085022&entity=song` 直查，第 254 條的第三種查法）：ドラム・ショット／バーディー／トモダチ／ホイットローズ・マーチ／シンギング・オン・ア・カブ／ア・ピッグ・オブ・シャイロック／アンラッキー・セヴン／ゴー・ゴー・ア・ゴー・ゴー／ホール・アウト，**九軌、全部是原創曲名，與節奏示範集的形態不同**。藝人實體：個人 猪俣猛 aff0a177-2140-46a5-a9cf-99382fe32089（Person／JP／1936-02-06，名下 11 個 RG）；群組 猪俣猛とサウンド・リミテッド 397912f7-e29d-405e-90bd-309c57f4aefe（Group，無國別，名下 7 個 RG）；另有 Takeshi Inomata & Westliners 2666607c-ec56-49a6-a75c-8155b959897a（1 個 RG）、Takeshi Inomata & His Friends 6fd1111f-f91d-4ff2-bfc7-d3cf1f5dc495（1 個）、Takeshi Inomata Quintet + 5 Brass 1914c40d-76b0-47d3-88fd-8829943a16df（**0 個 RG，空殼**）。⚠ **`artist?query=artist:\"猪俣猛\"` 只回個人與サウンド・リミテッド 兩個實體，另外三個要用 `artist:\"Takeshi Inomata\"` 才查得到**——與 c-131 第 358 條記的 ジョージ大塚 同形：同一位的實體分散在兩種文字系統，一種查法一定漏。刻意不釘：dc858c5c《Jazz Rock 琴／日本の民謡》1973（**五實體平列**：沢井忠夫・沢井一恵・猪俣猛・前田憲男・山本邦山，第 321／385 條；⚠ **前田憲男 是 c-134 a 組的掛名**）、809303fb《Modern Ameriachi For You》1966（Westliners ＋ Hideo Shiraki Quintet 兩團合掛，**白木秀雄 是 c-132 b 組的掛名，該批第 385 條已擋同一張**）、48cbb9fa《Get Happy》1987（掛 & His Friends 實體、Live）、6a40ab83《Drum Method》1972 與 7afb4f3c《ドラム・メソード》1972（**教材盤**，c-131 第 356 條 F 已擋）、6f0bfdd6《This Is Rhythm》1975（**56 軌**節奏示範集）、41b2dbbc《Rhythm Is Fun》1995（39 軌）與 8ff5a693《Rhythm Is Fun 2》1996（32 軌）、09715321《WE3＋THREE》1996（secondary-type **Compilation**，未走 §5.6）、e9aa0884《Cover Jazz》2017、7b7ae972《New Rock In Europe: Sound Ltd. 2》2016（**primary-type 是 null，不過 Album 門檻**，見第 404 條）；原聲帶依固定規格不收：1941588a／a3b3b067／88fcdfde《うる星やつら》三張。",
+    "rgMbid": "bc2e8b03-30b7-4eec-b330-5dea72f69187",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bc2e8b03-30b7-4eec-b330-5dea72f69187/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "高爾夫的半場九洞被寫成九首曲子，最後一首就叫〈Hole Out〉。原盤是 1968 年的 LP、編號 JAZZ-16，錄音日期落在 1967 年 12 月 14 日。九首刻意用 5/4、7/4、8/4、9/4 這些變拍子寫成，〈Birdie〉與〈Unlucky Seven〉也都是球場上的用語。編制六人，全部曲子的編曲由 前田憲男 擔任，他同時是這張的鋼琴手，把這些不好數的拍子寫成能擺動的句子。鼓在九首裡每一首都是主角。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=bc2e8b03-30b7-4eec-b330-5dea72f69187&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://columbia.jp/artist-info/inomatatakeshi/discography/COCB-54128.html",
+     "https://musicbrainz.org/release-group/bc2e8b03-30b7-4eec-b330-5dea72f69187"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/47/79/fa477903-5f33-46c1-2e97-e9b8f4f683f8/mzaf_3368380039333412429.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1752085022",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "猪俣猛",
+   "album": "Drummer Man",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5001f80f-bb03-4abb-b0bf-4cec5fd64c93。回問 release-group 端點確認：title「Drummer Man」、artist-credit「猪俣猛」（單一 credit 元素，實體 aff0a177）、first-release-date 1975-05-25、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：country 空、date 1975-05-25、**status Official**、label-info「Nippon Columbia Co., Ltd./NIPPONOPHONE」**無 catalog-number**、Digital Media 24 軌。Apple 直查曲目（`lookup?id=1705683410&entity=song`）：1 Skin Deep／2 Stomping at the Savoy／3 Sing Sing Sing／4 (Monologue) クール・ジャズについて／5 September in the Rain／6 (Be-Bop Drumming)／7 Ornithology／8 (Irregular Time Drumming)／9 Lullaby in Rhythm／10 (Monologue) 歌の伴奏について／11 Fever／12 (Monologue) 映画音楽について／13 Melancholy Rhapsody／14 Sentimental Journey／15 Five Pennies／16 (Monologue) ブラシワークについて／17 Get Me to the Church on Time／18 (Monologue) 前田憲男について／19 Mountain Greenery／20 (Monologue) ロマンスについて／21 My Coloring Book／22 (Monologue) 歌について／23 Drummer Man／24 My Way。藝人實體：個人 猪俣猛 aff0a177-2140-46a5-a9cf-99382fe32089（Person／JP／1936-02-06，名下 11 個 RG）；群組 猪俣猛とサウンド・リミテッド 397912f7-e29d-405e-90bd-309c57f4aefe（Group，無國別，名下 7 個 RG）；另有 Takeshi Inomata & Westliners 2666607c-ec56-49a6-a75c-8155b959897a（1 個 RG）、Takeshi Inomata & His Friends 6fd1111f-f91d-4ff2-bfc7-d3cf1f5dc495（1 個）、Takeshi Inomata Quintet + 5 Brass 1914c40d-76b0-47d3-88fd-8829943a16df（**0 個 RG，空殼**）。⚠ **`artist?query=artist:\"猪俣猛\"` 只回個人與サウンド・リミテッド 兩個實體，另外三個要用 `artist:\"Takeshi Inomata\"` 才查得到**——與 c-131 第 358 條記的 ジョージ大塚 同形：同一位的實體分散在兩種文字系統，一種查法一定漏。刻意不釘：dc858c5c《Jazz Rock 琴／日本の民謡》1973（**五實體平列**：沢井忠夫・沢井一恵・猪俣猛・前田憲男・山本邦山，第 321／385 條；⚠ **前田憲男 是 c-134 a 組的掛名**）、809303fb《Modern Ameriachi For You》1966（Westliners ＋ Hideo Shiraki Quintet 兩團合掛，**白木秀雄 是 c-132 b 組的掛名，該批第 385 條已擋同一張**）、48cbb9fa《Get Happy》1987（掛 & His Friends 實體、Live）、6a40ab83《Drum Method》1972 與 7afb4f3c《ドラム・メソード》1972（**教材盤**，c-131 第 356 條 F 已擋）、6f0bfdd6《This Is Rhythm》1975（**56 軌**節奏示範集）、41b2dbbc《Rhythm Is Fun》1995（39 軌）與 8ff5a693《Rhythm Is Fun 2》1996（32 軌）、09715321《WE3＋THREE》1996（secondary-type **Compilation**，未走 §5.6）、e9aa0884《Cover Jazz》2017、7b7ae972《New Rock In Europe: Sound Ltd. 2》2016（**primary-type 是 null，不過 Album 門檻**，見第 404 條）；原聲帶依固定規格不收：1941588a／a3b3b067／88fcdfde《うる星やつら》三張。",
+    "rgMbid": "5001f80f-bb03-4abb-b0bf-4cec5fd64c93",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5001f80f-bb03-4abb-b0bf-4cec5fd64c93/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十四軌裡有七段是他自己的說話，最後一首〈My Way〉也是他唱的。1975 年由日本コロムビア 以 KZ-7504 推出，廠牌自己的說法是回顧 猪俣猛 職業生涯二十五年的紀念盤，整張由他一邊解說一邊演奏。七段獨白全是日語，短的只有 8 秒、長的 40 秒，題目從談冷爵士一路談到刷鼓的手法，另有兩軌是打擊示範。演奏的部分從搖擺樂的〈Sing Sing Sing〉走到咆勃的〈Ornithology〉，5 分 27 秒的〈Skin Deep〉是最長的一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5001f80f-bb03-4abb-b0bf-4cec5fd64c93&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.universounds.net/product/6629",
+     "https://musicbrainz.org/release-group/5001f80f-bb03-4abb-b0bf-4cec5fd64c93"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ea/b0/e0/eab0e0e3-df93-c67d-cafe-55930b9a5fd8/mzaf_13173712626613413945.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1705683410",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "猪俣猛",
+   "album": "The Dialogue",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4d9753a9-69af-4025-a80a-c58ef11b32ca。回問 release-group 端點確認：title「The Dialogue」、artist-credit「Takeshi Inomata」（單一 credit 元素，實體 aff0a177）、first-release-date 2012-07-25、primary-type Album、secondary-types 空、轄下 1 個 release。回問 release 端點：JP 2012-07-25 **Official**、AUDIO LAB RECORD OVGL-00024、**SACD 7 軌**。**1977 年的 Audio Lab 原盤在 MB 上沒有 release**——這是年份改判的原因（見 risk）。曲目（七軌，tower.jp 商品頁）：The dialogue with bass／with percussion／with vibraphone／with flute／with guitar／with tenor saxophone／with trombone。藝人實體：個人 猪俣猛 aff0a177-2140-46a5-a9cf-99382fe32089（Person／JP／1936-02-06，名下 11 個 RG）；群組 猪俣猛とサウンド・リミテッド 397912f7-e29d-405e-90bd-309c57f4aefe（Group，無國別，名下 7 個 RG）；另有 Takeshi Inomata & Westliners 2666607c-ec56-49a6-a75c-8155b959897a（1 個 RG）、Takeshi Inomata & His Friends 6fd1111f-f91d-4ff2-bfc7-d3cf1f5dc495（1 個）、Takeshi Inomata Quintet + 5 Brass 1914c40d-76b0-47d3-88fd-8829943a16df（**0 個 RG，空殼**）。⚠ **`artist?query=artist:\"猪俣猛\"` 只回個人與サウンド・リミテッド 兩個實體，另外三個要用 `artist:\"Takeshi Inomata\"` 才查得到**——與 c-131 第 358 條記的 ジョージ大塚 同形：同一位的實體分散在兩種文字系統，一種查法一定漏。刻意不釘：dc858c5c《Jazz Rock 琴／日本の民謡》1973（**五實體平列**：沢井忠夫・沢井一恵・猪俣猛・前田憲男・山本邦山，第 321／385 條；⚠ **前田憲男 是 c-134 a 組的掛名**）、809303fb《Modern Ameriachi For You》1966（Westliners ＋ Hideo Shiraki Quintet 兩團合掛，**白木秀雄 是 c-132 b 組的掛名，該批第 385 條已擋同一張**）、48cbb9fa《Get Happy》1987（掛 & His Friends 實體、Live）、6a40ab83《Drum Method》1972 與 7afb4f3c《ドラム・メソード》1972（**教材盤**，c-131 第 356 條 F 已擋）、6f0bfdd6《This Is Rhythm》1975（**56 軌**節奏示範集）、41b2dbbc《Rhythm Is Fun》1995（39 軌）與 8ff5a693《Rhythm Is Fun 2》1996（32 軌）、09715321《WE3＋THREE》1996（secondary-type **Compilation**，未走 §5.6）、e9aa0884《Cover Jazz》2017、7b7ae972《New Rock In Europe: Sound Ltd. 2》2016（**primary-type 是 null，不過 Album 門檻**，見第 404 條）；原聲帶依固定規格不收：1941588a／a3b3b067／88fcdfde《うる星やつら》三張。",
+    "rgMbid": "4d9753a9-69af-4025-a80a-c58ef11b32ca",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4d9753a9-69af-4025-a80a-c58ef11b32ca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一邊是鼓，另一邊每次換一件樂器，七首曲名就寫著對話的對象。原盤是 1977 年 Audio Lab. Record 的黑膠，錄音在同年 11 月 28 日與 29 日的飯野ホール，掌機的是 菅野沖彦。對象依序換過貝斯、打擊、鐵琴、長笛、吉他、次中音薩克斯風與長號，每一首都只有兩個人，沒有樂團在後面，也沒有和聲樂器鋪底，曲名連編號都省了。這家廠牌以高音質錄音著稱，這張的動態就是為那個目的設計的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4d9753a9-69af-4025-a80a-c58ef11b32ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.otaiweb.com/shop-item-fidkcd21435.html",
+     "https://www.plexusrecords.com/the-dialogue-a57843-en.html",
+     "https://tower.jp/item/3122057",
+     "https://musicbrainz.org/release-group/4d9753a9-69af-4025-a80a-c58ef11b32ca"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鈴木宏昌",
+   "album": "Rock Joint Cither - Silk Road",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9198e151-6f6e-41d7-b4f5-fc5b9c05cd42。回問 `release-group/<id>?inc=artist-credits+releases` 確認：title「Rock Joint Cither ー Silk Road」（**中間符號為 U+30FC**）、artist-credit「鈴木宏昌」（單一 credit 元素，實體 e2ece9b8）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release。逐筆回問 release 端點：① JP 1973 **Official**、RCA「R4J - 7019」（**catno 原文含空白**）、12\" Vinyl 8 軌；② JP 2011-05-25 **Official**、RCA SICP 3149、CD 8 軌（題《ロック・ジョイント・シタール - 組曲 シルクロード》）。藝人實體：個人 鈴木宏昌 e2ece9b8-4ca9-485a-a281-c32ba2f20cba（Person／JP／1940-05-26，名下 9 個 RG）；群組 鈴木宏昌トリオ 817512f5-c125-49b5-8f5e-fdbcdc35fb21（Group／JP，名下 2 個 RG：09b2e416《ロック・ジョイント琵琶〜組曲 ふることふみ》1972 與 c796641c《Primrose》1978）。⚠ `artist?query=artist:\"Hiromasa Suzuki\"` **全域回 0 筆**，兩個實體都只有用漢字 `artist:\"鈴木宏昌\"` 才查得到——**第 309 條「拉丁轉寫查不到不等於查無」在本位掛名上又應驗一次**。刻意不釘：a4ab99fb《Galaxy》1979（credit「The Players Featuring Hiromasa \"Colgen\" Suzuki」，兩實體合掛，第 321／385 條）、0af5ae13《By the Red Stream》2012（credit「Hiromasa Suzuki + Jiro Inagaki & Big Soul Media」，**稲垣次郎 是 c-133 b 組的掛名，見第 405 條**；c-131 第 356 條 F 已擋過同一張）、235be27e《Rock Joint Biwa – Kumikyoku Fulukotofumi》2022（**與 c-131 已收的 09b2e416 是同一張碟的重複 RG**，見第 406 條）、54d583d9《Colgen World》1996（額度外候補，見第 403 條）；原聲帶依固定規格不收：8768053e《海のトリトン》1979、4cb87a50《クレオパトラD.C.》1989。",
+    "rgMbid": "9198e151-6f6e-41d7-b4f5-fc5b9c05cd42",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9198e151-6f6e-41d7-b4f5-fc5b9c05cd42/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲名從三千年前排到巴米揚與犍陀羅，西塔琴一路當調味。這是「ロック・ジョイント」系列的第二作，前一張 1972 年以琵琶為題。1973 年的 RCA 原盤，八軌是一整組以絲路為題的組曲，全長 41 分 31 秒，排列有敘事感：從記著公元前三千年的開場緩緩起頭，一路推到全張的高點，再以 3 分 53 秒的〈メルブの剣〉收尾。底子是電鋼琴與鋼琴打底的爵士搖滾，上原陽子 的西塔琴在全篇當配色，東方感主要來自旋律的寫法。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9198e151-6f6e-41d7-b4f5-fc5b9c05cd42&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://tower.jp/item/2871347",
+     "https://diskunion.net/jazz/ct/detail/XAT-1245392763",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%AE%8F%E6%98%8C",
+     "https://musicbrainz.org/release-group/9198e151-6f6e-41d7-b4f5-fc5b9c05cd42"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/de/a9/8b/dea98b41-0c0c-56c1-a6be-03db87dff0c8/mzaf_11149008631819379621.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537299232",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鈴木宏昌",
+   "album": "High-Flying",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a85636fa-96f9-45aa-9c90-78804483a41d。回問 release-group 端點確認：title「High‐Flying」（**U+2010**）、artist-credit「Hiromasa Suzuki」（單一 credit 元素，實體 e2ece9b8）、first-release-date 1976-08、primary-type Album、secondary-types 空、轄下 3 個 release。逐筆回問 release 端點：① JP 1976-08 **Official**、Columbia SQ-7001、12\" Vinyl 7 軌；② JP 2012-09-05 **Official**、Columbia COCB-54007、CD 7 軌；③ JP 2023-10-25 **Official**、HMV record shop HMJY-111、12\" Vinyl 7 軌。來源交叉：`enum/jp-columbia.json` 同一筆 rgMbid，artist 欄寫「Hiromasa Suzuki」、format 欄寫 CD。藝人實體：個人 鈴木宏昌 e2ece9b8-4ca9-485a-a281-c32ba2f20cba（Person／JP／1940-05-26，名下 9 個 RG）；群組 鈴木宏昌トリオ 817512f5-c125-49b5-8f5e-fdbcdc35fb21（Group／JP，名下 2 個 RG：09b2e416《ロック・ジョイント琵琶〜組曲 ふることふみ》1972 與 c796641c《Primrose》1978）。⚠ `artist?query=artist:\"Hiromasa Suzuki\"` **全域回 0 筆**，兩個實體都只有用漢字 `artist:\"鈴木宏昌\"` 才查得到——**第 309 條「拉丁轉寫查不到不等於查無」在本位掛名上又應驗一次**。刻意不釘：a4ab99fb《Galaxy》1979（credit「The Players Featuring Hiromasa \"Colgen\" Suzuki」，兩實體合掛，第 321／385 條）、0af5ae13《By the Red Stream》2012（credit「Hiromasa Suzuki + Jiro Inagaki & Big Soul Media」，**稲垣次郎 是 c-133 b 組的掛名，見第 405 條**；c-131 第 356 條 F 已擋過同一張）、235be27e《Rock Joint Biwa – Kumikyoku Fulukotofumi》2022（**與 c-131 已收的 09b2e416 是同一張碟的重複 RG**，見第 406 條）、54d583d9《Colgen World》1996（額度外候補，見第 403 條）；原聲帶依固定規格不收：8768053e《海のトリトン》1979、4cb87a50《クレオパトラD.C.》1989。",
+    "rgMbid": "a85636fa-96f9-45aa-9c90-78804483a41d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a85636fa-96f9-45aa-9c90-78804483a41d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 34841,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "合成器兩台、電吉他三把、電貝斯兩把——1976 年的錄音室全開。製作人是本張的次中音與高音薩克斯風手 稲垣次郎，錄音分五天進行，從 1976 年 4 月 2 日到 22 日，地點是日本コロムビア 的第 2 錄音室，原盤 SQ-7001 在同年 8 月 25 日發行。鈴木宏昌 自己包辦作曲、編曲與鋼琴、電鋼琴和合成器，參與的還有彈電吉他的 杉本喜代志。七軌約 41 分鐘，節奏組把放克律動撐在底下，鍵盤與吉他輪流拿前景。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a85636fa-96f9-45aa-9c90-78804483a41d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://columbia.jp/prod-info/COCB-54007/",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%AE%8F%E6%98%8C",
+     "https://musicbrainz.org/release-group/a85636fa-96f9-45aa-9c90-78804483a41d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/30/16/b4/3016b46a-8605-b0b6-fa89-43d879602c9c/mzaf_11413334131433761431.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1557393220",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鈴木宏昌",
+   "album": "Skip Step Colgen",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6d5e434f-2cfa-46e6-a1fd-565f216b8fc3。回問 release-group 端點確認：title「Skip Step Colgen」、artist-credit「Hiromasa Suzuki」（單一 credit 元素，實體 e2ece9b8）、first-release-date 1977、primary-type Album、secondary-types 空、轄下 2 個 release。逐筆回問 release 端點：① JP 1977 **Official**、Toshiba Records LF 91028、Vinyl 7 軌；② JP 1995-10-25 **Official**、Toshiba Records TOCT-9221、CD 7 軌。來源交叉：`enum/jp-toshiba.json` 同一筆 rgMbid，entities 記「Toshiba Records」、format 記「CD/Vinyl」。藝人實體：個人 鈴木宏昌 e2ece9b8-4ca9-485a-a281-c32ba2f20cba（Person／JP／1940-05-26，名下 9 個 RG）；群組 鈴木宏昌トリオ 817512f5-c125-49b5-8f5e-fdbcdc35fb21（Group／JP，名下 2 個 RG：09b2e416《ロック・ジョイント琵琶〜組曲 ふることふみ》1972 與 c796641c《Primrose》1978）。⚠ `artist?query=artist:\"Hiromasa Suzuki\"` **全域回 0 筆**，兩個實體都只有用漢字 `artist:\"鈴木宏昌\"` 才查得到——**第 309 條「拉丁轉寫查不到不等於查無」在本位掛名上又應驗一次**。刻意不釘：a4ab99fb《Galaxy》1979（credit「The Players Featuring Hiromasa \"Colgen\" Suzuki」，兩實體合掛，第 321／385 條）、0af5ae13《By the Red Stream》2012（credit「Hiromasa Suzuki + Jiro Inagaki & Big Soul Media」，**稲垣次郎 是 c-133 b 組的掛名，見第 405 條**；c-131 第 356 條 F 已擋過同一張）、235be27e《Rock Joint Biwa – Kumikyoku Fulukotofumi》2022（**與 c-131 已收的 09b2e416 是同一張碟的重複 RG**，見第 406 條）、54d583d9《Colgen World》1996（額度外候補，見第 403 條）；原聲帶依固定規格不收：8768053e《海のトリトン》1979、4cb87a50《クレオパトラD.C.》1989。",
+    "rgMbid": "6d5e434f-2cfa-46e6-a1fd-565f216b8fc3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6d5e434f-2cfa-46e6-a1fd-565f216b8fc3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 14,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "コルゲン 是他的綽號，1977 年它先成了盤名，後來成了樂團的名字。那支樂團叫コルゲン・バンド，再往下發展成ザ・プレイヤーズ。原盤 1977 年由東芝推出，唱片行把它歸在 PRO-USE Series 這套企劃底下。七軌約 41 分鐘，其中四首是翻編，〈Watermelon Man〉與〈Georgia On My Mind〉都在裡面；另外三首是他自己的曲子，打擊樂器把整張的律動墊得很厚。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6d5e434f-2cfa-46e6-a1fd-565f216b8fc3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.stereo-records.com/detail.php?itemCd=82589",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%AE%8F%E6%98%8C",
+     "https://musicbrainz.org/release-group/6d5e434f-2cfa-46e6-a1fd-565f216b8fc3"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鈴木宏昌トリオ",
+   "album": "Primrose",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c796641c-ba33-3eec-960e-807185f26c31。回問 release-group 端點確認：title「Primrose」、artist-credit「Hiromasa Suzuki Trio」（單一 credit 元素，實體 817512f5-c125-49b5-8f5e-fdbcdc35fb21）、first-release-date 1978、primary-type Album、secondary-types 空、轄下 2 個 release。逐筆回問 release 端點：① JP 1978 **Official**、Union Records GU-5009、12\" Vinyl 7 軌；② JP 2008-07-04 **Official**、Think! Records THCD-079、CD 7 軌。來源交叉：`enum/jp-union.json` 同一筆 rgMbid。藝人實體：個人 鈴木宏昌 e2ece9b8-4ca9-485a-a281-c32ba2f20cba（Person／JP／1940-05-26，名下 9 個 RG）；群組 鈴木宏昌トリオ 817512f5-c125-49b5-8f5e-fdbcdc35fb21（Group／JP，名下 2 個 RG：09b2e416《ロック・ジョイント琵琶〜組曲 ふることふみ》1972 與 c796641c《Primrose》1978）。⚠ `artist?query=artist:\"Hiromasa Suzuki\"` **全域回 0 筆**，兩個實體都只有用漢字 `artist:\"鈴木宏昌\"` 才查得到——**第 309 條「拉丁轉寫查不到不等於查無」在本位掛名上又應驗一次**。刻意不釘：a4ab99fb《Galaxy》1979（credit「The Players Featuring Hiromasa \"Colgen\" Suzuki」，兩實體合掛，第 321／385 條）、0af5ae13《By the Red Stream》2012（credit「Hiromasa Suzuki + Jiro Inagaki & Big Soul Media」，**稲垣次郎 是 c-133 b 組的掛名，見第 405 條**；c-131 第 356 條 F 已擋過同一張）、235be27e《Rock Joint Biwa – Kumikyoku Fulukotofumi》2022（**與 c-131 已收的 09b2e416 是同一張碟的重複 RG**，見第 406 條）、54d583d9《Colgen World》1996（額度外候補，見第 403 條）；原聲帶依固定規格不收：8768053e《海のトリトン》1979、4cb87a50《クレオパトラD.C.》1989。",
+    "rgMbid": "c796641c-ba33-3eec-960e-807185f26c31",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c796641c-ba33-3eec-960e-807185f26c31/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "電鍵盤與管樂都撤掉，剩下鋼琴三重奏，七首曲子全是自己寫的。錄音在 1978 年 5 月 18 日與 30 日兩天完成，由ユニオン 以 GU-5009 發行，另外兩位是貝斯 井野信義 與鼓手 Steve Jackson。七軌約 45 分鐘，最短的〈Primrose〉4 分 18 秒，最長的〈Dis-charge〉8 分 39 秒把段落拉開留給即興，貝斯與鼓都是對話的對象。在他自己領銜的幾張裡，這是編制最小的一張。2008 年復刻時，那批碟的宣傳詞叫它「昭和ジャズ最後の秘宝」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c796641c-ba33-3eec-960e-807185f26c31&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://diskunion.net/jazz/ct/detail/THCD79",
+     "https://plaza.rakuten.co.jp/ventoazul/diary/200805150001/",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%AE%8F%E6%98%8C",
+     "https://musicbrainz.org/release-group/c796641c-ba33-3eec-960e-807185f26c31"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "エレクトラム",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group afa1adcc-fb74-4872-a185-e50145965f3e。回問 release-group 端點（inc=artist-credits+releases）：title「エレクトラム」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條：廠牌只有這個端點問得到）：1970/JP/Official「エレクトラム」Victor SMJX-10104 ＋ VICTOR WORLD GROUP SMJX-10104，12\" Vinyl 4 軌；1970/JP/Official「Electrum」VICTOR WORLD GROUP SMJX-10104，12\" Vinyl 4 軌；2006-09-22/JP/Official Think! Records THCD-030，CD 4 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（石川晶とカウント・バッファローズ／Group／JP，alias：Count Buffalo & His Rock Band、Count Buffalo & The Jazz Rock Band、Akira Ishikawa & His Group、石川晶とそのグループ、Akira Ishikawa & His Count Buffalos、Akira Ishikawa and His Group、石川晶と彼のグループ；名下 22 個 RG）；個人實體 237e787a-62fe-49e3-9c19-4c857d8a1a60（石川晶／Person／JP／jazz drummer，3 個 RG）；另有 6d2c4e53-1756-465d-8945-16ec5735b991（石川晶とザ・ゲンチャーズ，0 個 RG，第 356 條 F 已列為 §1 候選）與 f28f86cf-726e-400e-aee4-34f6ecbae551（Akira Ishikawa & All Stars，0 個 RG）。本組刻意不釘（同實體、額度外或不合規）：`56173bc0`《Soul & Rock》1969-07-25（Columbia、CAA 200，與 `92ed0cc8`《ソウル・アンド・ロック》1969 是同碟兩個 RG）、`d4241b67`《Prayer With Faith And Love》1969-09（CAA 200）、`fe3c2812`《EXCITING DRUMS / AFRICAN ROCK PARTY》1969-08（盤名帶斜線，第 321 條的形狀）、`aee391a1`《Count Buffalo Plays Country Rock》1970-10（**CAA 回 500，不是 404**）、`806f15c2`《Dynamic Latin Exotic Sound》1972、`ca240f81`《ドラム八木節ドラム》1971、`3c6216cb`《津軽じょんがら節 ドラム＆津軽三味線》1973、`521bd494`《Drums & Jazz Piano》（無日期、與 Kazuo Yashiro Trio 合掛）、`061dfedb`／`e272cbbc` 2006 年兩張ドラム系復刻、`74d39c14`《ウガンダ》1972（**c-131 已收**）；原聲帶不收：`24274e1a`／`ff3aaf91`《超時空要塞マクロス》、`32549a9d`《Lupin III》、`b2112048`《フィリップ・マーロウ》。",
+    "rgMbid": "afa1adcc-fb74-4872-a185-e50145965f3e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/afa1adcc-fb74-4872-a185-e50145965f3e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 31,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標題曲一首 20 分 57 秒，整個 A 面只放得下它，B 面才擠進三首。1970 年這張出在 Victor 的 SMJX-10104，歸在ビクター 那套「日本のジャズ」企畫底下。長度決定了寫法：四軌不是一組曲集，是替即興留出空間的組曲。編制架在雙鍵盤上，鈴木宏昌 彈電鋼琴，佐藤允彦 同時管鋼琴與 Clavinet，電吉他與電貝斯在底下，薩克斯風在上面吹，鼓與打擊樂是骨架。監製、混音與封套設計各由一個人掛名，製作端的分工在盤面上寫得清楚。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=afa1adcc-fb74-4872-a185-e50145965f3e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/15020646",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E6%99%B6",
+     "https://www.discogs.com/release/1207235",
+     "https://musicbrainz.org/release-group/afa1adcc-fb74-4872-a185-e50145965f3e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/61/d1/d9/61d1d93a-e25c-1b27-2a4d-6825fddc0924/mzaf_14693223127625368818.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1656362828",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "バキシンバ：アフリカの想い出",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 056a936c-6b19-4d20-92a6-c56a6dd57239。回問 release-group 端點（inc=artist-credits+releases）：title「バキシンバ：アフリカの想い出」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1970-12、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1970-12/JP/Official「バキシンバ：アフリカの想い出」Polydor MR-5001，12\" Vinyl 7 軌；1970/JP/Official「Bakishinba: Memories Of Africa」Polydor MR 5001，12\" Vinyl 7 軌（同碟的英文題壓盤）；2007-03-09/JP/Official Polydor PROA-82，CD 7 軌。藝人實體同《エレクトラム》（`2acbf5b2`，22 個 RG）。`batch-progress/enum/jp-polydor-jp.json` 列有本筆（artist 石川晶とカウント・バッファローズ、album バキシンバ：アフリカの想い出、1970、rgMbid 一致）。",
+    "rgMbid": "056a936c-6b19-4d20-92a6-c56a6dd57239",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/056a936c-6b19-4d20-92a6-c56a6dd57239/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "從〈砂嵐〉到〈蜃気楼〉，七首曲子的順序排成了非洲的一天。原盤是 1970 年 Polydor 的 MR 5001，對開封套，發行元是日本グラモフォン。最長的標題曲 10 分 54 秒擺在正中間，前後各三首把坡度推上去再收回來。作曲不是一個人包辦的：鈴木宏昌、ミッキー吉野 與 前田憲男 三人分頭交稿，再由同一組人馬錄成一張。編制疊了電貝斯、電吉他、電鋼琴與風琴四層，次中音薩克斯風在上面，他自己打鼓兼 Bongo，把節奏組架在非洲打擊樂的動機上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=056a936c-6b19-4d20-92a6-c56a6dd57239&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/17729191",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E6%99%B6",
+     "https://musicbrainz.org/release-group/056a936c-6b19-4d20-92a6-c56a6dd57239"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "African Rock",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 94fdf242-b571-46a5-a645-997dbfb4abc3。回問 release-group 端點（inc=artist-credits+releases）：title「African Rock」、artist-credit「Akira Ishikawa & His Count Buffalos」（→ 實體主名 石川晶とカウント・バッファローズ，第 355 條）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1971/JP/Official DAN VC-5003，12\" Vinyl 8 軌；2015-07-29/JP/Official CLINCK RECORDS CRCD5116，CD 8 軌。**重複 RG：`1955da79-…`《African Rock》1972，credit「Akira Ishikawa & Count Buffalos」，轄下只有一筆 1972/JP/Official，CAA 404——同碟兩個 RG，本卡不釘它**（第 387 條）。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。",
+    "rgMbid": "94fdf242-b571-46a5-a645-997dbfb4abc3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/94fdf242-b571-46a5-a645-997dbfb4abc3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 17,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八首曲名各排三種語言，最後那個是史瓦希里語：Sala、Mwindo、Jambo。錄音壓在 1971 年 4 月 30 日與 5 月 6 日兩天，地點是ミノルフォン 的第 1 錄音室，碟出在旗下的 DAN、編號 VC-5003。八首每一首都落在 3 分半到 6 分 48 秒之間，長度整齊，與他前一年讓一首曲子佔滿整面的做法正好相反。節奏層是鼓加兩名打擊樂手與馬林巴，電吉他與電鋼琴顧和聲，薩克斯風、中音長笛、長號與小號構成管樂，另外還請了一組弦樂四重奏進棚。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=94fdf242-b571-46a5-a645-997dbfb4abc3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/8721021",
+     "https://www.discogs.com/release/20479594",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E6%99%B6",
+     "https://musicbrainz.org/release-group/94fdf242-b571-46a5-a645-997dbfb4abc3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ef/56/81/ef568173-df5c-090d-d0ab-d7f4a1df2d35/mzaf_1505193685772653785.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1686634590",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "Get Up!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 18e8b3dd-4d50-4756-a814-e448f5f8ac37。回問 release-group 端點（inc=artist-credits+releases）：title「Get Up!」、artist-credit「Akira Ishikawa & His Count Buffalos」（→ 實體主名 石川晶とカウント・バッファローズ，第 355 條）、first-release-date 1975-03-06、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1975-03-06/JP/Official RCA RVL-5510，12\" Vinyl 6 軌；2001-08-25/JP/Official SOLID RECORDS CDSOL-1042，CD 6 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。",
+    "rgMbid": "18e8b3dd-4d50-4756-a814-e448f5f8ac37",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/18e8b3dd-4d50-4756-a814-e448f5f8ac37/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 30,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首曲子的作曲與編曲出自同一個人，錄音壓在 1975 年 8 月的三天。那個人是 鈴木宏昌，他同時在碟上彈電鋼琴與合成器，所以六首的和聲語彙是一整套的，不是六次各寫各的。1975 年的原盤是 RCA 的 RVH-8501；隔年 RCA 把它收進「日本の Jazz 1500」這套廉價復刻企畫重壓過一次。六軌約 39 分鐘，每首落在 5 分半到 7 分 52 秒，長度整齊得像先訂好格式。兩台電鋼琴疊在貝斯與吉他上，薩克斯風、長笛與小號負責主題，鼓與打擊樂把律動壓在前面。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=18e8b3dd-4d50-4756-a814-e448f5f8ac37&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/8929958",
+     "https://www.discogs.com/release/3632442",
+     "https://musicbrainz.org/release-group/18e8b3dd-4d50-4756-a814-e448f5f8ac37"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "Okinawa",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 75c81ed9-0486-4271-b2d9-e496a98045b0。回問 release-group 端點（inc=artist-credits+releases）：title「Okinawa」、artist-credit「石川晶とカウント・バッファローズ」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1976/JP/Official，**label-info 空陣列**，12\" Vinyl 8 軌。藝人實體 2acbf5b2-86d5-40fd-8dd1-a978c89d2070（22 個 RG）。Apple jp 藝人實體另立 `1782228407`「AKIRA ISHIKAWA & COUNT BUFFALO」，名下只有 `1782228406`。",
+    "rgMbid": "75c81ed9-0486-4271-b2d9-e496a98045b0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/75c81ed9-0486-4271-b2d9-e496a98045b0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "沖繩民謠〈谷茶前〉與 Sousa 的進行曲，被排進同一張碟。實體盤是 King 旗下爵士副廠 Seven Seas 的 SKA-154，1976 年出。八軌的材料分成三種來源，沖繩的傳統曲是其中一種，另一種是美國的流行曲與電影配樂；樂團的節奏組把它們全部改寫成同一種律動，來歷差這麼遠的旋律因此像是同一張碟上的曲子。盤面掛名是三方並列：樂團之外，伊集加代子 的和聲與 Time Five 的人聲各佔一欄。在他的六張碟裡，這是唯一一張離開非洲題材的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=75c81ed9-0486-4271-b2d9-e496a98045b0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/11231160",
+     "https://www.discogs.com/release/9571610",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E6%99%B6",
+     "https://musicbrainz.org/release-group/75c81ed9-0486-4271-b2d9-e496a98045b0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/1e/c1/781ec134-f10f-b3f4-8d3c-71029b237776/mzaf_15707421440974775365.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1782228406",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶",
+   "album": "Back To Rhythm",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6751b48c-64fc-4555-ae4e-2df7e062e900。回問 release-group 端點（inc=artist-credits+releases）：title「Back To Rhythm」、artist-credit「Akira Ishikawa」（→ 實體主名 石川晶，第 355 條）、first-release-date 1975、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1975/JP/Official Columbia KZ-7510，12\" Vinyl 10 軌；2007-04-18/JP/Official Columbia Music Entertainment COCB-53634，CD 10 軌；2007-04-18/JP/Official「バック・トゥ・リズム」**[no label]** COCB-53634，CD 10 軌（第 262 條：`[no label]` 是 label-info 陣列裡有一筆但廠牌名為空，與「陣列是空的」不同）。藝人實體 237e787a-62fe-49e3-9c19-4c857d8a1a60（石川晶／Person／JP／jazz drummer；alias Akira Ishikawa；名下 3 個 RG：本碟、`f04cbfb7`《Drums Method》1972、`413ff347`《ドラム運命ドラム》1973）。本組刻意不釘：`f04cbfb7`《Drums Method》1972（**教材盤**，c-131 第 356 條 F 已列不收）、`413ff347`《ドラム運命ドラム (Drum Classic Drum)》1973（同為ドラム教材／実演系）。`batch-progress/enum/jp-columbia.json` 列有本筆（rgMbid 一致）。",
+    "rgMbid": "6751b48c-64fc-4555-ae4e-2df7e062e900",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6751b48c-64fc-4555-ae4e-2df7e062e900/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 37,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首全是當年的暢銷曲，四天錄完，鼓手自己還開口唱了。碟是日本コロムビア 的 KZ-7510，歸在 Creative Sounds Series 底下，盤面把發行標成 Ⓟ'75.06，錄音則在同年 1 月。選曲橫跨當年的搖滾、雷鬼、放克與靈魂樂，最短 2 分 46 秒、最長 5 分 17 秒，沒有一首超過 6 分鐘。底層是三把吉他加一把貝斯，合成器與管樂在上面補色，鼓與打擊樂始終是前景。同一年他另有一張曲子全部自己寫的碟，兩張正好互為對照。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6751b48c-64fc-4555-ae4e-2df7e062e900&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/2727137",
+     "https://www.discogs.com/release/13278831",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E6%99%B6",
+     "https://musicbrainz.org/release-group/6751b48c-64fc-4555-ae4e-2df7e062e900"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/e8/39/ab/e839ab0f-8d3b-33e3-241c-b7a29ce0e63b/mzaf_13619086627145316598.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1557393105",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "稲垣次郎とソウル・メディア",
+   "album": "Woodstock Generation",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 99c3f630-e6bb-4403-9605-5e2cb3678719。回問 release-group 端點（inc=artist-credits+releases）：title「Woodstock Generation」、artist-credit「稲垣次郎とソウル・メディア」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1970/JP/Official Union Records ULP-1007，12\" Vinyl 9 軌；2009-12-02/JP/Official P‐VINE RECORDS PCD-7313，CD 9 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。",
+    "rgMbid": "99c3f630-e6bb-4403-9605-5e2cb3678719",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/99c3f630-e6bb-4403-9605-5e2cb3678719/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張盤面上只印了一個名字，就是編曲者本人。那個名字是 稲垣次郎，樂團成員一個都沒列。為什麼沒列有兩個說法：一是這張出在 Union Records 的 ULP-1007，不是樂團固定的那家公司，盤面因此省掉 credit；二是合約的緣故，樂團在這張上被改印成 The Soul Medium 這個另外的名字。九軌約 35 分鐘，曲目直接取自 Woodstock 音樂節的曲單，中段插進兩首自家的原創曲。管樂編制把搖滾曲目改寫成大編制的 jazz-rock，節奏組壓在正拍上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=99c3f630-e6bb-4403-9605-5e2cb3678719&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://www.discogs.com/release/5366790",
+     "https://www.discogs.com/release/24098759",
+     "https://musicbrainz.org/release-group/99c3f630-e6bb-4403-9605-5e2cb3678719"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "稲垣次郎とソウル・メディア",
+   "album": "Jazz & Rock \"Out\"",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9938ac9f-fba2-4fab-b364-0becfc7840ae。回問 release-group 端點（inc=artist-credits+releases）：title「Jazz & Rock \"Out\"」、artist-credit「稲垣次郎とソウル・メディア」、first-release-date 1970-11-25、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1970-11-25/JP/Official Columbia JPS-5215，Vinyl 8 軌；2012-09-05/JP/Official Columbia COCB-54008，CD 8 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。",
+    "rgMbid": "9938ac9f-fba2-4fab-b364-0becfc7840ae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9938ac9f-fba2-4fab-b364-0becfc7840ae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1970 年夏天一場露天音樂會的實況，四個月後才壓成唱片。那場演出叫 Midsummer Night's Jazz & Rock，7 月 21 日在日比谷野外音楽堂 舉行；唱片則在同年 11 月 25 日由日本コロムビア 以 JPS-5215 發行。當晚上台的是十二個人：三支薩克斯風、三支小號、兩支長號堆成管樂牆，風琴、吉他與節奏組在底下。八首曲子一半是當年的搖滾與福音暢銷曲，一半是自家原創。盤面掛名印成 J.Inagaki + Soul Big Media。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9938ac9f-fba2-4fab-b364-0becfc7840ae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/18941098",
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://musicbrainz.org/release-group/9938ac9f-fba2-4fab-b364-0becfc7840ae"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/48/28/d3/4828d35b-e41e-89fb-36b5-0b4aa3e9d24b/mzaf_1337385467973684799.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508947302",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "稲垣次郎とソウル・メディア",
+   "album": "Wandering Birds",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 667ea191-00be-495b-a9a3-cd36097e8f59。回問 release-group 端點（inc=artist-credits+releases）：title「Wandering Birds」、artist-credit「Jiro Inagaki & Soul Media」（→ 實體主名 稲垣次郎とソウル・メディア，第 355 條）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1971/JP/Official Columbia NCB-7013，12\" Vinyl 7 軌；2013-03-20/JP/Official Think! Records THCD-212，CD 7 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。",
+    "rgMbid": "667ea191-00be-495b-a9a3-cd36097e8f59",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/667ea191-00be-495b-a9a3-cd36097e8f59/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "英文盤名寫遷徙的鳥，日文盤名卻只寫《女友達》三個字。1971 年的原盤是日本コロムビア 的 NCB-7013，收在 MS Master Sonic 這套企畫裡，做成對開封套。七軌約 38 分鐘，結構是對稱的：同一個主題先以 interlude 的形式開場，中間走過三首 5 到 7 分鐘的長曲與兩首 3 分出頭的短曲，最後再由完整版收尾。稲垣次郎 在這張上一個人兼吹次中音、高音薩克斯風與長笛。兩位歌手掛的是客席，人聲不負責唱完一首歌，而是被當成編制裡的一個聲部使用。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=667ea191-00be-495b-a9a3-cd36097e8f59&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/18912436",
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://www.discogs.com/release/13604663",
+     "https://musicbrainz.org/release-group/667ea191-00be-495b-a9a3-cd36097e8f59"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/38/bc/4e/38bc4ec6-16ca-6c67-2dc8-a10e1630b737/mzaf_6953332412811496040.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508946041",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "稲垣次郎とソウル・メディア",
+   "album": "In the Groove",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6863111f-ff49-40e0-8663-d104e06acd3d。回問 release-group 端點（inc=artist-credits+releases）：title「In the Groove」、artist-credit「稲垣次郎とソウル・メディア」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 3 個 release。release 端點（inc=media+labels，第 259 條）：1973/JP/Official Columbia NCB-7021，12\" Vinyl 10 軌；2012-12-05/JP/Official Columbia COCB-54038，CD 10 軌（題「In The Groove」）；2022-07-27/JP/Official Columbia HMJY-158 ＋ Deep Jazz Reality HMJY-158，12\" Vinyl 10 軌。藝人實體 ad4be255-6fff-44cf-9251-54dd82fe93fc（稲垣次郎とソウル・メディア／Group／JP，alias：Jiro Inagaki & His Soul Media、Jirō Inagaki & His Soul Media、ソウルメディア、Soul Media、Jiro Inagaki & Soul Media；名下 14 個 RG）；個人實體 96cb4aa2-d9c6-46f8-9c7b-d3a371a1f7ab（稲垣次郎／Person／JP／70s JP jazz sax bandleader，alias 稲垣幸雄／Inagaki Jiro／Jiro Inagaki，名下 3 個 RG）；另有 745a98c5-045e-4e65-a926-825fe4b7f0d8（稲垣次郎オールスターズ，2 個 RG）、29fd3a16-cb7a-4908-829c-1b394a118b67（稲垣次郎Section，**0 個 RG**，c-131 第 356 條 F 已列為 §1 候選）、1f935875（Jiro Inagaki & Golden Poppers，0 個）、7c08c485（Jiro Inagaki & His Rhythm Machine，0 個）。本組刻意不釘（合掛，第 321／385 條）：`6e05fed3`《Bridge Over Troubled Water》1971-07-25（credit「佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア」，**佐藤允彦 是 c-132 a 組的掛名**，第 386 條的形狀）、`b7502b91`《Something》1971-01（Steve Marcus +）、`da430ecc`《Dock of My Mind》1972-10-25（沢田靖司 &）、`86824bad`《Woman, Robinson Crusoe / Rock Steady》1972-10-25（サミー &，盤名還帶斜線）、`0af5ae13`《By the Red Stream》2012（**鈴木宏昌 是 c-133 a 組的掛名**）、`5a4b6ac8`《決定盤!これぞジャズ・ロック》1968（credit「前田憲男、稲垣次郎オールスターズ」，**前田憲男 是 c-134 a 組的掛名**）；Compilation 不走 §5.6：`7cb80bcc`《WaJazz Legends: Jiro Inagaki》2023、`b93c6bcb`《Jazz Rock Legend》2013；已在池中：`e78be364`《Head Rock》1970、`ab4904ad`《Funky Stuff》1975（英文掛名）；c-131 已收：`031550de`《Dosojin》1972；其餘不收：`8710ade8`《Shirisugitanone》1968（稲垣次郎オールスターズ，CAA 404、唯一 release 無國別無 status）、`27198e81`《Yottsu No Onegai - Anata Nara Dosuru》1970-04（歌謡曲翻奏盤、盤名是兩首歌名相接）、`9401e3d6`《Minatomachi Blues - Ikina Uwasa》1969（**primary-type 是 null，不是 Album**）、`89d77927`《不滅のスタンダード BALLADS IN JAZZ》2022。",
+    "rgMbid": "6863111f-ff49-40e0-8663-d104e06acd3d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6863111f-ff49-40e0-8663-d104e06acd3d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首曲子沒有一首放長，每首都只夠一段律動走完。這是換過寫法的結果：1972 年他公開表明此後不再出演搖滾演唱會，隔年這張碟就把長段落的即興收掉，改以律動為單位寫短曲。原盤是 1973 年日本コロムビア 的 NCB-7021，十軌約 39 分鐘。選曲一併換了方向，翻的是 The Crusaders 的〈Put It Where You Want It〉，指向的是美國黑人音樂那一側。唱片公司後來把它定位成他從ジャズ・ロック 轉向ジャズ・ファンク 途中做的作品。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6863111f-ff49-40e0-8663-d104e06acd3d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://www.discogs.com/release/15288825",
+     "https://musicbrainz.org/release-group/6863111f-ff49-40e0-8663-d104e06acd3d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/80/bc/f2/80bcf248-f7d3-0b26-23dd-738c9d9b52c1/mzaf_5250304940421524791.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508946305",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョージ大塚トリオ",
+   "album": "Page 1",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group de5ffd98-e689-442e-9439-1ec09a437b69。回問 release-group 端點（inc=artist-credits+releases）：title「Page 1」、artist-credit「George Otsuka Trio」（→ 卡面 ジョージ大塚トリオ，第 354 條）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1967/JP/Official Takt JAZZ-14，12\" Vinyl **7 軌**；2014-04-23/JP/Official Columbia COCB-54087，CD **8 軌**。**CAA release-group 端點 404（實測）。** `batch-progress/enum/jp-columbia.json` 列有本筆（artist 欄寫「George Otsuka Trio」，rgMbid 一致）。藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。",
+    "rgMbid": "de5ffd98-e689-442e-9439-1ec09a437b69",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f4/e1/4c/f4e14c1e-d001-b066-3259-b3d9d74cff96/COCB-54087.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1743173023",
+    "note": "試聽探測釘定的 collectionId 1743173023（jp）：ジョージ大塚トリオ — Page 1"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 35,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1967 年 10 月 14 日晚上七點，錄音是當著觀眾做的。三重奏是他 1966 年組起的第一支樂團：鋼琴 市川秀男、貝斯 寺川正興，加他自己的鼓。碟出在 Takt，這家テイチク 系的爵士廠標把它編成 JAZZ-14。1967 年的原盤收七首，一半是標準曲，一半是團裡自己的曲子，同一首〈Theme〉在 A 面與 B 面各收一次，像替兩面各下一個句點。因為有觀眾在場，段落走的是現場的長度而不是錄音室的剪裁，鋼琴與貝斯在鼓上對話，這是 1967 年日本モード・ジャズ 的規格。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=de5ffd98-e689-442e-9439-1ec09a437b69&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/10692408",
+     "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E5%A4%A7%E5%A1%9A",
+     "https://musicbrainz.org/release-group/de5ffd98-e689-442e-9439-1ec09a437b69"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/cf/29/52cf29fb-96d0-d74c-8168-4cfa34d3fe5a/mzaf_720016719764719059.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1743173023",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョージ大塚トリオ",
+   "album": "Page 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8dbfa30b-4a9f-4252-8598-9809b790067e。回問 release-group 端點（inc=artist-credits+releases）：title「Page 2」、artist-credit「George Otsuka Trio」（→ 卡面 ジョージ大塚トリオ，第 354 條）、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1968/JP/**Promotion** Columbia XMS-10002-CT，12\" Vinyl 5 軌；2014-04-23/JP/Official Columbia COCB-54088，CD 6 軌。**CAA release-group 端點 200（實測）。** `batch-progress/enum/jp-columbia.json` 列有本筆（rgMbid 一致）。藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。",
+    "rgMbid": "8dbfa30b-4a9f-4252-8598-9809b790067e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8dbfa30b-4a9f-4252-8598-9809b790067e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈On Green Dolphin Street〉一首就 14 分 23 秒，把 A 面大半吃掉。錄音在 1968 年 7 月 22 日做完，日本コロムビア 以 XMS-10002-CT 發行，版權標 ©68・9，定價 2000 日圓，對開封套。1968 年的原盤只收五首，開場那首不到 5 分鐘，B 面三首落在 5 分 54 秒到 7 分 14 秒。三重奏的成員與前一張相同，寫法卻不同了：鋼琴在長段落裡走的是調式而不是和弦進行，貝斯與鼓不再只是伴奏，而是被當成對話的對象。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8dbfa30b-4a9f-4252-8598-9809b790067e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/3903503",
+     "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E5%A4%A7%E5%A1%9A",
+     "https://musicbrainz.org/release-group/8dbfa30b-4a9f-4252-8598-9809b790067e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/8b/c9/9a8bc93c-a3ee-49b8-4890-8d5473b5c9e0/mzaf_13479717212183401236.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1742228931",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョージ大塚クインテット",
+   "album": "Physical Structure",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6be3e9a9-7b9b-4f9f-9dfb-50f441e4bd62。回問 release-group 端點（inc=artist-credits+releases）：title「Physical Structure」、artist-credit「George Otsuka Quintet」（→ 卡面 ジョージ大塚クインテット，第 354 條）、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1976/JP/Official three blind mice TBM-62，12\" Vinyl 4 軌；2013-07-10/JP/Official CS Record DQCP-5223 ＋ three blind mice TBM-62 ＋ Think! Records THCD-239，Blu-spec CD 4 軌。**CAA release-group 端點 200（實測）。**藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。",
+    "rgMbid": "6be3e9a9-7b9b-4f9f-9dfb-50f441e4bd62",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6be3e9a9-7b9b-4f9f-9dfb-50f441e4bd62/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四首曲子各佔半面，最後一首是 John Coltrane 的〈Naima〉。錄音是 1976 年 2 月 11 日一天做完的，地點在東京的 Epicurus Studio，碟編為 TBM-62。四軌約 42 分鐘，最短 7 分 42 秒、最長 13 分 44 秒，長度本身就說明這是替即興留的規格。與他 4 年前那張五重奏盤的差別在鍵盤：辛島文雄 一個人同時使用原音鋼琴、電鋼琴與合成器，貝斯與鼓則維持硬派的推進。把整張收在那首曲子上，等於把這支團的來歷交代清楚。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6be3e9a9-7b9b-4f9f-9dfb-50f441e4bd62&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/6524874",
+     "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E5%A4%A7%E5%A1%9A",
+     "https://www.discogs.com/release/13805292",
+     "https://musicbrainz.org/release-group/6be3e9a9-7b9b-4f9f-9dfb-50f441e4bd62"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョージ大塚クインテット",
+   "album": "Sea Breeze",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f1f64d5b-3e0f-46ea-ac08-52599b412353。回問 release-group 端點（inc=artist-credits+releases）：title「Sea Breeze」、artist-credit「George Otsuka Quintet」（→ 卡面 ジョージ大塚クインテット，第 354 條）、first-release-date **2014-09-24**、primary-type Album、secondary-types 空、轄下 **1 個** release。release 端點（inc=media+labels，第 259 條）：2014-09-24/JP/Official Think! Records THCD-330，CD 5 軌——**這是 MB 轄下唯一一筆，1971 原盤未建檔，卡面年份 1971 的依據見 risk**。**CAA release-group 端點 404（實測）。** Apple jp 直查 `lookup?id=1879753290&entity=song`（第 254 條第三步）：5 軌，曲目 シー・ブリーズ／フール・オン・ザ・ヒル／キャニヴル／ポテト・チップス／ジャンピング・キャッツ，℗ 2014 TEICHIKU ENTERTAINMENT，**軌數與 MB 一致**。藝人實體：個人 d9ea8995-14b9-4f01-9ca3-9d2a5ad2423a（ジョージ大塚／Person／JP，alias George Ohtsuka，2 個 RG）、1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio，3 個 RG）、60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet，alias George Ohtsuka Quintet，5 個 RG）、5e73770e-16fe-4ef8-8e0d-e1d719929ea0（ジョージ・大塚カルテット／disambiguation「George Otsuka Quartet」，**0 個 RG**）。合計 10 個 RG。本組刻意不釘：`f275db9a`《Now's The Time》1974（Live，credit「Isao Suzuki & Sunao Wada with The Tsuyoshi Yamamoto Trio, George Otsuka Quintet +2」，**五實體以上合掛，且 鈴木勲／山本剛トリオ 池中已有卡**，第 258／321 條）、`819fd4eb`《Blues for Bird》2000（credit「和田直, 酒井潮, ジョージ大塚」三人平列）、`ba19a978`《Maracaibo Cornpone》（**無日期、唯一 release 是 XW 數位**）、`024accd0`《Last Summer - Page 3》2014-03-24（**MB 只建 2014 Columbia COCB-54089 系的 CD，原盤未建檔；盤名還帶「 - 」接兩個題名**；Apple jp `1742233046` 題《Last Summer / Page 3》，2014-04-23、6 軌——與《Sea Breeze》同形，額度外候補）、`d237615a`《Loving You George》1975（**c-131 已收**）。",
+    "rgMbid": "f1f64d5b-3e0f-46ea-ac08-52599b412353",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/dd/53/dfdd5381-c39b-2113-edab-6e05ed21c8c6/cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1879753290",
+    "note": "試聽探測釘定的 collectionId 1879753290（jp）：ジョージ・大塚クィンテット — シー・ブリーズ"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Potato Chips〉四年前就錄過一次，這回換成五重奏重寫。1971 年的原盤是 Union Records 的 ULP-2002，走的是テイチク 那套面向年輕聽眾的發行體系。五軌約 45 分鐘，四首在 8 分半以上，〈Fool On The Hill〉被拉到 11 分 36 秒，只有那首舊曲壓在 5 分 2 秒。最大的變化在鍵盤：市川秀男 這回彈的是電鋼琴而不是原音鋼琴，與前兩張三重奏盤的聲音完全不同；薩克斯風與小號在前面成了固定編制，貝斯與鼓則在長段落裡一路推。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9667563",
+     "https://www.discogs.com/master/1119286",
+     "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E5%A4%A7%E5%A1%9A",
+     "https://musicbrainz.org/ws/2/release?release-group=f1f64d5b-3e0f-46ea-ac08-52599b412353&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/11607694",
+     "https://musicbrainz.org/release-group/f1f64d5b-3e0f-46ea-ac08-52599b412353"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/2c/39/fe2c3981-0549-14f3-9f3d-3669101ee4ab/mzaf_15333014053787839564.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1879753290",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大野雄二",
+   "album": "Sound Adventure Act.1",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8d5959a8-72a0-4069-ad55-57ea24f7b49a。回問 release-group 端點（inc=artist-credits+releases）：title「Sound Adventure Act.1」、artist-credit「大野雄二」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1975/JP/Official CBS/Sony Special Products YFSC-29，12\" Vinyl 7 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。",
+    "rgMbid": "8d5959a8-72a0-4069-ad55-57ea24f7b49a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8d5959a8-72a0-4069-ad55-57ea24f7b49a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "停下鋼琴手身分幾年之後，他在 1975 年一場實況裡重新坐回琴前。那場演出錄於同年 8 月 5 日的東京，碟由 CBS・ソニー 以 YFSC-29 發行，歸在 Audio Speciality Series 底下。七軌約 36 分鐘，曲單幾乎全是當年的黑人流行曲與硬咆勃標準曲，由鋼琴領銜的編制一首首改寫，收尾那首拉到 8 分 51 秒；中間插進他自己寫的〈Mayflower〉6 分 27 秒。女聲三人組 LOVE 以客席身分加入。在他自己領銜的作品表上，這張排在最前面。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8d5959a8-72a0-4069-ad55-57ea24f7b49a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/5782894",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%87%8E%E9%9B%84%E4%BA%8C",
+     "https://musicbrainz.org/release-group/8d5959a8-72a0-4069-ad55-57ea24f7b49a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大野雄二トリオ",
+   "album": "My Little Angel",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 61daf5d9-2382-4901-91b6-1c0d6123a4dd。回問 release-group 端點（inc=artist-credits+releases）：title「My Little Angel」、artist-credit「大野雄二トリオ」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1976/JP/Official RCA RVL-5505，12\" Vinyl 8 軌；2006-10-25/JP/Official RCA BVCJ-37528，CD 8 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。",
+    "rgMbid": "61daf5d9-2382-4901-91b6-1c0d6123a4dd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/61daf5d9-2382-4901-91b6-1c0d6123a4dd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 15,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音留在 1971 年，這個盤名要到 1976 年才印上封面。同一組母帶其實 1973 年就發過一次，那時的盤名是《ミスター・ハピゴン》，曲目八首與後來完全相同、順序也一樣；三年後 RCA 把它改題成現在這個名字，編為 RVL-5505，收進「日本の Jazz 1500」這套廉價復刻企畫。八軌約 47 分鐘，是一張正統的鋼琴三重奏盤，兩首 8 分出頭的標準曲撐起前後，同名曲 7 分 59 秒居中。貝斯與鼓守著分工，鋼琴不搶拍——那是他還以鋼琴手身分工作時留下的聲音。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=61daf5d9-2382-4901-91b6-1c0d6123a4dd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/8236226",
+     "https://www.discogs.com/release/12983013",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%87%8E%E9%9B%84%E4%BA%8C",
+     "https://musicbrainz.org/release-group/61daf5d9-2382-4901-91b6-1c0d6123a4dd"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大野雄二",
+   "album": "Space Kid",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8b03bd79-3c2c-4e1b-949f-a8f1b5f4f89c。回問 release-group 端點（inc=artist-credits+releases）：title「Space Kid」、artist-credit「大野雄二」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1978/JP/Official CBS/Sony 25AH 501，12\" Vinyl 10 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。",
+    "rgMbid": "8b03bd79-3c2c-4e1b-949f-a8f1b5f4f89c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8b03bd79-3c2c-4e1b-949f-a8f1b5f4f89c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 222,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "序曲與尾聲同名，中間還插了一首四十九秒的〈Interlude〉。1978 年這張由 CBS・ソニー 以 25AH 501 發行，十軌約 36 分鐘，首尾用同一個主題扣住，中段的曲長落差極大，最短的一首 2 分 18 秒、最長的 6 分 10 秒——不是一張曲集，是按段落寫的組曲。最長那首〈Mayflower〉三年前就在他的現場盤上演過，這回重寫成錄音室版本。同一張碟除了黑膠之外還壓了卡帶與兩種 Elcaset，那是 1976 年推出、1980 年就退場的日系高音質卡帶規格。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8b03bd79-3c2c-4e1b-949f-a8f1b5f4f89c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%87%8E%E9%9B%84%E4%BA%8C",
+     "https://www.discogs.com/release/3415862",
+     "https://musicbrainz.org/release-group/8b03bd79-3c2c-4e1b-949f-a8f1b5f4f89c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8c/1f/19/8c1f194a-1b98-70f7-65fb-49fd0e74a3e1/mzaf_14681957770262001649.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1539321882",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大野雄二",
+   "album": "Lifetide",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4be4c001-29d3-4f78-9dea-38becb7614a5。回問 release-group 端點（inc=artist-credits+releases）：title「Lifetide」、artist-credit「大野雄二」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1982/JP/Official INVITATION VIH-28104，12\" Vinyl 10 軌。**CAA release-group 端點 200（實測）。**藝人實體 49b6b461-0e97-4e96-8e5f-b77192ea7762（大野雄二／Person／JP，alias：Yuji Ohno、ŌNO Yūji、大野 雄二、OONO Yuuji、Yoji Ohno、Yuji Ono、Yuhji Ohno；**名下 86 個 RG**）與 335ac3db-db0b-438b-8fff-8e33dad236ac（大野雄二トリオ／Group／JP，alias Yuji Ohno Trio、OHNO Yuji Trio…；名下 17 個 RG）。⚠ **原聲帶不收（固定規格）——本組在這兩個實體底下判掉的張數**：個人實體 86 個 RG 裡 **66 個 `secondary-types` 含 `Soundtrack`**、トリオ 17 個 RG 裡 **1 個**，合計 **67 張以 MB 欄位直接判掉**；另有 **16 張 MB 沒標 Soundtrack、但盤名本身就是影視／動畫作品**（個人實體 6 張：`36f5af12`《Proof Of The Wild = 野性の証明》1978-09-25、`2fa8846c`《LUPIN TROIS》2004、`83b4f244`《ルパン三世 1978 MUSIC FILE》、`ddab67de`《ルパン三世 1979 MUSIC FILE》、`7705a06d`《ルパン三世 TIME TRIP CD》（primary-type 是 Single）、`d1d54988`《LUPIN THE THIRD JAZZ 〜Bossa & Fusion〜》2002；トリオ 10 張：`a1744aa4`／`763736d1`／`3f45d477`／`0036a21d`／`374bcb4e`／`6951ec01`／`a149cd2c`／`395b77da`／`e6fb4c00`／`1b8b7e47` 的 LUPIN THE THIRD「JAZZ」系列）——**依第 253／227 條「欄位本身不是判準」兩個方向都要防，所以這 16 張不是靠 `secondary-types` 判的，是靠盤名與內容判的**，合計判掉 **83 張**。本組刻意不釘（其餘）：`926c9e0a`《Spiced With Brazil》1974（credit「Sonia Rosa & Yuji Ohno」，兩人平列合掛，第 321／385 條）、`2abc8e4f`《サイレント・ダイアローグ》1979（credit「松田昌/大野雄二」，合掛且帶斜線）、`403b2454`《As Well Be Spring》1975（credit「Ann Young & Yuji Ohno Trio」，合掛；Apple jp `1693327310` 同樣掛「アン・ヤング & 大野雄二トリオ」，1975-09-25、8 軌）、`58122a02`《コスモス》1981-02-25（CAA 200、CBS/Sony、12 軌，**額度外候補，rgMbid 已備妥**；⚠ 與 `7f2d0d04`《cosmos》2007-04-25 是同碟兩個 RG，第 387 條的形狀，後者 CAA 404）、`fa8637ea`《Y.O. Connection》2009、`7084d180`／`9ccc5e78`／`13108972` 等 Compilation、`e0f0abd3`《NAKAURA》（Single、無日期）。",
+    "rgMbid": "4be4c001-29d3-4f78-9dea-38becb7614a5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4be4c001-29d3-4f78-9dea-38becb7614a5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 42,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名直接取自一本生物學家的書，日文盤名就是那本書的日文書名。那位作者是 Lyall Watson，盤面的致謝欄註明整張取材自他的著作，日文題就叫《生命潮流》。1982 年這張由ビクター音楽産業 的 Invitation 以 VIH-28104 發行。十軌約 40 分鐘，除了 6 分 37 秒的開場，其餘九首都壓在 4 分 38 秒以內，是概念盤的節奏。〈Magic Islands〉這個主題在第一軌只當序曲的前半，到第十軌才獨立收尾，編法是合成器與原音樂器交織的フュージョン。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4be4c001-29d3-4f78-9dea-38becb7614a5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/2673890",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%87%8E%E9%9B%84%E4%BA%8C",
+     "https://music.apple.com/jp/album/1356057846",
+     "https://musicbrainz.org/release-group/4be4c001-29d3-4f78-9dea-38becb7614a5"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "村岡建",
+   "album": "Takeru",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 52694bfc-733e-40e9-9836-6fe39fd2b9a9。回問 release-group 端點（inc=artist-credits+releases）：title「Takeru」、artist-credit「**Takeru Muraoka Quartet**」（指向個人實體 d9e29a7c，第 355 條 → 卡面 村岡建）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1970/JP/**status null** Philips FX-8502，12\" Vinyl 5 軌。**CAA release-group 端點 404（實測）。**藝人實體 d9e29a7c-390d-4aea-ae4a-c320b6994f27（**MB 主名 村岡健**／Person／JP／1941-01-12；alias：Takeru Muraoka〔en, primary〕、村岡建；**名下 6 個 RG**）。⚠ **這位在 MB 上的可得量就是 6 個 RG，本組收下其中全部 3 張可收的**：`52694bfc`《Takeru》1970、`8c08d4e7`《Rock Joy In Sax》1971、`a363100a`《SOFT LANDING》1978。本組刻意不釘（合掛，第 321／385 條）：`0e997400`《Jam In Yokota》1973-06-25（Live，credit 七人平列「酒井潮 + 伏見哲夫 + Teddy Adams + 村岡健 + 松本英彦 + 川崎燎 + 日野元彦」——**c-132 第 385 條已就同一張碟以 松本英彦 的名義擋下過，而 日野元彦 是 c-134 b 組的掛名**，第 386 條的形狀）、`997a37fa`《Something / Freedom Unity First》2011-10-19（credit「Freedom Unity + Takeru Muraoka」，合掛且盤名帶斜線）、`5d3ab2d3`《Ride And Tie》2011-11-23（credit「Takeru Muraoka + Takao Uematsu」；Apple jp `1681940387` 同樣掛「村岡建 & 植松孝夫」）。**查法（第 309 條：拉丁轉寫查不到不等於查無）**：`artist?query=村岡建`（3901 筆，主名「村岡健」score 100）、`Muraoka Takeru`、`Takeshi Muraoka`、`村岡` 四種寫法並行；`release-group?query=artist:\"村岡建\"` **0 筆**、`artist:\"村岡健\"` 2 筆、`artist:\"Takeru Muraoka\"` 4 筆，三種反查的聯集與 `release-group?artist=d9e29a7c` 的 6 筆完全相同，**沒有漏掉的實體**；另查 `artist:\"Takeru Muraoka Quartet\"` 無獨立群組實體。",
+    "rgMbid": "52694bfc-733e-40e9-9836-6fe39fd2b9a9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/10/69/0d/10690d1b-a1a3-cde0-70a1-d0b0fe48bfdb/22UMGIM47454.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1628447859",
+    "note": "試聽探測釘定的 collectionId 1628447859（jp）：村岡建 — Takeru"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個人，沒有吉他也沒有第二支管樂，薩克斯風幾乎全程在前面。頂上那個空缺由 菊地雅章 的電鋼琴補起來，和聲與對位都落在他手上，貝斯與鼓則把四重奏的骨架撐住。錄音在 1970 年 2 月 23 日一天完成，碟由 Philips 以 FX-8502 發行，對開封套，歸在該廠當年那套新音樂系列底下。五首曲子全部出自 村岡建 之手，〈Snoopy〉〈Fish〉〈Electric Zoo〉這些曲名指向的是 1970 年前後帶著流行語彙的日本爵士。在他的三張領銜作裡，這是最早的一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=52694bfc-733e-40e9-9836-6fe39fd2b9a9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/12094617",
+     "https://musicbrainz.org/artist/d9e29a7c-390d-4aea-ae4a-c320b6994f27",
+     "https://music.apple.com/jp/album/1834346786",
+     "https://musicbrainz.org/release-group/52694bfc-733e-40e9-9836-6fe39fd2b9a9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/18/38/1d/18381dd4-0007-eb59-a52b-a0fe30048c5d/mzaf_3973134794448235674.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1628447859",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "村岡建",
+   "album": "Rock Joy In Sax",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8c08d4e7-4a2b-4a33-8805-e76547b1e90c。回問 release-group 端點（inc=artist-credits+releases）：title「Rock Joy In Sax」、artist-credit「Takeru Muraoka」（指向個人實體 d9e29a7c，第 355 條 → 卡面 村岡建）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 1 個 release。release 端點（inc=media+labels，第 259 條）：1971/JP/**status null** MCA Records JMC-5033，12\" Vinyl 10 軌。**CAA release-group 端點 404（實測）。**藝人實體 d9e29a7c-390d-4aea-ae4a-c320b6994f27（**MB 主名 村岡健**／Person／JP／1941-01-12；alias：Takeru Muraoka〔en, primary〕、村岡建；**名下 6 個 RG**）。⚠ **這位在 MB 上的可得量就是 6 個 RG，本組收下其中全部 3 張可收的**：`52694bfc`《Takeru》1970、`8c08d4e7`《Rock Joy In Sax》1971、`a363100a`《SOFT LANDING》1978。本組刻意不釘（合掛，第 321／385 條）：`0e997400`《Jam In Yokota》1973-06-25（Live，credit 七人平列「酒井潮 + 伏見哲夫 + Teddy Adams + 村岡健 + 松本英彦 + 川崎燎 + 日野元彦」——**c-132 第 385 條已就同一張碟以 松本英彦 的名義擋下過，而 日野元彦 是 c-134 b 組的掛名**，第 386 條的形狀）、`997a37fa`《Something / Freedom Unity First》2011-10-19（credit「Freedom Unity + Takeru Muraoka」，合掛且盤名帶斜線）、`5d3ab2d3`《Ride And Tie》2011-11-23（credit「Takeru Muraoka + Takao Uematsu」；Apple jp `1681940387` 同樣掛「村岡建 & 植松孝夫」）。**查法（第 309 條：拉丁轉寫查不到不等於查無）**：`artist?query=村岡建`（3901 筆，主名「村岡健」score 100）、`Muraoka Takeru`、`Takeshi Muraoka`、`村岡` 四種寫法並行；`release-group?query=artist:\"村岡建\"` **0 筆**、`artist:\"村岡健\"` 2 筆、`artist:\"Takeru Muraoka\"` 4 筆，三種反查的聯集與 `release-group?artist=d9e29a7c` 的 6 筆完全相同，**沒有漏掉的實體**；另查 `artist:\"Takeru Muraoka Quartet\"` 無獨立群組實體。",
+    "rgMbid": "8c08d4e7-4a2b-4a33-8805-e76547b1e90c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/0b/c0/67/0bc067a9-dbca-b328-a913-a7475e870567/VICJ-70047.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1441951865",
+    "note": "試聽探測釘定的 collectionId 1441951865（jp）：村岡建 — Rock Joy in Sax"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Whole Lotta Love〉被改成薩克斯風的主旋律，全張十首都是這樣來的。素材幾乎全部取自 1969 到 1971 年的英美搖滾與流行暢銷曲，十軌約 37 分鐘，每首落在 2 分 56 秒到 5 分之間。1971 年這張出在 MCA Records 的 JMC-5033，屬於一套把搖滾曲目做成器樂演奏的企畫系列。真正決定聲音的是編曲：十首由 鈴木宏昌 一人寫成，他同時彈鋼琴與風琴，水谷公生 的吉他顧搖滾那一側的音色，管樂組疊在上面。這讓它偏向 jazz-rock。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8c08d4e7-4a2b-4a33-8805-e76547b1e90c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/19581607",
+     "https://www.discogs.com/release/23407508",
+     "https://www.discogs.com/release/8721021",
+     "https://musicbrainz.org/release-group/8c08d4e7-4a2b-4a33-8805-e76547b1e90c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/e1/72/26/e1722642-5cdc-bceb-e21e-a7a3971940a4/mzaf_4982033813781584969.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1441951865",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "村岡建",
+   "album": "SOFT LANDING",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a363100a-cef9-4bcd-96cd-a80fe7b57be3。回問 release-group 端點（inc=artist-credits+releases）：title「SOFT LANDING」、artist-credit「村岡健」（實體 d9e29a7c 主名 → 卡面經店面校正取 村岡建，見 risk）、first-release-date 1978、primary-type Album、secondary-types 空、轄下 2 個 release。release 端點（inc=media+labels，第 259 條）：1978/JP/Official SEVEN SEAS SKS-3005，12\" Vinyl 8 軌；2018-12-05/JP/Official KING KICJ-2644，SHM-CD 8 軌。**CAA release-group 端點 404（實測）。**藝人實體 d9e29a7c-390d-4aea-ae4a-c320b6994f27（**MB 主名 村岡健**／Person／JP／1941-01-12；alias：Takeru Muraoka〔en, primary〕、村岡建；**名下 6 個 RG**）。⚠ **這位在 MB 上的可得量就是 6 個 RG，本組收下其中全部 3 張可收的**：`52694bfc`《Takeru》1970、`8c08d4e7`《Rock Joy In Sax》1971、`a363100a`《SOFT LANDING》1978。本組刻意不釘（合掛，第 321／385 條）：`0e997400`《Jam In Yokota》1973-06-25（Live，credit 七人平列「酒井潮 + 伏見哲夫 + Teddy Adams + 村岡健 + 松本英彦 + 川崎燎 + 日野元彦」——**c-132 第 385 條已就同一張碟以 松本英彦 的名義擋下過，而 日野元彦 是 c-134 b 組的掛名**，第 386 條的形狀）、`997a37fa`《Something / Freedom Unity First》2011-10-19（credit「Freedom Unity + Takeru Muraoka」，合掛且盤名帶斜線）、`5d3ab2d3`《Ride And Tie》2011-11-23（credit「Takeru Muraoka + Takao Uematsu」；Apple jp `1681940387` 同樣掛「村岡建 & 植松孝夫」）。**查法（第 309 條：拉丁轉寫查不到不等於查無）**：`artist?query=村岡建`（3901 筆，主名「村岡健」score 100）、`Muraoka Takeru`、`Takeshi Muraoka`、`村岡` 四種寫法並行；`release-group?query=artist:\"村岡建\"` **0 筆**、`artist:\"村岡健\"` 2 筆、`artist:\"Takeru Muraoka\"` 4 筆，三種反查的聯集與 `release-group?artist=d9e29a7c` 的 6 筆完全相同，**沒有漏掉的實體**；另查 `artist:\"Takeru Muraoka Quartet\"` 無獨立群組實體。",
+    "rgMbid": "a363100a-cef9-4bcd-96cd-a80fe7b57be3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/21/92/89/21928957-05e8-8252-c425-3c6e24dec4bd/NOPA-6570.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1782229173",
+    "note": "試聽探測釘定的 collectionId 1782229173（jp）：村岡建とヒズ・ニュー・グループ — SOFT LANDING"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "薩克斯風旁邊多了一支 Lyricon，主旋律因此在管樂與合成器之間來回。那是 1970 年代中期才問世的電子管樂控制器。1978 年由 Seven Seas 以 SKS-3005 發行，盤面掛名印的是 Takeru Muraoka & His New Group。八首全部由 村岡建 作曲兼編曲，長度落差很大。七人編制裡 笹路正徳 一個人包辦鋼琴、電鋼琴、Clavinet、Solina 與合成器，吉他、電貝斯、兩位打擊樂手與小號把 fusion 的底盤鋪滿。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a363100a-cef9-4bcd-96cd-a80fe7b57be3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.discogs.com/release/9078168",
+     "https://www.discogs.com/release/15824938",
+     "https://musicbrainz.org/release-group/a363100a-cef9-4bcd-96cd-a80fe7b57be3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/99/8a/a2998ae8-6bb3-8d20-9f37-ec82bb477a9d/mzaf_3446062782586664283.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1782229173",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

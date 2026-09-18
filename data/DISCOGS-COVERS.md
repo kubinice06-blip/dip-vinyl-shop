@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **178** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 177、已核可 0、已退回 1）。
-最後更新：2026-09-10T13:00:01.671Z
+共 **194** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 193、已核可 0、已退回 1）。
+最後更新：2026-09-17T11:47:06.245Z
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -365,6 +365,67 @@
 | Rein Rannap 《Improvisatsioonid》 | [#855590](https://www.discogs.com/release/855590) | 1982 | Мелодия | C60 19989 001 | 年份 1982、廠牌 Мелодия | pending |
 | Tõnis Mägi & Muusik-Seif 《Mäe kaks nõlva》 | [#1828058](https://www.discogs.com/release/1828058) | 1983 | Мелодия | С60 19439 002 | 年份 1983、廠牌 Мелодия | pending |
 | Vitamiin 《Ansambel "Vitamiin"》 | [#3640089](https://www.discogs.com/release/3640089) | 1983 | Мелодия | С62 18709 000 | 年份 1983、廠牌 Мелодия | pending |
+
+## c126（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 草莓救星 《太陽系》 | [#8671349](https://www.discogs.com/release/8671349) | 2002 | 擎天娛樂 | 120024 | 年份 2002、廠牌 擎天娛樂 | pending |
+
+## c129（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Black Brothers 《Terima Kaseh》 | [#11860310](https://www.discogs.com/release/11860310) | 1978 | EMI | MMFP30010 | 年份 1978、廠牌 EMI、目錄號 MMFP30010 | pending |
+| พงษ์เทพ กระโดนชำนาญ 《เดี่ยว》 | [#6603451](https://www.discogs.com/release/6603451) | 1985 | Not On Label | PO-280513 | 年份 1985、目錄號 PO-280513 | pending |
+
+## c130（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Ewa Demarczyk 《Live》 | [#1179643](https://www.discogs.com/release/1179643) | 1982 | Wifon | LP 033 | 年份 1982、廠牌 Wifon、目錄號 LP 033 | pending |
+
+## c134（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 日野元彦 《First Album》 | [#8895683](https://www.discogs.com/release/8895683) | 1971 | Columbia | XMS-10029-CT | 年份 1971、廠牌 Columbia | pending |
+| 前田憲男とオール・スターズ 《Rock Communication》 | [#9984048](https://www.discogs.com/release/9984048) | 1970 | Teichiku Records | SL-1329 | 年份 1970、目錄號 SL-1329 | pending |
+
+## c135（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Edmond Hall & Sidney De Paris 《Jamming in Jazz》 | [#4950869](https://www.discogs.com/release/4950869) | 1951 | Blue Note | LP 7007 | 年份 1951、廠牌 Blue Note、目錄號 LP 7007 | pending |
+
+## c142（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Blue Mitchell 《Collision in Black》 | [#1640346](https://www.discogs.com/release/1640346) | 1969 | Blue Note | BST 84300 | 年份 1969、廠牌 Blue Note、目錄號 BST 84300 | pending |
+| Jimmy McGriff 《Something To Listen To》 | [#2452425](https://www.discogs.com/release/2452425) | 1970 | Blue Note | BST-84364 | 年份 1970、廠牌 Blue Note、目錄號 BST-84364 | pending |
+| Joe Williams 《Worth Waiting For...》 | [#1188467](https://www.discogs.com/release/1188467) | 1970 | Blue Note | BST 84355 | 年份 1970、廠牌 Blue Note、目錄號 BST 84355 | pending |
+
+## c144（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Jackie McLean 《The Jackie McLean Quintet》 | [#3612187](https://www.discogs.com/release/3612187) | 1977 | Blue Note | LNJ-80118 | 年份 1977、廠牌 Blue Note、目錄號 LNJ-80118 | pending |
+| Jackie McLean 《Hipnosis》 | [#3908120](https://www.discogs.com/release/3908120) | 1978 | Blue Note | GXF 3022 | 年份 1978、廠牌 Blue Note、目錄號 GXF 3022 | pending |
+
+## c145（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Ike Quebec 《Congo Lament》 | [#3357862](https://www.discogs.com/release/3357862) | 1981 | Blue Note | LT-1089 | 年份 1981、廠牌 Blue Note、目錄號 LT-1089 | pending |
+
+## c147（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Edmond Hall / Art Hodes 《Original Blue Note Jazz, Volume 1》 | [#3599683](https://www.discogs.com/release/3599683) | 1969 | Blue Note | B-6504 | 年份 1969、廠牌 Blue Note、目錄號 B-6504 | pending |
+| James Moody / George Wallington 《The Beginning and End of Bop》 | [#2040078](https://www.discogs.com/release/2040078) | 1969 | Blue Note | B 6503 | 年份 1969、廠牌 Blue Note、目錄號 B 6503 | pending |
+| Sidney Bechet 《Port of Harlem Six》 | [#4107676](https://www.discogs.com/release/4107676) | 1952 | Blue Note | LP 7022 | 年份 1952、廠牌 Blue Note、目錄號 LP 7022 | pending |
 
 ## csea（2 張）
 

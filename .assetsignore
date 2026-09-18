@@ -1,0 +1,6 @@
+# ⚠ 這個檔案對 Cloudflare Pages 的 git 整合部署**沒有作用**（2026-09-17 實測）。
+# 那道 25 MiB 單檔檢查發生在讀這份清單之前；`.assetsignore` 是 Workers Assets 的機制。
+#
+# 真正生效的是 `scripts/pages-build.sh`（Pages 專案的 build command，輸出目錄 dist/）。
+# 要改哪些東西不上傳，請改那支腳本的排除清單，不是這裡。
+# 這個檔留著只是路標，免得下次有人再走一次同一條死路。

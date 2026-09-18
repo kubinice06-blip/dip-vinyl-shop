@@ -1,0 +1,855 @@
+{
+ "schemaVersion": 1,
+ "batch": "c147-20260917",
+ "albums": [
+  {
+   "artist": "Sidney Bechet",
+   "album": "12 Years On Blue Note. The Fabulous Sidney Bechet",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9691085f-6a58-4776-93ca-dd2556806f7a。回問 release-group 端點（inc=artist-credits+releases）：title「12 Years On Blue Note. The Fabulous Sidney Bechet」、artist-credit「Sidney Bechet」（bf1b23ea Person, US）、first-release-date 1952、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：7aec7494（1952 US，status 未填，10\" Vinyl 6 軌，Blue Note BLP 7020＋LP 7020，無 barcode）。曲目（release/7aec7494?inc=recordings）：Original Dixieland One-Step／Blues My Naughty Sweetie Gave to Me [5:43]／Changes Made／That's a Plenty／Ballin' the Jack／Avalon（MB 只有第二軌有長度）。對照池中 BLP 1207（RG 53537ba8，MB 只建了 2001 CD ab7b2dca，17 軌）曲目已逐軌比對。",
+    "rgMbid": "9691085f-6a58-4776-93ca-dd2556806f7a",
+    "exceptionReason": "BLP 7020 是 Blue Note 自家目錄號的原始發行：1952 年這批 Bechet 面沒有別的形態存在，10 吋 LP 就是它第一次以「一張唱片」的單位問世（在此之前只有 78 轉單片）。MB 因為它由 78 轉重組而標 Compilation，但廠牌目錄裡它是 7000 系列的正規盤，盤名「12 Years On Blue Note」正是 Blue Note 1939 年創業後十二年的自我標記。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/9691085f-6a58-4776-93ca-dd2556806f7a",
+     "https://www.discogs.com/release/4807159"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1952,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9691085f-6a58-4776-93ca-dd2556806f7a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=0，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名的十二年算的是 Bechet 與 Blue Note 的年資，六軌全錄於 1951 年 11 月 5 日一天。那天的場地是 WOR Studios，Sidney DeParis 的小號與 Jimmy Archey 的長號夾著他的高音薩克斯，〈That's a Plenty〉是快板迪西蘭。六年後其中五軌被搬進 12 吋的《The Fabulous Sidney Bechet》(BLP 1207)，兩張裝的是同一批母帶。1952 年以 BLP 7020 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9691085f-6a58-4776-93ca-dd2556806f7a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-7000-series/",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1200-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=53537ba8-d1d4-4fba-90d4-b9b0877c5b8f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1952/Billboard%201952-10-04.pdf",
+     "https://itunes.apple.com/search?term=Sidney%20Bechet%2012%20Years%20On%20Blue%20Note&country=us&media=music&entity=album&limit=25",
+     "https://coverartarchive.org/release-group/9691085f-6a58-4776-93ca-dd2556806f7a",
+     "https://musicbrainz.org/release-group/9691085f-6a58-4776-93ca-dd2556806f7a",
+     "https://www.discogs.com/release/4807159"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sidney Bechet",
+   "album": "Port of Harlem Six",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3e2ba17e-2044-4503-97e5-38fcd23ef07e。回問 release-group 端點（inc=artist-credits+releases）：title「Port of Harlem Six」、artist-credit「Sidney Bechet」（bf1b23ea Person）、**first-release-date 1952-09**、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：5a1221fa（1952-09 US Official，10\" Vinyl 7 軌，Blue Note BLP 7022＋LP 7022，無 barcode）。曲目（release/5a1221fa?inc=recordings）：Old Stack O'Lee Blues／Rocking the Blues／Lonesome Blues／Saturday Night Blues／Bechet's Steady Rider／Mighty Blues／Bechet's Fantasy（MB 全無長度）。",
+    "rgMbid": "3e2ba17e-2044-4503-97e5-38fcd23ef07e",
+    "exceptionReason": "BLP 7022 是 Blue Note 自家 7000 系列的原始 10 吋發行，內容是廠牌創業期（Port of Harlem 系列場次）的 78 轉單片第一次整成一張唱片。MB 因「由 78 轉重組」標 Compilation，但 1952 年之前這批錄音不存在專輯形態，這張就是它們的原始發行單位，且是 Blue Note 自己排的目錄號、自己的錄音，不是第三方精選。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/3e2ba17e-2044-4503-97e5-38fcd23ef07e",
+     "https://www.discogs.com/release/4107676"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1952,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/g9E9bmbjltgE9TloyPue9xPmySTSWugwtqEvSd9Z6xo/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMDc2/NzYtMTM1NTU4NDMy/Mi05MTYwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "4107676"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=5，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七軌橫跨 1939、1940、1946 三場錄音，全部走慢速藍調。盤名指的是 1939 年 4 月 7 日那組 Port of Harlem Jazzmen，小號是 Frankie Newton、鋼琴是 Albert Ammons，Bechet 只是其中一員，〈Mighty Blues〉出自那場。1940 年 3 月的四重奏再留下三軌，1946 年 2 月的五重奏則加進一支單簧管。七軌一律中慢速，沒有快板迪西蘭。1952 年以 BLP 7022 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=3e2ba17e-2044-4503-97e5-38fcd23ef07e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-7000-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=53537ba8-d1d4-4fba-90d4-b9b0877c5b8f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1952/Billboard%201952-09-06.pdf",
+     "https://itunes.apple.com/search?term=Port%20of%20Harlem%20Six&country=us&media=music&entity=album&limit=25",
+     "https://api.discogs.com/releases/4107676",
+     "https://musicbrainz.org/release-group/3e2ba17e-2044-4503-97e5-38fcd23ef07e",
+     "https://www.discogs.com/release/4107676"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Clifford Brown",
+   "album": "New Star on the Horizon",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f2dd3c05-df4d-40dc-99bc-d793a94ba62d。回問 release-group 端點（inc=artist-credits+releases）：title「New Star on the Horizon」、artist-credit「Clifford Brown」（Person）、first-release-date 1953、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：9e8b81ac（1953 US Official，10\" Vinyl 6 軌，Blue Note BLP 5032）、ca827de1（2014 US Official，Digital Media 6 軌，Blue Note 無 catno）。曲目（release/9e8b81ac?inc=recordings）：Cherokee [3:25]／Easy Living [3:42]／Wail Bait [4:00]／Minor Mood [4:33]／Hymn of the Orient [4:05]／Brownie Eyes [3:47]。對照組：池中《Memorial Album》BLP 1526 的 MB release 42092682（1956 US，10 軌）已逐軌比對。",
+    "rgMbid": "f2dd3c05-df4d-40dc-99bc-d793a94ba62d",
+    "exceptionReason": "BLP 5032 是 Clifford Brown 1953 年在 Blue Note 的第一張領班 10 吋，也是 5000 系列的原始發行，不是事後精選：六軌出自同一場 1953 年的 Blue Note 錄音，當年就以這個目錄號、這個盤名上市。MB 之所以標 Compilation，是因為 1956 年的 12 吋《Memorial Album》(BLP 1526) 把它拆散重編，資料庫把親子關係填反了。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/f2dd3c05-df4d-40dc-99bc-d793a94ba62d",
+     "https://www.discogs.com/release/7627766"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1953,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f2dd3c05-df4d-40dc-99bc-d793a94ba62d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5610,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "22 歲的小號手第一次領銜進 Blue Note，前線擺了三管。盤名是廠牌對他的定性。六軌在 1953 年 8 月 28 日一場錄完，Gigi Gryce 的中音與 Charlie Rouse 的次中音陪著他的小號。〈Cherokee〉三分半走高速，〈Easy Living〉放慢。1956 年其中五軌被搬進 12 吋的《Memorial Album》(BLP 1526)，兩張裝同一批母帶，只有〈Brownie Eyes〉沒被搬走。1953 年以 BLP 5032 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f2dd3c05-df4d-40dc-99bc-d793a94ba62d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=83e340a1-ba9b-3971-9737-f0cfdb6702bf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=faf3df72-4e4e-4700-ae10-0f990b12cdae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1954/Billboard%201954-02-13.pdf",
+     "https://itunes.apple.com/lookup?id=1443004119&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/release-group/f2dd3c05-df4d-40dc-99bc-d793a94ba62d",
+     "https://www.discogs.com/release/7627766"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/dc/52/fb/dc52fbe1-ec87-24e4-56cc-6e72c36498a5/mzaf_5960244071623420776.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "343345064",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miles Davis",
+   "album": "Miles Davis, Volume 1",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 948a4f0a-99a1-3c2e-b6a1-63ad8ef0e898。回問 release-group 端點（inc=artist-credits+releases）：title「Miles Davis, Volume 1」、artist-credit「Miles Davis」（Person）、**first-release-date 1955-11**、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 8 個 release。release 端點（inc=media+labels+artist-credits）：7acd38f4（1955-11 US Official 12\" Vinyl 12 軌 BLP 1501）、8733ef8a（1986 JP CD 12 軌 CP32-5221）、92a83feb（1988 US CD 15 軌 CDP 7 81501 2）、73741888（2001-07-17 US CD 15 軌 7243 5 32610 2 3）、c1343794（XE CD 15 軌 同號）、fb79ea48（2013 XW Digital 12 軌）、0383fcc3（2024-01-24 JP HQCD 12 軌 UCCQ-9641）、4fa02870（2026-05-20 JP SHM-SACD 12 軌 UCGQ-9102）。原盤曲目（release/7acd38f4?inc=recordings）：Tempus Fugit [3:49]／Kelo [3:17]／Enigma [3:21]／Ray's Idea [3:44]／How Deep Is the Ocean [4:43]／C.T.A. (alternate take) [3:17]／Dear Old Stockholm [4:11]／Chance It [3:02]／Yesterdays [3:43]／Donna (alternate take) [3:09]／C.T.A. [3:32]／Would'n You (alternate take) [3:25]。對照組：c135 的 BLP 5013（MB 093a3235）與 BLP 5022（MB 29393845）曲目已逐軌比對。",
+    "rgMbid": "948a4f0a-99a1-3c2e-b6a1-63ad8ef0e898",
+    "exceptionReason": "BLP 1501 是 Blue Note 12 吋 1500 系列的第一號，1955 年由廠牌自己把 10 吋 BLP 5013／5022 的內容重編、加上未發表替代版，當年就以「Miles Davis, Volume 1」這個新盤名與新目錄號上市，Billboard 1956-02-04 以新片評介處理它並寫明「Blue Note 已開始把目錄轉成 12 吋」。MB 因為它由 10 吋重組而標 Compilation，但它是廠牌 12 吋時代的開卷盤，不是第三方精選。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/948a4f0a-99a1-3c2e-b6a1-63ad8ef0e898",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-02-04.pdf"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1955,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/948a4f0a-99a1-3c2e-b6a1-63ad8ef0e898/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 320,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=320，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Blue Note 改做 12 吋的第一號唱片，開場用的是兩三年前的母帶。十二軌取自 1952 與 1953 年兩場 WOR Studios 的六重奏，J. J. Johnson 的長號兩場都在，薩克斯先是 Jackie McLean、後換 Jimmy Heath，〈Tempus Fugit〉是三分半的快板。這批母帶先前已由 BLP 5013 與 5022 兩張 10 吋發行，1501 與 1502 是把主母帶與替代母帶分裝的重排。1955 年以 BLP 1501 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=948a4f0a-99a1-3c2e-b6a1-63ad8ef0e898&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=093a3235-7271-46d5-9c94-c092edf1fb25&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=29393845-34a2-40a6-9c8c-6647c83e9c1d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-02-04.pdf",
+     "https://itunes.apple.com/lookup?id=1443224843&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/release-group/948a4f0a-99a1-3c2e-b6a1-63ad8ef0e898",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-02-04.pdf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Milt Jackson",
+   "album": "Milt Jackson With John Lewis, Percy Heath, Kenny Clarke, Lou Donaldson and the Thelonious Monk Quintet",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0ef5d410-fc3b-3b3c-8498-c513f0f928d5。回問 release-group 端點（inc=artist-credits+releases）：title「Milt Jackson With John Lewis, Percy Heath, Kenny Clarke, Lou Donaldson and the Thelonious Monk Quintet」、**artist-credit「Milt Jackson」（2e38e1de Person, US）**、first-release-date 1955、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 9 個 release。release 端點（inc=media+labels+artist-credits）：99f297c3／1ed36533／29dbc5ef（皆 1955 US Official 12\" Vinyl 12 軌 BLP 1509，artist-credit 三種寫法）、b1ea560c（1989 US CD 17 軌 CDP 7 81509 2）、50c18afa／6953088b（2013-10-23 JP SHM-CD 19 軌 TYCJ-81022）、09a15ec1（2016-09-28 JP SHM-CD 19 軌 UCCU-5680）、5c626ceb（2022-03-18 12\" 12 軌 4508227＋BLP 1509）、e06fdeca（2024-09-25 JP HQCD 12 軌 UCCQ-9713）。原盤曲目（release/99f297c3?inc=recordings）：Lillie [3:18]／Tahiti [3:29]／What's New [3:15]／Bags' Groove [3:08]／On the Scene [2:45]／Willow Weep for Me [3:03]／Criss Cross [2:58]／Eronel [3:04]／Misterioso (alternate master) [2:46]／Evidence [2:35]／Lillie (alternate master) [3:20]／Four in One (alternate master) [3:31]。對照組：c135 的 BLP 5011（MB 8a8a135a）八軌已逐軌比對。年份證據：Billboard 1956-05-12 新片評介（評分 74）；jazzdisco `jazzdisco-bn-1500.txt` 第 235 行「BLP 1509 Milt Jackson And The Thelonious Monk Quintet 1956」。",
+    "rgMbid": "0ef5d410-fc3b-3b3c-8498-c513f0f928d5",
+    "exceptionReason": "BLP 1509 是 Blue Note 1500 系列的正規盤：廠牌把 10 吋 BLP 5011《Wizard of the Vibes》重製成 12 吋、補進 Monk 五重奏那一場的四軌與替代版，1956 年以新目錄號上市，Billboard 1956-05-12 以新片評介處理（「Basically this is a re-mastering of a 10-inch LP (BLP 5011), adding one number not previously released」）。MB 因為它由 10 吋重組而標 Compilation，但它是廠牌自己的 12 吋轉版工程，不是第三方精選。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/0ef5d410-fc3b-3b3c-8498-c513f0f928d5",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-05-12.pdf"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1956,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0ef5d410-fc3b-3b3c-8498-c513f0f928d5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 264,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=264，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同期樂評把這張拆開來說：舊盤重新灌製，加一首從沒發過的〈Evidence〉。前八軌重排自 10 吋的《Wizard of the Vibes》(BLP 5011)：1952 年的〈Bags' Groove〉輕快，1951 年 Thelonious Monk 那場的〈Criss Cross〉稜角更硬。〈Evidence〉錄於 1948 年 7 月的 Monk 場次，24 歲的 Jackson 是側手。十二軌裡只有這一首先前沒發行過。1956 年以 BLP 1509 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=0ef5d410-fc3b-3b3c-8498-c513f0f928d5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-05-12.pdf",
+     "https://musicbrainz.org/ws/2/release?release-group=8a8a135a-b743-348c-9840-d286f815889a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=b7c8c951-8b66-361a-9156-ba9805bedbd5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1469463699&entity=song&limit=200&country=us",
+     "https://api.discogs.com/database/search?catno=BLP%201509",
+     "https://musicbrainz.org/release-group/0ef5d410-fc3b-3b3c-8498-c513f0f928d5",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-05-12.pdf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miles Davis",
+   "album": "Miles Davis, Volume 2",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c4d7c9e0-3ac8-3f29-8224-79c19253d2da。回問 release-group 端點（inc=artist-credits+releases）：title「Miles Davis, Volume 2」、artist-credit「Miles Davis」（Person）、**first-release-date 1956-02**、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 8 個 release。release 端點（inc=media+labels+artist-credits）：b5969af3（1956-02 US Official 12\" Vinyl 11 軌 BLP 1502）、f7842722（1986 JP CD 11 軌 CP32-5222）、51973e83（1990 US CD 11 軌 CDP 7 81502 2）、4b4e46e7（1998 JP CD 11 軌 TOCJ-9023）、a38a6afb／ecfb3a15（2013 US Digital 11 軌）、b878c38d（2024-06-26 JP HQCD 11 軌 UCCQ-9700）、c9d84b0b（2026-05-20 JP SHM-SACD 11 軌 UCGQ-9103）。原盤曲目（release/b5969af3?inc=recordings，MB 無長度）：Take-Off／Weirdo／Wouldn't You／I Waited for You／Ray's Idea (alternate master)／Donna／Well You Needn't／The Leap／Lazy Susan／Tempus Fugit (alternate master)／It Never Entered My Mind。對照組：c135 的 BLP 5013（093a3235）、BLP 5022（29393845）、BLP 5040（7aaa93b0）曲目已逐軌比對。",
+    "rgMbid": "c4d7c9e0-3ac8-3f29-8224-79c19253d2da",
+    "exceptionReason": "BLP 1502 是 Blue Note 1500 系列的第二號，1956 年 2 月由廠牌把 10 吋 BLP 5040 全部與 BLP 5013／5022 的剩餘正式版重編、補進替代版後以新目錄號上市，Discogs 美國原壓兩筆同標 1956、jazzdisco 1500 系列頁亦記 1956。MB 因為它由 10 吋重組而標 Compilation，但它是廠牌 12 吋轉版工程的第二張，不是第三方精選。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/c4d7c9e0-3ac8-3f29-8224-79c19253d2da",
+     "https://www.discogs.com/master/228641"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1956,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c4d7c9e0-3ac8-3f29-8224-79c19253d2da/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 333,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=333，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1954 年 3 月 6 日，Miles 第一次走進 Van Gelder 在 Hackensack 的客廳。那天的四重奏由 Horace Silver 與 Art Blakey 撐著，六軌出自那場。另外五軌回到 1952 與 1953 年 WOR 的六重奏，〈Donna〉來自 Jackie McLean 那組。十一軌的母帶先前已由三張 10 吋發行過，1501 與 1502 把主母帶與替代母帶對半剪開分裝。本張是 1956 年的 12 吋，收 11 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c4d7c9e0-3ac8-3f29-8224-79c19253d2da&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=7aaa93b0-c370-4dae-98e3-d5be559a7167&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=29393845-34a2-40a6-9c8c-6647c83e9c1d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-02-04.pdf",
+     "https://itunes.apple.com/lookup?id=1443091489&entity=song&limit=200&country=us",
+     "https://api.discogs.com/database/search?catno=BLP%201502",
+     "https://musicbrainz.org/release-group/c4d7c9e0-3ac8-3f29-8224-79c19253d2da",
+     "https://www.discogs.com/master/228641"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fats Navarro",
+   "album": "The Fabulous Fats Navarro, Vol.2",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 68658859-3d36-40e1-81de-c537bd4cc321。回問 release-group 端點（inc=artist-credits+releases）：title「The Fabulous Fats Navarro, Vol.2」、artist-credit「Fats Navarro」（Person）、first-release-date 1956、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 3 個 release。release 端點（inc=media+labels+artist-credits）：f752dcb9（1956 US Official 12\" Vinyl 11 軌，label Blue Note、**catno null**）、d962edab（1989 US CD 12 軌 CDP 7 81532 2，barcode 077778153221）、5c1b9a9b（2015-07-01 JP CD 11 軌 UCCQ-9181）。原盤曲目（release/f752dcb9?inc=recordings）：Lady Bird (Alternate Master) [2:53]／Lady Bird [2:52]／Jahbero (Alternate Master) [3:03]／Jahbero [2:56]／Symphonette (Alternate Master) [3:07]／Symphonette [3:09]／Double Talk (Alternate Master) [5:22]／Bouncing with Bud [3:07]／Dance of the Infidels (Alternate Master) [2:52]／The Skunk (Alternate Master) [2:59]／Boperation [3:07]。對照組：c135 的 BLP 5004（MB 5bfd62fb，7 軌）與 c136 的 BLP 1531（MB 0d37e500，11 軌）曲目已逐軌比對。年份證據：Billboard 1957-07-01 新片評介（評分 76，目錄號誤植為 1531）；Discogs master 404205 的美國原壓 3367715／16608174／21970591 皆 1957；jazzdisco `jazzdisco-bn-1500.txt` 第 681 行「BLP 1532 The Fabulous Fats Navarro Volume 2 1957」。",
+    "rgMbid": "68658859-3d36-40e1-81de-c537bd4cc321",
+    "exceptionReason": "BLP 1532 是 Blue Note 1500 系列的正規盤，1957 年廠牌把 Fats Navarro 1947–49 年的 78 轉母帶（含大量從未發行的替代版）重製成 12 吋第二集，Billboard 1957-07-01 以新片評介處理，寫明內容是「從 Blue Note 檔案裡挑出的 Navarro 演奏，正式版先前以單片與 LP 5004、1503 發行過，另加從未發行的替代版」。MB 因為它由 78 轉重組而標 Compilation，但它是廠牌自己的 1500 系列發行，不是第三方精選。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/68658859-3d36-40e1-81de-c537bd4cc321",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-07-01.pdf"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1957,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/68658859-3d36-40e1-81de-c537bd4cc321/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻）；obscurity=5、listeners=10，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一軌裡有七軌盤面標著 alternate，聽的是同一天的兩次選擇。1948 年 9 月 Tadd Dameron 那組留下〈Jahbero〉〈Symphonette〉各兩個版本。同年 10 月換成 Howard McGhee 領班的六重奏，1949 年 8 月則是 Bud Powell 的五重奏。那幾首的母帶先前已由 BLP 5004 與 1503 等舊盤發行過，只有〈Jahbero〉〈Symphonette〉的正替四軌是這張才有。1957 年以 BLP 1532 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=68658859-3d36-40e1-81de-c537bd4cc321&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-07-01.pdf",
+     "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=34887975-3564-3094-831f-2476fe3b64e9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1444089312&entity=song&limit=200&country=us",
+     "https://api.discogs.com/database/search?catno=BLP%201532",
+     "https://musicbrainz.org/release-group/68658859-3d36-40e1-81de-c537bd4cc321",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-07-01.pdf"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/59/9d/c5/599dc5c4-8462-2f50-87ba-4887dae5c2ca/mzaf_371672242047797173.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1444089312",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stanley Turrentine",
+   "album": "The Look of Love",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7b3b6443-4e46-4735-ae28-25866f93eed4。回問 release-group 端點（inc=artist-credits+releases）：title「The Look of Love」、artist-credit「Stanley Turrentine」（Person）、first-release-date 1968、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：79bf6222（1968 US Official 12\" Vinyl 10 軌 BST 84286，無 barcode）、6e97baa4（2014-01-22 JP Official SHM-CD 10 軌 TYCJ-81059，barcode 4988005803221）。原盤曲目（release/79bf6222?inc=recordings）：The Look of Love [4:27]／Here, There, and Everywhere [3:27]／A Beautiful Friendship [3:23]／Blues for Stan [6:03]／This Guy's in Love With You [2:34]／MacArthur Park [4:39]／I'm Always Drunk in San Francisco [2:26]／Emily [3:14]／Cabin in the Sky [3:45]／Smile [4:07]。紙本：Billboard 1968-07-27 新片列表＋四星爵士評介；Cash Box 1968-08-03 新片評介（「Utilizing a string background for the first time... tackles 10 strong tunes」）；Billboard 爵士暢銷 LP 榜 1968-09-07 至 1968-11-16 連續在榜。",
+    "rgMbid": "7b3b6443-4e46-4735-ae28-25866f93eed4",
+    "exceptionReason": "BST 84286 是 Stanley Turrentine 1968 年的正規錄音室專輯，不是精選：Cash Box 1968-08-03 的新片評介寫明「這是他第一次用弦樂編制，與一支強力班底一起處理十首曲子」，Billboard 1968-07-27 把它列進當週新片並給四星爵士評介，之後從 1968-09-07 起連續十週進 Billboard 的爵士暢銷 LP 榜。MB 的 Compilation 標記是純粹的建檔錯誤（第 613 條反例）。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/7b3b6443-4e46-4735-ae28-25866f93eed4",
+     "https://worldradiohistory.com/Archive-All-Music/Archive-Cashbox/60s/1968/CB-1968-08-03.pdf"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7b3b6443-4e46-4735-ae28-25866f93eed4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 461,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=461，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三場錄音全部事後套上十四件弦樂，編曲分給了兩個人。三場錄於 1968 年 4 到 5 月的 Van Gelder，鋼琴每場換人，依序是 Hank Jones、Duke Pearson 與 Roland Hanna。〈Blues for Stan〉〈Smile〉的編曲出自 Thad Jones，其餘八軌是 Pearson。〈The Look of Love〉是當年的流行曲，六分鐘的〈Blues for Stan〉是唯一放開的自家藍調。1968 年以 BST 84286 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7b3b6443-4e46-4735-ae28-25866f93eed4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/stanley-turrentine/discography/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1968/Billboard%201968-07-27.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1968/Billboard%201968-09-07.pdf",
+     "https://itunes.apple.com/lookup?id=1435548295&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/release-group/7b3b6443-4e46-4735-ae28-25866f93eed4",
+     "https://worldradiohistory.com/Archive-All-Music/Archive-Cashbox/60s/1968/CB-1968-08-03.pdf"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/77/87/78/778778a1-4d06-769d-ccbb-c179c06edc4e/mzaf_15885107331868436718.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1435548295",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "James Moody / George Wallington",
+   "album": "The Beginning and End of Bop",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 27ecfe6e-6b41-4799-b0a2-efdd6c33d8c8。回問 release-group 端點（inc=artist-credits+releases）：title「The Beginning and End of Bop」、**artist-credit「James Moody」(cb8c8b87, Person, US, 「jazz saxophonist」) ＋ joinphrase「 / 」＋「George Wallington」(25d69cb5, Person, US)**、first-release-date 1969、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：8c874a13（1969 US Official 12\" Vinyl 10 軌，Blue Note B 6503，無 barcode）。曲目（release/8c874a13?inc=recordings，軌層 credit 已標）：Oh Henry [2:30]／Tropicana [3:03]／The Fuller Bop Man [2:57]／Cu-Ba [2:38]／Moodamorphosis [3:00]／Moody's All Frantic [2:35]（以上 credit `James Moody and His Modernists`）／Festival [4:02]／Bumpkins [3:52]／Frankie and Johnnie [4:08]／Baby Grand [4:04]（以上 credit `George Wallington And His Band`）。對照組：c135 的 BLP 5006（MB 056ef42f，8 軌：Workshop／Tin Tin Deo／Oh Henry／Mood's All Frantic／Tropicana／The Fuller Bop Man／Cu-Ba／Moodamorphosis）已逐軌比對。紙本：Billboard 1969-04-05（企劃報導＋新片列表＋四星爵士評介）。",
+    "rgMbid": "27ecfe6e-6b41-4799-b0a2-efdd6c33d8c8",
+    "exceptionReason": "B-6503 是 Blue Note 1969 年 Jazz Classics 6500 系列的正式發行，不是第三方精選：Billboard 1969-04-05 有一則廠牌自述的企劃報導，把這一整批新編的盤逐張列出（DeParis Dixie、Original Blue Note Jazz Vol. 1、The Funky Piano of Art Hodes、The Beginning and End of Bop、Celestial Express），同期並以四星爵士評介處理本張、又列進當週新片。MB 因它由 78 轉／10 吋素材重編而標 Compilation，但這個目錄號本身是廠牌自己排的正規系列。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/27ecfe6e-6b41-4799-b0a2-efdd6c33d8c8",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-04-05.pdf"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/iimNA7lJaeudVrEg95coWD1CTjBbFi9cZADX6otJHR4/rs:fit/g:sm/q:90/h:225/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDAw/NzgtMTI4MTU1MjM0/MS5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "2040078"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 0,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=0，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名說的是字面意思：A 面 1948 年，B 面 1954 年，中間隔了六年。A 面六軌是 James Moody 1948 年 10 月的大編制 bebop，編曲是 Gil Fuller。B 面四軌換成 George Wallington 1954 年 5 月的七重奏，Quincy Jones 編曲。十軌 1969 年排進五張一套的 jazz classics 系列；A 面的母帶早由 BLP 5006 發行過，系列說的從未發行過的母帶指的是 B 面那四軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=27ecfe6e-6b41-4799-b0a2-efdd6c33d8c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-04-05.pdf",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1001-2001-6500-9000-89900-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=056ef42f-f8f3-4d59-84a3-33baf799a808&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/search?term=The%20Beginning%20and%20End%20of%20Bop&country=us&media=music&entity=album&limit=25",
+     "https://api.discogs.com/releases/2040078",
+     "https://musicbrainz.org/release-group/27ecfe6e-6b41-4799-b0a2-efdd6c33d8c8",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-04-05.pdf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Edmond Hall / Art Hodes",
+   "album": "Original Blue Note Jazz, Volume 1",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 852fa255-ec45-44e3-98ce-10b35dfc98e0。回問 release-group 端點（inc=artist-credits+releases）：title「Original Blue Note Jazz, Volume 1」、**artist-credit 四實體：`Edmond Hall`(d0025855 Person US「American jazz clarinetist, bandleader」) + 「 / 」+ `Art Hodes`(913e5c9f Person US) + 「, 」+ `Edmond Hall's Blue Note Jazzmen`(79debc6c Group, 名字用 U+2019) + 「 / 」+ `Art Hodes's Blue Note Jazzmen`(65ed2531, type null)**、first-release-date 1969、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：43dbb996（1969 US Official 12\" Vinyl 10 軌，Blue Note B-6504，無 barcode）。曲目（release/43dbb996?inc=recordings）：High Society [4:00]／High Society [4:00]／Blues at Blue Note [4:12]／Night Shift Blues [4:10]／Royal Garden Blues [4:08]（軌層 credit `Edmond Hall's Blue Note Jazzmen`）／Sweet Georgia Brown [4:05]／Squeeze Me [3:52]／Sugar Foot Stomp [4:10]／Bugle Call Rag [3:26]／Bugle Call Rag [3:26]（軌層 credit `Art Hodes's Blue Note Jazzmen`）。對照組：c135 的 BLP 7007（MB d45acc68，6 軌：High Society／Blues at Blue Note／Ballin' the Jack／Royal Garden Blues／Night Shift Blues／Who's Sorry Now）、LP 7015（MB f65ca4cc，8 軌）、BLP 5026（MB 99c53a01，6 軌）皆已逐軌比對。紙本：Billboard 1969-04-05（企劃報導＋新片列表＋四星爵士評介）。",
+    "rgMbid": "852fa255-ec45-44e3-98ce-10b35dfc98e0",
+    "exceptionReason": "B-6504 是 Blue Note 1969 年 Jazz Classics 6500 系列的正式發行：Billboard 1969-04-05 的廠牌企劃報導把它與同批五張逐張列名，同期並列進當週新片、給四星爵士評介（「EDMOND HALL/ART HODES- Original Blue Note Jazz, Vol. 1, Blue Note B 6504 (M)」）。MB 因它由 1940 年代 78 轉素材重編而標 Compilation，但這個目錄號是廠牌自己排的正規系列，不是第三方精選。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/852fa255-ec45-44e3-98ce-10b35dfc98e0",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-04-05.pdf"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/DCEW5tuTgHqNsczgxR1CW9nGGz_maHxZcKts7pJNBA0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1OTk2/ODMtMTMzNjg3NDE1/MS00NjEzLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "3599683"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A 面那場的鋼琴椅上坐著 James P. Johnson——Fats Waller 的老師。A 面是 1943 年 11 月 29 日 Edmond Hall 的班底，B 面是 1944 年 6 月 1 日 Art Hodes 那組，走快板迪西蘭，四軌盤面標著 alternate。十軌 1969 年排進五張一套的 jazz classics 系列；A 面的母帶早由 BLP 7007 發行過，這張才有的是 B 面整場與〈High Society〉的第二個 take。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=852fa255-ec45-44e3-98ce-10b35dfc98e0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1001-2001-6500-9000-89900-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-04-05.pdf",
+     "https://musicbrainz.org/ws/2/release?release-group=d45acc68-05da-401f-9522-386c3e936828&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=99c53a01-4bc4-4c86-a693-84ae85cba8a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/search?term=Original%20Blue%20Note%20Jazz%20Volume%201&country=us&media=music&entity=album&limit=25",
+     "https://api.discogs.com/releases/3599683",
+     "https://musicbrainz.org/release-group/852fa255-ec45-44e3-98ce-10b35dfc98e0",
+     "https://worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-04-05.pdf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dexter Gordon",
+   "album": "The Other Side of Round Midnight",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 01b21355-f35f-3325-96d0-ae6f4030d682。回問 release-group 端點（inc=artist-credits+releases）：title「The Other Side of Round Midnight」、artist-credit「Dexter Gordon」（Person）、first-release-date 1986、primary-type Album、**secondary-types [\"Soundtrack\"]**、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：02016f5d（1986 US Official 12\" Vinyl 9 軌，Blue Note BT 85135，barcode 077778513513）、7437d8af（1987-04-01 US Official CD 9 軌，Blue Note CDP 7 46397 2，barcode 077774639729）。原盤曲目（release/02016f5d?inc=recordings）：Round Midnight [6:28]／Berangere's Nightmare #2 [4:35]／Call Sheet Blues [6:05]／What Is This Thing Called Love [3:35]／Tivoli [4:10]／Society Red [5:30]／As Time Goes By [4:15]／It's Only a Paper Moon [7:43]／Round Midnight [7:46]。",
+    "rgMbid": "01b21355-f35f-3325-96d0-ae6f4030d682",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/01b21355-f35f-3325-96d0-ae6f4030d682/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3156,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "巴黎兩間錄音室替電影錄配樂，錄剩下的九軌成了這張《另一面》。錄音是 1985 年 7 到 8 月替 Tavernier 做的，九軌的編制各不相同：〈Society Red〉是 Gordon 對上 Hubbard 的小號，這首曲子他 1961 年錄過一次；〈Call Sheet Blues〉換 Wayne Shorter 上陣；最後兩軌錄於 1986 年 2 月，由 Hancock 與 Bobby McFerrin 完成。九軌裡 Gordon 只出現在四軌。1986 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=01b21355-f35f-3325-96d0-ae6f4030d682&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-85100-series/",
+     "https://musicbrainz.org/ws/2/release?release-group=450234e5-0878-31a3-a083-97a75837cbc4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/database/search?catno=BT%2085135",
+     "https://itunes.apple.com/lookup?id=723722495&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/release-group/01b21355-f35f-3325-96d0-ae6f4030d682"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e3/4f/b3/e34fb359-a834-3f37-5fd8-6f66b720ca82/mzaf_7665370223023084343.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723722495",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jimmy Smith",
+   "album": "Cherokee",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 515f87c1-26de-4d79-ba11-c907baa01be4。回問 release-group 端點（inc=artist-credits+releases）：title「Cherokee」、artist-credit「Jimmy Smith」（Person）、**first-release-date 1996-11-27**、primary-type Album、**secondary-types [\"Compilation\"]**、轄下 1 個 release。release 端點（inc=media+labels+artist-credits）：dee0ec63（1996-11-27 JP Official CD 7 軌，Blue Note TOCJ-1612，barcode 4988006723276）。曲目（release/dee0ec63?inc=recordings）：What Is This Thing Called Love? [7:04]／I'm in the Mood for Love [6:25]／Thing's Ain't What They Used to Be [5:50]／On the Sunny Side of the Street [5:13]／Laura [5:41]／Cherokee [5:00]／Somebody Loves Me [5:43]。對照組（本層實掃）：LT-992《Confirmation》(MB 901ff61d, release 1ac06a11 1979：What Is This Thing Called Love [15:13]／Confirmation [10:31]／Cherokee [20:20])、LT-1092《On the Sunny Side》(MB 7e8d1e5a, release 188761c0 1981：On the Sunny Side of the Street [5:45] 等 8 軌)、TOCJ-1615《Lonesome Road》(MB 39e4113b, 8 軌) 皆已逐軌比對。",
+    "rgMbid": "515f87c1-26de-4d79-ba11-c907baa01be4",
+    "exceptionReason": "TOCJ-1612 是 1996 年東芝 EMI「1500 系列保留號」企劃的一張：Blue Note 當年替 Jimmy Smith 1957–58 年的未發表場次留了 1612 這個號卻沒發，1996 年才首度以這個號問世。七軌中有四軌（I'm in the Mood for Love／Things Ain't What They Used to Be／Laura／Somebody Loves Me）在此之前沒有任何發行，另三軌是與 1979／1981 年 LT 系列同曲但不同演奏。MB 標 Compilation 是因為素材跨場次，但這是廠牌自己排號的首發盤。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/515f87c1-26de-4d79-ba11-c907baa01be4",
+     "https://www.discogs.com/release/10794765"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/515f87c1-26de-4d79-ba11-c907baa01be4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 458,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=458，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1957 年錄的兩場三重奏躺了三十九年，靠一個沒啟用過的編號放出來。七軌錄於 1957 年 5 月 8 日與 7 月 3 日的 Manhattan Towers，三重奏是 Smith 的 Hammond B-3、Eddie McFadden 的吉他與一副鼓。當年只發了一半，剩下這七軌到 1996 年才首度問世，目錄號取的是 1500 系列當年保留、沒用掉的 1612。〈Cherokee〉五分鐘走中快板。唱片只在日本發行，編號 Blue Note TOCJ-1612。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=515f87c1-26de-4d79-ba11-c907baa01be4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/jimmy-smith/discography/",
+     "https://musicbrainz.org/ws/2/release?release-group=901ff61d-cf6f-406f-a05a-6f987ee40f2f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=7e8d1e5a-b093-4721-83cd-e85e0b1dc301&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/database/search?catno=TOCJ-1612",
+     "https://itunes.apple.com/lookup?id=1374684887&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/release-group/515f87c1-26de-4d79-ba11-c907baa01be4",
+     "https://www.discogs.com/release/10794765"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e0/a6/66/e0a666b7-7940-51f8-911c-2bbb075602ac/mzaf_4770734299160626425.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1374684887",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
