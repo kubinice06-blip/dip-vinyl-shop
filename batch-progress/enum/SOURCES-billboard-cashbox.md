@@ -874,3 +874,94 @@ Johnny Mandel & Bill Holman《Theme Music From "The James Dean Story"》等）�
 ——**短姓氏是別人的子字串時，一定要用全名查**（`greg osby`）。
 
 **到此合計覆蓋：Billboard 1955→1998 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。1999 年起兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-154 **a 組研究層**自抓：**Billboard 1999 年全年**）
+
+**本棒 21 筆裡有 1 筆的年份落在 1999**（`Lee Konitz —《Another Shade of Blue》`，策展層第 1262 條把它從 1997 改判 1999），
+**而此前 repo 的覆蓋是「Billboard 1955→1998 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」——1999 年沒有人掃過**
+（c-154 b 第 1301 條末句點名的那一格），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1999-ocr.txt.gz` | **1.3 MiB 壓縮 / 3.0 MiB 原文** | **1999-01-09 → 1999-12-25，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **338** | **1999-01-02（該日的 PDF 在檔案館上不存在，1999 年第一期就是 01-09）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。**
+
+⚠ ⚠ **1999 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/90s/1999/`**；
+**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`**——**與 1998 年同形、與 1997 年（主形 `Billboard-`）相反。**
+⚠ **1999 年的目錄頁抓不到**：`Archive-All-Music/Billboard/90s/1999/` 回 **403**、
+`Billboard-Magazine-1999.htm` 回 **404**——**本棒改用「週六日期逐一 HEAD 探測」補上索引**
+（1999 年的 Billboard 仍是週六；`Billboard-1999-*.pdf` 形 52 個全部 404，`BB-1999-*.pdf` 形 51 個 200）。
+**→ 給後批：索引頁抓不到時，「兩種檔名 × 全年週六」共 104 次 HEAD 就能把期別表補齊，比猜檔名可靠。**
+
+⚠ **這一份的文字層不是 OCR 圖層、是 PDF 內嵌文字**，用 `pypdf` 逐頁 `extract_text()` 取出
+（容器內 `pip install pypdf`；**`pdftotext` 不在映像裡、`cryptography` 需先 `pip install -U cffi`**）。
+**每期約 6 秒、全年 51 期含下載約 8 分鐘。**
+
+⚠ **關鍵字集（本棒配的，約四十個詞；入庫的這一份另帶幾個通用詞，命中頁 338）**：`blue note`／`blue nole`／`slue note`／`bine note`／`bkie note`／
+`capitol jazz`／`pacific jazz`／`top jazz`／`top jall`／`top jail`／`jazz albums`／`jall albums`／
+`contemporary jazz`／`contemporary jall`／`traditional jazz`／`michael cuscuna`／`bruce lundvall`／
+`toshiba emi`／`tocj`／`somethin' else`／`vital reissues`／`rvg edition`／`blue notes by`，
+另含本棒專用的 `konitz`／`lee konitz`／`another shade`／`98222`／`jazz bakery`／`brad mehldau`／
+`charlie haden`／`56543`／`57150`——**查別的 1999 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **本棒靠這份檔拿到的關鍵證據（第 1262 條的續筆）**：
+**Billboard 1999-11-13 p20 的 JAZZ 評介欄逐字：「LEE KONITZ / CHARLIE HADEN / BRAD MEHLDAU — Another Shade Of Blue
+／PRODUCERS: Lee Konitz, Charlie Haden／Blue Note 7243-4-98222／**Culled from the same Los Angeles live dates
+that yielded the '97 set "Alone Together"**」**
+——**(1) 年份 1999 成立**（評介週 1999-11、目錄號逐字對上）；
+**(2) ⚠ 它與 c-154 b 的《Alone Together》是同一批現場母帶**，
+**因此《Another Shade of Blue》盤面印的「12/21/1997」不可能對**
+（《Alone Together》1997-10-23 就發行了，錄音不可能在 1997 年 12 月）——
+**真正的錄音日是 Discogs 在《Alone Together》上注的「December 21 & 22 (1996?)」那兩晚。**
+**→ 這是「同期紙本推翻盤面日期」在本段的第一個樣本。**
+
+**到此合計覆蓋：Billboard 1955→1999 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。2000–2001 年兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-155 **b 組**策展層自抓：**Billboard 1999 年全年**）
+
+**c-155 b 組 22 筆裡有 12 筆的年份落在 1999**（Stefon Harris《Black Action Figure》、Jacky Terrasson《What It Is》、
+Chucho Valdés《Briyumba Palo Congo》、Cæcilie Norby《Queen of Bad Excuses》、Erik Truffaz《Bending New Corners》、
+James Hurt《Dark Grooves, Mystical Rhythms》、Tim Hagans《Animation / Imagination》、Stéphane Huchard《Tribal Traquenard》、
+Jean-Pierre Como《Empreinte》、Önder Focan《Tunes Sung by the Vocalists》等），
+**而同批 a 組（c-155 rulings 第 1333 條）已經點名「1999 年的缺口第一次真的擋到路」**（兩張改判到 1999 拿不到街頭日），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1999-ocr.txt.gz` | **1.3 MiB 壓縮 / 3.0 MiB 原文** | **1999-01-09 → 1999-12-25，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **338** | **1999-01-02（探測回 404，1999 年第一期就是 01-09）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- **原文 3.0 MiB 低於 8 MiB 的壓縮門檻，仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致（repo 是 Cloudflare Pages 部署來源）。
+
+⚠ **1999 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/90s/1999/`**，**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**——**與 1998 年同形。**
+
+⚠ ⚠ **索引頁現在抓不到了，抓取方法要換**：
+**`https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/` 回 `403 Forbidden`（1998 那個目錄現在也回 403）**
+——**此前幾棒用的「先抓索引頁 grep 檔名」（第 1091／1127 條）在 2026-09-18 這一天已經失效。**
+**本棒改用「逐日 HEAD 探測」：枚舉 1999 年全部 52 個週六，以 `Range: bytes=0-64` 逐一探測，52 個裡 51 個回 `206`、只有 `1999-01-02` 回 404。**
+**成本 52 次請求、幾秒鐘，而且不必解析 HTML。**
+**→ 給後批：索引頁 403 時改用這個方法；先用已知年份（1998）驗證檔名形狀，再跑目標年份。**
+
+⚠ **關鍵字集是為 c-155 b 的 22 筆量身配的**（約 100 個詞 ＋ 目錄號片段
+`21431`／`33114`／`95050`／`93155`／`93676`／`21281`／`23108`／`23211`／`59509`／`98239`／`99908`／`27544`／
+`99546`／`95104`／`95198`／`98756`／`98917`／`522123`／`5223422`／`100318`，
+另含通用詞 `blue note`／`blue nole`／`slue note`／`bine note`／`blue nate`／`top jazz`／`top jall`／`top jail`／
+`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／`traditional jazz`／`bruce lundvall`／`lundvall`／
+`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`metro blue`／`somethin' else`）
+——**查別的 1999 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **1999 年最大的一筆收穫是 `BB-1999-01-16`**：**那一期是 Billboard 給 Blue Note 六十週年的整本 TRIBUTE 特輯**，
+**單期命中 23 頁，是全年最多的一期**。內含 **p48 與 p62 的 Bruce Lundvall 兩段專訪**、**p50 的 Vital Reissues 專文**、
+**p55 的全版藝人名單**（Bob Belden／Eliane Elias／Tim Hagans／Stefon Harris／Charlie Hunter／Joe Lovano／Jason Moran／
+Greg Osby／Marcus Printup／Jacky Terrasson／Chucho Valdés……）、**p99 的第 41 屆葛萊美完整提名名單**。
+**→ 查 1999 年任何 Blue Note 藝人的背景，先翻這一期。**
+
+⚠ **1999 年 Billboard 的爵士欄仍分兩張榜**（第 879／1068 條到 1999 仍成立）：`Top Jazz Albums` 與 `TOP CONTEMPORARY JAll ALBUMS`，
+**兩張榜在 1999 年是隔週刊登**（全年只出現 39 次 `Top Jazz Albums`），**`Jazz → Jall／Jail` 的 OCR 形變到 1999 年還在**。
+
+⚠ **本棒實測的兩個查詢坑**（第 1301 條「短字串是別人的子字串」的續筆）：
+**查 `george howard` 在 1999 年命中的全是 Rykodisc 的新任總裁（同名不同行業，薩克斯手 1998-03-22 已過世）**；
+**查 `norby` 命中的是經紀人 Norby Walters。**
+
+**到此合計覆蓋：Billboard 1955→1999 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。2000–2001 年兩刊都還沒有人掃。**
