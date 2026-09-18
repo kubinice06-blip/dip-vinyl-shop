@@ -424,3 +424,51 @@ b 組確實比前兩批乾淨很多（126 條 src 全過、數字對清單三處
    **與第 1620-A 條的 Rubalcaba「他在 Blue Note 的最後一張領班盤」是同一族。**
    **→ 後批通則：「第一張／最後一張／唯一一張」這類序數宣稱，一律要有 src 才准寫，沒有就改寫成具體事實。**
    這一族在本批出現三次，**已經可以當成固定檢查項。**
+
+## 第 1620-O 條（主線）：**c-159 寫作 a 組交件——18 張 201–240，零張出界；初稿 9／18 撞破 240，中位 +22**
+
+**主線逐項覆核全過**：全 18 張正文**零串流／試聽**；**葛萊美只出現在 Byron／Anita Baker／N'Awlinz 三張**
+（Marsalis／Harris／Petrella／Monk 四張零獎項，正確）；**黑膠只出現在指定的四張**
+（Fortnight／End of the World Party／At Carnegie Hall／Saloua）；
+**Truffaz 零「長號」**；**序數宣稱（第一張／最後一張／唯一一張）零命中**；
+**Burton Yount 只出現在 `Patricia Barber|Live: A Fortnight in France` 一張**，取自該卡 `facts[2]`。
+`fix-spacing` 待補 0。
+
+⚠ **字數的形狀這次完全應驗**：**初稿撞破 240 的九張，全部是「要點名五、六個拉丁專名」那幾張**
+（N'Awlinz 四位客座＋獎項、Same Mother 六個人名、Evolution 四位作者）。
+**→ 第 1560-AJ 條那個形狀（看單張卡的專名密度，不是看批次曲風）第三次應驗，可以當成固定判準。**
+**幅度中位 +22，比 c-158 a 組的 +65 小得多——再次證明幅度本身不可繼承，只有形狀可繼承。**
+
+⚠ **`qa-batch out c159` 的唯一標記是誤報**：`票選（未具名主辦者？）` 掃到 Saloua 的
+「Victoires du jazz 的**公眾票選獎**」——**主辦機構本來就具名，而且那句是 hook 原文不可改。不必處理。**
+（另一條「總張數 23 vs 34」是當時 writer-2 還沒交完，非 a 組問題。）
+
+## 第 1620-P 條（主線，裁定權下放範圍內）：**寫作 a 組為壓字整格捨去的七處，全部維持**
+
+| 卡 | 捨去的 | 保留的 |
+| --- | --- | --- |
+| Ivey-Divey | 〈In a Silent Way〉的作者格（Zawinul＋Miles）、製作人 Hans Wendl、兩位側人的軌號 | hook（43 字元）＋獎項句 |
+| My Everything | 「貝斯七位、鼓四位」、第 10 軌重奏、第 6 軌交給 Babyface | 榜單＋獎項兩格 |
+| Live: A Fortnight in France | 三個場館名（hook 已點三座城市） | **Burton Yount 那一格** |
+| Same Mother | 2004 年 5 月錄音日、Tarus Mateen／Nasheet Waits 兩個名字 | 「他固定的 Bandwagon 三重奏」 |
+| At Carnegie Hall | Ahmed Abdul-Malik／Shadow Wilson、BET Jazz／Kim Fields 那句 | 慈善演出、美國之音、兩人處境、Mosaic 黑膠 |
+| Indigo 4 | 三位側人壓成樂器描述、〈Lazy Moon〉 | — |
+| Wake | Rantala 那句「十七年的團不能出壞唱片」（hook 已用掉「十七年」）、「共掛六週」 | 首週第 15 名 |
+
+**全部是整格捨去、全部可逆、每一張保住的都是該卡最硬的那一格。維持，不回頭補。**
+⚠ **《Wake》那一處的理由特別好**：**捨去的那句與 hook 重述同一個事實**
+——**「與 hook 重複」本身就是捨去的正當理由**，這條列為後批通則。
+
+## 第 1620-Q 條（主線，**自糾；本批主線第四處寫錯**）：**Burton Yount 是三張不是四張**
+
+寫作 a 組回報：派工詞寫「Burton Yount 一人做了本組**四張**的封面（Fortnight／Magic Hour／At Carnegie Hall／**另一張**）」
+——**a 組輸入檔全檔 grep 只有三張帶他。第四張正是第 1620-M 條我自己已經推翻掉的《Same Mother》。**
+
+**→ 我在第 1620-M 條更正了「指派落點」，卻沒有同步更正同一句裡的「四張」這個數字。**
+**這與第 1560-AB／AK 條「標題數字與自身清單對不上」是同一種錯，只是這次出在主線的裁定本身。**
+**主線自律：更正一條裁定時，同一句裡的數字也要一起重算。**
+（不影響執行——指定落點在 Fortnight，代理照辦了。）
+
+**本批主線一共寫錯四處**：第 1620-I（兩張 Dr. John 混成一張）、
+第 1620-M（Burton Yount 指派給沒有該 fact 的卡、Töykeät 的 PlayRoom）、本條（四張 vs 三張）。
+**四處全部由代理接住並駁回，零流入正文。**
