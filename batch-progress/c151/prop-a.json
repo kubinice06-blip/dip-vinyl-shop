@@ -1,0 +1,192 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Renee Rosnes Trio With String Orchestra — Without Words（盤面掛名）；Renee Rosnes Trio — Without Words（MB credit）；Without Words (Somethin' Else TOCJ-5546)",
+  "artist": "Renee Rosnes",
+  "album": "Without Words",
+  "year": 1992,
+  "label": "Blue Note CDP 0777 7 98168 2 8（US 1992 CD 9 軌；MB 3f7014e4，barcode 077779816828；Discogs 美國原壓 11731384，notes 逐字記「Recorded January 8-9, 1992 at Power Station／Mixed June 16-17, 1992 at Skyline Studios／© ℗ 1992 Somethin' Else Records, a division of Toshiba-EMI Music Ltd., under exclusive license to Capitol Records, Inc.」）；日本 Somethin' Else TOCJ-5546（Discogs 6928374 正規盤／9459394 促銷盤，皆 1992）；歐版 Somethin' Else／Blue Note 同號（Discogs 9039868）",
+  "why": "Renee Rosnes 為 Blue Note 錄的第三張領班盤，也是她唯一一張與弦樂團合作的碟：1992 年 1 月 8–9 日在紐約 Power Station 錄音，6 月 16–17 日於 Skyline 混音，九軌全是標準曲與爵士名曲（You and the Night and the Music／Bobby Hutcherson 的 Little B's Poem／Estaté／I've Got You Under My Skin／In a Sentimental Mood／Jitterbug Waltz／Dear Old Stockholm／Miles 的 Solar／Misty），鋼琴三重奏之上再疊一整個弦樂團——盤面掛名「Renee Rosnes Trio With String Orchestra」就是在講這個編制（Discogs 11731384；MB release 3f7014e4）。她同期的《For the Moment》剛拿下 1992 年 Juno 最佳爵士專輯（Billboard 1992-04-11 加拿大 Juno 得獎名單逐字印「Best jazz album: \"For The Moment\" by Renee Rosnes (Blue Note)」），這張是她在那個聲勢上做的一次室內樂式轉向。實掃池中 `Renee Rosnes` 0 張（seed 0／已上傳卡單 0／各批 prop 0，含未上傳批次），她本人與 Somethin' Else／Blue Note 1992 年這一整批（Geri Allen TOCJ-5544、Gonzalo Rubalcaba TOCJ-5545、本張 TOCJ-5546）池中皆零。",
+  "risk": "⚠ 掛名：**池中零先例**（第 307 條無從照），三個來源三種寫法——MB RG credit「Renee Rosnes Trio」（底層實體 bff6007a **Person** CA，不是群組）、Discogs 盤面「Renee Rosnes Trio With String Orchestra」、Billboard 與 Juno 名單印「Renee Rosnes」。**本層取 `Renee Rosnes`**：(a) MB 底層實體就是這個人；(b) Discogs 另一筆日本促銷盤 9459394 掛名即「Renee Rosnes」；(c) 她其餘所有領班盤都掛本名，若為這一張造 `Renee Rosnes Trio` 會在下一張 Rosnes 卡上直接生出分裂（第 876 條）。盤面兩種寫法已進 queryAlias，**可逆成本＝一個卡單欄位（第 858 條）**。⚠ **首發地**：℗ 是 Somethin' Else（東芝 EMI），美版是 Capitol 的被授權版，日本 TOCJ-5546 與美版同年；**Discogs 兩地都只記到年、沒有月日，無法判定孰先**——`year` 1992 兩邊一致，首發地寫「日／美同年」不寫死（第 817 條）。⚠ **年份證據薄**：1992–93 兩刊紙本本層已掃全（Billboard 103 期、Cash Box 101 期），**本張在兩刊零命中**——既沒進新片欄也沒上爵士榜，與同號段鄰居 98165／98167／98169／98171 每一張都有評介＋榜位形成對比。年份靠 Discogs 原壓群（美／日／歐三地 1992）＋盤面 ℗1992 ＋錄音與混音日期，**不是紙本**。⚠ 錄音 1992-01-08／09 只寫正文，不得寫成發行日。⚠ 同批關聯：**TOCJ-5544／5545／5546 是東芝 EMI 同一波 Somethin' Else 的三張**（Geri Allen《Maroons》、Gonzalo Rubalcaba《Suite 4 y 20》、本張），三張班底互不相干，正文不得互抄。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 以「Renee Rosnes Without Words」查無、換 jp 店面亦 0 筆（兩種查法皆空）；`search` 只回 2019 年 Ron Carter《Foursight - Stockholm, Vol. 1》這類側人條目。CAA：RG 層 **10 圖**，來源 release 尾碼 `0ece01a2fcf1`（即美版 3f7014e4），**是原壓不是再發** ✓。",
+  "mbNote": "釘 release-group c21ae25a-cf31-430b-b6aa-995b5886254a。回問 release-group 端點（fmt=json&inc=artist-credits+releases+tags）：title「Without Words」、artist-credit「Renee Rosnes Trio」（**bff6007a Person CA**）、first-release-date 1992、primary-type Album、secondary-types **空**、tags jazz，轄下 **1 個 release**。release 端點（inc=media+labels+recordings+artist-credits&limit=100）：3f7014e4（1992、國別欄空、Official、CD 9 軌、Blue Note CDP 0777 7 98168 2 8、barcode 077779816828、credit「Renee Rosnes Trio」）。九軌：You and the Night and the Music／Little B's Poem／Estaté／I've Got You Under My Skin／In a Sentimental Mood／Jitterbug Waltz／Dear Old Stockholm／Solar／Misty。⚠ **MB 沒有建日本 TOCJ-5546 那一版**（第 974 條「MB 沒建首發那一版」的同形；本張是「MB 只建了美版」），日本盤見 Discogs 6928374／9459394。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Nighttown (Blue Note CDP 0777 7 98689 2 6)；Don Grolnick — Nighttown (1992)；收錄於 The Complete Blue Note Recordings (1997)",
+  "artist": "Don Grolnick",
+  "album": "Nighttown",
+  "year": 1992,
+  "label": "Blue Note CDP 0777 7 98689 2 6（US 1992-10-06 CD 8 軌；MB 75fc5475，barcode 077779868926；Discogs 美國原壓 5379039）；1997 年兩張裝《The Complete Blue Note Recordings》7243 8 57197 2 1 把本張與《Weaver of Dreams》併成一套（Discogs 4849715／25198870）",
+  "why": "Don Grolnick 為 Blue Note 錄的第二張、也是最後一張領班盤（1996 年他因非何杰金氏淋巴瘤去世）：八軌裡六首是他自己寫的（Heart of Darkness／One Bird, One Stone／Nighttown／Genie／The Cost of Living／Blues for Pop），另兩首是 What Is This Thing Called Love 與 Spot That Man。編制沿用他 1990 年《Weaver of Dreams》那支雙次中音前線——Michael Brecker 與 Joe Lovano 兩把次中音、Randy Brecker 小號、Dave Holland 貝斯、Bill Stewart 鼓——Cash Box 1993-02-06 的 Sweet Basil 現場評（Aaron Steinberg 撰）逐字寫「the group is here to explore tunes from Grolnick's recent Nighttown album (Blue Note), which also featured Joe Lovano (tenor saxophone) and Stewart」。Grolnick 同時是 James Taylor 的固定製作人（Billboard 1992 年三則 James Taylor 單曲評介的 PRODUCER 欄都是他），這張是他把棚內工匠身分擱在一邊、專心寫爵士的地方。實掃池中 `Don Grolnick` **1 張**（c-149 a 的《Weaver of Dreams》1990，已進卡單未上架；seed 0／英文字串 1／漢字 0），他 1992 這張缺。",
+  "risk": "⚠ **MB 的 first-release-date 1992-01-01 不可信**：那個日期來自 382fec62 這一筆——**國別 NL、無廠牌、無 catalog-number、無 barcode、media format 是 null**，正是第 991 條列的「錯登特徵三連」。真正有實體的是 75fc5475（**1992-10-06 US CD，Blue Note CDP 0777 7 98689 2 6**），Discogs 美國原壓 5379039 亦 1992。`year` 1992 不變，**但正文不得把發行寫在 1 月**。⚠ **年份紙本零命中**：本層新掃的 Billboard 1992–93 與 Cash Box 1992–93 裡，`98689` 與 `nighttown` 都查不到新片欄或榜位（Billboard 的「Nighttown」命中是鹿特丹的同名舞廳）；**唯一的同期紙本是 Cash Box 1993-02-06 的現場評**，它只證明專輯「recent」，不證明月份。⚠ 掛名：MB credit `Don Grolnick`（497eeac9 Person US），與池中 c-149 a 的既有字串一致，**沿用不新造**（第 307 條）。⚠ **撞陳列**：與池中 c-149 a《Weaver of Dreams》(1990) 是同一支團的兩張碟，**1997 年 Blue Note 把兩張併成《The Complete Blue Note Recordings》一套**（Discogs 4849715）——**軌目零重疊**（本張八軌與《Weaver of Dreams》的曲目表逐曲比對過），兩卡並存成立，**risk 互指，正文不得把兩張寫成同一場**。⚠ 同批關聯：**Joe Lovano 在本張是側人**，而他自己的《From the Soul》(1992) 與《Universal Language》(1993) 也在本組——三場互不相干（本張 1992 棚錄、From the Soul 是 Petrucciani／Holland／Blackwell、Universal Language 是 Haden／Swallow／DeJohnette），正文不得互抄班底。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 一種查法即命中 715774806（8 軌＝原盤軌數，artistName「Don Grolnick」，**releaseDate 1992-01-01 與 MB 那筆 NL 錯登同值**，第 484 條 placeholder／錯值形）。CAA：RG 層 **3 圖**，來源 release 尾碼 `97df217a054f`。",
+  "mbNote": "釘 release-group 31125ba3-3ce4-4d4a-a81c-ff99f500569b。release-group 端點：title「Nighttown」、artist-credit「Don Grolnick」（497eeac9 Person US）、first-release-date **1992-01-01**、primary-type Album、secondary-types 空、tags jazz，轄下 **2 個 release**。release 端點：**382fec62**（1992-01-01、NL、Official、**format null**、8 軌、**無 label-info、無 catalog-number、barcode null**）、**75fc5475**（**1992-10-06、US、Official、CD 8 軌、Blue Note／CDP 0777 7 98689 2 6、barcode 077779868926**）。八軌：Heart of Darkness／What Is This Thing Called Love／One Bird, One Stone／Nighttown／Genie／Spot That Man／The Cost of Living／Blues for Pop。班底（Cash Box 1993-02-06 現場評＋Discogs 5379039 credits）：Grolnick p、Michael Brecker ts、Joe Lovano ts、Randy Brecker tp、Dave Holland b、Bill Stewart d。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Maroons (Blue Note CDP 0777 7 99493 2 8)；Maroons (Somethin' Else TOCJ-5544)；Geri Allen — Maroons (1992)",
+  "artist": "Geri Allen",
+  "album": "Maroons",
+  "year": 1992,
+  "label": "Blue Note CDP 0777 7 99493 2 8（US／CA 1992-10-20 CD 15 軌；MB a1b56363，barcode 077779949328；Discogs 原壓 1300586，notes 逐字記「Recorded at Sound On Sound, NYC on February 11-14, 1992／Mixed at Acme Recording, Mamaroneck, NY on March 5-8 & 21, 1992／Ⓒ Ⓟ 1992 Somethin'else Records, a division of Toshiba-EMI Ltd., under exclusive license to Capitol Records, Inc.」）；日本 Somethin' Else TOCJ-5544（Discogs 11515649 促銷盤 1992）；歐版同號（Discogs 10950914）",
+  "why": "Geri Allen 的 Blue Note 首張領班盤，也是她 1990 年代最被反覆提起的一張：1992 年 2 月 11–14 日錄於紐約 Sound On Sound，十五軌用兩組互相對照的四重奏——一組是 Wallace Roney 小號、Anthony Cox 貝斯、Pheeroan akLaff 鼓，另一組是 Marcus Belgrave 小號、Dwayne Dolphin 貝斯、Tani Tabbal 鼓——把底特律與紐約兩條線並置，中間再插進〈Feed the Fire〉三個獨奏段落當軸。Cash Box 1992-10-17 的 Jazz 專欄（Lee Jeske）逐字寫「Geri Allen's new Blue Note album, Maroons, will be out on October 20th, when she opens a week at the Village Vanguard」——**同期紙本把發行日講死在 1992-10-20**。專輯隨後在 Billboard TOP JAZZ ALBUMS 從 1993-01-16 以 NEW 進榜，一路待到 3 月底（99493/CAPITOL），Cash Box 爵士榜同期亦在。實掃池中 `Geri Allen` **0 張**（seed 0／已上傳卡單 0／各批 prop 0），只有 `Ralph Peterson Trio featuring Geri Allen` 一個側人字串（c-149），**她本人的領班盤一張都沒有**。",
+  "risk": "⚠ 掛名：MB credit `Geri Allen`（4d688d75 Person US，disambiguation「jazz pianist」），**池中零列**，新字串。第 307 條反查核 type／area／life-span 不看 score：MB 同頁另有 `Ralph Peterson Trio featuring Geri Allen`（池中 c-149 已收的側人形），**兩者不是同名異人、是同一個人的聯名形**，本卡走個人字串、不合併也不動 c-149 那張。⚠ 年份**不改**（1992），但依據要寫清楚：**Cash Box 1992-10-17 講死 10 月 20 日上市**＞Billboard 1993-01-16 進榜（榜位落後兩個多月是目錄盤常態）＞Discogs 美／加／日／歐原壓全 1992＞MB frd 1992（只有年）。⚠ **首發地**：℗ 是 Somethin' Else（東芝 EMI），美版是被授權版；**日本 TOCJ-5544 與美版同年**，Discogs 只記到年，孰先無法判定（第 817 條），正文不得寫「美國先出」。⚠ **軌數**：15 軌，其中〈Feed the Fire〉拆成 1／2／3 三段、〈Maroons〉是末軌；**正文不得把 15 軌講成 15 首不同的曲子**。⚠ 同批關聯：**TOCJ-5544／5545／5546 是東芝 EMI 同一波三張**（本張、Gonzalo Rubalcaba《Suite 4 y 20》、Renee Rosnes《Without Words》），三場錄音班底互不相干。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 以「Geri Allen Maroons」查無（**三種查法的第一種空**）。CAA：RG 層 **4 圖**，來源 release 尾碼 `2f1a76a3f4d5`（即美版 a1b56363），**是原壓** ✓。",
+  "mbNote": "釘 release-group abc1e925-2e11-3741-834b-81bee0a6e8c3。release-group 端點：title「Maroons」、artist-credit「Geri Allen」（4d688d75 Person US「jazz pianist」）、first-release-date 1992、primary-type Album、secondary-types 空、tags jazz／post-bop，轄下 **1 個 release**。release 端點：a1b56363（1992、US、Official、CD **15 軌**、Blue Note CDP 0777 7 99493 2 8、barcode 077779949328）。十五軌：Feed the Fire 1／No More Mr. Nice Guy／And They Partied／Number Four／A Prayer for Peace／Mad Money／Two Brothers／Feed the Fire 2／Dolphy's Dance／For John Malachi／Laila's House／Feed the Fire 3／Brooklyn Bound 'A'／Bed-Sty／Maroons。錄音 1992-02-11～14 Sound On Sound, NYC；混音 1992-03-05～08、03-21 Acme Recording（Discogs 1300586 notes）。⚠ MB 沒建日本 TOCJ-5544 與歐版。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Grace Under Pressure (Blue Note CDP 7 98167 2)；John Scofield Quartet — Grace Under Pressure；BMG 俱樂部版 D 130775",
+  "artist": "John Scofield",
+  "album": "Grace Under Pressure",
+  "year": 1992,
+  "label": "Blue Note CDP 7 98167 2（US 1992 CD 10 軌；MB 6237286b，barcode 077779816729）；同號另有 MB 5a3ea0cd（US「CDP 598167」）與 **BMG Direct 俱樂部版 D 130775**（MB 791dece8，1992-04-07）；Billboard 榜上一律印「BLUE NOTE 98167*/CAPITOL」",
+  "why": "John Scofield 轉進 Blue Note 後的第一張領班盤，也是他吉他生涯裡最常被點名的一張：Bill Frisell 第二吉他、Charlie Haden 貝斯、Joey Baron 鼓，另有 Randy Brecker、John Clark、Jim Pugh 組成的小號／法國號／長號三人管組替一半曲目上色。十軌全是 Scofield 的曲（You Bet／Grace Under Pressure／Honest I Do／Scenes From a Marriage／Twang／Pat Me／Pretty Out／Bill Me／Same Axe／Unique New York），製作是 Steve Swallow 與他本人。Billboard 1992-05-02 的 JAZZ 評介逐字寫「Guitar savant Scofield goes further out into left field with this impressive quartet date that features Bill Frisell, Charlie Haden, and Joey Baron -with a gentle horn section that adorns half t[he album]」，專輯隨即在 1992-05-09 的 TOP JAZZ ALBUMS 以 NEW 進榜，一路在榜到 8 月。實掃池中 `John Scofield` **1 張**（seed《Blue Matter》1986；英文字串 1／漢字 0／已上傳卡單 0），**他 1990 年代的 Blue Note 期一張都沒有**。",
+  "risk": "⚠ 掛名：MB credit `John Scofield`（cbfd7f01 Person US「US guitarist/composer」），**與池中 seed 同字串，沿用**（第 307 條）。⚠ **Billboard 1993-03-13 的榜上另有「JOHN SCOFIELD QUARTET BLUE NOTE 99586*/CAPITOL WHAT WE DO」**——那是下一張碟（1993），**掛名多了 Quartet**；本張同一份榜印的是「JOHN SCOFIELD」。**後批收《What We Do》時要回這一條決定字串，不要因為紙本多了 Quartet 就在池中造第二個 Scofield 形。**⚠ 年份 1992 三邊一致（Billboard 評介 1992-05-02、進榜 1992-05-09；MB frd 1992-04-07；Discogs 原壓 1992），**但 MB 的 1992-04-07 是俱樂部版 791dece8 的日期、不是 Blue Note 正規盤的日期**——正文不得把 4 月 7 日寫成發行日。⚠ **同一張碟 MB 建了三筆 release、兩個 catno 形**（`CDP 598167` 與 `CDP 7 98167 2`），前者少了空格與 7 字頭，**是 MB 的登打形變不是另一個版本**；`D 130775` 是 BMG Direct 俱樂部號（第 991 條形狀 D 的鄰居，但本張有 barcode 與正規 catno，不是錯登）。⚠ 同批關聯：本組同號段鄰居密集——98165（Joey Calderazzo《To Know One》）、**98167（本張）**、98169（Tony Williams《The Story of Neptune》）、98170（Kevin Eubanks《Turning Point》）、98171（Benny Green《Testifyin'!》），**五張是 Blue Note 1992 年春夏同一批**，正文不得互抄班底。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 一種查法命中 723906887（10 軌＝原盤軌數，artistName「John Scofield」，releaseDate **1992-01-01＝placeholder**，第 484 條）。CAA：RG 層 **2 圖**，來源 release 尾碼 `49458eea193d`。",
+  "mbNote": "釘 release-group 1330b70f-341a-35ea-b423-09f964a65f08。release-group 端點：title「Grace Under Pressure」、artist-credit「John Scofield」（cbfd7f01 Person US）、first-release-date **1992-04-07**、primary-type Album、secondary-types 空、tags jazz，轄下 **3 個 release**。release 端點：5a3ea0cd（1992 US Official CD 10 軌，Blue Note「CDP 598167」，barcode null）、6237286b（1992、國別空、Official、CD 10 軌，Blue Note CDP 7 98167 2，barcode 077779816729）、791dece8（**1992-04-07** US Official CD 10 軌，Blue Note「D 130775」＝BMG Direct 俱樂部版，barcode null）。十軌：You Bet／Grace Under Pressure／Honest I Do／Scenes From a Marriage／Twang／Pat Me／Pretty Out／Bill Me／Same Axe／Unique New York。同期紙本：Billboard 1992-05-02 p71 JAZZ 評介（製作 Steve Swallow；Scofield）、1992-05-09 p34 TOP JAZZ ALBUMS 以 NEW 進榜。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Play (Blue Note CDP 7 95477 2)；Bobby McFerrin & Chick Corea — Play (live, 1992)；BMG 俱樂部版 D105634",
+  "artist": "Bobby McFerrin & Chick Corea",
+  "album": "Play",
+  "year": 1992,
+  "label": "Blue Note CDP 7 95477 2（US 1992-01-28 CD 6 軌；MB 20f0024e，barcode 077779547722；歐版同號 MB 70e5da49；Discogs 美國原壓 2721886／歐版 13524553）；**BMG Direct 俱樂部版 D105634**（MB 8e86504b，無 barcode、無 catno 於 Blue Note 欄）",
+  "why": "Bobby McFerrin 與 Chick Corea 的人聲／鋼琴二重奏現場盤：1990 年 6 月 23 日在維吉尼亞 Wolftrap、6 月 27 日在紐約卡內基廳兩場錄音剪成六軌（Corea 的〈Spain〉、McFerrin 的〈Even From Me〉、〈Autumn Leaves〉、Ornette Coleman 的〈Blues Connotation〉、〈'Round Midnight〉、Kenny Dorham 的〈Blue Bossa〉），Discogs 美國原壓 2721886 的 notes 把兩個場地與日期逐項寫明。Billboard 1992-02-01 的 Beat 欄預告「Two more individualistic artists in contemporary jazz, Bobby McFerrin and Chick Corea, combine talents on \"Play,\" a live album due Tuesday (28) from Blue Note」，同期新片欄印「BOBBY McFERRIN & CHICK COREA Play CD Capitol/Blue Note 95477 CA 95477」，1992-02-08 的 JAZZ 評介寫「this live duo session swings artfully and intensely. Even when not scat-singing lead, McFerrin lays down basslines」，並在 1992-02-29 的 TOP JAZZ ALBUMS 以 NEW 進榜、一路在榜到 6 月。實掃池中 `Chick Corea` **7 張**（seed 5 ＋ c-143《The Song of Singing》、c-144《Circulus》；英文字串 7／漢字 0）、`Bobby McFerrin` **1 張**（c-148 b《Spontaneous Inventions》1986），**兩人的聯名盤池中零張**。",
+  "risk": "⚠ **`live: true`**（MB secondary-types **[\"Live\"]**，本組唯一一張 MB 自己標對現場的）——依第〇節收但要標。⚠ 掛名：**聯名新造 `Bobby McFerrin & Chick Corea`**，兩半都與池中既有字串逐字一致（`Bobby McFerrin` c-148 b 1 列、`Chick Corea` 7 列），MB RG credit 亦是 `&` 形、Billboard 榜單逐字印「BOBBY MCFERRIN & CHICK COREA」——四邊一致（第 307 條聯名判準，同 c-148 b 的 `McCoy Tyner & Jackie McLean` 先例）。⚠ **錄音年 1990、發行年 1992，相差兩年**——本段簡報說「錄音年在 1985 前先假設是再發」，本張錄音年在 1985 後、**不是再發**，但兩年時差要寫進 risk：1990-06 的兩場音樂會到 1992-01-28 才成盤。⚠ **Apple 的 releaseDate 1990-06-23 是 Wolftrap 那場的錄音日、不是發行日**（第 484 條第二型，本組唯二之一）。⚠ 同批／跨批關聯：**Chick Corea 在 c-143 a 已有《The Song of Singing》(1971)**，該張 MB 有兩個 RG（847dcc5e／4d88b849，第 936 條），**本張的 23a27b93 與那兩個都不同**，已逐一比對，無 rgMbid 重疊。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 一種查法命中 725790254（6 軌＝原盤軌數，artistName「Bobby McFerrin & Chick Corea」與卡上掛名逐字相同）。CAA：RG 層 **6 圖**，來源 release 尾碼 `39104946130e`。",
+  "mbNote": "釘 release-group 23a27b93-3e97-3a2b-94fb-b0ef40c7ca93。release-group 端點：title「Play」、artist-credit「Bobby McFerrin」（a996b5bd Person US）＋join「 & 」＋「Chick Corea」（8446fcca Person US「jazz pianist」）、first-release-date **1992-01-28**、primary-type Album、**secondary-types [\"Live\"]**、tags bop／jazz，轄下 **3 個 release**。release 端點：20f0024e（1992-01-28 US Official CD 6 軌，Blue Note CDP 7 95477 2，barcode 077779547722）、70e5da49（1992 XE Official CD 6 軌，同號同 barcode）、8e86504b（1992 US Official CD 6 軌，**BMG Direct Marketing, Inc./D105634 ＋ Blue Note/null**，barcode null）。六軌：Spain／Even From Me／Autumn Leaves／Blues Connotation／'Round Midnight／Blue Bossa。錄音 1990-06-23 Wolftrap, Vienna, VA ＋ 1990-06-27 Carnegie Hall, NYC（Discogs 2721886 notes）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Soliloquy (Blue Note CDP 7 96429 2)；McCoy Tyner — Soliloquy (solo piano, 1992)；BMG 俱樂部版 D 120832",
+  "artist": "McCoy Tyner",
+  "album": "Soliloquy",
+  "year": 1992,
+  "label": "Blue Note CDP 7 96429 2（US／CA 1992-02 CD 14 軌；MB cd548e95，barcode 077779642922，label-info 另掛「BLU 964292A」；Discogs 原壓 17947219，notes「℗ & © 1992 Capitol Records Inc.」）；**BMG Direct 俱樂部版 D 120832**（MB fee18e02，無 barcode）",
+  "why": "McCoy Tyner 在 Blue Note 復出期的獨奏鋼琴盤，製作是 Michael Cuscuna（Discogs 17947219 credits：Tyner 鋼琴、Cuscuna 製作、David Baker 錄音、Jon W. Poses 內頁文）。十四軌裡**四首是 John Coltrane 的曲**（Crescent 含另一個 take、Lonnie's Lament、After the Rain）、其餘是他自己的 Española／Twilight Mist／Tivoli／Tribute to Lady Day／Three Flowers／Effendi，加上 All the Things You Are、Willow Weep for Me、I Should Care 與 Bud Powell 的 Bouncin' With Bud。Billboard 1992-02-01 的新片欄印「McCOY TYNER Soliloquy CD Capitol 96429」，1992-03-07 的 JAZZ 評介逐字寫「this all-solo set is an exceptional rendering of his full-blooded style. Four tracks are devoted to the works of his late band leader John Coltrane; classics associated with Charlie Parker, Art Tatum, and Bud Powell are also essayed」，並於 1992-03-28 的 TOP JAZZ ALBUMS 以 NEW 進榜、在榜到 4 月底。實掃池中 `McCoy Tyner` **14 張**（seed 12 ＋ c-149 的《Revelations》《Things Ain't What They Used to Be》兩張已進卡單未上架；英文字串 14／漢字 0），另有 `McCoy Tyner & Jackie McLean` 1 張（c-148 b）——**他 1990 年代唯一的一張獨奏盤缺。**",
+  "risk": "⚠ 掛名：MB credit `McCoy Tyner`（22fe7b6f Person US「jazz pianist」），**與池中 14 列同字串，沿用**（第 307 條）。⚠ 年份 1992 三邊一致（Billboard 新片欄 1992-02-01＋評介 1992-03-07＋進榜 1992-03-28；MB frd **1992-02-15**；Discogs 原壓群 1992），**依據以紙本為準**；MB 的 1992-02-15 沒有第二個來源佐證，正文不得把日期寫死。⚠ **撞陳列**：本張〈Crescent〉〈Lonnie's Lament〉〈After the Rain〉三軌是 Coltrane 1964 年《Crescent》的曲目，池中若已有該碟屬**同名曲不同錄音**（本張是 1991 年的獨奏重詮），第 967 條同形，**正文絕不得把重詮的那幾軌寫成 1964 年那張專輯**。⚠ **同批內部交叉**：`McCoy Tyner` 本組只有這一張，但 **Billboard 1992-08～10 的爵士榜上另有「MCCOY TYNER BIG BAND VERVE 513 573 THE TURNING POINT」**——那是 Verve 的大樂團盤，**與本組 Kevin Eubanks 的《Turning Point》（Blue Note 98170）同名不同碟**，查紙本時極易混淆（本層已逐筆分開）。⚠ **軌目兩形要注意**：14 軌裡的〈Crescent (alternate take)〉是同一首的另一個 take，**正文不得把 14 軌講成 14 首不同的曲子**。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 第一次呼叫失敗、第二次命中 724442525（14 軌＝原盤軌數，releaseDate **1992-01-01＝placeholder**，第 484 條）——**第 589a 條再證：一次失敗不等於查無。**CAA：RG 層 **1 圖**，來源 release 尾碼 `416ed41bd604`。",
+  "mbNote": "釘 release-group 5babe8f1-997a-3f6b-876c-e466c231158a。release-group 端點：title「Soliloquy」、artist-credit「McCoy Tyner」（22fe7b6f Person US）、first-release-date **1992-02-15**、primary-type Album、secondary-types 空、tags jazz，轄下 **2 個 release**。release 端點：cd548e95（1992-02-15 US Official CD 14 軌，**Blue Note/BLU 964292A ＋ Blue Note/CDP 7 96429 2**，barcode 077779642922）、fee18e02（1992 US Official CD 14 軌，Blue Note/D 120832，barcode null＝BMG Direct 俱樂部版）。十四軌：Crescent／Española／All the Things You Are／Twilight Mist／Willow Weep for Me／Lonnie's Lament／Tivoli／Tribute to Lady Day／I Should Care／Three Flowers／Bouncin' With Bud／After the Rain／Effendi／Crescent (alternate take)。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "To Know One (Blue Note CDP 7 98165 2)；To Know One (Toshiba-EMI TOCJ-5708)；Joey Calderazzo — To Know One (1992)",
+  "artist": "Joey Calderazzo",
+  "album": "To Know One",
+  "year": 1992,
+  "label": "Blue Note CDP 7 98165 2（US 1992 CD 11 軌；MB c0dfe287，barcode 077779816521；Discogs 美國原壓 8583282）；日本 Blue Note／Toshiba-EMI TOCJ-5708（Discogs 26288909 促銷盤 1992）",
+  "why": "Joey Calderazzo 二十七歲時為 Blue Note 錄的第二張領班盤，班底是他這一代很難再湊齊的一組：Branford Marsalis 吹高音與次中音、Jerry Bergonzi 另一把次中音、Dave Holland 貝斯、**Jack DeJohnette 既打鼓又掛共同製作**（Discogs 8583282 credits）。十一軌幾乎全是他自己的曲（First Impressions／Caldo's Revenge／Song for Penelope／Field of Blues／Second Thoughts／See Saw／Splurge／To Know One／Dexter／The Code／Reprise），〈Dexter〉是寫給 Dexter Gordon 的。專輯 1992-04-25 在 Billboard TOP JAZZ ALBUMS 以 NEW 進榜（「JOEY CALDERAZZO BLUE NOTE 98165/CAPITOL TO KNOW ONE」），在榜到 6 月底；Billboard 1992-06-27 的 Capitol 五十週年整版廣告把他列在 Blue Note 陣容首排（「BOB BELDEN / JOEY CALDERAZZO / KEVIN EUBANKS / BENNY GREEN / JOE LOVANO / BOBBY McFERRIN / GREG OSBY / MICHEL PETRUCCIANI / DON PULLEN / LOU RAWLS / DIANNE REEVES / JOHN SCOFIELD / TONY WILLIAMS」）。實掃池中 `Joey Calderazzo` **0 張**（seed 0／已上傳卡單 0／各批 prop 0），**本組他有兩張（本張與 1993 年的《The Traveler》）都是新字串的第一與第二張。**",
+  "risk": "⚠ 掛名：MB credit `Joey Calderazzo`（2be2cd01 Person US），**池中零列，新字串**。第 307 條反查核 type／area 不看 score：MB 同名頁只回這一個實體，**無同名異人**；池中的 `Joe`／`AZ` 是子字串假陽性（第 611 條第四種）。⚠ 年份 1992：**Billboard 1992-04-25 以 NEW 進榜是最硬的一層**；MB frd 只有「1992」、Discogs 美日原壓皆 1992——三邊一致，**但兩刊都沒有本張的新片欄或評介**（本層逐字掃過 1992 全年），所以月份不得寫死。⚠ **日本 TOCJ-5708 MB 沒建**（第 974 條同形），Discogs 26288909 是促銷盤條目、年份 1992，**與美版孰先無法判定**（第 817 條）。⚠ **同批內部交叉三組**：(a) **Dave Holland 在本張與 Joe Lovano《From the Soul》(1992) 都在**，兩場不同（本張是四管四節奏、Lovano 那張是 Petrucciani／Holland／Blackwell 四重奏）；(b) **Jack DeJohnette 在本張是鼓手兼製作**，他自己的《Earth Walk》(Blue Note 96690, 1992) 不在本組清單上；(c) 同號段鄰居 98165／98167／98169／98170／98171 是 1992 年春夏同一批，正文不得互抄。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 一種查法命中 1512006702（11 軌＝原盤軌數，artistName「Joey Calderazzo」，**releaseDate 1991-01-01＝比發行早一年的錯值**，第 484 條第三型，本組唯一）。CAA：RG 層 **真 404**（已 `redirect: follow` 重試三次確認，第 589a 條）——**本組四張缺封面之一。**",
+  "mbNote": "釘 release-group e145d710-737b-4a8f-ba2c-5ee2e3b82d27。release-group 端點：title「To Know One」、artist-credit「Joey Calderazzo」（2be2cd01 Person US）、first-release-date 1992、primary-type Album、secondary-types 空、tags jazz，轄下 **1 個 release**。release 端點：c0dfe287（1992 US Official CD 11 軌，Blue Note CDP 7 98165 2，barcode 077779816521）。十一軌：First Impressions／Caldo's Revenge／Song for Penelope／Field of Blues／Second Thoughts／See Saw／Splurge／To Know One／Dexter／The Code／Reprise。班底（Discogs 8583282 credits）：Calderazzo p＋共同製作、Branford Marsalis ss/ts、Jerry Bergonzi ts、Dave Holland b、Jack DeJohnette d＋共同製作、Darryl Pitt 執行製作。同期紙本：Billboard 1992-04-25 p28 TOP JAZZ ALBUMS 以 NEW 進榜。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Story of Neptune (Blue Note CDP 7 98169 2)；Anthony Williams — The Story Of Neptune（Discogs 掛名）；TOCJ-5715；BMG 俱樂部版 D 111039",
+  "artist": "Tony Williams",
+  "album": "The Story of Neptune",
+  "year": 1992,
+  "label": "Blue Note CDP 7 98169 2（US 1992 CD 7 軌；MB ac43aa93，barcode 077779816927；Discogs 美國原壓 10576590，notes「Recorded on November 29, 30 and December 1, 1991／Mixed on December 2 & 3, 1991／Mastered on December 19, 1991」）；日本 Blue Note／Toshiba-EMI **TOCJ-5715**（MB 9a60f438 標 1992-06-24，Discogs 14360210／14360372）；**BMG Direct 俱樂部版 D 111039**（Discogs 2092908）；2016-09-09 XW 數位 a0cd55ba（602557161212）",
+  "why": "Tony Williams 五重奏在 Blue Note 的第五張、也是最後幾張之一：Wallace Roney 小號、Billy Pierce 次中音與高音、Mulgrew Miller 鋼琴、Ira Coleman 貝斯、Williams 自己打鼓兼編曲兼製作（Discogs 10576590 credits）。七軌的核心是開頭三段式的〈Neptune〉組曲（Overture／Fear Not／Creatures of Conscience），後面接 Lennon–McCartney 的〈Blackbird〉、他自己的〈Crime Scene〉、〈Poinciana〉與 Freddie Hubbard 的〈Birdlike〉。1991 年 11 月 29 日至 12 月 1 日錄音、12 月 19 日母帶完成，1992 年 5 月上市：Billboard 1992-05-09 的 TOP JAZZ ALBUMS 以 NEW 進榜（「TONY WILLIAMS BLUE NOTE 98169/CAPITOL STORY OF NEPTUNE」），在榜到 8 月；Billboard 1992-03-28 的爵士專欄預告 Blue Note 與酒商合辦的十三城 Flavor Of Jazz 巡迴由「drummer Tony Williams and pianist Benny Green」領銜，「Williams has \"The Story Of Neptune\" and Green has \"Testifyin', Live At The Village Vanguard\"」——**兩張碟同時在本組**。實掃池中 `Tony Williams` **6 張**（seed《Life Time》《Spring》＋c-148 b《Foreign Intrigue》《Civilization》＋c-149《Angel Street》《Native Heart》，皆已進卡單未上架；英文字串 6／漢字 0）、另有 `Tony Williams Lifetime`——**1992 這張缺，且是池中最晚的一張 Williams。**",
+  "risk": "⚠ 掛名：MB credit `Tony Williams`（b6a30b58 Person US「American jazz drummer」），**與池中 6 列同字串，沿用**（第 307 條）。⚠ **Discogs 的掛名是「Anthony Williams*」（帶星號＝顯示名不同）**，**不要照抄**；第 997 條已記「`Tony Williams` 與 The Platters 主唱同名」的同名撞擊，本卡的 b6a30b58 是鼓手 ✓。⚠ 年份 1992（**錄音 1991-11／12**）：Billboard 1992-05-09 以 NEW 進榜最硬；**MB frd 1992-06-24 是日本盤 TOCJ-5715 的日期、比美國榜位晚了六週**——第 994 條(b)「MB 的 frd 取自日本盤而美國先出」的同形，**首發地是美國不是日本**（第 817 條）。⚠ 同批關聯：**Benny Green《Testifyin'!》與本張是同一波巡迴的兩張碟**（Billboard 1992-03-28），兩場錄音與班底完全不同，正文不得互抄；同號段鄰居 98165／98167／98170／98171 亦同批。⚠ **撞陳列**：〈Poinciana〉與〈Birdlike〉是標準曲與 Freddie Hubbard 的曲，池中若有同名軌屬**同名曲不同錄音**（第 967 條）。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 第一次呼叫失敗、重試後命中 1442448576（7 軌＝原盤軌數，artistName「Tony Williams」，releaseDate **1992-01-01＝placeholder**）。CAA：RG 層 **1 圖**，來源 release 尾碼 `a556e5a1d237`。",
+  "mbNote": "釘 release-group 1ee56d48-7d9d-354e-b0a7-5c21d005feb3。release-group 端點：title「The Story of Neptune」、artist-credit「Tony Williams」（b6a30b58 Person US）、first-release-date **1992-06-24**、primary-type Album、secondary-types 空、tags fusion／jazz，轄下 **3 個 release**。release 端點：9a60f438（**1992-06-24 JP** Official CD 7 軌，Blue Note/TOCJ-5715，barcode 4988006671812）、ac43aa93（**1992 US** Official CD 7 軌，Blue Note CDP 7 98169 2，barcode 077779816927）、a0cd55ba（2016-09-09 AF Official Digital Media 7 軌，Blue Note，barcode 602557161212）。七軌：Neptune: Overture／Neptune: Fear Not／Neptune: Creatures of Conscience／Blackbird／Crime Scene／Poinciana／Birdlike。班底：Wallace Roney tp、Billy Pierce ts/ss、Mulgrew Miller p、Ira Coleman b、Tony Williams d＋arr＋prod；錄音 1991-11-29／30、12-01（Discogs 10576590 notes）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Testifyin'! (Blue Note CDP 7 98171 2)；Testifyin'!: Live At The Village Vanguard（俱樂部版全題）；TOCJ-5711",
+  "artist": "The Benny Green Trio",
+  "album": "Testifyin'!: Live at the Village Vanguard",
+  "year": 1992,
+  "label": "Blue Note CDP 7 98171 2（US 1992 CD 12 軌；MB a1a0ea2b 國別標 CA，barcode 077779817122；Discogs 美國原壓 7027618 題名作「Testifyin'!」、BMG 俱樂部版 7116467 題名作「Testifyin'!: Live At The Village Vanguard」）；日本 Blue Note／Toshiba-EMI TOCJ-5711（Discogs 15015213，1992）",
+  "why": "Benny Green 二十九歲、離開 Art Blakey 與 Betty Carter 之後自組三重奏的現場盤：Christian McBride 貝斯（當時二十歲）、Carl Allen 鼓，Matt Pierson 製作、Jim Anderson 錄音（Discogs 7027618 credits），十二軌在紐約 Village Vanguard 錄成，從開場白（Introduction）到 Blakey 的〈Bu's March〉、〈Testifyin'〉、〈Down by the Riverside〉、〈The Sheik of Araby〉、〈Billy Boy〉，是 1990 年代初「年輕獅子」路線最直接的一張現場。Billboard 1992-05-23 的 JAZZ 評介逐字寫「Pianist swings as hard as humanly possible on this potent live date cut at New York's Village Vanguard. Green shows the pronounced influence of his mentors Art Blakey and Walter Davis, Jr.」，專輯 1992-06-06 在 TOP JAZZ ALBUMS 以 NEW 進榜、在榜到 10 月；Cash Box 同期爵士榜亦以 DEBUT 收（「TESTIFYIN'! (Blue Note/Capitol 98171) THE BENNY GREEN TRIO」）。實掃池中 `Benny Green` 與 `The Benny Green Trio` **皆 0 張**（seed 0／已上傳卡單 0／各批 prop 0）。",
+  "risk": "⚠ **年份的 MB 值錯得明顯**：MB frd **1992-11**，但 **Billboard 1992-05-23 就登了評介、1992-06-06 已經進榜**——紙本比 MB 早五個月。`year` 1992 不變，**但正文不得把發行寫在 11 月**；MB 那個 1992-11 只能是某一版的日期。⚠ 掛名：MB credit `The Benny Green Trio`（**4afdbd4a Group**，無 country、life-span 空），**池中零先例**。本層照 MB 群組形收，理由是 **Billboard 與 Cash Box 的榜單逐字印「THE BENNY GREEN TRIO」、Discogs 三筆條目的藝人欄亦同**——四邊一致（與 c-149 b 第 997 條 `Bobby Watson & Horizon` 同一條判準）。⚠ **但 Apple 的 artistName 只有「Benny Green」**：**後批若收 Green 的個人盤，要先回本條定字串，不要造出第二個 Green 形**（同 c-149 b 對 Watson 的提醒）。⚠ **盤名兩形**：Discogs 美國原壓與日本盤題作「Testifyin'!」、**俱樂部版與 MB 題作「Testifyin'!: Live at the Village Vanguard」**，Billboard 榜單與評介用短題。**本層維持 MB 原形（長題）**（第 963 條「維持 MB 原形」那一格），短題進 queryAlias；⚠ **這正是第 936 條第 1 例的形狀**（池中短題 vs 新卡長題，`chk-prop` 四種鍵全回 0）——**後批若另有短題的 Benny Green 卡進來，必然撞卡而工具不會亮燈。**⚠ **`live: true`**：slice 標 live、盤名自帶場地，**但 MB secondary-types 是空的**（第 397 條「兩個方向都會漏」的第二個方向，本組唯一一例）——收但要標。⚠ **MB 的國別標 CA（加拿大）**，Discogs 原壓是 US；加拿大壓片在 Capitol 體系很常見（本組 Rosnes、Geri Allen 的原壓 notes 都寫 Printed in Canada），**首發地寫美國**。⚠ 同批關聯：與 Tony Williams《The Story of Neptune》是同一波 Flavor Of Jazz 巡迴的兩張碟（Billboard 1992-03-28）。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 一種查法命中 724079802（12 軌＝原盤軌數，**collectionName 作「Testifyin'! - Benny Green TrioLive at the Village Vanguard」，是把兩形黏在一起的殘缺字串**，artistName「Benny Green」，releaseDate 1992-01-01＝placeholder）。CAA：RG 層 **2 圖**，來源 release 尾碼 `16e11fde8282`。",
+  "mbNote": "釘 release-group 9d619024-0678-3746-9589-d725b4682a58。release-group 端點：title「Testifyin'!: Live at the Village Vanguard」、artist-credit「The Benny Green Trio」（**4afdbd4a Group**）、first-release-date **1992-11**、primary-type Album、**secondary-types 空**（盤名有場地、slice 標 live）、tags jazz，轄下 **1 個 release**。release 端點：a1a0ea2b（1992-11、**CA**、Official、CD 12 軌、Blue Note CDP 7 98171 2、barcode 077779817122）。十二軌：Introduction／Don't Be 'Shamed／Humphrey／Bu's March／Beautiful Moons Ago／Testifyin'／Carl's Blues／Down by the Riverside／I Should Care／The Sheik of Araby／McThing／Billy Boy。班底（Discogs 7027618 credits）：Benny Green p、Christian McBride b、Carl Allen d；Matt Pierson 製作、Jim Anderson 錄音、David Grogan 內頁文。同期紙本：Billboard 1992-05-23 p87 JAZZ 評介、1992-06-06 p33 以 NEW 進榜；Cash Box 同期爵士榜 DEBUT。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "From the Soul (Blue Note CDP 7 98636 2)；Joe Lovano — From The Soul (1992)",
+  "artist": "Joe Lovano",
+  "album": "From the Soul",
+  "year": 1992,
+  "label": "Blue Note CDP 7 98636 2（US 1992-06-30 CD 10 軌；MB dd73235a，barcode 077779863624；歐版同號 MB d8abe5d6）；Billboard 榜上印「BLUE NOTE 98636*/CAPITOL」",
+  "why": "Joe Lovano 為 Blue Note 錄的第二張領班盤，班底是他職涯裡最被談論的一組臨時組合：Michel Petrucciani 鋼琴、Dave Holland 貝斯、**Ed Blackwell 鼓**（Ornette Coleman 的老搭檔，1992 年 10 月去世，這是他最後一批錄音之一）。十軌從次中音的終極考題〈Body and Soul〉、Coltrane 的〈Central Park West〉、Monk 的〈Work〉，到他自己偏自由的〈Evolution〉〈Modern Man〉〈Lines and Spaces〉；Billboard 1992-08-01 的 JAZZ 評介逐字寫「Reed man's latest finds him in rarefied company -pianist Michel Petrucciani, bassist Dave Holland, and drummer Ed Blackwell. Set is a mixed stylistic bag, with Lovano giving his usual gutsy all on tenor, soprano, and alto」，專輯 1992 年 9 月進 TOP JAZZ ALBUMS、在榜到 11 月。Billboard 1992-06-13 的 Capitol 五十週年特刊引 Blue Note 總裁 Bruce Lundvall 的話時，把 Lovano 與 Rubalcaba、Petrucciani、Benny Green、Dianne Reeves、Tony Williams 並列為他要長期養的名單。實掃池中 `Joe Lovano` **0 張**（seed 0／已上傳卡單 0／各批 prop 0），只有 `Joe Lovano Quartet` 一個 seed 字串——**本組他有兩張（本張與 1993 年《Universal Language》）。**",
+  "risk": "⚠ **掛名有池中先例但形狀不同**：池中 seed 有 **`Joe Lovano Quartet`**（1 列），MB credit 是 **`Joe Lovano`**（f3f7cd82 Person US「American jazz artist」），Billboard 榜單與評介逐字印「JOE LOVANO」。**本層取 `Joe Lovano`**（個人形）：MB 底層是 Person、紙本與 Discogs 一致，**池中那個 Quartet 字串是另一張碟的團名形，不是本張的掛名**——與 c-148 b 第 935 條處理 `Kenny Burrell & The Jazz Guitar Band` 的方向相同（領班＋團名自成一形，不收攏也不擴大）。**本組兩張 Lovano 一律用 `Joe Lovano`，不得一張用個人形一張用團名形。**⚠ 年份 1992：MB frd 1992-06-30、Billboard 評介 1992-08-01、進榜 1992-09-12（「JOE LOVANO BLUE NOTE 986362/CAPITOL FROM THE SOUL」，**OCR 把 98636 2 讀成 986362**，第 998 條形變 (b)）——**紙本晚於 MB 六週，屬評介滯後的常態，不改判。**⚠ **同批內部交叉四組**：(a) **Lovano 在 Don Grolnick《Nighttown》(1992) 是側人**，那是雙次中音前線、與本張的四重奏不同場；(b) **Dave Holland 在 Joey Calderazzo《To Know One》(1992) 也在**；(c) **Michel Petrucciani 不在本組清單上**，正文不得把他的個人盤寫進來；(d) 他自己 1993 年的《Universal Language》在本組，**班底完全換過（Haden／Swallow／DeJohnette）**，兩張正文不得互抄。⚠ **Ed Blackwell 1992-10 去世**，正文若提這件事要寫清楚錄音在前。⚠ 店面（第 254 條，只寫觀察）：Apple `search` us 第一次失敗、重試後命中 724648147（10 軌＝原盤軌數，artistName「Joe Lovano」，releaseDate **1992-01-01＝placeholder**）。CAA：RG 層 **2 圖**，來源 release 尾碼 `43aa1fcb8b37`。",
+  "mbNote": "釘 release-group 6e262c39-6274-37b1-9e8b-1c5b0241d826。release-group 端點：title「From the Soul」、artist-credit「Joe Lovano」（f3f7cd82 Person US）、first-release-date **1992-06-30**、primary-type Album、secondary-types 空、tags jazz／post-bop，轄下 **2 個 release**。release 端點：d8abe5d6（1992 XE Official CD 10 軌，Blue Note CDP 7 98636 2，barcode 077779863624）、dd73235a（**1992-06-30 US** Official CD 10 軌，同號同 barcode）。十軌：Evolution／Portrait of Jenny／Lines and Spaces／Body and Soul／Modern Man／Fort Worth／Central Park West／Work／Left Behind／His Dreams。班底（Billboard 1992-08-01 p99 評介）：Lovano ts/ss/as、Michel Petrucciani p、Dave Holland b、Ed Blackwell d。同期紙本：Billboard 1992-08-01 p99 JAZZ 評介、1992-09-12 p35 TOP JAZZ ALBUMS 在榜。"
+ }
+]
