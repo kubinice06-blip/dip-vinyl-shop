@@ -1126,3 +1126,31 @@ TERENCE BLANCHARD／PAT MARTINO／**CHUCHO VALDÉS**／**PAUL JACKSON, JR. *Stil
 查 `boltro`／`perko`／`huchard`／`pahud`（本碟）皆 0 頁。
 
 **到此合計覆蓋：Billboard 1955→2003 全年（2003 補齊後仍無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+---
+
+## `billboard-bn-2004-ocr.txt.gz`（c-158 b 組 2026-09-18 新抓）
+
+- **範圍**：Billboard 2004 全年，**枚舉 52 個週六逐一 `Range: bytes=0-64` 探測**，
+  **51 期回 206、只有 `BB-2004-01-03` 回 404**（與 2003 年缺 `2003-01-04`、2001 年缺 `2001-01-06` 同一個形狀：**元旦那週的第一期在 worldradiohistory 上普遍不存在**）。
+- **目錄與檔名**：`Billboard/00s/2004/`，**全年檔名單純 `BB-YYYY-MM-DD.pdf`**，與 2001／2002／2003 同形。
+  **→「枚舉當年週六＋Range 探測」現在有 1999／2001／2003／2004 四個成功樣本，可視為標準做法。**
+- **命中頁 2,524 頁**，解壓後 22 MB，**已依規定存成 `.txt.gz`（`gzip -9`，9.4 MB）**。
+- **⚠ 抽文字不是 OCR**：本棒用 **`pymupdf`（`pdftotext` 這台機器沒有）** 逐頁 `get_text()`，
+  **2004 年的 Billboard PDF 本身就帶文字層，抽出來比掃描 OCR 乾淨得多**（`Jazz → Jall／Jail` 那種形變在 2004 年幾乎不見了）。
+  **整年 51 期下載＋抽文字不到一分鐘**，成本遠低於預期——**2005 以後要抓可以比照**。
+- **關鍵字集**（約 90 個）：通用詞（`blue note` 與六種形變／`top jazz`／`jazz albums`／`contemporary jazz`／
+  `bruce lundvall`／`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`somethin' else`／`metro blue`）
+  ＋ c-158 b 的藝人名 ＋ **目錄號片段 `97683`／`97684`／`866472`／`873370`／`4738192`／`94807`／`94808`／`73344`／`73345`／`41779`／`95966`／`66225` 等**。
+  **查別的 2004 年碟要重抓或放寬關鍵字。**
+- **⚠ 2004 年最有用的四處**：
+  **`BB-2004-01-17` p29 的 VITAL REISSUES** 給出 Miles Davis《Birdland 1951》的 `RELEASE DATE: Jan. 27` 與逐字
+  「two of the three sets as bootlegs… is **officially issued for the first time**」（本棒第 1553 條的判準依據）；
+  **`BB-2004-02-21` p22 的爵士專欄**逐字給出 Bill Charlap《Somewhere》的街頭日「which **streets March 23**」
+  並報導 Greg Osby 在 Jazz Standard 錄現場盤；
+  **`BB-2004-06-05` p29** 給出 Greg Osby《Public》的 `RELEASE DATE: June 1` 與逐軌編制線索；
+  **`BB-2004-10-23` p57 的 Global Music Pulse** 逐字「**Blue Note/EMI released** the electro-jazz pio[neer's]…」寫 Marc Moulin。
+- **⚠ 查無也要記**：`marc moulin` 只有 2 頁、`trio toykeat` **全年 0 命中**、`nicola conte` 只出現在
+  **Hits of the World 義大利榜，且廠牌欄寫 `EMI` 不是 Blue Note**（Billboard 國際榜一律寫當地公司，**不可拿來推翻零售盤廠牌欄**）。
+
+**到此合計覆蓋：Billboard 1955→2004 全年（2003 由 c-158 a 抓、2004 由 c-158 b 抓，已無斷點），Cash Box 1960-11→1996-11（停刊）。**
