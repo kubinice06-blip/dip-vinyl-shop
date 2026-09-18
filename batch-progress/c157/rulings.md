@@ -1123,3 +1123,75 @@ Chucho 改指 A mi madre／Muñequita linda／Rumba guajira／Bésame mucho／So
 **全部是整格捨去、全部可逆、全部保住了該張最具體的那一格。維持，不回頭補。**
 ⚠ **其中一處判斷要記下來**：**note 寫「只寫上列這幾首」，寫作層判為「上限而非義務」，取四首。正確**
 ——正面指派句是**允許清單**，不是**必寫清單**。
+
+## 第 1503 條（主線，**第 1499 條在 b 組的續發，六處；已修檔**）：**b 組研究稿的殘留比 a 組更多，而且多出一種新形狀——`sound` 欄自帶「全批只准一張當主軸」的那兩條線**
+
+寫作層 b 組逐欄比對後回報六處，**六處全部成立，主線已改 `desc-tools/batches/research/c157-b.json`**：
+
+| # | 卡 | 欄位 | 殘留 | 處置 |
+| ---: | --- | --- | --- | --- |
+| 1 | `Aga Zaryan\|My Lullaby` | `sound`＋`keyTracks` | 〈Waltz for Debby〉（撞 apex Bill Evans 5）與〈I Put a Spell on You〉 | 兩欄同步清，keyTracks 4→2 |
+| 2 | `Denise Jannah\|The Madness Of Our Love` | `sound`＋`keyTracks` | 〈My Favorite Things〉（撞 apex Coltrane）；keyTracks 另含〈Round Midnight〉，**不在 note 允許清單** | 兩欄同步清，keyTracks 4→2 |
+| 3 | `Dianne Reeves\|The Calling` | `keyTracks` | note 只允許〈I Remember Sarah〉一首，keyTracks 仍四首 | 收成 1 首 |
+| 4 | `Karl Denson\|Dance Lesson #2` | `sound` | 逐字寫「東芝 EMI 的『Club 2001』企劃」 | **刪句**（facts 的 src 保留） |
+| 5 | `Dianne Reeves\|The Calling` | `sound` | 逐字寫「入圍第四十四屆葛萊美最佳爵士人聲專輯」 | **刪句**（facts 的 src 保留） |
+| 6 | `Denise Jannah\|The Madness Of Our Love` | `sound` | 「她是第一位在 Blue Note 發行專輯的荷蘭獨唱歌手」 | **刪句**——**六條 facts 裡沒有任何 src**，note 也沒寫 |
+
+### ⚠ 第 4、5 項是新形狀，值得單獨記
+
+**「某條線全批只准 1 張當主軸」這種反同構條款，主線只寫進派工詞與 `note`，
+但那條線的事實本來就在 `facts` 裡有 src、而且被研究層抄進了 `sound`。**
+→ **`sound` 欄等於替沒被指定的那些卡把禁令繞過去了**，而且**因為它有 src，下游代理沒有理由懷疑它**。
+寫作層 b 組是**因為派工詞明寫了指定歸屬才擋下來的**，否則兩條線都會多寫一次。
+
+**→ 主線自律（補進第 1499 條）**：**下「某條線只准 N 張」的反同構條款時，
+除了 `note`，也要把 `sound` 欄裡重述那條線的句子刪掉（`facts` 的 src 留著，供本機查核）。**
+
+**第 6 項則是第 1494(乙) 的反向**：**研究層把沒有 src 的話寫進了 `sound`**
+——`facts` 有 src 的東西漏進 notes 是一種病，**沒有 src 的東西漏進 sound 是另一種，而且更危險**：
+**`sound` 是下游會直接讀的欄位。**
+
+## 第 1504-B 條（主線，**重要；推翻我自己在第 1500 條的建議**）：**+40～+80 的上浮幅度在 b 組是過度修正——同一批兩組方向相反**
+
+**b 組照派工詞的 +40～+80 上浮、動筆目標壓在 170–185，結果：**
+- **初稿撞破 240 的：0 張。** 初稿實測 158–240、平均 195.6。
+- **反而有 5 張掉到 180 以下**：Songs From the Analog Playground **158（−22）**、
+  Flights of Fancy **159（−21）**、Black Dahlia 173、Symbols of Light 175、Top Secret 176。
+- **手算相對於實測是「高估」約 15**，**方向與同批 writer-1 的 +35 低估完全相反。**
+
+**→ 第 1500 條那句「建議本機把上浮幅度表改成本線 +40～+80」作廢。**
+這正是 `writer-base.md` 第 107–125 行早就記過的形狀（w2-118：**同一批的兩組方向相反**），
+**本線只是又證明了一次。**
+
+**真正可繼承的仍然只有那一句**（writer-base 第 101／120 行）：
+**「算完預算表要同時對照 240 與 180 兩端」**——**連「依卡片類型判斷」都不可繼承，
+「依同批另一組的實測方向判斷」同樣不可繼承。**
+⚠ **主線自律：不要再把某一組的偏差方向寫進下一組的派工詞。**
+
+**終稿 22 張：204–237，平均 219.1，兩端都沒撞到。** 補寫回區間全部是**整格加回**；
+**壓字只發生一次**（Poetry 初改後 243，捨去一個曲名格回到 223）。
+
+## 第 1505 條（主線，裁定權下放範圍內）：**寫作層 b 組的七處取捨全部維持**
+
+1. **《Poetry》收尾曲不點名**——note 刻意寫「收尾那首將近七分鐘」而不寫〈'Round Midnight〉
+   （**該曲撞 seed `Alan Broadbent —《'Round Midnight》`**）；**寫作層比照第 1502 條視為隱含迴避**，
+   正文只寫長度、改點名 note 有列的〈Confirmation〉。**判斷正確，而且這是代理自己看出來的隱含禁令。**
+2. 《The Madness Of Our Love》允許四首取三首（第 1502 條：允許清單非必寫清單）。
+3. 《Supernova》軌名採 note／盤面的〈El Manicero〉，不採 `sound` 欄的〈El manicero〉。
+4. **《Black Dahlia》第 7 軌的次中音獨奏者不具名**，寫成「一位次中音只吹第 7 軌」
+   ——**Lovano 的名字留給同組《Flights of Fancy》，避免兩卡互搶。**
+5. 《Mose Chronicles Vol.2》第 17 軌採 Discogs 歐版長形軌名（研究稿指定）。
+6. 《The Madness Of Our Love》的三片精選寫「後來」不寫「十年後」（實際 12 年）。
+7. 《Creole Moon》與《Beyond Words》全文不提任何載體。
+
+**全部可逆、全部保住該張最具體的那一格。維持。**
+
+## 第 1506 條（主線）：**寫作層兩組交件數字**
+
+| 組 | 張數 | 終稿字數 | 平均 | 初稿撞 240 | 初稿掉 180 |
+| --- | ---: | --- | ---: | ---: | ---: |
+| writer-1（a） | 18 | 210–239 | 230.3 | **9** | 0 |
+| writer-2（b） | 22 | 204–237 | 219.1 | **0** | **5** |
+
+**兩組終稿 40 張全部落在 180–240，禁寫軌名零命中，三張無串流的卡正文零處提串流或試聽。**
+`fix-spacing` 兩檔各跑一次，**待補 0**。
