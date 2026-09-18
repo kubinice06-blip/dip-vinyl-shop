@@ -800,3 +800,75 @@ Tim Hagans《Animation / Imagination》1999、Jacky Terrasson《What It Is》199
 4. **`catno` 欄本身帶廠牌前綴、而那個前綴不是 `BN`／`BST`／`CDP`／`TOCJ`／`7243` 時，一律先去 Discogs 讀廠牌欄**（第 1352 條）——**這是 (戊) 前置閘訊號的第三種形狀（前兩種是「欄空」與「緊縮形」）。**
 5. **日版 `TOCJ-` 碟的廠牌欄系列格印 `The BN Works Unissued Series` 的是 (甲)、印 `1500 Series` 的是 (乙)**（第 1354 條）——**兩形都要連 notes 一起讀。**
 6. **翻唱盤進池前先拿原盤名掃池**（第 1355 條）——**原盤在池中時 risk 要互指、上架要帶 catno，原盤不在池中時只寫觀察；本組第一次碰到原盤是王牌卡（Sly & the Family Stone）。**
+
+## 第 1367 條（主線，研究層查出）：**⚠ 本段最重要的一條通則——Discogs 的編制要讀 `tracklist` 裡每一軌的 `extraartists`**
+
+**「編制查不到／credits 零樂手欄」在本批誤判了四次，四次都是同一個原因：
+只讀了 Discogs release 層的 `extraartists`，沒讀 `tracklist` 裡每一軌自己的 `extraartists`。**
+
+| 卡 | 策展層說 | 逐軌欄實際 |
+|---|---|---|
+| Cæcilie Norby《Queen of Bad Excuses》 | 只查得到兩人 | **十二人，含 John Scofield 七軌、Billy Hart 三軌** |
+| Jacky Terrasson《What It Is》 | 鼓手與貝斯手完全查不到 | **兩位鼓手、三位貝斯手逐軌寫死** |
+| James Hurt《Dark Grooves》 | 零樂手欄 | **十四人逐軌**，第 3／7／10 軌各是一組不同編制（正好是盤面註明另外混音的那三軌） |
+| Jean-Pierre Como《Empreinte》 | credits 與 notes 皆空 | **九軌各有客座**（Como 自己的鋼琴確實查不到） |
+
+⚠ **後批一律：Discogs 的 credits 看起來空的時候，先去讀 `tracklist[].extraartists` 再說。**
+**這一條與第 1281 條（credits 空白只代表那一版的條目空白，換版本再查）是互補的兩種查法。**
+
+## 第 1368 條（主線）：**年份再改判一張，首發地再改記一張**
+
+- ⚠ **Gonzalo Rubalcaba《Antiguo》1998 US → 1997 JP**：世界首發是日本
+  **Somethin' Else `TOCJ-5588`，1997-07-24**（Discogs 26344493 **零售盤、非宣傳盤**），
+  美版盤面逐字 `Blue Note Records — Licensed To`、Apple copyright `℗ 1997 EMI Music Japan Inc.`、
+  **1997 年日本取樣盤 `PCDLZ-1131` 直接點名 `TOCJ-5588`**。
+  **策展層只核了 Discogs 上兩筆 1997 美國空殼條目就判「不採」，沒往日本找。**
+  **`year`／`label`／`queryAlias` 已回寫。**
+- **Eliane Elias《Sings Jobim》首發地 US → JP**（`TOCJ-5595`，1998-03-25，早四個月），**同年不動 `year`**，已補 `queryAlias`。
+- **國別更正 2 張**：**Stone Blue** MB 登 XE → 實為 **US**；**What It Is** MB 與列舉檔登 DE → 實為 **US**。
+
+⚠ **但第 1063 條在本批大多方向相反**：逐張跑完日版檢查，**日版早於美版只有 2 張**，其餘全部晚於美版。
+**「先查日版」仍是固定動作，但不要預設日版一定早。**
+
+## 第 1369 條（主線）：**推翻第 1330 條——「同一場錄音拆成兩張碟」在本線第二例**
+
+**Stanley Jordan《Cornucopia》(1990) 的第 1–4 軌與《Live in New York》是同一晚同一場**
+（Discogs 12966053 notes 逐字「recorded live at Manhattan Center Studios, **March 21, 1989**」）
+——**重疊的不是一個人是六個人**（Moffett／Watts／Kirkland／Fine／Lewis／Wright），
+**連工程師與製作人都相同**。四首同名曲時長差 10–30 秒＝**重剪**（本張 credits 有 `Malcolm Addey — Edited By`）。
+**兩卡必須互指、帶 catno `97810` vs `7923562`。**
+（與《Stolen Moments》1990 東京那場則確為不同場，策展層那一半是對的。）
+
+**第一例是 c-153 的《Live at the "It Club" Volume 2》。**
+
+## 第 1370 條（主線）：**研究層自我更正一處——`seed_cards.json` 是「陣列的陣列」**
+
+研究層第一版掃描腳本**把 `seed_cards.json` 17,248 筆全讀成空白**（它不是物件陣列）。
+重掃 27,750 列後發現：
+- **Ronnie Laws 的翻唱原盤 `The Isley Brothers —《Harvest for the World》(1976, seed, apex 3)` 其實在池中**
+  （第一版誤判為不在），**已改成互指**；
+- **seed 另有 `Phil Woods —《Chasin' The Bird》(1998, apex 4)`**，與《The Rev and I》同掛名同年、**曲目零重疊**。
+
+⚠ **這是「失敗與正常長得一樣」的又一種：掃卡池的腳本讀錯資料形狀時，回報的是「零命中」，
+跟「真的沒有」一模一樣。** **後批掃卡池前先印一筆樣本確認形狀。**
+
+## 第 1371 條（主線）：**兩個店面的新形狀**
+
+- ⚠ **「條目在架、但零軌零預覽」**：**《Return of the Candyman》的 `724049030`**
+  ——UPC 查法命中、`trackCount` 13，**但 `entity=song` 在 us／jp／fr／gb／ca 五市場全回 0 軌、零 previewUrl**。
+  **走固定無來源狀態。**（第 1067 條的反面：這次不是錯碟，是對的碟但拿不到預覽。）
+- **撈回的五張各靠不同一招**：`Harvest for the World` **只有 UPC 查法有效**；
+  `Trio Fascination` **Apple 盤名是 `Edition I` 羅馬數字**；`HubSongs` **只有 jp 市場 lookup 回得到**。
+- ⚠ **`apple-candidates.md` 本批再次大量給錯**：Pat Martino 7 選 1 對、Lovano 4 選 1 對、
+  **Irakere 6 個全錯**、**Chucho Valdés 7 個混了 4 張碟（3 個都是 7 軌）**。
+
+## 第 1372 條（主線）：**紙本：三種字串跑滿 36 張的統計，與一處查法警告**
+
+**只有一種字串有效的 11 張**（多半是 OCR 把盤名打壞）；**三種全空 9 張**（歐洲／土耳其／古巴在地發行為主）。
+⚠ **擋下紙本誤讀 5 處**，其中 **George Howard 1998 年同榜上另有兩張 GRP 的碟**
+（`9902 MIDNIGHT MOOD`／`9885 THE VERY BEST OF…`）——**查人名必須核廠牌欄與目錄號。**
+⚠ **修正第 1360(5) 條一半**：Billboard 1999-02-20 p30 的 Russell Gunn 樂團五人裡，
+**Greg Tardy 與 Russell Gunn 兩人確實在《Dark Grooves》第 7 軌上**，另三人不在
+——**警告方向對，結論要改成「五人裡有兩個在，而且只在一軌」。**
+⚠ **`billboard-bn-2000-ocr.txt.gz` 的關鍵字集是為 c-156 配的**（OCR 把 `s` 吃掉，如 `efon arr`＝Stefon Harris）
+——**查別批要重抓關鍵字。**

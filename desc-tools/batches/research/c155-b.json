@@ -948,5 +948,164 @@
   "status": "full",
   "yearVerified": "**卡單 1999 成立，本層未改判；而且本張的後製日期精確到日，時間軸完全閉合。** (1) **盤面日期鏈**：**Discogs 美版 25768201 的 notes 逐字「Recorded … on **February 1, 1999** at Avatar Studio B」→「Tracks 3, 7 & 10 mixed on **March 5, 1999** at Kampo Studio C」→「Mastered and edited on **March 24, 1999** at Current Sounds」**——**三個日期都在 1999 年上半，發行必在其後**（策展層第 1353 條已記「notes 的錄音／混音／母帶三個日期都在 1999 年上半」，本層把它們逐字抄下）。 (2) **Discogs 原壓群**：**美版 25768201／歐版 3491533／兩筆美版宣傳盤（13936847、7508731）的 `year` 欄全是 1999**，`format` 欄除宣傳盤外乾淨。 (3) **MB first-release-date 1999**（只有年；⚠ **只建了歐版 `7076bee0`、沒建美版**，第 1364(3) 條）。 (4) **店面**：Apple `723956141` copyright 逐字 `℗ 1999 Blue Note Records`（⚠ releaseDate `1999-01-01` 是年頭回填形，不採）。 ⚠ **紙本命中的是側人提及，不是本張**（策展層第 1353／1360(5) 條已標）：**Billboard 1999-02-20 p30 那一則是 Russell Gunn 在 Atlantic 的《Ethnomusicology》的樂團介紹，James Hurt 是側人。** ⚠ **三種字串**（第 1245 條）：**目錄號 `95104` 1999／2000 兩年零命中**；**盤名 `dark grooves` 兩年零命中**；**人名必須用全名 `james hurt` 查（`hurt` 是常見詞）**，**兩年只有那一則側人提及。**",
   "notes": "**覆核策展層：rgMbid `6a7513b1`／唯一 release `7076bee0`／掛名 `James Hurt`／盤名取逗號形（MB 用 U+00B7 中點、Apple 用破折號，Discogs 四筆實體盤一致用逗號）／年份 1999／十二軌 全部成立。**｜⚠⚠⚠ **本層推翻策展層第 1358(二) 條給本張的一句：「Discogs 四筆 credits 零樂手欄，只有 notes 點名 Russell Gunn 與 Dana Murray」。** **那同樣是只讀 release 層 `extraartists` 的結果——Discogs 美版 25768201 的 `tracklist` 裡每一軌都帶 `extraartists`，十四個人的軌號全部逐字寫死。** **核心三重奏（Hurt／François Moutin／Ari Hoenig）＋ Jacques Schwarz-Bart 六軌，另有三軌整組換人（第 3、7、10 軌）。** **→ 這是本棒第三張同形的碟（前兩張是《Empreinte》與《Queen of Bad Excuses》）。給後批：判「編制查不到」之前一定要讀 `tracklist` 裡每一軌的 `extraartists`，本棒三次都是這個原因誤判。**｜⚠⚠ **本層補上策展層沒寫的錄音細節**：**一天錄完（1999-02-01，Avatar Studio B，David Baker），而且是「direct to 2-track analog tape」**；**只有第 3、7、10 三軌另外混音（1999-03-05，Kampo Studio C），而那三軌正是三組大編制的軌——逐軌編制與後製日期互相印證。**｜⚠⚠ **紙本誤讀要修正一半**（第 1360(5) 條）：**策展層說「那則若誤讀就會把五個人抄進《Dark Grooves》的編制欄」——本層核出其中的 `Greg Tardy` 與 `Russell Gunn` 兩人確實在本張的第 7 軌上（Gunn 的 notes 另註 `appears courtesy of Atlantic Records`），另三人（Bruce Williams／Rodney Jordan／Woody Williams）不在。** **→ 警告方向對，但結論要改成「五個人裡有兩個在，而且只在一軌」。**｜⚠ **作曲：notes 逐字「All compositions by James Hurt」——十二軌全自寫。**｜⚠ **載體（通則 1）**：**四筆 Discogs 條目全是 CD，沒有黑膠。**｜**撞陳列**：**`James Hurt` 全名掃過，池中零列，本張是第一張**（掃 27750 列）。 ⚠⚠ **軌名撞卡名十處（本批最密的三張之一）**：〈Jupiter〉×2（Cave In／BUMP OF CHICKEN）、〈Venus〉（Logic System）、〈Faith〉×4（The Cure／George Michael／Faith Evans／Faith Hill）、〈Sun Day〉（仙杜拉）——**全部在 seed、全部同名不同錄音，第 1049 條照收。**｜**試聽**：**串流採信 723956141**（us，12 軌逐軌相同、全部有 preview、discNumber 全 1）。｜**封面**：CAA RG 層有圖，不必找替代（⚠ **Discogs 美版 25768201 的兩張圖都是 `secondary`**——**本線第十次遇到「條目所有圖都是 secondary」，若日後要換替代來源要另找或用 Apple 的 `600x600bb`。**）"
+ },
+ {
+  "key": "desc2:Tim Hagans|Animation / Imagination",
+  "artist": "Tim Hagans",
+  "album": "Animation / Imagination",
+  "facts": [
+   {
+    "f": "release-group `367f74f8-3cb9-3768-8cec-569b94fb96dc`：**MB 的 RG title 逐字是「Animation‐Imagination」（中間是 U+2010 非 ASCII 連字號，卡單取斜線形）**、artist-credit「Tim Hagans」（`214d780e` Person）、**first-release-date `1999-01-26`**、primary-type Album、secondary-types 空，genres／tags `electronic`＋`jazz`。**轄下只有一筆 release `71583441`（`1999-01-26` US Official CD 13 軌，Blue Note／`7243 4 95198 2 4`，bc 724349519824）。** **十三軌**：The Original Drum and Bass (79s)／Animation/Imagination (333)／Slo Mo (430)／28 If (336)／Snakes Kin (263)／Far West (359)／Hud Doyle (437)／Love’s Lullaby (128)／I Heard You Were Dropped (200)／Are You Threatening Me? (351)／French Girl (379)／Trumpet Sandwich (391)／What They Don’t Tell You (About Jazz) (344)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=367f74f8-3cb9-3768-8cec-569b94fb96dc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **編制逐軌，而且策展層漏了兩個名字，其中一個是 Blue Note 的創辦人。** **Discogs 美版 571287（`7243 4 95198 2 4`）的 credits 與逐軌欄逐字**：**全張只有 `Tim Hagans — Trumpet` 一人**；**`Billy Kilson — Drums [1, 2, 6, 7, 10 to 13]`**、**`David Dyson — Electric Bass [2, 5, 7, 11, 12]`**、**`Ira Coleman — Acoustic Bass [6, 10, 13]`**、**`Bob Belden — Soprano Saxophone [7, 10, 11, 13]`**、**`Scott Kinsey — Synthesizer [2, 6 to 8, 10 to 13]`**、**`Kevin Hays — Programmed By [7, 8, 10, 13]`**、**`Kingsize — Programmed By [4, 7, 10]`**。 ⚠⚠ **策展層整份漏掉的兩筆逐軌客座**：**`Kurt Rosenwinkel — Guitar`（第 2 與第 4 軌）**與**`DJ Smash — Synthesizer, Programmed By, Mixed By`（第 3 與第 9 軌）**；⚠⚠ **還有第 6 軌〈Far West〉的 `Alfred Lion — Narrator`——Blue Note 的創辦人（1987 年過世）的聲音被取樣進這一軌。** 另 `Bob Belden — Piano [Reversed Acoustic Piano]`（第 3、9 軌）與 `Matthew Backer — Sounds`（第 5 軌）。",
+    "src": "https://api.discogs.com/releases/571287"
+   },
+   {
+    "f": "⚠ **作曲不是 Hagans 一個人的：十三軌分給六個人。** **Discogs 571287 的 credits 與逐軌欄逐字**：**`Tim Hagans — Written-By [1, 7, 8, 10, 12]`**、**`Bob Belden — Written-By [3, 4, 9, 13]`**、**`Scott Kinsey — Written-By`（第 2 軌）**、**`Wayne Cobbs — Written-By`（第 3、9 軌）**、**`Stephen Hindman — Written-By`（第 7、10 軌）**、**`Matthew Backer — Written-By`（第 5 軌）**、**`David Dyson — Written-By`（第 11 軌）**、**`Billy Kilson ＋ Ira Coleman — Written-By`（第 13 軌）**。 **→ 正文不得把本張寫成 Hagans 一人的創作；Bob Belden 在這張碟上既是製作人（credits 逐字 `Bob Belden — Producer`）、又吹高音薩克斯風、又彈「倒放的鋼琴」、又寫了四軌。**",
+    "src": "https://api.discogs.com/releases/571287"
+   },
+   {
+    "f": "**錄音與後製地點**：**companies 欄逐字 `Avatar Studios — Recorded At`、`Sony Music Studios, New York City — Recorded At`、`Sony Music Studios, New York City — Mastered At`、`EMI MFG. — Glass Mastered At`、`Capitol Records, Inc. — Phonographic Copyright (p)／Copyright (c)／Manufactured By／Trademark Owner`。** **錄音與混音也是逐軌分工**：**`Scott Noll — Recorded By [1, 3, 4, 6, 7, 9, 10, 13]`／`Chris Theis — Recorded By [2, 3, 8, 11, 12]`；`Scott Noll — Mixed By [1, 4, 5, 8 to 10, 13]`／`Chris Theis — Mixed By [6, 7, 10 to 12]`**，**母帶 `Mark Wilder`，內頁 `Bill Milkowski — Liner Notes`。** ⚠ **沒有任何條目給錄音日期**——**正文可以寫兩個錄音室，不得寫錄音日。** **notes 逐字「℗©1999 Capitol Records Inc.」。**",
+    "src": "https://api.discogs.com/releases/571287"
+   },
+   {
+    "f": "⚠⚠ **同期紙本：1999 年全年零命中，但 2000 年 1 月拿到葛萊美提名——策展層說「紙本空白」只對了一半。** **本層用 `billboard-bn-1999-ocr.txt.gz` 跑完第 1245 條三種字串**：**目錄號 `95198` 零命中、盤名 `animation` 的五則全是迪士尼動畫與 3D 動畫研討會、人名 `hagans` 一則是 1999-01-16 p55 的六十週年藝人名單**——**1999 年確實零命中。** ⚠⚠ **但 `batch-progress/enum/billboard-bn-2000-ocr.txt.gz` 裡有兩則**：**(1) Billboard 2000-01-15 第 68 頁的第 42 屆葛萊美完整提名名單，`Best contemporary jazz performance` 一欄逐字「**\"Animation /Imagination,\" Tim Hagans, Blue Note**」（同欄另有 Russell Gunn《Ethnomusicology - Volume I》、Bob James、David Sanborn、Victor Wooten）**；**(2) 2000-01-29 第 25 頁的圖表把 `Tim Hagans / Animation /Imagination / Blue Note` 與 `Dianne Reeves / Bridges / Blue Note`、`Cassandra Wilson / Traveling Miles / Blue Note` 並列。** ⚠ **那份 2000 年的 OCR 檔是另一個平行工作階段今天剛抓、尚未提交的檔，本層只讀不動。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-15.pdf"
+   },
+   {
+    "f": "⚠ **1998 年有一捲宣傳樣帶，不能拿來當本體或下界以外的證據。** **Discogs 27255363（US **1998**，`7087 6 10185 4 7`，format 欄逐字 `Cassette, Promo, Sampler, Stereo`）**——**第 1297 條：宣傳樣帶的日期只能當下界**（策展層第 1353 條已標，本層覆核成立）。 **另有 1999 年的美版宣傳 12\" 黑膠 Discogs 510521（`SPRO 10188`，format 欄逐字 `Vinyl, 12\", Promo`）**——⚠ **那是宣傳單曲、不是零售黑膠**；**零售層只有美版 571287 與歐版 6046686（同號）兩筆 CD，沒有零售黑膠（通則 1）。**",
+    "src": "https://api.discogs.com/releases/571287"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `716371844`（us）回 **13 軌、全部有 previewUrl、discNumber 全是 1**，`artistName` 逐字「**Timothy Hagans**」（⚠ **全名形，卡單取 `Tim Hagans`，變體進 `queryAlias`**），`collectionName` 逐字「Animation / Imagination」（**斜線形，與卡單一致**），軌名與 MB 逐軌相同。**releaseDate `1999-01-01T08:00:00Z`（年頭回填形，比實際街頭日 `1999-01-26` 早三週半）、copyright 逐字 `℗ 1999 Blue Note Records`。** ⚠ **第 646 條檢查**：**`716371844` 與同批 Hagans／Printup 線另三張卡（`HubSongs` 724581109／`Nocturnal Traces` 723509801／`Re-Animation Live!` 1444016626）互不相同。**",
+    "src": "https://itunes.apple.com/lookup?id=716371844&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠⚠ **撞陳列：與同批 b 組《Re-Animation Live!》六軌同名，逐軌核完班底不同。** **同名六軌**：〈Animation/Imagination〉〈Hud Doyle〉〈28 If〉〈Are You Threatening Me?〉〈Love’s Lullaby〉〈Trumpet Sandwich〉。 **班底差異逐字**：**本張有 `Ira Coleman — Acoustic Bass`、`Kevin Hays — Programmed By`、`Kurt Rosenwinkel — Guitar`、`DJ Smash`，那張沒有**；**那張有 `Scott Kinsey` 全程的合成器與 `Kingsize` 全程的唱盤，本張的 Kinsey 只在八軌、Kingsize 只在三軌而且掛的是 `Programmed By` 不是唱盤。** **→ 第 1049 條照收，兩卡 risk 互指、上架帶 catno（`95198` vs `27544`）。** ⚠ **與同批《HubSongs》《Nocturnal Traces》四卡互指**（班底與曲目零重疊）。 ⚠ **實掃 27750 列，池中 `Tim Hagans` 有一張卡（c-152 a《No Words》），本張十三軌與它逐軌零重疊。** ⚠ **軌名撞卡名零處。**",
+    "src": "https://api.discogs.com/releases/571287"
+   }
+  ],
+  "hookCandidates": [
+   "第六軌〈Far West〉裡有個旁白——那是 Blue Note 創辦人 Alfred Lion 的聲音，他 1987 年就過世了",
+   "十三軌分給六個作者：Hagans 自己寫五軌、Bob Belden 四軌，其餘分給 Scott Kinsey、Wayne Cobbs、Stephen Hindman、David Dyson 與鼓手貝斯手合寫的那一軌"
+  ],
+  "sound": "十三軌，一張把 drum’n’bass 與取樣搬進爵士小號的碟。全張都在的只有 Tim Hagans 的小號；Billy Kilson 的鼓在八軌、David Dyson 的電貝斯在五軌、Ira Coleman 的低音提琴在三軌、Bob Belden 的高音薩克斯風在四軌（他另外在第 3、9 軌彈「倒放的鋼琴」）、Scott Kinsey 的合成器在八軌、Kevin Hays 與 Kingsize 各自負責幾軌的程式編寫，Kurt Rosenwinkel 的吉他只在第 2、4 軌，DJ Smash 在第 3、9 軌。第 6 軌〈Far West〉裡用了 Blue Note 創辦人 Alfred Lion 的旁白。錄音分在 Avatar Studios 與 Sony Music Studios 兩處，錄音與混音也是兩位工程師逐軌分工，母帶 Mark Wilder，製作 Bob Belden，內頁 Bill Milkowski。",
+  "keyTracks": [
+   "Animation/Imagination",
+   "Far West",
+   "Hud Doyle",
+   "What They Don’t Tell You (About Jazz)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判；而且本層把「紙本空白」修正成「1999 年空白、2000 年有葛萊美提名」。** (1) **MB first-release-date `1999-01-26`**（唯一那筆 release `71583441` 的日期逐日相同）。 (2) **Discogs 原壓群**：**美版 571287 與歐版 6046686（同號 `7243 4 95198 2 4`）的 `year` 欄都是 1999**，**美版 notes 逐字「℗©1999 Capitol Records Inc.」**，`format` 欄乾淨。 (3) **店面**：Apple `716371844` copyright 逐字 `℗ 1999 Blue Note Records`（⚠ releaseDate `1999-01-01` 是年頭回填形，比街頭日早三週半，不採）。 (4) ⚠⚠ **本層新補的紙本**：**Billboard 2000-01-15 p68 的第 42 屆葛萊美完整提名名單，`Best contemporary jazz performance` 一欄逐字「\"Animation /Imagination,\" Tim Hagans, Blue Note」**；**2000-01-29 p25 的圖表把它與 Dianne Reeves《Bridges》、Cassandra Wilson《Traveling Miles》並列。** **→ 發行滿一年時拿到葛萊美提名，反向印證 1999 年的發行年。** ⚠ **1999 年全年三種字串確實零命中**（第 1245 條）：**目錄號 `95198` 零、盤名 `animation` 的五則全是迪士尼動畫與 3D 動畫研討會、人名 `hagans` 只有 1999-01-16 p55 的六十週年藝人名單。** ⚠ **1998 年那捲宣傳樣帶（Discogs 27255363，`7087 6 10185 4 7`，format 欄逐字 `Cassette, Promo, Sampler`）不算**（第 1297 條，策展層已標）。 ⚠ **錄音日查無，無法用時間軸交叉驗證。**",
+  "notes": "**覆核策展層：rgMbid `367f74f8`／唯一 release `71583441`／掛名 `Tim Hagans`（Apple 作 `Timothy Hagans`、Discogs ANV 作 `Hagans`，兩個變體進 `queryAlias`）／盤名取斜線形（MB 用 U+2010 會讓 `chk-prop` 亮燈，第 1357 條）／年份 1999-01-26／十三軌 全部成立。**｜⚠⚠ **編制：策展層第 1358(二) 條說本張是「本組逐軌標示最細的一張」——方向對，但漏了三筆。** **策展層抄的是 `Ira Coleman [6,10,13]`／`Billy Kilson [1,2,6,7,10-13]`／`David Dyson [2,5,7,11,12]`／`Bob Belden [7,10,11,13]`／`Kevin Hays [7,8,10,13]`／`Kingsize [4,7,10]` 六筆，本層核出還有**：**(1) `Kurt Rosenwinkel — Guitar`（第 2、4 軌）**、**(2) `DJ Smash — Synthesizer, Programmed By, Mixed By`（第 3、9 軌）**、**(3) ⚠⚠ `Alfred Lion — Narrator`（第 6 軌〈Far West〉）——Blue Note 的創辦人，1987 年過世，聲音被取樣進這一軌。** **另 `Bob Belden — Piano [Reversed Acoustic Piano]`（第 3、9 軌）與 `Matthew Backer — Sounds`（第 5 軌）。** **「全張都在的只有 Hagans 一人」這句結論成立。**｜⚠⚠ **本層補上策展層沒寫的作曲歸屬**：**十三軌分給六個作者——`Tim Hagans [1,7,8,10,12]`、`Bob Belden [3,4,9,13]`、`Scott Kinsey`（2）、`Wayne Cobbs`（3、9）、`Stephen Hindman`（7、10）、`Matthew Backer`（5）、`David Dyson`（11）、`Billy Kilson ＋ Ira Coleman`（13）。正文不得寫成 Hagans 一人的創作。**｜⚠ **錄音與混音也是逐軌分工**（`Scott Noll` 與 `Chris Theis` 各自負責幾軌），**錄音分在 `Avatar Studios` 與 `Sony Music Studios` 兩處；沒有任何條目給日期。**｜⚠ **載體（通則 1）**：**零售層只有美版與歐版兩筆 CD**；**1999 年的美版 12\" `SPRO 10188`（Discogs 510521）是宣傳單曲、1998 年的 `7087 6 10185 4 7` 是宣傳卡帶樣本——兩者都不是零售黑膠。**｜⚠⚠ **本層把策展層的「紙本空白」修正成「1999 年空白、2000 年有葛萊美提名」**（Billboard 2000-01-15 p68 與 01-29 p25）。⚠ **那份 2000 年的 OCR 檔（`batch-progress/enum/billboard-bn-2000-ocr.txt.gz`，52 期）是另一個平行工作階段今天剛抓、尚未提交的檔，本層只讀不動；派工信說的「2000 年沒人掃」已經過時。**｜**撞陳列 2 組**：(1) ⚠⚠ **與同批 b 組《Re-Animation Live!》(2000)**——**六軌同名（〈Animation/Imagination〉〈Hud Doyle〉〈28 If〉〈Are You Threatening Me?〉〈Love’s Lullaby〉〈Trumpet Sandwich〉），但班底不同：本張有 Ira Coleman／Kevin Hays／Kurt Rosenwinkel／DJ Smash，那張沒有；那張有全程的 Scott Kinsey 與打唱盤的 Kingsize，本張的 Kinsey 只在八軌、Kingsize 掛的是程式編寫。** **兩卡 risk 互指、上架帶 catno（`95198` vs `27544`）。** (2) **與同批《HubSongs》《Nocturnal Traces》四卡互指。** **池中 `Tim Hagans` 另有 c-152 a 的《No Words》，本張十三軌與它逐軌零重疊**（掃 27750 列）。 ⚠ **軌名撞卡名零處**（⚠ **但〈Animation/Imagination〉這個軌名等於同批《Re-Animation Live!》的第 2 軌，那是同一首曲的兩個錄音，不是第六種盲區**）。｜**試聽**：**串流採信 716371844**（us，13 軌逐軌相同、全部有 preview、discNumber 全 1）。⚠ **第 646 條檢查通過。**｜**封面**：⚠⚠ **CAA RG 層真 404**（連探三次全部回 404，第 589a 條已排除 5xx）。**替代來源＝Discogs 美版 `571287` 的 `images[0]`，已確認 `type` 逐字是 `primary`、尺寸 594×600、該條目共 3 圖（另兩張是 `secondary`）。研究層不下載，本機端自行取用。**"
+ },
+ {
+  "key": "desc2:Jacky Terrasson|What It Is",
+  "artist": "Jacky Terrasson",
+  "album": "What It Is",
+  "facts": [
+   {
+    "f": "release-group `6180e646-ba2d-4b09-ac54-74c5ce94f636`：title「What It Is」、artist-credit「Jacky Terrasson」（`be3142ae` Person）、**first-release-date 1999**（只有年）、primary-type Album、secondary-types 空，genres／tags `jazz`＋`post-bop`。**轄下只有一筆 release `55772a59`（1999 **DE** Official CD 9 軌，Blue Note／`7243 4 98756 2 3`，bc 724349875623）。** ⚠⚠ **國別欄錯**（第 1364(7) 條）：**Discogs 上沒有任何德國條目**，**美版 11678767 的 notes 逐字「Printed in USA」，Billboard 是美國榜與美國專欄**——**首發地實為 US。** **九軌**：Sam’s Song (447s)／What’s Wrong With You! (358)／Little Red Ribbon (320)／Better World (180)／Toot-Toot’s Tune (391)／Money (283)／Le Roi Basil (515)／Baby Plum (348)／Ravel: Bolero (395)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6180e646-ba2d-4b09-ac54-74c5ce94f636&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠⚠ **本層推翻策展層第 1358(二) 條「Discogs 六筆 credits 零樂手欄，樂手唯一來源是 notes 的四句 appears courtesy of；鼓手與貝斯手完全查不到」——逐軌 credits 欄是滿的，十一個人。** **Discogs 美版 11678767（US 1999，`Blue Note / 7243 4 98756 2 3`）的 `tracklist` 裡每一軌都帶 `extraartists`，逐字**：**`Jacky Terrasson — Piano [Acoustic]`（全部九軌，另在 4、6、8、9 軌加 `Electric Piano [Fender Rhodes]`、第 8 軌加 `Organ [Wurlitzer]`、第 9 軌加 `Shekere`）**；**⚠ 鼓手兩位**——**`Jaz Sawyer — Drums`（2、4、5、6、9）與 `Mino Cinelu — Drums`（1、3、7，另在 1、2、5、6、7、8、9 掛 `Percussion`）**；**⚠ 貝斯手三位**——**`Ugonna Okegwo — Acoustic Bass`（2、3、5、6、9）、`Fernando Saunders — Electric Bass`（1、7、9）、`Richard Bona — Electric Bass`（4、8）**；**`Adam Rogers — Guitar`（1、7）、`Michael Brecker — Tenor Saxophone`（2、8）、`Rick Centalonza — Flute／Oboe`（1、9）、`Jay Collins — Flute`（5、6）、`Gregoire Maret — Harmonica`（5、6）、`Xiomara Laugart — Lead Vocals`（4）。**",
+    "src": "https://api.discogs.com/releases/11678767"
+   },
+   {
+    "f": "**製作與工程（Discogs 11678767 的 release 層 credits 欄逐字）**：**`Mino Cinelu — Producer`**（⚠ **他同時是打擊手與三軌的鼓手**）、`Jacky Terrasson — Arranged By`、`Neil Dorfsman — Mixed By`、`Neil Dorfsman — Recorded By [1, 7, 9]`、`Rob Eaton — Recorded By [2 to 6, 8]`、**`Mino Cinelu — Recorded By [Additional Sound Effects At Birdland] [6]`**（⚠ **第 6 軌的額外音效錄自紐約 Birdland 俱樂部**）、`Leon Zervos — Mastered By`、`Jessica Novod — Art Direction, Design`、`Gordon H Jee — Creative Director`、`Barron Claiborne — Photography By`、`The Management Ark — Management`。 ⚠ **沒有任何條目給錄音日期或主錄音室**——**正文可以寫「第 6 軌的音效錄自 Birdland」，不得寫錄音日。**",
+    "src": "https://api.discogs.com/releases/11678767"
+   },
+   {
+    "f": "**逐軌作曲：七軌自寫，另兩軌一首是 Pink Floyd、一首是拉威爾。** **Discogs 11678767 逐字**：**第 1、2、3、5、7、8 軌 `Jacky Terrasson — Written-By`**；**第 4 軌〈Better World〉`Jacky Terrasson — Written-By` ＋ `Angel Arce — Written-By [Spanish Lyrics]`**（⚠ **那一軌是西班牙文歌詞，主唱 Xiomara Laugart**）；**⚠⚠ 第 6 軌〈Money〉逐字 `Roger Waters — Written-By`——那是 Pink Floyd《The Dark Side of the Moon》的曲**；**⚠ 第 9 軌〈Ravel: Bolero〉逐字 `Maurice Ravel — Written-By`。** **→ 正文不得把九軌寫成他一人的創作；〈Money〉與〈Bolero〉兩軌是本張最容易被誤讀成原創的兩首。**",
+    "src": "https://api.discogs.com/releases/11678767"
+   },
+   {
+    "f": "⚠⚠ **同期紙本：街頭日逐字給到日，而且刊物把他的名字拼錯了。** **Billboard 1999-05-15 第 42 頁的 Jazz/Blue Notes 專欄逐字寫本張「**(Blue Note, May 18)**」**（策展層第 1353 條已引）；**同期 p6 的目次欄逐字「Jazz /Blue Notes: Pianist **Jackie** Terrasson breaks his music down i…」**——⚠ **`Jackie` 是校稿／OCR 形變，不是另一種掛名**（第 1245／1356(五) 條，策展層已判，本層覆核成立，**不進 `queryAlias`**）。 ⚠ **目錄號 `98756` 在 1999／2000 兩年零命中；盤名 `what it is` 是常見詞組，命中全是一般用語。** **→ 第 1245 條三種字串只有人名那一種有效，而且要同時查 `jacky` 與 `jackie` 兩形。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-05-15.pdf"
+   },
+   {
+    "f": "⚠ **Discogs 六筆條目全是 CD，沒有黑膠（通則 1）**：**美版 11678767（`7243 4 98756 2 3`）／歐版 5100544（同號）／美版俱樂部版 6675637／美版宣傳盤 26768699 與 7435574（後者 catno 前綴 `P`、尾碼 `V`）／日版宣傳盤 11549533（`TOCJ-66056`）**。 ⚠ **日版只查得到宣傳盤、沒有零售盤**——**與同批多張「日版晚於美版」的形狀一致，第 1063 條在本張不成立。**",
+    "src": "https://api.discogs.com/releases/11678767"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `723405047`（us）回 **9 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同（Apple 第 9 軌作〈Ravel: Bolero〉）。**releaseDate `1999-01-01T08:00:00Z`——年頭回填形，比紙本給的街頭日 `May 18` 早四個半月**（策展層第 1365 條已標「差四個半月」，本層覆核成立）；**copyright 逐字 `℗ 1999 Blue Note Records`。** **→ 只有 ℗ 年可用。**",
+    "src": "https://itunes.apple.com/lookup?id=723405047&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Jacky Terrasson` 在池中有四張卡，本張九軌與四張逐軌零重疊。** **五卡 risk 互指。** ⚠ **軌名撞卡名一處**：**〈What’s Wrong With You!〉＝seed 的 `Robert Belfour —《What’s Wrong with You》`**——**同名不同曲，第 1049 條照收。** ⚠ **選輯撞陳列**：**Discogs 荷蘭 1999 年的廠牌選輯 124228（`Blue Note 7243 520910 2 7`，format 欄 `CD, Compilation`）的 notes 逐字「Track 3 taken from ‘What It Is’」，同一張選輯還抽了同批 a 組《Soundtrack to Human Motion》與《Combustication》的 remix、以及池中 Chucho Valdés《Bele Bele En La Habana》**——**那是廠牌抽樣選輯，不是母體，四張卡的收退不受影響。** ⚠ **側人撞陳列**：**`Michael Brecker`、`Richard Bona`、`Mino Cinelu` 在池中各有卡**——**側人不是撞碟。**",
+    "src": "https://api.discogs.com/releases/11678767"
+   }
+  ],
+  "hookCandidates": [
+   "第六軌〈Money〉不是他寫的，是 Pink Floyd 的——而第九軌整首是拉威爾的《波麗露》；九軌裡有兩軌來自完全不是爵士的地方",
+   "鼓手有兩個、貝斯手有三個，而且是一軌一軌換的：Richard Bona 只在第四與第八軌、Fernando Saunders 只在第一、七、九軌，第四軌還有一位唱西班牙文的女主唱"
+  ],
+  "sound": "九軌，1999 年 5 月 18 日上架。Terrasson 的鋼琴貫串全場（第 4、6、8、9 軌另加 Fender Rhodes，第 8 軌加 Wurlitzer 風琴，第 9 軌自己搖沙鈴）；鼓手兩位——Jaz Sawyer 在第 2、4、5、6、9 軌，製作人 Mino Cinelu 自己在第 1、3、7 軌打鼓、另在七軌負責打擊；貝斯手三位——Ugonna Okegwo 的低音提琴在五軌，Fernando Saunders 的電貝斯在三軌，Richard Bona 的電貝斯在第 4、8 軌。另有 Adam Rogers 的吉他、Michael Brecker 的次中音薩克斯風（第 2、8 軌）、Rick Centalonza 的長笛與雙簧管、Jay Collins 的長笛、Gregoire Maret 的口琴，第 4 軌還有 Xiomara Laugart 的西班牙文主唱。七軌由 Terrasson 作曲，第 6 軌〈Money〉是 Roger Waters 的曲，第 9 軌是拉威爾的《波麗露》。",
+  "keyTracks": [
+   "Sam’s Song",
+   "Money",
+   "Le Roi Basil",
+   "Ravel: Bolero"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判，街頭日紙本逐字給到日。** (1) **同期紙本（階序最上層）**：**Billboard 1999-05-15 p42 的 Jazz/Blue Notes 整篇專欄逐字「**(Blue Note, May 18)**」**；**同期 p6 的目次欄也指向那一篇。** (2) **MB first-release-date 1999**（只有年；唯一那筆 release `55772a59` 也只有年，⚠ **而且國別登成 `DE`——錯**）。 (3) **Discogs 原壓群**：**美版 11678767（notes 逐字「Printed in USA」）／歐版 5100544／美版俱樂部版 6675637／兩筆美版宣傳盤／日版宣傳盤 `TOCJ-66056`，六筆 `year` 欄全是 1999**，`format` 欄除宣傳盤外乾淨。 (4) **店面**：Apple `723405047` copyright 逐字 `℗ 1999 Blue Note Records`（⚠ **releaseDate `1999-01-01` 是年頭回填形，比街頭日早四個半月，不採**）。 ⚠⚠ **國別要更正**：**MB 的 `DE` 在 Discogs 上找不到任何對應（沒有德國條目），美版 notes 寫「Printed in USA」，Billboard 是美國榜與美國專欄**——**首發地實為 US**（第 1364(7) 條，策展層已標，本層覆核成立；**列舉檔的 `country: \"DE\"` 也是錯的**）。 ⚠ **紙本三種字串**（第 1245 條）：**目錄號 `98756` 1999／2000 兩年零命中**；**盤名 `what it is` 是常見詞組、命中全是一般用語**；**只有人名有效，而且要同時查 `jacky` 與 `jackie` 兩形**（⚠ **1999-05-15 p6 逐字把他拼成 `Jackie Terrasson`——校稿形變，不進 `queryAlias`**，第 1356(五) 條）。",
+  "notes": "**覆核策展層：rgMbid `6180e646`／唯一 release `55772a59`（⚠ 國別 `DE` 是錯的，首發地實為 US）／掛名 `Jacky Terrasson`／年份 1999／九軌 全部成立。**｜⚠⚠⚠ **本層推翻策展層第 1358(二) 條給本張的一句：「Discogs 六筆 credits 零樂手欄，樂手唯一來源是 notes 的四句『appears courtesy of』；鼓手與貝斯手完全查不到」。** **那是只讀 release 層 `extraartists` 的結果——Discogs 美版 11678767 的 `tracklist` 裡每一軌都帶 `extraartists`，十一個人的軌號全部逐字寫死。** **鼓手兩位（Jaz Sawyer 五軌／Mino Cinelu 三軌）、貝斯手三位（Ugonna Okegwo 五軌／Fernando Saunders 三軌／Richard Bona 兩軌）——策展層說的「完全查不到」不成立。** **→ 這是本棒第四張同形的碟（前三張是《Empreinte》《Queen of Bad Excuses》《Dark Grooves》）。給後批：判「編制查不到」之前一定要讀 `tracklist` 裡每一軌的 `extraartists`，本棒四次都是這個原因誤判。**｜⚠ **製作人 `Mino Cinelu` 同時是打擊手與三軌的鼓手**——**策展層把他列在「借將條款」那一類，實際上他是核心人物。**｜⚠⚠ **本層補上策展層沒寫的作曲歸屬**：**第 6 軌〈Money〉逐字 `Roger Waters — Written-By`（Pink Floyd 的曲）、第 9 軌〈Ravel: Bolero〉逐字 `Maurice Ravel`、第 4 軌〈Better World〉的西班牙文歌詞是 `Angel Arce`（主唱 `Xiomara Laugart`）。正文不得把九軌寫成他一人的創作。**｜⚠ **錄音日與主錄音室查無**；**唯一有地點的是第 6 軌的額外音效——credits 逐字 `Mino Cinelu — Recorded By [Additional Sound Effects At Birdland] [6]`。**｜⚠ **載體（通則 1）**：**六筆 Discogs 條目全是 CD，沒有黑膠；日版只有宣傳盤、沒有零售盤。**｜**撞陳列**：**池中 `Jacky Terrasson` 四張卡，本張九軌與四張逐軌零重疊**（掃 27750 列），**五卡 risk 互指。** ⚠ **軌名撞卡名一處**：〈What’s Wrong With You!〉＝seed 的 `Robert Belfour`，**同名不同曲、第 1049 條照收。** ⚠ **廠牌選輯 `7243 520910 2 7`（Discogs 124228）抽了本張的〈Money〉，同時也抽了同批 a 組兩張與池中一張**——**那是選輯不是母體。**｜**試聽**：**串流採信 723405047**（us，9 軌逐軌相同、全部有 preview、discNumber 全 1）。｜**封面**：CAA RG 層有圖，不必找替代（⚠ Discogs 美版 11678767 的 `images[0]` 是 `primary` 598×600，可當備案）。"
+ },
+ {
+  "key": "desc2:Chucho Valdés|Briyumba Palo Congo",
+  "artist": "Chucho Valdés",
+  "album": "Briyumba Palo Congo",
+  "facts": [
+   {
+    "f": "release-group `65a3fb7f-fcf2-3179-bee8-ebee657a6510`：title「Briyumba Palo Congo」、artist-credit「Chucho Valdés」（`6999d571` Person，disambiguation「Cuban pianist and composer」）、**first-release-date `1999-06-08`**、primary-type Album、secondary-types 空，**genres／tags 兩欄都是空的**。**轄下兩筆 release**：**`4be7dfd0`（`1999-06-08` US Official，**media format 為 `None`**、無 catno、無 barcode——半空條目，而且 **RG 的 frd 就是抄它**，第 1364(6) 條）與 `b2d23512`（1999 XE Official CD 7 軌，Blue Note／`7243 4 98917 2 2`，bc 724349891722）。** **七軌**：El Rumbon (The Party) (473s)／Bolero (Ballad) (376)／Caravan (421)／Embraceable You (363)／Ponle La Clave (Put the Time on It) (563)／Rhapsody in Blue (428)／Briyumba Palo Congo (Religion of the Congo) (598)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=65a3fb7f-fcf2-3179-bee8-ebee657a6510&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**編制（Discogs 美版 513773 的 credits 欄逐字，四人固定、四位逐軌客座）**：**固定四人**——`Chucho Valdés — Piano [Acoustic Piano], Chorus`、**`Francisco Rubio Pampin — Acoustic Bass, Chorus`**、**`Roberto Vizcaíno — Congas [Conga], Bata [Batá Drums], Chorus`**、**`Raul Pineda Roque — Drums [Trap Drums], Vocals, Chorus`**（⚠ **四個人全部掛 `Chorus`——全碟的合唱是這四個人自己唱的**）。 ⚠⚠ **逐軌客座四位，策展層沒寫**：**第 6 軌〈Rhapsody In Blue〉`Joaquin Olivero Gavilan — Guest, Flute [13-key Cuban Wooden Flute]`（十三鍵古巴木笛）**；**第 7 軌〈Briyumba Palo Congo〉`Haila Mompie Gonzalez — Guest, Chorus`、`Mayra Caridad Valdes — Guest, Vocals [Vocalization], Chorus`、`Juan \"Chan\" Campo — Guest, Vocals, Chorus`**。 ⚠ **`Mayra Caridad Valdes` 同時也是同批 b 組《Yemayá》第 1 軌的獨唱——她是 Chucho Valdés 的妹妹，兩張碟的側面連結。**",
+    "src": "https://api.discogs.com/releases/513773"
+   },
+   {
+    "f": "**製作與版權（Discogs 513773 逐字）**：**`René López — Producer`、`Bruce Lundvall — Executive-Producer`、`Nancy Roof — Coordinator [Project Coordinator]`、美術 `A Getting Worse Production`／`D. Simmons`／`M. Warlow`、封面畫作 `D. Simmons — Painting [Hammered Oaths]`、設計 `Lundquist Design`、攝影 `Juliana Thomas`**；**companies 欄逐字 `Capitol Records, Inc. — Manufactured By`、⚠⚠ `EMI Music Canada — Phonographic Copyright (p)／Copyright (c)`。** **→ ℗© 持有者是 EMI 加拿大，不是 Capitol 美國——這一點與 Apple 的 copyright 欄完全對上（見下），而且策展層沒寫。** ⚠ **與同批 b 組《Yemayá》的製作人也是 `René López`、執行製作也是 `Bruce Lundvall`——同一組人做的兩張古巴碟。**",
+    "src": "https://api.discogs.com/releases/513773"
+   },
+   {
+    "f": "⚠⚠ **同期紙本：兩期榜位，廠牌欄逐字帶目錄號。** **Billboard 1999-06-26 第 50 頁的 TOP JAZZ ALBUMS 逐字「23 NEW **CHUCHO VALDES BLUE NOTE 98917 /CAPITOL BRIYUMBA PALO CONGO**」（第 23 名，NEW）**；**1999-07-10 第 30 頁逐字「25 24 **3** CHUCHO VALDES BLUE NOTE 98917 /CAPITOL BRIYUMBA PALO CONGO」（第 25 名、上週 24、在榜 3 週）**。 **→ 兩期的榜齡回推首度上榜約在 1999 年 6 月中，與 MB frd 的 `1999-06-08` 完全吻合。** ⚠ **策展層第 1353 條記的兩筆本層逐字覆核成立；⚠ 第 1359(6) 條的提醒也成立：Billboard 1998-09-05 p74 榜欄的 `BLUE NOTE 23082` 是《Bele Bele》不是本張。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-06-26.pdf"
+   },
+   {
+    "f": "⚠⚠ **試聽：探測層判 `unavailable`，本層用第 254 條三種查法撈回來了，而且三種全部命中。** **(1) `search` `artist+album`：us／jp／fr／gb 四個市場都命中 `724560726`。** **(2) `search` `album`：四個市場同樣都命中同一個 id。** **(3) `lookup?upc=724349891722`：四個市場也都命中。** **lookup 回 7 軌、全部有 previewUrl、discNumber 全是 1**，軌名是英文譯名形（〈The Party〉〈Ballad〉〈Caravan〉〈Embraceable You〉〈Put the Time on It〉〈Rhapsody in Blue〉〈Religion of the Congo〉——**與 MB 的西班牙文原名對得上，是同一張碟**），`collectionName` 逐字「Briyumba Palo Congo (Religion of the Congo)」。 ⚠⚠ **copyright 逐字 `℗ 1999 **EMI Music Canada**`——與 Discogs companies 欄完全一致**；**releaseDate `1999-01-01`（年頭回填形，比實際早五個多月，策展層第 1365 條已標）。**",
+    "src": "https://itunes.apple.com/lookup?id=724560726&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠⚠ **`apple-candidates.md` 為本張列的七個候選裡混了四張不同的碟，而且有兩張是同一首曲的不同盤。** **該檔列的是 `724571420`《Bele Bele en la Habana》1998（8 軌，**池中 seed 已有**）／`724342730`《Live at the Village Vanguard》2000（9 軌）／**`724560726`《Briyumba Palo Congo (Religion of the Congo)》1999（7 軌，對）**／`133643242`《Babalu Ayé》1999（7 軌）／`1462705309`《Ivan Lins, Chucho Valdés e Irakere》1998（10 軌）／`206692217`《Babalu Aye》1999（7 軌）／`623209015`《Invitacion》2000（8 軌）**。 ⚠ **七個裡有三個是 7 軌（`724560726`／`133643242`／`206692217`），軌數相同、最容易被誤取**；**而 `133643242` 與 `206692217` 是同一張《Babalu Aye》的兩個條目（就是 Billboard 1999-01-16 p99 葛萊美提名名單上那張 Bembé 廠牌的碟，第 1360(6) 條）。** **→ 第 646 條檢查**：**本張的 `724560726` 與 `724571420`（seed 的《Bele Bele》）不同，沒有共用 collectionId。**",
+    "src": "https://itunes.apple.com/lookup?id=724571420&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **Discogs 六筆條目全是 CD，沒有黑膠（通則 1）**：**美版 513773（`7243 4 98917 2 2`，`released` 欄逐字 `1999-06-08`）／歐版 11683476（同號）／美版俱樂部版 13158234（`CDP-598917`）與 26049835（format 帶 `Reissue`）／美版宣傳盤 11066417（`CD 7243 4 98917 2 2 V`）／日版 11496858（`TOCJ-66059`）**。 ⚠ **日版有零售盤（與同批《What It Is》只有宣傳盤不同）。**",
+    "src": "https://api.discogs.com/releases/513773"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Chucho Valdés` 在池中有兩張卡（seed 的《Bele Bele en La Habana》與 c-151 b 的《Solo Piano》），加上同批 b 組掛 `Irakere` 的《Yemayá》，四張的軌名逐軌零重疊、編制各不相同**（本張是四重奏加四位客座、《Yemayá》是十一人大團）。**四卡 risk 互指。** ⚠ **軌名撞卡名五處**：**〈Caravan〉＝seed 的 `Art Blakey and the Jazz Messengers` 與英國團 `Caravan` 兩張**／**〈Embraceable You〉＝`c152-cards.json` 的 `Chet Baker`**／**〈Rhapsody in Blue〉＝seed 的 `George Gershwin —《Rhapsody in Blue (鋼琴捲)》`**——**全部同名不同錄音，第 1049 條照收、正文不得互指。** ⚠ **〈Rhapsody in Blue〉那一軌是古巴四重奏加一支十三鍵木笛的改編，與 Gershwin 原作的鋼琴捲完全兩回事。**",
+    "src": "https://api.discogs.com/releases/513773"
+   }
+  ],
+  "hookCandidates": [
+   "四個人全部掛合唱——鋼琴、低音提琴、康加與巴塔鼓、套鼓，這四位自己就是全碟的合唱團；客座只有四位，一位吹十三鍵的古巴木笛、三位只出現在最後那首十分鐘的同名曲上",
+   "第六軌把《藍色狂想曲》整個搬進古巴節奏裡，吹旋律的是一支十三鍵木笛——盤面逐字寫著「13-key Cuban Wooden Flute」"
+  ],
+  "sound": "七軌，古巴四重奏。Chucho Valdés 的鋼琴、Francisco Rubio Pampin 的低音提琴、Roberto Vizcaíno 的康加與巴塔鼓、Raul Pineda Roque 的套鼓與人聲——四個人同時都掛合唱。客座四位逐軌：第 6 軌〈Rhapsody in Blue〉有 Joaquin Olivero Gavilan 的十三鍵古巴木笛，第 7 軌的同名曲有 Haila Mompie Gonzalez、Mayra Caridad Valdes 與 Juan「Chan」Campo 三位人聲。製作 René López，執行製作 Bruce Lundvall，封面是 D. Simmons 的畫作〈Hammered Oaths〉，℗© 持有者是 EMI 加拿大。曲目一半是古巴節奏的自創曲、一半是搬進古巴節奏的外來曲——Ellington 的〈Caravan〉、Gershwin 的〈Embraceable You〉與《藍色狂想曲》。",
+  "keyTracks": [
+   "Briyumba Palo Congo (Religion of the Congo)",
+   "El Rumbon (The Party)",
+   "Ponle La Clave (Put the Time on It)",
+   "Rhapsody in Blue"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判，而且榜位與 MB frd 逐日吻合。** (1) **榜位（階序第二層）**：**Billboard 1999-06-26 p50 的 TOP JAZZ ALBUMS 逐字「23 NEW CHUCHO VALDES BLUE NOTE **98917** /CAPITOL BRIYUMBA PALO CONGO」**（第 23 名、NEW）→ **1999-07-10 p30 逐字「25 24 **3**」**（第 25 名、在榜 3 週）——**回推首度上榜約 1999 年 6 月中。** (2) **MB first-release-date `1999-06-08`**（⚠ **來源是半空的 `4be7dfd0`，但與 Discogs 美版的 `released` 欄逐日相符**）。 (3) **Discogs 原壓群**：**美版 513773 的 `released` 欄逐字 `1999-06-08`**、**歐版 11683476／兩筆美版俱樂部版／美版宣傳盤／日版 `TOCJ-66059` 的 `year` 欄全是 1999**，`format` 欄除宣傳盤與那筆帶 `Reissue` 的俱樂部版外乾淨。 (4) **盤面 ℗©**：⚠⚠ **companies 欄逐字 `EMI Music Canada — Phonographic Copyright (p)／Copyright (c)`——不是 Capitol 美國**；**Apple `724560726` 的 copyright 逐字 `℗ 1999 EMI Music Canada`，兩邊完全一致。** (5) **店面**：⚠ **releaseDate `1999-01-01` 是年頭回填形，比實際早五個多月**（第 1300 條歪法 1，策展層第 1365 條已標）。 ⚠ **紙本誤讀擋下一處**（第 1359(6) 條，本層覆核成立）：**Billboard 1998-09-05 p74 榜欄的 `BLUE NOTE 23082` 是池中的《Bele Bele en La Habana》，不是本張。** ⚠ **三種字串**（第 1245 條）：**目錄號 `98917` 兩期榜位都命中**；**人名 `chucho valdes` 有效**；**盤名 `briyumba` 也有效**——**本組少數三種都命中的一張。**",
+  "notes": "**覆核策展層：rgMbid `65a3fb7f`／兩筆 release（`4be7dfd0` 是 media format 為 `None` 的半空條目，而且 RG 的 frd 就是抄它，第 1364(6) 條）／掛名 `Chucho Valdés`／年份 1999-06-08／七軌 全部成立。**｜⚠⚠ **編制：策展層第 1358(三) 條把本張列進「可以寫固定編制（四人）」——四人固定成立，但本層補上四位逐軌客座**：**第 6 軌 `Joaquin Olivero Gavilan — Guest, Flute [13-key Cuban Wooden Flute]`**、**第 7 軌 `Haila Mompie Gonzalez — Guest, Chorus`、`Mayra Caridad Valdes — Guest, Vocals [Vocalization], Chorus`、`Juan \"Chan\" Campo — Guest, Vocals, Chorus`**。**正文不得把那四位寫成固定編制，也不得漏掉他們。** ⚠ **四位固定成員全部掛 `Chorus`——全碟的合唱是他們自己唱的。**｜⚠⚠ **`Mayra Caridad Valdes` 同時是同批 b 組《Yemayá》第 1 軌的獨唱**；**兩張碟的製作人都是 `René López`、執行製作都是 `Bruce Lundvall`**——**兩卡的側面連結比策展層寫的更緊，risk 應寫明。**｜⚠⚠ **本層補上策展層沒寫的版權歸屬**：**℗© 持有者是 `EMI Music Canada`（Discogs companies 欄與 Apple copyright 欄兩邊逐字一致），不是 Capitol 美國。**｜⚠ **錄音日與錄音室查無**：**六筆 Discogs 條目都沒有 `Recorded At` 欄、沒有日期。不得自行補。**｜⚠ **載體（通則 1）**：**六筆條目全是 CD，沒有黑膠。**｜⚠⚠ **試聽：探測層判 `unavailable`，本層三種查法全部命中、撈回來了。串流採信 724560726**（us，7 軌、全部有 previewUrl、discNumber 全 1；**軌名是英文譯名形但與 MB 的西班牙文原名逐軌對得上**）。⚠⚠ **`apple-candidates.md` 為本張列的七個候選裡混了四張不同的碟，其中三個都是 7 軌**（`724560726` 對、`133643242` 與 `206692217` 是同一張《Babalu Aye》的兩個條目——正是 Billboard 1999-01-16 p99 葛萊美名單上那張 Bembé 的碟，第 1360(6) 條）。⚠ **第 646 條檢查通過：本張的 `724560726` 與 seed 的《Bele Bele》(`724571420`) 不同。**｜**撞陳列 1 組（四卡）**：**與 seed 的《Bele Bele en La Habana》、c-151 b 的《Solo Piano》、同批 b 組掛 `Irakere` 的《Yemayá》**——**四張軌名逐軌零重疊、編制各不相同**（掃 27750 列），**四卡 risk 互指。** ⚠ **軌名撞卡名五處**：〈Caravan〉＝seed 的 `Art Blakey and the Jazz Messengers` 與英國團 `Caravan`／〈Embraceable You〉＝`c152-cards.json` 的 `Chet Baker`／〈Rhapsody in Blue〉＝seed 的 `George Gershwin —《Rhapsody in Blue (鋼琴捲)》`——**全部同名不同錄音，第 1049 條照收；本張的〈Rhapsody in Blue〉是古巴四重奏加一支十三鍵木笛的改編。**｜**封面**：CAA RG 層有圖，⚠ **但來源是 media format 為 `null` 的那筆 `4be7dfd0`（策展層第 1365 條已標）**——**本機端上架時要核版式；若不對，替代來源用 Discogs 美版 `513773` 的 `images[0]`，已確認 `type` 是 `primary`、尺寸 588×600、該條目共 3 圖。**"
  }
 ]
