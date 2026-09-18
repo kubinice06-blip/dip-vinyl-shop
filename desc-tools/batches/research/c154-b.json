@@ -1,0 +1,106 @@
+[
+ {
+  "key": "desc2:Everette Harp|What's Going On",
+  "artist": "Everette Harp",
+  "album": "What's Going On",
+  "facts": [
+   {
+    "f": "release-group 0d053556 的欄位：title「What's Going On」、artist-credit「Everette Harp」（**36888e42 Person／US，disambiguation 空**）、first-release-date **1997**（**只有年、沒有月日**）、primary-type Album、**secondary-types 空**、disambiguation 空；**MB 這一筆有 genres 欄**：`jazz`／`jazz-funk`／`smooth jazz`／`soul jazz`（tags 另加 `fusion`）。**轄下只有一筆 release：e4e87036（1997 US Official CD 十軌，Blue Note `CDP 7243 8 53068 2 2`，barcode 724385306822）**。⚠ **MB 沒有歐版、沒有日版、沒有數位、沒有黑膠也沒有卡帶——本盤在 MB 這一側是單一載體單一版本。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0d053556-e882-3017-b20b-fb32fb53b8fa&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層擋下策展層一處編制歸屬的正文風險：David Van DePitte 的 credit 不能讀成「被請回來重做自己的編曲」。** **Discogs 2389140（1997 美國原壓 CD）的全碟 credit 逐字只有一行：`David Van DePitte — Arranged By, Orchestrated By [Original]`**——**方括號裡的 `Original` 是限定詞，指的是 1971 年原盤那一次的編曲與管弦配器**，**盤面沒有任何一個字說他 1997 年進過棚**。**1997 年這一次的編寫掛名另有其人且寫得很清楚**：`Everette Harp — Arranged By`、`Everette Harp — Arranged By [Horns]`、`Jerry Hey — Arranged By [Horns]`、`Everette Harp — Arranged By [Background Vocals]`、`Kirk Carr — Arranged By [Background Vocals]`。**正文只能寫「原盤的管弦編曲者 David Van DePitte 在盤面上被列名」，不得寫成他參與了 1997 年的錄音。**",
+    "src": "https://api.discogs.com/releases/2389140"
+   },
+   {
+    "f": "⚠ **策展層說的「合聲裡有福音歌手 Yolanda Adams」要修正成逐軌事實。** **Discogs 2389140 的逐軌 credit 逐字寫死了客座分布，每一位都只在一軌或兩軌**：〈What's Going On〉`Doc Powell — Guitar, Soloist, Featuring`＋五人 `Backing Vocals [Party Boys]`（Cassie Bonner／Darryl Porter／Everette Harp／Jesse Campbell／Walter Canady）；〈Save the Children〉`Arsenio Hall — Vocals [Spoken Word], Featuring`、`Dawnn Lewis — Vocals [Spoken Word], Featuring`；〈Mercy Mercy Me〉`Howard Hewett — Lead Vocals, Featuring`、`Kenny Loggins — Lead Vocals, Featuring`、`George Duke — Piano [Solo], Featuring`；〈Right On〉`Najee — Flute, Featuring`；**〈Wholy Holy〉`Yolanda Adams — Lead Vocals, Featuring`**＋九人 `Choir`；〈Inner City Blues〉`Najee — Flute [Solo]`、`Ray Fuller — Guitar [Solo]`、`Kirk Whalum — Tenor Saxophone, Soloist, Featuring`、`Greg Phillinganes — Organ`。**Yolanda Adams 在第八軌是主唱不是合聲**（她同時也列在全碟 `Backing Vocals` 那一組八人裡）。**全碟固定編制只有 Harp ＋ Larry Kimpel 貝斯 ＋ Little John Roberts 鼓 ＋ Munyungo Jackson 打擊 ＋ Don Wyatt 鋼琴五人**，其餘一律逐軌變動（第 1069／1189／1299 條）。",
+    "src": "https://api.discogs.com/releases/2389140"
+   },
+   {
+    "f": "⚠ **Harp 自己吹什麼，盤面沒有分到「中音／次中音」那麼細。** **Discogs 2389140 的 credit 逐字是 `Everette Harp — Saxophone, Flute, Electronic Wind Instrument [EWI], Keyboards, Programmed By, Backing Vocals`**，另有 `Everette Harp — Producer, Arranged By`、`Everette Harp — Executive-Producer`（重複列兩次）、`Everette Harp — Engineer`、`Everette Harp — Mixed By`、`Everette Harp — Edited By [Digital]`。**策展層 `why` 寫的「自己吹中音與次中音」在盤面上查無**——**正文寫「薩克斯風」即可，不得指定音域**。另：管樂組是 `Jerry Hey — Trumpet`、`Gary Grant — Trumpet`、`Reggie Young — Trombone`、`Mark Hollingsworth — Baritone Saxophone`；弦樂四人（Charlie Bisharat／Kimberly Blake-Kilgore／Melissa Hasin／Michael James）。**錄音室四處：Sunset Sound、Rumbo Recorders、Mad Hatter Studios、Rue Harp Sound；Track Records 混音、Erik Zobler 與 Harp 共同混音、Wally Traugott 母帶、℗© Capitol Records, Inc.、版權 Jobete Music。**",
+    "src": "https://api.discogs.com/releases/2389140"
+   },
+   {
+    "f": "**紙本第一層（系列發表，第 612／1175 條的最上層）**：**Billboard 1997-01-18 p35 的 Jazz/Blue Notes 專欄逐字**「The Blue Note Cover Series **is set to issue its first three titles March 11**. **Though the titles are not reissues**, the music contained on each should be well known to those listeners in their late 30s and early 40s. Guitarist **Fareed Haque's 'Deja Vu,'** saxophonist **Everette Harp's 'What's Going On,'** and the **Charlie Hunter Quartet's 'Natty Dread'** offer modern takes on classic pop albums from the early '70s. It's a move partially geared to seduce those listeners whose dedication to, or knowledge of, jazz is marginal」。**「March 11」與「not reissues」兩句都在同一段裡，是本卡年份與 releaseType 的同一個來源。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-01-18.pdf"
+   },
+   {
+    "f": "**紙本第二層（單曲評介，把發行前的定位寫死）**：**Billboard 1997-02-22 p79 的 Single Reviews 欄逐字**「**EVERETTE HARP — What's Going On (5:45) — PRODUCER: Everette Harp — WRITER: not listed — PUBLISHER: not listed — Blue Note 53068 (c/o Capitol) (CD cut)** — Acclaimed saxophonist Harp **may be best known in middle America as a former member of the in-house band on 'The Arsenio Hall Show,'** but he is putting himself on a fast track to wider musical acceptance with this title cut from his **forthcoming Marvin Gaye tribute album**. **The groove here is faithful to the original recording; with Harp's solos replacing the words.** His fluid lines nicely capture the essence of Gaye's lyrics. A shoo-in for AC stations aimed at sophisticated listeners, this track will be of interest to jazz and R&B fans alike.」⚠ **這段有一個寫作層可以用的閉環：Billboard 點名的 Arsenio Hall 本人就在第四軌〈Save the Children〉上掛 `Vocals [Spoken Word], Featuring`。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-02-22.pdf"
+   },
+   {
+    "f": "**紙本第三層（榜位，本層自掃 1997 全年 51 期）**：**TOP CONTEMPORARY JAZZ ALBUMS 連續在榜，榜欄廠牌字串逐字 `BLUE NOTE 53068/CAPITOL`**。實掃到的週次與名次：**1997-04-19 p54 第 6 名（新進榜週，同期 p21 的 R&B 專欄逐字「Blue Note saxophone player Everette Harp's take on Marvin Gaye's 'What's Going On' — part of the Blue Note Cover Series — is No. 6 on the Top Contemporary Jazz Albums chart this issue. The title cut, as well as 'What's Happening Brother,' are making an impact at such smooth jazz stations as KBLX San Francisco」）**、05-03 p32 第 8、05-17 p35 第 11、05-31 p32 第 13、06-14 p31 第 14、06-28 p26 第 15。⚠ **另一張爵士榜 TOP JAZZ ALBUMS 同期零命中**（第 879／1068 條兩張榜都查過）。⚠ **1997-06-28 p33 的 Blue Note 全版廣告列名，但 OCR 把目錄號讀成 `#53968`**（逐字「EVERETTE HARP WHAT'S GOING ON #53968」）——**第 1245 條說的 OCR 數字變形，實際是 53068。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-04-19.pdf"
+   },
+   {
+    "f": "**店面與封面**：Apple us **724338813**（`Everette Harp — What's Going On`，**十軌，與 MB 逐軌同名同序、逐秒相同**：346／178／300／301／154／179／428／333／400／84 秒，**十軌全部有 preview**，genre Jazz，copyright 逐字 `℗ 1997 Blue Note Records`）。⚠ **`releaseDate` 是 `1997-01-01`（年頭回填，第 484 條）與紙本的 3 月 11 日不合，寫作層不得引 Apple 的日。**⚠ **同掛名的鄰卡要擋**：Apple 藝人目錄下另有 `Everette Harp — Better Days` **724239368**（十軌，℗ 1998）——**那是 c-155 a 的卡**，**上架比對必須帶 catno 53068。**⚠ **封面**：**CAA 本層在 RG 層與 release 層各重試一次，兩層都是真 404 不是 5xx（第 589a 條）**——**替代來源用 Discogs 美國原壓 2389140：共 2 圖，`images[0]` 是 `primary` 600×596，`images[1]` 是 secondary 600×468。**",
+    "src": "https://itunes.apple.com/lookup?id=724338813&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "Blue Note 1997 年開了一條叫 The Blue Note Cover Series 的線，第一批三張同一天上架：Fareed Haque 翻 CSNY、Charlie Hunter 翻 Bob Marley，Everette Harp 翻的是 Marvin Gaye 整張《What's Going On》——連曲序都照原盤走",
+   "十軌的客座名單比正編還長，但每個人都只在一軌上：Arsenio Hall 在〈Save the Children〉唸白、Kenny Loggins 與 Howard Hewett 在〈Mercy Mercy Me〉合唱、Yolanda Adams 在〈Wholy Holy〉領唱"
+  ],
+  "sound": "整張是 1971 年《What's Going On》的器樂重錄版，十軌照原盤曲序排到底，最後多一段〈Inner City Blues〉的 Reprise。Harp 用薩克斯風、長笛與 EWI 把 Marvin Gaye 的人聲旋律接過來，Billboard 的說法是「節奏組忠於原錄音，Harp 的獨奏取代了歌詞」。底下的固定班底只有五個人：Harp、Larry Kimpel 的貝斯、Little John Roberts 的鼓、Munyungo Jackson 的打擊、Don Wyatt 的鋼琴；其餘全是逐軌換人的客座——Doc Powell 的吉他、Najee 的長笛、George Duke 的鋼琴獨奏、Kirk Whalum 的次中音、Greg Phillinganes 的管風琴，加上八人合聲與九人詩班。管樂由 Jerry Hey 與 Harp 共同編寫，四個洛杉磯錄音室分批錄，Erik Zobler 混音。",
+  "keyTracks": [
+   "What's Going On",
+   "Wholy Holy",
+   "Inner City Blues (Make Me Wanna Holler)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 成立，本層未改判，四層互相獨立而且紙本把日子釘到天。** (1) **廠牌口徑／發行時點（階序最上層，第 612／1175 條）**：**Billboard 1997-01-18 p35 逐字「The Blue Note Cover Series is set to issue its first three titles March 11」**——**這是系列發表的專欄，不是回顧。** (2) **榜位**：**TOP CONTEMPORARY JAZZ ALBUMS 1997-04-19 新進榜即第 6 名，連續到 06-28 仍在榜**（榜欄逐字 `BLUE NOTE 53068/CAPITOL`）；**另一張爵士榜 TOP JAZZ ALBUMS 同期零命中**（第 879／1068 條）。 (3) **Discogs 原壓群**：美版 **2389140**（`CD, Album`，1997）、宣傳版 36780556、BMG 俱樂部版 9075734，**master 1061098**，**`format` 欄全部乾淨、沒有一筆帶 `Reissue` 或 `Compilation`**。 (4) **MB first-release-date 1997**，唯一一筆 release e4e87036 同年。 (5) **盤面 ℗**：Apple copyright 逐字 `℗ 1997 Blue Note Records`、Discogs companies 欄 ℗© Capitol Records, Inc.。⚠ **唯一的反向欄位是 Apple 的 `releaseDate` `1997-01-01`**——**年頭回填形（第 484 條），與紙本的 3 月 11 日不合，不採信。**⚠ **紙本三種字串都掃過（第 1245 條）**：目錄號 `53068` 1997 年 13 次命中、人名 `everette harp` 20 次、盤名 `what's going on` 23 次，**三種都非零**。",
+  "notes": "**覆核策展層：rgMbid 0d053556／唯一 release e4e87036／掛名 `Everette Harp`（與 c-151 b《Common Ground》同字串，第 307 條）／年份 1997／十軌 全部成立。**｜⚠⚠ **本層擋下兩處編制與歸屬的正文錯**：(一) **`David Van DePitte — Arranged By, Orchestrated By [Original]`**，**方括號的 `Original` 指的是 1971 年那一次**，**盤面沒有一個字說他參與 1997 年的錄音**——**策展層 `why` 寫的「原盤的管弦編曲者被請回來重做一次自己的編曲」是推論不是盤面，正文只能寫「原盤編曲者在盤面上被列名」**；1997 年這一次的編寫是 Harp 自己加 Jerry Hey（管樂）與 Kirk Carr（合聲）。(二) **策展層寫「Harp 自己吹中音與次中音」，盤面 credit 只寫 `Saxophone, Flute, EWI, Keyboards`**——**不得指定音域。**｜⚠ **第三處是程度問題**：**Yolanda Adams 在〈Wholy Holy〉是 `Lead Vocals, Featuring` 不只是合聲**；**全碟固定編制只有五人（Harp／Kimpel／Roberts／Jackson／Wyatt），其餘客座逐軌變動**（第 1299 條本卡已列）。｜⚠ **載體**：**MB 一筆、Discogs 三筆，全部是 CD，沒有同期黑膠、沒有卡帶、沒有日版**（第 1064 條：正文不得寫黑膠原壓，也不必反寫）。｜⚠ **首發地**：**`TOCJ-` 系列查無、MB 也沒有日版**，第 1063／1066／1133／1252 條的固定動作已跑；Billboard 說的是三張同一天（3 月 11 日）在美國上架，**首發地寫美國安全**。｜⚠ **撞陳列**：**池中沒有 Marvin Gaye《What's Going On》（實掃 27,684 列，Gaye 本人那張零列）**，但**盤名在池中另有兩張同名卡：Marvin Gaye 的原盤不在池中，本田竹広《What's Going On》1973 在池中**——**第 1181／1192 條第六種盲區本卡自掃：本張十軌對池中卡名，命中 4 處**（〈What's Going On〉對 本田竹広 1973／〈Right On〉對 Wilson Pickett《Right On》1970／〈Save the Children〉對 Bobby Womack 1989 與 The Intruders 1973），**逐張比對後全部是同名不同錄音（第 1049 條），零內容重疊**。⚠ **店面用盤名搜一定先撞 Motown 原盤**（Apple us `album` 查法第一筆是 Marvin Gaye 1538081586，9 軌 1971）——**上架比對與試聽必須連掛名帶 catno 53068。**｜⚠ **第 1250／1274 條 catno 交叉（連廠牌看）**：**`53068` 掃過全部 10,436 筆帶 `label` 欄的卡，只回本卡一張，無共用。**｜⚠ **封面缺（本層重試後仍缺）**：**CAA RG 層 `0d053556` 與 release 層 `e4e87036` 各試一次都是真 404（第 589a 條的 5xx 情形未發生）**——**替代來源：Discogs 美國原壓 `2389140`，共 2 圖，`images[0]` 確認是 `primary`、600×596，第二張是 secondary 600×468。**（`images[0]` 是 primary 已逐筆確認，不是假設。）｜⚠ **試聽已 ready 且本層抽核過**：**Apple us 724338813 十軌與 MB 逐秒相同、十軌皆有 preview**——**串流採信 724338813。**｜⚠ **鄰卡**：**c-155 a 有同掛名的《Better Days》1998（Apple 724239368）**，**c-151 b 有《Common Ground》1994**——**三張卡同一個掛名字串，上架比對要帶年份或 catno。**"
+ },
+ {
+  "key": "desc2:Pete La Roca|SwingTime",
+  "artist": "Pete La Roca",
+  "album": "SwingTime",
+  "facts": [
+   {
+    "f": "release-group d23afba9 的欄位：title「SwingTime」、**artist-credit 逐字是 `Pete (LaRoca) Sims`（da386a16 Person／US）——不是卡單用的 `Pete La Roca`**、first-release-date **1997**（只有年）、primary-type Album、**secondary-types 空**、disambiguation 空；genres `hard bop`／`jazz`。**轄下只有一筆 release：b7afeb55（1997 US Official CD 八軌，Blue Note `CDP 7243 8 54876 2 0`，barcode 724385487620）**。**八軌與逐軌長度**：Drumtown 565 秒／Body and Soul 464／Susan's Waltz 416／Tomorrow's Expectations 565／**Nihon Bashi 366**／**The Candyman 623**／Candu 311／Amandas Song 477。⚠ **MB 沒有歐版、沒有日版、沒有黑膠、沒有數位。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d23afba9-9317-454e-a3da-a48bdd8dfd3b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **本層抽核出一處店面的逐軌錯配，而且是第 609／1135 條那一類「原盤軌目要逐張確認」的活樣本：第 5 軌與第 6 軌的曲名在不同來源上是對調的，用長度可以判出誰對。** **MB b7afeb55 與 Discogs 10910256（美國零售版）一致**：第 5 軌 **Nihon Bashi**、第 6 軌 **The Candyman**，長度 366 秒／623 秒。**Discogs 12967753（美國宣傳版）把兩軌的曲名印成相反的順序**：第 5 軌 The Candyman、第 6 軌 Nihon Bashi（該筆沒有長度欄）。**Apple us 724789125 跟著宣傳版的曲名順序走，但它的長度是 365 秒／623 秒**——**也就是說 Apple 第 5 軌的音檔（6:05）其實是〈Nihon Bashi〉卻掛著〈The Candyman〉的名字，第 6 軌（10:23）反之**。**兩個獨立來源（MB 與零售盤 Discogs）對上 Apple 一個來源，判零售盤的順序為準：〈Nihon Bashi〉6:06 在第 5 軌、〈The Candyman〉10:23 在第 6 軌。**⚠ **寫作層若要引任何一軌的長度，一律用 MB 的值，不要用 Apple 的曲名配長度。**",
+    "src": "https://itunes.apple.com/lookup?id=724789125&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "**錄音場次與編制**：**Discogs 12967753 的 notes 逐字「Recorded on February 28 and March 1, 1997」**（**兩天、不是一天錄完**），companies 欄逐字 `Recorded At: Clinton Recording Studio`、`Mastered At: Foothill Digital`、`Marketed By: EMI`、`Distributed By: EMI`、℗© `Capitol Records, Inc.`、`Glass Mastered At: EMI MFG.`。**七人編制（宣傳版的 credits 是完整的）**：`Pete La Roca — Drums`、`Jimmy Owens — Trumpet`（零售版另加 `Flugelhorn`）、`Ricky Ford — Tenor Saxophone`、**`David Liebman — Soprano Saxophone` 與 `Lance Bryant — Soprano Saxophone` 兩把高音薩克斯並列**、`George Cables — Piano`、`Santi Debriano — Double Bass`；`Bill Goodwin — Producer`、`Jim Anderson — Engineer`、`Christina Schwartz — Engineer [Assistant]`、`Allan Tucker`＋`Nicholas Prout — Mastered By`、`Jimmy Katz — Photography`。⚠ **這是全張固定編制的一張，七個人從頭到尾都在，沒有客座。**",
+    "src": "https://api.discogs.com/releases/12967753"
+   },
+   {
+    "f": "⚠ **零售盤自己記了一個異常，寫作層要知道：這張碟的盤面上根本沒有印演奏者 credit。** **Discogs 10910256（美國零售 CD）的 notes 逐字**「Recorded on February 28 and March 1, 1997.」「**Note: while the musicians names and instruments are mentioned in the booklet's liner notes and photos, no credit specifically appears printed on either back tray or booklet**」——**該筆的 credits 因此把每一位樂手都標成 `[Uncredited]`**（`Pete La Roca — Drums [Uncredited]`、`George Cables — Piano [Uncredited]`、`David Liebman — Soprano Saxophone [Uncredited]`、`Lance Bryant — Soprano Saxophone [Uncredited]`、`Ricky Ford — Tenor Saxophone [Uncredited]`、`Jimmy Owens — Trumpet [Uncredited], Flugelhorn [Uncredited]`），**只有 Santi Debriano 的 `Double Bass` 沒帶括號**。**編制名單的來源是內頁文字與照片，不是背標**——**這是本卡編制欄唯一的來源限制，但七人名單在宣傳版與零售版兩筆上一致，可以採信。**",
+    "src": "https://api.discogs.com/releases/10910256"
+   },
+   {
+    "f": "**逐軌作曲歸屬（盤面逐軌 credit，零售版與宣傳版一致）**：`Drumtown — Pete La Roca`、`Body and Soul — Johnny Green`（詞 Edward Heyman）、`Susan's Waltz — Pete La Roca`、**`Tomorrow's Expectations — David Liebman`**、**`Nihon Bashi — Sadao Watanabe`**、`The Candyman — Anthony Newley／Leslie Bricusse`、`Candu — Pete La Roca`、**`Amandas Song — Chick Corea`**。⚠ **策展層 `why` 寫「八軌以 La Roca 自己的曲為主……（Drumtown／Susan's Waltz／Tomorrow's Expectations／Nihon Bashi／The Candyman／Candu／Amandas Song）加一首《Body and Soul》」——這是錯的**：**La Roca 自己只寫了三首（Drumtown／Susan's Waltz／Candu）**，**另外五首分別是團員 Liebman 的一首、渡辺貞夫的一首、Chick Corea 的一首，加上兩首百老匯／標準曲**。**正文不得寫成「以他自己的曲為主」。**",
+    "src": "https://api.discogs.com/releases/10910256"
+   },
+   {
+    "f": "**紙本（三種字串全掃，第 1245 條）**：**目錄號 `54876`（含空白變體）在 Billboard 1996／1997／1998／1999 四年全部零命中**；**人名 `la roca`／`laroca` 1997 年只有一則**：**1997-01-25 p42 的 Jazz/Blue Notes 專欄逐字「**Veteran drummer Pete LaRoca has signed to Blue Note; the label rereleased his 1965 classic 'Basra' last year**」（同段另有 Django Bates 得 JazzPar 獎與 Tito Puente 捐鼓給 Smithsonian 兩則短訊）；**盤名 `swingtime`／`swing time` 1997 年一則、1998 年八則，逐則讀過全部不是本碟**——**1998 年那八則全是 Ray Charles 早年那家 `Swingtime Records`（1998-01-17 的 Atlantic 五十週年特輯，Ahmet Ertegun 用三千美元從 Swingtime 買下 Ray Charles 合約那段故事，連續三頁），另一則是 1998-06-13 p24 講搖擺復興的 `Swing Time` 雜誌**。⚠ **三種字串裡兩種真零命中、一種全是同名異物——本碟在 Billboard 只有一則簽約短訊，沒有評介也沒有榜位。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/Billboard-1997-01-25.pdf"
+   },
+   {
+    "f": "**店面（第 254 條三種查法，本層重跑）**：Apple us **724789125**，**掛名印 `Pete (Laroca) Sims`（第三種寫法，與 MB 的 `Pete (LaRoca) Sims` 大小寫不同）、盤名印 `Swingtime`（小寫 t，第二種寫法）**，**八軌、releaseDate `1997-07-31`（帶完整月日、非年頭回填）**，copyright 逐字 `A Blue Note Records Release; ℗ 1997 Capitol Records, LLC`，**八軌皆有 preview**。**逐軌長度與 MB 相比：1／2／3／4／7 軌逐秒相同（565／464／416／565／311），第 8 軌 477 秒相同但曲名印成 `Amanda's Song`（MB 是 `Amandas Song`，無撇號）**，**第 5／6 軌曲名對調（見上）**。⚠ **`upc 724385487620` 查法零命中、`album` 單詞查法撈到 The Canadian Brass《Swingtime》268532410 與 Paul Kuhn《Swingtime》425702411 兩張同名不同碟**——**三種查法一中兩空。**",
+    "src": "https://itunes.apple.com/lookup?id=724789125&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "**日版與首發地（第 1063／1066／1133／1252 條的固定動作）**：**MB 轄下沒有日版**；**Discogs 上的日版是 `TOCJ-6138`（Blue Note／東芝 EMI，Discogs 36027013）且該筆標的是宣傳盤**——**依第 1297 條，宣傳盤的日期只能當「不晚於」的下界，不能拿來推首發地**。**美版 b7afeb55 是 MB 唯一一筆 release、Apple 的零售日期 1997-07-31 帶完整月日、Billboard 的簽約短訊在 1997-01**——**首發地判美國、1997 年年中，本層未改。**⚠ **載體：MB 一筆、Discogs 五筆（美版 10910256／歐版 7981988／宣傳版 12967753／俱樂部版 22667357／日版 36027013）全部是 CD**，**沒有同期黑膠、沒有卡帶**（第 1064 條）。",
+    "src": "https://coverartarchive.org/release-group/d23afba9-9317-454e-a3da-a48bdd8dfd3b"
+   }
+  ],
+  "hookCandidates": [
+   "Pete La Roca 1968 年離開音樂圈去唸法律、當了二十幾年執業律師，1997 年回 Blue Note 錄這張時距離他上一張領班盤《Basra》已經三十二年",
+   "盤名 SwingTime 同時是碟名也是他後來巡演的團名，但 1997 年 2 月 28 日與 3 月 1 日在 Clinton 錄音室的這兩天是臨時編制——兩把高音薩克斯並列（David Liebman 與 Lance Bryant）是最好認的記號"
+  ],
+  "sound": "七人編制的硬波普，兩天錄完，八軌從五分鐘到十分鐘不等。前線是四管：Jimmy Owens 的小號與富魯格號、Ricky Ford 的次中音，加上 David Liebman 與 Lance Bryant 兩把高音薩克斯並列——這個配置本身就是辨識點。節奏組是 George Cables 的鋼琴、Santi Debriano 的低音提琴與 La Roca 自己的鼓。曲目來源很雜：La Roca 自己寫了三首（Drumtown、Susan's Waltz、Candu），團員 Liebman 給了一首〈Tomorrow's Expectations〉，另有渡辺貞夫的〈Nihon Bashi〉、Chick Corea 的〈Amandas Song〉，以及〈Body and Soul〉與百老匯的〈The Candyman〉兩首外來曲。Bill Goodwin 製作、Jim Anderson 錄音。",
+  "keyTracks": [
+   "Drumtown",
+   "The Candyman",
+   "Amandas Song"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 成立，本層未改判，但證據層比本組其他張薄——紙本這一腳幾乎是空的。** (1) **MB first-release-date 1997**，唯一一筆 release b7afeb55 同年。 (2) **Discogs 五筆（美版 10910256／歐版 7981988／宣傳版 12967753／俱樂部版 22667357／日版宣傳 36027013）`year` 欄全部 1997**，master 1249837，**`format` 欄全部乾淨**。 (3) **盤面 ℗ 1997 Capitol**（Discogs companies 欄）；**Apple copyright 逐字 `A Blue Note Records Release; ℗ 1997 Capitol Records, LLC`。** (4) **Apple `releaseDate` `1997-07-31`——帶完整月日、不是年頭回填、也不是錄音日（錄音是 1997-02-28／03-01）**，**是本卡唯一一個帶月日的發行日欄位**（第 1234 條末段：Apple 只有在與其他層同年時才有證據力，本卡同年）。 (5) **紙本（第 1245 條三種字串全掃）**：**目錄號 `54876` 四年零命中**；**人名只有 Billboard 1997-01-25 p42 的簽約短訊一則，逐字「Veteran drummer Pete LaRoca has signed to Blue Note; the label rereleased his 1965 classic 'Basra' last year」——這則把「1997 年簽約」釘住了，但沒有寫發行日**；**盤名的命中全是同名異物（Swingtime Records 唱片公司與 Swing Time 雜誌）**。⚠ **沒有評介、沒有榜位、沒有廣告**——**四層裡紙本只提供「不早於 1997 年 1 月」這一個下界，年份靠 MB＋Discogs＋盤面 ℗＋Apple 月日四層互證。**",
+  "notes": "**覆核策展層：rgMbid d23afba9／唯一 release b7afeb55／年份 1997／八軌 成立。**｜⚠⚠ **本層擋下一處曲目歸屬的正文錯**：**策展層 `why` 把七首都算成 La Roca 自己的曲（「八軌以 La Roca 自己的曲為主……加一首《Body and Soul》」）**——**盤面逐軌 credit 逐字：La Roca 只寫了三首（Drumtown／Susan's Waltz／Candu），〈Tomorrow's Expectations〉是團員 David Liebman 的、〈Nihon Bashi〉是渡辺貞夫的、〈Amandas Song〉是 Chick Corea 的、〈The Candyman〉是 Newley／Bricusse 的百老匯曲、〈Body and Soul〉是 Johnny Green 的。**正文不得寫成「以他自己的曲為主」。**｜⚠⚠ **第二處是軌序**：**第 5／6 軌的曲名在零售版（MB＋Discogs 10910256）與宣傳版（Discogs 12967753）／Apple 之間是對調的**，**用長度判：〈Nihon Bashi〉366 秒在第 5 軌、〈The Candyman〉623 秒在第 6 軌**（第 609／1135 條）。**Apple 的曲名配長度是錯的，寫作層引長度只能用 MB。**｜⚠ **掛名（第 307 條，覆核策展層的收攏）**：**四個來源四種寫法——MB `Pete (LaRoca) Sims`、Discogs `Pete La Roca, SwingTime (2)`、Apple `Pete (Laroca) Sims`、列舉檔 `Pete (LaRoca) Sims`**；**卡單取池中既有的 `Pete La Roca`（seed ＋ c-140 a《Basra》1965 同字串）成立**，其餘三形進 queryAlias。⚠ **`SwingTime` 不得當成既存樂團**：1997 這場是臨時編制，Discogs 把它當第二位掛名是 Discogs 的建檔習慣。｜⚠ **編制**：**七人全張固定、無客座**（第 1299 條把本卡列在「可以寫成固定編制」那一類之外，但本層覆核後確認它其實可以——沒有任何一位是逐軌客座）；⚠ **但盤面背標與內頁都沒有印 credit**，**名單來自內頁文字與照片**（Discogs 10910256 的 notes 自記，該筆把每一位都標 `[Uncredited]`）。｜⚠ **撞陳列**：**池中 `Pete La Roca` 另一張是《Basra》1965（c-140 a，Joe Henderson／Steve Kuhn／Steve Swallow）**，**八軌對四軌逐軌比對零重疊、班底零重疊**，兩卡 risk 互指。**第 1181／1192 條第六種盲區本卡自掃：〈Body and Soul〉命中池中六張同名卡**（Billie Holiday 1957／Coleman Hawkins 2001／David Murray Quartet 1993／Eddie Jefferson 1968／Gianni Basso & Renato Sellani 2017／古谷充 1983），**全部是同名不同錄音（第 1049 條），零內容重疊**；其餘七軌零命中。｜⚠ **第 1250／1274 條 catno 交叉（連廠牌看）**：**`54876` 掃全部 10,436 筆帶 `label` 欄的卡只回本卡一張。**｜⚠ **載體**：**MB 一筆、Discogs 五筆全部是 CD**，**沒有同期黑膠、沒有卡帶**（第 1064 條）。｜⚠ **首發地**：**日版 `TOCJ-6138` 是宣傳盤（第 1297 條），不能拿來推首發地**；**首發地判美國。**｜**封面已有**：CAA RG 層有圖，來源是唯一的 release b7afeb55（原盤）。｜**試聽已 ready 且本層抽核過**：**Apple us 724789125 八軌、軌數與版式對得上原盤**——**串流採信 724789125**，⚠ **但第 5／6 軌的曲名在該條目上是對調的，卡上若要列曲名以 MB 為準。**"
+ }
+]
