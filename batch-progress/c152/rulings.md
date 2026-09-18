@@ -972,3 +972,41 @@ c-151 b 第 1118 條立的事實：**Blue Note 1994 年新設 `Contemporary Reco
 - ⚠ **收工前重掃 `git status --short`**：另有**別的工作階段未提交的變更**（`desc-tools/batches/hooks/c148-hooks-a.json`、`desc-tools/batches/research/c150-a.json` 等）
   ——**本棒沒有碰，主線提交時請逐一 `git add`，不要 `git add -A`。**
 - ⚠ **號段**：本批 b 組用 **1170–1187**，**1188–1199 留白**（a 組 1140–1164、1165–1169 亦未用），**未撞號。**
+
+## 第 1188 條（主線，研究 a 組查出）：**三處「零命中」與一處反向證據的事實敘述要更正**
+
+**結論全部不變，但依據要改**——**「兩刊零命中」在本批被推翻了三次**：
+
+1. **第 1146 條的反向證據**：**Billboard 1995-07-22 並沒有把《Embraceable You》排進 `VITAL REISSUES` 欄**
+   ——它在一般 JAZZ 欄帶 ★，只是**製作人欄印 "REISSUE PRODUCER"**；
+   `VITAL REISSUES` 方框裡是 Cannonball Adderley 與 Coltrane／Hartman，
+   **「also includes … Chet Baker …」那句是寫在 Cannonball 那一則裡。** 收件結論不變。
+2. **第 1152 條的「三年六份零命中」不成立**：**Cash Box 1996-11-16 p14（該刊最後一期）有
+   《Live at Bradley's》的新片評介。** 本層仍判 1994（Discogs 四筆原壓＋維基同向、
+   1996-07-27 Blue Note 年度廣告無 Eubanks），**但反向證據比原本強**
+   ——**若後批在 1996 年廣告或新片欄找到 30133 應改判。**
+3. **第 1144／1155 條的「零命中」在《Extra Special Edition》也不成立**：Cash Box 1995-01-28 p16 有評介。
+4. **第 1147 條的事實敘述**：《Quiet After the Storm》Discogs **不是「六筆美國條目整群 1994」**
+   ——實際 master 是 `566369`（策展層 label 欄引錯號），15 個版本裡 **8 筆 1994／5 筆 1995／1 筆 year=0**，
+   且被列為「美國」的 `26108887` 其實是加拿大、`6399644` 本身就是 1995。結論（盤面 ℗© 1995 勝出）不變。
+
+⚠ **連同第 1134 條（OCR 把 `I` 打成 `1`），「紙本零命中」在這一段已經錯了四次。**
+**通則：策展層寫的「零命中」一律當待證的宣稱，研究層要自己重掃一次。**
+
+## 第 1189 條（主線）：**研究層擋下策展層 8 處編制／作曲錯，最嚴重的兩處**
+
+- **《I Can See Your House From Here》**：Scofield 與 Metheny 的作曲**五處歸屬相反、漏列一軌、
+  而且是六比五不是各半**（Discogs 逐軌欄＋Billboard 1994-05-14 評介兩邊互證）。
+- **《Live at the QEH》不是十七人大樂團**——**十七人只在第 8 軌**，第 3／4 軌是二重奏、第 9 軌是獨奏鋼琴。
+
+另《The Place to Be》《Four in One》《After Dark》《Extra Special Edition》《Quiet After the Storm》
+**都是逐軌變動而非固定編制**（廠牌廣告「solo, duo and trio settings (horns too!)」獨立證成）。
+
+⚠ **這是第 1069 條同一個形狀的再現：策展層會把「只在某幾軌出現的編制」寫成整張的固定編制。**
+
+## 第 1190 條（主線）：**本組 19 張在 1994–95 全部只有 CD 與卡帶，無同期黑膠**
+
+逐張查實。**黑膠只有後來的再發**（1998 日本 4LP、2017 Jazztwin、2014 韓國、2021 Tone Poet 等），
+**且大西順子那張 4LP 只收 4 軌，不可當原盤。**
+另新查到一則廠牌前瞻名單（第 1175 條）：**Billboard 1994-07-02 p45 的 `COMING THIS FALL` 欄
+同時列出本組三張**（Four in One／Manhattan Moods／The Place to Be）。
