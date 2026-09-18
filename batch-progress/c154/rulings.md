@@ -730,3 +730,60 @@ Green 的六人掛名**沒有一軌六人全上**、Irby 的 Charlie Persip 只�
 研究 a 組與 c-155 b 組同日各抓一份（329／338 命中頁）。
 **入庫的是命中頁較多的 c-155 b 版**，`SOURCES-billboard-cashbox.md` 末段已加一行後記點明。
 ⚠ **派工時要先看 SOURCES 的最末段，不要只看檔案列表**——**重抓一年要花一支代理近半小時。**
+
+## 第 1281 條（主線，研究 b 組查出）：**兩條本批自己的裁定要修**
+
+- **第 1297 條的前提有問題**：該條說「`Promotion` 盤的日期不能推首發地」。
+  **但 MB 把《Rendezvous》日版 `TOCJ-6096` 標成 `Promotion`，Discogs 3609336 描述的卻是
+  帶 obi、28 頁中日英內頁、Swing Journal 推薦章、`format` 乾淨的日本零售盤**，`released` 1997-08-20，
+  **早於美版 1997-09 約兩週**。
+  **→ 年份不受影響；首發地兩說並陳，不單邊定死。**
+  ⚠ **通則：MB 的 `status: Promotion` 本身也會錯，要回 Discogs 看實體描述。**
+- **第 1299 條要更新**：該條說 Lena Horne 那張「Discogs credits 與 notes 整個是空的、寫作層不得自行補人名」
+  ——**那是只看美版 `10222154` 的結論**。**歐版 `6844541` 的 credits 與 notes 完整**
+  （Rodney Jones 製作／吉他／編曲／混音、Mike Renzi 鋼琴鍵盤、Bobby Forrester 管風琴、
+  Benjamin Brown 貝斯、Akira Tana 鼓、Houston Person 薩克斯、Jeremy Lubbock 弦樂編寫，
+  錄於紐約 Nola Recording ＋ Power Station）。**寫作層可以寫人名了。**
+  ⚠ **通則：credits 空白只代表「那一版的 Discogs 條目空白」**——**換版本再查一次。**
+
+## 第 1282 條（主線）：**《Alone Together》的盤面沒有年，是靠發行日反推的**
+
+盤面只印「December 21 & 22」**沒有年**（日版 `TOCJ-6154` 逐字；**美版 Discogs 自己寫「(1996?)」**）。
+研究層以**「發行日 1997-10-23／11-04／11-27 早於 1997 年 12 月」**定死為 **1996**。
+⚠ **Billboard 1998-03-14 評介的「Recorded live last year」與發行日矛盾，不採信。**
+
+**連帶**：它與 a 組《Another Shade of Blue》**同三人、同場地、同封面畫家、同錄音師，
+但是不同年的兩個十二月檔期**（1996-12 vs 盤面逐字 12/21/1997），**6 軌對 5 軌零重疊**。
+⚠ **第 1276 條說《Another Shade of Blue》的錄音日「真正是 1996-12-21／22」——這一條要撤**：
+研究 b 組拿到盤面逐字 `12/21/1997`，**兩張是不同年的兩個檔期，不是同一批母帶**。
+
+## 第 1283 條（主線）：**CAA 要逐張重探，不要信策展層的「三試皆 404」**
+
+研究 b 組對 16 張逐張重探 CAA `/front`：**12 個 200、4 個 404**。
+⚠ **其中 Osby《Zero》策展層寫「CAA 0 圖、三試皆 404」，實測 RG 層回 200**（兩圖，front 來自 release `47a3d899`）
+——**封面缺口因此從 5 張降為 4 張。**
+
+**四張的替代來源**（都確認 `images[0]` 是 `primary`）：
+Harp《What's Going On》→ Discogs **2389140**（600×596）／Irby《Big Mama's Biscuits》→ **2166020**（600×598）／
+Cortés《Veneno》→ **10548990**（US Metro Blue 宣傳盤，600×523；**古巴原盤 12789383 唯一一圖是 secondary 225×225、
+歐版 13101771 primary 僅 355×355**）／
+⚠ **Shim《Mind Over Matter》Discogs 三個條目全無可用 primary**
+（11316831 兩圖皆 secondary 500px、21548602 零圖、**30848442 的 primary 是卡帶殼照片**）
+→ **只剩 Apple `1763274447` 的 `600x600bb`。**
+
+## 第 1284 條（主線）：**串流 16/16，三張是「換字串／換市場」才撈到的**
+
+- **《The Squirrel》`1268679537`**：**us 三種查法全空，jp／gb／dk 有**（第 1246 條再證）。
+- **《Veneno》`806208894`**：**改用團名 `NG La Banda` 就中**（掛名字串與店面字串不同）。
+- **《Alive》`723409998`**：三種查法全中。
+
+其餘 13 張已 ready 者全部抽核過軌數與逐軌長度，**無錯碟**。
+
+## 第 1285 條（主線）：**擋下／補正策展層 11 處**
+
+值得記的形狀：
+- **`Arranged By [Original]` 不能讀成「被請回來重做」**（Harp 那張的 David Van DePitte）。
+- **主唱與合聲要分清**（Yolanda Adams 是第 8 軌主唱不是合聲）。
+- **「八軌全是某人的曲」要逐軌查**（Ronnie Laws 那張的〈Compared to What〉是 Gene McDaniels 寫的）。
+- **Apple 的曲名會對調**（La Roca 那張第 5／6 軌，**用長度才判得出來**）。
+- **年齡要用 MB life-span 算**（Konitz 錄音時 69 歲不是 70 歲）。
