@@ -157,5 +157,637 @@
   "status": "full",
   "yearVerified": "**卡單 1998 成立，本層未改判年份；但首發地應從 US 改記 JP（同年，不影響 `year`）。** (1) ⚠⚠ **日本首發**：**Discogs 8791368（`Somethin’ Else / TOCJ-5595`）的 `released` 欄逐字 `1998-03-25`，比美版 `1998-07-28` 早四個月**；**Apple `1509395336` 的 releaseDate 逐字 `1998-03-25`、copyright 逐字 `A Somethin’ Else Records release; ℗ 1998 UNIVERSAL MUSIC LLC`——兩邊逐日相符。** **美版 7251453 的 companies 欄逐字 `Somethin’ Else Records (2) — Phonographic Copyright (p)／Copyright (c)` ＋ `Blue Note Records — **Licensed To**`。** **→ 與同批 a 組《Antiguo》同形（Somethin’ Else 母體、Blue Note 授權），但《Antiguo》跨年所以要改 `year`，本張同年所以只改首發地。** (2) **MB first-release-date `1998-07-28`**（美版 `4c858c11`）。 (3) **廠牌口徑**：**Billboard 1998-06-27 p43 的 Blue Note 全版廣告「Coming soon」名單逐字印 `ELIANE ELLAS Elias, 4gs Jobim`**（⚠ **掛名與盤名都被 OCR 打壞，第 1245 條在這裡是必要條件**）。 (4) **Discogs 原壓群**：**日版／阿根廷版／巴西版／美版／美版兩筆宣傳盤／美版俱樂部版／英歐版的 `year` 欄全是 1998**，`format` 欄除宣傳盤外全部乾淨。 ⚠ **目錄號 `95050` 在 1998／1999 兩年紙本零命中。** ⚠ **策展層第 1353 條已注意到「Apple jp/fr 的 17 軌版 releaseDate `1998-03-25` 指向日本 Somethin’ Else 線先出四個月，同年不影響」——本層覆核成立，並補上 Discogs 日版的 `released` 欄與美版的 `Licensed To` 兩筆硬證據。**",
   "notes": "**覆核策展層：rgMbid `6b153cc0`／四筆 release／掛名 `Eliane Elias`／年份 1998 全部成立；首發地本層改記 JP（Somethin’ Else `TOCJ-5595`，1998-03-25）。**｜⚠⚠ **本層更正策展層第 1358(三) 條的一句**：**策展層寫「六人，三位和聲不得寫成樂手」——Discogs 美版與日版的 credits 欄裡根本沒有任何和聲（backing vocals）欄，六個人全部是演奏者**（Elias 人聲與鋼琴、Brecker 次中音、Castro-Neves 吉他、Marc Johnson 貝斯、Paulinho Braga 鼓、Café 打擊）。**那句提醒沒有來源支持，寫作層照六人寫即可。**｜⚠⚠ **軌數兩版不同**：**日版 17 軌、美版 16 軌，多的是末軌〈The Continental〉**；**而串流上流通的 `1509395336` 正好是 17 軌的日版形。** **卡單若以美版為準要寫 16，本層建議以首發的日版 17 軌為準並在 risk 寫明美版少一軌。**｜⚠ **錄音場次**：**地點是紐約 Avatar Studios（錄音兼混音，工程 James Farber），但沒有任何條目給日期**——**不得自行補。** ⚠ **Avatar Studios 同時是同批《Trio Fascination》與《A Cloud of Red Dust》的錄音室，第 855／861 條：共用場地不足以判同一場。**｜⚠ **載體（通則 1）**：**十筆以上的 Discogs 條目全是 CD，沒有黑膠。**｜⚠ **MB 的兩個毛病**：**美版 `4c858c11` 的 barcode `252429070000` 不是標準 UPC（第 1364(9) 條，不能做 `lookup?upc=`）**；**`e5b10da4` 是無日期無國別 format 為 `None` 的空殼（第 1364(6) 條）。**｜**撞陳列 1 組**：**與池中《Eliane Elias Plays Jobim》(1990, c-150 a)**——**同掛名、同作曲家、盤名只差一個字（Sings vs Plays）**，**本張是歌唱盤、那張是純器樂鋼琴三重奏，逐軌核完曲目有重疊的同名曲但錄音完全不同**；**兩卡 risk 必須互指、上架帶 catno（`95050` vs `93089`）**；⚠ **`chk-prop` 折鍵不同所以不亮燈**（策展層第 1359(4) 條已記）。**另與池中六張 `Eliane Elias` 互指。** ⚠ **軌名撞卡名一處**：〈How Insensitive〉＝seed 的 `Duke Pearson —《How Insensitive》`，**同名不同錄音、第 1049 條照收。**｜**試聽**：**串流採信 1509395336**（gb 市場，17 軌＝日版形、全部有 preview、discNumber 全 1；⚠ **us 市場零命中，第 1246 條**）。｜**封面**：CAA RG 層有 6 圖，不必找替代。"
+ },
+ {
+  "key": "desc2:Tommy Flanagan|Sunset and the Mockingbird: The Birthday Concert",
+  "artist": "Tommy Flanagan",
+  "album": "Sunset and the Mockingbird: The Birthday Concert",
+  "facts": [
+   {
+    "f": "release-group `990e03a7-c0a1-3e95-94b6-7d079af1f9e7`：title「Sunset and the Mockingbird: The Birthday Concert」、artist-credit「Tommy Flanagan」（`c39a1eeb` Person）、**first-release-date `1998-08-25`**、primary-type Album、**secondary-types `[\"Live\"]`（MB 標對了）**，genres／tags 只有 `jazz`。**轄下兩筆 release**：`dfba7ed1`（**`1998-08-25` US Official CD**，Blue Note／`CDP 7243 4 93155 2 5`，bc 724349315525）與 `8f69ed47`（**無日期、無國別，Digital Media**，bc 0724349315556）。⚠ **兩筆的 `track-count` 都登 8，軌目卻列 9 個標題**（第 1364(8) 條）——**原因是第 7 軌是醫合曲〈The Balanced Scales / The Cupbearers〉（762 秒），MB 把斜線兩邊拆開算了。實體盤是 8 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=990e03a7-c0a1-3e95-94b6-7d079af1f9e7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音場次：一晚，而且那一晚就是他的六十七歲生日——盤名裡的「Birthday Concert」不是比喻。** **Discogs 美版 9030263（`CDP 7243 4 93155 2 5`）的 notes 逐字一行**：「**Recorded live at the Village Vanguard on March 16, 1997, Tommy Flanagan’s 67th birthday.**」，**companies 欄 `Village Vanguard — Recorded At`。** **→ 1997 年 3 月 16 日，紐約 Village Vanguard，單一場次；發行在十七個月後的 1998-08-25。正文可以寫「生日當晚錄的」。**",
+    "src": "https://api.discogs.com/releases/9030263"
+   },
+   {
+    "f": "**編制（Discogs 三筆條目的 credits 欄逐字，三人、零客座、零逐軌標示）**：`Tommy Flanagan — Piano`、`Peter Washington — Bass`、`Lewis Nash — Drums`。⚠ **製作人逐字是 `Diana Flanagan — Producer`——他的妻子**，**不是廠牌製作人；正文可以寫這一點。** 母帶 `Kurt Lundvall — Mastered By`，內頁 `Peter Straub (3) — Liner Notes`（日版另加 `Kiyoshi Koyama` 的日文解說），美術 `Gordon H Jee — Art Direction`／`Brigid Pearson — Design [Package]`，攝影 `Jimmy Katz`。**這一張可以寫固定編制。**",
+    "src": "https://api.discogs.com/releases/11758346"
+   },
+   {
+    "f": "**曲目全部是別人的曲子（Discogs 逐軌 written-by 欄逐字）**：〈Birdsong〉**Thad Jones**／〈With Malice Toward None〉**Tom McIntosh**／〈Let’s〉**Thad Jones**／〈I Waited For You〉**Dizzy Gillespie ＋ Gil Fuller**／〈Tin Tin Deo〉**Chano Pozo ＋ Gil Fuller**／〈Sunset And The Mockingbird〉**Duke Ellington**／〈Good Night My Love〉**Harry Revel ＋ Mack Gordon**。**第 7 軌的醫合曲〈The Balanced Scales / The Cupbearers〉沒有掛作曲欄（後半是 Tom McIntosh 的曲）。** **→ 八軌沒有一首是 Flanagan 自己寫的；盤名那一首是 Ellington 的。正文不得把盤名曲寫成他的創作。**",
+    "src": "https://api.discogs.com/releases/9030263"
+   },
+   {
+    "f": "⚠ **日版比美版晚一個月。** **Discogs 16922364（JP，Blue Note `TOCJ-6199`）的 `released` 欄逐字 `1998-09-23`**，**美版是 `1998-08-25`**——**第 1063 條在本張不成立。** **另有美版宣傳盤 36934677（`CDP 7243 4 93155 2 5`，notes 逐字「On disc face - Licensed For Promotional Use.」）與歐版 11758346（`7243 4 93155 2 5`，notes「made and printed in the EU」）。** **全部是 CD，沒有黑膠（通則 1）。**",
+    "src": "https://api.discogs.com/releases/16922364"
+   },
+   {
+    "f": "⚠⚠ **同期紙本：廠牌廣告把盤名打成幾乎認不出來的形狀。** **Billboard 1998-06-27 p43 的 Blue Note 全版廣告「Coming soon」名單逐字印 `TOMMY FLANAGAN 8e Tl 1 ngbird`（＝`TOMMY FLANAGAN & The Mockingbird`，`&` 被讀成 `8e`、`The Mocki` 被吃掉）**——**只用正確盤名 `sunset and the mockingbird` 查會整個漏掉。** **第 1245 條在這裡是必要條件**（策展層第 1363 條已記，本層覆核成立）。 ⚠ **目錄號 `93155` 在 1998／1999 兩年零命中；人名 `tommy flanagan` 在 1998 年只有這一則、1999 年零。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-06-27.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `724751149`（us）回 **8 軌、全部有 previewUrl、discNumber 全是 1**，`collectionName` 逐字「Sunset and the Mockingbird - The Birthday Concert」（**冒號被改成破折號**），**releaseDate `1998-01-01T08:00:00Z`（年頭回填形，不可用）、copyright 逐字 `℗ 1998 Blue Note Records`。** **→ 8 軌＝實體盤形（不是 MB 軌目列的 9 個標題），探測層判的 ready 抽核通過。**",
+    "src": "https://itunes.apple.com/lookup?id=724751149&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 `seed_cards.json`（17248 筆，陣列格式）＋ `desc-tools/batches/cards/` ＋ 全部 `batch-progress/c1*/prop-*.json`，合計 27750 列**——**`Tommy Flanagan` 在池中有九張卡**，**本張八軌與九張逐軌零重疊**（本張是 1997 年的 Village Vanguard 現場，曲目是 Thad Jones／Tom McIntosh／Gillespie／Ellington 的曲）。**十卡 risk 互指、上架須帶 catno `93155` 或年份。** ⚠ **軌名撞卡名零處**（八軌的曲名在池中都沒有同名卡）。 ⚠ **場地撞陳列**：**Village Vanguard 在池中是數十張現場碟的錄音地（含 c-153 b 的 Petrucciani《Live at the Village Vanguard》與 seed 的多張）**——**第 855／861 條：場地相同只是必要條件，本張的日期（1997-03-16）在池中獨一無二。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=990e03a7-c0a1-3e95-94b6-7d079af1f9e7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "盤名裡的「Birthday Concert」是字面意思：1997 年 3 月 16 日，Village Vanguard，那一晚正是 Flanagan 的六十七歲生日",
+   "八軌沒有一首是他自己寫的——Thad Jones 兩首、Tom McIntosh、Gillespie、Chano Pozo 各一首，連盤名那首〈Sunset and the Mockingbird〉都是 Ellington 的"
+  ],
+  "sound": "八軌的現場碟，1997 年 3 月 16 日錄於紐約 Village Vanguard——那一晚是 Tommy Flanagan 的六十七歲生日。三重奏固定編制：Flanagan 的鋼琴、Peter Washington 的貝斯、Lewis Nash 的鼓，沒有客座。製作人掛的是他的妻子 Diana Flanagan，母帶 Kurt Lundvall，內頁由小說家 Peter Straub 執筆。曲目全部是別人的曲子：Thad Jones 的〈Birdsong〉與〈Let’s〉、Tom McIntosh 的〈With Malice Toward None〉、Gillespie 與 Gil Fuller 的〈I Waited for You〉、Chano Pozo 的〈Tin Tin Deo〉、Ellington 的〈Sunset and the Mockingbird〉；第 7 軌是〈The Balanced Scales / The Cupbearers〉的醫合曲，十二分半。",
+  "keyTracks": [
+   "Sunset and the Mockingbird",
+   "Birdsong",
+   "Tin Tin Deo",
+   "The Balanced Scales / The Cupbearers"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1998 成立，本層未改判。** (1) **MB first-release-date `1998-08-25`**（美版 `dfba7ed1` 的日期逐日相同）。 (2) **Discogs 原壓群**：**美版 9030263 的 `released` 欄逐字 `1998-08-25`（與 MB 逐日相符）**、**美版宣傳盤 36934677（1998）**、**歐版 11758346（1998）**、**日版 `TOCJ-6199` 的 `released` 欄 `1998-09-23`**——`format` 欄除宣傳盤外全部乾淨。 (3) **廠牌口徑**：**Billboard 1998-06-27 p43 的 Blue Note 全版廣告「Coming soon」名單逐字印 `TOMMY FLANAGAN 8e Tl 1 ngbird`**（＝`& The Mockingbird`，OCR 形變）。 (4) **盤面 ℗©**：日版 companies 欄 `Capitol Records, Inc. — Phonographic Copyright (p)／Copyright (c)`。 (5) **店面**：Apple `724751149` copyright 逐字 `℗ 1998 Blue Note Records`（⚠ releaseDate `1998-01-01` 是年頭回填形，不採）。 ⚠⚠ **錄音日 1997-03-16 與發行日差十七個月**——**第 1353 條那種「`live: true` 的碟 frd 幾乎一定是演出日」在本張不成立：MB 的 `1998-08-25` 是發行日、不是演出日**（同批《Re-Animation Live!》才是那個形狀）。 ⚠ **紙本三種字串**（第 1245 條）：**目錄號 `93155` 1998／1999 兩年零命中**；**盤名用正確形查零命中（OCR 打壞）**；**只有人名 `tommy flanagan` 在 1998 年命中那一則廣告。**",
+  "notes": "**覆核策展層：rgMbid `990e03a7`／兩筆 release／掛名 `Tommy Flanagan`／年份 1998-08-25／`live: true`／八軌 全部成立。**｜⚠⚠ **本層補上策展層只寫了半句的錄音場次**：**策展層寫「錄音 1997-03-16」，但沒寫地點，也沒寫那一晚的意義——Discogs 美版 notes 逐字「Recorded live at the **Village Vanguard** on March 16, 1997, **Tommy Flanagan’s 67th birthday**.」。盤名裡的「The Birthday Concert」是字面意思。**｜⚠ **編制：三人固定、零客座，策展層寫對了。** **本層要補的是製作人——`Diana Flanagan — Producer`，是他的妻子，不是廠牌製作人。**｜⚠⚠ **作曲：八軌沒有一首是 Flanagan 寫的**（Thad Jones ×2／Tom McIntosh／Gillespie＋Gil Fuller／Chano Pozo＋Gil Fuller／Ellington／Revel＋Gordon），**連盤名那一首〈Sunset and the Mockingbird〉都是 Ellington 的曲。正文不得寫成他的創作。**｜⚠ **軌數：MB 的 `track-count` 登 8、軌目卻列 9 個標題**（第 1364(8) 條）——**原因是第 7 軌是醫合曲〈The Balanced Scales / The Cupbearers〉，MB 把斜線兩邊拆開算了。實體盤與 Apple 都是 8 軌，本卡以 8 軌為準。**｜⚠ **載體（通則 1）**：**Discogs 四筆條目全是 CD，沒有黑膠。**｜⚠ **日版方向**：`TOCJ-6199` 的 `1998-09-23` 晚於美版一個月，**第 1063 條不成立。**｜**撞陳列**：**池中 `Tommy Flanagan` 有九張卡，本張八軌與九張逐軌零重疊**（掃 27750 列），**十卡 risk 互指、上架帶 catno `93155`。** ⚠ **軌名撞卡名零處。** ⚠ **場地撞陳列**：**Village Vanguard 在池中是數十張現場碟的錄音地**——**第 855／861 條：場地相同只是必要條件，本張的 1997-03-16 在池中獨一無二。**｜**試聽**：**串流採信 724751149**（us，8 軌＝實體盤形、全部有 preview、discNumber 全 1）。｜**封面**：CAA RG 層有圖，⚠ **但來源是無日期的數位 release `8f69ed47`（策展層第 1365 條已標）**——**本機端上架時要核版式；若不對，替代來源用 Discogs 美版 `9030263` 的 `images[0]`。**"
+ },
+ {
+  "key": "desc2:Marcus Printup|Nocturnal Traces",
+  "artist": "Marcus Printup",
+  "album": "Nocturnal Traces",
+  "facts": [
+   {
+    "f": "release-group `0f3bc57e-d48c-3351-b2bc-9e246d1cd503`：title「Nocturnal Traces」、artist-credit「Marcus Printup」（`1dc4b2f8` Person）、**first-release-date 1998**（只有年）、primary-type Album、secondary-types 空，genres／tags `contemporary jazz`／`jazz`／`post-bop`。**轄下兩筆 release**：`0d7116bd`（**1998，country 欄逐字 `None`**，CD 10 軌，Blue Note／`CDP 7243 4 9367623`，bc 724349367623）與 `c65552b3`（**無日期、無國別、format 為 `None`**，10 軌——空殼條目，第 1364(6) 條）。**十軌**：Woody’s Beat (436s)／Have You Met Miss Jones? (355)／Shertzing Along (367)／Body & Soul (319)／Black Coffee (422)／Pier Pressure (367)／Nocturnal Traces (372)／Ain’t Misbehavin’ (340)／How Do You Keep the Music Playing? (342)／Freddie’s Inferno (246)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0f3bc57e-d48c-3351-b2bc-9e246d1cd503&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音場次：兩天，而且盤面特別註明錄成類比雙軌——策展層只寫了日期。** **Discogs 美版宣傳盤 14639638 與俱樂部版 20801398 的 notes 逐字兩行**：「**Recorded January 24 & 25, 1998 at Avatar Studio C, NYC.** | **These session were recorded to analog 2-track.**」，**companies 欄 `Avatar Studio C — Recorded At`、`Foothill Digital — Mastered At`。** **→ 1998 年 1 月 24、25 兩天，紐約 Avatar Studio C，直接錄成類比雙軌（沒有多軌混音那一層）。這一句是本張正文最值得寫的技術細節，而卡單與策展層都沒有。**",
+    "src": "https://api.discogs.com/releases/14639638"
+   },
+   {
+    "f": "**編制（Discogs 兩筆條目的 credits 欄逐字，四人、零客座、零逐軌標示）**：`Marcus Printup — Trumpet`（兼 `Producer`）、`Kevin Bales (2) — Piano`、`Ricky Ravelo — Bass`、`Woody Williams — Drums`。⚠ **另有 `Marcus Printup Quartet — Band`（宣傳盤）／`Marcus Printup Quartet — Ensemble [Jazz Quartet]`（俱樂部版）**——**那是編制標示不是掛名**（策展層第 1356(四) 條已判，本層覆核成立，變體進 `queryAlias`）。 **製作 `Bob Belden — Producer` ＋ Printup 自己**，錄音 `Jim Anderson`（助理 `Aya Takemura`），母帶 `Allan Tucker`（Foothill Digital），內頁 `Herb Wong — Liner Notes`，攝影 `Jimmy Katz` ＋ `Lisa Peardon`。**這一張可以寫固定編制。**",
+    "src": "https://api.discogs.com/releases/20801398"
+   },
+   {
+    "f": "**逐軌作曲（Discogs 14639638 逐字）**：〈Woody’s Beat〉**Marcus Printup**／〈Have You Met Miss Jones〉**Rodgers & Hart**／〈Shertzing Along〉**Marcus Printup**／〈Body & Soul〉**Johnny Green ＋ Edward Heyman ＋ Robert Sour ＋ Frank Eyton**／〈Black Coffee〉**Sonny Burke ＋ Paul Francis Webster**／〈Pier Pressure〉**Marcus Printup**／〈Nocturnal Traces〉**Marcus Printup**／〈Ain’t Misbehavin’〉**Fats Waller ＋ Andy Razaf**／〈How Do You Keep The Music Playing?〉**Michel Legrand ＋ Alan & Marilyn Bergman**／〈Freddie’s Inferno〉**Marcus Printup**。 **→ 十軌裡五軌自寫、五軌是標準曲。** ⚠ **第 1 軌〈Woody’s Beat〉的名字對應的正是本張鼓手 Woody Williams。**",
+    "src": "https://api.discogs.com/releases/14639638"
+   },
+   {
+    "f": "⚠ **宣傳盤帶完整日期，是本張唯一有日期的一筆。** **Discogs 14639638（US，`CDP 7243 4 9367623`，format 欄逐字 `CD [Album, Promo]`，notes 逐字「Promo imprinted on CD.」）的 `released` 欄逐字 `1998-09-08`。** ⚠ **照第 1297 條，宣傳盤的日期只能當下界**——**零售盤（俱樂部版 20801398 與 MB 的 `0d7116bd`）都只有年。** **→ 本張的 1998 成立，但拿不到零售街頭日。** **Discogs 上本張的條目全是 CD，沒有黑膠（通則 1）。**",
+    "src": "https://api.discogs.com/releases/14639638"
+   },
+   {
+    "f": "⚠⚠ **同期紙本：1998-10-24 p50 有整篇專欄，而且那一篇把他的來歷寫清楚了。** **Billboard 1998-10-24 第 50 頁的 Blue Notes 專欄是本張的主要紙本來源**（策展層第 1353 條已引）。 ⚠ **本層另補一則背景**：**Billboard 1999-01-16 p55 的 Blue Note 六十週年全版藝人名單逐字含 `Marcus Printup`**；**1999-07-03 p45 的「The NEXT 60」廣告則沒有他。** ⚠ **目錄號 `93676`／`9367623` 在 1998／1999 兩年零命中；盤名 `nocturnal traces` 兩年也零命中**——**第 1245 條的三種字串只有人名那一種有效。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-10-24.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `723509801`（us）回 **10 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同。**releaseDate `1998-01-01T08:00:00Z`（年頭回填形，不可用）、copyright 逐字 `℗ 1998 Blue Note Records`。** **→ 探測層判的 ready 抽核通過。** ⚠ **第 646 條檢查**：**本張的 `723509801` 與同批另外三張 Hagans／Printup 線的卡（`HubSongs` 724581109、`Animation / Imagination` 716371844、`Re-Animation Live!` 1444016626）四個 collectionId 互不相同，沒有共用。**",
+    "src": "https://itunes.apple.com/lookup?id=723509801&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Marcus Printup` 在池中有兩張卡，本張十軌與兩張逐軌零重疊。** ⚠ **與同批 b 組《HubSongs》（Tim Hagans & Marcus Printup，1998）**：**兩張同年、共用 Printup，但《HubSongs》是六重奏、本張是四重奏，班底完全不同（本張的 Bales／Ravelo／Williams 一個都不在《HubSongs》上），曲目零重疊。** ⚠⚠ **一處容易互抄的細節**：**本張第 10 軌叫〈Freddie’s Inferno〉、而《HubSongs》整張都是 Freddie Hubbard 的曲**——**兩張不得互抄**（策展層第 1359(7) 條已標，本層覆核成立：**本張的〈Freddie’s Inferno〉是 Printup 自己寫的，不是 Hubbard 的曲**）。 ⚠ **軌名撞卡名兩處**：〈Body & Soul〉＝seed 的 `William Onyeabor —《Body & Soul》`（另有數張同名卡）、〈Black Coffee〉＝seed 的 `Peggy Lee —《Black Coffee》`——**同名不同錄音，第 1049 條照收。**",
+    "src": "https://api.discogs.com/releases/14639638"
+   }
+  ],
+  "hookCandidates": [
+   "兩天錄完，而且是直接錄成類比雙軌的——盤上那一行逐字寫著「These sessions were recorded to analog 2-track」，等於現場一次定稿、沒有多軌混音那一層",
+   "第一軌叫〈Woody’s Beat〉，寫的就是碟上那個鼓手 Woody Williams；最後一軌叫〈Freddie’s Inferno〉，卻是 Printup 自己寫的曲，不是 Freddie Hubbard 的"
+  ],
+  "sound": "十軌的四重奏碟，1998 年 1 月 24、25 兩天在紐約 Avatar Studio C 錄成，而且盤上註明是直接錄成類比雙軌。編制固定四人：Printup 的小號、Kevin Bales 的鋼琴、Ricky Ravelo 的貝斯、Woody Williams 的鼓，沒有客座。製作 Bob Belden 與 Printup 本人，錄音 Jim Anderson，母帶 Allan Tucker 在 Foothill Digital，內頁 Herb Wong。曲目一半一半：五首自寫（〈Woody’s Beat〉〈Shertzing Along〉〈Pier Pressure〉〈Nocturnal Traces〉〈Freddie’s Inferno〉），五首標準曲（〈Have You Met Miss Jones?〉〈Body & Soul〉〈Black Coffee〉〈Ain’t Misbehavin’〉〈How Do You Keep the Music Playing?〉）。",
+  "keyTracks": [
+   "Nocturnal Traces",
+   "Woody’s Beat",
+   "Black Coffee",
+   "Freddie’s Inferno"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1998 成立，本層未改判；但零售街頭日拿不到，本張唯一帶日期的是宣傳盤。** (1) **MB first-release-date 1998**（只有年；兩筆 release 一筆只有年、一筆是空殼）。 (2) **Discogs 原壓群**：**美版宣傳盤 14639638 的 `released` 欄逐字 `1998-09-08`**（⚠ **照第 1297 條只能當下界**）、**美版俱樂部版 20801398 的 `year` 欄 1998**，`format` 欄除宣傳盤外乾淨。 (3) **同期紙本**：**Billboard 1998-10-24 p50 的整篇 Blue Notes 專欄**（策展層第 1353 條已引）；**1999-01-16 p55 的六十週年全版藝人名單逐字含 `Marcus Printup`。** (4) **盤面 ℗©**：companies 欄 `Capitol Records, Inc. — Phonographic Copyright (p)／Copyright (c)`。 (5) **店面**：Apple `723509801` copyright 逐字 `℗ 1998 Blue Note Records`（⚠ releaseDate `1998-01-01` 是年頭回填形，不採）。 ⚠ **錄音日 1998-01-24／25 與宣傳盤日期 1998-09-08 相差七個半月，時間軸自洽。** ⚠ **紙本三種字串**（第 1245 條）：**目錄號 `93676`／`9367623` 兩年零命中、盤名 `nocturnal traces` 兩年零命中（OCR 沒抓到）、只有人名 `marcus printup` 有效。**",
+  "notes": "**覆核策展層：rgMbid `0f3bc57e`／兩筆 release（`c65552b3` 是空殼）／掛名 `Marcus Printup`（`Marcus Printup Quartet` 是編制標示不是掛名，進 `queryAlias`）／年份 1998／十軌 全部成立。**｜⚠⚠ **本層補上策展層沒寫的兩件事**：(1) **錄音地點 ＝ 紐約 Avatar Studio C**（策展層只寫「錄音 1998-01-24／25」）；(2) ⚠⚠ **盤面逐字「These session were recorded to analog 2-track.」——直接錄成類比雙軌，沒有多軌混音那一層。這是本張正文最值得寫的技術細節。**｜⚠ **編制：四人固定、零客座，策展層寫對了**（⚠ 策展層註明「只有 Discogs 20801398 那一筆有 credits」——**本層另找到宣傳盤 14639638 也有完整 credits，而且它的逐軌作曲欄比俱樂部版完整**）。｜⚠ **作曲：十軌五自寫五標準曲；第 1 軌〈Woody’s Beat〉對應鼓手 Woody Williams。**｜⚠ **載體（通則 1）**：**Discogs 條目全是 CD，沒有黑膠。**｜**撞陳列 2 組**：(1) **與同批 b 組《HubSongs》(Tim Hagans & Marcus Printup, 1998)**——**同年、共用 Printup，但那張是六重奏、本張是四重奏，班底完全不同、曲目零重疊**；⚠⚠ **本層覆核策展層第 1359(7) 條的提醒並確認：本張第 10 軌〈Freddie’s Inferno〉的 written-by 逐字是 `Marcus Printup`，不是 Freddie Hubbard 的曲——兩張不得互抄。** (2) **與同批《Animation / Imagination》與《Re-Animation Live!》**（Hagans 那一脈），**四張卡兩兩共用 Hagans 或 Printup、班底與曲目零重疊，四卡 risk 互指。** ⚠ **軌名撞卡名兩處**：〈Body & Soul〉與〈Black Coffee〉在 seed 各有同名卡，**同名不同錄音、第 1049 條照收。**｜**試聽**：**串流採信 723509801**（us，10 軌逐軌相同、全部有 preview、discNumber 全 1）。⚠ **第 646 條檢查通過：本張與同批 Hagans／Printup 線另三張卡的 collectionId（724581109／716371844／1444016626）互不相同。**｜**封面**：CAA RG 層有圖，不必找替代。"
+ },
+ {
+  "key": "desc2:The Three Sounds|Standards",
+  "artist": "The Three Sounds",
+  "album": "Standards",
+  "facts": [
+   {
+    "f": "release-group `8d9e7608-4cae-3c7f-8015-162789c14dc6`：**MB 的 RG title 逐字是「Standards (Gene Harris, Andrew Simpkins, Bill Dowdy)」**（卡單取光的 `Standards`）、artist-credit「The Three Sounds」（`cf2115e9` Group）、**first-release-date 1998**（只有年）、primary-type Album、secondary-types 空，genres／tags 只有 `jazz`。**轄下只有一筆 release `903026eb`（1998 US Official CD 12 軌，Blue Note／`CDP 7243 8 21281 2 0`，bc 724382128120）**——⚠ **MB 沒有建日版 `TOCJ-6185`、也沒有建歐版。** **十二軌**：Makin’ Whoopee (262s)／Cry Me a River (382)／Witchcraft (390)／Again (362)／Sometimes I’m Happy (320)／Stay as Sweet as You Are (193)／The Best Things in Life Are Free (301)／Red Sails in the Sunset (278)／Alone Together (386)／Lights Out (350)／Thinking of You (281)／Goodnight, Ladies (203)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8d9e7608-4cae-3c7f-8015-162789c14dc6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **派工信要求覆核的三項硬證據，本層逐項核過，三項全部成立（逐字）。** **(1) 美版 notes**：**Discogs 10865519（US，`CDP 7243 8 21281 2 0` ＋ `CDP-21281`）的 notes 逐字最後一句「**All selections previously unissued.**」** **(2) 日版系列名**：**Discogs 11000148（JP，`Blue Note / TOCJ-6185` ＋ `Blue Note / (21281)`）的 labels 陣列逐字含 `The BN Works Unissued Series`。** **(3) obi**：**同一筆的 notes 逐字「**All tracks previously unissued. Obi claims world’s first issue.**」** **→ 第 1354 條的收件判準三項全部有來源，`7243 8 2128x` 四張《Standards》裡只有 `21281` 收下的裁定成立。**",
+    "src": "https://api.discogs.com/releases/11000148"
+   },
+   {
+    "f": "⚠⚠ **錄音場次：四場，跨兩年八個月，而且橫跨 Van Gelder 的兩個錄音室。** **Discogs 美版 10865519 與日版 11000148 的 notes 逐字完全相同**：「**Recorded on October 10, 1959 (#9-12) at The Van Gelder Studio, Hackensack, New Jersey and February 4 (#1, 5), June 27 (#2, 4, 7, 8) and June 28 (#3, 6), 1962 at The Van Gelder Studio Englewood Cliffs, New Jersey.**」 **→ 四場**：**1959-10-10（第 9–12 軌，Hackensack 舊棚）／1962-02-04（第 1、5 軌）／1962-06-27（第 2、4、7、8 軌）／1962-06-28（第 3、6 軌）（後三場在 Englewood Cliffs 新棚）。** **正文不得寫成一場錄完，也不得只寫一個錄音室。**",
+    "src": "https://api.discogs.com/releases/10865519"
+   },
+   {
+    "f": "**編制（Discogs 日版 11000148 的 credits 欄逐字，三人、四場同一組人）**：`Gene Harris — Piano`、`Andrew Simpkins — Bass`、`Bill Dowdy — Drums`。**原始製作 `Alfred Lion — Producer`、錄音 `Rudy Van Gelder — Engineer`；1998 年這一次 `Michael Cuscuna — Reissue Producer`、`Ron McMaster — Mastered By`（美版 10865519 作 `Remastered By`）、設計 `Patrick Roques`、封面照 `Francis Wolff`、內頁 `Bob Belden`（日版另加 `Takao Ogawa` 的日文解說）。** ⚠ **策展層第 1358(三) 條把本張列進「可以寫固定編制」是對的——四場都是同一個三人組。**",
+    "src": "https://api.discogs.com/releases/11000148"
+   },
+   {
+    "f": "⚠ **日版比美版早，但兩者同年。** **Discogs 11000148（JP，`TOCJ-6185`）的 `released` 欄逐字 `1998-01-28`**；**美版 10865519 與歐版 6095044／1149495（`7243 8 21281 2 0`，format 欄逐字 `CD, Album, Remastered`）都只有年 1998。** **→ 第 1063 條的方向在本張成立（日版早），但因為同年，不改 `year`、也不必改首發地記法（策展層第 1353 條已記）。** ⚠ **歐版的 labels 陣列逐字含兩個 Van Gelder 錄音室名**（`Van Gelder Studio, Hackensack, New Jersey` 與 `Van Gelder Studio, Englewood Cliffs, New Jersey`）——**那是 Discogs 把錄音地當成 label 條目掛上去的，不是廠牌。**",
+    "src": "https://api.discogs.com/releases/1149495"
+   },
+   {
+    "f": "⚠ **紙本三種字串全部零命中，兩年都掃過**（第 1245 條）：**目錄號 `21281`、掛名 `three sounds`、盤名 `standards` 在 `billboard-bn-1998-ocr.txt.gz` 與 `billboard-bn-1999-ocr.txt.gz` 六組查詢全部沒有本張的評介或榜位。** ⚠ **`standards` 是常見詞，1998 與 1999 年各有數十則命中，逐則核完全是「industry standards」「broadcast standards」之類的一般用語或別人的碟。** **→ 庫存首發的中價盤不進美國紙本是常態；策展層第 1353 條記的「紙本空白」本層覆核成立。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-01-31.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `723910693`（us）回 **12 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同。**releaseDate `1998-01-01T08:00:00Z`（年頭回填形）、copyright 逐字 `A Blue Note Records Release; This Compilation ℗ 1998 Capitol Records, LLC`。** ⚠⚠ **copyright 欄裡的 `This Compilation` 是 Apple 對庫存盤的通用措辭，不是「本張是合輯」的證據**——**本張的 Discogs `format` 欄逐字是 `CD, Album, Remastered`（乾淨），`secondary-types` 也是空的，而且十二軌全部未發行過。寫作層與上架層不得把 Apple 那一行讀成合輯。** ⚠ **探測層記的 `us:12→1` 表示 us 市場回了十二個結果只有一個對得上**——**盤名《Standards》在串流上撞得很凶（池中另有今田勝トリオ／Lee Morgan／Tommy Smith／Biréli Lagrène 等同名碟），上架必須帶掛名與 catno `21281`。**",
+    "src": "https://itunes.apple.com/lookup?id=723910693&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`The Three Sounds` 在池中有十六張卡，本張十二軌與十六張逐軌零重疊**（策展層第 1354 條已核，本層覆核成立：**十二軌全部未發行過，不可能與任何已發行的碟重疊**）。 ⚠ **軌名撞卡名八處（第 1181／1192 條第六種盲區，本張是本批最密的三張之一）**：〈Cry Me a River〉＝seed 的 `Dexter Gordon`／〈Alone Together〉＝**seed 四張（Tony Bennett／Karriem Riggins／Jennifer Koh／Jim Hall & Ron Carter）＋ `c154-cards.json` 的 Lee Konitz**／〈Lights Out〉＝seed 的 `UFO`。**全部是同名不同錄音，第 1049 條照收、正文不得互指。** ⚠ **同批 a 組另有三張 1998 年的《Standards》被退件（Jimmy Smith `21282`／Sonny Clark `21283`／Grant Green `21284`，第 1323 條）**——**本張是同號段四張裡唯一收下的，上架比對一律帶 catno。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8d9e7608-4cae-3c7f-8015-162789c14dc6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌全部從未發行過——美版內頁逐字「All selections previously unissued」，日版的系列名直接叫 The BN Works Unissued Series，腰帶上還印著「世界初發売」",
+   "四場錄音跨了兩年八個月：1959 年 10 月 10 日在 Hackensack 的舊棚錄了最後四軌，其餘八軌是 1962 年 2 月與 6 月在 Englewood Cliffs 的新棚錄的——同一個三人組，兩個 Van Gelder 錄音室"
+  ],
+  "sound": "十二軌的庫存首發盤，四場錄音全部是 Gene Harris 的鋼琴、Andrew Simpkins 的貝斯、Bill Dowdy 的鼓這同一個三人組。1959 年 10 月 10 日在 Hackensack 的 Van Gelder 舊棚錄下第 9 到 12 軌，1962 年 2 月 4 日錄第 1、5 軌，6 月 27 日錄第 2、4、7、8 軌，6 月 28 日錄第 3、6 軌——後三場在 Englewood Cliffs 的新棚。原始製作 Alfred Lion，錄音 Rudy Van Gelder；1998 年這一次由 Michael Cuscuna 擔任再發製作、Ron McMaster 做母帶，封面照仍是 Francis Wolff 的，設計 Patrick Roques。曲目全是標準曲：〈Makin’ Whoopee〉〈Cry Me a River〉〈Witchcraft〉〈Alone Together〉〈Lights Out〉等。",
+  "keyTracks": [
+   "Cry Me a River",
+   "Alone Together",
+   "Makin’ Whoopee",
+   "Witchcraft"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1998 成立，本層未改判。** (1) **MB first-release-date 1998**（只有年；唯一那筆 release `903026eb` 也只有年）。 (2) **Discogs 原壓群**：**日版 `TOCJ-6185` 的 `released` 欄逐字 `1998-01-28`（本張唯一帶完整日期的一筆）**、**美版 10865519 與歐版 6095044／1149495 的 `year` 欄都是 1998**，**`format` 欄逐字 `CD, Album, Remastered`（乾淨，不是 Compilation）。** (3) **盤面**：**美版 notes 逐字「All selections previously unissued.」**——**沒有先前發行年可以當替代候選，1998 就是首次商業發行年。** (4) **店面**：Apple `723910693` copyright 逐字 `A Blue Note Records Release; This Compilation ℗ 1998 Capitol Records, LLC`（⚠ **`This Compilation` 是 Apple 對庫存盤的通用措辭，不是合輯證據**；⚠ releaseDate `1998-01-01` 是年頭回填形，不採）。 ⚠⚠ **錄音年是 1959–1962，與發行年差三十六年**——**本張是 (甲) 庫存首發，`year` 取首次商業發行年 1998，與第 1354 條的裁定一致。** ⚠ **日版早於美版但同年，不改首發地記法。** ⚠ **紙本三種字串全部零命中**（第 1245 條）：`21281`／`three sounds`／`standards` 在 1998 與 1999 兩年六組查詢都沒有本張；⚠ **`standards` 是常見詞，兩年各有數十則一般用語的假命中。**",
+  "notes": "**覆核策展層：rgMbid `8d9e7608`／唯一 release `903026eb`／掛名 `The Three Sounds`／盤名取光的 `Standards`（MB 的 RG title 帶三人名，Discogs 與 Apple 都只有 `Standards`）／年份 1998／十二軌 全部成立。**｜⚠⚠ **派工信要的三項硬證據，本層逐項核過、三項全部逐字成立**：**(1) 美版 notes「All selections previously unissued.」（Discogs 10865519）**；**(2) 日版 labels 陣列逐字 `The BN Works Unissued Series`（Discogs 11000148）**；**(3) 同一筆 notes 逐字「All tracks previously unissued. Obi claims world’s first issue.」** **→ 第 1354 條「`7243 8 2128x` 四張《Standards》裡只有 `21281` 收下」的裁定，證據鏈完整。**｜⚠⚠ **本層補上策展層沒寫的錄音場次細節**：**策展層寫「四場（1959-10-10、1962-02-04、1962-06-27、1962-06-28），同一個三人組」——本層補上軌號分配與兩個錄音室**：**1959-10-10 在 Hackensack 舊棚錄第 9–12 軌，1962 年三場在 Englewood Cliffs 新棚（02-04 錄第 1、5 軌；06-27 錄第 2、4、7、8 軌；06-28 錄第 3、6 軌）。正文不得只寫一個錄音室。**｜⚠ **編制：三人固定、四場同編制，策展層寫對了。** **1998 年這一次的職務要分清：`Alfred Lion — Producer` 是原始製作、`Michael Cuscuna — Reissue Producer` 是這一次的（第 1354 條已用它當判準之一）。**｜⚠ **載體（通則 1）**：**Discogs 上本張只有美版、歐版兩筆與日版一筆，全是 CD，沒有黑膠。**｜⚠⚠ **Apple 的 copyright 欄有「This Compilation」字樣**——**那是通用措辭不是合輯證據**（Discogs `format` 欄乾淨、MB `secondary-types` 空、十二軌全未發行）。**寫作層與上架層不得誤讀。**｜**撞陳列**：**池中 `The Three Sounds` 十六張卡，本張十二軌與十六張逐軌零重疊**（十二軌全未發行過，掃 27750 列確認）。 ⚠ **軌名撞卡名八處（本批最密的三張之一）**：〈Cry Me a River〉＝seed 的 Dexter Gordon／〈Alone Together〉＝**seed 四張（Tony Bennett／Karriem Riggins／Jennifer Koh／Jim Hall & Ron Carter）＋ c-154 的 Lee Konitz**／〈Lights Out〉＝seed 的 UFO——**全部同名不同錄音，第 1049 條照收、正文不得互指。** ⚠ **同號段另三張《Standards》已被 a 組退件（第 1323 條），上架比對一律帶 catno `21281`。**｜**試聽**：**串流採信 723910693**（us，12 軌逐軌相同、全部有 preview、discNumber 全 1）；⚠ **探測層記的 `us:12→1`——盤名在串流上撞得很凶，上架必須帶掛名與 catno。**｜**封面**：⚠⚠ **CAA RG 層真 404**（`https://coverartarchive.org/release-group/8d9e7608-4cae-3c7f-8015-162789c14dc6` 連探三次全部回 404，第 589a 條已排除 5xx）。**替代來源＝Discogs 美版 `10865519` 的 `images[0]`，已確認 `type` 逐字是 `primary`、尺寸 598×600、該條目共 6 圖**；**日版 `11000148` 的 primary 只有 600×525、圖數 4，次選。研究層不下載，本機端自行取用。**"
+ },
+ {
+  "key": "desc2:Charlie Hunter & Pound For Pound|Return of the Candyman",
+  "artist": "Charlie Hunter & Pound For Pound",
+  "album": "Return of the Candyman",
+  "facts": [
+   {
+    "f": "release-group `3a2b6905-91d8-3f54-ba67-6da470b2cb41`：title「Return of the Candyman」、artist-credit「Charlie Hunter & Pound For Pound」（`4a38384b`，**MB 上是一個獨立的 Group 實體，不是兩個 credit 拼起來的**）、**first-release-date `1998-03-10`**、primary-type Album、secondary-types 空，genres／tags 只有 `jazz`。**轄下只有一筆 release `1fbd9cd4`（`1998-03-10` US Official CD 13 軌，Blue Note／`CDP 7243 8 23108 2 2`，bc 724382310822）。** **十三軌**：Bongo Confront (80s)／Enter the Dragon (369)／Fly Like an Eagle (271)／Dope‐a‐licious (286)／Mystic Relaxation (67)／Return of the Candyman (311)／Pound for Pound (397)／**Grinch Comfort (38)**／People (401)／Shake, Shake It Baby (114)／Turn Me Loose (411)／Huggy Bear (309)／**Of Things to Come (84)**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3a2b6905-91d8-3f54-ba67-6da470b2cb41&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **編制四人，而且沒有貝斯手——低音全靠八弦吉他。** **Discogs 美版 1814643 與歐版 1939958 的 credits 欄逐字**：**`Charlie Hunter — Guitar [8-string]`**、**`Stefon Harris — Vibraphone`**、**`Scott Amendola — Drums`**、**`John Santos — Percussion`**——**四個人，credits 欄裡沒有任何 `Bass`。** **製作 `Lee Townsend — Producer`（另有兩位 `Producer [Production Assistance]`），錄音與混音工程 `Christian Jones`（助理 `Adam Muñoz`），母帶 `Greg Calbi`，美術 `Patrick Roques`，封面插畫 `Hungry Dog Studio`。** **這一張可以寫固定編制；正文可以寫「沒有貝斯手」。**",
+    "src": "https://api.discogs.com/releases/1814643"
+   },
+   {
+    "f": "**錄音地點（Discogs 歐版 1939958 的 notes 逐字三行）**：「**Recorded at Mobious Music, San Francisco | Mixed at Different Fur Recordings, San Francisco | Mastered at Masterdisk, NYC**」，companies 欄逐字 `Mobius Music — Recorded At`、`Different Fur Studios — Mixed At`、`Masterdisk — Mastered At`。 ⚠ **沒有任何條目給錄音日期**——**正文可以寫「在舊金山錄、在紐約做母帶」，不得寫錄音日。** ⚠ **notes 裡的 `Mobious` 是盤面拼錯，companies 欄的正確拼法是 `Mobius Music`。**",
+    "src": "https://api.discogs.com/releases/1939958"
+   },
+   {
+    "f": "⚠ **題獻對象不是樂手，不得寫進編制。** **美版與歐版的 notes 逐字都有一行**：「**In loving memory of Calder Spanier: January 29 1966 - December 4 1997.**」——**Calder Spanier 是 Hunter 前一個編制的中音薩克斯風手，1997 年 12 月 4 日過世**（策展層第 1358(三) 條已點名，本層覆核成立）。 **→ 這一行同時是本張的時間下界：錄音必定在 1997 年 12 月 4 日之後、發行日 1998-03-10 之前。**",
+    "src": "https://api.discogs.com/releases/1814643"
+   },
+   {
+    "f": "⚠⚠ **同期紙本兩則，而且第一則逐字解釋了為什麼這張碟沒有管樂。** **(1) Billboard 1998-03-28 第 15 頁逐字**：「For \"Candyman,\" his fourth Blue Note release, Hunter has (at least temporarily) **retired his alto/tenor saxophone front line**; \"Candyman\" has him joined by longtime drummer Scott Amendola, percussionist John Santos, and **rising star vibraphonist Stefon Harris**. According to Hunter, **the inspiration for this project was the vibraphone**…「I play a kind of nutty, fringe instrument [eight-string…]」」 **(2) Billboard 1998-04-04 第 60 頁的評介逐字**：「**CHARLIE HUNTER & POUND FOR POUND — Return Of The Candyman — PRODUCER: Lee Townsend — Blue Note 7243 8 23108** … **Sans horns**, vibe sensation Stefon Harris, drum virtuoso Scott Amendola, and versatile percussionist John Santos weave an understated, sensual web of rhythm and texture…」 **→ 掛名（榜欄形 `CHARLIE HUNTER & POUND FOR POUND`）、製作人、目錄號、編制四件事一次對上。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-03-28.pdf"
+   },
+   {
+    "f": "⚠⚠ **試聽：探測層判 `unavailable`，本層跑完三種查法的結論是「條目存在但沒有可播放的軌」。** **(1) `search` `artist+album`：us 與 gb 零結果，jp 與 fr 回 25 筆但一筆都對不上。** **(2) `search` `album`（`Return of the Candyman`）：四個市場都只回 2–3 筆，唯一的「match」是 2025 年的 `Elisa & The Candyman —《Return of The Damned - Single》`——**錯碟。** **(3) `lookup?upc=724382310822`：us／jp／fr／gb 四個市場都命中 `724049030`**，`collectionName` 逐字「Return of the Candyman」、`artistName` 逐字「Charlie Hunter, Pound For Pound & Scott Amendola」、`trackCount` 13、releaseDate `1998-01-01`、copyright `℗ 1998 Blue Note Records`。 ⚠⚠ **但 `lookup?id=724049030&entity=song` 在 us／jp／fr／gb／ca 五個市場全部只回 collection、`songs` 陣列為 0、`previewUrl` 一個都沒有**——**條目在架上、軌卻不可播。** **→ 本張判「查無可用試聽」，不是「查無條目」；第 1067／1158 條那句「找到條目不等於有預覽」在本張是反向樣本。**",
+    "src": "https://itunes.apple.com/lookup?upc=724382310822&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **`apple-candidates.md` 為本張列的兩個候選裡，`724049030` 就是上面那個不可播的條目、`738353763`《Duo》1999（10 軌）是別的碟。** **該檔標註「依據：盤名＋年份」的那一筆確實指對了 id，但探測層與本層都無法從它取得 previewUrl。** **→ 本張走固定無來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=724049030&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列。** ⚠ **與同批 b 組 Stefon Harris《Black Action Figure》(1999)**：**本張第 13 軌〈Of Things to Come〉（84 秒）與那張第 4 軌〈Of Things to Come〉（342 秒）同名，而且 Harris 本人在本張擔任顫音琴**——**同一首 Harris 寫的曲，1998 年 Hunter 四重奏版 vs 1999 年 Harris 自己的版本，兩個錄音、長度差四倍。第 1049 條照收，兩卡 risk 互指**（策展層第 1359(3) 條已標，本層覆核成立）。 ⚠ **與同批 a 組 Stefon Harris《A Cloud of Red Dust》(1998) 也要互指**（Harris 同年既出領班碟又當本張的側人）。 ⚠ **軌名撞卡名四處**：〈Enter the Dragon〉＝seed 的 `Lalo Schifrin`／〈Fly Like an Eagle〉＝seed 的 `Steve Miller Band`／〈People〉＝seed 的 `James Brown` 與 `Barbra Streisand` 兩張——**同名不同錄音，第 1049 條照收。** ⚠ **池中既有 `Charlie Hunter Trio` 與 `Charlie Hunter Quartet` 兩個掛名字串，本張是第三個字串（第 1131 條，不是新造分裂）。**",
+    "src": "https://api.discogs.com/releases/1939958"
+   }
+  ],
+  "hookCandidates": [
+   "四個人、沒有貝斯手——低音全在 Charlie Hunter 那把八弦吉他上；Billboard 的專欄逐字說他這一次「暫時把中音與次中音薩克斯風的前線退掉了」，靈感來源是顫音琴",
+   "內頁有一行題獻：紀念 Calder Spanier，1966 年 1 月 29 日至 1997 年 12 月 4 日——他是 Hunter 前一個編制的中音薩克斯風手，這張碟等於是在他走後重組的"
+  ],
+  "sound": "十三軌，四人編制，沒有貝斯手。Charlie Hunter 的八弦吉他同時負責低音與和聲，Stefon Harris 打顫音琴，Scott Amendola 打鼓，John Santos 負責打擊。錄音在舊金山的 Mobius Music，混音在同城的 Different Fur，母帶由 Greg Calbi 在紐約 Masterdisk 做，製作 Lee Townsend。十三軌長短極不均：〈Bongo Confront〉八十秒、〈Grinch Comfort〉三十八秒、〈Of Things to Come〉八十四秒是三段短插曲，其餘多在五到七分鐘。內頁題獻給 1997 年 12 月過世的中音薩克斯風手 Calder Spanier。",
+  "keyTracks": [
+   "Return of the Candyman",
+   "Pound for Pound",
+   "Enter the Dragon",
+   "Huggy Bear"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1998 成立，本層未改判，而且這是本組證據最硬的一筆（街頭日與評介都在紙本上、與 MB frd 逐日相符）。** (1) **同期紙本（階序最上層）**：**Billboard 1998-03-28 p15 的專欄**（講本張的編制與構想）＋**1998-04-04 p60 的整則評介，廠牌欄逐字 `Blue Note 7243 8 23108`、製作人欄逐字 `PRODUCER: Lee Townsend`**——**兩則都在發行月內。** (2) **MB first-release-date `1998-03-10`**（唯一那筆 release `1fbd9cd4` 的日期逐日相同），**與 Billboard 03-28 那一則的街頭日口徑相符**（策展層第 1353 條已記）。 (3) **榜位**：**04-04 起 TOP JAZZ ALBUMS 連四期在榜**（策展層已核）。 (4) **Discogs 原壓群**：**以 barcode `724382310822` 反查回五筆——美版 131850 與 1814643、歐版 1939958、美版 Advance 宣傳盤 37183740、美版俱樂部版 5462014，`year` 欄全是 1998**，`format` 欄除宣傳盤外乾淨；**歐版 notes 逐字「℗© 1998」。** (5) **時間下界**：**題獻行逐字「In loving memory of Calder Spanier: January 29 1966 - December 4 1997.」——錄音必在 1997-12-04 之後。** (6) **店面**：Apple `724049030` copyright 逐字 `℗ 1998 Blue Note Records`（⚠ releaseDate `1998-01-01` 是年頭回填形，不採）。 ⚠ **紙本三種字串**（第 1245 條）：**目錄號 `23108` 命中評介那一則**；**人名 `charlie hunter` 與盤名 `candyman` 兩種也都有效**——**本組少數三種都命中的一張。**",
+  "notes": "**覆核策展層：rgMbid `3a2b6905`／唯一 release `1fbd9cd4`／聯名 `Charlie Hunter & Pound For Pound`（MB 上是獨立 Group 實體，Billboard 榜欄逐字同形，第 1356(三) 條）／年份 1998-03-10／十三軌 全部成立。**｜⚠⚠ **編制：四人固定、沒有貝斯手**——**Discogs 美歐兩版的 credits 欄逐字只有 `Charlie Hunter — Guitar [8-string]`、`Stefon Harris — Vibraphone`、`Scott Amendola — Drums`、`John Santos — Percussion`，沒有任何 `Bass` 欄。** **Billboard 1998-03-28 p15 逐字「Hunter has (at least temporarily) retired his alto/tenor saxophone front line」與 04-04 p60 逐字「Sans horns」兩則互相印證。正文可以寫「沒有貝斯、沒有管樂」。**｜⚠ **本層補上策展層沒寫的錄音地點**：**舊金山 Mobius Music 錄音、Different Fur 混音、紐約 Masterdisk 母帶**（歐版 notes 逐字；⚠ 盤面把 `Mobius` 拼成 `Mobious`）。**沒有任何條目給錄音日期，不得自行補；下界是 1997-12-04。**｜⚠ **`Calder Spanier` 是題獻對象不是樂手**（策展層第 1358(三) 條已點名，本層覆核成立）。｜⚠ **載體（通則 1）**：**五筆 Discogs 條目全是 CD（digipak），沒有黑膠。**｜⚠⚠ **試聽：本層判「查無可用試聽」，走固定無來源狀態。** **三種查法跑滿**：`artist+album` 在 us／gb 零結果、jp／fr 回 25 筆無一對得上；`album` 四市場唯一的「match」是 2025 年的 `Elisa & The Candyman —《Return of The Damned - Single》`（錯碟）；**`lookup?upc=724382310822` 四市場都命中 `724049030`，但 `lookup?id=724049030&entity=song` 在 us／jp／fr／gb／ca 五個市場全部回 `songs` 陣列為 0、零 previewUrl**——**條目在架上、軌不可播。** **→ 這是第 1067／1158 條的反向樣本：不是「找到條目就有預覽」，而是「找到條目卻沒有任何可播放的軌」。** ⚠ **`apple-candidates.md` 的兩個候選裡，`724049030` 就是這個不可播的條目、`738353763`《Duo》1999 是別的碟。**｜**撞陳列 2 組**：(1) ⚠ **與同批 b 組《Black Action Figure》(1999)**——**本張第 13 軌〈Of Things to Come〉（84 秒）與那張第 4 軌同名（342 秒），同一首 Stefon Harris 寫的曲、兩個錄音**，**而且 Harris 本人在本張擔任顫音琴**；**第 1049 條照收，兩卡 risk 互指。** (2) **與同批 a 組《A Cloud of Red Dust》(1998)**——**Harris 同年既出領班碟又當本張側人，兩卡 risk 互指。** ⚠ **軌名撞卡名四處**（〈Enter the Dragon〉＝Lalo Schifrin／〈Fly Like an Eagle〉＝Steve Miller Band／〈People〉＝James Brown 與 Barbra Streisand，全在 seed），**同名不同錄音、第 1049 條照收。** ⚠ **池中既有 `Charlie Hunter Trio` 與 `Charlie Hunter Quartet`，本張是第三個掛名字串（第 1131 條，不是分裂），三卡上架須帶 catno。**｜**封面**：CAA RG 層有圖，不必找替代（⚠ Discogs 美版 1814643 的 `images[0]` 是 `primary` 600×534、歐版 1939958 是 `primary` 600×546，可當備案）。"
+ },
+ {
+  "key": "desc2:Mose Allison|Gimcracks and Gewgaws",
+  "artist": "Mose Allison",
+  "album": "Gimcracks and Gewgaws",
+  "facts": [
+   {
+    "f": "release-group `67a09e87-193e-384f-b8cc-a3c4d994a42f`：title「Gimcracks and Gewgaws」、artist-credit「Mose Allison」（`18b76828` Person）、**first-release-date 1998**（只有年）、primary-type Album、secondary-types 空，genres／tags `cool jazz`＋`jazz`。**轄下兩筆 release，同 barcode `724382321125`**：`21df640e`（1998 US CD 14 軌，Blue Note／`CDP 7243 8 23211 2 5`）與 `2efc49c7`（1998 NL CD 14 軌，**無 catno**）——第 1364(4) 條那種「多個國別條目共用同一個 barcode」。**十四軌**：MJA Jr. (213s)／Gimcracks and Gewgaws (314)／Numbers on Paper (155)／Cruise Control (179)／St. Louis Blues (245)／Mockingbird (183)／The More You Get (173)／Texanna (149)／What Will It Be (191)／So Tired (243)／Somebody Gonna Have to Move (117)／Fires of Spring (210)／What’s With You (212)／Old Man Blues (92)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=67a09e87-193e-384f-b8cc-a3c4d994a42f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音場次：兩天，紐約 Sony Studios——策展層完全沒寫。** **Discogs 美版 11426209（`7243 8 23211 2 5`）的 notes 逐字第一行**：「**Recorded at Sony Studios | New York on May 17 & 18, 1997**」。 ⚠⚠ **同一段 notes 還逐字附了兩個字典定義**：「**gimcrack \\ n: a showy object of little use or value.**」與「**gewgaw \\ n: a showy trifle bauble, trinket.**」——**盤面自己解釋盤名。這是本張正文最好用的一個細節，而卡單與策展層都沒有。**",
+    "src": "https://api.discogs.com/releases/11426209"
+   },
+   {
+    "f": "**編制（Discogs 11426209 的 credits 欄逐字，五人、零逐軌標示）**：`Mose Allison — Piano, Vocals`、**`Mark Shim — Saxophone [Tenor]`**、**`Russell Malone — Guitar`**、`Ratzo B. Harris — Bass`、**`Paul Motian — Drums`**。**製作 `Ben Sidran — Producer`（不是 Allison 自己），錄音 `James Farber`（助理 `Ryan Hewitt`），母帶 `Greg Calbi`，美術 `Darcy Cloutier-Fernald`，攝影 `Bill Phelps`。** ⚠ **策展層第 1358(三) 條提醒「Billboard 只說 Mark Shim 是 `featured role`，不得寫死五重奏全程」——本層覆核**：**Discogs 的 credits 欄沒有任何逐軌標示，五個人並列。** **→ 兩邊都不要寫死：可以寫「五個人」，不要寫「五重奏全程」也不要寫「Shim 只客串」。**",
+    "src": "https://api.discogs.com/releases/11426209"
+   },
+   {
+    "f": "**作曲**：`Mose Allison — Written-By [1 to 4, 6 to 14]`——**十四軌裡十三軌是他自己寫的**；**第 5 軌〈St. Louis Blues〉是 W. C. Handy 的曲，Discogs 逐軌欄逐字只掛 `Mose Allison — Arranged By`（編曲）。** **→ 一張七十歲老將的碟，十三首新作加一首藍調老曲的改編。**",
+    "src": "https://api.discogs.com/releases/11426209"
+   },
+   {
+    "f": "⚠⚠ **同期紙本把街頭日釘到日，而且那一句是靠別張碟釘出來的。** **Billboard 1998-01-31 第 61 頁逐字寫本張「**to be released the same day as *Mind Over Matter***」**——**而《Mind Over Matter》（Mark Shim 的 Blue Note 首作）的街頭日 `1998-01-27` 是 c-154 b 第 1292 條用同一頁釘死的。** **→ 兩張碟共用一句話：本張的街頭日因此也是 `1998-01-27`。** ⚠ **而且 Mark Shim 正是本張的次中音薩克斯風手——同一天發的兩張碟，一張是他的首作、一張是他當側人的碟。** **第二則**：**Billboard 1998-02-07 p73 的評介**（策展層第 1353 條已引）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-01-31.pdf"
+   },
+   {
+    "f": "⚠⚠ **紙本誤讀要擋住：1998 年 Mose Allison 在 Billboard 上另有一張別廠的再發選輯。** **Billboard 1998-08-08 p20 的 `VITAL REISSUES` 欄與 1998-12-26 p132 的年終名單上的 Mose Allison 是《The Sage Of Tippo》（32 Records `32068`，Atlantic 時期的再發選輯）**，**不是本張**（策展層第 1360(4) 條已標，本層覆核成立）。 **→ 查 `mose allison` 在 1998 年的命中一律要核廠牌欄：`Blue Note 23211` 才是本張，`32 Records 32068` 是別的碟。** ⚠ **這是第 1271 條「同一位藝人同年兩張碟」在本段的第五、六次。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-08-08.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `275398994`（us）回 **14 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同。⚠⚠ **releaseDate 標 `1997-01-01T00:00:00Z`——整整歪一年，而且是年頭回填形（第 1300 條歪法 1＋2 同時中）**；**copyright 逐字 `℗ 1998 Blue Note` 才是對的。** **→ 本張的 Apple 條目只能當試聽來源，releaseDate 欄不可引。** **探測層判的 ready 抽核通過（14 軌＝實體盤形）。**",
+    "src": "https://itunes.apple.com/lookup?id=275398994&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Mose Allison` 在池中有三張卡，本張十四軌與三張逐軌零重疊**（十三軌是 1997 年的新作）。**四卡 risk 互指。** ⚠ **軌名撞卡名一處**：〈St. Louis Blues〉＝seed 的 `Aki Takase —《St. Louis Blues》`——**同名不同錄音，第 1049 條照收。** ⚠ **側人撞陳列**：**Mark Shim 的 Blue Note 首作《Mind Over Matter》已在 c-154 b 收下，兩張同一天發行**——**兩卡 risk 應互指；另 `Paul Motian` 與 `Russell Malone` 在池中各有卡，那是側人不是撞碟。**",
+    "src": "https://api.discogs.com/releases/11426209"
+   }
+  ],
+  "hookCandidates": [
+   "盤面自己附了字典：gimcrack 是「華而不實、沒什麼用的東西」，gewgaw 是「廉價的小飾物」——兩個字都印在內頁上",
+   "這張碟和 Mark Shim 的 Blue Note 首作同一天上架，而 Shim 就是這張碟上吹次中音的那個人——Billboard 那一句「to be released the same day as Mind Over Matter」同時釘死了兩張碟的日期"
+  ],
+  "sound": "十四軌，1997 年 5 月 17、18 兩天在紐約 Sony Studios 錄成。五個人：Allison 自己彈鋼琴兼唱歌，Mark Shim 吹次中音薩克斯風，Russell Malone 彈吉他，Ratzo B. Harris 彈貝斯，Paul Motian 打鼓；來源沒有逐軌標示。製作 Ben Sidran，錄音 James Farber，母帶 Greg Calbi。十四軌裡十三軌是 Allison 自己寫的新作，第 5 軌〈St. Louis Blues〉是 W. C. Handy 的老藍調，由他自己改編。曲子都很短，最長的〈Gimcracks and Gewgaws〉也只有五分十四秒，最短的〈Old Man Blues〉九十二秒。",
+  "keyTracks": [
+   "Gimcracks and Gewgaws",
+   "Numbers on Paper",
+   "St. Louis Blues",
+   "Old Man Blues"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1998 成立，本層未改判，街頭日可以精確到日（`1998-01-27`），而且那一天是靠同期的另一張碟釘出來的。** (1) **同期紙本（階序最上層）**：**Billboard 1998-01-31 p61 逐字寫本張「to be released **the same day as *Mind Over Matter***」**，**而《Mind Over Matter》（Mark Shim，Blue Note）的街頭日 `1998-01-27` 是 c-154 b 第 1292 條用同一頁釘死的**——**兩張碟共用一句話。** **第二則：1998-02-07 p73 的評介。** (2) **MB first-release-date 1998**（只有年；兩筆 release 都只有年）。 (3) **Discogs 原壓群**：**美版 11426209（`7243 8 23211 2 5`）與美版 Advance 宣傳盤 18605413（`CDP 7243 8 23211 2 5 V`）的 `year` 欄都是 1998**，`format` 欄除宣傳盤外乾淨。 (4) **盤面 ℗©**：companies 欄 `Capitol Records, Inc. — Phonographic Copyright (p)／Copyright (c)`。 (5) **店面**：Apple `275398994` copyright 逐字 `℗ 1998 Blue Note`。 ⚠⚠ **反向證據：Apple 的 releaseDate 標 `1997-01-01`——整整歪一年，而且是年頭回填形（第 1300 條歪法 1＋2 同時中，策展層第 1353 條已標）。不採。** ⚠ **錄音日 1997-05-17／18 與街頭日差八個月，時間軸自洽。** ⚠⚠ **紙本誤讀必須擋住**（第 1360(4) 條，本層覆核成立）：**1998-08-08 p20 的 `VITAL REISSUES` 欄與 12-26 p132 年終名單上的 Mose Allison 是《The Sage Of Tippo》（32 Records `32068`，Atlantic 時期的再發選輯），不是本張。** **查 `mose allison` 的命中一律要核廠牌欄。**",
+  "notes": "**覆核策展層：rgMbid `67a09e87`／兩筆 release（美版與荷版共用 barcode `724382321125`，第 1364(4) 條）／掛名 `Mose Allison`／年份 1998／十四軌 全部成立。**｜⚠⚠ **本層補上策展層完全沒寫的兩件事**：(1) **錄音場次 ＝ 1997 年 5 月 17、18 兩天，紐約 Sony Studios**（Discogs 美版 notes 逐字）；(2) ⚠⚠ **盤面自己附了盤名的字典定義**：**「gimcrack \\ n: a showy object of little use or value.」與「gewgaw \\ n: a showy trifle bauble, trinket.」**——**這是本張正文最好用的細節。**｜⚠ **編制：五人，但來源沒有逐軌標示。** **策展層提醒「Billboard 只說 Mark Shim 是 `featured role`，不得寫死五重奏全程」——本層覆核：Discogs 的 credits 欄五個人並列、零逐軌欄。兩個方向都不要寫死。** **本層要補的是製作人——`Ben Sidran — Producer`，不是 Allison 自己。**｜⚠ **作曲：十四軌裡十三軌自寫，第 5 軌〈St. Louis Blues〉是 W. C. Handy 的曲、Allison 只掛 `Arranged By`。**｜⚠ **載體（通則 1）**：**Discogs 條目全是 CD，沒有黑膠。**｜⚠ **Apple 的 releaseDate 整整歪一年（`1997-01-01`），只有 copyright 的 `℗ 1998 Blue Note` 可用。**｜**撞陳列 2 組**：(1) **與池中三張 `Mose Allison` 卡**——**本張十四軌與三張逐軌零重疊，四卡 risk 互指**（掃 27750 列）；(2) ⚠ **與 c-154 b 已收的 Mark Shim《Mind Over Matter》**——**兩張同一天發行，而 Shim 是本張的次中音薩克斯風手**，**兩卡 risk 應互指。** ⚠ **軌名撞卡名一處**：〈St. Louis Blues〉＝seed 的 `Aki Takase`，**同名不同錄音、第 1049 條照收。**｜**試聽**：**串流採信 275398994**（us，14 軌逐軌相同、全部有 preview、discNumber 全 1）。｜**封面**：CAA RG 層有圖，不必找替代（⚠ Discogs 美版 11426209 的兩張圖都是 `secondary` 且只有 301×300——**本線第七次遇到「條目所有圖都是 secondary」，若日後要換替代來源要另找。**）"
+ },
+ {
+  "key": "desc2:Tim Hagans & Marcus Printup|HubSongs",
+  "artist": "Tim Hagans & Marcus Printup",
+  "album": "HubSongs",
+  "facts": [
+   {
+    "f": "release-group `e2c0b6ec-b35b-4cb3-946a-2d07caff3e6b`：title「HubSongs」、artist-credit **兩段**「Tim Hagans」（`214d780e` Person）＋「Marcus Printup」（`1dc4b2f8` Person）、**first-release-date 1998**（只有年）、primary-type Album、secondary-types 空，genres／tags `hard bop`／`jazz`／`post-bop`。**轄下只有一筆 release `06cae167`（1998 US Official CD 10 軌，**無 barcode**，Blue Note／`CDP 7243 8 **59059** 2 6`）。** ⚠⚠ **MB 的目錄號誤植**：**正盤逐字是 `CDP 7243 8 **59509** 2 6`**（Discogs 美版 6001777），**中間兩位數 `50`／`05` 對調**（第 1364(5) 條，策展層已標，本層覆核成立）。**十軌**：Backlash (434s)／Happy Times (319)／Hub Cap (265)／Lament for Booker (356)／On the Que-Tee (421)／Crisis (514)／Byrdlike (307)／Thermo (390)／Up Jumped Spring (271)／Life Flight (653)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e2c0b6ec-b35b-4cb3-946a-2d07caff3e6b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音場次：兩天，1997 年 8 月 1 與 2 日，紐約 Avatar Studio C——策展層沒寫。** **Discogs 美版 6001777 的 notes 逐字一行「Recorded August 1-2, 1997」**；**日版 12011745（`TOCJ-6167`）的 notes 逐字「Recorded August 1 and 2, 1997.」，companies 欄另逐字給出 `Avatar Studio C — Recorded At`、`Avatar Studio C — Mixed At`、`Foothill Digital — Mastered At`。** ⚠ **Avatar Studio C 也正是同批 b 組《Nocturnal Traces》的錄音室（1998-01-24／25），兩張相隔五個半月、班底不同**——**第 855／861 條：錄音室相同只是必要條件。**",
+    "src": "https://api.discogs.com/releases/12011745"
+   },
+   {
+    "f": "⚠⚠ **編制：五人固定、兩位客座逐軌，而且 Freddie Hubbard 一個音都沒吹。** **Discogs 日版 12011745 的 credits 欄逐字**：**全張五人**——`Tim Hagans — Trumpet [Left Channel]`、`Marcus Printup — Trumpet [Right Channel]`（⚠ **盤面連左右聲道都標了**）、`Benny Green — Piano`、`Peter Washington — Bass`、`Kenny Washington — Drums`；**逐軌客座兩位**——**`Vincent Herring — Alto Saxophone [1, 5, 10]`**、**`Javon Jackson — Tenor Saxophone [2, 6, 8]`**。 ⚠⚠ **`Freddie Hubbard — Arranged By, Producer`——編曲與製作，沒有演奏**；**`David Weiss (9) — Arranged By` 與 `Transcription By [Transcription Services]`**；**`Bob Belden — Executive-Producer`。三個人都不得寫進編制**（策展層第 1358(二) 條已標，本層覆核成立）。",
+    "src": "https://api.discogs.com/releases/12011745"
+   },
+   {
+    "f": "⚠ **盤面逐軌標出每一軌的獨奏順序——本組唯一一張這樣標的碟。** **Discogs 日版 12011745 的逐軌 credits 欄逐字**：第 1 軌 Printup 1st／Herring 2nd／Hagans 3rd／Green 4th；第 2 軌 Green 1st／Hagans 2nd／Printup 3rd／Jackson 4th；第 3 軌 Printup／Hagans／Green；**第 4 軌〈Lament For Booker〉逐字 `Benny Green — Soloist [Duet]` ＋ `Marcus Printup — Soloist [Duet]`（二重奏）**；第 5 軌 Hagans／Herring／Printup／Green；第 6 軌 Printup／Jackson／Hagans；第 7 軌 Hagans／Printup／Green；第 8 軌 Hagans／Jackson／Printup／Green；**第 9 軌〈Up Jumped Spring〉逐字 `Benny Green — Soloist [Duet]` ＋ `Tim Hagans — Soloist [Duet]`（二重奏）**；第 10 軌 Printup／Herring／Hagans／Green。 **→ 第 4 與第 9 兩軌是二重奏，不是全團。**",
+    "src": "https://api.discogs.com/releases/12011745"
+   },
+   {
+    "f": "⚠ **本層更正一句：不是「整張都是 Hubbard 的曲」。** **Discogs 兩版的 credits 欄逐字 `Freddie Hubbard — Composed By [2 to 10]`**，**而第 1 軌〈Backlash〉的逐軌 written-by 欄逐字是 `Donald Pickett — Composed By`**——**那首曲出自 Hubbard 1966 年的《Backlash》專輯，但作者是 Donald Pickett，不是 Hubbard。** **→ 十軌裡九軌是 Hubbard 寫的，第 1 軌不是。策展層第 1359(7) 條寫「《HubSongs》整張都是 Hubbard 的曲」要修正一格。**",
+    "src": "https://api.discogs.com/releases/6001777"
+   },
+   {
+    "f": "⚠ **美版與日版的 credits 有一處不一致，寫作層不要採美版那一版。** **美版 6001777 的 credits 欄把 `Vocals` 掛在 Vincent Herring、Benny Green、Marcus Printup、Tim Hagans 四個人身上（`Alto Saxophone, Vocals`／`Piano, Vocals`／`Trumpet, Vocals`）**，**日版 12011745 與歐版都沒有任何 `Vocals` 欄。** **本張是純器樂碟（十軌全部是 Hubbard 那一脈的器樂曲），美版那幾個 `Vocals` 幾乎確定是 Discogs 的輸入錯誤。** **→ 正文不得寫人聲。**",
+    "src": "https://api.discogs.com/releases/6001777"
+   },
+   {
+    "f": "⚠⚠ **試聽：探測層判 `unavailable`，本層用第 254 條三種查法撈回來了，而且只有 jp／fr／gb 三個市場有。** **(1) `search` `artist+album`：**us 市場回 1 筆但對不上**、**jp／fr／gb 三個市場都命中 `724581109`**（`collectionName` 逐字「Hubsongs - The Music of Freddie Hubbard」，10 軌，1998，copyright `℗ 1998 Blue Note Records`）。 **(2) `search` `album`：jp 回 25 筆、fr 回 22 筆、gb 回 1 筆，三個市場都含 `724581109`；us 回 1 筆對不上。** **(3) MB 那筆 release 沒有 barcode，`lookup?upc=` 查法用不了。** ⚠⚠ **`lookup?id=724581109&country=us` 回空**，**必須用 jp 市場才回得到 10 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同。 **→ 第 1246 條「us 查無不等於店面沒有」在本張再次成立。**",
+    "src": "https://itunes.apple.com/lookup?id=724581109&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **`apple-candidates.md` 為本張列的唯一候選 `724581109` jp 是對的**（本層逐軌核過，10 軌與 MB 逐軌相同）。 ⚠ **第 646 條檢查**：**本張的 `724581109` 與同批 Hagans／Printup 線另三張卡（《Nocturnal Traces》723509801／《Animation / Imagination》716371844／《Re-Animation Live!》1444016626）四個 collectionId 互不相同。** ⚠ **紙本兩年皆空白**（第 1245 條）：**目錄號 `59509`／`59059`、掛名 `hagans`／`printup`、盤名 `hubsongs` 在 1998 與 1999 兩份檔裡都沒有本張的評介或榜位**（1999-01-16 p55 的六十週年藝人名單含 `Tim Hagans` 與 `Marcus Printup`，那是名單不是本張）。",
+    "src": "https://itunes.apple.com/lookup?id=724581109&country=jp&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "兩把小號分左右聲道：盤面逐字把 Tim Hagans 標成左聲道、Marcus Printup 標成右聲道，連每一軌誰第幾個獨奏都印出來了",
+   "Freddie Hubbard 在這張碟上一個音都沒吹——他掛的是編曲與製作；而且十軌裡也不是每一首都是他寫的，開場的〈Backlash〉作者是 Donald Pickett"
+  ],
+  "sound": "十軌，1997 年 8 月 1、2 兩天在紐約 Avatar Studio C 錄成。固定編制五人：Tim Hagans 與 Marcus Printup 兩把小號（盤面分別標成左聲道與右聲道）、Benny Green 的鋼琴、Peter Washington 的貝斯、Kenny Washington 的鼓；客座兩位逐軌進出——Vincent Herring 的中音薩克斯風在第 1、5、10 軌，Javon Jackson 的次中音在第 2、6、8 軌。Freddie Hubbard 掛的是編曲與製作，沒有演奏；David Weiss 負責編曲與採譜，Bob Belden 執行製作。曲目九首是 Hubbard 寫的，開場〈Backlash〉的作者是 Donald Pickett。盤面連每一軌的獨奏順序都印出來，第 4 軌〈Lament for Booker〉與第 9 軌〈Up Jumped Spring〉是二重奏。",
+  "keyTracks": [
+   "Backlash",
+   "Hub Cap",
+   "Crisis",
+   "Life Flight"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1998 成立，本層未改判；但紙本兩年皆空白，證據全靠 Discogs 與店面。** (1) **Discogs 原壓群（階序第三層，本張最上層的可用證據）**：**美版 6001777（`CDP 7243 8 59509 2 6`）的 `released` 欄逐字 `1998-01-13`**、**日版 `TOCJ-6167`（12011745）的 `released` 欄逐字 `1998-01-21`**、**歐版 8218380（`7243 859509 2 6`）與美版俱樂部版 10528912 的 `year` 欄都是 1998**，`format` 欄全部乾淨。 (2) **MB first-release-date 1998**（只有年；唯一那筆 release 沒有 barcode、catno 還誤植）。 (3) **盤面 ℗©**：companies 欄 `Capitol Records, Inc. — Phonographic Copyright (p)／Copyright (c)`。 (4) **店面**：Apple `724581109`（jp／fr／gb 三市場）copyright 逐字 `℗ 1998 Blue Note Records`。 ⚠ **錄音日 1997-08-01／02 與美版 `released` 欄的 `1998-01-13` 相差五個半月，時間軸自洽。** ⚠ **日版 `1998-01-21` 晚美版八天，第 1063 條在本張不成立。** ⚠ **紙本三種字串在 1998 與 1999 兩年六組查詢全部沒有本張**（第 1245 條）：**目錄號 `59509` 與誤植形 `59059`、掛名 `hagans`／`printup`、盤名 `hubsongs`**；⚠ **1999-01-16 p55 的六十週年全版藝人名單含 `Tim Hagans` 與 `Marcus Printup`，那是名單不是本張。** **策展層第 1353 條記的「紙本兩年皆空白」本層覆核成立。**",
+  "notes": "**覆核策展層：rgMbid `e2c0b6ec`／唯一 release `06cae167`／聯名 `Tim Hagans & Marcus Printup`（MB 上是兩個 Person 以 ` & ` 接起來，Discogs 四筆與 Apple 三市場逐字同形同序，第 1356(三) 條）／年份 1998／十軌 全部成立。**｜⚠⚠ **MB 的目錄號誤植覆核成立**：**MB 登 `CDP 7243 8 **59059** 2 6`，正盤是 `CDP 7243 8 **59509** 2 6`**（Discogs 美版 6001777）——**兩位數對調（第 1364(5) 條）。**｜⚠⚠ **本層補上策展層沒寫的錄音場次**：**1997 年 8 月 1、2 兩天，紐約 Avatar Studio C（錄音兼混音），母帶 Foothill Digital 的 Allan Tucker，工程 Jim Anderson。**｜⚠ **編制：策展層說「Vincent Herring 只在第 1、5、10 軌，Javon Jackson 只在第 2、6、8 軌；Freddie Hubbard 掛編曲與製作、沒有吹」——本層逐格核過，全部逐字成立。** **本層補上三件事**：(1) **全張固定的是五人（Hagans／Printup／Benny Green／Peter Washington／Kenny Washington）**，**盤面把兩把小號標成 `Trumpet [Left Channel]` 與 `Trumpet [Right Channel]`**；(2) **盤面逐軌標出獨奏順序，第 4 軌〈Lament For Booker〉與第 9 軌〈Up Jumped Spring〉逐字是 `Soloist [Duet]`——那兩軌是二重奏不是全團**；(3) **`David Weiss` 除編曲外還掛 `Transcription By`。**｜⚠⚠ **本層更正策展層第 1359(7) 條的一句**：**「《HubSongs》整張都是 Hubbard 的曲」——`Freddie Hubbard — Composed By [2 to 10]`，第 1 軌〈Backlash〉的逐軌 written-by 逐字是 `Donald Pickett`。十軌裡九軌才是 Hubbard 寫的。**｜⚠ **美版 credits 把 `Vocals` 掛在 Herring／Green／Printup／Hagans 四人身上，日版與歐版都沒有**——**本張是純器樂碟，那幾個 `Vocals` 幾乎確定是 Discogs 輸入錯誤，正文不得寫人聲。**｜⚠ **載體（通則 1）**：**Discogs 四筆條目全是 CD，沒有黑膠。**｜⚠⚠ **試聽：探測層判 `unavailable`，本層撈回來了。串流採信 724581109**（**必須用 jp 市場 lookup——us 市場回空**；10 軌逐軌與 MB 相同、全部有 previewUrl、discNumber 全 1）。**三種查法**：`artist+album` 在 jp／fr／gb 三市場命中、us 對不上；`album` 同樣三市場命中；**`lookup?upc=` 用不了（MB 那筆 release 沒有 barcode）。** ⚠ **`apple-candidates.md` 的唯一候選就是它，本層逐軌核過是對的。** ⚠ **第 646 條檢查通過：本張與同批 Hagans／Printup 線另三張卡的 collectionId 互不相同。**｜**撞陳列 2 組**：(1) **與同批《Nocturnal Traces》《Animation / Imagination》《Re-Animation Live!》四卡互指**——**四張的班底完全不同、曲目零重疊**（掃 27750 列）；⚠ **《Nocturnal Traces》有一軌〈Freddie’s Inferno〉是 Printup 自己寫的、不是 Hubbard 的曲，兩張不得互抄。** (2) ⚠ **軌名撞卡名三處（本批最密的三張之一）**：**〈Backlash〉〈Hub Cap〉〈Life Flight〉分別等於池中 `Freddie Hubbard` 的三張卡名**（前兩張在 seed、〈Life Flight〉在 `c148-cards.json`）——**整張都是 Hubbard 那一脈的曲，撞的密度是結構性的；同名不同錄音，第 1049 條照收、正文不得互指。**｜**封面**：⚠ **CAA RG 層有圖**（`caa.json` 已給），**不必找替代**（⚠ Discogs 美版 6001777 的 `images[0]` 是 `primary` 600×600，可當備案）。"
+ },
+ {
+  "key": "desc2:Irakere|Yemayá",
+  "artist": "Irakere",
+  "album": "Yemayá",
+  "facts": [
+   {
+    "f": "release-group `992548f6-a663-3113-ad14-be6137d239bb`：**MB 的 RG title 逐字是「Yemaya」（無重音）**、artist-credit「Irakere」（`70365513` Group）、**first-release-date 1999**、primary-type Album、secondary-types 空，genres／tags `afro-cuban jazz`／`jazz`／`latin`／`latin jazz`。**轄下只有一筆 release `0d175174`（1999 US Official CD 7 軌，**無目錄號、無 barcode**，label-info 只有廠牌名 `Blue Note`）。** ⚠⚠ **那個 1999 沒有任何實體對應**（第 1364(2) 條）：**Discogs 上 Blue Note 那三筆的 `year` 欄一律 1998，古巴原盤是 1997**。**七軌（MB）**：Yemayá (449s)／Mister Bruce (589)／Santa Amalia (781)／La explosión (495)／San Francisco (255)／Son montuno (363)／Chorrino (416)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=992548f6-a663-3113-ad14-be6137d239bb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **古巴原盤：Egrem `CD 0226`，1997，七軌，而且軌目與 Blue Note 版不是逐軌相同。** **Discogs 9859143（Cuba 1997，廠牌欄逐字 `Egrem / CD 0226`）的七軌逐字**：**Danza De Los Ñañigos／Chorriño／Yemayá／Mister Bruce／Santa Amalia／La Explosion／San Francisco**。**Blue Note 美版 464525 的七軌是**：**Yemayá／Mister Bruce／Santa Amalia／La Explosión／San Francisco／Son Montuno／Chorrino**。 **→ 六軌共通；Egrem 獨有〈Danza De Los Ñañigos〉（作曲欄逐字 `Ernesto Lecuona`），Blue Note 換成〈Son Montuno〉。** **Egrem 盤的 companies 欄逐字 `Egrem — Phonographic Copyright (p)`、`Sonic Solutions, San Francisco, CA — Mastered At`，封面畫作 `Manuel Mendive — Painting`。** **策展層第 1353 條的改判依據本層逐項核過，全部成立。**",
+    "src": "https://api.discogs.com/releases/9859143"
+   },
+   {
+    "f": "⚠ **編制十一人，全部只在 Blue Note 那一版上——而且有一處逐軌標示，策展層沒注意到。** **Discogs 美版 464525 的 credits 欄逐字**：`Chucho Valdés — Piano, Composed By, Arranged By, Producer`、`César López — Alto Saxophone`、`Alfredo Thompson — Tenor Saxophone`、`Basilio Marquéz — Trumpet`、`Mario Félix Fernández (El Indio) — Trumpet`、`Carlos Emilio Morales — Guitar`、`Carlos del Puerto — Bass`、`Enrique Plá — Drums [Trap Drums], Tabla`、`Andrés Miranda — Congas`、`Jose Miguel Melendez — Timbales`，**外加 ⚠ `Mayra Caridad Valdes — Solo Vocal [1]`——只有第 1 軌〈Yemayá〉有人聲**。**製作 `Chucho Valdés` ＋ `René López`，執行製作 **`Bruce Lundvall`**。** ⚠ **Egrem 原盤的 credits 欄只有作曲、母帶、封面畫與攝影，一個樂手都沒有**——**十一人名單只有 Blue Note 版查得到。**",
+    "src": "https://api.discogs.com/releases/464525"
+   },
+   {
+    "f": "⚠ **Blue Note 那一版是 1998，不是 1999。** **Discogs 美版 464525（`7243 4 98239 2 1`）的 notes 逐字「(P)& (C) **1998** Capitol Records Inc. | Printed in USA」，`year` 欄 1998**；**歐版 12593867（同號）的 `year` 欄 1998，companies 欄逐字含 `Estudios EGREM — Recorded At` 與 `Absolute Audio`**；**美版宣傳盤 12760860（`7243 4 98239 2 7 V`，format 帶 `Promo`）也是 1998。** **→ MB 的 1999 在三筆 Blue Note 條目與一筆 Egrem 原盤上都找不到對應。** ⚠ **另有一筆同廠同年的古巴盤 Discogs 26971496（`Egrem / CD 0244`，1997）是別的碟，不要混。**",
+    "src": "https://api.discogs.com/releases/464525"
+   },
+   {
+    "f": "⚠⚠ **試聽：本層跑滿第 254 條三種查法，三種全空——確認查無。** **(1) `search` `artist+album`（`Irakere Yemaya`）：us／jp／fr／gb 四個市場全部零命中。** **(2) `search` `album`（`Yemaya`）：四個市場各回 25 筆，全部是別人的碟（Deva Premal & Ajeet、Voyou & Lubiana、Mexican Institute of Sound、Anushka、Kele Okereke、Mélissa Laveaux 等 2017–2026 年的單曲與專輯），**一筆都不是本張**。 **(3) `lookup?upc=724349823921`（策展層記的 barcode）：零命中。** **→ 本張走固定無來源狀態。古巴授權盤不在串流上是合理的。**",
+    "src": "https://itunes.apple.com/lookup?upc=724349823921&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠⚠ **`apple-candidates.md` 為本張列的六個候選全部是錯碟。** **該檔列的是 `152508501`《Inesquecíveis Boleros, 2ª Edição》1996（12 軌）／`200333371`《Afrocubanismo Live!》1996（7 軌）／`1462705309`《Ivan Lins, Chucho Valdés e Irakere》1998（10 軌）／`457710876`《Para Bailar son los Irakere》1998（5 軌）／`1074143713`《Lo Mejor de Cuba, Vol. 1》1997（12 軌）／`1074146147`《Lo Mejor de Cuba, Vol. 2》1997（12 軌）**——**六個裡沒有一個的盤名或軌數對得上本張。** ⚠ **其中 `200333371`《Afrocubanismo Live!》也是 7 軌，軌數剛好相同，最容易被誤取**——**那是 1996 年在加拿大班夫錄的現場碟，與本張零關係。**（第 528／707／709 條，本檔在本批第三次全錯。）",
+    "src": "https://itunes.apple.com/lookup?id=200333371&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **紙本三種字串全部沒有本張**（第 1245 條，三年都掃過）：**目錄號 `98239`／掛名 `irakere`／盤名 `yemaya` 在 1997／1998／1999 三份檔裡都沒有本張的評介或榜位。** ⚠⚠ **1999-01-16 p99 的第 41 屆葛萊美完整提名名單上有一筆逐字「\"Babalu Aye,\" Chucho Valdés & Irakere, **Bembe**」——那是 Bembé 廠牌的另一張碟，不是本張**（策展層第 1360(6) 條已標，本層覆核成立）。 ⚠ **1999-01-16 p62 的 Lundvall 第二段專訪逐字談到簽 Chucho Valdés 與 1976–77 年的 Irakere**——**那是背景不是本張的年份證據。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-16.pdf"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Irakere` 在池中有三張卡（c-108 b），本張七軌與三張逐軌零重疊。** ⚠ **與同批 b 組 Chucho Valdés《Briyumba Palo Congo》(1999)**：**同一位鋼琴手、兩個不同掛名字串**，**本張七軌與那張七軌軌名零重疊**（本張是 Yemayá／Mister Bruce／Santa Amalia／La explosión／San Francisco／Son montuno／Chorrino，那張是 El Rumbon／Bolero／Caravan／Embraceable You／Ponle La Clave／Rhapsody in Blue／Briyumba Palo Congo）；**再加上池中 seed 的《Bele Bele en La Habana》與 c-151 b 的《Solo Piano》，四卡 risk 互指。** ⚠ **軌名撞卡名一處**：〈San Francisco〉＝seed 的 `Bobby Hutcherson —《San Francisco》`——**同名不同錄音，第 1049 條照收。**",
+    "src": "https://api.discogs.com/releases/9859143"
+   }
+  ],
+  "hookCandidates": [
+   "這張碟先在古巴出過：Egrem 的 CD 0226，1997 年，封面是畫家 Manuel Mendive 的作品；Blue Note 隔年拿授權重發，還把其中一軌換掉——古巴版有 Lecuona 的〈Danza de los Ñañigos〉，Blue Note 版換成〈Son Montuno〉",
+   "十一個人的名單只有 Blue Note 那一版上才有——古巴原盤的 credit 欄只印了作曲、母帶、封面畫與攝影，一個樂手都沒掛"
+  ],
+  "sound": "七軌的古巴大團碟，Chucho Valdés 領軍。Blue Note 版的盤面列了十一個人：Valdés 的鋼琴（兼作曲、編曲、製作）、César López 的中音薩克斯風、Alfredo Thompson 的次中音、Basilio Marquéz 與 Mario Félix Fernández 兩把小號、Carlos Emilio Morales 的吉他、Carlos del Puerto 的貝斯、Enrique Plá 的鼓與塔布拉鼓、Andrés Miranda 的康加、Jose Miguel Melendez 的定音鼓，第 1 軌另有 Mayra Caridad Valdes 的獨唱。錄音在哈瓦那的 Estudios EGREM。古巴原盤 1997 年由 Egrem 發行，封面是 Manuel Mendive 的畫；Blue Note 1998 年取得授權後把〈Danza de los Ñañigos〉換成〈Son Montuno〉，執行製作是 Bruce Lundvall。",
+  "keyTracks": [
+   "Yemayá",
+   "Santa Amalia",
+   "Mister Bruce",
+   "Son montuno"
+  ],
+  "status": "full",
+  "yearVerified": "**策展層把 1999 改判成 1997（首發地 CU、廠牌 Egrem），本層覆核成立、維持 1997。四層證據。** (1) ⚠⚠ **古巴原盤**：**Discogs 9859143（Cuba，廠牌欄逐字 `Egrem / CD 0226`，`year` 欄 1997）**，**companies 欄 `Egrem — Phonographic Copyright (p)`、`Sonic Solutions, San Francisco, CA — Mastered At`**；**七軌與 Blue Note 版六軌共通。** (2) **Blue Note 那一層是 1998、不是 1999**：**美版 464525（`7243 4 98239 2 1`）的 notes 逐字「(P)& (C) **1998** Capitol Records Inc.」**、**歐版 12593867 與美版宣傳盤 12760860 的 `year` 欄也都是 1998**，**歐版 companies 欄逐字含 `Estudios EGREM — Recorded At`。** (3) ⚠⚠ **MB 的 1999 沒有任何實體對應**（第 1364(2) 條）：**轄下唯一那筆 `0d175174` 沒有目錄號、沒有 barcode、label-info 只有廠牌名。** (4) **簡報 §三.3「原盤若是他廠，`year` 取他廠首發年、`label` 寫原廠」**——**Egrem 是真正的他廠、而且那一次是完整專輯（不是第 1233 條 (丁) 的「部分／不同形狀」），所以走他廠首發年 1997。** ⚠ **兩版軌目不是逐軌相同（Egrem 有〈Danza de los Ñañigos〉、Blue Note 換成〈Son Montuno〉），但六軌共通、同一批錄音，仍是同一張碟。** ⚠ **紙本三種字串在 1997／1998／1999 三年全部沒有本張**（第 1245 條）；⚠ **1999-01-16 p99 葛萊美提名名單上的「\"Babalu Aye,\" Chucho Valdés & Irakere, Bembe」是 Bembé 廠牌的另一張碟**（第 1360(6) 條，本層覆核成立）。",
+  "notes": "**覆核策展層：rgMbid `992548f6`／唯一 release `0d175174`／掛名 `Irakere`（變體 `Irakere featuring Chucho Valdés`／`Chucho Valdes Y Su Grupo Irakere` 進 `queryAlias`）／七軌／年份改判 1999→1997 全部成立。**｜⚠ **本層補上策展層沒抓到的一處逐軌標示**：**策展層第 1358(三) 條把本張列進「可以寫固定編制（十人）」——Discogs 美版的 credits 欄其實是十一筆，而且 `Mayra Caridad Valdes — Solo Vocal [1]` 帶軌號，只在第 1 軌〈Yemayá〉。** **正文不得把人聲寫成全張。** **另本層把十一人的樂器逐項抄進 facts（策展層只寫了人數）。**｜⚠ **Egrem 原盤的 credits 欄一個樂手都沒有**——**十一人名單只有 Blue Note 版查得到，策展層這一點寫對了。**｜⚠ **錄音日查無**：**兩版都沒有日期欄；歐版只給 `Estudios EGREM — Recorded At`。不得自行補。**｜⚠ **載體（通則 1）**：**Egrem 原盤與 Blue Note 三版全是 CD，沒有黑膠。**｜⚠ **另有一筆同廠同年的古巴盤 `Egrem / CD 0244`（Discogs 26971496，1997）是別的碟，反查時不要混。**｜⚠⚠ **試聽：本層跑滿三種查法、三種全空，判查無，走固定無來源狀態。** **`artist+album` 四市場零命中；`album`（`Yemaya`）四市場各回 25 筆全是 2017–2026 年別人的單曲與專輯；`lookup?upc=724349823921` 零命中。** ⚠⚠ **`apple-candidates.md` 為本張列的六個候選全部是錯碟**（第 528／707／709 條，本檔在本批第三次全錯）；**其中 `200333371`《Afrocubanismo Live!》1996 也是 7 軌，軌數剛好相同、最容易被誤取。**｜**撞陳列 2 組**：(1) **與池中三張 `Irakere` 卡逐軌零重疊**（掃 27750 列）；(2) **與同批 b 組《Briyumba Palo Congo》(1999)、池中 seed 的《Bele Bele en La Habana》與 c-151 b 的《Solo Piano》**——**四張同一位鋼琴手的碟，軌名零重疊、編制各不相同，四卡 risk 互指。** ⚠ **軌名撞卡名一處**：〈San Francisco〉＝seed 的 `Bobby Hutcherson`，**同名不同錄音、第 1049 條照收。**｜**封面**：CAA RG 層有圖，不必找替代（⚠ **Discogs 美版 464525 的兩張圖都是 `secondary`**——**若日後要換替代來源，用古巴原盤 `9859143` 的 `images[0]`，已確認 `type` 是 `primary`、尺寸 600×586、該條目共 6 圖；但那是 Egrem 的封面（Manuel Mendive 的畫），與 Blue Note 版的封面不是同一張，換之前要先確定卡片要用哪一版。**）"
+ },
+ {
+  "key": "desc2:Stéphane Huchard|Tribal Traquenard",
+  "artist": "Stéphane Huchard",
+  "album": "Tribal Traquenard",
+  "facts": [
+   {
+    "f": "release-group `dbeb6925-fbbd-37be-8752-262ca70a0760`：title「Tribal Traquenard」、artist-credit「Stéphane Huchard」（`919b0df1` Person／FR／1964–）、**first-release-date 1999**（只有年）、primary-type Album、secondary-types 空，**genres／tags 兩欄都是空的**。**轄下只有一筆 release `ae76b5c5`（1999 FR Official CD 13 軌，**無目錄號、無 barcode**，label-info 只有廠牌名 `Blue Note`）。** **十三軌**：Margaux 96 (237s)／Love for Sale (278)／African Jerk (341)／Le Voyage de Yangdöl (329)／Welcome (330)／Casse à Caracas (436)／Kiss à Kirikis (224)／**Batbouch au Pays des Babouches (38)**／Tutoyer les anges (479)／Lady Zab (413)／Mes soleils (269)／Premier cri classé (199)／**Un ange passe... (57)**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dbeb6925-fbbd-37be-8752-262ca70a0760&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **編制「查不到」覆核成立，而且比策展層說的更徹底：連 Huchard 自己的鼓都沒掛。** **Discogs 12802295（France 1999，Blue Note／`7243 4 99908 2 1`）的 credits 欄逐字只有九筆，一個演奏者都沒有**：`Stéphane Huchard — Arranged By [1, 3 to 13]`、`Stéphane Huchard — Composed By`、**`Cole Porter — Composed By [2]`**、`Marc Berthoumieux — Producer, Art Direction [Artistic Direction]`、`Marc Berthoumieux — Recorded By, Mixed By`、`Nicolas Pflug — Producer [For Release]`、`Frédéric Marin — Mastered By`、`Patrice Tourenne — Photography By [Cover]`、`France Keyser — Photography By [Studio]`、`La Firme — Artwork`。**MB 的 release 也沒有任何 relations。** **→ 寫作層一個樂手名字都不要寫**（策展層第 1358(一) 條已標，本層覆核成立）。",
+    "src": "https://api.discogs.com/releases/12802295"
+   },
+   {
+    "f": "⚠⚠ **策展層警告的那個「合理推論」陷阱，本層確認必須擋住。** **策展層第 1358(一) 條寫**：**Huchard 是 Sixun 的鼓手、Jean-Pierre Como 是 Sixun 的鍵盤手，兩張同一年、同一條 Blue Note France 線**——**但沒有任何來源說 Huchard 在《Empreinte》打鼓，也沒有任何來源說 Como 在本張彈琴。** **本層逐筆核過兩張碟的 Discogs credits：本張九筆、《Empreinte》兩筆條目的 credits 與 notes 皆空、master 1495877 的 `extraartists` 是 `[]`——兩張互相都沒有對方的名字。** **→ 兩卡的 risk 必須互指、寫作層兩張都不得補人名。**（**這是 c-153 a 抓到的「策展層會把兩張卡的班底互換」的最高風險形狀。**）",
+    "src": "https://api.discogs.com/releases/12802295"
+   },
+   {
+    "f": "**錄音與後製地點（Discogs 12802295 的 companies 欄逐字）**：**`Sous La Ville Studio — Recorded At`、`Sous La Ville Studio — Mixed At`、`Alcyon Musique — Mastered At`、`Blue Note — Phonographic Copyright (p)`、`EMI Music France — Copyright (c)`、`EMI — Marketed By`、`EMI Music France — Distributed By`、`Sous La Ville Editions — Published By`、`Pygmalion Records — Published By`。** notes 逐字「**℗ Blue Note © 1999 EMI Music France** | Digipack 4 panels」。 ⚠ **沒有任何條目給錄音日期**——**正文可以寫錄音室，不得寫錄音日。** ⚠ **`Blue Note — Phonographic Copyright (p)` 這一欄很重要**：**(戊) 前置閘（第 1295 條）通過，本張確實是 Blue Note 發行，不是 EMI France 光的那種形狀。**",
+    "src": "https://api.discogs.com/releases/12802295"
+   },
+   {
+    "f": "**作曲**：`Stéphane Huchard — Composed By`（整張，無軌號）＋ **`Cole Porter — Composed By [2]`**——**十三軌裡十二軌是他自己寫的，第 2 軌〈Love For Sale〉是 Cole Porter 的標準曲。** ⚠ **第 5 軌〈Welcome〉沒有另掛作曲者，是 Huchard 自己的曲，不是 Coltrane 那一首同名曲**——**這一點要寫進 risk，因為池中有兩張《Welcome》同名卡（Santana 與 SBB）。** **編曲欄 `Arranged By [1, 3 to 13]` 少了第 2 軌**（因為那一軌是別人的曲）。",
+    "src": "https://api.discogs.com/releases/12802295"
+   },
+   {
+    "f": "⚠ **紙本兩年皆空白，三種字串全部零命中**（第 1245 條）：**目錄號 `99908`、人名 `huchard`、盤名 `tribal traquenard` 在 `billboard-bn-1999-ocr.txt.gz` 與 `billboard-bn-2000-ocr.txt.gz` 六組查詢全部零命中。** ⚠ **兩份檔的關鍵字集都是為別批配的**（1999 為 c-155 b、2000 為另一支平行的策展層代理），**存的是命中頁不是全文**——**「零命中」只能說「不在那兩份的命中頁裡」。法國廠牌的在地發行不進美國紙本是常態，本筆年份不靠紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-16.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `300362003`（us）回 **13 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同。**releaseDate 逐字 `1999-03-01T08:00:00Z`（帶完整月日、非年頭回填）**；⚠⚠ **copyright 逐字 `℗ 1999 **Pygmalion Records**`——不是 Blue Note。** **那與 Discogs companies 欄的 `Pygmalion Records — Published By` 對得上（出版社，不是錄音版權方）**；**盤面的 ℗ 欄逐字是 `Blue Note`。** **→ 年份 1999 兩邊一致；廠牌以盤面的 `℗ Blue Note © 1999 EMI Music France` 為準，Apple 的 copyright 欄不可引為廠牌證據。**",
+    "src": "https://itunes.apple.com/lookup?id=300362003&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Huchard`（`Stéphane`／`Stephane` 兩形都掃）在池中零列，本張是第一張。** ⚠ **軌名撞卡名兩處**：**〈Love for Sale〉＝seed 三張（`Boney M.`／`宮沢昭`／`Cecil Taylor`）**、**〈Welcome〉＝seed 兩張（`Santana`／`SBB`）**——**全部同名不同錄音，第 1049 條照收、正文不得互指；而且本張的〈Welcome〉是 Huchard 自己寫的曲。** ⚠ **與同批 b 組《Empreinte》(Jean-Pierre Como, 1999) risk 互指**（見上，兩張都是編制查不到、又都是 Blue Note France 1999 年的碟）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dbeb6925-fbbd-37be-8752-262ca70a0760&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "盤上一個樂手名字都沒有——credit 欄只印了編曲、作曲、製作、錄音、母帶與三種攝影，連掛名的那位鼓手自己都沒掛上鼓",
+   "十三軌裡十二軌是他自己寫的，唯一的例外是第二軌 Cole Porter 的〈Love for Sale〉；而第五軌那首〈Welcome〉是他自己的曲，不是 Coltrane 那一首同名的"
+  ],
+  "sound": "十三軌，Blue Note France 1999 年的發行，四面 digipak。錄音與混音都在 Sous La Ville Studio，由 Marc Berthoumieux 一手包辦製作、錄音與混音兼藝術總監，Nicolas Pflug 負責發行端製作，Frédéric Marin 在 Alcyon Musique 做母帶。盤面的版權欄逐字是「℗ Blue Note © 1999 EMI Music France」。曲目十二首由 Huchard 自己作曲並編曲，第 2 軌是 Cole Porter 的〈Love for Sale〉。十三軌長短落差大：〈Batbouch au Pays des Babouches〉只有三十八秒、〈Un ange passe...〉五十七秒，而〈Tutoyer les anges〉將近八分鐘。伴奏名單查不到——所有來源的 credit 欄都沒有任何樂手。",
+  "keyTracks": [
+   "Tribal Traquenard",
+   "African Jerk",
+   "Le Voyage de Yangdöl",
+   "Tutoyer les anges"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判；但本張的證據層只有 Discogs 與店面兩層，紙本完全空白。** (1) **Discogs 原壓群**：**12802295（France 1999，Blue Note／`7243 4 99908 2 1`）的 `year` 欄 1999，`format` 欄乾淨（`CD, Album`）**，**notes 逐字「℗ Blue Note © 1999 EMI Music France」。** (2) **MB first-release-date 1999**（只有年；唯一那筆 release 沒有目錄號也沒有 barcode）。 (3) **店面**：**Apple `300362003` 的 releaseDate 逐字 `1999-03-01`（帶完整月日、非年頭回填）**；⚠ **copyright 逐字 `℗ 1999 Pygmalion Records`——那是出版社（Discogs companies 欄的 `Pygmalion Records — Published By`），不是錄音版權方；盤面的 ℗ 欄是 `Blue Note`。年份 1999 兩邊一致，廠牌以盤面為準。** (4) ⚠ **(戊) 前置閘（第 1295 條）通過**：**Discogs companies 欄逐字 `Blue Note — Phonographic Copyright (p)`**——**本張確實是 Blue Note 發行，不是《Minh》那種「光的 EMI」的形狀。** ⚠ **紙本三種字串在 1999 與 2000 兩年六組查詢全部零命中**（第 1245 條）：`99908`／`huchard`／`tribal traquenard`；⚠ **兩份 OCR 檔的關鍵字集都是為別批配的、存的是命中頁不是全文**——**「零命中」只能說「不在那兩份的命中頁裡」。法國在地發行不進美國紙本是常態，本筆年份不靠紙本。** ⚠ **錄音日查無，無法用時間軸交叉驗證。**",
+  "notes": "**覆核策展層：rgMbid `dbeb6925`／唯一 release `ae76b5c5`／掛名 `Stéphane Huchard`（`Stephane` 無重音形進 `queryAlias`）／年份 1999／十三軌 全部成立。**｜⚠⚠ **編制「查不到」覆核成立，而且比策展層說的更徹底**：**Discogs 12802295 的 credits 欄逐字九筆，全部是編曲／作曲／製作／錄音／母帶／攝影／美術，一個演奏者都沒有——連 Huchard 自己的鼓都沒掛；MB 的 release 也沒有 relations。寫作層一個樂手名字都不要寫。**｜⚠⚠ **策展層警告的「兩張卡班底互換」陷阱，本層確認必須擋住**：**Huchard 是 Sixun 的鼓手、同批的 Jean-Pierre Como 是 Sixun 的鍵盤手，兩張同年、同一條 Blue Note France 線，推論起來特別順——但本層逐筆核過兩張的 Discogs credits，互相都沒有對方的名字。兩卡 risk 必須互指，兩張都不得補人名。**｜⚠ **本層補上策展層沒寫的地點與製作**：**錄音與混音都在 Sous La Ville Studio，Marc Berthoumieux 一人包辦製作、錄音、混音與藝術總監，Nicolas Pflug 負責發行端製作，母帶 Frédéric Marin（Alcyon Musique）。**｜⚠ **作曲：十二軌自寫，第 2 軌〈Love For Sale〉是 Cole Porter 的（編曲欄 `Arranged By [1, 3 to 13]` 正好少了第 2 軌）。** ⚠⚠ **第 5 軌〈Welcome〉沒有另掛作曲者，是 Huchard 自己的曲，不是 Coltrane 那一首同名曲——正文不得誤寫。**｜⚠ **載體（通則 1）**：**Discogs 上本張只有這一筆條目，CD digipak，沒有黑膠。**｜⚠ **MB 的兩個毛病**：**RG 的 genres／tags 兩欄全空**（第 1296 條的第三層在本張沒有 MB 資料可用）、**唯一那筆 release 沒有目錄號也沒有 barcode**（因此 `lookup?upc=` 查法用不了）。｜**撞陳列**：**`Huchard` 兩形都掃過，池中零列，本張是第一張**（掃 27750 列）。 ⚠ **軌名撞卡名兩處**：〈Love for Sale〉＝seed 三張（Boney M.／宮沢昭／Cecil Taylor）、〈Welcome〉＝seed 兩張（Santana／SBB）——**同名不同錄音，第 1049 條照收。**｜**試聽**：**串流採信 300362003**（us，13 軌逐軌相同、全部有 preview、discNumber 全 1）。｜**封面**：⚠⚠ **CAA RG 層真 404**（連探三次全部回 404，第 589a 條已排除 5xx）。**替代來源＝Discogs `12802295` 的 `images[0]`，已確認 `type` 逐字是 `primary`、尺寸 600×538、該條目共 4 圖（另三張全是 `secondary`）**。**⚠ 低於 600px 的那一邊是高度不是寬度，Apple `300362003` 的 `600x600bb` 可當備案。研究層不下載，本機端自行取用。**"
+ },
+ {
+  "key": "desc2:Tim Hagans & Bob Belden|Re-Animation Live!",
+  "artist": "Tim Hagans & Bob Belden",
+  "album": "Re-Animation Live!",
+  "facts": [
+   {
+    "f": "release-group `ff7223c0-de01-3e46-a131-38e8d7688718`：title「Re-Animation Live!」、**artist-credit 只掛「Tim Hagans」一人**（`214d780e` Person）、**first-release-date `1999-07-03`**、primary-type Album、**secondary-types `[\"Live\"]`**，genres／tags `jazz`／`jazz-funk`／`post-bop`／`soul jazz`。**轄下只有一筆 release `0b7c8895`（`1999-07-03` US Official CD 10 軌，bc 724352754427，label-info 只有廠牌名 `Blue Note`、無目錄號）。** ⚠⚠ **那個 `1999-07-03` 是蒙特婁的演出日，不是發行日**（見下）。**十軌**：Introduction (12s)／Animation/Imagination (455)／Big Moment (195)／Hud Doyle (658)／Killer Instinct (355)／28 If (469)／Dans La Ville Sombre (178)／Are You Threating Me? (656)／Love’s Lullaby (207)／Trumpet Sandwich (598)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ff7223c0-de01-3e46-a131-38e8d7688718&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **`1999-07-03` 是演出日——盤面逐字寫著，而且 Discogs 有一筆條目的 `released` 欄被同一個日期汙染。** **Discogs 美版 20130850（US 2000，Blue Note `7243 5 27544 2 7`）的 notes 逐字第一行**：「**Recorded Live At The Montreal Jazz Festival, July 3, 1999.**」，**companies 欄逐字 `Festival International De Jazz De Montreal — Recorded At`、`Sony Music Studios, New York City — Mastered At`**，notes 第二行「Mastered at Sony Music Studios, NYC using the **SONY DSD Converter**」，第三行「**℗ © 2000 Capitol Records, Inc.**」。 ⚠⚠ **而 Discogs 498540（US，catno 登成 `7243050275440207`）的 `released` 欄逐字被填成 `1999-07-03`**——**與 MB 的 frd 同一個錯。** **→ 第 1353 條的第五種變體（把現場錄音日登成發行日，而且 Discogs 的 `released` 也被同一個日期汙染），本層逐項核過、成立。**",
+    "src": "https://api.discogs.com/releases/20130850"
+   },
+   {
+    "f": "**零售盤全部是 2000 年。** **Discogs 四筆零售條目**：**美版 20130850（`7243 5 27544 2 7`，`year` 2000，notes 逐字 `℗ © 2000 Capitol Records, Inc.`）**、**英歐版 5222726（同號，`year` 2000，notes 逐字 `℗ & © 2000 Capitol Records, Inc.`）**、**美版 BMG 俱樂部版 22109392（同號，2000，notes 多一行 `D 136342 Mfd. for BMG Direct`）**、**美版 Jazz Heritage 俱樂部版 13151690（`5165977`，2000）**。 ⚠ **1999 年的兩筆都是宣傳盤**：**13808164（`7243 5 27544 2 7V`，format 欄帶 `Promo`、catno 尾碼 `V`）與 498540（catno 是被壓扁的 `7243050275440207`）**——**第 1297 條：宣傳盤的日期只能當下界。** **→ 策展層把 1999 改判成 2000 成立。**",
+    "src": "https://api.discogs.com/releases/5222726"
+   },
+   {
+    "f": "**編制（Discogs 20130850 的 credits 欄逐字，六人、零逐軌標示）**：**`Tim Hagans — Trumpet`**、**`Bob Belden — Soprano Saxophone`**、**`Scott Kinsey — Synthesizer`**、**`David Dyson — Electric Bass`**、**`Billy Kilson — Drums`**、**`Kingsize — Turntables`**。 ⚠ **六個人同時也都掛 `Producer`**（credits 欄逐字：Tim Hagans／Bob Belden／Billy Kilson／David Dyson／Scott Kinsey／Kingsize 六人 ＋ `Eli Wolf — Producer` ＋ `Daniel Vachon — Producer [Concert]`）——**那是「全團共同製作」的寫法，不是八個製作人。** 母帶 `Mark Wilder` ＋ `Seth Foster`（Sony Music Studios，用 SONY DSD 轉換器），美術 `Burton Yount`，創意總監 `Gordon H Jee`，設計 `Till2k`，攝影 `Till Krautkrämer` ＋ `Denis Alix`（現場照）。**這一張可以寫固定編制。**",
+    "src": "https://api.discogs.com/releases/20130850"
+   },
+   {
+    "f": "⚠⚠ **掛名：MB 只掛 Tim Hagans 一人，本層覆核策展層依盤面與店面改判成聯名——成立。** **Discogs 四筆零售條目的 artists 欄逐字是 `Hagans* / Belden*`（兩人並列）**；**Apple `1444016626` 的 `artistName` 逐字「Tim Hagans & Bob Belden」**、**`collectionName` 逐字「Re: Animation Live!」（⚠ Apple 把連字號寫成冒號加空格）。** **→ 第 1303 條「盤面／店面／MB 三邊不一致時以盤面與店面為準」，聯名 `Tim Hagans & Bob Belden` 成立；池中 `Tim Hagans` 與 `The Bob Belden Ensemble` 兩個字串都不動（第 1356(三) 條）。**",
+    "src": "https://itunes.apple.com/lookup?id=1444016626&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠⚠ **紙本：本層在 repo 裡找到了 2000 年的 Billboard OCR 檔，派工信說的「2000 年沒人掃」已經不成立。** **`batch-progress/enum/billboard-bn-2000-ocr.txt.gz`（52 期，`BB-2000-01-08` → 年底，來源路徑 `Billboard/00s/2000/`）已經在工作區裡**——⚠ **它是另一個平行工作階段（c-156 策展層）今天剛抓的、尚未提交的檔，本層只讀不動**（CLAUDE.md 的 `git add` 規則）。 **本層用它跑完第 1245 條的三種字串**：**目錄號 `27544` 零命中、盤名 `re-?animation` 零命中、人名 `hagans` 兩則（都是 Grammy 相關、講的是《Animation / Imagination》不是本張）、`belden` 兩則（Miles Davis 盒與 Bill Belden 的年表，都不是他）。** **→ 本張在 2000 年的 Billboard 上沒有評介、沒有榜位、沒有廣告。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-15.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `1444016626`（us）回 **10 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同（Apple 第 8 軌作〈Are You Threatening Me?〉，MB 拼成〈Are You Threating Me?〉——**少一個 `en`，MB 那邊是錯字**）。**releaseDate `2000-01-01T08:00:00Z`（年頭回填形）**；⚠ **copyright 逐字 `℗ 2014 Blue Note Records`——那是後來重發的數位版年（第 1365 條那句「us 那一筆在 1998–99 年這一段最常是 2014 年重發的數位版」在本張也中）。** **→ 年份一律用實體盤的 `℗ © 2000`，不用 Apple 的 copyright 欄。**",
+    "src": "https://itunes.apple.com/lookup?id=1444016626&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠⚠ **撞陳列：與同批 b 組《Animation / Imagination》(1999 錄音室) 六軌同名——但班底不同。** **本張十軌中有六軌與那張同名**：〈Animation/Imagination〉〈Hud Doyle〉〈28 If〉〈Are You Threating Me?〉〈Love’s Lullaby〉〈Trumpet Sandwich〉。 **班底比對**：**錄音室版的逐軌欄有 `Ira Coleman — Acoustic Bass`、`Kevin Hays — Programmed By`、`Billy Kilson — Drums`、`David Dyson — Electric Bass`、`Bob Belden — Soprano Saxophone`、`Kingsize — Programmed By`**；**本張是 Hagans／Belden／Scott Kinsey（全程合成器）／Dyson／Kilson／Kingsize（唱盤）六人全程**——**Ira Coleman 與 Kevin Hays 不在本張，Scott Kinsey 不在那張。** **→ 第 1049 條照收，兩卡 risk 互指、上架帶 catno（`27544` vs `95198`）。** ⚠ **軌名撞卡名一處**：〈Introduction〉＝seed 的 `Mr. Fingers —《Introduction》`——**同名不同錄音、第 1049 條照收。**",
+    "src": "https://api.discogs.com/releases/20130850"
+   }
+  ],
+  "hookCandidates": [
+   "MB 上那個「1999 年 7 月 3 日」不是發行日，是演出日——那天他們在蒙特婁爵士節台上；碟要到 2000 年才出，而 Discogs 上有一筆條目也把發行欄填成了同一個日期",
+   "六個人全部掛製作：小號、高音薩克斯風、合成器、電貝斯、鼓，再加一個只打唱盤的 Kingsize——一張把 drum’n’bass 搬上爵士節舞台的現場碟"
+  ],
+  "sound": "十軌的現場碟，1999 年 7 月 3 日錄於蒙特婁爵士節，2000 年才發行。六人編制全程固定：Tim Hagans 的小號、Bob Belden 的高音薩克斯風、Scott Kinsey 的合成器、David Dyson 的電貝斯、Billy Kilson 的鼓、Kingsize 的唱盤；六個人同時也是共同製作人，另有 Eli Wolf 與負責演出端的 Daniel Vachon。母帶由 Mark Wilder 與 Seth Foster 在紐約 Sony Music Studios 用 SONY DSD 轉換器做。十軌裡有六軌與前一年的錄音室盤《Animation / Imagination》同名，但班底換過——錄音室版的 Ira Coleman 與 Kevin Hays 不在台上，Scott Kinsey 則是現場才加入的。",
+  "keyTracks": [
+   "Animation/Imagination",
+   "Hud Doyle",
+   "28 If",
+   "Trumpet Sandwich"
+  ],
+  "status": "full",
+  "yearVerified": "**策展層把 1999 改判成 2000，本層覆核成立、維持 2000。四層證據。** (1) ⚠⚠ **`1999-07-03` 是演出日，盤面逐字寫著**：**Discogs 美版 20130850 的 notes 第一行「Recorded Live At The Montreal Jazz Festival, **July 3, 1999**.」**，companies 欄 `Festival International De Jazz De Montreal — Recorded At`。**而 MB 的 frd 與 Discogs 498540 的 `released` 欄都被填成同一個日期**——**第 1353 條第五種變體（第 1191／1246 條在同一張碟上同時成立），本層逐項核過。** (2) **零售盤全部是 2000**：**美版 20130850（notes 逐字 `℗ © 2000 Capitol Records, Inc.`）／英歐版 5222726（`℗ & © 2000 Capitol Records, Inc.`）／美版 BMG 俱樂部版 22109392／美版 Jazz Heritage 俱樂部版 13151690（`5165977`），四筆 `year` 欄全 2000。** (3) **1999 年的兩筆都是宣傳盤**：**13808164（format 帶 `Promo`、catno 尾碼 `V`）與 498540（catno 被壓扁成 `7243050275440207`）**——**第 1297 條：只能當下界。** (4) **店面**：**Apple `1444016626` releaseDate `2000-01-01`**（⚠ 年頭回填形）；⚠ **copyright 逐字 `℗ 2014 Blue Note Records`——那是 2014 年重發的數位版年，不採**（第 1365 條）。 ⚠⚠ **紙本：本層在工作區裡找到了 `batch-progress/enum/billboard-bn-2000-ocr.txt.gz`（52 期），派工信說的「2000 年沒人掃」已經不成立**——⚠ **但那是另一個平行工作階段今天剛抓、尚未提交的檔，本層只讀不動。** **用它跑完三種字串（第 1245 條）**：**目錄號 `27544` 零命中、盤名 `re-?animation` 零命中、人名 `hagans` 兩則都是葛萊美相關且講的是《Animation / Imagination》、`belden` 兩則都是別人**——**本張在 2000 年的 Billboard 上沒有評介、沒有榜位、沒有廣告。1999 年的檔同樣零命中。** **→ 本筆年份靠實體盤 ℗ 與 Discogs 原壓群兩層，沒有紙本。**",
+  "notes": "**覆核策展層：rgMbid `ff7223c0`／唯一 release `0b7c8895`／聯名 `Tim Hagans & Bob Belden`（MB 只掛 Hagans 一人，Discogs 四筆零售條目的 artists 欄逐字 `Hagans* / Belden*`、Apple `artistName` 逐字「Tim Hagans & Bob Belden」，第 1303／1356(三) 條）／年份改判 1999→2000／`live: true`／十軌 全部成立。**｜⚠ **編制：六人全程固定，策展層寫對了。** **本層要補的是**：**六個人同時都掛 `Producer`（全團共同製作），另有 `Eli Wolf — Producer` 與 `Daniel Vachon — Producer [Concert]`；母帶 `Mark Wilder` ＋ `Seth Foster`，notes 逐字註明用 `SONY DSD Converter`。**｜⚠ **MB 的軌名有錯字**：**第 8 軌 MB 作〈Are You Threating Me?〉，Discogs 與 Apple 都是〈Are You Threatening Me?〉**——**正文用後者。**｜⚠ **載體（通則 1）**：**六筆 Discogs 條目全是 CD，沒有黑膠。**｜⚠⚠ **紙本：`billboard-bn-2000-ocr.txt.gz` 已經在工作區裡（52 期，另一個平行階段今天剛抓、未提交）**——**派工信說的「2000 年沒人掃」已經過時；本層用它跑完三種字串，本張零命中。** **→ 給主線：那份檔的關鍵字集是為 c-156 配的（OCR 正規化把 `s` 吃掉，例如 `efon arr` ＝ Stefon Harris、`cuco valde` ＝ Chucho Valdés），查別批的碟要重抓或放寬。**｜**撞陳列 2 組**：(1) ⚠⚠ **與同批 b 組《Animation / Imagination》(1999)**——**十軌中六軌同名**（〈Animation/Imagination〉〈Hud Doyle〉〈28 If〉〈Are You Threatening Me?〉〈Love’s Lullaby〉〈Trumpet Sandwich〉），**但班底不同：錄音室版有 Ira Coleman 與 Kevin Hays、本張沒有；本張有全程的 Scott Kinsey、那張沒有。** **第 1049 條照收，兩卡 risk 互指、上架帶 catno（`27544` vs `95198`）。** (2) **與同批《HubSongs》《Nocturnal Traces》四卡互指**（Hagans／Printup 那一脈，班底與曲目零重疊）。 ⚠ **軌名撞卡名一處**：〈Introduction〉＝seed 的 `Mr. Fingers`，**同名不同錄音、第 1049 條照收。**｜**試聽**：**串流採信 1444016626**（us，10 軌逐軌相同、全部有 preview、discNumber 全 1）；⚠ **該條目的 copyright 是 `℗ 2014`，不可引為年份證據。** ⚠ **第 646 條檢查通過：與同批 Hagans／Printup 線另三張卡的 collectionId 互不相同。**｜**封面**：⚠⚠ **CAA RG 層真 404**（連探三次全部回 404，第 589a 條已排除 5xx）。**替代來源＝Discogs 英歐版 `5222726` 的 `images[0]`，已確認 `type` 逐字是 `primary`、尺寸 600×597、該條目共 3 圖。** ⚠⚠ **不要用美版**：**`20130850`（3 圖）與 BMG 俱樂部版 `22109392`（4 圖）的圖全部是 `secondary`**——**本線第八、九次遇到「條目所有圖都是 secondary」。** **另兩筆（`13151690`／`498540`）的圖只有 240×240，太小。研究層不下載，本機端自行取用。**"
+ },
+ {
+  "key": "desc2:Stefon Harris|Black Action Figure",
+  "artist": "Stefon Harris",
+  "album": "Black Action Figure",
+  "facts": [
+   {
+    "f": "release-group `12f816b9-46ec-3b25-8cc4-3a8e5a01094d`：title「Black Action Figure」、artist-credit「Stefon Harris」（`a18b2895` Person／US／1973-03-23）、**first-release-date `1999-09-14`**、primary-type Album、secondary-types 空，genres／tags `contemporary jazz`／`hard bop`／`jazz`／`jazz-funk`。**轄下兩筆 release**：`01ad6eec`（**`1999-09-14` US Official CD 15 軌**，Blue Note／`99546`，**無 barcode**）與 `f503015d`（**2015 XE，12\" Vinyl 15 軌**，`0602547292612`＝再壓）。**十五軌**：Club Madness (22s)／Feline Blues (215)／There Is No Greater Love (147)／Of Things to Come (342)／After the Day Is Done (382)／Conversations at the Mess (39)／BlackActionFigure (389)／Collage (475)／You Stepped Out of a Dream (88)／Alovi (326)／Bass Vibes (45)／The Alchemist (284)／Chorale (120)／Faded Beauty (524)／Musical Silence (10)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=12f816b9-46ec-3b25-8cc4-3a8e5a01094d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**編制（Discogs 美版 11660273 的 credits 欄逐字，七人、零逐軌標示）**：`Stefon Harris — Vibraphone`（兼 `Arranged By`、`Co-producer`、`Written-By`）、**`Greg Osby — Alto Saxophone`（兼 `Producer`）**、**`Gary Thomas — Alto Flute, Tenor Saxophone`**、**`Steve Turre — Trombone`**、**`Jason Moran — Piano`**、**`Tarus Mateen — Bass`**、**`Eric Harland — Drums`**。**工程 `Joe Marciano`，美術 `Greenberg Kingsley`，創意總監 `Gordon H Jee`，攝影 `Robert Fleischauer`，經紀 `Karen Kennedy`；companies 欄 `Stefonaphone Music — Produced For`。** ⚠ **Discogs 沒有任何逐軌樂器標示**——**策展層第 1358(二) 條說「十五軌含短曲與獨奏曲，三位管樂客座不可能每軌都在」是合理的推論，但沒有來源支持軌號。寫作層可以寫「十五軌裡有短到十秒、二十二秒、三十九秒、四十五秒的插曲」，不得指名誰在哪一軌。**",
+    "src": "https://api.discogs.com/releases/11660273"
+   },
+   {
+    "f": "**逐軌作曲（Discogs 11660273 的 per-track written-by 欄逐字）**：**第 3 軌〈There Is No Greater Love〉`Isham Jones ＋ Marty Symes`**、**第 8 軌〈Collage〉`Onaje Allan Gumbs`**、**第 9 軌〈You Stepped Out Of A Dream〉`Gus Kahn ＋ Nacio Herb Brown`**；**其餘十二軌的整張 credit 欄逐字 `Stefon Harris — Written-By`。** **→ 十五軌裡十二軌自寫、三軌是別人的曲。** ⚠ **策展層沒寫這一點；正文不得把〈Collage〉寫成 Harris 的創作（那是 Onaje Allan Gumbs 的曲）。**",
+    "src": "https://api.discogs.com/releases/11660273"
+   },
+   {
+    "f": "⚠⚠ **同期紙本：1999 年的評介、榜位與一則葛萊美提名，三層都有。** **(1) Billboard 1999-09-11 p43 的評介，廠牌欄逐字 `Blue Note 99546`**（策展層第 1353 條已引）。 **(2) 1999-10-02 p42 的 TOP JAZZ ALBUMS 第 23 名（NEW）。** **(3) ⚠⚠ 本層新補**：**Billboard 2000-01-15 第 68 頁的第 42 屆葛萊美完整提名名單，`Best jazz instrumental solo` 一欄逐字列「**\"There Is No Greater Love,\" Stefon Harris, Blue Note**」**——**那正是本張的第 3 軌（147 秒）。** **同一份名單的 `Best contemporary jazz performance` 一欄逐字列「\"Animation /Imagination,\" Tim Hagans, Blue Note」（同批 b 組那一張）。** **→ 本張在發行四個月後拿到葛萊美提名，這是策展層沒有的一筆。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-15.pdf"
+   },
+   {
+    "f": "**背景紙本（Lundvall 點名）**：**Billboard 1999-01-16 p48 的 Bruce Lundvall 專訪逐字**「**And Stefon Harris, who we wanted on Blue Note immediately upon hearing him.**」；**同期 p55 的六十週年全版藝人名單含 `Stefon Harris`**；**1999-04-03 p42 逐字「Blue Note Records’ New Directions Tour features a band consisting of four of the label’s young leading lights — **Stefon Harris, Jason Moran, Greg Osby, and Mark Shim**.」**——**那個四人巡演班底裡有三個人就在本張的 credits 上（Harris／Moran／Osby）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-04-03.pdf"
+   },
+   {
+    "f": "⚠ **載體：2015 年有黑膠再壓，1999 年那一批只有 CD（通則 1）。** **Discogs 1999 年的四筆全是 CD**：**美版 11660273（`7243 4 99546 2 5`）／歐版 3483513（同號）／美版俱樂部版 18398866／美版宣傳盤 11993698 與 37019334**；**2015 年才有兩筆黑膠再壓（美版 7851005 `B0023036-01`／歐版 7410139 `0602547292612`，MB 的 `f503015d` 就是後者）。** **→ 正文不得把黑膠寫成原壓。**",
+    "src": "https://api.discogs.com/releases/11660273"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `724537961`（us）回 **15 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同。**releaseDate `1999-01-01T08:00:00Z`——年頭回填形，而且比實際街頭日 `1999-09-14` 早八個半月**（策展層第 1365 條已標「差八個半月」，本層覆核成立）；**copyright 逐字 `℗ 1999 Blue Note Records`。** **→ 只有 ℗ 年可用。探測層判的 ready 抽核通過。**",
+    "src": "https://itunes.apple.com/lookup?id=724537961&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列。** ⚠ **與同批 a 組 Stefon Harris《A Cloud of Red Dust》(1998)**：**同掛名，十五軌與十一軌逐軌零重疊，兩卡 risk 互指、上架帶 catno（`99546` vs `23487`）。** ⚠ **與同批 b 組 Charlie Hunter《Return of the Candyman》(1998)**：**本張第 4 軌〈Of Things to Come〉（342 秒）與那張第 13 軌同名（84 秒），同一首 Harris 寫的曲、兩個錄音**（策展層第 1359(3) 條已標）。 ⚠ **與同批 a 組 Jason Moran《Soundtrack to Human Motion》(1999)**：**Moran 彈本張的鋼琴、Harris 彈那張的顫音琴，兩張互為對方的側人**，**曲目零重疊，四卡（含 Osby 在 c-154 b 的兩張）risk 互指。** ⚠ **池中另有 seed 的 `Stefon Harris, David Sánchez, Christian Scott —《Ninety Miles》(2011, apex 4)` 與 `c156-cards.json` 的 `Stefon Harris / Jason Moran / Greg Osby / Mark Shim —《New Directions》(2000)`**——**兩個聯名字串與本張的個人掛名並存（第 1131 條，不是分裂），四卡 risk 互指。** ⚠ **軌名撞卡名兩處**：〈Collage〉＝seed 的 `M’Boom` 與 `Collage` 兩張同名卡——**同名不同錄音，第 1049 條照收。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=12f816b9-46ec-3b25-8cc4-3a8e5a01094d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "第三軌〈There Is No Greater Love〉只有兩分二十七秒，卻替他拿到第四十二屆葛萊美「最佳爵士器樂獨奏」提名——同一份名單上的「最佳當代爵士演出」是同一年同廠的 Tim Hagans",
+   "十五軌裡有四軌短到四十五秒以內，最短的〈Musical Silence〉只有十秒；十二軌是他自己寫的，〈Collage〉則是 Onaje Allan Gumbs 的曲"
+  ],
+  "sound": "十五軌，七人編制。Stefon Harris 的顫音琴兼編曲與共同製作，Greg Osby 的中音薩克斯風兼製作，Gary Thomas 的中音長笛與次中音薩克斯風，Steve Turre 的長號，Jason Moran 的鋼琴，Tarus Mateen 的貝斯，Eric Harland 的鼓——來源沒有逐軌標示。十五軌長短落差極大：〈Musical Silence〉十秒、〈Club Madness〉二十二秒、〈Conversations at the Mess〉三十九秒、〈Bass Vibes〉四十五秒是四段插曲，〈Collage〉近八分鐘、〈Faded Beauty〉八分四十四秒。十二軌由 Harris 作曲，另三軌分別是 Isham Jones 的〈There Is No Greater Love〉、Onaje Allan Gumbs 的〈Collage〉與〈You Stepped Out of a Dream〉。工程 Joe Marciano。",
+  "keyTracks": [
+   "Black Action Figure",
+   "Of Things to Come",
+   "Collage",
+   "Faded Beauty"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判，而且這是本組 1999 年證據最完整的一張（評介、榜位、葛萊美提名三層）。** (1) **同期紙本（階序最上層）**：**Billboard 1999-09-11 p43 的評介，廠牌欄逐字 `Blue Note 99546`**——**發行當週的新片評介。** (2) **榜位**：**1999-10-02 p42 的 TOP JAZZ ALBUMS 第 23 名（NEW）。** (3) ⚠⚠ **本層新補的第三層**：**Billboard 2000-01-15 p68 的第 42 屆葛萊美完整提名名單，`Best jazz instrumental solo` 一欄逐字「\"There Is No Greater Love,\" Stefon Harris, Blue Note」**——**那是本張的第 3 軌。** (4) **MB first-release-date `1999-09-14`**（美版 `01ad6eec` 的日期逐日相同）。 (5) **Discogs 原壓群**：**1999 年四筆（美版／歐版／俱樂部版／兩筆宣傳盤）的 `year` 欄全是 1999**，`format` 欄除宣傳盤外乾淨；**2015 年的兩筆黑膠是再壓。** (6) **店面**：Apple `724537961` copyright 逐字 `℗ 1999 Blue Note Records`。 ⚠ **Apple 的 releaseDate `1999-01-01` 是年頭回填形，比實際街頭日早八個半月**（第 1300 條歪法 1，策展層第 1365 條已標）。 ⚠ **紙本三種字串**（第 1245 條）：**目錄號 `99546` 命中評介那一則**；**人名 `stefon harris` 在 1999 年多則有效**；**盤名 `black action figure` 1999 年零命中**——**三種有一種落空。**",
+  "notes": "**覆核策展層：rgMbid `12f816b9`／兩筆 release／掛名 `Stefon Harris`（與同批 a 組同一個字串，兩組已對過）／年份 1999-09-14／十五軌 全部成立。**｜⚠ **編制：七人，但 Discogs 沒有任何逐軌樂器標示。** **策展層第 1358(二) 條把本張列進「必須寫逐軌變動」那一格、理由是「十五軌含短曲與獨奏曲，三位管樂客座不可能每軌都在」——本層覆核：那是合理推論，但沒有來源支持軌號。** **→ 寫作層可以寫「十五軌裡有四軌短到四十五秒以內」，不得指名誰在哪一軌，也不得寫成「七重奏全程」。**｜⚠⚠ **本層補上策展層沒寫的作曲歸屬**：**第 3 軌〈There Is No Greater Love〉是 `Isham Jones ＋ Marty Symes`、第 8 軌〈Collage〉是 `Onaje Allan Gumbs`、第 9 軌〈You Stepped Out Of A Dream〉是 `Gus Kahn ＋ Nacio Herb Brown`**——**其餘十二軌才是 Harris 寫的。正文不得把〈Collage〉寫成他的創作。**｜⚠⚠ **本層新補一筆重要紙本**：**Billboard 2000-01-15 p68 的葛萊美提名（Best jazz instrumental solo，〈There Is No Greater Love〉）**——**策展層沒有。⚠ 那一份名單是從 `batch-progress/enum/billboard-bn-2000-ocr.txt.gz` 讀到的，那是另一個平行工作階段今天剛抓、尚未提交的檔，本層只讀不動。**｜⚠ **錄音場次查無**：**五筆 Discogs 條目都沒有 `Recorded At` 欄、沒有日期**（只有 `Joe Marciano — Engineer`）——**不得自行補。**｜⚠ **載體（通則 1）**：**1999 年那一批全是 CD；2015 年才有黑膠再壓（`B0023036-01`／`0602547292612`），正文不得把黑膠寫成原壓。**｜**撞陳列 4 組**：(1) **與同批 a 組《A Cloud of Red Dust》(1998)** 同掛名、逐軌零重疊，**上架帶 catno（`99546` vs `23487`）**；(2) **與同批 b 組《Return of the Candyman》(1998)**——**〈Of Things to Come〉同曲兩錄音**；(3) **與同批 a 組《Soundtrack to Human Motion》(1999)**——**兩張互為對方的側人**；(4) **與 seed 的 `Stefon Harris, David Sánchez, Christian Scott —《Ninety Miles》(2011, apex 4)` 與 `c156-cards.json` 的 `Stefon Harris / Jason Moran / Greg Osby / Mark Shim —《New Directions》(2000)`**——**兩個聯名字串與本張的個人掛名並存（第 1131 條）。** ⚠ **軌名撞卡名兩處**：〈Collage〉＝seed 的 `M’Boom` 與 `Collage`，**同名不同錄音、第 1049 條照收。**｜**試聽**：**串流採信 724537961**（us，15 軌逐軌相同、全部有 preview、discNumber 全 1）。｜**封面**：CAA RG 層有圖，不必找替代（⚠ **Discogs 美版 11660273 的 `images[0]` 雖是 `primary` 但只有 300×300**，若日後要換替代來源，**Apple `724537961` 的 `600x600bb` 是較好的備案**）。"
+ },
+ {
+  "key": "desc2:Önder Focan|Tunes Sung by the Vocalists",
+  "artist": "Önder Focan",
+  "album": "Tunes Sung by the Vocalists",
+  "facts": [
+   {
+    "f": "release-group `c0dd7586-563d-4842-a84d-1cad0f5ef5f6`：**MB 的 RG title 逐字是「Önder Focan Tunes Sung by the Vocalists」（掛名重複在盤名裡）**、artist-credit「Önder Focan」（`fe0da387` Person）、**first-release-date 1999**（只有年）、primary-type Album、secondary-types 空，**genres／tags 兩欄都是空的**。**轄下只有一筆 release `9299a208`（1999 **TR** Official CD 11 軌，Blue Note／`100318 2`，bc 8691284031822）。** **十一軌**：It’s Bird (319s)／Early in the Morning (Erken) (304)／Gece (458)／Sympatheticus (263)／Boğaz’da (374)／She Sings the Telephone Book (301)／Hodgesism (428)／Sekiz (369)／Jazz, I Hear (383)／Yaz Sevdası (Yasemin) (335)／O.K. Bob (Oh! Kebap) (462)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c0dd7586-563d-4842-a84d-1cad0f5ef5f6&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **錄音地點在紐約，不是土耳其——策展層沒寫，而且那個錄音室是本批的熟面孔。** **Discogs 14159573（Turkey 1999，廠牌欄逐字 `Blue Note / 100318 2` 與 `EMI/Blue Note / 100318 2`）的 companies 欄逐字**：**`Systems Two — Recorded At`、`Systems Two — Mixed At`、`Current Sounds — Mastered At`、`EMI-Kent Elektronik San. Ve Tic. A.Ş. — Phonographic Copyright (p)`、`Odeon (4) — Pressed By`**。 ⚠ **`Systems Two`（布魯克林）正是同批 a 組 Jason Moran《Soundtrack to Human Motion》的錄音室（1998-08-29／30 錄音、09-26／27 混音）**——**兩張碟共用場地，第 855／861 條：錄音室相同只是必要條件。** ⚠ **錄音與混音工程 `David Baker`——與同批 a 組《Mirrors》（1998-07-07／08）和《Live in New York》（1989-03-21）同一位工程師。**",
+    "src": "https://api.discogs.com/releases/14159573"
+   },
+   {
+    "f": "**編制（Discogs 14159573 的 credits 欄逐字，樂手六人 ＋ 歌手三位，零逐軌標示）**：**樂手**——`Önder Focan — Guitar`（兼 `Composed By`、`Arranged By`、`Liner Notes`）、**`Bruce Barth — Piano`**、**`Doug Weiss — Bass`**、**`Hugh Sicotte — Drums`**、**`Slide Hampton — Trombone`**、**`Brian Lynch — Trumpet`**；**歌手三位**——**`Ajlan Büyükburç — Vocals`、`Aydın Kahya — Vocals`、`Sibel Köse — Vocals`**。**製作掛的是公司 `EMI-Kent Elektronik San. Ve Tic. A.Ş. — Producer`，助理製作 `Zuhal Focan`（兼攝影），英文歌詞編修 `Bob Herschler — Edited By [All Lyrics In English]`，母帶 `Bob Ward`，美術 `Kutay Tanir`。** ⚠ **來源沒有逐軌標示**——**策展層第 1358(三) 條說「樂手六人固定、三位歌手要逐軌」是合理推論（盤名就叫「歌手們唱的曲子」），但沒有軌號來源。寫作層不得指名哪位歌手唱哪一軌。**",
+    "src": "https://api.discogs.com/releases/14159573"
+   },
+   {
+    "f": "**作曲與總長**：`Önder Focan — Composed By, Arranged By`（整張，無軌號）——**十一軌全部由他作曲與編曲**；**notes 逐字「Jewel case | Comes with a full color 24-page booklet | Total playing: **66:42**」。** ⚠ **24 頁小冊正是 CAA 那 16 張圖的來源**（策展層第 1365 條記「本組圖最多的一張，16 圖、24 頁小冊全掃」）。 ⚠ **另有同年的土耳其卡帶版 Discogs 36222085（`MC AIE 318`，format 欄逐字 `Cassette, Album`）**——**本張是本組唯一同時有 CD 與卡帶的碟；沒有黑膠（通則 1）。**",
+    "src": "https://api.discogs.com/releases/14159573"
+   },
+   {
+    "f": "⚠ **紙本兩年皆空白，三種字串全部零命中**（第 1245 條）：**目錄號 `100318`、人名 `focan`、盤名 `tunes sung by the vocalists` 在 `billboard-bn-1999-ocr.txt.gz` 與 `billboard-bn-2000-ocr.txt.gz` 六組查詢全部零命中。** ⚠ **兩份檔的關鍵字集都是為別批配的、存的是命中頁不是全文**——**「零命中」只能說「不在那兩份的命中頁裡」。土耳其在地發行不進美國紙本是常態，本筆年份不靠紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-16.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `713553142`（gb 市場）回 **11 軌、全部有 previewUrl、discNumber 全是 1**，`collectionName` 逐字「Tunes Sung By the Vocalists」（**沒有 MB 那個重複的掛名前綴**），**releaseDate 逐字 `1999-05-21T07:00:00Z`（帶完整月日、非年頭回填）**；⚠⚠ **copyright 逐字 `℗ 1999 Universal Music Türkiye`——那是後來的版權承接方（1999 年的 ℗ 持有者是 `EMI-Kent Elektronik`），年份對、廠牌不對**（第 1365 條那句「copyright 寫後來的重發年／承接方」的變體）。 ⚠ **us 市場零命中**（回的全是 Focan 2003 年後的碟）——**第 1246 條再次成立。**",
+    "src": "https://itunes.apple.com/lookup?id=713553142&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Önder Focan`（`Onder` 無變音形也掃過）在池中有一張卡（c-153 b 的《Beneath the Stars / Yıldızların Altında》），本張十一軌與它逐軌零重疊。** **兩卡 risk 互指。** ⚠ **軌名撞卡名零處**（十一軌的曲名在池中都沒有同名卡）。 ⚠ **掛名變體**：**Discogs 的掛名欄逐字是 `Önder Focan / Ajlan Büyükburç, Sibel Köse, Aydın Kahya, Slide Hampton, Brian Lynch, Bruce Barth, Doug Weiss, Hugh Sicotte`（把全部九個人印上去）**——**那是盤面把班底印全，不是新掛名**（第 307 條，策展層第 1356(四) 條已判，本層覆核成立）。",
+    "src": "https://itunes.apple.com/lookup?id=713553142&country=gb&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "土耳其盤、土耳其廠牌壓的，可是錄音在布魯克林的 Systems Two——工程師是 David Baker，同一批裡 Joe Chambers 與 Stanley Jordan 兩張碟也是他錄的",
+   "盤名叫「歌手們唱的曲子」，碟上真的有三位土耳其歌手；但十一軌全部由 Focan 一個人作曲與編曲，連英文歌詞都另請人編修"
+  ],
+  "sound": "十一軌，Blue Note 的土耳其線發行，盤面目錄號 100318 2。錄音與混音都在布魯克林的 Systems Two，工程 David Baker，母帶 Bob Ward 在 Current Sounds，℗ 持有者是 EMI-Kent。樂手六人：Focan 的吉他、Bruce Barth 的鋼琴、Doug Weiss 的貝斯、Hugh Sicotte 的鼓，加上 Slide Hampton 的長號與 Brian Lynch 的小號；歌手三位——Ajlan Büyükburç、Aydın Kahya、Sibel Köse，來源沒有標示誰唱哪一軌。十一軌全部由 Focan 作曲與編曲，他自己也寫了內頁，英文歌詞由 Bob Herschler 編修。全碟六十六分四十二秒，附二十四頁全彩小冊。",
+  "keyTracks": [
+   "It’s Bird",
+   "Gece",
+   "Hodgesism",
+   "O.K. Bob (Oh! Kebap)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判；但本張的證據層只有 Discogs 與店面兩層，紙本完全空白。** (1) **Discogs 原壓群**：**14159573（Turkey 1999，`Blue Note / 100318 2`）的 `year` 欄 1999，`format` 欄乾淨（`CD, Album, Stereo`）**；**同年另有土耳其卡帶版 36222085（`MC AIE 318`，1999）。** (2) **MB first-release-date 1999**（只有年；唯一那筆 release `9299a208` 也只有年，但有 barcode `8691284031822`）。 (3) **店面**：**Apple `713553142`（gb 市場）的 releaseDate 逐字 `1999-05-21`（帶完整月日、非年頭回填）**；⚠ **copyright 逐字 `℗ 1999 Universal Music Türkiye`——年份對，但廠牌是後來的版權承接方（1999 年的 ℗ 持有者是 `EMI-Kent Elektronik San. Ve Tic. A.Ş.`）**，**第 1365 條那句「copyright 欄寫後來的承接方」的變體。** (4) ⚠ **(戊) 前置閘（第 1295 條）通過**：**Discogs 的 labels 陣列逐字有兩筆 `Blue Note / 100318 2` 與 `EMI/Blue Note / 100318 2`**——**盤面掛 Blue Note 這個名字，不是光的 EMI。** ⚠ **紙本三種字串在 1999 與 2000 兩年六組查詢全部零命中**（第 1245 條）：`100318`／`focan`／`tunes sung by the vocalists`；⚠ **兩份 OCR 檔的關鍵字集都是為別批配的、存的是命中頁不是全文**——**「零命中」只能說「不在那兩份的命中頁裡」。土耳其在地發行不進美國紙本是常態。** ⚠ **錄音日查無，無法用時間軸交叉驗證。**",
+  "notes": "**覆核策展層：rgMbid `c0dd7586`／唯一 release `9299a208`／掛名 `Önder Focan`（盤面把九個人印全是「把班底印全」不是新掛名，第 307 條，變體進 `queryAlias`）／盤名取光的《Tunes Sung by the Vocalists》（MB 的 RG title 前面重複了掛名，Apple 與 Discogs 都沒有）／年份 1999／十一軌 全部成立。**｜⚠⚠ **本層補上策展層完全沒寫的錄音地點**：**錄音與混音都在布魯克林的 `Systems Two`、工程 `David Baker`、母帶 `Bob Ward`（Current Sounds）。** ⚠ **`Systems Two` 正是同批 a 組《Soundtrack to Human Motion》的錄音室、`David Baker` 正是同批 a 組《Mirrors》與《Live in New York》的錄音工程師**——**三張碟的側面連結，第 855／861 條：共用場地與工程師不足以判同一場。**｜⚠ **編制：樂手六人、歌手三位，來源零逐軌標示。** **策展層第 1358(三) 條說「樂手六人固定、三位歌手要逐軌」是合理推論（盤名就叫「歌手們唱的曲子」），但沒有軌號來源。寫作層不得指名哪位歌手唱哪一軌。** **本層要補的是：製作掛的是公司（`EMI-Kent`），不是個人；助理製作兼攝影是 `Zuhal Focan`。**｜⚠ **作曲：十一軌全部由 Focan 作曲與編曲，他自己也寫內頁；英文歌詞由 `Bob Herschler` 編修。**｜⚠ **載體**：**CD ＋ 同年的土耳其卡帶（`MC AIE 318`）**——**本組唯一同時有 CD 與卡帶的碟；沒有黑膠（通則 1）。**｜**撞陳列 1 組**：**與池中 `Önder Focan —《Beneath the Stars / Yıldızların Altında》(c-153 b)` 同掛名**，**本張十一軌與它逐軌零重疊**（掃 27750 列），**兩卡 risk 互指。** ⚠ **軌名撞卡名零處。**｜**試聽**：**串流採信 713553142**（gb 市場，11 軌逐軌相同、全部有 preview、discNumber 全 1；⚠ **us 市場零命中，回的全是 Focan 2003 年後的碟——第 1246 條**）。｜**封面**：CAA RG 層 **16 圖**（本組最多，24 頁小冊全掃），不必找替代。"
+ },
+ {
+  "key": "desc2:Jean-Pierre Como|Empreinte",
+  "artist": "Jean-Pierre Como",
+  "album": "Empreinte",
+  "facts": [
+   {
+    "f": "release-group `37f6f9eb-7c08-322b-8a8b-bd4d6a9ecaea`：title「Empreinte」、artist-credit「Jean-Pierre Como」（`6ef49abb` Person／FR／1963-02-28，**連字號已核為 ASCII 的 `-`**）、**first-release-date 1999**（只有年）、primary-type Album、secondary-types 空，**genres／tags 兩欄都是空的**。**轄下只有一筆 release `e33fa465`（1999 FR Official CD 12 軌，Blue Note／`209072`，bc 724352090723）。** **十二軌（MB）**：Anatole France (310s)／Toutine (320)／Résonnances (173)／Margaux (459)／Ange Michel (220)／Three Views of a Secret (71)／Boulougnou (248)／Empreinte (273)／Alpiçoise (387)／Milestrone (309)／**Giant Steps (73)**／Liberty City (Jaco Pastorius) (292)。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=37f6f9eb-7c08-322b-8a8b-bd4d6a9ecaea&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠⚠ **本層推翻策展層第 1358(一) 條把本張列為「編制查不到」的判定：Discogs 的「整張 credits 欄」確實是空的，但「逐軌 credits 欄」是滿的。** **Discogs 8347710（France，`Blue Note / 209072`，`released` 欄逐字 `1999-06-02`）的 `extraartists` 是 `[]`——但 `tracklist` 裡每一軌自己帶 `extraartists`，逐字如下**：**第 1 軌〈Anatole France〉`Guida Tchiam — Vocals`＋`Omar Touré — Vocals`**／**第 3 軌〈Résonnances〉`Zool Fleischer — Arranged By, Keyboards`＋`Paco Sery — Drums`**／**第 5 軌〈Ange Michel〉`Jean-Pierre Como — Vocals`＋`Miguel Sanchez — Percussion`＋`Karim Ziad — Vocals, Percussion`**／**第 6 軌〈Three Views Of A Secret〉`Sylvain Luc — Guitar, Mandolin`**／**第 7 軌〈Boulougnou〉`Eric Chevalier — Programmed By`**／**第 8 軌〈Empreinte〉`Michel Alibo — Bass`＋`Didier Lockwood — Violin`＋`Alain Debiossat — Text By`**／**第 9 軌〈Alpiçoise〉`Miguel Sanchez — Percussion`**／**第 12 軌〈Liberty City〉`Dario Deidda — Bass`＋`Emmanuel Binet — Drums, Percussion`＋`Aurélie Guillier／Jean-Pierre Como／Omar Ba／Paco Sery／Weuz Kaly — Vocals`**。",
+    "src": "https://api.discogs.com/releases/8347710"
+   },
+   {
+    "f": "⚠ **但有一件事策展層是對的：Como 自己的鋼琴查不到。** **上面那份逐軌名單裡，`Jean-Pierre Como` 只出現在第 5 與第 12 軌的 `Vocals` 欄，以及各軌的 `Composed By` 欄**——**全碟沒有任何一筆 `Piano` 或 `Keyboards` 掛在他身上**（第 3 軌的鍵盤是 `Zool Fleischer`）。 **→ 寫作層可以寫上面那九軌的客座名單，但不得寫「Como 彈鋼琴」，也不得補全張的固定節奏組（貝斯與鼓只在第 8、12 兩軌有人掛）。** ⚠⚠ **策展層警告的「與同批 Stéphane Huchard《Tribal Traquenard》班底互換」的陷阱依然成立**：**上面那份逐軌名單裡沒有 `Stéphane Huchard`，而《Tribal Traquenard》的 credits 欄裡也沒有 `Como`。兩卡 risk 必須互指，兩張都不得補對方的名字。**",
+    "src": "https://api.discogs.com/releases/8347710"
+   },
+   {
+    "f": "⚠ **逐軌作曲與兩首 Jaco Pastorius 的曲。** **Discogs 8347710 的逐軌 `Composed By` 欄逐字**：**第 1、2、3、4、5、7、8、10 軌 `Jean-Pierre Como`**／**第 6 軌〈Three Views Of A Secret〉`Jaco Pastorius`**／**第 9 軌〈Alpiçoise〉`Marc Bertaux`**／**第 11 軌〈Giant Steps〉`John Coltrane`**／**第 12 軌〈Liberty City〉`Jaco Pastorius`**。 **→ 十二軌裡八軌自寫，另有兩首 Jaco Pastorius（第 6 與第 12）、一首 Coltrane（第 11）、一首 Marc Bertaux（第 9）。** ⚠ **第 6 軌只有 71 秒、第 11 軌只有 73 秒——那兩首是短插曲式的致敬，不是完整演奏。** ⚠ **軌名差異**：**Discogs 第 2 軌逐字是「Tontine (de Léon Camé)」，MB 作「Toutine」；Discogs 第 12 軌逐字是「Liberty City」，MB 作「Liberty City (Jaco Pastorius)」。**",
+    "src": "https://api.discogs.com/releases/8347710"
+   },
+   {
+    "f": "⚠ **宣傳盤是 CDr、而且自稱是零售盤的「提前樣片」。** **Discogs 13166229（France 1999，`Blue Note / BN 5209072`，format 欄逐字 `CDr, Album, Promo, Sampler`）的 notes 逐字**：「**Echantillon promotionnel interdit à la vente** | - **Advance promotional pre-issue of regular release [r8347710]** -」。 **→ 第 1297 條：它的日期只能當下界；零售盤 8347710 的 `released` 欄 `1999-06-02` 才是本張的發行日。** **Discogs master 1495877 的 versions 只有這兩筆——全世界只有一個零售版本與一張宣傳 CDr，沒有黑膠、沒有卡帶（通則 1）。**",
+    "src": "https://api.discogs.com/releases/13166229"
+   },
+   {
+    "f": "⚠ **紙本兩年皆空白，三種字串全部零命中**（第 1245 條）：**目錄號 `209072`／`5209072`、人名 `como`（⚠ **`como` 是西班牙文常見詞，1999 與 2000 兩年各有大量假命中，逐則核完沒有一則是他**）、盤名 `empreinte` 在 `billboard-bn-1999-ocr.txt.gz` 與 `billboard-bn-2000-ocr.txt.gz` 六組查詢全部沒有本張。 ⚠ **人名必須用全名 `jean-pierre como` 查**（第 1301 條「短字串是別人的子字串」的又一個樣本），**用全名查兩年都是零。** **法國廠牌的在地發行不進美國紙本是常態，本筆年份不靠紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-11-27.pdf"
+   },
+   {
+    "f": "**店面與軌數抽核**：Apple `1776169795`（us）回 **12 軌、全部有 previewUrl、discNumber 全是 1**，軌名與 MB 逐軌相同。**releaseDate 逐字 `1999-06-02T07:00:00Z`——與 Discogs 零售盤的 `released` 欄逐日相符**；⚠ **策展層第 1353 條提醒「兩者可能同源（第 431 條）」——本層無法排除，但兩邊至少互不矛盾。** **copyright 逐字 `℗ 1999 Jean-Pierre Como under exclusive license to Bonsai Music`**——⚠ **`Bonsai Music` 是後來的授權方，不是 1999 年的發行方（盤面 companies 欄是 `Blue Note — Phonographic Copyright (p)`、`EMI Music France — Copyright (c)`）。**",
+    "src": "https://itunes.apple.com/lookup?id=1776169795&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**撞陳列（逐軌核完）**：**實掃 27750 列**——**`Jean-Pierre Como`（`Jean Pierre Como` 無連字號形也掃過）在池中零列，本張是第一張。** ⚠ **軌名撞卡名一處**：**〈Giant Steps〉＝seed 的 `John Coltrane —《Giant Steps》`**——**而本張第 11 軌的作曲者逐字正是 `John Coltrane`，它是一首 73 秒的致敬插曲，不是原盤的重錄。第 1049 條照收，正文不得互指。** ⚠ **與同批 b 組《Tribal Traquenard》(Stéphane Huchard, 1999) risk 互指**（見上，兩張都是 Blue Note France 1999 年的碟、兩人同屬 Sixun，推論起來特別順但來源互不支持）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=37f6f9eb-7c08-322b-8a8b-bd4d6a9ecaea&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "整張 credit 欄是空的，可是每一軌自己掛著客座名單——九軌各有各的人，第十二軌〈Liberty City〉光是唱和聲的就有五個",
+   "十二軌裡有兩首是 Jaco Pastorius 的曲，第六軌那首〈Three Views of a Secret〉只有七十一秒、第十一軌的〈Giant Steps〉七十三秒——兩段都是插曲式的致敬"
+  ],
+  "sound": "十二軌，Blue Note 的法國線 1999 年 6 月 2 日發行。編制要一軌一軌讀：第 1 軌有 Guida Tchiam 與 Omar Touré 的人聲，第 3 軌有 Zool Fleischer 的鍵盤與編曲、Paco Sery 的鼓，第 5 軌有 Karim Ziad 的人聲與打擊、Miguel Sanchez 的打擊，第 6 軌有 Sylvain Luc 的吉他與曼陀林，第 7 軌有 Eric Chevalier 的程式編寫，第 8 軌有 Michel Alibo 的貝斯與 Didier Lockwood 的小提琴，第 9 軌有 Miguel Sanchez 的打擊，第 12 軌有 Dario Deidda 的貝斯、Emmanuel Binet 的鼓與五位和聲。作曲八軌是 Como 自己，另有兩首 Jaco Pastorius（〈Three Views of a Secret〉與〈Liberty City〉）、一首 Coltrane 的〈Giant Steps〉、一首 Marc Bertaux 的〈Alpiçoise〉。",
+  "keyTracks": [
+   "Empreinte",
+   "Anatole France",
+   "Margaux",
+   "Liberty City (Jaco Pastorius)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判。** (1) **Discogs 零售盤**：**8347710（France，`Blue Note / 209072`）的 `released` 欄逐字 `1999-06-02`、`year` 欄 1999，`format` 欄乾淨。** (2) **店面**：**Apple `1776169795` 的 releaseDate 逐字 `1999-06-02`——與 Discogs 逐日相符**；⚠ **策展層第 1353 條提醒兩者可能同源（第 431 條），本層無法排除，但兩邊互不矛盾。** ⚠ **copyright 逐字 `℗ 1999 Jean-Pierre Como under exclusive license to Bonsai Music`——`Bonsai Music` 是後來的授權方，不是 1999 年的發行方；盤面的 companies 欄是 `Blue Note — Phonographic Copyright (p)` ＋ `EMI Music France — Copyright (c)`。** (3) **MB first-release-date 1999**（只有年）。 (4) ⚠ **宣傳盤 13166229（`BN 5209072`，format 欄逐字 `CDr, Album, Promo, Sampler`）的 notes 自稱「Advance promotional pre-issue of regular release」**——**第 1297 條：只能當下界。** (5) ⚠ **(戊) 前置閘通過**：**盤面 ℗ 欄逐字是 `Blue Note`。** ⚠ **紙本三種字串在 1999 與 2000 兩年六組查詢全部沒有本張**（第 1245 條）：`209072`／`5209072`、盤名 `empreinte`、人名**必須用全名 `jean-pierre como`**（⚠ **只查 `como` 會被西班牙文常見詞大量假命中**，第 1301 條的又一個樣本）。**法國在地發行不進美國紙本是常態。** ⚠ **錄音日與錄音室都查無，無法用時間軸交叉驗證。**",
+  "notes": "**覆核策展層：rgMbid `37f6f9eb`／唯一 release `e33fa465`／掛名 `Jean-Pierre Como`／年份 1999／十二軌 全部成立。**｜⚠⚠⚠ **本層推翻策展層第 1358(一) 條把本張列為「編制查不到」的判定——那個判定只看了「整張 credits 欄」。** **Discogs 8347710 的 `extraartists` 確實是 `[]`，但 `tracklist` 裡有九軌各自帶 `extraartists`，逐字給出客座名單**（第 1 軌 Guida Tchiam／Omar Touré 人聲；第 3 軌 Zool Fleischer 鍵盤與編曲、Paco Sery 鼓；第 5 軌 Karim Ziad 人聲與打擊、Miguel Sanchez 打擊；第 6 軌 Sylvain Luc 吉他與曼陀林；第 7 軌 Eric Chevalier 程式；第 8 軌 Michel Alibo 貝斯、Didier Lockwood 小提琴；第 9 軌 Miguel Sanchez 打擊；第 12 軌 Dario Deidda 貝斯、Emmanuel Binet 鼓與五位和聲）。**→ 本張的編制欄應從「查不到」改成「逐軌變動」。** **→ 給後批的一句：判「編制查不到」之前，一定要讀 Discogs `tracklist` 裡每一軌自己的 `extraartists`，不能只讀 release 層的 `extraartists`。**｜⚠ **但策展層有一件事是對的：Como 自己的鋼琴查不到。** **他只出現在第 5、12 軌的 `Vocals` 欄與各軌的 `Composed By` 欄，全碟沒有任何 `Piano`／`Keyboards` 掛在他身上。寫作層不得寫「Como 彈鋼琴」，也不得補全張的固定節奏組。**｜⚠⚠ **與《Tribal Traquenard》互換班底的陷阱依然成立**：**本張的逐軌名單裡沒有 `Stéphane Huchard`，《Tribal Traquenard》的 credits 裡也沒有 `Como`。兩卡 risk 必須互指，兩張都不得補對方的名字。**｜⚠ **作曲：八軌自寫，另有 Jaco Pastorius 兩首（第 6、12 軌）、Coltrane 一首（第 11 軌，73 秒）、Marc Bertaux 一首（第 9 軌）。** ⚠ **軌名差異**：**Discogs 第 2 軌逐字「Tontine (de Léon Camé)」，MB 作「Toutine」**——**正文用 Discogs 的形。**｜⚠ **載體（通則 1）**：**master 1495877 只有兩筆版本（零售 CD ＋ 宣傳 CDr），沒有黑膠、沒有卡帶。**｜**撞陳列**：**`Jean-Pierre Como` 兩形都掃過，池中零列，本張是第一張**（掃 27750 列）。 ⚠ **軌名撞卡名一處**：〈Giant Steps〉＝seed 的 `John Coltrane`，**而本張那一軌的作曲者正是 Coltrane、長度只有 73 秒，是插曲式致敬不是重錄；第 1049 條照收，正文不得互指。**｜**試聽**：**串流採信 1776169795**（us，12 軌逐軌相同、全部有 preview、discNumber 全 1）。｜**封面**：⚠⚠ **CAA RG 層真 404**（連探三次全部回 404，第 589a 條已排除 5xx）。⚠⚠ **零售盤 `8347710` 只有 1 張圖、而且 `type` 是 `secondary`（600×600）——不可用。** **替代來源＝Discogs 宣傳 CDr `13166229` 的 `images[0]`，`type` 逐字是 `primary`、尺寸 600×591、該條目共 2 圖**；⚠ **但它是「零售盤的提前樣片」，封面可能與零售盤不同，本機端取用前要比對。** **較安全的備案是 Apple `1776169795` 的 `600x600bb`。研究層不下載。**"
  }
 ]

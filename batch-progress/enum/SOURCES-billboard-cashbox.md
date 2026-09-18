@@ -1029,3 +1029,50 @@ Chucho Valdés《Live at the Village Vanguard》、Everette Harp《For the Love�
 
 **到此合計覆蓋：Billboard 1955→2000 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
 ⚠ **2001 年**：本棒收工時（2026-09-18 18:47）工作區已出現 `billboard-bn-2001-ocr.txt.gz`（**8.4 MiB，另一個並行工作階段正在抓**）——**本棒沒有動它，那一份的期數、命中頁與關鍵字集由抓它的那一棒自己 append。**
+
+## 2026-09-18 再追加（c-157 **a 組**策展層自抓：**Billboard 2001 年全年**）
+
+**c-157 a 組 23 筆裡有 13 筆的年份落在 2001**（Mose Allison《The Mose Chronicles Vol. 1》、Pat Martino《Live at Yoshi's》、
+Kurt Elling《Flirting With Twilight》、Rodney Jones《Soul Manifesto》、Don Byron《You Are #6》、Stefon Harris & Jacky Terrasson《Kindred》、
+Chucho Valdés《Solo Live in New York》、Bebo Valdés《El arte del sabor》、Charlie Parker《The Washington Concerts》、
+Paul Jackson, Jr.《The Power of the String》、Lonnie Plaxico《Melange》、Prysm《On Tour》、Johnny Smith 那張退件），
+**而派工信逐字寫「Billboard 在 repo 裡覆蓋到 1999（＋2002 一年），2000／2001 沒人掃」**——
+**2000 年在本棒開工時已由主線／並行的一棒寫進 `billboard-bn-2000-ocr.txt.gz`（52 期），2001 年則由本棒自抓**：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2001-ocr.txt.gz` | **8.1 MiB 壓縮 / 19.3 MiB 原文** | **2001-01-13 → 2001-12-29，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **1,992** | **2001-01-06（探測回 404，2001 年第一期就是 01-13）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **原文 19.3 MiB 遠超過 8 MiB 門檻，依派工信的寫檔規則存成 `.txt.gz`**（壓後 8.1 MiB，低於 Cloudflare Pages 的 25 MiB 單檔上限）。
+
+⚠ **2001 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/00s/2001/`**，**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**
+——**與派工信說的 2002 年（`Billboard/00s/2002/`、檔名全年單純 `BB-`）同形**。
+
+⚠ ⚠ **索引頁仍然 403；上一段（1999 年那一棒）立的「枚舉當年週六＋`Range: bytes=0-64` 探測」在 2001 年第二次生效**：
+**枚舉 2001 年全部 52 個週六逐一探測，51 個回 `206`、只有 `2001-01-06` 回 404。成本 52 次請求、幾秒鐘，不必解析 HTML。**
+**→ 這個方法現在有兩個成功樣本（1999、2001），可以當成 2026-09-18 之後的標準做法。**
+
+⚠ **關鍵字集是為 c-157 a 的 23 筆量身配的**（約 110 個詞 ＋ 目錄號片段
+`26801`／`27290`／`27291`／`27637`／`30754`／`36710`／`28417`／`29743`／`30499`／`31113`／`32231`／`5351932`／
+`93456`／`99749`／`22626`／`9223`／`9229`／`9230`／`31569`／`31570`／`97472`，
+另含通用詞 `blue note`／`blue nole`／`slue note`／`bine note`／`blue nate`／`bhre note`／`top jazz`／`top jall`／`top jail`／
+`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／`traditional jazz`／`bruce lundvall`／`lundvall`／
+`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`metro blue`／`somethin' else`）
+——**查別的 2001 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **2001 年最有用的兩期**：
+**`BB-2001-06-09` p53 是 Blue Note 的全版廣告**，逐字列出兩欄「LOOK FOR NEW ALBUMS LATER IN 2001 FROM」名單
+（BOBBY MCFERRIN／KURT ELLING／GREG OSBY／JASON MORAN／PAT MARTINO／**JACKY TERRASSON & STEFON HARRIS**／RENEE ROSNES／DIANNE REEVES；
+CHARLIE HUNTER／RODNEY JONES／RONNY JORDAN／DR. JOHN／CALLE 54 soundtrack／GONZALO RUBALCABA），同頁有 `THE FINEST IN LATIN JAZZ SINCE 1939` 與該年葛萊美得獎標記；
+**`BB-2001-02-10` p81 是再發專欄**，逐字給出 Charlie Parker《Washington Concerts》(April 10)、Django Reinhardt《All Star Sessions》(June 5)、
+Count Basie《Breakfast Dance And Barbecue》與 Sarah Vaughan《Sweet & Sassy》(July 3) 的街頭日。
+**另 `BB-2001-01-13` p84 是第 43 屆葛萊美完整提名名單。**
+
+⚠ **2001 年 Billboard 的爵士欄仍分兩張榜**：`Top Jazz Albums` 與 `Top Contemporary Jazz Albums`（**隔週刊登**），**`Jazz → Jall／Jail` 的 OCR 形變到 2001 年還在**。
+
+⚠ **本棒實測的五個查詢坑**：查 `martino` 命中 Ewa Martinoff／Mike Martinovich／捷克作曲家 Bohuslav Martinů；
+查 `kindred` 七處裡六處是 `kindred spirit` 或 R&B 二人組 Kindred；查 `melange` 命中的是評介裡當普通名詞用的 `melange`；
+查 `elling` 大量命中 `selling`；查 `don byron` 命中鄉村製作人 `Byron Gallimore`。
+
+**到此合計覆蓋：Billboard 1955→2002 全年（2000 與 2001 補齊後已無斷點），Cash Box 1960-11→1996-11（停刊）。**
