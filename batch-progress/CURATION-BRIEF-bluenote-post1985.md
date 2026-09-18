@@ -72,3 +72,52 @@
 交件 `batch-progress/c1XX/prop-{a,b}.json`；裁定 append 進 `batch-progress/c1XX/rulings.md`，
 **編號區間由派工信指定**。**退掉的逐筆列在 rulings，附理由分類。**
 收工前跑 `node batch-progress/c1XX/chk-prop.mjs <組>`，**標記清成 0**。**不要 git commit／push。**
+
+## 附錄（2026-09-18）：⚠ 那句「非爵士 44 張與待判曲風 97 張不在你的清單裡」要收回一半
+
+第一節第 4 點寫「列舉檔已排掉」——**但那 97 張根本沒有人判過曲風**（每筆的 `note` 都是「待人工判曲風」）。
+主線派了一支列舉層代理逐筆分流，結果是：
+
+| tier | 張數 |
+|---|---:|
+| **`jazz-missing`（是爵士、且不在池中也不在任何清單裡）** | **75** |
+| `non-jazz` | 18 |
+| `jazz-dup`（與清單上某張是同一碟，MB 建了兩個 RG） | 2 |
+| `unclear` | 2 |
+
+**→ 97 張裡有 75 張是漏掉的爵士盤，不是被排掉的。**
+明細在 `batch-progress/enum/blue-note-unknown-genre.json` ＋ `.md`。
+
+### ⚠ 根因：列舉腳本拿 artist 層判曲風，沒拿 release-group 層
+
+**97 張裡有 54 張的 release-group 端點直接寫著 `jazz`／`hard bop`／`post-bop`**，卻仍被判 `unknown`；
+而 **artist 層的 tags＋genres 有 92 張是全空的**。`blue-note.json` 的 `generated` 是 2026-09-15，**不是陳年資料**。
+
+⚠ **若其他廠牌線是同一支腳本產的，同規模的漏可能到處都是**
+——**建議本機端改用 `release-group?inc=genres+tags` 為主，並對既有列舉檔的 `unknown` 列重跑。**
+
+### 已經接上管線的兩筆
+
+- **`batch-progress/c168/slice.json`（18 張）**＝`jazz-missing` 裡 1985–1999 的 17 張
+  ＋ **Don Byron《Nu Blaxploitation》的真盤 RG `6aab4e1b`**
+  （c-155 a 的清單拿到的是宣傳潔淨版 `29d70318` 並已退件；第 1325 條）。
+- **`c167/slice.json` 補入 Immanuel Wilkins《Live at the Village Vanguard Vol. 1》**
+  （`c533ae9b`）——**原本只有 Vol. 2 與 Vol. 3，會是斷號。**
+
+**2000 年後的 58 張 `jazz-missing` 還沒接**，逐筆列在 `.md` 第四節；
+其中 **Kandace Springs 三張與 Joel Ross 四張，兩人的 Blue Note 線一張都沒進過批次。**
+
+### 兩個「名字有 Blue Note 但不算家族」的廠牌（新增）
+
+- **`Blue Note Compagnie`**（法國獨立小廠，`BNS-` 目錄號）
+- **`Blue Note Digital`**（MB label `0293ae5c`、barcode 810211 段，與正規 imprint `713c4a95` 不同實體）
+
+反過來，**2000 年後的歐洲／芬蘭分支（SlowHill、U-Street All Stars、Joona Toivanen、Blue Note Lab…）
+查到的全是正規發行**，沒有一張因「是歐洲分支」被排除。
+
+### ⚠ 第 1250 條在這一棒應驗七次
+
+**列舉檔的 `catno` 欄不能直接拿去反查**——本批七筆是被壓過的裸數字或缺空格
+（`93006` 撞俄國搖滾、`24633` 撞 Big Mountain、`45687` 撞 Gordon Lightfoot、`85697402` 前綴被吃掉、
+`11` 完全不具唯一性……）。**盤名反查的假陽性更高**：12 筆盤名撞池／撞批次，逐筆核完**真的同碟 0 筆**。
+**判「同一張碟」只有「目錄號＋廠牌」有效。**
