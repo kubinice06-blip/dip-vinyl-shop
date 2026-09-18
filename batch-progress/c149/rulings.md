@@ -483,3 +483,163 @@ MCA 新年願望專欄、Roulette 官司報導）、`Storyville`（Candid 廠的
   ⚠ origin 那幾筆裡有一筆是「把 1977–79 的兩份 OCR 改存 `.gz`，解開 Pages 的 25 MiB 部署死結」，
   **但更後面一筆已改用 build command、產線目錄不再進部署**。本棒的四份 OCR 依本機現況存成純 `.txt`
   （與本機的 `billboard-bn-1982-1984-ocr.txt` 5.1 MB 同形）。**合併時若主線決定一律 `.gz`，這四份要一起改。**
+
+---
+
+# b 組（Blue Note 1989–90，22 筆覆核）
+
+策展層 b 組，2026-09-18。交件 `batch-progress/c149/prop-b.json`（`g: "b"`），
+`node batch-progress/c149/chk-prop.mjs b` **標記 0**（欄位 0、線上池撞卡 0、跨組 0、跨批撞卡 0／112 批 4,559 張、同 rgMbid 不同掛名 0）。
+兩組一起跑 `chk-prop.mjs`（不帶參數）亦 **標記 0、合計 37 張 32 位**。號段 **990–998**（a 組用 960–979，未撞號）。
+
+## 第 990 條（2026-09-18，c-149 b 組）：**22 筆覆核結果——實收 15、退 7；rgMbid 全部照 enum，無一釘錯；年份改判 3 張；撞陳列 2 張；CAA 11/15**
+
+22 筆全部回問 `release-group?fmt=json&inc=artist-credits+releases+tags` 與
+`release?release-group=<id>&fmt=json&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條的兩端點組合，**一次就取到軌目，沒有需要換組合的**）；
+CAA 打 RG 端點（404 一律 `redirect: follow` 重試三次，第 589a 條）；Apple 走 `search`／`lookup?upc`／換國別店面三種查法（第 254 條）；
+年份另核 Discogs `database/search` 與 `releases/<id>`（不帶 token，每 3.5 秒一次）、維基、AllMusic、jazzdisco、Jazz Journal 重刊的同期評論。
+**enum 的 rgMbid 沒有一筆釘錯。**
+
+實掃卡池：`seed_cards.json` 16,450 列 ＋ `desc-tools/batches/cards/*.json` ＋ `batch-progress/c*/prop-*.json` ＋ `onboarding-manifest-*.json`，
+**合計 42,235 列**；掛名 15 個關鍵字子字串雙向、盤名 15 個關鍵字雙向（`&`→`and` 摺鍵）、另以 rgMbid 程式比對所有批次的 prop：
+**本組 15 張與其他批次 rgMbid 重疊 0**。盤名層命中全是他人假陽性（Etta James《At Last!》、Mal Waldron《Free at Last》、Faust《So Far》、
+Cheap Trick《In Color》、Carole King《Music》等一百餘筆「Music」系列、Koes Plus／George Lewis 的《Volume 2》）。
+**真撞卡兩件，都在 chk-prop 的盲區裡**（第 992 條）。
+
+**退掉 7 張（逐筆）**：
+
+| # | slice | rgMbid | 理由分類 | 說明 |
+|---|---|---|---|---|
+| 1 | Bill Evans《Let The Juice Loose》1990（live） | de0cff0d-b26c-33ff-86cf-cedf83bbc800 | **非 Blue Note 廠牌——盤名裡的「Blue Note」是東京的俱樂部，不是廠牌**（新形狀，見第 991 條） | 實體是 **Jazz City 660.53.001**，全名《Let The Juice Loose – Bill Evans Group Live At Blue Note Tokyo》，1989-09-09 錄於東京 Blue Note 俱樂部；Jazz Journal 1991 年 4 月號評介逐項列出「Label: Jazz City 660.53.001」、八軌與編制（Evans ss/ts、Chuck Loeb g、Jim Beard kb、Darryl Jones el-b、Dennis Chambers d）與 MB 完全相符。**Billboard 1990-07-07 有 Jazz City 的整版廣告**（「Jazzcity — New York musicians produced Tokyo style」），本張與 Kenny Drew Jr.、Chuck Loeb、Tony Reedus、Walter Davis Jr. 並列——**同期紙本直接證明廠牌**。MB 的 label-info 掛「Blue Note」imprint 但 **catalog-number 是 null、barcode 是 null、國別硬填 US**，是錯登。⚠ **另一層風險**：MB 的 8c7aa18e 是**薩克斯風手 Bill Evans（disambiguation「saxophonist」）**，**池中 23 張 `Bill Evans` 全是鋼琴家**——就算日後要收也**不能用 `Bill Evans` 這個字串**（第 179／250／324 條）。 |
+| 2 | Richard Elliot《Take to the Skies》1989 | b3be9942-349e-329d-87fd-d39cd0e6448f | **第 313 條：原盤他廠（Intima），Blue Note／Manhattan 只在後來再發** | 原盤 **Intima Records 7 73348**（US 1989 CD／黑膠／卡帶＝Discogs 6248685／4860326／4522544，英國 ENVLP 527／CDENV 527 由 Virgin 代理，西班牙 Anubis 4A-0630）；**CDP 7 96685 2 的廠牌欄在 Discogs 是 Manhattan Records（35777386 直接標 Reissue）**，MB 卻登成 Blue Note。Elliot 是**發完這張之後**才簽進 Manhattan／Blue Note 的。⚠ 曲風亦偏 smooth jazz／pop（MB tags jazz+pop；Billboard 1990-02-24／03-24 他上的是 MTV 的 Artist Development 欄，單曲〈When A Man Loves A Woman〉）。 |
+| 3 | Dianne Reeves《Never Too Far》1990 | 2adb8fb4-ce06-37de-a339-471eb12c5be3 | **第 313 條：原盤 EMI USA，Blue Note 只在 2004 數位掛名** | 原盤 **EMI USA CDP-7-92401-2**（Discogs master 157823，**US 1989**，George Duke 製作，錄於 Ocean Way／Le Gonks West）；MB 轄下最早那筆 8b74a775 的 label 欄就寫 **EMI Records USA**，掛 Blue Note 的只有 **2004-04-01 XW 數位 5c4a336c**。關聯始於 2004，與 c-140／c-141 的 Nancy Wilson、Sarah Vaughan、Stan Tracey 同形。⚠ **enum 的 year 1990 也錯**：Discogs 美國原壓 1989、Billboard 的單曲〈Never Too Far〉1990-01 就在黑人單曲榜上、專輯 1990-04-14 拿下 Top Contemporary Jazz **第 1 名**——**發行年是 1989。**⚠ **Reeves 本人是 Blue Note 藝人**（1990-06-16 Billboard 的 Blue Note 陣容廣告有她），**退的是這張碟不是這個人**；她的 Blue Note 正規盤若在別批出現照收。 |
+| 4 | Steve Smith and Vital Information《Vitalive!》1990（live） | 693d2118-ab98-38ef-9fe9-a11839f80f9e | **第 313 條：原盤他廠（veraBra，德國），美版是 Manhattan 不是 Blue Note** | 原盤 **veraBra Records vBr 2051**（DE 1990，黑膠 2714194／CD 3338464／卡帶 37466430＝Discogs master 400415，**MB 的 7fac6403 與 8f184d56 兩筆也都是 veraBra**）；美版是 **Manhattan Records CDP 7 96692 2／B4 96692（1991）**，日本 TOCJ-5673（1992）同樣掛 Manhattan。**MB 的第三筆 a74f9076「1991 US，label Blue Note，無 catno、無 barcode、載體 null」是錯登**——與退件 #1 同一種形狀。 |
+| 5 | Tommy Smith《Peeping Tom》1990（12" Vinyl, BLT 1002） | 3e59b4d9-f35d-436f-8391-192786d36a93 | **第 611 條盲區之三：MB 把同一張碟建成兩個 RG** | 與本組收件的 69f82300 同藝人、同盤名、同年、同廠牌、同一場 1990-01-09～13 Rainbow Studio 錄音；**Discogs master 580406 把 BLT 1002 黑膠與 CDP 7 94335 2 的 CD 併在同一個 master**。**本卡收 CD 形（13 軌，內容完整），黑膠形（8 軌，刪節版）退**；黑膠的目錄號與軌數寫進收件卡的 `label`／`risk`／`mbNote`。 |
+| 6 | Elvin Jones《Live at the Lighthouse Vol. 1》1990（live） | d6d98f06-f77a-4527-9934-756d43ec0272 | **撞池（第 611 條盲區之三＋之二）：c-143 a 組已收同一張碟** | **池中待上架的 c-143 a《Live at the Lighthouse》1973（RG 63215382，Blue Note BN-LA015-G2）就是它**——本 RG 轄下的 2013 日本盤 a05a8005 的 catalog-number 直接印 **BN-LA015-G2**＋TOCJ-50536，1990 年的 CDP 7 84447 2 是把那張 1972-09-09 的雙片拆成 Vol. 1／Vol. 2 兩張 CD 的再發。**錄音 1972 → 本段簡報「錄音年在 1985 前先假設是再發」的第一種歸宿（前面十三批已收）。**⚠ **chk-prop 抓不到**：盤名「Live at the Lighthouse Vol. 1」與池中「Live at the Lighthouse」折鍵不同，**標記 0 不等於沒撞卡（第 611 條）**——本件是靠「錄音年＋藝人」交叉查出來的。 |
+| 7 | Art Pepper《The Art of Pepper, Volume 3》1990 | 0f273981-bebe-3c6c-8b41-f3249125c7bf | **第 874 條：舊料重編（先前已成盤發行 12/12）** | 十二軌全部出自 **1957-04-01／02 Audio Arts Studio, Hollywood**（Art Pepper as、Carl Perkins p、Ben Tucker b、Chuck Flores d），**當年就以 Omegatape ST 7020 與 ST 2030 發行過**，其中七軌另在 **Blue Note LT-1064《Omega Alpha》（1981）** 出過、四軌在日本 Overseas ULS-1534-V 出過（jazzdisco Art Pepper 目錄的 1957-04-01 session 頁逐軌列出）。**先前已成盤發行 12/12，遠超第 874 條的「過半」門檻。**⚠ **Discogs 的四筆 CDP 7 46853 2 條目全部標 `Compilation`、年份 1988（不是 MB 的 1990）、廠牌欄是「Blue Note／The Complete Art Pepper Aladdin Recordings／EMI-Manhattan Records」**——是 1988 年那套三片裝全集的第三片。⚠ **同素材的《Omega Alpha》LT-1064 早已被第 874 條以 7/7 退掉**（見 `SOURCES-billboard-cashbox.md` 第 874 條的比例實例表）——**本件是同一批母帶的第二次退，兩件要一起記。**⚠ 池中另有 c-137 a 的《The Return of Art Pepper》（Jazz:West JWLP-10，1957，**收**）與 seed 的《Modern Art》（Intro ILP-606，1957，**已在池**）——那兩張是 Aladdin 全集的第一、二片，**各有自己的原盤 LP**；本張的「原盤」是**盤帶**不是 LP，且十二軌已被 LT-1064 撿過一次。 |
+
+**沒有合輯退件（`releaseType` 全部照 MB 原值 `Album`，0 張走 §5.6）、沒有「疑似非爵士」退件。**
+**15 ＋ 7 = 22**，第 315 條的等式成立。
+
+## 第 991 條（同批）：**「這張根本不是新錄音／根本不是 Blue Note 的碟」在 1989–90 這一格有五種形狀，本組五種各中一次**
+
+派工信提醒的是「再發混在裡面」，實測下來**更常見的是「MB 的 label 欄寫著 Blue Note，但這張碟根本不屬於 Blue Note」**。五種形狀：
+
+| 形狀 | 本組實例 | 怎麼抓出來 |
+|---|---|---|
+| **A. 盤名裡的「Blue Note」是場地不是廠牌** | Bill Evans《Let The Juice Loose ... Live At Blue Note Tokyo》（Jazz City） | **MB release 的 catalog-number 與 barcode 同時是 null**＋盤名含地名 → 查 Discogs／同期評論 |
+| **B. 原盤他廠、Blue Note／Manhattan 後來再發** | Richard Elliot（Intima 7 73348） | Discogs 同號條目的廠牌欄與 MB 不同、且標 `Reissue` |
+| **C. 原盤是集團內的兄弟廠，Blue Note 只在多年後的數位再發掛名** | Dianne Reeves（EMI USA，BN 2004 數位） | **MB 轄下最早那筆的 label 欄就不是 Blue Note** |
+| **D. 歐洲小廠原盤、美版掛 Manhattan，MB 卻登 Blue Note** | Vitalive!（veraBra → Manhattan） | 同 A：**無 catno＋無 barcode＋載體 null 的那一筆是錯登** |
+| **E. 舊 session 的重編／全集分片** | Art Pepper Vol. 3（1957 Omegatape 母帶） | **錄音年 <1985** → 逐軌查 jazzdisco 的 session 頁，算「先前已成盤發行的軌數」 |
+
+**給 c-150 之後的操作結論**：
+1. **看到 MB release 的 `catalog-number` 是 null、`barcode` 是 null、`media[].format` 是 null 這三者同時出現，先假設這一筆是錯登的 Blue Note 掛名**（本組 A 與 D 兩件都是；退件 #1 連國別都是硬填的 US）。
+2. **「Manhattan Records」在 1989–91 這一格與 Blue Note 共用目錄號段（9xxxx）**，MB 兩者互混——**964xx／966xx／969xx 這幾段特別要查 Discogs 的廠牌欄**。
+3. **盤名帶俱樂部名的（Blue Note Tokyo、Village Vanguard、Sweet Basil……）一律先查是不是場地**。
+
+## 第 992 條（同批）：**第 611 條的五種盲區，本組中了第三種兩次——`chk-prop` 標記 0，實際撞卡 2 張**
+
+- **Tommy Smith《Peeping Tom》**：**同一批 slice 裡就有兩個 RG**（69f82300 CD 13 軌／3e59b4d9 黑膠 8 軌）。
+  slice 依「年份→目錄號」排序，兩筆分別落在第 13 與第 17 位，**中間隔了四筆，逐筆做的時候很容易各收一張**。
+  ⚠ **chk-prop 的跨組重複檢查抓得到**（同鍵），但**如果兩筆被分到 a／b 不同組就只有一起跑才抓得到**——本組是同組，chk-prop 會報；**但要等到兩張都寫進 prop 才會報，先發現先退比較省事。**
+- **Elvin Jones《Live at the Lighthouse Vol. 1》**：**與 c-143 a 已收的《Live at the Lighthouse》是同一張碟的不同 RG**，
+  **盤名差一個「Vol. 1」，折鍵不同，chk-prop 與跨批去重都報 0**。抓出來的方法是**本段簡報指定的「錄音年＋藝人」交叉查**：
+  RG 轄下的日本盤把原目錄號 **BN-LA015-G2** 印在 catalog-number 欄，一比就中。
+
+**方法論（給 1985 後各批）**：**1985 後的 slice 裡，凡是 `note` 標「目錄號屬 1967-84 期」或 catno 出現 `BN-LA`／`BST 84`／`BLP`／`LT-` 字首的，
+在寫卡之前先拿那個舊目錄號去比對 c-135～c-147 的 `prop-*.json` 與 `cards/*.json`**——比盤名比對可靠得多。
+
+## 第 993 條（同批）：**第 874 條在本組雙向各用一次——一張收、一張退，門檻就是「先前已成盤發行的軌數」**
+
+| 盤 | 錄音 | 首次商業發行 | 先前已發行軌數 | 判定 |
+|---|---|---|---|---|
+| Art Blakey and the Jazz Messengers《Three Blind Mice, Volume 2》 | 1961-08-17 Village Gate（2 軌）＋1962-03-18 Renaissance Club（3 軌） | **1990**（Blue Note CDP 7 84452 2） | **0 / 5** | **收**，`year` 1990（庫存盤，照 c-145 寫法：`risk` 寫錄音年與母體目錄號 UAJ 14002） |
+| Art Pepper《The Art of Pepper, Volume 3》 | 1957-04-01／02 Audio Arts Studio | 1957（Omegatape ST 7020／ST 2030） | **12 / 12** | **退**（第 874 條重編；Discogs 四筆條目自己也標 `Compilation`） |
+
+**兩件併看可以把第 874 條講清楚**：門檻不是「錄音年很舊」，也不是「盤名帶 Volume」，
+**是「這張碟裡的內容，聽眾在這一次之前買得到嗎」**。Vol. 2 的五軌 1990 年之前買不到（維基「five previously unreleased selections」、
+Discogs 2278127 notes「Additional tracks for this issue」），所以它是庫存盤、是新商品；
+Art Pepper 那十二軌從 1957 年的盤帶到 1981 年的 LT-1064 已經賣過兩輪，所以它是重編。
+
+⚠ **Vol. 2 的收件另外扛了一條撞陳列**（第 995 條），**兩卡 risk 已互指**。
+⚠ **c-139 a 組第 490 條那張《Three Blind Mice》的 risk 原文寫「Vol. 2 ……不釘、不算原盤拆盤，那是 1990 年的新編」**——
+**那句話的範圍是「不要把 Vol. 2 的 RG 釘到 Vol. 1 的卡上」，不是「Vol. 2 不可以自己成一張卡」**；本條把這一點寫明，避免後批誤讀。
+
+## 第 994 條（同批）：**年份改判 3 張——一張靠新掃的紙本、一張靠日本首發、一張是 enum 錯但已退**
+
+| 盤 | enum／MB | 改 | 依據 | 強度 |
+|---|---|---|---|---|
+| McCoy Tyner《Things Ain't What They Used to Be》 | 1989（MB frd **1989-11-02＝錄音日**） | **1990** | **Billboard 1990-05-19 新片欄「CD Blue Note B2-93598 CA B4-93598」** ＋ **Billboard 1990-06-23 TOP JAZZ ALBUMS 以 NEW 進榜** ＋ Discogs 七筆原壓全 1990 ＋ 維基「April 1990」 | **強**（紙本＋榜位＋Discogs 三層） |
+| 日野皓正《Bluestruck》 | 1990（MB 轄下唯一一筆是 1990 US 卡帶） | **1989** | **Discogs master 992316 主版本＝Somethin' Else TOCJ-5515，`released` 欄 1989-11-22（完整日期）**；美國 Blue Note 版見 **Billboard 1990-03-24 新片欄「CD Blue Note 82-93671 CA B4-93671」**，兩地相差約四個月 | **中**（日本那一筆是單一 Discogs 條目；第 817 條） |
+| Dianne Reeves《Never Too Far》 | 1990 | （1989，但本張已退） | Discogs master 157823＝1989；Billboard 單曲 1990-01 在榜、專輯 1990-04-14 Contemporary Jazz 第 1 名 | — |
+
+**其餘 12 張 MB／Discogs／紙本同邊，未改判**：Neohippus 1989（CB 1989-03-11 評介＋BB 1989-04-15 新片欄）、At Last 1989（兩刊 1989-07-08 同週評介＋BB 1989-08-05 進榜）、
+Eternal Spirit 1989（CB 1989-10-21 評介＋BB 1989-12-23 年度回顧）、Mindscape 1989（**只有 BB 1989-07-01 的廠牌廣告**，本組紙本最薄）、
+Color 1989（CB 1989-09-02＋BB 1989-09-16 評介＋BB 1989-11-25 進榜）、Music 1989（BB 1989-09-30 新片欄＋CB 1989-10-21 評介＋BB 1989-10-28 整版廣告＋BB 1989-12-23 進榜）、
+So Far So Close 1989（BB 1989-06-03＋CB 1989-06-10 評介＋BB 1989-07-22 在榜）、Peeping Tom 1990（BB 1990-08-11 新片欄）、
+Swing & Sweet 1990（**荷蘭單一 Discogs 條目＋Apple nl 的 ℗1990，本組年份最弱**）、Native Heart 1990（BB 1990-03-03 新片欄＋BB／CB 1990-04 評介與榜位）、
+Three Blind Mice, Volume 2 1990（兩刊全年零命中，目錄 CD 不進新片欄）、The Inventor 1990（BB 1990-02-03 新片欄＋評介、CB 1990-02-10 評介＋02-24 進榜）、Cornucopia 1990（BB 1990-03-24 新片欄＋廣告＋演出評介、CB 1990-04-28 進榜）。
+
+**⚠ 這一段的 MB `first-release-date` 有兩種失效方式，方向相反**：
+(a) **等於錄音日**（Tyner 1989-11-02、Eternal Spirit 的 Apple 1989-01-31 同型）；
+(b) **等於「MB 剛好只建了比較晚的那一版」**（Bluestruck 只建 1990 美國卡帶、Native Heart 的 frd 1990-03-21 取自日本盤而美國先出）。
+**判準：先看 RG 轄下 release 的數目與國別分布，`release-count` 是 1 的一律去 Discogs 補全世界視野**（本組 6 張 `release-count` 是 1）。
+
+## 第 995 條（同批）：**撞陳列 2 張——都逐軌比對到 CD 那一層才判並存**
+
+1. **《Three Blind Mice, Volume 2》 vs 池中 c-139 a 的《Three Blind Mice》（1962，United Artists UAJ 14002）**：
+   同一場 1962-03-18 Renaissance Club 錄音。**逐軌比對 1990 年的 Vol. 1 CD（CDP 7 84451 2，8 軌：Three Blind Mice／Blue Moon／That Old Feeling／Plexus／Up Jumped Spring＋alt／When Lights Are Low／Children of the Night）
+   與 Vol. 2（5 軌：It's Only a Paper Moon／Mosaic／Ping Pong／The Promised Land／Arabia）——零重疊**，兩卡並存成立。
+   ⚠ **第二層**：Vol. 2 的〈Mosaic〉〈Arabia〉與池中 c-138 a 的錄音室盤《Mosaic》（BLP 4090，1961-10）同曲名——**不同場、長度差一倍**，兩卡 risk 已互指。
+2. **《Bluestruck》 vs 池中 seed 的《Alone, Alone and Alone》（1967）**：
+   Bluestruck 第 7 軌就叫〈Alone, Alone and Alone〉，是 1990 年的重錄。**盤名 vs 曲名的撞法**（不是內容重疊），risk 已寫明「正文絕不得把重錄的那一軌寫成 1967 年那張專輯」。
+
+**本組沒有第三件**：其餘 13 張的軌目與池中既有卡零重疊（已逐張比對過曲名表）。
+
+## 第 996 條（同批）：**店面與封面——Apple 15 張中 12 張命中、3 張走第二／第三種查法才有或全空；CAA 11 圖 4 缺**
+
+- **Apple `search`（第一種查法）命中 12 張**；⚠ **Michel Petrucciani《Music》的 releaseDate 是 1981-01-01——既非錄音年也非發行年，是純錯值**（第 484 條第三型，本組唯一）；
+  **Jack Walrath 1988-01-01、Eliane Elias 1988-01-01 是錄音年**；**Art Blakey Vol. 2 的 1962-01-01 是錄音年、℗ 才是 1990**；其餘 5 張是 01-01 placeholder。
+- **第二／第三種查法**：**Rita Reys《Swing & Sweet》us 店面查無，換 nl 店面才命中 1755674209（13 軌＝原盤軌數，℗1990 Universal Music B.V.）**
+  ——**本批唯一靠換國別店面救回來的一張，第 254 條第三種查法在歐洲本地盤上有用。**
+- **三種查法全空 2 張**：Tommy Smith《Peeping Tom》（`search` us／`lookup?upc=077779433520`／`search` gb 皆 0 筆）、日野皓正《Bluestruck》（`search` us／`lookup?upc=077779367146`／`search` jp 皆 0 筆）。
+- **CAA**：RG 層**有圖 11 張**（front 全有）、**真 404 四張**（Rick Margitza《Color》、Tommy Smith《Peeping Tom》、Rita Reys《Swing & Sweet》、日野皓正《Bluestruck》，**皆已 `redirect: follow` 重試三次確認**）。
+  ⚠ **Lou Rawls《At Last》第一次打回 HTTP 500、第二次才拿到 2 圖**——**第 589a 條再證：5xx 不等於 404，不重試就會誤記成缺封面。**
+  ⚠ **Stanley Jordan《Cornucopia》的 CAA 來源 release 是歐版（XE「MADE IN UK」）不是美國原壓**，研究層看版式要注意。
+
+## 第 997 條（同批）：**掛名 13 個新字串、1 個收攏、0 新造分裂；兩個「MB credit name 與底層實體不同名」的案例**
+
+- **沿用池中既有字串 2**：`Andrew Hill`（14 張）、`McCoy Tyner`（12 張）、`Michel Petrucciani`（2 張）、`Lou Rawls`（3 張）、`Tony Williams`（2 張）、`Gil Mellé`（2 張，皆待上架）、`日野皓正`（6 張）——**七個**。
+- **收攏 1**：`Art Blakey & The Jazz Messengers`（MB 群組 209ddf15）→ **`Art Blakey and the Jazz Messengers`**（池中 19 張，且與 c-139 a 的 Vol. 1 卡同字串）；
+  `audits/pool-artist-name-splits.md` 第 409 行已記這組 `&`／`and` 分裂，**本卡不新增第三種寫法**。
+- **新字串 6**：`Jack Walrath`、`Rick Margitza`、`Eliane Elias`、`Tommy Smith`、`Rita Reys`、`Stanley Jordan`、`Bobby Watson & Horizon`（**七個，池中皆 0 張**）。
+- ⚠ **兩個 MB 的 artist-credit `name` 與底層實體主名不同的案例**：
+  - **`Bobby Watson & Horizon`**：credit name 是團名，底層實體是 72973c64 **`Bobby Watson`**（Person）。
+    **Discogs 藝人欄、Billboard／Cash Box 的榜單、Apple 的 artistName 四處都寫「Bobby Watson & Horizon」**，故照 credit 寫；
+    **但 Billboard 1990-02-03 的新片欄只印「BOBBY WATSON」**——**日後若 Watson 的其他碟進池，要先定字串，不要造出第三種。**
+  - **`Steve Smith and Vital Information`**（已退）：credit 由兩個實體組成（b90ab376 Person ＋ 1f18bacd Group），joinphrase 是「 and 」。
+- ⚠ **同名撞擊三件都核過 `type`／`country`／`disambiguation`，不看 score**：
+  `Bill Evans`（8c7aa18e「saxophonist」≠ 池中 23 張的鋼琴家，**已退**）、`Tommy Smith`（c511b970，蘇格蘭次中音手）、`Tony Williams`（b6a30b58 鼓手，≠ The Platters 的主唱）。
+
+## 第 998 條（同批）：**1990 年的紙本本層自己掃了，兩刊各一年；1988–89 直接用 c-149 a 組新掃的四份**
+
+- **本層新增兩份**：`billboard-bn-1990-ocr.txt`（4.4 MB，1990-01-06→12-15 共 50 期、436 個命中頁，缺 12-22／12-29）、
+  `cashbox-bn-1990-ocr.txt`（1.2 MB，1990-01-20→12-29 共 49 期、155 個命中頁，缺 01-06／01-13／07-14）。
+  已 append 進 `batch-progress/enum/SOURCES-billboard-cashbox.md`（**append，沒有改別人寫的段落；a 組的段落在本層那一節之後，兩份都在**）。
+- **格式與前幾份的差別**：本層的檔案在每個 `===== PAGE n =====` 後面**多印了 `hits=[…]` 命中詞清單**，grep 命中詞即可定位到頁。
+- **開工時 SOURCES 還沒有 1985-07 之後的列，寫到一半 c-149 a 組把 1987／1988-89 四份 append 進來**——
+  **本層回頭用那四份把 6 張 1989 年碟的 risk 從「沒有同期紙本」升級成逐筆的評介／新片欄／榜位引用**（第 994 條的表）。
+  → **給後批的操作結論：並行的另一組可能在你做到一半時補上紙本，交件前回頭再看一次 `SOURCES-billboard-cashbox.md`。**
+- **三點實測（已寫進 SOURCES）**：(1) `BB-`／`CB-` 兩形在 1990 直接命中，三形備援沒用上（第 821 條訂正版續成立）；
+  (2) 缺期五則全部規律（年終合刊週），不是檔名問題；
+  (3) ⚠ **1990 年兩刊各有兩張爵士榜**（`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`），**同一張碟只會上其中一張**
+  ——本組 McCoy Tyner／Tony Williams／Bobby Watson／Rick Margitza 上 Jazz 榜，Lou Rawls／Dianne Reeves／Stanley Jordan／Eliane Elias 上 Contemporary Jazz 榜。**查不到不要只查一張榜。**
+- ⚠ **OCR 形變三種，本組各中**：(a) **目錄號的 `B` 被讀成 `8`**（「Blue Note 81-93170」＝B1-93170、「84-91915」＝B4-91915，本組四處）；
+  (b) **數字被讀成字母**（Cash Box「Blue Note 7 9H01」＝7 91101、「Blue Note 914H」＝91411）；
+  (c) **紙本自己誤植**（Cash Box 1990-04-21 把 Rick Margitza《Color》的 92279 印成 **92779**，第 509c 條）。
+  **三種都要還原後才能拿去查 Discogs／MB。**
+
+**本棒改動的檔案**：`batch-progress/c149/prop-b.json`（新建，15 張）、`batch-progress/c149/rulings.md`（append 第 990–998 條）、
+`batch-progress/enum/billboard-bn-1990-ocr.txt`（新建）、`batch-progress/enum/cashbox-bn-1990-ocr.txt`（新建）、
+`batch-progress/enum/SOURCES-billboard-cashbox.md`（append 一節）。**沒有碰 git、沒有碰 `PROJECT_MEMORY.md`／`seed_cards.json`／`apex_pool.json`／KV／Firestore，也沒有碰 `prop-a.json`。**
