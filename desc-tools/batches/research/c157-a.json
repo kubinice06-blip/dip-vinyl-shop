@@ -1,0 +1,546 @@
+[
+ {
+  "key": "desc2:Don Byron|A Fine Line",
+  "artist": "Don Byron",
+  "album": "A Fine Line",
+  "facts": [
+   {
+    "f": "release-group `015e01e9-ff09-3fd2-80bb-f6043df68de8`：title 逐字短形「A Fine Line」、artist-credit `Don Byron`（`7478f0d5` Person）、first-release-date **2000**（只有年）、primary-type Album、secondary-types 空，genres／tags 三個：`jazz`／`latin jazz`／`post-bop`。**轄下只有一筆 release**：`456202d0`（2000，國別欄空，Official，CD **11 軌**，Blue Note `7243 5 26801 2 2`，barcode 724352680122）——**歐版、兩筆宣傳盤、國別全部要去 Discogs 補**（第 1454 條的「只建一筆 release」在本張成立）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=015e01e9-ff09-3fd2-80bb-f6043df68de8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 美版零售 `767605`（US CD，Blue Note `7243 5 26801 2 2`，barcode 逐字「7 243-5-26801-2 2」，Matrix 逐字「724352680122 1-0-1 MASTERED BY EMI MFG.」）的 notes 逐字給了**場次與地點**：「**Recorded and mixed at Avatar Studios, NYC, in April/May 2000. Mastered at Classic Sound, NYC.**」——**不是一天錄完，是 2000 年四到五月的一段檔期**。同一筆 notes 還逐軌標出古典曲源：**第 2 軌出自舒曼《Liederkreis, Op. 38》、第 3 軌出自伯恩斯坦《Candide》、第 7 軌出自浦契尼《Turandot》、第 10 軌出自桑坦《Company》、第 11 軌出自蕭邦《Piano Concerto No. 2》**（＝盤上的〈Larghetto〉）。",
+    "src": "https://api.discogs.com/releases/767605"
+   },
+   {
+    "f": "⚠ **編制逐軌變動，且封面大名字只上一軌**（第 1181／1367 條）：`767605` 的 credit 欄帶軌號——**Uri Caine 鋼琴 1–10**（**第 11 軌〈Larghetto〉是 Byron 單簧管獨奏**）、**Jerome Harris 原聲貝斯吉他／原聲吉他 1、3–6、8、10**、**Paulinho Braga 鼓與打擊 1、3–6、8、10**、**Mark Ledford 人聲 1、5、6、8**、**Patricia O'Callaghan 人聲 3、5、6、8**、**Dean Bowman 人聲 8**、⚠ **Cassandra Wilson 人聲只有第 10 軌〈The Ladies Who Lunch〉**。Byron 本人掛 `Clarinet, Bass Clarinet` ＋ `Arranged By [All Arrangements By]` ＋製作（與 Hans Wendl 共同），錄音／混音 Tom Lazarus、母帶 Scott Hull。⚠ **宣傳盤 `3508636` 的同一組人軌號略有出入**（O'Callaghan 記成主唱 3／6／8 ＋第 5 軌和聲、Jerome Harris 第 8 軌也唱）——**以零售盤 `767605` 為準。**",
+    "src": "https://api.discogs.com/releases/767605"
+   },
+   {
+    "f": "⚠ **宣傳盤 `3508636`（US，catno `7243 5 26801 2 2V`，紙套）的 notes 逐字寫「Advance CD Street Date: October 10, 2000」**——**那是宣傳盤的寄送日，不是零售街頭日**；零售街頭日是 Billboard 逐字的 **11 月 7 日**。**兩個日期差一個月，正文不得混用。**",
+    "src": "https://api.discogs.com/releases/3508636"
+   },
+   {
+    "f": "紙本兩處：**Billboard 2000-10-21 p22 的 Jazz/Blue Notes 欄逐字「Clarinet player Don Byron returns with the album \"A Fine Line\" (due Nov. 7 on Blue Note Records), with such guest artists as Cassandra Wilson, Patricia O'Callaghan, and Mark Ledford.」**——⚠ **紙本自己也只把這三個人寫成 guest artists，沒說他們全程參與。** 另 **2000-11-18 p8 的目次逐字「46 Jazz/Blue Notes: Don Byron offers a blend of styles on new Blue Note set.」**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-10-21.pdf"
+   },
+   {
+    "f": "⚠ **CAA 依第 1283 條重探仍是真 404**：**release-group 層 `015e01e9…/front` 回 404**，**唯一一筆 release `456202d0` 的 `/front` 也回 404**——**兩層都沒有圖，不是策展層記錯。**",
+    "src": "https://coverartarchive.org/release-group/015e01e9-ff09-3fd2-80bb-f6043df68de8/front"
+   },
+   {
+    "f": "店面：Apple `search`（us／jp／fr）命中 `725211270`（Don Byron《A Fine Line》，**11 軌、11 軌全有 previewUrl**，℗ 逐字「℗ 2000 Blue Note Records」，releaseDate `2000-01-01` 是年初佔位日）；**`lookup?id=725211270&entity=song` 回 11 首，軌名與軌序與 Discogs 零售盤逐軌相符**（Check Up／Zwielicht (Twilight)／Glitter And Be Gay／Basquiat／It's Over／Creepin'／Nessun Dorma／Soldier In The Rain／Reach Out I'll Be There／The Ladies Who Lunch／Larghetto）。",
+    "src": "https://itunes.apple.com/lookup?id=725211270&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "封面貼紙上最大的那個名字只唱了一首：Cassandra Wilson 只出現在第 10 軌的〈The Ladies Who Lunch〉，那是桑坦《Company》裡的曲子",
+   "整張碟把浦契尼〈Nessun dorma〉、舒曼的藝術歌曲、伯恩斯坦《Candide》的花腔詠嘆調，跟 Stevie Wonder、Roy Orbison、Holland–Dozier–Holland 排在同一張選曲單上；收尾是蕭邦第二號鋼琴協奏曲的 Larghetto，兩分十五秒，只有單簧管和鋼琴"
+  ],
+  "sound": "十一軌，2000 年四到五月在紐約 Avatar Studios 錄音與混音，母帶在 Classic Sound。核心是 Byron 的單簧管與低音單簧管加 Uri Caine 的鋼琴（Caine 上第 1 到 10 軌），Jerome Harris 的原聲貝斯吉他與 Paulinho Braga 的鼓、打擊只在第 1、3–6、8、10 軌進來；人聲輪流：Mark Ledford（1、5、6、8）、加拿大女高音 Patricia O'Callaghan（3、5、6、8）、Dean Bowman（第 8 軌）、Cassandra Wilson（只有第 10 軌）。全部編曲掛 Byron 一人，他與 Hans Wendl 共同製作。曲源一半來自古典與音樂劇（舒曼《Liederkreis》、伯恩斯坦《Candide》、浦契尼《Turandot》、桑坦《Company》、蕭邦第二號鋼琴協奏曲），一半來自流行與靈魂樂（Stevie Wonder、Roy Orbison、Holland–Dozier–Holland、Henry Mancini、Ornette Coleman）。末軌〈Larghetto〉是單簧管獨奏。",
+  "keyTracks": [
+   "Basquiat",
+   "Glitter and Be Gay",
+   "Nessun dorma",
+   "The Ladies Who Lunch"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判，而且拿到了逐字街頭日。** (1) **同期紙本（階序最上層）**：**Billboard 2000-10-21 p22 逐字「(due Nov. 7 on Blue Note Records)」**——**發行公告，不是評介，符合第 1487 條「紙本要壓過 Discogs 必須給街頭日或發行公告」的門檻**；2000-11-18 p8／p44 的評介同期跟上。 (2) **Discogs 原壓群**：**美版零售 `767605`／歐版 `10727916`／美版宣傳 `3508636`／另一筆宣傳 `36945954` 的 `year` 欄全是 2000**，`format` 欄乾淨（四筆都是 CD）。 (3) **MB first-release-date 2000**（只有年，唯一一筆 release 也只有年）。 (4) **店面**：Apple `725211270` 的 ℗ 欄逐字「℗ 2000 Blue Note Records」。⚠ **releaseDate `2000-01-01` 是年初佔位日（第 484 條），正文一律不得引用。** ⚠ **另一個要擋的日期**：**宣傳盤 `3508636` 的 notes 逐字「Advance CD Street Date: October 10, 2000」是宣傳盤寄送日**，**比零售街頭日早將近一個月**；⚠ 依第 1487 條的補充「`Advance` 宣傳盤的年份是年份下界」，它在這裡只證明「不晚於 2000」，**不能拿來當街頭日寫進正文。**",
+  "notes": "**覆核策展層：rgMbid `015e01e9`／只建一筆 release／掛名 `Don Byron`（沿用 c-156 a 第 1389 條剛立的字串）／年份 2000／11 軌／逐軌變動的編制 全部成立。**｜⚠ **盤名兩形**：**MB RG 是短形 `A Fine Line`，Discogs 四筆與 Apple 與 Billboard 都用全稱 `A Fine Line: Arias & Lieder`**——照 MB RG 立卡、全稱進 `queryAlias`，**上架比對兩形都要帶。**｜⚠ ⚠ **撞陳列（第 738／859 條，逐軌核過）**：**與 c-156 a 已收的《Romance with the Unseen》(1999) 撞一軌——〈Basquiat〉**。**本張第 4 軌 5:06、Byron 自己作曲、只有單簧管＋Uri Caine 鋼琴的二重奏形；兩張其餘十／八軌零重疊。****兩卡 risk 必須互指，正文不得把兩次演出寫成同一次。**｜⚠ **軌名撞卡名（第 1181／1192 條第六種盲區）**：**本棒用去重音折疊鍵重掃 11 軌對 25215 列卡池（seed ＋ `desc-tools/batches/cards/` ＋ 所有 `batch-progress/c1*/prop-*.json`），真命中 0**；⚠ **策展層點名的〈Reach Out I'll Be There〉確實與池中 `Four Tops —《Reach Out》`／`Hank Mobley —《Reach Out!》` 同源不同名**，**折疊鍵不同鍵、不會亮燈，但上架比對時人眼要留意。**〈Creepin'〉〈Nessun Dorma〉〈Basquiat〉掃池皆 0。｜⚠ ⚠ **缺封面，CAA 逐張重探（第 1283 條）RG 層與 release 層都是真 404。替代來源：Discogs 美版零售 `767605`，共 6 圖，`images[0]` 是 `primary`、600×594**（`https://i.discogs.com/px7mdMCPir6Nry7LeXdS69L_w2CpLR4vm8bUQnHQ_mk/...`，長邊 600 已達標）。**次選：宣傳盤 `3508636` 的 primary 600×585。**⚠ **`36945954` 那一筆的 `images[0]` 不是 primary，不要用。** ⚠ **不要自己下載，只登記來源。**｜⚠ **載體（通則 1／第 1064／1278 條，逐張查過）**：**Discogs 四筆條目全是 CD（含兩張宣傳 CD），本棒未查到任何黑膠或卡帶壓片**——**正文不得寫黑膠原壓。**｜⚠ **編制（第 1453 條）判「逐軌變動」成立**，**擋下一處**：**Cassandra Wilson 只在第 10 軌，不得寫成全程參與**；**Billboard 自己也只寫 guest artists。**｜⚠ **兩個日期不可混用**：**宣傳盤街頭日 2000-10-10 vs 零售街頭日 2000-11-07。**"
+ },
+ {
+  "key": "desc2:Patricia Barber|Nightclub",
+  "artist": "Patricia Barber",
+  "album": "Nightclub",
+  "facts": [
+   {
+    "f": "release-group `5c6d25d8-fb0e-361b-8f7f-cc7da4ae83e9`：title「Nightclub」、artist-credit `Patricia Barber`（`3e078819` Person）、**first-release-date 2000-09-26（到日）**、Album、secondary-types 空，genres／tags `contemporary jazz`／`jazz`／`post-bop`。**轄下五筆 release**：`63a799dd`（**2000-09-26 US**，CD 12 軌，**label-info 只有 `Premonition Records`**，`7243 5 27290 2 9`）／`5fa73afc`（2000 XE，CD 12 軌，**`Blue Note` ＋ `Premonition Records` 兩格**，同目錄號）／⚠ **`9fbda2b2`（2002-06-11 US，Mobile Fidelity Sound Lab `UDSACD 2004`，Hybrid SACD，CD 層與 SACD 層都是 **13 軌**——比原碟多一軌）**／`e689eda4`（2004 US，KOCH `KOC-CD-5738`，CD 12 軌）／`9fc243ae`（2011 US，Premonition `90763-G`，**HDCD** 12 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5c6d25d8-fb0e-361b-8f7f-cc7da4ae83e9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "Discogs 歐版 `1135931`（Blue Note ＋ Premonition Records，同一個目錄號 `7243 5 27290 2 9`，Label Code LC-0148，英國目錄號欄逐字 `527 2902`）的 notes 逐字：「**Recorded and mixed at \"Chicago Recording Company\" Studio 4, May 15-19, 2000. Mastered at 24-Bit resolution from analog sources at \"Foothill Digital\", New York City.**」——**五天的檔期，不是一天。**同一筆 notes 收了 Barber 自己的題獻，逐字把兩家芝加哥夜店寫進去：「**the Goldstar Sardine Bar and the Green Mill**」，並逐字解釋盤名：「Something special can happen late night in a jazz club... It is the province of the nightclub.」",
+    "src": "https://api.discogs.com/releases/1135931"
+   },
+   {
+    "f": "⚠ **編制是「兩組節奏組交替 ＋ 一位八弦吉他客座」，credit 欄帶軌號**：**Marc Johnson 貝斯 1–3、7、8 配 Adam Nussbaum 鼓 1–3、7、8**；**Michael Arnopol 貝斯 5、9、10 配 Adam Cruz 鼓 4–6、9–11**；**Charlie Hunter 八弦吉他只有 4、6、11 三軌**。Barber 本人掛 `Piano [Steinway Grand], Vocals, Producer, Liner Notes`。錄音／混音 Jim Anderson、母帶 Allan Tucker、鋼琴技師 Charles Terr。⚠ **第 12 軌〈I Fall in Love Too Easily〉沒有任何貝斯或鼓的軌號落在上面——那一軌是無節奏組的形**，正文若要寫「三重奏」必須避開這一軌。",
+    "src": "https://api.discogs.com/releases/1135931"
+   },
+   {
+    "f": "⚠ **`Charlie Hunter` 在本批出現三次**：本張（八弦吉他 4／6／11 軌）、**b 組 `Karl Denson —《Dance Lesson #2》` 第 3 軌〈Rumpwinder〉**、**b 組 `Charlie Hunter Quartet —《Songs From the Analog Playground》`（他自己的領班盤）**——**三張碟的 risk 可互指；本張與 Denson 那張都是「只上少數軌的客座」，不得寫成班底。**",
+    "src": "https://api.discogs.com/releases/399065"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `1679189302`（Patricia Barber《Nightclub》，**12 軌、12 軌全有 previewUrl**，**releaseDate 逐字 `2000-09-26`＝真日期不是年初佔位日**，℗ 欄逐字「℗ 2000 Premonition Records」——**不是 Blue Note**）；fr 另有 `1021608929`（同盤名 12 軌，℗ 欄逐字「℗ Digital Remaster 2003…」，**是 2003 年的重製版**，不採）。**軌數 12 與 Discogs／MB 的 CD 逐軌相符。**",
+    "src": "https://itunes.apple.com/lookup?id=1679189302&country=us&entity=song"
+   },
+   {
+    "f": "CAA 重探：**release-group `5c6d25d8…/front` 回 200**，本張封面不缺。",
+    "src": "https://coverartarchive.org/release-group/5c6d25d8-fb0e-361b-8f7f-cc7da4ae83e9/front"
+   }
+  ],
+  "hookCandidates": [
+   "盤名是字面意思：Barber 在內頁裡寫她要重現的是深夜爵士俱樂部散場前那段——「人群散得差不多了，留下來的人是有理由留下來的，樂手感覺得到」；她把碟題獻給芝加哥的 Goldstar Sardine Bar 與 Green Mill",
+   "十二首裡沒有一首是她自己寫的——這在她的目錄裡是頭一次：Bacharach、Cole Porter、Jerome Kern、Kurt Weill 的老歌，加上〈A Man & a Woman〉與〈Summer Samba〉"
+  ],
+  "sound": "十二軌，2000 年 5 月 15 到 19 日在芝加哥 Chicago Recording Company 第四號錄音室錄音與混音，母帶在紐約 Foothill Digital 以 24-bit 從類比母源轉出。整張是標準曲與流行老歌的選曲，沒有 Barber 自己的作品。她彈 Steinway 平台鋼琴兼主唱，並自己製作、自己寫內頁。節奏組分兩班：Marc Johnson 的貝斯與 Adam Nussbaum 的鼓負責第 1–3、7、8 軌，Michael Arnopol 的貝斯（5、9、10）與 Adam Cruz 的鼓（4–6、9–11）負責其餘；Charlie Hunter 的八弦吉他只上第 4、6、11 三軌。末軌〈I Fall in Love Too Easily〉沒有節奏組。錄音 Jim Anderson、母帶 Allan Tucker。",
+  "keyTracks": [
+   "Bye Bye Blackbird",
+   "Alfie",
+   "Autumn Leaves",
+   "A Man & a Woman"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判；而且這是本組少數「MB 自己就有到日的首發日」的碟。** (1) **MB first-release-date `2000-09-26`（到日）**，美版 release `63a799dd` 的 `date` 欄同值。 (2) **店面**：**Apple `1679189302` 的 releaseDate 逐字 `2000-09-26`，與 MB 逐日相符**——⚠ **這是本組只有五張有的「真日期」之一，不是年初佔位日。** (3) **Discogs 原壓群**：**歐版 `1135931`／美版 `4842630`／美版宣傳 `33420833` 的 `year` 欄全是 2000**，`4842630` 的盤面 ℗© 逐字「Ⓟ © 2000 Premonition Records」。 (4) **錄音日 2000-05-15／19 早於發行日四個月**，**沒有第 550／570／708 條那種「整群抄錄音年」的現象。** (5) **紙本**：**`billboard-bn-2000-ocr.txt.gz` 查 `Patricia Barber` 的命中頁，本棒未取得本碟的街頭日或新片欄**——**紙本在本張不構成獨立一層，年份靠 MB ＋ 店面真日期 ＋ Discogs 三層閉合。** ⚠ **要擋的兩個別的年份**：**MFSL 的 `UDSACD 2004` 是 2002-06-11 的 SACD（而且 13 軌）**、**Apple fr `1021608929` 的 ℗ 是 2003 年的數位重製**——**兩者都不是首發。**",
+  "notes": "**覆核策展層：rgMbid `5c6d25d8`／五筆 release／掛名 `Patricia Barber`／年份 2000／12 軌 全部成立。**｜⚠ ⚠ **版式：MFSL 的 Hybrid SACD（`9fbda2b2`，2002-06-11，`UDSACD 2004`）兩層都是 13 軌，比原碟多一軌**——**第 1067／1158／1371 條「已 ready 的也要抽核軌數與版式」在本張命中**；**卡單的 12 軌指的是 2000 年的原碟，SACD 那一軌不得算進正文。**｜⚠ **(戊) 前置閘的訊號不乾淨、但過閘理由本棒重核成立**：**美版 release `63a799dd` 的 `label-info` 只有 `Premonition Records`、Apple 的 ℗ 欄也只有 Premonition**；**Blue Note 出現在歐版 `5fa73afc` 的第一格與 Discogs 歐版 `1135931`／美版 `4842630`／宣傳盤 `33420833` 三筆的廠牌欄**——**形狀與 a 組第 1451(3) 條（廠牌欄第一格是別家）相同，依第 1445 條的第二層證據過閘。**｜⚠ ⚠ **軌名撞卡名，本棒重掃補到三處（策展層第 1448(B) 條沒有列本張）**：**第 1 軌〈Bye Bye Blackbird〉＝ seed `Keith Jarrett, Gary Peacock, Jack DeJohnette —《Bye Bye Blackbird》`(1993，**apex 5**)**、**第 2 軌〈Invitation〉＝ seed `Jaco Pastorius —《Invitation》`(1983) 與 `Andrew Hill Trio —《Invitation》`(1975) 兩張**、**第 6 軌〈Alfie〉＝ seed `Sonny Rollins —《Alfie》`(1966)**。**四張都是同名曲撞盤名、不是同碟；上架比對與試聽一律要連掛名帶目錄號 `7243 5 27290 2 9`。**｜⚠ ⚠ **人員交叉（本棒新增，策展層未記）**：**`Charlie Hunter` 同時出現在本張（4／6／11 軌）、b 組《Dance Lesson #2》第 3 軌、b 組他自己的《Songs From the Analog Playground》**——**本批三張碟共用一個人，三卡 risk 可互指**；**本張與 Denson 那張都是逐軌客座，不得寫成固定編制。**｜⚠ **編制判「逐軌變動」**（第 1453 條把本張列在「逐軌變動」7 張裡，本棒覆核成立）；**第 12 軌沒有節奏組，正文寫「三重奏」要避開它。**｜⚠ **載體**：**MB 五筆分別是 CD／CD／Hybrid SACD／CD／HDCD**，**Discogs 三筆全是 CD**——**本棒未查到 2000 年的黑膠原壓，正文不得預設有。**｜**封面不缺**：CAA RG 層 200。"
+ },
+ {
+  "key": "desc2:Bill Charlap Trio|Written in the Stars",
+  "artist": "Bill Charlap Trio",
+  "album": "Written in the Stars",
+  "facts": [
+   {
+    "f": "release-group `8c17aa7d-be41-3d4c-9077-86f380ad732e`：title「Written in the Stars」、**artist-credit 是團名 `Bill Charlap Trio`（`8586b4ce` Group）**、**first-release-date 2000-09-27（到日）**、Album、secondary-types 空，genres／tags `contemporary jazz`／`jazz`／`swing`。**轄下兩筆 release**：**`c730e92f`（2000-09-27 **JP**，CD 11 軌，**廠牌欄逐字 `somethin’else`、catno `TOCJ-68048`**，barcode 4988006783461）**與 `8d0ca20b`（2000 **US**，CD 11 軌，Blue Note `7243 5 27291 2 8`，barcode 724352729128）——⚠ **只有日版有到日的日期，美版只有年。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8c17aa7d-be41-3d4c-9077-86f380ad732e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ ⚠ **首發地是日本，不是美國**（簡報 §二「日本首發在這一段仍然很多，首發地要自己核」）：**Discogs 日版 `17096145` 的 `released` 欄逐字 `2000-09-27`，廠牌 `Somethin' Else`、catno `TOCJ-68048`**；**美版 `8995653`、歐版 `11758741`、BMG 俱樂部版 `9187844`、美版宣傳 `37582425` 四筆的 `released` 欄都只有 `2000`**。**店面也站在同一邊：Apple `723534675` 的 copyright 欄逐字「℗ 2000 EMI Music Japan Inc.」**——**不是 Blue Note、不是 Capitol。** → **這是東芝 EMI 的 `somethin' else` 企劃盤，Blue Note 是美國端的轉發。**",
+    "src": "https://api.discogs.com/releases/17096145"
+   },
+   {
+    "f": "**編制是乾淨的固定三人**（本組少數可以寫固定編制的碟）：**Bill Charlap 鋼琴兼編曲、Peter Washington 貝斯、Kenny Washington 鼓**；**Joel Moss 一個人包辦製作、錄音、混音與內頁**，母帶 Ric Wilson。**四筆條目的 credit 欄一致，沒有任何軌號限制、沒有客座。**（⚠ 第 1281 條的換版再查已做：美版 `8995653`／歐版 `11758741`／日版 `17096145` 三筆都查過，人名相同。）",
+    "src": "https://api.discogs.com/releases/8995653"
+   },
+   {
+    "f": "**十一軌、盤面曲序**（Discogs `8995653` 逐字）：In The Still Of The Night／Dream／The Man That Got Away／Blue Skies／Where Have You Been?／Where Or When／On A Slow Boat To China／One For My Baby（**9:38，全碟最長**）／I'll Never Go There Anymore／Lorelei／It Was Written In The Stars。⚠ **末軌〈It Was Written In The Stars〉才是盤名的出處，盤名本身把 `It Was` 拿掉了。**",
+    "src": "https://api.discogs.com/releases/8995653"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `723534675`（Bill Charlap Trio《Written in the Stars》，**11 軌、11 軌全有 previewUrl**，**releaseDate `2000-10-26`**，℗ 欄逐字「℗ 2000 EMI Music Japan Inc.」）。⚠ **`2000-10-26` 與日版 `2000-09-27` 差一個月，與美版只有年——三個日期不一致，正文只寫年。**",
+    "src": "https://itunes.apple.com/lookup?id=723534675&country=us&entity=song"
+   },
+   {
+    "f": "⚠ ⚠ **本張是 44 屆葛萊美的鄰居**：Billboard 2002-01-19 p94 的提名名單裡，**本批有六張碟拿到七項提名**（見 `notes`），**本張不在其中**——**正文不得把同批鄰卡的提名寫到這張頭上。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-01-19.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "盤名少了兩個字：末軌叫〈It Was Written in the Stars〉，碟名把 It Was 拿掉",
+   "這是東芝 EMI 的 somethin' else 企劃盤，2000 年 9 月 27 日先在日本上架（TOCJ-68048），美國那邊才掛 Blue Note 發；連 Apple 的版權欄印的都還是 EMI Music Japan"
+  ],
+  "sound": "十一軌的鋼琴三重奏：Bill Charlap 鋼琴兼編曲、Peter Washington 貝斯、Kenny Washington 鼓，四筆壓片的 credit 欄一致、沒有任何客座也沒有軌號限制。曲目全是美國歌本——柯爾・波特的〈In the Still of the Night〉、Harold Arlen 寫給茱蒂・嘉蘭的〈The Man That Got Away〉、Irving Berlin 的〈Blue Skies〉、Rodgers & Hart 的〈Where or When〉、Frank Loesser 的〈On a Slow Boat to China〉、Johnny Mercer 的〈One for My Baby〉（九分三十八秒，全碟最長）、Gershwin 的〈Lorelei〉，收在同名的〈It Was Written in the Stars〉。製作、錄音、混音與內頁都由 Joel Moss 一人負責，母帶 Ric Wilson。盤是東芝 EMI 的 somethin' else 企劃，2000 年 9 月 27 日日本先出（TOCJ-68048），美國端掛 Blue Note（7243 5 27291 2 8）。",
+  "keyTracks": [
+   "One for My Baby",
+   "The Man That Got Away",
+   "Where or When",
+   "It Was Written in the Stars"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **MB first-release-date `2000-09-27`（到日）**，**日版 release `c730e92f` 的 `date` 欄同值、美版 `8d0ca20b` 只有年**。 (2) **Discogs 原壓群（第 531 條）**：**日版 `17096145` 的 `released` 欄逐字 `2000-09-27`；美版 `8995653`／歐版 `11758741`／BMG 俱樂部版 `9187844`／美版宣傳 `37582425` 四筆的 `year` 欄全是 2000**，五筆 `format` 欄乾淨（全是 CD）。 (3) **店面**：**Apple `723534675` 的 ℗ 欄逐字「℗ 2000 EMI Music Japan Inc.」**；⚠ **它的 releaseDate `2000-10-26` 是店面上架日的形（第 484 條第三種），與日版街頭日差一個月，不採。** (4) **紙本**：**`billboard-bn-2000-ocr.txt.gz` 本棒未取得本碟的街頭日或新片欄**——**年份靠 MB ＋ Discogs 原壓群 ＋ 店面 ℗ 三層閉合，這是簡報 §二說的「2000 年後紙本不是主要來源」的標準情形。** ⚠ ⚠ **首發地要寫日本**：**三個日期裡只有日版到日、而且店面的 ℗ 是 EMI Music Japan**——**正文若要寫首發，寫「2000 年 9 月日本先出」，不要寫美國。**",
+  "notes": "**覆核策展層：rgMbid `8c17aa7d`／兩筆 release／團名掛名 `Bill Charlap Trio`（MB RG 的 artist-credit 就是 Group `8586b4ce`，依第 1131 條不收攏到 `Bill Charlap`）／年份 2000／11 軌／固定三人編制 全部成立。**｜⚠ ⚠ **首發地本棒改寫成日本**（策展層與 `slice.json` 沒有標）：**日版 `TOCJ-68048` 的街頭日 2000-09-27 是唯一到日的日期，Apple 的 ℗ 欄逐字 EMI Music Japan**——**與同組《When Skies Are Grey》（Somethin' Else／Toshiba-EMI）是同一條企劃線的兩張碟，兩卡 risk 可互指。**｜⚠ ⚠ **第 1448(B) 條的一處假陽性，本棒撤銷**：**策展層把〈Lorelei〉算進「軌名＝池中卡名」的 25 處，但本棒實掃 seed 17248 列 ＋ `desc-tools/batches/cards/` ＋ 所有 `batch-progress/c1*/prop-*.json` 合計 25215 列，`Lorelei` 作為卡名命中 0**——**這一處不成立，後批不要再沿用。**本張 11 軌對卡池的真命中 0。｜⚠ **編制判「可寫固定編制（三人）」成立，而且是第 1281 條的乾淨樣本**：**美版／歐版／日版三筆 credit 欄一致**，**不像本組其他張要換版才拿得到人名。**｜⚠ **載體**：**MB 兩筆與 Discogs 五筆全是 CD**（含一張 BMG 俱樂部版與一張宣傳盤），**本棒未查到黑膠。**｜**封面不缺**：CAA RG 層重探回 200。⚠ **若要備援**：**Discogs 美版 `8995653` 的 `images[0]` 是 primary 589×600**（**日版 `17096145` 的 primary 只有 532×469、美版宣傳 `37582425` 的 `images[0]` 是 secondary，兩者都不要用**）。｜⚠ **同批葛萊美**：**Billboard 2002-01-19 p94 的 44 屆提名名單裡有本批六張碟**（Mose Vol. 1／Flirting With Twilight／The Calling 在最佳爵士人聲專輯，Pat Martino 的〈All Blues〉在最佳爵士器樂獨奏，Kindred 與 Live at Yoshi's 在最佳爵士器樂專輯，Supernova 在最佳拉丁爵士專輯）——**本張不在名單上，正文不得沾光。**"
+ },
+ {
+  "key": "desc2:Jacky Terrasson|À Paris",
+  "artist": "Jacky Terrasson",
+  "album": "À Paris",
+  "facts": [
+   {
+    "f": "release-group `e303a873-5ddc-380e-8bf4-ae6576592eef`：title 逐字 `À Paris`（帶重音、無刪節號）、artist-credit `Jacky Terrasson`（`be3142ae` Person）、first-release-date **2000**（只有年）、Album、secondary-types 空，genres／tags `jazz`＋`post-bop`。**轄下只有一筆 release `4439cbba`**（2000 US，CD **14 軌**，Blue Note `7243 5 27637 2 6`，⚠ **barcode 欄逐字 `7243527637326`——13 位但校驗不合**，第 1454 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e303a873-5ddc-380e-8bf4-ae6576592eef&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**錄音地點在法國南部**：Discogs 歐版 `5195278` 的 notes 逐字「**On the booklet: Recorded at Recall Studio, Pompignan, France**」，**碟面 ℗© 欄逐字「℗© 2000 Capitol Records, Inc.」**。⚠ **這間 Recall Studio 同時是同組 `Stefano Di Battista` 同名盤的混音室（2000-07-17／18／19）**——**兩張是同一年、同一條 Blue Note 法國線的碟。**",
+    "src": "https://api.discogs.com/releases/5195278"
+   },
+   {
+    "f": "⚠ **編制逐軌變動，而且「封面大名字只上一軌」在本張出現兩次**（第 1181／1367 條）：Discogs 歐版 `5195278`／`7087051` 的 credit 欄帶軌號——**Terrasson 鋼琴 1–5、7–14；Fender Rhodes 5、6、8；rainstick 只有第 9 軌**；**貝斯兩人輪班：Rémi Vignolo 2、3、4、6、10、11、12、14 對 Ugonna Okegwo 1、5、7、14**；**鼓兩人輪班：Terreon Gully 2、3、4、10、11、14 對 Leon Parker 1、5、7**；**Biréli Lagrène 吉他只有 4、6、14**；**Grégoire Maret 口琴只有 7、14**；⚠ **Stefon Harris 的馬林巴只有第 14 軌**；**Stefano di Battista 薩克斯風 3、12、14**；**Minino Garay 打擊 8、12、13、14**。⚠ **第 14 軌〈Métro〉只有 1:30，卻是七個人一起上的收尾**（Parker 與 Garay 在這一軌還唱）；⚠ **第 9 軌〈Nantes〉1:59 是鋼琴加 rainstick 的獨奏形。**",
+    "src": "https://api.discogs.com/releases/5195278"
+   },
+   {
+    "f": "⚠ **紙本自己也把「只上一軌」寫出來了**：**Billboard 2001-03-03 p30 的 Jazz/Blue Notes 專文逐字「Recorded in the South of France, A Paris ... finds Terrasson joined by French jazz musicians, including Gypsy guitarist Bireli Lagrene and saxophonist Stefano di Battista as well as his longtime bassist Ogonna Okegwo, drummer Leon Parker, and **Stefon Harris, who adds marimba to the disc's final track**.」**（⚠ **同一段把 `Ugonna` 印成 `Ogonna`、把 `Jacky` 印成 `Jackie`，第 1424 條的續筆。**）同一篇還引 Terrasson 自己談〈La Marseillaise〉：逐字「relieving the composition of its strident marching beat and arranging it as a compassionate, romantic ballad」，以及「there was no statement of patriotism」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-03-03.pdf"
+   },
+   {
+    "f": "⚠ ⚠ **本棒新查到的美國街頭日**：**Billboard 2001-03-03 p30 開頭逐字「Jackie Terrasson's A Paris ... (Blue Note, Tuesday [27])」**——**那是 2001 年 2 月 27 日（星期二）的美國上架日**，**不是首發日**；同期 p4 目次逐字「32 Jazz/Blue Notes: Pianist Jackie Terrasson introduces American fans to songs from his French homeland on A Paris . . .」，**`introduces American fans` 這句話本身就說明它在美國之前已經出過。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-03-03.pdf"
+   },
+   {
+    "f": "店面：Apple `search` us／jp／fr 三市場各只回一筆 `738340060`（Jacky Terrasson《À Paris...》，**14 軌、14 軌全有 previewUrl**，℗ 欄逐字「℗ 2000 Blue Note Records」，releaseDate `2000-01-01` 是年初佔位日）；**`lookup?id=738340060&entity=song` 回 14 首，與 Discogs 零售盤逐軌相符。****CAA release-group 層重探回 200**，封面不缺。",
+    "src": "https://itunes.apple.com/lookup?id=738340060&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 的專訪裡他特地澄清〈La Marseillaise〉不是愛國表態：他把進行曲的節拍抽掉，改編成一首抒情慢歌，理由只是「那個旋律太動人了」",
+   "全碟最後一軌〈Métro〉只有一分半，卻是七個人一起上的：Stefon Harris 整張只在這一軌敲馬林巴，Leon Parker 與 Minino Garay 在這一軌還開口唱"
+  ],
+  "sound": "十四軌，在法國南部 Pompignan 的 Recall Studio 錄音，曲目是 Terrasson 二十歲前在法國聽的歌：〈Plaisir d'amour〉、浦朗克的〈Les Chemins de l'amour〉、〈Jeux interdits〉、Francis Lemarque 的〈À Paris〉、Charles Trenet、Jacques Brel 的〈Ne me quitte pas〉、〈La Vie en rose〉、Barbara 的〈Nantes〉與〈L'Aigle noir〉，再加一首他自己改編的〈La Marseillaise〉與三首原創。編制逐軌換人：他的鋼琴貫穿（第 5、6、8 軌改彈 Fender Rhodes，第 9 軌只有鋼琴與 rainstick），貝斯是 Rémi Vignolo 與 Ugonna Okegwo 輪班、鼓是 Terreon Gully 與 Leon Parker 輪班；Biréli Lagrène 的吉他只在 4、6、14 軌，Grégoire Maret 的口琴只在 7、14 軌，Stefano di Battista 的薩克斯風在 3、12、14 軌，Minino Garay 的打擊在 8、12、13、14 軌，Stefon Harris 的馬林巴只有第 14 軌。收尾的〈Métro〉一分半、七個人，是全碟唯一的合奏。製作 Terrasson 與 Christophe Deghelt，錄音 Philippe Gaillot。",
+  "keyTracks": [
+   "La Marseillaise",
+   "L'aigle Noir",
+   "Ne Me Quitte Pas",
+   "Métro"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 覆核成立、本層不改判；但本棒新查到一條紙本街頭日，必須寫清楚它證明的是什麼。** (1) **Discogs 原壓群（第 531 條）**：**美版零售 `2386988`／歐版 `5195278`／美版限量紙盒 `6552164`（catno 尾碼 `…2 8`）／歐版 `7087051`（另一個完整號 `7243 5 31595 2 8`）四筆的 `year` 欄全是 2000**，**歐版碟面 ℗© 逐字「℗© 2000 Capitol Records, Inc.」。** (2) **MB first-release-date 2000**（唯一一筆 release 也只有年）。 (3) **店面**：Apple `738340060` 的 ℗ 欄逐字「℗ 2000 Blue Note Records」（⚠ releaseDate `2000-01-01` 是年初佔位日，不採）。 (4) ⚠ ⚠ **紙本給的是「美國上架日」不是「首發日」**：**Billboard 2001-03-03 p30 逐字「(Blue Note, Tuesday [27])」＝2001-02-27**，**同期 p4 目次又逐字寫 `introduces American fans to songs from his French homeland`**——**兩句合起來的意思正好是「法國先出、美國隔了幾個月才上」**，**因此依簡報 §二「`year` 取實體首發年」仍取 2000。** ⚠ **這一點要特別記**：**第 1487 條說「紙本要壓過 Discogs 原壓群得給街頭日」，本張確實給了街頭日，但那個街頭日屬於第二個市場**——**判準要再補一句：街頭日必須是首發市場的街頭日才有壓過的效力。** (5) **上榜**：**Billboard `Top Jazz Albums` 要到 2001-04-14 才新進榜**（策展層第 1447 條記，本棒未改）——**與 2001-02-27 的美國上架日吻合，同樣不動年份。** ⚠ **本判可逆**（改的是卡單的 `year` 欄）：**若日後查到法國端的 2000 年逐字街頭日或發片公告，2000 會更硬；若查到「法國其實也是 2001 年初才出」，則整組 Discogs 年份是抄盤面 ℗ 的典型，年份要翻成 2001。兩邊的證據本棒都已寫進 `notes`。**",
+  "notes": "**覆核策展層：rgMbid `e303a873`／只建一筆 release／掛名 `Jacky Terrasson`／年份 2000／14 軌／逐軌變動的編制 全部成立。**｜⚠ **盤名三形**：**MB RG `À Paris`（照它立卡）／Discogs 與 Apple `A Paris...`／Billboard `A Paris . . .`**——**兩個變體進 `queryAlias`；重音 `À` 是合法字元。**｜⚠ **第 1250 條在本張成立**：**MB 的 barcode `7243527637326` 校驗不合，拿它反查 Discogs 只回限量版 `6552164`**——**Discogs 群要改用 `catno=7243 5 27637 2 6` 才拉得齊。****目錄號共三個**（`…27637 2 6` 零售／`…27637 2 8` 限量紙盒／`7243 5 31595 2 8` 歐版），**上架比對三個都要帶。**｜⚠ ⚠ **撞陳列與同批人員交叉（逐軌核過）**：**(a) 與 c-155 b 的《What It Is》(1999) 軌目零重疊，兩卡只以掛名相連。** **(b) 同組 `Stefano Di Battista` 同名盤：di Battista 在本張吹 3／12／14 軌，Terrasson 在他那張是全程鋼琴手，而且兩張都在 Recall Studio 做後期、錄音師都是 Philippe Gaillot**——**兩卡 risk 必須互指，正文不得互抄班底。** **(c) `Stefon Harris` 與同組《Kindred》是同一人**（那張他是聯名領班，本張只敲第 14 軌馬林巴）——**兩卡 risk 互指。** **(d) `Leon Parker` 是 c-156 a 第 1389 條剛立的字串。**｜⚠ **軌名撞卡名**：**第 12 軌〈L'aigle Noir〉＝ seed `Barbara —《L'Aigle noir》`(1970)**——**本張就是在翻 Barbara 那首，同曲不同碟**；**第 14 軌〈Métro〉＝ seed 與 c-56 的 `Metró —《Metro》`(1969，匈牙利團)**，**去重音後同鍵、完全無關**。**上架比對與試聽一律帶掛名與 catno `27637`。**｜⚠ **編制判「逐軌變動」成立，擋下兩處**：**Lagrène 只有 3 軌、Stefon Harris 只有 1 軌**——**紙本自己也只寫 `adds marimba to the disc's final track`，正文不得寫成全程。**｜⚠ **載體**：**MB 一筆與 Discogs 四筆全是 CD**（其中一筆是三折紙盒限量 CD），**本棒未查到黑膠。**｜**封面不缺**：CAA RG 層重探 200；⚠ **備援用 Discogs 歐版 `5195278`（16 圖，`images[0]` 是 primary 600×596）或 `7087051`（primary 600×600）**，⚠ **`6552164` 那一筆 0 圖。**"
+ },
+ {
+  "key": "desc2:Ron Carter|When Skies Are Grey",
+  "artist": "Ron Carter",
+  "album": "When Skies Are Grey",
+  "facts": [
+   {
+    "f": "release-group `4f9d6cf1-bc0a-3a0a-908a-de52a2d3dd55`：title「When Skies Are Grey」、artist-credit `Ron Carter`（`57db3f59` Person，disambiguation 逐字「US jazz double-bassist」）、first-release-date **2000**（只有年）、Album、secondary-types 空，⚠ **genres 與 tags 兩欄全空**（第 1454 條的第十項）。**轄下只有一筆 release `4e64db9f`**（2000 US，CD **7 軌**，Blue Note `7243 5 30754 2 2`，barcode 724353075422）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4f9d6cf1-bc0a-3a0a-908a-de52a2d3dd55&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ ⚠ **這張碟的場次、編制與母廠，三樣都只有 Discogs 一層有**（派工信點名的三張「只剩 Discogs」之一）：**美版 `11402064` 的 notes 逐字「**Recorded & mixed at Clinton Studios, New York City on May 1, 2000.**」＋「Produced Retrack Productions, Inc.」＋⚠ **℗© 欄逐字「℗ © 2000 Somethin' Else Records, a division of Toshiba-EMI Ltd. Manufactured by Capitol Records.」**——**母廠是東芝 EMI 的 `Somethin' Else`，Blue Note 是美國端的發行。**⚠ **一天錄完是本張的例外事實，有逐字來源，可以寫。**",
+    "src": "https://api.discogs.com/releases/11402064"
+   },
+   {
+    "f": "⚠ **同一張碟的兩個美版壓片，製作方掛名不一致**：**`35339866` 的 notes 逐字「This version states: \"Produced by Ron Carter Productions, Inc.\" on the back cover. Another version states: \"Produced Retrack Productions, Inc\".」**，**同一筆還逐字寫「On disc: Produced Retrack Productions, Inc. On back cover: Produced by Ron Carter Productions, Inc.」**——**碟面與背標互相打架**，**正文若要提製作公司必須兩說並陳或整個略過。**同一筆也逐字給了客座的出借聲明：「Steve Kroon appears courtesy of…」。",
+    "src": "https://api.discogs.com/releases/35339866"
+   },
+   {
+    "f": "**編制是乾淨的固定四人**（第 1453 條列的 9 張之一，本棒覆核成立）：**Ron Carter 貝斯兼製作、Stephen Scott 鋼琴、Harvey Mason 鼓、Steve Kroon 打擊**；**三筆 Discogs 條目的 credit 欄人名完全一致、沒有任何軌號限制、沒有其他客座**。執行製作 Hitoshi Namekata（東芝 EMI 端），錄音／混音 Jim Anderson，助理 Mark Fraunfelder，母帶 Yoshio Okazaki。⚠ **歐版 `7262835` 把 Carter 的樂器欄寫成 `Acoustic Bass`、美版寫 `Bass`**，**同一件事、兩種寫法。**",
+    "src": "https://api.discogs.com/releases/7262835"
+   },
+   {
+    "f": "**七軌、盤面曲序**（Discogs `7262835` 逐字）：Loose Change（7:08，Carter 作）／Besame Mucho（7:05，Consuelo Velázquez）／Caminando（7:07，Carter）／Qué Pasa（5:29，Carter）／Corcovado（7:22，Jobim）／Cubano Chant（6:00，Ray Bryant）／Mi Tiempo（8:12，Carter）。⚠ **七軌裡有四首是 Carter 自己的曲，另外三首是拉丁曲目**——**Discogs 的 styles 欄逐字給 `Contemporary Jazz`＋`Latin Jazz`。**",
+    "src": "https://api.discogs.com/releases/7262835"
+   },
+   {
+    "f": "⚠ ⚠ **店面三種查法全空，本層確認「查無」**（第 254／1246／1284 條全部跑過）：**(1) `search` 五個市場（us／jp／gb／fr／dk）**——us 與 gb 只回一筆無關的《Chesky Records' Best of Ron Carter》(2019)，jp／fr／dk 回的全是〈You Are My Sunshine〉的同名流行單曲，**零命中本碟**；**(2) 改字串**（`Ron Carter When Skies Are Grey...` 帶刪節號、`When Skies Are Grey Ron Carter Blue Note`）**仍零命中**；**(3) `lookup?upc=724353075422` 回 `resultCount: 0`。**→ **本張走固定無來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?upc=724353075422&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "整張七首是 2000 年 5 月 1 日一天之內在紐約 Clinton Studios 錄完並混完的——盤上七首合計近五十分鐘",
+   "母廠不是 Blue Note 而是東芝 EMI 的 Somethin' Else：碟面版權欄印的是「℗ © 2000 Somethin' Else Records, a division of Toshiba-EMI Ltd.」，Blue Note 只負責美國端"
+  ],
+  "sound": "七軌，2000 年 5 月 1 日在紐約 Clinton Studios 一天之內錄音並混音完成。固定四人：Ron Carter 的貝斯、Stephen Scott 的鋼琴、Harvey Mason 的鼓、Steve Kroon 的打擊，三筆壓片的 credit 欄一致、沒有軌號限制也沒有其他客座。曲目一半是 Carter 自己的作品（〈Loose Change〉〈Caminando〉〈Qué Pasa〉〈Mi Tiempo〉），另一半走拉丁路線：Consuelo Velázquez 的〈Bésame mucho〉、Jobim 的〈Corcovado〉、Ray Bryant 的〈Cubano Chant〉。盤的母廠是東芝 EMI 的 Somethin' Else，執行製作 Hitoshi Namekata，Blue Note 負責美國端發行；錄音與混音 Jim Anderson，母帶 Yoshio Okazaki。",
+  "keyTracks": [
+   "Besame Mucho",
+   "Corcovado",
+   "Cubano Chant",
+   "Mi Tiempo"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判——但要說清楚這一張只有兩層證據。** (1) **Discogs 原壓群（第 531 條，本張唯一的硬層）**：**歐版 `7262835`（Somethin' Else `7243 5 30754 2 2`）／美版 `11402064`／美版另一壓片 `35339866` 三筆的 `year` 欄全是 2000**，**`11402064` 與 `35339866` 的碟面 ℗© 欄逐字「℗ © 2000 Somethin' Else Records, a division of Toshiba-EMI Ltd.」**，**錄音日 2000-05-01 也逐字印在 notes 上、早於發行、沒有第 550／570／708 條那種抄錄音年的餘地。** (2) **MB first-release-date 2000**（唯一一筆 release 也只有年）。 ⚠ **(3) 紙本零命中**：**`billboard-bn-2000-ocr.txt.gz` 查 `Ron Carter` 的命中頁全是無關條目**（2000-01-29 p111 與 2000-02-05 p105 是 NARAS 的「Studio Stories」活動預告，2000-08-26／09-09 命中的是 Aaron Carter），**查 `Skies Are Grey` 0 頁。** ⚠ **(4) 店面零命中**：**三種查法全空**（見 facts），**連 ℗ 年都拿不到。** → **本張是全批唯一一張「紙本零命中 ＋ 店面三法全空」的碟，年份只靠 Discogs 原壓群 ＋ MB 兩層。** ⚠ **也因此本張的年份最脆弱**：**可逆**，**若日後查到日版 Somethin' Else 的街頭日（東芝 EMI 的號段），要以那一筆為準。**",
+  "notes": "**覆核策展層：rgMbid `4f9d6cf1`／只建一筆 release／掛名 `Ron Carter`／年份 2000／7 軌／固定四人編制 全部成立。**｜⚠ ⚠ **本張是本批的「單層樣本」**：**紙本零命中、店面三種查法全空、MB 只有一筆骨架 release**——**場次（2000-05-01 Clinton Studios）、母廠（Somethin' Else／Toshiba-EMI）、四人編制、七軌曲序，四樣全部只有 Discogs 三筆條目有。****寫作層引用時要把「只有 Discogs 一層」寫清楚，不得再往外推。**｜⚠ **製作公司兩說並陳**：**碟面 `Retrack Productions, Inc.` vs 背標 `Ron Carter Productions, Inc.`（`35339866` 逐字記下這個矛盾）**——**正文不得只寫一邊。**｜⚠ ⚠ **撞陳列（第 738／859 條，本棒逐軌核過）**：**第 2 軌〈Besame Mucho〉與同組 `Chucho Valdés —《Solo Live in New York》` 第 4 軌〈Besame Mucho〉同曲**——**一張是四人組的錄音室版 7:05、一張是鋼琴獨奏的現場版 7:03**，**同批兩張互撞，兩卡 risk 必須互指**（策展層第 1448(A)#7 已記，本棒覆核成立）。**其餘六軌與該張其餘十軌零重疊。**｜⚠ **軌名撞卡名**：**本棒用去重音折疊鍵重掃 7 軌對 25215 列卡池，真命中 0**（〈Besame Mucho〉〈Corcovado〉〈Cubano Chant〉掃池皆 0）。｜⚠ **編制判「可寫固定編制（四人）」成立**；⚠ **樂器欄兩種寫法**（歐版 `Acoustic Bass`／美版 `Bass`），正文寫「貝斯」即可。｜⚠ **載體**：**Discogs 三筆全是 CD、MB 一筆是 CD**，**本棒未查到黑膠。**｜**封面不缺**：**CAA release-group 層重探回 200**；⚠ **備援用 Discogs 美版 `11402064`（6 圖，`images[0]` 是 primary 600×600）或歐版 `7262835`（5 圖，primary 600×597）**，⚠ **`35339866` 的 `images[0]` 是 secondary，不要用。**｜⚠ ⚠ **試聽：查無**。**跑完第 254 條三種查法（五個市場的 `search`、兩種改寫字串、`lookup?upc=724353075422`）全部零命中**——**本張與同組《Poetry》《New Moods - New Sounds》一起走固定無來源狀態。**｜⚠ **同批同企劃線**：**本張與同組 `Bill Charlap Trio —《Written in the Stars》` 都是 Somethin' Else／Toshiba-EMI 的企劃盤、同年、同由 Blue Note 在美國端發**——**兩卡 risk 可互指。**"
+ },
+ {
+  "key": "desc2:Stefano Di Battista|Stefano di Battista",
+  "artist": "Stefano Di Battista",
+  "album": "Stefano di Battista",
+  "facts": [
+   {
+    "f": "release-group `49d78277-de35-336d-889a-64a2a3aa1d11`：title「Stefano di Battista」（**同名盤**）、artist-credit `Stefano Di Battista`（`f6c8ec20` Person）、first-release-date **2000**（只有年）、Album、secondary-types 空，genres／tags `jazz`＋`post-bop`。**轄下三筆 release**：**`d055e724`（2000 FR，CD 11 軌，`Blue Note 7243 528417 2 1` ＋ `Blue Note／EMI 7243 529743 2 1`，barcode 724352841721）**／**`18c17367`（2000 FR，CD **13 軌**，Blue Note，catno 欄空，barcode 724352990122）**／⚠ **`3ca54def`（幽靈 release：無日期、無國別、無廠牌、media format 為 `null`，11 軌）**——第 1454 條的「幽靈 release」，**不要拿它推任何欄位。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=49d78277-de35-336d-889a-64a2a3aa1d11&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ ⚠ **同一張碟有 11 軌與 13 軌兩種內容物，而且都是法版**（第 609／1135 條：逐張確認原盤軌目、歐版與美版軌數是否不同）：**Discogs `6406470`（France，`Blue Note 7243 528417 2 1`／`EMI 7243 529743 2 1`，barcode 724352841721）是 11 軌**；**Discogs `7085315`（France，`Blue Note 7243 529743 2 2`／`EMI 7243 529743 2 2`，barcode 724352990122）是 13 軌**——**多出來的是第 12 軌〈Like à Turner〉4:18 與第 13 軌〈Solo〉4:48。** **美版（`36649897` 宣傳／`37070313` 零售，`Blue Note 7243 5 28417 2 1`）都是 11 軌。**",
+    "src": "https://api.discogs.com/releases/7085315"
+   },
+   {
+    "f": "**兩組場次日期，逐字兩筆**：**Discogs `6406470` 的 notes 逐字「Recorded on July 3 & 4, 2000 / Mixed on July 17, 18 & 19, 2000」**；**美版 `37070313` 把地點補齊，逐字「Recorded at the Studio Daniel Leon in Brussels, Belgium on July 3 & 4, 2000. Mixed at the Recall Studio in Pompignan, France on July 17-19, 2000.」**——**錄音在布魯塞爾、混音在法國南部，兩地兩段時間，不是一天錄完。**",
+    "src": "https://api.discogs.com/releases/37070313"
+   },
+   {
+    "f": "⚠ **編制是四人固定 ＋ 一位只上三軌的小號客座**（策展層第 1453 條把本張列在「可寫固定編制」，**本棒修正為「四人固定＋逐軌客座」**）：**Stefano Di Battista 中音／高音薩克斯風、Jacky Terrasson 鋼琴、Rosario Bonaccorso 貝斯、Elvin Jones 鼓**（三筆條目的 credit 欄一致、無軌號）；⚠ **Flavio Boltro 的小號只有第 4、6、7 軌，而且 `6406470`／`7085315` 兩筆的角色欄逐字是 `Featuring, Guest [Special Guest], Trumpet`。** 作曲分工也帶軌號：**Di Battista 1–4、6、7、9、10；Terrasson 5、11；Bonaccorso 8。** 製作 Yves Chamberland，混音 Philippe Gaillot。",
+    "src": "https://api.discogs.com/releases/6406470"
+   },
+   {
+    "f": "⚠ **盤面掛名是四個人並列、不是一個人**：**Discogs 四筆的 `artists_sort` 欄逐字是「Stefano Di Battista / Elvin Jones / Jacky Terrasson / Rosario Bonaccorso」（`6406470`／`36649897`）與「Stefano Di Battista / Jacky Terrasson / Elvin Jones / Rosario Bonaccorso」（`7085315`，順序不同）與「Stefano Di Battista, Elvin Jones, Jacky Terrasson, Rosario Bonaccorso」（`37070313`，逗號分隔）**——**三種寫法、三種順序**；**MB RG 的 artist-credit 只有 `Stefano Di Battista` 一人**。**依第 543／553 條收攏到領班字串，長形進 `queryAlias`。**",
+    "src": "https://api.discogs.com/releases/36649897"
+   },
+   {
+    "f": "店面：⚠ **us 市場零命中本碟**（`search` 回的全是他 2004 年後的碟與客座單曲）；**jp 市場命中兩筆**：**`859747806`（11 軌，releaseDate `2000-10-30`，℗ 逐字「℗ 2000 Capitol Music une division de Parlophone Music France」）**與 **`690676306`（**13 軌**，releaseDate `2001-04-24`，℗ 逐字「℗ 2000 Captiol Music…」，⚠ **`Captiol` 是店面自己拼錯**）。**`lookup?id=859747806&entity=song` 回 11 首、11 首全有 previewUrl，軌名與 Discogs 11 軌版逐軌相符。**⚠ **第 1246／1284 條「us 查無不等於店面沒有」在本張再次成立，而且兩個條目正好對應兩種內容物。**",
+    "src": "https://itunes.apple.com/lookup?id=859747806&country=jp&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "鼓手是 Elvin Jones——七十二歲的柯川四重奏鼓手，跟一位三十一歲的羅馬薩克斯風手、一位法國鋼琴手、一位西西里貝斯手，2000 年七月在布魯塞爾錄了兩天",
+   "第一軌就叫〈Elvin's Song〉，七分五十七秒；第六軌叫〈Adderley〉、第七軌叫〈Hall〉、第十一軌叫〈Chicago 1987〉——整張碟像一份點名單"
+  ],
+  "sound": "十一軌（法版另有十三軌的版本），2000 年 7 月 3 至 4 日在布魯塞爾的 Studio Daniel Leon 錄音，7 月 17 至 19 日在法國南部 Pompignan 的 Recall Studio 混音。四人固定編制：Stefano Di Battista 吹中音與高音薩克斯風、Jacky Terrasson 鋼琴、Rosario Bonaccorso 貝斯、Elvin Jones 鼓；小號手 Flavio Boltro 以特別來賓的身分只上第 4、6、7 三軌。曲目幾乎全是原創：Di Battista 寫了第 1–4、6、7、9、10 軌，Terrasson 寫第 5 與第 11 軌，Bonaccorso 寫第 8 軌。開場的〈Elvin's Song〉近八分鐘，其餘曲名像一份點名單：〈Johnny's Time〉〈Nico's Dream〉〈Adderley〉〈Hall〉〈Song for Flavia〉〈Chicago 1987〉。製作 Yves Chamberland，混音 Philippe Gaillot。法版十三軌的兩首追加曲是〈Like à Turner〉與〈Solo〉。",
+  "keyTracks": [
+   "Elvin's Song",
+   "Adderley",
+   "Little Red Ribbon",
+   "Chicago 1987"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **Discogs 原壓群（第 531 條）**：**法版 11 軌 `6406470`／法版 13 軌 `7085315`／美版宣傳 `36649897`／美版零售 `37070313` 四筆的 `year` 欄全是 2000**，**`37070313` 的 notes 逐字寫錄音 2000-07-03／04、混音 2000-07-17～19**——**錄音、混音、發行同年，沒有抄錄音年的空間。** (2) **MB first-release-date 2000**，**兩筆實體 release 的 `date` 欄也都是 2000**（幽靈 release `3ca54def` 無日期，不採）。 (3) **店面**：**Apple jp `859747806` 的 ℗ 欄逐字「℗ 2000 Capitol Music une division de Parlophone Music France」**；⚠ **它的 releaseDate `2000-10-30` 是店面上架日（第 484 條第三種），可以當「2000 年下半年」的旁證、不能當街頭日。** ⚠ **要擋的第二個日期**：**jp 的另一個條目 `690676306`（13 軌版）releaseDate 是 `2001-04-24`，℗ 仍是 2000**——**那是 13 軌版在店面的上架日，不是首發。** (4) **紙本**：**`billboard-bn-2000-ocr.txt.gz` 查 `di Battista` 0 頁；2001-03-03 p30 的命中是同組《À Paris》的專文提到他當側人，不是本碟的新片欄**——**紙本在本張不構成獨立一層。** ⚠ **首發地是法國**（MB 兩筆實體 release 的 country 都是 FR，Discogs 的 11 軌與 13 軌兩版也都是 France），**美版是跟發。**",
+  "notes": "**覆核策展層：rgMbid `49d78277`／三筆 release（其中 `3ca54def` 是第 1454 條的幽靈 release）／掛名 `Stefano Di Battista`／年份 2000／同名盤 全部成立。**｜⚠ ⚠ **軌數本棒改寫**：**卡單與策展層記 11 軌，但法版另有一個 13 軌的零售版（Discogs `7085315`，`Blue Note／EMI 7243 529743 2 2`，barcode 724352990122，MB `18c17367`）**——**多的是〈Like à Turner〉與〈Solo〉兩軌**；**Apple jp 也正好有兩個條目對應兩種內容物（`859747806` 11 軌／`690676306` 13 軌）。****卡單取 11 軌（＝美版與法版主流形）成立，但正文與上架比對要知道有 13 軌版。**｜⚠ ⚠ **編制本棒修正**：**策展層第 1453 條把本張列進「可寫固定編制（四人）」——四人固定成立，但漏了 Flavio Boltro**：**他的小號只有第 4、6、7 軌，角色欄逐字 `Featuring, Guest [Special Guest]`**——**正文寫四重奏可以，但若提到小號必須寫「只在三軌」。**｜⚠ **掛名三形**：**盤面是四人並列（三筆條目三種順序與分隔符）、MB RG 只有 Di Battista 一人**——**依第 543／553 條收攏到 `Stefano Di Battista`，長形進 `queryAlias`。**｜⚠ ⚠ **撞陳列與同批交叉（逐軌核過）**：**(a) 第 5 軌〈Little Red Ribbon〉＝ c-155 的 `Jacky Terrasson —《What It Is》`(1999) 同名軌**（策展層第 1448(A)#8 已記；**本張這首的作曲欄逐字掛 Jacky Terrasson，正是他自己的曲**）——**兩卡 risk 互指。** **(b) 同組 `Jacky Terrasson —《À Paris》`：Terrasson 是本張全程鋼琴手，Di Battista 是那張 3／12／14 軌的客座，兩張的後期都在 Recall Studio、錄音師都是 Philippe Gaillot**——**兩卡 risk 必須互指，班底不得互抄。** **(c) `Elvin Jones` 在池中另有卡（seed `Genesis`(1971) 等），本張他只是側人，不得改掛名。**｜⚠ **軌名撞卡名**：**本棒重掃 13 軌對 25215 列卡池，唯一命中是 13 軌版的第 13 軌〈Solo〉**——**撞到 seed 的 `Cecil Taylor —《Solo》`(1973)、`Egberto Gismonti —《Solo》`(1979)、`Albert Mangelsdorff —《Solo》`(1982) 三張 apex 5 的卡與 `Kunihiko Sugano —《Solo》`(1977)**；⚠ **但〈Solo〉只在 13 軌版上、不在卡單取的 11 軌版上**——**上架比對不會撞，記錄備查即可。**｜⚠ **載體**：**MB 兩筆實體 release 與 Discogs 四筆全是 CD**，**本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 逐張重探（第 1283 條）RG 層 404、三筆 release（`18c17367`／`3ca54def`／`d055e724`）的 `/front` 也全是 404——真 404。替代來源：Discogs 法版 `6406470`，共 10 圖，`images[0]` 是 `primary`、600×590**（次選 `7085315`，5 圖，primary 600×600）。⚠ **美版兩筆（`36649897` 600×586、`37070313` 300×293）的 `images[0]` 都是 secondary，不要用。** ⚠ **不要自己下載，只登記來源。**"
+ },
+ {
+  "key": "desc2:Lonnie Plaxico|Melange",
+  "artist": "Lonnie Plaxico",
+  "album": "Melange",
+  "facts": [
+   {
+    "f": "release-group `cee00961-b01b-3700-9be1-8c1449d56ab1`：title「Melange」、artist-credit `Lonnie Plaxico`（`a016ee9e` Person）、first-release-date **2001**（只有年）、Album、secondary-types 空，⚠ **genres 與 tags 兩欄全空**。**轄下只有一筆 release `adaacd48`**（2001 US，11 軌，**label-info 只有 `Blue Note` 沒有目錄號、無 barcode、⚠ media format 欄是 `null`**——**`slice.json` 的 `format` 欄之所以是 `?` 就是這個原因**，第 1454 條的第一、二、四項在本張同時成立）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cee00961-b01b-3700-9be1-8c1449d56ab1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**完整目錄號、街頭日與場次全部只有 Discogs 有**：**美版零售 `5967810` 的 catno 逐字 `Blue Note 7243 5 32355 2 9`、barcode 逐字「7 243-5-32355-2 9」、`released` 欄逐字 `2001-08-14`**，notes 逐字「**Recorded on May 4-5, 2000. Mixed on November 1-2, 2000.**」——**錄音在 2000 年 5 月、混音在同年 11 月、發行在 2001 年 8 月，三段時間分開，正文不得寫成一次。**",
+    "src": "https://api.discogs.com/releases/5967810"
+   },
+   {
+    "f": "⚠ ⚠ **同一張碟的三筆壓片，逐軌編制互相打架**（第 1367 條的變形：不是「credit 空」而是「credit 不一致」）：**美版零售 `5967810` 的軌號是 Lew Soloff 小號 1、2、4、9、10 ／ Jeremy Pelt 小號 3、5–7、11 ／ Tim Ries 次中音 1、2、4、9、10 ／ Marcus Strickland 次中音 3、5–8、11 ／ Helen Sung 鋼琴 3–6、電鋼琴 10 ／ George Colligan 鋼琴・鍵盤・管風琴 1、2、5–11**；**而宣傳盤 `5364045` 與歐版 `9948357` 的同一批人寫成 Soloff 1–5 ／ Pelt 6–11 ／ Ries 1–5 ／ Strickland 6–11 ／ Sung 2、5、6 ／ Colligan 1–4、6–11**——**兩組軌號完全對不上。****以零售盤 `5967810` 為準**，**正文若要寫逐軌分工必須註明來源版本，或只寫「兩組小號與兩組次中音交替」。**",
+    "src": "https://api.discogs.com/releases/5967810"
+   },
+   {
+    "f": "**固定的那三個人**（三筆條目一致、無軌號）：**Lonnie Plaxico 貝斯兼作曲、編曲、製作**、**Lionel Cordew 鼓**、**Jeff Haynes 打擊（`5967810` 另掛 Co-producer）**。錄音／混音 Michael Marciano，母帶 Kurt Lundvall。⚠ **第 1 軌〈Squib Cakes〉的作曲欄逐字掛 `Chester Thompson (2)`——那是 Tower of Power 的管風琴手**，**而第 9 軌就叫〈T.O.P.〉**（⚠ **MB 把它寫成 `Top`、把第 4 軌寫成 `Short Take`，兩處都錯，照 Discogs 的 `T.O.P.` 與 `Short Takes`**，第 1454 條）。",
+    "src": "https://api.discogs.com/releases/5967810"
+   },
+   {
+    "f": "⚠ **紙本零命中本碟**：**`billboard-bn-2001-ocr.txt.gz` 查 `Plaxico` 的命中頁全是他當側人的報導**——**2001-01-13 p39 是 Mac Gollehon 在紐約 Blue Note 俱樂部的週日早午場（Plaxico 是那個五人組的貝斯手）**、**2001-05-12 p20 是同組 `Rodney Jones —《Soul Manifesto》` 的錄音室照片說明（Plaxico 在照片裡）**——**兩處都與《Melange》無關。****本張沒有紙本層。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-05-12.pdf"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `738338297`（Lonnie Plaxico《Melange》，**11 軌、11 軌全有 previewUrl**，℗ 逐字「℗ 2001 Blue Note Records」，releaseDate `2001-01-01` 是年初佔位日）；**`lookup?id=738338297&entity=song` 的 11 首軌名與 Discogs 零售盤逐軌相符。****CAA 依第 1283 條重探：RG 層 404、唯一一筆 release `adaacd48` 的 `/front` 也是 404**，**真 404。**",
+    "src": "https://itunes.apple.com/lookup?id=738338297&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "開場曲〈Squib Cakes〉是 Tower of Power 管風琴手 Chester Thompson 寫的，第九軌乾脆就叫〈T.O.P.〉——一張爵士貝斯手的領班盤，從頭到尾在向一支七〇年代的奧克蘭放克樂隊致意",
+   "錄音在 2000 年 5 月 4 到 5 日，混音要等到同年 11 月 1 到 2 日，碟子則是 2001 年 8 月 14 日才上架——三段時間隔了一年三個月"
+  ],
+  "sound": "十一軌，2000 年 5 月 4 至 5 日錄音、同年 11 月 1 至 2 日混音，2001 年 8 月 14 日上架。固定的核心是 Lonnie Plaxico 的貝斯、Lionel Cordew 的鼓與 Jeff Haynes 的打擊；管樂與鍵盤則是兩組交替——小號 Lew Soloff 與 Jeremy Pelt 分軌、次中音薩克斯風 Tim Ries 與 Marcus Strickland 分軌、鋼琴 George Colligan 與 Helen Sung 分軌（三筆壓片的軌號互相矛盾，以美版零售盤為準）。作曲、編曲與製作都掛 Plaxico，唯一的例外是開場的〈Squib Cakes〉——Tower of Power 管風琴手 Chester Thompson 的曲，而第 9 軌直接題作〈T.O.P.〉。錄音與混音 Michael Marciano，母帶 Kurt Lundvall。",
+  "keyTracks": [
+   "Squib Cakes",
+   "Mélange",
+   "T.O.P.",
+   "Windy City"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判，而且拿到了逐字的零售街頭日。** (1) **Discogs 原壓群（第 531 條，本張的主層）**：**美版零售 `5967810` 的 `released` 欄逐字 `2001-08-14`**（**同一筆的 notes 又逐字把錄音 2000-05-04／05 與混音 2000-11-01／02 分開寫**）；**宣傳盤 `5364045`（catno `CD 7243 5 32355 2 9V`）與歐版 `9948357` 的 `year` 欄也都是 2001。** (2) **MB first-release-date 2001**（唯一一筆 release 也只有年，**而且 label-info 沒有目錄號、format 為 null**）。 (3) **店面**：**Apple `738338297` 的 ℗ 欄逐字「℗ 2001 Blue Note Records」**（⚠ releaseDate `2001-01-01` 是年初佔位日，不採）。 ⚠ **(4) 紙本零命中**：**查 `Plaxico` 的兩處命中都是他當側人的報導**（2001-01-13 p39 的 Blue Note 俱樂部演出、2001-05-12 p20 的《Soul Manifesto》錄音室照片），**沒有一處是《Melange》的新片欄或評介。** ⚠ **錄音年 2000 與發行年 2001 差一年**（策展層第 1447 條把本張列為「錄音年與發行年差一年」的三張之一），**`year` 取發行年 2001、錄音年寫進 risk 與正文**——**本棒覆核成立。**",
+  "notes": "**覆核策展層：rgMbid `cee00961`／只建一筆 release／掛名 `Lonnie Plaxico`／年份 2001／11 軌 全部成立。**｜⚠ ⚠ **編制：判「逐軌變動」成立，但本棒要加一條警告**——**三筆壓片的軌號互相矛盾**（見 facts 第三條）：**零售 `5967810` 與宣傳／歐版 `5364045`／`9948357` 的分工完全對不上。****以零售盤為準，或正文只寫「兩組小號、兩組次中音、兩組鍵盤交替」不寫軌號。**這是第 1281 條（換版再查）與第 1367 條（逐軌欄才有）之外的第三種形狀：**同一張碟的兩個版本各自填了一套不一樣的軌號。**｜⚠ **MB 軌名兩處錯**（第 1454 條）：**第 4 軌 MB `Short Take`／盤面 `Short Takes`**、**第 9 軌 MB `Top`／盤面 `T.O.P.`**——**寫作層照 Discogs。**｜⚠ **軌名撞卡名（本棒重掃）**：**第 9 軌〈T.O.P.〉＝ seed `Tower of Power —《T.O.P.》`(1993)**——⚠ **而且本張第 1 軌正是 Tower of Power 的曲、作曲欄掛他們的管風琴手 Chester Thompson**，**這一處不是巧合、是刻意致意，正文可以寫但兩卡 risk 要互指**；**第 9 軌去掉句點後的 `Top` 另撞 seed `YoungBoy Never Broke Again —《Top》`(2020)（無關）**；**第 11 軌〈Windy City〉＝ seed `Alison Krauss —《Windy City》`(2017)（無關）。**｜⚠ ⚠ **同批人員交叉（本棒新增兩條，策展層只記了一條）**：**(a) `Lonnie Plaxico` 本人是同組 `Rodney Jones —《Soul Manifesto》` 第 1、2、5、9 軌的貝斯手**（策展層第 1448 條已記「領班／側人交叉」）；**(b) `Lew Soloff` 同時是 b 組 `Bob Belden —《Black Dahlia》` 的小號獨奏者**；**(c) `Jeremy Pelt` 同時是 b 組 `Soulive —《Doin' Something》` 第 2、6、10 軌的小號**——**三張 b 組的卡可與本張 risk 互指。**｜⚠ **載體**：**MB 那筆 release 的 format 是 `null`，Discogs 三筆全是 CD**（含一張紙套宣傳 CD）——**載體靠 Discogs 補為 CD，本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 重探 RG 層與 release 層都是真 404。替代來源要小心**：**美版零售 `5967810` 的 `images[0]` 是 primary 但只有 500×496（低於 600）**；**宣傳盤 `5364045` 的 `images[0]` 是 primary 600×576，但那一筆的 notes 逐字寫「White cardboard sleeve with sticker on top」**——⚠ **必須先確認那張圖是盤面藝術而不是白色宣傳紙套**（本線已實測過「primary 是卡帶殼照片」的同形）；**歐版 `9948357` 的 `images[0]` 是 secondary，不要用。**→ ⚠ **依派工信「低於 600px 時 Apple 的 `600x600bb` 可以當備案」，本張建議直接走 Apple `738338297` 的 `600x600bb`。** ⚠ **不要自己下載，只登記來源。**"
+ },
+ {
+  "key": "desc2:Mose Allison|The Mose Chronicles: Live in London, Volume 1",
+  "artist": "Mose Allison",
+  "album": "The Mose Chronicles: Live in London, Volume 1",
+  "facts": [
+   {
+    "f": "release-group `6dd63301-dc0f-3433-83d4-ed920f1714e0`：title 逐字「The Mose Chronicles: Live in London, Volume 1」、artist-credit `Mose Allison`（`18b76828` Person）、first-release-date **2001**（只有年）、primary-type Album、**secondary-types `[\"Live\"]` ✓ 標對了**，⚠ **genres 與 tags 兩欄全空**。**轄下只有一筆 release `e5455296`**（2001 **GB**，CD **22 軌**，`Blue Note`，**label-info 沒有目錄號**，barcode 724352974726）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6dd63301-dc0f-3433-83d4-ed920f1714e0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ ⚠ **本棒推翻策展層第 1449 條「場館與日期三邊都查不到」**：**Billboard 2001-04-14 p30 的 JAZZ 評介逐字寫出場館——「This disc, the first of two volumes recorded at **London's Pizza Express**, marks Allison's **50th anniversary as a performer**.」**；**同一段評介的標頭逐字「PRODUCER: Ben Sidran　Blue Note 7243 5 29747 2 6」**——**製作人、完整目錄號、場館、紀念意義四樣全在這一篇裡。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-04-14.pdf"
+   },
+   {
+    "f": "⚠ **日期則要靠同批 b 組的第二卷補**：**《Volume 2》三筆 Discogs 條目（`5690531`／`8385623`／`16085461`）的 notes 逐字「Recorded Live at the Pizza Express, London by Andrew Tulloch on January 21 and 22, 2000」**——**兩卷出自同一組演出（第 1475 條），因此本卷的日期是 2000 年 1 月 21、22 日**；⚠ **但本卷自己的三筆 Discogs 條目只寫「Recorded Live in London」，沒有日期**——**正文若要寫日期，要走第二卷那一層，不能假裝本卷條目上就有。**",
+    "src": "https://api.discogs.com/releases/8385623"
+   },
+   {
+    "f": "**編制是三人，而且與第二卷不同**：**本卷 `7956747`／`9367792`／`15787114` 三筆的 credit 欄只有三個人——Mose Allison 鋼琴兼主唱、Roy Babbington 貝斯、Mark Taylor 鼓**；⚠ ⚠ **第二卷多一個人：吉他手 Jim Mullen**。**兩卷的編制不一樣，正文不得互抄。**",
+    "src": "https://api.discogs.com/releases/9367792"
+   },
+   {
+    "f": "⚠ **評介還逐字記了製作上的取捨與他的翻唱史**：**「The recording doesn't fully capture the vibe of an Allison show, as producer Ben Sidran edits out the wry commentary that often brackets each tune」**、**「His material has been covered by Elvis Costello, Bonnie Raitt, the Yardbirds, the Who, Eric Clapton, and Van Morrison.」**——**製作人把他每首之間的口白剪掉了，這是本張最硬的一條評介事實。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-04-14.pdf"
+   },
+   {
+    "f": "⚠ ⚠ **試聽本棒查到並採信**：**Apple `search` 五個市場（us／jp／gb／fr／dk）都命中同一個 `724031388`（Mose Allison《The Mose Chronicles - Live in London, Vol. 1》，22 軌，℗ 逐字「℗ 2001 Blue Note Records」）**；**`lookup?id=724031388&entity=song` 回 22 首、22 首全有 previewUrl，軌名與 Discogs 逐軌相符、且每一軌都帶 `(Live)` 尾碼。**⚠ **第 646 條**：**本卷 `724031388` 與 b 組第二卷 `724779664` 是兩個不同的 collectionId，沒有共用。**",
+    "src": "https://itunes.apple.com/lookup?id=724031388&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 的評介點名了製作人的取捨：Ben Sidran 把 Allison 每首之間那些乾巴巴的插科打諢全剪掉了，所以這張碟「沒有真正抓到他現場的氣氛」",
+   "這是他登台第五十年的紀念——而同一篇評介順手列了翻唱過他作品的人：Elvis Costello、Bonnie Raitt、Yardbirds、The Who、Eric Clapton、Van Morrison"
+  ],
+  "sound": "二十二軌的現場盤，錄自倫敦 Pizza Express，製作人 Ben Sidran。三個人：Mose Allison 彈鋼琴兼主唱、Roy Babbington 貝斯、Mark Taylor 鼓（第二卷另加吉他手 Jim Mullen，本卷沒有）。曲目是他的招牌曲單——〈Everybody's Cryin' Mercy〉〈Middle Class White Boy〉〈Your Mind's on Vacation〉這一路，加上 Willie Dixon 的〈Seventh Son〉、〈I Ain't Got Nothing but the Blues〉、〈You Are My Sunshine〉、〈Since I Fell for You〉、〈Trouble in Mind〉等翻唱，收在一分四十三秒的〈Finale〉。二十二軌大多在兩到四分鐘之間，最長的是開場的〈Excursion and Interlude〉七分鐘。Billboard 的評介指出製作人把他每首之間的口白剪掉了。",
+  "keyTracks": [
+   "Everybody's Cryin' Mercy",
+   "Middle Class White Boy",
+   "Ever Since the World Ended",
+   "Seventh Son"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判；而且本卷的紙本與第二卷的紙本正好差九個月，兩卷不能共用。** (1) **同期紙本（階序最上層）**：**Billboard 2001-04-14 p30 的 JAZZ 評介逐字「PRODUCER: Ben Sidran　Blue Note 7243 5 29747 2 6」**——**2001 年 4 月的評介 ＋ 完整目錄號。** ⚠ **依第 1487 條，單一評介不足以壓過 Discogs 原壓群**，**但本張不需要壓——紙本、Discogs、MB、店面四層都指向 2001，沒有衝突。** (2) **Discogs 原壓群**：**歐版 `7956747`（另一個目錄號欄 `Blue Note 529 7472`）／美版 `9367792`／美版宣傳 `15787114` 三筆的 `year` 欄全是 2001。** (3) **MB first-release-date 2001**，唯一一筆 release（GB）也只有年。 (4) **店面**：**Apple `724031388` 的 ℗ 欄逐字「℗ 2001 Blue Note Records」**（⚠ releaseDate `2001-01-01` 是年初佔位日）。 ⚠ ⚠ **(5) 演出年是 2000-01-21／22，比發行早一年多**（來源是第二卷的 Discogs notes，見 facts）——**沒有被寫進任何一層的 `date` 欄，第 1449 條說的「演出日汙染」在本張沒有發生。** ⚠ ⚠ **(6) 與 b 組第二卷的對照**：**兩卷目錄號連號（`…29747 2 6` 與 `…29748 2 5`）、`slice.json` 都寫 2001，但第二卷的紙本評介在 2002-01-26 p77、Apple ℗ 是 2002**——**第 1475 條把第二卷翻成 2002，本卷維持 2001，兩卷差一年。**",
+  "notes": "**覆核策展層：rgMbid `6dd63301`／只建一筆 release（GB，label-info 無目錄號）／掛名 `Mose Allison`（本批 a 組新立、b 組沿用）／年份 2001／22 軌／`Live` 標對 全部成立。**｜⚠ ⚠ **本棒推翻第 1449 條的一句**：**策展層寫本卷「場館與日期三邊都查不到，正文不得編造」**——**場館查得到**：**Billboard 2001-04-14 p30 逐字「recorded at London's Pizza Express」**；**日期也查得到，但要走第二卷的 Discogs notes（2000-01-21／22，錄音師 Andrew Tulloch）**。**正文可以寫「倫敦 Pizza Express」，寫日期時要知道那一層來自第二卷。**｜⚠ ⚠ **編制本棒修正**：**策展層第 1453 條把本卷列在「可寫固定編制（三人）」——三人成立，但要加一句「第二卷是四人，多了吉他手 Jim Mullen」**，**兩卷的正文不得互抄班底。**｜⚠ ⚠ **撞陳列（逐軌核過）**：**(a) 與 c-149 的 `Mose Allison —《Ever Since the World Ended》`(1987) 撞四軌**——〈Ever Since the World Ended〉〈What's Your Movie〉〈Gettin' There〉〈Trouble in Mind〉（策展層第 1448(A)#2 記，本棒以 22 軌逐軌比對覆核成立）；**(b) 與同批 b 組《Volume 2》：22 軌對 17 軌逐軌比完零重疊**，**兩卷各算一張、risk 互指**；⚠ **`chk-prop` 對兩卷會報「同掛名盤名詞元包含」，那是 Volume 拆盤的預期內偽陽性，本棒逐軌核過並存。**｜⚠ ⚠ **軌名撞卡名（本棒重掃，最硬的一種）**：**第 11 軌〈Ever Since the World Ended〉＝他自己在 c-149 的卡名**（第 1181／1192 條第六種盲區，同一位藝人的軌名撞自己的卡名）；**第 13 軌〈Trouble in Mind〉＝ seed `Archie Shepp & Horace Parlan —《Trouble in Mind》`(1980) 與 `Mance Lipscomb —《Trouble in Mind》`(1961) 兩張**。**上架比對與試聽一律帶掛名與 catno `29747`。**｜⚠ **載體**：**MB 一筆與 Discogs 三筆全是 CD**，**本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 重探 RG 層與 release 層都是真 404。替代來源全部低於 600px**：**歐版 `7956747` primary 300×300／美版 `9367792` primary 500×500／宣傳盤 `15787114` 的 `images[0]` 是 secondary**——⚠ **依派工信走 Apple `724031388` 的 `600x600bb` 當備案。** ⚠ **不要自己下載，只登記來源。**｜⚠ ⚠ **試聽本棒查到，採信**：**串流採信 724031388**（22 軌、22 軌全有 previewUrl，五市場一致；⚠ **第 646 條：與第二卷的 `724779664` 是兩個 collectionId，沒有共用**）。｜⚠ **同批葛萊美**：**Billboard 2002-01-19 p94 的 44 屆最佳爵士人聲專輯提名逐字列出本卷**（同一格還有同組的 Kurt Elling《Flirting With Twilight》與 b 組的 Dianne Reeves《The Calling》）——**本批六張碟合計七項提名，正文可以寫本卷入圍。**"
+ },
+ {
+  "key": "desc2:Paul Jackson, Jr.|The Power of the String",
+  "artist": "Paul Jackson, Jr.",
+  "album": "The Power of the String",
+  "facts": [
+   {
+    "f": "release-group `bb550e41-f8e6-48f1-8f31-2d09bfbfb0f4`：title「The Power of the String」、artist-credit `Paul Jackson, Jr.`（`035610f3` Person，disambiguation 逐字「fusion/urban jazz composer, arranger, producer and guitarist」）、first-release-date **2001**（只有年）、Album、secondary-types 空，⚠ **genres 與 tags 兩欄全空**。**轄下只有一筆 release `efa6f417`**（2001 US，CD **11 軌**，**label-info 只有 `Blue Note`、沒有目錄號、無 barcode**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bb550e41-f8e6-48f1-8f31-2d09bfbfb0f4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**完整目錄號、街頭日與逐軌錄音室只有 Discogs 有**：**美版零售 `4603691` 的 catno 逐字 `Blue Note 7243 5 21477 2 4`、barcode 724352147724、`released` 欄逐字 `2001-02-27`**；notes 逐軌列出錄音室——**第 1 軌 Mankind Studios／Bimmer Music Studios／Minor Productions Studios；第 2 軌 Funky Joint Studios；第 3 軌 Mankind／Minor Productions；第 6、7 軌 Hideaway Studios；第 8、9 軌 Mankind；第 10 軌 Mankind ＋ Leap Year Studios；第 11 軌 Mankind ＋ Ameraycan Studios**——**十一軌用了七間錄音室，不是一個班底一次錄完。**同一筆 notes 逐字「Boney James appears courteys of Warner Bros. Records」（⚠ **`courteys` 是盤面自己的拼字**）。",
+    "src": "https://api.discogs.com/releases/4603691"
+   },
+   {
+    "f": "⚠ **樂器欄只有一個人，其餘全是逐軌工程師**（第 1453 條點名要擋的第二處，本棒覆核成立）：**`4603691` 的 credit 欄裡掛樂器的只有 `Paul Jackson Jr. — Guitar, Keyboards, Drum Programming`**；**其餘十一筆是 Dave Rideau（錄音 1、3、8–11／混音 1、3–5、8–11）、Paul Brown（2）、Wayne Linsey（6、7）、Chris Roberts（1、3）、Ronnie Foster（1）、Tim Carmon（10）、Tony Shepperd（10）——全部是逐軌不同的錄音／混音師。****正文不得列樂隊名單。**",
+    "src": "https://api.discogs.com/releases/4603691"
+   },
+   {
+    "f": "⚠ ⚠ **客座只在軌層出現，而且要去讀 `tracklist[].extraartists` 才看得到**（第 1367 條）：**歐版 `2815334` 的逐軌欄逐字——第 5 軌〈You Always Satisfy〉掛 `Deniece Williams — Vocals`、第 8 軌〈You Don't Have To Tell Her〉掛 `Theriot (2) — Keyboards`、第 10 軌〈Inner City Blues〉掛 `Mervyn Warren — Backing Vocals`。****三個人各只上一軌**；**Boney James 只出現在美版 notes 的致謝句裡，連軌層都沒有。**",
+    "src": "https://api.discogs.com/releases/2815334"
+   },
+   {
+    "f": "**紙本兩處，一處是榜、一處是專欄**：**Billboard 2001-03-31 p32 的 `Top Contemporary Jazz Albums` 第 14 名 NEW 進榜，廠牌欄逐字「PAUL JACKSON, JR.　BLUE NOTE 21477 /CAPITOL　THE POWER OF THE STRING」**——⚠ **榜欄用的是壓過的裸數字 `21477`，不是完整目錄號**（第 1250 條）；**2001-04-14 p42 的 Jazz/Blue Notes 頁同期仍有命中。**⚠ **榜名是 `Top Contemporary Jazz Albums` 不是 `Top Jazz Albums`**——**與曲風判定相關（第 1452 條）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-03-31.pdf"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `724521843`（Paul Jackson Jr.《The Power of the String》，**11 軌、11 軌全有 previewUrl**，℗ 逐字「℗ 2001 Blue Note Records」，releaseDate `2001-01-01` 是年初佔位日）。⚠ **jp／fr 兩市場零命中本碟**（回的全是無關的流行盤）——**第 1246 條的反向樣本：這一次是 us 有、jp／fr 沒有。****CAA 依第 1283 條重探：RG 層 404、唯一一筆 release `efa6f417` 的 `/front` 也是 404**，**真 404。**",
+    "src": "https://itunes.apple.com/lookup?id=724521843&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "十一首用了七間錄音室：Mankind、Bimmer Music、Minor Productions、Funky Joint、Hideaway、Leap Year、Ameraycan——每一軌的工程師也不一樣",
+   "盤上掛樂器的只有他自己一個人：吉他、鍵盤、鼓機編寫；Deniece Williams、Mervyn Warren 與 Theriot 各只出現在一首歌的逐軌欄裡"
+  ],
+  "sound": "十一軌，2001 年 2 月 27 日上架。這是一張以吉他手一個人為軸心的碟：Discogs 的 credit 欄裡掛樂器的只有 Paul Jackson, Jr. 自己（吉他、鍵盤、鼓機編寫），其餘掛名全是逐軌不同的錄音與混音工程師——Dave Rideau 負責大半、Paul Brown 管第 2 軌、Wayne Linsey 管第 6 與第 7 軌。十一軌分別在 Mankind、Bimmer Music、Minor Productions、Funky Joint、Hideaway、Leap Year 與 Ameraycan 七間錄音室完成。客座只在軌層出現：Deniece Williams 唱第 5 軌〈You Always Satisfy〉、Theriot 彈第 8 軌的鍵盤、Mervyn Warren 在第 10 軌〈Inner City Blues〉合聲。曲目混了福音（〈On Eagle's Wings〉）、Aretha Franklin 的〈Rock Steady〉與 Marvin Gaye 的〈Inner City Blues〉，收在〈Waltz for Wanda〉。",
+  "keyTracks": [
+   "On Eagle's Wings",
+   "Rock Steady",
+   "Inner City Blues",
+   "Waltz for Wanda"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判，而且拿到了逐字的零售街頭日與新進榜週。** (1) **Discogs 原壓群（第 531 條）**：**美版零售 `4603691` 與 BMG 俱樂部版 `8547754` 的 `released` 欄都逐字 `2001-02-27`**；**歐版 `2815334` 的 `year` 欄 2001。** ⚠ **(2) 一筆年份不同的條目要擋**：**`14994944` 是 `CD, Advance, Album, Promo`、catno 尾碼 `…2 4V`、紙套，`year` 欄是 **2000**」**——**依第 1487 條的補充「`Advance` 宣傳盤只會早於或同於零售盤」，它證明的是「不晚於 2001」，不是首發年**；**卡單取零售年 2001 成立。** (3) **同期紙本**：**Billboard 2001-03-31 p32 的 `Top Contemporary Jazz Albums` 以第 14 名 NEW 進榜**——**回推首度上榜週在 2001 年 3 月中下旬，與 2 月 27 日的街頭日吻合。** (4) **MB first-release-date 2001**（唯一一筆 release 只有年、連目錄號都沒有）。 (5) **店面**：**Apple `724521843` 的 ℗ 欄逐字「℗ 2001 Blue Note Records」**（⚠ releaseDate `2001-01-01` 是年初佔位日，不採）。",
+  "notes": "**覆核策展層：rgMbid `bb550e41`／只建一筆 release（無目錄號、無 barcode）／掛名 `Paul Jackson, Jr.`（沿用 c-153 b 的字串）／年份 2001／11 軌 全部成立。**｜⚠ ⚠ **編制：第 1453 條要擋的第二處，本棒覆核成立並加一層**——**策展層說「客座只出現在軌名的 `feat.`」，實際更精確：三位客座出現在 Discogs 歐版 `2815334` 的 `tracklist[].extraartists` 欄（第 1367 條），各只上一軌**；**Boney James 連軌層都沒有，只在美版 notes 的致謝句裡（盤面拼成 `courteys`）。****正文一律寫「逐軌變動」，不得列樂隊名單，也不得把 Boney James 寫成參與者。**｜⚠ **曲風（第 1452 條）覆核成立**：**Billboard 把本張放進 `Top Contemporary Jazz Albums` 不是 `Top Jazz Albums`**，**Discogs styles 逐字 `Fusion`＋`Jazz-Funk`**，**MB genres／tags 全空**——**仍依判準 1（同掛名的池中先例：c-153 b《Never Alone - Duets》是 `['jazz']`）取 `['jazz']`，不加第二曲風**（第 1268 條「邊緣的都收、都不加第二曲風」）。｜⚠ **第 1250 條**：**Billboard 榜欄的廠牌號逐字 `BLUE NOTE 21477 /CAPITOL` 是壓過的裸數字**，**完整目錄號 `7243 5 21477 2 4` 只有 Discogs 有**；**上架比對要帶完整號。**｜⚠ **軌名撞卡名（本棒重掃）**：**第 4 軌〈Rock Steady〉＝ seed `No Doubt —《Rock Steady》`(2001)**（同年同名、完全無關）；**其餘十軌掃池 0。**｜⚠ **載體**：**Discogs 四筆全是 CD**（零售／歐版／BMG 俱樂部版／紙套宣傳 CD），**MB 那筆也是 CD**——**本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 重探 RG 層與 release 層都是真 404。替代來源**：**BMG 俱樂部版 `8547754` 的 `images[0]` 是 primary 600×592，notes 逐字「Totally identical to commercially released CD, but this is manufactured by BMG for their club」——藝術與零售盤相同，可用**；**歐版 `2815334`（8 圖）的 primary 只有 500×500、美版零售 `4603691` 的 primary 只有 425×418、宣傳盤 `14994944` 的 primary 是 600×450 的紙套照**——⚠ **三者都不理想。**→ **首選 `8547754`（600×592），備案走 Apple `724521843` 的 `600x600bb`。** ⚠ **不要自己下載，只登記來源。**｜⚠ **店面的市場分布**：**us 命中、jp／fr 零命中**——**第 1246／1284 條的反向樣本，記錄備查。**"
+ },
+ {
+  "key": "desc2:Prysm|On Tour",
+  "artist": "Prysm",
+  "album": "On Tour",
+  "facts": [
+   {
+    "f": "release-group `b3486850-21a0-4dba-b4d0-7d26aebab41b`：title「On Tour」、artist-credit `Prysm`（`94afe824` **Group**）、**first-release-date 2001-02-20（到日）**、primary-type Album、**secondary-types `[\"Live\"]` ✓ 標對了**，⚠ **genres 與 tags 兩欄全空**。**轄下只有一筆 release `7deea067`**（**2001-02-20 FR**，CD **9 軌**，`Blue Note`，**label-info 沒有目錄號**，barcode 724353157524）——**首發地是法國。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b3486850-21a0-4dba-b4d0-7d26aebab41b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**完整目錄號只有 Discogs 有**：**歐版 `5137187` 的 catno 逐字 `Blue Note 7243 531575 2 4`、barcode 逐字「7 24353 15752 4」**，notes 逐字只有一句——**「On back cover: Recorded live.」**。⚠ **場館與日期在任何一層都查不到**（策展層第 1449 條的結論，本棒以 Discogs、MB、Apple、Billboard 四層覆核成立）——**正文不得編造。**",
+    "src": "https://api.discogs.com/releases/5137187"
+   },
+   {
+    "f": "**編制是乾淨的固定三人**：**Pierre de Bethmann 鋼琴、Christophe Wallemme 貝斯、Benjamin Henocq 鼓**（Discogs `5137187` 的 credit 欄只有這三筆，沒有軌號、沒有客座）。⚠ **這三個人就是 Prysm 這個團的全部**——**團名掛名（Group）而不是領班掛名，依第 1131 條不得拆成個人。**",
+    "src": "https://api.discogs.com/releases/5137187"
+   },
+   {
+    "f": "⚠ ⚠ **試聽本棒救回來了，但店面把盤名改掉了**（第 1246／1284 條「字串要換」的第四種形）：**`search` 五個市場（us／jp／gb／fr／dk）查「Prysm On Tour」全部零命中**、**`lookup?upc=724353157524` 也零命中**；**改用探測層留下的 collectionId 直接 `lookup?id=695809744` 才命中——條目名逐字只有一個字 `Live`（不是 `On Tour`），artistName `Prysm`，9 軌，℗ 欄逐字「℗ 2001 Capitol Music une division de Parlophone Music France」，releaseDate `2003-02-28`。**⚠ **`lookup?id=695809744&entity=song` 回 9 首、9 首全有 previewUrl，軌名與 Discogs 逐軌相符、而且每一軌都帶 `(Live)` 尾碼**：Secret World／Extension／Temps Dense／Voice of Angels／The Way／Suspended Time／Reflection／Patience／Un Des Sens。",
+    "src": "https://itunes.apple.com/lookup?id=695809744&country=jp&entity=song"
+   },
+   {
+    "f": "⚠ **紙本零命中**：**`billboard-bn-2001-ocr.txt.gz` 查 `Prysm` 回 0 頁**——**法國本土盤不上美國榜，與 b 組《New Moods - New Sounds》（芬蘭）、《My Lullaby》（波蘭）同一種情形。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-02-24.pdf"
+   },
+   {
+    "f": "⚠ **Discogs 的軌號欄本身有洞**：**`5137187` 的 tracklist 裡第 2 軌〈Extension〉與第 7 軌〈Reflection〉的 `position` 欄是空的**（曲名與時長都在，只有編號沒填）——**九軌的順序要靠 Apple 那一份補齊。****CAA 依第 1283 條重探：RG 層 404、唯一一筆 release `7deea067` 的 `/front` 也是 404**，**真 404。**",
+    "src": "https://coverartarchive.org/release-group/b3486850-21a0-4dba-b4d0-7d26aebab41b/front"
+   }
+  ],
+  "hookCandidates": [
+   "九首裡有八首是他們自己前兩張錄音室盤上的曲子——五首來自 1998 年的《Second Rhythm》、三首來自 1995 年的同名首作；只有〈Voice of Angels〉是新的",
+   "店面把這張碟改名了：Apple 上的條目名只有一個字「Live」，盤名〈On Tour〉查不到，九軌的軌名倒是每一首都帶著 (Live)"
+  ],
+  "sound": "九軌的現場盤，背標上只印了兩個字「Recorded live.」，場館與日期在任何一層都查不到。Prysm 是三個人的固定編制：Pierre de Bethmann 鋼琴、Christophe Wallemme 貝斯、Benjamin Henocq 鼓。九首裡八首取自他們自己的前兩張錄音室盤——〈Secret World〉〈Extension〉〈Temps dense〉〈The Way〉〈Suspended Time〉來自 1998 年的《Second Rhythm》，〈Reflection〉〈Patience〉〈Un des sens〉來自 1995 年的同名首作——只有〈Voice of Angels〉是這張碟才有的。曲長全面拉開：〈Un des sens〉十一分半、〈Reflection〉近十一分，錄音室版本大多在五到七分鐘。2001 年 2 月 20 日在法國首發。",
+  "keyTracks": [
+   "Voice of Angels",
+   "Reflection",
+   "Un des sens",
+   "Temps dense"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判，而且 MB 自己就有到日的首發日。** (1) **MB first-release-date `2001-02-20`（到日）**，唯一一筆 release（FR）的 `date` 欄同值。 (2) **Discogs 原壓群**：**歐版 `5137187` 的 `year` 欄 2001**（**本張在 Discogs 上只有這一筆，是本組最單薄的一張**）。 (3) **店面**：**Apple `695809744` 的 ℗ 欄逐字「℗ 2001 Capitol Music une division de Parlophone Music France」**——**℗ 年是 2001 ✓**；⚠ ⚠ **但它的 releaseDate 是 `2003-02-28`**——**第 484 條的第三種形（店面上架日），策展層第 1447 條已把本張列為這一型的樣本，本棒覆核成立**，**正文一律不得引用 2003。** ⚠ **(4) 紙本零命中**：**`billboard-bn-2001-ocr.txt.gz` 查 `Prysm` 0 頁。** → **年份靠 MB 到日的 frd ＋ 單筆 Discogs ＋ 店面 ℗ 三層，其中 MB 的到日日期是最硬的一層。**",
+  "notes": "**覆核策展層：rgMbid `b3486850`／只建一筆 release（FR，label-info 無目錄號）／團名掛名 `Prysm`（Group，依第 1131 條不拆）／年份 2001／9 軌／`Live` 標對／固定三人編制 全部成立。**｜⚠ ⚠ **撞陳列，本組最重的一處（第 738／859 條，逐軌核過）**：**九軌裡八軌與池中兩張前作重疊**——**〈Secret World〉〈Extension〉〈Temps dense〉〈The Way〉〈Suspended Time〉來自 c-154 的《Second Rhythm》(1998)**；**〈Reflection〉〈Patience〉〈Un des sens〉來自 c-152 的《Prysm》(1995)**；**只有〈Voice of Angels〉是新的。****收的理由是「現場 vs 錄音室」**：**MB 標 `Live`、Discogs 背標逐字 `Recorded live.`、Apple 九軌的軌名全帶 `(Live)`**——**三層一致，形狀與 c-155 b 那張翻唱整張專輯的碟相同，差別在 Prysm 翻的是自己的碟。****三卡 risk 必須互指，正文不得把現場版寫成錄音室版。**｜⚠ **軌名撞卡名（本棒重掃）**：**〈Extension〉＝ seed 與 c-140 的 `George Braith —《Extension》`(1967)**、**〈Reflection〉＝ seed 與 c-129 的 `AKA —《Reflection》`(1971)**、**〈Patience〉＝ seed `Peter Hammill —《Patience》`(1983)／`Sondre Lerche —《Patience》`(2020)**、**〈The Way〉＝ seed `Buzzcocks —《The Way》`(2014)**——**四處全是同名不同碟；上架比對與試聽一律帶掛名 `Prysm` 與 catno `531575`。**｜⚠ **Discogs 的軌號欄有兩格是空的**（第 2、7 軌），**九軌順序以 Apple 那一份為準。**｜⚠ **載體**：**MB 一筆與 Discogs 一筆都是 CD**——**本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 重探 RG 層與 release 層都是真 404。替代來源不足**：**Discogs 只有 `5137187` 一筆，1 圖，`images[0]` 雖是 primary 但只有 225×225**——**遠低於 600。**→ ⚠ **依派工信走 Apple `695809744` 的 `600x600bb` 當備案。** ⚠ **不要自己下載，只登記來源。**｜⚠ ⚠ **試聽本棒救回，採信**：**串流採信 695809744**（9 軌、9 軌全有 previewUrl；⚠ **三種查法裡只有「直接 `lookup?id=`」有效——`search` 五市場與 `lookup?upc=` 都零命中，原因是店面把盤名改成了 `Live`**，**這是第 1246／1284 條「字串要換」的新樣本**）。"
+ },
+ {
+  "key": "desc2:Stefon Harris & Jacky Terrasson|Kindred",
+  "artist": "Stefon Harris & Jacky Terrasson",
+  "album": "Kindred",
+  "facts": [
+   {
+    "f": "release-group `e36c3eb0-f1a9-3dcc-817a-8010a3de224c`：title「Kindred」、**artist-credit 是兩個 Person 串接：`Stefon Harris`（`a18b2895`）＋ `Jacky Terrasson`（`be3142ae`）**、**first-release-date 2001-09-11（到日）**、Album、secondary-types 空，⚠ **genres 與 tags 兩欄全空**。**轄下只有一筆 release `b1b93933`**（2001-09-11 US，CD **13 軌**，`Blue Note`，**label-info 沒有目錄號**，barcode 724353186821）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e36c3eb0-f1a9-3dcc-817a-8010a3de224c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**完整目錄號與場次只有 Discogs 有**：**歐版 `5467574` 的 catno 逐字 `Blue Note 7243 5 31868 2 1`**，notes 逐字「**Recorded Jan 10 & 11, 2001 at Avatar Studios, NYC**」——**錄音在 2001 年 1 月，發行在同年 9 月 11 日，差八個月。**",
+    "src": "https://api.discogs.com/releases/5467574"
+   },
+   {
+    "f": "⚠ **編制：兩位領班貫穿，節奏組逐軌變動，而且有五軌是純二重奏**（第 1453 條說「六軌是純二重奏」，**本棒實算是五軌**）：**Stefon Harris 顫音琴與馬林巴、Jacky Terrasson 鋼琴，兩人並列製作**；**Tarus Mateen 貝斯 1–4、6–8、10**；**Terreon Gully 鼓 2–4、6、7、10**；**Idris Muhammad 鼓只有 1、8 兩軌**。→ **沒有任何節奏組落在第 5、9、11、12、13 軌上，那五軌是 Harris 與 Terrasson 的二重奏。**（⚠ **Discogs 的 Mateen 軌號欄逐字寫成 `1 o 4`，是 `1 to 4` 的漏字。**）",
+    "src": "https://api.discogs.com/releases/5467574"
+   },
+   {
+    "f": "⚠ ⚠ **紙本把這張碟的來歷寫清楚了**：**Billboard 2001-09-29 p34 的 Jazz Notes 逐字「Some of jazz's finest young musicians are featured on two recent Blue Note releases, Black Stars by pianist Jason Moran and Kindred by vibraphonist Stefon Harris and pianist Jacky Terrasson (**both released Sept. 11**).」**，同段接著逐字「**On Kindred, Harris, 28, and Terrasson, 35, duet on a handful of standards and original compositions; the project was initiated when each musician unknowingly professed his admiration for the other to label president Bruce Lundvall**」——**街頭日、兩人當時的年齡、以及「兩個人各自跟 Bruce Lundvall 稱讚對方、於是被湊成一張碟」的緣起，全在這一段。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-09-29.pdf"
+   },
+   {
+    "f": "⚠ **同一段紙本同時是 b 組《Black Stars》的街頭日來源**——**「both released Sept. 11」**：**本批兩張碟同一天上架，而且被寫在同一篇專欄裡。**⚠ **那一天是 2001 年 9 月 11 日。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-09-29.pdf"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `724773568`——⚠ **artistName 逐字是「Jacky Terrasson & Stefon Harris」（順序與 MB RG 的 `Stefon Harris & Jacky Terrasson` 相反）**，13 軌，℗ 欄逐字「A Capitol Records Release; ℗ 2001 Capitol Records, LLC」（**不是 Blue Note**），releaseDate `2001-01-01` 是年初佔位日。**`lookup?id=724773568&entity=song` 回 13 首、13 首全有 previewUrl，軌名與 Discogs 逐軌相符。****CAA release-group 層重探回 200**，封面不缺。",
+    "src": "https://itunes.apple.com/lookup?id=724773568&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "這張碟是唱片公司總裁湊出來的：Billboard 寫兩個人各自在 Bruce Lundvall 面前稱讚過對方，卻都不知道對方也說了同樣的話",
+   "十三軌裡有五軌是純二重奏——顫音琴配鋼琴，沒有貝斯也沒有鼓；剩下八軌的節奏組還分成兩組鼓手，Idris Muhammad 只打頭尾那兩首"
+  ],
+  "sound": "十三軌，2001 年 1 月 10 至 11 日在紐約 Avatar Studios 錄音，同年 9 月 11 日上架。Stefon Harris 的顫音琴與馬林巴、Jacky Terrasson 的鋼琴從頭到尾，兩人並列製作；節奏組逐軌進出：Tarus Mateen 的貝斯在第 1–4、6–8、10 軌，Terreon Gully 的鼓在第 2–4、6、7、10 軌，Idris Muhammad 的鼓只有第 1 與第 8 兩軌——第 5、9、11、12、13 這五軌沒有任何節奏組，是純粹的二重奏。曲目一半是標準曲（〈My Foolish Heart〉〈Summertime〉〈What Is This Thing Called Love〉〈Never Let Me Go〉〈Body & Soul〉）、一半是兩人的原創（〈Tank's Tune〉〈Déjà〉〈Titi Boom〉〈Rat Entrance〉〈Rat Race〉〈Shané〉），另收 Randy Weston 的〈Little Niles〉與 Elmo Hope 的〈John's Abbey〉。發行當時 Harris 二十八歲、Terrasson 三十五歲。",
+  "keyTracks": [
+   "Summertime",
+   "Little Niles",
+   "Body & Soul",
+   "Rat Race"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判，而且是本組證據最齊的一張：MB 到日、紙本逐字街頭日、Discogs、店面四層全部閉合。** (1) **同期紙本（階序最上層，而且是發行公告不是評介）**：**Billboard 2001-09-29 p34 逐字「(both released Sept. 11)」**——**符合第 1487 條對「紙本要壓過 Discogs」的門檻。** (2) **MB first-release-date `2001-09-11`（到日）**，唯一一筆 release 的 `date` 欄同值——**與紙本逐日相符。** (3) **Discogs 原壓群**：**歐版 `5467574`（catno `7243 5 31868 2 1`）與美版 `11660253` 兩筆的 `year` 欄都是 2001**，**`5467574` 的 notes 逐字把錄音日寫成 2001-01-10／11**（**錄音也在同年，沒有抄錄音年的空間**）。 (4) **店面**：**Apple `724773568`**，⚠ **℗ 欄逐字「A Capitol Records Release; ℗ 2001 Capitol Records, LLC」——是 Capitol 不是 Blue Note**（**第 1451 條說的「℗ 欄不是 Blue Note」在本張成立，但 (戊) 前置閘看的是零售盤廠牌欄，Discogs 兩筆與 MB 都是 Blue Note 本體，過閘**）；⚠ **releaseDate `2001-01-01` 是年初佔位日，不採。**",
+  "notes": "**覆核策展層：rgMbid `e36c3eb0`／只建一筆 release（無目錄號）／聯名掛名 `Stefon Harris & Jacky Terrasson`（照 MB RG 的 artist-credit 順序）／年份 2001／13 軌 全部成立。**｜⚠ ⚠ **編制本棒修正一個數字**：**策展層第 1453 條寫「六軌是純二重奏」，逐軌實算是五軌（第 5、9、11、12、13 軌）**——**寫作層要用五。**兩位鼓手的分工也要寫準：**Terreon Gully 六軌、Idris Muhammad 只有第 1 與第 8 軌。**｜⚠ **掛名順序三邊不一致**：**MB RG `Stefon Harris & Jacky Terrasson`／Apple `Jacky Terrasson & Stefon Harris`／Billboard 行文 `Stefon Harris and pianist Jacky Terrasson`**——**依 MB RG 立卡，Apple 的倒序只是店面寫法，不得回頭改 `artist`（第 528／707／709／865 條）。**｜⚠ ⚠ **撞陳列與同批交叉（逐軌核過）**：**(a) 同組 `Jacky Terrasson —《À Paris》`：Terrasson 是那張的領班、Stefon Harris 在那張只敲第 14 軌馬林巴**——**兩卡 risk 互指。** **(b) 同組 `Rodney Jones —《Soul Manifesto》`：`Idris Muhammad` 是那張的全程鼓手，在本張只打兩軌**——**兩卡 risk 互指。** **(c) b 組 `Joe Lovano —《Flights of Fancy》`：`Idris Muhammad` 也在那張的第一組三重奏裡**——**本批三張碟共用他一個人。** **(d) b 組 `Greg Osby —《Inner Circle》`：`Stefon Harris` 與 `Tarus Mateen` 都在那張的五重奏裡**；**b 組 `Jason Moran —《Black Stars》`：`Tarus Mateen` 是那張的貝斯手，而且與本張同一天（2001-09-11）發行、被寫在同一篇 Billboard 專欄裡**——**兩卡 risk 必須互指。**｜⚠ **軌名撞卡名（本棒重掃，四處）**：**第 12 軌〈Little Niles〉＝ seed `Randy Weston —《Little Niles》`(1958)——原作者的碟在池中**（策展層第 1448(B) 條已記）；**第 8 軌〈Never Let Me Go〉＝ seed 與 c-139 的 `Stanley Turrentine —《Never Let Me Go》`(1963)、另撞 `Placebo —《Never Let Me Go》`(2022)**；**第 3 軌〈Summertime〉＝ seed `MFSB —《Summertime》`(1976)**；**第 5 軌〈What Is This Thing Called Love〉＝ seed `Richie Beirach Trio —《What Is This Thing Called Love?》`(1999)**。**上架比對一律帶聯名掛名與 catno `31868`。**｜⚠ **載體**：**MB 一筆與 Discogs 兩筆全是 CD**——**本棒未查到黑膠。**｜**封面不缺**：CAA RG 層重探 200；⚠ **備援用 Discogs 歐版 `5467574`（3 圖，`images[0]` 是 primary 600×591）或美版 `11660253`（primary 600×589）。**｜⚠ **同批葛萊美**：**Billboard 2002-01-19 p94 的 44 屆「最佳爵士器樂專輯（個人或團體）」提名逐字列出本張**（同一格還有同組的 Pat Martino《Live at Yoshi's》）——**本批六張碟合計七項提名，正文可以寫本張入圍。**"
+ },
+ {
+  "key": "desc2:Rodney Jones|Soul Manifesto",
+  "artist": "Rodney Jones",
+  "album": "Soul Manifesto",
+  "facts": [
+   {
+    "f": "release-group `2743228b-a346-375f-af68-6545ec7a53c2`：title「Soul Manifesto」、artist-credit `Rodney Jones`（`95242ba1` Person）、**first-release-date 2001-08-27（到日）**、Album、secondary-types 空，⚠ **genres 與 tags 兩欄全空**。**轄下只有一筆 release `02e36970`**（2001-08-27 US，CD **9 軌**，`Blue Note`，⚠ **catno 欄是裸數字 `30499`**，barcode 724353049928）——**第 1250 條：裸數字不能拿去反查，完整號是 `72435 30499 2 8`。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2743228b-a346-375f-af68-6545ec7a53c2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ ⚠ **本棒推翻策展層第 1453 條「編制要靠兩個來源拼起來」的說法——Discogs 上就有完整的六人編制，而且帶軌號，只是策展層只核了 9 軌那一筆**（第 1281 條「換版再查」的標準樣本）：**歐版 `3076778`、美版宣傳 `12689136`、BMG 俱樂部版 `14798062` 三筆的 credit 欄逐字都有六個人——`Rodney Jones — Guitar, Arranged By`／`Lonnie Smith — Organ`／`Idris Muhammad — Drums`／**`Maceo Parker — Alto Saxophone` 軌號逐字 `1, 2 (First Sax Solo], 5, 9`****／**`Arthur Blythe — Alto Saxophone` 軌號 `2 to 4, 6 to 8`****／**`Lonnie Plaxico — Bass` 軌號 `1, 2, 5, 9`**。**策展層核的 `16222277` 是把過場曲併進主軌的 9 軌版，那一筆的 credit 欄確實只有三個人。**",
+    "src": "https://api.discogs.com/releases/3076778"
+   },
+   {
+    "f": "⚠ ⚠ **同一張碟有 12 軌與 9 軌兩種軌目切分**（第 609／1135 條）：**歐版 `3076778`／美版宣傳 `12689136`／BMG 版 `14798062` 都是 12 軌**——**把三段過場曲〈Wake Up Call (Interlude)〉〈Roll Call (Interlude)〉〈Last Call (Interlude)〉各算一軌**；**美版零售 `16222277` 是 9 軌**——**把過場併進前一首，曲名寫成〈Soul Makossa. Wake Up Call (Interlude)〉〈Soul Manifesto. Roll Call (Interlude)〉〈Groove Bone, Part 2. Last Call (Interlude)〉。****MB 與 Apple 都取 9 軌。**",
+    "src": "https://api.discogs.com/releases/16222277"
+   },
+   {
+    "f": "**場次**：**三筆條目的 notes 逐字「Recorded January 2001 at Sound On Sound Studios, NYC」**（⚠ **美版宣傳盤 `12689136` 把它拼成 `Aound On Sound Studios`**）。錄音／混音 Peter Darmi、助理 Bart Migal、母帶 Michael Dreyer，內頁 Peter Costello 與 Jones 各寫一段。",
+    "src": "https://api.discogs.com/releases/14798062"
+   },
+   {
+    "f": "⚠ ⚠ **紙本獨立驗證了六人編制，而且給了街頭日**：**Billboard 2001-09-01 p42 的 Jazz Notes 逐字「Jones... brings his experiences to bear on Soul Manifesto (**Blue Note, Aug. 28**), a combination of jazz sensibility and old-time funk grooves. Joined by a band that bridges the gap between the older and younger guard—with saxophonists Maceo Parker and Arthur Blythe, organist Dr. Lonnie Smith, bassist Lonnie Plaxico, and drummer Idris Muhammad—Jones' Soul Manifesto is steeped deep in improvisational camaraderie.」**，同篇還引 Jones 自己的話逐字「that is caught, not taught」。**更早一處**：**2001-05-12 p20 的錄音室照片說明逐字「Guitarist Rodney Jones recently gathered some of his favorite musicians at the Sound on Sound Studio in New York to lay down some tracks for Soul Manifesto... Pictured, from left, are Lonnie Plaxico, Maceo Parker, Jones, Idris Muhammad, Lonnie Smith, and Arthur Blythe.」**——**六個人的名字在錄音期間就見報了。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2001/BB-2001-09-01.pdf"
+   },
+   {
+    "f": "店面：Apple `search` us 命中 `724454921`（Rodney Jones《Soul Manifesto》，**9 軌、9 軌全有 previewUrl**，**releaseDate 逐字 `2001-08-27`＝真日期**，℗ 欄逐字「A Blue Note Records Release; ℗ 2001 UMG Recordings, Inc.」）。⚠ **同一次查詢還回了 `1438361343`《Soul Manifesto: Live! (Recorded Live at Smoke Jazz & Supper Club)》(2003, Savant)**——**那是兩年後的另一張現場盤，不是本碟**（第 528／707／709 條的同形，**上架比對必須帶年份與廠牌**）。**CAA 依第 1283 條重探：RG 層 404、唯一一筆 release `02e36970` 的 `/front` 也是 404**，**真 404。**",
+    "src": "https://itunes.apple.com/lookup?id=724454921&country=us&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "Billboard 在錄音當下就登了一張錄音室合照：由左至右 Lonnie Plaxico、Maceo Parker、Jones、Idris Muhammad、Dr. Lonnie Smith、Arthur Blythe——六個人的名字比碟子早四個月見報",
+   "兩位中音薩克斯風手是分開錄的：Maceo Parker 只上第 1、2、5、9 軌，Arthur Blythe 接第 2 到第 4 與第 6 到第 8 軌，只有第 2 軌〈Soul Makossa〉兩人同台"
+  ],
+  "sound": "2001 年 1 月在紐約 Sound On Sound Studios 錄的碟，同年 8 月下旬上架。六個人：Rodney Jones 吉他兼編曲與製作、Dr. Lonnie Smith 管風琴、Idris Muhammad 鼓貫穿全碟；兩位中音薩克斯風手分軌——Maceo Parker 在第 1、2、5、9 軌，Arthur Blythe 在第 2 到 4 與 6 到 8 軌，只有第 2 軌兩人同台；Lonnie Plaxico 的貝斯在第 1、2、5、9 軌。曲目以 Jones 自己的曲為主，開場與收尾是〈Groove Bone〉的上下兩段，中間夾三段過場曲；翻唱則有 Manu Dibango 的〈Soul Makossa〉、Bill Withers 的〈Ain't No Sunshine〉與 Mal Waldron 的〈Soul Eyes〉。歐版把過場算三軌、美版零售盤把它們併進主軌，因此同一張碟有 12 軌與 9 軌兩種算法。",
+  "keyTracks": [
+   "Soul Makossa",
+   "Soul Manifesto",
+   "Ain't No Sunshine",
+   "Soul Eyes"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2001 成立，本層未改判；街頭日有一天的出入，要寫清楚。** (1) **同期紙本（發行公告）**：**Billboard 2001-09-01 p42 逐字「Soul Manifesto (Blue Note, **Aug. 28**)」**。 (2) **MB first-release-date `2001-08-27`（到日）**，唯一一筆 release 的 `date` 欄同值。 (3) **店面**：**Apple `724454921` 的 releaseDate 逐字 `2001-08-27`＝真日期（不是年初佔位日）**，℗ 欄逐字「A Blue Note Records Release; ℗ 2001 UMG Recordings, Inc.」。 ⚠ ⚠ **(1) 與 (2)(3) 差一天**：**紙本寫 8 月 28 日（星期二，美國唱片業的標準上架日）、MB 與 Apple 寫 8 月 27 日（星期一）**——**兩說並陳，正文寫「2001 年 8 月下旬」最安全；若要寫日，寫紙本的 8 月 28 日並註明另有 8 月 27 日一說。** (4) **Discogs 原壓群**：**歐版 `3076778`／美版宣傳 `12689136`／BMG 俱樂部版 `14798062`／美版零售 `16222277` 四筆的 `year` 欄全是 2001**，**三筆的 notes 逐字把錄音寫成 2001 年 1 月**——**錄音與發行同年。** (5) **更早的旁證**：**Billboard 2001-05-12 p20 的錄音室照片說明把本碟寫成「an upcoming disc」**——**五月時還沒出，與 8 月底的街頭日一致。**",
+  "notes": "**覆核策展層：rgMbid `2743228b`／只建一筆 release／掛名 `Rodney Jones`／年份 2001／9 軌 全部成立。**｜⚠ ⚠ **本棒推翻第 1453 條對本張的描述**：**策展層寫「編制要靠兩個來源拼起來——Discogs `16222277` 只有三個人，Maceo Parker／Arthur Blythe／Lonnie Plaxico 出自 Billboard 本文」。****實際上 Discogs 歐版 `3076778`、美版宣傳 `12689136`、BMG 版 `14798062` 三筆的 credit 欄就有完整六人、而且帶軌號**——**策展層只核了 9 軌那一筆（`16222277`），那一筆確實只有三個人。****這是第 1281 條（credit 空白只代表那一版的條目空白，換版再查）在本線的第 N 次應驗。****寫作層可以直接寫六人、可以寫軌號，紙本只是第二層旁證。**｜⚠ ⚠ **軌數兩種切分**：**12 軌版（歐版與兩張俱樂部／宣傳版，三段 Interlude 各算一軌）vs 9 軌版（美版零售、MB、Apple，過場併進主軌）**——**卡單取 9 軌成立**，**但正文若提到「三段過場曲」要知道它們在歐版上是獨立軌。**｜⚠ ⚠ **軌名撞卡名，本棒新查到一處撞 apex 王牌（策展層沒記）**：**第 2 軌〈Soul Makossa〉＝ seed `Manu Dibango —《Soul Makossa》`(1973)**，**該卡的欄位逐字帶 `hall`——是王牌卡**（另撞 seed `Lafayette Afro Rock Band —《Soul Makossa》`(1973)）。**本張這一軌就是在翻 Dibango 那首，同曲不同碟。****上架比對、封面選擇與試聽一律帶掛名 `Rodney Jones` 與 catno `30499`，不得共用 Dibango 那張的任何資產。**⚠ **另兩處**：**第 5 軌〈Roll Call (Interlude)〉＝ seed `Hank Mobley —《Roll Call》`(1960)**；**第 10 軌〈Soul Eyes〉＝ `Kandace Springs —《Soul Eyes》`**——⚠ **那張還在 `blue-note-unknown-genre.json` 的 `jazz-missing` 名單裡、沒有接進任何批次，一旦接線就會撞**（策展層第 1448(B) 條已記，本棒覆核成立）。｜⚠ ⚠ **同批人員交叉**：**`Lonnie Plaxico` 是同組《Melange》的領班**（兩卡 risk 互指）；**`Idris Muhammad` 同時在同組《Kindred》（第 1、8 軌）與 b 組《Flights of Fancy》（第一組三重奏）**——**本批三張碟共用他。**｜⚠ **載體**：**MB 一筆與 Discogs 四筆全是 CD**——**本棒未查到黑膠。**｜⚠ ⚠ **缺封面，CAA 重探 RG 層與 release 層都是真 404。替代來源：Discogs 美版宣傳 `12689136`，共 4 圖，`images[0]` 是 `primary`、600×597**（次選 BMG 俱樂部版 `14798062` primary 600×564、美版零售 `16222277` primary 600×513；**歐版 `3076778` 的 primary 只有 477×462，不用**）。⚠ **不要自己下載，只登記來源。**｜⚠ **店面誤配**：**同一次 `search` 回的 `1438361343` 是 2003 年 Savant 的《Soul Manifesto: Live!》**，**不是本碟**——**上架比對要帶年份與廠牌。**"
+ }
+]

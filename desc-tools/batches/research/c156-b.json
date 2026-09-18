@@ -1,0 +1,938 @@
+[
+ {
+  "key": "desc2:Flavio Boltro|Road Runner",
+  "artist": "Flavio Boltro",
+  "album": "Road Runner",
+  "facts": [
+   {
+    "f": "release-group b590d58b 的欄位：title「Road Runner」、artist-credit「Flavio Boltro」（fb7dacde Person／**IT**／1961-05-05）、first-release-date **`1999`**、primary-type Album、secondary-types 空。⚠ **Discogs 全站只有一筆條目：7659190（`France`，`CD, Album`，廠牌欄逐字 `Blue Note`，目錄號 **`523342 2`**，bc `7 24 352 33422 3`）**，**notes 全文只有一行逐字「(p) & (c) 1999 EMI Music France」。** ⚠ **列舉檔給的 `catno` 是 `F: PM 808`，那是 EMI 歐洲的價格代碼不是目錄號**（第 1422 條；**同一欄位在同批《Duo》歐版上是 `Price Code — PM 520 — F`**）——**真正的目錄號是 `523342 2`。**",
+    "src": "https://api.discogs.com/releases/7659190"
+   },
+   {
+    "f": "⚠⚠ **本層修正策展層的編制欄：兩位鼓手盤面標了軌號，兩位貝斯才是沒標的。** **Discogs 7659190 的 credit 欄逐字**：**`Stéphane Huchard — Drums [1 to 4, 6 to 9]` 與 `Paco Sery — Drums, Percussion [5]`**——**Paco Sery 只打第 5 軌一首**；**兩位貝斯（`Pippo Matino — Bass` 與 `Marcello Giuliani — Bass`）確實沒有軌號**，**但 Giuliani 另外掛 `Guitar [9]`。** **其餘標了軌號的還有 `Nantha Kumar — Tabla [6]` 與 `Daniele Scannapieco — Tenor Saxophone [3]`。** **無軌號、九軌全程的是 `Flavio Boltro — Trumpet, Bugle [Buggle], Arranged By`、`Stefano Di Battista — Saxophone`、`Eric Legnini — Piano, Keyboards, Arranged By`、`Louis Winsberg — Guitar`。** **→ 編制欄改成「四人核心＋逐軌客座」，不得寫成「兩位鼓手並列」。**",
+    "src": "https://api.discogs.com/releases/7659190"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 7659190）逐字**：1〈Matteo〉`Flavio Boltro`、2〈Duo〉`Flavio Boltro`＋`Stefano Di Battista`、3〈Little Room〉`Flavio Boltro`、**4〈Flaviosphère〉`Pierre de Bethmann`**、5〈Hey Papa !〉`Eric Legnini`＋`Flavio Boltro`、6〈Vucciria〉`Flavio Boltro`、**7〈Tea In The Sahara〉`Sting`**（**The Police 1983 年《Synchronicity》裡的曲**）、8〈Ajo〉`Flavio Boltro`、**9〈Call〉`Eric Legnini`**。**→ 九軌裡 Boltro 掛名六首（其中兩首合寫），翻的一首是 Sting 的曲。** ⚠ **曲名重音**：**盤面逐字 `Flaviosphère`（帶重音）與 `Hey Papa !`（驚嘆號前有空格）**，**Apple 寫成 `Flaviosphere` 與 `Hey Papa`**——**兩形都要收。**",
+    "src": "https://api.discogs.com/releases/7659190"
+   },
+   {
+    "f": "⚠ **第 9 軌自成一個製作單位。** **Discogs 7659190 的 credit 欄逐字 `Eric Legnini — Executive-Producer [9]`、`Marcello Giuliani — Executive-Producer [9]`、`Seb Kohler — Executive-Producer [9]`，以及 `Eric Legnini — Realization [artistic realisation] [9]`、`Marcello Giuliani — Realization [artistic realisation] [9]`、`Seb Kohler — Realization [artistic realisation]`**——**只有第 9 軌掛了三位執行製作與藝術統籌；全碟的發行製作是 `Nicolas Pflug — Producer [produced for release]`，錄音與混音是 `Mallory Maurice`。** **正文不得把這三位寫成整張的製作人。**",
+    "src": "https://api.discogs.com/releases/7659190"
+   },
+   {
+    "f": "**紙本：1999 與 2000 兩年全零命中。** **`boltro`／`523342`／`road runner` 三種字串都掃過**（第 1245 條），**1999 年 51 期與 2000 年 52 期都沒有一處。** ⚠ **這是可以解釋的**：**本張是 EMI 法國的發行（notes 逐字 `(p) & (c) 1999 EMI Music France`）、Discogs 全站只有法國一筆條目、MB 也只有一筆**——**美國市場沒有上架，Billboard 自然沒有它。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf"
+   },
+   {
+    "f": "⚠⚠ **封面缺：CAA 三次重探確認真 404（第 1283 條）。** **release-group 層連試三次全回 404、唯一那筆 release 7f212a23 的 release 層也是 404。** ⚠⚠ **而且 Discogs 這一側不能用**：**全站唯一的條目 7659190 只有一張圖，型別是 `secondary`、尺寸只有 300×300**——**既不是 `primary`、也低於 600px，兩個條件都不符合。** **→ 替代來源改用 Apple 的 `600x600bb`**：**`lookup?id=695992109` 回的 `artworkUrl100` 逐字是 `https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/49/fc/6c/49fc6c8a-4ecc-6f09-953a-3c278c60bca9/0724352334254_1404x1404_300dpi.jpg/100x100bb.jpg`**——**原圖是 1404×1404 的 300dpi 掃描，把尾段換成 `600x600bb.jpg` 即可取得 600px 版。**",
+    "src": "https://itunes.apple.com/lookup?id=695992109&country=fr&entity=song&limit=50"
+   },
+   {
+    "f": "⚠ **店面（第 254 條）：`search` 的 us 市場零命中，換市場才找得到。** **`search` us 零命中；jp、fr、it 三個市場都命中 695992109**，欄位逐字 `Flavio Boltro — Road Runner`、`trackCount 9`、`releaseDate 1999-01-01`（年初佔位日）、**copyright 逐字 `℗ 1999 Capitol Music une division de Parlophone Music France`**（**與盤面的 `EMI Music France` 同一個法國體系**）；**jp 市場的掛名逐字〈フラヴィオ・ボルトロ〉。** **逐軌核過：九軌名稱與時長（226／334／266／199／336／405／376／219／400 秒）與盤面的九軌一致，全部有 preview。** **→ 第 1246／1284 條「us 查無不等於店面沒有」在本張再次成立。**",
+    "src": "https://itunes.apple.com/search?term=Flavio%20Boltro%20Road%20Runner&country=jp&entity=album&limit=6"
+   },
+   {
+    "f": "⚠ **掛名反查（第 307 條）**：**MB 的同字串實體除了裸人名 fb7dacde 之外，另有四個群組**——`Flavio Boltro Quartet`（a7c0f41b）／`Flavio Boltro 5et`（3634e41b）／`Flavio Boltro BBB Trio`（79722647）／`Fabrizio Bosso & Flavio Boltro Quintet`（7bbf1445）。**本卡用的是裸人名（MB RG credit 逐字 `Flavio Boltro`）**；**日後那四個群組若進池，必須與裸人名分清楚。** ⚠ **另一個要防的字串是團名 `Road Runner`**——**Discogs 上有大量同名的碟與一家同名廠牌，反查一律用「人名 ＋ 目錄號 `523342 2`」。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b590d58b-a592-3ff2-afd4-e5add7d75605&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "唯一一張只在法國上架的 Blue Note：Discogs 全站只有一筆條目，封面到現在連一張夠大的掃描都沒有",
+   "九軌裡翻的那一首是 Sting 的〈Tea in the Sahara〉，而第五軌的鼓換成了 Paco Sery ——全碟只有那一首是他打的"
+  ],
+  "sound": "義大利小號手 Flavio Boltro 在 EMI 法國旗下的 Blue Note 發的九軌，1999 年只在法國上架。核心四人是 Boltro 的小號與柔音號、Stefano Di Battista 的薩克斯、Eric Legnini 的鋼琴與鍵盤、Louis Winsberg 的吉他；貝斯由 Pippo Matino 與 Marcello Giuliani 分擔，鼓幾乎全由 Stéphane Huchard 打——只有第五軌〈Hey Papa !〉換成 Paco Sery。客座各只出現一軌：Nantha Kumar 的塔布拉鼓在〈Vucciria〉、Daniele Scannapieco 的次中音在〈Little Room〉。曲目六首掛 Boltro 的名字，另有 Pierre de Bethmann 的〈Flaviosphère〉、Legnini 的〈Call〉，以及翻自 The Police 的〈Tea in the Sahara〉。編曲掛名只有 Boltro 與 Legnini 兩人，發行製作是 Nicolas Pflug。",
+  "keyTracks": [
+   "Matteo",
+   "Tea in the Sahara",
+   "Vucciria"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1999 成立，本層未改判。** (1) **盤面 ℗©**：**Discogs 7659190 的 notes 全文逐字「(p) & (c) **1999** EMI Music France」。** (2) **MB first-release-date `1999`**，唯一一筆 release 同年。(3) **Discogs 全站只有這一筆條目、`year` 是 1999**——**沒有原壓群可比，但也沒有任何一層指向別的年份。** (4) **盤面 ℗ 的第二個來源**：Apple 695992109 逐字 `℗ 1999 Capitol Music une division de Parlophone Music France`。⚠ **紙本 1999 與 2000 兩年、三種字串全零命中**——**合理：本張只在法國上架，Billboard 不會有。** ⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目**，不存在日版先出的形狀。⚠ **載體：唯一一筆條目是 CD，零黑膠、零卡帶**（本段通則第 1 條逐張查）。**三層一致，取 1999。**",
+  "notes": "**覆核策展層：rgMbid b590d58b／新掛名字串 `Flavio Boltro`（fb7dacde，⚠ MB 同字串另有四個群組實體）／年份 1999／九軌 全部成立。**｜⚠ **本層修正策展層編制欄一處**：策展層寫「兩位貝斯（Pippo Matino／Marcello Giuliani）＋兩位鼓（Stéphane Huchard／Paco Sery），**零逐軌標記**」——**實際上兩位鼓手都標了軌號（Huchard `[1 to 4, 6 to 9]`／Sery `[5]`），沒標的只有兩位貝斯**；**另 `Nantha Kumar — Tabla [6]` 與 `Daniele Scannapieco — Tenor Saxophone [3]` 也都標了。** **→ 編制欄改成「四人核心（Boltro tp／Di Battista sax／Legnini p, kb／Winsberg g）＋兩位貝斯不分軌＋逐軌客座三處」。**｜⚠ **第 9 軌〈Call〉自成一個製作單位（三位執行製作與藝術統籌只掛這一軌）**——**正文不得把他們寫成整張的製作人。**｜⚠ **目錄號**：**列舉檔給的 `F: PM 808` 是 EMI 歐洲的價格代碼、不是目錄號**（第 1422 條，**同欄位在同批《Duo》歐版是 `Price Code — PM 520 — F`**）；**真的目錄號是 `523342 2`。**｜⚠ **撞陳列**：(1) **九軌逐一比對池中卡名，零命中。** (2) ⚠ **盤名 `Road Runner` 在 Discogs 上撞大量同名碟與一家同名廠牌**——**上架比對一律「人名 ＋ 目錄號」。** (3) ⚠ **Paco Sery 與 Stefano Di Battista 在池中另有相關碟**，只寫觀察。｜⚠⚠ **封面缺**：**CAA 三次重探（RG 層 ×3、release 層 ×1）全 404，確認真的沒有**；**Discogs 唯一條目 7659190 只有一張 `secondary` 300×300，不符合「`images[0]` 必須是 `primary`」也低於 600px，不可用。** **→ 替代來源改用 Apple `695992109` 的 `600x600bb`（原圖 1404×1404、300dpi），這是本線第一次用第 1283 條那句「低於 600px 時 Apple 的 600x600bb 可以當備案」的路徑。**｜⚠ **店面：`search` us 零命中，jp／fr／it 三市場才命中**（第 1246／1284 條）——**串流採信 695992109（九軌逐軌時長對得上）。**"
+ },
+ {
+  "key": "desc2:Bob Dorough|Too Much Coffee Man",
+  "artist": "Bob Dorough",
+  "album": "Too Much Coffee Man",
+  "facts": [
+   {
+    "f": "release-group f7979691 的欄位：title「Too Much Coffee Man」、artist-credit「Bob Dorough」、first-release-date **`2000`**、primary-type Album、secondary-types 空。**Discogs 美版零售 3006850（Blue Note `7243 4 99239 2 8`，bc 724349923928）的 `released` 逐字 `2000-04-11`、十二軌。** ⚠ **MB 的 `catalog-number` 欄在本張是空的**（第 1425 條那張表的第 1 列），**目錄號要從 Discogs 補。**",
+    "src": "https://api.discogs.com/releases/3006850"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「三位貝斯、兩位鼓、兩位吉他、三件銅管，零逐軌標記」那一句：盤面逐人都標了軌號，而且十二軌分成三組節奏組。** **Discogs 3006850 的 credit 欄逐字**：**第一組（第 1、7、10 軌）** `Ray Drummond — Bass [1, 7, 10]`＋`Billy Hart — Drums [1, 7, 10]`；**第二組（第 2、3、5、12 軌）** `Steve Gilmore — Bass [2, 3, 5, 12]`＋`Bill Goodwin — Drums, Percussion [2, 3, 5, 12]`；**第三組（第 4、6、8、11 軌）** `Tony Marino — Bass, Electric Bass, Electric Upright Bass [Stick Bass] [4, 6, 8, 11]`＋`Jamey Haddad — Drums, Drums [Hagimi], Percussion [4, 6, 8, 11]`。**→ 三組節奏組各管四軌；第 9 軌兩邊都沒掛，盤面沒有替它列節奏組。**",
+    "src": "https://api.discogs.com/releases/3006850"
+   },
+   {
+    "f": "**其餘客座同樣逐軌標了**：**`Phil Woods — Alto Saxophone [1, 4, 7, 10]`**（**只有四軌**）、`Joe Cohn — Guitar [Solo] [4, 6, 8, 11]`、`Hui Cox — Guitar [6, 12]`、`Craig Kastelnik — Organ [Hammond B3] [5, 6]`、`Mark Holen — Percussion, Congas [1, 5]`；**三件銅管只在第 1、2、5 三軌**——`Ken Brader — Trumpet, Flugelhorn [1, 2, 5]`、`Rick Chamberlain — Trombone [1, 2, 5]`、`Jim Daniels — Trombone [Bass], Tuba [1, 2, 5]`。**無軌號、十二軌全程的只有 `Bob Dorough — Vocals, Piano, Electric Piano, Whistling`。** ⚠ **末軌的和聲逐字 `Craig Kastelnik — Vocals [12]`、`Lois Brownsey — Vocals [12]`、`Pat Flaherty (4) — Vocals [12]`**——**第 1420 條已說那三位是和聲不是編制，本層補上軌號：只有第 12 軌。** **製作逐字 `Bill Goodwin — Producer`（他同時是第二組的鼓手）、工程 `Kent Heckman`。**",
+    "src": "https://api.discogs.com/releases/3006850"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 3006850）逐字**：1〈The Coffee Song (They've Got A Lot Of Coffee In Brazil)〉**`Bob Hilliard`＋`Richard Miles`**、2〈Wake Up Sally, It's Saturday〉Dorough、3〈There's Never Been A Day〉Dorough、4〈I've Got Just About Everything〉Dorough、**5〈Oklahoma Toad〉`Dave Frishberg`**、6〈Too Much Coffee Man〉Dorough、**7〈Fish For Supper〉`Cootie Williams`**、8〈Marilyn, Queen Of Lies〉Dorough＋`Fran Landesman`、9〈Yesterday, I Made You Breakfast〉Dorough＋`Joe Lilly`＋`Noel Stevens`、10〈Where Is The Song?〉Dorough、11〈Love (Webster's Definition)〉Dorough＋`Dan Greenburg`＋`Monte Ghertler`、12〈Late In The Century〉Dorough。**→ 十二軌裡 Dorough 掛名九首（其中三首合寫），翻的三首分別來自 1946 年的流行曲、Dave Frishberg 與 Cootie Williams。**",
+    "src": "https://api.discogs.com/releases/3006850"
+   },
+   {
+    "f": "⚠ **第 5 軌〈Oklahoma Toad〉的作曲者 Dave Frishberg 就是同批第 16 張卡的聯名人。** **同組另有 `Bob Dorough & Dave Frishberg —《Who's on First?》`（2000）**——**兩張同年、同一位歌手、同一條 Bill Goodwin 班底**（**本張的製作人兼第二組鼓手 Bill Goodwin 正是 Frishberg 圈子的常客**）；**逐軌比對：本張十二軌與那張零重疊。** **兩卡 risk 必須互指，上架比對帶目錄號。**",
+    "src": "https://api.discogs.com/releases/3006850"
+   },
+   {
+    "f": "**版本表四筆，全部 CD、全部 2000**：美版零售 3006850、**美版先行宣傳盤 18644311（`7243 4 99239 2 8V`，`format` 帶 `Advance, Album, Promo`）**、美版宣傳 25417801、歐版 29023141。⚠ **零黑膠、零卡帶、零日版、零數位**（本段通則第 1 條逐張查的結果）。⚠ **歐版 29023141 與同批 Jackie McLean《Nature Boy》歐版共用同一組 EMI 歐洲價格代碼字串**（第 1422 條記的 `F: PM 520` 那一類）——**那是價格代碼不是目錄號。**",
+    "src": "https://api.discogs.com/masters/2116969/versions"
+   },
+   {
+    "f": "**紙本：2000 全年零命中，而且有一個明確的誤讀要擋。** **`too much coffee`／`99239`／`bob dorough` 三種字串都掃過**（第 1245 條）：**前兩者零命中**；⚠ **`dorough` 這個字串在 2000 年大量命中的是 Backstreet Boys 的 Howie Dorough，不是本張**（第 1301／1424 條已記過一次，**本層逐條讀完再次確認**）。⚠ **兩張爵士榜全年零命中。** **→ 本張的年份完全靠 Discogs 的 `released` 日期與 MB。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-15.pdf"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724349923928` 四種查法命中同一筆，`Bob Dorough — Too Much Coffee Man`、`trackCount 12`、`℗ 2000 Blue Note Records`；**十二軌與盤面逐軌同名同序、全部有 preview。** **封面 CAA：release-group 層 6 圖 ✓；Discogs 美版 3006850 的 `images[0]` 是 `primary` 600×589，可作備案。**",
+    "src": "https://itunes.apple.com/lookup?upc=724349923928&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌配了三組完全不同的節奏組，各管四首，而 Phil Woods 的中音只出現在其中四軌",
+   "盤名那一首〈Too Much Coffee Man〉只有兩分五十九秒，開場的〈The Coffee Song〉則是 1946 年的老流行曲"
+  ],
+  "sound": "七十六歲的 Bob Dorough 唱歌、彈鋼琴與電鋼琴，還吹口哨——十二軌裡只有他一個人從頭到尾在場。底下換了三組節奏組，各管四首：Ray Drummond 與 Billy Hart 管第 1、7、10 軌，Steve Gilmore 與製作人兼鼓手 Bill Goodwin 管第 2、3、5、12 軌，Tony Marino 與 Jamey Haddad 管第 4、6、8、11 軌。Phil Woods 的中音薩克斯只在四軌，三件銅管（小號、長號、低音長號兼低音號）只在第 1、2、5 軌，Hammond B3 只在第 5、6 軌。曲目九首掛他自己的名字，翻的三首是 1946 年的老流行曲〈The Coffee Song〉、Dave Frishberg 的〈Oklahoma Toad〉與 Cootie Williams 的〈Fish for Supper〉。盤名那一首只有兩分五十九秒，收尾的〈Late in the Century〉加了三個人的和聲。",
+  "keyTracks": [
+   "The Coffee Song (They've Got a Lot of Coffee in Brazil)",
+   "Too Much Coffee Man",
+   "Late in the Century"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **Discogs 美版零售 3006850 的 `released` 欄逐字 `2000-04-11`**（**不是只有 `year`，是完整日期**——第 1415 條：有 `released` 的那種才是可信的層）。(2) **MB first-release-date `2000`。** (3) **Discogs 四筆條目 `year` 全 2000**（美版零售、美版先行宣傳、美版宣傳、歐版）。(4) **盤面 ℗**：Apple 逐字 `℗ 2000 Blue Note Records`。⚠ **紙本 2000 全年、三種字串全零命中**——**而且 `dorough` 的命中絕大多數是 Backstreet Boys 的 Howie Dorough**（第 1301／1424 條）。⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目**，不存在日版先出的形狀。**三層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid f7979691／掛名 `Bob Dorough`（池中 1 張同字串）／年份 2000／十二軌 全部成立。**｜⚠⚠ **本層推翻策展層編制欄那一句**：`risk` 與第 1420(二) 條都寫「三位貝斯、兩位鼓、兩位吉他、三件銅管，**零逐軌標記**」——**實際上 Discogs 3006850 的 credit 欄逐人都標了軌號，而且十二軌明顯分成三組節奏組**（`[1, 7, 10]`／`[2, 3, 5, 12]`／`[4, 6, 8, 11]`），**鼓手是三位不是兩位**（Billy Hart／Bill Goodwin／Jamey Haddad）。**→ 編制欄改成逐軌寫死；`Phil Woods` 只在第 1、4、7、10 四軌，三件銅管只在第 1、2、5 三軌。** ⚠ **第 9 軌盤面沒有列節奏組，正文不得替它補人。**｜⚠ **`Lois Brownsey` 與 `Pat Flaherty (4)` 掛的是 `Vocals [12]`（末軌和聲）**——**第 1420 條的提醒覆核成立，本層補上軌號。**｜⚠ **`Bill Goodwin` 一人兩職（Producer ＋ 第二組的鼓手），正文不得寫成兩個人。**｜⚠ **撞陳列**：(1) ⚠ **第 5 軌〈Oklahoma Toad〉的作曲者 Dave Frishberg ＝ 同批第 16 張卡的聯名人**；**同組另有 `Bob Dorough & Dave Frishberg —《Who's on First?》`（2000）與池中 c-153 b 的 `Bob Dorough —《Right On My Way Home》`**——**三張軌目逐一比對零重疊，三卡 risk 互指、上架帶目錄號。** (2) **軌名撞池中卡名：十二軌逐一比對，零命中。**｜**載體：Discogs 四筆全 CD，零黑膠、零日版。**｜**封面 CAA 有 6 圖，備案 Discogs 3006850 的 primary 600×589；試聽 Apple 十二軌對得上。**"
+ },
+ {
+  "key": "desc2:Dianne Reeves|In the Moment",
+  "artist": "Dianne Reeves",
+  "album": "In the Moment",
+  "facts": [
+   {
+    "f": "release-group a639773c 的欄位：title「In the Moment」、artist-credit「Dianne Reeves」、first-release-date **2000-07-18**、primary-type Album、**secondary-types `[\"Live\"]`**。⚠ **Discogs 七筆條目的盤名逐字都是 `In The Moment / Live In Concert`（帶副題）**，**MB 與卡單用不帶副題的形**——**兩形都要收。** 美版零售 2443132，Blue Note `7243 5 25141 2 0`，bc 724352514120，十一軌。",
+    "src": "https://api.discogs.com/releases/2443132"
+   },
+   {
+    "f": "⚠⚠ **這不是俱樂部現場，是攝影棚裡對著觀眾錄的。** **Discogs 2443132 的 notes 逐字「**Recorded live at Studio Instrument Rentals Sound Stage 1 on January 20 & 21, 2000 in Los Angeles, California** ℗©2000 Capitol Records Inc.」**——**場地是洛杉磯的 SIR 音響棚第一棚、日期是 2000 年 1 月 20、21 兩晚。** **正文不得寫成「在某某爵士俱樂部錄的」。**",
+    "src": "https://api.discogs.com/releases/2443132"
+   },
+   {
+    "f": "**編制：五人巡演班底 ＋ 一位客座，而且五人全部兼和聲。** **Discogs 2443132 的 credit 欄逐字**：`Dianne Reeves — Lead Vocals`、`Otmaro Ruiz — Piano, Synthesizer, Backing Vocals`、`Reginald Veal — Bass, Backing Vocals`、`Romero Lubambo — Guitar`、`Rocky Bryant — Drums, Backing Vocals`、`Munyungo Jackson — Percussion, Backing Vocals`；**客座逐字 `George Duke — Keyboards [Additionnal], Backing Vocals`**（**拼字 `Additionnal` 是盤面原樣**），**他同時是 `Producer`**；⚠ **歐版 9930275 另把他的鋼琴標了軌號，逐字 `George Duke — Piano [4]`**——**第 4 軌〈Triste〉他彈的是鋼琴。** **錄音與混音 `Erik Zobler`、工程 `Wayne Holmes`（他另掛 `Backing Vocals [Additional]`）。**",
+    "src": "https://api.discogs.com/releases/9930275"
+   },
+   {
+    "f": "⚠ **紙本把鼓手的名字印成另一個樣子，兩層打架。** **`BB-2000-06-10` p16 的整篇報導逐字列出班底「(Otmaro Ruiz, piano, synthesizers; Reginald Veal, bass; **Roscoe Bryant**, drums; Romero Lubambo, guitar; and 10-year member Munyungo Jackson, percussion)」**——**紙本寫 `Roscoe Bryant`，盤面七筆條目全部寫 `Rocky Bryant`。** **正文照盤面寫 `Rocky Bryant`。** ⚠ **同一段另給了兩件事**：**標題逐字「Dianne Reeves bets `In the Moment' For 1st U.S. Live Album On Blue Note」（＝她在美國的第一張現場盤）**，**內文逐字「\"In The Moment (Live In Concert),\" is due **July 18**」**——**街頭日與 MB frd 逐日相符。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-06-10.pdf"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 2443132）逐字**：1〈Morning Has Broken〉**`Traditional`**、2〈Afro Blue〉`Mongo Santamaria`＋`Oscar Brown Jr.`、3〈The First Five Chapters〉`Dianne Reeves`＋`Portia Nelson`（後者掛 `Lyrics By`）、4〈Triste〉**`Antonio Carlos Jobim`**、5〈Bridges〉`Milton Nascimento`＋`Fernando Brant`＋`Gene Lees`、6〈Love For Sale〉**`Cole Porter`**、7〈Come In〉`Dianne Reeves`＋`Billy Childs`＋`Diane Louie`、8〈The Best Times (Grandma's Song)〉`Dianne Reeves`、9〈Testify〉`Dianne Reeves`＋`Munyungo Jackson`、10〈Suzanne〉**`Leonard Cohen`**、11〈Mista〉`Dianne Reeves`＋`Terri Lyne Carrington`＋`Carson Parks`。⚠ **版權登記欄也逐軌切開，逐字 `Rights Society — BMI — Tracks 2, 4, 7, 9 to 11` 與 `Rights Society — ASCAP — Tracks 3, 5 to 9, 11`。**",
+    "src": "https://api.discogs.com/releases/2443132"
+   },
+   {
+    "f": "⚠⚠ **與同批 a 組《Bridges》的關係要逐軌講清楚。** **本張第 5 軌逐字就叫〈Bridges〉、第 10 軌〈Suzanne〉、第 9 軌〈Testify〉、第 11 軌〈Mista〉——四首都出現在 1999 年那張錄音室盤《Bridges》上**（那張的第 5、3、8、9 軌）。**但兩張是完全不同的錄音**：**本張是 2000 年 1 月的現場、班底是五人巡演團**；**《Bridges》是 1999 年的錄音室盤、十九個樂手逐軌換人。** **時長也不同**（例：〈Testify〉4:39 對 5:58、〈Mista〉6:50 對 6:00）。**→ 四軌同名不同錄音，兩卡 risk 必須互指、上架帶目錄號 `33060` 與 `25141`，封面與試聽資產不得共用。**",
+    "src": "https://api.discogs.com/releases/2443132"
+   },
+   {
+    "f": "**紙本：整篇報導 ＋ SPOTLIGHT 評介 ＋ 榜位。** **`BB-2000-07-29` p22 的 `SPOTLIGHT` 欄逐字「DIANNE REEVES **In The Moment/Live In Concert** PRODUCER: **George Duke** Blue Note Records **7243 5 25141**」**，內文逐字「Traditionally, jazz has always been about the creation of music in the moment. In the studio, an artist can uncover and explore ... On the George Duke-produced \"In The Moment,\" singer/songwriter Dianne Reeves is not just ...」；**`BB-2000-08-05` p55 起在 `Top Jazz Albums` 連續在榜**（同頁的命中關鍵字欄同時掃到本批另外五張：`25271` Tonic／`25450` Charlie Hunter／`brighter day`／`for the love`／`medeski`）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-07-29.pdf"
+   },
+   {
+    "f": "⚠ **店面（第 254 條）：us／jp／fr 三市場 `search` 全零，換市場與換查法才撈回來。** **`search` 的 `gb` 與 `dk` 兩個市場命中 738332243**（欄位逐字 `Dianne Reeves — In the Moment: Live In Concert`、`trackCount 11`、`releaseDate 2000-01-01`、`℗ 2000 Blue Note Records`）；**`lookup?upc=724352514120` 在 us 與 jp 兩市場也都命中同一筆。** **逐軌核過：十一軌名稱與順序與盤面一致（Apple 在每軌後面加 `(Live)`）、時長逐軌吻合、全部有 preview。** ⚠ **`apple-candidates.md` 給的另兩個候選（`724775039`《The Calling》2001、`724937214`《Bridges》1999）都是別碟**（第 528／707／709 條）；**`724937214` 正是同批 a 組《Bridges》的 collectionId，兩卡不得共用。** **→ 串流採信 738332243。**",
+    "src": "https://itunes.apple.com/lookup?id=738332243&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "她在美國的第一張現場盤，卻不是在俱樂部錄的：2000 年 1 月 20、21 兩晚在洛杉磯一間音響器材公司的攝影棚裡對著觀眾唱",
+   "台上五個人，除了吉他手以外全都兼和聲——製作人 George Duke 只在第四軌〈Triste〉坐上鋼琴"
+  ],
+  "sound": "十一軌的現場盤，2000 年 1 月 20、21 兩晚在洛杉磯 Studio Instrument Rentals 的第一號音響棚錄的——不是俱樂部。台上是她的巡演五人團：Otmaro Ruiz 的鋼琴與合成器、Reginald Veal 的貝斯、Romero Lubambo 的吉他、Rocky Bryant 的鼓、跟了她十年的 Munyungo Jackson 打擊，除了吉他手以外全都兼和聲。製作人 George Duke 以客座身分加鍵盤，並在第四軌〈Triste〉坐上鋼琴。曲目一半是別人的：傳統曲〈Morning Has Broken〉開場九分鐘，接著是 Mongo Santamaría 的〈Afro Blue〉、Jobim 的〈Triste〉、Cole Porter 的〈Love for Sale〉、Leonard Cohen 的〈Suzanne〉，以及 Milton Nascimento 的〈Bridges〉；其餘由她與 Billy Childs、Munyungo Jackson、Terri Lyne Carrington 等人合寫。〈The Best Times (Grandma's Song)〉八分半，是全碟第二長的一軌。",
+  "keyTracks": [
+   "Morning Has Broken",
+   "Afro Blue",
+   "The Best Times (Grandma's Song)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **廠牌口徑／街頭日（階序最上層）**：`BB-2000-06-10` p16 的整篇報導逐字「\"In The Moment (Live In Concert),\" is **due July 18**」——**與 MB first-release-date `2000-07-18` 逐日相符。** (2) **評介與榜位**：`BB-2000-07-29` p22 的 `SPOTLIGHT` 欄，廠牌欄逐字 `Blue Note Records 7243 5 25141`；**`BB-2000-08-05` p55 起在 `Top Jazz Albums` 連續在榜。** (3) **Discogs 七筆條目 `year` 全 2000**（美版零售／兩筆美版俱樂部版／美版宣傳／歐版／日版 `TOCJ-66087`／另一筆美版）。(4) **盤面 ℗**：notes 逐字 `℗©2000 Capitol Records Inc.`、Apple 738332243 逐字 `℗ 2000 Blue Note Records`。⚠ **錄音 2000-01-20／21 與發行同年，不構成年份風險。** ⚠ **日版覆核：`TOCJ-66087` 的 `year` 也是 2000、沒有比美版早的跡象**（**與第 1414 條那條 `TOCJ-680xx` 的 Somethin' Else 線不同段**）。**四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid a639773c／掛名 `Dianne Reeves`（池中 5 張同字串，同批 a 組《Bridges》共用）／年份 2000／十一軌／`live: true` 全部成立。**｜⚠⚠ **本層補兩處**：(一) **場地**：**不是俱樂部，是洛杉磯 SIR 的第一號音響棚**（Discogs notes 逐字）——**正文不得寫成俱樂部現場。** (二) **George Duke 的軌號**：**歐版 9930275 把他的鋼琴標成 `Piano [4]`**——**策展層說他「掛 `Keyboards [Additionnal]` 是客座」方向對，本層再補上他在第 4 軌彈鋼琴這一格。**｜⚠ **紙本與盤面對鼓手的拼法打架**：**`BB-2000-06-10` p16 逐字 `Roscoe Bryant`、Discogs 七筆條目全部 `Rocky Bryant`**——**正文照盤面。**｜⚠⚠ **撞陳列（逐軌比到 CD 那一層，本組最需要講清楚的一組）**：**本張的第 5〈Bridges〉、9〈Testify〉、10〈Suzanne〉、11〈Mista〉四軌都出現在同批 a 組 `Dianne Reeves —《Bridges》`（1999）上**——**但那是 1999 年的錄音室盤（十九個樂手逐軌換人），本張是 2000 年 1 月的現場（五人巡演團），時長逐軌不同**（〈Testify〉4:39 對 5:58、〈Mista〉6:50 對 6:00）。**→ 四軌同名不同錄音，兩卡 risk 必須互指、上架帶目錄號，封面與試聽資產不得共用。** ⚠ **另：a 組那張卡的盤名就是 `Bridges`，而本張第 5 軌就叫〈Bridges〉**（策展層第 1 組），**同一位藝人前後兩張。**｜⚠ **軌名撞池中卡名兩處**：〈Afro Blue〉（撞 `The Lonnie Smith = John Abercrombie Trio` 與 `Dee Dee Bridgewater` 的同名卡）、〈Love for Sale〉（撞 Boney M.、宮沢昭、Cecil Taylor 的同名卡）——**逐條讀完都是同名不同錄音。**｜⚠ **Reginald Veal、Romero Lubambo、Munyungo Jackson 三人同時在 a 組《Bridges》裡**，**兩卡的班底有交集但不相同，正文不得互抄。**｜**載體：Discogs 七筆全 CD，零黑膠。**｜**封面 CAA 有 6 圖。**｜⚠ **試聽本層撈回**：**us／jp／fr 三市場 `search` 全零，`gb`／`dk` 兩市場與 `lookup?upc=724352514120` 才命中**（第 1246／1284 條）——**串流採信 738332243**（⚠ **`apple-candidates.md` 的另兩個候選是《The Calling》與 a 組的《Bridges》，都是別碟；`724937214` 已被 a 組那張卡佔用，第 646 條兩卡不得共用**）。"
+ },
+ {
+  "key": "desc2:Everette Harp|For the Love",
+  "artist": "Everette Harp",
+  "album": "For the Love",
+  "facts": [
+   {
+    "f": "release-group 8161be5b 的欄位：title「For the Love」、artist-credit「Everette Harp」（36888e42 Person／US）、first-release-date **`2000`**、primary-type Album、secondary-types 空。**Discogs 美版零售 11064776（Blue Note `7243 5 21320 2 7`，bc 724352132027）十軌。** 版本表五筆：美版零售、**美版 BMG 俱樂部版 8137585（第二目錄號 `D136620`）**、美版宣傳 38030256、**美版先行宣傳盤 15020813（`…2 7V`，`format` 帶 `Advance`）**、歐版 6287632。⚠ **MB 的 `catalog-number` 欄在本張是空的**（第 1425 條那張表的第 1 列）。",
+    "src": "https://api.discogs.com/releases/11064776"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「編制完全查不到」那一句：全部班底都寫在 tracklist 的逐軌欄裡，一軌都沒漏。** **策展層與第 1420(一) 條逐字寫「Discogs 五筆的 credits 只有 `Everette Harp:Saxophone` 與 `Kevin Turner:Programmed By [Additional]`，**沒有任何鍵盤、貝斯、鼓**」——**那只是全碟層的 `extraartists` 欄；Discogs 11064776 的十軌每一軌都各自帶一整組 `extraartists`。** 例：**第 1 軌〈So Automatic〉逐字 `Alex Al — Bass`／`Little John Roberts — Drums`／`Tony Maiden — Guitar`／`Ricky Peterson — Keyboards`／`Tim Heintz — Keyboards`／`Lenny Castro — Percussion`／`Steve Dubin — Producer`**。**→ 編制欄可以逐軌寫死，「完全查不到」必須撤回。**",
+    "src": "https://api.discogs.com/releases/11064776"
+   },
+   {
+    "f": "**逐軌的班底分成三條線。** **(一) Steve Dubin 製作的六軌（1、2、5、6、8、10）**是同一組洛杉磯錄音室樂手：`Alex Al` 或 `Larry Kimpel` 的貝斯、`Little John Roberts` 的鼓、`Tony Maiden` 或 `Mike \"Crazy Neck\" Sims` 的吉他、`Ricky Peterson` 與 `Tim Heintz` 的鍵盤、`Lenny Castro` 的打擊；**第 10 軌另加三件管樂，逐字 `Jerry Hey — Horns`、`Gary Grant — Horns`、`Bill Reichenbach (2) — Horns`，吉他也多一位 `Jeff Golub`。** **(二) Harp 自己製作的三軌（3、7、9）**：第 3 軌逐字 `Everette Harp — Producer, Soprano Saxophone, Drum Programming, Programmed By [Keyboard]`＋`Ray Fuller — Rhythm Guitar, Guitar [Wah]`；**第 7 軌逐字 `Everette Harp — Producer, Lead Vocals, …, Backing Vocals`**（⚠ **他在這一軌自己唱主唱**）＋`Shaun Labelle — Producer, Drum Programming…`＋`Joey Elias — Backing Vocals, Arranged By [Background Vocal]`＋`David Barry — Guitar`；**第 9 軌逐字 `Larry Kimpel — Bass`、`Paul Jackson Jr. — Guitar`、`George Duke — Keyboards`。** **(三) 第 4 軌是完全外包的一軌**：逐字 `Buster & Shavoni — Producer, Instruments`、`G. LaBeaud — Co-producer, Instruments, Lead Vocals`、`James Labeaud — Co-producer`、`20/Twenty — Vocals`、`George Duke — Grand Piano`。",
+    "src": "https://api.discogs.com/releases/11064776"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 11064776）逐字**：1、2、5、8 是 `Everette Harp`＋`Steve Dubin`＋`Tim Heintz`；3 是 `Everette Harp`＋**`Brian Culbertson`**；4 是 `G. LaBeaud`＋`James Labeaud`＋`Keni Myles`；6 是 `Everette Harp`＋`Steve Dubin`＋**`Robbie Nevil`**；7 是 `Everette Harp`＋`Joey Elias`＋`Shaun LaBelle`；**9 逐字只有 `Stevie Wonder`**；**10 逐字只有 `Joe Sample`**（**The Crusaders 1972 年的〈Put It Where You Want It〉**）。**→ 十軌裡翻的兩首分別是 Stevie Wonder 與 Joe Sample 的曲。**",
+    "src": "https://api.discogs.com/releases/11064776"
+   },
+   {
+    "f": "⚠⚠ **本張與同批 a 組《Chill Factor》共用同一組洛杉磯班底與同一位製作人——這是策展層沒記到的一組撞陳列。** **兩張碟的 Steve Dubin 製作段落重疊的人名逐字有**：`Steve Dubin`（製作）、`Tim Heintz`（鍵盤）、`Tony Maiden`（吉他）、`Mike \"Crazy Neck\" Sims`（吉他）、`Little John Roberts`（鼓）、`Lenny Castro`（打擊）、`Alex Al`（貝斯）、`Paul Jackson Jr.`（吉他）、`Robbie Nevil`（作曲）**——九個名字。** **但兩張的軌目零重疊**（《Chill Factor》十一軌、本張十軌，沒有一首同名）。**→ 兩卡 risk 必須互指、正文不得互抄班底，上架比對帶目錄號 `57481` 與 `21320`。**",
+    "src": "https://api.discogs.com/releases/3109053"
+   },
+   {
+    "f": "**紙本：廠牌的發行預告 ＋ 再發報導 ＋ 連五期榜位。** **`BB-2000-09-16` p92 的 `ALBUM FORECAST` 逐字「Blue Note will release Patricia Barber's \"Nightclub\" (Sept. 26) and **Everette Harp's \"For The Love\"** (O…)」**（同一段還一次給了本批《Who's on First?》與《The Dropper》的 `Oct. 24`）；**`BB-2000-11-25` p32 逐字「saxman **Everette Harp's \"For The Love\"** Bl…」**；**`Top Contemporary Jazz Albums` 連五期在榜，榜欄逐字 `EVERETTE HARP BLUE NOTE 21320 /CAPITOL FOR THE LOVE`（`BB-2000-11-25` p42 第 18 名、在榜週數 `3`）。** ⚠ **另一張榜 `Top Jazz Albums` 零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf"
+   },
+   {
+    "f": "⚠⚠ **封面缺：CAA 三次重探確認真 404（第 1283 條）。** **release-group 層連試三次全回 404、唯一那筆 release 4558c1ab 的 release 層也是 404。** **替代來源用 Discogs 美版原壓 11064776**：**該條目 3 圖，`images[0]` 型別是 `primary`、尺寸 600×600** ✓。⚠ **不可用美版宣傳盤 38030256**：**它有 4 張圖但全部是 `secondary`**（**本線第七次遇到「條目所有圖都是 secondary」**）；**歐版 6287632 的 primary 是 600×595、美版俱樂部版 8137585 的 primary 是 600×600，兩者可作次選。**",
+    "src": "https://api.discogs.com/releases/11064776"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724352132027` 四種查法命中同一筆，`Everette Harp — For the Love`、`trackCount 10`、`℗ 2000 Blue Note Records`；**十軌與盤面逐軌同名同序、全部有 preview。** ⚠ **載體：Discogs 五筆全部是 CD，零黑膠、零卡帶、零日版**（本段通則第 1 條逐張查）。",
+    "src": "https://itunes.apple.com/lookup?upc=724352132027&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十軌其實是三批人各做各的：六軌交給洛杉磯的 Steve Dubin 班底，三軌他自己製作，還有一軌整個外包給別的製作團隊",
+   "他在第七軌自己唱了主唱——十軌裡唯一一首不是把薩克斯放在前面的"
+  ],
+  "sound": "十軌的 smooth jazz 盤，班底分成三批。六軌交給製作人 Steve Dubin 與他的洛杉磯班底——Alex Al 或 Larry Kimpel 的貝斯、Little John Roberts 的鼓、Tony Maiden 的吉他、Ricky Peterson 與 Tim Heintz 的鍵盤、Lenny Castro 的打擊；收尾的〈Put It Where You Want It〉翻的是 Joe Sample 給 The Crusaders 寫的曲，另外加了 Jerry Hey、Gary Grant、Bill Reichenbach 三件管樂。三軌由 Harp 自己製作，其中第七軌他不吹薩克斯而是自己唱主唱；第九軌翻 Stevie Wonder，鍵盤請的是 George Duke。第四軌整個外包給另一組製作團隊，主唱換成 G. LaBeaud、和聲是 20/Twenty，George Duke 在這一軌彈的是平台鋼琴。母帶由 Doug Sax 與 Robert Hadley 做。",
+  "keyTracks": [
+   "So Automatic",
+   "We Don't Have to Say Goodbye",
+   "Put It Where You Want It"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **廠牌口徑（階序最上層）**：`BB-2000-09-16` p92 的 `ALBUM FORECAST` 逐字把本張列進 Blue Note 的第四季發行名單。(2) **榜位**：`Top Contemporary Jazz Albums` 連五期在榜，榜欄逐字 `EVERETTE HARP BLUE NOTE 21320 /CAPITOL FOR THE LOVE`（`BB-2000-11-25` p42 第 18 名、在榜週數 `3`，回推首度上榜 2000-11-11）；**同期 p32 另有一則再發報導提到它。** (3) **MB first-release-date `2000`。** (4) **Discogs 五筆條目 `year` 全 2000。** (5) **盤面 ℗**：Apple 逐字 `℗ 2000 Blue Note Records`。⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目**，不存在日版先出的形狀。**四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid 8161be5b／掛名 `Everette Harp`（池中 3 張同字串，與 c-154 b《What's Going On》同字串）／年份 2000／十軌 全部成立。**｜⚠⚠ **本層推翻策展層與第 1420(一) 條把本張列進「編制完全查不到」那一格**：**全碟層的 `extraartists` 欄確實只有兩行，但十軌每一軌都各自帶一整組逐軌 `extraartists`**——**貝斯、鼓、吉他、鍵盤、打擊、管樂、和聲、每一軌的製作人全部有名有姓。** **→ 編制欄改成逐軌寫死；「完全查不到」撤回。** ⚠ **這與同批《Traveling Miles》是同一種失效方式**：**策展層只看了全碟層的 credit 欄，沒有展開 tracklist 的逐軌欄。**｜⚠ **第 7 軌 Harp 自己唱主唱、第 4 軌主唱是 `G. LaBeaud`**——**十軌裡有兩軌是人聲主導，正文不得寫成「整張純器樂」。**｜⚠⚠ **撞陳列（策展層沒記的一組）**：**本張與同批 a 組 `Richard Elliot —《Chill Factor》`（1999）共用九個人名**（Steve Dubin、Tim Heintz、Tony Maiden、Mike \"Crazy Neck\" Sims、Little John Roberts、Lenny Castro、Alex Al、Paul Jackson Jr.、Robbie Nevil）——**同一組洛杉磯班底、同一位製作人，但兩張軌目零重疊。** **兩卡 risk 互指、正文不得互抄班底。**｜⚠ **另兩組**：(1) **George Duke 在本張第 4、9 兩軌，而他是同批《In the Moment》的製作人兼客座鍵盤**——三卡互指。 (2) **軌名撞池中卡名：十軌逐一比對，零命中。**｜**曲風：`['jazz']`。**｜**載體：Discogs 五筆全 CD，零黑膠、零日版。**｜⚠⚠ **封面缺**：**CAA 三次重探（RG 層 ×3、release 層 ×1）全 404，確認真的沒有。替代來源 → Discogs 美版原壓 `11064776`，3 圖，`images[0]` 是 `primary` 600×600（⚠ 宣傳盤 38030256 的 4 張圖全是 `secondary`，不可用；歐版 6287632 的 primary 600×595 與俱樂部版 8137585 的 primary 600×600 可作次選）。**｜**試聽 Apple 十軌對得上。**"
+ },
+ {
+  "key": "desc2:Mark Shim|Turbulent Flow",
+  "artist": "Mark Shim",
+  "album": "Turbulent Flow",
+  "facts": [
+   {
+    "f": "release-group cd41beee 的欄位：title「Turbulent Flow」、artist-credit「Mark Shim」、first-release-date **2000-03-28**、primary-type Album、secondary-types 空。**Discogs 美版零售 13164156（Blue Note `7243 8 23392 2 9`，bc 724382339229）九軌。** 版本表六筆：美版零售、美版宣傳 37235796、**美版先行宣傳盤 14337172（`…2 9V`，`Advance`）**、美版俱樂部版 21548233、歐版 3420633、日版 31585648（`TOCJ-66069`）。⚠ **MB 的 `catalog-number` 欄在本張是空的**（第 1425 條）。",
+    "src": "https://api.discogs.com/releases/13164156"
+   },
+   {
+    "f": "**錄音、混音與母帶的三個日期在日版 notes 上寫得最完整，逐字「Recorded on **February 3 and 4, 1999** at **Systems Two Studios, Brooklyn, NY**. Mixed on **June 4, 1999** at BMG Studios, NYC. Mastered on **June 4, 1999** at BMG Studios, NYC.」**——**錄音在 1999 年 2 月、混音與母帶在 1999 年 6 月、發行卻在 2000 年 3 月，中間隔了一年。** ⚠ **美版 13164156 的 notes 只寫「Recorded February 3 and 4, 1999.」、沒有棚名與後製日期**；**美版俱樂部版 21548233 才補上棚名（`Systems Two Studios, Brooklyn, NY`）**——**同一張碟的三筆條目給的資訊量不同，引用要挑最完整的那一筆。**",
+    "src": "https://api.discogs.com/releases/31585648"
+   },
+   {
+    "f": "⚠⚠ **本層修正策展層的編制欄：Stefon Harris 標了軌號，而且他只出現在三軌。** **Discogs 13164156 的 credit 欄逐字 `Stefon Harris — Vibraphone [2]` 與 `Stefon Harris — Marimba [4, 6]`**（另有一行無軌號的 `Stefon Harris — Marimba`，**歐版 3420633 與日版 31585648 的同一欄都只留帶軌號的那兩行**）。**→ 他九軌裡只在第 2、4、6 三軌，而且第 2 軌彈顫音琴、第 4、6 軌彈馬林巴。** **策展層寫「Stefon Harris 的顫音琴無逐軌標記，不得寫死五重奏全程」——方向對，但盤面其實標得很清楚，可以寫死是哪三軌。**",
+    "src": "https://api.discogs.com/releases/13164156"
+   },
+   {
+    "f": "⚠ **領班自己也逐軌換樂器。** **Discogs 13164156 的 credit 欄逐字 `Mark Shim — Tenor Saxophone [1 to 5, 7 and 8]` 與 `Mark Shim — Soprano Saxophone [6, 9]`**——**九軌裡七軌吹次中音、兩軌吹高音。** **鍵盤同樣分軌：`Edward Simon — Piano [2 to 4, 6 to 8]` 與 `Edward Simon — Electric Piano [Rhodes] [1, 5, and 9]`**（**美版那一行的 `[1, 5, and 9]` 連 `and` 都印進去了**）。**無軌號、九軌全程的只有 `Drew Gress — Bass` 與 `Eric Harland — Drums`。** **製作逐字 `Mark Shim — Producer`，執行製作 `Brian Bacchus` 與 `Eli Wolf`，工程 `Joe Marciano`，混音與母帶 `James Nichols`。**",
+    "src": "https://api.discogs.com/releases/13164156"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 13164156）逐字**：1〈Turbulent Flow〉、3〈Christel Gazing〉、4〈Survival Tactics〉、5〈Don't Wake The Violent Baby〉、6〈Dirty Bird〉、7〈Scorpio〉、8〈Jive Ones〉七首都是 `Mark Shim`；**2〈Recorda Me〉逐字 `Joe Henderson`**；**9〈Eminence (For Betty Carter)〉逐字 `Eric Harland`**（**團裡的鼓手寫的，而且標題獻給 Betty Carter——Shim 與 Harland 都出身她的樂團**）。⚠ **歐版 3420633 把第 9 軌的曲名印成 `Eminenece (For Betty Carter)`（多一個 `e`）**——**上架比對兩形都要試。**",
+    "src": "https://api.discogs.com/releases/3420633"
+   },
+   {
+    "f": "⚠ **首發地：日版比美版早五天。** **Discogs 日版 31585648（`TOCJ-66069`，`released` 逐字 `2000-03-23`，bc `4 988006 776159`）**，**MB first-release-date 是 `2000-03-28`**；**九軌一字不差、盤名相同、掛名相同、credit 欄只多了 `Tadashi Narita — Liner Notes` 與 `Mantis Evar — Product Manager`**（第 1414 條的「四項全同」形）——**同為 2000，`year` 不受影響，首發地要寫日本、`label` 要帶 `TOCJ-66069`。**",
+    "src": "https://api.discogs.com/releases/31585648"
+   },
+   {
+    "f": "**紙本：兩期的 billboard.com 評介欄，兩張爵士榜零命中。** **`BB-2000-03-25` p85 與 `BB-2000-04-01` p109 的 `Exclusive Album Reviews` 欄各列一次，逐字 `Mark Shim 'Turbulent Flow\" (Blue Note)`**（與 Cat Power、Will Oldham、Eels 等非爵士盤並列在同一個網站評介欄裡）。⚠ **`turbulent flow`／`23392`／`mark shim` 三種字串都掃過**（第 1245 條），**除了這兩處之外 2000 全年零命中**；**兩張爵士榜都沒有本張。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-03-25.pdf"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724382339229` 四種查法命中同一筆，`Mark Shim — Turbulent Flow`、`trackCount 9`、`℗ 2000 Blue Note Records`；**九軌與盤面逐軌同名同序、全部有 preview。** **封面 CAA：release-group 層 1 圖，來源是美版 release ✓；Discogs 美版 13164156 的 `images[0]` 是 `primary` 600×591，可作備案（⚠ 日版 31585648 有 15 張圖但全部是 `secondary`，不可用）。**",
+    "src": "https://itunes.apple.com/lookup?upc=724382339229&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "九軌裡他自己寫了七首，剩下兩首一首是 Joe Henderson 的〈Recorda Me〉，一首是團裡鼓手寫來獻給 Betty Carter 的",
+   "顫音琴手 Stefon Harris 只出現在三軌，而且第二軌彈顫音琴、第四與第六軌換成馬林巴——盤面把軌號標得清清楚楚"
+  ],
+  "sound": "1999 年 2 月 3、4 兩天在布魯克林 Systems Two 錄的九軌，同年 6 月混音與母帶，2000 年 3 月才發。核心是四個人：Mark Shim 的薩克斯、Edward Simon 的鍵盤、Drew Gress 的低音提琴、Eric Harland 的鼓——只有後兩位九軌全程。Shim 自己逐軌換樂器，七軌吹次中音、第 6 與第 9 軌吹高音；Simon 也一樣，六軌彈平台鋼琴、第 1、5、9 軌換成 Rhodes 電鋼琴。Stefon Harris 只在三軌現身，第 2 軌彈顫音琴、第 4 與第 6 軌彈馬林巴。九軌裡 Shim 自己寫七首，另兩首分別是 Joe Henderson 的〈Recorda Me〉與鼓手 Eric Harland 寫的〈Eminence〉——副題獻給 Betty Carter。製作是 Shim 自己。",
+  "keyTracks": [
+   "Turbulent Flow",
+   "Recorda Me",
+   "Eminence (For Betty Carter)"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **MB first-release-date `2000-03-28`。** (2) **Discogs 六筆條目 `year` 全 2000**（美版零售／美版宣傳／美版先行宣傳／美版俱樂部版／歐版／日版），**日版 `TOCJ-66069` 的 `released` 逐字 `2000-03-23`。** (3) **紙本**：`BB-2000-03-25` p85 與 `BB-2000-04-01` p109 的 billboard.com 評介欄各列一次——**時序與 3 月底的街頭日吻合。** (4) **盤面 ℗**：Apple 逐字 `℗ 2000 Blue Note Records`。⚠ **錄音 1999-02-03／04、混音與母帶 1999-06-04（日版 notes 逐字），與發行相隔一年**——**第 1246 條那種「把錄音日填成發行日」的陷阱在本張沒有中，但正文必須把兩個年份分開講。** ⚠⚠ **日版覆核（固定動作）：`TOCJ-66069` 比 MB frd 早五天，九軌一字不差**（第 1414 條的「四項全同」形）——**同為 2000，`year` 不動，首發地改記日本。** **四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid cd41beee／掛名 `Mark Shim`（池中 1 張同字串）／年份 2000／九軌 全部成立。**｜⚠ **本層修正策展層編制欄一處**：策展層寫「四人核心，**Stefon Harris 的顫音琴無逐軌標記**，不得寫死五重奏全程」——**實際上 Discogs 逐字標了 `Vibraphone [2]` 與 `Marimba [4, 6]`**，**Harris 九軌裡只在三軌，而且第 2 軌與第 4、6 軌用的是不同樂器。** **→ 編制欄可以寫死。** ⚠ **另補兩處**：**Shim 自己 `Tenor Saxophone [1 to 5, 7 and 8]`／`Soprano Saxophone [6, 9]`**、**Edward Simon `Piano [2 to 4, 6 to 8]`／`Electric Piano [Rhodes] [1, 5, and 9]`**——**兩人都逐軌換樂器。**｜⚠ **首發地改判成日本（`TOCJ-66069`，2000-03-23）。**｜⚠ **錄音與發行相隔一年**（1999-02 錄、1999-06 混音、2000-03 發行），**正文不得把兩個年份混在一起。**｜⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) ⚠ **本張第 2 軌〈Recorda Me〉與同批 `Stefon Harris / Jason Moran / Greg Osby / Mark Shim —《New Directions》`（2000）的第 10 軌〈Recorda-Me〉同名同曲（都是 Joe Henderson 寫的），而且 Shim 與 Stefon Harris 兩人都在兩張碟上**——**但兩個是不同的錄音（本張 1999-02 四／五人編制、那張是六人編制），其餘八軌零重疊。** **第 1049 條照收，兩卡 risk 互指、正文不得互抄。** (2) ⚠ **第 9 軌〈Eminence (For Betty Carter)〉的作曲者 Eric Harland 是團裡的鼓手**，**不是外人。** (3) **軌名撞池中卡名：九軌逐一比對，零命中。**｜⚠ **曲名兩形**：歐版把第 9 軌印成 `Eminenece`（多一個 `e`）。｜**載體：Discogs 六筆全 CD，零黑膠。**｜**封面 CAA 有 1 圖，備案 Discogs 13164156 的 primary 600×591（⚠ 日版 31585648 的 15 張圖全是 `secondary`，不可用）；試聽 Apple 九軌對得上。**"
+ },
+ {
+  "key": "desc2:Jackie McLean|Nature Boy",
+  "artist": "Jackie McLean",
+  "album": "Nature Boy",
+  "facts": [
+   {
+    "f": "⚠⚠ **年份改判 2000 → 1999，理由是實體首發在日本、而且早了四個多月。** **Discogs 日版 12133379 的廠牌欄逐字 `Somethin' Else — TOCJ-68045`、`released` 逐字 `1999-09-22`、bc `4988006774612`、`format` 是乾淨的 `CD, Album`（無 `Promo`）**；**同一個目錄號另有一筆真正的宣傳盤 26273702（`format` 帶 `Promo`）——兩筆分得開**（第 1281／1297 條的檢查做過）。**美版 11608787 與兩筆歐版（5029549／26582069）的 `year` 全部是 2000、MB first-release-date 也是 `2000-02-01`。** **八軌一字不差、盤名相同、掛名相同**（第 1414 條的「四項全同」形）——**`year` 取日版的 1999。**",
+    "src": "https://api.discogs.com/releases/12133379"
+   },
+   {
+    "f": "**Apple 那一側把日版的身分寫得最直白。** **`lookup?upc=724352327324`（美歐版的 barcode）在 us 市場命中 738336042**，欄位逐字 `Jackie McLean — Nature Boy`、**`releaseDate 1999-09-22`**（**與 Discogs 日版的 `released` 同一天**）、**copyright 逐字 `℗ 1999 EMI Music Japan Inc.`**、`trackCount 8`。⚠ **這正是第 1414 條說的訊號**：**Apple 的 copyright 寫日本公司 → 回頭查日版年份。**",
+    "src": "https://itunes.apple.com/lookup?upc=724352327324&country=us"
+   },
+   {
+    "f": "**日版 12133379 的 notes 逐字「Recorded and mixed at **Avatar Studios, New York City on June 12 & 13, 1999**. Twelve-page booklet includes liner notes in Japanese, personnel credits in English. SJ (Swing Journal) Seal Of Approval rosette on obi.」**——**1999 年 6 月 12、13 兩天在紐約錄的，同年 9 月就在日本上架；美歐版隔年 2 月才跟進。** ⚠ **美版 11608787 的 notes 只寫「Recorded in New York City on June 12 & 13, 1999.」、沒有棚名**——**棚名只有日版寫了。**",
+    "src": "https://api.discogs.com/releases/12133379"
+   },
+   {
+    "f": "**編制是固定四人、零客座、零軌號標記**：`Jackie McLean — Alto Saxophone`、`Cedar Walton — Piano`、`David Williams (2) — Bass`、`Billy Higgins — Drums`。**製作欄逐字 `Hitoshi Namekata — Executive-Producer` 與 `Jackie McLean — Co-producer`**、**錄音與混音 `Jim Anderson`**；**日版另有 `Yoshiko Tsuge — A&R`、`Yasukuni Terashima — Liner Notes`、`Kaoru Taku — Art Direction`、`Kiyoko Murata — Coordinator [Production]`。** ⚠ **Namekata 與 Tsuge 是日方的監製與 A&R，不是樂手，不得寫進編制**（第 1420 條）。",
+    "src": "https://api.discogs.com/releases/11608787"
+   },
+   {
+    "f": "⚠ **八軌全部是別人的標準曲，McLean 一首都沒寫。** **Discogs 11608787 的逐軌作曲欄逐字**：1〈You Don't Know What Love Is〉`Don Raye`＋`Gene DePaul`、2〈Nature Boy〉**`Eden Ahbez`**、3〈I Can't Get Started〉`Vernon Duke`＋`Ira Gershwin`、4〈What Is This Thing Called Love〉`Cole Porter`、5〈I Fall In Love Too Easily〉`Jule Styne`＋`Sammy Cahn`、6〈Smoke Gets In Your Eyes〉`Jerome Kern`＋`Otto Harbach`、7〈Star Eyes〉`Don Raye`＋`Gene DePaul`、8〈A Nightingale Sang In Berkeley Square〉`Manning Sherwin`＋`Eric Maschwitz`。⚠ **日版第 8 軌多掛一位 `Jack Strachey`，美歐版只有兩位**——**同一首曲在兩版的作曲欄不一樣。** **時長逐字 7:47／9:30／7:57／6:31／5:09／5:51／5:31／8:28，最長的是盤名那一首。**",
+    "src": "https://api.discogs.com/releases/11608787"
+   },
+   {
+    "f": "**紙本：美版那一邊有評介，而且製作人欄正好佐證了日方監製。** **`BB-2000-02-05` p40 的爵士評介欄逐字「JACKIE MCLEAN **Nature Boy** PRODUCERS: **Hitoshi Namekata, Jackie McLean** Blue Note **23273** Throughout his four-decade …」**——**廠牌欄與製作人欄都對得上盤面。** ⚠ **這是美版（2000 年 2 月）的評介，不是 1999 年日版的發行證據**——**正文要把「1999 年在日本首發、2000 年美歐版跟進」兩件事分開講。** ⚠ **同一期 p105 的 `nature boy` 命中是另一件事**（School Of Fish 的 Josh Clayton-Felt 那張《Inarticulate Nature Boy》），**第 1301／1424 條的紙本誤讀，逐條讀完排除。** ⚠ **兩張爵士榜 2000 全年零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-02-05.pdf"
+   },
+   {
+    "f": "⚠ **歐版把價格代碼印在條目上，是第 1422 條那個字串的原形。** **Discogs 歐版 26582069 的 identifiers 逐字 `Price Code — F:PM 520`、`Matrix / Runout — EMI UDEN 5232732  @ 1   1-1-2 NL`**，**notes 逐字「p 2000 Somethin' Else, a division of Toshiba-EMI Ltd. CD made in EU, tray insert printed in EU.」**——**連歐版的 ℗ 都掛在 Somethin' Else（東芝 EMI）名下**，**而 MB 給這一張的 `catno` 是緊縮形 `5232732`**（第 1425 條），**與模壓環同形、不是真正的目錄號 `7243 5 23273 2 4`。**",
+    "src": "https://api.discogs.com/releases/26582069"
+   },
+   {
+    "f": "⚠⚠ **試聽：三種查法跑滿，明寫查無。** (1) **`search`**：us／jp／gb／dk 四個市場用 `Jackie McLean Nature Boy` 查，**回的全是別碟**（Glee Cast《Showstoppers》、Luther Vandross、Al Green、Bon Jovi 等同名曲的碟）；**另試 `ジャッキー・マクリーン Nature Boy`／`Nature Boy McLean`／`マクリーン ネイチャー・ボーイ` 三種變形，零命中。** (2) **`lookup?upc=724352327324`**：**命中 738336042 的專輯頁**，**但把它展開（`lookup?id=738336042&entity=song`）在 us／jp／gb／fr 四個市場全部回 0 筆曲目**——**專輯條目存在、底下沒有任何可播放的軌，也就沒有 preview。** (3) **藝人目錄反查**：`lookup?id=802975&entity=album&limit=200`，**us 市場 41 張裡有本張（只有專輯頁）、jp 市場 124 張裡完全沒有本張。** **→ 店面沒有可用的試聽來源，本卡走固定無來源狀態。** **封面 CAA：release-group 層 1 圖 ✓（⚠ 來源是 2000 年美版、不是 1999 年日版首發；Discogs 歐版 5029549 的 `images[0]` 是 `primary` 600×600，可作備案）。**",
+    "src": "https://itunes.apple.com/lookup?id=738336042&country=jp&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "八軌全是別人的老歌，他一首都沒寫——而且這張碟先在日本上架，美國與歐洲要等到四個多月以後",
+   "1999 年 6 月 12、13 兩天在紐約 Avatar 錄完，班底是 Cedar Walton、David Williams 與 Billy Higgins 三個老搭檔"
+  ],
+  "sound": "八軌全是三、四〇年代以來的標準曲，McLean 一首都沒寫。他的中音薩克斯，底下是 Cedar Walton 的鋼琴、David Williams 的低音提琴、Billy Higgins 的鼓，四個人從頭到尾、盤面零客座。曲目從〈You Don't Know What Love Is〉開始，盤名那一首〈Nature Boy〉拉到九分半是全碟最長，中間有〈I Can't Get Started〉〈What Is This Thing Called Love〉〈Smoke Gets in Your Eyes〉〈Star Eyes〉，收在〈A Nightingale Sang in Berkeley Square〉八分半上。1999 年 6 月 12、13 兩天在紐約 Avatar Studios 錄音與混音，工程 Jim Anderson，監製是東芝 EMI 的 Hitoshi Namekata，McLean 自己掛共同製作。碟先在日本以 Somethin' Else 的名義上架，美國與歐洲隔年才跟進。",
+  "keyTracks": [
+   "Nature Boy",
+   "What Is This Thing Called Love",
+   "A Nightingale Sang in Berkeley Square"
+  ],
+  "status": "full",
+  "yearVerified": "⚠⚠ **年份改判：卡單 2000 → 本層取 1999。**（**策展層已在第 1413／1414 條做過這個改判，本層逐層重驗、結論相同，並補上兩層新證據。**） (1) **實體首發是日本的 `Somethin' Else TOCJ-68045`**：**Discogs 12133379 的 `released` 逐字 `1999-09-22`、`format` 是乾淨的 `CD, Album`**（⚠ **同目錄號另有一筆帶 `Promo` 的 26273702，兩筆分得開——第 1281／1297 條：`Promotion` 標記本身會錯，這次回 Discogs 看實體描述確認過，1999 那一筆是帶腰帶與十二頁解說的零售盤**）。(2) **Apple `lookup?upc=724352327324` 回 738336042，`releaseDate` 逐字 `1999-09-22`、copyright 逐字 `℗ 1999 EMI Music Japan Inc.`**——**與 Discogs 日版同一天。** (3) **美歐版全部晚一年**：MB frd `2000-02-01`、Discogs 美版 11608787 與兩筆歐版 `year` 全 2000、歐版 26582069 的 notes 逐字 `p 2000 Somethin' Else`。(4) **紙本**：`BB-2000-02-05` p40 的美版評介逐字 `PRODUCERS: Hitoshi Namekata, Jackie McLean Blue Note 23273`——**Namekata 是東芝 EMI 的監製，紙本自己把日方的身分寫出來了。** (5) **第 1414 條的「四項全同」檢查**：**盤名同（`Nature Boy`）、掛名同（`Jackie McLean`）、軌數同（8）、封面同**——**日版是同一張碟，(丁) 不成立，取日版年 1999。** ⚠ **錄音 1999-06-12／13 與日版發行同年，不構成年份風險。**",
+  "notes": "**覆核策展層：rgMbid cc64c879／掛名 `Jackie McLean`（池中 34 張同字串）／年份改判 2000→1999／八軌 全部成立。本層背書策展層唯一那筆改判，並補上「1999 日版是零售盤不是宣傳盤」的實體描述證據。**｜**編制：固定四人（McLean as／Walton p／Williams b／Higgins d），credit 欄零軌號、零客座**——**策展層「可寫固定編制（4），美歐版 credits 一致」覆核成立。** ⚠ **`Hitoshi Namekata`（Executive-Producer）與 `Yoshiko Tsuge`（A&R）是日方的監製與 A&R，不是樂手。**｜⚠ **八軌全部是別人的曲，McLean 一首都沒寫**——**正文不得把任何一首寫成他的作品。** ⚠ **日版第 8 軌的作曲欄比美歐版多一位 `Jack Strachey`。**｜⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) ⚠⚠ **同批第 8 張 `Greg Osby —《The Invisible Hand》`（2000）的第 7 軌逐字就叫〈Nature Boy〉，作曲者同樣是 `Eden Ahbez`**——**同一首曲的兩個錄音（本張 9:30、那張 8:44），其餘七軌零重疊**；**兩卡 risk 必須互指、上架帶目錄號 `23273` 與 `20134`。** (2) **軌名撞池中卡名一處：〈What Is This Thing Called Love〉（撞 `Richie Beirach Trio` 的同名卡，另同批 a 組《Drums Around the Corner》第 8 軌也叫這個名字）**——**逐條讀完都是常見標準曲的同名，不是同碟。** (3) ⚠ **Cedar Walton、Billy Higgins 在池中各有其他卡**，只寫觀察。｜⚠ **MB 的 `catno` 是緊縮形 `5232732`（＝模壓環字串），真的目錄號是 `7243 5 23273 2 4`**（第 1422／1425 條）。｜⚠ **歐版 26582069 的 `Price Code` 欄逐字 `F:PM 520`**——**與同批《Too Much Coffee Man》歐版、a 組《Duo》歐版同一個價格代碼。**｜**載體：Discogs 七筆全 CD，零黑膠。**｜⚠⚠ **試聽查無**（第 254 條三種查法跑滿：`search` 四市場 × 四種字串全是別碟、`lookup?upc=` 命中的專輯頁在四個市場都沒有任何曲目、藝人目錄 us 41 張／jp 124 張逐筆看過）——**本卡走固定無來源狀態。**｜**封面 CAA 有 1 圖（⚠ 來源是 2000 美版、不是 1999 日版首發），備案 Discogs 歐版 5029549 的 primary 600×600。**"
+ },
+ {
+  "key": "desc2:Joe Lovano|52nd Street Themes",
+  "artist": "Joe Lovano",
+  "album": "52nd Street Themes",
+  "facts": [
+   {
+    "f": "release-group 898ef672 的欄位：title「52nd Street Themes」、**RG 的 artist-credit 是 `Joe Lovano`，但轄下兩筆 release 的 credit 都是 `Joe Lovano Nonet`**（第 1425 條那張表的第 7 列）——**卡照 MB RG 與池中既有字串取 `Joe Lovano`，`Joe Lovano Nonet` 收進 `queryAlias`。** first-release-date **2000-04-25**、primary-type Album、secondary-types 空。**Discogs 美版零售 5141227，Blue Note `7243 4 96667 2 6`，bc 724349666726，十三軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=898ef672-4c1b-3946-bdf5-58b204bbba64&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠⚠ **盤名說「九重奏」，盤面列的卻是十位樂手——而且它是一次過錄到雙軌盤帶上的。** **Discogs 美版俱樂部版 14169539 的 notes 逐字「Recorded at **Avatar Studio A, Nov. 3 & 4, 1999** **live to 2-track analog tape** Mastered **November 8, 1999**」**——**兩天錄完、直接錄到兩軌類比帶（沒有多軌混音），母帶只隔四天。** **credit 欄的樂手逐字十位**：`Joe Lovano — Tenor Saxophone`、`Steve Slagle — Alto Saxophone`、`George Garzone — Tenor Saxophone`、`Ralph Lalama — Tenor Saxophone`、`Gary Smulyan — Baritone Saxophone`、`Tim Hagans — Trumpet`、`Conrad Herwig — Trombone`、`John Hicks — Piano`、`Dennis Irwin — Bass`、`Lewis Nash — Drums`。**→ 照 credits 寫人，不要寫「九重奏」**（第 1420 條的提醒，本層覆核成立）。",
+    "src": "https://api.discogs.com/releases/14169539"
+   },
+   {
+    "f": "⚠ **兩個掛名不得寫進編制。** **`Willie Smith (7) — Orchestrated By [Orchestrations]`**（**加拿大版 37681245 的 notes 逐字把他寫成 `Willie \"Face\" Smith: Orchestrations`**）——**他是配器者，不是第十一位樂手**；**`Judi Silvano — Producer [Assistant]`**——**第 1358／1420 條已記過，她是製作助理不是歌手。** **其餘掛名逐字 `Joe Lovano — Producer [Produced By], Arranged By [Arrangements By]`、`James Farber — Engineer`、`Greg Calbi — Mastered By`、`Michael Cuscuna — Liner Notes`、`Brian Bacchus`＋`Eli Wolf — A&R`、`Cyclone (12) — Illustration [Cover Illustration]`。**",
+    "src": "https://api.discogs.com/releases/14169539"
+   },
+   {
+    "f": "⚠⚠ **十三軌裡 Tadd Dameron 一個人就佔五首——整張其實是一張 Dameron 專輯。** **Discogs 逐軌作曲欄逐字**：1〈If You Could See Me Now〉、2〈On A Misty Night〉、6〈The Scene Is Clean〉、7〈Whatever Possess'd Me〉、10〈Tadd's Delight〉**五首全部 `Tadd Dameron`**；其餘是 3〈Sippin' At Bells〉**`Miles Davis`**、4〈Passion Flower〉**`Billy Strayhorn`**、5〈Deal〉**`Willie Smith (7)`**（**配器者自己的曲**）、9〈Theme For Ernie〉`Fred Lacey`、12〈52nd Street Theme〉**`Thelonious Monk`**、13〈Embraceable You〉`George Gershwin`；**Lovano 自己只寫兩首**：8〈Charlie Chan〉與 11〈Abstractions On 52nd Street〉（**後者只有 2 分 04 秒**）。",
+    "src": "https://api.discogs.com/releases/5141227"
+   },
+   {
+    "f": "**紙本：`Top Jazz Albums` 兩期在榜。** **`BB-2000-05-13` p39 以 `NEW` 進第 20 名，榜欄逐字 `JOE LOVANO BLUE NOTE 96667 /CAPITOL 52ND STREET THEMES`**（**掛名欄是 `JOE LOVANO`，不是 `Joe Lovano Nonet`**——**第 1303 條的第三邊，支持卡上取 `Joe Lovano`**）；**`BB-2000-06-10` p60 仍在榜。** ⚠ **兩期的命中關鍵字欄同時掃到本批另外四張的目錄號（`20208`／`20730`／`25271`／`brighter day`）**——**2000 年的爵士榜同一頁常常一次涵蓋本批多張。** ⚠ **另一張榜 `Top Contemporary Jazz Albums` 零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-05-13.pdf"
+   },
+   {
+    "f": "**版本表五筆**：美版零售 5141227、美版宣傳 21857788、**美版先行宣傳盤 14337185（`…2 6V`）**、美版 BMG 俱樂部版 14169539（barcode 欄逐字 `D134821`、型別 `Code 39`）、歐版 2635314；**另有一筆加拿大版 37681245（Capitol `CDP 596667`，notes 逐字「Distributed by/Distribué par **Columbia House**, Under License, 5900 Finch Ave. E. Scarborough, Ontario」）**。⚠ **零黑膠、零卡帶、零日版**（本段通則第 1 條逐張查）。",
+    "src": "https://api.discogs.com/releases/37681245"
+   },
+   {
+    "f": "⚠ **同一張碟的資訊量在五筆條目之間差很多**：**美版零售 5141227 的 `notes` 是空的、credit 欄只有樂手與四個技術掛名、唯一的圖是 150×147 的 `secondary`**；**俱樂部版 14169539 才有完整的錄音日期、A&R、美術與 Michael Cuscuna 的解說掛名**；**加拿大版 37681245 的 `extraartists` 欄整個是空的、但 notes 把全部樂手逐行列了出來、而且 `images[0]` 是 `primary` 600×548。** **→ 引用要挑最完整的那一筆，取圖要挑有 primary 的那一筆。**",
+    "src": "https://api.discogs.com/releases/5141227"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724349666726` 四種查法命中同一筆，`Joe Lovano — 52nd Street Themes`、`trackCount 13`、`℗ 2000 Blue Note Records`；**十三軌與盤面逐軌同名同序、全部有 preview。** **封面 CAA：release-group 層 1 圖 ✓。**",
+    "src": "https://itunes.apple.com/lookup?upc=724349666726&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡 Tadd Dameron 一個人就佔五首——盤名說的是五十二街，骨幹其實是一張 Dameron 專輯",
+   "1999 年 11 月 3、4 兩天在 Avatar 錄完，而且是直接錄到兩軌類比盤帶上的，沒有多軌混音"
+  ],
+  "sound": "十位管樂與節奏組的大編制：Lovano 的次中音，加上 Steve Slagle 的中音、George Garzone 與 Ralph Lalama 的次中音、Gary Smulyan 的上低音、Tim Hagans 的小號、Conrad Herwig 的長號，底下是 John Hicks 的鋼琴、Dennis Irwin 的貝斯、Lewis Nash 的鼓。1999 年 11 月 3、4 兩天在紐約 Avatar A 棚錄完，而且是直接錄到兩軌類比盤帶上——沒有多軌混音，四天後就做母帶。十三軌的骨幹是 Tadd Dameron 的五首曲，其餘從 Miles Davis 的〈Sippin' at Bells〉、Strayhorn 的〈Passion Flower〉排到 Monk 的〈52nd Street Theme〉與 Gershwin 的〈Embraceable You〉；配器者 Willie Smith 自己也寫了一首〈Deal〉。Lovano 只寫兩首，其中〈Abstractions on 52nd Street〉只有兩分零四秒。編曲與製作都是他自己，內頁解說由 Michael Cuscuna 寫。",
+  "keyTracks": [
+   "If You Could See Me Now",
+   "Deal",
+   "52nd Street Theme"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **MB first-release-date `2000-04-25`**（美版），**英版 release 是 `2000-05-01`。** (2) **紙本**：`Top Jazz Albums` **`BB-2000-05-13` p39 以 `NEW` 進第 20 名**（榜欄逐字 `JOE LOVANO BLUE NOTE 96667 /CAPITOL 52ND STREET THEMES`），**`06-10` p60 仍在榜**——**與 4 月底的街頭日吻合。** (3) **Discogs 六筆條目 `year` 全 2000**（美版零售／美版宣傳／美版先行宣傳／美版俱樂部版／歐版／加拿大版）。(4) **盤面 ℗**：Apple 逐字 `℗ 2000 Blue Note Records`。⚠ **錄音 1999-11-03／04、母帶 1999-11-08（俱樂部版 notes 逐字），比發行早半年**——**正文不得把錄音年寫成發行年。** ⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目**，不存在日版先出的形狀。**四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid 898ef672／掛名 `Joe Lovano`（池中 7 張同字串，同批 a 組另有聯名卡《Friendly Fire》）／年份 2000／十三軌 全部成立。**｜⚠ **掛名**：**MB RG 是 `Joe Lovano`、兩筆 release 是 `Joe Lovano Nonet`、Billboard 榜欄逐字 `JOE LOVANO`**——**第 1303 條的三邊裡有兩邊是裸名，取 `Joe Lovano`，`Nonet` 收進 `queryAlias`。**｜⚠ **編制：盤名說九重奏、credit 欄列十位樂手**——**照 credits 寫人**（第 1420 條的提醒覆核成立）；⚠ **`Willie Smith (7)` 是配器者（而且自己寫了第 5 軌）、`Judi Silvano` 是 `Producer [Assistant]`**——**兩人都不得寫進編制。**｜⚠ **錄音方式要寫進正文**：**`live to 2-track analog tape`（俱樂部版 notes 逐字）**——**兩天錄完、直接錄到雙軌盤帶。**｜⚠ **撞陳列**：(1) ⚠ **Tim Hagans 在本張是側人小號，而池中 c-155 b 有他自己的四張卡**——**軌目零重疊，只寫觀察＋互指，正文不得寫成共同領班**（策展層第 10 組覆核成立）。 (2) ⚠ **同批 a 組的聯名卡 `Joe Lovano & Greg Osby —《Friendly Fire》`（1999）**——**兩張軌目零重疊，兩卡 risk 互指。** (3) **軌名撞池中卡名兩處：〈If You Could See Me Now〉（撞 `Kenny Drew Trio`）與〈Embraceable You〉（撞 `Chet Baker`）**——**逐條讀完都是常見標準曲的同名。** (4) ⚠ **第 3 軌〈Sippin' at Bells〉的作曲者是 Miles Davis、第 12 軌是 Monk**——**兩人在池中都有大量卡，同名不同錄音，正文不得互指。**｜⚠ **五筆條目的資訊量差很多**：**美版零售 5141227 沒有 notes、唯一的圖只有 150×147**；**取圖用加拿大版 37681245 的 primary 600×548 或 CAA。**｜**載體：Discogs 六筆全 CD，零黑膠、零日版。**｜**封面 CAA 有 1 圖；試聽 Apple 十三軌對得上。**"
+ },
+ {
+  "key": "desc2:Greg Osby|The Invisible Hand",
+  "artist": "Greg Osby",
+  "album": "The Invisible Hand",
+  "facts": [
+   {
+    "f": "release-group 75c78aac 的欄位：title「The Invisible Hand」、artist-credit「Greg Osby」（bbef05c0 Person／US）、first-release-date **`2000`**、primary-type Album、secondary-types 空。**Discogs 美版零售 4823757，Blue Note `7243 5 20134 2 5` ＋短號 `20134`，十軌。** ⚠ **identifiers 逐字有兩種 barcode 寫法：`7243-5-20134-2-5`（Text）與 `0724352013425`（`Scanned UPC as 13-digit GTIN`）**——**後者前面多一個 0，不能直接拿去做 `lookup?upc=`。**",
+    "src": "https://api.discogs.com/releases/4823757"
+   },
+   {
+    "f": "**Discogs 4823757 的 notes 把錄音、混音、母帶三段日期與每一軌的出版商都列了出來，逐字「Produced by Greg Osby for Oztone Productions Co-produced by Kay Vaughn for Oztone Productions **Recorded at Systems Two, Brooklyn, NY 9/8/99 & 9/9/99** by Joseph Marciano **Mixed at Systems Two, Brooklyn, NY 10/1/99 & 10/2/99** by Joseph Marciano **Mastered at Foothill Digital, NYC** by Nicholas Prout … ℗©2000 Capitol Records, Inc.」**——**1999 年 9 月 8、9 兩天錄、10 月 1、2 兩天混、2000 年才發。**",
+    "src": "https://api.discogs.com/releases/4823757"
+   },
+   {
+    "f": "**編制是固定六人、零軌號標記、零客座**：`Greg Osby — Alto Saxophone, Clarinet, Producer, Liner Notes`、**`Gary Thomas — Flute, Alto Flute, Tenor Saxophone`**、**`Jim Hall — Guitar`**、**`Andrew Hill — Piano`**、`Scott Colley — Bass`、`Terri Lyne Carrington — Drums`。**⚠ **Osby 自己除了中音薩克斯還掛單簧管、Gary Thomas 一人掛三件**——**正文寫樂器要照 credit 欄。** **其餘掛名逐字 `Kay Vaughn — Co-producer`、`Joe Marciano — Recorded By, Mixed By`、`Nicholas Prout — Mastered By`、`Ted Panken — Liner Notes`（與 Osby 共同）、`Bill Singer — Technician [Saxophone Maintenence]`（**盤面把 Maintenance 拼成 Maintenence**）。",
+    "src": "https://api.discogs.com/releases/4823757"
+   },
+   {
+    "f": "⚠⚠ **十軌裡 Osby 自己只寫三首，而團裡的兩位前輩各寫了自己的曲——這是本張最值得寫的一格。** **Discogs 4823757 的逐軌作曲欄逐字**：**1〈Ashes〉與 8〈Tough Love〉是 `Andrew Hill`（就是台上的鋼琴手）**、**5〈Sanctus〉是 `Jim Hall`（就是台上的吉他手）**、3〈The Watcher〉／9〈With Son〉／10〈The Watcher 2〉是 `Greg Osby`、2〈Who Needs Forever〉是 `Quincy Jones`＋`Howard Greenfield`、4〈Jitterbug Waltz〉是 **`Fats Waller`**、6〈Indiana〉是 `James F. Hanley`＋`Ballard MacDonald`、**7〈Nature Boy〉是 `Eden Ahbez`**。",
+    "src": "https://api.discogs.com/releases/4823757"
+   },
+   {
+    "f": "**盤面連每一軌的出版商都印了，逐字「Tracks 1, 8: Published by **Jazz Fund Music (BMI)** Track 2: Published by Careers Music, Inc./Screen Gems-EMI Music, Inc. (BMI) Tracks 3, 9, 10: Published by **Daigoro Music (SESAC)** Track 4: Published by Warner Chappell (ASCAP) Track 5: Published by **Janhall Music (BMI)** Track 6: Published by Shapiro, Bernstein & Co., Inc./Range Road Music/Quartet Music (ASCAP) Track 7: Published by Golden World (ASCAP)」**——⚠ **`Daigoro Music` 正是第 1389 條說的「Osby 自己的出版社」**（**Billboard 1999-11-20 p119 的葛萊美提名作曲登記欄把《Friendly Fire》掛在同一家公司名下**）；**`Janhall Music` 是 Jim Hall 的、`Jazz Fund Music` 是 Andrew Hill 的。** **三家出版社正好對應三位作曲的樂手。**",
+    "src": "https://api.discogs.com/releases/4823757"
+   },
+   {
+    "f": "⚠ **Discogs 上同名同廠牌另有一筆 VHS 錄影帶（10885950，`Blue Note`，2000，`format` 逐字 `VHS`，無目錄號）**——**盤名與年份都與本張相同，但那是影像商品不是唱片**。**反查與撞卡比對要排掉它**（第 782 條「Discogs 的 format 欄要逐筆看」的另一種形狀）。",
+    "src": "https://api.discogs.com/releases/10885950"
+   },
+   {
+    "f": "**紙本：2000 全年零命中。** **`invisible hand`／`20134`／`greg osby` 三種字串都掃過**（第 1245 條），**三者都沒有一處。** ⚠ **第 1422 條記的 `20134` 反查假陽性在本層重現**：**那組數字會撞 Janet Jackson《Damita Jo》2004 墨西哥版的模壓環（`03CDCA020134`）**——**紙本與 Discogs 兩側都要用完整目錄號 `7243 5 20134 2 5` 才安全。** ⚠ **兩張爵士榜 2000 全年零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724352013425` 四種查法命中同一筆，`Greg Osby — The Invisible Hand`、`trackCount 10`、`℗ 2000 Blue Note Records`；**十軌與盤面逐軌同名同序、全部有 preview。** ⚠ **載體：Discogs 五筆唱片條目全部是 CD（另一筆是 VHS），零黑膠、零卡帶、零日版**（本段通則第 1 條逐張查）。**封面 CAA：release-group 層 2 圖 ✓；Discogs 4823757 的 `images[0]` 是 `primary` 600×600，可作備案。**",
+    "src": "https://itunes.apple.com/lookup?upc=724352013425&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "台上的鋼琴手 Andrew Hill 與吉他手 Jim Hall 各自把自己的曲交出來——十軌裡 Osby 只寫了三首，而且盤面連三個人的出版社都印了",
+   "原音六重奏、沒有一件電子樂器：中音薩克斯、單簧管、三種長笛與次中音、吉他、鋼琴、貝斯、鼓"
+  ],
+  "sound": "原音六重奏，1999 年 9 月 8、9 兩天在布魯克林 Systems Two 錄，同年 10 月混音，2000 年才發。Osby 吹中音薩克斯也吹單簧管，Gary Thomas 一人掌長笛、中音長笛與次中音薩克斯，節奏組是 Scott Colley 的貝斯與 Terri Lyne Carrington 的鼓——最特別的兩個位置是吉他的 Jim Hall 與鋼琴的 Andrew Hill，兩位都是比 Osby 年長一輩的人，而且各自把自己的曲交了出來：〈Ashes〉與〈Tough Love〉是 Andrew Hill 寫的，〈Sanctus〉是 Jim Hall 寫的。十軌裡 Osby 自己只寫三首（〈The Watcher〉與它的第二個版本，以及〈With Son〉），其餘是 Fats Waller 的〈Jitterbug Waltz〉、Quincy Jones 的〈Who Needs Forever〉、老標準曲〈Indiana〉與〈Nature Boy〉。製作是 Osby 自己，內頁解說由他與 Ted Panken 合寫。",
+  "keyTracks": [
+   "Ashes",
+   "Sanctus",
+   "The Watcher"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **盤面 ℗©**：Discogs 4823757 的 notes 逐字 `℗©2000 Capitol Records, Inc.`。(2) **MB first-release-date `2000`。** (3) **Discogs 五筆唱片條目 `year` 全 2000**（美版零售 4823757、美版宣傳／先行宣傳、歐版、另一筆美版）。(4) **盤面 ℗ 的第二個來源**：Apple 逐字 `℗ 2000 Blue Note Records`，三市場一致。⚠ **紙本三種字串 2000 全年零命中**（`20134` 這組數字另有 Janet Jackson 模壓環的假陽性，第 1422 條）。⚠ **錄音 1999-09-08／09、混音 1999-10-01／02（notes 逐字），比發行早幾個月**——**正文不得把錄音年寫成發行年。** ⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目**，不存在日版先出的形狀。**三層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid 75c78aac／掛名 `Greg Osby`（池中 7 張同字串，同批 a 組另有聯名卡《Friendly Fire》）／年份 2000／十軌 全部成立。**｜**編制：固定六人（Osby as, cl／Gary Thomas fl, afl, ts／Jim Hall g／Andrew Hill p／Scott Colley b／Terri Lyne Carrington d），credit 欄零軌號、零客座**——**策展層「可寫固定編制（6），美歐版一致」覆核成立。** ⚠ **Osby 兼單簧管、Gary Thomas 一人三件，正文寫樂器要照 credit 欄。**｜⚠⚠ **作曲歸屬是本張最值得寫的一格**：**第 1、8 軌是台上的鋼琴手 Andrew Hill 寫的、第 5 軌是台上的吉他手 Jim Hall 寫的**，**盤面的出版商欄（`Jazz Fund Music`／`Janhall Music`／`Daigoro Music`）正好對應三個人。** ⚠ **`Daigoro Music` 是 Osby 自己的出版社**（第 1389 條：Billboard 1999-11-20 p119 把《Friendly Fire》掛在同一家名下——**那是出版登記欄不是掛名**）。｜⚠⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) ⚠ **第 7 軌〈Nature Boy〉＝同批第 6 張卡 `Jackie McLean —《Nature Boy》`（1999）的盤名，而且兩邊的作曲者都是 `Eden Ahbez`**——**同一首曲的兩個錄音（本張 8:44、那張 9:30），其餘九軌零重疊**；**兩卡 risk 必須互指、上架帶目錄號。** (2) ⚠ **同批 a 組的聯名卡《Friendly Fire》（1999）與池中七張 `Greg Osby` 卡**——**軌目逐一比對零重疊。** (3) **軌名撞池中卡名：十軌逐一比對，另有〈Indiana〉一處常見標準曲同名，不是同碟。** (4) ⚠ **Terri Lyne Carrington 同時是同批 a 組《Bridges》第 1、9、10、11 軌的鼓手**——**兩卡 risk 互指。** (5) ⚠ **Andrew Hill 與 Jim Hall 在池中各有自己的卡**，**本張他們是側人，正文不得寫成共同領班。**｜⚠ **Discogs 上同名同年另有一筆 `VHS` 條目（10885950）**——**那是影像商品，反查要排掉。**｜**曲風：`['jazz']`**（第 1296 條第三層：原音六重奏）。｜**載體：唱片條目五筆全 CD，零黑膠、零日版。**｜**封面 CAA 有 2 圖，備案 Discogs 4823757 的 primary 600×600；試聽 Apple 十軌對得上。**"
+ },
+ {
+  "key": "desc2:Ronny Jordan|A Brighter Day",
+  "artist": "Ronny Jordan",
+  "album": "A Brighter Day",
+  "facts": [
+   {
+    "f": "release-group 37b7f262 的欄位：title「A Brighter Day」、artist-credit「Ronny Jordan」、first-release-date **`2000`**、primary-type Album、secondary-types 空。**Discogs 美版零售 6156696，Blue Note `7243 5 20208 2 9`，十四軌。** ⚠ **第 1 軌的曲名在美版、俱樂部版、加拿大版與日版上都被印成 `A Brigher Day`（少一個 `t`）**，**只有 UK／歐版 41611 印對成 `A Brighter Day`**——**上架與撞卡比對兩形都要試。**",
+    "src": "https://api.discogs.com/releases/6156696"
+   },
+   {
+    "f": "⚠⚠ **載體：這一張有同期黑膠，是本段通則第 1 條的另一個正面例外。** **Discogs 600090（2000，UK，`Vinyl, LP, Album, Stereo`，Blue Note **`7243 5 20208 1 2`**，bc 724352020812）**，**notes 逐字「The runouts are stamped, except \"ADAM\" is etched.」**，**identifiers 另有 `Price Code — PM 262 — F:` 與 `Price Code — 520 2081 — UK:`。** **→ 2000 年同時有 CD（`…2 9` 尾碼）與黑膠（`…1 2` 尾碼），正文不得只寫 CD。**",
+    "src": "https://api.discogs.com/releases/600090"
+   },
+   {
+    "f": "⚠⚠ **日版多一軌，軌數與其他地區不同。** **Discogs 日版 35569849（`TOCP-65391`，`released` 逐字 `2000-02-16`）的 tracklist 有十五軌**，**第 14 軌逐字 `State of Grace`（5:06）是美歐版沒有的**，**原本的第 14 軌〈A Brighter Day (Remix)〉被推到第 15。** **美版、加拿大版、UK／歐版、黑膠全部是十四軌。** ⚠ **日版 2000-02-16 比美版（`2000-03-14`）早近一個月**——**但軌數不同，依第 1414 條「軌數不同就不是同一張碟」，卡以十四軌形為主體；兩邊都是 2000，`year` 不受影響。**",
+    "src": "https://api.discogs.com/releases/35569849"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「逐軌變動」的說法方向——盤面其實逐軌逐人都標得很細，可以寫死。** **Discogs 加拿大版 3378985 的 credit 欄逐字**：`Ian Martin (4) — Acoustic Bass [2, 10 to 13]`、`Charles \"Poogie\" Bell — Drums [1, 2, 8, 10, 12]`、`Bruce Flowers — Electric Piano [Fender Rhodes] [2, 3, 5]`＋`Piano [8, 10, 12, 13]`＋`Synthesizer [2, 10, 12]`、`Café — Percussion [8 to 10, 12]`、`Ronny Jordan — Bass [8, 9, 11]`＋`Synthesizer [Midi Guitar-synth] [2, 3, 11, 13]`＋`Programmed By [Drums] [2, 5, 7 to 9, 11]`＋`Arranged By [2 to 13]`＋`Written-By [2, 3, 7, 8, 10, 12, 13]`、`Tim Wayne — Programmed By [3 to 5, 7, 10, 11]`。**逐軌欄另有只出現一兩軌的客座**：`Todd Horton — Trumpet [2]`、`Jill Jones — Lead Vocals [4]`、**`Roy Ayers — Vibraphone [5]`**、`Brian Mitchell — Organ [Hammond B3] [7]`、`Andy Gonzalez — Double Bass [9]`、`Marcus Persiani — Piano [9]`、`Philip Hamilton — Voice [10]`、`Clarence Penn — Drums [11]`／`Steve Wilson (2) — Flute [11]`／`Onaje Allan Gumbs — Piano [11]`／`Shivas Shanker — Tabla [11]`／`Sivashakti Sivanesan — Voice [11]`、**`Jeff \"Tain\" Watts — Drums [13]`／`Stefon Harris — Vibraphone [13]`**、`Stephanie McKay — Vocals [1, 2]`。",
+    "src": "https://api.discogs.com/releases/3378985"
+   },
+   {
+    "f": "**加拿大版 3378985 的 notes 把每一軌在哪間棚、哪個月做的都列了出來，逐字「Tracks 3 to 5, 7, 10 & 11 were programmed @ **Skyelab Studios (NYC)** during March, May, June & July 1999. All tracks were recorded @ **Unique Studios (NYC) using Pro Tools** during May, June & July 1999, except 14 recorded @ DJ Spinna Studios. Tracks 1 to 3, 5 to 7, and 10 to 13 were mixed @ **BMG Studios (NYC)** during July & August 1999. Tracks 4 and 8 to 10 were mied @ **Sound On Sound Studios (NYC)** during August 1999. Track 14 was recorded & mixed **November 1999** @ The Thingamajig Lab, Brooklyn NY. Mastered at **Masterdisk (NYC)**.」**（**`mied` 是盤面的錯字**）——**整張是 1999 年 3 月到 11 月分棚分月做完的，2000 年才發。**",
+    "src": "https://api.discogs.com/releases/3378985"
+   },
+   {
+    "f": "**逐軌作曲欄與出版商欄一致，逐字**：1〈A Brighter Day〉`Joel Campbell`＋`Steve Lewinson`、2／3／7／8／10／12／13 七首 `Ronny Jordan`、**4〈Why〉`Bernard Edwards & Nile Rodgers`**（**Chic Music (BMI)**）、**5〈Mystic Voyage〉`Roy Ayers`**（**Ubiquity Music (ASCAP)**）、6〈Breauxlude〉`Zachary Breaux`、**9〈Mambo Inn〉`Mario Bauzá`＋`Bobby Woodlen`＋`Grace Sampson`**、**11〈New Delhi〉`Victor Feldman`**、14〈A Brighter Day (Remix)〉`Dante Smith`（＝Mos Def 的本名）＋`Joel Campbell`＋`Steve Lewinson`。⚠ **第 6 軌逐字 `Zachary Breaux — Rhythm Guitar [Rhythm Guitar Sample]`**——**那是取樣，不是他本人進棚**（Breaux 已於 1997 年過世），**正文不得寫成他參與錄音。**",
+    "src": "https://api.discogs.com/releases/3378985"
+   },
+   {
+    "f": "**紙本：`Top Contemporary Jazz Albums` 至少六期在榜。** **`BB-2000-04-01`／`04-15`／`04-29`／`05-13`／`05-27`／`06-10` 六期的榜頁都命中目錄號 `20208`**（**榜欄逐字帶 `BLUE NOTE 20208`**）。⚠ **這一段的爵士榜是隔週刊登**（第 1423 條的觀察），**六期即約十二週。** ⚠ **另 `BB-2000-05-13` p39 與 `06-10` p60 同一頁同時涵蓋本批的《52nd Street Themes》（`96667`）、《Tonic》（`25271`）、《Charlie Hunter》（`25450`）等多張**——**2000 年爵士榜一頁常常一次撈到本批好幾張。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-01.pdf"
+   },
+   {
+    "f": "⚠ **店面（第 254 條）：`search` us 零命中、換市場才有，而且 Apple 的年份整整標歪一年。** **`search` us 零命中；jp 與 fr 兩市場命中 725789804**，欄位 `Ronny Jordan — A Brighter Day`、`trackCount 14`（**＝美歐版形，不是日版的十五軌**）、**`releaseDate` 標在 1999**、**copyright 卻是 `℗ 2000`**——**同一頁自相矛盾，取 ℗ 那一邊。** ⚠ **`lookup?upc=` 用 CD 的 `724352020829` 與黑膠的 `724352020812` 兩個 barcode 查，兩個都零命中**（第 1426 條記的「兩個 barcode 都零命中」覆核成立）。**封面 CAA：release-group 層 7 圖 ✓。**",
+    "src": "https://itunes.apple.com/search?term=Ronny%20Jordan%20A%20Brighter%20Day&country=jp&entity=album&limit=6"
+   }
+  ],
+  "hookCandidates": [
+   "第五軌翻的是 Roy Ayers 的〈Mystic Voyage〉，而 Ayers 本人就坐在那一軌的顫音琴前面",
+   "十四軌分在四間錄音室、從 1999 年 3 月做到 11 月，連盤面都逐軌把哪一首在哪裡做的列了出來"
+  ],
+  "sound": "十四軌的 acid jazz 盤，1999 年 3 月到 11 月分在四間紐約錄音室做完：編程在 Skyelab、主錄音在 Unique 用 Pro Tools、混音分在 BMG 與 Sound On Sound，最後那首 Mos Def 參與的重混在布魯克林的 The Thingamajig Lab 補錄。Ronny Jordan 的吉他是唯一的定軸，底下逐軌換人——Charles \"Poogie\" Bell 的鼓在五軌、Ian Martin 的低音提琴在五軌、Bruce Flowers 的鍵盤橫跨七軌，Jordan 自己還兼貝斯、合成器與鼓的編程。客座幾乎都只出現一軌：Jill Jones 在〈Why〉唱，Roy Ayers 在〈Mystic Voyage〉親自彈顫音琴——那首正是他自己的曲，第十一軌〈New Delhi〉一次擺進長笛、塔布拉與人聲，第十三軌則是 Jeff \"Tain\" Watts 的鼓加 Stefon Harris 的顫音琴。第六軌只有五十二秒，用的是已故吉他手 Zachary Breaux 的取樣。",
+  "keyTracks": [
+   "A Brighter Day",
+   "Mystic Voyage",
+   "New Delhi"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **紙本**：`Top Contemporary Jazz Albums` **至少六期在榜（`BB-2000-04-01`／`04-15`／`04-29`／`05-13`／`05-27`／`06-10`，榜欄逐字帶 `BLUE NOTE 20208`）**——**隔週刊登，等於約十二週。** (2) **Discogs 六筆條目 `year` 全 2000**（美版零售／美版俱樂部版／加拿大版／日版／UK 黑膠／另一筆），**日版 `TOCP-65391` 的 `released` 逐字 `2000-02-16`。** (3) **MB first-release-date `2000`。** (4) **盤面 ℗**：Apple 725789804 逐字 `℗ 2000`。⚠⚠ **Apple 的 `releaseDate` 卻標在 1999**——**整整歪一年、與同一頁的 ℗ 打架**（第 1426 條記過，本層覆核成立），**不採用。** ⚠ **錄音與混音全部在 1999 年 3 月到 11 月（加拿大版 notes 逐字），與發行年不同**——**正文必須分開講。** ⚠ **日版早近一個月但多一軌〈State of Grace〉**，**依第 1414 條不是同一張碟，卡以十四軌形為主體。** **四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid 37b7f262／掛名 `Ronny Jordan`（池中 1 張同字串）／年份 2000／十四軌 全部成立。**｜⚠⚠ **本層改三處**：(一) **編制**：策展層寫「必須寫逐軌變動」——**方向對，但盤面（加拿大版 3378985）其實逐軌逐人都標了軌號，可以寫死是誰在哪幾軌**；**而且 credit 欄有兩位貝斯（Ian Martin 與 Jordan 自己）之外，第 9 軌另有 `Andy Gonzalez — Double Bass`，是第三位。** (二) ⚠ **載體**：**2000 年有 UK 黑膠 `7243 5 20208 1 2`**（本段通則第 1 條的正面例外），**正文不得只寫 CD。** (三) ⚠ **軌數**：**日版 `TOCP-65391` 十五軌（多第 14 軌〈State of Grace〉），其他地區十四軌**——**卡以十四軌為準。**｜⚠ **第 6 軌〈Breauxlude〉的 `Zachary Breaux — Rhythm Guitar [Rhythm Guitar Sample]` 是取樣、不是他本人進棚**（Breaux 已於 1997 年過世）——**正文不得寫成他參與錄音。**｜⚠ **曲名錯字**：**第 1 軌在美版、俱樂部版、加拿大版與日版上都印成 `A Brigher Day`（少一個 `t`），只有 UK／歐版印對**——**兩形都要試。**｜⚠⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) ⚠⚠ **第 2 軌〈Aftermath〉撞池中的王牌卡 `The Rolling Stones —《Aftermath》`（seed，apex `hall`）**——**本張這一軌的作曲欄逐字是 `Ronny Jordan`（`Ronny Jordan Music (ASCAP)`），與那張碟毫無關係；上架比對、封面與試聽一律帶目錄號 `20208`，不得共用王牌卡的任何資產**（第 1355 條）。 (2) ⚠ **第 5 軌〈Mystic Voyage〉撞池中 `Roy Ayers Ubiquity —《Mystic Voyage》`——而且本張這一軌的作曲者就是 Roy Ayers、他本人還在這一軌彈顫音琴。** **但兩者是不同的錄音（本張 4:14、1999 年紐約錄），逐軌比對其餘十三軌零重疊。** **兩卡 risk 必須互指，正文可以寫「原作者親自參與」但不得寫成同一個錄音。** (3) ⚠ **第 13 軌的 Stefon Harris 同時在同批《New Directions》《Turbulent Flow》與 a 組《Traveling Miles》上**——**四卡的人名交叉寫進 risk。** (4) **其餘軌名逐一比對池中卡名，零命中。**｜**曲風：`['jazz']`。**｜⚠ **店面：`search` us 零命中、jp／fr 才有；兩個 barcode 的 `lookup?upc=` 都零命中**（第 1246／1426 條）——**串流採信 725789804（十四軌對得上）。**｜**封面 CAA 有 7 圖。**"
+ },
+ {
+  "key": "desc2:Chucho Valdés|Live at the Village Vanguard",
+  "artist": "Chucho Valdés",
+  "album": "Live at the Village Vanguard",
+  "facts": [
+   {
+    "f": "release-group b8a51dc6 的欄位：title「Live at the Village Vanguard」、artist-credit「Chucho Valdés」、first-release-date **`2000`**、primary-type Album、**secondary-types `[\"Live\"]`**。**Discogs 美版零售 3480058，Blue Note `7243 5 20730 2 3`，bc 724352073023。** **notes 全文只有一句，逐字「Recorded **April 9 & 10, 1999**.」**——**1999 年 4 月 9、10 兩晚在紐約 Village Vanguard 錄的，2000 年才發。**",
+    "src": "https://api.discogs.com/releases/3480058"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「編制完全查不到」那一句：Discogs 美版零售條目的 credit 欄就有完整的樂手名單。** **策展層與第 1420(一) 條逐字寫「七筆條目的 credits **全部沒有樂手欄**；MB 無關係資料」**——**實際上 Discogs 3480058 的 credit 欄逐字**：`Chucho Valdés — Piano [Acoustic]`、`Francisco Rubio Pampin — Acoustic Bass`、**`Roberto Vizcaíno — Congas, Drums [Bata]`**（**康加加上巴塔鼓**）、`Raul Pineda Roque — Drums [Trap]`，**外加只在一軌的客座 `Mayra Caridad Valdes — Vocals [6]`**（**Chucho 的妹妹**）；**工程 `Jon Fausty`、母帶 `Leon Zervos`。** **→ 編制欄改成「四人 ＋ 第 6 軌一位客座女聲」，「完全查不到」必須撤回。**",
+    "src": "https://api.discogs.com/releases/3480058"
+   },
+   {
+    "f": "⚠ **MB 登 9 軌、軌目卻列出 10 個標題，原因在這裡。** **Discogs 3480058 的 tracklist 在第 8 軌之後有一列沒有軌號的標題列，逐字 `Encore`，第 9 軌〈Lorraine's Habanera〉排在它下面**——**MB 把那一列當成一軌建了進去**（第 1425 條那張表的第 3 列「`track-count` 與軌目列表不一致」的成因，本層查到了）。**實際軌數是九軌**：Anabis／Son XXI (Para Pia)／Punto Cubano／My Funny Valentine／To Bud Powell／Drume Negrita／Como Traigo La Yuca／Ponle La Clave／（安可）Lorraine's Habanera。**時長逐字 9:36／5:26／6:20／5:41／10:45／5:27／6:30／9:16／4:29。**",
+    "src": "https://api.discogs.com/releases/3480058"
+   },
+   {
+    "f": "⚠ **逐軌作曲欄在所有版本上都是空的。** **Discogs 七筆條目的 tracklist 沒有一軌掛 `Written-By`**——**正文不得說任何一首是誰寫的**；**但曲名本身透露了兩處致敬**：**第 5 軌逐字〈To Bud Powell〉（全碟最長，10 分 45 秒）**、**第 4 軌〈My Funny Valentine〉是標準曲**，**第 6 軌〈Drume Negrita〉是古巴的搖籃曲**——**只能寫曲名，不得補作曲者。**",
+    "src": "https://api.discogs.com/releases/7260837"
+   },
+   {
+    "f": "**版本表七筆**：美版零售 3480058、美版宣傳 37702605、**美版先行宣傳盤 14337168（`…2 3V`）**、美版 BMG 俱樂部版 8480648、歐版 7260837（**廠牌欄第一格逐字 `EMI`**）、**加拿大版 18787333（Blue Note `CDP 520730`）**、**日版 11496836（`TOCJ-66085`，`format` 帶 `Promo`——日本只有宣傳盤、沒有零售條目）**。⚠ **零黑膠、零卡帶**（本段通則第 1 條逐張查）。",
+    "src": "https://api.discogs.com/masters/862619/versions"
+   },
+   {
+    "f": "**紙本：`Top Jazz Albums` 以 `NEW` 進第 19 名後連數期在榜（`BB-2000-04-29` p113 起，`05-13` p39 等頁同時命中目錄號 `20730`）。** ⚠ **另有一整串與本張無關的命中要擋**：**`chucho` 這個字串在 2000 年 1 月到 2 月的六處（`01-15` p68／`01-22` p32／`01-29` p25／`02-05` p81／`02-19` p3 與 p94／`02-26` p44）全部是別的報導**——**第 1360／1424 條的形狀，逐條讀完只留下 4 月起的榜位。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-29.pdf"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724352073023` 四種查法命中同一筆，`Chucho Valdés — Live at the Village Vanguard`、`trackCount 9`（**＝盤面的九軌，沒有把 `Encore` 那一列算進去**）、`℗ 2000 Blue Note Records`；**九軌與盤面逐軌同名同序、全部有 preview。** **封面 CAA：release-group 層 1 圖 ✓；Discogs 3480058 的 `images[0]` 是 `primary` 600×600（該條目共 12 張圖），可作備案。**",
+    "src": "https://itunes.apple.com/lookup?upc=724352073023&country=us"
+   },
+   {
+    "f": "⚠ **盤名在池中是高度撞名的字串。** **`Live at the Village Vanguard` 這個盤名在池中至少有四張一字不差的同名卡**（第 1202 條記過 Petrucciani 那一張），**2000 年的 Billboard 同期榜上還有 `WYNTON MARSALIS SEPTET COLUMBIA 69876 LIVE AT THE VILLAGE VANGUARD`**（`BB-2000-01-22` p45 榜欄逐字）。**→ 上架比對一律帶掛名 ＋ 目錄號 `7243 5 20730 2 3`，`chk-prop` 的折鍵不會報。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-22.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "1999 年 4 月連兩晚在 Village Vanguard 錄的，台上只有四個人——鋼琴、低音提琴、康加兼巴塔鼓、一套鼓",
+   "第六軌是古巴搖籃曲〈Drume Negrita〉，唱的是他妹妹 Mayra Caridad Valdés，全碟唯一有人聲的一軌"
+  ],
+  "sound": "1999 年 4 月 9、10 兩晚在紐約 Village Vanguard 錄的九軌，2000 年發。台上四個人：Chucho Valdés 的鋼琴、Francisco Rubio Pampin 的低音提琴、Roberto Vizcaíno 的康加與巴塔鼓、Raul Pineda Roque 的爵士鼓——古巴的宗教鼓與爵士鼓組同時在台上是這張碟的編制核心。唯一有人聲的是第六軌的古巴搖籃曲〈Drume Negrita〉，唱的是他妹妹 Mayra Caridad Valdés。曲目多半是古巴的曲名（〈Punto Cubano〉〈Como Traigo la Yuca〉〈Ponle la Clave〉），中間插一首標準曲〈My Funny Valentine〉，全碟最長的是十分四十五秒的〈To Bud Powell〉，收尾的〈Lorraine's Habanera〉在盤面上被標成安可。工程 Jon Fausty、母帶 Leon Zervos。",
+  "keyTracks": [
+   "To Bud Powell",
+   "Drume Negrita",
+   "Lorraine's Habanera"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **紙本**：`Top Jazz Albums` **`BB-2000-04-29` p113 以 `NEW` 進第 19 名**，其後 `05-13` p39 等頁同樣命中目錄號 `20730`。(2) **MB first-release-date `2000`。** (3) **Discogs 七筆條目 `year` 全 2000**（美版零售／美版宣傳／美版先行宣傳／美版俱樂部版／歐版／加拿大版／日版宣傳）。(4) **盤面 ℗**：Apple 逐字 `℗ 2000 Blue Note Records`。⚠ **演出是 1999-04-09／10（notes 逐字），比發行早一年**——**第 1246 條「MB frd 與 Discogs `released` 會填成現場演出日」的陷阱在本張沒有中，但正文必須把演出年與發行年分開講。** ⚠ **日版 `TOCJ-66085` 只有宣傳盤一筆、`year` 也是 2000**，**不存在日版先出的形狀。** **四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid b8a51dc6／掛名 `Chucho Valdés`（池中 3 張同字串）／年份 2000／九軌／`live: true` 全部成立。**｜⚠⚠ **本層推翻策展層與第 1420(一) 條把本張列進「編制完全查不到」那一格**：**Discogs 美版零售 3480058 的 credit 欄就有四位樂手加一位客座女聲**（`Chucho Valdés — Piano [Acoustic]`／`Francisco Rubio Pampin — Acoustic Bass`／`Roberto Vizcaíno — Congas, Drums [Bata]`／`Raul Pineda Roque — Drums [Trap]`／`Mayra Caridad Valdes — Vocals [6]`）。**→ 編制欄改成「四人 ＋ 第 6 軌客座女聲」；「完全查不到」撤回。**｜⚠ **第 1425 條「MB 登 9 軌、軌目列 10 個標題」的成因本層查到了**：**Discogs 的 tracklist 在第 8 軌後有一列無軌號的 `Encore` 標題列，MB 把它當成一軌建了進去。** **實際軌數九軌。**｜⚠ **逐軌作曲欄在七筆條目上全空**——**正文不得說任何一首是誰寫的。**｜⚠ **撞陳列**：(1) ⚠⚠ **盤名 `Live at the Village Vanguard` 在池中至少四張一字不差的同名卡，`chk-prop` 的折鍵不報**；**2000 年同期的爵士榜上還有 Wynton Marsalis Septet 的同名碟**——**上架比對一律帶掛名＋目錄號。** (2) **與池中 Chucho Valdés 三張 ＋ Irakere 兩張逐軌比對，零重疊**（策展層第 12 組覆核成立）。 (3) **軌名撞池中卡名一處：〈My Funny Valentine〉（撞 Miles Davis 的同名卡）**——**常見標準曲同名，不是同碟。**｜⚠ **紙本誤讀**：**`chucho` 在 2000 年 1 至 2 月的六處全部是別的報導**（第 1360／1424 條），**逐條讀完才留下 4 月起的榜位。**｜**載體：Discogs 七筆全 CD，零黑膠。**｜**封面 CAA 有 1 圖，備案 Discogs 3480058 的 primary 600×600（該條目 12 張圖）；試聽 Apple 九軌對得上。**"
+ },
+ {
+  "key": "desc2:Eliane Elias|Everything I Love",
+  "artist": "Eliane Elias",
+  "album": "Everything I Love",
+  "facts": [
+   {
+    "f": "release-group c4b0c79e 的欄位：title「Everything I Love」、artist-credit「Eliane Elias」、first-release-date **`2000`**、primary-type Album、secondary-types 空。**Discogs 美版零售 15521290，Blue Note `7243 5 20827 2 8`，十三軌。** **notes 逐字「Recorded & mixed at **Avatar Studios, New York (May/June '99)**. CD comes in all-clear jewel case with 10-page foldout. ℗ & © **2000** Capitol Records, Inc. Printed in U.S.A.」**——**1999 年 5、6 月錄與混音，2000 年才發。**",
+    "src": "https://api.discogs.com/releases/15521290"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「兩位貝斯＋兩位鼓，零逐軌標記」那一句：四個人的軌號盤面全部標了，而且十三軌正好切成兩組。** **Discogs 15521290 的 credit 欄逐字**：**`Christian McBride — Bass [1, 2, 11, 12]` 與 `Marc Johnson (2) — Bass [3 to 10, 13]`**、**`Carl Allen — Drums [1 to 3, 11, 12]` 與 `Jack DeJohnette — Drums [4 to 10, 13]`**。⚠ **歐版 3833275 的同一欄把 DeJohnette 寫成 `[3 to 10, 13]`——與美版差一軌（第 3 軌）**，**兩版打架，本層以美版為準並把歧異寫進 risk。** **另 `Eliane Elias — Piano, Producer` 與 **`Eliane Elias — Voice [3, 4, 7, 12]`**（**她只在四軌開口唱**），**共同製作 `Marc Johnson (2)`，錄音與混音 `Joe Ferla`，母帶 `Greg Calbi`。**",
+    "src": "https://api.discogs.com/releases/15521290"
+   },
+   {
+    "f": "⚠ **還有一位策展層沒提到的客座**：**Discogs 15521290 的第 3 軌〈The Beat Of My Heart〉逐軌欄逐字 `Rodney Jones — Guitar`**——**全碟唯一的吉他，只出現在這一軌。** ⚠ **Rodney Jones 同年也有自己的 Blue Note 盤（`BB-1999-10-09` p25 的廠牌秋季廣告逐字「Rodney Jones **The Undiscovered Few** … The guitarist's guitarist makes his Blue Note debut.」）**——**兩張碟不同，本張他只是一軌的客座。**",
+    "src": "https://api.discogs.com/releases/15521290"
+   },
+   {
+    "f": "⚠ **MB 登 13 軌、軌目卻列 16 個標題，成因在三首帶引子的曲上。** **Discogs 歐版 3833275 把它們編成第 6、10、13 軌，標題逐字 `Introduction #1/If I Should Lose You`、`Introduction #2/Alone Together`、`Introduction #3/Autumn Leaves`**；**美版 15521290 的同三列則沒有軌號（位置欄是空的）**——**MB 因此把「引子」與「曲」拆成兩軌各建一次**（第 1425 條那張表的第 3 列，本層查到成因）。**實際軌數十三軌。**",
+    "src": "https://api.discogs.com/releases/3833275"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 歐版 3833275 最完整）逐字**：1〈Bowing To Bud〉與 9〈That's All It Was〉是 `Eliane Elias`；2〈Nostalgia In Times Square〉**`Charles Mingus`**；3〈The Beat Of My Heart〉`Johnny Burke`＋`Harold Spina`；4〈I Fall In Love Too Easily〉`Jule Styne And Sammy Cahn`；**5〈Everything I Love〉與 8〈I Love You〉都是 `Cole Porter`**；6 的曲身〈If I Should Lose You〉是 `Ralph Rainger`＋`Leo Robin`、**引子掛 `Eliane Elias — Written-By [Introduction]`**；7〈They Say It's Wonderful〉`Irving Berlin`；10 的曲身〈Alone Together〉是 `Schwartz & Dietz`；11〈Woody 'N You〉**`Dizzy Gillespie`**；12〈Blah Blah Blah〉`George & Ira Gershwin`；13 的曲身〈Autumn Leaves〉是 `Joseph Kosma`＋`Jacques Prévert`＋`Johnny Mercer`。**→ 三首引子是她自己寫的，正曲十三首裡她只獨掛兩首。**",
+    "src": "https://api.discogs.com/releases/3833275"
+   },
+   {
+    "f": "⚠ **歐版與再壓版的價格代碼與目錄號欄位形狀**：**歐版 3833275 的 identifiers 逐字 `Price Code — PM 520 — F` 與 `Other — 520 8272 — Cat# UK`**；**另一筆無年份的歐版再壓 13413949（`format` 帶 `Reissue`、`year` 是 0）逐字有 `Price Code — PM 520 — F`、`Price Code — 520 8272 — UK` 與模壓環 `Sony DADC [Universal logo] 5208272 12 A00`**（**壓片廠換成 Sony DADC、logo 是 Universal**——**那是後來的再壓，第 550／570／708 條排除**）。",
+    "src": "https://api.discogs.com/releases/13413949"
+   },
+   {
+    "f": "**紙本：2000 全年對本張零命中。** **`everything i love`／`20827`／`eliane elias` 三種字串都掃過**（第 1245 條）：⚠ **`everything i love` 命中的是 George Strait 單曲的出版商欄（同名的音樂出版公司）**（第 1301／1424 條已記過，本層逐條讀完再次確認）；**`eliane elias` 只命中兩處人物報導**（`BB-2000-02-19` p96 的 IAJE 年會照片說明、`BB-2000-06-03` p56 的 Billboard／BET On Jazz 頒獎典禮預告），**都不是本張的發行證據**；**`20827` 零命中。** ⚠ **兩張爵士榜全年零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-06-03.pdf"
+   },
+   {
+    "f": "⚠ **店面（第 254 條）：`search` us 零命中，jp／fr 才有。** **Apple `search` 的 jp 與 fr 兩市場命中同一筆**，`Eliane Elias — Everything I Love`、`trackCount 13`、`℗ 2000`；**`lookup?upc=724352082728` 同一筆。** **十三軌與歐版盤面逐軌同名同序、全部有 preview。** **封面 CAA：release-group 層 8 圖（本批最多的一張）✓；Discogs 美版 15521290 的 `images[0]` 是 `primary` 600×600（該條目 13 張圖），可作備案。**",
+    "src": "https://itunes.apple.com/lookup?upc=724352082728&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌換了兩組節奏組：前面幾首是 Christian McBride 與 Carl Allen，中段整段換成 Marc Johnson 與 Jack DeJohnette",
+   "有三首曲子前面掛了她自己寫的引子，盤面把它們標成 Introduction #1 到 #3"
+  ],
+  "sound": "鋼琴三重奏的十三軌，1999 年 5、6 月在紐約 Avatar Studios 錄音與混音，2000 年發。節奏組分成兩組：Christian McBride 的貝斯與 Carl Allen 的鼓管第 1、2、11、12 軌，Marc Johnson 的貝斯與 Jack DeJohnette 的鼓管中段與收尾——Marc Johnson 同時掛共同製作。Elias 自己只在四軌開口唱，其餘是純器樂。曲目以標準曲為主：Cole Porter 佔兩首（盤名那一首與〈I Love You〉），另有 Mingus 的〈Nostalgia in Times Square〉、Gillespie 的〈Woody 'N You〉、Irving Berlin 與 Gershwin 兄弟各一首；她自己獨掛作曲的只有〈Bowing to Bud〉與〈That's All It Was〉兩首。三首曲子前面加了她寫的鋼琴引子，盤面標成 Introduction #1 到 #3。第三軌是全碟唯一有吉他的一軌，彈的是 Rodney Jones。",
+  "keyTracks": [
+   "Bowing to Bud",
+   "Everything I Love",
+   "Woody 'N You"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **盤面 ℗©**：Discogs 美版 15521290 的 notes 逐字 `℗ & © 2000 Capitol Records, Inc.`、歐版 3833275 逐字 `℗&© 2000 Capitol Records, Inc.`。(2) **MB first-release-date `2000`。** (3) **Discogs 五筆零售條目 `year` 全 2000**；⚠ **排除兩筆**：**無年份的歐版再壓 13413949（`year` 0、`format` 帶 `Reissue`、模壓環已換成 Sony DADC）**，**以及策展層記過的先行宣傳盤（標 1999，第 1297 條只能當下界）。** (4) **盤面 ℗ 的第二個來源**：Apple 逐字 `℗ 2000`。⚠ **錄音與混音在 1999 年 5、6 月，比發行早半年**——**正文不得把錄音年寫成發行年。** ⚠ **紙本三種字串全零命中**（⚠ `everything i love` 命中的是 George Strait 單曲的同名出版公司欄，第 1301／1424 條）。⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目。** **三層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid c4b0c79e／掛名 `Eliane Elias`（池中 7 張同字串）／年份 2000／十三軌 全部成立。**｜⚠⚠ **本層推翻策展層編制欄那一句**：`risk` 與第 1420(二) 條都寫「兩位貝斯（Marc Johnson／Christian McBride）＋兩位鼓（Carl Allen／Jack DeJohnette），**零逐軌標記**」——**實際上四個人的軌號盤面全部標了，而且十三軌正好切成兩組**（McBride `[1, 2, 11, 12]`／Johnson `[3 to 10, 13]`；Allen `[1 to 3, 11, 12]`／DeJohnette `[4 to 10, 13]`）。**→ 編制欄改成逐軌寫死。** ⚠ **但美版與歐版有一格打架**：**歐版把 DeJohnette 寫成 `[3 to 10, 13]`，與美版差第 3 軌**——**以美版為準，歧異寫進 risk。**｜⚠ **另補兩處策展層沒提到的**：(一) **`Eliane Elias — Voice [3, 4, 7, 12]`**——**她只在四軌唱**；(二) **第 3 軌有 `Rodney Jones — Guitar`**，**全碟唯一的吉他，而 Rodney Jones 同年另有自己的 Blue Note 盤。**｜⚠ **第 1425 條「MB 登 13 軌、軌目列 16 個」的成因本層查到了**：**三首曲的標題是 `Introduction #n/曲名` 的合併形，美版 Discogs 的那三列甚至沒有軌號**——**MB 把引子與曲拆成兩軌各建一次。實際十三軌。**｜⚠ **撞陳列**：(1) **與池中 `Eliane Elias Sings Jobim`（c-155 b）與 `Eliane Elias Plays Jobim`（c-150 a）逐軌比對零重疊**，三卡互指。 (2) **軌名撞池中卡名兩處：〈Everything I Love〉（撞 `Kenny Drew` 的盤名）與〈I Love You〉（撞本田竹広的卡）**——**逐條讀完都不是同碟。** (3) ⚠ **Christian McBride 同時是同批 a 組 `Benny Green —《These Are Soulful Days》` 的貝斯手**——**兩卡 risk 互指。** (4) ⚠ **Jack DeJohnette 同時是同批 a 組 `Don Byron —《Romance with the Unseen》` 的鼓手**——**兩卡 risk 互指。**｜⚠ **歐版與再壓版的 `Price Code` 逐字 `PM 520 — F` 與 `520 8272 — UK`**（第 1422 條的同一組字串）。｜**載體：Discogs 七筆全 CD，零黑膠。**｜**封面 CAA 有 8 圖（本批最多），備案 Discogs 15521290 的 primary 600×600；試聽 `search` us 零命中、jp／fr 才有（第 1246 條），十三軌對得上。**"
+ },
+ {
+  "key": "desc2:Kurt Elling|Live in Chicago",
+  "artist": "Kurt Elling",
+  "album": "Live in Chicago",
+  "facts": [
+   {
+    "f": "release-group fc977779 的欄位：title「Live in Chicago」、artist-credit「Kurt Elling」、first-release-date **2000-01-11**、primary-type Album、**secondary-types `[\"Live\"]`**。**Discogs 美版 4121220（Blue Note `7243 5 22211 2 7`，bc 724352221127）的 `released` 逐字 `2000-01-11`、十四軌**，**notes 逐字「Recorded **July 14, 15 & 16, 1999** at **The Green Mill Jazz Club, Chicago**」。**",
+    "src": "https://api.discogs.com/releases/4121220"
+   },
+   {
+    "f": "⚠⚠ **美版與英歐版對五位客座的標法完全不同，而且連樂器都寫得不一樣——本層以美版為準。** **美版 4121220 的 credit 欄逐字把五個人全部標成 `Guest [Featured Guest Artist]`**：`Von Freeman — Guest [Featured Guest Artist], Tenor Saxophone`、`Ed Petersen — 同`、`Eddie Johnson — 同`、**`Kahil El'Zabar — Guest [Featured Guest Artist], Drums [Hand Drums]`**、`Jon Hendricks — Guest [Featured Guest Artist], Voice`。**英版 3736099 與歐版 8332171 的同一欄沒有 `Guest` 標記、把他們與常態三人並列**，⚠ **而且把 El'Zabar 的樂器寫成 `Body Percussion`（美版寫 `Drums [Hand Drums]`）、把 Hendricks 寫成 `Vocals`（美版寫 `Voice`）。** **→ 兩版打架，以美版為準；常態編制是 `Laurence Hobgood — Piano`、`Rob Amster — Bass`、`Michael Raynor — Drums` 三人加 Elling。**",
+    "src": "https://api.discogs.com/releases/4121220"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 美版 4121220）逐字**：**1〈Downtown〉`Russell Ferrante`**（**Yellowjackets 的鍵盤手**）、2〈My Foolish Heart〉`Victor Young`＋`Ned Washington`、3〈Smoke Gets In Your Eyes〉`Jerome Kern`＋`Otto Harbach`、**4〈Oh My God〉`Sting`**、**5〈Night Dream〉`Kurt Elling`＋`Wayne Shorter`**、6〈(I Love You) For Sentimental Reasons〉`William Best`＋`Deek Watson`、**8〈Esperanto〉`Kurt Elling`＋`Vince Mendoza`**、9〈Don't Get Scared〉`Stan Getz`＋`King Pleasure`＋`Jon Hendricks`、**11〈Goin' To Chicago〉`Traditional` ＋ `Jon Hendricks — Lyrics By [Vocalese Lyric]`**、13〈The Rent Party〉`Kurt Elling`＋**`Ed Petersen`**（**台上的次中音手之一**）、14〈Blues Chaser〉四人共寫（Elling／Hobgood／Raynor／Amster）。⚠ **第 7、10、12 三軌是沒有作曲欄的口白引子（`Intro: (…)`，各 0 分 43 秒到 1 分 44 秒）。**",
+    "src": "https://api.discogs.com/releases/4121220"
+   },
+   {
+    "f": "⚠⚠ **年份：Discogs 有三筆 1999 年的條目，本層仍取 2000——覆核策展層第 1415 條並補一層新證據。** **指向 1999 的四筆**：英版 3736099（catno `522 2112`，`year` 1999、**`released` 欄也只是 `1999`**）、歐版 8332171（同）、澳版 10538492（同）、美版先行宣傳盤 16150326（`…2 7V`，`format` 帶 `Advance`）。**指向 2000 的三層**：**(一) 美版 4121220 的 `released` 逐字 `2000-01-11`（三筆 1999 的都沒有 `released` 日期）**；**(二) MB first-release-date `2000-01-11`**；**(三) 紙本——`BB-2000-01-08` p32 的 `BLUE NOTES` 專欄逐字「therefore, it is appropriate that \"**Live In Chicago**,\" his **fourth Blue Note release**, **due Jan. 11**, is a collection of performances at the Green Mill, the club where Elling has held residence on Wednesday nights」。** **→ 取 2000；三筆 1999 是第 550／570／708 條「Discogs 年份欄整群抄盤面 ℗ 年」（℗ 是 1999 因為錄音在 1999 年 7 月），宣傳盤的 1999 只能當下界（第 1297 條）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-08.pdf"
+   },
+   {
+    "f": "**紙本另有榜位，把 2000 年這一邊釘得更死。** **`Top Jazz Albums` `BB-2000-02-05` p58 第 22 名（榜欄逐字 `KURT ELLING BLUE NOTE 22211 /CAPITOL LIVE IN CHICAGO`，**在榜週數欄 `2`**）、`02-19` p37 與 `03-04` p53 連續在榜。** **02-05 那期的在榜週數是 `2`，回推首度上榜 2000-01-29——與 1 月 11 日的街頭日吻合。** ⚠ **`elling` 這個字串在 2000 年會大量命中 `selling`**（第 1424 條），**逐條讀完才留下這幾處。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-02-05.pdf"
+   },
+   {
+    "f": "**版本表七筆**：美版零售 4121220、美版先行宣傳 16150326、英版 3736099、歐版 8332171、澳版 10538492、**澳洲的續篇碟 11942922（`7243 5 25494 2 9`＝同批第 21 張《Live in Chicago - Out Takes》）**、**Elling 自己後來的無廠牌再發 9645159**。⚠ **零黑膠、零卡帶、零日版**（本段通則第 1 條逐張查）。⚠ **英版的目錄號是 `522 2112`、與美版的 `7243 5 22211 2 7` 完全不同形**（第 1250 條：**反查兩形都要試**）。",
+    "src": "https://api.discogs.com/masters/502751/versions"
+   },
+   {
+    "f": "⚠ **店面（第 254 條）：`search` us 零命中，fr 才有。** **Apple `search` 的 fr 市場命中 723467420**，`Kurt Elling — Live in Chicago`、`trackCount 14`、`℗ 1999 Blue Note Records`（⚠ **店面的 ℗ 跟著盤面寫 1999，與實體發行年 2000 不同**）；**`lookup?upc=724352221127` 同一筆。** **十四軌與盤面逐軌同名同序（含三段 `Intro:`）、全部有 preview。** **封面 CAA：release-group 層 7 圖 ✓；Discogs 美版 4121220 的 `images[0]` 是 `primary` 600×528，可作備案（⚠ 英版 3736099 唯一一張圖是 300×300 的 `secondary`，不可用）。**",
+    "src": "https://itunes.apple.com/lookup?upc=724352221127&country=us"
+   },
+   {
+    "f": "⚠⚠ **與同批第 21 張《Live in Chicago - Out Takes》是同三晚的兩批母帶，必須逐軌講清楚。** **本張十四軌（含三段引子）與那張六軌逐軌比對零重疊**；**本張的錄音日期逐字是 `July 14, 15 & 16, 1999`，那張的 notes 逐字寫 `July 4 and 16, 1999`**——**`July 4` 幾乎確定是掉了一個 `1`，正文以本張的三晚為準。** **那張只在澳洲發行（`7243 5 25494 2 9`），有自己的目錄號、自己的 master 與自己的 MB RG。** **兩卡 risk 互指、上架比對帶目錄號與軌數。**",
+    "src": "https://api.discogs.com/releases/11942922"
+   }
+  ],
+  "hookCandidates": [
+   "Green Mill 是他每週三晚駐唱的那間店，這張就是在那裡連錄三晚的成果——廠牌專欄自己這麼寫",
+   "十四軌裡有三段只有幾十秒的口白引子，而客座名單從 Von Freeman 一路排到 Jon Hendricks"
+  ],
+  "sound": "1999 年 7 月 14、15、16 三晚在芝加哥 Green Mill 爵士俱樂部錄的十四軌——那是 Elling 每週三晚駐唱的店。常態班底是三個人：Laurence Hobgood 的鋼琴、Rob Amster 的貝斯、Michael Raynor 的鼓；客座五位，盤面把他們全部標成特別來賓——Von Freeman、Ed Petersen、Eddie Johnson 三把次中音薩克斯，Kahil El'Zabar 的手鼓，以及 vocalese 的祖師 Jon Hendricks。曲目從 Yellowjackets 的 Russell Ferrante 寫的〈Downtown〉開場，中間有 Sting 的〈Oh My God〉、Elling 與 Wayne Shorter 合寫的〈Night Dream〉、Elling 與 Vince Mendoza 的〈Esperanto〉，最長的〈My Foolish Heart〉十二分十五秒。十四軌裡有三段只有幾十秒的口白引子，收尾的〈Blues Chaser〉由四人共寫、只有一分半。製作是 Elling 與 Hobgood 兩人。",
+  "keyTracks": [
+   "My Foolish Heart",
+   "Oh My God",
+   "Goin' to Chicago"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判，但這是本組「推翻一層來源後仍維持原值」的兩張之一，逐層重驗如下。** **指向 1999 的四筆**：Discogs 英版 3736099（catno `522 2112`）、歐版 8332171、澳版 10538492 的 `year` 都是 1999，**但三筆都只有 `year`、沒有 `released` 日期**（第 1415 條：**只有 `year` 的那種多半是抄盤面 ℗**）；**美版先行宣傳盤 16150326 標 1999，第 1297 條只能當下界。** **另 Apple fr 的 copyright 逐字 `℗ 1999 Blue Note Records`**——**盤面 ℗ 是 1999，因為錄音在 1999 年 7 月。** **指向 2000 的四層**：(1) **紙本（階序最上層）**：`BB-2000-01-08` p32 的 `BLUE NOTES` 專欄逐字「\"Live In Chicago,\" his fourth Blue Note release, **due Jan. 11**」——**而且文體是預告。** (2) **MB first-release-date `2000-01-11`。** (3) **Discogs 美版 4121220 的 `released` 逐字 `2000-01-11`（三筆 1999 的都沒有這一欄）。** (4) **榜位**：`Top Jazz Albums` `BB-2000-02-05` p58 第 22 名、在榜週數 `2`（回推首度上榜 2000-01-29），`02-19` p37 與 `03-04` p53 連續在榜。**→ 取 2000。** ⚠ **演出 1999-07-14／15／16 只寫正文。**",
+  "notes": "**覆核策展層：rgMbid fc977779／掛名 `Kurt Elling`（池中 3 張同字串，同批另一張《Live in Chicago - Out Takes》共用）／年份 2000（第 1415 條的改判覆核成立）／十四軌／`live: true` 全部成立。**｜⚠ **編制：美版與英歐版打架，以美版為準**（策展層已提醒，本層再補一格）：**英歐版不只是少了 `Guest` 標記，連樂器都寫得不一樣**——**El'Zabar 在美版是 `Drums [Hand Drums]`、在英歐版是 `Body Percussion`；Hendricks 在美版是 `Voice`、在英歐版是 `Vocals`。** **常態編制是 Hobgood p／Amster b／Raynor d 三人加 Elling，五位客座另記。**｜⚠ **十四軌裡有三軌是口白引子（第 7、10、12 軌，`Intro: (…)`），沒有作曲欄**——**正文寫軌數時要知道這件事。**｜⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) ⚠⚠ **同批第 21 張《Live in Chicago - Out Takes》是同三晚的另一批母帶**——**十四軌對六軌零重疊，兩卡 risk 互指、上架帶目錄號（`22211` 對 `25494`）與軌數。** ⚠ **那張的 notes 把錄音日期寫成 `July 4 and 16, 1999`，本張三筆條目一致寫 `July 14, 15 & 16, 1999`——`July 4` 幾乎確定掉了一個 `1`，正文以本張為準。** (2) **軌名撞池中卡名兩處：〈Downtown〉（撞 EPO 與 Petula Clark 的同名卡）與〈Oh My God〉（撞 Doug E. Fresh 與花生隊長的同名卡）**——**逐條讀完都不是同碟；本張的〈Downtown〉是 Russell Ferrante 的曲、〈Oh My God〉是 Sting 的曲。** (3) **第 3 軌〈Smoke Gets in Your Eyes〉與同批《Nature Boy》第 6 軌同名同曲（都是 Jerome Kern 寫的）**——**不同錄音，兩卡 risk 註明。**｜⚠ **英版目錄號 `522 2112` 與美版 `7243 5 22211 2 7` 完全不同形**（第 1250 條）。｜**載體：Discogs 七筆全 CD，零黑膠、零日版。**｜⚠ **`elling` 在 2000 年的紙本會大量命中 `selling`**（第 1424 條）。｜**封面 CAA 有 7 圖，備案 Discogs 4121220 的 primary 600×528（⚠ 英版 3736099 唯一一張圖是 300×300 的 secondary）；試聽 `search` us 零命中、fr 才有，串流採信 723467420（十四軌對得上）。**"
+ },
+ {
+  "key": "desc2:Medeski Martin & Wood|The Dropper",
+  "artist": "Medeski Martin & Wood",
+  "album": "The Dropper",
+  "facts": [
+   {
+    "f": "release-group 61d35a8c 的欄位：title「The Dropper」、artist-credit「Medeski Martin & Wood」、first-release-date **2000-10-24**、primary-type Album、secondary-types 空。**Discogs 美版零售 222378，Blue Note `7243 5 22841 2 2`，十三軌。** ⚠ **歐版 14823855 的 notes 逐字把三個目錄號的印法分開寫了：「Catalog numbers: **7243 5 22841 2 2** - on CD and above barcode **7243 5 22841 22** - on backcover and spine **522 8412** on back cover」**，**並逐字說「Total playing time **51:13**」、「Issued in a **6-panel Digipak**」。**",
+    "src": "https://api.discogs.com/releases/14823855"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「三人，Marc Ribot 是唯一客座、無逐軌標記」那一句：Ribot 標了軌號，而且客座不只他一個，總共有七位。** **Discogs 的逐軌欄逐字**：**`Marc Ribot — Guitar [6, 7, 8]`**（**三軌**）、**第 4 軌〈Partido Alto〉逐字 `Marshall Allen — Alto Saxophone [Alto Sax]` 與 `Eddie Bobé — Congas`**、**第 10 軌〈Sun Sleigh〉逐字 `Paula Potocki — Surdo`**、**第 11 軌〈Tsukemono〉逐字 `Charles Burnham — Violin`**、**第 13 軌〈Norah 6〉逐字 `Jane Scarpantoni — Cello`、`Charles Burnham — Violin`、`Joan Wasser — Violin`**。**→ 客座七位、全部標了軌號，其中 Marshall Allen 是 Sun Ra Arkestra 的中音薩克斯手。** **常態三人逐字 `John Medeski — Keyboards`、`Chris Wood (3) — Acoustic Bass, Electric Bass`、`Billy Martin — Drums, Percussion`。**",
+    "src": "https://api.discogs.com/releases/14823855"
+   },
+   {
+    "f": "**Discogs 歐版 14823855 的 notes 逐字「℗ © 2000 Capitol Records, Inc. **Recorded at Shacklyn (Brooklyn, NY) 1999-2000. Mixed at Greene Street Studios (NYC) 1999-2000.**」**——**錄音與混音都跨 1999 到 2000 兩年，盤面沒有給單一日期。** **製作掛名逐字 `Medeski Martin & Wood — Producer` 與 `Scotty Hard — Producer`（他同時掛 `Engineer`），母帶 `Howie Weinberg`、助理母帶 `Andy VanDette`，攝影 `Danny Clinch`。** ⚠ **混音逐軌也標了**：**十三軌裡十二軌逐字 `Scotty Hard — Mixed By`，只有第 5 軌〈Illinization〉逐字 `David Baker — Mixed By`。**",
+    "src": "https://api.discogs.com/releases/14823855"
+   },
+   {
+    "f": "⚠ **掛名在同一張碟的正面與背面不一樣，盤面自己把這件事寫了出來。** **Discogs 歐版 14823855 的 notes 逐字「The artist name is **Medeski Martin And Wood** on the front cover and **Medeski Martin & Wood** on the back cover and disc face.」**——**`And` 形與 `&` 形同時出現在同一張碟上。** **MB RG credit 與池中既有字串都是 `&` 形，卡照 `&` 形，`And` 形收進 `queryAlias`，不另立字串**（第 1131／1356 條）。",
+    "src": "https://api.discogs.com/releases/14823855"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 14823855）逐字**：**十三軌裡十二軌是 `Medeski Martin & Wood`（團體共掛），只有第 7 軌〈Note Bleu〉逐字 `John Medeski` 一人。** **時長逐字 7:04／3:23／3:21／5:42／2:31／2:22／3:01／3:29／4:49／2:23／3:23／4:44／4:51**——**最長的開場〈We Are Rolling〉七分零四秒、最短的〈Bone Digger〉與〈Sun Sleigh〉只有兩分二十秒上下。** ⚠ **第 3 軌的曲名逐字帶重音 `Fèlic`**——**上架比對要注意。**",
+    "src": "https://api.discogs.com/releases/14823855"
+   },
+   {
+    "f": "**紙本：廠牌預告 ＋ 全版廣告 ＋ 評介，三層都逐字給了目錄號或街頭日。** **`BB-2000-09-16` p92 的 `ALBUM FORECAST` 逐字「Bob Dorough and Dave Frishberg question \"Who's On First\" (**Oct. 24** on Blue Note), and Medeski Martin & Wood bring down \"**The Dropper**\" (**Oct. 24** on Blue Note).」**（**同一句同時給了本批第 16 張的街頭日**）；**`BB-2000-10-28` p5 是 Blue Note 的廣告，逐字引「**The Dropper is a quantum leap of inspired recklessness beyond anything (MMW) have recorded in their nine year career**.」並把目錄號 `7243 5 22841 2 2` 與 `www.mmw.net`／`www.bluenote.com` 兩個網址印在同一頁**；**`BB-2000-11-04` p26 的評介欄再列一次（廠牌欄逐字 `Blue Note 22841`）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf"
+   },
+   {
+    "f": "**版本表十二筆**：美版零售 222378、美版 BMG 俱樂部版 20578165（目錄號 `CDP 522841`）、美版宣傳多筆、歐版 2971999 與 14823855（後者 `year` 是 0、`format` 帶 `Repress`，**第 550／570／708 條排除**）等。⚠ **零黑膠、零卡帶**（本段通則第 1 條逐張查）——**MMW 早期在 Gramavision／Rykodisc 時代有黑膠，但這一張 Blue Note 盤沒有。** ⚠ **第 1422 條的假陽性在本張**：**`22841` 這組數字會撞 Randy Travis 1989 單曲、Toetag、荷蘭 Pink Elephant 與 Los Rodríguez 共五筆**——**反查一律用完整目錄號。**",
+    "src": "https://api.discogs.com/masters/127975/versions"
+   },
+   {
+    "f": "**店面（第 254 條）**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724352284122` 四種查法命中，`Medeski Martin & Wood — The Dropper`、`trackCount 13`；⚠ **copyright 欄逐字 `℗ 2013`——那是後來重發的年份，不是首發年**（第 1426 條那種形狀）；⚠ **同一張碟在 Apple 上回兩個條目**（第 1426 條記過），**逐筆核過十三軌都對得上、全部有 preview。** **封面 CAA：release-group 層 1 圖 ✓；Discogs 美版俱樂部版 20578165 的 `images[0]` 是 `primary` 600×586，可作備案。**",
+    "src": "https://itunes.apple.com/lookup?upc=724352284122&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有七位客座，每一位都只出現在一兩軌——包括 Sun Ra Arkestra 的中音薩克斯手 Marshall Allen",
+   "廠牌自己的廣告把它寫成「九年生涯裡最魯莽的一次飛躍」，而整張錄音跨 1999 到 2000 兩年、沒有一個確定的日期"
+  ],
+  "sound": "十三軌、五十一分鐘，在布魯克林自家的 Shacklyn 錄、在曼哈頓 Greene Street 混音，兩段都跨 1999 到 2000 兩年。常態三人：John Medeski 的鍵盤、Chris Wood 的原音與電貝斯、Billy Martin 的鼓與打擊。客座七位而且全部只出現一兩軌——Marc Ribot 的吉他在第 6 到 8 軌，Sun Ra Arkestra 的 Marshall Allen 與康加手 Eddie Bobé 在〈Partido Alto〉，Paula Potocki 的巴西大鼓在〈Sun Sleigh〉，Charles Burnham 的小提琴在〈Tsukemono〉與〈Norah 6〉，最後一軌還加上 Jane Scarpantoni 的大提琴與 Joan Wasser 的第二把小提琴。曲目十二首掛團體共寫，只有〈Note Bleu〉是 Medeski 一人的。混音幾乎全由製作人 Scotty Hard 做，只有〈Illinization〉換成 David Baker。碟以六摺紙盒裝發行。",
+  "keyTracks": [
+   "We Are Rolling",
+   "Partido Alto",
+   "Norah 6"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **廠牌口徑／街頭日（階序最上層）**：`BB-2000-09-16` p92 的 `ALBUM FORECAST` 逐字「Medeski Martin & Wood bring down \"The Dropper\" (**Oct. 24** on Blue Note)」——**與 MB first-release-date `2000-10-24` 逐日相符。** (2) **廣告與評介**：`BB-2000-10-28` p5 的 Blue Note 全版廣告把目錄號 `7243 5 22841 2 2` 印在頁上；`BB-2000-11-04` p26 的評介欄廠牌欄逐字 `Blue Note 22841`。(3) **盤面 ℗©**：歐版 notes 逐字 `℗ © 2000 Capitol Records, Inc.`。(4) **Discogs 的 2000 年條目 `year` 全 2000**；⚠ **排除歐版 repress 14823855（`year` 0、`format` 帶 `Repress`）。** ⚠ **Apple 的 copyright 是 `℗ 2013`（後來重發的年份），不採用。** ⚠ **錄音與混音跨 1999-2000 兩年、盤面沒有單一日期**——**正文不得寫成某一天錄完。** ⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `TOCP` 條目。** **四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid 61d35a8c／掛名 `Medeski Martin & Wood`（池中 1 張同字串，同批《Tonic》共用）／年份 2000／十三軌 全部成立。**｜⚠⚠ **本層推翻策展層編制欄那一句**：`risk` 與第 1420(三) 條都寫「三人，**Marc Ribot 是唯一客座、無逐軌標記**」——**實際上 Ribot 逐字標了 `Guitar [6, 7, 8]`，而且客座總共七位**：**Marshall Allen（第 4 軌中音薩克斯，Sun Ra Arkestra）、Eddie Bobé（第 4 軌康加）、Paula Potocki（第 10 軌 surdo）、Charles Burnham（第 11、13 軌小提琴）、Jane Scarpantoni（第 13 軌大提琴）、Joan Wasser（第 13 軌小提琴）**。**→ 編制欄改成「三人常態 ＋ 七位逐軌客座」。** ⚠ **混音也逐軌標了：十二軌是 Scotty Hard、第 5 軌是 David Baker。**｜⚠ **掛名兩形在同一張碟上**：**盤面正面 `Medeski Martin And Wood`、背面與碟面 `Medeski Martin & Wood`（歐版 notes 逐字）**——**卡照 `&` 形，`And` 形進 `queryAlias`，不另立字串。**｜⚠ **撞陳列**：(1) **同批第 19 張 `Medeski Martin & Wood —《Tonic》`（2000，同團同年）**——**十三軌對八軌逐軌比對零重疊（一電子錄音室、一原音現場），兩卡 risk 互指、上架帶目錄號 `22841` 與 `25271`。** (2) **軌名撞池中卡名一處：〈Big Time〉（撞 Angel Olsen 的同名卡）**——**常見詞同名，不是同碟。** (3) ⚠ **Marc Ribot 在池中另有相關碟**，只寫觀察。｜⚠ **第 1422 條的假陽性**：**`22841` 會撞 Randy Travis 1989 單曲等五筆**——**反查用完整目錄號。**｜⚠ **Apple 的兩個毛病本張全中**：**copyright 寫成後來的重發年 `℗ 2013`、同一張碟回兩個條目**（第 1426 條）。｜**載體：Discogs 十二筆全 CD，零黑膠。**｜**封面 CAA 有 1 圖，備案 Discogs 20578165 的 primary 600×586；試聽 Apple 十三軌對得上。**"
+ },
+ {
+  "key": "desc2:Stefon Harris / Jason Moran / Greg Osby / Mark Shim|New Directions",
+  "artist": "Stefon Harris / Jason Moran / Greg Osby / Mark Shim",
+  "album": "New Directions",
+  "facts": [
+   {
+    "f": "release-group a1ffde48 的欄位：title「New Directions」、**artist-credit 是四個人名以斜線接起來**、first-release-date **`2000`**、primary-type Album、secondary-types 空。**Discogs 美版零售 12600373，Blue Note `7243 5 22978 2 5`，十三軌**，**notes 逐字「\"Beatrice\" is a **vibes-piano duet**. \"Commentary On Electrical Switches\" is a **piano-bass-drums trio**. Recorded at the **Van Gelder Studio, Hackensack, NJ on May 10 & 11, 1999**.」**",
+    "src": "https://api.discogs.com/releases/12600373"
+   },
+   {
+    "f": "⚠⚠ **編制的軌號盤面全部標了，連 notes 說的那兩軌例外都對得上。** **Discogs 美版 12600373 的 credit 欄逐字**：`Jason Moran — Piano`（**唯一無軌號、十三軌全程**）、**`Stefon Harris — Vibraphone [1 to 7, 9 to 13]`**、**`Greg Osby — Alto Saxophone [1 to 3, 5 to 7, 9 to 13]`**、**`Mark Shim — Tenor Saxophone [1 to 3, 5 to 7, 9 to 13]`**、**`Tarus Mateen — Bass [1 to 3, 5 to 13]`**、**`Nasheet Waits — Drums [1 to 3, 5 to 13]`**。**→ 第 4 軌〈Beatrice〉只有 Harris 與 Moran（顫音琴與鋼琴的二重奏）、第 8 軌〈Commentary on Electrical Switches〉只有 Moran／Mateen／Waits（三重奏），與 notes 逐字吻合**；⚠ **第 12 軌〈False Start〉（0 分 44 秒）連一個人都沒掛。**",
+    "src": "https://api.discogs.com/releases/12600373"
+   },
+   {
+    "f": "⚠ **編曲也是四個人分著做的，盤面逐軌標了。** **credit 欄逐字 `Stefon Harris — Arranged By [1, 11]`、`Greg Osby — Arranged By [2, 13]`、`Jason Moran — Arranged By [3, 5 to 7]`、`Mark Shim — Arranged By [9, 10]`**——**四位掛名人各認領兩到四軌的編曲**，**這正是盤名「New Directions」與把四個人並列掛名的根據。** **製作逐字 `Greg Osby — Producer` 與 `Michael Cuscuna — Producer`，執行製作 `Hitoshi Namekata`，A&R `Yoshiko Tsuge`，錄音、重混與母帶工程逐字 `Rudy Van Gelder — Recorded By, Engineer [Mastering], Engineer [Remixed By]`，內頁解說 `Ted Panken`。**",
+    "src": "https://api.discogs.com/releases/12600373"
+   },
+   {
+    "f": "⚠⚠ **十三軌裡有九軌是重做 Blue Note 自己的老目錄，逐軌作曲欄逐字**：1〈Theme From Blow Up〉**`Herbie Hancock`**、2〈The Sidewinder〉**`Lee Morgan`**、3〈Ping Pong〉**`Wayne Shorter`**、4〈Beatrice〉**`Sam Rivers`**、5〈No Room For Squares〉**`Hank Mobley`**、6〈Song For My Father〉**`Horace Silver`**、7〈Tom Thumb〉**`Wayne Shorter`**、9〈Big Bertha〉**`Duke Pearson`**、10〈Recorda Me〉**`Joe Henderson`**；**自作只有三軌**：8〈Commentary on Electrical Switches〉`Jason Moran`、11〈Song of the Whispering Banshee〉`Stefon Harris`、13〈20 Questions〉`Greg Osby`；**第 12 軌〈False Start〉沒有作曲欄。**",
+    "src": "https://api.discogs.com/releases/3226148"
+   },
+   {
+    "f": "⚠⚠ **日版是另一張碟：軌數、盤名、掛名、封面四項全都不一樣。** **Discogs 日版 17897152（`Somethin' Else TOCJ-68044`，`released` 逐字 `1999-11-17`）的盤名是 `Blue Note New Directions`、掛名是群組 `New Directions`、只有九軌**；**它的 notes 逐字「This album was later issued with **four additional tracks and new artwork** on Blue Note in the US and Europe, with bassist **Tarus Mateen** and drummer **Nasheet Waits** downgraded to supporting musicians and not pictured on the cover.」**——**連掛名為什麼會變都寫了。** **→ 依第 1233 條 (丁)／第 1414 條，`year` 取美歐完整形那一年 2000，日版寫進 risk。**",
+    "src": "https://api.discogs.com/releases/17897152"
+   },
+   {
+    "f": "⚠ **歐版的價格代碼是 `PM 516`，與本批其他歐版的 `PM 520` 不同。** **Discogs 歐版 3226148 的 identifiers 逐字 `Price Code — PM 516 — F`、模壓環逐字 `EMI UDEN 5229782 @ 1 1-1-2-NL`**（**荷蘭 Uden 廠**）。**第 1422 條記的 `PM 516` 就是這一筆；同批其他歐版是 `PM 520`**——**兩種價格代碼同時存在，反查一律用完整目錄號。** ⚠ **歐版 credit 欄的樂器掛名沒有軌號**（美版才有），**而且多一位 `Seth Presant — Mixed By`**——**引用編制要用美版。**",
+    "src": "https://api.discogs.com/releases/3226148"
+   },
+   {
+    "f": "**店面（第 254 條）**：⚠ **`search` 的 us／jp／gb 三市場用 `New Directions Blue Note`／`Stefon Harris New Directions`／`Blue Note New Directions` 三種字串全部零命中**（回的是 Rihanna、Boyce Avenue、LeAnn Rimes 等雜訊）；**`lookup?upc=724352297825` 命中 716409560**，欄位逐字 `New Directions — New Directions`（**掛名被登成群組形**）、`releaseDate 1999-11-06`、**copyright 逐字 `℗ 1999 Somethin' Else Records, a division of EMI Music Japan Inc.,`**（⚠ **第 1414 條說的那個訊號**）、`trackCount 13`。⚠ **把它展開（`lookup?id=716409560&entity=song`）：us 市場回 0 軌，jp 與 gb 兩市場各回十三軌、全部有 preview**，**逐軌核過名稱與順序與美版盤面一致（Theme from Blow Up／The Sidewinder／Ping Pong／Beatrice／No Room for Squares／Song for My Father／Tom Thumb／Commentary On Electrical Switches／Big Bertha／Recorda-Me／Song of the Whispering Banshee／False Start／20 Questions）。** **→ 串流採信 716409560。**",
+    "src": "https://itunes.apple.com/lookup?id=716409560&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "**紙本與封面**：⚠ **`new directions`／`22978`／四個人名五種字串在 2000 全年掃過，零命中**（第 1245 條）；⚠ **`Stefon Harris` 在 `BB-2000-04-22` p12 被印成 `Stefan Harris`**（第 1424 條記過的 OCR／排印誤）。**封面 CAA：release-group 層 2 圖，⚠ 來源是 XE 版 82bf3e61、不是美版**；**Discogs 歐版 3226148 的 `images[0]` 是 `primary` 但只有 400×400、美版 12600373 的兩張圖全是 `secondary`**——**若要替代來源，兩筆都不理想。** ⚠ **載體：Discogs 七筆全部是 CD，零黑膠**（本段通則第 1 條逐張查）。",
+    "src": "https://coverartarchive.org/release-group/a1ffde48-d5ea-4088-ac78-da7ada06549c"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有九軌是重做 Blue Note 自己的老目錄——從 Lee Morgan 的〈The Sidewinder〉到 Horace Silver 的〈Song for My Father〉，而且是在 Rudy Van Gelder 的錄音室裡錄的",
+   "四個掛名的人各自認領兩到四軌的編曲，盤面把誰編哪幾首都標了出來"
+  ],
+  "sound": "1999 年 5 月 10、11 兩天在 Hackensack 的 Van Gelder 錄音室錄的十三軌，由 Rudy Van Gelder 本人收音與重混。四位掛名的人是 Stefon Harris 的顫音琴、Jason Moran 的鋼琴、Greg Osby 的中音薩克斯、Mark Shim 的次中音，底下是 Tarus Mateen 的貝斯與 Nasheet Waits 的鼓。編制逐軌變動：〈Beatrice〉只剩顫音琴與鋼琴的二重奏，〈Commentary on Electrical Switches〉只剩鋼琴三重奏，〈False Start〉只有四十四秒。十三軌裡九軌是重做 Blue Note 自己的老目錄——Herbie Hancock 的〈Theme from Blow Up〉、Lee Morgan 的〈The Sidewinder〉、Wayne Shorter 的兩首、Sam Rivers 的〈Beatrice〉、Hank Mobley、Horace Silver、Duke Pearson、Joe Henderson 各一首；自作只有三首。編曲由四個人分著做，製作是 Osby 與 Michael Cuscuna。",
+  "keyTracks": [
+   "Theme from Blow Up",
+   "Beatrice",
+   "20 Questions"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判——這是本組「推翻一層來源後仍維持原值」的兩張之一。** **指向 1999 的兩筆**：**Discogs 日版 17897152（`Somethin' Else TOCJ-68044`）的 `released` 逐字 `1999-11-17`**、**Apple `lookup?upc=724352297825` 回的 716409560 的 `releaseDate` 逐字 `1999-11-06`、copyright 逐字 `℗ 1999 Somethin' Else Records, a division of EMI Music Japan Inc.`**；**另有一筆 1999 年的美版先行宣傳盤 21979507（`…2 5V`，`Advance`，第 1297 條只能當下界）。** **為什麼仍取 2000**：**依第 1233 條 (丁)／第 1414 條的「四項比對」，日版根本不是同一張碟**——**盤名不同（`Blue Note New Directions` vs `New Directions`）、掛名不同（群組 `New Directions` vs 四個人名）、軌數不同（9 vs 13）、封面換過**，**而日版自己的 notes 逐字承認「This album was later issued with four additional tracks and new artwork … with bassist Tarus Mateen and drummer Nasheet Waits downgraded to supporting musicians and not pictured on the cover.」** **→ 完整形是 2000 年的美歐版，`year` 取 2000。** **另三層一致**：MB first-release-date `2000`、Discogs 美歐版五筆 `year` 全 2000、盤面 ℗（美版）2000。⚠ **錄音 1999-05-10／11 只寫正文。**",
+  "notes": "**覆核策展層：rgMbid a1ffde48／四人斜線聯名／年份 2000（第 1414 條的判斷覆核成立）／十三軌 全部成立。**｜⚠ **編制：策展層說「六人，但 notes 已標明〈Beatrice〉是二重奏、〈Commentary on Electrical Switches〉是三重奏」——方向對，本層再把軌號補齊**：**美版 credit 欄逐人都標了軌號**（Harris `[1 to 7, 9 to 13]`／Osby 與 Shim `[1 to 3, 5 to 7, 9 to 13]`／Mateen 與 Waits `[1 to 3, 5 to 13]`／Moran 全程），**而且第 12 軌〈False Start〉一個人都沒掛。** ⚠ **歐版的樂器欄沒有軌號**——**引用編制要用美版。**｜⚠ **編曲逐軌分工（Harris `[1, 11]`／Osby `[2, 13]`／Moran `[3, 5 to 7]`／Shim `[9, 10]`）是四人聯名掛名的根據，正文應該寫出來。**｜⚠⚠ **撞陳列（本組最密的一張）**：(1) **整張是重做廠牌自己的目錄，九軌的原作者在池中都有卡**：〈The Sidewinder〉＝`Lee Morgan`（seed）、〈No Room for Squares〉＝`Hank Mobley`（seed）、〈Song for My Father〉＝`Horace Silver`（seed）與 `Claude Williamson Trio`，另 Hancock《Blow-Up》／Shorter《Schizophrenia》／Henderson《Page One》都在池中——**全部同名不同錄音，第 1049／1355 條照收，risk 逐一指出，封面與試聽資產不得共用。** (2) ⚠ **第 10 軌〈Recorda Me〉與同批第 5 張 `Mark Shim —《Turbulent Flow》` 的第 2 軌同名同曲（都是 Joe Henderson 寫的），而且 Shim 與 Stefon Harris 兩人都在兩張碟上**——**不同錄音，兩卡 risk 互指。** (3) ⚠ **第 9 軌〈Big Bertha〉的作曲者 Duke Pearson 在池中有卡（c-142／c-143），同批 a 組《The Kicker》也有他**——**只寫觀察。** (4) ⚠ **與 `Jason Moran —《Facing Left》`（同批）與池中 c-155 a 的《Soundtrack to Human Motion》是同一個 Bandwagon 節奏組**——**三張軌目零重疊，三卡互指。** (5) ⚠ **Stefon Harris 另出現在同批《A Brighter Day》第 13 軌與 a 組《Traveling Miles》第 6、8 軌**——**五卡的人名交叉寫進 risk。**｜⚠ **歐版價格代碼 `PM 516`（與本批其他歐版的 `PM 520` 不同，第 1422 條）。**｜**載體：Discogs 七筆全 CD，零黑膠。**｜⚠ **封面 CAA 有 2 圖但來源是 XE 版；Discogs 歐版 primary 只有 400×400、美版兩張圖全是 `secondary`**——**替代來源兩筆都不理想。**｜⚠ **試聽本層撈回**：**`search` 三市場 × 三種字串全零，`lookup?upc=` 才命中 716409560，而且要在 jp 或 gb 市場展開才看得到十三軌與 preview（us 市場回 0 軌）**——**串流採信 716409560。**"
+ },
+ {
+  "key": "desc2:Bob Dorough & Dave Frishberg|Who's on First?",
+  "artist": "Bob Dorough & Dave Frishberg",
+  "album": "Who's on First?",
+  "facts": [
+   {
+    "f": "release-group e103965e 的欄位：title「Who's on First?」、artist-credit「Bob Dorough & Dave Frishberg」、first-release-date **2000-10-24**、primary-type Album、**secondary-types `[\"Live\"]`**。**Discogs 美版零售 2595603，Blue Note `7243 5 23403 2 3`，bc 724352340323，**十七軌**，notes 逐字「**Recorded live November 5 - 7, 1999 in Los Angeles.**」**——**三晚的現場，盤面沒有寫場館名。**",
+    "src": "https://api.discogs.com/releases/2595603"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「編制完全查不到」那一句：俱樂部版條目就有完整的製作與樂手欄。** **策展層與第 1420(一) 條逐字寫「三筆條目的 credits **沒有樂手欄**（notes 只寫場館與日期）」**——**實際上 Discogs 美版俱樂部版 23319284 的 credit 欄逐字有 `Bob Dorough — Piano, Vocals`、`Dave Frishberg — Piano, Vocals`、`Bill Goodwin — Producer`、`Kurt Lundvall — Recorded By, Mastered By`、`Kent Heckman — Mixed By, Edited By`、`Bob Blumenthal — Liner Notes`**（**零售條目 2595603 也有兩位樂手與解說欄**）。**→ 編制欄改成「兩人，各自鋼琴兼人聲」，「完全查不到」撤回。** ⚠ **兩人都掛 `Piano`——這是一張雙鋼琴雙人聲的碟，正文要寫明。** ⚠ **製作人 `Bill Goodwin` 正是同批第 2 張《Too Much Coffee Man》的製作人兼鼓手**；⚠ **`Kurt Lundvall` 與 Blue Note 總裁 Bruce Lundvall 同姓，但盤面只說他是錄音與母帶工程師，本層不做任何關係推論。**",
+    "src": "https://api.discogs.com/releases/23319284"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 23319284）逐字**：**1〈Rockin' In Rhythm〉`Harry Carney`＋`Irving Mills`**（**Ellington 樂團的上低音薩克斯手與出版商，盤面沒有掛 Ellington 本人**）、2〈Who's On First?〉／3〈Lookin' Good〉／4〈Too Long In LA〉三首 `Dave Frishberg`、5〈You Are There〉`Dave Frishberg`＋**`Johnny Mandel`**、7〈The Underdog〉`Dave Frishberg`＋**`Al Cohn`**、9〈Where You At?〉`George Handy`＋`Jack Segal`、10〈Health Food Nut〉`Bob Dorough`＋`Don Nelson (2)`、11〈Devil May Care〉`Bob Dorough`＋`Terrell P. Kirk, Jr.`、12〈Nothing Like You〉`Bob Dorough`＋`Fran Landesman`、**13〈Hong Kong Blues〉`Hoagy Carmichael`**、15〈I'm Hip〉與 16〈At The Saturday Dance〉兩首 `Bob Dorough`＋`Dave Frishberg`、**17〈Conjunction Junction〉`Bob Dorough`**（**那是《Schoolhouse Rock!》的曲**）。⚠ **第 6、8、14 三軌是口白引子（`Intro: The Underdog`／`Intro: Where You At?`／`Introduction To I'm Hip`），沒有作曲欄。**",
+    "src": "https://api.discogs.com/releases/23319284"
+   },
+   {
+    "f": "**紙本：廠牌預告逐字給了街頭日，而且與 MB 逐日相符。** **`BB-2000-09-16` p92 的 `ALBUM FORECAST` 逐字「**Bob Dorough and Dave Frishberg question \"Who's On First\" (Oct. 24 on Blue Note)**, and Medeski Martin & Wood bring down \"The Dropper\" (Oct. 24 on Blue Note).」**——**同一句同時給了同批第 13 張的街頭日**；**MB first-release-date `2000-10-24` 與它逐日相符。** ⚠ **`dorough` 與 `frishberg` 兩個字串在 2000 年的其他命中全部是別的事**（第 1301／1424 條：**`dorough` 大量命中 Backstreet Boys 的 Howie Dorough**），**逐條讀完只留下這一處。** ⚠ **兩張爵士榜 2000 全年零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf"
+   },
+   {
+    "f": "⚠ **店面（第 254 條）：這是本組唯一「`search` 三市場全中、`lookup?upc=` 反而失效」的一張。** **Apple `search` 的 us／jp／fr 三市場都命中 723535815**（`Bob Dorough & Dave Frishberg — Who's on First?`、`trackCount 17`、`℗ 2000 Blue Note Records`）；⚠ **`lookup?upc=724352340323` 零命中**（第 1426 條記過，本層覆核成立）。**十七軌與盤面逐軌同名同序（含三段 `Intro:`）、全部有 preview。**",
+    "src": "https://itunes.apple.com/search?term=Bob%20Dorough%20Dave%20Frishberg%20Who%27s%20on%20First&country=us&entity=album&limit=6"
+   },
+   {
+    "f": "**版本表四筆，全部 CD、全部 2000**：美版零售 2595603、美版 BMG 俱樂部版 23319284、美版宣傳 15020734、另一筆美版。⚠ **零歐版、零日版、零黑膠、零卡帶**——**這是本批發行範圍最窄的一張**（本段通則第 1 條逐張查的結果）。⚠ **零售條目 2595603 的 credit 欄比俱樂部版少了製作、錄音、混音三欄**——**同一張碟的兩筆條目資訊量不同，引用要挑完整的那一筆。**",
+    "src": "https://api.discogs.com/masters/1708567/versions"
+   },
+   {
+    "f": "⚠ **盤名本身是一個高度撞名的字串。** **`Who's on First?` 是美國家喻戶曉的相聲段子名（Abbott and Costello）**，**Discogs 與店面反查都會回大量不相干的條目**；**第 2 軌同名的那一首是 Dave Frishberg 1980 年代就寫過的棒球歌。** **→ 上架比對一律「聯名 ＋ 目錄號 `7243 5 23403 2 3`」。** ⚠ **另 `Bob Dorough & Dave Frishberg` 這個聯名是本批新造的字串**（池中 `Bob Dorough` 1 張、`Dave Frishberg` 0 張）——**兩個既有字串都不動**（第 1131／1356 條）。",
+    "src": "https://api.discogs.com/releases/2595603"
+   },
+   {
+    "f": "**封面（CAA）**：release-group 層 2 圖 ✓。⚠ **Discogs 美版零售 2595603 的 `images[0]` 是 `primary` 但只有 500×500**——**低於 600px，若日後要替代來源，建議改用 Apple 723535815 的 `600x600bb`**（第 1283 條那句「低於 600px 時 Apple 的 `600x600bb` 可以當備案」）。",
+    "src": "https://coverartarchive.org/release-group/e103965e-7de5-3aa3-81cd-c37d31b0fc1d"
+   }
+  ],
+  "hookCandidates": [
+   "兩台鋼琴、兩個人唱，十七軌裡有三段只有半分鐘到一分半的口白引子——1999 年 11 月連三晚在洛杉磯錄的",
+   "收尾的〈Conjunction Junction〉是 Dorough 給《Schoolhouse Rock!》寫的那首文法歌"
+  ],
+  "sound": "兩台鋼琴、兩個人唱，1999 年 11 月 5 到 7 日連三晚在洛杉磯錄的十七軌。Bob Dorough 與 Dave Frishberg 兩人各自鋼琴兼人聲，盤面沒有別的樂手。曲目對半分：Frishberg 寫了盤名那首棒球歌〈Who's on First?〉以及〈Lookin' Good〉〈Too Long in LA〉，與 Johnny Mandel 合寫〈You Are There〉、與 Al Cohn 合寫〈The Underdog〉；Dorough 這邊有〈Health Food Nut〉〈Devil May Care〉〈Nothing Like You〉，收尾的〈Conjunction Junction〉則是他給《Schoolhouse Rock!》寫的文法歌。兩人合寫的〈I'm Hip〉與〈At the Saturday Dance〉各佔一軌，翻的兩首是 Ellington 樂團的〈Rockin' in Rhythm〉與 Hoagy Carmichael 的〈Hong Kong Blues〉。十七軌裡有三段只有半分鐘到一分半的口白引子。製作是 Bill Goodwin，內頁解說 Bob Blumenthal。",
+  "keyTracks": [
+   "Who's on First?",
+   "I'm Hip",
+   "Conjunction Junction"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **廠牌口徑／街頭日（階序最上層）**：`BB-2000-09-16` p92 的 `ALBUM FORECAST` 逐字「Bob Dorough and Dave Frishberg question \"Who's On First\" (**Oct. 24** on Blue Note)」。(2) **MB first-release-date `2000-10-24`**——**與紙本逐日相符。** (3) **Discogs 四筆條目 `year` 全 2000。** (4) **盤面 ℗**：Apple 723535815 逐字 `℗ 2000 Blue Note Records`。⚠ **錄音 1999-11-05 至 07 比發行早近一年**——**正文必須把演出年與發行年分開講。** ⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目**，**而且連歐版都沒有**，不存在日版先出的形狀。**四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid e103965e／聯名新造 `Bob Dorough & Dave Frishberg`（池中 `Bob Dorough` 1 張、`Dave Frishberg` 0 張，兩個既有字串都不動）／年份 2000／十七軌／`live: true` 全部成立。**｜⚠⚠ **本層推翻策展層與第 1420(一) 條把本張列進「編制完全查不到」那一格**：**Discogs 美版俱樂部版 23319284 的 credit 欄有完整的兩位樂手與四個技術掛名**（`Bob Dorough — Piano, Vocals`／`Dave Frishberg — Piano, Vocals`／`Bill Goodwin — Producer`／`Kurt Lundvall — Recorded By, Mastered By`／`Kent Heckman — Mixed By, Edited By`／`Bob Blumenthal — Liner Notes`）。**→ 編制欄改成「兩人、各自鋼琴兼人聲」；「完全查不到」撤回。** ⚠ **這是雙鋼琴雙人聲的碟，正文要寫明。**｜⚠ **製作人 `Bill Goodwin` 正是同批第 2 張《Too Much Coffee Man》的製作人兼第二組鼓手**——**兩卡 risk 互指。**｜⚠ **撞陳列**：(1) **同批《Too Much Coffee Man》（2000）與池中 c-153 b 的 `Bob Dorough —《Right On My Way Home》`**——**三張軌目逐一比對零重疊**（策展層第 9 組覆核成立）；⚠ **《Too Much Coffee Man》的第 5 軌〈Oklahoma Toad〉正是 Frishberg 寫的曲**，**兩張碟的關聯要寫成這一層。** (2) **軌名撞池中卡名一處：〈You Are There〉（撞 MONO 的同名卡）**——**逐條讀完不是同碟。** (3) ⚠ **盤名 `Who's on First?` 是 Abbott and Costello 相聲段子的名字，反查假陽性極高**——**上架比對一律「聯名＋目錄號」。**｜⚠ **三軌是口白引子（第 6、8、14 軌），沒有作曲欄**——**正文寫軌數時要知道。**｜**載體：Discogs 四筆全 CD、全美版，零歐版、零日版、零黑膠——本批發行範圍最窄的一張。**｜⚠ **店面：`search` 三市場全中、`lookup?upc=724352340323` 反而零命中**（第 1426 條覆核成立）——**串流採信 723535815（十七軌對得上）。**｜⚠ **封面 CAA 有 2 圖，但 Discogs 美版零售的 primary 只有 500×500**——**備案建議改用 Apple `723535815` 的 `600x600bb`。**"
+ },
+ {
+  "key": "desc2:Brian Blade Fellowship|Perceptual",
+  "artist": "Brian Blade Fellowship",
+  "album": "Perceptual",
+  "facts": [
+   {
+    "f": "release-group 70e88a86 的欄位：title「Perceptual」、artist-credit「Brian Blade Fellowship」（ad45a94c **Group**／US）、first-release-date **2000-04-11**、primary-type Album、secondary-types 空。**Discogs 美版 683390 的 notes 逐字「**Recorder September 1999 at Avatar Studios, NYC** Mixed at **River Sound, NYC** Mastered at **Sterling Studio, NYC** … ℗© 2000 Capitol Records, Inc.」**（`Recorder` 是盤面的錯字）——**九軌，錄音在 1999 年 9 月、發行在 2000 年 4 月。** ⚠ **MB 的 `catalog-number` 欄在美版那一筆是空的**（第 1425 條）。",
+    "src": "https://api.discogs.com/releases/683390"
+   },
+   {
+    "f": "⚠⚠ **本層推翻策展層「Joni Mitchell 只出現在 Billboard 專欄裡、Discogs 五筆一個字都沒有她」那一句：盤面就掛了她。** **Discogs 美版 683390 的 credit 欄逐字有一行 `Joni Mitchell — Vocals [Vocal]`**，**而且 tracklist 的第 8 軌〈Steadfast〉逐軌欄逐字列著 `Joni Mitchell — Vocals`**（**歐版 10875898 與 2014 年的黑膠 6262388 的第 8 軌也都逐字列了她**）。**→ Joni Mitchell 唱第 8 軌，是盤面來源不是紙本推論，正文可以寫。**",
+    "src": "https://api.discogs.com/releases/683390"
+   },
+   {
+    "f": "⚠⚠ **Daniel Lanois 的兩件樂器也都標了軌號，策展層說的「無逐軌標記」不成立。** **Discogs 美版 683390 的 credit 欄逐字 `Daniel Lanois — Guitar [Gold Top Les Paul] [8]` 與 `Daniel Lanois — Pedal Steel Guitar [9]`**——**他在第 8 軌彈金頂 Les Paul、第 9 軌彈踏板鋼棒吉他，沒有別軌。** ⚠ **同一筆另有 `Mark Howard — Recorded By [Additional Recording Of Vocals And Guitar] [8]` 與 `Mark Howard — Recorded By [Additional Recording Of Pedal Steel Guitar] [9]`**——**第 8、9 兩軌的人聲、吉他與踏板鋼棒是另外補錄的，不是 Avatar 那一次錄的。** **→ 編制欄改成「七人團 ＋ 第 8、9 兩軌的兩位客座（Lanois／Mitchell），而且那兩軌是補錄」。**",
+    "src": "https://api.discogs.com/releases/683390"
+   },
+   {
+    "f": "**七人團的逐項掛名（Discogs 683390）逐字**：`Brian Blade — Producer, Drums`（另掛 `Acoustic Guitar [8]`、`Vocals, Acoustic Guitar [9]`、`Art Direction`、`Liner Notes`）、`Jon Cowherd — Piano, Electric Piano [Fender Rhodes], Pump Organ, Producer, Liner Notes`、`Myron Walden — Alto Saxophone, Bass Clarinet`、`Melvin Butler — Tenor Saxophone, Soprano Saxophone`、`Kurt Rosenwinkel — Electric Guitar, Acoustic Guitar`、`Christopher Thomas — Acoustic Bass`（⚠ **美版還多掛一項 `Vocals [Grunting]`**）、`Dave Easley — Pedal Steel Guitar`。**工程與混音 `Joe Ferla`，母帶 `Greg Calbi`，封面照片逐字 `Edward S. Curtis — Photography By [Cover Photograph]`**（**十九、二十世紀之交拍北美原住民的攝影家**）。",
+    "src": "https://api.discogs.com/releases/683390"
+   },
+   {
+    "f": "**逐軌作曲欄與出版商欄互相對得上，逐字**：`Jon Cowherd — Written-By [1, 3, 4, 6]`、`Brian Blade — Written-By [2, 5, 7 to 9]`、`Myron Walden — Written-By [6]`；**notes 的出版商欄逐字「Tracks 1, 3, 4: The Colonel's Music-BMI Track 6: Myron Walden Music/The Colonel's Music-BMI Tracks 2, 5, 7 to 9: Middle Way Music, Inc.-BMI Lyrics: Brian Blade/Middle Way Music, Inc.-BMI」**——**兩層完全一致，全碟沒有一首是外人的曲。** ⚠ **第 7 軌的完整曲名只有歐版寫全了，逐字 `Variations Of A Bloodline: From The Same Blood / Fellowship (Like Brothers) / Mustangs (Class Of 1988)`（9 分 09 秒的三段組曲）**，**美版的那一列甚至沒有軌號。**",
+    "src": "https://api.discogs.com/releases/10875898"
+   },
+   {
+    "f": "**紙本：整篇專欄逐字給了街頭日、七人名單與兩位客座。** **`BB-2000-04-08` p38 的標題逐字「A `Perceptual' Album From Brian Blade Drummer's Fellowship, On Blue Note, Offers Melodies & Optimism」**，內文逐字「…a sprawling, ethereal work produced by **Daniel Lanois**, known for his atmospheric production work with Bob Dylan and U2. **Both Lanois and Mitchell turn up on \"Perceptual\" (Blue Note, April 11)**, the sophomore release from the Brian Blade Fellowship, which is made up of Blade, saxophonists Myron …」——**街頭日 April 11 與 MB first-release-date `2000-04-11` 逐日相符。** ⚠ **同期 p4 的目錄把盤名印成 `Perpetual`**（第 1424 條）；⚠ **`perceptual` 這個字串在 `BB-2000-01-29` p43 的兩處是 Bell Labs 的 `Perceptual Audio Coder` 音訊編碼技術，與本張無關**——**第 1424 條的紙本誤讀，逐條讀完排除。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-08.pdf"
+   },
+   {
+    "f": "⚠⚠ **載體：2014 年有歐版雙片黑膠，而且背標的曲序印錯。** **Discogs 6262388（2014，Europe，`Vinyl, LP, Album, Misprint, Reissue, Remastered`，bc 602537899005）的 notes 逐字「**Incorrect track listing on back cover and record labels.** Correct listing as above.」**，**而且黑膠的實際排序與 CD 完全不同**（A1 Perceptual／A2 Evinrude-Fifty／**B1 Trembling**／B2 Variations of a Bloodline／C1 Patron Saint of Girls／C2 Reconciliation／C3 The Sunday Boys／D1 Crooked Creek／D2 Steadfast）。**→ 2000 年只有 CD，黑膠是 2014 年的事而且曲序不同；正文不得預設有同期黑膠，也不得用黑膠的曲序。**",
+    "src": "https://api.discogs.com/releases/6262388"
+   },
+   {
+    "f": "**店面與封面**：Apple `search` us／jp／fr 三市場與 `lookup?upc=724352357123` 四種查法都命中，`Brian Blade Fellowship — Perceptual`、`trackCount 9`；⚠ **copyright 欄逐字寫成後來重發的 `℗ 2013`／`℗ 2014`，而且同一張碟回兩個條目**（第 1426 條記過，本層覆核成立），**不採用店面的年份。** ⚠ **Apple 與 2014 年黑膠的掛名一律是 `Brian Blade & The Fellowship Band`（2008 年後才改的團名）**——**那一形只進 `queryAlias`，卡照 MB 的 `Brian Blade Fellowship`。** **封面 CAA：release-group 層 4 圖，⚠ 來源是無日期的 XE 筆 a1f99704、不是美版**；**Discogs 美版 683390 的 `images[0]` 是 `primary` 598×600，可作備案。** ⚠ **MB 的兩筆 release（a1f99704 XE 無日期／b4cdbacb US 2000-04-11）共用同一個 barcode `724352357123`**（第 1425 條那張表的第 4 列）。",
+    "src": "https://itunes.apple.com/lookup?upc=724352357123&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "第八軌〈Steadfast〉唱歌的是 Joni Mitchell，彈吉他的是 Daniel Lanois——那一軌與末軌是在別處補錄的，不在 Avatar 那一次裡",
+   "封面用的是 Edward S. Curtis 拍北美原住民的老照片，而九軌全部出自團裡兩個人的筆下"
+  ],
+  "sound": "七人團的第二張：Brian Blade 的鼓、Jon Cowherd 的鋼琴與 Rhodes 及腳踏風琴、Myron Walden 的中音薩克斯與低音單簧管、Melvin Butler 的次中音與高音、Kurt Rosenwinkel 的吉他、Christopher Thomas 的低音提琴、Dave Easley 的踏板鋼棒吉他。1999 年 9 月在紐約 Avatar Studios 錄，River Sound 混音、Sterling 做母帶。九軌全部出自團裡兩個人的筆下——Cowherd 寫四首、Blade 寫五首，其中〈The Sunday Boys〉是 Cowherd 與 Walden 的即興。第七軌〈Variations of a Bloodline〉是九分鐘的三段組曲。最後兩軌是另外補錄的：〈Steadfast〉裡 Daniel Lanois 彈一把金頂 Les Paul、Joni Mitchell 唱歌，收尾的〈Trembling〉只有兩分十七秒，Lanois 彈踏板鋼棒、Blade 自己彈木吉他並開口唱。封面用的是攝影家 Edward S. Curtis 的老照片。",
+  "keyTracks": [
+   "Perceptual",
+   "Variations of a Bloodline",
+   "Steadfast"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **廠牌口徑／街頭日（階序最上層）**：`BB-2000-04-08` p38 的整篇專欄逐字「Both Lanois and Mitchell turn up on \"Perceptual\" (**Blue Note, April 11**)」——**與 MB first-release-date `2000-04-11` 逐日相符。** (2) **評介**：`BB-2000-07-08` p22 再列一次。(3) **盤面 ℗©**：Discogs 美版 683390 的 notes 逐字 `℗© 2000 Capitol Records, Inc.`、歐版 10875898 逐字 `℗ © 2000 Capitol Records, Inc.`。(4) **Discogs 2000 年的條目 `year` 全 2000**（美版、歐版、日版 `TOCJ-66096`（`released` 逐字 `2000-11-08`））；⚠ **排除兩筆：美版再壓 683390 的 `year` 是 0、2014 年的歐版黑膠是再發。** ⚠ **Apple 的 copyright 寫成 `℗ 2013`／`℗ 2014`（後來重發的年份），不採用**（第 1426 條）。⚠ **錄音 1999 年 9 月比發行早半年**——**正文不得把錄音年寫成發行年。** ⚠ **日版 `TOCJ-66096` 是 2000-11-08，比美版晚七個月**，**不存在日版先出的形狀。** **四層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid 70e88a86／新掛名字串 `Brian Blade Fellowship`（ad45a94c Group，`Brian Blade & The Fellowship Band` 進 `queryAlias`）／年份 2000／九軌 全部成立。**｜⚠⚠ **本層推翻策展層兩句話**：(一) **`risk` 與第 1420(二) 條逐字寫「**Joni Mitchell 只出現在 Billboard 2000-04-08 p38 的專欄裡、Discogs 五筆一個字都沒有她**」——實際上 Discogs 美版 683390 的 credit 欄有一行 `Joni Mitchell — Vocals [Vocal]`，第 8 軌〈Steadfast〉的逐軌欄也逐字列了她**（歐版與 2014 黑膠同）。 (二) **「兩位客座沒有逐軌標記」也不成立**：**`Daniel Lanois — Guitar [Gold Top Les Paul] [8]` 與 `Pedal Steel Guitar [9]` 兩行都標了軌號。** **→ 編制欄改成「七人團 ＋ 第 8、9 兩軌的 Lanois 與 Mitchell」。**｜⚠ **新補一格**：**`Mark Howard — Recorded By [Additional Recording…] [8]／[9]`**——**第 8、9 兩軌的人聲、吉他與踏板鋼棒是另外補錄的，不在 Avatar 那一次裡。**｜⚠ **載體（本段通則第 1 條）**：**2000 年只有 CD**；**唯一的黑膠是 2014 年的歐版雙片再發，而且 notes 逐字說背標與碟標的曲序印錯、實際排序與 CD 完全不同**——**正文不得預設同期黑膠，也不得用黑膠的曲序。**｜⚠ **第 7 軌的完整曲名只有歐版寫全（三段組曲），美版那一列連軌號都沒有。**｜⚠ **撞陳列**：(1) ⚠ **Brian Blade 是同批 a 組 `Dianne Reeves —《Bridges》` 第 2 到 6 軌的鼓手**——**本張是他的領班盤，兩卡 risk 互指、正文不得互抄。** (2) **軌名撞池中卡名：九軌逐一比對，零命中。** (3) ⚠ **Kurt Rosenwinkel 與 Jon Cowherd 在池中另有相關碟**，只寫觀察。｜⚠ **紙本誤讀**：**`perceptual` 在 `BB-2000-01-29` p43 的兩處是 Bell Labs 的音訊編碼技術**；**同期 p4 把盤名印成 `Perpetual`**（第 1424 條）。｜⚠ **MB 兩筆 release 共用同一個 barcode**（第 1425 條）。｜**封面 CAA 有 4 圖（⚠ 來源是無日期的 XE 筆），備案 Discogs 683390 的 primary 598×600；試聽 Apple 九軌對得上（⚠ copyright 是後來的重發年、同一張碟回兩個條目）。**"
+ },
+ {
+  "key": "desc2:Jason Moran|Facing Left",
+  "artist": "Jason Moran",
+  "album": "Facing Left",
+  "facts": [
+   {
+    "f": "release-group e6d7d0e8 的欄位：title「Facing Left」、artist-credit「Jason Moran」、first-release-date **`2000`**、primary-type Album、secondary-types 空。**Discogs 美版 2385046，Blue Note `7243 5 23884 2 4`，十三軌**，**notes 把錄音、混音、母帶三段日期都寫到天，逐字「Recorded at **Systems Two, Brooklyn, N.Y. 1/15/00 & 1/16/00** Mixed at Systems Two, Brooklyn, N.Y. **1/22/00 to 1/23/00** Mastered at **Foothill Digital, NYC 1/25/00** ℗© 2000 Capitol Records, Inc.」**——**錄音到母帶全部在 2000 年 1 月的十天內做完，半年後就發。**",
+    "src": "https://api.discogs.com/releases/2385046"
+   },
+   {
+    "f": "**編制是固定三人、零客座、零軌號標記**：`Jason Moran — Piano`（另掛 `Electric Piano [Fender Rhodes]` 與 `Electric Organ [Hammond B3]`）、`Tarus Mateen — Bass`、`Nasheet Waits — Drums`。**製作逐字 `Greg Osby — Producer`**（**Moran 當時正是 Osby 樂團的成員**）、**錄音與混音 `Joe Marciano`、母帶 `Allan Tucker`、美術 `P.R. Brown`**；⚠ **內頁解說逐字 `Yuri Moran — Liner Notes` 與 `Carole Hall (2) — Liner Notes [Edited]`**——**兩人都不是樂手。**",
+    "src": "https://api.discogs.com/releases/2385046"
+   },
+   {
+    "f": "⚠⚠ **十三軌的作曲者名單橫跨五個完全不同的世界，盤面逐軌標了軌號。** **Discogs 2385046 的 credit 欄逐字**：`Jason Moran — Written-By [2, 7, 10 to 13]`（**六軌**）、**`Duke Ellington — Written-By [1, 4]`**、**`Björk — Written-By [3]` ＋ `Sjón — Written-By [3]`**（**第 3 軌〈Jóga〉，冰島詩人 Sjón 是詞**）、**`Masaru Sato — Written-By [5]`**（**第 5 軌〈Yojimbo〉，黑澤明《用心棒》的配樂作曲家佐藤勝**）、`Tarus Mateen — Written-By [6]`（**團裡的貝斯手**）、**`Carmine Coppola — Written-By [8]`**（**第 8 軌〈Murder of Don Fanucci〉，出自《教父第二集》的配樂**）、**`Jaki Byard — Written-By [9]`**（**Moran 的老師**）。**→ 第 1181 條「把別人的作曲寫成領班的作品」在這張最容易中，正文列曲目一定要標原作者。**",
+    "src": "https://api.discogs.com/releases/2385046"
+   },
+   {
+    "f": "**紙本：`BB-2000-07-01` p16 逐字給了街頭日與 Moran 當時的身分**，內文逐字「… member of **Greg Osby's band**. Now a solo artist, **Moran returns with his second solo album, \"Facing Left,\" due Tuesday (27) on Blue Note Records**.」——**該期是 7 月 1 日出刊，「Tuesday (27)」指的是 2000 年 6 月 27 日。** ⚠ **這是本張唯一一處紙本**：**`facing left`／`23884`／`jason moran` 三種字串都掃過**（第 1245 條），**兩張爵士榜全年零命中。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-07-01.pdf"
+   },
+   {
+    "f": "**版本表四筆，全部 CD、全部 2000**：美版零售 2385046、美版宣傳 37486914、**美版先行宣傳盤 13275224（`…2 4V`）**、歐版 12778071（第二目錄號 `5238842`）。⚠ **零黑膠、零卡帶、零日版**（本段通則第 1 條逐張查的結果）——**這是本批版本第二少的一張。**",
+    "src": "https://api.discogs.com/masters/1451232/versions"
+   },
+   {
+    "f": "⚠ **與同一個節奏組的另外兩張碟要互指。** **Tarus Mateen 與 Nasheet Waits 這一組（後來被稱作 Bandwagon）同時出現在同批 `Stefon Harris / Jason Moran / Greg Osby / Mark Shim —《New Directions》`（2000，Mateen `Bass [1 to 3, 5 to 13]`／Waits `Drums [1 to 3, 5 to 13]`）與池中 c-155 a 的 `Jason Moran —《Soundtrack to Human Motion》`（1999）上**，**而且三張的製作人都是 Greg Osby。** **逐軌比對：本張十三軌與《New Directions》十三軌零重疊**（**本張是三重奏、那張是六人**）。**三卡 risk 互指、正文不得互抄。**",
+    "src": "https://api.discogs.com/releases/12600373"
+   },
+   {
+    "f": "⚠ **店面（第 254 條）：`search` us 零命中，jp／fr 才有。** Apple 的 jp 與 fr 兩市場命中同一筆，`Jason Moran — Facing Left`、`trackCount 13`、`℗ 2000 Blue Note Records`；`lookup?upc=724352388424` 同一筆。**十三軌與盤面逐軌同名同序、全部有 preview。** ⚠ **載體：Discogs 四筆全 CD。** **封面 CAA：release-group 層 1 圖 ✓；⚠ Discogs 美版 2385046 的 `images[0]` 是 `primary` 但只有 500×500**——**若要替代來源，建議改用 Apple 的 `600x600bb`。**",
+    "src": "https://itunes.apple.com/lookup?upc=724352388424&country=us"
+   },
+   {
+    "f": "⚠ **MB 的 genres 與 tags 兩欄在本張是空的**（第 1425 條那張表的第 8 列：**21 張裡 6 張兩欄皆空**）——**曲風不能從 MB 那一側判，本層照第 1296 條的三層判準給 `['jazz']`**（**十三軌是鋼琴三重奏編制，翻 Björk 與電影配樂不改變編制的性質**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e6d7d0e8-e85b-36d4-a897-093f66b3faa0?inc=artist-credits+releases+genres+tags&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌的作曲者名單橫跨五個世界：Ellington 兩首、Björk 一首、黑澤明《用心棒》的配樂一首、《教父第二集》的配樂一首，還有他的老師 Jaki Byard",
+   "錄音、混音到母帶全部在 2000 年 1 月的十天裡做完，製作人是他當時所屬樂團的團長 Greg Osby"
+  ],
+  "sound": "鋼琴三重奏的十三軌，2000 年 1 月 15、16 兩天在布魯克林 Systems Two 錄，同月 22、23 混音、25 日做母帶——十天內全部完成。Jason Moran 除了平台鋼琴也彈 Rhodes 與 Hammond B3，底下是 Tarus Mateen 的貝斯與 Nasheet Waits 的鼓，零客座。曲目的來源橫跨五個世界：Ellington 兩首、Björk 與 Sjón 的〈Jóga〉、佐藤勝給黑澤明《用心棒》寫的主題、Carmine Coppola 給《教父第二集》寫的〈Murder of Don Fanucci〉、他的老師 Jaki Byard 的〈Twelve〉，以及貝斯手 Mateen 自己的〈Another One〉；Moran 自己寫六首，其中〈Three of the Same from Two Different〉只有四十八秒。製作人是他當時所屬樂團的團長 Greg Osby。",
+  "keyTracks": [
+   "Jóga",
+   "Yojimbo",
+   "Gangsterism on Wood"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立，本層未改判。** (1) **廠牌口徑／街頭日（階序最上層）**：`BB-2000-07-01` p16 逐字「Moran returns with his second solo album, \"Facing Left,\" **due Tuesday (27)** on Blue Note Records」——**該期 7 月 1 日出刊，指的是 2000 年 6 月 27 日。** (2) **盤面的三個日期全部在 2000 年 1 月**（Discogs 2385046 notes 逐字：錄音 1/15、1/16，混音 1/22 到 1/23，母帶 1/25）——**錄音年與發行年同年。** (3) **MB first-release-date `2000`。** (4) **Discogs 四筆條目 `year` 全 2000。** (5) **盤面 ℗©**：notes 逐字 `℗© 2000 Capitol Records, Inc.`、Apple 逐字 `℗ 2000 Blue Note Records`。⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 或 `Somethin' Else` 條目。** **五層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid e6d7d0e8／掛名 `Jason Moran`（池中 1 張同字串）／年份 2000／十三軌／固定三人編制零客座 全部成立。**｜⚠ **本層把作曲欄的軌號補齊**（策展層只說「`Written-By` 列了 Björk／Sjón／Ellington／Jaki Byard／Carmine Coppola／佐藤勝——全是作曲者」，方向對）：**Moran `[2, 7, 10 to 13]`／Ellington `[1, 4]`／Björk ＋ Sjón `[3]`／佐藤勝 `[5]`／Tarus Mateen `[6]`／Carmine Coppola `[8]`／Jaki Byard `[9]`。** ⚠ **第 6 軌的作曲者是團裡的貝斯手，不是外人。**｜⚠ **`Yuri Moran`（Liner Notes）與 `Carole Hall (2)`（Liner Notes [Edited]）不是樂手，不得寫進編制。**｜⚠ **撞陳列**：(1) ⚠ **同一個節奏組（Mateen／Waits）同時在同批《New Directions》與池中 c-155 a 的《Soundtrack to Human Motion》上，三張的製作人都是 Greg Osby**——**三張軌目逐一比對零重疊（本張三重奏、《New Directions》六人），三卡 risk 互指、正文不得互抄。** (2) **軌名撞池中卡名一處：〈Another One〉（撞 Mac DeMarco 的同名卡）**——**常見詞同名，不是同碟；本張這一軌的作曲者是 Tarus Mateen。** (3) ⚠ **Greg Osby 在同批有自己的領班卡《The Invisible Hand》、a 組有聯名卡《Friendly Fire》**——**本張他只是製作人，正文不得寫成他參與演奏。**｜⚠ **MB 的 `genres` 與 `tags` 兩欄皆空**（第 1425 條），**曲風照第 1296 條三層判準給 `['jazz']`。**｜**載體：Discogs 四筆全 CD，零黑膠、零日版。**｜⚠ **封面 CAA 有 1 圖，但 Discogs 美版的 primary 只有 500×500**——**備案建議用 Apple 的 `600x600bb`。**｜**試聽：`search` us 零命中、jp／fr 才有（第 1246 條），十三軌對得上。**"
+ },
+ {
+  "key": "desc2:The Three Sounds|Live at the \"It Club\", Volume 2",
+  "artist": "The Three Sounds",
+  "album": "Live at the \"It Club\", Volume 2",
+  "facts": [
+   {
+    "f": "release-group 2456d256 的欄位：title「Live at the \"It Club\", Volume 2」、artist-credit「The Three Sounds」、first-release-date **`2000`**、primary-type Album、**secondary-types `[\"Live\"]`**。⚠ **Discogs 三筆條目的盤名逐字是 `Live At The 'It Club' Volume 2`（單引號、沒有逗號）**，**MB 與卡單用雙引號加逗號的形**——**兩形都要收。** **美版 6398890，Blue Note `7243 5 23997 2 7`，bc 724352399727，九軌。** ⚠ **MB 另有一筆空殼 release c29cb3a6（GB，media format 為 null、無廠牌、無 barcode）**（第 1425 條）。",
+    "src": "https://api.discogs.com/releases/6398890"
+   },
+   {
+    "f": "**(甲) 庫存首發由盤面 notes 逐字釘死。** **Discogs 美版 6398890 的 notes 逐字「Recorded on **March 6, 1970** at the **It Club, Hollywood, California** **Track #8 previously issued on Blue Beat (Blue Note 94861). All other titles previously unissued.**」**——**九軌裡八軌未曾發行，唯一發過的第 8 軌是出現在 Blue Note 自己的主題合輯《Blue Beat》上，不是以本碟的形式。** **`year` 取首次商業發行年 2000、演出年 1970 寫進正文**（第 1417 條的原始樣本）。",
+    "src": "https://api.discogs.com/releases/6398890"
+   },
+   {
+    "f": "**編制是固定三人、零客座、零軌號標記**：`Gene Harris — Piano`、`Henry Franklin — Bass`、`Carl Burnett — Drums`。**製作分兩層逐字**：**`Monk Higgins — Producer`（1970 年那一次）** 與 **`Bob Belden — Producer [Produced For Release], Liner Notes`（2000 年這一次）**；**錄音 `Dino Lappas`、2000 年的重混與轉錄逐字 `Bob Norberg — Remix, Transferred By [Using 24-bit Resolution], Mastered By`。** ⚠ **Belden 與 Norberg 是整理與轉錄的人，不是樂手**（第 1420 條）；⚠ **第 1146／1188／1240／1354 條：`Produced For Release` 這個頭銜不是判準，判準是 notes 那一句。**",
+    "src": "https://api.discogs.com/releases/6398890"
+   },
+   {
+    "f": "**逐軌作曲欄（Discogs 歐版 4879595 最完整）逐字**：**`Monk Higgins — Written-By [1 to 3 & 6]` ＋ `Bernyece Leena — Written-By [1 to 3]`**（**前三軌是製作人 Monk Higgins 與 Bernyece Leena 合寫的**）、`Monk Higgins — Written-By [5]`、`Gene Harris — Written-By [6]`、**`Neal Hefti — Written-By [4]`**（〈Girl Talk〉）、**`Lennon-McCartney — Written-By [7 to 9]`**——**最後三軌全部是披頭四的曲（〈Eleanor Rigby〉10 分 41 秒、〈Get Back〉2 分 43 秒、〈Come Together〉6 分 28 秒）。** **→ 九軌裡領班 Gene Harris 只掛一首（與製作人合寫），三首是披頭四。**",
+    "src": "https://api.discogs.com/releases/4879595"
+   },
+   {
+    "f": "⚠⚠ **與池中 c-153 b 的《Live at the \"It Club\"》是同一晚的兩批母帶，必須逐軌講清楚。** **兩張的 notes 都逐字寫 `March 6, 1970 at the It Club, Hollywood, California`**；**本張九軌（I'm in Love／Put on Train／Down Home／Girl Talk／Black Fox／Apollo 21／Eleanor Rigby／Get Back／Come Together）與那張的軌目逐一比對零重疊**（**c-153 b 第七節已經預告了本張**）。**兩卡必須互指、上架比對帶目錄號（`23997` 對 `94473`）與軌數。** ⚠ **另與同批已退件的《Live at the Lighthouse》（`BLP 4265`／`BST 84265`，1967-06-09／10）完全無關**——**那是另一場、另一年、而且是 (乙) 退件。**",
+    "src": "https://api.discogs.com/releases/4879595"
+   },
+   {
+    "f": "**版本表三筆，全部 CD、全部 2000**：美版 6398890、**美版俱樂部／再壓 31516760（目錄號 `5179613`）**、歐版 4879595（`format` 帶 `Remastered`、第二目錄號 `523 9972`）。⚠ **零黑膠、零卡帶、零日版**（本段通則第 1 條逐張查）。⚠ **歐版的 identifiers 逐字 `Price Code — PM 516 — F`**——**與同批《New Directions》歐版同一個價格代碼**（第 1422 條）。",
+    "src": "https://api.discogs.com/releases/4879595"
+   },
+   {
+    "f": "**紙本：2000 全年零命中。** **`it club`／`23997`／`three sounds`／`gene harris` 四種字串都掃過**（第 1245 條）：⚠ **`it club` 的命中全部是別的句子裡的 `…it club…` 斷詞**（例 `BB-2000-06-03` p103 的巡演日期段、`BB-2000-08-05` p85 的 `MILLION-UNIT CLUB`），**沒有一處是本張**；**其餘三種字串零命中。** ⚠ **這與同批 a 組六張 Connoisseur 盤的情形相同——庫存整理盤不上榜、不做評介，是結構性的空白。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-06-03.pdf"
+   },
+   {
+    "f": "⚠⚠ **試聽：本張原被探測層判為無來源，本層用第 254 條的三種查法撈回來了。** **Apple `search` 的 us 與 gb 兩市場命中 `724784140`**，欄位逐字 **`Gene Harris & The Three Sounds — Live at the It Club, Vol. 2`**、`releaseDate 2000-01-01`、`trackCount 9`、`℗ 2000 Blue Note Records`；**`lookup?upc=724352399727` 也命中同一筆。** **逐軌核過：九軌名稱與時長（275／509／440／363／302／472／642／163／386 秒）與盤面一致，九軌全部有 preview。** ⚠⚠ **第 646 條的檢查做過**：**同一次查詢回的另一筆 `724864633` 是池中 c-153 b 那張卡的《Live at the \"It Club\"》（8 軌、`℗ 1996 Blue Note Records`、`releaseDate 1970-03-06`）**——**兩張卡的 collectionId 不同，不會共用。** **→ 串流採信 724784140。** **封面 CAA：release-group 層 2 圖 ✓。**",
+    "src": "https://itunes.apple.com/lookup?id=724784140&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "1970 年 3 月 6 日那一晚在好萊塢的 It Club 錄了兩張碟的量，這是第二批——而且九軌裡最後三軌全是披頭四",
+   "前三首出自製作人 Monk Higgins 的筆下，領班 Gene Harris 自己只掛了一首"
+  ],
+  "sound": "1970 年 3 月 6 日在好萊塢 It Club 的同一晚錄的第二批母帶，擱了三十年，2000 年才出。台上三個人：Gene Harris 的鋼琴、Henry Franklin 的貝斯、Carl Burnett 的鼓。九軌裡前三首〈I'm in Love〉〈Put on Train〉〈Down Home〉是當晚的製作人 Monk Higgins 與 Bernyece Leena 合寫的，第五首〈Black Fox〉也是 Higgins 的，領班 Gene Harris 自己只掛〈Apollo 21〉一首（還是與 Higgins 合寫）；第四首是 Neal Hefti 的〈Girl Talk〉。最後三軌全部是披頭四——〈Eleanor Rigby〉拉到十分四十一秒、〈Get Back〉只有兩分四十三秒、收在〈Come Together〉上。九軌裡只有第八軌先前在 Blue Note 的合輯《Blue Beat》上出過，其餘八軌從未發行。2000 年由 Bob Belden 整理、Bob Norberg 以 24 位元重混轉錄。",
+  "keyTracks": [
+   "Down Home",
+   "Eleanor Rigby",
+   "Come Together"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 2000 成立（庫存首發，演出 1970-03-06），本層未改判。** (1) **(甲) 判準由盤面 notes 釘死**：Discogs 美版 6398890 與歐版 4879595 逐字「Track #8 previously issued on Blue Beat (Blue Note 94861). **All other titles previously unissued.**」——**九軌裡八軌未曾發行，唯一發過的一軌是在主題合輯上、不是以本碟的形式**（第 1417 條）。**`year` 取首次商業發行年 2000。** (2) **MB first-release-date `2000`。** (3) **Discogs 三筆 `year` 全 2000。** (4) **盤面 ℗**：Apple 724784140 逐字 `℗ 2000 Blue Note Records`。⚠ **紙本四種字串 2000 全年零命中**（`it club` 的命中全部是別的句子裡的斷詞）——**庫存整理盤的結構性空白。** ⚠ **日版覆核：Discogs 與 MB 兩側都沒有 `TOCJ` 條目。** ⚠ **與同批已退件的《Live at the Lighthouse》的分界**：**那張十七軌裡有九軌就是 1967 年整張 LP 的內容（(乙) 退件）**，**本張是一整晚未發行 ＋ 一軌曾在合輯上（(甲) 收）。** **三層一致，取 2000。**",
+  "notes": "**覆核策展層：rgMbid 2456d256／掛名 `The Three Sounds`（池中 47 列同字串）／年份 2000／九軌／`live: true`／(甲) 庫存首發 全部成立。**｜**編制：固定三人（Gene Harris p／Henry Franklin b／Carl Burnett d），credit 欄零軌號、零客座**——**策展層「可寫固定編制（3）」覆核成立。** ⚠ **`Bob Belden`（Produced For Release ＋ Liner Notes）與 `Bob Norberg`（Remix／24-bit 轉錄／Mastered）是 2000 年的整理人，不是樂手**（第 1420 條）；⚠ **`Monk Higgins` 是 1970 年那一次的製作人，而且他同時是前三軌與第 5、6 軌的作曲者**——**這一格正文值得寫。**｜⚠⚠ **撞陳列（逐軌比到 CD 那一層）**：(1) ⚠⚠ **與池中 c-153 b 的 `The Three Sounds —《Live at the \"It Club\"》` 是同一晚（1970-03-06）的兩批母帶**——**九軌對八軌逐軌比對零重疊**（c-153 b 第七節已預告本張）；**兩卡必須互指、上架帶目錄號與軌數。** (2) **軌名撞池中卡名三處：〈I'm in Love〉（撞 Evelyn King）、〈Down Home〉（撞 Z.Z. Hill）、〈Get Back〉（撞 Little Brother）**——**逐條讀完都是同名不同錄音**；⚠ **本張的〈Get Back〉與〈Come Together〉〈Eleanor Rigby〉三軌都是 Lennon-McCartney 的曲，池中另有大量披頭四相關卡**——**同名不同錄音，正文不得互指。** (3) **與同批已退件的《Live at the Lighthouse》（1967-06-09／10）完全無關。**｜⚠ **盤名兩形**：Discogs 用單引號無逗號（`Live At The 'It Club' Volume 2`）、MB 用雙引號加逗號。｜⚠ **MB 有一筆空殼 release c29cb3a6（GB，media format null、無廠牌、無 barcode）**（第 1425 條）。｜⚠ **歐版價格代碼 `PM 516`**（與同批《New Directions》歐版同）。｜**載體：Discogs 三筆全 CD，零黑膠、零日版。**｜⚠⚠ **試聽本層撈回**：**`search` us／gb 兩市場與 `lookup?upc=724352399727` 都命中 724784140（九軌逐軌時長對得上、全部有 preview）**——**串流採信 724784140**；⚠ **第 646 條檢查做過：c-153 b 那張卡用的是 `724864633`（8 軌、℗ 1996），兩卡不共用 collectionId。**｜**封面 CAA 有 2 圖。**"
+ }
+]
